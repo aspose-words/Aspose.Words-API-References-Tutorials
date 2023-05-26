@@ -2,7 +2,7 @@
 title: Documentbuilder'ı Kullanarak İçerik Ekleme
 linktitle: Documentbuilder'ı Kullanarak İçerik Ekleme
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler şunları içerir: yeni belge oluşturma, belge oluşturucu yer imi ekleme, tablo oluşturma, yatay kural ekleme, yatay kural formatı, kesme ekleme, metin ekleme i
+description: Öğreticiler şunları içerir yeni belge oluşturma, belge oluşturucu yer imi ekleme, tablo oluşturma, yatay kural ekleme, yatay kural formatı, kesme ekleme, metin ekleme i
 type: docs
 weight: 1460
 url: /tr/net/add-content-using-documentbuilder/
