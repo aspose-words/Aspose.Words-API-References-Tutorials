@@ -1,37 +1,37 @@
 ---
-title: الحصول على الجدول الموقف
-linktitle: الحصول على الجدول الموقف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على موضع الجدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Masa Konumunu Alın
+linktitle: Masa Konumunu Alın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesindeki bir tablonun konumunu nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/get-table-position/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية الحصول على موضع الجدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من الحصول على خصائص تحديد موضع الجدول في مستندات Word الخاصة بك برمجيًا.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun konumunu nasıl alacağımızı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki tablo konumlandırma özelliklerini programlı olarak elde edebileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+## 2. Adım: Belgeyi yükleme ve tabloya erişme
+Tabloyla çalışmaya başlamak için onu içeren belgeyi yüklememiz ve tabloya erişmemiz gerekiyor. Bu adımları takip et:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Tables.docx");
 
-// الوصول إلى المصفوفة
+// Diziye erişim
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات. تأكد أيضًا من احتواء المستند على الجدول الذي تريد الحصول على موضعه.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun. Ayrıca, belgenin konumunu almak istediğiniz tabloyu içerdiğinden emin olun.
 
-## الخطوة 3: الحصول على خصائص وضع الصفيف
-بعد ذلك ، سوف نتحقق من نوع تحديد الموضع للمصفوفة ونحصل على خصائص تحديد الموضع المناسبة. استخدم الكود التالي:
+## 3. Adım: Dizi Konumlandırma Özelliklerini Alma
+Ardından, dizinin konumlandırma tipini kontrol edeceğiz ve uygun konumlandırma özelliklerini elde edeceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
 if (table.TextWrapping == TextWrapping.Around)
@@ -45,12 +45,12 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- هنا نستخدم شرطًا للتحقق مما إذا كانت المصفوفة من النوع العائم. إذا كان الأمر كذلك ، فنحن نطبع ملف`RelativeHorizontalAlignment` و`RelativeVerticalAlignment` للحصول على المحاذاة النسبية الأفقية والعمودية للجدول. خلاف ذلك ، نقوم بطباعة ملف`Alignment` الخاصية للحصول على محاذاة الصفيف.
+ Burada, dizinin kayan tipte olup olmadığını kontrol etmek için bir koşul kullanıyoruz. Eğer öyleyse, yazdırıyoruz`RelativeHorizontalAlignment` Ve`RelativeVerticalAlignment` tablonun göreli yatay ve dikey hizalamasını elde etmek için özellikler. Aksi takdirde, yazdırırız`Alignment` dizi hizalamasını almak için özellik.
 
-### عينة من التعليمات البرمجية المصدر لـ Get Table Position باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Get Table Position için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -66,5 +66,5 @@ Console.WriteLine(table.Alignment);
 	}
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية الحصول على موضع الجدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك الحصول على خصائص موضع الجدول في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة تحليل المصفوفات ومعالجتها وفقًا لمواضعها المحددة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun konumunu nasıl alacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak Word belgelerinizde programlı olarak tablo konumlandırma özellikleri elde edebilirsiniz. Bu özellik, dizileri belirli konumlarına göre analiz etmenize ve değiştirmenize olanak tanır.

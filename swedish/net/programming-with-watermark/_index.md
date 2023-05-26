@@ -1,15 +1,15 @@
 ---
-title: البرمجة بالعلامة المائية
-linktitle: البرمجة بالعلامة المائية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إضافة نص العلامة المائية مع خيارات محددة
+title: Programmering med vattenstämpel
+linktitle: Programmering med vattenstämpel
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar innehåller lägga till text vattenstämpel med specifika alternativ
 type: docs
 weight: 1570
 url: /sv/net/programming-with-watermark/
 ---
-تعد البرمجة باستخدام العلامة المائية موردًا شاملاً يرشدك خلال عملية البرمجة باستخدام العلامات المائية في مستندات Word باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية توضيحات خطوة بخطوة ورمز مصدر مفصل وأمثلة عملية لإضافة العلامات المائية وتخصيصها وإدارتها في مستندات Word الخاصة بك. ستتعلم كيفية إضافة نص أو صور أو أشكال أو رسومات كعلامات مائية ، وضبط موضعها ومظهرها ، وخيارات متقدمة مثل إضافة علامات مائية مخصصة باستخدام الحقول. هذا المورد ضروري للمطورين الذين يرغبون في أتمتة إدارة العلامات المائية في مستندات Word الخاصة بهم باستخدام Aspose.Words for .NET.
+Programmering med vattenstämpel är en omfattande resurs som leder dig genom processen att programmera med vattenstämplar i Word-dokument med hjälp av Aspose.Words för .NET-biblioteket. Handledningarna ger steg-för-steg förklaringar, detaljerad källkod och praktiska exempel för att lägga till, anpassa och hantera vattenstämplar i dina Word-dokument. Du kommer att lära dig hur du lägger till text, bilder, former eller grafik som vattenstämplar, justerar deras position och utseende, och avancerade alternativ som att lägga till anpassade vattenstämplar med hjälp av fält. Denna resurs är viktig för utvecklare som vill automatisera vattenstämpelhantering i sina Word-dokument med Aspose.Words för .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [أضف علامة مائية نصية مع خيارات محددة](./add-text-watermark-with-specific-options/) | تعرف على كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
+| [Lägg till textvattenstämpel med specifika alternativ](./add-text-watermark-with-specific-options/) | Lär dig hur du lägger till en textvattenstämpel med specifika alternativ med Aspose.Words för .NET. Steg-för-steg guide. |

@@ -1,16 +1,16 @@
 ---
-title: إنشاء ارتباط
-linktitle: إنشاء ارتباط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء رابط بين TextBoxes في مستند Word باستخدام Aspose.Words for .NET.
+title: Создать ссылку
+linktitle: Создать ссылку
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как создать связь между текстовыми полями в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/working-with-textboxes/create-a-link/
 ---
 
-## الخطوة 1: إعداد المستند وإنشاء أشكال TextBox
+## Шаг 1. Настройка документа и создание фигур TextBox
 
- للبدء ، نحتاج إلى إعداد المستند وإنشاء شكلين مربع نص. يقوم الكود التالي بتهيئة مثيل جديد لملف`Document` فئة وإنشاء شكلين لمربع النص:
+ Для начала нам нужно настроить документ и создать две фигуры TextBox. Следующий код инициализирует новый экземпляр класса`Document` class и создает две формы текстового поля:
 
 ```csharp
 Document doc = new Document();
@@ -21,18 +21,18 @@ TextBox textBox1 = shape1.TextBox;
 TextBox textBox2 = shape2.TextBox;
 ```
 
-## الخطوة 2: إنشاء ارتباط بين مربعات النص
+## Шаг 2: Создание ссылки между текстовыми полями
 
- سنقوم الآن بإنشاء رابط بين مربعي النص باستخدام امتداد`IsValidLinkTarget()` الطريقة و`Next` خاصية TextBox الأول.
+ Теперь мы создадим связь между двумя текстовыми полями, используя`IsValidLinkTarget()` метод и`Next` свойство первого TextBox.
 
 ```csharp
 if (textBox1.IsValidLinkTarget(textBox2))
      textBox1. Next = textBox2;
 ```
 
- ال`IsValidLinkTarget()` يتحقق الأسلوب مما إذا كان يمكن أن يكون TextBox الثاني هدفًا صالحًا للارتباط الخاص بـ TextBox الأول. إذا نجح التحقق من الصحة ، فإن`Next` تم تعيين خاصية TextBox الأول على TextBox الثاني ، مما يؤدي إلى إنشاء ارتباط بين الاثنين.
+`IsValidLinkTarget()` Метод проверяет, может ли второй TextBox быть допустимой целью для ссылки первого TextBox. Если проверка прошла успешно,`Next` Свойство первого TextBox устанавливается на второе TextBox, создавая связь между ними.
 
-### مثال على شفرة المصدر للارتباط بـ Aspose.Words for .NET
+### Пример исходного кода для связи с Aspose.Words для .NET
 
 ```csharp
 Document doc = new Document();

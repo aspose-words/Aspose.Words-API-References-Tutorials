@@ -1,28 +1,28 @@
 ---
-title: استخدام أجزاء مهام ملحق الويب
-linktitle: استخدام أجزاء مهام ملحق الويب
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لاستخدام أجزاء مهام ملحق الويب مع Aspose.Words for .NET.
+title: Web Uzantısı Görev Bölmelerini Kullanma
+linktitle: Web Uzantısı Görev Bölmelerini Kullanma
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile Web Uzantısı Görev Panolarını kullanmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-webextension/using-web-extension-task-panes/
 ---
 
-تقدم هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام أجزاء مهمة امتداد الويب مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية إضافة أجزاء المهام وتكوينها لملحقات الويب.
+Bu makale, web uzantısı görev bölmelerinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, web uzantıları için görev bölmelerini nasıl ekleyeceğinizi ve yapılandıracağınızı öğrenebileceksiniz.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
-## الخطوة 1: تحديد دليل المستند
+## 1. Adım: Belge dizinini tanımlayın
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث تريد حفظ المستند الذي تم إنشاؤه. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Başlamak için, oluşturulan belgeyi kaydetmek istediğiniz dizinin yolunu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء جزء مهام وتكوينه
+## 2. Adım: Bir görev bölmesi oluşturun ve yapılandırın
 
- نقوم بإنشاء ملف`TaskPane` الكائن وإضافته إلى المستند`s `مجموعة WebExtensionTaskPanes`. بعد ذلك ، نقوم بتكوين خصائص جزء المهام ، مثل حالة الإرساء والرؤية والعرض.
+ biz bir yaratırız`TaskPane` nesne ve belgeye ekleyin`s `WebExtensionTaskPanes' koleksiyonu. Ardından, yerleşik durumu, görünürlüğü ve genişliği gibi görev bölmesinin özelliklerini yapılandırıyoruz.
 
 ```csharp
 Document doc = new Document();
@@ -35,7 +35,7 @@ taskPane.IsVisible = true;
 taskPane.Width = 300;
 ```
 
-قمنا أيضًا بتعيين بيانات اعتماد امتداد الويب بما في ذلك معرف الكتالوج والإصدار ونوع المتجر.
+Katalog kimliği, sürüm ve mağaza türü dahil olmak üzere web uzantısı kimlik bilgilerini de belirledik.
 
 ```csharp
 taskPane.WebExtension.Reference.Id = "wa102923726";
@@ -44,7 +44,7 @@ taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
 taskPane.WebExtension.Reference.Store = "th-TH";
 ```
 
-أخيرًا ، نضيف خصائص وارتباطات إلى امتداد الويب.
+Son olarak, web uzantısına özellikler ve bağlamalar ekliyoruz.
 
 ```csharp
 taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
@@ -52,17 +52,17 @@ taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_150
 	WebExtensionBindingType.Text, "194740422"));
 ```
 
-## الخطوة 3: احفظ المستند وقم بتحميله
+## 3. Adım: Belgeyi kaydedin ve yükleyin
 
-نحفظ المستند مع أجزاء المهام المكونة في الدليل المحدد.
+Belirtilen dizinde yapılandırılmış görev bölmeleri ile belgeyi kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## الخطوة 4: عرض معلومات أجزاء المهام
+## 4. Adım: Görev bölmeleri bilgilerini görüntüleyin
 
-بعد ذلك ، نقوم بتحميل المستند وعرض معلومات مصدر جزء المهام.
+Ardından, belgeyi yüklüyoruz ve görev bölmesi kaynak bilgilerini görüntülüyoruz.
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
@@ -77,14 +77,14 @@ Console.WriteLine($"Vendor: \"{reference.Store}\", version: \"{reference.Version
 }
 ```
 
-هذا كل شئ ! لقد نجحت في استخدام أجزاء مهام ملحق الويب مع Aspose.Words for .NET.
+Bu kadar ! Aspose.Words for .NET ile web uzantısı görev bölmelerini başarıyla kullandınız.
 
-### مثال على شفرة المصدر لاستخدام أجزاء مهام امتداد الويب مع Aspose.Words for .NET
+### Aspose.Words for .NET ile web uzantısı görev bölmelerini kullanmak için örnek kaynak kodu
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 

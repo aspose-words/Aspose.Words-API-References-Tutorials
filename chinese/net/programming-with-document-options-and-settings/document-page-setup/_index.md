@@ -1,34 +1,34 @@
 ---
-title: وثيقة إعداد الصفحة
-linktitle: وثيقة إعداد الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد تخطيط مستند باستخدام Aspose.Words for .NET.
+title: 文档页面设置
+linktitle: 文档页面设置
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 设置文档布局的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-document-options-and-settings/document-page-setup/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتكوين تخطيط المستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة ضبط وضع التخطيط وعدد الأحرف في كل سطر وعدد الأسطر في كل صفحة.
+在本教程中，我们将引导您通过 C# 源代码使用 Aspose.Words for .NET 配置文档布局。此功能允许您设置布局模式、每行字符数和每页行数。
 
-## الخطوة 1: إعداد المشروع
+## 第 1 步：项目设置
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+首先，在您喜欢的 IDE 中创建一个新的 C# 项目。确保在您的项目中引用了 Aspose.Words for .NET 库。
 
-## الخطوة الثانية: تحميل المستند
+## 第 2 步：装入文档
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد تهيئته. استخدم الكود التالي لتحميل المستند:
+在此步骤中，我们将加载要配置的 Word 文档。使用以下代码加载文档：
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+代替`"YOUR DOCUMENTS DIRECTORY"`使用文档所在目录的实际路径。
 
-## الخطوة 3: إعداد التخطيط
+## 第 3 步：设置布局
 
-لنقم الآن بتهيئة تخطيط المستند. استخدم الكود التالي لضبط وضع التخطيط ، وعدد الأحرف في كل سطر ، وعدد الأسطر في كل صفحة:
+现在让我们配置文档布局。使用以下代码设置布局方式、每行字符数和每页行数：
 
 ```csharp
 doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
@@ -38,20 +38,20 @@ doc.FirstSection.PageSetup.LinesPerPage = 10;
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx");
 ```
 
-يقوم هذا الرمز بتعيين وضع التخطيط على "الشبكة" ثم يحدد عدد الأحرف في كل سطر وعدد الأسطر في كل صفحة.
+此代码将布局模式设置为“网格”，然后指定每行字符数和每页行数。
 
-### مثال على الكود المصدري لإعداد صفحة المستند باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的文档页面设置示例源代码
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
-	// اضبط وضع التخطيط لقسم يسمح بتعريف سلوك شبكة الوثيقة.
-	// لاحظ أن علامة التبويب Document Grid تصبح مرئية في مربع حوار إعداد الصفحة في MS Word
-	// إذا تم تعريف أي لغة آسيوية على أنها لغة تحرير.
+	//为允许定义文档网格行为的部分设置布局模式。
+	//请注意，文档网格选项卡在 MS Word 的页面设置对话框中可见
+	//如果任何亚洲语言被定义为编辑语言。
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;
 	doc.FirstSection.PageSetup.LinesPerPage = 10;
@@ -60,6 +60,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
    
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+请务必在`dataDir`多变的。
 
-لقد تعلمت الآن كيفية تكوين تخطيط المستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تخصيص تخطيط المستندات الخاصة بك.
+您现在已经了解了如何使用 Aspose.Words for .NET 配置文档的布局。按照本教程中提供的分步指南，您可以轻松自定义自己文档的布局。

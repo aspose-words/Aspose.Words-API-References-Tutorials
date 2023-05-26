@@ -1,29 +1,29 @@
 ---
-title: تطبيق الترخيص المقنن
-linktitle: تطبيق الترخيص المقنن
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق ترخيص محدود باستخدام Aspose.Words for .NET.
+title: Appliquer une licence limitée
+linktitle: Appliquer une licence limitée
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à appliquer une licence limitée à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/apply-license/apply-metered-license/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية تطبيق ترخيص مقنن باستخدام Aspose.Words for .NET. سنوجهك خلال العملية بإرشادات مفصلة خطوة بخطوة ونوفر مقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على تطبيق ترخيص مقنن والاستفادة من الميزات المتقدمة لـ Aspose. Words لاحتياجات معالجة المستندات الخاصة بك.
+Dans ce didacticiel complet, vous apprendrez à appliquer une licence limitée à l'aide d'Aspose.Words pour .NET. Nous vous guiderons tout au long du processus avec des instructions détaillées étape par étape et vous fournirons les extraits de code C# nécessaires. À la fin de ce guide, vous serez en mesure d'appliquer une licence limitée et de tirer parti des fonctionnalités avancées d'Aspose.Words pour vos besoins de traitement de documents.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
-- بيانات اعتماد صالحة للترخيص المحدود. 
+## Conditions préalables
+Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
+- Bibliothèque Aspose.Words pour .NET installée sur votre système.
+- Informations d'identification valides pour les licences limitées. 
 
-## الخطوة 1: استيراد مساحات الأسماء المطلوبة
-للبدء ، قم باستيراد مساحات الأسماء الضرورية في كود C # الخاص بك. تحتوي مساحات الأسماء هذه على الفئات والطرق اللازمة للعمل مع Aspose.Words.
+## Étape 1 : Importer les espaces de noms requis
+Pour commencer, importez les espaces de noms nécessaires dans votre code C#. Ces espaces de noms contiennent les classes et les méthodes nécessaires pour travailler avec Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 2: قم بتعيين مفتاح الترخيص المقنن
-بعد ذلك ، تحتاج إلى تعيين مفتاح الترخيص المقنن باستخدام طريقة SetMeteredKey للفئة Metered. قم بتوفير المفاتيح العامة والخاصة التي تم قياسها كمعلمات لهذه الطريقة.
+## Étape 2 : Définir la clé de licence limitée
+Ensuite, vous devez définir la clé de licence mesurée à l'aide de la méthode SetMeteredKey de la classe Metered. Fournissez vos clés publiques et privées mesurées en tant que paramètres de cette méthode.
 
 ```csharp
 try
@@ -37,8 +37,8 @@ catch (Exception e)
 }
 ```
 
-## الخطوة 3: تحميل المستندات ومعالجتها
-الآن بعد أن قمت بتعيين الترخيص المقنن ، يمكنك تحميل المستندات ومعالجتها باستخدام Aspose.Words. في مقتطف الشفرة التالي ، نقوم بتحميل مستند باسم "Document.docx" ونجري عملية بسيطة لطباعة عدد الصفحات.
+## Étape 3 : Charger et traiter les documents
+Maintenant que vous avez défini la licence limitée, vous pouvez charger et traiter des documents à l'aide d'Aspose.Words. Dans l'extrait de code suivant, nous chargeons un document nommé "Document.docx" et effectuons une opération simple d'impression du nombre de pages.
 
 ```csharp
 try
@@ -52,8 +52,8 @@ catch (Exception e)
 }
 ```
 
-### مثال كود المصدر لتطبيق الرخصة المقننة باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لتطبيق ترخيص مقنن باستخدام Aspose.Words for .NET:
+### Exemple de code source pour Apply Metered License à l'aide d'Aspose.Words pour .NET
+Voici le code source complet pour appliquer une licence limitée à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
 try
@@ -71,7 +71,7 @@ catch (Exception e)
 }
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تطبيق ترخيص مقنن باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن الاستفادة من الميزات المتقدمة لـ Aspose.Words لمهام معالجة المستندات الخاصة بك.
+## Conclusion
+Toutes nos félicitations! Vous avez appris avec succès comment appliquer une licence limitée à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais profiter des fonctionnalités avancées d'Aspose.Words pour vos tâches de traitement de documents.
 
-يمكنك الآن بثقة تعيين الترخيص المحسوب ، وتحميل المستندات ومعالجتها ، وتسخير الإمكانات الكاملة لـ Aspose. Words لإنشاء مستندات Word وتعديلها ومعالجتها برمجيًا.
+Vous pouvez désormais définir en toute confiance la licence mesurée, charger et traiter des documents, et exploiter tout le potentiel d'Aspose.Words pour créer, modifier et manipuler des documents Word par programmation.

@@ -1,31 +1,31 @@
 ---
-title: تغيير Toc Tab Stops
-linktitle: تغيير Toc Tab Stops
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير علامات تبويب جدول المحتويات في مستند Word باستخدام Aspose.Words for .NET.
+title: Modifier les taquets de tabulation de la table des matières
+linktitle: Modifier les taquets de tabulation de la table des matières
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à modifier les onglets de la table des matières dans un document Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الوظائف التي تقدمها Aspose.Words ، هناك إمكانية تعديل علامات التبويب المستخدمة في جدول محتويات مستند Word. في هذا الدليل ، سنوضح لك كيفية استخدام شفرة المصدر C # الخاصة بـ Aspose.Words for .NET لتغيير علامات التبويب في جدول محتويات المستند.
+Aspose.Words pour .NET est une bibliothèque puissante pour créer, éditer et manipuler des documents Word dans une application C#. Parmi les fonctionnalités offertes par Aspose.Words, il y a la possibilité de modifier les onglets utilisés dans une table des matières d'un document Word. Dans ce guide, nous allons vous montrer comment utiliser le code source C# de Aspose.Words pour .NET pour modifier les onglets dans la table des matières d'un document.
 
-## فهم مكتبة Aspose.Words
+## Comprendre la bibliothèque Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك علامات تبويب جدول المحتويات المتغيرة.
+Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque populaire qui rend le travail avec les documents Word simple et efficace. Il offre un large éventail de fonctionnalités pour créer, éditer et manipuler des documents Word, y compris la modification des onglets de la table des matières.
 
-## تحميل المستند الذي يحتوي على جدول المحتويات
+## Chargement du document contenant la table des matières
 
-الخطوة الأولى هي تحميل مستند Word الذي يحتوي على جدول المحتويات الذي تريد تعديله. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+La première étape consiste à charger le document Word contenant la table des matières que vous souhaitez modifier. Utilisez la classe Document pour charger le document à partir du fichier source. Voici un exemple :
 
 ```csharp
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Table of content.docx" الموجود في دليل documents.
+Dans cet exemple, nous chargeons le document "Table of contents.docx" situé dans le répertoire documents.
 
-## تغيير علامات التبويب في جدول المحتويات
+## Changement d'onglet dans la table des matières
 
-بمجرد تحميل المستند ، ننتقل إلى كل فقرة في المستند ونتحقق مما إذا كان قد تم تنسيقها باستخدام أنماط نتائج جدول المحتويات (TOC). إذا كان الأمر كذلك ، نقوم بتعديل علامات التبويب المستخدمة لمحاذاة أرقام الصفحات. إليك الطريقة:
+Une fois le document chargé, nous parcourons chaque paragraphe du document et vérifions s'il est formaté à l'aide des styles de résultat de la table des matières (TOC). Si c'est le cas, nous modifions les onglets utilisés pour aligner les numéros de page. Voici comment:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -40,28 +40,28 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-في هذا المثال ، نستخدم حلقة للتكرار خلال كل فقرة في المستند. نتحقق بعد ذلك من تنسيق الفقرة باستخدام أنماط نتيجة جدول المحتويات (TOC). إذا كان الأمر كذلك ، فإننا نصل إلى علامة التبويب الأولى المستخدمة في هذه الفقرة ونقوم بتعديلها عن طريق إزالة علامة التبويب القديمة وإضافة علامة تبويب جديدة بموضع معدل.
+Dans cet exemple, nous utilisons une boucle pour parcourir chaque paragraphe du document. Nous vérifions ensuite si le paragraphe est formaté à l'aide des styles Table of Contents Result (TOC). Si tel est le cas, nous accédons au premier onglet utilisé dans ce paragraphe et le modifions en supprimant l'ancien onglet et en ajoutant un nouvel onglet avec une position modifiée.
 
-## احفظ المستند المعدل
+## Enregistrer le document modifié
 
-بمجرد إجراء التغييرات اللازمة على علامات التبويب في جدول المحتويات ، يمكنك حفظ المستند المعدل باستخدام طريقة Save لفئة Document. هنا مثال :
+Une fois que vous avez apporté les modifications nécessaires aux onglets de la table des matières, vous pouvez enregistrer le document modifié à l'aide de la méthode Save de la classe Document. Voici un exemple :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-في هذا المثال ، نحفظ المستند المعدل باسم "WorkingWithTableOfContent.ChangeTocTabStops.docx".
+Dans cet exemple, nous enregistrons le document modifié sous "WorkingWithTableOfContent.ChangeTocTabStops.docx".
 
-### نموذج شفرة مصدر لميزة "تحرير جدول المحتويات" باستخدام Aspose.Words for .NET
+### Exemple de code source pour la fonctionnalité "Modifier les onglets de la table des matières" avec Aspose.Words pour .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند الذي يحتوي على جدول المحتويات
+// Charger le document contenant la table des matières
 Document doc = new Document(dataDir + "Table of contents.docx");
 
-// قم بتعديل علامات تبويب جدول المحتويات
+// Modifier les onglets de la table des matières
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 {
      if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
@@ -73,10 +73,10 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
      }
 }
 
-// احفظ المستند المعدل
+// Enregistrer le document modifié
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا الدليل ، قمنا بتغطية كيفية استخدام Aspose.Words for .NET لتغيير علامات التبويب في جدول محتويات مستند Word باستخدام الكود المصدري C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة تخصيص علامات تبويب جدول المحتويات في مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع أنماط وتنسيقات مستنداتك ، مما يسمح لك بإنشاء مستندات Word جذابة واحترافية.
+Dans ce guide, nous avons expliqué comment utiliser Aspose.Words pour .NET pour modifier les onglets dans la table des matières d'un document Word à l'aide du code source C# fourni. En suivant les étapes fournies, vous pouvez facilement personnaliser les onglets de la table des matières de vos documents Word dans votre application C#. Aspose.Words offre une flexibilité et une puissance considérables pour travailler avec les styles et la mise en forme de vos documents, vous permettant de créer des documents Word attrayants et professionnels.

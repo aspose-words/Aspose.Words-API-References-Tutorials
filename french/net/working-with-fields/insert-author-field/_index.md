@@ -1,64 +1,64 @@
 ---
-title: أدخل حقل المؤلف
-linktitle: أدخل حقل المؤلف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل AUTHOR في مستندات Word باستخدام Aspose.Words for .NET. حدد اسم المؤلف لتخصيص مستنداتك.
+title: Insérer le champ Auteur
+linktitle: Insérer le champ Auteur
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer un champ AUTEUR dans vos documents Word avec Aspose.Words pour .NET. Indiquez le nom de l'auteur pour personnaliser vos documents.
 type: docs
 weight: 10
 url: /fr/net/working-with-fields/insert-author-field/
 ---
 
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود المصدر C # أدناه ، والذي يستخدم ميزة "إدراج حقل مؤلف" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la fonctionnalité "Insérer un champ AUTHOR" d'Aspose.Words pour .NET. Assurez-vous de suivre attentivement chaque étape pour obtenir les résultats souhaités.
 
-## الخطوة 1: إعداد دليل المستند
+## Étape 1 : configuration du répertoire de documents
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Dans le code fourni, vous devez spécifier le répertoire de vos documents. Remplacez la valeur "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin approprié vers votre répertoire de documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## Étape 2 : Création du document et du paragraphe
 
-نبدأ بإنشاء مستند جديد وجلب الفقرة الأولى.
+Nous commençons par créer un nouveau document et récupérons le premier paragraphe.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## الخطوة 3: أدخل حقل AUTHOR
+## Étape 3 : Insérer le champ AUTEUR
 
- نحن نستخدم ال`AppendField()` طريقة لإدراج حقل AUTHOR في الفقرة.
+ Nous utilisons le`AppendField()` méthode pour insérer un champ AUTEUR dans le paragraphe.
 
 ```csharp
 FieldAuthor field = (FieldAuthor)para.AppendField(FieldType.FieldAuthor, false);
 ```
 
- ثم نقوم بتكوين المجال`AuthorName` الخاصية لتحديد اسم المؤلف.
+ Nous configurons ensuite le champ`AuthorName` propriété pour spécifier le nom de l'auteur.
 
 ```csharp
 field. AuthorName = "Test1";
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Enfin, nous appelons le`Update()` méthode pour mettre à jour le champ.
 
 ```csharp
 field. Update();
 ```
 
-### مثال على شفرة المصدر لإدخال حقل AUTHOR مع Aspose.Words for .NET
+### Exemple de code source pour insérer un champ AUTHOR avec Aspose.Words pour .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة.
+// Création de documents.
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-// أدخل حقل AUTHOR.
+// Insérez le champ AUTEUR.
 FieldAuthor field = (FieldAuthor)para.AppendField(FieldType.FieldAuthor, false);
 
 field. AuthorName = "Test1";
@@ -68,6 +68,6 @@ field. Update();
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأدخلنا حقل AUTHOR ، وضبطنا اسم المؤلف ، وحفظنا المستند باسم ملف محدد.
+Dans cet exemple, nous avons créé un nouveau document, inséré un champ AUTEUR, configuré le nom de l'auteur et enregistré le document avec un nom de fichier spécifié.
 
-بهذا يختتم دليلنا حول استخدام ميزة "إدراج حقل المؤلف" مع Aspose.Words for .NET.
+Ceci conclut notre guide sur l'utilisation de la fonctionnalité "Insérer le champ AUTHOR" avec Aspose.Words pour .NET.

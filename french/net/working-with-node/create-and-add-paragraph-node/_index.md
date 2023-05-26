@@ -1,58 +1,58 @@
 ---
-title: إنشاء وإضافة فقرة العقدة
-linktitle: إنشاء وإضافة فقرة العقدة
-second_title: Aspose.Words لمراجع .NET API
-description: قم بإنشاء وإضافة عقدة فقرة إلى مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+title: Créer et ajouter un nœud de paragraphe
+linktitle: Créer et ajouter un nœud de paragraphe
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Créez et ajoutez un nœud de paragraphe à vos documents Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-node/create-and-add-paragraph-node/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية إنشاء وإضافة عقدة فقرة باستخدام Aspose.Words for .NET.
+Voici un guide étape par étape pour expliquer le code source C # ci-dessous qui illustre comment créer et ajouter un nœud de paragraphe à l'aide de Aspose.Words pour .NET.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Étape 1 : Importez les références nécessaires
+Avant de commencer, assurez-vous d'avoir importé les références nécessaires pour utiliser Aspose.Words pour .NET dans votre projet. Cela inclut l'importation de la bibliothèque Aspose.Words et l'ajout des espaces de noms requis à votre fichier source.
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## Étape 2 : Créer un nouveau document
+ Dans cette étape, nous allons créer un nouveau document en utilisant le`Document` classe.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: قم بإنشاء عقدة فقرة
- الآن سنقوم بإنشاء عقدة فقرة باستخدام امتداد`Paragraph` فئة وتمرير الوثيقة كمعامل.
+## Étape 3 : Créer un nœud de paragraphe
+ Nous allons maintenant créer un nœud de paragraphe en utilisant le`Paragraph` class et en passant le document en paramètre.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 4: الوصول إلى قسم المستند
- لإضافة فقرة إلى المستند ، نحتاج إلى الوصول إلى القسم الأخير من المستند باستخدام ملف`LastSection` ملكية.
+## Étape 4 : Accéder à la section des documents
+ Pour ajouter le paragraphe au document, nous devons accéder à la dernière section du document en utilisant le`LastSection` propriété.
 
 ```csharp
 Section section = doc.LastSection;
 ```
 
-## الخطوة 5: أضف عقدة الفقرة إلى المستند
- الآن بعد أن أصبح لدينا قسم المستند ، يمكننا إضافة عقدة الفقرة إلى القسم باستخدام ملف`AppendChild` طريقة على القسم`Body` ملكية.
+## Étape 5 : Ajouter le nœud de paragraphe au document
+ Maintenant que nous avons la section de document, nous pouvons ajouter le nœud de paragraphe à la section en utilisant le`AppendChild` méthode sur la section`Body` propriété.
 
 ```csharp
 section.Body.AppendChild(para);
 ```
 
-## الخطوة 6: احفظ المستند
- أخيرًا ، لحفظ المستند ، يمكنك استخدام ملف`Save` عن طريق تحديد تنسيق الإخراج المطلوب ، مثل تنسيق DOCX.
+## Étape 6 : Enregistrez le document
+ Enfin, pour enregistrer le document, vous pouvez utiliser la`Save` méthode en spécifiant le format de sortie souhaité, tel que le format DOCX.
 
 ```csharp
 doc.Save("output.docx", SaveFormat.Docx);
 ```
 
-### نموذج التعليمات البرمجية المصدر لإنشاء وإضافة فقرة عقدة باستخدام Aspose.Words for .NET
+### Exemple de code source pour créer et ajouter un nœud de paragraphe avec Aspose.Words pour .NET
 
 ```csharp
 Document doc = new Document();
@@ -64,4 +64,4 @@ section.Body.AppendChild(para);
 
 ```
 
-هذا مثال رمز كامل لإنشاء وإضافة فقرة باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Il s'agit d'un exemple de code complet pour créer et ajouter un nœud de paragraphe à l'aide de Aspose.Words pour .NET. Assurez-vous d'importer les références nécessaires et suivez les étapes décrites précédemment pour intégrer ce code dans votre projet.

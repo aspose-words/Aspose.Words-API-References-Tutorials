@@ -1,38 +1,38 @@
 ---
-title: التحكم في محتوى مربع نص منسق
-linktitle: التحكم في محتوى مربع نص منسق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء عنصر تحكم في محتوى مربع نص منسق في مستند Word باستخدام Aspose.Words for .NET مما يتيح تنسيق النص وتصميمه.
+title: Controllo del contenuto della casella di testo RTF
+linktitle: Controllo del contenuto della casella di testo RTF
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come creare un controllo del contenuto della casella di testo RTF in un documento di Word utilizzando Aspose.Words per .NET abilitando la formattazione e lo stile del testo.
 type: docs
 weight: 10
 url: /it/net/programming-with-sdt/rich-text-box-content-control/
 ---
 
-يوضح هذا البرنامج التعليمي كيفية إنشاء عنصر تحكم محتوى مربع نص منسق في مستند Word باستخدام Aspose.Words for .NET. تسمح عناصر التحكم في محتوى مربع النص المنسق للمستخدمين بإدخال نص وتنسيقه باستخدام أنماط وخيارات تنسيق متنوعة.
+Questa esercitazione illustra come creare un controllo contenuto casella di testo RTF in un documento di Word utilizzando Aspose.Words per .NET. I controlli del contenuto della casella di testo RTF consentono agli utenti di inserire e formattare il testo con vari stili e opzioni di formattazione.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Prerequisiti
+Per seguire questo tutorial, è necessario disporre di quanto segue:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words per la libreria .NET installata.
+- Conoscenza di base di C# e lavoro con documenti Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Passaggio 1: impostare la directory dei documenti
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo della directory in cui si desidera salvare il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و StructuredDocumentTag
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`StructuredDocumentTag` لتمثيل عنصر تحكم محتوى مربع النص المنسق. حدد`SdtType.RichText` كنوع و`MarkupLevel.Block` كمستوى الترميز لإنشاء مربع نص منسق على مستوى الكتلة.
+## Passaggio 2: creare un documento e un StructuredDocumentTag
+ Crea una nuova istanza di`Document` classe e a`StructuredDocumentTag` per rappresentare il controllo del contenuto della casella di testo RTF. Specificare`SdtType.RichText` come il tipo e`MarkupLevel.Block` come livello di markup per creare una casella di testo RTF a livello di blocco.
 
 ```csharp
 Document doc = new Document();
 StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichText, MarkupLevel.Block);
 ```
 
-## الخطوة 3: إنشاء وتنسيق محتوى نص منسق
-قم بإنشاء فقرة وتشغيلها لتمثيل محتوى النص المنسق. اضبط النص وخيارات التنسيق مثل اللون والخط وما إلى ذلك.
+## Passaggio 3: creare e formattare il contenuto RTF
+Crea un paragrafo ed esegui per rappresentare il contenuto RTF. Imposta il testo e le opzioni di formattazione come colore, carattere, ecc.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
@@ -42,31 +42,31 @@ run.Font.Color = Color.Green;
 para.Runs.Add(run);
 ```
 
-## الخطوة 4: أضف محتوى Rich Text إلى عنصر التحكم في المحتوى
-أضف الفقرة مع محتوى النص المنسق إلى ملف`ChildNodes` مجموعة من عنصر تحكم محتوى مربع نص منسق.
+## Passaggio 4: aggiungere il contenuto RTF al controllo del contenuto
+Aggiungi il paragrafo con il contenuto RTF al file`ChildNodes` raccolta del controllo del contenuto della casella di testo RTF.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);
 ```
 
-## الخطوة 5: قم بإلحاق Content Control بالمستند
- قم بإلحاق عنصر تحكم محتوى مربع النص المنسق بجسم المستند باستخدام ملف`AppendChild` طريقة نص القسم الأول من المستند.
+## Passaggio 5: aggiungere il controllo del contenuto al documento
+ Aggiungi il controllo del contenuto della casella di testo RTF al corpo del documento utilizzando il`AppendChild` metodo del corpo della prima sezione del documento.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);
 ```
 
-## الخطوة 6: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.RichTextBoxContentControl.docx".
+## Passaggio 6: salvare il documento
+ Salvare il documento nella directory specificata utilizzando il file`Save` metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithSdt.RichTextBoxContentControl.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ```
 
-### مثال على شفرة المصدر للتحكم في محتوى Rich Text Box باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Rich Text Box Content Control utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -81,4 +81,4 @@ doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 	doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إنشاء عنصر تحكم محتوى مربع نص منسق في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai creato correttamente un controllo del contenuto della casella di testo RTF nel documento di Word utilizzando Aspose.Words per .NET.

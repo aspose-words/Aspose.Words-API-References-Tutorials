@@ -1,36 +1,36 @@
 ---
-title: تصدير الإشارات المرجعية في رأس تذييل الصفحة
-linktitle: تصدير الإشارات المرجعية في رأس تذييل الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتصدير الإشارات المرجعية في الرأس والتذييل باستخدام Aspose.Words for .NET.
+title: Exportar marcadores de encabezado y pie de página
+linktitle: Exportar marcadores de encabezado y pie de página
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para exportar marcadores de encabezado y pie de página con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة إشارات مرجعية لرأس وتذييل الصفحة مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تصدير الإشارات المرجعية من رؤوس الصفحات وتذييلاتها في المستند وإنشاء ملف PDF بالإشارات المرجعية المناسبة.
+Este artículo proporciona una guía paso a paso sobre cómo usar la función Exportar marcadores de encabezado y pie de página con Aspose.Words para .NET. Explicaremos cada parte del código en detalle. Al final de este tutorial, podrá comprender cómo exportar marcadores de encabezados y pies de página de un documento y generar un PDF con los marcadores apropiados.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Antes de comenzar, asegúrese de haber instalado y configurado la biblioteca Aspose.Words para .NET en su proyecto. Puede encontrar la biblioteca y las instrucciones de instalación en el sitio web de Aspose.
 
-## الخطوة 1: تحديد دليل المستند
+## Paso 1: Definir el directorio de documentos
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Para comenzar, debe definir la ruta al directorio donde se encuentran sus documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Paso 2: Sube el documento
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن الوثيقة تسمى "Bookmarks in headers and footers.docx" وهي موجودة في دليل المستندات المحدد.
+continuación, debemos cargar el documento que queremos procesar. En este ejemplo, asumimos que el documento se llama "Marcadores en encabezados y pies de página.docx" y se encuentra en el directorio de documentos especificado.
 
 ```csharp
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF
+## Paso 3: Configure las opciones de guardar como PDF
 
- لتصدير الإشارات المرجعية للرأس والتذييل ، نحتاج إلى تكوين ملف`PdfSaveOptions` هدف. في هذا المثال ، قمنا بتعيين مستوى مخطط الإشارة المرجعية الافتراضي على 1 ووضع تصدير الإشارة المرجعية للرأس والتذييل على "الأول".
+ Para exportar marcadores de encabezado y pie de página, debemos configurar el`PdfSaveOptions` objeto. En este ejemplo, configuramos el nivel de esquema de marcador predeterminado en 1 y el modo de exportación de marcador de encabezado y pie de página en "Primero".
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,21 +38,21 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## الخطوة 4: احفظ المستند كملف PDF مع الإشارات المرجعية للرؤوس والتذييلات
+## Paso 4: guarde el documento como PDF con marcadores de encabezados y pies de página
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Finalmente, podemos guardar el documento en formato PDF utilizando las opciones de guardado configuradas previamente.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تصدير إشارات مرجعية للرأس والتذييل من مستند وإنشاء ملف PDF مع الإشارات المرجعية المناسبة باستخدام Aspose.Words for .NET.
+Eso es todo ! Ha exportado con éxito los marcadores de encabezado y pie de página de un documento y ha generado un PDF con los marcadores apropiados utilizando Aspose.Words para .NET.
 
-### عينة من التعليمات البرمجية المصدر لتصدير الإشارات المرجعية في الرأس والتذييل باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para exportar marcadores de encabezado y pie de página con Aspose.Words para .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 

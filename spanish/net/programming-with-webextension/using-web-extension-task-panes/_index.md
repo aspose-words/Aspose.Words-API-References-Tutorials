@@ -1,28 +1,28 @@
 ---
-title: استخدام أجزاء مهام ملحق الويب
-linktitle: استخدام أجزاء مهام ملحق الويب
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لاستخدام أجزاء مهام ملحق الويب مع Aspose.Words for .NET.
+title: Uso de los paneles de tareas de Web Extension
+linktitle: Uso de los paneles de tareas de Web Extension
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para usar los paneles de tareas de Web Extension con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-webextension/using-web-extension-task-panes/
 ---
 
-تقدم هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام أجزاء مهمة امتداد الويب مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية إضافة أجزاء المهام وتكوينها لملحقات الويب.
+Este artículo proporciona una guía paso a paso sobre cómo usar los paneles de tareas de la extensión web con Aspose.Words para .NET. Explicaremos cada parte del código en detalle. Al final de este tutorial, podrá comprender cómo agregar y configurar paneles de tareas para extensiones web.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Antes de comenzar, asegúrese de haber instalado y configurado la biblioteca Aspose.Words para .NET en su proyecto. Puede encontrar la biblioteca y las instrucciones de instalación en el sitio web de Aspose.
 
-## الخطوة 1: تحديد دليل المستند
+## Paso 1: Definir el directorio de documentos
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث تريد حفظ المستند الذي تم إنشاؤه. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Para comenzar, debe definir la ruta al directorio donde desea guardar el documento generado. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء جزء مهام وتكوينه
+## Paso 2: crear y configurar un panel de tareas
 
- نقوم بإنشاء ملف`TaskPane` الكائن وإضافته إلى المستند`s `مجموعة WebExtensionTaskPanes`. بعد ذلك ، نقوم بتكوين خصائص جزء المهام ، مثل حالة الإرساء والرؤية والعرض.
+ Creamos un`TaskPane` objeto y agregarlo al documento`s `Colección WebExtensionTaskPanes`. A continuación, configuramos las propiedades del panel de tareas, como su estado acoplado, visibilidad y ancho.
 
 ```csharp
 Document doc = new Document();
@@ -35,7 +35,7 @@ taskPane.IsVisible = true;
 taskPane.Width = 300;
 ```
 
-قمنا أيضًا بتعيين بيانات اعتماد امتداد الويب بما في ذلك معرف الكتالوج والإصدار ونوع المتجر.
+También configuramos las credenciales de la extensión web, incluida la identificación del catálogo, la versión y el tipo de tienda.
 
 ```csharp
 taskPane.WebExtension.Reference.Id = "wa102923726";
@@ -44,7 +44,7 @@ taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
 taskPane.WebExtension.Reference.Store = "th-TH";
 ```
 
-أخيرًا ، نضيف خصائص وارتباطات إلى امتداد الويب.
+Finalmente, agregamos propiedades y enlaces a la extensión web.
 
 ```csharp
 taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
@@ -52,17 +52,17 @@ taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_150
 	WebExtensionBindingType.Text, "194740422"));
 ```
 
-## الخطوة 3: احفظ المستند وقم بتحميله
+## Paso 3: Guarda y carga el documento
 
-نحفظ المستند مع أجزاء المهام المكونة في الدليل المحدد.
+Guardamos el documento con los paneles de tareas configurados en el directorio especificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## الخطوة 4: عرض معلومات أجزاء المهام
+## Paso 4: mostrar la información de los paneles de tareas
 
-بعد ذلك ، نقوم بتحميل المستند وعرض معلومات مصدر جزء المهام.
+A continuación, cargamos el documento y mostramos la información de origen del panel de tareas.
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
@@ -77,14 +77,14 @@ Console.WriteLine($"Vendor: \"{reference.Store}\", version: \"{reference.Version
 }
 ```
 
-هذا كل شئ ! لقد نجحت في استخدام أجزاء مهام ملحق الويب مع Aspose.Words for .NET.
+Eso es todo ! Ha utilizado con éxito los paneles de tareas de la extensión web con Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لاستخدام أجزاء مهام امتداد الويب مع Aspose.Words for .NET
+### Ejemplo de código fuente para usar paneles de tareas de extensión web con Aspose.Words para .NET
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 

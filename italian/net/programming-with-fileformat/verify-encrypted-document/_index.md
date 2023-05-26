@@ -1,48 +1,48 @@
 ---
-title: تحقق من المستند المشفر
-linktitle: تحقق من المستند المشفر
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة للتحقق من أن المستند مشفر باستخدام Aspose.Words for .NET.
+title: Verifica documento crittografato
+linktitle: Verifica documento crittografato
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata per verificare che un documento sia crittografato con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-fileformat/verify-encrypted-document/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة التحقق من المستند المشفر مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية التحقق مما إذا كان المستند مشفرًا.
+Questo articolo fornisce una guida dettagliata su come utilizzare la funzione di verifica del documento crittografato con Aspose.Words per .NET. Spiegheremo ogni parte del codice in dettaglio. Alla fine di questo tutorial, sarai in grado di capire come verificare se un documento è crittografato.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Prima di iniziare, assicurati di aver installato e configurato la libreria Aspose.Words per .NET nel tuo progetto. Puoi trovare la libreria e le istruzioni di installazione sul sito web di Aspose.
 
-## الخطوة 1: تحديد دليل المستند
+## Passaggio 1: definire la directory dei documenti
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Per iniziare, devi definire il percorso della directory in cui si trovano i tuoi documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: كشف تنسيق الملف
+## Passaggio 2: rileva il formato del file
 
- بعد ذلك ، نستخدم ملف`DetectFileFormat` طريقة`FileFormatUtil` فئة للكشف عن معلومات تنسيق الملف. في هذا المثال ، نفترض أن المستند المشفر يسمى "Encrypted.docx" وموجود في دليل المستندات المحدد.
+ Successivamente, usiamo il`DetectFileFormat` metodo del`FileFormatUtil` class per rilevare le informazioni sul formato del file. In questo esempio, supponiamo che il documento crittografato si chiami "Encrypted.docx" e si trovi nella directory dei documenti specificata.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
-## الخطوة 3: تحقق مما إذا كان المستند مشفرًا
+## Passaggio 3: controlla se il documento è crittografato
 
- نحن نستخدم ال`IsEncrypted` ممتلكات`FileFormatInfo` للتحقق مما إذا كان المستند مشفرًا. تعود هذه الخاصية`true` إذا تم تشفير المستند ، وإلا فإنه يعود`false`. نعرض النتيجة في وحدة التحكم.
+ Noi usiamo il`IsEncrypted` proprietà del`FileFormatInfo` oggetto per verificare se il documento è crittografato. Questa proprietà ritorna`true` se il documento è cifrato, altrimenti ritorna`false`. Mostriamo il risultato nella console.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
 ```
 
-هذا كل شئ ! لقد نجحت في التحقق مما إذا كان المستند مشفرًا باستخدام Aspose.Words for .NET.
+È tutto ! Hai verificato con successo se un documento è crittografato utilizzando Aspose.Words per .NET.
 
-### مثال على شفرة المصدر للتحقق من المستندات المشفرة باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per la verifica di documenti crittografati con Aspose.Words per .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 	Console.WriteLine(info.IsEncrypted);

@@ -1,52 +1,52 @@
 ---
-title: إظهار إخفاء الإشارات المرجعية
-linktitle: إظهار إخفاء الإشارات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إظهار أو إخفاء إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET.
+title: Afficher Masquer les signets
+linktitle: Afficher Masquer les signets
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Découvrez comment afficher ou masquer un signet spécifique dans un document à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إظهار إخفاء الإشارات المرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إظهار أو إخفاء إشارة مرجعية معينة في المستند.
+Dans cet article, nous allons explorer le code source C# ci-dessus pour comprendre comment utiliser la fonction Afficher les signets masqués dans la bibliothèque Aspose.Words pour .NET. Cette fonctionnalité vous permet d'afficher ou de masquer un signet spécifique dans un document.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Connaissance de base du langage C#.
+- Environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
-## الخطوة 1: تحميل المستند
+## Étape 1 : Chargement du document
 
- نحن نستخدم ال`Document` فئة لتحميل المستند الحالي من ملف:
+ Nous utilisons le`Document` class pour charger le document existant à partir d'un fichier :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## الخطوة 2: إظهار أو إخفاء إشارة مرجعية معينة
+## Étape 2 : Afficher ou masquer un signet spécifique
 
- نحن نستخدم ال`ShowHideBookmarkedContent` وظيفة لإظهار أو إخفاء إشارة مرجعية معينة في المستند. تأخذ هذه الوظيفة كمعلمات للمستند واسم الإشارة المرجعية وقيمة منطقية للإشارة إلى ما إذا كان سيتم إظهار الإشارة المرجعية أو إخفائها:
+ Nous utilisons le`ShowHideBookmarkedContent` fonction pour afficher ou masquer un signet spécifique dans le document. Cette fonction prend en paramètre le document, le nom du signet et un booléen pour indiquer s'il faut afficher ou masquer le signet :
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## الخطوة 3: حفظ المستند المعدل
+## Étape 3 : Enregistrer le document modifié
 
- نحن نستخدم ال`Save` طريقة لحفظ المستند المعدل في ملف:
+ Nous utilisons le`Save` méthode pour enregistrer le document modifié dans un fichier :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### مثال على شفرة المصدر لـ Show Hide Bookmarks باستخدام Aspose.Words for .NET
+### Exemple de code source pour Afficher les signets masqués à l'aide de Aspose.Words pour .NET
 
-إليك المثال الكامل لشفرة المصدر لتوضيح إظهار أو إخفاء إشارة مرجعية معينة باستخدام Aspose.Words for .NET:
+Voici l'exemple de code source complet pour démontrer l'affichage ou le masquage d'un signet spécifique à l'aide de Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 
@@ -56,6 +56,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 
 ```
 
-## خاتمة
+## Conclusion
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام ميزة إظهار إخفاء الإشارات المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإظهار أو إخفاء إشارة مرجعية معينة في مستند.
+Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonctionnalité Afficher les signets masqués d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour afficher ou masquer un signet spécifique dans un document.

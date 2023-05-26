@@ -1,22 +1,22 @@
 ---
-title: كشف الترقيم مع المسافات
-linktitle: كشف الترقيم مع المسافات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية اكتشاف أرقام القائمة مع وجود مسافات بيضاء في Aspose.Words for .NET. قم بتحسين بنية المستندات الخاصة بك بسهولة.
+title: Upptäck numrering med blanksteg
+linktitle: Upptäck numrering med blanksteg
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du upptäcker listnummer med blanksteg i Aspose.Words för .NET. Förbättra strukturen på dina dokument med lätthet.
 type: docs
 weight: 10
 url: /sv/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لميزة "اكتشاف الترقيم بمسافات بيضاء" مع Aspose.Words for .NET. تسمح لك هذه الميزة باكتشاف وإنشاء قوائم من مستند نصي يحتوي على أرقام قائمة متبوعة بمسافات بيضاء.
+den här handledningen kommer vi att utforska C#-källkoden som tillhandahålls för funktionen "Detektering av numrering med blanksteg" med Aspose.Words för .NET. Den här funktionen låter dig upptäcka och skapa listor från ett textdokument som innehåller listnummer följt av blanksteg.
 
-## الخطوة الأولى: تهيئة البيئة
+## Steg 1: Sätta upp miljön
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Innan du börjar, se till att du har ställt in din utvecklingsmiljö med Aspose.Words för .NET. Se till att du har lagt till nödvändiga referenser och importerat lämpliga namnområden.
 
-## الخطوة 2: إنشاء مستند نصي
+## Steg 2: Skapa textdokumentet
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 string textDoc = "Full stop delimiters:\n" +
@@ -37,17 +37,17 @@ string textDoc = "Full stop delimiters:\n" +
                   "3 Fourth list item 3";
 ```
 
-في هذه الخطوة ، نقوم بإنشاء سلسلة نصية تحاكي مستندًا نصيًا يحتوي على أرقام قائمة متبوعة بمسافات بيضاء. نستخدم محددات قائمة مختلفة مثل النقطة والقوس الأيمن ورمز التعداد النقطي والمسافات البيضاء.
+I det här steget skapar vi en textsträng som simulerar ett textdokument som innehåller listnummer följt av blanksteg. Vi använder olika listavgränsare som punkt, höger parentes, punktsymbol och blanksteg.
 
-## الخطوة 3: تكوين خيارات التحميل
+## Steg 3: Konfigurera uppladdningsalternativ
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 ```
 
- في هذه الخطوة ، نقوم بتكوين خيارات تحميل المستند. نخلق ملف`TxtLoadOptions` كائن وتعيين`DetectNumberingWithWhitespaces` ملكية ل`true`. سيسمح هذا لـ Aspose.Words باكتشاف أرقام القائمة حتى لو تبعتها مسافات بيضاء.
+ I det här steget konfigurerar vi alternativen för dokumentladdning. Vi skapar en ny`TxtLoadOptions` objekt och ställ in`DetectNumberingWithWhitespaces` egendom till`true`. Detta gör att Aspose.Words kan upptäcka listnummer även om de följs av blanksteg.
 
-## الخطوة 4: تحميل المستند وحفظه
+## Steg 4: Ladda dokumentet och spara
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
@@ -55,19 +55,19 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام السلسلة النصية المحددة وخيارات التحميل. نحن نستخدم`MemoryStream` لتحويل سلسلة النص إلى تدفق الذاكرة. ثم نقوم بحفظ المستند الناتج بتنسيق docx.
+ I det här steget laddar vi dokumentet med den angivna textsträngen och laddningsalternativ. Vi använder a`MemoryStream` för att konvertera textsträngen till en minnesström. Sedan sparar vi det resulterande dokumentet i .docx-format.
 
-### نموذج لشفرة مصدر لميزة اكتشاف ترقيم المسافات البيضاء مع Aspose.Words for .NET.
+### Exempel på källkod för White Space Numbering Detection-funktionen med Aspose.Words för .NET.
 
 ```csharp
 
             
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 			
-// قم بإنشاء مستند نص عادي في شكل سلسلة بأجزاء يمكن تفسيرها على أنها قوائم.
-// عند التحميل ، سيتم دائمًا اكتشاف القوائم الثلاث الأولى بواسطة Aspose.Words ،
-// وسيتم إنشاء كائنات القائمة لهم بعد التحميل.
+// Skapa ett klartextdokument i form av en sträng med delar som kan tolkas som listor.
+// Vid laddning kommer de tre första listorna alltid att upptäckas av Aspose.Words,
+// och Listobjekt kommer att skapas för dem efter laddning.
 const string textDoc = "Full stop delimiters:\n" +
 					   "1. First list item 1\n" +
 					   "2. First list item 2\n" +
@@ -85,12 +85,12 @@ const string textDoc = "Full stop delimiters:\n" +
 					   "2 Fourth list item 2\n" +
 					   "3 Fourth list item 3";
 
-// القائمة الرابعة ، مع وجود مسافة بيضاء بين رقم القائمة ومحتويات عنصر القائمة ،
-// سيتم اكتشافه كقائمة فقط إذا تم تعيين "DetectNumberingWithWhitespaces" في كائن LoadOptions على true ،
-// لتجنب الفقرات التي تبدأ بأرقام يتم اكتشافها عن طريق الخطأ كقوائم.
+// Den fjärde listan, med blanksteg mellan listnumret och listobjektets innehåll,
+// kommer bara att upptäckas som en lista om "DetectNumberingWithWhitespaces" i ett LoadOptions-objekt är satt till true,
+// för att undvika att stycken som börjar med siffror av misstag upptäcks som listor.
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 
-// قم بتحميل المستند أثناء تطبيق LoadOptions كمعامل وتحقق من النتيجة.
+// Ladda dokumentet medan du använder LoadOptions som en parameter och verifiera resultatet.
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
 
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
@@ -98,19 +98,19 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
         
 ```
 
-يمكنك الآن تشغيل الكود المصدري لتحميل المستند النصي الذي يحتوي على أرقام القوائم بمسافات بيضاء ، ثم إنشاء مستند docx مع القوائم المكتشفة. سيتم حفظ ملف الإخراج في الدليل المحدد باسم "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx".
+Nu kan du köra källkoden för att ladda textdokumentet som innehåller listnummer med blanksteg, och sedan skapa ett .docx-dokument med de upptäckta listorna. Utdatafilen kommer att sparas i den angivna katalogen med namnet "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx".
 
-## خاتمة
-في هذا البرنامج التعليمي ، استكشفنا ميزة اكتشاف ترقيم المسافات البيضاء في Aspose.Words for .NET. تعلمنا كيفية إنشاء قوائم من مستند نصي يحتوي على أرقام قائمة متبوعة بمسافات بيضاء.
+## Slutsats
+I den här handledningen utforskade vi funktionen för upptäckt av blankstegsnumrering i Aspose.Words för .NET. Vi lärde oss hur man skapar listor från ett textdokument som innehåller listnummer följt av blanksteg.
 
-هذه الميزة مفيدة للغاية لمعالجة المستندات التي تحتوي على أرقام القوائم المنسقة بطرق مختلفة. باستخدام خيارات التحميل المناسبة ، يمكن لـ Aspose.Words اكتشاف أرقام القائمة هذه ، حتى إذا كانت متبوعة بمسافات بيضاء ، وتحويلها إلى قوائم منظمة في المستند النهائي.
+Den här funktionen är extremt användbar för att behandla dokument som innehåller listnummer formaterade på olika sätt. Genom att använda lämpliga laddningsalternativ kan Aspose.Words upptäcka dessa listnummer, även om de följs av blanksteg, och konvertera dem till strukturerade listor i det slutliga dokumentet.
 
-يمكن أن يؤدي استخدام هذه الميزة إلى توفير الوقت وتحسين كفاءة سير العمل. يمكنك بسهولة استخراج المعلومات من المستندات النصية وتحويلها إلى مستندات جيدة التنظيم باستخدام قوائم مناسبة.
+Genom att använda den här funktionen kan du spara tid och förbättra ditt arbetsflöde. Du kan enkelt extrahera information från textdokument och konvertera dem till välstrukturerade dokument med ordentliga listor.
 
-تذكر أن تضع في اعتبارك خيارات التحميل ، مثل تكوين اكتشاف الاتصال بالمسافة البيضاء ، لتحقيق النتائج المرجوة.
+Kom ihåg att överväga laddningsalternativ, som att konfigurera detektering av blankstegsuppringning, för att uppnå önskat resultat.
 
-يوفر Aspose.Words for .NET العديد من الميزات المتقدمة لمعالجة المستندات وإنشائها. من خلال استكشاف المزيد من الوثائق والأمثلة المقدمة من Aspose.Words ، ستتمكن من استغلال إمكانات هذه المكتبة القوية بشكل كامل.
+Aspose.Words för .NET erbjuder många avancerade funktioner för dokumenthantering och generering. Genom att ytterligare utforska dokumentationen och exemplen som tillhandahålls av Aspose.Words kommer du att fullt ut kunna utnyttja funktionerna i detta kraftfulla bibliotek.
 
-لذلك ، لا تتردد في دمج اكتشاف ترقيم المسافات البيضاء في Aspose.Words لمشاريع .NET واستفد من مزاياها لإنشاء مستندات جيدة التنظيم وقابلة للقراءة.
+Så tveka inte att integrera blankstegsnumrering i dina Aspose.Words för .NET-projekt och dra nytta av dess fördelar för att skapa välstrukturerade och läsbara dokument.
 
 

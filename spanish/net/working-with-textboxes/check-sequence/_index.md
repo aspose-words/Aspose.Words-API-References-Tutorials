@@ -1,16 +1,16 @@
 ---
-title: تحقق من التسلسل
-linktitle: تحقق من التسلسل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التحقق من تسلسل TextBoxes في مستند Word باستخدام Aspose.Words for .NET.
+title: Comprobar secuencia
+linktitle: Comprobar secuencia
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a verificar la secuencia de cuadros de texto en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-textboxes/check-sequence/
 ---
 
-## الخطوة 1: إعداد المستند وإنشاء شكل مربع نص
+## Paso 1: configurar el documento y crear una forma de cuadro de texto
 
- للبدء ، نحتاج إلى إعداد المستند وإنشاء شكل مربع نص. يقوم الكود التالي بتهيئة مثيل جديد لملف`Document` فئة وإنشاء شكل مربع نص:
+ Para comenzar, debemos configurar el documento y crear una forma de cuadro de texto. El siguiente código inicializa una nueva instancia del`Document` clase y crea una forma de cuadro de texto:
 
 ```csharp
 Document doc = new Document();
@@ -18,11 +18,11 @@ Shape shape = new Shape(doc, ShapeType.TextBox);
 TextBox textBox = shape.TextBox;
 ```
 
-## الخطوة 2: التحقق من تسلسل TextBox
+## Paso 2: Comprobación de la secuencia de TextBox
 
- سوف نتحقق الآن من تسلسل استخدام TextBox`if` شروط. يحتوي كود المصدر المقدم على ثلاثة شروط منفصلة للتحقق من موضع TextBox بالنسبة إلى الأشكال السابقة والتالية.
+ Ahora comprobaremos la secuencia del TextBox usando`if` condiciones. El código fuente provisto contiene tres condiciones separadas para verificar la posición del cuadro de texto en relación con las formas anteriores y posteriores.
 
-## الخطوة الثالثة: فحص رأس التسلسل:
+## Paso 3: Comprobación del encabezado de secuencia:
 
 ```csharp
 if (textBox. Next != null && textBox. Previous == null)
@@ -31,9 +31,9 @@ if (textBox. Next != null && textBox. Previous == null)
 }
 ```
 
-إذا كان لمربع النص شكل تالٍ (`Next`) ولكن ليس هناك شكل سابق (`Previous`) ، هذا يعني أنه رأس التسلسل. سيتم عرض رسالة "رأس التسلسل".
+Si el cuadro de texto tiene una forma siguiente (`Next`) pero sin forma previa (`Previous`), eso significa que es la cabeza de la secuencia. Se mostrará el mensaje "La cabecera de la secuencia".
 
-## الخطوة 4: فحص منتصف التسلسل:
+## Paso 4: Comprobación de la mitad de la secuencia:
 
 ```csharp
 if (textBox. Next != null && textBox. Previous != null)
@@ -42,9 +42,9 @@ if (textBox. Next != null && textBox. Previous != null)
 }
 ```
 
-إذا كان مربع النص يحتوي على كل من الشكل التالي (`Next`) وشكل سابق (`Previous`) ، يشير هذا إلى أنه في منتصف التسلسل. سيتم عرض الرسالة "منتصف التسلسل".
+Si el cuadro de texto tiene una forma Siguiente (`Next`) y una forma anterior (`Previous`), esto indica que está en medio de la secuencia. Se mostrará el mensaje "La mitad de la secuencia".
 
-## الخطوة الخامسة: التحقق من انتهاء التسلسل:
+## Paso 5: Verificación del final de la secuencia:
 
 ```csharp
 if (textBox. Next == null && textBox. Previous != null)
@@ -53,9 +53,9 @@ if (textBox. Next == null && textBox. Previous != null)
 }
 ```
 
-إذا لم يكن لمربع النص شكل تالٍ (`Next`) ولكن له شكل سابق (`Previous`، هذا يعني أنها نهاية التسلسل. سيتم عرض رسالة "نهاية التسلسل".
+Si el cuadro de texto no tiene la siguiente forma (`Next`) pero tiene una forma anterior (`Previous`), eso significa que es el final de la secuencia. Se mostrará el mensaje "El final de la secuencia".
 
-### عينة من التعليمات البرمجية المصدر للتحقق من التسلسل باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para verificar la secuencia con Aspose.Words para .NET
 
 ```csharp
 Document doc = new Document();

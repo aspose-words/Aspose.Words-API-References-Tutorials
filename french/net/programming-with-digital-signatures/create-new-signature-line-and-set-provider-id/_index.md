@@ -1,18 +1,18 @@
 ---
-title: إنشاء سطر توقيع جديد وتعيين معرف الموفر
-linktitle: إنشاء سطر توقيع جديد وتعيين معرف الموفر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستند Word باستخدام Aspose.Words for .NET.
+title: Créer une nouvelle ligne de signature et définir l'identifiant du fournisseur
+linktitle: Créer une nouvelle ligne de signature et définir l'identifiant du fournisseur
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à créer une nouvelle ligne de signature et à définir l'ID du fournisseur dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لاستخدام ميزة إنشاء خط توقيع جديد وتعيين معرّف الموفر مع Aspose.Words for .NET. تتيح لك هذه الميزة إدراج سطر توقيع في مستند Word ، وتعيين الخيارات المخصصة وتوقيع المستند. اتبع الخطوات التالية:
+Dans ce didacticiel, nous vous expliquerons les étapes à suivre pour utiliser la fonctionnalité Créer une nouvelle ligne de signature et définir l'ID du fournisseur avec Aspose.Words pour .NET. Cette fonctionnalité vous permet d'insérer une ligne de signature dans un document Word, de définir des options personnalisées et de signer le document. Suivez les étapes ci-dessous :
 
-## الخطوة 1: إنشاء المستند والمولد
+## Étape 1 : Création du document et du générateur
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+Commencez par créer une instance de la classe Document et un objet DocumentBuilder :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -20,9 +20,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تعيين خيارات خط التوقيع
+## Étape 2 : Définition des options de ligne de signature
 
-قم بإنشاء مثيل لفئة SignatureLineOptions وقم بتعيين الخيارات المطلوبة:
+Créez une instance de la classe SignatureLineOptions et définissez les options souhaitées :
 
 ```csharp
 SignatureLineOptions signatureLineOptions = new SignatureLineOptions
@@ -37,37 +37,37 @@ AllowComments = true
 };
 ```
 
-## الخطوة 3: إدخال سطر التوقيع
+## Étape 3 : Insertion de la ligne de signature
 
-استخدم طريقة InsertSignatureLine () لكائن DocumentBuilder لإدراج سطر التوقيع في المستند:
+Utilisez la méthode InsertSignatureLine() de l'objet DocumentBuilder pour insérer la ligne de signature dans le document :
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
 ```
 
-## الخطوة 4: قم بتعيين معرف المزود
+## Étape 4 : Définir l'ID du fournisseur
 
-قم بتعيين معرف الموفر لسطر التوقيع باستخدام خاصية ProviderId:
+Définissez l'ID du fournisseur pour la ligne de signature à l'aide de la propriété ProviderId :
 
 ```csharp
 signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
 ```
 
-تأكد من تحديد معرف الموفر الصحيح لحالة الاستخدام الخاصة بك.
+Assurez-vous de spécifier l'ID de fournisseur correct pour votre cas d'utilisation.
 
-## الخطوة 5: احفظ المستند
+## Étape 5 : Enregistrer le document
 
-احفظ المستند المعدل:
+Enregistrez le document modifié :
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند.
+Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour enregistrer le document.
 
-## الخطوة السادسة: توقيع الوثيقة
+## Étape 6 : Signature du document
 
-لتوقيع الوثيقة ، تحتاج إلى تعيين خيارات التوقيع واستخدام فئة DigitalSignatureUtil:
+Pour signer le document, vous devez définir les options de signature et utiliser la classe DigitalSignatureUtil :
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -84,15 +84,15 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx"
 	dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions)
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند والشهادة والمستند الموقع.
+Assurez-vous de spécifier les chemins d'accès corrects pour le document, le certificat et le document signé.
 
-### مثال على شفرة المصدر لـ Create New Signature Line And Set Provider ID باستخدام Aspose.Words for .NET
+### Exemple de code source pour créer une nouvelle ligne de signature et définir l'identifiant du fournisseur à l'aide de Aspose.Words pour .NET
 
-إليك شفرة المصدر الكاملة لإنشاء سطر توقيع جديد وتعيين معرف الموفر باستخدام Aspose.Words for .NET:
+Voici le code source complet pour créer une nouvelle ligne de signature et définir l'ID du fournisseur avec Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -128,5 +128,5 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx"
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+En suivant ces étapes, vous pouvez facilement créer une nouvelle ligne de signature et définir l'ID du fournisseur dans votre document Word avec Aspose.Words pour .NET.
 

@@ -1,17 +1,17 @@
 ---
-title: استنساخ ودمج المستندات
-linktitle: استنساخ ودمج المستندات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على استنساخ المستند وإدراج المستند عند الاستبدال وإدراج المستند عند دمج المراسلات.
+title: Clonare e combinare documenti
+linktitle: Clonare e combinare documenti
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Le esercitazioni contengono la clonazione del documento, l'inserimento del documento alla sostituzione e l'inserimento del documento alla stampa unione.
 type: docs
 weight: 1470
 url: /it/net/clone-and-combine-documents/
 ---
-تقدم Clone And Combine Documents دروسًا حول النسخ والجمع بين المستندات باستخدام Aspose.Words for .NET. توضح البرامج التعليمية بالتفصيل كيفية استنساخ المستندات ودمجها في سيناريوهات مختلفة. يقدمون نموذجًا من التعليمات البرمجية وشروحات خطوة بخطوة لإرشادك خلال العملية. إنه مورد مفيد لأولئك الذين يعملون مع Aspose.Words for .NET ويريدون معرفة كيفية التعامل مع المستندات بفاعلية باستخدام هذه الميزات.
+Clona e combina documenti offre tutorial sulla clonazione e la combinazione di documenti utilizzando Aspose.Words per .NET. I tutorial spiegano in dettaglio come clonare e combinare documenti in diversi scenari. Forniscono codice di esempio e spiegazioni dettagliate per guidarti attraverso il processo. È una risorsa utile per coloro che lavorano con Aspose.Words per .NET e vogliono imparare come manipolare efficacemente i documenti utilizzando queste funzionalità.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [وثيقة الاستنساخ](./cloning-document/) | تعرف على كيفية استنساخ مستند Word باستخدام Aspose.Words for .NET. |
-| [أدخل المستند عند الاستبدال](./insert-document-at-replace/) | تعرف على كيفية إدراج مستند عند الاستبدال باستخدام Aspose.Words for .NET. |
-| [إدراج مستند في دمج المراسلات](./insert-document-at-mail-merge/) | تعرف على كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words for .NET. |
+| [Documento di clonazione](./cloning-document/) | Scopri come clonare un documento Word utilizzando Aspose.Words per .NET. |
+| [Inserisci documento al momento della sostituzione](./insert-document-at-replace/) | Scopri come inserire un documento in sostituzione utilizzando Aspose.Words per .NET. |
+| [Inserisci documento alla stampa unione](./insert-document-at-mail-merge/) | Scopri come inserire un documento in un altro durante la stampa unione utilizzando Aspose.Words per .NET. |

@@ -1,78 +1,78 @@
 ---
-title: استنساخ الجدول الكامل
-linktitle: استنساخ الجدول الكامل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استنساخ جدول كامل في مستند Word باستخدام Aspose.Words for .NET.
+title: Vollständige Tabelle klonen
+linktitle: Vollständige Tabelle klonen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine ganze Tabelle in ein Word-Dokument klonen.
 type: docs
 weight: 10
 url: /de/net/programming-with-tables/clone-complete-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words لـ .NET لاستنساخ جدول كامل في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من استنساخ الجداول في مستندات Word برمجيًا.
+In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET eine ganze Tabelle in ein Word-Dokument klonen. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials werden Sie in der Lage sein, Tabellen programmgesteuert in Ihre Word-Dokumente zu klonen.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Schritt 1: Projekteinrichtung
+1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
+2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
-## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+## Schritt 2: Laden des Dokuments und Zugriff auf die Tabelle
+Um mit der Tabelle zu arbeiten, müssen wir das Dokument laden, das sie enthält, und darauf zugreifen. Folge diesen Schritten:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Laden Sie das Dokument
 Document doc = new Document(dataDir + "Tables.docx");
 
-// الوصول إلى المصفوفة
+// Zugriff auf das Array
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Stellen Sie sicher, dass Sie „IHR DOKUMENTENVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis ersetzen.
 
-## الخطوة 3: استنساخ الصفيف الكامل
-بعد ذلك ، سنقوم باستنساخ الجدول بأكمله وإدخاله في المستند بعد المستند الأصلي. استخدم الكود التالي:
+## Schritt 3: Vollständiger Array-Klon
+Als nächstes klonen wir die gesamte Tabelle und fügen sie nach dem Original in das Dokument ein. Verwenden Sie den folgenden Code:
 
 ```csharp
-// استنساخ المصفوفة
+// Klonen Sie das Array
 Table tableClone = (Table)table.Clone(true);
 
-// أدخل الجدول المستنسخ في المستند بعد المستند الأصلي
+// Fügen Sie die geklonte Tabelle nach dem Original in das Dokument ein
 table.ParentNode.InsertAfter(tableClone, table);
 
-// أدخل فقرة فارغة بين الجدولين
-// وإلا سيتم دمجها في واحدة عند الحفظ (هذا بسبب التحقق من صحة المستند)
+// Fügen Sie zwischen den beiden Tabellen einen leeren Absatz ein
+// Andernfalls werden sie beim Speichern zu einem zusammengefasst (dies liegt an der Dokumentenvalidierung).
 table.ParentNode.InsertAfter(new Paragraph(doc), table);
 ```
 
- نحن هنا نستخدم ملف`Clone` طريقة لإنشاء نسخة كاملة من المصفوفة. ثم نستخدم`InsertAfter` لإدراج الجدول المستنسخ في المستند ، بعد الجدول الأصلي. نضيف أيضًا فقرة فارغة بين الجدولين لمنع دمجهما عند الحفظ.
+ Hier verwenden wir die`Clone` Methode zum Erstellen einer vollständigen Kopie des Arrays. Dann verwenden wir`InsertAfter` um die geklonte Tabelle nach der Originaltabelle in das Dokument einzufügen. Außerdem fügen wir zwischen den beiden Tabellen einen leeren Absatz ein, um zu verhindern, dass sie beim Speichern zusammengeführt werden.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل بالجدول المستنسخ. استخدم الكود التالي:
+## Schritt 4: Speichern des geänderten Dokuments
+Abschließend müssen wir das geänderte Dokument mit der geklonten Tabelle speichern. Verwenden Sie den folgenden Code:
 
 ```csharp
-// احفظ المستند المعدل
+// Speichern Sie das geänderte Dokument
 doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabedokument angeben.
   
-### نموذج التعليمات البرمجية المصدر لـ Clone Complete Table باستخدام Aspose.Words for .NET 
+### Beispielquellcode für Clone Complete Table mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// انسخ الجدول وأدخله في المستند بعد المستند الأصلي.
+	// Klonen Sie die Tabelle und fügen Sie sie nach dem Original in das Dokument ein.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// أدخل فقرة فارغة بين الجدولين ،
-	//وإلا سيتم دمجها في واحدة عند حفظ هذا له علاقة بالتحقق من صحة المستند.
+	// Fügen Sie zwischen den beiden Tabellen einen leeren Absatz ein.
+	//Andernfalls werden sie beim Speichern zu einem zusammengefasst. Dies hat mit der Dokumentenvalidierung zu tun.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية استنساخ جدول كامل في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك استنساخ الجداول في مستندات Word برمجيًا. تتيح لك هذه الميزة إجراء معالجات متقدمة على المصفوفات لتناسب احتياجاتك الخاصة.
+## Abschluss
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET eine ganze Tabelle in ein Word-Dokument klont. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie Tabellen in Ihren Word-Dokumenten programmgesteuert klonen. Mit dieser Funktion können Sie erweiterte Manipulationen an Arrays durchführen, um sie Ihren spezifischen Anforderungen anzupassen.

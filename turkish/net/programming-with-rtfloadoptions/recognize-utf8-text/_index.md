@@ -1,55 +1,55 @@
 ---
-title: التعرف على نص Utf8
-linktitle: التعرف على نص Utf8
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التعرف على أحرف Utf-8 في مستندات RTF باستخدام Aspose.Words for .NET. ضمان سلامة البيانات.
+title: Utf8 Metnini Tanıyın
+linktitle: Utf8 Metnini Tanıyın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile RTF belgelerindeki Utf-8 karakterlerini nasıl tanıyacağınızı öğrenin. Veri bütünlüğünü sağlayın.
 type: docs
 weight: 10
 url: /tr/net/programming-with-rtfloadoptions/recognize-utf8-text/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف كود المصدر C # المقدم لميزة "التعرف على نص UTF-8 مع خيارات تحميل RTF" مع Aspose.Words for .NET. تتيح لك هذه الميزة تحديد التعرف على النص المشفر UTF-8 عند تحميل مستند RTF.
+Bu öğreticide, Aspose.Words for .NET ile "UTF-8 metnini RTF yükleme seçenekleriyle tanı" özelliği için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, bir RTF belgesi yüklerken UTF-8 kodlu metnin tanınmasını belirlemenizi sağlar.
 
-## الخطوة الأولى: تهيئة البيئة
+## 1. Adım: Ortamı ayarlama
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
-## الخطوة 2: تكوين خيارات التحميل
+## 2. Adım: Yükleme seçeneklerini yapılandırma
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
- في هذه الخطوة ، نقوم بتكوين الخيارات لتحميل مستند RTF. نخلق ملف`RtfLoadOptions` كائن وتعيين`RecognizeUtf8Text` ملكية ل`true`يسمح هذا لـ Aspose.Words بالتعرف على النص المشفر UTF-8 ومعالجته بشكل صحيح عند تحميل المستند.
+ Bu adımda, RTF belgesini yükleme seçeneklerini yapılandırıyoruz. yeni bir tane yaratıyoruz`RtfLoadOptions` nesne ve ayarlayın`RecognizeUtf8Text` mülkiyet`true`Bu, Aspose.Words'ün belgeyi yüklerken UTF-8 kodlu metni doğru şekilde tanımasını ve işlemesini sağlar.
 
-## الخطوة 3: تحميل المستند
+## 3. Adım: Belgeyi yükleme
 
 ```csharp
 Document doc = new Document(dataDir + "UTF-8 characters.rtf", loadOptions);
 ```
 
- في هذه الخطوة ، نقوم بتحميل مستند RTF باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف RTF للتحميل ، جنبًا إلى جنب مع خيارات التحميل المحددة.
+ Bu adımda, RTF belgesini kullanarak yüklüyoruz.`Document` yöntemi ve yolu, belirtilen yükleme seçenekleriyle birlikte yüklenecek RTF dosyasına geçirme.
 
-## الخطوة 4: احفظ المستند
+## 4. Adım: Belgeyi kaydedin
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
 ```
 
- في هذه الخطوة الأخيرة ، نقوم بحفظ المستند الناتج بتنسيق RTF باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج.
+ Bu son adımda, ortaya çıkan belgeyi kullanarak RTF formatında kaydediyoruz.`Save` yöntemi ve yolu çıktı dosyasına geçirme.
 
-يمكنك الآن تشغيل الكود المصدري لتحميل مستند RTF والتعرف بشكل صحيح على النص المشفر UTF-8. سيتم حفظ المستند الناتج في الدليل المحدد بالاسم "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf".
+Artık RTF belgesini yüklemek ve UTF-8 kodlu metni doğru bir şekilde tanımak için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan belge, "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf" adıyla belirtilen dizine kaydedilecektir.
 
 
-### نموذج التعليمات البرمجية المصدر لميزة التعرف على النص UTF-8 مع خيارات تحميل RTF مع Aspose.Words for .NET
+### Aspose.Words for .NET ile RTF Yükleme Seçenekleri ile UTF-8 Metin Tanıma Özelliği için Örnek Kaynak Kodu
 
 ```csharp
 
             
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 	
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
@@ -61,10 +61,10 @@ doc.Save(dataDir + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
         
 ```
 
-### خاتمة
+### Çözüm
 
-في هذا البرنامج التعليمي ، استكشفنا ميزة التعرف على النص Utf-8 مع خيارات تحميل RTF في Aspose.Words for .NET. لقد تعلمنا كيفية التعرف على أحرف Utf-8 وتفسيرها بشكل صحيح عند تحميل مستند RTF.
+Bu öğreticide, Aspose.Words for .NET'te RTF yükleme seçenekleriyle Utf-8 metin tanıma özelliğini inceledik. Bir RTF belgesi yüklerken Utf-8 karakterlerini nasıl doğru tanıyacağımızı ve yorumlayacağımızı öğrendik.
 
-هذه الميزة ضرورية لضمان العرض الصحيح لأحرف Utf-8 في مستندات RTF الخاصة بك. من خلال تكوين خيارات التحميل المناسبة ، تستطيع Aspose.Words التعرف على هذه الأحرف ومعالجتها بشكل صحيح ، مما يساعد في الحفاظ على تكامل النص وجودته.
+Bu özellik, RTF belgelerinizde Utf-8 karakterlerinin doğru görüntülenmesini sağlamak için gereklidir. Aspose.Words, uygun yükleme seçeneklerini yapılandırarak bu karakterleri doğru bir şekilde tanıyıp işleyebilir ve metnin bütünlüğünün ve kalitesinin korunmasına yardımcı olur.
 
-يعد التعرف على النص Utf-8 مهمًا بشكل خاص عند العمل مع لغات ومجموعات أحرف معينة تتطلب دعم تشفير Utf-8. بفضل Aspose.Words for .NET ، يمكنك بسهولة معالجة مستندات RTF التي تحتوي على أحرف Utf-8 دون التعرض لخطر الفقد أو التلف.
+Utf-8 metin tanıma, Utf-8 kodlama desteği gerektiren belirli diller ve karakter kümeleriyle çalışırken özellikle önemlidir. Aspose.Words for .NET sayesinde Utf-8 karakterlerini içeren RTF belgelerini kayıp veya bozulma riski olmadan kolayca işleyebilirsiniz.

@@ -1,84 +1,84 @@
 ---
-title: دمج عمودي
-linktitle: دمج عمودي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الدمج الرأسي للخلايا في جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Fusion verticale
+linktitle: Fusion verticale
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à fusionner verticalement des cellules dans un tableau dans un document Word à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/vertical-merge/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية دمج الخلايا رأسيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من دمج الخلايا عموديًا في الجداول الخاصة بك في مستندات Word.
+Dans ce didacticiel, nous allons apprendre à fusionner verticalement des cellules dans un tableau dans un document Word à l'aide de Aspose.Words pour .NET. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous pourrez fusionner verticalement des cellules dans vos tableaux dans des documents Word.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Étape 1 : configuration du projet
+1. Lancez Visual Studio et créez un nouveau projet C#.
+2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## Étape 2 : Chargement du document
+Pour commencer à travailler avec le document, procédez comme suit :
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء مستند جديد
+// Créer un nouveau document
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Assurez-vous de remplacer "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin d'accès réel à votre répertoire de documents.
 
-## الخطوة 3: دمج الخلايا عموديًا
-بعد ذلك سنقوم بدمج الخلايا عموديًا في الجدول. استخدم الكود التالي:
+## Étape 3 : Fusion verticale des cellules
+Ensuite, nous fusionnerons les cellules verticalement dans le tableau. Utilisez le code suivant :
 
 ```csharp
-// أدخل خلية
+// Insérer une cellule
 builder. InsertCell();
 
-// تطبيق الدمج العمودي على الخلية الأولى
+// Appliquer la fusion verticale à la première cellule
 builder.CellFormat.VerticalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
 
-// أدخل خلية أخرى
+// Insérer une autre cellule
 builder. InsertCell();
 
-// لا تطبق أي دمج عمودي على الخلية
+// N'appliquer aucune fusion verticale à la cellule
 builder.CellFormat.VerticalMerge = CellMerge.None;
 builder.Write("Text in a cell");
 builder. EndRow();
 
-// أدخل خلية
+// Insérer une cellule
 builder. InsertCell();
 
-// تطبيق الدمج العمودي مع الخلية السابقة
+// Appliquer la fusion verticale avec la cellule précédente
 builder.CellFormat.VerticalMerge = CellMerge.Previous;
 
-// أدخل خلية أخرى
+// Insérer une autre cellule
 builder. InsertCell();
 
-// لا تطبق أي دمج عمودي على الخلية
+// N'appliquer aucune fusion verticale à la cellule
 builder.CellFormat.VerticalMerge = CellMerge.None;
 builder.Write("Text in another cell");
 builder. EndRow();
 
-//قم بإنهاء إنشاء الجدول
+//Terminer la création de la table
 builder. EndTable();
 ```
 
-في هذا الكود ، نستخدم مُنشئ DocumentBuilder لإدراج خلايا في جدول. نقوم بتطبيق الدمج الرأسي على الخلايا باستخدام خاصية CellFormat.VerticalMerge. نستخدم CellMerge ، أولًا لدمج الخلايا الأول ، CellMerge. سابقًا للدمج مع الخلية السابقة ، و CellMerge. لا يوجد أي دمج رأسي.
+Dans ce code, nous utilisons le constructeur DocumentBuilder pour insérer des cellules dans un tableau. Nous appliquons la fusion verticale aux cellules à l'aide de la propriété CellFormat.VerticalMerge. Nous utilisons CellMerge.First pour la première fusion de cellules, CellMerge.Previous pour fusionner avec la cellule précédente et CellMerge.None pour aucune fusion verticale.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع الخلايا المدمجة. استخدم الكود التالي:
+## Étape 4 : Enregistrer le document modifié
+Enfin, nous devons enregistrer le document modifié avec les cellules fusionnées. Utilisez le code suivant :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour le document de sortie.
 
-### عينة من التعليمات البرمجية المصدر لـ Vertical Merge باستخدام Aspose.Words for .NET 
+### Exemple de code source pour la fusion verticale à l'aide d'Aspose.Words pour .NET 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 	builder.Write("Text in one cell");
 	builder.EndRow();
 	builder.InsertCell();
-	// تم دمج هذه الخلية عموديًا في الخلية أعلاه ويجب أن تكون فارغة.
+	// Cette cellule est fusionnée verticalement avec la cellule du dessus et doit être vide.
 	builder.CellFormat.VerticalMerge = CellMerge.Previous;
 	builder.InsertCell();
 	builder.CellFormat.VerticalMerge = CellMerge.None;
@@ -101,5 +101,5 @@ doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 	doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية دمج الخلايا رأسيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك بسهولة دمج الخلايا العمودي في الجداول الخاصة بك.
+## Conclusion
+Dans ce didacticiel, nous avons appris à fusionner verticalement des cellules dans un tableau dans un document Word à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez facilement fusionner des cellules Vertical dans vos tableaux.

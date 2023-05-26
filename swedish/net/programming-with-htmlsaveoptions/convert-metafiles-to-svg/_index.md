@@ -1,22 +1,22 @@
 ---
-title: تحويل ملفات التعريف إلى Svg
-linktitle: تحويل ملفات التعريف إلى Svg
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحويل ملفات التعريف إلى تنسيق SVG عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET.
+title: Konvertera metafiler till svg
+linktitle: Konvertera metafiler till svg
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att konvertera metafiler till SVG-format när du konverterar ett dokument till HTML med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-htmlsaveoptions/convert-metafiles-to-svg/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتحويل ملفات التعريف إلى تنسيق SVG باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تحويل ملفات التعريف إلى تنسيق SVG عند تحويل مستند إلى HTML.
+I den här handledningen går vi igenom C#-källkoden för att konvertera metafiler till SVG-format med Aspose.Words för .NET. Denna funktion låter dig konvertera metafiler till SVG-format när du konverterar ett dokument till HTML.
 
-## الخطوة 1: إعداد المشروع
+## Steg 1: Projektinställning
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
 
-## الخطوة 2: إدراج صورة SVG في المستند
+## Steg 2: Infoga en SVG-bild i dokumentet
 
-في هذه الخطوة ، سنقوم بإدراج صورة SVG في المستند المراد تحويله. استخدم الكود التالي لإدراج صورة SVG باستخدام علامة HTML:
+det här steget kommer vi att infoga en SVG-bild i dokumentet som ska konverteras. Använd följande kod för att infoga en SVG-bild med en HTML-tagg:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -31,33 +31,33 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- هذا الرمز ينشئ مثيل`Document` و`DocumentBuilder` لبناء الوثيقة. يقوم بإدراج ملف`<svg>` علامة تحتوي على أ`<polygon>` عنصر بسمات لتحديد شكل ونمط صورة SVG.
+ Denna kod skapar en instans av`Document` och`DocumentBuilder` att bygga dokumentet. Den infogar en`<svg>` tagg som innehåller en`<polygon>` element med attribut för att definiera formen och stilen för SVG-bilden.
 
-## الخطوة 3: تعيين خيارات حفظ HTML
+## Steg 3: Ställ in HTML-sparalternativ
 
-سنقوم الآن بتعيين خيارات حفظ HTML ، وتحديد أنه يجب تحويل ملفات التعريف إلى تنسيق SVG. استخدم الكود التالي:
+Nu ställer vi in HTML-sparalternativen och anger att metafiler ska konverteras till SVG-format. Använd följande kod:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Svg };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions` ومجموعات`MetafileFormat` ل`HtmlMetafileFormat.Svg` لتحديد أن ملفات التعريف يجب أن يتم تحويلها إلى تنسيق SVG عند التحويل إلى HTML.
+ Denna kod skapar en instans av`HtmlSaveOptions` och uppsättningar`MetafileFormat` till`HtmlMetafileFormat.Svg` för att ange att metafiler ska konverteras till SVG-format vid konvertering till HTML.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## Steg 4: Konvertera och spara dokumentet till HTML
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML المحددة مسبقًا. استخدم الكود التالي:
+Slutligen kommer vi att konvertera dokumentet till HTML med hjälp av HTML-sparalternativen som definierats tidigare. Använd följande kod:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML ويحفظه في ملف مع ملفات التعريف المحولة إلى SVG.
+Denna kod konverterar dokumentet till HTML och sparar det till en fil med metafilerna konverterade till SVG.
 
-### مثال على شفرة المصدر لتحويل ملفات التعريف إلى Svg باستخدام Aspose.Words for .NET
+### Exempel på källkod för Convert Metafiler till Svg med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);

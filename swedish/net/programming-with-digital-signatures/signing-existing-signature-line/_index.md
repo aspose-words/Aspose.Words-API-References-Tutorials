@@ -1,18 +1,18 @@
 ---
-title: توقيع خط التوقيع الحالي
-linktitle: توقيع خط التوقيع الحالي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية توقيع سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET.
+title: Signering av befintlig signaturlinje
+linktitle: Signering av befintlig signaturlinje
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du signerar en befintlig signaturrad i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لاستخدام ميزة التوقيع لسطر التوقيع الحالي مع Aspose.Words for .NET. تتيح لك هذه الميزة التوقيع رقميًا على سطر توقيع موجود بالفعل في مستند Word. اتبع الخطوات التالية:
+I den här handledningen går vi igenom stegen för att använda signaturfunktionen för en befintlig signaturlinje med Aspose.Words för .NET. Med den här funktionen kan du digitalt signera en signaturrad som redan finns i ett Word-dokument. Följ stegen nedan:
 
-## الخطوة 1: تحميل المستند والوصول إلى سطر التوقيع
+## Steg 1: Ladda dokumentet och komma åt signaturraden
 
-ابدأ بتحميل المستند الذي يحتوي على سطر التوقيع الموجود:
+Börja med att ladda upp dokumentet som innehåller den befintliga signaturraden:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +21,9 @@ Document doc = new Document(dataDir + "Signature line.docx");
 SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## الخطوة 2: تعيين خيارات التوقيع
+## Steg 2: Ställ in signaturalternativ
 
-قم بإنشاء مثيل لفئة SignOptions وقم بتعيين خيارات التوقيع ، بما في ذلك معرف سطر التوقيع وصورة خط التوقيع:
+Skapa en instans av klassen SignOptions och ställ in signaturalternativen, inklusive signaturrads-ID och signaturradsbild:
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -33,37 +33,37 @@ SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.em
 };
 ```
 
-تأكد من تحديد المسار الصحيح لصورة خط التوقيع.
+Var noga med att ange rätt sökväg till signaturlinjebilden.
 
-## الخطوة الثالثة: تحميل الشهادة
+## Steg 3: Laddar certifikatet
 
-ابدأ بتحميل شهادة التوقيع باستخدام فئة CertificateHolder:
+Börja med att ladda signeringscertifikatet med klassen CertificateHolder:
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-تأكد من تحديد المسار الصحيح لشهادتك وكلمة المرور المرتبطة بها.
+Var noga med att ange rätt sökväg till ditt certifikat och tillhörande lösenord.
 
-## الخطوة 4: توقيع سطر التوقيع الحالي
+## Steg 4: Signering av den befintliga signaturraden
 
-استخدم فئة DigitalSignatureUtil لتوقيع سطر التوقيع الموجود:
+Använd klassen DigitalSignatureUtil för att signera den befintliga signaturraden:
 
 ```csharp
 DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 	dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند المصدر والمستند الموقع والشهادة.
+Var noga med att ange rätt sökvägar för källdokumentet, det signerade dokumentet och certifikatet.
 
-### مثال على شفرة المصدر لتوقيع سطر التوقيع الحالي باستخدام Aspose.Words for .NET
+### Exempel på källkod för signering av befintlig signaturlinje med Aspose.Words för .NET
 
-إليك كود المصدر الكامل لتوقيع سطر توقيع موجود مع Aspose.Words for .NET:
+Här är den fullständiga källkoden för att signera en befintlig signaturrad med Aspose.Words för .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Signature line.docx");
 	
@@ -84,5 +84,5 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة توقيع سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET.
+Genom att följa dessa steg kan du enkelt signera en befintlig signaturrad i ett Word-dokument med Aspose.Words för .NET.
 

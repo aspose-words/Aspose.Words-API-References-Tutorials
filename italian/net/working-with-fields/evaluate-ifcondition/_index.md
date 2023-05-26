@@ -1,59 +1,59 @@
 ---
-title: تقييم حالة IF
-linktitle: تقييم حالة IF
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتقييم حالة IF في مستندات Word باستخدام Aspose.Words for .NET.
+title: Valutare la condizione SE
+linktitle: Valutare la condizione SE
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida passo passo per valutare la condizione IF nei tuoi documenti Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/evaluate-ifcondition/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "Evaluate IF Condition" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Ecco una guida dettagliata per spiegare il codice sorgente C# di seguito, che utilizza la funzione "Valuta condizione IF" di Aspose.Words per .NET. Assicurati di seguire attentamente ogni passaggio per ottenere i risultati desiderati.
 
-## الخطوة 1: إنشاء منشئ المستندات
+## Passaggio 1: creazione del generatore di documenti
 
-في الكود المقدم ، نبدأ بإنشاء منشئ المستندات.
+Nel codice fornito, iniziamo creando un generatore di documenti.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: أدخل حقل IF
+## Passaggio 2: inserire il campo IF
 
- نحن نستخدم ال`InsertField()` طريقة لإدراج حقل IF في المستند الذي يحدد الشرط المطلوب تقييمه.
+ Noi usiamo il`InsertField()` metodo per inserire il campo IF nel documento specificando la condizione da valutare.
 
 ```csharp
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 ```
 
-استخدمنا هنا الشرط "1 = 1" كمثال ، ولكن يمكنك تخصيص الشرط حسب الحاجة.
+Qui abbiamo usato la condizione "1=1" come esempio, ma puoi personalizzare la condizione secondo necessità.
 
-## الخطوة 3: تقييم شرط IF
+## Passaggio 3: valutare la condizione IF
 
- ال`EvaluateCondition()`الطريقة المستخدمة لتقييم حالة حقل IF.
+ IL`EvaluateCondition()`metodo viene utilizzato per valutare la condizione del campo IF.
 
 ```csharp
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- ال`actualResult` متغير يحتوي على نتيجة تقييم الحالة.
+ IL`actualResult` La variabile contiene il risultato della valutazione della condizione.
 
-### نموذج التعليمات البرمجية المصدر لتقييم حالة IF باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per la valutazione della condizione IF con Aspose.Words per .NET
 
 ```csharp
-// إنشاء منشئ الوثيقة.
+// Creazione del generatore di documenti.
 DocumentBuilder builder = new DocumentBuilder();
 
-// أدخل حقل IF في المستند.
+// Inserisci il campo IF nel documento.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-// قم بتقييم حالة IF.
+// Valutare la condizione IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
-// اعرض نتيجة التقييم.
+// Visualizza il risultato della valutazione.
 Console.WriteLine(actualResult);
 ```
 
-في هذا المثال ، أنشأنا منشئ مستندات ، وأدرجنا حقل IF بشرط محدد ، ثم قمنا بتقييم الشرط. ثم يتم عرض نتيجة التقييم في وحدة التحكم.
+In questo esempio, abbiamo creato un generatore di documenti, inserito un campo IF con una condizione specificata e quindi valutato la condizione. Il risultato della valutazione viene quindi visualizzato nella console.
 
-هذا يختتم دليلنا حول استخدام ميزة "تقييم حالة الحالة" مع Aspose.Words for .NET.
+Questo conclude la nostra guida sull'utilizzo della funzione "Valuta condizione IF" con Aspose.Words per .NET.

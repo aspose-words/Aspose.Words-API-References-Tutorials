@@ -1,27 +1,27 @@
 ---
-title: استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة
-linktitle: استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لاستخدام حرف مسافة لكل مستوى في قائمة المسافة البادئة في Aspose.Words for .NET. قم بإنشاء مستندات Word جيدة التنظيم بسهولة.
+title: Use el carácter de espacio por nivel para la sangría de la lista
+linktitle: Use el carácter de espacio por nivel para la sangría de la lista
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para usar un carácter de espacio por nivel para la sangría de lista en Aspose.Words para .NET. Cree documentos de Word bien estructurados con facilidad.
 type: docs
 weight: 10
 url: /es/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words إمكانية استخدام حرف مسافة واحد لكل مستوى لعمل مسافة بادئة للقوائم. في هذا الدليل ، سنوضح لك كيفية استخدام كود المصدر C # الخاص بـ Aspose.Words for .NET لتنفيذ هذه الوظيفة.
+Aspose.Words para .NET es una poderosa biblioteca para crear, editar y manipular documentos de Word en una aplicación C#. Entre las funcionalidades que ofrece Aspose.Words se encuentra la posibilidad de utilizar un carácter de espacio por nivel para la sangría de listas. En esta guía, le mostraremos cómo usar el código fuente C# de Aspose.Words para .NET para implementar esta funcionalidad.
 
-## فهم مكتبة Aspose.Words
+## Comprender la biblioteca Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الوظائف لإنشاء وتعديل ومعالجة مستندات Word ، بما في ذلك إدارة القوائم والمسافة البادئة.
+Antes de sumergirse en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una biblioteca popular que hace que trabajar con documentos de Word sea fácil y eficiente. Ofrece una amplia gama de funcionalidades para crear, modificar y manipular documentos de Word, incluida la gestión de listas y sangrado.
 
-## إنشاء الوثيقة وإضافة المحتوى
+## Creación del documento y adición de contenido.
 
-تتمثل الخطوة الأولى في إنشاء مستند جديد وإضافة محتوى إليه. استخدم فئة المستند لإنشاء مثيل مستند جديد. ثم استخدم فئة DocumentBuilder لإضافة نص وإنشاء قائمة بمستويات متعددة من المسافة البادئة. هنا مثال :
+El primer paso es crear un nuevo documento y agregarle contenido. Utilice la clase Document para crear una nueva instancia de documento. Luego use la clase DocumentBuilder para agregar texto y crear una lista con múltiples niveles de sangría. Aquí hay un ejemplo :
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+// Crear una lista con tres niveles de sangría
 builder.ListFormat.ApplyNumberDefault();
 builder. Writen("Element 1");
 builder.ListFormat.ListIndent();
@@ -30,11 +30,11 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند جديد واستخدام DocumentBuilder لإضافة نص وإنشاء قائمة بثلاثة مستويات من المسافة البادئة. لقد أضفنا ثلاثة عناصر إلى القائمة ، مع وضع مسافة بادئة لكل عنصر في مستوى إضافي.
+En este ejemplo, creamos un nuevo documento y usamos DocumentBuilder para agregar texto y crear una lista con tres niveles de sangría. Hemos agregado tres elementos a la lista, con cada elemento sangrado un nivel adicional.
 
-## استخدام مسافة واحدة لكل مستوى للمسافة البادئة للقائمة
+## Uso de un carácter de espacio por nivel para la sangría de la lista
 
-بمجرد إضافة المحتوى ، يمكننا الآن تكوين المسافة البادئة للقوائم باستخدام حرف مسافة واحد لكل مستوى. لهذا نستخدم فئة TxtSaveOptions وقمنا بتعيين خاصية ListIndentation.Count على عدد مستويات المسافة البادئة وخاصية ListIndentation.Character إلى حرف المسافة المراد استخدامه. إليك الطريقة:
+Una vez agregado el contenido, ya podemos configurar la sangría de las listas usando un carácter de espacio por nivel. Para esto usamos la clase TxtSaveOptions y establecemos la propiedad ListIndentation.Count al número de niveles de sangría y la propiedad ListIndentation.Character al carácter de espacio a usar. Así es cómo:
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -44,11 +44,11 @@ saveOptions.ListIndentation.Character = ' ';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-في هذا المثال ، أنشأنا مثيلًا لـ TxtSaveOptions وقمنا بتعيين خاصية ListIndentation.Count على 3 للإشارة إلى وجود ثلاثة مستويات من المسافة البادئة في القائمة. قمنا أيضًا بتعيين خاصية ListIndentation.Character إلى حرف المسافة ('') الذي نريد استخدامه للمسافة البادئة.
+En este ejemplo, creamos una instancia de TxtSaveOptions y establecemos la propiedad ListIndentation.Count en 3 para indicar que hay tres niveles de sangría en la lista. También establecemos la propiedad ListIndentation.Character en el carácter de espacio (' ') que queremos usar para la sangría.
 
-### مثال على شفرة المصدر لميزة "استخدام حرف مسافة واحد لكل مستوى للمسافة البادئة للقائمة" مع Aspose.Words for .NET
+### Ejemplo de código fuente para la función "Usar un carácter de espacio por nivel para sangría de lista" con Aspose.Words para .NET
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لميزة "استخدام حرف مسافة واحد لكل مستوى للمسافة البادئة للقائمة" مع Aspose.Words for .NET:
+Aquí está el código fuente de muestra completo para la función "Usar un carácter de espacio por nivel para sangría de lista" con Aspose.Words para .NET:
 
 ```csharp
 
@@ -61,14 +61,14 @@ namespace Example
      {
          static void Main(string[] args)
          {
-             // المسار إلى دليل المستند الخاص بك
+             // Ruta a su directorio de documentos
              string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-             // قم بإنشاء المستند وإضافة محتوى
+             // Crear el documento y agregar contenido
              Document doc = new Document();
              DocumentBuilder builder = new DocumentBuilder(doc);
 
-             // قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+             // Crear una lista con tres niveles de sangría
              builder.ListFormat.ApplyNumberDefault();
              builder. Writen("Element 1");
              builder.ListFormat.ListIndent();
@@ -76,12 +76,12 @@ namespace Example
              builder.ListFormat.ListIndent();
              builder.Write("Element 3");
 
-             // استخدم مسافة واحدة لكل مستوى للمسافة البادئة للقائمة
+             // Use un carácter de espacio por nivel para la sangría de la lista
              TxtSaveOptions saveOptions = new TxtSaveOptions();
              saveOptions.ListIndentation.Count = 3;
              saveOptions.ListIndentation.Character = ' ';
 
-             // احفظ المستند بالخيارات المحددة
+             // Guarde el documento con las opciones especificadas
              doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
          }
      }
@@ -89,6 +89,6 @@ namespace Example
 
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا الدليل ، أوضحنا كيفية استخدام Aspose.Words for .NET لتطبيق وظيفة "استخدام حرف مسافة واحد لكل مستوى من أجل المسافة البادئة للقائمة". باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تكوين المسافة البادئة للقوائم في مستندات Word الخاصة بك باستخدام حرف مسافة واحد لكل مستوى. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع تنسيق النص وإدارة القوائم ، مما يسمح لك بإنشاء مستندات جيدة التنظيم في تطبيق C # الخاص بك.
+En esta guía, explicamos cómo usar Aspose.Words para .NET para aplicar la funcionalidad "Usar un carácter de espacio por nivel para sangría de lista". Siguiendo los pasos proporcionados y utilizando el código fuente de C# proporcionado, puede configurar fácilmente la sangría de las listas en sus documentos de Word utilizando un carácter de espacio por nivel. Aspose.Words ofrece una gran flexibilidad y potencia para trabajar con el formato de texto y la gestión de listas, lo que le permite crear documentos bien estructurados en su aplicación C#.

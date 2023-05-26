@@ -1,36 +1,36 @@
 ---
-title: كود الحقل
-linktitle: كود الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة للحصول على رمز الحقل والنتيجة الميدانية في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+title: Feldcode
+linktitle: Feldcode
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Abrufen von Feldcode und Feldergebnis in Ihren Word-Dokumenten mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/field-code/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "Get Field Code" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der die Funktion „Get Field Code“ von Aspose.Words für .NET verwendet. Stellen Sie sicher, dass Sie jeden Schritt sorgfältig befolgen, um die gewünschten Ergebnisse zu erzielen.
 
-## الخطوة 1: إعداد دليل المستند
+## Schritt 1: Einrichten des Dokumentenverzeichnisses
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Im bereitgestellten Code müssen Sie das Verzeichnis Ihrer Dokumente angeben. Ersetzen Sie den Wert „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## Schritt 2: Laden des Dokuments
 
-تتمثل الخطوة الأولى في تحميل المستند حيث تريد الحصول على رموز الحقول.
+Der erste Schritt besteht darin, das Dokument dort hochzuladen, wo Sie die Feldcodes erhalten möchten.
 
 ```csharp
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
-تأكد من استبدال "Hyperlinks.docx" باسم الملف الخاص بك.
+Ersetzen Sie „Hyperlinks.docx“ unbedingt durch den Namen Ihrer eigenen Datei.
 
-## الخطوة 3: تصفح حقول المستندات
+## Schritt 3: Dokumentfelder durchsuchen
 
- نحن نستخدم`foreach` حلقة للتكرار خلال جميع الحقول الموجودة في المستند.
+ Wir benutzen ein`foreach` Schleife, um alle im Dokument vorhandenen Felder zu durchlaufen.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -40,27 +40,27 @@ foreach(Field field in doc.Range.Fields)
 }
 ```
 
- في كل تكرار للحلقة ، نحصل على رمز الحقل باستخدام`GetFieldCode()` طريقة. نقوم أيضًا بتخزين نتيجة الحقل في متغير.
+ Bei jeder Iteration der Schleife erhalten wir den Feldcode mithilfe von`GetFieldCode()` Methode. Wir speichern auch das Ergebnis des Feldes in einer Variablen.
 
-### مثال رمز المصدر للحصول على رمز الحقل مع Aspose.Words for .NET
+### Quellcode-Beispiel für Get Field Code mit Aspose.Words für .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Der Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+// Laden Sie das Dokument.
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 
-// حلقة من خلال حقول الوثيقة.
+// Dokumentfelder durchlaufen.
 foreach(Field field in doc.Range.Fields)
 {
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // افعل شيئًا مع رمز الحقل والنتيجة.
+     // Machen Sie etwas mit dem Code und dem Ergebnis des Feldes.
 }
 ```
 
-في هذا المثال ، قمنا بتحميل مستند ثم تدويره عبر جميع الحقول الموجودة في المستند. في كل تكرار ، حصلنا على الكود ونتيجة الحقل. يمكنك إضافة منطقك الخاص لمعالجة الكود وحقول النتائج حسب الحاجة.
+In diesem Beispiel haben wir ein Dokument geladen und dann alle im Dokument vorhandenen Felder durchlaufen. Bei jeder Iteration erhielten wir den Code und das Ergebnis des Feldes. Sie können Ihre eigene Logik hinzufügen, um die Code- und Ergebnisfelder nach Bedarf zu verarbeiten.
 
-بهذا ينتهي دليلنا حول استخدام ميزة "Get Field Code" مع Aspose.Words for .NET.
+Damit ist unser Leitfaden zur Verwendung der Funktion „Get Field Code“ mit Aspose.Words für .NET abgeschlossen.

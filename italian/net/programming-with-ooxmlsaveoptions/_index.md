@@ -1,23 +1,23 @@
 ---
-title: البرمجة باستخدام Ooxmlsaveoptions
-linktitle: البرمجة باستخدام Ooxmlsaveoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تشفير docx بكلمة مرور ، والامتثال لـ ooxml ISO 29500_ 2008_ صارم ، وتحديث خاصية الوقت المحفوظة الأخيرة ، والاحتفاظ بأحرف التحكم القديمة وتعيين Compre
+title: Programmare con Ooxmlsaveoptions
+linktitle: Programmare con Ooxmlsaveoptions
+second_title: Riferimento all'API Aspose.Words per .NET
+description: I tutorial contengono crittografia docx con password, conformità ooxml iso 29500_ 2008_ strict, aggiorna la proprietà dell'ora dell'ultimo salvataggio, mantieni i caratteri di controllo legacy e imposta compre
 type: docs
 weight: 1660
 url: /it/net/programming-with-ooxmlsaveoptions/
 ---
-توفر البرامج التعليمية Aspose.Words for .NET حول البرمجة باستخدام OOXMLSaveOptions إرشادات خطوة بخطوة لمعالجة خيارات حفظ OOXML في مستنداتك. توجهك هذه البرامج التعليمية عبر الخطوات لتخصيص إعدادات النسخ الاحتياطي ، مثل التوافق مع الإصدارات السابقة وضغط الصور ومعالجة الخطوط المضمنة. سوف تتعلم كيفية استخدام هذه الخيارات لتحقيق نتائج نسخ احتياطي دقيقة محسّنة لاحتياجاتك الخاصة.
+Le esercitazioni Aspose.Words per .NET sulla programmazione con OOXMLSaveOptions forniscono istruzioni dettagliate per la manipolazione delle opzioni di salvataggio OOXML nei documenti. Questi tutorial ti guidano attraverso i passaggi per personalizzare le impostazioni di backup, come la compatibilità con le versioni precedenti, la compressione delle immagini e la gestione dei caratteri incorporati. Imparerai come utilizzare queste opzioni per ottenere risultati di backup accurati ottimizzati per le tue esigenze specifiche.
 
- تزودك البرامج التعليمية أيضًا بأمثلة عملية على التعليمات البرمجية توضح استخدام الميزات المختلفة لخيارات OOXMLSaveOptions. ستتعلم كيفية تحديد خيارات الحفظ عند إنشاء مستند Word أو تحريره ، باستخدام طرق مثل`CompatibilityOptions`, `ImageCompression` ، و`ExportFontResources`ستساعدك البرامج التعليمية على فهم كيفية تأثير هذه الخيارات على تنسيق الإخراج واختيار الإعدادات المناسبة لمشاريعك.
+ I tutorial forniscono anche esempi pratici di codice che illustrano l'uso delle varie funzionalità di OOXMLSaveOptions. Imparerai come specificare le opzioni di salvataggio durante la creazione o la modifica di un documento Word, utilizzando metodi come`CompatibilityOptions`, `ImageCompression` , E`ExportFontResources`I tutorial ti aiuteranno a capire come queste opzioni influenzano il formato di output e a scegliere le impostazioni appropriate per i tuoi progetti.
 
-سواء كنت ترغب في إنشاء مستندات متوافقة مع الإصدارات القديمة من Word ، أو تقليل حجم الملف عن طريق ضغط الصور ، أو تضمين خطوط معينة ، فإن برامج Aspose.Words for .NET التعليمية حول البرمجة باستخدام OOXMLSaveOptions ستوجهك خلال كل ذلك. الخطوات اللازمة. ستتمكن من الاستفادة الكاملة من ميزات الحفظ في OOXML وإنشاء مستندات Word احترافية ومحسّنة.
+Sia che tu voglia creare documenti compatibili con le versioni precedenti di Word, ridurre le dimensioni del file comprimendo le immagini o incorporare caratteri specifici, i tutorial di Aspose.Words per .NET sulla programmazione con OOXMLSaveOptions ti guideranno attraverso tutto. passi necessari. Potrai sfruttare appieno le funzionalità di salvataggio di OOXML e creare documenti Word professionali e ottimizzati.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [تشفير Docx بكلمة مرور](./encrypt-docx-with-password/) | تعرف على كيفية تشفير ملف DOCX بكلمة مرور باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل لأمن الوثيقة. |
-| [Ooxml 合规性 Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | تعرف على كيفية ضمان الامتثال الصارم لـ Ooxml Iso 29500_2008_Strict عند حفظ المستندات باستخدام Aspose.Words for .NET. |
-| [تحديث خاصية الوقت المحفوظ الأخير](./update-last-saved-time-property/) | تعرف على كيفية تحديث خاصية Last Saved Time تلقائيًا عند حفظ مستند باستخدام Aspose.Words for .NET. |
-| [الحفاظ على أحرف التحكم القديمة](./keep-legacy-control-chars/) | تعرف على كيفية الاحتفاظ بأحرف التحكم القديمة عند حفظ مستند باستخدام Aspose.Words for .NET. |
-| [اضبط مستوى الضغط](./set-compression-level/) | تعرف على كيفية تعيين مستوى الضغط عند حفظ مستند باستخدام Aspose.Words for .NET. |
+| [Crittografare Docx con password](./encrypt-docx-with-password/) | Scopri come crittografare un file DOCX con una password utilizzando Aspose.Words per .NET. Tutorial completo per la sicurezza dei documenti. |
+| [Conformità Ooxml Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Scopri come garantire la conformità Ooxml Iso 29500_2008_Strict durante il salvataggio di documenti con Aspose.Words per .NET. |
+| [Aggiorna la proprietà dell'ora dell'ultimo salvataggio](./update-last-saved-time-property/) | Scopri come aggiornare automaticamente la proprietà Last Saved Time durante il salvataggio di un documento con Aspose.Words per .NET. |
+| [Mantieni caratteri di controllo legacy](./keep-legacy-control-chars/) | Scopri come preservare i caratteri di controllo legacy durante il salvataggio di un documento con Aspose.Words per .NET. |
+| [Imposta il livello di compressione](./set-compression-level/) | Scopri come impostare il livello di compressione durante il salvataggio di un documento con Aspose.Words per .NET. |

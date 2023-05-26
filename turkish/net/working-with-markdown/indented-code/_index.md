@@ -1,44 +1,44 @@
 ---
-title: رمز مسافة بادئة
-linktitle: رمز مسافة بادئة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام التعليمات البرمجية ذات المسافات البادئة مع دليل Aspose.Words for .NET خطوة بخطوة.
+title: Girintili Kod
+linktitle: Girintili Kod
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile girintili kodu nasıl kullanacağınızı adım adım öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/indented-code/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام ميزة الشفرة ذات المسافة البادئة مع Aspose.Words for .NET. يتم استخدام التعليمات البرمجية ذات المسافة البادئة لتمثيل كتل التعليمات البرمجية بصريًا بتنسيق محدد.
+Bu örnekte girintili kod özelliğinin Aspose.Words for .NET ile nasıl kullanılacağını açıklayacağız. Girintili kod, belirli biçimlendirme ile kod bloklarını görsel olarak temsil etmek için kullanılır.
 
-## الخطوة 1: استخدام منشئ المستندات
+## 1. Adım: Bir belge oluşturucu kullanma
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+İlk olarak, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: أضف نمطًا للرمز ذي المسافة البادئة
+## 2. Adım: Girintili kod için stil ekleyin
 
- سنضيف نمطًا مخصصًا للشفرة ذات المسافة البادئة باستخدام امتداد`Styles.Add` طريقة`Document` هدف. في هذا المثال ، نقوم بإنشاء نمط يسمى "IndentedCode" للشفرة ذات المسافة البادئة.
+ Girintili kod için özel bir stil ekleyeceğiz.`Styles.Add` yöntemi`Document` nesne. Bu örnekte, girintili kod için "IndentedCode" adlı bir stil oluşturuyoruz.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## الخطوة 3: أضف التعليمات البرمجية ذات المسافة البادئة
+## 3. Adım: Girintili kod ekleyin
 
-الآن يمكننا إضافة كتلة تعليمات برمجية ذات مسافة بادئة باستخدام النمط المخصص "IndentedCode".
+Artık "IndentedCode" özel stilini kullanarak girintili bir kod bloğu ekleyebiliriz.
 
 ```csharp
 builder.Writeln("This is an indented code block");
 ```
 
-### مثال على شفرة المصدر للتعليمات البرمجية ذات المسافات البادئة باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile girintili kod için örnek kaynak kodu
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
 	DocumentBuilder builder = new DocumentBuilder();
 
 	Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
@@ -47,5 +47,5 @@ builder.Writeln("This is an indented code block");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الشفرة ذات المسافة البادئة مع Aspose.Words for .NET.
+Tebrikler! Artık girintili kod özelliğinin Aspose.Words for .NET ile nasıl kullanılacağını öğrendiniz.
 

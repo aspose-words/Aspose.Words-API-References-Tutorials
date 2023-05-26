@@ -1,67 +1,67 @@
 ---
-title: بناء الجدول مع الحدود
-linktitle: بناء الجدول مع الحدود
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لبناء جدول بحدود باستخدام Aspose.Words for .NET.
+title: Kenarlıklı Tablo Oluştur
+linktitle: Kenarlıklı Tablo Oluştur
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak kenarlıklı bir tablo oluşturmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-styles-and-formatting/build-table-with-borders/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لإنشاء جدول بحدود باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية إنشاء جدول بحدود مخصصة في مستندات Word باستخدام Aspose.Words for .NET.
+Bu öğreticide, Aspose.Words for .NET kullanarak kenarlıklı bir tablo oluşturma sürecini adım adım anlatacağız. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sağlayacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak Word belgelerinizde özel kenarlıklara sahip bir tabloyu nasıl oluşturacağınızı öğreneceksiniz.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يتم فيه تخزين مستند Word الخاص بك. استبدل "دليل المستندات" بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+Öncelikle, belgeler dizininize giden yolu ayarlamanız gerekir. Word belgenizin saklandığı yer burasıdır. "BELGELER DİZİNİNİZİ" uygun yolla değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند الحالي
- بعد ذلك ، تحتاج إلى تحميل مستند Word الموجود في مثيل`Document` فصل.
+## 2. Adım: Mevcut belgeyi yükleyin
+ Ardından, mevcut Word belgesini bir örneğine yüklemeniz gerekir.`Document` sınıf.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: الوصول إلى الجدول وإزالة الحدود الموجودة
- لبدء بناء الجدول بحدود ، نحتاج إلى الانتقال إلى الجدول في المستند وإزالة الحدود الموجودة. ال`ClearBorders()` طريقة يزيل كل الحدود من الجدول.
+## 3. Adım: Tabloya erişin ve mevcut sınırları kaldırın
+ Kenarlıklı tabloyu oluşturmaya başlamak için belgedeki tabloya gitmeli ve mevcut kenarlıkları kaldırmalıyız. bu`ClearBorders()` yöntem tablodaki tüm sınırları kaldırır.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. ClearBorders();
 ```
 
-## الخطوة 4: تعيين حدود الجدول
- الآن يمكننا تعيين حدود الجدول باستخدام`SetBorders()` طريقة. في هذا المثال ، نستخدم حدًا أخضر اللون بسمك 1.5 نقطة.
+## 4. Adım: Tablo Kenarlıklarını Ayarlayın
+ Artık tablo kenarlıklarını kullanarak ayarlayabiliriz.`SetBorders()` yöntem. Bu örnekte 1,5 punto kalınlığında yeşil renkli bir bordür kullanıyoruz.
 
 ```csharp
 table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 ```
 
-## الخطوة 5: احفظ المستند المعدل
-أخيرًا ، نحفظ المستند المعدل في ملف. يمكنك اختيار اسم وموقع مناسبين للمستند الناتج.
+## 5. Adım: Değiştirilen belgeyi kaydedin
+Son olarak, değiştirilen belgeyi bir dosyaya kaydediyoruz. Çıktı belgesi için uygun bir ad ve konum seçebilirsiniz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.docx");
 ```
 
-تهنئة ! لقد قمت الآن ببناء جدول بحدود مخصصة باستخدام Aspose.Words for .NET.
+Tebrikler! Artık Aspose.Words for .NET'i kullanarak özel çerçeveli bir tablo oluşturdunuz.
 
-### نموذج التعليمات البرمجية المصدر لـ Build Table With Borders باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Build Table With Borders için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//امسح أي حدود موجودة من الجدول.
+	//Tablodaki mevcut tüm sınırları temizleyin.
 	table.ClearBorders();
-	// ضع حدًا أخضر حول وداخل الجدول.
+	// Tablonun etrafına ve içine yeşil bir kenarlık koyun.
 	table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول بحدود باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تخصيص حدود الجدول في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية الاحتياجات الخاصة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak kenarlıklı bir tablo oluşturmayı öğrendik. Bu adım adım kılavuzu izleyerek, Word belgelerinizde tablo kenarlıklarınızı kolayca özelleştirebilirsiniz. Aspose.Words, belgelerinizdeki tabloları değiştirmek ve biçimlendirmek için güçlü ve esnek bir API sunar. Bu bilgiyle, Word belgelerinizin görsel sunumunu geliştirebilir ve belirli ihtiyaçları karşılayabilirsiniz.

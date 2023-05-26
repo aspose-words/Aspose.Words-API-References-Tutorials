@@ -1,62 +1,62 @@
 ---
-title: الوصول المكتوب
-linktitle: الوصول المكتوب
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام الوصول المكتوب لمعالجة الجداول في Aspose.Words for .NET.
+title: Yazılı Erişim
+linktitle: Yazılı Erişim
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'te tabloları işlemek için yazılı erişimi nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-node/typed-access/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية استخدام ميزة الوصول المكتوب مع Aspose.Words for .NET.
+Yazılı Erişim özelliğinin Aspose.Words for .NET ile nasıl kullanılacağını gösteren aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## 1. Adım: Gerekli referansları içe aktarın
+Başlamadan önce, Aspose.Words for .NET'i kullanmak için gerekli referansları projenize aktardığınızdan emin olun. Bu, Aspose.Words kitaplığının içe aktarılmasını ve gerekli ad alanlarının kaynak dosyanıza eklenmesini içerir.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## 2. Adım: Yeni bir belge oluşturun
+ Bu adımda, kullanarak yeni bir belge oluşturacağız.`Document` sınıf.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: قم بالوصول إلى القسم والجسم
-للوصول إلى الجداول الواردة في المستند ، يجب علينا أولاً الوصول إلى قسم ونص الوثيقة.
+## 3. Adım: Bölüme ve gövdeye erişin
+Belge içerisinde yer alan tablolara ulaşmak için öncelikle belgenin ilgili bölümüne ve gövdesine erişmemiz gerekmektedir.
 
 ```csharp
 Section section = doc.FirstSection;
 Body body = section.Body;
 ```
 
-## الخطوة 4: الوصول السريع والمكتوب إلى الجداول
-الآن بعد أن أصبح لدينا نص المستند ، يمكننا استخدام الوصول السريع والمكتوب للوصول إلى جميع الجداول الموجودة في النص.
+## 4. Adım: Tablolara hızlı ve yazılı erişim
+Artık belgenin gövdesine sahip olduğumuza göre, gövdede bulunan tüm tablolara erişmek için hızlı ve yazılı erişimi kullanabiliriz.
 
 ```csharp
 TableCollection tables = body.Tables;
 ```
 
-## الخطوة 5: تصفح الجداول
- باستخدام ملف`foreach` loop ، يمكننا المرور عبر جميع الجداول وإجراء عمليات محددة على كل جدول.
+## 5. Adım: Tablolara göz atın
+ kullanarak`foreach` döngü, tüm tablolar arasında döngü yapabilir ve her tablo üzerinde belirli işlemler gerçekleştirebiliriz.
 
 ```csharp
 foreach(Table table in tables)
 {
-     // الوصول السريع والمكتوب إلى الصف الأول من الجدول.
+     // Tablonun ilk satırına hızlı ve yazılı erişim.
      table.FirstRow?.Remove();
 
-     // الوصول السريع والمكتوب إلى الصف الأخير من الجدول.
+     // Tablonun son satırına hızlı ve yazılı erişim.
      table.LastRow?.Remove();
 }
 ```
 
-في هذا المثال ، نحذف الصف الأول والأخير من كل جدول باستخدام الوصول السريع والمكتوب المقدم من Aspose.Words.
+Bu örnekte, Aspose.Words tarafından sağlanan hızlı ve yazılı erişimi kullanarak her tablonun ilk ve son satırını siliyoruz.
 
-### نموذج التعليمات البرمجية المصدر للوصول المكتوب باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile Yazılı Erişim için Örnek Kaynak Kodu
 
 ```csharp
 	Document doc = new Document();
@@ -64,20 +64,20 @@ foreach(Table table in tables)
 	Section section = doc.FirstSection;
 	Body body = section.Body;
 	
-	// وصول سريع مكتوب إلى جميع العقد الفرعية التابعة للجدول الموجودة في النص الأساسي.
+	// Gövdede bulunan tüm Tablo alt düğümlerine hızlı erişim.
 	TableCollection tables = body.Tables;
 
 	foreach (Table table in tables)
 	{
-		// وصول سريع مكتوب إلى الصف الأول من الجدول.
+		// Tablonun ilk satırına hızlı erişim.
 		table.FirstRow?.Remove();
 
-		// وصول سريع مكتوب إلى الصف الأخير من الجدول.
+		// Tablonun son satırına hızlı erişim.
 		table.LastRow?.Remove();
 	}
             
 ```
 
-هذا نموذج كامل من التعليمات البرمجية للوصول المكتوب إلى الجداول باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Bu, Aspose.Words for .NET ile tablolara yazılı erişim için eksiksiz bir örnek koddur. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları uyguladığınızdan emin olun.
 
 ---

@@ -1,48 +1,48 @@
 ---
-title: تحميل قاموس الواصلة للغة
-linktitle: تحميل قاموس الواصلة للغة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل قاموس الواصلة للغة معينة في Aspose.Words for .NET.
+title: Carica il dizionario di sillabazione per la lingua
+linktitle: Carica il dizionario di sillabazione per la lingua
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come caricare un dizionario di sillabazione per una lingua specifica in Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-hyphenation/load-hyphenation-dictionary-for-language/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية تحميل قاموس الواصلة للغة معينة في Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In questo tutorial passo-passo, ti mostreremo come caricare un dizionario di sillabazione per una lingua specifica in Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria dal sito ufficiale.
 
-## الخطوة 1: تحميل المستند
+## Passaggio 1: caricamento del documento
 
-أولاً ، قم بتحميل المستند الخاص بك من الدليل المحدد:
+Innanzitutto, carica il tuo documento dalla directory specificata:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## الخطوة 2: تحميل قاموس الواصلة
+## Passaggio 2: caricamento del dizionario di sillabazione
 
-بعد ذلك ، افتح دفقًا إلى ملف قاموس الواصلة واحفظه للغة المطلوبة. في هذا المثال ، نقوم بتحميل قاموس للألمانية السويسرية (de-CH):
+Successivamente, apri uno stream nel file del dizionario di sillabazione e salvalo per la lingua desiderata. In questo esempio, carichiamo un dizionario per lo svizzero tedesco (de-CH):
 
 ```csharp
 Stream stream = File.OpenRead(dataDir + "hyph_de_CH.dic");
 Hyphenation.RegisterDictionary("de-CH", stream);
 ```
 
-تأكد من أن لديك ملف القاموس المناسب في دليل البيانات الخاص بك.
+Assicurati di avere il file del dizionario appropriato nella directory dei dati.
 
-## الخطوة 3: احفظ المستند المعدل
+## Passaggio 3: salvare il documento modificato
 
-أخيرًا ، احفظ المستند المعدل:
+Infine, salva il documento modificato:
 
 ```csharp
 doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 ```
 
-لذا ! لقد نجحت في تحميل قاموس الواصلة للغة معينة في Aspose.Words for .NET.
+COSÌ ! Hai caricato correttamente un dizionario di sillabazione per una lingua specifica in Aspose.Words per .NET.
 
-### مثال على شفرة المصدر لتحميل قاموس الواصلة للغة باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per il caricamento del dizionario di sillabazione per una lingua utilizzando Aspose.Words per .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -54,4 +54,4 @@ Hyphenation.RegisterDictionary("de-CH", stream);
 doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.

@@ -1,48 +1,48 @@
 ---
-title: فك الإشارات المرجعية في الصف
-linktitle: فك الإشارات المرجعية في الصف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية فك تشابك الإشارات المرجعية للصفوف المتداخلة لإزالة صفوف معينة دون التأثير على الإشارات المرجعية الأخرى.
+title: Desenredar marcadores de fila
+linktitle: Desenredar marcadores de fila
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a desenredar marcadores de fila anidados para eliminar filas específicas sin afectar a otros marcadores.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Untangle Row Bookmarks في Aspose.Words for .NET library. تتيح هذه الوظيفة إمكانية وضع نهايات الإشارات المرجعية للسطر في نفس السطر مثل بدايات الإشارات المرجعية.
+En este artículo, exploraremos el código fuente de C# anterior para entender cómo usar la función Untangle Row Bookmarks en la biblioteca Aspose.Words para .NET. Esta función permite poner los finales de los marcadores de las líneas en la misma línea que los comienzos de los marcadores.
 
-## المتطلبات الأساسية
+## requisitos previos
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conocimientos básicos del lenguaje C#.
+- Entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
 
-## الخطوة 1: تحميل المستند
+## Paso 1: Cargar el documento
 
- نحن نستخدم ال`Document` فئة لتحميل المستند الحالي من ملف:
+ usamos el`Document` clase para cargar el documento existente desde un archivo:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## الخطوة 2: كشف خط الإشارات المرجعية
+## Paso 2: desentrañar marcadores de línea
 
- نحن نستخدم ال`Untangle` وظيفة لفك تشابك الإشارات المرجعية من الصفوف. تؤدي هذه الوظيفة المهمة المخصصة لوضع نهايات الأسطر المرجعية في نفس السطر الذي تبدأ فيه الإشارة المرجعية:
+ usamos el`Untangle` función para desenredar marcadores de filas. Esta función realiza la tarea personalizada de colocar los extremos de las líneas del marcador en la misma línea en la que comienza el marcador:
 
 ```csharp
 Untangle(doc);
 ```
 
-## الخطوة 3: حذف سطر بإشارة مرجعية
+## Paso 3: Eliminar línea por marcador
 
- نحن نستخدم ال`DeleteRowByBookmark` وظيفة لحذف صف معين من خلال الإشارة المرجعية الخاصة به:
+ usamos el`DeleteRowByBookmark` función para eliminar una fila específica por su marcador:
 
 ```csharp
 DeleteRowByBookmark(doc, "ROW2");
 ```
 
-## الخطوة 4: التحقق من سلامة الإشارات المرجعية الأخرى
+## Paso 4: Comprueba la integridad de otros marcadores
 
-نتحقق من عدم تلف الإشارات المرجعية الأخرى عن طريق التحقق مما إذا كانت نهاية الإشارة المرجعية لا تزال موجودة:
+Verificamos que los otros marcadores no se hayan dañado comprobando si el final del marcador todavía está presente:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -51,24 +51,24 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### مثال على شفرة المصدر لـ Untangle Row Bookmarks باستخدام Aspose.Words for .NET**
+### Ejemplo de código fuente para Untangle Row Bookmarks usando Aspose.Words para .NET**
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لفك تشابك الإشارات المرجعية من الأسطر باستخدام Aspose.Words for .NET:
+Aquí está el código fuente de muestra completo para desenredar los marcadores de las líneas usando Aspose.Words para .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	//يؤدي ذلك إلى تنفيذ المهمة المخصصة لوضع إشارة مرجعية للصف في نفس الصف مع بدء الإشارة المرجعية.
+	//Esto realiza la tarea personalizada de colocar los extremos del marcador de fila en la misma fila con los inicios del marcador.
 	Untangle(doc);
 
-	// يمكننا الآن حذف الصفوف بسهولة بواسطة إشارة مرجعية دون الإضرار بأي إشارات مرجعية للصفوف الأخرى.
+	// Ahora podemos eliminar fácilmente las filas de un marcador sin dañar los marcadores de ninguna otra fila.
 	DeleteRowByBookmark(doc, "ROW2");
 
-	// هذا فقط للتحقق من عدم تلف الإشارة المرجعية الأخرى.
+	// Esto es solo para verificar que el otro marcador no esté dañado.
 	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
 		throw new Exception("Wrong, the end of the bookmark was deleted.");
 
@@ -76,6 +76,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 
 ```
 
-## خاتمة
+## Conclusión
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة Untangle Row Bookmarks في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لفك تشابك الإشارات المرجعية للصفوف وحذف صف معين دون الإضرار بالإشارات المرجعية الأخرى.
+En este artículo, exploramos el código fuente de C# para entender cómo usar la función Untangle Row Bookmarks de Aspose.Words para .NET. Seguimos una guía paso a paso para desenredar los marcadores de fila y eliminar una fila específica sin dañar otros marcadores.

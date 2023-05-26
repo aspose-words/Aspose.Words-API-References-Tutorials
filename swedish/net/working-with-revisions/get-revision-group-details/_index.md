@@ -1,26 +1,26 @@
 ---
-title: احصل على تفاصيل مجموعة المراجعة
-linktitle: احصل على تفاصيل مجموعة المراجعة
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على تفاصيل مجموعة المراجعة في مستند Word باستخدام Aspose.Words for .NET.
+title: Få information om revisionsgruppen
+linktitle: Få information om revisionsgruppen
+second_title: Aspose.Words för .NET API Referens
+description: Få detaljer om revisionsgrupp i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-revisions/get-revision-group-details/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سوف نوضح لك كيفية الحصول على تفاصيل مجموعة المراجعات في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+den här steg-för-steg-guiden kommer vi att visa dig hur du får information om en grupp revisioner i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förse dig med den fullständiga källkoden och visa dig hur du formaterar markdown-utdata.
 
-## الخطوة 1: تحميل المستند
+## Steg 1: Ladda dokumentet
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+Det första steget är att ladda upp dokumentet som innehåller ändringarna.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة 2: تصفح المراجعات
+## Steg 2: Bläddra i versioner
 
-بعد ذلك ، سنقوم بتكرار المراجعات الموجودة في المستند ونعرض تفاصيلها ، مثل النوع والمؤلف والتاريخ والنص المنقح.
+Därefter går vi igenom de versioner som finns i dokumentet och visar deras detaljer, såsom typ, författare, datum och reviderad text.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -38,9 +38,9 @@ foreach (Revision revision in doc.Revisions)
 ```
 
 
-### مثال على شفرة المصدر للحصول على تفاصيل مجموعة المراجعة باستخدام Aspose.Words for .NET
+### Exempel på källkod för Get Revision Group Details med Aspose.Words för .NET
 
-فيما يلي الكود المصدري الكامل للحصول على تفاصيل مجموعة المراجعات في مستند باستخدام Aspose.Words for .NET:
+Här är den fullständiga källkoden för att få information om en grupp revisioner i ett dokument med Aspose.Words för .NET:
 
 ```csharp
 

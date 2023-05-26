@@ -1,34 +1,34 @@
 ---
-title: أضف بادئة اسم فئة Css
-linktitle: أضف بادئة اسم فئة Css
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإضافة بادئة اسم فئة CSS عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET.
+title: Agregar prefijo de nombre de clase Css
+linktitle: Agregar prefijo de nombre de clase Css
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para agregar un prefijo de nombre de clase CSS al convertir un documento a HTML con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإضافة بادئة اسم فئة CSS مع Aspose.Words for .NET. تتيح لك هذه الميزة إضافة بادئة مخصصة لأسماء فئات CSS التي تم إنشاؤها عند تحويل مستند إلى HTML.
+En este tutorial, lo guiaremos a través del código fuente de C# para agregar un prefijo de nombre de clase CSS con Aspose.Words para .NET. Esta función le permite agregar un prefijo personalizado a los nombres de clase CSS generados al convertir un documento a HTML.
 
-## الخطوة 1: إعداد المشروع
+## Paso 1: Configuración del proyecto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد تحويله إلى HTML. استخدم الكود التالي لتحميل المستند:
+En este paso, cargaremos el documento de Word que queremos convertir a HTML. Use el siguiente código para cargar el documento:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Reemplazar`"YOUR DOCUMENTS DIRECTORY"` con la ruta real del directorio donde se encuentra su documento.
 
-## الخطوة 3: تعيين خيارات حفظ HTML
+## Paso 3: establece las opciones de guardado de HTML
 
-لنقم الآن بتعيين خيارات حفظ HTML ، بما في ذلك نوع ورقة أنماط CSS وبادئة اسم فئة CSS. استخدم الكود التالي:
+Ahora configuremos las opciones de guardado de HTML, incluido el tipo de hoja de estilo CSS y el prefijo de nombre de clase CSS. Usa el siguiente código:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
@@ -38,23 +38,23 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions` ومجموعات`CssStyleSheetType` ل`CssStyleSheetType.External` لإنشاء ورقة أنماط CSS خارجية ، و`CssClassNamePrefix` ل`"pfx_"`للبادئة`"pfx_"` لتسمية فئة CSS.
+ Este código crea una instancia de`HtmlSaveOptions` y conjuntos`CssStyleSheetType` a`CssStyleSheetType.External` para generar una hoja de estilo CSS externa, y`CssClassNamePrefix` a`"pfx_"`anteponer`"pfx_"` para nombrar la clase CSS.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## Paso 4: Convertir y guardar el documento a HTML
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML المحددة مسبقًا. استخدم الكود التالي:
+Finalmente, convertiremos el documento a HTML utilizando las opciones de guardado de HTML definidas anteriormente. Usa el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML ويحفظه في ملف مع إضافة بادئة اسم فئة CSS.
+Este código convierte el documento a HTML y lo guarda en un archivo con el prefijo de nombre de clase CSS agregado.
 
-### مثال على شفرة المصدر لإضافة بادئة اسم فئة Css باستخدام Aspose.Words for .NET
+### Código fuente de ejemplo para Agregar prefijo de nombre de clase Css usando Aspose.Words para .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -67,6 +67,6 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Asegúrese de especificar la ruta correcta del documento en el`dataDir` variable.
 
-لقد تعلمت الآن كيفية إضافة بادئة اسم فئة CSS عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET. باتباع خطوة الدليل خطوة بخطوة المتوفرة في هذا البرنامج التعليمي ، يمكنك تخصيص أسماء فئات CSS في مستندات HTML المحولة.
+Ahora ha aprendido cómo agregar un prefijo de nombre de clase CSS al convertir un documento a HTML usando Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede personalizar los nombres de clase CSS en sus documentos HTML convertidos.

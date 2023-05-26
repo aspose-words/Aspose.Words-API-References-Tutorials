@@ -1,30 +1,30 @@
 ---
-title: نطاق علامة المستند المهيكلة بدء تعيين Xml
-linktitle: نطاق علامة المستند المهيكلة بدء تعيين Xml
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إعداد تعيين XML لنطاق علامة مستند منظم يبدأ في مستند Word باستخدام Aspose.Words for .NET.
+title: Intervallo tag documento strutturato Avvia mappatura Xml
+linktitle: Intervallo tag documento strutturato Avvia mappatura Xml
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come impostare la mappatura XML per un intervallo di tag di documenti strutturati inizia in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-sdt/structured-document-tag-range-start-xml-mapping/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إعداد تعيين XML لنطاق علامة مستند منظم يبدأ في مستند Word باستخدام Aspose.Words for .NET. يتيح لك تعيين XML عرض أجزاء معينة من مصدر بيانات XML داخل عنصر تحكم المحتوى.
+Questo tutorial spiega come impostare la mappatura XML per un intervallo di tag di documento strutturato in un documento di Word utilizzando Aspose.Words per .NET. Il mapping XML consente di visualizzare parti specifiche di un'origine dati XML all'interno del controllo contenuto.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Prerequisiti
+Per seguire questo tutorial, è necessario disporre di quanto segue:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words per la libreria .NET installata.
+- Conoscenza di base di C# e lavoro con documenti Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## Passaggio 1: impostare la directory dei documenti
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وإنشاء جزء XML
- قم بتحميل مستند Word باستخدام ملف`Document` مُنشئ ، تمرير المسار إلى المستند كمعامل. قم بإنشاء جزء XML يحتوي على البيانات التي تريد عرضها داخل علامة المستند المهيكلة.
+## Passaggio 2: caricare il documento e creare la parte XML
+ Carica il documento Word usando il file`Document` costruttore, passando il percorso al documento come parametro. Creare una parte XML che contenga i dati che si desidera visualizzare all'interno del tag del documento strutturato.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -33,40 +33,40 @@ string xmlPartContent = "<root><text>Text element #1</text><text>Text element #2
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add(xmlPartId, xmlPartContent);
 ```
 
-## الخطوة 3: تعيين مخطط XML لعلامة المستند المهيكلة
-استرجع نطاق علامة المستند المنظم بدءًا من المستند. بعد ذلك ، قم بتعيين مخطط XML لعلامة المستند المركب لعرض جزء معين من جزء XML المخصص باستخدام تعبير XPath.
+## Passaggio 3: impostare la mappatura XML per il tag del documento strutturato
+Recupera l'intervallo di tag del documento strutturato a partire dal documento. Quindi, imposta la mappatura XML per il tag del documento strutturato in modo da visualizzare una parte specifica della parte XML personalizzata utilizzando un'espressione XPath.
 
 ```csharp
 StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند المعدل إلى الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx".
+## Passaggio 4: salvare il documento
+ Salvare il documento modificato nella directory specificata utilizzando il file`Save` metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
 ```
 
-### مثال على شفرة المصدر لنطاق علامة المستند المهيكل ابدأ تعيين Xml باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per l'intervallo di tag del documento strutturato Avviare la mappatura Xml utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
-	// أنشئ جزء XML يحتوي على بيانات وأضفه إلى مجموعة CustomXmlPart الخاصة بالمستند.
+	// Costruisci una parte XML che contiene dati e aggiungila alla raccolta CustomXmlPart del documento.
 	string xmlPartId = Guid.NewGuid().ToString("B");
 	string xmlPartContent = "<root><text>Text element #1</text><text>Text element #2</text></root>";
 	CustomXmlPart xmlPart = doc.CustomXmlParts.Add(xmlPartId, xmlPartContent);
 	Console.WriteLine(Encoding.UTF8.GetString(xmlPart.Data));
-	// قم بإنشاء StructuredDocumentTag الذي سيعرض محتويات CustomXmlPart الخاصة بنا في المستند.
+	// Crea un StructuredDocumentTag che visualizzerà il contenuto della nostra CustomXmlPart nel documento.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
-	// إذا قمنا بتعيين خريطة لعلامة StructuredDocumentTag الخاصة بنا ،
-	// سيعرض فقط جزءًا من CustomXmlPart الذي يشير إليه XPath.
-	// سيشير XPath هذا إلى المحتوى الثاني "<text>" للعنصر الأول "<root>" في CustomXmlPart الخاص بنا.
+	// Se impostiamo una mappatura per il nostro StructuredDocumentTag,
+	// visualizzerà solo una parte della CustomXmlPart a cui punta l'XPath.
+	// Questo XPath punterà al contenuto del secondo elemento "<text>" del primo elemento "<root>" della nostra CustomXmlPart.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إعداد تعيين XML لنطاق علامة مستند منظم يبدأ في مستند Word باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai impostato correttamente la mappatura XML per un inizio di intervallo di tag di documento strutturato nel documento di Word utilizzando Aspose.Words per .NET.

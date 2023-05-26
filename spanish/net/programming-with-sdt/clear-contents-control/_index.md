@@ -1,54 +1,54 @@
 ---
-title: مسح التحكم في المحتويات
-linktitle: مسح التحكم في المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية مسح محتويات عنصر تحكم في مستند Word باستخدام Aspose.Words for .NET.
+title: Control de contenido claro
+linktitle: Control de contenido claro
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a borrar el contenido de un control en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-sdt/clear-contents-control/
 ---
 
-يوضح هذا البرنامج التعليمي كيفية مسح محتويات أداة معاملة خاصة في مستند Word باستخدام Aspose.Words for .NET. يؤدي مسح محتويات أداة معاملة خاصة إلى إزالة أي نص أو عقد فرعية داخل عنصر التحكم في المحتوى.
+Este tutorial demuestra cómo borrar el contenido de un SDT en un documento de Word usando Aspose.Words para .NET. Borrar el contenido de una SDT elimina cualquier texto o nodos secundarios dentro del control de contenido.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## requisitos previos
+Para seguir este tutorial, necesita tener lo siguiente:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words para la biblioteca .NET instalada.
+- Conocimientos básicos de C# y trabajo con documentos de Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## Paso 1: configurar el directorio de documentos
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde se encuentra su documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند واحصل على StructuredDocumentTag
- قم بتحميل مستند Word باستخدام ملف`Document` مُنشئ ، تمرير المسار إلى المستند كمعامل. ثم ، استرجع ملف`StructuredDocumentTag` من الوثيقة. في هذا المثال ، نفترض أن المعاملة الخاصة والتفضيلية هي العقدة الفرعية الأولى في المستند.
+## Paso 2: Cargue el documento y obtenga la etiqueta de documento estructurado
+ Cargue el documento de Word usando el`Document` constructor, pasando la ruta al documento como parámetro. Luego, recupere el deseado`StructuredDocumentTag` del documento En este ejemplo, asumimos que la SDT es el primer nodo secundario del documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
-## الخطوة 3: امسح محتويات StructuredDocumentTag
- امسح محتويات SDT باستخدام ملف`Clear` طريقة. يؤدي هذا إلى إزالة أي نص أو عقد فرعية داخل عنصر التحكم في المحتوى.
+## Paso 3: borre el contenido de la etiqueta de documento estructurado
+ Borre el contenido de la SDT usando el`Clear` método. Esto elimina cualquier texto o nodos secundarios dentro del control de contenido.
 
 ```csharp
 sdt.Clear();
 ```
 
-## الخطوة 4: احفظ المستند
-احفظ المستند المعدل باستخدام ملف`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.ClearContentsControl.doc".
+## Paso 4: Guarde el documento
+Guarde el documento modificado usando el`Save` método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithSdt.ClearContentsControl.doc".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 ```
 
-### مثال على شفرة المصدر لمسح التحكم في المحتويات باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Clear Contents Control usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -57,4 +57,4 @@ doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 	doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 ```
 
-هذا كل شيء! لقد نجحت في مسح محتويات StructuredDocumentTag في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+¡Eso es todo! Ha borrado con éxito el contenido de una etiqueta de documento estructurado en su documento de Word usando Aspose.Words para .NET.

@@ -1,48 +1,48 @@
 ---
-title: فك الإشارات المرجعية في الصف
-linktitle: فك الإشارات المرجعية في الصف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية فك تشابك الإشارات المرجعية للصفوف المتداخلة لإزالة صفوف معينة دون التأثير على الإشارات المرجعية الأخرى.
+title: 解开行书签
+linktitle: 解开行书签
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何解开嵌套行书签以删除特定行而不影响其他书签。
 type: docs
 weight: 10
 url: /zh/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Untangle Row Bookmarks في Aspose.Words for .NET library. تتيح هذه الوظيفة إمكانية وضع نهايات الإشارات المرجعية للسطر في نفس السطر مثل بدايات الإشارات المرجعية.
+在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的 Untangle Row Bookmarks 功能。此功能可以将行书签的结尾与书签的开头放在同一行中。
 
-## المتطلبات الأساسية
+## 先决条件
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# 语言的基础知识。
+- 安装了 Aspose.Words 库的 .NET 开发环境。
 
-## الخطوة 1: تحميل المستند
+## 第 1 步：装入文档
 
- نحن نستخدم ال`Document` فئة لتحميل المستند الحالي من ملف:
+我们使用`Document`从文件加载现有文档的类：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## الخطوة 2: كشف خط الإشارات المرجعية
+## 第 2 步：解开线书签
 
- نحن نستخدم ال`Untangle` وظيفة لفك تشابك الإشارات المرجعية من الصفوف. تؤدي هذه الوظيفة المهمة المخصصة لوضع نهايات الأسطر المرجعية في نفس السطر الذي تبدأ فيه الإشارة المرجعية:
+我们使用`Untangle`从行中解开书签的功能。此函数执行自定义任务，将行的书签结尾与书签开头放在同一行中：
 
 ```csharp
 Untangle(doc);
 ```
 
-## الخطوة 3: حذف سطر بإشارة مرجعية
+## 第 3 步：通过书签删除行
 
- نحن نستخدم ال`DeleteRowByBookmark` وظيفة لحذف صف معين من خلال الإشارة المرجعية الخاصة به:
+我们使用`DeleteRowByBookmark`通过书签删除特定行的函数：
 
 ```csharp
 DeleteRowByBookmark(doc, "ROW2");
 ```
 
-## الخطوة 4: التحقق من سلامة الإشارات المرجعية الأخرى
+## 第 4 步：检查其他书签的完整性
 
-نتحقق من عدم تلف الإشارات المرجعية الأخرى عن طريق التحقق مما إذا كانت نهاية الإشارة المرجعية لا تزال موجودة:
+我们通过检查书签的末尾是否仍然存在来验证其他书签是否未损坏：
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -51,24 +51,24 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### مثال على شفرة المصدر لـ Untangle Row Bookmarks باستخدام Aspose.Words for .NET**
+### 使用 Aspose.Words for .NET 的 Untangle Row Bookmarks 示例源代码**
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لفك تشابك الإشارات المرجعية من الأسطر باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 从行中解开书签的完整示例源代码：
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	//يؤدي ذلك إلى تنفيذ المهمة المخصصة لوضع إشارة مرجعية للصف في نفس الصف مع بدء الإشارة المرجعية.
+	//这将执行将行书签结尾与书签开头放在同一行中的自定义任务。
 	Untangle(doc);
 
-	// يمكننا الآن حذف الصفوف بسهولة بواسطة إشارة مرجعية دون الإضرار بأي إشارات مرجعية للصفوف الأخرى.
+	//现在我们可以轻松地通过书签删除行，而不会损坏任何其他行的书签。
 	DeleteRowByBookmark(doc, "ROW2");
 
-	// هذا فقط للتحقق من عدم تلف الإشارة المرجعية الأخرى.
+	//这只是为了检查其他书签是否损坏。
 	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
 		throw new Exception("Wrong, the end of the bookmark was deleted.");
 
@@ -76,6 +76,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 
 ```
 
-## خاتمة
+## 结论
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة Untangle Row Bookmarks في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لفك تشابك الإشارات المرجعية للصفوف وحذف صف معين دون الإضرار بالإشارات المرجعية الأخرى.
+在本文中，我们探索了 C# 源代码以了解如何使用 Aspose.Words for .NET 的 Untangle Row Bookmarks 功能。我们按照分步指南来解开行书签并删除特定行而不损坏其他书签。

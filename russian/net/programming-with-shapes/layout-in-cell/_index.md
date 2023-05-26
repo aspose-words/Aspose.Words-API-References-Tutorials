@@ -1,38 +1,38 @@
 ---
-title: التخطيط في الخلية
-linktitle: التخطيط في الخلية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تخطيط شكل داخل خلية جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Макет в ячейке
+linktitle: Макет в ячейке
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как разместить фигуру в ячейке таблицы в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-shapes/layout-in-cell/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية تخطيط شكل داخل خلية جدول في مستند Word باستخدام Aspose.Words for .NET. بضبط خصائص الشكل واستخدام خيارات التخطيط ، يمكنك التحكم في موضع الشكل ومظهره داخل الخلية.
+В этом руководстве объясняется, как разместить фигуру в ячейке таблицы в документе Word с помощью Aspose.Words для .NET. Настраивая свойства фигуры и используя параметры макета, вы можете управлять расположением и внешним видом фигуры в ячейке.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Предпосылки
+Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Установлена библиотека Aspose.Words for .NET.
+- Базовые знания C# и работы с документами Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Шаг 1. Настройте каталог документов
+ Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Шаг 2: Создайте новый документ и DocumentBuilder
+ Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для работы с документом.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: بناء الجدول
- استخدم ال`StartTable`, `EndTable`, `InsertCell` ، و`Write` طرق`DocumentBuilder` كائن لبناء الجدول. قم بتعيين ارتفاع الصف المطلوب وقاعدة الارتفاع باستخدام`RowFormat` ملكيات.
+## Шаг 3: Создайте таблицу
+ Использовать`StartTable`, `EndTable`, `InsertCell` , и`Write` методы`DocumentBuilder` объект для построения таблицы. Установите желаемую высоту строки и правило высоты, используя`RowFormat` характеристики.
 
 ```csharp
 builder.StartTable();
@@ -47,8 +47,8 @@ for (int i = 0; i < 31; i++)
 builder.EndTable();
 ```
 
-## الخطوة 4: إنشاء الشكل وتنسيقه
- إنشاء`Shape` الكائن وتكوين خصائصه لتحديد العلامة المائية. عيّن الشكل الذي سيتم تخطيطه داخل خلية باستخدام`IsLayoutInCell` ملكية.
+## Шаг 4: Создайте и отформатируйте фигуру
+ Создать`Shape` объект и настройте его свойства для определения водяного знака. Установите форму, которая будет размещена в ячейке, используя`IsLayoutInCell` свойство.
 
 ```csharp
 Shape watermark = new Shape(doc, ShapeType.TextPlainText)
@@ -64,8 +64,8 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 };
 ```
 
-## الخطوة 5: تخصيص الشكل
- قم بتخصيص مظهر ونص شكل العلامة المائية عن طريق تعيين خصائص مثل`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`، إلخ.
+## Шаг 5: Настройте форму
+ Настройте внешний вид и текст формы водяного знака, установив такие свойства, как`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`и т. д.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -76,8 +76,8 @@ watermark.Name = $"WaterMark_{Guid.NewGuid()}";
 watermark.WrapType = WrapType.None;
 ```
 
-## الخطوة 6: أدخل الشكل في المستند
- أدخل شكل العلامة المائية في المستند باستخدام ملف`InsertNode` طريقة`DocumentBuilder` هدف. ضع الشكل باستخدام`MoveTo` طريقة وضعه بعد آخر تشغيل في المستند.
+## Шаг 6: Вставьте фигуру в документ
+ Вставьте форму водяного знака в документ, используя`InsertNode` метод`DocumentBuilder` объект. Расположите фигуру с помощью`MoveTo` метод, чтобы поместить его после последнего запуска в документе.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -85,8 +85,8 @@ builder.MoveTo(run);
 builder.InsertNode(watermark);
 ```
 
-## الخطوة 7: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithShapes.LayoutInCell.docx".
+## Шаг 7: Сохраните документ
+ Сохраните документ в указанную директорию с помощью`Save` метод. Укажите желаемое имя файла с соответствующим расширением файла. В этом примере мы сохраняем документ как «WorkingWithShapes.LayoutInCell.docx».
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);
@@ -95,10 +95,10 @@ doc
 .Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-### مثال على شفرة المصدر لـ Layout In Cell باستخدام Aspose.Words for .NET 
+### Пример исходного кода для макета в ячейке с использованием Aspose.Words для .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -117,7 +117,7 @@ doc
 	{
 		RelativeHorizontalPosition = RelativeHorizontalPosition.Page,
 		RelativeVerticalPosition = RelativeVerticalPosition.Page,
-		IsLayoutInCell = true, // اعرض الشكل خارج خلية الجدول إذا كان سيتم وضعه في خلية.
+		IsLayoutInCell = true, // Отображать фигуру за пределами ячейки таблицы, если она будет помещена в ячейку.
 		Width = 300,
 		Height = 70,
 		HorizontalAlignment = HorizontalAlignment.Center,
@@ -137,4 +137,4 @@ doc
 	doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تخطيط شكل داخل خلية جدول في مستند Word باستخدام Aspose.Words for .NET.
+Вот и все! Вы успешно разместили фигуру в ячейке таблицы в документе Word, используя Aspose.Words для .NET.

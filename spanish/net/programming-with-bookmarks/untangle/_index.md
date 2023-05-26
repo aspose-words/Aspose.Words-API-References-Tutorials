@@ -1,69 +1,69 @@
 ---
-title: فك
-linktitle: فك
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية فك تشابك الإشارات المرجعية المتداخلة في صفوف الجدول المجاورة باستخدام Aspose.Words for .NET.
+title: Desenredar
+linktitle: Desenredar
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a desenredar marcadores anidados en filas de tablas adyacentes usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/untangle/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Untangle في مكتبة Aspose.Words for .NET. تكشف هذه الوظيفة عن الإشارات المرجعية المتداخلة الموجودة في صفوف الجدول المجاورة.
+En este artículo, exploraremos el código fuente de C# anterior para entender cómo usar la función Untangle en la biblioteca Aspose.Words para .NET. Esta función desentraña los marcadores anidados que se encuentran en filas de tablas adyacentes.
 
-## المتطلبات الأساسية
+## requisitos previos
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conocimientos básicos del lenguaje C#.
+- Entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
 
-## الخطوة 1: تصفح المستندات المرجعية
+## Paso 1: Explorar marcadores de documentos
 
-نستخدم حلقة foreach للتكرار خلال جميع الإشارات المرجعية الموجودة في المستند:
+Usamos un bucle foreach para recorrer todos los marcadores presentes en el documento:
 
 ```csharp
 foreach(Bookmark bookmark in doc.Range.Bookmarks)
 {
-     // رمز للتعامل مع الإشارات المرجعية هنا
+     // Código para manejar marcadores aquí
 }
 ```
 
-## الخطوة 2: احصل على الصفوف الأصلية من الإشارات المرجعية
+## Paso 2: Obtener filas principales de marcadores
 
- نحن نستخدم ال`GetAncestor` طرق لاسترداد الصفوف الرئيسية لعقدتي البداية والنهاية للإشارة المرجعية:
+ usamos el`GetAncestor` métodos para recuperar las filas principales de los nodos inicial y final del marcador:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-## الخطوة 3: فك الإشارات المرجعية المتداخلة
+## Paso 3: desenrede los marcadores anidados
 
-إذا تم العثور على كلا السطرين الأصليين وبدأت الإشارة المرجعية وتنتهي في أسطر متجاورة ، فإننا ننقل عقدة نهاية الإشارة المرجعية إلى نهاية الفقرة الأخيرة من الخلية الأخيرة في الصف العلوي:
+Si se encuentran ambas líneas principales y el marcador comienza y termina en líneas adyacentes, movemos el nodo final del marcador al final del último párrafo de la última celda en la fila superior:
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
      row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-### مثال على شفرة المصدر لـ Untangle باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Untangle usando Aspose.Words para .NET
 
-إليك مثال شفرة المصدر الكاملة لفك تشابك الإشارات المرجعية المتداخلة باستخدام Aspose.Words for .NET:
+Aquí está el ejemplo de código fuente completo para desenredar marcadores anidados usando Aspose.Words para .NET:
 
 ```csharp
 
 	foreach (Bookmark bookmark in doc.Range.Bookmarks)
 	{
-		// احصل على الصف الأصل لكل من الإشارة المرجعية وعقدة نهاية الإشارة المرجعية.
+		// Obtenga la fila principal del marcador y del nodo final del marcador.
 		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
-		// إذا تم العثور على كلا الصفين على ما يرام ، وتم تضمين بداية الإشارة المرجعية ونهايتها في صفوف متجاورة ،
-		// انقل عقدة نهاية الإشارة المرجعية إلى نهاية الفقرة الأخيرة في الخلية الأخيرة في الصف العلوي.
+		// Si ambas filas se encuentran bien, y el inicio y el final del marcador están contenidos en filas adyacentes,
+		// mueva el nodo final del marcador al final del último párrafo en la última celda de la fila superior.
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 	}
 
 ```
 
-## خاتمة
+## Conclusión
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام وظيفة Untangle في Aspose.Words لـ .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لفك تشابك الإشارات المرجعية المتداخلة في صفوف الجدول المجاورة.
+En este artículo, exploramos el código fuente de C# para entender cómo usar la función Untangle de Aspose.Words para .NET. Hemos seguido una guía paso a paso para desenredar marcadores anidados en filas de tablas adyacentes.

@@ -1,37 +1,37 @@
 ---
-title: تطبيق الترخيص من الدفق
-linktitle: تطبيق الترخيص من الدفق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق ترخيص من تدفق باستخدام Aspose.Words for .NET. دليل خطوة بخطوة
+title: Appliquer la licence à partir du flux
+linktitle: Appliquer la licence à partir du flux
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à appliquer une licence à partir d'un flux à l'aide d'Aspose.Words pour .NET. Guide étape par étape
 type: docs
 weight: 10
 url: /fr/net/apply-license/apply-license-from-stream/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، ستتعلم كيفية تطبيق ترخيص من دفق باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات الشفرة اللازمة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تطبيق ترخيص لفتح الوظائف الكاملة لـ Aspose.Words.
+Dans ce didacticiel pas à pas, vous apprendrez à appliquer une licence à partir d'un flux à l'aide d'Aspose.Words pour .NET. Nous vous guiderons tout au long du processus et vous fournirons les extraits de code nécessaires. À la fin de ce didacticiel, vous pourrez appliquer une licence pour déverrouiller toutes les fonctionnalités d'Aspose.Words.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
-- ملف ترخيص صالح لـ Aspose.Words.
+## Conditions préalables
+Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
+- Bibliothèque Aspose.Words pour .NET installée sur votre système.
+- Un fichier de licence valide pour Aspose.Words.
 
-## الخطوة 1: استيراد مساحات الأسماء المطلوبة
-للبدء ، قم باستيراد مساحات الأسماء الضرورية في كود C # الخاص بك. تحتوي مساحات الأسماء هذه على الفئات والطرق اللازمة للعمل مع Aspose.Words.
+## Étape 1 : Importer les espaces de noms requis
+Pour commencer, importez les espaces de noms nécessaires dans votre code C#. Ces espaces de noms contiennent les classes et les méthodes nécessaires pour travailler avec Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using System.IO;
 ```
 
-## الخطوة 2: تهيئة كائن الترخيص
-بعد ذلك ، قم بتهيئة كائن الترخيص ، والذي سيتم استخدامه لتعيين ترخيص Aspose.Words. أضف الكود التالي:
+## Étape 2 : Initialiser l'objet de licence
+Ensuite, initialisez l'objet License, qui sera utilisé pour définir la licence pour Aspose.Words. Ajoutez le code suivant :
 
 ```csharp
 License license = new License();
 ```
 
-## الخطوة 3: تعيين الترخيص من الدفق
-لتعيين الترخيص من دفق ، استخدم الأسلوب SetLicense لكائن الترخيص. قم بإنشاء MemoryStream من ملف الترخيص وتمريره كمعامل لطريقة SetLicense.
+## Étape 3 : Définir la licence à partir du flux
+Pour définir la licence à partir d'un flux, utilisez la méthode SetLicense de l'objet License. Créez un MemoryStream à partir du fichier de licence et transmettez-le en tant que paramètre à la méthode SetLicense.
 
 ```csharp
 try
@@ -48,8 +48,8 @@ catch (Exception e)
 }
 ```
 
-### مثال على كود المصدر لتطبيق الترخيص من Stream باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لتطبيق ترخيص من دفق باستخدام Aspose.Words for .NET:
+### Exemple de code source pour appliquer la licence à partir du flux à l'aide d'Aspose.Words pour .NET
+Voici le code source complet pour appliquer une licence à partir d'un flux en utilisant Aspose.Words pour .NET :
 
 ```csharp
 License license = new License();
@@ -68,7 +68,7 @@ catch (Exception e)
 }
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تطبيق ترخيص من تدفق باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك بسهولة تعيين الترخيص وإطلاق العنان للإمكانات الكاملة لـ Aspose.Words لمهام معالجة المستندات الخاصة بك.
+## Conclusion
+Dans ce didacticiel, vous avez appris à appliquer une licence à partir d'un flux à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez facilement définir la licence et libérer tout le potentiel d'Aspose.Words pour vos tâches de traitement de documents.
 
-يمكنك الآن بثقة تطبيق ترخيص من دفق والاستفادة من الميزات القوية لـ Aspose.Words لإنشاء مستندات Word وتعديلها وتحويلها برمجيًا.
+Vous pouvez désormais appliquer en toute confiance une licence à partir d'un flux et tirer parti des fonctionnalités puissantes d'Aspose.Words pour créer, modifier et convertir des documents Word par programmation.

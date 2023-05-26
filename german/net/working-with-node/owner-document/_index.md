@@ -1,17 +1,17 @@
 ---
-title: وثيقة المالك
-linktitle: وثيقة المالك
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام مستند المالك في Aspose.Words for .NET.
+title: Eigentümerdokument
+linktitle: Eigentümerdokument
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie das Eigentümerdokument in Aspose.Words für .NET verwenden.
 type: docs
 weight: 10
 url: /de/net/working-with-node/owner-document/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود مصدر C # أدناه والذي يوضح كيفية استخدام وظائف المستندات الاحتكارية مع Aspose.Words for .NET.
+Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der veranschaulicht, wie Sie proprietäre Dokumentfunktionen mit Aspose.Words für .NET verwenden.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Schritt 1: Importieren Sie die erforderlichen Referenzen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die erforderlichen Referenzen zur Verwendung von Aspose.Words für .NET in Ihr Projekt importiert haben. Dazu gehört das Importieren der Aspose.Words-Bibliothek und das Hinzufügen der erforderlichen Namespaces zu Ihrer Quelldatei.
 
 ```csharp
 using Aspose.Words;
@@ -19,71 +19,71 @@ using Aspose.Words.Nodes;
 using Aspose.Words.Paragraphs;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## Schritt 2: Erstellen Sie ein neues Dokument
+ In diesem Schritt erstellen wir ein neues Dokument mit`Document` Klasse.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: قم بإنشاء عقدة بمستند المالك
- عند إنشاء عقدة جديدة من أي نوع ، يجب عليك تمرير المستند إلى المنشئ. في هذا المثال ، نقوم بإنشاء عقدة فقرة جديدة باستخدام المستند`doc`.
+## Schritt 3: Erstellen Sie einen Knoten mit dem Eigentümerdokument
+ Wenn Sie einen neuen Knoten eines beliebigen Typs erstellen, müssen Sie das Dokument an den Konstruktor übergeben. In diesem Beispiel erstellen wir mithilfe des Dokuments einen neuen Absatzknoten`doc`.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 4: تحقق من العقدة الأصلية ومستند المالك
- الآن وقد أنشأنا عقدة الفقرة ، يمكننا التحقق مما إذا كانت تحتوي على عقدة أصلية وما إذا كان المستند المالك هو نفسه`doc`.
+## Schritt 4: Überprüfen Sie den übergeordneten Knoten und das Eigentümerdokument
+ Nachdem wir nun den Absatzknoten erstellt haben, können wir prüfen, ob er einen übergeordneten Knoten hat und ob das besitzende Dokument dasselbe ist wie`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
 Console.WriteLine("The documents of the two nodes are identical: " + (para.Document == doc));
 ```
 
-## الخطوة 5: تعديل خصائص العقدة ببيانات المستند
-تسمح العلاقة بين العقدة والمستند بالوصول إلى الخصائص التي تشير إلى البيانات الخاصة بالمستند وتعديلها ، مثل الأنماط أو القوائم. في هذا المثال ، نقوم بتعيين اسم نمط الفقرة على أنه "العنوان 1".
+## Schritt 5: Knoteneigenschaften mit Dokumentdaten ändern
+Die Beziehung zwischen einem Knoten und einem Dokument ermöglicht den Zugriff und die Änderung von Eigenschaften, die auf dokumentspezifische Daten verweisen, wie z. B. Stile oder Listen. In diesem Beispiel legen wir den Namen des Absatzstils auf „Überschrift 1“ fest.
 
 ```csharp
 para.ParagraphFormat.StyleName = "Heading 1";
 ```
 
-## الخطوة 6: أضف الفقرة إلى المستند
-الآن يمكننا إضافة عقدة الفقرة إلى القسم الرئيسي من المستند.
+## Schritt 6: Fügen Sie den Absatz zum Dokument hinzu
+Jetzt können wir den Absatzknoten zum Hauptabschnitt des Dokuments hinzufügen.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## الخطوة 7: تحقق من العقدة الأصلية بعد الإضافة
-بعد إضافة الفقرة إلى المستند ، نتحقق مرة أخرى مما إذا كانت تحتوي الآن على عقدة أصلية.
+## Schritt 7: Überprüfen Sie den übergeordneten Knoten nach dem Hinzufügen
+Nachdem wir den Absatz zum Dokument hinzugefügt haben, prüfen wir erneut, ob es nun einen übergeordneten Knoten hat.
 
 ```csharp
 Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
-### نموذج كود مصدر لمستند المالك مع Aspose.Words for .NET
+### Beispielquellcode für Eigentümerdokument mit Aspose.Words für .NET
 
 ```csharp
 	Document doc = new Document();
 
-	// يتطلب إنشاء عقدة جديدة من أي نوع تمرير مستند إلى المنشئ.
+	// Das Erstellen eines neuen Knotens jeglichen Typs erfordert die Übergabe eines Dokuments an den Konstruktor.
 	Paragraph para = new Paragraph(doc);
 
-	// عقدة الفقرة الجديدة ليس لها أصل حتى الآن.
+	// Der neue Absatzknoten hat noch keinen übergeordneten Knoten.
 	Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 
-	// لكن عقدة الفقرة تعرف وثيقتها.
+	// Aber der Absatzknoten kennt sein Dokument.
 	Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-	// تسمح لنا حقيقة أن العقدة تنتمي دائمًا إلى المستند بالوصول والتعديل
-	// الخصائص التي تشير إلى البيانات على مستوى المستند ، مثل الأنماط أو القوائم.
+	// Die Tatsache, dass ein Knoten immer zu einem Dokument gehört, ermöglicht uns den Zugriff und die Änderung
+	// Eigenschaften, die auf die dokumentweiten Daten verweisen, z. B. Stile oder Listen.
 	para.ParagraphFormat.StyleName = "Heading 1";
 
-	// أضف الآن الفقرة إلى النص الرئيسي للقسم الأول.
+	// Fügen Sie nun den Absatz zum Haupttext des ersten Abschnitts hinzu.
 	doc.FirstSection.Body.AppendChild(para);
 
-	//أصبحت عقدة الفقرة الآن تابعة لعقدة النص الأساسي.
+	//Der Absatzknoten ist jetzt ein untergeordnetes Element des Hauptknotens.
 	Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
             
 ```

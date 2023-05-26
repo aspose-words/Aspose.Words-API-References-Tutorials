@@ -1,55 +1,55 @@
 ---
-title: إضافة إزالة التعليق الرد
-linktitle: إضافة إزالة التعليق الرد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة وإزالة الردود على التعليقات في مستندات Word باستخدام Aspose.Words for .NET.
+title: 添加删除评论回复
+linktitle: 添加删除评论回复
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中添加和删除评论回复。
 type: docs
 weight: 10
 url: /zh/net/working-with-comments/add-remove-comment-reply/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إضافة ردود التعليقات وإزالتها في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إدارة ردود التعليقات وتخصيصها وفقًا لمتطلباتك.
+在这个综合教程中，您将学习如何使用 Aspose.Words for .NET 在 Word 文档中添加和删除评论回复。我们将指导您完成整个过程，并为您提供必要的 C# 代码片段。到本指南结束时，您将能够管理评论回复并根据您的要求对其进行自定义。
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## 先决条件
+在我们开始之前，请确保您具备以下先决条件：
+- Aspose.Words for .NET 库安装在您的系统上。
 
-## الخطوة 1: قم بتحميل المستند
-للبدء ، قم بتحميل المستند الذي يحتوي على التعليقات باستخدام فئة المستند:
+## 第 1 步：装入文档
+首先，使用 Document 类加载包含评论的文档：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
 ```
 
-## الخطوة 2: الوصول إلى التعليق وإدارة الردود
-بعد ذلك ، قم بالوصول إلى التعليق من المستند باستخدام طريقة GetChild مع معلمة NodeType.Comment:
+## 第 2 步：访问评论和管理回复
+接下来，使用带有 NodeType.Comment 参数的 GetChild 方法访问文档中的评论：
 
 ```csharp
 Comment comment = (Comment)doc.GetChild(NodeType.Comment, 0, true);
 ```
 
-لإزالة رد من التعليق ، استخدم طريقة RemoveReply وقم بتوفير فهرس الرد المطلوب:
+要从评论中删除回复，请使用 RemoveReply 方法并提供所需的回复索引：
 
 ```csharp
 comment.RemoveReply(comment.Replies[0]);
 ```
 
-لإضافة رد جديد على التعليق ، استخدم طريقة AddReply وقم بتوفير اسم المؤلف والأحرف الأولى من اسم المؤلف والتاريخ والوقت ونص الرد:
+要向评论添加新回复，请使用 AddReply 方法并提供作者姓名、作者姓名首字母、日期和时间以及回复文本：
 
 ```csharp
 comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New reply");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إضافة الردود على التعليقات أو إزالتها ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 第 3 步：保存文档
+添加或删除评论回复后，使用 Document 类的 Save 方法将文档保存到文件：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 ```
 
-### مثال على كود المصدر لإضافة وإزالة التعليقات باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لإضافة وإزالة الردود على التعليقات باستخدام Aspose.Words for .NET:
+### 使用 Aspose.Words for .NET 添加和删除评论回复的示例源代码
+下面是使用 Aspose.Words for .NET 添加和删除评论回复的完整源代码：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -64,7 +64,7 @@ comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New re
 doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إضافة وإزالة الردود على التعليقات في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام الكود المصدري المقدم ، يمكنك الآن إدارة ردود التعليقات وتخصيصها وفقًا لمتطلباتك.
+## 结论
+恭喜！您已经成功学习了如何使用 Aspose.Words for .NET 在 Word 文档中添加和删除评论回复。按照分步指南并利用提供的源代码，您现在可以管理评论回复并根据您的要求对其进行自定义。
 
-تسمح الردود على التعليقات بالمناقشات التعاونية والتعليقات داخل المستند. جرّب مؤلفي الردود المختلفين والأحرف الأولى والتواريخ والنصوص لتعزيز التعاون والتواصل داخل مستنداتك.
+评论回复允许在文档中进行协作讨论和反馈。尝试使用不同的回复作者、首字母、日期和文本来增强文档中的协作和交流。

@@ -1,59 +1,59 @@
 ---
-title: احصل على أسماء حقول دمج المراسلات
-linktitle: احصل على أسماء حقول دمج المراسلات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على أسماء حقول دمج البريد في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+title: Adres Mektup Birleştirme Alan Adlarını Alın
+linktitle: Adres Mektup Birleştirme Alan Adlarını Alın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile Word belgelerinizde adres mektup birleştirme alan adlarını nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/get-mail-merge-field-names/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "Get Merge Field Names" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aspose.Words for .NET'in "Get Merge Field Names" özelliğini kullanan aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz. İstenen sonuçları elde etmek için her adımı dikkatlice uyguladığınızdan emin olun.
 
-## الخطوة 1: إعداد دليل المستند
+## 1. Adım: Belge Dizini Kurulumu
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-تتمثل الخطوة الأولى في تحميل المستند حيث تريد الحصول على أسماء حقول الدمج.
+İlk adım, belgeyi birleştirme alan adlarını almak istediğiniz yere yüklemektir.
 
 ```csharp
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
 ```
 
-تأكد من استبدال "ملف المستند" باسم ملفك الخاص.
+"BELGE DOSYASINIZ"ı kendi dosyanızın adıyla değiştirdiğinizden emin olun.
 
-## الخطوة 3: احصل على أسماء حقول الدمج
+## 3. Adım: Birleştirme alan adlarını alın
 
- نحن نستخدم ال`GetFieldNames()` طريقة للحصول على مصفوفة تحتوي على أسماء حقول الدمج الموجودة في المستند.
+ biz kullanıyoruz`GetFieldNames()` belgede bulunan birleştirme alanlarının adlarını içeren bir dizi elde etme yöntemi.
 
 ```csharp
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
- ال`fieldNames` متغير يحتوي الآن على أسماء حقول الدمج.
+ bu`fieldNames` değişken artık birleştirme alanlarının adlarını içerir.
 
-### مثال رمز المصدر للحصول على دمج أسماء الحقول مع Aspose.Words for .NET
+### Aspose.Words for .NET ile Alan Adlarını Birleştirme İçin Kaynak Kodu Örneği
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+// Belgeyi yükleyin.
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
 
-// احصل على أسماء حقول الدمج.
+// Birleştirme alan adlarını alın.
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 
-// عرض عدد حقول الدمج.
+// Birleştirme alanlarının sayısını görüntüleyin.
 Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.");
 ```
 
- في هذا المثال ، قمنا بتحميل مستند ، وحصلنا على أسماء حقول الدمج باستخدام امتداد`GetFieldNames()` الطريقة ، وعرض عدد حقول الدمج الموجودة في المستند.
+ Bu örnekte, bir belge yükledik, birleştirme alan adlarını`GetFieldNames()` yöntemi ve belgede bulunan birleştirme alanlarının sayısını görüntüler.
 
-هذا يختتم دليلنا حول استخدام ميزة "الحصول على أسماء الحقول المدمجة" مع Aspose.Words for .NET.
+Bu, Aspose.Words for .NET ile "Get Merge Field Names" özelliğinin kullanımına ilişkin kılavuzumuzun sonuna geliyor.

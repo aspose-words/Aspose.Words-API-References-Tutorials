@@ -1,73 +1,73 @@
 ---
-title: قم بإدراج مستند باستخدام Builder
-linktitle: قم بإدراج مستند باستخدام Builder
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مستند في نهاية مستند آخر باستخدام Aspose.Words for .NET.
+title: Inserisci documento con Builder
+linktitle: Inserisci documento con Builder
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire un documento alla fine di un altro documento utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/join-and-append-documents/insert-document-with-builder/
 ---
 
- يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مستند في مستند آخر باستخدام`DocumentBuilder` فصل. يوضح كود المصدر المقدم كيفية إدراج مستند في نهاية مستند آخر مع الحفاظ على تنسيق المصدر.
+ Questo tutorial spiega come utilizzare Aspose.Words per .NET per inserire un documento in un altro documento utilizzando il file`DocumentBuilder` classe. Il codice sorgente fornito mostra come inserire un documento alla fine di un altro documento preservando la formattazione di origine.
 
-## الخطوة 1: قم بإعداد المشروع
+## Passaggio 1: impostare il progetto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Assicurati di avere i seguenti prerequisiti:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words per la libreria .NET installata. Puoi scaricarlo dal sito Web ufficiale di Aspose o utilizzare il gestore di pacchetti NuGet per installarlo.
+- Un percorso di directory del documento in cui si trovano i documenti di origine e di destinazione.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Passaggio 2: apri i documenti di origine e di destinazione
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Apri i documenti di origine e di destinazione utilizzando il file`Document` costruttore di classe. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: تهيئة DocumentBuilder
+## Passaggio 3: inizializzare DocumentBuilder
 
- قم بإنشاء مثيل جديد لملف`DocumentBuilder` فئة وتمرير المستند الوجهة كمعامل.
+ Crea una nuova istanza di`DocumentBuilder` class e passare il documento di destinazione come parametro.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
-## الخطوة 4: ضع مُنشئ المستند
+## Passaggio 4: posizionare DocumentBuilder
 
- حرك ال`DocumentBuilder` إلى نهاية المستند باستخدام امتداد`MoveToDocumentEnd` طريقة. أدخل فاصل صفحات لفصل المحتوى الموجود عن المستند المدرج.
+ Muovi il`DocumentBuilder` alla fine del documento utilizzando il`MoveToDocumentEnd` metodo. Inserisci un'interruzione di pagina per separare il contenuto esistente dal documento inserito.
 
 ```csharp
 builder.MoveToDocumentEnd();
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## الخطوة 5: أدخل المستند المصدر
+## Passaggio 5: inserire il documento di origine
 
- استخدم ال`InsertDocument` طريقة`DocumentBuilder` فئة لإدراج المستند المصدر في المستند الوجهة. اضبط وضع تنسيق الاستيراد على`ImportFormatMode.KeepSourceFormatting` للحفاظ على تنسيق المصدر.
+ Usa il`InsertDocument` metodo del`DocumentBuilder` class per inserire il documento di origine nel documento di destinazione. Imposta la modalità del formato di importazione su`ImportFormatMode.KeepSourceFormatting` per preservare la formattazione della sorgente.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند المعدل
+## Passaggio 6: salvare il documento modificato
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Infine, salva il documento di destinazione modificato utilizzando il file`Save` metodo del`Document` oggetto.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مستند في مستند آخر باستخدام Aspose.Words for .NET.
+Questo completa l'implementazione dell'inserimento di un documento in un altro documento utilizzando Aspose.Words per .NET.
 
-### مثال على شفرة المصدر لـ Insert Document With Builder باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Inserisci documento con Builder utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

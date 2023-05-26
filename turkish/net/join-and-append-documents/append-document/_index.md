@@ -1,37 +1,37 @@
 ---
-title: إلحاق مستند
-linktitle: إلحاق مستند
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق محتويات مستند بآخر باستخدام Aspose.Words for .NET.
+title: Belge Ekle
+linktitle: Belge Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir belgenin içeriğini diğerine nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/append-document/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق محتويات مستند بآخر. يوضح كود المصدر المقدم كيفية فتح مستندات المصدر والوجهة واستيراد وإلحاق أقسام من المستند المصدر إلى المستند الوجهة.
+Bu eğitim, bir belgenin içeriğini diğerine eklemek için Aspose.Words for .NET'in nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, kaynak ve hedef belgelerin nasıl açılacağını, kaynak belgeden bölümlerin nasıl alınacağını ve hedef belgeye nasıl ekleneceğini gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Kaynak ve hedef belgelerin bulunduğu bir belge dizini yolu.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## 2. Adım: Kaynak ve hedef belgeleri açın
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ kullanarak kaynak ve hedef belgeleri açın.`Document` sınıf oluşturucu Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إلحاق أقسام من المستند المصدر بالمستند الوجهة
+## 3. Adım: Kaynak belgeden hedef belgeye bölümler ekleyin
 
- قم بالتكرار خلال جميع الأقسام في المستند المصدر واستورد كل قسم في المستند الوجهة باستخدام ملف`ImportNode` طريقة. ثم قم بإلحاق القسم الذي تم استيراده بالمستند الوجهة.
+ Kaynak belgedeki tüm bölümler arasında dolaşın ve her bölümü hedef belgeye içe aktarın.`ImportNode` yöntem. Ardından, içe aktarılan bölümü hedef belgeye ekleyin.
 
 ```csharp
 foreach (Section srcSection in srcDoc)
@@ -41,36 +41,36 @@ foreach (Section srcSection in srcDoc)
 }
 ```
 
-## الخطوة 4: احفظ المستند الوجهة
+## 4. Adım: Hedef belgeyi kaydedin
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند باستخدام Aspose.Words لـ .NET.
+Bu, Aspose.Words for .NET kullanarak belge ekleme uygulamasını tamamlar.
 
-### مثال على الكود المصدري لإلحاق المستند باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Append Document için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// تكرار خلال جميع الأقسام في المستند المصدر.
-	// عُقد الأقسام هي عناصر فرعية مباشرة لعقدة المستند حتى نتمكن من تعداد المستند.
+	// Kaynak belgedeki tüm bölümler arasında geçiş yapın.
+	// Bölüm düğümleri, Belge düğümünün doğrudan çocuklarıdır, bu nedenle Belgeyi numaralandırabiliriz.
 	foreach (Section srcSection in srcDoc)
 	{
-		//لأننا نقوم بنسخ قسم من مستند إلى آخر ،
-		// مطلوب لاستيراد عقدة القسم في المستند الوجهة.
-		// يعمل هذا على ضبط أي مراجع خاصة بالمستند للأنماط والقوائم وما إلى ذلك.
+		//Bir bölümü bir belgeden diğerine kopyaladığımız için,
+		// Bölüm düğümünü hedef belgeye aktarmak gerekir.
+		// Bu, stillere, listelere vb. belgeye özgü referansları ayarlar.
 		//
-		// يؤدي استيراد عقدة إلى إنشاء نسخة من العقدة الأصلية ، ولكن النسخة
-		// ss جاهزة لإدراجها في المستند الوجهة.
+		// Bir düğümün içe aktarılması, orijinal düğümün bir kopyasını oluşturur, ancak kopya
+		// hedef belgeye eklenmeye hazır.
 		Node dstSection = dstDoc.ImportNode(srcSection, true, ImportFormatMode.KeepSourceFormatting);
-		// يمكن الآن إلحاق عقدة القسم الجديدة بالمستند الوجهة.
+		// Artık yeni bölüm düğümü hedef belgeye eklenebilir.
 		dstDoc.AppendChild(dstSection);
 	}
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");

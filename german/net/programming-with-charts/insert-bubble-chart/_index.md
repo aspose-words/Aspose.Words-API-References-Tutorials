@@ -1,64 +1,64 @@
 ---
-title: إدراج مخطط فقاعي
-linktitle: إدراج مخطط فقاعي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مخطط فقاعي في مستند باستخدام Aspose.Words for .NET. أضف بيانات متسلسلة بقيم X و Y وقيم حجم الفقاعة.
+title: Blasendiagramm einfügen
+linktitle: Blasendiagramm einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Blasendiagramm in ein Dokument einfügen. Fügen Sie Seriendaten mit X-, Y- und Blasengrößenwerten hinzu.
 type: docs
 weight: 10
 url: /de/net/programming-with-charts/insert-bubble-chart/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مخطط فقاعي في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وحفظ المستند.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET ein Blasendiagramm in ein Dokument einfügen. Der bereitgestellte Quellcode zeigt, wie Sie ein Diagramm erstellen, Seriendaten hinzufügen und das Dokument speichern.
 
-## الخطوة 1: قم بإعداد المشروع
+## Schritt 1: Richten Sie das Projekt ein
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words für .NET-Bibliothek installiert. Sie können es von der offiziellen Aspose-Website herunterladen oder den NuGet-Paketmanager verwenden, um es zu installieren.
+- Ein Dokumentverzeichnispfad, in dem das Ausgabedokument gespeichert wird.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Erstelle eine neue`Document` Objekt und a`DocumentBuilder` um das Dokument zu erstellen.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط فقاعي في المستند.
+ Als nächstes verwenden Sie die`InsertChart` Methode der`DocumentBuilder` um ein Blasendiagramm in das Dokument einzufügen.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bubble, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Schritt 3: Fügen Sie dem Diagramm Seriendaten hinzu
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف ثلاث نقاط بيانات مع قيم X و Y وقيم حجم الفقاعة.
+Fügen Sie dem Diagramm Seriendaten hinzu. In diesem Beispiel fügen wir drei Datenpunkte mit entsprechenden X-, Y- und Blasengrößenwerten hinzu.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 },
     new double[] { 10, 4, 8 });
 ```
 
-## الخطوة 4: احفظ المستند
+## Schritt 4: Speichern Sie das Dokument
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Speichern Sie abschließend das Dokument mit im angegebenen Verzeichnis`Save` Methode der`Document` Objekt.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مخطط فقاعي باستخدام Aspose.Words for .NET.
+Damit ist die Implementierung des Einfügens eines Blasendiagramms mit Aspose.Words für .NET abgeschlossen.
 
-### مثال على شفرة المصدر لإدراج مخطط فقاعي باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Blasendiagramm einfügen“ mit Aspose.Words für .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

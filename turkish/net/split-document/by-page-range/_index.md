@@ -1,68 +1,68 @@
 ---
-title: حسب نطاق الصفحة
-linktitle: حسب نطاق الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: استخرج بسهولة حسب نطاق الصفحات من مستند Word باستخدام Aspose.Words for .NET دليل خطوة بخطوة.
+title: Sayfa Aralığına Göre
+linktitle: Sayfa Aralığına Göre
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET Adım adım kılavuzunu kullanarak bir Word belgesinden sayfa aralığına göre kolayca ayıklayın.
 type: docs
 weight: 10
 url: /tr/net/split-document/by-page-range/
 ---
 
-## مقدمة
-في هذا البرنامج التعليمي ، سنوجهك خطوة بخطوة لفهم واستخدام وظيفة "حسب نطاق الصفحات" في Aspose.Words for .NET. تتيح لك هذه الميزة استخراج جزء معين من مستند Word كبير باستخدام نطاق صفحات معين. سنزودك بكود مصدر كامل وتنسيقات إخراج Markdown لتسهيل فهمك واستخدامك لاحقًا.
+## giriiş
+Bu eğitimde, Aspose.Words for .NET'in "Sayfa Aralığına Göre" işlevini anlamanız ve kullanmanız için size adım adım rehberlik edeceğiz. Bu özellik, belirli bir sayfa aralığını kullanarak büyük bir Word belgesinin belirli bir bölümünü çıkarmanıza olanak tanır. Daha sonra anlamanızı ve kullanmanızı kolaylaştırmak için size eksiksiz kaynak kodu ve Markdown çıktı biçimleri sağlayacağız.
 
-## متطلبات
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+## Gereksinimler
+Başlamadan önce, aşağıdakilerin yerinde olduğundan emin olun:
 
-1. Aspose.Words for .NET مثبتة على جهاز التطوير الخاص بك.
-2. ملف Word كبير تريد استخراج جزء معين منه.
+1. Geliştirme makinenizde kurulu Aspose.Words for .NET.
+2. Belirli bir bölümünü ayıklamak istediğiniz büyük bir Word dosyası.
 
-الآن بعد أن غطينا المتطلبات ، يمكننا الانتقال إلى خطوات استخدام ميزة حسب نطاق الصفحات.
+Artık gereksinimleri ele aldığımıza göre, Sayfa Aralığına Göre özelliğini kullanma adımlarına geçebiliriz.
 
-## الخطوة 1: تهيئة المستند وتحميله
-بمجرد قيامك بإعداد بيئة التطوير الخاصة بك ، فإنك تحتاج إلى تهيئة وتحميل مستند Word الذي تريد استخراج جزء معين منه. هذا هو الكود الذي يجب استخدامه:
+## 1. Adım: Belge başlatma ve yükleme
+Geliştirme ortamınızı kurduktan sonra, belirli bir bölümü çıkarmak istediğiniz Word belgesini başlatmanız ve yüklemeniz gerekir. İşte kullanılacak kod:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Name_of_large_document.docx");
 ```
 
-تأكد من استبدال "YOUR_DOCUMENTS_DIRECTORY" بالمسار الفعلي إلى دليل المستندات و "Name_of_large_document.docx" باسم ملف Word الكبير.
+"YOUR_DOCUMENTS_DIRECTORY" yerine belgeler dizininizin gerçek yolunu ve "Name_of_large_document.docx" yerine büyük Word dosyanızın adını yazdığınızdan emin olun.
 
-## الخطوة 2: استخراج جزء من المستند
- الآن بعد أن قمنا بتحميل المستند ، يمكننا استخراج الجزء المحدد باستخدام ملحق`ExtractPages` تعمل مع نطاق الصفحات المطلوب. هيريس كيفية القيام بذلك:
+## 2. Adım: Belgenin bir kısmını çıkarma
+ Artık belgeyi yüklediğimize göre, belirli kısmı kullanarak çıkartabiliriz.`ExtractPages` istenen sayfa aralığında çalışır. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
 Document extractedPages = doc.ExtractPages(3, 6);
 ```
 
-في هذا المثال ، نستخرج الصفحات 3-6 من المستند الأصلي. يمكنك ضبط أرقام الصفحات وفقًا لاحتياجاتك.
+Bu örnekte, orijinal belgeden 3-6. sayfaları çıkarıyoruz. Sayfa numaralarını ihtiyaçlarınıza göre ayarlayabilirsiniz.
 
-## الخطوة 3: احفظ الجزء المستخرج
-بمجرد استخراج الصفحات المطلوبة ، يمكننا حفظها في مستند Word جديد. إليك الطريقة:
+## 3. Adım: Çıkarılan parçayı kaydedin
+İstenen sayfaları çıkardıktan sonra, onları yeni bir Word belgesine kaydedebiliriz. İşte nasıl:
 
 ```csharp
 extractedPages.Save(dataDir + "Document_Extraits.ParRangeDePages.docx");
 ```
 
-تأكد من استبدال "Document_Extraits.ParPlageDePages.docx" بالاسم المطلوب لملف الإخراج الخاص بك.
+Çıktı dosyanız için "Document_Extraits.ParPlageDePages.docx" öğesini istediğiniz adla değiştirdiğinizden emin olun.
 
-### مثال على شفرة المصدر لـ By Page Range باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan By Page Range için örnek kaynak kodu
 
 ```csharp
 
-            // المسار إلى دليل المستندات.
+            // Belgeler dizininin yolu.
 			string dataDir = "YOUR DOCUMENT DIRECTORY";
             Document doc = new Document(MyDir + "Big document.docx");
             
-            // احصل على جزء من الوثيقة.
+            // Belgenin bir parçasını alın.
             Document extractedPages = doc.ExtractPages(3, 6);
             extractedPages.Save(dataDir + "SplitDocument.ByPageRange.docx");
             
         
 ```
 
-## خاتمة
-تهنئة ! لقد تعلمت كيفية استخدام "حسب نطاق الصفحات" من Aspose.Words for .NET. يمكنك الآن بسهولة استخراج أجزاء معينة من مستند Word كبير باستخدام نطاق صفحات معين. لا تتردد في تجربة المزيد مع ميزات Aspose القوية الأخرى. كلمات لتلبية احتياجاتك الخاصة.
+## Çözüm
+Tebrikler! Aspose.Words for .NET'ten "Sayfa Aralığına Göre"nin nasıl kullanılacağını öğrendiniz. Artık belirli bir sayfa aralığını kullanarak büyük bir Word belgesinin belirli bölümlerini kolayca çıkarabilirsiniz. Aspose'un diğer güçlü özellikleriyle daha fazlasını denemekten çekinmeyin. .Özel ihtiyaçlarınızı karşılayacak kelimeler.
 

@@ -1,27 +1,27 @@
 ---
-title: إظهار المراجعات في بالونات
-linktitle: إظهار المراجعات في بالونات
-second_title: Aspose.Words لمراجع .NET API
-description: اعرض المراجعات في بالونات باستخدام Aspose.Words for .NET.
+title: Revisionen in Sprechblasen anzeigen
+linktitle: Revisionen in Sprechblasen anzeigen
+second_title: Aspose.Words für .NET API-Referenz
+description: Zeigen Sie Revisionen in Sprechblasen mit Aspose.Words für .NET an.
 type: docs
 weight: 10
 url: /de/net/working-with-revisions/show-revisions-in-balloons/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سوف نوضح لك كيفية إظهار المراجعات في البالونات في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET Revisionen in Sprechblasen in einem Word-Dokument anzeigen. Wir stellen Ihnen den vollständigen Quellcode zur Verfügung und zeigen Ihnen, wie Sie die Markdown-Ausgabe formatieren.
 
-## الخطوة 1: تحميل المستند
+## Schritt 1: Laden des Dokuments
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+Der erste Schritt besteht darin, das Dokument mit den Überarbeitungen hochzuladen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة 2: تكوين خيارات عرض المراجعة
+## Schritt 2: Konfigurieren Sie die Optionen zum Anzeigen von Rezensionen
 
-سنقوم بتهيئة خيارات العرض لجعل المراجعات مرئية في البالونات.
+Wir werden die Anzeigeoptionen konfigurieren, um Revisionen in Sprechblasen sichtbar zu machen.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
@@ -29,36 +29,36 @@ doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
 ```
 
-## الخطوة 3: احفظ المستند بتنسيق PDF
+## Schritt 3: Speichern Sie das Dokument im PDF-Format
 
-أخيرًا ، سنقوم بحفظ المستند كملف PDF مع إظهار المراجعات في بالونات.
+Abschließend speichern wir das Dokument als PDF, wobei die Revisionen in Sprechblasen angezeigt werden.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
-## تنسيقات إخراج Markdown
+## Markdown-Ausgabeformate
 
-يمكن تنسيق الإخراج في تخفيض السعر لتحسين إمكانية القراءة. على سبيل المثال :
+Die Ausgabe kann zur Verbesserung der Lesbarkeit im Markdown formatiert werden. Zum Beispiel :
 
 ```markdown
 - Revisions are Showed in bubbles with revision bars on the right side.
 ```
 
-### مثال على شفرة المصدر لـ Show Revisions In Balloons باستخدام Aspose.Words for .NET
+### Beispielquellcode für „Revisionen in Sprechblasen anzeigen“ mit Aspose.Words für .NET
 
-إليك كود المصدر الكامل لإظهار المراجعات في البالونات في مستند باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Quellcode zum Anzeigen von Revisionen in Sprechblasen in einem Dokument mit Aspose.Words für .NET:
 
 ```csharp
     
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";	
 	Document doc = new Document(MyDir + "Revisions.docx");
 
-	// يجعل إدراج المراجعات مضمنة ، وحذف المراجعات وتنسيقها في البالونات.
+	// Rendert, fügt Revisionen inline ein, löscht und formatiert Revisionen in Sprechblasen.
 	doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 	doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-	// يعرض أشرطة المراجعة على الجانب الأيمن من الصفحة.
+	// Rendert Revisionsbalken auf der rechten Seite einer Seite.
 	doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
 	
 	doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");

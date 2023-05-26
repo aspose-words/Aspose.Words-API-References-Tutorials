@@ -1,18 +1,18 @@
 ---
-title: العمل مع الرؤوس والتذييلات
-linktitle: العمل مع الرؤوس والتذييلات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية إنشاء تذييل رأس ونسخ رأس تذييل من القسم السابق من مستند Word باستخدام Aspose.Words for .NET.
+title: Lavorare con intestazioni e piè di pagina
+linktitle: Lavorare con intestazioni e piè di pagina
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Tutorials contiene come creare il piè di pagina dell'intestazione e copiare il piè di pagina dell'intestazione dalla sezione precedente del documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 730
 url: /it/net/working-with-headers-and-footers/
 ---
 
-يعد العمل باستخدام الرؤوس والتذييلات موردًا شاملاً لتعلم كيفية التعامل مع الرؤوس والتذييلات وتخصيصها في مستندات Word باستخدام مكتبة Aspose.Words لـ .NET. توفر البرامج التعليمية شروحات مفصلة وأمثلة على التعليمات البرمجية وإرشادات خطوة بخطوة لإضافة الرؤوس والتذييلات وتعديلها وإزالتها ، وتعيين رؤوس وتذييلات مختلفة لأقسام مختلفة من المستند ، وإدراج الصور والجداول والحقول الديناميكية وغير ذلك الكثير. هذا المورد ضروري للمطورين الراغبين في إنشاء مستندات Word احترافية ومخصصة مع رؤوس وتذييلات مصممة خصيصًا لاحتياجاتهم الخاصة.
+Lavorare con intestazioni e piè di pagina è una risorsa completa per apprendere come manipolare e personalizzare intestazioni e piè di pagina nei documenti di Word utilizzando la libreria Aspose.Words per .NET. I tutorial forniscono spiegazioni dettagliate, esempi di codice e istruzioni passo-passo per aggiungere, modificare e rimuovere intestazioni e piè di pagina, impostare intestazioni e piè di pagina diversi per diverse sezioni di un documento, inserire immagini, tabelle, campi dinamici e molto altro. Questa risorsa è essenziale per gli sviluppatori che desiderano creare documenti Word professionali e personalizzati con intestazioni e piè di pagina personalizzati in base alle loro esigenze specifiche.
 
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [إنشاء تذييل الرأس](./create-header-footer/) | تعرف على كيفية إنشاء رؤوس الصفحات وتذييلاتها في مستندات Word باستخدام Aspose.Words for .NET. تخصيص الرؤوس والتذييلات لكل صفحة. |
-| [نسخ تذييلات الرؤوس من القسم السابق](./copy-headers-footers-from-previous-section/) | تعرف على كيفية نسخ الرؤوس والتذييلات من القسم السابق في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Crea piè di pagina intestazione](./create-header-footer/) | Scopri come creare intestazioni e piè di pagina nei tuoi documenti Word con Aspose.Words per .NET. Personalizza intestazioni e piè di pagina per ogni pagina. |
+| [Copia i piè di pagina delle intestazioni dalla sezione precedente](./copy-headers-footers-from-previous-section/) | Scopri come copiare intestazioni e piè di pagina dalla sezione precedente nei documenti di Word utilizzando Aspose.Words per .NET. |

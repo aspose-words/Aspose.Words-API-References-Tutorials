@@ -1,28 +1,28 @@
 ---
-title: الاحتفاظ بتنسيق المصدر
-linktitle: الاحتفاظ بتنسيق المصدر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند مصدر بمستند وجهة مع الحفاظ على التنسيق الأصلي باستخدام Aspose.Words for .NET.
+title: Сохранить исходное форматирование
+linktitle: Сохранить исходное форматирование
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как добавить исходный документ к целевому документу, сохранив исходное форматирование с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/join-and-append-documents/keep-source-formatting/
 ---
 
-يوضح هذا البرنامج التعليمي كيفية إلحاق مستند مصدر بمستند وجهة مع الحفاظ على التنسيق الأصلي للمستند المصدر باستخدام Aspose.Words for .NET.
+В этом руководстве показано, как добавить исходный документ к целевому документу, сохранив при этом исходное форматирование исходного документа с помощью Aspose.Words для .NET.
 
-## الخطوة 1: قم بإعداد المشروع
+## Шаг 1: Настройте проект
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Убедитесь, что у вас есть следующие предварительные условия:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ مستندات المصدر والوجهة.
+- Установлена библиотека Aspose.Words for .NET. Вы можете загрузить его с официального веб-сайта Aspose или использовать менеджер пакетов NuGet для его установки.
+- Путь к каталогу документов, в котором будут сохранены исходный и конечный документы.
 
-## الخطوة 2: قم بإنشاء الوجهة والمستندات المصدر
+## Шаг 2. Создайте целевой и исходный документы
 
- إنشاء مثيلات من`Document` للوجهة والمستندات المصدر.
+ Создание экземпляров`Document` для целевых и исходных документов.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document dstDoc = new Document();
@@ -32,36 +32,36 @@ Document srcDoc = new Document();
 srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 ```
 
-## الخطوة 3: قم بإلحاق المستند المصدر بالمستند الوجهة
+## Шаг 3. Добавьте исходный документ к целевому документу.
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.KeepSourceFormatting` كوضع تنسيق الاستيراد للاحتفاظ بالتنسيق الأصلي للمستند المصدر.
+ Использовать`AppendDocument` метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.KeepSourceFormatting` в качестве режима формата импорта, чтобы сохранить исходное форматирование исходного документа.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 4: احفظ المستند المعدل
+## Шаг 4: Сохраните измененный документ
 
-احفظ المستند المعدل باستخدام ملف`Save` طريقة`Document` هدف.
+Сохраните измененный документ с помощью`Save` метод`Document` объект.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند مصدر بمستند الوجهة مع الاحتفاظ بالتنسيق الأصلي باستخدام Aspose.Words for .NET.
+На этом завершается реализация добавления исходного документа к целевому документу с сохранением исходного форматирования с использованием Aspose.Words для .NET.
 
-### مثال على شفرة المصدر لـ Keep Source Formatting باستخدام Aspose.Words for .NET 
+### Пример исходного кода для сохранения исходного форматирования с использованием Aspose.Words для .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document dstDoc = new Document();
 	dstDoc.FirstSection.Body.AppendParagraph("Destination document text. ");
 	Document srcDoc = new Document();
 	srcDoc.FirstSection.Body.AppendParagraph("Source document text. ");
-	// قم بإلحاق المستند المصدر بالمستند الوجهة.
-	// قم بتمرير وضع التنسيق للاحتفاظ بالتنسيق الأصلي للمستند المصدر عند استيراده.
+	// Добавьте исходный документ к целевому документу.
+	// Передайте режим форматирования, чтобы сохранить исходное форматирование исходного документа при его импорте.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
 ```

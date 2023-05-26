@@ -1,31 +1,31 @@
 ---
-title: تعيين نظام مجلدات الخطوط والمجلد المخصص
-linktitle: تعيين نظام مجلدات الخطوط والمجلد المخصص
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد النظام ومجلدات الخطوط المخصصة عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Imposta il sistema delle cartelle dei caratteri e la cartella personalizzata
+linktitle: Imposta il sistema delle cartelle dei caratteri e la cartella personalizzata
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata all'impostazione delle cartelle di sistema e dei caratteri personalizzati durante il rendering di un documento utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلدات خطوط النظام ومجلد مخصص عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلدات خطوط متعددة ، بما في ذلك مجلد النظام والمجلد المخصص ، لاستخدامها عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+In questo tutorial, ti guideremo attraverso il processo passo-passo per impostare le cartelle dei font di sistema e una cartella personalizzata durante il rendering di un documento utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come specificare più cartelle di font, inclusa la cartella di sistema e una cartella personalizzata, da utilizzare durante il rendering dei tuoi documenti utilizzando Aspose.Words per .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+Innanzitutto, devi impostare il percorso della directory dei documenti. Questa è la posizione in cui vuoi salvare il documento renderizzato modificato. Sostituisci "LA TUA CARTELLA DEI DOCUMENTI" con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند للعرض
- ثم يمكنك تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Passo 2: carica il documento da renderizzare
+ Quindi puoi caricare il documento di cui eseguire il rendering utilizzando il file`Document` classe. Assicurati di specificare il percorso del documento corretto.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تعيين مجلدات الخط المخصصة والنظام
- يمكنك الآن تعيين مجلدات خطوط النظام ومجلد مخصص باستخدام ملف`FontSettings` الطبقة و`SetFontsSources()` طريقة. أولاً ، تحتاج إلى استرداد قائمة مصادر الخطوط المعتمدة على البيئة التي تستخدم`GetFontsSources()` وتخزينه في قائمة. ثم يمكنك إنشاء مثيل جديد من`FolderFontSource`تحديد المسار إلى المجلد المخصص الذي يحتوي على الخطوط الخاصة بك. أضف هذا المثيل إلى قائمة مصادر الخطوط الموجودة. أخيرًا ، استخدم`SetFontsSources()` لتحديث مصادر الخطوط بالقائمة الجديدة.
+## Passaggio 3: imposta le cartelle di sistema e dei caratteri personalizzati
+ Ora puoi impostare le cartelle dei font di sistema e una cartella personalizzata utilizzando il file`FontSettings` classe e il`SetFontsSources()` metodo. Innanzitutto, è necessario recuperare l'elenco delle fonti di font dipendenti dall'ambiente utilizzando`GetFontsSources()` e memorizzarlo in un elenco. Quindi puoi creare una nuova istanza di`FolderFontSource`specificando il percorso della cartella personalizzata contenente i font. Aggiungi questa istanza all'elenco delle fonti di font esistenti. Infine, usa`SetFontsSources()` per aggiornare le fonti dei caratteri con il nuovo elenco.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -36,37 +36,37 @@ FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
 ```
 
-## الخطوة 4: تطبيق إعدادات الخط
- بعد ذلك ، تحتاج إلى تطبيق إعدادات الخط على المستند الخاص بك باستخدام ملف`FontSettings` ممتلكات`Document` فصل.
+## Passaggio 4: applica le impostazioni dei caratteri
+ Successivamente, è necessario applicare le impostazioni del carattere al documento utilizzando il file`FontSettings` proprietà del`Document` classe.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 5: احفظ المستند المقدم
-أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف بواسطة
+## Passaggio 5: salvare il documento renderizzato
+Infine, puoi salvare il documento renderizzato in un file tramite
 
-   باستخدام`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+   usando il`Save()` metodo del`Document` classe. Assicurarsi di specificare il percorso e il nome file corretti.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders System والمجلد المخصص باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per il sistema di cartelle di caratteri impostati e la cartella personalizzata utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Rendering.docx");
 	FontSettings fontSettings = new FontSettings();
-	// استرجع مصفوفة مصادر الخطوط المعتمدة على البيئة والتي يتم البحث عنها افتراضيًا.
-	// على سبيل المثال سيحتوي هذا على مصدر "Windows \ Fonts \" على أجهزة Windows.
-	// نضيف هذه المجموعة إلى قائمة جديدة لتسهيل إضافة أو إزالة مدخلات الخط.
+	// Recupera l'array di fonti di font dipendenti dall'ambiente che vengono cercate per impostazione predefinita.
+	// Ad esempio, questo conterrà un'origine "Windows\Fonts\" su un computer Windows.
+	// Aggiungiamo questo array a un nuovo elenco per rendere molto più semplice l'aggiunta o la rimozione di voci di font.
 	List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-	// أضف مصدر مجلد جديد والذي سيوجه Aspose.Words للبحث في المجلد التالي عن الخطوط.
+	// Aggiungi una nuova cartella sorgente che istruirà Aspose.Words a cercare i caratteri nella seguente cartella.
 	FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-	// أضف المجلد المخصص الذي يحتوي على خطوطنا إلى قائمة مصادر الخطوط الموجودة.
+	// Aggiungi la cartella personalizzata che contiene i nostri font all'elenco delle fonti di font esistenti.
 	fontSources.Add(folderFontSource);
 	FontSourceBase[] updatedFontSources = fontSources.ToArray();
 	fontSettings.SetFontsSources(updatedFontSources);
@@ -74,5 +74,5 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلدات خطوط النظام ومجلد مخصص عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلدات خطوط متعددة ، بما في ذلك مجلد النظام والمجلد المخصص ، لاستخدامهما عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+## Conclusione
+In questo tutorial, abbiamo imparato come impostare le cartelle dei font di sistema e una cartella personalizzata durante il rendering di un documento utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata, puoi facilmente specificare più cartelle di font, inclusa la cartella di sistema e una cartella personalizzata, da utilizzare durante il rendering dei tuoi documenti. Aspose.Words offre un'API potente e flessibile per lavorare con i caratteri nei tuoi documenti. Con questa conoscenza, puoi controllare e personalizzare le origini dei caratteri utilizzate durante il rendering dei tuoi documenti in base alle tue esigenze specifiche.

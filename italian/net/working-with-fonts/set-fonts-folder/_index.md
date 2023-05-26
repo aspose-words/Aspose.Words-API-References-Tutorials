@@ -1,36 +1,36 @@
 ---
-title: تعيين مجلد الخطوط
-linktitle: تعيين مجلد الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين دليل الخطوط في Aspose.Words for .NET وتأكد من توفر الخطوط المستخدمة في مستنداتك.
+title: Imposta la cartella dei caratteri
+linktitle: Imposta la cartella dei caratteri
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come impostare la directory dei caratteri in Aspose.Words per .NET e garantire la disponibilità dei caratteri utilizzati nei tuoi documenti.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/set-fonts-folder/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين دليل الخطوط في Aspose.Words for .NET. ستتعلم كيفية تحديد الدليل الذي يحتوي على الخطوط المستخدمة في مستند Word الخاص بك.
+In questo tutorial, ti mostreremo come impostare la directory dei caratteri in Aspose.Words per .NET. Imparerai come specificare la directory contenente i caratteri utilizzati nel tuo documento Word.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti elementi:
+- Conoscenza operativa del linguaggio di programmazione C#
+- La libreria Aspose.Words per .NET installata nel tuo progetto
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+Inizia impostando il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تعيين دليل الخطوط
- قم بإنشاء مثيل لـ`FontSettings` فئة واستخدام`SetFontsFolder` طريقة لتحديد الدليل الذي يحتوي على الخطوط. يستبدل`"Fonts"` باسم دليل الخطوط الفعلي.
+## Passaggio 2: imposta la directory dei caratteri
+ Crea un'istanza di`FontSettings` classe e utilizzare il`SetFontsFolder` metodo per specificare la directory contenente i caratteri. Sostituire`"Fonts"` con il nome dell'effettiva directory dei font.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.SetFontsFolder(dataDir + "Fonts", false);
 ```
 
-## الخطوة 3: قم بتحميل المستند بإعدادات الخط
- استخدم ال`LoadOptions` فئة لتحديد إعدادات الخط في ملف`FontSettings` خيار. ثم استخدم ملف`Document` فئة لتحميل المستند باستخدام هذه الخيارات.
+## Passaggio 3: caricare il documento con le impostazioni dei caratteri
+ Usa il`LoadOptions` class per specificare le impostazioni dei caratteri nel file`FontSettings` opzione. Quindi usa il`Document` class per caricare il documento utilizzando queste opzioni.
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
@@ -39,11 +39,11 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Fonts Folder باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per la cartella Set Fonts utilizzando Aspose.Words per .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();
@@ -54,5 +54,5 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-## خاتمة
-تهنئة ! أنت تعرف الآن كيفية تعيين دليل الخطوط في Aspose.Words for .NET. يمكنك استخدام هذه الميزة لضمان توفر الخطوط المستخدمة في وثيقتك ولضمان التناسق في عرض الخطوط.
+## Conclusione
+Congratulazioni! Ora sai come impostare la directory dei caratteri in Aspose.Words per .NET. È possibile utilizzare questa funzione per garantire la disponibilità dei caratteri utilizzati nel documento e per garantire la coerenza nella visualizzazione dei caratteri.

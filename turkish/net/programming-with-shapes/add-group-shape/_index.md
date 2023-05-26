@@ -1,30 +1,30 @@
 ---
-title: أضف شكل المجموعة
-linktitle: أضف شكل المجموعة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة شكل مجموعة بأشكال متعددة إلى مستند Word باستخدام Aspose.Words for .NET.
+title: Grup Şekli Ekle
+linktitle: Grup Şekli Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesine birden çok şekle sahip bir grup şekli eklemeyi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-shapes/add-group-shape/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إضافة شكل مجموعة يحتوي على أشكال متعددة إلى مستند Word باستخدام Aspose.Words for .NET. تسمح لك أشكال المجموعة بدمج أشكال متعددة ومعالجتها ككيان واحد.
+Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesine birden çok şekil içeren bir grup şeklinin nasıl ekleneceğini açıklar. Grup şekilleri, birden çok şekli tek bir varlık olarak birleştirmenize ve değiştirmenize olanak tanır.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Önkoşullar
+Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words for .NET kitaplığı yüklendi.
+- Temel C# bilgisi ve Word belgeleriyle çalışma.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## 1. Adım: Belge Dizinini kurun
+ Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد وشكل جماعي
- قم بإنشاء مثيل جديد لملف`Document` فئة و`GroupShape` كائن للعمل مع المستند.
+## 2. Adım: Yeni Bir Belge ve GroupShape Oluşturun
+ Yeni bir örneğini oluştur`Document` sınıf ve`GroupShape` belgeyle çalışmak için nesne.
 
 ```csharp
 Document doc = new Document();
@@ -32,8 +32,8 @@ doc.EnsureMinimum();
 GroupShape groupShape = new GroupShape(doc);
 ```
 
-## الخطوة 3: إنشاء وإضافة أشكال إلى GroupShape
- قم بإنشاء أشكال فردية مثل`accentBorderShape` و`actionButtonShape` باستخدام`Shape` فصل. تخصيص خصائصهم حسب الرغبة. إلحاق هذه الأشكال بملف`groupShape` هدف.
+## 3. Adım: GroupShape'e Şekiller Oluşturun ve Ekleyin
+ gibi bireysel şekiller oluşturun.`accentBorderShape` Ve`actionButtonShape` kullanmak`Shape` sınıf. Özelliklerini istediğiniz gibi özelleştirin. Bu şekilleri şuraya ekleyin:`groupShape` nesne.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -48,8 +48,8 @@ Shape actionButtonShape = new Shape(doc, ShapeType.ActionButtonBeginning)
 groupShape.AppendChild(actionButtonShape);
 ```
 
-## الخطوة 4: تعيين الأبعاد لشكل المجموعة
- قم بتعيين العرض والارتفاع وحجم التنسيق لملف`groupShape`.
+## 4. Adım: GroupShape için Boyutları Ayarlayın
+ için genişlik, yükseklik ve koordinat boyutunu ayarlayın.`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -57,25 +57,25 @@ groupShape.Height = 200;
 groupShape.CoordSize = new Size(200, 200);
 ```
 
-## الخطوة 5: أدخل GroupShape في المستند
- إنشاء`DocumentBuilder` الكائن وإدراج`groupShape` في المستند باستخدام ملف`InsertNode` طريقة.
+## Adım 5: GroupShape'i Belgeye Ekleyin
+ Oluşturmak`DocumentBuilder` nesne ve eklemek`groupShape` kullanarak belgeye`InsertNode` yöntem.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertNode(groupShape);
 ```
 
-## الخطوة 6: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save`طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithShapes.AddGroupShape.docx".
+## 6. Adım: Belgeyi Kaydedin
+ kullanarak belgeyi belirtilen dizine kaydedin.`Save`yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithShapes.AddGroupShape.docx" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-### مثال على شفرة المصدر لإضافة شكل المجموعة باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Add Group Shape için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -96,4 +96,4 @@ doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 	doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إضافة شكل مجموعة يحتوي على أشكال متعددة إلى مستند Word الخاص بك باستخدام Aspose.W
+Bu kadar! Aspose.W'yi kullanarak birden fazla şekil içeren bir grup şeklini Word belgenize başarıyla eklediniz.

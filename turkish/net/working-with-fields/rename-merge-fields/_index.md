@@ -1,26 +1,26 @@
 ---
-title: إعادة تسمية حقول الدمج
-linktitle: إعادة تسمية حقول الدمج
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، ستتعلم كيفية إعادة تسمية حقول الدمج في مستند باستخدام Aspose.Words for .NET.
+title: Birleştirme Alanlarını Yeniden Adlandırın
+linktitle: Birleştirme Alanlarını Yeniden Adlandırın
+second_title: Aspose.Words for .NET API Referansı
+description: Bu öğreticide, Aspose.Words for .NET kullanarak bir belgedeki birleştirme alanlarını nasıl yeniden adlandıracağınızı öğreneceksiniz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/rename-merge-fields/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود المصدر C # أدناه والذي يستخدم ميزة إعادة تسمية حقل الدمج في Aspose.Words for .NET. اتبع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aspose.Words for .NET'in birleştirme alanı yeniden adlandırma özelliğini kullanan aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz. İstenen sonuçları elde etmek için her adımı dikkatlice izleyin.
 
-## الخطوة 1: إعداد دليل المستند
+## 1. Adım: Belge Dizini Kurulumu
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند وإدراج حقول الدمج
+## 2. Adım: Belgeyi oluşturma ve birleştirme alanlarını ekleme
 
- نبدأ بإنشاء مستند جديد واستخدام ملف`DocumentBuilder` لإدراج حقول الدمج.
+ Yeni bir belge oluşturarak başlıyoruz ve bir`DocumentBuilder` birleştirme alanlarını eklemek için.
 
 ```csharp
 Document doc = new Document();
@@ -30,9 +30,9 @@ builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 ```
 
-## الخطوة 3: إعادة تسمية حقول الدمج
+## 3. Adım: Birleştirme Alanlarını Yeniden Adlandırma
 
-نقوم بإجراء حلقة عبر كل حقل في نطاق المستند ، وإذا كان حقل دمج ، فإننا نعيد تسمية الحقل عن طريق إضافة "_أعيدت تسميته "لاحقة.
+Belge aralığındaki her alan arasında dolaşıyoruz ve bu bir birleştirme alanıysa, " ekleyerek alanı yeniden adlandırıyoruz._Yeniden adlandırılmış" soneki.
 
 ```csharp
 foreach(Field f in doc.Range.Fields)
@@ -46,28 +46,28 @@ foreach(Field f in doc.Range.Fields)
 }
 ```
 
-## الخطوة 4: حفظ المستند
+## 4. Adım: Belgeyi kaydetme
 
- أخيرًا ، نسمي`Save()` طريقة لحفظ المستند المعدل.
+ Son olarak, diyoruz`Save()` değiştirilen belgeyi kaydetme yöntemi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-### مثال على رمز المصدر لإعادة تسمية حقول الدمج باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile birleştirme alanlarını yeniden adlandırmak için kaynak kodu örneği
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وإدراج حقول الدمج.
+// Belgeyi oluşturun ve birleştirme alanlarını ekleyin.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 
-// إعادة تسمية حقول الدمج.
+// Birleştirme alanlarını yeniden adlandırın.
 foreach(Field f in doc.Range.Fields)
 {
      if (f.Type == FieldType.FieldMergeField)
@@ -78,8 +78,8 @@ foreach(Field f in doc.Range.Fields)
      }
 }
 
-// احفظ المستند.
+// Belgeyi kaydedin.
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-اتبع هذه الخطوات لإعادة تسمية حقول الدمج في مستندك باستخدام Aspose.Words for .NET.
+Aspose.Words for .NET kullanarak belgenizdeki birleştirme alanlarını yeniden adlandırmak için bu adımları izleyin.

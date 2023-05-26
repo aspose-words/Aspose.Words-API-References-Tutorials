@@ -1,44 +1,44 @@
 ---
-title: حدد خصائص XYAxis
-linktitle: حدد خصائص XYAxis
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديد خصائص المحور XY في مخطط باستخدام Aspose.Words for .NET. يتم عرض خيارات التخصيص للمحاور X و Y.
+title: Definire le proprietà dell'asse XYA
+linktitle: Definire le proprietà dell'asse XYA
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come definire le proprietà dell'asse XY in un grafico utilizzando Aspose.Words per .NET. Vengono mostrate le opzioni di personalizzazione per gli assi X e Y.
 type: docs
 weight: 10
 url: /it/net/programming-with-charts/define-xyaxis-properties/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعريف خصائص محوري X و Y في مخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات سلسلة وتخصيص خصائص المحور.
+Questo tutorial spiega come utilizzare Aspose.Words per .NET per definire le proprietà per gli assi X e Y in un grafico. Il codice sorgente fornito mostra come creare un grafico, aggiungere dati di serie e personalizzare le proprietà dell'asse.
 
-## الخطوة 1: قم بإعداد المشروع
+## Passaggio 1: impostare il progetto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Assicurati di avere i seguenti prerequisiti:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words per la libreria .NET installata. Puoi scaricarlo dal sito Web ufficiale di Aspose o utilizzare il gestore di pacchetti NuGet per installarlo.
+- Un percorso di directory del documento in cui verrà salvato il documento di output.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Passaggio 2: crea un nuovo documento e inserisci un grafico
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Crea un nuovo`Document` oggetto e a`DocumentBuilder` per costruire il documento.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، أدخل مخططًا في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`. في هذا المثال ، سنقوم بإدراج مخطط مساحي.
+ Successivamente, inserisci un grafico nel documento utilizzando il file`InsertChart` metodo del`DocumentBuilder`. In questo esempio, inseriremo un grafico ad area.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Passaggio 3: aggiungi i dati della serie al grafico
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمس نقاط بيانات مع التواريخ والقيم المقابلة.
+Aggiungi i dati della serie al grafico. In questo esempio, aggiungeremo cinque punti dati con date e valori corrispondenti.
 
 ```csharp
 chart.Series.Clear();
@@ -51,16 +51,16 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 640, 320, 280, 120, 150 });
 ```
 
-## الخطوة 4: تخصيص خصائص المحور X و Y.
+## Passaggio 4: personalizzare le proprietà degli assi X e Y
 
- لتخصيص خصائص المحورين X و Y ، قم بالوصول إلى`ChartAxis` الكائنات المرتبطة بالرسم البياني.
+ Per personalizzare le proprietà degli assi X e Y, accedere al file`ChartAxis` oggetti associati al grafico.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
 ChartAxis yAxis = chart.AxisY;
 ```
 
- قم بتعديل خصائص ملف`xAxis` و`yAxis`كائنات لتعيين الخيارات المرغوبة للمحاور X و Y. في هذا المثال ، سنوضح بعض الخصائص الشائعة التي يمكن تخصيصها.
+ Modificare le proprietà del`xAxis` E`yAxis`oggetti per impostare le opzioni desiderate per gli assi X e Y. In questo esempio, dimostreremo alcune proprietà comuni che possono essere personalizzate.
 
 ```csharp
 xAxis.CategoryType = AxisCategoryType.Category;
@@ -79,25 +79,25 @@ yAxis.Scaling.Minimum = new AxisBound(100);
 yAxis.Scaling.Maximum = new AxisBound(700);
 ```
 
-## الخطوة 5: احفظ المستند
+## Passaggio 5: salvare il documento
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Infine, salva il documento nella directory specificata utilizzando il file`Save` metodo del`Document` oggetto.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 ```
 
-هذا يكمل تنفيذ تعريف خصائص المحور XY في مخطط باستخدام Aspose.Words for .NET.
+Questo completa l'implementazione della definizione delle proprietà dell'asse XY in un grafico utilizzando Aspose.Words per .NET.
 
-### مثال على شفرة المصدر لـ Define XYAxis Properties باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per definire le proprietà XYAxis utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// إدراج الرسم البياني
+	// Inserisci grafico
 	Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 	Chart chart = shape.Chart;
 	chart.Series.Clear();
@@ -110,10 +110,10 @@ doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 		new double[] { 640, 320, 280, 120, 150 });
 	ChartAxis xAxis = chart.AxisX;
 	ChartAxis yAxis = chart.AxisY;
-	// قم بتغيير المحور X ليكون فئة بدلاً من التاريخ ، لذلك سيتم وضع جميع النقاط بفاصل زمني متساوي على المحور X.
+	// Cambia l'asse X in categoria anziché in data, quindi tutti i punti verranno inseriti con uguale intervallo sull'asse X.
 	xAxis.CategoryType = AxisCategoryType.Category;
 	xAxis.Crosses = AxisCrosses.Custom;
-	xAxis.CrossesAt = 3; // تقاس بوحدات عرض المحور ص (مئات).
+	xAxis.CrossesAt = 3; // Misurato in unità di visualizzazione dell'asse Y (centinaia).
 	xAxis.ReverseOrder = true;
 	xAxis.MajorTickMark = AxisTickMark.Cross;
 	xAxis.MinorTickMark = AxisTickMark.Outside;

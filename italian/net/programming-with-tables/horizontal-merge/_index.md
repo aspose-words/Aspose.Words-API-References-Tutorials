@@ -1,35 +1,35 @@
 ---
-title: دمج أفقي
-linktitle: دمج أفقي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية دمج الخلايا أفقيًا في جدول Word باستخدام Aspose.Words for .NET.
+title: Unione orizzontale
+linktitle: Unione orizzontale
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come unire orizzontalmente le celle in una tabella di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/horizontal-merge/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية دمج الخلايا أفقيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من دمج الخلايا أفقيًا في جداول Word برمجيًا.
+In questo tutorial impareremo come unire orizzontalmente le celle in una tabella in un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di unire le celle orizzontalmente nelle tabelle di Word a livello di programmazione.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Passaggio 1: impostazione del progetto
+1. Avvia Visual Studio e crea un nuovo progetto C#.
+2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع الجدول والخلايا ، نحتاج إلى إنشاء مستند جديد وتهيئة منشئ المستندات. اتبع هذه الخطوات:
+## Passaggio 2: creazione del documento e inizializzazione del generatore di documenti
+Per iniziare a lavorare con la tabella e le celle, dobbiamo creare un nuovo documento e inizializzare il generatore di documenti. Segui questi passi:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وتهيئة منشئ المستند
+// Creare il documento e inizializzare il generatore di documenti
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti.
 
-## الخطوة 3: بناء الجدول مع الدمج الأفقي للخلايا
-بعد ذلك ، سنبني الجدول ونطبق دمج الخلايا الأفقي باستخدام الخصائص التي توفرها Aspose.Words لـ .NET. استخدم الكود التالي:
+## Passaggio 3: creazione della tabella con l'unione orizzontale delle celle
+Successivamente, creeremo la tabella e applicheremo l'unione di celle orizzontali utilizzando le proprietà fornite da Aspose.Words per .NET. Usa il seguente codice:
 
 ```csharp
 builder. InsertCell();
@@ -37,7 +37,7 @@ builder.CellFormat.HorizontalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
 builder. InsertCell();
 builder.CellFormat.HorizontalMerge = CellMerge.Previous;
-// تم دمج هذه الخلية مع الخلية السابقة ويجب أن تكون فارغة.
+// Questa cella è unita alla precedente e dovrebbe essere vuota.
 builder. EndRow();
 
 builder. InsertCell();
@@ -49,10 +49,10 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- هنا نستخدم منشئ المستندات لبناء الجدول وتعيين خصائص الدمج الأفقي للخلية. نحن نستخدم ال`HorizontalMerge` ممتلكات`CellFormat` لتحديد نوع الدمج الأفقي المراد تطبيقه على كل خلية. استخدام`CellMerge.First` نقوم بدمج الخلية الأولى مع الأخرى التالية ، أثناء استخدام`CellMerge.Previous` نقوم بدمج الخلية الحالية مع الخلية السابقة.`CellMerge.None` يشير إلى أنه لا ينبغي دمج الخلية.
+ Qui usiamo il generatore di documenti per costruire la tabella e impostare le proprietà di unione orizzontale delle celle. Noi usiamo il`HorizontalMerge` proprietà del`CellFormat` oggetto per specificare il tipo di unione orizzontale da applicare a ciascuna cella. Usando`CellMerge.First` uniamo la prima cella con quella successiva, durante l'utilizzo`CellMerge.Previous` uniamo la cella corrente con la cella precedente.`CellMerge.None` indica che la cella non deve essere unita.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع دمج الخلايا أفقيًا. استخدم الكود التالي:
+## Passaggio 4: salvare il documento modificato
+Infine, dobbiamo salvare il documento modificato con le celle unite orizzontalmente. Usa il seguente codice:
 
 ```csharp
 doc.Save(data
@@ -60,12 +60,12 @@ doc.Save(data
 Dir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Assicurati di specificare il percorso e il nome file corretti per il documento di output.
 
-### عينة من التعليمات البرمجية المصدر للدمج الأفقي باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per l'unione orizzontale utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -74,7 +74,7 @@ Dir + "WorkingWithTables.HorizontalMerge.docx");
 	builder.CellFormat.HorizontalMerge = CellMerge.First;
 	builder.Write("Text in merged cells.");
 	builder.InsertCell();
-	// تم دمج هذه الخلية مع الخلية السابقة ويجب أن تكون فارغة.
+	// Questa cella è unita alla precedente e dovrebbe essere vuota.
 	builder.CellFormat.HorizontalMerge = CellMerge.Previous;
 	builder.EndRow();
 	builder.InsertCell();
@@ -87,5 +87,5 @@ Dir + "WorkingWithTables.HorizontalMerge.docx");
 	doc.Save(dataDir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية دمج الخلايا أفقيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تطبيق دمج الخلايا الأفقية في جداول Word برمجيًا. تتيح لك هذه الميزة إنشاء تخطيطات جدول أكثر تعقيدًا وتنظيم بياناتك بشكل أفضل.
+## Conclusione
+In questo tutorial, abbiamo imparato come unire orizzontalmente le celle in una tabella in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, è possibile applicare l'unione di celle orizzontali nelle tabelle di Word a livello di programmazione. Questa funzione ti consente di creare layout di tabella più complessi e di organizzare meglio i tuoi dati.

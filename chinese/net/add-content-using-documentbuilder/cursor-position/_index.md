@@ -1,44 +1,44 @@
 ---
-title: موضع المؤشر
-linktitle: موضع المؤشر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد موضع المؤشر في مستند Word باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: 光标位置
+linktitle: 光标位置
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 分步指南检索 Word 文档中的光标位置。
 type: docs
 weight: 10
 url: /zh/net/add-content-using-documentbuilder/cursor-position/
 ---
 
-في هذا المثال خطوة بخطوة ، ستتعرف على موضع المؤشر في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من استرداد العقدة والفقرة الحالية حيث يتم وضع المؤشر في المستند.
+在这个循序渐进的示例中，您将使用 Aspose.Words for .NET 了解 Word 文档中的光标位置。我们将指导您完成整个过程，并为您提供必要的 C# 代码片段。在本指南结束时，您将能够检索光标在文档中所在的当前节点和段落。
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## 先决条件
+在我们开始之前，请确保您具备以下先决条件：
+- Aspose.Words for .NET 库安装在您的系统上。
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 第 1 步：创建新文档和 DocumentBuilder
+首先，使用 Document 类创建一个新文档并初始化一个 DocumentBuilder 对象：
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: الوصول إلى العقدة الحالية والفقرة
-بعد ذلك ، استرجع العقدة والفقرة الحالية حيث تم وضع المؤشر. يمكن تحقيق ذلك باستخدام خصائص CurrentNode و CurrentParagraph لفئة DocumentBuilder:
+## 第 2 步：访问当前节点和段落
+接下来，检索光标所在的当前节点和段落。这可以使用 DocumentBuilder 类的 CurrentNode 和 CurrentParagraph 属性来实现：
 
 ```csharp
 Node curNode = builder.CurrentNode;
 Paragraph curParagraph = builder.CurrentParagraph;
 ```
 
-## الخطوة 3: استرداد معلومات موضع المؤشر
-الآن ، يمكنك استرداد المعلومات حول موضع المؤشر. في مقتطف الكود التالي ، نطبع نص الفقرة الحالية:
+## 第 3 步：检索光标位置信息
+现在，您可以检索有关光标位置的信息。在下面的代码片段中，我们打印当前段落的文本：
 
 ```csharp
 Console.WriteLine("\nCursor move to paragraph: " + curParagraph.GetText());
 ```
 
-### مثال رمز مصدر لموقع المؤشر باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لفهم موضع المؤشر باستخدام Aspose.Words for .NET:
+### 使用 Aspose.Words for .NET 的光标位置示例源代码
+下面是使用 Aspose.Words for .NET 理解光标位置的完整源代码：
 
 ```csharp
 Document doc = new Document();
@@ -50,8 +50,8 @@ Paragraph curParagraph = builder.CurrentParagraph;
 Console.WriteLine("\nCursor move to paragraph: " + curParagraph.GetText());
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية التعامل مع موضع المؤشر في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن استرداد العقدة والفقرة الحالية حيث يتم وضع المؤشر في المستند.
+## 结论
+恭喜！您已经成功学习了如何使用 Aspose.Words for .NET 处理 Word 文档中的光标位置。按照分步指南并利用提供的源代码，您现在可以检索文档中光标所在的当前节点和段落。
 
-يعد فهم موضع المؤشر مفيدًا للعديد من السيناريوهات ، مثل معالجة محتوى المستند استنادًا إلى موقع المؤشر أو تنفيذ ميزات التحرير المخصصة.
+了解光标位置对于各种场景都很有用，例如根据光标位置操作文档内容或实现自定义编辑功能。
 

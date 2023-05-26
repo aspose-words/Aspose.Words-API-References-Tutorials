@@ -1,31 +1,31 @@
 ---
 title: Ooxml 合规性 Iso 29500_2008_Strict
 linktitle: Ooxml 合规性 Iso 29500_2008_Strict
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ضمان الامتثال الصارم لـ Ooxml Iso 29500_2008_Strict عند حفظ المستندات باستخدام Aspose.Words for .NET.
+second_title: Aspose.Words for .NET API 参考
+description: 了解在使用 Aspose.Words for .NET 保存文档时如何确保 Ooxml Iso 29500_2008_Strict 合规性。
 type: docs
 weight: 10
 url: /zh/net/programming-with-ooxmlsaveoptions/ooxml-compliance-iso-29500_2008_strict/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف كود المصدر C # المقدم لضمان الامتثال الصارم لـ Ooxml Iso 29500_2008_Strict عند حفظ مستند باستخدام Aspose.Words for .NET. تضمن هذه الميزة أن المستند الذي تم إنشاؤه يتوافق مع مواصفات ISO 29500_2008_Strict.
+在本教程中，我们将探索提供的 C# 源代码，以确保在使用 Aspose.Words for .NET 保存文档时确保 Ooxml Iso 29500_2008_Strict 合规性。此功能可确保生成的文档符合 ISO 29500_2008_Strict 规范。
 
-## الخطوة الأولى: تهيئة البيئة
+## 第 1 步：设置环境
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+在您开始之前，请确保您已经使用 Aspose.Words for .NET 设置了您的开发环境。确保您已经添加了必要的引用并导入了适当的命名空间。
 
-## الخطوة الثانية: تحميل المستند
+## 第 2 步：装入文档
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+在此步骤中，我们使用`Document`方法并将路径传递给要加载的 DOCX 文件。
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي لـ OOXML
+## 第 3 步：配置 OOXML 备份选项
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
@@ -33,22 +33,22 @@ doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
- في هذه الخطوة ، نقوم بتهيئة خيارات حفظ OOXML باستخدام امتداد`OptimizeFor` و`OoxmlSaveOptions`طُرق. نقوم بتحسين توافق المستندات لإصدار Word 2016 باستخدام`OptimizeFor` وتعيين الامتثال إلى`Iso29500_2008_Strict` استخدام`Compliance`.
+在此步骤中，我们使用`OptimizeFor`和`OoxmlSaveOptions`方法。我们使用 Word 2016 版本优化文档兼容性`OptimizeFor`并将合规性设置为`Iso29500_2008_Strict`使用`Compliance`.
 
-## الخطوة 4: حفظ المستند باستخدام Ooxml Iso 29500_2008_Strict الامتثال
+## 第四步：保存文件Ooxml Iso 29500_2008_严格遵守
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ المستند باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج بامتداد`.docx` بالإضافة إلى خيارات الحفظ المحددة.
+在这最后一步中，我们使用`Save`方法并将路径传递给输出文件`.docx`扩展名，以及指定的保存选项。
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لضمان الامتثال الصارم لـ Ooxml Iso 29500_2008_Strict عند حفظ مستند. سيتم حفظ الملف الناتج في الدليل المحدد بالاسم "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx".
+现在您可以运行源代码以确保在保存文档时 Ooxml Iso 29500_2008_Strict 合规性。生成的文件将保存在指定目录中，名称为“WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx”。
 
-### نموذج كود المصدر لـ Ooxml Compliance Iso 29500_ 2008_ Strict using Aspose.Words for .NET 
+### Ooxml Compliance Iso 29500 的示例源代码_ 2008_ Strict using Aspose.Words for .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -62,12 +62,12 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Str
         
 ```
 
-## خاتمة
+## 结论
 
-في هذا البرنامج التعليمي ، اكتشفنا ميزة الامتثال Ooxml Iso 29500_2008_Strict عند حفظ مستند باستخدام Aspose.Words for .NET. من خلال تحديد التوافق الصارم مع Iso29500_2008_Strict مع خيارات حفظ Ooxml ، فإننا نضمن أن المستند الذي تم إنشاؤه يفي بمعايير ISO 29500_2008_Strict.
+在本教程中，我们探索了使用 Aspose.Words for .NET 保存文档时的 Ooxml Iso 29500_2008_Strict 合规性功能。通过指定 Iso29500_2008_Strict 符合 Ooxml 保存选项，我们确保生成的文档符合 ISO 29500_2008_Strict 标准。
 
-يضمن الامتثال الصارم Ooxml Iso 29500_2008_Strict توافقًا أفضل مع الإصدارات الأحدث من Microsoft Word ، مما يضمن الحفاظ على تنسيق المستندات وأنماطها ووظائفها. هذا مهم بشكل خاص عند تبادل المستندات مع مستخدمين آخرين أو عند أرشفة طويلة المدى.
+Ooxml Iso 29500_2008_Strict 合规性可确保与较新版本的 Microsoft Word 更好地兼容，从而确保保留文档格式、样式和功能。这在与其他用户交换文档或长期存档时尤为重要。
 
-يجعل Aspose.Words for .NET من السهل ضمان الامتثال الصارم لـ Ooxml Iso 29500_2008_Strict من خلال توفير خيارات نسخ احتياطي مرنة وفعالة. يمكنك دمج هذه الوظيفة في مشاريعك للتأكد من أن المستندات التي تم إنشاؤها تفي بأحدث المعايير.
+Aspose.Words for .NET 通过提供灵活而强大的备份选项，轻松确保 Ooxml Iso 29500_2008_Strict 合规性。您可以将此功能集成到您的项目中，以确保生成的文档符合最新标准。
 
-لا تتردد في استكشاف الميزات الأخرى التي تقدمها Aspose.Words for .NET لتحسين معالجة المستندات وتحسين سير عملك.
+随意探索 Aspose.Words for .NET 提供的其他功能，以改进您的文档处理并优化您的工作流程。

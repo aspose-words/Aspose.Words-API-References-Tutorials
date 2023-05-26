@@ -1,38 +1,38 @@
 ---
-title: احتواء تلقائي لعرض الصفحة
-linktitle: احتواء تلقائي لعرض الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ملاءمة جدول تلقائيًا لعرض الصفحة في مستند Word باستخدام Aspose.Words for .NET.
+title: Sayfa Genişliğine Otomatik Sığdır
+linktitle: Sayfa Genişliğine Otomatik Sığdır
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde tabloyu sayfa genişliğine otomatik sığdırmayı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/auto-fit-to-page-width/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words لـ .NET لملاءمة جدول تلقائيًا لعرض الصفحة في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من معالجة الجداول في مستندات Word برمجيًا.
+Bu eğitimde, bir Word belgesinde bir tabloyu sayfa genişliğine otomatik olarak sığdırmak için Aspose.Words for .NET'i nasıl kullanacağımızı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerindeki tabloları programlı olarak değiştirebileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة 2: إنشاء وتكوين المستند
-لبدء العمل مع الجدول ، نحتاج إلى إنشاء مستند وتكوين منشئ المستندات. اتبع هذه الخطوات:
+## 2. Adım: Belgeyi Oluşturma ve Yapılandırma
+Tabloyla çalışmaya başlamak için bir belge oluşturmamız ve belge oluşturucuyu yapılandırmamız gerekiyor. Bu adımları takip et:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بإنشاء المستند ومُنشئ المستند
+//Belgeyi ve belge oluşturucuyu oluşturun
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة 3: إدخال الجدول وتكوينه
-بعد ذلك ، سنقوم بإدراج جدول في المستند بعرض يشغل نصف عرض الصفحة. استخدم الكود التالي:
+## 3. Adım: Tabloyu Ekleme ve Yapılandırma
+Ardından, belgeye, sayfanın genişliğinin yarısını kaplayan bir genişliğe sahip bir tablo ekleyeceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
-// أدخل الجدول وقم بتكوين عرضه
+// Tabloyu ekleyin ve genişliğini yapılandırın
 Table table = builder. StartTable();
 builder. InsertCell();
 table. PreferredWidth = PreferredWidth. FromPercent(50);
@@ -43,27 +43,27 @@ builder. InsertCell();
 builder.Writeln("Cell #3");
 ```
 
-هنا نستخدم أداة إنشاء المستندات لبدء إنشاء الجدول وإدراج الخلايا وتعيين العرض المفضل للجدول على 50٪ من عرض الصفحة. ثم نضيف نصًا في كل خلية.
+Burada tabloyu oluşturmaya başlamak, hücreleri eklemek ve tablonun tercih edilen genişliğini sayfa genişliğinin %50'si olarak ayarlamak için belge oluşturucuyu kullanıyoruz. Sonra her hücreye metin ekliyoruz.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تعديل الجدول حسب عرض الصفحة. استخدم الكود التالي:
+## 4. Adım: Değiştirilen belgeyi kaydetme
+Son olarak, değiştirilen belgeyi tablonun sayfa genişliğine göre ayarlanmış olarak kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
-// احفظ المستند المعدل
+// Değiştirilen belgeyi kaydet
 doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
   
-### عينة من التعليمات البرمجية المصدر لـ Auto Fit To Page Width باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Sayfa Genişliğine Otomatik Sığdır için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// قم بإدراج جدول بعرض يشغل نصف عرض الصفحة.
+	// Sayfa genişliğinin yarısını kaplayan genişliğe sahip bir tablo ekleyin.
 	Table table = builder.StartTable();
 	builder.InsertCell();
 	table.PreferredWidth = PreferredWidth.FromPercent(50);
@@ -75,5 +75,5 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 	doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية ملاءمة جدول لعرض الصفحة تلقائيًا في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك معالجة الجداول في مستندات Word برمجيًا. تتيح لك هذه الميزة تكييف عرض الجدول ديناميكيًا وفقًا للصفحة ، وبالتالي تقديم مستند احترافي وجذاب بصريًا.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde bir tabloyu sayfa genişliğine otomatik olarak sığdırmayı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizdeki tabloları programlı olarak değiştirebilirsiniz. Bu özellik, tablonun genişliğini sayfaya göre dinamik olarak uyarlamanıza olanak tanır, böylece profesyonel ve görsel olarak çekici bir belge sunar.

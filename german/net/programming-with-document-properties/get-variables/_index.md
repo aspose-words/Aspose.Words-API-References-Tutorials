@@ -1,34 +1,34 @@
 ---
-title: احصل على المتغيرات
-linktitle: احصل على المتغيرات
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لاسترداد متغيرات المستند باستخدام Aspose.Words for .NET.
+title: Variablen abrufen
+linktitle: Variablen abrufen
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Abrufen von Dokumentvariablen mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-document-properties/get-variables/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لاسترداد المتغيرات من مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة الوصول إلى المتغيرات المحددة في المستند.
+In diesem Tutorial führen wir Sie durch den C#-Quellcode, um Variablen aus einem Dokument mit Aspose.Words für .NET abzurufen. Mit dieser Funktion können Sie auf in einem Dokument definierte Variablen zugreifen.
 
-## الخطوة 1: إعداد المشروع
+## Schritt 1: Projekteinrichtung
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Aspose.Words for .NET-Bibliothek verwiesen wird.
 
-## الخطوة الثانية: تحميل المستند
+## Schritt 2: Laden des Dokuments
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد استرداد المتغيرات منه. استخدم الكود التالي لتحميل المستند:
+In diesem Schritt laden wir das Word-Dokument, aus dem wir die Variablen abrufen möchten. Verwenden Sie den folgenden Code, um das Dokument zu laden:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Ersetzen`"YOUR DOCUMENTS DIRECTORY"` mit dem tatsächlichen Pfad des Verzeichnisses, in dem sich Ihr Dokument befindet.
 
-## الخطوة 3: استرجاع المتغيرات
+## Schritt 3: Variablen abrufen
 
-الآن سنقوم باسترداد المتغيرات المحددة في المستند. استخدم الكود التالي:
+Jetzt rufen wir die im Dokument definierten Variablen ab. Verwenden Sie den folgenden Code:
 
 ```csharp
 string variables = "";
@@ -49,13 +49,13 @@ foreach(KeyValuePair<string, string> entry in doc.Variables)
 Console.WriteLine("\nThe document contains the following variables:\n" + variables);
 ```
 
-يتكرر هذا الرمز فوق كل زوج من القيم الرئيسية في متغيرات المستند ويسترجع اسم وقيمة كل متغير. ثم يتم تسلسل المتغيرات لعرض المعلومات الخاصة بكل متغير.
+Dieser Code durchläuft jedes Schlüssel-Wert-Paar in den Dokumentvariablen und ruft den Namen und Wert jeder Variablen ab. Die Variablen werden dann verkettet, um die Informationen für jede Variable anzuzeigen.
 
-### مثال على شفرة المصدر للحصول على المتغيرات باستخدام Aspose.Words for .NET
+### Beispielquellcode für Get Variables mit Aspose.Words für .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 	
@@ -79,6 +79,6 @@ Console.WriteLine("\nThe document contains the following variables:\n" + variabl
 
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Stellen Sie sicher, dass Sie den richtigen Dokumentpfad angeben`dataDir` Variable.
 
-لقد تعلمت الآن كيفية استرداد المتغيرات من مستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك الوصول بسهولة إلى المتغيرات وعرضها من المستندات الخاصة بك.
+Sie haben jetzt gelernt, wie Sie mit Aspose.Words für .NET Variablen aus einem Dokument abrufen. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie problemlos auf Variablen in Ihren eigenen Dokumenten zugreifen und diese anzeigen.

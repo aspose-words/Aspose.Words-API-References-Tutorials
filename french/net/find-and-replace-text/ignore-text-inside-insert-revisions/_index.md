@@ -1,31 +1,31 @@
 ---
-title: تجاهل النص داخل إدراج المراجعات
-linktitle: تجاهل النص داخل إدراج المراجعات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة "Ignore Text Inside Insert Revisions" في Aspose.Words for .NET للتعامل مع مراجعات الإدراج في مستندات Word.
+title: Ignorer le texte à l'intérieur des révisions d'insertion
+linktitle: Ignorer le texte à l'intérieur des révisions d'insertion
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à utiliser la fonctionnalité "Ignorer le texte à l'intérieur des révisions d'insertion" d'Aspose.Words pour .NET pour manipuler les révisions d'insertion dans les documents Word.
 type: docs
 weight: 10
 url: /fr/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Ignore Text Inside Insert Revisions في Aspose.Words مكتبة .NET. هذه الميزة مفيدة عندما نريد تجاهل النص داخل إدراج المراجعات أثناء معالجة المستندات.
+Dans cet article, nous allons explorer le code source C# ci-dessus pour comprendre comment utiliser la fonction Ignore Text Inside Insert Revisions dans la bibliothèque Aspose.Words pour .NET. Cette fonctionnalité est utile lorsque nous voulons ignorer le texte à l'intérieur des révisions d'insertion lors de la manipulation de documents.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Connaissance de base du langage C#.
+- Environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## Étape 1 : Création d'un nouveau document
 
- قبل أن نبدأ في معالجة النص داخل تنقيحات الإدخال ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Avant de commencer à manipuler du texte dans les révisions d'insertion, nous devons créer un nouveau document en utilisant Aspose.Words pour .NET. Cela peut être fait en instanciant un`Document` objet:
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل نصًا مع تتبع المراجعة
+## Étape 2 : Insérer du texte avec suivi des révisions
 
- بمجرد الحصول على مستند ، يمكننا إدراج نص مع تتبع المراجعة باستخدام ملف`DocumentBuilder` هدف. على سبيل المثال ، لإدراج النص "المُدرج" مع تتبع المراجعة ، يمكننا استخدام`StartTrackRevisions`, `Writeln` و`StopTrackRevisions` طُرق:
+ Une fois que nous avons un document, nous pouvons insérer du texte avec suivi des révisions à l'aide d'un`DocumentBuilder` objet. Par exemple, pour insérer le texte "Inséré" avec suivi des révisions, nous pouvons utiliser le`StartTrackRevisions`, `Writeln` et`StopTrackRevisions` méthodes :
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -34,50 +34,50 @@ builder.Writeln("Inserted");
 doc.StopTrackRevisions();
 ```
 
-## الخطوة 3: أدخل نصًا لم تتم مراجعته
+## Étape 3 : Insérer du texte non révisé
 
- بالإضافة إلى النص مع تتبع المراجعة ، يمكننا أيضًا إدراج نص غير منقح باستخدام امتداد`DocumentBuilder`هدف. على سبيل المثال ، لإدراج النص "نص" بدون مراجعة ، يمكننا استخدام`Write` طريقة:
+ En plus du texte avec suivi des révisions, nous pouvons également insérer du texte non révisé à l'aide de la`DocumentBuilder`objet. Par exemple, pour insérer le texte "Texte" sans révision, nous pouvons utiliser le`Write` méthode:
 
 ```csharp
 builder.Write("Text");
 ```
 
-## الخطوة 4: استخدام وظيفة Ignore Text Inside Insert Revisions
+## Étape 4 : Utilisation de la fonction Ignorer le texte à l'intérieur de l'insertion des révisions
 
- لتجاهل النص داخل إدراج المراجعات في العمليات اللاحقة ، يمكننا استخدام ملف`FindReplaceOptions` كائن وتعيين`IgnoreInserted` ملكية ل`true`:
+ Pour ignorer le texte à l'intérieur des révisions d'insertion lors des opérations suivantes, nous pouvons utiliser un`FindReplaceOptions` objet et définissez le`IgnoreInserted` propriété à`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
 ```
 
-## الخطوة 5: استخدام التعبيرات النمطية للبحث والاستبدال
+## Étape 5 : Utiliser des expressions régulières pour rechercher et remplacer
 
-لإجراء عمليات البحث والاستبدال على نص المستند ، سنستخدم التعبيرات العادية. في مثالنا ، سنبحث عن جميع تكرارات الحرف "e" ونستبدلها بعلامة النجمة "* ". سنستخدم .NET`Regex` فئة لهذا:
+Pour effectuer des opérations de recherche et de remplacement sur le texte du document, nous utiliserons des expressions régulières. Dans notre exemple, nous allons rechercher toutes les occurrences de la lettre "e" et les remplacer par un astérisque "* ". Nous utiliserons .NET`Regex` classe pour ça :
 
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## الخطوة 6: عرض إخراج المستند المعدل
+## Étape 6 : Affichage de la sortie du document modifié
 
-بعد تطبيق البحث والاستبدال ، يمكننا عرض المحتوى الذي تم تغييره في المستند باستخدام`GetText` طريقة:
+Après avoir appliqué la recherche et le remplacement, nous pouvons afficher le contenu modifié du document à l'aide de la`GetText` méthode:
 
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## الخطوة 7: تغيير الخيارات لتضمين إدراج المراجعات
+## Étape 7 : Modification des options pour inclure les révisions d'insertion
 
- إذا أردنا تضمين النص داخل مراجعات الإدراج في نتيجة الإخراج ، فيمكننا تغيير الخيارات لعدم تجاهل مراجعات الإدراج. لهذا سنقوم بتعيين`IgnoreInserted` ملكية ل`false`:
+ Si nous voulons inclure le texte à l'intérieur des révisions d'insertion dans le résultat de sortie, nous pouvons modifier les options pour ne pas ignorer les révisions d'insertion. Pour cela nous fixerons le`IgnoreInserted` propriété à`false`:
 
 ```csharp
 options.IgnoreInserted = false;
 ```
 
-## الخطوة 8: عرض المستند المعدل مع إدراج المراجعات
+## Étape 8 : Affichage du document modifié avec insertion des révisions
 
-بعد تغيير الخيارات ، يمكننا إجراء البحث والاستبدال مرة أخرى للحصول على النتيجة مع النص الموجود داخل المراجعات المدرجة:
+Après avoir modifié les options, nous pouvons effectuer à nouveau la recherche et le remplacement pour obtenir le résultat avec le texte à l'intérieur des révisions d'insertion incluses :
 
 ```csharp
 doc.Range.Replace(regex, "*", options);
@@ -85,9 +85,9 @@ Console.WriteLine(doc.GetText());
 ```
 
 
-### مثال على شفرة المصدر لـ Ignore Text Inside Insert Revisions باستخدام Aspose.Words for .NET
+### Exemple de code source pour Ignorer le texte à l'intérieur des révisions d'insertion à l'aide de Aspose.Words pour .NET
 
-فيما يلي نموذج الكود المصدري الكامل لتوضيح استخدام وظيفة Ignore Text Inside Insert Revisions مع Aspose.Words for .NET:
+Voici l'exemple de code source complet pour démontrer l'utilisation de la fonction Ignore Text Inside Insert Revisions avec Aspose.Words pour .NET :
 
 
 ```csharp
@@ -95,12 +95,12 @@ Console.WriteLine(doc.GetText());
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// أدخل النص مع تتبع المراجعات.
+	// Insérer du texte avec suivi des révisions.
 	doc.StartTrackRevisions("author", DateTime.Now);
 	builder.Writeln("Inserted");
 	doc.StopTrackRevisions();
 
-	// أدخل نصًا غير منقح.
+	// Insérer du texte non révisé.
 	builder.Write("Text");
 
 	FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -117,6 +117,6 @@ Console.WriteLine(doc.GetText());
    
 ```
 
-## خاتمة
+## Conclusion
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة Ignore Text Inside Insert Revisions في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند ، وإدخال نص مع مراجعات التعقب والنص غير المنقح ، واستخدام وظيفة Ignore Text Inside Insert Revisions ، وإجراء عمليات البحث واستبدال العمليات بالتعبيرات العادية ، وعرض المستند المعدل.
+Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonction Ignore Text Inside Insert Revisions dans Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour créer un document, insérer du texte avec suivi des révisions et du texte non révisé, utiliser la fonction Ignorer le texte à l'intérieur de l'insertion des révisions, effectuer des opérations de recherche et de remplacement avec des expressions régulières et afficher le document modifié.

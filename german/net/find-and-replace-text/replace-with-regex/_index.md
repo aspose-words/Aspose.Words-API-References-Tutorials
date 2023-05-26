@@ -1,69 +1,69 @@
 ---
-title: استبدل بـ Regex
-linktitle: استبدل بـ Regex
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إجراء استبدال النص المستند إلى التعبير العادي في مستند Word باستخدام Aspose.Words for .NET.
+title: Durch Regex ersetzen
+linktitle: Durch Regex ersetzen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine auf regulären Ausdrücken basierende Textersetzung in einem Word-Dokument durchführen.
 type: docs
 weight: 10
 url: /de/net/find-and-replace-text/replace-with-regex/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة "استبدال بـ Regex" في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إجراء استبدال النص بناءً على أنماط معينة محددة بواسطة تعبير عادي.
+In diesem Artikel untersuchen wir den obigen C#-Quellcode, um zu verstehen, wie die Funktion „Durch Regex ersetzen“ in der Bibliothek „Aspose.Words für .NET“ verwendet wird. Mit dieser Funktion können Sie Textersetzungen basierend auf bestimmten Mustern durchführen, die durch einen regulären Ausdruck definiert werden.
 
-## المتطلبات الأساسية
+## Voraussetzungen
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundkenntnisse der C#-Sprache.
+- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## Schritt 1: Erstellen eines neuen Dokuments
 
- قبل أن نبدأ في استخدام استبدال التعبير العادي ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Bevor wir mit der Ersetzung durch reguläre Ausdrücke beginnen, müssen wir mit Aspose.Words für .NET ein neues Dokument erstellen. Dies kann durch Instanziieren von a erfolgen`Document` Objekt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل النص في المستند
+## Schritt 2: Text in das Dokument einfügen
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نستخدم الامتداد`Writeln` طريقة ادخال عبارة "sad crazy bad":
+ Sobald wir ein Dokument haben, können wir mit a Text einfügen`DocumentBuilder` Objekt. In unserem Beispiel verwenden wir die`Writeln` Methode zum Einfügen der Phrase „traurig, verrückt, schlecht“:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("sad mad bad");
 ```
 
-## الخطوة 3: تكوين خيارات البحث والاستبدال
+## Schritt 3: Konfigurieren der Such- und Ersetzungsoptionen
 
- سنقوم الآن بتكوين خيارات البحث والاستبدال باستخدام ملف`FindReplaceOptions` هدف. في مثالنا ، نستخدم الخيارات الافتراضية:
+ Jetzt konfigurieren wir die Such- und Ersetzungsoptionen mithilfe von a`FindReplaceOptions` Objekt. In unserem Beispiel verwenden wir die Standardoptionen:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions();
 ```
 
-## الخطوة 4: استبدل بالتعبير العادي
+## Schritt 4: Durch regulären Ausdruck ersetzen
 
- نحن نستخدم ال`Range.Replace` طريقة لإجراء استبدال النص باستخدام تعبير عادي. في مثالنا ، نستخدم التعبير النمطي "[س|m]ad" to find the word秒 "Sad" and "mad" and replace them with the word "bad":
+ Wir benutzen daS`Range.Replace` Methode zum Durchführen einer Textersetzung mithilfe eines regulären Ausdrucks. In unserem Beispiel verwenden wir den regulären Ausdruck „[s|m]ad" to find the words "sad" and "mad" and replace them with the word "bad":
 
 ```csharp
 doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
 ```
 
-## الخطوة 5: حفظ المستند المعدل
+## Schritt 5: Speichern des geänderten Dokuments
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+ Abschließend speichern wir das geänderte Dokument mithilfe von in einem angegebenen Verzeichnis`Save` Methode:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 ```
 
-### مثال على شفرة المصدر لـ Replace With Regex باستخدام Aspose.Words for .NET
+### Beispielquellcode für „Ersetzen durch Regex“ mit Aspose.Words für .NET
 
-في ما يلي نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام استبدال التعبير العادي بـ Aspose.Words for .NET:
+Hier ist der vollständige Beispielquellcode, um die Verwendung der Ersetzung regulärer Ausdrücke mit Aspose.Words für .NET zu demonstrieren:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -78,6 +78,6 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
   
 ```
 
-## خاتمة
+## Abschluss
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام وظيفة "استبدال بـ Regex" في Aspose.Words لـ .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص وإجراء الاستبدال بتعبير عادي وحفظ المستند المعدل.
+In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Durch Regex ersetzen“ von Aspose.Words für .NET verwendet wird. Wir folgten einer Schritt-für-Schritt-Anleitung, um ein Dokument zu erstellen, Text einzufügen, die Ersetzung durch einen regulären Ausdruck durchzuführen und das geänderte Dokument zu speichern.

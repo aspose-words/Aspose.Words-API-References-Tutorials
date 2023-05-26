@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل نموذج مربع التحرير والسرد
-linktitle: أدخل حقل نموذج مربع التحرير والسرد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج مربع التحرير والسرد في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Infoga formulärfält för kombinationsruta
+linktitle: Infoga formulärfält för kombinationsruta
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar kombinationsrutaformulär i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج حقل نموذج مربع تحرير وسرد في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة حقول نموذج مربع التحرير والسرد بخصائص قابلة للتخصيص إلى مستنداتك.
+det här omfattande exemplet kommer du att lära dig hur du infogar ett formulärfält med kombinationsruta i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna lägga till kombinationsrutaformulär med anpassningsbara egenskaper till dina dokument.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Förutsättningar
+Innan vi börjar, se till att du har följande förutsättningar:
+- Aspose.Words för .NET-biblioteket installerat på ditt system.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Steg 1: Skapa ett nytt dokument och DocumentBuilder
+För att börja, skapa ett nytt dokument med klassen Document och initiera ett DocumentBuilder-objekt:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: تحديد عناصر صندوق الكومبو
-بعد ذلك ، حدد مصفوفة من العناصر لحقل نموذج مربع التحرير والسرد:
+## Steg 2: Definiera Combo Box-objekt
+Definiera sedan en uppsättning objekt för kombinationsrutans formulärfält:
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
 ```
 
-## الخطوة 3: أدخل حقل نموذج مربع تحرير وسرد
-استخدم الأسلوب InsertComboBox لفئة DocumentBuilder لإدراج حقل نموذج مربع تحرير وسرد. أدخل الاسم ومجموعة العناصر والفهرس المحدد كمعلمات:
+## Steg 3: Infoga ett formulärfält för kombinationsruta
+Använd metoden InsertComboBox i klassen DocumentBuilder för att infoga ett formulärfält med kombinationsruta. Ange namn, array av objekt och valt index som parametrar:
 
 ```csharp
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## الخطوة 4: احفظ المستند
-بعد إدراج حقل نموذج مربع التحرير والسرد ، احفظ المستند في ملف باستخدام طريقة Save لفئة المستند:
+## Steg 4: Spara dokumentet
+När du har infogat formulärfältet för kombinationsrutan, spara dokumentet i en fil med hjälp av Spara-metoden för klassen Document:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
 ```
 
-### مثال رمز مصدر لإدراج حقل نموذج مربع تحرير وسرد باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لإدخال حقل نموذج مربع التحرير والسرد باستخدام Aspose.Words for .NET:
+### Exempel på källkod för Insert Combo Box Form Field med Aspose.Words för .NET
+Här är den fullständiga källkoden för att infoga ett formulärfält med kombinationsruta med Aspose.Words för .NET:
 
 ```csharp
 
@@ -59,7 +59,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Kom ihåg att justera koden efter dina specifika krav och utöka den med ytterligare funktionalitet efter behov.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج حقل نموذج مربع تحرير وسرد في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك باستخدام حقول نموذج مربع التحرير والسرد التفاعلي.
+## Slutsats
+Grattis! Du har framgångsrikt lärt dig hur du infogar ett formulärfält med kombinationsruta i ett Word-dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide och använda den medföljande källkoden kan du nu förbättra dina dokument med interaktiva kombinationsrutaformulär.

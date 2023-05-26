@@ -1,42 +1,42 @@
 ---
-title: قاعدة افقية
-linktitle: قاعدة افقية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج قاعدة أفقية باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Yatay kural
+linktitle: Yatay kural
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile yatay bir kuralı nasıl ekleyeceğinizi adım adım öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/horizontal-rule/
 ---
 
-في هذا المثال ، سوف نوضح لك كيفية استخدام ميزة القاعدة الأفقية مع Aspose.Words for .NET. يتم استخدام Horizontal Rule لفصل أقسام المستند بشكل مرئي.
+Bu örnekte, yatay kural özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı göstereceğiz. Yatay Kural, bir belgenin bölümlerini görsel olarak ayırmak için kullanılır.
 
-## الخطوة 1: استخدام منشئ المستندات
+## 1. Adım: Bir belge oluşturucu kullanma
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+İlk olarak, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: إدخال قاعدة أفقية
+## 2. Adım: Yatay bir kural ekleme
 
- يمكننا إدخال قاعدة أفقية باستخدام`InsertHorizontalRule` طريقة منشئ الوثيقة.
+ kullanarak yatay bir kural ekleyebiliriz.`InsertHorizontalRule` belge üreteci yöntemi.
 
 ```csharp
 builder. InsertHorizontalRule();
 ```
 
-## عينة من التعليمات البرمجية المصدر للقاعدة الأفقية باستخدام Aspose.Words for .NET
+## Aspose.Words for .NET ile yatay kural için örnek kaynak kodu
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// أدخل القاعدة الأفقية.
+	// Yatay kural ekleyin.
 	builder.InsertHorizontalRule();
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة القاعدة الأفقية مع Aspose.Words for .NET.
+Tebrikler! Artık yatay kural özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.
 
 

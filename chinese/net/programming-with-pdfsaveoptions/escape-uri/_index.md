@@ -1,71 +1,71 @@
 ---
-title: الهروب أوري
-linktitle: الهروب أوري
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة للهروب من Uri باستخدام Aspose.Words for .NET.
+title: 转义 URI
+linktitle: 转义 URI
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 转义 Uri 的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/escape-uri/
 ---
 
-تقدم هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام ميزة Uri escape مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية إدراج الارتباطات التشعبية باستخدام Uri الهارب في مستند.
+本文提供了有关如何使用 Aspose.Words for .NET 的 Uri 转义功能的分步指南。我们将详细解释代码的每一部分。在本教程结束时，您将能够了解如何在文档中插入带有转义 Uri 的超链接。
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+在开始之前，请确保您已经在项目中安装并配置了 Aspose.Words for .NET 库。您可以在 Aspose 网站上找到库和安装说明。
 
-## الخطوة 1: تحديد دليل المستند
+## 第一步：定义文档目录
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+首先，您需要定义文档所在目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`使用文档目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بإنشاء مستند و DocumentBuilder
+## 第 2 步：创建一个文档和一个 DocumentBuilder
 
- بعد ذلك ، نحتاج إلى إنشاء ملف`Document` كائن و`DocumentBuilder` كائن لبناء الوثيقة.
+接下来，我们需要创建一个新的`Document`对象和一个`DocumentBuilder`构建文档的对象。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: أدخل الارتباطات التشعبية باستخدام مهرب Uri
+## 第 3 步：插入带有转义 Uri 的超链接
 
- استخدم ال`InsertHyperlink` طريقة`DocumentBuilder`كائن لإدراج ارتباطات تشعبية في المستند. يجب أن يتم الهروب من Uri باستخدام امتداد`Uri.EscapeUriString` وظيفة لتجنب أخطاء التنسيق.
+使用`InsertHyperlink`的方法`DocumentBuilder`对象将超链接插入到文档中。 Uri 必须使用`Uri.EscapeUriString`避免格式错误的功能。
 
 ```csharp
 builder.InsertHyperlink("Testlink",
-     Uri.EscapeUriString("https://www.google.com/search؟q=٪2Fthe٪20test ") ، false) ؛
+     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), false);
 builder. Writen();
-builder.InsertHyperlink(Uri.EscapeUriString("https://www.google.com/search؟q=٪2Fthe٪20test ") ،
-     Uri.EscapeUriString("https://www.google.com/search؟q=٪2Fthe٪20test ") ، false) ؛
+builder.InsertHyperlink(Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"),
+     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), false);
 ```
 
-## الخطوة 4: احفظ المستند كملف PDF
+## 第 4 步：将文档另存为 PDF
 
- أخيرًا ، يمكننا حفظ المستند كملف PDF باستخدام امتداد`Save` طريقة`Document` هدف. حدد اسم ملف الإخراج.
+最后，我们可以使用`Save`的方法`Document`目的。指定输出文件名。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 ```
 
-هذا كل شئ ! لقد نجحت في إدراج الارتباطات التشعبية مع Uri's المهرب في مستند باستخدام Aspose.Words for .NET.
+就这样 ！您已使用 Aspose.Words for .NET 在文档中成功插入带有转义 Uri 的超链接。
 
-### عينة من التعليمات البرمجية المصدر لـ Uri escaping مع Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 转义 Uri 的示例源代码
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	
 	builder.InsertHyperlink("Testlink", 
-		"https://www.google.com/search؟q=٪2Fthe٪20test "، false)؛
+		"https://www.google.com/search?q=%2Fthe%20test", false);
 	builder.Writeln();
-	builder.InsertHyperlink("https:// www.google.com/search؟q=٪2Fthe٪20test "،
-		"https://www.google.com/search؟q=٪2Fthe٪20test "، false)؛
+	builder.InsertHyperlink("https:// www.google.com/search?q=%2Fthe%20test",
+		"https://www.google.com/search?q=%2Fthe%20test", false);
 
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");    
   

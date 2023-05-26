@@ -1,18 +1,18 @@
 ---
-title: توقيع خط التوقيع الحالي
-linktitle: توقيع خط التوقيع الحالي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية توقيع سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET.
+title: Firma de la línea de firma existente
+linktitle: Firma de la línea de firma existente
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a firmar una línea de firma existente en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لاستخدام ميزة التوقيع لسطر التوقيع الحالي مع Aspose.Words for .NET. تتيح لك هذه الميزة التوقيع رقميًا على سطر توقيع موجود بالفعل في مستند Word. اتبع الخطوات التالية:
+En este tutorial, lo guiaremos a través de los pasos para usar la función de firma de una línea de firma existente con Aspose.Words para .NET. Esta característica le permite firmar digitalmente una línea de firma ya presente en un documento de Word. Siga los pasos a continuación:
 
-## الخطوة 1: تحميل المستند والوصول إلى سطر التوقيع
+## Paso 1: Cargar el documento y acceder a la línea de firma
 
-ابدأ بتحميل المستند الذي يحتوي على سطر التوقيع الموجود:
+Comience cargando el documento que contiene la línea de firma existente:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +21,9 @@ Document doc = new Document(dataDir + "Signature line.docx");
 SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## الخطوة 2: تعيين خيارات التوقيع
+## Paso 2: Configuración de las opciones de firma
 
-قم بإنشاء مثيل لفئة SignOptions وقم بتعيين خيارات التوقيع ، بما في ذلك معرف سطر التوقيع وصورة خط التوقيع:
+Cree una instancia de la clase SignOptions y configure las opciones de firma, incluido el ID de la línea de firma y la imagen de la línea de firma:
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -33,37 +33,37 @@ SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.em
 };
 ```
 
-تأكد من تحديد المسار الصحيح لصورة خط التوقيع.
+Asegúrese de especificar la ruta correcta a la imagen de la línea de la firma.
 
-## الخطوة الثالثة: تحميل الشهادة
+## Paso 3: Cargar el certificado
 
-ابدأ بتحميل شهادة التوقيع باستخدام فئة CertificateHolder:
+Comience cargando el certificado de firma usando la clase CertificateHolder:
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-تأكد من تحديد المسار الصحيح لشهادتك وكلمة المرور المرتبطة بها.
+Asegúrese de especificar la ruta correcta a su certificado y la contraseña asociada.
 
-## الخطوة 4: توقيع سطر التوقيع الحالي
+## Paso 4: Firmar la línea de firma existente
 
-استخدم فئة DigitalSignatureUtil لتوقيع سطر التوقيع الموجود:
+Use la clase DigitalSignatureUtil para firmar la línea de firma existente:
 
 ```csharp
 DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 	dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند المصدر والمستند الموقع والشهادة.
+Asegúrese de especificar las rutas correctas para el documento de origen, el documento firmado y el certificado.
 
-### مثال على شفرة المصدر لتوقيع سطر التوقيع الحالي باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para firmar una línea de firma existente usando Aspose.Words para .NET
 
-إليك كود المصدر الكامل لتوقيع سطر توقيع موجود مع Aspose.Words for .NET:
+Aquí está el código fuente completo para firmar una línea de firma existente con Aspose.Words para .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Signature line.docx");
 	
@@ -84,5 +84,5 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة توقيع سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET.
+Siguiendo estos pasos, puede firmar fácilmente una línea de firma existente en un documento de Word con Aspose.Words para .NET.
 

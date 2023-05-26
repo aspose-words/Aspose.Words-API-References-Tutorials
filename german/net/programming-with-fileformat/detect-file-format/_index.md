@@ -1,20 +1,20 @@
 ---
-title: كشف تنسيق الملف
-linktitle: كشف تنسيق الملف
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لاكتشاف تنسيق ملف المستند باستخدام Aspose.Words for .NET.
+title: Dateiformat erkennen
+linktitle: Dateiformat erkennen
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Erkennen des Dokumentdateiformats mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-fileformat/detect-file-format/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة الكشف عن تنسيق الملف مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية اكتشاف تنسيق ملفات المستندات المختلفة.
+Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zur Verwendung der Funktion zur Dateiformaterkennung mit Aspose.Words für .NET. Wir werden jeden Teil des Codes im Detail erklären. Am Ende dieses Tutorials werden Sie verstehen, wie Sie das Format verschiedener Dokumentdateien erkennen.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert und konfiguriert haben. Die Bibliothek und Installationsanweisungen finden Sie auf der Aspose-Website.
 
-## الخطوة 1: تحديد الدلائل
+## Schritt 1: Verzeichnisse definieren
 
- للبدء ، تحتاج إلى تحديد الدلائل حيث تريد تخزين الملفات وفقًا لتنسيقها. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك. نقوم بإنشاء الدلائل "المدعومة" و "غير معروف" و "المشفر" و "Pre97" إذا لم تكن موجودة بالفعل.
+ Zunächst müssen Sie die Verzeichnisse definieren, in denen Sie die Dateien entsprechend ihrem Format speichern möchten. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis. Wir erstellen die Verzeichnisse „Supported“, „Unknown“, „Encrypted“ und „Pre97“, sofern diese noch nicht vorhanden sind.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,7 +23,7 @@ string unknownDir = dataDir + "Unknown";
 string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
-// قم بإنشاء الدلائل إذا لم تكن موجودة بالفعل.
+// Erstellen Sie die Verzeichnisse, falls sie noch nicht vorhanden sind.
 if (Directory.Exists(supportedDir) == false)
 Directory.CreateDirectory(supportedDir);
 if (Directory.Exists(unknownDir) == false)
@@ -34,17 +34,17 @@ if (Directory.Exists(pre97Dir) == false)
 Directory.CreateDirectory(pre97Dir);
 ```
 
-## الخطوة الثانية: تصفح الملفات
+## Schritt 2: Dateien durchsuchen
 
- ثم نستخدم ملف`GetFiles` طريقة`Directory` class للحصول على قائمة الملفات في الدليل المحدد. نستخدم أيضًا ملف`Where` عبارة لاستبعاد ملف معين يسمى "تالف document.docx".
+ Dann verwenden wir die`GetFiles` Methode der`Directory` Klasse, um die Liste der Dateien im angegebenen Verzeichnis abzurufen. Wir verwenden auch a`Where` -Klausel, um eine bestimmte Datei mit dem Namen „Beschädigtes Dokument.docx“ auszuschließen.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
 ```
 
-## الخطوة 3: اكتشف تنسيق كل ملف
+## Schritt 3: Ermitteln Sie das Format jeder Datei
 
- نحن نمرّر كل ملف في القائمة ونستخدم ملف`DetectFileFormat` طريقة`FileFormatUtil` فئة للكشف عن تنسيق الملف. نعرض أيضًا نوع المستند المكتشف.
+ Wir durchlaufen jede Datei in der Liste und verwenden die`DetectFileFormat` Methode der`FileFormatUtil` Klasse, um das Format der Datei zu erkennen. Wir zeigen auch den erkannten Dokumenttyp an.
 
 ```csharp
 foreach (string fileName in fileList)
@@ -54,7 +54,7 @@ Console.Write(nameOnly);
 
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-// اعرض نوع الوثيقة
+// Zeigen Sie den Dokumenttyp an
 switch (info.LoadFormat)
 {
 LoadFormat.Doc box:
@@ -66,7 +66,7 @@ break;
 LoadFormat.Docx box:
 Console.WriteLine("\tDocument Office Open XML WordprocessingML without macros.");
 break;
-// ... أضف حالات لتنسيقات المستندات الأخرى المدعومة
+// ... Fälle für andere unterstützte Dokumentformate hinzufügen
 LoadFormat.Unknown case:
 Console.WriteLine("\tFormat in
 
@@ -97,20 +97,20 @@ break;
 }
 ```
 
-هذا كل شئ ! لقد نجحت في اكتشاف تنسيق ملفات مستندات مختلفة باستخدام Aspose.Words for .NET.
+Das ist alles ! Sie haben das Format verschiedener Dokumentdateien mit Aspose.Words für .NET erfolgreich erkannt.
 
-### مثال على شفرة المصدر لاكتشاف تنسيق الملف باستخدام Aspose.Words for .NET
+### Beispielquellcode zur Dateiformaterkennung mit Aspose.Words für .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	string supportedDir = dataDir + "Supported";
 	string unknownDir = dataDir + "Unknown";
 	string encryptedDir = dataDir + "Encrypted";
 	string pre97Dir = dataDir + "Pre97";
 
-	// قم بإنشاء الدلائل إذا لم تكن موجودة بالفعل.
+	// Erstellen Sie die Verzeichnisse, falls sie noch nicht vorhanden sind.
 	if (Directory.Exists(supportedDir) == false)
 		Directory.CreateDirectory(supportedDir);
 	if (Directory.Exists(unknownDir) == false)
@@ -131,7 +131,7 @@ break;
 		
 		FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-		// اعرض نوع الوثيقة
+		// Zeigen Sie den Dokumenttyp an
 		switch (info.LoadFormat)
 		{
 			case LoadFormat.Doc:

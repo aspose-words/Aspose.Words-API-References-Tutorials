@@ -1,90 +1,90 @@
 ---
-title: تحديث تخطيط الصفحة
-linktitle: تحديث تخطيط الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديث تخطيط الصفحة عند الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Seitenlayout aktualisieren
+linktitle: Seitenlayout aktualisieren
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie das Seitenlayout beim Zusammenfügen und Anhängen von Word-Dokumenten mit Aspose.Words für .NET aktualisieren.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/update-page-layout/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة تحديث تخطيط الصفحة في Aspose.Words for .NET. تضمن هذه الميزة تحديث تخطيط الصفحة بشكل صحيح عند الانضمام إلى مستندات Word وإلحاقها.
+Dieses Tutorial führt Sie durch den Prozess der Verwendung der Funktion „Seitenlayout aktualisieren“ von Aspose.Words für .NET. Diese Funktion stellt sicher, dass das Seitenlayout beim Zusammenfügen und Anhängen von Word-Dokumenten korrekt aktualisiert wird.
 
-## المتطلبات الأساسية
+## Voraussetzungen
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words für .NET installiert. Sie können es von der Aspose-Website herunterladen oder über NuGet installieren.
+2. Visual Studio oder eine andere C#-Entwicklungsumgebung.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Schritt 1: Initialisieren Sie die Dokumentverzeichnisse
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir` Variable für den Pfad, in dem sich Ihre Dokumente befinden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Schritt 2: Laden Sie die Quell- und Zieldokumente
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Als nächstes müssen Sie die Quell- und Zieldokumente mit Aspose.Words laden`Document` Klasse. Aktualisieren Sie die Dateinamen im`Document` Konstruktor entsprechend Ihren Dokumentnamen.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: تحديث تخطيط الصفحة لمستند الوجهة
+## Schritt 3: Aktualisieren Sie das Seitenlayout für das Zieldokument
 
- للتأكد من تحديث تخطيط الصفحة بشكل صحيح قبل إلحاق المستند المصدر ، يمكنك استدعاء`UpdatePageLayout` الطريقة في المستند الوجهة.
+ Um sicherzustellen, dass das Seitenlayout korrekt aktualisiert wird, bevor das Quelldokument angehängt wird, können Sie das aufrufen`UpdatePageLayout` Methode für das Zieldokument.
 
 ```csharp
 dstDoc.UpdatePageLayout();
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بمستند الوجهة
+## Schritt 4: Hängen Sie das Quelldokument an das Zieldokument an
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Jetzt können Sie das Quelldokument mit an das Zieldokument anhängen`AppendDocument` Methode der`Document` Klasse. Der`ImportFormatMode.KeepSourceFormatting` Der Parameter stellt sicher, dass die Quellformatierung während des Anhängevorgangs erhalten bleibt.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: تحديث تخطيط الصفحة مرة أخرى
+## Schritt 5: Aktualisieren Sie das Seitenlayout erneut
 
- بعد إلحاق المستند المصدر ، تحتاج إلى استدعاء`UpdatePageLayout`على المستند الوجهة مرة أخرى للتأكد من أن أي تغييرات يتم إجراؤها بعد عملية الإلحاق تنعكس في الإخراج المقدم.
+ Nachdem Sie das Quelldokument angehängt haben, müssen Sie das aufrufen`UpdatePageLayout`Führen Sie die Methode erneut für das Zieldokument aus, um sicherzustellen, dass alle nach dem Anhängevorgang vorgenommenen Änderungen in der gerenderten Ausgabe widergespiegelt werden.
 
 ```csharp
 dstDoc.UpdatePageLayout();
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## Schritt 6: Speichern Sie das endgültige Dokument
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة تحديث تخطيط الصفحة باستخدام ملحق`Save` طريقة`Document` فصل.
+ Speichern Sie abschließend das zusammengeführte Dokument mit aktivierter Funktion „Seitenlayout aktualisieren“.`Save` Methode der`Document` Klasse.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 ```
 
-### مثال على شفرة المصدر لتحديث تخطيط الصفحة باستخدام Aspose.Words for .NET
+### Beispielquellcode für die Aktualisierung des Seitenlayouts mit Aspose.Words für .NET
 
-إليك شفرة المصدر الكاملة لميزة "تحديث تخطيط الصفحة" في C # باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Quellcode für die Funktion „Seitenlayout aktualisieren“ in C# mit Aspose.Words für .NET:
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// إذا تم تحويل المستند الوجهة إلى PDF ، أو صورة ، إلخ.
-	// أو يتم استدعاء UpdatePageLayout قبل المستند المصدر. مُلحق ،
-	// ثم أي تغييرات يتم إجراؤها بعد ذلك لن تنعكس في الإخراج المقدم
+	// Wenn das Zieldokument als PDF, Bild usw. gerendert wird.
+	// oder UpdatePageLayout wird vor dem Quelldokument aufgerufen. Ist beigefügt,
+	// dann werden alle danach vorgenommenen Änderungen nicht in der gerenderten Ausgabe widergespiegelt
 	dstDoc.UpdatePageLayout();
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	// لكي يتم تحديث التغييرات لتقديم الإخراج ، يجب استدعاء UpdatePageLayout مرة أخرى.
-	// إذا لم يتم الاتصال به مرة أخرى ، فلن يظهر المستند المُلحق في إخراج العرض التالي.
+	// Damit die Änderungen auf die gerenderte Ausgabe aktualisiert werden, muss UpdatePageLayout erneut aufgerufen werden.
+	// Wenn es nicht erneut aufgerufen wird, wird das angehängte Dokument nicht in der Ausgabe des nächsten Renderings angezeigt.
 	dstDoc.UpdatePageLayout();
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة تحديث تخطيط الصفحة باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع تحديث تخطيط الصفحة بشكل صحيح.
+Das ist es! Sie haben die Funktion „Seitenlayout aktualisieren“ mit Aspose.Words für .NET erfolgreich implementiert. Das endgültige Dokument enthält den zusammengeführten Inhalt mit korrekt aktualisiertem Seitenlayout.

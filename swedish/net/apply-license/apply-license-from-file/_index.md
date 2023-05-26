@@ -1,37 +1,37 @@
 ---
-title: تطبيق الترخيص من ملف
-linktitle: تطبيق الترخيص من ملف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق ترخيص من ملف باستخدام Aspose.Words for .NET.
+title: Tillämpa licens från fil
+linktitle: Tillämpa licens från fil
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ansöker om en licens från en fil med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/apply-license/apply-license-from-file/
 ---
 
-## مقدمة
-في هذا البرنامج التعليمي ، سنوجهك خلال عملية تطبيق ترخيص من ملف باستخدام مكتبة Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تتيح لك إنشاء مستندات Word وتعديلها وتحويلها برمجيًا. لإلغاء تأمين الوظائف الكاملة لـ Aspose.Words ، تحتاج إلى تطبيق ترخيص صالح. سنشرح كيفية تطبيق ترخيص بتحميله من ملف في C #.
+## Introduktion
+den här självstudien guidar vi dig genom processen att ansöka om en licens från en fil med Aspose.Words för .NET-biblioteket. Aspose.Words är ett kraftfullt dokumentbehandlingsbibliotek som låter dig skapa, ändra och konvertera Word-dokument programmatiskt. För att låsa upp alla funktioner i Aspose.Words måste du ansöka om en giltig licens. Vi kommer att visa hur man ansöker om en licens genom att ladda den från en fil i C#.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
-- ملف ترخيص صالح لـ Aspose.Words. 
+## Förutsättningar
+Innan vi börjar, se till att du har följande förutsättningar på plats:
+- Aspose.Words för .NET-biblioteket installerat på ditt system.
+- En giltig licensfil för Aspose.Words. 
 
-## الخطوة 1: استيراد Aspose.Words Namespace
-للبدء ، تحتاج إلى استيراد مساحة الاسم Aspose.Words في كود C # الخاص بك. توفر مساحة الاسم هذه جميع الفئات والطرق المطلوبة للعمل مع مستندات Word.
+## Steg 1: Importera Aspose.Words-namnområdet
+För att komma igång måste du importera Aspose.Words-namnrymden i din C#-kod. Detta namnutrymme tillhandahåller alla klasser och metoder som krävs för att arbeta med Word-dokument.
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 2: تهيئة كائن الترخيص
-بعد ذلك ، تحتاج إلى تهيئة كائن الترخيص ، والذي سيتم استخدامه لتعيين ترخيص Aspose.Words. أضف التعليمات البرمجية التالية لتهيئة كائن الترخيص:
+## Steg 2: Initiera licensobjektet
+Därefter måste du initiera License-objektet, som kommer att användas för att ställa in licensen för Aspose.Words. Lägg till följande kod för att initiera License-objektet:
 
 ```csharp
 License license = new License();
 ```
 
-## الخطوة 3: قم بتعيين الترخيص من ملف
-لتعيين الترخيص من ملف ، استخدم الأسلوب SetLicense لكائن الترخيص. قم بتوفير المسار لملف الترخيص الخاص بك كمعامل. تحاول هذه الطريقة تعيين الترخيص من عدة مواقع ذات صلة بالملف القابل للتنفيذ و Aspose.Words.dll.
+## Steg 3: Ställ in licensen från fil
+För att ställa in licensen från en fil, använd SetLicense-metoden för License-objektet. Ange sökvägen till din licensfil som parameter. Denna metod försöker ställa in licensen från flera platser i förhållande till den körbara filen och Aspose.Words.dll.
 
 ```csharp
 try
@@ -45,20 +45,20 @@ catch (Exception e)
 }
 ```
 
-## الخطوة 4: معالجة مجموعة الترخيص أو الخطأ
-بعد تعيين الترخيص ، يمكنك التعامل مع مجموعة الترخيص أو سيناريوهات الخطأ بناءً على متطلباتك. في مقتطف الشفرة أعلاه ، نعرض رسالة نجاح عندما يتم تعيين الترخيص بنجاح. إذا كان هناك خطأ ، فإننا نلتقط الاستثناء ونعرض رسالة خطأ.
+## Steg 4: Hantera licensuppsättning eller fel
+Efter att ha ställt in licensen kan du hantera licensuppsättningen eller felscenarier baserat på dina krav. I kodavsnittet ovan visar vi ett framgångsmeddelande när licensen har ställts in. Om det finns ett fel, fångar vi undantaget och visar ett felmeddelande.
 
-لقد نجحت الآن في تطبيق الترخيص من ملف باستخدام Aspose.Words for .NET. يمكنك متابعة مهام معالجة المستندات باستخدام الوظائف الكاملة للمكتبة.
+Nu har du framgångsrikt använt licensen från en fil med Aspose.Words för .NET. Du kan fortsätta med dina dokumentbearbetningsuppgifter med hjälp av bibliotekets fulla funktionalitet.
 
-### مثال التعليمات البرمجية المصدر لتطبيق الترخيص من ملف باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لتطبيق ترخيص من ملف باستخدام Aspose.Words for .NET:
+### Exempel på källkod för Apply License From File med Aspose.Words för .NET
+Här är den fullständiga källkoden för att tillämpa en licens från en fil med Aspose.Words för .NET:
 
 ```csharp
 License license = new License();
 
-//يحاول هذا السطر تعيين ترخيص من عدة مواقع ذات صلة بالملف القابل للتنفيذ و Aspose.Words.dll.
-// يمكنك أيضًا استخدام التحميل الزائد الإضافي لتحميل ترخيص من دفق ، وهذا مفيد ،
-// على سبيل المثال ، عندما يتم تخزين الترخيص كمورد مضمن.
+//Den här raden försöker ställa in en licens från flera platser i förhållande till den körbara filen och Aspose.Words.dll.
+// Du kan också använda den extra överbelastningen för att ladda en licens från en stream, detta är användbart,
+// till exempel när licensen lagras som en inbäddad resurs.
 try
 {
     license.SetLicense("Aspose.Words.lic");

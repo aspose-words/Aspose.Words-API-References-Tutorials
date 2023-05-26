@@ -1,23 +1,23 @@
 ---
-title: البرمجة مع الأنماط والموضوعات
-linktitle: البرمجة مع الأنماط والموضوعات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على أنماط الوصول وأنماط النسخ والحصول على خصائص النسق وتعيين خصائص النسق وإدراج فاصل النمط
+title: Programmation avec des styles et des thèmes
+linktitle: Programmation avec des styles et des thèmes
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent des styles d'accès, copient des styles, obtiennent des propriétés de thème, définissent des propriétés de thème et insèrent un séparateur de style
 type: docs
 weight: 1410
 url: /fr/net/programming-with-styles-and-themes/
 ---
-توفر Aspose.Words for .NET Tutorials on Programming with Styles and Themes موردًا ممتازًا لتعلم كيفية التعامل مع الأنماط والسمات في مستندات Word. تأخذك هذه البرامج التعليمية المفصلة خطوة بخطوة عبر جوانب مختلفة مثل إنشاء الأنماط وتطبيقها وتعديلها ، بالإضافة إلى استخدام السمات المحددة مسبقًا. ستتعلم أيضًا كيفية تخصيص الأنماط والسمات عن طريق تعديل الخصائص مثل الخط والحجم واللون والحدود والمزيد.
+Les didacticiels Aspose.Words pour .NET sur la programmation avec des styles et des thèmes fournissent une excellente ressource pour apprendre à travailler avec des styles et des thèmes dans des documents Word. Ces didacticiels détaillés vous guident pas à pas à travers divers aspects tels que la création, l'application et la modification de styles, ainsi que l'utilisation des thèmes prédéfinis. Vous apprendrez également à personnaliser les styles et les thèmes en modifiant des propriétés telles que la police, la taille, la couleur, les bordures, etc.
 
-باستخدام هذه البرامج التعليمية ، يمكنك فهم كيفية استخدام الأنماط بشكل فعال لتنسيق النص والفقرات والأقسام في المستند. ستتعلم أيضًا كيفية تطبيق السمات لمنح المستند مظهرًا متماسكًا واحترافيًا. بالإضافة إلى ذلك ، تغطي هذه البرامج التعليمية موضوعات متقدمة مثل إدارة الأنماط الموروثة ، واستخدام الأنماط المستندة إلى الشروط ، وتعديل الأنماط برمجيًا.
+Grâce à ces didacticiels, vous pouvez comprendre comment utiliser efficacement les styles pour mettre en forme le texte, les paragraphes et les sections de votre document. Vous apprendrez également à appliquer des thèmes pour donner à votre document un aspect cohérent et professionnel. De plus, ces didacticiels couvrent des sujets avancés tels que la gestion des styles hérités, l'utilisation de styles basés sur des conditions et la modification de styles par programmation.
 
-سواء كنت مبتدئًا أو مطورًا متمرسًا ، تزودك برامج Aspose.Words for .NET التعليمية حول البرمجة باستخدام الأنماط والسمات بالمعرفة والمهارات اللازمة لإنشاء مستندات Word جذابة ومنسقة جيدًا. استخدم هذه الموارد القيمة لإتقان فن التعامل مع الأنماط والسمات ، وإضفاء لمسة احترافية على مستنداتك.
+Que vous soyez un débutant ou un développeur expérimenté, les didacticiels Aspose.Words pour .NET sur la programmation avec des styles et des thèmes vous fournissent les connaissances et les compétences nécessaires pour créer des documents Word attrayants et bien formatés. Utilisez ces précieuses ressources pour maîtriser l'art de manipuler les styles et les thèmes et donner à vos documents une touche professionnelle.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [أنماط الوصول](./access-styles/) | تعرف على كيفية الوصول إلى أنماط المستندات باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل للتعامل مع أنماط المستندات الخاصة بك. |
-| [نسخ الأنماط](./copy-styles/) | تعرف على كيفية نسخ الأنماط بين المستندات باستخدام Aspose.Words for .NET. |
-| [احصل على خصائص النسق](./get-theme-properties/) | استكشف خصائص نسق المستند باستخدام Aspose.Words for .NET. تخصيص الأنماط والألوان للحصول على مظهر فريد. |
-| [تعيين خصائص الموضوع](./set-theme-properties/) | تعلم كيفية تخصيص مظهر مستنداتك عن طريق تغيير خصائص النسق باستخدام Aspose.Words for .NET. احصل على نتائج احترافية وجذابة. |
-| [إدراج فاصل النمط](./insert-style-separator/) | تعلم كيفية إنشاء مستندات بأنماط مخصصة وإدراج فواصل الأنماط لتنسيق دقيق واحترافي. |
+| [Styles d'accès](./access-styles/) | Apprenez à accéder aux styles de document avec Aspose.Words pour .NET. Tutoriel complet pour manipuler les styles de vos documents. |
+| [Copier les styles](./copy-styles/) | Apprenez à copier des styles entre des documents avec Aspose.Words pour .NET. |
+| [Obtenir les propriétés du thème](./get-theme-properties/) | Explorez les propriétés de thème d'un document avec Aspose.Words pour .NET. Personnalisez les styles et les couleurs pour un look unique. |
+| [Définir les propriétés du thème](./set-theme-properties/) | Apprenez à personnaliser l'apparence de vos documents en modifiant les propriétés du thème avec Aspose.Words pour .NET. Obtenez des résultats professionnels et attrayants. |
+| [Insérer un séparateur de style](./insert-style-separator/) | Apprenez à créer des documents avec des styles personnalisés et à insérer des séparateurs de style pour un formatage précis et professionnel. |

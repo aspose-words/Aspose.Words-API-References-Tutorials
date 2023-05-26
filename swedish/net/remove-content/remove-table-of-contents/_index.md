@@ -1,44 +1,44 @@
 ---
-title: قم بإزالة جدول المحتويات
-linktitle: قم بإزالة جدول المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة جدول المحتويات من مستند Word باستخدام Aspose.Words for .NET.
+title: Ta bort innehållsförteckning
+linktitle: Ta bort innehållsförteckning
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du tar bort innehållsförteckningen från ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/remove-content/remove-table-of-contents/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إزالة جدول المحتويات من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. قد يكون جدول المحتويات أحيانًا زائدًا عن الحاجة أو غير ضروري ، وسيساعدك هذا الرمز في إزالته بشكل فعال. سنقدم لك دليلًا تفصيليًا لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+I den här handledningen går vi igenom hur du tar bort innehållsförteckningen från ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Innehållsförteckningen kan ibland vara överflödig eller onödig, och den här koden hjälper dig att ta bort den effektivt. Vi kommer att tillhandahålla en steg-för-steg-guide som hjälper dig att förstå och implementera koden i ditt eget .NET-projekt.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على جدول محتويات تريد حذفه
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
+- Ett Word-dokument som innehåller en innehållsförteckning som du vill ta bort
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+ Först måste du ställa in katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فئة باستخدام`Load` طريقة.
+## Steg 2: Ladda upp dokumentet
+ Därefter kommer vi att ladda Word-dokumentet i en instans av`Document` klass med hjälp av`Load` metod.
 
 ```csharp
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## الخطوة 3: احذف جدول المحتويات
- لإزالة جدول المحتويات ، سنقوم بالمرور عبر نوع TOC (جدول المحتويات)`FieldStart` العقد في المستند. سنخزن هذه العقد حتى نتمكن من الوصول إليها بسرعة وإنشاء قائمة بالعقد لحذفها.
+## Steg 3: Ta bort innehållsförteckningen
+ För att ta bort innehållsförteckningen går vi igenom typen TOC (innehållsförteckning).`FieldStart` noder i dokumentet. Vi kommer att lagra dessa noder så att vi snabbt kan komma åt dem och skapa en lista med noder att ta bort.
 
 ```csharp
-// تخزين عقد FieldStart لحقول جدول المحتويات في المستند للوصول السريع.
+// Lagra FieldStart-noder för TOC-fält i dokumentet för snabb åtkomst.
 List<FieldStart> fieldStarts = new List<FieldStart>();
-// هذه قائمة لتخزين العقد الموجودة داخل جدول المحتويات المحدد. سيتم حذفها في نهاية هذه الطريقة.
+// Detta är en lista för att lagra noderna som finns i den angivna innehållsförteckningen. De kommer att raderas i slutet av denna metod.
 List<Node> nodeList = new List<Node>();
 
 foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
@@ -49,7 +49,7 @@ foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
      }
 }
 
-// تحقق من وجود فهرس جدول المحتويات المحدد.
+// Kontrollera om det angivna innehållsförteckningsindexet finns.
 if (index > fieldStarts.Count - 1)
      throw new ArgumentOutOfRangeException("TOC index is out of range");
 
@@ -58,12 +58,12 @@ bool isRemoving = true;
 Node currentNode = fieldStarts[index];
 while (isRemoving)
 {
-     // من الآمن تخزين هذه العقد وحذفها جميعًا في النهاية.
+     // Det är säkrare att lagra dessa noder och ta bort dem alla i slutet.
      nodeList.Add(currentNode);
      currentNode = currentNode.NextPreOrder(doc);
 
-     // عندما نواجه عقدة FieldEnd من النوع FieldTOC ،
-     // نعلم أننا وصلنا إلى نهاية جدول المحتويات الحالي ونتوقف هنا.
+     // När vi stöter på en FieldEnd-nod av typen FieldTOC,
+     // vi vet att vi är i slutet av nuvarande innehållsförteckning och vi slutar här.
      if (currentNode.NodeType == NodeType.FieldEnd)
      {
          FieldEnd fieldEnd = (FieldEnd)currentNode;
@@ -83,18 +83,18 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
 
-### عينة من التعليمات البرمجية المصدر لـ Remove Table Of Contents باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Ta bort innehållsförteckning med Aspose.Words för .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "your-document.docx");
 
-// قم بتخزين عقد FieldStart لحقول جدول المحتويات في المستند للوصول السريع.
+// Lagra FieldStart-noderna för innehållsförteckningsfält i dokumentet för snabb åtkomst.
 List<FieldStart> fieldStarts = new List<FieldStart>();
-// هذه قائمة لتخزين العقد الموجودة داخل جدول المحتويات المحدد. ستتم إزالتها في نهاية هذه الطريقة.
+// Detta är en lista för att lagra noderna som finns i den angivna innehållsförteckningen. De kommer att tas bort i slutet av denna metod.
 List<Node> nodeList = new List<Node>();
 
 foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
@@ -105,7 +105,7 @@ foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
 	}
 }
 
-// تأكد من وجود جدول المحتويات المحدد بواسطة الفهرس الذي تم تمريره.
+// Se till att innehållsförteckningen som anges av det godkända indexet finns.
 if (index > fieldStarts.Count - 1)
 	throw new ArgumentOutOfRangeException("TOC index is out of range");
 
@@ -114,12 +114,12 @@ bool isRemoving = true;
 Node currentNode = fieldStarts[index];
 while (isRemoving)
 {
-	// من الآمن تخزين هذه العقد وحذفها جميعًا مرة واحدة لاحقًا.
+	// Det är säkrare att lagra dessa noder och ta bort dem alla på en gång senare.
 	nodeList.Add(currentNode);
 	currentNode = currentNode.NextPreOrder(doc);
 
-	// بمجرد أن نواجه عقدة FieldEnd من النوع FieldTOC ،
-	// نعلم أننا وصلنا إلى نهاية جدول المحتويات الحالي ونتوقف هنا.
+	// När vi stöter på en FieldEnd-nod av typen FieldTOC,
+	// vi vet att vi är i slutet av nuvarande innehållsförteckning och slutar här.
 	if (currentNode.NodeType == NodeType.FieldEnd)
 	{
 		FieldEnd fieldEnd = (FieldEnd) currentNode;
@@ -137,5 +137,5 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
         
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، قدمنا دليلًا تفصيليًا لإزالة جدول المحتويات من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. باتباع التعليمات البرمجية والإرشادات المتوفرة ، يمكنك بسهولة التخلص من جدول المحتويات وتحسين تخطيط المستند. تذكر تعديل مسار الدليل وأسماء الملفات لتناسب احتياجاتك الخاصة.
+## Slutsats
+I den här handledningen presenterade vi en steg-för-steg-guide för att ta bort innehållsförteckningen från ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Genom att följa den medföljande koden och instruktionerna kan du enkelt ta bort innehållsförteckningen och förbättra layouten på ditt dokument. Kom ihåg att anpassa katalogsökvägen och filnamnen för att passa dina specifika behov.

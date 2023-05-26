@@ -1,35 +1,35 @@
 ---
-title: تنسيق رقم تسمية البيانات
-linktitle: تنسيق رقم تسمية البيانات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تنسيق عدد تسميات البيانات في مخطط باستخدام Aspose.Words for .NET. تخصيص تنسيقات الأرقام لتسميات البيانات بسهولة.
+title: 数据标签格式编号
+linktitle: 数据标签格式编号
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 格式化图表中数据标签的数量。轻松自定义数据标签的数字格式。
 type: docs
 weight: 10
 url: /zh/net/programming-with-charts/format-number-of-data-label/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتنسيق عدد تسميات البيانات في مخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وتخصيص تنسيق الأرقام لتسميات البيانات.
+本教程解释了如何使用 Aspose.Words for .NET 来格式化图表中数据标签的数量。提供的源代码演示了如何创建图表、添加系列数据以及自定义数据标签的数字格式。
 
-## الخطوة 1: قم بإعداد المشروع
+## 第 1 步：设置项目
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+确保您具有以下先决条件：
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- 安装了 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载或使用 NuGet 包管理器安装它。
+- 将保存输出文档的文档目录路径。
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 第 2 步：创建新文档并插入图表
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، أدخل مخططًا في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`في هذا المثال ، سنقوم بإدراج مخطط خطي.
+接下来，使用`InsertChart`的方法`DocumentBuilder`.在这个例子中，我们将插入一个折线图。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -37,9 +37,9 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## 第 3 步：将系列数据添加到图表
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف ثلاث فئات والقيم المقابلة لها.
+将系列数据添加到图表中。在此示例中，我们将添加三个类别及其对应的值。
 
 ```csharp
 chart.Series.Clear();
@@ -49,9 +49,9 @@ ChartSeries series1 = chart.Series.Add("Aspose Series 1",
 series1.HasDataLabels = true;
 ```
 
-## الخطوة 4: تخصيص تنسيق الأرقام لتسميات البيانات
+## 第四步：自定义数据标签的数字格式
 
- لتنسيق عدد تسميات البيانات ، قم بالوصول إلى`DataLabels` المجموعة المرتبطة بالسلسلة.
+要格式化数据标签的数量，请访问`DataLabels`与该系列相关的集合。
 
 ```csharp
 series1.DataLabels.ShowValue = true;
@@ -60,22 +60,22 @@ series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 ```
 
-في هذا المثال ، قمنا بتعيين تنسيقات أرقام مختلفة لكل تسمية بيانات. تم تنسيق تسمية البيانات الأولى كعملة ، والثانية كتاريخ ، والثالثة كنسبة مئوية.
+在这个例子中，我们为每个数据标签设置了不同的数字格式。第一个数据标签的格式为货币，第二个为日期，第三个为百分比。
 
-## الخطوة 5: احفظ المستند
+## 第 5 步：保存文档
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+最后，使用 将文件保存到指定目录`Save`的方法`Document`目的。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-هذا يكمل تنفيذ تنسيق عدد تسميات البيانات في مخطط باستخدام Aspose.Words for .NET.
+这样就完成了使用 Aspose.Words for .NET 格式化图表中数据标签数量的实现。
 
-### مثال على شفرة المصدر لتنسيق رقم تسمية البيانات باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的格式数据标签数量示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 	Chart chart = shape.Chart;
 	chart.Title.Text = "Data Labels With Different Number Format";
-	// حذف السلاسل التي تم إنشاؤها بشكل افتراضي.
+	//删除默认生成的系列。
 	chart.Series.Clear();
 	ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
 		new string[] { "Category 1", "Category 2", "Category 3" }, 
@@ -93,8 +93,8 @@ doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 	series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
-	// أو يمكنك تعيين كود التنسيق لربطه بخلية مصدر ،
-	// في هذه الحالة ، سيتم إعادة تعيين NumberFormat إلى عام وسيتم توريثه من خلية مصدر.
+	//或者您可以将格式代码设置为链接到源单元格，
+	//在这种情况下，NumberFormat 将重置为一般格式并从源单元格继承。
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```

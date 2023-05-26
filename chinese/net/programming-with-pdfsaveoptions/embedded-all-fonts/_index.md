@@ -1,66 +1,66 @@
 ---
-title: جميع الخطوط المضمنة
-linktitle: جميع الخطوط المضمنة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتضمين كل الخطوط في ملف PDF باستخدام Aspose.Words for .NET.
+title: 嵌入所有字体
+linktitle: 嵌入所有字体
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 将所有字体嵌入 PDF 的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة Embedded All Fonts في Aspose.Words for .NET. سنستعرض مقتطف الشفرة ونوضح كل جزء بالتفصيل. بنهاية هذا البرنامج التعليمي ، ستكون قادرًا على فهم كيفية تضمين جميع الخطوط في مستند وإنشاء ملف PDF مع الخطوط المضمنة باستخدام Aspose.Words for .NET.
+本文提供了有关如何使用 Aspose.Words for .NET 的嵌入式所有字体功能的分步指南。我们将遍历代码片段并详细解释每个部分。在本教程结束时，您将能够了解如何将所有字体嵌入到文档中，并使用 Aspose.Words for .NET 生成带有嵌入字体的 PDF。
 
-قبل أن نبدأ ، تأكد من تثبيت وإعداد مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+在我们开始之前，请确保您已经在您的项目中安装并设置了 Aspose.Words for .NET 库。您可以在 Aspose 网站上找到库和安装说明。
 
-## الخطوة 1: تحديد مسار دليل المستند
+## 第一步：定义文档目录路径
 
-للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد المستندات الخاصة بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+首先，您需要定义文档所在目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`使用文档目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## 第 2 步：装入文档
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يحمل اسم "Rendering.docx" ويقع في دليل المستند المحدد.
+接下来，我们需要加载要处理的文档。在此示例中，我们假设文档名为“Rendering.docx”并且位于指定的文档目录中。
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات حفظ PDF
+## 第 3 步：配置 PDF 保存选项
 
- لتضمين كل الخطوط في ملف PDF الناتج ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن مع`EmbedFullFonts` تعيين الخاصية على`true`. هذا يضمن أن كل الخطوط المستخدمة في الوثيقة متضمنة في ملف PDF الذي تم إنشاؤه.
+要在生成的 PDF 中嵌入所有字体，我们需要配置`PdfSaveOptions`对象与`EmbedFullFonts`属性设置为`true`.这可确保文档中使用的所有字体都包含在生成的 PDF 文件中。
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع الخطوط المضمنة
+## 第 4 步：将文档另存为带有嵌入字体的 PDF
 
- أخيرًا ، يمكننا حفظ المستند كملف PDF مع الخطوط المضمنة. حدد اسم ملف الإخراج ، و`saveOptions` كائن قمنا بتكوينه في الخطوة السابقة.
+最后，我们可以将文档另存为带有嵌入字体的 PDF 文件。指定输出文件名和`saveOptions`我们在上一步中配置的对象。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptions);
 ```
 
-هذا كل شيء! لقد نجحت في دمج جميع الخطوط في مستند وإنشاء ملف PDF مع الخطوط المضمنة باستخدام Aspose.Words for .NET.
+就是这样！您已成功将所有字体嵌入到文档中，并使用 Aspose.Words for .NET 生成了包含嵌入字体的 PDF。
 
-### مثال على شفرة المصدر لـ Embedded All Fonts باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的嵌入式所有字体的示例源代码
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// سيتم تضمين ملف PDF الناتج مع جميع الخطوط الموجودة في المستند.
+	//输出的 PDF 将嵌入文档中找到的所有字体。
 	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptions);
   
 ```
 
-## خاتمة
+## 结论
 
-في هذا البرنامج التعليمي ، قمنا بتغطية العملية خطوة بخطوة لاستخدام ميزة Embedded All Fonts في Aspose.Words for .NET. لقد تعلمنا كيفية تحميل مستند ، وتكوين خيارات حفظ PDF ، وحفظ المستند كملف PDF مع الخطوط المضمنة. باتباع هذا الدليل ، يمكنك التأكد من أن مستندات PDF الخاصة بك تحتوي على جميع الخطوط الضرورية المضمنة ، مما يوفر عرضًا متسقًا ودقيقًا عبر الأجهزة والأنظمة الأساسية المختلفة.
+在本教程中，我们介绍了使用 Aspose.Words for .NET 的嵌入式所有字体功能的分步过程。我们学习了如何加载文档、配置 PDF 保存选项以及将文档保存为带有嵌入字体的 PDF 文件。通过遵循本指南，您可以确保您的 PDF 文档嵌入了所有必要的字体，从而在不同的设备和平台上提供一致和准确的呈现。

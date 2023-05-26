@@ -1,29 +1,29 @@
 ---
-title: منشئ المستند إدراج إشارة مرجعية
-linktitle: منشئ المستند إدراج إشارة مرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الإشارات المرجعية في مستندات Word باستخدام DocumentBuilder في Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Document Builder Infoga bokmärke
+linktitle: Document Builder Infoga bokmärke
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar bokmärken i Word-dokument med DocumentBuilder i Aspose.Words för .NET. Steg-för-steg guide.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/document-builder-insert-bookmark/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج الإشارات المرجعية في مستند Word باستخدام فئة DocumentBuilder في Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إنشاء وإدارة الإشارات المرجعية داخل مستنداتك.
+det här omfattande exemplet kommer du att lära dig hur du infogar bokmärken i ett Word-dokument med klassen DocumentBuilder i Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna skapa och hantera bokmärken i dina dokument.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Förutsättningar
+Innan vi börjar, se till att du har följande förutsättningar:
+- Aspose.Words för .NET-biblioteket installerat på ditt system.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Steg 1: Skapa ett nytt dokument och DocumentBuilder
+För att börja, skapa ett nytt dokument med klassen Document och initiera ett DocumentBuilder-objekt:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل إشارة مرجعية
-بعد ذلك ، استخدم أساليب StartBookmark و EndBookmark لفئة DocumentBuilder لإدراج إشارة مرجعية في المستند. أدخل اسمًا فريدًا للإشارة المرجعية كمعامل:
+## Steg 2: Infoga ett bokmärke
+Använd sedan metoderna StartBookmark och EndBookmark i klassen DocumentBuilder för att infoga ett bokmärke i dokumentet. Ange ett unikt namn för bokmärket som en parameter:
 
 ```csharp
 builder.StartBookmark("FineBookmark");
@@ -31,15 +31,15 @@ builder.Writeln("This is just a fine bookmark.");
 builder.EndBookmark("FineBookmark");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الإشارة المرجعية ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Steg 3: Spara dokumentet
+När du har infogat bokmärket, spara dokumentet till en fil med hjälp av Spara-metoden för klassen Document:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
 ```
 
-### مثال رمز مصدر لـ DocumentBuilder إدراج إشارة مرجعية باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لإدخال إشارة مرجعية باستخدام فئة DocumentBuilder في Aspose.Words for .NET:
+### Exempel på källkod för DocumentBuilder Infoga bokmärke med Aspose.Words för .NET
+Här är den fullständiga källkoden för att infoga ett bokmärke med klassen DocumentBuilder i Aspose.Words för .NET:
 
 ```csharp
    
@@ -54,10 +54,10 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBoo
 	 
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج الإشارات المرجعية في مستند Word باستخدام فئة DocumentBuilder في Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إنشاء وإدارة الإشارات المرجعية داخل مستنداتك.
+## Slutsats
+Grattis! Du har framgångsrikt lärt dig hur du infogar bokmärken i ett Word-dokument med klassen DocumentBuilder i Aspose.Words för .NET. Genom att följa steg-för-steg-guiden och använda den medföljande källkoden kan du nu skapa och hantera bokmärken i dina dokument.
 
-تعد الإشارات المرجعية مفيدة لسيناريوهات متنوعة ، مثل التنقل عبر مستندات كبيرة ، أو الرجوع إلى أقسام معينة ، أو معالجة المحتوى برمجيًا داخل المناطق التي تم وضع إشارة مرجعية عليها.
+Bokmärken är användbara för olika scenarier, som att navigera genom stora dokument, hänvisa till specifika avsnitt eller programmatiskt manipulera innehåll inom bokmärkta områden.
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Kom ihåg att justera koden efter dina specifika krav och utöka den med ytterligare funktionalitet efter behov.
 

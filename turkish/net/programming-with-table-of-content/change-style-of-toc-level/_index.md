@@ -1,65 +1,65 @@
 ---
-title: تغيير نمط مستوى Toc
-linktitle: تغيير نمط مستوى Toc
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير نمط مستوى جدول المحتويات بسهولة في مستند Word باستخدام Aspose.Words for .NET.
+title: Toc Düzeyinin Stilini Değiştirme
+linktitle: Toc Düzeyinin Stilini Değiştirme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki içindekiler düzeyi stilini kolayca nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words القدرة على تغيير نمط مستوى معين من جدول محتويات المستند. في هذا الدليل ، سنوضح لك كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لتغيير نمط مستوى جدول محتويات مستند Word.
+Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, düzenlemek ve değiştirmek için güçlü bir kitaplıktır. Aspose.Words'ün sunduğu özellikler arasında, bir belgenin içindekiler tablosunun belirli bir düzeyinin stilini değiştirebilme yeteneği vardır. Bu kılavuzda, bir Word belgesinin içindekiler tablosu düzeyinin stilini değiştirmek için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك تغيير نمط جدول المحتويات.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle çalışmayı kolay ve verimli hale getiren popüler bir kitaplıktır. İçindekiler tablosunun stilini değiştirmek de dahil olmak üzere Word belgeleri oluşturmak, düzenlemek ve değiştirmek için çok çeşitli özellikler sunar.
 
-## إنشاء وثيقة جديدة
+## yeni bir belge oluşturma
 
-تتمثل الخطوة الأولى في إنشاء مستند Word جديد حيث تريد تغيير نمط جدول المحتويات. استخدم فئة المستند لإنشاء مستند جديد. هنا مثال :
+İlk adım, içindekiler tablosu stilini değiştirmek istediğiniz yeni bir Word belgesi oluşturmaktır. Yeni bir belge oluşturmak için Document sınıfını kullanın. İşte bir örnek :
 
 ```csharp
 Document doc = new Document();
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند فارغ جديد.
+Bu örnekte, yeni bir boş belge oluşturuyoruz.
 
-## تغيير نمط جدول المحتويات
+## İçindekiler tablosu düzeyinin stilini değiştirme
 
-بمجرد إنشاء المستند ، يمكنك الوصول إلى أنماط المستند وتغيير النمط المستخدم لمستوى معين من جدول المحتويات. في هذا المثال ، سنقوم بتعديل النمط المستخدم للمستوى الأول من جدول المحتويات. إليك الطريقة:
+Belge oluşturulduktan sonra, belge stillerine erişebilir ve içindekiler tablosunun belirli bir düzeyi için kullanılan stili değiştirebilirsiniz. Bu örnekte, içindekiler tablosunun ilk düzeyi için kullanılan stili değiştireceğiz. İşte nasıl:
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-في هذا المثال ، نستخدم خاصية Styles لفئة Document للوصول إلى أنماط المستند. بعد ذلك ، نستخدم معرف النمط StyleIdentifier.Toc1 للوصول إلى النمط المستخدم للمستوى الأول من جدول المحتويات. أخيرًا ، نقوم بتعديل الخاصية Font.Bold للنمط لجعلها غامقة.
+Bu örnekte, belge stillerine erişmek için Document sınıfının Styles özelliğini kullanıyoruz. Ardından, içindekiler tablosunun ilk düzeyi için kullanılan stile erişmek için StyleIdentifier.Toc1 stil tanımlayıcısını kullanırız. Son olarak, stili kalın yapmak için Font.Bold özelliğini değiştiriyoruz.
 
-## احفظ المستند المعدل
+## Değiştirilen belgeyi kaydet
 
-بمجرد إجراء التعديلات اللازمة على نمط جدول المحتويات ، يمكنك حفظ المستند المعدل باستخدام طريقة Save لفئة Document. هنا مثال :
+İçindekiler tablosunun stilinde gerekli değişiklikleri yaptıktan sonra, değiştirilen belgeyi Document sınıfının Save yöntemini kullanarak kaydedebilirsiniz. İşte bir örnek :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 ```
 
-في هذا المثال ، نحفظ المستند المعدل باسم "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx".
+Bu örnekte değiştirilen belgeyi "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx" olarak kaydediyoruz.
 
-## مثال على شفرة المصدر لميزة "تغيير نمط مستوى جدول المحتويات" باستخدام Aspose.Words for .NET
+## Aspose.Words for .NET ile "İçindekiler düzeyinin stilini değiştirme" özelliği için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء مستند جديد
+// Yeni bir belge oluştur
 Document doc = new Document();
 
-// تعديل نمط المستوى الأول لجدول المحتويات
+// İçindekiler tablosunun ilk seviyesinin stilinin değiştirilmesi
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
-// احفظ المستند المعدل
+// Değiştirilen belgeyi kaydet
 doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، شرحنا كيفية استخدام Aspose.Words for .NET لتغيير نمط مستوى جدول محتويات مستند Word باستخدام كود المصدر C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة تخصيص نمط جدول المحتويات في مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع أنماط وتنسيقات مستنداتك ، مما يسمح لك بإنشاء مستندات Word جذابة واحترافية.
+Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesinin içindekiler tablosu düzeyinin stilini değiştirmek için Aspose.Words for .NET'in nasıl kullanılacağını açıkladık. Sağlanan adımları izleyerek, C# uygulamanızdaki Word belgelerinizdeki içindekiler tablosunun stilini kolayca özelleştirebilirsiniz. Aspose.Words, çekici ve profesyonel Word belgeleri oluşturmanıza izin vererek, belgelerinizin stilleri ve biçimlendirmesiyle çalışmak için muazzam bir esneklik ve güç sunar.

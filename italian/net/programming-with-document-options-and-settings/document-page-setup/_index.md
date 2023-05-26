@@ -1,34 +1,34 @@
 ---
-title: وثيقة إعداد الصفحة
-linktitle: وثيقة إعداد الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد تخطيط مستند باستخدام Aspose.Words for .NET.
+title: Impostazione pagina documento
+linktitle: Impostazione pagina documento
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata alla configurazione di un layout di documento con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-document-options-and-settings/document-page-setup/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتكوين تخطيط المستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة ضبط وضع التخطيط وعدد الأحرف في كل سطر وعدد الأسطر في كل صفحة.
+In questo tutorial, ti guideremo attraverso il codice sorgente C# per configurare il layout del documento con Aspose.Words per .NET. Questa funzione consente di impostare la modalità di layout, il numero di caratteri per riga e il numero di righe per pagina.
 
-## الخطوة 1: إعداد المشروع
+## Passaggio 1: impostazione del progetto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Per iniziare, crea un nuovo progetto C# nel tuo IDE preferito. Assicurarsi che nel progetto si faccia riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة الثانية: تحميل المستند
+## Passaggio 2: caricamento del documento
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد تهيئته. استخدم الكود التالي لتحميل المستند:
+In questo passaggio, caricheremo il documento Word che vogliamo configurare. Utilizzare il seguente codice per caricare il documento:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Sostituire`"YOUR DOCUMENTS DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento.
 
-## الخطوة 3: إعداد التخطيط
+## Passaggio 3: impostazione del layout
 
-لنقم الآن بتهيئة تخطيط المستند. استخدم الكود التالي لضبط وضع التخطيط ، وعدد الأحرف في كل سطر ، وعدد الأسطر في كل صفحة:
+Ora configuriamo il layout del documento. Utilizzare il codice seguente per impostare la modalità di layout, il numero di caratteri per riga e il numero di righe per pagina:
 
 ```csharp
 doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
@@ -38,20 +38,20 @@ doc.FirstSection.PageSetup.LinesPerPage = 10;
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx");
 ```
 
-يقوم هذا الرمز بتعيين وضع التخطيط على "الشبكة" ثم يحدد عدد الأحرف في كل سطر وعدد الأسطر في كل صفحة.
+Questo codice imposta la modalità di layout su "Grid" e quindi specifica il numero di caratteri per riga e il numero di righe per pagina.
 
-### مثال على الكود المصدري لإعداد صفحة المستند باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per l'impostazione della pagina del documento utilizzando Aspose.Words per .NET
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
-	// اضبط وضع التخطيط لقسم يسمح بتعريف سلوك شبكة الوثيقة.
-	// لاحظ أن علامة التبويب Document Grid تصبح مرئية في مربع حوار إعداد الصفحة في MS Word
-	// إذا تم تعريف أي لغة آسيوية على أنها لغة تحرير.
+	// Imposta la modalità di layout per una sezione che consente di definire il comportamento della griglia del documento.
+	// Si noti che la scheda Griglia documento diventa visibile nella finestra di dialogo Imposta pagina di MS Word
+	// se qualsiasi lingua asiatica è definita come lingua di modifica.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;
 	doc.FirstSection.PageSetup.LinesPerPage = 10;
@@ -60,6 +60,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
    
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Assicurarsi di specificare il percorso del documento corretto nel file`dataDir` variabile.
 
-لقد تعلمت الآن كيفية تكوين تخطيط المستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تخصيص تخطيط المستندات الخاصة بك.
+Ora hai imparato come configurare il layout di un documento usando Aspose.Words per .NET. Seguendo la guida dettagliata fornita in questo tutorial, puoi facilmente personalizzare il layout dei tuoi documenti.

@@ -1,31 +1,31 @@
 ---
-title: تعيين عنوان الجدول ووصفه
-linktitle: تعيين عنوان الجدول ووصفه
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتعيين عنوان ووصف للجدول باستخدام Aspose.Words for .NET.
+title: Ställ tabelltitel och beskrivning
+linktitle: Ställ tabelltitel och beskrivning
+second_title: Aspose.Words för .NET API Referens
+description: Steg för steg guide för att ställa in titel och beskrivning av en tabell med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-table-styles-and-formatting/set-table-title-and-description/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين عنوان الجدول ووصفه باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية إضافة عنوان ووصف إلى جدول في مستندات Word باستخدام Aspose.Words for .NET.
+I den här handledningen går vi igenom processen steg-för-steg för att ställa in en tabells titel och beskrivning med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och förse dig med en omfattande guide som hjälper dig att förstå och implementera den här funktionen i dina egna projekt. I slutet av denna handledning kommer du att veta hur du lägger till en titel och en beskrivning till en tabell i dina Word-dokument med Aspose.Words för .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+Först måste du ställa in sökvägen till din dokumentkatalog. Det här är platsen där du vill spara ditt redigerade Word-dokument. Ersätt "DIN DOKUMENTKATOLOG" med lämplig sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند الذي يحتوي على الجدول
- بعد ذلك ، تحتاج إلى تحميل المستند الذي يحتوي على الجدول باستخدام ملف`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Steg 2: Ladda dokumentet som innehåller tabellen
+ Därefter måste du ladda dokumentet som innehåller tabellen med hjälp av`Document` klass. Var noga med att ange rätt dokumentsökväg.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: قم بالوصول إلى الجدول وقم بتعيين العنوان والوصف
- يمكنك الآن الوصول إلى الجدول الموجود في المستند باستخدام ملف`GetChild()` الطريقة و`Table` فصل. بعد ذلك ، قم بتعيين عنوان الجدول ووصفه باستخدام ملف`Title` و`Description` ملكيات.
+## Steg 3: Gå till tabellen och ställ in titel och beskrivning
+ Nu kan du komma åt tabellen i dokumentet med hjälp av`GetChild()` metoden och`Table` klass. Ställ sedan in tabellens titel och beskrivning med hjälp av`Title` och`Description` egenskaper.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -33,22 +33,22 @@ table.Title = "Test Title";
 table.Description = "Test Description";
 ```
 
-## الخطوة 4: تعيين خيارات النسخ الاحتياطي
- إذا كنت تريد تحديد خيارات الحفظ ، فيمكنك تهيئتها باستخدام ملف`OoxmlSaveOptions` فصل. في هذا المثال ، استخدمنا الامتداد`Compliance` الخيار لتحديد التوافق مع تنسيق ISO 29500: 2008 الصارم.
+## Steg 4: Ställ in alternativ för säkerhetskopiering
+ Om du vill ange sparalternativ kan du konfigurera dem med hjälp av`OoxmlSaveOptions` klass. I det här exemplet har vi använt`Compliance` alternativ för att ange överensstämmelse med ISO 29500:2008 strikt format.
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
-## الخطوة 5: تحسين توافق المستندات
- يمكنك أيضًا تحسين توافق المستندات باستخدام تنسيق`OptimizeFor()` طريقة`CompatibilityOptions` فصل. في هذا المثال ، قمنا بتحسين المستند لـ Word 2016.
+## Steg 5: Optimera dokumentkompatibilitet
+ Du kan också optimera dokumentkompatibiliteten med hjälp av`OptimizeFor()` metod för`CompatibilityOptions` klass. I det här exemplet har vi optimerat dokumentet för Word 2016.
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(Aspose.Words.Settings.MsWordVersion.Word2016);
 ```
 
-## الخطوة 6: احفظ المستند المعدل
- أخيرًا ، يمكنك حفظ المستند المعدل في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## Steg 6: Spara det ändrade dokumentet
+ Slutligen kan du spara det ändrade dokumentet till en fil med hjälp av`Save()` metod för`Document` klass. Var noga med att ange rätt sökväg och filnamn.
 
 
 
@@ -56,10 +56,10 @@ doc.CompatibilityOptions.OptimizeFor(Aspose.Words.Settings.MsWordVersion.Word201
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescription.docx", options);
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Table Title and Description باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Set Table Titel och beskrivning med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -71,5 +71,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescription.docx", options);
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين عنوان الجدول ووصفه باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة إضافة عنوان ووصف إلى جدول في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تخصيص البنية والمعلومات المرتبطة بجداولك وفقًا لاحتياجاتك الخاصة.
+## Slutsats
+den här handledningen lärde vi oss hur man ställer in en tabells titel och beskrivning med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide kan du enkelt lägga till en titel och beskrivning till en tabell i dina Word-dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för att manipulera och formatera tabeller i dina dokument. Med denna kunskap kan du anpassa strukturen och informationen för dina tabeller efter dina specifika behov.

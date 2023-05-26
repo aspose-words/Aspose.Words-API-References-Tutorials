@@ -1,31 +1,31 @@
 ---
-title: أدخل المستند عند الاستبدال
-linktitle: أدخل المستند عند الاستبدال
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مستند عند الاستبدال باستخدام Aspose.Words for .NET.
+title: Değiştirme Sırasında Belge Ekle
+linktitle: Değiştirme Sırasında Belge Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak değiştirme sırasında nasıl belge ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إدراج مستند في مستند آخر عند الاستبدال باستخدام ميزة "إدراج مستند عند استبدال" في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم كود المصدر وإجراء عملية إدراج المستند.
+Bu öğreticide, Aspose.Words for .NET'in Insert Document When Changeing özelliğini kullanarak değiştirirken bir belgeyi başka bir belgeye nasıl ekleyeceğinizi size göstereceğiz. Kaynak kodunu anlamak ve belge ekleme işlemini gerçekleştirmek için aşağıdaki adımları izleyin.
 
-## الخطوة 1: تحميل المستند الرئيسي
+## 1. Adım: Ana belgenin yüklenmesi
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند الرئيسي في كائن المستند. إليك الطريقة:
+Başlamak için belgeleriniz için dizini belirtin ve ana belgeyi bir Belge nesnesine yükleyin. İşte nasıl:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 ```
 
-## الخطوة 2: تكوين خيارات البحث والاستبدال
+## 2. Adım: Arama ve değiştirme seçeneklerini yapılandırın
 
-سنقوم الآن بتكوين خيارات البحث والاستبدال عن طريق تحديد اتجاه البحث واستبدال رد الاتصال لإدراج مستند في مستند آخر. إليك الطريقة:
+Şimdi bir belgeyi başka bir belgeye eklemek için arama yönünü ve geri aramayı değiştir'i belirterek bul ve değiştir seçeneklerini yapılandıracağız. İşte nasıl:
 
 ```csharp
-//تكوين خيارات البحث والاستبدال.
+//Arama ve değiştirme seçeneklerini yapılandırın.
 FindReplaceOptions options = new FindReplaceOptions
 {
 Direction = FindReplaceDirection.Backward,
@@ -33,33 +33,33 @@ ReplacingCallback = new InsertDocumentAtReplaceHandler()
 };
 ```
 
-## الخطوة 3: استدعاء طريقة الاستبدال
+## 3. Adım: Değiştirme yöntemini çağırma
 
-سنقوم الآن باستدعاء طريقة الاستبدال للعثور على النص المحدد واستبداله بسلسلة فارغة ، باستخدام الخيارات التي تم تكوينها. إليك الطريقة:
+Şimdi, yapılandırılmış seçenekleri kullanarak belirtilen metni bulup boş bir dizeyle değiştirmek için replace yöntemini çağıracağız. İşte nasıl:
 
 ```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
 
-### مثال على شفرة المصدر لـ Insert Document At Replace باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Insert Document At Change için örnek kaynak kodu
 
-فيما يلي رمز المصدر الكامل لميزة "إدراج مستند" عند استبدال Aspose.Words for .NET:
+Aspose.Words for .NET'i değiştirirken Belge Ekle özelliğinin tam kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
-	// تعيين خيارات البحث والاستبدال.
+	// Bul ve değiştir seçeneklerini ayarlayın.
 	FindReplaceOptions options = new FindReplaceOptions
 	{
 		Direction = FindReplaceDirection.Backward, 
 		ReplacingCallback = new InsertDocumentAtReplaceHandler()
 	};
 
-	// اتصل بطريقة الاستبدال.
+	// replace yöntemini çağırın.
 	mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 

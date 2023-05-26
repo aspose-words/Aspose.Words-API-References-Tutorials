@@ -1,23 +1,23 @@
 ---
-title: أعمدة الجدول المرجعية
-linktitle: أعمدة الجدول المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وضع إشارة مرجعية على عمود جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Columnas de la tabla de marcadores
+linktitle: Columnas de la tabla de marcadores
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a marcar una columna de tabla en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة أعمدة جدول الإشارات المرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة وضع إشارة مرجعية على عمود معين من الجدول في مستند Word والوصول إلى محتوى هذا العمود.
+En este artículo, exploraremos el código fuente de C# anterior para comprender cómo usar la función de columnas de la tabla de marcadores en la biblioteca Aspose.Words para .NET. Esta función le permite marcar una columna específica de una tabla en un documento de Word y acceder al contenido de esa columna.
 
-## المتطلبات الأساسية
+## requisitos previos
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conocimientos básicos del lenguaje C#.
+- Entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
 
-## الخطوة الأولى: إنشاء الجدول
+## Paso 1: Crear la tabla
 
- قبل إنشاء إشارة مرجعية على عمود جدول ، يجب علينا أولاً إنشاء الجدول باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نقوم بإنشاء جدول من صفين وعمودين:
+ Antes de crear un marcador en una columna de tabla, primero debemos crear la tabla usando un`DocumentBuilder` objeto. En nuestro ejemplo, creamos una tabla con dos filas y dos columnas:
 
 ```csharp
 builder. StartTable();
@@ -43,17 +43,17 @@ builder. EndRow();
 builder. EndTable();
 ```
 
-## الخطوة 2: إنشاء إشارة مرجعية للعمود
+## Paso 2: Crear el marcador de columna
 
- نحن نستخدم ال`StartBookmark`طريقة لإنشاء إشارة مرجعية على عمود معين من الجدول. في مثالنا ، نستخدم اسم "MyBookmark" للإشارة المرجعية:
+ usamos el`StartBookmark`método para crear un marcador en una columna específica de la tabla. En nuestro ejemplo, usamos el nombre "MyBookmark" para el marcador:
 
 ```csharp
 builder. StartBookmark("MyBookmark");
 ```
 
-## الخطوة 3: الوصول إلى محتوى العمود
+## Paso 3: Acceda al contenido de la columna
 
- نتصفح جميع الإشارات المرجعية في المستند ونعرض أسمائها. إذا كانت الإشارة المرجعية عبارة عن عمود ، فإننا نصل إلى محتويات ذلك العمود باستخدام فهرس العمود وملف`GetText` طريقة:
+ Revisamos todos los marcadores en el documento y mostramos sus nombres. Si un marcador es una columna, accedemos al contenido de esa columna usando el índice de la columna y el`GetText` método:
 
 ```csharp
 foreach (Bookmark
@@ -70,9 +70,9 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
 }
 ```
 
-### مثال على شفرة المصدر لأعمدة جدول الإشارات باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para las columnas de la tabla de marcadores usando Aspose.Words para .NET
 
-إليك نموذج شفرة المصدر الكامل لتوضيح إنشاء إشارة مرجعية في عمود الجدول باستخدام Aspose.Words for .NET:
+Aquí está el código fuente de muestra completo para demostrar cómo crear un marcador en una columna de tabla usando Aspose.Words para .NET:
 
 ```csharp
 
@@ -120,6 +120,6 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
         
 ```
 
-## خاتمة
+## Conclusión
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة أعمدة جدول الإشارات المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لوضع إشارة مرجعية على عمود معين من الجدول في مستند Word والانتقال إلى محتويات هذا العمود.
+En este artículo, exploramos el código fuente de C# para entender cómo usar la función de columnas de la tabla de marcadores de Aspose.Words para .NET. Seguimos una guía paso a paso para marcar una columna específica de una tabla en un documento de Word y saltar al contenido de esa columna.

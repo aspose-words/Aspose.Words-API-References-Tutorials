@@ -1,53 +1,53 @@
 ---
-title: تعيين مجلد الصور
-linktitle: تعيين مجلد الصور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين مجلد الصور عند التصدير إلى Markdown باستخدام Aspose.Words for .NET. تخصيص موضع الصور من أجل تنظيم وتكامل أفضل.
+title: Görüntüler Klasörünü Ayarla
+linktitle: Görüntüler Klasörünü Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile Markdown'a dışa aktarırken resimler klasörünü nasıl ayarlayacağınızı öğrenin. Daha iyi organizasyon ve entegrasyon için görüntülerin yerleşimini özelleştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
 
-فيما يلي دليل خطوة بخطوة لشرح الكود المصدري C # التالي والذي يساعد على تعيين مجلد الصور لخيارات تصدير Markdown باستخدام مكتبة Aspose.Words لـ .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Aspose.Words library for .NET kullanarak Markdown dışa aktarma seçenekleri için görseller klasörünü ayarlamaya yardımcı olan aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz. Bu kodu kullanmadan önce Aspose.Words kütüphanesini projenize dahil ettiğinizden emin olun.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## 1. Adım: Belge dizini yolunu ayarlayın
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث يوجد المستند الذي يحتوي على الصور.
+Görüntüleri içeren belgenin bulunduğu belgeler dizininizin doğru yolunu belirttiğinizden emin olun.
 
-## الخطوة 2: قم بتحميل المستند الذي يحتوي على الصور
+## 2. Adım: Resimleri içeren belgeyi yükleyin
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-نقوم بتحميل المستند المحدد الذي يحتوي على الصور التي نريد تصديرها باستخدام خيارات Markdown.
+Markdown seçenekleri ile export etmek istediğimiz görselleri içeren belirtilen dökümanı yüklüyoruz.
 
-## الخطوة 3: قم بتعيين مجلد الصور لخيارات تصدير Markdown
+## 3. Adım: Markdown dışa aktarma seçenekleri için görseller klasörünü ayarlayın
 
 ```csharp
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
 ```
 
- نقوم بإنشاء مثيل`MarkdownSaveOptions` وقم بتعيين المسار إلى مجلد الصور باستخدام ملف`ImagesFolder` ملكية. تأكد من تحديد المسار الصحيح للمجلد حيث تريد حفظ الصور المصدرة.
+ örneğini oluşturuyoruz`MarkdownSaveOptions` ve kullanarak resimler klasörünün yolunu ayarlayın.`ImagesFolder` mülk. Dışa aktarılan görüntüleri kaydetmek istediğiniz klasörün yolunu doğru belirttiğinizden emin olun.
 
-## الخطوة 4: احفظ المستند باستخدام خيارات تصدير Markdown
+## 4. Adım: Belgeyi Markdown dışa aktarma seçenekleriyle kaydedin
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())
      doc. Save(stream, saveOptions);
 ```
 
-نقوم بحفظ المستند في تدفق الذاكرة باستخدام خيارات تصدير Markdown المحددة. يمكنك بعد ذلك استخدام التدفق لإجراء عمليات أخرى ، مثل حفظ محتوى Markdown في ملف.
+Belirtilen Markdown dışa aktarma seçeneklerini kullanarak belgeyi bir bellek akışına kaydediyoruz. Ardından, Markdown içeriğini bir dosyaya kaydetmek gibi diğer işlemleri gerçekleştirmek için akışı kullanabilirsiniz.
 
-### مثال على كود المصدر لتعيين مجلد الصور لـ MarkdownSaveOptions مع Aspose.Words for .NET
+### Aspose.Words for .NET ile MarkdownSaveOptions için görseller klasörünü ayarlamak için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 Document doc = new Document(dataDir + "Image bullet points.docx");
@@ -58,4 +58,4 @@ using (MemoryStream stream = new MemoryStream())
      doc. Save(stream, saveOptions);
 ```
 
-يوضح رمز المصدر هذا كيفية تحميل مستند يحتوي على صور ثم تعيين مجلد الصور لخيارات تصدير Markdown. باستخدام الخيارات المحددة ، يتم حفظ المستند بعد ذلك في تدفق الذاكرة. يتيح لك هذا تخصيص موقع مجلد الصور عند تصدير محتوى Markdown.
+Bu kaynak kodu, görüntüler içeren bir belgenin nasıl yükleneceğini ve ardından Markdown dışa aktarma seçenekleri için görüntüler klasörünün nasıl ayarlanacağını gösterir. Belge daha sonra belirtilen seçenekler kullanılarak bir bellek akışına kaydedilir. Bu, Markdown içeriğini dışa aktarırken görüntüler klasörünün konumunu özelleştirmenizi sağlar.

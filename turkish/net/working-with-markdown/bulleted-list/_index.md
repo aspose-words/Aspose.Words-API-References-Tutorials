@@ -1,62 +1,62 @@
 ---
-title: قائمة نقطية
-linktitle: قائمة نقطية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء قائمة نقطية باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Maddeli liste
+linktitle: Maddeli liste
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile madde işaretli liste oluşturmayı öğrenin Adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/bulleted-list/
 ---
 
-في هذا البرنامج التعليمي ، سنخبرك بكيفية إنشاء قائمة نقطية باستخدام Aspose.Words for .NET. يتم استخدام قائمة نقطية لسرد العناصر بدون استخدام الترقيم.
+Bu eğitimde, size Aspose.Words for .NET ile madde işaretli liste oluşturmayı anlatacağız. Öğeleri numaralandırma kullanmadan listelemek için madde işaretli bir liste kullanılır.
 
-## الخطوة 1: استخدام منشئ المستندات
+## 1. Adım: Bir belge oluşturucu kullanma
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+İlk olarak, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تطبيق قائمة نقطية افتراضية
+## 2. Adım: Varsayılan Madde İşaretli Liste Uygulama
 
- يمكننا تطبيق قائمة افتراضية ذات تعداد نقطي باستخدام قائمة منشئ المستندات`ApplyBulletDefault` طريقة.
+ Belge oluşturucuyu kullanarak varsayılan bir madde işaretli liste uygulayabiliriz.`ApplyBulletDefault` yöntem.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## الخطوة 3: تخصيص تنسيق الرمز النقطي
+## 3. Adım: Madde İşareti Formatını Özelleştirme
 
- يمكننا تخصيص تنسيق الرمز النقطي من خلال الوصول إلى خصائص`ListFormat.List.ListLevels[0]`. في هذا المثال ، نستخدم الشرطة "-" كرمز نقطي.
+ Özelliklerine erişerek madde işareti formatını özelleştirebiliriz.`ListFormat.List.ListLevels[0]`. Bu örnekte, "-" tiresini madde işareti olarak kullanıyoruz.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## الخطوة 4: إضافة عناصر إلى القائمة
+## 4. Adım: Listeye öğe ekleme
 
- يمكننا الآن إضافة عناصر إلى القائمة النقطية باستخدام أداة إنشاء المستندات`Writeln` طريقة.
+ Artık belge oluşturucuyu kullanarak madde işaretli listeye öğeler ekleyebiliriz.`Writeln` yöntem.
 
 ```csharp
 builder. Writen("Element 1");
 builder. Writen("Element 2");
 ```
 
-## الخطوة 5: إزالة المسافة البادئة من القائمة
+## Adım 5: Girintiyi listeden kaldırma
 
- إذا أردنا إنشاء قائمة فرعية ، فيمكننا زيادة المسافة البادئة باستخدام`ListFormat.ListIndent()` طريقة. في هذا المثال ، نضيف قائمة فرعية إلى البندين 2 أ و 2 ب.
+ Bir alt liste oluşturmak istiyorsak, girintiyi kullanarak artırabiliriz.`ListFormat.ListIndent()` yöntem. Bu örnekte, 2a ve 2b maddelerine bir alt liste ekliyoruz.
 
 ```csharp
 builder.ListFormat.ListIndent();
 builder. Writeln("Element 2a");
 builder.Writeln("Element 2b");
 ```
-### مثال على شفرة المصدر لقائمة التعداد النقطي باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Madde İşaretli Liste için örnek kaynak kodu
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
 	DocumentBuilder builder = new DocumentBuilder();
 
 	builder.ListFormat.ApplyBulletDefault();
@@ -72,5 +72,5 @@ builder.Writeln("Element 2b");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية إنشاء قائمة نقطية باستخدام Aspose.Words for .NET.
+Tebrikler! Artık Aspose.Words for .NET ile madde işaretli liste oluşturmayı öğrendiniz.
 

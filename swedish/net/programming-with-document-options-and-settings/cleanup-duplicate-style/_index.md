@@ -1,79 +1,79 @@
 ---
-title: تنظيف النمط المكرر
-linktitle: تنظيف النمط المكرر
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتنظيف الأنماط المكررة في مستند باستخدام Aspose.Words for .NET. تم تضمين كود المصدر الكامل.
+title: Cleanup Duplicate Style
+linktitle: Cleanup Duplicate Style
+second_title: Aspose.Words för .NET API Referens
+description: Steg för steg guide för att rensa upp dubbletter av stilar i ett dokument med Aspose.Words för .NET. Fullständig källkod ingår.
 type: docs
 weight: 10
 url: /sv/net/programming-with-document-options-and-settings/cleanup-duplicate-style/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال التعليمات البرمجية المصدر C # خطوة بخطوة لتنظيف الأنماط المكررة باستخدام Aspose.Words for .NET. تساعد هذه الميزة في إزالة الأنماط المكررة من المستند.
+I den här handledningen går vi igenom steg för steg C#-källkoden för att rensa upp dubbletter av stilar med Aspose.Words för .NET. Den här funktionen hjälper till att ta bort dubbletter av stilar från ett dokument.
 
-## الخطوة 1: إعداد المشروع
+## Steg 1: Projektinställning
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
 
-## الخطوة الثانية: تحميل المستند
+## Steg 2: Ladda dokumentet
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد تنظيفه. استخدم الكود التالي لتحميل المستند:
+I det här steget kommer vi att ladda Word-dokumentet som vi vill rensa upp. Använd följande kod för att ladda dokumentet:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till katalogen där ditt dokument finns.
 
-## الخطوة 3: عد الأنماط قبل التنظيف
+## Steg 3: Räkna stilar innan rengöring
 
-قبل متابعة التنظيف ، سنقوم بحساب عدد الأنماط الموجودة في المستند. استخدم الكود التالي لعرض عدد الأنماط:
+Innan vi fortsätter med rengöringen kommer vi att räkna antalet stilar som finns i dokumentet. Använd följande kod för att visa antalet stilar:
 
 ```csharp
 Console.WriteLine(doc.Styles.Count);
 ```
 
-يعرض هذا البيان عدد الأنماط الموجودة في المستند.
+Detta uttalande visar antalet stilar som finns i dokumentet.
 
-## الخطوة 4: تنظيف الأنماط المكررة
+## Steg 4: Rensa upp dubbletter av stilar
 
-لنقم الآن بتنظيف الأنماط المكررة من المستند. استخدم الكود التالي لإجراء التنظيف:
+Låt oss nu rensa upp dubbletter av stilar från dokumentet. Använd följande kod för att utföra rensningen:
 
 ```csharp
 CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 doc. Cleanup(options);
 ```
 
- يقوم هذا الرمز بتنظيف الأنماط المكررة من المستند باستخدام الخيارات المحددة. في هذا المثال ، قمنا بتمكين`DuplicateStyle` خيار لتنظيف الأنماط المكررة.
+ Den här koden rensar upp dubbletter av stilar från dokumentet med de angivna alternativen. I det här exemplet aktiverade vi`DuplicateStyle` möjlighet att rensa upp dubbletter av stilar.
 
-## الخطوة 5: عد الأنماط بعد التنظيف
+## Steg 5: Räkna stilar efter rengöring
 
-بعد إجراء التنظيف ، سنحسب عدد الأنماط مرة أخرى للتحقق مما إذا كان قد انخفض. استخدم الكود التالي لعرض عدد الأنماط الجديدة:
+Efter att ha gjort städningen kommer vi att räkna antalet stilar igen för att kontrollera om det har minskat. Använd följande kod för att visa antalet nya stilar:
 
 ```csharp
 Console.WriteLine(doc.Styles.Count);
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");
 ```
 
-يعرض هذا البيان عدد الأنماط المتبقية بعد التنظيف.
+Detta uttalande visar antalet stilar som återstår efter rengöring.
 
-### مثال على شفرة المصدر لـ Cleanup Duplicate Style باستخدام Aspose.Words for .NET
+### Exempel på källkod för Cleanup Duplicate Style med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
-	// عدد الأنماط قبل التنظيف.
+	// Antal stilar före rengöring.
 	Console.WriteLine(doc.Styles.Count);
 
-	// ينظف الأنماط المكررة من المستند.
+	// Rensar dubbletter av stilar från dokumentet.
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	//عدد الأنماط بعد تقليل التنظيف.
+	//Antalet stilar efter rengöring minskades.
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

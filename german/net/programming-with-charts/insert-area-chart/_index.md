@@ -1,44 +1,44 @@
 ---
-title: إدراج مخطط مساحي
-linktitle: إدراج مخطط مساحي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مخطط مساحي في مستند باستخدام Aspose.Words for .NET. أضف بيانات السلسلة واحفظ المستند مع الرسم البياني.
+title: Flächendiagramm einfügen
+linktitle: Flächendiagramm einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Flächendiagramm in ein Dokument einfügen. Fügen Sie Seriendaten hinzu und speichern Sie das Dokument mit dem Diagramm.
 type: docs
 weight: 10
 url: /de/net/programming-with-charts/insert-area-chart/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مخطط مساحي في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وحفظ المستند.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET ein Flächendiagramm in ein Dokument einfügen. Der bereitgestellte Quellcode zeigt, wie Sie ein Diagramm erstellen, Seriendaten hinzufügen und das Dokument speichern.
 
-## الخطوة 1: قم بإعداد المشروع
+## Schritt 1: Richten Sie das Projekt ein
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words für .NET-Bibliothek installiert. Sie können es von der offiziellen Aspose-Website herunterladen oder den NuGet-Paketmanager verwenden, um es zu installieren.
+- Ein Dokumentverzeichnispfad, in dem das Ausgabedokument gespeichert wird.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Erstelle eine neue`Document` Objekt und a`DocumentBuilder` um das Dokument zu erstellen.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط مساحي في المستند.
+ Als nächstes verwenden Sie die`InsertChart` Methode der`DocumentBuilder` um ein Flächendiagramm in das Dokument einzufügen.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Schritt 3: Fügen Sie dem Diagramm Seriendaten hinzu
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمس نقاط بيانات مع التواريخ والقيم المقابلة.
+Fügen Sie dem Diagramm Seriendaten hinzu. In diesem Beispiel fügen wir fünf Datenpunkte mit entsprechenden Daten und Werten hinzu.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new []
@@ -52,20 +52,20 @@ chart.Series.Add("Aspose Series 1", new []
 new double[] { 32, 32, 28, 12, 15 });
 ```
 
-## الخطوة 4: احفظ المستند
+## Schritt 4: Speichern Sie das Dokument
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Speichern Sie abschließend das Dokument mit im angegebenen Verzeichnis`Save` Methode der`Document` Objekt.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertAreaChart.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مخطط مساحي باستخدام Aspose.Words for .NET.
+Damit ist die Implementierung des Einfügens eines Flächendiagramms mit Aspose.Words für .NET abgeschlossen.
 
-### مثال على شفرة المصدر لإدراج مخطط منطقة باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Flächendiagramm einfügen“ mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

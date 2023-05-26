@@ -1,36 +1,36 @@
 ---
-title: تنسيق القاعدة الأفقية
-linktitle: تنسيق القاعدة الأفقية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تنسيق القواعد الأفقية في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Horizontales Regelformat
+linktitle: Horizontales Regelformat
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET horizontale Regeln in Word-Dokumenten formatieren. Schritt für Schritt Anleitung.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/horizontal-rule-format/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية تنسيق قاعدة أفقية في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على تخصيص المحاذاة والعرض والارتفاع واللون والخصائص الأخرى للقاعدة الأفقية.
+In diesem umfassenden Beispiel erfahren Sie, wie Sie mit Aspose.Words für .NET eine horizontale Linie in einem Word-Dokument formatieren. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieser Anleitung werden Sie in der Lage sein, die Ausrichtung, Breite, Höhe, Farbe und andere Eigenschaften eines horizontalen Lineals anzupassen.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## الخطوة 1: إنشاء DocumentBuilder وإدراج قاعدة أفقية
-للبدء ، أنشئ كائن DocumentBuilder واستخدم طريقة InsertHorizontalRule لإدراج قاعدة أفقية:
+## Schritt 1: Erstellen Sie einen DocumentBuilder und fügen Sie eine horizontale Regel ein
+Erstellen Sie zunächst ein DocumentBuilder-Objekt und fügen Sie mit der Methode „InsertHorizontalRule“ eine horizontale Regel ein:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 Shape shape = builder.InsertHorizontalRule();
 ```
 
-## الخطوة 2: الوصول إلى تنسيق القاعدة الأفقية
-بعد ذلك ، قم بالوصول إلى الخاصية HorizontalRuleFormat لكائن الشكل لاسترداد خيارات التنسيق:
+## Schritt 2: Greifen Sie auf das horizontale Regelformat zu
+Greifen Sie als Nächstes auf die Eigenschaft „HorizontalRuleFormat“ des Shape-Objekts zu, um die Formatierungsoptionen abzurufen:
 
 ```csharp
 HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
 ```
 
-## الخطوة 3: تخصيص خيارات التنسيق
-الآن ، يمكنك تخصيص خيارات تنسيق متنوعة للقاعدة الأفقية. على سبيل المثال ، يمكنك ضبط المحاذاة والعرض والارتفاع واللون والتظليل:
+## Schritt 3: Passen Sie die Formatierungsoptionen an
+Jetzt können Sie verschiedene Formatierungsoptionen für die horizontale Linie anpassen. Sie können beispielsweise Ausrichtung, Breite, Höhe, Farbe und Schattierung anpassen:
 
 ```csharp
 horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
@@ -40,15 +40,15 @@ horizontalRuleFormat.Color = Color.Blue;
 horizontalRuleFormat.NoShade = true;
 ```
 
-## الخطوة 4: احفظ المستند
-بعد تنسيق القاعدة الأفقية ، احفظ المستند في ملف باستخدام طريقة Save للكائن Document:
+## Schritt 4: Speichern Sie das Dokument
+Speichern Sie das Dokument nach dem Formatieren der horizontalen Linie mit der Save-Methode des Document-Objekts in einer Datei:
 
 ```csharp
 builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
 ```
 
-### مثال على كود المصدر لتنسيق القاعدة الأفقية باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لتنسيق قاعدة أفقية باستخدام Aspose.Words for .NET:
+### Beispielquellcode für das horizontale Regelformat mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode zum Formatieren einer horizontalen Regel mit Aspose.Words für .NET:
 
 ```csharp
 
@@ -67,9 +67,9 @@ builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalR
 			
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Denken Sie daran, den Code an Ihre spezifischen Anforderungen anzupassen und ihn bei Bedarf um zusätzliche Funktionen zu erweitern.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تنسيق قاعدة أفقية في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تخصيص مظهر القواعد الأفقية لتحسين التخطيط المرئي للمستند.
+## Abschluss
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET eine horizontale Linie in einem Word-Dokument formatieren. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie jetzt das Erscheinungsbild horizontaler Linien anpassen, um das visuelle Layout Ihres Dokuments zu verbessern.
 
-جرب خيارات تنسيق مختلفة لتحقيق النمط والتأثير المرغوب فيه للقواعد الأفقية.
+Experimentieren Sie mit verschiedenen Formatierungsoptionen, um den gewünschten Stil und Effekt für Ihre horizontalen Linien zu erzielen.

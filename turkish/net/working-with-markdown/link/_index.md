@@ -1,41 +1,41 @@
 ---
-title: وصلة
-linktitle: وصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الروابط مع Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Bağlantı
+linktitle: Bağlantı
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bağlantıları nasıl ekleyeceğinizi öğrenin. Adım adım rehber.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/link/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة الروابط مع Aspose.Words for .NET. تُستخدم الروابط لإنشاء مراجع قابلة للنقر لمواقع الويب أو المستندات الأخرى.
+Bu örnekte, bağlantılar özelliğini Aspose.Words for .NET ile nasıl kullanacağınız konusunda size yol göstereceğiz. Bağlantılar, web sitelerine veya diğer belgelere tıklanabilir referanslar oluşturmak için kullanılır.
 
-## الخطوة 1: استخدام منشئ المستندات
+## 1. Adım: Bir belge oluşturucu kullanma
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+İlk olarak, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة الثانية: إدخال ارتباط
+## 2. Adım: Bağlantı ekleme
 
- يمكننا إدراج ارتباط باستخدام ملف`Insertlink` طريقة منشئ الوثيقة. نحتاج إلى تحديد نص الرابط ، هنا "Aspose" ، بالإضافة إلى عنوان URL المقصود.
+ kullanarak bir bağlantı ekleyebiliriz.`Insertlink` belge üreteci yöntemi. Burada "Aspose" olan bağlantı metnini ve hedef URL'yi belirtmemiz gerekiyor.
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com "، خطأ) ؛
+builder.Insertlink("Aspose", "https://www.aspose.com", yanlış);
 ```
 
-### مثال على شفرة المصدر للروابط مع Aspose.Words for .NET
+### Aspose.Words for .NET ile bağlantılar için örnek kaynak kodu
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// أدخل ارتباط.
-	builder.Insertlink("Aspose", "https://www.aspose.com "، خطأ) ؛
+	// Bağlantı ekle.
+	builder.Insertlink("Aspose", "https://www.aspose.com", yanlış);
             
 ```
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الروابط مع Aspose.Words for .NET.
+Tebrikler! Artık bağlantılar özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.
 

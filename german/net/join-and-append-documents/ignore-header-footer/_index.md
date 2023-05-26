@@ -1,64 +1,64 @@
 ---
-title: تجاهل رأس تذييل الصفحة
-linktitle: تجاهل رأس تذييل الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند مع تجاهل محتوى الرأس والتذييل باستخدام Aspose.Words for .NET.
+title: Kopf- und Fußzeile ignorieren
+linktitle: Kopf- und Fußzeile ignorieren
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument anhängen und dabei Kopf- und Fußzeileninhalte ignorieren.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/ignore-header-footer/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق مستند مع تجاهل محتوى الرأس والتذييل. يوضح كود المصدر المقدم كيفية إعداد خيارات تنسيق الاستيراد لاستبعاد الرأس والتذييل أثناء عملية الإلحاق.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET ein Dokument anhängen und dabei den Inhalt der Kopf- und Fußzeile ignorieren. Der bereitgestellte Quellcode zeigt, wie die Importformatoptionen eingerichtet werden, um die Kopf- und Fußzeile während des Anhängevorgangs auszuschließen.
 
-## الخطوة 1: قم بإعداد المشروع
+## Schritt 1: Richten Sie das Projekt ein
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words für .NET-Bibliothek installiert. Sie können es von der offiziellen Aspose-Website herunterladen oder den NuGet-Paketmanager verwenden, um es zu installieren.
+- Ein Dokumentverzeichnispfad, in dem sich die Quell- und Zieldokumente befinden.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Schritt 2: Öffnen Sie die Quell- und Zieldokumente
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Öffnen Sie die Quell- und Zieldokumente mit`Document` Klassenkonstruktor. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDocument = new Document(dataDir + "Document source.docx");
 Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إعداد خيارات تنسيق الاستيراد
+## Schritt 3: Importformatoptionen einrichten
 
- قم بإنشاء مثيل لـ`ImportFormatOptions` فئة وضبط`IgnoreHeaderFooter` ملكية ل`false`. يضمن ذلك تضمين محتوى الرأس والتذييل أثناء عملية الإلحاق.
+ Erstellen Sie eine Instanz von`ImportFormatOptions` Klasse und legen Sie die fest`IgnoreHeaderFooter` Eigentum zu`false`. Dadurch wird sichergestellt, dass der Inhalt der Kopf- und Fußzeile beim Anhängevorgang einbezogen wird.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بالمستند الوجهة
+## Schritt 4: Hängen Sie das Quelldokument an das Zieldokument an
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.KeepSourceFormatting` كمعامل ثاني وخيارات تنسيق الاستيراد كمعامل ثالث.
+ Benutzen Sie die`AppendDocument` Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.KeepSourceFormatting` als zweiten Parameter und die Importformatoptionen als dritten Parameter.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
 ```
 
-## الخطوة 5: احفظ المستند الوجهة
+## Schritt 5: Speichern Sie das Zieldokument
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Speichern Sie abschließend das geänderte Zieldokument mit`Save` Methode der`Document` Objekt.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند مع تجاهل محتوى الرأس والتذييل باستخدام Aspose.Words for .NET.
+Damit ist die Implementierung des Anhängens eines Dokuments unter Ignorieren des Kopf- und Fußzeileninhalts mithilfe von Aspose.Words für .NET abgeschlossen.
 
-### مثال على شفرة المصدر لـ Ignore Header Footer باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Kopfzeile und Fußzeile ignorieren“ mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

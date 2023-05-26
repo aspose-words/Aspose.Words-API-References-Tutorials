@@ -1,54 +1,54 @@
 ---
-title: إدراج كائن Ole
-linktitle: إدراج كائن Ole
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج كائن OLE في مستند باستخدام Aspose.Words for .NET.
+title: Ole Nesnesi Ekle
+linktitle: Ole Nesnesi Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir OLE nesnesini bir belgeye nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-oleobjects-and-activex/insert-ole-object/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود مصدر C # أدناه والذي يوضح كيفية إدراج كائن OLE باستخدام Aspose.Words for .NET.
+Aspose.Words for .NET kullanarak bir OLE nesnesinin nasıl ekleneceğini gösteren aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## 1. Adım: Gerekli referansları içe aktarın
+Başlamadan önce, Aspose.Words for .NET'i kullanmak için gerekli referansları projenize aktardığınızdan emin olun. Bu, Aspose.Words kitaplığının içe aktarılmasını ve gerekli ad alanlarının kaynak dosyanıza eklenmesini içerir.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومولد مستندات
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` class ومُنشئ المستندات باستخدام امتداد`DocumentBuilder` فصل.
+## 2. Adım: Yeni bir belge ve belge oluşturucu oluşturun
+ Bu adımda, kullanarak yeni bir belge oluşturacağız.`Document` sınıfını ve bir belge oluşturucuyu kullanarak`DocumentBuilder` sınıf.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: أدخل كائن OLE
- استخدم وثيقة منشئ`InsertOleObject` طريقة لإدراج كائن OLE في المستند. حدد عنوان URL لكائن OLE ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى.
+## 3. Adım: Bir OLE nesnesi ekleyin
+ Belge Oluşturucu'yu kullanın`InsertOleObject` belgeye bir OLE nesnesi ekleme yöntemi. OLE nesne URL'sini, nesne türünü, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin.
 
 ```csharp
-builder. InsertOleObject("http://www.aspose.com "،" htmlfile "، true، true، null)؛
+builder. InsertOleObject("http://www.aspose.com", "htmldosyası", doğru, doğru, boş);
 ```
 
-## الخطوة 4: احفظ المستند
- استخدم ملف`Save` طريقة لحفظ المستند في ملف.
+## 4. Adım: Belgeyi kaydedin
+ Belgenin`Save` Belgeyi bir dosyaya kaydetme yöntemi.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
 ```
 
-### مثال على شفرة المصدر لإدراج كائن OLE مع Aspose.Words for .NET
+### Aspose.Words for .NET ile bir OLE nesnesi eklemek için örnek kaynak kodu
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-builder. InsertOleObject("http://www.aspose.com "،" htmlfile "، true، true، null)؛
+builder. InsertOleObject("http://www.aspose.com", "htmldosyası", doğru, doğru, boş);
 
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
 ```
 
-هذا نموذج تعليمات برمجية كامل لإدراج كائن OLE مع Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Bu, Aspose.Words for .NET ile bir OLE nesnesi eklemek için eksiksiz bir kod örneğidir. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları uyguladığınızdan emin olun.

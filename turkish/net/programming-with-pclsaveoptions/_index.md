@@ -1,17 +1,17 @@
 ---
-title: البرمجة مع Pclsaveoptions
-linktitle: البرمجة مع Pclsaveoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على عناصر تم تحويلها إلى نقطية
+title: Pclsaveoptions ile Programlama
+linktitle: Pclsaveoptions ile Programlama
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler rasterleştirilmiş dönüştürülmüş öğeler içerir
 type: docs
 weight: 1670
 url: /tr/net/programming-with-pclsaveoptions/
 ---
-ترشدك البرامج التعليمية لـ Aspose.Words for .NET إلى الميزات والتقنيات الأساسية للعمل مع Aspose.Words في بيئة .NET. يركز أحد هذه الدروس على البرمجة باستخدام PclSaveOptions. يوضح لك هذا البرنامج التعليمي كيفية استخدام PclSaveOptions لتحويل مستندات Word إلى PCL (لغة أوامر الطابعة) مع الحفاظ على تنسيق المستند وعناصره. ستتعلم كيفية تكوين خيارات الحفظ وتحديد تنسيق الإخراج وإدارة الإعدادات المتقدمة للحصول على أفضل النتائج.
+Aspose.Words for .NET eğitimleri, sizi bir .NET ortamında Aspose.Words ile çalışmaya yönelik temel özellikler ve teknikler konusunda yönlendirir. Bu eğitimlerden biri, PclSaveOptions ile programlamaya odaklanır. Bu öğretici, belgenin biçimlendirmesini ve öğelerini korurken Word belgelerini PCL'ye (Yazıcı Komut Dili) dönüştürmek için PclSaveOptions'ı nasıl kullanacağınızı gösterir. En iyi sonuçlar için kaydetme seçeneklerini nasıl yapılandıracağınızı, çıktı formatını nasıl belirleyeceğinizi ve gelişmiş ayarları nasıl yöneteceğinizi öğreneceksiniz.
 
-تزودك برامج Aspose.Words for .NET التعليمية بمورد قيم لإتقان الإمكانات القوية لهذه المكتبة في تطبيقات .NET الخاصة بك. سواء كنت ترغب في إنشاء مستندات Word أو استخراج البيانات أو إجراء عمليات دمج أو مهام أخرى ، ستأخذك هذه البرامج التعليمية خطوة بخطوة عبر الخطوات اللازمة لتحقيق أهدافك. يرافق كل برنامج تعليمي أمثلة تعليمات برمجية واضحة وأوصاف تفصيلية لتسهيل فهمك ومساعدتك على تطبيق المفاهيم في مشروعك الخاص.
+Aspose.Words for .NET öğreticileri, .NET uygulamalarınızda bu kitaplığın güçlü yeteneklerinde uzmanlaşmanız için size değerli bir kaynak sağlar. İster Word belgeleri oluşturmak, ister veri ayıklamak, birleştirme işlemleri gerçekleştirmek veya başka görevler yapmak isteyin, bu eğitimler sizi hedeflerinize ulaşmak için gereken adımlarda adım adım yönlendirecektir. Her öğreticiye, anlayışınızı kolaylaştırmak ve kavramları kendi projenizde uygulamanıza yardımcı olmak için açık kod örnekleri ve ayrıntılı açıklamalar eşlik eder.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [تنقيط العناصر المحولة](./rasterize-transformed-elements/) | تعرف على كيفية تعطيل التحويل النقطي للعناصر المحولة عند التحويل إلى تنسيق PCL باستخدام Aspose.Words for .NET. |
+| [Dönüştürülen Öğeleri Rasterleştir](./rasterize-transformed-elements/) | Aspose.Words for .NET ile PCL formatına dönüştürürken dönüştürülmüş öğelerin rasterleştirmesini nasıl devre dışı bırakacağınızı öğrenin. |

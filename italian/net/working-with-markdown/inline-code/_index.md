@@ -1,35 +1,35 @@
 ---
-title: رمز مضمّن
-linktitle: رمز مضمّن
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تضمين التعليمات البرمجية باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Codice in linea
+linktitle: Codice in linea
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come incorporare il codice con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/inline-code/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة الشفرة المضمنة مع Aspose.Words for .NET. يتم استخدام التعليمات البرمجية المضمنة لتمثيل أجزاء من التعليمات البرمجية بشكل مرئي داخل فقرة.
+In questo esempio, ti illustreremo come utilizzare la funzione di codice inline con Aspose.Words per .NET. Il codice in linea viene utilizzato per rappresentare visivamente parti di codice all'interno di un paragrafo.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Passaggio 1: utilizzo di un generatore di documenti
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Innanzitutto, utilizzeremo un generatore di documenti per aggiungere contenuto al nostro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: أضف نمطًا للرمز المضمَّن
+## Passaggio 2: aggiungi lo stile per il codice in linea
 
- سنضيف نمطًا مخصصًا للشفرة المضمنة باستخدام امتداد`Styles.Add` طريقة`Document` هدف. في هذا المثال ، نقوم بإنشاء نمط يسمى "InlineCode" للشفرة المضمنة مع علامة خلفية افتراضية.
+ Aggiungeremo uno stile personalizzato per il codice in linea utilizzando il`Styles.Add` metodo del`Document` oggetto. In questo esempio, stiamo creando uno stile chiamato "InlineCode" per il codice in linea con un apice inverso predefinito.
 
 ```csharp
 Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 builder.Font.Style = inlineCode1BackTicks;
 ```
 
-## الخطوة 3: أضف التعليمات البرمجية المضمنة
+## Passaggio 3: aggiungi il codice in linea
 
-الآن يمكننا إضافة التعليمات البرمجية المضمنة باستخدام النمط المخصص "InlineCode". في هذا المثال ، نضيف جزأين من النص بأرقام مختلفة من backticks.
+Ora possiamo aggiungere codice in linea utilizzando lo stile personalizzato "InlineCode". In questo esempio, aggiungiamo due parti di testo con un numero diverso di apici inversi.
 
 ```csharp
 builder.Writeln("Text with InlineCode style with 1 backtick");
@@ -42,23 +42,23 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 ```
 
 
-### مثال على شفرة المصدر لـ Inline Code مع Aspose.Words for .NET
+### Esempio di codice sorgente per codice inline con Aspose.Words per .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	//تم فقدان عدد backticks ، سيتم استخدام علامة خلفية واحدة بشكل افتراضي.
+	//Manca il numero di apici inversi, per impostazione predefinita verrà utilizzato un apice inverso.
 	Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 	builder.Font.Style = inlineCode1BackTicks;
 	builder.Writeln("Text with InlineCode style with 1 backtick");
 
-	// سيكون هناك 3 باكتيكس.
+	// Ci saranno 3 backtick.
 	Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
 	builder.Font.Style = inlineCode3BackTicks;
 	builder.Writeln("Text with InlineCode style with 3 backtick");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام وظيفة التعليمات البرمجية المضمنة مع Aspose.Words for .NET.
+Congratulazioni! Ora hai imparato come utilizzare la funzionalità del codice inline con Aspose.Words per .NET.
 

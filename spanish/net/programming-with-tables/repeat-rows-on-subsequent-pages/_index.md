@@ -1,62 +1,62 @@
 ---
-title: كرر الصفوف في الصفحات اللاحقة
-linktitle: كرر الصفوف في الصفحات اللاحقة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تكرار صفوف الجدول في الصفحات اللاحقة في مستند Word باستخدام Aspose.Words for .NET.
+title: Repetir filas en páginas posteriores
+linktitle: Repetir filas en páginas posteriores
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a repetir las filas de la tabla en las páginas siguientes de un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تكرار صفوف الجدول في الصفحات اللاحقة من مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تحديد صفوف لتكرارها في الصفحات اللاحقة من الجدول في مستندات Word الخاصة بك.
+En este tutorial, aprenderemos a repetir las filas de una tabla en las páginas siguientes de un documento de Word utilizando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá especificar filas para repetir en las páginas siguientes de su tabla en sus documentos de Word.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Paso 1: Configuración del proyecto
+1. Inicie Visual Studio y cree un nuevo proyecto de C#.
+2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Paso 2: Creación del documento e inicialización del generador de documentos
+Para comenzar a trabajar con el documento y el generador de documentos, siga estos pasos:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Creación de documentos
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Inicializar el generador de documentos
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
-## الخطوة الثالثة: بناء الجدول بالصفوف المتكررة
-بعد ذلك ، سننشئ جدولًا به صفوف متكررة في الصفحات اللاحقة. استخدم الكود التالي:
+## Paso 3: construir la tabla con filas repetidas
+A continuación, crearemos una tabla con filas repetidas en las páginas siguientes. Usa el siguiente código:
 
 ```csharp
-// بداية الجدول
+// Comienzo de la mesa
 builder. StartTable();
 
-// تكوين معلمات السطر الأول (خطوط الرأس)
+// Configuración de los parámetros de la primera línea (líneas de cabecera)
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// أدخل الخلية الأولى في الصف الأول
+// Inserta la primera celda de la primera fila
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
 
-// أدخل الخلية الثانية من الصف الأول
+// Inserta la segunda celda de la primera fila
 builder. InsertCell();
 builder.Writeln("Header line 2");
 builder. EndRow();
 
-// قم بتكوين معلمات الأسطر التالية
+// Configura los parámetros de las siguientes líneas
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 
-// تكرار لإدراج الخلايا في الصفوف التالية
+// Bucle para insertar las celdas en las siguientes filas
 for (int i = 0; i < 50; i++)
 {
 builder. InsertCell();
@@ -67,27 +67,27 @@ builder.Write("Text column 2");
 builder. EndRow();
 }
 
-// نهاية الجدول
+// final de la mesa
 builder. EndTable();
 ```
 
- هنا نستخدم أداة إنشاء المستندات لبناء جدول يحتوي على صفين رأسيين وصفوف بيانات متعددة. ال`RowFormat.HeadingFormat`تُستخدم المعلمات لتحديد صفوف الرأس التي يجب تكرارها في الصفحات اللاحقة.
+ Aquí usamos el generador de documentos para crear una tabla con dos filas de encabezado y varias filas de datos. El`RowFormat.HeadingFormat`Los parámetros se utilizan para marcar las filas de encabezado que deben repetirse en las páginas siguientes.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرا الولايات المتحدة
+## Paso 4: Guardar el documento modificado
+finalmente nosotros
 
-  تحتاج إلى حفظ المستند المعدل مع تكرار صفوف الرؤوس في الصفحات اللاحقة من الجدول. استخدم الكود التالي:
+  necesita guardar el documento modificado con las filas de encabezado repetidas en las páginas siguientes de la tabla. Usa el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Asegúrese de especificar la ruta y el nombre de archivo correctos para el documento de salida.
 
-### نموذج لشفرة مصدر لصفوف التكرار في الصفحات اللاحقة باستخدام Aspose.Words for .NET 
+### Código fuente de muestra para Repetir filas en páginas posteriores usando Aspose.Words para .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -116,5 +116,5 @@ for (int i = 0; i < 50; i++)
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تكرار صفوف الجدول في الصفحات اللاحقة من مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تحديد الأسطر التي يجب تكرارها وفقًا لاحتياجاتك الخاصة في مستندات Word الخاصة بك.
+## Conclusión
+En este tutorial, aprendimos a repetir las filas de una tabla en las páginas siguientes de un documento de Word usando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# provisto, puede especificar qué líneas repetir según sus necesidades específicas en sus documentos de Word.

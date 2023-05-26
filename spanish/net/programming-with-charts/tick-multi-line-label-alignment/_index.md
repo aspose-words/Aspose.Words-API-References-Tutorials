@@ -1,70 +1,70 @@
 ---
-title: ضع علامة على محاذاة تسمية متعددة الأسطر
-linktitle: ضع علامة على محاذاة تسمية متعددة الأسطر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية محاذاة تسميات التجزئة متعددة الأسطر في محور الرسم البياني باستخدام Aspose.Words for .NET.
+title: Marque la alineación de etiquetas de varias líneas
+linktitle: Marque la alineación de etiquetas de varias líneas
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a alinear etiquetas de varias líneas en un eje de gráfico con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-charts/tick-multi-line-label-alignment/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين محاذاة تسميات التجزئة متعددة الأسطر في محور المخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط والوصول إلى المحور وتعديل محاذاة تسمية التجزئة.
+Este tutorial explica cómo usar Aspose.Words para .NET para establecer la alineación de las etiquetas de varias líneas en un eje de gráfico. El código fuente proporcionado demuestra cómo crear un gráfico, acceder al eje y modificar la alineación de la etiqueta de marca.
 
-## الخطوة 1: قم بإعداد المشروع
+## Paso 1: configurar el proyecto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Asegúrese de tener los siguientes requisitos previos:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words para la biblioteca .NET instalada. Puede descargarlo del sitio web oficial de Aspose o usar el administrador de paquetes NuGet para instalarlo.
+- Una ruta de directorio del documento donde se guardará el documento de salida.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Paso 2: Cree un nuevo documento e inserte un gráfico
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Crear un nuevo`Document` objeto y un`DocumentBuilder` para construir el documento.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط مبعثر في المستند.
+ A continuación, utilice el`InsertChart` metodo de la`DocumentBuilder` para insertar un gráfico de dispersión en el documento.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
 ChartAxis axis = shape.Chart.AxisX;
 ```
 
-## الخطوة 3: ضبط محاذاة تسمية التجزئة
+## Paso 3: establecer la alineación de la etiqueta de marca
 
- لتعيين محاذاة تسميات التجزئة متعددة الأسطر ، قم بالوصول إلى`AxisX` خاصية الرسم البياني وتعيين`TickLabelAlignment` الخاصية للمحاذاة المطلوبة. في هذا المثال ، قمنا بتعيين المحاذاة إلى`ParagraphAlignment.Right`.
+ Para configurar la alineación de las etiquetas de varias líneas, acceda a la`AxisX` propiedad del gráfico y establecer la`TickLabelAlignment` propiedad a la alineación deseada. En este ejemplo, establecemos la alineación en`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
 ```
 
-## الخطوة 4: احفظ المستند
+## Paso 4: Guarde el documento
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Finalmente, guarde el documento en el directorio especificado usando el`Save` metodo de la`Document` objeto.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 ```
 
-هذا يكمل تنفيذ إعداد محاذاة تسمية العلامات متعددة الأسطر باستخدام Aspose.Words for .NET.
+Esto completa la implementación de la configuración de la alineación de etiquetas de varias líneas de marca mediante Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لـ Tick Multi Line Label Alignment باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para marcar la alineación de etiquetas de varias líneas usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
 	ChartAxis axis = shape.Chart.AxisX;
-	// هذه الخاصية لها تأثير فقط للتسميات متعددة الخطوط.
+	// Esta propiedad solo tiene efecto para etiquetas de varias líneas.
 	axis.TickLabelAlignment = ParagraphAlignment.Right;
 	doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 ```

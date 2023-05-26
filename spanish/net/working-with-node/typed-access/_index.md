@@ -1,62 +1,62 @@
 ---
-title: الوصول المكتوب
-linktitle: الوصول المكتوب
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام الوصول المكتوب لمعالجة الجداول في Aspose.Words for .NET.
+title: Acceso escrito
+linktitle: Acceso escrito
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a usar el acceso escrito para manipular tablas en Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-node/typed-access/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية استخدام ميزة الوصول المكتوب مع Aspose.Words for .NET.
+Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación que ilustra cómo usar la característica de acceso con tipo con Aspose.Words para .NET.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Paso 1: Importa las referencias necesarias
+Antes de comenzar, asegúrese de haber importado las referencias necesarias para usar Aspose.Words para .NET en su proyecto. Esto incluye importar la biblioteca Aspose.Words y agregar los espacios de nombres requeridos a su archivo fuente.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## Paso 2: Crear un nuevo documento
+ En este paso, crearemos un nuevo documento usando el`Document` clase.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: قم بالوصول إلى القسم والجسم
-للوصول إلى الجداول الواردة في المستند ، يجب علينا أولاً الوصول إلى قسم ونص الوثيقة.
+## Paso 3: Accede a la sección y al cuerpo
+Para acceder a las tablas contenidas en el documento, primero debemos acceder a la sección y al cuerpo del documento.
 
 ```csharp
 Section section = doc.FirstSection;
 Body body = section.Body;
 ```
 
-## الخطوة 4: الوصول السريع والمكتوب إلى الجداول
-الآن بعد أن أصبح لدينا نص المستند ، يمكننا استخدام الوصول السريع والمكتوب للوصول إلى جميع الجداول الموجودة في النص.
+## Paso 4: acceso rápido y escrito a las tablas
+Ahora que tenemos el cuerpo del documento, podemos usar el acceso rápido y escrito para acceder a todas las tablas contenidas en el cuerpo.
 
 ```csharp
 TableCollection tables = body.Tables;
 ```
 
-## الخطوة 5: تصفح الجداول
- باستخدام ملف`foreach` loop ، يمكننا المرور عبر جميع الجداول وإجراء عمليات محددة على كل جدول.
+## Paso 5: Examinar tablas
+ usando un`foreach` bucle, podemos recorrer todas las tablas y realizar operaciones específicas en cada tabla.
 
 ```csharp
 foreach(Table table in tables)
 {
-     // الوصول السريع والمكتوب إلى الصف الأول من الجدول.
+     // Acceso rápido y mecanografiado a la primera fila de la tabla.
      table.FirstRow?.Remove();
 
-     // الوصول السريع والمكتوب إلى الصف الأخير من الجدول.
+     // Acceso rápido y escrito a la última fila de la tabla.
      table.LastRow?.Remove();
 }
 ```
 
-في هذا المثال ، نحذف الصف الأول والأخير من كل جدول باستخدام الوصول السريع والمكتوب المقدم من Aspose.Words.
+En este ejemplo, eliminamos la primera y la última fila de cada tabla utilizando el acceso rápido y escrito proporcionado por Aspose.Words.
 
-### نموذج التعليمات البرمجية المصدر للوصول المكتوب باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para acceso escrito con Aspose.Words para .NET
 
 ```csharp
 	Document doc = new Document();
@@ -64,20 +64,20 @@ foreach(Table table in tables)
 	Section section = doc.FirstSection;
 	Body body = section.Body;
 	
-	// وصول سريع مكتوب إلى جميع العقد الفرعية التابعة للجدول الموجودة في النص الأساسي.
+	// Acceso rápido escrito a todos los nodos secundarios de la tabla contenidos en el cuerpo.
 	TableCollection tables = body.Tables;
 
 	foreach (Table table in tables)
 	{
-		// وصول سريع مكتوب إلى الصف الأول من الجدول.
+		// Acceso rápido escrito a la primera fila de la tabla.
 		table.FirstRow?.Remove();
 
-		// وصول سريع مكتوب إلى الصف الأخير من الجدول.
+		// Acceso rápido escrito a la última fila de la tabla.
 		table.LastRow?.Remove();
 	}
             
 ```
 
-هذا نموذج كامل من التعليمات البرمجية للوصول المكتوب إلى الجداول باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Este es un código de muestra completo para el acceso escrito a las tablas con Aspose.Words para .NET. Asegúrese de importar las referencias necesarias y siga los pasos descritos anteriormente para integrar este código en su proyecto.
 
 ---

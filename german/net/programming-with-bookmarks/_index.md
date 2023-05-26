@@ -1,30 +1,30 @@
 ---
-title: البرمجة مع الإشارات المرجعية
-linktitle: البرمجة مع الإشارات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إشارات مرجعية للوصول ، وتحديث بيانات الإشارة المرجعية ، وأعمدة جدول الإشارات المرجعية ، ونسخ نص تم وضع إشارة مرجعية عليه ، وإلحاق نص تم وضع إشارة مرجعية عليه ، وإنشاء إشارة مرجعية ، وإظهار إخفاء الإشارات المرجعية
+title: Programmieren mit Lesezeichen
+linktitle: Programmieren mit Lesezeichen
+second_title: Aspose.Words für .NET API-Referenz
+description: Tutorials umfassen den Zugriff auf Lesezeichen, das Aktualisieren von Lesezeichendaten, das Markieren von Tabellenspalten, das Kopieren von mit Lesezeichen versehenem Text, das Anhängen von mit Lesezeichen versehenem Text, das Erstellen von Lesezeichen und das Anzeigen und Ausblenden von Lesezeichen
 type: docs
 weight: 1380
 url: /de/net/programming-with-bookmarks/
 ---
 
-ترشدك برامج Aspose.Words for .NET التعليمية إلى العديد من الميزات وتقنيات البرمجة للعمل مع الإشارات المرجعية في مستندات Word الخاصة بك. ستتعلم في هذه البرامج التعليمية كيفية إنشاء الإشارات المرجعية وإعادة تسميتها وحذفها والتنقل بينها. ستتعلم أيضًا كيفية استخراج محتوى الإشارات المرجعية واستبداله ، وكذلك كيفية إضافة إشارات مرجعية ديناميكية واستخدامها لإنشاء تقارير مخصصة.
+Aspose.Words für .NET-Tutorials führen Sie durch verschiedene Funktionen und Programmiertechniken für die Arbeit mit Lesezeichen in Ihren Word-Dokumenten. In diesen Tutorials erfahren Sie, wie Sie Lesezeichen erstellen, umbenennen, löschen und zwischen ihnen navigieren. Sie erfahren außerdem, wie Sie Lesezeicheninhalte extrahieren und ersetzen sowie dynamische Lesezeichen hinzufügen und diese zum Erstellen benutzerdefinierter Berichte verwenden.
 
-تزودك البرامج التعليمية بأمثلة تفصيلية للتعليمات البرمجية وشروحات تفصيلية لمساعدتك على فهم المفاهيم وتنفيذها. سواء كنت جديدًا أو خبيرًا في برمجة .NET ، ستساعدك هذه البرامج التعليمية على تحقيق أقصى استفادة من ميزات الإشارات المرجعية في Aspose.Words.
+Die Tutorials bieten Ihnen detaillierte Codebeispiele und Schritt-für-Schritt-Erklärungen, die Ihnen helfen, die Konzepte zu verstehen und umzusetzen. Unabhängig davon, ob Sie neu in der .NET-Programmierung sind oder bereits Erfahrung damit haben, helfen Ihnen diese Tutorials dabei, die Lesezeichenfunktionen in Aspose.Words optimal zu nutzen.
 
-باتباع هذه البرامج التعليمية ، ستتمكن من معالجة الإشارات المرجعية بشكل فعال في مستندات Word الخاصة بك ، وبالتالي أتمتة المهام المختلفة مثل إنشاء التقارير وإنشاء جدول المحتويات الديناميكي وغير ذلك الكثير. استكشف Aspose.Words دروس تعليم مرجعية لـ .NET وحسّن إنتاجيتك في العمل مع مستندات Word.
+Wenn Sie diese Tutorials befolgen, werden Sie in der Lage sein, Lesezeichen in Ihren Word-Dokumenten effektiv zu bearbeiten und so verschiedene Aufgaben wie die Berichtserstellung, die dynamische Erstellung von Inhaltsverzeichnissen und vieles mehr zu automatisieren. Entdecken Sie Aspose.Words für .NET-Lesezeichen-Tutorials und steigern Sie Ihre Produktivität bei der Arbeit mit Word-Dokumenten.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [الوصول إلى الإشارات المرجعية](./access-bookmarks/) | تعرف على كيفية الوصول إلى الإشارات المرجعية في مستند Word باستخدام Aspose.Words for .NET. |
-| [تحديث البيانات المرجعية](./update-bookmark-data/) | دليل خطوة بخطوة لشرح شفرة المصدر C # لميزة تحديث بيانات الإشارة المرجعية Aspose.Words لـ .NET. |
-| [أعمدة الجدول المرجعية](./bookmark-table-columns/) | تعرف على كيفية وضع إشارة مرجعية على عمود جدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [نسخ النص الذي تم وضع إشارة مرجعية عليه](./copy-bookmarked-text/) | تعرف على كيفية نسخ نص إشارة مرجعية من مستند مصدر إلى مستند آخر باستخدام Aspose.Words for .NET. |
-| [إلحاق نص تم وضع إشارة مرجعية عليه](./append-bookmarked-text/) | تعرف على كيفية إضافة نص من إشارة مرجعية في مستند Word باستخدام Aspose.Words for .NET. |
-| [إنشاء إشارة مرجعية](./create-bookmark/) | تعرف على كيفية إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF باستخدام Aspose.Words for .NET. |
-| [إظهار إخفاء الإشارات المرجعية](./show-hide-bookmarks/) | تعرف على كيفية إظهار أو إخفاء إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET. |
-| [إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه](./show-hide-bookmarked-content/) | تعرف على كيفية إظهار أو إخفاء محتوى الإشارات المرجعية باستخدام Aspose.Words for .NET. |
-| [فك الإشارات المرجعية في الصف](./untangle-row-bookmarks/) | تعرف على كيفية فك تشابك الإشارات المرجعية للصفوف المتداخلة لإزالة صفوف معينة دون التأثير على الإشارات المرجعية الأخرى. |
-| [فك](./untangle/) | تعرف على كيفية فك تشابك الإشارات المرجعية المتداخلة في صفوف الجدول المجاورة باستخدام Aspose.Words for .NET. |
-| [حذف الصف حسب الإشارة المرجعية](./delete-row-by-bookmark/) | تعرف على كيفية حذف صف جدول بناءً على إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET. |
+| [Greifen Sie auf Lesezeichen zu](./access-bookmarks/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET auf Lesezeichen in einem Word-Dokument zugreifen. |
+| [Lesezeichendaten aktualisieren](./update-bookmark-data/) | Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Lesezeichendatenaktualisierungsfunktion von Aspose.Words für .NET. |
+| [Lesezeichen für Tabellenspalten setzen](./bookmark-table-columns/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabellenspalte in einem Word-Dokument mit einem Lesezeichen versehen. |
+| [Mit Lesezeichen versehenen Text kopieren](./copy-bookmarked-text/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Lesezeichentext aus einem Quelldokument in ein anderes Dokument kopieren. |
+| [Mit Lesezeichen versehenen Text anhängen](./append-bookmarked-text/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Text aus einem Lesezeichen in ein Word-Dokument einfügen. |
+| [Lesezeichen erstellen](./create-bookmark/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Lesezeichen in einem Dokument erstellen und Lesezeichen-Vorschauebenen in einer PDF-Datei festlegen. |
+| [Lesezeichen ausblenden anzeigen](./show-hide-bookmarks/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein bestimmtes Lesezeichen in einem Dokument ein- oder ausblenden. |
+| [Mit Lesezeichen versehene Inhalte anzeigen und ausblenden](./show-hide-bookmarked-content/) | Erfahren Sie, wie Sie Lesezeicheninhalte mit Aspose.Words für .NET ein- oder ausblenden. |
+| [Zeilenlesezeichen entwirren](./untangle-row-bookmarks/) | Erfahren Sie, wie Sie verschachtelte Zeilenlesezeichen entwirren, um bestimmte Zeilen zu entfernen, ohne dass sich dies auf andere Lesezeichen auswirkt. |
+| [Entwirren](./untangle/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET verschachtelte Lesezeichen in benachbarten Tabellenzeilen entwirren. |
+| [Zeile nach Lesezeichen löschen](./delete-row-by-bookmark/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabellenzeile basierend auf einem bestimmten Lesezeichen in einem Dokument löschen. |

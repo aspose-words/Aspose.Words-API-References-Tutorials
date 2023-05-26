@@ -1,98 +1,98 @@
 ---
-title: إعدادات العرض المفضلة
-linktitle: إعدادات العرض المفضلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين عروض خلية الجدول المفضلة في مستند Word باستخدام Aspose.Words for .NET.
+title: Configuraciones de ancho preferidas
+linktitle: Configuraciones de ancho preferidas
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a establecer anchos de celda de tabla preferidos en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/preferred-width-settings/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تعيين إعدادات العرض المفضلة لخلايا الجدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تحديد عروض مختلفة مفضلة لخلايا الجدول في مستندات Word الخاصة بك.
+En este tutorial, aprenderemos cómo establecer la configuración de ancho preferida para las celdas de una tabla en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá especificar diferentes anchos preferidos para las celdas de su tabla en sus documentos de Word.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Paso 1: Configuración del proyecto
+1. Inicie Visual Studio y cree un nuevo proyecto de C#.
+2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Paso 2: Creación del documento e inicialización del generador de documentos
+Para comenzar a trabajar con el documento y el generador de documentos, siga estos pasos:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Creación de documentos
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Inicializar el generador de documentos
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
-## الخطوة 3: بناء الجدول بالعروض المفضلة
-بعد ذلك ، سنقوم ببناء جدول بثلاث خلايا لها عروض مختلفة مفضلة. استخدم الكود التالي:
+## Paso 3: Construcción de la mesa con anchos preferidos
+A continuación, construiremos una tabla con tres celdas que tengan distintos anchos preferidos. Usa el siguiente código:
 
 ```csharp
-// بداية الجدول
+// Comienzo de la mesa
 builder. StartTable();
 
-// أدخل خلية ذات حجم مطلق
+// Insertar una celda de tamaño absoluto
 builder. InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
 builder.Writeln("Cell with a width of 40 points");
 
-// أدخل خلية ذات حجم نسبي (بالنسبة المئوية)
+// Insertar una celda de tamaño relativo (en porcentaje)
 builder. InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 builder.Writeln("Cell with 20% width");
 
-// أدخل خلية ذات حجم تلقائي
+// Insertar una celda de tamaño automático
 builder. InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
 builder.Writeln("Auto-size cell. The size of this cell is calculated from the preferred width of the table. In this case, the cell will fill the rest of the available space.");
 
-// نهاية الجدول
+// final de la mesa
 builder. EndTable();
 ```
 
-هنا نستخدم منشئ المستندات لبناء جدول بثلاث خلايا. للخلية الأولى عرض مفضل يبلغ 40 نقطة ، والخلية الثانية لها عرض مفضل بنسبة 20٪ من عرض الجدول ، والخلية الثالثة لها عرض مفضل تلقائي يتم ضبطه
+Aquí usamos el generador de documentos para construir una tabla con tres celdas. La primera celda tiene un ancho preferencial de 40 puntos, la segunda celda tiene un ancho preferencial del 20 % del ancho de la tabla y la tercera celda tiene un ancho preferencial automático que se ajusta
 
-  حسب المساحة المتوفرة.
+  dependiendo del espacio disponible.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل بإعدادات العرض المفضلة المحددة لخلايا الجدول. استخدم الكود التالي:
+## Paso 4: Guardar el documento modificado
+Finalmente, debemos guardar el documento modificado con la configuración de ancho preferida definida para las celdas de la tabla. Usa el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Asegúrese de especificar la ruta y el nombre de archivo correctos para el documento de salida.
 
-### نموذج رمز مصدر لإعدادات العرض المفضلة باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para la configuración de ancho preferido con Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// أدخل صف جدول مكون من ثلاث خلايا لها عروض مختلفة مفضلة.
+	// Inserte una fila de tabla compuesta por tres celdas que tengan diferentes anchos preferidos.
 	builder.StartTable();
-	// أدخل خلية ذات حجم مطلق.
+	// Inserte una celda de tamaño absoluto.
 	builder.InsertCell();
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
 	builder.Writeln("Cell at 40 points width");
-	// أدخل خلية ذات حجم نسبي (نسبة مئوية).
+	// Inserte una celda de tamaño relativo (porcentaje).
 	builder.InsertCell();
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 	builder.Writeln("Cell at 20% width");
-	// أدخل خلية بحجم تلقائي.
+	// Inserta una celda de tamaño automático.
 	builder.InsertCell();
 	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
@@ -102,5 +102,5 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 	doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين إعدادات العرض المفضلة لخلايا الجدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تخصيص عرض خلايا الجدول وفقًا لاحتياجاتك المحددة في مستندات Word الخاصة بك.
+## Conclusión
+En este tutorial, aprendimos cómo establecer la configuración de ancho preferida para las celdas de una tabla en un documento de Word usando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# provisto, puede personalizar el ancho de las celdas de su tabla según sus necesidades específicas en sus documentos de Word.

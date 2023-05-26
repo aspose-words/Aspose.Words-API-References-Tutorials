@@ -1,29 +1,29 @@
 ---
-title: تطبيق الحدود والتظليل على الفقرة
-linktitle: تطبيق الحدود والتظليل على الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق الحدود والتظليل على فقرة باستخدام Aspose.Words for .NET.
+title: Wenden Sie Ränder und Schattierungen auf den Absatz an
+linktitle: Wenden Sie Ränder und Schattierungen auf den Absatz an
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Rahmen und Schattierungen auf einen Absatz anwenden.
 type: docs
 weight: 10
 url: /de/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية تطبيق الحدود والتظليل على فقرة باستخدام وظيفة Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر وتطبيق تغييرات التنسيق.
+In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Funktionalität von Aspose.Words für .NET Rahmen und Schattierungen auf einen Absatz anwenden. Führen Sie die folgenden Schritte aus, um den Quellcode zu verstehen und Formatierungsänderungen anzuwenden.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Schritt 1: Dokument erstellen und konfigurieren
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Erstellen Sie zunächst ein neues Dokument und ein zugehöriges DocumentBuilder-Objekt. Hier ist wie:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الحدود
+## Schritt 2: Randkonfiguration
 
-لنقم الآن بتكوين حدود الفقرة عن طريق تحديد نمط الحدود لكل جانب. إليك الطريقة:
+Jetzt konfigurieren wir die Absatzränder, indem wir den Rahmenstil für jede Seite festlegen. Hier ist wie:
 
 ```csharp
 BorderCollection borders = builder.ParagraphFormat.Borders;
@@ -34,9 +34,9 @@ borders[BorderType.Top].LineStyle = LineStyle.Double;
 borders[BorderType.Bottom].LineStyle = LineStyle.Double;
 ```
 
-## الخطوة 3: إعداد الملء
+## Schritt 3: Einrichten der Füllung
 
-سنقوم الآن بتكوين تعبئة الفقرة عن طريق تحديد النسيج وألوان التعبئة. إليك الطريقة:
+Wir konfigurieren nun die Absatzfüllung, indem wir die Textur und die Füllfarben festlegen. Hier ist wie:
 
 ```csharp
 Shading shading = builder.ParagraphFormat.Shading;
@@ -45,29 +45,29 @@ shading.BackgroundPatternColor = System.Drawing.Color.LightCoral;
 shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 ```
 
-## الخطوة 4: أضف محتوى
+## Schritt 4: Inhalte hinzufügen
 
-سنقوم بإضافة بعض المحتوى المنسق إلى الفقرة. إليك الطريقة:
+Wir werden dem Absatz formatierten Inhalt hinzufügen. Hier ist wie:
 
 ```csharp
 builder.Write("I'm a formatted paragraph with a double border and a nice shading.");
 ```
 
-## الخطوة 3: حفظ المستند
+## Schritt 3: Speichern des Dokuments
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Nachdem Sie das Texteingabeformularfeld eingefügt haben, speichern Sie das Dokument mithilfe von am gewünschten Ort`Save` Methode. Stellen Sie sicher, dass Sie den richtigen Dateipfad angeben:
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ```
 
-### مثال على الكود المصدري لتطبيق الحدود والتظليل على الفقرة باستخدام Aspose.Words for .NET
+### Beispielquellcode für „Rahmen und Schattierung auf Absatz anwenden“ mit Aspose.Words für .NET
 
-فيما يلي رمز المصدر الكامل لميزة "تطبيق الحدود والتظليل على الفقرة" باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Quellcode für die Funktion „Rahmen und Schattierung auf Absatz anwenden“ mit Aspose.Words für .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);

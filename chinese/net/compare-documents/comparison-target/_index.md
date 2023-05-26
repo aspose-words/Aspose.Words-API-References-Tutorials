@@ -1,65 +1,65 @@
 ---
-title: هدف المقارنة
-linktitle: هدف المقارنة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على ميزة مقارنة الهدف في Aspose.Words for .NET التي تسمح لك بمقارنة المستندات وإنشاء مستند جديد يحتوي على التغييرات التي تم إجراؤها.
+title: 比较对象
+linktitle: 比较对象
+second_title: Aspose.Words for .NET API 参考
+description: 了解 Aspose.Words for .NET 的比较目标功能，它允许您比较文档并生成包含所做更改的新文档。
 type: docs
 weight: 10
 url: /zh/net/compare-documents/comparison-target/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم وظيفة هدف المقارنة في Aspose.Words for .NET.
+这是一个分步指南，用于解释下面的 C# 源代码，它使用 Aspose.Words for .NET 的比较目标功能。
 
-## الخطوة 1: مقدمة
+## 第 1 步：介绍
 
-تسمح لك ميزة المقارنة المستهدفة في Aspose.Words for .NET بمقارنة مستندين وإنشاء مستند جديد يحتوي على التغييرات التي تم إجراؤها على المستند الهدف. يمكن أن يكون هذا مفيدًا لتعقب التغييرات التي تم إجراؤها بين الإصدارات المختلفة من المستند.
+Aspose.Words for .NET 的比较目标功能允许您比较两个文档并生成包含对目标文档所做更改的新文档。这对于跟踪文档的不同版本之间所做的更改很有用。
 
-## الخطوة الثانية: تهيئة البيئة
+## 第 2 步：设置环境
 
-قبل أن تبدأ ، تحتاج إلى إعداد بيئة التطوير الخاصة بك للعمل مع Aspose.Words for .NET. تأكد من تثبيت مكتبة Aspose.Words وأن لديك مشروع C # مناسب لتضمين الكود.
+在开始之前，您需要设置您的开发环境以使用 Aspose.Words for .NET。确保你已经安装了 Aspose.Words 库并且有一个合适的 C# 项目来嵌入代码。
 
-## الخطوة 3: إضافة التجميعات المطلوبة
+## 第 3 步：添加所需的程序集
 
-لاستخدام ميزة هدف المقارنة في Aspose.Words for .NET ، يجب عليك إضافة التجميعات الضرورية إلى مشروعك. تأكد من أن لديك المراجع المناسبة لـ Aspose. Words في مشروعك.
+要使用 Aspose.Words for .NET 的比较目标功能，您必须将必要的程序集添加到您的项目中。确保您在项目中正确引用了 Aspose.Words。
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 4: تهيئة المستند
+## 第 4 步：文档初始化
 
-في هذه الخطوة ، سنقوم بتهيئة وثيقتين للمقارنة. يجب عليك تحديد مسار الدليل حيث توجد المستندات الخاصة بك ، وكذلك اسم المستند المصدر.
+在这一步中，我们将初始化两个文档以进行比较。您必须指定文档所在的目录路径，以及源文档的名称。
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تهيئة الوثيقة أ للمقارنة.
+//初始化文档 A 进行比较。
 Document docA = new Document(dataDir + "DocumentA.docx");
 
-// قم بنسخ المستند A لإنشاء نسخة متطابقة من المستند B.
+//克隆文档 A 以创建文档 B 的相同副本。
 Document docB = docA.Clone();
 ```
 
-## الخطوة 5: تكوين خيارات المقارنة
+## 第 5 步：配置比较选项
 
-في هذه الخطوة ، سنقوم بتكوين خيارات المقارنة لتحديد سلوك المقارنة. تتضمن الخيارات القدرة على تجاهل التنسيق ، بالإضافة إلى هدف المقارنة ، وهو الخيار "إظهار التغييرات في" في مربع الحوار "مقارنة المستندات" في Microsoft Word.
+在此步骤中，我们将配置比较选项以指定比较的行为。选项包括忽略格式的能力，以及比较目标，即 Microsoft Word 的“比较文档”对话框中的“显示更改”选项。
 
 ```csharp
 CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
 ```
 
-## الخطوة 6: مقارنة المستندات
+## 第 6 步：文件比较
 
-سنقوم الآن بمقارنة المستندات وإنشاء النتيجة في مستند جديد.
+现在我们将比较文档并在新文档中生成结果。
 
 ```csharp
 docA.Compare(docB, "user", DateTime.Now, options);
 ```
 
- ال`Compare` يقارن الأسلوب المستند A بالمستند B ويحفظ التغييرات في المستند A. يمكنك تحديد اسم المستخدم وتاريخ المقارنة كمرجع.
+这`Compare`方法将文档A与文档B进行比较，并将更改保存到文档A。您可以指定用户名和比较日期以供参考。
 
-### نموذج لشفرة مصدر للمقارنة الهدف باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的比较目标示例源代码
 
 
 ```csharp
@@ -67,7 +67,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 Document docA = new Document(MyDir + "Document.docx");
 Document docB = docA.Clone();
 
-// يتعلق بخيار "إظهار التغييرات في" Microsoft Word في مربع الحوار "مقارنة المستندات".
+//与 Microsoft Word“比较文档”对话框中的“显示更改”选项相关。
 CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
 
 docA.Compare(docB, "user", DateTime.Now, options);
@@ -75,7 +75,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
         
 ```
 
-## خاتمة
+## 结论
 
-في هذه المقالة ، استكشفنا ميزة هدف الفرق في Aspose.Words for .NET. تتيح لك هذه الميزة مقارنة مستندين وإنشاء مستند جديد يحتوي على التغييرات التي تم إجراؤها. يمكنك استخدام هذه المعرفة لتعقب التغييرات بين الإصدارات المختلفة من مستنداتك.
+在本文中，我们探讨了 Aspose.Words for .NET 的差异目标功能。此功能允许您比较两个文档并生成包含所做更改的新文档。您可以使用这些知识来跟踪不同版本文档之间的更改。
 

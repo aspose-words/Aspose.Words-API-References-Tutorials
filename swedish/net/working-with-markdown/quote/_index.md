@@ -1,35 +1,35 @@
 ---
-title: يقتبس
-linktitle: يقتبس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام الاقتباس مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Citat
+linktitle: Citat
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder citat med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/working-with-markdown/quote/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام ميزة الاقتباس مع Aspose.Words for .NET Quote تُستخدم لإبراز أقسام النص من خلال إحاطةهم بحد خاص.
+I det här exemplet kommer vi att förklara hur man använder citatfunktionen med Aspose.Words för .NET Citat används för att markera delar av text genom att omge dem med en speciell ram.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Steg 1: Använda en dokumentgenerator
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Först använder vi en dokumentgenerator för att lägga till innehåll i vårt dokument.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة الثانية: استخدام أسلوب الاقتباس الافتراضي
+## Steg 2: Använd standardcitatstilen
 
-سنستخدم نمط الفقرة الافتراضي المسمى "اقتباس" لتطبيق تنسيق الاقتباس على النص.
+Vi använder standardstyckeformatet "Citat" för att tillämpa citatformatering på texten.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Quote";
 builder.Writeln("Blockquote");
 ```
 
-## الخطوة 3: إنشاء أنماط للمستويات المتداخلة
+## Steg 3: Skapa stilar för kapslade nivåer
 
- يمكننا إنشاء أنماط للمستويات المتداخلة باستخدام امتداد`Styles.Add` طريقة`Document` هدف. في هذا المثال ، نقوم بإنشاء نمط يسمى "Quote1" لتمثيل مستوى اقتباس متداخل.
+ Vi kan skapa stilar för kapslade nivåer med hjälp av`Styles.Add` metod för`Document` objekt. I det här exemplet skapar vi en stil som heter "Quote1" för att representera en kapslad citatnivå.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
@@ -38,18 +38,18 @@ builder.Document.Styles["Quote1"].BaseStyleName = "Quote";
 builder.Writeln("1. Nested blockquote");
 ```
 
-### مثال على شفرة المصدر للاقتباسات باستخدام Aspose.Words for .NET
+### Exempel på källkod för citat med Aspose.Words för .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// بشكل افتراضي ، يخزن المستند نمط blockquote للمستوى الأول.
+	// Som standard lagrar ett dokument blockcitatstil för den första nivån.
 	builder.ParagraphFormat.StyleName = "Quote";
 	builder.Writeln("Blockquote");
 
-	// إنشاء أنماط للمستويات المتداخلة من خلال وراثة النمط.
+	// Skapa stilar för kapslade nivåer genom stilarv.
 	Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
 	builder.ParagraphFormat.Style = quoteLevel2;
 	builder.Document.Styles["Quote1"].BaseStyleName = "Quote";
@@ -57,5 +57,5 @@ builder.Writeln("1. Nested blockquote");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الاقتباسات مع Aspose.Words for .NET.
+Grattis! Du har nu lärt dig hur du använder citeringsfunktionen med Aspose.Words för .NET.
 

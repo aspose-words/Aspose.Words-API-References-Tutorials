@@ -1,31 +1,31 @@
 ---
-title: إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه
-linktitle: إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إظهار أو إخفاء محتوى الإشارات المرجعية باستخدام Aspose.Words for .NET.
+title: Göster Yer İşaretli İçeriği Gizle
+linktitle: Göster Yer İşaretli İçeriği Gizle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak yer imi içeriğinin nasıl gösterileceğini veya gizleneceğini öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إظهار إخفاء المحتوى المرتبط بإشارة مرجعية في Aspose.Words for .NET library. تتيح لك هذه الميزة إظهار أو إخفاء محتويات إشارة مرجعية بناءً على شرط معين عند دمج البيانات.
+Bu makalede, Aspose.Words for .NET kitaplığında Show Hide Bookmarked Content işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, verileri birleştirirken belirli bir koşula dayalı olarak bir yer iminin içeriğini göstermenize veya gizlemenize olanak tanır.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# dili hakkında temel bilgi.
+- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## الخطوة 1: الحصول على الإشارة المرجعية
+## 1. Adım: Yer imini alma
 
- نحن نستخدم ال`Bookmarks` خاصية نطاق المستند للحصول على الإشارة المرجعية المحددة التي نريد إظهار المحتوى أو إخفائه:
+ biz kullanıyoruz`Bookmarks` İçeriği göstermek veya gizlemek istediğimiz belirli yer işaretini almak için belge aralığının özelliği:
 
 ```csharp
 Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 ```
 
-## الخطوة 2: إدراج حقول الدمج
+## 2. Adım: Birleştirme alanlarını ekleme
 
- نحن نستخدم منشئ المستندات`DocumentBuilder` لإدراج حقول الدمج الضرورية. ستعمل حقول الدمج هذه على تعيين شرط لإظهار أو إخفاء محتوى الإشارة المرجعية بناءً على قيمة`showHide` عامل:
+ Bir belge oluşturucu kullanıyoruz`DocumentBuilder` gerekli birleştirme alanlarını eklemek için. Bu birleştirme alanları, değerine bağlı olarak yer imi içeriğini göstermek veya gizlemek için bir koşul ayarlar.`showHide` değişken:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -40,11 +40,11 @@ builder. Write("\"");
 builder. Write(" \"\"");
 ```
 
-## الخطوة 3: نقل محتوى الإشارة المرجعية
+## 3. Adım: Yer imi içeriğini taşıma
 
-ندور محتويات الإشارة المرجعية وننقلها حتى تظهر
+Yer iminin içeriğinde dolaşıyoruz ve görünmesi için hareket ettiriyoruz
 
-ISSE قبل الإشارة المرجعية. سيتحكم هذا في إظهار المحتوى أو إخفائه بناءً على الشرط المحدد:
+yer iminden önce. Bu, belirtilen koşula göre içeriğin gösterilmesini veya gizlenmesini kontrol eder:
 
 ```csharp
 Node currentNode = field. Start;
@@ -62,9 +62,9 @@ while (currentNode != null && flag)
 }
 ```
 
-## الخطوة 4: نقل باقي محتوى الإشارة المرجعية
+## 4. Adım: Yer imi içeriğinin geri kalanını taşıma
 
-نقوم بنقل باقي محتوى الإشارة المرجعية بعد الإشارة المرجعية ، باستخدام عقدة نهاية الإشارة المرجعية كنقطة إدخال:
+Yer işaretinin son düğümünü ekleme noktası olarak kullanarak, yer işareti içeriğinin geri kalanını yer işaretinden sonra taşırız:
 
 ```csharp
 Node endNode = bm.BookmarkEnd;
@@ -82,17 +82,17 @@ while (currentNode != null && flag)
 }
 ```
 
-## الخطوة 5: تنفيذ الدمج
+## Adım 5: Birleştirmenin gerçekleştirilmesi
 
- نحن نستخدم ال`Execute` طريقة الوثيقة`s `دمج المراسلات` object to execute the merge using the bookmark name and the value of the `متغير showHide`:
+ biz kullanıyoruz`Execute` belge yöntemi`s `Posta birleştirme` object to execute the merge using the bookmark name and the value of the `showHide` değişkeni:
 
 ```csharp
 doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 ```
 
-### مثال على شفرة المصدر لـ Show Hide Bookmarked Content باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Yer İşaretli İçeriği Gizle Göster için örnek kaynak kodu
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح إظهار أو إخفاء محتوى الإشارة المرجعية باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanarak yer imi içeriğinin gösterilmesini veya gizlenmesini gösteren Kaynak kodunun tam örneği burada:
 
 ```csharp
 
@@ -101,7 +101,7 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.MoveToDocumentEnd();
 
-	// {إذا كان "{MERGEFIELD إشارة مرجعية}" = "صحيح" "" ""}
+	// {IF "{MERGEFIELD bookmark}" = "true" "" ""}
 	Field field = builder.InsertField("IF \"", null);
 	builder.MoveTo(field.Start.NextSibling);
 	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
@@ -142,6 +142,6 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة إظهار إخفاء المحتوى المرتبط بإشارة مرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإظهار أو إخفاء محتويات إشارة مرجعية بناءً على شرط معين عند دمج البيانات.
+Bu makalede, Aspose.Words for .NET'in Show Hide Bookmarked Content özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Verileri birleştirirken belirli bir koşula bağlı olarak bir yer iminin içeriğini göstermek veya gizlemek için adım adım bir kılavuz izledik.

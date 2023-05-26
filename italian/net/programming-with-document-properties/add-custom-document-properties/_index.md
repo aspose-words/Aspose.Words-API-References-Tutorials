@@ -1,34 +1,34 @@
 ---
-title: أضف خصائص المستند المخصصة
-linktitle: أضف خصائص المستند المخصصة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET.
+title: Aggiungi proprietà documento personalizzate
+linktitle: Aggiungi proprietà documento personalizzate
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida passo passo per aggiungere proprietà personalizzate a un documento con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-document-properties/add-custom-document-properties/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إضافة معلومات مخصصة إلى المستند.
+In questo tutorial, ti guideremo attraverso il codice sorgente C# per aggiungere proprietà personalizzate a un documento con Aspose.Words per .NET. Questa funzione consente di aggiungere informazioni personalizzate al documento.
 
-## الخطوة 1: إعداد المشروع
+## Passaggio 1: impostazione del progetto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Per iniziare, crea un nuovo progetto C# nel tuo IDE preferito. Assicurarsi che nel progetto si faccia riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة الثانية: تحميل المستند
+## Passaggio 2: caricamento del documento
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد إضافة خصائص مخصصة إليه. استخدم الكود التالي لتحميل المستند:
+In questo passaggio, caricheremo il documento Word a cui vogliamo aggiungere proprietà personalizzate. Utilizzare il seguente codice per caricare il documento:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Sostituire`"YOUR DOCUMENTS DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento.
 
-## الخطوة 3: إضافة خصائص مخصصة
+## Passaggio 3: aggiungi proprietà personalizzate
 
-الآن دعنا نضيف خصائص مخصصة إلى المستند. استخدم الكود التالي لإضافة الخصائص:
+Ora aggiungiamo proprietà personalizzate al documento. Utilizzare il codice seguente per aggiungere le proprietà:
 
 ```csharp
 CustomDocumentProperties customDocumentProperties = doc.CustomDocumentProperties;
@@ -42,13 +42,13 @@ customDocumentProperties.Add("Authorized Revision", doc.BuiltInDocumentPropertie
 customDocumentProperties.Add("Authorized Amount", 123.45);
 ```
 
-يتحقق هذا الرمز أولاً مما إذا كانت الخاصية "معتمد" موجودة بالفعل في الخصائص المخصصة. إذا كان موجودًا ، فستتوقف العملية. وبخلاف ذلك ، تتم إضافة الخصائص المخصصة إلى المستند.
+Questo codice controlla innanzitutto se la proprietà "Autorizzata" esiste già nelle proprietà personalizzate. Se esiste, il processo viene interrotto. In caso contrario, le proprietà personalizzate vengono aggiunte al documento.
 
-### مثال على شفرة المصدر لإضافة خصائص وثيقة مخصصة باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Aggiungi proprietà documento personalizzate utilizzando Aspose.Words per .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx");
 
@@ -64,6 +64,6 @@ customDocumentProperties.Add("Authorized Amount", 123.45);
 
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Assicurarsi di specificare il percorso del documento corretto nel file`dataDir` variabile.
 
-لقد تعلمت الآن كيفية إضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إضافة خصائصك المخصصة إلى مستنداتك.
+Ora hai imparato come aggiungere proprietà personalizzate a un documento utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata fornita in questo tutorial, puoi facilmente aggiungere le tue proprietà personalizzate ai tuoi documenti.

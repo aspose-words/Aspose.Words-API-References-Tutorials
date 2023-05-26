@@ -1,22 +1,22 @@
 ---
-title: أضف علامات ثنائية الاتجاه
-linktitle: أضف علامات ثنائية الاتجاه
-second_title: Aspose.Words لمراجع .NET API
-description: تعلم كيفية إضافة علامات ثنائية الاتجاه إلى مستند Word باستخدام Aspose.Words for .NET وإنشاء مستندات احترافية متعددة اللغات.
+title: 添加双向标记
+linktitle: 添加双向标记
+second_title: Aspose.Words for .NET API 参考
+description: 学习使用 Aspose.Words for .NET 将双向标记添加到 Word 文档并创建专业的多语言文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-txtsaveoptions/add-bidi-marks/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words القدرة على إضافة علامات ثنائية الاتجاه (ثنائية الاتجاه) إلى المستند. في هذا الدليل ، سنرشدك إلى كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لإضافة علامات ثنائية الاتجاه إلى مستند.
+Aspose.Words for .NET 是一个强大的库，用于在 C# 应用程序中创建、编辑和操作 Word 文档。 Aspose.Words 提供的功能之一是能够向文档添加 Bidi（双向）标记。在本指南中，我们将带您了解如何使用 Aspose.Words for .NET 的 C# 源代码为文档添加双向标记。
 
-## فهم مكتبة Aspose.Words
+## 理解 Aspose.Words 库
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك إضافة علامات ثنائية الاتجاه.
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库很重要。 Aspose.Words 是一个流行的库，它使处理 Word 文档变得简单而高效。它提供了用于创建、编辑和操作 Word 文档的广泛功能，包括添加双向标记。
 
-## إنشاء الوثيقة وإضافة المحتوى
+## 创建文档并添加内容
 
-تتمثل الخطوة الأولى في إنشاء مستند جديد وإضافة محتوى إليه. استخدم فئة المستند لإنشاء مثيل مستند جديد. ثم استخدم فئة DocumentBuilder لإضافة نص إلى المستند. هنا مثال :
+第一步是创建一个新文档并向其中添加内容。使用 Document 类创建一个新的文档实例。然后使用 DocumentBuilder 类向文档中添加文本。这是一个例子：
 
 ```csharp
 Document doc = new Document();
@@ -28,26 +28,26 @@ builder. Writen("שלום עולם!");
 builder. Writen("مرحبا بالعالم!");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند جديد واستخدام DocumentBuilder لإضافة نص. لقد أضفنا ثلاثة أسطر نصية: واحد بالإنجليزية والآخر بالعبرية والآخر بالعربية لإثبات إضافة محتوى بلغات مختلفة.
+在此示例中，我们创建一个新文档并使用 DocumentBuilder 添加文本。我们添加了三行文本：一行是英语，一行是希伯来语，一行是阿拉伯语，以演示添加不同语言的内容。
 
-## العلامات ثنائية الاتجاه المضافة
+## 添加了双向标记
 
-بمجرد إضافة المحتوى ، يمكننا الآن إضافة علامات ثنائية الاتجاه إلى المستند. لهذا ، نستخدم فئة TxtSaveOptions وقمنا بتعيين الخاصية AddBidiMarks على true. إليك الطريقة:
+添加内容后，我们现在可以将双向标记添加到文档中。为此，我们使用 TxtSaveOptions 类并将 AddBidiMarks 属性设置为 true。就是这样：
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 ```
 
-في هذا المثال ، قمنا بإنشاء مثيل لـ TxtSaveOptions وقمنا بتعيين الخاصية AddBidiMarks على true. بعد ذلك ، نستخدم طريقة Save لفئة Document لحفظ المستند بعلامات ثنائية الاتجاه.
+在此示例中，我们创建了一个 TxtSaveOptions 实例并将 AddBidiMarks 属性设置为 true。接下来，我们使用 Document 类的 Save 方法来保存带有双向标记的文档。
 
-### مثال على شفرة المصدر لوظيفة "Add Bidi Marks" مع Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的“添加双向标记”功能的示例源代码
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وإضافة محتوى
+//创建文档并添加内容
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
@@ -56,13 +56,13 @@ builder.ParagraphFormat.Bidi = true;
 builder. Writen("שלום עולם!");
 builder. Writen("مرحبا بالعالم!");
 
-// أضف علامات ثنائية الاتجاه
+//添加双向标记
 TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true
 
   };
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 ```
 
-## خاتمة
+## 结论
 
-في هذا الدليل ، أوضحنا كيفية استخدام Aspose.Words for .NET لإضافة علامات ثنائية الاتجاه إلى مستند Word باستخدام كود المصدر C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة إضافة علامات ثنائية الاتجاه إلى مستندات Word في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع تنسيق النص وإدارة اللغة ، مما يسمح لك بإنشاء مستندات متعددة اللغات بشكل احترافي.
+在本指南中，我们已经解释了如何使用 Aspose.Words for .NET 使用提供的 C# 源代码将双向标记添加到 Word 文档。按照提供的步骤，您可以在 C# 应用程序中轻松地将双向标记添加到 Word 文档。 Aspose.Words 为处理文本格式和语言管理提供了巨大的灵活性和强大的功能，使您能够专业地创建多语言文档。

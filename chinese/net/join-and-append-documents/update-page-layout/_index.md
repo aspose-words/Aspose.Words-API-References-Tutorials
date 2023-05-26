@@ -1,90 +1,90 @@
 ---
-title: تحديث تخطيط الصفحة
-linktitle: تحديث تخطيط الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديث تخطيط الصفحة عند الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: 更新页面布局
+linktitle: 更新页面布局
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何在使用 Aspose.Words for .NET 加入和附加 Word 文档时更新页面布局。
 type: docs
 weight: 10
 url: /zh/net/join-and-append-documents/update-page-layout/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة تحديث تخطيط الصفحة في Aspose.Words for .NET. تضمن هذه الميزة تحديث تخطيط الصفحة بشكل صحيح عند الانضمام إلى مستندات Word وإلحاقها.
+本教程将指导您完成使用 Aspose.Words for .NET 的更新页面布局功能的过程。此功能可确保在加入和附加 Word 文档时正确更新页面布局。
 
-## المتطلبات الأساسية
+## 先决条件
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+在开始之前，请确保您具备以下条件：
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. 安装了 Aspose.Words for .NET。您可以从 Aspose 网站下载它或通过 NuGet 安装它。
+2. Visual Studio 或任何其他 C# 开发环境。
 
-## الخطوة 1: تهيئة دلائل المستندات
+## 第 1 步：初始化文档目录
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+首先，您需要设置文档目录的路径。修改值`dataDir`变量到您的文档所在的路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## 第 2 步：加载源文档和目标文档
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+接下来，您需要使用 Aspose.Words 加载源文档和目标文档`Document`班级。更新文件名在`Document`根据您的文档名称构造函数。
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: تحديث تخطيط الصفحة لمستند الوجهة
+## 步骤 3：更新目标文档的页面布局
 
- للتأكد من تحديث تخطيط الصفحة بشكل صحيح قبل إلحاق المستند المصدر ، يمكنك استدعاء`UpdatePageLayout` الطريقة في المستند الوجهة.
+为确保在附加源文档之前正确更新页面布局，您可以调用`UpdatePageLayout`目标文档上的方法。
 
 ```csharp
 dstDoc.UpdatePageLayout();
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بمستند الوجهة
+## 第 4 步：将源文档附加到目标文档
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+现在，您可以使用`AppendDocument`的方法`Document`班级。这`ImportFormatMode.KeepSourceFormatting`参数确保在追加操作期间保留源格式。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: تحديث تخطيط الصفحة مرة أخرى
+## 第 5 步：再次更新页面布局
 
- بعد إلحاق المستند المصدر ، تحتاج إلى استدعاء`UpdatePageLayout`على المستند الوجهة مرة أخرى للتأكد من أن أي تغييرات يتم إجراؤها بعد عملية الإلحاق تنعكس في الإخراج المقدم.
+附加源文档后，您需要调用`UpdatePageLayout`再次对目标文档执行方法，以确保在附加操作之后所做的任何更改都反映在呈现的输出中。
 
 ```csharp
 dstDoc.UpdatePageLayout();
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## 第 6 步：保存最终文档
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة تحديث تخطيط الصفحة باستخدام ملحق`Save` طريقة`Document` فصل.
+最后，使用启用的更新页面布局功能保存合并的文档`Save`的方法`Document`班级。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 ```
 
-### مثال على شفرة المصدر لتحديث تخطيط الصفحة باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 更新页面布局的示例源代码
 
-إليك شفرة المصدر الكاملة لميزة "تحديث تخطيط الصفحة" في C # باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 在 C# 中“更新页面布局”功能的完整源代码：
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// إذا تم تحويل المستند الوجهة إلى PDF ، أو صورة ، إلخ.
-	// أو يتم استدعاء UpdatePageLayout قبل المستند المصدر. مُلحق ،
-	// ثم أي تغييرات يتم إجراؤها بعد ذلك لن تنعكس في الإخراج المقدم
+	//如果目标文档呈现为 PDF、图像等。
+	//或在源文档之前调用 UpdatePageLayout。附上，
+	//那么之后所做的任何更改都不会反映在渲染输出中
 	dstDoc.UpdatePageLayout();
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	// لكي يتم تحديث التغييرات لتقديم الإخراج ، يجب استدعاء UpdatePageLayout مرة أخرى.
-	// إذا لم يتم الاتصال به مرة أخرى ، فلن يظهر المستند المُلحق في إخراج العرض التالي.
+	//对于要更新到渲染输出的更改，必须再次调用 UpdatePageLayout。
+	//如果不再次调用，附加文档将不会出现在下一次渲染的输出中。
 	dstDoc.UpdatePageLayout();
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة تحديث تخطيط الصفحة باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع تحديث تخطيط الصفحة بشكل صحيح.
+就是这样！您已经使用 Aspose.Words for .NET 成功实现了更新页面布局功能。最终文档将包含页面布局已正确更新的合并内容。

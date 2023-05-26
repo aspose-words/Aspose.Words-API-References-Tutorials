@@ -1,17 +1,17 @@
 ---
-title: إزالة قيود القراءة فقط
-linktitle: إزالة قيود القراءة فقط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET.
+title: Entfernen Sie die Lesebeschränkung
+linktitle: Entfernen Sie die Lesebeschränkung
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Lesebeschränkung aus einem Word-Dokument entfernen.
 type: docs
 weight: 10
 url: /de/net/document-protection/remove-read-only-restriction/
 ---
-في هذا البرنامج التعليمي ، سنرشدك عبر خطوات استخدام ميزة إزالة قيود القراءة فقط Aspose.Words for .NET. تتيح لك هذه الميزة إزالة قيود القراءة فقط من مستند Word لجعله قابلاً للتحرير. اتبع الخطوات التالية:
+In diesem Tutorial führen wir Sie durch die Schritte zur Verwendung der Funktion zum Entfernen der schreibgeschützten Einschränkung von Aspose.Words für .NET. Mit dieser Funktion können Sie die Lesebeschränkung aus einem Word-Dokument entfernen, um es bearbeitbar zu machen. Folgen Sie den unteren Schritten:
 
-## الخطوة 1: إنشاء المستند وإعداد الحماية
+## Schritt 1: Erstellen des Dokuments und Festlegen des Schutzes
 
-ابدأ بإنشاء مثيل لفئة المستند:
+Erstellen Sie zunächst eine Instanz der Document-Klasse:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -19,50 +19,50 @@ Document doc = new Document();
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
-قم بتعيين كلمة مرور للمستند باستخدام خاصية SetPassword () للكائن WriteProtection:
+Legen Sie mithilfe der SetPassword()-Eigenschaft des WriteProtection-Objekts ein Kennwort für das Dokument fest:
 
-تأكد من استبدال "MyPassword" بكلمة المرور الفعلية التي استخدمتها لحماية المستند.
+Ersetzen Sie „MyPassword“ unbedingt durch das tatsächliche Passwort, das Sie zum Schutz des Dokuments verwendet haben.
 
-## الخطوة 2: إزالة قيود القراءة فقط
+## Schritt 2: Entfernen Sie die Lesebeschränkung
 
-لإزالة تقييد القراءة فقط ، قم بتعيين الخاصية ReadOnlyRecommended إلى false:
+Um die Lesebeschränkung zu entfernen, legen Sie die ReadOnlyRecommended-Eigenschaft auf „false“ fest:
 
 ```csharp
 doc.WriteProtection.ReadOnlyRecommended = false;
 ```
 
-## الخطوة 3: تطبيق حماية غير مقيدة
+## Schritt 3: Uneingeschränkten Schutz anwenden
 
-أخيرًا ، قم بتطبيق حماية غير مقيدة باستخدام طريقة حماية كائن المستند:
+Wenden Sie abschließend uneingeschränkten Schutz mit der Protect()-Methode des Document-Objekts an:
 
 ```csharp
 doc.Protect(ProtectionType.NoProtection);
 doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند بدون قيود القراءة فقط.
+Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen angeben, um das Dokument ohne die schreibgeschützte Beschränkung zu speichern.
 
-### مثال على شفرة المصدر الخاصة بإزالة القيود للقراءة فقط باستخدام Aspose.Words for .NET
+### Beispielquellcode zum Entfernen der Nur-Lese-Einschränkung mit Aspose.Words für .NET
 
-فيما يلي شفرة المصدر الكاملة لإزالة قيود القراءة فقط باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Quellcode zum Entfernen der Lesebeschränkung mit Aspose.Words für .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	
-	// أدخل كلمة مرور يصل طولها إلى 15 حرفًا.
+	// Geben Sie ein bis zu 15 Zeichen langes Passwort ein.
 	doc.WriteProtection.SetPassword("MyPassword");
 
-	// قم بإزالة خيار القراءة فقط.
+	// Entfernen Sie die schreibgeschützte Option.
 	doc.WriteProtection.ReadOnlyRecommended = false;
 
-	// تطبيق الحماية ضد الكتابة دون أي حماية.
+	// Schreibschutz ohne Schutz anwenden.
 	doc.Protect(ProtectionType.NoProtection);
 	doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة إزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET.
+Wenn Sie diese Schritte befolgen, können Sie mit Aspose.Words für .NET ganz einfach die Lesebeschränkung aus einem Word-Dokument entfernen.
 

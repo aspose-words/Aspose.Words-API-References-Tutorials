@@ -1,26 +1,26 @@
 ---
-title: احصل على أنواع المراجعة
-linktitle: احصل على أنواع المراجعة
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على أنواع المراجعات في مستند Word باستخدام Aspose.Words for .NET.
+title: Obtener tipos de revisión
+linktitle: Obtener tipos de revisión
+second_title: Referencia de API de Aspose.Words para .NET
+description: Obtenga tipos de revisión en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-revisions/get-revision-types/
 ---
 
-في هذا الدليل التدريجي ، سنخبرك بكيفية الحصول على أنواع المراجعات في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+En esta guía paso a paso, le diremos cómo obtener los tipos de revisiones en un documento de Word usando Aspose.Words para .NET. Le proporcionaremos el código fuente completo y le mostraremos cómo formatear la salida de Markdown.
 
-## الخطوة 1: تحميل المستند
+## Paso 1: Cargar el documento
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+El primer paso es cargar el documento que contiene las revisiones.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة الثانية: تصفح الفقرات
+## Paso 2: recorre los párrafos
 
-بعد ذلك ، سنتصفح فقرات المستند ونتحقق من أنواع المراجعات المرتبطة بكل فقرة.
+A continuación, repasaremos los párrafos del documento y comprobaremos los tipos de revisiones asociados con cada párrafo.
 
 ```csharp
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
@@ -33,9 +33,9 @@ for (int i = 0; i < paragraphs.Count; i++)
 }
 ```
 
-### مثال على شفرة المصدر للحصول على أنواع المراجعة باستخدام Aspose.Words for .NET
+### Código fuente de ejemplo para Obtener tipos de revisión usando Aspose.Words para .NET
 
-فيما يلي رمز المصدر الكامل للحصول على أنواع المراجعة في مستند باستخدام Aspose.Words for .NET:
+Aquí está el código fuente completo para obtener tipos de revisión en un documento usando Aspose.Words para .NET:
 
 ```csharp
 

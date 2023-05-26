@@ -1,55 +1,55 @@
 ---
-title: تعيين نمط التحكم في المحتوى
-linktitle: تعيين نمط التحكم في المحتوى
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين نمط عنصر تحكم المحتوى في مستند Word باستخدام Aspose.Words for .NET ، مع تطبيق تنسيق متسق.
+title: İçerik Kontrol Stilini Ayarla
+linktitle: İçerik Kontrol Stilini Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Tutarlı biçimlendirme uygulayarak Aspose.Words for .NET kullanarak bir Word belgesinde içerik kontrolünün stilini nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/set-content-control-style/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية تعيين نمط عنصر تحكم المحتوى في مستند Word باستخدام Aspose.Words for .NET. يمكنك تطبيق أنماط محددة مسبقًا أو مخصصة على عناصر تحكم المحتوى من أجل تنسيق متناسق.
+Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesinde içerik denetimi stilinin nasıl ayarlanacağını açıklar. Tutarlı biçimlendirme için içerik denetimlerine önceden tanımlanmış veya özel stiller uygulayabilirsiniz.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Önkoşullar
+Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words for .NET kitaplığı yüklendi.
+- Temel C# bilgisi ve Word belgeleriyle çalışma.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## 1. Adım: Belge Dizinini kurun
+ Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند واسترجع عنصر التحكم في المحتوى
- قم بتحميل مستند Word باستخدام ملف`Document` مُنشئ ، تمرير المسار إلى المستند كمعامل. استرجع عنصر التحكم في المحتوى المطلوب من المستند. في هذا المثال ، نفترض أن عنصر التحكم في المحتوى هو أول علامة منظمة للمستند في المستند.
+## 2. Adım: Belgeyi Yükleyin ve İçerik Denetimini Alın
+ kullanarak Word belgesini yükleyin.`Document` yapıcı, belgenin yolunu bir parametre olarak iletir. Belgeden istenen içerik denetimini alın. Bu örnekte, içerik kontrolünün belgedeki ilk yapılandırılmış belge etiketi olduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
-## الخطوة 3: استرجع النمط وطبقه على التحكم في المحتوى
- استرجع النمط المطلوب من مجموعة أنماط المستند. في هذا المثال ، نسترجع نمط "اقتباس" باستخدام`StyleIdentifier.Quote` . بعد ذلك ، قم بتعيين النمط الذي تم استرداده إلى ملف`Style` خاصية علامة المستند المنظم.
+## 3. Adım: Stili Alın ve İçerik Kontrolüne Uygulayın
+ Belgenin stiller koleksiyonundan istediğiniz stili alın. Bu örnekte, kullanarak "Alıntı" stilini alıyoruz.`StyleIdentifier.Quote` . Ardından, alınan stili şuna atayın:`Style` yapılandırılmış belge etiketinin özelliği.
 
 ```csharp
 Style style = doc.Styles[StyleIdentifier.Quote];
 sdt.Style = style;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند المعدل إلى الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.SetContentControlStyle.docx".
+## 4. Adım: Belgeyi Kaydedin
+ Değiştirilen belgeyi belirtilen dizine kaydedin.`Save` yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.SetContentControlStyle.docx" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 ```
 
-### مثال على التعليمات البرمجية المصدر لـ Set Content Control Style باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak İçerik Kontrol Stilini Ayarlamak için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -59,4 +59,4 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 	doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تعيين نمط عنصر تحكم المحتوى في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenizde bir içerik kontrolünün stilini başarıyla ayarladınız.

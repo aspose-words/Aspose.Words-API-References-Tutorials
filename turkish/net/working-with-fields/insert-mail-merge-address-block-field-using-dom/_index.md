@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM
-linktitle: أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل كتلة عنوان دمج المراسلات في مستندات Word باستخدام Aspose.Words for .NET.
+title: DOM Kullanarak Adres Mektup Birleştirme Adres Bloğu Alanı Ekleme
+linktitle: DOM Kullanarak Adres Mektup Birleştirme Adres Bloğu Alanı Ekleme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile Word belgelerinize adres mektup birleştirme adres bloğu alanını nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/insert-mail-merge-address-block-field-using-dom/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج حقل كتلة عنوان دمج المراسلات" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aspose.Words for .NET'in "Adres Mektup Birleştirme Adres Bloğu Alanı Ekle" özelliğini kullanan aşağıdaki C# kaynak kodunu açıklayan adım adım bir kılavuz. İstenen sonuçları elde etmek için her adımı dikkatlice uyguladığınızdan emin olun.
 
-## الخطوة 1: إعداد دليل المستند
+## 1. Adım: Belge Dizini Kurulumu
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## 2. Adım: Document ve DocumentBuilder'ı Oluşturma
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Yeni bir belge oluşturarak ve bir DocumentBuilder başlatarak başlıyoruz.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تحريك المؤشر إلى الفقرة
+## 3. Adım: İmleci paragrafa taşıma
 
- نحن نستخدم برنامج DocumentBuilder`MoveTo()` طريقة لتحريك المؤشر إلى الفقرة حيث نريد إدراج حقل كتلة عنوان دمج المراسلات.
+ DocumentBuilder'ı kullanıyoruz`MoveTo()` imleci adres mektup birleştirme adres bloğu alanını eklemek istediğimiz paragrafa taşıma yöntemi.
 
 ```csharp
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 builder. MoveTo(para);
 ```
 
-## الخطوة 4: إدراج حقل كتلة عنوان دمج المراسلات
+## 4. Adım: Adres Mektup Birleştirme Adres Bloğu Alanını Ekleme
 
- نحن نستخدم برنامج DocumentBuilder`InsertField()` طريقة لإدراج حقل كتلة عنوان دمج المراسلات في الفقرة.
+ DocumentBuilder'ı kullanıyoruz`InsertField()` Paragrafa adres mektup birleştirme adres bloğu alanı ekleme yöntemi.
 
 ```csharp
 FieldAddressBlock field = (FieldAddressBlock)builder.InsertField(FieldType.FieldAddressBlock, false);
 ```
 
-نقوم بعد ذلك بتكوين خصائص حقل كتلة العنوان لتحديد الخيارات المناسبة ، مثل تضمين اسم البلد / المنطقة ، وتنسيق العنوان وفقًا للبلد / المنطقة ، وأسماء البلد / المنطقة المستبعدة ، وتنسيق الاسم والعنوان ، ومعرف اللغة.
+Ardından, ülke/bölge adını dahil etme, adresi ülkeye/bölgeye göre biçimlendirme, hariç tutulan ülke/bölge adları, ad ve adres biçimi ve dil tanımlayıcı gibi uygun seçenekleri belirterek adres bloğu alanının özelliklerini yapılandırırız.
 
 ```csharp
 field.IncludeCountryOrRegionName = "1";
@@ -54,13 +54,13 @@ field.NameAndAddressFormat = "Test3";
 field.LanguageId = "Test 4";
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Son olarak, diyoruz`Update()` alanı güncelleme yöntemi.
 
 ```csharp
 field. Update();
 ```
 
-### نموذج لشفرة المصدر لإدخال حقل كتلة عنوان دمج المراسلات مع Aspose.Words for .NET
+### Aspose.Words for .NET ile adres mektup birleştirme adres bloğu alanı eklemek için örnek kaynak kodu
 
 ```csharp
 Document doc = new Document();
@@ -70,24 +70,24 @@ Paragraph para = (Paragraph) doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
 builder. MoveTo(para);
 
-// نريد إدراج كتلة عنوان لدمج البريد مثل هذا:
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3 \\ l \ "Test 4 \"}
+// Bunun gibi bir adres mektup birleştirme adres bloğu eklemek istiyoruz:
+// { ADDRESSBLOCK \\c 1 \\d \\e Test2 \\f Test3 \\l \"Test 4\" }
 
 FieldAddressBlock field = (FieldAddressBlock) builder.InsertField(FieldType.FieldAddressBlock, false);
 
-// {ADDRESSBLOCK \\ c 1 "}
+// { ADRES BLOĞU \\c 1" }
 field.IncludeCountryOrRegionName = "1";
 
-// {ADDRESSBLOCK \\ c 1 \\ d "}
+// { ADRES BLOĞU \\c 1 \\d" }
 field.FormatAddressOnCountryOrRegion = true;
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2}
+// { ADRES BLOĞU \\c 1 \\d \\e Test2 }
 field.ExcludedCountryOrRegionName = "Test2";
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3}
+// { ADDRESSBLOCK \\c 1 \\d \\e Test2 \\f Test3 }
 field.NameAndAddressFormat = "Test3";
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3 \\ l \ "Test 4 \"}
+// { ADDRESSBLOCK \\c 1 \\d \\e Test2 \\f Test3 \\l \"Test 4\" }
 field.LanguageId = "Test 4";
 
 field. Update();

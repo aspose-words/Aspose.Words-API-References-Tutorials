@@ -1,23 +1,23 @@
 ---
-title: التعامل مع خيارات المسافات
-linktitle: التعامل مع خيارات المسافات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدارة المساحات في مستندات TXT الخاصة بك باستخدام Aspose.Words for .NET. قم بإزالة المسافات غير الضرورية وتحسين إمكانية القراءة.
+title: Kol Boşlukları Seçenekleri
+linktitle: Kol Boşlukları Seçenekleri
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile TXT belgelerinizdeki boşlukları nasıl yöneteceğinizi öğrenin. Gereksiz boşlukları kaldırın ve okunabilirliği artırın.
 type: docs
 weight: 10
 url: /tr/net/programming-with-txtloadoptions/handle-spaces-options/
 ---
 
-في هذا البرنامج التعليمي ، سنستكشف كود المصدر C # المقدم لوظيفة "إدارة المساحات باستخدام خيارات تحميل TXT" مع Aspose.Words for .NET. تتيح لك هذه الميزة تحديد سلوك معالجة المسافات البيضاء عند تحميل مستند TXT.
+Bu öğreticide, Aspose.Words for .NET ile "TXT Yükleme Seçenekleri ile Alanları Yönetme" işlevselliği için sağlanan C# kaynak kodunu keşfedeceğiz. Bu özellik, bir TXT belgesi yüklerken boşluk işleme davranışını belirtmenize olanak tanır.
 
-## الخطوة الأولى: تهيئة البيئة
+## 1. Adım: Ortamı ayarlama
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
-## الخطوة 2: إنشاء مستند نصي
+## 2. Adım: Metin belgesini oluşturma
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 const string textDoc = "Line 1\n" +
@@ -25,9 +25,9 @@ const string textDoc = "Line 1\n" +
                         "Line 3";
 ```
 
-في هذه الخطوة ، نقوم بإنشاء سلسلة نصية تحاكي مستندًا نصيًا يحتوي على أسطر بها مسافات بادئة وزائدة.
+Bu adımda, başında ve sonunda boşluk bulunan satırlar içeren bir metin belgesini simüle eden bir metin dizesi yaratıyoruz.
 
-## الخطوة 3: تكوين خيارات التحميل
+## 3. Adım: Yükleme seçeneklerini yapılandırma
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions
@@ -37,32 +37,32 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- في هذه الخطوة ، نقوم بتهيئة الخيارات لتحميل مستند TXT. نخلق ملف`TxtLoadOptions` كائن وتعيين`LeadingSpacesOptions` و`TrailingSpacesOptions` خصائص`TxtLeadingSpacesOptions.Trim` و`TxtTrailingSpacesOptions.Trim` على التوالى. هذا يخبر Aspose. Words بإزالة المسافات البادئة والزائدة من الأسطر عند تحميل المستند.
+ Bu adımda, TXT belgesini yükleme seçeneklerini yapılandırıyoruz. yeni bir tane yaratıyoruz`TxtLoadOptions` nesne ve ayarlayın`LeadingSpacesOptions` Ve`TrailingSpacesOptions` özellikleri`TxtLeadingSpacesOptions.Trim` Ve`TxtTrailingSpacesOptions.Trim` sırasıyla. Bu, Aspose.Words'e belge yüklenirken satırların başındaki ve sonundaki boşlukları kaldırmasını söyler.
 
-## الخطوة 4: تحميل المستند
+## 4. Adım: Belgeyi yükleme
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير دفق الذاكرة الذي يحتوي على سلسلة نصية محددة وخيارات التحميل.
+ Bu adımda, kullanarak belgeyi yüklüyoruz`Document` yöntemi ve belirtilen metin dizesini ve yükleme seçeneklerini içeren bellek akışını geçirme.
 
-## الخطوة 5: احفظ المستند
+## 5. Adım: Belgeyi kaydedin
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ المستند الناتج بتنسيق docx. باستخدام الامتداد`Save` الطريقة وتمرير المسار إلى ملف الإخراج.
+ Bu son adımda, ortaya çıkan belgeyi kullanarak .docx formatında kaydediyoruz.`Save` yöntemi ve yolu çıktı dosyasına geçirme.
 
-يمكنك الآن تشغيل الكود المصدري لتحميل المستند النصي عن طريق تحديد خيارات معالجة المسافات. سيتم حفظ المستند الناتج في الدليل المحدد باسم "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx".
+Artık boşluk işleme seçeneklerini belirterek metin belgesini yüklemek için kaynak kodu çalıştırabilirsiniz. Elde edilen belge belirtilen dizine "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx" adıyla kaydedilecektir.
 
-### نموذج رمز مصدر لميزة إدارة المساحة مع خيارات تحميل TXT مع Aspose.Words for .NET*
+### Aspose.Words for .NET ile TXT Yükleme Seçenekleri ile Alan Yönetimi Özelliği için Örnek Kaynak Kodu*
 
 ```csharp
 
             
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 const string textDoc = "      Line 1 \n" +
@@ -82,18 +82,18 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx")
         
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة إدارة المساحات باستخدام خيارات تحميل TXT في Aspose.Words for .NET. لقد تعلمنا كيفية تحديد سلوك التعامل مع المسافات البيضاء عند تحميل مستند TXT.
+Bu öğreticide, Aspose.Words for .NET'te TXT yükleme seçenekleriyle alanları yönetmenin işlevselliğini inceledik. Bir TXT belgesi yüklerken boşluk işleme davranışını nasıl belirleyeceğimizi öğrendik.
 
-هذه الميزة مفيدة جدًا للتعامل مع المسافات غير الضرورية على يسار ويمين الأسطر في المستند. من خلال تكوين خيارات التحميل المناسبة ، يمكنك بسهولة إزالة هذه المساحات غير المرغوب فيها ، مما يساعد على جعل محتوى المستند أكثر وضوحًا وقابلية للقراءة.
+Bu özellik, bir belgedeki satırların solundaki ve sağındaki gereksiz boşluklarla uğraşmak için çok kullanışlıdır. Uygun yükleme seçeneklerini yapılandırarak, belge içeriğini daha temiz ve daha okunaklı hale getirmeye yardımcı olan bu istenmeyen boşlukları kolayca kaldırabilirsiniz.
 
-يوفر Aspose.Words for .NET العديد من الميزات المتقدمة لمعالجة المستندات وإنشائها. تعد إدارة المساحات عند تحميل مستند TXT واحدة من العديد من الأدوات القوية التي تضعها تحت تصرفك.
+Aspose.Words for .NET, belge işleme ve oluşturma için birçok gelişmiş özellik sunar. Bir TXT belgesini yüklerken boşlukları yönetmek, kullanımınıza sunduğu birçok güçlü araçtan biridir.
 
- من المهم اختيار خيارات إدارة المساحة التي تناسب السيناريو الخاص بك بشكل أفضل. في هذا المثال ، استخدمنا الامتداد`Trim`خيارات لإزالة المسافات غير الضرورية من بداية ونهاية السطر. ومع ذلك ، لدى Aspose.Words أيضًا خيارات أخرى للاحتفاظ بالمسافات أو إزالتها تمامًا أو الاحتفاظ بها كما هي.
+ Özel senaryonuza en uygun alan yönetimi seçeneklerini seçmek önemlidir. Bu örnekte,`Trim`satırın başındaki ve sonundaki gereksiz boşlukları kaldırmak için seçenekler. Ancak Aspose.Words'ün ayrıca boşlukları korumak, tamamen kaldırmak veya oldukları gibi tutmak için başka seçenekleri de vardır.
 
-لا تنس تكييف هذه الخيارات وفقًا لاحتياجاتك الخاصة وهيكل مستندات TXT الخاصة بك.
+Bu seçenekleri özel ihtiyaçlarınıza ve TXT belgelerinizin yapısına göre uyarlamayı unutmayın.
 
-باستخدام Aspose.Words for .NET ، يمكنك بسهولة معالجة المسافات البيضاء في مستنداتك ، وتحسين جودة التخطيط وقابلية قراءة المحتوى.
+Aspose.Words for .NET ile belgelerinizdeki boşlukları kolayca işleyerek mizanpaj kalitesini ve içerik okunabilirliğini artırabilirsiniz.
 
-لذلك ، لا تتردد في دمج إدارة المسافات البيضاء مع خيارات تحميل TXT في Aspose.Words لمشاريع .NET واستفد من مزاياها لإنشاء مستندات جيدة التنسيق وسهلة القراءة.
+Bu nedenle, Aspose.Words for .NET projelerinizde boşluk yönetimini TXT yükleme seçenekleriyle entegre etmekten çekinmeyin ve iyi biçimlendirilmiş ve okunması kolay belgeler oluşturmak için avantajlarından yararlanın.

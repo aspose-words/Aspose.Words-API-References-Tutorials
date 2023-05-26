@@ -1,55 +1,55 @@
 ---
-title: قم بتوسيع التنسيق في الخلايا والصف من النمط
-linktitle: قم بتوسيع التنسيق في الخلايا والصف من النمط
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتوسيع التنسيق إلى الخلايا والصفوف من نمط الجدول باستخدام Aspose.Words for .NET.
+title: Espandi la formattazione su celle e riga dallo stile
+linktitle: Espandi la formattazione su celle e riga dallo stile
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata per espandere la formattazione a celle e righe da uno stile di tabella utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/expand-formatting-on-cells-and-row-from-style/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتوسيع التنسيق إلى الخلايا والصفوف من نمط باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تطبيق تنسيق نمط الجدول على خلايا وصفوف معينة في مستندات Word باستخدام Aspose.Words for .NET.
+In questo tutorial, ti guideremo attraverso il processo dettagliato per espandere la formattazione a celle e righe da uno stile utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come applicare la formattazione in stile tabella a celle e righe specifiche nei tuoi documenti Word utilizzando Aspose.Words per .NET.
 
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يوجد فيه مستند Word الخاص بك. استبدل "دليل المستندات" بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+Innanzitutto, devi impostare il percorso della directory dei documenti. Qui è dove si trova il tuo documento Word. Sostituisci "LA TUA CARTELLA DEI DOCUMENTI" con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند الحالي
- بعد ذلك ، تحتاج إلى تحميل مستند Word الموجود في مثيل`Document` فصل.
+## Passaggio 2: carica il documento esistente
+ Successivamente, è necessario caricare il documento Word esistente in un'istanza del file`Document` classe.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: اذهب إلى الخلية الأولى من الجدول الأول
- للبدء ، نحتاج إلى الانتقال إلى الخلية الأولى من الجدول الأول في المستند. نحن نستخدم ال`GetChild()` و`FirstRow.FirstCell` طرق للحصول على المرجع للخلية الأولى.
+## Passaggio 3: vai alla prima cella della prima tabella
+ Per iniziare, dobbiamo navigare fino alla prima cella della prima tabella nel documento. Noi usiamo il`GetChild()` E`FirstRow.FirstCell` metodi per ottenere il riferimento alla prima cella.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Cell firstCell = table.FirstRow.FirstCell;
 ```
 
-## الخطوة 4: إظهار التنسيق الأولي للخلايا
-قبل توسيع أنماط الجدول ، نعرض لون الخلفية الحالي للخلية. يجب أن يكون هذا فارغًا لأن التنسيق الحالي مخزن في نمط الجدول.
+## Passaggio 4: mostra la formattazione iniziale della cella
+Prima di espandere gli stili della tabella, visualizziamo il colore di sfondo corrente della cella. Questo dovrebbe essere vuoto perché la formattazione corrente è memorizzata nello stile della tabella.
 
 ```csharp
 Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
 Console.WriteLine("Shading cell before style expansion: " + cellShadingBefore);
 ```
 
-## الخطوة 5: قم بتوسيع أنماط الجدول إلى التنسيق المباشر
- نقوم الآن بتوسيع أنماط الجدول لتوجيه التنسيق باستخدام المستند`ExpandTableStylesToDirectFormatting()` طريقة.
+## Passaggio 5: espandere gli stili di tabella alla formattazione diretta
+ Ora espandiamo gli stili di tabella per indirizzare la formattazione utilizzando quelli del documento`ExpandTableStylesToDirectFormatting()` metodo.
 
 ```csharp
 doc.ExpandTableStylesToDirectFormatting();
 ```
 
-## الخطوة 6: إظهار تنسيق الخلية بعد توسيع النمط
-نعرض الآن لون خلفية الخلية بعد توسيع أنماط الجدول. يجب تطبيق لون خلفية أزرق من نمط الجدول.
+## Passaggio 6: mostra la formattazione della cella dopo l'espansione dello stile
+Ora visualizziamo il colore di sfondo della cella dopo aver espanso gli stili di tabella. Un colore di sfondo blu dovrebbe essere applicato dallo stile della tabella.
 
 ```csharp
 Color cellShadingAfter = firstCell.CellFormat.Shading.BackgroundPatternColor;
@@ -58,26 +58,26 @@ Console.WriteLine("
 Shading the cell after style expansion: " + cellShadingAfter);
 ```
 
-### عينة من التعليمات البرمجية المصدر لتوسيع التنسيق على الخلايا والصف من النمط باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per espandere la formattazione su celle e riga dallo stile utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
-	// احصل على الخلية الأولى من الجدول الأول في المستند.
+	// Ottieni la prima cella della prima tabella nel documento.
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	Cell firstCell = table.FirstRow.FirstCell;
-	// قم أولاً بطباعة لون تظليل الخلية.
-	// يجب أن يكون هذا فارغًا حيث يتم تخزين التظليل الحالي في نمط الجدول.
+	// Per prima cosa stampa il colore dell'ombreggiatura della cella.
+	// Questo dovrebbe essere vuoto poiché l'ombreggiatura corrente è memorizzata nello stile della tabella.
 	Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
 	Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
 	doc.ExpandTableStylesToDirectFormatting();
-	// الآن قم بطباعة تظليل الخلية بعد توسيع أنماط الجدول.
-	// يجب تطبيق لون نقش خلفية أزرق من نمط الجدول.
+	// Ora stampa l'ombreggiatura della cella dopo aver espanso gli stili di tabella.
+	// Dovrebbe essere stato applicato un colore del motivo di sfondo blu dallo stile della tabella.
 	Color cellShadingAfter = firstCell.CellFormat.Shading.BackgroundPatternColor;
 	Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية توسيع التنسيق إلى الخلايا والصفوف من نمط الجدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تطبيق تنسيق نمط الجدول على خلايا وصفوف معينة في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تخصيص التخطيط والعرض التقديمي لمستندات Word الخاصة بك.
+## Conclusione
+In questo tutorial, abbiamo imparato come espandere la formattazione a celle e righe da uno stile di tabella utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata, puoi facilmente applicare la formattazione dello stile tabella a celle e righe specifiche nei tuoi documenti Word. Aspose.Words offre un'API potente e flessibile per la manipolazione e la formattazione delle tabelle nei tuoi documenti. Con questa conoscenza, puoi personalizzare ulteriormente il layout e la presentazione dei tuoi documenti Word.

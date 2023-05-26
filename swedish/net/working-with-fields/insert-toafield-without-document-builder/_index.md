@@ -1,35 +1,35 @@
 ---
-title: أدخل حقل TOA بدون Document Builder
-linktitle: أدخل حقل TOA بدون Document Builder
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإدخال حقل TOA بدون Document Builder باستخدام Aspose.Words for .NET.
+title: Infoga TOA-fält utan dokumentbyggare
+linktitle: Infoga TOA-fält utan dokumentbyggare
+second_title: Aspose.Words för .NET API Referens
+description: Steg för steg guide för att infoga TOA-fält utan Document Builder med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/insert-toafield-without-document-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "TOA Field Insertion" في Aspose.Words for .NET. اتبع كل خطوة بعناية للحصول على النتائج المرجوة.
+Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som använder funktionen "TOA Field Insertion" i Aspose.Words för .NET. Följ varje steg noggrant för att få önskat resultat.
 
-## الخطوة 1: إعداد دليل المستند
+## Steg 1: Installation av dokumentkatalog
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## Steg 2: Skapa dokumentet och stycket
 
-نبدأ بإنشاء مستند جديد وتهيئة فقرة.
+Vi börjar med att skapa ett nytt dokument och initialisera ett stycke.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 3: إدخال حقل TA
+## Steg 3: Infoga TA-fältet
 
-نستخدم فئة FieldTA لإدراج حقل TA في الفقرة.
+Vi använder klassen FieldTA för att infoga ett TA-fält i stycket.
 
 ```csharp
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
@@ -37,56 +37,56 @@ fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 ```
 
-## الخطوة 4: إضافة الفقرة إلى نص المستند
+## Steg 4: Lägga till stycket i dokumentets brödtext
 
-نضيف الفقرة التي تحتوي على حقل TA إلى نص المستند.
+Vi lägger till stycket som innehåller TA-fältet i dokumentets brödtext.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## الخطوة 5: إنشاء فقرة لحقل TOA
+## Steg 5: Skapa stycket för TOA-fältet
 
-نقوم بإنشاء فقرة جديدة لحقل TOA.
+Vi skapar ett nytt stycke för TOA-fältet.
 
 ```csharp
 para = new Paragraph(doc);
 ```
 
-## الخطوة 6: إدخال حقل TOA
+## Steg 6: Infoga TOA-fältet
 
-نستخدم فئة FieldToa لإدراج حقل TOA في الفقرة.
+Vi använder klassen FieldToa för att infoga ett TOA-fält i stycket.
 
 ```csharp
 FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 ```
 
-## الخطوة 7: إضافة الفقرة إلى نص المستند
+## Steg 7: Lägga till stycket i dokumentets brödtext
 
-نضيف الفقرة التي تحتوي على حقل TOA إلى نص المستند.
+Vi lägger till stycket som innehåller TOA-fältet i dokumentets brödtext.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## الخطوة 8: تحديث TOA Field
+## Steg 8: Uppdatera TOA-fältet
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث حقل TOA.
+ Slutligen kallar vi`Update()` metod för att uppdatera TOA-fältet.
 
 ```csharp
 fieldToa.Update();
 ```
 
-### مثال على رمز المصدر لإدخال حقل TOA بدون Document Builder مع Aspose.Words for .NET
+### Källkodsexempel för TOA-fältinfogning utan Document Builder med Aspose.Words för .NET
 
 ```csharp
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
-// نريد إدخال حقول TA و TOA مثل هذا:
-// {TA \ c 1 \ l "القيمة 0"}
-// {TOA \ c 1}
+// Vi vill infoga TA- och TOA-fält så här:
+// { TA \c 1 \l "Värde 0" }
+// { TOA \c 1 }
 
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);
 fieldTA.EntryCategory = "1";

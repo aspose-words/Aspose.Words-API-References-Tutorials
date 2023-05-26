@@ -1,70 +1,70 @@
 ---
-title: ضع علامة على محاذاة تسمية متعددة الأسطر
-linktitle: ضع علامة على محاذاة تسمية متعددة الأسطر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية محاذاة تسميات التجزئة متعددة الأسطر في محور الرسم البياني باستخدام Aspose.Words for .NET.
+title: Aktivieren Sie die Option „Mehrzeilige Beschriftungsausrichtung“.
+linktitle: Aktivieren Sie die Option „Mehrzeilige Beschriftungsausrichtung“.
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mehrzeilige Markierungsbeschriftungen in einer Diagrammachse ausrichten.
 type: docs
 weight: 10
 url: /de/net/programming-with-charts/tick-multi-line-label-alignment/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين محاذاة تسميات التجزئة متعددة الأسطر في محور المخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط والوصول إلى المحور وتعديل محاذاة تسمية التجزئة.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET die Ausrichtung von mehrzeiligen Markierungen in einer Diagrammachse festlegen. Der bereitgestellte Quellcode zeigt, wie Sie ein Diagramm erstellen, auf die Achse zugreifen und die Ausrichtung der Teilstrichbeschriftung ändern.
 
-## الخطوة 1: قم بإعداد المشروع
+## Schritt 1: Richten Sie das Projekt ein
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words für .NET-Bibliothek installiert. Sie können es von der offiziellen Aspose-Website herunterladen oder den NuGet-Paketmanager verwenden, um es zu installieren.
+- Ein Dokumentverzeichnispfad, in dem das Ausgabedokument gespeichert wird.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Erstelle eine neue`Document` Objekt und a`DocumentBuilder` um das Dokument zu erstellen.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط مبعثر في المستند.
+ Als nächstes verwenden Sie die`InsertChart` Methode der`DocumentBuilder` um ein Streudiagramm in das Dokument einzufügen.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
 ChartAxis axis = shape.Chart.AxisX;
 ```
 
-## الخطوة 3: ضبط محاذاة تسمية التجزئة
+## Schritt 3: Ausrichtung der Teilstrichbeschriftung festlegen
 
- لتعيين محاذاة تسميات التجزئة متعددة الأسطر ، قم بالوصول إلى`AxisX` خاصية الرسم البياني وتعيين`TickLabelAlignment` الخاصية للمحاذاة المطلوبة. في هذا المثال ، قمنا بتعيين المحاذاة إلى`ParagraphAlignment.Right`.
+ Um die Ausrichtung mehrzeiliger Häkchenbeschriftungen festzulegen, greifen Sie auf zu`AxisX` Eigenschaft des Diagramms und legen Sie fest`TickLabelAlignment` Eigenschaft in die gewünschte Ausrichtung. In diesem Beispiel legen wir die Ausrichtung auf fest`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
 ```
 
-## الخطوة 4: احفظ المستند
+## Schritt 4: Speichern Sie das Dokument
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Speichern Sie abschließend das Dokument mit im angegebenen Verzeichnis`Save` Methode der`Document` Objekt.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 ```
 
-هذا يكمل تنفيذ إعداد محاذاة تسمية العلامات متعددة الأسطر باستخدام Aspose.Words for .NET.
+Damit ist die Implementierung der Einstellung der mehrzeiligen Markierungsausrichtung für Häkchen mithilfe von Aspose.Words für .NET abgeschlossen.
 
-### مثال على شفرة المصدر لـ Tick Multi Line Label Alignment باستخدام Aspose.Words for .NET 
+### Beispielquellcode für die Ausrichtung mehrzeiliger Markierungen mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
 	ChartAxis axis = shape.Chart.AxisX;
-	// هذه الخاصية لها تأثير فقط للتسميات متعددة الخطوط.
+	// Diese Eigenschaft hat nur Auswirkungen auf mehrzeilige Etiketten.
 	axis.TickLabelAlignment = ParagraphAlignment.Right;
 	doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 ```

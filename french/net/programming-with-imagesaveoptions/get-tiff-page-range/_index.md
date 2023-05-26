@@ -1,39 +1,39 @@
 ---
-title: احصل على نطاق صفحات Tiff
-linktitle: احصل على نطاق صفحات Tiff
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخراج مجموعة من صفحات TIFF باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل لملفات TIFF المخصصة.
+title: Obtenir la plage de pages Tiff
+linktitle: Obtenir la plage de pages Tiff
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à extraire une gamme de pages TIFF avec Aspose.Words pour .NET. Tutoriel complet pour les fichiers TIFF personnalisés.
 type: docs
 weight: 10
 url: /fr/net/programming-with-imagesaveoptions/get-tiff-page-range/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم للحصول على مجموعة من صفحات TIFF مع Aspose.Words for .NET. تتيح لك هذه الميزة استخراج نطاق معين من الصفحات من مستند وحفظها كملف TIFF.
+Dans ce didacticiel, nous allons explorer le code source C # fourni pour obtenir une gamme de pages TIFF avec Aspose.Words pour .NET. Cette fonctionnalité vous permet d'extraire une plage spécifique de pages d'un document et de les enregistrer sous forme de fichier TIFF.
 
-## الخطوة الأولى: تهيئة البيئة
+## Étape 1 : Configurer l'environnement
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Avant de commencer, assurez-vous d'avoir configuré votre environnement de développement avec Aspose.Words pour .NET. Assurez-vous d'avoir ajouté les références nécessaires et importé les espaces de noms appropriés.
 
-## الخطوة الثانية: تحميل المستند
+## Étape 2 : Chargement du document
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+ Dans cette étape, nous chargeons le document en utilisant le`Document` méthode et en passant le chemin vers le fichier DOCX à charger.
 
-## الخطوة 3: حفظ المستند كاملاً في TIFF
+## Étape 3 : Enregistrer le document complet au format TIFF
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.MultipageTiff.tiff");
 ```
 
- في هذه الخطوة ، نحفظ المستند كاملاً بتنسيق TIFF باستخدام امتداد`Save` الطريقة وتحديد المسار إلى ملف الإخراج بالملحق`.tiff`.
+ Dans cette étape, nous enregistrons le document complet au format TIFF en utilisant le`Save` méthode et en spécifiant le chemin d'accès au fichier de sortie avec l'extension`.tiff`.
 
-## الخطوة 4: تكوين خيارات النسخ الاحتياطي لنطاق الصفحات
+## Étape 4 : Configurer les options de sauvegarde pour la plage de pages
 
 ```csharp
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
@@ -44,23 +44,23 @@ Resolution = 160
 };
 ```
 
- في هذه الخطوة ، نقوم بتكوين خيارات النسخ الاحتياطي لنطاق الصفحات المحدد. نخلق ملف`ImageSaveOptions` كائن يحدد تنسيق الحفظ المطلوب ، هنا "Tiff" لتنسيق TIFF. نحن نستخدم`PageSet` لتحديد نطاق الصفحات التي نريد استخراجها ، هنا من الصفحة 0 إلى الصفحة 1 (ضمناً). قمنا أيضًا بتعيين ضغط TIFF على`Ccitt4` والقرار إلى 160 نقطة في البوصة.
+ Dans cette étape, nous configurons les options de sauvegarde pour la plage de pages spécifique. Nous créons un nouveau`ImageSaveOptions` objet spécifiant le format de sauvegarde souhaité, ici "Tiff" pour le format TIFF. Nous utilisons`PageSet` pour préciser la plage de pages que l'on souhaite extraire, ici de la page 0 à la page 1 (incluse). Nous avons également défini la compression TIFF sur`Ccitt4` et la résolution à 160 dpi.
 
-## الخطوة 5: حفظ نطاق الصفحات في TIFF
+## Étape 5 : Enregistrer la plage de pages au format TIFF
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ نطاق الصفحات المحدد بتنسيق TIFF باستخدام امتداد`Save`الطريقة وتمرير المسار إلى ملف الإخراج بامتداد`.tiff` بالإضافة إلى خيارات الحفظ المحددة.
+ Dans cette dernière étape, nous enregistrons la plage de pages spécifiée au format TIFF à l'aide de la`Save`méthode et en passant le chemin vers le fichier de sortie avec`.tiff` extension, ainsi que les options d'enregistrement spécifiées.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر للحصول على نطاق معين من الصفحات من المستند الخاص بك وحفظها كملف TIFF. سيتم حفظ الملفات الناتجة في الدليل المحدد بالأسماء "WorkingWithImageSaveOptions.MultipageTiff.tiff" للمستند الكامل و "WorkingWithImageSaveOptions.GetTiffPageRange.tiff" لنطاق الصفحات المحدد.
+Vous pouvez maintenant exécuter le code source pour obtenir une plage spécifique de pages de votre document et les enregistrer en tant que fichier TIFF. Les fichiers résultants seront enregistrés dans le répertoire spécifié avec les noms "WorkingWithImageSaveOptions.MultipageTiff.tiff" pour le document complet et "WorkingWithImageSaveOptions.GetTiffPageRange.tiff" pour la plage de pages spécifiée.
 
-### نموذج لشفرة مصدر للحصول على نطاق صفحات Tiff باستخدام Aspose.Words for .NET
+### Exemple de code source de Get Tiff Page Range en utilisant Aspose.Words pour .NET
 
 ```csharp 
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -80,12 +80,12 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOpti
         
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة الحصول على مجموعة من صفحات TIFF باستخدام Aspose.Words for .NET. تعلمنا كيفية استخراج نطاق معين من الصفحات من مستند وحفظها كملف TIFF.
+Dans ce didacticiel, nous avons exploré la fonctionnalité d'obtention d'une gamme de pages TIFF avec Aspose.Words pour .NET. Nous avons appris à extraire une plage spécifique de pages d'un document et à les enregistrer sous forme de fichier TIFF.
 
-هذه الميزة مفيدة عندما تريد استخراج صفحات معينة فقط من مستند وحفظها بتنسيق صورة قياسي مثل TIFF. يمكنك أيضًا تخصيص خيارات الضغط والدقة للحصول على أفضل جودة لملفات TIFF.
+Cette fonctionnalité est utile lorsque vous souhaitez extraire uniquement certaines pages d'un document et les enregistrer dans un format d'image standard tel que TIFF. Vous pouvez également personnaliser les options de compression et de résolution pour obtenir des fichiers TIFF de la meilleure qualité.
 
-تقدم Aspose.Words for .NET مجموعة واسعة من الميزات المتقدمة لمعالجة المستندات وإنشائها. يعد الحصول على نطاق صفحات TIFF أحد الأدوات القوية العديدة التي يضعها تحت تصرفك.
+Aspose.Words pour .NET offre une vaste gamme de fonctionnalités avancées pour la manipulation et la génération de documents. Obtenir une plage de pages TIFF est l'un des nombreux outils puissants qu'il met à votre disposition.
 
-لا تتردد في دمج هذه الوظيفة في مشاريع Aspose.Words for .NET لاستخراج وحفظ نطاقات محددة من الصفحات من مستنداتك بتنسيق TIFF.
+N'hésitez pas à intégrer cette fonctionnalité dans vos projets Aspose.Words for .NET pour extraire et enregistrer des plages spécifiques de pages de vos documents au format TIFF.

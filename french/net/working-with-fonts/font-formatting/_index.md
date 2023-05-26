@@ -1,47 +1,47 @@
 ---
-title: تنسيق الخط
-linktitle: تنسيق الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET.
+title: Formatage des polices
+linktitle: Formatage des polices
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Dans ce didacticiel, apprenez à formater la police dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/font-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تنسيق الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يتيح لك تنسيق الخط تخصيص مظهر النص ، بما في ذلك الحجم والغامق واللون والخط والتسطير والمزيد. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Dans ce didacticiel, nous vous expliquerons comment effectuer le formatage des polices dans un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. Le formatage de la police vous permet de personnaliser l'apparence du texte, y compris la taille, le gras, la couleur, la police, le soulignement, etc. Nous vous guiderons étape par étape pour vous aider à comprendre et à implémenter le code dans votre projet .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Conditions préalables
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+- Une connaissance pratique du langage de programmation C#
+- La bibliothèque Aspose.Words pour .NET installée dans votre projet
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+ Tout d'abord, vous devez définir le chemin du répertoire vers l'emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومولد مستندات
- بعد ذلك ، سننشئ مستندًا جديدًا عن طريق إنشاء مثيل لملف`Document` class ومنشئ المستندات عن طريق إنشاء مثيل لملف`DocumentBuilder` فصل.
+## Étape 2 : Créer un nouveau document et un générateur de documents
+ Ensuite, nous allons créer un nouveau document en instanciant le`Document` classe et un générateur de documents en instanciant la`DocumentBuilder` classe.
 
 ```csharp
-// قم بإنشاء مستند جديد
+// Créer un nouveau document
 Document doc = new Document();
 
-// قم بإنشاء منشئ المستندات
+// Créer un générateur de documents
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تكوين تنسيق الخط
- الآن سوف نصل إلى`Font` كائن من منشئ المستند وتكوين خصائص تنسيق الخط مثل الحجم ، والجريء ، واللون ، والخط ، والتسطير ، وما إلى ذلك.
+## Étape 3 : Configurer la mise en forme des polices
+ Nous allons maintenant accéder au`Font` objet du générateur de documents et configurez les propriétés de formatage de la police telles que la taille, le gras, la couleur, la police, le soulignement, etc.
 
 ```csharp
-// الوصول إلى الخط
+// Accéder à la police
 Font font = builder.Font;
 
-// تكوين تنسيق الخط
+// Configurer le formatage des polices
 font.Size = 16;
 font. Bold = true;
 font.Color = Color.Blue;
@@ -49,24 +49,24 @@ font.Name = "Arial";
 font.Underline = Underline.Dash;
 ```
 
-## الخطوة 4: أضف نصًا إلى المستند
-بعد ذلك ، سنستخدم منشئ المستندات لإضافة بعض النص المنسق إلى المستند.
+## Étape 4 : Ajouter du texte au document
+Ensuite, nous utiliserons le générateur de document pour ajouter du texte formaté au document.
 
 ```csharp
-// أضف نصًا إلى المستند
+// Ajouter du texte au document
 builder.Write("Example text.");
 ```
 
-## الخطوة 5: احفظ المستند
-أخيرًا ، سنحفظ المستند الذي يحتوي على تنسيق الخط.
+## Étape 5 : Enregistrez le document
+Enfin, nous enregistrerons le document contenant la mise en forme de la police.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لتنسيق الخط باستخدام Aspose.Words for .NET 
+### Exemple de code source pour le formatage des polices à l'aide d'Aspose.Words pour .NET 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -81,5 +81,5 @@ builder.Write("Sample text.");
 doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET. يسمح لك تنسيق الخط بتخصيص مظهر النص في مستنداتك. لا تتردد في استخدام هذه الميزة لإنشاء مستندات جذابة واحترافية.
+## Conclusion
+Dans ce didacticiel, nous avons vu comment effectuer le formatage des polices dans un document Word à l'aide de Aspose.Words pour .NET. Le formatage des polices vous permet de personnaliser l'apparence du texte dans vos documents. N'hésitez pas à utiliser cette fonctionnalité pour créer des documents attrayants et professionnels.

@@ -1,31 +1,31 @@
 ---
-title: تغيير Toc Tab Stops
-linktitle: تغيير Toc Tab Stops
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير علامات تبويب جدول المحتويات في مستند Word باستخدام Aspose.Words for .NET.
+title: Cambiar paradas de tabulación de índice
+linktitle: Cambiar paradas de tabulación de índice
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a cambiar las pestañas de la tabla de contenido en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الوظائف التي تقدمها Aspose.Words ، هناك إمكانية تعديل علامات التبويب المستخدمة في جدول محتويات مستند Word. في هذا الدليل ، سنوضح لك كيفية استخدام شفرة المصدر C # الخاصة بـ Aspose.Words for .NET لتغيير علامات التبويب في جدول محتويات المستند.
+Aspose.Words para .NET es una poderosa biblioteca para crear, editar y manipular documentos de Word en una aplicación C#. Entre las funcionalidades que ofrece Aspose.Words, se encuentra la posibilidad de modificar las pestañas utilizadas en una tabla de contenido de un documento de Word. En esta guía, le mostraremos cómo usar el código fuente C# de Aspose.Words para .NET para cambiar las pestañas en la tabla de contenido de un documento.
 
-## فهم مكتبة Aspose.Words
+## Comprender la biblioteca Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك علامات تبويب جدول المحتويات المتغيرة.
+Antes de sumergirse en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una biblioteca popular que hace que trabajar con documentos de Word sea fácil y eficiente. Ofrece una amplia gama de funciones para crear, editar y manipular documentos de Word, incluido el cambio de pestañas de la tabla de contenido.
 
-## تحميل المستند الذي يحتوي على جدول المحتويات
+## Cargar el documento que contiene la tabla de contenido
 
-الخطوة الأولى هي تحميل مستند Word الذي يحتوي على جدول المحتويات الذي تريد تعديله. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+El primer paso es cargar el documento de Word que contiene la tabla de contenido que desea modificar. Utilice la clase Document para cargar el documento desde el archivo de origen. Aquí hay un ejemplo :
 
 ```csharp
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Table of content.docx" الموجود في دليل documents.
+En este ejemplo, cargamos el documento "Tabla de contenido.docx" ubicado en el directorio de documentos.
 
-## تغيير علامات التبويب في جدول المحتويات
+## Cambio de pestañas en la tabla de contenido
 
-بمجرد تحميل المستند ، ننتقل إلى كل فقرة في المستند ونتحقق مما إذا كان قد تم تنسيقها باستخدام أنماط نتائج جدول المحتويات (TOC). إذا كان الأمر كذلك ، نقوم بتعديل علامات التبويب المستخدمة لمحاذاة أرقام الصفحات. إليك الطريقة:
+Una vez que se carga el documento, revisamos cada párrafo del documento y verificamos si está formateado usando los estilos de resultados de la Tabla de contenido (TOC). Si es así, modificamos las pestañas utilizadas para alinear los números de página. Así es cómo:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -40,28 +40,28 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-في هذا المثال ، نستخدم حلقة للتكرار خلال كل فقرة في المستند. نتحقق بعد ذلك من تنسيق الفقرة باستخدام أنماط نتيجة جدول المحتويات (TOC). إذا كان الأمر كذلك ، فإننا نصل إلى علامة التبويب الأولى المستخدمة في هذه الفقرة ونقوم بتعديلها عن طريق إزالة علامة التبويب القديمة وإضافة علامة تبويب جديدة بموضع معدل.
+En este ejemplo, estamos usando un bucle para recorrer cada párrafo del documento. Luego verificamos si el párrafo está formateado usando los estilos de resultados de la tabla de contenido (TOC). Si es así, accedemos a la primera pestaña utilizada en este párrafo y la modificamos eliminando la pestaña anterior y agregando una nueva pestaña con una posición modificada.
 
-## احفظ المستند المعدل
+## Guardar documento modificado
 
-بمجرد إجراء التغييرات اللازمة على علامات التبويب في جدول المحتويات ، يمكنك حفظ المستند المعدل باستخدام طريقة Save لفئة Document. هنا مثال :
+Una vez que haya realizado los cambios necesarios en las pestañas de la tabla de contenido, puede guardar el documento modificado utilizando el método Guardar de la clase Documento. Aquí hay un ejemplo :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-في هذا المثال ، نحفظ المستند المعدل باسم "WorkingWithTableOfContent.ChangeTocTabStops.docx".
+En este ejemplo, guardamos el documento modificado como "WorkingWithTableOfContent.ChangeTocTabStops.docx".
 
-### نموذج شفرة مصدر لميزة "تحرير جدول المحتويات" باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para la función "Editar pestañas de tabla de contenido" con Aspose.Words para .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند الذي يحتوي على جدول المحتويات
+// Cargue el documento que contiene la tabla de contenido
 Document doc = new Document(dataDir + "Table of contents.docx");
 
-// قم بتعديل علامات تبويب جدول المحتويات
+// Modificar las pestañas de la tabla de contenidos
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 {
      if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
@@ -73,10 +73,10 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
      }
 }
 
-// احفظ المستند المعدل
+// Guardar el documento modificado
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا الدليل ، قمنا بتغطية كيفية استخدام Aspose.Words for .NET لتغيير علامات التبويب في جدول محتويات مستند Word باستخدام الكود المصدري C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة تخصيص علامات تبويب جدول المحتويات في مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع أنماط وتنسيقات مستنداتك ، مما يسمح لك بإنشاء مستندات Word جذابة واحترافية.
+En esta guía, hemos cubierto cómo usar Aspose.Words para .NET para cambiar las pestañas en la tabla de contenido de un documento de Word usando el código fuente de C# proporcionado. Siguiendo los pasos proporcionados, puede personalizar fácilmente las pestañas de la tabla de contenido en sus documentos de Word en su aplicación C#. Aspose.Words ofrece una gran flexibilidad y potencia para trabajar con los estilos y el formato de sus documentos, lo que le permite crear documentos de Word atractivos y profesionales.

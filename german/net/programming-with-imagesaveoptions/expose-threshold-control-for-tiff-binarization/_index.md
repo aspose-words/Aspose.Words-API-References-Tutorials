@@ -1,30 +1,30 @@
 ---
-title: كشف التحكم في العتبة ل Tiff Binarization
-linktitle: كشف التحكم في العتبة ل Tiff Binarization
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التحكم في حد تنسيق TIFF الثنائي باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل للحصول على صور ذات جودة أفضل.
+title: Schwellenwertsteuerung für die TIFF-Binarisierung verfügbar machen
+linktitle: Schwellenwertsteuerung für die TIFF-Binarisierung verfügbar machen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie den TIFF-Binarisierungsschwellenwert mit Aspose.Words für .NET steuern. Vollständiges Tutorial für bessere Bildqualität.
 type: docs
 weight: 10
 url: /de/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف كود المصدر C # المقدم لميزة "عرض التحكم في عتبة TIFF Binarization" مع Aspose.Words for .NET. تتيح لك هذه الميزة التحكم في حد التحويل الثنائي عند تحويل مستند إلى تنسيق TIFF.
+In diesem Tutorial untersuchen wir den C#-Quellcode, der für die Funktion „TIFF Binarization Threshold Control Exposure“ mit Aspose.Words für .NET bereitgestellt wird. Mit dieser Funktion können Sie den Binarisierungsschwellenwert beim Konvertieren eines Dokuments in das TIFF-Format steuern.
 
-## الخطوة الأولى: تهيئة البيئة
+## Schritt 1: Einrichten der Umgebung
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Bevor Sie beginnen, stellen Sie sicher, dass Sie Ihre Entwicklungsumgebung mit Aspose.Words für .NET eingerichtet haben. Stellen Sie sicher, dass Sie die erforderlichen Verweise hinzugefügt und die entsprechenden Namespaces importiert haben.
 
-## الخطوة الثانية: تحميل المستند
+## Schritt 2: Laden des Dokuments
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+ In diesem Schritt laden wir das Dokument mit`Document` -Methode und Übergabe des Pfads zur zu ladenden DOCX-Datei.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي للصور
+## Schritt 3: Konfigurieren Sie die Image-Backup-Optionen
 
 ```csharp
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
@@ -36,23 +36,23 @@ ThresholdForFloydSteinbergDithering = 254
 };
 ```
 
- في هذه الخطوة ، نقوم بتكوين خيارات النسخ الاحتياطي للصور. نخلق ملف`ImageSaveOptions` كائن يحدد تنسيق الحفظ المطلوب ، هنا "Tiff" لتنسيق TIFF. قمنا أيضًا بتعيين خيارات الضغط ، ووضع لون الصورة ، وطريقة TIFF الثنائية مع عتبة ثنائية محددة.
+ In diesem Schritt konfigurieren wir Sicherungsoptionen für Bilder. Wir schaffen ein Neues`ImageSaveOptions` Objekt, das das gewünschte Speicherformat angibt, hier „Tiff“ für das TIFF-Format. Wir legen außerdem Komprimierungsoptionen, den Bildfarbmodus und die TIFF-Binarisierungsmethode mit einem bestimmten Binarisierungsschwellenwert fest.
 
-## الخطوة 4: نسخ الصور احتياطيًا
+## Schritt 4: Bilder sichern
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
 ```
 
-في هذه الخطوة الأخيرة ، نقوم بحفظ صور المستند بتنسيق TIFF باستخدام امتداد`Save` الطريقة وتمرير المسار إلى ملف الإخراج ، جنبًا إلى جنب مع خيارات الحفظ المحددة.
+In diesem letzten Schritt speichern wir die Dokumentbilder im TIFF-Format mit`Save` -Methode und Übergabe des Pfads zur Ausgabedatei zusammen mit den angegebenen Speicheroptionen.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لتحويل المستند الخاص بك إلى تنسيق TIFF أثناء التحكم في حد الترميز الثنائي باستخدام الخيارات المحددة. سيتم حفظ الملف الناتج في الدليل المحدد باسم "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff".
+Jetzt können Sie den Quellcode ausführen, um Ihr Dokument in das TIFF-Format zu konvertieren und dabei den Binarisierungsschwellenwert mit den angegebenen Optionen steuern. Die resultierende Datei wird im angegebenen Verzeichnis mit dem Namen „WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff“ gespeichert.
 
-### عينة من التعليمات البرمجية المصدر تعرض تحكم عتبة لترتيب Tiff الثنائي
+### Beispielquellcode zur Bereitstellung der Schwellenwertsteuerung für die TIFF-Binarisierung
 
 ```csharp 
 
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -70,12 +70,12 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBin
         
 ```
 
-### خاتمة
+### Abschluss
 
-في هذا البرنامج التعليمي ، استكشفنا ميزة التعرض لعنصر التحكم في عتبة TIFF Binarization مع Aspose.Words for .NET. لقد تعلمنا كيفية التحكم في حد الترميز الثنائي عند تحويل مستند إلى تنسيق TIFF.
+In diesem Tutorial haben wir die Belichtungsfunktion der TIFF-Binarisierungsschwellenwertsteuerung mit Aspose.Words für .NET untersucht. Wir haben gelernt, wie man den Binarisierungsschwellenwert beim Konvertieren eines Dokuments in das TIFF-Format steuert.
 
-هذه الميزة مفيدة عندما تريد ضبط حد الترميز الثنائي للحصول على صور TIFF بجودة ووضوح أفضل. من خلال تحديد حد الترميز الثنائي مع خيارات الحفظ ، يمكنك الحصول على نتائج مخصصة تتناسب مع احتياجاتك.
+Diese Funktion ist nützlich, wenn Sie den Binärisierungsschwellenwert anpassen möchten, um TIFF-Bilder mit besserer Qualität und Klarheit zu erhalten. Durch die Angabe des Binärisierungsschwellenwerts mit Speicheroptionen können Sie benutzerdefinierte Ergebnisse erhalten, die auf Ihre Bedürfnisse zugeschnitten sind.
 
-تقدم Aspose.Words for .NET مجموعة متنوعة من الميزات المتقدمة لمعالجة المستندات وإنشائها. يعد كشف التحكم في حد TIFF Binarization Threshold واحدًا من العديد من الأدوات القوية التي يضعها تحت تصرفك.
+Aspose.Words für .NET bietet eine Vielzahl erweiterter Funktionen für die Dokumentbearbeitung und -generierung. Die Bereitstellung der TIFF-Binarisierungsschwellenwertsteuerung ist eines der vielen leistungsstarken Tools, die Ihnen zur Verfügung stehen.
 
-لا تتردد في دمج هذه الميزة في مشاريع Aspose.Words لمشاريع .NET لتحقيق صور TIFF عالية الجودة مع تحكم دقيق في عتبة التحويل الثنائي.
+Integrieren Sie diese Funktion gerne in Ihre Aspose.Words für .NET-Projekte, um hochwertige TIFF-Bilder mit präziser Steuerung des Binarisierungsschwellenwerts zu erhalten.

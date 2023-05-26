@@ -1,46 +1,46 @@
 ---
-title: قم بتعيين خيارات التعليق الختامي
-linktitle: قم بتعيين خيارات التعليق الختامي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين خيارات التعليقات الختامية في مستندات Word باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Ställ in slutnotsalternativ
+linktitle: Ställ in slutnotsalternativ
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ställer in slutnotalternativ i Word-dokument med Aspose.Words för .NET. Steg-för-steg handledning med exempel på källkod.
 type: docs
 weight: 10
 url: /sv/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتعيين خيارات التعليقات الختامية في مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+I denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att ställa in slutnotalternativ i ett Word-dokument. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
-## الخطوة 1: تهيئة كائن المستند
+## Steg 1: Initiera dokumentobjektet
 
- أولاً ، قم بتهيئة ملف`Document` من خلال توفير المسار إلى المستند المصدر:
+ Initiera först`Document` objekt genom att ange sökvägen till ditt källdokument:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## الخطوة 2: تهيئة كائن DocumentBuilder
+## Steg 2: Initiera DocumentBuilder-objektet
 
- بعد ذلك ، قم بتهيئة ملف`DocumentBuilder` كائن لإجراء عمليات على المستند:
+ Initiera sedan`DocumentBuilder` objekt för att utföra operationer på dokumentet:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إضافة نص وتعليق ختامي
+## Steg 3: Lägga till text och slutanteckning
 
- استخدم ال`Write` طريقة`DocumentBuilder` كائن لإضافة نص إلى المستند ، و`InsertFootnote` طريقة لإدراج تعليق ختامي:
+ Använd`Write` metod för`DocumentBuilder` objekt för att lägga till text i dokumentet, och`InsertFootnote` metod för att infoga en slutnot:
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## الخطوة 4: تعيين خيارات التعليقات الختامية
+## Steg 4: Ställa in alternativ för slutnot
 
- الوصول إلى`EndnoteOptions` خاصية المستند لتعديل خيارات التعليقات الختامية. في هذا المثال ، قمنا بتعيين قاعدة إعادة التشغيل لإعادة التشغيل في كل صفحة والموضع إلى نهاية القسم:
+ Få tillgång till`EndnoteOptions` egenskapen för dokumentet för att ändra slutnotalternativ. I det här exemplet ställer vi in omstartsregeln för att starta om på varje sida och positionen till slutet av avsnittet:
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -48,17 +48,17 @@ option.RestartRule = FootnoteNumberingRule.RestartPage;
 option.Position = EndnotePosition.EndOfSection;
 ```
 
-## الخطوة 5: حفظ المستند
+## Steg 5: Spara dokumentet
 
-أخيرًا ، احفظ المستند المعدل:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تعيين خيارات التعليقات الختامية في مستند Word باستخدام Aspose.Words for .NET.
+Det är allt! Du har framgångsrikt angett slutnotsalternativ i ett Word-dokument med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لتعيين خيارات التعليق الختامي باستخدام Aspose.Words for .NET
+### Exempel på källkod för Set Endnote Options med Aspose.Words för .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";	
@@ -75,4 +75,4 @@ option.Position = EndnotePosition.EndOfSection;
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Använd gärna den här koden i dina egna projekt och modifiera den efter dina specifika krav.

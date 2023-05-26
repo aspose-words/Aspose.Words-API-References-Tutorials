@@ -1,71 +1,71 @@
 ---
-title: الانضمام المستمر
-linktitle: الانضمام المستمر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ربط وثيقتين بشكل مستمر مع الحفاظ على التنسيق باستخدام Aspose.Words for .NET.
+title: Treten Sie Continuous bei
+linktitle: Treten Sie Continuous bei
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET zwei Dokumente kontinuierlich verbinden und dabei die Formatierung beibehalten.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/join-continuous/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية الانضمام إلى وثيقتين بشكل مستمر باستخدام Aspose.Words for .NET. يوضح كود المصدر المقدم كيفية إلحاق مستند بنهاية مستند آخر مع الحفاظ على التنسيق الأصلي.
+In diesem Tutorial wird erklärt, wie Sie zwei Dokumente kontinuierlich mit Aspose.Words für .NET verbinden. Der bereitgestellte Quellcode zeigt, wie man ein Dokument an das Ende eines anderen Dokuments anhängt und dabei die ursprüngliche Formatierung beibehält.
 
-## الخطوة 1: قم بإعداد المشروع
+## Schritt 1: Richten Sie das Projekt ein
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words für .NET-Bibliothek installiert. Sie können es von der offiziellen Aspose-Website herunterladen oder den NuGet-Paketmanager verwenden, um es zu installieren.
+- Ein Dokumentverzeichnispfad, in dem sich die Quell- und Zieldokumente befinden.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Schritt 2: Öffnen Sie die Quell- und Zieldokumente
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Öffnen Sie die Quell- und Zieldokumente mit`Document` Klassenkonstruktor. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إعداد بداية القسم المستمر
+## Schritt 3: Kontinuierlichen Abschnittsstart einrichten
 
- لجعل المستند المصدر يظهر مباشرة بعد محتوى المستند الوجهة ، قم بتعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.Continuous`.
+ Damit das Quelldokument direkt nach dem Inhalt des Zieldokuments angezeigt wird, legen Sie fest`SectionStart` Eigenschaft des ersten Abschnitts im Quelldokument`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر
+## Schritt 4: Hängen Sie das Quelldokument an
 
- قم بإلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. اضبط وضع تنسيق الاستيراد على`ImportFormatMode.KeepSourceFormatting`للاحتفاظ بالأنماط الأصلية من المستند المصدر.
+ Hängen Sie das Quelldokument mit an das Zieldokument an`AppendDocument` Methode der`Document` Klasse. Stellen Sie den Importformatmodus auf ein`ImportFormatMode.KeepSourceFormatting`um die ursprünglichen Stile aus dem Quelldokument beizubehalten.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند المعدل
+## Schritt 5: Speichern Sie das geänderte Dokument
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Speichern Sie abschließend das geänderte Zieldokument mit`Save` Methode der`Document` Objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ```
 
-هذا يكمل تنفيذ الانضمام إلى وثيقتين بشكل مستمر باستخدام Aspose.Words لـ .NET.
+Damit ist die Implementierung der kontinuierlichen Verbindung zweier Dokumente mithilfe von Aspose.Words für .NET abgeschlossen.
 
-### مثال على شفرة المصدر لـ Join Continuous using Aspose.Words for .NET 
+### Beispielquellcode für Join Continuous mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// اجعل المستند يظهر مباشرة بعد محتوى المستندات الوجهة.
+	// Lassen Sie das Dokument direkt nach dem Inhalt des Zieldokuments erscheinen.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// قم بإلحاق المستند المصدر باستخدام الأنماط الأصلية الموجودة في المستند المصدر.
+	// Hängen Sie das Quelldokument mit den im Quelldokument gefundenen Originalstilen an.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ```

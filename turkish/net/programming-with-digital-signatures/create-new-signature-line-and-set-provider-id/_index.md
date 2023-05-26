@@ -1,18 +1,18 @@
 ---
-title: إنشاء سطر توقيع جديد وتعيين معرف الموفر
-linktitle: إنشاء سطر توقيع جديد وتعيين معرف الموفر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستند Word باستخدام Aspose.Words for .NET.
+title: Yeni İmza Satırı Oluşturun ve Sağlayıcı Kimliğini Ayarlayın
+linktitle: Yeni İmza Satırı Oluşturun ve Sağlayıcı Kimliğini Ayarlayın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde yeni bir imza satırı oluşturmayı ve sağlayıcı kimliğini ayarlamayı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لاستخدام ميزة إنشاء خط توقيع جديد وتعيين معرّف الموفر مع Aspose.Words for .NET. تتيح لك هذه الميزة إدراج سطر توقيع في مستند Word ، وتعيين الخيارات المخصصة وتوقيع المستند. اتبع الخطوات التالية:
+Bu eğitimde, Aspose.Words for .NET ile Yeni İmza Satırı Oluştur ve Sağlayıcı Kimliği Ayarla özelliğini kullanma adımlarında size yol göstereceğiz. Bu özellik, bir Word belgesine imza satırı eklemenize, özel seçenekler ayarlamanıza ve belgeyi imzalamanıza olanak tanır. Aşağıdaki adımları takip et:
 
-## الخطوة 1: إنشاء المستند والمولد
+## 1. Adım: Belgeyi ve Oluşturucuyu Oluşturma
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+Document sınıfının bir örneğini ve DocumentBuilder nesnesini oluşturarak başlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -20,9 +20,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تعيين خيارات خط التوقيع
+## 2. Adım: İmza Satırı Seçeneklerini Ayarlama
 
-قم بإنشاء مثيل لفئة SignatureLineOptions وقم بتعيين الخيارات المطلوبة:
+SignatureLineOptions sınıfının bir örneğini oluşturun ve istediğiniz seçenekleri ayarlayın:
 
 ```csharp
 SignatureLineOptions signatureLineOptions = new SignatureLineOptions
@@ -37,37 +37,37 @@ AllowComments = true
 };
 ```
 
-## الخطوة 3: إدخال سطر التوقيع
+## 3. Adım: İmza satırının eklenmesi
 
-استخدم طريقة InsertSignatureLine () لكائن DocumentBuilder لإدراج سطر التوقيع في المستند:
+İmza satırını belgeye eklemek için DocumentBuilder nesnesinin InsertSignatureLine() yöntemini kullanın:
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
 ```
 
-## الخطوة 4: قم بتعيين معرف المزود
+## 4. Adım: Sağlayıcı Kimliğini Ayarlayın
 
-قم بتعيين معرف الموفر لسطر التوقيع باستخدام خاصية ProviderId:
+ProviderId özelliğini kullanarak imza satırı için sağlayıcı kimliğini ayarlayın:
 
 ```csharp
 signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
 ```
 
-تأكد من تحديد معرف الموفر الصحيح لحالة الاستخدام الخاصة بك.
+Kullanım durumunuz için doğru sağlayıcı kimliğini belirttiğinizden emin olun.
 
-## الخطوة 5: احفظ المستند
+## 5. Adım: Belgeyi Kaydedin
 
-احفظ المستند المعدل:
+Değiştirilen belgeyi kaydedin:
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند.
+Belgeyi kaydetmek için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-## الخطوة السادسة: توقيع الوثيقة
+## 6. Adım: Belgeyi imzalama
 
-لتوقيع الوثيقة ، تحتاج إلى تعيين خيارات التوقيع واستخدام فئة DigitalSignatureUtil:
+Belgeyi imzalamak için imza seçeneklerini ayarlamanız ve DigitalSignatureUtil sınıfını kullanmanız gerekir:
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -84,15 +84,15 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx"
 	dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions)
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند والشهادة والمستند الموقع.
+Belge, sertifika ve imzalı belge için doğru yolları belirttiğinizden emin olun.
 
-### مثال على شفرة المصدر لـ Create New Signature Line And Set Provider ID باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Yeni İmza Satırı Oluşturma ve Sağlayıcı Kimliğini Ayarlama için örnek kaynak kodu
 
-إليك شفرة المصدر الكاملة لإنشاء سطر توقيع جديد وتعيين معرف الموفر باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET ile yeni bir imza satırı oluşturmak ve sağlayıcı kimliğini ayarlamak için eksiksiz kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -128,5 +128,5 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx"
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Bu adımları izleyerek, Aspose.Words for .NET ile kolayca yeni bir imza satırı oluşturabilir ve Word belgenizde sağlayıcı kimliğini ayarlayabilirsiniz.
 

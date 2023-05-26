@@ -1,42 +1,42 @@
 ---
-title: سلوك الأسلوب الذكي
-linktitle: سلوك الأسلوب الذكي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحفاظ على سلوك النمط الذكي عند الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Intelligentes Stilverhalten
+linktitle: Intelligentes Stilverhalten
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie beim Zusammenfügen und Anhängen von Word-Dokumenten mit Aspose.Words für .NET ein intelligentes Stilverhalten beibehalten.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/smart-style-behavior/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Smart Style Behavior في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها مع الحفاظ على سلوك النمط الذكي.
+Dieses Tutorial führt Sie durch den Prozess der Verwendung der Smart Style Behavior-Funktion von Aspose.Words für .NET. Mit dieser Funktion können Sie Word-Dokumente verknüpfen und anhängen und dabei das intelligente Stilverhalten beibehalten.
 
-## المتطلبات الأساسية
+## Voraussetzungen
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words für .NET installiert. Sie können es von der Aspose-Website herunterladen oder über NuGet installieren.
+2. Visual Studio oder eine andere C#-Entwicklungsumgebung.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Schritt 1: Initialisieren Sie die Dokumentverzeichnisse
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir` Variable für den Pfad, in dem sich Ihre Dokumente befinden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Schritt 2: Laden Sie die Quell- und Zieldokumente
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Als nächstes müssen Sie die Quell- und Zieldokumente mit Aspose.Words laden`Document` Klasse. Aktualisieren Sie die Dateinamen im`Document` Konstruktor entsprechend Ihren Dokumentnamen.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: أدخل فاصل صفحة في مستند الوجهة
+## Schritt 3: Fügen Sie einen Seitenumbruch in das Zieldokument ein
 
- للتأكد من ظهور المحتوى المُلحق على صفحة جديدة في المستند الوجهة ، يمكنك إدراج فاصل صفحة باستخدام ملف`DocumentBuilder`.
+ Um sicherzustellen, dass der angehängte Inhalt auf einer neuen Seite im Zieldokument erscheint, können Sie mit a einen Seitenumbruch einfügen`DocumentBuilder`.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
@@ -44,36 +44,36 @@ builder.MoveToDocumentEnd();
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## الخطوة 4: تعيين خيارات سلوك النمط الذكي
+## Schritt 4: Legen Sie die Verhaltensoptionen für intelligente Stile fest
 
-لتمكين سلوك النمط الذكي أثناء عملية الإلحاق ، تحتاج إلى إنشاء مثيل لـ`ImportFormatOptions` وضبط`SmartStyleBehavior` ملكية ل`true`.
+Um das Smart-Style-Verhalten während des Anhängevorgangs zu aktivieren, müssen Sie eine Instanz von erstellen`ImportFormatOptions` und stellen Sie die ein`SmartStyleBehavior` Eigentum zu`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## Schritt 5: Hängen Sie das Quelldokument an das Zieldokument an
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`InsertDocument` طريقة`DocumentBuilder` فصل. استخدم ال`ImportFormatMode.UseDestinationStyles` المعلمة وتمرير`ImportFormatOptions` كائن للحفاظ على أسلوب السلوك الذكي.
+ Jetzt können Sie das Quelldokument mit an das Zieldokument anhängen`InsertDocument` Methode der`DocumentBuilder` Klasse. Benutzen Sie die`ImportFormatMode.UseDestinationStyles` Parameter und übergeben Sie den`ImportFormatOptions` Objekt zur Aufrechterhaltung eines intelligenten Stilverhaltens.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## Schritt 6: Speichern Sie das endgültige Dokument
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة Smart Style Behavior باستخدام ملف`Save` طريقة`Document` فصل.
+ Speichern Sie abschließend das zusammengeführte Dokument mit aktivierter Smart Style Behavior-Funktion mithilfe von`Save` Methode der`Document` Klasse.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx");
 ```
 
-### مثال على شفرة المصدر لسلوك النمط الذكي باستخدام Aspose.Words for .NET
+### Beispielquellcode für Smart Style Behavior mit Aspose.Words für .NET
 
-إليك شفرة المصدر الكاملة لميزة "سلوك النمط الذكي" في C # باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Quellcode für die Funktion „Smart Style Behavior“ in C# mit Aspose.Words für .NET:
  
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -86,4 +86,4 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 	builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Smart Style Behavior باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الحفاظ على سلوك النمط الذكي.
+Das ist es! Sie haben die Smart Style Behavior-Funktion mit Aspose.Words für .NET erfolgreich implementiert. Das endgültige Dokument enthält den zusammengeführten Inhalt unter Beibehaltung des intelligenten Stilverhaltens.

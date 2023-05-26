@@ -1,65 +1,65 @@
 ---
-title: نطاقات الحصول على نص
-linktitle: نطاقات الحصول على نص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخراج النص بسهولة من مستند Word باستخدام Aspose.Words for .NET.
+title: Bereiche erhalten Text
+linktitle: Bereiche erhalten Text
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ganz einfach Text aus einem Word-Dokument extrahieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-ranges/ranges-get-text/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words القدرة على الحصول على النص الموجود في نطاقات محددة من المستند. في هذا الدليل ، سنرشدك إلى كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لاستخراج نص من مستند Word.
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten in einer C#-Anwendung. Zu den von Aspose.Words angebotenen Funktionen gehört die Möglichkeit, den in bestimmten Bereichen eines Dokuments enthaltenen Text abzurufen. In dieser Anleitung zeigen wir Ihnen, wie Sie den C#-Quellcode von Aspose.Words für .NET verwenden, um Text aus einem Word-Dokument zu extrahieren.
 
-## فهم مكتبة Aspose.Words
+## Grundlegendes zur Aspose.Words-Bibliothek
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك استخراج النص من نطاقات محددة.
+Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Arbeit mit Word-Dokumenten einfach und effizient macht. Es bietet zahlreiche Funktionen zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten, einschließlich der Extraktion von Text aus bestimmten Bereichen.
 
-## تحميل مستند Word
+## Laden des Word-Dokuments
 
-تتمثل الخطوة الأولى في تحميل مستند Word الذي تريد استخراج النص منه. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+Der erste Schritt besteht darin, das Word-Dokument zu laden, aus dem Sie den Text extrahieren möchten. Verwenden Sie die Document-Klasse, um das Dokument aus der Quelldatei zu laden. Hier ist ein Beispiel :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Document.docx" الموجود في دليل المستندات.
+In diesem Beispiel laden wir das Dokument „Document.docx“, das sich im Dokumentenverzeichnis befindet.
 
-## استخراج نص من نطاق معين
+## Extrahieren von Text aus einem bestimmten Bereich
 
-بمجرد تحميل المستند ، يمكنك الوصول إلى نطاقات مختلفة من المستند واستخراج النص المطلوب. في هذا المثال ، سنستخرج كل النص من المستند. إليك الطريقة:
+Sobald das Dokument geladen ist, können Sie auf die verschiedenen Bereiche des Dokuments zugreifen und den gewünschten Text extrahieren. In diesem Beispiel extrahieren wir den gesamten Text aus dem Dokument. Hier ist wie:
 
 ```csharp
 string text = doc.Range.Text;
 ```
 
-في هذا المثال ، نستخدم خاصية Range لفئة Document للوصول إلى النطاق الكامل للمستند. ثم نستخدم خاصية Text للحصول على النص الموجود في هذا النطاق.
+In diesem Beispiel verwenden wir die Range-Eigenschaft der Document-Klasse, um auf den gesamten Bereich des Dokuments zuzugreifen. Dann verwenden wir die Text-Eigenschaft, um den in diesem Bereich enthaltenen Text abzurufen.
 
-## عرض النص المستخرج
+## Anzeige des extrahierten Textes
 
-الآن بعد أن استخرجنا النص من النطاق المحدد ، يمكننا عرضه أو معالجته حسب الحاجة بواسطة التطبيق الخاص بك. على سبيل المثال ، يمكنك عرضه على الشاشة أو حفظه في ملف الإخراج. هذا مثال لعرض النص المستخرج:
+Nachdem wir nun den Text aus dem angegebenen Bereich extrahiert haben, können wir ihn je nach Bedarf Ihrer Anwendung anzeigen oder verarbeiten. Sie können es beispielsweise auf dem Bildschirm anzeigen oder in einer Ausgabedatei speichern. Hier ist ein Beispiel, um den extrahierten Text anzuzeigen:
 
 ```csharp
 Console.WriteLine(text);
 ```
 
-في هذا المثال ، نستخدم طريقة WriteLine لفئة Console لعرض النص المستخرج في وحدة التحكم.
+In diesem Beispiel verwenden wir die WriteLine-Methode der Console-Klasse, um den extrahierten Text in der Konsole anzuzeigen.
 
-### مثال على شفرة المصدر لميزة "الحصول على نص من النطاقات" مع Aspose.Words for .NET
+### Beispielquellcode für die Funktion „Text aus Bereichen abrufen“ mit Aspose.Words für .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+//Laden Sie das Word-Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
-// استخرج النص من المستند
+// Extrahieren Sie den Text aus dem Dokument
 string text = doc.Range.Text;
 
-// اعرض النص المستخرج
+// Zeigen Sie den extrahierten Text an
 Console.WriteLine(text);
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا الدليل ، قمنا بتغطية كيفية استخدام Aspose.Words for .NET لاستخراج نص من مستند Word باستخدام كود المصدر C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة استخراج نص من نطاقات محددة في مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع محتوى المستند ، مما يسمح لك بمعالجة واستخدام النص وفقًا لاحتياجاتك الخاصة.
+In diesem Handbuch haben wir beschrieben, wie Sie mit Aspose.Words für .NET mithilfe des bereitgestellten C#-Quellcodes Text aus einem Word-Dokument extrahieren. Indem Sie die bereitgestellten Schritte befolgen, können Sie problemlos Text aus bestimmten Bereichen in Ihren Word-Dokumenten in Ihrer C#-Anwendung extrahieren. Aspose.Words bietet enorme Flexibilität und Leistungsfähigkeit für die Arbeit mit Dokumentinhalten und ermöglicht Ihnen die Verarbeitung und Verwendung von Text entsprechend Ihren spezifischen Anforderungen.

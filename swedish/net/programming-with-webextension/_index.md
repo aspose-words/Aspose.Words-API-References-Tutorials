@@ -1,19 +1,19 @@
 ---
-title: البرمجة مع Webextension
-linktitle: البرمجة مع Webextension
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على أجزاء مهام ملحق الويب وتستخدمها
+title: Programmering med Webextension
+linktitle: Programmering med Webextension
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar innehåller och använder webbtilläggsuppgiftsrutor
 type: docs
 weight: 1530
 url: /sv/net/programming-with-webextension/
 ---
-ترشدك البرامج التعليمية Aspose.Words for .NET حول البرمجة باستخدام WebExtensions إلى الميزات المتقدمة للعمل مع ملحقات الويب في مستندات Word الخاصة بك. توضح البرامج التعليمية بالتفصيل كيفية استخدام Aspose.Words APIs لإنشاء وتعديل وحذف امتدادات الويب ، بالإضافة إلى التفاعل مع كود JavaScript المضمن في مستندات Word.
+Aspose.Words för .NET-handledningarna om programmering med WebExtensions leder dig genom de avancerade funktionerna för att arbeta med webbtillägg i dina Word-dokument. Handledningarna beskriver hur man använder Aspose.Words API:er för att skapa, redigera och ta bort webbtillägg, samt interagera med JavaScript-kod inbäddad i Word-dokument.
 
-توفر هذه البرامج التعليمية إرشادات خطوة بخطوة لفهم واستخدام وظائف WebExtensions مع Aspose.Words for .NET. ستتعلم كيفية الوصول إلى كائنات امتداد الويب ، والتعامل مع الأحداث ، وتقييم كود JavaScript ، وإضافة وظائف مخصصة ، والمزيد. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان تقنيات البرمجة باستخدام WebExtensions.
+Dessa handledningar ger steg-för-steg-instruktioner för att förstå och använda funktionaliteten hos WebExtensions med Aspose.Words för .NET. Du kommer att lära dig hur du kommer åt webbtilläggsobjekt, hanterar händelser, utvärderar JavaScript-kod, lägger till anpassad funktionalitet och mer. Oavsett om du är nybörjare eller en erfaren utvecklare, kommer dessa tutorials hjälpa dig att behärska programmeringstekniker med WebExtensions.
 
-باتباع هذه البرامج التعليمية ، ستتمكن من الاستفادة الكاملة من إمكانات امتدادات الويب في مستندات Word الخاصة بك ، مما يمنحها ميزات تفاعلية وديناميكية. تقدم البرامج التعليمية أمثلة على التعليمات البرمجية خطوة بخطوة وشروحات واضحة لمساعدتك في تحقيق أقصى استفادة من هذه الميزات وإنشاء مستندات Word مبتكرة وتفاعلية.
+Genom att följa dessa tutorials kommer du att fullt ut kunna utnyttja funktionerna hos webbtillägg i dina Word-dokument, vilket ger dem interaktiva och dynamiska funktioner. Handledningarna ger steg-för-steg-kodexempel och tydliga förklaringar som hjälper dig att få ut det mesta av dessa funktioner och skapa innovativa och interaktiva Word-dokument.
 
-## دروس
-| عنوان | وصف |
+## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [استخدام أجزاء مهام ملحق الويب](./using-web-extension-task-panes/) | دليل تفصيلي خطوة بخطوة لاستخدام أجزاء مهام ملحق الويب مع Aspose.Words for .NET. |
+| [Använda aktivitetsrutor för webbtillägg](./using-web-extension-task-panes/) | Steg-för-steg-guide för hur du använder webbtilläggsuppgiftsrutor med Aspose.Words för .NET. |

@@ -1,50 +1,50 @@
 ---
-title: قائمة استخدام أنماط الوجهة
-linktitle: قائمة استخدام أنماط الوجهة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الانضمام إلى مستندات Word وإلحاقها مع الاحتفاظ بأنماط قائمة المستندات الوجهة باستخدام Aspose.Words for .NET.
+title: Kullanım Hedef Stillerini Listeleme
+linktitle: Kullanım Hedef Stillerini Listeleme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak hedef belgenin liste stillerini korurken Word belgelerini nasıl birleştireceğinizi ve ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/list-use-destination-styles/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة قائمة استخدام أنماط الوجهة في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء استخدام أنماط القائمة الخاصة بالمستند الوجهة.
+Bu eğitim, Aspose.Words for .NET'in Liste Kullanım Hedef Stillerini kullanma sürecinde size rehberlik edecektir. Bu özellik, hedef belgenin liste stillerini kullanırken Word belgelerini birleştirmenize ve eklemenize olanak tanır.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words for .NET kurulu. Aspose web sitesinden indirebilir veya NuGet aracılığıyla kurabilirsiniz.
+2. Visual Studio veya başka herhangi bir C# geliştirme ortamı.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## 1. Adım: Belge Dizinlerini Başlatın
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir` belgelerinizin bulunduğu yola değişken.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## 2. Adım: Kaynak ve Hedef Belgeleri Yükleyin
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Ardından, Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. içindeki dosya adlarını güncelleyin.`Document` belge adlarınıza göre yapıcı.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## الخطوة 3: قم بتعيين المستند المصدر للمتابعة بعد مستند الوجهة
+## 3. Adım: Kaynak Belgeyi, Hedef Belgeden sonra Devam Edecek şekilde ayarlayın
 
- للتأكد من استمرار المحتوى من المستند المصدر بعد نهاية المستند الوجهة ، تحتاج إلى تعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.Continuous`.
+ Kaynak belgedeki içeriğin hedef belge bittikten sonra da devam etmesini sağlamak için,`SectionStart` kaynak belgedeki ilk bölümün özelliği`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## الخطوة 4: معالجة تنسيق القائمة
+## 4. Adım: Liste Biçimlendirmesini İşleyin
 
-للتعامل مع تنسيق القائمة ، ستقوم بالتكرار خلال كل فقرة في المستند المصدر والتحقق مما إذا كانت عنصر قائمة. إذا كان الأمر كذلك ، فستقارن معرف القائمة بالقوائم الموجودة في مستند الوجهة. في حالة وجود قائمة بنفس المعرف ، ستقوم بإنشاء نسخة من القائمة في المستند المصدر وتحديث تنسيق قائمة الفقرة لاستخدام القائمة المنسوخة.
+Liste biçimlendirmesini işlemek için, kaynak belgedeki her paragrafı yineleyecek ve bunun bir liste öğesi olup olmadığını kontrol edeceksiniz. Öyleyse, liste kimliğini hedef belgedeki mevcut listelerle karşılaştırırsınız. Aynı kimliğe sahip bir liste varsa, kaynak belgede listenin bir kopyasını oluşturacak ve kopyalanan listeyi kullanmak için paragrafın liste biçimini güncelleyeceksiniz.
 
 ```csharp
 Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
@@ -72,67 +72,67 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## Adım 5: Kaynak Belgeyi Hedef Belgeye Ekleyin
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.UseDestinationStyles` تضمن المعلمة استخدام أنماط قائمة المستند الوجهة أثناء عملية الإلحاق.
+ Artık, kaynak belgeyi hedef belgeye aşağıdakileri kullanarak ekleyebilirsiniz:`AppendDocument` yöntemi`Document` sınıf. bu`ImportFormatMode.UseDestinationStyles` parametresi, ekleme işlemi sırasında hedef belgenin liste stillerinin kullanılmasını sağlar.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## 6. Adım: Nihai Belgeyi Kaydedin
 
-أخيرًا ، احفظ المستند المدمج مع تمكين ميزة List Use Destination Styles باستخدام ملحق`Save` طريقة`Document` فصل.
+Son olarak, birleştirilmiş belgeyi kullanarak Hedef Stillerini Listele özelliği etkinleştirilmiş olarak kaydedin.`Save` yöntemi`Document` sınıf.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
 ```
 
-### مثال على شفرة المصدر لقائمة استخدم أنماط الوجهة باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan List Use Destination Styles için örnek kaynak kodu 
 
-إليك شفرة المصدر الكاملة لميزة "List Use Destination Styles" في C # باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanarak C# dilinde "List Use Destination Styles" özelliğinin tam kaynak kodu burada:
 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// قم بتعيين المستند المصدر للمتابعة مباشرة بعد نهاية المستند الوجهة.
+	// Kaynak belgeyi, hedef belgenin bitiminden hemen sonra devam edecek şekilde ayarlayın.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// تتبع القوائم التي تم إنشاؤها.
+	// Oluşturulan listeleri takip edin.
 	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
 	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 	{
 		if (para.IsListItem)
 		{
 			int listId = para.ListFormat.List.ListId;
-			// تحقق مما إذا كان المستند الوجهة يحتوي على قائمة بهذا المعرف بالفعل. إذا كان الأمر كذلك ، فقد يكون هذا
-			// يتسبب في تشغيل القائمتين معًا. قم بإنشاء نسخة من القائمة في المستند المصدر بدلاً من ذلك.
+			// Hedef belgenin zaten bu kimliğe sahip bir liste içerip içermediğini kontrol edin. Eğer öyleyse, o zaman bu olabilir
+			// iki listenin birlikte çalışmasına neden olur. Bunun yerine kaynak belgede listenin bir kopyasını oluşturun.
 			if (dstDoc.Lists.GetListByListId(listId) != null)
 			{
 				Aspose.Words.Lists.List currentList;
-				// توجد بالفعل قائمة تم نسخها حديثًا لهذا المعرف ، واسترجع القائمة المخزنة ،
-				// واستخدامها في الفقرة الحالية.
+				// Bu kimlik için yeni kopyalanan bir liste zaten var, saklanan listeyi alın,
+				// ve geçerli paragrafta kullanın.
 				if (newLists.ContainsKey(listId))
 				{
 					currentList = newLists[listId];
 				}
 				else
 				{
-					// أضف نسخة من هذه القائمة إلى المستند وقم بتخزينها للرجوع إليها لاحقًا.
+					// Bu listenin bir kopyasını belgeye ekleyin ve daha sonra başvurmak üzere saklayın.
 					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
 					newLists.Add(listId, currentList);
 				}
-				// اضبط قائمة هذه الفقرة على القائمة المنسوخة.
+				// Bu paragrafın listesini kopyalananlar listesine ayarlayın.
 				para.ListFormat.List = currentList;
 			}
 		}
 	}
-	// قم بإلحاق المستند المصدر بنهاية المستند الوجهة.
+	// Kaynak belgeyi hedef belgenin sonuna ekleyin.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة قائمة استخدام أنماط الوجهة باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع أنماط القائمة من المستند الوجهة.
+Bu kadar! Aspose.Words for .NET'i kullanarak Liste Kullanım Hedef Stilleri özelliğini başarıyla uyguladınız. Nihai belge, hedef belgedeki liste stilleriyle birleştirilmiş içeriği içerecektir.

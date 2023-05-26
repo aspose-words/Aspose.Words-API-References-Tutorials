@@ -1,29 +1,29 @@
 ---
-title: بحث واستبدال النص
-linktitle: بحث واستبدال النص
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على استبدال بسيط للبحث ، وأحرف وصفية في نمط البحث ، واستبدال النص الذي يحتوي على أحرف وصفية ، وتجاهل النص داخل الحقول ، وتجاهل النص الموجود بالداخل
+title: Buscar y reemplazar texto
+linktitle: Buscar y reemplazar texto
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales contienen reemplazo de búsqueda simple, metacaracteres en el patrón de búsqueda, reemplazo de texto que contiene metacaracteres, ignorar el texto dentro de los campos, ignorar el texto dentro
 type: docs
 weight: 1360
 url: /es/net/find-and-replace-text/
 ---
-يوضح البرنامج التعليمي Find and Replace Text كيفية استخدام ميزة Find and Replace text لإجراء عمليات تحرير سريعة وفعالة في مستندات Word الخاصة بك. ستتعلم كيفية البحث عن كلمات أو عبارات أو أنماط معينة واستبدالها بمحتوى جديد. باستخدام هذه الأساليب ، يمكنك أتمتة مهام تحرير النص وتوفير الوقت وتحسين كفاءة سير عمل معالجة المستندات.
+El tutorial Buscar y reemplazar texto explica cómo usar las funciones de Buscar y reemplazar texto para realizar ediciones rápidas y eficientes en sus documentos de Word. Aprenderá a buscar palabras, frases o patrones específicos y a reemplazarlos con contenido nuevo. Con estas técnicas, puede automatizar las tareas de edición de texto, ahorrar tiempo y mejorar la eficiencia de su flujo de trabajo de procesamiento de documentos.
 
-Aspose.Words for .NET مكتبة قوية تقدم مجموعة كبيرة من الوظائف للعمل مع مستندات Word في تطبيقات .NET. يقدم البرنامج التعليمي أمثلة تعليمات برمجية مفصلة ويشرح الخطوات المطلوبة لإجراء بحث نصي واستبدال العمليات. سوف تتعلم كيفية استخدام طرق وخصائص Aspose.Words API للبحث عن النص واستبداله ، مع الأخذ في الاعتبار الخيارات المختلفة مثل الحالة وحساسية التمييز والمزيد.
+Aspose.Words for .NET es una potente biblioteca que ofrece una amplia gama de funciones para trabajar con documentos de Word en aplicaciones .NET. El tutorial proporciona ejemplos de código detallados y explica los pasos necesarios para realizar operaciones de búsqueda y reemplazo de texto. Aprenderá a usar los métodos y las propiedades de la API de Aspose.Words para buscar y reemplazar texto, teniendo en cuenta diferentes opciones, como mayúsculas y minúsculas, sensibilidad a los acentos y más.
 
-سواء كنت بحاجة إلى استبدال كلمات معينة أو تحديث قوالب نصية أو تخصيص محتوى مستندات Word ، سيرشدك البرنامج التعليمي "Find and Replace Text" خلال الخطوات الأساسية لأداء هذه المهام باستخدام Aspose. كلمات لـ .NET. من خلال التوثيق الشامل وعينات التعليمات البرمجية الواضحة ، تعد هذه البرامج التعليمية مورداً قيماً للمطورين الذين يرغبون في تحقيق أقصى استفادة من هذه المكتبة وتحسين مهاراتهم في العمل باستخدام مستندات Word.
+Ya sea que necesite reemplazar palabras específicas, actualizar plantillas de texto o personalizar el contenido de los documentos de Word, el tutorial "Buscar y reemplazar texto" lo guiará a través de los pasos esenciales para realizar estas tareas con Aspose. Palabras para .NET. Con documentación completa y ejemplos de código claros, estos tutoriales son un recurso valioso para los desarrolladores que desean aprovechar al máximo esta biblioteca y mejorar sus habilidades para trabajar con documentos de Word.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [بحث بسيط استبدال](./simple-find-replace/) | تعرف على كيفية إجراء استبدال بحث بسيط في مستند Word باستخدام Aspose.Words for .NET. |
-| [أحرف التعريف في نمط البحث](./meta-characters-in-search-pattern/) | تعرف على كيفية استخدام الحروف الأولية في نمط البحث باستخدام Aspose.Words for .NET لمعالجة مستندات Word. |
-| [استبدل النص الذي يحتوي على أحرف وصفية](./replace-text-containing-meta-characters/) | تعرف على كيفية استبدال النص الذي يحتوي على أحرف أولية في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تجاهل النص داخل الحقول](./ignore-text-inside-fields/) | تعرف على كيفية استخدام ميزة "تجاهل النص داخل الحقول" في Aspose.Words for .NET. |
-| [تجاهل النص داخل حذف المراجعات](./ignore-text-inside-delete-revisions/) | تعرف على كيفية استخدام ميزة "تجاهل النص داخل حذف المراجعات" في Aspose.Words for .NET. |
-| [تجاهل النص داخل إدراج المراجعات](./ignore-text-inside-insert-revisions/) | تعرف على كيفية استخدام ميزة "تجاهل النص داخل إدراج المراجعات" في Aspose.Words for .NET للتعامل مع مراجعات الإدراج في مستندات Word. |
-| [استبدال النص في التذييل](./replace-text-in-footer/) | تعرف على كيفية استبدال النص في تذييل مستندات Word باستخدام Aspose.Words for .NET. |
-| [استبدل بـ Regex](./replace-with-regex/) | تعرف على كيفية إجراء استبدال النص المستند إلى التعبير العادي في مستند Word باستخدام Aspose.Words for .NET. |
-| [التعرف والبدائل ضمن أنماط الاستبدال](./recognize-and-substitutions-within-replacement-patterns/) | تعرف على كيفية استخدام أنماط الاستبدال مع عمليات التعرف والاستبدال في Aspose.Words for .NET لمعالجة مستندات Word. |
-| [استبدل بسلسلة](./replace-with-string/) | تعرف على كيفية استبدال النص بسلسلة في مستند Word بـ Aspose.Words for .NET. |
-| [استبدال النص في الجدول](./replace-text-in-table/) | تعرف على كيفية استبدال نص في جدول في مستند Word باستخدام Aspose.Words for .NET. |
+| [Búsqueda simple Reemplazar](./simple-find-replace/) | Aprenda a realizar una búsqueda y reemplazo simple en un documento de Word usando Aspose.Words para .NET. |
+| [Metacaracteres en el patrón de búsqueda](./meta-characters-in-search-pattern/) | Aprenda a usar metacaracteres en el patrón de búsqueda con Aspose.Words para .NET para manipular documentos de Word. |
+| [Reemplazar texto que contiene metacaracteres](./replace-text-containing-meta-characters/) | Aprenda a reemplazar texto que contiene metacaracteres en documentos de Word usando Aspose.Words para .NET. |
+| [Ignorar el texto dentro de los campos](./ignore-text-inside-fields/) | Aprenda a usar la función "Ignorar texto dentro de los campos" de Aspose.Words para .NET. |
+| [Ignorar texto interior Eliminar revisiones](./ignore-text-inside-delete-revisions/) | Aprenda a usar la función "Ignorar texto interior Eliminar revisiones" de Aspose.Words para .NET. |
+| [Ignorar texto dentro de insertar revisiones](./ignore-text-inside-insert-revisions/) | Aprenda a usar la característica "Ignorar texto dentro de las revisiones de inserción" de Aspose.Words para .NET para manipular las revisiones de inserción en documentos de Word. |
+| [Reemplazar texto en pie de página](./replace-text-in-footer/) | Aprenda a reemplazar texto en el pie de página de documentos de Word usando Aspose.Words para .NET. |
+| [Reemplazar con expresión regular](./replace-with-regex/) | Aprenda a realizar el reemplazo de texto basado en expresiones regulares en un documento de Word con Aspose.Words para .NET. |
+| [Reconocimiento y sustituciones dentro de patrones de reemplazo](./recognize-and-substitutions-within-replacement-patterns/) | Aprenda a usar patrones de reemplazo con reconocimientos y sustituciones en Aspose.Words para .NET para manipular documentos de Word. |
+| [Reemplazar con cadena](./replace-with-string/) | Aprenda a reemplazar texto con una cadena en un documento de Word con Aspose.Words para .NET. |
+| [Reemplazar texto en la tabla](./replace-text-in-table/) | Aprenda a reemplazar texto en una tabla en un documento de Word usando Aspose.Words para .NET. |

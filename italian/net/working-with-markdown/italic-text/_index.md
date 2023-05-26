@@ -1,44 +1,44 @@
 ---
-title: نص مائل
-linktitle: نص مائل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية كتابة نص مائل باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Testo in corsivo
+linktitle: Testo in corsivo
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come scrivere in corsivo con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/italic-text/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة النص المائل مع Aspose.Words for .NET. يستخدم النص المائل للتأكيد على أجزاء معينة من المستند.
+In questo esempio, ti guideremo attraverso come utilizzare la funzione di testo in corsivo con Aspose.Words per .NET. Il testo in corsivo viene utilizzato per enfatizzare determinate parti di un documento.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Passaggio 1: utilizzo di un generatore di documenti
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Innanzitutto, utilizzeremo un generatore di documenti per aggiungere contenuto al nostro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: اجعل النص مائلًا
+## Passaggio 2: testo in corsivo
 
- يمكننا جعل النص مائلاً عن طريق تعيين الخط`Italic` ملكية ل`true`.
+ Possiamo scrivere in corsivo il testo impostando i caratteri`Italic` proprietà a`true`.
 
 ```csharp
 builder.Font.Italic = true;
 builder.Writeln("This text will be in italics");
 ```
 
-### مثال على شفرة المصدر للنص المائل باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per il testo in corsivo con Aspose.Words per .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص مائلًا.
+	// Rendi il testo in corsivo.
 	builder.Font.Italic = true;
 	builder.Writeln("This text will be Italic");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة النص المائل مع Aspose.Words for .NET.
+Congratulazioni! Ora hai imparato come utilizzare la funzione di testo in corsivo con Aspose.Words per .NET.
 

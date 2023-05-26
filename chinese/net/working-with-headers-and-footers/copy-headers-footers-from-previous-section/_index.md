@@ -1,37 +1,37 @@
 ---
-title: نسخ تذييلات الرؤوس من القسم السابق
-linktitle: نسخ تذييلات الرؤوس من القسم السابق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية نسخ الرؤوس والتذييلات من القسم السابق في مستندات Word باستخدام Aspose.Words for .NET.
+title: 从上一节复制页眉页脚
+linktitle: 从上一节复制页眉页脚
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 复制 Word 文档上一节中的页眉和页脚。
 type: docs
 weight: 10
 url: /zh/net/working-with-headers-and-footers/copy-headers-footers-from-previous-section/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية نسخ الرؤوس والتذييلات من القسم السابق في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+在本分步教程中，我们将指导您如何使用 Aspose.Words for .NET 在 Word 文档中复制上一节的页眉和页脚。我们将解释提供的 C# 源代码，并向您展示如何在您自己的项目中实现它。
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+要开始，请确保您已在开发环境中安装和设置 Aspose.Words for .NET。如果您还没有这样做，请从官方网站下载并安装该库。
 
-## الخطوة 1: الوصول إلى القسم السابق
+## 第 1 步：访问上一节
 
- أولاً ، قم باسترداد القسم السابق من خلال الوصول إلى ملف`PreviousSibling` خاصية القسم الحالي:
+首先，通过访问`PreviousSibling`当前部分的属性：
 
 ```csharp
 Section previousSection = (Section)section.PreviousSibling;
 ```
 
-## الخطوة 2: التحقق من القسم السابق
+## 第 2 步：检查上一节
 
-بعد ذلك ، تحقق من وجود قسم سابق. إذا لم يكن هناك قسم سابق ، فنعود ببساطة:
+接下来，检查上一节是否存在。如果没有前面的部分，我们简单地返回：
 
 ```csharp
 if (previousSection == null)
     return;
 ```
 
-## الخطوة 3: مسح ونسخ الرؤوس والتذييلات
+## 第 3 步：清除和复制页眉和页脚
 
-لنسخ الرؤوس والتذييلات من القسم السابق إلى القسم الحالي ، نقوم بمسح الرؤوس والتذييلات الموجودة في القسم الحالي ثم نكررها من خلال الرؤوس والتذييلات في القسم السابق لإضافة نسخ مستنسخة إلى القسم الحالي:
+要将上一节的页眉和页脚复制到当前节，我们清除当前节中现有的页眉和页脚，然后遍历上一节的页眉和页脚以将克隆的副本添加到当前节：
 
 ```csharp
 section.HeadersFooters.Clear();
@@ -40,17 +40,17 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
     section.HeadersFooters.Add(headerFooter.Clone(true));
 ```
 
-## الخطوة 4: حفظ المستند
+## 第 4 步：保存文档
 
-أخيرًا ، احفظ المستند المعدل:
+最后，保存修改后的文件：
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-هذا كل شيء! لقد نجحت في نسخ الرؤوس والتذييلات من القسم السابق إلى القسم الحالي في مستند Word باستخدام Aspose.Words for .NET.
+就是这样！您已经使用 Aspose.Words for .NET 成功地将页眉和页脚从上一节复制到 Word 文档的当前节。
 
-### مثال على شفرة المصدر لنسخ تذييلات الرؤوس من القسم السابق باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 从上一节复制页眉页脚的示例源代码
 
 ```csharp
 Section previousSection = (Section)section.PreviousSibling;
@@ -66,4 +66,4 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
 doc.Save("OutputDocument.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+随意在您自己的项目中使用此代码，并根据您的特定要求对其进行修改。

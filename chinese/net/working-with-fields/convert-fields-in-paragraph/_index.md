@@ -1,38 +1,38 @@
 ---
-title: تحويل الحقول في الفقرة
-linktitle: تحويل الحقول في الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تحويل حقول IF إلى نص عادي في فقرة باستخدام Aspose.Words for .NET.
+title: 转换段落中的字段
+linktitle: 转换段落中的字段
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 将 IF 字段转换为段落中的纯文本。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/convert-fields-in-paragraph/
 ---
 
-إليك برنامج تعليمي يوضح كيفية استخدام ميزة تحويل الحقول إلى فقرة مع Aspose.Words for .NET. يحول هذا الرمز جميع حقول كتابة IF التي تمت مواجهتها في الفقرة الأخيرة من المستند إلى نص عادي. اتبع الخطوات أدناه لفهم وتشغيل هذا الرمز.
+这是一个教程，演示了如何将字段转换为段落功能与 Aspose.Words for .NET 一起使用。此代码将文档最后一段中遇到的所有 IF 类型字段转换为纯文本。请按照以下步骤理解并运行此代码。
 
-تأكد من تثبيت Aspose.Words for .NET وقم بإعداد بيئة التطوير الخاصة بك قبل أن تبدأ.
+在开始之前，确保您已经安装了 Aspose.Words for .NET 并设置了您的开发环境。
 
-## الخطوة 1: استيراد المراجع
+## 第 1 步：导入引用
 
-لاستخدام Aspose. Words في مشروعك ، تحتاج إلى إضافة المراجع الضرورية. تأكد من إضافة مرجع إلى مكتبة Aspose.Words في مشروعك.
+要在您的项目中使用 Aspose.Words，您需要添加必要的引用。确保您已在项目中添加对 Aspose.Words 库的引用。
 
-## الخطوة الثانية: تحميل المستند
+## 第 2 步：装入文档
 
-قبل أن تتمكن من تحويل الحقول ، يجب عليك تحميل المستند الذي يحتوي على الحقول المراد تحويلها. تأكد من تحديد المسار الصحيح للدليل الذي يحتوي على المستند. إليك كيفية تحميل المستند:
+在您可以转换字段之前，您必须加载包含要转换的字段的文档。请务必指定包含文档的目录的正确路径。上传文档的方法如下：
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+//装入文档。
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-استبدل "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+将“您的文档目录”替换为文档目录的实际路径。
 
-## الخطوة 3: تحويل الحقول إلى نص
+## 第 3 步：将字段转换为文本
 
-الآن بعد أن تم تحميل المستند ، يمكننا المضي قدمًا في تحويل حقول الكتابة إلى نص عادي. في هذا المثال ، نستهدف الحقول الموجودة في الفقرة الأخيرة من المستند فقط. هذا هو الكود الذي يقوم بهذا التحويل:
+现在文档已加载，我们可以继续将类型字段转换为纯文本。在此示例中，我们仅针对文档最后一段中出现的字段。下面是执行此转换的代码：
 
 ```csharp
 doc.FirstSection.Body.LastParagraph.Range.Fields
@@ -41,33 +41,33 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
- يستخدم هذا الرمز مجموعة من أساليب LINQ لتصفية الحقول في الفقرة الأخيرة من المستند ثم تحويلها إلى نص عادي عن طريق استدعاء`Unlink()` طريقة.
+此代码使用 LINQ 方法的组合来过滤掉文档最后一段中的字段，然后通过调用将其转换为纯文本`Unlink()`方法。
 
-## الخطوة 4: حفظ المستند المعدل
+## 第 4 步：保存修改后的文档
 
- بمجرد تحويل الحقول ، يمكنك حفظ المستند المعدل. استخدم ال`Save()` طريقة لذلك. هنا مثال :
+转换字段后，您可以保存修改后的文档。使用`Save()`为此的方法。这是一个例子：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للنسخ الاحتياطي.
+请务必为备份指定正确的路径和文件名。
 
-### مثال على رمز المصدر لـ Convert Fields In Paragraph باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 转换段落中的字段的源代码示例
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+//装入文档。
 Document doc = new Document(dataDir + "Linked fields.docx");
 
-// تحويل حقول IF إلى نص عادي في الفقرة الأخيرة من المستند.
+//在文档的最后一段中将 IF 字段转换为纯文本。
 doc.FirstSection.Body.LastParagraph.Range.Fields
      .Where(f => f.Type == FieldType.FieldIf)
      .ToList()
      .ForEach(f => f.Unlink());
 
-// احفظ المستند المعدل.
+//保存修改后的文档。
 doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ```

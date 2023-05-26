@@ -1,78 +1,78 @@
 ---
-title: جدول متداخل
-linktitle: جدول متداخل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET.
+title: Tableau imbriqué
+linktitle: Tableau imbriqué
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à créer un tableau imbriqué dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/nested-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من إنشاء جداول متداخلة في مستندات Word الخاصة بك برمجيًا.
+Dans ce didacticiel, nous allons apprendre à créer un tableau imbriqué dans un document Word à l'aide de Aspose.Words pour .NET. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous serez en mesure de créer des tableaux imbriqués dans vos documents Word par programmation.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Étape 1 : configuration du projet
+1. Lancez Visual Studio et créez un nouveau projet C#.
+2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Etape 2 : Création du document et initialisation du générateur de document
+Pour commencer à travailler avec le document et le générateur de documents, suivez ces étapes :
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// création de documents
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Initialiser le générateur de documents
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Assurez-vous de remplacer "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin d'accès réel à votre répertoire de documents.
 
-## الخطوة 3: بناء الجدول المتداخل
-بعد ذلك ، سنبني الجدول المتداخل عن طريق إدراج الخلايا في الجدول الخارجي وإنشاء جدول جديد داخل الخلية الأولى. استخدم الكود التالي:
+## Étape 3 : Construire la table imbriquée
+Ensuite, nous allons construire le tableau imbriqué en insérant des cellules dans le tableau externe et en créant un nouveau tableau à l'intérieur de la première cellule. Utilisez le code suivant :
 
 ```csharp
-// أدخل الخلية الأولى من الجدول الخارجي
+// Insérer la première cellule du tableau externe
 Cell cell = builder. InsertCell();
 builder.Writeln("Cell 1 of the outer table");
 
-// أدخل الخلية الثانية من الجدول الخارجي
+// Insérer la deuxième cellule du tableau externe
 builder. InsertCell();
 builder.Writeln("Cell 2 of the outer table");
 
-// إنهاء الجدول الخارجي
+// Terminaison de la table extérieure
 builder. EndTable();
 
-// الانتقال إلى الخلية الأولى في الجدول الخارجي
+// Accéder à la première cellule du tableau externe
 builder.MoveTo(cell.FirstParagraph);
 
-// بناء الجدول الداخلي
+// Construire la table intérieure
 builder. InsertCell();
 builder.Writeln("Cell 1 of inner table");
 builder. InsertCell();
 builder.Writeln("Cell 2 of the inner table");
 
-// نهاية الجدول الداخلي
+// Fin de la table intérieure
 builder. EndTable();
 ```
 
-هنا نستخدم منشئ المستندات لإدراج الخلايا والمحتوى في الجدول الخارجي. ثم ننقل مؤشر منشئ المستندات إلى الخلية الأولى من الجدول الخارجي ونبني جدولًا جديدًا بداخله عن طريق إدراج الخلايا والمحتوى.
+Ici, nous utilisons le générateur de documents pour insérer des cellules et du contenu dans le tableau externe. Ensuite, nous déplaçons le curseur du générateur de document vers la première cellule du tableau externe et construisons un nouveau tableau à l'intérieur en insérant des cellules et du contenu.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل بالجدول المتداخل. استخدم الكود التالي:
+## Étape 4 : Enregistrer le document modifié
+Enfin, nous devons enregistrer le document modifié avec le tableau imbriqué. Utilisez le code suivant :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح وملف الاسم لمستند الإخراج.
+Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour le document de sortie.
 
-### نموذج التعليمات البرمجية المصدر للجدول المتداخل باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Nested Table utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -81,12 +81,12 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.Writeln("Outer Table Cell 1");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
-	// هذا الاستدعاء مهم لإنشاء جدول متداخل داخل الجدول الأول.
-	// بدون هذا الاستدعاء ، سيتم إلحاق الخلايا المدرجة أدناه بالجدول الخارجي.
+	// Cet appel est important pour créer une table imbriquée dans la première table.
+	// Sans cet appel, les cellules insérées ci-dessous seront ajoutées au tableau externe.
 	builder.EndTable();
-	// الانتقال إلى الخلية الأولى في الجدول الخارجي.
+	// Déplacez-vous vers la première cellule du tableau externe.
 	builder.MoveTo(cell.FirstParagraph);
-	// بناء الجدول الداخلي.
+	// Construisez la table intérieure.
 	builder.InsertCell();
 	builder.Writeln("Inner Table Cell 1");
 	builder.InsertCell();
@@ -95,5 +95,5 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك إنشاء جداول متداخلة وفقًا لاحتياجاتك الخاصة في مستندات Word الخاصة بك برمجيًا.
+## Conclusion
+Dans ce didacticiel, nous avons appris à créer un tableau imbriqué dans un document Word à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez créer des tableaux imbriqués en fonction de vos besoins spécifiques dans vos documents Word par programmation.

@@ -1,20 +1,20 @@
 ---
-title: كشف تنسيق الملف
-linktitle: كشف تنسيق الملف
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لاكتشاف تنسيق ملف المستند باستخدام Aspose.Words for .NET.
+title: Dosya Biçimini Algıla
+linktitle: Dosya Biçimini Algıla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile belge dosyası biçimini algılamak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-fileformat/detect-file-format/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة الكشف عن تنسيق الملف مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية اكتشاف تنسيق ملفات المستندات المختلفة.
+Bu makale, dosya biçimi algılama özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, farklı belge dosyalarının biçimini nasıl tespit edeceğinizi anlayabileceksiniz.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
-## الخطوة 1: تحديد الدلائل
+## 1. Adım: Dizinleri tanımlayın
 
- للبدء ، تحتاج إلى تحديد الدلائل حيث تريد تخزين الملفات وفقًا لتنسيقها. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك. نقوم بإنشاء الدلائل "المدعومة" و "غير معروف" و "المشفر" و "Pre97" إذا لم تكن موجودة بالفعل.
+ Başlamak için, dosyaları formatlarına göre depolamak istediğiniz dizinleri tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla. "Supported", "Unknown", "Encrypted" ve "Pre97" dizinleri mevcut değilse oluşturuyoruz.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,7 +23,7 @@ string unknownDir = dataDir + "Unknown";
 string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
-// قم بإنشاء الدلائل إذا لم تكن موجودة بالفعل.
+// Zaten yoksa dizinleri oluşturun.
 if (Directory.Exists(supportedDir) == false)
 Directory.CreateDirectory(supportedDir);
 if (Directory.Exists(unknownDir) == false)
@@ -34,17 +34,17 @@ if (Directory.Exists(pre97Dir) == false)
 Directory.CreateDirectory(pre97Dir);
 ```
 
-## الخطوة الثانية: تصفح الملفات
+## 2. Adım: Dosyalara Göz Atın
 
- ثم نستخدم ملف`GetFiles` طريقة`Directory` class للحصول على قائمة الملفات في الدليل المحدد. نستخدم أيضًا ملف`Where` عبارة لاستبعاد ملف معين يسمى "تالف document.docx".
+ Sonra kullanırız`GetFiles` yöntemi`Directory` belirtilen dizindeki dosyaların listesini almak için sınıf. Ayrıca bir`Where` yan tümcesi "Bozuk belge.docx" adlı belirli bir dosyayı hariç tutmak için.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
 ```
 
-## الخطوة 3: اكتشف تنسيق كل ملف
+## 3. Adım: Her dosyanın biçimini algılayın
 
- نحن نمرّر كل ملف في القائمة ونستخدم ملف`DetectFileFormat` طريقة`FileFormatUtil` فئة للكشف عن تنسيق الملف. نعرض أيضًا نوع المستند المكتشف.
+ Listedeki her dosya arasında dolaşıyoruz ve`DetectFileFormat` yöntemi`FileFormatUtil` dosyanın biçimini algılamak için sınıf. Ayrıca algılanan belge türünü de görüntüleriz.
 
 ```csharp
 foreach (string fileName in fileList)
@@ -54,7 +54,7 @@ Console.Write(nameOnly);
 
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-// اعرض نوع الوثيقة
+// Belge türünü göster
 switch (info.LoadFormat)
 {
 LoadFormat.Doc box:
@@ -66,7 +66,7 @@ break;
 LoadFormat.Docx box:
 Console.WriteLine("\tDocument Office Open XML WordprocessingML without macros.");
 break;
-// ... أضف حالات لتنسيقات المستندات الأخرى المدعومة
+// ... Desteklenen diğer belge biçimleri için servis talepleri ekleyin
 LoadFormat.Unknown case:
 Console.WriteLine("\tFormat in
 
@@ -97,20 +97,20 @@ break;
 }
 ```
 
-هذا كل شئ ! لقد نجحت في اكتشاف تنسيق ملفات مستندات مختلفة باستخدام Aspose.Words for .NET.
+Bu kadar ! Aspose.Words for .NET'i kullanarak farklı belge dosyalarının formatını başarıyla tespit ettiniz.
 
-### مثال على شفرة المصدر لاكتشاف تنسيق الملف باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile dosya biçimi tespiti için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	string supportedDir = dataDir + "Supported";
 	string unknownDir = dataDir + "Unknown";
 	string encryptedDir = dataDir + "Encrypted";
 	string pre97Dir = dataDir + "Pre97";
 
-	// قم بإنشاء الدلائل إذا لم تكن موجودة بالفعل.
+	// Zaten yoksa dizinleri oluşturun.
 	if (Directory.Exists(supportedDir) == false)
 		Directory.CreateDirectory(supportedDir);
 	if (Directory.Exists(unknownDir) == false)
@@ -131,7 +131,7 @@ break;
 		
 		FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-		// اعرض نوع الوثيقة
+		// Belge türünü göster
 		switch (info.LoadFormat)
 		{
 			case LoadFormat.Doc:

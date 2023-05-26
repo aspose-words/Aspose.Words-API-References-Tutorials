@@ -1,46 +1,46 @@
 ---
-title: قم بتعيين خيارات التعليق الختامي
-linktitle: قم بتعيين خيارات التعليق الختامي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين خيارات التعليقات الختامية في مستندات Word باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Imposta le opzioni della nota di chiusura
+linktitle: Imposta le opzioni della nota di chiusura
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come impostare le opzioni delle note di chiusura nei documenti di Word utilizzando Aspose.Words per .NET. Tutorial passo passo con codice sorgente di esempio.
 type: docs
 weight: 10
 url: /it/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتعيين خيارات التعليقات الختامية في مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In questo tutorial passo-passo, ti guideremo su come utilizzare Aspose.Words per .NET per impostare le opzioni delle note di chiusura in un documento di Word. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria dal sito ufficiale.
 
-## الخطوة 1: تهيئة كائن المستند
+## Passaggio 1: inizializzazione dell'oggetto documento
 
- أولاً ، قم بتهيئة ملف`Document` من خلال توفير المسار إلى المستند المصدر:
+ Per prima cosa, inizializza il file`Document` oggetto fornendo il percorso del documento di origine:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## الخطوة 2: تهيئة كائن DocumentBuilder
+## Passaggio 2: inizializzazione dell'oggetto DocumentBuilder
 
- بعد ذلك ، قم بتهيئة ملف`DocumentBuilder` كائن لإجراء عمليات على المستند:
+ Successivamente, inizializza il file`DocumentBuilder` opporsi all'esecuzione di operazioni sul documento:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إضافة نص وتعليق ختامي
+## Passaggio 3: aggiunta di testo e nota di chiusura
 
- استخدم ال`Write` طريقة`DocumentBuilder` كائن لإضافة نص إلى المستند ، و`InsertFootnote` طريقة لإدراج تعليق ختامي:
+ Usa il`Write` metodo del`DocumentBuilder` oggetto per aggiungere testo al documento e il`InsertFootnote` metodo per inserire una nota di chiusura:
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## الخطوة 4: تعيين خيارات التعليقات الختامية
+## Passaggio 4: impostazione delle opzioni della nota di chiusura
 
- الوصول إلى`EndnoteOptions` خاصية المستند لتعديل خيارات التعليقات الختامية. في هذا المثال ، قمنا بتعيين قاعدة إعادة التشغيل لإعادة التشغيل في كل صفحة والموضع إلى نهاية القسم:
+ Accedi al`EndnoteOptions` proprietà del documento per modificare le opzioni delle note di chiusura. In questo esempio, impostiamo la regola di riavvio per riavviare su ogni pagina e la posizione alla fine della sezione:
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -48,17 +48,17 @@ option.RestartRule = FootnoteNumberingRule.RestartPage;
 option.Position = EndnotePosition.EndOfSection;
 ```
 
-## الخطوة 5: حفظ المستند
+## Passaggio 5: salvare il documento
 
-أخيرًا ، احفظ المستند المعدل:
+Infine, salva il documento modificato:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تعيين خيارات التعليقات الختامية في مستند Word باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai impostato correttamente le opzioni delle note di chiusura in un documento di Word utilizzando Aspose.Words per .NET.
 
-### مثال على شفرة المصدر لتعيين خيارات التعليق الختامي باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Set Endnote Options utilizzando Aspose.Words per .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";	
@@ -75,4 +75,4 @@ option.Position = EndnotePosition.EndOfSection;
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.

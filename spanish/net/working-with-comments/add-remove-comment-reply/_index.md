@@ -1,55 +1,55 @@
 ---
-title: إضافة إزالة التعليق الرد
-linktitle: إضافة إزالة التعليق الرد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة وإزالة الردود على التعليقات في مستندات Word باستخدام Aspose.Words for .NET.
+title: Añadir Quitar Comentar Responder
+linktitle: Añadir Quitar Comentar Responder
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a agregar y eliminar respuestas de comentarios en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-comments/add-remove-comment-reply/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إضافة ردود التعليقات وإزالتها في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إدارة ردود التعليقات وتخصيصها وفقًا لمتطلباتك.
+En este completo tutorial, aprenderá a agregar y eliminar respuestas de comentarios en un documento de Word usando Aspose.Words para .NET. Lo guiaremos a través del proceso y le proporcionaremos los fragmentos de código C# necesarios. Al final de esta guía, podrá administrar las respuestas a los comentarios y personalizarlas de acuerdo con sus requisitos.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
+- Aspose.Words para la biblioteca .NET instalada en su sistema.
 
-## الخطوة 1: قم بتحميل المستند
-للبدء ، قم بتحميل المستند الذي يحتوي على التعليقات باستخدام فئة المستند:
+## Paso 1: Cargue el Documento
+Para empezar, carga el documento que contiene los comentarios usando la clase Document:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
 ```
 
-## الخطوة 2: الوصول إلى التعليق وإدارة الردود
-بعد ذلك ، قم بالوصول إلى التعليق من المستند باستخدام طريقة GetChild مع معلمة NodeType.Comment:
+## Paso 2: acceda al comentario y administre las respuestas
+A continuación, acceda al comentario del documento mediante el método GetChild con el parámetro NodeType.Comment:
 
 ```csharp
 Comment comment = (Comment)doc.GetChild(NodeType.Comment, 0, true);
 ```
 
-لإزالة رد من التعليق ، استخدم طريقة RemoveReply وقم بتوفير فهرس الرد المطلوب:
+Para eliminar una respuesta del comentario, use el método RemoveReply y proporcione el índice de respuesta deseado:
 
 ```csharp
 comment.RemoveReply(comment.Replies[0]);
 ```
 
-لإضافة رد جديد على التعليق ، استخدم طريقة AddReply وقم بتوفير اسم المؤلف والأحرف الأولى من اسم المؤلف والتاريخ والوقت ونص الرد:
+Para agregar una nueva respuesta al comentario, use el método AddReply y proporcione el nombre del autor, las iniciales del autor, la fecha y la hora y el texto de la respuesta:
 
 ```csharp
 comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New reply");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إضافة الردود على التعليقات أو إزالتها ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Paso 3: Guarde el documento
+Después de agregar o eliminar las respuestas a los comentarios, guarde el documento en un archivo usando el método Guardar de la clase Documento:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 ```
 
-### مثال على كود المصدر لإضافة وإزالة التعليقات باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لإضافة وإزالة الردود على التعليقات باستخدام Aspose.Words for .NET:
+### Ejemplo de código fuente para agregar y eliminar respuestas de comentarios usando Aspose.Words para .NET
+Aquí está el código fuente completo para agregar y eliminar respuestas de comentarios usando Aspose.Words para .NET:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -64,7 +64,7 @@ comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New re
 doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إضافة وإزالة الردود على التعليقات في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام الكود المصدري المقدم ، يمكنك الآن إدارة ردود التعليقات وتخصيصها وفقًا لمتطلباتك.
+## Conclusión
+¡Felicidades! Ha aprendido con éxito cómo agregar y eliminar respuestas de comentarios en un documento de Word usando Aspose.Words para .NET. Al seguir la guía paso a paso y utilizar el código fuente provisto, ahora puede administrar las respuestas a los comentarios y personalizarlas según sus requisitos.
 
-تسمح الردود على التعليقات بالمناقشات التعاونية والتعليقات داخل المستند. جرّب مؤلفي الردود المختلفين والأحرف الأولى والتواريخ والنصوص لتعزيز التعاون والتواصل داخل مستنداتك.
+Las respuestas a comentarios permiten debates colaborativos y comentarios dentro de un documento. Experimente con diferentes autores de respuestas, iniciales, fechas y textos para mejorar la colaboración y la comunicación dentro de sus documentos.

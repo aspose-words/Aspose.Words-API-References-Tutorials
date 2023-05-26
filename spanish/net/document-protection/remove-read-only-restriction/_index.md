@@ -1,17 +1,17 @@
 ---
-title: إزالة قيود القراءة فقط
-linktitle: إزالة قيود القراءة فقط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET.
+title: Eliminar restricción de solo lectura
+linktitle: Eliminar restricción de solo lectura
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a eliminar la restricción de solo lectura de un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/document-protection/remove-read-only-restriction/
 ---
-في هذا البرنامج التعليمي ، سنرشدك عبر خطوات استخدام ميزة إزالة قيود القراءة فقط Aspose.Words for .NET. تتيح لك هذه الميزة إزالة قيود القراءة فقط من مستند Word لجعله قابلاً للتحرير. اتبع الخطوات التالية:
+En este tutorial, lo guiaremos a través de los pasos para usar Aspose.Words para la función de eliminación de restricciones de solo lectura de .NET. Esta función le permite eliminar la restricción de solo lectura de un documento de Word para que sea editable. Siga los pasos a continuación:
 
-## الخطوة 1: إنشاء المستند وإعداد الحماية
+## Paso 1: Creación del documento y configuración de la protección
 
-ابدأ بإنشاء مثيل لفئة المستند:
+Comience creando una instancia de la clase Documento:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -19,50 +19,50 @@ Document doc = new Document();
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
-قم بتعيين كلمة مرور للمستند باستخدام خاصية SetPassword () للكائن WriteProtection:
+Establezca una contraseña para el documento utilizando la propiedad SetPassword() del objeto WriteProtection:
 
-تأكد من استبدال "MyPassword" بكلمة المرور الفعلية التي استخدمتها لحماية المستند.
+Asegúrese de reemplazar "MyPassword" con la contraseña real que utilizó para proteger el documento.
 
-## الخطوة 2: إزالة قيود القراءة فقط
+## Paso 2: eliminar la restricción de solo lectura
 
-لإزالة تقييد القراءة فقط ، قم بتعيين الخاصية ReadOnlyRecommended إلى false:
+Para eliminar la restricción de solo lectura, establezca la propiedad ReadOnlyRecommended en falso:
 
 ```csharp
 doc.WriteProtection.ReadOnlyRecommended = false;
 ```
 
-## الخطوة 3: تطبيق حماية غير مقيدة
+## Paso 3: aplique la protección sin restricciones
 
-أخيرًا ، قم بتطبيق حماية غير مقيدة باستخدام طريقة حماية كائن المستند:
+Finalmente, aplique protección sin restricciones utilizando el método Protect() del objeto Documento:
 
 ```csharp
 doc.Protect(ProtectionType.NoProtection);
 doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند بدون قيود القراءة فقط.
+Asegúrese de especificar la ruta y el nombre de archivo correctos para guardar el documento sin la restricción de solo lectura.
 
-### مثال على شفرة المصدر الخاصة بإزالة القيود للقراءة فقط باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para eliminar la restricción de solo lectura con Aspose.Words para .NET
 
-فيما يلي شفرة المصدر الكاملة لإزالة قيود القراءة فقط باستخدام Aspose.Words for .NET:
+Aquí está el código fuente completo para eliminar la restricción de solo lectura usando Aspose.Words para .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	
-	// أدخل كلمة مرور يصل طولها إلى 15 حرفًا.
+	// Introduzca una contraseña de hasta 15 caracteres.
 	doc.WriteProtection.SetPassword("MyPassword");
 
-	// قم بإزالة خيار القراءة فقط.
+	// Elimina la opción de solo lectura.
 	doc.WriteProtection.ReadOnlyRecommended = false;
 
-	// تطبيق الحماية ضد الكتابة دون أي حماية.
+	// Aplicar protección contra escritura sin ninguna protección.
 	doc.Protect(ProtectionType.NoProtection);
 	doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة إزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET.
+Siguiendo estos pasos, puede eliminar fácilmente la restricción de solo lectura de un documento de Word con Aspose.Words para .NET.
 

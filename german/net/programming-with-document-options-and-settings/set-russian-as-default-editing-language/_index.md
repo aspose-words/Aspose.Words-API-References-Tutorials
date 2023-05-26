@@ -1,37 +1,37 @@
 ---
-title: تعيين اللغة الروسية كلغة تحرير افتراضية
-linktitle: تعيين اللغة الروسية كلغة تحرير افتراضية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتعيين اللغة الروسية كلغة تحرير افتراضية لمستند باستخدام Aspose.Words for .NET.
+title: Legen Sie Russisch als Standardbearbeitungssprache fest
+linktitle: Legen Sie Russisch als Standardbearbeitungssprache fest
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Festlegen von Russisch als Standardbearbeitungssprache eines Dokuments mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-document-options-and-settings/set-russian-as-default-editing-language/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتعيين اللغة الروسية كلغة تحرير افتراضية باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة ضبط اللغة الافتراضية عند تحميل مستند.
+In diesem Tutorial führen wir Sie durch den C#-Quellcode, um Russisch als Standardbearbeitungssprache mit Aspose.Words für .NET festzulegen. Mit dieser Funktion können Sie beim Laden eines Dokuments die Standardsprache festlegen.
 
-## الخطوة 1: إعداد المشروع
+## Schritt 1: Projekteinrichtung
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Aspose.Words for .NET-Bibliothek verwiesen wird.
 
-## الخطوة الثانية: تحميل المستند
+## Schritt 2: Laden des Dokuments
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد تعيين اللغة الروسية له كلغة التحرير الافتراضية. استخدم الكود التالي لتحميل المستند:
+In diesem Schritt laden wir das Word-Dokument, für das wir Russisch als Standardbearbeitungssprache festlegen möchten. Verwenden Sie den folgenden Code, um das Dokument zu laden:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;
 
-// المسار إلى دليل المستندات.
+// Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Ersetzen`"YOUR DOCUMENTS DIRECTORY"` mit dem tatsächlichen Pfad des Verzeichnisses, in dem sich Ihr Dokument befindet.
 
-## الخطوة 3: التحقق من اللغة الافتراضية
+## Schritt 3: Überprüfen der Standardsprache
 
-بعد تحميل المستند ، سنتحقق مما إذا كانت اللغة الافتراضية قد تم ضبطها بشكل صحيح على الروسية. استخدم الكود التالي للحصول على معرف اللغة الافتراضي:
+Nach dem Hochladen des Dokuments prüfen wir, ob die Standardsprache korrekt auf Russisch eingestellt ist. Verwenden Sie den folgenden Code, um die Standardsprachen-ID abzurufen:
 
 ```csharp
 int localeId = doc.Styles.DefaultFont.LocaleId;
@@ -41,16 +41,16 @@ Console.WriteLine(
 		: "The document default language was set to another than Russian language originally, so it is not overridden.");
 ```
 
-يتحقق الكود مما إذا كان معرف اللغة يطابق معرف اللغة الروسية. وفقًا للنتيجة ، فإنه يعرض رسالة مقابلة.
+Der Code prüft, ob die Sprach-ID mit der von Russisch übereinstimmt. Je nach Ergebnis wird eine entsprechende Meldung angezeigt.
 
-### مثال على شفرة المصدر لتعيين الروسية كلغة تحرير افتراضية باستخدام Aspose.Words for .NET
+### Beispielquellcode für „Russisch als Standardbearbeitungssprache festlegen“ mit Aspose.Words für .NET
 
 ```csharp
 
 	LoadOptions loadOptions = new LoadOptions();
 	loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;
 	
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 
@@ -62,6 +62,6 @@ Console.WriteLine(
 
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Stellen Sie sicher, dass Sie den richtigen Dokumentpfad angeben`dataDir` Variable.
 
-لقد تعلمت الآن كيفية تعيين اللغة الروسية كلغة تحرير افتراضية لمستند باستخدام Aspose.Words for .NET. باتباع دليل الخطوة
+Sie haben jetzt erfahren, wie Sie mit Aspose.Words für .NET Russisch als Standardbearbeitungssprache für ein Dokument festlegen. Indem Sie der Schritt-Anleitung folgen

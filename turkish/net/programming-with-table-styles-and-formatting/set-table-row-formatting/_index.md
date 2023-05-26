@@ -1,40 +1,40 @@
 ---
-title: تعيين تنسيق صف الجدول
-linktitle: تعيين تنسيق صف الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد تنسيق صف الجدول باستخدام Aspose.Words for .NET.
+title: Tablo Satırı Biçimlendirmesini Ayarla
+linktitle: Tablo Satırı Biçimlendirmesini Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak tablo satırı biçimlendirmesini ayarlamak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين تنسيق صف الجدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية ضبط الارتفاع والحشو لصف الجدول في مستندات Word باستخدام Aspose.Words for .NET.
+Bu eğitimde, Aspose.Words for .NET kullanarak tablo satırı biçimlendirmesini ayarlamak için size adım adım yol göstereceğiz. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sağlayacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak Word belgelerinizdeki bir tablo satırının yüksekliğini ve dolgularını nasıl ayarlayacağınızı öğreneceksiniz.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+Öncelikle, belgeler dizininize giden yolu ayarlamanız gerekir. Bu, düzenlenmiş Word belgenizi kaydetmek istediğiniz konumdur. "BELGELER DİZİNİNİZİ" uygun yolla değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## 2. Adım: Yeni bir belge ve belge oluşturucu oluşturun
+ Ardından, yeni bir örneğini oluşturmanız gerekir.`Document` sınıf ve bu belge için bir belge oluşturucu.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدول جديد وأضف خلية
-لبدء إنشاء الجدول ، نستخدم ملف`StartTable()` طريقة منشئ المستند ، ثم نضيف خلية إلى الجدول باستخدام الامتداد`InsertCell()` طريقة.
+## 3. Adım: Yeni bir tablo başlatın ve bir hücre ekleyin
+Tabloyu oluşturmaya başlamak için,`StartTable()` Belge oluşturucunun yöntemini kullanarak tabloya bir hücre ekleriz.`InsertCell()` yöntem.
 
 ```csharp
 Table table = builder. StartTable();
 builder. InsertCell();
 ```
 
-## الخطوة 4: تحديد تنسيق الخط
- الآن يمكننا ضبط تنسيق الصف من خلال الوصول إلى ملف`RowFormat` كائن`DocumentBuilder` هدف. يمكننا ضبط ارتفاع الخط والهوامش (الحشوات) باستخدام الخصائص المقابلة.
+## 4. Adım: Satır biçimlendirmesini tanımlayın
+ Artık şuna erişerek satır biçimlendirmesini ayarlayabiliriz:`RowFormat` nesnesi`DocumentBuilder` nesne. Karşılık gelen özellikleri kullanarak satır yüksekliğini ve kenar boşluklarını (dolgular) ayarlayabiliriz.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;
@@ -42,8 +42,8 @@ rowFormat. Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
-## الخطوة 5: تعيين هوامش الجدول
- بعد ذلك ، يمكننا ضبط حشوات الجدول من خلال الوصول إلى الخصائص المقابلة لـ`Table` هدف. سيتم تطبيق هذه الهوامش على جميع صفوف الجدول.
+## 5. Adım: Tablo kenar boşluklarını ayarlayın
+ Ardından, ilgili özelliklere erişerek tablo dolgularını ayarlayabiliriz.`Table` nesne. Bu kenar boşlukları tablonun tüm satırlarına uygulanacaktır.
 
 ```csharp
 table. LeftPadding = 30;
@@ -52,17 +52,17 @@ table. TopPadding = 30;
 table. BottomPadding = 30;
 ```
 
-## الخطوة 6: أضف محتوى إلى الصف
- أخيرًا ، يمكننا إضافة محتوى إلى السطر باستخدام منشئ المستندات`Writeln()` طريقة.
+## 6. Adım: Satıra içerik ekleyin
+ Son olarak, belge oluşturucuyu kullanarak satıra içerik ekleyebiliriz.`Writeln()` yöntem.
 
 ```csharp
 builder.Writeln("I'm a beautifully formatted line.");
 ```
 
-## الخطوة 7: قم بإنهاء الجدول وحفظ المستند
-في
+## Adım 7: Tabloyu bitirin ve belgeyi kaydedin
+İçinde
 
- النهاية ، ننتهي من إنشاء الجدول باستخدام`EndRow()` و`EndTable()` الطريقة ، ثم نقوم بحفظ المستند المعدل في ملف.
+ sonunda, kullanarak tabloyu oluşturmayı bitiriyoruz.`EndRow()` Ve`EndTable()` yöntemi, ardından değiştirilen belgeyi bir dosyaya kaydederiz.
 
 ```csharp
 builder. EndRow();
@@ -70,10 +70,10 @@ builder. EndTable();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Table Row Formatting باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Tablo Satır Biçimlendirmesini Ayarlamak için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 	RowFormat rowFormat = builder.RowFormat;
 	rowFormat.Height = 100;
 	rowFormat.HeightRule = HeightRule.Exactly;
-	// يتم تعيين خصائص التنسيق هذه في الجدول ويتم تطبيقها على جميع الصفوف في الجدول.
+	// Bu biçimlendirme özellikleri tabloda ayarlanır ve tablodaki tüm satırlara uygulanır.
 	table.LeftPadding = 30;
 	table.RightPadding = 30;
 	table.TopPadding = 30;
@@ -94,5 +94,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين تنسيق صف الجدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة ضبط ارتفاع صف الجدول والهوامش في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تخصيص التخطيط المرئي لجداولك وفقًا لاحتياجاتك الخاصة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak tablo satırı biçimlendirmesinin nasıl ayarlanacağını öğrendik. Bu adım adım kılavuzu izleyerek, Word belgelerinizdeki tablo satır yüksekliğini ve kenar boşluklarını kolayca ayarlayabilirsiniz. Aspose.Words, belgelerinizdeki tabloları değiştirmek ve biçimlendirmek için güçlü ve esnek bir API sunar. Bu bilgiyle, tablolarınızın görsel düzenini özel ihtiyaçlarınıza göre özelleştirebilirsiniz.

@@ -1,63 +1,63 @@
 ---
-title: المفاجئة إلى الشبكة
-linktitle: المفاجئة إلى الشبكة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح كود مصدر C # لميزة Snap to Grid باستخدام Aspose.Words for .NET.
+title: Am Raster ausrichten
+linktitle: Am Raster ausrichten
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Snap to Grid-Funktion mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/document-formatting/snap-to-grid/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة Snap to Grid مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+In diesem Tutorial zeigen wir Ihnen, wie Sie die Funktion „An Raster ausrichten“ mit Aspose.Words für .NET verwenden. Führen Sie die folgenden Schritte aus, um den Quellcode zu verstehen und die Änderungen anzuwenden.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Schritt 1: Dokument erstellen und konfigurieren
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Erstellen Sie zunächst ein neues Dokument und ein zugehöriges DocumentBuilder-Objekt. Hier ist wie:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: محاذاة الشبكة
+## Schritt 2: Rasterausrichtung
 
-سنقوم الآن بتطبيق محاذاة الشبكة على فقرة محددة والخط المستخدم في الفقرة. إليك الطريقة:
+Jetzt wenden wir die Rasterausrichtung auf einen bestimmten Absatz und die im Absatz verwendete Schriftart an. Hier ist wie:
 
 ```csharp
-// تمكين محاذاة الشبكة للفقرة
+// Aktivieren Sie die Rasterausrichtung für den Absatz
 Paragraph by = doc.FirstSection.Body.FirstParagraph;
 par.ParagraphFormat.SnapToGrid = true;
 
-// اكتب نصًا في الفقرة
+// Schreiben Sie Text in den Absatz
 builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" +
                  "tempor incident ut labore et dolore magna aliqua.");
 
-// قم بتمكين محاذاة الشبكة للخط المستخدم في الفقرة
+// Aktivieren Sie die Rasterausrichtung für die im Absatz verwendete Schriftart
 par.Runs[0].Font.SnapToGrid = true;
 ```
 
-## الخطوة 3: حفظ المستند
+## Schritt 3: Speichern des Dokuments
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Nachdem Sie das Texteingabeformularfeld eingefügt haben, speichern Sie das Dokument mithilfe von am gewünschten Ort`Save` Methode. Stellen Sie sicher, dass Sie den richtigen Dateipfad angeben:
 
 ```csharp
 doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 ```
 
-### مثال على شفرة المصدر لـ Snap To Grid باستخدام Aspose.Words for .NET
+### Beispielquellcode für Snap To Grid mit Aspose.Words für .NET
 
-فيما يلي رمز المصدر الكامل لميزة Snap to Grid مع Aspose.Words for .NET:
+Hier ist der vollständige Quellcode für die Snap to Grid-Funktion mit Aspose.Words für .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// قم بتحسين التخطيط عند الكتابة بالأحرف الآسيوية.
+	// Optimieren Sie das Layout bei der Eingabe asiatischer Zeichen.
 	Paragraph par = doc.FirstSection.Body.FirstParagraph;
 	par.ParagraphFormat.SnapToGrid = true;
 
@@ -70,5 +70,5 @@ doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من محاذاة النص الخاص بك مع الشبكة وتحسين مظهر المستند باستخدام Aspose.Words for .NET.
+Mit diesem Code können Sie Ihren Text am Raster ausrichten und das Erscheinungsbild Ihres Dokuments mithilfe von Aspose.Words für .NET optimieren.
 

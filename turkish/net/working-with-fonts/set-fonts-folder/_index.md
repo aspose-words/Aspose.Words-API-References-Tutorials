@@ -1,36 +1,36 @@
 ---
-title: تعيين مجلد الخطوط
-linktitle: تعيين مجلد الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين دليل الخطوط في Aspose.Words for .NET وتأكد من توفر الخطوط المستخدمة في مستنداتك.
+title: Yazı Tipleri Klasörünü Ayarla
+linktitle: Yazı Tipleri Klasörünü Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'te yazı tipi dizinini nasıl ayarlayacağınızı ve belgelerinizde kullanılan yazı tiplerinin kullanılabilirliğini nasıl sağlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-fonts-folder/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين دليل الخطوط في Aspose.Words for .NET. ستتعلم كيفية تحديد الدليل الذي يحتوي على الخطوط المستخدمة في مستند Word الخاص بك.
+Bu öğreticide, size Aspose.Words for .NET'te yazı tipi dizinini nasıl ayarlayacağınızı göstereceğiz. Word belgenizde kullanılan yazı tiplerini içeren dizini nasıl belirleyeceğinizi öğreneceksiniz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+Dizin yolunu Word belgenizin konumuna ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تعيين دليل الخطوط
- قم بإنشاء مثيل لـ`FontSettings` فئة واستخدام`SetFontsFolder` طريقة لتحديد الدليل الذي يحتوي على الخطوط. يستبدل`"Fonts"` باسم دليل الخطوط الفعلي.
+## 2. Adım: Yazı tipi dizinini ayarlayın
+ örneğini oluşturun`FontSettings` sınıflandırın ve kullanın`SetFontsFolder` yazı tiplerini içeren dizini belirtme yöntemi. Yer değiştirmek`"Fonts"` gerçek yazı dizini adı ile.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.SetFontsFolder(dataDir + "Fonts", false);
 ```
 
-## الخطوة 3: قم بتحميل المستند بإعدادات الخط
- استخدم ال`LoadOptions` فئة لتحديد إعدادات الخط في ملف`FontSettings` خيار. ثم استخدم ملف`Document` فئة لتحميل المستند باستخدام هذه الخيارات.
+## 3. Adım: Belgeyi yazı tipi ayarlarıyla yükleyin
+ Kullan`LoadOptions` yazı tipi ayarlarını belirtmek için sınıf`FontSettings` seçenek. Daha sonra`Document` Bu seçenekleri kullanarak belgeyi yüklemek için sınıf.
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
@@ -39,11 +39,11 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Fonts Folder باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Set Fonts Folder için örnek kaynak kodu 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();
@@ -54,5 +54,5 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-## خاتمة
-تهنئة ! أنت تعرف الآن كيفية تعيين دليل الخطوط في Aspose.Words for .NET. يمكنك استخدام هذه الميزة لضمان توفر الخطوط المستخدمة في وثيقتك ولضمان التناسق في عرض الخطوط.
+## Çözüm
+Tebrikler! Artık Aspose.Words for .NET'te yazı tipi dizinini nasıl ayarlayacağınızı biliyorsunuz. Belgenizde kullanılan yazı tiplerinin kullanılabilirliğini sağlamak ve yazı tiplerinin görüntülenmesinde tutarlılık sağlamak için bu özelliği kullanabilirsiniz.

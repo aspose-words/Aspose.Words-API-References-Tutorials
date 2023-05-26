@@ -1,56 +1,56 @@
 ---
-title: احصل على تباعد أسطر الخط
-linktitle: احصل على تباعد أسطر الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تباعد بين الخطوط في مستند Word باستخدام Aspose.Words for .NET.
+title: Holen Sie sich den Schriftzeilenabstand
+linktitle: Holen Sie sich den Schriftzeilenabstand
+second_title: Aspose.Words für .NET API-Referenz
+description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET den Schriftzeilenabstand in einem Word-Dokument ermitteln.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/get-font-line-spacing/
 ---
-في هذا البرنامج التعليمي ، سنخبرك بكيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يحدد تباعد أسطر الخط المسافة العمودية بين سطور النص. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In diesem Tutorial erklären wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET den Zeilenabstand der Schriftarten in einem Word-Dokument ermitteln. Der Zeilenabstand der Schriftart definiert den vertikalen Abstand zwischen Textzeilen. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Voraussetzungen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
+- Grundkenntnisse der Programmiersprache C#
+- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
-## الخطوة 1: إنشاء مستند جديد ومولد مستندات
- أولاً ، سننشئ مستندًا جديدًا عن طريق إنشاء مثيل لملف`Document` class ومنشئ المستندات عن طريق إنشاء مثيل لملف`DocumentBuilder` فصل.
+## Schritt 1: Erstellen Sie ein neues Dokument und einen Dokumentengenerator
+ Zuerst erstellen wir ein neues Dokument, indem wir es instanziieren`Document` Klasse und einen Dokumentenersteller durch Instanziieren der`DocumentBuilder` Klasse.
 
 ```csharp
-// قم بإنشاء مستند جديد
+// Erstellen Sie ein neues Dokument
 Document doc = new Document();
 
-// قم بإنشاء منشئ المستندات
+// Erstellen Sie einen Dokumentengenerator
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الخط
- بعد ذلك ، سنقوم بتكوين الخط عن طريق تعيين ملف`Name` خاصية منشئ الوثيقة.
+## Schritt 2: Konfigurieren Sie die Schriftart
+ Als nächstes konfigurieren wir die Schriftart, indem wir die festlegen`Name` Eigenschaft des Dokumentgenerators.
 
 ```csharp
-//تكوين الخط
+//Konfigurieren Sie die Schriftart
 builder.Font.Name = "Calibri";
 ```
 
-## الخطوة 3: أضف نصًا إلى المستند
-سنستخدم الآن منشئ المستندات لإضافة نص منسق إلى المستند.
+## Schritt 3: Fügen Sie dem Dokument Text hinzu
+Wir werden nun den Dokumentgenerator verwenden, um dem Dokument formatierten Text hinzuzufügen.
 
 ```csharp
-// أضف نصًا إلى المستند
+// Fügen Sie dem Dokument Text hinzu
 builder. Writen("qText");
 ```
 
-## الخطوة 4: احصل على تباعد أسطر الخطوط
- الآن سوف نصل إلى`Font` كائن من الفقرة الأولى من المستند واسترداد قيمة`LineSpacing` ملكية.
+## Schritt 4: Ermitteln Sie den Zeilenabstand der Schriftarten
+ Jetzt greifen wir auf die zu`Font` Objekt des ersten Absatzes des Dokuments und rufen Sie den Wert ab`LineSpacing` Eigentum.
 
 ```csharp
-// احصل على تباعد الأسطر للخط
+// Ermitteln Sie den Zeilenabstand der Schriftart
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### نموذج لشفرة مصدر للحصول على تباعد أسطر الخطوط باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Get Font Line Spacing“ mit Aspose.Words für .NET 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -60,5 +60,5 @@ Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام Aspose.Words for .NET. يعد تباعد أسطر الخطوط أمرًا مهمًا للتحكم في التباعد الرأسي بين سطور النص. لا تتردد في استخدام هذه الميزة لتخصيص مظهر النص في مستنداتك.
+## Abschluss
+In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET den Schriftzeilenabstand in einem Word-Dokument ermittelt. Der Zeilenabstand der Schriftart ist wichtig, um den vertikalen Abstand zwischen Textzeilen zu steuern. Nutzen Sie diese Funktion gerne, um das Erscheinungsbild Ihres Textes in Ihren Dokumenten anzupassen.

@@ -1,71 +1,71 @@
 ---
-title: الانضمام إلى صفحة جديدة
-linktitle: الانضمام إلى صفحة جديدة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ضم وثيقتين في صفحة جديدة مع الحفاظ على التنسيق باستخدام Aspose.Words for .NET.
+title: Gå med i Ny sida
+linktitle: Gå med i Ny sida
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du sammanfogar två dokument på en ny sida samtidigt som du bevarar formateringen med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/join-new-page/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية ضم وثيقتين على صفحة جديدة باستخدام Aspose.Words for .NET. يوضح كود المصدر المقدم كيفية إلحاق مستند بنهاية مستند آخر أثناء بدء المستند الملحق في صفحة جديدة.
+Denna handledning förklarar hur man sammanfogar två dokument på en ny sida med Aspose.Words för .NET. Den medföljande källkoden visar hur du lägger till ett dokument i slutet av ett annat dokument samtidigt som du startar det bifogade dokumentet på en ny sida.
 
-## الخطوة 1: قم بإعداد المشروع
+## Steg 1: Konfigurera projektet
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Se till att du har följande förutsättningar:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från den officiella Aspose-webbplatsen eller använda NuGet-pakethanteraren för att installera den.
+- En dokumentkatalogsökväg där käll- och måldokumenten finns.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Steg 2: Öppna käll- och måldokumenten
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Öppna käll- och måldokumenten med hjälp av`Document` klass konstruktör. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: بدء إعداد قسم صفحة جديدة
+## Steg 3: Starta ny sidavsnitt
 
- لبدء المستند المُلحق على صفحة جديدة ، قم بتعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.NewPage`.
+ För att starta det bifogade dokumentet på en ny sida, ställ in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر
+## Steg 4: Bifoga källdokumentet
 
- قم بإلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. اضبط وضع تنسيق الاستيراد على`ImportFormatMode.KeepSourceFormatting`للاحتفاظ بالأنماط الأصلية من المستند المصدر.
+ Bifoga källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. Ställ in importformatläget på`ImportFormatMode.KeepSourceFormatting`för att bevara originalformaten från källdokumentet.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند المعدل
+## Steg 5: Spara det ändrade dokumentet
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 ```
 
-هذا يكمل تنفيذ ضم وثيقتين على صفحة جديدة باستخدام Aspose.Words for .NET.
+Detta slutför implementeringen av att sammanfoga två dokument på en ny sida med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لـ Join New Page باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Gå med i ny sida med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بتعيين المستند الملحق للبدء في صفحة جديدة.
+	// Ställ in det bifogade dokumentet att börja på en ny sida.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
-	// قم بإلحاق المستند المصدر باستخدام الأنماط الأصلية الموجودة في المستند المصدر.
+	// Bifoga källdokumentet med de ursprungliga stilarna som finns i källdokumentet.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 ```

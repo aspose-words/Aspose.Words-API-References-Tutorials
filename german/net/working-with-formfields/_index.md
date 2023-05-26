@@ -1,18 +1,18 @@
 ---
-title: العمل مع FormFields
-linktitle: العمل مع FormFields
-second_title: Aspose.Words لمراجع .NET API
-description: البرامج التعليمية التي تحتوي على كيفية إدراج حقول النموذج ، والعمل مع خصائص حقول النماذج ، والحصول على مجموعة حقول النموذج ، والحصول على حقول النموذج بالاسم في مستند Word باستخدام Aspose.Words for .NET.
+title: Arbeiten mit FormFields
+linktitle: Arbeiten mit FormFields
+second_title: Aspose.Words für .NET API-Referenz
+description: Tutorials zum Einfügen von Formulardateien, zum Arbeiten mit den Eigenschaften von Formulardateien, zum Abrufen der Sammlung von Formularfeldern und zum Abrufen von Formularfeldern nach Namen in einem Word-Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 690
 url: /de/net/working-with-formfields/
 ---
-يعد العمل مع Form Fields موردًا شاملاً لتعلم كيفية التعامل مع حقول النماذج في مستندات Word باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية شروحات خطوة بخطوة ، وكود مصدر كامل ، وأمثلة عملية لإنشاء وتعديل وإدارة حقول النموذج مثل مربعات الاختيار ومربعات النص والقوائم المنسدلة والمزيد. ستتعلم أيضًا كيفية استخراج البيانات ونشرها من حقول النماذج ، بالإضافة إلى تخصيص تنسيقها وسلوكها. هذا المورد ضروري للمطورين الراغبين في أتمتة إنشاء النماذج وإدارتها في مستندات Word باستخدام Aspose.Words for .NET.
+„Arbeiten mit Formularfeldern“ ist eine umfassende Ressource zum Erlernen der Arbeit mit Formularfeldern in Word-Dokumenten mithilfe der Aspose.Words für .NET-Bibliothek. Tutorials bieten Schritt-für-Schritt-Erklärungen, vollständigen Quellcode und praktische Beispiele zum Erstellen, Ändern und Verwalten von Formularfeldern wie Kontrollkästchen, Textfeldern, Dropdown-Listen und mehr. Sie erfahren außerdem, wie Sie Daten aus Formularfeldern extrahieren und füllen sowie deren Formatierung und Verhalten anpassen. Diese Ressource ist für Entwickler unerlässlich, die die Erstellung und Verwaltung von Formularen in Word-Dokumenten mithilfe von Aspose.Words für .NET automatisieren möchten.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [أدخل حقول النموذج](./insert-form-fields/) | تعرف على كيفية إدراج حقول نموذج القائمة المنسدلة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تعمل حقول النموذج مع الخصائص](./form-fields-work-with-properties/) | تعرف على كيفية التعامل مع خصائص حقل النموذج في مستندات Word باستخدام Aspose.Words for .NET. |
-| [حقول النموذج تحصل على مجموعة حقول النموذج](./form-fields-get-form-fields-collection/) | تعرف على كيفية استرداد مجموعة حقول النموذج ومعالجتها في مستندات Word باستخدام Aspose.Words for .NET. |
-| [الحصول على حقول النموذج بالاسم](./form-fields-get-by-name/) | تعرف على كيفية استرداد وتعديل حقول النموذج بالاسم في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Formularfelder einfügen](./insert-form-fields/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Dropdown-Formularfelder in Word-Dokumente einfügen. |
+| [Formularfelder funktionieren mit Eigenschaften](./form-fields-work-with-properties/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET mit Formularfeldeigenschaften in Word-Dokumenten arbeiten. |
+| [Formularfelder Holen Sie sich eine Sammlung von Formularfeldern](./form-fields-get-form-fields-collection/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Formularfeldsammlungen in Word-Dokumenten abrufen und bearbeiten. |
+| [Formularfelder nach Namen abrufen](./form-fields-get-by-name/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Formularfelder in Word-Dokumenten nach Namen abrufen und ändern. |

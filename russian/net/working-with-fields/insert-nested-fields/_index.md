@@ -1,52 +1,52 @@
 ---
-title: أدخل الحقول المتداخلة
-linktitle: أدخل الحقول المتداخلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الحقول المتداخلة بسهولة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Вставить вложенные поля
+linktitle: Вставить вложенные поля
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как легко вставлять вложенные поля в документы Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/working-with-fields/insert-nested-fields/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج الحقول المتداخلة" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Вот пошаговое руководство, объясняющее приведенный ниже исходный код C#, в котором используется функция «Вставить вложенные поля» Aspose.Words для .NET. Обязательно внимательно следуйте каждому шагу, чтобы получить желаемые результаты.
 
-## الخطوة 1: إعداد دليل المستند
+## Шаг 1: Настройка каталога документов
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+В предоставленном коде необходимо указать директорию ваших документов. Замените значение «КАТАЛОГ ВАШИХ ДОКУМЕНТОВ» на соответствующий путь к каталогу ваших документов.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## Шаг 2: Создание документа и DocumentBuilder
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Начнем с создания нового документа и инициализации DocumentBuilder.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدراج فواصل الصفحات
+## Шаг 3. Вставка разрывов страниц
 
-نستخدم حلقة لإدراج عدة فواصل صفحات في المستند.
+Мы используем цикл для вставки нескольких разрывов страниц в документ.
 
 ```csharp
 for (int i = 0; i < 5; i++)
      builder. InsertBreak(BreakType.PageBreak);
 ```
 
-## الخطوة 4: الانتقال إلى التذييل
+## Шаг 4: Перейдите в нижний колонтитул
 
- نحن نستخدم ال`MoveToHeaderFooter()` أسلوب DocumentBuilder لتحريك المؤشر إلى التذييل الرئيسي.
+ Мы используем`MoveToHeaderFooter()` метод DocumentBuilder для перемещения курсора в основной нижний колонтитул.
 
 ```csharp
 builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 ```
 
-## الخطوة 5: إدخال الحقل المتداخل
+## Шаг 5: Вставка вложенного поля
 
- نحن نستخدم برنامج DocumentBuilder`InsertField()` طريقة لإدراج حقل متداخل في التذييل.
+ Мы используем DocumentBuilder`InsertField()` метод для вставки вложенного поля в нижний колонтитул.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");
@@ -57,30 +57,30 @@ builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Наконец, мы вызываем`Update()` способ обновления поля.
 
 ```csharp
 field. Update();
 ```
 
-### نموذج التعليمات البرمجية المصدر لإدخال الحقول المتداخلة مع Aspose.Words for .NET
+### Пример исходного кода для вставки вложенных полей с помощью Aspose.Words для .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند و DocumentBuilder.
+// Создайте документ и DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// أدخل فواصل الصفحات.
+// Вставьте разрывы страниц.
 for (int i = 0; i < 5; i++)
      builder. InsertBreak(BreakType.PageBreak);
 
-// الانتقال إلى التذييل.
+// Перейти в нижний колонтитул.
 builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-// أدخل الحقل المتداخل.
+// Вставить вложенное поле.
 Field field = builder. InsertField(@"IF ");
 builder.MoveTo(field.Separator);
 builder. InsertField("PAGE");
@@ -88,10 +88,10 @@ builder. Write(" <> ");
 builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
 
-// قم بتحديث الحقل.
+// Обновите поле.
 field. Update();
 
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأدرجنا فواصل الصفحات ، وحركنا المؤشر إلى التذييل ، ثم أدرجنا حقلاً متداخلًا في التذييل.
+В этом примере мы создали новый документ, вставили разрывы страниц, переместили курсор в нижний колонтитул, а затем вставили вложенное поле в нижний колонтитул.

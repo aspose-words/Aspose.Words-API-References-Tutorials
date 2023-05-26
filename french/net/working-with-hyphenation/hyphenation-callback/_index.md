@@ -1,30 +1,30 @@
 ---
-title: رد اتصال الواصلة
-linktitle: رد اتصال الواصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام رد نداء الواصلة في Aspose.Words for .NET للتعامل مع الواصلة في الكلمات.
+title: Rappel de césure
+linktitle: Rappel de césure
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à utiliser le rappel de césure dans Aspose.Words pour .NET pour gérer la césure des mots.
 type: docs
 weight: 10
 url: /fr/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية استخدام ميزة رد الاتصال في Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Dans ce tutoriel étape par étape, nous allons vous montrer comment utiliser la fonction de rappel de césure dans Aspose.Words pour .NET. Nous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas déjà fait, téléchargez et installez la bibliothèque à partir du site officiel.
 
-## الخطوة 1: حفظ تذكير الواصلة
+## Étape 1 : Enregistrer le rappel de césure
 
- أولاً ، سنقوم بتسجيل رد نداء الواصلة باستخدام مخصص`CustomHyphenationCallback` فصل. سيسمح لنا ذلك بالتعامل مع الواصلة وفقًا لقواعدنا الخاصة:
+ Tout d'abord, nous allons enregistrer le rappel de césure à l'aide d'un`CustomHyphenationCallback` classe. Cela nous permettra de gérer la césure des mots selon nos propres règles :
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
 ```
 
- تأكد من أنك قمت بتنفيذ`CustomHyphenationCallback`فئة وفقًا لاحتياجاتك الخاصة.
+ Assurez-vous d'avoir implémenté le`CustomHyphenationCallback`classe selon vos besoins spécifiques.
 
-## الخطوة 2: تحميل المستند وتطبيق الواصلة
+## Étape 2 : Chargement du document et application de la césure
 
-بعد ذلك ، قم بتحميل المستند الخاص بك من الدليل المحدد وقم بوصل الكلمات باستخدام Aspose.Words:
+Ensuite, chargez votre document à partir du répertoire spécifié et coupez les mots à l'aide de Aspose.Words :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,9 +32,9 @@ Document document = new Document(dataDir + "German text.docx");
 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
 ```
 
-## الخطوة 3: معالجة أخطاء القاموس المفقودة
+## Étape 3 : Gestion des erreurs de dictionnaire manquantes
 
-في حالة فقد قاموس الواصلة ، سنكتشف الاستثناء المقابل ونعرض رسالة خطأ:
+S'il manque un dictionnaire de césure, nous intercepterons l'exception correspondante et afficherons un message d'erreur :
 
 ```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
@@ -43,9 +43,9 @@ catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary")
 }
 ```
 
-## الخطوة 4: تنظيف وتعطيل تذكير الواصلة
+## Étape 4 : Nettoyer et désactiver le rappel de césure
 
-أخيرًا ، للتنظيف وإيقاف تشغيل تذكير الواصلة ، قم بتنفيذ الخطوات التالية:
+Enfin, pour plus de propreté et pour désactiver le rappel de césure, effectuez les étapes suivantes :
 
 ```csharp
 finally
@@ -54,16 +54,16 @@ finally
 }
 ```
 
-يؤدي هذا إلى تنظيف وتعطيل تذكير الواصلة بعد الانتهاء من المعالجة.
+Cela nettoie et désactive le rappel de césure après avoir terminé le traitement.
 
-لذا ! لقد نجحت في استخدام رد نداء الواصلة في Aspose.Words for .NET.
+Donc ! Vous avez utilisé avec succès le rappel de césure dans Aspose.Words pour .NET.
 
-### نموذج التعليمات البرمجية المصدر لرد الاتصال الواصلة مع Aspose.Words for .NET
+### Exemple de code source pour le rappel de césure avec Aspose.Words pour .NET
 
 ```csharp
 try
 {
-	 // تسجيل رد الاتصال الواصلة.
+	 // Enregistrez le rappel de césure.
 	 Hyphenation.Callback = new CustomHyphenationCallback();
 	 string dataDir = "YOUR DOCUMENT DIRECTORY";
 	 Document document = new Document(dataDir + "German text.docx");
@@ -80,4 +80,4 @@ finally
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.

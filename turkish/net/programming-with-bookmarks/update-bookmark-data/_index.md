@@ -1,48 +1,48 @@
 ---
-title: تحديث البيانات المرجعية
-linktitle: تحديث البيانات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح شفرة المصدر C # لميزة تحديث بيانات الإشارة المرجعية Aspose.Words لـ .NET.
+title: Yer İşareti Verilerini Güncelle
+linktitle: Yer İşareti Verilerini Güncelle
+second_title: Aspose.Words for .NET API Referansı
+description: .NET için Aspose.Words yer imi veri güncelleme özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-في هذا البرنامج التعليمي ، سننتقل عبر دليل تفصيلي خطوة بخطوة لفهم ميزة تحديث بيانات الإشارة المرجعية وتنفيذها في Aspose.Words for .NET. تتيح لك هذه الميزة تحديث محتوى وخصائص الإشارات المرجعية داخل مستند Word باستخدام كود مصدر C #.
+Bu eğitimde, Aspose.Words for .NET'in Yer İşareti Verilerini Güncelle özelliğini anlamak ve uygulamak için adım adım ilerleyen bir kılavuzdan geçeceğiz. Bu özellik, C# kaynak kodunu kullanarak bir Word belgesindeki yer imlerinin içeriğini ve özelliklerini güncellemenizi sağlar.
 
-## متطلبات
+## Gereksinimler
 
-قبل متابعة البرنامج التعليمي ، تأكد من توفر المتطلبات التالية:
+Öğreticiye devam etmeden önce, aşağıdaki gereksinimlere sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET
-- المعرفة الأساسية بلغة البرمجة C #
-- Visual Studio أو أي IDE متوافق آخر
+- Aspose.Words for .NET kitaplığı kurulu
+- C# programlama dili hakkında temel bilgi
+- Visual Studio veya başka herhangi bir uyumlu IDE
 
-## الخطوة 1: قم بتحميل المستند
+## 1. Adım: Belgeyi yükleyin
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي يحتوي على الإشارات المرجعية التي نريد تحديثها. بافتراض أن لديك المستند مخزّنًا في دليل معين ، استخدم الكود التالي لتحميل المستند:
+Bu adımda güncellemek istediğimiz yer imlerini içeren Word belgesini yükleyeceğiz. Belgenin belirli bir dizinde saklandığını varsayarsak, belgeyi yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` مع مسار الدليل الفعلي حيث يوجد المستند الخاص بك.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu gerçek dizin yolu ile.
 
-## الخطوة 2: الوصول إلى الإشارة المرجعية
+## 2. Adım: Yer işaretine erişin
 
-لتحديث بيانات الإشارة المرجعية ، نحتاج أولاً إلى الوصول إلى الإشارة المرجعية المحددة داخل المستند. كل إشارة مرجعية لها اسم فريد مرتبط بها. استخدم الكود التالي للوصول إلى إشارة مرجعية تسمى "MyBookmark1":
+Yer imi verilerini güncellemek için önce belgedeki belirli yer işaretine erişmemiz gerekir. Her yer iminin kendisiyle ilişkilendirilmiş benzersiz bir adı vardır. "MyBookmark1" adlı bir yer imine erişmek için aşağıdaki kodu kullanın:
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks["MyBookmark1"];
 ```
 
-تأكد من تطابق اسم الإشارة المرجعية مع الاسم الموجود في المستند. يمكنك تعديله حسب متطلباتك.
+Yer imi adının belgenizdeki adla eşleştiğinden emin olun. Gereksinimlerinize göre değiştirebilirsiniz.
 
-## الخطوة 3: تحديث خصائص الإشارات المرجعية والمحتوى
+## 3. Adım: Yer imi özelliklerini ve içeriğini güncelleyin
 
-بمجرد الوصول إلى الإشارة المرجعية ، يمكنك تحديث خصائصها ومحتواها. في مقتطف الشفرة التالي ، سنقوم بتحديث اسم الإشارة المرجعية ونصها:
+Yer imine eriştiğinizde özelliklerini ve içeriğini güncelleyebilirsiniz. Aşağıdaki kod parçacığında yer imi adını ve metnini güncelleyeceğiz:
 
 ```csharp
 string name = bookmark.Name;
@@ -52,23 +52,23 @@ bookmark.Name = "RenamedBookmark";
 bookmark.Text = "This is a new bookmarked text.";
 ```
 
-يمكنك تخصيص اسم الإشارة المرجعية والنص الجديد وفقًا لاحتياجاتك. الرمز أعلاه يعيد تسمية الإشارة المرجعية إلى "RenamedBookmark" ويقوم بتحديث محتوى النص.
+Yer imi adını ve yeni metni ihtiyaçlarınıza göre özelleştirebilirsiniz. Yukarıdaki kod, yer imini "RenamedBookmark" olarak yeniden adlandırır ve metin içeriğini günceller.
 
-## الخطوة 4: احفظ المستند المحدث
+## 4. Adım: Güncellenen belgeyi kaydedin
 
-بعد تحديث بيانات الإشارة المرجعية ، تحتاج إلى حفظ المستند المعدل. استخدم الكود التالي لحفظ المستند:
+Yer imi verilerini güncelledikten sonra, değiştirilen belgeyi kaydetmeniz gerekir. Belgeyi kaydetmek için aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "UpdatedDocument.docx");
 ```
 
-سيحفظ هذا الرمز المستند المعدل باسم "UpdatedDocument.docx" في نفس الدليل مثل المستند الأصلي.
+Bu kod, değiştirilen belgeyi "UpdatedDocument.docx" adıyla orijinal belgeyle aynı dizine kaydedecektir.
 
-### مثال على شفرة المصدر لتحديث بيانات الإشارة المرجعية باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Yer İşareti Verilerini Güncellemek için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 
@@ -82,8 +82,8 @@ doc.Save(dataDir + "UpdatedDocument.docx");
 
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` مع مسار الدليل الفعلي حيث يوجد المستند الخاص بك.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu gerçek dizin yolu ile.
 
-## خاتمة
+## Çözüm
 
-تهانينا! لقد تعلمت بنجاح كيفية تحديث بيانات الإشارات المرجعية باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة المقدم في هذا البرنامج التعليمي ، يجب أن تكون قادرًا الآن على دمج هذه الميزة في تطبيقات C # الخاصة بك ومعالجة الإشارات المرجعية في مستندات Word برمجيًا.
+Tebrikler! Aspose.Words for .NET kullanarak yer imi verilerini nasıl güncelleyeceğinizi başarıyla öğrendiniz. Bu öğreticide sağlanan adım adım kılavuzu izleyerek, artık bu özelliği C# uygulamalarınıza dahil edebilmeli ve Word belgeleri içindeki yer imlerini programlı olarak değiştirebilmelisiniz.

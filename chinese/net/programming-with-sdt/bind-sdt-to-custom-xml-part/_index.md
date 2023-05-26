@@ -1,62 +1,62 @@
 ---
-title: ربط SDT بجزء Xml المخصص
-linktitle: ربط SDT بجزء Xml المخصص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ربط SDT بجزء Xml مخصص باستخدام Aspose.Words for .NET.
+title: 将 SDT 绑定到自定义 Xml 部件
+linktitle: 将 SDT 绑定到自定义 Xml 部件
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将 SDT 绑定到自定义 Xml 部件。
 type: docs
 weight: 10
 url: /zh/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 ---
 
-يوضح هذا البرنامج التعليمي كيفية ربط علامة المستند المهيكل (SDT) بجزء Xml مخصص باستخدام Aspose.Words for .NET. تسمح لك أدوات SDT بإضافة عناصر تحكم محتوى منظم إلى مستند Word ، وتوفر CustomXmlParts طريقة لتخزين بيانات XML المخصصة المرتبطة بالمستند.
+本教程演示如何使用 Aspose.Words for .NET 将结构化文档标签 (SDT) 绑定到自定义 Xml 部件。 SDT 允许您向 Word 文档添加结构化内容控件，而 CustomXmlParts 提供了一种存储与文档关联的自定义 XML 数据的方法。
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## 先决条件
+要学习本教程，您需要具备以下条件：
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # و XML.
+- 安装了 Aspose.Words for .NET 库。
+- C# 和 XML 的基础知识。
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستند الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## 第 1 步：设置文档目录
+首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`使用要保存文档的目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و CustomXmlPart
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`CustomXmlPart` لتخزين بيانات XML المخصصة. يجب أن يكون XML المخصص بتنسيق XML صالح. في هذا المثال ، نستخدم سلسلة XML بسيطة`<root><text>Hello, World!</text></root>`.
+## 第 2 步：创建文档和 CustomXmlPart
+创建一个新的实例`Document`类和一个`CustomXmlPart`存储自定义 XML 数据。自定义 XML 应采用有效的 XML 格式。在这个例子中，我们使用一个简单的 XML 字符串`<root><text>Hello, World!</text></root>`.
 
 ```csharp
 Document doc = new Document();
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<root><text>Hello, World!</text></root>");
 ```
 
-## الخطوة 3: إضافة StructuredDocumentTag (SDT) إلى المستند
- أضف`StructuredDocumentTag`إلى المستند ليكون بمثابة عنصر تحكم المحتوى. حدد ال`SdtType` مثل`PlainText` و ال`MarkupLevel` مثل`Block` لإنشاء المعاملة الخاصة والتفضيلية على مستوى الكتلة.
+## 第 3 步：将 StructuredDocumentTag (SDT) 添加到文档
+添加一个`StructuredDocumentTag`到文档作为内容控件。指定`SdtType`作为`PlainText`和`MarkupLevel`作为`Block`创建块级 SDT。
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);
 doc.FirstSection.Body.AppendChild(sdt);
 ```
 
-## الخطوة 4: تعيين تعيين XML لـ SDT
- قم بتعيين SDT إلى ملف`CustomXmlPart` باستخدام ملف`SetMapping` طريقة`XmlMapping` ملكية. حدد ال`CustomXmlPart` ، وتعبير XPath لتحديد موقع عقدة XML المطلوبة ، وبادئة مساحة الاسم إذا لزم الأمر. في هذا المثال ، نقوم بتعيين المعاملة الخاصة والتفضيلية إلى`/root[1]/text[1]`.
+## 第 4 步：为 SDT 设置 XML 映射
+将 SDT 映射到`CustomXmlPart`通过使用`SetMapping`的方法`XmlMapping`财产。指定`CustomXmlPart`，用于定位所需 XML 节点的 XPath 表达式，以及必要时的命名空间前缀。在这个例子中，我们将 SDT 映射到`/root[1]/text[1]`.
 
 ```csharp
 sdt.XmlMapping.SetMapping(xmlPart, "/root[1]/text[1]", "");
 ```
 
-## الخطوة 5: احفظ المستند
- احفظ المستند المعدل إلى الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.BindSDTtoCustomXmlPart.doc".
+## 第 5 步：保存文档
+使用 将修改后的文档保存到指定目录`Save`方法。提供具有适当文件扩展名的所需文件名。在此示例中，我们将文档保存为“WorkingWithSdt.BindSDTtoCustomXmlPart.doc”。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 ```
 
-### مثال على شفرة المصدر لجزء Bind Sd Tto Custom Xml باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的 Bind Sd Tto Custom Xml Part 示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -68,4 +68,4 @@ doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 	doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 ```
 
-هذا كل شيء! لقد نجحت في ربط SDT بـ CustomXmlPart في مستند Word باستخدام Aspose.Words for .NET.
+就是这样！您已经使用 Aspose.Words for .NET 成功地将 SDT 绑定到 Word 文档中的 CustomXmlPart。

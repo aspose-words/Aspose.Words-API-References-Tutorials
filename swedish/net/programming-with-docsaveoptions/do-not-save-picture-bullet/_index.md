@@ -1,81 +1,81 @@
 ---
-title: لا تقم بحفظ صورة نقطية
-linktitle: لا تقم بحفظ صورة نقطية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل حفظ الرموز النقطية للصور في مستندات Word باستخدام Aspose.Words for .NET.
+title: Spara inte Picture Bullet
+linktitle: Spara inte Picture Bullet
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du inaktiverar att spara bildpunkter i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 
-تعد الرموز النقطية للصور ميزة شائعة الاستخدام في مستندات Word لإضافة رموز نقطية مخصصة. ومع ذلك ، في بعض الحالات قد يكون من الضروري تعطيل تسجيل الصور النقطية عند معالجة المستندات باستخدام Aspose.Words Library for .NET. في هذا الدليل المفصل خطوة بخطوة ، سنشرح كيفية استخدام كود مصدر Aspose.Words C # لـ .NET لتعطيل حفظ الصور النقطية باستخدام خيارات حفظ DocSaveOptions.
+Bildpunkter är en vanlig funktion i Word-dokument för att lägga till anpassade punkter. I vissa fall kan det dock vara nödvändigt att inaktivera registrering av bildpunkter när du manipulerar dokument med Aspose.Words Library för .NET. I denna steg-för-steg-guide kommer vi att förklara hur man använder Aspose.Words C#-källkod för .NET för att inaktivera lagring av bildpunkter med hjälp av DocSaveOptions-sparalternativ.
 
-## فهم مكتبة Aspose.Words
+## Förstå Aspose.Words-biblioteket
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Innan du dyker in i koden är det viktigt att förstå Aspose.Words-biblioteket för .NET. Aspose.Words är ett kraftfullt bibliotek för att skapa, redigera, konvertera och skydda Word-dokument på olika plattformar inklusive .NET. Den erbjuder många funktioner för att manipulera dokument, som att infoga text, ändra formatering, lägga till avsnitt och mycket mer.
 
-## الخطوة 1: إعداد دليل المستندات
+## Steg 1: Ställa in dokumentkatalogen
 
-الخطوة الأولى هي تحديد الدليل حيث توجد المستندات الخاصة بك. يجب عليك تحديد مسار الدليل الكامل. على سبيل المثال :
+Det första steget är att definiera katalogen där dina dokument finns. Du måste ange den fullständiga katalogsökvägen. Till exempel :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog.
 
-## الخطوة 2: تحميل المستند مع صورة نقطية
+## Steg 2: Ladda dokumentet med bildpunkter
 
-بعد ذلك ، تحتاج إلى تحميل المستند باستخدام الرموز النقطية للصور. استخدم فئة المستند لتحميل المستند من ملف. على سبيل المثال :
+Därefter måste du ladda dokumentet med bildpunkter. Använd klassen Document för att ladda dokumentet från en fil. Till exempel :
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-في هذا المثال نقوم بتحميل المستند من ملف "Image bullet points.docx"
+I det här exemplet laddar vi dokumentet från filen "Image bullet points.docx"
 
-  الموجود في دليل المستندات.
+  finns i dokumentkatalogen.
 
-## الخطوة 3: تكوين خيارات التسجيل
+## Steg 3: Konfigurera inspelningsalternativ
 
-لنقم الآن بتهيئة خيارات الحفظ لمستندنا. استخدم فئة DocSaveOptions لتحديد إعدادات الحفظ. على سبيل المثال :
+Låt oss nu konfigurera sparalternativen för vårt dokument. Använd klassen DocSaveOptions för att ange sparinställningar. Till exempel :
 
 ```csharp
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
-في هذا المثال ، قمنا بإنشاء كائن DocSaveOptions جديد وقمنا بتعيين الخاصية SavePictureBullet إلى false لتعطيل حفظ الرموز النقطية للصور.
+det här exemplet skapar vi ett nytt DocSaveOptions-objekt och ställer in egenskapen SavePictureBullet till false för att inaktivera lagring av bildpunkter.
 
-## الخطوة 4: تمكين ميزة "عدم حفظ الصورة التعدادية"
+## Steg 4: Aktivera funktionen "Spara inte bildpunkten".
 
-لتمكين ميزة "Do Not Save Picture Bullet" ، قمنا بالفعل بتكوين خيارات الحفظ مع تعيين SavePictureBullet على false. هذا يضمن عدم حفظ الصور النقطية في المستند النهائي.
+För att aktivera funktionen "Spara inte Picture Bullet" har vi redan konfigurerat sparalternativen med SavePictureBullet inställt på false. Detta säkerställer att bildpunkter inte sparas i slutdokumentet.
 
-## الخطوة 5: احفظ المستند
+## Steg 5: Spara dokumentet
 
-أخيرًا ، يمكنك حفظ المستند باستخدام طريقة Save لفئة Document. حدد المسار الكامل للملف واسم الملف المطلوب. على سبيل المثال :
+Slutligen kan du spara dokumentet med hjälp av Spara-metoden för klassen Document. Ange den fullständiga sökvägen till filen och önskat filnamn. Till exempel :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
-تأكد من استبدال "dataDir" بمسار الدليل إلى مستنداتك.
+Se till att ersätta "dataDir" med katalogsökvägen till dina dokument.
 
-## مثال على كود المصدر لـ DocSaveOptions حفظ الخيارات مع وظيفة "عدم حفظ الصورة" باستخدام Aspose.Words for .NET
+## Exempel på källkod för DocSaveOptions-sparalternativ med "Spara inte Picture Bullet"-funktionalitet med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند باستخدام الصور النقطية
+// Ladda dokumentet med bildpunkter
 Document doc = new Document(dataDir + "Image bullet points.docx");
 
-// تكوين خيارات الحفظ مع ميزة "عدم حفظ الصورة"
+// Konfigurera sparalternativ med funktionen "Spara inte Picture Bullet".
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 
-// احفظ المستند بالخيارات المحددة
+// Spara dokumentet med de angivna alternativen
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
-## خاتمة
+## Slutsats
 
-في هذا الدليل ، تناولنا كيفية تعطيل حفظ الصور النقطية في مستند باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يمكن أن يكون تعطيل حفظ الصورة النقطية مفيدًا في بعض المواقف للحفاظ على بنية المستند وتنسيقه بدون حفظ الرموز النقطية للصورة.
+den här guiden behandlade vi hur du inaktiverar lagring av bildpunkter i ett dokument med Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Att inaktivera lagring av bildpunkter kan vara användbart i vissa situationer för att bevara dokumentstruktur och formatering utan att spara bildpunkter.

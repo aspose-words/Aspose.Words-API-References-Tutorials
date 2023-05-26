@@ -1,42 +1,42 @@
 ---
-title: الانضمام وإلحاق المستندات
-linktitle: الانضمام وإلحاق المستندات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على مستند إلحاق بسيط ، وإلحاق مستند ، وإلحاق مستند فارغ ، وإلحاقه بخيارات تنسيق الاستيراد ، وإعداد صفحة مختلف ، والانضمام المستمر ، و
+title: Joindre et ajouter des documents
+linktitle: Joindre et ajouter des documents
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent un document d'ajout simple, un document d'ajout, un document d'ajout à blanc, un ajout avec des options de format d'importation, une configuration de page différente, une jointure continue, jo
 type: docs
 weight: 1500
 url: /fr/net/join-and-append-documents/
 ---
- توجهك دروس Aspose.Words for .NET التعليمية عبر ميزات وتقنيات مختلفة للعمل مع مستندات Word في تطبيقاتك. أحد هذه البرامج التعليمية هو "الانضمام إلى المستندات ودمجها" ، والذي يوضح لك كيفية دمج مستندات Word متعددة في مستند واحد. سوف تتعلم كيفية استخدام`Document` فئة لفتح المستندات ومعالجتها ، بالإضافة إلى ملفات`AppendDocument` طريقة لإلحاق محتويات مستند إلى آخر. يمنحك هذا البرنامج التعليمي إرشادات خطوة بخطوة لإجراء هذه العملية بسهولة.
+ Les didacticiels Aspose.Words pour .NET vous guident à travers différentes fonctionnalités et techniques pour travailler avec des documents Word dans vos applications. L'un de ces didacticiels est "Rejoindre et fusionner des documents", qui vous montre comment combiner plusieurs documents Word en un seul. Vous apprendrez à utiliser le`Document` classe pour ouvrir et manipuler des documents, ainsi que la`AppendDocument` méthode pour ajouter le contenu d'un document à un autre. Ce didacticiel vous donne des instructions étape par étape pour effectuer cette opération en toute simplicité.
 
- برنامج تعليمي رائع آخر هو "استبدال النص في مستند" ، والذي يخبرك بكيفية إجراء عمليات الاستبدال التلقائي للنص في مستند Word. سوف تتعلم كيفية استخدام`FindReplaceOptions` و`Document`فئات للبحث عن النص واستبداله ، وتحديد خيارات البحث المرنة. يرشدك هذا البرنامج التعليمي خلال عملية استبدال النص في مستند ، مما يسمح لك بأتمتة هذه المهمة الشاقة.
+ Un autre excellent didacticiel est "Remplacer du texte dans un document", qui vous explique comment effectuer des remplacements de texte automatiques dans un document Word. Vous apprendrez à utiliser le`FindReplaceOptions` et`Document`classes pour rechercher et remplacer du texte, en spécifiant des options de recherche flexibles. Ce didacticiel vous guide tout au long du processus de remplacement de texte dans un document, vous permettant d'automatiser cette tâche fastidieuse.
 
- أخيرًا ، يوضح لك البرنامج التعليمي "إنشاء تقرير باستخدام دمج البيانات" كيفية إنشاء تقارير ديناميكية عن طريق دمج البيانات في قالب مستند Word. سوف تتعلم كيفية استخدام`MailMerge` فئة لأداء دمج البيانات من مصادر مختلفة ، مثل الجداول أو الكائنات المخصصة أو قواعد البيانات. يوفر لك هذا البرنامج التعليمي أمثلة ملموسة ونصائح عملية لإنشاء تقارير مخصصة من مجموعة متنوعة من البيانات.
+ Enfin, le didacticiel "Génération d'un rapport avec fusion de données" vous montre comment créer des rapports dynamiques en fusionnant des données dans un modèle de document Word. Vous apprendrez à utiliser le`MailMerge` class pour effectuer la fusion de données à partir de différentes sources, telles que des tables, des objets personnalisés ou des bases de données. Ce didacticiel vous fournit des exemples concrets et des conseils pratiques pour générer des rapports personnalisés à partir de diverses données.
 
-توفر لك برامج Aspose.Words for .NET التعليمية موارد قيمة لإتقان العمل مع مستندات Word في تطبيقاتك ، وإرشادك من خلال الأمثلة العملية والتعليمات خطوة بخطوة. سواء كنت بحاجة إلى دمج المستندات أو استبدال النص أو إنشاء التقارير ، ستساعدك هذه البرامج التعليمية على الاستفادة الكاملة من الميزات القوية لـ Aspose.Words for .NET.
+Ces didacticiels Aspose.Words pour .NET vous fournissent des ressources précieuses pour maîtriser l'utilisation de documents Word dans vos applications, en vous guidant à travers des exemples pratiques et des instructions étape par étape. Que vous ayez besoin de combiner des documents, de remplacer du texte ou de générer des rapports, ces didacticiels vous aideront à tirer pleinement parti des puissantes fonctionnalités d'Aspose.Words pour .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [مستند إلحاق بسيط](./simple-append-document/) | تعرف على كيفية الانضمام وإلحاق مستندات Word بتنسيق محفوظ باستخدام Aspose.Words for .NET. |
-| [إلحاق مستند](./append-document/) | تعرف على كيفية إلحاق محتويات مستند بآخر باستخدام Aspose.Words for .NET. |
-| [إلحاق مستند فارغ](./append-document-to-blank/) | تعرف على كيفية إلحاق مستند إلى مستند وجهة فارغ في Aspose.Words for .NET. |
-| [إلحاق بخيارات تنسيق الاستيراد](./append-with-import-format-options/) | تعرف على كيفية إلحاق مستند بخيارات تنسيق الاستيراد باستخدام Aspose.Words for .NET. |
-| [إعداد صفحة مختلفة](./different-page-setup/) | تعرف على كيفية إلحاق مستند بإعدادات إعداد صفحة مختلفة باستخدام Aspose.Words for .NET. |
-| [الانضمام المستمر](./join-continuous/) | تعرف على كيفية ربط وثيقتين بشكل مستمر مع الحفاظ على التنسيق باستخدام Aspose.Words for .NET. |
-| [الانضمام إلى صفحة جديدة](./join-new-page/) | تعرف على كيفية ضم وثيقتين في صفحة جديدة مع الحفاظ على التنسيق باستخدام Aspose.Words for .NET. |
-| [الاحتفاظ بتنسيق المصدر](./keep-source-formatting/) | تعرف على كيفية إلحاق مستند مصدر بمستند وجهة مع الحفاظ على التنسيق الأصلي باستخدام Aspose.Words for .NET. |
-| [الاحتفاظ بالمصدر معًا](./keep-source-together/) | تعرف على كيفية استخدام Aspose.Words for .NET للانضمام إلى مستندات Word وإلحاقها مع الاحتفاظ بالمحتوى المصدر مع المستند الوجهة. |
-| [قائمة الاحتفاظ بتنسيق المصدر](./list-keep-source-formatting/) | تعرف على كيفية الحفاظ على تنسيق القائمة أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET. |
-| [قائمة استخدام أنماط الوجهة](./list-use-destination-styles/) | تعرف على كيفية الانضمام إلى مستندات Word وإلحاقها مع الاحتفاظ بأنماط قائمة المستندات الوجهة باستخدام Aspose.Words for .NET. |
-| [أعد تشغيل ترقيم الصفحات](./restart-page-numbering/) | تعرف على كيفية إعادة تشغيل ترقيم الصفحات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET. |
-| [تحديث تخطيط الصفحة](./update-page-layout/) | تعرف على كيفية تحديث تخطيط الصفحة عند الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET. |
-| [استخدم أنماط الوجهة](./use-destination-styles/) | تعرف على كيفية الانضمام إلى مستندات Word وإلحاقها أثناء تطبيق أنماط المستندات الوجهة باستخدام Aspose.Words for .NET. |
-| [سلوك الأسلوب الذكي](./smart-style-behavior/) | تعرف على كيفية الحفاظ على سلوك النمط الذكي عند الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET. |
-| [قم بإدراج مستند باستخدام Builder](./insert-document-with-builder/) | تعرف على كيفية إدراج مستند في نهاية مستند آخر باستخدام Aspose.Words for .NET. |
-| [حافظ على ترقيم المصدر](./keep-source-numbering/) | تعرف على كيفية إلحاق مستند مع الاحتفاظ بتنسيق ترقيم المصدر في Aspose.Words for .NET. |
-| [تجاهل مربعات النص](./ignore-text-boxes/) | تعرف على كيفية إلحاق مستند أثناء تجاهل تنسيق مربع النص باستخدام Aspose.Words for .NET. |
-| [تجاهل رأس تذييل الصفحة](./ignore-header-footer/) | تعرف على كيفية إلحاق مستند مع تجاهل محتوى الرأس والتذييل باستخدام Aspose.Words for .NET. |
-| [ربط تذييلات الرؤوس](./link-headers-footers/) | تعرف على كيفية ربط الرؤوس والتذييلات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET. |
-| [إزالة تذييلات رؤوس المصدر](./remove-source-headers-footers/) | تعرف على كيفية إزالة الرؤوس والتذييلات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET. |
-| [فك ارتباط تذييلات الرؤوس](./unlink-headers-footers/) | تعرف على كيفية الانضمام إلى مستندات Word وإلحاقها أثناء إلغاء ربط الرؤوس والتذييلات باستخدام Aspose.Words for .NET. |
+| [Document d'ajout simple](./simple-append-document/) | Apprenez à joindre et à ajouter des documents Word avec une mise en forme préservée à l'aide d'Aspose.Words pour .NET. |
+| [Joindre le document](./append-document/) | Apprenez à ajouter le contenu d'un document à un autre en utilisant Aspose.Words pour .NET. |
+| [Ajouter le document au blanc](./append-document-to-blank/) | Apprenez à ajouter un document à un document de destination vide dans Aspose.Words pour .NET. |
+| [Ajouter avec les options de format d'importation](./append-with-import-format-options/) | Apprenez à ajouter un document avec des options de format d'importation à l'aide d'Aspose.Words pour .NET. |
+| [Mise en page différente](./different-page-setup/) | Apprenez à ajouter un document avec différents paramètres de mise en page à l'aide d'Aspose.Words pour .NET. |
+| [Rejoindre en continu](./join-continuous/) | Apprenez à joindre deux documents en continu tout en préservant la mise en forme à l'aide d'Aspose.Words pour .NET. |
+| [Rejoindre une nouvelle page](./join-new-page/) | Apprenez à joindre deux documents sur une nouvelle page tout en préservant la mise en forme à l'aide d'Aspose.Words pour .NET. |
+| [Conserver la mise en forme source](./keep-source-formatting/) | Apprenez à ajouter un document source à un document de destination tout en préservant la mise en forme d'origine à l'aide d'Aspose.Words pour .NET. |
+| [Gardez la source ensemble](./keep-source-together/) | Apprenez à utiliser Aspose.Words pour .NET pour joindre et ajouter des documents Word tout en conservant le contenu source avec le document de destination. |
+| [Liste Conserver la mise en forme de la source](./list-keep-source-formatting/) | Découvrez comment conserver la mise en forme de la liste lors de la jointure et de l'ajout de documents Word à l'aide d'Aspose.Words pour .NET. |
+| [Liste Utiliser les styles de destination](./list-use-destination-styles/) | Apprenez à joindre et à ajouter des documents Word tout en préservant les styles de liste du document de destination à l'aide d'Aspose.Words pour .NET. |
+| [Redémarrer la numérotation des pages](./restart-page-numbering/) | Apprenez à redémarrer la numérotation des pages tout en joignant et en ajoutant des documents Word à l'aide d'Aspose.Words pour .NET. |
+| [Mettre à jour la mise en page](./update-page-layout/) | Découvrez comment mettre à jour la mise en page lors de la jointure et de l'ajout de documents Word à l'aide d'Aspose.Words pour .NET. |
+| [Utiliser les styles de destinations](./use-destination-styles/) | Découvrez comment joindre et ajouter des documents Word tout en appliquant des styles de document de destination à l'aide d'Aspose.Words pour .NET. |
+| [Comportement de style intelligent](./smart-style-behavior/) | Apprenez à conserver un comportement de style intelligent lors de la jointure et de l'ajout de documents Word à l'aide d'Aspose.Words pour .NET. |
+| [Insérer un document avec le constructeur](./insert-document-with-builder/) | Apprenez à insérer un document à la fin d'un autre document en utilisant Aspose.Words pour .NET. |
+| [Conserver la numérotation des sources](./keep-source-numbering/) | Apprenez à ajouter un document tout en préservant la mise en forme de la numérotation source dans Aspose.Words pour .NET. |
+| [Ignorer les zones de texte](./ignore-text-boxes/) | Apprenez à ajouter un document tout en ignorant la mise en forme de la zone de texte à l'aide de Aspose.Words pour .NET. |
+| [Ignorer l'en-tête de pied de page](./ignore-header-footer/) | Apprenez à ajouter un document tout en ignorant le contenu de l'en-tête et du pied de page à l'aide d'Aspose.Words pour .NET. |
+| [Liens En-têtes Pieds de page](./link-headers-footers/) | Apprenez à lier des en-têtes et des pieds de page tout en joignant et en ajoutant des documents Word à l'aide d'Aspose.Words pour .NET. |
+| [Supprimer les en-têtes de source](./remove-source-headers-footers/) | Apprenez à supprimer les en-têtes et les pieds de page tout en joignant et en ajoutant des documents Word à l'aide d'Aspose.Words pour .NET. |
+| [Dissocier les en-têtes et les pieds de page](./unlink-headers-footers/) | Apprenez à joindre et à ajouter des documents Word tout en dissociant les en-têtes et les pieds de page à l'aide d'Aspose.Words pour .NET. |

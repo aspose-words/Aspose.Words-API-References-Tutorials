@@ -1,42 +1,42 @@
 ---
-title: قاعدة افقية
-linktitle: قاعدة افقية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج قاعدة أفقية باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Regola orizzontale
+linktitle: Regola orizzontale
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire una regola orizzontale con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/horizontal-rule/
 ---
 
-في هذا المثال ، سوف نوضح لك كيفية استخدام ميزة القاعدة الأفقية مع Aspose.Words for .NET. يتم استخدام Horizontal Rule لفصل أقسام المستند بشكل مرئي.
+In questo esempio, ti mostreremo come utilizzare la funzionalità della regola orizzontale con Aspose.Words per .NET. La riga orizzontale viene utilizzata per separare visivamente le sezioni di un documento.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Passaggio 1: utilizzo di un generatore di documenti
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Innanzitutto, utilizzeremo un generatore di documenti per aggiungere contenuto al nostro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: إدخال قاعدة أفقية
+## Passaggio 2: Inserimento di una riga orizzontale
 
- يمكننا إدخال قاعدة أفقية باستخدام`InsertHorizontalRule` طريقة منشئ الوثيقة.
+ Possiamo inserire una riga orizzontale usando il`InsertHorizontalRule` metodo del generatore di documenti.
 
 ```csharp
 builder. InsertHorizontalRule();
 ```
 
-## عينة من التعليمات البرمجية المصدر للقاعدة الأفقية باستخدام Aspose.Words for .NET
+## Esempio di codice sorgente per la regola orizzontale con Aspose.Words per .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// أدخل القاعدة الأفقية.
+	// Inserisci una riga orizzontale.
 	builder.InsertHorizontalRule();
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة القاعدة الأفقية مع Aspose.Words for .NET.
+Congratulazioni! Ora hai imparato come utilizzare la funzione di regola orizzontale con Aspose.Words per .NET.
 
 

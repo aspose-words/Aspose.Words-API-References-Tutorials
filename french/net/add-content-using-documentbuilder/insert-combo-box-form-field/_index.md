@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل نموذج مربع التحرير والسرد
-linktitle: أدخل حقل نموذج مربع التحرير والسرد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج مربع التحرير والسرد في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Insérer un champ de formulaire de zone de liste déroulante
+linktitle: Insérer un champ de formulaire de zone de liste déroulante
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer des champs de formulaire de zone de liste déroulante dans des documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج حقل نموذج مربع تحرير وسرد في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة حقول نموذج مربع التحرير والسرد بخصائص قابلة للتخصيص إلى مستنداتك.
+Dans cet exemple complet, vous apprendrez à insérer un champ de formulaire de zone de liste déroulante dans un document Word à l'aide de Aspose.Words pour .NET. Nous vous guiderons tout au long du processus et vous fournirons les extraits de code C# nécessaires. À la fin de ce guide, vous serez en mesure d'ajouter des champs de formulaire de zone de liste déroulante avec des propriétés personnalisables à vos documents.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Conditions préalables
+Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
+- Bibliothèque Aspose.Words pour .NET installée sur votre système.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Étape 1 : créer un nouveau document et DocumentBuilder
+Pour commencer, créez un nouveau document à l'aide de la classe Document et initialisez un objet DocumentBuilder :
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: تحديد عناصر صندوق الكومبو
-بعد ذلك ، حدد مصفوفة من العناصر لحقل نموذج مربع التحرير والسرد:
+## Étape 2 : Définir les éléments de la zone de liste déroulante
+Définissez ensuite un tableau d'éléments pour le champ de formulaire de la zone de liste déroulante :
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
 ```
 
-## الخطوة 3: أدخل حقل نموذج مربع تحرير وسرد
-استخدم الأسلوب InsertComboBox لفئة DocumentBuilder لإدراج حقل نموذج مربع تحرير وسرد. أدخل الاسم ومجموعة العناصر والفهرس المحدد كمعلمات:
+## Étape 3 : Insérer un champ de formulaire Combo Box
+Utilisez la méthode InsertComboBox de la classe DocumentBuilder pour insérer un champ de formulaire de zone de liste déroulante. Indiquez le nom, le tableau d'éléments et l'index sélectionné en tant que paramètres :
 
 ```csharp
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## الخطوة 4: احفظ المستند
-بعد إدراج حقل نموذج مربع التحرير والسرد ، احفظ المستند في ملف باستخدام طريقة Save لفئة المستند:
+## Étape 4 : Enregistrer le document
+Après avoir inséré le champ de formulaire de la zone de liste déroulante, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
 ```
 
-### مثال رمز مصدر لإدراج حقل نموذج مربع تحرير وسرد باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لإدخال حقل نموذج مربع التحرير والسرد باستخدام Aspose.Words for .NET:
+### Exemple de code source pour insérer un champ de formulaire Combo Box à l'aide de Aspose.Words pour .NET
+Voici le code source complet pour insérer un champ de formulaire de zone de liste déroulante à l'aide de Aspose.Words pour .NET :
 
 ```csharp
 
@@ -59,7 +59,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+N'oubliez pas d'ajuster le code en fonction de vos besoins spécifiques et de l'améliorer avec des fonctionnalités supplémentaires si nécessaire.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج حقل نموذج مربع تحرير وسرد في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك باستخدام حقول نموذج مربع التحرير والسرد التفاعلي.
+## Conclusion
+Toutes nos félicitations! Vous avez appris avec succès comment insérer un champ de formulaire de zone de liste déroulante dans un document Word à l'aide de Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais améliorer vos documents avec des champs de formulaire de zone de liste déroulante interactifs.

@@ -1,44 +1,44 @@
 ---
-title: الخيارات الافتراضية لتسميات البيانات
-linktitle: الخيارات الافتراضية لتسميات البيانات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين الخيارات الافتراضية لتسميات البيانات في مخطط باستخدام Aspose.Words for .NET.
+title: 数据标签的默认选项
+linktitle: 数据标签的默认选项
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 为图表中的数据标签设置默认选项。
 type: docs
 weight: 10
 url: /zh/net/programming-with-charts/default-options-for-data-labels/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين الخيارات الافتراضية لتسميات البيانات في الرسم البياني. يوضح الكود المقدم كيفية إنشاء مخطط وإضافة سلسلة بيانات وتخصيص تسميات البيانات باستخدام Aspose.Words.
+本教程解释了如何使用 Aspose.Words for .NET 为图表中的数据标签设置默认选项。提供的代码演示了如何使用 Aspose.Words 创建图表、添加数据系列和自定义数据标签。
 
-## الخطوة 1: قم بإعداد المشروع
+## 第 1 步：设置项目
 
-قبل أن نبدأ ، تأكد من توفر المتطلبات التالية:
+在我们开始之前，请确保您满足以下要求：
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- 安装了 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载或使用 NuGet 包管理器安装它。
+- 将保存输出文档的文档目录路径。
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 第 2 步：创建新文档并插入图表
 
- أولاً ، لنقم بإنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+首先，让我们创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، نقوم بإدراج مخطط في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`. في هذا المثال ، سنقوم بإدراج مخطط دائري.
+接下来，我们使用`InsertChart`的方法`DocumentBuilder`.在这个例子中，我们将插入一个饼图。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف سلسلة البيانات إلى الرسم البياني
+## 第 3 步：将数据系列添加到图表
 
-الآن ، دعنا نضيف سلسلة بيانات إلى المخطط. في هذا المثال ، سنضيف ثلاث فئات والقيم المقابلة لها.
+现在，让我们向图表中添加一个数据系列。在此示例中，我们将添加三个类别及其对应的值。
 
 ```csharp
 chart.Series.Clear();
@@ -47,15 +47,15 @@ ChartSeries series = chart.Series.Add("Aspose Series 1",
     new double[] { 2.7, 3.2, 0.8 });
 ```
 
-## الخطوة 4: تخصيص تسميات البيانات
+## 第 4 步：自定义数据标签
 
- لتخصيص تسميات البيانات في المخطط ، نحتاج إلى الوصول إلى ملف`ChartDataLabelCollection` الكائن المرتبط بالسلسلة.
+要自定义图表中的数据标签，我们需要访问`ChartDataLabelCollection`与系列关联的对象。
 
 ```csharp
 ChartDataLabelCollection labels = series.DataLabels;
 ```
 
- يمكننا بعد ذلك تعديل الخصائص المختلفة لملف`labels` لتعيين الخيارات المطلوبة لتسميات البيانات. في هذا المثال ، سنقوم بتمكين عرض النسبة المئوية والقيمة ، وتعطيل الخطوط البادئة ، وتعيين فاصل مخصص.
+然后我们可以修改的各种属性`labels`对象为数据标签设置所需的选项。在此示例中，我们将启用显示百分比和值、禁用前导线并设置自定义分隔符。
 
 ```csharp
 labels.ShowPercentage = true;
@@ -64,20 +64,20 @@ labels.ShowLeaderLines = false;
 labels.Separator = " - ";
 ```
 
-## الخطوة 5: احفظ المستند
+## 第 5 步：保存文档
 
- أخيرًا ، نحفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+最后，我们使用`Save`的方法`Document`目的。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ```
 
-هذا يكمل تنفيذ إعداد الخيارات الافتراضية لتسميات البيانات في مخطط باستخدام Aspose.Words for .NET.
+这样就完成了使用 Aspose.Words for .NET 为图表中的数据标签设置默认选项的实现。
 
-### مثال على شفرة المصدر للخيارات الافتراضية لعناوين البيانات باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的数据标签默认选项的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

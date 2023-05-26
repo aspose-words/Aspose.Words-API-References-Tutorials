@@ -1,68 +1,68 @@
 ---
-title: تنسيق الصف تعطيل الفاصل عبر الصفحات
-linktitle: تنسيق الصف تعطيل الفاصل عبر الصفحات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل فاصل الأسطر لجدول عبر صفحات متعددة في مستند Word باستخدام Aspose.Words for .NET.
+title: Radformat Inaktivera Break Across Pages
+linktitle: Radformat Inaktivera Break Across Pages
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du inaktiverar radbrytning för en tabell över flera sidor i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تعطيل فاصل الأسطر لجدول متعدد الصفحات في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تعطيل فصل الأسطر لجميع الصفوف في الجدول الخاص بك في مستندات Word الخاصة بك.
+den här handledningen ska vi lära oss hur man inaktiverar radbrytning för en flersidig tabell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna inaktivera radbrytning för alla rader i din tabell i dina Word-dokument.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Steg 1: Projektinställning
+1. Starta Visual Studio och skapa ett nytt C#-projekt.
+2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## Steg 2: Ladda dokumentet
+För att börja arbeta med dokumentet, följ dessa steg:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
-تأكد من استبدال "دليل المستندات الخاص بك" بالمسار الفعلي إلى دليل المستندات الخاص بك وقم بتوفير اسم الملف الصحيح.
+Var noga med att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog och ange korrekt filnamn.
 
-## الخطوة 3: تعطيل فاصل صفوف الجدول
-بعد ذلك ، سنقوم بتعطيل فصل الصفوف لجميع الصفوف في الجدول. استخدم الكود التالي:
+## Steg 3: Inaktivera tabellradbrytning
+Därefter kommer vi att inaktivera radbrytning för alla rader i tabellen. Använd följande kod:
 
 ```csharp
-// استرجع الجدول
+// Hämta bordet
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 
-// تعطيل فاصل الصف لجميع الصفوف في الجدول
+// Inaktivera radbrytning för alla rader i tabellen
 foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```
 
- هنا نستخدم المستند لجلب الجدول الأول ثم نكرره عبر جميع الصفوف في الجدول باستخدام حلقة foreach. داخل الحلقة ، نقوم بتعطيل فصل الصفوف لكل صف عن طريق ضبط`RowFormat.AllowBreakAcrossPages` ملكية ل`false`.
+ Här använder vi dokumentet för att hämta den första tabellen och itererar sedan igenom alla rader i tabellen med hjälp av en foreach loop. Inne i slingan inaktiverar vi radbrytning för varje rad genom att ställa in`RowFormat.AllowBreakAcrossPages` egendom till`false`.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تعطيل فاصل أسطر الجدول. استخدم الكود التالي:
+## Steg 4: Spara det ändrade dokumentet
+Slutligen måste vi spara det ändrade dokumentet med tabellradbrytningen inaktiverad. Använd följande kod:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 
-### نموذج التعليمات البرمجية المصدر لتنسيق الصف تعطيل الفاصل عبر الصفحات باستخدام Aspose.Words for .NET 
+### Exempel på källkod för radformat Inaktivera Break Across Pages med Aspose.Words för .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-// تعطيل التقسيم عبر الصفحات لجميع الصفوف في الجدول.
+// Inaktivera delning över sidor för alla rader i tabellen.
 foreach (Row row in table.Rows)
 	row.RowFormat.AllowBreakAcrossPages = false;
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعطيل فاصل الأسطر لجدول متعدد الصفحات في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تطبيق هذا التعطيل على جداولك في مستندات Word الخاصة بك.
+## Slutsats
+den här handledningen lärde vi oss hur man inaktiverar radbrytning för en flersidig tabell i ett Word-dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide och implementera den medföljande C#-koden kan du tillämpa denna inaktivering på dina tabeller i dina Word-dokument.

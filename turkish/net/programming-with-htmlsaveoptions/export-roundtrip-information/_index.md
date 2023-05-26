@@ -1,56 +1,56 @@
 ---
-title: تصدير معلومات رحلة الذهاب والإياب
-linktitle: تصدير معلومات رحلة الذهاب والإياب
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتصدير معلومات الرحلة ذهابًا وإيابًا عند حفظ مستند بتنسيق HTML باستخدام Aspose.Words for .NET.
+title: Gidiş Dönüş Bilgilerini Dışa Aktar
+linktitle: Gidiş Dönüş Bilgilerini Dışa Aktar
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir belgeyi HTML olarak kaydederken gidiş dönüş bilgilerini dışa aktarmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتصدير معلومات رحلة الذهاب والعودة من مستند مع Aspose.Words for .NET. تتيح لك هذه الميزة تضمين معلومات رحلة الذهاب والإياب في ملف HTML المُصدَّر ، مما يسهل استرداد التغييرات التي تم إجراؤها على المستند الأصلي.
+Bu eğitimde, Aspose.Words for .NET ile bir belgeden gidiş-dönüş bilgilerini dışa aktarmak için C# kaynak kodunda size yol göstereceğiz. Bu özellik, dışa aktarılan HTML dosyasına gidiş-dönüş bilgilerini eklemenize izin vererek, orijinal belgede yapılan değişiklikleri almayı kolaylaştırır.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-في هذه الخطوة ، سنقوم بتحميل المستند للتصدير. استخدم الكود التالي لتحميل المستند من دليل محدد:
+Bu adımda, dışa aktarılacak belgeyi yükleyeceğiz. Belgeyi belirli bir dizinden yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- هذا الرمز ينشئ مثيل`Document` عن طريق تحميل المستند من الدليل المحدد.
+ Bu kod, örneğini oluşturur`Document` belgeyi belirtilen dizinden yükleyerek.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي بتنسيق HTML
+## 3. Adım: HTML yedekleme seçeneklerini yapılandırma
 
-سنقوم الآن بتكوين خيارات حفظ HTML لتصدير معلومات الرحلة ذهابًا وإيابًا الخاصة بالمستند. استخدم الكود التالي:
+Şimdi, belgenin gidiş dönüş bilgilerini dışa aktarmak için HTML kaydetme seçeneklerini yapılandıracağız. Aşağıdaki kodu kullanın:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions`وتعيين`ExportRoundtripInformation` الخيار ل`true` لتضمين معلومات رحلة الذهاب والإياب عند التصدير.
+ Bu kod, örneğini oluşturur`HtmlSaveOptions`ve ayarlar`ExportRoundtripInformation` seçeneği`true` dışa aktarırken gidiş dönüş bilgilerini dahil etmek için.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## 4. Adım: Belgeyi HTML'ye dönüştürme ve kaydetme
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+Son olarak, daha önce yapılandırılmış HTML kaydetme seçeneklerini kullanarak belgeyi HTML'ye dönüştüreceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML بما في ذلك معلومات الرحلة ذهابًا وإيابًا ، ويحفظ ملف HTML الذي تم تصديره إلى الدليل المحدد.
+Bu kod, belgeyi gidiş dönüş bilgilerini içeren HTML'ye dönüştürür ve dışa aktarılan HTML dosyasını belirtilen dizine kaydeder.
 
-### مثال على شفرة المصدر لتصدير معلومات رحلة الذهاب والإياب باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Gidiş-Dönüş Bilgilerini Dışa Aktarma için örnek kaynak kodu
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -60,4 +60,4 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html",
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+ içindeki belgeler dizinine giden doğru yolu belirttiğinizden emin olun.`dataDir` değişken.

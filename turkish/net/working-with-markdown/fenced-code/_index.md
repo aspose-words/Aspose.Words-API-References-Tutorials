@@ -1,43 +1,43 @@
 ---
-title: كود مسيّج
-linktitle: كود مسيّج
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة الشفرة المسيجة مع دليل Aspose.Words for .NET خطوة بخطوة.
+title: çitle çevrili kod
+linktitle: çitle çevrili kod
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET Adım adım kılavuzla çitle çevrili kod özelliğinin nasıl kullanılacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/fenced-code/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة الشفرة المسيجة مع Aspose.Words for .NET. يتم استخدام الكود المسيج لتمثيل كتل من التعليمات البرمجية بتنسيق محدد.
+Bu örnekte, çitle çevrili kod özelliğini Aspose.Words for .NET ile nasıl kullanacağınız konusunda size yol göstereceğiz. çitle çevrili kod, belirli biçimlendirme ile kod bloklarını temsil etmek için kullanılır.
 
-## الخطوة 1: استخدام منشئ المستندات
+## 1. Adım: Bir belge oluşturucu kullanma
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+İlk olarak, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: إضافة نمط للرمز المسيَّج
+## 2. Adım: Korumalı kod için bir stil ekleme
 
- سنضيف نمطًا مخصصًا للشفرة المسيجة باستخدام امتداد`Styles.Add` طريقة`Document` هدف. في هذا المثال ، نقوم بإنشاء نمط يسمى "FencedCode" للرمز المسيَّج.
+ Şunu kullanarak çitle çevrili kod için özel bir stil ekleyeceğiz:`Styles.Add` yöntemi`Document` nesne. Bu örnekte, çitle çevrili kod için "FencedCode" adında bir stil oluşturuyoruz.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
 builder.ParagraphFormat.Style = fencedCode;
 ```
 
-## الخطوة 3: إضافة كود مسيّج بدون معلومات
+## 3. Adım: Bilgi olmadan çitle çevrili kod ekleme
 
-الآن يمكننا إضافة كتلة رمز مسيجة بدون سلسلة معلومات باستخدام النمط المخصص "FencedCode".
+Artık "FencedCode" özel stilini kullanarak herhangi bir bilgi dizisi içermeyen çitle çevrili bir kod bloğu ekleyebiliriz.
 
 ```csharp
 builder.Writeln("This is an fenced code");
 ```
 
-## الخطوة 4: إضافة رمز مسيَّج بسلسلة المعلومات
+## 4. Adım: Bilgi dizesiyle çitle çevrili kod ekleyin
 
-يمكننا أيضًا إضافة كتلة تعليمات برمجية مسيجة بسلسلة من المعلومات باستخدام نمط مخصص آخر. في هذا المثال ، نقوم بإنشاء نمط يسمى "FencedCode.C #" لتمثيل كتلة من كود C #.
+Başka bir özel stil kullanarak bir dizi bilgi içeren çitle çevrili bir kod bloğu da ekleyebiliriz. Bu örnekte, bir C# kod bloğunu temsil etmesi için "FencedCode.C#" adlı bir stil oluşturuyoruz.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
@@ -45,10 +45,10 @@ builder.ParagraphFormat.Style = fencedCodeWithInfo;
 builder.Writeln("This is a fenced code with info string");
 ```
 
-### مثال لشفرة المصدر لـ Fined Code باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Fenced Code için örnek kaynak kodu
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
 	DocumentBuilder builder = new DocumentBuilder();
 
 	Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");

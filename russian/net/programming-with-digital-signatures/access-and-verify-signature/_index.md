@@ -1,34 +1,34 @@
 ---
-title: الوصول والتحقق من التوقيع
-linktitle: الوصول والتحقق من التوقيع
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الوصول إلى التوقيعات الرقمية والتحقق منها في مستند Word باستخدام Aspose.Words for .NET.
+title: Доступ и проверка подписи
+linktitle: Доступ и проверка подписи
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как получить доступ и проверить цифровые подписи в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
-في هذا البرنامج التعليمي ، سنوجهك خلال الخطوات لاستخدام ميزة التحقق من الوصول والتوقيع في Aspose.Words for .NET. تتيح لك هذه الميزة الوصول إلى التوقيعات الرقمية في مستند Word والتحقق من صحتها. اتبع الخطوات التالية:
+В этом руководстве мы покажем вам, как использовать функцию проверки доступа и подписи Aspose.Words для .NET. Эта функция позволяет получить доступ к цифровым подписям в документе Word и проверить их достоверность. Выполните следующие действия:
 
-## الخطوة 1: تحميل المستند والوصول إلى التوقيعات
+## Шаг 1. Загрузка документа и доступ к подписям
 
-ابدأ بتحميل المستند الذي يحتوي على توقيعات رقمية:
+Начните с загрузки документа, содержащего цифровые подписи:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-## الخطوة 2: تصفح التوقيعات الرقمية
+## Шаг 2. Просмотр цифровых подписей
 
-استخدم حلقة للتكرار خلال جميع التوقيعات الرقمية في المستند:
+Используйте цикл для перебора всех цифровых подписей в документе:
 
 ```csharp
 foreach (DigitalSignature signature in doc.DigitalSignatures)
 {
-	// الوصول إلى معلومات التوقيع
+	// Доступ к информации о подписи
 	Console.WriteLine("*** Signature Found ***");
 	Console.WriteLine("Is valid: " + signature.IsValid);
-	// هذه الخاصية متاحة في مستندات MS Word فقط.
+	// Это свойство доступно только в документах MS Word.
 	Console.WriteLine("Reason for signing: " + signature.Comments); 
 	Console.WriteLine("Time of signing: " + signature.SignTime);
 	Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
@@ -37,15 +37,15 @@ foreach (DigitalSignature signature in doc.DigitalSignatures)
 }
 ```
 
-تأكد من تخصيص رسائل العرض وفقًا لاحتياجاتك.
+Обязательно настройте отображаемые сообщения в соответствии с вашими потребностями.
 
-### مثال على شفرة المصدر للوصول والتحقق من التوقيع باستخدام Aspose.Words for .NET
+### Пример исходного кода для доступа и проверки подписи с использованием Aspose.Words для .NET
 
-فيما يلي رمز المصدر الكامل للوصول والتحقق من التوقيع باستخدام Aspose.Words for .NET:
+Вот полный исходный код для проверки доступа и подписи с использованием Aspose.Words для .NET:
 
 ```csharp
 	
-	// المسار إلى دليل المستندات.
+	// Путь к каталогу документов.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Digitally signed.docx");
 
@@ -53,7 +53,7 @@ foreach (DigitalSignature signature in doc.DigitalSignatures)
 	{
 		Console.WriteLine("*** Signature Found ***");
 		Console.WriteLine("Is valid: " + signature.IsValid);
-		// هذه الخاصية متاحة في مستندات MS Word فقط.
+		// Это свойство доступно только в документах MS Word.
 		Console.WriteLine("Reason for signing: " + signature.Comments); 
 		Console.WriteLine("Time of signing: " + signature.SignTime);
 		Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
@@ -63,6 +63,6 @@ foreach (DigitalSignature signature in doc.DigitalSignatures)
 
 ```
 
-باتباع هذه الخطوات ، ستتمكن بسهولة من الوصول والتحقق من التوقيعات الرقمية في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Выполнив эти шаги, вы сможете легко получить доступ и проверить цифровые подписи в документе Word с помощью Aspose.Words для .NET.
 
 

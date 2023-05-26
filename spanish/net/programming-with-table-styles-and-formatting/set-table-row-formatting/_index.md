@@ -1,40 +1,40 @@
 ---
-title: تعيين تنسيق صف الجدول
-linktitle: تعيين تنسيق صف الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد تنسيق صف الجدول باستخدام Aspose.Words for .NET.
+title: Establecer el formato de fila de la tabla
+linktitle: Establecer el formato de fila de la tabla
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para configurar el formato de fila de la tabla con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين تنسيق صف الجدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية ضبط الارتفاع والحشو لصف الجدول في مستندات Word باستخدام Aspose.Words for .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para configurar el formato de fila de la tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo ajustar la altura y los rellenos de una fila de tabla en sus documentos de Word usando Aspose.Words para .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento de Word editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## Paso 2: Cree un nuevo documento y un generador de documentos
+ A continuación, debe crear una nueva instancia de la`Document` clase y un constructor de documentos para ese documento.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدول جديد وأضف خلية
-لبدء إنشاء الجدول ، نستخدم ملف`StartTable()` طريقة منشئ المستند ، ثم نضيف خلية إلى الجدول باستخدام الامتداد`InsertCell()` طريقة.
+## Paso 3: Comience una nueva tabla y agregue una celda
+Para comenzar a crear la tabla, usamos el`StartTable()` del constructor del documento, luego agregamos una celda a la tabla usando el`InsertCell()` método.
 
 ```csharp
 Table table = builder. StartTable();
 builder. InsertCell();
 ```
 
-## الخطوة 4: تحديد تنسيق الخط
- الآن يمكننا ضبط تنسيق الصف من خلال الوصول إلى ملف`RowFormat` كائن`DocumentBuilder` هدف. يمكننا ضبط ارتفاع الخط والهوامش (الحشوات) باستخدام الخصائص المقابلة.
+## Paso 4: Defina el formato de línea
+ Ahora podemos establecer el formato de fila accediendo a la`RowFormat` objeto de la`DocumentBuilder` objeto. Podemos establecer la altura de la línea y los márgenes (rellenos) utilizando las propiedades correspondientes.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;
@@ -42,8 +42,8 @@ rowFormat. Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
-## الخطوة 5: تعيين هوامش الجدول
- بعد ذلك ، يمكننا ضبط حشوات الجدول من خلال الوصول إلى الخصائص المقابلة لـ`Table` هدف. سيتم تطبيق هذه الهوامش على جميع صفوف الجدول.
+## Paso 5: establecer los márgenes de la tabla
+ A continuación, podemos configurar los paddings de la tabla accediendo a las propiedades correspondientes del`Table` objeto. Estos márgenes se aplicarán a todas las filas de la tabla.
 
 ```csharp
 table. LeftPadding = 30;
@@ -52,17 +52,17 @@ table. TopPadding = 30;
 table. BottomPadding = 30;
 ```
 
-## الخطوة 6: أضف محتوى إلى الصف
- أخيرًا ، يمكننا إضافة محتوى إلى السطر باستخدام منشئ المستندات`Writeln()` طريقة.
+## Paso 6: Agregar contenido a la fila
+ Finalmente, podemos agregar contenido a la línea usando el generador de documentos`Writeln()` método.
 
 ```csharp
 builder.Writeln("I'm a beautifully formatted line.");
 ```
 
-## الخطوة 7: قم بإنهاء الجدول وحفظ المستند
-في
+## Paso 7: Termina la tabla y guarda el documento
+En
 
- النهاية ، ننتهي من إنشاء الجدول باستخدام`EndRow()` و`EndTable()` الطريقة ، ثم نقوم بحفظ المستند المعدل في ملف.
+ final, terminamos de crear la tabla usando el`EndRow()` y`EndTable()` método, luego guardamos el documento modificado en un archivo.
 
 ```csharp
 builder. EndRow();
@@ -70,10 +70,10 @@ builder. EndTable();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Table Row Formatting باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para establecer formato de fila de tabla con Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 	RowFormat rowFormat = builder.RowFormat;
 	rowFormat.Height = 100;
 	rowFormat.HeightRule = HeightRule.Exactly;
-	// يتم تعيين خصائص التنسيق هذه في الجدول ويتم تطبيقها على جميع الصفوف في الجدول.
+	// Estas propiedades de formato se establecen en la tabla y se aplican a todas las filas de la tabla.
 	table.LeftPadding = 30;
 	table.RightPadding = 30;
 	table.TopPadding = 30;
@@ -94,5 +94,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين تنسيق صف الجدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة ضبط ارتفاع صف الجدول والهوامش في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تخصيص التخطيط المرئي لجداولك وفقًا لاحتياجاتك الخاصة.
+## Conclusión
+En este tutorial, aprendimos cómo configurar el formato de fila de la tabla usando Aspose.Words para .NET. Siguiendo esta guía paso a paso, puede ajustar fácilmente la altura y los márgenes de las filas de las tablas en sus documentos de Word. Aspose.Words ofrece una API poderosa y flexible para manipular y formatear tablas en sus documentos. Con este conocimiento, puede personalizar el diseño visual de sus tablas según sus necesidades específicas.

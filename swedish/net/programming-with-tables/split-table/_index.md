@@ -1,52 +1,52 @@
 ---
-title: انقسام الجدول
-linktitle: انقسام الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تقسيم جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Delat bord
+linktitle: Delat bord
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du delar upp en tabell i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-tables/split-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تقسيم جدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من تقسيم جدول من صف معين في مستندات Word الخاصة بك.
+I den här handledningen ska vi lära oss hur man delar upp en tabell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna dela en tabell från en viss rad i dina Word-dokument.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Steg 1: Projektinställning
+1. Starta Visual Studio och skapa ett nytt C#-projekt.
+2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## Steg 2: Ladda dokumentet
+För att börja arbeta med dokumentet, följ dessa steg:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-تأكد من استبدال "دليل المستندات الخاص بك" بالمسار الفعلي إلى دليل المستندات الخاص بك وقم بتوفير اسم الملف الصحيح.
+Var noga med att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog och ange korrekt filnamn.
 
-## الخطوة 3: قسمة الجدول
-بعد ذلك سنقوم بتقسيم الجدول من صف معين. استخدم الكود التالي:
+## Steg 3: Dela bordet
+Därefter delar vi bordet från en viss rad. Använd följande kod:
 
 ```csharp
-// استرجع الجدول الأول
+// Hämta det första bordet
 Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
 
-// تحديد الخط الذي سيتم تقسيم الجدول منه
+// Bestämning av linjen från vilken tabellen ska delas
 Row row = firstTable.Rows[2];
 
-// قم بإنشاء حاوية جديدة للجدول المقسم
+// Skapa en ny behållare för den delade tabellen
 Table table = (Table)firstTable.Clone(false);
 
-// أدخل الحاوية بعد الجدول الأصلي
+// Sätt i behållaren efter originalbordet
 firstTable.ParentNode.InsertAfter(table, firstTable);
 
-// أضف فقرة عازلة للحفاظ على مسافة بين الجداول
+// Lägg till ett buffertstycke för att behålla ett avstånd mellan tabellerna
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
 
-// انقل الصفوف من الجدول الأصلي إلى جدول الانقسام
+// Flytta rader från den ursprungliga tabellen till den delade tabellen
 Row currentRow;
 do
 {
@@ -55,34 +55,34 @@ table. PrependChild(currentRow);
 } while (currentRow != row);
 ```
 
-هنا نستخدم المستند لاسترداد الجدول الأول من عقدة المستند. ثم نحدد الصف الذي نريد تقسيم الجدول منه ، في هذا المثال هو الصف الثالث (الفهرس 2). نقوم بعد ذلك بإنشاء حاوية جديدة عن طريق استنساخ الجدول الأصلي ثم إدخاله بعد الجدول الأصلي. نضيف أيضًا فقرة عازلة للحفاظ على مسافة بين الجدولين. ثم ننقل الصفوف من الجدول الأصلي إلى الجدول المنفصل باستخدام حلقة do-while حتى نصل إلى الصف المحدد.
+Här använder vi dokumentet för att hämta den första tabellen från dokumentnoden. Sedan bestämmer vi raden som vi vill dela tabellen från, i detta exempel är det den tredje raden (index 2). Vi skapar sedan en ny behållare genom att klona den ursprungliga tabellen och sedan infoga den efter den ursprungliga tabellen. Vi lägger också till ett buffertstycke för att upprätthålla ett avstånd mellan de två tabellerna. Sedan flyttar vi rader från den ursprungliga tabellen till den delade tabellen med hjälp av en do-while loop tills vi når den angivna raden.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ ملف
+## Steg 4: Spara det ändrade dokumentet
+Slutligen måste vi spara
 
-  تم تعديل المستند باستخدام الجدول المقسم. استخدم الكود التالي:
+  dokument som ändrats med den delade tabellen. Använd följande kod:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 
-### نموذج التعليمات البرمجية المصدر لـ Split Table باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Split Table med Aspose.Words för .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");
 Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
-// سنقوم بتقسيم الجدول في الصف الثالث (ضمناً).
+// Vi delar bordet på tredje raden (inklusive).
 Row row = firstTable.Rows[2];
-// قم بإنشاء حاوية جديدة للجدول المقسم.
+// Skapa en ny behållare för den delade tabellen.
 Table table = (Table) firstTable.Clone(false);
-// أدخل الحاوية بعد الأصل.
+// Sätt i behållaren efter originalet.
 firstTable.ParentNode.InsertAfter(table, firstTable);
-// أضف فقرة عازلة لضمان بقاء الجداول منفصلة.
+// Lägg till ett buffertstycke för att säkerställa att tabellerna håller isär.
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
 Row currentRow;
 do
@@ -93,5 +93,5 @@ do
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تقسيم جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك بسهولة تقسيم الجداول من سطر معين في مستندات Word الخاصة بك.
+## Slutsats
+den här handledningen lärde vi oss hur man delar upp en tabell i ett Word-dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide och implementera den medföljande C#-koden kan du enkelt dela upp tabeller från en viss rad i dina Word-dokument.

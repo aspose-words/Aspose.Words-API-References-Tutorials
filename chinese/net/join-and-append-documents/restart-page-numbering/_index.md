@@ -1,71 +1,71 @@
 ---
-title: أعد تشغيل ترقيم الصفحات
-linktitle: أعد تشغيل ترقيم الصفحات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إعادة تشغيل ترقيم الصفحات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: 重新开始页码
+linktitle: 重新开始页码
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何在使用 Aspose.Words for .NET 加入和附加 Word 文档时重新开始页码。
 type: docs
 weight: 10
 url: /zh/net/join-and-append-documents/restart-page-numbering/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة إعادة تشغيل ترقيم الصفحات في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء إعادة تشغيل ترقيم الصفحات في المستند المصدر.
+本教程将指导您完成使用 Aspose.Words for .NET 的“重新启动页码编号”功能的过程。此功能允许您加入和附加 Word 文档，同时在源文档中重新开始页码。
 
-## المتطلبات الأساسية
+## 先决条件
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+在开始之前，请确保您具备以下条件：
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. 安装了 Aspose.Words for .NET。您可以从 Aspose 网站下载它或通过 NuGet 安装它。
+2. Visual Studio 或任何其他 C# 开发环境。
 
-## الخطوة 1: تهيئة دلائل المستندات
+## 第 1 步：初始化文档目录
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+首先，您需要设置文档目录的路径。修改值`dataDir`变量到您的文档所在的路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## 第 2 步：加载源文档和目标文档
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+接下来，您需要使用 Aspose.Words 加载源文档和目标文档`Document`班级。更新文件名在`Document`根据您的文档名称构造函数。
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: اضبط المستند المصدر على إعادة تشغيل ترقيم الصفحات
+## 第 3 步：将源文档设置为重新开始页码
 
- لإعادة تشغيل ترقيم الصفحات في المستند المصدر ، تحتاج إلى ضبط`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.NewPage` وضبط`RestartPageNumbering` ملكية ل`true`.
+要在源文档中重新开始页码，您需要设置`SectionStart`源文档中第一节的属性`SectionStart.NewPage`并设置`RestartPageNumbering`财产给`true`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بمستند الوجهة
+## 第 4 步：将源文档附加到目标文档
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+现在，您可以使用`AppendDocument`的方法`Document`班级。这`ImportFormatMode.KeepSourceFormatting`参数确保在追加操作期间保留源格式。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند النهائي
+## 第 5 步：保存最终文件
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة إعادة تشغيل ترقيم الصفحات باستخدام ملحق`Save` طريقة`Document` فصل.
+最后，使用启用的“重新开始页码编号”功能保存合并的文档`Save`的方法`Document`班级。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RestartPageNumbering.docx");
 ```
 
-### مثال على شفرة المصدر لإعادة تشغيل ترقيم الصفحات باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 重新启动页码的示例源代码
 
-إليك شفرة المصدر الكاملة لميزة "إعادة تشغيل ترقيم الصفحات" في C # باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 的 C# 中“重新启动页码编号”功能的完整源代码：
  
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -76,4 +76,4 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.RestartPageNumbering.docx");
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.RestartPageNumbering.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة إعادة تشغيل ترقيم الصفحات باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع إعادة تشغيل ترقيم الصفحات في المستند المصدر.
+就是这样！您已经使用 Aspose.Words for .NET 成功实现了重新启动页码功能。最终文档将包含合并后的内容，并在源文档中重新开始页码编号。

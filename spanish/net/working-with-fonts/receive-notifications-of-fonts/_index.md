@@ -1,71 +1,71 @@
 ---
-title: تلقي إخطارات الخطوط
-linktitle: تلقي إخطارات الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تلقي إشعارات الخطوط المفقودة أو المستبدلة عند استخدام Aspose.Words for .NET.
+title: Recibir notificaciones de fuentes
+linktitle: Recibir notificaciones de fuentes
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a recibir notificaciones de fuente faltante o sustituida al usar Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تلقي إشعارات الخطوط أثناء استخدام Aspose.Words for .NET. تتيح لك إشعارات الخطوط اكتشاف وإدارة الخطوط المفقودة أو المستبدلة في مستنداتك. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+En este tutorial, lo guiaremos a través de cómo recibir notificaciones de fuentes mientras usa Aspose.Words para .NET. Las notificaciones de fuentes le permiten detectar y administrar fuentes faltantes o sustituidas en sus documentos. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes elementos:
+- Un conocimiento práctico del lenguaje de programación C#
+- La biblioteca Aspose.Words para .NET instalada en su proyecto
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+ Primero, debe establecer la ruta del directorio en la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta adecuada.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وتكوين إعدادات الخط
- بعد ذلك ، سنقوم بتحميل المستند باستخدام ملف`Document` class وتكوين إعدادات الخط باستخدام`FontSettings` فصل. سنقوم بتعيين الخط الافتراضي لاستخدامه في حالة فقدان الخطوط.
+## Paso 2: Cargue el documento y configure los ajustes de fuente
+ A continuación, cargaremos el documento usando el`Document` class y configure los ajustes de fuente usando el`FontSettings` clase. Estableceremos la fuente predeterminada para usar en caso de que falten fuentes.
 
 ```csharp
-//قم بتحميل المستند وتكوين إعدادات الخط
+//Cargue el documento y configure los ajustes de fuente
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
 ```
 
-## الخطوة 3: تعيين معالج الإشعارات
- بعد ذلك ، سنحدد معالج الإشعارات من خلال تنفيذ الامتداد`IWarningCallback` واجهه المستخدم. سيسمح لنا ذلك بجمع تحذيرات الخط عند حفظ المستند.
+## Paso 3: Configurar el controlador de notificaciones
+ A continuación, definiremos un controlador de notificaciones implementando el`IWarningCallback` interfaz. Esto nos permitirá recopilar advertencias de fuentes al guardar el documento.
 
 ```csharp
-// حدد معالج الإعلام
+// Definir el controlador de notificaciones
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc. WarningCallback = callback;
 ```
 
-## الخطوة 4: تطبيق إعدادات الخط وحفظ المستند
-أخيرًا ، سنقوم بتطبيق إعدادات الخط على المستند وحفظه. سيتم التقاط أي تحذيرات تتعلق بالخط بواسطة معالج الإشعارات الذي حددناه سابقًا.
+## Paso 4: aplique la configuración de fuente y guarde el documento
+Finalmente, aplicaremos la configuración de fuente al documento y lo guardaremos. Cualquier advertencia de fuente será capturada por el controlador de notificaciones que definimos anteriormente.
 
 ```csharp
-// تطبيق إعدادات الخط وحفظ المستند
+// Aplicar la configuración de fuente y guardar el documento
 doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لتلقي إخطارات الخطوط باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para recibir notificaciones de fuentes usando Aspose.Words para .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
-// يمكننا اختيار الخط الافتراضي لاستخدامه في حالة وجود أي خطوط مفقودة.
+// Podemos elegir la fuente predeterminada para usar en el caso de que falten fuentes.
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-// للاختبار سنقوم بتعيين Aspose.Words للبحث عن الخطوط فقط في مجلد غير موجود. منذ Aspose.word لن تفعل ذلك
-// ابحث عن أي خطوط في الدليل المحدد ، ثم أثناء تقديم الخطوط في المستند سيتم دمجها مع الافتراضي
-//الخط المحدد ضمن FontSettings.DefaultFontName. يمكننا الحصول على هذا الاشتراك باستخدام رد الاتصال الخاص بنا.
+// Para probar, configuraremos Aspose.Words para buscar fuentes solo en una carpeta que no existe. Dado que Aspose.Words no
+// encuentre cualquier fuente en el directorio especificado, luego, durante la representación, las fuentes en el documento se adaptarán con el valor predeterminado
+//fuente especificada en FontSettings.DefaultFontName. Podemos atender esta subsumisión usando nuestra devolución de llamada.
 fontSettings.SetFontsFolder(string.Empty, false);
-// قم بإنشاء فئة جديدة تنفذ IWarningCallback والتي تجمع أي تحذيرات تم إنتاجها أثناء حفظ المستند.
+// Cree una nueva clase que implemente IWarningCallback que recopile las advertencias producidas durante el guardado del documento.
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
 doc.FontSettings = fontSettings;
@@ -73,5 +73,5 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تلقي إشعارات الخطوط أثناء استخدام Aspose.Words for .NET. تتيح لك إشعارات الخطوط اكتشاف وإدارة الخطوط المفقودة أو المستبدلة في مستنداتك. استخدم هذه الميزة لضمان تناسق الخط في مستنداتك واتخاذ الإجراء المناسب في حالة فقد الخطوط.
+## Conclusión
+En este tutorial, vimos cómo recibir notificaciones de fuentes mientras usamos Aspose.Words para .NET. Las notificaciones de fuentes le permiten detectar y administrar fuentes faltantes o sustituidas en sus documentos. Utilice esta función para garantizar la consistencia de las fuentes en sus documentos y tome las medidas adecuadas en caso de que falten fuentes.

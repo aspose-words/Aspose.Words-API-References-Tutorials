@@ -1,65 +1,65 @@
 ---
-title: تغيير نمط مستوى Toc
-linktitle: تغيير نمط مستوى Toc
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير نمط مستوى جدول المحتويات بسهولة في مستند Word باستخدام Aspose.Words for .NET.
+title: Cambiar el estilo del nivel de TOC
+linktitle: Cambiar el estilo del nivel de TOC
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a cambiar fácilmente el estilo de un nivel de tabla de contenido en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words القدرة على تغيير نمط مستوى معين من جدول محتويات المستند. في هذا الدليل ، سنوضح لك كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لتغيير نمط مستوى جدول محتويات مستند Word.
+Aspose.Words para .NET es una poderosa biblioteca para crear, editar y manipular documentos de Word en una aplicación C#. Entre las características que ofrece Aspose.Words está la posibilidad de cambiar el estilo de un nivel específico de la tabla de contenido de un documento. En esta guía, le mostraremos cómo usar el código fuente C# de Aspose.Words para .NET para cambiar el estilo de un nivel de la tabla de contenido de un documento de Word.
 
-## فهم مكتبة Aspose.Words
+## Comprender la biblioteca Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك تغيير نمط جدول المحتويات.
+Antes de sumergirse en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una biblioteca popular que hace que trabajar con documentos de Word sea fácil y eficiente. Ofrece una amplia gama de funciones para crear, editar y manipular documentos de Word, incluido el cambio de estilo de la tabla de contenido.
 
-## إنشاء وثيقة جديدة
+## Creando un nuevo documento
 
-تتمثل الخطوة الأولى في إنشاء مستند Word جديد حيث تريد تغيير نمط جدول المحتويات. استخدم فئة المستند لإنشاء مستند جديد. هنا مثال :
+El primer paso es crear un nuevo documento de Word en el que desee cambiar el estilo de la tabla de contenido. Use la clase Document para crear un nuevo documento. Aquí hay un ejemplo :
 
 ```csharp
 Document doc = new Document();
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند فارغ جديد.
+En este ejemplo, estamos creando un nuevo documento vacío.
 
-## تغيير نمط جدول المحتويات
+## Cambiar el estilo de un nivel de tabla de contenido
 
-بمجرد إنشاء المستند ، يمكنك الوصول إلى أنماط المستند وتغيير النمط المستخدم لمستوى معين من جدول المحتويات. في هذا المثال ، سنقوم بتعديل النمط المستخدم للمستوى الأول من جدول المحتويات. إليك الطريقة:
+Una vez que se crea el documento, puede acceder a los estilos del documento y cambiar el estilo utilizado para un nivel específico de la tabla de contenido. En este ejemplo, modificaremos el estilo utilizado para el primer nivel de la tabla de contenido. Así es cómo:
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-في هذا المثال ، نستخدم خاصية Styles لفئة Document للوصول إلى أنماط المستند. بعد ذلك ، نستخدم معرف النمط StyleIdentifier.Toc1 للوصول إلى النمط المستخدم للمستوى الأول من جدول المحتويات. أخيرًا ، نقوم بتعديل الخاصية Font.Bold للنمط لجعلها غامقة.
+En este ejemplo, usamos la propiedad Styles de la clase Document para acceder a los estilos de documentos. A continuación, usamos el identificador de estilo StyleIdentifier.Toc1 para acceder al estilo utilizado para el primer nivel de la tabla de contenido. Finalmente, modificamos la propiedad Font.Bold del estilo para ponerlo en negrita.
 
-## احفظ المستند المعدل
+## Guardar documento modificado
 
-بمجرد إجراء التعديلات اللازمة على نمط جدول المحتويات ، يمكنك حفظ المستند المعدل باستخدام طريقة Save لفئة Document. هنا مثال :
+Una vez que haya realizado las modificaciones necesarias en el estilo de la tabla de contenido, puede guardar el documento modificado utilizando el método Guardar de la clase Documento. Aquí hay un ejemplo :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 ```
 
-في هذا المثال ، نحفظ المستند المعدل باسم "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx".
+En este ejemplo, guardamos el documento modificado como "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx".
 
-## مثال على شفرة المصدر لميزة "تغيير نمط مستوى جدول المحتويات" باستخدام Aspose.Words for .NET
+## Ejemplo de código fuente para la función "Cambiar el estilo de un nivel de tabla de contenido" con Aspose.Words para .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء مستند جديد
+// Crear un nuevo documento
 Document doc = new Document();
 
-// تعديل نمط المستوى الأول لجدول المحتويات
+// Modificación del estilo del primer nivel de la tabla de contenido
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
-// احفظ المستند المعدل
+// Guardar el documento modificado
 doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا الدليل ، شرحنا كيفية استخدام Aspose.Words for .NET لتغيير نمط مستوى جدول محتويات مستند Word باستخدام كود المصدر C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة تخصيص نمط جدول المحتويات في مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع أنماط وتنسيقات مستنداتك ، مما يسمح لك بإنشاء مستندات Word جذابة واحترافية.
+En esta guía, explicamos cómo usar Aspose.Words para .NET para cambiar el estilo de un nivel de la tabla de contenido de un documento de Word usando el código fuente de C# proporcionado. Siguiendo los pasos proporcionados, puede personalizar fácilmente el estilo de la tabla de contenido en sus documentos de Word en su aplicación C#. Aspose.Words ofrece una gran flexibilidad y potencia para trabajar con los estilos y el formato de sus documentos, lo que le permite crear documentos de Word atractivos y profesionales.

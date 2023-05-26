@@ -1,55 +1,55 @@
 ---
-title: التعرف على نص Utf8
-linktitle: التعرف على نص Utf8
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التعرف على أحرف Utf-8 في مستندات RTF باستخدام Aspose.Words for .NET. ضمان سلامة البيانات.
+title: 识别 Utf8 文本
+linktitle: 识别 Utf8 文本
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 识别 RTF 文档中的 Utf-8 字符。确保数据完整性。
 type: docs
 weight: 10
 url: /zh/net/programming-with-rtfloadoptions/recognize-utf8-text/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف كود المصدر C # المقدم لميزة "التعرف على نص UTF-8 مع خيارات تحميل RTF" مع Aspose.Words for .NET. تتيح لك هذه الميزة تحديد التعرف على النص المشفر UTF-8 عند تحميل مستند RTF.
+在本教程中，我们将探索为 Aspose.Words for .NET 的“使用 RTF 加载选项识别 UTF-8 文本”功能提供的 C# 源代码。此功能允许您在加载 RTF 文档时指定对 UTF-8 编码文本的识别。
 
-## الخطوة الأولى: تهيئة البيئة
+## 第 1 步：设置环境
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+在您开始之前，请确保您已经使用 Aspose.Words for .NET 设置了您的开发环境。确保您已经添加了必要的引用并导入了适当的命名空间。
 
-## الخطوة 2: تكوين خيارات التحميل
+## 第 2 步：配置上传选项
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
- في هذه الخطوة ، نقوم بتكوين الخيارات لتحميل مستند RTF. نخلق ملف`RtfLoadOptions` كائن وتعيين`RecognizeUtf8Text` ملكية ل`true`يسمح هذا لـ Aspose.Words بالتعرف على النص المشفر UTF-8 ومعالجته بشكل صحيح عند تحميل المستند.
+在此步骤中，我们配置用于加载 RTF 文档的选项。我们创造一个新的`RtfLoadOptions`对象并设置`RecognizeUtf8Text`财产给`true`.这允许 Aspose.Words 在加载文档时正确识别和处理 UTF-8 编码的文本。
 
-## الخطوة 3: تحميل المستند
+## 第 3 步：装入文档
 
 ```csharp
 Document doc = new Document(dataDir + "UTF-8 characters.rtf", loadOptions);
 ```
 
- في هذه الخطوة ، نقوم بتحميل مستند RTF باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف RTF للتحميل ، جنبًا إلى جنب مع خيارات التحميل المحددة.
+在此步骤中，我们使用`Document`方法并将路径传递给要加载的 RTF 文件，以及指定的加载选项。
 
-## الخطوة 4: احفظ المستند
+## 第 4 步：保存文档
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
 ```
 
- في هذه الخطوة الأخيرة ، نقوم بحفظ المستند الناتج بتنسيق RTF باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج.
+在这最后一步中，我们使用 RTF 格式保存生成的文档`Save`方法并将路径传递到输出文件。
 
-يمكنك الآن تشغيل الكود المصدري لتحميل مستند RTF والتعرف بشكل صحيح على النص المشفر UTF-8. سيتم حفظ المستند الناتج في الدليل المحدد بالاسم "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf".
+现在您可以运行源代码来加载RTF文档并正确识别UTF-8编码的文本。生成的文档将保存在指定目录中，名称为“WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf”。
 
 
-### نموذج التعليمات البرمجية المصدر لميزة التعرف على النص UTF-8 مع خيارات تحميل RTF مع Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的带有 RTF 加载选项的 UTF-8 文本识别功能的示例源代码
 
 ```csharp
 
             
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 	
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
@@ -61,10 +61,10 @@ doc.Save(dataDir + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
         
 ```
 
-### خاتمة
+### 结论
 
-في هذا البرنامج التعليمي ، استكشفنا ميزة التعرف على النص Utf-8 مع خيارات تحميل RTF في Aspose.Words for .NET. لقد تعلمنا كيفية التعرف على أحرف Utf-8 وتفسيرها بشكل صحيح عند تحميل مستند RTF.
+在本教程中，我们探索了 Aspose.Words for .NET 中带有 RTF 加载选项的 Utf-8 文本识别功能。我们学习了如何在加载 RTF 文档时正确识别和解释 Utf-8 字符。
 
-هذه الميزة ضرورية لضمان العرض الصحيح لأحرف Utf-8 في مستندات RTF الخاصة بك. من خلال تكوين خيارات التحميل المناسبة ، تستطيع Aspose.Words التعرف على هذه الأحرف ومعالجتها بشكل صحيح ، مما يساعد في الحفاظ على تكامل النص وجودته.
+此功能对于确保在 RTF 文档中正确显示 Utf-8 字符至关重要。通过配置适当的加载选项，Aspose.Words 能够正确识别和处理这些字符，有助于保持文本的完整性和质量。
 
-يعد التعرف على النص Utf-8 مهمًا بشكل خاص عند العمل مع لغات ومجموعات أحرف معينة تتطلب دعم تشفير Utf-8. بفضل Aspose.Words for .NET ، يمكنك بسهولة معالجة مستندات RTF التي تحتوي على أحرف Utf-8 دون التعرض لخطر الفقد أو التلف.
+在处理需要 Utf-8 编码支持的特定语言和字符集时，Utf-8 文本识别尤为重要。感谢 Aspose.Words for .NET，您可以轻松地操作包含 Utf-8 字符的 RTF 文档，而没有丢失或损坏的风险。

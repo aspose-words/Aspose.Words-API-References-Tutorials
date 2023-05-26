@@ -1,20 +1,20 @@
 ---
-title: البرمجة مع النطاقات
-linktitle: البرمجة مع النطاقات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على نطاقات تحذف النص وتحصل النطاقات على نص
+title: Programmering med intervall
+linktitle: Programmering med intervall
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar innehåller rader raderingstext och områden får text
 type: docs
 weight: 1390
 url: /sv/net/programming-with-ranges/
 ---
-تعد البرامج التعليمية لـ Aspose.Words for .NET "البرمجة مع نطاقات" مصدرًا شاملاً لتعلم كيفية التعامل مع نطاقات النص في مستندات Word والعمل معها. ستوجهك هذه البرامج التعليمية عبر أمثلة عملية ، توضح لك كيفية تحديد نطاقات النص ونسخها ونقلها وحذفها ، بالإضافة إلى كيفية تطبيق تنسيق معين على تلك النطاقات.
+Handledningarna för Aspose.Words för .NET "Programmering med intervall" är en omfattande resurs för att lära dig hur man manipulerar och arbetar med textintervall i Word-dokument. Dessa handledningar kommer att leda dig genom praktiska exempel och visar dig hur du väljer, kopierar, flyttar och tar bort textintervall, samt hur du tillämpar specifik formatering på dessa intervall.
 
-في هذه البرامج التعليمية ، ستتعلم كيفية استخدام الميزات المتنوعة التي تقدمها Aspose.Words for .NET للعمل بكفاءة ودقة مع نطاقات النص. ستتعلم كيفية تحديد النطاقات باستخدام طرق تحديد مختلفة ، ومعالجة محتوياتها باستخدام عمليات النسخ والتقطيع والحذف ، وتطبيق تنسيقات مثل الخط الغامق والمائل ولون الخط. الخط للنطاقات المحددة.
+I dessa handledningar kommer du att lära dig hur du använder de olika funktionerna som erbjuds av Aspose.Words för .NET för att arbeta effektivt och exakt med textintervall. Du kommer att lära dig hur du identifierar intervall med olika urvalsmetoder, manipulerar deras innehåll med kopierings-, trim- och raderingsoperationer och använder format som fetstil, kursiv stil och teckensnittsfärg. teckensnitt till de valda intervallen.
 
-سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان تقنيات معالجة نطاقات النص في مستندات Word باستخدام مكتبة Aspose.Words القوية لـ .NET. من خلال هذه المعرفة ، ستتمكن من إنشاء تطبيقات قوية وعالية الأداء تعمل على أتمتة معالجة مستندات Word بشكل فعال.
+Oavsett om du är nybörjare eller en erfaren utvecklare, kommer dessa tutorials hjälpa dig att bemästra teknikerna för att manipulera textområden i Word-dokument med hjälp av det kraftfulla Aspose.Words-biblioteket för .NET. Med denna kunskap kommer du att kunna bygga robusta, högpresterande applikationer som effektivt automatiserar behandlingen av Word-dokument.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [نطاقات حذف النص](./ranges-delete-text/) | تعرف على كيفية حذف نص في نطاقات محددة في مستند Word باستخدام Aspose.Words for .NET. |
-| [نطاقات الحصول على نص](./ranges-get-text/) | تعرف على كيفية استخراج النص بسهولة من مستند Word باستخدام Aspose.Words for .NET. |
+| [Områden Radera text](./ranges-delete-text/) | Lär dig hur du tar bort text i specifika intervall i ett Word-dokument med Aspose.Words för .NET. |
+| [Ranges Get Text](./ranges-get-text/) | Lär dig hur du enkelt extraherar text från ett Word-dokument med Aspose.Words för .NET. |

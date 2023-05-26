@@ -1,35 +1,35 @@
 ---
-title: تنسيق رقم تسمية البيانات
-linktitle: تنسيق رقم تسمية البيانات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تنسيق عدد تسميات البيانات في مخطط باستخدام Aspose.Words for .NET. تخصيص تنسيقات الأرقام لتسميات البيانات بسهولة.
+title: Número de formato de la etiqueta de datos
+linktitle: Número de formato de la etiqueta de datos
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a formatear la cantidad de etiquetas de datos en un gráfico usando Aspose.Words para .NET. Personalice fácilmente los formatos de números para las etiquetas de datos.
 type: docs
 weight: 10
 url: /es/net/programming-with-charts/format-number-of-data-label/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتنسيق عدد تسميات البيانات في مخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وتخصيص تنسيق الأرقام لتسميات البيانات.
+Este tutorial explica cómo usar Aspose.Words para .NET para formatear la cantidad de etiquetas de datos en un gráfico. El código fuente proporcionado demuestra cómo crear un gráfico, agregar datos de series y personalizar el formato de número de las etiquetas de datos.
 
-## الخطوة 1: قم بإعداد المشروع
+## Paso 1: configurar el proyecto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Asegúrese de tener los siguientes requisitos previos:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words para la biblioteca .NET instalada. Puede descargarlo del sitio web oficial de Aspose o usar el administrador de paquetes NuGet para instalarlo.
+- Una ruta de directorio del documento donde se guardará el documento de salida.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Paso 2: Cree un nuevo documento e inserte un gráfico
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Crear un nuevo`Document` objeto y un`DocumentBuilder` para construir el documento.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، أدخل مخططًا في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`في هذا المثال ، سنقوم بإدراج مخطط خطي.
+ A continuación, inserte un gráfico en el documento utilizando el`InsertChart` metodo de la`DocumentBuilder`En este ejemplo, insertaremos un gráfico de líneas.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -37,9 +37,9 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Paso 3: Agregar datos de series al gráfico
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف ثلاث فئات والقيم المقابلة لها.
+Agregue datos de serie al gráfico. En este ejemplo, agregaremos tres categorías y sus valores correspondientes.
 
 ```csharp
 chart.Series.Clear();
@@ -49,9 +49,9 @@ ChartSeries series1 = chart.Series.Add("Aspose Series 1",
 series1.HasDataLabels = true;
 ```
 
-## الخطوة 4: تخصيص تنسيق الأرقام لتسميات البيانات
+## Paso 4: personalice el formato de número de las etiquetas de datos
 
- لتنسيق عدد تسميات البيانات ، قم بالوصول إلى`DataLabels` المجموعة المرتبطة بالسلسلة.
+ Para formatear el número de etiquetas de datos, acceda al`DataLabels` colección asociada a la serie.
 
 ```csharp
 series1.DataLabels.ShowValue = true;
@@ -60,22 +60,22 @@ series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 ```
 
-في هذا المثال ، قمنا بتعيين تنسيقات أرقام مختلفة لكل تسمية بيانات. تم تنسيق تسمية البيانات الأولى كعملة ، والثانية كتاريخ ، والثالثة كنسبة مئوية.
+En este ejemplo, configuramos diferentes formatos de números para cada etiqueta de datos. La primera etiqueta de datos tiene formato de moneda, la segunda de fecha y la tercera de porcentaje.
 
-## الخطوة 5: احفظ المستند
+## Paso 5: Guarde el documento
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Finalmente, guarde el documento en el directorio especificado usando el`Save` metodo de la`Document` objeto.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-هذا يكمل تنفيذ تنسيق عدد تسميات البيانات في مخطط باستخدام Aspose.Words for .NET.
+Esto completa la implementación del formato de la cantidad de etiquetas de datos en un gráfico usando Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لتنسيق رقم تسمية البيانات باستخدام Aspose.Words for .NET 
+### Código fuente de ejemplo para número de formato de etiqueta de datos usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 	Chart chart = shape.Chart;
 	chart.Title.Text = "Data Labels With Different Number Format";
-	// حذف السلاسل التي تم إنشاؤها بشكل افتراضي.
+	// Elimina la serie generada por defecto.
 	chart.Series.Clear();
 	ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
 		new string[] { "Category 1", "Category 2", "Category 3" }, 
@@ -93,8 +93,8 @@ doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 	series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
-	// أو يمكنك تعيين كود التنسيق لربطه بخلية مصدر ،
-	// في هذه الحالة ، سيتم إعادة تعيين NumberFormat إلى عام وسيتم توريثه من خلية مصدر.
+	// O puede configurar el código de formato para que se vincule a una celda de origen,
+	// en este caso, NumberFormat se restablecerá a general y se heredará de una celda de origen.
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```

@@ -1,56 +1,56 @@
 ---
-title: تخطي الخطوط المضمنة Arial و Times Roman Fonts
-linktitle: تخطي الخطوط المضمنة Arial و Times Roman Fonts
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي لإنشاء ملف PDF بدون تضمين خطوط Arial و Times Roman باستخدام Aspose.Words for .NET.
+title: Ignorer les polices Arial et Times Roman intégrées
+linktitle: Ignorer les polices Arial et Times Roman intégrées
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour générer un PDF sans incorporer les polices Arial et Times Roman avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام الميزة لتخطي خطوط Arial و Times Roman المضمنة إلى حجم ملف التعريف باستخدام Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تكوين خيار وضع دمج الخط في مستند وإنشاء ملف PDF بدون تضمين خطوط Arial و Times Roman.
+Cet article fournit un guide étape par étape sur la façon d'utiliser la fonctionnalité pour ignorer les polices Arial et Times Roman intégrées à la taille du métafichier avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. À la fin de ce didacticiel, vous serez en mesure de comprendre comment configurer l'option du mode d'incorporation des polices dans un document et générer un PDF sans incorporer les polices Arial et Times Roman.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words pour .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
 
-## الخطوة 1: تحديد دليل المستند
+## Étape 1 : Définir le répertoire des documents
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Pour commencer, vous devez définir le chemin vers le répertoire où se trouvent vos documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel à votre répertoire de documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Étape 2 : Téléchargez le document
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Ensuite, nous devons charger le document que nous voulons traiter. Dans cet exemple, nous supposons que le document s'appelle "Rendering.docx" et se trouve dans le répertoire de documents spécifié.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF مع دمج الخط
+## Étape 3 : Configurer les options d'enregistrement au format PDF avec incorporation de polices
 
- لتخطي تضمين خطوط Arial و Times Roman في ملف PDF الذي تم إنشاؤه ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن وتعيين`FontEmbeddingMode` ملكية ل`PdfFontEmbeddingMode.EmbedAll`.
+ Pour ignorer l'intégration des polices Arial et Times Roman dans le PDF généré, nous devons configurer le`PdfSaveOptions` objet et définissez le`FontEmbeddingMode` propriété à`PdfFontEmbeddingMode.EmbedAll`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
 ```
 
-## الخطوة 4: احفظ المستند كملف PDF بدون خطوط مضمنة
+## Étape 4 : Enregistrez le document au format PDF sans polices intégrées
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Enfin, nous pouvons enregistrer le document au format PDF en utilisant les options d'enregistrement configurées précédemment.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في إنشاء ملف PDF بدون تضمين خطوط Arial و Times Roman باستخدام Aspose.Words for .NET.
+C'est tout ! Vous avez généré avec succès un PDF sans incorporer les polices Arial et Times Roman à l'aide d'Aspose.Words pour .NET.
 
-### مثال على كود المصدر لتخطي خطوط Arial و Times Roman المضمنة بحجم ملف التعريف باستخدام Aspose.Words for .NET
+### Exemple de code source pour ignorer les polices Arial et Times Roman intégrées à la taille du métafichier avec Aspose.Words pour .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 

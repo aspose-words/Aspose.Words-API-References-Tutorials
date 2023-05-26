@@ -1,44 +1,44 @@
 ---
-title: نص مائل
-linktitle: نص مائل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية كتابة نص مائل باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Texto en cursiva
+linktitle: Texto en cursiva
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a poner texto en cursiva con Aspose.Words para la guía paso a paso de .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-markdown/italic-text/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة النص المائل مع Aspose.Words for .NET. يستخدم النص المائل للتأكيد على أجزاء معينة من المستند.
+En este ejemplo, lo guiaremos a través de cómo usar la función de texto en cursiva con Aspose.Words para .NET. El texto en cursiva se utiliza para enfatizar ciertas partes de un documento.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Paso 1: usar un generador de documentos
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Primero, usaremos un generador de documentos para agregar contenido a nuestro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: اجعل النص مائلًا
+## Paso 2: Texto en cursiva
 
- يمكننا جعل النص مائلاً عن طريق تعيين الخط`Italic` ملكية ل`true`.
+ Podemos poner el texto en cursiva configurando la fuente`Italic` propiedad a`true`.
 
 ```csharp
 builder.Font.Italic = true;
 builder.Writeln("This text will be in italics");
 ```
 
-### مثال على شفرة المصدر للنص المائل باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para texto en cursiva con Aspose.Words para .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Use un generador de documentos para agregar contenido al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص مائلًا.
+	// Pon el texto en cursiva.
 	builder.Font.Italic = true;
 	builder.Writeln("This text will be Italic");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة النص المائل مع Aspose.Words for .NET.
+¡Felicidades! Ahora ha aprendido a usar la función de texto en cursiva con Aspose.Words para .NET.
 

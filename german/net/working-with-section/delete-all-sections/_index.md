@@ -1,29 +1,29 @@
 ---
-title: حذف كافة الأقسام
-linktitle: حذف كافة الأقسام
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية إزالة جميع الأقسام من مستند Word باستخدام Aspose.Words for .NET.
+title: Alle Abschnitte löschen
+linktitle: Alle Abschnitte löschen
+second_title: Aspose.Words für .NET API-Referenz
+description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET alle Abschnitte aus einem Word-Dokument entfernen.
 type: docs
 weight: 10
 url: /de/net/working-with-section/delete-all-sections/
 ---
-في هذا البرنامج التعليمي ، سنخبرك بكيفية إزالة جميع الأقسام من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يمكن أن يكون حذف الأقسام مفيدًا لإعادة تنظيم المستند أو تبسيطه. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In diesem Tutorial erklären wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET alle Abschnitte aus einem Word-Dokument entfernen. Das Löschen von Abschnitten kann hilfreich sein, um Ihr Dokument neu zu organisieren oder zu vereinfachen. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Voraussetzungen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
+- Grundkenntnisse der Programmiersprache C#
+- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
-## الخطوة 1: قم بإنشاء مستند ومنشئ
- أولاً ، سننشئ مثيلاً لملف`Document` فئة وما يرتبط بها`DocumentBuilder` المُنشئ لبناء المستند.
+## Schritt 1: Erstellen Sie ein Dokument und einen Konstruktor
+ Zuerst erstellen wir eine Instanz von`Document` Klasse und eine zugehörige`DocumentBuilder` Konstruktor zum Erstellen des Dokuments.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: إضافة محتوى وأقسام
- بعد ذلك ، سنستخدم ملف`DocumentBuilder` المُنشئ لإضافة محتوى وأقسام إلى المستند. في هذا المثال ، نضيف سطرين من النص وقسمين.
+## Schritt 2: Inhalte und Abschnitte hinzufügen
+ Als nächstes verwenden wir die`DocumentBuilder` Konstruktor zum Hinzufügen von Inhalten und Abschnitten zum Dokument. In diesem Beispiel fügen wir zwei Textzeilen und zwei Abschnitte hinzu.
 
 ```csharp
 builder.Writeln("Hello1");
@@ -32,14 +32,14 @@ builder.Writeln("Hello2");
 doc.AppendChild(new Section(doc));
 ```
 
-## الخطوة 3: احذف جميع الأقسام
- لإزالة جميع الأقسام من المستند ، سنستخدم ملف`Clear` طريقة`Sections` جمع الوثيقة.
+## Schritt 3: Alle Abschnitte löschen
+ Um alle Abschnitte aus dem Dokument zu entfernen, verwenden wir die`Clear` Methode der`Sections` Sammlung des Dokuments.
 
 ```csharp
 doc.Sections.Clear();
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Delete All Sections باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Alle Abschnitte löschen“ mit Aspose.Words für .NET 
 ```csharp
 
 Document doc = new Document();
@@ -52,5 +52,5 @@ doc.Sections.Clear();
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية إزالة جميع الأقسام من مستند Word باستخدام Aspose.Words for .NET. تتيح لك إزالة الأقسام إعادة ترتيب أو تبسيط بنية المستند. لا تتردد في تخصيص هذه الميزة واستخدامها لتلبية احتياجاتك الخاصة.
+## Abschluss
+In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET alle Abschnitte aus einem Word-Dokument entfernt. Durch das Entfernen von Abschnitten können Sie die Struktur Ihres Dokuments neu anordnen oder vereinfachen. Sie können diese Funktion jederzeit an Ihre spezifischen Anforderungen anpassen und nutzen.

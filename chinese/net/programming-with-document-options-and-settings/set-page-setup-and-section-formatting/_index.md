@@ -1,35 +1,35 @@
 ---
-title: تعيين إعداد الصفحة وتنسيق القسم
-linktitle: تعيين إعداد الصفحة وتنسيق القسم
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد تخطيط المستند وتنسيق القسم باستخدام Aspose.Words for .NET.
+title: 设置页面设置和部分格式
+linktitle: 设置页面设置和部分格式
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 设置文档布局和部分格式的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-document-options-and-settings/set-page-setup-and-section-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإعداد تنسيق التخطيط والقسم باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تعيين اتجاه الصفحة والهوامش وحجم الورق.
+在本教程中，我们将引导您通过 C# 源代码使用 Aspose.Words for .NET 设置布局和部分格式。此功能允许您设置页面方向、页边距和纸张大小。
 
-## الخطوة 1: إعداد المشروع
+## 第 1 步：项目设置
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+首先，在您喜欢的 IDE 中创建一个新的 C# 项目。确保在您的项目中引用了 Aspose.Words for .NET 库。
 
-## الخطوة 2: إنشاء المستند
+## 第 2 步：创建文档
 
-في هذه الخطوة ، سننشئ مستندًا جديدًا. استخدم الكود التالي لإنشاء المستند وتهيئة المنشئ:
+在此步骤中，我们将创建一个新文档。使用以下代码创建文档并初始化构造函数：
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+代替`"YOUR DOCUMENTS DIRECTORY"`使用要保存文档的目录的实际路径。
 
-## الخطوة 3: إعداد التخطيط وحفظ المستند
+## 第 3 步：设置布局并保存文档
 
-لنقم الآن بتهيئة تخطيط المستند. استخدم الكود التالي لتعيين الاتجاه والهوامش وحجم الورق:
+现在让我们配置文档布局。使用以下代码设置方向、边距和纸张大小：
 
 ```csharp
 builder.PageSetup.Orientation = Orientation.Landscape;
@@ -39,13 +39,13 @@ builder.PageSetup.PaperSize = PaperSize.Paper10x14;
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSectionFormatting.docx");
 ```
 
-سيقوم هذا الرمز بتعيين اتجاه الصفحة إلى أفقي ، والهامش الأيسر على 50 ، وحجم الورق إلى 10x14.
+此代码会将页面方向设置为横向，左边距为 50，纸张大小为 10x14。
 
-### مثال على الكود المصدري لتعيين إعداد الصفحة وتنسيق القسم باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 设置页面设置和部分格式的示例源代码
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -58,6 +58,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSection
   
 ```
 
-تأكد من تحديد المسار الصحيح للدليل حيث تريد حفظ المستند بتنسيق`dataDir` عامل.
+请务必指定要在其中保存文档的目录的正确路径`dataDir`多变的。
 
-لقد تعلمت الآن كيفية تكوين التخطيط وتنسيق القسم من المستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تخصيص تخطيط وتنسيق المستندات الخاصة بك.
+您现在已经学习了如何使用 Aspose.Words for .NET 配置文档的布局和部分格式。按照本教程中提供的分步指南，您可以轻松自定义自己文档的布局和格式。

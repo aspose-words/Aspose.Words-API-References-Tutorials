@@ -1,28 +1,28 @@
 ---
-title: قم بتعيين تنسيق الخط
-linktitle: قم بتعيين تنسيق الخط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET وإنشاء مستندات جذابة.
+title: Imposta la formattazione dei caratteri
+linktitle: Imposta la formattazione dei caratteri
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come impostare la formattazione dei caratteri nel documento di Word utilizzando Aspose.Words per .NET e creare documenti accattivanti.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/set-font-formatting/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET. سوف تتعلم كيفية تطبيق أنماط مثل الغامق واللون والمائل والخط والحجم والتباعد والتسطير.
+In questo tutorial, ti mostreremo come impostare la formattazione dei caratteri in un documento Word usando Aspose.Words per .NET. Imparerai come applicare stili come grassetto, colore, corsivo, carattere, dimensione, spaziatura e sottolineatura.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti elementi:
+- Conoscenza operativa del linguaggio di programmazione C#
+- La libreria Aspose.Words per .NET installata nel tuo progetto
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+Inizia impostando il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بإنشاء وتنسيق المستند
- قم بإنشاء مثيل لـ`Document` الطبقة و`DocumentBuilder` فئة لبناء الوثيقة. استخدم ال`Font` ممتلكات`DocumentBuilder` للوصول إلى خصائص تنسيق الخط.
+## Passaggio 2: creare e formattare il documento
+ Crea un'istanza di`Document` classe e il`DocumentBuilder` class per costruire il documento. Usa il`Font` proprietà del`DocumentBuilder` per accedere alle proprietà di formattazione dei caratteri.
 
 ```csharp
 Document doc = new Document();
@@ -38,17 +38,17 @@ font.Underline = Underline.Double;
 builder.Writeln("I'm a very nicely formatted string.");
 ```
 
-## الخطوة 3: احفظ المستند
- استخدم ال`Save` طريقة لحفظ المستند مع تنسيق الخط المطبق. يستبدل`"WorkingWithFonts.SetFontFormatting.docx"` مع اسم الملف المطلوب.
+## Passaggio 3: salvare il documento
+ Usa il`Save` metodo per salvare il documento con la formattazione del carattere applicata. Sostituire`"WorkingWithFonts.SetFontFormatting.docx"` con il nome file desiderato.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Font Formatting باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per impostare la formattazione dei caratteri utilizzando Aspose.Words per .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -66,5 +66,5 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 
 ```
 
-## خاتمة
-تهنئة ! أنت تعرف الآن كيفية تعيين تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET. يمكنك استكشاف المزيد من خيارات تنسيق الخط وإنشاء مستندات Word مخصصة وجذابة.
+## Conclusione
+Congratulazioni! Ora sai come impostare la formattazione dei caratteri in un documento di Word utilizzando Aspose.Words per .NET. Puoi esplorare più opzioni di formattazione dei caratteri e creare documenti Word personalizzati e accattivanti.

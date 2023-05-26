@@ -1,17 +1,17 @@
 ---
-title: وثيقة المالك
-linktitle: وثيقة المالك
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام مستند المالك في Aspose.Words for .NET.
+title: Documento de propietario
+linktitle: Documento de propietario
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a usar el documento de propietario en Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-node/owner-document/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود مصدر C # أدناه والذي يوضح كيفية استخدام وظائف المستندات الاحتكارية مع Aspose.Words for .NET.
+Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación que ilustra cómo usar la funcionalidad de documentos patentados con Aspose.Words para .NET.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Paso 1: Importa las referencias necesarias
+Antes de comenzar, asegúrese de haber importado las referencias necesarias para usar Aspose.Words para .NET en su proyecto. Esto incluye importar la biblioteca Aspose.Words y agregar los espacios de nombres requeridos a su archivo fuente.
 
 ```csharp
 using Aspose.Words;
@@ -19,71 +19,71 @@ using Aspose.Words.Nodes;
 using Aspose.Words.Paragraphs;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## Paso 2: Crear un nuevo documento
+ En este paso, crearemos un nuevo documento usando el`Document` clase.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: قم بإنشاء عقدة بمستند المالك
- عند إنشاء عقدة جديدة من أي نوع ، يجب عليك تمرير المستند إلى المنشئ. في هذا المثال ، نقوم بإنشاء عقدة فقرة جديدة باستخدام المستند`doc`.
+## Paso 3: crea un nodo con el documento propietario
+ Cuando crea un nuevo nodo de cualquier tipo, debe pasar el documento al constructor. En este ejemplo, estamos creando un nuevo nodo de párrafo usando el documento`doc`.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 4: تحقق من العقدة الأصلية ومستند المالك
- الآن وقد أنشأنا عقدة الفقرة ، يمكننا التحقق مما إذا كانت تحتوي على عقدة أصلية وما إذا كان المستند المالك هو نفسه`doc`.
+## Paso 4: verificar el nodo principal y el documento del propietario
+ Ahora que hemos creado el nodo de párrafo, podemos verificar si tiene un nodo principal y si el documento propietario es el mismo que`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
 Console.WriteLine("The documents of the two nodes are identical: " + (para.Document == doc));
 ```
 
-## الخطوة 5: تعديل خصائص العقدة ببيانات المستند
-تسمح العلاقة بين العقدة والمستند بالوصول إلى الخصائص التي تشير إلى البيانات الخاصة بالمستند وتعديلها ، مثل الأنماط أو القوائم. في هذا المثال ، نقوم بتعيين اسم نمط الفقرة على أنه "العنوان 1".
+## Paso 5: modificar las propiedades del nodo con los datos del documento
+La relación entre un nodo y un documento permite el acceso y modificación de propiedades que hacen referencia a datos específicos del documento, como estilos o listas. En este ejemplo, estamos configurando el nombre del estilo de párrafo como "Título 1".
 
 ```csharp
 para.ParagraphFormat.StyleName = "Heading 1";
 ```
 
-## الخطوة 6: أضف الفقرة إلى المستند
-الآن يمكننا إضافة عقدة الفقرة إلى القسم الرئيسي من المستند.
+## Paso 6: Agregue el párrafo al documento
+Ahora podemos agregar el nodo de párrafo a la sección principal del documento.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## الخطوة 7: تحقق من العقدة الأصلية بعد الإضافة
-بعد إضافة الفقرة إلى المستند ، نتحقق مرة أخرى مما إذا كانت تحتوي الآن على عقدة أصلية.
+## Paso 7: verificar el nodo principal después de agregar
+Después de agregar el párrafo al documento, verificamos nuevamente si ahora tiene un nodo principal.
 
 ```csharp
 Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
-### نموذج كود مصدر لمستند المالك مع Aspose.Words for .NET
+### Ejemplo de código fuente para el documento del propietario con Aspose.Words para .NET
 
 ```csharp
 	Document doc = new Document();
 
-	// يتطلب إنشاء عقدة جديدة من أي نوع تمرير مستند إلى المنشئ.
+	// La creación de un nuevo nodo de cualquier tipo requiere que se pase un documento al constructor.
 	Paragraph para = new Paragraph(doc);
 
-	// عقدة الفقرة الجديدة ليس لها أصل حتى الآن.
+	// El nuevo nodo de párrafo aún no tiene un padre.
 	Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 
-	// لكن عقدة الفقرة تعرف وثيقتها.
+	// Pero el nodo de párrafo conoce su documento.
 	Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-	// تسمح لنا حقيقة أن العقدة تنتمي دائمًا إلى المستند بالوصول والتعديل
-	// الخصائص التي تشير إلى البيانات على مستوى المستند ، مثل الأنماط أو القوائم.
+	// El hecho de que un nodo pertenezca siempre a un documento nos permite acceder y modificar
+	// propiedades que hacen referencia a los datos de todo el documento, como estilos o listas.
 	para.ParagraphFormat.StyleName = "Heading 1";
 
-	// أضف الآن الفقرة إلى النص الرئيسي للقسم الأول.
+	// Ahora agregue el párrafo al texto principal de la primera sección.
 	doc.FirstSection.Body.AppendChild(para);
 
-	//أصبحت عقدة الفقرة الآن تابعة لعقدة النص الأساسي.
+	//El nodo de párrafo ahora es un elemento secundario del nodo Cuerpo.
 	Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
             
 ```

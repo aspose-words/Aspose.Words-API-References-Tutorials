@@ -1,71 +1,71 @@
 ---
-title: تلقي إخطارات الخطوط
-linktitle: تلقي إخطارات الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تلقي إشعارات الخطوط المفقودة أو المستبدلة عند استخدام Aspose.Words for .NET.
+title: Ta emot meddelanden om teckensnitt
+linktitle: Ta emot meddelanden om teckensnitt
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du får meddelanden om saknade eller ersatta teckensnitt när du använder Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تلقي إشعارات الخطوط أثناء استخدام Aspose.Words for .NET. تتيح لك إشعارات الخطوط اكتشاف وإدارة الخطوط المفقودة أو المستبدلة في مستنداتك. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+I den här handledningen går vi igenom hur du får teckensnittsaviseringar när du använder Aspose.Words för .NET. Teckensnittsaviseringar låter dig upptäcka och hantera saknade eller ersatta teckensnitt i dina dokument. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+ Först måste du ställa in katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وتكوين إعدادات الخط
- بعد ذلك ، سنقوم بتحميل المستند باستخدام ملف`Document` class وتكوين إعدادات الخط باستخدام`FontSettings` فصل. سنقوم بتعيين الخط الافتراضي لاستخدامه في حالة فقدان الخطوط.
+## Steg 2: Ladda dokumentet och konfigurera teckensnittsinställningarna
+ Därefter laddar vi dokumentet med hjälp av`Document` klass och konfigurera teckensnittsinställningarna med hjälp av`FontSettings` klass. Vi kommer att ställa in standardteckensnittet som ska användas om teckensnitt saknas.
 
 ```csharp
-//قم بتحميل المستند وتكوين إعدادات الخط
+//Ladda dokumentet och konfigurera teckensnittsinställningarna
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
 ```
 
-## الخطوة 3: تعيين معالج الإشعارات
- بعد ذلك ، سنحدد معالج الإشعارات من خلال تنفيذ الامتداد`IWarningCallback` واجهه المستخدم. سيسمح لنا ذلك بجمع تحذيرات الخط عند حفظ المستند.
+## Steg 3: Ställ in meddelandehanterare
+ Därefter kommer vi att definiera en meddelandehanterare genom att implementera`IWarningCallback` gränssnitt. Detta gör att vi kan samla in teckensnittsvarningar när vi sparar dokumentet.
 
 ```csharp
-// حدد معالج الإعلام
+// Definiera meddelandehanteraren
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc. WarningCallback = callback;
 ```
 
-## الخطوة 4: تطبيق إعدادات الخط وحفظ المستند
-أخيرًا ، سنقوم بتطبيق إعدادات الخط على المستند وحفظه. سيتم التقاط أي تحذيرات تتعلق بالخط بواسطة معالج الإشعارات الذي حددناه سابقًا.
+## Steg 4: Använd teckensnittsinställningar och spara dokumentet
+Slutligen kommer vi att tillämpa teckensnittsinställningarna på dokumentet och spara det. Alla teckensnittsvarningar kommer att fångas upp av meddelandehanteraren vi definierade tidigare.
 
 ```csharp
-// تطبيق إعدادات الخط وحفظ المستند
+// Använd teckensnittsinställningar och spara dokumentet
 doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لتلقي إخطارات الخطوط باستخدام Aspose.Words for .NET 
+### Exempel på källkod för att ta emot meddelanden om teckensnitt med Aspose.Words för .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
-// يمكننا اختيار الخط الافتراضي لاستخدامه في حالة وجود أي خطوط مفقودة.
+// Vi kan välja vilket standardteckensnitt som ska användas om det saknas teckensnitt.
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-// للاختبار سنقوم بتعيين Aspose.Words للبحث عن الخطوط فقط في مجلد غير موجود. منذ Aspose.word لن تفعل ذلك
-// ابحث عن أي خطوط في الدليل المحدد ، ثم أثناء تقديم الخطوط في المستند سيتم دمجها مع الافتراضي
-//الخط المحدد ضمن FontSettings.DefaultFontName. يمكننا الحصول على هذا الاشتراك باستخدام رد الاتصال الخاص بنا.
+// För att testa kommer vi att ställa in Aspose.Words att leta efter typsnitt endast i en mapp som inte finns. Eftersom Aspose.Words inte gör det
+// hitta några teckensnitt i den angivna katalogen, och under renderingen kommer teckensnitten i dokumentet att vara underpassade med standard
+//teckensnitt som anges under FontSettings.DefaultFontName. Vi kan svara på den här submissionen med vår återuppringning.
 fontSettings.SetFontsFolder(string.Empty, false);
-// قم بإنشاء فئة جديدة تنفذ IWarningCallback والتي تجمع أي تحذيرات تم إنتاجها أثناء حفظ المستند.
+// Skapa en ny klass som implementerar IWarningCallback som samlar in alla varningar som skapas under dokumentsparandet.
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
 doc.FontSettings = fontSettings;
@@ -73,5 +73,5 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تلقي إشعارات الخطوط أثناء استخدام Aspose.Words for .NET. تتيح لك إشعارات الخطوط اكتشاف وإدارة الخطوط المفقودة أو المستبدلة في مستنداتك. استخدم هذه الميزة لضمان تناسق الخط في مستنداتك واتخاذ الإجراء المناسب في حالة فقد الخطوط.
+## Slutsats
+I den här handledningen såg vi hur man tar emot teckensnittsmeddelanden när man använder Aspose.Words för .NET. Teckensnittsaviseringar låter dig upptäcka och hantera saknade eller ersatta teckensnitt i dina dokument. Använd den här funktionen för att säkerställa teckensnittskonsistens i dina dokument och vidta lämpliga åtgärder om teckensnitt saknas.

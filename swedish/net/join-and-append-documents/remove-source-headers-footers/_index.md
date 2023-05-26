@@ -1,42 +1,42 @@
 ---
-title: إزالة تذييلات رؤوس المصدر
-linktitle: إزالة تذييلات رؤوس المصدر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة الرؤوس والتذييلات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Ta bort Source Headers Footers
+linktitle: Ta bort Source Headers Footers
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du tar bort sidhuvuden och sidfötter samtidigt som du ansluter och lägger till Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/remove-source-headers-footers/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Remove Source Headers Footers في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء إزالة الرؤوس والتذييلات من المستند المصدر.
+Denna handledning guidar dig genom processen med att använda funktionen Ta bort källa sidhuvudena sidfötter i Aspose.Words för .NET. Med den här funktionen kan du ansluta och lägga till Word-dokument samtidigt som du tar bort sidhuvuden och sidfötter från källdokumentet.
 
-## المتطلبات الأساسية
+## Förutsättningar
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Innan du börjar, se till att du har följande:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words för .NET installerat. Du kan ladda ner den från Asposes webbplats eller installera den via NuGet.
+2. Visual Studio eller någon annan C#-utvecklingsmiljö.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Steg 1: Initiera dokumentkatalogerna
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir` variabel till sökvägen där dina dokument finns.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Steg 2: Ladda käll- och måldokumenten
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إزالة الرؤوس والتذييلات من أقسام المستند المصدر
+## Steg 3: Ta bort sidhuvuden och sidfötter från källdokumentsektioner
 
- لإزالة الرؤوس والتذييلات من كل قسم في المستند المصدر ، يمكنك التكرار خلال الأقسام باستخدام ملف`foreach` حلقة واستدعاء`ClearHeadersFooters` طريقة.
+ För att ta bort sidhuvuden och sidfötter från varje avsnitt i källdokumentet kan du iterera genom avsnitten med en`foreach` loop och ring`ClearHeadersFooters` metod.
 
 ```csharp
 foreach (Section section in srcDoc.Sections)
@@ -45,51 +45,51 @@ foreach (Section section in srcDoc.Sections)
 }
 ```
 
-## الخطوة 4: تعطيل إعداد "LinkToPrevious" لـ HeadersFooters
+## Steg 4: Inaktivera "LinkToPrevious"-inställningen för sidhuvuden
 
-حتى بعد مسح الرؤوس والتذييلات من المستند المصدر ، هناك احتمال أن يكون إعداد "LinkToPrevious"`HeadersFooters` لا يزال من الممكن تعيينها. لتجنب هذا السلوك ، تحتاج إلى تعيينه صراحةً على`false` للقسم الأول`HeadersFooters` ملكية.
+Även efter att du har rensat sidhuvuden och sidfötter från källdokumentet finns det en möjlighet att inställningen "LinkToPrevious" för`HeadersFooters` kan fortfarande ställas in. För att undvika detta beteende måste du uttryckligen ställa in det på`false` för det första avsnittet`HeadersFooters` fast egendom.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## Steg 5: Bifoga källdokumentet till destinationsdokumentet
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Nu kan du lägga till källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. De`ImportFormatMode.KeepSourceFormatting` parametern säkerställer att källformateringen bevaras under tilläggsåtgärden.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## Steg 6: Spara det slutliga dokumentet
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة Remove Source Headers Footers باستخدام ملحق`Save` طريقة`Document` فصل.
+ Slutligen sparar du det sammanslagna dokumentet med funktionen Ta bort källa sidhuvudena sidfötter aktiverad med hjälp av`Save` metod för`Document` klass.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 ```
 
-### مثال على شفرة المصدر لإزالة تذييلات رؤوس المصدر باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Remove Source Headers Footers med Aspose.Words för .NET 
 
-إليك شفرة المصدر الكاملة لميزة "إزالة تذييلات رؤوس المصدر" في C # باستخدام Aspose.Words for .NET:
+Här är den fullständiga källkoden för funktionen "Ta bort Source Headers Footers" i C# med Aspose.Words för .NET:
 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بإزالة الرؤوس والتذييلات من كل قسم في المستند المصدر.
+	// Ta bort sidhuvuden och sidfötter från var och en av avsnitten i källdokumentet.
 	foreach (Section section in srcDoc.Sections)
 	{
 		section.ClearHeadersFooters();
 	}
-	// حتى بعد مسح الرؤوس والتذييلات من المستند المصدر ، فإن الإعداد "LinkToPrevious"
-	// لا يزال من الممكن تعيين HeadersFooters. سيؤدي هذا إلى استمرار الرؤوس والتذييلات من الوجهة
-	// وثيقة. يجب تعيين هذا على خطأ لتجنب هذا السلوك.
+	// Även efter att sidhuvuden och sidfötter har raderats från källdokumentet, inställningen "LinkToPrevious".
+	// for HeadersFooters kan fortfarande ställas in. Detta gör att sidhuvuden och sidfötter fortsätter från destinationen
+	// dokumentera. Detta bör ställas in på falskt för att undvika detta beteende.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 ```
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Remove Source Headers Footers باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع إزالة الرؤوس والتذييلات من المستند المصدر.
+Det är allt! Du har framgångsrikt implementerat funktionen Remove Source Headers Footers med Aspose.Words för .NET. Det slutliga dokumentet kommer att innehålla det sammanslagna innehållet med sidhuvuden och sidfötter borttagna från källdokumentet.

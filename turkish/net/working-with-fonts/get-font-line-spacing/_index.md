@@ -1,56 +1,56 @@
 ---
-title: احصل على تباعد أسطر الخط
-linktitle: احصل على تباعد أسطر الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تباعد بين الخطوط في مستند Word باستخدام Aspose.Words for .NET.
+title: Yazı Tipi Satır Aralığını Alın
+linktitle: Yazı Tipi Satır Aralığını Alın
+second_title: Aspose.Words for .NET API Referansı
+description: Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinde yazı tipi satır aralığını nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/get-font-line-spacing/
 ---
-في هذا البرنامج التعليمي ، سنخبرك بكيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يحدد تباعد أسطر الخط المسافة العمودية بين سطور النص. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu eğitimde, .NET için Aspose.Words kütüphanesini kullanarak bir Word belgesinde yazı tipi satır aralığını nasıl alacağınızı anlatacağız. Yazı tipi satır aralığı, metin satırları arasındaki dikey boşluğu tanımlar. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: إنشاء مستند جديد ومولد مستندات
- أولاً ، سننشئ مستندًا جديدًا عن طريق إنشاء مثيل لملف`Document` class ومنشئ المستندات عن طريق إنشاء مثيل لملف`DocumentBuilder` فصل.
+## 1. Adım: Yeni bir belge ve belge oluşturucu oluşturun
+ İlk olarak, örnekleyerek yeni bir belge oluşturacağız.`Document` sınıfı ve bir belge oluşturucuyu örnekleyerek`DocumentBuilder` sınıf.
 
 ```csharp
-// قم بإنشاء مستند جديد
+// Yeni bir belge oluştur
 Document doc = new Document();
 
-// قم بإنشاء منشئ المستندات
+// Bir belge oluşturucu oluşturun
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الخط
- بعد ذلك ، سنقوم بتكوين الخط عن طريق تعيين ملف`Name` خاصية منشئ الوثيقة.
+## 2. Adım: Yazı tipini yapılandırın
+ Ardından, ayarlayarak yazı tipini yapılandıracağız.`Name` belge oluşturucunun özelliği.
 
 ```csharp
-//تكوين الخط
+//yazı tipini yapılandır
 builder.Font.Name = "Calibri";
 ```
 
-## الخطوة 3: أضف نصًا إلى المستند
-سنستخدم الآن منشئ المستندات لإضافة نص منسق إلى المستند.
+## 3. Adım: Belgeye metin ekleyin
+Şimdi belgeye biçimlendirilmiş metin eklemek için belge oluşturucuyu kullanacağız.
 
 ```csharp
-// أضف نصًا إلى المستند
+// Belgeye metin ekleyin
 builder. Writen("qText");
 ```
 
-## الخطوة 4: احصل على تباعد أسطر الخطوط
- الآن سوف نصل إلى`Font` كائن من الفقرة الأولى من المستند واسترداد قيمة`LineSpacing` ملكية.
+## 4. Adım: Yazı Tipi Satır Aralığını Alın
+ Şimdi erişeceğiz`Font` belgenin ilk paragrafının nesnesi ve değerini almak`LineSpacing` mülk.
 
 ```csharp
-// احصل على تباعد الأسطر للخط
+// Yazı tipinin satır aralığını alın
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### نموذج لشفرة مصدر للحصول على تباعد أسطر الخطوط باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Yazı Tipi Satırı Boşluğunu Getir için örnek kaynak kodu 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -60,5 +60,5 @@ Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام Aspose.Words for .NET. يعد تباعد أسطر الخطوط أمرًا مهمًا للتحكم في التباعد الرأسي بين سطور النص. لا تتردد في استخدام هذه الميزة لتخصيص مظهر النص في مستنداتك.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinde yazı tipi satır aralığının nasıl alınacağını gördük. Yazı tipi satırı aralığı, metin satırları arasındaki dikey aralığı kontrol etmek için önemlidir. Belgelerinizdeki metninizin görünümünü özelleştirmek için bu özelliği kullanmaktan çekinmeyin.

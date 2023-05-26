@@ -1,51 +1,51 @@
 ---
-title: تحميل مع الترميز
-linktitle: تحميل مع الترميز
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل مستند بترميز محدد باستخدام Aspose.Words for .NET.
+title: 加载编码
+linktitle: 加载编码
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 加载具有指定编码的文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/load-with-encoding/
 ---
-عند العمل مع المستندات النصية في تطبيق C # ، من المهم أن تكون قادرًا على تحميلها بشكل صحيح عن طريق تحديد التشفير الصحيح. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحميل مستندات نصية بالتشفير المطلوب باستخدام خيارات تحميل LoadOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند نصي بالتشفير المحدد باستخدام خيارات تحميل LoadOptions.
+在 C# 应用程序中处理文本文档时，能够通过指定正确的编码正确加载它们非常重要。借助 .NET 的 Aspose.Words 库，您可以使用 LoadOptions 加载选项轻松加载具有所需编码的文本文档。在本分步指南中，我们将带您了解如何使用 Aspose.Words for .NET C# 源代码使用 LoadOptions 加载选项加载具有指定编码的文本文档。
 
-## فهم مكتبة Aspose.Words
+## 理解 Aspose.Words 库
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库很重要。 Aspose.Words 是一个强大的库，可以在包括.NET 在内的不同平台上创建、编辑、转换和保护 Word 文档。它提供了许多用于操作文档的功能，例如插入文本、更改格式、添加部分等等。
 
-## تكوين خيارات التحميل
+## 配置加载选项
 
-تتمثل الخطوة الأولى في تكوين خيارات التحميل لمستندنا النصي. استخدم فئة LoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى ضبط خاصية التشفير على الترميز المطلوب ، على سبيل المثال ، Encoding.UTF7 لتشفير UTF-7. هيريس كيفية القيام بذلك:
+第一步是为我们的文本文档配置加载选项。使用 LoadOptions 类指定加载参数。在我们的例子中，我们需要将 Encoding 属性设置为所需的编码，例如，将 Encoding.UTF7 设置为 UTF-7 编码。方法如下：
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding.UTF7 };
 ```
 
-قمنا بإنشاء كائن LoadOptions جديد وقمنا بتعيين خاصية Encoding إلى Encoding.UTF7 لتحديد ترميز UTF-7.
+我们创建一个新的 LoadOptions 对象并将 Encoding 属性设置为 Encoding.UTF7 以指定 UTF-7 编码。
 
-## تحميل المستند بترميز محدد
+## 加载指定编码的文档
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل المستند باستخدام فئة Document وتحديد خيارات التحميل. هنا مثال :
+现在我们已经配置了加载选项，我们可以使用 Document 类加载文档并指定加载选项。这是一个例子：
 
 ```csharp
 Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Encoded in UTF-7.txt" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+在此示例中，我们使用指定的加载选项加载位于文档目录中的文档“以 UTF-7.txt 编码”。
 
-### عينة من التعليمات البرمجية المصدر لـ LoadOptions مع وظيفة "Load With Encoding" باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的具有“Load With Encoding”功能的 LoadOptions 示例源代码
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل بالتشفير المطلوب (UTF-7)
+//使用所需的编码 (UTF-7) 配置加载选项
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding.UTF7 };
 
-// قم بتحميل المستند بالتشفير المحدد
+//加载指定编码的文档
 Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 ```
 
-## خاتمة
+## 结论
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند نصي بترميز محدد باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يضمن تحميل المستندات النصية بالترميز المناسب قراءة صحيحة ودقيقة للمحتوى في تطبيقك.
+在本指南中，我们解释了如何使用 .NET 的 Aspose.Words 库加载具有指定编码的文本文档。按照提供的步骤并使用提供的 C# 源代码，您可以轻松地将此功能应用到您的 C# 应用程序中。使用正确的编码加载文本文档可确保正确和准确地读取应用程序中的内容。

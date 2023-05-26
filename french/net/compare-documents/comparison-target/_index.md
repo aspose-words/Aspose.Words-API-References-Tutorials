@@ -1,65 +1,65 @@
 ---
-title: هدف المقارنة
-linktitle: هدف المقارنة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على ميزة مقارنة الهدف في Aspose.Words for .NET التي تسمح لك بمقارنة المستندات وإنشاء مستند جديد يحتوي على التغييرات التي تم إجراؤها.
+title: Cible de comparaison
+linktitle: Cible de comparaison
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à comparer la fonction cible d'Aspose.Words pour .NET qui vous permet de comparer des documents et de générer un nouveau document contenant les modifications apportées.
 type: docs
 weight: 10
 url: /fr/net/compare-documents/comparison-target/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم وظيفة هدف المقارنة في Aspose.Words for .NET.
+Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la fonctionnalité cible de comparaison d'Aspose.Words pour .NET.
 
-## الخطوة 1: مقدمة
+## Étape 1 : Présentation
 
-تسمح لك ميزة المقارنة المستهدفة في Aspose.Words for .NET بمقارنة مستندين وإنشاء مستند جديد يحتوي على التغييرات التي تم إجراؤها على المستند الهدف. يمكن أن يكون هذا مفيدًا لتعقب التغييرات التي تم إجراؤها بين الإصدارات المختلفة من المستند.
+La fonction de comparaison cible d'Aspose.Words pour .NET vous permet de comparer deux documents et de générer un nouveau document contenant les modifications apportées au document cible. Cela peut être utile pour suivre les modifications apportées entre différentes versions d'un document.
 
-## الخطوة الثانية: تهيئة البيئة
+## Étape 2 : Configurer l'environnement
 
-قبل أن تبدأ ، تحتاج إلى إعداد بيئة التطوير الخاصة بك للعمل مع Aspose.Words for .NET. تأكد من تثبيت مكتبة Aspose.Words وأن لديك مشروع C # مناسب لتضمين الكود.
+Avant de commencer, vous devez configurer votre environnement de développement pour qu'il fonctionne avec Aspose.Words pour .NET. Assurez-vous que la bibliothèque Aspose.Words est installée et que vous disposez d'un projet C# approprié pour intégrer le code.
 
-## الخطوة 3: إضافة التجميعات المطلوبة
+## Étape 3 : Ajouter les assemblages requis
 
-لاستخدام ميزة هدف المقارنة في Aspose.Words for .NET ، يجب عليك إضافة التجميعات الضرورية إلى مشروعك. تأكد من أن لديك المراجع المناسبة لـ Aspose. Words في مشروعك.
+Pour utiliser la fonctionnalité cible de comparaison d'Aspose.Words pour .NET, vous devez ajouter les assemblys nécessaires à votre projet. Assurez-vous d'avoir les bonnes références à Aspose.Words dans votre projet.
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 4: تهيئة المستند
+## Étape 4 : Initialisation du document
 
-في هذه الخطوة ، سنقوم بتهيئة وثيقتين للمقارنة. يجب عليك تحديد مسار الدليل حيث توجد المستندات الخاصة بك ، وكذلك اسم المستند المصدر.
+Dans cette étape, nous allons initialiser deux documents pour comparaison. Vous devez spécifier le chemin du répertoire où se trouvent vos documents, ainsi que le nom du document source.
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تهيئة الوثيقة أ للمقارنة.
+// Initialisation du document A à comparer.
 Document docA = new Document(dataDir + "DocumentA.docx");
 
-// قم بنسخ المستند A لإنشاء نسخة متطابقة من المستند B.
+// Clonez le document A pour créer une copie identique du document B.
 Document docB = docA.Clone();
 ```
 
-## الخطوة 5: تكوين خيارات المقارنة
+## Étape 5 : Configuration des options de comparaison
 
-في هذه الخطوة ، سنقوم بتكوين خيارات المقارنة لتحديد سلوك المقارنة. تتضمن الخيارات القدرة على تجاهل التنسيق ، بالإضافة إلى هدف المقارنة ، وهو الخيار "إظهار التغييرات في" في مربع الحوار "مقارنة المستندات" في Microsoft Word.
+Dans cette étape, nous allons configurer les options de comparaison pour spécifier le comportement de la comparaison. Les options incluent la possibilité d'ignorer la mise en forme, ainsi que la cible de comparaison, qui est l'option "Afficher les modifications dans" dans la boîte de dialogue "Comparer les documents" de Microsoft Word.
 
 ```csharp
 CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
 ```
 
-## الخطوة 6: مقارنة المستندات
+## Étape 6 : Comparaison de documents
 
-سنقوم الآن بمقارنة المستندات وإنشاء النتيجة في مستند جديد.
+Nous allons maintenant comparer les documents et générer le résultat dans un nouveau document.
 
 ```csharp
 docA.Compare(docB, "user", DateTime.Now, options);
 ```
 
- ال`Compare` يقارن الأسلوب المستند A بالمستند B ويحفظ التغييرات في المستند A. يمكنك تحديد اسم المستخدم وتاريخ المقارنة كمرجع.
+ Le`Compare` La méthode compare le document A au document B et enregistre les modifications apportées au document A. Vous pouvez spécifier le nom d'utilisateur et la date de comparaison pour référence.
 
-### نموذج لشفرة مصدر للمقارنة الهدف باستخدام Aspose.Words for .NET
+### Exemple de code source pour la cible de comparaison à l'aide d'Aspose.Words pour .NET
 
 
 ```csharp
@@ -67,7 +67,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 Document docA = new Document(MyDir + "Document.docx");
 Document docB = docA.Clone();
 
-// يتعلق بخيار "إظهار التغييرات في" Microsoft Word في مربع الحوار "مقارنة المستندات".
+// Se rapporte à l'option "Afficher les modifications dans" de Microsoft Word dans la boîte de dialogue "Comparer les documents".
 CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
 
 docA.Compare(docB, "user", DateTime.Now, options);
@@ -75,7 +75,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
         
 ```
 
-## خاتمة
+## Conclusion
 
-في هذه المقالة ، استكشفنا ميزة هدف الفرق في Aspose.Words for .NET. تتيح لك هذه الميزة مقارنة مستندين وإنشاء مستند جديد يحتوي على التغييرات التي تم إجراؤها. يمكنك استخدام هذه المعرفة لتعقب التغييرات بين الإصدارات المختلفة من مستنداتك.
+Dans cet article, nous avons exploré la fonctionnalité de cible diff d'Aspose.Words pour .NET. Cette fonctionnalité permet de comparer deux documents et de générer un nouveau document contenant les modifications apportées. Vous pouvez utiliser ces connaissances pour suivre les modifications entre les différentes versions de vos documents.
 

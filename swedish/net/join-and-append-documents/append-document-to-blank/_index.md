@@ -1,71 +1,71 @@
 ---
-title: إلحاق مستند فارغ
-linktitle: إلحاق مستند فارغ
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند إلى مستند وجهة فارغ في Aspose.Words for .NET.
+title: Bifoga dokument till tomt
+linktitle: Bifoga dokument till tomt
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du lägger till ett dokument till ett tomt måldokument i Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/append-document-to-blank/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق محتويات مستند واحد بمستند وجهة فارغ. يوضح كود المصدر المقدم كيفية إنشاء مستند جديد وإزالة محتواه ثم إلحاق المستند المصدر به.
+Denna handledning förklarar hur man använder Aspose.Words för .NET för att lägga till innehållet i ett dokument till ett tomt måldokument. Den medföljande källkoden visar hur man skapar ett nytt dokument, tar bort dess innehåll och sedan lägger till källdokumentet till det.
 
-## الخطوة 1: قم بإعداد المشروع
+## Steg 1: Konfigurera projektet
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Se till att du har följande förutsättningar:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från den officiella Aspose-webbplatsen eller använda NuGet-pakethanteraren för att installera den.
+- En dokumentkatalogsökväg där käll- och måldokumenten finns.
 
-## الخطوة 2: قم بإنشاء مستند وجهة جديد
+## Steg 2: Skapa ett nytt måldokument
 
- إنشاء ملف`Document` كائن للمستند الوجهة.
+ Skapa en ny`Document` objekt för måldokumentet.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document();
 ```
 
-## الخطوة 3: إزالة المحتوى الموجود من المستند الوجهة
+## Steg 3: Ta bort befintligt innehåll från måldokumentet
 
-لضمان وجود مستند وجهة نظيف ، قم بإزالة كل المحتوى الموجود من المستند باستخدام امتداد`RemoveAllChildren` طريقة.
+För att säkerställa ett rent måldokument, ta bort allt befintligt innehåll från dokumentet med hjälp av`RemoveAllChildren` metod.
 
 ```csharp
 dstDoc.RemoveAllChildren();
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بالمستند الوجهة
+## Steg 4: Lägg till källdokumentet till måldokumentet
 
- قم بإلحاق محتويات المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة مع`ImportFormatMode.KeepSourceFormatting` خيار.
+ Lägg till innehållet i källdokumentet till måldokumentet med hjälp av`AppendDocument` metod med`ImportFormatMode.KeepSourceFormatting` alternativ.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند الوجهة
+## Steg 5: Spara måldokumentet
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند إلى مستند وجهة فارغ باستخدام Aspose.Words for .NET.
+Detta slutför implementeringen av att lägga till ett dokument till ett tomt måldokument med Aspose.Words för .NET.
 
-### مثال على الكود المصدري لإلحاق مستند فارغ باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Lägg till dokument till tomt med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	// المستند الوجهة ليس فارغًا ، وغالبًا ما يتسبب في ظهور صفحة فارغة قبل المستند الملحق.
-	// ويرجع ذلك إلى وجود قسم فارغ في المستند الأساسي وبدء تشغيل المستند الجديد في الصفحة التالية.
-	// قم بإزالة كل المحتوى من المستند الوجهة قبل الإلحاق.
+	// Måldokumentet är inte tomt, vilket ofta gör att en tom sida visas före det bifogade dokumentet.
+	// Detta beror på att basdokumentet har en tom sektion och att det nya dokumentet startas på nästa sida.
+	// Ta bort allt innehåll från måldokumentet innan du lägger till.
 	dstDoc.RemoveAllChildren();
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");

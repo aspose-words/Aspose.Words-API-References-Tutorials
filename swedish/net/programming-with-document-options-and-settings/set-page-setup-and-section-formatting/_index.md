@@ -1,35 +1,35 @@
 ---
-title: تعيين إعداد الصفحة وتنسيق القسم
-linktitle: تعيين إعداد الصفحة وتنسيق القسم
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد تخطيط المستند وتنسيق القسم باستخدام Aspose.Words for .NET.
+title: Ställ in sidinställningar och avsnittsformatering
+linktitle: Ställ in sidinställningar och avsnittsformatering
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att ställa in ett dokuments layout och sektionsformatering med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-document-options-and-settings/set-page-setup-and-section-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإعداد تنسيق التخطيط والقسم باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تعيين اتجاه الصفحة والهوامش وحجم الورق.
+I den här handledningen går vi igenom C#-källkoden för att ställa in layout och avsnittsformatering med Aspose.Words för .NET. Med den här funktionen kan du ställa in sidorientering, marginaler och pappersstorlek.
 
-## الخطوة 1: إعداد المشروع
+## Steg 1: Projektinställning
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
 
-## الخطوة 2: إنشاء المستند
+## Steg 2: Skapa dokumentet
 
-في هذه الخطوة ، سننشئ مستندًا جديدًا. استخدم الكود التالي لإنشاء المستند وتهيئة المنشئ:
+I det här steget skapar vi ett nytt dokument. Använd följande kod för att skapa dokumentet och initiera konstruktorn:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+ Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
-## الخطوة 3: إعداد التخطيط وحفظ المستند
+## Steg 3: Konfigurera layouten och spara dokument
 
-لنقم الآن بتهيئة تخطيط المستند. استخدم الكود التالي لتعيين الاتجاه والهوامش وحجم الورق:
+Låt oss nu konfigurera dokumentlayouten. Använd följande kod för att ställa in orientering, marginaler och pappersstorlek:
 
 ```csharp
 builder.PageSetup.Orientation = Orientation.Landscape;
@@ -39,13 +39,13 @@ builder.PageSetup.PaperSize = PaperSize.Paper10x14;
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSectionFormatting.docx");
 ```
 
-سيقوم هذا الرمز بتعيين اتجاه الصفحة إلى أفقي ، والهامش الأيسر على 50 ، وحجم الورق إلى 10x14.
+Den här koden ställer in sidorienteringen till liggande, vänstermarginalen till 50 och pappersstorleken till 10x14.
 
-### مثال على الكود المصدري لتعيين إعداد الصفحة وتنسيق القسم باستخدام Aspose.Words for .NET
+### Exempel på källkod för Set Page Setup och sektionsformatering med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -58,6 +58,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSection
   
 ```
 
-تأكد من تحديد المسار الصحيح للدليل حيث تريد حفظ المستند بتنسيق`dataDir` عامل.
+Var noga med att ange rätt sökväg till katalogen där du vill spara dokumentet i`dataDir` variabel.
 
-لقد تعلمت الآن كيفية تكوين التخطيط وتنسيق القسم من المستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تخصيص تخطيط وتنسيق المستندات الخاصة بك.
+Du har nu lärt dig hur du konfigurerar layouten och sektionsformateringen av ett dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide som finns i den här handledningen kan du enkelt anpassa layouten och formateringen av dina egna dokument.

@@ -1,62 +1,62 @@
 ---
-title: قائمة نقطية
-linktitle: قائمة نقطية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء قائمة نقطية باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Elenco puntato
+linktitle: Elenco puntato
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come creare un elenco puntato con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/bulleted-list/
 ---
 
-في هذا البرنامج التعليمي ، سنخبرك بكيفية إنشاء قائمة نقطية باستخدام Aspose.Words for .NET. يتم استخدام قائمة نقطية لسرد العناصر بدون استخدام الترقيم.
+In questo tutorial, ti diremo come creare un elenco puntato con Aspose.Words per .NET. Un elenco puntato viene utilizzato per elencare gli elementi senza utilizzare la numerazione.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Passaggio 1: utilizzo di un generatore di documenti
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Innanzitutto, utilizzeremo un generatore di documenti per aggiungere contenuto al nostro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تطبيق قائمة نقطية افتراضية
+## Passaggio 2: applicazione di un elenco puntato predefinito
 
- يمكننا تطبيق قائمة افتراضية ذات تعداد نقطي باستخدام قائمة منشئ المستندات`ApplyBulletDefault` طريقة.
+ Possiamo applicare un elenco puntato predefinito utilizzando il generatore di documenti`ApplyBulletDefault` metodo.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## الخطوة 3: تخصيص تنسيق الرمز النقطي
+## Passaggio 3: personalizzazione del formato elenco puntato
 
- يمكننا تخصيص تنسيق الرمز النقطي من خلال الوصول إلى خصائص`ListFormat.List.ListLevels[0]`. في هذا المثال ، نستخدم الشرطة "-" كرمز نقطي.
+ Possiamo personalizzare il formato del punto elenco accedendo alle proprietà di`ListFormat.List.ListLevels[0]`. In questo esempio, usiamo il trattino "-" come punto elenco.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## الخطوة 4: إضافة عناصر إلى القائمة
+## Passaggio 4: aggiunta di elementi all'elenco
 
- يمكننا الآن إضافة عناصر إلى القائمة النقطية باستخدام أداة إنشاء المستندات`Writeln` طريقة.
+ Ora possiamo aggiungere elementi all'elenco puntato utilizzando il generatore di documenti`Writeln` metodo.
 
 ```csharp
 builder. Writen("Element 1");
 builder. Writen("Element 2");
 ```
 
-## الخطوة 5: إزالة المسافة البادئة من القائمة
+## Passaggio 5: rimozione del rientro dall'elenco
 
- إذا أردنا إنشاء قائمة فرعية ، فيمكننا زيادة المسافة البادئة باستخدام`ListFormat.ListIndent()` طريقة. في هذا المثال ، نضيف قائمة فرعية إلى البندين 2 أ و 2 ب.
+ Se vogliamo creare una sottolista, possiamo aumentare l'indentazione usando il`ListFormat.ListIndent()` metodo. In questo esempio, stiamo aggiungendo un sottoelenco agli elementi 2a e 2b.
 
 ```csharp
 builder.ListFormat.ListIndent();
 builder. Writeln("Element 2a");
 builder.Writeln("Element 2b");
 ```
-### مثال على شفرة المصدر لقائمة التعداد النقطي باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per l'elenco puntato utilizzando Aspose.Words per .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
 	builder.ListFormat.ApplyBulletDefault();
@@ -72,5 +72,5 @@ builder.Writeln("Element 2b");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية إنشاء قائمة نقطية باستخدام Aspose.Words for .NET.
+Congratulazioni! Ora hai imparato come creare un elenco puntato con Aspose.Words per .NET.
 

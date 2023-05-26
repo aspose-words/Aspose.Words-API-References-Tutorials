@@ -1,50 +1,50 @@
 ---
-title: مثال مصدر خط Steam
-linktitle: مثال مصدر خط Steam
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام مصدر خط تدفق الموارد لتحميل الخطوط المخصصة في Aspose.Words for .NET.
+title: 资源 Steam 字体源示例
+linktitle: 资源 Steam 字体源示例
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Resource Stream Font Source 将自定义字体加载到 Aspose.Words for .NET 中。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/resource-steam-font-source-example/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام مصدر خط تدفق الموارد مع Aspose.Words for .NET. يتيح لك مصدر الخط هذا تحميل الخطوط من تدفق الموارد ، والذي يمكن أن يكون مفيدًا عندما تريد دمج الخطوط المخصصة في تطبيقك.
+在本教程中，我们将向您介绍如何将 Resource Flow Font Source 与 Aspose.Words for .NET 一起使用。此字体源允许您从资源流加载字体，这在您想要将自定义字体合并到您的应用程序中时非常有用。
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## 先决条件
+在开始之前，请确保您拥有以下物品：
+- C# 编程语言的应用知识
+- 项目中安装的 .NET 的 Aspose.Words 库
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 第一步：定义文档目录
+首先，您需要将目录路径设置为您的 Word 文档所在的位置。代替`"YOUR DOCUMENT DIRECTORY"`在具有适当路径的代码中。
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند وتعيين مصدر خط تدفق الموارد
- بعد ذلك ، سنقوم بتحميل المستند باستخدام ملف`Document` فئة وتعيين مصدر خط تدفق الموارد باستخدام`FontSettings.DefaultInstance.SetFontsSources()` فصل. سيسمح هذا لـ Aspose.Words بالعثور على الخطوط في تدفق الموارد.
+## 第二步：上传文档并设置资源流字体来源
+接下来，我们将使用`Document`类并使用设置资源流字体源`FontSettings.DefaultInstance.SetFontsSources()`班级。这将允许 Aspose.Words 在资源流中找到字体。
 
 ```csharp
-// تحميل المستند وتعيين مصدر خط تدفق الموارد
+//加载文档并设置资源流字体源
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 { new SystemFontSource(), new ResourceSteamFontSource() });
 ```
 
-## الخطوة 3: احفظ المستند
-أخيرًا ، سنحفظ المستند. سيتم تحميل الخطوط من تدفق الموارد المحدد وتضمينها في المستند.
+## 第 3 步：保存文档
+最后，我们将保存文档。字体将从指定的资源流中加载并嵌入到文档中。
 
 ```csharp
-// احفظ المستند
+//保存文件
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
-### نموذج رمز مصدر لمثال مصدر خط Resource Steam باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的 Resource Steam Font Source Example 的示例源代码 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -53,5 +53,5 @@ FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية استخدام Resource Flow Font Source مع Aspose.Words for .NET. تتيح لك هذه الميزة تحميل الخطوط من موجز الموارد ، وهو أمر مفيد عندما تريد تضمين الخطوط المخصصة في مستنداتك. جرب خطوطًا مختلفة واستكشف الإمكانيات التي توفرها Aspose.Words لإدارة الخطوط.
+## 结论
+在本教程中，您学习了如何将 Resource Flow Font Source 与 Aspose.Words for .NET 一起使用。此功能允许您从资源提要加载字体，这在您想要将自定义字体嵌入到文档中时非常有用。尝试不同的字体并探索 Aspose.Words 为字体管理提供的可能性。

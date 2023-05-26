@@ -1,81 +1,81 @@
 ---
-title: لا تقم بحفظ صورة نقطية
-linktitle: لا تقم بحفظ صورة نقطية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل حفظ الرموز النقطية للصور في مستندات Word باستخدام Aspose.Words for .NET.
+title: No guardar viñeta de imagen
+linktitle: No guardar viñeta de imagen
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a deshabilitar el guardado de viñetas de imágenes en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 
-تعد الرموز النقطية للصور ميزة شائعة الاستخدام في مستندات Word لإضافة رموز نقطية مخصصة. ومع ذلك ، في بعض الحالات قد يكون من الضروري تعطيل تسجيل الصور النقطية عند معالجة المستندات باستخدام Aspose.Words Library for .NET. في هذا الدليل المفصل خطوة بخطوة ، سنشرح كيفية استخدام كود مصدر Aspose.Words C # لـ .NET لتعطيل حفظ الصور النقطية باستخدام خيارات حفظ DocSaveOptions.
+Las viñetas de imagen son una característica de uso común en los documentos de Word para agregar viñetas personalizadas. Sin embargo, en algunos casos puede ser necesario deshabilitar el registro de viñetas de imágenes cuando se manipulan documentos usando Aspose.Words Library para .NET. En esta guía paso a paso, explicaremos cómo usar el código fuente de Aspose.Words C# para .NET para deshabilitar el guardado de viñetas de imágenes usando las opciones de guardado de DocSaveOptions.
 
-## فهم مكتبة Aspose.Words
+## Comprender la biblioteca Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Antes de sumergirse en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una poderosa biblioteca para crear, editar, convertir y proteger documentos de Word en diferentes plataformas, incluida .NET. Ofrece muchas funciones para manipular documentos, como insertar texto, cambiar el formato, agregar secciones y mucho más.
 
-## الخطوة 1: إعداد دليل المستندات
+## Paso 1: Configuración del directorio de documentos
 
-الخطوة الأولى هي تحديد الدليل حيث توجد المستندات الخاصة بك. يجب عليك تحديد مسار الدليل الكامل. على سبيل المثال :
+El primer paso es definir el directorio donde se encuentran sus documentos. Debe especificar la ruta completa del directorio. Por ejemplo :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
-## الخطوة 2: تحميل المستند مع صورة نقطية
+## Paso 2: cargar el documento con viñetas de imagen
 
-بعد ذلك ، تحتاج إلى تحميل المستند باستخدام الرموز النقطية للصور. استخدم فئة المستند لتحميل المستند من ملف. على سبيل المثال :
+A continuación, debe cargar el documento con viñetas de imagen. Utilice la clase Document para cargar el documento desde un archivo. Por ejemplo :
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-في هذا المثال نقوم بتحميل المستند من ملف "Image bullet points.docx"
+En este ejemplo estamos cargando el documento desde el archivo "Imagen viñetas.docx"
 
-  الموجود في دليل المستندات.
+  ubicado en el directorio de documentos.
 
-## الخطوة 3: تكوين خيارات التسجيل
+## Paso 3: Configure las opciones de grabación
 
-لنقم الآن بتهيئة خيارات الحفظ لمستندنا. استخدم فئة DocSaveOptions لتحديد إعدادات الحفظ. على سبيل المثال :
+Ahora vamos a configurar las opciones de guardado de nuestro documento. Utilice la clase DocSaveOptions para especificar la configuración de guardado. Por ejemplo :
 
 ```csharp
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
-في هذا المثال ، قمنا بإنشاء كائن DocSaveOptions جديد وقمنا بتعيين الخاصية SavePictureBullet إلى false لتعطيل حفظ الرموز النقطية للصور.
+En este ejemplo, creamos un nuevo objeto DocSaveOptions y establecemos la propiedad SavePictureBullet en falso para deshabilitar el guardado de viñetas de imágenes.
 
-## الخطوة 4: تمكين ميزة "عدم حفظ الصورة التعدادية"
+## Paso 4: habilite la función "No guardar viñeta de imagen"
 
-لتمكين ميزة "Do Not Save Picture Bullet" ، قمنا بالفعل بتكوين خيارات الحفظ مع تعيين SavePictureBullet على false. هذا يضمن عدم حفظ الصور النقطية في المستند النهائي.
+Para habilitar la función "No guardar viñeta de imagen", ya hemos configurado las opciones de guardado con SavePictureBullet establecido en falso. Esto garantiza que las viñetas de imagen no se guarden en el documento final.
 
-## الخطوة 5: احفظ المستند
+## Paso 5: Guarde el documento
 
-أخيرًا ، يمكنك حفظ المستند باستخدام طريقة Save لفئة Document. حدد المسار الكامل للملف واسم الملف المطلوب. على سبيل المثال :
+Finalmente, puede guardar el documento utilizando el método Guardar de la clase Documento. Especifique la ruta completa al archivo y el nombre de archivo deseado. Por ejemplo :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
-تأكد من استبدال "dataDir" بمسار الدليل إلى مستنداتك.
+Asegúrese de reemplazar "dataDir" con la ruta del directorio a sus documentos.
 
-## مثال على كود المصدر لـ DocSaveOptions حفظ الخيارات مع وظيفة "عدم حفظ الصورة" باستخدام Aspose.Words for .NET
+## Código fuente de ejemplo para las opciones de guardado de DocSaveOptions con la funcionalidad "No guardar viñeta de imagen" usando Aspose.Words para .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند باستخدام الصور النقطية
+// Cargue el documento con viñetas de imagen
 Document doc = new Document(dataDir + "Image bullet points.docx");
 
-// تكوين خيارات الحفظ مع ميزة "عدم حفظ الصورة"
+// Configure las opciones de guardado con la función "No guardar la viñeta de imagen"
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 
-// احفظ المستند بالخيارات المحددة
+// Guarde el documento con las opciones especificadas
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا الدليل ، تناولنا كيفية تعطيل حفظ الصور النقطية في مستند باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يمكن أن يكون تعطيل حفظ الصورة النقطية مفيدًا في بعض المواقف للحفاظ على بنية المستند وتنسيقه بدون حفظ الرموز النقطية للصورة.
+En esta guía, cubrimos cómo deshabilitar el guardado de viñetas de imágenes en un documento usando la biblioteca Aspose.Words para .NET. Si sigue los pasos proporcionados y usa el código fuente de C# provisto, puede aplicar fácilmente esta funcionalidad en su aplicación de C#. Deshabilitar el guardado de viñetas de imágenes puede ser útil en algunas situaciones para conservar la estructura y el formato del documento sin guardar las viñetas de imágenes.

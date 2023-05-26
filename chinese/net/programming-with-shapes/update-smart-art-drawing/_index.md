@@ -1,37 +1,37 @@
 ---
-title: تحديث الرسم الفني الذكي
-linktitle: تحديث الرسم الفني الذكي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديث الرسم الفني الذكي في مستند Word باستخدام Aspose.Words for .NET.
+title: 更新智能艺术绘图
+linktitle: 更新智能艺术绘图
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 更新 Word 文档中的 Smart Art 绘图。
 type: docs
 weight: 10
 url: /zh/net/programming-with-shapes/update-smart-art-drawing/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية تحديث الرسم الفني الذكي في مستند Word باستخدام Aspose.Words for .NET. من خلال التكرار خلال الأشكال في المستند والتحقق مما إذا كانت تحتوي على Smart Art ، يمكنك تحديث رسم Smart Art ليعكس أي تغييرات تم إجراؤها على بياناته.
+本教程介绍如何使用 Aspose.Words for .NET 更新 Word 文档中的 Smart Art 绘图。通过遍历文档中的形状并检查它们是否具有 Smart Art，您可以更新 Smart Art 绘图以反映对其数据所做的任何更改。
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## 先决条件
+要学习本教程，您需要具备以下条件：
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- 安装了 Aspose.Words for .NET 库。
+- C# 的基本知识和使用 Word 文档。
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## 第 1 步：设置文档目录
+首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`使用文档所在目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- قم بتحميل مستند Word الذي يحتوي على رسم Smart Art باستخدام ملف`Document` منشئ الطبقة.
+## 第 2 步：装入文档
+使用`Document`类构造函数。
 
 ```csharp
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
-## الخطوة 3: تحديث الرسم الفني الذكي
- كرر عبر الأشكال الموجودة في المستند باستخدام تنسيق`GetChildNodes` الطريقة مع`NodeType.Shape` معامل. تحقق مما إذا كان كل شكل يحتوي على Smart Art باستخدام ملف`HasSmartArt` الخاصية ، وإذا كان هذا صحيحًا ، فاتصل بـ`UpdateSmartArtDrawing` طريقة لتحديث الرسم الفني الذكي.
+## 第 3 步：更新智能艺术绘图
+使用`GetChildNodes`方法与`NodeType.Shape`范围。使用`HasSmartArt`属性，如果为真，则调用`UpdateSmartArtDrawing`更新 Smart Art 绘图的方法。
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
@@ -40,10 +40,10 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 
-### مثال على الكود المصدري لتحديث الرسم الفني الذكي باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 更新智能艺术绘图的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "SmartArt.docx");
@@ -52,4 +52,4 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 			shape.UpdateSmartArtDrawing();
 ```
 
-هذا كل شيء! لقد نجحت في تحديث رسم Smart Art في مستند Word باستخدام Aspose.Words for .NET.
+就是这样！您已经使用 Aspose.Words for .NET 成功更新了 Word 文档中的 Smart Art 绘图。

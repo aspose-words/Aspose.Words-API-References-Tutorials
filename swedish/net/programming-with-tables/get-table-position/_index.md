@@ -1,37 +1,37 @@
 ---
-title: الحصول على الجدول الموقف
-linktitle: الحصول على الجدول الموقف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على موضع الجدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Få bordsposition
+linktitle: Få bordsposition
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du får positionen för en tabell i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-tables/get-table-position/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية الحصول على موضع الجدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من الحصول على خصائص تحديد موضع الجدول في مستندات Word الخاصة بك برمجيًا.
+I den här handledningen ska vi lära oss hur man får positionen för en tabell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna få tabellpositioneringsegenskaper i dina Word-dokument programmatiskt.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Steg 1: Projektinställning
+1. Starta Visual Studio och skapa ett nytt C#-projekt.
+2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
-## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+## Steg 2: Ladda dokumentet och komma åt tabellen
+För att börja arbeta med tabellen måste vi ladda dokumentet som innehåller den och komma åt den. Följ dessa steg:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "Tables.docx");
 
-// الوصول إلى المصفوفة
+// Tillgång till arrayen
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات. تأكد أيضًا من احتواء المستند على الجدول الذي تريد الحصول على موضعه.
+Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog. Se också till att dokumentet innehåller tabellen vars position du vill få.
 
-## الخطوة 3: الحصول على خصائص وضع الصفيف
-بعد ذلك ، سوف نتحقق من نوع تحديد الموضع للمصفوفة ونحصل على خصائص تحديد الموضع المناسبة. استخدم الكود التالي:
+## Steg 3: Hämta egenskaper för arraypositionering
+Därefter kommer vi att kontrollera positioneringstypen för arrayen och få lämpliga positioneringsegenskaper. Använd följande kod:
 
 ```csharp
 if (table.TextWrapping == TextWrapping.Around)
@@ -45,12 +45,12 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- هنا نستخدم شرطًا للتحقق مما إذا كانت المصفوفة من النوع العائم. إذا كان الأمر كذلك ، فنحن نطبع ملف`RelativeHorizontalAlignment` و`RelativeVerticalAlignment` للحصول على المحاذاة النسبية الأفقية والعمودية للجدول. خلاف ذلك ، نقوم بطباعة ملف`Alignment` الخاصية للحصول على محاذاة الصفيف.
+ Här använder vi ett villkor för att kontrollera om arrayen är av floattyp. I så fall skriver vi ut`RelativeHorizontalAlignment` och`RelativeVerticalAlignment` egenskaper för att få tabellens relativa horisontella och vertikala inriktning. Annars skriver vi ut`Alignment` egenskap för att få arrayjusteringen.
 
-### عينة من التعليمات البرمجية المصدر لـ Get Table Position باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Get Table Position med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -66,5 +66,5 @@ Console.WriteLine(table.Alignment);
 	}
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية الحصول على موضع الجدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك الحصول على خصائص موضع الجدول في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة تحليل المصفوفات ومعالجتها وفقًا لمواضعها المحددة.
+## Slutsats
+den här handledningen lärde vi oss hur man får positionen för en tabell i ett Word-dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide och implementera den medföljande C#-koden kan du få tabellpositioneringsegenskaper i dina Word-dokument programmatiskt. Den här funktionen låter dig analysera och manipulera arrayer enligt deras specifika positioner.

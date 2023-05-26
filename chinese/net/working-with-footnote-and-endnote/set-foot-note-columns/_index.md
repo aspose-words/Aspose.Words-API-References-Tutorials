@@ -1,54 +1,54 @@
 ---
-title: تعيين أعمدة الملاحظات القدم
-linktitle: تعيين أعمدة الملاحظات القدم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين عدد الأعمدة للحواشي السفلية في مستندات Word باستخدام Aspose.Words for .NET.
+title: 设置脚注列
+linktitle: 设置脚注列
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 设置 Word 文档中脚注的列数。
 type: docs
 weight: 10
 url: /zh/net/working-with-footnote-and-endnote/set-foot-note-columns/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتعيين عدد الأعمدة للحواشي السفلية في مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+在本分步教程中，我们将指导您如何使用 Aspose.Words for .NET 设置 Word 文档中脚注的列数。我们将解释提供的 C# 源代码，并向您展示如何在您自己的项目中实现它。
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+开始之前，请确保您已经在开发环境中安装并设置了 Aspose.Words for .NET。如果您还没有这样做，请从官方网站下载并安装该库。
 
-## الخطوة 1: تهيئة كائن المستند
+## 第 1 步：初始化文档对象
 
- أولاً ، قم بتهيئة ملف`Document` من خلال توفير المسار إلى المستند المصدر:
+首先，初始化`Document`通过提供源文档的路径来反对：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## الخطوة 2: إعداد أعمدة الحواشي السفلية
+## 第 2 步：设置脚注列
 
- بعد ذلك ، قم بالوصول إلى`FootnoteOptions`خاصية المستند وتعيين`Columns` الخاصية لتحديد عدد أعمدة الحواشي السفلية. في هذا المثال ، قمنا بتعيينه على 3 أعمدة:
+接下来，访问`FootnoteOptions`文档的属性并设置`Columns`属性指定脚注的列数。在本例中，我们将其设置为 3 列：
 
 ```csharp
 doc.FootnoteOptions.Columns = 3;
 ```
 
-## الخطوة 3: حفظ المستند
+## 第 3 步：保存文档
 
-أخيرًا ، احفظ المستند المعدل:
+最后，保存修改后的文件：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootNoteColumns.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تعيين عدد الأعمدة للحواشي السفلية في مستند Word باستخدام Aspose.Words for .NET.
+就是这样！您已经使用 Aspose.Words for .NET 成功设置了 Word 文档中脚注的列数。
 
-### مثال على شفرة المصدر لـ Set Footnote Columns باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 设置脚注列的示例源代码
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 Document doc = new Document(dataDir + "Document.docx");
 
-// حدد عدد الأعمدة التي يتم بها تنسيق منطقة الحواشي السفلية.
+//指定用于格式化脚注区域的列数。
 doc.FootnoteOptions.Columns = 3;
 
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootNoteColumns.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+随意在您自己的项目中使用此代码，并根据您的特定要求对其进行修改。

@@ -1,39 +1,39 @@
 ---
-title: احصل على نقاط حدود الشكل الفعلي
-linktitle: احصل على نقاط حدود الشكل الفعلي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد الحدود الفعلية للشكل بالنقاط (وحدة القياس) في مستند Word باستخدام Aspose.Words for .NET.
+title: Obtenir des points de limites de forme réels
+linktitle: Obtenir des points de limites de forme réels
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à récupérer les limites réelles d'une forme en points (unité de mesure) dans un document Word à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استرداد الحدود الفعلية للشكل بالنقاط (وحدة القياس) في مستند Word باستخدام Aspose.Words for .NET. تمثل الحدود حجم وموضع الشكل داخل المستند.
+Ce didacticiel explique comment récupérer les limites réelles d'une forme en points (unité de mesure) dans un document Word à l'aide de Aspose.Words pour .NET. Les limites représentent la taille et la position de la forme dans le document.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Conditions préalables
+Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Bibliothèque Aspose.Words pour .NET installée.
+- Connaissance de base de C# et travail avec des documents Word.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Étape 1 : créer un nouveau document et DocumentBuilder
+ Créez une nouvelle instance de`Document` classe et une`DocumentBuilder` objet de travailler avec le document.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل شكل صورة
- استخدم ال`InsertImage` طريقة`DocumentBuilder` كائن لإدراج شكل صورة في المستند. قم بتوفير المسار لملف الصورة كمعامل.
+## Étape 2 : Insérer une forme d'image
+ Utilisez le`InsertImage` méthode de la`DocumentBuilder` objet pour insérer une forme d'image dans le document. Indiquez le chemin d'accès au fichier image en tant que paramètre.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
 shape.AspectRatioLocked = false;
 ```
 
-## الخطوة 3: استرجع نقاط حدود الشكل الفعلية
- الوصول إلى الأشكال`ShapeRenderer` باستخدام`GetShapeRenderer`طريقة. ثم استرجع الحدود الفعلية للشكل بالنقاط باستخدام`BoundsInPoints` ملكية.
+## Étape 3 : Récupérer les points de limites de forme réels
+ Accéder à la forme`ShapeRenderer` en utilisant le`GetShapeRenderer`méthode. Ensuite, récupérez les limites réelles de la forme en points à l'aide de la`BoundsInPoints` propriété.
 
 ```csharp
 Console.Write("\nGets the actual bounds of the shape in points: ");
@@ -41,7 +41,7 @@ Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
 
-### مثال على شفرة المصدر للحصول على نقاط حدود الشكل الفعلية باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Get Actual Shape Bounds Points à l'aide de Aspose.Words pour .NET 
 
 ```csharp
 	Document doc = new Document();
@@ -52,4 +52,4 @@ Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 	Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
-هذا كل شيء! لقد نجحت في استرداد الحدود الفعلية للشكل بالنقاط في مستند Word باستخدام Aspose.Words for .NET.
+C'est ça! Vous avez récupéré avec succès les limites réelles d'une forme en points dans votre document Word à l'aide de Aspose.Words pour .NET.

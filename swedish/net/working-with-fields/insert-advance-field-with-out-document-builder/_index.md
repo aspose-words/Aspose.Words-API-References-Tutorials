@@ -1,41 +1,41 @@
 ---
-title: أدخل الحقل المتقدم بدون Document Builder
-linktitle: أدخل الحقل المتقدم بدون Document Builder
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل متقدم في مستندات Word باستخدام Aspose.Words for .NET.
+title: Infoga avancerat fält utan dokumentbyggare
+linktitle: Infoga avancerat fält utan dokumentbyggare
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar ett avancerat fält i dina Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/insert-advance-field-with-out-document-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج حقل متقدم بدون DocumentBuilder" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som använder funktionen "Advanced Field Insertion without DocumentBuilder" i Aspose.Words för .NET. Se till att följa varje steg noggrant för att få önskat resultat.
 
-## الخطوة 1: إعداد دليل المستند
+## Steg 1: Installation av dokumentkatalog
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## Steg 2: Skapa dokumentet och stycket
 
-نبدأ بإنشاء مستند جديد وجلب الفقرة الأولى.
+Vi börjar med att skapa ett nytt dokument och hämta första stycket.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## الخطوة 3: إدخال الحقل المتقدم
+## Steg 3: Infoga det avancerade fältet
 
- نحن نستخدم ال`AppendField()`طريقة لإدراج حقل متقدم في الفقرة.
+ Vi använder`AppendField()`metod för att infoga ett avancerat fält i stycket.
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 ```
 
-ثم نقوم بتكوين الخصائص المختلفة للحقل المتقدم من خلال تحديد القيم المطلوبة.
+Vi konfigurerar sedan de olika egenskaperna för det avancerade fältet genom att ange önskade värden.
 
 ```csharp
 field. DownOffset = "10";
@@ -46,23 +46,23 @@ field.HorizontalPosition = "100";
 field. VerticalPosition = "100";
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Slutligen kallar vi`Update()` metod för att uppdatera fältet.
 
 ```csharp
 field. Update();
 ```
 
-### مثال على الكود المصدري لإدخال حقل متقدم بدون DocumentBuilder مع Aspose.Words for .NET
+### Exempel på källkoden för att infoga ett avancerat fält utan DocumentBuilder med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة.
+// Skapande av dokument.
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-// أدخل الحقل المتقدم.
+// Infoga det avancerade fältet.
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 
 field. DownOffset = "10";
@@ -77,7 +77,7 @@ field. Update();
 doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأدخلنا حقلاً متقدمًا دون استخدام DocumentBuilder ، وقمنا بتكوين خصائص الحقل المختلفة ، وحفظنا المستند باسم ملف محدد.
+I det här exemplet skapade vi ett nytt dokument, infogade ett avancerat fält utan att använda DocumentBuilder, konfigurerade de olika fältegenskaperna och sparade dokumentet med ett angivet filnamn.
 
-هذا يختتم دليلنا حول كيفية استخدام ميزة "إدراج حقل متقدم بدون DocumentBuilder" مع Aspose.Words for .NET.
+Detta avslutar vår guide om hur man använder funktionen "Infoga avancerat fält utan DocumentBuilder" med Aspose.Words för .NET.
 

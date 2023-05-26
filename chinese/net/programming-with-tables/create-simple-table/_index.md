@@ -1,108 +1,108 @@
 ---
-title: إنشاء جدول بسيط
-linktitle: إنشاء جدول بسيط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء جدول بسيط في مستند Word باستخدام Aspose.Words for .NET.
+title: 创建简单表
+linktitle: 创建简单表
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建一个简单的表格。
 type: docs
 weight: 10
 url: /zh/net/programming-with-tables/create-simple-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إنشاء جدول بسيط في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من إنشاء جداول مخصصة في مستندات Word الخاصة بك برمجيًا.
+在本教程中，我们将学习如何使用 Aspose.Words for .NET 在 Word 文档中创建一个简单的表格。我们将按照逐步指南来理解代码并实现此功能。在本教程结束时，您将能够以编程方式在 Word 文档中创建自定义表格。
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## 第 1 步：项目设置
+1. 启动 Visual Studio 并创建一个新的 C# 项目。
+2. 添加对 Aspose.Words for .NET 库的引用。
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء بناء الجدول ، نحتاج إلى إنشاء مستند جديد وتهيئة منشئ المستندات. اتبع هذه الخطوات:
+## 第 2 步：创建文档并初始化文档生成器
+要开始构建表，我们需要创建一个新文档并初始化文档构建器。按着这些次序：
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وتهيئة منشئ المستند
+//创建文档并初始化文档生成器
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+请务必将“您的文档目录”替换为您的文档目录的实际路径。
 
-## الخطوة 3: بناء المصفوفة
-بعد ذلك ، سنبني الجدول باستخدام الطرق التي يوفرها منشئ المستندات. استخدم الكود التالي:
+## 第 3 步：构建数组
+接下来，我们将使用文档生成器提供的方法来构建表。使用以下代码：
 
 ```csharp
-// ابدأ بناء المصفوفة
+//开始阵列构建
 builder. StartTable();
 
-// بناء الخلية الأولى من الصف الأول
+//第一行第一个单元格的构建
 builder. InsertCell();
 builder.Write("Contents of cell 1 of row 1.");
 
-// بناء الخلية الثانية من الصف الأول
+//第一行第二个单元格的构造
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//اتصل بالطريقة التالية لإنهاء السطر الأول وبدء سطر جديد
+//调用以下方法结束第一行并开始新行
 builder. EndRow();
 
-// بناء الخلية الأولى للصف الثاني
+//第二行第一个单元格的构建
 builder. InsertCell();
 builder.Write("Contents of cell 1 of row 2.");
 
-// بناء الخلية الثانية للصف الثاني
+//第二行第二个单元格的构造
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 2.");
 
-// اتصل بالطريقة التالية لإنهاء السطر الثاني
+//调用next方法结束第二行
 builder. EndRow();
 
-// الإشارة إلى أن بناء الجدول قد اكتمل
+//表的构建完成的指示
 builder. EndTable();
 ```
 
- هنا نستخدم منشئ المستندات لبناء الجدول خطوة بخطوة. نبدأ بالاتصال`StartTable()` لتهيئة الجدول ، ثم استخدم`InsertCell()` لإدراج الخلايا و`Write()` لإضافة محتوى إلى كل خلية. نحن نستخدم أيضا`EndRow()` لإنهاء صف وبدء صف جديد. أخيرا ، نحن ندعو`EndTable()` للإشارة إلى اكتمال بناء الجدول.
+这里我们使用文档生成器一步步建表。我们首先调用`StartTable()`初始化表，然后使用`InsertCell()`插入单元格和`Write()`向每个单元格添加内容。我们也用`EndRow()`结束一行并开始新的一行。最后，我们调用`EndTable()`表示表构建完成。
 
-## الخطوة 4: احفظ المستند
-أخيرًا ، نحن بحاجة إلى الحفظ
+## 第 4 步：保存文档
+最后，我们需要保存
 
-  المستند مع الجدول الذي تم إنشاؤه. استخدم الكود التالي:
+  包含已创建表格的文档。使用以下代码：
 
 ```csharp
-// احفظ المستند
+//保存文件
 doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+请务必为输出文档指定正确的路径和文件名。
 
-### نموذج التعليمات البرمجية المصدر لـ Create Simple Table باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 创建简单表格的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// ابدأ في بناء الطاولة.
+	//开始建表。
 	builder.StartTable();
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 1 Content.");
-	// قم ببناء الخلية الثانية.
+	//建造第二个牢房。
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 2 Content.");
-	// اتصل بالطريقة التالية لإنهاء الصف وبدء صف جديد.
+	//调用以下方法结束行并开始新行。
 	builder.EndRow();
-	// قم ببناء الخلية الأولى من الصف الثاني.
+	//构建第二行的第一个单元格。
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 1 Content");
-	// قم ببناء الخلية الثانية.
+	//建造第二个牢房。
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//إشارة إلى أننا انتهينا من بناء الطاولة.
+	//表示我们已经完成构建表。
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول بسيط في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ رمز C # المقدم ، يمكنك إنشاء جداول مخصصة في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة تنسيق بياناتك وتنظيمها بطريقة منظمة وواضحة.
+## 结论
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 在 Word 文档中创建一个简单的表格。通过遵循此分步指南并实施提供的 C# 代码，您可以以编程方式在 Word 文档中创建自定义表格。此功能允许您以结构化和清晰的方式格式化和组织数据。

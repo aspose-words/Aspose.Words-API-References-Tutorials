@@ -1,29 +1,29 @@
 ---
-title: تطبيق الحدود والتظليل على الفقرة
-linktitle: تطبيق الحدود والتظليل على الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق الحدود والتظليل على فقرة باستخدام Aspose.Words for .NET.
+title: Применение границ и заливки к абзацу
+linktitle: Применение границ и заливки к абзацу
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как применить границы и затенение к абзацу с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية تطبيق الحدود والتظليل على فقرة باستخدام وظيفة Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر وتطبيق تغييرات التنسيق.
+В этом уроке мы покажем вам, как применить границы и затенение к абзацу, используя функциональные возможности Aspose.Words для .NET. Выполните следующие шаги, чтобы понять исходный код и применить изменения форматирования.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Шаг 1: Создание и настройка документа
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Для начала создайте новый документ и связанный с ним объект DocumentBuilder. Вот как:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الحدود
+## Шаг 2: Настройка границы
 
-لنقم الآن بتكوين حدود الفقرة عن طريق تحديد نمط الحدود لكل جانب. إليك الطريقة:
+Теперь давайте настроим границы абзаца, указав стиль границы для каждой стороны. Вот как:
 
 ```csharp
 BorderCollection borders = builder.ParagraphFormat.Borders;
@@ -34,9 +34,9 @@ borders[BorderType.Top].LineStyle = LineStyle.Double;
 borders[BorderType.Bottom].LineStyle = LineStyle.Double;
 ```
 
-## الخطوة 3: إعداد الملء
+## Шаг 3: Настройка заполнения
 
-سنقوم الآن بتكوين تعبئة الفقرة عن طريق تحديد النسيج وألوان التعبئة. إليك الطريقة:
+Теперь мы настроим заливку абзаца, указав текстуру и цвета заливки. Вот как:
 
 ```csharp
 Shading shading = builder.ParagraphFormat.Shading;
@@ -45,29 +45,29 @@ shading.BackgroundPatternColor = System.Drawing.Color.LightCoral;
 shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 ```
 
-## الخطوة 4: أضف محتوى
+## Шаг 4: Добавьте контент
 
-سنقوم بإضافة بعض المحتوى المنسق إلى الفقرة. إليك الطريقة:
+Мы собираемся добавить в абзац некоторый форматированный контент. Вот как:
 
 ```csharp
 builder.Write("I'm a formatted paragraph with a double border and a nice shading.");
 ```
 
-## الخطوة 3: حفظ المستند
+## Шаг 3: Сохранение документа
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ После вставки поля формы ввода текста сохраните документ в нужное место с помощью кнопки`Save` метод. Обязательно укажите правильный путь к файлу:
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ```
 
-### مثال على الكود المصدري لتطبيق الحدود والتظليل على الفقرة باستخدام Aspose.Words for .NET
+### Пример исходного кода для применения границ и заливки к абзацу с использованием Aspose.Words для .NET
 
-فيما يلي رمز المصدر الكامل لميزة "تطبيق الحدود والتظليل على الفقرة" باستخدام Aspose.Words for .NET:
+Вот полный исходный код для функции «Применить границы» и «Затенение абзаца» с помощью Aspose.Words для .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Путь к каталогу документов.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);

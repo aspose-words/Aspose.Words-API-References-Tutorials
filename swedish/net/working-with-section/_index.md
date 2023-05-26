@@ -1,30 +1,30 @@
 ---
-title: العمل مع القسم
-linktitle: العمل مع القسم
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على قسم إضافة ، وحذف قسم ، وحذف جميع الأقسام ، وإلحاق محتوى القسم ، وقسم استنساخ ، وقسم نسخ ، وحذف محتوى تذييل الصفحة ، وحذف محتوى القسم ، وتعديل إعداد الصفحة في جميع الأقسام والأقسام ، والوصول إلى الفهرس باستخدام Aspose.Words for .NET.
+title: Arbeta med sektion
+linktitle: Arbeta med sektion
+second_title: Aspose.Words för .NET API Referens
+description: Handledningarna innehåller lägg till sektion, ta bort sektion, ta bort alla sektioner, lägg till sektionsinnehåll, klona sektion, kopiera sektion, ta bort sidhuvudinnehåll, ta bort sektionsinnehåll, ändra sidinställningar i alla sektioner och sektionsåtkomst genom att indexera med Aspose.Words för .NET.
 type: docs
 weight: 1220
 url: /sv/net/working-with-section/
 ---
-يوفر العمل مع الأقسام مورداً قيماً للمطورين الراغبين في إتقان العمل مع الأقسام في مستندات Word. توفر هذه البرامج التعليمية إرشادات خطوة بخطوة ، ونموذج التعليمات البرمجية ، وشروحات خطوة بخطوة لمساعدتك على فهم الميزات المتعلقة بالقسم واستخدامها بشكل فعال في Aspose.Words.
+Att arbeta med sektioner är en värdefull resurs för utvecklare som vill bemästra arbetet med sektioner i Word-dokument. Dessa handledningar ger steg-för-steg-instruktioner, exempelkod och steg-för-steg-förklaringar för att hjälpa dig att förstå och effektivt använda avsnittsrelaterade funktioner i Aspose.Words.
 
-تغطي البرامج التعليمية أساسيات العمل مع الأقسام ، بما في ذلك إنشاء أقسام جديدة وإضافة محتوى وتغيير إعدادات التخطيط والمزيد. ستتعلم كيفية التعامل مع الأقسام لتخصيص بنية المستند وإنشاء تخطيطات احترافية.
+Handledningarna täcker grunderna för att arbeta med sektioner, inklusive att skapa nya sektioner, lägga till innehåll, ändra layoutinställningar och mer. Du kommer att lära dig hur du manipulerar avsnitt för att anpassa din dokumentstruktur och skapa professionella layouter.
 
-تركز البرامج التعليمية أيضًا على حذف وتعديل الأقسام الموجودة. ستتعلم كيفية حذف أقسام معينة ، وإعادة ترتيب الأقسام ، وتغيير إعدادات التخطيط ، وتنفيذ عمليات متقدمة أخرى لتخصيص مستندات Word الخاصة بك وفقًا لاحتياجاتك الخاصة.
+Handledningarna fokuserar också på att ta bort och ändra befintliga avsnitt. Du kommer att lära dig hur du tar bort specifika avsnitt, ordnar om avsnitt, ändrar layoutinställningar och utför andra avancerade operationer för att skräddarsy dina Word-dokument efter dina specifika behov.
 
-باتباع هذه البرامج التعليمية ، ستتمكن من إدارة الأقسام في مستندات Word بسهولة باستخدام Aspose.Words for .NET. سواء كنت ترغب في إنشاء مستندات جديدة أو تعديل مستندات موجودة أو تخصيص أقسام ، فإن هذه البرامج التعليمية ستزودك بالمعرفة والمهارات اللازمة لإنجاز هذه المهام بنجاح.
+Genom att följa dessa tutorials kommer du att kunna hantera avsnitt i dina Word-dokument med lätthet med Aspose.Words för .NET. Oavsett om du vill skapa nya dokument, modifiera befintliga dokument eller anpassa avsnitt, kommer dessa handledningar att ge dig kunskap och färdigheter för att utföra dessa uppgifter framgångsrikt.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [إضافة قسم](./add-section/) | في هذا البرنامج التعليمي ، تعرف على كيفية إضافة قسم إلى مستند Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة لهيكلة المستند الخاص بك. |
-| [حذف القسم](./delete-section/) | في هذا البرنامج التعليمي ، تعرف على كيفية إزالة قسم معين من مستند Word باستخدام Aspose.Words for .NET. |
-| [حذف كافة الأقسام](./delete-all-sections/) | في هذا البرنامج التعليمي ، تعرف على كيفية إزالة جميع الأقسام من مستند Word باستخدام Aspose.Words for .NET. |
-| [إلحاق محتوى القسم](./append-section-content/) | في هذا البرنامج التعليمي ، تعرف على كيفية إضافة محتوى إلى أقسام معينة من مستند Word باستخدام Aspose.Words for .NET.  |
-| [قسم الاستنساخ](./clone-section/) | في هذا البرنامج التعليمي ، تعرف على كيفية استنساخ قسم في مستند Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [قسم النسخ](./copy-section/) | في هذا البرنامج التعليمي ، تعرف على كيفية نسخ قسم من مستند Word إلى مستند آخر باستخدام Aspose.Words for .NET. |
-| [حذف محتوى رأس التذييل](./delete-header-footer-content/) | في هذا البرنامج التعليمي ، تعرف على كيفية إزالة محتوى الرأس والتذييل من مستند Word باستخدام Aspose.Words for .NET.  |
-| [حذف محتوى القسم](./delete-section-content/) | في هذا البرنامج التعليمي ، تعرف على كيفية حذف المحتوى من قسم معين من مستند Word باستخدام Aspose.Words for .NET. |
-| [تعديل إعداد الصفحة في جميع الأقسام](./modify-page-setup-in-all-sections/) | في هذا البرنامج التعليمي ، تعرف على كيفية تعديل إعداد الصفحة في جميع أقسام مستند Word باستخدام Aspose.Words for .NET. |
-| [الوصول إلى الأقسام حسب الفهرس](./sections-access-by-index/) | في هذا البرنامج التعليمي ، تعرف على كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس وتغيير إعداداتها باستخدام Aspose.Words for .NET. |
+| [Lägg till avsnitt](./add-section/) | I den här självstudien lär du dig hur du lägger till ett avsnitt i ett Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide för att strukturera ditt dokument. |
+| [Ta bort avsnitt](./delete-section/) | I den här självstudien lär du dig hur du tar bort ett specifikt avsnitt från ett Word-dokument med Aspose.Words för .NET. |
+| [Ta bort alla avsnitt](./delete-all-sections/) | I den här handledningen lär du dig hur du tar bort alla avsnitt från ett Word-dokument med Aspose.Words för .NET. |
+| [Lägg till avsnittsinnehåll](./append-section-content/) | I den här handledningen lär du dig hur du lägger till innehåll i specifika delar av ett Word-dokument med Aspose.Words för .NET.  |
+| [Klonsektion](./clone-section/) | den här handledningen lär du dig hur du klona ett avsnitt i ett Word-dokument med Aspose.Words för .NET. Steg för steg guide. |
+| [Kopiera avsnitt](./copy-section/) | I den här handledningen lär du dig hur du kopierar ett avsnitt från ett Word-dokument till ett annat dokument med Aspose.Words för .NET. |
+| [Ta bort innehåll i sidhuvud](./delete-header-footer-content/) | I den här handledningen lär du dig hur du tar bort sidhuvud och sidfotsinnehåll från ett Word-dokument med Aspose.Words för .NET.  |
+| [Ta bort avsnittsinnehåll](./delete-section-content/) | I den här handledningen lär du dig hur du tar bort innehåll från en specifik del av ett Word-dokument med Aspose.Words för .NET. |
+| [Ändra sidinställningar i alla avsnitt](./modify-page-setup-in-all-sections/) | I den här handledningen lär du dig hur du ändrar sidinställningarna i alla delar av ett Word-dokument med Aspose.Words för .NET. |
+| [Avsnitt Åtkomst via index](./sections-access-by-index/) | I den här handledningen lär du dig hur du kommer åt delar av ett Word-dokument genom att indexera och ändrar deras inställningar med Aspose.Words för .NET. |

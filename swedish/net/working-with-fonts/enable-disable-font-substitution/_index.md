@@ -1,57 +1,57 @@
 ---
-title: قم بتمكين تعطيل استبدال الخط
-linktitle: قم بتمكين تعطيل استبدال الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تمكين أو تعطيل استبدال الخط في مستند Word باستخدام Aspose.Words for .NET.
+title: Aktivera Inaktivera teckensnittsersättning
+linktitle: Aktivera Inaktivera teckensnittsersättning
+second_title: Aspose.Words för .NET API Referens
+description: I den här handledningen lär du dig hur du aktiverar eller inaktiverar teckensnittsersättning i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/enable-disable-font-substitution/
 ---
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تمكين أو تعطيل استبدال الخط في مستند Word عند عرضه باستخدام مكتبة Aspose.Words لـ .NET. يتيح لك تمكين أو تعطيل استبدال الخط التحكم في ما إذا كان سيتم استبدال الخطوط المفقودة تلقائيًا بخط افتراضي. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+den här handledningen går vi igenom hur du aktiverar eller inaktiverar teckensnittsersättning i ett Word-dokument när du renderar det med Aspose.Words-biblioteket för .NET. Genom att aktivera eller inaktivera teckensnittsersättning kan du kontrollera om saknade teckensnitt automatiskt ersätts med ett standardteckensnitt. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word الذي تريد عرضه باستبدال الخط أو بدونه
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
+- Ett Word-dokument som du vill rendera med eller utan teckensnittsersättning
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+ Först måste du ställa in katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند وتكوين إعدادات الخط
- بعد ذلك ، سنقوم بتحميل مستند Word الذي تريد عرضه وإنشاء مثيل لملف`FontSettings` فئة للتعامل مع إعدادات الخط. سنقوم بتعيين تجاوز الخط الافتراضي عن طريق تحديد اسم الخط في`DefaultFontName` وتعطيل تجاوز معلومات الخط بـ`Enabled` ضبط ل`false`.
+## Steg 2: Ladda upp dokumentet och konfigurera teckensnittsinställningarna
+ Därefter laddar vi Word-dokumentet du vill rendera och skapar en instans av`FontSettings` klass för att hantera teckensnittsinställningarna. Vi ställer in standardtypsnittets åsidosättande genom att ange teckensnittsnamnet i`DefaultFontName` och inaktivera åsidosättande av teckensnittsinformation med`Enabled` satt till`false`.
 
 ```csharp
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "Rendering.docx");
 
-// تكوين إعدادات الخط
+// Konfigurera teckensnittsinställningar
 FontSettings fontSettings = new FontSettings();
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
 fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
 
-// قم بتطبيق إعدادات الخط على المستند
+// Tillämpa teckensnittsinställningarna på dokumentet
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 3: احفظ المستند المقدم
-أخيرًا ، سنحفظ المستند الذي تم تقديمه ، والذي سيحترم إعدادات تجاوز الخط المحددة.
+## Steg 3: Spara det renderade dokumentet
+Slutligen kommer vi att spara det renderade dokumentet, vilket kommer att respektera de definierade inställningarna för teckensnittsåsidosättning.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 
-### نموذج التعليمات البرمجية المصدر لـ Enable Disable Font Substitution باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Aktivera inaktivera teckensnittsersättning med Aspose.Words för .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -63,5 +63,5 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تمكين أو تعطيل استبدال الخط في مستند Word عند عرضه باستخدام Aspose.Words for .NET. من خلال التحكم في استبدال الخط ، يمكنك التأثير على كيفية معالجة الخطوط المفقودة في المستندات المقدمة. لا تتردد في استخدام هذه الميزة لتخصيص إدارة الخطوط في مستندات Word الخاصة بك.
+## Slutsats
+I den här handledningen såg vi hur du aktiverar eller inaktiverar teckensnittsersättning i ett Word-dokument när du renderar det med Aspose.Words för .NET. Genom att kontrollera teckensnittsersättning kan du påverka hur saknade teckensnitt hanteras i dina renderade dokument. Tveka inte att använda den här funktionen för att anpassa hanteringen av teckensnitt i dina Word-dokument.

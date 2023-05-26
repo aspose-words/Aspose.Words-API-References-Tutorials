@@ -1,51 +1,51 @@
 ---
-title: قم بتحميل إعدادات Noto Fallback
-linktitle: قم بتحميل إعدادات Noto Fallback
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تحميل Noto override parameters في مستند Word باستخدام Aspose.Words for .NET.
+title: Carica le impostazioni di fallback Noto
+linktitle: Carica le impostazioni di fallback Noto
+second_title: Riferimento all'API Aspose.Words per .NET
+description: In questo tutorial, scopri come caricare i parametri di override Noto in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/load-noto-fallback-settings/
 ---
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تحميل إعدادات استبدال خط Noto في مستند Word باستخدام Aspose.Words Library for .NET. تسمح لك إعدادات Noto Font Substitution بإدارة استبدال الخطوط عند عرض المستندات أو طباعتها. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In questo tutorial, ti illustreremo come caricare le impostazioni di sostituzione dei caratteri Noto in un documento Word utilizzando Aspose.Words Library per .NET. Le impostazioni di Noto Font Substitution consentono di gestire la sostituzione dei font durante la visualizzazione o la stampa dei documenti. Ti guideremo passo dopo passo per aiutarti a comprendere e implementare il codice nel tuo progetto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti elementi:
+- Conoscenza operativa del linguaggio di programmazione C#
+- La libreria Aspose.Words per .NET installata nel tuo progetto
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+ Innanzitutto, devi impostare il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وتكوين إعدادات استبدال الخط
- بعد ذلك ، سنقوم بتحميل المستند باستخدام ملف`Document` class وتكوين إعدادات تجاوز الخط باستخدام ملف`FontSettings` فصل. سنقوم بتحميل الإعدادات الاحتياطية لخط Noto باستخدام ملف`LoadNotoFallbackSettings()` طريقة.
+## Passaggio 2: caricare il documento e configurare le impostazioni di sostituzione dei caratteri
+ Successivamente, caricheremo il documento utilizzando il file`Document` class e configurare le impostazioni di sovrascrittura dei caratteri utilizzando il file`FontSettings` classe. Caricheremo le impostazioni di fallback del font Noto usando il file`LoadNotoFallbackSettings()` metodo.
 
 ```csharp
-// قم بتحميل المستند وتكوين إعدادات استبدال الخط
+// Carica il documento e configura le impostazioni di sostituzione dei caratteri
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.LoadNotoFallbackSettings();
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 3: احفظ المستند
-أخيرًا ، سنقوم بحفظ المستند مع تطبيق إعدادات استبدال الخط Noto.
+## Passaggio 3: salvare il documento
+Infine, salveremo il documento con le impostazioni di sostituzione del carattere Noto applicate.
 
 ```csharp
-// احفظ المستند
+// Salva il documento
 doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 ```
 
 
-### عينة من التعليمات البرمجية المصدر لإعدادات Noto Fallback باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Noto Fallback Settings utilizzando Aspose.Words per .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -56,5 +56,5 @@ doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تحميل إعدادات استبدال خط Noto في مستند Word باستخدام Aspose.Words for .NET. تسمح لك إعدادات استبدال الخط Noto بإدارة استبدال الخط لتحسين عرض وطباعة مستنداتك. لا تتردد في استخدام هذه الميزة لتخصيص استبدال الخط لاحتياجاتك.
+## Conclusione
+In questo tutorial, abbiamo visto come caricare le impostazioni di sostituzione dei caratteri Noto in un documento Word con Aspose.Words per .NET. Le impostazioni di sostituzione dei caratteri di Noto ti consentono di gestire la sostituzione dei caratteri per migliorare la visualizzazione e la stampa dei tuoi documenti. Sentiti libero di utilizzare questa funzione per personalizzare la sostituzione dei caratteri in base alle tue esigenze.

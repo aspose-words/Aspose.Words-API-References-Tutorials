@@ -1,29 +1,29 @@
 ---
-title: إدراج صورة عائمة
-linktitle: إدراج صورة عائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الصور العائمة في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Schwebendes Bild einfügen
+linktitle: Schwebendes Bild einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET schwebende Bilder in Word-Dokumente einfügen. Schritt für Schritt Anleitung.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/insert-floating-image/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج صورة عائمة في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إضافة صور مع خيارات تحديد الموضع والتفاف القابلة للتخصيص إلى مستنداتك.
+In diesem umfassenden Beispiel erfahren Sie, wie Sie mit Aspose.Words für .NET ein schwebendes Bild in ein Word-Dokument einfügen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieser Anleitung werden Sie in der Lage sein, Bilder mit anpassbaren Positionierungs- und Umbruchoptionen zu Ihren Dokumenten hinzuzufügen.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Schritt 1: Erstellen Sie ein neues Dokument und einen neuen DocumentBuilder
+Erstellen Sie zunächst ein neues Dokument mit der Document-Klasse und initialisieren Sie ein DocumentBuilder-Objekt:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل صورة عائمة
-بعد ذلك ، استخدم طريقة InsertImage لفئة DocumentBuilder لإدراج صورة عائمة. قم بتوفير مسار ملف الصورة والموضع الأفقي والرأسي النسبي والعرض والارتفاع وخيارات الالتفاف كمعلمات:
+## Schritt 2: Fügen Sie ein schwebendes Bild ein
+Als nächstes verwenden Sie die InsertImage-Methode der DocumentBuilder-Klasse, um ein schwebendes Bild einzufügen. Geben Sie den Pfad der Bilddatei, die relative horizontale und vertikale Position, Breite, Höhe und Umbruchoptionen als Parameter an:
 
 ```csharp
 builder.InsertImage(ImagesDir + "Transparent background logo.png",
@@ -36,16 +36,16 @@ builder.InsertImage(ImagesDir + "Transparent background logo.png",
 	WrapType.Square);
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الصورة العائمة ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Schritt 3: Speichern Sie das Dokument
+Nachdem Sie das schwebende Bild eingefügt haben, speichern Sie das Dokument mit der Save-Methode der Document-Klasse in einer Datei:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
 ```
 
-## مثال على كود المصدر لإدراج صورة عائمة باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لإدخال صورة عائمة باستخدام Aspose.Words for .NET:
-تعد الصور العائمة مفيدة لسيناريوهات مختلفة ، مثل إضافة الشعارات أو الرسوم التوضيحية أو العناصر الزخرفية التي يمكن وضعها بشكل مستقل عن نص المستند.
+## Beispielquellcode zum Einfügen eines schwebenden Bildes mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode zum Einfügen eines schwebenden Bildes mit Aspose.Words für .NET:
+Schwebende Bilder sind für verschiedene Szenarien nützlich, beispielsweise zum Hinzufügen von Logos, Illustrationen oder dekorativen Elementen, die unabhängig vom Text des Dokuments positioniert werden können.
 
 ```csharp
 
@@ -65,8 +65,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx
 	
 ```
 
-تذكر أن تقوم بضبط الكود وفقًا لمتطلباتك المحددة ، بما في ذلك مسار ملف الصورة وخيارات الموضع والالتفاف المطلوبة.
+Denken Sie daran, den Code entsprechend Ihren spezifischen Anforderungen anzupassen, einschließlich des Bilddateipfads und der gewünschten Positionierungs- und Umbruchoptionen.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج صورة عائمة في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك بصور عائمة جذابة وقابلة للتخصيص.
+## Abschluss
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET ein schwebendes Bild in ein Word-Dokument einfügen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie Ihre Dokumente jetzt mit optisch ansprechenden und anpassbaren schwebenden Bildern verbessern.
 

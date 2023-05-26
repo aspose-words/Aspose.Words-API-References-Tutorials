@@ -1,36 +1,36 @@
 ---
-title: أضف اليابانية كلغات تحرير
-linktitle: أضف اليابانية كلغات تحرير
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإضافة اليابانية كلغة تحرير باستخدام Aspose.Words for .NET.
+title: Lägg till japanska som redigeringsspråk
+linktitle: Lägg till japanska som redigeringsspråk
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att lägga till japanska som redigeringsspråk med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-document-options-and-settings/add-japanese-as-editing-languages/
 ---
 
-في هذا البرنامج التعليمي ، سوف نأخذك خطوة بخطوة لفهم وتنفيذ وظيفة إضافة اللغة اليابانية كلغة تحرير باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة ضبط تفضيلات اللغة عند تحميل مستند وإضافة اليابانية كلغة تحرير.
+den här handledningen tar vi dig steg för steg för att förstå och implementera funktionen för att lägga till japanska som redigeringsspråk med Aspose.Words för .NET. Med den här funktionen kan du ställa in språkinställningar när du laddar ett dokument och lägga till japanska som redigeringsspråk.
 
-## الخطوة 1: إعداد المشروع
+## Steg 1: Projektinställning
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
 
-## الخطوة الثانية: تحميل المستند
+## Steg 2: Ladda dokumentet
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي لا يحتوي على لغة تحرير افتراضية والتي نريد إضافة اللغة اليابانية إليها. استخدم الكود التالي لتحميل المستند:
+I det här steget kommer vi att ladda Word-dokumentet som inte innehåller ett standardredigeringsspråk och som vi vill lägga till japanska. Använd följande kod för att ladda dokumentet:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 
-// قم بتعيين تفضيلات اللغة التي سيتم استخدامها عند تحميل المستند.
+// Ställ in de språkinställningar som ska användas när dokumentet laddas.
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 ```
 
-## الخطوة 3: التحقق من اللغة الافتراضية
+## Steg 3: Kontrollera standardspråket
 
-بعد تحميل المستند ، سنتحقق مما إذا كانت لغة التحرير الافتراضية قد تم ضبطها بشكل صحيح على اليابانية. استخدم الكود التالي للحصول على معرف لغة الشرق الأقصى:
+Efter att ha laddat dokumentet kommer vi att kontrollera om standardredigeringsspråket är korrekt inställt på japanska. Använd följande kod för att få Fjärranösterns språk-ID:
 
 ```csharp
 int localeIdFarEast = doc.Styles.DefaultFont.LocaleIdFarEast;
@@ -40,18 +40,18 @@ Console.WriteLine(
 		: "The document default FarEast language was set to another than Japanese language originally, so it is not overridden.");
 ```
 
-يتحقق الكود مما إذا كان معرف لغة الشرق الأقصى يطابق معرف اللغة اليابانية. وفقًا للنتيجة ، فإنه يعرض رسالة مقابلة.
+Koden kontrollerar om språk-ID:t för Fjärran Östern matchar japanska. Enligt resultatet visas ett motsvarande meddelande.
 
-### مثال على شفرة المصدر لإضافة اليابانية كلغات تحرير باستخدام Aspose.Words for .NET
+### Exempel på källkod för Lägg till japanska som redigeringsspråk med Aspose.Words för .NET
 
 ```csharp
 
 	LoadOptions loadOptions = new LoadOptions();
 	
-	// قم بتعيين تفضيلات اللغة التي سيتم استخدامها عند تحميل المستند.
+	// Ställ in språkinställningar som kommer att användas när dokumentet laddas.
 	loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 	
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 

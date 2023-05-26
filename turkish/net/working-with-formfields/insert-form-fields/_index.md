@@ -1,46 +1,46 @@
 ---
-title: أدخل حقول النموذج
-linktitle: أدخل حقول النموذج
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج القائمة المنسدلة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Form Alanları Ekle
+linktitle: Form Alanları Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak açılır form alanlarını Word belgelerine nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-formfields/insert-form-fields/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية إدراج حقول النموذج ، وتحديداً حقل نموذج القائمة المنسدلة ، في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Bu adım adım öğreticide, Aspose.Words for .NET kullanarak form alanlarını, özellikle bir açılır form alanını bir Word belgesine nasıl ekleyeceğiniz konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
 
-## الخطوة 1: تهيئة المستند وكائنات DocumentBuilder
+## 1. Adım: Document ve DocumentBuilder Nesnelerini Başlatma
 
- أولاً ، قم بتهيئة ملف`Document` و`DocumentBuilder` أشياء:
+ İlk olarak,`Document` Ve`DocumentBuilder` nesneler:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إدراج حقل نموذج منسدل
+## 2. Adım: Açılır Form Alanı Ekleme
 
- بعد ذلك ، حدد خيارات حقل نموذج القائمة المنسدلة وأدخله في المستند باستخدام ملف`InsertComboBox` طريقة`DocumentBuilder`هدف. في هذا المثال ، نقوم بإدراج حقل نموذج منسدلة باسم "DropDown" مع ثلاثة خيارات: "واحد" و "اثنان" و "ثلاثة":
+ Ardından, açılır form alanı için seçenekleri belirtin ve bunu kullanarak belgeye ekleyin.`InsertComboBox` yöntemi`DocumentBuilder`nesne. Bu örnekte, "DropDown" adlı üç seçenekli bir açılır form alanı ekliyoruz: "Bir", "İki" ve "Üç":
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## الخطوة 3: حفظ المستند
+## 3. Adım: Belgeyi Kaydetme
 
-أخيرًا ، احفظ المستند:
+Son olarak, belgeyi kaydedin:
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إدراج حقل نموذج منسدل في مستند Word باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET kullanarak bir açılır form alanını bir Word belgesine başarıyla eklediniz.
 
-### مثال على شفرة المصدر لإدراج حقول النموذج باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Form Alanları Ekleme için örnek kaynak kodu
 
 ```csharp
 Document doc = new Document();
@@ -52,4 +52,4 @@ builder.InsertComboBox("DropDown", items, 0);
 doc.Save("OutputDocument.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimlerinize göre değiştirin.

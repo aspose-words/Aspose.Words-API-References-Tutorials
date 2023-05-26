@@ -1,64 +1,64 @@
 ---
-title: الانتقال إلى نهاية الإشارة المرجعية
-linktitle: الانتقال إلى نهاية الإشارة المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للانتقال إلى نهاية إشارة مرجعية في مستندات Word باستخدام هذا الدليل التفصيلي خطوة بخطوة.
+title: Sposta alla fine del segnalibro
+linktitle: Sposta alla fine del segnalibro
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come utilizzare Aspose.Words per .NET per spostarti alla fine di un segnalibro nei documenti di Word con questa guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Bookmark End في Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تمكن المطورين من إنشاء وتعديل وتحويل مستندات Word برمجيًا. تسمح لنا ميزة Move To Bookmark End بالانتقال إلى نهاية إشارة مرجعية معينة داخل مستند وإضافة محتوى بعدها.
+In questo esempio, esploreremo la funzione Sposta alla fine del segnalibro di Aspose.Words per .NET. Aspose.Words è una potente libreria di manipolazione dei documenti che consente agli sviluppatori di creare, modificare e convertire i documenti di Word a livello di codice. La funzione Sposta alla fine del segnalibro ci consente di navigare fino alla fine di un segnalibro specifico all'interno di un documento e aggiungere contenuto dopo di esso.
 
-## تهيئة البيئة
+## Allestimento dell'ambiente
 
-قبل الخوض في تفاصيل التنفيذ ، دعنا نتأكد من إعداد البيئة اللازمة للعمل مع Aspose.Words for .NET. تأكد من حصولك على ما يلي:
+Prima di approfondire i dettagli dell'implementazione, assicuriamoci di disporre dell'ambiente necessario impostato per lavorare con Aspose.Words per .NET. Assicurati di avere quanto segue:
 
-- تثبيت عملي لـ Aspose.Words لمكتبة .NET
-- المعرفة الأساسية بلغة البرمجة C #
-- الوصول إلى بيئة تطوير .NET
+- Un'installazione funzionante di Aspose.Words per la libreria .NET
+- Conoscenza base del linguaggio di programmazione C#
+- Accesso a un ambiente di sviluppo .NET
 
-## فهم ميزة Move To Bookmark End في Aspose.Words for .NET
+## Comprensione della funzione Sposta alla fine del segnalibro di Aspose.Words per .NET
 
-تسمح لك ميزة Move To Bookmark End بالانتقال إلى نهاية إشارة مرجعية في مستند Word باستخدام Aspose.Words for .NET. هذه الميزة مفيدة عندما تريد إضافة محتوى بعد إشارة مرجعية معينة في وثيقتك برمجيًا.
+La funzione Sposta alla fine del segnalibro consente di navigare fino alla fine di un segnalibro all'interno di un documento di Word utilizzando Aspose.Words per .NET. Questa funzione è utile quando si desidera aggiungere contenuto dopo un segnalibro specifico nel documento a livello di codice.
 
-## شرح شفرة المصدر خطوة بخطوة
+## Spiegando il codice sorgente passo dopo passo
 
-دعنا نقسم كود المصدر المقدم خطوة بخطوة لفهم كيفية استخدام ميزة Move To Bookmark End في Aspose.Words for .NET.
+Analizziamo il codice sorgente fornito passo dopo passo per capire come utilizzare la funzione Sposta alla fine del segnalibro in Aspose.Words per .NET.
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## Passaggio 1: inizializzazione del documento e del generatore di documenti
 
- أولاً ، نحتاج إلى تهيئة`Document` و`DocumentBuilder` أشياء:
+ Per prima cosa, dobbiamo inizializzare il file`Document` E`DocumentBuilder` oggetti:
 
 ```csharp
 Document doc = new Document(MyDir + "Bookmarks.docx");
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: الانتقال إلى نهاية الإشارة المرجعية
+## Passaggio 2: spostamento alla fine del segnalibro
 
- للانتقال إلى نهاية إشارة مرجعية ، استخدم ملحق`MoveToBookmark` طريقة`DocumentBuilder` فصل:
+ Per passare alla fine di un segnalibro, utilizzare il`MoveToBookmark` metodo del`DocumentBuilder` classe:
 
 ```csharp
 builder.MoveToBookmark("MyBookmark1", false, true);
 ```
 
- ال`MoveToBookmark` تأخذ الطريقة ثلاث معلمات:
-- اسم الإشارة المرجعية: أدخل اسم الإشارة المرجعية التي تريد الانتقال إليها.
--  IsBookmarkStart: اضبط على`false` للانتقال إلى نهاية الإشارة المرجعية.
--  IsBookmarkEnd: اضبط على`true` للإشارة إلى أنك تريد الانتقال إلى نهاية الإشارة المرجعية.
+ IL`MoveToBookmark` metodo prende tre parametri:
+- Nome segnalibro: fornisci il nome del segnalibro in cui desideri spostarti.
+-  IsBookmarkStart: impostare su`false` per spostarsi alla fine del segnalibro.
+-  IsBookmarkEnd: impostare su`true` per indicare che si desidera spostarsi alla fine del segnalibro.
 
-## الخطوة 3: إضافة محتوى في نهاية الإشارة المرجعية
+## Passaggio 3: aggiunta di contenuto alla fine del segnalibro
 
-بمجرد الانتقال إلى نهاية الإشارة المرجعية ، يمكنك إضافة محتوى باستخدام الطرق المختلفة التي يوفرها`DocumentBuilder` فصل. في هذا المثال ، نستخدم الامتداد`Writeln` طريقة كتابة سطر من النص:
+Una volta che ti sei spostato alla fine del segnalibro, puoi aggiungere contenuti utilizzando i vari metodi forniti dal`DocumentBuilder` classe. In questo esempio, usiamo il`Writeln` metodo per scrivere una riga di testo:
 
 ```csharp
 builder.Writeln("This is a bookmark.");
 ```
 
- ال`Writeln` تقوم الطريقة بإلحاق النص المحدد كفقرة جديدة في الموضع الحالي لملف`DocumentBuilder`.
+ IL`Writeln` Il metodo aggiunge il testo specificato come nuovo paragrafo nella posizione corrente del file`DocumentBuilder`.
 
-### مثال على شفرة المصدر لـ Move To Bookmark End باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per Move To Bookmark End utilizzando Aspose.Words per .NET
 
 ```csharp
 
@@ -70,7 +70,7 @@ builder.Writeln("This is a bookmark.");
 	
 ```
 
-## خاتمة
+## Conclusione
 
-استكشفنا ميزة Move To Bookmark End في Aspose.Words for .NET. لقد تعلمنا كيفية الانتقال إلى نهاية إشارة مرجعية وإضافة محتوى برمجيًا باستخدام كود المصدر المقدم. توفر هذه الميزة المرونة في التعامل مع مستندات Word باستخدام Aspose.Words for .NET.
+abbiamo esplorato la funzione Move To Bookmark End di Aspose.Words per .NET. Abbiamo imparato come navigare fino alla fine di un segnalibro e aggiungere contenuti in modo programmatico utilizzando il codice sorgente fornito. Questa funzione offre flessibilità nella manipolazione dei documenti di Word utilizzando Aspose.Words per .NET.
 

@@ -1,33 +1,33 @@
 ---
-title: احصل على استبدال بدون لاحقات
-linktitle: احصل على استبدال بدون لاحقات
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تجاوزات غير لاحقة في مستند Word باستخدام Aspose.Words for .NET.
+title: 获取没有后缀的替换
+linktitle: 获取没有后缀的替换
+second_title: Aspose.Words for .NET API 参考
+description: 在本教程中，了解如何使用 Aspose.Words for .NET 在 Word 文档中获取无后缀覆盖。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية الحصول على التجاوزات بدون اللواحق في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تُستخدم البدائل بدون لاحقات لحل مشاكل استبدال الخط عند عرض المستندات أو طباعتها. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+在本教程中，我们将向您展示如何使用 .NET 的 Aspose.Words 库在 Word 文档中获取不带后缀的覆盖。不带后缀的替换用于解决显示或打印文档时的字体替换问题。我们将带您一步一步地帮助您理解和实现您的 .NET 项目中的代码。
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## 先决条件
+在开始之前，请确保您拥有以下物品：
+- C# 编程语言的应用知识
+- 项目中安装的 .NET 的 Aspose.Words 库
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 第一步：定义文档目录
+首先，您需要将目录路径设置为您的 Word 文档所在的位置。代替`"YOUR DOCUMENT DIRECTORY"`在具有适当路径的代码中。
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وتكوين الاستبدالات بدون لاحقات
- بعد ذلك ، سنقوم بتحميل المستند باستخدام ملف`Document` فئة وتكوين بدائل غير لاحقة باستخدام`DocumentSubstitutionWarnings` فصل. سنضيف أيضًا مصدر خط عن طريق تحديد مجلد يحتوي على الخطوط.
+## 第 2 步：加载文档并配置不带后缀的替换
+接下来，我们将使用`Document`使用类和配置无后缀替换`DocumentSubstitutionWarnings`班级。我们还将通过指定包含字体的文件夹来添加字体源。
 
 ```csharp
-//قم بتحميل المستند وتكوين الاستبدالات بدون لاحقات
+//加载文档并配置不带后缀的替换
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
 DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
 doc.WarningCallback = substitutionWarningHandler;
@@ -39,18 +39,18 @@ FontSourceBase[] updatedFontSources = fontSources.ToArray();
 FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
 ```
 
-## الخطوة 3: احفظ المستند
-أخيرًا ، سنحفظ المستند مع تطبيق التجاوزات بدون لاحقة.
+## 第 3 步：保存文档
+最后，我们将保存应用了无后缀覆盖的文档。
 
 ```csharp
-// احفظ المستند
+//保存文件
 doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر للحصول على استبدال بدون لاحقات باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 获取无后缀替换的示例源代码 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
@@ -65,5 +65,5 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الحصول على الإلغاءات بدون اللواحق في مستند Word باستخدام Aspose.Words for .NET. الاستبدالات بدون لاحقات مفيدة لحل مشاكل استبدال الخط. لا تتردد في استخدام هذه الميزة لتحسين عرض وطباعة مستنداتك.
+## 结论
+在本教程中，我们看到了如何使用 Aspose.Words for .NET 在 Word 文档中获取没有后缀的覆盖。不带后缀的替换对于解决字体替换问题很有用。随意使用此功能来改进文档的显示和打印。

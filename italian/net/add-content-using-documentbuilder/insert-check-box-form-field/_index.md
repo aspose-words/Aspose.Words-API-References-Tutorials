@@ -1,43 +1,43 @@
 ---
-title: أدخل حقل نموذج خانة اختيار
-linktitle: أدخل حقل نموذج خانة اختيار
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج خانة الاختيار في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Inserisci campo modulo casella di controllo
+linktitle: Inserisci campo modulo casella di controllo
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire campi modulo casella di controllo nei documenti di Word utilizzando Aspose.Words per .NET. Guida passo dopo passo.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-check-box-form-field/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج حقل نموذج خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة حقول نموذج مربعات الاختيار بخصائص قابلة للتخصيص إلى مستنداتك.
+In questo tutorial completo, imparerai come inserire un campo modulo casella di controllo in un documento Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo i frammenti di codice C# necessari. Alla fine di questa guida, sarai in grado di aggiungere campi modulo con caselle di controllo con proprietà personalizzabili ai tuoi documenti.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti prerequisiti:
+- Aspose.Words per la libreria .NET installata sul tuo sistema.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Passaggio 1: creare un nuovo documento e DocumentBuilder
+Per iniziare, crea un nuovo documento utilizzando la classe Document e inizializza un oggetto DocumentBuilder:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل حقل نموذج خانة اختيار
-بعد ذلك ، استخدم طريقة InsertCheckBox لفئة DocumentBuilder لإدراج حقل نموذج خانة اختيار. أدخل الاسم والحالة المحددة والحالة الافتراضية ومعلمات الحجم كوسائط:
+## Passaggio 2: inserire un campo modulo casella di controllo
+Utilizzare quindi il metodo InsertCheckBox della classe DocumentBuilder per inserire un campo modulo casella di controllo. Fornire il nome, lo stato controllato, lo stato predefinito e i parametri di dimensione come argomenti:
 
 ```csharp
 builder.InsertCheckBox("CheckBox", true, true, 0);
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج حقل نموذج خانة الاختيار ، احفظ المستند في ملف باستخدام طريقة Save لفئة المستند:
+## Passaggio 3: salvare il documento
+Dopo aver inserito il campo form check box, salvare il documento in un file utilizzando il metodo Save della classe Document:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx");
 ```
 
-### مثال كود المصدر لحقل نموذج خانة اختيار باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال حقل نموذج مربع الاختيار باستخدام Aspose.Words for .NET:
+### Esempio di codice sorgente per Inserisci campo modulo casella di controllo utilizzando Aspose.Words per .NET
+Ecco il codice sorgente completo per l'inserimento di un campo modulo casella di controllo utilizzando Aspose.Words per .NET:
 
 ```csharp
 
@@ -50,7 +50,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Ricorda di adattare il codice in base alle tue esigenze specifiche e di migliorarlo con funzionalità aggiuntive secondo necessità.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج حقل نموذج خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك باستخدام حقول نموذج مربعات الاختيار التفاعلية.
+## Conclusione
+Congratulazioni! Hai imparato con successo come inserire un campo modulo casella di controllo in un documento Word utilizzando Aspose.Words per .NET. Seguendo la guida passo-passo e utilizzando il codice sorgente fornito, ora puoi migliorare i tuoi documenti con campi modulo con caselle di controllo interattive.

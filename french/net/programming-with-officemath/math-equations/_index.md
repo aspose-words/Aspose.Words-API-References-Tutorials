@@ -1,60 +1,60 @@
 ---
-title: معادلات الرياضيات
-linktitle: معادلات الرياضيات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة معادلات رياضية إلى مستندات Word باستخدام Aspose.Words for .NET.
+title: Équations mathématiques
+linktitle: Équations mathématiques
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à ajouter des équations mathématiques à vos documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-officemath/math-equations/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words إمكانية إضافة معادلات رياضية إلى مستنداتك. في هذا الدليل ، سنرشدك إلى كيفية استخدام الكود المصدري C # لـ Aspose.Words for .NET لإضافة معادلات رياضية إلى مستند Word.
+Aspose.Words pour .NET est une bibliothèque puissante pour créer, éditer et manipuler des documents Word dans une application C#. Parmi les fonctionnalités offertes par Aspose.Words figure la possibilité d'ajouter des équations mathématiques à vos documents. Dans ce guide, nous vous expliquerons comment utiliser le code source C # de Aspose.Words pour .NET pour ajouter des équations mathématiques à un document Word.
 
-## فهم مكتبة Aspose.Words
+## Comprendre la bibliothèque Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك دعم المعادلات الرياضية.
+Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque populaire qui rend le travail avec les documents Word simple et efficace. Il offre un large éventail de fonctionnalités pour créer, éditer et manipuler des documents Word, y compris la prise en charge des équations mathématiques.
 
-## تحميل مستند Word
+## Chargement du document Word
 
-الخطوة الأولى هي تحميل مستند Word الذي تريد إضافة معادلة رياضية إليه. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+La première étape consiste à charger le document Word auquel vous souhaitez ajouter une équation mathématique. Utilisez la classe Document pour charger le document à partir du fichier source. Voici un exemple :
 
 ```csharp
 Document doc = new Document(dataDir + "Office math.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل مستند "Office math.docx" الموجود في دليل المستندات.
+Dans cet exemple, nous chargeons le document "Office math.docx" situé dans le répertoire des documents.
 
-## إضافة معادلة رياضية
+## Ajout d'une équation mathématique
 
-بمجرد تحميل المستند ، يمكنك الوصول إلى عنصر OfficeMath في المستند. استخدم الأسلوب GetChild لفئة المستند للحصول على عنصر OfficeMath من الفهرس المحدد. هنا مثال :
+Une fois le document chargé, vous pouvez accéder à l'élément OfficeMath dans le document. Utilisez la méthode GetChild de la classe Document pour obtenir l'élément OfficeMath à partir de l'index spécifié. Voici un exemple :
 
 ```csharp
 OfficeMath officeMath = (OfficeMath)doc.GetChild(NodeType.OfficeMath, 0, true);
 ```
 
-في هذا المثال ، نحصل على عنصر OfficeMath الأول في المستند.
+Dans cet exemple, nous obtenons le premier élément OfficeMath du document.
 
-## تكوين خصائص المعادلات الرياضية
+## Configuration des propriétés d'équation mathématique
 
-يمكنك تكوين خصائص مختلفة للمعادلة الرياضية باستخدام خصائص كائن OfficeMath. على سبيل المثال ، يمكنك تعيين نوع عرض المعادلة الرياضية باستخدام خاصية DisplayType. هنا مثال :
+Vous pouvez configurer diverses propriétés de l'équation mathématique à l'aide des propriétés d'objet OfficeMath. Par exemple, vous pouvez définir le type d'affichage de l'équation mathématique à l'aide de la propriété DisplayType. Voici un exemple :
 
 ```csharp
 officeMath.DisplayType = OfficeMathDisplayType.Display;
 ```
 
-في هذا المثال ، قمنا بتعيين نوع عرض المعادلة الرياضية على "العرض" ، مما يعني أنه سيتم عرض المعادلة في السطر الخاص بها.
+Dans cet exemple, nous définissons le type d'affichage de l'équation mathématique sur "Affichage", ce qui signifie que l'équation sera affichée sur sa propre ligne.
 
-وبالمثل ، يمكنك تعيين محاذاة المعادلة الرياضية باستخدام خاصية الضبط. هنا مثال :
+De même, vous pouvez définir l'alignement de l'équation mathématique à l'aide de la propriété Justification. Voici un exemple :
 
 ```csharp
 officeMath.Justification = OfficeMathJustification.Left;
 ```
 
-في هذا المثال ، قمنا بتعيين محاذاة المعادلة الرياضية إلى اليسار.
+Dans cet exemple, nous définissons l'alignement de l'équation mathématique vers la gauche.
 
-## حفظ المستند بالمعادلة الرياضية
+## Enregistrement du document avec l'équation mathématique
 
-بمجرد تكوين خصائص المعادلة الرياضية ، يمكنك حفظ المستند المعدل باستخدام طريقة Save لفئة Document. هنا مثال :
+Une fois que vous avez configuré les propriétés de l'équation mathématique, vous pouvez enregistrer le document modifié à l'aide de la méthode Save de la classe Document. Voici un exemple :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx
@@ -62,28 +62,28 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx
 ");
 ```
 
-في هذا المثال ، نحفظ المستند المعدل باسم "WorkingWithOfficeMath.MathEquations.docx".
+Dans cet exemple, nous enregistrons le document modifié sous "WorkingWithOfficeMath.MathEquations.docx".
 
-### مثال على الكود المصدري للمعادلات الرياضية باستخدام Aspose.Words for .NET
+### Exemple de code source pour les équations mathématiques avec Aspose.Words pour .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+//Charger le document Word
 Document doc = new Document(dataDir + "Office math.docx");
 
-// الحصول على عنصر OfficeMath
+// Obtenir l'élément OfficeMath
 OfficeMath officeMath = (OfficeMath)doc.GetChild(NodeType.OfficeMath, 0, true);
 
-//تكوين خصائص المعادلة الرياضية
+//Configurer les propriétés de l'équation mathématique
 officeMath.DisplayType = OfficeMathDisplayType.Display;
 officeMath.Justification = OfficeMathJustification.Left;
 
-// احفظ المستند بالمعادلة الرياضية
+// Enregistrez le document avec l'équation mathématique
 doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا الدليل ، قمنا بتغطية كيفية استخدام Aspose.Words for .NET لإضافة معادلات رياضية إلى مستند Word باستخدام الكود المصدري C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة إضافة معادلات رياضية إلى مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع المعادلات الرياضية ، مما يسمح لك بإنشاء مستندات احترافية جيدة التنسيق.
+Dans ce guide, nous avons expliqué comment utiliser Aspose.Words pour .NET pour ajouter des équations mathématiques à un document Word à l'aide du code source C# fourni. En suivant les étapes fournies, vous pouvez facilement ajouter des équations mathématiques à vos documents Word dans votre application C#. Aspose.Words offre une flexibilité et une puissance considérables pour travailler avec des équations mathématiques, vous permettant de créer des documents professionnels bien formatés.

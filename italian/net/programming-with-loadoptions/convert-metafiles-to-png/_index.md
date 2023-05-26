@@ -1,61 +1,61 @@
 ---
-title: تحويل ملفات التعريف إلى Png
-linktitle: تحويل ملفات التعريف إلى Png
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل ملفات التعريف إلى صور PNG عند تحميل المستندات باستخدام Aspose.Words for .NET.
+title: Converti metafile in png
+linktitle: Converti metafile in png
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come convertire i metafile in immagini PNG durante il caricamento di documenti con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/convert-metafiles-to-png/
 ---
-عند العمل مع المستندات في تطبيق C # ، قد يكون من الضروري تحويل ملفات التعريف إلى صور PNG من أجل توافق أفضل وعرض دقيق. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحويل ملفات التعريف إلى PNG أثناء تحميل مستند. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند بتحويل ملفات التعريف إلى PNG باستخدام خيارات تحميل LoadOptions.
+Quando si lavora con documenti in un'applicazione C#, potrebbe essere necessario convertire i metafile in immagini PNG per una migliore compatibilità e un rendering accurato. Con la libreria Aspose.Words per .NET, puoi facilmente convertire i metafile in PNG durante il caricamento di un documento. In questa guida dettagliata, ti illustreremo come utilizzare Aspose.Words per il codice sorgente .NET C# per caricare un documento con la conversione di metafile in PNG utilizzando le opzioni di caricamento LoadOptions.
 
-## فهم مكتبة Aspose.Words
+## Comprensione della libreria Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Prima di immergersi nel codice, è importante comprendere la libreria Aspose.Words per .NET. Aspose.Words è una potente libreria per creare, modificare, convertire e proteggere documenti Word in diverse piattaforme, incluso .NET. Offre molte funzionalità per la manipolazione dei documenti, come l'inserimento di testo, la modifica della formattazione, l'aggiunta di sezioni e molto altro.
 
-## الخطوة 1: تحديد دليل المستند
+## Passaggio 1: definizione della directory dei documenti
 
-الخطوة الأولى هي تحديد الدليل حيث توجد المستندات الخاصة بك. يجب عليك تحديد مسار الدليل الكامل. على سبيل المثال :
+Il primo passaggio consiste nel definire la directory in cui si trovano i documenti. È necessario specificare il percorso completo della directory. Per esempio :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti.
 
-## الخطوة 2: تكوين خيارات التحميل
+## Passaggio 2: configurazione delle opzioni di caricamento
 
-لنقم الآن بتهيئة خيارات التحميل لوثيقتنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. على سبيل المثال :
+Ora configuriamo le opzioni di caricamento per il nostro documento. Utilizzare la classe LoadOptions per specificare i parametri di caricamento. Per esempio :
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { ConvertMetafilesToPng = true };
 ```
 
-في هذا المثال ، قمنا بإنشاء كائن LoadOptions جديد وقمنا بتعيين الخاصية ConvertMetafilesToPng إلى true لتمكين تحويل ملفات التعريف إلى PNG عند تحميل المستند.
+In questo esempio creiamo un nuovo oggetto LoadOptions e impostiamo la proprietà ConvertMetafilesToPng su true per abilitare la conversione dei metafile in PNG durante il caricamento del documento.
 
-## الخطوة 3: تحميل المستند بتحويل ملفات التعريف إلى PNG
+## Passaggio 3: caricamento del documento con conversione dei metafile in PNG
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل المستند باستخدام فئة Document وتحديد خيارات التحميل. على سبيل المثال :
+Ora che abbiamo configurato le opzioni di caricamento, possiamo caricare il documento utilizzando la classe Document e specificare le opzioni di caricamento. Per esempio :
 
 ```csharp
 Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "WMF with image.docx" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+In questo esempio, stiamo caricando il documento "WMF con image.docx" che si trova nella directory dei documenti utilizzando le opzioni di caricamento specificate.
 
-## مثال على شفرة المصدر لميزة LoadOptions مع تحويل ملفات التعريف إلى Png باستخدام Aspose.Words for .NET
+## Codice sorgente di esempio per la funzione LoadOptions con Converti metafile in Png utilizzando Aspose.Words per .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "تحويل ملفات التعريف إلى بابوا نيو غينيا"
+// Configura le opzioni di caricamento con la funzione "Converti metafile in png".
 LoadOptions loadOptions = new LoadOptions { ConvertMetafilesToPng = true };
 
-// قم بتحميل المستند بالخيارات المحددة
+// Carica il documento con le opzioni specificate
 Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 ```
 
-## خاتمة
+## Conclusione
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند بتحويل ملفات التعريف إلى صور PNG باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يضمن تحويل ملفات التعريف إلى PNG توافقًا أفضل وعرضًا دقيقًا للمستندات.
+In questa guida, abbiamo spiegato come caricare un documento con la conversione di metafile in immagini PNG utilizzando la libreria Aspose.Words per .NET. Seguendo i passaggi forniti e usando il codice sorgente C# fornito, puoi facilmente applicare questa funzionalità nella tua applicazione C#. La conversione di metafile in PNG garantisce una migliore compatibilità e un rendering accurato dei documenti.

@@ -1,21 +1,21 @@
 ---
-title: البرمجة باستخدام Txtloadoptions
-linktitle: البرمجة باستخدام Txtloadoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على اكتشاف الترقيم بالمسافات البيضاء وخيارات مسافات المعالجة واتجاه نص المستند
+title: Programmation avec Txtloadoptions
+linktitle: Programmation avec Txtloadoptions
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent la détection de la numérotation avec des espaces blancs, les options de gestion des espaces et la direction du texte du document
 type: docs
 weight: 1640
 url: /fr/net/programming-with-txtloadoptions/
 ---
-ترشدك البرامج التعليمية Aspose.Words for .NET إلى ميزات وجوانب مختلفة من البرمجة باستخدام Aspose.Words مكتبة قوية لمعالجة مستندات Word. يوضح لك البرنامج التعليمي "البرمجة باستخدام TxtLoadOptions" كيفية تحميل الملفات النصية ومعالجتها في Aspose.Words. ستتعلم كيفية تحديد خيارات التحميل واستخراج النص من ملف نصي وإدراجه في مستند Word وعمليات معالجة الكلمات الأخرى.
+Les didacticiels Aspose.Words pour .NET vous guident à travers différentes fonctionnalités et aspects de la programmation avec Aspose.Words, une bibliothèque puissante pour le traitement de documents Word. Le tutoriel "Programmer avec TxtLoadOptions" vous montre comment charger et manipuler des fichiers texte dans Aspose.Words. Vous apprendrez à spécifier les options de chargement, à extraire du texte d'un fichier texte et à l'insérer dans un document Word, ainsi qu'à effectuer d'autres opérations de traitement de texte.
 
-تقدم هذه البرامج التعليمية إرشادات خطوة بخطوة ، ونموذج من التعليمات البرمجية ، وشروحات مفصلة لمساعدتك على فهم واستخدام ميزات Aspose.Words في مشاريع .NET الخاصة بك. سواء أكنت بحاجة إلى إنشاء مستندات Word أو تحريرها أو تحويلها أو معالجتها ، فإن هذه البرامج التعليمية توفر لك المعرفة التي تحتاجها لإكمال مهامك بنجاح. استكشف الميزات المختلفة وتعرف على كيفية تحقيق أقصى استفادة من Aspose.Words لاحتياجات معالجة مستندات Word في تطبيقات .NET الخاصة بك.
+Ces didacticiels proposent des instructions détaillées, des exemples de code et des explications détaillées pour vous aider à comprendre et à utiliser les fonctionnalités Aspose.Words dans vos projets .NET. Que vous ayez besoin de créer, modifier, convertir ou manipuler des documents Word, ces didacticiels vous fournissent les connaissances dont vous avez besoin pour mener à bien vos tâches. Explorez les différentes fonctionnalités et apprenez à tirer le meilleur parti d'Aspose.Words pour vos besoins de traitement de documents Word dans vos applications .NET.
 
-باستخدام Aspose.Words ، يمكنك أتمتة مهام معالجة مستندات Word بشكل فعال ، وتحسين الإنتاجية وتحقيق نتائج عالية الجودة. تساعدك البرامج التعليمية على إتقان المفاهيم والتقنيات اللازمة للعمل مع ميزات Aspose.Words محددة ، مما يتيح لك تطوير تطبيقات قوية وعالية الأداء لإدارة مستندات Word بشكل احترافي. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ترشدك برامج Aspose.Words for .NET التعليمية في رحلتك إلى الاستخدام المتقدم لهذه المكتبة القوية.
+En utilisant Aspose.Words, vous pouvez automatiser efficacement les tâches de traitement de documents Word, améliorer la productivité et obtenir des résultats de haute qualité. Les didacticiels vous aident à maîtriser les concepts et les techniques nécessaires pour travailler avec des fonctionnalités spécifiques d'Aspose.Words, vous permettant de développer des applications robustes et performantes pour gérer les documents Word de manière professionnelle. Que vous soyez un débutant ou un développeur expérimenté, les didacticiels Aspose.Words pour .NET vous guident dans votre parcours vers une utilisation avancée de cette puissante bibliothèque.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [كشف الترقيم مع المسافات](./detect-numbering-with-whitespaces/) | تعرف على كيفية اكتشاف أرقام القائمة مع وجود مسافات بيضاء في Aspose.Words for .NET. قم بتحسين بنية المستندات الخاصة بك بسهولة. |
-| [التعامل مع خيارات المسافات](./handle-spaces-options/) | تعرف على كيفية إدارة المساحات في مستندات TXT الخاصة بك باستخدام Aspose.Words for .NET. قم بإزالة المسافات غير الضرورية وتحسين إمكانية القراءة. |
-| [اتجاه نص المستند](./document-text-direction/) | تعرف على كيفية تحديد اتجاه النص في مستنداتك باستخدام Aspose.Words for .NET. تحسين العرض للغات التي تكتب من اليمين إلى اليسار. الوصول إلى البرنامج التعليمي الكامل الآن. |
+| [Détecter la numérotation avec des espaces blancs](./detect-numbering-with-whitespaces/) | Apprenez à détecter les numéros de liste avec des espaces blancs dans Aspose.Words pour .NET. Améliorez la structure de vos documents en toute simplicité. |
+| [Options d'espaces de poignée](./handle-spaces-options/) | Apprenez à gérer les espaces dans vos documents TXT avec Aspose.Words pour .NET. Supprimez les espaces inutiles et améliorez la lisibilité. |
+| [Sens du texte du document](./document-text-direction/) | Apprenez à spécifier la direction du texte dans vos documents avec Aspose.Words pour .NET. Améliorer l'affichage pour les langues de droite à gauche. Accédez maintenant au didacticiel complet. |

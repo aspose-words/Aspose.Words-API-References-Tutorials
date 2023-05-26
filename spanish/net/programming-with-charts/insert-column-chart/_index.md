@@ -1,63 +1,63 @@
 ---
-title: إدراج مخطط عمودي
-linktitle: إدراج مخطط عمودي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مخطط عمودي في مستند باستخدام Aspose.Words for .NET.
+title: Insertar gráfico de columnas
+linktitle: Insertar gráfico de columnas
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a insertar un gráfico de columnas en un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-charts/insert-column-chart/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مخطط عمودي في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وحفظ المستند.
+Este tutorial explica cómo usar Aspose.Words para .NET para insertar un gráfico de columnas en un documento. El código fuente proporcionado demuestra cómo crear un gráfico, agregar datos de series y guardar el documento.
 
-## الخطوة 1: قم بإعداد المشروع
+## Paso 1: configurar el proyecto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Asegúrese de tener los siguientes requisitos previos:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words para la biblioteca .NET instalada. Puede descargarlo del sitio web oficial de Aspose o usar el administrador de paquetes NuGet para instalarlo.
+- Una ruta de directorio del documento donde se guardará el documento de salida.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Paso 2: Cree un nuevo documento e inserte un gráfico
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Crear un nuevo`Document` objeto y un`DocumentBuilder` para construir el documento.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط عمودي في المستند.
+ A continuación, utilice el`InsertChart` metodo de la`DocumentBuilder` para insertar un gráfico de columnas en el documento.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Paso 3: Agregar datos de series al gráfico
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف فئتين والقيم المقابلة لهما.
+Agregue datos de serie al gráfico. En este ejemplo, agregaremos dos categorías y sus valores correspondientes.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new string[] { "Category 1", "Category 2" }, new double[] { 1, 2 });
 ```
 
-## الخطوة 4: احفظ المستند
+## Paso 4: Guarde el documento
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Finalmente, guarde el documento en el directorio especificado usando el`Save` metodo de la`Document` objeto.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertColumnChart.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مخطط عمودي باستخدام Aspose.Words for .NET.
+Esto completa la implementación de insertar un gráfico de columnas usando Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لإدراج مخطط عمودي باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Insertar gráfico de columnas usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

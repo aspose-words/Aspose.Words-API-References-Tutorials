@@ -1,38 +1,38 @@
 ---
-title: أدخل الشكل
-linktitle: أدخل الشكل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الأشكال في مستند Word باستخدام Aspose.Words for .NET.
+title: Insérer la forme
+linktitle: Insérer la forme
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer des formes dans un document Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-shapes/insert-shape/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إدراج الأشكال في مستند Word باستخدام Aspose.Words for .NET. يمكن استخدام الأشكال لتحسين المظهر المرئي وتخطيط المستندات الخاصة بك.
+Ce didacticiel explique comment insérer des formes dans un document Word à l'aide de Aspose.Words pour .NET. Les formes peuvent être utilisées pour améliorer l'apparence visuelle et la mise en page de vos documents.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Conditions préalables
+Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Bibliothèque Aspose.Words pour .NET installée.
+- Connaissance de base de C# et travail avec des documents Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Étape 1 : Configurer le répertoire de documents
+ Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Étape 2 : Créer un nouveau document et DocumentBuilder
+ Créez une nouvelle instance de`Document` classe et une`DocumentBuilder` objet de travailler avec le document.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: أدخل الأشكال
- استخدم ال`InsertShape` طريقة`DocumentBuilder` كائن لإدراج الأشكال في المستند. حدد نوع الشكل والمواضع النسبية الأفقية والعمودية وأبعاد الصفحة وحجمها ونوع الالتفاف. يمكنك أيضًا ضبط زاوية دوران الأشكال إذا رغبت في ذلك.
+## Étape 3 : Insérer des formes
+ Utilisez le`InsertShape` méthode de la`DocumentBuilder` objet pour insérer des formes dans le document. Spécifiez le type de forme, les positions horizontales et verticales relatives, les dimensions de la page, la taille et le type d'habillage. Vous pouvez également définir l'angle de rotation des formes si vous le souhaitez.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,
@@ -43,8 +43,8 @@ shape = builder.InsertShape(ShapeType.TextBox, 50, 50);
 shape.Rotation = 30.0;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithShapes.InsertShape.docx".
+## Étape 4 : Enregistrer le document
+ Enregistrez le document dans le répertoire spécifié à l'aide de la`Save` méthode. Indiquez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous "WorkingWithShapes.InsertShape.docx".
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
@@ -54,10 +54,10 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-### مثال على التعليمات البرمجية المصدر لـ Insert Shape باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Insérer une forme à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -75,4 +75,4 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 	doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-هذا كل شيء! لقد نجحت في إدراج الأشكال في مستند Word باستخدام Aspose.Words for .NET.
+C'est ça! Vous avez inséré avec succès des formes dans votre document Word à l'aide de Aspose.Words pour .NET.

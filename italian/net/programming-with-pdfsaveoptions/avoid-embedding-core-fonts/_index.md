@@ -1,62 +1,62 @@
 ---
-title: تجنب تضمين الخطوط الأساسية
-linktitle: تجنب تضمين الخطوط الأساسية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تجنب تضمين الخط الأساسي عند تحويل مستندات Word إلى PDF باستخدام Aspose.Words for .NET.
+title: Evita di incorporare i caratteri principali
+linktitle: Evita di incorporare i caratteri principali
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come evitare l'incorporamento di caratteri di base durante la conversione di documenti Word in PDF con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات استخدام ميزة Avoid Basic Font Embedding مع Aspose.Words for .NET. تتيح لك هذه الميزة التحكم في ما إذا كان يجب تضمين الخطوط الأساسية مثل Arial و Times New Roman وما إلى ذلك في ملف PDF عند تحويل مستند Word. اتبع الخطوات التالية:
+In questo tutorial, ti guideremo attraverso i passaggi per utilizzare la funzione Evita l'incorporamento dei caratteri di base con Aspose.Words per .NET. Questa funzione consente di controllare se i caratteri di base come Arial, Times New Roman, ecc. devono essere incorporati nel PDF durante la conversione di un documento Word. Segui i passaggi seguenti:
 
-## الخطوة 1: تحميل المستند
+## Passaggio 1: caricamento del documento
 
-ابدأ بتحميل مستند Word الذي تريد تحويله إلى PDF:
+Inizia caricando il documento Word che vuoi convertire in PDF:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح لمستند Word الخاص بك.
+Assicurati di specificare il percorso corretto del tuo documento Word.
 
-## الخطوة 2: تعيين خيارات تحويل PDF
+## Passaggio 2: imposta le opzioni di conversione PDF
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وقم بتمكين تجنب تضمين الخط الأساسي:
+Crea un'istanza della classe PdfSaveOptions e abilita l'evitamento dell'incorporamento dei caratteri di base:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
 ```
 
-يتحكم هذا الخيار فيما إذا كان يجب تضمين الخطوط الأساسية في ملف PDF أم لا.
+Questa opzione controlla se i font di base devono essere incorporati o meno nel PDF.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## Passo 3: Converti documento in PDF
 
- استخدم ال`Save` طريقة لتحويل مستند Word إلى PDF عن طريق تحديد خيارات التحويل:
+ Usa il`Save` metodo per convertire il documento Word in PDF specificando le opzioni di conversione:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Assicurati di specificare il percorso corretto per salvare il PDF convertito.
 
-### مثال على شفرة المصدر لتجنب تضمين الخطوط الأساسية باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per Evitare l'incorporamento di caratteri principali utilizzando Aspose.Words per .NET
 
-إليك الكود المصدري الكامل لاستخدام الميزة لتجنب تضمين الخط الأساسي مع Aspose.Words for .NET:
+Ecco il codice sorgente completo per utilizzare la funzione per evitare l'incorporamento dei caratteri principali con Aspose.Words per .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// لن يتم تضمين ملف PDF الناتج مع الخطوط الأساسية مثل Arial و Times New Roman وما إلى ذلك.
+	// Il PDF di output non verrà incorporato con caratteri principali come Arial, Times New Roman ecc.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 
 ```
 
-باتباع هذه الخطوات ، يمكنك التحكم بسهولة فيما إذا كان يجب تضمين الخطوط الأساسية في ملف PDF عند تحويل مستند Word باستخدام Aspose.Words for .NET.
+Seguendo questi passaggi, puoi facilmente controllare se i caratteri di base devono essere incorporati nel PDF durante la conversione di un documento Word con Aspose.Words per .NET.
 

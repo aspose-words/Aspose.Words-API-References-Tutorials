@@ -1,17 +1,17 @@
 ---
-title: قراءة الحماية فقط
-linktitle: قراءة الحماية فقط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حماية مستندات Word للقراءة فقط باستخدام Aspose.Words for .NET.
+title: 只读保护
+linktitle: 只读保护
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 保护您的只读 Word 文档。
 type: docs
 weight: 10
 url: /zh/net/document-protection/read-only-protection/
 ---
-في هذا البرنامج التعليمي ، سنوجهك خلال الخطوات لاستخدام ميزة الحماية للقراءة فقط في Aspose.Words for .NET. تتيح لك هذه الميزة جعل مستند Word للقراءة فقط لمنع التعديل غير المصرح به. اتبع الخطوات التالية:
+在本教程中，我们将引导您完成使用 Aspose.Words for .NET 的只读保护功能的步骤。此功能允许您将 Word 文档设置为只读，以防止未经授权的修改。请按照以下步骤操作：
 
-## الخطوة 1: إنشاء المستند وتطبيق الحماية
+## 第 1 步：创建文档并应用保护
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+首先创建一个 Document 类的实例和一个 DocumentBuilder 对象：
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -19,66 +19,66 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: اكتب المحتوى إلى المستند
-استخدم كائن DocumentBuilder لكتابة محتوى إلى المستند:
+## 第二步：向文档写入内容
+使用 DocumentBuilder 对象将内容写入文档：
 
 ```csharp
 builder.Write("Open document as read-only");
 ```
 
-## الخطوة 3: تعيين كلمة المرور وجعل المستند للقراءة فقط
+## 第 3 步：设置密码并将文档设置为只读
 
-قم بتعيين كلمة مرور للمستند باستخدام خاصية SetPassword () للكائن WriteProtection:
+使用 WriteProtection 对象的 SetPassword() 属性为文档设置密码：
 
 ```csharp
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
-تأكد من استبدال "MyPassword" بكلمة المرور الفعلية التي تريد استخدامها.
+请务必将“MyPassword”替换为您要使用的实际密码。
 
-## الخطوة 4: تطبيق وثيقة للقراءة فقط
+## 第四步：申请只读文件
 
-اجعل المستند للقراءة فقط عن طريق تعيين الخاصية ReadOnlyRecommended على true:
+通过将 ReadOnlyRecommended 属性设置为 true 使文档为只读：
 
 ```csharp
 doc.WriteProtection.ReadOnlyRecommended = true;
 ```
 
-## الخطوة 5: تطبيق الحماية للقراءة فقط وحفظ المستند
+## 步骤 5：应用只读保护并保存文档
 
-أخيرًا ، قم بتطبيق الحماية للقراءة فقط باستخدام طريقة Protect () لكائن المستند:
+最后，使用 Document 对象的 Protect() 方法应用只读保护：
 
 ```csharp
 doc.Protect(ProtectionType.ReadOnly);
 doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند المحمي.
+请务必指定正确的路径和文件名以保存受保护的文档。
 
-### مثال على شفرة المصدر للحماية للقراءة فقط باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的只读保护示例源代码
 
-فيما يلي رمز المصدر الكامل للحماية للقراءة فقط باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 进行只读保护的完整源代码：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
 	builder.Write("Open document as read-only");
 
-	// أدخل كلمة مرور يصل طولها إلى 15 حرفًا.
+	//输入最多 15 个字符的密码。
 	doc.WriteProtection.SetPassword("MyPassword");
 
-	// اجعل المستند للقراءة فقط.
+	//将文档设置为只读。
 	doc.WriteProtection.ReadOnlyRecommended = true;
 
-	// تطبيق الحماية ضد الكتابة للقراءة فقط.
+	//将写保护应用为只读。
 	doc.Protect(ProtectionType.ReadOnly);
 	doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 ```
 
-باتباع هذه الخطوات ، يمكنك حماية مستنداتك بسهولة
+按照这些步骤，您可以轻松保护您的文档
 

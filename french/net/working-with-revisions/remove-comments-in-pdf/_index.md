@@ -1,59 +1,59 @@
 ---
-title: إزالة التعليقات في ملف PDF
-linktitle: إزالة التعليقات في ملف PDF
-second_title: Aspose.Words لمراجع .NET API
-description: قم بإزالة التعليقات في ملف PDF باستخدام Aspose.Words for .NET.
+title: Supprimer les commentaires dans le pdf
+linktitle: Supprimer les commentaires dans le pdf
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Supprimez les commentaires dans un fichier PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-revisions/remove-comments-in-pdf/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سنخبرك بكيفية إزالة التعليقات في ملف PDF باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+Dans ce guide étape par étape, nous allons vous expliquer comment supprimer des commentaires dans un fichier PDF à l'aide de Aspose.Words pour .NET. Nous vous fournirons le code source complet et vous montrerons comment formater la sortie Markdown.
 
-## الخطوة 1: تحميل المستند
+## Étape 1 : Chargement du document
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على التعليقات.
+La première étape consiste à charger le document contenant les commentaires.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة الثانية: إخفاء التعليقات في ملف PDF
+## Étape 2 : Masquer les commentaires dans le PDF
 
-سنقوم بتكوين خيار التخطيط لإخفاء التعليقات عند إنشاء ملف PDF.
+Nous allons configurer l'option de mise en page pour masquer les commentaires lors de la génération du PDF.
 
 ```csharp
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 ```
 
-## الخطوة 3: احفظ المستند كملف PDF
+## Étape 3 : Enregistrez le document au format PDF
 
-أخيرًا ، سنحفظ المستند بتنسيق PDF عن طريق حذف التعليقات.
+Enfin, nous enregistrerons le document au format PDF en supprimant les commentaires.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 ```
 
-## تنسيقات إخراج Markdown
+## Formats de sortie Markdown
 
-يمكن تنسيق الإخراج في تخفيض السعر لتحسين إمكانية القراءة. على سبيل المثال :
+La sortie peut être formatée en Markdown pour améliorer la lisibilité. Par exemple :
 
 ```markdown
 - Comments are hidden in the generated PDF.
 ```
 
-### مثال على شفرة المصدر لـ Remove Comments In Pdf باستخدام Aspose.Words for .NET
+### Exemple de code source pour Supprimer les commentaires dans Pdf en utilisant Aspose.Words pour .NET
 
-إليك التعليمات البرمجية المصدر الكاملة لإزالة التعليقات في ملف PDF باستخدام Aspose.Words for .NET:
+Voici le code source complet pour supprimer les commentaires dans un fichier PDF en utilisant Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Revisions.docx");
 
-	// إخفاء التعليقات في PDF.
+	// Masquez les commentaires dans le PDF.
 	doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 
 	doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");

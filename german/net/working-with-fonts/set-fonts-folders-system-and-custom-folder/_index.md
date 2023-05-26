@@ -1,31 +1,31 @@
 ---
-title: تعيين نظام مجلدات الخطوط والمجلد المخصص
-linktitle: تعيين نظام مجلدات الخطوط والمجلد المخصص
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد النظام ومجلدات الخطوط المخصصة عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Legen Sie das Schriftartenordnersystem und den benutzerdefinierten Ordner fest
+linktitle: Legen Sie das Schriftartenordnersystem und den benutzerdefinierten Ordner fest
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Festlegen von System- und benutzerdefinierten Schriftartenordnern beim Rendern eines Dokuments mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلدات خطوط النظام ومجلد مخصص عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلدات خطوط متعددة ، بما في ذلك مجلد النظام والمجلد المخصص ، لاستخدامها عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess zum Festlegen von Systemschriftartenordnern und eines benutzerdefinierten Ordners beim Rendern eines Dokuments mit Aspose.Words für .NET. Wir erklären Ihnen den gebündelten C#-Quellcode und stellen Ihnen eine umfassende Anleitung zur Verfügung, die Ihnen hilft, diese Funktion zu verstehen und in Ihren eigenen Projekten zu implementieren. Am Ende dieses Tutorials wissen Sie, wie Sie mehrere Schriftartenordner angeben, einschließlich des Systemordners und eines benutzerdefinierten Ordners, die Sie beim Rendern Ihrer Dokumente mit Aspose.Words für .NET verwenden können.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+Zuerst müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis festlegen. Dies ist der Ort, an dem Sie Ihr bearbeitetes gerendertes Dokument speichern möchten. Ersetzen Sie „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند للعرض
- ثم يمكنك تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Schritt 2: Laden Sie das zu rendernde Dokument
+ Anschließend können Sie das zu rendernde Dokument mit laden`Document` Klasse. Stellen Sie sicher, dass Sie den richtigen Dokumentpfad angeben.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تعيين مجلدات الخط المخصصة والنظام
- يمكنك الآن تعيين مجلدات خطوط النظام ومجلد مخصص باستخدام ملف`FontSettings` الطبقة و`SetFontsSources()` طريقة. أولاً ، تحتاج إلى استرداد قائمة مصادر الخطوط المعتمدة على البيئة التي تستخدم`GetFontsSources()` وتخزينه في قائمة. ثم يمكنك إنشاء مثيل جديد من`FolderFontSource`تحديد المسار إلى المجلد المخصص الذي يحتوي على الخطوط الخاصة بك. أضف هذا المثيل إلى قائمة مصادر الخطوط الموجودة. أخيرًا ، استخدم`SetFontsSources()` لتحديث مصادر الخطوط بالقائمة الجديدة.
+## Schritt 3: Legen Sie Systemordner und benutzerdefinierte Schriftartenordner fest
+ Jetzt können Sie mit dem Systemschriftartenordner und einen benutzerdefinierten Ordner festlegen`FontSettings` Klasse und die`SetFontsSources()` Methode. Zuerst müssen Sie die Liste der umgebungsabhängigen Schriftartquellen mithilfe von abrufen`GetFontsSources()` und speichern Sie es in einer Liste. Anschließend können Sie eine neue Instanz von erstellen`FolderFontSource`Geben Sie den Pfad zum benutzerdefinierten Ordner an, der Ihre Schriftarten enthält. Fügen Sie diese Instanz zur Liste der vorhandenen Schriftartquellen hinzu. Endlich verwenden`SetFontsSources()` um die Schriftartquellen mit der neuen Liste zu aktualisieren.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -36,37 +36,37 @@ FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
 ```
 
-## الخطوة 4: تطبيق إعدادات الخط
- بعد ذلك ، تحتاج إلى تطبيق إعدادات الخط على المستند الخاص بك باستخدام ملف`FontSettings` ممتلكات`Document` فصل.
+## Schritt 4: Schriftarteinstellungen anwenden
+ Als nächstes müssen Sie die Schriftarteinstellungen mithilfe von auf Ihr Dokument anwenden`FontSettings` Eigentum der`Document` Klasse.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 5: احفظ المستند المقدم
-أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف بواسطة
+## Schritt 5: Speichern Sie das gerenderte Dokument
+Abschließend können Sie das gerenderte Dokument in einer Datei speichern
 
-   باستخدام`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+   Verwendung der`Save()` Methode der`Document` Klasse. Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen angeben.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders System والمجلد المخصص باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Fonts-Ordnersystem und benutzerdefinierten Ordner festlegen“ mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Rendering.docx");
 	FontSettings fontSettings = new FontSettings();
-	// استرجع مصفوفة مصادر الخطوط المعتمدة على البيئة والتي يتم البحث عنها افتراضيًا.
-	// على سبيل المثال سيحتوي هذا على مصدر "Windows \ Fonts \" على أجهزة Windows.
-	// نضيف هذه المجموعة إلى قائمة جديدة لتسهيل إضافة أو إزالة مدخلات الخط.
+	// Rufen Sie das Array umgebungsabhängiger Schriftartquellen ab, die standardmäßig durchsucht werden.
+	// Dies enthält beispielsweise eine „Windows\Fonts\“-Quelle auf einem Windows-Computer.
+	// Wir fügen dieses Array einer neuen Liste hinzu, um das Hinzufügen oder Entfernen von Schriftarteinträgen erheblich zu vereinfachen.
 	List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-	// أضف مصدر مجلد جديد والذي سيوجه Aspose.Words للبحث في المجلد التالي عن الخطوط.
+	// Fügen Sie eine neue Ordnerquelle hinzu, die Aspose.Words anweist, den folgenden Ordner nach Schriftarten zu durchsuchen.
 	FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-	// أضف المجلد المخصص الذي يحتوي على خطوطنا إلى قائمة مصادر الخطوط الموجودة.
+	// Fügen Sie den benutzerdefinierten Ordner, der unsere Schriftarten enthält, zur Liste der vorhandenen Schriftartquellen hinzu.
 	fontSources.Add(folderFontSource);
 	FontSourceBase[] updatedFontSources = fontSources.ToArray();
 	fontSettings.SetFontsSources(updatedFontSources);
@@ -74,5 +74,5 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلدات خطوط النظام ومجلد مخصص عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلدات خطوط متعددة ، بما في ذلك مجلد النظام والمجلد المخصص ، لاستخدامهما عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+## Abschluss
+In diesem Tutorial haben wir gelernt, wie man beim Rendern eines Dokuments mit Aspose.Words für .NET Systemschriftartenordner und einen benutzerdefinierten Ordner einrichtet. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie ganz einfach mehrere Schriftartenordner angeben, einschließlich des Systemordners und eines benutzerdefinierten Ordners, die Sie beim Rendern Ihrer Dokumente verwenden möchten. Aspose.Words bietet eine leistungsstarke und flexible API für die Arbeit mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die beim Rendern Ihrer Dokumente verwendeten Schriftartquellen steuern und an Ihre spezifischen Anforderungen anpassen.

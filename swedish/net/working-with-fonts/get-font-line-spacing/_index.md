@@ -1,56 +1,56 @@
 ---
-title: احصل على تباعد أسطر الخط
-linktitle: احصل على تباعد أسطر الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تباعد بين الخطوط في مستند Word باستخدام Aspose.Words for .NET.
+title: Hämta teckensnittsradavstånd
+linktitle: Hämta teckensnittsradavstånd
+second_title: Aspose.Words för .NET API Referens
+description: I den här handledningen lär du dig hur du får teckensnittsradavstånd i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/get-font-line-spacing/
 ---
-في هذا البرنامج التعليمي ، سنخبرك بكيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يحدد تباعد أسطر الخط المسافة العمودية بين سطور النص. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+I den här handledningen kommer vi att berätta hur du får typsnittets radavstånd i ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Teckensnittets radavstånd definierar det vertikala avståndet mellan textraderna. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
-## الخطوة 1: إنشاء مستند جديد ومولد مستندات
- أولاً ، سننشئ مستندًا جديدًا عن طريق إنشاء مثيل لملف`Document` class ومنشئ المستندات عن طريق إنشاء مثيل لملف`DocumentBuilder` فصل.
+## Steg 1: Skapa ett nytt dokument och dokumentgenerator
+ Först skapar vi ett nytt dokument genom att instansiera`Document` klass och en dokumentbyggare genom att instansiera`DocumentBuilder` klass.
 
 ```csharp
-// قم بإنشاء مستند جديد
+// Skapa ett nytt dokument
 Document doc = new Document();
 
-// قم بإنشاء منشئ المستندات
+// Skapa en dokumentgenerator
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الخط
- بعد ذلك ، سنقوم بتكوين الخط عن طريق تعيين ملف`Name` خاصية منشئ الوثيقة.
+## Steg 2: Konfigurera typsnittet
+ Därefter kommer vi att konfigurera teckensnittet genom att ställa in`Name` dokumentgeneratorns egendom.
 
 ```csharp
-//تكوين الخط
+//Konfigurera typsnittet
 builder.Font.Name = "Calibri";
 ```
 
-## الخطوة 3: أضف نصًا إلى المستند
-سنستخدم الآن منشئ المستندات لإضافة نص منسق إلى المستند.
+## Steg 3: Lägg till text i dokumentet
+Vi kommer nu att använda dokumentgeneratorn för att lägga till formaterad text till dokumentet.
 
 ```csharp
-// أضف نصًا إلى المستند
+// Lägg till text i dokumentet
 builder. Writen("qText");
 ```
 
-## الخطوة 4: احصل على تباعد أسطر الخطوط
- الآن سوف نصل إلى`Font` كائن من الفقرة الأولى من المستند واسترداد قيمة`LineSpacing` ملكية.
+## Steg 4: Hämta teckensnittsradavstånd
+ Nu kommer vi åt`Font` föremål för första stycket i dokumentet och hämta värdet av`LineSpacing` fast egendom.
 
 ```csharp
-// احصل على تباعد الأسطر للخط
+// Hämta teckensnittets radavstånd
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### نموذج لشفرة مصدر للحصول على تباعد أسطر الخطوط باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Get Font Line Spacing med Aspose.Words för .NET 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -60,5 +60,5 @@ Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام Aspose.Words for .NET. يعد تباعد أسطر الخطوط أمرًا مهمًا للتحكم في التباعد الرأسي بين سطور النص. لا تتردد في استخدام هذه الميزة لتخصيص مظهر النص في مستنداتك.
+## Slutsats
+I den här handledningen såg vi hur man får typsnittets radavstånd i ett Word-dokument med Aspose.Words för .NET. Teckensnittets radavstånd är viktigt för att kontrollera det vertikala avståndet mellan textrader. Använd gärna den här funktionen för att anpassa utseendet på din text i dina dokument.

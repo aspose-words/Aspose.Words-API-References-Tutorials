@@ -1,50 +1,50 @@
 ---
-title: عنوان
-linktitle: عنوان
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام العنوان مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Rubrik
+linktitle: Rubrik
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder heading med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/working-with-markdown/heading/
 ---
 
-في هذا المثال ، سوف نوضح لك كيفية استخدام ميزة العناوين مع Aspose.Words for .NET. تُستخدم العناوين لبناء محتوى المستند وتحديد أولوياته.
+I det här exemplet kommer vi att visa dig hur du använder rubrikfunktionen med Aspose.Words för .NET. Rubriker används för att strukturera och prioritera innehållet i ett dokument.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Steg 1: Använda en dokumentgenerator
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Först använder vi en dokumentgenerator för att lägga till innehåll i vårt dokument.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تخصيص أنماط العناوين
+## Steg 2: Anpassa rubrikstilar
 
-بشكل افتراضي ، يمكن أن تحتوي أنماط العناوين في Word على تنسيق غامق ومائل. إذا لم نرغب في فرض هذه الخصائص ، فنحن بحاجة إلى تعيينها صراحة على "خطأ".
+Som standard kan rubrikstilar i Word ha fet och kursiv formatering. Om vi inte vill att dessa egenskaper ska tillämpas måste vi uttryckligen ställa in dem på "false".
 
 ```csharp
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
 
-## الخطوة 3: إضافة عنوان من المستوى 1
+## Steg 3: Lägga till en nivå 1-titel
 
- يمكننا إضافة عنوان من المستوى 1 عن طريق تحديد اسم نمط الفقرة المناسب واستخدام امتداد`Writeln` طريقة كتابة محتوى العنوان.
+ Vi kan lägga till en nivå 1-titel genom att ange lämpligt styckeformatnamn och använda`Writeln` metod för att skriva innehållet i titeln.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";
 builder.Writeln("This is an H1 tag");
 ```
 
-### مثال على شفرة المصدر للعنوان مع Aspose.Words for .NET
+### Exempel på källkod för rubrik med Aspose.Words för .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// بشكل افتراضي ، قد تحتوي أنماط العناوين في Word على تنسيق غامق ومائل.
-	//إذا كنا لا نريد التأكيد ، فاضبط هذه الخصائص صراحةً على false.
+	// Som standard kan rubrikstilar i Word ha fet och kursiv formatering.
+	//Om vi inte vill framhävas, ställ dessa egenskaper uttryckligen till false.
 	builder.Font.Bold = false;
 	builder.Font.Italic = false;
 
@@ -53,6 +53,6 @@ builder.Writeln("This is an H1 tag");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة العناوين مع Aspose.Words for .NET.
+Grattis! Du har nu lärt dig hur du använder rubrikfunktionen med Aspose.Words för .NET.
 
 

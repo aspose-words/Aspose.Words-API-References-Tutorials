@@ -1,42 +1,42 @@
 ---
-title: قاعدة افقية
-linktitle: قاعدة افقية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج قاعدة أفقية باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: La règle horizontale
+linktitle: La règle horizontale
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer une règle horizontale avec le guide pas à pas Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-markdown/horizontal-rule/
 ---
 
-في هذا المثال ، سوف نوضح لك كيفية استخدام ميزة القاعدة الأفقية مع Aspose.Words for .NET. يتم استخدام Horizontal Rule لفصل أقسام المستند بشكل مرئي.
+Dans cet exemple, nous allons vous montrer comment utiliser la fonction de règle horizontale avec Aspose.Words pour .NET. La règle horizontale est utilisée pour séparer visuellement les sections d'un document.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Étape 1 : Utiliser un générateur de documents
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Tout d'abord, nous allons utiliser un générateur de document pour ajouter du contenu à notre document.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: إدخال قاعدة أفقية
+## Étape 2 : Insertion d'une règle horizontale
 
- يمكننا إدخال قاعدة أفقية باستخدام`InsertHorizontalRule` طريقة منشئ الوثيقة.
+ Nous pouvons insérer une règle horizontale en utilisant le`InsertHorizontalRule` méthode du générateur de documents.
 
 ```csharp
 builder. InsertHorizontalRule();
 ```
 
-## عينة من التعليمات البرمجية المصدر للقاعدة الأفقية باستخدام Aspose.Words for .NET
+## Exemple de code source pour la règle horizontale avec Aspose.Words pour .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilisez un générateur de document pour ajouter du contenu au document.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// أدخل القاعدة الأفقية.
+	// Insérez une règle horizontale.
 	builder.InsertHorizontalRule();
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة القاعدة الأفقية مع Aspose.Words for .NET.
+Félicitation ! Vous avez maintenant appris à utiliser la fonction de règle horizontale avec Aspose.Words pour .NET.
 
 

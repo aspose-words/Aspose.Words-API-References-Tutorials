@@ -1,50 +1,50 @@
 ---
-title: تطبيق نمط الفقرة
-linktitle: تطبيق نمط الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق نمط فقرة باستخدام Aspose.Words for .NET.
+title: Använd styckeformat
+linktitle: Använd styckeformat
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder en styckestil med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/document-formatting/apply-paragraph-style/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تطبيق نمط فقرة باستخدام Aspose.Words for .NET. اتبع الخطوات أدناه لفهم الكود المصدري وتطبيق نمط الفقرة.
+I den här handledningen kommer vi att gå igenom hur du använder en styckestil med Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och tillämpa styckeformatet.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Steg 1: Skapa och konfigurera dokumentet
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Börja med att skapa ett nytt dokument och ett tillhörande DocumentBuilder-objekt. Här är hur:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين نمط الفقرة
+## Steg 2: Konfigurera styckestilen
 
-سنقوم الآن بتكوين نمط الفقرة باستخدام معرف النمط المدمج. إليك الطريقة:
+Vi kommer nu att konfigurera styckestilen med den inbyggda stilidentifieraren. Här är hur:
 
 ```csharp
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;
 ```
 
-## الخطوة 3: أضف محتوى
+## Steg 3: Lägg till innehåll
 
-سنقوم بإضافة محتوى إلى الفقرة. إليك الطريقة:
+Vi kommer att lägga till innehåll i stycket. Här är hur:
 
 ```csharp
 builder.Write("Hello");
 doc.Save(dataDir + "DocumentFormatting.ApplyParagraphStyle.docx");
 ```
 
-### مثال على شفرة المصدر لتطبيق Paragraph Style باستخدام Aspose.Words for .NET
+### Exempel på källkod för Apply Paragraph Style med Aspose.Words för .NET
 
-فيما يلي رمز المصدر الكامل لميزة "تطبيق نمط الفقرة" مع Aspose.Words for .NET:
+Här är den fullständiga källkoden för funktionen Apply Paragraph Style med Aspose.Words för .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -56,5 +56,5 @@ doc.Save(dataDir + "DocumentFormatting.ApplyParagraphStyle.docx");
 	
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تطبيق نمط فقرة باستخدام Aspose.Words for .NET.
+Med denna kod kommer du att kunna tillämpa en styckestil med Aspose.Words för .NET.
 

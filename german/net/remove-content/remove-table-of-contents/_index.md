@@ -1,44 +1,44 @@
 ---
-title: قم بإزالة جدول المحتويات
-linktitle: قم بإزالة جدول المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة جدول المحتويات من مستند Word باستخدام Aspose.Words for .NET.
+title: Inhaltsverzeichnis entfernen
+linktitle: Inhaltsverzeichnis entfernen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET das Inhaltsverzeichnis aus einem Word-Dokument entfernen.
 type: docs
 weight: 10
 url: /de/net/remove-content/remove-table-of-contents/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إزالة جدول المحتويات من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. قد يكون جدول المحتويات أحيانًا زائدًا عن الحاجة أو غير ضروري ، وسيساعدك هذا الرمز في إزالته بشكل فعال. سنقدم لك دليلًا تفصيليًا لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET das Inhaltsverzeichnis aus einem Word-Dokument entfernen. Das Inhaltsverzeichnis kann manchmal überflüssig oder unnötig sein, und dieser Code hilft Ihnen, es effektiv zu entfernen. Wir stellen Ihnen eine Schritt-für-Schritt-Anleitung zur Verfügung, die Ihnen hilft, den Code zu verstehen und in Ihrem eigenen .NET-Projekt zu implementieren.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على جدول محتويات تريد حذفه
+## Voraussetzungen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
+- Grundkenntnisse der Programmiersprache C#
+- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
+- Ein Word-Dokument mit einem Inhaltsverzeichnis, das Sie löschen möchten
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+ Zuerst müssen Sie den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments festlegen. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فئة باستخدام`Load` طريقة.
+## Schritt 2: Laden Sie das Dokument hoch
+ Als nächstes laden wir das Word-Dokument in eine Instanz von`Document` Klasse mit der`Load` Methode.
 
 ```csharp
-//قم بتحميل المستند
+//Laden Sie das Dokument
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## الخطوة 3: احذف جدول المحتويات
- لإزالة جدول المحتويات ، سنقوم بالمرور عبر نوع TOC (جدول المحتويات)`FieldStart` العقد في المستند. سنخزن هذه العقد حتى نتمكن من الوصول إليها بسرعة وإنشاء قائمة بالعقد لحذفها.
+## Schritt 3: Löschen Sie das Inhaltsverzeichnis
+ Um das Inhaltsverzeichnis zu entfernen, durchlaufen wir den Typ TOC (Inhaltsverzeichnis).`FieldStart` Knoten im Dokument. Wir werden diese Knoten speichern, damit wir schnell darauf zugreifen und eine Liste der zu löschenden Knoten erstellen können.
 
 ```csharp
-// تخزين عقد FieldStart لحقول جدول المحتويات في المستند للوصول السريع.
+// Speichern Sie FieldStart-Knoten von Inhaltsverzeichnisfeldern im Dokument, um schnell darauf zugreifen zu können.
 List<FieldStart> fieldStarts = new List<FieldStart>();
-// هذه قائمة لتخزين العقد الموجودة داخل جدول المحتويات المحدد. سيتم حذفها في نهاية هذه الطريقة.
+// Dies ist eine Liste zum Speichern der im angegebenen Inhaltsverzeichnis gefundenen Knoten. Sie werden am Ende dieser Methode gelöscht.
 List<Node> nodeList = new List<Node>();
 
 foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
@@ -49,7 +49,7 @@ foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
      }
 }
 
-// تحقق من وجود فهرس جدول المحتويات المحدد.
+// Überprüfen Sie, ob der angegebene TOC-Index vorhanden ist.
 if (index > fieldStarts.Count - 1)
      throw new ArgumentOutOfRangeException("TOC index is out of range");
 
@@ -58,12 +58,12 @@ bool isRemoving = true;
 Node currentNode = fieldStarts[index];
 while (isRemoving)
 {
-     // من الآمن تخزين هذه العقد وحذفها جميعًا في النهاية.
+     // Es ist sicherer, diese Knoten zu speichern und am Ende alle zu löschen.
      nodeList.Add(currentNode);
      currentNode = currentNode.NextPreOrder(doc);
 
-     // عندما نواجه عقدة FieldEnd من النوع FieldTOC ،
-     // نعلم أننا وصلنا إلى نهاية جدول المحتويات الحالي ونتوقف هنا.
+     // Wenn wir auf einen FieldEnd-Knoten vom Typ FieldTOC stoßen,
+     // Wir wissen, dass wir am Ende des aktuellen Inhaltsverzeichnisses angelangt sind und hören hier auf.
      if (currentNode.NodeType == NodeType.FieldEnd)
      {
          FieldEnd fieldEnd = (FieldEnd)currentNode;
@@ -83,18 +83,18 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
 
-### عينة من التعليمات البرمجية المصدر لـ Remove Table Of Contents باستخدام Aspose.Words for .NET 
+### Beispielquellcode zum Entfernen des Inhaltsverzeichnisses mit Aspose.Words für .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//قم بتحميل المستند
+//Laden Sie das Dokument
 Document doc = new Document(dataDir + "your-document.docx");
 
-// قم بتخزين عقد FieldStart لحقول جدول المحتويات في المستند للوصول السريع.
+// Speichern Sie die FieldStart-Knoten von TOC-Feldern im Dokument, um schnell darauf zugreifen zu können.
 List<FieldStart> fieldStarts = new List<FieldStart>();
-// هذه قائمة لتخزين العقد الموجودة داخل جدول المحتويات المحدد. ستتم إزالتها في نهاية هذه الطريقة.
+// Dies ist eine Liste zum Speichern der im angegebenen Inhaltsverzeichnis gefundenen Knoten. Sie werden am Ende dieser Methode entfernt.
 List<Node> nodeList = new List<Node>();
 
 foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
@@ -105,7 +105,7 @@ foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
 	}
 }
 
-// تأكد من وجود جدول المحتويات المحدد بواسطة الفهرس الذي تم تمريره.
+// Stellen Sie sicher, dass das durch den übergebenen Index angegebene Inhaltsverzeichnis vorhanden ist.
 if (index > fieldStarts.Count - 1)
 	throw new ArgumentOutOfRangeException("TOC index is out of range");
 
@@ -114,12 +114,12 @@ bool isRemoving = true;
 Node currentNode = fieldStarts[index];
 while (isRemoving)
 {
-	// من الآمن تخزين هذه العقد وحذفها جميعًا مرة واحدة لاحقًا.
+	// Es ist sicherer, diese Knoten zu speichern und später alle auf einmal zu löschen.
 	nodeList.Add(currentNode);
 	currentNode = currentNode.NextPreOrder(doc);
 
-	// بمجرد أن نواجه عقدة FieldEnd من النوع FieldTOC ،
-	// نعلم أننا وصلنا إلى نهاية جدول المحتويات الحالي ونتوقف هنا.
+	// Sobald wir auf einen FieldEnd-Knoten vom Typ FieldTOC stoßen,
+	// Wir wissen, dass wir am Ende des aktuellen Inhaltsverzeichnisses angelangt sind und hören hier auf.
 	if (currentNode.NodeType == NodeType.FieldEnd)
 	{
 		FieldEnd fieldEnd = (FieldEnd) currentNode;
@@ -137,5 +137,5 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
         
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، قدمنا دليلًا تفصيليًا لإزالة جدول المحتويات من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. باتباع التعليمات البرمجية والإرشادات المتوفرة ، يمكنك بسهولة التخلص من جدول المحتويات وتحسين تخطيط المستند. تذكر تعديل مسار الدليل وأسماء الملفات لتناسب احتياجاتك الخاصة.
+## Abschluss
+In diesem Tutorial haben wir eine Schritt-für-Schritt-Anleitung zum Entfernen des Inhaltsverzeichnisses aus einem Word-Dokument mithilfe der Aspose.Words-Bibliothek für .NET vorgestellt. Indem Sie den bereitgestellten Code und die Anweisungen befolgen, können Sie das Inhaltsverzeichnis ganz einfach entfernen und das Layout Ihres Dokuments verbessern. Denken Sie daran, den Verzeichnispfad und die Dateinamen an Ihre spezifischen Bedürfnisse anzupassen.

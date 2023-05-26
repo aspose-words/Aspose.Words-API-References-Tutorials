@@ -1,32 +1,32 @@
 ---
-title: استبدل النص الذي يحتوي على أحرف وصفية
-linktitle: استبدل النص الذي يحتوي على أحرف وصفية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استبدال النص الذي يحتوي على أحرف أولية في مستندات Word باستخدام Aspose.Words for .NET.
+title: Remplacer le texte contenant des méta-caractères
+linktitle: Remplacer le texte contenant des méta-caractères
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à remplacer du texte contenant des métacaractères dans des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/find-and-replace-text/replace-text-containing-meta-characters/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة استبدال النص الذي يحتوي على أحرف وصفية في Aspose.Words مكتبة .NET. تتيح لك هذه الميزة استبدال أجزاء من النص في مستند يحتوي على أحرف وصفية محددة.
+Dans cet article, nous allons explorer le code source C # ci-dessus pour comprendre comment utiliser la fonction Remplacer le texte contenant des méta-caractères dans Aspose.Words pour la bibliothèque .NET. Cette fonctionnalité vous permet de remplacer des portions de texte dans un document contenant des méta-caractères spécifiques.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Connaissance de base du langage C#.
+- Environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## Étape 1 : Création d'un nouveau document
 
- قبل أن نبدأ في استخدام استبدال النص بأحرف أولية ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Avant de commencer à utiliser le remplacement de texte de métacaractère, nous devons créer un nouveau document en utilisant Aspose.Words pour .NET. Cela peut être fait en instanciant un`Document` objet:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل النص في المستند
+## Étape 2 : Insérer du texte dans le document
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نستخدم الامتداد`Writeln`طريقة لإدراج فقرات نصية متعددة في أقسام مختلفة:
+ Une fois que nous avons un document, nous pouvons insérer du texte à l'aide d'un`DocumentBuilder` objet. Dans notre exemple, nous utilisons le`Writeln`méthode pour insérer plusieurs paragraphes de texte dans différentes sections :
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -39,9 +39,9 @@ builder.Writeln("Second section");
 builder.Writeln("1st paragraph");
 ```
 
-## الخطوة 3: تكوين خيارات البحث والاستبدال
+## Étape 3 : Configuration des options de recherche et de remplacement
 
- سنقوم الآن بتكوين خيارات البحث والاستبدال باستخدام ملف`FindReplaceOptions` هدف. في مثالنا ، قمنا بتعيين محاذاة الفقرات المستبدلة إلى "توسيط":
+ Nous allons maintenant configurer les options de recherche et de remplacement à l'aide d'un`FindReplaceOptions` objet. Dans notre exemple, nous définissons l'alignement des paragraphes remplacés sur "Centré":
 
 ```csharp
 FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
@@ -50,37 +50,37 @@ findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment
 .Center;
 ```
 
-## الخطوة 4: استبدال النص الذي يحتوي على أحرف أولية
+## Étape 4 : Remplacer le texte contenant des métacaractères
 
- نحن نستخدم ال`Range.Replace` طريقة لإجراء استبدال النص الذي يحتوي على أحرف أولية. في مثالنا ، نستبدل كل تكرار لكلمة "قسم" متبوعًا بفاصل فقرة بالكلمة نفسها متبوعة بعدة شرطات وفاصل فقرة جديد:
+ Nous utilisons le`Range.Replace` méthode pour effectuer le remplacement du texte contenant des métacaractères. Dans notre exemple, nous remplaçons chaque occurrence du mot "section" suivi d'un saut de paragraphe par le même mot suivi de plusieurs tirets et d'un nouveau saut de paragraphe :
 
 ```csharp
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 
-## الخطوة 5: استبدال علامة نصية مخصصة
+## Étape 5 : Remplacer une balise de texte personnalisée
 
- نستخدم أيضًا ملف`Range.Replace` طريقة لاستبدال العرف "{insert-section}"علامة نصية مع فاصل مقطعي. في مثالنا ، نستبدل"{insert-section}"مع & ب" لإدراج فاصل مقطعي:
+ Nous utilisons également le`Range.Replace` méthode pour remplacer un personnalisé "{insert-section}" balise de texte avec un saut de section. Dans notre exemple, nous remplaçons "{insert-section}" avec "&b" pour insérer un saut de section :
 
 ```csharp
 count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 ```
 
-## الخطوة 6: حفظ المستند المحرر
+## Étape 6 : Enregistrer le document modifié
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+ Enfin, nous enregistrons le document modifié dans un répertoire spécifié à l'aide de la`Save` méthode:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 ```
 
-### مثال على شفرة المصدر لاستبدال النص الذي يحتوي على أحرف وصفية باستخدام Aspose.Words for .NET
+### Exemple de code source pour Remplacer le texte contenant des méta-caractères à l'aide de Aspose.Words pour .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح استخدام استبدال النص الذي يحتوي على أحرف أولية مع Aspose.Words for .NET:
+Voici l'exemple de code source complet pour démontrer l'utilisation du remplacement de texte contenant des métacaractères avec Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -96,17 +96,17 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 	FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 	findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 
-	// ضاعف كل فاصل فقرة بعد كلمة "قسم" ، أضف نوعًا من التسطير واجعله في المنتصف.
+	// Doublez chaque saut de paragraphe après le mot "section", ajoutez une sorte de soulignement et centrez-le.
 	int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 
-	// إدراج فاصل مقطعي بدلاً من علامة نصية مخصصة.
+	// Insérez un saut de section au lieu d'une balise de texte personnalisée.
 	count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 
 	doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
   
 ```
 
-## خاتمة
+## Conclusion
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة استبدال النص الذي يحتوي على أحرف وصفية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص واستبدال نص يحتوي على أحرف أولية وحفظ المستند المعدل.
+Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonctionnalité Remplacer le texte contenant des méta-caractères d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour créer un document, insérer du texte, remplacer du texte contenant des métacaractères et enregistrer le document modifié.
 

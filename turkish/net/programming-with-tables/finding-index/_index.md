@@ -1,60 +1,60 @@
 ---
-title: إيجاد الفهرس
-linktitle: إيجاد الفهرس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية العثور على فهارس الجدول والصف والخلية في مستند Word باستخدام Aspose.Words for .NET.
+title: Bulma Endeksi
+linktitle: Bulma Endeksi
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde tablo, satır ve hücre dizinlerini nasıl bulacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/finding-index/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words for .NET للعثور على فهارس جدول وصف وخلية في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من العثور على فهارس عناصر الصفيف في مستندات Word الخاصة بك برمجيًا.
+Bu öğreticide, bir Word belgesindeki tablo, satır ve hücre dizinlerini bulmak için Aspose.Words for .NET'i nasıl kullanacağımızı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu öğreticinin sonunda, Word belgelerinizdeki dizi öğelerinin dizinlerini programlı olarak bulabileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+## 2. Adım: Belgeyi yükleme ve tabloya erişme
+Tabloyla çalışmaya başlamak için onu içeren belgeyi yüklememiz ve tabloya erişmemiz gerekiyor. Bu adımları takip et:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Tables.docx");
 
-// الوصول إلى المصفوفة
+// Diziye erişim
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة 3: ابحث عن فهرس الجدول والصف والخلية
-بعد ذلك ، سنجد فهارس الجدول والصف والخلية في المصفوفة باستخدام الطرق التي يوفرها Aspose.Words for .NET. استخدم الكود التالي:
+## 3. Adım: Tablo, Satır ve Hücre Dizini Bulun
+Ardından, Aspose.Words for .NET tarafından sağlanan yöntemleri kullanarak dizideki tablo, satır ve hücre dizinlerini bulacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
-// ابحث عن فهرس الجدول
+// Tablo dizinini bulun
 NodeCollection allTables = doc.GetChildNodes(NodeType.Table, true);
 int tableIndex = allTables.IndexOf(table);
 Console.WriteLine("\nTable index is " + tableIndex);
 
-// ابحث عن فهرس الصف
+// Satır dizinini bulun
 int rowIndex = table.IndexOf(table.LastRow);
 Console.WriteLine("\nLine index is " + rowIndex);
 
-// ابحث عن فهرس الخلية
+// Hücre indeksini bulun
 Row row = table. LastRow;
 int cellIndex = row.IndexOf(row.Cells[4]);
 Console.WriteLine("\nCell index is " + cellIndex);
 ```
 
- هنا نستخدم ملف`GetChildNodes` طريقة للحصول على جميع الجداول في المستند. ثم نستخدم`IndexOf` للعثور على فهرس الجدول المحدد في مجموعة جميع الجداول. وبالمثل ، نستخدم`IndexOf` للعثور على فهرس الصف الأخير في الجدول ، و`IndexOf` داخل صف للعثور على فهرس خلية معينة.
+ Burada kullandığımız`GetChildNodes` belgedeki tüm tabloları alma yöntemi. Sonra kullanırız`IndexOf` tüm tabloların koleksiyonunda belirli tablonun dizinini bulmak için. Benzer şekilde, kullandığımız`IndexOf` tablodaki son satırın dizinini bulmak için ve`IndexOf` belirli bir hücrenin dizinini bulmak için bir satırın içinde.
 
-### عينة من التعليمات البرمجية المصدر للعثور على الفهرس باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Dizin Bulmak için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -69,5 +69,5 @@ Console.WriteLine("\nCell index is " + cellIndex);
 	Console.WriteLine("\nCell index is " + cellIndex);
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية العثور على فهارس الجدول والصف والخلية في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك العثور على المواضع الدقيقة لعناصر الصفيف وتحديدها في مستندات Word الخاصة بك برمجيًا. تسمح لك هذه الميزة بمعالجة عناصر المصفوفة والتفاعل معها بدقة لتناسب احتياجاتك الخاصة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki tablo, satır ve hücre dizinlerini nasıl bulacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizdeki dizi öğelerinin tam konumlarını program aracılığıyla bulabilir ve tanımlayabilirsiniz. Bu özellik, özel ihtiyaçlarınıza uyacak şekilde dizi öğelerini tam olarak değiştirmenize ve bunlarla etkileşim kurmanıza olanak tanır.

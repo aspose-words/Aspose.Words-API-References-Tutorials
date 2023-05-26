@@ -1,52 +1,52 @@
 ---
-title: تحميل Chm
-linktitle: تحميل Chm
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل ملفات CHM باستخدام Aspose.Words for .NET.
+title: 负载链
+linktitle: 负载链
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 加载 CHM 文件。
 type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/load-chm/
 ---
 
-عند العمل باستخدام ملفات تعليمات HTML (CHM) في تطبيق C # ، من المهم أن تكون قادرًا على تحميلها بشكل صحيح. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحميل ملفات CHM باستخدام خيارات التحميل المناسبة. في هذا الدليل التفصيلي ، سنوضح لك كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل ملف CHM باستخدام خيارات تحميل LoadOptions.
+在 C# 应用程序中使用 HTML 帮助 (CHM) 文件时，能够正确加载它们非常重要。使用适用于 .NET 的 Aspose.Words 库，您可以使用适当的加载选项轻松加载 CHM 文件。在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET C# 源代码使用 LoadOptions 加载选项加载 CHM 文件。
 
-## فهم مكتبة Aspose.Words
+## 理解 Aspose.Words 库
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库很重要。 Aspose.Words 是一个强大的库，可以在包括.NET 在内的不同平台上创建、编辑、转换和保护 Word 文档。它提供了许多用于操作文档的功能，例如插入文本、更改格式、添加部分等等。
 
-## تكوين خيارات التحميل
+## 配置加载选项
 
-الخطوة الأولى هي تكوين خيارات التحميل لملف CHM الخاص بنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى ضبط خاصية التشفير على الترميز المناسب لملفات CHM ، عادةً "windows-1251". هيريس كيفية القيام بذلك:
+第一步是为我们的 CHM 文件配置加载选项。使用 LoadOptions 类指定加载参数。在我们的例子中，我们需要将 Encoding 属性设置为 CHM 文件的适当编码，通常是“windows-1251”。方法如下：
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding. GetEncoding("windows-1251") };
 ```
 
-قمنا بإنشاء كائن LoadOptions جديد وقمنا بتعيين خاصية التشفير على ترميز "windows-1251" لملفات CHM.
+我们创建一个新的 LoadOptions 对象并将 Encoding 属性设置为 CHM 文件的“windows-1251”编码。
 
-## تحميل ملف CHM
+## 加载 CHM 文件
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل ملف CHM باستخدام فئة المستند وتحديد خيارات التحميل. هنا مثال :
+现在我们已经配置了加载选项，我们可以使用 Document 类加载 CHM 文件并指定加载选项。这是一个例子：
 
 ```csharp
 Document doc = new Document(dataDir + "HTML help.chm", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل ملف CHM "HTML help.chm" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+在此示例中，我们使用指定的加载选项加载位于文档目录中的 CHM 文件“HTML help.chm”。
 
-### مثال على شفرة المصدر لـ LoadOptions مع وظيفة "Load Chm" باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的具有“Load Chm”功能的 LoadOptions 示例源代码
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "تحميل Chm"
+//使用“Load Chm”功能配置加载选项
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding. GetEncoding("windows-1251") };
 
-// قم بتحميل ملف CHM بالخيارات المحددة
+//使用指定选项加载 CHM 文件
 Document doc = new Document(dataDir + "HTML help.chm", loadOptions);
 ```
 
-## خاتمة
+## 结论
 
-في هذا الدليل ، شرحنا كيفية تحميل ملف CHM باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يعد تحميل ملفات CHM بشكل صحيح أمرًا ضروريًا لتتمكن من معالجتها وتحويلها بكفاءة باستخدام Aspose.Words.
+在本指南中，我们解释了如何使用 .NET 的 Aspose.Words 库加载 CHM 文件。按照提供的步骤并使用提供的 C# 源代码，您可以轻松地将此功能应用到您的 C# 应用程序中。正确加载 CHM 文件对于使用 Aspose.Words 有效地操作和转换它们至关重要。

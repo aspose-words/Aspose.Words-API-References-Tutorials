@@ -1,79 +1,79 @@
 ---
-title: تنظيف النمط المكرر
-linktitle: تنظيف النمط المكرر
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتنظيف الأنماط المكررة في مستند باستخدام Aspose.Words for .NET. تم تضمين كود المصدر الكامل.
+title: 清理重复样式
+linktitle: 清理重复样式
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 清理文档中重复样式的分步指南。包括完整的源代码。
 type: docs
 weight: 10
 url: /zh/net/programming-with-document-options-and-settings/cleanup-duplicate-style/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال التعليمات البرمجية المصدر C # خطوة بخطوة لتنظيف الأنماط المكررة باستخدام Aspose.Words for .NET. تساعد هذه الميزة في إزالة الأنماط المكررة من المستند.
+在本教程中，我们将逐步引导您通过 C# 源代码使用 Aspose.Words for .NET 清理重复样式。此功能有助于从文档中删除重复的样式。
 
-## الخطوة 1: إعداد المشروع
+## 第 1 步：项目设置
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+首先，在您喜欢的 IDE 中创建一个新的 C# 项目。确保在您的项目中引用了 Aspose.Words for .NET 库。
 
-## الخطوة الثانية: تحميل المستند
+## 第 2 步：装入文档
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد تنظيفه. استخدم الكود التالي لتحميل المستند:
+在此步骤中，我们将加载要清理的 Word 文档。使用以下代码加载文档：
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+代替`"YOUR DOCUMENTS DIRECTORY"`使用文档所在目录的实际路径。
 
-## الخطوة 3: عد الأنماط قبل التنظيف
+## 第 3 步：清洁前清点样式
 
-قبل متابعة التنظيف ، سنقوم بحساب عدد الأنماط الموجودة في المستند. استخدم الكود التالي لعرض عدد الأنماط:
+在继续清理之前，我们将计算文档中存在的样式数。使用以下代码显示样式计数：
 
 ```csharp
 Console.WriteLine(doc.Styles.Count);
 ```
 
-يعرض هذا البيان عدد الأنماط الموجودة في المستند.
+此语句显示文档中存在的样式数。
 
-## الخطوة 4: تنظيف الأنماط المكررة
+## 第 4 步：清理重复样式
 
-لنقم الآن بتنظيف الأنماط المكررة من المستند. استخدم الكود التالي لإجراء التنظيف:
+现在让我们从文档中清除重复的样式。使用以下代码执行清理：
 
 ```csharp
 CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 doc. Cleanup(options);
 ```
 
- يقوم هذا الرمز بتنظيف الأنماط المكررة من المستند باستخدام الخيارات المحددة. في هذا المثال ، قمنا بتمكين`DuplicateStyle` خيار لتنظيف الأنماط المكررة.
+此代码使用指定的选项从文档中清除重复的样式。在这个例子中，我们启用了`DuplicateStyle`清理重复样式的选项。
 
-## الخطوة 5: عد الأنماط بعد التنظيف
+## 第 5 步：清点后清点样式
 
-بعد إجراء التنظيف ، سنحسب عدد الأنماط مرة أخرى للتحقق مما إذا كان قد انخفض. استخدم الكود التالي لعرض عدد الأنماط الجديدة:
+清理完毕后，我们会再次统计款式数量，看看是否有所减少。使用以下代码显示新样式计数：
 
 ```csharp
 Console.WriteLine(doc.Styles.Count);
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");
 ```
 
-يعرض هذا البيان عدد الأنماط المتبقية بعد التنظيف.
+此语句显示清理后剩余的样式数。
 
-### مثال على شفرة المصدر لـ Cleanup Duplicate Style باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 清理重复样式的示例源代码
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
-	// عدد الأنماط قبل التنظيف.
+	//清理前的样式计数。
 	Console.WriteLine(doc.Styles.Count);
 
-	// ينظف الأنماط المكررة من المستند.
+	//清除文档中的重复样式。
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	//عدد الأنماط بعد تقليل التنظيف.
+	//清理后的样式数减少了。
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

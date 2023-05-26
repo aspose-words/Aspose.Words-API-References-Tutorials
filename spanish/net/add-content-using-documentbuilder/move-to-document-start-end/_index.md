@@ -1,71 +1,71 @@
 ---
-title: الانتقال إلى المستند بداية النهاية
-linktitle: الانتقال إلى المستند بداية النهاية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للانتقال إلى بداية المستند ونهايته في مستندات Word باستخدام هذا الدليل التفصيلي.
+title: Mover a Documento Inicio Fin
+linktitle: Mover a Documento Inicio Fin
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a usar Aspose.Words para .NET para pasar al principio y al final del documento en documentos de Word con esta guía paso a paso.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Document Start / End في Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تتيح للمطورين إنشاء مستندات Word وتعديلها وتحويلها برمجيًا. تتيح لنا ميزة Move To Document Start / End إمكانية التنقل إلى بداية المستند أو نهايته باستخدام فئة DocumentBuilder.
+En este ejemplo, exploraremos la función Mover al inicio/fin del documento de Aspose.Words para .NET. Aspose.Words es una poderosa biblioteca de manipulación de documentos que permite a los desarrolladores crear, modificar y convertir documentos de Word mediante programación. La característica Move To Document Start/End nos permite navegar hasta el principio o el final de un documento utilizando la clase DocumentBuilder.
 
-## شرح شفرة المصدر خطوة بخطوة
+## Explicando el código fuente paso a paso
 
-دعنا ننتقل إلى التعليمات البرمجية المصدر خطوة بخطوة لفهم كيفية استخدام ميزة Move To Document Start / End باستخدام Aspose.Words for .NET.
+Repasemos el código fuente paso a paso para entender cómo usar la función Mover al inicio/fin del documento usando Aspose.Words para .NET.
 
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## Paso 1: Inicializar el documento y el generador de documentos
 
-بعد ذلك ، قم بتهيئة كائنات Document و DocumentBuilder:
+A continuación, inicialice los objetos Document y DocumentBuilder:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: الانتقال إلى بداية المستند
+## Paso 2: Ir al inicio del documento
 
-لنقل موضع المؤشر إلى بداية المستند ، استخدم طريقة MoveToDocumentStart لفئة DocumentBuilder:
+Para mover la posición del cursor al principio del documento, utilice el método MoveToDocumentStart de la clase DocumentBuilder:
 
 ```csharp
 builder.MoveToDocumentStart();
 ```
 
-## الخطوة 3: الانتقال إلى نهاية المستند
+## Paso 3: Ir al final del documento
 
-لتحريك موضع المؤشر إلى نهاية المستند ، استخدم طريقة MoveToDocumentEnd لفئة DocumentBuilder:
+Para mover la posición del cursor al final del documento, utilice el método MoveToDocumentEnd de la clase DocumentBuilder:
 
 ```csharp
 builder.MoveToDocumentEnd();
 ```
 
-## الخطوة 4: إخراج موضع المؤشر
+## Paso 4: Salida de la posición del cursor
 
-يمكنك إخراج موضع المؤشر باستخدام Console.WriteLine أو أي طريقة أخرى مرغوبة. على سبيل المثال:
+Puede generar la posición del cursor usando Console.WriteLine o cualquier otro método deseado. Por ejemplo:
 
 ```csharp
 Console.WriteLine("\nThis is the beginning of the document.");
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-### مثال على شفرة المصدر لـ Move To Document Start / End باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Mover al inicio/fin del documento usando Aspose.Words para .NET
 
 ```csharp
 	
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// انقل موضع المؤشر إلى بداية المستند.
+	// Mueva la posición del cursor al principio de su documento.
 	builder.MoveToDocumentStart();
 	Console.WriteLine("\nThis is the beginning of the document.");
 
-	// انقل موضع المؤشر إلى نهاية المستند.
+	// Mueva la posición del cursor al final de su documento.
 	builder.MoveToDocumentEnd();
 	Console.WriteLine("\nThis is the end of the document.");
 	
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا المثال ، اكتشفنا ميزة Move To Document Start / End في Aspose.Words for .NET. تعلمنا كيفية الانتقال إلى بداية ونهاية المستند باستخدام فئة DocumentBuilder. هذه الميزة مفيدة عند العمل برمجيًا مع مستندات Word والحاجة إلى معالجة المحتوى أو إدراجه في مواضع محددة داخل المستند.
+En este ejemplo, hemos explorado la función Mover al inicio/fin del documento de Aspose.Words para .NET. Aprendimos a navegar hasta el principio y el final de un documento usando la clase DocumentBuilder. Esta característica es útil cuando se trabaja mediante programación con documentos de Word y se necesita manipular o insertar contenido en posiciones específicas dentro del documento.

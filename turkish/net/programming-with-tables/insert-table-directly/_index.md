@@ -1,46 +1,46 @@
 ---
-title: أدخل الجدول مباشرة
-linktitle: أدخل الجدول مباشرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET.
+title: Doğrudan Tablo Ekle
+linktitle: Doğrudan Tablo Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile doğrudan bir Word belgesine tablo eklemeyi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/insert-table-directly/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من إدراج الجداول مباشرةً في مستندات Word برمجيًا.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesine doğrudan tablo eklemeyi öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinize program aracılığıyla doğrudan tablo ekleyebileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة 2: إنشاء المستند والجدول
-لبدء العمل مع المصفوفة ، نحتاج إلى إنشاء مستند جديد وتهيئة المصفوفة. اتبع هذه الخطوات:
+## Adım 2: Belge ve Tabloyu Oluşturma
+Dizi ile çalışmaya başlamak için yeni bir belge oluşturmamız ve diziyi başlatmamız gerekiyor. Bu adımları takip et:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Belge oluşturma
 Document doc = new Document();
 
-// قم بإنشاء المصفوفة
+// Diziyi oluştur
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة 3: بناء المصفوفة
-بعد ذلك ، سنبني الجدول بإضافة صفوف وخلايا. استخدم الكود التالي كمثال:
+## 3. Adım: Diziyi oluşturma
+Ardından, satırlar ve hücreler ekleyerek tabloyu oluşturacağız. Aşağıdaki kodu örnek olarak kullanın:
 
 ```csharp
-// قم بإنشاء الصف الأول
+// İlk satırı oluştur
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);
 
-// قم بإنشاء الخلية الأولى
+// İlk hücreyi oluştur
 Cell cell = new Cell(doc);
 cell.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 cell.CellFormat.Width = 80;
@@ -48,54 +48,54 @@ cell.AppendChild(new Paragraph(doc));
 cell.FirstParagraph.AppendChild(new Run(doc, "Text in row 1, cell 1"));
 row.AppendChild(cell);
 
-// قم بتكرار الخلية للخلية الثانية في الصف
+// Satırdaki ikinci hücre için hücreyi çoğalt
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Text in row 1, cell 2"));
 ```
 
- هنا ننشئ صفًا بامتداد`AllowBreakAcrossPages` تعيين الخاصية على`true` للسماح بفصل الصفحات بين الصفوف. نقوم بعد ذلك بإنشاء خلية ذات خلفية ملونة وعرض ثابت ومحتوى نصي محدد. ثم نكرر هذه الخلية لإنشاء الخلية الثانية في الصف.
+ Burada şununla bir satır oluşturuyoruz:`AllowBreakAcrossPages` özellik ayarlandı`true` satırlar arasında sayfa kırılmasına izin vermek için. Daha sonra renkli bir arka plana, sabit genişliğe ve belirtilen metin içeriğine sahip bir hücre oluşturuyoruz. Daha sonra sıradaki ikinci hücreyi oluşturmak için bu hücreyi çoğaltıyoruz.
 
-## الخطوة 4: جدول ملاءمة تلقائي
-يمكننا تطبيق تعديلات تلقائية على الجدول لتنسيقه بشكل صحيح. استخدم الكود التالي:
+## 4. Adım: Tabloyu Otomatik Sığdır
+Doğru şekilde biçimlendirmek için tabloya otomatik ayarlamalar uygulayabiliriz. Aşağıdaki kodu kullanın:
 
 ```csharp
 table. AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
-يطبق سطر التعليمات البرمجية هذا احتواءًا تلقائيًا استنادًا إلى عرض العمود الثابت.
+Bu kod satırı, sabit sütun genişliklerine dayalı bir otomatik sığdırma uygular.
 
-## الخطوة 5: تسجيل ملف
+## 5. Adım:
 
-  وثيقة معدلة
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع إدراج الجدول مباشرةً. استخدم الكود التالي:
+  değiştirilmiş belge
+Son olarak, değiştirilen belgeyi tablo doğrudan eklenmiş olarak kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### نموذج التعليمات البرمجية المصدر لـ Insert Table مباشرة باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Doğrudan Tablo Ekle için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
-	// نبدأ بإنشاء كائن الجدول. لاحظ أنه يجب علينا تمرير كائن المستند
-	//منشئ كل عقدة. هذا لأن كل عقدة نقوم بإنشائها يجب أن تنتمي
-	// لبعض الوثائق.
+	// Tablo nesnesini oluşturarak başlıyoruz. Belge nesnesini iletmemiz gerektiğini unutmayın.
+	//her düğümün yapıcısına. Bunun nedeni, oluşturduğumuz her düğümün ait olması gerektiğidir.
+	// bazı belgelere.
 	Table table = new Table(doc);
 	doc.FirstSection.Body.AppendChild(table);
-	// هنا يمكننا أن نطلق على "ضمان الحد الأدنى" لإنشاء الصفوف والخلايا لنا. تستخدم هذه الطريقة
-	// للتأكد من أن العقدة المحددة صالحة. في هذه الحالة ، يجب أن يحتوي الجدول الصالح على صف واحد وخلية واحدة على الأقل.
-	// بدلاً من ذلك ، سنتعامل مع إنشاء الصف والجدول بأنفسنا.
-	// ستكون هذه أفضل طريقة للقيام بذلك إذا كنا ننشئ جدولًا داخل خوارزمية.
+	// Burada bizim için satırları ve hücreleri oluşturmak için SureMinimum'u çağırabiliriz. Bu yöntem kullanılır
+	// belirtilen düğümün geçerli olduğundan emin olmak için. Bu durumda, geçerli bir tablo en az bir Satır ve bir hücreye sahip olmalıdır.
+	// Bunun yerine satır ve tabloyu kendimiz oluşturacağız.
+	// Bir algoritma içinde bir tablo oluşturuyor olsaydık, bunu yapmanın en iyi yolu bu olurdu.
 	Row row = new Row(doc);
 	row.RowFormat.AllowBreakAcrossPages = true;
 	table.AppendChild(row);
-	// يمكننا الآن تطبيق أي إعدادات احتواء تلقائي.
+	// Artık herhangi bir otomatik sığdırma ayarını uygulayabiliriz.
 	table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 	Cell cell = new Cell(doc);
 	cell.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
@@ -103,13 +103,13 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 	cell.AppendChild(new Paragraph(doc));
 	cell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 1 Text"));
 	row.AppendChild(cell);
-	// ثم نكرر العملية للخلايا والصفوف الأخرى في الجدول.
-	// يمكننا أيضًا تسريع الأمور عن طريق استنساخ الخلايا والصفوف الموجودة.
+	// Daha sonra tablodaki diğer hücreler ve satırlar için işlemi tekrar ederdik.
+	// Mevcut hücreleri ve satırları klonlayarak da işleri hızlandırabiliriz.
 	row.AppendChild(cell.Clone(false));
 	row.LastCell.AppendChild(new Paragraph(doc));
 	row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
 	doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ رمز C # المقدم ، يمكنك إدراج الجداول مباشرةً في مستندات Word برمجيًا. تتيح لك هذه الميزة إنشاء الجداول وتخصيصها وفقًا لاحتياجاتك الخاصة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak doğrudan bir Word belgesine tablo eklemeyi öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, program aracılığıyla doğrudan Word belgelerinize tablolar ekleyebilirsiniz. Bu özellik, özel ihtiyaçlarınıza göre tablolar oluşturmanıza ve özelleştirmenize olanak tanır.

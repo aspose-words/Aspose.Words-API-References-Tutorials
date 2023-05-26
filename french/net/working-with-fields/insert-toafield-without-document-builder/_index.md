@@ -1,35 +1,35 @@
 ---
-title: أدخل حقل TOA بدون Document Builder
-linktitle: أدخل حقل TOA بدون Document Builder
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإدخال حقل TOA بدون Document Builder باستخدام Aspose.Words for .NET.
+title: Insérer un champ TOA sans Document Builder
+linktitle: Insérer un champ TOA sans Document Builder
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour insérer un champ TOA sans Document Builder en utilisant Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fields/insert-toafield-without-document-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "TOA Field Insertion" في Aspose.Words for .NET. اتبع كل خطوة بعناية للحصول على النتائج المرجوة.
+Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la fonctionnalité "TOA Field Insertion" d'Aspose.Words pour .NET. Suivez attentivement chaque étape pour obtenir les résultats souhaités.
 
-## الخطوة 1: إعداد دليل المستند
+## Étape 1 : configuration du répertoire de documents
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Dans le code fourni, vous devez spécifier le répertoire de vos documents. Remplacez la valeur "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin approprié vers votre répertoire de documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## Étape 2 : Création du document et du paragraphe
 
-نبدأ بإنشاء مستند جديد وتهيئة فقرة.
+Nous commençons par créer un nouveau document et initialiser un paragraphe.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 3: إدخال حقل TA
+## Étape 3 : Insertion du champ TA
 
-نستخدم فئة FieldTA لإدراج حقل TA في الفقرة.
+Nous utilisons la classe FieldTA pour insérer un champ TA dans le paragraphe.
 
 ```csharp
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
@@ -37,56 +37,56 @@ fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 ```
 
-## الخطوة 4: إضافة الفقرة إلى نص المستند
+## Étape 4 : Ajouter le paragraphe au corps du document
 
-نضيف الفقرة التي تحتوي على حقل TA إلى نص المستند.
+Nous ajoutons le paragraphe contenant le champ TA au corps du document.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## الخطوة 5: إنشاء فقرة لحقل TOA
+## Étape 5 : Création du paragraphe pour le champ TOA
 
-نقوم بإنشاء فقرة جديدة لحقل TOA.
+Nous créons un nouveau paragraphe pour le champ TOA.
 
 ```csharp
 para = new Paragraph(doc);
 ```
 
-## الخطوة 6: إدخال حقل TOA
+## Étape 6 : Insertion du champ TOA
 
-نستخدم فئة FieldToa لإدراج حقل TOA في الفقرة.
+Nous utilisons la classe FieldToa pour insérer un champ TOA dans le paragraphe.
 
 ```csharp
 FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 ```
 
-## الخطوة 7: إضافة الفقرة إلى نص المستند
+## Étape 7 : Ajouter le paragraphe au corps du document
 
-نضيف الفقرة التي تحتوي على حقل TOA إلى نص المستند.
+Nous ajoutons le paragraphe contenant le champ TOA au corps du document.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## الخطوة 8: تحديث TOA Field
+## Étape 8 : Mettre à jour le champ TOA
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث حقل TOA.
+ Enfin, nous appelons le`Update()` méthode pour mettre à jour le champ TOA.
 
 ```csharp
 fieldToa.Update();
 ```
 
-### مثال على رمز المصدر لإدخال حقل TOA بدون Document Builder مع Aspose.Words for .NET
+### Exemple de code source pour l'insertion de champ TOA sans Document Builder avec Aspose.Words pour .NET
 
 ```csharp
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
-// نريد إدخال حقول TA و TOA مثل هذا:
-// {TA \ c 1 \ l "القيمة 0"}
-// {TOA \ c 1}
+// Nous voulons insérer les champs TA et TOA comme ceci :
+// { TA \c 1 \l "Valeur 0" }
+// { TOA \c 1 }
 
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);
 fieldTA.EntryCategory = "1";

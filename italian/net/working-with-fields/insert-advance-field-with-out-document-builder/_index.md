@@ -1,41 +1,41 @@
 ---
-title: أدخل الحقل المتقدم بدون Document Builder
-linktitle: أدخل الحقل المتقدم بدون Document Builder
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل متقدم في مستندات Word باستخدام Aspose.Words for .NET.
+title: Inserisci campo avanzato senza il generatore di documenti
+linktitle: Inserisci campo avanzato senza il generatore di documenti
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire un campo avanzato nei tuoi documenti Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-advance-field-with-out-document-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج حقل متقدم بدون DocumentBuilder" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Ecco una guida dettagliata per spiegare il codice sorgente C# di seguito, che utilizza la funzione "Inserimento avanzato di campi senza DocumentBuilder" di Aspose.Words per .NET. Assicurati di seguire attentamente ogni passaggio per ottenere i risultati desiderati.
 
-## الخطوة 1: إعداد دليل المستند
+## Passaggio 1: impostazione della directory dei documenti
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "YOUR DOCUMENT DIRECTORY" con il percorso appropriato alla directory dei tuoi documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## Passaggio 2: creazione del documento e del paragrafo
 
-نبدأ بإنشاء مستند جديد وجلب الفقرة الأولى.
+Iniziamo creando un nuovo documento e recuperando il primo paragrafo.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## الخطوة 3: إدخال الحقل المتقدم
+## Passo 3: Inserimento del campo avanzato
 
- نحن نستخدم ال`AppendField()`طريقة لإدراج حقل متقدم في الفقرة.
+ Noi usiamo il`AppendField()`metodo per inserire un campo avanzato nel paragrafo.
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 ```
 
-ثم نقوم بتكوين الخصائص المختلفة للحقل المتقدم من خلال تحديد القيم المطلوبة.
+Configuriamo quindi le varie proprietà del campo avanzato specificando i valori desiderati.
 
 ```csharp
 field. DownOffset = "10";
@@ -46,23 +46,23 @@ field.HorizontalPosition = "100";
 field. VerticalPosition = "100";
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Infine, chiamiamo il`Update()` metodo per aggiornare il campo.
 
 ```csharp
 field. Update();
 ```
 
-### مثال على الكود المصدري لإدخال حقل متقدم بدون DocumentBuilder مع Aspose.Words for .NET
+### Esempio del codice sorgente per l'inserimento di un campo avanzato senza DocumentBuilder con Aspose.Words per .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة.
+// Creazione di documenti.
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-// أدخل الحقل المتقدم.
+// Inserisci il campo avanzato.
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 
 field. DownOffset = "10";
@@ -77,7 +77,7 @@ field. Update();
 doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأدخلنا حقلاً متقدمًا دون استخدام DocumentBuilder ، وقمنا بتكوين خصائص الحقل المختلفة ، وحفظنا المستند باسم ملف محدد.
+In questo esempio, abbiamo creato un nuovo documento, inserito un campo avanzato senza utilizzare DocumentBuilder, configurato le varie proprietà del campo e salvato il documento con un nome file specificato.
 
-هذا يختتم دليلنا حول كيفية استخدام ميزة "إدراج حقل متقدم بدون DocumentBuilder" مع Aspose.Words for .NET.
+Questo conclude la nostra guida su come utilizzare la funzione "Inserisci campo avanzato senza DocumentBuilder" con Aspose.Words per .NET.
 

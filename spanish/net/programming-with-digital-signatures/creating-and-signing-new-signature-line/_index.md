@@ -1,18 +1,18 @@
 ---
-title: إنشاء وتوقيع خط توقيع جديد
-linktitle: إنشاء وتوقيع خط توقيع جديد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء سطر توقيع جديد والتوقيع عليه في مستند Word باستخدام Aspose.Words for .NET.
+title: Crear y firmar una nueva línea de firma
+linktitle: Crear y firmar una nueva línea de firma
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a crear y firmar una nueva línea de firma en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لاستخدام ميزة إنشاء سطر توقيع جديد وتوقيعه باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إدراج سطر توقيع في مستند Word ، وتعيين الخيارات المخصصة وتوقيع المستند. اتبع الخطوات التالية:
+En este tutorial, lo guiaremos a través de los pasos para usar la función Crear y firmar una nueva línea de firma con Aspose.Words para .NET. Esta función le permite insertar una línea de firma en un documento de Word, establecer opciones personalizadas y firmar el documento. Siga los pasos a continuación:
 
-## الخطوة 1: إنشاء المستند والمولد
+## Paso 1: Crear el Documento y el Generador
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+Comience creando una instancia de la clase Document y un objeto DocumentBuilder:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -20,27 +20,27 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إدخال سطر التوقيع
+## Paso 2: Inserción de la línea de firma
 
-استخدم طريقة InsertSignatureLine () لكائن DocumentBuilder لإدراج سطر توقيع جديد في المستند:
+Utilice el método InsertSignatureLine() del objeto DocumentBuilder para insertar una nueva línea de firma en el documento:
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
 ```
 
-## الخطوة 3: احفظ المستند
+## Paso 3: Guarde el documento
 
-احفظ المستند المعدل:
+Guarde el documento modificado:
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند.
+Asegúrese de especificar la ruta y el nombre de archivo correctos para guardar el documento.
 
-## الخطوة 4: توقيع الوثيقة
+## Paso 4: Firma del documento
 
-لتوقيع الوثيقة ، تحتاج إلى تعيين خيارات التوقيع واستخدام فئة DigitalSignatureUtil:
+Para firmar el documento, debe configurar las opciones de firma y usar la clase DigitalSignatureUtil:
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -55,15 +55,15 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 	dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند وصورة خط التوقيع والمستند الموقع.
+Asegúrese de especificar las rutas correctas para el documento, la imagen de la línea de firma y el documento firmado.
 
-### مثال على شفرة المصدر لإنشاء وتوقيع سطر توقيع جديد باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para crear y firmar una nueva línea de firma usando Aspose.Words para .NET
 
-إليك شفرة المصدر الكاملة لإنشاء وتوقيع سطر توقيع جديد باستخدام Aspose.Words for .NET:
+Aquí está el código fuente completo para crear y firmar una nueva línea de firma con Aspose.Words para .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -85,5 +85,5 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ```
 
-باتباع هذه الخطوات ، ستتمكن بسهولة من إنشاء وتوقيع سطر توقيع جديد في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Siguiendo estos pasos, podrá crear y firmar fácilmente una nueva línea de firma en su documento de Word con Aspose.Words para .NET.
 

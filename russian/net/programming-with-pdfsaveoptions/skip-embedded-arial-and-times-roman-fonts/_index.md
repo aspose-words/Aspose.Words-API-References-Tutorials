@@ -1,56 +1,56 @@
 ---
-title: تخطي الخطوط المضمنة Arial و Times Roman Fonts
-linktitle: تخطي الخطوط المضمنة Arial و Times Roman Fonts
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي لإنشاء ملف PDF بدون تضمين خطوط Arial و Times Roman باستخدام Aspose.Words for .NET.
+title: Пропустить встроенные шрифты Arial и Times Roman
+linktitle: Пропустить встроенные шрифты Arial и Times Roman
+second_title: Справочник по API Aspose.Words для .NET
+description: Пошаговое руководство по созданию PDF без встраивания шрифтов Arial и Times Roman с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام الميزة لتخطي خطوط Arial و Times Roman المضمنة إلى حجم ملف التعريف باستخدام Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تكوين خيار وضع دمج الخط في مستند وإنشاء ملف PDF بدون تضمين خطوط Arial و Times Roman.
+В этой статье представлено пошаговое руководство по использованию функции пропуска встроенных шрифтов Arial и Times Roman до размера метафайла с помощью Aspose.Words для .NET. Мы подробно объясним каждую часть кода. В конце этого руководства вы сможете понять, как настроить параметр режима встраивания шрифта в документ и создать PDF-файл без встраивания шрифтов Arial и Times Roman.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Прежде чем начать, убедитесь, что вы установили и настроили библиотеку Aspose.Words for .NET в своем проекте. Вы можете найти библиотеку и инструкции по установке на веб-сайте Aspose.
 
-## الخطوة 1: تحديد دليل المستند
+## Шаг 1: Определите каталог документов
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Для начала вам нужно указать путь к каталогу, в котором находятся ваши документы. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу ваших документов.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Шаг 2: Загрузите документ
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Далее нам нужно загрузить документ, который мы хотим обработать. В этом примере предполагается, что документ называется «Rendering.docx» и находится в указанном каталоге документов.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF مع دمج الخط
+## Шаг 3. Настройте параметры сохранения в формате PDF с встраиванием шрифта
 
- لتخطي تضمين خطوط Arial و Times Roman في ملف PDF الذي تم إنشاؤه ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن وتعيين`FontEmbeddingMode` ملكية ل`PdfFontEmbeddingMode.EmbedAll`.
+ Чтобы пропустить встраивание шрифтов Arial и Times Roman в сгенерированный PDF-файл, нам нужно настроить`PdfSaveOptions` объект и установить`FontEmbeddingMode` собственность на`PdfFontEmbeddingMode.EmbedAll`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
 ```
 
-## الخطوة 4: احفظ المستند كملف PDF بدون خطوط مضمنة
+## Шаг 4. Сохраните документ в формате PDF без встроенных шрифтов.
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Наконец, мы можем сохранить документ в формате PDF, используя параметры сохранения, настроенные ранее.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في إنشاء ملف PDF بدون تضمين خطوط Arial و Times Roman باستخدام Aspose.Words for .NET.
+Вот и все ! Вы успешно создали PDF-файл без встраивания шрифтов Arial и Times Roman с помощью Aspose.Words для .NET.
 
-### مثال على كود المصدر لتخطي خطوط Arial و Times Roman المضمنة بحجم ملف التعريف باستخدام Aspose.Words for .NET
+### Пример исходного кода для пропуска встроенных шрифтов Arial и Times Roman при размере метафайла с помощью Aspose.Words для .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Путь к каталогу документов.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 

@@ -1,62 +1,62 @@
 ---
-title: قائمة نقطية
-linktitle: قائمة نقطية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء قائمة نقطية باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Liste à puces
+linktitle: Liste à puces
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à créer une liste à puces avec le guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-markdown/bulleted-list/
 ---
 
-في هذا البرنامج التعليمي ، سنخبرك بكيفية إنشاء قائمة نقطية باستخدام Aspose.Words for .NET. يتم استخدام قائمة نقطية لسرد العناصر بدون استخدام الترقيم.
+Dans ce didacticiel, nous allons vous expliquer comment créer une liste à puces avec Aspose.Words pour .NET. Une liste à puces est utilisée pour répertorier les éléments sans utiliser de numérotation.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Étape 1 : Utiliser un générateur de documents
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Tout d'abord, nous allons utiliser un générateur de document pour ajouter du contenu à notre document.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تطبيق قائمة نقطية افتراضية
+## Étape 2 : Application d'une liste à puces par défaut
 
- يمكننا تطبيق قائمة افتراضية ذات تعداد نقطي باستخدام قائمة منشئ المستندات`ApplyBulletDefault` طريقة.
+ Nous pouvons appliquer une liste à puces par défaut à l'aide du générateur de documents`ApplyBulletDefault` méthode.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## الخطوة 3: تخصيص تنسيق الرمز النقطي
+## Étape 3 : Personnaliser le format des puces
 
- يمكننا تخصيص تنسيق الرمز النقطي من خلال الوصول إلى خصائص`ListFormat.List.ListLevels[0]`. في هذا المثال ، نستخدم الشرطة "-" كرمز نقطي.
+ Nous pouvons personnaliser le format des puces en accédant aux propriétés de`ListFormat.List.ListLevels[0]`. Dans cet exemple, nous utilisons le tiret "-" comme puce.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## الخطوة 4: إضافة عناصر إلى القائمة
+## Étape 4 : Ajouter des éléments à la liste
 
- يمكننا الآن إضافة عناصر إلى القائمة النقطية باستخدام أداة إنشاء المستندات`Writeln` طريقة.
+ Nous pouvons maintenant ajouter des éléments à la liste à puces à l'aide de l'outil de création de documents`Writeln` méthode.
 
 ```csharp
 builder. Writen("Element 1");
 builder. Writen("Element 2");
 ```
 
-## الخطوة 5: إزالة المسافة البادئة من القائمة
+## Étape 5 : Suppression de l'indentation de la liste
 
- إذا أردنا إنشاء قائمة فرعية ، فيمكننا زيادة المسافة البادئة باستخدام`ListFormat.ListIndent()` طريقة. في هذا المثال ، نضيف قائمة فرعية إلى البندين 2 أ و 2 ب.
+ Si nous voulons créer une sous-liste, nous pouvons augmenter l'indentation en utilisant le`ListFormat.ListIndent()` méthode. Dans cet exemple, nous ajoutons une sous-liste aux éléments 2a et 2b.
 
 ```csharp
 builder.ListFormat.ListIndent();
 builder. Writeln("Element 2a");
 builder.Writeln("Element 2b");
 ```
-### مثال على شفرة المصدر لقائمة التعداد النقطي باستخدام Aspose.Words for .NET
+### Exemple de code source pour la liste à puces utilisant Aspose.Words pour .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilisez un générateur de document pour ajouter du contenu au document.
 	DocumentBuilder builder = new DocumentBuilder();
 
 	builder.ListFormat.ApplyBulletDefault();
@@ -72,5 +72,5 @@ builder.Writeln("Element 2b");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية إنشاء قائمة نقطية باستخدام Aspose.Words for .NET.
+Félicitation ! Vous avez maintenant appris à créer une liste à puces avec Aspose.Words pour .NET.
 

@@ -1,56 +1,56 @@
 ---
-title: تصدير معلومات رحلة الذهاب والإياب
-linktitle: تصدير معلومات رحلة الذهاب والإياب
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتصدير معلومات الرحلة ذهابًا وإيابًا عند حفظ مستند بتنسيق HTML باستخدام Aspose.Words for .NET.
+title: Exportar información de ida y vuelta
+linktitle: Exportar información de ida y vuelta
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para exportar información de ida y vuelta al guardar un documento como HTML con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتصدير معلومات رحلة الذهاب والعودة من مستند مع Aspose.Words for .NET. تتيح لك هذه الميزة تضمين معلومات رحلة الذهاب والإياب في ملف HTML المُصدَّر ، مما يسهل استرداد التغييرات التي تم إجراؤها على المستند الأصلي.
+En este tutorial, lo guiaremos a través del código fuente de C# para exportar información de ida y vuelta desde un documento con Aspose.Words para .NET. Esta función le permite incluir información de ida y vuelta en el archivo HTML exportado, lo que facilita la recuperación de los cambios realizados en el documento original.
 
-## الخطوة 1: إعداد المشروع
+## Paso 1: Configuración del proyecto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
-في هذه الخطوة ، سنقوم بتحميل المستند للتصدير. استخدم الكود التالي لتحميل المستند من دليل محدد:
+En este paso cargaremos el documento a exportar. Use el siguiente código para cargar el documento desde un directorio específico:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- هذا الرمز ينشئ مثيل`Document` عن طريق تحميل المستند من الدليل المحدد.
+ Este código crea una instancia de`Document` cargando el documento desde el directorio especificado.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي بتنسيق HTML
+## Paso 3: Configuración de las opciones de copia de seguridad de HTML
 
-سنقوم الآن بتكوين خيارات حفظ HTML لتصدير معلومات الرحلة ذهابًا وإيابًا الخاصة بالمستند. استخدم الكود التالي:
+Ahora configuraremos las opciones de guardado de HTML para exportar la información de ida y vuelta del documento. Usa el siguiente código:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions`وتعيين`ExportRoundtripInformation` الخيار ل`true` لتضمين معلومات رحلة الذهاب والإياب عند التصدير.
+ Este código crea una instancia de`HtmlSaveOptions` establece el`ExportRoundtripInformation` opción a`true` para incluir información de ida y vuelta al exportar.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## Paso 4: Convertir y guardar el documento a HTML
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+Finalmente, convertiremos el documento a HTML utilizando las opciones de guardado de HTML configuradas anteriormente. Usa el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML بما في ذلك معلومات الرحلة ذهابًا وإيابًا ، ويحفظ ملف HTML الذي تم تصديره إلى الدليل المحدد.
+Este código convierte el documento a HTML, incluida la información de ida y vuelta, y guarda el archivo HTML exportado en el directorio especificado.
 
-### مثال على شفرة المصدر لتصدير معلومات رحلة الذهاب والإياب باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para exportar información de ida y vuelta usando Aspose.Words para .NET
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -60,4 +60,4 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html",
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+ Asegúrese de especificar la ruta correcta al directorio de documentos en el`dataDir` variable.

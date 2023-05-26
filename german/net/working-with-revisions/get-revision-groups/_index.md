@@ -1,26 +1,26 @@
 ---
-title: احصل على مجموعات المراجعة
-linktitle: احصل على مجموعات المراجعة
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على مجموعات المراجعة في مستند Word باستخدام Aspose.Words for .NET.
+title: Revisionsgruppen abrufen
+linktitle: Revisionsgruppen abrufen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erhalten Sie Revisionsgruppen in einem Word-Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/working-with-revisions/get-revision-groups/
 ---
 
-في هذا الدليل التدريجي ، سنخبرك بكيفية الحصول على مجموعات المراجعة في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+In dieser Schritt-für-Schritt-Anleitung erklären wir Ihnen, wie Sie mit Aspose.Words für .NET die Revisionsgruppen in ein Word-Dokument abrufen. Wir stellen Ihnen den vollständigen Quellcode zur Verfügung und zeigen Ihnen, wie Sie die Markdown-Ausgabe formatieren.
 
-## الخطوة 1: تحميل المستند
+## Schritt 1: Laden des Dokuments
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+Der erste Schritt besteht darin, das Dokument mit den Überarbeitungen hochzuladen.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة 2: تصفح مجموعات المراجعة
+## Schritt 2: Revisionsgruppen durchsuchen
 
-بعد ذلك ، سنقوم بعمل حلقة عبر مجموعات المراجعة الموجودة في المستند ونعرض تفاصيلها ، مثل المؤلف ونوع المراجعة والنص المنقح.
+Als Nächstes durchlaufen wir die im Dokument vorhandenen Revisionsgruppen und zeigen deren Details an, z. B. Autor, Revisionstyp und überarbeiteten Text.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -31,9 +31,9 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 ```
 
 
-### مثال على شفرة المصدر للحصول على مجموعات المراجعة باستخدام Aspose.Words for .NET
+### Beispielquellcode für Get Revision Groups mit Aspose.Words für .NET
 
-إليك التعليمات البرمجية المصدر الكاملة للحصول على مجموعات المراجعة في مستند باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Quellcode zum Abrufen der Revisionsgruppen in einem Dokument mit Aspose.Words für .NET:
 
 ```csharp
 

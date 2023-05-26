@@ -1,62 +1,62 @@
 ---
-title: تصدير هيكل الوثيقة
-linktitle: تصدير هيكل الوثيقة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتصدير بنية المستند باستخدام Aspose.Words for .NET.
+title: Belge Yapısını Dışa Aktar
+linktitle: Belge Yapısını Dışa Aktar
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile belge yapısını dışa aktarmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/export-document-structure/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة بنية مستند التصدير مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، سوف تكون قادرًا على فهم كيفية تصدير بنية المستند وإنشاء ملف PDF بهيكل المستند المرئي.
+Bu makale, Belge Yapısını Dışa Aktar özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgenin yapısını nasıl dışa aktaracağınızı ve belgenin yapısı görünür şekilde bir PDF oluşturmayı öğrenebileceksiniz.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
-## الخطوة 1: تحديد دليل المستند
+## 1. Adım: Belge dizinini tanımlayın
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Başlamak için, belgelerinizin bulunduğu dizine giden yolu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## 2. Adım: Belgeyi yükleyin
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Paragraphs.docx" ويقع في دليل المستندات المحدد.
+Ardından, işlemek istediğimiz belgeyi yüklememiz gerekiyor. Bu örnekte, belgenin "Paragraphs.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Paragraphs.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF
+## 3. Adım: PDF olarak kaydetme seçeneklerini yapılandırın
 
- لتصدير بنية المستند وجعل الهيكل مرئيًا في جزء التنقل "المحتوى" في Adobe Acrobat Pro أثناء تحرير ملف PDF ، نحتاج إلى تكوين`PdfSaveOptions` كائن مع`ExportDocumentStructure` تعيين الخاصية على`true`.
+ PDF dosyasını düzenlerken belge yapısını dışa aktarmak ve yapıyı Adobe Acrobat Pro'nun "İçerik" gezinme bölmesinde görünür kılmak için,`PdfSaveOptions` ile nesne`ExportDocumentStructure` özellik ayarlandı`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
 ```
 
-## الخطوة 4: احفظ المستند كملف PDF بهيكل المستند
+## 4. Adım: Belgeyi, belge yapısıyla PDF olarak kaydedin
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Son olarak, daha önce yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedebiliriz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تصدير بنية المستند وإنشاء ملف PDF بهيكل المستند المرئي باستخدام Aspose.Words for .NET.
+Bu kadar ! Bir belge yapısını başarıyla dışa aktardınız ve Aspose.Words for .NET kullanarak belge yapısının görünür olduğu bir PDF oluşturdunuz.
 
-### نموذج التعليمات البرمجية المصدر لتصدير بنية المستند باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile belge yapısını dışa aktarmak için örnek kaynak kodu
 
 
 ```csharp
 
-            // المسار إلى دليل المستندات.
+            // Belgeler dizininin yolu.
 			string dataDir = "YOUR DOCUMENT DIRECTORY";
             Document doc = new Document(dataDir + "Paragraphs.docx");
 
-            // سيتم زيادة حجم الملف وستظهر البنية في جزء التنقل "المحتوى"
-            // Adobe Acrobat Pro ، أثناء تحرير ملف .pdf.
+            // Dosya boyutu artırılacak ve yapı "İçerik" gezinme bölmesinde görünür olacak
+            // .pdf dosyasını düzenlerken Adobe Acrobat Pro'nun
             PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
 
             doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);

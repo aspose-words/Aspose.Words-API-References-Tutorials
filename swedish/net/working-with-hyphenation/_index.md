@@ -1,17 +1,17 @@
 ---
-title: العمل مع الواصلة
-linktitle: العمل مع الواصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على الواصلة كلمات اللغات ، وتحميل قاموس الواصلة للغة واستدعاء الواصلة باستخدام Aspose.Words for .NET.
+title: Arbeta med avstavning
+linktitle: Arbeta med avstavning
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar innehåller avstavning av Words of Languages, ladda avstavningsordbok för språk och avstavningsuppringning med Aspose.Words för .NET.
 type: docs
 weight: 750
 url: /sv/net/working-with-hyphenation/
 ---
-يعد العمل باستخدام Hyphenation موردًا شاملاً يرشدك خلال استخدام الواصلة في مستندات Word باستخدام مكتبة Aspose.Words for .NET. . توفر البرامج التعليمية توضيحات خطوة بخطوة ، وكود مصدر كامل ، وأمثلة عملية لفهم الواصلة وإدارتها بشكل فعال في مستنداتك. ستتعلم كيفية تمكين الواصلة التلقائية ، وتخصيص قواميس الواصلة ، وتطبيق الواصلة على فقرات معينة ، والتعامل مع استثناءات الواصلة ، والمزيد. يعد هذا المورد ضروريًا للمطورين الذين يرغبون في تحسين قابلية قراءة مستندات Word وتخطيطها باستخدام الواصلة مع Aspose.Words for .NET.
+Att arbeta med avstavning är en omfattande resurs som leder dig genom att använda avstavning i dina Word-dokument med hjälp av Aspose.Words för .NET-biblioteket. . Handledningarna ger steg-för-steg-förklaringar, fullständig källkod och praktiska exempel för att effektivt förstå och hantera avstavning i dina dokument. Du kommer att lära dig hur du aktiverar automatisk avstavning, anpassar avstavningsordböcker, tillämpar avstavning på specifika stycken, hanterar avstavningsundantag och mer. Den här resursen är viktig för utvecklare som vill förbättra läsbarheten och layouten för sina Word-dokument genom att använda avstavning med Aspose.Words för .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [وصل كلمات اللغات](./hyphenate-words-of-languages/) | تعرف على كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تحميل قاموس الواصلة للغة](./load-hyphenation-dictionary-for-language/) |تعرف على كيفية تحميل قاموس الواصلة للغة معينة في Aspose.Words for .NET. |
-| [رد اتصال الواصلة](./hyphenation-callback/) | تعرف على كيفية استخدام رد نداء الواصلة في Aspose.Words for .NET للتعامل مع الواصلة في الكلمات. |
+| [Avstava ord av språk](./hyphenate-words-of-languages/) | Lär dig hur du avstavar ord på olika språk i Word-dokument med Aspose.Words för .NET. |
+| [Ladda avstavningsordbok för språk](./load-hyphenation-dictionary-for-language/) |Lär dig hur du laddar en avstavningsordbok för ett specifikt språk i Aspose.Words för .NET. |
+| [Återuppringning med avstavning](./hyphenation-callback/) | Lär dig hur du använder återuppringning av avstavning i Aspose.Words för .NET för att hantera ordavstavning. |

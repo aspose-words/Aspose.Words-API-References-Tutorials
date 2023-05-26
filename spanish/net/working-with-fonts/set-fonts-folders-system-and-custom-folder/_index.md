@@ -1,31 +1,31 @@
 ---
-title: تعيين نظام مجلدات الخطوط والمجلد المخصص
-linktitle: تعيين نظام مجلدات الخطوط والمجلد المخصص
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد النظام ومجلدات الخطوط المخصصة عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Establecer sistema de carpetas de fuentes y carpeta personalizada
+linktitle: Establecer sistema de carpetas de fuentes y carpeta personalizada
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para configurar el sistema y las carpetas de fuentes personalizadas al representar un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلدات خطوط النظام ومجلد مخصص عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلدات خطوط متعددة ، بما في ذلك مجلد النظام والمجلد المخصص ، لاستخدامها عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para configurar las carpetas de fuentes del sistema y una carpeta personalizada al representar un documento con Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo especificar varias carpetas de fuentes, incluida la carpeta del sistema y una carpeta personalizada, para utilizarlas al representar sus documentos con Aspose.Words para .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند للعرض
- ثم يمكنك تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Paso 2: Cargue el documento para renderizar
+ Luego puede cargar el documento para renderizar usando el`Document` clase. Asegúrese de especificar la ruta correcta del documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تعيين مجلدات الخط المخصصة والنظام
- يمكنك الآن تعيين مجلدات خطوط النظام ومجلد مخصص باستخدام ملف`FontSettings` الطبقة و`SetFontsSources()` طريقة. أولاً ، تحتاج إلى استرداد قائمة مصادر الخطوط المعتمدة على البيئة التي تستخدم`GetFontsSources()` وتخزينه في قائمة. ثم يمكنك إنشاء مثيل جديد من`FolderFontSource`تحديد المسار إلى المجلد المخصص الذي يحتوي على الخطوط الخاصة بك. أضف هذا المثيل إلى قائمة مصادر الخطوط الموجودة. أخيرًا ، استخدم`SetFontsSources()` لتحديث مصادر الخطوط بالقائمة الجديدة.
+## Paso 3: Configure el sistema y las carpetas de fuentes personalizadas
+ Ahora puede establecer carpetas de fuentes del sistema y una carpeta personalizada usando el`FontSettings` clase y el`SetFontsSources()` método. Primero, debe recuperar la lista de fuentes de fuentes dependientes del entorno usando`GetFontsSources()` y almacenarlo en una lista. A continuación, puede crear una nueva instancia de`FolderFontSource`especificando la ruta a la carpeta personalizada que contiene sus fuentes. Agregue esta instancia a la lista de fuentes de fuentes existentes. Finalmente, usa`SetFontsSources()` para actualizar las fuentes de fuentes con la nueva lista.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -36,37 +36,37 @@ FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
 ```
 
-## الخطوة 4: تطبيق إعدادات الخط
- بعد ذلك ، تحتاج إلى تطبيق إعدادات الخط على المستند الخاص بك باستخدام ملف`FontSettings` ممتلكات`Document` فصل.
+## Paso 4: aplicar la configuración de fuente
+ A continuación, debe aplicar la configuración de fuente a su documento utilizando el`FontSettings` propiedad de la`Document` clase.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 5: احفظ المستند المقدم
-أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف بواسطة
+## Paso 5: Guarde el documento renderizado
+Finalmente, puede guardar el documento renderizado en un archivo
 
-   باستخدام`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+   utilizando el`Save()` metodo de la`Document` clase. Asegúrese de especificar la ruta y el nombre de archivo correctos.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders System والمجلد المخصص باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para establecer el sistema de carpetas de fuentes y la carpeta personalizada usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Rendering.docx");
 	FontSettings fontSettings = new FontSettings();
-	// استرجع مصفوفة مصادر الخطوط المعتمدة على البيئة والتي يتم البحث عنها افتراضيًا.
-	// على سبيل المثال سيحتوي هذا على مصدر "Windows \ Fonts \" على أجهزة Windows.
-	// نضيف هذه المجموعة إلى قائمة جديدة لتسهيل إضافة أو إزالة مدخلات الخط.
+	// Recupere la matriz de fuentes de fuentes dependientes del entorno que se buscan de forma predeterminada.
+	// Por ejemplo, esto contendrá una fuente "Windows\Fonts\" en una máquina con Windows.
+	// Agregamos esta matriz a una nueva Lista para que agregar o eliminar entradas de fuentes sea mucho más fácil.
 	List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-	// أضف مصدر مجلد جديد والذي سيوجه Aspose.Words للبحث في المجلد التالي عن الخطوط.
+	// Agregue una nueva fuente de carpeta que indicará a Aspose.Words que busque fuentes en la siguiente carpeta.
 	FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-	// أضف المجلد المخصص الذي يحتوي على خطوطنا إلى قائمة مصادر الخطوط الموجودة.
+	// Agregue la carpeta personalizada que contiene nuestras fuentes a la lista de fuentes de fuentes existentes.
 	fontSources.Add(folderFontSource);
 	FontSourceBase[] updatedFontSources = fontSources.ToArray();
 	fontSettings.SetFontsSources(updatedFontSources);
@@ -74,5 +74,5 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلدات خطوط النظام ومجلد مخصص عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلدات خطوط متعددة ، بما في ذلك مجلد النظام والمجلد المخصص ، لاستخدامهما عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+## Conclusión
+En este tutorial, aprendimos cómo configurar carpetas de fuentes del sistema y una carpeta personalizada al renderizar un documento usando Aspose.Words para .NET. Al seguir esta guía paso a paso, puede especificar fácilmente varias carpetas de fuentes, incluida la carpeta del sistema y una carpeta personalizada, para usar al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para trabajar con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar las fuentes de fuentes utilizadas al renderizar sus documentos según sus necesidades específicas.

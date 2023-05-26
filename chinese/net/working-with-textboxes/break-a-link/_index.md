@@ -1,22 +1,22 @@
 ---
-title: قطع الارتباط
-linktitle: قطع الارتباط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية فصل الروابط في مستند Word باستخدام Aspose.Words for .NET.
+title: 断开链接
+linktitle: 断开链接
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 断开 Word 文档中的链接。
 type: docs
 weight: 10
 url: /zh/net/working-with-textboxes/break-a-link/
 ---
 
-Aspose.Words for .NET مكتبة قوية تقدم ميزات متنوعة للعمل مع مستندات Microsoft Word برمجيًا. تتمثل إحدى ميزاته المفيدة في القدرة على فصل الروابط داخل المستند. في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري في C # الذي يوضح كيفية قطع الرابط باستخدام Aspose.Words for .NET.
+Aspose.Words for .NET 是一个功能强大的库，它提供了以编程方式处理 Microsoft Word 文档的各种功能。它的一个有用功能是能够断开文档中的链接。在本教程中，我们将探索 C# 源代码，演示如何使用 Aspose.Words for .NET 断开链接。
 
-## الخطوة 1: C # Source Code Preview
+## 第 1 步：C# 源代码预览
 
-يركز كود المصدر C # المقدم على ميزة "Break A Link" في Aspose.Words for .NET. يوضح كيفية قطع ارتباط في شكل مربع نص داخل مستند. تقدم الكود سيناريوهات مختلفة لكسر الروابط وتوفر إرشادات واضحة حول كيفية تحقيق النتائج المرجوة.
+提供的 C# 源代码侧重于 Aspose.Words for .NET 的“断开链接”功能。它显示了如何断开文档内 TextBox 形状中的链接。该代码展示了断开链接的不同场景，并提供了有关如何实现预期结果的明确说明。
 
-## الخطوة 2: إعداد المستند وإنشاء شكل مربع نص
+## 第 2 步：设置文档并创建文本框形状
 
- للبدء ، نحتاج إلى إعداد المستند وإنشاء شكل مربع نص. يقوم الكود التالي بتهيئة مثيل جديد لملف`Document` فئة وإنشاء شكل مربع نص:
+首先，我们需要设置文档并创建一个文本框形状。下面的代码初始化了一个新的实例`Document`类并创建一个文本框形状：
 
 ```csharp
 Document doc = new Document();
@@ -24,44 +24,44 @@ Shape shape = new Shape(doc, ShapeType.TextBox);
 TextBox textBox = shape.TextBox;
 ```
 
-## الخطوة 3: كسر الرابط في TextBox
+## 第 3 步：在 TextBox 中断开前向链接
 
- لكسر ارتباط أمامي في TextBox ، يمكننا استخدام`BreakForwardLink()`طريقة. هذه الطريقة تقطع الارتباط بالشكل التالي في التسلسل. يوضح الكود التالي كيفية قطع ارتباط أمامي:
+要断开 TextBox 中的前向链接，我们可以使用`BreakForwardLink()`方法。此方法断开到序列中下一个形状的链接。以下代码显示了如何断开前向链接：
 
 ```csharp
 textBox.BreakForwardLink();
 ```
 
-## الخطوة 4: قطع ارتباط أمامي عن طريق تعيين قيمة خالية
+## 第 4 步：通过设置空值来断开前向链接
 
- بدلاً من ذلك ، يمكننا قطع ارتباط أمامي عن طريق تعيين TextBox`Next` ملكية ل`null`. هذا يزيل الاتصال بالشكل التالي بشكل فعال. يوضح الكود التالي هذا الأسلوب:
+或者，我们可以通过设置 TextBox 的`Next`财产给`null`.这有效地移除了与下一个形状的连接。以下代码演示了这种方法：
 
 ```csharp
 textBox. Next = null;
 ```
 
-## الخطوة 5: قطع الرابط الذي يؤدي إلى TextBox
+## 第 5 步：断开指向文本框的链接
 
- في بعض الحالات ، نحتاج إلى قطع ارتباط يؤدي إلى شكل مربع النص. يمكننا تحقيق ذلك من خلال استدعاء`BreakForwardLink()` طريقة على`Previous` النموذج ، الذي يقطع الارتباط إلى TextBox. فيما يلي مثال على كيفية كسر هذا الرابط:
+在某些情况下，我们需要断开指向 TextBox 形状的链接。我们可以通过调用`BreakForwardLink()`上的方法`Previous`窗体，它会断开到 TextBox 的链接。以下是如何断开此类链接的示例：
 
 ```csharp
 textBox.Previous?.BreakForwardLink();
 ```
 
-### نموذج لشفرة المصدر لكسر الرابط مع Aspose.Words for .NET
+### 用于断开与 Aspose.Words for .NET 的链接的示例源代码
 
 ```csharp
 Document doc = new Document();
 Shape shape = new Shape(doc, ShapeType.TextBox);
 TextBox textBox = shape.TextBox;
 
-// كسر الارتباط إلى الأمام.
+//断开前向链接。
 textBox.BreakForwardLink();
 
-// قطع ارتباط إلى الأمام عن طريق تعيين قيمة خالية.
+//通过设置空值来断开前向链接。
 textBox. Next = null;
 
-// قطع الارتباط الذي يؤدي إلى مربع النص هذا.
+//断开指向此文本框的链接。
 textBox.Previous?.BreakForwardLink();
 ```
 

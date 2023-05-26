@@ -1,18 +1,18 @@
 ---
-title: قسم غير مقيد
-linktitle: قسم غير مقيد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديد الأقسام غير المقيدة في مستند Word باستخدام Aspose.Words for .NET.
+title: Sınırsız Bölüm
+linktitle: Sınırsız Bölüm
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde kısıtlanmamış bölümlerin nasıl tanımlanacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/document-protection/unrestricted-section/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال الخطوات لاستخدام ميزة القسم غير المقيد في Aspose.Words for .NET. تتيح لك هذه الميزة تحديد أقسام معينة في مستند Word غير محمية ، حتى إذا كان باقي المستند محميًا. اتبع الخطوات التالية:
+Bu öğreticide, Aspose.Words for .NET'in sınırsız bölüm özelliğini kullanma adımlarında size rehberlik edeceğiz. Bu özellik, bir Word belgesinde, belgenin geri kalanı korumalı olsa bile, korunmayan belirli bölümleri tanımlamanıza olanak tanır. Aşağıdaki adımları takip et:
 
-## الخطوة الأولى: إنشاء المستند والأقسام
+## Adım 1: Belgeyi ve Bölümleri Oluşturma
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+Document sınıfının bir örneğini ve DocumentBuilder nesnesini oluşturarak başlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -20,8 +20,8 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أضف محتوى إلى المستند
-استخدم كائن DocumentBuilder لإضافة محتوى إلى المستند وإدراج فواصل المقاطع:
+## 2. Adım: Belgeye içerik ekleyin
+Belgeye içerik eklemek ve bölüm sonları eklemek için DocumentBuilder nesnesini kullanın:
 
 ```csharp
 builder.Writeln("Section 1. Unprotected.");
@@ -29,46 +29,46 @@ builder. InsertBreak(BreakType. SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-## الخطوة 3: حماية المستند والأقسام
+## 3. Adım: Belgeyi ve Bölümleri Koruyun
 
-تعمل حماية القسم فقط عندما يتم تمكين حماية المستند ولا يُسمح إلا بالتحرير في حقول النموذج. يمكنك حماية المستند باستخدام طريقة Protect () الخاصة بكائن المستند:
+Bölüm koruması yalnızca belge koruması etkinleştirildiğinde çalışır ve yalnızca form alanlarında düzenlemeye izin verilir. Document nesnesinin Protect() yöntemini kullanarak belgeyi koruyabilirsiniz:
 
 ```csharp
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 ```
 
-تأكد من تحديد نوع الحماية الصحيح وتعيين كلمة المرور المطلوبة.
+Doğru koruma türünü belirttiğinizden ve istenen parolayı ayarladığınızdan emin olun.
 
-## الخطوة 4: تعطيل الحماية لقسم معين
+## 4. Adım: Belirli bir bölüm için korumayı devre dışı bırakma
 
-بشكل افتراضي ، تكون جميع الأقسام محمية ، ولكن يمكنك تعطيل الحماية بشكل انتقائي لقسم معين باستخدام خاصية ProtectedForForms الخاصة بكائن القسم:
+Varsayılan olarak, tüm bölümler korumalıdır, ancak Section nesnesinin ProtectedForForms özelliğini kullanarak belirli bir bölüm için korumayı seçerek devre dışı bırakabilirsiniz:
 
 ```csharp
 doc.Sections[0].ProtectedForForms = false;
 ```
 
-في هذا المثال ، تم تعطيل الحماية للقسم الأول.
+Bu örnekte, ilk bölüm için koruma devre dışı bırakılmıştır.
 
-## الخطوة 5: احفظ المستند
+## 5. Adım: Belgeyi kaydedin
 
-أخيرًا ، احفظ المستند المعدل:
+Son olarak, değiştirilen belgeyi kaydedin:
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند بأقسام غير مقيدة.
+Belgeyi sınırsız bölümlerle kaydetmek için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### مثال على شفرة المصدر للقسم غير المقيد باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Unrestricted Section için örnek kaynak kodu
 
-فيما يلي رمز المصدر الكامل للقسم غير المقيد باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanan kısıtlamasız bölüm için eksiksiz kaynak kodu burada:
 
 
 ```csharp
 
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// أدخل قسمين مع بعض النص.
+// Biraz metin içeren iki bölüm ekleyin.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
@@ -76,10 +76,10 @@ builder.Writeln("Section 1. Unprotected.");
 builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 
-// تعمل حماية القسم فقط عندما يتم تشغيل حماية المستند ولا يُسمح إلا بالتحرير في حقول النموذج.
+// Bölüm koruması yalnızca belge koruması açıldığında çalışır ve yalnızca form alanlarında düzenlemeye izin verilir.
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
-// بشكل افتراضي ، تكون جميع الأقسام محمية ، ولكن يمكننا إيقاف الحماية بشكل انتقائي.
+// Varsayılan olarak, tüm bölümler korumalıdır, ancak korumayı seçerek kapatabiliriz.
 doc.Sections[0].ProtectedForForms = false;
 doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 
@@ -87,5 +87,5 @@ doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 
 ```
 
-باتباع هذه الخطوات ، ستتمكن بسهولة من تحديد الأقسام غير المقيدة في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Bu adımları izleyerek, Aspose.Words for .NET ile Word belgenizde sınırsız bölümleri kolayca tanımlayabileceksiniz.
 

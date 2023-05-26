@@ -1,29 +1,29 @@
 ---
-title: تطبيق الحدود والتظليل على الفقرة
-linktitle: تطبيق الحدود والتظليل على الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق الحدود والتظليل على فقرة باستخدام Aspose.Words for .NET.
+title: Appliquer les bordures et l'ombrage au paragraphe
+linktitle: Appliquer les bordures et l'ombrage au paragraphe
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à appliquer des bordures et des ombres à un paragraphe avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية تطبيق الحدود والتظليل على فقرة باستخدام وظيفة Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر وتطبيق تغييرات التنسيق.
+Dans ce didacticiel, nous allons vous montrer comment appliquer des bordures et un ombrage à un paragraphe à l'aide des fonctionnalités d'Aspose.Words pour .NET. Suivez les étapes ci-dessous pour comprendre le code source et appliquer les modifications de mise en forme.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Étape 1 : Création et configuration du document
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Pour commencer, créez un nouveau document et un objet DocumentBuilder associé. Voici comment:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الحدود
+## Étape 2 : configuration des bordures
 
-لنقم الآن بتكوين حدود الفقرة عن طريق تحديد نمط الحدود لكل جانب. إليك الطريقة:
+Configurons maintenant les bordures de paragraphe en spécifiant le style de bordure pour chaque côté. Voici comment:
 
 ```csharp
 BorderCollection borders = builder.ParagraphFormat.Borders;
@@ -34,9 +34,9 @@ borders[BorderType.Top].LineStyle = LineStyle.Double;
 borders[BorderType.Bottom].LineStyle = LineStyle.Double;
 ```
 
-## الخطوة 3: إعداد الملء
+## Étape 3 : Configuration du remplissage
 
-سنقوم الآن بتكوين تعبئة الفقرة عن طريق تحديد النسيج وألوان التعبئة. إليك الطريقة:
+Nous allons maintenant configurer le remplissage du paragraphe en spécifiant la texture et les couleurs de remplissage. Voici comment:
 
 ```csharp
 Shading shading = builder.ParagraphFormat.Shading;
@@ -45,29 +45,29 @@ shading.BackgroundPatternColor = System.Drawing.Color.LightCoral;
 shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 ```
 
-## الخطوة 4: أضف محتوى
+## Étape 4 : Ajouter du contenu
 
-سنقوم بإضافة بعض المحتوى المنسق إلى الفقرة. إليك الطريقة:
+Nous allons ajouter du contenu formaté au paragraphe. Voici comment:
 
 ```csharp
 builder.Write("I'm a formatted paragraph with a double border and a nice shading.");
 ```
 
-## الخطوة 3: حفظ المستند
+## Étape 3 : Enregistrer le document
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Après avoir inséré le champ du formulaire de saisie de texte, enregistrez le document à l'emplacement souhaité à l'aide de la`Save` méthode. Assurez-vous de fournir le chemin d'accès au fichier approprié :
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ```
 
-### مثال على الكود المصدري لتطبيق الحدود والتظليل على الفقرة باستخدام Aspose.Words for .NET
+### Exemple de code source pour Appliquer les bordures et l'ombrage au paragraphe à l'aide de Aspose.Words pour .NET
 
-فيما يلي رمز المصدر الكامل لميزة "تطبيق الحدود والتظليل على الفقرة" باستخدام Aspose.Words for .NET:
+Voici le code source complet de la fonctionnalité Appliquer les bordures et l'ombrage au paragraphe avec Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);

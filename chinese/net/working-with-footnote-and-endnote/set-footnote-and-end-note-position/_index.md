@@ -1,46 +1,46 @@
 ---
-title: تعيين موضع الحاشية السفلية وملاحظة النهاية
-linktitle: تعيين موضع الحاشية السفلية وملاحظة النهاية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين موضع الحواشي السفلية والتعليقات الختامية في مستندات Word باستخدام Aspose.Words for .NET.
+title: 设置脚注和尾注位置
+linktitle: 设置脚注和尾注位置
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中设置脚注和尾注的位置。
 type: docs
 weight: 10
 url: /zh/net/working-with-footnote-and-endnote/set-footnote-and-end-note-position/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتعيين موضع الحواشي السفلية والتعليقات الختامية في مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+在这个循序渐进的教程中，我们将指导您如何使用 Aspose.Words for .NET 在 Word 文档中设置脚注和尾注的位置。我们将解释提供的 C# 源代码，并向您展示如何在您自己的项目中实现它。
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+开始之前，请确保您已经在开发环境中安装并设置了 Aspose.Words for .NET。如果您还没有这样做，请从官方网站下载并安装该库。
 
-## الخطوة 1: تهيئة كائن المستند
+## 第 1 步：初始化文档对象
 
- أولاً ، قم بتهيئة ملف`Document` من خلال توفير المسار إلى المستند المصدر:
+首先，初始化`Document`通过提供源文档的路径来反对：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";     
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## الخطوة 2: تحديد موضع الحاشية السفلية والتعليق الختامي
+## 第二步：设置脚注和尾注位置
 
- بعد ذلك ، قم بالوصول إلى`FootnoteOptions` و`EndnoteOptions`خصائص المستند لتعيين موضع الحواشي السفلية والتعليقات الختامية. في هذا المثال ، قمنا بتعيين موضع الحواشي السفلية ليكون أسفل النص وموضع التعليقات الختامية في نهاية القسم:
+接下来，访问`FootnoteOptions`和`EndnoteOptions`文档的属性来设置脚注和尾注的位置。在此示例中，我们将脚注的位置设置在文本下方，将尾注的位置设置在该节的末尾：
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;
 doc.EndnoteOptions.Position = EndnotePosition.EndOfSection;
 ```
 
-## الخطوة 3: حفظ المستند
+## 第 3 步：保存文档
 
-أخيرًا ، احفظ المستند المعدل:
+最后，保存修改后的文件：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تعيين موضع الحواشي السفلية والتعليقات الختامية في مستند Word باستخدام Aspose.Words for .NET.
+就是这样！您已经使用 Aspose.Words for .NET 成功设置了 Word 文档中脚注和尾注的位置。
 
-### مثال على شفرة المصدر لـ Set Footnote And Endnote Position باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 设置脚注和尾注位置的示例源代码
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";     
@@ -52,4 +52,4 @@ doc.EndnoteOptions.Position = EndnotePosition.EndOfSection;
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+随意在您自己的项目中使用此代码，并根据您的特定要求对其进行修改。

@@ -1,31 +1,31 @@
 ---
-title: إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه
-linktitle: إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إظهار أو إخفاء محتوى الإشارات المرجعية باستخدام Aspose.Words for .NET.
+title: Afficher Masquer le contenu marqué d'un signet
+linktitle: Afficher Masquer le contenu marqué d'un signet
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Découvrez comment afficher ou masquer le contenu des signets à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إظهار إخفاء المحتوى المرتبط بإشارة مرجعية في Aspose.Words for .NET library. تتيح لك هذه الميزة إظهار أو إخفاء محتويات إشارة مرجعية بناءً على شرط معين عند دمج البيانات.
+Dans cet article, nous allons explorer le code source C # ci-dessus pour comprendre comment utiliser la fonction Afficher le contenu mis en signet dans Aspose.Words pour la bibliothèque .NET. Cette fonctionnalité vous permet d'afficher ou de masquer le contenu d'un signet en fonction d'une condition spécifique lors de la fusion de données.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Connaissance de base du langage C#.
+- Environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
-## الخطوة 1: الحصول على الإشارة المرجعية
+## Étape 1 : Récupérer le marque-page
 
- نحن نستخدم ال`Bookmarks` خاصية نطاق المستند للحصول على الإشارة المرجعية المحددة التي نريد إظهار المحتوى أو إخفائه:
+ Nous utilisons le`Bookmarks` propriété de la plage de documents pour obtenir le signet spécifique dont nous voulons afficher ou masquer le contenu :
 
 ```csharp
 Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 ```
 
-## الخطوة 2: إدراج حقول الدمج
+## Étape 2 : Insertion des champs de fusion
 
- نحن نستخدم منشئ المستندات`DocumentBuilder` لإدراج حقول الدمج الضرورية. ستعمل حقول الدمج هذه على تعيين شرط لإظهار أو إخفاء محتوى الإشارة المرجعية بناءً على قيمة`showHide` عامل:
+ Nous utilisons un générateur de documents`DocumentBuilder` pour insérer les champs de fusion nécessaires. Ces champs de fusion définiront une condition pour afficher ou masquer le contenu du signet en fonction de la valeur du`showHide` variable:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -40,11 +40,11 @@ builder. Write("\"");
 builder. Write(" \"\"");
 ```
 
-## الخطوة 3: نقل محتوى الإشارة المرجعية
+## Étape 3 : Déplacer le contenu d'un signet
 
-ندور محتويات الإشارة المرجعية وننقلها حتى تظهر
+Nous parcourons le contenu du signet et le déplaçons pour qu'il apparaisse
 
-ISSE قبل الإشارة المرجعية. سيتحكم هذا في إظهار المحتوى أو إخفائه بناءً على الشرط المحدد:
+isse avant le signet. Cela contrôlera l'affichage ou le masquage du contenu en fonction de la condition spécifiée :
 
 ```csharp
 Node currentNode = field. Start;
@@ -62,9 +62,9 @@ while (currentNode != null && flag)
 }
 ```
 
-## الخطوة 4: نقل باقي محتوى الإشارة المرجعية
+## Étape 4 : Déplacer le reste du contenu du signet
 
-نقوم بنقل باقي محتوى الإشارة المرجعية بعد الإشارة المرجعية ، باستخدام عقدة نهاية الإشارة المرجعية كنقطة إدخال:
+Nous déplaçons le reste du contenu du signet après le signet, en utilisant le nœud de fin du signet comme point d'insertion :
 
 ```csharp
 Node endNode = bm.BookmarkEnd;
@@ -82,17 +82,17 @@ while (currentNode != null && flag)
 }
 ```
 
-## الخطوة 5: تنفيذ الدمج
+## Étape 5 : Effectuer la fusion
 
- نحن نستخدم ال`Execute` طريقة الوثيقة`s `دمج المراسلات` object to execute the merge using the bookmark name and the value of the `متغير showHide`:
+ Nous utilisons le`Execute` méthode du document`s `Publipostage` object to execute the merge using the bookmark name and the value of the `AfficherMasquer la variable :
 
 ```csharp
 doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 ```
 
-### مثال على شفرة المصدر لـ Show Hide Bookmarked Content باستخدام Aspose.Words for .NET
+### Exemple de code source pour Afficher Masquer le contenu mis en signet à l'aide de Aspose.Words pour .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح إظهار أو إخفاء محتوى الإشارة المرجعية باستخدام Aspose.Words for .NET:
+Voici l'exemple complet de code source pour démontrer l'affichage ou le masquage du contenu des signets à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
 
@@ -101,7 +101,7 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.MoveToDocumentEnd();
 
-	// {إذا كان "{MERGEFIELD إشارة مرجعية}" = "صحيح" "" ""}
+	// {IF "{MERGEFIELD signet}" = "true" "" ""}
 	Field field = builder.InsertField("IF \"", null);
 	builder.MoveTo(field.Start.NextSibling);
 	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
@@ -142,6 +142,6 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 
 ```
 
-## خاتمة
+## Conclusion
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة إظهار إخفاء المحتوى المرتبط بإشارة مرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإظهار أو إخفاء محتويات إشارة مرجعية بناءً على شرط معين عند دمج البيانات.
+Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonctionnalité Afficher le contenu mis en signet d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour afficher ou masquer le contenu d'un signet en fonction d'une condition spécifique lors de la fusion de données.

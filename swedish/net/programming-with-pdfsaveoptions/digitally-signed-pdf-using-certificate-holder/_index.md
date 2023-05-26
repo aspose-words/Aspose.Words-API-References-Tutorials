@@ -1,18 +1,18 @@
 ---
-title: ملف PDF موقع رقميًا باستخدام حامل الشهادة
-linktitle: ملف PDF موقع رقميًا باستخدام حامل الشهادة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية توقيع ملف PDF رقميًا باستخدام حامل شهادة مع Aspose.Words for .NET.
+title: Digitalt signerad pdf med certifikathållare
+linktitle: Digitalt signerad pdf med certifikathållare
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du signerar en PDF digitalt med en certifikatinnehavare med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات إنشاء ملف PDF موقع رقميًا باستخدام شهادة مع Aspose.Words for .NET. يضيف التوقيع الرقمي طبقة من الأمان والتكامل إلى وثيقة PDF. اتبع الخطوات التالية:
+den här handledningen går vi igenom stegen för att skapa en digitalt signerad PDF med ett certifikat med Aspose.Words för .NET. Den digitala signaturen lägger till ett lager av säkerhet och integritet till PDF-dokumentet. Följ stegen nedan:
 
-## الخطوة 1: إنشاء المستند وإضافة المحتوى
+## Steg 1: Skapa dokumentet och lägga till innehåll
 
-ابدأ بإنشاء مثيل لفئة المستند:
+Börja med att skapa en instans av klassen Document:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -20,19 +20,19 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أضف محتوى إلى المستند
+## Steg 2: Lägg till innehåll i dokumentet
 
- ثم استخدم ملف`DocumentBuilder` لإضافة محتوى إلى المستند. على سبيل المثال ، لإضافة فقرة تحتوي على النص "Test Signed PDF" ، استخدم امتداد`Writeln` طريقة:
+ Använd sedan`DocumentBuilder` för att lägga till innehåll i dokumentet. Om du till exempel vill lägga till ett stycke som innehåller texten "Testsignerad PDF" använder du`Writeln` metod:
 
 ```csharp
 builder.Writeln("Test Signed PDF.");
 ```
 
-يمكنك إضافة عناصر محتوى أخرى حسب الحاجة.
+Du kan lägga till andra innehållsobjekt efter behov.
 
-## الخطوة 3: تعيين خيارات حفظ PDF
+## Steg 3: Ställ in PDF-sparalternativ
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وحدد تفاصيل التوقيع الرقمي:
+Skapa en instans av klassen PdfSaveOptions och ange detaljerna för den digitala signaturen:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -43,27 +43,27 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-تأكد من تحديد المسار الصحيح لشهادتك وكلمة المرور المرتبطة بها. يمكنك أيضًا تخصيص سبب التوقيع وموقعه.
+Var noga med att ange rätt sökväg till ditt certifikat och tillhörande lösenord. Du kan också anpassa signaturens orsak och plats.
 
-## الخطوة 4: احفظ المستند بتنسيق PDF موقّع رقميًا
+## Steg 4: Spara dokument som digitalt signerad PDF
 
- استخدم ال`Save` طريقة لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ:
+ Använd`Save` metod för att spara dokumentet som en PDF genom att ange sparalternativen:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF الموقع رقميًا.
+Se till att ange rätt sökväg för att spara den digitalt signerade PDF-filen.
 
-باتباع هذه الخطوات ، يمكنك بسهولة إنشاء ملف PDF موقّع رقميًا مع شهادة باستخدام Aspose.Words for .NET.
+Genom att följa dessa steg kan du enkelt skapa en digitalt signerad PDF med ett certifikat med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لـ Pdf الموقّع رقميًا باستخدام حامل الشهادة باستخدام Aspose.Words for .NET
+### Exempel på källkod för digitalt signerad pdf med certifikatinnehavare med Aspose.Words för .NET
 
-فيما يلي رمز المصدر الكامل لـ Pdf الموقّع رقميًا باستخدام حامل الشهادة من مستند باستخدام Aspose.Words for .NET:
+Här är den fullständiga källkoden till digitalt signerad PDF med certifikatinnehavare från ett dokument som använder Aspose.Words för .NET:
 
 ```csharp
 
-            // المسار إلى دليل المستندات.
+            // Sökvägen till dokumentkatalogen.
 			string dataDir = "YOUR DOCUMENT DIRECTORY";
             Document doc = new Document();
             DocumentBuilder builder = new DocumentBuilder(doc);

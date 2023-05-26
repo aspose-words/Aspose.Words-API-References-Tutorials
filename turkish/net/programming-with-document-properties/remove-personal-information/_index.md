@@ -1,56 +1,56 @@
 ---
-title: إزالة المعلومات الشخصية
-linktitle: إزالة المعلومات الشخصية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لإزالة المعلومات الشخصية من مستند باستخدام Aspose.Words for .NET.
+title: Kişisel Bilgileri Kaldır
+linktitle: Kişisel Bilgileri Kaldır
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir belgeden kişisel bilgileri kaldırmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-document-properties/remove-personal-information/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإزالة المعلومات الشخصية من مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إزالة المعلومات الشخصية الحساسة من مستند ، مثل بيانات تعريف المؤلف.
+Bu öğreticide, Aspose.Words for .NET ile bir belgeden kişisel bilgileri kaldırmak için C# kaynak kodunda size yol göstereceğiz. Bu özellik, yazar tanımlama verileri gibi hassas kişisel bilgileri bir belgeden kaldırmanıza olanak tanır.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد إزالة المعلومات الشخصية منه. استخدم الكود التالي لتحميل المستند:
+Bu adımda, kişisel bilgileri kaldırmak istediğimiz Word belgesini yükleyeceğiz. Belgeyi yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInformation = true };
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
 
-## الخطوة 3: حذف المعلومات الشخصية
+## 3. Adım: Kişisel bilgileri silin
 
- الآن سنعمل على تمكين إزالة المعلومات الشخصية عن طريق تعيين`RemovePersonalInformation` ملكية ل`true`. استخدم الكود التالي:
+ Şimdi ayarlayarak kişisel bilgilerin kaldırılmasını sağlayacağız.`RemovePersonalInformation` mülkiyet`true`. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.RemovePersonalInformation = true;
 ```
 
-ينشط هذا الرمز حذف المعلومات الشخصية في المستند.
+Bu kod, belgedeki kişisel bilgilerin silinmesini etkinleştirir.
 
-## الخطوة 4: حفظ المستند
+## 4. Adım: Belgeyi kaydetme
 
-أخيرًا ، سنحفظ المستند مع إزالة المعلومات الشخصية. استخدم الكود التالي:
+Son olarak, kişisel bilgiler çıkarılmış olarak belgeyi kaydedeceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.docx");
 ```
 
-يحفظ هذا الرمز المستند مع إزالة المعلومات الشخصية إلى ملف جديد.
+Bu kod, belgeyi kişisel bilgiler kaldırılarak yeni bir dosyaya kaydeder.
 
-### مثال على شفرة المصدر لإزالة المعلومات الشخصية باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Kişisel Bilgileri Kaldırmak için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInformation = true };
 
@@ -58,6 +58,6 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 	
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ bölümünde doğru belge yolunu belirttiğinizden emin olun.`dataDir` değişken.
 
-لقد تعلمت الآن كيفية إزالة المعلومات الشخصية من مستند باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إزالة المعلومات الحساسة من المستندات الخاصة بك.
+Artık Aspose.Words for .NET kullanarak bir belgeden kişisel bilgileri nasıl kaldıracağınızı öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek hassas bilgileri kendi belgelerinizden kolayca kaldırabilirsiniz.

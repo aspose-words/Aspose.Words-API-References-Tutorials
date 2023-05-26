@@ -1,71 +1,71 @@
 ---
-title: الانضمام إلى صفحة جديدة
-linktitle: الانضمام إلى صفحة جديدة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ضم وثيقتين في صفحة جديدة مع الحفاظ على التنسيق باستخدام Aspose.Words for .NET.
+title: Neuer Seite beitreten
+linktitle: Neuer Seite beitreten
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET zwei Dokumente auf einer neuen Seite zusammenfügen und dabei die Formatierung beibehalten.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/join-new-page/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية ضم وثيقتين على صفحة جديدة باستخدام Aspose.Words for .NET. يوضح كود المصدر المقدم كيفية إلحاق مستند بنهاية مستند آخر أثناء بدء المستند الملحق في صفحة جديدة.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET zwei Dokumente auf einer neuen Seite zusammenfügen. Der bereitgestellte Quellcode zeigt, wie ein Dokument an das Ende eines anderen Dokuments angehängt wird, während das angehängte Dokument auf einer neuen Seite beginnt.
 
-## الخطوة 1: قم بإعداد المشروع
+## Schritt 1: Richten Sie das Projekt ein
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words für .NET-Bibliothek installiert. Sie können es von der offiziellen Aspose-Website herunterladen oder den NuGet-Paketmanager verwenden, um es zu installieren.
+- Ein Dokumentverzeichnispfad, in dem sich die Quell- und Zieldokumente befinden.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Schritt 2: Öffnen Sie die Quell- und Zieldokumente
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Öffnen Sie die Quell- und Zieldokumente mit`Document` Klassenkonstruktor. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: بدء إعداد قسم صفحة جديدة
+## Schritt 3: Richten Sie den Anfang des neuen Seitenabschnitts ein
 
- لبدء المستند المُلحق على صفحة جديدة ، قم بتعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.NewPage`.
+ Um das angehängte Dokument auf einer neuen Seite zu beginnen, legen Sie fest`SectionStart` Eigenschaft des ersten Abschnitts im Quelldokument`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر
+## Schritt 4: Hängen Sie das Quelldokument an
 
- قم بإلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. اضبط وضع تنسيق الاستيراد على`ImportFormatMode.KeepSourceFormatting`للاحتفاظ بالأنماط الأصلية من المستند المصدر.
+ Hängen Sie das Quelldokument mit an das Zieldokument an`AppendDocument` Methode der`Document` Klasse. Stellen Sie den Importformatmodus auf ein`ImportFormatMode.KeepSourceFormatting`um die ursprünglichen Stile aus dem Quelldokument beizubehalten.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند المعدل
+## Schritt 5: Speichern Sie das geänderte Dokument
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Speichern Sie abschließend das geänderte Zieldokument mit`Save` Methode der`Document` Objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 ```
 
-هذا يكمل تنفيذ ضم وثيقتين على صفحة جديدة باستخدام Aspose.Words for .NET.
+Damit ist die Implementierung des Zusammenfügens zweier Dokumente auf einer neuen Seite mithilfe von Aspose.Words für .NET abgeschlossen.
 
-### مثال على شفرة المصدر لـ Join New Page باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Join New Page“ mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بتعيين المستند الملحق للبدء في صفحة جديدة.
+	// Legen Sie fest, dass das angehängte Dokument auf einer neuen Seite beginnt.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
-	// قم بإلحاق المستند المصدر باستخدام الأنماط الأصلية الموجودة في المستند المصدر.
+	// Hängen Sie das Quelldokument mit den im Quelldokument gefundenen Originalstilen an.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 ```

@@ -1,62 +1,62 @@
 ---
-title: تجنب تضمين الخطوط الأساسية
-linktitle: تجنب تضمين الخطوط الأساسية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تجنب تضمين الخط الأساسي عند تحويل مستندات Word إلى PDF باستخدام Aspose.Words for .NET.
+title: Vermeiden Sie das Einbetten von Kernschriftarten
+linktitle: Vermeiden Sie das Einbetten von Kernschriftarten
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie beim Konvertieren von Word-Dokumenten in PDF mit Aspose.Words für .NET das einfache Einbetten von Schriftarten vermeiden.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات استخدام ميزة Avoid Basic Font Embedding مع Aspose.Words for .NET. تتيح لك هذه الميزة التحكم في ما إذا كان يجب تضمين الخطوط الأساسية مثل Arial و Times New Roman وما إلى ذلك في ملف PDF عند تحويل مستند Word. اتبع الخطوات التالية:
+In diesem Tutorial führen wir Sie durch die Schritte zur Verwendung der Funktion „Grundlegende Schriftarteinbettung vermeiden“ mit Aspose.Words für .NET. Mit dieser Funktion können Sie steuern, ob beim Konvertieren eines Word-Dokuments grundlegende Schriftarten wie Arial, Times New Roman usw. in das PDF eingebettet werden müssen. Folgen Sie den unteren Schritten:
 
-## الخطوة 1: تحميل المستند
+## Schritt 1: Laden des Dokuments
 
-ابدأ بتحميل مستند Word الذي تريد تحويله إلى PDF:
+Laden Sie zunächst das Word-Dokument hoch, das Sie in PDF konvertieren möchten:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح لمستند Word الخاص بك.
+Stellen Sie sicher, dass Sie den richtigen Pfad zu Ihrem Word-Dokument angeben.
 
-## الخطوة 2: تعيين خيارات تحويل PDF
+## Schritt 2: PDF-Konvertierungsoptionen festlegen
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وقم بتمكين تجنب تضمين الخط الأساسي:
+Erstellen Sie eine Instanz der PdfSaveOptions-Klasse und aktivieren Sie die grundlegende Vermeidung der Schriftarteinbettung:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
 ```
 
-يتحكم هذا الخيار فيما إذا كان يجب تضمين الخطوط الأساسية في ملف PDF أم لا.
+Diese Option steuert, ob Basisschriftarten in das PDF eingebettet werden sollen oder nicht.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## Schritt 3: Dokument in PDF konvertieren
 
- استخدم ال`Save` طريقة لتحويل مستند Word إلى PDF عن طريق تحديد خيارات التحويل:
+ Benutzen Sie die`Save` Methode zum Konvertieren des Word-Dokuments in PDF durch Angabe von Konvertierungsoptionen:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Stellen Sie sicher, dass Sie den richtigen Pfad zum Speichern der konvertierten PDF-Datei angeben.
 
-### مثال على شفرة المصدر لتجنب تضمين الخطوط الأساسية باستخدام Aspose.Words for .NET
+### Beispielquellcode für „Vermeiden Sie das Einbetten von Kernschriftarten“ mithilfe von Aspose.Words für .NET
 
-إليك الكود المصدري الكامل لاستخدام الميزة لتجنب تضمين الخط الأساسي مع Aspose.Words for .NET:
+Hier ist der vollständige Quellcode zur Verwendung der Funktion, um die Einbettung von Kernschriftarten mit Aspose.Words für .NET zu vermeiden:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// لن يتم تضمين ملف PDF الناتج مع الخطوط الأساسية مثل Arial و Times New Roman وما إلى ذلك.
+	// Das Ausgabe-PDF wird nicht in Kernschriftarten wie Arial, Times New Roman usw. eingebettet.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 
 ```
 
-باتباع هذه الخطوات ، يمكنك التحكم بسهولة فيما إذا كان يجب تضمين الخطوط الأساسية في ملف PDF عند تحويل مستند Word باستخدام Aspose.Words for .NET.
+Wenn Sie diese Schritte befolgen, können Sie ganz einfach steuern, ob beim Konvertieren eines Word-Dokuments mit Aspose.Words für .NET Basisschriftarten in die PDF-Datei eingebettet werden sollen.
 

@@ -1,20 +1,20 @@
 ---
-title: البرمجة مع جدول المحتويات
-linktitle: البرمجة مع جدول المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تغيير نمط toc وتغيير توقف علامة التبويب toc
+title: Programmazione con sommario
+linktitle: Programmazione con sommario
+second_title: Riferimento all'API Aspose.Words per .NET
+description: I tutorial contengono lo stile di modifica del livello di sommario e le tabulazioni di modifica del sommario
 type: docs
 weight: 1420
 url: /it/net/programming-with-table-of-content/
 ---
-ترشدك البرامج التعليمية لـ Aspose.Words for .NET حول البرمجة باستخدام جدول المحتويات عبر خطوات معالجة جداول المحتويات وتخصيصها في مستندات Word الخاصة بك. سوف تتعلم كيفية إنشاء وتحديث وتخصيص جداول المحتويات لتنظيم محتوى المستندات الخاصة بك بشكل فعال.
+I tutorial di Aspose.Words per .NET sulla programmazione con il sommario ti guidano attraverso i passaggi per manipolare e personalizzare i sommari nei tuoi documenti Word. Imparerai come creare, aggiornare e personalizzare sommari per organizzare efficacemente il contenuto dei tuoi documenti.
 
-توفر هذه البرامج التعليمية أمثلة على التعليمات البرمجية خطوة بخطوة وتفسيرات واضحة لكيفية استخدام ميزات Aspose.Words for .NET للعمل مع جداول المحتويات. ستتعلم كيفية إضافة مستويات العناوين ، وتحديد أنماط التنسيق ، وتخصيص مظهر وسلوك جداول المحتويات ، وإدارة التحديثات التلقائية.
+Questi tutorial forniscono esempi di codice passo-passo e spiegazioni chiare su come utilizzare Aspose.Words per le funzionalità .NET per lavorare con i sommari. Imparerai come aggiungere livelli di intestazione, specificare stili di formattazione, personalizzare l'aspetto e il comportamento dei sommari e gestire gli aggiornamenti automatici.
 
-سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان التقنيات المتقدمة لإنشاء جداول محتويات احترافية والحفاظ عليها في مستندات Word باستخدام Aspose.Words for .NET. حسِّن تنظيم مستنداتك واجعل التنقل أسهل للمستخدمين من خلال هذه البرامج التعليمية الشاملة والمفيدة.
+Che tu sia un principiante o uno sviluppatore esperto, questi tutorial ti aiuteranno a padroneggiare le tecniche avanzate per la creazione e la gestione di sommari professionali nei tuoi documenti Word utilizzando Aspose.Words per .NET. Migliora l'organizzazione dei tuoi documenti e semplifica la navigazione per i tuoi utenti con questi tutorial completi e informativi.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [تغيير نمط مستوى Toc](./change-style-of-toc-level/) | تعرف على كيفية تغيير نمط مستوى جدول المحتويات بسهولة في مستند Word باستخدام Aspose.Words for .NET. |
-| [تغيير Toc Tab Stops](./change-toc-tab-stops/) | تعرف على كيفية تغيير علامات تبويب جدول المحتويات في مستند Word باستخدام Aspose.Words for .NET. |
+| [Cambia lo stile del livello Toc](./change-style-of-toc-level/) | Scopri come modificare facilmente lo stile di un livello di sommario in un documento di Word utilizzando Aspose.Words per .NET. |
+| [Cambia le tabulazioni Toc](./change-toc-tab-stops/) | Scopri come modificare le schede del sommario in un documento di Word utilizzando Aspose.Words per .NET. |

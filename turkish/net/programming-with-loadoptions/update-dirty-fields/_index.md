@@ -1,55 +1,55 @@
 ---
-title: تحديث الحقول القذرة
-linktitle: تحديث الحقول القذرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل مستند Word عن طريق تحديث الحقول غير النظيفة باستخدام Aspose.Words for .NET.
+title: Kirli Alanları Güncelle
+linktitle: Kirli Alanları Güncelle
+second_title: Aspose.Words for .NET API Referansı
+description: Kirli alanları Aspose.Words for .NET ile güncelleyerek bir Word belgesini nasıl yükleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/update-dirty-fields/
 ---
 
-عند العمل مع مستندات Word في تطبيق C # ، قد يكون من الضروري تحديث الحقول المتسخة لإظهار أحدث القيم. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحديث الحقول المتسخة عند تحميل المستندات باستخدام LoadOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند عن طريق تحديث الحقول المتسخة باستخدام LoadOptions.
+Bir C# uygulamasında Word belgeleriyle çalışırken, kirli alanların en son değerleri gösterecek şekilde güncellenmesi gerekebilir. .NET için Aspose.Words kitaplığıyla, kirli alanları LoadOptions kullanarak belge yükünde kolayca güncelleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions kullanarak kirli alanları güncelleyerek bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, .NET dahil olmak üzere farklı platformlarda Word belgeleri oluşturmak, düzenlemek, dönüştürmek ve korumak için güçlü bir kitaplıktır. Belgeleri işlemek için metin ekleme, biçimlendirmeyi değiştirme, bölümler ekleme ve çok daha fazlası gibi birçok özellik sunar.
 
-## تكوين خيارات التحميل
+## Yükleme Seçeneklerini Yapılandırma
 
-الخطوة الأولى هي تكوين خيارات التحميل لوثيقتنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى ضبط خاصية UpdateDirtyFields على "true" لتحديث الحقول المتسخة. هيريس كيفية القيام بذلك:
+İlk adım, belgemiz için yükleme seçeneklerini yapılandırmaktır. Yükleme parametrelerini belirtmek için LoadOptions sınıfını kullanın. Bizim durumumuzda, kirli alanları güncellemek için UpdateDirtyFields özelliğini true olarak ayarlamamız gerekiyor. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { UpdateDirtyFields = true };
 ```
 
-قمنا بإنشاء كائن LoadOptions جديد وقمنا بتعيين خاصية UpdateDirtyFields على "true" لتحديث الحقول المتسخة عند تحميل المستند.
+Yeni bir LoadOptions nesnesi oluşturuyoruz ve belgeyi yüklerken kirli alanları güncellemek için UpdateDirtyFields özelliğini true olarak ayarlıyoruz.
 
-## تحميل وثيقة تحديث الحقول القذرة
+## Kirli alanları güncelleyen belge yükleniyor
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل المستند باستخدام فئة Document وتحديد خيارات التحميل. هنا مثال :
+Yükleme seçeneklerini yapılandırdığımıza göre, Document sınıfını kullanarak belgeyi yükleyebilir ve yükleme seçeneklerini belirtebiliriz. İşte bir örnek :
 
 ```csharp
 Document doc = new Document(dataDir + "Dirty field.docx", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Dirty field.docx" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+Bu örnekte, belirtilen yükleme seçeneklerini kullanarak belgeler dizininde bulunan "Dirty field.docx" belgesini yüklüyoruz.
 
-## مثال على شفرة المصدر لـ LoadOptions مع وظيفة "Update Dirty Fields" باستخدام Aspose.Words for .NET
+## Aspose.Words for .NET kullanan "Kirli Alanları Güncelle" işlevine sahip LoadOptions için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "تحديث الحقول القذرة"
+// "Kirli Alanları Güncelle" özelliği ile yükleme seçeneklerini yapılandırın
 LoadOptions loadOptions = new LoadOptions { UpdateDirtyFields = true };
 
-// قم بتحميل المستند عن طريق تحديث الحقول المتسخة
+// Kirli alanları güncelleyerek belgeyi yükleyin
 Document doc = new Document(dataDir + "Dirty field.docx", loadOptions);
 
-// احفظ المستند
+// belgeyi kaydet
 doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند عن طريق تحديث الحقول المتسخة باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. ستعرض الحقول القذرة الخاصة بالتحديث عند تحميل المستند أحدث القيم في مستند Word الخاص بك.
+Bu kılavuzda, .NET için Aspose.Words kitaplığını kullanarak kirli alanları güncelleyerek belge yüklemeyi açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. Belge yükündeki Kirli alanları güncelle, Word belgenizdeki en son değerleri görüntüler.

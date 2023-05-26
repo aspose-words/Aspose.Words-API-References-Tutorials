@@ -1,18 +1,18 @@
 ---
-title: تطبيق الترخيص
-linktitle: تطبيق الترخيص
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على إرشادات خطوة بخطوة لتطبيق ترخيص Aspose.Words في مشاريع .NET الخاصة بك. اتبع الخطوات لتمكين الوظائف الكاملة لمكتبة Aspose.Words.
+title: Lisansı Uygula
+linktitle: Lisansı Uygula
+second_title: Aspose.Words for .NET API Referansı
+description: .NET projelerinizde bir Aspose.Words lisansı uygulamak için adım adım talimatlar alın. Aspose.Words kitaplığının tam işlevselliğini etkinleştirmek için adımları izleyin.
 type: docs
 weight: 10
 url: /tr/net/apply-license/
 ---
 
-توفر هذه الصفحة دليلاً مفصلاً حول كيفية تطبيق ترخيص في مشاريع تستخدم Aspose.Words for .NET. يشرح هذا البرنامج التعليمي خطوة بخطوة كيفية استخدام ترخيص لتفعيل جميع ميزات Aspose.Words. كما يوفر نموذج التعليمات البرمجية لتوضيح عملية الترخيص. اتبع هذا الدليل لتطبيق الترخيص والحصول على أقصى استفادة من مكتبة Aspose.Words القوية في تطبيقات .NET.
+Bu sayfa, Aspose.Words for .NET kullanan projelerde bir lisansın nasıl uygulanacağına dair ayrıntılı bir kılavuz sağlar. Bu öğretici, Aspose.Words'ün tüm özelliklerini etkinleştirmek için bir lisansın nasıl kullanılacağını adım adım açıklar. Lisanslama sürecini göstermek için örnek kod da sağlar. .NET uygulamalarınızda lisans uygulamak ve güçlü Aspose.Words kitaplığından en iyi şekilde yararlanmak için bu kılavuzu izleyin.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [تطبيق الترخيص من ملف](./apply-license-from-file/) | تعرف على كيفية تطبيق ترخيص من ملف باستخدام Aspose.Words for .NET.|
-| [تطبيق الترخيص من الدفق](./apply-license-from-stream/) | تعرف على كيفية تطبيق ترخيص من تدفق باستخدام Aspose.Words for .NET.|
-| [تطبيق الترخيص المقنن](./apply-metered-license/) | تعرف على كيفية تطبيق ترخيص محدود باستخدام Aspose.Words for .NET. |
+| [Dosyadan Lisansı Uygula](./apply-license-from-file/) | Aspose.Words for .NET kullanarak bir dosyadan nasıl lisans uygulayacağınızı öğrenin.|
+| [Akıştan Lisansı Uygula](./apply-license-from-stream/) | Aspose.Words for .NET kullanarak bir akıştan nasıl lisans uygulayacağınızı öğrenin.|
+| [Tarifeli Lisansı Uygula](./apply-metered-license/) | Aspose.Words for .NET kullanarak ölçülü bir lisansı nasıl uygulayacağınızı öğrenin. |

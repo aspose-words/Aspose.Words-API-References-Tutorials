@@ -1,47 +1,47 @@
 ---
-title: قبول المراجعات
-linktitle: قبول المراجعات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية قبول المراجعات على مستند Word باستخدام Aspose.Words for .NET
+title: Aceptar revisiones
+linktitle: Aceptar revisiones
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a aceptar revisiones de un documento de Word usando Aspose.Words para .NET
 type: docs
 weight: 10
 url: /es/net/working-with-revisions/accept-revisions/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال قبول المراجعات على مستند Word باستخدام ميزة قبول التنقيحات في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم كود المصدر وقبول التغييرات على المستند.
+En este tutorial, lo guiaremos a través de la aceptación de revisiones de un documento de Word utilizando la función Aceptar revisiones de Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aceptar los cambios en el documento.
 
-## الخطوة 1: إضافة وتحرير محتوى المستند
+## Paso 1: agregar y editar el contenido del documento
 
-في هذا المثال ، نقوم بإنشاء مستند وإضافة محتوى. نستخدم عدة فقرات لتوضيح التغييرات والمراجعات. إليك الطريقة:
+En este ejemplo, estamos creando un documento y agregando contenido. Usamos varios párrafos para ilustrar cambios y revisiones. Así es cómo:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-// أضف نصًا إلى الفقرة الأولى ، ثم أضف فقرتين أخريين.
+// Agregue texto al primer párrafo, luego agregue dos párrafos más.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2.");
 body.AppendParagraph("Paragraph 3.");
 ```
 
-## الخطوة 2: تتبع المراجعات وإضافة التعليقات
+## Paso 2: Haga un seguimiento de las reseñas y agregue reseñas
 
-نقوم بتمكين تتبع المراجعة وإضافة مراجعة إلى المستند. إليك الطريقة:
+Habilitamos el seguimiento de revisión y agregamos una revisión al documento. Así es cómo:
 
 ```csharp
 doc.StartTrackRevisions("John Doe", DateTime.Now);
 
-//هذه الفقرة هي مراجعة وسيكون لها مجموعة إشارة "IsInsertRevision" المطابقة.
+//Este párrafo es una revisión y tendrá el indicador "IsInsertRevision" correspondiente establecido.
 para = body.AppendParagraph("Paragraph 4.");
 Assert.True(para.IsInsertRevision);
 ```
 
-## الخطوة 3: حذف فقرة وإدارة المراجعات
+## Paso 3: Elimina un párrafo y administra las revisiones
 
-نحذف فقرة ونبحث عن المراجعات المحفوظة. إليك الطريقة:
+Eliminamos un párrafo y verificamos las revisiones guardadas. Así es cómo:
 
 ```csharp
 ParagraphCollection paragraphs = body.Paragraphs;
@@ -49,15 +49,15 @@ Assert.AreEqual(4, paragraphs.Count);
 para = paragraphs[2];
 para.Remove();
 
-// نظرًا لأننا نتتبع المراجعات ، لا تزال الفقرة موجودة في المستند ، وستحتوي على مجموعة علامة "IsDeleteRevision"
-// وسيتم عرضها كمراجعة في Microsoft Word ، حتى نقبل أو نرفض جميع المراجعات.
+// Como estamos rastreando las revisiones, el párrafo aún existe en el documento, tendrá el indicador "IsDeleteRevision" establecido
+// y se mostrará como una revisión en Microsoft Word, hasta que aceptemos o rechacemos todas las revisiones.
 Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 ```
 
-## الخطوة 4: قبول التغييرات
+## Paso 4: Aceptar cambios
 
-نحن نقبل جميع التغييرات على الوثيقة. إليك الطريقة:
+Aceptamos todos los cambios en el documento. Así es cómo:
 
 ```csharp
 doc.AcceptAllRevisions();
@@ -65,69 +65,69 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 ```
 
-## الخطوة الخامسة: التوقف عن تتبع المراجعات
+## Paso 5: Deja de rastrear las reseñas
 
-سنقوم بإيقاف تعقب المراجعات حتى لا تظهر التغييرات التي تم إجراؤها على المستند كمراجعات. إليك الطريقة:
+Vamos a dejar de rastrear las revisiones para que los cambios en el documento ya no se muestren como revisiones. Así es cómo:
 
 ```csharp
 doc.StopTrackRevisions();
 ```
-## الخطوة 6: حفظ المستند
+## Paso 6: Guardar el documento
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Después de insertar el campo de formulario de entrada de texto, guarde el documento en la ubicación deseada usando el`Save` método. Asegúrese de proporcionar la ruta de archivo adecuada:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
 
-### مثال على شفرة المصدر لقبول المراجعات باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Aceptar revisiones usando Aspose.Words para .NET
 
-فيما يلي رمز المصدر الكامل لقبول التغييرات في مستند باستخدام Aspose.Words for .NET:
+Aquí está el código fuente completo para aceptar cambios en un documento usando Aspose.Words para .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	Body body = doc.FirstSection.Body;
 	Paragraph para = body.FirstParagraph;
 
-	// أضف نصًا إلى الفقرة الأولى ، ثم أضف فقرتين أخريين.
+	// Agregue texto al primer párrafo, luego agregue dos párrafos más.
 	para.AppendChild(new Run(doc, "Paragraph 1. "));
 	body.AppendParagraph("Paragraph 2. ");
 	body.AppendParagraph("Paragraph 3. ");
 
-	// لدينا ثلاث فقرات ، لم يتم تسجيل أي منها كأي نوع من المراجعة
-	//إذا أضفنا / أزلنا أي محتوى في المستند أثناء تتبع المراجعات ،
-	// سيتم عرضها على هذا النحو في المستند ويمكن قبولها / رفضها.
+	// Tenemos tres párrafos, ninguno de los cuales registrado como ningún tipo de revisión
+	//Si agregamos/eliminamos cualquier contenido en el documento durante el seguimiento de las revisiones,
+	// se mostrarán como tales en el documento y se pueden aceptar/rechazar.
 	doc.StartTrackRevisions("John Doe", DateTime.Now);
 
-	// هذه الفقرة هي مراجعة وستحتوي على مجموعة الرايات "IsInsertRevision".
+	// Este párrafo es una revisión y tendrá el indicador correspondiente "IsInsertRevision" establecido.
 	para = body.AppendParagraph("Paragraph 4. ");
 	Assert.True(para.IsInsertRevision);
 
-	// احصل على مجموعة فقرات المستند وقم بإزالة فقرة.
+	// Obtenga la colección de párrafos del documento y elimine un párrafo.
 	ParagraphCollection paragraphs = body.Paragraphs;
 	Assert.AreEqual(4, paragraphs.Count);
 	para = paragraphs[2];
 	para.Remove();
 
-	// نظرًا لأننا نتتبع المراجعات ، فلا تزال الفقرة موجودة في المستند ، وستحتوي على مجموعة "IsDeleteRevision"
-	// وسيتم عرضها كمراجعة في Microsoft Word ، حتى نقبل أو نرفض جميع المراجعات.
+	// Dado que estamos rastreando las revisiones, el párrafo aún existe en el documento, tendrá el conjunto "IsDeleteRevision"
+	// y se mostrará como una revisión en Microsoft Word, hasta que aceptemos o rechacemos todas las revisiones.
 	Assert.AreEqual(4, paragraphs.Count);
 	Assert.True(para.IsDeleteRevision);
 
-	// تتم إزالة فقرة مراجعة الحذف بمجرد قبول التغييرات.
+	// El párrafo de eliminación de revisión se elimina una vez que aceptamos los cambios.
 	doc.AcceptAllRevisions();
 	Assert.AreEqual(3, paragraphs.Count);
 	Assert.That(para, Is.Empty);
 
-	// يؤدي إيقاف تتبع المراجعات إلى ظهور هذا النص كنص عادي.
-	// لا يتم احتساب المراجعات عند تغيير المستند.
+	// Detener el seguimiento de las revisiones hace que este texto aparezca como texto normal.
+	// Las revisiones no se cuentan cuando se cambia el documento.
 	doc.StopTrackRevisions();
 
-	// احفظ المستند.
+	// Guarde el documento.
 	doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
             
 ```

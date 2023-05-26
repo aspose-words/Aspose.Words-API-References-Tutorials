@@ -1,51 +1,51 @@
 ---
-title: تنسيق الجدول والخلية بحدود مختلفة
-linktitle: تنسيق الجدول والخلية بحدود مختلفة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتنسيق الجدول والخلية بحدود مختلفة باستخدام Aspose.Words for .NET.
+title: Tabloyu ve Hücreyi Farklı Kenarlıklarla Biçimlendirme
+linktitle: Tabloyu ve Hücreyi Farklı Kenarlıklarla Biçimlendirme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak tablo ve hücreyi farklı kenarlıklarla biçimlendirmek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-styles-and-formatting/format-table-and-cell-with-different-borders/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتنسيق جدول وخلية ذات حدود مختلفة باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تطبيق حدود مخصصة على جدول وخلايا معينة في مستندات Word باستخدام Aspose.Words for .NET.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir tabloyu ve hücreyi farklı kenarlıklarla biçimlendirme sürecini adım adım anlatacağız. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sağlayacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak Word belgelerinizdeki belirli tablo ve hücrelere nasıl özel kenarlıklar uygulayacağınızı öğreneceksiniz.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+Öncelikle, belgeler dizininize giden yolu ayarlamanız gerekir. Bu, düzenlenmiş Word belgenizi kaydetmek istediğiniz konumdur. "BELGELER DİZİNİNİZİ" uygun yolla değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## 2. Adım: Yeni bir belge ve belge oluşturucu oluşturun
+ Ardından, yeni bir örneğini oluşturmanız gerekir.`Document` sınıf ve bu belge için bir belge oluşturucu.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدول جديد وأضف خلايا
-لبدء إنشاء الجدول ، نستخدم ملف`StartTable()` طريقة منشئ المستندات ، ثم نضيف خلايا إلى الجدول باستخدام الامتداد`InsertCell()` الطريقة ونكتب محتويات الخلايا إلى ملف`Writeln()` طريقة.
+## 3. Adım: Yeni bir tablo başlatın ve hücreleri ekleyin
+Tabloyu oluşturmaya başlamak için,`StartTable()` Belge oluşturucunun yöntemini kullanarak tabloya hücreler ekleriz.`InsertCell()` yöntemini kullanarak hücrelerin içeriğini yazıyoruz.`Writeln()` yöntem.
 
 ```csharp
 Table table = builder. StartTable();
 builder. InsertCell();
-// تعيين الحدود للجدول بأكمله.
+// Tüm tablo için kenarlıklar belirleyin.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-// تعيين المساحة المتروكة لهذه الخلية.
+// Bu hücre için dolguyu ayarlayın.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
 builder. InsertCell();
-// حدد مساحة خلية مختلفة للخلية الثانية.
+// İkinci hücre için farklı bir hücre dolgusu belirtin.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
 builder. EndRow();
-// امسح تنسيق الخلية من العمليات السابقة.
+// Önceki işlemlerden hücre biçimlendirmesini temizleyin.
 builder.CellFormat.ClearFormatting();
 builder. InsertCell();
-// قم بإنشاء حدود أكثر سمكًا للخلية الأولى في هذا الصف. سيكون الأمر مختلفا
-// بالنسبة للحدود المحددة للجدول.
+// Bu satırdaki ilk hücre için daha kalın kenarlıklar oluşturun. farklı olacak
+// tablo için tanımlanan sınırlara göre.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
 builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
@@ -56,42 +56,42 @@ builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
 
-## الخطوة 4: احفظ المستند
+## 4. Adım: Belgeyi kaydedin
 
-  معدل
-أخيرًا احفظ المستند المعدل في ملف. يمكنك اختيار اسم وموقع مناسبين للمستند الناتج.
+  değiştirilmiş
+Son olarak değiştirilen belgeyi bir dosyaya kaydedin. Çıktı belgesi için uygun bir ad ve konum seçebilirsiniz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
-تهنئة ! لقد قمت الآن بتنسيق جدول وخلية ذات حدود مختلفة باستخدام Aspose.Words لـ .NET.
+Tebrikler! Artık Aspose.Words for .NET'i kullanarak bir tabloyu ve bir hücreyi farklı kenarlıklarla biçimlendirdiniz.
 
-### عينة من التعليمات البرمجية المصدر لتنسيق الجدول والخلية ذات الحدود المختلفة باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Tabloyu ve Hücreyi Farklı Kenarlıklarla Formatlamak için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Table table = builder.StartTable();
 	builder.InsertCell();
-	//عيّن حدود الجدول بأكمله.
+	//Tüm tablo için kenarlıkları ayarlayın.
 	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// عيّن تظليل الخلية لهذه الخلية.
+	// Bu hücre için hücre gölgelemesini ayarlayın.
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 	builder.Writeln("Cell #1");
 	builder.InsertCell();
-	// حدد تظليل خلية مختلف للخلية الثانية.
+	// İkinci hücre için farklı bir hücre gölgelemesi belirtin.
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 	builder.Writeln("Cell #2");
 	builder.EndRow();
-	// امسح تنسيق الخلية من العمليات السابقة.
+	// Önceki işlemlerden hücre biçimlendirmesini temizleyin.
 	builder.CellFormat.ClearFormatting();
 	builder.InsertCell();
-	// أنشئ حدودًا أكبر للخلية الأولى من هذا الصف. سيكون هذا مختلفا
-	// مقارنة بالحدود الموضوعة للجدول.
+	// Bu satırın ilk hücresi için daha geniş kenarlıklar oluşturun. bu farklı olacak
+	// tablo için ayarlanan kenarlıklarla karşılaştırılır.
 	builder.CellFormat.Borders.Left.LineWidth = 4.0;
 	builder.CellFormat.Borders.Right.LineWidth = 4.0;
 	builder.CellFormat.Borders.Top.LineWidth = 4.0;
@@ -103,5 +103,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تنسيق جدول وخلية ذات حدود مختلفة باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تخصيص الجدول وحدود الخلية في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية الاحتياجات الخاصة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir tabloyu ve hücreyi farklı kenarlıklarla nasıl biçimlendireceğimizi öğrendik. Bu adım adım kılavuzu izleyerek, Word belgelerinizdeki tablo ve hücre kenarlıklarını kolayca özelleştirebilirsiniz. Aspose.Words, belgelerinizdeki tabloları değiştirmek ve biçimlendirmek için güçlü ve esnek bir API sunar. Bu bilgiyle, Word belgelerinizin görsel sunumunu geliştirebilir ve belirli ihtiyaçları karşılayabilirsiniz.

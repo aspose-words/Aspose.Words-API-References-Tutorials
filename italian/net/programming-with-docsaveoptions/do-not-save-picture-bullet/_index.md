@@ -1,81 +1,81 @@
 ---
-title: لا تقم بحفظ صورة نقطية
-linktitle: لا تقم بحفظ صورة نقطية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل حفظ الرموز النقطية للصور في مستندات Word باستخدام Aspose.Words for .NET.
+title: Non salvare il punto elenco dell'immagine
+linktitle: Non salvare il punto elenco dell'immagine
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come disabilitare il salvataggio dei punti elenco delle immagini nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 
-تعد الرموز النقطية للصور ميزة شائعة الاستخدام في مستندات Word لإضافة رموز نقطية مخصصة. ومع ذلك ، في بعض الحالات قد يكون من الضروري تعطيل تسجيل الصور النقطية عند معالجة المستندات باستخدام Aspose.Words Library for .NET. في هذا الدليل المفصل خطوة بخطوة ، سنشرح كيفية استخدام كود مصدر Aspose.Words C # لـ .NET لتعطيل حفظ الصور النقطية باستخدام خيارات حفظ DocSaveOptions.
+punti elenco con immagini sono una funzionalità comunemente utilizzata nei documenti di Word per aggiungere punti elenco personalizzati. Tuttavia, in alcuni casi potrebbe essere necessario disabilitare la registrazione dei punti elenco dell'immagine quando si manipolano i documenti utilizzando Aspose.Words Library per .NET. In questa guida dettagliata, spiegheremo come utilizzare il codice sorgente Aspose.Words C# per .NET per disabilitare il salvataggio dei punti elenco delle immagini utilizzando le opzioni di salvataggio di DocSaveOptions.
 
-## فهم مكتبة Aspose.Words
+## Comprensione della libreria Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Prima di immergersi nel codice, è importante comprendere la libreria Aspose.Words per .NET. Aspose.Words è una potente libreria per creare, modificare, convertire e proteggere documenti Word in diverse piattaforme, incluso .NET. Offre molte funzionalità per la manipolazione dei documenti, come l'inserimento di testo, la modifica della formattazione, l'aggiunta di sezioni e molto altro.
 
-## الخطوة 1: إعداد دليل المستندات
+## Passaggio 1: impostazione della directory dei documenti
 
-الخطوة الأولى هي تحديد الدليل حيث توجد المستندات الخاصة بك. يجب عليك تحديد مسار الدليل الكامل. على سبيل المثال :
+Il primo passaggio consiste nel definire la directory in cui si trovano i documenti. È necessario specificare il percorso completo della directory. Per esempio :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti.
 
-## الخطوة 2: تحميل المستند مع صورة نقطية
+## Passaggio 2: caricamento del documento con punti elenco immagine
 
-بعد ذلك ، تحتاج إلى تحميل المستند باستخدام الرموز النقطية للصور. استخدم فئة المستند لتحميل المستند من ملف. على سبيل المثال :
+Successivamente, è necessario caricare il documento con punti elenco immagine. Utilizzare la classe Document per caricare il documento da un file. Per esempio :
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-في هذا المثال نقوم بتحميل المستند من ملف "Image bullet points.docx"
+In questo esempio stiamo caricando il documento dal file "Image bullet points.docx"
 
-  الموجود في دليل المستندات.
+  situato nella directory dei documenti.
 
-## الخطوة 3: تكوين خيارات التسجيل
+## Passaggio 3: configurare le opzioni di registrazione
 
-لنقم الآن بتهيئة خيارات الحفظ لمستندنا. استخدم فئة DocSaveOptions لتحديد إعدادات الحفظ. على سبيل المثال :
+Ora configuriamo le opzioni di salvataggio per il nostro documento. Utilizzare la classe DocSaveOptions per specificare le impostazioni di salvataggio. Per esempio :
 
 ```csharp
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
-في هذا المثال ، قمنا بإنشاء كائن DocSaveOptions جديد وقمنا بتعيين الخاصية SavePictureBullet إلى false لتعطيل حفظ الرموز النقطية للصور.
+In questo esempio creiamo un nuovo oggetto DocSaveOptions e impostiamo la proprietà SavePictureBullet su false per disabilitare il salvataggio dei punti elenco delle immagini.
 
-## الخطوة 4: تمكين ميزة "عدم حفظ الصورة التعدادية"
+## Passaggio 4: abilita la funzione "Non salvare il punto elenco dell'immagine".
 
-لتمكين ميزة "Do Not Save Picture Bullet" ، قمنا بالفعل بتكوين خيارات الحفظ مع تعيين SavePictureBullet على false. هذا يضمن عدم حفظ الصور النقطية في المستند النهائي.
+Per abilitare la funzione "Non salvare l'immagine puntata", abbiamo già configurato le opzioni di salvataggio con SavePictureBullet impostato su false. Ciò garantisce che i punti elenco dell'immagine non vengano salvati nel documento finale.
 
-## الخطوة 5: احفظ المستند
+## Passaggio 5: salvare il documento
 
-أخيرًا ، يمكنك حفظ المستند باستخدام طريقة Save لفئة Document. حدد المسار الكامل للملف واسم الملف المطلوب. على سبيل المثال :
+Infine, puoi salvare il documento utilizzando il metodo Save della classe Document. Specificare il percorso completo del file e il nome del file desiderato. Per esempio :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
-تأكد من استبدال "dataDir" بمسار الدليل إلى مستنداتك.
+Assicurati di sostituire "dataDir" con il percorso della directory dei tuoi documenti.
 
-## مثال على كود المصدر لـ DocSaveOptions حفظ الخيارات مع وظيفة "عدم حفظ الصورة" باستخدام Aspose.Words for .NET
+## Esempio di codice sorgente per le opzioni di salvataggio di DocSaveOptions con la funzionalità "Non salvare il punto elenco immagine" utilizzando Aspose.Words per .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند باستخدام الصور النقطية
+// Carica il documento con punti elenco immagine
 Document doc = new Document(dataDir + "Image bullet points.docx");
 
-// تكوين خيارات الحفظ مع ميزة "عدم حفظ الصورة"
+// Configura le opzioni di salvataggio con la funzione "Non salvare l'immagine puntata".
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 
-// احفظ المستند بالخيارات المحددة
+// Salva il documento con le opzioni specificate
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
-## خاتمة
+## Conclusione
 
-في هذا الدليل ، تناولنا كيفية تعطيل حفظ الصور النقطية في مستند باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يمكن أن يكون تعطيل حفظ الصورة النقطية مفيدًا في بعض المواقف للحفاظ على بنية المستند وتنسيقه بدون حفظ الرموز النقطية للصورة.
+In questa guida, abbiamo spiegato come disabilitare il salvataggio dei punti elenco immagine in un documento utilizzando la libreria Aspose.Words per .NET. Seguendo i passaggi forniti e usando il codice sorgente C# fornito, puoi facilmente applicare questa funzionalità nella tua applicazione C#. La disattivazione del salvataggio dei punti elenco immagine può essere utile in alcune situazioni per preservare la struttura e la formattazione del documento senza salvare i punti elenco immagine.

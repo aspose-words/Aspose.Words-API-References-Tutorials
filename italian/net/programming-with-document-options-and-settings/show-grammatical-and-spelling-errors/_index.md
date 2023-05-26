@@ -1,34 +1,34 @@
 ---
-title: إظهار الأخطاء النحوية والإملائية
-linktitle: إظهار الأخطاء النحوية والإملائية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتمكين عرض الأخطاء النحوية والإملائية في مستند باستخدام Aspose.Words for .NET.
+title: Mostra errori grammaticali e ortografici
+linktitle: Mostra errori grammaticali e ortografici
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata per abilitare la visualizzazione di errori grammaticali e ortografici in un documento con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-document-options-and-settings/show-grammatical-and-spelling-errors/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتمكين عرض الأخطاء النحوية والإملائية باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة عرض الأخطاء النحوية والإملائية في المستند.
+In questo tutorial, ti guideremo attraverso il codice sorgente C# per abilitare la visualizzazione di errori grammaticali e ortografici con Aspose.Words per .NET. Questa funzione consente di visualizzare gli errori grammaticali e ortografici in un documento.
 
-## الخطوة 1: إعداد المشروع
+## Passaggio 1: impostazione del progetto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Per iniziare, crea un nuovo progetto C# nel tuo IDE preferito. Assicurarsi che nel progetto si faccia riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة الثانية: تحميل المستند
+## Passaggio 2: caricamento del documento
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد عرض الأخطاء النحوية والإملائية له. استخدم الكود التالي لتحميل المستند:
+In questo passaggio, caricheremo il documento Word per il quale vogliamo visualizzare errori grammaticali e ortografici. Utilizzare il seguente codice per caricare il documento:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Sostituire`"YOUR DOCUMENTS DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento.
 
-## الخطوة 3: تفعيل عرض الخطأ
+## Passaggio 3: abilita la visualizzazione degli errori
 
-سنقوم الآن بتمكين عرض الأخطاء النحوية والإملائية في المستند. استخدم الكود التالي لتمكين عرض الأخطاء:
+Ora abiliteremo la visualizzazione degli errori grammaticali e ortografici nel documento. Utilizzare il seguente codice per abilitare la visualizzazione degli errori:
 
 ```csharp
 doc. ShowGrammaticalErrors = true;
@@ -37,13 +37,13 @@ doc. ShowSpellingErrors = true;
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ShowGrammaticalAndSpellingErrors.docx");
 ```
 
-يتيح هذا الرمز عرض الأخطاء النحوية (`ShowGrammaticalErrors`) وأخطاء إملائية (`ShowSpellingErrors`) في المستند.
+Questo codice abilita la visualizzazione degli errori grammaticali (`ShowGrammaticalErrors`) ed errori di ortografia (`ShowSpellingErrors`) nel documento.
 
-### مثال على شفرة المصدر لإظهار الأخطاء النحوية والإملائية باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per Mostra errori grammaticali e ortografici utilizzando Aspose.Words per .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
@@ -54,6 +54,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ShowGrammaticalAndSpel
 
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Assicurarsi di specificare il percorso del documento corretto nel file`dataDir` variabile.
 
-لقد تعلمت الآن كيفية تمكين عرض الأخطاء النحوية والإملائية في مستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تمكين هذه الميزة في مستنداتك الخاصة.
+Ora hai imparato come abilitare la visualizzazione degli errori grammaticali e ortografici in un documento utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata fornita in questo tutorial, puoi facilmente abilitare questa funzione nei tuoi documenti.

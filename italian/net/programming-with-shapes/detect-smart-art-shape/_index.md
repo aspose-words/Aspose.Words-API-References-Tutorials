@@ -1,53 +1,53 @@
 ---
-title: كشف شكل الفن الذكي
-linktitle: كشف شكل الفن الذكي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية اكتشاف أشكال الفن الذكي في مستند Word باستخدام Aspose.Words for .NET ، مع تحديد التمثيلات الرسومية.
+title: Rileva la forma artistica intelligente
+linktitle: Rileva la forma artistica intelligente
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come rilevare le forme Smart Art in un documento Word utilizzando Aspose.Words per .NET, identificando le rappresentazioni grafiche.
 type: docs
 weight: 10
 url: /it/net/programming-with-shapes/detect-smart-art-shape/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية اكتشاف أشكال Smart Art في مستند Word باستخدام Aspose.Words for .NET. أشكال الفن الذكي هي تمثيلات رسومية تُستخدم لتقديم المعلومات والأفكار بشكل مرئي.
+Questo tutorial spiega come rilevare le forme Smart Art in un documento Word utilizzando Aspose.Words per .NET. Le forme Smart Art sono rappresentazioni grafiche utilizzate per presentare visivamente informazioni e idee.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Prerequisiti
+Per seguire questo tutorial, è necessario disporre di quanto segue:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words per la libreria .NET installata.
+- Conoscenza di base di C# e lavoro con documenti Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## Passaggio 1: impostare la directory dei documenti
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- قم بتحميل مستند Word باستخدام ملف`Document` مُنشئ ، تمرير المسار إلى المستند كمعامل.
+## Passaggio 2: caricare il documento
+ Carica il documento Word usando il file`Document` costruttore, passando il percorso al documento come parametro.
 
 ```csharp
 Document doc = new Document(dataDir + "Smart Art.docx");
 ```
 
-## الخطوة الثالثة: اكتشاف الأشكال الفنية الذكية
-كرر من خلال العقد الفرعية من النوع`Shape` في المستند باستخدام امتداد`GetChildNodes` طريقة. تحقق مما إذا كان كل شكل يحتوي على Smart Art باستخدام ملف`HasSmart Art` ملكية.
+## Passaggio 3: rileva le forme artistiche intelligenti
+Scorrere i nodi figlio di type`Shape` nel documento utilizzando il`GetChildNodes` metodo. Controlla se ogni forma ha Smart Art usando il`HasSmart Art` proprietà.
 
 ```csharp
 int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmart Art);
 ```
 
-## الخطوة 4: إخراج النتيجة
-اطبع عدد الأشكال باستخدام Smart Art المكتشف في المستند.
+## Passaggio 4: emettere il risultato
+Stampa il conteggio delle forme con Smart Art rilevate nel documento.
 
 ```csharp
 Console.WriteLine("The document has {0} shapes with Smart Art.", count);
 ```
 
-### مثال على شفرة المصدر لـ Detect Smart Art Shape باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Rileva Smart Art Shape utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Smart Art.docx");
@@ -55,4 +55,4 @@ Console.WriteLine("The document has {0} shapes with Smart Art.", count);
 	Console.WriteLine("The document has {0} shapes with Smart Art.", count);
 ```
 
-هذا كل شيء! لقد نجحت في اكتشاف أشكال Smart Art في مستند Word باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai rilevato correttamente le forme Smart Art nel tuo documento Word utilizzando Aspose.Words per .NET.

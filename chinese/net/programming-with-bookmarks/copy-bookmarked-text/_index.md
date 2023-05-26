@@ -1,56 +1,56 @@
 ---
-title: نسخ النص الذي تم وضع إشارة مرجعية عليه
-linktitle: نسخ النص الذي تم وضع إشارة مرجعية عليه
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية نسخ نص إشارة مرجعية من مستند مصدر إلى مستند آخر باستخدام Aspose.Words for .NET.
+title: 复制书签文本
+linktitle: 复制书签文本
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将书签文本从源文档复制到另一个文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Copy Bookmarked Text في Aspose.Words for .NET library. تتيح لك هذه الميزة نسخ محتويات إشارة مرجعية معينة من مستند مصدر إلى مستند آخر.
+在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的复制书签文本功能。此功能允许您将特定书签的内容从源文档复制到另一个文档。
 
-## المتطلبات الأساسية
+## 先决条件
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# 语言的基础知识。
+- 安装了 Aspose.Words 库的 .NET 开发环境。
 
-## الخطوة 1: تحميل المستند المصدر
+## 第 1 步：加载源文档
 
- قبل نسخ نص الإشارة المرجعية ، نحتاج إلى تحميل المستند المصدر في ملف`Document` كائن باستخدام مسار الملف:
+在复制书签文本之前，我们需要将源文档加载到`Document`使用文件路径的对象：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## الخطوة 2: الحصول على إشارة مرجعية المصدر
+## 第二步：获取源书签
 
- نحن نستخدم ال`Bookmarks` خاصية نطاق المستند المصدر للحصول على الإشارة المرجعية المحددة التي نريد نسخها:
+我们使用`Bookmarks`源文档范围的属性以获取我们要复制的特定书签：
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
-## الخطوة 3: إنشاء وثيقة الوجهة
+## 第 3 步：创建目标文档
 
-نقوم بإنشاء مستند جديد سيكون بمثابة المستند الوجهة لنسخ محتوى الإشارة المرجعية:
+我们创建一个新文档作为复制书签内容的目标文档：
 
 ```csharp
 Document dstDoc = new Document();
 ```
 
-## الخطوة 4: تحديد موقع النسخ
+## 步骤 4：指定复制位置
 
-نحدد الموقع حيث نريد إضافة النص المنسوخ. في مثالنا ، نضيف النص إلى نهاية نص القسم الأخير من المستند الوجهة:
+我们指定要添加复制文本的位置。在我们的示例中，我们将文本添加到目标文档最后一部分的正文末尾：
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## الخطوة 5: استيراد نص الإشارة المرجعية ونسخه
+## 第 5 步：导入和复制书签文本
 
- نحن نستخدم`NodeImporter`كائن لاستيراد نص إشارة مرجعية ونسخه من مستند مصدر إلى المستند الوجهة:
+我们使用一个`NodeImporter`对象将书签文本从源文档导入和复制到目标文档：
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -60,26 +60,26 @@ AppendBookmarkedText(import, srcBookmark, dstNode);
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 ```
 
-### مثال على شفرة المصدر لـ Copy Bookmarked Text باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 复制书签文本的示例源代码
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح نسخ النص من إشارة مرجعية باستخدام Aspose.Words for .NET:
+以下是演示使用 Aspose.Words for .NET 从书签复制文本的完整示例源代码：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 
-	// هذه هي الإشارة المرجعية التي نريد نسخ محتواها.
+	//这是我们要复制其内容的书签。
 	Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 
-	// سنضيف إلى هذه الوثيقة.
+	//我们将添加到此文档中。
 	Document dstDoc = new Document();
 
-	// لنفترض أننا سنلحق بنهاية نص القسم الأخير.
+	//假设我们将被附加到最后一节正文的末尾。
 	CompositeNode dstNode = dstDoc.LastSection.Body;
 
-	// إذا قمت بالاستيراد عدة مرات بدون سياق واحد ، فسيؤدي ذلك إلى إنشاء العديد من الأنماط.
+	//如果您在没有单个上下文的情况下多次导入，将导致创建许多样式。
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
 
 	AppendBookmarkedText(importer, srcBookmark, dstNode);
@@ -88,6 +88,6 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ```
 
-## خاتمة
+## 结论
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام الوظيفة Copy Bookmarked Text من Aspose.Words for .NET. اتبعنا دليلًا تفصيليًا لنسخ محتويات إشارة مرجعية من مستند مصدر إلى مستند آخر.
+在本文中，我们研究了 C# 源代码以了解如何使用 Aspose.Words for .NET 中的复制书签文本功能。我们按照分步指南将书签的内容从源文档复制到另一个文档。

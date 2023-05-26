@@ -1,65 +1,65 @@
 ---
-title: استخدم الخط من الجهاز المستهدف
-linktitle: استخدم الخط من الجهاز المستهدف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستند Word إلى HTML ثابت باستخدام خطوط الجهاز الهدف باستخدام Aspose.Words for .NET.
+title: Använd teckensnitt från målmaskin
+linktitle: Använd teckensnitt från målmaskin
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du konverterar ett Word-dokument till fast HTML med hjälp av målmaskinens teckensnitt med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
 
-عند تحويل مستند Word إلى مستند HTML ثابت في تطبيق C # ، قد ترغب في استخدام خطوط الجهاز الهدف لضمان احتفاظ HTML بالشكل والنمط الأصلي للمستند. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحديد هذه الوظيفة باستخدام خيارات حفظ HtmlFixedSaveOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لتحويل مستند Word إلى HTML ثابت باستخدام خطوط الجهاز الهدف باستخدام HtmlFixedSaveOptions.
+När du konverterar ett Word-dokument till fast HTML i en C#-applikation, kanske du vill använda målmaskinens teckensnitt för att säkerställa att den renderade HTML-koden behåller dokumentets ursprungliga utseende och stil. Med Aspose.Words-biblioteket för .NET kan du enkelt specificera denna funktionalitet med hjälp av HtmlFixedSaveOptions-sparalternativen. I den här steg-för-steg-guiden går vi igenom hur du använder C#-källkoden för Aspose.Words för .NET för att konvertera ett Word-dokument till fast HTML med hjälp av målmaskinens teckensnitt med hjälp av HtmlFixedSaveOptions.
 
-## فهم مكتبة Aspose.Words
+## Förstå Aspose.Words-biblioteket
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Innan du dyker in i koden är det viktigt att förstå Aspose.Words-biblioteket för .NET. Aspose.Words är ett kraftfullt bibliotek för att skapa, redigera, konvertera och skydda Word-dokument på olika plattformar inklusive .NET. Den erbjuder många funktioner för att manipulera dokument, som att infoga text, ändra formatering, lägga till avsnitt och mycket mer.
 
-## تحميل مستند Word
+## Laddar Word-dokumentet
 
-الخطوة الأولى هي تحميل مستند Word الذي تريد تحويله إلى HTML ثابت. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+Det första steget är att ladda Word-dokumentet du vill konvertera till fast HTML. Använd klassen Document för att ladda dokumentet från källfilen. Här är ett exempel :
 
 ```csharp
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Bullet Points with Alternative font.docx" الموجود في دليل المستندات.
+I det här exemplet laddar vi dokumentet "Punktpunkter med alternativt teckensnitt.docx" som finns i dokumentkatalogen.
 
-## تكوين خيارات النسخ الاحتياطي
+## Konfigurera alternativ för säkerhetskopiering
 
-الخطوة التالية هي تكوين خيارات الحفظ للتحويل إلى HTML ثابت. استخدم فئة HtmlFixedSaveOptions وقم بتعيين الخاصية UseTargetMachineFonts على true لتخبر Aspose.Words باستخدام الخطوط من الجهاز الهدف. هيريس كيفية القيام بذلك:
+Nästa steg är att konfigurera sparalternativen för konvertering till fast HTML. Använd klassen HtmlFixedSaveOptions och ställ in egenskapen UseTargetMachineFonts på true för att tala om för Aspose.Words att använda teckensnitt från måldatorn. Så här gör du:
 
 ```csharp
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 ```
 
-نقوم بإنشاء كائن HtmlFixedSaveOptions جديد وقمنا بتعيين الخاصية UseTargetMachineFonts على true لاستخدام خطوط الجهاز الهدف عند التحويل.
+Vi skapar ett nytt HtmlFixedSaveOptions-objekt och ställer in UseTargetMachineFonts-egenskapen till true för att använda målmaskinens teckensnitt vid konvertering.
 
-## ثابت تحويل مستند HTML
+## Fast HTML-dokumentkonvertering
 
-الآن بعد أن قمنا بتكوين خيارات الحفظ ، يمكننا المتابعة لتحويل المستند إلى HTML ثابت. استخدم طريقة Save لفئة Document لحفظ المستند المحول بتنسيق HTML ثابت عن طريق تحديد خيارات الحفظ. هنا مثال :
+Nu när vi har konfigurerat sparalternativen kan vi fortsätta att konvertera dokumentet till fast HTML. Använd metoden Spara för klassen Document för att spara det konverterade dokumentet i fast HTML-format genom att ange sparalternativ. Här är ett exempel :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
-في هذا المثال ، نحفظ المستند المحول باسم "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html" باستخدام خيارات الحفظ المحددة.
+I det här exemplet sparar vi det konverterade dokumentet som "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html" med de angivna sparalternativen.
 
-### مثال على شفرة المصدر لـ HtmlFixedSaveOptions مع ميزة "استخدام الخطوط من الجهاز الهدف" باستخدام Aspose.Words for .NET
+### Exempel på källkod för HtmlFixedSaveOptions med funktionen "Använd teckensnitt från målmaskin" med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+//Ladda Word-dokumentet
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-// تكوين خيارات النسخ الاحتياطي باستخدام ميزة "استخدام الخطوط من الجهاز الهدف"
+// Konfigurera alternativ för säkerhetskopiering med funktionen "Använd teckensnitt från måldator".
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
-// تحويل المستند إلى HTML ثابت
+// Konvertera dokument till fast HTML
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
-## خاتمة
+## Slutsats
 
-في هذا الدليل ، شرحنا كيفية تحويل مستند Word إلى HTML ثابت باستخدام خطوط الجهاز الهدف مع مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يضمن التحويل إلى HTML ثابت مع خطوط الجهاز الهدف عرضًا أمينًا ومتسقًا للمستند بتنسيق HTML.
+I den här guiden har vi förklarat hur man konverterar ett Word-dokument till fast HTML med hjälp av målmaskinens teckensnitt med Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Konverteringen till fast HTML med målmaskinens teckensnitt garanterar trogen och konsekvent rendering av dokumentet i HTML-format.

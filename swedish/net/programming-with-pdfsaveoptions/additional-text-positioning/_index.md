@@ -1,54 +1,54 @@
 ---
-title: نص إضافي المواقع
-linktitle: نص إضافي المواقع
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التحكم في موضع النص الإضافي عند تحويل مستندات Word إلى PDF باستخدام Aspose.Words for .NET.
+title: Ytterligare textpositionering
+linktitle: Ytterligare textpositionering
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du kontrollerar placeringen av ytterligare text när du konverterar Word-dokument till PDF med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/additional-text-positioning/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات استخدام ميزة تحديد موضع النص الإضافية مع Aspose.Words for .NET. تتيح لك هذه الميزة التحكم في وضع نص إضافي عند تحويل مستند Word إلى PDF. اتبع الخطوات التالية:
+I den här handledningen går vi igenom stegen för att använda den extra textpositioneringsfunktionen med Aspose.Words för .NET. Den här funktionen låter dig styra placeringen av ytterligare text när du konverterar ett Word-dokument till PDF. Följ stegen nedan:
 
-## الخطوة 1: تحميل المستند
+## Steg 1: Ladda dokumentet
 
-ابدأ بتحميل مستند Word الذي تريد تحويله إلى PDF:
+Börja med att ladda upp Word-dokumentet du vill konvertera till PDF:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح لمستند Word الخاص بك.
+Var noga med att ange rätt sökväg till ditt Word-dokument.
 
-## الخطوة 2: تعيين خيارات تحويل PDF
+## Steg 2: Ställ in PDF-konverteringsalternativ
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وقم بتمكين وضع نص إضافي:
+Skapa en instans av klassen PdfSaveOptions och aktivera extra textpositionering:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { AdditionalTextPositioning = true };
 ```
 
-يتحكم هذا الخيار في الموضع الدقيق للنص الإضافي في ملف PDF.
+Det här alternativet styr den exakta placeringen av ytterligare text i PDF-filen.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## Steg 3: Konvertera dokument till PDF
 
- استخدم ال`Save` طريقة لتحويل مستند Word إلى PDF عن طريق تحديد خيارات التحويل:
+ Använd`Save` metod för att konvertera Word-dokumentet till PDF genom att ange konverteringsalternativ:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Se till att ange rätt sökväg för att spara den konverterade PDF-filen.
 
-### مثال على شفرة المصدر لتحديد موضع النص الإضافي باستخدام Aspose.Words for .NET
+### Exempel på källkod för ytterligare textpositionering med Aspose.Words för .NET
 
-إليك شفرة المصدر الكاملة لاستخدام وظيفة تحديد موضع النص الإضافية مع Aspose.Words for .NET:
+Här är den fullständiga källkoden för att använda den extra textpositioneringsfunktionen med Aspose.Words för .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -57,5 +57,5 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", sa
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", saveOptions);
 
 ```
-باتباع هذه الخطوات ، يمكنك التحكم بسهولة في وضع نص إضافي عند تحويل مستند Word إلى PDF باستخدام Aspose.Words for .NET.
+Genom att följa dessa steg kan du enkelt styra placeringen av ytterligare text när du konverterar ett Word-dokument till PDF med Aspose.Words för .NET.
 

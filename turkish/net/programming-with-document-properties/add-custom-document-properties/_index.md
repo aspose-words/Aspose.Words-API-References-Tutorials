@@ -1,34 +1,34 @@
 ---
-title: أضف خصائص المستند المخصصة
-linktitle: أضف خصائص المستند المخصصة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET.
+title: Özel Belge Özellikleri Ekle
+linktitle: Özel Belge Özellikleri Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir belgeye özel özellikler eklemek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-document-properties/add-custom-document-properties/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إضافة معلومات مخصصة إلى المستند.
+Bu eğitimde, Aspose.Words for .NET ile bir belgeye özel özellikler eklemek için size C# kaynak kodunda yol göstereceğiz. Bu özellik, belgeye özel bilgiler eklemenizi sağlar.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد إضافة خصائص مخصصة إليه. استخدم الكود التالي لتحميل المستند:
+Bu adımda, özel özellikler eklemek istediğimiz Word belgesini yükleyeceğiz. Belgeyi yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
 
-## الخطوة 3: إضافة خصائص مخصصة
+## 3. Adım: Özel özellikler ekleyin
 
-الآن دعنا نضيف خصائص مخصصة إلى المستند. استخدم الكود التالي لإضافة الخصائص:
+Şimdi belgeye özel özellikler ekleyelim. Özellikleri eklemek için aşağıdaki kodu kullanın:
 
 ```csharp
 CustomDocumentProperties customDocumentProperties = doc.CustomDocumentProperties;
@@ -42,13 +42,13 @@ customDocumentProperties.Add("Authorized Revision", doc.BuiltInDocumentPropertie
 customDocumentProperties.Add("Authorized Amount", 123.45);
 ```
 
-يتحقق هذا الرمز أولاً مما إذا كانت الخاصية "معتمد" موجودة بالفعل في الخصائص المخصصة. إذا كان موجودًا ، فستتوقف العملية. وبخلاف ذلك ، تتم إضافة الخصائص المخصصة إلى المستند.
+Bu kod ilk olarak "Yetkili" özelliğinin özel özelliklerde zaten var olup olmadığını kontrol eder. Varsa, işlem kesintiye uğrar. Aksi takdirde, özel özellikler belgeye eklenir.
 
-### مثال على شفرة المصدر لإضافة خصائص وثيقة مخصصة باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Add Custom Document Properties için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx");
 
@@ -64,6 +64,6 @@ customDocumentProperties.Add("Authorized Amount", 123.45);
 
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ bölümünde doğru belge yolunu belirttiğinizden emin olun.`dataDir` değişken.
 
-لقد تعلمت الآن كيفية إضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إضافة خصائصك المخصصة إلى مستنداتك.
+Artık Aspose.Words for .NET kullanarak bir belgeye nasıl özel özellikler ekleyeceğinizi öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek kendi özel özelliklerinizi belgelerinize kolayca ekleyebilirsiniz.

@@ -1,17 +1,17 @@
 ---
-title: البرمجة باستخدام Markdownsaveoptions
-linktitle: البرمجة باستخدام Markdownsaveoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تصدير إلى علامة التخفيض مع محاذاة محتوى الجدول وتعيين مجلد الصور
+title: Programación con Markdownsaveoptions
+linktitle: Programación con Markdownsaveoptions
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales contienen la exportación a Markdown con la alineación del contenido de la tabla y la carpeta de imágenes configuradas
 type: docs
 weight: 1640
 url: /es/net/programming-with-markdownsaveoptions/
 ---
 
-البرمجة باستخدام MarkdownSaveOptions هي مورد متعمق يرشدك خلال البرمجة باستخدام MarkdownSaveOptions باستخدام مكتبة Aspose.Words لـ .NET. توفر لك البرامج التعليمية توضيحات خطوة بخطوة وكود مصدر كامل وأمثلة عملية لفهم واستخدام MarkdownSaveOptions لتصدير مستندات Word إلى تنسيق Markdown. ستتعلم كيفية تخصيص خيارات التصدير ، مثل إدارة الصور ومواءمة محتوى الجدول وتحويل الأنماط والمزيد. هذا المورد ضروري للمطورين الذين يتطلعون إلى دمج وظيفة تصدير Markdown في تطبيقاتهم باستخدام Aspose.Words for .NET.
+La programación con MarkdownSaveOptions es un recurso detallado que lo guía a través de la programación con MarkdownSaveOptions usando la biblioteca Aspose.Words para .NET. Los tutoriales le brindan explicaciones paso a paso, código fuente completo y ejemplos prácticos para comprender y usar MarkdownSaveOptions para exportar documentos de Word al formato Markdown. Aprenderá a personalizar las opciones de exportación, como administrar imágenes, alinear el contenido de la tabla, convertir estilos y más. Este recurso es esencial para los desarrolladores que buscan integrar la funcionalidad de exportación de Markdown en sus aplicaciones usando Aspose.Words para .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [تصدير إلى Markdown مع محاذاة محتوى الجدول](./export-into-markdown-with-table-content-alignment/) | تعرف على كيفية تصدير محتوى الجدول بمحاذاة مختلفة لملفات Markdown باستخدام Aspose.Words for .NET. |
-| [تعيين مجلد الصور](./set-images-folder/) | تعرف على كيفية تعيين مجلد الصور عند التصدير إلى Markdown باستخدام Aspose.Words for .NET. تخصيص موضع الصور من أجل تنظيم وتكامل أفضل.|
+| [Exportar a Markdown con alineación de contenido de tabla](./export-into-markdown-with-table-content-alignment/) | Aprenda a exportar contenido de tablas con diferentes alineaciones a archivos Markdown usando Aspose.Words para .NET. |
+| [Establecer carpeta de imágenes](./set-images-folder/) | Aprenda a configurar la carpeta de imágenes al exportar a Markdown con Aspose.Words para .NET. Personalice la ubicación de las imágenes para una mejor organización e integración.|

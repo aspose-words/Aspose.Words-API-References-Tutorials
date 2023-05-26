@@ -1,42 +1,42 @@
 ---
-title: إنشاء تذييل الرأس
-linktitle: إنشاء تذييل الرأس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء رؤوس الصفحات وتذييلاتها في مستندات Word باستخدام Aspose.Words for .NET. تخصيص الرؤوس والتذييلات لكل صفحة.
+title: Erstellen Sie eine Kopf- und Fußzeile
+linktitle: Erstellen Sie eine Kopf- und Fußzeile
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Kopf- und Fußzeilen in Ihren Word-Dokumenten erstellen. Passen Sie Kopf- und Fußzeilen für jede Seite an.
 type: docs
 weight: 10
 url: /de/net/working-with-headers-and-footers/create-header-footer/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية لإنشاء رؤوس وتذييلات باستخدام Aspose.Words لوظائف .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes zum Erstellen von Kopf- und Fußzeilen mithilfe der Funktionalität von Aspose.Words für .NET. Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek in Ihr Projekt eingebunden haben, bevor Sie diesen Code verwenden.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## Schritt 1: Legen Sie den Pfad zum Dokumentverzeichnis fest
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Der Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
+Stellen Sie sicher, dass Sie den korrekten Pfad zu Ihrem Dokumentenverzeichnis angeben, in dem das bearbeitete Dokument gespeichert wird.
 
-## الخطوة 2: قم بإنشاء مستند ومولد مستندات
+## Schritt 2: Erstellen Sie ein Dokument und einen Dokumentengenerator
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- هنا نقوم بإنشاء مثيل لـ`Document` فئة ومثيل`DocumentBuilder` فئة تسمح لنا بمعالجة المستند وإضافة عناصر.
+ Hier erstellen wir eine Instanz von`Document` Klasse und eine Instanz davon`DocumentBuilder` Klasse, die es uns ermöglicht, das Dokument zu bearbeiten und Elemente hinzuzufügen.
 
-## الخطوة 3: تعيين معلمات الصفحة والعنوان الأول
+## Schritt 3: Seitenparameter und erste Kopfzeile festlegen
 
 ```csharp
 Section currentSection = builder.CurrentSection;
 PageSetup pageSetup = currentSection.PageSetup;
 
-// حدد ما إذا كنا نريد أن تختلف رؤوس / تذييلات الصفحة الأولى عن الصفحات الأخرى.
-// يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter لتحديدها
-// رؤوس / تذييلات مختلفة للصفحات الفردية والزوجية.
+// Geben Sie an, ob sich die Kopf-/Fußzeilen der ersten Seite von den anderen Seiten unterscheiden sollen.
+// Sie können zur Angabe auch die Eigenschaft PageSetup.OddAndEvenPagesHeaderFooter verwenden
+// unterschiedliche Kopf-/Fußzeilen für ungerade und gerade Seiten.
 pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
 
@@ -53,9 +53,9 @@ pageSetup.HeaderDistance = 20;
 builder. MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 ```
 
-نقوم بتعيين معلمات الصفحة ، بما في ذلك مسافة الرأس ، ثم ننتقل إلى العنوان الرئيسي (`HeaderPrimary`). نستخدم منشئ المستندات لإضافة نص وتنسيق العنوان.
+Wir legen die Seitenparameter fest, einschließlich des Header-Abstands, und gehen dann zum Hauptheader (`HeaderPrimary`). Wir verwenden den Dokumentgenerator, um Text hinzuzufügen und die Kopfzeile zu formatieren.
 
-## الخطوة 4: أدخل صورة ونصًا في العنوان الرئيسي
+## Schritt 4: Fügen Sie ein Bild und einen Text in die Hauptkopfzeile ein
 
 ```csharp
 builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
@@ -68,9 +68,9 @@ builder.Write("Aspose.Words - Building headers/footers.");
 builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 ```
 
-نستخدم منشئ المستندات لإدراج صورة في الزاوية اليسرى العلوية من الرأس الرئيسي ، ثم نضيف بعض النص المحاذي لليمين.
+Wir verwenden den Dokumentgenerator, um ein Bild in der oberen linken Ecke der Hauptkopfzeile einzufügen, und fügen dann rechtsbündigen Text hinzu.
 
-## الخطوة 5: قم بإدراج جدول في التذييل الرئيسي
+## Schritt 5: Fügen Sie eine Tabelle in die Hauptfußzeile ein
 
 ```csharp
 builder.StartTable();
@@ -102,7 +102,7 @@ builder.EndTable();
 builder.MoveToDocumentEnd();
 ```
 
-## الخطوة 6: إضافة صفحة جديدة وتعيين الرؤوس / التذييلات
+## Schritt 6: Fügen Sie eine neue Seite hinzu und legen Sie Kopf-/Fußzeilen fest
 
 ```csharp
 builder. InsertBreak(BreakType.PageBreak);
@@ -111,17 +111,17 @@ builder.InsertBreak(BreakType.SectionBreakNewPage);
 currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-//لا يحتاج هذا القسم إلى رأس / تذييل مختلف للصفحة الأولى ، نحتاج فقط إلى صفحة عنوان واحدة في المستند ،
-// وقد تم بالفعل تحديد رأس / تذييل الصفحة في القسم السابق.
+//Dieser Abschnitt benötigt keine andere Kopf-/Fußzeile für die erste Seite, wir benötigen nur eine Titelseite im Dokument.
+// und die Kopf-/Fußzeile für diese Seite wurde bereits im vorherigen Abschnitt definiert.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// يعرض هذا القسم رؤوس / تذييلات القسم السابق افتراضيًا ، استدعاء currentSection.HeadersFooters.LinkToPrevious (خطأ) لكسر هذا الرابط ،
-// يختلف عرض الصفحة بالنسبة للقسم الجديد ، لذلك نحتاج إلى تعيين عروض خلايا مختلفة لجدول تذييل الصفحة.
+// In diesem Abschnitt werden standardmäßig die Kopf-/Fußzeilen des vorherigen Abschnitts angezeigt. Rufen Sie currentSection.HeadersFooters.LinkToPrevious(false) auf, um diesen Link zu unterbrechen.
+// Die Seitenbreite ist für den neuen Abschnitt unterschiedlich, daher müssen wir für eine Fußzeilentabelle andere Zellenbreiten festlegen.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-// إذا أردنا استخدام الرؤوس / التذييلات الموجودة بالفعل لهذا القسم ،
-// ولكن مع بعض التغييرات الطفيفة ، قد يكون من المنطقي نسخ الرؤوس / التذييلات
-// من القسم السابق وتطبيق التغييرات اللازمة حيث نريدها.
+// Wenn wir für diesen Abschnitt die bereits vorhandenen Kopf-/Fußzeilen verwenden möchten,
+// aber mit ein paar kleinen Änderungen könnte es sinnvoll sein, die Kopf-/Fußzeilen zu kopieren
+// aus dem vorherigen Abschnitt und wenden Sie die erforderlichen Änderungen an der gewünschten Stelle an.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -130,16 +130,16 @@ Row row = primaryFooter.Tables[0].FirstRow;
 row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-// احفظ المستند
+// Speichern Sie das Dokument
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
- نضيف فاصل صفحة وفاصل مقطعي لإنشاء صفحة جديدة حيث ستكون الرؤوس / التذييلات الأولية مرئية. قمنا بتعيين معلمات القسم الجديد ، ثم نستخدم الامتداد`CopyHeadersFootersFromPreviousSection`طريقة لنسخ الرؤوس / التذييلات من القسم السابق. أخيرًا ، قمنا بتعيين عرض الخلية المناسب لجدول التذييل الرئيسي وحفظنا المستند.
+ Wir fügen einen Seitenumbruch und einen Abschnittsumbruch hinzu, um eine neue Seite zu erstellen, auf der die primären Kopf-/Fußzeilen sichtbar sind. Wir legen die Parameter für den neuen Abschnitt fest und verwenden dann die`CopyHeadersFootersFromPreviousSection`Methode zum Kopieren der Kopf-/Fußzeilen aus dem vorherigen Abschnitt. Abschließend stellen wir die entsprechenden Zellenbreiten für die Hauptfußtabelle ein und speichern das Dokument.
 
-### مثال على كود المصدر لإنشاء الرؤوس والتذييلات باستخدام Aspose.Words for .NET
+### Beispielquellcode zum Erstellen von Kopf- und Fußzeilen mit Aspose.Words für .NET
 
 ```csharp
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 	
 	Document doc = new Document();
@@ -147,9 +147,9 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	Section currentSection = builder.CurrentSection;
 	PageSetup pageSetup = currentSection.PageSetup;
-	// حدد ما إذا كنا نريد أن تختلف رؤوس / تذييلات الصفحة الأولى عن الصفحات الأخرى.
-	// يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter لتحديدها
-	// رؤوس / تذييلات مختلفة للصفحات الفردية والزوجية.
+	// Geben Sie an, ob sich die Kopf-/Fußzeilen der ersten Seite von denen anderer Seiten unterscheiden sollen.
+	// Sie können zur Angabe auch die Eigenschaft PageSetup.OddAndEvenPagesHeaderFooter verwenden
+	// unterschiedliche Kopf-/Fußzeilen für ungerade und gerade Seiten.
 	pageSetup.DifferentFirstPageHeaderFooter = true;
 	pageSetup.HeaderDistance = 20;
 
@@ -165,8 +165,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 	pageSetup.HeaderDistance = 20;
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	// أدخل صورة موضوعة في الزاوية العلوية / اليسرى من الرأس.
-	// تم ضبط المسافة من الحواف العلوية / اليسرى للصفحة على 10 نقاط.
+	// Fügen Sie ein positioniertes Bild in die obere/linke Ecke der Kopfzeile ein.
+	// Der Abstand vom oberen/linken Rand der Seite ist auf 10 Punkte eingestellt.
 	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
 		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
@@ -176,8 +176,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	// نستخدم جدولاً يحتوي على خليتين لعمل جزء واحد من النص على السطر (مع ترقيم الصفحات).
-	// تتم محاذاة إلى اليسار ، ويتم محاذاة الجزء الآخر من النص (مع حقوق النشر) إلى اليمين.
+	// Wir verwenden eine Tabelle mit zwei Zellen, um einen Teil des Textes in die Zeile einzufügen (mit Seitennummerierung).
+	// Linksbündig und der andere Teil des Textes (mit Copyright) rechtsbündig.
 	builder.StartTable();
 
 	builder.CellFormat.ClearFormatting();
@@ -186,7 +186,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	// يستخدم حقلي PAGE و NUMPAGES لحساب تلقائي لرقم الصفحة الحالية والعديد من الصفحات.
+	// Es verwendet die Felder PAGE und NUMPAGES, um die aktuelle Seitenzahl und viele Seiten automatisch zu berechnen.
 	builder.Write("Page ");
 	builder.InsertField("PAGE", "");
 	builder.Write(" of ");
@@ -207,25 +207,25 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.MoveToDocumentEnd();
 
-	// قم بعمل فاصل صفحة لإنشاء صفحة ثانية تظهر عليها الرؤوس / التذييلات الأساسية.
+	// Machen Sie einen Seitenumbruch, um eine zweite Seite zu erstellen, auf der die primären Kopf-/Fußzeilen angezeigt werden.
 	builder.InsertBreak(BreakType.PageBreak);
 	builder.InsertBreak(BreakType.SectionBreakNewPage);
 
 	currentSection = builder.CurrentSection;
 	pageSetup = currentSection.PageSetup;
 	pageSetup.Orientation = Orientation.Landscape;
-	//لا يحتاج هذا القسم إلى رأس / تذييل مختلف للصفحة الأولى ، فنحن نحتاج فقط إلى صفحة عنوان واحدة في المستند ،
-	// وقد تم بالفعل تحديد رأس / تذييل الصفحة في القسم السابق.
+	//Dieser Abschnitt benötigt keine andere Kopf-/Fußzeile auf der ersten Seite. Wir benötigen nur eine Titelseite im Dokument.
+	// und die Kopf-/Fußzeile für diese Seite wurde bereits im vorherigen Abschnitt definiert.
 	pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// يعرض هذا القسم الرؤوس / التذييلات من القسم السابق
-	// بشكل افتراضي ، قم باستدعاء currentSection.HeadersFooters.LinkToPrevious (false) لإلغاء عرض هذه الصفحة
-	// يختلف عن القسم الجديد ، وبالتالي نحتاج إلى تعيين عروض خلايا مختلفة لجدول تذييل.
+	// In diesem Abschnitt werden Kopf-/Fußzeilen aus dem vorherigen Abschnitt angezeigt
+	// Rufen Sie standardmäßig currentSection.HeadersFooters.LinkToPrevious(false) auf, um diese Seitenbreite abzubrechen
+	// ist für den neuen Abschnitt anders, und deshalb müssen wir für eine Fußzeilentabelle andere Zellenbreiten festlegen.
 	currentSection.HeadersFooters.LinkToPrevious(false);
 
-	// إذا أردنا استخدام مجموعة الرأس / التذييل الموجودة بالفعل لهذا القسم.
-	// ولكن مع بعض التعديلات الطفيفة ، قد يكون من المناسب نسخ الرؤوس / التذييلات
-	// من القسم السابق وتطبيق التعديلات اللازمة حيث نريدها.
+	// Wenn wir für diesen Abschnitt den bereits vorhandenen Kopf-/Fußzeilensatz verwenden möchten.
+	// Mit einigen geringfügigen Änderungen kann es jedoch sinnvoll sein, Kopf-/Fußzeilen zu kopieren
+	// aus dem vorherigen Abschnitt und wenden Sie die erforderlichen Änderungen an der gewünschten Stelle an.
 	CopyHeadersFootersFromPreviousSection(currentSection);
 
 	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];

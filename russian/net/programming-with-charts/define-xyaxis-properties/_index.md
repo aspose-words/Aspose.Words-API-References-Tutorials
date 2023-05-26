@@ -1,44 +1,44 @@
 ---
-title: حدد خصائص XYAxis
-linktitle: حدد خصائص XYAxis
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديد خصائص المحور XY في مخطط باستخدام Aspose.Words for .NET. يتم عرض خيارات التخصيص للمحاور X و Y.
+title: Задайте свойства оси XY
+linktitle: Задайте свойства оси XY
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как определить свойства оси XY на диаграмме с помощью Aspose.Words для .NET. Демонстрируются варианты настройки для осей X и Y.
 type: docs
 weight: 10
 url: /ru/net/programming-with-charts/define-xyaxis-properties/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعريف خصائص محوري X و Y في مخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات سلسلة وتخصيص خصائص المحور.
+В этом руководстве объясняется, как использовать Aspose.Words для .NET для определения свойств осей X и Y на диаграмме. В предоставленном исходном коде показано, как создать диаграмму, добавить ряд данных и настроить свойства оси.
 
-## الخطوة 1: قم بإعداد المشروع
+## Шаг 1: Настройте проект
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Убедитесь, что у вас есть следующие предварительные условия:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Установлена библиотека Aspose.Words for .NET. Вы можете загрузить его с официального веб-сайта Aspose или использовать менеджер пакетов NuGet для его установки.
+- Путь к каталогу документа, в котором будет сохранен выходной документ.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Шаг 2. Создайте новый документ и вставьте диаграмму
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Создать новый`Document` объект и`DocumentBuilder` для построения документа.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، أدخل مخططًا في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`. في هذا المثال ، سنقوم بإدراج مخطط مساحي.
+ Затем вставьте диаграмму в документ с помощью кнопки`InsertChart` метод`DocumentBuilder`. В этом примере мы вставим диаграмму с областями.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Шаг 3. Добавьте ряд данных на диаграмму.
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمس نقاط بيانات مع التواريخ والقيم المقابلة.
+Добавьте ряд данных на диаграмму. В этом примере мы добавим пять точек данных с соответствующими датами и значениями.
 
 ```csharp
 chart.Series.Clear();
@@ -51,16 +51,16 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 640, 320, 280, 120, 150 });
 ```
 
-## الخطوة 4: تخصيص خصائص المحور X و Y.
+## Шаг 4: Настройте свойства осей X и Y
 
- لتخصيص خصائص المحورين X و Y ، قم بالوصول إلى`ChartAxis` الكائنات المرتبطة بالرسم البياني.
+ Чтобы настроить свойства осей X и Y, откройте`ChartAxis` объекты, связанные с диаграммой.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
 ChartAxis yAxis = chart.AxisY;
 ```
 
- قم بتعديل خصائص ملف`xAxis` و`yAxis`كائنات لتعيين الخيارات المرغوبة للمحاور X و Y. في هذا المثال ، سنوضح بعض الخصائص الشائعة التي يمكن تخصيصها.
+ Измените свойства`xAxis` и`yAxis`объектов, чтобы установить нужные параметры для осей X и Y. В этом примере мы продемонстрируем некоторые общие свойства, которые можно настроить.
 
 ```csharp
 xAxis.CategoryType = AxisCategoryType.Category;
@@ -79,25 +79,25 @@ yAxis.Scaling.Minimum = new AxisBound(100);
 yAxis.Scaling.Maximum = new AxisBound(700);
 ```
 
-## الخطوة 5: احفظ المستند
+## Шаг 5: Сохраните документ
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Наконец, сохраните документ в указанный каталог, используя`Save` метод`Document` объект.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 ```
 
-هذا يكمل تنفيذ تعريف خصائص المحور XY في مخطط باستخدام Aspose.Words for .NET.
+На этом реализация определения свойств оси XY на диаграмме с помощью Aspose.Words for .NET завершена.
 
-### مثال على شفرة المصدر لـ Define XYAxis Properties باستخدام Aspose.Words for .NET 
+### Пример исходного кода для определения свойств XYAxis с использованием Aspose.Words для .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// إدراج الرسم البياني
+	// Вставить диаграмму
 	Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 	Chart chart = shape.Chart;
 	chart.Series.Clear();
@@ -110,10 +110,10 @@ doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 		new double[] { 640, 320, 280, 120, 150 });
 	ChartAxis xAxis = chart.AxisX;
 	ChartAxis yAxis = chart.AxisY;
-	// قم بتغيير المحور X ليكون فئة بدلاً من التاريخ ، لذلك سيتم وضع جميع النقاط بفاصل زمني متساوي على المحور X.
+	// Измените ось X на категорию вместо даты, чтобы все точки были размещены с одинаковым интервалом на оси X.
 	xAxis.CategoryType = AxisCategoryType.Category;
 	xAxis.Crosses = AxisCrosses.Custom;
-	xAxis.CrossesAt = 3; // تقاس بوحدات عرض المحور ص (مئات).
+	xAxis.CrossesAt = 3; // Измеряется в единицах отображения оси Y (сотни).
 	xAxis.ReverseOrder = true;
 	xAxis.MajorTickMark = AxisTickMark.Cross;
 	xAxis.MinorTickMark = AxisTickMark.Outside;

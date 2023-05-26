@@ -1,50 +1,50 @@
 ---
-title: الاحتفاظ بالمصدر معًا
-linktitle: الاحتفاظ بالمصدر معًا
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للانضمام إلى مستندات Word وإلحاقها مع الاحتفاظ بالمحتوى المصدر مع المستند الوجهة.
+title: Håll källan tillsammans
+linktitle: Håll källan tillsammans
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder Aspose.Words för .NET för att ansluta och lägga till Word-dokument samtidigt som källinnehållet behålls tillsammans med måldokumentet.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/keep-source-together/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Keep Source Together في Aspose.Words for .NET. تسمح لك هذه الميزة بالانضمام إلى العديد من مستندات Word وإلحاقها مع الاحتفاظ بمحتوى المستند المصدر مع محتوى المستند الوجهة. 
+Denna handledning guidar dig genom processen att använda Keep Source Together-funktionen i Aspose.Words för .NET. Med den här funktionen kan du ansluta och lägga till flera Word-dokument samtidigt som källdokumentets innehåll behålls tillsammans med måldokumentets innehåll. 
 
-## المتطلبات الأساسية
+## Förutsättningar
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Innan du börjar, se till att du har följande:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words för .NET installerat. Du kan ladda ner den från Asposes webbplats eller installera den via NuGet.
+2. Visual Studio eller någon annan C#-utvecklingsmiljö.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Steg 1: Initiera dokumentkatalogerna
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir` variabel till sökvägen där dina dokument finns.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Steg 2: Ladda käll- och måldokumenten
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## الخطوة 3: اضبط المستند المصدر على الظهور بعد محتوى وثيقة الوجهة
+## Steg 3: Ställ in att källdokumentet ska visas efter destinationsdokumentets innehåll
 
- للتأكد من ظهور المستند المصدر مباشرةً بعد محتوى المستند الوجهة ، تحتاج إلى تعيين ملف`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.Continuous`.
+ För att säkerställa att källdokumentet visas omedelbart efter måldokumentets innehåll, måste du ställa in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## الخطوة 4: قم بتعيين تنسيق الفقرة "Keep with Next" لمستند المصدر
+## Steg 4: Ställ in "Behåll med nästa" styckeformatering för källdokument
 
- للاحتفاظ بالفقرات في المستند المصدر معًا ، يمكنك تكرار كل فقرة في المستند وتعيين ملف`KeepWithNext` ملكية ل`true`.
+ För att hålla ihop styckena i källdokumentet kan du iterera genom varje stycke i dokumentet och ställa in`KeepWithNext` egendom till`true`.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,34 +53,34 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## Steg 5: Bifoga källdokumentet till destinationsdokumentet
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Nu kan du lägga till källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. De`ImportFormatMode.KeepSourceFormatting` parametern säkerställer att källformateringen bevaras under tilläggsåtgärden.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## Steg 6: Spara det slutliga dokumentet
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة "الاحتفاظ بالمصدر معًا" باستخدام`Save` طريقة`Document` فصل.
+ Slutligen, spara det sammanslagna dokumentet med funktionen "Behåll källa tillsammans" aktiverad med hjälp av`Save` metod för`Document` klass.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-### مثال على شفرة المصدر لـ Keep Source Together باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Keep Source Together med Aspose.Words för .NET 
 
-إليك شفرة المصدر الكاملة لميزة "Keep Source Together" في C # باستخدام Aspose.Words for .NET:
+Här är den fullständiga källkoden för funktionen "Keep Source Together" i C# med Aspose.Words för .NET:
 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// اضبط الوثيقة المصدر لتظهر مباشرة بعد محتوى الوثيقة الوجهة.
+	// Ställ in att källdokumentet ska visas direkt efter måldokumentets innehåll.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 	{
@@ -90,4 +90,4 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Keep Source Together باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الاحتفاظ بالفقرات الموجودة في المستند المصدر معًا.
+Det är allt! Du har framgångsrikt implementerat Keep Source Together-funktionen med Aspose.Words för .NET. Det slutliga dokumentet kommer att innehålla det sammanslagna innehållet med styckena i källdokumentet sammanhållna.

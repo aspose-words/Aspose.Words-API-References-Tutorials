@@ -1,81 +1,81 @@
 ---
-title: لا تقم بحفظ صورة نقطية
-linktitle: لا تقم بحفظ صورة نقطية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل حفظ الرموز النقطية للصور في مستندات Word باستخدام Aspose.Words for .NET.
+title: Resim Madde İşaretini Kaydetme
+linktitle: Resim Madde İşaretini Kaydetme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerinde resim madde işaretleri kaydetmeyi nasıl devre dışı bırakacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 
-تعد الرموز النقطية للصور ميزة شائعة الاستخدام في مستندات Word لإضافة رموز نقطية مخصصة. ومع ذلك ، في بعض الحالات قد يكون من الضروري تعطيل تسجيل الصور النقطية عند معالجة المستندات باستخدام Aspose.Words Library for .NET. في هذا الدليل المفصل خطوة بخطوة ، سنشرح كيفية استخدام كود مصدر Aspose.Words C # لـ .NET لتعطيل حفظ الصور النقطية باستخدام خيارات حفظ DocSaveOptions.
+Resim madde işaretleri, özel madde işaretleri eklemek için Word belgelerinde yaygın olarak kullanılan bir özelliktir. Ancak bazı durumlarda, Aspose.Words Library for .NET kullanılarak belgeler üzerinde değişiklik yapılırken görüntü madde işareti kaydının devre dışı bırakılması gerekebilir. Bu adım adım kılavuzda, DocSaveOptions kaydetme seçeneklerini kullanarak görüntü mermi kaydetmeyi devre dışı bırakmak için .NET için Aspose.Words C# kaynak kodunun nasıl kullanılacağını açıklayacağız.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, .NET dahil olmak üzere farklı platformlarda Word belgeleri oluşturmak, düzenlemek, dönüştürmek ve korumak için güçlü bir kitaplıktır. Belgeleri işlemek için metin ekleme, biçimlendirmeyi değiştirme, bölümler ekleme ve çok daha fazlası gibi birçok özellik sunar.
 
-## الخطوة 1: إعداد دليل المستندات
+## 1. Adım: Belgeler Dizinini Ayarlama
 
-الخطوة الأولى هي تحديد الدليل حيث توجد المستندات الخاصة بك. يجب عليك تحديد مسار الدليل الكامل. على سبيل المثال :
+İlk adım, belgelerinizin bulunduğu dizini tanımlamaktır. Tam dizin yolunu belirtmelisiniz. Örneğin :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة 2: تحميل المستند مع صورة نقطية
+## 2. Adım: Belgeyi Resim Madde İşaretleriyle Yükleme
 
-بعد ذلك ، تحتاج إلى تحميل المستند باستخدام الرموز النقطية للصور. استخدم فئة المستند لتحميل المستند من ملف. على سبيل المثال :
+Ardından, belgeyi resim madde işaretleri ile yüklemeniz gerekir. Belgeyi bir dosyadan yüklemek için Document sınıfını kullanın. Örneğin :
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-في هذا المثال نقوم بتحميل المستند من ملف "Image bullet points.docx"
+Bu örnekte "Image bullet points.docx" dosyasından belgeyi yüklüyoruz.
 
-  الموجود في دليل المستندات.
+  belgeler dizininde bulunur.
 
-## الخطوة 3: تكوين خيارات التسجيل
+## 3. Adım: Kayıt seçeneklerini yapılandırın
 
-لنقم الآن بتهيئة خيارات الحفظ لمستندنا. استخدم فئة DocSaveOptions لتحديد إعدادات الحفظ. على سبيل المثال :
+Şimdi belgemiz için kaydetme seçeneklerini yapılandıralım. Kaydetme ayarlarını belirtmek için DocSaveOptions sınıfını kullanın. Örneğin :
 
 ```csharp
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
-في هذا المثال ، قمنا بإنشاء كائن DocSaveOptions جديد وقمنا بتعيين الخاصية SavePictureBullet إلى false لتعطيل حفظ الرموز النقطية للصور.
+Bu örnekte, yeni bir DocSaveOptions nesnesi oluşturuyoruz ve resim madde işaretlerini kaydetmeyi devre dışı bırakmak için SavePictureBullet özelliğini false olarak ayarlıyoruz.
 
-## الخطوة 4: تمكين ميزة "عدم حفظ الصورة التعدادية"
+## 4. Adım: "Resim Madde İşaretini Kaydetme" Özelliğini Etkinleştirin
 
-لتمكين ميزة "Do Not Save Picture Bullet" ، قمنا بالفعل بتكوين خيارات الحفظ مع تعيين SavePictureBullet على false. هذا يضمن عدم حفظ الصور النقطية في المستند النهائي.
+"Resim Madde İşaretini Kaydetme" özelliğini etkinleştirmek için, kaydetme seçeneklerini SavePictureBullet false olarak ayarlayarak zaten yapılandırdık. Bu, resim madde işaretlerinin nihai belgeye kaydedilmemesini sağlar.
 
-## الخطوة 5: احفظ المستند
+## 5. Adım: Belgeyi kaydedin
 
-أخيرًا ، يمكنك حفظ المستند باستخدام طريقة Save لفئة Document. حدد المسار الكامل للملف واسم الملف المطلوب. على سبيل المثال :
+Son olarak, Document sınıfının Save yöntemini kullanarak belgeyi kaydedebilirsiniz. Dosyanın tam yolunu ve istenen dosya adını belirtin. Örneğin :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
-تأكد من استبدال "dataDir" بمسار الدليل إلى مستنداتك.
+Belgelerinizin dizin yolu ile "dataDir" değiştirdiğinizden emin olun.
 
-## مثال على كود المصدر لـ DocSaveOptions حفظ الخيارات مع وظيفة "عدم حفظ الصورة" باستخدام Aspose.Words for .NET
+## Aspose.Words for .NET kullanan "Do Not Save Picture Bullet" işleviyle DocSaveOptions kaydetme seçenekleri için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند باستخدام الصور النقطية
+// Belgeyi resim madde işaretleri ile yükleyin
 Document doc = new Document(dataDir + "Image bullet points.docx");
 
-// تكوين خيارات الحفظ مع ميزة "عدم حفظ الصورة"
+// "Resim Madde İşaretini Kaydetme" özelliği ile kaydetme seçeneklerini yapılandırın
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 
-// احفظ المستند بالخيارات المحددة
+// Belgeyi belirtilen seçeneklerle kaydedin
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، تناولنا كيفية تعطيل حفظ الصور النقطية في مستند باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يمكن أن يكون تعطيل حفظ الصورة النقطية مفيدًا في بعض المواقف للحفاظ على بنية المستند وتنسيقه بدون حفظ الرموز النقطية للصورة.
+Bu kılavuzda, .NET için Aspose.Words kütüphanesini kullanarak bir belgede resim madde işaretlerinin nasıl kaydedileceğini ele aldık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. Resim madde işareti kaydetmeyi devre dışı bırakmak, bazı durumlarda resim madde işaretlerini kaydetmeden belge yapısını ve biçimlendirmeyi korumak için yararlı olabilir.

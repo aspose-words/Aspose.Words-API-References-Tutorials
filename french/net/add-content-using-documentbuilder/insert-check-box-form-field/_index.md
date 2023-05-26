@@ -1,43 +1,43 @@
 ---
-title: أدخل حقل نموذج خانة اختيار
-linktitle: أدخل حقل نموذج خانة اختيار
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج خانة الاختيار في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Insérer un champ de formulaire de case à cocher
+linktitle: Insérer un champ de formulaire de case à cocher
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer des champs de formulaire de case à cocher dans des documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-check-box-form-field/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج حقل نموذج خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة حقول نموذج مربعات الاختيار بخصائص قابلة للتخصيص إلى مستنداتك.
+Dans ce didacticiel complet, vous apprendrez à insérer un champ de formulaire de case à cocher dans un document Word à l'aide de Aspose.Words pour .NET. Nous vous guiderons tout au long du processus et vous fournirons les extraits de code C# nécessaires. À la fin de ce guide, vous serez en mesure d'ajouter des champs de formulaire de case à cocher avec des propriétés personnalisables à vos documents.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Conditions préalables
+Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
+- Bibliothèque Aspose.Words pour .NET installée sur votre système.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Étape 1 : créer un nouveau document et DocumentBuilder
+Pour commencer, créez un nouveau document à l'aide de la classe Document et initialisez un objet DocumentBuilder :
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل حقل نموذج خانة اختيار
-بعد ذلك ، استخدم طريقة InsertCheckBox لفئة DocumentBuilder لإدراج حقل نموذج خانة اختيار. أدخل الاسم والحالة المحددة والحالة الافتراضية ومعلمات الحجم كوسائط:
+## Étape 2 : Insérer un champ de formulaire de case à cocher
+Ensuite, utilisez la méthode InsertCheckBox de la classe DocumentBuilder pour insérer un champ de formulaire de case à cocher. Fournissez le nom, l'état coché, l'état par défaut et les paramètres de taille en tant qu'arguments :
 
 ```csharp
 builder.InsertCheckBox("CheckBox", true, true, 0);
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج حقل نموذج خانة الاختيار ، احفظ المستند في ملف باستخدام طريقة Save لفئة المستند:
+## Étape 3 : Enregistrer le document
+Après avoir inséré le champ de formulaire de case à cocher, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx");
 ```
 
-### مثال كود المصدر لحقل نموذج خانة اختيار باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال حقل نموذج مربع الاختيار باستخدام Aspose.Words for .NET:
+### Exemple de code source pour Insérer un champ de formulaire de case à cocher à l'aide de Aspose.Words pour .NET
+Voici le code source complet pour insérer un champ de formulaire de case à cocher en utilisant Aspose.Words pour .NET :
 
 ```csharp
 
@@ -50,7 +50,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+N'oubliez pas d'ajuster le code en fonction de vos besoins spécifiques et de l'améliorer avec des fonctionnalités supplémentaires si nécessaire.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج حقل نموذج خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك باستخدام حقول نموذج مربعات الاختيار التفاعلية.
+## Conclusion
+Toutes nos félicitations! Vous avez appris avec succès comment insérer un champ de formulaire de case à cocher dans un document Word à l'aide de Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais améliorer vos documents avec des champs de formulaire de case à cocher interactifs.

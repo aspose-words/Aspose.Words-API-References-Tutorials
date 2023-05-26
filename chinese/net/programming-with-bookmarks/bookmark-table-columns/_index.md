@@ -1,23 +1,23 @@
 ---
-title: أعمدة الجدول المرجعية
-linktitle: أعمدة الجدول المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وضع إشارة مرجعية على عمود جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: 书签表列
+linktitle: 书签表列
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 为 Word 文档中的表格列添加书签。
 type: docs
 weight: 10
 url: /zh/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة أعمدة جدول الإشارات المرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة وضع إشارة مرجعية على عمود معين من الجدول في مستند Word والوصول إلى محتوى هذا العمود.
+在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的书签表格列功能。此功能允许您为 Word 文档中表格的特定列添加书签并访问该列的内容。
 
-## المتطلبات الأساسية
+## 先决条件
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# 语言的基础知识。
+- 安装了 Aspose.Words 库的 .NET 开发环境。
 
-## الخطوة الأولى: إنشاء الجدول
+## 第 1 步：创建表
 
- قبل إنشاء إشارة مرجعية على عمود جدول ، يجب علينا أولاً إنشاء الجدول باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نقوم بإنشاء جدول من صفين وعمودين:
+在表列上创建书签之前，我们必须首先使用`DocumentBuilder`目的。在我们的示例中，我们创建了一个包含两行和两列的表格：
 
 ```csharp
 builder. StartTable();
@@ -43,17 +43,17 @@ builder. EndRow();
 builder. EndTable();
 ```
 
-## الخطوة 2: إنشاء إشارة مرجعية للعمود
+## 第 2 步：创建列书签
 
- نحن نستخدم ال`StartBookmark`طريقة لإنشاء إشارة مرجعية على عمود معين من الجدول. في مثالنا ، نستخدم اسم "MyBookmark" للإشارة المرجعية:
+我们使用`StartBookmark`方法在表的特定列上创建书签。在我们的示例中，我们使用名称“MyBookmark”作为书签：
 
 ```csharp
 builder. StartBookmark("MyBookmark");
 ```
 
-## الخطوة 3: الوصول إلى محتوى العمود
+## 第 3 步：访问列内容
 
- نتصفح جميع الإشارات المرجعية في المستند ونعرض أسمائها. إذا كانت الإشارة المرجعية عبارة عن عمود ، فإننا نصل إلى محتويات ذلك العمود باستخدام فهرس العمود وملف`GetText` طريقة:
+我们遍历文档中的所有书签并显示它们的名称。如果书签是一列，我们使用列索引和`GetText`方法：
 
 ```csharp
 foreach (Bookmark
@@ -70,9 +70,9 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
 }
 ```
 
-### مثال على شفرة المصدر لأعمدة جدول الإشارات باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的书签表列示例源代码
 
-إليك نموذج شفرة المصدر الكامل لتوضيح إنشاء إشارة مرجعية في عمود الجدول باستخدام Aspose.Words for .NET:
+下面是完整的示例源代码，用于演示使用 Aspose.Words for .NET 在表格列上创建书签：
 
 ```csharp
 
@@ -120,6 +120,6 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
         
 ```
 
-## خاتمة
+## 结论
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة أعمدة جدول الإشارات المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لوضع إشارة مرجعية على عمود معين من الجدول في مستند Word والانتقال إلى محتويات هذا العمود.
+在本文中，我们探索了 C# 源代码以了解如何使用 Aspose.Words for .NET 的 Bookmark Table Columns 功能。我们按照分步指南为 Word 文档中表格的特定列添加了书签，并跳转到该列的内容。

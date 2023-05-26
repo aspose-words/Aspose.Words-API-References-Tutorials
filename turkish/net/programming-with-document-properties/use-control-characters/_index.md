@@ -1,40 +1,40 @@
 ---
-title: استخدم أحرف التحكم
-linktitle: استخدم أحرف التحكم
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لاستخدام أحرف التحكم مع Aspose.Words for .NET.
+title: Kontrol Karakterlerini Kullan
+linktitle: Kontrol Karakterlerini Kullan
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile kontrol karakterlerini kullanmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-document-properties/use-control-characters/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لاستخدام أحرف التحكم مع Aspose.Words for .NET. تسمح لك هذه الميزة بمعالجة أحرف التحكم في النص.
+Bu eğitimde, Aspose.Words for .NET ile kontrol karakterlerini kullanmak için C# kaynak kodunda size yol göstereceğiz. Bu özellik, metindeki kontrol karakterlerini değiştirmenize olanak tanır.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: استخدام أحرف التحكم
+## 2. Adım: Kontrol karakterlerini kullanma
 
-في هذه الخطوة ، سنستخدم أحرف التحكم في النص. استخدم الكود التالي:
+Bu adımda, bir metinde kontrol karakterlerini kullanacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
 const string text = "test\r";
-// استبدل حرف التحكم "\ r" بـ "\ r \ n".
+// "\r" kontrol karakterini "\r\n" ile değiştirin.
 string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 ```
 
- يحدد هذا الرمز أ`text` سلسلة تحتوي على حرف التحكم "\ r" (سطر جديد) وتستخدم الامتداد`Replace` طريقة استبداله بحرف التحكم "\ r \ n" (سطر جديد). خط متبوعًا بفاصل أسطر).
+ Bu kod bir tanımlar`text` "\r" (yeni satır) kontrol karakterini içeren dize ve`Replace` "\r\n" (yeni satır) kontrol karakteriyle değiştirme yöntemi. satır ve ardından bir satır sonu).
 
-### مثال على شفرة المصدر لـ Use Control Characters باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Kontrol Karakterlerini Kullan için örnek kaynak kodu
 
 ```csharp
 
 	const string text = "test\r";
-	// استبدل "\ r" حرف التحكم بـ "\ r \ n".
+	// "\r" kontrol karakterini "\r\n" ile değiştirin.
 	string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 
 ```
- يمكنك استخدام الكود أعلاه في مشروعك الخاص عن طريق استبدال`text` سلسلة تحتوي على نص خاص بك يحتوي على أحرف تحكم.
+ Yukarıdaki kodu değiştirerek kendi projenizde kullanabilirsiniz.`text` kontrol karakterlerini içeren kendi metninizle dize.
 
-لقد تعلمت الآن كيفية استخدام أحرف التحكم مع Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة التعامل مع أحرف التحكم في تطبيقاتك الخاصة.
+Artık kontrol karakterlerini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek, kendi uygulamalarınızda kontrol karakterlerini kolayca değiştirebilirsiniz.

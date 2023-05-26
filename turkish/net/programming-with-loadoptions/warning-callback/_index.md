@@ -1,71 +1,71 @@
 ---
-title: رد الاتصال التحذيري
-linktitle: رد الاتصال التحذيري
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التعامل مع التحذيرات عند تحميل مستند Word باستخدام وظيفة رد الاتصال مع Aspose.Words for .NET.
+title: Uyarı Geri Arama
+linktitle: Uyarı Geri Arama
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile geri çağırma işlevini kullanarak bir Word belgesi yüklerken uyarıları nasıl ele alacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/warning-callback/
 ---
 
-عند العمل مع مستندات Word في تطبيق C # ، قد يكون من المفيد أن تكون على دراية بالتحذيرات الصادرة عند تحميل المستند. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحديد وظيفة رد الاتصال للتعامل مع التحذيرات أثناء تحميل المستند باستخدام خيارات تحميل LoadOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند باستخدام وظيفة رد الاتصال للتحذيرات باستخدام خيارات تحميل LoadOptions.
+Bir C# uygulamasında Word belgeleriyle çalışırken, belge yüklenirken verilen uyarıların farkında olmak yararlı olabilir. .NET için Aspose.Words kitaplığıyla, LoadOptions yükleme seçeneklerini kullanarak belgeyi yüklerken uyarıları işlemek için kolayca bir geri arama işlevi belirleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak uyarılar için bir geri arama işlevi kullanarak bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, .NET dahil olmak üzere farklı platformlarda Word belgeleri oluşturmak, düzenlemek, dönüştürmek ve korumak için güçlü bir kitaplıktır. Belgeleri işlemek için metin ekleme, biçimlendirmeyi değiştirme, bölümler ekleme ve çok daha fazlası gibi birçok özellik sunar.
 
-## تكوين خيارات التحميل
+## Yükleme seçeneklerini yapılandırma
 
-الخطوة الأولى هي تكوين خيارات التحميل لوثيقتنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى تعيين خاصية WarningCallback على مثيل DocumentLoadingWarningCallback. هيريس كيفية القيام بذلك:
+İlk adım, belgemiz için yükleme seçeneklerini yapılandırmaktır. Yükleme parametrelerini belirtmek için LoadOptions sınıfını kullanın. Bizim durumumuzda, WarningCallback özelliğini bir DocumentLoadingWarningCallback örneğine ayarlamamız gerekiyor. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { WarningCallback = new DocumentLoadingWarningCallback() };
 ```
 
-نقوم بإنشاء كائن LoadOptions جديد وتعيين خاصية WarningCallback على مثيل DocumentLoadingWarningCallback.
+Yeni bir LoadOptions nesnesi oluşturuyoruz ve WarningCallback özelliğini bir DocumentLoadingWarningCallback örneği olarak ayarlıyoruz.
 
-## إنشاء وظيفة رد الاتصال للتحذيرات
+## Uyarılar için geri arama işlevi oluşturma
 
-نحتاج الآن إلى إنشاء فئة تنفذ واجهة IWarningCallback للتعامل مع التحذيرات عند تحميل المستند. فيما يلي نموذج التعليمات البرمجية لفئة DocumentLoadingWarningCallback:
+Şimdi, belgeyi yüklerken uyarıları işlemek için IWarningCallback arabirimini uygulayan bir sınıf oluşturmamız gerekiyor. İşte DocumentLoadingWarningCallback sınıfı için örnek kod:
 
 ```csharp
 public class DocumentLoadingWarningCallback : IWarningCallback
 {
      public void Warning(WarningInfo info)
      {
-         // تعامل مع التحذير هنا
+         // Uyarıyı burada işleyin
          Console.WriteLine($"Warning: {info.WarningType}, Description: {info.Description}");
      }
 }
 ```
 
-في هذه الفئة ، لدينا طريقة تحذير يتم استدعاؤها عند إصدار تحذير أثناء تحميل المستند. يمكنك تخصيص هذه الطريقة للتعامل مع التحذيرات بطريقة تناسبك ، مثل حفظها في ملف سجل أو عرضها في وحدة التحكم.
+Bu sınıfta, belge yüklenirken bir uyarı verildiğinde çağrılan bir Warning yöntemimiz var. Bu yöntemi, uyarıları bir günlük dosyasına kaydetmek veya konsolda görüntülemek gibi size uygun bir şekilde işlemek için özelleştirebilirsiniz.
 
-## تحميل المستند باستخدام رد الاتصال للتحذيرات
+## Uyarılar için geri arama kullanılarak belge yükleniyor
 
-الآن بعد أن قمنا بتكوين خيارات التحميل وإنشاء وظيفة رد الاتصال للتحذيرات ، يمكننا تحميل المستند باستخدام فئة المستند وتحديد خيارات التحميل. هنا مثال :
+Yükleme seçeneklerini yapılandırdığımıza ve uyarılar için geri çağırma işlevini oluşturduğumuza göre, Document sınıfını kullanarak belgeyi yükleyebilir ve yükleme seçeneklerini belirtebiliriz. İşte bir örnek :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Document.docx" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+Bu örnekte, belirtilen yükleme seçeneklerini kullanarak belgeler dizininde bulunan "Document.docx" belgesini yüklüyoruz.
 
-### مثال على كود المصدر لخيارات التحميل
+### Yükleme seçenekleri için örnek kaynak kodu
 
-  LoadOptions مع وظيفة "رد الاتصال التحذيري" باستخدام Aspose.Words لـ .NET
+  Aspose.Words for .NET kullanan "Warning Callback" işlevine sahip LoadOptions
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "رد الاتصال التحذير"
+// "Geri Arama Uyarısı" özelliği ile yükleme seçeneklerini yapılandırın
 LoadOptions loadOptions = new LoadOptions { WarningCallback = new DocumentLoadingWarningCallback() };
 
-// قم بتحميل المستند باستخدام وظيفة رد الاتصال للتحذيرات
+// Uyarılar için geri arama işlevini kullanarak belgeyi yükleyin
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، تناولنا كيفية تحميل مستند باستخدام وظيفة رد الاتصال للتحذيرات عند التحميل باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. تتيح لك إدارة التحذيرات عند تحميل المستند أن تكون على علم بأي مشاكل أو تحذيرات تتعلق بالمستند الذي تم تحميله.
+Bu kılavuzda, .NET için Aspose.Words kitaplığı ile yükleme sırasında uyarılar için bir geri çağırma işlevi kullanarak bir belgenin nasıl yükleneceğini ele aldık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. Belge yüklenirken uyarıların yönetilmesi, yüklenen belgeyle ilgili herhangi bir sorun veya uyarıdan haberdar olmanızı sağlar.

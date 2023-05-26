@@ -1,36 +1,36 @@
 ---
-title: تعيين خيارات المخطط التفصيلي
-linktitle: تعيين خيارات المخطط التفصيلي
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتعيين خيارات المخطط التفصيلي في مستند PDF باستخدام Aspose.Words for .NET.
+title: Anahat Seçeneklerini Ayarla
+linktitle: Anahat Seçeneklerini Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir PDF belgesinde anahat seçeneklerini ayarlamak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/set-outline-options/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام خيارات المخطط التفصيلي المحددة لميزة حجم ملف التعريف باستخدام Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تعيين خيارات المخطط التفصيلي في مستند وإنشاء ملف PDF باستخدام خيارات المخطط التفصيلية المقابلة.
+Bu makale, Aspose.Words for .NET ile anahat seçeneklerini meta dosyası boyutuna ayarla özelliğinin nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgede anahat seçeneklerini nasıl ayarlayacağınızı ve karşılık gelen anahat seçenekleriyle bir PDF oluşturmayı öğrenebileceksiniz.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
-## الخطوة 1: تحديد دليل المستند
+## 1. Adım: Belge dizinini tanımlayın
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Başlamak için, belgelerinizin bulunduğu dizine giden yolu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## 2. Adım: Belgeyi yükleyin
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Ardından, işlemek istediğimiz belgeyi yüklememiz gerekiyor. Bu örnekte, belgenin "Rendering.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF مع خيارات الخطة
+## 3. Adım: Plan seçenekleriyle PDF olarak kaydetme seçeneklerini yapılandırın
 
- لتعيين خيارات المخطط التفصيلي في ملف PDF الذي تم إنشاؤه ، نحتاج إلى تكوين ملف`PdfSaveOptions` هدف. يمكننا تعيين عدد مستويات مخطط العنوان (`HeadingsOutlineLevels`) وعدد مستويات المخطط التفصيلي الموسع (`ExpandedOutlineLevels`).
+ Oluşturulan PDF'de anahat seçeneklerini ayarlamak için,`PdfSaveOptions` nesne. Başlık anahat düzeylerinin sayısını ayarlayabiliriz (`HeadingsOutlineLevels`) ve genişletilmiş anahat düzeylerinin sayısı (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,22 +38,22 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع خيارات المخطط التفصيلي
+## 4. Adım: Anahat seçenekleriyle belgeyi PDF olarak kaydedin
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Son olarak, daha önce yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedebiliriz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تعيين خيارات المخطط التفصيلي في مستند وإنشاء ملف PDF مع خيارات المخطط التفصيلية المقابلة باستخدام Aspose.Words for .NET.
+Bu kadar ! Aspose.Words for .NET'i kullanarak bir belgede anahat seçeneklerini başarıyla belirlediniz ve karşılık gelen anahat seçenekleriyle bir PDF oluşturdunuz.
 
-### مثال على شفرة المصدر لتعيين خيارات الخطة لحجم ملف التعريف باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile plan seçeneklerini meta dosyası boyutuna ayarlamak için örnek kaynak kodu
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 

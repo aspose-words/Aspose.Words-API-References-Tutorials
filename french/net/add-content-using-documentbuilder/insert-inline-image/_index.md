@@ -1,43 +1,43 @@
 ---
-title: إدراج صورة مضمنة
-linktitle: إدراج صورة مضمنة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الصور المضمنة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Insérer une image en ligne
+linktitle: Insérer une image en ligne
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer des images en ligne dans des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-inline-image/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج الصور المضمنة في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة الصور مباشرة إلى نص مستنداتك.
+Dans ce didacticiel complet, vous apprendrez à insérer des images en ligne dans un document Word à l'aide d'Aspose.Words pour .NET. Nous vous guiderons tout au long du processus et vous fournirons les extraits de code C# nécessaires. À la fin de ce guide, vous serez en mesure d'ajouter des images directement dans le texte de vos documents.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Conditions préalables
+Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
+- Bibliothèque Aspose.Words pour .NET installée sur votre système.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Étape 1 : créer un nouveau document et DocumentBuilder
+Pour commencer, créez un nouveau document à l'aide de la classe Document et initialisez un objet DocumentBuilder :
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل صورة مضمنة
-بعد ذلك ، استخدم طريقة InsertImage لفئة DocumentBuilder لإدراج صورة مضمنة في المستند. قم بتوفير مسار ملف الصورة كمعامل:
+## Étape 2 : Insérer une image en ligne
+Ensuite, utilisez la méthode InsertImage de la classe DocumentBuilder pour insérer une image en ligne dans le document. Indiquez le chemin du fichier image en tant que paramètre :
 
 ```csharp
 builder.InsertImage(ImagesDir + "Transparent background logo.png");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الصورة المضمنة ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Étape 3 : Enregistrer le document
+Après avoir inséré l'image en ligne, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx");
 ```
 
-### مثال على كود المصدر لإدراج صورة مضمنة باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال صورة مضمنة باستخدام Aspose.Words for .NET:
+### Exemple de code source pour insérer une image en ligne à l'aide d'Aspose.Words pour .NET
+Voici le code source complet pour insérer une image en ligne à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
 Document doc = new Document();
@@ -48,7 +48,7 @@ builder.InsertImage(ImagesDir + "Transparent background logo.png");
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج الصور المضمنة في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إضافة الصور بسلاسة داخل نص المستندات الخاصة بك.
+## Conclusion
+Toutes nos félicitations! Vous avez appris avec succès comment insérer des images en ligne dans un document Word en utilisant Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais ajouter des images de manière transparente dans le texte de vos documents.
 
-تعد الصور المضمنة مفيدة للعديد من السيناريوهات ، مثل إضافة الرسوم التوضيحية أو الشعارات أو العناصر المرئية الأخرى مباشرةً في تدفق المستند.
+Les images en ligne sont utiles pour divers scénarios, tels que l'ajout d'illustrations, de logos ou d'autres éléments visuels directement dans le flux du document.

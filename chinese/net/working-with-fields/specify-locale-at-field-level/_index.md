@@ -1,53 +1,53 @@
 ---
-title: حدد الإعدادات المحلية على مستوى الحقل
-linktitle: حدد الإعدادات المحلية على مستوى الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديد الترجمة على مستوى الحقل في مستندات Word باستخدام Aspose.Words for .NET.
+title: 在字段级别指定语言环境
+linktitle: 在字段级别指定语言环境
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中指定字段级本地化。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/specify-locale-at-field-level/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية التي تسمح بتحديد الترجمة على مستوى الحقل باستخدام ميزة Aspose.Words for .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+这是一个分步指南，用于解释以下 C# 源代码，该代码允许使用 Aspose.Words for .NET 功能在字段级别指定本地化。在使用此代码之前，请确保您已将 Aspose.Words 库包含在您的项目中。
 
-## الخطوة 1: تعيين مسار دليل المستند
+## 第一步：设置文档目录路径
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
+请务必指定保存已编辑文档的文档目录的正确路径。
 
-## الخطوة 2: إنشاء منشئ المستندات
+## 第 2 步：创建文档生成器
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- نحن هنا بصدد إنشاء مثيل لـ`DocumentBuilder` فئة تسمح لنا بإضافة حقول إلى المستند.
+在这里，我们正在创建一个实例`DocumentBuilder`允许我们向文档添加字段的类。
 
-## الخطوة 3: أدخل حقل التاريخ بموقع محدد
+## 第 3 步：插入具有特定位置的日期字段
 
 ```csharp
 Field field = builder. InsertField(FieldType.FieldDate, true);
 field.LocaleId = 1049;
 ```
 
- نستخدم منشئ المستندات لإدخال حقل من النوع`FieldType.FieldDate` في المستند. عن طريق تحديد`LocaleId` ملكية ل`1049`، نحدد الترجمة الروسية لهذا المجال.
+我们使用文档生成器插入一个类型的字段`FieldType.FieldDate`到文档中。通过设置`LocaleId`财产给`1049`我们为此字段指定俄语本地化。
 
-## الخطوة 4: احفظ المستند المعدل
+## 第 4 步：保存修改后的文档
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
 ```
 
-أخيرًا ، نحفظ المستند المعدل بالموقع المحدد في ملف محدد.
+最后我们将修改后的文档保存到指定位置的指定文件中。
 
-### نموذج لشفرة المصدر لتحديد الأقلمة على مستوى الحقل باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 指定字段级本地化的示例源代码
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 DocumentBuilder builder = new DocumentBuilder();
@@ -58,4 +58,4 @@ field.LocaleId = 1049;
 builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
 ```
 
-كان هذا مثالًا على كود مصدر لتحديد الترجمة على مستوى الحقل في مستند باستخدام Aspose.Words for .NET. يمكنك استخدام هذا الرمز لإدراج حقول التاريخ بمواقع محددة في مستندات Word الخاصة بك.
+这是使用 Aspose.Words for .NET 在文档中的字段级别指定本地化的示例源代码。您可以使用此代码在 Word 文档中插入具有特定位置的日期字段。

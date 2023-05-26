@@ -1,55 +1,55 @@
 ---
-title: تصدير الخطوط كقاعدة 64
-linktitle: تصدير الخطوط كقاعدة 64
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتصدير خطوط 64 أساسية عند حفظ مستند باستخدام Aspose.Words for .NET.
+title: Fontları Base Olarak Dışa Aktar 64
+linktitle: Fontları Base Olarak Dışa Aktar 64
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir belgeyi kaydederken 64 tabanlı yazı tiplerini dışa aktarmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتصدير 64 خطًا أساسيًا باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تصدير الخطوط كبيانات أساسية 64 عند حفظ مستند بتنسيق HTML.
+Bu eğitimde, Aspose.Words for .NET ile 64 tabanlı yazı tiplerini dışa aktarmak için C# kaynak kodunda size yol göstereceğiz. Bu özellik, bir belgeyi HTML biçiminde kaydederken yazı tiplerini temel 64 verileri olarak dışa aktarmanıza olanak tanır.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-في هذه الخطوة ، سنقوم بتحميل المستند للتصدير. استخدم الكود التالي لتحميل المستند من دليل محدد:
+Bu adımda, dışa aktarılacak belgeyi yükleyeceğiz. Belgeyi belirli bir dizinden yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- هذا الرمز ينشئ مثيل`Document` عن طريق تحميل المستند من الدليل المحدد.
+ Bu kod, örneğini oluşturur`Document` belgeyi belirtilen dizinden yükleyerek.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي بتنسيق HTML
+## 3. Adım: HTML yedekleme seçeneklerini yapılandırma
 
-سنقوم الآن بتكوين خيارات حفظ HTML لتصدير 64 خطًا أساسيًا. استخدم الكود التالي:
+Şimdi, temel 64 yazı tiplerini dışa aktarmak için HTML kaydetme seçeneklerini yapılandıracağız. Aşağıdaki kodu kullanın:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions` ومجموعات`ExportFontsAsBase64` ل`true` لتحديد أن الخطوط يجب أن يتم تصديرها كبيانات أساسية 64 عند الحفظ بتنسيق HTML.
+ Bu kod, örneğini oluşturur`HtmlSaveOptions` ve ayarlar`ExportFontsAsBase64` ile`true` HTML olarak kaydederken yazı tiplerinin temel 64 verileri olarak dışa aktarılması gerektiğini belirtmek için.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## 4. Adım: Belgeyi HTML'ye dönüştürme ve kaydetme
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+Son olarak, daha önce yapılandırılmış HTML kaydetme seçeneklerini kullanarak belgeyi HTML'ye dönüştüreceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML ويحفظه في ملف بالخطوط المصدرة كبيانات أساسية 64.
+Bu kod, belgeyi HTML'ye dönüştürür ve temel 64 verileri olarak dışa aktarılan yazı tipleriyle bir dosyaya kaydeder.
 
-### مثال على شفرة المصدر لـ Export Fonts As Base 64 باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Yazı Tiplerini Base 64 Olarak Dışa Aktarma için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -59,6 +59,6 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOp
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+ içindeki belgeler dizinine giden doğru yolu belirttiğinizden emin olun.`dataDir` değişken.
 
-لقد تعلمت الآن كيفية تصدير خطوط أساسية 64 عند حفظ مستند بتنسيق HTML باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تصدير الخطوط بأمان ودمجها في مستندات HTML الخاصة بك.
+Artık bir belgeyi Aspose.Words for .NET kullanarak HTML olarak kaydederken 64 tabanlı yazı tiplerini nasıl dışa aktaracağınızı öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek, yazı tiplerini güvenli bir şekilde ve HTML belgelerinize katıştırarak kolayca dışa aktarabilirsiniz.

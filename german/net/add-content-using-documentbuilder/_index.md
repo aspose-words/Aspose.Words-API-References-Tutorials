@@ -1,39 +1,39 @@
 ---
-title: أضف محتوى باستخدام Documentbuilder
-linktitle: أضف محتوى باستخدام Documentbuilder
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إنشاء مستند جديد ، وإدراج منشئ المستندات إشارة مرجعية ، وإنشاء جدول ، وإدراج قاعدة أفقية ، وتنسيق قاعدة أفقية ، وإدراج فاصل ، وإدراج نص i
+title: Fügen Sie Inhalte mit Documentbuilder hinzu
+linktitle: Fügen Sie Inhalte mit Documentbuilder hinzu
+second_title: Aspose.Words für .NET API-Referenz
+description: Zu den Tutorials gehören „Neues Dokument erstellen“, „Dokument-Builder“, „Lesezeichen einfügen“, „Tabelle erstellen“, „Horizontale Regel einfügen“, „Horizontale Regel formatieren“, „Umbruch einfügen“, „Text einfügen“.
 type: docs
 weight: 1460
 url: /de/net/add-content-using-documentbuilder/
 ---
 
-إضافة المحتوى باستخدام DocumentBuilder هو مورد شامل يرشدك خلال عملية إضافة محتوى إلى مستندات Word الخاصة بك باستخدام فئة DocumentBuilder من مكتبة Aspose.Words لـ .NET. تمنحك البرامج التعليمية خطوة بخطوة إرشادات خطوة بخطوة وأمثلة شاملة للرموز وشروحات خطوة بخطوة حول إنشاء الفقرات وإدراج النص وتنسيق النص وإضافة الصور والجداول والمزيد. علاوة على ذلك. هذا المورد ضروري للمطورين الذين يريدون أتمتة إنشاء مستندات Word باستخدام Aspose.Words for .NET وإضافة محتوى مخصص بسهولة لتلبية احتياجاتهم الخاصة.
+Das Hinzufügen von Inhalten mit DocumentBuilder ist eine umfassende Ressource, die Sie durch den Prozess des Hinzufügens von Inhalten zu Ihren Word-Dokumenten mithilfe der DocumentBuilder-Klasse aus der Aspose.Words-Bibliothek für .NET führt. Schritt-für-Schritt-Tutorials bieten Ihnen Schritt-für-Schritt-Anleitungen, umfassende Codebeispiele und Schritt-für-Schritt-Erklärungen zum Erstellen von Absätzen, zum Einfügen von Text, zum Formatieren von Text, zum Hinzufügen von Bildern, Tabellen und mehr. Darüber hinaus. Diese Ressource ist unerlässlich für Entwickler, die die Erstellung von Word-Dokumenten mit Aspose.Words für .NET automatisieren und problemlos benutzerdefinierte Inhalte hinzufügen möchten, um ihre spezifischen Anforderungen zu erfüllen.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [قم بإنشاء مستند جديد](./create-new-document/) | تعرف على كيفية إنشاء مستند Word جديد وإضافة محتوى باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [منشئ المستند إدراج إشارة مرجعية](./document-builder-insert-bookmark/) | تعرف على كيفية إدراج الإشارات المرجعية في مستندات Word باستخدام DocumentBuilder في Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [بناء الجدول](./build-table/) | تعرف على كيفية إنشاء جدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [أدخل مسطرة أفقية](./insert-horizontal-rule/) | تعرف على كيفية إدراج القواعد الأفقية في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [تنسيق القاعدة الأفقية](./horizontal-rule-format/) | تعرف على كيفية تنسيق القواعد الأفقية في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [أدخل فاصل](./insert-break/) | تعرف على كيفية إدراج فواصل الصفحات في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [أدخل حقل نموذج إدخال النص](./insert-text-input-form-field/) | تعرف على كيفية استخدام Aspose.Words for .NET لإدراج حقل نموذج إدخال النص في مستندات Word باستخدام هذا الدليل المفصل خطوة بخطوة. |
-| [أدخل حقل نموذج خانة اختيار](./insert-check-box-form-field/) | تعرف على كيفية إدراج حقول نموذج خانة الاختيار في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [أدخل حقل نموذج مربع التحرير والسرد](./insert-combo-box-form-field/) | تعرف على كيفية إدراج حقول نموذج مربع التحرير والسرد في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [أدخل Html](./insert-html/) | تعرف على كيفية إدراج محتوى HTML في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [أدخل ارتباط تشعبي](./insert-hyperlink/) | تعرف على كيفية إدراج الارتباطات التشعبية في مستندات Word باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [أدخل جدول المحتويات](./insert-table-of-contents/) | تعرف على كيفية إدراج جدول محتويات في مستند Word باستخدام Aspose.Words for .NET |
-| [إدراج صورة مضمنة](./insert-inline-image/) | تعرف على كيفية إدراج الصور المضمنة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [إدراج صورة عائمة](./insert-floating-image/) | تعرف على كيفية إدراج الصور العائمة في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [أدخل فقرة](./insert-paragraph/) | تعرف على كيفية إدراج فقرات منسقة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [أدخل TCField](./insert-tcfield/) | تعرف على كيفية إدراج ومعالجة TCField في مستندات Word باستخدام C # و Aspose.Words for .NET في هذا الدليل التفصيلي. |
-| [موضع المؤشر](./cursor-position/) | تعرف على كيفية استرداد موضع المؤشر في مستند Word باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [الانتقال إلى المستند بداية النهاية](./move-to-document-start-end/) | تعرف على كيفية استخدام Aspose.Words for .NET للانتقال إلى بداية المستند ونهايته في مستندات Word باستخدام هذا الدليل التفصيلي.|
-| [انتقل إلى القسم](./move-to-section/) | دليل خطوة بخطوة لاستخدام انتقل إلى القسم في Aspose.Words for .NET يعالج الأقسام والفقرات في مستندات Word. |
-| [الانتقال إلى تذييلات الرؤوس](./move-to-headers-footers/) | تعرف على كيفية استخدام Aspose.Words for .NET للتنقل وتعديل الرؤوس والتذييلات في مستندات Word باستخدام هذا الدليل التفصيلي. |
-| [الانتقال إلى الفقرة](./move-to-paragraph/) | تعرف على كيفية استخدام ميزة Aspose.Words for .NET's الانتقال إلى الفقرة للتنقل ومعالجة الفقرات في مستندات Word برمجيًا. |
-| [الانتقال إلى خلية الجدول](./move-to-table-cell/) | دليل خطوة بخطوة لاستخدام الانتقال إلى خلية الجدول في Aspose.Words for .NET |
-| [الانتقال إلى نهاية الإشارة المرجعية](./move-to-bookmark-end/) | تعرف على كيفية استخدام Aspose.Words for .NET للانتقال إلى نهاية إشارة مرجعية في مستندات Word باستخدام هذا الدليل التفصيلي خطوة بخطوة. |
-| [نقل إلى دمج الحقل](./move-to-merge-field/) | تعرف على كيفية تنفيذ ميزة نقل إلى دمج الحقل في Aspose.Words for .NET باستخدام دليل خطوة بخطوة. |
+| [Neues Dokument erstellen](./create-new-document/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein neues Word-Dokument erstellen und Inhalte hinzufügen. Schritt für Schritt Anleitung. |
+| [Document Builder Lesezeichen einfügen](./document-builder-insert-bookmark/) | Erfahren Sie, wie Sie mit DocumentBuilder in Aspose.Words für .NET Lesezeichen in Word-Dokumente einfügen. Schritt für Schritt Anleitung. |
+| [Tabelle erstellen](./build-table/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument erstellen. |
+| [Horizontale Regel einfügen](./insert-horizontal-rule/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET horizontale Regeln in Word-Dokumente einfügen. Schritt für Schritt Anleitung. |
+| [Horizontales Regelformat](./horizontal-rule-format/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET horizontale Regeln in Word-Dokumenten formatieren. Schritt für Schritt Anleitung. |
+| [Pause einfügen](./insert-break/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Seitenumbrüche in Word-Dokumente einfügen. Schritt für Schritt Anleitung. |
+| [Texteingabeformularfeld einfügen](./insert-text-input-form-field/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Texteingabeformularfelder in Word-Dokumente einfügen. |
+| [Kontrollkästchen-Formularfeld einfügen](./insert-check-box-form-field/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Kontrollkästchen-Formularfelder in Word-Dokumente einfügen. Schritt für Schritt Anleitung. |
+| [Kombinationsfeld-Formularfeld einfügen](./insert-combo-box-form-field/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Kombinationsfeld-Formularfelder in Word-Dokumente einfügen. Schritt für Schritt Anleitung. |
+| [HTML einfügen](./insert-html/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET HTML-Inhalte in Word-Dokumente einfügen. Schritt für Schritt Anleitung. |
+| [Hyperlink einfügen](./insert-hyperlink/) | Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Hyperlinks in Word-Dokumente einfügen. |
+| [Inhaltsverzeichnis einfügen](./insert-table-of-contents/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Inhaltsverzeichnis in ein Word-Dokument einfügen |
+| [Inline-Bild einfügen](./insert-inline-image/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Inline-Bilder in Word-Dokumente einfügen. |
+| [Schwebendes Bild einfügen](./insert-floating-image/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET schwebende Bilder in Word-Dokumente einfügen. Schritt für Schritt Anleitung. |
+| [Absatz einfügen](./insert-paragraph/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET formatierte Absätze in Word-Dokumente einfügen. |
+| [TCField einfügen](./insert-tcfield/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie TCField in Word-Dokumente mit C# und Aspose.Words für .NET einfügen und bearbeiten. |
+| [Cursorposition](./cursor-position/) | Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET die Cursorposition in einem Word-Dokument abrufen. |
+| [Zum Anfangs-Ende des Dokuments verschieben](./move-to-document-start-end/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET zum Dokumentanfang und -ende in Word-Dokumenten wechseln.|
+| [In Abschnitt verschieben](./move-to-section/) | Schritt-für-Schritt-Anleitung zur Verwendung von „In Abschnitt verschieben“ in Aspose.Words für .NET zum Bearbeiten von Abschnitten und Absätzen in Word-Dokumenten. |
+| [Zu Kopfzeilen und Fußzeilen wechseln](./move-to-headers-footers/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie Aspose.Words für .NET zum Navigieren und Ändern von Kopf- und Fußzeilen in Word-Dokumenten verwenden. |
+| [Zum Absatz wechseln](./move-to-paragraph/) | Erfahren Sie, wie Sie die Funktion „In Absatz verschieben“ von Aspose.Words für .NET verwenden, um programmgesteuert in Absätzen in Word-Dokumenten zu navigieren und diese zu bearbeiten. |
+| [In Tabellenzelle verschieben](./move-to-table-cell/) | Schritt-für-Schritt-Anleitung zur Verwendung von „In Tabellenzelle verschieben“ in Aspose.Words für .NET |
+| [Zum Ende des Lesezeichens verschieben](./move-to-bookmark-end/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET zum Ende eines Lesezeichens in Word-Dokumenten wechseln. |
+| [Zum Zusammenführungsfeld verschieben](./move-to-merge-field/) | Erfahren Sie anhand der Schritt-für-Schritt-Anleitung, wie Sie die Funktion „In Merge-Feld verschieben“ in Aspose.Words für .NET implementieren. |

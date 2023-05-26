@@ -1,52 +1,52 @@
 ---
-title: إظهار إخفاء الإشارات المرجعية
-linktitle: إظهار إخفاء الإشارات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إظهار أو إخفاء إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET.
+title: Mostrar Ocultar Marcadores
+linktitle: Mostrar Ocultar Marcadores
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a mostrar u ocultar un marcador específico en un documento usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إظهار إخفاء الإشارات المرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إظهار أو إخفاء إشارة مرجعية معينة في المستند.
+En este artículo, exploraremos el código fuente de C# anterior para entender cómo usar la función Mostrar Ocultar Marcadores en la biblioteca Aspose.Words para .NET. Esta característica le permite mostrar u ocultar un marcador específico en un documento.
 
-## المتطلبات الأساسية
+## requisitos previos
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conocimientos básicos del lenguaje C#.
+- Entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
 
-## الخطوة 1: تحميل المستند
+## Paso 1: Cargar el documento
 
- نحن نستخدم ال`Document` فئة لتحميل المستند الحالي من ملف:
+ usamos el`Document` clase para cargar el documento existente desde un archivo:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## الخطوة 2: إظهار أو إخفاء إشارة مرجعية معينة
+## Paso 2: Mostrar u ocultar un marcador específico
 
- نحن نستخدم ال`ShowHideBookmarkedContent` وظيفة لإظهار أو إخفاء إشارة مرجعية معينة في المستند. تأخذ هذه الوظيفة كمعلمات للمستند واسم الإشارة المرجعية وقيمة منطقية للإشارة إلى ما إذا كان سيتم إظهار الإشارة المرجعية أو إخفائها:
+ usamos el`ShowHideBookmarkedContent` función para mostrar u ocultar un marcador específico en el documento. Esta función toma como parámetros el documento, el nombre del marcador y un booleano para indicar si mostrar u ocultar el marcador:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## الخطوة 3: حفظ المستند المعدل
+## Paso 3: Guardar el documento modificado
 
- نحن نستخدم ال`Save` طريقة لحفظ المستند المعدل في ملف:
+ usamos el`Save` método para guardar el documento modificado en un archivo:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### مثال على شفرة المصدر لـ Show Hide Bookmarks باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Mostrar Ocultar Marcadores usando Aspose.Words para .NET
 
-إليك المثال الكامل لشفرة المصدر لتوضيح إظهار أو إخفاء إشارة مرجعية معينة باستخدام Aspose.Words for .NET:
+Aquí está el código fuente de ejemplo completo para mostrar u ocultar un marcador específico usando Aspose.Words para .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 
@@ -56,6 +56,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 
 ```
 
-## خاتمة
+## Conclusión
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام ميزة إظهار إخفاء الإشارات المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإظهار أو إخفاء إشارة مرجعية معينة في مستند.
+En este artículo, exploramos el código fuente de C# para entender cómo usar la característica Mostrar Ocultar Marcadores de Aspose.Words para .NET. Seguimos una guía paso a paso para mostrar u ocultar un marcador específico en un documento.

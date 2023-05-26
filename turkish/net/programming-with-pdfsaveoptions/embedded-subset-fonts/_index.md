@@ -1,61 +1,61 @@
 ---
-title: خطوط المجموعة الفرعية المضمنة
-linktitle: خطوط المجموعة الفرعية المضمنة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتضمين مجموعات الخطوط الفرعية في ملف PDF باستخدام Aspose.Words for .NET.
+title: Katıştırılmış Alt Küme Yazı Tipleri
+linktitle: Katıştırılmış Alt Küme Yazı Tipleri
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak yazı tipi altkümelerini bir PDF'ye gömmek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة تضمين مجموعة الخطوط الفرعية مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تضمين مجموعات فرعية من الخطوط في مستند وإنشاء ملف PDF يحتوي فقط على الحروف الرسومية المستخدمة في المستند.
+Bu makale, yazı tipi alt kümesi gömme özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, yazı tiplerinin alt kümelerini bir belgeye nasıl gömeceğinizi ve yalnızca belgede kullanılan glifleri içeren bir PDF oluşturmayı öğrenebileceksiniz.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
-## الخطوة 1: تحديد دليل المستند
+## 1. Adım: Belge dizinini tanımlayın
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Başlamak için, belgelerinizin bulunduğu dizine giden yolu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## 2. Adım: Belgeyi yükleyin
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Ardından, işlemek istediğimiz belgeyi yüklememiz gerekiyor. Bu örnekte, belgenin "Rendering.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF
+## 3. Adım: PDF olarak kaydetme seçeneklerini yapılandırın
 
- لإنشاء ملف PDF يحتوي فقط على مجموعات فرعية من الخطوط المستخدمة في المستند ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن مع`EmbedFullFonts` تعيين الخاصية على`false`.
+ Yalnızca belgede kullanılan yazı tiplerinin alt kümelerini içeren bir PDF oluşturmak için,`PdfSaveOptions` ile nesne`EmbedFullFonts` özellik ayarlandı`false`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع مجموعات الخطوط الفرعية
+## 4. Adım: Belgeyi yazı tipi alt kümeleriyle PDF olarak kaydedin
 
- أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام مجموعات الخطوط الفرعية. حدد اسم ملف الإخراج و`saveOptions` كائن قمنا بتكوينه في الخطوة السابقة.
+ Son olarak, yazı tipi alt kümelerini kullanarak belgeyi PDF olarak kaydedebiliriz. Çıktı dosyası adını ve`saveOptions` önceki adımda yapılandırdığımız nesne.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تضمين مجموعات فرعية من الخطوط في مستند وإنشاء ملف PDF يحتوي فقط على الحروف الرسومية المستخدمة في المستند مع Aspose.Words for .NET.
+Bu kadar ! Yazı tiplerinin alt kümelerini bir belgeye başarıyla gömdünüz ve Aspose.Words for .NET ile yalnızca belgede kullanılan glifleri içeren bir PDF oluşturdunuz.
 
-### عينة من التعليمات البرمجية المصدر لتضمين مجموعات فرعية من الخطوط باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile yazı tipi alt kümelerini gömmek için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// سيحتوي ملف PDF الناتج على مجموعات فرعية من الخطوط الموجودة في المستند.
-	// يتم تضمين الحروف الرسومية المستخدمة في الوثيقة فقط في خطوط PDF.
+	// Çıktı PDF'si, belgedeki yazı tiplerinin alt kümelerini içerecektir.
+	// PDF yazı tiplerine yalnızca belgede kullanılan glifler dahildir.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);

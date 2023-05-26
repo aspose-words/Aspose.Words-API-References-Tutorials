@@ -1,28 +1,28 @@
 ---
-title: احصل على فاصل نمط الفقرة
-linktitle: احصل على فاصل نمط الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على فاصل نمط الفقرة باستخدام Aspose.Words for .NET.
+title: Holen Sie sich das Trennzeichen für den Absatzstil
+linktitle: Holen Sie sich das Trennzeichen für den Absatzstil
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET das Absatzformat-Trennzeichen erhalten.
 type: docs
 weight: 10
 url: /de/net/document-formatting/get-paragraph-style-separator/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة Get Paragraph Style Separator مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+In diesem Tutorial zeigen wir Ihnen, wie Sie die Funktion „Absatzstiltrennzeichen abrufen“ mit Aspose.Words für .NET verwenden. Führen Sie die folgenden Schritte aus, um den Quellcode zu verstehen und die Änderungen anzuwenden.
 
-## الخطوة 1: تحميل المستند
+## Schritt 1: Laden des Dokuments
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند في كائن المستند. إليك الطريقة:
+Geben Sie zunächst das Verzeichnis für Ihre Dokumente an und laden Sie das Dokument in ein Document-Objekt. Hier ist wie:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## الخطوة 2: البحث عن فواصل نمط الفقرة
+## Schritt 2: Trennzeichen für Absatzstile finden
 
-سنقوم الآن بتكرار جميع الفقرات في المستند والتحقق مما إذا كانت الفقرة هي فاصل نمط. إليك الطريقة:
+Wir durchlaufen nun alle Absätze im Dokument und prüfen, ob ein Absatz ein Stiltrennzeichen ist. Hier ist wie:
 
 ```csharp
 foreach(Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -34,9 +34,9 @@ foreach(Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-### مثال على شفرة المصدر للحصول على فاصل نمط الفقرة باستخدام Aspose.Words for .NET
+### Beispielquellcode für Get Paragraph Style Separator mit Aspose.Words für .NET
 
-فيما يلي رمز المصدر الكامل لميزة Get Paragraph Style Separator مع Aspose.Words for .NET:
+Hier ist der vollständige Quellcode für die Funktion „Absatzstiltrennzeichen abrufen“ mit Aspose.Words für .NET:
 
 ```csharp
 
@@ -52,5 +52,5 @@ foreach(Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
         
 ```
 
-باستخدام هذا الرمز ، ستتمكن من العثور على فواصل نمط الفقرة في مستند باستخدام Aspose.Words for .NET.
+Mit diesem Code können Sie mit Aspose.Words für .NET die Absatztrennzeichen in einem Dokument finden.
 

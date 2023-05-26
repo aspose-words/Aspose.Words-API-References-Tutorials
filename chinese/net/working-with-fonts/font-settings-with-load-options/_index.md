@@ -1,48 +1,48 @@
 ---
-title: إعدادات الخط مع خيارات التحميل
-linktitle: إعدادات الخط مع خيارات التحميل
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تحميل مستند Word بخيارات تحميل مخصصة وإعدادات الخط المقابلة.
+title: 带有加载选项的字体设置
+linktitle: 带有加载选项的字体设置
+second_title: Aspose.Words for .NET API 参考
+description: 在本教程中，学习如何使用自定义加载选项和相应的字体设置加载 Word 文档。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/font-settings-with-load-options/
 ---
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية استخدام خيارات التحميل مع إعدادات الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تتيح لك خيارات التحميل تحديد إعدادات إضافية عند تحميل مستند ، بما في ذلك إعدادات الخط. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+在本教程中，我们将向您展示如何使用适用于 .NET 的 Aspose.Words 库在 Word 文档中使用加载选项和字体设置。加载选项允许您在加载文档时指定其他设置，包括字体设置。我们将带您一步一步地帮助您理解和实现您的 .NET 项目中的代码。
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## 先决条件
+在开始之前，请确保您拥有以下物品：
+- C# 编程语言的应用知识
+- 项目中安装的 .NET 的 Aspose.Words 库
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 第一步：定义文档目录
+首先，您需要将目录路径设置为您的 Word 文档所在的位置。代替`"YOUR DOCUMENT DIRECTORY"`在具有适当路径的代码中。
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تكوين خيارات التحميل مع إعدادات الخط
- بعد ذلك ، سننشئ مثيلًا لـ`LoadOptions` وحدد إعدادات الخط عن طريق إنشاء مثيل جديد من`FontSettings` وتعيينه إلى`loadOptions.FontSettings`.
+## 第 2 步：使用字体设置配置加载选项
+接下来，我们将创建一个实例`LoadOptions`并通过创建一个新实例来指定字体设置`FontSettings`并将其分配给`loadOptions.FontSettings`.
 
 ```csharp
-// تكوين خيارات التحميل مع إعدادات الخط
+//使用字体设置配置加载选项
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.FontSettings = new FontSettings();
 ```
 
-## الخطوة 3: قم بتحميل المستند بخيارات التحميل
- الآن سنقوم بتحميل المستند باستخدام`LoadOptions` وحدد خيارات التحميل التي قمنا بتكوينها.
+## 第 3 步：使用加载选项加载文档
+现在我们将使用加载文档`LoadOptions`并指定我们配置的加载选项。
 
 ```csharp
-// قم بتحميل المستند بخيارات التحميل
+//使用加载选项加载文档
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
-### نموذج التعليمات البرمجية المصدر لإعدادات الخط مع خيارات التحميل باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的带有加载选项的字体设置示例源代码 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 LoadOptions loadOptions = new LoadOptions();
@@ -50,5 +50,5 @@ loadOptions.FontSettings = new FontSettings();
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية استخدام خيارات التحميل مع إعدادات الخط في مستند Word باستخدام Aspose.Words for .NET. تتيح لك خيارات التحميل تخصيص تحميل المستند عن طريق تحديد إعدادات إضافية ، بما في ذلك إعدادات الخط. لا تتردد في استخدام هذه الميزة لتخصيص تحميل المستندات وفقًا لاحتياجاتك الخاصة.
+## 结论
+在本教程中，我们了解了如何使用 Aspose.Words for .NET 在 Word 文档中使用加载选项和字体设置。加载选项允许您通过指定其他设置（包括字体设置）来自定义文档加载。随意使用此功能来根据您的特定需求定制文档加载。

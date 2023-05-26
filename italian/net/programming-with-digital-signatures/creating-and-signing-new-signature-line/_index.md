@@ -1,18 +1,18 @@
 ---
-title: إنشاء وتوقيع خط توقيع جديد
-linktitle: إنشاء وتوقيع خط توقيع جديد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء سطر توقيع جديد والتوقيع عليه في مستند Word باستخدام Aspose.Words for .NET.
+title: Creazione e firma di una nuova linea di firma
+linktitle: Creazione e firma di una nuova linea di firma
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come creare e firmare una nuova riga della firma in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لاستخدام ميزة إنشاء سطر توقيع جديد وتوقيعه باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إدراج سطر توقيع في مستند Word ، وتعيين الخيارات المخصصة وتوقيع المستند. اتبع الخطوات التالية:
+In questo tutorial, ti guideremo attraverso i passaggi per utilizzare la funzionalità di creazione e firma di una nuova riga della firma con Aspose.Words per .NET. Questa funzione consente di inserire una riga della firma in un documento Word, impostare opzioni personalizzate e firmare il documento. Segui i passaggi seguenti:
 
-## الخطوة 1: إنشاء المستند والمولد
+## Passaggio 1: creazione del documento e del generatore
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+Inizia creando un'istanza della classe Document e un oggetto DocumentBuilder:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -20,27 +20,27 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إدخال سطر التوقيع
+## Passaggio 2: Inserimento della riga della firma
 
-استخدم طريقة InsertSignatureLine () لكائن DocumentBuilder لإدراج سطر توقيع جديد في المستند:
+Utilizzare il metodo InsertSignatureLine() dell'oggetto DocumentBuilder per inserire una nuova riga della firma nel documento:
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
 ```
 
-## الخطوة 3: احفظ المستند
+## Passaggio 3: salvare il documento
 
-احفظ المستند المعدل:
+Salva il documento modificato:
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند.
+Assicurati di specificare il percorso e il nome file corretti per salvare il documento.
 
-## الخطوة 4: توقيع الوثيقة
+## Passaggio 4: Firma del documento
 
-لتوقيع الوثيقة ، تحتاج إلى تعيين خيارات التوقيع واستخدام فئة DigitalSignatureUtil:
+Per firmare il documento, è necessario impostare le opzioni di firma e utilizzare la classe DigitalSignatureUtil:
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -55,15 +55,15 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 	dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند وصورة خط التوقيع والمستند الموقع.
+Assicurati di specificare i percorsi corretti per il documento, l'immagine della riga della firma e il documento firmato.
 
-### مثال على شفرة المصدر لإنشاء وتوقيع سطر توقيع جديد باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per la creazione e la firma di una nuova riga della firma utilizzando Aspose.Words per .NET
 
-إليك شفرة المصدر الكاملة لإنشاء وتوقيع سطر توقيع جديد باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente completo per creare e firmare una nuova riga della firma con Aspose.Words per .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -85,5 +85,5 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ```
 
-باتباع هذه الخطوات ، ستتمكن بسهولة من إنشاء وتوقيع سطر توقيع جديد في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Seguendo questi passaggi, sarai in grado di creare e firmare facilmente una nuova riga della firma nel tuo documento Word con Aspose.Words per .NET.
 

@@ -1,48 +1,48 @@
 ---
-title: تحديث البيانات المرجعية
-linktitle: تحديث البيانات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح شفرة المصدر C # لميزة تحديث بيانات الإشارة المرجعية Aspose.Words لـ .NET.
+title: Aggiorna i dati dei segnalibri
+linktitle: Aggiorna i dati dei segnalibri
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida passo passo per spiegare il codice sorgente C# della funzionalità di aggiornamento dei dati dei segnalibri di Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-في هذا البرنامج التعليمي ، سننتقل عبر دليل تفصيلي خطوة بخطوة لفهم ميزة تحديث بيانات الإشارة المرجعية وتنفيذها في Aspose.Words for .NET. تتيح لك هذه الميزة تحديث محتوى وخصائص الإشارات المرجعية داخل مستند Word باستخدام كود مصدر C #.
+In questo tutorial, illustreremo una guida passo passo per comprendere e implementare la funzione Aggiorna dati segnalibri di Aspose.Words per .NET. Questa funzionalità consente di aggiornare il contenuto e le proprietà dei segnalibri all'interno di un documento Word utilizzando il codice sorgente C#.
 
-## متطلبات
+## Requisiti
 
-قبل متابعة البرنامج التعليمي ، تأكد من توفر المتطلبات التالية:
+Prima di procedere con il tutorial, assicurati di disporre dei seguenti requisiti:
 
-- تثبيت Aspose.Words لمكتبة .NET
-- المعرفة الأساسية بلغة البرمجة C #
-- Visual Studio أو أي IDE متوافق آخر
+- Aspose.Words per la libreria .NET installata
+- Conoscenza base del linguaggio di programmazione C#
+- Visual Studio o qualsiasi altro IDE compatibile
 
-## الخطوة 1: قم بتحميل المستند
+## Passaggio 1: caricare il documento
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي يحتوي على الإشارات المرجعية التي نريد تحديثها. بافتراض أن لديك المستند مخزّنًا في دليل معين ، استخدم الكود التالي لتحميل المستند:
+In questo passaggio, caricheremo il documento Word che contiene i segnalibri che vogliamo aggiornare. Supponendo che il documento sia archiviato in una directory specifica, utilizzare il seguente codice per caricare il documento:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` مع مسار الدليل الفعلي حيث يوجد المستند الخاص بك.
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento.
 
-## الخطوة 2: الوصول إلى الإشارة المرجعية
+## Passaggio 2: accedi al segnalibro
 
-لتحديث بيانات الإشارة المرجعية ، نحتاج أولاً إلى الوصول إلى الإشارة المرجعية المحددة داخل المستند. كل إشارة مرجعية لها اسم فريد مرتبط بها. استخدم الكود التالي للوصول إلى إشارة مرجعية تسمى "MyBookmark1":
+Per aggiornare i dati del segnalibro, dobbiamo prima accedere al segnalibro specifico all'interno del documento. Ogni segnalibro ha un nome univoco ad esso associato. Utilizzare il seguente codice per accedere a un segnalibro denominato "MyBookmark1":
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks["MyBookmark1"];
 ```
 
-تأكد من تطابق اسم الإشارة المرجعية مع الاسم الموجود في المستند. يمكنك تعديله حسب متطلباتك.
+Assicurati che il nome del segnalibro corrisponda a quello nel documento. Puoi modificarlo secondo le tue esigenze.
 
-## الخطوة 3: تحديث خصائص الإشارات المرجعية والمحتوى
+## Passaggio 3: aggiorna le proprietà e il contenuto dei segnalibri
 
-بمجرد الوصول إلى الإشارة المرجعية ، يمكنك تحديث خصائصها ومحتواها. في مقتطف الشفرة التالي ، سنقوم بتحديث اسم الإشارة المرجعية ونصها:
+Una volta effettuato l'accesso al segnalibro, è possibile aggiornarne le proprietà e il contenuto. Nel seguente frammento di codice, aggiorneremo il nome e il testo del segnalibro:
 
 ```csharp
 string name = bookmark.Name;
@@ -52,23 +52,23 @@ bookmark.Name = "RenamedBookmark";
 bookmark.Text = "This is a new bookmarked text.";
 ```
 
-يمكنك تخصيص اسم الإشارة المرجعية والنص الجديد وفقًا لاحتياجاتك. الرمز أعلاه يعيد تسمية الإشارة المرجعية إلى "RenamedBookmark" ويقوم بتحديث محتوى النص.
+È possibile personalizzare il nome del segnalibro e il nuovo testo in base alle proprie esigenze. Il codice precedente rinomina il segnalibro in "RenamedBookmark" e aggiorna il contenuto del testo.
 
-## الخطوة 4: احفظ المستند المحدث
+## Passaggio 4: salvare il documento aggiornato
 
-بعد تحديث بيانات الإشارة المرجعية ، تحتاج إلى حفظ المستند المعدل. استخدم الكود التالي لحفظ المستند:
+Dopo aver aggiornato i dati del segnalibro, è necessario salvare il documento modificato. Utilizzare il seguente codice per salvare il documento:
 
 ```csharp
 doc.Save(dataDir + "UpdatedDocument.docx");
 ```
 
-سيحفظ هذا الرمز المستند المعدل باسم "UpdatedDocument.docx" في نفس الدليل مثل المستند الأصلي.
+Questo codice salverà il documento modificato con il nome "UpdatedDocument.docx" nella stessa directory del documento originale.
 
-### مثال على شفرة المصدر لتحديث بيانات الإشارة المرجعية باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per l'aggiornamento dei dati dei segnalibri utilizzando Aspose.Words per .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 
@@ -82,8 +82,8 @@ doc.Save(dataDir + "UpdatedDocument.docx");
 
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` مع مسار الدليل الفعلي حيث يوجد المستند الخاص بك.
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento.
 
-## خاتمة
+## Conclusione
 
-تهانينا! لقد تعلمت بنجاح كيفية تحديث بيانات الإشارات المرجعية باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة المقدم في هذا البرنامج التعليمي ، يجب أن تكون قادرًا الآن على دمج هذه الميزة في تطبيقات C # الخاصة بك ومعالجة الإشارات المرجعية في مستندات Word برمجيًا.
+Congratulazioni! Hai imparato con successo come aggiornare i dati dei segnalibri utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata fornita in questo tutorial, ora dovresti essere in grado di incorporare questa funzionalità nelle tue applicazioni C# e manipolare i segnalibri all'interno dei documenti di Word a livello di programmazione.

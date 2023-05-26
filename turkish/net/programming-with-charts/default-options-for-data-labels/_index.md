@@ -1,44 +1,44 @@
 ---
-title: الخيارات الافتراضية لتسميات البيانات
-linktitle: الخيارات الافتراضية لتسميات البيانات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين الخيارات الافتراضية لتسميات البيانات في مخطط باستخدام Aspose.Words for .NET.
+title: Veri Etiketleri İçin Varsayılan Seçenekler
+linktitle: Veri Etiketleri İçin Varsayılan Seçenekler
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir grafikteki veri etiketleri için varsayılan seçenekleri nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/default-options-for-data-labels/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين الخيارات الافتراضية لتسميات البيانات في الرسم البياني. يوضح الكود المقدم كيفية إنشاء مخطط وإضافة سلسلة بيانات وتخصيص تسميات البيانات باستخدام Aspose.Words.
+Bu eğitim, bir grafikteki veri etiketleri için varsayılan seçenekleri ayarlamak üzere Aspose.Words for .NET'in nasıl kullanılacağını açıklar. Sağlanan kod, Aspose.Words kullanarak bir grafiğin nasıl oluşturulacağını, veri serilerinin nasıl ekleneceğini ve veri etiketlerinin nasıl özelleştirileceğini gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-قبل أن نبدأ ، تأكد من توفر المتطلبات التالية:
+Başlamadan önce, aşağıdaki gereksinimlere sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Çıktı belgesinin kaydedileceği bir belge dizini yolu.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 2. Adım: Yeni bir belge oluşturun ve bir grafik ekleyin
 
- أولاً ، لنقم بإنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ İlk önce yeni bir tane oluşturalım`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، نقوم بإدراج مخطط في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`. في هذا المثال ، سنقوم بإدراج مخطط دائري.
+ Ardından, kullanarak belgeye bir grafik ekliyoruz.`InsertChart` yöntemi`DocumentBuilder`. Bu örnekte, bir pasta grafik ekleyeceğiz.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف سلسلة البيانات إلى الرسم البياني
+## 3. Adım: Grafiğe veri serisi ekleyin
 
-الآن ، دعنا نضيف سلسلة بيانات إلى المخطط. في هذا المثال ، سنضيف ثلاث فئات والقيم المقابلة لها.
+Şimdi grafiğe bir veri serisi ekleyelim. Bu örnekte, üç kategori ve bunlara karşılık gelen değerleri ekleyeceğiz.
 
 ```csharp
 chart.Series.Clear();
@@ -47,15 +47,15 @@ ChartSeries series = chart.Series.Add("Aspose Series 1",
     new double[] { 2.7, 3.2, 0.8 });
 ```
 
-## الخطوة 4: تخصيص تسميات البيانات
+## 4. Adım: Veri etiketlerini özelleştirin
 
- لتخصيص تسميات البيانات في المخطط ، نحتاج إلى الوصول إلى ملف`ChartDataLabelCollection` الكائن المرتبط بالسلسلة.
+ Grafikteki veri etiketlerini özelleştirmek için şuna erişmemiz gerekir:`ChartDataLabelCollection` dizi ile ilişkili nesne.
 
 ```csharp
 ChartDataLabelCollection labels = series.DataLabels;
 ```
 
- يمكننا بعد ذلك تعديل الخصائص المختلفة لملف`labels` لتعيين الخيارات المطلوبة لتسميات البيانات. في هذا المثال ، سنقوم بتمكين عرض النسبة المئوية والقيمة ، وتعطيل الخطوط البادئة ، وتعيين فاصل مخصص.
+ Daha sonra çeşitli özellikleri değiştirebiliriz.`labels` veri etiketleri için istenen seçenekleri ayarlamak için nesne. Bu örnekte yüzde ve değer göstermeyi etkinleştireceğiz, lider çizgileri devre dışı bırakacağız ve özel bir ayırıcı ayarlayacağız.
 
 ```csharp
 labels.ShowPercentage = true;
@@ -64,20 +64,20 @@ labels.ShowLeaderLines = false;
 labels.Separator = " - ";
 ```
 
-## الخطوة 5: احفظ المستند
+## 5. Adım: Belgeyi kaydedin
 
- أخيرًا ، نحفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Son olarak, belgeyi kullanarak belirtilen dizine kaydediyoruz.`Save` yöntemi`Document` nesne.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ```
 
-هذا يكمل تنفيذ إعداد الخيارات الافتراضية لتسميات البيانات في مخطط باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanan bir tablodaki veri etiketleri için varsayılan seçenekleri ayarlama uygulamasını tamamlar.
 
-### مثال على شفرة المصدر للخيارات الافتراضية لعناوين البيانات باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Veri Etiketleri İçin Varsayılan Seçenekler için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

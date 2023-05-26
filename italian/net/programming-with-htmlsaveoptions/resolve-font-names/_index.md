@@ -1,33 +1,33 @@
 ---
-title: حل أسماء الخطوط
-linktitle: حل أسماء الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لحل أسماء الخطوط المفقودة عند التحويل إلى HTML باستخدام Aspose.Words for .NET.
+title: Risolvi i nomi dei caratteri
+linktitle: Risolvi i nomi dei caratteri
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata per risolvere i nomi dei caratteri mancanti durante la conversione in HTML con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر التعليمات البرمجية المصدر C # لحل أسماء الخطوط المفقودة باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة حل أسماء الخطوط المفقودة تلقائيًا عند تحويل مستند إلى HTML.
+In questo tutorial, ti guideremo attraverso il codice sorgente C# per risolvere i nomi dei font mancanti con Aspose.Words per .NET. Questa funzione consente di risolvere automaticamente i nomi dei caratteri mancanti durante la conversione di un documento in HTML.
 
-## الخطوة 1: إعداد المشروع
+## Passaggio 1: impostazione del progetto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Per iniziare, crea un nuovo progetto C# nel tuo IDE preferito. Assicurarsi che nel progetto si faccia riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة الثانية: تحميل المستند
+## Passaggio 2: caricamento del documento
 
-في هذه الخطوة ، سنقوم بتحميل المستند لتتم معالجته. استخدم الكود التالي لتحميل المستند من دليل محدد:
+In questo passaggio, caricheremo il documento da elaborare. Utilizzare il codice seguente per caricare il documento da una directory specificata:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Missing font.docx");
 ```
 
- هذا الرمز ينشئ مثيل`Document` عن طريق تحميل المستند من الدليل المحدد.
+ Questo codice crea un'istanza di`Document` caricando il documento dalla directory specificata.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي بتنسيق HTML
+## Passaggio 3: configurazione delle opzioni di backup HTML
 
-سنقوم الآن بتكوين خيارات حفظ HTML لحل أسماء الخطوط المفقودة أثناء التحويل. استخدم الكود التالي:
+Ora configureremo le opzioni di salvataggio HTML per risolvere i nomi dei caratteri mancanti durante la conversione. Usa il seguente codice:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
@@ -37,23 +37,23 @@ ResolveFontNames=true
 };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions`وتعيين`ResolveFontNames` الخيار ل`true` لحل أسماء الخطوط المفقودة عند التحويل إلى HTML. أيضا ،`PrettyFormat` تم تعيين الخيار إلى`true` للحصول على كود HTML منسق بشكل جيد.
+ Questo codice crea un'istanza di`HtmlSaveOptions` imposta il`ResolveFontNames` opzione a`true` per risolvere i nomi dei caratteri mancanti durante la conversione in HTML. Anche il`PrettyFormat` l'opzione è impostata su`true` per ottenere un codice HTML ben formattato.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## Passaggio 4: conversione e salvataggio del documento in HTML
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+Infine, convertiremo il documento in HTML utilizzando le opzioni di salvataggio HTML configurate in precedenza. Usa il seguente codice:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML عن طريق حل أسماء الخطوط المفقودة تلقائيًا ، ويحفظ ملف HTML المحول في الدليل المحدد.
+Questo codice converte il documento in HTML risolvendo automaticamente i nomi dei caratteri mancanti e salva il file HTML convertito nella directory specificata.
 
-### مثال على شفرة المصدر لحل أسماء الخطوط باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Risolvi i nomi dei caratteri utilizzando Aspose.Words per .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Missing font.docx");
 
@@ -66,4 +66,4 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptio
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+ Assicurati di specificare il percorso corretto della directory dei documenti nel file`dataDir` variabile.

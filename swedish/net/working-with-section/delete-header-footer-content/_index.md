@@ -1,52 +1,52 @@
 ---
-title: حذف محتوى رأس التذييل
-linktitle: حذف محتوى رأس التذييل
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية إزالة محتوى الرأس والتذييل من مستند Word باستخدام Aspose.Words for .NET.
+title: Ta bort innehåll i sidhuvud
+linktitle: Ta bort innehåll i sidhuvud
+second_title: Aspose.Words för .NET API Referens
+description: den här handledningen lär du dig hur du tar bort sidhuvud och sidfotsinnehåll från ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-section/delete-header-footer-content/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية إزالة محتوى الرأس والتذييل من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يمكن أن تكون إزالة المحتوى من الرؤوس والتذييلات مفيدة عندما تريد إعادة تعيين هذه العناصر أو إزالتها من المستند. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+I den här handledningen kommer vi att visa dig hur du tar bort sidhuvud och sidfotsinnehåll från Word-dokument med Aspose.Words-biblioteket för .NET. Att ta bort innehåll från sidhuvuden och sidfötter kan vara användbart när du vill återställa eller ta bort dessa element från ditt dokument. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على الرؤوس والتذييلات التي تريد إزالتها
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
+- Ett Word-dokument som innehåller sidhuvuden och sidfötter som du vill ta bort
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+ Först måste du ställa in katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وانتقل إلى القسم
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فصل. سنصل إلى القسم الأول من المستند باستخدام الفهرس 0.
+## Steg 2: Ladda dokumentet och gå till avsnittet
+ Därefter laddar vi Word-dokumentet i en instans av`Document` klass. Vi kommer åt den första delen av dokumentet med index 0.
 
 ```csharp
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "Document.docx");
 
-// قم بالوصول إلى القسم
+// Gå till avsnittet
 Section section = doc.Sections[0];
 ```
 
-## الخطوة 3: حذف محتوى الرأس والتذييل
- لإزالة محتوى الرأس والتذييل من القسم ، سنستخدم الامتداد`ClearHeadersFooters` طريقة.
+## Steg 3: Ta bort sidhuvud och sidfotsinnehåll
+ För att ta bort innehållet i sidhuvudet och sidfoten från avsnittet använder vi`ClearHeadersFooters` metod.
 
 ```csharp
 section.ClearHeadersFooters();
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Delete Header Footer Content باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Ta bort innehåll i sidhuvud med Aspose.Words för .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -55,5 +55,5 @@ section.ClearHeadersFooters();
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية إزالة محتوى الرأس والتذييل من مستند Word باستخدام Aspose.Words for .NET. تتيح لك إزالة المحتوى من الرؤوس والتذييلات إعادة تعيين هذه العناصر المحددة أو إزالتها من المستند. لا تتردد في تخصيص هذه الميزة واستخدامها وفقًا لاحتياجاتك الخاصة.
+## Slutsats
+den här handledningen har vi sett hur du tar bort sidhuvud och sidfotsinnehåll från ett Word-dokument med Aspose.Words för .NET. Genom att ta bort innehåll från sidhuvuden och sidfötter kan du återställa eller ta bort de specifika elementen från ditt dokument. Känn dig fri att anpassa och använda den här funktionen efter dina specifika behov.

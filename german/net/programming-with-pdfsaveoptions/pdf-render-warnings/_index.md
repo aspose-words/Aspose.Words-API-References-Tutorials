@@ -1,36 +1,36 @@
 ---
-title: تحذيرات تقديم ملف PDF
-linktitle: تحذيرات تقديم ملف PDF
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة للتعامل مع تحذيرات عرض PDF باستخدام Aspose.Words for .NET.
+title: PDF-Renderwarnungen
+linktitle: PDF-Renderwarnungen
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Umgang mit PDF-Rendering-Warnungen mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة تحذيرات عرض PDF مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، سوف تكون قادرًا على فهم كيفية التعامل مع تحذيرات العرض عند التحويل إلى PDF.
+Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zur Verwendung der PDF-Rendering-Warnungsfunktion mit Aspose.Words für .NET. Wir werden jeden Teil des Codes im Detail erklären. Am Ende dieses Tutorials erfahren Sie, wie Sie beim Konvertieren in PDF mit Rendering-Warnungen umgehen.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert und konfiguriert haben. Die Bibliothek und Installationsanweisungen finden Sie auf der Aspose-Website.
 
-## الخطوة 1: تحديد دليل المستند
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Zunächst müssen Sie den Pfad zu dem Verzeichnis definieren, in dem sich Ihre Dokumente befinden. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Schritt 2: Laden Sie das Dokument hoch
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "WMF with image.docx" ويقع في دليل المستندات المحدد.
+Als nächstes müssen wir das Dokument laden, das wir verarbeiten möchten. In diesem Beispiel gehen wir davon aus, dass das Dokument „WMF with image.docx“ heißt und sich im angegebenen Dokumentenverzeichnis befindet.
 
 ```csharp
 Document doc = new Document(dataDir + "WMF with image.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF مع تحذيرات التقديم
+## Schritt 3: Konfigurieren Sie die Optionen zum Speichern als PDF mit Rendering-Warnungen
 
-للتعامل مع تحذيرات التجسيد عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`MetafileRenderingOptions` لتحديد كيفية عرض ملفات التعريف. نستخدم أيضًا ملف`HandleDocumentWarnings` خيار للتعامل مع التحذيرات التي تم إنشاؤها عند حفظ المستند.
+Um Rendering-Warnungen beim Konvertieren in PDF zu verarbeiten, müssen wir Folgendes konfigurieren`MetafileRenderingOptions` -Objekt, um anzugeben, wie Metadateien gerendert werden. Wir nutzen auch die`HandleDocumentWarnings` Option zum Behandeln der Warnungen, die beim Speichern des Dokuments generiert werden.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -45,17 +45,17 @@ HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع تحذيرات التقديم
+## Schritt 4: Dokument als PDF mit Rendering-Warnungen speichern
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Schließlich können wir das Dokument mit den zuvor konfigurierten Speicheroptionen im PDF-Format speichern.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfRenderWarnings.pdf", saveOptions);
 ```
 
-## الخطوة 5: التعامل مع تحذيرات العرض
+## Schritt 5: Behandeln Sie Rendering-Warnungen
 
-يمكن استرجاع تحذيرات التجسيد التي تم إنشاؤها عند حفظ المستند باستخدام معالج التحذير المخصص. في هذا المثال ، نقوم ببساطة بطباعة وصف كل تحذير.
+Beim Speichern des Dokuments generierte Rendering-Warnungen können mit dem benutzerdefinierten Warnungshandler abgerufen werden. In diesem Beispiel drucken wir einfach die Beschreibung jeder Warnung aus.
 
 ```csharp
 foreach(WarningInfo warningInfo in callback.mWarnings)
@@ -64,15 +64,15 @@ foreach(WarningInfo warningInfo in callback.mWarnings)
 }
 ```
 
-هذا كل شئ ! لقد نجحت في معالجة تحذيرات العرض عند تحويل مستند
+Das ist alles ! Sie haben die Rendering-Warnungen beim Konvertieren eines Dokuments erfolgreich behoben
 
-  إلى PDF باستخدام Aspose.Words for .NET.
+  in PDF mit Aspose.Words für .NET.
 
-### نموذج التعليمات البرمجية المصدر لتحذيرات عرض PDF باستخدام Aspose.Words for .NET
+### Beispielquellcode für PDF-Rendering-Warnungen mit Aspose.Words für .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "WMF with image.docx");
 
@@ -83,14 +83,14 @@ foreach(WarningInfo warningInfo in callback.mWarnings)
 
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 
-	// إذا تعذر على Aspose.Words عرض بعض سجلات ملف التعريف بشكل صحيح
-	// إلى الرسومات المتجهة ، ثم يقوم Aspose.Words بجعل ملف التعريف هذا إلى صورة نقطية.
+	// Wenn Aspose.Words einige der Metadateidatensätze nicht korrekt rendern kann
+	// in Vektorgrafiken umwandelt, rendert Aspose.Words diese Metadatei in eine Bitmap.
 	HandleDocumentWarnings callback = new HandleDocumentWarnings();
 	doc.WarningCallback = callback;
 
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfRenderWarnings.pdf", saveOptions);
 
-	// أثناء حفظ الملف بنجاح ، يتم هنا تجميع تحذيرات العرض التي حدثت أثناء الحفظ.
+	// Während die Datei erfolgreich gespeichert wird, werden hier Rendering-Warnungen gesammelt, die während des Speicherns aufgetreten sind.
 	foreach (WarningInfo warningInfo in callback.mWarnings)
 	{
 		Console.WriteLine(warningInfo.Description);

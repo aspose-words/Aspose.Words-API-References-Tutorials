@@ -1,36 +1,36 @@
 ---
-title: تصدير الإشارات المرجعية في رأس تذييل الصفحة
-linktitle: تصدير الإشارات المرجعية في رأس تذييل الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتصدير الإشارات المرجعية في الرأس والتذييل باستخدام Aspose.Words for .NET.
+title: Kopf- und Fußzeilen-Lesezeichen exportieren
+linktitle: Kopf- und Fußzeilen-Lesezeichen exportieren
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Exportieren von Kopf- und Fußzeilen-Lesezeichen mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة إشارات مرجعية لرأس وتذييل الصفحة مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تصدير الإشارات المرجعية من رؤوس الصفحات وتذييلاتها في المستند وإنشاء ملف PDF بالإشارات المرجعية المناسبة.
+Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zur Verwendung der Funktion „Kopf- und Fußzeilen-Lesezeichen exportieren“ mit Aspose.Words für .NET. Wir werden jeden Teil des Codes im Detail erklären. Am Ende dieses Tutorials erfahren Sie, wie Sie Lesezeichen aus Kopf- und Fußzeilen eines Dokuments exportieren und ein PDF mit den entsprechenden Lesezeichen erstellen.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert und konfiguriert haben. Die Bibliothek und Installationsanweisungen finden Sie auf der Aspose-Website.
 
-## الخطوة 1: تحديد دليل المستند
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Zunächst müssen Sie den Pfad zu dem Verzeichnis definieren, in dem sich Ihre Dokumente befinden. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Schritt 2: Laden Sie das Dokument hoch
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن الوثيقة تسمى "Bookmarks in headers and footers.docx" وهي موجودة في دليل المستندات المحدد.
+Als nächstes müssen wir das Dokument laden, das wir verarbeiten möchten. In diesem Beispiel gehen wir davon aus, dass das Dokument „Lesezeichen in Kopf- und Fußzeilen.docx“ heißt und sich im angegebenen Dokumentenverzeichnis befindet.
 
 ```csharp
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF
+## Schritt 3: Konfigurieren Sie die Optionen zum Speichern als PDF
 
- لتصدير الإشارات المرجعية للرأس والتذييل ، نحتاج إلى تكوين ملف`PdfSaveOptions` هدف. في هذا المثال ، قمنا بتعيين مستوى مخطط الإشارة المرجعية الافتراضي على 1 ووضع تصدير الإشارة المرجعية للرأس والتذييل على "الأول".
+ Um Kopf- und Fußzeilen-Lesezeichen zu exportieren, müssen wir die konfigurieren`PdfSaveOptions` Objekt. In diesem Beispiel setzen wir die Standard-Lesezeichen-Gliederungsebene auf 1 und den Exportmodus für Kopf- und Fußzeilen-Lesezeichen auf „Erste“.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,21 +38,21 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## الخطوة 4: احفظ المستند كملف PDF مع الإشارات المرجعية للرؤوس والتذييلات
+## Schritt 4: Speichern Sie das Dokument als PDF mit Lesezeichen für Kopf- und Fußzeilen
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Schließlich können wir das Dokument mit den zuvor konfigurierten Speicheroptionen im PDF-Format speichern.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تصدير إشارات مرجعية للرأس والتذييل من مستند وإنشاء ملف PDF مع الإشارات المرجعية المناسبة باستخدام Aspose.Words for .NET.
+Das ist alles ! Sie haben erfolgreich Kopf- und Fußzeilen-Lesezeichen aus einem Dokument exportiert und mit Aspose.Words für .NET eine PDF-Datei mit den entsprechenden Lesezeichen generiert.
 
-### عينة من التعليمات البرمجية المصدر لتصدير الإشارات المرجعية في الرأس والتذييل باستخدام Aspose.Words for .NET
+### Beispielquellcode zum Exportieren von Kopf- und Fußzeilen-Lesezeichen mit Aspose.Words für .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 

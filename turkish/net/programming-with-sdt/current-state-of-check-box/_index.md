@@ -1,30 +1,30 @@
 ---
-title: خانة الاختيار الحالية
-linktitle: خانة الاختيار الحالية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد الحالة الحالية لعنصر تحكم محتوى خانة الاختيار وتعيينه في مستند Word باستخدام Aspose.Words for .NET.
+title: Onay Kutusunun Mevcut Durumu
+linktitle: Onay Kutusunun Mevcut Durumu
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki bir onay kutusu içerik kontrolünün mevcut durumunu nasıl alacağınızı ve ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/current-state-of-check-box/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استرداد الحالة الحالية لعنصر تحكم محتوى مربع الاختيار وتعيينه في مستند Word باستخدام Aspose.Words for .NET. يمكنك تحديد أو إلغاء تحديد خانة الاختيار بناءً على حالتها الحالية.
+Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesindeki bir onay kutusu içerik kontrolünün mevcut durumunun nasıl alınacağını ve ayarlanacağını açıklar. Geçerli durumuna göre onay kutusunu işaretleyebilir veya işaretini kaldırabilirsiniz.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Önkoşullar
+Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words for .NET kitaplığı yüklendi.
+- Temel C# bilgisi ve Word belgeleriyle çalışma.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## 1. Adım: Belge Dizinini kurun
+ Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند واسترجع عنصر التحكم في محتوى خانة الاختيار
- قم بتحميل مستند Word باستخدام ملف`Document` مُنشئ ، تمرير المسار إلى المستند كمعامل. ثم قم باسترداد عنصر التحكم في محتوى خانة الاختيار المطلوب من المستند. في هذا المثال ، نفترض أن خانة الاختيار هي علامة المستند المهيكلة الأولى في المستند.
+## 2. Adım: Belgeyi Yükleyin ve Onay Kutusu İçerik Denetimini Alın
+ kullanarak Word belgesini yükleyin.`Document` yapıcı, belgenin yolunu bir parametre olarak iletir. Ardından, istenen onay kutusu içerik kontrolünü belgeden alın. Bu örnekte, onay kutusunun belgedeki ilk yapılandırılmış belge etiketi olduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -32,29 +32,29 @@ StructuredDocumentTag sdtCheckBox =
 	(StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
-## الخطوة 3: حدد أو ألغِ تحديد خانة الاختيار بناءً على حالتها الحالية
- تحقق مما إذا كانت علامة المستند المهيكلة المستردة من النوع`SdtType.Checkbox` . إذا كان الأمر كذلك ، فاضبط ملف`Checked` ملكية التحكم في المحتوى إلى`true` لتحديد المربع. خلاف ذلك ، يمكنك تركه دون رادع.
+## 3. Adım: Mevcut Durumuna Göre Onay Kutusunu İşaretleyin veya İşaretini Kaldırın
+ Alınan yapılandırılmış belge etiketinin türünde olup olmadığını kontrol edin`SdtType.Checkbox` . Eğer öyleyse,`Checked` içerik kontrolünün özelliği`true` kutuyu işaretlemek için Aksi takdirde, işaretlemeden bırakabilirsiniz.
 
 ```csharp
 if (sdtCheckBox.SdtType == SdtType.Checkbox)
 	sdtCheckBox.Checked = true;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند المعدل إلى الدليل المحدد باستخدام امتداد`Save`طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.CurrentStateOfCheckBox.docx".
+## 4. Adım: Belgeyi Kaydedin
+ Değiştirilen belgeyi belirtilen dizine kaydedin.`Save`yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.CurrentStateOfCheckBox.docx" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 ```
 
-### مثال على شفرة المصدر لـ Current State Of Check Box باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Current State Of Check Box için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");
-	// احصل على أول عنصر تحكم في المحتوى من المستند.
+	// Belgeden ilk içerik denetimini alın.
 	StructuredDocumentTag sdtCheckBox =
 		(StructuredDocumentTag) doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 	if (sdtCheckBox.SdtType == SdtType.Checkbox)
@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 	doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 ```
 
-هذا كل شيء! لقد نجحت في استرداد الحالة الحالية لعنصر تحكم محتوى مربع الاختيار في مستند Word الخاص بك وتعيينه باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenizdeki bir onay kutusu içerik kontrolünü başarıyla aldınız ve mevcut durumunu ayarladınız.

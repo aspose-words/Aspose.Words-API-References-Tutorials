@@ -1,27 +1,27 @@
 ---
-title: قارن الخيارات
-linktitle: قارن الخيارات
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح كود مصدر C # لميزة مقارنة الخيارات مع Aspose.Words for .NET.
+title: Confronta le opzioni
+linktitle: Confronta le opzioni
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata per spiegare il codice sorgente C# della funzione Confronta opzioni con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/compare-documents/compare-options/
 ---
 
-في هذا البرنامج التعليمي ، سنشرح كيفية استخدام ميزة مقارنة الخيارات مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+In questo tutorial, spiegheremo come utilizzare la funzione Confronta opzioni con Aspose.Words per .NET. Segui i passaggi seguenti per comprendere il codice sorgente e applicare le modifiche.
 
-## الخطوة 1: مقارنة المستندات بالخيارات المخصصة
+## Passaggio 1: confronta i documenti con le opzioni personalizzate
 
- للبدء ، قم بتحميل وثيقتين للمقارنة. في هذا المثال ، سوف نستخدم الامتداد`Clone()` طريقة لإنشاء نسخة من المستند الأصلي. إليك الطريقة:
+ Per iniziare, carica due documenti da confrontare. In questo esempio, useremo il`Clone()` metodo per creare una copia del documento originale. Ecco come:
 
 ```csharp
 Document docA = new Document(MyDir + "Document.docx");
 Document docB = docA.Clone();
 ```
 
-## الخطوة 2: تكوين خيارات المقارنة
+## Passaggio 2: configurazione delle opzioni di confronto
 
-سنقوم الآن بتكوين خيارات المقارنة من خلال إنشاء ملف`CompareOptions` الكائن وتعيين الخصائص المختلفة حسب الحاجة. إليك الطريقة:
+Ora configureremo le opzioni di confronto creando un file`CompareOptions` oggetto e impostando le varie proprietà secondo necessità. Ecco come:
 
 ```csharp
 CompareOptions options = new CompareOptions
@@ -37,21 +37,21 @@ IgnoreFootnotes=true
 };
 ```
 
-## الخطوة 3: مقارنة المستندات بالخيارات المخصصة
+## Passaggio 3: confronta i documenti con le opzioni personalizzate
 
- سنستخدم الآن ملف`Compare()` طريقة تمرير الخيارات المخصصة لمقارنة الوثيقتين. ستحدد هذه الطريقة التغييرات في المستند الأصلي. إليك الطريقة:
+ Useremo ora il`Compare()` metodo passando le opzioni personalizzate per confrontare i due documenti. Questo metodo segnerà le modifiche nel documento originale. Ecco come:
 
 ```csharp
-// قارن المستندات بالخيارات المخصصة
+// Confronta documenti con opzioni personalizzate
 docA.Compare(docB, "user", DateTime.Now, options);
 
-// تحقق مما إذا كانت المستندات متساوية
+// Controlla se i documenti sono uguali
 Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal": "Documents are not equal");
 ```
 
-### مثال على كود المصدر لمقارنة الخيارات باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per Opzioni di confronto utilizzando Aspose.Words per .NET
 
-فيما يلي رمز المصدر الكامل لميزة مقارنة الخيارات مع Aspose.Words for .NET:
+Ecco il codice sorgente completo per la funzione Confronta opzioni con Aspose.Words per .NET:
 
 ```csharp
 
@@ -76,5 +76,5 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal": "Documents 
 
 ```
 
-باستخدام هذا الرمز ، يمكنك مقارنة مستندين باستخدام خيارات مخصصة لتجاهل عناصر محددة عند المقارنة مع Aspose.Words for .NET.
+Con questo codice puoi confrontare due documenti utilizzando opzioni personalizzate per ignorare elementi specifici durante il confronto con Aspose.Words per .NET.
 

@@ -1,42 +1,42 @@
 ---
-title: العمل مع الخطوط
-linktitle: العمل مع الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: توضح البرامج التعليمية كيفية تطبيق تنسيق الخط ، وتباعد أسطر الخطوط ، وتأثير DMLText ، وتمكين / تعطيل بديل الخط ، وإعدادات الخط الاحتياطي ، والحصول على قائمة بالخط المتاح في مستند Word باستخدام Aspose.Words for .NET
+title: Arbeiten mit Schriftarten
+linktitle: Arbeiten mit Schriftarten
+second_title: Aspose.Words für .NET API-Referenz
+description: In den Tutorials wird gezeigt, wie Sie mit Aspose.Words für .NET Schriftartformatierung, Schriftartenzeilenabstand, DMLText-Effekt anwenden, Schriftartenersetzung aktivieren/deaktivieren, Schriftarten-Fallback-Einstellungen aktivieren und eine Liste der verfügbaren Schriftarten in Word-Dokumenten abrufen
 type: docs
 weight: 420
 url: /de/net/working-with-fonts/
 ---
 
-ترشدك دروس العمل باستخدام الخطوط إلى جوانب مختلفة من العمل مع الخطوط ، مما يسمح لك بإجراء عمليات مثل تغيير تنسيق الخط ، وتحميل الخطوط من أدلة معينة ، وإدارة الخطوط البديلة والمزيد.
+Tutorials zum Arbeiten mit Schriftarten führen Sie durch verschiedene Aspekte der Arbeit mit Schriftarten und ermöglichen Ihnen die Durchführung von Vorgängen wie das Ändern der Schriftartformatierung, das Laden von Schriftarten aus bestimmten Verzeichnissen, die Verwaltung von Ersatzschriftarten und mehr.
 
-توفر لك البرامج التعليمية شرحًا تفصيليًا خطوة بخطوة لكل ميزة ، جنبًا إلى جنب مع كود مصدر لغة C # لتوضيح المفاهيم. ستتعلم كيفية استخدام الفئات والطرق من Aspose.Words Library for .NET لأداء مهام محددة متعلقة بالخط في مستندات Word الخاصة بك.
+Die Tutorials bieten Ihnen detaillierte Schritt-für-Schritt-Erklärungen für jede Funktion sowie C#-Quellcode zur Veranschaulichung der Konzepte. Sie erfahren, wie Sie Klassen und Methoden aus der Aspose.Words-Bibliothek für .NET verwenden, um bestimmte schriftartbezogene Aufgaben in Ihren Word-Dokumenten auszuführen.
 
-سواء كنت ترغب في تنسيق النص باستخدام خطوط مختلفة ، أو تعيين قواعد استبدال الخطوط ، أو تحميل الخطوط من أدلة معينة ، أو تلقي إشعارات الخطوط ، فإن البرامج التعليمية "العمل مع الخطوط" ستزودك بالمعرفة اللازمة لإنجاز هذه المهام. بسهولة.
+Unabhängig davon, ob Sie Text mit unterschiedlichen Schriftarten formatieren, Regeln zum Ersetzen von Schriftarten festlegen, Schriftarten aus bestimmten Verzeichnissen laden oder Schriftartenbenachrichtigungen erhalten möchten, vermitteln Ihnen die Tutorials zum Thema „Arbeiten mit Schriftarten“ das nötige Wissen, um diese Aufgaben zu erfüllen. mit Leichtigkeit.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [تنسيق الخط](./font-formatting/) | في هذا البرنامج التعليمي ، تعرف على كيفية تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET. |
-| [احصل على تباعد أسطر الخط](./get-font-line-spacing/) | في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تباعد بين الخطوط في مستند Word باستخدام Aspose.Words for .NET. |
-| [تحقق من تأثير النص DrawingML](./check-drawingml-text-effect/) | في هذا البرنامج التعليمي ، تعرف على كيفية التحقق من تأثيرات نص DrawingML في مستند Word باستخدام Aspose.Words for .NET. |
-| [قم بتعيين تنسيق الخط](./set-font-formatting/) | تعرف على كيفية تعيين تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET وإنشاء مستندات جذابة. |
-| [قم بتعيين علامة توكيد الخط](./set-font-emphasis-mark/) | تعرف على كيفية تعيين نمط تأكيد الخط في مستند Word باستخدام Aspose.Words for .NET. |
-| [تعيين مجلدات الخطوط](./set-fonts-folders/) | دليل خطوة بخطوة لإعداد مجلدات الخطوط عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [قم بتمكين تعطيل استبدال الخط](./enable-disable-font-substitution/) | في هذا البرنامج التعليمي ، تعرف على كيفية تمكين أو تعطيل استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. |
-| [تعيين إعدادات الخط الاحتياطي](./set-font-fallback-settings/) | تعرف على كيفية تعيين إعدادات استبدال الخطوط في Aspose.Words for .NET وتخصيص استبدال الخط في مستندات Word. |
-| [قم بتحميل إعدادات Noto Fallback](./load-noto-fallback-settings/) | في هذا البرنامج التعليمي ، تعرف على كيفية تحميل Noto override parameters في مستند Word باستخدام Aspose.Words for .NET. |
-| [تعيين المثيل الافتراضي مجلدات الخطوط](./set-fonts-folders-default-instance/) | دليل خطوة بخطوة لتعيين مجلد الخط الافتراضي عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [تعيين مجلدات الخطوط متعددة المجلدات](./set-fonts-folders-multiple-folders/) | دليل خطوة بخطوة لتعيين مجلدات خطوط متعددة عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [تعيين نظام مجلدات الخطوط والمجلد المخصص](./set-fonts-folders-system-and-custom-folder/) | دليل خطوة بخطوة لإعداد النظام ومجلدات الخطوط المخصصة عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [تعيين مجلدات الخطوط ذات الأولوية](./set-fonts-folders-with-priority/) | دليل خطوة بخطوة لإعداد مجلدات الخطوط ذات الأولوية عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [تعيين مجلد خطوط النوع الحقيقي](./set-true-type-fonts-folder/) | دليل تفصيلي خطوة بخطوة لإعداد مجلد خطوط الكتابة الصحيحة عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [حدد الخط الافتراضي عند التقديم](./specify-default-font-when-rendering/) | دليل تفصيلي خطوة بخطوة لتحديد الخط الافتراضي عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [إعدادات الخط مع خيارات التحميل](./font-settings-with-load-options/) | في هذا البرنامج التعليمي ، تعرف على كيفية تحميل مستند Word بخيارات تحميل مخصصة وإعدادات الخط المقابلة.|
-| [تعيين مجلد الخطوط](./set-fonts-folder/) | تعرف على كيفية تعيين دليل الخطوط في Aspose.Words for .NET وتأكد من توفر الخطوط المستخدمة في مستنداتك. |
-| [المثيل الافتراضي لإعدادات الخط](./font-settings-default-instance/) | في هذا البرنامج التعليمي ، تعرف على كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET. |
-| [الحصول على قائمة الخطوط المتاحة](./get-list-of-available-fonts/) | في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words for .NET. |
-| [تلقي إخطارات الخطوط](./receive-notifications-of-fonts/) | تعرف على كيفية تلقي إشعارات الخطوط المفقودة أو المستبدلة عند استخدام Aspose.Words for .NET. |
-| [تلقي إشعار تحذير](./receive-warning-notification/) | تعرف على كيفية تلقي إشعار تحذير عند استخدام Aspose.Words for .NET وإدارة أية مشكلات أو تحذيرات في مستنداتك. |
-| [مثال مصدر خط Steam](./resource-steam-font-source-example/) | تعرف على كيفية استخدام مصدر خط تدفق الموارد لتحميل الخطوط المخصصة في Aspose.Words for .NET. |
-| [احصل على استبدال بدون لاحقات](./get-substitution-without-suffixes/) | في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تجاوزات غير لاحقة في مستند Word باستخدام Aspose.Words for .NET. |
+| [Schriftartformatierung](./font-formatting/) | In diesem Tutorial erfahren Sie, wie Sie die Schriftart in einem Word-Dokument mit Aspose.Words für .NET formatieren. |
+| [Holen Sie sich den Schriftzeilenabstand](./get-font-line-spacing/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET den Schriftzeilenabstand in einem Word-Dokument ermitteln. |
+| [Überprüfen Sie den DrawingML-Texteffekt](./check-drawingml-text-effect/) | In diesem Tutorial erfahren Sie, wie Sie DrawingML-Texteffekte in einem Word-Dokument mit Aspose.Words für .NET überprüfen. |
+| [Legen Sie die Schriftartformatierung fest](./set-font-formatting/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Schriftartformatierung in Word-Dokumenten festlegen und attraktive Dokumente erstellen. |
+| [Legen Sie die Markierung für die Schriftbetonung fest](./set-font-emphasis-mark/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET den Schriftbetonungsstil in einem Word-Dokument festlegen. |
+| [Legen Sie Schriftartenordner fest](./set-fonts-folders/) | Schritt-für-Schritt-Anleitung zum Festlegen von Schriftartenordnern beim Rendern eines Dokuments mit Aspose.Words für .NET. |
+| [Aktivieren Sie „Schriftartersetzung deaktivieren“.](./enable-disable-font-substitution/) | In diesem Tutorial erfahren Sie, wie Sie die Schriftartersetzung in einem Word-Dokument mit Aspose.Words für .NET aktivieren oder deaktivieren. |
+| [Legen Sie die Schriftart-Fallback-Einstellungen fest](./set-font-fallback-settings/) | Erfahren Sie, wie Sie die Schriftartersetzungseinstellungen in Aspose.Words für .NET festlegen und die Schriftartenersetzung in Ihren Word-Dokumenten anpassen. |
+| [Laden Sie die Noto-Fallback-Einstellungen](./load-noto-fallback-settings/) | In diesem Tutorial erfahren Sie, wie Sie Noto-Überschreibungsparameter mit Aspose.Words für .NET in ein Word-Dokument laden. |
+| [Legen Sie die Standardinstanz für Schriftartenordner fest](./set-fonts-folders-default-instance/) | Schritt-für-Schritt-Anleitung zum Festlegen des Standardschriftartordners beim Rendern eines Dokuments mit Aspose.Words für .NET. |
+| [Legen Sie mehrere Ordner für Schriftartenordner fest](./set-fonts-folders-multiple-folders/) | Schritt-für-Schritt-Anleitung zum Festlegen mehrerer Schriftartenordner beim Rendern eines Dokuments mit Aspose.Words für .NET. |
+| [Legen Sie das Schriftartenordnersystem und den benutzerdefinierten Ordner fest](./set-fonts-folders-system-and-custom-folder/) | Schritt-für-Schritt-Anleitung zum Festlegen von System- und benutzerdefinierten Schriftartenordnern beim Rendern eines Dokuments mit Aspose.Words für .NET. |
+| [Legen Sie Schriftartenordner mit Priorität fest](./set-fonts-folders-with-priority/) | Schritt-für-Schritt-Anleitung zum Festlegen von Schriftartenordnern mit Priorität beim Rendern eines Dokuments mit Aspose.Words für .NET. |
+| [Legen Sie den Ordner für True-Type-Schriftarten fest](./set-true-type-fonts-folder/) | Schritt-für-Schritt-Anleitung zum Festlegen des Ordners für True-Type-Schriftarten beim Rendern eines Dokuments mit Aspose.Words für .NET. |
+| [Geben Sie beim Rendern die Standardschriftart an](./specify-default-font-when-rendering/) | Schritt-für-Schritt-Anleitung zum Festlegen der Standardschriftart beim Rendern eines Dokuments mit Aspose.Words für .NET. |
+| [Schriftarteinstellungen mit Ladeoptionen](./font-settings-with-load-options/) | In diesem Tutorial erfahren Sie, wie Sie ein Word-Dokument mit benutzerdefinierten Ladeoptionen und entsprechenden Schriftarteinstellungen laden.|
+| [Legen Sie den Schriftartenordner fest](./set-fonts-folder/) | Erfahren Sie, wie Sie das Schriftartenverzeichnis in Aspose.Words für .NET festlegen und die Verfügbarkeit der in Ihren Dokumenten verwendeten Schriftarten sicherstellen. |
+| [Standardinstanz der Schriftarteinstellungen](./font-settings-default-instance/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Standardschriftarteinstellungen in einem Word-Dokument konfigurieren. |
+| [Liste der verfügbaren Schriftarten abrufen](./get-list-of-available-fonts/) | In diesem Tutorial erfahren Sie, wie Sie die Liste der in Aspose.Words für .NET verfügbaren Schriftarten abrufen. |
+| [Erhalten Sie Benachrichtigungen über Schriftarten](./receive-notifications-of-fonts/) | Erfahren Sie, wie Sie Benachrichtigungen über fehlende oder ersetzte Schriftarten erhalten, wenn Sie Aspose.Words für .NET verwenden. |
+| [Erhalten Sie eine Warnmeldung](./receive-warning-notification/) | Erfahren Sie, wie Sie bei der Verwendung von Aspose.Words für .NET eine Warnmeldung erhalten und alle Probleme oder Warnungen in Ihren Dokumenten verwalten. |
+| [Beispiel für eine Quelle einer Steam-Schriftart](./resource-steam-font-source-example/) | Erfahren Sie, wie Sie die Resource Stream Font Source verwenden, um benutzerdefinierte Schriftarten in Aspose.Words für .NET zu laden. |
+| [Erhalten Sie Substitution ohne Suffixe](./get-substitution-without-suffixes/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET suffixlose Überschreibungen in einem Word-Dokument erhalten. |

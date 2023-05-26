@@ -1,35 +1,35 @@
 ---
-title: دمج أفقي
-linktitle: دمج أفقي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية دمج الخلايا أفقيًا في جدول Word باستخدام Aspose.Words for .NET.
+title: Yatay Birleştirme
+linktitle: Yatay Birleştirme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word tablosundaki hücreleri yatay olarak nasıl birleştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/horizontal-merge/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية دمج الخلايا أفقيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من دمج الخلايا أفقيًا في جداول Word برمجيًا.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablodaki hücreleri yatay olarak birleştirmeyi öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word tablolarınızdaki hücreleri programlı olarak yatay olarak birleştirebileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع الجدول والخلايا ، نحتاج إلى إنشاء مستند جديد وتهيئة منشئ المستندات. اتبع هذه الخطوات:
+## Adım 2: Belgeyi oluşturma ve belge oluşturucuyu başlatma
+Tablo ve hücrelerle çalışmaya başlamak için yeni bir belge oluşturmamız ve belge oluşturucuyu başlatmamız gerekiyor. Bu adımları takip et:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وتهيئة منشئ المستند
+// Belgeyi oluşturun ve belge oluşturucuyu başlatın
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة 3: بناء الجدول مع الدمج الأفقي للخلايا
-بعد ذلك ، سنبني الجدول ونطبق دمج الخلايا الأفقي باستخدام الخصائص التي توفرها Aspose.Words لـ .NET. استخدم الكود التالي:
+## 3. Adım: Hücrelerin yatay birleştirilmesiyle tablonun oluşturulması
+Ardından, tabloyu oluşturacağız ve Aspose.Words for .NET tarafından sağlanan özellikleri kullanarak yatay hücre birleştirme uygulayacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
 builder. InsertCell();
@@ -37,7 +37,7 @@ builder.CellFormat.HorizontalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
 builder. InsertCell();
 builder.CellFormat.HorizontalMerge = CellMerge.Previous;
-// تم دمج هذه الخلية مع الخلية السابقة ويجب أن تكون فارغة.
+// Bu hücre öncekiyle birleştirilir ve boş olmalıdır.
 builder. EndRow();
 
 builder. InsertCell();
@@ -49,10 +49,10 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- هنا نستخدم منشئ المستندات لبناء الجدول وتعيين خصائص الدمج الأفقي للخلية. نحن نستخدم ال`HorizontalMerge` ممتلكات`CellFormat` لتحديد نوع الدمج الأفقي المراد تطبيقه على كل خلية. استخدام`CellMerge.First` نقوم بدمج الخلية الأولى مع الأخرى التالية ، أثناء استخدام`CellMerge.Previous` نقوم بدمج الخلية الحالية مع الخلية السابقة.`CellMerge.None` يشير إلى أنه لا ينبغي دمج الخلية.
+ Burada tabloyu oluşturmak ve hücre yatay birleştirme özelliklerini ayarlamak için belge oluşturucuyu kullanıyoruz. biz kullanıyoruz`HorizontalMerge` mülkiyeti`CellFormat` Her hücreye uygulanacak yatay birleştirme türünü belirtmek için nesne. kullanma`CellMerge.First` kullanırken ilk hücreyi sonrakiyle birleştiriyoruz`CellMerge.Previous` mevcut hücreyi önceki hücreyle birleştiriyoruz.`CellMerge.None` hücrenin birleştirilmemesi gerektiğini belirtir.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع دمج الخلايا أفقيًا. استخدم الكود التالي:
+## 4. Adım: Değiştirilen belgeyi kaydetme
+Son olarak, değiştirilen belgeyi hücreler yatay olarak birleştirilmiş olarak kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(data
@@ -60,12 +60,12 @@ doc.Save(data
 Dir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### عينة من التعليمات البرمجية المصدر للدمج الأفقي باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Yatay Birleştirme için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -74,7 +74,7 @@ Dir + "WorkingWithTables.HorizontalMerge.docx");
 	builder.CellFormat.HorizontalMerge = CellMerge.First;
 	builder.Write("Text in merged cells.");
 	builder.InsertCell();
-	// تم دمج هذه الخلية مع الخلية السابقة ويجب أن تكون فارغة.
+	// Bu hücre öncekiyle birleştirilir ve boş olmalıdır.
 	builder.CellFormat.HorizontalMerge = CellMerge.Previous;
 	builder.EndRow();
 	builder.InsertCell();
@@ -87,5 +87,5 @@ Dir + "WorkingWithTables.HorizontalMerge.docx");
 	doc.Save(dataDir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية دمج الخلايا أفقيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تطبيق دمج الخلايا الأفقية في جداول Word برمجيًا. تتيح لك هذه الميزة إنشاء تخطيطات جدول أكثر تعقيدًا وتنظيم بياناتك بشكل أفضل.
+## Çözüm
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablodaki hücreleri yatay olarak birleştirmeyi öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word tablolarınıza programlı olarak yatay hücre birleştirmeyi uygulayabilirsiniz. Bu özellik, daha karmaşık tablo düzenleri oluşturmanıza ve verilerinizi daha iyi düzenlemenize olanak tanır.

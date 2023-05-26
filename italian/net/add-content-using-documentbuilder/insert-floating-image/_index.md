@@ -1,29 +1,29 @@
 ---
-title: إدراج صورة عائمة
-linktitle: إدراج صورة عائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الصور العائمة في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Inserisci un'immagine mobile
+linktitle: Inserisci un'immagine mobile
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire immagini mobili nei documenti di Word utilizzando Aspose.Words per .NET. Guida passo dopo passo.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-floating-image/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج صورة عائمة في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إضافة صور مع خيارات تحديد الموضع والتفاف القابلة للتخصيص إلى مستنداتك.
+In questo esempio completo, imparerai come inserire un'immagine mobile in un documento di Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo i frammenti di codice C# necessari. Alla fine di questa guida, sarai in grado di aggiungere immagini con opzioni di posizionamento e wrapping personalizzabili ai tuoi documenti.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti prerequisiti:
+- Aspose.Words per la libreria .NET installata sul tuo sistema.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Passaggio 1: creare un nuovo documento e DocumentBuilder
+Per iniziare, crea un nuovo documento utilizzando la classe Document e inizializza un oggetto DocumentBuilder:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل صورة عائمة
-بعد ذلك ، استخدم طريقة InsertImage لفئة DocumentBuilder لإدراج صورة عائمة. قم بتوفير مسار ملف الصورة والموضع الأفقي والرأسي النسبي والعرض والارتفاع وخيارات الالتفاف كمعلمات:
+## Passaggio 2: inserisci un'immagine mobile
+Utilizzare quindi il metodo InsertImage della classe DocumentBuilder per inserire un'immagine mobile. Fornisci il percorso del file immagine, la posizione orizzontale e verticale relativa, la larghezza, l'altezza e le opzioni di avvolgimento come parametri:
 
 ```csharp
 builder.InsertImage(ImagesDir + "Transparent background logo.png",
@@ -36,16 +36,16 @@ builder.InsertImage(ImagesDir + "Transparent background logo.png",
 	WrapType.Square);
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الصورة العائمة ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Passaggio 3: salvare il documento
+Dopo aver inserito l'immagine mobile, salvare il documento in un file utilizzando il metodo Save della classe Document:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
 ```
 
-## مثال على كود المصدر لإدراج صورة عائمة باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لإدخال صورة عائمة باستخدام Aspose.Words for .NET:
-تعد الصور العائمة مفيدة لسيناريوهات مختلفة ، مثل إضافة الشعارات أو الرسوم التوضيحية أو العناصر الزخرفية التي يمكن وضعها بشكل مستقل عن نص المستند.
+## Esempio di codice sorgente per inserire un'immagine mobile utilizzando Aspose.Words per .NET
+Ecco il codice sorgente completo per l'inserimento di un'immagine mobile utilizzando Aspose.Words per .NET:
+Le immagini mobili sono utili per vari scenari, come l'aggiunta di loghi, illustrazioni o elementi decorativi che possono essere posizionati indipendentemente dal testo del documento.
 
 ```csharp
 
@@ -65,8 +65,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx
 	
 ```
 
-تذكر أن تقوم بضبط الكود وفقًا لمتطلباتك المحددة ، بما في ذلك مسار ملف الصورة وخيارات الموضع والالتفاف المطلوبة.
+Ricorda di regolare il codice in base ai tuoi requisiti specifici, incluso il percorso del file immagine e le opzioni di posizionamento e wrapping desiderate.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج صورة عائمة في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك بصور عائمة جذابة وقابلة للتخصيص.
+## Conclusione
+Congratulazioni! Hai imparato con successo come inserire un'immagine mobile in un documento di Word utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata e utilizzando il codice sorgente fornito, ora puoi migliorare i tuoi documenti con immagini mobili visivamente accattivanti e personalizzabili.
 

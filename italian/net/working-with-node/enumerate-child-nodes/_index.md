@@ -1,17 +1,17 @@
 ---
-title: تعداد العقد الفرعية
-linktitle: تعداد العقد الفرعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعداد العقد الفرعية في فقرة باستخدام Aspose.Words for .NET.
+title: Enumerare i nodi figlio
+linktitle: Enumerare i nodi figlio
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come enumerare i nodi figlio in un paragrafo con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-node/enumerate-child-nodes/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية تعداد العقد الفرعية باستخدام Aspose.Words for .NET.
+Ecco una guida passo passo per spiegare il codice sorgente C# di seguito che illustra come enumerare i nodi figlio utilizzando Aspose.Words per .NET.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Passaggio 1: importare i riferimenti necessari
+Prima di iniziare, assicurati di aver importato i riferimenti necessari per utilizzare Aspose.Words per .NET nel tuo progetto. Ciò include l'importazione della libreria Aspose.Words e l'aggiunta degli spazi dei nomi richiesti al file di origine.
 
 ```csharp
 using Aspose.Words;
@@ -19,33 +19,33 @@ using Aspose.Words.Nodes;
 using Aspose.Words.NodeTypes;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## Passaggio 2: creare un nuovo documento
+ In questo passaggio, creeremo un nuovo documento utilizzando il file`Document` classe.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: الوصول إلى الفقرة والعقد التابعة لها
- لتعداد العقد الفرعية للفقرة ، نحتاج أولاً إلى الوصول إلى الفقرة نفسها. استخدم ال`GetChild` الطريقة مع`Paragraph` نوع العقدة للحصول على الفقرة الأولى من المستند.
+## Passaggio 3: accedi al paragrafo e ai suoi nodi figlio
+ Per enumerare i nodi figlio di un paragrafo, dobbiamo prima accedere al paragrafo stesso. Usa il`GetChild` metodo con il`Paragraph` tipo di nodo per ottenere il primo paragrafo del documento.
 
 ```csharp
 Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
-بعد ذلك ، نسترجع مجموعة العقد الفرعية للفقرة باستخدام الامتداد`ChildNodes` ملكية.
+Successivamente, recuperiamo la raccolta dei nodi figlio del paragrafo utilizzando il file`ChildNodes` proprietà.
 
 ```csharp
 NodeCollection children = paragraph. ChildNodes;
 ```
 
-## الخطوة 4: تصفح العقد الفرعية
- الآن بعد أن أصبح لدينا مجموعة العقد الفرعية ، يمكننا المرور عبرها باستخدام ملف`foreach` حلقة. نتحقق من نوع كل عقدة فرعية ونجري عمليات محددة بناءً على النوع.
+## Passaggio 4: sfoglia i nodi figlio
+ Ora che abbiamo la raccolta di nodi figli, possiamo scorrerli usando a`foreach` ciclo continuo. Controlliamo il tipo di ciascun nodo figlio ed eseguiamo operazioni specifiche in base al tipo.
 
 ```csharp
 foreach (Node child in children)
 {
-     // يمكن أن تحتوي الفقرة على توابع من أنواع مختلفة مثل المسارات والأشكال وغيرها.
+     // Un paragrafo può contenere elementi secondari di tipi diversi come sequenze, forme e altri.
      if (child. NodeType == NodeType.Run)
      {
          Run run = (Run)child;
@@ -54,9 +54,9 @@ foreach (Node child in children)
 }
 ```
 
- في هذا المثال ، نتحقق مما إذا كانت العقدة الفرعية من النوع`Run` (على سبيل المثال جزء من النص). إذا كان الأمر كذلك ، نقوم بتحويل العقدة إلى`Run` وعرض النص باستخدام`run.Text`.
+ In questo esempio, stiamo controllando se il nodo figlio è di tipo`Run` (ad esempio un frammento di testo). In tal caso, convertiamo il nodo in`Run` e visualizzare il testo utilizzando`run.Text`.
 
-## مثال على شفرة المصدر لتعداد العقد الفرعية باستخدام Aspose.Words for .NET
+## Codice sorgente di esempio per l'enumerazione dei nodi figlio con Aspose.Words per .NET
 
 
 ```csharp
@@ -66,7 +66,7 @@ foreach (Node child in children)
 	NodeCollection children = paragraph.ChildNodes;
 	foreach (Node child in children)
 	{
-		// قد تحتوي الفقرة على أطفال من أنواع مختلفة مثل الأشواط والأشكال وغيرها.
+		// Un paragrafo può contenere figli di vari tipi come sequenze, forme e altri.
 		if (child.NodeType == NodeType.Run)
 		{
 			Run run = (Run) child;
@@ -76,5 +76,5 @@ foreach (Node child in children)
             
 ```
 
-هذا مثال رمز كامل لتعداد العقد الفرعية للفقرة باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع
+Questo è un esempio di codice completo per enumerare i nodi figlio di un paragrafo con Aspose.Words per .NET. Assicurati di importare i riferimenti
 

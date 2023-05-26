@@ -1,21 +1,21 @@
 ---
-title: البرمجة باستخدام تنسيق الملف
-linktitle: البرمجة باستخدام تنسيق الملف
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على اكتشاف تنسيق الملف واكتشاف توقيعات المستندات والتحقق من المستند المشفر
+title: Fileformat ile Programlama
+linktitle: Fileformat ile Programlama
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, dosya formatını algılama, belge imzalarını algılama ve şifreli belgeyi doğrulamayı içerir
 type: docs
 weight: 1610
 url: /tr/net/programming-with-fileformat/
 ---
-تقدم دروس Aspose.Words for .NET التعليمية حول البرمجة بتنسيق ملف موردًا شاملاً للمطورين الراغبين في التعامل مع تنسيقات الملفات المختلفة والعمل معها في تطبيقاتهم. تغطي البرامج التعليمية جوانب مختلفة من البرمجة بتنسيقات ملفات ، بما في ذلك قراءة مستندات Word وكتابتها وتحويلها ومعالجتها.
+Dosya formatı ile programlama üzerine Aspose.Words for .NET öğreticileri, uygulamalarında farklı dosya formatlarını değiştirmek ve bunlarla çalışmak isteyen geliştiriciler için kapsamlı bir kaynak sunar. Öğreticiler, Word belgelerini okuma, yazma, dönüştürme ve değiştirme dahil olmak üzere dosya biçimleriyle programlamanın çeşitli yönlerini kapsar.
 
-ستتعلم في هذه البرامج التعليمية كيفية استخدام الميزات القوية لـ Aspose.Words for .NET لاستخراج البيانات من مستندات Word وإضافة عناصر مثل النص والصور والجداول وتنفيذ عمليات التخطيط. شكل وتخطيط متقدمان. ستتعلم أيضًا كيفية إدارة خصائص المستند ، مثل البيانات التعريفية والرؤوس والتذييلات والتعليقات.
+Bu eğitimlerde, Aspose.Words for .NET'in güçlü özelliklerini Word belgelerinden veri ayıklamak, metin, resim ve tablo gibi öğeler eklemek ve mizanpaj işlemlerini gerçekleştirmek için nasıl kullanacağınızı öğreneceksiniz. gelişmiş form ve düzen. Ayrıca meta veriler, üst bilgiler ve alt bilgiler ve yorumlar gibi belge özelliklerini yönetmeyi de öğreneceksiniz.
 
-سواء أكنت بحاجة إلى إنشاء تقارير أو إنشاء مستندات مخصصة أو أتمتة مهام مستندات Word أو تحويل المستندات بين تنسيقات مختلفة ، فإن برامج Aspose.Words for .NET التعليمية ستزودك بالمعرفة والمهارات اللازمة لتحقيق أهدافك التنموية.
+İster raporlar oluşturmanız, ister özel belgeler oluşturmanız, Word belge görevlerini otomatikleştirmeniz veya belgeleri farklı biçimler arasında dönüştürmeniz gereksin, Aspose.Words for .NET öğreticileri, geliştirme hedeflerinize ulaşmanız için size bilgi ve beceriler sağlayacaktır.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [كشف تنسيق الملف](./detect-file-format/) | دليل خطوة بخطوة لاكتشاف تنسيق ملف المستند باستخدام Aspose.Words for .NET. |
-| [كشف توقيعات الوثيقة](./detect-document-signatures/) | دليل تفصيلي خطوة بخطوة لاكتشاف التوقيعات الرقمية في مستند باستخدام Aspose.Words for .NET. |
-| [تحقق من المستند المشفر](./verify-encrypted-document/) | دليل تفصيلي خطوة بخطوة للتحقق من أن المستند مشفر باستخدام Aspose.Words for .NET. |
+| [Dosya Biçimini Algıla](./detect-file-format/) | Aspose.Words for .NET ile belge dosyası biçimini algılamak için adım adım kılavuz. |
+| [Belge İmzalarını Algıla](./detect-document-signatures/) | Aspose.Words for .NET ile bir belgedeki dijital imzaları algılamak için adım adım kılavuz. |
+| [Şifrelenmiş Belgeyi Doğrulayın](./verify-encrypted-document/) | Bir belgenin Aspose.Words for .NET ile şifrelenmiş olduğunu doğrulamak için adım adım kılavuz. |

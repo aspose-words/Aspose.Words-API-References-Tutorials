@@ -1,38 +1,38 @@
 ---
-title: احتواء تلقائي لعرض الصفحة
-linktitle: احتواء تلقائي لعرض الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ملاءمة جدول تلقائيًا لعرض الصفحة في مستند Word باستخدام Aspose.Words for .NET.
+title: Autopassa till sidbredd
+linktitle: Autopassa till sidbredd
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du automatiskt anpassar en tabell till sidbredd i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-tables/auto-fit-to-page-width/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words لـ .NET لملاءمة جدول تلقائيًا لعرض الصفحة في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من معالجة الجداول في مستندات Word برمجيًا.
+I den här handledningen kommer vi att lära oss hur man använder Aspose.Words för .NET för att automatiskt anpassa en tabell till sidbredd i ett Word-dokument. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna manipulera tabeller i Word-dokument programmatiskt.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Steg 1: Projektinställning
+1. Starta Visual Studio och skapa ett nytt C#-projekt.
+2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
-## الخطوة 2: إنشاء وتكوين المستند
-لبدء العمل مع الجدول ، نحتاج إلى إنشاء مستند وتكوين منشئ المستندات. اتبع هذه الخطوات:
+## Steg 2: Skapa och konfigurera dokumentet
+För att börja arbeta med tabellen måste vi skapa ett dokument och konfigurera dokumentgeneratorn. Följ dessa steg:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بإنشاء المستند ومُنشئ المستند
+//Skapa dokumentet och dokumentgeneratorn
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog.
 
-## الخطوة 3: إدخال الجدول وتكوينه
-بعد ذلك ، سنقوم بإدراج جدول في المستند بعرض يشغل نصف عرض الصفحة. استخدم الكود التالي:
+## Steg 3: Infoga och konfigurera tabellen
+Därefter infogar vi en tabell i dokumentet med en bredd som tar upp halva sidans bredd. Använd följande kod:
 
 ```csharp
-// أدخل الجدول وقم بتكوين عرضه
+// Sätt in tabellen och konfigurera dess bredd
 Table table = builder. StartTable();
 builder. InsertCell();
 table. PreferredWidth = PreferredWidth. FromPercent(50);
@@ -43,27 +43,27 @@ builder. InsertCell();
 builder.Writeln("Cell #3");
 ```
 
-هنا نستخدم أداة إنشاء المستندات لبدء إنشاء الجدول وإدراج الخلايا وتعيين العرض المفضل للجدول على 50٪ من عرض الصفحة. ثم نضيف نصًا في كل خلية.
+Här använder vi dokumentbyggaren för att börja skapa tabellen, infoga celler och ställa in den föredragna bredden på tabellen till 50 % av sidbredden. Sedan lägger vi till text i varje cell.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تعديل الجدول حسب عرض الصفحة. استخدم الكود التالي:
+## Steg 4: Spara det ändrade dokumentet
+Slutligen måste vi spara det ändrade dokumentet med tabellen anpassad till sidans bredd. Använd följande kod:
 
 ```csharp
-// احفظ المستند المعدل
+// Spara det ändrade dokumentet
 doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
   
-### عينة من التعليمات البرمجية المصدر لـ Auto Fit To Page Width باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Autopassa till sidabredd med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// قم بإدراج جدول بعرض يشغل نصف عرض الصفحة.
+	// Infoga en tabell med en bredd som tar upp halva sidbredden.
 	Table table = builder.StartTable();
 	builder.InsertCell();
 	table.PreferredWidth = PreferredWidth.FromPercent(50);
@@ -75,5 +75,5 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 	doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية ملاءمة جدول لعرض الصفحة تلقائيًا في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك معالجة الجداول في مستندات Word برمجيًا. تتيح لك هذه الميزة تكييف عرض الجدول ديناميكيًا وفقًا للصفحة ، وبالتالي تقديم مستند احترافي وجذاب بصريًا.
+## Slutsats
+den här handledningen lärde vi oss hur man automatiskt anpassar en tabell till sidbredd i ett Word-dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide och implementera den medföljande C#-koden kan du manipulera tabeller i dina Word-dokument programmatiskt. Denna funktion gör att du dynamiskt kan anpassa tabellens bredd efter sidan, vilket ger ett professionellt och visuellt tilltalande dokument.

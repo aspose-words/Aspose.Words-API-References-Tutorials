@@ -1,20 +1,20 @@
 ---
-title: قائمة إعادة التشغيل في كل قسم
-linktitle: قائمة إعادة التشغيل في كل قسم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words for .NET.
+title: Riavvia l'elenco in ogni sezione
+linktitle: Riavvia l'elenco in ogni sezione
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come reimpostare un elenco numerato in ogni sezione in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-list/restart-list-at-each-section/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In questo tutorial passo passo, ti mostreremo come reimpostare un elenco numerato in ogni sezione in un documento di Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria dal sito ufficiale.
 
-## الخطوة 1: إنشاء المستند والقائمة
+## Passaggio 1: creazione del documento e dell'elenco
 
-أولاً ، أنشئ مستندًا جديدًا وأضف قائمة رقمية افتراضية:
+Innanzitutto, crea un nuovo documento e aggiungi un elenco numerato predefinito:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -26,9 +26,9 @@ List list = doc.Lists[0];
 list. IsRestartAtEachSection = true;
 ```
 
-## الخطوة 2: إضافة عناصر إلى القائمة
+## Passaggio 2: aggiunta di elementi all'elenco
 
- ثم استخدم ملف`DocumentBuilder` لإضافة عناصر إلى القائمة. يمكنك استخدام حلقة لإضافة عناصر متعددة إلى القائمة:
+ Quindi usa a`DocumentBuilder` per aggiungere elementi all'elenco. Puoi utilizzare un ciclo per aggiungere più elementi all'elenco:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -43,11 +43,11 @@ for (int i = 1; i < 45; i++)
 }
 ```
 
-في هذا المثال ، نقوم بإدراج فاصل مقطعي بعد عنصر القائمة الخامس عشر لتوضيح إعادة الترقيم.
+In questo esempio, stiamo inserendo un'interruzione di sezione dopo il 15° elemento dell'elenco per illustrare la rinumerazione.
 
-## الخطوة 3: احفظ المستند المعدل
+## Passaggio 3: salvare il documento modificato
 
-أخيرًا ، احفظ المستند المعدل:
+Infine, salva il documento modificato:
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
@@ -55,9 +55,9 @@ OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.I
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-لذا ! لقد نجحت في إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words for .NET.
+COSÌ ! Hai reimpostato correttamente un elenco numerato in ogni sezione in un documento di Word utilizzando Aspose.Words per .NET.
 
-### مثال على كود المصدر لإعادة تعيين القائمة في كل قسم
+### Esempio di codice sorgente per reimpostare l'elenco in ogni sezione
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -85,4 +85,4 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.

@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM
-linktitle: أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل كتلة عنوان دمج المراسلات في مستندات Word باستخدام Aspose.Words for .NET.
+title: 使用 DOM 插入邮件合并地址块字段
+linktitle: 使用 DOM 插入邮件合并地址块字段
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将邮件合并地址块字段插入到您的 Word 文档中。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/insert-mail-merge-address-block-field-using-dom/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج حقل كتلة عنوان دمج المراسلات" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+这是一个分步指南，用于解释下面的 C# 源代码，它使用 Aspose.Words for .NET 的“插入邮件合并地址块字段”功能。确保仔细执行每个步骤以获得所需的结果。
 
-## الخطوة 1: إعداد دليل المستند
+## 第 1 步：文档目录设置
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+在提供的代码中，您必须指定文档的目录。将值“YOUR DOCUMENT DIRECTORY”替换为您的文档目录的适当路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## 第 2 步：创建文档和 DocumentBuilder
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+我们首先创建一个新文档并初始化一个 DocumentBuilder。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تحريك المؤشر إلى الفقرة
+## 第三步：移动光标到段落
 
- نحن نستخدم برنامج DocumentBuilder`MoveTo()` طريقة لتحريك المؤشر إلى الفقرة حيث نريد إدراج حقل كتلة عنوان دمج المراسلات.
+我们使用 DocumentBuilder 的`MoveTo()`方法将光标移动到我们要插入邮件合并地址块字段的段落。
 
 ```csharp
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 builder. MoveTo(para);
 ```
 
-## الخطوة 4: إدراج حقل كتلة عنوان دمج المراسلات
+## 第 4 步：插入邮件合并地址块字段
 
- نحن نستخدم برنامج DocumentBuilder`InsertField()` طريقة لإدراج حقل كتلة عنوان دمج المراسلات في الفقرة.
+我们使用 DocumentBuilder 的`InsertField()`将邮件合并地址块字段插入段落的方法。
 
 ```csharp
 FieldAddressBlock field = (FieldAddressBlock)builder.InsertField(FieldType.FieldAddressBlock, false);
 ```
 
-نقوم بعد ذلك بتكوين خصائص حقل كتلة العنوان لتحديد الخيارات المناسبة ، مثل تضمين اسم البلد / المنطقة ، وتنسيق العنوان وفقًا للبلد / المنطقة ، وأسماء البلد / المنطقة المستبعدة ، وتنسيق الاسم والعنوان ، ومعرف اللغة.
+然后我们配置地址块字段的属性，指定适当的选项，例如包括国家/地区名称、根据国家/地区格式化地址、排除的国家/地区名称、名称和地址格式以及语言标识符。
 
 ```csharp
 field.IncludeCountryOrRegionName = "1";
@@ -54,13 +54,13 @@ field.NameAndAddressFormat = "Test3";
 field.LanguageId = "Test 4";
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+最后，我们称`Update()`更新字段的方法。
 
 ```csharp
 field. Update();
 ```
 
-### نموذج لشفرة المصدر لإدخال حقل كتلة عنوان دمج المراسلات مع Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 插入邮件合并地址块字段的示例源代码
 
 ```csharp
 Document doc = new Document();
@@ -70,24 +70,24 @@ Paragraph para = (Paragraph) doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
 builder. MoveTo(para);
 
-// نريد إدراج كتلة عنوان لدمج البريد مثل هذا:
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3 \\ l \ "Test 4 \"}
+//我们想像这样插入一个邮件合并地址块：
+// { 地址块 \\c 1 \\d \\e Test2 \\f Test3 \\l \"测试 4\" }
 
 FieldAddressBlock field = (FieldAddressBlock) builder.InsertField(FieldType.FieldAddressBlock, false);
 
-// {ADDRESSBLOCK \\ c 1 "}
+// { 地址块 \\c 1" }
 field.IncludeCountryOrRegionName = "1";
 
-// {ADDRESSBLOCK \\ c 1 \\ d "}
+// { 地址块 \\c 1 \\d" }
 field.FormatAddressOnCountryOrRegion = true;
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2}
+// { 地址块 \\c 1 \\d \\e Test2 }
 field.ExcludedCountryOrRegionName = "Test2";
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3}
+// { 地址块 \\c 1 \\d \\e Test2 \\f Test3 }
 field.NameAndAddressFormat = "Test3";
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3 \\ l \ "Test 4 \"}
+// { 地址块 \\c 1 \\d \\e Test2 \\f Test3 \\l \"测试 4\" }
 field.LanguageId = "Test 4";
 
 field. Update();

@@ -1,19 +1,19 @@
 ---
-title: أعد تشغيل رقم القائمة
-linktitle: أعد تشغيل رقم القائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إعادة تعيين رقم قائمة في مستند Word باستخدام Aspose.Words for .NET.
+title: Liste Numarasını Yeniden Başlat
+linktitle: Liste Numarasını Yeniden Başlat
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesindeki liste numarasını nasıl sıfırlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-list/restart-list-number/
 ---
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية إعادة تعيين رقم قائمة في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Bu adım adım öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki liste numarasını nasıl sıfırlayacağınızı göstereceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinize nasıl uygulayacağınızı göstereceğiz.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kütüphaneyi resmi siteden indirip yükleyin.
 
-## الخطوة 1: إنشاء مُنشئ المستند والمستند
+## 1. Adım: Belge ve Belge Oluşturucuyu Oluşturma
 
-أولاً ، قم بإنشاء مستند جديد ومولد المستندات المرتبط به:
+İlk olarak, yeni bir belge ve ilişkili bir belge oluşturucu oluşturun:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +21,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: إنشاء وتخصيص القائمة الأولى
+## 2. Adım: İlk Listeyi Oluşturma ve Özelleştirme
 
-بعد ذلك ، قم بإنشاء قائمة بناءً على قالب موجود ، ثم قم بتخصيص مستوياته:
+Ardından, mevcut bir şablonu temel alan bir liste oluşturun ve ardından düzeylerini özelleştirin:
 
 ```csharp
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
@@ -31,9 +31,9 @@ list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
 ```
 
-## الخطوة 3: إضافة عناصر إلى القائمة الأولى
+## 3. Adım: İlk listeye öğe ekleme
 
-استخدم منشئ المستندات لإضافة عناصر إلى القائمة الأولى وإزالة أرقام القائمة:
+İlk listeye öğe eklemek ve liste numaralarını kaldırmak için belge oluşturucuyu kullanın:
 
 ```csharp
 builder.Writeln("List 1 starts below:");
@@ -43,20 +43,20 @@ builder. Writen("Element 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## الخطوة 4: إنشاء وتخصيص القائمة الثانية
+## 4. Adım: İkinci Listeyi Oluşturma ve Özelleştirme
 
-لإعادة استخدام القائمة الأولى عن طريق إعادة تعيين الرقم ، قم بإنشاء نسخة من تخطيط القائمة الأصلي:
+Numarayı sıfırlayarak ilk listeyi yeniden kullanmak için orijinal liste düzeninin bir kopyasını oluşturun:
 
 ```csharp
 List list2 = doc.Lists.AddCopy(list1);
 list2.ListLevels[0].StartAt = 10;
 ```
 
-يمكنك أيضًا إجراء تغييرات إضافية على القائمة الثانية إذا لزم الأمر.
+Gerekirse ikinci listede ek değişiklikler de yapabilirsiniz.
 
-## الخطوة 5: إضافة عناصر إلى القائمة الثانية
+## Adım 5: İkinci listeye öğe ekleme
 
-استخدم منشئ المستندات مرة أخرى لإضافة عناصر إلى القائمة الثانية وإزالة أرقام القائمة:
+İkinci listeye öğe eklemek ve liste numaralarını kaldırmak için belge oluşturucuyu tekrar kullanın:
 
 ```csharp
 builder.Writeln("List 2 starts below:");
@@ -66,24 +66,24 @@ builder. Writen("Element 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## الخطوة 6: احفظ المستند المعدل
+## 6. Adım: Değiştirilen belgeyi kaydedin
 
-أخيرًا ، احفظ المستند المعدل:
+Son olarak, değiştirilen belgeyi kaydedin:
 
 ```csharp
 builder.Document.Save(dataDir + "ResetListNumber.docx");
 ```
 
-لذا ! لقد نجحت في إعادة تعيين رقم قائمة في مستند Word باستخدام Aspose.Words for .NET.
+Bu yüzden ! Aspose.Words for .NET kullanarak bir Word belgesindeki liste numarasını başarıyla sıfırladınız.
 
-### نموذج التعليمات البرمجية المصدر لإعادة تعيين رقم القائمة
+### Liste Numarası Sıfırlama için Örnek Kaynak Kodu
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة تستند إلى قالب.
+// Bir şablona dayalı bir liste oluşturun.
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
 list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
@@ -94,10 +94,10 @@ builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
 
-// لإعادة استخدام القائمة الأولى ، نحتاج إلى إعادة تشغيل الترقيم عن طريق إنشاء نسخة من تنسيق القائمة الأصلي.
+// İlk listeyi yeniden kullanmak için orijinal liste biçimlendirmesinin bir kopyasını oluşturarak numaralandırmayı yeniden başlatmamız gerekiyor.
 List list2 = doc.Lists.AddCopy(list1);
 
-// يمكننا تعديل القائمة الجديدة بأي طريقة ، بما في ذلك تعيين رقم بدء جديد.
+// Yeni bir başlangıç numarası belirlemek dahil, yeni listeyi herhangi bir şekilde değiştirebiliriz.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");

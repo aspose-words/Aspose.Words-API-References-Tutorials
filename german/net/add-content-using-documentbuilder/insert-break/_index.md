@@ -1,29 +1,29 @@
 ---
-title: أدخل فاصل
-linktitle: أدخل فاصل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج فواصل الصفحات في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Pause einfügen
+linktitle: Pause einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Seitenumbrüche in Word-Dokumente einfügen. Schritt für Schritt Anleitung.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/insert-break/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج فواصل الصفحات في مستند Word باستخدام طريقة InsertBreak في Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من التحكم في فواصل الصفحات داخل المستند الخاص بك.
+In diesem umfassenden Beispiel erfahren Sie, wie Sie mithilfe der InsertBreak-Methode in Aspose.Words für .NET Seitenumbrüche in ein Word-Dokument einfügen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieses Handbuchs werden Sie in der Lage sein, Seitenumbrüche in Ihrem Dokument zu steuern.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Schritt 1: Erstellen Sie ein neues Dokument und einen neuen DocumentBuilder
+Erstellen Sie zunächst ein neues Dokument mit der Document-Klasse und initialisieren Sie ein DocumentBuilder-Objekt:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل المحتوى وفواصل الصفحات
-بعد ذلك ، استخدم طريقة Writeln لفئة DocumentBuilder لإضافة محتوى إلى المستند. لإدراج فاصل صفحات ، استخدم الأسلوب InsertBreak مع المعلمة BreakType.PageBreak:
+## Schritt 2: Inhalt und Seitenumbrüche einfügen
+Als nächstes verwenden Sie die Writeln-Methode der DocumentBuilder-Klasse, um dem Dokument Inhalte hinzuzufügen. Um einen Seitenumbruch einzufügen, verwenden Sie die Methode InsertBreak mit dem Parameter BreakType.PageBreak:
 
 ```csharp
 builder.Writeln("This is page 1.");
@@ -35,15 +35,15 @@ builder.InsertBreak(BreakType.PageBreak);
 builder.Writeln("This is page 3.");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج المحتوى وفواصل الصفحات ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Schritt 3: Speichern Sie das Dokument
+Nachdem Sie den Inhalt und die Seitenumbrüche eingefügt haben, speichern Sie das Dokument mit der Save-Methode der Document-Klasse in einer Datei:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-### مثال على كود المصدر لإدراج استراحة باستخدام Aspose.Words for .NET
-فيما يلي شفرة المصدر الكاملة لإدخال فواصل الصفحات باستخدام Aspose.Words for .NET:
+### Beispielquellcode für Insert Break mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode zum Einfügen von Seitenumbrüchen mit Aspose.Words für .NET:
 
 ```csharp
 
@@ -62,8 +62,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 			
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Denken Sie daran, den Code an Ihre spezifischen Anforderungen anzupassen und ihn bei Bedarf um zusätzliche Funktionen zu erweitern.
 
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج فواصل الصفحات في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن التحكم في ترقيم الصفحات وتخطيط المستند عن طريق إدراج فواصل الصفحات في المواضع المطلوبة.
+## Abschluss
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET Seitenumbrüche in ein Word-Dokument einfügen. Wenn Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie nun die Paginierung und das Layout Ihres Dokuments steuern, indem Sie an den gewünschten Positionen Seitenumbrüche einfügen.

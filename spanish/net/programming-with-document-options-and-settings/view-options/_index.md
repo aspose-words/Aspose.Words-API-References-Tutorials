@@ -1,34 +1,34 @@
 ---
-title: عرض الخيارات
-linktitle: عرض الخيارات
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتكوين خيارات عرض المستند باستخدام Aspose.Words for .NET.
+title: Ver opciones
+linktitle: Ver opciones
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para configurar las opciones de visualización de documentos con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-document-options-and-settings/view-options/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتكوين خيارات العرض باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تخصيص وضع العرض ومستوى التكبير / التصغير في المستند.
+En este tutorial, lo guiaremos a través del código fuente de C# para configurar las opciones de visualización con Aspose.Words para .NET. Esta función le permite personalizar el modo de vista y el nivel de zoom en un documento.
 
-## الخطوة 1: إعداد المشروع
+## Paso 1: Configuración del proyecto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد تكوين خيارات العرض له. استخدم الكود التالي لتحميل المستند:
+En este paso cargaremos el documento de Word para el que queremos configurar las opciones de visualización. Use el siguiente código para cargar el documento:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Reemplazar`"YOUR DOCUMENTS DIRECTORY"` con la ruta real del directorio donde se encuentra su documento.
 
-## الخطوة 3: تكوين خيارات العرض
+## Paso 3: Configuración de las opciones de visualización
 
-الآن سنقوم بتكوين خيارات عرض المستند. استخدم الكود التالي لضبط وضع العرض ومستوى التكبير:
+Ahora configuraremos las opciones de visualización del documento. Use el siguiente código para configurar el modo de visualización y el nivel de zoom:
 
 ```csharp
 doc.ViewOptions.ViewType = ViewType.PageLayout;
@@ -37,13 +37,13 @@ doc.ViewOptions.ZoomPercent = 50;
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ViewOptions.docx");
 ```
 
-يضبط هذا الرمز وضع العرض على "PageLayout" ومستوى التكبير / التصغير إلى 50٪.
+Este código establece el modo de vista en "PageLayout" y el nivel de zoom en 50%.
 
-### مثال على شفرة المصدر لخيارات العرض باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Ver opciones usando Aspose.Words para .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 	
@@ -54,6 +54,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ViewOptions.docx");
     
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Asegúrese de especificar la ruta correcta del documento en el`dataDir` variable.
 
-لقد تعلمت الآن كيفية تكوين خيارات عرض المستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تخصيص عرض المستندات الخاصة بك.
+Ahora ha aprendido a configurar las opciones de visualización de documentos con Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede personalizar fácilmente la visualización de sus propios documentos.

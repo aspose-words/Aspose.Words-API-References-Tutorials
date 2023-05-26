@@ -1,29 +1,29 @@
 ---
-title: تطبيق الترخيص المقنن
-linktitle: تطبيق الترخيص المقنن
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق ترخيص محدود باستخدام Aspose.Words for .NET.
+title: Tarifeli Lisansı Uygula
+linktitle: Tarifeli Lisansı Uygula
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak ölçülü bir lisansı nasıl uygulayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/apply-license/apply-metered-license/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية تطبيق ترخيص مقنن باستخدام Aspose.Words for .NET. سنوجهك خلال العملية بإرشادات مفصلة خطوة بخطوة ونوفر مقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على تطبيق ترخيص مقنن والاستفادة من الميزات المتقدمة لـ Aspose. Words لاحتياجات معالجة المستندات الخاصة بك.
+Bu kapsamlı eğitimde, Aspose.Words for .NET kullanarak tarifeli bir lisansı nasıl uygulayacağınızı öğreneceksiniz. Ayrıntılı adım adım talimatlarla süreç boyunca size rehberlik edeceğiz ve gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, ölçülü bir lisans uygulayabilecek ve belge işleme ihtiyaçlarınız için Aspose.Words'ün gelişmiş özelliklerinden yararlanabileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
-- بيانات اعتماد صالحة للترخيص المحدود. 
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
+- Ölçülü lisanslama için geçerli kimlik bilgileri. 
 
-## الخطوة 1: استيراد مساحات الأسماء المطلوبة
-للبدء ، قم باستيراد مساحات الأسماء الضرورية في كود C # الخاص بك. تحتوي مساحات الأسماء هذه على الفئات والطرق اللازمة للعمل مع Aspose.Words.
+## 1. Adım: Gerekli Ad Alanlarını İçe Aktarın
+Başlamak için gerekli ad alanlarını C# kodunuza alın. Bu ad alanları, Aspose.Words ile çalışmak için gereken sınıfları ve yöntemleri içerir.
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 2: قم بتعيين مفتاح الترخيص المقنن
-بعد ذلك ، تحتاج إلى تعيين مفتاح الترخيص المقنن باستخدام طريقة SetMeteredKey للفئة Metered. قم بتوفير المفاتيح العامة والخاصة التي تم قياسها كمعلمات لهذه الطريقة.
+## 2. Adım: Ölçülü Lisans Anahtarını Ayarlayın
+Ardından, Metered sınıfının SetMeteredKey yöntemini kullanarak ölçülen lisans anahtarını ayarlamanız gerekir. Ölçülen ortak ve özel anahtarlarınızı bu yönteme parametre olarak sağlayın.
 
 ```csharp
 try
@@ -37,8 +37,8 @@ catch (Exception e)
 }
 ```
 
-## الخطوة 3: تحميل المستندات ومعالجتها
-الآن بعد أن قمت بتعيين الترخيص المقنن ، يمكنك تحميل المستندات ومعالجتها باستخدام Aspose.Words. في مقتطف الشفرة التالي ، نقوم بتحميل مستند باسم "Document.docx" ونجري عملية بسيطة لطباعة عدد الصفحات.
+## 3. Adım: Belgeleri Yükleyin ve İşleyin
+Artık ölçülü lisansı ayarladığınıza göre, belgeleri Aspose.Words kullanarak yükleyebilir ve işleyebilirsiniz. Aşağıdaki kod parçacığında "Document.docx" adlı bir belge yüklüyoruz ve sayfa sayısını yazdırmak gibi basit bir işlem gerçekleştiriyoruz.
 
 ```csharp
 try
@@ -52,8 +52,8 @@ catch (Exception e)
 }
 ```
 
-### مثال كود المصدر لتطبيق الرخصة المقننة باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لتطبيق ترخيص مقنن باستخدام Aspose.Words for .NET:
+### Aspose.Words for .NET kullanarak Sayaçlı Lisansı Uygula için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak tarifeli bir lisans uygulamak için eksiksiz kaynak kodu burada:
 
 ```csharp
 try
@@ -71,7 +71,7 @@ catch (Exception e)
 }
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تطبيق ترخيص مقنن باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن الاستفادة من الميزات المتقدمة لـ Aspose.Words لمهام معالجة المستندات الخاصة بك.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak tarifeli bir lisansın nasıl uygulanacağını başarıyla öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak, artık belge işleme görevleriniz için Aspose.Words'ün gelişmiş özelliklerinden yararlanabilirsiniz.
 
-يمكنك الآن بثقة تعيين الترخيص المحسوب ، وتحميل المستندات ومعالجتها ، وتسخير الإمكانات الكاملة لـ Aspose. Words لإنشاء مستندات Word وتعديلها ومعالجتها برمجيًا.
+Artık ölçülü lisansı güvenle ayarlayabilir, belgeleri yükleyebilir ve işleyebilir ve Word belgelerini programlı olarak oluşturmak, değiştirmek ve değiştirmek için Aspose.Words'ün tam potansiyelinden yararlanabilirsiniz.

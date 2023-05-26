@@ -1,30 +1,30 @@
 ---
-title: تنسيق 1Bpp مفهرس
-linktitle: تنسيق 1Bpp مفهرس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تنسيق الصور في 1 bpp مفهرسة باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل للصور ذات عمق الألوان المنخفض.
+title: 格式 1Bpp 索引
+linktitle: 格式 1Bpp 索引
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何在 1 bpp 中格式化使用 Aspose.Words for .NET 索引的图像。低色深图像的完整教程。
 type: docs
 weight: 10
 url: /zh/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف كود المصدر C # المقدم لوظيفة "التنسيق 1Bpp المفهرسة" مع Aspose.Words for .NET. تتيح لك هذه الميزة تنسيق الصور في مستند بتنسيق PNG بعمق لون 1 بت لكل بكسل (1 بت لكل بكسل) ووضع ألوان مفهرسة.
+在本教程中，我们将探索为 Aspose.Words for .NET 的“Format 1Bpp Indexed”功能提供的 C# 源代码。此功能允许您将文档中的图像格式化为 PNG 格式，颜色深度为每像素 1 位 (1 bpp) 和索引颜色模式。
 
-## الخطوة الأولى: تهيئة البيئة
+## 第 1 步：设置环境
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+在您开始之前，请确保您已经使用 Aspose.Words for .NET 设置了您的开发环境。确保您已经添加了必要的引用并导入了适当的命名空间。
 
-## الخطوة الثانية: تحميل المستند
+## 第 2 步：装入文档
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+在此步骤中，我们使用`Document`方法并将路径传递给要加载的 DOCX 文件。
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي للصور
+## 第 3 步：配置映像备份选项
 
 ```csharp
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
@@ -35,23 +35,23 @@ ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
 };
 ```
 
- في هذه الخطوة ، نقوم بتكوين خيارات النسخ الاحتياطي للصور. نخلق ملف`ImageSaveOptions`كائن يحدد تنسيق الحفظ المطلوب ، هنا "Png" لتنسيق PNG. نحدد أيضًا الصفحة المراد تضمينها في الصورة ، ووضع اللون الأسود والأبيض وتنسيق 1 bpp pixel المفهرس.
+在此步骤中，我们为图像配置备份选项。我们创造一个新的`ImageSaveOptions`指定所需保存格式的对象，此处为 PNG 格式的“Png”。我们还定义了要包含在图像中的页面、黑白颜色模式和索引 1 bpp 像素格式。
 
-## الخطوة 4: نسخ الصور احتياطيًا
+## 第 4 步：备份图像
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نقوم بحفظ صور المستند بتنسيق PNG باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج ، جنبًا إلى جنب مع خيارات الحفظ المحددة.
+在这最后一步中，我们使用 PNG 格式保存文档图像`Save`方法并将路径传递到输出文件，以及指定的保存选项。
 
-يمكنك الآن تشغيل الكود المصدري لتنسيق صور المستند بتنسيق PNG بعمق لون 1 bpp مفهرس. سيتم حفظ الملف الناتج في الدليل المحدد باسم "WorkingWithImageSaveOptions.Format1BppIndexed.Png".
+现在您可以运行源代码，将文档图像格式化为 PNG 格式，颜色深度为 1 bpp 索引。生成的文件将保存在指定目录中，名称为“WorkingWithImageSaveOptions.Format1BppIndexed.Png”。
 
-### نموذج التعليمات البرمجية المصدر لـ Format 1Bpp المفهرسة باستخدام Aspose.Words for .NET
+### Format 1Bpp Indexed using Aspose.Words for .NET 的示例源代码
 
 ```csharp 
  
-			 // المسار إلى دليل المستند الخاص بك
+			 //文档目录的路径
 			 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
             
             Document doc = new Document(dataDir + "Rendering.docx");
@@ -68,10 +68,10 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
         
 ```
 
-### خاتمة
+### 结论
 
-في هذا البرنامج التعليمي ، استكشفنا ميزة التنسيق المفهرس 1Bpp مع Aspose.Words for .NET. لقد تعلمنا كيفية تنسيق الصور في مستند بتنسيق PNG بعمق لون 1 بت لكل بكسل (1 بت لكل بكسل) ووضع ألوان مفهرس.
+在本教程中，我们探索了 Aspose.Words for .NET 的 1Bpp 索引格式功能。我们学习了如何以每像素 1 位 (1 bpp) 的颜色深度和索引颜色模式设置 PNG 格式文档中的图像格式。
 
-هذه الميزة مفيدة عندما تريد الحصول على صور ذات عمق ألوان منخفض وحجم ملف صغير. يسمح التنسيق المفهرس 1Bpp بتمثيل الصور باستخدام لوحة ألوان مفهرسة ، والتي يمكن أن تكون مفيدة لبعض التطبيقات المحددة.
+当您想要获得颜色深度低且文件大小小的图像时，此功能很有用。 1Bpp 索引格式允许使用索引调色板表示图像，这对于某些特定应用程序可能是有益的。
 
-تقدم Aspose.Words for .NET مجموعة كبيرة من الميزات المتقدمة لمعالجة المستندات وإنشائها. يعد التنسيق المفهرس 1Bpp أحد الأدوات القوية العديدة التي يضعها تحت تصرفك.
+Aspose.Words for .NET 为文档操作和生成提供了广泛的高级功能。 1Bpp 索引格式是它为您提供的众多强大工具之一。

@@ -1,108 +1,108 @@
 ---
-title: إنشاء جدول بسيط
-linktitle: إنشاء جدول بسيط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء جدول بسيط في مستند Word باستخدام Aspose.Words for .NET.
+title: Basit Tablo Oluştur
+linktitle: Basit Tablo Oluştur
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde basit tablo oluşturmayı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/create-simple-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إنشاء جدول بسيط في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من إنشاء جداول مخصصة في مستندات Word الخاصة بك برمجيًا.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde nasıl basit bir tablo oluşturacağımızı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizde programlı olarak özel tablolar oluşturabileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء بناء الجدول ، نحتاج إلى إنشاء مستند جديد وتهيئة منشئ المستندات. اتبع هذه الخطوات:
+## Adım 2: Belgeyi oluşturma ve belge oluşturucuyu başlatma
+Tabloyu oluşturmaya başlamak için yeni bir belge oluşturmamız ve belge oluşturucuyu başlatmamız gerekiyor. Bu adımları takip et:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وتهيئة منشئ المستند
+// Belgeyi oluşturun ve belge oluşturucuyu başlatın
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة 3: بناء المصفوفة
-بعد ذلك ، سنبني الجدول باستخدام الطرق التي يوفرها منشئ المستندات. استخدم الكود التالي:
+## 3. Adım: Diziyi oluşturma
+Ardından, belge oluşturucu tarafından sağlanan yöntemleri kullanarak tabloyu oluşturacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
-// ابدأ بناء المصفوفة
+// Dizi oluşturmaya başla
 builder. StartTable();
 
-// بناء الخلية الأولى من الصف الأول
+// İlk sıranın ilk hücresinin yapımı
 builder. InsertCell();
 builder.Write("Contents of cell 1 of row 1.");
 
-// بناء الخلية الثانية من الصف الأول
+// Birinci sıranın ikinci hücresinin yapımı
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//اتصل بالطريقة التالية لإنهاء السطر الأول وبدء سطر جديد
+//İlk satırı bitirmek ve yeni bir satır başlatmak için aşağıdaki yöntemi çağırın
 builder. EndRow();
 
-// بناء الخلية الأولى للصف الثاني
+// İkinci sıranın ilk hücresinin yapımı
 builder. InsertCell();
 builder.Write("Contents of cell 1 of row 2.");
 
-// بناء الخلية الثانية للصف الثاني
+// İkinci sıranın ikinci hücresinin inşası
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 2.");
 
-// اتصل بالطريقة التالية لإنهاء السطر الثاني
+// İkinci satırı bitirmek için sonraki yöntemi çağırın
 builder. EndRow();
 
-// الإشارة إلى أن بناء الجدول قد اكتمل
+// Tablonun yapımının bittiğinin göstergesi
 builder. EndTable();
 ```
 
- هنا نستخدم منشئ المستندات لبناء الجدول خطوة بخطوة. نبدأ بالاتصال`StartTable()` لتهيئة الجدول ، ثم استخدم`InsertCell()` لإدراج الخلايا و`Write()` لإضافة محتوى إلى كل خلية. نحن نستخدم أيضا`EndRow()` لإنهاء صف وبدء صف جديد. أخيرا ، نحن ندعو`EndTable()` للإشارة إلى اكتمال بناء الجدول.
+ Burada tabloyu adım adım oluşturmak için belge oluşturucuyu kullanıyoruz. arayarak başlıyoruz`StartTable()` tabloyu başlatmak için, ardından kullanın`InsertCell()` hücreleri eklemek ve`Write()` her hücreye içerik eklemek için. biz de kullanıyoruz`EndRow()` bir satırı bitirmek ve yeni bir satır başlatmak için. Sonunda diyoruz`EndTable()` tablo yapımının tamamlandığını belirtmek için.
 
-## الخطوة 4: احفظ المستند
-أخيرًا ، نحن بحاجة إلى الحفظ
+## 4. Adım: Belgeyi kaydedin
+Son olarak, kaydetmemiz gerekiyor
 
-  المستند مع الجدول الذي تم إنشاؤه. استخدم الكود التالي:
+  oluşturulan tablonun bulunduğu belge. Aşağıdaki kodu kullanın:
 
 ```csharp
-// احفظ المستند
+// belgeyi kaydet
 doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### نموذج التعليمات البرمجية المصدر لـ Create Simple Table باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Create Simple Table için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// ابدأ في بناء الطاولة.
+	// Tabloyu oluşturmaya başlayın.
 	builder.StartTable();
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 1 Content.");
-	// قم ببناء الخلية الثانية.
+	// İkinci hücreyi oluşturun.
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 2 Content.");
-	// اتصل بالطريقة التالية لإنهاء الصف وبدء صف جديد.
+	// Satırı bitirmek ve yeni bir satır başlatmak için aşağıdaki yöntemi çağırın.
 	builder.EndRow();
-	// قم ببناء الخلية الأولى من الصف الثاني.
+	// İkinci satırın ilk hücresini oluşturun.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 1 Content");
-	// قم ببناء الخلية الثانية.
+	// İkinci hücreyi oluşturun.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//إشارة إلى أننا انتهينا من بناء الطاولة.
+	//Tabloyu oluşturmayı bitirdiğimizin işareti.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول بسيط في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ رمز C # المقدم ، يمكنك إنشاء جداول مخصصة في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة تنسيق بياناتك وتنظيمها بطريقة منظمة وواضحة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde nasıl basit bir tablo oluşturacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizde programlı olarak özel tablolar oluşturabilirsiniz. Bu özellik, verilerinizi yapılandırılmış ve net bir şekilde biçimlendirmenize ve düzenlemenize olanak tanır.

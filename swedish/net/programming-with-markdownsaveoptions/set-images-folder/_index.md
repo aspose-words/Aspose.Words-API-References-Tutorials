@@ -1,53 +1,53 @@
 ---
-title: تعيين مجلد الصور
-linktitle: تعيين مجلد الصور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين مجلد الصور عند التصدير إلى Markdown باستخدام Aspose.Words for .NET. تخصيص موضع الصور من أجل تنظيم وتكامل أفضل.
+title: Ställ in bildmapp
+linktitle: Ställ in bildmapp
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ställer in bildmappen när du exporterar till Markdown med Aspose.Words för .NET. Anpassa placeringen av bilder för bättre organisation och integration.
 type: docs
 weight: 10
 url: /sv/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
 
-فيما يلي دليل خطوة بخطوة لشرح الكود المصدري C # التالي والذي يساعد على تعيين مجلد الصور لخيارات تصدير Markdown باستخدام مكتبة Aspose.Words لـ .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Här är en steg-för-steg-guide för att förklara följande C#-källkod som hjälper till att ställa in bildmappen för Markdown-exportalternativ med Aspose.Words-biblioteket för .NET. Se till att du har inkluderat Aspose.Words-biblioteket i ditt projekt innan du använder den här koden.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## Steg 1: Ange sökväg till dokumentkatalogen
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث يوجد المستند الذي يحتوي على الصور.
+Var noga med att ange rätt sökväg till din dokumentkatalog där dokumentet som innehåller bilderna finns.
 
-## الخطوة 2: قم بتحميل المستند الذي يحتوي على الصور
+## Steg 2: Ladda dokumentet som innehåller bilderna
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-نقوم بتحميل المستند المحدد الذي يحتوي على الصور التي نريد تصديرها باستخدام خيارات Markdown.
+Vi laddar det angivna dokumentet som innehåller bilderna vi vill exportera med Markdown-alternativ.
 
-## الخطوة 3: قم بتعيين مجلد الصور لخيارات تصدير Markdown
+## Steg 3: Ställ in bildmappen för Markdown-exportalternativ
 
 ```csharp
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
 ```
 
- نقوم بإنشاء مثيل`MarkdownSaveOptions` وقم بتعيين المسار إلى مجلد الصور باستخدام ملف`ImagesFolder` ملكية. تأكد من تحديد المسار الصحيح للمجلد حيث تريد حفظ الصور المصدرة.
+ Vi skapar en instans av`MarkdownSaveOptions` och ställ in sökvägen till mappen bilder med hjälp av`ImagesFolder` fast egendom. Se till att ange rätt sökväg till mappen där du vill spara de exporterade bilderna.
 
-## الخطوة 4: احفظ المستند باستخدام خيارات تصدير Markdown
+## Steg 4: Spara dokumentet med Markdown-exportalternativ
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())
      doc. Save(stream, saveOptions);
 ```
 
-نقوم بحفظ المستند في تدفق الذاكرة باستخدام خيارات تصدير Markdown المحددة. يمكنك بعد ذلك استخدام التدفق لإجراء عمليات أخرى ، مثل حفظ محتوى Markdown في ملف.
+Vi sparar dokumentet i en minnesström med de angivna Markdown-exportalternativen. Du kan sedan använda flödet för att utföra andra operationer, som att spara Markdown-innehåll till en fil.
 
-### مثال على كود المصدر لتعيين مجلد الصور لـ MarkdownSaveOptions مع Aspose.Words for .NET
+### Exempel på källkod för att ställa in bildmapp för MarkdownSaveOptions med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 Document doc = new Document(dataDir + "Image bullet points.docx");
@@ -58,4 +58,4 @@ using (MemoryStream stream = new MemoryStream())
      doc. Save(stream, saveOptions);
 ```
 
-يوضح رمز المصدر هذا كيفية تحميل مستند يحتوي على صور ثم تعيين مجلد الصور لخيارات تصدير Markdown. باستخدام الخيارات المحددة ، يتم حفظ المستند بعد ذلك في تدفق الذاكرة. يتيح لك هذا تخصيص موقع مجلد الصور عند تصدير محتوى Markdown.
+Den här källkoden visar hur man laddar ett dokument som innehåller bilder och sedan ställer in bildmappen för Markdown-exportalternativ. Med de angivna alternativen sparas dokumentet sedan i en minnesström. Detta gör att du kan anpassa platsen för bildmappen när du exporterar Markdown-innehåll.

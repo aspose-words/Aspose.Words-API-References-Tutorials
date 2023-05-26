@@ -1,27 +1,27 @@
 ---
-title: البرمجة بالأشكال
-linktitle: البرمجة بالأشكال
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إضافة شكل المجموعة ، وإدراج الشكل ، ونسبة العرض إلى الارتفاع المقفلة ، والتخطيط في الخلية ، وإضافة الزوايا المقطوعة ، والحصول على نقاط حدود الشكل الفعلية ، والرسو الرأسي ، والكشف
+title: Programación con formas
+linktitle: Programación con formas
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales contienen agregar forma de grupo, insertar forma, relación de aspecto bloqueada, diseño en celda, agregar esquinas recortadas, obtener puntos de límites de forma reales, ancla vertical, detección
 type: docs
 weight: 1560
 url: /es/net/programming-with-shapes/
 ---
-تقدم البرامج التعليمية Aspose.Words for .NET حول البرمجة باستخدام الأشكال دليلاً شاملاً لمعالجة الأشكال وإدارتها في مستندات Word. تشرح هذه البرامج التعليمية خطوة بخطوة كيفية إنشاء الأشكال وتعديلها وحذفها ، بالإضافة إلى كيفية تخصيصها من حيث اللون والحجم والموضع والسمات الأخرى. تتضمن البرامج التعليمية أمثلة واضحة للكود وشروحات خطوة بخطوة لسهولة الفهم والتنفيذ.
+Los tutoriales de Aspose.Words para .NET sobre programación con formas ofrecen una guía completa para manipular y administrar formas en documentos de Word. Estos tutoriales explican paso a paso cómo crear, modificar y eliminar formas, así como personalizarlas en términos de color, tamaño, posición y otros atributos. Los tutoriales incluyen ejemplos de código claros y explicaciones paso a paso para una fácil comprensión e implementación.
 
-من خلال هذه البرامج التعليمية ، ستتعلم كيفية إضافة أشكال إلى مستنداتك ، مثل المستطيلات والدوائر والخطوط والأسهم لتحسين التصميم وتصور المعلومات. ستتعلم أيضًا كيفية التعامل مع خصائص الشكل ، مثل التدوير والشفافية والتعبئة ، لتناسب احتياجاتك الخاصة.
+través de estos tutoriales, aprenderá a agregar formas a sus documentos, como rectángulos, círculos, líneas y flechas, para mejorar el diseño y la visualización de la información. También aprenderá a manipular las propiedades de las formas, como la rotación, la transparencia y el relleno, para satisfacer sus necesidades específicas.
 
-باستخدام Aspose.Words for .NET واتباع هذه البرامج التعليمية ، ستتمكن من إتقان معالجة الأشكال في مستندات Word الخاصة بك ، مما يسمح لك بإنشاء مستندات جذابة بصريًا وذات مظهر احترافي. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستوجهك هذه البرامج التعليمية خلال العملية وتساعدك على إطلاق العنان للإمكانات الكاملة للتلاعب بالشكل في Aspose.Words for .NET.
+Al usar Aspose.Words para .NET y seguir estos tutoriales, podrá dominar la manipulación de formas en sus documentos de Word, lo que le permitirá crear documentos visualmente atractivos y de apariencia profesional. Ya sea que sea un desarrollador principiante o experimentado, estos tutoriales lo guiarán a través del proceso y lo ayudarán a desbloquear todo el potencial de la manipulación de formas en Aspose.Words para .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [أضف شكل المجموعة](./add-group-shape/) | تعرف على كيفية إضافة شكل مجموعة بأشكال متعددة إلى مستند Word باستخدام Aspose.Words for .NET. |
-| [أدخل الشكل](./insert-shape/) | تعرف على كيفية إدراج الأشكال في مستند Word باستخدام Aspose.Words for .NET. |
-| [نسبة العرض إلى الارتفاع مقفلة](./aspect-ratio-locked/) | تعرف على كيفية قفل أو إلغاء قفل نسبة العرض إلى الارتفاع لشكل ما في مستند Word باستخدام Aspose.Words for .NET. |
-| [التخطيط في الخلية](./layout-in-cell/) | تعرف على كيفية تخطيط شكل داخل خلية جدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [أضف زوايا مقصوصة](./add-corners-snipped/) | تعرف على كيفية إضافة شكل بزوايا مقصوصة إلى مستند Word باستخدام Aspose.Words for .NET. |
-| [احصل على نقاط حدود الشكل الفعلي](./get-actual-shape-bounds-points/) | تعرف على كيفية استرداد الحدود الفعلية للشكل بالنقاط (وحدة القياس) في مستند Word باستخدام Aspose.Words for .NET. |
-| [مرساة عمودية](./vertical-anchor/) | تعرف على كيفية وضع الشكل عموديًا داخل مستند باستخدام ميزة الارتساء العمودي في Aspose.Words for .NET.|
-| [كشف شكل الفن الذكي](./detect-smart-art-shape/) | تعرف على كيفية اكتشاف أشكال الفن الذكي في مستند Word باستخدام Aspose.Words for .NET ، مع تحديد التمثيلات الرسومية. |
-| [تحديث الرسم الفني الذكي](./update-smart-art-drawing/) | تعرف على كيفية تحديث الرسم الفني الذكي في مستند Word باستخدام Aspose.Words for .NET. |
+| [Agregar forma de grupo](./add-group-shape/) | Aprenda a agregar una forma de grupo con varias formas a un documento de Word usando Aspose.Words para .NET. |
+| [Insertar forma](./insert-shape/) | Aprenda a insertar formas en un documento de Word usando Aspose.Words para .NET. |
+| [Relación de aspecto bloqueada](./aspect-ratio-locked/) | Aprenda a bloquear o desbloquear la relación de aspecto de una forma en un documento de Word usando Aspose.Words para .NET. |
+| [Diseño en celda](./layout-in-cell/) | Aprenda a diseñar una forma dentro de una celda de tabla en un documento de Word usando Aspose.Words para .NET. |
+| [Añadir esquinas cortadas](./add-corners-snipped/) | Aprenda a agregar una forma con esquinas recortadas a un documento de Word usando Aspose.Words para .NET. |
+| [Obtener puntos de límites de forma reales](./get-actual-shape-bounds-points/) | Aprenda a recuperar los límites reales de una forma en puntos (unidad de medida) en un documento de Word usando Aspose.Words para .NET. |
+| [Anclaje Vertical](./vertical-anchor/) | Aprenda a colocar una forma verticalmente dentro de un documento utilizando la función de anclaje vertical en Aspose.Words para .NET.|
+| [Detectar forma de arte inteligente](./detect-smart-art-shape/) | Aprenda a detectar formas Smart Art en un documento de Word usando Aspose.Words para .NET, identificando representaciones gráficas. |
+| [Actualizar dibujo artístico inteligente](./update-smart-art-drawing/) | Aprenda a actualizar el dibujo de Smart Art en un documento de Word usando Aspose.Words para .NET. |

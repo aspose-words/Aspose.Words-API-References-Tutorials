@@ -1,20 +1,20 @@
 ---
-title: Docx إلى Markdown
-linktitle: Docx إلى Markdown
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات Word من Docx إلى تنسيق Markdown باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Docx zum Markdown
+linktitle: Docx zum Markdown
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für .NET vom Docx- in das Markdown-Format konvertieren. Schritt-für-Schritt-Anleitung mit Beispielquellcode.
 type: docs
 weight: 10
 url: /de/net/basic-conversions/docx-to-markdown/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى Markdown. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET ein Word-Dokument im Docx-Format in Markdown konvertieren. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek von der offiziellen Website herunter und installieren Sie sie.
 
-## الخطوة 1: تهيئة المستند وكائنات DocumentBuilder
+## Schritt 1: Initialisieren der Document- und DocumentBuilder-Objekte
 
- أولاً ، قم بتهيئة ملف`Document` الكائن و`DocumentBuilder` هدف:
+ Initialisieren Sie zunächst die`Document` Objekt und das`DocumentBuilder` Objekt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -22,31 +22,31 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: إضافة محتوى إلى المستند
+## Schritt 2: Inhalt zum Dokument hinzufügen
 
- بعد ذلك ، استخدم ملف`DocumentBuilder` كائن لإضافة محتوى إلى المستند. في هذا المثال ، سنضيف فقرة نصية بسيطة باستخدام امتداد`Writeln` طريقة:
+ Als nächstes verwenden Sie die`DocumentBuilder` Objekt, um dem Dokument Inhalt hinzuzufügen. In diesem Beispiel fügen wir mithilfe von einen einfachen Textabsatz hinzu`Writeln` Methode:
 
 ```csharp
 builder.Writeln("Some text!");
 ```
 
-لا تتردد في إضافة محتوى أكثر تعقيدًا مثل العناوين أو الجداول أو القوائم أو التنسيق حسب الحاجة.
+Fügen Sie bei Bedarf gerne komplexere Inhalte wie Überschriften, Tabellen, Listen oder Formatierungen hinzu.
 
-## الخطوة 3: حفظ المستند بتنسيق Markdown
+## Schritt 3: Speichern des Dokuments im Markdown-Format
 
- لحفظ المستند بتنسيق Markdown ، استخدم ملف`Save` طريقة على`Document` كائن وتوفير المسار واسم الملف للمستند الناتج. في هذا المثال ، سنحفظه باسم`"BaseConversions.DocxToMarkdown.md"`:
+ Um das Dokument im Markdown-Format zu speichern, verwenden Sie die`Save` Methode auf der`Document` Objekt und geben Sie den Pfad und Dateinamen für das Ausgabedokument an. In diesem Beispiel speichern wir es als`"BaseConversions.DocxToMarkdown.md"`:
 
 ```csharp
 doc.Save(dataDir + "BaseConversions.DocxToMarkdown.md");
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند Word بتنسيق Docx إلى Markdown باستخدام Aspose.Words for .NET.
+Das ist es! Sie haben mit Aspose.Words für .NET erfolgreich ein Word-Dokument im Docx-Format in Markdown konvertiert.
 
-### مثال على شفرة المصدر لـ Docx To Markdown باستخدام Aspose.Words for .NET
+### Beispielquellcode für Docx To Markdown mit Aspose.Words für .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -57,4 +57,4 @@ doc.Save(dataDir + "BaseConversions.DocxToMarkdown.md");
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprechend Ihren spezifischen Anforderungen modifizieren.

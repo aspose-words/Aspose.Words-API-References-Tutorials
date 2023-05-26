@@ -1,88 +1,88 @@
 ---
-title: تجاهل النص داخل الحقول
-linktitle: تجاهل النص داخل الحقول
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة "تجاهل النص داخل الحقول" في Aspose.Words for .NET.
+title: Ignorera text i fält
+linktitle: Ignorera text i fält
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder funktionen "Ignorera text i fält" i Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/find-and-replace-text/ignore-text-inside-fields/
 ---
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Ignore Text Inside Fields في مكتبة Aspose.Words for .NET. هذه الميزة مفيدة عندما نريد تجاهل النص داخل الحقول عند معالجة المستندات.
+I den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder funktionen Ignorera text i fält i Aspose.Words för .NET-biblioteket. Den här funktionen är användbar när vi vill ignorera texten i fälten när vi manipulerar dokument.
 
-## المتطلبات الأساسية
+## Förutsättningar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundläggande kunskaper i C#-språket.
+- .NET-utvecklingsmiljö med Aspose.Words-biblioteket installerat.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## Steg 1: Skapa ett nytt dokument
 
- قبل أن نبدأ في معالجة النص داخل الحقول ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Innan vi börjar manipulera text i fält måste vi skapa ett nytt dokument med Aspose.Words för .NET. Detta kan göras genom att instansiera en`Document` objekt:
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: إدخال حقل يحتوي على نص بداخله
+## Steg 2: Infoga ett fält med text inuti
 
- بمجرد أن نحصل على مستند ، يمكننا إدخال حقل يحتوي على نص بداخله باستخدام ملف`DocumentBuilder` هدف. على سبيل المثال ، لإدراج حقل "INCLUDETEXT" مع النص "Text in field" ، يمكننا استخدام`InsertField` طريقة:
+ När vi väl har ett dokument kan vi infoga ett fält som innehåller text i det med hjälp av a`DocumentBuilder` objekt. Till exempel, för att infoga ett "INCLUDETEXT"-fält med texten "Text i fält", kan vi använda`InsertField` metod:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
-## الخطوة 3: استخدام وظيفة Ignore Text Inside Fields
+## Steg 3: Använda funktionen Ignorera text i fält
 
- لتجاهل النص داخل الحقول في العمليات اللاحقة ، يمكننا استخدام`FindReplaceOptions` كائن وتعيين`IgnoreFields` ملكية ل`true`:
+ För att ignorera text i fält vid efterföljande operationer kan vi använda a`FindReplaceOptions` objekt och ställ in`IgnoreFields` egendom till`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
 
-## الخطوة 4: استخدام التعبيرات النمطية للبحث والاستبدال
+## Steg 4: Använd reguljära uttryck för att söka och ersätta
 
-لإجراء عمليات البحث والاستبدال على نص المستند ، سنستخدم التعبيرات العادية. في مثالنا ، سنبحث عن جميع تكرارات الحرف "e" ونستبدلها بعلامة النجمة "* ". سنستخدم .NET`Regex` فئة لهذا:
+För att utföra sök- och ersättningsoperationer på texten i dokumentet kommer vi att använda reguljära uttryck. I vårt exempel kommer vi att söka efter alla förekomster av bokstaven "e" och ersätta dem med en asterisk "* ". Vi kommer att använda .NET`Regex` klass för detta:
 
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## الخطوة 5: عرض إخراج المستند المعدل
+## Steg 5: Visa den modifierade dokumentutgången
 
-بعد تطبيق البحث والاستبدال ، يمكننا عرض المحتوى الذي تم تغييره في المستند باستخدام`GetText` طريقة:
+Efter att ha tillämpat sökningen och ersätt, kan vi visa det ändrade innehållet i dokumentet med hjälp av`GetText` metod:
 
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## الخطوة 6: تغيير الخيارات لتضمين الحقول
+## Steg 6: Ändra alternativ för att inkludera fält
 
- نقوم بتضمين النص داخل الحقول في نتيجة الإخراج ، يمكننا تغيير الخيارات لعدم تجاهل الحقول. لهذا سنقوم بتعيين`IgnoreFields` ملكية ل`false`:
+ vi inkluderar texten i fälten i resultatet, vi kan ändra alternativen för att inte ignorera fälten. För detta kommer vi att ställa in`IgnoreFields` egendom till`false`:
 
 ```csharp
 options.IgnoreFields = false;
 ```
 
-## الخطوة 7: عرض الوثيقة المعدلة مع الحقول
+## Steg 7: Visar det ändrade dokumentet med fälten
 
-بعد تغيير الخيارات ، يمكننا إجراء البحث والاستبدال مرة أخرى للحصول على النتيجة بالنص الموجود داخل الحقول المضمنة:
+Efter att ha ändrat alternativen kan vi utföra sökningen och ersätta igen för att få resultatet med texten i de inkluderade fälten:
 
 ```csharp
 doc.Range.Replace(regex, "*", options);
 Console.WriteLine(doc.GetText());
 ```
 
-### مثال على شفرة المصدر لـ Ignore Text Inside Fields باستخدام Aspose.Words for .NET
+### Exempel på källkod för Ignorera text i fält med Aspose.Words för .NET
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام وظيفة Ignore Text Inside Fields مع Aspose.Words for .NET:
+Här är den fullständiga källkoden för att demonstrera användningen av funktionen Ignorera text i fält med Aspose.Words för .NET:
 
 ```csharp
     
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// أدخل الحقل مع النص بداخله.
+	// Infoga fält med text inuti.
 	builder.InsertField("INCLUDETEXT", "Text in field");
 	
 	FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -99,6 +99,6 @@ Console.WriteLine(doc.GetText());
   
 ```
 
-## خاتمة
+## Slutsats
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة Ignore Text Inside Fields في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند ، وإدخال حقل به نص بداخله ، واستخدام وظيفة Ignore Text Inside Fields ، وإجراء البحث واستبدال العمليات بالتعبيرات العادية ، وعرض المستند المعدل.
+I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Ignorera text inuti fält i Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att skapa ett dokument, infoga ett fält med text inuti, använda funktionen Ignorera text i fält, utföra sökning och ersätta operationer med reguljära uttryck och visa det ändrade dokumentet.

@@ -1,32 +1,32 @@
 ---
-title: أحرف التعريف في نمط البحث
-linktitle: أحرف التعريف في نمط البحث
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام الحروف الأولية في نمط البحث باستخدام Aspose.Words for .NET لمعالجة مستندات Word.
+title: Metazeichen im Suchmuster
+linktitle: Metazeichen im Suchmuster
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Metazeichen im Suchmuster verwenden, um Word-Dokumente zu bearbeiten.
 type: docs
 weight: 10
 url: /de/net/find-and-replace-text/meta-characters-in-search-pattern/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Meta Characters In Search Pattern في Aspose.Words for .NET library. تتيح لك هذه الميزة استخدام أحرف أولية خاصة لإجراء عمليات بحث واستبدال متقدمة في مستندات Word.
+In diesem Artikel untersuchen wir den obigen C#-Quellcode, um zu verstehen, wie die Funktion „Metazeichen im Suchmuster“ in der Bibliothek „Aspose.Words für .NET“ verwendet wird. Mit dieser Funktion können Sie spezielle Metazeichen verwenden, um erweiterte Suchen und Ersetzen in Word-Dokumenten durchzuführen.
 
-## المتطلبات الأساسية
+## Voraussetzungen
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundkenntnisse der C#-Sprache.
+- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## Schritt 1: Erstellen eines neuen Dokuments
 
- قبل أن نبدأ في استخدام الحروف الأولية في نمط البحث ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Bevor wir mit der Verwendung von Metazeichen im Suchmuster beginnen, müssen wir mit Aspose.Words für .NET ein neues Dokument erstellen. Dies kann durch Instanziieren von a erfolgen`Document` Objekt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل النص في المستند
+## Schritt 2: Text in das Dokument einfügen
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نستخدم الامتداد`Writeln` و`Write` طرق لإدراج سطرين من النص:
+ Sobald wir ein Dokument haben, können wir mit a Text einfügen`DocumentBuilder` Objekt. In unserem Beispiel verwenden wir die`Writeln` Und`Write` Methoden zum Einfügen von zwei Textzeilen:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -34,17 +34,17 @@ builder.Writeln("This is line 1");
 builder.Writeln("This is line 2");
 ```
 
-## الخطوة 3: البحث عن النص واستبداله بأحرف أولية
+## Schritt 3: Suchen und ersetzen Sie Text durch Metazeichen
 
- الآن سوف نستخدم ملف`Range.Replace` وظيفة للبحث عن نص واستبداله باستخدام نمط بحث يحتوي على أحرف أولية خاصة. في مثالنا ، نستبدل عبارة "This is line 1 & pThis is line 2" بـ "هذا السطر مستبدل" باستخدام`&p` الحرف الأولي لتمثيل فاصل فقرة:
+ Jetzt werden wir das verwenden`Range.Replace` Funktion zum Suchen und Ersetzen von Text mithilfe eines Suchmusters, das spezielle Metazeichen enthält. In unserem Beispiel ersetzen wir den Ausdruck „Dies ist Zeile 1&pDies ist Zeile 2“ durch „Diese Zeile wird ersetzt“ mithilfe von`&p` Metazeichen zur Darstellung eines Absatzumbruchs:
 
 ```csharp
 doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 ```
 
-## الخطوة 4: إدراج فاصل صفحة في المستند
+## Schritt 4: Einfügen eines Seitenumbruchs in das Dokument
 
- لتوضيح استخدام حرف أولي آخر ، سنقوم بإدراج فاصل صفحات في المستند باستخدام الامتداد`InsertBreak` الطريقة مع`BreakType.PageBreak` معامل. نحرك المؤشر أولاً من ملف`DocumentBuilder` في نهاية المستند ، ثم نقوم بإدخال فاصل الصفحة وسطر جديد من النص:
+ Um die Verwendung eines anderen Metazeichens zu veranschaulichen, fügen wir mithilfe von einen Seitenumbruch in das Dokument ein`InsertBreak` Methode mit der`BreakType.PageBreak` Parameter. Wir bewegen zuerst den Cursor von der`DocumentBuilder` ans Ende des Dokuments, dann fügen wir den Seitenumbruch und eine neue Textzeile ein:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -53,25 +53,25 @@ builder. InsertBreak(BreakType.PageBreak);
 builder.Writeln("This is line 2");
 ```
 
-## الخطوة 5: ابحث عن حرف أولي آخر واستبدله
+## Schritt 5: Suchen und ersetzen Sie es durch ein anderes Metazeichen
 
- سنقوم الآن بإجراء بحث آخر واستبداله باستخدام ملف`&m` الحرف الأولي لتمثيل فاصل صفحة. نستبدل العبارة "هذا هو السطر 1 و m هذا هو السطر 2" بعبارة "يتم استبدال فاصل الصفحة بنص جديد." :
+ Jetzt führen wir eine weitere Suche und Ersetzung mit durch`&m` Metazeichen zur Darstellung eines Seitenumbruchs. Wir ersetzen den Satz „Dies ist Zeile 1&mDies ist Zeile 2“ durch „Der Seitenumbruch wird durch neuen Text ersetzt.“ :
 
 ```csharp
 doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");
 ```
 
-## الخطوة 6: حفظ المستند المحرر
+## Schritt 6: Speichern des bearbeiteten Dokuments
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+ Abschließend speichern wir das geänderte Dokument mithilfe von in einem angegebenen Verzeichnis`Save` Methode:
 
 ```csharp
 doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");
 ```
 
-### مثال على شفرة المصدر لـ Meta Characters في نمط البحث باستخدام Aspose.Words for .NET
+### Beispielquellcode für Metazeichen im Suchmuster mit Aspose.Words für .NET
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام الأحرف الأولية في نمط البحث مع Aspose.Words for .NET:
+Hier ist der vollständige Beispielquellcode, um die Verwendung von Metazeichen im Suchmuster mit Aspose.Words für .NET zu demonstrieren:
 
 ```csharp
 
@@ -82,7 +82,7 @@ doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");
 	&l - manual line break
 	*/
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -103,6 +103,6 @@ doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");
 
 ```
 
-## خاتمة
+## Abschluss
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام الحروف الأولية في نمط البحث في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص وإجراء بحث واستبدال باستخدام أحرف أولية خاصة وإدراج فواصل الصفحات وحفظ المستند المحرر.
+In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie Metazeichen im Suchmuster von Aspose.Words für .NET verwendet werden. Wir folgten einer Schritt-für-Schritt-Anleitung zum Erstellen eines Dokuments, zum Einfügen von Text, zum Suchen und Ersetzen mithilfe spezieller Metazeichen, zum Einfügen von Seitenumbrüchen und zum Speichern des bearbeiteten Dokuments.

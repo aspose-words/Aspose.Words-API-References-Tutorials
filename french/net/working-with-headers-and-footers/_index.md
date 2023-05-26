@@ -1,18 +1,18 @@
 ---
-title: العمل مع الرؤوس والتذييلات
-linktitle: العمل مع الرؤوس والتذييلات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية إنشاء تذييل رأس ونسخ رأس تذييل من القسم السابق من مستند Word باستخدام Aspose.Words for .NET.
+title: Utilisation des en-têtes et pieds de page
+linktitle: Utilisation des en-têtes et pieds de page
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels expliquent comment créer un pied de page d'en-tête et copier le pied de page d'en-tête de la section précédente du document Word à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 730
 url: /fr/net/working-with-headers-and-footers/
 ---
 
-يعد العمل باستخدام الرؤوس والتذييلات موردًا شاملاً لتعلم كيفية التعامل مع الرؤوس والتذييلات وتخصيصها في مستندات Word باستخدام مكتبة Aspose.Words لـ .NET. توفر البرامج التعليمية شروحات مفصلة وأمثلة على التعليمات البرمجية وإرشادات خطوة بخطوة لإضافة الرؤوس والتذييلات وتعديلها وإزالتها ، وتعيين رؤوس وتذييلات مختلفة لأقسام مختلفة من المستند ، وإدراج الصور والجداول والحقول الديناميكية وغير ذلك الكثير. هذا المورد ضروري للمطورين الراغبين في إنشاء مستندات Word احترافية ومخصصة مع رؤوس وتذييلات مصممة خصيصًا لاحتياجاتهم الخاصة.
+Travailler avec les en-têtes et les pieds de page est une ressource complète pour apprendre à manipuler et personnaliser les en-têtes et les pieds de page dans les documents Word à l'aide de la bibliothèque Aspose.Words pour .NET. Les didacticiels fournissent des explications détaillées, des exemples de code et des instructions étape par étape pour ajouter, modifier et supprimer des en-têtes et des pieds de page, définir différents en-têtes et pieds de page pour différentes sections d'un document, insérer des images, des tableaux, des champs dynamiques et bien plus encore. Cette ressource est essentielle pour les développeurs qui souhaitent créer des documents Word professionnels et personnalisés avec des en-têtes et des pieds de page adaptés à leurs besoins spécifiques.
 
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [إنشاء تذييل الرأس](./create-header-footer/) | تعرف على كيفية إنشاء رؤوس الصفحات وتذييلاتها في مستندات Word باستخدام Aspose.Words for .NET. تخصيص الرؤوس والتذييلات لكل صفحة. |
-| [نسخ تذييلات الرؤوس من القسم السابق](./copy-headers-footers-from-previous-section/) | تعرف على كيفية نسخ الرؤوس والتذييلات من القسم السابق في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Créer un en-tête de pied de page](./create-header-footer/) | Apprenez à créer des en-têtes et des pieds de page dans vos documents Word avec Aspose.Words pour .NET. Personnalisez les en-têtes et pieds de page pour chaque page. |
+| [Copier les en-têtes et les pieds de page de la section précédente](./copy-headers-footers-from-previous-section/) | Apprenez à copier les en-têtes et les pieds de page de la section précédente dans les documents Word à l'aide d'Aspose.Words pour .NET. |

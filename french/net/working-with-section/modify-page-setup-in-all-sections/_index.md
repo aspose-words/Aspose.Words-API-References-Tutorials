@@ -1,37 +1,37 @@
 ---
-title: تعديل إعداد الصفحة في جميع الأقسام
-linktitle: تعديل إعداد الصفحة في جميع الأقسام
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تعديل إعداد الصفحة في جميع أقسام مستند Word باستخدام Aspose.Words for .NET.
+title: Modifier la mise en page dans toutes les sections
+linktitle: Modifier la mise en page dans toutes les sections
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Dans ce didacticiel, découvrez comment modifier la mise en page dans toutes les sections d'un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-section/modify-page-setup-in-all-sections/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية تعديل إعداد الصفحة في جميع أقسام مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يمكن أن يتضمن تغيير إعداد الصفحة إعدادات مثل حجم الورق والهوامش والاتجاه وما إلى ذلك. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Dans ce didacticiel, nous allons vous montrer comment modifier la mise en page dans toutes les sections d'un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. La modification de la mise en page peut inclure des paramètres tels que la taille du papier, les marges, l'orientation, etc. Nous vous guiderons étape par étape pour vous aider à comprendre et à implémenter le code dans votre projet .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Conditions préalables
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+- Une connaissance pratique du langage de programmation C#
+- La bibliothèque Aspose.Words pour .NET installée dans votre projet
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+ Tout d'abord, vous devez définir le chemin du répertoire vers l'emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بإنشاء مستند وإضافة محتوى وأقسام
-بعد ذلك ، سننشئ مستندًا فارغًا عن طريق إنشاء مثيل`Document` فئة وما يرتبط بها`DocumentBuilder` المُنشئ لإضافة محتوى وأقسام إلى المستند. في هذا المثال ، نضيف محتوى وثلاثة أقسام.
+## Étape 2 : Créer un document et ajouter du contenu et des sections
+Ensuite, nous allons créer un document vide en instanciant le`Document` classe et un associé`DocumentBuilder` constructeur pour ajouter du contenu et des sections au document. Dans cet exemple, nous ajoutons du contenu et trois sections.
 
 ```csharp
-// قم بإنشاء مستند
+// Créer un document
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// أضف المحتوى والأقسام
+// Ajouter du contenu et des sections
 builder.Writeln("Hello1");
 doc.AppendChild(new Section(doc));
 builder.Writeln("Hello22");
@@ -41,19 +41,19 @@ doc.AppendChild(new Section(doc));
 builder.Writeln("Hello45");
 ```
 
-## الخطوة 3: تحرير إعداد الصفحة في جميع الأقسام
- لتغيير إعداد الصفحة في جميع أقسام المستند ، نستخدم ملف`foreach` حلقة للحلقة خلال كل قسم والوصول إلى ملف`PageSetup` ملكية. في هذا المثال ، نقوم بتغيير حجم الورق لجميع الأقسام عن طريق تعيين القيمة إلى`PaperSize.Letter`.
+## Étape 3 : Modifier la configuration de la page dans toutes les sections
+ Pour modifier la mise en page dans toutes les sections du document, nous utilisons un`foreach` boucle pour parcourir chaque section et accéder à ses`PageSetup` propriété. Dans cet exemple, nous modifions le format de papier de toutes les sections en définissant la valeur sur`PaperSize.Letter`.
 
 ```csharp
 foreach(Section section in doc.Sections)
      section.PageSetup.PaperSize = PaperSize.Letter;
 ```
 
-### نموذج لشفرة مصدر لتعديل إعداد الصفحة في جميع الأقسام باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Modifier la mise en page dans toutes les sections à l'aide de Aspose.Words pour .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -66,13 +66,13 @@ builder.Writeln("Hello3");
 doc.AppendChild(new Section(doc));
 builder.Writeln("Hello45");
 
-// من المهم أن نفهم أن المستند يمكن أن يحتوي على العديد من الأقسام ،
-// ولكل قسم إعداد صفحته. في هذه الحالة ، نريد تعديلها جميعًا.
+// Il est important de comprendre qu'un document peut contenir de nombreuses sections,
+// et chaque section a sa mise en page. Dans ce cas, nous voulons tous les modifier.
 foreach (Section section in doc)
 	section.PageSetup.PaperSize = PaperSize.Letter;
 doc.Save(dataDir + "WorkingWithSection.ModifyPageSetupInAllSections.doc");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تعديل إعداد الصفحة في جميع أقسام مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات الموضحة ، يمكنك الوصول بسهولة إلى كل قسم وتخصيص إعدادات تكوين الصفحة. لا تتردد في تكييف هذه الميزة واستخدامها لتلبية احتياجاتك الخاصة.
+## Conclusion
+Dans ce didacticiel, nous avons vu comment modifier la mise en page dans toutes les sections d'un document Word à l'aide de Aspose.Words pour .NET. En suivant les étapes décrites, vous pouvez facilement accéder à chaque section et personnaliser les paramètres de configuration de la page. N'hésitez pas à adapter et à utiliser cette fonctionnalité pour répondre à vos besoins spécifiques.

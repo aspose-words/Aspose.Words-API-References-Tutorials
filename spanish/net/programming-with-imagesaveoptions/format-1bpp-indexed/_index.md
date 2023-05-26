@@ -1,30 +1,30 @@
 ---
-title: تنسيق 1Bpp مفهرس
-linktitle: تنسيق 1Bpp مفهرس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تنسيق الصور في 1 bpp مفهرسة باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل للصور ذات عمق الألوان المنخفض.
+title: Formato 1Bpp indexado
+linktitle: Formato 1Bpp indexado
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a formatear imágenes en 1 bpp indexadas con Aspose.Words para .NET. Tutorial completo para imágenes con poca profundidad de color.
 type: docs
 weight: 10
 url: /es/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف كود المصدر C # المقدم لوظيفة "التنسيق 1Bpp المفهرسة" مع Aspose.Words for .NET. تتيح لك هذه الميزة تنسيق الصور في مستند بتنسيق PNG بعمق لون 1 بت لكل بكسل (1 بت لكل بكسل) ووضع ألوان مفهرسة.
+En este tutorial, exploraremos el código fuente de C# proporcionado para la funcionalidad "Formato 1Bpp indexado" con Aspose.Words para .NET. Esta función le permite formatear imágenes en un documento en formato PNG con una profundidad de color de 1 bit por píxel (1 bpp) y un modo de color indexado.
 
-## الخطوة الأولى: تهيئة البيئة
+## Paso 1: Configuración del entorno
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Antes de comenzar, asegúrese de haber configurado su entorno de desarrollo con Aspose.Words para .NET. Asegúrese de haber agregado las referencias necesarias e importado los espacios de nombres apropiados.
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+ En este paso, cargamos el documento usando el`Document` método y pasando la ruta al archivo DOCX para cargar.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي للصور
+## Paso 3: Configure las opciones de copia de seguridad de imágenes
 
 ```csharp
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
@@ -35,23 +35,23 @@ ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
 };
 ```
 
- في هذه الخطوة ، نقوم بتكوين خيارات النسخ الاحتياطي للصور. نخلق ملف`ImageSaveOptions`كائن يحدد تنسيق الحفظ المطلوب ، هنا "Png" لتنسيق PNG. نحدد أيضًا الصفحة المراد تضمينها في الصورة ، ووضع اللون الأسود والأبيض وتنسيق 1 bpp pixel المفهرس.
+ En este paso, configuramos las opciones de respaldo para las imágenes. Creamos un nuevo`ImageSaveOptions`objeto especificando el formato de guardado deseado, aquí "Png" para el formato PNG. También definimos la página a incluir en la imagen, el modo de color blanco y negro y el formato de píxel indexado de 1 bpp.
 
-## الخطوة 4: نسخ الصور احتياطيًا
+## Paso 4: Copia de seguridad de las imágenes
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نقوم بحفظ صور المستند بتنسيق PNG باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج ، جنبًا إلى جنب مع خيارات الحفظ المحددة.
+ En este último paso, guardamos las imágenes del documento en formato PNG usando el`Save` y pasando la ruta al archivo de salida, junto con las opciones de guardado especificadas.
 
-يمكنك الآن تشغيل الكود المصدري لتنسيق صور المستند بتنسيق PNG بعمق لون 1 bpp مفهرس. سيتم حفظ الملف الناتج في الدليل المحدد باسم "WorkingWithImageSaveOptions.Format1BppIndexed.Png".
+Ahora puede ejecutar el código fuente para formatear las imágenes del documento en formato PNG con una profundidad de color de 1 bpp indexado. El archivo resultante se guardará en el directorio especificado con el nombre "WorkingWithImageSaveOptions.Format1BppIndexed.Png".
 
-### نموذج التعليمات البرمجية المصدر لـ Format 1Bpp المفهرسة باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para formato 1Bpp indexado usando Aspose.Words para .NET
 
 ```csharp 
  
-			 // المسار إلى دليل المستند الخاص بك
+			 // Ruta a su directorio de documentos
 			 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
             
             Document doc = new Document(dataDir + "Rendering.docx");
@@ -68,10 +68,10 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
         
 ```
 
-### خاتمة
+### Conclusión
 
-في هذا البرنامج التعليمي ، استكشفنا ميزة التنسيق المفهرس 1Bpp مع Aspose.Words for .NET. لقد تعلمنا كيفية تنسيق الصور في مستند بتنسيق PNG بعمق لون 1 بت لكل بكسل (1 بت لكل بكسل) ووضع ألوان مفهرس.
+En este tutorial, exploramos la función de formato indexado 1Bpp con Aspose.Words para .NET. Aprendimos a formatear imágenes en un documento en formato PNG con una profundidad de color de 1 bit por píxel (1 bpp) y un modo de color indexado.
 
-هذه الميزة مفيدة عندما تريد الحصول على صور ذات عمق ألوان منخفض وحجم ملف صغير. يسمح التنسيق المفهرس 1Bpp بتمثيل الصور باستخدام لوحة ألوان مفهرسة ، والتي يمكن أن تكون مفيدة لبعض التطبيقات المحددة.
+Esta característica es útil cuando desea obtener imágenes con poca profundidad de color y tamaño de archivo pequeño. El formato indexado de 1Bpp permite que las imágenes se representen mediante una paleta de colores indexada, lo que puede ser beneficioso para algunas aplicaciones específicas.
 
-تقدم Aspose.Words for .NET مجموعة كبيرة من الميزات المتقدمة لمعالجة المستندات وإنشائها. يعد التنسيق المفهرس 1Bpp أحد الأدوات القوية العديدة التي يضعها تحت تصرفك.
+Aspose.Words para .NET ofrece una amplia gama de funciones avanzadas para la manipulación y generación de documentos. El formato indexado 1Bpp es una de las muchas herramientas poderosas que pone a tu disposición.

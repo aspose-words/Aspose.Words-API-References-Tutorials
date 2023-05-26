@@ -1,29 +1,29 @@
 ---
-title: أدخل فاصل
-linktitle: أدخل فاصل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج فواصل الصفحات في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Insertar descanso
+linktitle: Insertar descanso
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a insertar saltos de página en documentos de Word usando Aspose.Words para .NET. Guía paso por paso.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/insert-break/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج فواصل الصفحات في مستند Word باستخدام طريقة InsertBreak في Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من التحكم في فواصل الصفحات داخل المستند الخاص بك.
+En este completo ejemplo, aprenderá a insertar saltos de página en un documento de Word utilizando el método InsertBreak en Aspose.Words para .NET. Lo guiaremos a través del proceso y le proporcionaremos los fragmentos de código C# necesarios. Al final de esta guía, podrá controlar los saltos de página dentro de su documento.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
+- Aspose.Words para la biblioteca .NET instalada en su sistema.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Paso 1: Cree un nuevo documento y DocumentBuilder
+Para comenzar, cree un nuevo documento usando la clase Document e inicialice un objeto DocumentBuilder:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل المحتوى وفواصل الصفحات
-بعد ذلك ، استخدم طريقة Writeln لفئة DocumentBuilder لإضافة محتوى إلى المستند. لإدراج فاصل صفحات ، استخدم الأسلوب InsertBreak مع المعلمة BreakType.PageBreak:
+## Paso 2: Insertar contenido y saltos de página
+A continuación, utilice el método Writeln de la clase DocumentBuilder para agregar contenido al documento. Para insertar un salto de página, utilice el método InsertBreak con el parámetro BreakType.PageBreak:
 
 ```csharp
 builder.Writeln("This is page 1.");
@@ -35,15 +35,15 @@ builder.InsertBreak(BreakType.PageBreak);
 builder.Writeln("This is page 3.");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج المحتوى وفواصل الصفحات ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Paso 3: Guarde el documento
+Después de insertar el contenido y los saltos de página, guarde el documento en un archivo usando el método Guardar de la clase Documento:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-### مثال على كود المصدر لإدراج استراحة باستخدام Aspose.Words for .NET
-فيما يلي شفرة المصدر الكاملة لإدخال فواصل الصفحات باستخدام Aspose.Words for .NET:
+### Código fuente de ejemplo para Insertar ruptura usando Aspose.Words para .NET
+Aquí está el código fuente completo para insertar saltos de página usando Aspose.Words para .NET:
 
 ```csharp
 
@@ -62,8 +62,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 			
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Recuerde ajustar el código de acuerdo con sus requisitos específicos y mejorarlo con funciones adicionales según sea necesario.
 
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج فواصل الصفحات في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن التحكم في ترقيم الصفحات وتخطيط المستند عن طريق إدراج فواصل الصفحات في المواضع المطلوبة.
+## Conclusión
+¡Felicidades! Ha aprendido con éxito cómo insertar saltos de página en un documento de Word usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, ahora puede controlar la paginación y el diseño de su documento insertando saltos de página en las posiciones deseadas.

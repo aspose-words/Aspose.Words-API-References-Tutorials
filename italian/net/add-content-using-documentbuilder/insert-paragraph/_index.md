@@ -1,21 +1,21 @@
 ---
-title: أدخل فقرة
-linktitle: أدخل فقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج فقرات منسقة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Inserisci paragrafo
+linktitle: Inserisci paragrafo
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire paragrafi formattati nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-paragraph/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج فقرات في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة فقرات منسقة إلى مستنداتك.
+In questo tutorial completo imparerai come inserire paragrafi in un documento Word usando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo i frammenti di codice C# necessari. Alla fine di questa guida, sarai in grado di aggiungere paragrafi formattati ai tuoi documenti.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti prerequisiti:
+- Aspose.Words per la libreria .NET installata sul tuo sistema.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Passaggio 1: creare un nuovo documento e DocumentBuilder
+Per iniziare, crea un nuovo documento utilizzando la classe Document e inizializza un oggetto DocumentBuilder:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,8 +23,8 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تعيين الخط والتنسيق
-بعد ذلك ، قم بإعداد خصائص الخط وتنسيق الفقرة باستخدام كائنات Font و ParagraphFormat على التوالي:
+## Passaggio 2: imposta il carattere e la formattazione
+Successivamente, imposta le proprietà del carattere e la formattazione del paragrafo utilizzando rispettivamente gli oggetti Font e ParagraphFormat:
 
 ```csharp
 Font font = builder.Font;
@@ -40,22 +40,22 @@ paragraphFormat.Alignment = ParagraphAlignment.Justify;
 paragraphFormat.KeepTogether = true;
 ```
 
-## الخطوة 3: أدخل فقرة
-بعد إعداد الخط والتنسيق ، استخدم طريقة Writeln لفئة DocumentBuilder لإدراج فقرة كاملة:
+## Passaggio 3: inserire un paragrafo
+Dopo aver impostato il carattere e la formattazione, utilizzare il metodo Writeln della classe DocumentBuilder per inserire un intero paragrafo:
 
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```
 
-## الخطوة 4: احفظ المستند
-بعد إدراج الفقرة ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Passaggio 4: salvare il documento
+Dopo aver inserito il paragrafo, salvare il documento in un file utilizzando il metodo Save della classe Document:
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
-## مثال على كود المصدر لإدراج فقرة باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال فقرة باستخدام Aspose.Words for .NET:
+## Esempio di codice sorgente per Inserisci paragrafo utilizzando Aspose.Words per .NET
+Ecco il codice sorgente completo per l'inserimento di un paragrafo utilizzando Aspose.Words per .NET:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -79,5 +79,5 @@ builder.Writeln("A whole paragraph.");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج فقرات منسقة في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إضافة فقرات مخصصة مع خطوط معينة وتنسيق ومحاذاة مستنداتك.
+## Conclusione
+Congratulazioni! Hai imparato con successo come inserire paragrafi formattati in un documento di Word utilizzando Aspose.Words per .NET. Seguendo la guida passo passo e utilizzando il codice sorgente fornito, ora puoi aggiungere paragrafi personalizzati con caratteri, formattazione e allineamento specifici ai tuoi documenti.

@@ -1,79 +1,79 @@
 ---
-title: تنظيف النمط المكرر
-linktitle: تنظيف النمط المكرر
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتنظيف الأنماط المكررة في مستند باستخدام Aspose.Words for .NET. تم تضمين كود المصدر الكامل.
+title: Pulisci stile duplicato
+linktitle: Pulisci stile duplicato
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida passo passo per ripulire gli stili duplicati in un documento utilizzando Aspose.Words per .NET. Codice sorgente completo incluso.
 type: docs
 weight: 10
 url: /it/net/programming-with-document-options-and-settings/cleanup-duplicate-style/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال التعليمات البرمجية المصدر C # خطوة بخطوة لتنظيف الأنماط المكررة باستخدام Aspose.Words for .NET. تساعد هذه الميزة في إزالة الأنماط المكررة من المستند.
+In questo tutorial, ti guideremo passo passo attraverso il codice sorgente C# per ripulire gli stili duplicati con Aspose.Words per .NET. Questa funzione aiuta a rimuovere gli stili duplicati da un documento.
 
-## الخطوة 1: إعداد المشروع
+## Passaggio 1: impostazione del progetto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Per iniziare, crea un nuovo progetto C# nel tuo IDE preferito. Assicurarsi che nel progetto si faccia riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة الثانية: تحميل المستند
+## Passaggio 2: caricamento del documento
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد تنظيفه. استخدم الكود التالي لتحميل المستند:
+In questo passaggio, caricheremo il documento Word che vogliamo ripulire. Utilizzare il seguente codice per caricare il documento:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Sostituire`"YOUR DOCUMENTS DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento.
 
-## الخطوة 3: عد الأنماط قبل التنظيف
+## Passaggio 3: contare gli stili prima della pulizia
 
-قبل متابعة التنظيف ، سنقوم بحساب عدد الأنماط الموجودة في المستند. استخدم الكود التالي لعرض عدد الأنماط:
+Prima di procedere con la pulizia, conteremo il numero di stili presenti nel documento. Utilizzare il codice seguente per visualizzare il conteggio degli stili:
 
 ```csharp
 Console.WriteLine(doc.Styles.Count);
 ```
 
-يعرض هذا البيان عدد الأنماط الموجودة في المستند.
+Questa istruzione mostra il numero di stili presenti nel documento.
 
-## الخطوة 4: تنظيف الأنماط المكررة
+## Passaggio 4: elimina gli stili duplicati
 
-لنقم الآن بتنظيف الأنماط المكررة من المستند. استخدم الكود التالي لإجراء التنظيف:
+Ora ripuliamo gli stili duplicati dal documento. Utilizzare il codice seguente per eseguire la pulizia:
 
 ```csharp
 CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 doc. Cleanup(options);
 ```
 
- يقوم هذا الرمز بتنظيف الأنماط المكررة من المستند باستخدام الخيارات المحددة. في هذا المثال ، قمنا بتمكين`DuplicateStyle` خيار لتنظيف الأنماط المكررة.
+ Questo codice elimina gli stili duplicati dal documento utilizzando le opzioni specificate. In questo esempio, abbiamo abilitato il`DuplicateStyle` opzione per ripulire gli stili duplicati.
 
-## الخطوة 5: عد الأنماط بعد التنظيف
+## Passaggio 5: contare gli stili dopo la pulizia
 
-بعد إجراء التنظيف ، سنحسب عدد الأنماط مرة أخرى للتحقق مما إذا كان قد انخفض. استخدم الكود التالي لعرض عدد الأنماط الجديدة:
+Dopo aver eseguito la pulizia, conteremo nuovamente il numero di stili per verificare se è diminuito. Utilizzare il codice seguente per visualizzare il nuovo conteggio degli stili:
 
 ```csharp
 Console.WriteLine(doc.Styles.Count);
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");
 ```
 
-يعرض هذا البيان عدد الأنماط المتبقية بعد التنظيف.
+Questa dichiarazione mostra il numero di stili rimanenti dopo la pulizia.
 
-### مثال على شفرة المصدر لـ Cleanup Duplicate Style باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Cleanup Duplicate Style utilizzando Aspose.Words per .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
-	// عدد الأنماط قبل التنظيف.
+	// Conteggio degli stili prima della pulizia.
 	Console.WriteLine(doc.Styles.Count);
 
-	// ينظف الأنماط المكررة من المستند.
+	// Elimina gli stili duplicati dal documento.
 	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 	doc.Cleanup(options);
 
-	//عدد الأنماط بعد تقليل التنظيف.
+	//Il conteggio degli stili dopo la pulizia è stato ridotto.
 	Console.WriteLine(doc.Styles.Count);
 
 	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");

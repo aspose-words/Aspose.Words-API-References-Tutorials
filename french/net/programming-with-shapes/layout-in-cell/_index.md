@@ -1,38 +1,38 @@
 ---
-title: التخطيط في الخلية
-linktitle: التخطيط في الخلية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تخطيط شكل داخل خلية جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Mise en page dans la cellule
+linktitle: Mise en page dans la cellule
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à mettre en page une forme dans une cellule de tableau dans un document Word à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-shapes/layout-in-cell/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية تخطيط شكل داخل خلية جدول في مستند Word باستخدام Aspose.Words for .NET. بضبط خصائص الشكل واستخدام خيارات التخطيط ، يمكنك التحكم في موضع الشكل ومظهره داخل الخلية.
+Ce didacticiel explique comment mettre en page une forme dans une cellule de tableau dans un document Word à l'aide de Aspose.Words pour .NET. En ajustant les propriétés de la forme et en utilisant les options de mise en page, vous pouvez contrôler le positionnement et l'apparence de la forme dans la cellule.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Conditions préalables
+Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Bibliothèque Aspose.Words pour .NET installée.
+- Connaissance de base de C# et travail avec des documents Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Étape 1 : Configurer le répertoire de documents
+ Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Étape 2 : Créer un nouveau document et DocumentBuilder
+ Créez une nouvelle instance de`Document` classe et une`DocumentBuilder` objet de travailler avec le document.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: بناء الجدول
- استخدم ال`StartTable`, `EndTable`, `InsertCell` ، و`Write` طرق`DocumentBuilder` كائن لبناء الجدول. قم بتعيين ارتفاع الصف المطلوب وقاعدة الارتفاع باستخدام`RowFormat` ملكيات.
+## Étape 3 : Créer le tableau
+ Utilisez le`StartTable`, `EndTable`, `InsertCell` , et`Write` méthodes de la`DocumentBuilder` objet pour construire une table. Définissez la hauteur de ligne et la règle de hauteur souhaitées à l'aide des`RowFormat` propriétés.
 
 ```csharp
 builder.StartTable();
@@ -47,8 +47,8 @@ for (int i = 0; i < 31; i++)
 builder.EndTable();
 ```
 
-## الخطوة 4: إنشاء الشكل وتنسيقه
- إنشاء`Shape` الكائن وتكوين خصائصه لتحديد العلامة المائية. عيّن الشكل الذي سيتم تخطيطه داخل خلية باستخدام`IsLayoutInCell` ملكية.
+## Étape 4 : Créer et formater la forme
+ Créer un`Shape` objet et configurez ses propriétés pour définir le filigrane. Définissez la forme à disposer dans une cellule à l'aide de la`IsLayoutInCell` propriété.
 
 ```csharp
 Shape watermark = new Shape(doc, ShapeType.TextPlainText)
@@ -64,8 +64,8 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 };
 ```
 
-## الخطوة 5: تخصيص الشكل
- قم بتخصيص مظهر ونص شكل العلامة المائية عن طريق تعيين خصائص مثل`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`، إلخ.
+## Étape 5 : Personnalisez la forme
+ Personnalisez l'apparence et le texte de la forme du filigrane en définissant des propriétés telles que`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`etc.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -76,8 +76,8 @@ watermark.Name = $"WaterMark_{Guid.NewGuid()}";
 watermark.WrapType = WrapType.None;
 ```
 
-## الخطوة 6: أدخل الشكل في المستند
- أدخل شكل العلامة المائية في المستند باستخدام ملف`InsertNode` طريقة`DocumentBuilder` هدف. ضع الشكل باستخدام`MoveTo` طريقة وضعه بعد آخر تشغيل في المستند.
+## Étape 6 : Insérez la forme dans le document
+ Insérez la forme du filigrane dans le document à l'aide du`InsertNode` méthode de la`DocumentBuilder` objet. Positionnez la forme à l'aide de la`MoveTo` méthode pour le placer après la dernière exécution dans le document.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -85,8 +85,8 @@ builder.MoveTo(run);
 builder.InsertNode(watermark);
 ```
 
-## الخطوة 7: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithShapes.LayoutInCell.docx".
+## Étape 7 : Enregistrer le document
+ Enregistrez le document dans le répertoire spécifié à l'aide de la`Save` méthode. Indiquez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous "WorkingWithShapes.LayoutInCell.docx".
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);
@@ -95,10 +95,10 @@ doc
 .Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-### مثال على شفرة المصدر لـ Layout In Cell باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Layout In Cell en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -117,7 +117,7 @@ doc
 	{
 		RelativeHorizontalPosition = RelativeHorizontalPosition.Page,
 		RelativeVerticalPosition = RelativeVerticalPosition.Page,
-		IsLayoutInCell = true, // اعرض الشكل خارج خلية الجدول إذا كان سيتم وضعه في خلية.
+		IsLayoutInCell = true, // Affichez la forme en dehors de la cellule du tableau si elle sera placée dans une cellule.
 		Width = 300,
 		Height = 70,
 		HorizontalAlignment = HorizontalAlignment.Center,
@@ -137,4 +137,4 @@ doc
 	doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تخطيط شكل داخل خلية جدول في مستند Word باستخدام Aspose.Words for .NET.
+C'est ça! Vous avez réussi à disposer une forme dans une cellule de tableau dans un document Word à l'aide de Aspose.Words pour .NET.

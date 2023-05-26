@@ -1,44 +1,44 @@
 ---
-title: توقيع الوثيقة
-linktitle: توقيع الوثيقة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية توقيع مستند Word رقميًا باستخدام Aspose.Words for .NET.
+title: Belgeyi İmzala
+linktitle: Belgeyi İmzala
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesini dijital olarak nasıl imzalayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-digital-signatures/sign-document/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر خطوات استخدام ميزة توقيع المستند مع Aspose.Words for .NET. تتيح لك هذه الميزة التوقيع رقميًا على مستند Word باستخدام شهادة. اتبع الخطوات التالية:
+Bu eğitimde, belge imzalama özelliğini Aspose.Words for .NET ile kullanma adımlarında size yol göstereceğiz. Bu özellik, bir sertifika kullanarak bir Word belgesini dijital olarak imzalamanıza olanak tanır. Aşağıdaki adımları takip et:
 
-## الخطوة الأولى: تحميل الشهادة
+## 1. Adım: Sertifikayı yükleme
 
-ابدأ بتحميل شهادة التوقيع باستخدام فئة CertificateHolder:
+CertificateHolder sınıfını kullanarak imzalama sertifikasını yükleyerek başlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-تأكد من تحديد المسار الصحيح لشهادتك وكلمة المرور المرتبطة بها.
+Sertifikanızın ve ilişkili parolanızın doğru yolunu belirttiğinizden emin olun.
 
-## الخطوة الثانية: توقيع الوثيقة
+## 2. Adım: Belgeyi imzalama
 
-استخدم فئة DigitalSignatureUtil لتوقيع الوثيقة:
+Belgeyi imzalamak için DigitalSignatureUtil sınıfını kullanın:
 
 ```csharp
 DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
 	certHolder);
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند المصدر والمستند الموقع.
+Kaynak belge ve imzalı belge için doğru yolları belirttiğinizden emin olun.
 
-### مثال على الكود المصدري لتوقيع الوثيقة باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Sign Document için örnek kaynak kodu
 
-فيما يلي الكود المصدري الكامل للتوقيع على مستند باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET ile bir belgeyi imzalamak için eksiksiz kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 	
@@ -47,7 +47,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة توقيع مستند Word باستخدام Aspose.Words for .NET.
+Bu adımları izleyerek bir Word belgesini Aspose.Words for .NET ile kolayca imzalayabilirsiniz.
 
 
 

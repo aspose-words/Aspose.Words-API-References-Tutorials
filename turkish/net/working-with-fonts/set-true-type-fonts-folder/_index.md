@@ -1,31 +1,31 @@
 ---
-title: تعيين مجلد خطوط النوع الحقيقي
-linktitle: تعيين مجلد خطوط النوع الحقيقي
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لإعداد مجلد خطوط الكتابة الصحيحة عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: True Type Yazı Tipleri Klasörünü Ayarla
+linktitle: True Type Yazı Tipleri Klasörünü Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir belgeyi işlerken gerçek tip yazı tipi klasörünü ayarlamak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-true-type-fonts-folder/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلد خطوط الكتابة الحقيقية عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلد مخصص يحتوي على خطوط True Type لاستخدامه عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir belgeyi işlerken gerçek tip yazı tipleri klasörünü ayarlamak için size adım adım yol göstereceğiz. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sağlayacağız. Bu eğitimin sonunda, belgelerinizi Aspose.Words for .NET kullanarak işlerken True Type yazı tiplerini içeren özel bir klasörü nasıl belirteceğinizi öğreneceksiniz.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+Öncelikle, belgeler dizininize giden yolu ayarlamanız gerekir. Bu, düzenlenen işlenmiş belgenizi kaydetmek istediğiniz konumdur. "BELGELER DİZİNİNİZİ" uygun yolla değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند للعرض
- بعد ذلك ، تحتاج إلى تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## 2. Adım: Oluşturulacak belgeyi yükleyin
+ Ardından, kullanarak işlenecek belgeyi yüklemeniz gerekir.`Document` sınıf. Doğru belge yolunu belirttiğinizden emin olun.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تعيين مجلد خطوط النوع الحقيقي
- يمكنك الآن تحديد مجلد خطوط الكتابة الحقيقية لاستخدامها عند التقديم عن طريق إنشاء مثيل لملف`FontSettings` الطبقة واستخدام`SetFontsFolder()` طريقة لتعيين مجلد الخطوط. يمكنك تحديد مجلد مخصص يحتوي على خطوط True Type الخاصة بك. المعلمة الثانية ل`SetFontsFolder()` يشير إلى ما إذا كنت تريد البحث في المجلدات الفرعية للمجلد المحدد أيضًا.
+## 3. Adım: True Type Fonts Klasörünü Ayarlayın
+ Artık, gerçek tip yazı tiplerinin bir örneğini oluşturarak oluşturma sırasında kullanılacak klasörü belirtebilirsiniz.`FontSettings` sınıf ve kullanarak`SetFontsFolder()` yazı tipi klasörünü ayarlama yöntemi. True Type yazı tiplerinizi içeren özel bir klasör belirtebilirsiniz. için ikinci parametre`SetFontsFolder()` belirtilen klasörün alt klasörlerini de aramak isteyip istemediğinizi belirtir.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -33,29 +33,29 @@ fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 4: احفظ المستند المقدم
- أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## 4. Adım: Oluşturulan belgeyi kaydedin
+ Son olarak, işlenen belgeyi kullanarak bir dosyaya kaydedebilirsiniz.`Save()` yöntemi`Document` sınıf. Doğru yolu ve dosya adını belirttiğinizden emin olun.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set True Type Fonts Folder باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Set True Type Fonts Klasörü için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Rendering.docx");
 	FontSettings fontSettings = new FontSettings();
-	// لاحظ أن هذا الإعداد سيتجاوز أي مصادر افتراضية للخطوط يتم البحث عنها افتراضيًا. الآن سيتم البحث عن هذه المجلدات فقط
-	// الخطوط عند تقديم الخطوط أو دمجها. لإضافة مصدر خط إضافي مع الاحتفاظ بمصادر خطوط النظام ، استخدم كلاً من FontSettings.GetFontSources و
-	// FontSettings.SetFontSources بدلاً من ذلك
+	// Bu ayarın, varsayılan olarak aranmakta olan tüm varsayılan yazı tipi kaynaklarını geçersiz kılacağını unutmayın. Şimdi sadece bu klasörler aranacak
+	// Yazı tiplerini oluştururken veya katıştırırken yazı tipleri. Sistem yazı tipi kaynaklarını korurken fazladan bir yazı tipi kaynağı eklemek için hem FontSettings.GetFontSources hem de
+	// Bunun yerine FontSettings.SetFontSources
 	fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-	// ضبط إعدادات الخط
+	// Yazı tipi ayarlarını ayarla
 	doc.FontSettings = fontSettings;
 	doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلد خطوط الكتابة الحقيقية عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلد مخصص يحتوي على خطوط True Type لاستخدامها عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في الخطوط المستخدمة وتخصيصها عند تقديم مستنداتك وفقًا لاحتياجاتك الخاصة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir belgeyi işlerken gerçek tip yazı tiplerini nasıl ayarlayacağımızı öğrendik. Bu adım adım kılavuzu izleyerek, belgelerinizi işlerken kullanmak üzere True Type yazı tiplerini içeren özel bir klasörü kolayca belirleyebilirsiniz. Aspose.Words, belgelerinizdeki yazı tipleriyle çalışmak için güçlü ve esnek bir API sunar. Bu bilgiyle, belgelerinizi özel ihtiyaçlarınıza göre işlerken kullanılan yazı tiplerini kontrol edebilir ve özelleştirebilirsiniz.

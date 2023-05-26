@@ -1,29 +1,29 @@
 ---
-title: تنسيق قائمة متعددة المستويات
-linktitle: تنسيق قائمة متعددة المستويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء قائمة متعددة المستويات وتطبيق تنسيق مخصص باستخدام Aspose.Words for .NET.
+title: 多级列表格式
+linktitle: 多级列表格式
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 创建多级列表和应用自定义格式。
 type: docs
 weight: 10
 url: /zh/net/document-formatting/multilevel-list-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية استخدام ميزة تنسيق القائمة متعددة المستويات مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+在本教程中，我们将向您展示如何使用 Aspose.Words for .NET 的多级列表格式化功能。按照以下步骤了解源代码并应用更改。
 
-## الخطوة 1: إنشاء وتكوين المستند
+## 第 1 步：创建和配置文档
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+首先，创建一个新文档和一个关联的 DocumentBuilder 对象。就是这样：
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تنسيق القائمة متعددة المستويات
+## 第 2 步：格式化多级列表
 
-سنقوم الآن بتطبيق تنسيق القائمة متعدد المستويات باستخدام الطرق المتاحة في كائن DocumentBuilder. إليك الطريقة:
+我们现在将使用 DocumentBuilder 对象中可用的方法来应用多级列表格式。就是这样：
 
 ```csharp
 builder.ListFormat.ApplyNumberDefault();
@@ -47,22 +47,22 @@ builder.Writeln("Element 3");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## الخطوة 3: حفظ المستند
+## 第 3 步：保存文档
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+插入文本输入表单域后，使用`Save`方法。确保提供适当的文件路径：
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 ```
 
-### مثال على شفرة المصدر لتنسيق قائمة متعددة المستويات باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的多级列表格式示例源代码
 
-فيما يلي رمز المصدر الكامل لميزة تنسيق القائمة متعددة المستويات باستخدام Aspose.Words for .NET:
+以下是 Aspose.Words for .NET 的多级列表格式化功能的完整源代码：
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -91,4 +91,4 @@ doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من إنشاء قائمة متعددة المستويات وتطبيق التنسيق المناسب على كل مستوى باستخدام Aspose.Words for .NET.
+使用此代码，您将能够创建一个多级列表并使用 Aspose.Words for .NET 将适当的格式应用到每个级别。

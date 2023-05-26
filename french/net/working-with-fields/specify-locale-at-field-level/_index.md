@@ -1,53 +1,53 @@
 ---
-title: حدد الإعدادات المحلية على مستوى الحقل
-linktitle: حدد الإعدادات المحلية على مستوى الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديد الترجمة على مستوى الحقل في مستندات Word باستخدام Aspose.Words for .NET.
+title: Spécifier les paramètres régionaux au niveau du champ
+linktitle: Spécifier les paramètres régionaux au niveau du champ
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à spécifier la localisation au niveau du champ dans les documents Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fields/specify-locale-at-field-level/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية التي تسمح بتحديد الترجمة على مستوى الحقل باستخدام ميزة Aspose.Words for .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Voici un guide étape par étape pour expliquer le code source C# suivant qui permet de spécifier la localisation au niveau du champ à l'aide de la fonctionnalité Aspose.Words pour .NET. Assurez-vous d'avoir inclus la bibliothèque Aspose.Words dans votre projet avant d'utiliser ce code.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## Étape 1 : Définir le chemin du répertoire de documents
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
+Assurez-vous de spécifier le chemin correct vers votre répertoire de documents où le document modifié sera enregistré.
 
-## الخطوة 2: إنشاء منشئ المستندات
+## Étape 2 : créer un générateur de documents
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- نحن هنا بصدد إنشاء مثيل لـ`DocumentBuilder` فئة تسمح لنا بإضافة حقول إلى المستند.
+ Ici, nous créons une instance de`DocumentBuilder` class qui nous permettra d'ajouter des champs au document.
 
-## الخطوة 3: أدخل حقل التاريخ بموقع محدد
+## Étape 3 : Insérez un champ de date avec un emplacement spécifique
 
 ```csharp
 Field field = builder. InsertField(FieldType.FieldDate, true);
 field.LocaleId = 1049;
 ```
 
- نستخدم منشئ المستندات لإدخال حقل من النوع`FieldType.FieldDate` في المستند. عن طريق تحديد`LocaleId` ملكية ل`1049`، نحدد الترجمة الروسية لهذا المجال.
+ On utilise le générateur de document pour insérer un champ de type`FieldType.FieldDate` dans le document. En réglant le`LocaleId` propriété à`1049`, nous spécifions la localisation russe pour ce champ.
 
-## الخطوة 4: احفظ المستند المعدل
+## Étape 4 : Enregistrer le document modifié
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
 ```
 
-أخيرًا ، نحفظ المستند المعدل بالموقع المحدد في ملف محدد.
+Enfin, nous enregistrons le document modifié avec l'emplacement spécifié dans un fichier spécifié.
 
-### نموذج لشفرة المصدر لتحديد الأقلمة على مستوى الحقل باستخدام Aspose.Words for .NET
+### Exemple de code source pour spécifier la localisation au niveau du champ avec Aspose.Words pour .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 DocumentBuilder builder = new DocumentBuilder();
@@ -58,4 +58,4 @@ field.LocaleId = 1049;
 builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
 ```
 
-كان هذا مثالًا على كود مصدر لتحديد الترجمة على مستوى الحقل في مستند باستخدام Aspose.Words for .NET. يمكنك استخدام هذا الرمز لإدراج حقول التاريخ بمواقع محددة في مستندات Word الخاصة بك.
+Il s'agissait d'un exemple de code source pour spécifier la localisation au niveau du champ dans un document utilisant Aspose.Words pour .NET. Vous pouvez utiliser ce code pour insérer des champs de date avec des emplacements spécifiques dans vos documents Word.

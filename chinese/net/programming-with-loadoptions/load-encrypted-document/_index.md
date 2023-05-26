@@ -1,52 +1,52 @@
 ---
-title: تحميل مستند مشفر
-linktitle: تحميل مستند مشفر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل وحفظ المستندات المشفرة باستخدام Aspose.Words for .NET.
+title: 加载加密文件
+linktitle: 加载加密文件
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 加载和保存加密文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/load-encrypted-document/
 ---
 
-عند العمل مع المستندات المشفرة في تطبيق C # ، من المهم أن تكون قادرًا على تحميلها بشكل صحيح من خلال توفير كلمة المرور الصحيحة. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحميل المستندات المشفرة باستخدام خيارات التحميل المناسبة. في هذا الدليل المفصل خطوة بخطوة ، سنوضح لك كيفية استخدام كود المصدر C # الخاص بـ Aspose.Words for .NET لتحميل مستند مشفر باستخدام خيارات تحميل LoadOptions.
+在 C# 应用程序中处理加密文档时，能够通过提供正确的密码正确加载它们非常重要。使用适用于 .NET 的 Aspose.Words 库，您可以使用适当的加载选项轻松加载加密文档。在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 的 C# 源代码使用 LoadOptions 加载选项加载加密文档。
 
-## فهم مكتبة Aspose.Words
+## 理解 Aspose.Words 库
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库很重要。 Aspose.Words 是一个强大的库，可以在包括.NET 在内的不同平台上创建、编辑、转换和保护 Word 文档。它提供了许多用于操作文档的功能，例如插入文本、更改格式、添加部分等等。
 
-## تحميل مستند مشفر
+## 加载加密文档
 
-تتمثل الخطوة الأولى في تحميل مستند مشفر باستخدام خيارات التحميل المناسبة. في حالتنا ، نستخدم فئة Document لتحميل المستند عن طريق تحديد مسار المستند وكلمة المرور. هنا مثال :
+第一步是使用适当的上传选项上传加密文档。在我们的例子中，我们使用 Document 类通过指定文档路径和密码来加载文档。这是一个例子：
 
 ```csharp
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Encrypted.docx" الموجود في دليل المستندات باستخدام كلمة المرور "password".
+在此示例中，我们使用密码“password”加载位于文档目录中的文档“Encrypted.docx”。
 
-## حفظ مستند مشفر
+## 保存加密文档
 
-بعد تحميل مستند مشفر ، يمكنك أيضًا حفظه عن طريق تحديد كلمة مرور جديدة لملف الإخراج. في مثالنا ، نستخدم فئة OdtSaveOptions لحفظ المستند بتنسيق ODT بكلمة مرور جديدة. هيريس كيفية القيام بذلك:
+上传加密文档后，您还可以通过为输出文件指定新密码来保存它。在我们的示例中，我们使用 OdtSaveOptions 类使用新密码以 ODT 格式保存文档。方法如下：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 
-في هذا المثال ، نحفظ المستند باسم "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt" من خلال تحديد كلمة المرور الجديدة "newpassword".
+在此示例中，我们通过指定新密码“newpassword”以名称“WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt”保存文档。
 
-### عينة من التعليمات البرمجية المصدر لـ LoadOptions مع وظيفة "تحميل مستند مشفر" باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的具有“加载加密文档”功能的 LoadOptions 示例源代码
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل مستند مشفر بكلمة المرور المحددة
+//载入指定密码的加密文档
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-//احفظ مستندًا مشفرًا بكلمة مرور جديدة
+//使用新密码保存加密文档
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 
-## خاتمة
+## 结论
 
-في هذا الدليل ، شرحنا كيفية تحميل وحفظ المستندات المشفرة باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. تحميل المستندات المشفرة يحافظ على أمان بياناتك ويسمح لك بالعمل مع المستندات المحمية في Aspose.Words.
+在本指南中，我们解释了如何使用 .NET 的 Aspose.Words 库加载和保存加密文档。按照提供的步骤并使用提供的 C# 源代码，您可以轻松地将此功能应用到您的 C# 应用程序中。上传加密文档可确保您的数据安全，并允许您在 Aspose.Words 中使用受保护的文档。

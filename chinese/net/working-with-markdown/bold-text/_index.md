@@ -1,51 +1,51 @@
 ---
-title: نص عريض
-linktitle: نص عريض
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية كتابة نص غامق باستخدام Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: 加粗字体
+linktitle: 加粗字体
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 分步指南将文本加粗。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/bold-text/
 ---
 
-في هذا المثال ، سنخبرك بكيفية كتابة نص غامق باستخدام Aspose.Words for .NET. النص الغامق يجعله أكثر وضوحًا ويعطيه أهمية أكبر.
+在本例中，我们将告诉您如何使用 Aspose.Words for .NET 将文本加粗。粗体文本使其更显眼并更加突出。
 
-## الخطوة 1: استخدام منشئ المستندات
+## 第 1 步：使用文档生成器
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+首先，我们将使用文档生成器将内容添加到我们的文档中。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: نص عريض
+## 第 2 步：粗体文本
 
- يمكننا جعل النص غامقًا عن طريق تعيين منشئ المستندات`Font.Bold` ملكية ل`true`.
+我们可以通过设置文档生成器的`Font.Bold`财产给`true`.
 
 ```csharp
 builder.Font.Bold = true;
 ```
 
-## الخطوة 3: أضف محتوى إلى المستند
+## 第 3 步：向文档添加内容
 
- يمكننا الآن إضافة محتوى إلى المستند باستخدام طرق إنشاء المستندات ، مثل`Writeln`، مما يضيف سطرًا من النص.
+现在我们可以使用文档生成器方法向文档添加内容，例如`Writeln`添加一行文本。
 
 ```csharp
 builder.Writeln("This text will be bold");
 ```
 
-## مثال على كود المصدر للنص الغامق باستخدام Aspose.Words for .NET
+## 使用 Aspose.Words for .NET 的粗体文本示例源代码
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	//使用文档生成器向文档添加内容。
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص غامقًا.
+	//将文本设为粗体。
 	builder.Font.Bold = true;
 	builder.Writeln("This text will be Bold");  
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية كتابة نص غامق باستخدام Aspose.Words for .NET.
+恭喜！您现在已经学习了如何使用 Aspose.Words for .NET 将文本加粗。
 
 

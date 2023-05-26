@@ -1,33 +1,33 @@
 ---
-title: المثيل الافتراضي لإعدادات الخط
-linktitle: المثيل الافتراضي لإعدادات الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET.
+title: 字体设置默认实例
+linktitle: 字体设置默认实例
+second_title: Aspose.Words for .NET API 参考
+description: 在本教程中，学习如何使用 Aspose.Words for .NET 在 Word 文档中配置默认字体设置。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/font-settings-default-instance/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تسمح لك إعدادات الخط الافتراضية بتحديد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+在本教程中，我们将带您了解如何使用 .NET 的 Aspose.Words 库在 Word 文档中配置默认字体设置。默认字体设置允许您指定加载和呈现文档时使用的字体源。我们将带您一步一步地帮助您理解和实现您的 .NET 项目中的代码。
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## 先决条件
+在开始之前，请确保您拥有以下物品：
+- C# 编程语言的应用知识
+- 项目中安装的 .NET 的 Aspose.Words 库
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 第一步：定义文档目录
+首先，您需要将目录路径设置为您的 Word 文档所在的位置。代替`"YOUR DOCUMENT DIRECTORY"`在具有适当路径的代码中。
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تكوين إعدادات الخط الافتراضية
- بعد ذلك ، سننشئ مثيلًا لـ`FontSettings` استخدام`FontSettings.DefaultInstance`، ثم سنحدد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها. في هذا المثال ، نستخدم مصدر خط نظام ومصدر خط مجلد.
+## 第 2 步：配置默认字体设置
+接下来，我们将创建一个实例`FontSettings`使用`FontSettings.DefaultInstance`，然后我们将指定加载和呈现文档时使用的字体源。在此示例中，我们使用系统字体源和文件夹字体源。
 
 ```csharp
-// تكوين إعدادات الخط الافتراضية
+//配置默认字体设置
 FontSettings fontSettings = FontSettings.DefaultInstance;
 fontSettings.SetFontsSources(new FontSourceBase[]
 {
@@ -36,21 +36,21 @@ new FolderFontSource("C:\\MyFonts\\", true)
 });
 ```
 
-## الخطوة 3: تحميل المستند مع إعدادات الخط
- الآن سنقوم بتحميل المستند باستخدام`LoadOptions` وتحديد إعدادات الخط المراد استخدامها.
+## 第 3 步：上传带有字体设置的文档
+现在我们将使用加载文档`LoadOptions`并指定要使用的字体设置。
 
 ```csharp
-// قم بتحميل المستند بإعدادات الخط
+//使用字体设置加载文档
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.FontSettings = fontSettings;
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
 
-### نموذج كود مصدر لإعدادات الخط الافتراضي باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的字体设置默认实例的示例源代码 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;
@@ -65,5 +65,5 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET. من خلال تحديد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها ، يمكنك التحكم في مظهر الخطوط في مستنداتك. لا تتردد في استخدام هذه الميزة لتخصيص إعدادات الخط في مشاريعك.
+## 结论
+在本教程中，我们了解了如何使用 Aspose.Words for .NET 在 Word 文档中配置默认字体设置。通过指定加载和呈现文档时使用的字体源，您可以控制文档中字体的外观。随意使用此功能自定义项目中的字体设置。

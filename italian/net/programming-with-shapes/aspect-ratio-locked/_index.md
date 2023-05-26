@@ -1,61 +1,61 @@
 ---
-title: نسبة العرض إلى الارتفاع مقفلة
-linktitle: نسبة العرض إلى الارتفاع مقفلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية قفل أو إلغاء قفل نسبة العرض إلى الارتفاع لشكل ما في مستند Word باستخدام Aspose.Words for .NET.
+title: Proporzioni bloccate
+linktitle: Proporzioni bloccate
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come bloccare o sbloccare le proporzioni di una forma in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-shapes/aspect-ratio-locked/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية قفل أو إلغاء قفل نسبة العرض إلى الارتفاع لشكل ما في مستند Word باستخدام Aspose.Words for .NET. بقفل نسبة العرض إلى الارتفاع ، يمكنك الحفاظ على النسب الأصلية للشكل عند تغيير حجمه.
+Questo tutorial spiega come bloccare o sbloccare le proporzioni di una forma in un documento di Word usando Aspose.Words per .NET. Bloccando le proporzioni, puoi mantenere le proporzioni originali della forma durante il ridimensionamento.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Prerequisiti
+Per seguire questo tutorial, è necessario disporre di quanto segue:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words per la libreria .NET installata.
+- Conoscenza di base di C# e lavoro con documenti Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Passaggio 1: impostare la directory dei documenti
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo della directory in cui si desidera salvare il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Passaggio 2: creare un nuovo documento e DocumentBuilder
+ Crea una nuova istanza di`Document` classe e a`DocumentBuilder` opporsi a lavorare con il documento.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: أدخل شكل صورة
- استخدم ال`InsertImage` طريقة`DocumentBuilder` كائن لإدراج شكل صورة في المستند. قم بتوفير المسار لملف الصورة كمعامل.
+## Passaggio 3: inserire una forma immagine
+ Usa il`InsertImage` metodo del`DocumentBuilder` oggetto per inserire una forma immagine nel documento. Fornire il percorso del file immagine come parametro.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
 ```
 
-## الخطوة 4: قفل أو فتح نسبة العرض إلى الارتفاع
- تعيين`AspectRatioLocked` خاصية الشكل ل`true` أو`false`لقفل أو إلغاء قفل نسبة العرض إلى الارتفاع ، على التوالي.
+## Passaggio 4: bloccare o sbloccare le proporzioni
+ Impostare il`AspectRatioLocked` proprietà della forma a`true` O`false`rispettivamente per bloccare o sbloccare le proporzioni.
 
 ```csharp
-shape.AspectRatioLocked = false; // افتح نسبة العرض إلى الارتفاع
+shape.AspectRatioLocked = false; // Sblocca le proporzioni
 ```
 
-## الخطوة 5: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithShapes.AspectRatioLocked.docx".
+## Passaggio 5: salvare il documento
+ Salvare il documento nella directory specificata utilizzando il file`Save` metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithShapes.AspectRatioLocked.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ```
 
-### مثال على شفرة المصدر لـ Aspect Ratio Locked باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Aspect Ratio Locked utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -65,4 +65,4 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 	doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تأمين أو إلغاء قفل نسبة العرض إلى الارتفاع لشكل ما في مستند Word باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai bloccato o sbloccato correttamente le proporzioni di una forma nel documento di Word utilizzando Aspose.Words per .NET.

@@ -1,34 +1,34 @@
 ---
-title: أدخل الحقل باستخدام Field Builder
-linktitle: أدخل الحقل باستخدام Field Builder
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Field Builder'ı Kullanarak Alan Ekleme
+linktitle: Field Builder'ı Kullanarak Alan Ekleme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile Word belgelerinize nasıl özel alanlar ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/insert-field-using-field-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج حقل باستخدام FieldBuilder" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aspose.Words for .NET'in "FieldBuilder'ı kullanarak Alan Ekle" özelliğini kullanan aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz. İstenen sonuçları elde etmek için her adımı dikkatlice uyguladığınızdan emin olun.
 
-## الخطوة 1: إعداد دليل المستند
+## 1. Adım: Belge Dizini Kurulumu
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند
+## 2. Adım: Belgeyi oluşturma
 
-نبدأ بإنشاء مستند جديد.
+Yeni bir belge oluşturarak başlıyoruz.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: بناء حقل IF باستخدام FieldBuilder
+## 3. Adım: FieldBuilder kullanarak IF alanını oluşturma
 
-نستخدم فئة FieldBuilder لإنشاء حقل IF مع حقلي MERGEFIELD متداخلين. في هذا المثال ، يعرض الحقل IF الاسم الأول والأخير بناءً على شرط.
+FieldBuilder sınıfını, iç içe geçmiş iki MERGFIELD alanıyla bir EĞER alanı oluşturmak için kullanıyoruz. Bu örnekte, EĞER alanı bir koşula göre adı ve soyadı görüntüler.
 
 ```csharp
 FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
@@ -45,25 +45,25 @@ FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
              .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
 ```
 
-## الخطوة 4: إدخال حقل IF في المستند
+## Adım 4: EĞER alanını belgeye ekleme
 
- نحن نستخدم ال`BuildAndInsert()` طريقة لإنشاء وإدراج حقل IF في موقع محدد في المستند.
+ biz kullanıyoruz`BuildAndInsert()` EĞER alanını belgede belirli bir konuma oluşturma ve ekleme yöntemi.
 
 ```csharp
 Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
 field. Update();
 ```
 
-### مثال على شفرة المصدر لإدخال حقل باستخدام FieldBuilder مع Aspose.Words for .NET
+### Aspose.Words for .NET ile FieldBuilder kullanarak alan eklemek için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة.
+// Belge oluşturma.
 Document doc = new Document();
 
-// إنشاء حقل IF باستخدام FieldBuilder.
+// FieldBuilder kullanılarak IF alanının oluşturulması.
 FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
      .AddArgument("left expression")
      .AddArgument("=")
@@ -77,11 +77,11 @@ FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
              .AddText("Lastname: ")
              .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
 
-// أدخل حقل IF في المستند.
+// EĞER alanını belgeye ekleyin.
 Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
 field. Update();
 
 doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأنشأنا حقل IF مع حقول MERGEFIELD المتداخلة ، ثم قمنا بإدراج هذا الحقل في المستند في موقع محدد. ثم يتم حفظ المستند باسم ملف محدد.
+Bu örnekte, yeni bir belge oluşturduk, iç içe geçmiş MERGFIELD alanlarıyla bir IF alanı oluşturduk ve ardından bu alanı belgenin belirli bir konumuna ekledik. Belge daha sonra belirli bir dosya adıyla kaydedilir.

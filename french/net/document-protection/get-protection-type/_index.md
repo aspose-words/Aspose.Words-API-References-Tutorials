@@ -1,36 +1,36 @@
 ---
-title: احصل على نوع الحماية
-linktitle: احصل على نوع الحماية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام وظيفة Get Protection Type في Aspose.Words for .NET لتحديد نوع الحماية للمستند.
+title: Obtenir le type de protection
+linktitle: Obtenir le type de protection
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à utiliser la fonction Obtenir le type de protection d'Aspose.Words pour .NET pour déterminer le type de protection d'un document.
 type: docs
 weight: 10
 url: /fr/net/document-protection/get-protection-type/
 ---
 
-مرحبًا بكم في هذا الدليل التفصيلي الذي يشرح كود المصدر C # لميزة Get Protection Type في Aspose.Words for .NET. في هذه المقالة ، سنوضح لك كيفية استخدام هذه الميزة القوية لتحديد نوع حماية المستند. تعد حماية المستندات أمرًا ضروريًا لضمان سرية ملفاتك وسلامتها. سنرشدك خلال الخطوات اللازمة لدمج Aspose.Words مع .NET واستخدام ميزة Get Protection Type.
+Bienvenue dans ce guide étape par étape qui explique le code source C# pour la fonctionnalité Obtenir le type de protection d'Aspose.Words pour .NET. Dans cet article, nous allons vous montrer comment utiliser cette fonctionnalité puissante pour déterminer le type de protection d'un document. La protection des documents est essentielle pour assurer la confidentialité et l'intégrité de vos fichiers. Nous vous guiderons à travers les étapes nécessaires pour intégrer Aspose.Words pour .NET et utiliser la fonctionnalité Obtenir le type de protection.
 
-## الخطوة 1: تحميل المستند
+## Étape 1 : Chargement du document
 
-تتمثل الخطوة الأولى لاستخدام ميزة "الحصول على نوع الحماية" في تحميل المستند الذي تريد العمل عليه. يمكنك القيام بذلك باستخدام فئة المستند التي توفرها Aspose.Words for .NET. إليك نموذج التعليمات البرمجية لتحميل مستند من ملف:
+La première étape pour utiliser la fonctionnalité Obtenir le type de protection consiste à télécharger le document sur lequel vous souhaitez travailler. Vous pouvez le faire en utilisant la classe Document fournie par Aspose.Words pour .NET. Voici un exemple de code pour charger un document à partir d'un fichier :
 
 ```csharp
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-تأكد من تحديد المسار الصحيح لملف المستند الخاص بك.
+Assurez-vous de spécifier le chemin d'accès correct à votre fichier de document.
 
-## الخطوة 2: استرداد نوع الحماية
+## Étape 2 : Récupération du type de protection
 
-بعد تحميل المستند ، يمكنك استخدام خاصية ProtectionType للكائن Document لاسترداد نوع الحماية المطبقة على المستند. إليك كيف يمكنك القيام بذلك:
+Une fois le document téléchargé, vous pouvez utiliser la propriété ProtectionType de l'objet Document pour récupérer le type de protection appliqué au document. Voici comment procéder :
 
 ```csharp
 ProtectionType protectionType = doc.ProtectionType;
 ```
 
-### مثال رمز مصدر للحصول على نوع الحماية باستخدام Aspose.Words for .NET
+### Exemple de code source pour obtenir le type de protection à l'aide d'Aspose.Words pour .NET
 
-فيما يلي رمز المصدر الكامل لوظيفة Get Protection Type باستخدام Aspose.Words for .NET:
+Voici le code source complet de la fonction Obtenir le type de protection à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
 
@@ -39,7 +39,7 @@ ProtectionType protectionType = doc.ProtectionType;
 
 ```
 
-## خاتمة
+## Conclusion
 
-في هذه المقالة ، أوضحنا كيفية استخدام وظيفة Get Protection Type في Aspose.Words for .NET لتحديد نوع الحماية للمستند. باتباع الخطوات الموضحة ، ستتمكن من دمج هذه الوظيفة بسهولة في مشاريع C # الخاصة بك ومعالجة المستندات المحمية بكفاءة. يوفر Aspose.Words for .NET مرونة كبيرة
+Dans cet article, nous avons expliqué comment utiliser la fonction Obtenir le type de protection d'Aspose.Words pour .NET pour déterminer le type de protection d'un document. En suivant les étapes décrites, vous pourrez facilement intégrer cette fonctionnalité dans vos propres projets C# et manipuler efficacement les documents protégés. Aspose.Words pour .NET offre une grande flexibilité
 

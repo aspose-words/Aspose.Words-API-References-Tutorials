@@ -1,34 +1,34 @@
 ---
-title: أضف علامة مائية نصية مع خيارات محددة
-linktitle: أضف علامة مائية نصية مع خيارات محددة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Agregar marca de agua de texto con opciones específicas
+linktitle: Agregar marca de agua de texto con opciones específicas
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a agregar una marca de agua de texto con opciones específicas usando Aspose.Words para .NET. Guía paso por paso.
 type: docs
 weight: 10
 url: /es/net/programming-with-watermark/add-text-watermark-with-specific-options/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. العلامة المائية النصية هي نص متراكب على مستند للإشارة إلى أنه مسودة وسري وما إلى ذلك.
+En este tutorial, lo guiaremos a través de cómo agregar una marca de agua de texto con opciones específicas usando Aspose.Words para .NET. Una marca de agua de texto es texto superpuesto a un documento para indicar que es un borrador, confidencial, etc.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Paso 1: usar un generador de documentos
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Primero, usaremos un generador de documentos para agregar contenido a nuestro documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
-سنقوم بتحميل مستند موجود باستخدام مسار المستند.
+Cargaremos un documento existente utilizando la ruta del documento.
 
 ```csharp
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## الخطوة 3: أضف علامة مائية نصية بخيارات محددة
+## Paso 3: agregue una marca de agua de texto con opciones específicas
 
- سنقوم بإنشاء مثيل لـ`TextWatermarkOptions` فئة وتعيين الخيارات المطلوبة للعلامة المائية النصية.
+ Vamos a crear una instancia de la`TextWatermarkOptions` clase y configure las opciones deseadas para la marca de agua de texto.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()
@@ -43,19 +43,19 @@ IsSemitrasparent = false
 doc.Watermark.SetText("Test", options);
 ```
 
-## الخطوة 4: احفظ المستند
+## Paso 4: Guarde el documento
 
-أخيرًا ، يمكننا حفظ المستند بعلامة مائية نصية مضافة.
+Finalmente, podemos guardar el documento con la marca de agua de texto agregada.
 
 ```csharp
 	doc.Save(dataDir + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx");
 ```
 
-### مثال على شفرة المصدر لإضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET
+### Código fuente de ejemplo para agregar una marca de agua de texto con opciones específicas con Aspose.Words para .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Document.docx");
 
@@ -74,5 +74,5 @@ doc.Watermark.SetText("Test", options);
 	
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET.
+¡Felicidades! Ahora ha aprendido cómo agregar una marca de agua de texto con opciones específicas usando Aspose.Words para .NET.
 

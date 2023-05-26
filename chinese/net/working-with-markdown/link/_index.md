@@ -1,41 +1,41 @@
 ---
-title: وصلة
-linktitle: وصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الروابط مع Aspose.Words for .NET. دليل خطوة بخطوة.
+title: 关联
+linktitle: 关联
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 插入链接。分步指南。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/link/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة الروابط مع Aspose.Words for .NET. تُستخدم الروابط لإنشاء مراجع قابلة للنقر لمواقع الويب أو المستندات الأخرى.
+在这个例子中，我们将带您了解如何使用 Aspose.Words for .NET 的链接功能。链接用于创建对网站或其他文档的可点击引用。
 
-## الخطوة 1: استخدام منشئ المستندات
+## 第 1 步：使用文档生成器
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+首先，我们将使用文档生成器将内容添加到我们的文档中。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة الثانية: إدخال ارتباط
+## 第 2 步：插入链接
 
- يمكننا إدراج ارتباط باستخدام ملف`Insertlink` طريقة منشئ الوثيقة. نحتاج إلى تحديد نص الرابط ، هنا "Aspose" ، بالإضافة إلى عنوان URL المقصود.
+我们可以使用`Insertlink`文档生成器的方法。我们需要指定链接文本，这里是“Aspose”，以及目标 URL。
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com "، خطأ) ؛
+builder.Insertlink("Aspose", "https://www.aspose.com", false);
 ```
 
-### مثال على شفرة المصدر للروابط مع Aspose.Words for .NET
+### 与 Aspose.Words for .NET 链接的示例源代码
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	//使用文档生成器向文档添加内容。
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// أدخل ارتباط.
-	builder.Insertlink("Aspose", "https://www.aspose.com "، خطأ) ؛
+	//插入链接。
+	builder.Insertlink("Aspose", "https://www.aspose.com", false);
             
 ```
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الروابط مع Aspose.Words for .NET.
+恭喜！您现在已经了解了如何使用 Aspose.Words for .NET 的链接功能。
 

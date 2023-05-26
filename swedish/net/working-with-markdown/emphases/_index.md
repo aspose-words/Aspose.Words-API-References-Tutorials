@@ -1,35 +1,35 @@
 ---
-title: تأكيدات
-linktitle: تأكيدات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام التأكيدات (بالخط العريض والمائل) باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Betoningar
+linktitle: Betoningar
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder betoningar (fet och kursiv stil) med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/working-with-markdown/emphases/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام التأكيدات مع Aspose.Words for .NET. يتم استخدام التأكيدات للتأكيد على أجزاء معينة من النص ، مثل الخط الغامق والمائل.
+I det här exemplet kommer vi att förklara hur man använder emphases med Aspose.Words för .NET. betoningar används för att framhäva vissa delar av texten, som fetstil och kursiv stil.
 
-## الخطوة 1: تهيئة المستند
+## Steg 1: Dokumentinitiering
 
- أولاً ، سنهيئ المستند عن طريق إنشاء مثيل لـ`Document` فصل.
+ Först initierar vi dokumentet genom att skapa en instans av`Document` klass.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: استخدام منشئ المستندات
+## Steg 2: Använda en dokumentgenerator
 
-بعد ذلك ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Därefter använder vi en dokumentgenerator för att lägga till innehåll i vårt dokument.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إضافة نص مع التوكيدات
+## Steg 3: Lägg till text med betoningar
 
-يمكننا إضافة نص تأكيدات عن طريق تغيير خصائص خط منشئ المستند. في هذا المثال ، نستخدم الخط الغامق والمائل للتأكيد على أجزاء مختلفة من النص.
+Vi kan lägga till betoningstext genom att ändra dokumentgeneratorns teckensnittsegenskaper. I det här exemplet använder vi fetstil och kursiv stil för att framhäva olika delar av texten.
 
 ```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as emphases indicators.");
@@ -59,17 +59,17 @@ builder. Write(".");
 
 ```
 
-## الخطوة 4: حفظ المستند
+## Steg 4: Spara dokumentet
 
- أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب. في هذا المثال ، نستخدم الامتداد`.md` التمديد لتنسيق Markdown.
+ Slutligen kan vi spara dokumentet i önskat format. I det här exemplet använder vi`.md` tillägg för ett Markdown-format.
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام التأكيدات مع Aspose.Words for .NET.
+Grattis! Du har nu lärt dig hur du använder emphases med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر للتأكيد باستخدام Aspose.Words for .NET
+### Exempel på källkod för emphases med Aspose.Words för .NET
 
 
 ```csharp

@@ -1,31 +1,31 @@
 ---
-title: أدخل المستند عند الاستبدال
-linktitle: أدخل المستند عند الاستبدال
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مستند عند الاستبدال باستخدام Aspose.Words for .NET.
+title: Вставить документ при замене
+linktitle: Вставить документ при замене
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как вставить документ о замене с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إدراج مستند في مستند آخر عند الاستبدال باستخدام ميزة "إدراج مستند عند استبدال" في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم كود المصدر وإجراء عملية إدراج المستند.
+В этом руководстве мы расскажем вам, как вставить документ в другой документ при замене с помощью функции «Вставить документ при замене» в Aspose.Words для .NET. Выполните следующие шаги, чтобы понять исходный код и выполнить вставку документа.
 
-## الخطوة 1: تحميل المستند الرئيسي
+## Шаг 1: Загрузка основного документа
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند الرئيسي في كائن المستند. إليك الطريقة:
+Для начала укажите каталог для ваших документов и загрузите основной документ в объект Document. Вот как:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 ```
 
-## الخطوة 2: تكوين خيارات البحث والاستبدال
+## Шаг 2. Настройте параметры поиска и замены
 
-سنقوم الآن بتكوين خيارات البحث والاستبدال عن طريق تحديد اتجاه البحث واستبدال رد الاتصال لإدراج مستند في مستند آخر. إليك الطريقة:
+Теперь мы настроим параметры поиска и замены, указав направление поиска и обратный вызов замены, чтобы вставить документ в другой документ. Вот как:
 
 ```csharp
-//تكوين خيارات البحث والاستبدال.
+//Настройте параметры поиска и замены.
 FindReplaceOptions options = new FindReplaceOptions
 {
 Direction = FindReplaceDirection.Backward,
@@ -33,33 +33,33 @@ ReplacingCallback = new InsertDocumentAtReplaceHandler()
 };
 ```
 
-## الخطوة 3: استدعاء طريقة الاستبدال
+## Шаг 3: Вызов метода замены
 
-سنقوم الآن باستدعاء طريقة الاستبدال للعثور على النص المحدد واستبداله بسلسلة فارغة ، باستخدام الخيارات التي تم تكوينها. إليك الطريقة:
+Теперь мы вызовем метод замены, чтобы найти и заменить указанный текст пустой строкой, используя настроенные параметры. Вот как:
 
 ```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
 
-### مثال على شفرة المصدر لـ Insert Document At Replace باستخدام Aspose.Words for .NET
+### Пример исходного кода для вставки документа при замене с использованием Aspose.Words для .NET
 
-فيما يلي رمز المصدر الكامل لميزة "إدراج مستند" عند استبدال Aspose.Words for .NET:
+Вот полный исходный код для функции «Вставить документ» при замене Aspose.Words для .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Путь к каталогу документов.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
-	// تعيين خيارات البحث والاستبدال.
+	// Установите параметры поиска и замены.
 	FindReplaceOptions options = new FindReplaceOptions
 	{
 		Direction = FindReplaceDirection.Backward, 
 		ReplacingCallback = new InsertDocumentAtReplaceHandler()
 	};
 
-	// اتصل بطريقة الاستبدال.
+	// Вызовите метод замены.
 	mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 

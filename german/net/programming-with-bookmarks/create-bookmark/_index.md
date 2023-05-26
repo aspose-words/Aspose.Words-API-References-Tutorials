@@ -1,23 +1,23 @@
 ---
-title: إنشاء إشارة مرجعية
-linktitle: إنشاء إشارة مرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF باستخدام Aspose.Words for .NET.
+title: Lesezeichen erstellen
+linktitle: Lesezeichen erstellen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Lesezeichen in einem Dokument erstellen und Lesezeichen-Vorschauebenen in einer PDF-Datei festlegen.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/create-bookmark/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إنشاء إشارة مرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF ناتج.
+In diesem Artikel untersuchen wir den obigen C#-Quellcode, um zu verstehen, wie die Funktion „Lesezeichen erstellen“ in der Bibliothek „Aspose.Words für .NET“ verwendet wird. Mit dieser Funktion können Sie Lesezeichen in einem Dokument erstellen und Lesezeichen-Vorschauebenen in einer PDF-Ausgabedatei festlegen.
 
-## المتطلبات الأساسية
+## Voraussetzungen
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundkenntnisse der C#-Sprache.
+- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
 
-## الخطوة 1: إنشاء المستند والمولد
+## Schritt 1: Dokument und Generator erstellen
 
- قبل إنشاء إشارات مرجعية ، نحتاج إلى إنشاء مستند ومنشئ مستندات باستخدام امتداد`Document` و`DocumentBuilder` أشياء:
+ Bevor wir Lesezeichen erstellen, müssen wir ein Dokument und einen Dokument-Builder mit erstellen`Document` Und`DocumentBuilder` Objekte:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -25,22 +25,22 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إنشاء الإشارة المرجعية الرئيسية
+## Schritt 2: Erstellen des Hauptlesezeichens
 
- نحن نستخدم ال`StartBookmark` طريقة لبدء إشارة مرجعية رئيسية و`EndBookmark` طريقة لإنهائه. في ما بينهما ، يمكننا إضافة نص وإشارات مرجعية أخرى:
+ Wir benutzen das`StartBookmark` Methode zum Starten eines Hauptlesezeichens und der`EndBookmark` Methode, um es zu beenden. Dazwischen können wir Text und andere Lesezeichen hinzufügen:
 
 ```csharp
 builder. StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
 
-// أضف المزيد من الإشارات المرجعية أو النص هنا.
+// Fügen Sie hier weitere Lesezeichen oder Text hinzu.
 
 builder. EndBookmark("My Bookmark");
 ```
 
-## الخطوة 3: إنشاء إشارات مرجعية متداخلة
+## Schritt 3: Verschachtelte Lesezeichen erstellen
 
- يمكننا أيضًا إنشاء إشارات مرجعية متداخلة داخل إشارة مرجعية رئيسية. نحن نستخدم نفس الشيء`StartBookmark` و`EndBookmark` طرق لإنشاء وإنهاء الإشارات المرجعية المتداخلة:
+ Wir können auch verschachtelte Lesezeichen innerhalb eines Hauptlesezeichens erstellen. Wir verwenden das Gleiche`StartBookmark` Und`EndBookmark` Methoden zum Erstellen und Beenden verschachtelter Lesezeichen:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -48,11 +48,11 @@ builder.Writeln("Text inside nested bookmark.");
 builder.EndBookmark("Embedded bookmark");
 ```
 
-## الخطوة 4: تحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج
+## Schritt 4: Festlegen der Lesezeichenvorschauebenen in der Ausgabe-PDF-Datei
 
- نحن نستخدم ال`PdfSaveOptions` لتحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج. نحن نستخدم ال`BookmarksOutlineLevels` ملكية
+ Wir benutzen das`PdfSaveOptions` -Objekt, um die Lesezeichenvorschauebenen in der Ausgabe-PDF-Datei anzugeben. Wir benutzen das`BookmarksOutlineLevels` Eigentum
 
-  لإضافة إشارات مرجعية رئيسية وإشارات مرجعية متداخلة بمستوياتها الخاصة:
+  So fügen Sie Hauptlesezeichen und verschachtelte Lesezeichen mit ihren jeweiligen Ebenen hinzu:
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
@@ -61,13 +61,13 @@ options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### مثال على شفرة المصدر لإنشاء إشارة مرجعية باستخدام Aspose.Words for .NET
+### Beispielquellcode für „Lesezeichen erstellen“ mit Aspose.Words für .NET
 
-إليك المثال الكامل لشفرة المصدر لتوضيح إنشاء إشارات مرجعية باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Beispielquellcode, um das Erstellen von Lesezeichen mit Aspose.Words für .NET zu demonstrieren:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -90,6 +90,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
   
 ```
 
-## خاتمة
+## Abschluss
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة إنشاء إشارة مرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارة المرجعية في ملف PDF ناتج.
+In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Lesezeichen erstellen“ von Aspose.Words für .NET verwendet wird. Wir haben eine Schritt-für-Schritt-Anleitung zum Erstellen von Lesezeichen in einem Dokument und zum Festlegen von Lesezeichenvorschauebenen in einer PDF-Ausgabedatei befolgt.

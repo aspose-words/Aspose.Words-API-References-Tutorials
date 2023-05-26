@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل الدمج باستخدام DOM
-linktitle: أدخل حقل الدمج باستخدام DOM
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول دمج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET.
+title: DOM Kullanarak Birleştirme Alanı Ekleme
+linktitle: DOM Kullanarak Birleştirme Alanı Ekleme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile özel alan birleştirme alanlarını Word belgelerinize nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/insert-merge-field-using-dom/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي تستخدم ميزة "إدراج حقل دمج الحقول" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aspose.Words for .NET'in "Alan Birleştirme Alanı Ekle" özelliğini kullanan aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz. İstenen sonuçları elde etmek için her adımı dikkatlice uyguladığınızdan emin olun.
 
-## الخطوة 1: إعداد دليل المستند
+## 1. Adım: Belge Dizini Kurulumu
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## 2. Adım: Document ve DocumentBuilder'ı Oluşturma
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Yeni bir belge oluşturarak ve bir DocumentBuilder başlatarak başlıyoruz.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تحريك المؤشر إلى الفقرة
+## 3. Adım: İmleci paragrafa taşıma
 
- نحن نستخدم ال`MoveTo()` طريقة DocumentBuilder لتحريك المؤشر إلى الفقرة حيث نريد إدراج حقل دمج الحقل.
+ biz kullanıyoruz`MoveTo()` İmleci alan birleştirme alanını eklemek istediğimiz paragrafa taşımak için DocumentBuilder yöntemi.
 
 ```csharp
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 builder. MoveTo(para);
 ```
 
-## الخطوة 4: إدخال حقل دمج الحقول
+## 4. Adım: Alan birleştirme alanını ekleme
 
- نحن نستخدم برنامج DocumentBuilder`InsertField()` طريقة لإدراج حقل دمج حقل في الفقرة.
+ DocumentBuilder'ı kullanıyoruz`InsertField()` paragrafa alan birleştirme alanı ekleme yöntemi.
 
 ```csharp
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
 ```
 
-نقوم بعد ذلك بتكوين خصائص حقل دمج الحقول عن طريق تحديد الخيارات المناسبة ، مثل اسم الحقل والنص قبل الحقل وبعده وخيارات التنسيق الرأسي.
+Ardından, alan adı, alandan önceki ve sonraki metin ve dikey biçimlendirme seçenekleri gibi uygun seçenekleri belirterek alan birleştirme alanı özelliklerini yapılandırıyoruz.
 
 ```csharp
 field.FieldName = "Test1";
@@ -54,27 +54,27 @@ field. IsMapped = true;
 field. IsVerticalFormatting = true;
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Son olarak, diyoruz`Update()` alanı güncelleme yöntemi.
 
 ```csharp
 field. Update();
 ```
 
-### نموذج التعليمات البرمجية المصدر لإدخال حقل دمج الحقول مع Aspose.Words for .NET
+### Aspose.Words for .NET ile alan birleştirme alanı eklemek için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند و DocumentBuilder.
+// Belgeyi ve DocumentBuilder'ı oluşturun.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// حرك المؤشر إلى الفقرة.
+// İmleci paragrafa taşıyın.
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 builder. MoveTo(para);
 
-// أدخل حقل دمج الحقول.
+// Alan birleştirme alanı ekleyin.
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
 
 field.FieldName = "Test1";
@@ -83,10 +83,10 @@ field. TextAfter = "Test3";
 field. IsMapped = true;
 field. IsVerticalFormatting = true;
 
-// قم بتحديث الحقل.
+// Alanı güncelleyin.
 field. Update();
 
 doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، ونقلنا المؤشر إلى الفقرة المطلوبة ، ثم أدخلنا حقل دمج الحقول في المستند.
+Bu örnekte, yeni bir belge oluşturduk, imleci istenen paragrafa taşıdık ve ardından belgeye bir alan birleştirme alanı ekledik.

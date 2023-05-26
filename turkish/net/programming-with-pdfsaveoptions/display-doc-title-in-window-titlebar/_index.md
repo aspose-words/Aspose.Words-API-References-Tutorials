@@ -1,53 +1,53 @@
 ---
-title: عرض عنوان المستند في شريط عنوان النافذة
-linktitle: عرض عنوان المستند في شريط عنوان النافذة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+title: Belge Başlığını Pencere Başlık Çubuğunda Görüntüle
+linktitle: Belge Başlığını Pencere Başlık Çubuğunda Görüntüle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile PDF'ye dönüştürürken belge başlığını pencere başlık çubuğunda nasıl görüntüleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titlebar/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال الخطوات لعرض عنوان المستند في شريط عنوان النافذة باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة عرض عنوان المستند في شريط عنوان النافذة عند فتح مستند PDF الذي تم إنشاؤه. اتبع الخطوات التالية:
+Bu öğreticide, Aspose.Words for .NET ile belge başlığını pencere başlık çubuğunda görüntüleme adımlarında size rehberlik edeceğiz. Bu özellik, oluşturulan PDF belgesini açtığınızda belge başlığını pencere başlık çubuğunda görüntülemenizi sağlar. Aşağıdaki adımları takip et:
 
-## الخطوة 1: تحميل المستند
+## 1. Adım: Belgeyi yükleme
 
-ابدأ بتحميل المستند الذي تريد تحويله إلى PDF:
+PDF'ye dönüştürmek istediğiniz belgeyi yükleyerek başlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح للمستند الخاص بك.
+Belgenize giden doğru yolu belirttiğinizden emin olun.
 
-## الخطوة 2: تكوين خيارات حفظ PDF
+## 2. Adım: PDF Kaydetme Seçeneklerini Yapılandırın
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وقم بتمكين عرض عنوان المستند في شريط عنوان النافذة:
+PdfSaveOptions sınıfının bir örneğini oluşturun ve belge başlığının pencere başlık çubuğunda görüntülenmesini etkinleştirin:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { DisplayDocTitle = true };
 ```
 
-يتيح هذا الخيار عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF.
+Bu seçenek, PDF'ye dönüştürürken belge başlığının pencere başlık çubuğunda görüntülenmesini sağlar.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## 3. Adım: Belgeyi PDF'ye Dönüştürün
 
- استخدم ال`Save` طريقة تحويل المستند إلى PDF مع تحديد خيارات التحويل:
+ Kullan`Save` dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemi:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Dönüştürülen PDF'yi kaydetmek için doğru yolu belirttiğinizden emin olun.
 
-### مثال على شفرة المصدر لعرض عنوان المستند في شريط عناوين النافذة باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Belge Başlığını Pencere Başlık Çubuğunda Göster için örnek kaynak kodu
 
-إليك كود المصدر الكامل لعرض عنوان المستند في شريط عنوان النافذة في مستند PDF باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET ile bir PDF belgesinde belge başlığını pencere başlık çubuğunda görüntülemek için tam kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -56,5 +56,5 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pd
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
         
 ```
-باتباع هذه الخطوات ، يمكنك بسهولة عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+Bu adımları izleyerek, Aspose.Words for .NET ile PDF'ye dönüştürürken belge başlığını pencere başlık çubuğunda kolayca görüntüleyebilirsiniz.
 

@@ -1,64 +1,64 @@
 ---
-title: أدخل حقل المؤلف
-linktitle: أدخل حقل المؤلف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل AUTHOR في مستندات Word باستخدام Aspose.Words for .NET. حدد اسم المؤلف لتخصيص مستنداتك.
+title: Infoga författarefält
+linktitle: Infoga författarefält
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar ett AUTHOR-fält i dina Word-dokument med Aspose.Words för .NET. Ange författarens namn för att anpassa dina dokument.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/insert-author-field/
 ---
 
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود المصدر C # أدناه ، والذي يستخدم ميزة "إدراج حقل مؤلف" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som använder funktionen "Infoga ett AUTHOR-fält" i Aspose.Words för .NET. Se till att följa varje steg noggrant för att få önskat resultat.
 
-## الخطوة 1: إعداد دليل المستند
+## Steg 1: Installation av dokumentkatalog
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## Steg 2: Skapa dokumentet och stycket
 
-نبدأ بإنشاء مستند جديد وجلب الفقرة الأولى.
+Vi börjar med att skapa ett nytt dokument och hämta första stycket.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## الخطوة 3: أدخل حقل AUTHOR
+## Steg 3: Infoga AUTHOR-fältet
 
- نحن نستخدم ال`AppendField()` طريقة لإدراج حقل AUTHOR في الفقرة.
+ Vi använder`AppendField()` metod för att infoga ett AUTHOR-fält i stycket.
 
 ```csharp
 FieldAuthor field = (FieldAuthor)para.AppendField(FieldType.FieldAuthor, false);
 ```
 
- ثم نقوم بتكوين المجال`AuthorName` الخاصية لتحديد اسم المؤلف.
+ Vi konfigurerar sedan fältets`AuthorName` egenskap för att ange författarens namn.
 
 ```csharp
 field. AuthorName = "Test1";
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Slutligen kallar vi`Update()` metod för att uppdatera fältet.
 
 ```csharp
 field. Update();
 ```
 
-### مثال على شفرة المصدر لإدخال حقل AUTHOR مع Aspose.Words for .NET
+### Exempel på källkoden för att infoga ett AUTHOR-fält med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة.
+// Skapande av dokument.
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-// أدخل حقل AUTHOR.
+// Infoga AUTHOR-fältet.
 FieldAuthor field = (FieldAuthor)para.AppendField(FieldType.FieldAuthor, false);
 
 field. AuthorName = "Test1";
@@ -68,6 +68,6 @@ field. Update();
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأدخلنا حقل AUTHOR ، وضبطنا اسم المؤلف ، وحفظنا المستند باسم ملف محدد.
+I det här exemplet skapade vi ett nytt dokument, infogade ett AUTHOR-fält, konfigurerade författarens namn och sparade dokumentet med ett specificerat filnamn.
 
-بهذا يختتم دليلنا حول استخدام ميزة "إدراج حقل المؤلف" مع Aspose.Words for .NET.
+Detta avslutar vår guide om hur du använder funktionen "Infoga AUTHOR Field" med Aspose.Words för .NET.

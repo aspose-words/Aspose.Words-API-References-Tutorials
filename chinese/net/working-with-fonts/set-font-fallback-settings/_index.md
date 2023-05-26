@@ -1,51 +1,51 @@
 ---
-title: تعيين إعدادات الخط الاحتياطي
-linktitle: تعيين إعدادات الخط الاحتياطي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين إعدادات استبدال الخطوط في Aspose.Words for .NET وتخصيص استبدال الخط في مستندات Word.
+title: 设置字体回退设置
+linktitle: 设置字体回退设置
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何在 Aspose.Words for .NET 中设置字体替换设置以及如何在 Word 文档中自定义字体替换。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/set-font-fallback-settings/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين إعدادات استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. تسمح لك إعدادات استبدال الخط بتحديد الخطوط البديلة لاستخدامها عندما لا تكون الخطوط المحددة متاحة.
+在本教程中，我们将向您展示如何使用 Aspose.Words for .NET 在 Word 文档中设置字体替换设置。字体替换设置允许您指定在指定字体不可用时要使用的替换字体。
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## 先决条件
+在开始之前，请确保您拥有以下物品：
+- C# 编程语言的应用知识
+- 项目中安装的 .NET 的 Aspose.Words 库
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 第一步：定义文档目录
+首先将目录路径设置为 Word 文档的位置。代替`"YOUR DOCUMENT DIRECTORY"`在具有适当路径的代码中。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل إعدادات استبدال الخط
- قم بإنشاء مثيل لـ`FontSettings` فئة واستخدام`Load`طريقة لتحميل إعدادات تجاوز الخط من ملف XML. يجب أن يحتوي ملف XML المحدد على قواعد استبدال الخط المراد استخدامها.
+## 第 2 步：加载字体替换设置
+创建一个实例`FontSettings`上课并使用`Load`从 XML 文件加载字体覆盖设置的方法。指定的 XML 文件必须包含要使用的字体替换规则。
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
 ```
 
-## الخطوة 3: تطبيق إعدادات استبدال الخط
- إقران إعدادات استبدال الخط بالمستند من خلال تخصيصها للمستند`FontSettings` ملكية.
+## 第 3 步：应用字体替换设置
+将字体替换设置与文档相关联，方法是将它们分配给文档的`FontSettings`财产。
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند باستخدام ملف`Save` طريقة`Document` بالمسار واسم الملف المناسبين.
+## 第 4 步：保存文档
+使用`Save`的方法`Document`使用适当的路径和文件名。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Font Fallback Settings باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 设置字体回退设置的示例源代码 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -55,5 +55,5 @@ doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تعيين إعدادات استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. جرب قواعد مختلفة لاستبدال الخطوط للتأكد من تناسق وثيقتك ، حتى عندما لا تكون الخطوط المحددة متاحة.
+## 结论
+在本教程中，您学习了如何使用 Aspose.Words for .NET 在 Word 文档中设置字体替换设置。尝试不同的字体替换规则以确保您的文档看起来一致，即使指定的字体不可用也是如此。

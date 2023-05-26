@@ -1,28 +1,28 @@
 ---
-title: احصل على فاصل نمط الفقرة
-linktitle: احصل على فاصل نمط الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على فاصل نمط الفقرة باستخدام Aspose.Words for .NET.
+title: 获取段落样式分隔符
+linktitle: 获取段落样式分隔符
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 获取段落样式分隔符。
 type: docs
 weight: 10
 url: /zh/net/document-formatting/get-paragraph-style-separator/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة Get Paragraph Style Separator مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+在本教程中，我们将向您介绍如何在 Aspose.Words for .NET 中使用“获取段落样式分隔符”功能。按照以下步骤了解源代码并应用更改。
 
-## الخطوة 1: تحميل المستند
+## 第 1 步：装入文档
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند في كائن المستند. إليك الطريقة:
+首先，指定文档的目录并将文档加载到 Document 对象中。就是这样：
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## الخطوة 2: البحث عن فواصل نمط الفقرة
+## 第 2 步：查找段落样式分隔符
 
-سنقوم الآن بتكرار جميع الفقرات في المستند والتحقق مما إذا كانت الفقرة هي فاصل نمط. إليك الطريقة:
+我们现在将遍历文档中的所有段落并检查段落是否是样式分隔符。就是这样：
 
 ```csharp
 foreach(Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -34,9 +34,9 @@ foreach(Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-### مثال على شفرة المصدر للحصول على فاصل نمط الفقرة باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 获取段落样式分隔符的示例源代码
 
-فيما يلي رمز المصدر الكامل لميزة Get Paragraph Style Separator مع Aspose.Words for .NET:
+以下是 Aspose.Words for .NET 的获取段落样式分隔符功能的完整源代码：
 
 ```csharp
 
@@ -52,5 +52,5 @@ foreach(Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
         
 ```
 
-باستخدام هذا الرمز ، ستتمكن من العثور على فواصل نمط الفقرة في مستند باستخدام Aspose.Words for .NET.
+使用此代码，您将能够使用 Aspose.Words for .NET 在文档中找到段落样式分隔符。
 

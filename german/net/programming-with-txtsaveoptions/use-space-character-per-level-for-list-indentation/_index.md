@@ -1,27 +1,27 @@
 ---
-title: استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة
-linktitle: استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لاستخدام حرف مسافة لكل مستوى في قائمة المسافة البادئة في Aspose.Words for .NET. قم بإنشاء مستندات Word جيدة التنظيم بسهولة.
+title: Verwenden Sie Leerzeichen pro Ebene für die Listeneinrückung
+linktitle: Verwenden Sie Leerzeichen pro Ebene für die Listeneinrückung
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zur Verwendung eines Leerzeichens pro Ebene für die Listeneinrückung in Aspose.Words für .NET. Erstellen Sie mühelos gut strukturierte Word-Dokumente.
 type: docs
 weight: 10
 url: /de/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words إمكانية استخدام حرف مسافة واحد لكل مستوى لعمل مسافة بادئة للقوائم. في هذا الدليل ، سنوضح لك كيفية استخدام كود المصدر C # الخاص بـ Aspose.Words for .NET لتنفيذ هذه الوظيفة.
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten in einer C#-Anwendung. Zu den Funktionen von Aspose.Words gehört die Möglichkeit, ein Leerzeichen pro Ebene für die Einrückung von Listen zu verwenden. In dieser Anleitung zeigen wir Ihnen, wie Sie den C#-Quellcode von Aspose.Words für .NET verwenden, um diese Funktionalität zu implementieren.
 
-## فهم مكتبة Aspose.Words
+## Grundlegendes zur Aspose.Words-Bibliothek
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الوظائف لإنشاء وتعديل ومعالجة مستندات Word ، بما في ذلك إدارة القوائم والمسافة البادئة.
+Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Arbeit mit Word-Dokumenten einfach und effizient macht. Es bietet zahlreiche Funktionen zum Erstellen, Ändern und Bearbeiten von Word-Dokumenten, einschließlich der Verwaltung von Listen und Einrückungen.
 
-## إنشاء الوثيقة وإضافة المحتوى
+## Erstellen des Dokuments und Hinzufügen von Inhalten
 
-تتمثل الخطوة الأولى في إنشاء مستند جديد وإضافة محتوى إليه. استخدم فئة المستند لإنشاء مثيل مستند جديد. ثم استخدم فئة DocumentBuilder لإضافة نص وإنشاء قائمة بمستويات متعددة من المسافة البادئة. هنا مثال :
+Der erste Schritt besteht darin, ein neues Dokument zu erstellen und ihm Inhalte hinzuzufügen. Verwenden Sie die Document-Klasse, um eine neue Dokumentinstanz zu erstellen. Verwenden Sie dann die DocumentBuilder-Klasse, um Text hinzuzufügen und eine Liste mit mehreren Einrückungsebenen zu erstellen. Hier ist ein Beispiel :
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+// Erstellen Sie eine Liste mit drei Einrückungsebenen
 builder.ListFormat.ApplyNumberDefault();
 builder. Writen("Element 1");
 builder.ListFormat.ListIndent();
@@ -30,11 +30,11 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند جديد واستخدام DocumentBuilder لإضافة نص وإنشاء قائمة بثلاثة مستويات من المسافة البادئة. لقد أضفنا ثلاثة عناصر إلى القائمة ، مع وضع مسافة بادئة لكل عنصر في مستوى إضافي.
+In diesem Beispiel erstellen wir ein neues Dokument und verwenden den DocumentBuilder, um Text hinzuzufügen und eine Liste mit drei Einrückungsebenen zu erstellen. Wir haben der Liste drei Elemente hinzugefügt, wobei jedes Element um eine weitere Ebene eingerückt ist.
 
-## استخدام مسافة واحدة لكل مستوى للمسافة البادئة للقائمة
+## Verwendung eines Leerzeichens pro Ebene zum Einrücken der Liste
 
-بمجرد إضافة المحتوى ، يمكننا الآن تكوين المسافة البادئة للقوائم باستخدام حرف مسافة واحد لكل مستوى. لهذا نستخدم فئة TxtSaveOptions وقمنا بتعيين خاصية ListIndentation.Count على عدد مستويات المسافة البادئة وخاصية ListIndentation.Character إلى حرف المسافة المراد استخدامه. إليك الطريقة:
+Sobald der Inhalt hinzugefügt wurde, können wir nun die Einrückung der Listen mit einem Leerzeichen pro Ebene konfigurieren. Dazu verwenden wir die Klasse TxtSaveOptions und setzen die Eigenschaft ListIndentation.Count auf die Anzahl der Einrückungsebenen und die Eigenschaft ListIndentation.Character auf das zu verwendende Leerzeichen. Hier ist wie:
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -44,11 +44,11 @@ saveOptions.ListIndentation.Character = ' ';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-في هذا المثال ، أنشأنا مثيلًا لـ TxtSaveOptions وقمنا بتعيين خاصية ListIndentation.Count على 3 للإشارة إلى وجود ثلاثة مستويات من المسافة البادئة في القائمة. قمنا أيضًا بتعيين خاصية ListIndentation.Character إلى حرف المسافة ('') الذي نريد استخدامه للمسافة البادئة.
+In diesem Beispiel erstellen wir eine Instanz von TxtSaveOptions und setzen die ListIndentation.Count-Eigenschaft auf 3, um anzugeben, dass die Liste drei Einrückungsebenen enthält. Außerdem legen wir die ListIndentation.Character-Eigenschaft auf das Leerzeichen (' ') fest, das wir für die Einrückung verwenden möchten.
 
-### مثال على شفرة المصدر لميزة "استخدام حرف مسافة واحد لكل مستوى للمسافة البادئة للقائمة" مع Aspose.Words for .NET
+### Beispielquellcode für die Funktion „Ein Leerzeichen pro Ebene für Listeneinrückung verwenden“ mit Aspose.Words für .NET
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لميزة "استخدام حرف مسافة واحد لكل مستوى للمسافة البادئة للقائمة" مع Aspose.Words for .NET:
+Hier ist der vollständige Beispielquellcode für die Funktion „Ein Leerzeichen pro Ebene für die Listeneinrückung verwenden“ mit Aspose.Words für .NET:
 
 ```csharp
 
@@ -61,14 +61,14 @@ namespace Example
      {
          static void Main(string[] args)
          {
-             // المسار إلى دليل المستند الخاص بك
+             // Pfad zu Ihrem Dokumentenverzeichnis
              string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-             // قم بإنشاء المستند وإضافة محتوى
+             // Erstellen Sie das Dokument und fügen Sie Inhalte hinzu
              Document doc = new Document();
              DocumentBuilder builder = new DocumentBuilder(doc);
 
-             // قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+             // Erstellen Sie eine Liste mit drei Einrückungsebenen
              builder.ListFormat.ApplyNumberDefault();
              builder. Writen("Element 1");
              builder.ListFormat.ListIndent();
@@ -76,12 +76,12 @@ namespace Example
              builder.ListFormat.ListIndent();
              builder.Write("Element 3");
 
-             // استخدم مسافة واحدة لكل مستوى للمسافة البادئة للقائمة
+             // Verwenden Sie für die Listeneinrückung ein Leerzeichen pro Ebene
              TxtSaveOptions saveOptions = new TxtSaveOptions();
              saveOptions.ListIndentation.Count = 3;
              saveOptions.ListIndentation.Character = ' ';
 
-             // احفظ المستند بالخيارات المحددة
+             // Speichern Sie das Dokument mit den angegebenen Optionen
              doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
          }
      }
@@ -89,6 +89,6 @@ namespace Example
 
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا الدليل ، أوضحنا كيفية استخدام Aspose.Words for .NET لتطبيق وظيفة "استخدام حرف مسافة واحد لكل مستوى من أجل المسافة البادئة للقائمة". باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تكوين المسافة البادئة للقوائم في مستندات Word الخاصة بك باستخدام حرف مسافة واحد لكل مستوى. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع تنسيق النص وإدارة القوائم ، مما يسمح لك بإنشاء مستندات جيدة التنظيم في تطبيق C # الخاص بك.
+In diesem Handbuch haben wir erklärt, wie Sie Aspose.Words für .NET verwenden, um die Funktionalität „Ein Leerzeichen pro Ebene für die Listeneinrückung verwenden“ anzuwenden. Indem Sie die bereitgestellten Schritte befolgen und den bereitgestellten C#-Quellcode verwenden, können Sie die Einrückung von Listen in Ihren Word-Dokumenten einfach mit einem Leerzeichen pro Ebene konfigurieren. Aspose.Words bietet enorme Flexibilität und Leistungsfähigkeit für die Arbeit mit Textformatierung und Listenverwaltung, sodass Sie gut strukturierte Dokumente in Ihrer C#-Anwendung erstellen können.

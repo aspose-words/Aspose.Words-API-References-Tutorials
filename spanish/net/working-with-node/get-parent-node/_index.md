@@ -1,56 +1,56 @@
 ---
-title: احصل على العقدة الأصلية
-linktitle: احصل على العقدة الأصلية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على العقدة الأصلية لعنصر معين باستخدام Aspose.Words for .NET.
+title: Obtener nodo principal
+linktitle: Obtener nodo principal
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a obtener el nodo principal de un elemento específico con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-node/get-parent-node/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية الحصول على العقدة الأصلية باستخدام Aspose.Words for .NET.
+Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación que ilustra cómo obtener el nodo principal usando Aspose.Words para .NET.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Paso 1: Importa las referencias necesarias
+Antes de comenzar, asegúrese de haber importado las referencias necesarias para usar Aspose.Words para .NET en su proyecto. Esto incluye importar la biblioteca Aspose.Words y agregar los espacios de nombres requeridos a su archivo fuente.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Nodes;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## Paso 2: Crear un nuevo documento
+ En este paso, crearemos un nuevo documento usando el`Document` clase.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: الوصول إلى العقدة الأصلية
-للحصول على العقدة الأصلية لعقدة معينة ، نحتاج إلى الوصول إلى تلك العقدة أولاً. في هذا المثال ، نقوم بالوصول إلى أول عقدة فرعية من المستند ، والتي تكون عادةً قسمًا.
+## Paso 3: acceder al nodo principal
+Para obtener el nodo principal de un nodo específico, primero debemos acceder a ese nodo. En este ejemplo, estamos accediendo al primer nodo secundario del documento, que suele ser una sección.
 
 ```csharp
 Node section = doc.FirstChild;
 ```
 
-## الخطوة 4: تحقق من العقدة الأصلية
-الآن بعد أن أصبح لدينا العقدة المحددة ، يمكننا التحقق مما إذا كانت العقدة الأصلية تتطابق مع المستند نفسه. في هذا المثال ، نقارن العقدة الأصلية بالمستند باستخدام عامل المساواة (`==`) وعرض النتيجة.
+## Paso 4: comprobar el nodo principal
+Ahora que tenemos el nodo específico, podemos verificar si su nodo principal coincide con el documento en sí. En este ejemplo, comparamos el nodo padre con el documento utilizando el operador de igualdad (`==`) y mostrar el resultado.
 
 ```csharp
 Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
-### عينة من التعليمات البرمجية المصدر للحصول على العقدة الأصلية باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para obtener el nodo principal con Aspose.Words para .NET
 
 
 ```csharp
 	Document doc = new Document();
 
-	// المقطع هو العقدة الفرعية الأولى من المستند.
+	// La sección es el primer nodo secundario del documento.
 	Node section = doc.FirstChild;
 
-	// العقدة الرئيسية للقسم هي الوثيقة.
+	// El nodo principal de la sección es el documento.
 	Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
             
 ```
 
-هذا مثال رمز كامل للحصول على العقدة الأصلية لعقدة معينة باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Este es un ejemplo de código completo para obtener el nodo principal de un nodo específico con Aspose.Words para .NET. Asegúrese de importar las referencias necesarias y siga los pasos descritos anteriormente para integrar este código en su proyecto.

@@ -1,17 +1,17 @@
 ---
-title: قراءة الحماية فقط
-linktitle: قراءة الحماية فقط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حماية مستندات Word للقراءة فقط باستخدام Aspose.Words for .NET.
+title: Lässkydd
+linktitle: Lässkydd
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du skyddar dina skrivskyddade Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/document-protection/read-only-protection/
 ---
-في هذا البرنامج التعليمي ، سنوجهك خلال الخطوات لاستخدام ميزة الحماية للقراءة فقط في Aspose.Words for .NET. تتيح لك هذه الميزة جعل مستند Word للقراءة فقط لمنع التعديل غير المصرح به. اتبع الخطوات التالية:
+I den här handledningen guidar vi dig genom stegen för att använda skrivskyddsfunktionen i Aspose.Words för .NET. Med den här funktionen kan du göra ett Word-dokument skrivskyddat för att förhindra obehörig ändring. Följ stegen nedan:
 
-## الخطوة 1: إنشاء المستند وتطبيق الحماية
+## Steg 1: Skapa dokumentet och tillämpa skydd
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+Börja med att skapa en instans av klassen Document och ett DocumentBuilder-objekt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -19,66 +19,66 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: اكتب المحتوى إلى المستند
-استخدم كائن DocumentBuilder لكتابة محتوى إلى المستند:
+## Steg 2: Skriv innehåll till dokumentet
+Använd DocumentBuilder-objektet för att skriva innehåll till dokumentet:
 
 ```csharp
 builder.Write("Open document as read-only");
 ```
 
-## الخطوة 3: تعيين كلمة المرور وجعل المستند للقراءة فقط
+## Steg 3: Ange lösenord och gör dokumentet skrivskyddat
 
-قم بتعيين كلمة مرور للمستند باستخدام خاصية SetPassword () للكائن WriteProtection:
+Ställ in ett lösenord för dokumentet med egenskapen SetPassword() för WriteProtection-objektet:
 
 ```csharp
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
-تأكد من استبدال "MyPassword" بكلمة المرور الفعلية التي تريد استخدامها.
+Se till att ersätta "Mitt lösenord" med det faktiska lösenord du vill använda.
 
-## الخطوة 4: تطبيق وثيقة للقراءة فقط
+## Steg 4: Använd skrivskyddat dokument
 
-اجعل المستند للقراءة فقط عن طريق تعيين الخاصية ReadOnlyRecommended على true:
+Gör dokumentet skrivskyddat genom att ställa in egenskapen ReadOnlyRecommended till true:
 
 ```csharp
 doc.WriteProtection.ReadOnlyRecommended = true;
 ```
 
-## الخطوة 5: تطبيق الحماية للقراءة فقط وحفظ المستند
+## Steg 5: Använd skrivskyddat och spara dokumentet
 
-أخيرًا ، قم بتطبيق الحماية للقراءة فقط باستخدام طريقة Protect () لكائن المستند:
+Till sist, tillämpa skrivskyddat med metoden Protect() för Document-objektet:
 
 ```csharp
 doc.Protect(ProtectionType.ReadOnly);
 doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند المحمي.
+Var noga med att ange rätt sökväg och filnamn för att spara det skyddade dokumentet.
 
-### مثال على شفرة المصدر للحماية للقراءة فقط باستخدام Aspose.Words for .NET
+### Exempel på källkod för skrivskyddad användning av Aspose.Words för .NET
 
-فيما يلي رمز المصدر الكامل للحماية للقراءة فقط باستخدام Aspose.Words for .NET:
+Här är den fullständiga källkoden för skrivskyddat skydd med Aspose.Words för .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
 	builder.Write("Open document as read-only");
 
-	// أدخل كلمة مرور يصل طولها إلى 15 حرفًا.
+	// Ange ett lösenord som är upp till 15 tecken långt.
 	doc.WriteProtection.SetPassword("MyPassword");
 
-	// اجعل المستند للقراءة فقط.
+	// Gör dokumentet som skrivskyddat.
 	doc.WriteProtection.ReadOnlyRecommended = true;
 
-	// تطبيق الحماية ضد الكتابة للقراءة فقط.
+	// Använd skrivskydd som skrivskyddat.
 	doc.Protect(ProtectionType.ReadOnly);
 	doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 ```
 
-باتباع هذه الخطوات ، يمكنك حماية مستنداتك بسهولة
+Genom att följa dessa steg kan du enkelt skydda dina dokument
 

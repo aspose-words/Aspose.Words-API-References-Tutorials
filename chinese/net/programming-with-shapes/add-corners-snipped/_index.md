@@ -1,45 +1,45 @@
 ---
-title: أضف زوايا مقصوصة
-linktitle: أضف زوايا مقصوصة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة شكل بزوايا مقصوصة إلى مستند Word باستخدام Aspose.Words for .NET.
+title: 添加剪角
+linktitle: 添加剪角
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将带角的形状添加到 Word 文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-shapes/add-corners-snipped/
 ---
 
- يشرح هذا البرنامج التعليمي كيفية إضافة شكل بزوايا مقصوصة إلى مستند Word باستخدام Aspose.Words for .NET. يمكن تخصيص شكل الزوايا المقطوعة وإدخالها باستخدام ملف`InsertShape` طريقة.
+本教程解释了如何使用 Aspose.Words for .NET 将带角的形状添加到 Word 文档中。角剪断的形状可以使用自定义和插入`InsertShape`方法。
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## 先决条件
+要学习本教程，您需要具备以下条件：
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- 安装了 Aspose.Words for .NET 库。
+- C# 的基本知识和使用 Word 文档。
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## 第 1 步：设置文档目录
+首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`使用要保存文档的目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## 第 2 步：创建新文档和 DocumentBuilder
+创建一个新的实例`Document`类和一个`DocumentBuilder`对象来处理文档。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: أدخل شكل الزوايا المقصوصة
- استخدم ال`InsertShape` طريقة`DocumentBuilder` لإدراج شكل بزوايا مقصوصة. حدد نوع الشكل (في هذه الحالة ،`ShapeType.TopCornersSnipped`) وتقديم الحجم المطلوب للشكل.
+## 第 3 步：插入角剪断形状
+使用`InsertShape`的方法`DocumentBuilder`对象以插入带有被剪断角的形状。指定形状类型（在本例中，`ShapeType.TopCornersSnipped`) 并为形状提供所需的大小。
 
 ```csharp
 builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithShapes.AddCornersSnipped.docx".
+## 第 4 步：保存文档
+使用 将文档保存到指定目录`Save`方法。提供具有适当文件扩展名的所需文件名。在本例中，我们将文档保存为“WorkingWithShapes.AddCornersSnipped.docx”。
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
@@ -49,10 +49,10 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 ```
 
-### مثال على شفرة المصدر لـ Add Corners Snipped باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的 Add Corners Snipped 示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -66,4 +66,4 @@ doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 
 ```
 
-هذا كل شيء! لقد نجحت في إضافة شكل مقطوع من الزوايا إلى مستند Word باستخدام Aspose.Words for .NET.
+就是这样！您已经使用 Aspose.Words for .NET 成功地向您的 Word 文档添加了一个角剪断形状。

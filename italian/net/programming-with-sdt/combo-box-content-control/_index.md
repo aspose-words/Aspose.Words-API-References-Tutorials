@@ -1,38 +1,38 @@
 ---
-title: التحكم في محتوى صندوق التحرير والسرد
-linktitle: التحكم في محتوى صندوق التحرير والسرد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء عنصر تحكم محتوى Combo Box في مستند Word باستخدام Aspose.Words for .NET.
+title: Controllo del contenuto della casella combinata
+linktitle: Controllo del contenuto della casella combinata
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come creare un controllo del contenuto della casella combinata in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-sdt/combo-box-content-control/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إنشاء عنصر تحكم محتوى Combo Box في مستند Word باستخدام Aspose.Words for .NET. تتيح عناصر التحكم في محتوى مربع التحرير والسرد للمستخدمين تحديد عنصر من القائمة المنسدلة.
+Questo tutorial spiega come creare un controllo del contenuto della casella combinata in un documento di Word utilizzando Aspose.Words per .NET. I controlli del contenuto della casella combinata consentono agli utenti di selezionare un elemento da un elenco a discesa.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Prerequisiti
+Per seguire questo tutorial, è necessario disporre di quanto segue:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words per la libreria .NET installata.
+- Conoscenza di base di C# e lavoro con documenti Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستند الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Passaggio 1: impostare la directory dei documenti
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo della directory in cui si desidera salvare il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و StructuredDocumentTag
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`StructuredDocumentTag` لتمثيل عنصر تحكم محتوى مربع التحرير والسرد. حدد`SdtType.ComboBox` كنوع و`MarkupLevel.Block` كمستوى الترميز لإنشاء مربع تحرير وسرد على مستوى الكتلة.
+## Passaggio 2: creare un documento e un StructuredDocumentTag
+ Crea una nuova istanza di`Document` classe e a`StructuredDocumentTag` per rappresentare il controllo del contenuto della casella combinata. Specificare`SdtType.ComboBox` come il tipo e`MarkupLevel.Block` come livello di markup per creare una casella combinata a livello di blocco.
 
 ```csharp
 Document doc = new Document();
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, MarkupLevel.Block);
 ```
 
-## الخطوة 3: أضف عناصر إلى صندوق التحرير والسرد
- أضف عناصر إلى مربع التحرير والسرد باستخدام ملف`ListItems` ممتلكات`StructuredDocumentTag` . يتم تمثيل كل عنصر بامتداد`SdtListItem` كائن ، والذي يأخذ نص عرض وقيمة. في هذا المثال ، نضيف ثلاثة عناصر إلى مربع التحرير والسرد.
+## Passaggio 3: aggiungi elementi alla casella combinata
+ Aggiungere elementi alla casella combinata utilizzando il`ListItems` proprietà del`StructuredDocumentTag` . Ogni elemento è rappresentato da un`SdtListItem` oggetto, che accetta un testo visualizzato e un valore. In questo esempio, aggiungiamo tre elementi alla casella combinata.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
@@ -40,24 +40,24 @@ sdt.ListItems.Add(new SdtListItem("Item 1", "1"));
 sdt.ListItems.Add(new SdtListItem("Item 2", "2"));
 ```
 
-## الخطوة 4: إلحاق StructuredDocumentTag بالمستند
- قم بإلحاق عنصر تحكم محتوى مربع التحرير والسرد بنص المستند باستخدام`AppendChild` طريقة نص القسم الأول من المستند.
+## Passaggio 4: aggiungere lo StructuredDocumentTag al documento
+ Aggiungere il controllo del contenuto della casella combinata al corpo del documento utilizzando il`AppendChild` metodo del corpo della prima sezione del documento.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdt);
 ```
 
-## الخطوة 5: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.ComboBoxContentControl.docx".
+## Passaggio 5: salvare il documento
+ Salvare il documento nella directory specificata utilizzando il file`Save` metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithSdt.ComboBoxContentControl.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ```
 
-### مثال على شفرة المصدر للتحكم في محتوى صندوق التحرير والسرد باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per il controllo del contenuto della casella combinata utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -69,4 +69,4 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 	doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إنشاء عنصر تحكم محتوى Combo Box في مستند Word باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai creato correttamente un controllo del contenuto della casella combinata nel documento di Word utilizzando Aspose.Words per .NET.

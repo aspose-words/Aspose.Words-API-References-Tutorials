@@ -1,59 +1,59 @@
 ---
-title: حقول النموذج تحصل على مجموعة حقول النموذج
-linktitle: حقول النموذج تحصل على مجموعة حقول النموذج
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد مجموعة حقول النموذج ومعالجتها في مستندات Word باستخدام Aspose.Words for .NET.
+title: Form Alanları Form Alanları Koleksiyonunu Alın
+linktitle: Form Alanları Form Alanları Koleksiyonunu Alın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerindeki form alanları koleksiyonunu nasıl alacağınızı ve değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-formfields/form-fields-get-form-fields-collection/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لاسترداد مجموعة حقول النموذج من مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Bu adım adım öğreticide, bir Word belgesinden form alanları koleksiyonunu almak için Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
 
-## الخطوة 1: تهيئة كائن المستند
+## 1. Adım: Belge Nesnesini Başlatma
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق توفير المسار إلى المستند المصدر الذي يحتوي على حقول النموذج:
+ İlk olarak,`Document` form alanlarını içeren kaynak belgenizin yolunu sağlayarak itiraz edin:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## الخطوة 2: استرداد مجموعة حقول النموذج
+## 2. Adım: Form Alanları Koleksiyonunu Alma
 
- بعد ذلك ، قم بالوصول إلى`FormFields` ممتلكات`Range` كائن في المستند لاسترداد مجموعة حقول النموذج:
+ Ardından, şuraya erişin:`FormFields` mülkiyeti`Range` form alanları koleksiyonunu almak için belgedeki nesne:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;
 ```
 
- الآن ، لديك مجموعة حقول النموذج من مستند Word المخزنة في ملف`formFields` عامل.
+ Artık Word belgesindeki form alanları koleksiyonuna sahipsiniz.`formFields` değişken.
 
-## الخطوة 3: الوصول إلى حقول النموذج ومعالجتها
+## 3. Adım: Form Alanlarına Erişme ve Bu Alanları Değiştirme
 
-يمكنك التكرار من خلال مجموعة حقول النموذج وتنفيذ عمليات مختلفة في كل حقل نموذج ، مثل الحصول على القيم أو تعيينها ، أو تعديل التنسيق ، أو استخراج المعلومات.
+Form alanları koleksiyonunu yineleyebilir ve her form alanında değerleri alma veya ayarlama, biçimlendirmeyi değiştirme veya bilgi çıkarma gibi çeşitli işlemler gerçekleştirebilirsiniz.
 
 ```csharp
 foreach (FormField formField in formFields)
 {
-    // الوصول إلى كل حقل نموذج والتعامل معه
-    //...
+    // Her form alanına erişin ve değiştirin
+    // ...
 }
 ```
 
-## الخطوة 4: حفظ المستند
+## 4. Adım: Belgeyi Kaydetme
 
-أخيرًا ، احفظ المستند المعدل إذا لزم الأمر:
+Son olarak, gerekirse değiştirilen belgeyi kaydedin:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-هذا كل شيء! لقد نجحت في استرداد مجموعة حقول النموذج من مستند Word باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET kullanarak bir Word belgesinden form alanları koleksiyonunu başarıyla aldınız.
 
-### مثال على شفرة المصدر لحقول النموذج احصل على مجموعة حقول النموذج باستخدام Aspose.Words for .NET
+### Form Alanları için örnek kaynak kodu Aspose.Words for .NET kullanarak Form Alanları Koleksiyonunu Alın
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -61,10 +61,10 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 FormFieldCollection formFields = doc.Range.FormFields;
 
-// الوصول إلى حقول النموذج ومعالجتها حسب الحاجة
-//...
+// Form alanlarına gerektiği gibi erişin ve değiştirin
+// ...
 
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimlerinize göre değiştirin.

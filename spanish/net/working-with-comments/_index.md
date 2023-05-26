@@ -1,19 +1,19 @@
 ---
-title: التعامل مع التعليقات
-linktitle: التعامل مع التعليقات
-second_title: Aspose.Words لمراجع .NET API
-description: توضح البرامج التعليمية كيفية إضافة التعليقات وإرساء التعليقات وإضافة / إزالة الرد على التعليقات واستخراج التعليقات وحل التعليقات والردود في Aspose.Words for .NET
+title: Trabajar con comentarios
+linktitle: Trabajar con comentarios
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales muestran cómo agregar comentarios, anclar comentarios, agregar/eliminar respuestas de comentarios, extraer comentarios y resolver comentarios y respuestas en Aspose.Words para .NET
 type: docs
 weight: 50
 url: /es/net/working-with-comments/
 ---
 
-في هذه البرامج التعليمية ، ستتعلم جوانب مختلفة من التعامل مع التعليقات في مستندات Word باستخدام Aspose.Words for .NET. سوف تكتشف كيفية إضافة التعليقات إلى المستندات ، وإرساء ردود التعليقات على نص معين ، وإضافة وإزالة الردود على التعليقات ، وحل التعليقات والردود عليها. يوفر كل برنامج تعليمي دليلاً مفصلاً خطوة بخطوة مع شفرة المصدر الكاملة ، مما يتيح لك تحسين التعاون وإدارة التعليقات داخل مستندات Word باستخدام Aspose.Words for .NET.
+En estos tutoriales, aprenderá varios aspectos del trabajo con comentarios en documentos de Word utilizando Aspose.Words para .NET. Descubrirá cómo agregar comentarios a documentos, anclar respuestas de comentarios a texto específico, agregar y eliminar respuestas de comentarios y resolver comentarios y sus respuestas. Cada tutorial proporciona una guía paso a paso con el código fuente completo, lo que le permite mejorar la colaboración y la gestión de comentarios dentro de sus documentos de Word utilizando Aspose.Words para .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [أضف التعليقات](./add-comments/) | تعرف على كيفية إضافة تعليقات إلى مستندات Word باستخدام Aspose.Words for .NET. |
-| [تعليق المرساة](./anchor-comment/) | تعرف على كيفية إرساء ردود التعليقات على نص معين في مستندات Word باستخدام Aspose.Words for .NET. |
-| [إضافة إزالة التعليق الرد](./add-remove-comment-reply/) | تعرف على كيفية إضافة وإزالة الردود على التعليقات في مستندات Word باستخدام Aspose.Words for .NET. |
-| [حل التعليق والردود](./comment-resolved-and-replies/) | تعرف على كيفية حل التعليقات والردود عليها في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Añadir comentarios](./add-comments/) | Aprenda a agregar comentarios a documentos de Word usando Aspose.Words para .NET. |
+| [Comentario ancla](./anchor-comment/) | Aprenda a anclar respuestas de comentarios a texto específico en documentos de Word usando Aspose.Words para .NET. |
+| [Añadir Quitar Comentar Responder](./add-remove-comment-reply/) | Aprenda a agregar y eliminar respuestas de comentarios en documentos de Word usando Aspose.Words para .NET. |
+| [Comentario resuelto y respuestas](./comment-resolved-and-replies/) | Aprenda a resolver comentarios y sus respuestas en documentos de Word utilizando Aspose.Words para .NET. |

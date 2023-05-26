@@ -1,30 +1,30 @@
 ---
-title: رد اتصال الواصلة
-linktitle: رد اتصال الواصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام رد نداء الواصلة في Aspose.Words for .NET للتعامل مع الواصلة في الكلمات.
+title: Tireleme Geri Çağırma
+linktitle: Tireleme Geri Çağırma
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'te sözcük hecelemesini işlemek için heceleme geri aramasını nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية استخدام ميزة رد الاتصال في Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Bu adım adım öğreticide, size Aspose.Words for .NET'te heceleme geri arama özelliğini nasıl kullanacağınızı göstereceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinize nasıl uygulayacağınızı göstereceğiz.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kütüphaneyi resmi siteden indirip yükleyin.
 
-## الخطوة 1: حفظ تذكير الواصلة
+## 1. Adım: Tireleme Hatırlatıcısını Kaydet
 
- أولاً ، سنقوم بتسجيل رد نداء الواصلة باستخدام مخصص`CustomHyphenationCallback` فصل. سيسمح لنا ذلك بالتعامل مع الواصلة وفقًا لقواعدنا الخاصة:
+ İlk olarak, özel bir kullanarak heceleme geri aramasını kaydedeceğiz.`CustomHyphenationCallback` sınıf. Bu, kelime hecelemesini kendi kurallarımıza göre ele almamıza izin verecektir:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
 ```
 
- تأكد من أنك قمت بتنفيذ`CustomHyphenationCallback`فئة وفقًا لاحتياجاتك الخاصة.
+ uyguladığınızdan emin olun.`CustomHyphenationCallback`özel ihtiyaçlarınıza göre sınıflandırın.
 
-## الخطوة 2: تحميل المستند وتطبيق الواصلة
+## 2. Adım: Belgeyi yükleme ve tireleme uygulama
 
-بعد ذلك ، قم بتحميل المستند الخاص بك من الدليل المحدد وقم بوصل الكلمات باستخدام Aspose.Words:
+Ardından, belgenizi belirtilen dizinden yükleyin ve Aspose.Words'ü kullanarak kelimeleri tireleyin:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,9 +32,9 @@ Document document = new Document(dataDir + "German text.docx");
 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
 ```
 
-## الخطوة 3: معالجة أخطاء القاموس المفقودة
+## 3. Adım: Eksik Sözlük Hatalarını Ele Alma
 
-في حالة فقد قاموس الواصلة ، سنكتشف الاستثناء المقابل ونعرض رسالة خطأ:
+Bir heceleme sözlüğünün eksik olması durumunda ilgili istisnayı yakalarız ve bir hata mesajı görüntüleriz:
 
 ```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
@@ -43,9 +43,9 @@ catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary")
 }
 ```
 
-## الخطوة 4: تنظيف وتعطيل تذكير الواصلة
+## 4. Adım: Tireleme Hatırlatıcısını Temizleyin ve Devre Dışı Bırakın
 
-أخيرًا ، للتنظيف وإيقاف تشغيل تذكير الواصلة ، قم بتنفيذ الخطوات التالية:
+Son olarak, temizlik için ve tireleme hatırlatıcısını kapatmak için aşağıdaki adımları gerçekleştirin:
 
 ```csharp
 finally
@@ -54,16 +54,16 @@ finally
 }
 ```
 
-يؤدي هذا إلى تنظيف وتعطيل تذكير الواصلة بعد الانتهاء من المعالجة.
+Bu, işlemeyi bitirdikten sonra tireleme hatırlatıcısını temizler ve devre dışı bırakır.
 
-لذا ! لقد نجحت في استخدام رد نداء الواصلة في Aspose.Words for .NET.
+Bu yüzden ! Aspose.Words for .NET'te heceleme geri aramasını başarıyla kullandınız.
 
-### نموذج التعليمات البرمجية المصدر لرد الاتصال الواصلة مع Aspose.Words for .NET
+### Aspose.Words for .NET ile Tireleme Geri Araması için Örnek Kaynak Kodu
 
 ```csharp
 try
 {
-	 // تسجيل رد الاتصال الواصلة.
+	 // Tireleme geri aramasını kaydedin.
 	 Hyphenation.Callback = new CustomHyphenationCallback();
 	 string dataDir = "YOUR DOCUMENT DIRECTORY";
 	 Document document = new Document(dataDir + "German text.docx");
@@ -80,4 +80,4 @@ finally
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şekilde değiştirmekten çekinmeyin.

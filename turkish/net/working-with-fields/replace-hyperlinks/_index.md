@@ -1,33 +1,33 @@
 ---
-title: استبدل الارتباطات التشعبية
-linktitle: استبدل الارتباطات التشعبية
-second_title: Aspose.Words لمراجع .NET API
-description: استبدل الارتباطات التشعبية في مستندات Word باستخدام Aspose.Words for .NET. إرشادات خطوة بخطوة لاستبدال الارتباطات التشعبية.
+title: Köprüleri Değiştir
+linktitle: Köprüleri Değiştir
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerindeki köprüleri değiştirin. Köprüleri değiştirmek için adım adım talimatlar.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/replace-hyperlinks/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية لاستبدال الارتباطات التشعبية باستخدام Aspose.Words لوظائف .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Aspose.Words for .NET işlevselliğini kullanarak köprüleri değiştirmek için aşağıdaki C# kaynak kodunu açıklayan adım adım bir kılavuz. Bu kodu kullanmadan önce Aspose.Words kütüphanesini projenize dahil ettiğinizden emin olun.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## 1. Adım: Belge dizini yolunu ayarlayın
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات الذي يحتوي على ملحق`Hyperlinks.docx` ملف.
+ içeren belgeler dizininizin doğru yolunu belirttiğinizden emin olun.`Hyperlinks.docx` dosya.
 
-## الخطوة 2: قم بتحميل المستند الذي يحتوي على الارتباطات التشعبية
+## 2. Adım: Köprüleri içeren belgeyi yükleyin
 
 ```csharp
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- نحن هنا بصدد إنشاء مثيل لـ`Document` فئة من الملف المحدد.
+ Burada bir örneğini oluşturuyoruz`Document` belirtilen dosyadan sınıf.
 
-## الخطوة 3: تصفح الحقول للعثور على الارتباطات التشعبية
+## 3. Adım: Köprüleri bulmak için alanlara göz atın
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -36,30 +36,30 @@ foreach(Field field in doc.Range.Fields)
      {
          FieldHyperlink hyperlink = (FieldHyperlink)field;
 
-         // قد تكون بعض الارتباطات التشعبية محلية (روابط للإشارات المرجعية داخل المستند) ، ونحن نتجاهلها.
+         // Bazı köprüler yerel olabilir (belge içindeki yer imlerine bağlantılar), onları yok sayarız.
          if (hyperlink.SubAddress != null)
              keep on going;
 
-         hyperlink.Address = "http://www.aspose.com "؛
+         hyperlink.Address = "http://www.aspose.com";
          hyperlink.Result = "Aspose - The .NET & Java component editor";
      }
 }
 ```
 
- تمر هذه الحلقة عبر جميع الحقول في المستند بحثًا عن حقول النوع`FieldType.FieldHyperlink` . بمجرد العثور على حقل من هذا النوع ، نتحقق مما إذا كان رابطًا محليًا عن طريق التحقق من`SubAddress` ملكية. إذا لم يكن كذلك ، فإننا نستبدل عنوان الارتباط بـ`"http://www.aspose.com"`والنتيجة مع`"Aspose - The .NET & Java Component Editor"`.
+ Bu döngü, tür alanlarını arayan belgedeki tüm alanlardan geçer.`FieldType.FieldHyperlink` . Bu tür bir alan bulunduğunda, yerel bir bağlantı olup olmadığını kontrol ederek kontrol ederiz.`SubAddress` mülk. Değilse, bağlantı adresini şu şekilde değiştiririz:`"http://www.aspose.com"`ve ile sonuç`"Aspose - The .NET & Java Component Editor"`.
 
-## الخطوة 4: احفظ المستند المعدل
+## 4. Adım: Değiştirilen belgeyi kaydedin
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
-أخيرًا ، نحفظ المستند المعدل بالارتباطات التشعبية المستبدلة في ملف محدد.
+Son olarak, değiştirilen belgeyi değiştirilen köprülerle birlikte belirtilen bir dosyaya kaydederiz.
 
-### مثال على شفرة المصدر لاستبدال الارتباطات التشعبية بـ Aspose.Words for .NET
+### Aspose.Words for .NET ile köprüleri değiştirmek için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 Document doc = new Document(dataDir + "Hyperlinks.docx");
@@ -70,11 +70,11 @@ foreach(Field field in doc.Range.Fields)
      {
          FieldHyperlink hyperlink = (FieldHyperlink)field;
 
-         // قد تكون بعض الارتباطات التشعبية محلية (روابط للإشارات المرجعية داخل المستند) ، ونحن نتجاهلها.
+         // Bazı köprüler yerel olabilir (belge içindeki yer imlerine bağlantılar), onları yok sayarız.
          if (hyperlink.SubAddress != null)
              keep on going;
 
-         hyperlink.Address = "http://www.aspose.com "؛
+         hyperlink.Address = "http://www.aspose.com";
          hyperlink.Result = "Aspose - The .NET & Java component editor";
      }
 }
@@ -82,4 +82,4 @@ foreach(Field field in doc.Range.Fields)
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
-هذا نموذج لشفرة مصدر لاستبدال الارتباطات التشعبية في مستند باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanan bir belgedeki köprüleri değiştirmek için örnek kaynak kodudur.

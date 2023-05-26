@@ -1,35 +1,35 @@
 ---
-title: الوصول إلى النسخة المنقحة
-linktitle: الوصول إلى النسخة المنقحة
-second_title: Aspose.Words لمراجع .NET API
-description: قم بالوصول إلى نسخة منقحة من مستند Word باستخدام Aspose.Words for .NET.
+title: 访问修订版
+linktitle: 访问修订版
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 访问 Word 文档的修订版本。
 type: docs
 weight: 10
 url: /zh/net/working-with-revisions/access-revised-version/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سوف نوضح لك كيفية الوصول إلى النسخة المنقحة من مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 访问修订版的 Word 文档。我们将为您提供完整的源代码，并向您展示如何格式化降价输出。
 
-## الخطوة 1: تحميل المستند
+## 第 1 步：装入文档
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+第一步是上传包含修订的文档。
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 doc.UpdateListLabels();
 ```
 
-## الخطوة 2: الوصول إلى النسخة المعدلة
+## 第 2 步：访问修改后的版本
 
-ننتقل الآن إلى النسخة المنقحة من الوثيقة.
+我们现在将继续讨论文档的修订版本。
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
 ```
 
-## الخطوة 3: تصفح المراجعات
+## 第 3 步：浏览修订
 
-بعد ذلك ، سنقوم بتكرار المراجعات الموجودة في المستند ونعرض معلومات محددة للفقرات التي هي عناصر قائمة.
+接下来，我们将遍历文档中存在的修订并显示作为列表项的段落的特定信息。
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -46,16 +46,16 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
-### مثال على شفرة المصدر لـ Access Revised Version باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 访问修订版本的示例源代码
 
-فيما يلي رمز المصدر الكامل للوصول إلى النسخة المعدلة من المستند باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 访问文档修订版的完整源代码：
 
 ```csharp
 
 	Document doc = new Document(MyDir + "Revisions.docx");
 	doc.UpdateListLabels();
 
-	// قم بالتبديل إلى النسخة المنقحة من المستند.
+	//切换到文档的修订版本。
 	doc.RevisionsView = RevisionsView.Final;
 
 	foreach (Revision revision in doc.Revisions)

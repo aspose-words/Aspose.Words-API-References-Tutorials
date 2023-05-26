@@ -1,20 +1,20 @@
 ---
-title: كشف تنسيق الملف
-linktitle: كشف تنسيق الملف
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لاكتشاف تنسيق ملف المستند باستخدام Aspose.Words for .NET.
+title: 检测文件格式
+linktitle: 检测文件格式
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 检测文档文件格式的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-fileformat/detect-file-format/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة الكشف عن تنسيق الملف مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية اكتشاف تنسيق ملفات المستندات المختلفة.
+本文提供了有关如何使用 Aspose.Words for .NET 的文件格式检测功能的分步指南。我们将详细解释代码的每一部分。在本教程结束时，您将能够了解如何检测不同文档文件的格式。
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+在开始之前，请确保您已经在项目中安装并配置了 Aspose.Words for .NET 库。您可以在 Aspose 网站上找到库和安装说明。
 
-## الخطوة 1: تحديد الدلائل
+## 第 1 步：定义目录
 
- للبدء ، تحتاج إلى تحديد الدلائل حيث تريد تخزين الملفات وفقًا لتنسيقها. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك. نقوم بإنشاء الدلائل "المدعومة" و "غير معروف" و "المشفر" و "Pre97" إذا لم تكن موجودة بالفعل.
+首先，您需要根据文件的格式定义要存储文件的目录。代替`"YOUR DOCUMENT DIRECTORY"`使用文档目录的实际路径。如果“Supported”、“Unknown”、“Encrypted”和“Pre97”目录尚不存在，我们将创建它们。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,7 +23,7 @@ string unknownDir = dataDir + "Unknown";
 string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
-// قم بإنشاء الدلائل إذا لم تكن موجودة بالفعل.
+//如果目录尚不存在，请创建目录。
 if (Directory.Exists(supportedDir) == false)
 Directory.CreateDirectory(supportedDir);
 if (Directory.Exists(unknownDir) == false)
@@ -34,17 +34,17 @@ if (Directory.Exists(pre97Dir) == false)
 Directory.CreateDirectory(pre97Dir);
 ```
 
-## الخطوة الثانية: تصفح الملفات
+## 第 2 步：浏览文件
 
- ثم نستخدم ملف`GetFiles` طريقة`Directory` class للحصول على قائمة الملفات في الدليل المحدد. نستخدم أيضًا ملف`Where` عبارة لاستبعاد ملف معين يسمى "تالف document.docx".
+然后我们使用`GetFiles`的方法`Directory`类获取指定目录中的文件列表。我们还使用一个`Where`子句排除名为“Corrupted document.docx”的特定文件。
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
 ```
 
-## الخطوة 3: اكتشف تنسيق كل ملف
+## 第三步：检测每个文件的格式
 
- نحن نمرّر كل ملف في القائمة ونستخدم ملف`DetectFileFormat` طريقة`FileFormatUtil` فئة للكشف عن تنسيق الملف. نعرض أيضًا نوع المستند المكتشف.
+我们遍历列表中的每个文件并使用`DetectFileFormat`的方法`FileFormatUtil`类来检测文件的格式。我们还显示检测到的文档类型。
 
 ```csharp
 foreach (string fileName in fileList)
@@ -54,7 +54,7 @@ Console.Write(nameOnly);
 
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-// اعرض نوع الوثيقة
+//显示文档类型
 switch (info.LoadFormat)
 {
 LoadFormat.Doc box:
@@ -66,7 +66,7 @@ break;
 LoadFormat.Docx box:
 Console.WriteLine("\tDocument Office Open XML WordprocessingML without macros.");
 break;
-// ... أضف حالات لتنسيقات المستندات الأخرى المدعومة
+//... 为其他支持的文档格式添加案例
 LoadFormat.Unknown case:
 Console.WriteLine("\tFormat in
 
@@ -97,20 +97,20 @@ break;
 }
 ```
 
-هذا كل شئ ! لقد نجحت في اكتشاف تنسيق ملفات مستندات مختلفة باستخدام Aspose.Words for .NET.
+就这样 ！您已使用 Aspose.Words for .NET 成功检测到不同文档文件的格式。
 
-### مثال على شفرة المصدر لاكتشاف تنسيق الملف باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 进行文件格式检测的示例源代码
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	string supportedDir = dataDir + "Supported";
 	string unknownDir = dataDir + "Unknown";
 	string encryptedDir = dataDir + "Encrypted";
 	string pre97Dir = dataDir + "Pre97";
 
-	// قم بإنشاء الدلائل إذا لم تكن موجودة بالفعل.
+	//如果目录尚不存在，请创建它们。
 	if (Directory.Exists(supportedDir) == false)
 		Directory.CreateDirectory(supportedDir);
 	if (Directory.Exists(unknownDir) == false)
@@ -131,7 +131,7 @@ break;
 		
 		FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-		// اعرض نوع الوثيقة
+		//显示文档类型
 		switch (info.LoadFormat)
 		{
 			case LoadFormat.Doc:

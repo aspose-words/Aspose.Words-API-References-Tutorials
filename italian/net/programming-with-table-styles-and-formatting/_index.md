@@ -1,34 +1,34 @@
 ---
-title: البرمجة مع أنماط الجدول والتنسيق
-linktitle: البرمجة مع أنماط الجدول والتنسيق
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على الحصول على مسافة بين النص المحيط بالجدول ، وتطبيق حدود المخطط التفصيلي ، وإنشاء جدول بحدود ، وتعديل تنسيق الصف ، وتطبيق تنسيق الصف ، وتعيين c
+title: Programmazione con stili di tabella e formattazione
+linktitle: Programmazione con stili di tabella e formattazione
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Le esercitazioni contengono la distanza tra il testo circostante la tabella, l'applicazione del bordo del contorno, la costruzione della tabella con i bordi, la modifica della formattazione della riga, l'applicazione della formattazione della riga, l'impostazione di c
 type: docs
 weight: 1580
 url: /it/net/programming-with-table-styles-and-formatting/
 ---
-توفر Aspose.Words for .NET Tutorials on Programming with Table Styles and Formatting موردًا قيمًا للمطورين الذين يرغبون في معالجة الجداول وتنسيقها بشكل فعال في مستندات Word الخاصة بهم. تغطي البرامج التعليمية المفاهيم الأساسية لأنماط الجدول ، مثل إنشاء أنماط الجدول وتعديلها وحذفها. كما أنها توضح كيفية تطبيق الأنماط المحددة مسبقًا والمخصصة على الجداول ، بالإضافة إلى كيفية تنسيق الخلايا والحدود وعناصر الجدول الأخرى.
+tutorial di Aspose.Words per .NET sulla programmazione con gli stili e la formattazione delle tabelle forniscono una risorsa preziosa per gli sviluppatori che desiderano manipolare e formattare efficacemente le tabelle nei loro documenti Word. Le esercitazioni trattano i concetti fondamentali degli stili di tabella, come la creazione, la modifica e l'eliminazione di stili di tabella. Spiegano anche come applicare stili predefiniti e personalizzati alle tabelle, nonché come formattare celle, bordi e altri elementi della tabella.
 
-توفر هذه البرامج التعليمية خطوة بخطوة عينات تعليمات برمجية واضحة وموجزة ، جنبًا إلى جنب مع الشروحات التفصيلية ، التي توجه المطورين خلال كل خطوة من خطوات معالجة الجدول وتنسيقه. تغطي البرامج التعليمية أيضًا الموضوعات المتقدمة ، مثل إضافة الصفوف والأعمدة وحذفها ودمج الخلايا وتقسيمها وإضافة الأنماط الشرطية إلى الجداول.
+Queste esercitazioni dettagliate forniscono esempi di codice chiari e concisi, insieme a spiegazioni dettagliate, che guidano gli sviluppatori attraverso ogni fase del processo di manipolazione e formattazione della tabella. I tutorial trattano anche argomenti avanzati, come l'aggiunta e l'eliminazione di righe e colonne, l'unione e la divisione di celle e l'aggiunta di stili condizionali alle tabelle.
 
-ستساعد هذه البرامج التعليمية المطورين على إتقان التقنيات الأساسية للعمل مع الجداول في Aspose.Words for .NET. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه الموارد على تحسين مهارات التلاعب بالجدول والتنسيق ، مما يسمح لك بإنشاء مستندات Word احترافية وجمالية.
+Questi tutorial aiuteranno gli sviluppatori a padroneggiare le tecniche essenziali per lavorare con le tabelle in Aspose.Words per .NET. Che tu sia un principiante o uno sviluppatore esperto, queste risorse ti aiuteranno a migliorare le tue capacità di manipolazione e formattazione delle tabelle, consentendoti di creare documenti Word professionali ed esteticamente gradevoli.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [الحصول على مسافة بين النص المحيط بالجدول](./get-distance-between-table-surrounding-text/) | دليل خطوة بخطوة لمعرفة المسافة بين النص والجدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [تطبيق حدود المخطط التفصيلي](./apply-outline-border/) | دليل خطوة بخطوة لتطبيق حدود المخطط على جدول باستخدام Aspose.Words for .NET. |
-| [بناء الجدول مع الحدود](./build-table-with-borders/) | دليل خطوة بخطوة لبناء جدول بحدود باستخدام Aspose.Words for .NET. |
-| [تعديل تنسيق الصف](./modify-row-formatting/) | دليل خطوة بخطوة لتغيير تنسيق صف الجدول باستخدام Aspose.Words for .NET. |
-| [تطبيق تنسيق الصفوف](./apply-row-formatting/) | دليل خطوة بخطوة لتطبيق تنسيق الصفوف على جدول باستخدام Aspose.Words for .NET. |
-| [تعيين مساحة الخلية](./set-cell-padding/) | دليل خطوة بخطوة لتحديد هوامش خلايا الجدول باستخدام Aspose.Words for .NET. |
-| [تعديل تنسيق الخلية](./modify-cell-formatting/) | دليل خطوة بخطوة لتغيير تنسيق خلية في جدول باستخدام Aspose.Words for .NET. |
-| [تنسيق الجدول والخلية بحدود مختلفة](./format-table-and-cell-with-different-borders/) | دليل خطوة بخطوة لتنسيق الجدول والخلية بحدود مختلفة باستخدام Aspose.Words for .NET. |
-| [تعيين عنوان الجدول ووصفه](./set-table-title-and-description/) | دليل خطوة بخطوة لتعيين عنوان ووصف للجدول باستخدام Aspose.Words for .NET. |
-| [السماح بتباعد الخلايا](./allow-cell-spacing/) | دليل خطوة بخطوة للسماح بتباعد الخلايا باستخدام Aspose.Words for .NET. |
-| [بناء الجدول بأسلوب](./build-table-with-style/) | دليل خطوة بخطوة لبناء طاولة بنمط مخصص باستخدام Aspose.Words for .NET. |
-| [قم بتوسيع التنسيق في الخلايا والصف من النمط](./expand-formatting-on-cells-and-row-from-style/) | دليل خطوة بخطوة لتوسيع التنسيق إلى الخلايا والصفوف من نمط الجدول باستخدام Aspose.Words for .NET. |
-| [إنشاء نمط الجدول](./create-table-style/) | دليل خطوة بخطوة لإنشاء نمط جدول مخصص باستخدام Aspose.Words for .NET. |
-| [حدد التنسيق الشرطي](./define-conditional-formatting/) | دليل خطوة بخطوة لتحديد التنسيق الشرطي في جدول باستخدام Aspose.Words for .NET. |
-| [تعيين تنسيق خلايا الجدول](./set-table-cell-formatting/) | دليل خطوة بخطوة لإعداد تنسيق خلايا الجدول باستخدام Aspose.Words for .NET. |
-| [تعيين تنسيق صف الجدول](./set-table-row-formatting/) | دليل خطوة بخطوة لإعداد تنسيق صف الجدول باستخدام Aspose.Words for .NET. |
+| [Ottieni la distanza tra la tabella che circonda il testo](./get-distance-between-table-surrounding-text/) | Guida dettagliata per ottenere la distanza tra il testo e una tabella in un documento di Word utilizzando Aspose.Words per .NET. |
+| [Applica bordo contorno](./apply-outline-border/) | Guida dettagliata all'applicazione di un bordo di contorno a una tabella utilizzando Aspose.Words per .NET. |
+| [Costruisci tabella con bordi](./build-table-with-borders/) | Guida passo passo alla creazione di una tabella con bordi utilizzando Aspose.Words per .NET. |
+| [Modifica la formattazione della riga](./modify-row-formatting/) | Guida dettagliata per modificare la formattazione delle righe della tabella utilizzando Aspose.Words per .NET. |
+| [Applica la formattazione delle righe](./apply-row-formatting/) | Guida passo passo per applicare la formattazione delle righe a una tabella utilizzando Aspose.Words per .NET. |
+| [Imposta il riempimento delle celle](./set-cell-padding/) | Guida dettagliata all'impostazione dei margini delle celle della tabella utilizzando Aspose.Words per .NET. |
+| [Modifica la formattazione della cella](./modify-cell-formatting/) | Guida passo passo per modificare la formattazione di una cella in una tabella utilizzando Aspose.Words per .NET. |
+| [Formato tabella e cella con bordi diversi](./format-table-and-cell-with-different-borders/) | Guida passo passo per formattare tabelle e celle con bordi diversi utilizzando Aspose.Words per .NET. |
+| [Imposta il titolo e la descrizione della tabella](./set-table-title-and-description/) | Guida passo passo per impostare il titolo e la descrizione di una tabella utilizzando Aspose.Words per .NET. |
+| [Consenti spaziatura celle](./allow-cell-spacing/) | Guida passo passo per consentire la spaziatura delle celle utilizzando Aspose.Words per .NET. |
+| [Costruisci tavolo con stile](./build-table-with-style/) | Guida dettagliata alla creazione di una tabella con uno stile personalizzato utilizzando Aspose.Words per .NET. |
+| [Espandi la formattazione su celle e riga dallo stile](./expand-formatting-on-cells-and-row-from-style/) | Guida dettagliata per espandere la formattazione a celle e righe da uno stile di tabella utilizzando Aspose.Words per .NET. |
+| [Crea stile tabella](./create-table-style/) | Guida dettagliata alla creazione di uno stile di tabella personalizzato utilizzando Aspose.Words per .NET. |
+| [Definisci la formattazione condizionale](./define-conditional-formatting/) | Guida passo passo per definire la formattazione condizionale in una tabella utilizzando Aspose.Words per .NET. |
+| [Imposta la formattazione delle celle della tabella](./set-table-cell-formatting/) | Guida dettagliata all'impostazione della formattazione delle celle della tabella utilizzando Aspose.Words per .NET. |
+| [Imposta la formattazione delle righe della tabella](./set-table-row-formatting/) | Guida dettagliata all'impostazione della formattazione delle righe della tabella utilizzando Aspose.Words per .NET. |

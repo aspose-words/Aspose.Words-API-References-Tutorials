@@ -1,36 +1,36 @@
 ---
-title: كشف توقيعات الوثيقة
-linktitle: كشف توقيعات الوثيقة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لاكتشاف التوقيعات الرقمية في مستند باستخدام Aspose.Words for .NET.
+title: Belge İmzalarını Algıla
+linktitle: Belge İmzalarını Algıla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir belgedeki dijital imzaları algılamak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-fileformat/detect-document-signatures/
 ---
 
-تقدم هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام ميزة الكشف عن توقيع المستند مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية اكتشاف التوقيعات الرقمية في مستند.
+Bu makale, belge imza algılama özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgedeki dijital imzaların nasıl algılanacağını anlayabileceksiniz.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
-## الخطوة 1: تحديد دليل المستند
+## 1. Adım: Belge dizinini tanımlayın
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Başlamak için, belgelerinizin bulunduğu dizine giden yolu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: كشف التوقيعات الرقمية
+## 2. Adım: Dijital imzaları algılayın
 
- بعد ذلك ، نستخدم ملف`DetectFileFormat` طريقة`FileFormatUtil` فئة للكشف عن معلومات تنسيق الملف. في هذا المثال ، نفترض أن المستند يسمى "Digitallyigned.docx" وموجود في دليل المستندات المحدد.
+ Daha sonra,`DetectFileFormat` yöntemi`FileFormatUtil` dosya biçimi bilgilerini algılamak için sınıf. Bu örnekte, belgenin "Dijital olarak imzalanmış.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
 ```
 
-## الخطوة 3: تحقق من وجود توقيعات رقمية
+## 3. Adım: Dijital imzaları kontrol edin
 
- نتحقق مما إذا كان المستند يحتوي على توقيعات رقمية باستخدام امتداد`HasDigitalSignature` ممتلكات`FileFormatInfo` هدف. إذا تم الكشف عن التوقيعات الرقمية ، فإننا نعرض رسالة تشير إلى أن التوقيعات ستفقد إذا تم فتح / حفظ المستند باستخدام Aspose.Words.
+ kullanarak belgenin dijital imza içerip içermediğini kontrol ederiz.`HasDigitalSignature` mülkiyeti`FileFormatInfo` nesne. Dijital imzalar algılanırsa, belge Aspose.Words ile açılır/kaydedilirse imzaların kaybolacağını belirten bir mesaj görüntüleriz.
 
 ```csharp
 if (info.HasDigitalSignature)
@@ -41,13 +41,13 @@ if (info.HasDigitalSignature)
 }
 ```
 
-هذا كل شئ ! لقد نجحت في اكتشاف توقيعات رقمية في مستند باستخدام Aspose.Words for .NET.
+Bu kadar ! Aspose.Words for .NET kullanarak bir belgede dijital imzaları başarıyla tespit ettiniz.
 
-### مثال على شفرة المصدر لاكتشاف توقيعات المستندات باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile belge imzalarını tespit etmek için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
 

@@ -1,52 +1,52 @@
 ---
-title: أدخل ارتباط تشعبي
-linktitle: أدخل ارتباط تشعبي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الارتباطات التشعبية في مستندات Word باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Insérer un lien hypertexte
+linktitle: Insérer un lien hypertexte
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer des liens hypertexte dans des documents Word à l'aide du guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-hyperlink/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج الارتباطات التشعبية في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة ارتباطات تشعبية قابلة للنقر إلى مستنداتك.
+Dans ce didacticiel complet, vous apprendrez à insérer des liens hypertexte dans un document Word à l'aide d'Aspose.Words pour .NET. Nous vous guiderons tout au long du processus et vous fournirons les extraits de code C# nécessaires. À la fin de ce guide, vous serez en mesure d'ajouter des hyperliens cliquables à vos documents.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Conditions préalables
+Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
+- Bibliothèque Aspose.Words pour .NET installée sur votre système.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Étape 1 : créer un nouveau document et DocumentBuilder
+Pour commencer, créez un nouveau document à l'aide de la classe Document et initialisez un objet DocumentBuilder :
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل ارتباط تشعبي
-بعد ذلك ، استخدم طريقة الكتابة الخاصة بفئة DocumentBuilder لإضافة نص وتنسيق الارتباط التشعبي عن طريق تعيين خصائص اللون والتسطير:
+## Étape 2 : Insérer un lien hypertexte
+Ensuite, utilisez la méthode Write de la classe DocumentBuilder pour ajouter du texte et formatez le lien hypertexte en définissant les propriétés de couleur et de soulignement :
 
 ```csharp
 builder.Write("Please make sure to visit ");
 builder.Font.Color = Color.Blue;
 builder.Font.Underline = Underline.Single;
 
-builder.InsertHyperlink("Aspose Website", "http://www.aspose.com "، خطأ) ؛
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", faux);
 
 builder.Font.ClearFormatting();
 builder.Write(" for more information.");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الارتباط التشعبي ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Étape 3 : Enregistrer le document
+Après avoir inséré le lien hypertexte, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
-## مثال رمز مصدر لإدراج ارتباط تشعبي باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لإدخال ارتباط تشعبي باستخدام Aspose.Words for .NET:
+## Exemple de code source pour insérer un lien hypertexte à l'aide d'Aspose.Words pour .NET
+Voici le code source complet pour insérer un lien hypertexte en utilisant Aspose.Words pour .NET :
 
-تعتبر الارتباطات التشعبية طريقة فعالة لتحسين تفاعل وفائدة مستندات Word الخاصة بك. يمكن استخدامها للإشارة إلى موارد خارجية أو توفير معلومات إضافية أو إنشاء عناصر تنقل داخل المستند.
+Les liens hypertexte sont un moyen puissant d'améliorer l'interactivité et l'utilité de vos documents Word. Ils peuvent être utilisés pour référencer des ressources externes, fournir des informations supplémentaires ou créer des éléments de navigation dans le document.
 
 ```csharp
 	Document doc = new Document();
@@ -56,7 +56,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 	builder.Font.Color = Color.Blue;
 	builder.Font.Underline = Underline.Single;
 	
-	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com "، خطأ) ؛
+	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", faux);
 	
 	builder.Font.ClearFormatting();
 	builder.Write(" for more information.");
@@ -64,8 +64,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك المحددة ، بما في ذلك نص الارتباط التشعبي وعنوان URL. قم بتحسينه بالتنسيق أو الوظائف الإضافية حسب الحاجة.
+N'oubliez pas d'ajuster le code en fonction de vos besoins spécifiques, y compris le texte du lien hypertexte et l'URL. Améliorez-le avec une mise en forme ou des fonctionnalités supplémentaires selon vos besoins.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج الارتباطات التشعبية في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إضافة ارتباطات تشعبية قابلة للنقر إلى مستنداتك ، وتوجيه القراء إلى مواقع ويب خارجية أو عناوين URL محددة.
+## Conclusion
+Toutes nos félicitations! Vous avez appris avec succès comment insérer des liens hypertexte dans un document Word en utilisant Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais ajouter des hyperliens cliquables à vos documents, dirigeant les lecteurs vers des sites Web externes ou des URL spécifiques.
 

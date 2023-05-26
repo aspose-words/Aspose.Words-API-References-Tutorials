@@ -1,35 +1,35 @@
 ---
-title: تنسيق رقم تسمية البيانات
-linktitle: تنسيق رقم تسمية البيانات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تنسيق عدد تسميات البيانات في مخطط باستخدام Aspose.Words for .NET. تخصيص تنسيقات الأرقام لتسميات البيانات بسهولة.
+title: Formatieren Sie die Nummer des Datenetiketts
+linktitle: Formatieren Sie die Nummer des Datenetiketts
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie die Anzahl der Datenbeschriftungen in einem Diagramm mit Aspose.Words für .NET formatieren. Passen Sie ganz einfach Zahlenformate für Datenbeschriftungen an.
 type: docs
 weight: 10
 url: /de/net/programming-with-charts/format-number-of-data-label/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتنسيق عدد تسميات البيانات في مخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وتخصيص تنسيق الأرقام لتسميات البيانات.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET die Anzahl der Datenbeschriftungen in einem Diagramm formatieren. Der bereitgestellte Quellcode zeigt, wie Sie ein Diagramm erstellen, Reihendaten hinzufügen und das Zahlenformat von Datenbeschriftungen anpassen.
 
-## الخطوة 1: قم بإعداد المشروع
+## Schritt 1: Richten Sie das Projekt ein
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words für .NET-Bibliothek installiert. Sie können es von der offiziellen Aspose-Website herunterladen oder den NuGet-Paketmanager verwenden, um es zu installieren.
+- Ein Dokumentverzeichnispfad, in dem das Ausgabedokument gespeichert wird.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Schritt 2: Erstellen Sie ein neues Dokument und fügen Sie ein Diagramm ein
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Erstelle eine neue`Document` Objekt und a`DocumentBuilder` um das Dokument zu erstellen.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، أدخل مخططًا في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`في هذا المثال ، سنقوم بإدراج مخطط خطي.
+ Fügen Sie als Nächstes mithilfe von ein Diagramm in das Dokument ein`InsertChart` Methode der`DocumentBuilder`In diesem Beispiel fügen wir ein Liniendiagramm ein.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -37,9 +37,9 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Schritt 3: Fügen Sie dem Diagramm Seriendaten hinzu
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف ثلاث فئات والقيم المقابلة لها.
+Fügen Sie dem Diagramm Seriendaten hinzu. In diesem Beispiel fügen wir drei Kategorien und ihre entsprechenden Werte hinzu.
 
 ```csharp
 chart.Series.Clear();
@@ -49,9 +49,9 @@ ChartSeries series1 = chart.Series.Add("Aspose Series 1",
 series1.HasDataLabels = true;
 ```
 
-## الخطوة 4: تخصيص تنسيق الأرقام لتسميات البيانات
+## Schritt 4: Passen Sie das Zahlenformat der Datenbeschriftungen an
 
- لتنسيق عدد تسميات البيانات ، قم بالوصول إلى`DataLabels` المجموعة المرتبطة بالسلسلة.
+ Um die Anzahl der Datenbeschriftungen zu formatieren, greifen Sie auf zu`DataLabels` Sammlung, die mit der Serie verbunden ist.
 
 ```csharp
 series1.DataLabels.ShowValue = true;
@@ -60,22 +60,22 @@ series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 ```
 
-في هذا المثال ، قمنا بتعيين تنسيقات أرقام مختلفة لكل تسمية بيانات. تم تنسيق تسمية البيانات الأولى كعملة ، والثانية كتاريخ ، والثالثة كنسبة مئوية.
+In diesem Beispiel legen wir für jede Datenbeschriftung unterschiedliche Zahlenformate fest. Die erste Datenbeschriftung ist als Währung formatiert, die zweite als Datum und die dritte als Prozentsatz.
 
-## الخطوة 5: احفظ المستند
+## Schritt 5: Speichern Sie das Dokument
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Speichern Sie abschließend das Dokument mit im angegebenen Verzeichnis`Save` Methode der`Document` Objekt.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-هذا يكمل تنفيذ تنسيق عدد تسميات البيانات في مخطط باستخدام Aspose.Words for .NET.
+Damit ist die Implementierung der Formatierung der Anzahl der Datenbeschriftungen in einem Diagramm mit Aspose.Words für .NET abgeschlossen.
 
-### مثال على شفرة المصدر لتنسيق رقم تسمية البيانات باستخدام Aspose.Words for .NET 
+### Beispielquellcode für die Formatierung der Nummer des Datenetiketts mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 	Chart chart = shape.Chart;
 	chart.Title.Text = "Data Labels With Different Number Format";
-	// حذف السلاسل التي تم إنشاؤها بشكل افتراضي.
+	// Standardmäßig generierte Serien löschen.
 	chart.Series.Clear();
 	ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
 		new string[] { "Category 1", "Category 2", "Category 3" }, 
@@ -93,8 +93,8 @@ doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 	series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
-	// أو يمكنك تعيين كود التنسيق لربطه بخلية مصدر ،
-	// في هذه الحالة ، سيتم إعادة تعيين NumberFormat إلى عام وسيتم توريثه من خلية مصدر.
+	// Oder Sie können den Formatcode so festlegen, dass er mit einer Quellzelle verknüpft wird.
+	// In diesem Fall wird NumberFormat auf „Allgemein“ zurückgesetzt und von einer Quellzelle geerbt.
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```

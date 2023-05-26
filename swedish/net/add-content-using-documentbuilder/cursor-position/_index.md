@@ -1,44 +1,44 @@
 ---
-title: موضع المؤشر
-linktitle: موضع المؤشر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد موضع المؤشر في مستند Word باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Markörens position
+linktitle: Markörens position
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du hämtar markörpositionen i ett Word-dokument med hjälp av Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/cursor-position/
 ---
 
-في هذا المثال خطوة بخطوة ، ستتعرف على موضع المؤشر في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من استرداد العقدة والفقرة الحالية حيث يتم وضع المؤشر في المستند.
+det här steg-för-steg-exemplet kommer du att lära dig om markörpositionen i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna hämta den aktuella noden och stycket där markören är placerad i dokumentet.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Förutsättningar
+Innan vi börjar, se till att du har följande förutsättningar:
+- Aspose.Words för .NET-biblioteket installerat på ditt system.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Steg 1: Skapa ett nytt dokument och DocumentBuilder
+För att börja, skapa ett nytt dokument med klassen Document och initiera ett DocumentBuilder-objekt:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: الوصول إلى العقدة الحالية والفقرة
-بعد ذلك ، استرجع العقدة والفقرة الحالية حيث تم وضع المؤشر. يمكن تحقيق ذلك باستخدام خصائص CurrentNode و CurrentParagraph لفئة DocumentBuilder:
+## Steg 2: Gå till den aktuella noden och stycket
+Hämta sedan den aktuella noden och stycket där markören är placerad. Detta kan uppnås med hjälp av egenskaperna CurrentNode och CurrentParagraph i klassen DocumentBuilder:
 
 ```csharp
 Node curNode = builder.CurrentNode;
 Paragraph curParagraph = builder.CurrentParagraph;
 ```
 
-## الخطوة 3: استرداد معلومات موضع المؤشر
-الآن ، يمكنك استرداد المعلومات حول موضع المؤشر. في مقتطف الكود التالي ، نطبع نص الفقرة الحالية:
+## Steg 3: Hämta markörpositionsinformation
+Nu kan du hämta information om markörens position. I följande kodavsnitt skriver vi ut texten i det aktuella stycket:
 
 ```csharp
 Console.WriteLine("\nCursor move to paragraph: " + curParagraph.GetText());
 ```
 
-### مثال رمز مصدر لموقع المؤشر باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لفهم موضع المؤشر باستخدام Aspose.Words for .NET:
+### Exempel på källkod för markörposition med Aspose.Words för .NET
+Här är den fullständiga källkoden för att förstå markörens position med Aspose.Words för .NET:
 
 ```csharp
 Document doc = new Document();
@@ -50,8 +50,8 @@ Paragraph curParagraph = builder.CurrentParagraph;
 Console.WriteLine("\nCursor move to paragraph: " + curParagraph.GetText());
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية التعامل مع موضع المؤشر في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن استرداد العقدة والفقرة الحالية حيث يتم وضع المؤشر في المستند.
+## Slutsats
+Grattis! Du har framgångsrikt lärt dig hur man arbetar med markörposition i ett Word-dokument med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden och använda den medföljande källkoden kan du nu hämta den aktuella noden och stycket där markören är placerad i dokumentet.
 
-يعد فهم موضع المؤشر مفيدًا للعديد من السيناريوهات ، مثل معالجة محتوى المستند استنادًا إلى موقع المؤشر أو تنفيذ ميزات التحرير المخصصة.
+Att förstå markörens position är användbart för olika scenarier, som att manipulera dokumentinnehåll baserat på markörens plats eller implementera anpassade redigeringsfunktioner.
 

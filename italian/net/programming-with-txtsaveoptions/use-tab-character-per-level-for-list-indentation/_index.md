@@ -1,32 +1,32 @@
 ---
-title: استخدم حرف الجدولة لكل مستوى للمسافة البادئة للقائمة
-linktitle: استخدم حرف الجدولة لكل مستوى للمسافة البادئة للقائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام قوائم المسافات البادئة مع ميزة حروف الجدولة في Aspose.Words for .NET. وفر الوقت وحسّن سير عملك باستخدام هذه الميزة القوية.
+title: Usa il carattere di tabulazione per livello per il rientro dell'elenco
+linktitle: Usa il carattere di tabulazione per livello per il rientro dell'elenco
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come utilizzare gli elenchi di rientro con la funzionalità dei caratteri di tabulazione in Aspose.Words per .NET. Risparmia tempo e migliora il tuo flusso di lavoro con questa potente funzionalità.
 type: docs
 weight: 10
 url: /it/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لميزة "استخدام حرف جدولة واحد لكل مستوى من أجل المسافة البادئة للقائمة" مع Aspose.Words for .NET. تتيح لك هذه الميزة تطبيق أحرف الجدولة لوضع مسافة بادئة للقوائم في كل مستوى ، مما يوفر قدرًا أكبر من المرونة والتحكم في مظهر المستندات الخاصة بك.
+In questo tutorial, esploreremo il codice sorgente C# fornito per la funzione "Usa un carattere di tabulazione per livello per il rientro dell'elenco" con Aspose.Words per .NET. Questa funzione consente di applicare i caratteri di tabulazione per gli elenchi di rientro a ogni livello, offrendo maggiore flessibilità e controllo sull'aspetto dei documenti.
 
-## الخطوة الأولى: تهيئة البيئة
+## Passaggio 1: configurazione dell'ambiente
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Prima di iniziare, assicurati di aver impostato il tuo ambiente di sviluppo con Aspose.Words per .NET. Assicurati di aver aggiunto i riferimenti necessari e importato gli spazi dei nomi appropriati.
 
-## الخطوة 2: إنشاء المستند والمولد
+## Passaggio 2: creazione del documento e del generatore
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- في هذه الخطوة ، نقوم بإنشاء ملف`Document` كائن وما يرتبط بها`DocumentBuilder` هدف. ستسمح لنا هذه الكائنات بمعالجة وإنشاء وثيقتنا.
+ In questo passaggio, creiamo un nuovo file`Document` oggetto e un associato`DocumentBuilder` oggetto. Questi oggetti ci permetteranno di manipolare e generare il nostro documento.
 
-## الخطوة 3: إنشاء قائمة بثلاثة مستويات من المسافة البادئة
+## Passaggio 3: creazione di un elenco con tre livelli di indentazione
 
 ```csharp
 builder.ListFormat.ApplyNumberDefault();
@@ -37,9 +37,9 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
- في هذه الخطوة ، نطبق التنسيق الافتراضي لأرقام القائمة باستخدام امتداد`ApplyNumberDefault()` طريقة منسق القائمة. بعد ذلك ، نضيف ثلاثة عناصر إلى قائمتنا باستخدام أداة إنشاء المستندات`Writeln()` و`Write()` طُرق. نحن نستخدم ال`ListIndent()` طريقة لزيادة المسافة البادئة في كل مستوى.
+ In questo passaggio, applichiamo il formato predefinito dei numeri di elenco utilizzando il`ApplyNumberDefault()` metodo del formattatore di elenchi. Successivamente, aggiungiamo tre elementi al nostro elenco utilizzando il generatore di documenti`Writeln()` E`Write()` metodi. Noi usiamo il`ListIndent()` metodo per incrementare l'indentazione a ogni livello.
 
-## الخطوة 4: تكوين خيارات التسجيل
+## Passaggio 4: configurare le opzioni di registrazione
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -47,30 +47,30 @@ saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- في هذه الخطوة ، نقوم بتهيئة الخيارات لحفظ المستند. نخلق ملف`TxtSaveOptions` كائن وتعيين`ListIndentation.Count`الخاصية إلى 1 لتحديد عدد أحرف الجدولة لكل مستوى مسافة بادئة. قمنا أيضًا بتعيين ملف`ListIndentation.Character` إلى "\ t" لتحديد أننا نريد استخدام أحرف الجدولة.
+ In questo passaggio, configuriamo le opzioni per il salvataggio del documento. Creiamo un nuovo`TxtSaveOptions` oggetto e impostare il`ListIndentation.Count`property su 1 per specificare il numero di caratteri di tabulazione per livello di indentazione. Impostiamo anche il`ListIndentation.Character` proprietà su '\t' per specificare che vogliamo utilizzare i caratteri di tabulazione.
 
-## الخطوة 5: احفظ المستند
+## Passaggio 5: salvare il documento
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نقوم بحفظ المستند بخيارات الحفظ المحددة. نحن نستخدم ال`Save()` طريقة المستند التي تمر بالمسار الكامل لملف الإخراج وخيارات الحفظ.
+ In quest'ultimo passaggio, salviamo il documento con le opzioni di salvataggio specificate. Noi usiamo il`Save()` metodo del documento passando il percorso completo del file di output e le opzioni di salvataggio.
 
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لإنشاء مستند به مسافة بادئة للقائمة باستخدام أحرف الجدولة. سيتم حفظ ملف الإخراج في الدليل المحدد باسم "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt".
+Ora puoi eseguire il codice sorgente per generare un documento con il rientro dell'elenco utilizzando i caratteri di tabulazione. Il file di output verrà salvato nella directory specificata con il nome "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt".
 
-### مثال على مصدر التعليمات البرمجية لميزة استخدام حرف جدولة واحد لكل مستوى لميزة المسافة البادئة للقائمة مع Aspose.Words for .NET:
+### Fonte di codice di esempio per la funzione Usa un carattere di tabulazione per livello per il rientro dell'elenco con Aspose.Words per .NET:
 
 ```csharp
 
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+// Crea un elenco con tre livelli di indentazione
 builder.ListFormat.ApplyNumberDefault();
 builder. Writen("Element 1");
 builder.ListFormat.ListIndent();
@@ -86,4 +86,4 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListInde
 
 ```
 
-الآن بعد أن انتهيت من إنشاء المستند مع المسافة البادئة للقائمة باستخدام أحرف الجدولة ، يمكنك استخدام Markdown لتنسيق محتوى مقالتك. تأكد من استخدام علامات التنسيق المناسبة لتمييز العناوين والعناوين الفرعية وشفرة المصدر المضمنة.
+Ora che hai finito di generare il tuo documento con il rientro dell'elenco utilizzando i caratteri di tabulazione, puoi utilizzare Markdown per formattare il contenuto dell'articolo. Assicurati di utilizzare tag di formattazione appropriati per evidenziare titoli, sottotitoli e il codice sorgente incluso.

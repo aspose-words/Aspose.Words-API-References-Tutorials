@@ -1,47 +1,47 @@
 ---
-title: الحصول على قائمة الخطوط المتاحة
-linktitle: الحصول على قائمة الخطوط المتاحة
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words for .NET.
+title: Obtenir la liste des polices disponibles
+linktitle: Obtenir la liste des polices disponibles
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Dans ce didacticiel, découvrez comment obtenir la liste des polices disponibles dans Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/get-list-of-available-fonts/
 ---
-في هذا البرنامج التعليمي ، سنشرح كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words for .NET. تتيح لك قائمة الخطوط المتوفرة معرفة الخطوط التي يمكنك استخدامها في مستنداتك. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Dans ce tutoriel, nous expliquerons comment obtenir la liste des polices disponibles dans Aspose.Words pour .NET. La liste des polices disponibles vous permet de savoir quelles polices vous pouvez utiliser dans vos documents. Nous vous guiderons étape par étape pour vous aider à comprendre et à implémenter le code dans votre projet .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Conditions préalables
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+- Une connaissance pratique du langage de programmation C#
+- La bibliothèque Aspose.Words pour .NET installée dans votre projet
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+ Tout d'abord, vous devez définir le chemin du répertoire vers l'emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تكوين مصادر الخطوط
- بعد ذلك ، سننشئ مثيلًا لـ`FontSettings` واحصل على مصادر الخطوط الحالية باستخدام امتداد`GetFontsSources()` طريقة. سنضيف أيضًا مصدر خط جديدًا عن طريق تحديد مجلد يحتوي على الخطوط.
+## Étape 2 : Configurer les sources de polices
+ Ensuite, nous allons créer une instance de`FontSettings` et récupérez les sources de polices existantes à l'aide de`GetFontsSources()` méthode. Nous ajouterons également une nouvelle source de polices en spécifiant un dossier contenant des polices.
 
 ```csharp
-// تكوين مصادر الخط
+// Configurer les sources de polices
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 
-// أضف مصدر خط جديد
+// Ajouter une nouvelle source de police
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
 fontSources.Add(folderFontSource);
 
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## الخطوة 3: احصل على قائمة الخطوط المتاحة
- الآن سوف نتصفح الخطوط المتاحة باستخدام امتداد`GetAvailableFonts()` الطريقة على مصدر الخط الأول المحدث.
+## Étape 3 : Obtenir la liste des polices disponibles
+ Nous allons maintenant parcourir les polices disponibles en utilisant le`GetAvailableFonts()` méthode sur la première source de police mise à jour.
 
 ```csharp
-// الحصول على قائمة الخطوط المتاحة
+// Obtenir la liste des polices disponibles
 foreach(PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 {
 Console.WriteLine("Font Family Name: " + fontInfo.FontFamilyName);
@@ -52,18 +52,18 @@ Console.WriteLine("Path: " + fontInfo.FilePath);
 ```
 
 
-### عينة من التعليمات البرمجية المصدر للحصول على قائمة الخطوط المتاحة باستخدام Aspose.Words for .NET 
+### Exemple de code source pour obtenir la liste des polices disponibles à l'aide de Aspose.Words pour .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// أضف مصدر مجلد جديد والذي سيوجه Aspose.Words للبحث في المجلد التالي عن الخطوط.
+// Ajoutez une nouvelle source de dossier qui demandera à Aspose.Words de rechercher les polices dans le dossier suivant.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// أضف المجلد المخصص الذي يحتوي على خطوطنا إلى قائمة مصادر الخطوط الموجودة.
+// Ajoutez le dossier personnalisé qui contient nos polices à la liste des sources de polices existantes.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -76,5 +76,5 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words for .NET. يتيح لك هذا معرفة الخطوط التي يمكنك استخدامها في مستنداتك. لا تتردد في استخدام هذه الميزة لاختيار الخطوط المناسبة لاحتياجاتك.
+## Conclusion
+Dans ce tutoriel, nous avons vu comment obtenir la liste des polices disponibles dans Aspose.Words pour .NET. Cela vous permet de savoir quelles polices vous pouvez utiliser dans vos documents. N'hésitez pas à utiliser cette fonctionnalité pour choisir les polices appropriées à vos besoins.

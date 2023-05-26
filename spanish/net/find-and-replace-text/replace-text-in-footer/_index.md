@@ -1,49 +1,49 @@
 ---
-title: استبدال النص في التذييل
-linktitle: استبدال النص في التذييل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استبدال النص في تذييل مستندات Word باستخدام Aspose.Words for .NET.
+title: Reemplazar texto en pie de página
+linktitle: Reemplazar texto en pie de página
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a reemplazar texto en el pie de página de documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/find-and-replace-text/replace-text-in-footer/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة استبدال النص في التذييل في Aspose.Words لمكتبة .NET. تتيح لك هذه الميزة البحث عن نص معين واستبداله في تذييلات مستندات Word.
+En este artículo, exploraremos el código fuente de C# anterior para comprender cómo usar la función Reemplazar texto en el pie de página en la biblioteca Aspose.Words para .NET. Esta función le permite buscar y reemplazar texto específico en los pies de página de los documentos de Word.
 
-## المتطلبات الأساسية
+## requisitos previos
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conocimientos básicos del lenguaje C#.
+- Entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
 
-## الخطوة 1: قم بتحميل المستند
+## Paso 1: Cargue el documento
 
-قبل أن نبدأ في استخدام استبدال النص في التذييل ، نحتاج إلى تحميل المستند إلى Aspose.Words for .NET. يمكن القيام بذلك باستخدام ملف`Document` فئة وتحديد مسار ملف المستند:
+Antes de comenzar a usar el reemplazo de texto en el pie de página, debemos cargar el documento en Aspose.Words para .NET. Esto se puede hacer usando el`Document` class y especificando la ruta del archivo del documento:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Footer.docx");
 ```
 
-## الخطوة 2: الوصول إلى التذييل
+## Paso 2: Accede al pie de página
 
- بمجرد تحميل المستند ، نحتاج إلى الوصول إلى التذييل لإجراء استبدال النص. في مثالنا ، نستخدم الامتداد`HeadersFooters` خاصية القسم الأول من المستند للحصول على مجموعة الرؤوس / التذييلات. بعد ذلك ، نختار التذييل الرئيسي باستخدام`HeaderFooterType.FooterPrimary` فِهرِس:
+ Una vez cargado el documento, debemos acceder al pie de página para realizar el reemplazo del texto. En nuestro ejemplo, usamos el`HeadersFooters` propiedad de la primera sección del documento para obtener la colección de encabezados/pies de página. A continuación, seleccionamos el pie de página principal usando el`HeaderFooterType.FooterPrimary` índice:
 
 ```csharp
 HeaderFooterCollection headersFooters = doc.FirstSection.HeadersFooters;
 HeaderFooter footer = headersFooters[HeaderFooterType.FooterPrimary];
 ```
 
-## الخطوة 3: تكوين خيارات البحث والاستبدال
+## Paso 3: Configure las opciones de búsqueda y reemplazo
 
- سنقوم الآن بتكوين خيارات البحث والاستبدال باستخدام ملف`FindReplaceOptions` هدف. في مثالنا ، حددنا`MatchCase` ل`false` لتجاهل الحالة عند البحث ، و`FindWholeWordsOnly` ل`false` للسماح بالبحث عن أجزاء من الكلمات واستبدالها:
+ Ahora configuraremos las opciones de buscar y reemplazar usando un`FindReplaceOptions` objeto. En nuestro ejemplo, establecemos`MatchCase` a`false` ignorar mayúsculas y minúsculas al buscar, y`FindWholeWordsOnly` a`false` para permitir que se busquen y reemplacen partes de palabras:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { MatchCase = false, FindWholeWordsOnly = false };
 ```
 
-## الخطوة 4: استبدال النص في التذييل
+## Paso 4: Reemplace el texto en el pie de página
 
- نحن نستخدم ال`Range.Replace` طريقة لإجراء استبدال النص في التذييل. في مثالنا ، نستبدل العبارة "(C) 2006 Aspose Pty Ltd." بواسطة "حقوق الطبع والنشر (C) 2020 لشركة Aspose Pty Ltd." :
+ usamos el`Range.Replace` método para realizar el reemplazo de texto en el pie de página. En nuestro ejemplo, reemplazamos la frase "(C) 2006 Aspose Pty Ltd." por "Copyright (C) 2020 por Aspose Pty Ltd." :
 
 ```csharp
 footer
@@ -51,21 +51,21 @@ footer
 .Range.Replace("(C) 2006 Aspose Pty Ltd.", "Copyright (C) 2020 by Aspose Pty Ltd.", options);
 ```
 
-## الخطوة 5: احفظ المستند المحرر
+## Paso 5: Guarda el documento editado
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+ Finalmente, guardamos el documento modificado en un directorio específico usando el`Save` método:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
 ```
 
-### مثال على شفرة المصدر لاستبدال النص في التذييل باستخدام Aspose.Words لـ .NET
+### Ejemplo de código fuente para Reemplazar texto en el pie de página usando Aspose.Words para .NET
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام استبدال نص التذييل بـ Aspose.Words for .NET:
+Aquí está el código fuente de muestra completo para demostrar el uso del reemplazo de texto de pie de página con Aspose.Words para .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Footer.docx");
 
@@ -81,6 +81,6 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
         
 ```
 
-## خاتمة
+## Conclusión
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة استبدال النص في التذييل في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لتحميل مستند ، والوصول إلى التذييل ، وتكوين خيارات البحث والاستبدال ، وإجراء استبدال النص ، وحفظ المستند المحرر.
+En este artículo, exploramos el código fuente de C# para entender cómo usar la función Reemplazar texto en el pie de página de Aspose.Words para .NET. Seguimos una guía paso a paso para cargar un documento, acceder al pie de página, configurar las opciones de búsqueda y reemplazo, realizar el reemplazo de texto y guardar el documento editado.

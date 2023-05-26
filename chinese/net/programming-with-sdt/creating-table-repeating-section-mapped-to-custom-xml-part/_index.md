@@ -1,38 +1,38 @@
 ---
-title: إنشاء مقطع مكرر للجدول معين إلى جزء Xml مخصص
-linktitle: إنشاء مقطع مكرر للجدول معين إلى جزء Xml مخصص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء جدول مع قسم مكرر معين إلى CustomXmlPart في مستند Word باستخدام Aspose.Words for .NET.
+title: 创建映射到自定义 Xml 部分的表重复部分
+linktitle: 创建映射到自定义 Xml 部分的表重复部分
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 创建一个表格，其中重复部分映射到 Word 文档中的 CustomXmlPart。
 type: docs
 weight: 10
 url: /zh/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
 
-يوضح هذا البرنامج التعليمي كيفية إنشاء جدول مع قسم مكرر معين إلى جزء Xml مخصص في مستند Word باستخدام Aspose.Words for .NET. يسمح لك قسم التكرار بإضافة صفوف ديناميكيًا استنادًا إلى بيانات XML المخزنة في جزء Xml المخصص.
+本教程演示如何使用 Aspose.Words for .NET 创建一个表格，其中重复部分映射到 Word 文档中的自定义 Xml 部分。重复部分允许您根据存储在自定义 XML 部件中的 XML 数据动态添加行。
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## 先决条件
+要学习本教程，您需要具备以下条件：
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- 安装了 Aspose.Words for .NET 库。
+- C# 的基本知识和使用 Word 文档。
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستند الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## 第 1 步：设置文档目录
+首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`使用要保存文档的目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` لبناء محتوى المستند.
+## 第 2 步：创建文档和 DocumentBuilder
+创建一个新的实例`Document`类和一个`DocumentBuilder`构建文档的内容。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إضافة بيانات XML مخصصة إلى CustomXmlPart
- إنشاء`CustomXmlPart` وإضافة بيانات XML المخصصة إليها. في هذا المثال ، نقوم بإنشاء سلسلة XML تمثل مجموعة من الكتب بعناوينها ومؤلفيها.
+## 第 3 步：将自定义 XML 数据添加到 CustomXmlPart
+创建一个`CustomXmlPart`并向其中添加自定义 XML 数据。在这个例子中，我们创建了一个 XML 字符串来表示一组带有书名和作者的书。
 
 ```csharp
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
@@ -41,8 +41,8 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 	"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
 ```
 
-## الخطوة 4: إنشاء هيكل جدول وجدول
- ابدأ في إنشاء جدول باستخدام ملف`StartTable` طريقة`DocumentBuilder` . أضف خلايا الجدول والمحتوى باستخدام ملف`InsertCell` و`Write` طُرق.
+## 第 4 步：创建表和表结构
+开始使用创建表`StartTable`的方法`DocumentBuilder`.使用添加表格单元格和内容`InsertCell`和`Write`方法。
 
 ```csharp
 Table table = builder.StartTable();
@@ -54,8 +54,8 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## الخطوة 5: إنشاء قسم التكرار المعين إلى XML المخصص
- إنشاء`StructuredDocumentTag` مع`SdtType.RepeatingSection` لتمثيل قسم التكرار. قم بتعيين مخطط XML للقسم المكرر باستخدام امتداد`SetMapping` طريقة`XmlMapping` ملكية. في هذا المثال ، نقوم بتعيين قسم التكرار إلى`/books[1]/book`.
+## 第 5 步：创建映射到自定义 XML 的重复部分
+创建一个`StructuredDocumentTag`和`SdtType.RepeatingSection`代表重复部分。使用`SetMapping`的方法`XmlMapping`财产。在此示例中，我们将重复部分映射到`/books[1]/book`.
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt =
@@ -64,8 +64,8 @@ repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## الخطوة 6: إنشاء عنصر قسم مكرر وإضافة خلايا
- إنشاء`StructuredDocumentTag` مع`SdtType.RepeatingSectionItem` لتمثيل عنصر القسم المكرر. قم بإلحاقه كطفل بقسم التكرار.
+## 第 6 步：创建重复部分项并添加单元格
+创建一个`StructuredDocumentTag`和`SdtType.RepeatingSectionItem`来表示重复部分项目。将它作为子项附加到重复部分。
 
 ```csharp
 StructuredDocumentTag repeatingSectionItemSdt = 
@@ -73,17 +73,17 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- إنشاء`Row`لتمثيل كل عنصر في قسم التكرار وإلحاقه بعنصر القسم المكرر.
+创建一个`Row`表示重复部分中的每个项目并将其附加到重复部分项目。
 
 ```csharp
 Row row = new Row(doc);
 repeatingSectionItemSdt.AppendChild(row);
 ```
 
-## الخطوة 7: إضافة عناصر تحكم المحتوى داخل قسم التكرار
- يخلق`StructuredDocumentTag` الأشياء ذات`SdtType.PlainText`
+## 第 7 步：在重复部分添加内容控件
+创造`StructuredDocumentTag`对象与`SdtType.PlainText`
 
-  لتمثيل العنوان وعناصر تحكم محتوى المؤلف. قم بتعيين مخطط XML لكل عنصر تحكم محتوى باستخدام ملف`SetMapping` طريقة`XmlMapping` ملكية. في هذا المثال ، نقوم بتعيين عنصر تحكم العنوان إلى`/books[1]/book[1]/title[1]` وسيطر المؤلف على`/books[1]/book[1]/author[1]`.
+ 代表标题和作者内容控件。使用`SetMapping`的方法`XmlMapping`财产。在这个例子中，我们将标题控件映射到`/books[1]/book[1]/title[1]`和作者控制`/books[1]/book[1]/author[1]`.
 
 ```csharp
 StructuredDocumentTag titleSdt =
@@ -97,17 +97,17 @@ authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 row.AppendChild(authorSdt);
 ```
 
-## الخطوة 8: احفظ المستند
- احفظ المستند المعدل إلى الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
+## 第 8 步：保存文件
+使用 将修改后的文档保存到指定目录`Save`方法。提供具有适当文件扩展名的所需文件名。在此示例中，我们将文档保存为“WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx”。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
 ```
 
-### مثال على شفرة المصدر لإنشاء قسم مكرر للجدول معين إلى جزء Xml مخصص باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 创建表重复部分映射到自定义 Xml 部分的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -144,4 +144,4 @@ doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXm
 
 ```
 
-هذا كل شيء! لقد نجحت في إنشاء جدول به قسم مكرر تم تعيينه إلى CustomXmlPart في مستند Word باستخدام Aspose.Words for .NET.
+就是这样！您已经使用 Aspose.Words for .NET 成功创建了一个表格，其中重复部分映射到 Word 文档中的 CustomXmlPart。

@@ -1,21 +1,21 @@
 ---
-title: أدخل فقرة
-linktitle: أدخل فقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج فقرات منسقة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Insertar párrafo
+linktitle: Insertar párrafo
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a insertar párrafos con formato en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/insert-paragraph/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج فقرات في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة فقرات منسقة إلى مستنداتك.
+En este completo tutorial, aprenderá a insertar párrafos en un documento de Word usando Aspose.Words para .NET. Lo guiaremos a través del proceso y le proporcionaremos los fragmentos de código C# necesarios. Al final de esta guía, podrá agregar párrafos con formato a sus documentos.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
+- Aspose.Words para la biblioteca .NET instalada en su sistema.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Paso 1: Cree un nuevo documento y DocumentBuilder
+Para comenzar, cree un nuevo documento usando la clase Document e inicialice un objeto DocumentBuilder:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,8 +23,8 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تعيين الخط والتنسيق
-بعد ذلك ، قم بإعداد خصائص الخط وتنسيق الفقرة باستخدام كائنات Font و ParagraphFormat على التوالي:
+## Paso 2: Establecer fuente y formato
+A continuación, configure las propiedades de fuente y el formato de párrafo utilizando los objetos Font y ParagraphFormat respectivamente:
 
 ```csharp
 Font font = builder.Font;
@@ -40,22 +40,22 @@ paragraphFormat.Alignment = ParagraphAlignment.Justify;
 paragraphFormat.KeepTogether = true;
 ```
 
-## الخطوة 3: أدخل فقرة
-بعد إعداد الخط والتنسيق ، استخدم طريقة Writeln لفئة DocumentBuilder لإدراج فقرة كاملة:
+## Paso 3: inserta un párrafo
+Después de configurar la fuente y el formato, use el método Writeln de la clase DocumentBuilder para insertar un párrafo completo:
 
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```
 
-## الخطوة 4: احفظ المستند
-بعد إدراج الفقرة ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Paso 4: Guarde el documento
+Después de insertar el párrafo, guarde el documento en un archivo usando el método Guardar de la clase Documento:
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
-## مثال على كود المصدر لإدراج فقرة باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال فقرة باستخدام Aspose.Words for .NET:
+## Ejemplo de código fuente para insertar párrafo usando Aspose.Words para .NET
+Aquí está el código fuente completo para insertar un párrafo usando Aspose.Words para .NET:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -79,5 +79,5 @@ builder.Writeln("A whole paragraph.");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج فقرات منسقة في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إضافة فقرات مخصصة مع خطوط معينة وتنسيق ومحاذاة مستنداتك.
+## Conclusión
+¡Felicidades! Ha aprendido con éxito cómo insertar párrafos formateados en un documento de Word usando Aspose.Words para .NET. Al seguir la guía paso a paso y utilizar el código fuente provisto, ahora puede agregar párrafos personalizados con fuentes, formato y alineación específicos a sus documentos.

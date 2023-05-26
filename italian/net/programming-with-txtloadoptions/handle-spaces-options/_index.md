@@ -1,23 +1,23 @@
 ---
-title: التعامل مع خيارات المسافات
-linktitle: التعامل مع خيارات المسافات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدارة المساحات في مستندات TXT الخاصة بك باستخدام Aspose.Words for .NET. قم بإزالة المسافات غير الضرورية وتحسين إمكانية القراءة.
+title: Gestisci le opzioni degli spazi
+linktitle: Gestisci le opzioni degli spazi
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come gestire gli spazi nei tuoi documenti TXT con Aspose.Words per .NET. Rimuovi gli spazi non necessari e migliora la leggibilità.
 type: docs
 weight: 10
 url: /it/net/programming-with-txtloadoptions/handle-spaces-options/
 ---
 
-في هذا البرنامج التعليمي ، سنستكشف كود المصدر C # المقدم لوظيفة "إدارة المساحات باستخدام خيارات تحميل TXT" مع Aspose.Words for .NET. تتيح لك هذه الميزة تحديد سلوك معالجة المسافات البيضاء عند تحميل مستند TXT.
+In questo tutorial, esploreremo il codice sorgente C# fornito per la funzionalità di "Gestione degli spazi con le opzioni di caricamento TXT" con Aspose.Words per .NET. Questa funzione consente di specificare il comportamento di gestione degli spazi bianchi durante il caricamento di un documento TXT.
 
-## الخطوة الأولى: تهيئة البيئة
+## Passaggio 1: configurazione dell'ambiente
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Prima di iniziare, assicurati di aver impostato il tuo ambiente di sviluppo con Aspose.Words per .NET. Assicurati di aver aggiunto i riferimenti necessari e importato gli spazi dei nomi appropriati.
 
-## الخطوة 2: إنشاء مستند نصي
+## Passaggio 2: creazione del documento di testo
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 const string textDoc = "Line 1\n" +
@@ -25,9 +25,9 @@ const string textDoc = "Line 1\n" +
                         "Line 3";
 ```
 
-في هذه الخطوة ، نقوم بإنشاء سلسلة نصية تحاكي مستندًا نصيًا يحتوي على أسطر بها مسافات بادئة وزائدة.
+In questo passaggio, creiamo una stringa di testo che simula un documento di testo contenente righe con spazi iniziali e finali.
 
-## الخطوة 3: تكوين خيارات التحميل
+## Passaggio 3: configurazione delle opzioni di caricamento
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions
@@ -37,32 +37,32 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- في هذه الخطوة ، نقوم بتهيئة الخيارات لتحميل مستند TXT. نخلق ملف`TxtLoadOptions` كائن وتعيين`LeadingSpacesOptions` و`TrailingSpacesOptions` خصائص`TxtLeadingSpacesOptions.Trim` و`TxtTrailingSpacesOptions.Trim` على التوالى. هذا يخبر Aspose. Words بإزالة المسافات البادئة والزائدة من الأسطر عند تحميل المستند.
+ In questo passaggio, configuriamo le opzioni per il caricamento del documento TXT. Creiamo un nuovo`TxtLoadOptions` oggetto e impostare il`LeadingSpacesOptions` E`TrailingSpacesOptions` proprietà a`TxtLeadingSpacesOptions.Trim` E`TxtTrailingSpacesOptions.Trim` rispettivamente. Questo dice ad Aspose.Words di rimuovere gli spazi iniziali e finali dalle righe durante il caricamento del documento.
 
-## الخطوة 4: تحميل المستند
+## Passaggio 4: caricamento del documento
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير دفق الذاكرة الذي يحتوي على سلسلة نصية محددة وخيارات التحميل.
+ In questo passaggio, carichiamo il documento utilizzando il file`Document` metodo e passando il flusso di memoria contenente la stringa di testo specificata e le opzioni di caricamento.
 
-## الخطوة 5: احفظ المستند
+## Passaggio 5: salvare il documento
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ المستند الناتج بتنسيق docx. باستخدام الامتداد`Save` الطريقة وتمرير المسار إلى ملف الإخراج.
+ In quest'ultimo passaggio, salviamo il documento risultante in formato .docx utilizzando il file`Save` metodo e passando il percorso al file di output.
 
-يمكنك الآن تشغيل الكود المصدري لتحميل المستند النصي عن طريق تحديد خيارات معالجة المسافات. سيتم حفظ المستند الناتج في الدليل المحدد باسم "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx".
+Ora puoi eseguire il codice sorgente per caricare il documento di testo specificando le opzioni di gestione degli spazi bianchi. Il documento risultante verrà salvato nella directory specificata con il nome "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx".
 
-### نموذج رمز مصدر لميزة إدارة المساحة مع خيارات تحميل TXT مع Aspose.Words for .NET*
+### Esempio di codice sorgente per la funzione di gestione dello spazio con opzioni di caricamento TXT con Aspose.Words per .NET*
 
 ```csharp
 
             
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 const string textDoc = "      Line 1 \n" +
@@ -82,18 +82,18 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx")
         
 ```
 
-## خاتمة
+## Conclusione
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة إدارة المساحات باستخدام خيارات تحميل TXT في Aspose.Words for .NET. لقد تعلمنا كيفية تحديد سلوك التعامل مع المسافات البيضاء عند تحميل مستند TXT.
+In questo tutorial, abbiamo esplorato la funzionalità di gestione degli spazi con le opzioni di caricamento TXT in Aspose.Words per .NET. Abbiamo imparato come specificare il comportamento di gestione degli spazi bianchi durante il caricamento di un documento TXT.
 
-هذه الميزة مفيدة جدًا للتعامل مع المسافات غير الضرورية على يسار ويمين الأسطر في المستند. من خلال تكوين خيارات التحميل المناسبة ، يمكنك بسهولة إزالة هذه المساحات غير المرغوب فيها ، مما يساعد على جعل محتوى المستند أكثر وضوحًا وقابلية للقراءة.
+Questa funzione è molto utile per gestire gli spazi non necessari a sinistra ea destra delle righe in un documento. Configurando le opzioni di caricamento appropriate, puoi rimuovere facilmente questi spazi indesiderati, il che aiuta a rendere il contenuto del documento più pulito e leggibile.
 
-يوفر Aspose.Words for .NET العديد من الميزات المتقدمة لمعالجة المستندات وإنشائها. تعد إدارة المساحات عند تحميل مستند TXT واحدة من العديد من الأدوات القوية التي تضعها تحت تصرفك.
+Aspose.Words per .NET offre molte funzionalità avanzate per la manipolazione e la generazione di documenti. La gestione degli spazi durante il caricamento di un documento TXT è uno dei tanti potenti strumenti che mette a tua disposizione.
 
- من المهم اختيار خيارات إدارة المساحة التي تناسب السيناريو الخاص بك بشكل أفضل. في هذا المثال ، استخدمنا الامتداد`Trim`خيارات لإزالة المسافات غير الضرورية من بداية ونهاية السطر. ومع ذلك ، لدى Aspose.Words أيضًا خيارات أخرى للاحتفاظ بالمسافات أو إزالتها تمامًا أو الاحتفاظ بها كما هي.
+ È importante scegliere le opzioni di gestione dello spazio che meglio si adattano al tuo scenario specifico. In questo esempio, abbiamo utilizzato il`Trim`opzioni per rimuovere gli spazi non necessari dall'inizio e dalla fine della riga. Tuttavia, Aspose.Words ha anche altre opzioni per mantenere gli spazi, rimuoverli completamente o tenerli così come sono.
 
-لا تنس تكييف هذه الخيارات وفقًا لاحتياجاتك الخاصة وهيكل مستندات TXT الخاصة بك.
+Non dimenticare di adattare queste opzioni in base alle tue esigenze specifiche e alla struttura dei tuoi documenti TXT.
 
-باستخدام Aspose.Words for .NET ، يمكنك بسهولة معالجة المسافات البيضاء في مستنداتك ، وتحسين جودة التخطيط وقابلية قراءة المحتوى.
+Con Aspose.Words per .NET, puoi facilmente manipolare gli spazi bianchi nei tuoi documenti, migliorando la qualità del layout e la leggibilità dei contenuti.
 
-لذلك ، لا تتردد في دمج إدارة المسافات البيضاء مع خيارات تحميل TXT في Aspose.Words لمشاريع .NET واستفد من مزاياها لإنشاء مستندات جيدة التنسيق وسهلة القراءة.
+Quindi, non esitare a integrare la gestione degli spazi bianchi con le opzioni di caricamento TXT nei tuoi progetti Aspose.Words per .NET e sfrutta i suoi vantaggi per creare documenti ben formattati e di facile lettura.

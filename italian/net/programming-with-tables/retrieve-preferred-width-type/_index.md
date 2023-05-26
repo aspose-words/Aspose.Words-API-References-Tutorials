@@ -1,56 +1,56 @@
 ---
-title: استرجاع نوع العرض المفضل
-linktitle: استرجاع نوع العرض المفضل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد النوع وقيمة العرض المفضلة لخلية في جدول Word باستخدام Aspose.Words for .NET.
+title: Recupera il tipo di larghezza preferito
+linktitle: Recupera il tipo di larghezza preferito
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come recuperare il tipo e il valore di larghezza preferito di una cella in una tabella di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/retrieve-preferred-width-type/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استرداد نوع العرض المفضل وقيمته من خلية جدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من استرداد نوع العرض المفضل (مطلق أو نسبي أو تلقائي) وقيمته لخلية معينة في جداول مستندات Word الخاصة بك.
+In questo tutorial impareremo come recuperare il tipo di larghezza preferito e il suo valore da una cella di tabella in un documento di Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di recuperare il tipo di larghezza preferito (assoluto, relativo o automatico) e il suo valore per una cella specifica nelle tabelle del tuo documento Word.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Passaggio 1: impostazione del progetto
+1. Avvia Visual Studio e crea un nuovo progetto C#.
+2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## Passaggio 2: caricamento del documento
+Per iniziare a lavorare con il documento, attenersi alla seguente procedura:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Carica il documento
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-تأكد من استبدال "دليل المستندات الخاص بك" بالمسار الفعلي إلى دليل المستندات الخاص بك وقم بتوفير اسم الملف الصحيح.
+Assicurati di sostituire "YOUR DOCUMENTS DIRECTORY" con il percorso effettivo della directory dei documenti e fornisci il nome file corretto.
 
-## الخطوة 3: استرجاع نوع العرض وقيمته المفضلين
-بعد ذلك ، سنقوم باسترداد نوع العرض المفضل وقيمته لخلية جدول معينة. استخدم الكود التالي:
+## Passaggio 3: recupero del tipo e del valore di larghezza preferiti
+Successivamente, recupereremo il tipo di larghezza preferito e il relativo valore per una specifica cella della tabella. Usa il seguente codice:
 
 ```csharp
-// استرجع الجدول
+// Recupera il tavolo
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 
-// تنشيط الضبط التلقائي للجدول
+// Attiva la regolazione automatica del tavolo
 table. AllowAutoFit = true;
 
-// استرجع الخلية الأولى من الصف الأول
+// Recupera la prima cella della prima riga
 Cell firstCell = table.FirstRow.FirstCell;
 
-// استرجع نوع العرض المفضل وقيمته
+// Recupera il tipo di larghezza preferito e il relativo valore
 PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-هنا نستخدم المستند لجلب الجدول الأول ، ثم نقوم بتمكين الجدول التلقائي الملائم مع`AllowAutoFit` ملكية. ثم نسترجع الخلية الأولى من الصف الأول من الجدول. من هذه الخلية ، يمكننا استرداد نوع العرض المفضل بامتداد`PreferredWidth.Type` الممتلكات وقيمتها مع`PreferredWidth.Value` ملكية.
+Qui usiamo il documento per recuperare la prima tabella, quindi abilitiamo l'adattamento automatico della tabella con il`AllowAutoFit` proprietà. Quindi recuperiamo la prima cella della prima riga della tabella. Da questa cella, possiamo recuperare il tipo di larghezza preferito con il`PreferredWidth.Type` proprietà e il suo valore con il`PreferredWidth.Value` proprietà.
 
-### نموذج التعليمات البرمجية المصدر لـ Retrieve Preferred Width Type باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per il recupero del tipo di larghezza preferito utilizzando Aspose.Words per .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");
@@ -61,5 +61,5 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية استرداد نوع العرض المفضل وقيمته من خلية جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك استرداد هذه المعلومات لخلايا معينة في جداول مستندات Word الخاصة بك.
+## Conclusione
+In questo tutorial, abbiamo imparato come recuperare il tipo di larghezza preferito e il suo valore da una cella di tabella in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi recuperare queste informazioni per celle specifiche nelle tabelle del documento di Word.

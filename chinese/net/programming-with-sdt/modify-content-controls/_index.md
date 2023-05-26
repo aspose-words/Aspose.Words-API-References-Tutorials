@@ -1,41 +1,41 @@
 ---
-title: تعديل عناصر التحكم في المحتوى
-linktitle: تعديل عناصر التحكم في المحتوى
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعديل النص والقوائم المنسدلة والصور ضمن عناصر التحكم في المحتوى في مستند Word باستخدام Aspose.Words for .NET.
+title: 修改内容控件
+linktitle: 修改内容控件
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 修改 Word 文档内容控件中的文本、下拉列表和图像。
 type: docs
 weight: 10
 url: /zh/net/programming-with-sdt/modify-content-controls/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية تعديل الأنواع المختلفة من عناصر التحكم في المحتوى في مستند Word باستخدام Aspose.Words for .NET. يمكنك تحديث النص أو القيمة المحددة لقائمة منسدلة أو استبدال صورة ضمن عناصر التحكم في المحتوى.
+本教程解释了如何使用 Aspose.Words for .NET 修改 Word 文档中不同类型的内容控件。您可以更新文本、下拉列表的选定值，或替换内容控件中的图像。
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## 先决条件
+要学习本教程，您需要具备以下条件：
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- 安装了 Aspose.Words for .NET 库。
+- C# 的基本知识和使用 Word 文档。
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستند الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## 第 1 步：设置文档目录
+首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`使用文档所在目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند وتكرار عناصر التحكم في المحتوى
- قم بتحميل مستند Word باستخدام ملف`Document`مُنشئ ، تمرير المسار إلى المستند كمعامل. كرر على جميع علامات المستند المهيكلة في المستند باستخدام ملف`foreach` حلقة.
+## 第 2 步：加载文档并迭代内容控件
+使用`Document`构造函数，将文档的路径作为参数传递。使用 a 遍历文档中的所有结构化文档标签`foreach`环形。
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
 foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
 {
-    // نفذ الإجراءات بناءً على نوع التحكم في المحتوى
+    //根据内容控件的类型执行操作
 }
 ```
 
-## الخطوة 3: تعديل التحكم في محتوى النص العادي
- لعناصر تحكم المحتوى من النوع`SdtType.PlainText`، قم بإزالة جميع العناصر الفرعية الموجودة ، وقم بإنشاء فقرة جديدة ، وقم بإلحاق تشغيل بالنص المطلوب.
+## 第三步：修改纯文本内容控件
+对于类型的内容控件`SdtType.PlainText`，删除所有现有子项，创建一个新段落，并附加一个包含所需文本的段落。
 
 ```csharp
 case SdtType.PlainText:
@@ -48,8 +48,8 @@ case SdtType.PlainText:
 }
 ```
 
-## الخطوة 4: تعديل التحكم في محتوى القائمة المنسدلة
- لعناصر تحكم المحتوى من النوع`SdtType.DropDownList` ، قم بتحديث القيمة المحددة عن طريق تعيينها على ملف`SdtListItem`.
+## 第四步：修改下拉列表内容控件
+对于类型的内容控件`SdtType.DropDownList` 通过将所选值设置为特定值来更新所选值`SdtListItem`.
 
 ```csharp
 case SdtType.DropDownList:
@@ -60,8 +60,8 @@ case SdtType.DropDownList:
 }
 ```
 
-## الخطوة 5: تعديل برنامج التحكم في محتوى الصورة
- لعناصر تحكم المحتوى من النوع`SdtType.Picture`واسترداد الشكل داخل عنصر تحكم المحتوى واستبدال صورته بأخرى جديدة.
+## 第五步：修改图片内容控件
+对于类型的内容控件`SdtType.Picture`检索内容控件中的形状并将其图像替换为新图像。
 
 ```csharp
 case SdtType.Picture:
@@ -75,17 +75,17 @@ case SdtType.Picture:
 }
 ```
 
-## الخطوة 6: احفظ المستند المعدل
- احفظ المستند المعدل إلى الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.ModifyContentControls.docx".
+## 第 6 步：保存修改后的文档
+使用 将修改后的文档保存到指定目录`Save`方法。提供具有适当文件扩展名的所需文件名。在本例中，我们将文档保存为“WorkingWithSdt.ModifyContentControls.docx”。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 ```
 
-### مثال على شفرة المصدر لتعديل عناصر التحكم في المحتوى باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 修改内容控件的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -122,4 +122,4 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 
-هذا كل شيء! لقد نجحت في تعديل أنواع مختلفة من عناصر تحكم المحتوى في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+就是这样！您已经使用 Aspose.Words for .NET 成功修改了 Word 文档中不同类型的内容控件。

@@ -1,55 +1,55 @@
 ---
-title: خانة اختيار اكتب Content Control
-linktitle: خانة اختيار اكتب Content Control
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء عنصر تحكم في المحتوى من نوع خانة اختيار في مستند Word باستخدام Aspose.Words for .NET.
+title: Control de contenido de tipo de casilla de verificación
+linktitle: Control de contenido de tipo de casilla de verificación
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a crear un control de contenido de tipo casilla de verificación en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-sdt/check-box-type-content-control/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إنشاء عنصر تحكم في محتوى نوع خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. تتيح عناصر التحكم في محتوى خانة الاختيار للمستخدمين تحديد خانة اختيار أو مسحها داخل المستند.
+Este tutorial explica cómo crear un control de contenido de tipo casilla de verificación en un documento de Word usando Aspose.Words para .NET. Los controles de contenido de la casilla de verificación permiten a los usuarios seleccionar o borrar una casilla de verificación dentro del documento.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## requisitos previos
+Para seguir este tutorial, necesita tener lo siguiente:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words para la biblioteca .NET instalada.
+- Conocimientos básicos de C# y trabajo con documentos de Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Paso 1: configurar el directorio de documentos
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` لبناء محتوى المستند.
+## Paso 2: Cree un documento y DocumentBuilder
+ Crear una nueva instancia de la`Document` clase y un`DocumentBuilder` para construir el contenido del documento.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إضافة خانة اختيار اكتب Content Control
- إنشاء`StructuredDocumentTag` مع`SdtType.Checkbox` لتمثيل عنصر تحكم محتوى خانة الاختيار. حدد`MarkupLevel.Inline` لوضعه داخل النص.
+## Paso 3: agregue un control de contenido de tipo de casilla de verificación
+ Crear un`StructuredDocumentTag` con`SdtType.Checkbox` para representar el control de contenido de la casilla de verificación. Especificar`MarkupLevel.Inline` para colocarlo dentro del texto.
 
 ```csharp
 StructuredDocumentTag sdtCheckBox = new StructuredDocumentTag(doc, SdtType.Checkbox, MarkupLevel.Inline);
 builder.InsertNode(sdtCheckBox);
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.CheckBoxTypeContentControl.docx".
+## Paso 4: Guarde el documento
+ Guarde el documento en el directorio especificado usando el`Save` método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithSdt.CheckBoxTypeContentControl.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.Docx);
 ```
 
-### مثال على شفرة المصدر لخانة الاختيار اكتب Content Control باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para el control de contenido de tipo de casilla de verificación usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -59,4 +59,4 @@ doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.
 	doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.Docx);
 ```
 
-هذا كل شيء! لقد نجحت في إنشاء عنصر تحكم في محتوى نوع خانة اختيار في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+¡Eso es todo! Ha creado con éxito un control de contenido de tipo casilla de verificación en su documento de Word usando Aspose.Words para .NET.

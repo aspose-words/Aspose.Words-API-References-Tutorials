@@ -1,39 +1,39 @@
 ---
-title: تعديل تنسيق الخلية
-linktitle: تعديل تنسيق الخلية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتغيير تنسيق خلية في جدول باستخدام Aspose.Words for .NET.
+title: Modifica la formattazione della cella
+linktitle: Modifica la formattazione della cella
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida passo passo per modificare la formattazione di una cella in una tabella utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/modify-cell-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتغيير تنسيق الخلية باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تغيير العرض والاتجاه ولون الخلفية لخلية في جدول في مستندات Word باستخدام Aspose.Words for .NET.
+In questo tutorial, ti guideremo attraverso il processo passo-passo per modificare la formattazione delle celle utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come modificare la larghezza, l'orientamento e il colore di sfondo di una cella in una tabella nei tuoi documenti Word utilizzando Aspose.Words per .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يوجد فيه مستند Word الخاص بك. استبدل "دليل المستندات" بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+Innanzitutto, devi impostare il percorso della directory dei documenti. Qui è dove si trova il tuo documento Word. Sostituisci "LA TUA CARTELLA DEI DOCUMENTI" con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند الحالي
- بعد ذلك ، تحتاج إلى تحميل مستند Word الموجود في مثيل`Document` فصل.
+## Passaggio 2: carica il documento esistente
+ Successivamente, è necessario caricare il documento Word esistente in un'istanza del file`Document` classe.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: انتقل إلى الخلية للتعديل
- لتغيير تنسيق الخلية ، نحتاج إلى الانتقال إلى الخلية المحددة في الجدول. نحن نستخدم ال`GetChild()` و`FirstRow.FirstCell` طرق للحصول على المرجع إلى الخلية الأولى من المصفوفة الأولى.
+## Passaggio 3: vai alla cella da modificare
+ Per modificare la formattazione di una cella, dobbiamo navigare fino alla cella specifica nella tabella. Noi usiamo il`GetChild()` E`FirstRow.FirstCell` metodi per ottenere il riferimento alla prima cella del primo array.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Cell firstCell = table.FirstRow.FirstCell;
 ```
 
-## الخطوة 4: تغيير تنسيق الخلية
- الآن يمكننا تغيير تنسيق الخلية باستخدام خصائص ملف`CellFormat` فصل. على سبيل المثال ، يمكننا ضبط عرض الخلية واتجاه النص ولون الخلفية.
+## Passaggio 4: modificare la formattazione della cella
+ Ora possiamo modificare la formattazione della cella utilizzando le proprietà del file`CellFormat` classe. Ad esempio, possiamo impostare la larghezza della cella, l'orientamento del testo e il colore di sfondo.
 
 ```csharp
 firstCell.CellFormat.Width = 30;
@@ -41,10 +41,10 @@ firstCell.CellFormat.Orientation = TextOrientation.Downward;
 firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 ```
 
-### نموذج التعليمات البرمجية المصدر لتعديل تنسيق الخلية باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per modificare la formattazione delle celle utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -55,5 +55,5 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 	firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تغيير تنسيق خلية في جدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة ضبط عرض الخلية والاتجاه ولون الخلفية في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تخصيص التخطيط المرئي لجداولك وفقًا لاحتياجاتك الخاصة.
+## Conclusione
+In questo tutorial, abbiamo imparato come modificare la formattazione di una cella in una tabella utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata, puoi facilmente regolare la larghezza della cella, l'orientamento e il colore di sfondo nei tuoi documenti Word. Aspose.Words offre un'API potente e flessibile per la manipolazione e la formattazione delle tabelle nei tuoi documenti. Con questa conoscenza, puoi personalizzare il layout visivo dei tuoi tavoli in base alle tue esigenze specifiche.

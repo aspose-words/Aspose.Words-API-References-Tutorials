@@ -1,56 +1,56 @@
 ---
-title: ربط تلقائي
-linktitle: ربط تلقائي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الارتباط التلقائي مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Autolänk
+linktitle: Autolänk
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar autolänk med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/working-with-markdown/autolink/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام ميزة "الربط التلقائي" مع Aspose.Words for .NET. تتيح لك هذه الميزة إدراج ارتباطات تشعبية في المستند تلقائيًا.
+I det här exemplet kommer vi att förklara hur man använder funktionen "Autolink" med Aspose.Words för .NET. Den här funktionen låter dig infoga hyperlänkar i ditt dokument automatiskt.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Steg 1: Använda en dokumentgenerator
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Först använder vi en dokumentgenerator för att lägga till innehåll i vårt dokument.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: إدراج ارتباط تشعبي
+## Steg 2: Infoga en hyperlänk
 
- يمكننا إدراج ارتباط تشعبي باستخدام الامتداد`InsertHyperlink` طريقة منشئ الوثيقة. نحدد عنوان URL والنص الذي سيتم عرضه للرابط.
+ Vi kan infoga en hyperlänk med hjälp av`InsertHyperlink` dokumentgeneratorns metod. Vi anger webbadressen och texten som ska visas för länken.
 
 ```csharp
-builder.InsertHyperlink("https://www.aspose.com "،" https://www.aspose.com "، خطأ) ؛
+builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
 ```
 
-## الخطوة 3: إدخال عنوان بريد إلكتروني كرابط
+## Steg 3: Infoga en e-postadress som en länk
 
-يمكننا أيضًا إدخال عنوان بريد إلكتروني كارتباط باستخدام البادئة "mailto:". سيسمح هذا للمستخدمين بالنقر فوق الارتباط لفتح عميل البريد الإلكتروني الافتراضي الخاص بهم.
+Vi kan också infoga en e-postadress som en länk med prefixet "mailto:". Detta gör att användare kan klicka på länken för att öppna sin standard e-postklient.
 
 ```csharp
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
 
-## الخطوة 4: حفظ المستند
+## Steg 4: Spara dokumentet
 
-أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب.
+Slutligen kan vi spara dokumentet i önskat format.
 
-### مثال على كود المصدر للربط التلقائي باستخدام Aspose.Words for .NET
+### Exempel på källkod för autolänk med Aspose.Words för .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	//أدخل ارتباط تشعبي.
-	builder.InsertHyperlink("https://www.aspose.com "،" https://www.aspose.com "، خطأ) ؛
+	//Infoga hyperlänk.
+	builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
 	builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
             
 ```
 
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة "الربط التلقائي" مع Aspose.Words for .NET.
+Grattis! Du har nu lärt dig hur du använder "Autolink"-funktionen med Aspose.Words för .NET.
 

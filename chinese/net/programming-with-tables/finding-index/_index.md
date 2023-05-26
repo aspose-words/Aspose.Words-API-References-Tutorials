@@ -1,60 +1,60 @@
 ---
-title: إيجاد الفهرس
-linktitle: إيجاد الفهرس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية العثور على فهارس الجدول والصف والخلية في مستند Word باستخدام Aspose.Words for .NET.
+title: 查找索引
+linktitle: 查找索引
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中查找表、行和单元格索引。
 type: docs
 weight: 10
 url: /zh/net/programming-with-tables/finding-index/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words for .NET للعثور على فهارس جدول وصف وخلية في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من العثور على فهارس عناصر الصفيف في مستندات Word الخاصة بك برمجيًا.
+在本教程中，我们将学习如何使用 Aspose.Words for .NET 在 Word 文档中查找表格、行和单元格的索引。我们将按照逐步指南来理解代码并实现此功能。在本教程结束时，您将能够以编程方式在 Word 文档中查找数组元素的索引。
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## 第 1 步：项目设置
+1. 启动 Visual Studio 并创建一个新的 C# 项目。
+2. 添加对 Aspose.Words for .NET 库的引用。
 
-## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+## 第 2 步：加载文档并访问表格
+要开始使用该表，我们需要加载包含它的文档并访问它。按着这些次序：
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//装入文档
 Document doc = new Document(dataDir + "Tables.docx");
 
-// الوصول إلى المصفوفة
+//访问数组
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+请务必将“您的文档目录”替换为您的文档目录的实际路径。
 
-## الخطوة 3: ابحث عن فهرس الجدول والصف والخلية
-بعد ذلك ، سنجد فهارس الجدول والصف والخلية في المصفوفة باستخدام الطرق التي يوفرها Aspose.Words for .NET. استخدم الكود التالي:
+## 第 3 步：查找表、行和单元格索引
+接下来，我们将使用 Aspose.Words for .NET 提供的方法在数组中找到表、行和单元格索引。使用以下代码：
 
 ```csharp
-// ابحث عن فهرس الجدول
+//查找表索引
 NodeCollection allTables = doc.GetChildNodes(NodeType.Table, true);
 int tableIndex = allTables.IndexOf(table);
 Console.WriteLine("\nTable index is " + tableIndex);
 
-// ابحث عن فهرس الصف
+//查找行索引
 int rowIndex = table.IndexOf(table.LastRow);
 Console.WriteLine("\nLine index is " + rowIndex);
 
-// ابحث عن فهرس الخلية
+//查找单元格索引
 Row row = table. LastRow;
 int cellIndex = row.IndexOf(row.Cells[4]);
 Console.WriteLine("\nCell index is " + cellIndex);
 ```
 
- هنا نستخدم ملف`GetChildNodes` طريقة للحصول على جميع الجداول في المستند. ثم نستخدم`IndexOf` للعثور على فهرس الجدول المحدد في مجموعة جميع الجداول. وبالمثل ، نستخدم`IndexOf` للعثور على فهرس الصف الأخير في الجدول ، و`IndexOf` داخل صف للعثور على فهرس خلية معينة.
+在这里我们使用`GetChildNodes`方法获取文档中的所有表。然后我们使用`IndexOf`在所有表的集合中查找特定表的索引。同样，我们使用`IndexOf`查找表中最后一行的索引，以及`IndexOf`在一行中查找特定单元格的索引。
 
-### عينة من التعليمات البرمجية المصدر للعثور على الفهرس باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 查找索引的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -69,5 +69,5 @@ Console.WriteLine("\nCell index is " + cellIndex);
 	Console.WriteLine("\nCell index is " + cellIndex);
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية العثور على فهارس الجدول والصف والخلية في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك العثور على المواضع الدقيقة لعناصر الصفيف وتحديدها في مستندات Word الخاصة بك برمجيًا. تسمح لك هذه الميزة بمعالجة عناصر المصفوفة والتفاعل معها بدقة لتناسب احتياجاتك الخاصة.
+## 结论
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 在 Word 文档中查找表格、行和单元格的索引。通过遵循此分步指南并实施提供的 C# 代码，您可以以编程方式查找和识别数组元素在 Word 文档中的确切位置。此功能允许您精确地操作数组元素并与之交互以满足您的特定需求。

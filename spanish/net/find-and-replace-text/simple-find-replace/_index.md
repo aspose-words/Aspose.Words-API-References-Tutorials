@@ -1,61 +1,61 @@
 ---
-title: بحث بسيط استبدال
-linktitle: بحث بسيط استبدال
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إجراء استبدال بحث بسيط في مستند Word باستخدام Aspose.Words for .NET.
+title: Búsqueda simple Reemplazar
+linktitle: Búsqueda simple Reemplazar
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a realizar una búsqueda y reemplazo simple en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/find-and-replace-text/simple-find-replace/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Simple Find Replace في Aspose.Words مكتبة .NET. تتيح لك هذه الميزة إجراء استبدال بسيط للنص من خلال البحث عن سلسلة محددة من الأحرف واستبدالها بسلسلة أخرى من الأحرف في مستند Word.
+En este artículo, exploraremos el código fuente de C# anterior para entender cómo usar la función de búsqueda simple y reemplazo en la biblioteca Aspose.Words para .NET. Esta función le permite realizar un reemplazo de texto simple al buscar una cadena específica de caracteres y reemplazarla con otra cadena de caracteres en un documento de Word.
 
-## المتطلبات الأساسية
+## requisitos previos
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conocimientos básicos del lenguaje C#.
+- Entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## Paso 1: Creación de un nuevo documento
 
- قبل أن نبدأ في استخدام ميزة البحث والاستبدال البسيطة ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Antes de que comencemos a usar la búsqueda y el reemplazo simples, necesitamos crear un nuevo documento usando Aspose.Words para .NET. Esto se puede hacer instanciando un`Document` objeto:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل النص في المستند
+## Paso 2: Insertar texto en el documento
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نستخدم الامتداد`Writeln` طريقة لإدراج عبارة "Hello_CustomerName_، ":
+ Una vez que tenemos un documento, podemos insertar texto usando un`DocumentBuilder` objeto. En nuestro ejemplo, usamos el`Writeln` método para insertar la frase "Hola_CustomerName_,":
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Hello _CustomerName_,");
 ```
 
-## الخطوة 3: استبدال النص البسيط
+## Paso 3: reemplazo de texto simple
 
- نحن نستخدم ال`Range.Replace` طريقة لإجراء استبدال نص بسيط. في مثالنا ، نستبدل جميع تكرارات السلسلة "_ClientName_ "مع" جيمس بوند "باستخدام`FindReplaceOptions` الخيار مع`FindReplaceDirection.Forward` اتجاه البحث:
+ usamos el`Range.Replace` método para realizar el reemplazo de texto simple. En nuestro ejemplo, reemplazamos todas las apariciones de la cadena "_ClientName_ " con "James Bond" usando el`FindReplaceOptions` opción con el`FindReplaceDirection.Forward` dirección de búsqueda:
 
 ```csharp
 doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-## الخطوة 4: حفظ المستند المحرر
+## Paso 4: Guardar el documento editado
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+ Finalmente, guardamos el documento modificado en un directorio específico usando el`Save` método:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 ```
 
-### مثال على شفرة المصدر لـ Simple Find Replace باستخدام Aspose.Words for .NET
+### Código fuente de ejemplo para Simple Find Replace usando Aspose.Words para .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح استخدام البحث البسيط والاستبدال بـ Aspose.Words for .NET:
+Aquí está el código fuente de ejemplo completo para demostrar el uso de la búsqueda simple y reemplazar con Aspose.Words para .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -67,11 +67,11 @@ doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 
 	Console.WriteLine("Document text after replace: " + doc.Range.Text);
 
-	// احفظ المستند المعدل
+	// Guardar el documento modificado
 	doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 
 ```
 
-## خاتمة
+## Conclusión
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة Simple Find Replace الخاصة بـ Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص وإجراء استبدال بسيط للنص وحفظ المستند الذي تم تحريره.
+En este artículo, exploramos el código fuente de C# para entender cómo usar la función de búsqueda simple y reemplazo de Aspose.Words para .NET. Seguimos una guía paso a paso para crear un documento, insertar texto, realizar un reemplazo de texto simple y guardar el documento editado.

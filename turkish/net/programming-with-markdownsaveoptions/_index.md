@@ -1,17 +1,17 @@
 ---
-title: البرمجة باستخدام Markdownsaveoptions
-linktitle: البرمجة باستخدام Markdownsaveoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تصدير إلى علامة التخفيض مع محاذاة محتوى الجدول وتعيين مجلد الصور
+title: Markdownsaveoptions ile Programlama
+linktitle: Markdownsaveoptions ile Programlama
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, tablo içerik hizalaması ve set görüntüleri klasörü ile markdown'a dışa aktarmayı içerir
 type: docs
 weight: 1640
 url: /tr/net/programming-with-markdownsaveoptions/
 ---
 
-البرمجة باستخدام MarkdownSaveOptions هي مورد متعمق يرشدك خلال البرمجة باستخدام MarkdownSaveOptions باستخدام مكتبة Aspose.Words لـ .NET. توفر لك البرامج التعليمية توضيحات خطوة بخطوة وكود مصدر كامل وأمثلة عملية لفهم واستخدام MarkdownSaveOptions لتصدير مستندات Word إلى تنسيق Markdown. ستتعلم كيفية تخصيص خيارات التصدير ، مثل إدارة الصور ومواءمة محتوى الجدول وتحويل الأنماط والمزيد. هذا المورد ضروري للمطورين الذين يتطلعون إلى دمج وظيفة تصدير Markdown في تطبيقاتهم باستخدام Aspose.Words for .NET.
+MarkdownSaveOptions ile Programlama, .NET için Aspose.Words kitaplığını kullanarak MarkdownSaveOptions ile programlamada size yol gösteren kapsamlı bir kaynaktır. Öğreticiler, Word belgelerini Markdown biçimine dışa aktarmak için MarkdownSaveOptions'ı anlamak ve kullanmak için adım adım açıklamalar, eksiksiz kaynak kodu ve pratik örnekler sağlar. Resimleri yönetme, tablo içeriğini hizalama, stilleri dönüştürme ve daha fazlası gibi dışa aktarma seçeneklerini nasıl özelleştireceğinizi öğreneceksiniz. Bu kaynak, Markdown dışa aktarma işlevini Aspose.Words for .NET kullanarak uygulamalarına entegre etmek isteyen geliştiriciler için çok önemlidir.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [تصدير إلى Markdown مع محاذاة محتوى الجدول](./export-into-markdown-with-table-content-alignment/) | تعرف على كيفية تصدير محتوى الجدول بمحاذاة مختلفة لملفات Markdown باستخدام Aspose.Words for .NET. |
-| [تعيين مجلد الصور](./set-images-folder/) | تعرف على كيفية تعيين مجلد الصور عند التصدير إلى Markdown باستخدام Aspose.Words for .NET. تخصيص موضع الصور من أجل تنظيم وتكامل أفضل.|
+| [Tablo İçeriği Hizalama ile Markdown'a Dışa Aktar](./export-into-markdown-with-table-content-alignment/) | Aspose.Words for .NET kullanarak tablo içeriğini farklı hizalamalarla Markdown dosyalarına nasıl aktaracağınızı öğrenin. |
+| [Görüntüler Klasörünü Ayarla](./set-images-folder/) | Aspose.Words for .NET ile Markdown'a dışa aktarırken resimler klasörünü nasıl ayarlayacağınızı öğrenin. Daha iyi organizasyon ve entegrasyon için görüntülerin yerleşimini özelleştirin.|

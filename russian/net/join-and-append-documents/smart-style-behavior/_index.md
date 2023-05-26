@@ -1,42 +1,42 @@
 ---
-title: سلوك الأسلوب الذكي
-linktitle: سلوك الأسلوب الذكي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحفاظ على سلوك النمط الذكي عند الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Умное поведение
+linktitle: Умное поведение
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как поддерживать интеллектуальное поведение при присоединении и добавлении документов Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/join-and-append-documents/smart-style-behavior/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Smart Style Behavior في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها مع الحفاظ على سلوك النمط الذكي.
+Это руководство проведет вас через процесс использования функции Smart Style Behavior в Aspose.Words для .NET. Эта функция позволяет вам присоединять и добавлять документы Word, сохраняя поведение умного стиля.
 
-## المتطلبات الأساسية
+## Предпосылки
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Прежде чем начать, убедитесь, что у вас есть следующее:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words для .NET установлен. Вы можете загрузить его с веб-сайта Aspose или установить через NuGet.
+2. Visual Studio или любая другая среда разработки C#.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Шаг 1: Инициализируйте каталоги документов
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir` переменная на путь, где находятся ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Шаг 2. Загрузите исходный и целевой документы
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Далее вам нужно загрузить исходный и конечный документы с помощью Aspose.Words.`Document` сорт. Обновите имена файлов в`Document` конструктор в соответствии с именами ваших документов.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: أدخل فاصل صفحة في مستند الوجهة
+## Шаг 3. Вставьте разрыв страницы в целевой документ
 
- للتأكد من ظهور المحتوى المُلحق على صفحة جديدة في المستند الوجهة ، يمكنك إدراج فاصل صفحة باستخدام ملف`DocumentBuilder`.
+ Чтобы добавленное содержимое отображалось на новой странице целевого документа, вы можете вставить разрыв страницы с помощью`DocumentBuilder`.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
@@ -44,36 +44,36 @@ builder.MoveToDocumentEnd();
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## الخطوة 4: تعيين خيارات سلوك النمط الذكي
+## Шаг 4. Установите параметры поведения смарт-стиля
 
-لتمكين سلوك النمط الذكي أثناء عملية الإلحاق ، تحتاج إلى إنشاء مثيل لـ`ImportFormatOptions` وضبط`SmartStyleBehavior` ملكية ل`true`.
+Чтобы включить интеллектуальное поведение во время операции добавления, вам необходимо создать экземпляр`ImportFormatOptions` и установите`SmartStyleBehavior` собственность на`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## Шаг 5: добавьте исходный документ к целевому документу
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`InsertDocument` طريقة`DocumentBuilder` فصل. استخدم ال`ImportFormatMode.UseDestinationStyles` المعلمة وتمرير`ImportFormatOptions` كائن للحفاظ على أسلوب السلوك الذكي.
+ Теперь вы можете добавить исходный документ к целевому документу, используя`InsertDocument` метод`DocumentBuilder` сорт. Использовать`ImportFormatMode.UseDestinationStyles` параметр и передать`ImportFormatOptions` объект для поддержания поведения умного стиля.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## Шаг 6: Сохраните окончательный документ
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة Smart Style Behavior باستخدام ملف`Save` طريقة`Document` فصل.
+ Наконец, сохраните объединенный документ с включенной функцией Smart Style Behavior с помощью`Save` метод`Document` сорт.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx");
 ```
 
-### مثال على شفرة المصدر لسلوك النمط الذكي باستخدام Aspose.Words for .NET
+### Пример исходного кода для Smart Style Behavior с использованием Aspose.Words для .NET
 
-إليك شفرة المصدر الكاملة لميزة "سلوك النمط الذكي" في C # باستخدام Aspose.Words for .NET:
+Вот полный исходный код функции Smart Style Behavior на C# с использованием Aspose.Words для .NET:
  
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -86,4 +86,4 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 	builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Smart Style Behavior باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الحفاظ على سلوك النمط الذكي.
+Вот и все! Вы успешно внедрили функцию Smart Style Behavior с помощью Aspose.Words для .NET. Окончательный документ будет содержать объединенный контент с сохранением смарт-стиля.

@@ -1,64 +1,64 @@
 ---
-title: إدراج مخطط فقاعي
-linktitle: إدراج مخطط فقاعي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مخطط فقاعي في مستند باستخدام Aspose.Words for .NET. أضف بيانات متسلسلة بقيم X و Y وقيم حجم الفقاعة.
+title: Infoga bubbeldiagram
+linktitle: Infoga bubbeldiagram
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar ett bubbeldiagram i ett dokument med Aspose.Words för .NET. Lägg till seriedata med värden för X, Y och bubbelstorlek.
 type: docs
 weight: 10
 url: /sv/net/programming-with-charts/insert-bubble-chart/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مخطط فقاعي في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وحفظ المستند.
+Denna handledning förklarar hur man använder Aspose.Words för .NET för att infoga ett bubbeldiagram i ett dokument. Den medföljande källkoden visar hur man skapar ett diagram, lägger till seriedata och sparar dokumentet.
 
-## الخطوة 1: قم بإعداد المشروع
+## Steg 1: Konfigurera projektet
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Se till att du har följande förutsättningar:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från den officiella Aspose-webbplatsen eller använda NuGet-pakethanteraren för att installera den.
+- En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط فقاعي في المستند.
+ Använd sedan`InsertChart` metod för`DocumentBuilder` för att infoga ett bubbeldiagram i dokumentet.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bubble, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Steg 3: Lägg till seriedata i diagrammet
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف ثلاث نقاط بيانات مع قيم X و Y وقيم حجم الفقاعة.
+Lägg till seriedata i diagrammet. I det här exemplet lägger vi till tre datapunkter med motsvarande värden för X, Y och bubbelstorlek.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 },
     new double[] { 10, 4, 8 });
 ```
 
-## الخطوة 4: احفظ المستند
+## Steg 4: Spara dokumentet
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Slutligen sparar du dokumentet i den angivna katalogen med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مخطط فقاعي باستخدام Aspose.Words for .NET.
+Detta slutför implementeringen av att infoga ett bubbeldiagram med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لإدراج مخطط فقاعي باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Insert Bubble Chart med Aspose.Words för .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

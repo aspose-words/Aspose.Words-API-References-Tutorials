@@ -1,26 +1,26 @@
 ---
-title: إعادة تسمية حقول الدمج
-linktitle: إعادة تسمية حقول الدمج
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، ستتعلم كيفية إعادة تسمية حقول الدمج في مستند باستخدام Aspose.Words for .NET.
+title: Переименовать поля слияния
+linktitle: Переименовать поля слияния
+second_title: Справочник по API Aspose.Words для .NET
+description: В этом руководстве вы узнаете, как переименовать поля слияния в документе с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/working-with-fields/rename-merge-fields/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود المصدر C # أدناه والذي يستخدم ميزة إعادة تسمية حقل الدمج في Aspose.Words for .NET. اتبع كل خطوة بعناية للحصول على النتائج المرجوة.
+Вот пошаговое руководство, объясняющее приведенный ниже исходный код C#, в котором используется функция переименования поля слияния Aspose.Words для .NET. Внимательно выполняйте каждый шаг, чтобы получить желаемый результат.
 
-## الخطوة 1: إعداد دليل المستند
+## Шаг 1: Настройка каталога документов
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+В предоставленном коде необходимо указать директорию ваших документов. Замените значение «КАТАЛОГ ВАШИХ ДОКУМЕНТОВ» на соответствующий путь к каталогу ваших документов.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند وإدراج حقول الدمج
+## Шаг 2: Создание документа и вставка полей слияния
 
- نبدأ بإنشاء مستند جديد واستخدام ملف`DocumentBuilder` لإدراج حقول الدمج.
+ Начнем с создания нового документа и использования`DocumentBuilder` для вставки полей слияния.
 
 ```csharp
 Document doc = new Document();
@@ -30,9 +30,9 @@ builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 ```
 
-## الخطوة 3: إعادة تسمية حقول الدمج
+## Шаг 3: Переименование полей слияния
 
-نقوم بإجراء حلقة عبر كل حقل في نطاق المستند ، وإذا كان حقل دمج ، فإننا نعيد تسمية الحقل عن طريق إضافة "_أعيدت تسميته "لاحقة.
+Мы перебираем каждое поле в диапазоне документа, и если это поле слияния, мы переименовываем поле, добавляя "_Суффикс «переименован».
 
 ```csharp
 foreach(Field f in doc.Range.Fields)
@@ -46,28 +46,28 @@ foreach(Field f in doc.Range.Fields)
 }
 ```
 
-## الخطوة 4: حفظ المستند
+## Шаг 4: Сохранение документа
 
- أخيرًا ، نسمي`Save()` طريقة لحفظ المستند المعدل.
+ Наконец, мы вызываем`Save()` метод сохранения измененного документа.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-### مثال على رمز المصدر لإعادة تسمية حقول الدمج باستخدام Aspose.Words for .NET
+### Пример исходного кода для переименования полей слияния с помощью Aspose.Words для .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وإدراج حقول الدمج.
+// Создайте документ и вставьте поля слияния.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 
-// إعادة تسمية حقول الدمج.
+// Переименуйте поля слияния.
 foreach(Field f in doc.Range.Fields)
 {
      if (f.Type == FieldType.FieldMergeField)
@@ -78,8 +78,8 @@ foreach(Field f in doc.Range.Fields)
      }
 }
 
-// احفظ المستند.
+// Сохраните документ.
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-اتبع هذه الخطوات لإعادة تسمية حقول الدمج في مستندك باستخدام Aspose.Words for .NET.
+Выполните следующие действия, чтобы переименовать поля слияния в документе с помощью Aspose.Words for .NET.

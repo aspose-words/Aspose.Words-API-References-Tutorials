@@ -1,31 +1,31 @@
 ---
-title: الحصول على مسافة بين النص المحيط بالجدول
-linktitle: الحصول على مسافة بين النص المحيط بالجدول
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لمعرفة المسافة بين النص والجدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Obtener la distancia entre el texto que rodea la tabla
+linktitle: Obtener la distancia entre el texto que rodea la tabla
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para obtener la distancia entre el texto y una tabla en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة للحصول على المسافة بين النص المحيط في جدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية الوصول إلى المسافات المختلفة بين الجدول والنص المحيط في مستندات Word باستخدام Aspose.Words for .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para obtener la distancia entre el texto circundante en una tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo acceder a las distintas distancias entre una tabla y el texto que la rodea en sus documentos de Word utilizando Aspose.Words para .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يوجد فيه مستند Word الخاص بك. استبدل "دليل المستندات" بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+Primero, debe establecer la ruta a su directorio de documentos. Aquí es donde se encuentra su documento de Word. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند الحالي
- بعد ذلك ، تحتاج إلى تحميل مستند Word الموجود في مثيل`Document` فصل.
+## Paso 2: Cargue el documento existente
+ A continuación, debe cargar el documento de Word existente en una instancia del`Document` clase.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: احصل على المسافة بين الجدول والنص المحيط
- للحصول على المسافة بين الجدول والنص المحيط ، نحتاج إلى الوصول إلى الجدول في المستند باستخدام تنسيق`GetChild()` الطريقة و`NodeType.Table` ملكية. يمكننا بعد ذلك عرض المسافات المختلفة باستخدام خصائص المصفوفة`DistanceTop`, `DistanceBottom`, `DistanceRight` و`DistanceLeft`.
+## Paso 3: obtenga la distancia entre la tabla y el texto circundante
+ Para obtener la distancia entre la tabla y el texto que la rodea, necesitamos acceder a la tabla en el documento usando el`GetChild()` método y el`NodeType.Table` propiedad. Luego podemos mostrar las diferentes distancias usando las propiedades de la matriz`DistanceTop`, `DistanceBottom`, `DistanceRight` y`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -35,10 +35,10 @@ Console.WriteLine("Distance between the table and the text on the right: " + tab
 Console.WriteLine("Distance between the table and the text on the left: " + table.DistanceLeft);
 ```
 
-### عينة من التعليمات البرمجية المصدر للحصول على المسافة بين النص المحيط بالجدول باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para obtener la distancia entre el texto que rodea la tabla usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -50,5 +50,5 @@ Console.WriteLine("Distance between the table and the text on the left: " + tabl
 	Console.WriteLine(table.DistanceLeft);
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية الحصول على المسافة بين النص المحيط في جدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك الوصول بسهولة إلى المسافات المختلفة بين الجدول والنص المحيط في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تحليل تخطيط الجداول الخاصة بك فيما يتعلق بالنص وتلبية الاحتياجات المحددة.
+## Conclusión
+En este tutorial, aprendimos cómo obtener la distancia entre el texto circundante en una tabla usando Aspose.Words para .NET. Siguiendo esta guía paso a paso, puede acceder fácilmente a las distintas distancias entre una tabla y el texto que la rodea en sus documentos de Word. Aspose.Words ofrece una API poderosa y flexible para manipular y formatear tablas en sus documentos. Con este conocimiento, puede analizar el diseño de sus tablas en relación con el texto y satisfacer necesidades específicas.

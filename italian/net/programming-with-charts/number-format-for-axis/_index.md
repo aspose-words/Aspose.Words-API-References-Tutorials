@@ -1,44 +1,44 @@
 ---
-title: تنسيق الأرقام للمحور
-linktitle: تنسيق الأرقام للمحور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين تنسيق الأرقام لمحور في مخطط باستخدام Aspose.Words for .NET.
+title: Formato numerico per asse
+linktitle: Formato numerico per asse
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come impostare il formato numerico per un asse in un grafico utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-charts/number-format-for-axis/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين تنسيق الأرقام لمحور في الرسم البياني. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات سلسلة وتنسيق تسميات المحور.
+Questo tutorial spiega come utilizzare Aspose.Words per .NET per impostare il formato numerico per un asse in un grafico. Il codice sorgente fornito mostra come creare un grafico, aggiungere dati di serie e formattare le etichette degli assi.
 
-## الخطوة 1: قم بإعداد المشروع
+## Passaggio 1: impostare il progetto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Assicurati di avere i seguenti prerequisiti:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words per la libreria .NET installata. Puoi scaricarlo dal sito Web ufficiale di Aspose o utilizzare il gestore di pacchetti NuGet per installarlo.
+- Un percorso di directory del documento in cui verrà salvato il documento di output.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Passaggio 2: crea un nuovo documento e inserisci un grafico
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Crea un nuovo`Document` oggetto e a`DocumentBuilder` per costruire il documento.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط عمودي في المستند.
+ Quindi, usa il`InsertChart` metodo del`DocumentBuilder` per inserire un istogramma nel documento.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Passaggio 3: aggiungi i dati della serie al grafico
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمسة عناصر بقيمها المقابلة.
+Aggiungi i dati della serie al grafico. In questo esempio, aggiungeremo cinque elementi con i valori corrispondenti.
 
 ```csharp
 chart.Series.Clear();
@@ -47,28 +47,28 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
 ```
 
-## الخطوة 4: قم بتنسيق تسميات المحور
+## Passaggio 4: formattare le etichette degli assi
 
- لتعيين تنسيق الأرقام لتسميات المحور ص ، قم بالوصول إلى ملف`AxisY` خاصية الرسم البياني وتعيين`NumberFormat.FormatCode` إلى التنسيق المطلوب. في هذا المثال ، قمنا بتعيين التنسيق على "#، ## 0" لعرض الأرقام مع الآلاف من الفواصل.
+ Per impostare il formato numerico per le etichette dell'asse Y, accedere a`AxisY` proprietà del grafico e impostare la`NumberFormat.FormatCode` proprietà nel formato desiderato. In questo esempio, impostiamo il formato su "#,##0" per visualizzare i numeri con separatori delle migliaia.
 
 ```csharp
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-## الخطوة 5: احفظ المستند
+## Passaggio 5: salvare il documento
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Infine, salva il documento nella directory specificata utilizzando il file`Save` metodo del`Document` oggetto.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
-هذا يكمل تنفيذ إعداد تنسيق الأرقام للمحور باستخدام Aspose.Words for .NET.
+Questo completa l'implementazione dell'impostazione del formato numerico per l'asse utilizzando Aspose.Words per .NET.
 
-### مثال على الكود المصدري لـ Number Format For Axis باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Number Format For Axis utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

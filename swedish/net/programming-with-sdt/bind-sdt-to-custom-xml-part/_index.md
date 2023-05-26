@@ -1,62 +1,62 @@
 ---
-title: ربط SDT بجزء Xml المخصص
-linktitle: ربط SDT بجزء Xml المخصص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ربط SDT بجزء Xml مخصص باستخدام Aspose.Words for .NET.
+title: Bind SDT till anpassad XML-del
+linktitle: Bind SDT till anpassad XML-del
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du binder en SDT till en anpassad XML-del med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 ---
 
-يوضح هذا البرنامج التعليمي كيفية ربط علامة المستند المهيكل (SDT) بجزء Xml مخصص باستخدام Aspose.Words for .NET. تسمح لك أدوات SDT بإضافة عناصر تحكم محتوى منظم إلى مستند Word ، وتوفر CustomXmlParts طريقة لتخزين بيانات XML المخصصة المرتبطة بالمستند.
+Den här handledningen visar hur man binder en SDT (Structured Document Tag) till en anpassad XML-del med Aspose.Words för .NET. Med SDT:er kan du lägga till strukturerade innehållskontroller i ett Word-dokument, och CustomXmlParts tillhandahåller ett sätt att lagra anpassade XML-data som är associerade med dokumentet.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Förutsättningar
+För att följa denna handledning måste du ha följande:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # و XML.
+- Aspose.Words för .NET-biblioteket installerat.
+- Grundläggande kunskaper i C# och XML.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستند الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Steg 1: Konfigurera dokumentkatalogen
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و CustomXmlPart
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`CustomXmlPart` لتخزين بيانات XML المخصصة. يجب أن يكون XML المخصص بتنسيق XML صالح. في هذا المثال ، نستخدم سلسلة XML بسيطة`<root><text>Hello, World!</text></root>`.
+## Steg 2: Skapa ett dokument och CustomXmlPart
+ Skapa en ny instans av`Document` klass och a`CustomXmlPart` för att lagra anpassade XML-data. Den anpassade XML-filen ska vara i ett giltigt XML-format. I det här exemplet använder vi en enkel XML-sträng`<root><text>Hello, World!</text></root>`.
 
 ```csharp
 Document doc = new Document();
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<root><text>Hello, World!</text></root>");
 ```
 
-## الخطوة 3: إضافة StructuredDocumentTag (SDT) إلى المستند
- أضف`StructuredDocumentTag`إلى المستند ليكون بمثابة عنصر تحكم المحتوى. حدد ال`SdtType` مثل`PlainText` و ال`MarkupLevel` مثل`Block` لإنشاء المعاملة الخاصة والتفضيلية على مستوى الكتلة.
+## Steg 3: Lägg till en StructuredDocumentTag (SDT) till dokumentet
+ Lägg till en`StructuredDocumentTag`till dokumentet för att fungera som innehållskontroll. Specificera`SdtType` som`PlainText` och den`MarkupLevel` som`Block` för att skapa en SDT på blocknivå.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);
 doc.FirstSection.Body.AppendChild(sdt);
 ```
 
-## الخطوة 4: تعيين تعيين XML لـ SDT
- قم بتعيين SDT إلى ملف`CustomXmlPart` باستخدام ملف`SetMapping` طريقة`XmlMapping` ملكية. حدد ال`CustomXmlPart` ، وتعبير XPath لتحديد موقع عقدة XML المطلوبة ، وبادئة مساحة الاسم إذا لزم الأمر. في هذا المثال ، نقوم بتعيين المعاملة الخاصة والتفضيلية إلى`/root[1]/text[1]`.
+## Steg 4: Ställ in XML-mappningen för SDT
+ Kartlägg SDT till`CustomXmlPart` genom att använda`SetMapping` metod för`XmlMapping` fast egendom. Specificera`CustomXmlPart` , XPath-uttrycket för att lokalisera den önskade XML-noden och namnområdesprefixet om det behövs. I det här exemplet mappar vi SDT till`/root[1]/text[1]`.
 
 ```csharp
 sdt.XmlMapping.SetMapping(xmlPart, "/root[1]/text[1]", "");
 ```
 
-## الخطوة 5: احفظ المستند
- احفظ المستند المعدل إلى الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.BindSDTtoCustomXmlPart.doc".
+## Steg 5: Spara dokumentet
+ Spara det ändrade dokumentet i den angivna katalogen med hjälp av`Save` metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.BindSDTtoCustomXmlPart.doc".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 ```
 
-### مثال على شفرة المصدر لجزء Bind Sd Tto Custom Xml باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Bind Sd Tto Custom Xml Part med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -68,4 +68,4 @@ doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 	doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 ```
 
-هذا كل شيء! لقد نجحت في ربط SDT بـ CustomXmlPart في مستند Word باستخدام Aspose.Words for .NET.
+Det är allt! Du har framgångsrikt bundit en SDT till en CustomXmlPart i ditt Word-dokument med Aspose.Words för .NET.

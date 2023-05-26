@@ -1,18 +1,18 @@
 ---
-title: العمل مع FormFields
-linktitle: العمل مع FormFields
-second_title: Aspose.Words لمراجع .NET API
-description: البرامج التعليمية التي تحتوي على كيفية إدراج حقول النموذج ، والعمل مع خصائص حقول النماذج ، والحصول على مجموعة حقول النموذج ، والحصول على حقول النموذج بالاسم في مستند Word باستخدام Aspose.Words for .NET.
+title: Lavorare con FormFields
+linktitle: Lavorare con FormFields
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Esercitazioni contenenti come inserire i campi del modulo, lavorare con le proprietà dei campi del modulo, ottenere la raccolta dei campi del modulo e ottenere i campi del modulo per nome nel documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 690
 url: /it/net/working-with-formfields/
 ---
-يعد العمل مع Form Fields موردًا شاملاً لتعلم كيفية التعامل مع حقول النماذج في مستندات Word باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية شروحات خطوة بخطوة ، وكود مصدر كامل ، وأمثلة عملية لإنشاء وتعديل وإدارة حقول النموذج مثل مربعات الاختيار ومربعات النص والقوائم المنسدلة والمزيد. ستتعلم أيضًا كيفية استخراج البيانات ونشرها من حقول النماذج ، بالإضافة إلى تخصيص تنسيقها وسلوكها. هذا المورد ضروري للمطورين الراغبين في أتمتة إنشاء النماذج وإدارتها في مستندات Word باستخدام Aspose.Words for .NET.
+Lavorare con i campi modulo è una risorsa completa per imparare a lavorare con i campi modulo nei documenti di Word utilizzando la libreria Aspose.Words per .NET. I tutorial forniscono spiegazioni dettagliate, codice sorgente completo ed esempi pratici per la creazione, la modifica e la gestione di campi modulo come caselle di controllo, caselle di testo, elenchi a discesa e altro ancora. Imparerai anche come estrarre e popolare i dati dai campi del modulo, oltre a personalizzarne la formattazione e il comportamento. Questa risorsa è essenziale per gli sviluppatori che desiderano automatizzare la creazione e la gestione dei moduli nei documenti di Word utilizzando Aspose.Words per .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [أدخل حقول النموذج](./insert-form-fields/) | تعرف على كيفية إدراج حقول نموذج القائمة المنسدلة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تعمل حقول النموذج مع الخصائص](./form-fields-work-with-properties/) | تعرف على كيفية التعامل مع خصائص حقل النموذج في مستندات Word باستخدام Aspose.Words for .NET. |
-| [حقول النموذج تحصل على مجموعة حقول النموذج](./form-fields-get-form-fields-collection/) | تعرف على كيفية استرداد مجموعة حقول النموذج ومعالجتها في مستندات Word باستخدام Aspose.Words for .NET. |
-| [الحصول على حقول النموذج بالاسم](./form-fields-get-by-name/) | تعرف على كيفية استرداد وتعديل حقول النموذج بالاسم في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Inserisci campi modulo](./insert-form-fields/) | Scopri come inserire campi modulo a discesa nei documenti di Word utilizzando Aspose.Words per .NET. |
+| [I campi modulo funzionano con le proprietà](./form-fields-work-with-properties/) | Scopri come lavorare con le proprietà dei campi modulo nei documenti di Word utilizzando Aspose.Words per .NET. |
+| [Campi modulo Ottieni la raccolta Campi modulo](./form-fields-get-form-fields-collection/) | Scopri come recuperare e manipolare la raccolta di campi modulo nei documenti di Word utilizzando Aspose.Words per .NET. |
+| [Campi modulo Ottieni per nome](./form-fields-get-by-name/) | Scopri come recuperare e modificare i campi del modulo per nome nei documenti di Word utilizzando Aspose.Words per .NET. |

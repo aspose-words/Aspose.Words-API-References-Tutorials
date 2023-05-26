@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM
-linktitle: أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل كتلة عنوان دمج المراسلات في مستندات Word باستخدام Aspose.Words for .NET.
+title: Вставьте поле блока адреса для слияния с помощью DOM
+linktitle: Вставьте поле блока адреса для слияния с помощью DOM
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как вставить поле блока адреса слияния в документы Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/working-with-fields/insert-mail-merge-address-block-field-using-dom/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج حقل كتلة عنوان دمج المراسلات" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Ниже приведено пошаговое руководство по объяснению приведенного ниже исходного кода C#, в котором используется функция «Вставить поле блока адреса слияния» в Aspose.Words для .NET. Обязательно внимательно следуйте каждому шагу, чтобы получить желаемые результаты.
 
-## الخطوة 1: إعداد دليل المستند
+## Шаг 1: Настройка каталога документов
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+В предоставленном коде необходимо указать директорию ваших документов. Замените значение «КАТАЛОГ ВАШИХ ДОКУМЕНТОВ» на соответствующий путь к каталогу ваших документов.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## Шаг 2: Создание документа и DocumentBuilder
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Начнем с создания нового документа и инициализации DocumentBuilder.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تحريك المؤشر إلى الفقرة
+## Шаг 3: Перемещение курсора к абзацу
 
- نحن نستخدم برنامج DocumentBuilder`MoveTo()` طريقة لتحريك المؤشر إلى الفقرة حيث نريد إدراج حقل كتلة عنوان دمج المراسلات.
+ Мы используем DocumentBuilder`MoveTo()` метод, чтобы переместить курсор в абзац, где мы хотим вставить поле блока адреса слияния.
 
 ```csharp
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 builder. MoveTo(para);
 ```
 
-## الخطوة 4: إدراج حقل كتلة عنوان دمج المراسلات
+## Шаг 4. Вставка поля блока адреса для слияния
 
- نحن نستخدم برنامج DocumentBuilder`InsertField()` طريقة لإدراج حقل كتلة عنوان دمج المراسلات في الفقرة.
+ Мы используем DocumentBuilder`InsertField()` способ вставки поля блока адреса слияния в абзац.
 
 ```csharp
 FieldAddressBlock field = (FieldAddressBlock)builder.InsertField(FieldType.FieldAddressBlock, false);
 ```
 
-نقوم بعد ذلك بتكوين خصائص حقل كتلة العنوان لتحديد الخيارات المناسبة ، مثل تضمين اسم البلد / المنطقة ، وتنسيق العنوان وفقًا للبلد / المنطقة ، وأسماء البلد / المنطقة المستبعدة ، وتنسيق الاسم والعنوان ، ومعرف اللغة.
+Затем мы настраиваем свойства поля блока адресов, указав соответствующие параметры, такие как включение названия страны/региона, форматирование адреса в соответствии со страной/регионом, исключение названий страны/региона, формат имени и адреса и идентификатор языка.
 
 ```csharp
 field.IncludeCountryOrRegionName = "1";
@@ -54,13 +54,13 @@ field.NameAndAddressFormat = "Test3";
 field.LanguageId = "Test 4";
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Наконец, мы вызываем`Update()` способ обновления поля.
 
 ```csharp
 field. Update();
 ```
 
-### نموذج لشفرة المصدر لإدخال حقل كتلة عنوان دمج المراسلات مع Aspose.Words for .NET
+### Пример исходного кода для вставки поля блока адреса слияния с помощью Aspose.Words для .NET
 
 ```csharp
 Document doc = new Document();
@@ -70,24 +70,24 @@ Paragraph para = (Paragraph) doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
 builder. MoveTo(para);
 
-// نريد إدراج كتلة عنوان لدمج البريد مثل هذا:
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3 \\ l \ "Test 4 \"}
+// Мы хотим вставить блок адреса слияния следующим образом:
+// {ADDRESSBLOCK \\c 1 \\d \\e Test2 \\f Test3 \\l \"Test 4\" }
 
 FieldAddressBlock field = (FieldAddressBlock) builder.InsertField(FieldType.FieldAddressBlock, false);
 
-// {ADDRESSBLOCK \\ c 1 "}
+// {АДРЕСБЛОК \\c 1"}
 field.IncludeCountryOrRegionName = "1";
 
-// {ADDRESSBLOCK \\ c 1 \\ d "}
+// {АДРЕСБЛОК \\c 1 \\d"}
 field.FormatAddressOnCountryOrRegion = true;
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2}
+// {АДРЕСБЛОК \\c 1 \\d \\e Test2 }
 field.ExcludedCountryOrRegionName = "Test2";
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3}
+// {ADDRESSBLOCK \\c 1 \\d \\e Test2 \\f Test3 }
 field.NameAndAddressFormat = "Test3";
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3 \\ l \ "Test 4 \"}
+// {ADDRESSBLOCK \\c 1 \\d \\e Test2 \\f Test3 \\l \"Test 4\" }
 field.LanguageId = "Test 4";
 
 field. Update();

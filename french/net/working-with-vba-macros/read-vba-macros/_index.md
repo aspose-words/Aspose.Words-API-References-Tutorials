@@ -1,33 +1,33 @@
 ---
-title: قراءة Vba Macros
-linktitle: قراءة Vba Macros
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية قراءة وحدات ماكرو VBA من مستند Word باستخدام Aspose.Words for .NET.
+title: Lire les macros Vba
+linktitle: Lire les macros Vba
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Dans ce didacticiel, apprenez à lire des macros VBA à partir d'un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-vba-macros/read-vba-macros/
 ---
-في هذا البرنامج التعليمي ، سنشرح كيفية قراءة وحدات ماكرو VBA من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تسمح لك قراءة وحدات ماكرو VBA بالوصول إلى رمز VBA الموجود في مستند Word الخاص بك. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Dans ce didacticiel, nous expliquerons comment lire des macros VBA à partir d'un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. La lecture des macros VBA vous permet d'accéder au code VBA existant dans votre document Word. Nous vous guiderons étape par étape pour vous aider à comprendre et à implémenter le code dans votre projet .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على وحدات ماكرو VBA
+## Conditions préalables
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+- Une connaissance pratique du langage de programmation C#
+- La bibliothèque Aspose.Words pour .NET installée dans votre projet
+- Un document Word contenant des macros VBA
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+ Tout d'abord, vous devez définir le chemin du répertoire vers l'emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند واقرأ وحدات ماكرو VBA
-بعد ذلك ، سنقوم بتحميل مستند Word والتحقق مما إذا كان يحتوي على مشروع VBA. إذا كان المستند يحتوي على مشروع VBA ، فسنقوم بتكرار جميع الوحدات في المشروع ونعرض الكود المصدري لكل وحدة.
+## Étape 2 : Chargez le document et lisez les macros VBA
+Ensuite, nous allons charger le document Word et vérifier s'il contient un projet VBA. Si le document a un projet VBA, nous allons parcourir tous les modules du projet et afficher le code source de chaque module.
 
 ```csharp
-//قم بتحميل المستند
+//Charger le document
 Document doc = new Document(dataDir + "VBA project.docm");
 if (doc.VbaProject!= null)
 {
@@ -38,11 +38,11 @@ Console.WriteLine(module.SourceCode);
 }
 ```
 
-### نموذج لشفرة مصدر لقراءة وحدات ماكرو Vba باستخدام Aspose.Words for .NET 
+### Exemple de code source pour lire les macros Vba à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "VBA project.docm");
@@ -56,7 +56,7 @@ if (doc.VbaProject != null)
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية قراءة وحدات ماكرو VBA من مستند Word باستخدام Aspose.Words for .NET. تتيح لك قراءة وحدات ماكرو VBA الوصول إلى رمز VBA الموجود في المستند الخاص بك وتنفيذ العمليات وفقًا لاحتياجاتك. لا تتردد في استخدام هذه الميزة لمراجعة وتحليل وحدات ماكرو VBA في مستندات Word الخاصة بك.
+## Conclusion
+Dans ce didacticiel, nous avons vu comment lire des macros VBA à partir d'un document Word à l'aide de Aspose.Words pour .NET. La lecture des macros VBA vous permet d'accéder au code VBA existant dans votre document et d'effectuer des opérations selon vos besoins. N'hésitez pas à utiliser cette fonctionnalité pour examiner et analyser les macros VBA dans vos documents Word.
 
 

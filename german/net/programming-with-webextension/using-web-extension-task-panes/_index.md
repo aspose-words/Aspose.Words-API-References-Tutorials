@@ -1,28 +1,28 @@
 ---
-title: استخدام أجزاء مهام ملحق الويب
-linktitle: استخدام أجزاء مهام ملحق الويب
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لاستخدام أجزاء مهام ملحق الويب مع Aspose.Words for .NET.
+title: Verwenden von Web Extension-Aufgabenbereichen
+linktitle: Verwenden von Web Extension-Aufgabenbereichen
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zur Verwendung von Web Extension-Aufgabenbereichen mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-webextension/using-web-extension-task-panes/
 ---
 
-تقدم هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام أجزاء مهمة امتداد الويب مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية إضافة أجزاء المهام وتكوينها لملحقات الويب.
+Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zur Verwendung der Aufgabenbereiche der Weberweiterung mit Aspose.Words für .NET. Wir werden jeden Teil des Codes im Detail erklären. Am Ende dieses Tutorials erfahren Sie, wie Sie Aufgabenbereiche für Weberweiterungen hinzufügen und konfigurieren.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert und konfiguriert haben. Die Bibliothek und Installationsanweisungen finden Sie auf der Aspose-Website.
 
-## الخطوة 1: تحديد دليل المستند
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث تريد حفظ المستند الذي تم إنشاؤه. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Zunächst müssen Sie den Pfad zu dem Verzeichnis definieren, in dem Sie das generierte Dokument speichern möchten. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء جزء مهام وتكوينه
+## Schritt 2: Erstellen und konfigurieren Sie einen Aufgabenbereich
 
- نقوم بإنشاء ملف`TaskPane` الكائن وإضافته إلى المستند`s `مجموعة WebExtensionTaskPanes`. بعد ذلك ، نقوم بتكوين خصائص جزء المهام ، مثل حالة الإرساء والرؤية والعرض.
+ Wir erstellen eine`TaskPane` Objekt und fügen Sie es dem Dokument hinzu`s `WebExtensionTaskPanes`-Sammlung. Als Nächstes konfigurieren wir die Eigenschaften des Aufgabenbereichs, z. B. seinen angedockten Zustand, seine Sichtbarkeit und seine Breite.
 
 ```csharp
 Document doc = new Document();
@@ -35,7 +35,7 @@ taskPane.IsVisible = true;
 taskPane.Width = 300;
 ```
 
-قمنا أيضًا بتعيين بيانات اعتماد امتداد الويب بما في ذلك معرف الكتالوج والإصدار ونوع المتجر.
+Wir legen auch die Anmeldeinformationen für die Web-Erweiterung fest, einschließlich Katalog-ID, Version und Geschäftstyp.
 
 ```csharp
 taskPane.WebExtension.Reference.Id = "wa102923726";
@@ -44,7 +44,7 @@ taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
 taskPane.WebExtension.Reference.Store = "th-TH";
 ```
 
-أخيرًا ، نضيف خصائص وارتباطات إلى امتداد الويب.
+Schließlich fügen wir der Weberweiterung Eigenschaften und Bindungen hinzu.
 
 ```csharp
 taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
@@ -52,17 +52,17 @@ taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_150
 	WebExtensionBindingType.Text, "194740422"));
 ```
 
-## الخطوة 3: احفظ المستند وقم بتحميله
+## Schritt 3: Speichern und laden Sie das Dokument
 
-نحفظ المستند مع أجزاء المهام المكونة في الدليل المحدد.
+Wir speichern das Dokument mit den konfigurierten Aufgabenbereichen im angegebenen Verzeichnis.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## الخطوة 4: عرض معلومات أجزاء المهام
+## Schritt 4: Zeigen Sie die Informationen zum Aufgabenbereich an
 
-بعد ذلك ، نقوم بتحميل المستند وعرض معلومات مصدر جزء المهام.
+Als Nächstes laden wir das Dokument und zeigen die Quellinformationen des Aufgabenbereichs an.
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
@@ -77,14 +77,14 @@ Console.WriteLine($"Vendor: \"{reference.Store}\", version: \"{reference.Version
 }
 ```
 
-هذا كل شئ ! لقد نجحت في استخدام أجزاء مهام ملحق الويب مع Aspose.Words for .NET.
+Das ist alles ! Sie haben die Aufgabenbereiche der Weberweiterung erfolgreich mit Aspose.Words für .NET verwendet.
 
-### مثال على شفرة المصدر لاستخدام أجزاء مهام امتداد الويب مع Aspose.Words for .NET
+### Beispielquellcode für die Verwendung von Weberweiterungs-Aufgabenbereichen mit Aspose.Words für .NET
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 

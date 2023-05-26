@@ -1,88 +1,88 @@
 ---
-title: تجاهل النص داخل الحقول
-linktitle: تجاهل النص داخل الحقول
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة "تجاهل النص داخل الحقول" في Aspose.Words for .NET.
+title: Text in Feldern ignorieren
+linktitle: Text in Feldern ignorieren
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie die Funktion „Text in Feldern ignorieren“ von Aspose.Words für .NET verwenden.
 type: docs
 weight: 10
 url: /de/net/find-and-replace-text/ignore-text-inside-fields/
 ---
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Ignore Text Inside Fields في مكتبة Aspose.Words for .NET. هذه الميزة مفيدة عندما نريد تجاهل النص داخل الحقول عند معالجة المستندات.
+In diesem Artikel untersuchen wir den obigen C#-Quellcode, um zu verstehen, wie die Funktion „Text in Feldern ignorieren“ in der Bibliothek „Aspose.Words für .NET“ verwendet wird. Diese Funktion ist nützlich, wenn wir beim Bearbeiten von Dokumenten den Text in den Feldern ignorieren möchten.
 
-## المتطلبات الأساسية
+## Voraussetzungen
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundkenntnisse der C#-Sprache.
+- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## Schritt 1: Erstellen eines neuen Dokuments
 
- قبل أن نبدأ في معالجة النص داخل الحقول ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Bevor wir mit der Bearbeitung von Text in Feldern beginnen, müssen wir mit Aspose.Words für .NET ein neues Dokument erstellen. Dies kann durch Instanziieren von a erfolgen`Document` Objekt:
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: إدخال حقل يحتوي على نص بداخله
+## Schritt 2: Einfügen eines Feldes mit Text darin
 
- بمجرد أن نحصل على مستند ، يمكننا إدخال حقل يحتوي على نص بداخله باستخدام ملف`DocumentBuilder` هدف. على سبيل المثال ، لإدراج حقل "INCLUDETEXT" مع النص "Text in field" ، يمكننا استخدام`InsertField` طريقة:
+ Sobald wir ein Dokument haben, können wir mit a ein Feld mit Text darin einfügen`DocumentBuilder` Objekt. Um beispielsweise ein „INCLUDETEXT“-Feld mit dem Text „Text im Feld“ einzufügen, können wir das verwenden`InsertField` Methode:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
-## الخطوة 3: استخدام وظيفة Ignore Text Inside Fields
+## Schritt 3: Verwenden der Funktion „Text in Feldern ignorieren“.
 
- لتجاهل النص داخل الحقول في العمليات اللاحقة ، يمكننا استخدام`FindReplaceOptions` كائن وتعيين`IgnoreFields` ملكية ل`true`:
+ Um Text in Feldern bei nachfolgenden Vorgängen zu ignorieren, können wir a verwenden`FindReplaceOptions` Objekt und legen Sie das fest`IgnoreFields` Eigentum zu`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
 
-## الخطوة 4: استخدام التعبيرات النمطية للبحث والاستبدال
+## Schritt 4: Verwenden regulärer Ausdrücke zum Suchen und Ersetzen
 
-لإجراء عمليات البحث والاستبدال على نص المستند ، سنستخدم التعبيرات العادية. في مثالنا ، سنبحث عن جميع تكرارات الحرف "e" ونستبدلها بعلامة النجمة "* ". سنستخدم .NET`Regex` فئة لهذا:
+Um Such- und Ersetzungsvorgänge für den Text des Dokuments durchzuführen, verwenden wir reguläre Ausdrücke. In unserem Beispiel suchen wir nach allen Vorkommen des Buchstabens „e“ und ersetzen sie durch ein Sternchen „* ". Wir werden .NETs verwenden`Regex` Klasse dafür:
 
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## الخطوة 5: عرض إخراج المستند المعدل
+## Schritt 5: Anzeigen der geänderten Dokumentausgabe
 
-بعد تطبيق البحث والاستبدال ، يمكننا عرض المحتوى الذي تم تغييره في المستند باستخدام`GetText` طريقة:
+Nachdem wir das Suchen und Ersetzen angewendet haben, können wir den geänderten Inhalt des Dokuments mithilfe von anzeigen`GetText` Methode:
 
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## الخطوة 6: تغيير الخيارات لتضمين الحقول
+## Schritt 6: Optionen ändern, um Felder einzubeziehen
 
- نقوم بتضمين النص داخل الحقول في نتيجة الإخراج ، يمكننا تغيير الخيارات لعدم تجاهل الحقول. لهذا سنقوم بتعيين`IgnoreFields` ملكية ل`false`:
+ Wenn wir den Text in den Feldern in das Ausgabeergebnis einbeziehen, können wir die Optionen so ändern, dass die Felder nicht ignoriert werden. Hierzu legen wir die fest`IgnoreFields` Eigentum zu`false`:
 
 ```csharp
 options.IgnoreFields = false;
 ```
 
-## الخطوة 7: عرض الوثيقة المعدلة مع الحقول
+## Schritt 7: Anzeige des geänderten Dokuments mit den Feldern
 
-بعد تغيير الخيارات ، يمكننا إجراء البحث والاستبدال مرة أخرى للحصول على النتيجة بالنص الموجود داخل الحقول المضمنة:
+Nachdem wir die Optionen geändert haben, können wir die Suche und das Ersetzen erneut durchführen, um das Ergebnis mit dem Text in den enthaltenen Feldern zu erhalten:
 
 ```csharp
 doc.Range.Replace(regex, "*", options);
 Console.WriteLine(doc.GetText());
 ```
 
-### مثال على شفرة المصدر لـ Ignore Text Inside Fields باستخدام Aspose.Words for .NET
+### Beispielquellcode für „Text in Feldern ignorieren“ mit Aspose.Words für .NET
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام وظيفة Ignore Text Inside Fields مع Aspose.Words for .NET:
+Hier ist der vollständige Beispielquellcode, um die Verwendung der Funktion „Text in Feldern ignorieren“ mit Aspose.Words für .NET zu demonstrieren:
 
 ```csharp
     
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// أدخل الحقل مع النص بداخله.
+	// Feld mit Text darin einfügen.
 	builder.InsertField("INCLUDETEXT", "Text in field");
 	
 	FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -99,6 +99,6 @@ Console.WriteLine(doc.GetText());
   
 ```
 
-## خاتمة
+## Abschluss
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة Ignore Text Inside Fields في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند ، وإدخال حقل به نص بداخله ، واستخدام وظيفة Ignore Text Inside Fields ، وإجراء البحث واستبدال العمليات بالتعبيرات العادية ، وعرض المستند المعدل.
+In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Text in Feldern ignorieren“ in Aspose.Words für .NET verwendet wird. Wir haben eine Schritt-für-Schritt-Anleitung befolgt, um ein Dokument zu erstellen, ein Feld mit Text darin einzufügen, die Funktion „Text in Feldern ignorieren“ zu verwenden, Such- und Ersetzungsvorgänge mit regulären Ausdrücken durchzuführen und das geänderte Dokument anzuzeigen.

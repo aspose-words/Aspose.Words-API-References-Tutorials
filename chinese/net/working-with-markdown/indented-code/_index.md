@@ -1,44 +1,44 @@
 ---
-title: رمز مسافة بادئة
-linktitle: رمز مسافة بادئة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام التعليمات البرمجية ذات المسافات البادئة مع دليل Aspose.Words for .NET خطوة بخطوة.
+title: 缩进代码
+linktitle: 缩进代码
+second_title: Aspose.Words for .NET API 参考
+description: 通过 Aspose.Words for .NET 分步指南了解如何使用缩进代码。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/indented-code/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام ميزة الشفرة ذات المسافة البادئة مع Aspose.Words for .NET. يتم استخدام التعليمات البرمجية ذات المسافة البادئة لتمثيل كتل التعليمات البرمجية بصريًا بتنسيق محدد.
+在这个例子中，我们将解释如何使用 Aspose.Words for .NET 的缩进代码功能。缩进代码用于直观地表示具有特定格式的代码块。
 
-## الخطوة 1: استخدام منشئ المستندات
+## 第 1 步：使用文档生成器
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+首先，我们将使用文档生成器将内容添加到我们的文档中。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: أضف نمطًا للرمز ذي المسافة البادئة
+## 第 2 步：为缩进代码添加样式
 
- سنضيف نمطًا مخصصًا للشفرة ذات المسافة البادئة باستخدام امتداد`Styles.Add` طريقة`Document` هدف. في هذا المثال ، نقوم بإنشاء نمط يسمى "IndentedCode" للشفرة ذات المسافة البادئة.
+我们将使用以下代码为缩进代码添加自定义样式`Styles.Add`的方法`Document`目的。在这个例子中，我们正在为缩进代码创建一个名为“IndentedCode”的样式。
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## الخطوة 3: أضف التعليمات البرمجية ذات المسافة البادئة
+## 第 3 步：添加缩进代码
 
-الآن يمكننا إضافة كتلة تعليمات برمجية ذات مسافة بادئة باستخدام النمط المخصص "IndentedCode".
+现在我们可以使用“IndentedCode”自定义样式添加缩进代码块。
 
 ```csharp
 builder.Writeln("This is an indented code block");
 ```
 
-### مثال على شفرة المصدر للتعليمات البرمجية ذات المسافات البادئة باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的缩进代码示例源代码
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	//使用文档生成器向文档添加内容。
 	DocumentBuilder builder = new DocumentBuilder();
 
 	Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
@@ -47,5 +47,5 @@ builder.Writeln("This is an indented code block");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الشفرة ذات المسافة البادئة مع Aspose.Words for .NET.
+恭喜！您现在已经学习了如何使用 Aspose.Words for .NET 的缩进代码功能。
 

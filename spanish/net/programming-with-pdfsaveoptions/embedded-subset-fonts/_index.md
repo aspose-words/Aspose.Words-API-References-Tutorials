@@ -1,61 +1,61 @@
 ---
-title: خطوط المجموعة الفرعية المضمنة
-linktitle: خطوط المجموعة الفرعية المضمنة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتضمين مجموعات الخطوط الفرعية في ملف PDF باستخدام Aspose.Words for .NET.
+title: Subconjunto de fuentes incrustadas
+linktitle: Subconjunto de fuentes incrustadas
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para incrustar subconjuntos de fuentes en un PDF usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة تضمين مجموعة الخطوط الفرعية مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تضمين مجموعات فرعية من الخطوط في مستند وإنشاء ملف PDF يحتوي فقط على الحروف الرسومية المستخدمة في المستند.
+Este artículo proporciona una guía paso a paso sobre cómo usar la función de incrustación de subconjuntos de fuentes con Aspose.Words para .NET. Explicaremos cada parte del código en detalle. Al final de este tutorial, podrá comprender cómo incrustar subconjuntos de fuentes en un documento y generar un PDF que contenga solo los glifos utilizados en el documento.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Antes de comenzar, asegúrese de haber instalado y configurado la biblioteca Aspose.Words para .NET en su proyecto. Puede encontrar la biblioteca y las instrucciones de instalación en el sitio web de Aspose.
 
-## الخطوة 1: تحديد دليل المستند
+## Paso 1: Definir el directorio de documentos
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Para comenzar, debe definir la ruta al directorio donde se encuentran sus documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Paso 2: Sube el documento
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+A continuación, debemos cargar el documento que queremos procesar. En este ejemplo, asumimos que el documento se llama "Rendering.docx" y se encuentra en el directorio de documentos especificado.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF
+## Paso 3: Configure las opciones de guardar como PDF
 
- لإنشاء ملف PDF يحتوي فقط على مجموعات فرعية من الخطوط المستخدمة في المستند ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن مع`EmbedFullFonts` تعيين الخاصية على`false`.
+ Para crear un PDF que contenga solo los subconjuntos de fuentes utilizadas en el documento, debemos configurar el`PdfSaveOptions` objeto con el`EmbedFullFonts` propiedad establecida en`false`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع مجموعات الخطوط الفرعية
+## Paso 4: Guarde el documento como PDF con subconjuntos de fuentes
 
- أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام مجموعات الخطوط الفرعية. حدد اسم ملف الإخراج و`saveOptions` كائن قمنا بتكوينه في الخطوة السابقة.
+ Finalmente, podemos guardar el documento como PDF usando los subconjuntos de fuentes. Especifique el nombre del archivo de salida y el`saveOptions` objeto que configuramos en el paso anterior.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تضمين مجموعات فرعية من الخطوط في مستند وإنشاء ملف PDF يحتوي فقط على الحروف الرسومية المستخدمة في المستند مع Aspose.Words for .NET.
+Eso es todo ! Ha incrustado con éxito subconjuntos de fuentes en un documento y ha generado un PDF que contiene solo los glifos utilizados en el documento con Aspose.Words para .NET.
 
-### عينة من التعليمات البرمجية المصدر لتضمين مجموعات فرعية من الخطوط باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para incrustar subconjuntos de fuentes con Aspose.Words para .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// سيحتوي ملف PDF الناتج على مجموعات فرعية من الخطوط الموجودة في المستند.
-	// يتم تضمين الحروف الرسومية المستخدمة في الوثيقة فقط في خطوط PDF.
+	// El PDF de salida contendrá subconjuntos de las fuentes del documento.
+	// Solo los glifos utilizados en el documento se incluyen en las fuentes PDF.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);

@@ -1,36 +1,36 @@
 ---
-title: أضف اليابانية كلغات تحرير
-linktitle: أضف اليابانية كلغات تحرير
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإضافة اليابانية كلغة تحرير باستخدام Aspose.Words for .NET.
+title: Aggiungi il giapponese come lingue di modifica
+linktitle: Aggiungi il giapponese come lingue di modifica
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata per aggiungere il giapponese come lingua di modifica con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-document-options-and-settings/add-japanese-as-editing-languages/
 ---
 
-في هذا البرنامج التعليمي ، سوف نأخذك خطوة بخطوة لفهم وتنفيذ وظيفة إضافة اللغة اليابانية كلغة تحرير باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة ضبط تفضيلات اللغة عند تحميل مستند وإضافة اليابانية كلغة تحرير.
+In questo tutorial, ti guideremo passo dopo passo per comprendere e implementare la funzionalità di aggiungere il giapponese come lingua di modifica con Aspose.Words per .NET. Questa funzione consente di impostare le preferenze della lingua durante il caricamento di un documento e di aggiungere il giapponese come lingua di modifica.
 
-## الخطوة 1: إعداد المشروع
+## Passaggio 1: impostazione del progetto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Per iniziare, crea un nuovo progetto C# nel tuo IDE preferito. Assicurarsi che nel progetto si faccia riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة الثانية: تحميل المستند
+## Passaggio 2: caricamento del documento
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي لا يحتوي على لغة تحرير افتراضية والتي نريد إضافة اللغة اليابانية إليها. استخدم الكود التالي لتحميل المستند:
+In questo passaggio, caricheremo il documento Word che non contiene una lingua di modifica predefinita e a cui vogliamo aggiungere il giapponese. Utilizzare il seguente codice per caricare il documento:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 
-// قم بتعيين تفضيلات اللغة التي سيتم استخدامها عند تحميل المستند.
+// Imposta le preferenze della lingua che verranno utilizzate durante il caricamento del documento.
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 ```
 
-## الخطوة 3: التحقق من اللغة الافتراضية
+## Passaggio 3: verifica della lingua predefinita
 
-بعد تحميل المستند ، سنتحقق مما إذا كانت لغة التحرير الافتراضية قد تم ضبطها بشكل صحيح على اليابانية. استخدم الكود التالي للحصول على معرف لغة الشرق الأقصى:
+Dopo aver caricato il documento, verificheremo se la lingua di modifica predefinita è stata impostata correttamente sul giapponese. Utilizzare il seguente codice per ottenere l'ID della lingua dell'Estremo Oriente:
 
 ```csharp
 int localeIdFarEast = doc.Styles.DefaultFont.LocaleIdFarEast;
@@ -40,18 +40,18 @@ Console.WriteLine(
 		: "The document default FarEast language was set to another than Japanese language originally, so it is not overridden.");
 ```
 
-يتحقق الكود مما إذا كان معرف لغة الشرق الأقصى يطابق معرف اللغة اليابانية. وفقًا للنتيجة ، فإنه يعرض رسالة مقابلة.
+Il codice controlla se l'ID della lingua dell'Estremo Oriente corrisponde a quello del giapponese. In base al risultato, visualizza un messaggio corrispondente.
 
-### مثال على شفرة المصدر لإضافة اليابانية كلغات تحرير باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Aggiungi giapponese come lingue di modifica utilizzando Aspose.Words per .NET
 
 ```csharp
 
 	LoadOptions loadOptions = new LoadOptions();
 	
-	// قم بتعيين تفضيلات اللغة التي سيتم استخدامها عند تحميل المستند.
+	// Imposta le preferenze della lingua che verranno utilizzate durante il caricamento del documento.
 	loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 	
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 

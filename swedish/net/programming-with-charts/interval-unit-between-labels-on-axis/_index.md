@@ -1,44 +1,44 @@
 ---
-title: وحدة الفاصل الزمني بين التسميات على المحور
-linktitle: وحدة الفاصل الزمني بين التسميات على المحور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين وحدة الفاصل الزمني بين التسميات على محور الرسم البياني باستخدام Aspose.Words for .NET.
+title: Intervallenhet mellan etiketter på axeln
+linktitle: Intervallenhet mellan etiketter på axeln
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ställer in intervallenheten mellan etiketter på axeln i ett diagram med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-charts/interval-unit-between-labels-on-axis/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين وحدة الفاصل بين التسميات على محور الرسم البياني. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات سلسلة وتخصيص تسميات المحور.
+Denna handledning förklarar hur man använder Aspose.Words för .NET för att ställa in intervallenheten mellan etiketterna på axeln i ett diagram. Den medföljande källkoden visar hur man skapar ett diagram, lägger till seriedata och anpassar axeletiketterna.
 
-## الخطوة 1: قم بإعداد المشروع
+## Steg 1: Konfigurera projektet
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Se till att du har följande förutsättningar:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från den officiella Aspose-webbplatsen eller använda NuGet-pakethanteraren för att installera den.
+- En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط عمودي في المستند.
+ Använd sedan`InsertChart` metod för`DocumentBuilder` för att infoga ett kolumndiagram i dokumentet.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Steg 3: Lägg till seriedata i diagrammet
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمسة عناصر بقيمها المقابلة.
+Lägg till seriedata i diagrammet. I det här exemplet lägger vi till fem objekt med motsvarande värden.
 
 ```csharp
 chart.Series.Clear();
@@ -47,28 +47,28 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## الخطوة 4: تخصيص تسميات المحور
+## Steg 4: Anpassa axeletiketterna
 
- لتعيين وحدة الفاصل الزمني بين التسميات على المحور X ، قم بالوصول إلى ملف`AxisX` خاصية الرسم البياني وتعيين`TickLabelSpacing` إلى القيمة المطلوبة. في هذا المثال ، قمنا بتعيين التباعد على 2.
+ För att ställa in intervallenheten mellan etiketter på X-axeln, gå till`AxisX` egenskapen för diagrammet och ställ in`TickLabelSpacing` egendom till önskat värde. I det här exemplet ställer vi in avståndet till 2.
 
 ```csharp
 chart.AxisX.TickLabelSpacing = 2;
 ```
 
-## الخطوة 5: احفظ المستند
+## Steg 5: Spara dokumentet
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Slutligen sparar du dokumentet i den angivna katalogen med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 ```
 
-هذا يكمل تنفيذ إعداد وحدة الفاصل الزمني بين الملصقات على المحور باستخدام Aspose.Words for .NET.
+Detta slutför implementeringen av att ställa in intervallenheten mellan etiketter på axeln med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لوحدة الفاصل الزمني بين الملصقات على المحور باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Interval Unit Between Labels On Axis med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

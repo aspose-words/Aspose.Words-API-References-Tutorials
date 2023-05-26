@@ -1,31 +1,31 @@
 ---
-title: إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه
-linktitle: إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إظهار أو إخفاء محتوى الإشارات المرجعية باستخدام Aspose.Words for .NET.
+title: Mostrar Ocultar contenido marcado
+linktitle: Mostrar Ocultar contenido marcado
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a mostrar u ocultar contenido de marcadores usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إظهار إخفاء المحتوى المرتبط بإشارة مرجعية في Aspose.Words for .NET library. تتيح لك هذه الميزة إظهار أو إخفاء محتويات إشارة مرجعية بناءً على شرط معين عند دمج البيانات.
+En este artículo, exploraremos el código fuente de C# anterior para comprender cómo usar la función Mostrar ocultar contenido marcado en Aspose.Words para la biblioteca .NET. Esta función le permite mostrar u ocultar el contenido de un marcador en función de una condición específica al fusionar datos.
 
-## المتطلبات الأساسية
+## requisitos previos
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conocimientos básicos del lenguaje C#.
+- Entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
 
-## الخطوة 1: الحصول على الإشارة المرجعية
+## Paso 1: Obtener el marcador
 
- نحن نستخدم ال`Bookmarks` خاصية نطاق المستند للحصول على الإشارة المرجعية المحددة التي نريد إظهار المحتوى أو إخفائه:
+ usamos el`Bookmarks` propiedad del rango del documento para obtener el marcador específico en el que queremos mostrar u ocultar el contenido:
 
 ```csharp
 Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 ```
 
-## الخطوة 2: إدراج حقول الدمج
+## Paso 2: Insertar los campos de combinación
 
- نحن نستخدم منشئ المستندات`DocumentBuilder` لإدراج حقول الدمج الضرورية. ستعمل حقول الدمج هذه على تعيين شرط لإظهار أو إخفاء محتوى الإشارة المرجعية بناءً على قيمة`showHide` عامل:
+ Usamos un generador de documentos.`DocumentBuilder` para insertar los campos de combinación necesarios. Estos campos de combinación establecerán una condición para mostrar u ocultar el contenido del marcador según el valor del`showHide` variable:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -40,11 +40,11 @@ builder. Write("\"");
 builder. Write(" \"\"");
 ```
 
-## الخطوة 3: نقل محتوى الإشارة المرجعية
+## Paso 3: Mover el contenido del marcador
 
-ندور محتويات الإشارة المرجعية وننقلها حتى تظهر
+Recorremos el contenido del marcador y lo movemos para que aparezca
 
-ISSE قبل الإشارة المرجعية. سيتحكم هذا في إظهار المحتوى أو إخفائه بناءً على الشرط المحدد:
+isse antes del marcador. Esto controlará mostrar u ocultar contenido según la condición especificada:
 
 ```csharp
 Node currentNode = field. Start;
@@ -62,9 +62,9 @@ while (currentNode != null && flag)
 }
 ```
 
-## الخطوة 4: نقل باقي محتوى الإشارة المرجعية
+## Paso 4: mover el resto del contenido del marcador
 
-نقوم بنقل باقي محتوى الإشارة المرجعية بعد الإشارة المرجعية ، باستخدام عقدة نهاية الإشارة المرجعية كنقطة إدخال:
+Movemos el resto del contenido del marcador después del marcador, utilizando el nodo final del marcador como punto de inserción:
 
 ```csharp
 Node endNode = bm.BookmarkEnd;
@@ -82,17 +82,17 @@ while (currentNode != null && flag)
 }
 ```
 
-## الخطوة 5: تنفيذ الدمج
+## Paso 5: Realizar la fusión
 
- نحن نستخدم ال`Execute` طريقة الوثيقة`s `دمج المراسلات` object to execute the merge using the bookmark name and the value of the `متغير showHide`:
+ usamos el`Execute` metodo del documento`s `Unificación de correo` object to execute the merge using the bookmark name and the value of the `mostrarHide` variable:
 
 ```csharp
 doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 ```
 
-### مثال على شفرة المصدر لـ Show Hide Bookmarked Content باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Mostrar Ocultar Contenido Marcado usando Aspose.Words para .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح إظهار أو إخفاء محتوى الإشارة المرجعية باستخدام Aspose.Words for .NET:
+Aquí está el ejemplo completo del código fuente para mostrar u ocultar el contenido de marcadores usando Aspose.Words para .NET:
 
 ```csharp
 
@@ -101,7 +101,7 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.MoveToDocumentEnd();
 
-	// {إذا كان "{MERGEFIELD إشارة مرجعية}" = "صحيح" "" ""}
+	// {IF "{marcador MERGEFIELD}" = "verdadero" "" ""}
 	Field field = builder.InsertField("IF \"", null);
 	builder.MoveTo(field.Start.NextSibling);
 	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
@@ -142,6 +142,6 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 
 ```
 
-## خاتمة
+## Conclusión
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة إظهار إخفاء المحتوى المرتبط بإشارة مرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإظهار أو إخفاء محتويات إشارة مرجعية بناءً على شرط معين عند دمج البيانات.
+En este artículo, exploramos el código fuente de C# para entender cómo usar la función Mostrar contenido marcado como favorito de Aspose.Words para .NET. Hemos seguido una guía paso a paso para mostrar u ocultar el contenido de un marcador en función de una condición específica al fusionar datos.

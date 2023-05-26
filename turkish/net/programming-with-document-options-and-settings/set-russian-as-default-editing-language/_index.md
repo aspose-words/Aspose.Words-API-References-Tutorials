@@ -1,37 +1,37 @@
 ---
-title: تعيين اللغة الروسية كلغة تحرير افتراضية
-linktitle: تعيين اللغة الروسية كلغة تحرير افتراضية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتعيين اللغة الروسية كلغة تحرير افتراضية لمستند باستخدام Aspose.Words for .NET.
+title: Rusçayı Varsayılan Düzenleme Dili Olarak Ayarla
+linktitle: Rusçayı Varsayılan Düzenleme Dili Olarak Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir belgenin varsayılan düzenleme dili olarak Rusça'yı ayarlamak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-document-options-and-settings/set-russian-as-default-editing-language/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتعيين اللغة الروسية كلغة تحرير افتراضية باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة ضبط اللغة الافتراضية عند تحميل مستند.
+Bu eğitimde, Aspose.Words for .NET ile Rusça'yı varsayılan düzenleme dili olarak ayarlamak için C# kaynak kodunda size yol göstereceğiz. Bu özellik, bir belge yüklerken varsayılan dili ayarlamanıza olanak tanır.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد تعيين اللغة الروسية له كلغة التحرير الافتراضية. استخدم الكود التالي لتحميل المستند:
+Bu adımda, Rusça'yı varsayılan düzenleme dili olarak ayarlamak istediğimiz Word belgesini yükleyeceğiz. Belgeyi yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;
 
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
 
-## الخطوة 3: التحقق من اللغة الافتراضية
+## 3. Adım: Varsayılan dili kontrol etme
 
-بعد تحميل المستند ، سنتحقق مما إذا كانت اللغة الافتراضية قد تم ضبطها بشكل صحيح على الروسية. استخدم الكود التالي للحصول على معرف اللغة الافتراضي:
+Belgeyi yükledikten sonra, varsayılan dilin doğru bir şekilde Rusça olarak ayarlanıp ayarlanmadığını kontrol edeceğiz. Varsayılan dil kimliğini almak için aşağıdaki kodu kullanın:
 
 ```csharp
 int localeId = doc.Styles.DefaultFont.LocaleId;
@@ -41,16 +41,16 @@ Console.WriteLine(
 		: "The document default language was set to another than Russian language originally, so it is not overridden.");
 ```
 
-يتحقق الكود مما إذا كان معرف اللغة يطابق معرف اللغة الروسية. وفقًا للنتيجة ، فإنه يعرض رسالة مقابلة.
+Kod, dil kimliğinin Rusça ile eşleşip eşleşmediğini kontrol eder. Sonuca göre ilgili mesajı görüntüler.
 
-### مثال على شفرة المصدر لتعيين الروسية كلغة تحرير افتراضية باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Rusça'yı Varsayılan Düzenleme Dili Olarak Ayarlamak için örnek kaynak kodu
 
 ```csharp
 
 	LoadOptions loadOptions = new LoadOptions();
 	loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;
 	
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 
@@ -62,6 +62,6 @@ Console.WriteLine(
 
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ bölümünde doğru belge yolunu belirttiğinizden emin olun.`dataDir` değişken.
 
-لقد تعلمت الآن كيفية تعيين اللغة الروسية كلغة تحرير افتراضية لمستند باستخدام Aspose.Words for .NET. باتباع دليل الخطوة
+Artık Aspose.Words for .NET kullanan bir belge için Rusça'yı varsayılan düzenleme dili olarak nasıl ayarlayacağınızı öğrendiniz. Adım kılavuzunu takip ederek

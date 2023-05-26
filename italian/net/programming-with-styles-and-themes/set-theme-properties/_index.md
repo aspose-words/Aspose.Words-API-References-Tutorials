@@ -1,27 +1,27 @@
 ---
-title: تعيين خصائص الموضوع
-linktitle: تعيين خصائص الموضوع
-second_title: Aspose.Words لمراجع .NET API
-description: تعلم كيفية تخصيص مظهر مستنداتك عن طريق تغيير خصائص النسق باستخدام Aspose.Words for .NET. احصل على نتائج احترافية وجذابة.
+title: Imposta le proprietà del tema
+linktitle: Imposta le proprietà del tema
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Impara a personalizzare l'aspetto dei tuoi documenti modificando le proprietà del tema con Aspose.Words per .NET. Ottieni risultati professionali e attraenti.
 type: docs
 weight: 10
 url: /it/net/programming-with-styles-and-themes/set-theme-properties/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لتعيين خصائص السمات للمستند باستخدام Aspose.Words for .NET. سنقوم بتغيير الخطوط الثانوية وألوان السمات.
+In questo tutorial, esploreremo il codice sorgente C# fornito per impostare le proprietà del tema di un documento utilizzando Aspose.Words per .NET. Cambieremo i caratteri secondari e i colori del tema.
 
-## الخطوة الأولى: تهيئة البيئة
+## Passaggio 1: configurazione dell'ambiente
 
-تأكد من قيامك بإعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Assicurati di aver impostato il tuo ambiente di sviluppo con Aspose.Words per .NET. Assicurati di aver aggiunto i riferimenti necessari e importato gli spazi dei nomi appropriati.
 
-## الخطوة 2: إنشاء كائن مستند
+## Passaggio 2: creazione di un oggetto documento
 
 ```csharp
 Document doc = new Document();
 ```
 
- في هذه الخطوة ، نقوم بإنشاء ملف`Document` هدف.
+ In questo passaggio, creiamo un nuovo file`Document` oggetto.
 
-## الخطوة 3: تحرير خصائص النسق
+## Passaggio 3: modifica le proprietà del tema
 
 ```csharp
 Aspose.Words.Themes.Theme theme = doc.Theme;
@@ -29,15 +29,15 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- في هذه الخطوة ، نصل إلى ملف`Theme` كائن`Document` كائن للحصول على سمة المستند. بعد ذلك ، يمكننا تعديل خصائص النسق مثل الخطوط الثانوية (`MinorFonts.Latin`) والألوان (`Colors.Hyperlink`).
+ In questo passaggio, accediamo al file`Theme` oggetto del`Document` oggetto per ottenere il tema del documento. Successivamente, possiamo modificare le proprietà del tema come i caratteri secondari (`MinorFonts.Latin`) e colori (`Colors.Hyperlink`).
 
-## الخطوة 4: احفظ المستند
+## Passaggio 4: salvare il documento
 
-في هذه الخطوة الأخيرة ، يمكنك حفظ المستند المعدل حسب الحاجة.
+In quest'ultimo passaggio, puoi salvare il documento modificato secondo necessità.
 
-يمكنك تشغيل التعليمات البرمجية المصدر لتعيين خصائص النسق لمستند. يتيح لك هذا تخصيص الخطوط والألوان المستخدمة في السمة لتحقيق مظهر متناسق عبر مستنداتك.
+È possibile eseguire il codice sorgente per impostare le proprietà del tema per un documento. Ciò ti consente di personalizzare i caratteri e i colori utilizzati nel tema per ottenere un aspetto coerente tra i tuoi documenti.
 
-### نموذج التعليمات البرمجية المصدر لـ Set Theme Properties باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Set Theme Properties utilizzando Aspose.Words per .NET 
 ```csharp
             
 Document doc = new Document();
@@ -49,12 +49,12 @@ theme.Colors.Hyperlink = Color.Gold;
         
 ```
 
-## خاتمة
+## Conclusione
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة تعيين خصائص سمة المستند باستخدام Aspose.Words for .NET. من خلال تغيير الخطوط الثانوية وألوان النسق ، يمكنك تخصيص مظهر مستنداتك والحفاظ على التناسق البصري.
+In questo tutorial, abbiamo esplorato la funzionalità per impostare le proprietà del tema di un documento con Aspose.Words per .NET. Modificando i caratteri secondari e i colori del tema, puoi personalizzare l'aspetto dei tuoi documenti e mantenere la coerenza visiva.
 
-يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية لمعالجة أنماط المستندات والسمات. من خلال تعديل خصائص النسق ، يمكنك تكييف مظهر مستنداتك مع الاحتياجات المحددة لمشروعك أو علامتك التجارية.
+Aspose.Words per .NET offre una potente API per la manipolazione degli stili e dei temi dei documenti. Modificando le proprietà del tema, puoi adattare l'aspetto dei tuoi documenti alle esigenze specifiche del tuo progetto o del tuo marchio.
 
-لا تنس حفظ المستند الذي تم تحريره بمجرد تعيين خصائص السمة.
+Non dimenticare di salvare il documento modificato una volta impostate le proprietà del tema.
 
-اكتشف المزيد من الميزات التي تقدمها Aspose.Words for .NET لتحسين سير عملك وتحقيق مستندات احترافية وجذابة.
+Esplora altre funzionalità offerte da Aspose.Words per .NET per ottimizzare il tuo flusso di lavoro e ottenere documenti professionali e accattivanti.

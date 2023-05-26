@@ -1,47 +1,47 @@
 ---
-title: تعيين المثيل الافتراضي مجلدات الخطوط
-linktitle: تعيين المثيل الافتراضي مجلدات الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتعيين مجلد الخط الافتراضي عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Ställ in typsnittsmappar som standardinstans
+linktitle: Ställ in typsnittsmappar som standardinstans
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att ställa in standardfontmappen när du renderar ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/set-fonts-folders-default-instance/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلد الخط الافتراضي عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تعيين مجلد الخط الافتراضي لاستخدامه عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+den här handledningen går vi igenom steg-för-steg-processen för att ställa in standardfontmappen när du renderar ett dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och förse dig med en omfattande guide som hjälper dig att förstå och implementera den här funktionen i dina egna projekt. I slutet av denna handledning kommer du att veta hur du ställer in standardfontmappen som ska användas när du renderar dina dokument med Aspose.Words för .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+Först måste du ställa in sökvägen till din dokumentkatalog. Det här är platsen där du vill spara ditt redigerade renderade dokument. Ersätt "DIN DOKUMENTKATOLOG" med lämplig sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تعيين مجلد الخط الافتراضي
- ثم يمكنك تعيين مجلد الخط الافتراضي باستخدام ملف`FontSettings.DefaultInstance` الطبقة و`SetFontsFolder()` طريقة. حدد المسار إلى مجلد الخطوط الذي تريد استخدامه كمجلد افتراضي.
+## Steg 2: Ställ in standardfontmapp
+ Sedan kan du ställa in standardfontmappen med hjälp av`FontSettings.DefaultInstance` klass och`SetFontsFolder()` metod. Ange sökvägen till den typsnittsmapp du vill använda som standardmapp.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
 ```
 
-## الخطوة 3: قم بتحميل المستند للعرض
- يمكنك الآن تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Steg 3: Ladda dokumentet för att rendera
+ Nu kan du ladda dokumentet för att rendera med hjälp av`Document` klass. Var noga med att ange rätt dokumentsökväg.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 4: احفظ المستند المقدم
- أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## Steg 4: Spara det renderade dokumentet
+ Slutligen kan du spara det renderade dokumentet till en fil med hjälp av`Save()` metod för`Document` klass. Var noga med att ange rätt sökväg och filnamn.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders Default Instance باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Set Fonts Folders Default Instance med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
@@ -49,5 +49,5 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلد الخط الافتراضي عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلد الخطوط الذي تريد استخدامه كمجلد افتراضي عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+## Slutsats
+den här handledningen lärde vi oss hur du ställer in standardfontmappen när du renderar ett dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden kan du enkelt ange vilken mapp med teckensnitt som ska användas som standardmapp när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för att arbeta med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa teckensnittskällorna som används när du renderar dina dokument efter dina specifika behov.

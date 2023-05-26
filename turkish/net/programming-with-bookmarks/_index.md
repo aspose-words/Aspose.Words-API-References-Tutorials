@@ -1,30 +1,30 @@
 ---
-title: البرمجة مع الإشارات المرجعية
-linktitle: البرمجة مع الإشارات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إشارات مرجعية للوصول ، وتحديث بيانات الإشارة المرجعية ، وأعمدة جدول الإشارات المرجعية ، ونسخ نص تم وضع إشارة مرجعية عليه ، وإلحاق نص تم وضع إشارة مرجعية عليه ، وإنشاء إشارة مرجعية ، وإظهار إخفاء الإشارات المرجعية
+title: Yer İşaretleriyle Programlama
+linktitle: Yer İşaretleriyle Programlama
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler erişim yer imlerini, yer imi verilerini güncellemeyi, yer imi tablosu sütunlarını, yer imi eklenmiş metni kopyalamayı, yer imi eklenmiş metni eklemeyi, yer imi oluşturmayı, yer imi gizlemeyi göstermeyi içerir
 type: docs
 weight: 1380
 url: /tr/net/programming-with-bookmarks/
 ---
 
-ترشدك برامج Aspose.Words for .NET التعليمية إلى العديد من الميزات وتقنيات البرمجة للعمل مع الإشارات المرجعية في مستندات Word الخاصة بك. ستتعلم في هذه البرامج التعليمية كيفية إنشاء الإشارات المرجعية وإعادة تسميتها وحذفها والتنقل بينها. ستتعلم أيضًا كيفية استخراج محتوى الإشارات المرجعية واستبداله ، وكذلك كيفية إضافة إشارات مرجعية ديناميكية واستخدامها لإنشاء تقارير مخصصة.
+Aspose.Words for .NET eğitimleri, Word belgelerinizdeki yer imleriyle çalışmak için çeşitli özellikler ve programlama teknikleri konusunda size yol gösterir. Bu eğitimlerde yer imleri oluşturmayı, yeniden adlandırmayı, silmeyi ve yer imleri arasında gezinmeyi öğreneceksiniz. Ayrıca, yer imi içeriğini nasıl çıkaracağınızı ve değiştireceğinizi, ayrıca dinamik yer imlerini nasıl ekleyeceğinizi ve bunları özel raporlar oluşturmak için nasıl kullanacağınızı öğreneceksiniz.
 
-تزودك البرامج التعليمية بأمثلة تفصيلية للتعليمات البرمجية وشروحات تفصيلية لمساعدتك على فهم المفاهيم وتنفيذها. سواء كنت جديدًا أو خبيرًا في برمجة .NET ، ستساعدك هذه البرامج التعليمية على تحقيق أقصى استفادة من ميزات الإشارات المرجعية في Aspose.Words.
+Öğreticiler, kavramları anlamanıza ve uygulamanıza yardımcı olacak ayrıntılı kod örnekleri ve adım adım açıklamalar sağlar. İster .NET programlama konusunda yeni olun ister deneyimli olun, bu eğitimler Aspose.Words'taki yer imleri özelliklerinden en iyi şekilde yararlanmanıza yardımcı olacaktır.
 
-باتباع هذه البرامج التعليمية ، ستتمكن من معالجة الإشارات المرجعية بشكل فعال في مستندات Word الخاصة بك ، وبالتالي أتمتة المهام المختلفة مثل إنشاء التقارير وإنشاء جدول المحتويات الديناميكي وغير ذلك الكثير. استكشف Aspose.Words دروس تعليم مرجعية لـ .NET وحسّن إنتاجيتك في العمل مع مستندات Word.
+Bu öğreticileri izleyerek, Word belgelerinizdeki yer imlerini etkili bir şekilde değiştirebilecek, böylece rapor oluşturma, dinamik içindekiler tablosu oluşturma ve çok daha fazlası gibi çeşitli görevleri otomatik hale getirebileceksiniz. Aspose.Words for .NET yer imi öğreticilerini keşfedin ve Word belgeleriyle çalışırken üretkenliğinizi artırın.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [الوصول إلى الإشارات المرجعية](./access-bookmarks/) | تعرف على كيفية الوصول إلى الإشارات المرجعية في مستند Word باستخدام Aspose.Words for .NET. |
-| [تحديث البيانات المرجعية](./update-bookmark-data/) | دليل خطوة بخطوة لشرح شفرة المصدر C # لميزة تحديث بيانات الإشارة المرجعية Aspose.Words لـ .NET. |
-| [أعمدة الجدول المرجعية](./bookmark-table-columns/) | تعرف على كيفية وضع إشارة مرجعية على عمود جدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [نسخ النص الذي تم وضع إشارة مرجعية عليه](./copy-bookmarked-text/) | تعرف على كيفية نسخ نص إشارة مرجعية من مستند مصدر إلى مستند آخر باستخدام Aspose.Words for .NET. |
-| [إلحاق نص تم وضع إشارة مرجعية عليه](./append-bookmarked-text/) | تعرف على كيفية إضافة نص من إشارة مرجعية في مستند Word باستخدام Aspose.Words for .NET. |
-| [إنشاء إشارة مرجعية](./create-bookmark/) | تعرف على كيفية إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF باستخدام Aspose.Words for .NET. |
-| [إظهار إخفاء الإشارات المرجعية](./show-hide-bookmarks/) | تعرف على كيفية إظهار أو إخفاء إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET. |
-| [إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه](./show-hide-bookmarked-content/) | تعرف على كيفية إظهار أو إخفاء محتوى الإشارات المرجعية باستخدام Aspose.Words for .NET. |
-| [فك الإشارات المرجعية في الصف](./untangle-row-bookmarks/) | تعرف على كيفية فك تشابك الإشارات المرجعية للصفوف المتداخلة لإزالة صفوف معينة دون التأثير على الإشارات المرجعية الأخرى. |
-| [فك](./untangle/) | تعرف على كيفية فك تشابك الإشارات المرجعية المتداخلة في صفوف الجدول المجاورة باستخدام Aspose.Words for .NET. |
-| [حذف الصف حسب الإشارة المرجعية](./delete-row-by-bookmark/) | تعرف على كيفية حذف صف جدول بناءً على إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET. |
+| [Yer İmlerine Erişim](./access-bookmarks/) | Aspose.Words for .NET kullanarak bir Word belgesindeki yer imlerine nasıl erişeceğinizi öğrenin. |
+| [Yer İşareti Verilerini Güncelle](./update-bookmark-data/) | .NET için Aspose.Words yer imi veri güncelleme özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz. |
+| [Yer İşareti Tablosu Sütunları](./bookmark-table-columns/) | Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablo sütununa nasıl yer işareti koyacağınızı öğrenin. |
+| [Yer İşaretli Metni Kopyala](./copy-bookmarked-text/) | Aspose.Words for .NET kullanarak yer imi metnini bir kaynak belgeden başka bir belgeye nasıl kopyalayacağınızı öğrenin. |
+| [Yer İşaretli Metni Ekle](./append-bookmarked-text/) | Aspose.Words for .NET kullanarak bir Word belgesindeki bir yer iminden nasıl metin ekleyeceğinizi öğrenin. |
+| [Yer İşareti Oluştur](./create-bookmark/) | Aspose.Words for .NET kullanarak bir belgede yer imleri oluşturmayı ve bir PDF'de yer imi önizleme düzeylerini belirlemeyi öğrenin. |
+| [Yer İşaretlerini Gizle'yi Göster](./show-hide-bookmarks/) | Aspose.Words for .NET kullanarak bir belgede belirli bir yer imini nasıl göstereceğinizi veya gizleyeceğinizi öğrenin. |
+| [Göster Yer İşaretli İçeriği Gizle](./show-hide-bookmarked-content/) | Aspose.Words for .NET kullanarak yer imi içeriğinin nasıl gösterileceğini veya gizleneceğini öğrenin. |
+| [Satır Yer İşaretlerini Çöz](./untangle-row-bookmarks/) | Diğer yer işaretlerini etkilemeden belirli satırları kaldırmak için iç içe satır yer işaretlerini nasıl çözeceğinizi öğrenin. |
+| [çözmek](./untangle/) | Aspose.Words for .NET kullanarak bitişik tablo satırlarındaki iç içe yer imlerini nasıl çözeceğinizi öğrenin. |
+| [Yer İşaretine Göre Satırı Sil](./delete-row-by-bookmark/) | Aspose.Words for .NET kullanarak bir belgedeki belirli bir yer imine dayalı bir tablo satırını nasıl sileceğinizi öğrenin. |

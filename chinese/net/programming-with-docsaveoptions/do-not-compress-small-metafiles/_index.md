@@ -1,32 +1,32 @@
 ---
-title: لا تقم بضغط ملفات التعريف الصغيرة
-linktitle: لا تقم بضغط ملفات التعريف الصغيرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET لتمكين ميزة Do Not Compress Small Metafiles عند حفظ المستندات.
+title: 不要压缩小图元文件
+linktitle: 不要压缩小图元文件
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在保存文档时启用“不压缩小图元文件”功能。
 type: docs
 weight: 10
 url: /zh/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
 
-يعد ضغط البيانات الوصفية في المستند ميزة شائعة عند العمل مع الملفات في تطبيق C #. ومع ذلك ، قد يكون من الضروري عدم ضغط البيانات الوصفية للملفات الصغيرة للحفاظ على جودتها. في هذا الدليل المفصل خطوة بخطوة ، سنوضح لك كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لتمكين ميزة "عدم ضغط ملفات التعريف الصغيرة" في خيارات حفظ المستند.
+在 C# 应用程序中处理文件时，压缩文档中的元数据是一项常见功能。但是，可能有必要不压缩小文件的元数据以保持其质量。在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 的 C# 源代码在文档保存选项中启用“不压缩小图元文件”功能。
 
-## فهم مكتبة Aspose.Words
+## 理解 Aspose.Words 库
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库很重要。 Aspose.Words 是一个强大的库，可以在包括.NET 在内的不同平台上创建、编辑、转换和保护 Word 文档。它提供了许多用于操作文档的功能，例如插入文本、更改格式、添加部分等等。
 
-## الخطوة 1: تعيين دليل المستندات
+## 第一步：设置文档目录
 
-الخطوة الأولى هي تحديد الدليل حيث تريد حفظ المستند. يجب عليك تحديد مسار الدليل الكامل. على سبيل المثال :
+第一步是定义要保存文档的目录。您必须指定完整的目录路径。例如 ：
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+请务必将“您的文档目录”替换为您的文档目录的实际路径。
 
-## الخطوة 2: أدخل المقاطع والنص
+## 第 2 步：插入部分和文本
 
-ثم يمكنك إدراج أقسام ونص في المستند الخاص بك. استخدم فئة DocumentBuilder المقدمة من Aspose.Words لبناء محتوى وثيقتك. اليك مثال بسيط:
+然后您可以将部分和文本插入到您的文档中。使用 Aspose.Words 提供的 DocumentBuilder 类来构建文档的内容。这是一个简单的例子：
 
 ```csharp
 Document doc = new Document();
@@ -34,59 +34,59 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند فارغ جديد ثم نستخدم DocumentBuilder لإضافة سطر من النص.
+在此示例中，我们创建一个新的空白文档，然后使用 DocumentBuilder 添加一行文本。
 
-## الخطوة 3: خيارات الإعداد
+## 第 3 步：设置选项
 
-'تسجيل
+'登记
 
-لنقم الآن بتهيئة خيارات الحفظ لمستندنا. استخدم فئة DocSaveOptions لتحديد إعدادات الحفظ. على سبيل المثال :
+现在让我们为文档配置保存选项。使用 DocSaveOptions 类指定保存设置。例如 ：
 
 ```csharp
 DocSaveOptions saveOptions = new DocSaveOptions();
 ```
 
-في هذا المثال ، نقوم بإنشاء كائن DocSaveOptions جديد لتعيين خيارات الحفظ.
+在此示例中，我们正在创建一个新的 DocSaveOptions 对象来设置保存选项。
 
-## الخطوة 4: تمكين ميزة "عدم ضغط ملفات التعريف الصغيرة"
+## 第 4 步：启用“不压缩小图元文件”功能
 
- لتمكين ميزة "عدم ضغط ملفات التعريف الصغيرة" ، يجب عليك تعيين ملف`Compliance` خاصية كائن DocSaveOptions إلى القيمة`PdfCompliance.PdfA1a`. إليك الطريقة:
+要启用“不压缩小图元文件”功能，您必须设置`Compliance`DocSaveOptions 对象的属性值`PdfCompliance.PdfA1a`.就是这样：
 
 ```csharp
 saveOptions.Compliance = PdfCompliance.PdfA1a;
 ```
 
-يضمن هذا التكوين عدم ضغط البيانات الأولية للملف الصغير عند حفظ المستند.
+此配置可确保在保存文档时不压缩小文件元数据。
 
-## الخطوة 5: احفظ المستند
+## 第 5 步：保存文档
 
- أخيرًا ، يمكنك حفظ المستند باستخدام ملف`Save` طريقة فئة المستند. حدد المسار الكامل للملف واسم الملف المطلوب. على سبيل المثال :
+最后，您可以使用`Save`文档类的方法。指定文件的完整路径和所需的文件名。例如 ：
 
 ```csharp
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 ```
 
-تأكد من استبدال "dataDir" بالمسار إلى دليل المستند.
+请务必将“dataDir”替换为您的文档目录的路径。
 
-### مثال على شفرة المصدر لـ DocSaveOptions مع ميزة "عدم ضغط ملفات التعريف الصغيرة" باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的 DocSaveOptions 示例源代码，不压缩小图元文件功能
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// أدخل قسمين مع بعض النص.
+//插入带有一些文本的两个部分。
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 
-// تكوين خيارات الحفظ مع ميزة "عدم ضغط ملفات التعريف الصغيرة"
+//使用“不压缩小图元文件”功能配置保存选项
 DocSaveOptions saveOptions = new DocSaveOptions();
 saveOptions.Compliance = PdfCompliance.PdfA1a;
 
-// احفظ المستند بالخيارات المحددة
+//使用指定选项保存文档
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 ```
 
-## خاتمة
+## 结论
 
-في هذا الدليل ، شرحنا كيفية استخدام مكتبة Aspose.Words لـ .NET لتمكين ميزة "Do Not Compress Small Metafiles" عند حفظ مستند. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. قد يكون الحفاظ على البيانات الوصفية للملفات الصغيرة غير المضغوطة أمرًا مهمًا للحفاظ على جودة المستند وسلامته.
+在本指南中，我们解释了如何使用 Aspose.Words .NET 库在保存文档时启用“不压缩小图元文件”功能。按照提供的步骤并使用提供的 C# 源代码，您可以轻松地将此功能应用到您的 C# 应用程序中。保留未压缩的小文件元数据对于维护文档质量和完整性非常重要。

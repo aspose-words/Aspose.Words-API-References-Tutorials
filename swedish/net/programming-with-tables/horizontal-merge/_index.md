@@ -1,35 +1,35 @@
 ---
-title: دمج أفقي
-linktitle: دمج أفقي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية دمج الخلايا أفقيًا في جدول Word باستخدام Aspose.Words for .NET.
+title: Horisontell sammanfogning
+linktitle: Horisontell sammanfogning
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du sammanfogar celler horisontellt i en Word-tabell med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-tables/horizontal-merge/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية دمج الخلايا أفقيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من دمج الخلايا أفقيًا في جداول Word برمجيًا.
+I den här handledningen kommer vi att lära oss hur man horisontellt sammanfogar celler i en tabell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna slå samman celler horisontellt i dina Word-tabeller programmatiskt.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Steg 1: Projektinställning
+1. Starta Visual Studio och skapa ett nytt C#-projekt.
+2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع الجدول والخلايا ، نحتاج إلى إنشاء مستند جديد وتهيئة منشئ المستندات. اتبع هذه الخطوات:
+## Steg 2: Skapa dokumentet och initialisera dokumentgeneratorn
+För att börja arbeta med tabellen och cellerna måste vi skapa ett nytt dokument och initiera dokumentgeneratorn. Följ dessa steg:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وتهيئة منشئ المستند
+// Skapa dokumentet och initiera dokumentgeneratorn
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog.
 
-## الخطوة 3: بناء الجدول مع الدمج الأفقي للخلايا
-بعد ذلك ، سنبني الجدول ونطبق دمج الخلايا الأفقي باستخدام الخصائص التي توفرها Aspose.Words لـ .NET. استخدم الكود التالي:
+## Steg 3: Bygg tabellen med horisontell sammanslagning av celler
+Därefter bygger vi tabellen och tillämpar horisontell cellsammanslagning med egenskaperna som tillhandahålls av Aspose.Words för .NET. Använd följande kod:
 
 ```csharp
 builder. InsertCell();
@@ -37,7 +37,7 @@ builder.CellFormat.HorizontalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
 builder. InsertCell();
 builder.CellFormat.HorizontalMerge = CellMerge.Previous;
-// تم دمج هذه الخلية مع الخلية السابقة ويجب أن تكون فارغة.
+// Den här cellen slås samman med den föregående och bör vara tom.
 builder. EndRow();
 
 builder. InsertCell();
@@ -49,10 +49,10 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- هنا نستخدم منشئ المستندات لبناء الجدول وتعيين خصائص الدمج الأفقي للخلية. نحن نستخدم ال`HorizontalMerge` ممتلكات`CellFormat` لتحديد نوع الدمج الأفقي المراد تطبيقه على كل خلية. استخدام`CellMerge.First` نقوم بدمج الخلية الأولى مع الأخرى التالية ، أثناء استخدام`CellMerge.Previous` نقوم بدمج الخلية الحالية مع الخلية السابقة.`CellMerge.None` يشير إلى أنه لا ينبغي دمج الخلية.
+ Här använder vi dokumentbyggaren för att bygga tabellen och ställa in cellens horisontella sammanfogningsegenskaper. Vi använder`HorizontalMerge` egendom av`CellFormat` objekt för att ange vilken typ av horisontell sammanslagning som ska tillämpas på varje cell. Använder sig av`CellMerge.First` vi slår samman den första cellen med nästa, medan vi använder`CellMerge.Previous` vi slår samman den nuvarande cellen med den föregående cellen.`CellMerge.None` indikerar att cellen inte ska slås samman.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع دمج الخلايا أفقيًا. استخدم الكود التالي:
+## Steg 4: Spara det ändrade dokumentet
+Slutligen måste vi spara det modifierade dokumentet med cellerna sammanslagna horisontellt. Använd följande kod:
 
 ```csharp
 doc.Save(data
@@ -60,12 +60,12 @@ doc.Save(data
 Dir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 
-### عينة من التعليمات البرمجية المصدر للدمج الأفقي باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Horizontal Merge med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -74,7 +74,7 @@ Dir + "WorkingWithTables.HorizontalMerge.docx");
 	builder.CellFormat.HorizontalMerge = CellMerge.First;
 	builder.Write("Text in merged cells.");
 	builder.InsertCell();
-	// تم دمج هذه الخلية مع الخلية السابقة ويجب أن تكون فارغة.
+	// Den här cellen slås samman med den föregående och bör vara tom.
 	builder.CellFormat.HorizontalMerge = CellMerge.Previous;
 	builder.EndRow();
 	builder.InsertCell();
@@ -87,5 +87,5 @@ Dir + "WorkingWithTables.HorizontalMerge.docx");
 	doc.Save(dataDir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية دمج الخلايا أفقيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تطبيق دمج الخلايا الأفقية في جداول Word برمجيًا. تتيح لك هذه الميزة إنشاء تخطيطات جدول أكثر تعقيدًا وتنظيم بياناتك بشكل أفضل.
+## Slutsats
+den här handledningen lärde vi oss hur man horisontellt sammanfogar celler i en tabell i ett Word-dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide och implementera den medföljande C#-koden kan du tillämpa horisontell cellsammanfogning i dina Word-tabeller programmatiskt. Den här funktionen låter dig skapa mer komplexa tabelllayouter och bättre organisera dina data.

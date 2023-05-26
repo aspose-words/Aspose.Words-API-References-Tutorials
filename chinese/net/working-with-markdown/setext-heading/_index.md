@@ -1,45 +1,45 @@
 ---
-title: عنوان Setext
-linktitle: عنوان Setext
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام عناوين Setext لتنسيق مستنداتك باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: 文本标题
+linktitle: 文本标题
+second_title: Aspose.Words for .NET API 参考
+description: 通过 Aspose.Words for .NET 分步指南了解如何使用 Setext 标题格式化您的文档。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/setext-heading/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة Setext Heading مع Aspose.Words for .NET. Setext Heading هي طريقة بديلة لتنسيق العناوين في مستندات Markdown.
+在本教程中，我们将带您了解如何使用 Aspose.Words for .NET 的 Setext Heading 功能。 Setext Heading 是在 Markdown 文档中格式化标题的另一种方法。
 
-## الخطوة 1: استخدام منشئ المستندات
+## 第 1 步：使用文档生成器
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+首先，我们将使用文档生成器将内容添加到我们的文档中。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: استخدام نمط عنوان Setext
+## 第 2 步：使用 Setext 标题样式
 
-سنستخدم نمط الفقرة الافتراضي "العنوان 1" لإنشاء عنوان من المستوى 1 في وثيقتنا.
+我们将使用默认的“标题 1”段落样式在我们的文档中创建一个 1 级标题。
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";
 builder.Writeln("This is an H1 tag");
 ```
 
-## الخطوة 3: إعادة ضبط الأنماط
+## 第 3 步：重置样式
 
-نقوم بإعادة تعيين أنماط الخطوط المطبقة مسبقًا لتجنب أي مجموعة غير مرغوب فيها من الأنماط بين الفقرات.
+我们重置了以前应用的字体样式，以避免段落之间出现任何不需要的样式组合。
 
 ```csharp
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
 
-## الخطوة 4: تخصيص مستويات عناوين Setext
+## 第 4 步：自定义 Setext 标题级别
 
-يمكننا تخصيص مستويات عناوين Setext عن طريق إضافة أنماط فقرة جديدة بناءً على أنماط العناوين الحالية. في هذا المثال ، نقوم بإنشاء نمط "SetextHeading1" استنادًا إلى نمط "العنوان 1" لتمثيل عنوان المستوى 1 بتنسيق Setext.
+我们可以通过在现有标题样式的基础上添加新的段落样式来自定义 Setext 标题级别。在此示例中，我们基于“标题 1”样式创建“SetextHeading1”样式，以表示 Setext 格式的 1 级标题。
 
 ```csharp
 Style setexHeading1 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading1");
@@ -48,26 +48,26 @@ builder.Document.Styles["SetextHeading1"].BaseStyleName = "Heading 1";
 builder.Writeln("Title Setext level 1");
 ```
 
-## الخطوة 5: حفظ المستند
+## 第 5 步：保存文档
 
-أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب.
+最后，我们可以将文档保存为所需的格式。
 
 ```csharp
 builder.Document.Save(dataDir + "Test.md");
 ```
 
-### مثال على شفرة المصدر لعناوين Setext مع Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的 Setext 标题示例源代码
 
 ```csharp
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	//使用文档生成器向文档添加内容。
 	DocumentBuilder builder = new DocumentBuilder();
 
 	builder.ParagraphFormat.StyleName = "Heading 1";
 	builder.Writeln("This is an H1 tag");
 
-	// إعادة تعيين الأنماط من الفقرة السابقة لعدم دمج الأنماط بين الفقرات.
+	//重置上一段的样式以不合并段落之间的样式。
 	builder.Font.Bold = false;
 	builder.Font.Italic = false;
 
@@ -79,7 +79,7 @@ builder.Document.Save(dataDir + "Test.md");
 	builder.ParagraphFormat.Style = builder.Document.Styles["Heading 3"];
 	builder.Writeln("This is an H3 tag");
 
-	// إعادة تعيين الأنماط من الفقرة السابقة لعدم دمج الأنماط بين الفقرات.
+	//重置上一段的样式以不合并段落之间的样式。
 	builder.Font.Bold = false;
 	builder.Font.Italic = false;
 
@@ -87,7 +87,7 @@ builder.Document.Save(dataDir + "Test.md");
 	builder.ParagraphFormat.Style = setexHeading2;
 	builder.Document.Styles["SetextHeading2"].BaseStyleName = "Heading 3";
 
-	// ستتم إعادة تعيين مستوى عنوان Setex إلى 2 إذا كانت الفقرة الأساسية بها مستوى عنوان أكبر من 2.
+	//如果基本段落的标题级别大于 2，Setex 标题级别将重置为 2。
 	builder.Writeln("Setext Heading level 2");
 	
 

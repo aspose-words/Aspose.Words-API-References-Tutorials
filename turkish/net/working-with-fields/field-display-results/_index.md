@@ -1,71 +1,71 @@
 ---
-title: نتائج العرض الميداني
-linktitle: نتائج العرض الميداني
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لعرض النتائج الميدانية في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+title: Alan Görüntüleme Sonuçları
+linktitle: Alan Görüntüleme Sonuçları
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile Word belgelerinizde alan sonuçlarını görüntülemek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/field-display-results/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إظهار نتائج الحقول" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aspose.Words for .NET'in "Alan Sonuçlarını Göster" özelliğini kullanan aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz. İstenen sonuçları elde etmek için her adımı dikkatlice uyguladığınızdan emin olun.
 
-## الخطوة 1: إعداد دليل المستند
+## 1. Adım: Belge Dizini Kurulumu
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-تتمثل الخطوة الأولى في تحميل المستند الذي تريد عرض نتائج الحقول فيه.
+İlk adım, alan sonuçlarını görüntülemek istediğiniz belgeyi yüklemektir.
 
 ```csharp
 Document document = new Document(dataDir + "Miscellaneous fields.docx");
 ```
 
-تأكد من استبدال "Miscellaneous Fields.docx" باسم ملفك الخاص.
+"Miscellaneous Fields.docx" dosyasını kendi dosyanızın adıyla değiştirdiğinizden emin olun.
 
-## الخطوة 3: تحديث الحقول
+## 3. Adım: Alanları güncelleyin
 
- نحن نستخدم ال`UpdateFields()` طريقة لتحديث كافة الحقول في المستند.
+ biz kullanıyoruz`UpdateFields()` belgedeki tüm alanları güncelleme yöntemi.
 
 ```csharp
 document. UpdateFields();
 ```
 
-هذه الخطوة مهمة لأنها تضمن عرض النتائج الميدانية بشكل صحيح.
+Bu adım önemlidir, çünkü saha sonuçlarının doğru bir şekilde görüntülenmesini sağlar.
 
-## الخطوة 4: عرض النتائج الميدانية
+## Adım 4: Alan Sonuçlarını Görüntüleme
 
- نحن نستخدم`foreach` حلقة للتكرار خلال جميع الحقول في المستند وعرض نتائجها.
+ biz bir`foreach` belgedeki tüm alanlar arasında geçiş yapmak ve bunların sonuçlarını görüntülemek için döngü.
 
 ```csharp
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
 
- في كل تكرار للحلقة ، نصل إلى ملف`DisplayResult` خاصية الحقل للحصول على النتيجة المعروضة.
+ Döngünün her yinelemesinde,`DisplayResult` Görüntülenen sonucu almak için alanın özelliği.
 
-### مثال رمز المصدر لعرض نتائج الحقول باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile Alan Sonuçlarını Görüntülemek için Kaynak Kodu Örneği
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+// Belgeyi yükleyin.
 Document document = new Document(dataDir + "Miscellaneous fields.docx");
 
-// تحديث الحقول.
+// Alanları güncelleyin.
 document. UpdateFields();
 
-// عرض النتائج الميدانية.
+// Saha sonuçlarının görüntülenmesi.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
 
-في هذا المثال ، حمّلنا مستندًا ، وحدّثنا جميع الحقول ، ثم انتقلنا عبر الحقول لعرض نتائجها. يمكنك تخصيص هذه الخطوة باستخدام المنطق الخاص بك لمعالجة النتائج الميدانية.
+Bu örnekte, bir belge yükledik, tüm alanları güncelledik ve ardından sonuçlarını görüntülemek için alanlar arasında geçiş yaptık. Saha sonuçlarını işlemek için kendi mantığınızı kullanarak bu adımı özelleştirebilirsiniz.
 
-هذا يختتم دليلنا لاستخدام ميزة "إظهار النتائج الميدانية" مع Aspose.Words for .NET.
+Bu, "Alan Sonuçlarını Göster" özelliğini Aspose.Words for .NET ile kullanma kılavuzumuzu sonlandırıyor.

@@ -1,35 +1,35 @@
 ---
-title: دمج أفقي
-linktitle: دمج أفقي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية دمج الخلايا أفقيًا في جدول Word باستخدام Aspose.Words for .NET.
+title: Fusión horizontal
+linktitle: Fusión horizontal
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a fusionar celdas horizontalmente en una tabla de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/horizontal-merge/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية دمج الخلايا أفقيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من دمج الخلايا أفقيًا في جداول Word برمجيًا.
+En este tutorial, aprenderemos cómo fusionar celdas horizontalmente en una tabla en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá combinar celdas horizontalmente en sus tablas de Word mediante programación.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Paso 1: Configuración del proyecto
+1. Inicie Visual Studio y cree un nuevo proyecto de C#.
+2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع الجدول والخلايا ، نحتاج إلى إنشاء مستند جديد وتهيئة منشئ المستندات. اتبع هذه الخطوات:
+## Paso 2: Creación del documento e inicialización del generador de documentos
+Para comenzar a trabajar con la tabla y las celdas, debemos crear un nuevo documento e inicializar el generador de documentos. Sigue estos pasos:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وتهيئة منشئ المستند
+// Crear el documento e inicializar el generador de documentos
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
-## الخطوة 3: بناء الجدول مع الدمج الأفقي للخلايا
-بعد ذلك ، سنبني الجدول ونطبق دمج الخلايا الأفقي باستخدام الخصائص التي توفرها Aspose.Words لـ .NET. استخدم الكود التالي:
+## Paso 3: Construcción de la tabla con combinación horizontal de celdas
+continuación, crearemos la tabla y aplicaremos la combinación de celdas horizontal utilizando las propiedades proporcionadas por Aspose.Words para .NET. Usa el siguiente código:
 
 ```csharp
 builder. InsertCell();
@@ -37,7 +37,7 @@ builder.CellFormat.HorizontalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
 builder. InsertCell();
 builder.CellFormat.HorizontalMerge = CellMerge.Previous;
-// تم دمج هذه الخلية مع الخلية السابقة ويجب أن تكون فارغة.
+// Esta celda se fusiona con la anterior y debe estar vacía.
 builder. EndRow();
 
 builder. InsertCell();
@@ -49,10 +49,10 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- هنا نستخدم منشئ المستندات لبناء الجدول وتعيين خصائص الدمج الأفقي للخلية. نحن نستخدم ال`HorizontalMerge` ممتلكات`CellFormat` لتحديد نوع الدمج الأفقي المراد تطبيقه على كل خلية. استخدام`CellMerge.First` نقوم بدمج الخلية الأولى مع الأخرى التالية ، أثناء استخدام`CellMerge.Previous` نقوم بدمج الخلية الحالية مع الخلية السابقة.`CellMerge.None` يشير إلى أنه لا ينبغي دمج الخلية.
+ Aquí usamos el generador de documentos para construir la tabla y establecer las propiedades de combinación horizontal de celdas. usamos el`HorizontalMerge` propiedad de la`CellFormat` objeto para especificar el tipo de combinación horizontal que se aplicará a cada celda. Usando`CellMerge.First` fusionamos la primera celda con la siguiente, mientras usamos`CellMerge.Previous` fusionamos la celda actual con la celda anterior.`CellMerge.None` indica que la celda no debe fusionarse.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع دمج الخلايا أفقيًا. استخدم الكود التالي:
+## Paso 4: Guardar el documento modificado
+Finalmente, debemos guardar el documento modificado con las celdas fusionadas horizontalmente. Usa el siguiente código:
 
 ```csharp
 doc.Save(data
@@ -60,12 +60,12 @@ doc.Save(data
 Dir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Asegúrese de especificar la ruta y el nombre de archivo correctos para el documento de salida.
 
-### عينة من التعليمات البرمجية المصدر للدمج الأفقي باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para combinación horizontal usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -74,7 +74,7 @@ Dir + "WorkingWithTables.HorizontalMerge.docx");
 	builder.CellFormat.HorizontalMerge = CellMerge.First;
 	builder.Write("Text in merged cells.");
 	builder.InsertCell();
-	// تم دمج هذه الخلية مع الخلية السابقة ويجب أن تكون فارغة.
+	// Esta celda se fusiona con la anterior y debe estar vacía.
 	builder.CellFormat.HorizontalMerge = CellMerge.Previous;
 	builder.EndRow();
 	builder.InsertCell();
@@ -87,5 +87,5 @@ Dir + "WorkingWithTables.HorizontalMerge.docx");
 	doc.Save(dataDir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية دمج الخلايا أفقيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تطبيق دمج الخلايا الأفقية في جداول Word برمجيًا. تتيح لك هذه الميزة إنشاء تخطيطات جدول أكثر تعقيدًا وتنظيم بياناتك بشكل أفضل.
+## Conclusión
+En este tutorial, aprendimos cómo fusionar celdas horizontalmente en una tabla en un documento de Word usando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# proporcionado, puede aplicar la combinación de celdas horizontales en sus tablas de Word mediante programación. Esta característica le permite crear diseños de tablas más complejos y organizar mejor sus datos.

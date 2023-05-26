@@ -1,30 +1,30 @@
 ---
-title: البرمجة مع الإشارات المرجعية
-linktitle: البرمجة مع الإشارات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إشارات مرجعية للوصول ، وتحديث بيانات الإشارة المرجعية ، وأعمدة جدول الإشارات المرجعية ، ونسخ نص تم وضع إشارة مرجعية عليه ، وإلحاق نص تم وضع إشارة مرجعية عليه ، وإنشاء إشارة مرجعية ، وإظهار إخفاء الإشارات المرجعية
+title: Programación con marcadores
+linktitle: Programación con marcadores
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales contienen marcadores de acceso, actualizar datos de marcadores, columnas de tablas de marcadores, copiar texto marcado, agregar texto marcado, crear marcador, mostrar ocultar marcador
 type: docs
 weight: 1380
 url: /es/net/programming-with-bookmarks/
 ---
 
-ترشدك برامج Aspose.Words for .NET التعليمية إلى العديد من الميزات وتقنيات البرمجة للعمل مع الإشارات المرجعية في مستندات Word الخاصة بك. ستتعلم في هذه البرامج التعليمية كيفية إنشاء الإشارات المرجعية وإعادة تسميتها وحذفها والتنقل بينها. ستتعلم أيضًا كيفية استخراج محتوى الإشارات المرجعية واستبداله ، وكذلك كيفية إضافة إشارات مرجعية ديناميكية واستخدامها لإنشاء تقارير مخصصة.
+Los tutoriales de Aspose.Words para .NET lo guían a través de varias funciones y técnicas de programación para trabajar con marcadores en sus documentos de Word. En estos tutoriales, aprenderá a crear, cambiar el nombre, eliminar y navegar entre marcadores. También aprenderá a extraer y reemplazar contenido de marcadores, así como a agregar marcadores dinámicos y usarlos para generar informes personalizados.
 
-تزودك البرامج التعليمية بأمثلة تفصيلية للتعليمات البرمجية وشروحات تفصيلية لمساعدتك على فهم المفاهيم وتنفيذها. سواء كنت جديدًا أو خبيرًا في برمجة .NET ، ستساعدك هذه البرامج التعليمية على تحقيق أقصى استفادة من ميزات الإشارات المرجعية في Aspose.Words.
+Los tutoriales le brindan ejemplos de código detallados y explicaciones paso a paso para ayudarlo a comprender e implementar los conceptos. Ya sea que sea nuevo o tenga experiencia en la programación de .NET, estos tutoriales lo ayudarán a aprovechar al máximo las funciones de marcadores en Aspose.Words.
 
-باتباع هذه البرامج التعليمية ، ستتمكن من معالجة الإشارات المرجعية بشكل فعال في مستندات Word الخاصة بك ، وبالتالي أتمتة المهام المختلفة مثل إنشاء التقارير وإنشاء جدول المحتويات الديناميكي وغير ذلك الكثير. استكشف Aspose.Words دروس تعليم مرجعية لـ .NET وحسّن إنتاجيتك في العمل مع مستندات Word.
+Al seguir estos tutoriales, podrá manipular de manera efectiva los marcadores en sus documentos de Word, automatizando así varias tareas como la generación de informes, la creación dinámica de tablas de contenido y mucho más. Explore los tutoriales de marcadores de Aspose.Words para .NET y mejore su productividad al trabajar con documentos de Word.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [الوصول إلى الإشارات المرجعية](./access-bookmarks/) | تعرف على كيفية الوصول إلى الإشارات المرجعية في مستند Word باستخدام Aspose.Words for .NET. |
-| [تحديث البيانات المرجعية](./update-bookmark-data/) | دليل خطوة بخطوة لشرح شفرة المصدر C # لميزة تحديث بيانات الإشارة المرجعية Aspose.Words لـ .NET. |
-| [أعمدة الجدول المرجعية](./bookmark-table-columns/) | تعرف على كيفية وضع إشارة مرجعية على عمود جدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [نسخ النص الذي تم وضع إشارة مرجعية عليه](./copy-bookmarked-text/) | تعرف على كيفية نسخ نص إشارة مرجعية من مستند مصدر إلى مستند آخر باستخدام Aspose.Words for .NET. |
-| [إلحاق نص تم وضع إشارة مرجعية عليه](./append-bookmarked-text/) | تعرف على كيفية إضافة نص من إشارة مرجعية في مستند Word باستخدام Aspose.Words for .NET. |
-| [إنشاء إشارة مرجعية](./create-bookmark/) | تعرف على كيفية إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF باستخدام Aspose.Words for .NET. |
-| [إظهار إخفاء الإشارات المرجعية](./show-hide-bookmarks/) | تعرف على كيفية إظهار أو إخفاء إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET. |
-| [إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه](./show-hide-bookmarked-content/) | تعرف على كيفية إظهار أو إخفاء محتوى الإشارات المرجعية باستخدام Aspose.Words for .NET. |
-| [فك الإشارات المرجعية في الصف](./untangle-row-bookmarks/) | تعرف على كيفية فك تشابك الإشارات المرجعية للصفوف المتداخلة لإزالة صفوف معينة دون التأثير على الإشارات المرجعية الأخرى. |
-| [فك](./untangle/) | تعرف على كيفية فك تشابك الإشارات المرجعية المتداخلة في صفوف الجدول المجاورة باستخدام Aspose.Words for .NET. |
-| [حذف الصف حسب الإشارة المرجعية](./delete-row-by-bookmark/) | تعرف على كيفية حذف صف جدول بناءً على إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET. |
+| [Acceder a marcadores](./access-bookmarks/) | Aprenda a acceder a los marcadores en un documento de Word usando Aspose.Words para .NET. |
+| [Actualizar datos de marcadores](./update-bookmark-data/) | Guía paso a paso para explicar el código fuente C# de la función de actualización de datos de marcadores de Aspose.Words para .NET. |
+| [Columnas de la tabla de marcadores](./bookmark-table-columns/) | Aprenda a marcar una columna de tabla en un documento de Word usando Aspose.Words para .NET. |
+| [Copiar texto marcado](./copy-bookmarked-text/) | Aprenda a copiar texto de marcador de un documento de origen a otro documento utilizando Aspose.Words para .NET. |
+| [Agregar texto marcado](./append-bookmarked-text/) | Aprenda a agregar texto desde un marcador en un documento de Word usando Aspose.Words para .NET. |
+| [Crear marcador](./create-bookmark/) | Aprenda a crear marcadores en un documento y especifique niveles de vista previa de marcadores en un PDF usando Aspose.Words para .NET. |
+| [Mostrar Ocultar Marcadores](./show-hide-bookmarks/) | Aprenda a mostrar u ocultar un marcador específico en un documento usando Aspose.Words para .NET. |
+| [Mostrar Ocultar contenido marcado](./show-hide-bookmarked-content/) | Aprenda a mostrar u ocultar contenido de marcadores usando Aspose.Words para .NET. |
+| [Desenredar marcadores de fila](./untangle-row-bookmarks/) | Aprenda a desenredar marcadores de fila anidados para eliminar filas específicas sin afectar a otros marcadores. |
+| [Desenredar](./untangle/) | Aprenda a desenredar marcadores anidados en filas de tablas adyacentes usando Aspose.Words para .NET. |
+| [Eliminar fila por marcador](./delete-row-by-bookmark/) | Aprenda a eliminar una fila de una tabla en función de un marcador específico en un documento mediante Aspose.Words para .NET. |

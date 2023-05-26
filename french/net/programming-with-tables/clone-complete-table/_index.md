@@ -1,78 +1,78 @@
 ---
-title: استنساخ الجدول الكامل
-linktitle: استنساخ الجدول الكامل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استنساخ جدول كامل في مستند Word باستخدام Aspose.Words for .NET.
+title: Cloner la table complète
+linktitle: Cloner la table complète
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à cloner un tableau entier dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/clone-complete-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words لـ .NET لاستنساخ جدول كامل في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من استنساخ الجداول في مستندات Word برمجيًا.
+Dans ce didacticiel, nous apprendrons à utiliser Aspose.Words pour .NET pour cloner un tableau entier dans un document Word. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous serez en mesure de cloner des tableaux dans vos documents Word par programmation.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Étape 1 : configuration du projet
+1. Lancez Visual Studio et créez un nouveau projet C#.
+2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
-## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+## Etape 2 : Chargement du document et accès au tableau
+Pour commencer à travailler avec le tableau, nous devons charger le document qui le contient et y accéder. Suivez ces étapes:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Charger le document
 Document doc = new Document(dataDir + "Tables.docx");
 
-// الوصول إلى المصفوفة
+// Accéder au tableau
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Assurez-vous de remplacer "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin d'accès réel à votre répertoire de documents.
 
-## الخطوة 3: استنساخ الصفيف الكامل
-بعد ذلك ، سنقوم باستنساخ الجدول بأكمله وإدخاله في المستند بعد المستند الأصلي. استخدم الكود التالي:
+## Étape 3 : Clonage complet de la baie
+Ensuite, nous allons cloner le tableau entier et l'insérer dans le document après l'original. Utilisez le code suivant :
 
 ```csharp
-// استنساخ المصفوفة
+// Cloner le tableau
 Table tableClone = (Table)table.Clone(true);
 
-// أدخل الجدول المستنسخ في المستند بعد المستند الأصلي
+// Insérez le tableau cloné dans le document après l'original
 table.ParentNode.InsertAfter(tableClone, table);
 
-// أدخل فقرة فارغة بين الجدولين
-// وإلا سيتم دمجها في واحدة عند الحفظ (هذا بسبب التحقق من صحة المستند)
+// Insérer un paragraphe vide entre les deux tableaux
+// Sinon, ils seront combinés en un seul lors de l'enregistrement (cela est dû à la validation du document)
 table.ParentNode.InsertAfter(new Paragraph(doc), table);
 ```
 
- نحن هنا نستخدم ملف`Clone` طريقة لإنشاء نسخة كاملة من المصفوفة. ثم نستخدم`InsertAfter` لإدراج الجدول المستنسخ في المستند ، بعد الجدول الأصلي. نضيف أيضًا فقرة فارغة بين الجدولين لمنع دمجهما عند الحفظ.
+ Ici, nous utilisons le`Clone` méthode pour créer une copie complète du tableau. Ensuite on utilise`InsertAfter` pour insérer le tableau cloné dans le document, après le tableau d'origine. Nous ajoutons également un paragraphe vide entre les deux tableaux pour éviter qu'ils ne soient fusionnés lors de l'enregistrement.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل بالجدول المستنسخ. استخدم الكود التالي:
+## Étape 4 : Enregistrer le document modifié
+Enfin, nous devons enregistrer le document modifié avec la table clonée. Utilisez le code suivant :
 
 ```csharp
-// احفظ المستند المعدل
+// Enregistrer le document modifié
 doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour le document de sortie.
   
-### نموذج التعليمات البرمجية المصدر لـ Clone Complete Table باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Clone Complete Table en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// انسخ الجدول وأدخله في المستند بعد المستند الأصلي.
+	// Clonez le tableau et insérez-le dans le document après l'original.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// أدخل فقرة فارغة بين الجدولين ،
-	//وإلا سيتم دمجها في واحدة عند حفظ هذا له علاقة بالتحقق من صحة المستند.
+	// Insérer un paragraphe vide entre les deux tableaux,
+	//ou bien ils seront combinés en un seul lors de l'enregistrement, cela a à voir avec la validation du document.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية استنساخ جدول كامل في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك استنساخ الجداول في مستندات Word برمجيًا. تتيح لك هذه الميزة إجراء معالجات متقدمة على المصفوفات لتناسب احتياجاتك الخاصة.
+## Conclusion
+Dans ce didacticiel, nous avons appris à cloner un tableau entier dans un document Word à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez cloner des tableaux dans vos documents Word par programmation. Cette fonctionnalité vous permet d'effectuer des manipulations avancées sur les baies en fonction de vos besoins spécifiques.

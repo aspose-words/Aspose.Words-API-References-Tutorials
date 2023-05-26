@@ -1,35 +1,35 @@
 ---
-title: تعيين إعداد الصفحة وتنسيق القسم
-linktitle: تعيين إعداد الصفحة وتنسيق القسم
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد تخطيط المستند وتنسيق القسم باستخدام Aspose.Words for .NET.
+title: Establecer configuración de página y formato de sección
+linktitle: Establecer configuración de página y formato de sección
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para configurar el formato de la sección y el diseño de un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-document-options-and-settings/set-page-setup-and-section-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإعداد تنسيق التخطيط والقسم باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تعيين اتجاه الصفحة والهوامش وحجم الورق.
+En este tutorial, lo guiaremos a través del código fuente de C# para configurar el diseño y el formato de sección con Aspose.Words para .NET. Esta función le permite configurar la orientación de la página, los márgenes y el tamaño del papel.
 
-## الخطوة 1: إعداد المشروع
+## Paso 1: Configuración del proyecto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
 
-## الخطوة 2: إنشاء المستند
+## Paso 2: Crear el documento
 
-في هذه الخطوة ، سننشئ مستندًا جديدًا. استخدم الكود التالي لإنشاء المستند وتهيئة المنشئ:
+En este paso, crearemos un nuevo documento. Use el siguiente código para crear el documento e inicializar el constructor:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+ Reemplazar`"YOUR DOCUMENTS DIRECTORY"` con la ruta real del directorio donde desea guardar el documento.
 
-## الخطوة 3: إعداد التخطيط وحفظ المستند
+## Paso 3: configurar el diseño y guardar el documento
 
-لنقم الآن بتهيئة تخطيط المستند. استخدم الكود التالي لتعيين الاتجاه والهوامش وحجم الورق:
+Ahora vamos a configurar el diseño del documento. Utilice el siguiente código para establecer la orientación, los márgenes y el tamaño del papel:
 
 ```csharp
 builder.PageSetup.Orientation = Orientation.Landscape;
@@ -39,13 +39,13 @@ builder.PageSetup.PaperSize = PaperSize.Paper10x14;
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSectionFormatting.docx");
 ```
 
-سيقوم هذا الرمز بتعيين اتجاه الصفحة إلى أفقي ، والهامش الأيسر على 50 ، وحجم الورق إلى 10x14.
+Este código establecerá la orientación de la página en horizontal, el margen izquierdo en 50 y el tamaño del papel en 10x14.
 
-### مثال على الكود المصدري لتعيين إعداد الصفحة وتنسيق القسم باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para establecer la configuración de página y el formato de sección usando Aspose.Words para .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -58,6 +58,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSection
   
 ```
 
-تأكد من تحديد المسار الصحيح للدليل حيث تريد حفظ المستند بتنسيق`dataDir` عامل.
+Asegúrese de especificar la ruta correcta al directorio donde desea guardar el documento en el`dataDir` variable.
 
-لقد تعلمت الآن كيفية تكوين التخطيط وتنسيق القسم من المستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تخصيص تخطيط وتنسيق المستندات الخاصة بك.
+Ahora ha aprendido a configurar el diseño y el formato de sección de un documento utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede personalizar fácilmente el diseño y el formato de sus propios documentos.

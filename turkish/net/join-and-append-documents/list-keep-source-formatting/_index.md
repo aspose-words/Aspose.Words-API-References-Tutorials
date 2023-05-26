@@ -1,77 +1,77 @@
 ---
-title: قائمة الاحتفاظ بتنسيق المصدر
-linktitle: قائمة الاحتفاظ بتنسيق المصدر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحفاظ على تنسيق القائمة أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Liste Saklama Kaynağı Biçimlendirmesi
+linktitle: Liste Saklama Kaynağı Biçimlendirmesi
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerini birleştirirken ve eklerken liste biçimlendirmesini nasıl koruyacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/list-keep-source-formatting/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة قائمة الاحتفاظ بتنسيق المصدر في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها مع الاحتفاظ بتنسيق المصدر للقوائم.
+Bu eğitim, Aspose.Words for .NET'in List Keep Source Formatting özelliğini kullanma sürecinde size rehberlik edecektir. Bu özellik, listelerin kaynak biçimlendirmesini korurken Word belgelerini birleştirmenize ve eklemenize olanak tanır.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words for .NET kurulu. Aspose web sitesinden indirebilir veya NuGet aracılığıyla kurabilirsiniz.
+2. Visual Studio veya başka herhangi bir C# geliştirme ortamı.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## 1. Adım: Belge Dizinlerini Başlatın
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir` belgelerinizin bulunduğu yola değişken.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## 2. Adım: Kaynak ve Hedef Belgeleri Yükleyin
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Ardından, Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. içindeki dosya adlarını güncelleyin.`Document` belge adlarınıza göre yapıcı.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## الخطوة 3: اضبط المستند المصدر على التدفق المستمر
+## 3. Adım: Kaynak Belgeyi Sürekli Akışa Ayarlayın
 
- للتأكد من أن المحتوى من المستند المصدر يتدفق باستمرار عند إلحاقه بالمستند الوجهة ، تحتاج إلى تعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.Continuous`.
+ Kaynak belgedeki içeriğin hedef belgeye eklendiğinde sürekli olarak akmasını sağlamak için,`SectionStart` kaynak belgedeki ilk bölümün özelliği`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بمستند الوجهة
+## Adım 4: Kaynak Belgeyi Hedef Belgeye Ekleyin
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting`تضمن المعلمة الحفاظ على تنسيق المصدر ، بما في ذلك تنسيق القوائم ، أثناء عملية الإلحاق.
+ Artık, kaynak belgeyi hedef belgeye aşağıdakileri kullanarak ekleyebilirsiniz:`AppendDocument` yöntemi`Document` sınıf. bu`ImportFormatMode.KeepSourceFormatting`parametresi, ekleme işlemi sırasında listelerin biçimlendirmesi de dahil olmak üzere kaynak biçimlendirmesinin korunmasını sağlar.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند النهائي
+## 5. Adım: Nihai Belgeyi Kaydedin
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة قائمة الاحتفاظ بتنسيق المصدر باستخدام ملحق`Save` طريقة`Document` فصل.
+ Son olarak, birleştirilmiş belgeyi Liste Saklama Kaynağı Biçimlendirme özelliği etkinleştirilmiş olarak kaydedin.`Save` yöntemi`Document` sınıf.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### مثال على شفرة المصدر لـ List Keep Source Formatting باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan List Keep Source Formatting için örnek kaynak kodu 
 
-إليك شفرة المصدر الكاملة لميزة "الاحتفاظ بتنسيق المصدر" في قائمة C # باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanan C# dilinde List Keep Source Formatting özelliğinin tam kaynak kodu burada:
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// قم بإلحاق محتوى المستند بحيث يتدفق باستمرار.
+	// Sürekli akması için belgenin içeriğini ekleyin.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة قائمة الاحتفاظ بتنسيق المصدر باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الاحتفاظ بتنسيق قائمة المستند المصدر.
+Bu kadar! Aspose.Words for .NET'i kullanarak List Keep Source Formatting özelliğini başarıyla uyguladınız. Nihai belge, kaynak belgenin liste biçimlendirmesi korunarak birleştirilmiş içeriği içerecektir.

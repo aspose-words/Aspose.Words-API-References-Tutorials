@@ -1,97 +1,97 @@
 ---
-title: Docx إلى Rtf
-linktitle: Docx إلى Rtf
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات Word من تنسيق Docx إلى تنسيق RTF باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Docx in formato Rtf
+linktitle: Docx in formato Rtf
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come convertire documenti Word da Docx in formato RTF utilizzando Aspose.Words per .NET. Tutorial passo passo con codice sorgente di esempio.
 type: docs
 weight: 10
 url: /it/net/basic-conversions/docx-to-rtf/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى RTF. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In questo tutorial passo-passo, ti guideremo su come utilizzare Aspose.Words per .NET per convertire un documento Word in formato Docx in RTF. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria dal sito ufficiale.
 
-## الخطوة 1: قراءة المستند من الدفق
+## Passaggio 1: lettura del documento da Stream
 
-أولاً ، افتح دفقًا لقراءة مستند Docx:
+Innanzitutto, apri uno stream per leggere il documento Docx:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Stream stream = File.OpenRead(MyDir + "Document.docx");
 ```
 
-## الخطوة الثانية: تحميل المستند
+## Passaggio 2: caricamento del documento
 
-بعد ذلك ، قم بتحميل المستند من الدفق:
+Successivamente, carica il documento dallo stream:
 
 ```csharp
 Document doc = new Document(stream);
 ```
 
-## الخطوة 3: إغلاق الدفق
+## Passaggio 3: chiusura dello stream
 
-نظرًا لأنه تم تحميل المستند في الذاكرة ، يمكنك إغلاق الدفق:
+Poiché il documento è caricato in memoria, puoi chiudere lo stream:
 
 ```csharp
 stream.Close();
 ```
 
-## الخطوة 4: إجراء العمليات على المستند
+## Passaggio 4: eseguire operazioni sul documento
 
-في هذه المرحلة ، يمكنك إجراء أي عمليات مطلوبة على المستند.
+A questo punto è possibile eseguire qualsiasi operazione desiderata sul documento.
 
-## الخطوة 5: حفظ المستند بتنسيق RTF
+## Passaggio 5: salvare il documento in formato RTF
 
-لحفظ المستند بتنسيق RTF ، احفظه في تدفق ذاكرة:
+Per salvare il documento in formato RTF, salvalo in un flusso di memoria:
 
 ```csharp
 MemoryStream dstStream = new MemoryStream();
 doc.Save(dstStream, SaveFormat.Rtf);
 ```
 
-## الخطوة 6: إرجاع الدفق
+## Passaggio 6: riavvolgimento del flusso
 
-قبل كتابة تدفق الذاكرة إلى ملف ، قم بإرجاع موضعه إلى الصفر:
+Prima di scrivere il flusso di memoria su un file, riavvolgi la sua posizione a zero:
 
 ```csharp
 dstStream.Position = 0;
 ```
 
-## الخطوة 7: كتابة الدفق إلى ملف
+## Passaggio 7: scrittura del flusso su file
 
-أخيرًا ، اكتب تدفق الذاكرة إلى ملف RTF:
+Infine, scrivi il flusso di memoria in un file RTF:
 
 ```csharp
 File.WriteAllBytes(dataDir + "BaseConversions.DocxToRtf.rtf", dstStream.ToArray());
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند Word بتنسيق Docx إلى RTF باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai convertito con successo un documento Word in formato Docx in RTF utilizzando Aspose.Words per .NET.
 
-### مثال على شفرة المصدر لـ Docx To Rtf باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Docx To Rtf utilizzando Aspose.Words per .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// الوصول للقراءة فقط كافٍ لـ Aspose.Words لتحميل مستند.
+	// L'accesso in sola lettura è sufficiente per Aspose.Words per caricare un documento.
 	Stream stream = File.OpenRead(MyDir + "Document.docx");
 
 	Document doc = new Document(stream);
-	//يمكنك إغلاق الدفق الآن ، لم تعد هناك حاجة إليه لأن المستند موجود في الذاكرة.
+	//Puoi chiudere lo stream ora, non è più necessario perché il documento è in memoria.
 	stream.Close();
 
-	// ... افعل شيئًا ما مع المستند.
+	// ... fare qualcosa con il documento.
 
-	// قم بتحويل المستند إلى تنسيق مختلف وحفظه في الدفق.
+	// Converti il documento in un formato diverso e salvalo in streaming.
 	MemoryStream dstStream = new MemoryStream();
 	doc.Save(dstStream, SaveFormat.Rtf);
 
-	// قم بإرجاع موضع الدفق إلى الصفر بحيث يكون جاهزًا للقارئ التالي.
+	// Riavvolgi la posizione dello stream su zero in modo che sia pronta per il prossimo lettore.
 	dstStream.Position = 0;
 
 	File.WriteAllBytes(dataDir + "BaseConversions.DocxToRtf.rtf", dstStream.ToArray());
 	
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.

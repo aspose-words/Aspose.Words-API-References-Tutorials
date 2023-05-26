@@ -1,29 +1,29 @@
 ---
-title: الانتقال إلى القسم
-linktitle: الانتقال إلى القسم
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لاستخدام Move To Section في Aspose.Words for .NET يعالج الأقسام والفقرات في مستندات Word.
+title: In Abschnitt verschieben
+linktitle: In Abschnitt verschieben
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zur Verwendung von „In Abschnitt verschieben“ in Aspose.Words für .NET zum Bearbeiten von Abschnitten und Absätzen in Word-Dokumenten.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/move-to-section/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة Move To Section في Aspose.Words for .NET خطوة بخطوة باستخدام كود المصدر C # المقدم. تتيح لك هذه الميزة التنقل والتعامل مع الأقسام المختلفة داخل مستند Word. اتبع الخطوات أدناه لدمج هذه الوظيفة في تطبيقك.
+In diesem Beispiel führen wir Sie Schritt für Schritt durch die Verwendung der Funktion „In Abschnitt verschieben“ von Aspose.Words für .NET mithilfe des bereitgestellten C#-Quellcodes. Mit dieser Funktion können Sie durch verschiedene Abschnitte in einem Word-Dokument navigieren und diese bearbeiten. Führen Sie die folgenden Schritte aus, um diese Funktionalität in Ihre Anwendung zu integrieren.
 
-## الخطوة 1: قم بإنشاء مستند جديد وإضافة قسم
+## Schritt 1: Erstellen Sie ein neues Dokument und fügen Sie einen Abschnitt hinzu
 
-أولاً ، نحتاج إلى إنشاء مستند جديد وإضافة قسم إليه. استخدم الكود التالي لإنجاز هذه الخطوة:
+Zuerst müssen wir ein neues Dokument erstellen und ihm einen Abschnitt hinzufügen. Verwenden Sie den folgenden Code, um diesen Schritt auszuführen:
 
 ```csharp
 Document doc = new Document();
 doc.AppendChild(new Section(doc));
 ```
 
-ينشئ هذا الرمز مستندًا فارغًا جديدًا ويضيف قسمًا إلى هذا المستند.
+Dieser Code erstellt ein neues leeres Dokument und fügt diesem Dokument einen Abschnitt hinzu.
 
-## الخطوة 2: انقل DocumentBuilder إلى القسم الثاني وأضف نصًا
+## Schritt 2: Verschieben Sie den DocumentBuilder in den zweiten Abschnitt und fügen Sie Text hinzu
 
-بعد ذلك ، نحتاج إلى نقل DocumentBuilder إلى القسم الثاني من المستند وإضافة بعض النص هناك. استخدم الكود التالي لإجراء هذه الخطوة:
+Als nächstes müssen wir den DocumentBuilder in den zweiten Abschnitt des Dokuments verschieben und dort Text hinzufügen. Verwenden Sie den folgenden Code, um diesen Schritt auszuführen:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -31,11 +31,11 @@ builder. MoveToSection(1);
 builder.Writeln("Text added to the 2nd section.");
 ```
 
-ينشئ هذا الرمز DocumentBuilder من المستند الموجود ، ثم ينقل المؤشر من DocumentBuilder إلى القسم الثاني من المستند. أخيرًا ، يضيف النص المحدد إلى هذا القسم.
+Dieser Code erstellt einen DocumentBuilder aus dem vorhandenen Dokument und bewegt dann den Cursor vom DocumentBuilder zum zweiten Abschnitt des Dokuments. Schließlich wird der angegebene Text zu diesem Abschnitt hinzugefügt.
 
-## الخطوة 3: تحميل مستند بالفقرات الموجودة
+## Schritt 3: Laden Sie ein Dokument mit vorhandenen Absätzen
 
-إذا كنت تريد العمل مع مستند موجود يحتوي على فقرات ، فيمكنك تحميل هذا المستند باستخدام الكود التالي:
+Wenn Sie mit einem vorhandenen Dokument arbeiten möchten, das Absätze enthält, können Sie dieses Dokument mit dem folgenden Code laden:
 
 ```csharp
 doc = new Document(MyDir + "Paragraphs.docx");
@@ -43,21 +43,21 @@ ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 Assert.AreEqual(22, paragraphs.Count);
 ```
 
-يقوم هذا الرمز بتحميل المستند المحدد (استبدل "MyDir +" Paragraphs.docx“”بالمسار الفعلي إلى المستند الخاص بك) والوصول إلى مجموعة الفقرات من القسم الأول من المستند. الخط`Assert.AreEqual(22, paragraphs.Count);` يتحقق من أن المستند يحتوي على 22 فقرة.
+Dieser Code lädt das angegebene Dokument (ersetzen Sie „MyDir + „Paragraphs.docx“)„“mit dem tatsächlichen Pfad zu Ihrem Dokument) und greift auf die Sammlung von Absätzen aus dem ersten Abschnitt des Dokuments zu. Die Linie`Assert.AreEqual(22, paragraphs.Count);` prüft, ob das Dokument 22 Absätze enthält.
 
-## الخطوة 4: إنشاء DocumentBuilder لمستند
+## Schritt 4: Erstellen Sie einen DocumentBuilder für ein Dokument
 
-يمكنك إنشاء مؤشر DocumentBuilder على فقرة معينة باستخدام المؤشرات الموضعية.
+Mithilfe von Positionsindizes können Sie den DocumentBuilder-Cursor zu einem bestimmten Absatz erstellen.
 
 ```csharp
 builder = new DocumentBuilder(doc);
 Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
-## الخطوة 5: حرك المؤشر إلى فقرة معينة
+## Schritt 5: Bewegen Sie den Cursor auf einen bestimmten Absatz
 
 
-يمكنك تحريك مؤشر DocumentBuilder إلى فقرة معينة باستخدام المؤشرات الموضعية. هيريس كيفية القيام بذلك:
+Mithilfe von Positionsindizes können Sie den DocumentBuilder-Cursor zu einem bestimmten Absatz bewegen. So geht's:
 
 ```csharp
 builder. MoveToParagraph(2, 10);
@@ -66,9 +66,9 @@ builder.Writeln("This is a new third paragraph.");
 Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
-يقوم هذا الرمز بنقل مؤشر DocumentBuilder إلى الفقرة الثالثة من القسم الثاني (الفقرة في الفهرس 2) وإلى الموضع 10. ثم يضيف فقرة جديدة مع بعض النص ويتحقق من وضع المؤشر بشكل جيد على هذه الفقرة الجديدة.
+Dieser Code bewegt den Cursor des DocumentBuilders zum dritten Absatz des zweiten Abschnitts (Absatz bei Index 2) und an Position 10. Anschließend fügt er einen neuen Absatz mit etwas Text hinzu und überprüft, ob der Cursor richtig auf diesem neuen Absatz positioniert ist.
 
-### مثال على شفرة المصدر لـ Move To Move To Section باستخدام Aspose.Words for .NET
+### Beispielquellcode für „Move To Move To Section“ mit Aspose.Words für .NET
 
 ```csharp
 
@@ -76,22 +76,22 @@ Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 	Document doc = new Document();
 	doc.AppendChild(new Section(doc));
 
-	// انقل DocumentBuilder إلى القسم الثاني وأضف نصًا.
+	// Verschieben Sie einen DocumentBuilder in den zweiten Abschnitt und fügen Sie Text hinzu.
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.MoveToSection(1);
 	builder.Writeln("Text added to the 2nd section.");
 
-	// إنشاء وثيقة مع فقرات.
+	// Erstellen Sie ein Dokument mit Absätzen.
 	doc = new Document(MyDir + "Paragraphs.docx");
 	ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 	Assert.AreEqual(22, paragraphs.Count);
 
-	//عندما نقوم بإنشاء DocumentBuilder لمستند ، يكون المؤشر في بداية المستند افتراضيًا ،
-	// وسيتم إضافة أي محتوى مضاف بواسطة DocumentBuilder إلى المستند.
+	//Wenn wir einen DocumentBuilder für ein Dokument erstellen, befindet sich sein Cursor standardmäßig ganz am Anfang des Dokuments.
+	// und alle vom DocumentBuilder hinzugefügten Inhalte werden dem Dokument einfach vorangestellt.
 	builder = new DocumentBuilder(doc);
 	Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 
-	// يمكنك تحريك المؤشر إلى أي موضع في الفقرة.
+	// Sie können den Cursor an eine beliebige Stelle in einem Absatz bewegen.
 	builder.MoveToParagraph(2, 10);
 	Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
 	builder.Writeln("This is a new third paragraph. ");
@@ -100,5 +100,5 @@ Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
         
 ```
 
-هذا كل شئ ! لقد فهمت الآن كيفية استخدام وظيفة الانتقال إلى قسم Aspose.Words for .NET باستخدام كود المصدر المقدم. يمكنك الآن دمج هذه الوظيفة في التطبيق الخاص بك ومعالجة أقسام وفقرات مستندات Word بشكل ديناميكي.
+Das ist alles ! Sie haben nun verstanden, wie Sie die Funktion „In Abschnitt verschieben“ von Aspose.Words für .NET mithilfe des bereitgestellten Quellcodes verwenden. Sie können diese Funktionalität jetzt in Ihre eigene Anwendung integrieren und Abschnitte und Absätze Ihrer Word-Dokumente dynamisch bearbeiten.
 

@@ -1,29 +1,29 @@
 ---
-title: منشئ المستند إدراج إشارة مرجعية
-linktitle: منشئ المستند إدراج إشارة مرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الإشارات المرجعية في مستندات Word باستخدام DocumentBuilder في Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Generatore di documenti Inserisci segnalibro
+linktitle: Generatore di documenti Inserisci segnalibro
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire segnalibri nei documenti di Word utilizzando DocumentBuilder in Aspose.Words per .NET. Guida passo dopo passo.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/document-builder-insert-bookmark/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج الإشارات المرجعية في مستند Word باستخدام فئة DocumentBuilder في Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إنشاء وإدارة الإشارات المرجعية داخل مستنداتك.
+In questo esempio completo, imparerai come inserire segnalibri in un documento Word utilizzando la classe DocumentBuilder in Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo i frammenti di codice C# necessari. Alla fine di questa guida, sarai in grado di creare e gestire segnalibri all'interno dei tuoi documenti.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti prerequisiti:
+- Aspose.Words per la libreria .NET installata sul tuo sistema.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Passaggio 1: creare un nuovo documento e DocumentBuilder
+Per iniziare, crea un nuovo documento utilizzando la classe Document e inizializza un oggetto DocumentBuilder:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل إشارة مرجعية
-بعد ذلك ، استخدم أساليب StartBookmark و EndBookmark لفئة DocumentBuilder لإدراج إشارة مرجعية في المستند. أدخل اسمًا فريدًا للإشارة المرجعية كمعامل:
+## Passaggio 2: inserire un segnalibro
+Utilizzare quindi i metodi StartBookmark e EndBookmark della classe DocumentBuilder per inserire un segnalibro nel documento. Fornire un nome univoco per il segnalibro come parametro:
 
 ```csharp
 builder.StartBookmark("FineBookmark");
@@ -31,15 +31,15 @@ builder.Writeln("This is just a fine bookmark.");
 builder.EndBookmark("FineBookmark");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الإشارة المرجعية ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Passaggio 3: salvare il documento
+Dopo aver inserito il segnalibro, salvare il documento in un file utilizzando il metodo Save della classe Document:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
 ```
 
-### مثال رمز مصدر لـ DocumentBuilder إدراج إشارة مرجعية باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لإدخال إشارة مرجعية باستخدام فئة DocumentBuilder في Aspose.Words for .NET:
+### Esempio di codice sorgente per DocumentBuilder Inserisci segnalibro utilizzando Aspose.Words per .NET
+Ecco il codice sorgente completo per l'inserimento di un segnalibro utilizzando la classe DocumentBuilder in Aspose.Words per .NET:
 
 ```csharp
    
@@ -54,10 +54,10 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBoo
 	 
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج الإشارات المرجعية في مستند Word باستخدام فئة DocumentBuilder في Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إنشاء وإدارة الإشارات المرجعية داخل مستنداتك.
+## Conclusione
+Congratulazioni! Hai imparato con successo come inserire segnalibri in un documento di Word utilizzando la classe DocumentBuilder in Aspose.Words per .NET. Seguendo la guida passo passo e utilizzando il codice sorgente fornito, ora puoi creare e gestire segnalibri all'interno dei tuoi documenti.
 
-تعد الإشارات المرجعية مفيدة لسيناريوهات متنوعة ، مثل التنقل عبر مستندات كبيرة ، أو الرجوع إلى أقسام معينة ، أو معالجة المحتوى برمجيًا داخل المناطق التي تم وضع إشارة مرجعية عليها.
+I segnalibri sono utili per vari scenari, ad esempio la navigazione in documenti di grandi dimensioni, il riferimento a sezioni specifiche o la manipolazione a livello di codice del contenuto all'interno di aree con segnalibri.
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Ricorda di adattare il codice in base alle tue esigenze specifiche e di migliorarlo con funzionalità aggiuntive secondo necessità.
 

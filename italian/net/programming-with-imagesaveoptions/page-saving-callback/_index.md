@@ -1,31 +1,31 @@
 ---
-title: استدعاء حفظ الصفحة
-linktitle: استدعاء حفظ الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تخصيص حفظ صفحات المستند للصور باستخدام Aspose.Words for .NET.
+title: Richiamata salvata pagina
+linktitle: Richiamata salvata pagina
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come personalizzare il salvataggio delle pagine del documento in immagini con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-imagesaveoptions/page-saving-callback/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لاستخدام إعادة اتصال حفظ الصفحة مع خيارات حفظ الصور Aspose.Words لـ .NET. تتيح لك هذه الميزة تنفيذ إجراءات مخصصة عند حفظ كل صفحة من المستند كصورة.
+In questo tutorial, esploreremo il codice sorgente C# fornito per l'utilizzo del callback di salvataggio della pagina con le opzioni di salvataggio dell'immagine di Aspose.Words per .NET. Questa funzione consente di eseguire azioni personalizzate durante il salvataggio di ogni pagina di un documento come immagine.
 
-## الخطوة الأولى: تهيئة البيئة
+## Passaggio 1: configurazione dell'ambiente
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Prima di iniziare, assicurati di aver impostato il tuo ambiente di sviluppo con Aspose.Words per .NET. Assicurati di aver aggiunto i riferimenti necessari e importato gli spazi dei nomi appropriati.
 
-## الخطوة الثانية: تحميل المستند
+## Passaggio 2: caricamento del documento
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+ In questo passaggio, carichiamo il documento utilizzando il file`Document` metodo e passando il percorso al file DOCX da caricare.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي للصور
+## Passaggio 3: configurare le opzioni di backup dell'immagine
 
 ```csharp
 ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.Png)
@@ -35,39 +35,39 @@ ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.Png)
 };
 ```
 
- في هذه الخطوة ، نقوم بتكوين خيارات حفظ الصورة عن طريق إنشاء ملف`ImageSaveOptions` هدف. نحدد تنسيق النسخ الاحتياطي المطلوب ، هنا "Png" لتنسيق PNG. نحن نستخدم`PageSet` لتحديد نطاق الصفحات المراد حفظها ، هنا من الصفحة الأولى إلى الصفحة الأخيرة من المستند (`doc.PageCount - 1`). وضعنا أيضا`PageSavingCallback` إلى مثيل`HandlePageSavingCallback`، وهي فئة مخصصة للتعامل مع الصفحة حفظ رد الاتصال.
+ In questo passaggio, configuriamo le opzioni di salvataggio dell'immagine creando un nuovo file`ImageSaveOptions` oggetto. Specifichiamo il formato di backup desiderato, qui "Png" per il formato PNG. Noi usiamo`PageSet` per specificare l'intervallo di pagine da salvare, qui dalla prima all'ultima pagina del documento (`doc.PageCount - 1`). Abbiamo anche impostato`PageSavingCallback` ad un'istanza di`HandlePageSavingCallback`, che è una classe personalizzata per gestire il callback di salvataggio della pagina.
 
-## الخطوة 4: تنفيذ رد اتصال حفظ الصفحة
+## Passaggio 4: implementazione della richiamata della pagina di salvataggio
 
 ```csharp
 public class HandlePageSavingCallback : IPageSavingCallback
 {
      public void PageSaving(PageSavingArgs args)
      {
-         // تنفيذ الإجراءات المخصصة الخاصة بك هنا
-         // يمكنك الوصول إلى معلومات الصفحة من خلال خاصية "args.PageIndex"
-         // يمكنك أيضًا تغيير خيارات الحفظ لكل صفحة على حدة
+         // Implementa qui le tue azioni personalizzate
+         // È possibile accedere alle informazioni sulla pagina tramite la proprietà "args.PageIndex".
+         // Puoi anche modificare le opzioni di salvataggio per ciascuna pagina individualmente
      }
 }
 ```
 
- في هذه الخطوة ، نقوم بتنفيذ`HandlePageSavingCallback` الطبقة التي تنفذ`IPageSavingCallback` واجهه المستخدم. يمكنك تخصيص هذه الفئة عن طريق إضافة إجراءات معينة في ملف`PageSaving` طريقة. يمكنك الوصول إلى معلومات الصفحة من خلال`args.PageIndex` ممتلكات`PageSavingArgs` تم تمرير الكائن كوسيطة.
+ In questo passaggio, implementiamo il`HandlePageSavingCallback` classe che implementa il`IPageSavingCallback` interfaccia. Puoi personalizzare questa classe aggiungendo le tue azioni specifiche nel file`PageSaving` metodo. È possibile accedere alle informazioni sulla pagina tramite il`args.PageIndex` proprietà del`PageSavingArgs` oggetto passato come argomento.
 
-## الخطوة 5: حفظ الصفحات كصور
+## Passaggio 5: salvare le pagine come immagini
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSaveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نقوم بحفظ كل صفحة من المستند كصورة باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج بامتداد`.png` التمديد ، جنبًا إلى جنب مع خيارات الحفظ المحددة.
+ In questo passaggio finale, salviamo ogni pagina del documento come immagine utilizzando il file`Save` metodo e passando il percorso al file di output con l'estensione`.png` estensione, insieme alle opzioni di salvataggio specificate.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لتنفيذ إجراءات مخصصة عند حفظ كل صفحة من المستند كصورة. سيتم حفظ الملف الناتج في الدليل المحدد باسم "WorkingWithImageSaveOptions.PageSavingCallback.png".
+Ora puoi eseguire il codice sorgente per eseguire azioni personalizzate durante il salvataggio di ogni pagina del documento come immagine. Il file risultante verrà salvato nella directory specificata con il nome "WorkingWithImageSaveOptions.PageSavingCallback.png".
 
-### عينة من التعليمات البرمجية المصدر لـ Page Saving Callback باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Page Saving Callback utilizzando Aspose.Words per .NET
 
 
 ```csharp 
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 
@@ -83,10 +83,10 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
         
 ```
 
-## خاتمة
+## Conclusione
 
-في هذا البرنامج التعليمي ، استكشفنا صفحة حفظ وظيفة رد الاتصال باستخدام خيارات حفظ الصور Aspose.Words لـ .NET. لقد تعلمنا كيفية تنفيذ الإجراءات المخصصة عند حفظ كل صفحة من المستند كصورة.
+In questo tutorial, abbiamo esplorato la funzionalità di callback di salvataggio della pagina con le opzioni di salvataggio delle immagini di Aspose.Words per .NET. Abbiamo imparato come eseguire azioni personalizzate durante il salvataggio di ogni pagina di un documento come immagine.
 
-هذه الميزة مفيدة عندما تريد إجراء عمليات محددة على كل صفحة عند التحويل إلى الصور. يمكنك الوصول إلى معلومات الصفحة واستخدامها لتخصيص خيارات النسخ الاحتياطي أو إجراء معالجة أخرى خاصة بالصفحة.
+Questa funzione è utile quando si desidera eseguire operazioni specifiche su ciascuna pagina durante la conversione in immagini. È possibile accedere alle informazioni sulla pagina e utilizzarle per personalizzare le opzioni di backup o eseguire altre elaborazioni specifiche della pagina.
 
-تقدم Aspose.Words for .NET مجموعة واسعة من الميزات المتقدمة لمعالجة المستندات وإنشائها. يعد تذكير حفظ الصفحة واحدًا من العديد من الأدوات القوية التي يوفرها لك لتخصيص عملية حفظ الصفحات في الصور.
+Aspose.Words per .NET offre una vasta gamma di funzionalità avanzate per la manipolazione e la generazione di documenti. Il promemoria Salva pagina è uno dei tanti potenti strumenti che ti offre per personalizzare il processo di salvataggio delle pagine in immagini.

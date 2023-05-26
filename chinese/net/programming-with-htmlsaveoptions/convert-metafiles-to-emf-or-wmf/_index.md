@@ -1,22 +1,22 @@
 ---
-title: تحويل ملفات التعريف إلى Emf أو Wmf
-linktitle: تحويل ملفات التعريف إلى Emf أو Wmf
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحويل ملفات التعريف إلى تنسيقات EMF أو WMF عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET.
+title: 将图元文件转换为 Emf 或 Wmf
+linktitle: 将图元文件转换为 Emf 或 Wmf
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 将文档转换为 HTML 时，将图元文件转换为 EMF 或 WMF 格式的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتحويل ملفات التعريف إلى تنسيق EMF أو WMF باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تحويل الصور بتنسيق ملف تعريف إلى تنسيقات أكثر توافقًا مثل EMF أو WMF عند تحويل مستند إلى HTML.
+在本教程中，我们将引导您通过 C# 源代码使用 Aspose.Words for .NET 将图元文件转换为 EMF 或 WMF 格式。此功能允许您在将文档转换为 HTML 时将图元文件格式的图像转换为更兼容的格式，例如 EMF 或 WMF。
 
-## الخطوة 1: إعداد المشروع
+## 第 1 步：项目设置
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+首先，在您喜欢的 IDE 中创建一个新的 C# 项目。确保在您的项目中引用了 Aspose.Words for .NET 库。
 
-## الخطوة 2: إدراج صورة في المستند
+## 第 2 步：将图像插入文档
 
-في هذه الخطوة ، سنقوم بإدراج صورة في المستند المراد تحويله. استخدم الكود التالي لإدراج صورة من مصدر بيانات باستخدام علامة HTML:
+在此步骤中，我们将在要转换的文档中插入图像。使用以下代码通过 HTML 标记从数据源插入图像：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -30,37 +30,37 @@ builder.InsertHtml(
 		C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA
 		AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J
 		REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq
-		ch9//q1uH4TLzw4d6 + ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
+		ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- هذا الرمز ينشئ مثيل`Document` و`DocumentBuilder` لبناء الوثيقة. يقوم بإدراج ملف`<img>` علامة في المستند مع صورة مشفرة base64.
+此代码创建一个实例`Document`和`DocumentBuilder`构建文档。它插入一个`<img>`使用 base64 编码图像标记到文档中。
 
-## الخطوة 3: تعيين خيارات حفظ HTML
+## 第 3 步：设置 HTML 保存选项
 
-سنقوم الآن بتعيين خيارات حفظ HTML ، بما في ذلك تنسيق ملف التعريف لاستخدامه مع الصور. استخدم الكود التالي:
+现在我们将设置 HTML 保存选项，包括用于图像的图元文件格式。使用以下代码：
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.EmfOrWmf };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions` ومجموعات`MetafileFormat` ل`HtmlMetafileFormat.EmfOrWmf` لتحديد أن ملفات التعريف يجب تحويلها إلى تنسيق EMF أو WMF عند التحويل إلى HTML.
+此代码创建一个实例`HtmlSaveOptions`并设置`MetafileFormat`到`HtmlMetafileFormat.EmfOrWmf`指定元文件在转换为 HTML 时应转换为 EMF 或 WMF 格式。
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## 第 4 步：将文档转换并保存为 HTML
 
-أخيرًا سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML المحددة مسبقًا. استخدم الكود التالي:
+最后，我们将使用之前定义的保存 HTML 选项将文档转换为 HTML。使用以下代码：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML ويحفظه في ملف به ملفات التعريف المحولة بتنسيق EMF أو WMF اعتمادًا على مجموعة خيارات الحفظ.
+此代码将文档转换为 HTML 并将其保存到一个文件中，其中包含转换后的图元文件，具体取决于保存选项集的 EMF 或 WMF 格式。
 
-### مثال على شفرة المصدر لتحويل ملفات التعريف إلى Emf أو Wmf باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 将图元文件转换为 Emf 或 Wmf 的示例源代码
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html",
 			C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA
 			AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J
 			REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq
-			ch9//q1uH4TLzw4d6 + ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
+			ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
 			vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 
 	HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.EmfOrWmf };
@@ -81,6 +81,6 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html",
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+请务必在`dataDir`多变的。
 
-لقد تعلمت الآن كيفية تحويل ملفات التعريف إلى تنسيقات EMF أو WMF عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إدارة ملفات التعريف في مستندات HTML المحولة.
+您现在已经了解了在使用 Aspose.Words for .NET 将文档转换为 HTML 时如何将图元文件转换为 EMF 或 WMF 格式。按照本教程中提供的分步指南，您可以轻松地管理转换后的 HTML 文档中的图元文件。

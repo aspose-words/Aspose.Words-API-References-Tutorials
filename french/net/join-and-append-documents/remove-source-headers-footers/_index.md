@@ -1,42 +1,42 @@
 ---
-title: إزالة تذييلات رؤوس المصدر
-linktitle: إزالة تذييلات رؤوس المصدر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة الرؤوس والتذييلات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Supprimer les en-têtes de source
+linktitle: Supprimer les en-têtes de source
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à supprimer les en-têtes et les pieds de page tout en joignant et en ajoutant des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/join-and-append-documents/remove-source-headers-footers/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Remove Source Headers Footers في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء إزالة الرؤوس والتذييلات من المستند المصدر.
+Ce didacticiel vous guidera tout au long du processus d'utilisation de la fonctionnalité Supprimer les en-têtes de source des pieds de page d'Aspose.Words pour .NET. Cette fonctionnalité vous permet de joindre et d'ajouter des documents Word tout en supprimant les en-têtes et les pieds de page du document source.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words pour .NET installé. Vous pouvez le télécharger depuis le site Web d'Aspose ou l'installer via NuGet.
+2. Visual Studio ou tout autre environnement de développement C#.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Étape 1 : Initialiser les répertoires de documents
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir` variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Étape 2 : Chargez les documents source et de destination
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Ensuite, vous devez charger les documents source et de destination à l'aide de Aspose.Words`Document` classe. Mettez à jour les noms de fichiers dans le`Document` constructeur en fonction des noms de vos documents.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إزالة الرؤوس والتذييلات من أقسام المستند المصدر
+## Étape 3 : Supprimer les en-têtes et les pieds de page des sections du document source
 
- لإزالة الرؤوس والتذييلات من كل قسم في المستند المصدر ، يمكنك التكرار خلال الأقسام باستخدام ملف`foreach` حلقة واستدعاء`ClearHeadersFooters` طريقة.
+ Pour supprimer les en-têtes et les pieds de page de chaque section du document source, vous pouvez parcourir les sections à l'aide d'un`foreach` boucle et appelle le`ClearHeadersFooters` méthode.
 
 ```csharp
 foreach (Section section in srcDoc.Sections)
@@ -45,51 +45,51 @@ foreach (Section section in srcDoc.Sections)
 }
 ```
 
-## الخطوة 4: تعطيل إعداد "LinkToPrevious" لـ HeadersFooters
+## Étape 4 : Désactiver le paramètre "LinkToPrevious" pour les en-têtes et les pieds de page
 
-حتى بعد مسح الرؤوس والتذييلات من المستند المصدر ، هناك احتمال أن يكون إعداد "LinkToPrevious"`HeadersFooters` لا يزال من الممكن تعيينها. لتجنب هذا السلوك ، تحتاج إلى تعيينه صراحةً على`false` للقسم الأول`HeadersFooters` ملكية.
+Même après avoir effacé les en-têtes et les pieds de page du document source, il est possible que le paramètre "LinkToPrevious" pour`HeadersFooters` peut encore être réglé. Pour éviter ce comportement, vous devez le définir explicitement sur`false` pour la première section`HeadersFooters` propriété.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## Étape 5 : Ajouter le document source au document de destination
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Maintenant, vous pouvez ajouter le document source au document de destination en utilisant le`AppendDocument` méthode de la`Document` classe. Le`ImportFormatMode.KeepSourceFormatting` Le paramètre garantit que la mise en forme de la source est préservée pendant l'opération d'ajout.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## Étape 6 : Enregistrez le document final
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة Remove Source Headers Footers باستخدام ملحق`Save` طريقة`Document` فصل.
+ Enfin, enregistrez le document fusionné avec la fonction Supprimer les en-têtes de la source et les pieds de page activée à l'aide de la`Save` méthode de la`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 ```
 
-### مثال على شفرة المصدر لإزالة تذييلات رؤوس المصدر باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Supprimer les en-têtes de source des pieds de page à l'aide d'Aspose.Words pour .NET 
 
-إليك شفرة المصدر الكاملة لميزة "إزالة تذييلات رؤوس المصدر" في C # باستخدام Aspose.Words for .NET:
+Voici le code source complet de la fonctionnalité "Supprimer les pieds de page des en-têtes source" en C# à l'aide d'Aspose.Words pour .NET :
 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بإزالة الرؤوس والتذييلات من كل قسم في المستند المصدر.
+	// Supprimez les en-têtes et les pieds de page de chacune des sections du document source.
 	foreach (Section section in srcDoc.Sections)
 	{
 		section.ClearHeadersFooters();
 	}
-	// حتى بعد مسح الرؤوس والتذييلات من المستند المصدر ، فإن الإعداد "LinkToPrevious"
-	// لا يزال من الممكن تعيين HeadersFooters. سيؤدي هذا إلى استمرار الرؤوس والتذييلات من الوجهة
-	// وثيقة. يجب تعيين هذا على خطأ لتجنب هذا السلوك.
+	// Même après que les en-têtes et les pieds de page ont été effacés du document source, le paramètre "LinkToPrevious"
+	// pour HeadersFooters peut toujours être défini. Cela entraînera la poursuite des en-têtes et des pieds de page à partir de la destination
+	// document. Cela devrait être défini sur false pour éviter ce comportement.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 ```
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Remove Source Headers Footers باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع إزالة الرؤوس والتذييلات من المستند المصدر.
+C'est ça! Vous avez implémenté avec succès la fonctionnalité Remove Source Headers Footers à l'aide de Aspose.Words pour .NET. Le document final contiendra le contenu fusionné avec les en-têtes et pieds de page supprimés du document source.

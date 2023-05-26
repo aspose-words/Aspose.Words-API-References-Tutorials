@@ -1,47 +1,47 @@
 ---
-title: تنسيق الخط
-linktitle: تنسيق الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET.
+title: 字体格式
+linktitle: 字体格式
+second_title: Aspose.Words for .NET API 参考
+description: 在本教程中，学习如何使用 Aspose.Words for .NET 格式化 Word 文档中的字体。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/font-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تنسيق الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يتيح لك تنسيق الخط تخصيص مظهر النص ، بما في ذلك الحجم والغامق واللون والخط والتسطير والمزيد. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+在本教程中，我们将向您介绍如何使用 .NET 的 Aspose.Words 库在 Word 文档中进行字体格式化。字体格式让您可以自定义文本的外观，包括大小、粗体、颜色、字体、下划线等。我们将带您一步一步地帮助您理解和实现您的 .NET 项目中的代码。
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## 先决条件
+在开始之前，请确保您拥有以下物品：
+- C# 编程语言的应用知识
+- 项目中安装的 .NET 的 Aspose.Words 库
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 第一步：定义文档目录
+首先，您需要将目录路径设置为您的 Word 文档所在的位置。代替`"YOUR DOCUMENT DIRECTORY"`在具有适当路径的代码中。
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومولد مستندات
- بعد ذلك ، سننشئ مستندًا جديدًا عن طريق إنشاء مثيل لملف`Document` class ومنشئ المستندات عن طريق إنشاء مثيل لملف`DocumentBuilder` فصل.
+## 第 2 步：创建新文档和文档生成器
+接下来，我们将通过实例化`Document`类和文档生成器通过实例化`DocumentBuilder`班级。
 
 ```csharp
-// قم بإنشاء مستند جديد
+//创建一个新文档
 Document doc = new Document();
 
-// قم بإنشاء منشئ المستندات
+//创建文档生成器
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تكوين تنسيق الخط
- الآن سوف نصل إلى`Font` كائن من منشئ المستند وتكوين خصائص تنسيق الخط مثل الحجم ، والجريء ، واللون ، والخط ، والتسطير ، وما إلى ذلك.
+## 第 3 步：配置字体格式
+现在我们将访问`Font`文档生成器的对象并配置字体格式属性，如大小、粗体、颜色、字体、下划线等。
 
 ```csharp
-// الوصول إلى الخط
+//访问字体
 Font font = builder.Font;
 
-// تكوين تنسيق الخط
+//配置字体格式
 font.Size = 16;
 font. Bold = true;
 font.Color = Color.Blue;
@@ -49,24 +49,24 @@ font.Name = "Arial";
 font.Underline = Underline.Dash;
 ```
 
-## الخطوة 4: أضف نصًا إلى المستند
-بعد ذلك ، سنستخدم منشئ المستندات لإضافة بعض النص المنسق إلى المستند.
+## 第 4 步：向文档添加文本
+接下来，我们将使用文档生成器将一些格式化文本添加到文档中。
 
 ```csharp
-// أضف نصًا إلى المستند
+//向文档添加文本
 builder.Write("Example text.");
 ```
 
-## الخطوة 5: احفظ المستند
-أخيرًا ، سنحفظ المستند الذي يحتوي على تنسيق الخط.
+## 第 5 步：保存文档
+最后，我们将保存包含字体格式的文档。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لتنسيق الخط باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 进行字体格式化的示例源代码 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -81,5 +81,5 @@ builder.Write("Sample text.");
 doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET. يسمح لك تنسيق الخط بتخصيص مظهر النص في مستنداتك. لا تتردد في استخدام هذه الميزة لإنشاء مستندات جذابة واحترافية.
+## 结论
+在本教程中，我们了解了如何使用 Aspose.Words for .NET 在 Word 文档中进行字体格式化。字体格式允许您自定义文档中文本的外观。随意使用此功能来创建有吸引力的专业文档。

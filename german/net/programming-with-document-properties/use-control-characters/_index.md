@@ -1,40 +1,40 @@
 ---
-title: استخدم أحرف التحكم
-linktitle: استخدم أحرف التحكم
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لاستخدام أحرف التحكم مع Aspose.Words for .NET.
+title: Verwenden Sie Steuerzeichen
+linktitle: Verwenden Sie Steuerzeichen
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zur Verwendung von Steuerzeichen mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-document-properties/use-control-characters/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لاستخدام أحرف التحكم مع Aspose.Words for .NET. تسمح لك هذه الميزة بمعالجة أحرف التحكم في النص.
+In diesem Tutorial führen wir Sie durch den C#-Quellcode für die Verwendung von Steuerzeichen mit Aspose.Words für .NET. Mit dieser Funktion können Sie Steuerzeichen im Text bearbeiten.
 
-## الخطوة 1: إعداد المشروع
+## Schritt 1: Projekteinrichtung
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Aspose.Words for .NET-Bibliothek verwiesen wird.
 
-## الخطوة الثانية: استخدام أحرف التحكم
+## Schritt 2: Steuerzeichen verwenden
 
-في هذه الخطوة ، سنستخدم أحرف التحكم في النص. استخدم الكود التالي:
+In diesem Schritt werden wir Steuerzeichen in einem Text verwenden. Verwenden Sie den folgenden Code:
 
 ```csharp
 const string text = "test\r";
-// استبدل حرف التحكم "\ r" بـ "\ r \ n".
+// Ersetzen Sie das Steuerzeichen „\r“ durch „\r\n“.
 string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 ```
 
- يحدد هذا الرمز أ`text` سلسلة تحتوي على حرف التحكم "\ r" (سطر جديد) وتستخدم الامتداد`Replace` طريقة استبداله بحرف التحكم "\ r \ n" (سطر جديد). خط متبوعًا بفاصل أسطر).
+ Dieser Code definiert a`text` Zeichenfolge, die das Steuerzeichen „\r“ (Newline) enthält und das verwendet`Replace` -Methode, um es durch das Steuerzeichen „\r\n“ (Neuzeile) zu ersetzen. Zeile gefolgt von einem Zeilenumbruch).
 
-### مثال على شفرة المصدر لـ Use Control Characters باستخدام Aspose.Words for .NET
+### Beispielquellcode für die Verwendung von Steuerzeichen mit Aspose.Words für .NET
 
 ```csharp
 
 	const string text = "test\r";
-	// استبدل "\ r" حرف التحكم بـ "\ r \ n".
+	// Ersetzen Sie das Steuerzeichen „\r“ durch „\r\n“.
 	string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 
 ```
- يمكنك استخدام الكود أعلاه في مشروعك الخاص عن طريق استبدال`text` سلسلة تحتوي على نص خاص بك يحتوي على أحرف تحكم.
+ Sie können den obigen Code in Ihrem eigenen Projekt verwenden, indem Sie den ersetzen`text` Zeichenfolge mit Ihrem eigenen Text, der Steuerzeichen enthält.
 
-لقد تعلمت الآن كيفية استخدام أحرف التحكم مع Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة التعامل مع أحرف التحكم في تطبيقاتك الخاصة.
+Sie haben jetzt gelernt, wie Sie Steuerzeichen mit Aspose.Words für .NET verwenden. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie Steuerzeichen in Ihren eigenen Anwendungen problemlos bearbeiten.

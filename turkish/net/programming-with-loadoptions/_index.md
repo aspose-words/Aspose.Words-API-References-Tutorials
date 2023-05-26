@@ -1,26 +1,26 @@
 ---
-title: البرمجة باستخدام Loadoptions
-linktitle: البرمجة باستخدام Loadoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تحديث الحقول المتسخة ، وتحميل المستند المشفر ، وتحويل الشكل إلى الرياضيات المكتبية ، وتعيين إصدار ms word ، واستخدام مجلد temp ، وتحذير رد الاتصال ، وتحميل باستخدام e
+title: Loadoptions ile Programlama
+linktitle: Loadoptions ile Programlama
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, kirli alanları güncelleme, şifreli belge yükleme, şekli ofis matematiğine dönüştürme, ms word sürümünü ayarlama, geçici klasörü kullanma, geri arama uyarısı, e ile yükleme içerir
 type: docs
 weight: 1610
 url: /tr/net/programming-with-loadoptions/
 ---
-تقدم البرامج التعليمية Aspose.Words for .NET موردا قيما للمطورين الراغبين في إتقان البرمجة باستخدام LoadOptions. تغطي هذه البرامج التعليمية بالتفصيل الميزات والتقنيات المختلفة لتحميل مستندات Word في تطبيقات .NET. سواء أكنت بحاجة إلى تحديد خيارات تحميل معينة ، أو التعامل مع الأخطاء عند تحميل المستندات ، أو تخصيص إعدادات الخط ، فإن هذه البرامج التعليمية ستأخذك خطوة بخطوة لتحقيق أهدافك.
+Aspose.Words for .NET öğreticileri, LoadOptions ile programlamada ustalaşmak isteyen geliştiriciler için değerli bir kaynak sunar. Bu öğreticiler, Word belgelerini .NET uygulamalarına yüklemek için çeşitli özellikleri ve teknikleri ayrıntılı olarak kapsar. Belirli yükleme seçeneklerini belirlemeniz, belgeleri yüklerken hataları işlemeniz veya yazı tipi ayarlarını özelleştirmeniz gerekip gerekmediği, bu eğitimler sizi hedeflerinize ulaşmanız için adım adım götürecektir.
 
-في هذه البرامج التعليمية ، ستتعلم كيفية استخدام LoadOptions لتحميل مستندات Word بإعدادات مخصصة. ستستكشف مفاهيم مثل التعامل مع الخطوط المفقودة والتعافي من أخطاء التحميل وتحسين الأداء والمزيد. يتم شرح كل خطوة بالتفصيل بأمثلة تعليمات برمجية واضحة وموجزة لمساعدتك على فهم المفاهيم وتطبيقها بسرعة.
+Bu eğitimlerde, Word belgelerini özel ayarlarla yüklemek için LoadOptions'ı nasıl kullanacağınızı öğreneceksiniz. Eksik yazı tiplerini işleme, yükleme hatalarını düzeltme, performansı optimize etme ve daha fazlası gibi kavramları keşfedeceksiniz. Her adım, kavramları hızlı bir şekilde anlamanıza ve uygulamanıza yardımcı olmak için net ve özlü kod örnekleriyle ayrıntılı olarak açıklanmıştır.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [تحديث الحقول القذرة](./update-dirty-fields/) | تعرف على كيفية تحميل مستند Word عن طريق تحديث الحقول غير النظيفة باستخدام Aspose.Words for .NET. |
-| [تحميل مستند مشفر](./load-encrypted-document/) | تعرف على كيفية تحميل وحفظ المستندات المشفرة باستخدام Aspose.Words for .NET. |
-| [تحويل الشكل إلى مكتب الرياضيات](./convert-shape-to-office-math/) | تعرف على كيفية تحويل الأشكال إلى صيغ الرياضيات في Office عند تحميل المستندات باستخدام Aspose.Words for .NET. |
-| [تعيين إصدار MS Word](./set-ms-word-version/) | تعرف على كيفية تحميل مستند بإصدار محدد من MS Word باستخدام Aspose.Words for .NET. |
-| [استخدم مجلد Temp](./use-temp-folder/) | تعرف على كيفية استخدام مجلد مؤقت عند تحميل المستندات باستخدام Aspose.Words for .NET. |
-| [رد الاتصال التحذيري](./warning-callback/) | تعرف على كيفية التعامل مع التحذيرات عند تحميل مستند Word باستخدام وظيفة رد الاتصال مع Aspose.Words for .NET. |
-| [تحميل مع الترميز](./load-with-encoding/) | تعرف على كيفية تحميل مستند بترميز محدد باستخدام Aspose.Words for .NET. |
-| [تخطي صور PDF](./skip-pdf-images/) | تعرف على كيفية تحميل مستند PDF مع تخطي تحميل صور PDF باستخدام Aspose.Words for .NET. |
-| [تحويل ملفات التعريف إلى Png](./convert-metafiles-to-png/) | تعرف على كيفية تحويل ملفات التعريف إلى صور PNG عند تحميل المستندات باستخدام Aspose.Words for .NET. |
-| [تحميل Chm](./load-chm/) | تعرف على كيفية تحميل ملفات CHM باستخدام Aspose.Words for .NET. |
+| [Kirli Alanları Güncelle](./update-dirty-fields/) | Kirli alanları Aspose.Words for .NET ile güncelleyerek bir Word belgesini nasıl yükleyeceğinizi öğrenin. |
+| [Şifrelenmiş Belgeyi Yükle](./load-encrypted-document/) | Aspose.Words for .NET ile şifrelenmiş belgeleri nasıl yükleyeceğinizi ve kaydedeceğinizi öğrenin. |
+| [Şekli Office Matematiğine Dönüştür](./convert-shape-to-office-math/) | Aspose.Words for .NET ile belgeleri yüklerken şekilleri Office matematik formüllerine nasıl dönüştüreceğinizi öğrenin. |
+| [Ms Word Sürümünü Ayarla](./set-ms-word-version/) | Aspose.Words for .NET kullanarak bir belgeyi belirli bir MS Word sürümüyle nasıl yükleyeceğinizi öğrenin. |
+| [Temp Klasörünü Kullan](./use-temp-folder/) | Aspose.Words for .NET ile belgeleri yüklerken geçici bir klasörü nasıl kullanacağınızı öğrenin. |
+| [Uyarı Geri Arama](./warning-callback/) | Aspose.Words for .NET ile geri çağırma işlevini kullanarak bir Word belgesi yüklerken uyarıları nasıl ele alacağınızı öğrenin. |
+| [Kodlama ile Yükle](./load-with-encoding/) | Aspose.Words for .NET kullanarak belirli bir kodlamaya sahip bir belgeyi nasıl yükleyeceğinizi öğrenin. |
+| [Pdf Resimleri Atla](./skip-pdf-images/) | Aspose.Words for .NET ile PDF görüntülerini yüklemeyi atlayarak bir PDF belgesini nasıl yükleyeceğinizi öğrenin. |
+| [Meta Dosyalarını Png'ye Dönüştür](./convert-metafiles-to-png/) | Aspose.Words for .NET ile belgeleri yüklerken meta dosyalarını PNG resimlerine nasıl dönüştüreceğinizi öğrenin. |
+| [Chm'yi Yükle](./load-chm/) | Aspose.Words for .NET ile CHM dosyalarını nasıl yükleyeceğinizi öğrenin. |

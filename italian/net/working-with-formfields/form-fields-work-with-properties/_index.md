@@ -1,56 +1,56 @@
 ---
-title: تعمل حقول النموذج مع الخصائص
-linktitle: تعمل حقول النموذج مع الخصائص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التعامل مع خصائص حقل النموذج في مستندات Word باستخدام Aspose.Words for .NET.
+title: I campi modulo funzionano con le proprietà
+linktitle: I campi modulo funzionano con le proprietà
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come lavorare con le proprietà dei campi modulo nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-formfields/form-fields-work-with-properties/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية التعامل مع خصائص حقل النموذج في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In questo tutorial passo-passo, ti guideremo su come lavorare con le proprietà del campo modulo in un documento Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria dal sito ufficiale.
 
-## الخطوة 1: تهيئة كائن المستند
+## Passaggio 1: inizializzazione dell'oggetto documento
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق توفير المسار إلى المستند المصدر الذي يحتوي على حقول النموذج:
+ Per prima cosa, inizializza il file`Document` oggetto fornendo il percorso del documento di origine contenente i campi del modulo:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## الخطوة 2: الوصول إلى حقل النموذج
+## Passaggio 2: accesso a un campo modulo
 
-بعد ذلك ، قم باسترداد حقل نموذج معين من مجموعة حقول نموذج المستند. في هذا المثال ، نصل إلى حقل النموذج في الفهرس 3:
+Successivamente, recupera un campo modulo specifico dalla raccolta di campi modulo del documento. In questo esempio, accediamo al campo del modulo all'indice 3:
 
 ```csharp
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## الخطوة 3: العمل مع خصائص حقل النموذج
+## Passaggio 3: lavorare con le proprietà del campo modulo
 
- يمكنك معالجة الخصائص المختلفة لحقل النموذج بناءً على نوعه. في هذا المثال ، نتحقق مما إذا كان حقل النموذج من النوع`FieldType.FieldFormTextInput` وضبطها`Result` بناء على ذلك:
+ Puoi manipolare varie proprietà del campo modulo in base al suo tipo. In questo esempio, controlliamo se il campo del modulo è di tipo`FieldType.FieldFormTextInput` e impostare il suo`Result` proprietà di conseguenza:
 
 ```csharp
 if (formField.Type == FieldType.FieldFormTextInput)
     formField.Result = "My name is " + formField.Name;
 ```
 
-لا تتردد في استكشاف خصائص أخرى وإجراء عمليات مختلفة بناءً على متطلباتك المحددة.
+Sentiti libero di esplorare altre proprietà ed eseguire diverse operazioni in base alle tue esigenze specifiche.
 
-## الخطوة 4: حفظ المستند
+## Passaggio 4: salvare il documento
 
-أخيرًا ، احفظ المستند المعدل:
+Infine, salva il documento modificato:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-هذا كل شيء! لقد نجحت في العمل مع خصائص حقل النموذج في مستند Word باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai lavorato con successo con le proprietà del campo modulo in un documento Word utilizzando Aspose.Words per .NET.
 
-### مثال على كود المصدر لحقول النموذج العمل مع الخصائص باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per i campi del modulo Lavora con le proprietà utilizzando Aspose.Words per .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -63,4 +63,4 @@ if (formField.Type == FieldType.FieldFormTextInput)
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.

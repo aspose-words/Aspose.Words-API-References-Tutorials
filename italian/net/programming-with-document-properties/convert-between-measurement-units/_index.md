@@ -1,31 +1,31 @@
 ---
-title: التحويل بين وحدات القياس
-linktitle: التحويل بين وحدات القياس
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة للتحويل بين وحدات القياس في مستند باستخدام Aspose.Words for .NET.
+title: Conversione tra unità di misura
+linktitle: Conversione tra unità di misura
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata alla conversione tra unità di misura in un documento con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-document-properties/convert-between-measurement-units/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # للتحويل بين وحدات القياس باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تحديد الهوامش ومسافات الرأس والتذييل وما إلى ذلك في وحدات قياس مختلفة.
+In questo tutorial, ti guideremo attraverso il codice sorgente C# per convertire tra unità di misura con Aspose.Words per .NET. Questa funzione consente di specificare margini, distanze di intestazione e piè di pagina, ecc. in diverse unità di misura.
 
-## الخطوة 1: إعداد المشروع
+## Passaggio 1: impostazione del progetto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Per iniziare, crea un nuovo progetto C# nel tuo IDE preferito. Assicurarsi che nel progetto si faccia riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة الثانية: إنشاء المستند والمنشئ
+## Passaggio 2: creazione del documento e del costruttore
 
-في هذه الخطوة ، سننشئ مستندًا جديدًا ونهيئ المُنشئ. استخدم الكود التالي:
+In questo passaggio creeremo un nuovo documento e inizializzeremo il costruttore. Usa il seguente codice:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تكوين وحدات القياس
+## Passaggio 3: configurare le unità di misura
 
-سنقوم الآن بتحويل قيم الهوامش ومسافات الرأس والتذييل وما إلى ذلك في وحدات قياس مختلفة. استخدم الكود التالي لتحديد القيم في وحدات قياس معينة:
+Ora convertiremo i valori per i margini, le distanze di intestazione e piè di pagina, ecc. in diverse unità di misura. Utilizzare il seguente codice per specificare i valori in unità di misura specifiche:
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -37,9 +37,9 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- يستخدم هذا الرمز الامتداد`ConvertUtil` فئة Aspose. Words لتحويل القيم المحددة إلى بوصة (`InchToPoint` ). يمكنك أيضًا استخدام طرق التحويل الأخرى المتوفرة في ملف`ConvertUtil` فئة لتحويل القيم إلى وحدات قياس أخرى.
+ Questo codice utilizza il`ConvertUtil` class di Aspose.Words per convertire i valori specificati in pollici (`InchToPoint` ). Puoi anche utilizzare altri metodi di conversione disponibili nel file`ConvertUtil` class per convertire i valori in altre unità di misura.
 
-### مثال على شفرة المصدر للتحويل بين وحدات القياس باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Converti tra unità di misura utilizzando Aspose.Words per .NET
 
 ```csharp
 
@@ -56,4 +56,4 @@ pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
   
 ```
 
-لقد تعلمت الآن كيفية التحويل بين وحدات القياس عند تحديد الهوامش ومسافات الرأس والتذييل وما إلى ذلك في مستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تحديد القيم في وحدات القياس المطلوبة في مستنداتك الخاصة.
+Ora hai imparato come eseguire la conversione tra unità di misura quando specifichi margini, distanze di intestazione e piè di pagina, ecc. in un documento utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata fornita in questo tutorial, puoi facilmente specificare i valori nelle unità di misura desiderate nei tuoi documenti.

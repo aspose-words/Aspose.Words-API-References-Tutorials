@@ -1,35 +1,35 @@
 ---
-title: أدخل حقل TOA بدون Document Builder
-linktitle: أدخل حقل TOA بدون Document Builder
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإدخال حقل TOA بدون Document Builder باستخدام Aspose.Words for .NET.
+title: Insertar campo TOA sin el generador de documentos
+linktitle: Insertar campo TOA sin el generador de documentos
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para insertar el campo TOA sin Document Builder usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/insert-toafield-without-document-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "TOA Field Insertion" في Aspose.Words for .NET. اتبع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación, que utiliza la función "Inserción de campo TOA" de Aspose.Words para .NET. Siga cada paso cuidadosamente para obtener los resultados deseados.
 
-## الخطوة 1: إعداد دليل المستند
+## Paso 1: Configuración del directorio de documentos
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+En el código provisto, debe especificar el directorio de sus documentos. Reemplace el valor "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## Paso 2: Creando el Documento y el Párrafo
 
-نبدأ بإنشاء مستند جديد وتهيئة فقرة.
+Comenzamos creando un nuevo documento e inicializando un párrafo.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 3: إدخال حقل TA
+## Paso 3: Inserción del campo TA
 
-نستخدم فئة FieldTA لإدراج حقل TA في الفقرة.
+Usamos la clase FieldTA para insertar un campo TA en el párrafo.
 
 ```csharp
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
@@ -37,56 +37,56 @@ fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 ```
 
-## الخطوة 4: إضافة الفقرة إلى نص المستند
+## Paso 4: Agregar el párrafo al cuerpo del documento
 
-نضيف الفقرة التي تحتوي على حقل TA إلى نص المستند.
+Agregamos el párrafo que contiene el campo TA al cuerpo del documento.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## الخطوة 5: إنشاء فقرة لحقل TOA
+## Paso 5: Crear el párrafo para el campo TOA
 
-نقوم بإنشاء فقرة جديدة لحقل TOA.
+Creamos un nuevo párrafo para el campo TOA.
 
 ```csharp
 para = new Paragraph(doc);
 ```
 
-## الخطوة 6: إدخال حقل TOA
+## Paso 6: Inserción del campo TOA
 
-نستخدم فئة FieldToa لإدراج حقل TOA في الفقرة.
+Usamos la clase FieldToa para insertar un campo TOA en el párrafo.
 
 ```csharp
 FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 ```
 
-## الخطوة 7: إضافة الفقرة إلى نص المستند
+## Paso 7: Agregar el párrafo al cuerpo del documento
 
-نضيف الفقرة التي تحتوي على حقل TOA إلى نص المستند.
+Agregamos el párrafo que contiene el campo TOA al cuerpo del documento.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## الخطوة 8: تحديث TOA Field
+## Paso 8: Actualizar el campo TOA
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث حقل TOA.
+ Finalmente, llamamos a la`Update()` método para actualizar el campo TOA.
 
 ```csharp
 fieldToa.Update();
 ```
 
-### مثال على رمز المصدر لإدخال حقل TOA بدون Document Builder مع Aspose.Words for .NET
+### Ejemplo de código fuente para la inserción de campos TOA sin Document Builder con Aspose.Words para .NET
 
 ```csharp
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
-// نريد إدخال حقول TA و TOA مثل هذا:
-// {TA \ c 1 \ l "القيمة 0"}
-// {TOA \ c 1}
+// Queremos insertar campos TA y TOA como este:
+// { TA \c 1 \l "Valor 0" }
+// { TOA \c 1 }
 
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);
 fieldTA.EntryCategory = "1";

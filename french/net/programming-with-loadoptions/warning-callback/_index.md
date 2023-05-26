@@ -1,71 +1,71 @@
 ---
-title: رد الاتصال التحذيري
-linktitle: رد الاتصال التحذيري
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التعامل مع التحذيرات عند تحميل مستند Word باستخدام وظيفة رد الاتصال مع Aspose.Words for .NET.
+title: Rappel d'avertissement
+linktitle: Rappel d'avertissement
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à gérer les avertissements lors du chargement d'un document Word à l'aide de la fonctionnalité de rappel avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-loadoptions/warning-callback/
 ---
 
-عند العمل مع مستندات Word في تطبيق C # ، قد يكون من المفيد أن تكون على دراية بالتحذيرات الصادرة عند تحميل المستند. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحديد وظيفة رد الاتصال للتعامل مع التحذيرات أثناء تحميل المستند باستخدام خيارات تحميل LoadOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند باستخدام وظيفة رد الاتصال للتحذيرات باستخدام خيارات تحميل LoadOptions.
+Lorsque vous travaillez avec des documents Word dans une application C#, il peut être utile de connaître les avertissements émis lors du chargement du document. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement spécifier une fonction de rappel pour gérer les avertissements lors du chargement du document à l'aide des options de chargement LoadOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour charger un document à l'aide d'une fonction de rappel pour les avertissements à l'aide des options de chargement LoadOptions.
 
-## فهم مكتبة Aspose.Words
+## Comprendre la bibliothèque Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque puissante pour créer, éditer, convertir et protéger des documents Word sur différentes plates-formes, y compris .NET. Il offre de nombreuses fonctionnalités pour manipuler des documents, telles que l'insertion de texte, la modification de la mise en forme, l'ajout de sections et bien plus encore.
 
-## تكوين خيارات التحميل
+## Configuration des options de chargement
 
-الخطوة الأولى هي تكوين خيارات التحميل لوثيقتنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى تعيين خاصية WarningCallback على مثيل DocumentLoadingWarningCallback. هيريس كيفية القيام بذلك:
+La première étape consiste à configurer les options de chargement de notre document. Utilisez la classe LoadOptions pour spécifier les paramètres de chargement. Dans notre cas, nous devons définir la propriété WarningCallback sur une instance de DocumentLoadingWarningCallback. Voici comment procéder :
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { WarningCallback = new DocumentLoadingWarningCallback() };
 ```
 
-نقوم بإنشاء كائن LoadOptions جديد وتعيين خاصية WarningCallback على مثيل DocumentLoadingWarningCallback.
+Nous créons un nouvel objet LoadOptions et définissons la propriété WarningCallback sur une instance de DocumentLoadingWarningCallback.
 
-## إنشاء وظيفة رد الاتصال للتحذيرات
+## Création de la fonction de rappel pour les avertissements
 
-نحتاج الآن إلى إنشاء فئة تنفذ واجهة IWarningCallback للتعامل مع التحذيرات عند تحميل المستند. فيما يلي نموذج التعليمات البرمجية لفئة DocumentLoadingWarningCallback:
+Nous devons maintenant créer une classe qui implémente l'interface IWarningCallback pour gérer les avertissements lors du chargement du document. Voici un exemple de code pour la classe DocumentLoadingWarningCallback :
 
 ```csharp
 public class DocumentLoadingWarningCallback : IWarningCallback
 {
      public void Warning(WarningInfo info)
      {
-         // تعامل مع التحذير هنا
+         // Traiter l'avertissement ici
          Console.WriteLine($"Warning: {info.WarningType}, Description: {info.Description}");
      }
 }
 ```
 
-في هذه الفئة ، لدينا طريقة تحذير يتم استدعاؤها عند إصدار تحذير أثناء تحميل المستند. يمكنك تخصيص هذه الطريقة للتعامل مع التحذيرات بطريقة تناسبك ، مثل حفظها في ملف سجل أو عرضها في وحدة التحكم.
+Dans cette classe, nous avons une méthode Warning qui est appelée chaque fois qu'un avertissement est émis lors du chargement du document. Vous pouvez personnaliser cette méthode pour gérer les avertissements d'une manière qui vous convient, par exemple en les enregistrant dans un fichier journal ou en les affichant dans la console.
 
-## تحميل المستند باستخدام رد الاتصال للتحذيرات
+## Chargement d'un document à l'aide d'un rappel pour les avertissements
 
-الآن بعد أن قمنا بتكوين خيارات التحميل وإنشاء وظيفة رد الاتصال للتحذيرات ، يمكننا تحميل المستند باستخدام فئة المستند وتحديد خيارات التحميل. هنا مثال :
+Maintenant que nous avons configuré les options de chargement et créé la fonction de rappel pour les avertissements, nous pouvons charger le document à l'aide de la classe Document et spécifier les options de chargement. Voici un exemple :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Document.docx" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+Dans cet exemple, nous chargeons le document "Document.docx" situé dans le répertoire des documents en utilisant les options de chargement spécifiées.
 
-### مثال على كود المصدر لخيارات التحميل
+### Exemple de code source pour les options de chargement
 
-  LoadOptions مع وظيفة "رد الاتصال التحذيري" باستخدام Aspose.Words لـ .NET
+  LoadOptions avec la fonctionnalité "Warning Callback" utilisant Aspose.Words pour .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "رد الاتصال التحذير"
+// Configurez les options de chargement avec la fonction "Warning Callback"
 LoadOptions loadOptions = new LoadOptions { WarningCallback = new DocumentLoadingWarningCallback() };
 
-// قم بتحميل المستند باستخدام وظيفة رد الاتصال للتحذيرات
+// Charger le document à l'aide de la fonction de rappel pour les avertissements
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا الدليل ، تناولنا كيفية تحميل مستند باستخدام وظيفة رد الاتصال للتحذيرات عند التحميل باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. تتيح لك إدارة التحذيرات عند تحميل المستند أن تكون على علم بأي مشاكل أو تحذيرات تتعلق بالمستند الذي تم تحميله.
+Dans ce guide, nous avons expliqué comment charger un document à l'aide d'une fonction de rappel pour les avertissements au chargement avec la bibliothèque Aspose.Words pour .NET. En suivant les étapes fournies et en utilisant le code source C# fourni, vous pouvez facilement appliquer cette fonctionnalité dans votre application C#. La gestion des avertissements lors du chargement du document permet d'être informé des éventuels problèmes ou avertissements liés au document chargé.

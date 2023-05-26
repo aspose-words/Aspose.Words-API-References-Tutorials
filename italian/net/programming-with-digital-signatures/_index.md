@@ -1,23 +1,23 @@
 ---
-title: البرمجة بالتوقيعات الرقمية
-linktitle: البرمجة بالتوقيعات الرقمية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على مستند التوقيع ، وتوقيع المستند المشفر ، وإنشاء خط توقيع جديد وتوقيعه ، وتوقيع سطر التوقيع الحالي ، وتعيين معرف مزود التوقيع ،
+title: Programmazione con firme digitali
+linktitle: Programmazione con firme digitali
+second_title: Riferimento all'API Aspose.Words per .NET
+description: I tutorial contengono la firma del documento, la firma del documento crittografato, la creazione e la firma di una nuova riga della firma, la firma della riga della firma esistente, l'impostazione dell'ID del fornitore della firma,
 type: docs
 weight: 1440
 url: /it/net/programming-with-digital-signatures/
 ---
-يقدم Aspose.Words for .NET دروسًا تعليمية شاملة لإرشادك خلال برمجة التوقيعات الرقمية في مستندات Word الخاصة بك. توفر لك هذه البرامج التعليمية خطوات مفصلة لإضافة وإزالة والتحقق من التوقيعات الرقمية. ستتعلم كيفية إنشاء مفاتيح التوقيع وتطبيق التوقيعات الرقمية على المستندات الخاصة بك والتحقق من سلامة التوقيعات الموجودة. تمنحك البرامج التعليمية أيضًا تلميحات حول إدارة شهادات التوقيع وتخصيص إعدادات التوقيع وفقًا لاحتياجاتك الخاصة.
+Aspose.Words per .NET offre tutorial completi per guidarti attraverso la programmazione delle firme digitali nei tuoi documenti Word. Questi tutorial forniscono passaggi dettagliati per aggiungere, rimuovere e verificare le firme digitali. Imparerai come generare chiavi di firma, applicare firme digitali ai tuoi documenti e verificare l'integrità delle firme esistenti. I tutorial forniscono anche suggerimenti sulla gestione dei certificati di firma e sulla personalizzazione delle impostazioni di firma in base alle proprie esigenze specifiche.
 
-باستخدام هذه البرامج التعليمية ، ستتمكن من إتقان ميزات التوقيع الرقمي لـ Aspose.Words for .NET وإضافة طبقة أمان إضافية إلى مستندات Word الخاصة بك. سواء كنت ترغب في توقيع العقود أو التقارير أو أنواع المستندات الأخرى ، ستزودك هذه البرامج التعليمية بالمعرفة اللازمة للتنفيذ الفعال للتوقيعات الرقمية في مشاريعك. اتبع الإرشادات خطوة بخطوة واستكشف الميزات المتقدمة لضمان صحة مستنداتك وسلامتها.
+Con questi tutorial, sarai in grado di padroneggiare le funzionalità di firma digitale di Aspose.Words per .NET e aggiungere un ulteriore livello di sicurezza ai tuoi documenti Word. Sia che tu voglia firmare contratti, rapporti o altri tipi di documenti, questi tutorial ti forniranno le conoscenze per implementare efficacemente le firme digitali nei tuoi progetti. Segui le istruzioni dettagliate ed esplora le funzionalità avanzate per garantire l'autenticità e l'integrità dei tuoi documenti.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [توقيع الوثيقة](./sign-document/) | تعرف على كيفية توقيع مستند Word رقميًا باستخدام Aspose.Words for .NET. |
-| [توقيع وثيقة مشفرة](./signing-encrypted-document/) | تعرف على كيفية التوقيع رقميًا على مستند مشفر باستخدام Aspose.Words for .NET. |
-| [إنشاء وتوقيع خط توقيع جديد](./creating-and-signing-new-signature-line/) | تعرف على كيفية إنشاء سطر توقيع جديد والتوقيع عليه في مستند Word باستخدام Aspose.Words for .NET. |
-| [توقيع خط التوقيع الحالي](./signing-existing-signature-line/) | تعرف على كيفية توقيع سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET. |
-| [قم بتعيين معرف موفر التوقيع](./set-signature-provider-id/) | تعرف على كيفية تعيين معرف موفر التوقيع في مستند Word باستخدام Aspose.Words for .NET. |
-| [إنشاء سطر توقيع جديد وتعيين معرف الموفر](./create-new-signature-line-and-set-provider-id/) | تعرف على كيفية إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستند Word باستخدام Aspose.Words for .NET. |
-| [الوصول والتحقق من التوقيع](./access-and-verify-signature/) | تعرف على كيفية الوصول إلى التوقيعات الرقمية والتحقق منها في مستند Word باستخدام Aspose.Words for .NET. |
+| [Firma documento](./sign-document/) | Scopri come firmare digitalmente un documento Word con Aspose.Words per .NET. |
+| [Firma del documento crittografato](./signing-encrypted-document/) | Scopri come firmare digitalmente un documento crittografato con Aspose.Words per .NET. |
+| [Creazione e firma di una nuova linea di firma](./creating-and-signing-new-signature-line/) | Scopri come creare e firmare una nuova riga della firma in un documento Word con Aspose.Words per .NET. |
+| [Firma della riga della firma esistente](./signing-existing-signature-line/) | Scopri come firmare una riga della firma esistente in un documento di Word con Aspose.Words per .NET. |
+| [Imposta l'ID del fornitore della firma](./set-signature-provider-id/) | Scopri come impostare l'ID del provider di firma in un documento di Word con Aspose.Words per .NET. |
+| [Crea una nuova riga della firma e imposta l'ID del fornitore](./create-new-signature-line-and-set-provider-id/) | Scopri come creare una nuova riga della firma e impostare l'ID del provider in un documento di Word con Aspose.Words per .NET. |
+| [Accedi e verifica la firma](./access-and-verify-signature/) | Scopri come accedere e verificare le firme digitali in un documento Word con Aspose.Words per .NET. |

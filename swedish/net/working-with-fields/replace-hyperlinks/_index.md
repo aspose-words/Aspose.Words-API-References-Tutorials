@@ -1,33 +1,33 @@
 ---
-title: استبدل الارتباطات التشعبية
-linktitle: استبدل الارتباطات التشعبية
-second_title: Aspose.Words لمراجع .NET API
-description: استبدل الارتباطات التشعبية في مستندات Word باستخدام Aspose.Words for .NET. إرشادات خطوة بخطوة لاستبدال الارتباطات التشعبية.
+title: Ersätt hyperlänkar
+linktitle: Ersätt hyperlänkar
+second_title: Aspose.Words för .NET API Referens
+description: Ersätt hyperlänkar i Word-dokument med Aspose.Words för .NET. Steg-för-steg-instruktioner för att ersätta hyperlänkar.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/replace-hyperlinks/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية لاستبدال الارتباطات التشعبية باستخدام Aspose.Words لوظائف .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Här är en steg-för-steg-guide för att förklara följande C#-källkod för att ersätta hyperlänkar med Aspose.Words för .NET-funktionalitet. Se till att du har inkluderat Aspose.Words-biblioteket i ditt projekt innan du använder den här koden.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## Steg 1: Ange sökväg till dokumentkatalogen
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات الذي يحتوي على ملحق`Hyperlinks.docx` ملف.
+ Var noga med att ange rätt sökväg till din dokumentkatalog som innehåller`Hyperlinks.docx` fil.
 
-## الخطوة 2: قم بتحميل المستند الذي يحتوي على الارتباطات التشعبية
+## Steg 2: Ladda dokumentet som innehåller hyperlänkarna
 
 ```csharp
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- نحن هنا بصدد إنشاء مثيل لـ`Document` فئة من الملف المحدد.
+ Här skapar vi en instans av`Document` klass från den angivna filen.
 
-## الخطوة 3: تصفح الحقول للعثور على الارتباطات التشعبية
+## Steg 3: Bläddra i fälten för att hitta hyperlänkar
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -36,30 +36,30 @@ foreach(Field field in doc.Range.Fields)
      {
          FieldHyperlink hyperlink = (FieldHyperlink)field;
 
-         // قد تكون بعض الارتباطات التشعبية محلية (روابط للإشارات المرجعية داخل المستند) ، ونحن نتجاهلها.
+         // Vissa hyperlänkar kan vara lokala (länkar till bokmärken inuti dokumentet), vi ignorerar dem.
          if (hyperlink.SubAddress != null)
              keep on going;
 
-         hyperlink.Address = "http://www.aspose.com "؛
+         hyperlink.Address = "http://www.aspose.com";
          hyperlink.Result = "Aspose - The .NET & Java component editor";
      }
 }
 ```
 
- تمر هذه الحلقة عبر جميع الحقول في المستند بحثًا عن حقول النوع`FieldType.FieldHyperlink` . بمجرد العثور على حقل من هذا النوع ، نتحقق مما إذا كان رابطًا محليًا عن طريق التحقق من`SubAddress` ملكية. إذا لم يكن كذلك ، فإننا نستبدل عنوان الارتباط بـ`"http://www.aspose.com"`والنتيجة مع`"Aspose - The .NET & Java Component Editor"`.
+ Denna loop går igenom alla fält i dokumentet och letar efter typfält`FieldType.FieldHyperlink` . När ett fält av den här typen har hittats kontrollerar vi om det är en lokal länk genom att markera`SubAddress` fast egendom. Om inte, ersätter vi länkadressen med`"http://www.aspose.com"`och resultatet med`"Aspose - The .NET & Java Component Editor"`.
 
-## الخطوة 4: احفظ المستند المعدل
+## Steg 4: Spara det ändrade dokumentet
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
-أخيرًا ، نحفظ المستند المعدل بالارتباطات التشعبية المستبدلة في ملف محدد.
+Slutligen sparar vi det modifierade dokumentet med de ersatta hyperlänkarna till en specificerad fil.
 
-### مثال على شفرة المصدر لاستبدال الارتباطات التشعبية بـ Aspose.Words for .NET
+### Exempel på källkod för att ersätta hyperlänkar med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 Document doc = new Document(dataDir + "Hyperlinks.docx");
@@ -70,11 +70,11 @@ foreach(Field field in doc.Range.Fields)
      {
          FieldHyperlink hyperlink = (FieldHyperlink)field;
 
-         // قد تكون بعض الارتباطات التشعبية محلية (روابط للإشارات المرجعية داخل المستند) ، ونحن نتجاهلها.
+         // Vissa hyperlänkar kan vara lokala (länkar till bokmärken inuti dokumentet), vi ignorerar dem.
          if (hyperlink.SubAddress != null)
              keep on going;
 
-         hyperlink.Address = "http://www.aspose.com "؛
+         hyperlink.Address = "http://www.aspose.com";
          hyperlink.Result = "Aspose - The .NET & Java component editor";
      }
 }
@@ -82,4 +82,4 @@ foreach(Field field in doc.Range.Fields)
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
-هذا نموذج لشفرة مصدر لاستبدال الارتباطات التشعبية في مستند باستخدام Aspose.Words for .NET.
+Detta är exempel på källkod för att ersätta hyperlänkar i ett dokument med Aspose.Words för .NET.

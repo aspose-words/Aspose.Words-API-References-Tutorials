@@ -1,65 +1,65 @@
 ---
-title: نطاقات الحصول على نص
-linktitle: نطاقات الحصول على نص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخراج النص بسهولة من مستند Word باستخدام Aspose.Words for .NET.
+title: Aralıklar Metin Al
+linktitle: Aralıklar Metin Al
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesinden kolayca nasıl metin çıkaracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-ranges/ranges-get-text/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words القدرة على الحصول على النص الموجود في نطاقات محددة من المستند. في هذا الدليل ، سنرشدك إلى كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لاستخراج نص من مستند Word.
+Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, düzenlemek ve değiştirmek için güçlü bir kitaplıktır. Aspose.Words'ün sunduğu özellikler arasında, bir belgenin belirli aralıklarında yer alan metni alma yeteneği vardır. Bu kılavuzda, bir Word belgesinden metin ayıklamak için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك استخراج النص من نطاقات محددة.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle çalışmayı kolay ve verimli hale getiren popüler bir kitaplıktır. Belirli aralıklardan metin çıkarmak da dahil olmak üzere Word belgeleri oluşturmak, düzenlemek ve değiştirmek için çok çeşitli özellikler sunar.
 
-## تحميل مستند Word
+## Word belgesini yükleme
 
-تتمثل الخطوة الأولى في تحميل مستند Word الذي تريد استخراج النص منه. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+İlk adım, metni çıkarmak istediğiniz Word belgesini yüklemektir. Belgeyi kaynak dosyadan yüklemek için Document sınıfını kullanın. İşte bir örnek :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Document.docx" الموجود في دليل المستندات.
+Bu örnekte, belgeler dizininde bulunan "Document.docx" belgesini yüklüyoruz.
 
-## استخراج نص من نطاق معين
+## Belirli bir aralıktan metin çıkarma
 
-بمجرد تحميل المستند ، يمكنك الوصول إلى نطاقات مختلفة من المستند واستخراج النص المطلوب. في هذا المثال ، سنستخرج كل النص من المستند. إليك الطريقة:
+Belge yüklendikten sonra, belgenin farklı aralıklarına erişebilir ve istediğiniz metni çıkarabilirsiniz. Bu örnekte, tüm metni belgeden çıkaracağız. İşte nasıl:
 
 ```csharp
 string text = doc.Range.Text;
 ```
 
-في هذا المثال ، نستخدم خاصية Range لفئة Document للوصول إلى النطاق الكامل للمستند. ثم نستخدم خاصية Text للحصول على النص الموجود في هذا النطاق.
+Bu örnekte, belgenin tüm aralığına erişmek için Document sınıfının Range özelliğini kullanıyoruz. Ardından, o aralıkta bulunan metni almak için Text özelliğini kullanırız.
 
-## عرض النص المستخرج
+## Ayıklanan metnin görüntülenmesi
 
-الآن بعد أن استخرجنا النص من النطاق المحدد ، يمكننا عرضه أو معالجته حسب الحاجة بواسطة التطبيق الخاص بك. على سبيل المثال ، يمكنك عرضه على الشاشة أو حفظه في ملف الإخراج. هذا مثال لعرض النص المستخرج:
+Metni belirtilen aralıktan çıkardığımıza göre, uygulamanızın gerektirdiği şekilde görüntüleyebilir veya işleyebiliriz. Örneğin ekranda görüntüleyebilir veya bir çıktı dosyasına kaydedebilirsiniz. Ayıklanan metni görüntülemek için bir örnek:
 
 ```csharp
 Console.WriteLine(text);
 ```
 
-في هذا المثال ، نستخدم طريقة WriteLine لفئة Console لعرض النص المستخرج في وحدة التحكم.
+Bu örnekte, çıkarılan metni konsolda görüntülemek için Console sınıfının WriteLine yöntemini kullanıyoruz.
 
-### مثال على شفرة المصدر لميزة "الحصول على نص من النطاقات" مع Aspose.Words for .NET
+### Aspose.Words for .NET ile "Aralıklardan metin al" özelliği için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+//Word belgesini yükleyin
 Document doc = new Document(dataDir + "Document.docx");
 
-// استخرج النص من المستند
+// Metni belgeden ayıklayın
 string text = doc.Range.Text;
 
-// اعرض النص المستخرج
+// Ayıklanan metni göster
 Console.WriteLine(text);
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، قمنا بتغطية كيفية استخدام Aspose.Words for .NET لاستخراج نص من مستند Word باستخدام كود المصدر C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة استخراج نص من نطاقات محددة في مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع محتوى المستند ، مما يسمح لك بمعالجة واستخدام النص وفقًا لاحتياجاتك الخاصة.
+Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesinden metin çıkarmak için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Sağlanan adımları izleyerek, C# uygulamanızdaki Word belgelerinizdeki belirli aralıklardan kolayca metin çıkarabilirsiniz. Aspose.Words, metni özel ihtiyaçlarınıza göre işlemenize ve kullanmanıza izin vererek, belge içeriğiyle çalışmak için muazzam bir esneklik ve güç sunar.

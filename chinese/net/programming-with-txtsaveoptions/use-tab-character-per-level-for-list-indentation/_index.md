@@ -1,32 +1,32 @@
 ---
-title: استخدم حرف الجدولة لكل مستوى للمسافة البادئة للقائمة
-linktitle: استخدم حرف الجدولة لكل مستوى للمسافة البادئة للقائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام قوائم المسافات البادئة مع ميزة حروف الجدولة في Aspose.Words for .NET. وفر الوقت وحسّن سير عملك باستخدام هذه الميزة القوية.
+title: 每级使用制表符进行列表缩进
+linktitle: 每级使用制表符进行列表缩进
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何在 Aspose.Words for .NET 中使用带有制表符功能的缩进列表。使用这个强大的功能可以节省时间并改善您的工作流程。
 type: docs
 weight: 10
 url: /zh/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لميزة "استخدام حرف جدولة واحد لكل مستوى من أجل المسافة البادئة للقائمة" مع Aspose.Words for .NET. تتيح لك هذه الميزة تطبيق أحرف الجدولة لوضع مسافة بادئة للقوائم في كل مستوى ، مما يوفر قدرًا أكبر من المرونة والتحكم في مظهر المستندات الخاصة بك.
+在本教程中，我们将探索 Aspose.Words for .NET 中为“每级使用一个制表符用于列表缩进”功能提供的 C# 源代码。此功能允许您将制表符应用于每个级别的缩进列表，从而提供更大的灵活性和对文档外观的控制。
 
-## الخطوة الأولى: تهيئة البيئة
+## 第 1 步：设置环境
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+在您开始之前，请确保您已经使用 Aspose.Words for .NET 设置了您的开发环境。确保您已经添加了必要的引用并导入了适当的命名空间。
 
-## الخطوة 2: إنشاء المستند والمولد
+## 第 2 步：创建文档和生成器
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- في هذه الخطوة ، نقوم بإنشاء ملف`Document` كائن وما يرتبط بها`DocumentBuilder` هدف. ستسمح لنا هذه الكائنات بمعالجة وإنشاء وثيقتنا.
+在这一步中，我们创建一个新的`Document`对象和关联的`DocumentBuilder`目的。这些对象将允许我们操作和生成我们的文档。
 
-## الخطوة 3: إنشاء قائمة بثلاثة مستويات من المسافة البادئة
+## 第 3 步：创建具有三级缩进的列表
 
 ```csharp
 builder.ListFormat.ApplyNumberDefault();
@@ -37,9 +37,9 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
- في هذه الخطوة ، نطبق التنسيق الافتراضي لأرقام القائمة باستخدام امتداد`ApplyNumberDefault()` طريقة منسق القائمة. بعد ذلك ، نضيف ثلاثة عناصر إلى قائمتنا باستخدام أداة إنشاء المستندات`Writeln()` و`Write()` طُرق. نحن نستخدم ال`ListIndent()` طريقة لزيادة المسافة البادئة في كل مستوى.
+在此步骤中，我们使用列表编号的默认格式`ApplyNumberDefault()`列表格式化程序的方法。接下来，我们使用文档生成器的将三个项目添加到我们的列表中`Writeln()`和`Write()`方法。我们使用`ListIndent()`在每个级别增加缩进的方法。
 
-## الخطوة 4: تكوين خيارات التسجيل
+## 第 4 步：配置录制选项
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -47,30 +47,30 @@ saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- في هذه الخطوة ، نقوم بتهيئة الخيارات لحفظ المستند. نخلق ملف`TxtSaveOptions` كائن وتعيين`ListIndentation.Count`الخاصية إلى 1 لتحديد عدد أحرف الجدولة لكل مستوى مسافة بادئة. قمنا أيضًا بتعيين ملف`ListIndentation.Character` إلى "\ t" لتحديد أننا نريد استخدام أحرف الجدولة.
+在此步骤中，我们配置用于保存文档的选项。我们创造一个新的`TxtSaveOptions`对象并设置`ListIndentation.Count`属性设置为 1 以指定每个缩进级别的制表符数。我们还设置了`ListIndentation.Character`属性为 '\t' 以指定我们要使用制表符。
 
-## الخطوة 5: احفظ المستند
+## 第 5 步：保存文档
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نقوم بحفظ المستند بخيارات الحفظ المحددة. نحن نستخدم ال`Save()` طريقة المستند التي تمر بالمسار الكامل لملف الإخراج وخيارات الحفظ.
+在这最后一步中，我们使用指定的保存选项保存文档。我们使用`Save()`传递输出文件的完整路径和保存选项的文档方法。
 
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لإنشاء مستند به مسافة بادئة للقائمة باستخدام أحرف الجدولة. سيتم حفظ ملف الإخراج في الدليل المحدد باسم "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt".
+现在您可以运行源代码以使用制表符生成带有列表缩进的文档。输出文件将保存在名称为“WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt”的指定目录中。
 
-### مثال على مصدر التعليمات البرمجية لميزة استخدام حرف جدولة واحد لكل مستوى لميزة المسافة البادئة للقائمة مع Aspose.Words for .NET:
+### Aspose.Words for .NET 的列表缩进功能每级使用一个制表符的示例代码源：
 
 ```csharp
 
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+//创建具有三级缩进的列表
 builder.ListFormat.ApplyNumberDefault();
 builder. Writen("Element 1");
 builder.ListFormat.ListIndent();
@@ -86,4 +86,4 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListInde
 
 ```
 
-الآن بعد أن انتهيت من إنشاء المستند مع المسافة البادئة للقائمة باستخدام أحرف الجدولة ، يمكنك استخدام Markdown لتنسيق محتوى مقالتك. تأكد من استخدام علامات التنسيق المناسبة لتمييز العناوين والعناوين الفرعية وشفرة المصدر المضمنة.
+现在您已经完成使用制表符生成带有列表缩进的文档，您可以使用 Markdown 来格式化您的文章内容。请务必使用适当的格式标签来突出标题、副标题和包含的源代码。

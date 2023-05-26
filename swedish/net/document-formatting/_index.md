@@ -1,24 +1,24 @@
 ---
-title: تنسيق المستند
-linktitle: تنسيق المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على مسافة بين النص الآسيوي واللاتيني ومجموعة فواصل أسطر الطباعة الآسيوية وتنسيق الفقرة وتنسيق قائمة متعددة المستويات وتطبيق نمط الفقرة.
+title: Dokumentformatering
+linktitle: Dokumentformatering
+second_title: Aspose.Words för .NET API Referens
+description: Handledningarna innehåller mellanrum mellan asiatisk och latinsk text, asiatisk typografi radbrytningsgrupp, styckeformatering, listformatering på flera nivåer och tillämpa styckestil.
 type: docs
 weight: 1490
 url: /sv/net/document-formatting/
 ---
 
-يغطي البرنامج التعليمي جوانب مختلفة مثل تنسيق النص والفقرات والجداول والصور وغير ذلك الكثير. يوفر أمثلة واضحة للكود وشروحات خطوة بخطوة لإرشادك خلال عملية تنسيق المستندات باستخدام Aspose.Words. سواء كنت مبتدئًا أو مطورًا متمرسًا ، سيكون هذا البرنامج التعليمي مصدرًا قيمًا لتحسين مهارات تنسيق المستندات باستخدام Aspose.Words for .NET.
+Handledningen täcker olika aspekter som formatering av text, stycken, tabeller, bilder och mycket mer. Den ger tydliga kodexempel och steg-för-steg-förklaringar som leder dig genom processen att formatera dokument med Aspose.Words. Oavsett om du är nybörjare eller en erfaren utvecklare kommer den här handledningen att vara en värdefull resurs för att förbättra dina färdigheter i dokumentformatering med Aspose.Words för .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [المسافة بين النص الآسيوي واللاتيني](./space-between-asian-and-latin-text/) | تعرف على كيفية ضبط المسافة تلقائيًا بين النص الآسيوي واللاتيني في مستندك باستخدام Aspose.Words for .NET. |
-| [مجموعة فواصل خطوط الطباعة الآسيوية](./asian-typography-line-break-group/) | تعرف على كيفية استخدام مجموعة فواصل أسطر الطباعة الآسيوية مع Aspose.Words for .NET. |
-| [تنسيق الفقرة](./paragraph-formatting/) | تعرف على كيفية تطبيق التنسيق المخصص على فقراتك باستخدام Aspose.Words for .NET. |
-| [تنسيق قائمة متعددة المستويات](./multilevel-list-formatting/) | تعرف على كيفية إنشاء قائمة متعددة المستويات وتطبيق تنسيق مخصص باستخدام Aspose.Words for .NET. |
-| [تطبيق نمط الفقرة](./apply-paragraph-style/) | تعرف على كيفية تطبيق نمط فقرة باستخدام Aspose.Words for .NET. |
-| [تطبيق الحدود والتظليل على الفقرة](./apply-borders-and-shading-to-paragraph/) | تعرف على كيفية تطبيق الحدود والتظليل على فقرة باستخدام Aspose.Words for .NET. |
-| [تغيير تباعد الفقرات الآسيوية والمسافات البادئة](./change-asian-paragraph-spacing-and-indents/) | تعرف على كيفية تغيير تباعد الفقرات الآسيوية والمسافات البادئة باستخدام Aspose.Words for .NET. |
-| [المفاجئة إلى الشبكة](./snap-to-grid/) | دليل خطوة بخطوة لشرح كود مصدر C # لميزة Snap to Grid باستخدام Aspose.Words for .NET. |
-| [احصل على فاصل نمط الفقرة](./get-paragraph-style-separator/) | تعرف على كيفية الحصول على فاصل نمط الفقرة باستخدام Aspose.Words for .NET. |
+| [Utrymmet mellan asiatisk och latinsk text](./space-between-asian-and-latin-text/) | Lär dig hur du automatiskt justerar utrymmet mellan asiatisk och latinsk text i ditt dokument med Aspose.Words för .NET. |
+| [Asian Typography Line Break Group](./asian-typography-line-break-group/) | Lär dig hur du använder asiatisk typografi radbrytningsgrupp med Aspose.Words för .NET. |
+| [Styckeformatering](./paragraph-formatting/) | Lär dig hur du använder anpassad formatering på dina stycken med Aspose.Words för .NET. |
+| [Listformatering på flera nivåer](./multilevel-list-formatting/) | Lär dig hur du skapar en flernivålista och använder anpassad formatering med Aspose.Words för .NET. |
+| [Använd styckeformat](./apply-paragraph-style/) | Lär dig hur du använder en styckestil med Aspose.Words för .NET. |
+| [Applicera kanter och skuggning på stycke](./apply-borders-and-shading-to-paragraph/) | Lär dig hur du använder kanter och skuggning på ett stycke med Aspose.Words för .NET. |
+| [Ändra asiatiskt styckeavstånd och indrag](./change-asian-paragraph-spacing-and-indents/) | Lär dig hur du ändrar asiatiskt styckeavstånd och indrag med Aspose.Words för .NET. |
+| [Snap To Grid](./snap-to-grid/) | Steg för steg guide för att förklara C#-källkoden för Snap to Grid-funktionen med Aspose.Words för .NET. |
+| [Skaffa Paragraph Style Separator](./get-paragraph-style-separator/) | Lär dig hur du får styckestilseparatorn med Aspose.Words för .NET. |

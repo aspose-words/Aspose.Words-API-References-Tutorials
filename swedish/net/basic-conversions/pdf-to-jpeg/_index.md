@@ -1,41 +1,41 @@
 ---
-title: قوات الدفاع الشعبي إلى Jpeg
-linktitle: قوات الدفاع الشعبي إلى Jpeg
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات PDF إلى صور JPEG باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Pdf till jpeg
+linktitle: Pdf till jpeg
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du konverterar PDF-dokument till JPEG-bilder med Aspose.Words för .NET. Steg-för-steg handledning med exempel på källkod.
 type: docs
 weight: 10
 url: /sv/net/basic-conversions/pdf-to-jpeg/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند PDF إلى صور JPEG. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+I denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att konvertera ett PDF-dokument till JPEG-bilder. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
-## الخطوة 1: تهيئة كائن المستند
+## Steg 1: Initiera dokumentobjektet
 
- أولاً ، قم بتهيئة ملف`Document` كائن من خلال توفير المسار إلى مستند PDF الخاص بك:
+ Initiera först`Document` objekt genom att ange sökvägen till ditt PDF-dokument:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Pdf Document.pdf");
 ```
 
-## الخطوة 2: حفظ المستند بصيغة Jpeg Images
+## Steg 2: Spara dokumentet som Jpeg-bilder
 
- بعد ذلك ، احفظ المستند كصور Jpeg عن طريق استدعاء ملف`Save` طريقة على`Document` الكائن وتوفير المسار واسم الملف لصور Jpeg الناتجة:
+ Spara sedan dokumentet som Jpeg-bilder genom att anropa`Save` metod på`Document` objekt och ange sökvägen och filnamnet för utdata Jpeg-bilder:
 
 ```csharp
 doc.Save(dataDir + "BaseConversions.PdfToJpeg.jpeg");
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند PDF إلى صور Jpeg باستخدام Aspose.Words for .NET.
+Det är allt! Du har framgångsrikt konverterat ett PDF-dokument till Jpeg-bilder med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لـ Pdf To Jpeg باستخدام Aspose.Words for .NET
+### Exempel på källkod för Pdf till Jpeg med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Pdf Document.pdf");
 
@@ -43,4 +43,4 @@ doc.Save(dataDir + "BaseConversions.PdfToJpeg.jpeg");
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Använd gärna den här koden i dina egna projekt och modifiera den efter dina specifika krav.

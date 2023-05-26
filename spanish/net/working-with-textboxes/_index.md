@@ -1,17 +1,17 @@
 ---
-title: العمل مع مربعات النص
-linktitle: العمل مع مربعات النص
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إنشاء ارتباط ، والتحقق من التسلسل ، وكسر الارتباط باستخدام Aspose.Words for .NET.
+title: Trabajar con cuadros de texto
+linktitle: Trabajar con cuadros de texto
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales contienen crear un enlace, verificar la secuencia y romper un enlace usando Aspose.Words para .NET.
 type: docs
 weight: 1320
 url: /es/net/working-with-textboxes/
 ---
-العمل مع Textboxes هو مورد شامل يأخذك خطوة بخطوة من خلال العمل مع مربعات النص في مستندات Word باستخدام مكتبة Aspose.Words لـ .NET. تعلمك البرامج التعليمية كيفية إضافة وتعديل وحذف مربعات النص ووضعها وتحديد حجمها ونمطها وخصائصها. ستتعلم أيضًا كيفية إدارة المحتوى في مربعات النص ، بما في ذلك إضافة النص وتحريره وإضافة القوائم والجداول وعناصر أخرى. يعد هذا المورد ضروريًا للمطورين الذين يرغبون في معالجة مربعات النص في مستندات Word باستخدام Aspose.Words for .NET ، مما يوفر مزيدًا من المرونة والتخصيص في إنشاء مستندات احترافية.
+Trabajar con cuadros de texto es un recurso integral que lo lleva paso a paso a través del trabajo con cuadros de texto en documentos de Word utilizando la biblioteca Aspose.Words para .NET. Los tutoriales le enseñan cómo agregar, modificar y eliminar cuadros de texto, posicionarlos, definir su tamaño, estilo y propiedades. También aprenderá a administrar contenido en cuadros de texto, lo que incluye agregar y editar texto, agregar listas, tablas y otros elementos. Este recurso es esencial para los desarrolladores que deseen manipular cuadros de texto en documentos de Word utilizando Aspose.Words para .NET, lo que brinda una mayor flexibilidad y personalización en la creación de documentos profesionales.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [إنشاء ارتباط](./create-a-link/) | تعرف على كيفية إنشاء رابط بين TextBoxes في مستند Word باستخدام Aspose.Words for .NET. |
-| [تحقق من التسلسل](./check-sequence/) | تعرف على كيفية التحقق من تسلسل TextBoxes في مستند Word باستخدام Aspose.Words for .NET. |
-| [قطع الارتباط](./break-a-link/) | تعرف على كيفية فصل الروابط في مستند Word باستخدام Aspose.Words for .NET. |
+| [Crear un enlace](./create-a-link/) | Aprenda a crear un vínculo entre cuadros de texto en un documento de Word con Aspose.Words para .NET. |
+| [Comprobar secuencia](./check-sequence/) | Aprenda a verificar la secuencia de cuadros de texto en un documento de Word con Aspose.Words para .NET. |
+| [romper un enlace](./break-a-link/) | Aprenda a romper vínculos en un documento de Word con Aspose.Words para .NET. |

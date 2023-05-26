@@ -1,42 +1,42 @@
 ---
-title: إنشاء تذييل الرأس
-linktitle: إنشاء تذييل الرأس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء رؤوس الصفحات وتذييلاتها في مستندات Word باستخدام Aspose.Words for .NET. تخصيص الرؤوس والتذييلات لكل صفحة.
+title: Crear encabezado de pie de página
+linktitle: Crear encabezado de pie de página
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a crear encabezados y pies de página en sus documentos de Word con Aspose.Words para .NET. Personalice encabezados y pies de página para cada página.
 type: docs
 weight: 10
 url: /es/net/working-with-headers-and-footers/create-header-footer/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية لإنشاء رؤوس وتذييلات باستخدام Aspose.Words لوظائف .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Aquí hay una guía paso a paso para explicar el siguiente código fuente de C# para crear encabezados y pies de página usando la funcionalidad Aspose.Words para .NET. Asegúrese de haber incluido la biblioteca Aspose.Words en su proyecto antes de usar este código.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## Paso 1: establecer la ruta del directorio del documento
 
 ```csharp
-// المسار إلى دليل المستندات.
+// La ruta al directorio de documentos.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
+Asegúrese de especificar la ruta correcta a su directorio de documentos donde se guardará el documento editado.
 
-## الخطوة 2: قم بإنشاء مستند ومولد مستندات
+## Paso 2: Crear un documento y un generador de documentos
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- هنا نقوم بإنشاء مثيل لـ`Document` فئة ومثيل`DocumentBuilder` فئة تسمح لنا بمعالجة المستند وإضافة عناصر.
+ Aquí creamos una instancia de la`Document` clase y una instancia de la`DocumentBuilder` class que nos permitirá manipular el documento y añadir elementos.
 
-## الخطوة 3: تعيين معلمات الصفحة والعنوان الأول
+## Paso 3: establece los parámetros de la página y el primer encabezado
 
 ```csharp
 Section currentSection = builder.CurrentSection;
 PageSetup pageSetup = currentSection.PageSetup;
 
-// حدد ما إذا كنا نريد أن تختلف رؤوس / تذييلات الصفحة الأولى عن الصفحات الأخرى.
-// يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter لتحديدها
-// رؤوس / تذييلات مختلفة للصفحات الفردية والزوجية.
+// Especificar si queremos que los encabezados/pies de página de la primera página sean diferentes de las otras páginas.
+// También puede usar la propiedad PageSetup.OddAndEvenPagesHeaderFooter para especificar
+// diferentes encabezados/pies de página para páginas pares e impares.
 pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
 
@@ -53,9 +53,9 @@ pageSetup.HeaderDistance = 20;
 builder. MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 ```
 
-نقوم بتعيين معلمات الصفحة ، بما في ذلك مسافة الرأس ، ثم ننتقل إلى العنوان الرئيسي (`HeaderPrimary`). نستخدم منشئ المستندات لإضافة نص وتنسيق العنوان.
+Establecemos los parámetros de la página, incluida la distancia del encabezado, y luego pasamos al encabezado principal (`HeaderPrimary`). Usamos el generador de documentos para agregar texto y formatear el encabezado.
 
-## الخطوة 4: أدخل صورة ونصًا في العنوان الرئيسي
+## Paso 4: Inserta una imagen y texto en el encabezado principal
 
 ```csharp
 builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
@@ -68,9 +68,9 @@ builder.Write("Aspose.Words - Building headers/footers.");
 builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 ```
 
-نستخدم منشئ المستندات لإدراج صورة في الزاوية اليسرى العلوية من الرأس الرئيسي ، ثم نضيف بعض النص المحاذي لليمين.
+Usamos el generador de documentos para insertar una imagen en la esquina superior izquierda del encabezado principal, luego agregamos texto alineado a la derecha.
 
-## الخطوة 5: قم بإدراج جدول في التذييل الرئيسي
+## Paso 5: Inserta una tabla en el pie de página principal
 
 ```csharp
 builder.StartTable();
@@ -102,7 +102,7 @@ builder.EndTable();
 builder.MoveToDocumentEnd();
 ```
 
-## الخطوة 6: إضافة صفحة جديدة وتعيين الرؤوس / التذييلات
+## Paso 6: agregue una nueva página y establezca encabezados/pies de página
 
 ```csharp
 builder. InsertBreak(BreakType.PageBreak);
@@ -111,17 +111,17 @@ builder.InsertBreak(BreakType.SectionBreakNewPage);
 currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-//لا يحتاج هذا القسم إلى رأس / تذييل مختلف للصفحة الأولى ، نحتاج فقط إلى صفحة عنوان واحدة في المستند ،
-// وقد تم بالفعل تحديد رأس / تذييل الصفحة في القسم السابق.
+//Esta sección no necesita un encabezado/pie de página diferente para la primera página, solo necesitamos una página de título en el documento,
+// y el encabezado/pie de página de esta página ya se definió en la sección anterior.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// يعرض هذا القسم رؤوس / تذييلات القسم السابق افتراضيًا ، استدعاء currentSection.HeadersFooters.LinkToPrevious (خطأ) لكسر هذا الرابط ،
-// يختلف عرض الصفحة بالنسبة للقسم الجديد ، لذلك نحتاج إلى تعيين عروض خلايا مختلفة لجدول تذييل الصفحة.
+// Esta sección muestra los encabezados/pies de página de la sección anterior de forma predeterminada, llame a currentSection.HeadersFooters.LinkToPrevious(false) para romper este enlace,
+// el ancho de página es diferente para la nueva sección, por lo que debemos establecer diferentes anchos de celda para una tabla de pie de página.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-// إذا أردنا استخدام الرؤوس / التذييلات الموجودة بالفعل لهذا القسم ،
-// ولكن مع بعض التغييرات الطفيفة ، قد يكون من المنطقي نسخ الرؤوس / التذييلات
-// من القسم السابق وتطبيق التغييرات اللازمة حيث نريدها.
+// Si queremos utilizar los encabezados/pies de página ya existentes para esta sección,
+// pero con algunos cambios menores, podría tener sentido copiar los encabezados/pies de página
+// del apartado anterior y aplicar los cambios necesarios donde queramos.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -130,16 +130,16 @@ Row row = primaryFooter.Tables[0].FirstRow;
 row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-// احفظ المستند
+// Guardar el documento
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
- نضيف فاصل صفحة وفاصل مقطعي لإنشاء صفحة جديدة حيث ستكون الرؤوس / التذييلات الأولية مرئية. قمنا بتعيين معلمات القسم الجديد ، ثم نستخدم الامتداد`CopyHeadersFootersFromPreviousSection`طريقة لنسخ الرؤوس / التذييلات من القسم السابق. أخيرًا ، قمنا بتعيين عرض الخلية المناسب لجدول التذييل الرئيسي وحفظنا المستند.
+ Agregamos un salto de página y un salto de sección para crear una nueva página donde los encabezados/pies de página principales serán visibles. Establecemos los parámetros para la nueva sección, luego usamos el`CopyHeadersFootersFromPreviousSection`para copiar los encabezados/pies de página de la sección anterior. Finalmente, establecemos los anchos de celda apropiados para la tabla de pie de página principal y guardamos el documento.
 
-### مثال على كود المصدر لإنشاء الرؤوس والتذييلات باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para crear encabezados y pies de página con Aspose.Words para .NET
 
 ```csharp
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 	
 	Document doc = new Document();
@@ -147,9 +147,9 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	Section currentSection = builder.CurrentSection;
 	PageSetup pageSetup = currentSection.PageSetup;
-	// حدد ما إذا كنا نريد أن تختلف رؤوس / تذييلات الصفحة الأولى عن الصفحات الأخرى.
-	// يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter لتحديدها
-	// رؤوس / تذييلات مختلفة للصفحات الفردية والزوجية.
+	// Especificar si queremos que los encabezados/pies de página de la primera página sean diferentes de otras páginas.
+	// También puede usar la propiedad PageSetup.OddAndEvenPagesHeaderFooter para especificar
+	// diferentes encabezados/pies de página para páginas pares e impares.
 	pageSetup.DifferentFirstPageHeaderFooter = true;
 	pageSetup.HeaderDistance = 20;
 
@@ -165,8 +165,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 	pageSetup.HeaderDistance = 20;
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	// أدخل صورة موضوعة في الزاوية العلوية / اليسرى من الرأس.
-	// تم ضبط المسافة من الحواف العلوية / اليسرى للصفحة على 10 نقاط.
+	// Inserte una imagen posicionada en la esquina superior izquierda del encabezado.
+	// La distancia desde los bordes superior/izquierdo de la página se establece en 10 puntos.
 	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
 		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
@@ -176,8 +176,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	// نستخدم جدولاً يحتوي على خليتين لعمل جزء واحد من النص على السطر (مع ترقيم الصفحات).
-	// تتم محاذاة إلى اليسار ، ويتم محاذاة الجزء الآخر من النص (مع حقوق النشر) إلى اليمين.
+	// Usamos una tabla con dos celdas para hacer una parte del texto en la línea (con numeración de páginas).
+	// Para alinear a la izquierda, y la otra parte del texto (con derechos de autor) para alinear a la derecha.
 	builder.StartTable();
 
 	builder.CellFormat.ClearFormatting();
@@ -186,7 +186,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	// يستخدم حقلي PAGE و NUMPAGES لحساب تلقائي لرقم الصفحة الحالية والعديد من الصفحات.
+	// Utiliza los campos PAGE y NUMPAGES para calcular automáticamente el número de página actual y muchas páginas.
 	builder.Write("Page ");
 	builder.InsertField("PAGE", "");
 	builder.Write(" of ");
@@ -207,25 +207,25 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.MoveToDocumentEnd();
 
-	// قم بعمل فاصل صفحة لإنشاء صفحة ثانية تظهر عليها الرؤوس / التذييلات الأساسية.
+	// Haga un salto de página para crear una segunda página en la que se verán los encabezados/pies de página principales.
 	builder.InsertBreak(BreakType.PageBreak);
 	builder.InsertBreak(BreakType.SectionBreakNewPage);
 
 	currentSection = builder.CurrentSection;
 	pageSetup = currentSection.PageSetup;
 	pageSetup.Orientation = Orientation.Landscape;
-	//لا يحتاج هذا القسم إلى رأس / تذييل مختلف للصفحة الأولى ، فنحن نحتاج فقط إلى صفحة عنوان واحدة في المستند ،
-	// وقد تم بالفعل تحديد رأس / تذييل الصفحة في القسم السابق.
+	//Esta sección no necesita un encabezado/pie de página diferente en la primera página, solo necesitamos una página de título en el documento,
+	// y el encabezado/pie de página de esta página ya se definió en la sección anterior.
 	pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// يعرض هذا القسم الرؤوس / التذييلات من القسم السابق
-	// بشكل افتراضي ، قم باستدعاء currentSection.HeadersFooters.LinkToPrevious (false) لإلغاء عرض هذه الصفحة
-	// يختلف عن القسم الجديد ، وبالتالي نحتاج إلى تعيين عروض خلايا مختلفة لجدول تذييل.
+	// Esta sección muestra encabezados/pies de página de la sección anterior
+	// por defecto llama a currentSection.HeadersFooters.LinkToPrevious(false) para cancelar el ancho de esta página
+	// es diferente para la nueva sección y, por lo tanto, debemos establecer diferentes anchos de celda para una tabla de pie de página.
 	currentSection.HeadersFooters.LinkToPrevious(false);
 
-	// إذا أردنا استخدام مجموعة الرأس / التذييل الموجودة بالفعل لهذا القسم.
-	// ولكن مع بعض التعديلات الطفيفة ، قد يكون من المناسب نسخ الرؤوس / التذييلات
-	// من القسم السابق وتطبيق التعديلات اللازمة حيث نريدها.
+	// Si queremos usar el conjunto de encabezado/pie de página ya existente para esta sección.
+	// Pero con algunas modificaciones menores, puede ser conveniente copiar encabezados/pies de página
+	// del apartado anterior y aplicar las modificaciones necesarias donde queramos.
 	CopyHeadersFootersFromPreviousSection(currentSection);
 
 	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];

@@ -1,34 +1,34 @@
 ---
-title: إظهار الأخطاء النحوية والإملائية
-linktitle: إظهار الأخطاء النحوية والإملائية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتمكين عرض الأخطاء النحوية والإملائية في مستند باستخدام Aspose.Words for .NET.
+title: 显示语法和拼写错误
+linktitle: 显示语法和拼写错误
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 启用文档中语法和拼写错误显示的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-document-options-and-settings/show-grammatical-and-spelling-errors/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتمكين عرض الأخطاء النحوية والإملائية باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة عرض الأخطاء النحوية والإملائية في المستند.
+在本教程中，我们将引导您完成 C# 源代码，以便使用 Aspose.Words for .NET 显示语法和拼写错误。此功能允许您查看文档中的语法和拼写错误。
 
-## الخطوة 1: إعداد المشروع
+## 第 1 步：项目设置
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+首先，在您喜欢的 IDE 中创建一个新的 C# 项目。确保在您的项目中引用了 Aspose.Words for .NET 库。
 
-## الخطوة الثانية: تحميل المستند
+## 第 2 步：装入文档
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد عرض الأخطاء النحوية والإملائية له. استخدم الكود التالي لتحميل المستند:
+在此步骤中，我们将加载要显示语法和拼写错误的 Word 文档。使用以下代码加载文档：
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+代替`"YOUR DOCUMENTS DIRECTORY"`使用文档所在目录的实际路径。
 
-## الخطوة 3: تفعيل عرض الخطأ
+## 第 3 步：启用错误显示
 
-سنقوم الآن بتمكين عرض الأخطاء النحوية والإملائية في المستند. استخدم الكود التالي لتمكين عرض الأخطاء:
+现在我们将启用文档中语法和拼写错误的显示。使用以下代码启用错误显示：
 
 ```csharp
 doc. ShowGrammaticalErrors = true;
@@ -37,13 +37,13 @@ doc. ShowSpellingErrors = true;
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ShowGrammaticalAndSpellingErrors.docx");
 ```
 
-يتيح هذا الرمز عرض الأخطاء النحوية (`ShowGrammaticalErrors`) وأخطاء إملائية (`ShowSpellingErrors`) في المستند.
+此代码启用语法错误的显示（`ShowGrammaticalErrors`) 和拼写错误 (`ShowSpellingErrors`) 在文档中。
 
-### مثال على شفرة المصدر لإظهار الأخطاء النحوية والإملائية باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 显示语法和拼写错误的示例源代码
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
@@ -54,6 +54,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ShowGrammaticalAndSpel
 
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+请务必在`dataDir`多变的。
 
-لقد تعلمت الآن كيفية تمكين عرض الأخطاء النحوية والإملائية في مستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تمكين هذه الميزة في مستنداتك الخاصة.
+您现在已经学习了如何使用 Aspose.Words for .NET 在文档中显示语法和拼写错误。按照本教程中提供的分步指南，您可以轻松地在自己的文档中启用此功能。

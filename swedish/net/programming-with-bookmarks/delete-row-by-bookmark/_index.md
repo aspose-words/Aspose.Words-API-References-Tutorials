@@ -1,40 +1,40 @@
 ---
-title: حذف الصف حسب الإشارة المرجعية
-linktitle: حذف الصف حسب الإشارة المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حذف صف جدول بناءً على إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET.
+title: Ta bort rad efter bokmärke
+linktitle: Ta bort rad efter bokmärke
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du tar bort en tabellrad baserat på ett specifikt bokmärke i ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 
-في هذه المقالة ، سوف نستكشف كود المصدر C # أعلاه لفهم كيفية استخدام وظيفة حذف الصف حسب الإشارة المرجعية في Aspose.Words لمكتبة .NET. تتيح لك هذه الميزة حذف صف جدول بناءً على إشارة مرجعية معينة في المستند.
+I den här artikeln kommer vi att utforska ovanstående C#-källkod för att förstå hur man använder funktionen Ta bort rad efter bokmärke i Aspose.Words för .NET-biblioteket. Den här funktionen låter dig ta bort en tabellrad baserat på ett specifikt bokmärke i ett dokument.
 
-## المتطلبات الأساسية
+## Förutsättningar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundläggande kunskaper i C#-språket.
+- .NET-utvecklingsmiljö med Aspose.Words-biblioteket installerat.
 
-## الخطوة 1: الحصول على الإشارة المرجعية
+## Steg 1: Skaffa bokmärket
 
- نحن نستخدم ال`Bookmarks`خاصية نطاق المستند للحصول على الإشارة المرجعية المحددة التي نريد استخدامها لحذف صف الجدول:
+ Vi använder`Bookmarks`egenskapen för dokumentintervallet för att få det specifika bokmärke vi vill använda för att ta bort tabellraden:
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
 ```
 
-## الخطوة 2: حذف صف الجدول
+## Steg 2: Ta bort tabellraden
 
- نحن نستخدم ال`GetAncestor` طريقة الحصول على`Row` اكتب العنصر الأصل للإشارة المرجعية. بعد ذلك ، نستخدم ملف`Remove` طريقة إزالة صف الجدول:
+ Vi använder`GetAncestor` metod för att få`Row` skriv bokmärkets överordnade element. Därefter använder vi`Remove` metod för att ta bort tabellraden:
 
 ```csharp
 Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
 row?.Remove();
 ```
 
-### مثال على شفرة المصدر لـ Delete Row By Bookmark باستخدام Aspose.Words for .NET
+### Exempel på källkod för Ta bort rad efter bokmärke med Aspose.Words för .NET
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح حذف صف جدول بناءً على إشارة مرجعية معينة باستخدام Aspose.Words for .NET:
+Här är det fullständiga källkodsexemplet för att demonstrera radering av en tabellrad baserat på ett specifikt bokmärke med Aspose.Words för .NET:
 
 ```csharp
 
@@ -45,6 +45,6 @@ row?.Remove();
         
 ```
 
-## خاتمة
+## Slutsats
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام وظيفة حذف الصف حسب الإشارة المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لحذف صف جدول بناءً على إشارة مرجعية محددة في المستند.
+I den här artikeln har vi utforskat C#-källkoden för att förstå hur man använder funktionen Ta bort rad efter bokmärke i Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att ta bort en tabellrad baserat på ett specifikt bokmärke i ett dokument.

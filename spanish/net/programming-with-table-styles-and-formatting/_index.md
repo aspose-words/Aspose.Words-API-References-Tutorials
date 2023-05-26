@@ -1,34 +1,34 @@
 ---
-title: البرمجة مع أنماط الجدول والتنسيق
-linktitle: البرمجة مع أنماط الجدول والتنسيق
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على الحصول على مسافة بين النص المحيط بالجدول ، وتطبيق حدود المخطط التفصيلي ، وإنشاء جدول بحدود ، وتعديل تنسيق الصف ، وتطبيق تنسيق الصف ، وتعيين c
+title: Programación con estilos de tabla y formato
+linktitle: Programación con estilos de tabla y formato
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales contienen obtener la distancia entre el texto que rodea la tabla, aplicar el borde del contorno, crear una tabla con bordes, modificar el formato de fila, aplicar el formato de fila, establecer c
 type: docs
 weight: 1580
 url: /es/net/programming-with-table-styles-and-formatting/
 ---
-توفر Aspose.Words for .NET Tutorials on Programming with Table Styles and Formatting موردًا قيمًا للمطورين الذين يرغبون في معالجة الجداول وتنسيقها بشكل فعال في مستندات Word الخاصة بهم. تغطي البرامج التعليمية المفاهيم الأساسية لأنماط الجدول ، مثل إنشاء أنماط الجدول وتعديلها وحذفها. كما أنها توضح كيفية تطبيق الأنماط المحددة مسبقًا والمخصصة على الجداول ، بالإضافة إلى كيفية تنسيق الخلايا والحدود وعناصر الجدول الأخرى.
+Los tutoriales de Aspose.Words para .NET sobre programación con estilos de tabla y formato proporcionan un recurso valioso para los desarrolladores que desean manipular y formatear tablas en sus documentos de Word de manera eficaz. Los tutoriales cubren los conceptos fundamentales de los estilos de tabla, como la creación, modificación y eliminación de estilos de tabla. También explican cómo aplicar estilos predefinidos y personalizados a las tablas, además de cómo formatear celdas, bordes y otros elementos de la tabla.
 
-توفر هذه البرامج التعليمية خطوة بخطوة عينات تعليمات برمجية واضحة وموجزة ، جنبًا إلى جنب مع الشروحات التفصيلية ، التي توجه المطورين خلال كل خطوة من خطوات معالجة الجدول وتنسيقه. تغطي البرامج التعليمية أيضًا الموضوعات المتقدمة ، مثل إضافة الصفوف والأعمدة وحذفها ودمج الخلايا وتقسيمها وإضافة الأنماط الشرطية إلى الجداول.
+Estos tutoriales paso a paso proporcionan ejemplos de código claros y concisos, junto con explicaciones detalladas, que guían a los desarrolladores a través de cada paso del proceso de formateo y manipulación de tablas. Los tutoriales también cubren temas avanzados, como agregar y eliminar filas y columnas, fusionar y dividir celdas y agregar estilos condicionales a las tablas.
 
-ستساعد هذه البرامج التعليمية المطورين على إتقان التقنيات الأساسية للعمل مع الجداول في Aspose.Words for .NET. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه الموارد على تحسين مهارات التلاعب بالجدول والتنسيق ، مما يسمح لك بإنشاء مستندات Word احترافية وجمالية.
+Estos tutoriales ayudarán a los desarrolladores a dominar las técnicas esenciales para trabajar con tablas en Aspose.Words para .NET. Ya sea que sea un desarrollador principiante o experimentado, estos recursos lo ayudarán a mejorar sus habilidades de formateo y manipulación de tablas, lo que le permitirá crear documentos de Word profesionales y estéticamente agradables.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [الحصول على مسافة بين النص المحيط بالجدول](./get-distance-between-table-surrounding-text/) | دليل خطوة بخطوة لمعرفة المسافة بين النص والجدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [تطبيق حدود المخطط التفصيلي](./apply-outline-border/) | دليل خطوة بخطوة لتطبيق حدود المخطط على جدول باستخدام Aspose.Words for .NET. |
-| [بناء الجدول مع الحدود](./build-table-with-borders/) | دليل خطوة بخطوة لبناء جدول بحدود باستخدام Aspose.Words for .NET. |
-| [تعديل تنسيق الصف](./modify-row-formatting/) | دليل خطوة بخطوة لتغيير تنسيق صف الجدول باستخدام Aspose.Words for .NET. |
-| [تطبيق تنسيق الصفوف](./apply-row-formatting/) | دليل خطوة بخطوة لتطبيق تنسيق الصفوف على جدول باستخدام Aspose.Words for .NET. |
-| [تعيين مساحة الخلية](./set-cell-padding/) | دليل خطوة بخطوة لتحديد هوامش خلايا الجدول باستخدام Aspose.Words for .NET. |
-| [تعديل تنسيق الخلية](./modify-cell-formatting/) | دليل خطوة بخطوة لتغيير تنسيق خلية في جدول باستخدام Aspose.Words for .NET. |
-| [تنسيق الجدول والخلية بحدود مختلفة](./format-table-and-cell-with-different-borders/) | دليل خطوة بخطوة لتنسيق الجدول والخلية بحدود مختلفة باستخدام Aspose.Words for .NET. |
-| [تعيين عنوان الجدول ووصفه](./set-table-title-and-description/) | دليل خطوة بخطوة لتعيين عنوان ووصف للجدول باستخدام Aspose.Words for .NET. |
-| [السماح بتباعد الخلايا](./allow-cell-spacing/) | دليل خطوة بخطوة للسماح بتباعد الخلايا باستخدام Aspose.Words for .NET. |
-| [بناء الجدول بأسلوب](./build-table-with-style/) | دليل خطوة بخطوة لبناء طاولة بنمط مخصص باستخدام Aspose.Words for .NET. |
-| [قم بتوسيع التنسيق في الخلايا والصف من النمط](./expand-formatting-on-cells-and-row-from-style/) | دليل خطوة بخطوة لتوسيع التنسيق إلى الخلايا والصفوف من نمط الجدول باستخدام Aspose.Words for .NET. |
-| [إنشاء نمط الجدول](./create-table-style/) | دليل خطوة بخطوة لإنشاء نمط جدول مخصص باستخدام Aspose.Words for .NET. |
-| [حدد التنسيق الشرطي](./define-conditional-formatting/) | دليل خطوة بخطوة لتحديد التنسيق الشرطي في جدول باستخدام Aspose.Words for .NET. |
-| [تعيين تنسيق خلايا الجدول](./set-table-cell-formatting/) | دليل خطوة بخطوة لإعداد تنسيق خلايا الجدول باستخدام Aspose.Words for .NET. |
-| [تعيين تنسيق صف الجدول](./set-table-row-formatting/) | دليل خطوة بخطوة لإعداد تنسيق صف الجدول باستخدام Aspose.Words for .NET. |
+| [Obtener la distancia entre el texto que rodea la tabla](./get-distance-between-table-surrounding-text/) | Guía paso a paso para obtener la distancia entre el texto y una tabla en un documento de Word usando Aspose.Words para .NET. |
+| [Aplicar borde de contorno](./apply-outline-border/) | Guía paso a paso para aplicar un borde de contorno a una tabla usando Aspose.Words para .NET. |
+| [Construir mesa con bordes](./build-table-with-borders/) | Guía paso a paso para construir una tabla con bordes usando Aspose.Words para .NET. |
+| [Modificar formato de fila](./modify-row-formatting/) | Guía paso a paso para cambiar el formato de fila de la tabla usando Aspose.Words para .NET. |
+| [Aplicar formato de fila](./apply-row-formatting/) | Guía paso a paso para aplicar formato de fila a una tabla usando Aspose.Words para .NET. |
+| [Establecer relleno de celda](./set-cell-padding/) | Guía paso a paso para configurar los márgenes de las celdas de las tablas con Aspose.Words para .NET. |
+| [Modificar formato de celda](./modify-cell-formatting/) | Guía paso a paso para cambiar el formato de una celda en una tabla usando Aspose.Words para .NET. |
+| [Formato de tabla y celda con diferentes bordes](./format-table-and-cell-with-different-borders/) | Guía paso a paso para formatear tablas y celdas con diferentes bordes usando Aspose.Words para .NET. |
+| [Establecer título y descripción de la tabla](./set-table-title-and-description/) | Guía paso a paso para establecer el título y la descripción de una tabla usando Aspose.Words para .NET. |
+| [Permitir espacio entre celdas](./allow-cell-spacing/) | Guía paso a paso para permitir el espacio entre celdas usando Aspose.Words para .NET. |
+| [Construye una mesa con estilo](./build-table-with-style/) | Guía paso a paso para construir una tabla con un estilo personalizado usando Aspose.Words para .NET. |
+| [Expandir formato en celdas y fila desde estilo](./expand-formatting-on-cells-and-row-from-style/) | Guía paso a paso para expandir el formato a celdas y filas desde un estilo de tabla usando Aspose.Words para .NET. |
+| [Crear estilo de tabla](./create-table-style/) | Guía paso a paso para crear un estilo de tabla personalizado con Aspose.Words para .NET. |
+| [Definir formato condicional](./define-conditional-formatting/) | Guía paso a paso para definir formato condicional en una tabla usando Aspose.Words para .NET. |
+| [Establecer formato de celda de tabla](./set-table-cell-formatting/) | Guía paso a paso para configurar el formato de las celdas de la tabla con Aspose.Words para .NET. |
+| [Establecer el formato de fila de la tabla](./set-table-row-formatting/) | Guía paso a paso para configurar el formato de fila de la tabla con Aspose.Words para .NET. |

@@ -1,29 +1,29 @@
 ---
-title: تنسيق الفقرة
-linktitle: تنسيق الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق التنسيق المخصص على فقراتك باستخدام Aspose.Words for .NET.
+title: Absatzformatierung
+linktitle: Absatzformatierung
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET benutzerdefinierte Formatierungen auf Ihre Absätze anwenden.
 type: docs
 weight: 10
 url: /de/net/document-formatting/paragraph-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة تنسيق الفقرة مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+In diesem Tutorial führen wir Sie durch die Verwendung der Absatzformatierungsfunktion mit Aspose.Words für .NET. Führen Sie die folgenden Schritte aus, um den Quellcode zu verstehen und die Änderungen anzuwenden.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Schritt 1: Dokument erstellen und konfigurieren
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Erstellen Sie zunächst ein neues Dokument und ein zugehöriges DocumentBuilder-Objekt. Hier ist wie:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تنسيق الفقرة
+## Schritt 2: Formatieren des Absatzes
 
-سنقوم الآن بتطبيق التنسيق على الفقرة باستخدام الخصائص المتاحة في كائن ParagraphFormat من كائن DocumentBuilder. إليك الطريقة:
+Wir wenden nun die Formatierung auf den Absatz an, indem wir die Eigenschaften verwenden, die im ParagraphFormat-Objekt des DocumentBuilder-Objekts verfügbar sind. Hier ist wie:
 
 ```csharp
 ParagraphFormat paragraphFormat = builder.ParagraphFormat;
@@ -33,9 +33,9 @@ paragraphFormat. RightIndent = 50;
 paragraphFormat. SpaceAfter = 25;
 ```
 
-## الخطوة 3: حفظ المستند
+## Schritt 3: Speichern des Dokuments
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Nachdem Sie das Texteingabeformularfeld eingefügt haben, speichern Sie das Dokument mithilfe von am gewünschten Ort`Save` Methode. Stellen Sie sicher, dass Sie den richtigen Dateipfad angeben:
 
 ```csharp
 builder.Writeln(
@@ -46,14 +46,14 @@ builder.Writeln(
 doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
 ```
 
-### مثال على شفرة المصدر لتنسيق الفقرة باستخدام Aspose.Words for .NET
+### Beispielquellcode für die Absatzformatierung mit Aspose.Words für .NET
 
-فيما يلي رمز المصدر الكامل لميزة تنسيق الفقرة باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Quellcode für die Absatzformatierungsfunktion mit Aspose.Words für .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -73,5 +73,5 @@ doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
 	
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تطبيق تنسيقات مختلفة على فقراتك باستخدام Aspose.Words for .NET.
+Mit diesem Code können Sie mit Aspose.Words für .NET unterschiedliche Formatierungen auf Ihre Absätze anwenden.
 

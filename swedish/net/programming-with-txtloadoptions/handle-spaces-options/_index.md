@@ -1,23 +1,23 @@
 ---
-title: التعامل مع خيارات المسافات
-linktitle: التعامل مع خيارات المسافات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدارة المساحات في مستندات TXT الخاصة بك باستخدام Aspose.Words for .NET. قم بإزالة المسافات غير الضرورية وتحسين إمكانية القراءة.
+title: Hantera utrymmesalternativ
+linktitle: Hantera utrymmesalternativ
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du hanterar utrymmen i dina TXT-dokument med Aspose.Words för .NET. Ta bort onödiga utrymmen och förbättra läsbarheten.
 type: docs
 weight: 10
 url: /sv/net/programming-with-txtloadoptions/handle-spaces-options/
 ---
 
-في هذا البرنامج التعليمي ، سنستكشف كود المصدر C # المقدم لوظيفة "إدارة المساحات باستخدام خيارات تحميل TXT" مع Aspose.Words for .NET. تتيح لك هذه الميزة تحديد سلوك معالجة المسافات البيضاء عند تحميل مستند TXT.
+den här handledningen kommer vi att utforska C#-källkoden som tillhandahålls för funktionaliteten för "Hantera utrymmen med TXT-laddningsalternativ" med Aspose.Words för .NET. Den här funktionen låter dig ange hantering av blanksteg när du laddar ett TXT-dokument.
 
-## الخطوة الأولى: تهيئة البيئة
+## Steg 1: Sätta upp miljön
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Innan du börjar, se till att du har ställt in din utvecklingsmiljö med Aspose.Words för .NET. Se till att du har lagt till nödvändiga referenser och importerat lämpliga namnområden.
 
-## الخطوة 2: إنشاء مستند نصي
+## Steg 2: Skapa textdokumentet
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 const string textDoc = "Line 1\n" +
@@ -25,9 +25,9 @@ const string textDoc = "Line 1\n" +
                         "Line 3";
 ```
 
-في هذه الخطوة ، نقوم بإنشاء سلسلة نصية تحاكي مستندًا نصيًا يحتوي على أسطر بها مسافات بادئة وزائدة.
+I det här steget skapar vi en textsträng som simulerar ett textdokument som innehåller rader med inledande och efterföljande mellanslag.
 
-## الخطوة 3: تكوين خيارات التحميل
+## Steg 3: Konfigurera uppladdningsalternativ
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions
@@ -37,32 +37,32 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- في هذه الخطوة ، نقوم بتهيئة الخيارات لتحميل مستند TXT. نخلق ملف`TxtLoadOptions` كائن وتعيين`LeadingSpacesOptions` و`TrailingSpacesOptions` خصائص`TxtLeadingSpacesOptions.Trim` و`TxtTrailingSpacesOptions.Trim` على التوالى. هذا يخبر Aspose. Words بإزالة المسافات البادئة والزائدة من الأسطر عند تحميل المستند.
+ I det här steget konfigurerar vi alternativen för att ladda TXT-dokumentet. Vi skapar en ny`TxtLoadOptions` objekt och ställ in`LeadingSpacesOptions` och`TrailingSpacesOptions` fastigheter till`TxtLeadingSpacesOptions.Trim` och`TxtTrailingSpacesOptions.Trim` respektive. Detta säger till Aspose.Words att ta bort inledande och efterföljande mellanslag från rader när dokumentet laddas.
 
-## الخطوة 4: تحميل المستند
+## Steg 4: Ladda dokumentet
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير دفق الذاكرة الذي يحتوي على سلسلة نصية محددة وخيارات التحميل.
+ I det här steget laddar vi dokumentet med hjälp av`Document` metod och skicka minnesströmmen som innehåller den angivna textsträngen och laddningsalternativ.
 
-## الخطوة 5: احفظ المستند
+## Steg 5: Spara dokumentet
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ المستند الناتج بتنسيق docx. باستخدام الامتداد`Save` الطريقة وتمرير المسار إلى ملف الإخراج.
+ I detta sista steg sparar vi det resulterande dokumentet i .docx-format med hjälp av`Save` metod och skicka sökvägen till utdatafilen.
 
-يمكنك الآن تشغيل الكود المصدري لتحميل المستند النصي عن طريق تحديد خيارات معالجة المسافات. سيتم حفظ المستند الناتج في الدليل المحدد باسم "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx".
+Nu kan du köra källkoden för att ladda textdokumentet genom att ange alternativ för hantering av blanksteg. Det resulterande dokumentet kommer att sparas i den angivna katalogen med namnet "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx".
 
-### نموذج رمز مصدر لميزة إدارة المساحة مع خيارات تحميل TXT مع Aspose.Words for .NET*
+### Exempel på källkod för rymdhanteringsfunktion med TXT-laddningsalternativ med Aspose.Words för .NET*
 
 ```csharp
 
             
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 const string textDoc = "      Line 1 \n" +
@@ -82,18 +82,18 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx")
         
 ```
 
-## خاتمة
+## Slutsats
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة إدارة المساحات باستخدام خيارات تحميل TXT في Aspose.Words for .NET. لقد تعلمنا كيفية تحديد سلوك التعامل مع المسافات البيضاء عند تحميل مستند TXT.
+I den här handledningen utforskade vi funktionaliteten för att hantera utrymmen med TXT-laddningsalternativ i Aspose.Words för .NET. Vi lärde oss hur man specificerar hanteringsbeteende för blanksteg när ett TXT-dokument laddas.
 
-هذه الميزة مفيدة جدًا للتعامل مع المسافات غير الضرورية على يسار ويمين الأسطر في المستند. من خلال تكوين خيارات التحميل المناسبة ، يمكنك بسهولة إزالة هذه المساحات غير المرغوب فيها ، مما يساعد على جعل محتوى المستند أكثر وضوحًا وقابلية للقراءة.
+Den här funktionen är mycket användbar för att hantera onödiga mellanslag till vänster och höger om rader i ett dokument. Genom att konfigurera lämpliga laddningsalternativ kan du enkelt ta bort dessa oönskade utrymmen, vilket hjälper till att göra dokumentinnehållet renare och mer läsbart.
 
-يوفر Aspose.Words for .NET العديد من الميزات المتقدمة لمعالجة المستندات وإنشائها. تعد إدارة المساحات عند تحميل مستند TXT واحدة من العديد من الأدوات القوية التي تضعها تحت تصرفك.
+Aspose.Words för .NET erbjuder många avancerade funktioner för dokumenthantering och generering. Hantera utrymmen när du laddar ett TXT-dokument är ett av de många kraftfulla verktyg det ställer till ditt förfogande.
 
- من المهم اختيار خيارات إدارة المساحة التي تناسب السيناريو الخاص بك بشكل أفضل. في هذا المثال ، استخدمنا الامتداد`Trim`خيارات لإزالة المسافات غير الضرورية من بداية ونهاية السطر. ومع ذلك ، لدى Aspose.Words أيضًا خيارات أخرى للاحتفاظ بالمسافات أو إزالتها تمامًا أو الاحتفاظ بها كما هي.
+ Det är viktigt att välja de utrymmeshanteringsalternativ som bäst passar ditt specifika scenario. I det här exemplet använde vi`Trim`alternativ för att ta bort onödiga mellanslag från början och slutet av raden. Men Aspose.Words har också andra alternativ för att behålla mellanslag, ta bort dem helt eller behålla dem som de är.
 
-لا تنس تكييف هذه الخيارات وفقًا لاحتياجاتك الخاصة وهيكل مستندات TXT الخاصة بك.
+Glöm inte att anpassa dessa alternativ efter dina specifika behov och strukturen på dina TXT-dokument.
 
-باستخدام Aspose.Words for .NET ، يمكنك بسهولة معالجة المسافات البيضاء في مستنداتك ، وتحسين جودة التخطيط وقابلية قراءة المحتوى.
+Med Aspose.Words för .NET kan du enkelt manipulera blanksteg i dina dokument, vilket förbättrar layoutkvaliteten och innehållsläsbarheten.
 
-لذلك ، لا تتردد في دمج إدارة المسافات البيضاء مع خيارات تحميل TXT في Aspose.Words لمشاريع .NET واستفد من مزاياها لإنشاء مستندات جيدة التنسيق وسهلة القراءة.
+Så tveka inte att integrera blankstegshantering med TXT-laddningsalternativ i dina Aspose.Words för .NET-projekt och dra nytta av dess fördelar för att skapa välformaterade och lättlästa dokument.

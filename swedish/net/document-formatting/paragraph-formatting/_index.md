@@ -1,29 +1,29 @@
 ---
-title: تنسيق الفقرة
-linktitle: تنسيق الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق التنسيق المخصص على فقراتك باستخدام Aspose.Words for .NET.
+title: Styckeformatering
+linktitle: Styckeformatering
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder anpassad formatering på dina stycken med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/document-formatting/paragraph-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة تنسيق الفقرة مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+I den här handledningen kommer vi att gå igenom hur du använder styckeformateringsfunktionen med Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och tillämpa ändringarna.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Steg 1: Skapa och konfigurera dokumentet
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Börja med att skapa ett nytt dokument och ett tillhörande DocumentBuilder-objekt. Här är hur:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تنسيق الفقرة
+## Steg 2: Formatera stycket
 
-سنقوم الآن بتطبيق التنسيق على الفقرة باستخدام الخصائص المتاحة في كائن ParagraphFormat من كائن DocumentBuilder. إليك الطريقة:
+Vi kommer nu att tillämpa formateringen på stycket med hjälp av egenskaperna som är tillgängliga i objektet ParagraphFormat i DocumentBuilder-objektet. Här är hur:
 
 ```csharp
 ParagraphFormat paragraphFormat = builder.ParagraphFormat;
@@ -33,9 +33,9 @@ paragraphFormat. RightIndent = 50;
 paragraphFormat. SpaceAfter = 25;
 ```
 
-## الخطوة 3: حفظ المستند
+## Steg 3: Spara dokumentet
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ När du har infogat formulärfältet för textinmatning sparar du dokumentet på önskad plats med hjälp av`Save` metod. Se till att ange rätt sökväg:
 
 ```csharp
 builder.Writeln(
@@ -46,14 +46,14 @@ builder.Writeln(
 doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
 ```
 
-### مثال على شفرة المصدر لتنسيق الفقرة باستخدام Aspose.Words for .NET
+### Exempel på källkod för styckeformatering med Aspose.Words för .NET
 
-فيما يلي رمز المصدر الكامل لميزة تنسيق الفقرة باستخدام Aspose.Words for .NET:
+Här är den fullständiga källkoden för styckeformateringsfunktionen med Aspose.Words för .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -73,5 +73,5 @@ doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
 	
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تطبيق تنسيقات مختلفة على فقراتك باستخدام Aspose.Words for .NET.
+Med denna kod kommer du att kunna tillämpa olika formatering på dina stycken med Aspose.Words för .NET.
 

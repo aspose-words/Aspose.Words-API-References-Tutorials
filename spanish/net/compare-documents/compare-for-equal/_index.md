@@ -1,53 +1,53 @@
 ---
-title: قارن للحصول على Equal
-linktitle: قارن للحصول على Equal
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لشرح كود مصدر C # لميزة "المقارنة لـ Equals مع Aspose.Words for .NET.
+title: Comparar por igual
+linktitle: Comparar por igual
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para explicar el código fuente de C# de la función Compare for Equals con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/compare-documents/compare-for-equal/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة مقارنة مع Equal مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+En este tutorial, lo guiaremos a través de cómo usar la función Comparar para iguales con Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios.
 
-## الخطوة 1: مقارنة المستندات
+## Paso 1: Comparación de documentos
 
- للبدء ، قم بتحميل وثيقتين للمقارنة. في هذا المثال ، سوف نستخدم الامتداد`Clone()` طريقة لإنشاء نسخة من المستند الأصلي. إليك الطريقة:
+ Para comenzar, cargue dos documentos para comparar. En este ejemplo, utilizaremos el`Clone()` método para crear una copia del documento original. Así es cómo:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document docA = new Document(dataDir + "Document.docx");
 Document docB = docA.Clone();
 ```
 
-## الخطوة 2: مقارنة المستندات
+## Paso 2: Comparación de documentos
 
- سنستخدم الآن ملف`Compare()` طريقة للمقارنة بين الوثيقتين. ستحدد هذه الطريقة التغييرات في المستند الأصلي. إليك الطريقة:
+ Ahora usaremos el`Compare()` método para comparar los dos documentos. Este método marcará los cambios en el documento original. Así es cómo:
 
 ```csharp
-// قارن المستندات
+// Compara los documentos
 docA.Compare(docB, "user", DateTime.Now);
 
-// تحقق مما إذا كانت المستندات متساوية
+// Comprobar si los documentos son iguales
 Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are identical": "Documents are not identical");
 ```
 
-### مثال على شفرة المصدر لـ Compare For Equal باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Compare For Equal usando Aspose.Words para .NET
 
-فيما يلي الكود المصدري الكامل لميزة Compare for Equals مع Aspose.Words for .NET:
+Aquí está el código fuente completo para la característica Compare for Equals con Aspose.Words para .NET:
 
 ```csharp
 
 	Document docA = new Document(MyDir + "Document.docx");
 	Document docB = docA.Clone();
 	
-	// يحتوي DocA الآن على تغييرات كمراجعات.
+	// DocA ahora contiene cambios como revisiones.
 	docA.Compare(docB, "user", DateTime.Now);
 
 	Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من مقارنة مستندين وتحديد ما إذا كانا متطابقين باستخدام Aspose.Words for .NET.
+Con este código, podrá comparar dos documentos y determinar si son iguales usando Aspose.Words para .NET.
 

@@ -1,27 +1,27 @@
 ---
-title: إظهار المراجعات في بالونات
-linktitle: إظهار المراجعات في بالونات
-second_title: Aspose.Words لمراجع .NET API
-description: اعرض المراجعات في بالونات باستخدام Aspose.Words for .NET.
+title: Mostrar revisiones en globos
+linktitle: Mostrar revisiones en globos
+second_title: Referencia de API de Aspose.Words para .NET
+description: Muestre revisiones en globos con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-revisions/show-revisions-in-balloons/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سوف نوضح لك كيفية إظهار المراجعات في البالونات في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+En esta guía paso a paso, le mostraremos cómo mostrar revisiones en globos en un documento de Word usando Aspose.Words para .NET. Le proporcionaremos el código fuente completo y le mostraremos cómo formatear la salida de Markdown.
 
-## الخطوة 1: تحميل المستند
+## Paso 1: Cargar el documento
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+El primer paso es cargar el documento que contiene las revisiones.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة 2: تكوين خيارات عرض المراجعة
+## Paso 2: Configure las opciones de visualización de reseñas
 
-سنقوم بتهيئة خيارات العرض لجعل المراجعات مرئية في البالونات.
+Configuraremos las opciones de mostrar para que las revisiones sean visibles en globos.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
@@ -29,36 +29,36 @@ doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
 ```
 
-## الخطوة 3: احفظ المستند بتنسيق PDF
+## Paso 3: Guarda el documento en formato PDF
 
-أخيرًا ، سنقوم بحفظ المستند كملف PDF مع إظهار المراجعات في بالونات.
+Finalmente, guardaremos el documento como PDF con las revisiones mostradas en globos.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
-## تنسيقات إخراج Markdown
+## Formatos de salida de rebajas
 
-يمكن تنسيق الإخراج في تخفيض السعر لتحسين إمكانية القراءة. على سبيل المثال :
+La salida se puede formatear en Markdown para mejorar la legibilidad. Por ejemplo :
 
 ```markdown
 - Revisions are Showed in bubbles with revision bars on the right side.
 ```
 
-### مثال على شفرة المصدر لـ Show Revisions In Balloons باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Mostrar revisiones en globos usando Aspose.Words para .NET
 
-إليك كود المصدر الكامل لإظهار المراجعات في البالونات في مستند باستخدام Aspose.Words for .NET:
+Aquí está el código fuente completo para mostrar las revisiones en globos en un documento usando Aspose.Words para .NET:
 
 ```csharp
     
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";	
 	Document doc = new Document(MyDir + "Revisions.docx");
 
-	// يجعل إدراج المراجعات مضمنة ، وحذف المراجعات وتنسيقها في البالونات.
+	// Renderiza revisiones de inserción en línea, elimina y formatea revisiones en globos.
 	doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 	doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-	// يعرض أشرطة المراجعة على الجانب الأيمن من الصفحة.
+	// Representa barras de revisión en el lado derecho de una página.
 	doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
 	
 	doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");

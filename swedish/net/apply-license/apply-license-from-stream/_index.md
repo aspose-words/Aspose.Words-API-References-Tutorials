@@ -1,37 +1,37 @@
 ---
-title: تطبيق الترخيص من الدفق
-linktitle: تطبيق الترخيص من الدفق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق ترخيص من تدفق باستخدام Aspose.Words for .NET. دليل خطوة بخطوة
+title: Använd licens från Stream
+linktitle: Använd licens från Stream
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ansöker om en licens från en stream med Aspose.Words för .NET. Steg-för-steg guide
 type: docs
 weight: 10
 url: /sv/net/apply-license/apply-license-from-stream/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، ستتعلم كيفية تطبيق ترخيص من دفق باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات الشفرة اللازمة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تطبيق ترخيص لفتح الوظائف الكاملة لـ Aspose.Words.
+I denna steg-för-steg handledning kommer du att lära dig hur du ansöker om en licens från en stream med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med de nödvändiga kodavsnitten. I slutet av denna handledning kommer du att kunna ansöka om en licens för att låsa upp alla funktioner i Aspose.Words.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
-- ملف ترخيص صالح لـ Aspose.Words.
+## Förutsättningar
+Innan vi börjar, se till att du har följande förutsättningar:
+- Aspose.Words för .NET-biblioteket installerat på ditt system.
+- En giltig licensfil för Aspose.Words.
 
-## الخطوة 1: استيراد مساحات الأسماء المطلوبة
-للبدء ، قم باستيراد مساحات الأسماء الضرورية في كود C # الخاص بك. تحتوي مساحات الأسماء هذه على الفئات والطرق اللازمة للعمل مع Aspose.Words.
+## Steg 1: Importera de nödvändiga namnområdena
+För att börja, importera de nödvändiga namnrymden i din C#-kod. Dessa namnrymder innehåller de klasser och metoder som behövs för att arbeta med Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using System.IO;
 ```
 
-## الخطوة 2: تهيئة كائن الترخيص
-بعد ذلك ، قم بتهيئة كائن الترخيص ، والذي سيتم استخدامه لتعيين ترخيص Aspose.Words. أضف الكود التالي:
+## Steg 2: Initiera licensobjektet
+Initiera sedan License-objektet, som kommer att användas för att ställa in licensen för Aspose.Words. Lägg till följande kod:
 
 ```csharp
 License license = new License();
 ```
 
-## الخطوة 3: تعيين الترخيص من الدفق
-لتعيين الترخيص من دفق ، استخدم الأسلوب SetLicense لكائن الترخيص. قم بإنشاء MemoryStream من ملف الترخيص وتمريره كمعامل لطريقة SetLicense.
+## Steg 3: Ställ in licensen från Stream
+För att ställa in licensen från en ström, använd SetLicense-metoden för License-objektet. Skapa en MemoryStream från licensfilen och skicka den som en parameter till SetLicense-metoden.
 
 ```csharp
 try
@@ -48,8 +48,8 @@ catch (Exception e)
 }
 ```
 
-### مثال على كود المصدر لتطبيق الترخيص من Stream باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لتطبيق ترخيص من دفق باستخدام Aspose.Words for .NET:
+### Exempel på källkod för Apply License From Stream med Aspose.Words för .NET
+Här är den fullständiga källkoden för att ansöka om en licens från en stream med Aspose.Words för .NET:
 
 ```csharp
 License license = new License();
@@ -68,7 +68,7 @@ catch (Exception e)
 }
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تطبيق ترخيص من تدفق باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك بسهولة تعيين الترخيص وإطلاق العنان للإمكانات الكاملة لـ Aspose.Words لمهام معالجة المستندات الخاصة بك.
+## Slutsats
+I den här handledningen har du lärt dig hur du ansöker om en licens från en stream med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden och använda den medföljande källkoden kan du enkelt ställa in licensen och låsa upp Aspose.Words fulla potential för dina dokumentbearbetningsuppgifter.
 
-يمكنك الآن بثقة تطبيق ترخيص من دفق والاستفادة من الميزات القوية لـ Aspose.Words لإنشاء مستندات Word وتعديلها وتحويلها برمجيًا.
+Nu kan du med säkerhet ansöka om en licens från en ström och utnyttja de kraftfulla funktionerna i Aspose.Words för att skapa, ändra och konvertera Word-dokument programmatiskt.

@@ -1,18 +1,18 @@
 ---
-title: نقل العقدة في المستند المتعقب
-linktitle: نقل العقدة في المستند المتعقب
-second_title: Aspose.Words لمراجع .NET API
-description: انقل العقد في مستند تم تعقبه باستخدام Aspose.Words for .NET.
+title: Sposta nodo nel documento tracciato
+linktitle: Sposta nodo nel documento tracciato
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Sposta i nodi in un documento tracciato con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-revisions/move-node-in-tracked-document/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية تحريك عقدة في مستند Word متعقب باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+In questa guida dettagliata, ti illustreremo come spostare un nodo in un documento Word tracciato utilizzando Aspose.Words per .NET. Ti forniremo il codice sorgente completo e ti mostreremo come formattare l'output del markdown.
 
-## الخطوة الأولى: إنشاء المستند
+## Passaggio 1: creazione del documento
 
-الخطوة الأولى هي إنشاء مستند جديد وإضافة فقرات.
+Il primo passo è creare un nuovo documento e aggiungere paragrafi.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -28,17 +28,17 @@ Body body = doc.FirstSection.Body;
 Console.WriteLine("Number of paragraphs: {0}", body.Paragraphs.Count);
 ```
 
-## الخطوة 2: تتبع المراجعات
+## Passaggio 2: tenere traccia delle revisioni
 
-سنقوم بتمكين تتبع المراجعة في المستند.
+Abiliteremo il tracciamento delle revisioni nel documento.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 ```
 
-## الخطوة 3: انقل العقدة
+## Passaggio 3: sposta un nodo
 
-سننقل عقدة (فقرة) من موضع إلى آخر أثناء إنشاء المراجعات.
+Sposteremo un nodo (paragrafo) da una posizione all'altra durante la generazione delle revisioni.
 
 ```csharp
 Node node = body.Paragraphs[3];
@@ -52,17 +52,17 @@ while (node != endNode)
 }
 ```
 
-## الخطوة الرابعة: التوقف عن تتبع التعليقات
+## Passaggio 4: interrompere il monitoraggio delle recensioni
 
-سنتوقف عن تتبع المراجعات في المستند.
+Interromperemo il monitoraggio delle revisioni nel documento.
 
 ```csharp
 doc.StopTrackRevisions();
 ```
 
-## الخطوة 5: حفظ المستند
+## Passaggio 5: salvare il documento
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Dopo aver inserito il campo del modulo di immissione del testo, salvare il documento nella posizione desiderata utilizzando il file`Save` metodo. Assicurati di fornire il percorso file appropriato:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -70,14 +70,14 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```
 
 
-### مثال على شفرة المصدر لـ Move Node In Tracked Document باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Sposta nodo nel documento tracciato utilizzando Aspose.Words per .NET
 
-فيما يلي شفرة المصدر الكاملة لنقل عقدة في مستند متتبع باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente completo per spostare un nodo in un documento tracciato utilizzando Aspose.Words per .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -90,10 +90,10 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 	Body body = doc.FirstSection.Body;
 	Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 
-	// بدء تتبع المراجعات.
+	// Inizia a monitorare le revisioni.
 	doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
-	// إنشاء مراجعات عند نقل عقدة من موقع إلى آخر.
+	// Generare revisioni quando si sposta un nodo da una posizione a un'altra.
 	Node node = body.Paragraphs[3];
 	Node endNode = body.Paragraphs[5].NextSibling;
 	Node referenceNode = body.Paragraphs[0];
@@ -104,10 +104,10 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 		node = nextNode;
 	}
 
-	// أوقف عملية تتبع المراجعات.
+	// Interrompi il processo di monitoraggio delle revisioni.
 	doc.StopTrackRevisions();
 
-	// هناك 3 فقرات إضافية في نطاق الانتقال من.
+	// Ci sono 3 paragrafi aggiuntivi nell'intervallo di spostamento.
 	Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 	doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
             

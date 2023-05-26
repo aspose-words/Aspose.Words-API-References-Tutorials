@@ -1,56 +1,56 @@
 ---
-title: احصل على تباعد أسطر الخط
-linktitle: احصل على تباعد أسطر الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تباعد بين الخطوط في مستند Word باستخدام Aspose.Words for .NET.
+title: Obtenir l'espacement des lignes de police
+linktitle: Obtenir l'espacement des lignes de police
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Dans ce didacticiel, découvrez comment obtenir l'espacement des lignes de police dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/get-font-line-spacing/
 ---
-في هذا البرنامج التعليمي ، سنخبرك بكيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يحدد تباعد أسطر الخط المسافة العمودية بين سطور النص. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Dans ce didacticiel, nous allons vous expliquer comment obtenir l'espacement des lignes de police dans un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. L'interligne de la police définit l'espace vertical entre les lignes de texte. Nous vous guiderons étape par étape pour vous aider à comprendre et à implémenter le code dans votre projet .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Conditions préalables
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+- Une connaissance pratique du langage de programmation C#
+- La bibliothèque Aspose.Words pour .NET installée dans votre projet
 
-## الخطوة 1: إنشاء مستند جديد ومولد مستندات
- أولاً ، سننشئ مستندًا جديدًا عن طريق إنشاء مثيل لملف`Document` class ومنشئ المستندات عن طريق إنشاء مثيل لملف`DocumentBuilder` فصل.
+## Étape 1 : Créer un nouveau document et un générateur de documents
+ Tout d'abord, nous allons créer un nouveau document en instanciant le`Document` classe et un générateur de documents en instanciant la`DocumentBuilder` classe.
 
 ```csharp
-// قم بإنشاء مستند جديد
+// Créer un nouveau document
 Document doc = new Document();
 
-// قم بإنشاء منشئ المستندات
+// Créer un générateur de documents
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الخط
- بعد ذلك ، سنقوم بتكوين الخط عن طريق تعيين ملف`Name` خاصية منشئ الوثيقة.
+## Étape 2 : Configurez la police
+ Ensuite, nous allons configurer la police en définissant le`Name` propriété du générateur de documents.
 
 ```csharp
-//تكوين الخط
+//Configurer la police
 builder.Font.Name = "Calibri";
 ```
 
-## الخطوة 3: أضف نصًا إلى المستند
-سنستخدم الآن منشئ المستندات لإضافة نص منسق إلى المستند.
+## Étape 3 : Ajouter du texte au document
+Nous allons maintenant utiliser le générateur de document pour ajouter du texte formaté au document.
 
 ```csharp
-// أضف نصًا إلى المستند
+// Ajouter du texte au document
 builder. Writen("qText");
 ```
 
-## الخطوة 4: احصل على تباعد أسطر الخطوط
- الآن سوف نصل إلى`Font` كائن من الفقرة الأولى من المستند واسترداد قيمة`LineSpacing` ملكية.
+## Étape 4 : Obtenir l'espacement des lignes de police
+ Nous allons maintenant accéder au`Font` objet du premier paragraphe du document et récupérer la valeur de`LineSpacing` propriété.
 
 ```csharp
-// احصل على تباعد الأسطر للخط
+// Obtenir l'interligne de la police
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### نموذج لشفرة مصدر للحصول على تباعد أسطر الخطوط باستخدام Aspose.Words for .NET 
+### Exemple de code source pour obtenir l'espacement des lignes de police à l'aide de Aspose.Words pour .NET 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -60,5 +60,5 @@ Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام Aspose.Words for .NET. يعد تباعد أسطر الخطوط أمرًا مهمًا للتحكم في التباعد الرأسي بين سطور النص. لا تتردد في استخدام هذه الميزة لتخصيص مظهر النص في مستنداتك.
+## Conclusion
+Dans ce didacticiel, nous avons vu comment obtenir l'espacement des lignes de police dans un document Word avec Aspose.Words pour .NET. L'espacement des lignes de police est important pour contrôler l'espacement vertical entre les lignes de texte. N'hésitez pas à utiliser cette fonctionnalité pour personnaliser l'apparence de votre texte dans vos documents.

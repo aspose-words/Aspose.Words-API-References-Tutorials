@@ -1,36 +1,36 @@
 ---
-title: استخدم مصدر التحذير
-linktitle: استخدم مصدر التحذير
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام مصدر التحذير مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: 使用警告源
+linktitle: 使用警告源
+second_title: Aspose.Words for .NET API 参考
+description: 通过 Aspose.Words for .NET 分步指南了解如何使用警告源。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/use-warning-source/
 ---
 
-في هذا المثال ، سوف نوضح لك كيفية استخدام مصدر التحذير مع Aspose.Words for .NET. يشير مصدر التحذير إلى أصل التحذير عند استخدام وظيفة رد الاتصال.
+在这个例子中，我们将向您展示如何在 Aspose.Words for .NET 中使用警告源。警告源表示使用回调函数时警告的来源。
 
-## الخطوة 1: تحميل المستند
+## 第 1 步：装入文档
 
- سنقوم بتحميل مستند موجود يحتوي على تحذيرات باستخدام امتداد`Load` طريقة`Document` فصل.
+我们将使用`Load`的方法`Document`班级。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Emphases markdown warning.docx");
 ```
 
-## الخطوة 3: استخدام مصدر التحذير
+## 第 3 步：使用警告源
 
- سنستخدم مصدر التحذير من خلال تعيين المستند`WarningCallback` ملكية لمجموعة من`WarningInfo` أشياء.
+我们将通过设置文档的`WarningCallback`属性集合`WarningInfo`对象。
 
 ```csharp
 WarningInfoCollection warnings = new WarningInfoCollection();
 doc.WarningCallback = warnings;
 ```
 
-## الخطوة 4: حفظ المستند
+## 第 4 步：保存文档
 
-أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب.
+最后，我们可以将文档保存为所需的格式。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
@@ -41,10 +41,10 @@ if (warningInfo.Source == WarningSource.Markdown)
 }
 ```
 
-### مثال التعليمات البرمجية المصدر لاستخدام مصدر التحذير مع Aspose.Words for .NET
+### 将 Warning Source 与 Aspose.Words for .NET 一起使用的示例源代码
 
 ```csharp
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Emphases markdown warning.docx");
 
@@ -61,4 +61,4 @@ if (warningInfo.Source == WarningSource.Markdown)
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام مصدر التحذير مع Aspose.Words for .NET.
+恭喜！您现在已经了解了如何将警告源与 Aspose.Words for .NET 一起使用。

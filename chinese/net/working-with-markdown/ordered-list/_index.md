@@ -1,27 +1,27 @@
 ---
-title: قائمة مرتبة
-linktitle: قائمة مرتبة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء قائمة مرتبة باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: 有序列表
+linktitle: 有序列表
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 分步指南创建有序列表。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/ordered-list/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام وظيفة القائمة المرتبة مع Aspose.Words for .NET. تتيح لك القائمة المرتبة تنظيم العناصر بالتسلسل باستخدام الأرقام.
+在这个例子中，我们将解释如何使用 Aspose.Words for .NET 的有序列表功能。有序列表允许您按顺序组织项目。
 
-## الخطوة 1: استخدام منشئ المستندات
+## 第 1 步：使用文档生成器
 
-أولاً ، سنستخدم منشئ المستندات لإنشاء مستند جديد.
+首先，我们将使用文档生成器来创建一个新文档。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تطبيق تنسيق القائمة المرتبة
+## 第 2 步：应用有序列表格式
 
-سنقوم بتطبيق تنسيق القائمة المرتبة باستخدام منشئ المستندات`ApplyBulletDefault` طريقة. يمكننا أيضًا تخصيص تنسيق الترقيم بالانتقال إلى مستويات القائمة وتعيين التنسيق الذي نريده.
+我们将使用文档生成器的应用有序列表格式`ApplyBulletDefault`方法。我们还可以通过转到列表级别并设置我们想要的格式来自定义编号格式。
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
@@ -29,18 +29,18 @@ builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
 builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
 ```
 
-## الخطوة 3: إضافة عناصر إلى القائمة
+## 第 3 步：将项目添加到列表
 
- يمكننا إضافة عناصر إلى القائمة باستخدام منشئ المستندات`Writeln` طريقة.
+我们可以使用文档生成器的`Writeln`方法。
 
 ```csharp
 builder. Writen("Element 1");
 builder. Writen("Element 2");
 ```
 
-## الخطوة 4: مسافة بادئة للقائمة
+## 第 4 步：缩进列表
 
- يمكننا وضع مسافة بادئة للقائمة باستخدام منشئ المستندات`ListIndent` طريقة.
+我们可以使用文档生成器的缩进列表`ListIndent`方法。
 
 ```csharp
 builder.ListFormat.ListIndent();
@@ -48,11 +48,11 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-## الخطوة 5: حفظ المستند
+## 第 5 步：保存文档
 
-أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب.
+最后，我们可以将文档保存为所需的格式。
 
-### مثال على شفرة المصدر لقائمة مرتبة مع Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的有序列表示例源代码
 
 ```csharp
 	Document doc = new Document();
@@ -72,5 +72,5 @@ builder.Writeln("Item 2b");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة القائمة المرتبة مع Aspose.Words for .NET.
+恭喜！您现在已经了解了如何使用 Aspose.Words for .NET 的有序列表功能。
 

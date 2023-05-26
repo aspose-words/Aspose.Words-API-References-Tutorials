@@ -1,45 +1,45 @@
 ---
-title: أدخل مسطرة أفقية
-linktitle: أدخل مسطرة أفقية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج القواعد الأفقية في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Insertar regla horizontal
+linktitle: Insertar regla horizontal
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a insertar reglas horizontales en documentos de Word usando Aspose.Words para .NET. Guía paso por paso.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج قاعدة أفقية في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إضافة قواعد أفقية إلى مستنداتك للفصل البصري والتنظيم.
+En este completo ejemplo, aprenderá a insertar una regla horizontal en un documento de Word utilizando Aspose.Words para .NET. Lo guiaremos a través del proceso y le proporcionaremos los fragmentos de código C# necesarios. Al final de esta guía, podrá agregar reglas horizontales a sus documentos para la separación visual y la organización.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
+- Aspose.Words para la biblioteca .NET instalada en su sistema.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Paso 1: Cree un nuevo documento y DocumentBuilder
+Para comenzar, cree un nuevo documento usando la clase Document e inicialice un objeto DocumentBuilder:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل قاعدة أفقية
-بعد ذلك ، استخدم طريقة Writeln لفئة DocumentBuilder لإضافة نص وصفي ثم أدخل قاعدة أفقية:
+## Paso 2: inserte una regla horizontal
+A continuación, utilice el método Writeln de la clase DocumentBuilder para agregar un texto descriptivo y luego inserte una regla horizontal:
 
 ```csharp
 builder.Writeln("Insert a horizontal rule shape into the document.");
 builder.InsertHorizontalRule();
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج القاعدة الأفقية ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Paso 3: Guarde el documento
+Después de insertar la regla horizontal, guarde el documento en un archivo usando el método Guardar de la clase Documento:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
-### مثال رمز مصدر لإدراج قاعدة أفقية باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لإدخال قاعدة أفقية باستخدام Aspose.Words for .NET:
-تعتبر القواعد الأفقية مفيدة لسيناريوهات مختلفة ، مثل تقسيم الأقسام أو إنشاء فواصل مرئية أو تمييز المعلومات المهمة.
+### Código fuente de ejemplo para Insertar regla horizontal usando Aspose.Words para .NET
+Aquí está el código fuente completo para insertar una regla horizontal usando Aspose.Words para .NET:
+Las reglas horizontales son útiles para varios escenarios, como dividir secciones, crear cortes visuales o resaltar información importante.
 
 ```csharp
 
@@ -53,8 +53,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.doc
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Recuerde ajustar el código de acuerdo con sus requisitos específicos y mejorarlo con funciones adicionales según sea necesario.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج قاعدة أفقية في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن فصل المستندات وتنظيمها بصريًا باستخدام القواعد الأفقية.
+## Conclusión
+¡Felicidades! Ha aprendido con éxito cómo insertar una regla horizontal en un documento de Word usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente provisto, ahora puede separar y organizar visualmente sus documentos usando reglas horizontales.
 

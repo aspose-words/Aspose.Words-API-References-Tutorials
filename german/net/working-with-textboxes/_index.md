@@ -1,17 +1,17 @@
 ---
-title: العمل مع مربعات النص
-linktitle: العمل مع مربعات النص
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إنشاء ارتباط ، والتحقق من التسلسل ، وكسر الارتباط باستخدام Aspose.Words for .NET.
+title: Arbeiten mit Textfeldern
+linktitle: Arbeiten mit Textfeldern
+second_title: Aspose.Words für .NET API-Referenz
+description: Die Tutorials umfassen das Erstellen eines Links, das Überprüfen der Reihenfolge und das Unterbrechen eines Links mit Aspose.Words für .NET.
 type: docs
 weight: 1320
 url: /de/net/working-with-textboxes/
 ---
-العمل مع Textboxes هو مورد شامل يأخذك خطوة بخطوة من خلال العمل مع مربعات النص في مستندات Word باستخدام مكتبة Aspose.Words لـ .NET. تعلمك البرامج التعليمية كيفية إضافة وتعديل وحذف مربعات النص ووضعها وتحديد حجمها ونمطها وخصائصها. ستتعلم أيضًا كيفية إدارة المحتوى في مربعات النص ، بما في ذلك إضافة النص وتحريره وإضافة القوائم والجداول وعناصر أخرى. يعد هذا المورد ضروريًا للمطورين الذين يرغبون في معالجة مربعات النص في مستندات Word باستخدام Aspose.Words for .NET ، مما يوفر مزيدًا من المرونة والتخصيص في إنشاء مستندات احترافية.
+„Arbeiten mit Textfeldern“ ist eine umfassende Ressource, die Sie Schritt für Schritt durch die Arbeit mit Textfeldern in Word-Dokumenten mithilfe der Aspose.Words-Bibliothek für .NET führt. In den Tutorials erfahren Sie, wie Sie Textfelder hinzufügen, ändern und löschen, sie positionieren sowie ihre Größe, ihren Stil und ihre Eigenschaften definieren. Sie erfahren außerdem, wie Sie Inhalte in Textfeldern verwalten, einschließlich des Hinzufügens und Bearbeitens von Text sowie des Hinzufügens von Listen, Tabellen und anderen Elementen. Diese Ressource ist für Entwickler, die Textfelder in Word-Dokumenten mit Aspose.Words für .NET bearbeiten möchten, unerlässlich und bietet mehr Flexibilität und Anpassungsmöglichkeiten bei der Erstellung professioneller Dokumente.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [إنشاء ارتباط](./create-a-link/) | تعرف على كيفية إنشاء رابط بين TextBoxes في مستند Word باستخدام Aspose.Words for .NET. |
-| [تحقق من التسلسل](./check-sequence/) | تعرف على كيفية التحقق من تسلسل TextBoxes في مستند Word باستخدام Aspose.Words for .NET. |
-| [قطع الارتباط](./break-a-link/) | تعرف على كيفية فصل الروابط في مستند Word باستخدام Aspose.Words for .NET. |
+| [Erstellen Sie einen Link](./create-a-link/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Verknüpfung zwischen Textfeldern in einem Word-Dokument erstellen. |
+| [Reihenfolge prüfen](./check-sequence/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Reihenfolge von Textfeldern in einem Word-Dokument überprüfen. |
+| [Brechen Sie eine Verbindung](./break-a-link/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Links in einem Word-Dokument unterbrechen. |

@@ -1,65 +1,65 @@
 ---
-title: استخدم الخط من الجهاز المستهدف
-linktitle: استخدم الخط من الجهاز المستهدف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستند Word إلى HTML ثابت باستخدام خطوط الجهاز الهدف باستخدام Aspose.Words for .NET.
+title: Utiliser la police de la machine cible
+linktitle: Utiliser la police de la machine cible
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à convertir un document Word en HTML fixe à l'aide des polices de la machine cible avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
 
-عند تحويل مستند Word إلى مستند HTML ثابت في تطبيق C # ، قد ترغب في استخدام خطوط الجهاز الهدف لضمان احتفاظ HTML بالشكل والنمط الأصلي للمستند. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحديد هذه الوظيفة باستخدام خيارات حفظ HtmlFixedSaveOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لتحويل مستند Word إلى HTML ثابت باستخدام خطوط الجهاز الهدف باستخدام HtmlFixedSaveOptions.
+Lors de la conversion d'un document Word en HTML fixe dans une application C#, vous souhaiterez peut-être utiliser les polices de la machine cible pour vous assurer que le HTML rendu conserve l'aspect et le style d'origine du document. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement spécifier cette fonctionnalité à l'aide des options d'enregistrement HtmlFixedSaveOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source C # de Aspose.Words pour .NET pour convertir un document Word en HTML fixe à l'aide des polices de la machine cible à l'aide de HtmlFixedSaveOptions.
 
-## فهم مكتبة Aspose.Words
+## Comprendre la bibliothèque Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque puissante pour créer, éditer, convertir et protéger des documents Word sur différentes plates-formes, y compris .NET. Il offre de nombreuses fonctionnalités pour manipuler des documents, telles que l'insertion de texte, la modification de la mise en forme, l'ajout de sections et bien plus encore.
 
-## تحميل مستند Word
+## Chargement du document Word
 
-الخطوة الأولى هي تحميل مستند Word الذي تريد تحويله إلى HTML ثابت. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+La première étape consiste à charger le document Word que vous souhaitez convertir en HTML fixe. Utilisez la classe Document pour charger le document à partir du fichier source. Voici un exemple :
 
 ```csharp
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Bullet Points with Alternative font.docx" الموجود في دليل المستندات.
+Dans cet exemple, nous chargeons le document "Bullet points with alternative font.docx" situé dans le répertoire documents.
 
-## تكوين خيارات النسخ الاحتياطي
+## Configuration des options de sauvegarde
 
-الخطوة التالية هي تكوين خيارات الحفظ للتحويل إلى HTML ثابت. استخدم فئة HtmlFixedSaveOptions وقم بتعيين الخاصية UseTargetMachineFonts على true لتخبر Aspose.Words باستخدام الخطوط من الجهاز الهدف. هيريس كيفية القيام بذلك:
+L'étape suivante consiste à configurer les options d'enregistrement pour la conversion en HTML fixe. Utilisez la classe HtmlFixedSaveOptions et définissez la propriété UseTargetMachineFonts sur true pour indiquer à Aspose.Words d'utiliser les polices de la machine cible. Voici comment procéder :
 
 ```csharp
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 ```
 
-نقوم بإنشاء كائن HtmlFixedSaveOptions جديد وقمنا بتعيين الخاصية UseTargetMachineFonts على true لاستخدام خطوط الجهاز الهدف عند التحويل.
+Nous créons un nouvel objet HtmlFixedSaveOptions et définissons la propriété UseTargetMachineFonts sur true pour utiliser les polices de la machine cible lors de la conversion.
 
-## ثابت تحويل مستند HTML
+## Conversion de document HTML fixe
 
-الآن بعد أن قمنا بتكوين خيارات الحفظ ، يمكننا المتابعة لتحويل المستند إلى HTML ثابت. استخدم طريقة Save لفئة Document لحفظ المستند المحول بتنسيق HTML ثابت عن طريق تحديد خيارات الحفظ. هنا مثال :
+Maintenant que nous avons configuré les options de sauvegarde, nous pouvons procéder à la conversion du document en HTML fixe. Utilisez la méthode Save de la classe Document pour enregistrer le document converti au format HTML fixe en spécifiant les options d'enregistrement. Voici un exemple :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
-في هذا المثال ، نحفظ المستند المحول باسم "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html" باستخدام خيارات الحفظ المحددة.
+Dans cet exemple, nous enregistrons le document converti sous "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html" en utilisant les options d'enregistrement spécifiées.
 
-### مثال على شفرة المصدر لـ HtmlFixedSaveOptions مع ميزة "استخدام الخطوط من الجهاز الهدف" باستخدام Aspose.Words for .NET
+### Exemple de code source pour HtmlFixedSaveOptions avec la fonctionnalité "Utiliser les polices de la machine cible" utilisant Aspose.Words pour .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+//Charger le document Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-// تكوين خيارات النسخ الاحتياطي باستخدام ميزة "استخدام الخطوط من الجهاز الهدف"
+// Configurez les options de sauvegarde avec la fonction "Utiliser les polices de la machine cible"
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
-// تحويل المستند إلى HTML ثابت
+// Convertir le document en HTML fixe
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا الدليل ، شرحنا كيفية تحويل مستند Word إلى HTML ثابت باستخدام خطوط الجهاز الهدف مع مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يضمن التحويل إلى HTML ثابت مع خطوط الجهاز الهدف عرضًا أمينًا ومتسقًا للمستند بتنسيق HTML.
+Dans ce guide, nous avons expliqué comment convertir un document Word en HTML fixe en utilisant les polices de la machine cible avec la bibliothèque Aspose.Words pour .NET. En suivant les étapes fournies et en utilisant le code source C# fourni, vous pouvez facilement appliquer cette fonctionnalité dans votre application C#. La conversion en HTML fixe avec les polices de la machine cible garantit un rendu fidèle et cohérent du document au format HTML.

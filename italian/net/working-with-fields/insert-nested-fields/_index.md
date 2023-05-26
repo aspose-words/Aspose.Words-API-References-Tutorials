@@ -1,52 +1,52 @@
 ---
-title: أدخل الحقول المتداخلة
-linktitle: أدخل الحقول المتداخلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الحقول المتداخلة بسهولة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Inserisci campi nidificati
+linktitle: Inserisci campi nidificati
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire facilmente campi nidificati nei tuoi documenti Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-nested-fields/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج الحقول المتداخلة" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Ecco una guida dettagliata per spiegare il codice sorgente C# di seguito, che utilizza la funzionalità "Inserisci campi nidificati" di Aspose.Words per .NET. Assicurati di seguire attentamente ogni passaggio per ottenere i risultati desiderati.
 
-## الخطوة 1: إعداد دليل المستند
+## Passaggio 1: impostazione della directory dei documenti
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "YOUR DOCUMENT DIRECTORY" con il percorso appropriato alla directory dei tuoi documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## Passaggio 2: creazione del documento e di DocumentBuilder
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Iniziamo creando un nuovo documento e inizializzando un DocumentBuilder.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدراج فواصل الصفحات
+## Passaggio 3: Inserimento di interruzioni di pagina
 
-نستخدم حلقة لإدراج عدة فواصل صفحات في المستند.
+Usiamo un loop per inserire più interruzioni di pagina nel documento.
 
 ```csharp
 for (int i = 0; i < 5; i++)
      builder. InsertBreak(BreakType.PageBreak);
 ```
 
-## الخطوة 4: الانتقال إلى التذييل
+## Passaggio 4: passa al piè di pagina
 
- نحن نستخدم ال`MoveToHeaderFooter()` أسلوب DocumentBuilder لتحريك المؤشر إلى التذييل الرئيسي.
+ Noi usiamo il`MoveToHeaderFooter()` metodo di DocumentBuilder per spostare il cursore sul piè di pagina principale.
 
 ```csharp
 builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 ```
 
-## الخطوة 5: إدخال الحقل المتداخل
+## Passaggio 5: Inserimento del campo nidificato
 
- نحن نستخدم برنامج DocumentBuilder`InsertField()` طريقة لإدراج حقل متداخل في التذييل.
+ Usiamo il DocumentBuilder`InsertField()` metodo per inserire un campo nidificato nel piè di pagina.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");
@@ -57,30 +57,30 @@ builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Infine, chiamiamo il`Update()` metodo per aggiornare il campo.
 
 ```csharp
 field. Update();
 ```
 
-### نموذج التعليمات البرمجية المصدر لإدخال الحقول المتداخلة مع Aspose.Words for .NET
+### Esempio di codice sorgente per l'inserimento di campi nidificati con Aspose.Words per .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند و DocumentBuilder.
+// Creare il documento e il DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// أدخل فواصل الصفحات.
+// Inserisci interruzioni di pagina.
 for (int i = 0; i < 5; i++)
      builder. InsertBreak(BreakType.PageBreak);
 
-// الانتقال إلى التذييل.
+// Sposta al piè di pagina.
 builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-// أدخل الحقل المتداخل.
+// Inserisci campo nidificato.
 Field field = builder. InsertField(@"IF ");
 builder.MoveTo(field.Separator);
 builder. InsertField("PAGE");
@@ -88,10 +88,10 @@ builder. Write(" <> ");
 builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
 
-// قم بتحديث الحقل.
+// Aggiorna il campo.
 field. Update();
 
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأدرجنا فواصل الصفحات ، وحركنا المؤشر إلى التذييل ، ثم أدرجنا حقلاً متداخلًا في التذييل.
+In questo esempio, abbiamo creato un nuovo documento, inserito interruzioni di pagina, spostato il cursore sul piè di pagina e quindi inserito un campo nidificato nel piè di pagina.

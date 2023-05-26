@@ -1,43 +1,43 @@
 ---
-title: فتح ميزات النوع
-linktitle: فتح ميزات النوع
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET
+title: Açık Tip Özellikler
+linktitle: Açık Tip Özellikler
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'te Open Type özelliklerini nasıl etkinleştireceğinizi ve kullanacağınızı öğrenin
 type: docs
 weight: 10
 url: /tr/net/enable-opentype-features/open-type-features/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من العمل باستخدام ميزات Open Type في مستندات Word الخاصة بك.
+Bu kapsamlı öğreticide, Aspose.Words for .NET'te Açık Tip özelliklerini nasıl etkinleştireceğinizi ve kullanacağınızı öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, Word belgelerinizde Açık Yazım özellikleriyle çalışabileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: قم بتحميل المستند
-للبدء ، قم بتحميل المستند باستخدام فئة المستند:
+## 1. Adım: Belgeyi Yükleyin
+Başlamak için Document sınıfını kullanarak belgeyi yükleyin:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "OpenType text shaping.docx");
 ```
 
-## الخطوة 2: تفعيل ميزات النوع المفتوح
-لتمكين ميزات Open Type ، قم بتعيين خاصية TextShaperFactory لفئة LayoutOptions على مثيل لمصنع شكل النص المطلوب. في هذا المثال ، نستخدم HarfBuzzTextShaperFactory:
+## 2. Adım: Açık Tip Özelliklerini Etkinleştirin
+Open Type özelliklerini etkinleştirmek için LayoutOptions sınıfının TextShaperFactory özelliğini istenen metin şekillendirici fabrikasının bir örneğine ayarlayın. Bu örnekte, HarfBuzzTextShaperFactory'yi kullanıyoruz:
 
 ```csharp
 doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzTextShaperFactory.Instance;
 ```
 
-## الخطوة 3: احفظ المستند
-بعد تمكين ميزات Open Type ، احفظ المستند بتنسيق الإخراج المطلوب ، مثل PDF:
+## 3. Adım: Belgeyi Kaydedin
+Open Type özelliklerini etkinleştirdikten sonra, belgeyi PDF gibi istenen çıktı biçiminde kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-### مثال على كود المصدر لميزات النوع المفتوح باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لاستخدام ميزات Open Type في Aspose.Words for .NET:
+### Aspose.Words for .NET kullanan Open Type Unsurları için Örnek Kaynak Kodu
+Aspose.Words for .NET'te Open Type özelliklerini kullanmak için eksiksiz kaynak kodu burada:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -48,7 +48,7 @@ doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzText
 doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن العمل مع ميزات Open Type في مستندات Word الخاصة بك.
+## Çözüm
+Tebrikler! Aspose.Words for .NET'te Open Type özelliklerini nasıl etkinleştireceğinizi ve kullanacağınızı başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, artık Word belgelerinizdeki Açık Yazım özellikleriyle çalışabilirsiniz.
 
-توفر ميزات Open Type إمكانات طباعة وتشكيل نصية محسّنة ، مما يسمح لك بإنشاء مستندات جذابة بصريًا وذات مظهر احترافي. جرب مصانع مختلفة لأشكال النص واستكشف إمكانيات ميزات Open Type في مشروعاتك.
+Open Type özellikleri, gelişmiş tipografi ve metin şekillendirme yetenekleri sunarak görsel olarak çekici ve profesyonel görünümlü belgeler oluşturmanıza olanak tanır. Farklı metin şekillendirici fabrikalarla deneyler yapın ve projelerinizdeki Açık Yazım özelliklerinin olanaklarını keşfedin.

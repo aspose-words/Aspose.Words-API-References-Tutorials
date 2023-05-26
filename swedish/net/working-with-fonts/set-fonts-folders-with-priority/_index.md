@@ -1,24 +1,24 @@
 ---
-title: تعيين مجلدات الخطوط ذات الأولوية
-linktitle: تعيين مجلدات الخطوط ذات الأولوية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد مجلدات الخطوط ذات الأولوية عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Ställ in teckensnittsmappar med prioritet
+linktitle: Ställ in teckensnittsmappar med prioritet
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att ställa in teckensnittsmappar med prioritet när du renderar ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلدات الخطوط ذات الأولوية عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلدات خطوط متعددة ذات أولوية بحث مخصصة عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+den här handledningen går vi igenom steg-för-steg-processen för att ställa in teckensnittsmappar med prioritet när du renderar ett dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och förse dig med en omfattande guide som hjälper dig att förstå och implementera den här funktionen i dina egna projekt. I slutet av denna handledning kommer du att veta hur du anger flera teckensnittsmappar med anpassad sökprioritet när du renderar dina dokument med Aspose.Words för .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+Först måste du ställa in sökvägen till din dokumentkatalog. Det här är platsen där du vill spara ditt redigerade renderade dokument. Ersätt "DIN DOKUMENTKATOLOG" med lämplig sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تعيين مجلدات الخطوط ذات الأولوية
- ثم يمكنك ضبط مجلدات الخطوط ذات الأولوية باستخدام امتداد`FontSettings` الطبقة و`SetFontsSources()` طريقة. يمكنك تحديد مصادر خطوط متعددة باستخدام مثيلات`SystemFontSource` و`FolderFontSource`. في هذا المثال ، حددنا مصدرين للخطوط: المصدر الافتراضي لخطوط النظام ومجلد الخط المخصص بأولوية 1.
+## Steg 2: Ställ in teckensnittsmappar med prioritet
+ Sedan kan du ställa in teckensnittsmapparna med prioritet med hjälp av`FontSettings` klass och`SetFontsSources()` metod. Du kan ange flera teckensnittskällor med hjälp av instanser av`SystemFontSource` och`FolderFontSource`. I det här exemplet har vi definierat två teckensnittskällor: standardsystemets teckensnittskälla och en anpassad teckensnittsmapp med prioritet 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
@@ -27,23 +27,23 @@ new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true, 1)
 });
 ```
 
-## الخطوة 3: قم بتحميل المستند للعرض
- يمكنك الآن تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Steg 3: Ladda dokumentet för att rendera
+ Nu kan du ladda dokumentet för att rendera med hjälp av`Document` klass. Var noga med att ange rätt dokumentsökväg.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 4: احفظ المستند المقدم
- أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## Steg 4: Spara det renderade dokumentet
+ Slutligen kan du spara det renderade dokumentet till en fil med hjälp av`Save()` metod för`Document` klass. Var noga med att ange rätt sökväg och filnamn.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders With Priority باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Set Fonts-mappar med prioritet med Aspose.Words för .NET 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
@@ -54,5 +54,5 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلدات الخطوط ذات الأولوية عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلدات خطوط متعددة ذات أولوية بحث مخصصة عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+## Slutsats
+den här handledningen lärde vi oss hur man ställer in teckensnittsmappar med prioritet när man renderar ett dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden kan du enkelt ange flera teckensnittsmappar med anpassad sökprioritet när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för att arbeta med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa teckensnittskällorna som används när du renderar dina dokument efter dina specifika behov.

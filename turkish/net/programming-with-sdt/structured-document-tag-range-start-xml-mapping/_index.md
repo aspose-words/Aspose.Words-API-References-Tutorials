@@ -1,30 +1,30 @@
 ---
-title: نطاق علامة المستند المهيكلة بدء تعيين Xml
-linktitle: نطاق علامة المستند المهيكلة بدء تعيين Xml
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إعداد تعيين XML لنطاق علامة مستند منظم يبدأ في مستند Word باستخدام Aspose.Words for .NET.
+title: Yapılandırılmış Belge Etiket Aralığı Xml Eşlemesini Başlat
+linktitle: Yapılandırılmış Belge Etiket Aralığı Xml Eşlemesini Başlat
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesinde başlayan yapılandırılmış bir belge etiketi aralığı için XML eşlemeyi nasıl kuracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/structured-document-tag-range-start-xml-mapping/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إعداد تعيين XML لنطاق علامة مستند منظم يبدأ في مستند Word باستخدام Aspose.Words for .NET. يتيح لك تعيين XML عرض أجزاء معينة من مصدر بيانات XML داخل عنصر تحكم المحتوى.
+Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesinde yapılandırılmış bir belge etiket aralığı başlangıcı için XML eşlemenin nasıl kurulacağını açıklar. XML eşleme, içerik denetimi içinde bir XML veri kaynağının belirli bölümlerini görüntülemenizi sağlar.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Önkoşullar
+Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words for .NET kitaplığı yüklendi.
+- Temel C# bilgisi ve Word belgeleriyle çalışma.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## 1. Adım: Belge Dizinini kurun
+ Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وإنشاء جزء XML
- قم بتحميل مستند Word باستخدام ملف`Document` مُنشئ ، تمرير المسار إلى المستند كمعامل. قم بإنشاء جزء XML يحتوي على البيانات التي تريد عرضها داخل علامة المستند المهيكلة.
+## 2. Adım: Belgeyi Yükleyin ve XML Parçası Oluşturun
+ kullanarak Word belgesini yükleyin.`Document` yapıcı, belgenin yolunu bir parametre olarak iletir. Yapılandırılmış belge etiketi içinde görüntülemek istediğiniz verileri içeren bir XML bölümü oluşturun.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -33,40 +33,40 @@ string xmlPartContent = "<root><text>Text element #1</text><text>Text element #2
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add(xmlPartId, xmlPartContent);
 ```
 
-## الخطوة 3: تعيين مخطط XML لعلامة المستند المهيكلة
-استرجع نطاق علامة المستند المنظم بدءًا من المستند. بعد ذلك ، قم بتعيين مخطط XML لعلامة المستند المركب لعرض جزء معين من جزء XML المخصص باستخدام تعبير XPath.
+## 3. Adım: Yapılandırılmış Belge Etiketi için XML Eşlemesini Ayarlayın
+Belgeden başlayarak yapılandırılmış belge etiketi aralığını alın. Ardından, yapılandırılmış belge etiketi için XML eşlemesini, bir XPath ifadesi kullanarak özel XML bölümünün belirli bir bölümünü gösterecek şekilde ayarlayın.
 
 ```csharp
 StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند المعدل إلى الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx".
+## 4. Adım: Belgeyi Kaydedin
+ Değiştirilen belgeyi belirtilen dizine kaydedin.`Save` yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
 ```
 
-### مثال على شفرة المصدر لنطاق علامة المستند المهيكل ابدأ تعيين Xml باستخدام Aspose.Words for .NET 
+### Yapılandırılmış Belge Etiket Aralığı için örnek kaynak kodu Aspose.Words for .NET kullanarak Xml Eşlemeyi Başlat 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
-	// أنشئ جزء XML يحتوي على بيانات وأضفه إلى مجموعة CustomXmlPart الخاصة بالمستند.
+	// Veri içeren bir XML bölümü oluşturun ve bunu belgenin CustomXmlPart koleksiyonuna ekleyin.
 	string xmlPartId = Guid.NewGuid().ToString("B");
 	string xmlPartContent = "<root><text>Text element #1</text><text>Text element #2</text></root>";
 	CustomXmlPart xmlPart = doc.CustomXmlParts.Add(xmlPartId, xmlPartContent);
 	Console.WriteLine(Encoding.UTF8.GetString(xmlPart.Data));
-	// قم بإنشاء StructuredDocumentTag الذي سيعرض محتويات CustomXmlPart الخاصة بنا في المستند.
+	// Belgede CustomXmlPart'ımızın içeriğini gösterecek bir StructuredDocumentTag oluşturun.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
-	// إذا قمنا بتعيين خريطة لعلامة StructuredDocumentTag الخاصة بنا ،
-	// سيعرض فقط جزءًا من CustomXmlPart الذي يشير إليه XPath.
-	// سيشير XPath هذا إلى المحتوى الثاني "<text>" للعنصر الأول "<root>" في CustomXmlPart الخاص بنا.
+	// StructuredDocumentTag'imiz için bir eşleme ayarlarsak,
+	// yalnızca XPath'ın işaret ettiği CustomXmlPart'ın bir bölümünü görüntüler.
+	// Bu XPath, CustomXmlPart'ımızın ilk "<root>" öğesinin ikinci "<text>" öğesinin içeriğine işaret edecektir.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إعداد تعيين XML لنطاق علامة مستند منظم يبدأ في مستند Word باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET kullanarak Word belgenizde yapılandırılmış bir belge etiketi aralığı başlangıcı için XML eşlemeyi başarıyla kurdunuz.

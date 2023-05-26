@@ -1,45 +1,45 @@
 ---
-title: تجاهل مربعات النص
-linktitle: تجاهل مربعات النص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند أثناء تجاهل تنسيق مربع النص باستخدام Aspose.Words for .NET.
+title: Игнорировать текстовые поля
+linktitle: Игнорировать текстовые поля
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как добавить документ, игнорируя форматирование текстового поля, с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/join-and-append-documents/ignore-text-boxes/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق مستند مع الحفاظ على تنسيق مربعات النص. يوضح كود المصدر المقدم كيفية إعداد خيارات تنسيق الاستيراد لتضمين مربعات النص أثناء عملية الإلحاق.
+В этом руководстве объясняется, как использовать Aspose.Words для .NET для добавления документа с сохранением форматирования текстовых полей. В предоставленном исходном коде показано, как настроить параметры формата импорта для включения текстовых полей в процессе добавления.
 
-## الخطوة 1: قم بإعداد المشروع
+## Шаг 1: Настройте проект
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Убедитесь, что у вас есть следующие предварительные условия:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Установлена библиотека Aspose.Words for .NET. Вы можете загрузить его с официального веб-сайта Aspose или использовать менеджер пакетов NuGet для его установки.
+- Путь к каталогу документов, в котором находятся исходный и конечный документы.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Шаг 2. Откройте исходный и конечный документы
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Откройте исходный и конечный документы с помощью`Document` конструктор класса. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к вашему каталогу документов.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إعداد خيارات تنسيق الاستيراد
+## Шаг 3. Настройте параметры формата импорта
 
- قم بإنشاء مثيل لـ`ImportFormatOptions` فئة وضبط`IgnoreTextBoxes` ملكية ل`false`. يضمن ذلك تضمين مربعات النص أثناء عملية الإلحاق مع الحفاظ على تنسيقها.
+ Создайте экземпляр`ImportFormatOptions` класс и установить`IgnoreTextBoxes` собственность на`false`. Это гарантирует, что текстовые поля будут включены в процесс добавления с сохранением их форматирования.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 ```
 
-## الخطوة 4: إلحاق محتوى مربع نص
+## Шаг 4. Добавьте содержимое текстового поля.
 
- إنشاء`NodeImporter` كائن واستخدمه لاستيراد عقد مربع نص من المستند المصدر إلى المستند الوجهة. كرر خلال كل فقرة في المستند المصدر واستوردها إلى المستند الوجهة.
+ Создать`NodeImporter` объект и использовать его для импорта узлов текстового поля из исходного документа в целевой документ. Переберите каждый абзац в исходном документе и импортируйте его в целевой документ.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -51,25 +51,25 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## الخطوة 5: احفظ المستند الوجهة
+## Шаг 5: Сохраните целевой документ
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Наконец, сохраните измененный целевой документ, используя`Save` метод`Document` объект.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند مع الحفاظ على تنسيق مربع النص باستخدام Aspose.Words for .NET.
+На этом реализация добавления документа с сохранением форматирования текстового поля с использованием Aspose.Words for .NET завершена.
 
-### مثال على شفرة المصدر لـ Ignore Text Boxes باستخدام Aspose.Words for .NET 
+### Пример исходного кода для игнорирования текстовых полей с использованием Aspose.Words для .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//احتفظ بتنسيق مربعات النص المصدر عند الاستيراد.
+	//Сохраняйте форматирование исходных текстовых полей при импорте.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

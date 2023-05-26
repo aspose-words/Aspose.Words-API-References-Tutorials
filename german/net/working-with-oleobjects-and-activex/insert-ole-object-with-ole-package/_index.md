@@ -1,17 +1,17 @@
 ---
-title: قم بإدراج كائن Ole مع حزمة Ole
-linktitle: قم بإدراج كائن Ole مع حزمة Ole
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج كائن OLE مع حزمة OLE في مستند باستخدام Aspose.Words for .NET.
+title: Ole-Objekt mit Ole-Paket einfügen
+linktitle: Ole-Objekt mit Ole-Paket einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein OLE-Objekt mit einem OLE-Paket in ein Dokument einfügen.
 type: docs
 weight: 10
 url: /de/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود مصدر C # أدناه والذي يوضح كيفية إدراج كائن OLE مع حزمة OLE باستخدام Aspose.Words for .NET.
+Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der veranschaulicht, wie Sie mithilfe von Aspose.Words für .NET ein OLE-Objekt in ein OLE-Paket einfügen.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Schritt 1: Importieren Sie die erforderlichen Referenzen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die erforderlichen Referenzen zur Verwendung von Aspose.Words für .NET in Ihr Projekt importiert haben. Dazu gehört das Importieren der Aspose.Words-Bibliothek und das Hinzufügen der erforderlichen Namespaces zu Ihrer Quelldatei.
 
 ```csharp
 using Aspose.Words;
@@ -19,16 +19,16 @@ using Aspose.Words.Drawing;
 using System.IO;
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومولد مستندات
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` class ومُنشئ المستندات باستخدام امتداد`DocumentBuilder` فصل.
+## Schritt 2: Erstellen Sie ein neues Dokument und einen Dokumentengenerator
+ In diesem Schritt erstellen wir ein neues Dokument mit`Document` Klasse und einen Dokumentenersteller, der die verwendet`DocumentBuilder` Klasse.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدراج كائن OLE مع حزمة OLE
- استخدم أداة إنشاء المستندات`InsertOleObject` أسلوب لإدراج كائن OLE مع حزمة OLE في المستند. حدد دفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى.
+## Schritt 3: Fügen Sie ein OLE-Objekt mit einem OLE-Paket ein
+ Nutzen Sie den Dokumentengenerator`InsertOleObject` Methode zum Einfügen eines OLE-Objekts mit einem OLE-Paket in das Dokument. Geben Sie den Datenstrom, den Objekttyp, die Anzeigeoptionen und andere notwendige Einstellungen an.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -41,14 +41,14 @@ using (Stream stream = new MemoryStream(bs))
 }
 ```
 
-## الخطوة 4: احفظ المستند
- استخدم ملف`Save` طريقة لحفظ المستند في ملف.
+## Schritt 4: Speichern Sie das Dokument
+ Verwenden Sie das Dokument`Save` Methode zum Speichern des Dokuments in einer Datei.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لإدراج كائن OLE مع حزمة OLE مع Aspose.Words for .NET
+### Beispielquellcode zum Einfügen eines OLE-Objekts mit einem OLE-Paket mit Aspose.Words für .NET
 
 ```csharp
 Document doc = new Document();
@@ -66,4 +66,4 @@ using (Stream stream = new MemoryStream(bs))
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-هذا نموذج رمز كامل لإدخال كائن OLE مع حزمة OLE مع Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Dies ist ein vollständiges Codebeispiel zum Einfügen eines OLE-Objekts mit einem OLE-Paket mit Aspose.Words für .NET. Stellen Sie sicher, dass Sie die erforderlichen Referenzen importieren und die zuvor beschriebenen Schritte befolgen, um diesen Code in Ihr Projekt zu integrieren.

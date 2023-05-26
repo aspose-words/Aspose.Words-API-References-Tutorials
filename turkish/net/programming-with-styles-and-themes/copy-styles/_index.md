@@ -1,51 +1,51 @@
 ---
-title: نسخ الأنماط
-linktitle: نسخ الأنماط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية نسخ الأنماط بين المستندات باستخدام Aspose.Words for .NET.
+title: Stilleri Kopyala
+linktitle: Stilleri Kopyala
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile belgeler arasında stillerin nasıl kopyalanacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-styles-and-themes/copy-styles/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لنسخ الأنماط من مستند المصدر إلى المستند الهدف باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة نقل الأنماط من مستند إلى آخر ، وهو ما يمكن أن يكون مفيدًا عندما تريد تطبيق أنماط متناسقة على مستندات متعددة.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir kaynak belgeden bir hedef belgeye stilleri kopyalamak için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, stilleri bir belgeden diğerine aktarmanıza olanak tanır; bu, birden çok belgeye tutarlı stiller uygulamak istediğinizde yararlı olabilir.
 
-## الخطوة الأولى: تهيئة البيئة
+## 1. Adım: Ortamı ayarlama
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
-## الخطوة 2: إنشاء كائنات المستند
+## 2. Adım: Belge Nesneleri Oluşturma
 
 ```csharp
 Document doc = new Document();
 Document target = new Document(dataDir + "Rendering.docx");
 ```
 
- في هذه الخطوة ، نقوم بإنشاء اثنين`Document` أشياء:`doc` الذي يمثل مستند المصدر الفارغ و`target` الذي يمثل المستند الهدف الذي سننسخ الأنماط منه.
+ Bu adımda, iki tane oluşturuyoruz`Document` nesneler:`doc` boş kaynak belgeyi temsil eden ve`target` stilleri kopyalayacağımız hedef belgeyi temsil eder.
 
-## الخطوة 3: نسخ الأنماط
+## 3. Adım: Stilleri kopyalayın
 
 ```csharp
 target. CopyStylesFromTemplate(doc);
 ```
 
- في هذه الخطوة ، نستخدم الامتداد`CopyStylesFromTemplate` طريقة لنسخ الأنماط من المستند المصدر (`doc`) إلى المستند الهدف (`target`).
+ Bu adımda,`CopyStylesFromTemplate` kaynak belgeden stilleri kopyalama yöntemi (`doc`) hedef belgeye (`target`).
 
-## الخطوة 4: حفظ المستند
+## 4. Adım: Belgeyi kaydetme
 
 ```csharp
 doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 ```
 
-في هذه الخطوة الأخيرة ، نحفظ المستند المصدر بالأنماط المنسوخة إلى ملف.
+Bu son adımda, kaynak belgeyi bir dosyaya kopyalanan stiller ile kaydediyoruz.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لنسخ الأنماط من مستند مصدر إلى مستند مستهدف. تتيح لك هذه الميزة الحفاظ على تناسق النمط عبر مستندات متعددة ، مما يسهل إدارة مظهر وتنسيق مستنداتك.
+Artık stilleri bir kaynak belgeden hedef belgeye kopyalamak için kaynak kodunu çalıştırabilirsiniz. Bu özellik, belgelerinizin görünümünü ve biçimlendirmesini yönetmeyi kolaylaştırarak, birden çok belgede stil tutarlılığı sağlamanıza olanak tanır.
 
-### نموذج التعليمات البرمجية المصدر لـ Copy Styles باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Copy Styles için örnek kaynak kodu 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document();
@@ -58,12 +58,12 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
         
 ```
 
-## خاتمة
+## Çözüm
 
- في هذا البرنامج التعليمي ، استكشفنا ميزة أنماط النسخ باستخدام Aspose.Words for .NET. باستخدام ملف`CopyStylesFromTemplate` الطريقة ، تمكنا من نسخ الأنماط من مستند مصدر إلى مستند مستهدف ، مما يسهل الحفاظ على اتساق الأنماط عبر مستندات متعددة.
+ Bu eğitimde, Aspose.Words for .NET ile kopyalama stilleri özelliğini inceledik. kullanarak`CopyStylesFromTemplate` yöntemiyle, stilleri bir kaynak belgeden hedef belgeye kopyalayabildik, bu da stilleri birden çok belgede tutarlı tutmayı kolaylaştırdı.
 
-تعد أنماط النسخ مفيدة بشكل خاص عندما تريد تطبيق أنماط مكونة مسبقًا على مستندات متعددة ، مما يضمن مظهرًا وتنسيقًا متسقين. يوفر لك هذا الوقت والجهد من خلال عدم الاضطرار إلى إعادة إنشاء نفس الأنماط لكل مستند.
+Stilleri kopyalamak, özellikle önceden yapılandırılmış stilleri birden çok belgeye uygulayarak tutarlı bir görünüm ve biçimlendirme sağlamak istediğinizde kullanışlıdır. Bu, her belge için aynı stilleri yeniden oluşturmak zorunda kalmayarak zamandan ve emekten tasarruf etmenizi sağlar.
 
-يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية لمعالجة الأنماط في مستنداتك. يمكنك استخدام هذه الميزة لتخصيص الأنماط أو تطبيق السمات أو ببساطة نقل الأنماط بين المستندات المختلفة.
+Aspose.Words for .NET, belgelerinizdeki stilleri değiştirmek için güçlü bir API sağlar. Stilleri özelleştirmek, temalar uygulamak veya yalnızca farklı belgeler arasında stilleri aktarmak için bu özelliği kullanabilirsiniz.
 
-لا تتردد في استكشاف الميزات الأخرى التي تقدمها Aspose.Words for .NET لتحسين إدارة النمط وتحسين سير عملك.
+Stil yönetimini iyileştirmek ve iş akışınızı optimize etmek için Aspose.Words for .NET tarafından sunulan diğer özellikleri keşfetmekten çekinmeyin.

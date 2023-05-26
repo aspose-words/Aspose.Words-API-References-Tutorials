@@ -1,26 +1,26 @@
 ---
-title: احصل على أنواع المراجعة
-linktitle: احصل على أنواع المراجعة
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على أنواع المراجعات في مستند Word باستخدام Aspose.Words for .NET.
+title: Revisionstypen abrufen
+linktitle: Revisionstypen abrufen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erhalten Sie Revisionstypen in einem Word-Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/working-with-revisions/get-revision-types/
 ---
 
-في هذا الدليل التدريجي ، سنخبرك بكيفية الحصول على أنواع المراجعات في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+In dieser Schritt-für-Schritt-Anleitung erklären wir Ihnen, wie Sie mit Aspose.Words für .NET die Revisionstypen in einem Word-Dokument abrufen. Wir stellen Ihnen den vollständigen Quellcode zur Verfügung und zeigen Ihnen, wie Sie die Markdown-Ausgabe formatieren.
 
-## الخطوة 1: تحميل المستند
+## Schritt 1: Laden des Dokuments
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+Der erste Schritt besteht darin, das Dokument mit den Überarbeitungen hochzuladen.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة الثانية: تصفح الفقرات
+## Schritt 2: Gehen Sie die Absätze durch
 
-بعد ذلك ، سنتصفح فقرات المستند ونتحقق من أنواع المراجعات المرتبطة بكل فقرة.
+Als Nächstes gehen wir die Absätze des Dokuments durch und überprüfen die mit jedem Absatz verbundenen Revisionstypen.
 
 ```csharp
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
@@ -33,9 +33,9 @@ for (int i = 0; i < paragraphs.Count; i++)
 }
 ```
 
-### مثال على شفرة المصدر للحصول على أنواع المراجعة باستخدام Aspose.Words for .NET
+### Beispielquellcode für „Get Revision Types“ mit Aspose.Words für .NET
 
-فيما يلي رمز المصدر الكامل للحصول على أنواع المراجعة في مستند باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Quellcode zum Abrufen von Revisionstypen in einem Dokument mit Aspose.Words für .NET:
 
 ```csharp
 

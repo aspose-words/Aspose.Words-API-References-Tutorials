@@ -1,55 +1,55 @@
 ---
-title: تعيين نمط التحكم في المحتوى
-linktitle: تعيين نمط التحكم في المحتوى
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين نمط عنصر تحكم المحتوى في مستند Word باستخدام Aspose.Words for .NET ، مع تطبيق تنسيق متسق.
+title: 设置内容控件样式
+linktitle: 设置内容控件样式
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 设置 Word 文档中内容控件的样式，并应用一致的格式。
 type: docs
 weight: 10
 url: /zh/net/programming-with-sdt/set-content-control-style/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية تعيين نمط عنصر تحكم المحتوى في مستند Word باستخدام Aspose.Words for .NET. يمكنك تطبيق أنماط محددة مسبقًا أو مخصصة على عناصر تحكم المحتوى من أجل تنسيق متناسق.
+本教程解释了如何使用 Aspose.Words for .NET 在 Word 文档中设置内容控件的样式。您可以将预定义或自定义样式应用于内容控件以获得一致的格式。
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## 先决条件
+要学习本教程，您需要具备以下条件：
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- 安装了 Aspose.Words for .NET 库。
+- C# 的基本知识和使用 Word 文档。
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## 第 1 步：设置文档目录
+首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`使用文档所在目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند واسترجع عنصر التحكم في المحتوى
- قم بتحميل مستند Word باستخدام ملف`Document` مُنشئ ، تمرير المسار إلى المستند كمعامل. استرجع عنصر التحكم في المحتوى المطلوب من المستند. في هذا المثال ، نفترض أن عنصر التحكم في المحتوى هو أول علامة منظمة للمستند في المستند.
+## 第 2 步：加载文档并检索内容控件
+使用`Document`构造函数，将文档的路径作为参数传递。从文档中检索所需的内容控件。在此示例中，我们假设内容控件是文档中的第一个结构化文档标记。
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
-## الخطوة 3: استرجع النمط وطبقه على التحكم في المحتوى
- استرجع النمط المطلوب من مجموعة أنماط المستند. في هذا المثال ، نسترجع نمط "اقتباس" باستخدام`StyleIdentifier.Quote` . بعد ذلك ، قم بتعيين النمط الذي تم استرداده إلى ملف`Style` خاصية علامة المستند المنظم.
+## 第 3 步：检索样式并应用于内容控件
+从文档的样式集合中检索所需的样式。在此示例中，我们通过使用检索“报价”样式`StyleIdentifier.Quote`.然后，将检索到的样式分配给`Style`结构化文档标签的属性。
 
 ```csharp
 Style style = doc.Styles[StyleIdentifier.Quote];
 sdt.Style = style;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند المعدل إلى الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.SetContentControlStyle.docx".
+## 第 4 步：保存文档
+使用 将修改后的文档保存到指定目录`Save`方法。提供具有适当文件扩展名的所需文件名。在本例中，我们将文档保存为“WorkingWithSdt.SetContentControlStyle.docx”。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 ```
 
-### مثال على التعليمات البرمجية المصدر لـ Set Content Control Style باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 设置内容控件样式的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -59,4 +59,4 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 	doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تعيين نمط عنصر تحكم المحتوى في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+就是这样！您已经使用 Aspose.Words for .NET 成功设置了 Word 文档中内容控件的样式。

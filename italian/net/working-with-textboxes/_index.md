@@ -1,17 +1,17 @@
 ---
-title: العمل مع مربعات النص
-linktitle: العمل مع مربعات النص
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إنشاء ارتباط ، والتحقق من التسلسل ، وكسر الارتباط باستخدام Aspose.Words for .NET.
+title: Lavorare con le caselle di testo
+linktitle: Lavorare con le caselle di testo
+second_title: Riferimento all'API Aspose.Words per .NET
+description: I tutorial contengono la creazione di un collegamento, la verifica della sequenza e l'interruzione di un collegamento utilizzando Aspose.Words per .NET.
 type: docs
 weight: 1320
 url: /it/net/working-with-textboxes/
 ---
-العمل مع Textboxes هو مورد شامل يأخذك خطوة بخطوة من خلال العمل مع مربعات النص في مستندات Word باستخدام مكتبة Aspose.Words لـ .NET. تعلمك البرامج التعليمية كيفية إضافة وتعديل وحذف مربعات النص ووضعها وتحديد حجمها ونمطها وخصائصها. ستتعلم أيضًا كيفية إدارة المحتوى في مربعات النص ، بما في ذلك إضافة النص وتحريره وإضافة القوائم والجداول وعناصر أخرى. يعد هذا المورد ضروريًا للمطورين الذين يرغبون في معالجة مربعات النص في مستندات Word باستخدام Aspose.Words for .NET ، مما يوفر مزيدًا من المرونة والتخصيص في إنشاء مستندات احترافية.
+Lavorare con le caselle di testo è una risorsa completa che ti accompagna passo dopo passo nell'utilizzo delle caselle di testo nei documenti di Word utilizzando la libreria Aspose.Words per .NET. I tutorial ti insegnano come aggiungere, modificare ed eliminare caselle di testo, posizionarle, definirne le dimensioni, lo stile e le proprietà. Imparerai anche come gestire il contenuto nelle caselle di testo, inclusa l'aggiunta e la modifica di testo, l'aggiunta di elenchi, tabelle e altri elementi. Questa risorsa è essenziale per gli sviluppatori che desiderano manipolare le caselle di testo nei documenti Word utilizzando Aspose.Words per .NET, fornendo maggiore flessibilità e personalizzazione nella creazione di documenti professionali.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [إنشاء ارتباط](./create-a-link/) | تعرف على كيفية إنشاء رابط بين TextBoxes في مستند Word باستخدام Aspose.Words for .NET. |
-| [تحقق من التسلسل](./check-sequence/) | تعرف على كيفية التحقق من تسلسل TextBoxes في مستند Word باستخدام Aspose.Words for .NET. |
-| [قطع الارتباط](./break-a-link/) | تعرف على كيفية فصل الروابط في مستند Word باستخدام Aspose.Words for .NET. |
+| [Crea un collegamento](./create-a-link/) | Scopri come creare un collegamento tra le caselle di testo in un documento di Word con Aspose.Words per .NET. |
+| [Controlla la sequenza](./check-sequence/) | Scopri come controllare la sequenza di TextBox in un documento Word con Aspose.Words per .NET. |
+| [Rompere un collegamento](./break-a-link/) | Scopri come interrompere i collegamenti in un documento di Word con Aspose.Words per .NET. |

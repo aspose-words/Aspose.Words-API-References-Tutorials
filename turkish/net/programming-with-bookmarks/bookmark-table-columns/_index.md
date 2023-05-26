@@ -1,23 +1,23 @@
 ---
-title: أعمدة الجدول المرجعية
-linktitle: أعمدة الجدول المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وضع إشارة مرجعية على عمود جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Yer İşareti Tablosu Sütunları
+linktitle: Yer İşareti Tablosu Sütunları
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablo sütununa nasıl yer işareti koyacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة أعمدة جدول الإشارات المرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة وضع إشارة مرجعية على عمود معين من الجدول في مستند Word والوصول إلى محتوى هذا العمود.
+Bu makalede, Aspose.Words for .NET kitaplığında Bookmark Table Columns işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, bir Word belgesindeki bir tablonun belirli bir sütununa yer işareti koymanıza ve o sütunun içeriğine erişmenize olanak tanır.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# dili hakkında temel bilgi.
+- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## الخطوة الأولى: إنشاء الجدول
+## 1. Adım: Tabloyu oluşturma
 
- قبل إنشاء إشارة مرجعية على عمود جدول ، يجب علينا أولاً إنشاء الجدول باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نقوم بإنشاء جدول من صفين وعمودين:
+ Bir tablo sütununda yer imi oluşturmadan önce, tabloyu`DocumentBuilder` nesne. Örneğimizde iki satır ve iki sütun içeren bir tablo oluşturuyoruz:
 
 ```csharp
 builder. StartTable();
@@ -43,17 +43,17 @@ builder. EndRow();
 builder. EndTable();
 ```
 
-## الخطوة 2: إنشاء إشارة مرجعية للعمود
+## 2. Adım: Sütun yer imini oluşturma
 
- نحن نستخدم ال`StartBookmark`طريقة لإنشاء إشارة مرجعية على عمود معين من الجدول. في مثالنا ، نستخدم اسم "MyBookmark" للإشارة المرجعية:
+ biz kullanıyoruz`StartBookmark`tablonun belirli bir sütununda yer imi oluşturma yöntemi. Örneğimizde, yer imi için "Yer İşaretim" adını kullanıyoruz:
 
 ```csharp
 builder. StartBookmark("MyBookmark");
 ```
 
-## الخطوة 3: الوصول إلى محتوى العمود
+## 3. Adım: Sütun içeriğine erişin
 
- نتصفح جميع الإشارات المرجعية في المستند ونعرض أسمائها. إذا كانت الإشارة المرجعية عبارة عن عمود ، فإننا نصل إلى محتويات ذلك العمود باستخدام فهرس العمود وملف`GetText` طريقة:
+ Belgedeki tüm yer imlerini inceliyoruz ve adlarını gösteriyoruz. Yer imi bir sütunsa, sütun indeksini kullanarak o sütunun içeriğine erişiriz ve`GetText` yöntem:
 
 ```csharp
 foreach (Bookmark
@@ -70,9 +70,9 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
 }
 ```
 
-### مثال على شفرة المصدر لأعمدة جدول الإشارات باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Bookmark Table Columns için örnek kaynak kodu
 
-إليك نموذج شفرة المصدر الكامل لتوضيح إنشاء إشارة مرجعية في عمود الجدول باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanarak bir tablo sütununda yer imi oluşturmayı gösteren tam örnek kaynak kodu burada:
 
 ```csharp
 
@@ -120,6 +120,6 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
         
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة أعمدة جدول الإشارات المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لوضع إشارة مرجعية على عمود معين من الجدول في مستند Word والانتقال إلى محتويات هذا العمود.
+Bu makalede, Aspose.Words for .NET'in Bookmark Table Columns işlevinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir Word belgesindeki bir tablonun belirli bir sütununa yer işareti koymak ve o sütunun içeriğine atlamak için adım adım bir kılavuz izledik.

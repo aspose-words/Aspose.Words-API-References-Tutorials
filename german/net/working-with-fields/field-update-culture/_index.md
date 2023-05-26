@@ -1,74 +1,74 @@
 ---
-title: ثقافة التحديث الميداني
-linktitle: ثقافة التحديث الميداني
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديث الثقافة الميدانية في مستندات Word باستخدام Aspose.Words for .NET.
+title: Feldaktualisierungskultur
+linktitle: Feldaktualisierungskultur
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie die Feldkultur in Ihren Word-Dokumenten mit Aspose.Words für .NET aktualisieren.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/field-update-culture/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "تحديث الثقافة الميدانية" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der die Funktion „Field Culture Update“ von Aspose.Words für .NET verwendet. Stellen Sie sicher, dass Sie jeden Schritt sorgfältig befolgen, um die gewünschten Ergebnisse zu erzielen.
 
-## الخطوة 1: إعداد دليل المستند
+## Schritt 1: Einrichten des Dokumentenverzeichnisses
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Im bereitgestellten Code müssen Sie das Verzeichnis Ihrer Dokumente angeben. Ersetzen Sie den Wert „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند ومُنشئ المستندات
+## Schritt 2: Erstellen des Dokuments und des Dokumentengenerators
 
-نبدأ بإنشاء مستند جديد ومولد مستندات.
+Wir beginnen mit der Erstellung eines neuen Dokuments und eines Dokumentengenerators.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدخال حقل الوقت
+## Schritt 3: Einfügen des Zeitfeldes
 
- نحن نستخدم ال`InsertField()` طريقة لإدراج حقل الوقت في المستند.
+ Wir benutzen das`InsertField()` Methode zum Einfügen eines Zeitfelds in das Dokument.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);
 ```
 
-سيؤدي هذا إلى إدراج حقل الوقت في المستند.
+Dadurch wird ein Zeitfeld in das Dokument eingefügt.
 
-## الخطوة 4: تكوين ثقافة تحديث الحقل
+## Schritt 4: Konfigurieren der Feldaktualisierungskultur
 
-نقوم بتكوين خيارات الحقل لتحديد أن ثقافة تحديث المجال يجب أن تستند إلى رمز الحقل.
+Wir konfigurieren die Feldoptionen, um anzugeben, dass die Feldaktualisierungskultur auf dem Feldcode basieren soll.
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 ```
 
-تحدد هذه الخيارات الثقافة المستخدمة لتحديث الحقول.
+Diese Optionen bestimmen die Kultur, die zum Aktualisieren von Feldern verwendet wird.
 
-### نموذج التعليمات البرمجية المصدر لتحديث Field Culture باستخدام Aspose.Words for .NET
+### Beispielquellcode zum Aktualisieren der Feldkultur mit Aspose.Words für .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Der Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند ومُنشئ المستند.
+// Erstellen Sie das Dokument und den Dokumentengenerator.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// أدخل حقل الوقت.
+// Fügen Sie das Zeitfeld ein.
 builder. InsertField(FieldType.FieldTime, true);
 
-// تكوين ثقافة التحديث الميداني.
+// Konfigurieren Sie die Feldaktualisierungskultur.
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 
-// احفظ المستند.
+// Speichern Sie das Dokument.
 doc.Save(dataDir + "UpdateCultureChamps.pdf");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأدخلنا حقلًا زمنيًا ، وقمنا بتكوين ثقافة تحديث الحقل. ثم قمنا بحفظ المستند باسم ملف محدد.
+In diesem Beispiel haben wir ein neues Dokument erstellt, ein Zeitfeld eingefügt und die Feldaktualisierungskultur konfiguriert. Anschließend haben wir das Dokument unter einem angegebenen Dateinamen gespeichert.
 
-هذا يختتم دليلنا حول استخدام ميزة "تحديث ثقافة الحقل" مع Aspose.Words for .NET.
+Damit ist unser Leitfaden zur Verwendung der Funktion „Feldkultur aktualisieren“ mit Aspose.Words für .NET abgeschlossen.

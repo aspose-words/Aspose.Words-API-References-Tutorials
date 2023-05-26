@@ -1,52 +1,52 @@
 ---
-title: أدخل ارتباط تشعبي
-linktitle: أدخل ارتباط تشعبي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الارتباطات التشعبية في مستندات Word باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Inserisci collegamento ipertestuale
+linktitle: Inserisci collegamento ipertestuale
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire collegamenti ipertestuali nei documenti di Word utilizzando Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-hyperlink/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج الارتباطات التشعبية في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة ارتباطات تشعبية قابلة للنقر إلى مستنداتك.
+In questo tutorial completo imparerai come inserire collegamenti ipertestuali in un documento di Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo i frammenti di codice C# necessari. Alla fine di questa guida, sarai in grado di aggiungere collegamenti ipertestuali cliccabili ai tuoi documenti.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti prerequisiti:
+- Aspose.Words per la libreria .NET installata sul tuo sistema.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Passaggio 1: creare un nuovo documento e DocumentBuilder
+Per iniziare, crea un nuovo documento utilizzando la classe Document e inizializza un oggetto DocumentBuilder:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل ارتباط تشعبي
-بعد ذلك ، استخدم طريقة الكتابة الخاصة بفئة DocumentBuilder لإضافة نص وتنسيق الارتباط التشعبي عن طريق تعيين خصائص اللون والتسطير:
+## Passaggio 2: inserire un collegamento ipertestuale
+Utilizzare quindi il metodo Write della classe DocumentBuilder per aggiungere testo e formattare il collegamento ipertestuale impostando le proprietà del colore e della sottolineatura:
 
 ```csharp
 builder.Write("Please make sure to visit ");
 builder.Font.Color = Color.Blue;
 builder.Font.Underline = Underline.Single;
 
-builder.InsertHyperlink("Aspose Website", "http://www.aspose.com "، خطأ) ؛
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", falso);
 
 builder.Font.ClearFormatting();
 builder.Write(" for more information.");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الارتباط التشعبي ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Passaggio 3: salvare il documento
+Dopo aver inserito il collegamento ipertestuale, salvare il documento in un file utilizzando il metodo Save della classe Document:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
-## مثال رمز مصدر لإدراج ارتباط تشعبي باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لإدخال ارتباط تشعبي باستخدام Aspose.Words for .NET:
+## Esempio di codice sorgente per Inserisci collegamento ipertestuale utilizzando Aspose.Words per .NET
+Ecco il codice sorgente completo per l'inserimento di un collegamento ipertestuale utilizzando Aspose.Words per .NET:
 
-تعتبر الارتباطات التشعبية طريقة فعالة لتحسين تفاعل وفائدة مستندات Word الخاصة بك. يمكن استخدامها للإشارة إلى موارد خارجية أو توفير معلومات إضافية أو إنشاء عناصر تنقل داخل المستند.
+I collegamenti ipertestuali sono un modo efficace per migliorare l'interattività e l'utilità dei documenti di Word. Possono essere utilizzati per fare riferimento a risorse esterne, fornire informazioni aggiuntive o creare elementi di navigazione all'interno del documento.
 
 ```csharp
 	Document doc = new Document();
@@ -56,7 +56,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 	builder.Font.Color = Color.Blue;
 	builder.Font.Underline = Underline.Single;
 	
-	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com "، خطأ) ؛
+	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", falso);
 	
 	builder.Font.ClearFormatting();
 	builder.Write(" for more information.");
@@ -64,8 +64,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك المحددة ، بما في ذلك نص الارتباط التشعبي وعنوان URL. قم بتحسينه بالتنسيق أو الوظائف الإضافية حسب الحاجة.
+Ricorda di modificare il codice in base ai tuoi requisiti specifici, inclusi il testo del collegamento ipertestuale e l'URL. Miglioralo con formattazione o funzionalità aggiuntive secondo necessità.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج الارتباطات التشعبية في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إضافة ارتباطات تشعبية قابلة للنقر إلى مستنداتك ، وتوجيه القراء إلى مواقع ويب خارجية أو عناوين URL محددة.
+## Conclusione
+Congratulazioni! Hai imparato con successo come inserire collegamenti ipertestuali in un documento di Word utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata e utilizzando il codice sorgente fornito, ora puoi aggiungere collegamenti ipertestuali cliccabili ai tuoi documenti, indirizzando i lettori a siti Web esterni o URL specifici.
 

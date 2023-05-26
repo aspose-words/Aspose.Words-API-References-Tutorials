@@ -1,28 +1,28 @@
 ---
-title: احصل على خصائص النسق
-linktitle: احصل على خصائص النسق
-second_title: Aspose.Words لمراجع .NET API
-description: استكشف خصائص نسق المستند باستخدام Aspose.Words for .NET. تخصيص الأنماط والألوان للحصول على مظهر فريد.
+title: Obtener propiedades del tema
+linktitle: Obtener propiedades del tema
+second_title: Referencia de API de Aspose.Words para .NET
+description: Explore las propiedades del tema de un documento con Aspose.Words para .NET. Personaliza estilos y colores para una apariencia única.
 type: docs
 weight: 10
 url: /es/net/programming-with-styles-and-themes/get-theme-properties/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم للحصول على خصائص سمة المستند باستخدام Aspose.Words for .NET. تتضمن خصائص النسق الخطوط الأساسية والثانوية المستخدمة ، بالإضافة إلى ألوان التمييز.
+En este tutorial, exploraremos el código fuente de C# provisto para obtener las propiedades del tema de un documento usando Aspose.Words para .NET. Las propiedades del tema incluyen fuentes primarias y secundarias utilizadas, así como colores de realce.
 
-## الخطوة الأولى: تهيئة البيئة
+## Paso 1: Configuración del entorno
 
-تأكد من قيامك بإعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Asegúrese de haber configurado su entorno de desarrollo con Aspose.Words para .NET. Asegúrese de haber agregado las referencias necesarias e importado los espacios de nombres apropiados.
 
-## الخطوة 2: إنشاء كائن مستند
+## Paso 2: crear un objeto de documento
 
 ```csharp
 Document doc = new Document();
 ```
 
- في هذه الخطوة ، نقوم بإنشاء ملف`Document` هدف.
+ En este paso, creamos un nuevo`Document` objeto.
 
-## الخطوة 3: احصل على خصائص النسق
+## Paso 3: Obtén las propiedades del tema
 
 ```csharp
 Aspose.Words.Themes.Theme theme = doc.Theme;
@@ -32,15 +32,15 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- في هذه الخطوة ، نستخدم الامتداد`Theme` ممتلكات`Document`كائن للحصول على`Theme` هدف. ثم يمكننا الوصول إلى الخصائص المختلفة للموضوع مثل الخطوط الرئيسية (`MajorFonts`) ، الخطوط الثانوية (`MinorFonts`) وألوان التمييز (`Colors`).
+ En este paso, usamos el`Theme` propiedad de la`Document`objeto para obtener el`Theme` objeto. Luego podemos acceder a las diferentes propiedades del tema como las fuentes principales (`MajorFonts`), las fuentes secundarias (`MinorFonts`) y los colores de acento (`Colors`).
 
-## الخطوة 4: عرض خصائص النسق
+## Paso 4: Muestra las propiedades del tema
 
- في هذه الخطوة الأخيرة ، نعرض قيم خاصية السمة باستخدام`Console.WriteLine`. يمكنك تكييف الشاشة وفقًا لاحتياجاتك.
+ En este paso final, mostramos los valores de las propiedades del tema usando`Console.WriteLine`. Puede adaptar la pantalla según sus necesidades.
 
-يمكنك تشغيل التعليمات البرمجية المصدر للحصول على خصائص النسق للمستند. تتيح لك هذه الميزة استرداد معلومات حول الخطوط والألوان المستخدمة في نسق المستند ، والتي يمكن أن تكون مفيدة لتخصيص النمط أو التحليل.
+Puede ejecutar el código fuente para obtener las propiedades del tema de un documento. Esta función le permite recuperar información sobre las fuentes y los colores utilizados en el tema de un documento, lo que puede resultar útil para la personalización o el análisis del estilo.
 
-### عينة من التعليمات البرمجية المصدر للحصول على خصائص النسق باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Obtener propiedades del tema usando Aspose.Words para .NET 
 ```csharp
  
 Document doc = new Document();
@@ -54,12 +54,12 @@ Console.WriteLine(theme.Colors.Accent1);
         
 ```
 
-## خاتمة
+## Conclusión
 
- في هذا البرنامج التعليمي ، استكشفنا وظيفة الحصول على خصائص سمة المستند باستخدام Aspose.Words for .NET. باستخدام`Theme` الكائن والخصائص المرتبطة به ، تمكنا من الوصول إلى معلومات حول الخطوط الأساسية والثانوية بالإضافة إلى ألوان التمييز المستخدمة في سمة المستند.
+ En este tutorial, exploramos la funcionalidad de obtener las propiedades del tema de un documento con Aspose.Words para .NET. Utilizando el`Theme` objeto y sus propiedades asociadas, pudimos acceder a información sobre las fuentes primarias y secundarias, así como los colores de acento utilizados en el tema del documento.
 
-تتيح لك القدرة على الحصول على خصائص النسق تحليل وتخصيص أنماط وتخطيطات المستندات الخاصة بك. يمكنك استخدام هذه المعلومات لتطبيق التغييرات المستهدفة أو إنشاء تقارير أو إجراء تحليل لاستخدام الخط واللون في مستنداتك.
+La capacidad de obtener propiedades de temas le permite analizar y personalizar los estilos y diseños de sus documentos. Puede usar esta información para aplicar cambios específicos, crear informes o realizar análisis sobre el uso de fuentes y colores en sus documentos.
 
-يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية لمعالجة سمات المستند ، مما يسمح لك بسهولة ضبط وتخصيص مظهر مستنداتك.
+Aspose.Words para .NET ofrece una potente API para manipular los temas de sus documentos, lo que le permite ajustar y personalizar fácilmente el aspecto de sus documentos.
 
-لا تتردد في استكشاف المزيد من ميزات Aspose.Words for .NET لتحسين سير العمل وتلبية احتياجات إدارة السمات والأسلوب الخاص بك.
+Siéntase libre de explorar más características de Aspose.Words para .NET para mejorar su flujo de trabajo y satisfacer sus necesidades específicas de administración de estilos y temas.

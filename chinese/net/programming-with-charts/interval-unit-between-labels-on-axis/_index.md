@@ -1,44 +1,44 @@
 ---
-title: وحدة الفاصل الزمني بين التسميات على المحور
-linktitle: وحدة الفاصل الزمني بين التسميات على المحور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين وحدة الفاصل الزمني بين التسميات على محور الرسم البياني باستخدام Aspose.Words for .NET.
+title: 轴上标签之间的间隔单位
+linktitle: 轴上标签之间的间隔单位
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 设置图表轴上标签之间的间隔单位。
 type: docs
 weight: 10
 url: /zh/net/programming-with-charts/interval-unit-between-labels-on-axis/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين وحدة الفاصل بين التسميات على محور الرسم البياني. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات سلسلة وتخصيص تسميات المحور.
+本教程解释了如何使用 Aspose.Words for .NET 设置图表轴上标签之间的间隔单位。提供的源代码演示了如何创建图表、添加系列数据和自定义轴标签。
 
-## الخطوة 1: قم بإعداد المشروع
+## 第 1 步：设置项目
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+确保您具有以下先决条件：
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- 安装了 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载或使用 NuGet 包管理器安装它。
+- 将保存输出文档的文档目录路径。
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 第 2 步：创建新文档并插入图表
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط عمودي في المستند.
+接下来，使用`InsertChart`的方法`DocumentBuilder`将柱形图插入到文档中。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## 第 3 步：将系列数据添加到图表
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمسة عناصر بقيمها المقابلة.
+将系列数据添加到图表中。在此示例中，我们将添加五个项目及其相应的值。
 
 ```csharp
 chart.Series.Clear();
@@ -47,28 +47,28 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## الخطوة 4: تخصيص تسميات المحور
+## 第 4 步：自定义轴标签
 
- لتعيين وحدة الفاصل الزمني بين التسميات على المحور X ، قم بالوصول إلى ملف`AxisX` خاصية الرسم البياني وتعيين`TickLabelSpacing` إلى القيمة المطلوبة. في هذا المثال ، قمنا بتعيين التباعد على 2.
+要设置 X 轴上标签之间的间隔单位，请访问`AxisX`图表的属性并设置`TickLabelSpacing`属性到所需的值。在本例中，我们将间距设置为 2。
 
 ```csharp
 chart.AxisX.TickLabelSpacing = 2;
 ```
 
-## الخطوة 5: احفظ المستند
+## 第 5 步：保存文档
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+最后，使用 将文件保存到指定目录`Save`的方法`Document`目的。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 ```
 
-هذا يكمل تنفيذ إعداد وحدة الفاصل الزمني بين الملصقات على المحور باستخدام Aspose.Words for .NET.
+这样就完成了使用Aspose.Words for .NET设置轴上标签之间间隔单位的实现。
 
-### مثال على شفرة المصدر لوحدة الفاصل الزمني بين الملصقات على المحور باستخدام Aspose.Words for .NET 
+### Interval Unit Between Labels On Axis using Aspose.Words for .NET 示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

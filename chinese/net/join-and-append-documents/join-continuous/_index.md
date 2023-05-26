@@ -1,71 +1,71 @@
 ---
-title: الانضمام المستمر
-linktitle: الانضمام المستمر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ربط وثيقتين بشكل مستمر مع الحفاظ على التنسيق باستخدام Aspose.Words for .NET.
+title: 加入连续
+linktitle: 加入连续
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 连续连接两个文档同时保留格式。
 type: docs
 weight: 10
 url: /zh/net/join-and-append-documents/join-continuous/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية الانضمام إلى وثيقتين بشكل مستمر باستخدام Aspose.Words for .NET. يوضح كود المصدر المقدم كيفية إلحاق مستند بنهاية مستند آخر مع الحفاظ على التنسيق الأصلي.
+本教程解释了如何使用 Aspose.Words for .NET 连续连接两个文档。提供的源代码演示了如何在保持原始格式的同时将一个文档附加到另一个文档的末尾。
 
-## الخطوة 1: قم بإعداد المشروع
+## 第 1 步：设置项目
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+确保您具有以下先决条件：
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- 安装了 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载或使用 NuGet 包管理器安装它。
+- 源文档和目标文档所在的文档目录路径。
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## 第 2 步：打开源文档和目标文档
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+使用打开源文档和目标文档`Document`类构造函数。代替`"YOUR DOCUMENT DIRECTORY"`使用文档目录的实际路径。
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إعداد بداية القسم المستمر
+## 第 3 步：设置连续部分开始
 
- لجعل المستند المصدر يظهر مباشرة بعد محتوى المستند الوجهة ، قم بتعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.Continuous`.
+要使源文档紧跟在目标文档的内容之后，请设置`SectionStart`源文档中第一节的属性`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر
+## 第 4 步：附加源文档
 
- قم بإلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. اضبط وضع تنسيق الاستيراد على`ImportFormatMode.KeepSourceFormatting`للاحتفاظ بالأنماط الأصلية من المستند المصدر.
+使用将源文档附加到目标文档`AppendDocument`的方法`Document`班级。设置导入格式模式为`ImportFormatMode.KeepSourceFormatting`保留源文档中的原始样式。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند المعدل
+## 第五步：保存修改后的文档
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+最后，使用保存修改后的目标文档`Save`的方法`Document`目的。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ```
 
-هذا يكمل تنفيذ الانضمام إلى وثيقتين بشكل مستمر باستخدام Aspose.Words لـ .NET.
+这样就完成了使用Aspose.Words for .NET连续拼接两个文档的实现。
 
-### مثال على شفرة المصدر لـ Join Continuous using Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的 Join Continuous 示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// اجعل المستند يظهر مباشرة بعد محتوى المستندات الوجهة.
+	//使文档直接出现在目标文档内容之后。
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// قم بإلحاق المستند المصدر باستخدام الأنماط الأصلية الموجودة في المستند المصدر.
+	//使用在源文档中找到的原始样式附加源文档。
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ```

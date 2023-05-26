@@ -1,34 +1,34 @@
 ---
-title: احصل على المتغيرات
-linktitle: احصل على المتغيرات
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لاسترداد متغيرات المستند باستخدام Aspose.Words for .NET.
+title: Değişkenleri Al
+linktitle: Değişkenleri Al
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile belge değişkenlerini almak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-document-properties/get-variables/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لاسترداد المتغيرات من مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة الوصول إلى المتغيرات المحددة في المستند.
+Bu öğreticide, Aspose.Words for .NET ile bir belgeden değişkenleri almak için C# kaynak kodunda size yol göstereceğiz. Bu özellik, bir belgede tanımlanan değişkenlere erişmenizi sağlar.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد استرداد المتغيرات منه. استخدم الكود التالي لتحميل المستند:
+Bu adımda, değişkenleri almak istediğimiz Word belgesini yükleyeceğiz. Belgeyi yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
 
-## الخطوة 3: استرجاع المتغيرات
+## 3. Adım: Değişkenleri alma
 
-الآن سنقوم باسترداد المتغيرات المحددة في المستند. استخدم الكود التالي:
+Şimdi belgede tanımlanan değişkenleri alacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
 string variables = "";
@@ -49,13 +49,13 @@ foreach(KeyValuePair<string, string> entry in doc.Variables)
 Console.WriteLine("\nThe document contains the following variables:\n" + variables);
 ```
 
-يتكرر هذا الرمز فوق كل زوج من القيم الرئيسية في متغيرات المستند ويسترجع اسم وقيمة كل متغير. ثم يتم تسلسل المتغيرات لعرض المعلومات الخاصة بكل متغير.
+Bu kod, belge değişkenlerindeki her anahtar/değer çiftini yineler ve her değişkenin adını ve değerini alır. Değişkenler daha sonra her bir değişkenin bilgilerini görüntülemek için birleştirilir.
 
-### مثال على شفرة المصدر للحصول على المتغيرات باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Get Variables için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 	
@@ -79,6 +79,6 @@ Console.WriteLine("\nThe document contains the following variables:\n" + variabl
 
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ bölümünde doğru belge yolunu belirttiğinizden emin olun.`dataDir` değişken.
 
-لقد تعلمت الآن كيفية استرداد المتغيرات من مستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك الوصول بسهولة إلى المتغيرات وعرضها من المستندات الخاصة بك.
+Artık Aspose.Words for .NET kullanarak bir belgeden değişkenleri nasıl alacağınızı öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek değişkenlere kendi belgelerinizden kolayca erişebilir ve bunları görüntüleyebilirsiniz.

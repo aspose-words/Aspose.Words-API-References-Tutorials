@@ -1,28 +1,28 @@
 ---
-title: احصل على فاصل نمط الفقرة
-linktitle: احصل على فاصل نمط الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على فاصل نمط الفقرة باستخدام Aspose.Words for .NET.
+title: Paragraf Stili Ayırıcısını Alın
+linktitle: Paragraf Stili Ayırıcısını Alın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile paragraf stili ayırıcıyı nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/document-formatting/get-paragraph-style-separator/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة Get Paragraph Style Separator مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+Bu eğitimde, Aspose.Words for .NET ile Get Paragraph Style Separator özelliğini nasıl kullanacağınız konusunda size yol göstereceğiz. Kaynak kodunu anlamak ve değişiklikleri uygulamak için aşağıdaki adımları izleyin.
 
-## الخطوة 1: تحميل المستند
+## 1. Adım: Belgeyi yükleme
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند في كائن المستند. إليك الطريقة:
+Başlamak için, belgelerinizin dizini belirtin ve belgeyi bir Belge nesnesine yükleyin. İşte nasıl:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## الخطوة 2: البحث عن فواصل نمط الفقرة
+## 2. Adım: Paragraf Stili Ayırıcılarını Bulma
 
-سنقوم الآن بتكرار جميع الفقرات في المستند والتحقق مما إذا كانت الفقرة هي فاصل نمط. إليك الطريقة:
+Şimdi belgedeki tüm paragraflarda dolaşacağız ve paragrafın stil ayırıcı olup olmadığını kontrol edeceğiz. İşte nasıl:
 
 ```csharp
 foreach(Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -34,9 +34,9 @@ foreach(Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-### مثال على شفرة المصدر للحصول على فاصل نمط الفقرة باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Get Paragraph Style Separator için örnek kaynak kodu
 
-فيما يلي رمز المصدر الكامل لميزة Get Paragraph Style Separator مع Aspose.Words for .NET:
+Aspose.Words for .NET ile Get Paragraph Style Separator özelliğinin tam kaynak kodu burada:
 
 ```csharp
 
@@ -52,5 +52,5 @@ foreach(Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
         
 ```
 
-باستخدام هذا الرمز ، ستتمكن من العثور على فواصل نمط الفقرة في مستند باستخدام Aspose.Words for .NET.
+Bu kodla, Aspose.Words for .NET kullanan bir belgede paragraf stili ayırıcılarını bulabileceksiniz.
 

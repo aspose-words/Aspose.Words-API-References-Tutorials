@@ -1,29 +1,29 @@
 ---
-title: بحث واستبدال النص
-linktitle: بحث واستبدال النص
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على استبدال بسيط للبحث ، وأحرف وصفية في نمط البحث ، واستبدال النص الذي يحتوي على أحرف وصفية ، وتجاهل النص داخل الحقول ، وتجاهل النص الموجود بالداخل
+title: Metni Bul ve Değiştir
+linktitle: Metni Bul ve Değiştir
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, basit bulma değiştirme, arama modelinde meta karakterler, meta karakterler içeren metni değiştirme, alanların içindeki metni yok sayma, içindeki metni yok sayma içerir.
 type: docs
 weight: 1360
 url: /tr/net/find-and-replace-text/
 ---
-يوضح البرنامج التعليمي Find and Replace Text كيفية استخدام ميزة Find and Replace text لإجراء عمليات تحرير سريعة وفعالة في مستندات Word الخاصة بك. ستتعلم كيفية البحث عن كلمات أو عبارات أو أنماط معينة واستبدالها بمحتوى جديد. باستخدام هذه الأساليب ، يمكنك أتمتة مهام تحرير النص وتوفير الوقت وتحسين كفاءة سير عمل معالجة المستندات.
+Metin Bul ve Değiştir öğreticisi, Word belgelerinizde hızlı ve verimli düzenlemeler yapmak için Bul ve Değiştir metin özelliklerinin nasıl kullanılacağını açıklar. Belirli kelimeleri, deyimleri veya kalıpları nasıl arayacağınızı ve bunları yeni içerikle nasıl değiştireceğinizi öğreneceksiniz. Bu tekniklerle metin düzenleme görevlerini otomatikleştirebilir, zamandan tasarruf edebilir ve belge işleme iş akışınızın verimliliğini artırabilirsiniz.
 
-Aspose.Words for .NET مكتبة قوية تقدم مجموعة كبيرة من الوظائف للعمل مع مستندات Word في تطبيقات .NET. يقدم البرنامج التعليمي أمثلة تعليمات برمجية مفصلة ويشرح الخطوات المطلوبة لإجراء بحث نصي واستبدال العمليات. سوف تتعلم كيفية استخدام طرق وخصائص Aspose.Words API للبحث عن النص واستبداله ، مع الأخذ في الاعتبار الخيارات المختلفة مثل الحالة وحساسية التمييز والمزيد.
+Aspose.Words for .NET, .NET uygulamalarında Word belgeleriyle çalışmak için geniş bir işlevsellik yelpazesi sunan güçlü bir kitaplıktır. Öğretici, ayrıntılı kod örnekleri sağlar ve metin arama ve değiştirme işlemlerini gerçekleştirmek için gereken adımları açıklar. Metni bulmak ve değiştirmek için Aspose.Words API yöntemlerini ve özelliklerini, büyük/küçük harf, vurgu hassasiyeti ve daha fazlası gibi farklı seçenekleri dikkate alarak nasıl kullanacağınızı öğreneceksiniz.
 
-سواء كنت بحاجة إلى استبدال كلمات معينة أو تحديث قوالب نصية أو تخصيص محتوى مستندات Word ، سيرشدك البرنامج التعليمي "Find and Replace Text" خلال الخطوات الأساسية لأداء هذه المهام باستخدام Aspose. كلمات لـ .NET. من خلال التوثيق الشامل وعينات التعليمات البرمجية الواضحة ، تعد هذه البرامج التعليمية مورداً قيماً للمطورين الذين يرغبون في تحقيق أقصى استفادة من هذه المكتبة وتحسين مهاراتهم في العمل باستخدام مستندات Word.
+Belirli kelimeleri değiştirmeniz, metin şablonlarını güncellemeniz veya Word belgelerinin içeriğini özelleştirmeniz gerekip gerekmediğine bakılmaksızın, "Metin Bul ve Değiştir" öğreticisi, Aspose ile bu görevleri gerçekleştirmek için gerekli adımlar konusunda size yol gösterecektir. .NET için kelimeler. Kapsamlı belgeler ve açık kod örnekleriyle bu öğreticiler, bu kitaplıktan en iyi şekilde yararlanmak ve Word belgeleriyle çalışma becerilerini geliştirmek isteyen geliştiriciler için değerli bir kaynaktır.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [بحث بسيط استبدال](./simple-find-replace/) | تعرف على كيفية إجراء استبدال بحث بسيط في مستند Word باستخدام Aspose.Words for .NET. |
-| [أحرف التعريف في نمط البحث](./meta-characters-in-search-pattern/) | تعرف على كيفية استخدام الحروف الأولية في نمط البحث باستخدام Aspose.Words for .NET لمعالجة مستندات Word. |
-| [استبدل النص الذي يحتوي على أحرف وصفية](./replace-text-containing-meta-characters/) | تعرف على كيفية استبدال النص الذي يحتوي على أحرف أولية في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تجاهل النص داخل الحقول](./ignore-text-inside-fields/) | تعرف على كيفية استخدام ميزة "تجاهل النص داخل الحقول" في Aspose.Words for .NET. |
-| [تجاهل النص داخل حذف المراجعات](./ignore-text-inside-delete-revisions/) | تعرف على كيفية استخدام ميزة "تجاهل النص داخل حذف المراجعات" في Aspose.Words for .NET. |
-| [تجاهل النص داخل إدراج المراجعات](./ignore-text-inside-insert-revisions/) | تعرف على كيفية استخدام ميزة "تجاهل النص داخل إدراج المراجعات" في Aspose.Words for .NET للتعامل مع مراجعات الإدراج في مستندات Word. |
-| [استبدال النص في التذييل](./replace-text-in-footer/) | تعرف على كيفية استبدال النص في تذييل مستندات Word باستخدام Aspose.Words for .NET. |
-| [استبدل بـ Regex](./replace-with-regex/) | تعرف على كيفية إجراء استبدال النص المستند إلى التعبير العادي في مستند Word باستخدام Aspose.Words for .NET. |
-| [التعرف والبدائل ضمن أنماط الاستبدال](./recognize-and-substitutions-within-replacement-patterns/) | تعرف على كيفية استخدام أنماط الاستبدال مع عمليات التعرف والاستبدال في Aspose.Words for .NET لمعالجة مستندات Word. |
-| [استبدل بسلسلة](./replace-with-string/) | تعرف على كيفية استبدال النص بسلسلة في مستند Word بـ Aspose.Words for .NET. |
-| [استبدال النص في الجدول](./replace-text-in-table/) | تعرف على كيفية استبدال نص في جدول في مستند Word باستخدام Aspose.Words for .NET. |
+| [Basit Bul Değiştir](./simple-find-replace/) | Aspose.Words for .NET kullanarak bir Word belgesinde basit bir bul ve değiştir işlemini nasıl gerçekleştireceğinizi öğrenin. |
+| [Arama Modelindeki Meta Karakterler](./meta-characters-in-search-pattern/) | Word belgelerini işlemek için Aspose.Words for .NET ile arama modelinde meta karakterleri nasıl kullanacağınızı öğrenin. |
+| [Meta Karakterler İçeren Metni Değiştir](./replace-text-containing-meta-characters/) | Aspose.Words for .NET kullanarak Word belgelerinde meta karakter içeren metinleri nasıl değiştireceğinizi öğrenin. |
+| [Alanların İçindeki Metni Yoksay](./ignore-text-inside-fields/) | Aspose.Words for .NET'in "Alanların İçindeki Metni Yoksay" özelliğini nasıl kullanacağınızı öğrenin. |
+| [İçindeki Metni Yoksay Düzeltmeleri Sil](./ignore-text-inside-delete-revisions/) | Aspose.Words for .NET'in "İçindeki Metni Yoksay Revizyonları Sil" özelliğini nasıl kullanacağınızı öğrenin. |
+| [Ekleme Revizyonlarının İçindeki Metni Yoksay](./ignore-text-inside-insert-revisions/) | Aspose.Words for .NET'in "Insert Revizyonlarının İçindeki Metni Yoksay" özelliğinin Word belgelerindeki ekleme revizyonlarını işlemek için nasıl kullanılacağını öğrenin. |
+| [Altbilgideki Metni Değiştir](./replace-text-in-footer/) | Aspose.Words for .NET kullanarak Word belgelerinin alt bilgisindeki metni nasıl değiştireceğinizi öğrenin. |
+| [Regex ile değiştir](./replace-with-regex/) | Aspose.Words for .NET ile bir Word belgesinde normal ifade tabanlı metin değiştirmeyi nasıl yapacağınızı öğrenin. |
+| [Değiştirme Kalıpları İçindeki Değiştirmeleri Tanıma ve Değiştirme](./recognize-and-substitutions-within-replacement-patterns/) | Word belgelerini işlemek için Aspose.Words for .NET'te tanıma ve ikamelerle değiştirme modellerini nasıl kullanacağınızı öğrenin. |
+| [Dize ile Değiştir](./replace-with-string/) | Aspose.Words for .NET ile bir Word belgesindeki metni bir dizeyle nasıl değiştireceğinizi öğrenin. |
+| [Tablodaki Metni Değiştir](./replace-text-in-table/) | Aspose.Words for .NET kullanarak bir Word belgesindeki tablodaki metni nasıl değiştireceğinizi öğrenin. |

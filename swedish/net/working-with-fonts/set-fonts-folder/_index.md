@@ -1,36 +1,36 @@
 ---
-title: تعيين مجلد الخطوط
-linktitle: تعيين مجلد الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين دليل الخطوط في Aspose.Words for .NET وتأكد من توفر الخطوط المستخدمة في مستنداتك.
+title: Ställ in typsnittsmapp
+linktitle: Ställ in typsnittsmapp
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ställer in teckensnittskatalogen i Aspose.Words för .NET och se till att teckensnitt som används i dina dokument är tillgängliga.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/set-fonts-folder/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين دليل الخطوط في Aspose.Words for .NET. ستتعلم كيفية تحديد الدليل الذي يحتوي على الخطوط المستخدمة في مستند Word الخاص بك.
+I den här handledningen kommer vi att visa dig hur du ställer in typsnittskatalogen i Aspose.Words för .NET. Du kommer att lära dig hur du anger katalogen som innehåller teckensnitten som används i ditt Word-dokument.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+Börja med att ange katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تعيين دليل الخطوط
- قم بإنشاء مثيل لـ`FontSettings` فئة واستخدام`SetFontsFolder` طريقة لتحديد الدليل الذي يحتوي على الخطوط. يستبدل`"Fonts"` باسم دليل الخطوط الفعلي.
+## Steg 2: Ställ in teckensnittskatalog
+ Skapa en instans av`FontSettings` klass och använd`SetFontsFolder` metod för att ange katalogen som innehåller typsnitten. Byta ut`"Fonts"` med namnet på den faktiska teckensnittskatalogen.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.SetFontsFolder(dataDir + "Fonts", false);
 ```
 
-## الخطوة 3: قم بتحميل المستند بإعدادات الخط
- استخدم ال`LoadOptions` فئة لتحديد إعدادات الخط في ملف`FontSettings` خيار. ثم استخدم ملف`Document` فئة لتحميل المستند باستخدام هذه الخيارات.
+## Steg 3: Ladda dokumentet med teckensnittsinställningar
+ Använd`LoadOptions` klass för att ange teckensnittsinställningar i`FontSettings` alternativ. Använd sedan`Document` klass för att ladda dokumentet med dessa alternativ.
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
@@ -39,11 +39,11 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Fonts Folder باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Set Fonts Folder med Aspose.Words för .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();
@@ -54,5 +54,5 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-## خاتمة
-تهنئة ! أنت تعرف الآن كيفية تعيين دليل الخطوط في Aspose.Words for .NET. يمكنك استخدام هذه الميزة لضمان توفر الخطوط المستخدمة في وثيقتك ولضمان التناسق في عرض الخطوط.
+## Slutsats
+Grattis! Du vet nu hur du ställer in typsnittskatalogen i Aspose.Words för .NET. Du kan använda den här funktionen för att säkerställa tillgängligheten för teckensnitt som används i ditt dokument och för att säkerställa konsekvens i visningen av teckensnitt.

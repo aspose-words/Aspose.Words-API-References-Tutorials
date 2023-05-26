@@ -1,20 +1,20 @@
 ---
-title: العمل مع Node
-linktitle: العمل مع Node
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية استخدام نوع العقدة ، والحصول على العقدة الأصلية ، ووثيقة المالك ، وتكرار جميع العقد ، واجتياز جميع العقد ، وتعداد العقد الفرعية ، وإنشاء عقد فقرة في مستند Word باستخدام Aspose.Words for .NET.
+title: Düğümle Çalışmak
+linktitle: Düğümle Çalışmak
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, Aspose.Words for .NET kullanarak Word Belgesinde düğüm tipini kullanmayı, üst düğümü almayı, sahip belgesini almayı, tüm düğümleri yinelemeyi, tüm düğümleri çaprazlamayı, alt düğümleri numaralandırmayı ve paragraf düğümleri oluşturmayı içerir.
 type: docs
 weight: 1000
 url: /tr/net/working-with-node/
 ---
-يعد العمل مع المراجعات موردًا شاملاً يرشدك خلال العمل مع المراجعات في مستندات Word باستخدام مكتبة Aspose.Words for .NET. توضح لك البرامج التعليمية خطوة بخطوة كيفية إضافة المراجعات وحذفها وقبولها ورفضها وكيفية عرض المراجعات في المستند وكيفية مقارنة الإصدارات المختلفة وغير ذلك الكثير. سوف تتعلم كيفية العمل بفعالية مع المراجعات للتعاون وإدارة التغيير في مستندات Word الخاصة بك. هذا المورد ضروري للمطورين الذين يرغبون في أتمتة إدارة المراجعة في Aspose.Words للتطبيقات المستندة إلى .NET.
+Revizyonlarla Çalışmak, Aspose.Words for .NET kütüphanesini kullanarak Word belgelerindeki revizyonlarla çalışmanızda size rehberlik eden kapsamlı bir kaynaktır. Öğreticiler, revizyonların nasıl ekleneceğini, silineceğini, kabul edileceğini ve reddedileceğini, dokümanda revizyonların nasıl görüntüleneceğini, farklı sürümlerin nasıl karşılaştırılacağını ve çok daha fazlasını adım adım gösterir. Word belgelerinizdeki işbirliği ve değişiklik yönetimi incelemeleriyle etkili bir şekilde nasıl çalışacağınızı öğreneceksiniz. Bu kaynak, Aspose.Words for .NET tabanlı uygulamalarında revizyon yönetimini otomatikleştirmek isteyen geliştiriciler için çok önemlidir.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [استخدم نوع العقدة](./use-node-type/) | تعرف على كيفية استخدام نوع العقدة للوصول إلى المعلومات الخاصة بالمستند باستخدام Aspose.Words for .NET. |
-| [احصل على العقدة الأصلية](./get-parent-node/) | تعرف على كيفية الحصول على العقدة الأصلية لعنصر معين باستخدام Aspose.Words for .NET. |
-| [وثيقة المالك](./owner-document/) | تعرف على كيفية استخدام مستند المالك في Aspose.Words for .NET. |
-| [تعداد العقد الفرعية](./enumerate-child-nodes/) | تعرف على كيفية تعداد العقد الفرعية في فقرة باستخدام Aspose.Words for .NET. |
-| [الوصول المكتوب](./typed-access/) | تعرف على كيفية استخدام الوصول المكتوب لمعالجة الجداول في Aspose.Words for .NET. |
-| [إنشاء وإضافة فقرة العقدة](./create-and-add-paragraph-node/) | قم بإنشاء وإضافة عقدة فقرة إلى مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. |
+| [Düğüm Türünü Kullan](./use-node-type/) | Aspose.Words for .NET ile belgeye özgü bilgilere erişmek için düğüm türünü nasıl kullanacağınızı öğrenin. |
+| [Ana Düğümü Al](./get-parent-node/) | Aspose.Words for .NET ile belirli bir öğenin ana düğümünü nasıl alacağınızı öğrenin. |
+| [Sahip Belgesi](./owner-document/) | Aspose.Words for .NET'te sahip belgesini nasıl kullanacağınızı öğrenin. |
+| [Alt Düğümleri Numaralandır](./enumerate-child-nodes/) | Aspose.Words for .NET ile bir paragrafta alt düğümleri nasıl numaralandıracağınızı öğrenin. |
+| [Yazılı Erişim](./typed-access/) | Aspose.Words for .NET'te tabloları işlemek için yazılı erişimi nasıl kullanacağınızı öğrenin. |
+| [Paragraf Düğümü Oluşturma ve Ekleme](./create-and-add-paragraph-node/) | Aspose.Words for .NET ile bir paragraf düğümü oluşturun ve Word belgelerinize ekleyin. |

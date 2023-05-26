@@ -1,18 +1,18 @@
 ---
-title: توقيع خط التوقيع الحالي
-linktitle: توقيع خط التوقيع الحالي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية توقيع سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET.
+title: Подписание существующей строки подписи
+linktitle: Подписание существующей строки подписи
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как подписать существующую строку подписи в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لاستخدام ميزة التوقيع لسطر التوقيع الحالي مع Aspose.Words for .NET. تتيح لك هذه الميزة التوقيع رقميًا على سطر توقيع موجود بالفعل في مستند Word. اتبع الخطوات التالية:
+В этом руководстве мы покажем вам, как использовать функцию подписи существующей строки подписи с Aspose.Words для .NET. Эта функция позволяет поставить цифровую подпись на строку подписи, уже присутствующую в документе Word. Выполните следующие действия:
 
-## الخطوة 1: تحميل المستند والوصول إلى سطر التوقيع
+## Шаг 1: Загрузка документа и доступ к строке подписи
 
-ابدأ بتحميل المستند الذي يحتوي على سطر التوقيع الموجود:
+Начните с загрузки документа, содержащего существующую строку подписи:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +21,9 @@ Document doc = new Document(dataDir + "Signature line.docx");
 SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## الخطوة 2: تعيين خيارات التوقيع
+## Шаг 2: Настройка параметров подписи
 
-قم بإنشاء مثيل لفئة SignOptions وقم بتعيين خيارات التوقيع ، بما في ذلك معرف سطر التوقيع وصورة خط التوقيع:
+Создайте экземпляр класса SignOptions и задайте параметры подписи, включая идентификатор строки подписи и изображение строки подписи:
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -33,37 +33,37 @@ SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.em
 };
 ```
 
-تأكد من تحديد المسار الصحيح لصورة خط التوقيع.
+Обязательно укажите правильный путь к изображению строки подписи.
 
-## الخطوة الثالثة: تحميل الشهادة
+## Шаг 3: Загрузка сертификата
 
-ابدأ بتحميل شهادة التوقيع باستخدام فئة CertificateHolder:
+Начните с загрузки сертификата подписи с помощью класса CertificateHolder:
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-تأكد من تحديد المسار الصحيح لشهادتك وكلمة المرور المرتبطة بها.
+Обязательно укажите правильный путь к сертификату и связанный с ним пароль.
 
-## الخطوة 4: توقيع سطر التوقيع الحالي
+## Шаг 4: Подписание существующей строки подписи
 
-استخدم فئة DigitalSignatureUtil لتوقيع سطر التوقيع الموجود:
+Используйте класс DigitalSignatureUtil, чтобы подписать существующую строку подписи:
 
 ```csharp
 DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 	dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند المصدر والمستند الموقع والشهادة.
+Обязательно укажите правильные пути к исходному документу, подписанному документу и сертификату.
 
-### مثال على شفرة المصدر لتوقيع سطر التوقيع الحالي باستخدام Aspose.Words for .NET
+### Пример исходного кода для подписания существующей строки подписи с использованием Aspose.Words для .NET
 
-إليك كود المصدر الكامل لتوقيع سطر توقيع موجود مع Aspose.Words for .NET:
+Вот полный исходный код для подписи существующей строки подписи с помощью Aspose.Words для .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Путь к каталогу документов.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Signature line.docx");
 	
@@ -84,5 +84,5 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة توقيع سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET.
+Следуя этим шагам, вы можете легко подписать существующую строку подписи в документе Word с помощью Aspose.Words для .NET.
 

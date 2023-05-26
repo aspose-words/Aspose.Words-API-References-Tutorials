@@ -1,63 +1,63 @@
 ---
-title: المفاجئة إلى الشبكة
-linktitle: المفاجئة إلى الشبكة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح كود مصدر C # لميزة Snap to Grid باستخدام Aspose.Words for .NET.
+title: Kılavuza Yapış
+linktitle: Kılavuza Yapış
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile Grid'e Yapış özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/document-formatting/snap-to-grid/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة Snap to Grid مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+Bu öğreticide, Aspose.Words for .NET ile Kılavuza Yapış özelliğini nasıl kullanacağınız konusunda size yol göstereceğiz. Kaynak kodunu anlamak ve değişiklikleri uygulamak için aşağıdaki adımları izleyin.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## 1. Adım: Belgeyi oluşturma ve yapılandırma
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Başlamak için yeni bir belge ve ilişkili bir DocumentBuilder nesnesi oluşturun. İşte nasıl:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: محاذاة الشبكة
+## 2. Adım: Izgara Hizalaması
 
-سنقوم الآن بتطبيق محاذاة الشبكة على فقرة محددة والخط المستخدم في الفقرة. إليك الطريقة:
+Şimdi ızgara hizalamasını belirli bir paragrafa ve paragrafta kullanılan yazı tipine uygulayacağız. İşte nasıl:
 
 ```csharp
-// تمكين محاذاة الشبكة للفقرة
+// Paragraf için ızgara hizalamasını etkinleştir
 Paragraph by = doc.FirstSection.Body.FirstParagraph;
 par.ParagraphFormat.SnapToGrid = true;
 
-// اكتب نصًا في الفقرة
+// Paragrafta metin yaz
 builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" +
                  "tempor incident ut labore et dolore magna aliqua.");
 
-// قم بتمكين محاذاة الشبكة للخط المستخدم في الفقرة
+// Paragrafta kullanılan yazı tipi için ızgara hizalamasını etkinleştir
 par.Runs[0].Font.SnapToGrid = true;
 ```
 
-## الخطوة 3: حفظ المستند
+## 3. Adım: Belgeyi kaydetme
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Metin giriş formu alanını ekledikten sonra, belgeyi istenen konuma kaydedin.`Save` yöntem. Uygun dosya yolunu sağladığınızdan emin olun:
 
 ```csharp
 doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 ```
 
-### مثال على شفرة المصدر لـ Snap To Grid باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Grid'e Yapış için örnek kaynak kodu
 
-فيما يلي رمز المصدر الكامل لميزة Snap to Grid مع Aspose.Words for .NET:
+Aspose.Words for .NET ile Izgaraya Sığdır özelliğinin tam kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// قم بتحسين التخطيط عند الكتابة بالأحرف الآسيوية.
+	// Asya karakterlerini yazarken düzeni optimize edin.
 	Paragraph par = doc.FirstSection.Body.FirstParagraph;
 	par.ParagraphFormat.SnapToGrid = true;
 
@@ -70,5 +70,5 @@ doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من محاذاة النص الخاص بك مع الشبكة وتحسين مظهر المستند باستخدام Aspose.Words for .NET.
+Bu kodla, Aspose.Words for .NET kullanarak metninizi ızgaraya hizalayabilecek ve belgenizin görünümünü optimize edebileceksiniz.
 

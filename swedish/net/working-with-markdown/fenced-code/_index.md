@@ -1,43 +1,43 @@
 ---
-title: كود مسيّج
-linktitle: كود مسيّج
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة الشفرة المسيجة مع دليل Aspose.Words for .NET خطوة بخطوة.
+title: Inhägnad kod
+linktitle: Inhägnad kod
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder den inhägnade kodfunktionen med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/working-with-markdown/fenced-code/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة الشفرة المسيجة مع Aspose.Words for .NET. يتم استخدام الكود المسيج لتمثيل كتل من التعليمات البرمجية بتنسيق محدد.
+I det här exemplet kommer vi att gå igenom hur du använder den inhägnade kodfunktionen med Aspose.Words för .NET. inhägnad kod används för att representera kodblock med specifik formatering.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Steg 1: Använda en dokumentgenerator
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Först använder vi en dokumentgenerator för att lägga till innehåll i vårt dokument.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: إضافة نمط للرمز المسيَّج
+## Steg 2: Lägga till en stil för inhägnad kod
 
- سنضيف نمطًا مخصصًا للشفرة المسيجة باستخدام امتداد`Styles.Add` طريقة`Document` هدف. في هذا المثال ، نقوم بإنشاء نمط يسمى "FencedCode" للرمز المسيَّج.
+ Vi kommer att lägga till en anpassad stil för den inhägnade koden med hjälp av`Styles.Add` metod för`Document` objekt. I det här exemplet skapar vi en stil som heter "FencedCode" för den inhägnade koden.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
 builder.ParagraphFormat.Style = fencedCode;
 ```
 
-## الخطوة 3: إضافة كود مسيّج بدون معلومات
+## Steg 3: Lägga till inhägnad kod utan info
 
-الآن يمكننا إضافة كتلة رمز مسيجة بدون سلسلة معلومات باستخدام النمط المخصص "FencedCode".
+Nu kan vi lägga till ett inhägnat kodblock utan informationssträng med den anpassade stilen "FencedCode".
 
 ```csharp
 builder.Writeln("This is an fenced code");
 ```
 
-## الخطوة 4: إضافة رمز مسيَّج بسلسلة المعلومات
+## Steg 4: Lägg till inhägnad kod med infosträng
 
-يمكننا أيضًا إضافة كتلة تعليمات برمجية مسيجة بسلسلة من المعلومات باستخدام نمط مخصص آخر. في هذا المثال ، نقوم بإنشاء نمط يسمى "FencedCode.C #" لتمثيل كتلة من كود C #.
+Vi kan också lägga till ett inhägnat kodblock med en informationssträng med en annan anpassad stil. I det här exemplet skapar vi en stil som heter "FencedCode.C#" för att representera ett block med C#-kod.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
@@ -45,10 +45,10 @@ builder.ParagraphFormat.Style = fencedCodeWithInfo;
 builder.Writeln("This is a fenced code with info string");
 ```
 
-### مثال لشفرة المصدر لـ Fined Code باستخدام Aspose.Words for .NET
+### Exempel på källkod för Fenced Code med Aspose.Words för .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
 	DocumentBuilder builder = new DocumentBuilder();
 
 	Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");

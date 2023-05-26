@@ -1,56 +1,56 @@
 ---
-title: ربط تلقائي
-linktitle: ربط تلقائي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الارتباط التلقائي مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Lien automatique
+linktitle: Lien automatique
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer un lien automatique avec le guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-markdown/autolink/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام ميزة "الربط التلقائي" مع Aspose.Words for .NET. تتيح لك هذه الميزة إدراج ارتباطات تشعبية في المستند تلقائيًا.
+Dans cet exemple, nous expliquerons comment utiliser la fonctionnalité "Autolink" avec Aspose.Words pour .NET. Cette fonctionnalité vous permet d'insérer automatiquement des hyperliens dans votre document.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Étape 1 : Utiliser un générateur de documents
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Tout d'abord, nous allons utiliser un générateur de document pour ajouter du contenu à notre document.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: إدراج ارتباط تشعبي
+## Étape 2 : Insertion d'un lien hypertexte
 
- يمكننا إدراج ارتباط تشعبي باستخدام الامتداد`InsertHyperlink` طريقة منشئ الوثيقة. نحدد عنوان URL والنص الذي سيتم عرضه للرابط.
+ Nous pouvons insérer un lien hypertexte en utilisant le`InsertHyperlink` méthode du générateur de documents. Nous spécifions l'URL et le texte à afficher pour le lien.
 
 ```csharp
-builder.InsertHyperlink("https://www.aspose.com "،" https://www.aspose.com "، خطأ) ؛
+builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", faux);
 ```
 
-## الخطوة 3: إدخال عنوان بريد إلكتروني كرابط
+## Étape 3 : Insertion d'une adresse e-mail en tant que lien
 
-يمكننا أيضًا إدخال عنوان بريد إلكتروني كارتباط باستخدام البادئة "mailto:". سيسمح هذا للمستخدمين بالنقر فوق الارتباط لفتح عميل البريد الإلكتروني الافتراضي الخاص بهم.
+Nous pouvons également insérer une adresse e-mail en tant que lien en utilisant le préfixe "mailto :". Cela permettra aux utilisateurs de cliquer sur le lien pour ouvrir leur client de messagerie par défaut.
 
 ```csharp
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
 
-## الخطوة 4: حفظ المستند
+## Étape 4 : Enregistrer le document
 
-أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب.
+Enfin, nous pouvons enregistrer le document dans le format souhaité.
 
-### مثال على كود المصدر للربط التلقائي باستخدام Aspose.Words for .NET
+### Exemple de code source pour Autolink utilisant Aspose.Words pour .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilisez un générateur de document pour ajouter du contenu au document.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	//أدخل ارتباط تشعبي.
-	builder.InsertHyperlink("https://www.aspose.com "،" https://www.aspose.com "، خطأ) ؛
+	//Insérer un lien hypertexte.
+	builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", faux);
 	builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
             
 ```
 
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة "الربط التلقائي" مع Aspose.Words for .NET.
+Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité "Autolink" avec Aspose.Words pour .NET.
 

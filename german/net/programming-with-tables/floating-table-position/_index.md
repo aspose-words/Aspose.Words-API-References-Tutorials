@@ -1,60 +1,60 @@
 ---
-title: موقف الجدول العائم
-linktitle: موقف الجدول العائم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وضع جدول في موضع متحرك في مستند Word باستخدام Aspose.Words for .NET.
+title: Schwebende Tischposition
+linktitle: Schwebende Tischposition
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle schwebend in einem Word-Dokument positionieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-tables/floating-table-position/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words لـ .NET لوضع جدول في موضع عائم في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من التحكم في موضع ومحاذاة الجداول العائمة في مستندات Word الخاصة بك برمجيًا.
+In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle an einer schwebenden Position in einem Word-Dokument positionieren. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials werden Sie in der Lage sein, die Position und Ausrichtung schwebender Tabellen in Ihren Word-Dokumenten programmgesteuert zu steuern.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Schritt 1: Projekteinrichtung
+1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
+2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
-## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+## Schritt 2: Laden des Dokuments und Zugriff auf die Tabelle
+Um mit der Tabelle zu arbeiten, müssen wir das Dokument laden, das sie enthält, und darauf zugreifen. Folge diesen Schritten:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Laden Sie das Dokument
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 
-// الوصول إلى المصفوفة
+// Zugriff auf das Array
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات. تأكد أيضًا من احتواء المستند على جدول سيتم وضعه في موضع عائم.
+Stellen Sie sicher, dass Sie „IHR DOKUMENTENVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis ersetzen. Stellen Sie außerdem sicher, dass das Dokument eine Tabelle enthält, die in einer schwebenden Position positioniert wird.
 
-## الخطوة 3: وضع اللوح العائم
-بعد ذلك ، سنضع الجدول في موضع عائم باستخدام الخصائص التي توفرها Aspose.Words for .NET. استخدم الكود التالي:
+## Schritt 3: Positionierung des Schwebebretts
+Als Nächstes positionieren wir die Tabelle mithilfe der von Aspose.Words für .NET bereitgestellten Eigenschaften in einer schwebenden Position. Verwenden Sie den folgenden Code:
 
 ```csharp
-// وضع الجدول العائم
+// Positionierung des schwebenden Tisches
 table. AbsoluteHorizontalDistance = 10;
 table. RelativeVerticalAlignment = VerticalAlignment. Center;
 ```
 
- هنا نستخدم ملف`AbsoluteHorizontalDistance` خاصية لتعيين المسافة الأفقية المطلقة للجدول من الحافة اليسرى للصفحة. نستخدم أيضًا ملف`RelativeVerticalAlignment` لتعيين المحاذاة الرأسية النسبية للجدول للمحتوى المحيط.
+ Hier verwenden wir die`AbsoluteHorizontalDistance` Eigenschaft, um den absoluten horizontalen Abstand der Tabelle vom linken Rand der Seite festzulegen. Wir nutzen auch die`RelativeVerticalAlignment` -Eigenschaft, um die relative vertikale Ausrichtung der Tabelle zum umgebenden Inhalt festzulegen.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع وضع الجدول في موضع عائم. استخدم الكود التالي:
+## Schritt 4: Speichern des geänderten Dokuments
+Schließlich müssen wir das geänderte Dokument speichern, wobei die Tabelle in einer schwebenden Position positioniert ist. Verwenden Sie den folgenden Code:
 
 ```csharp
-// احفظ المستند المعدل
+// Speichern Sie das geänderte Dokument
 doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabedokument angeben.
 
-### نموذج التعليمات البرمجية المصدر لـ Floating Table Position باستخدام Aspose.Words for .NET 
+### Beispielquellcode für Floating Table Position mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");
@@ -64,5 +64,5 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 	doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية وضع جدول في موضع عائم في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك التحكم في موضع ومحاذاة الجداول العائمة في مستندات Word الخاصة بك برمجيًا.
+## Abschluss
+In diesem Tutorial haben wir gelernt, wie man eine Tabelle mit Aspose.Words für .NET an einer schwebenden Position in einem Word-Dokument positioniert. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie die Position und Ausrichtung von schwebenden Tabellen in Ihren Word-Dokumenten programmgesteuert steuern.

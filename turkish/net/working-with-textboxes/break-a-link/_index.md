@@ -1,22 +1,22 @@
 ---
-title: قطع الارتباط
-linktitle: قطع الارتباط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية فصل الروابط في مستند Word باستخدام Aspose.Words for .NET.
+title: Bağlantıyı Kır
+linktitle: Bağlantıyı Kır
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesindeki bağlantıların nasıl kesileceğini öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-textboxes/break-a-link/
 ---
 
-Aspose.Words for .NET مكتبة قوية تقدم ميزات متنوعة للعمل مع مستندات Microsoft Word برمجيًا. تتمثل إحدى ميزاته المفيدة في القدرة على فصل الروابط داخل المستند. في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري في C # الذي يوضح كيفية قطع الرابط باستخدام Aspose.Words for .NET.
+Aspose.Words for .NET, Microsoft Word belgeleriyle programlı olarak çalışmak için çeşitli özellikler sunan güçlü bir kitaplıktır. Yararlı özelliklerinden biri, bir belge içindeki bağlantıları kırma yeteneğidir. Bu öğreticide, Aspose.Words for .NET kullanarak bir bağlantının nasıl kesileceğini gösteren C# kaynak kodunu keşfedeceğiz.
 
-## الخطوة 1: C # Source Code Preview
+## 1. Adım: C# Kaynak Kodu Önizlemesi
 
-يركز كود المصدر C # المقدم على ميزة "Break A Link" في Aspose.Words for .NET. يوضح كيفية قطع ارتباط في شكل مربع نص داخل مستند. تقدم الكود سيناريوهات مختلفة لكسر الروابط وتوفر إرشادات واضحة حول كيفية تحقيق النتائج المرجوة.
+Sağlanan C# kaynak kodu, Aspose.Words for .NET'in "Break A Link" özelliğine odaklanır. Bir belgenin içindeki Metin Kutusu şeklindeki bir bağlantının nasıl kesileceğini gösterir. Kod, bağlantıları kesmek için farklı senaryolar sunar ve istenen sonuçların nasıl elde edileceğine dair net talimatlar sağlar.
 
-## الخطوة 2: إعداد المستند وإنشاء شكل مربع نص
+## 2. Adım: Belgeyi ayarlama ve bir Metin Kutusu şekli oluşturma
 
- للبدء ، نحتاج إلى إعداد المستند وإنشاء شكل مربع نص. يقوم الكود التالي بتهيئة مثيل جديد لملف`Document` فئة وإنشاء شكل مربع نص:
+ Başlamak için, belgeyi kurmamız ve bir TextBox şekli oluşturmamız gerekiyor. Aşağıdaki kod, yeni bir örneğini başlatır.`Document` class ve bir metin kutusu şekli oluşturur:
 
 ```csharp
 Document doc = new Document();
@@ -24,44 +24,44 @@ Shape shape = new Shape(doc, ShapeType.TextBox);
 TextBox textBox = shape.TextBox;
 ```
 
-## الخطوة 3: كسر الرابط في TextBox
+## 3. Adım: TextBox'ta ileri bağlantıyı kes
 
- لكسر ارتباط أمامي في TextBox ، يمكننا استخدام`BreakForwardLink()`طريقة. هذه الطريقة تقطع الارتباط بالشكل التالي في التسلسل. يوضح الكود التالي كيفية قطع ارتباط أمامي:
+ TextBox'ta bir yönlendirme bağlantısını kesmek için şunu kullanabiliriz:`BreakForwardLink()`yöntem. Bu yöntem, dizideki bir sonraki şekle olan bağlantıyı keser. Aşağıdaki kod, bir ileri bağlantının nasıl kesileceğini gösterir:
 
 ```csharp
 textBox.BreakForwardLink();
 ```
 
-## الخطوة 4: قطع ارتباط أمامي عن طريق تعيين قيمة خالية
+## 4. Adım: Boş bir değer ayarlayarak ileri bağlantıyı kesin
 
- بدلاً من ذلك ، يمكننا قطع ارتباط أمامي عن طريق تعيين TextBox`Next` ملكية ل`null`. هذا يزيل الاتصال بالشكل التالي بشكل فعال. يوضح الكود التالي هذا الأسلوب:
+ Alternatif olarak, TextBox'ları ayarlayarak bir ileri bağlantıyı kesebiliriz.`Next` mülkiyet`null`. Bu, sonraki şekle olan bağlantıyı etkili bir şekilde kaldırır. Aşağıdaki kod bu yaklaşımı göstermektedir:
 
 ```csharp
 textBox. Next = null;
 ```
 
-## الخطوة 5: قطع الرابط الذي يؤدي إلى TextBox
+## 5. Adım: TextBox'a yönlendiren bir bağlantıyı kesin
 
- في بعض الحالات ، نحتاج إلى قطع ارتباط يؤدي إلى شكل مربع النص. يمكننا تحقيق ذلك من خلال استدعاء`BreakForwardLink()` طريقة على`Previous` النموذج ، الذي يقطع الارتباط إلى TextBox. فيما يلي مثال على كيفية كسر هذا الرابط:
+ Bazı durumlarda, TextBox şekline götüren bir bağlantıyı kesmemiz gerekir. Bunu çağırarak elde edebiliriz.`BreakForwardLink()` yöntemi`Previous` TextBox bağlantısını kesen form. İşte böyle bir bağlantının nasıl kırılacağına dair bir örnek:
 
 ```csharp
 textBox.Previous?.BreakForwardLink();
 ```
 
-### نموذج لشفرة المصدر لكسر الرابط مع Aspose.Words for .NET
+### Aspose.Words for .NET ile bir bağlantıyı kesmek için örnek kaynak kodu
 
 ```csharp
 Document doc = new Document();
 Shape shape = new Shape(doc, ShapeType.TextBox);
 TextBox textBox = shape.TextBox;
 
-// كسر الارتباط إلى الأمام.
+// İleri bağlantıyı kes.
 textBox.BreakForwardLink();
 
-// قطع ارتباط إلى الأمام عن طريق تعيين قيمة خالية.
+// Boş bir değer ayarlayarak ileri bağlantıyı kesin.
 textBox. Next = null;
 
-// قطع الارتباط الذي يؤدي إلى مربع النص هذا.
+// Bu metin kutusuna yönlendiren bir bağlantıyı koparın.
 textBox.Previous?.BreakForwardLink();
 ```
 

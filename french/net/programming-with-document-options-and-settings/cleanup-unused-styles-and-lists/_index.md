@@ -1,56 +1,56 @@
 ---
-title: تنظيف الأنماط والقوائم غير المستخدمة
-linktitle: تنظيف الأنماط والقوائم غير المستخدمة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتنظيف الأنماط والقوائم غير المستخدمة في مستند باستخدام Aspose.Words for .NET.
+title: Nettoyer les styles et les listes inutilisés
+linktitle: Nettoyer les styles et les listes inutilisés
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour nettoyer les styles et les listes inutilisés dans un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-document-options-and-settings/cleanup-unused-styles-and-lists/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتنظيف الأنماط والقوائم غير المستخدمة باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إزالة الأنماط والقوائم غير المستخدمة في المستند.
+Dans ce didacticiel, nous vous guiderons à travers le code source C # pour nettoyer les styles et les listes inutilisés avec Aspose.Words pour .NET. Cette fonctionnalité vous permet de supprimer les styles et les listes qui ne sont pas utilisés dans un document.
 
-## الخطوة 1: إعداد المشروع
+## Étape 1 : configuration du projet
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Pour commencer, créez un nouveau projet C# dans votre IDE préféré. Assurez-vous que la bibliothèque Aspose.Words pour .NET est référencée dans votre projet.
 
-## الخطوة الثانية: تحميل المستند
+## Étape 2 : Chargement du document
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي يحتوي على الأنماط والقوائم غير المستخدمة التي نريد تنظيفها. استخدم الكود التالي لتحميل المستند:
+Dans cette étape, nous allons charger le document Word contenant les styles et les listes inutilisés que nous voulons nettoyer. Utilisez le code suivant pour charger le document :
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Unused styles.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Remplacer`"YOUR DOCUMENTS DIRECTORY"` avec le chemin réel du répertoire où se trouve votre document.
 
-## الخطوة 3: عد الأنماط والقوائم قبل التنظيف
+## Étape 3 : Comptez les styles et les listes avant de les nettoyer
 
-قبل التنظيف ، سنقوم بحساب عدد الأنماط والقوائم الموجودة في المستند. استخدم الكود التالي لعرض العدادات:
+Avant de nettoyer, nous compterons le nombre de styles et de listes présents dans le document. Utilisez le code suivant pour afficher les compteurs :
 
 ```csharp
 Console.WriteLine($"Number of styles before cleaning: {doc.Styles.Count}\n" +
 $"Number of lists before cleaning: {doc.Lists.Count}");
 ```
 
-توضح هذه التعليمات عدد الأنماط والقوائم الموجودة في المستند قبل التنظيف.
+Ces instructions indiquent le nombre de styles et de listes présents dans le document avant le nettoyage.
 
-## الخطوة 4: تنظيف الأنماط والقوائم غير المستخدمة
+## Étape 4 : Nettoyer les styles et les listes inutilisés
 
-الآن دعنا ننظف الأنماط والقوائم غير المستخدمة من المستند. استخدم الكود التالي لإجراء التنظيف:
+Nettoyons maintenant les styles et les listes inutilisés du document. Utilisez le code suivant pour effectuer le nettoyage :
 
 ```csharp
 CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 doc. Cleanup(cleanupOptions);
 ```
 
- يقوم هذا الرمز بتنظيف الأنماط والقوائم غير المستخدمة من المستند باستخدام الخيارات المحددة. في هذا المثال ، قمنا بتمكين`UnusedStyles` خيار لإزالة الأنماط غير المستخدمة وتعطيل`UnusedLists` خيار الاحتفاظ بالقوائم حتى لو لم يتم استخدامها.
+ Ce code nettoie les styles et les listes inutilisés du document à l'aide des options spécifiées. Dans cet exemple, nous avons activé le`UnusedStyles` option pour supprimer les styles inutilisés et désactiver le`UnusedLists` possibilité de conserver les listes même si elles ne sont pas utilisées.
 
-## الخطوة 5: عد الأنماط والقوائم بعد التنظيف
+## Étape 5 : Compter les styles et les listes après le nettoyage
 
-بعد إجراء التنظيف ، سنعد الأنماط والقوائم مرة أخرى للتحقق مما إذا كانت مطوية أم لا. استخدم الكود التالي لعرض العدادات الجديدة:
+Après avoir effectué le nettoyage, nous compterons à nouveau les styles et les listes pour vérifier s'ils ont été réduits. Utilisez le code suivant pour afficher les nouveaux compteurs :
 
 ```csharp
 Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
@@ -59,23 +59,23 @@ Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Cou
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
 ```
 
-توضح هذه التعليمات عدد الأنماط والقوائم المتبقية بعد التنظيف.
+Ces instructions indiquent le nombre de styles et de listes restant après le nettoyage.
 
-### مثال على شفرة المصدر لـ Cleanup Unused Styles And Lists باستخدام Aspose.Words for .NET
+### Exemple de code source pour nettoyer les styles et les listes inutilisés à l'aide d'Aspose.Words pour .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Unused styles.docx");
 
-	// بالاقتران مع الأنماط المضمنة ، يحتوي المستند الآن على ثمانية أنماط.
-	// يتم تمييز النمط المخصص على أنه "مستخدم" أثناء وجود أي نص داخل المستند
-	// منسق بهذا النمط. هذا يعني أن الأنماط الأربعة التي أضفناها غير مستخدمة حاليًا.
+	// Combiné avec les styles intégrés, le document a maintenant huit styles.
+	// Un style personnalisé est marqué comme "utilisé" tant qu'il y a du texte dans le document
+	// formaté dans ce style. Cela signifie que les 4 styles que nous avons ajoutés sont actuellement inutilisés.
 	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
 					  $"Count of lists before Cleanup: {doc.Lists.Count}");
 
-	//ينظف الأنماط والقوائم غير المستخدمة من المستند بناءً على خيارات التنظيف المحددة.
+	//Nettoie les styles et les listes inutilisés du document en fonction des CleanupOptions données.
 	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 	doc.Cleanup(cleanupOptions);
 
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAnd
     
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Assurez-vous de spécifier le bon chemin d'accès au document dans le`dataDir` variable.
 
-لقد تعلمت الآن كيفية تنظيف الأنماط والقوائم غير المستخدمة من مستند باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تطبيق هذه الميزة على المستندات الخاصة بك.
+Vous avez maintenant appris à nettoyer les styles et les listes inutilisés d'un document à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape fourni dans ce didacticiel, vous pouvez facilement appliquer cette fonctionnalité à vos propres documents.
 

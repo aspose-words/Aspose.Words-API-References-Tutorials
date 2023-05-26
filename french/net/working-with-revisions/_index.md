@@ -1,27 +1,27 @@
 ---
-title: العمل مع المراجعات
-linktitle: العمل مع المراجعات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية قبول المراجعات ، والحصول على أنواع المراجعات ، والحصول على مجموعات المراجعة ، وإزالة التعليقات في PDF ، وإظهار المراجعات في البالونات ، والحصول على تفاصيل مجموعة المراجعة ، والوصول إلى النسخة المنقحة ، ونقل العقدة في المستند المتعقب ، ومراجعة الشكل باستخدام Aspose.Words for .NET .
+title: Travailler avec des révisions
+linktitle: Travailler avec des révisions
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels expliquent comment accepter les révisions, obtenir les types de révision, obtenir les groupes de révision, supprimer les commentaires dans le PDF, afficher les révisions dans les bulles, obtenir les détails du groupe de révision, accéder à la version révisée, déplacer le nœud dans le document suivi et mettre en forme la révision à l'aide d'Aspose.Words pour .NET .
 type: docs
 weight: 1130
 url: /fr/net/working-with-revisions/
 ---
-يرشدك العمل مع البرامج التعليمية للمراجعات إلى ميزات العمل مع المراجعات في Aspose.Words for .NET. توضح لك هذه البرامج التعليمية كيفية إضافة المراجعات وقبولها ورفضها وعرضها في مستند Word. ستتعلم أيضًا كيفية استعراض المراجعات واسترداد المعلومات التفصيلية حول كل مراجعة وتنفيذ عمليات متقدمة مثل دمج المراجعات.
+Les didacticiels sur l'utilisation des révisions vous guident à travers les fonctionnalités d'utilisation des révisions dans Aspose.Words pour .NET. Ces didacticiels vous montrent comment ajouter, accepter, rejeter et afficher des révisions dans un document Word. Vous apprendrez également à parcourir les révisions, à récupérer des informations détaillées sur chaque révision et à effectuer des opérations avancées telles que la fusion de révisions.
 
-باتباع هذه البرامج التعليمية ، سوف تفهم كيفية إدارة المراجعات بشكل فعال في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. ستتعلم كيفية التحكم في التغييرات التي تطرأ على محتوى المستند ، والتعاون مع المستخدمين الآخرين ، والاحتفاظ بمحفوظات التغييرات التي تم إجراؤها. تقدم البرامج التعليمية أمثلة تعليمات برمجية مفصلة وشروحات واضحة لمساعدتك على إتقان هذه الميزات.
+En suivant ces tutoriels, vous comprendrez comment gérer efficacement les révisions de vos documents Word à l'aide d'Aspose.Words pour .NET. Vous apprendrez à contrôler les modifications apportées au contenu du document, à collaborer avec d'autres utilisateurs et à conserver un historique des modifications apportées. Les didacticiels fournissent des exemples de code détaillés et des explications claires pour vous aider à maîtriser ces fonctionnalités.
 
-سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على الاستفادة الكاملة من ميزات المراجعة الخاصة بـ Aspose.Words for .NET وتحسين سير عمل معالجة المستندات. باتباع الخطوات الموضحة في البرامج التعليمية ، ستتمكن من دمج ميزات المراجعة بسهولة في تطبيقاتك وتحسين إدارة التغيير في مستندات Word الخاصة بك.
+Que vous soyez un développeur débutant ou expérimenté, ces didacticiels vous aideront à tirer pleinement parti des fonctionnalités de révision d'Aspose.Words pour .NET et à optimiser votre flux de travail de traitement de documents. En suivant les étapes décrites dans les tutoriels, vous pourrez facilement intégrer des fonctionnalités de révision dans vos applications et améliorer la gestion du changement dans vos documents Word.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [قبول المراجعات](./accept-revisions/) | تعرف على كيفية قبول المراجعات على مستند Word باستخدام Aspose.Words for .NET. |
-| [احصل على أنواع المراجعة](./get-revision-types/) | احصل على أنواع المراجعات في مستند Word باستخدام Aspose.Words for .NET. |
-| [احصل على مجموعات المراجعة](./get-revision-groups/) | احصل على تفاصيل مجموعة المراجعة في مستند Word باستخدام Aspose.Words for .NET. |
-| [إزالة التعليقات في ملف PDF](./remove-comments-in-pdf/) | قم بإزالة التعليقات في ملف PDF باستخدام Aspose.Words for .NET. |
-| [إظهار المراجعات في بالونات](./show-revisions-in-balloons/) | اعرض المراجعات في بالونات باستخدام Aspose.Words for .NET. |
-| [احصل على تفاصيل مجموعة المراجعة](./get-revision-group-details/) | احصل على تفاصيل مجموعة المراجعة في مستند Word باستخدام Aspose.Words for .NET. |
-| [الوصول إلى النسخة المنقحة](./access-revised-version/) | قم بالوصول إلى نسخة منقحة من مستند Word باستخدام Aspose.Words for .NET. |
-| [نقل العقدة في المستند المتعقب](./move-node-in-tracked-document/) | انقل العقد في مستند تم تعقبه باستخدام Aspose.Words for .NET. |
-| [مراجعة الشكل](./shape-revision/) | راجع الأشكال في مستند Word باستخدام Aspose.Words for .NET. |
+| [Accepter les révisions](./accept-revisions/) | Apprenez à accepter les révisions d'un document Word à l'aide d'Aspose.Words pour .NET. |
+| [Obtenir les types de révision](./get-revision-types/) | Obtenez des types de révision dans un document Word avec Aspose.Words pour .NET. |
+| [Obtenir des groupes de révision](./get-revision-groups/) | Obtenez les détails du groupe de révision dans un document Word avec Aspose.Words pour .NET. |
+| [Supprimer les commentaires dans le pdf](./remove-comments-in-pdf/) | Supprimez les commentaires dans un fichier PDF avec Aspose.Words pour .NET. |
+| [Afficher les révisions dans des ballons](./show-revisions-in-balloons/) | Affichez les révisions dans des ballons avec Aspose.Words pour .NET. |
+| [Obtenir les détails du groupe de révision](./get-revision-group-details/) | Obtenez les détails du groupe de révision dans un document Word avec Aspose.Words pour .NET. |
+| [Accéder à la version révisée](./access-revised-version/) | Accédez à une version révisée d'un document Word avec Aspose.Words pour .NET. |
+| [Déplacer le nœud dans le document suivi](./move-node-in-tracked-document/) | Déplacez les nœuds dans un document suivi avec Aspose.Words pour .NET. |
+| [Révision de la forme](./shape-revision/) | Révisez les formes dans un document Word avec Aspose.Words pour .NET. |

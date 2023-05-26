@@ -1,62 +1,62 @@
 ---
-title: كرر الصفوف في الصفحات اللاحقة
-linktitle: كرر الصفوف في الصفحات اللاحقة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تكرار صفوف الجدول في الصفحات اللاحقة في مستند Word باستخدام Aspose.Words for .NET.
+title: 在后续页面上重复行
+linktitle: 在后续页面上重复行
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档的后续页面上重复表格行。
 type: docs
 weight: 10
 url: /zh/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تكرار صفوف الجدول في الصفحات اللاحقة من مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تحديد صفوف لتكرارها في الصفحات اللاحقة من الجدول في مستندات Word الخاصة بك.
+在本教程中，我们将学习如何使用 Aspose.Words for .NET 在 Word 文档的后续页面上重复表格的行。我们将按照逐步指南来理解代码并实现此功能。在本教程结束时，您将能够指定要在 Word 文档中表格的后续页面上重复的行。
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## 第 1 步：项目设置
+1. 启动 Visual Studio 并创建一个新的 C# 项目。
+2. 添加对 Aspose.Words for .NET 库的引用。
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## 第 2 步：创建文档并初始化文档生成器
+要开始使用文档和文档生成器，请执行以下步骤：
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+//文档创建
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+//初始化文档生成器
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+请务必将“您的文档目录”替换为您的文档目录的实际路径。
 
-## الخطوة الثالثة: بناء الجدول بالصفوف المتكررة
-بعد ذلك ، سننشئ جدولًا به صفوف متكررة في الصفحات اللاحقة. استخدم الكود التالي:
+## 第 3 步：构建具有重复行的表
+接下来，我们将在后续页面上构建一个包含重复行的表格。使用以下代码：
 
 ```csharp
-// بداية الجدول
+//表的开头
 builder. StartTable();
 
-// تكوين معلمات السطر الأول (خطوط الرأس)
+//第一行参数的配置（标题行）
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// أدخل الخلية الأولى في الصف الأول
+//插入第一行的第一个单元格
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
 
-// أدخل الخلية الثانية من الصف الأول
+//插入第一行的第二个单元格
 builder. InsertCell();
 builder.Writeln("Header line 2");
 builder. EndRow();
 
-// قم بتكوين معلمات الأسطر التالية
+//配置以下几行的参数
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 
-// تكرار لإدراج الخلايا في الصفوف التالية
+//循环插入以下行中的单元格
 for (int i = 0; i < 50; i++)
 {
 builder. InsertCell();
@@ -67,27 +67,27 @@ builder.Write("Text column 2");
 builder. EndRow();
 }
 
-// نهاية الجدول
+//表尾
 builder. EndTable();
 ```
 
- هنا نستخدم أداة إنشاء المستندات لبناء جدول يحتوي على صفين رأسيين وصفوف بيانات متعددة. ال`RowFormat.HeadingFormat`تُستخدم المعلمات لتحديد صفوف الرأس التي يجب تكرارها في الصفحات اللاحقة.
+在这里，我们使用文档生成器来构建一个包含两个标题行和多个数据行的表格。这`RowFormat.HeadingFormat`参数用于标记应在后续页面上重复的标题行。
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرا الولايات المتحدة
+## 第 4 步：保存修改后的文档
+最后美国
 
-  تحتاج إلى حفظ المستند المعدل مع تكرار صفوف الرؤوس في الصفحات اللاحقة من الجدول. استخدم الكود التالي:
+  需要保存修改后的文档，并在表格的后续页面上重复标题行。使用以下代码：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+请务必为输出文档指定正确的路径和文件名。
 
-### نموذج لشفرة مصدر لصفوف التكرار في الصفحات اللاحقة باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 在后续页面上重复行的示例源代码 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -116,5 +116,5 @@ for (int i = 0; i < 50; i++)
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تكرار صفوف الجدول في الصفحات اللاحقة من مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تحديد الأسطر التي يجب تكرارها وفقًا لاحتياجاتك الخاصة في مستندات Word الخاصة بك.
+## 结论
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 在 Word 文档的后续页面上重复表格的行。通过遵循此分步指南并实施提供的 C# 代码，您可以根据您在 Word 文档中的特定需要指定要重复的行。

@@ -1,36 +1,36 @@
 ---
-title: تعيين مجلد الخطوط
-linktitle: تعيين مجلد الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين دليل الخطوط في Aspose.Words for .NET وتأكد من توفر الخطوط المستخدمة في مستنداتك.
+title: Establecer carpeta de fuentes
+linktitle: Establecer carpeta de fuentes
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a configurar el directorio de fuentes en Aspose.Words para .NET y garantice la disponibilidad de las fuentes utilizadas en sus documentos.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/set-fonts-folder/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين دليل الخطوط في Aspose.Words for .NET. ستتعلم كيفية تحديد الدليل الذي يحتوي على الخطوط المستخدمة في مستند Word الخاص بك.
+En este tutorial, le mostraremos cómo configurar el directorio de fuentes en Aspose.Words para .NET. Aprenderá a especificar el directorio que contiene las fuentes utilizadas en su documento de Word.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes elementos:
+- Un conocimiento práctico del lenguaje de programación C#
+- La biblioteca Aspose.Words para .NET instalada en su proyecto
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+Comience configurando la ruta del directorio a la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta adecuada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تعيين دليل الخطوط
- قم بإنشاء مثيل لـ`FontSettings` فئة واستخدام`SetFontsFolder` طريقة لتحديد الدليل الذي يحتوي على الخطوط. يستبدل`"Fonts"` باسم دليل الخطوط الفعلي.
+## Paso 2: establecer el directorio de fuentes
+ Crear una instancia de la`FontSettings` clase y usa el`SetFontsFolder` método para especificar el directorio que contiene las fuentes. Reemplazar`"Fonts"` con el nombre del directorio de fuentes actual.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.SetFontsFolder(dataDir + "Fonts", false);
 ```
 
-## الخطوة 3: قم بتحميل المستند بإعدادات الخط
- استخدم ال`LoadOptions` فئة لتحديد إعدادات الخط في ملف`FontSettings` خيار. ثم استخدم ملف`Document` فئة لتحميل المستند باستخدام هذه الخيارات.
+## Paso 3: Cargue el documento con la configuración de fuente
+ Utilizar el`LoadOptions` clase para especificar la configuración de fuente en el`FontSettings` opción. Luego usa el`Document` class para cargar el documento usando estas opciones.
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
@@ -39,11 +39,11 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Fonts Folder باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Establecer carpeta de fuentes usando Aspose.Words para .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();
@@ -54,5 +54,5 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-## خاتمة
-تهنئة ! أنت تعرف الآن كيفية تعيين دليل الخطوط في Aspose.Words for .NET. يمكنك استخدام هذه الميزة لضمان توفر الخطوط المستخدمة في وثيقتك ولضمان التناسق في عرض الخطوط.
+## Conclusión
+¡Felicidades! Ahora sabe cómo configurar el directorio de fuentes en Aspose.Words para .NET. Puede utilizar esta función para garantizar la disponibilidad de las fuentes utilizadas en su documento y para garantizar la coherencia en la visualización de las fuentes.

@@ -1,22 +1,22 @@
 ---
-title: العمل مع OleObjects و ActiveX
-linktitle: العمل مع OleObjects و ActiveX
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية إدراج كائن Ole مع حزمة Ole وبدونها ، وكائن Ole كرمز ، وقراءة خصائص Active XControl باستخدام Aspose.Words for .NET.
+title: OleObjects ve ActiveX ile Çalışma
+linktitle: OleObjects ve ActiveX ile Çalışma
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, Ole Paketi olan ve olmayan Ole Nesnesinin, Simge Olarak Ole Nesnesinin nasıl ekleneceğini ve Aspose.Words for .NET kullanılarak Active XControl Özelliklerinin nasıl okunacağını içerir.
 type: docs
 weight: 1080
 url: /tr/net/working-with-oleobjects-and-activex/
 ---
 
-ترشدك برامج Aspose.Words for .NET التعليمية حول العمل مع كائنات OLE و ActiveX إلى العديد من الميزات والتقنيات لمعالجة كائنات OLE و ActiveX بشكل فعال في مستندات Word الخاصة بك. في هذه البرامج التعليمية ، ستتعلم كيفية إدراج كائنات OLE و ActiveX وسحبها وتحديثها وحذفها ، مثل المخططات وجداول البيانات وعناصر تحكم ActiveX ، في مستندات Word الخاصة بك. ستتعلم أيضًا كيفية تخصيص مظهر وسلوك هذه الكائنات ، وكذلك كيفية التعامل مع الأخطاء والاستثناءات المتعلقة بكائنات OLE و ActiveX.
+OLE ve ActiveX nesneleriyle çalışmaya ilişkin Aspose.Words for .NET öğreticileri, Word belgelerinizde OLE ve ActiveX nesnelerini etkili bir şekilde manipüle etmek için çeşitli özellikler ve teknikler konusunda size yol gösterir. Bu eğitimlerde, Word belgelerinize grafikler, elektronik tablolar ve ActiveX denetimleri gibi OLE ve ActiveX nesnelerini nasıl ekleyeceğinizi, teslim alacağınızı, güncelleyeceğinizi ve sileceğinizi öğreneceksiniz. Ayrıca, bu nesnelerin görünümünü ve davranışını nasıl özelleştireceğinizi ve OLE ve ActiveX nesneleri ile ilgili hataları ve istisnaları nasıl ele alacağınızı da öğreneceksiniz.
 
-تمنحك هذه البرامج التعليمية أسلوبًا عمليًا تدريجيًا للعمل مع كائنات OLE و ActiveX في Aspose.Words for .NET. سوف تتعلم كيفية التعامل مع هذه الكائنات باستخدام الفئات والطرق المختلفة التي توفرها مكتبة Aspose.Words. ستساعدك أمثلة الكود الواضحة والمعلقة على فهم المفاهيم المقدمة وممارستها. مع هذه المعرفة ، ستتمكن من استغلال وظائف كائنات OLE و ActiveX بشكل كامل في مستندات Word الخاصة بك ، وإضافة التفاعل والثراء البصري إليها.
+Bu eğitimler, Aspose.Words for .NET'te OLE ve ActiveX nesneleri ile çalışmaya yönelik uygulamalı, adım adım bir yaklaşım sağlar. Aspose.Words kitaplığı tarafından sağlanan farklı sınıfları ve yöntemleri kullanarak bu nesneleri nasıl değiştireceğinizi öğreneceksiniz. Açık ve yorumlanmış kod örnekleri, sunulan kavramları anlamanıza ve uygulamanıza yardımcı olacaktır. Bu bilgiyle, Word belgelerinizdeki OLE ve ActiveX nesnelerinin işlevselliğinden tam olarak yararlanabilecek, onlara etkileşim ve görsel zenginlik katabileceksiniz.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [إدراج كائن Ole](./insert-ole-object/) | تعرف على كيفية إدراج كائن OLE في مستند باستخدام Aspose.Words for .NET. |
-| [قم بإدراج كائن Ole مع حزمة Ole](./insert-ole-object-with-ole-package/) | تعرف على كيفية إدراج كائن OLE مع حزمة OLE في مستند باستخدام Aspose.Words for .NET. |
-| [إدراج كائن Ole كرمز](./insert-ole-object-as-icon/) | تعرف على كيفية إدراج كائن OLE كرمز باستخدام Aspose.Words for .NET. |
-| [قم بإدراج كائن Ole كرمز باستخدام الدفق](./insert-ole-object-as-icon-using-stream/) | تعرف على كيفية إدراج كائن OLE كرمز باستخدام دفق باستخدام Aspose.Words for .NET. |
-| [قراءة خصائص Active XControl](./read-active-xcontrol-properties/) | اقرأ خصائص عناصر تحكم ActiveX في مستند Word باستخدام Aspose.Words for .NET. |
+| [Ole Nesnesi Ekle](./insert-ole-object/) | Aspose.Words for .NET kullanarak bir OLE nesnesini bir belgeye nasıl ekleyeceğinizi öğrenin. |
+| [Ole Paketi ile Ole Nesnesi Ekleme](./insert-ole-object-with-ole-package/) | Aspose.Words for .NET kullanarak bir OLE paketi ile bir OLE nesnesini bir belgeye nasıl ekleyeceğinizi öğrenin. |
+| [Ole Nesnesini Simge Olarak Ekle](./insert-ole-object-as-icon/) | Aspose.Words for .NET ile bir OLE nesnesini simge olarak nasıl ekleyeceğinizi öğrenin. |
+| [Akışı Kullanarak Ole Nesnesini Simge Olarak Ekleme](./insert-ole-object-as-icon-using-stream/) | Aspose.Words for .NET ile bir akışı kullanarak bir OLE nesnesini simge olarak nasıl ekleyeceğinizi öğrenin. |
+| [Active XControl Özelliklerini Oku](./read-active-xcontrol-properties/) | Aspose.Words for .NET ile bir Word belgesindeki ActiveX kontrollerinin özelliklerini okuyun. |

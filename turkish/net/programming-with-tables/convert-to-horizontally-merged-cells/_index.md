@@ -1,56 +1,56 @@
 ---
-title: تحويل إلى خلايا مدمجة أفقيًا
-linktitle: تحويل إلى خلايا مدمجة أفقيًا
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word باستخدام Aspose.Words for .NET.
+title: Yatay Birleştirilmiş Hücrelere Dönüştür
+linktitle: Yatay Birleştirilmiş Hücrelere Dönüştür
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde tablo hücrelerini yatay olarak birleştirilmiş hücrelere dönüştürmeyi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words for .NET لتحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من معالجة خلايا الجدول في مستندات Word الخاصة بك برمجيًا.
+Bu öğreticide, bir Word belgesinde tablo hücrelerini yatay olarak birleştirilmiş hücrelere dönüştürmek için Aspose.Words for .NET'i nasıl kullanacağımızı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki tablo hücrelerini programlı olarak değiştirebileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+## 2. Adım: Belgeyi yükleme ve tabloya erişme
+Tabloyla çalışmaya başlamak için onu içeren belgeyi yüklememiz ve tabloya erişmemiz gerekiyor. Bu adımları takip et:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Table with merged cells.docx");
 
-// الوصول إلى المصفوفة
+// Diziye erişim
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات. تأكد أيضًا من أن المستند يحتوي على جدول به خلايا مدمجة أفقيًا.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun. Ayrıca, belgenin yatay olarak birleştirilmiş hücrelere sahip bir tablo içerdiğinden emin olun.
 
-## الخطوة 3: التحويل إلى خلايا مدمجة أفقيًا
- بعد ذلك ، سنقوم بتحويل خلايا الجدول إلى خلايا مدمجة أفقيًا باستخدام الامتداد`ConvertToHorizontallyMergedCells()` طريقة. استخدم الكود التالي:
+## 3. Adım: Yatay olarak birleştirilmiş hücrelere dönüştürün
+ Ardından, tablo hücrelerini yatay olarak birleştirilmiş hücrelere dönüştüreceğiz.`ConvertToHorizontallyMergedCells()` yöntem. Aşağıdaki kodu kullanın:
 
 ```csharp
-// التحويل إلى خلايا مدمجة أفقيًا
+// Yatay olarak birleştirilmiş hücrelere dönüştür
 table. ConvertToHorizontallyMergedCells();
 ```
 
- هنا فقط نسمي`ConvertToHorizontallyMergedCells()` الطريقة على المصفوفة لإجراء التحويل.
+ Burada sadece diyoruz`ConvertToHorizontallyMergedCells()` dönüştürmeyi gerçekleştirmek için dizideki yöntem.
 
-### عينة من التعليمات البرمجية المصدر للتحويل إلى خلايا مدمجة أفقيًا باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Yatay Olarak Birleştirilmiş Hücrelere Dönüştürmek için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table with merged cells.docx");
 	Table table = doc.FirstSection.Body.Tables[0];
-	// تحتوي الخلايا المدمجة الآن على أعلام دمج مناسبة.
+	// Artık birleştirilmiş hücrelerde uygun birleştirme bayrakları var.
 	table.ConvertToHorizontallyMergedCells();
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك معالجة خلايا الجدول في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة إدارة وتنظيم بياناتك بطريقة مرنة ومخصصة في جدول.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde tablo hücrelerinin yatay olarak birleştirilmiş hücrelere nasıl dönüştürüleceğini öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizdeki tablo hücrelerini programlı olarak değiştirebilirsiniz. Bu özellik, verilerinizi bir tabloda esnek ve kişiselleştirilmiş bir şekilde yönetmenize ve düzenlemenize olanak tanır.

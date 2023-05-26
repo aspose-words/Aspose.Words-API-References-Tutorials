@@ -1,35 +1,35 @@
 ---
-title: رمز مضمّن
-linktitle: رمز مضمّن
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تضمين التعليمات البرمجية باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Satır İçi Kod
+linktitle: Satır İçi Kod
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile satır içi kodu nasıl yapacağınızı öğrenin Adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/inline-code/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة الشفرة المضمنة مع Aspose.Words for .NET. يتم استخدام التعليمات البرمجية المضمنة لتمثيل أجزاء من التعليمات البرمجية بشكل مرئي داخل فقرة.
+Bu örnekte, satır içi kod özelliğini Aspose.Words for .NET ile nasıl kullanacağınız konusunda size yol göstereceğiz. Satır İçi Kod, bir paragraf içindeki kod parçalarını görsel olarak temsil etmek için kullanılır.
 
-## الخطوة 1: استخدام منشئ المستندات
+## 1. Adım: Bir belge oluşturucu kullanma
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+İlk olarak, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: أضف نمطًا للرمز المضمَّن
+## 2. Adım: Satır içi kod için stil ekleyin
 
- سنضيف نمطًا مخصصًا للشفرة المضمنة باستخدام امتداد`Styles.Add` طريقة`Document` هدف. في هذا المثال ، نقوم بإنشاء نمط يسمى "InlineCode" للشفرة المضمنة مع علامة خلفية افتراضية.
+ Kullanarak satır içi kod için özel bir stil ekleyeceğiz.`Styles.Add` yöntemi`Document` nesne. Bu örnekte, varsayılan ters tik ile satır içi kod için "InlineCode" adlı bir stil yaratıyoruz.
 
 ```csharp
 Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 builder.Font.Style = inlineCode1BackTicks;
 ```
 
-## الخطوة 3: أضف التعليمات البرمجية المضمنة
+## 3. Adım: Satır içi kod ekleyin
 
-الآن يمكننا إضافة التعليمات البرمجية المضمنة باستخدام النمط المخصص "InlineCode". في هذا المثال ، نضيف جزأين من النص بأرقام مختلفة من backticks.
+Artık "InlineCode" özel stilini kullanarak satır içi kod ekleyebiliriz. Bu örnekte, farklı sayıda ters tik içeren iki metin parçası ekliyoruz.
 
 ```csharp
 builder.Writeln("Text with InlineCode style with 1 backtick");
@@ -42,23 +42,23 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 ```
 
 
-### مثال على شفرة المصدر لـ Inline Code مع Aspose.Words for .NET
+### Aspose.Words for .NET ile Satır İçi Kod için örnek kaynak kodu
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	//تم فقدان عدد backticks ، سيتم استخدام علامة خلفية واحدة بشكل افتراضي.
+	//Geri tik sayısı kaçırıldı, varsayılan olarak bir geri tik kullanılacak.
 	Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 	builder.Font.Style = inlineCode1BackTicks;
 	builder.Writeln("Text with InlineCode style with 1 backtick");
 
-	// سيكون هناك 3 باكتيكس.
+	// 3 backtick olacak.
 	Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
 	builder.Font.Style = inlineCode3BackTicks;
 	builder.Writeln("Text with InlineCode style with 3 backtick");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام وظيفة التعليمات البرمجية المضمنة مع Aspose.Words for .NET.
+Tebrikler! Artık Aspose.Words for .NET ile satır içi kod işlevselliğini nasıl kullanacağınızı öğrendiniz.
 

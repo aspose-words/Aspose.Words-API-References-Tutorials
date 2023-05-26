@@ -1,39 +1,39 @@
 ---
-title: الحصول على موقف الجدول العائم
-linktitle: الحصول على موقف الجدول العائم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على موضع الجداول العائمة في مستند Word باستخدام Aspose.Words for .NET.
+title: Ottieni la posizione del tavolo mobile
+linktitle: Ottieni la posizione del tavolo mobile
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come ottenere la posizione delle tabelle mobili in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/get-floating-table-position/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية الحصول على موضع الجدول العائم في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من الحصول على خصائص تحديد الموضع للجدول العائم في مستندات Word الخاصة بك برمجيًا.
+In questo tutorial impareremo come ottenere la posizione di una tabella mobile in un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di ottenere le proprietà di posizionamento di una tabella mobile nei tuoi documenti Word a livello di codice.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Passaggio 1: impostazione del progetto
+1. Avvia Visual Studio e crea un nuovo progetto C#.
+2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة الثانية: تحميل المستند والوصول إلى الجداول
-لبدء العمل مع الجداول ، نحتاج إلى تحميل المستند الذي يحتوي عليها والوصول إليها. اتبع هذه الخطوات:
+## Passaggio 2: caricamento del documento e accesso alle tabelle
+Per iniziare a lavorare con le tabelle, dobbiamo caricare il documento che le contiene e accedervi. Segui questi passi:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Carica il documento
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات. تأكد أيضًا من أن المستند يحتوي على جداول عائمة.
+Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti. Inoltre, assicurati che il documento contenga tabelle mobili.
 
-## الخطوة 3: الحصول على خصائص تحديد موضع الجدول العائم
-بعد ذلك ، سنقوم بتكرار جميع الجداول الموجودة في المستند والحصول على خصائص تحديد موضع الجدول العائم. استخدم الكود التالي:
+## Passaggio 3: ottenere le proprietà di posizionamento della tabella mobile
+Successivamente, eseguiremo il ciclo di tutte le tabelle nel documento e otterremo le proprietà di posizionamento della tabella mobile. Usa il seguente codice:
 
 ```csharp
 foreach(Table table in doc.FirstSection.Body.Tables)
 {
-// إذا كانت المصفوفة من النوع العائم ، فقم بطباعة خصائص تحديد الموضع الخاصة بها.
+// Se l'array è di tipo mobile, stampane le proprietà di posizionamento.
 if (table.TextWrapping == TextWrapping.Around)
 {
 Console.WriteLine(table.HorizontalAnchor);
@@ -48,18 +48,18 @@ Console.WriteLine("...............................");
 }
 ```
 
- نحن هنا نستخدم ملف`foreach` حلقة للتكرار خلال جميع المصفوفات في المستند. نتحقق مما إذا كانت المصفوفة من النوع العائم عن طريق التحقق من`TextWrapping` ملكية. إذا كان الأمر كذلك ، فإننا نطبع خصائص تحديد موضع الجدول ، مثل المرساة الأفقية ، والمثبت الرأسي ، والمسافات الأفقية والرأسية المطلقة ، والإذن المتداخل ، والمسافة الأفقية المطلقة ، والمحاذاة الرأسية النسبية.
+ Qui stiamo usando un`foreach` loop per scorrere tutti gli array nel documento. Controlliamo se l'array è di tipo float controllando il file`TextWrapping` proprietà. Se è così, stampiamo le proprietà di posizionamento della tabella, come l'ancora orizzontale, l'ancora verticale, le distanze assolute orizzontali e verticali, il permesso di sovrapposizione, la distanza orizzontale assoluta e l'allineamento verticale relativo.
  
-### نموذج التعليمات البرمجية المصدر للحصول على موقع الجدول العائم باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per ottenere la posizione della tabella mobile utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");
 	foreach (Table table in doc.FirstSection.Body.Tables)
 	{
-		// إذا كان الجدول من النوع العائم ، فقم بطباعة خصائص تحديد الموضع الخاصة به.
+		// Se la tabella è di tipo mobile, stampane le proprietà di posizionamento.
 		if (table.TextWrapping == TextWrapping.Around)
 		{
 			Console.WriteLine(table.HorizontalAnchor);
@@ -74,5 +74,5 @@ Console.WriteLine("...............................");
 	}
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية الحصول على موضع الجدول العائم في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك الحصول على خصائص تحديد موضع الجداول العائمة في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة تحليل الجداول العائمة ومعالجتها وفقًا لاحتياجاتك الخاصة.
+## Conclusione
+In questo tutorial, abbiamo imparato come ottenere la posizione di una tabella mobile in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, è possibile ottenere le proprietà di posizionamento delle tabelle mobili nei documenti di Word a livello di codice. Questa funzione consente di analizzare e manipolare le tabelle mobili in base alle proprie esigenze specifiche.

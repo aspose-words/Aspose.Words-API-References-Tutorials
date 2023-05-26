@@ -1,26 +1,26 @@
 ---
-title: احصل على مجموعات المراجعة
-linktitle: احصل على مجموعات المراجعة
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على مجموعات المراجعة في مستند Word باستخدام Aspose.Words for .NET.
+title: Skaffa revisionsgrupper
+linktitle: Skaffa revisionsgrupper
+second_title: Aspose.Words för .NET API Referens
+description: Få versionsgrupper i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-revisions/get-revision-groups/
 ---
 
-في هذا الدليل التدريجي ، سنخبرك بكيفية الحصول على مجموعات المراجعة في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+I den här steg-för-steg-guiden kommer vi att berätta hur du får versionsgrupperna i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förse dig med den fullständiga källkoden och visa dig hur du formaterar markdown-utdata.
 
-## الخطوة 1: تحميل المستند
+## Steg 1: Ladda dokumentet
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+Det första steget är att ladda upp dokumentet som innehåller ändringarna.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة 2: تصفح مجموعات المراجعة
+## Steg 2: Bläddra i revisionsgrupper
 
-بعد ذلك ، سنقوم بعمل حلقة عبر مجموعات المراجعة الموجودة في المستند ونعرض تفاصيلها ، مثل المؤلف ونوع المراجعة والنص المنقح.
+Därefter går vi igenom revisionsgrupperna som finns i dokumentet och visar deras detaljer, såsom författare, revisionstyp och reviderad text.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -31,9 +31,9 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 ```
 
 
-### مثال على شفرة المصدر للحصول على مجموعات المراجعة باستخدام Aspose.Words for .NET
+### Exempel på källkod för Get Revision Groups med Aspose.Words för .NET
 
-إليك التعليمات البرمجية المصدر الكاملة للحصول على مجموعات المراجعة في مستند باستخدام Aspose.Words for .NET:
+Här är den fullständiga källkoden för att få versionsgrupperna i ett dokument med Aspose.Words för .NET:
 
 ```csharp
 

@@ -1,26 +1,26 @@
 ---
-title: البرمجة باستخدام Loadoptions
-linktitle: البرمجة باستخدام Loadoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تحديث الحقول المتسخة ، وتحميل المستند المشفر ، وتحويل الشكل إلى الرياضيات المكتبية ، وتعيين إصدار ms word ، واستخدام مجلد temp ، وتحذير رد الاتصال ، وتحميل باستخدام e
+title: Programmation avec Loadoptions
+linktitle: Programmation avec Loadoptions
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent la mise à jour des champs modifiés, le chargement d'un document crypté, la conversion de la forme en mathématiques de bureau, la définition de la version de MS Word, l'utilisation du dossier temporaire, le rappel d'avertissement, le chargement avec e
 type: docs
 weight: 1610
 url: /fr/net/programming-with-loadoptions/
 ---
-تقدم البرامج التعليمية Aspose.Words for .NET موردا قيما للمطورين الراغبين في إتقان البرمجة باستخدام LoadOptions. تغطي هذه البرامج التعليمية بالتفصيل الميزات والتقنيات المختلفة لتحميل مستندات Word في تطبيقات .NET. سواء أكنت بحاجة إلى تحديد خيارات تحميل معينة ، أو التعامل مع الأخطاء عند تحميل المستندات ، أو تخصيص إعدادات الخط ، فإن هذه البرامج التعليمية ستأخذك خطوة بخطوة لتحقيق أهدافك.
+Les tutoriels Aspose.Words pour .NET offrent une ressource précieuse pour les développeurs souhaitant maîtriser la programmation avec LoadOptions. Ces didacticiels couvrent en détail les différentes fonctionnalités et techniques de chargement de documents Word dans des applications .NET. Que vous ayez besoin de spécifier des options de chargement spécifiques, de gérer les erreurs lors du chargement de documents ou de personnaliser les paramètres de police, ces didacticiels vous guideront étape par étape pour atteindre vos objectifs.
 
-في هذه البرامج التعليمية ، ستتعلم كيفية استخدام LoadOptions لتحميل مستندات Word بإعدادات مخصصة. ستستكشف مفاهيم مثل التعامل مع الخطوط المفقودة والتعافي من أخطاء التحميل وتحسين الأداء والمزيد. يتم شرح كل خطوة بالتفصيل بأمثلة تعليمات برمجية واضحة وموجزة لمساعدتك على فهم المفاهيم وتطبيقها بسرعة.
+Dans ces didacticiels, vous apprendrez à utiliser LoadOptions pour charger des documents Word avec des paramètres personnalisés. Vous explorerez des concepts tels que la gestion des polices manquantes, la récupération après des erreurs de chargement, l'optimisation des performances, etc. Chaque étape est expliquée en détail avec des exemples de code clairs et concis pour vous aider à comprendre et à appliquer les concepts rapidement.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [تحديث الحقول القذرة](./update-dirty-fields/) | تعرف على كيفية تحميل مستند Word عن طريق تحديث الحقول غير النظيفة باستخدام Aspose.Words for .NET. |
-| [تحميل مستند مشفر](./load-encrypted-document/) | تعرف على كيفية تحميل وحفظ المستندات المشفرة باستخدام Aspose.Words for .NET. |
-| [تحويل الشكل إلى مكتب الرياضيات](./convert-shape-to-office-math/) | تعرف على كيفية تحويل الأشكال إلى صيغ الرياضيات في Office عند تحميل المستندات باستخدام Aspose.Words for .NET. |
-| [تعيين إصدار MS Word](./set-ms-word-version/) | تعرف على كيفية تحميل مستند بإصدار محدد من MS Word باستخدام Aspose.Words for .NET. |
-| [استخدم مجلد Temp](./use-temp-folder/) | تعرف على كيفية استخدام مجلد مؤقت عند تحميل المستندات باستخدام Aspose.Words for .NET. |
-| [رد الاتصال التحذيري](./warning-callback/) | تعرف على كيفية التعامل مع التحذيرات عند تحميل مستند Word باستخدام وظيفة رد الاتصال مع Aspose.Words for .NET. |
-| [تحميل مع الترميز](./load-with-encoding/) | تعرف على كيفية تحميل مستند بترميز محدد باستخدام Aspose.Words for .NET. |
-| [تخطي صور PDF](./skip-pdf-images/) | تعرف على كيفية تحميل مستند PDF مع تخطي تحميل صور PDF باستخدام Aspose.Words for .NET. |
-| [تحويل ملفات التعريف إلى Png](./convert-metafiles-to-png/) | تعرف على كيفية تحويل ملفات التعريف إلى صور PNG عند تحميل المستندات باستخدام Aspose.Words for .NET. |
-| [تحميل Chm](./load-chm/) | تعرف على كيفية تحميل ملفات CHM باستخدام Aspose.Words for .NET. |
+| [Mettre à jour les champs modifiés](./update-dirty-fields/) | Apprenez à charger un document Word en mettant à jour les champs modifiés avec Aspose.Words pour .NET. |
+| [Charger le document chiffré](./load-encrypted-document/) | Apprenez à charger et enregistrer des documents chiffrés avec Aspose.Words pour .NET. |
+| [Convertir la forme en mathématiques de bureau](./convert-shape-to-office-math/) | Apprenez à convertir des formes en formules mathématiques Office lors du téléchargement de documents avec Aspose.Words pour .NET. |
+| [Définir la version de Mme Word](./set-ms-word-version/) | Apprenez à charger un document avec une version spécifiée de MS Word à l'aide d'Aspose.Words pour .NET. |
+| [Utiliser le dossier temporaire](./use-temp-folder/) | Apprenez à utiliser un dossier temporaire lors du téléchargement de documents avec Aspose.Words pour .NET. |
+| [Rappel d'avertissement](./warning-callback/) | Apprenez à gérer les avertissements lors du chargement d'un document Word à l'aide de la fonctionnalité de rappel avec Aspose.Words pour .NET. |
+| [Charger avec encodage](./load-with-encoding/) | Apprenez à charger un document avec un encodage spécifié à l'aide d'Aspose.Words pour .NET. |
+| [Ignorer les images PDF](./skip-pdf-images/) | Apprenez à charger un document PDF sans charger les images PDF avec Aspose.Words pour .NET. |
+| [Convertir les métafichiers en Png](./convert-metafiles-to-png/) | Apprenez à convertir des métafichiers en images PNG lors du téléchargement de documents avec Aspose.Words pour .NET. |
+| [Chm de charge](./load-chm/) | Apprenez à charger des fichiers CHM avec Aspose.Words pour .NET. |

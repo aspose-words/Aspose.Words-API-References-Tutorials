@@ -1,38 +1,38 @@
 ---
-title: التحكم في محتوى مربع نص منسق
-linktitle: التحكم في محتوى مربع نص منسق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء عنصر تحكم في محتوى مربع نص منسق في مستند Word باستخدام Aspose.Words for .NET مما يتيح تنسيق النص وتصميمه.
+title: Contrôle du contenu de la zone de texte enrichi
+linktitle: Contrôle du contenu de la zone de texte enrichi
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à créer un contrôle de contenu de zone de texte enrichi dans un document Word à l'aide d'Aspose.Words pour .NET permettant la mise en forme et le style du texte.
 type: docs
 weight: 10
 url: /fr/net/programming-with-sdt/rich-text-box-content-control/
 ---
 
-يوضح هذا البرنامج التعليمي كيفية إنشاء عنصر تحكم محتوى مربع نص منسق في مستند Word باستخدام Aspose.Words for .NET. تسمح عناصر التحكم في محتوى مربع النص المنسق للمستخدمين بإدخال نص وتنسيقه باستخدام أنماط وخيارات تنسيق متنوعة.
+Ce didacticiel montre comment créer un contrôle de contenu de zone de texte enrichi dans un document Word à l'aide de Aspose.Words pour .NET. Les contrôles de contenu de zone de texte enrichi permettent aux utilisateurs de saisir et de formater du texte avec différents styles et options de formatage.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Conditions préalables
+Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Bibliothèque Aspose.Words pour .NET installée.
+- Connaissance de base de C# et travail avec des documents Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Étape 1 : Configurer le répertoire de documents
+ Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و StructuredDocumentTag
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`StructuredDocumentTag` لتمثيل عنصر تحكم محتوى مربع النص المنسق. حدد`SdtType.RichText` كنوع و`MarkupLevel.Block` كمستوى الترميز لإنشاء مربع نص منسق على مستوى الكتلة.
+## Étape 2 : Créer un document et une balise StructuredDocumentTag
+ Créez une nouvelle instance de`Document` classe et une`StructuredDocumentTag` pour représenter le contrôle du contenu de la zone de texte enrichi. Spécifier`SdtType.RichText` comme type et`MarkupLevel.Block` comme niveau de balisage pour créer une zone de texte enrichi au niveau du bloc.
 
 ```csharp
 Document doc = new Document();
 StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichText, MarkupLevel.Block);
 ```
 
-## الخطوة 3: إنشاء وتنسيق محتوى نص منسق
-قم بإنشاء فقرة وتشغيلها لتمثيل محتوى النص المنسق. اضبط النص وخيارات التنسيق مثل اللون والخط وما إلى ذلك.
+## Étape 3 : créer et mettre en forme le contenu en texte enrichi
+Créez un paragraphe et exécutez-le pour représenter le contenu du texte enrichi. Définissez le texte et les options de mise en forme telles que la couleur, la police, etc.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
@@ -42,31 +42,31 @@ run.Font.Color = Color.Green;
 para.Runs.Add(run);
 ```
 
-## الخطوة 4: أضف محتوى Rich Text إلى عنصر التحكم في المحتوى
-أضف الفقرة مع محتوى النص المنسق إلى ملف`ChildNodes` مجموعة من عنصر تحكم محتوى مربع نص منسق.
+## Étape 4 : Ajoutez le contenu de texte enrichi au contrôle de contenu
+Ajoutez le paragraphe avec le contenu de texte enrichi à la`ChildNodes` collection du contrôle de contenu de la zone de texte enrichi.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);
 ```
 
-## الخطوة 5: قم بإلحاق Content Control بالمستند
- قم بإلحاق عنصر تحكم محتوى مربع النص المنسق بجسم المستند باستخدام ملف`AppendChild` طريقة نص القسم الأول من المستند.
+## Étape 5 : Ajouter le contrôle de contenu au document
+ Ajoutez le contrôle de contenu de la zone de texte enrichi au corps du document à l'aide de la`AppendChild` méthode du corps de la première section du document.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);
 ```
 
-## الخطوة 6: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.RichTextBoxContentControl.docx".
+## Étape 6 : Enregistrer le document
+ Enregistrez le document dans le répertoire spécifié à l'aide de la`Save` méthode. Indiquez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous "WorkingWithSdt.RichTextBoxContentControl.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ```
 
-### مثال على شفرة المصدر للتحكم في محتوى Rich Text Box باستخدام Aspose.Words for .NET 
+### Exemple de code source pour le contrôle du contenu de la zone de texte enrichi à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -81,4 +81,4 @@ doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 	doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إنشاء عنصر تحكم محتوى مربع نص منسق في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+C'est ça! Vous avez créé avec succès un contrôle de contenu de zone de texte enrichi dans votre document Word à l'aide de Aspose.Words pour .NET.

@@ -1,63 +1,63 @@
 ---
-title: إدراج مستند في دمج المراسلات
-linktitle: إدراج مستند في دمج المراسلات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words for .NET.
+title: Infoga dokument vid brevkoppling
+linktitle: Infoga dokument vid brevkoppling
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar dokument i ett annat under sammankoppling med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام ميزة "إدراج مستند أثناء دمج المراسلات" في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم كود المصدر وإجراء عملية إدراج المستند.
+den här självstudien kommer vi att gå igenom hur du infogar ett dokument i ett annat dokument under kopplingen med hjälp av funktionen Infoga dokument under koppling av brev i Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och utföra dokumentinfogningen.
 
-## الخطوة 1: تحميل المستند الرئيسي
+## Steg 1: Laddar huvuddokumentet
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند الرئيسي في كائن المستند. إليك الطريقة:
+För att komma igång, ange katalogen för dina dokument och ladda huvuddokumentet i ett dokumentobjekt. Här är hur:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 ```
 
-## الخطوة 2: تكوين دمج المراسلات
+## Steg 2: Konfigurera Mail Merge
 
-لنقم الآن بتكوين دمج المراسلات وتحديد رد نداء دمج الحقول لإدراج مستند في مستند آخر. إليك الطريقة:
+Låt oss nu konfigurera kopplingen och ange fältet kopplingsanrop för att infoga ett dokument i ett annat dokument. Här är hur:
 
 ```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
 ```
 
-## الخطوة 3: تشغيل دمج المراسلات
+## Steg 3: Kör sammankopplingen av brev
 
-سنقوم بتشغيل دمج البريد من خلال توفير أسماء حقول الدمج والبيانات المقابلة. إليك الطريقة:
+Vi kör kopplingen genom att ange namnen på kopplingsfälten och motsvarande data. Här är hur:
 
 ```csharp
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-### مثال على شفرة المصدر لـ Insert Document At Mail Merge باستخدام Aspose.Words for .NET
+### Exempel på källkod för Insert Document At Mail Merge med Aspose.Words för .NET
 
-فيما يلي رمز المصدر الكامل لميزة "إدراج مستند في دمج المراسلات" في Aspose.Words for .NET:
+Här är den fullständiga källkoden för funktionen Infoga dokument i brevkoppling av Aspose.Words för .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
 	mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-	//يحتوي المستند الرئيسي على حقل دمج يسمى "Document_1".
-	// تحتوي البيانات المقابلة لهذا الحقل على مسار مؤهل بالكامل إلى المستند.
-	// يجب إدراج ذلك في هذا المجال.
+	//Huvuddokumentet har ett sammanslagningsfält i sig som heter "Dokument_1".
+	// Motsvarande data för detta fält innehåller en fullständigt kvalificerad sökväg till dokumentet.
+	// Det ska infogas i det här fältet.
 	mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 
 	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words for .NET. سيتم حفظ المستند الناتج تحت اسم جديد
+Med denna kod kommer du att kunna infoga ett dokument i ett annat dokument under sammanslagningen med Aspose.Words för .NET. Det resulterande dokumentet kommer att sparas under ett nytt namn
 
 
 

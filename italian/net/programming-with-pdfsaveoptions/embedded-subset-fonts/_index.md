@@ -1,61 +1,61 @@
 ---
-title: خطوط المجموعة الفرعية المضمنة
-linktitle: خطوط المجموعة الفرعية المضمنة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتضمين مجموعات الخطوط الفرعية في ملف PDF باستخدام Aspose.Words for .NET.
+title: Caratteri di sottoinsieme incorporati
+linktitle: Caratteri di sottoinsieme incorporati
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata per incorporare sottoinsiemi di caratteri in un PDF utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة تضمين مجموعة الخطوط الفرعية مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تضمين مجموعات فرعية من الخطوط في مستند وإنشاء ملف PDF يحتوي فقط على الحروف الرسومية المستخدمة في المستند.
+Questo articolo fornisce una guida dettagliata su come utilizzare la funzione di incorporamento di sottoinsiemi di caratteri con Aspose.Words per .NET. Spiegheremo ogni parte del codice in dettaglio. Alla fine di questo tutorial, sarai in grado di capire come incorporare sottoinsiemi di caratteri in un documento e generare un PDF contenente solo i glifi utilizzati nel documento.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Prima di iniziare, assicurati di aver installato e configurato la libreria Aspose.Words per .NET nel tuo progetto. Puoi trovare la libreria e le istruzioni di installazione sul sito web di Aspose.
 
-## الخطوة 1: تحديد دليل المستند
+## Passaggio 1: definire la directory dei documenti
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Per iniziare, devi definire il percorso della directory in cui si trovano i tuoi documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Passaggio 2: caricare il documento
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Successivamente, dobbiamo caricare il documento che vogliamo elaborare. In questo esempio, supponiamo che il documento si chiami "Rendering.docx" e si trovi nella directory dei documenti specificata.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF
+## Passaggio 3: configurare le opzioni di salvataggio come PDF
 
- لإنشاء ملف PDF يحتوي فقط على مجموعات فرعية من الخطوط المستخدمة في المستند ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن مع`EmbedFullFonts` تعيين الخاصية على`false`.
+ Per creare un PDF contenente solo i sottoinsiemi di caratteri utilizzati nel documento, è necessario configurare il file`PdfSaveOptions` oggetto con il`EmbedFullFonts` proprietà impostata su`false`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع مجموعات الخطوط الفرعية
+## Passaggio 4: salva il documento come PDF con sottoinsiemi di caratteri
 
- أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام مجموعات الخطوط الفرعية. حدد اسم ملف الإخراج و`saveOptions` كائن قمنا بتكوينه في الخطوة السابقة.
+ Infine, possiamo salvare il documento come PDF utilizzando i sottoinsiemi di caratteri. Specificare il nome del file di output e il file`saveOptions` oggetto che abbiamo configurato nel passaggio precedente.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تضمين مجموعات فرعية من الخطوط في مستند وإنشاء ملف PDF يحتوي فقط على الحروف الرسومية المستخدمة في المستند مع Aspose.Words for .NET.
+È tutto ! Hai incorporato correttamente sottoinsiemi di caratteri in un documento e generato un PDF contenente solo i glifi utilizzati nel documento con Aspose.Words per .NET.
 
-### عينة من التعليمات البرمجية المصدر لتضمين مجموعات فرعية من الخطوط باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per l'incorporamento di sottoinsiemi di caratteri con Aspose.Words per .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// سيحتوي ملف PDF الناتج على مجموعات فرعية من الخطوط الموجودة في المستند.
-	// يتم تضمين الحروف الرسومية المستخدمة في الوثيقة فقط في خطوط PDF.
+	// Il PDF di output conterrà sottoinsiemi dei caratteri nel documento.
+	// Nei font PDF sono inclusi solo i glifi utilizzati nel documento.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);

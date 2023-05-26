@@ -1,61 +1,61 @@
 ---
-title: تحويل ملفات التعريف إلى Png
-linktitle: تحويل ملفات التعريف إلى Png
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل ملفات التعريف إلى صور PNG عند تحميل المستندات باستخدام Aspose.Words for .NET.
+title: Convertir les métafichiers en Png
+linktitle: Convertir les métafichiers en Png
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à convertir des métafichiers en images PNG lors du téléchargement de documents avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-loadoptions/convert-metafiles-to-png/
 ---
-عند العمل مع المستندات في تطبيق C # ، قد يكون من الضروري تحويل ملفات التعريف إلى صور PNG من أجل توافق أفضل وعرض دقيق. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحويل ملفات التعريف إلى PNG أثناء تحميل مستند. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند بتحويل ملفات التعريف إلى PNG باستخدام خيارات تحميل LoadOptions.
+Lorsque vous travaillez avec des documents dans une application C#, il peut être nécessaire de convertir des métafichiers en images PNG pour une meilleure compatibilité et un rendu précis. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement convertir des métafichiers en PNG lors du chargement d'un document. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour charger un document en convertissant les métafichiers en PNG à l'aide des options de chargement LoadOptions.
 
-## فهم مكتبة Aspose.Words
+## Comprendre la bibliothèque Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque puissante pour créer, éditer, convertir et protéger des documents Word sur différentes plates-formes, y compris .NET. Il offre de nombreuses fonctionnalités pour manipuler des documents, telles que l'insertion de texte, la modification de la mise en forme, l'ajout de sections et bien plus encore.
 
-## الخطوة 1: تحديد دليل المستند
+## Etape 1 : Définir le répertoire des documents
 
-الخطوة الأولى هي تحديد الدليل حيث توجد المستندات الخاصة بك. يجب عليك تحديد مسار الدليل الكامل. على سبيل المثال :
+La première étape consiste à définir le répertoire où se trouvent vos documents. Vous devez spécifier le chemin d'accès complet au répertoire. Par exemple :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Assurez-vous de remplacer "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin d'accès réel à votre répertoire de documents.
 
-## الخطوة 2: تكوين خيارات التحميل
+## Étape 2 : Configuration des options de chargement
 
-لنقم الآن بتهيئة خيارات التحميل لوثيقتنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. على سبيل المثال :
+Configurons maintenant les options de chargement de notre document. Utilisez la classe LoadOptions pour spécifier les paramètres de chargement. Par exemple :
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { ConvertMetafilesToPng = true };
 ```
 
-في هذا المثال ، قمنا بإنشاء كائن LoadOptions جديد وقمنا بتعيين الخاصية ConvertMetafilesToPng إلى true لتمكين تحويل ملفات التعريف إلى PNG عند تحميل المستند.
+Dans cet exemple, nous créons un nouvel objet LoadOptions et définissons la propriété ConvertMetafilesToPng sur true pour activer la conversion des métafichiers en PNG lors du chargement du document.
 
-## الخطوة 3: تحميل المستند بتحويل ملفات التعريف إلى PNG
+## Étape 3 : Chargement du document avec conversion des métafichiers en PNG
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل المستند باستخدام فئة Document وتحديد خيارات التحميل. على سبيل المثال :
+Maintenant que nous avons configuré les options de chargement, nous pouvons charger le document à l'aide de la classe Document et spécifier les options de chargement. Par exemple :
 
 ```csharp
 Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "WMF with image.docx" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+Dans cet exemple, nous chargeons le document "WMF avec image.docx" situé dans le répertoire des documents en utilisant les options de chargement spécifiées.
 
-## مثال على شفرة المصدر لميزة LoadOptions مع تحويل ملفات التعريف إلى Png باستخدام Aspose.Words for .NET
+## Exemple de code source pour la fonctionnalité LoadOptions with Convert Metafiles To Png à l'aide de Aspose.Words pour .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "تحويل ملفات التعريف إلى بابوا نيو غينيا"
+// Configurez les options de chargement avec la fonction "Convertir les métafichiers en Png"
 LoadOptions loadOptions = new LoadOptions { ConvertMetafilesToPng = true };
 
-// قم بتحميل المستند بالخيارات المحددة
+// Charger le document avec les options spécifiées
 Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند بتحويل ملفات التعريف إلى صور PNG باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يضمن تحويل ملفات التعريف إلى PNG توافقًا أفضل وعرضًا دقيقًا للمستندات.
+Dans ce guide, nous avons expliqué comment charger un document en convertissant des métafichiers en images PNG à l'aide de la bibliothèque Aspose.Words pour .NET. En suivant les étapes fournies et en utilisant le code source C# fourni, vous pouvez facilement appliquer cette fonctionnalité dans votre application C#. La conversion des métafichiers en PNG assure une meilleure compatibilité et un rendu précis des documents.

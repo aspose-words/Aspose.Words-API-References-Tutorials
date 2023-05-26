@@ -1,45 +1,45 @@
 ---
-title: أضف زوايا مقصوصة
-linktitle: أضف زوايا مقصوصة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة شكل بزوايا مقصوصة إلى مستند Word باستخدام Aspose.Words for .NET.
+title: Abgeschnittene Ecken hinzufügen
+linktitle: Abgeschnittene Ecken hinzufügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Form mit abgeschnittenen Ecken zu einem Word-Dokument hinzufügen.
 type: docs
 weight: 10
 url: /de/net/programming-with-shapes/add-corners-snipped/
 ---
 
- يشرح هذا البرنامج التعليمي كيفية إضافة شكل بزوايا مقصوصة إلى مستند Word باستخدام Aspose.Words for .NET. يمكن تخصيص شكل الزوايا المقطوعة وإدخالها باستخدام ملف`InsertShape` طريقة.
+ In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET eine Form mit abgeschnittenen Ecken zu einem Word-Dokument hinzufügen. Die Form der abgeschnittenen Ecken kann mit angepasst und eingefügt werden`InsertShape` Methode.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Voraussetzungen
+Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words für .NET-Bibliothek installiert.
+- Grundkenntnisse in C# und der Arbeit mit Word-Dokumenten.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
+ Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"`mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Schritt 2: Erstellen Sie ein neues Dokument und einen neuen DocumentBuilder
+ Erstellen Sie eine neue Instanz von`Document` Klasse und a`DocumentBuilder` Objekt, um mit dem Dokument zu arbeiten.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: أدخل شكل الزوايا المقصوصة
- استخدم ال`InsertShape` طريقة`DocumentBuilder` لإدراج شكل بزوايا مقصوصة. حدد نوع الشكل (في هذه الحالة ،`ShapeType.TopCornersSnipped`) وتقديم الحجم المطلوب للشكل.
+## Schritt 3: Fügen Sie die Form mit abgeschnittenen Ecken ein
+ Benutzen Sie die`InsertShape` Methode der`DocumentBuilder` Objekt, um eine Form mit abgeschnittenen Ecken einzufügen. Geben Sie den Formtyp an (in diesem Fall`ShapeType.TopCornersSnipped`) und geben Sie die gewünschte Größe für die Form ein.
 
 ```csharp
 builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithShapes.AddCornersSnipped.docx".
+## Schritt 4: Speichern Sie das Dokument
+ Speichern Sie das Dokument mit im angegebenen Verzeichnis`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithShapes.AddCornersSnipped.docx“.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
@@ -49,10 +49,10 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 ```
 
-### مثال على شفرة المصدر لـ Add Corners Snipped باستخدام Aspose.Words for .NET 
+### Beispielquellcode für Add Corners Snipped mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -66,4 +66,4 @@ doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 
 ```
 
-هذا كل شيء! لقد نجحت في إضافة شكل مقطوع من الزوايا إلى مستند Word باستخدام Aspose.Words for .NET.
+Das ist es! Sie haben Ihrem Word-Dokument mit Aspose.Words für .NET erfolgreich eine Form mit ausgeschnittenen Ecken hinzugefügt.

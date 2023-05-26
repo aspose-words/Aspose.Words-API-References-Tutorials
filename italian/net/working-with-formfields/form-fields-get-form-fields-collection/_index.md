@@ -1,59 +1,59 @@
 ---
-title: حقول النموذج تحصل على مجموعة حقول النموذج
-linktitle: حقول النموذج تحصل على مجموعة حقول النموذج
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد مجموعة حقول النموذج ومعالجتها في مستندات Word باستخدام Aspose.Words for .NET.
+title: Campi modulo Ottieni la raccolta Campi modulo
+linktitle: Campi modulo Ottieni la raccolta Campi modulo
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come recuperare e manipolare la raccolta di campi modulo nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-formfields/form-fields-get-form-fields-collection/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لاسترداد مجموعة حقول النموذج من مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In questo tutorial passo-passo, ti guideremo su come utilizzare Aspose.Words per .NET per recuperare la raccolta di campi modulo da un documento Word. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria dal sito ufficiale.
 
-## الخطوة 1: تهيئة كائن المستند
+## Passaggio 1: inizializzazione dell'oggetto documento
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق توفير المسار إلى المستند المصدر الذي يحتوي على حقول النموذج:
+ Per prima cosa, inizializza il file`Document` oggetto fornendo il percorso del documento di origine contenente i campi del modulo:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## الخطوة 2: استرداد مجموعة حقول النموذج
+## Passaggio 2: recupero della raccolta dei campi del modulo
 
- بعد ذلك ، قم بالوصول إلى`FormFields` ممتلكات`Range` كائن في المستند لاسترداد مجموعة حقول النموذج:
+ Successivamente, accedi al file`FormFields` proprietà del`Range` oggetto nel documento per recuperare la raccolta di campi del modulo:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;
 ```
 
- الآن ، لديك مجموعة حقول النموذج من مستند Word المخزنة في ملف`formFields` عامل.
+ Ora hai la raccolta di campi modulo dal documento Word archiviato nel file`formFields` variabile.
 
-## الخطوة 3: الوصول إلى حقول النموذج ومعالجتها
+## Passaggio 3: accesso e manipolazione dei campi del modulo
 
-يمكنك التكرار من خلال مجموعة حقول النموذج وتنفيذ عمليات مختلفة في كل حقل نموذج ، مثل الحصول على القيم أو تعيينها ، أو تعديل التنسيق ، أو استخراج المعلومات.
+È possibile scorrere la raccolta dei campi del modulo ed eseguire varie operazioni su ogni campo del modulo, ad esempio ottenere o impostare valori, modificare la formattazione o estrarre informazioni.
 
 ```csharp
 foreach (FormField formField in formFields)
 {
-    // الوصول إلى كل حقل نموذج والتعامل معه
-    //...
+    // Accedi e manipola ogni campo del modulo
+    // ...
 }
 ```
 
-## الخطوة 4: حفظ المستند
+## Passaggio 4: salvare il documento
 
-أخيرًا ، احفظ المستند المعدل إذا لزم الأمر:
+Infine, salva il documento modificato se necessario:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-هذا كل شيء! لقد نجحت في استرداد مجموعة حقول النموذج من مستند Word باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai recuperato correttamente la raccolta di campi modulo da un documento Word utilizzando Aspose.Words per .NET.
 
-### مثال على شفرة المصدر لحقول النموذج احصل على مجموعة حقول النموذج باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per Campi modulo Ottieni la raccolta di campi modulo utilizzando Aspose.Words per .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -61,10 +61,10 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 FormFieldCollection formFields = doc.Range.FormFields;
 
-// الوصول إلى حقول النموذج ومعالجتها حسب الحاجة
-//...
+// Accedi e manipola i campi del modulo secondo necessità
+// ...
 
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.

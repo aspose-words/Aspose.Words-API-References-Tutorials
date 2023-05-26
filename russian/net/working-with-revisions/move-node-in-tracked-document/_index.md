@@ -1,18 +1,18 @@
 ---
-title: نقل العقدة في المستند المتعقب
-linktitle: نقل العقدة في المستند المتعقب
-second_title: Aspose.Words لمراجع .NET API
-description: انقل العقد في مستند تم تعقبه باستخدام Aspose.Words for .NET.
+title: Переместить узел в отслеживаемом документе
+linktitle: Переместить узел в отслеживаемом документе
+second_title: Справочник по API Aspose.Words для .NET
+description: Перемещайте узлы в отслеживаемом документе с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/working-with-revisions/move-node-in-tracked-document/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية تحريك عقدة في مستند Word متعقب باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+В этом пошаговом руководстве мы расскажем, как переместить узел в отслеживаемом документе Word с помощью Aspose.Words для .NET. Мы предоставим вам полный исходный код и покажем, как форматировать выходные данные уценки.
 
-## الخطوة الأولى: إنشاء المستند
+## Шаг 1: Создание документа
 
-الخطوة الأولى هي إنشاء مستند جديد وإضافة فقرات.
+Первый шаг — создать новый документ и добавить абзацы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -28,17 +28,17 @@ Body body = doc.FirstSection.Body;
 Console.WriteLine("Number of paragraphs: {0}", body.Paragraphs.Count);
 ```
 
-## الخطوة 2: تتبع المراجعات
+## Шаг 2. Отслеживание изменений
 
-سنقوم بتمكين تتبع المراجعة في المستند.
+Мы собираемся включить отслеживание изменений в документе.
 
 ```csharp
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 ```
 
-## الخطوة 3: انقل العقدة
+## Шаг 3: Переместите узел
 
-سننقل عقدة (فقرة) من موضع إلى آخر أثناء إنشاء المراجعات.
+Мы будем перемещать узел (абзац) из одной позиции в другую при создании ревизий.
 
 ```csharp
 Node node = body.Paragraphs[3];
@@ -52,17 +52,17 @@ while (node != endNode)
 }
 ```
 
-## الخطوة الرابعة: التوقف عن تتبع التعليقات
+## Шаг 4. Прекратите отслеживать отзывы
 
-سنتوقف عن تتبع المراجعات في المستند.
+Мы перестанем отслеживать изменения в документе.
 
 ```csharp
 doc.StopTrackRevisions();
 ```
 
-## الخطوة 5: حفظ المستند
+## Шаг 5: Сохранение документа
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ После вставки поля формы ввода текста сохраните документ в нужное место с помощью кнопки`Save` метод. Обязательно укажите правильный путь к файлу:
 
 ```csharp
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
@@ -70,14 +70,14 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```
 
 
-### مثال على شفرة المصدر لـ Move Node In Tracked Document باستخدام Aspose.Words for .NET
+### Пример исходного кода для перемещения узла в отслеживаемом документе с использованием Aspose.Words для .NET
 
-فيما يلي شفرة المصدر الكاملة لنقل عقدة في مستند متتبع باستخدام Aspose.Words for .NET:
+Вот полный исходный код для перемещения узла в отслеживаемом документе с помощью Aspose.Words для .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Путь к каталогу документов.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -90,10 +90,10 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 	Body body = doc.FirstSection.Body;
 	Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 
-	// بدء تتبع المراجعات.
+	// Начните отслеживать изменения.
 	doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
-	// إنشاء مراجعات عند نقل عقدة من موقع إلى آخر.
+	// Создание ревизий при перемещении узла из одного места в другое.
 	Node node = body.Paragraphs[3];
 	Node endNode = body.Paragraphs[5].NextSibling;
 	Node referenceNode = body.Paragraphs[0];
@@ -104,10 +104,10 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 		node = nextNode;
 	}
 
-	// أوقف عملية تتبع المراجعات.
+	// Остановите процесс отслеживания изменений.
 	doc.StopTrackRevisions();
 
-	// هناك 3 فقرات إضافية في نطاق الانتقال من.
+	// В диапазоне перехода есть 3 дополнительных абзаца.
 	Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 	doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
             

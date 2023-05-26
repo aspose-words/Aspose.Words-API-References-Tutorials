@@ -1,48 +1,48 @@
 ---
-title: صورة
-linktitle: صورة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الصورة وتخصيصها باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Image
+linktitle: Image
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer et personnaliser une image avec le guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-markdown/image/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام ميزة الصورة مع Aspose.Words for .NET. تسمح لك الصور بإدراج الرسوم التوضيحية والرسومات في المستند.
+Dans cet exemple, nous expliquerons comment utiliser la fonctionnalité d'image avec Aspose.Words pour .NET. Les images vous permettent d'insérer des illustrations et des graphiques dans un document.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Étape 1 : Utiliser un générateur de documents
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Tout d'abord, nous allons utiliser un générateur de document pour ajouter du contenu à notre document.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة الثانية: إدخال صورة
+## Étape 2 : Insertion d'une image
 
- يمكننا إدراج صورة باستخدام ملف`Shape` فئة وتحديد نوع الصورة هنا`ShapeType.Image` قمنا أيضًا بتعيين نوع التفاف الصورة على`WrapType.Inline`.
+ Nous pouvons insérer une image en utilisant le`Shape` class et en précisant le type d'image, ici`ShapeType.Image` Nous définissons également le type d'habillage de l'image sur`WrapType.Inline`.
 
 ```csharp
 Shape shape = new Shape(builder.Document, ShapeType.Image);
 shape. WrapType = WrapType. Inline;
 ```
 
-## الخطوة 3: تخصيص الصورة
+## Étape 3 : Personnalisation de l'image
 
- نقوم بتخصيص الصورة من خلال تحديد مسارها الكامل ، على سبيل المثال`"/attachment/1456/pic001.png"`وإضافة عنوان للصورة.
+ Nous personnalisons l'image en spécifiant son chemin complet, par exemple`"/attachment/1456/pic001.png"`, et en ajoutant un titre à l'image.
 
 ```csharp
 shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
 shape.ImageData.Title = "Title";
 ```
 
-### مثال على شفرة المصدر للصور باستخدام Aspose.Words for .NET
+### Exemple de code source pour les images avec Aspose.Words pour .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilisez un générateur de document pour ajouter du contenu au document.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// إدراج صورة.
+	// Insérer une image.
 	Shape shape = new Shape(builder.Document, ShapeType.Image);
 	shape.WrapType = WrapType.Inline;
 	shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
@@ -51,5 +51,5 @@ shape.ImageData.Title = "Title";
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الصور مع Aspose.Words for .NET.
+Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité d'images avec Aspose.Words pour .NET.
 

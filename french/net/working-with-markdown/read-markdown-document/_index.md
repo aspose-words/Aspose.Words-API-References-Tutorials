@@ -1,49 +1,49 @@
 ---
-title: اقرأ مستند Markdown
-linktitle: اقرأ مستند Markdown
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية قراءة مستند تخفيض السعر باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Lire le document Markdown
+linktitle: Lire le document Markdown
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à lire un document Markdown avec le guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-markdown/read-markdown-document/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية قراءة مستند Markdown باستخدام Aspose.Words for .NET Markdown هي لغة ترميز خفيفة الوزن تُستخدم لتنسيق نص عادي.
+Dans cet exemple, nous vous expliquerons comment lire un document Markdown à l'aide d'Aspose.Words pour .NET Markdown est un langage de balisage léger utilisé pour formater du texte brut.
 
-## الخطوة 1: قراءة مستند Markdown
+## Étape 1 : Lecture du document Markdown
 
- أولاً ، سنستخدم ملف`Document` فئة لقراءة مستند Markdown. نحتاج إلى تحديد مسار ملف Markdown لقراءته.
+ Dans un premier temps, nous utiliserons le`Document` class pour lire le document Markdown. Nous devons spécifier le chemin du fichier Markdown à lire.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Quotes.md");
 ```
 
-## الخطوة 2: إزالة تنسيق الرأس
+## Étape 2 : Supprimer la mise en forme de l'en-tête
 
-يمكننا إزالة التنسيق من العنوان في الفقرة الأخيرة من المستند. في هذا المثال ، نقوم بتعيين نمط "اقتباس" للفقرة.
+Nous pouvons supprimer la mise en forme de l'en-tête dans le dernier paragraphe du document. Dans cet exemple, nous attribuons le style "Citation" au paragraphe.
 
 ```csharp
 Paragraph paragraph = doc.FirstSection.Body.LastParagraph;
 paragraph.ParagraphFormat.Style = doc.Styles["Quote"];
 ```
 
-## الخطوة 3: حفظ المستند
+## Étape 3 : Enregistrer le document
 
-أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب.
+Enfin, nous pouvons enregistrer le document dans le format souhaité.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 ```
 
-### مثال على شفرة المصدر لقراءة مستند Markdown مع Aspose.Words for .NET
+### Exemple de code source pour lire un document Markdown avec Aspose.Words pour .NET
 
 
 ```csharp
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Quotes.md");
 
-	// دعنا نزيل تنسيق العنوان من عرض الأسعار في الفقرة الأخيرة.
+	// Supprimons la mise en forme du titre d'un devis dans le tout dernier paragraphe.
 	Paragraph paragraph = doc.FirstSection.Body.LastParagraph;
 	paragraph.ParagraphFormat.Style = doc.Styles["Quote"];
 
@@ -51,5 +51,5 @@ doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية قراءة مستند Markdown باستخدام Aspose.Words for .NET.
+Félicitation ! Vous avez maintenant appris à lire un document Markdown avec Aspose.Words pour .NET.
 

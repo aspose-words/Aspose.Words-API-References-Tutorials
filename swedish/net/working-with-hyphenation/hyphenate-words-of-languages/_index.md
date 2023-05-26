@@ -1,59 +1,59 @@
 ---
-title: وصل كلمات اللغات
-linktitle: وصل كلمات اللغات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Avstava ord av språk
+linktitle: Avstava ord av språk
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du avstavar ord på olika språk i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 
-في هذا البرنامج التعليمي المفصل خطوة بخطوة ، سنوجهك حول كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+denna steg-för-steg handledning kommer vi att guida dig om hur du avstavar ord på olika språk i Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
-## الخطوة 1: تهيئة كائن المستند
+## Steg 1: Initiera dokumentobjektet
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق تحديد المسار إلى المستند المصدر الذي يحتوي على نص بلغات مختلفة:
+ Initiera först`Document` objekt genom att ange sökvägen till ditt källdokument som innehåller text på olika språk:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## الخطوة 2: حفظ قواميس الواصلة
+## Steg 2: Spara avstavningsordböcker
 
-بعد ذلك ، احفظ قواميس الواصلة للغات المختلفة التي تريد معالجتها. في هذا المثال ، نسجل قواميس للغة الإنجليزية الأمريكية والألمانية السويسرية:
+Spara sedan avstavningsordböckerna för de olika språken du vill bearbeta. I det här exemplet registrerar vi ordböcker för amerikansk engelska och schweizertyska:
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
 Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 ```
 
-تأكد من أن لديك ملفات القاموس المناسبة في دليل البيانات الخاص بك.
+Se till att du har rätt ordboksfiler i din datakatalog.
 
-## الخطوة 3: معالجة الكلمات عن طريق الواصلة
+## Steg 3: Bearbeta ord genom avstavning
 
- يمكنك الآن استخدام ميزات الواصلة لمعالجة الكلمات بلغات مختلفة. يمكنك استخدام طرق مختلفة لـ`Document` أو`DocumentBuilder`حسب احتياجاتك الخاصة.
+ Nu kan du använda avstavningsfunktioner för att bearbeta ord på olika språk. Du kan använda olika metoder`Document` eller`DocumentBuilder`beroende på dina specifika behov.
 
 ```csharp
-// مثال: استخدام أسلوب الواصلة في DocumentBuilder
+// Exempel: Använda avstavningsmetoden i DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Write("Example of text to hyphenate");
 builder.InsertHyphenation();
 ```
 
-## الخطوة 4: احفظ المستند
+## Steg 4: Spara dokumentet
 
-أخيرًا ، احفظ المستند المعدل:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-لذا ! لقد نجحت في معالجة الكلمات عن طريق الواصلة بلغات مختلفة في مستند Word باستخدام Aspose.Words for .NET.
+Så ! Du har framgångsrikt bearbetat ord genom att avstava dem på olika språk i ett Word-dokument med Aspose.Words för .NET.
 
-### عينة من التعليمات البرمجية المصدر لوصل الكلمات باستخدام Aspose.Words for .NET
+### Exempel på källkod för ordavstavning med Aspose.Words för .NET
 
 	```csharp
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,4 +65,4 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 	doc.Save(dataDir + "TreatmentByCesure.pdf");
 	```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Använd gärna den här koden i dina egna projekt och modifiera den för att passa dina specifika behov.

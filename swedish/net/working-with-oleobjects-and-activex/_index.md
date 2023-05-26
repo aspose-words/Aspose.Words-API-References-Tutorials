@@ -1,22 +1,22 @@
 ---
-title: العمل مع OleObjects و ActiveX
-linktitle: العمل مع OleObjects و ActiveX
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية إدراج كائن Ole مع حزمة Ole وبدونها ، وكائن Ole كرمز ، وقراءة خصائص Active XControl باستخدام Aspose.Words for .NET.
+title: Arbeta med OleObjects och ActiveX
+linktitle: Arbeta med OleObjects och ActiveX
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar innehåller hur du infogar Ole Object med och utan Ole Package, Ole Object som ikon och läser Active XControl Properties med Aspose.Words för .NET.
 type: docs
 weight: 1080
 url: /sv/net/working-with-oleobjects-and-activex/
 ---
 
-ترشدك برامج Aspose.Words for .NET التعليمية حول العمل مع كائنات OLE و ActiveX إلى العديد من الميزات والتقنيات لمعالجة كائنات OLE و ActiveX بشكل فعال في مستندات Word الخاصة بك. في هذه البرامج التعليمية ، ستتعلم كيفية إدراج كائنات OLE و ActiveX وسحبها وتحديثها وحذفها ، مثل المخططات وجداول البيانات وعناصر تحكم ActiveX ، في مستندات Word الخاصة بك. ستتعلم أيضًا كيفية تخصيص مظهر وسلوك هذه الكائنات ، وكذلك كيفية التعامل مع الأخطاء والاستثناءات المتعلقة بكائنات OLE و ActiveX.
+Aspose.Words för .NET-handledningarna om att arbeta med OLE- och ActiveX-objekt leder dig genom de olika funktionerna och teknikerna för att effektivt manipulera OLE- och ActiveX-objekt i dina Word-dokument. I dessa självstudiekurser får du lära dig hur du infogar, checkar ut, uppdaterar och tar bort OLE- och ActiveX-objekt, såsom diagram, kalkylblad och ActiveX-kontroller, i dina Word-dokument. Du kommer också att lära dig hur du anpassar utseendet och beteendet hos dessa objekt, samt hur du hanterar fel och undantag relaterade till OLE- och ActiveX-objekt.
 
-تمنحك هذه البرامج التعليمية أسلوبًا عمليًا تدريجيًا للعمل مع كائنات OLE و ActiveX في Aspose.Words for .NET. سوف تتعلم كيفية التعامل مع هذه الكائنات باستخدام الفئات والطرق المختلفة التي توفرها مكتبة Aspose.Words. ستساعدك أمثلة الكود الواضحة والمعلقة على فهم المفاهيم المقدمة وممارستها. مع هذه المعرفة ، ستتمكن من استغلال وظائف كائنات OLE و ActiveX بشكل كامل في مستندات Word الخاصة بك ، وإضافة التفاعل والثراء البصري إليها.
+Dessa handledningar ger dig en praktisk, steg-för-steg-strategi för att arbeta med OLE- och ActiveX-objekt i Aspose.Words för .NET. Du kommer att lära dig hur du manipulerar dessa objekt med de olika klasserna och metoderna som tillhandahålls av Aspose.Words-biblioteket. De tydliga och kommenterade kodexemplen hjälper dig att förstå och öva på de presenterade begreppen. Med denna kunskap kommer du att fullt ut kunna utnyttja funktionaliteten hos OLE- och ActiveX-objekt i dina Word-dokument, och lägga till interaktivitet och visuell rikedom till dem.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [إدراج كائن Ole](./insert-ole-object/) | تعرف على كيفية إدراج كائن OLE في مستند باستخدام Aspose.Words for .NET. |
-| [قم بإدراج كائن Ole مع حزمة Ole](./insert-ole-object-with-ole-package/) | تعرف على كيفية إدراج كائن OLE مع حزمة OLE في مستند باستخدام Aspose.Words for .NET. |
-| [إدراج كائن Ole كرمز](./insert-ole-object-as-icon/) | تعرف على كيفية إدراج كائن OLE كرمز باستخدام Aspose.Words for .NET. |
-| [قم بإدراج كائن Ole كرمز باستخدام الدفق](./insert-ole-object-as-icon-using-stream/) | تعرف على كيفية إدراج كائن OLE كرمز باستخدام دفق باستخدام Aspose.Words for .NET. |
-| [قراءة خصائص Active XControl](./read-active-xcontrol-properties/) | اقرأ خصائص عناصر تحكم ActiveX في مستند Word باستخدام Aspose.Words for .NET. |
+| [Infoga Ole Object](./insert-ole-object/) | Lär dig hur du infogar ett OLE-objekt i ett dokument med Aspose.Words för .NET. |
+| [Infoga Ole-objekt med Ole-paket](./insert-ole-object-with-ole-package/) | Lär dig hur du infogar ett OLE-objekt med ett OLE-paket i ett dokument med Aspose.Words för .NET. |
+| [Infoga Ole-objekt som ikon](./insert-ole-object-as-icon/) | Lär dig hur du infogar ett OLE-objekt som en ikon med Aspose.Words för .NET. |
+| [Infoga Ole-objekt som ikon med hjälp av Stream](./insert-ole-object-as-icon-using-stream/) | Lär dig hur du infogar ett OLE-objekt som en ikon med hjälp av en ström med Aspose.Words för .NET. |
+| [Läs Active XControl-egenskaper](./read-active-xcontrol-properties/) | Läs egenskaperna för ActiveX-kontroller i ett Word-dokument med Aspose.Words för .NET. |

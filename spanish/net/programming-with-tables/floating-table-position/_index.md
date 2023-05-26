@@ -1,60 +1,60 @@
 ---
-title: موقف الجدول العائم
-linktitle: موقف الجدول العائم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وضع جدول في موضع متحرك في مستند Word باستخدام Aspose.Words for .NET.
+title: Posición de la mesa flotante
+linktitle: Posición de la mesa flotante
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a colocar una tabla en una posición flotante en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/floating-table-position/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words لـ .NET لوضع جدول في موضع عائم في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من التحكم في موضع ومحاذاة الجداول العائمة في مستندات Word الخاصة بك برمجيًا.
+En este tutorial, vamos a aprender a usar Aspose.Words para .NET para colocar una tabla en una posición flotante en un documento de Word. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá controlar la posición y la alineación de las tablas flotantes en sus documentos de Word mediante programación.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Paso 1: Configuración del proyecto
+1. Inicie Visual Studio y cree un nuevo proyecto de C#.
+2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
-## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+## Paso 2: Cargar el documento y acceder a la tabla
+Para empezar a trabajar con la tabla, necesitamos cargar el documento que la contiene y acceder a ella. Sigue estos pasos:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Cargue el documento
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 
-// الوصول إلى المصفوفة
+// Acceso a la matriz
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات. تأكد أيضًا من احتواء المستند على جدول سيتم وضعه في موضع عائم.
+Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos. Además, asegúrese de que el documento contenga una tabla que se colocará en una posición flotante.
 
-## الخطوة 3: وضع اللوح العائم
-بعد ذلك ، سنضع الجدول في موضع عائم باستخدام الخصائص التي توفرها Aspose.Words for .NET. استخدم الكود التالي:
+## Paso 3: Posicionamiento de la tabla flotante
+A continuación, colocaremos la tabla en una posición flotante utilizando las propiedades proporcionadas por Aspose.Words para .NET. Usa el siguiente código:
 
 ```csharp
-// وضع الجدول العائم
+// Colocación de la mesa flotante
 table. AbsoluteHorizontalDistance = 10;
 table. RelativeVerticalAlignment = VerticalAlignment. Center;
 ```
 
- هنا نستخدم ملف`AbsoluteHorizontalDistance` خاصية لتعيين المسافة الأفقية المطلقة للجدول من الحافة اليسرى للصفحة. نستخدم أيضًا ملف`RelativeVerticalAlignment` لتعيين المحاذاة الرأسية النسبية للجدول للمحتوى المحيط.
+ Aquí usamos el`AbsoluteHorizontalDistance` propiedad para establecer la distancia horizontal absoluta de la tabla desde el borde izquierdo de la página. También usamos el`RelativeVerticalAlignment` propiedad para establecer la alineación vertical relativa de la tabla con el contenido circundante.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع وضع الجدول في موضع عائم. استخدم الكود التالي:
+## Paso 4: Guardar el documento modificado
+Finalmente, debemos guardar el documento modificado con la tabla colocada en una posición flotante. Usa el siguiente código:
 
 ```csharp
-// احفظ المستند المعدل
+// Guardar el documento modificado
 doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Asegúrese de especificar la ruta y el nombre de archivo correctos para el documento de salida.
 
-### نموذج التعليمات البرمجية المصدر لـ Floating Table Position باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Posición de tabla flotante usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");
@@ -64,5 +64,5 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 	doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية وضع جدول في موضع عائم في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك التحكم في موضع ومحاذاة الجداول العائمة في مستندات Word الخاصة بك برمجيًا.
+## Conclusión
+En este tutorial, aprendimos cómo colocar una tabla en una posición flotante en un documento de Word usando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# provisto, puede controlar la posición y la alineación de las tablas flotantes en sus documentos de Word mediante programación.

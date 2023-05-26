@@ -1,31 +1,31 @@
 ---
-title: حدد الخط الافتراضي عند التقديم
-linktitle: حدد الخط الافتراضي عند التقديم
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحديد الخط الافتراضي عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Especificar fuente predeterminada al renderizar
+linktitle: Especificar fuente predeterminada al renderizar
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para especificar la fuente predeterminada al representar un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/specify-default-font-when-rendering/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتحديد الخط الافتراضي عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد خط افتراضي لاستخدامه عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para especificar la fuente predeterminada al representar un documento con Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo especificar una fuente predeterminada para usar al renderizar sus documentos usando Aspose.Words para .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند للعرض
- بعد ذلك ، تحتاج إلى تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Paso 2: Cargue el documento para renderizar
+ A continuación, debe cargar el documento para renderizar utilizando el`Document` clase. Asegúrese de especificar la ruta correcta del documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تعيين الخط الافتراضي
- يمكنك الآن تحديد الخط الافتراضي لاستخدامه عند التقديم عن طريق إنشاء مثيل لملف`FontSettings` الطبقة ووضع`DefaultFontName` ممتلكات`DefaultFontSubstitution` يعترض على`DefaultFontSubstitution` هدف`SubstitutionSettings` ل`FontSettings`.
+## Paso 3: Establecer fuente predeterminada
+ Ahora puede especificar la fuente predeterminada que se usará al renderizar creando una instancia de la`FontSettings` clase y establecer el`DefaultFontName` propiedad de la`DefaultFontSubstitution` objetar a la`DefaultFontSubstitution` objeto`SubstitutionSettings` de`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -33,27 +33,27 @@ fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Ari
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 4: احفظ المستند المقدم
- أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## Paso 4: Guarde el documento renderizado
+ Finalmente, puede guardar el documento renderizado en un archivo usando el`Save()` metodo de la`Document` clase. Asegúrese de especificar la ruta y el nombre de archivo correctos.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Specify Default Font عند العرض باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Especificar fuente predeterminada al renderizar usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Rendering.docx");
 	FontSettings fontSettings = new FontSettings();
-	// إذا كان الخط الافتراضي المحدد هنا لا يمكن العثور عليه أثناء التقديم ، فحينئذٍ
-	// يتم استخدام أقرب خط على الجهاز بدلاً من ذلك.
+	// Si la fuente predeterminada definida aquí no se puede encontrar durante el renderizado, entonces
+	// en su lugar, se usa la fuente más cercana en la máquina.
 	fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
 	doc.FontSettings = fontSettings;
 	doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تحديد الخط الافتراضي عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تعيين خط افتراضي لاستخدامه عند عرض المستندات الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في عرض مستنداتك وتخصيصه وفقًا لاحتياجاتك الخاصة.
+## Conclusión
+En este tutorial, aprendimos a especificar la fuente predeterminada al representar un documento con Aspose.Words para .NET. Al seguir esta guía paso a paso, puede configurar fácilmente una fuente predeterminada para usar al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para trabajar con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar la representación de sus documentos según sus necesidades específicas.

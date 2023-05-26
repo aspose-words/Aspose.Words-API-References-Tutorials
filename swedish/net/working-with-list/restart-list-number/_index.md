@@ -1,19 +1,19 @@
 ---
-title: أعد تشغيل رقم القائمة
-linktitle: أعد تشغيل رقم القائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إعادة تعيين رقم قائمة في مستند Word باستخدام Aspose.Words for .NET.
+title: Starta om listnummer
+linktitle: Starta om listnummer
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du återställer numret på en lista i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-list/restart-list-number/
 ---
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية إعادة تعيين رقم قائمة في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+denna steg-för-steg handledning kommer vi att visa dig hur du återställer numret på en lista i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
-## الخطوة 1: إنشاء مُنشئ المستند والمستند
+## Steg 1: Skapa dokument- och dokumentgeneratorn
 
-أولاً ، قم بإنشاء مستند جديد ومولد المستندات المرتبط به:
+Skapa först ett nytt dokument och en tillhörande dokumentgenerator:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +21,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: إنشاء وتخصيص القائمة الأولى
+## Steg 2: Skapa och anpassa den första listan
 
-بعد ذلك ، قم بإنشاء قائمة بناءً على قالب موجود ، ثم قم بتخصيص مستوياته:
+Skapa sedan en lista baserad på en befintlig mall och anpassa sedan dess nivåer:
 
 ```csharp
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
@@ -31,9 +31,9 @@ list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
 ```
 
-## الخطوة 3: إضافة عناصر إلى القائمة الأولى
+## Steg 3: Lägga till objekt till den första listan
 
-استخدم منشئ المستندات لإضافة عناصر إلى القائمة الأولى وإزالة أرقام القائمة:
+Använd dokumentbyggaren för att lägga till objekt till den första listan och ta bort listnummer:
 
 ```csharp
 builder.Writeln("List 1 starts below:");
@@ -43,20 +43,20 @@ builder. Writen("Element 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## الخطوة 4: إنشاء وتخصيص القائمة الثانية
+## Steg 4: Skapa och anpassa den andra listan
 
-لإعادة استخدام القائمة الأولى عن طريق إعادة تعيين الرقم ، قم بإنشاء نسخة من تخطيط القائمة الأصلي:
+För att återanvända den första listan genom att återställa numret, skapa en kopia av den ursprungliga listlayouten:
 
 ```csharp
 List list2 = doc.Lists.AddCopy(list1);
 list2.ListLevels[0].StartAt = 10;
 ```
 
-يمكنك أيضًا إجراء تغييرات إضافية على القائمة الثانية إذا لزم الأمر.
+Du kan också göra ytterligare ändringar i den andra listan om det behövs.
 
-## الخطوة 5: إضافة عناصر إلى القائمة الثانية
+## Steg 5: Lägga till objekt till den andra listan
 
-استخدم منشئ المستندات مرة أخرى لإضافة عناصر إلى القائمة الثانية وإزالة أرقام القائمة:
+Använd dokumentbyggaren igen för att lägga till objekt till den andra listan och ta bort listnumren:
 
 ```csharp
 builder.Writeln("List 2 starts below:");
@@ -66,24 +66,24 @@ builder. Writen("Element 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## الخطوة 6: احفظ المستند المعدل
+## Steg 6: Spara det ändrade dokumentet
 
-أخيرًا ، احفظ المستند المعدل:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 builder.Document.Save(dataDir + "ResetListNumber.docx");
 ```
 
-لذا ! لقد نجحت في إعادة تعيين رقم قائمة في مستند Word باستخدام Aspose.Words for .NET.
+Så ! Du har framgångsrikt återställt numret på en lista i ett Word-dokument med Aspose.Words för .NET.
 
-### نموذج التعليمات البرمجية المصدر لإعادة تعيين رقم القائمة
+### Exempel på källkod för återställning av listnummer
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة تستند إلى قالب.
+// Skapa en lista baserad på en mall.
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
 list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
@@ -94,10 +94,10 @@ builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
 
-// لإعادة استخدام القائمة الأولى ، نحتاج إلى إعادة تشغيل الترقيم عن طريق إنشاء نسخة من تنسيق القائمة الأصلي.
+// För att återanvända den första listan måste vi starta om numreringen genom att skapa en kopia av den ursprungliga listformateringen.
 List list2 = doc.Lists.AddCopy(list1);
 
-// يمكننا تعديل القائمة الجديدة بأي طريقة ، بما في ذلك تعيين رقم بدء جديد.
+// Vi kan ändra den nya listan på vilket sätt som helst, inklusive att ställa in ett nytt startnummer.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");

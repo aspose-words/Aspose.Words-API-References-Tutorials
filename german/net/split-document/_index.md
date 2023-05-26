@@ -1,20 +1,20 @@
 ---
-title: انقسام المستند
-linktitle: انقسام المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على العناوين html ، والأقسام html ، والأقسام ، والصفحة بصفحة ، ودمج المستندات ، وبحسب نطاق الصفحات
+title: Dokument teilen
+linktitle: Dokument teilen
+second_title: Aspose.Words für .NET API-Referenz
+description: Tutorials enthalten HTML nach Überschriften, HTML nach Abschnitten, nach Abschnitten, Seite für Seite, Zusammenführungsdokumente und nach Seitenbereich
 type: docs
 weight: 1450
 url: /de/net/split-document/
 ---
-يُعد Split Document مصدرًا شاملاً يشرح كيفية تقسيم المستند إلى أجزاء منفصلة باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية شرحًا تفصيليًا خطوة بخطوة ، وأمثلة كاملة لشفرة المصدر ، ونصائح عملية لتقسيم مستند وفقًا لشروط مختلفة ، مثل عدد الصفحات والأقسام والفقرات وما إلى ذلك. هذا المورد ضروري للمطورين الذين يرغبون في أتمتة عملية تقسيم المستندات الكبيرة وتبسيط إدارة الأجزاء الفردية. باستخدام Aspose.Words for .NET ، يمكنك بسهولة استخراج أجزاء مختلفة من المستند وحفظها ومعالجتها ، مما يؤدي إلى تحسين كفاءة ومرونة سير عمل معالجة المستندات بشكل كبير.
+Split Document ist eine umfassende Ressource, die erklärt, wie man ein Dokument mithilfe der Aspose.Words for .NET-Bibliothek in separate Teile aufteilt. Die Tutorials bieten detaillierte Schritt-für-Schritt-Erklärungen, vollständige Quellcode-Beispiele und praktische Tipps zum Aufteilen eines Dokuments nach verschiedenen Bedingungen, wie z. B. Anzahl der Seiten, Abschnitte, Absätze usw. Diese Ressource ist für Entwickler, die automatisieren möchten, unerlässlich der Prozess der Aufteilung großer Dokumente und die Vereinfachung der Verwaltung einzelner Teile. Mit Aspose.Words für .NET können Sie verschiedene Teile eines Dokuments einfach extrahieren, speichern und bearbeiten und so die Effizienz und Flexibilität Ihres Dokumentenverarbeitungsworkflows erheblich verbessern.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [حسب العناوين Html](./by-headings-html/) | دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # لميزة By Heading HTML في Aspose.Words for .NET |
-| [حسب أقسام Html](./by-sections-html/) | تعرف على كيفية تقسيم مستند Word إلى أقسام Html باستخدام Aspose.Words for .NET مع مثال رمز كامل. |
-| [حسب الأقسام](./by-sections/) | تعرف على كيفية تقسيم مستند Word إلى أقسام منفصلة باستخدام Aspose.Words for .NET مع مثال رمز كامل. |
-| [صفحة بالصفحة](./page-by-page/) | دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # لميزة Aspose.Words صفحة بصفحة لـ .NET |
-| [دمج المستندات](./merge-documents/) | دليل خطوة بخطوة لشرح كود مصدر C # لميزة دمج المستندات في Aspose.Words for .NET |
-| [حسب نطاق الصفحة](./by-page-range/) | استخرج بسهولة حسب نطاق الصفحات من مستند Word باستخدام Aspose.Words for .NET دليل خطوة بخطوة. |
+| [Nach Überschriften HTML](./by-headings-html/) | Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der By Heading HTML-Funktion von Aspose.Words für .NET |
+| [Nach Abschnitten HTML](./by-sections-html/) | Erfahren Sie anhand eines vollständigen Codebeispiels, wie Sie ein Word-Dokument mit Aspose.Words für .NET in HTML-Abschnitte aufteilen. |
+| [Nach Abschnitten](./by-sections/) | Erfahren Sie anhand eines vollständigen Codebeispiels, wie Sie mit Aspose.Words für .NET ein Word-Dokument in separate Abschnitte aufteilen. |
+| [Seite für Seite](./page-by-page/) | Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Aspose.Words Page by Page-Funktion für .NET |
+| [Dokumente zusammenführen](./merge-documents/) | Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Funktion „Dokumente zusammenführen“ von Aspose.Words für .NET |
+| [Nach Seitenbereich](./by-page-range/) | Einfaches Extrahieren nach Seitenbereich aus einem Word-Dokument mit Aspose.Words für .NET. Schritt-für-Schritt-Anleitung. |

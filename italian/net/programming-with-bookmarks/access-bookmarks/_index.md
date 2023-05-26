@@ -1,62 +1,62 @@
 ---
-title: الوصول إلى الإشارات المرجعية
-linktitle: الوصول إلى الإشارات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الوصول إلى الإشارات المرجعية في مستند Word باستخدام Aspose.Words for .NET.
+title: Accedi ai segnalibri
+linktitle: Accedi ai segnalibri
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come accedere ai segnalibri in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/access-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إشارات مرجعية في Aspose.Words for .NET library. توفر هذه الميزة الوصول إلى إشارات مرجعية محددة في مستند Word.
+In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Access Bookmarks nella libreria Aspose.Words per .NET. Questa funzione fornisce l'accesso a segnalibri specifici in un documento di Word.
 
-## المتطلبات الأساسية
+## Prerequisiti
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conoscenza base del linguaggio C#.
+- Ambiente di sviluppo .NET con libreria Aspose.Words installata.
 
-## الخطوة 1: تحميل المستند
+## Passaggio 1: caricamento del documento
 
- قبل أن نبدأ في الوصول إلى الإشارات المرجعية ، نحتاج إلى تحميل مستند Word باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` كائن يحدد مسار ملف المستند:
+ Prima di iniziare ad accedere ai segnalibri, dobbiamo caricare un documento Word utilizzando Aspose.Words per .NET. Questo può essere fatto istanziando a`Document` oggetto che specifica il percorso del file del documento:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## الخطوة 2: الوصول إلى الإشارات المرجعية
+## Passaggio 2: accesso ai segnalibri
 
-بمجرد تحميل المستند ، يمكننا الوصول إلى الإشارات المرجعية في المستند. هناك طريقتان للوصول إلى الإشارات المرجعية: عن طريق الفهرس والاسم.
+Una volta caricato il documento, possiamo accedere ai segnalibri nel documento. Esistono due modi per accedere ai segnalibri: per indice e per nome.
 
-- الوصول عن طريق الفهرس: في مثالنا ، نستخدم الفهرس 0 للوصول إلى الإشارة المرجعية الأولى للمستند:
+- Accesso per indice: nel nostro esempio, utilizziamo l'indice 0 per accedere al primo segnalibro del documento:
 
 ```csharp
 Bookmark bookmark1 = doc.Range.Bookmarks[0];
 ```
 
-- الوصول بالاسم: في مثالنا ، نستخدم الاسم "MyBookmark3" للوصول إلى إشارة مرجعية معينة في المستند:
+- Accesso per nome: nel nostro esempio, utilizziamo il nome "MyBookmark3" per accedere a un segnalibro specifico nel documento:
 
 ```csharp
 Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
 ```
 
-### مثال على شفرة المصدر للوصول إلى الإشارات المرجعية باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per i segnalibri di accesso utilizzando Aspose.Words per .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح الوصول إلى الإشارات المرجعية باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente di esempio completo per dimostrare l'accesso ai segnalibri utilizzando Aspose.Words per .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 	
-	// حسب الفهرس:
+	// Per indice:
 	Bookmark bookmark1 = doc.Range.Bookmarks[0];
-	// بالاسم:
+	// Per nome:
 	Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
    
 ```
 
-## خاتمة
+## Conclusione
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة Access Bookmarks في Aspose.Words for .NET. اتبعنا دليلًا تفصيليًا لتحميل مستند والوصول إلى الإشارات المرجعية باستخدام الفهرس والاسم.
+In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzionalità di accesso ai segnalibri di Aspose.Words per .NET. Abbiamo seguito una guida passo passo per caricare un documento e accedere ai segnalibri utilizzando indice e nome.

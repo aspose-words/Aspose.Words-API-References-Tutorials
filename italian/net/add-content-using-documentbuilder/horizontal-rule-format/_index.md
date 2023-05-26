@@ -1,36 +1,36 @@
 ---
-title: تنسيق القاعدة الأفقية
-linktitle: تنسيق القاعدة الأفقية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تنسيق القواعد الأفقية في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Formato riga orizzontale
+linktitle: Formato riga orizzontale
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come formattare le regole orizzontali nei documenti di Word utilizzando Aspose.Words per .NET. Guida passo dopo passo.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/horizontal-rule-format/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية تنسيق قاعدة أفقية في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على تخصيص المحاذاة والعرض والارتفاع واللون والخصائص الأخرى للقاعدة الأفقية.
+In questo esempio completo, imparerai come formattare una regola orizzontale in un documento di Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo i frammenti di codice C# necessari. Alla fine di questa guida, sarai in grado di personalizzare l'allineamento, la larghezza, l'altezza, il colore e altre proprietà di un filetto orizzontale.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti prerequisiti:
+- Aspose.Words per la libreria .NET installata sul tuo sistema.
 
-## الخطوة 1: إنشاء DocumentBuilder وإدراج قاعدة أفقية
-للبدء ، أنشئ كائن DocumentBuilder واستخدم طريقة InsertHorizontalRule لإدراج قاعدة أفقية:
+## Passaggio 1: creare un DocumentBuilder e inserire una regola orizzontale
+Per iniziare, crea un oggetto DocumentBuilder e utilizza il metodo InsertHorizontalRule per inserire una regola orizzontale:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 Shape shape = builder.InsertHorizontalRule();
 ```
 
-## الخطوة 2: الوصول إلى تنسيق القاعدة الأفقية
-بعد ذلك ، قم بالوصول إلى الخاصية HorizontalRuleFormat لكائن الشكل لاسترداد خيارات التنسيق:
+## Passaggio 2: accedere al formato della regola orizzontale
+Successivamente, accedi alla proprietà HorizontalRuleFormat dell'oggetto Shape per recuperare le opzioni di formattazione:
 
 ```csharp
 HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
 ```
 
-## الخطوة 3: تخصيص خيارات التنسيق
-الآن ، يمكنك تخصيص خيارات تنسيق متنوعة للقاعدة الأفقية. على سبيل المثال ، يمكنك ضبط المحاذاة والعرض والارتفاع واللون والتظليل:
+## Passaggio 3: personalizzare le opzioni di formattazione
+Ora puoi personalizzare varie opzioni di formattazione per la regola orizzontale. Ad esempio, puoi regolare l'allineamento, la larghezza, l'altezza, il colore e l'ombreggiatura:
 
 ```csharp
 horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
@@ -40,15 +40,15 @@ horizontalRuleFormat.Color = Color.Blue;
 horizontalRuleFormat.NoShade = true;
 ```
 
-## الخطوة 4: احفظ المستند
-بعد تنسيق القاعدة الأفقية ، احفظ المستند في ملف باستخدام طريقة Save للكائن Document:
+## Passaggio 4: salvare il documento
+Dopo aver formattato il filetto orizzontale, salvare il documento in un file utilizzando il metodo Save dell'oggetto Document:
 
 ```csharp
 builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
 ```
 
-### مثال على كود المصدر لتنسيق القاعدة الأفقية باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لتنسيق قاعدة أفقية باستخدام Aspose.Words for .NET:
+### Esempio di codice sorgente per il formato della regola orizzontale utilizzando Aspose.Words per .NET
+Ecco il codice sorgente completo per la formattazione di una regola orizzontale utilizzando Aspose.Words per .NET:
 
 ```csharp
 
@@ -67,9 +67,9 @@ builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalR
 			
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Ricorda di adattare il codice in base alle tue esigenze specifiche e di migliorarlo con funzionalità aggiuntive secondo necessità.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تنسيق قاعدة أفقية في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تخصيص مظهر القواعد الأفقية لتحسين التخطيط المرئي للمستند.
+## Conclusione
+Congratulazioni! Hai imparato con successo come formattare una regola orizzontale in un documento di Word utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata e utilizzando il codice sorgente fornito, ora puoi personalizzare l'aspetto delle righe orizzontali per migliorare il layout visivo del tuo documento.
 
-جرب خيارات تنسيق مختلفة لتحقيق النمط والتأثير المرغوب فيه للقواعد الأفقية.
+Sperimenta con diverse opzioni di formattazione per ottenere lo stile e l'effetto desiderati per i tuoi filetti orizzontali.

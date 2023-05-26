@@ -1,45 +1,45 @@
 ---
-title: تجاهل مربعات النص
-linktitle: تجاهل مربعات النص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند أثناء تجاهل تنسيق مربع النص باستخدام Aspose.Words for .NET.
+title: Ignorera textrutor
+linktitle: Ignorera textrutor
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du lägger till ett dokument samtidigt som du ignorerar textruteformatering med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/ignore-text-boxes/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق مستند مع الحفاظ على تنسيق مربعات النص. يوضح كود المصدر المقدم كيفية إعداد خيارات تنسيق الاستيراد لتضمين مربعات النص أثناء عملية الإلحاق.
+Denna handledning förklarar hur man använder Aspose.Words för .NET för att lägga till ett dokument samtidigt som formateringen av textrutor bevaras. Den medföljande källkoden visar hur du ställer in importformatalternativen för att inkludera textrutor under bifogningsprocessen.
 
-## الخطوة 1: قم بإعداد المشروع
+## Steg 1: Konfigurera projektet
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Se till att du har följande förutsättningar:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från den officiella Aspose-webbplatsen eller använda NuGet-pakethanteraren för att installera den.
+- En dokumentkatalogsökväg där käll- och måldokumenten finns.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Steg 2: Öppna käll- och måldokumenten
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Öppna käll- och måldokumenten med hjälp av`Document` klass konstruktör. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إعداد خيارات تنسيق الاستيراد
+## Steg 3: Ställ in alternativ för importformat
 
- قم بإنشاء مثيل لـ`ImportFormatOptions` فئة وضبط`IgnoreTextBoxes` ملكية ل`false`. يضمن ذلك تضمين مربعات النص أثناء عملية الإلحاق مع الحفاظ على تنسيقها.
+ Skapa en instans av`ImportFormatOptions` klass och ställ in`IgnoreTextBoxes` egendom till`false`. Detta säkerställer att textrutorna inkluderas under bifogningsprocessen samtidigt som deras formatering bevaras.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 ```
 
-## الخطوة 4: إلحاق محتوى مربع نص
+## Steg 4: Lägg till innehåll i textrutan
 
- إنشاء`NodeImporter` كائن واستخدمه لاستيراد عقد مربع نص من المستند المصدر إلى المستند الوجهة. كرر خلال كل فقرة في المستند المصدر واستوردها إلى المستند الوجهة.
+ Skapa en`NodeImporter` objekt och använd det för att importera textboxnoder från källdokumentet till måldokumentet. Iterera igenom varje stycke i källdokumentet och importera det till måldokumentet.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -51,25 +51,25 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## الخطوة 5: احفظ المستند الوجهة
+## Steg 5: Spara måldokumentet
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند مع الحفاظ على تنسيق مربع النص باستخدام Aspose.Words for .NET.
+Detta slutför implementeringen av att lägga till ett dokument samtidigt som textruteformateringen bevaras med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لـ Ignore Text Boxes باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Ignorera textrutor med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//احتفظ بتنسيق مربعات النص المصدر عند الاستيراد.
+	//Behåll källtextrutornas formatering när du importerar.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

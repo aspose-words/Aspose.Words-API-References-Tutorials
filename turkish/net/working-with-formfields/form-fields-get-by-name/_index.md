@@ -1,61 +1,61 @@
 ---
-title: الحصول على حقول النموذج بالاسم
-linktitle: الحصول على حقول النموذج بالاسم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد وتعديل حقول النموذج بالاسم في مستندات Word باستخدام Aspose.Words for .NET.
+title: Form Alanları Ada Göre Alınır
+linktitle: Form Alanları Ada Göre Alınır
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerinde form alanlarını ada göre nasıl alacağınızı ve değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-formfields/form-fields-get-by-name/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لاسترداد حقول النماذج بالاسم من مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Bu adım adım eğitimde, bir Word belgesinden form alanlarını ada göre almak için Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
 
-## الخطوة 1: تهيئة كائن المستند
+## 1. Adım: Belge Nesnesini Başlatma
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق توفير المسار إلى المستند المصدر الذي يحتوي على حقول النموذج:
+ İlk olarak,`Document` form alanlarını içeren kaynak belgenizin yolunu sağlayarak itiraz edin:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## الخطوة 2: استرجاع حقول النموذج
+## 2. Adım: Form Alanlarını Alma
 
- بعد ذلك ، قم بالوصول إلى`FormFields` ممتلكات`Range` كائن في المستند لاسترداد جميع حقول النموذج:
+ Ardından, şuraya erişin:`FormFields` mülkiyeti`Range` tüm form alanlarını almak için belgedeki nesne:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;
 ```
 
-يمكنك استرداد حقول النموذج إما بالفهرس أو بالاسم. في هذا المثال ، نسترجع حقل نموذج باستخدام كلتا الطريقتين:
+Form alanlarını dizine veya ada göre alabilirsiniz. Bu örnekte, her iki yöntemi de kullanarak bir form alanı alıyoruz:
 
 ```csharp
-FormField formField1 = documentFormFields[3]; // استرجاع الفهرس
-FormField formField2 = documentFormFields["Text2"]; // استرجاع بالاسم
+FormField formField1 = documentFormFields[3]; // Dizine göre alma
+FormField formField2 = documentFormFields["Text2"]; // İsme göre alma
 ```
 
-## الخطوة 3: تعديل خصائص حقل النموذج
+## 3. Adım: Form Alanı Özelliklerini Değiştirme
 
- بمجرد استرداد حقول النموذج ، يمكنك تعديل خصائصها حسب الحاجة. في هذا المثال ، نقوم بتغيير حجم الخط من`formField1` إلى 20 ولون خط`formField2` إلى الأحمر:
+ Form alanlarını aldıktan sonra, özelliklerini gerektiği gibi değiştirebilirsiniz. Bu örnekte, yazı tipi boyutunu değiştiriyoruz.`formField1` 20'ye kadar ve yazı tipi rengi`formField2` kırmızıya:
 
 ```csharp
 formField1.Font.Size = 20;
 formField2.Font.Color = Color.Red;
 ```
 
-## الخطوة 4: حفظ المستند
+## 4. Adım: Belgeyi Kaydetme
 
-أخيرًا ، احفظ المستند المعدل:
+Son olarak, değiştirilen belgeyi kaydedin:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-هذا كل شيء! لقد نجحت في استرداد حقول النموذج بالاسم وتعديل خصائصها في مستند Word باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET kullanarak bir Word belgesinde form alanlarını ada göre başarıyla aldınız ve özelliklerini değiştirdiniz.
 
-### مثال على كود المصدر لحقول النموذج الحصول على حسب الاسم باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Form Fields Get By Name için örnek kaynak kodu
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
@@ -72,4 +72,4 @@ formField2.Font.Color = Color.Red;
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimlerinize göre değiştirin.

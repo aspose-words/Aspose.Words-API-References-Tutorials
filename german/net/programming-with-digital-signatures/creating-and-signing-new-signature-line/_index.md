@@ -1,18 +1,18 @@
 ---
-title: إنشاء وتوقيع خط توقيع جديد
-linktitle: إنشاء وتوقيع خط توقيع جديد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء سطر توقيع جديد والتوقيع عليه في مستند Word باستخدام Aspose.Words for .NET.
+title: Erstellen und Signieren einer neuen Signaturzeile
+linktitle: Erstellen und Signieren einer neuen Signaturzeile
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine neue Signaturzeile in einem Word-Dokument erstellen und signieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لاستخدام ميزة إنشاء سطر توقيع جديد وتوقيعه باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إدراج سطر توقيع في مستند Word ، وتعيين الخيارات المخصصة وتوقيع المستند. اتبع الخطوات التالية:
+In diesem Tutorial führen wir Sie durch die Schritte zur Verwendung der Funktion zum Erstellen und Signieren einer neuen Signaturzeile mit Aspose.Words für .NET. Mit dieser Funktion können Sie eine Signaturzeile in ein Word-Dokument einfügen, benutzerdefinierte Optionen festlegen und das Dokument signieren. Folgen Sie den unteren Schritten:
 
-## الخطوة 1: إنشاء المستند والمولد
+## Schritt 1: Dokument und Generator erstellen
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+Erstellen Sie zunächst eine Instanz der Document-Klasse und ein DocumentBuilder-Objekt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -20,27 +20,27 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إدخال سطر التوقيع
+## Schritt 2: Einfügen der Signaturzeile
 
-استخدم طريقة InsertSignatureLine () لكائن DocumentBuilder لإدراج سطر توقيع جديد في المستند:
+Verwenden Sie die Methode InsertSignatureLine() des DocumentBuilder-Objekts, um eine neue Signaturzeile in das Dokument einzufügen:
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
 ```
 
-## الخطوة 3: احفظ المستند
+## Schritt 3: Speichern Sie das Dokument
 
-احفظ المستند المعدل:
+Speichern Sie das geänderte Dokument:
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند.
+Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen zum Speichern des Dokuments angeben.
 
-## الخطوة 4: توقيع الوثيقة
+## Schritt 4: Unterschreiben des Dokuments
 
-لتوقيع الوثيقة ، تحتاج إلى تعيين خيارات التوقيع واستخدام فئة DigitalSignatureUtil:
+Um das Dokument zu signieren, müssen Sie die Signaturoptionen festlegen und die DigitalSignatureUtil-Klasse verwenden:
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -55,15 +55,15 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 	dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند وصورة خط التوقيع والمستند الموقع.
+Stellen Sie sicher, dass Sie die richtigen Pfade für das Dokument, das Signaturzeilenbild und das signierte Dokument angeben.
 
-### مثال على شفرة المصدر لإنشاء وتوقيع سطر توقيع جديد باستخدام Aspose.Words for .NET
+### Beispielquellcode zum Erstellen und Signieren einer neuen Signaturzeile mit Aspose.Words für .NET
 
-إليك شفرة المصدر الكاملة لإنشاء وتوقيع سطر توقيع جديد باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Quellcode zum Erstellen und Signieren einer neuen Signaturzeile mit Aspose.Words für .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -85,5 +85,5 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ```
 
-باتباع هذه الخطوات ، ستتمكن بسهولة من إنشاء وتوقيع سطر توقيع جديد في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Wenn Sie diese Schritte befolgen, können Sie mit Aspose.Words für .NET ganz einfach eine neue Signaturzeile in Ihrem Word-Dokument erstellen und signieren.
 

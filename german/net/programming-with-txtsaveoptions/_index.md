@@ -1,21 +1,21 @@
 ---
-title: البرمجة مع Txtsaveoptions
-linktitle: البرمجة مع Txtsaveoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إضافة علامات ثنائية الاتجاه ، واستخدام حرف جدولة لكل مستوى للمسافة البادئة للقائمة واستخدام حرف مسافة لكل مستوى للمسافة البادئة للقائمة
+title: Programmieren mit Txtsaveoptions
+linktitle: Programmieren mit Txtsaveoptions
+second_title: Aspose.Words für .NET API-Referenz
+description: Die Tutorials beinhalten das Hinzufügen von Bidi-Markierungen, die Verwendung von Tabulatorzeichen pro Ebene für die Listeneinrückung und die Verwendung von Leerzeichen pro Ebene für die Listeneinrückung
 type: docs
 weight: 1700
 url: /de/net/programming-with-txtsaveoptions/
 ---
-توجهك دروس Aspose.Words for .NET التعليمية عبر الميزات والاستخدامات المتنوعة للمكتبة في سياق معالجة مستندات Word. يركز أحد البرامج التعليمية على البرمجة باستخدام خيارات حفظ TXT ، والتي توضح لك كيفية إنشاء ملفات نصية من مستندات Word مع الحفاظ على تنسيق المحتوى وهيكله. ستتعلم كيفية استخدام الخيارات المتنوعة المتاحة لتخصيص تحويل المستندات إلى ملفات نصية ، مثل تحديد محدد العمود وإدارة المسافات البيضاء.
+Aspose.Words für .NET-Tutorials führen Sie durch die verschiedenen Funktionen und Verwendungsmöglichkeiten der Bibliothek im Zusammenhang mit der Bearbeitung von Word-Dokumenten. Eines der Tutorials konzentriert sich auf die Programmierung mit TXT-Speicheroptionen und zeigt Ihnen, wie Sie Textdateien aus Word-Dokumenten generieren und dabei die Formatierung und Struktur des Inhalts beibehalten. Sie erfahren, wie Sie die verschiedenen verfügbaren Optionen nutzen, um die Konvertierung von Dokumenten in Textdateien anzupassen, z. B. das Festlegen des Spaltentrennzeichens und die Verwaltung von Leerzeichen.
 
-توفر هذه البرامج التعليمية إرشادات خطوة بخطوة ، جنبًا إلى جنب مع نموذج كود C # ، لمساعدتك على فهم المفاهيم المشمولة وممارستها. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستجد معلومات مفصلة حول كيفية استخدام Aspose.Words for .NET وكيفية تحقيق أقصى استفادة من مكتبة معالجة المستندات القوية هذه.
+Diese Tutorials bieten Schritt-für-Schritt-Anleitungen sowie C#-Beispielcode, um Ihnen das Verständnis und die Praxis der behandelten Konzepte zu erleichtern. Unabhängig davon, ob Sie Anfänger oder erfahrener Entwickler sind, finden Sie detaillierte Informationen zur Verwendung von Aspose.Words für .NET und zur optimalen Nutzung dieser leistungsstarken Dokumentbearbeitungsbibliothek.
 
-بفضل هذه البرامج التعليمية ، ستتمكن من الاستفادة الكاملة من وظائف Aspose.Words for .NET وتطوير حلول فعالة لإنشاء مستندات Word وتحويلها ومعالجتها في تطبيقاتك. اتبع الخطوات واستكشف أمثلة التعليمات البرمجية وقم ببناء مهاراتك لإنشاء تطبيقات Word قوية وعالية الأداء.
+Dank dieser Tutorials können Sie die Funktionalitäten von Aspose.Words für .NET voll ausschöpfen und effiziente Lösungen für die Generierung, Konvertierung und Bearbeitung von Word-Dokumenten in Ihren Anwendungen entwickeln. Befolgen Sie die Schritte, erkunden Sie die Codebeispiele und bauen Sie Ihre Fähigkeiten aus, um robuste, leistungsstarke Word-Apps zu erstellen.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [أضف علامات ثنائية الاتجاه](./add-bidi-marks/) | تعلم كيفية إضافة علامات ثنائية الاتجاه إلى مستند Word باستخدام Aspose.Words for .NET وإنشاء مستندات احترافية متعددة اللغات. |
-| [استخدم حرف الجدولة لكل مستوى للمسافة البادئة للقائمة](./use-tab-character-per-level-for-list-indentation/) | تعرف على كيفية استخدام قوائم المسافات البادئة مع ميزة حروف الجدولة في Aspose.Words for .NET. اتبع هذا الدليل المفصل خطوة بخطوة لإنشاء مستندات جيدة التنظيم وقابلة للقراءة. وفر الوقت وحسّن سير عملك باستخدام هذه الميزة القوية. الوصول إلى البرنامج التعليمي الكامل الآن. |
-| [استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة](./use-space-character-per-level-for-list-indentation/) | دليل تفصيلي خطوة بخطوة لاستخدام حرف مسافة لكل مستوى في قائمة المسافة البادئة في Aspose.Words for .NET. قم بإنشاء مستندات Word جيدة التنظيم بسهولة. |
+| [Fügen Sie Bidi-Markierungen hinzu](./add-bidi-marks/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Bidi-Markierungen zu einem Word-Dokument hinzufügen und professionelle mehrsprachige Dokumente erstellen. |
+| [Verwenden Sie Tabulatorzeichen pro Ebene für die Listeneinrückung](./use-tab-character-per-level-for-list-indentation/) | Erfahren Sie, wie Sie die Funktion „Einrückungslisten mit Tabulatorzeichen“ in Aspose.Words für .NET verwenden. Befolgen Sie diese Schritt-für-Schritt-Anleitung, um gut strukturierte und lesbare Dokumente zu erstellen. Sparen Sie Zeit und verbessern Sie Ihren Arbeitsablauf mit dieser leistungsstarken Funktion. Greifen Sie jetzt auf das vollständige Tutorial zu. |
+| [Verwenden Sie Leerzeichen pro Ebene für die Listeneinrückung](./use-space-character-per-level-for-list-indentation/) | Schritt-für-Schritt-Anleitung zur Verwendung eines Leerzeichens pro Ebene für die Listeneinrückung in Aspose.Words für .NET. Erstellen Sie mühelos gut strukturierte Word-Dokumente. |

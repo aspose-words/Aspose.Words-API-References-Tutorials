@@ -1,43 +1,43 @@
 ---
-title: أدخل حقل نموذج خانة اختيار
-linktitle: أدخل حقل نموذج خانة اختيار
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج خانة الاختيار في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Infoga kryssruta formulärfält
+linktitle: Infoga kryssruta formulärfält
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar kryssrutaformulär i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/insert-check-box-form-field/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج حقل نموذج خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة حقول نموذج مربعات الاختيار بخصائص قابلة للتخصيص إلى مستنداتك.
+I den här omfattande självstudien kommer du att lära dig hur du infogar ett formulärfält i en kryssruta i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna lägga till kryssrutaformulär med anpassningsbara egenskaper till dina dokument.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Förutsättningar
+Innan vi börjar, se till att du har följande förutsättningar:
+- Aspose.Words för .NET-biblioteket installerat på ditt system.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Steg 1: Skapa ett nytt dokument och DocumentBuilder
+För att börja, skapa ett nytt dokument med klassen Document och initiera ett DocumentBuilder-objekt:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل حقل نموذج خانة اختيار
-بعد ذلك ، استخدم طريقة InsertCheckBox لفئة DocumentBuilder لإدراج حقل نموذج خانة اختيار. أدخل الاسم والحالة المحددة والحالة الافتراضية ومعلمات الحجم كوسائط:
+## Steg 2: Infoga ett kryssrutaformulärfält
+Använd sedan metoden InsertCheckBox för klassen DocumentBuilder för att infoga ett formulärfält för kryssruta. Ange namn, markerat tillstånd, standardtillstånd och storleksparametrar som argument:
 
 ```csharp
 builder.InsertCheckBox("CheckBox", true, true, 0);
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج حقل نموذج خانة الاختيار ، احفظ المستند في ملف باستخدام طريقة Save لفئة المستند:
+## Steg 3: Spara dokumentet
+När du har infogat kryssrutans formulärfält, spara dokumentet i en fil med hjälp av Spara-metoden för klassen Document:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx");
 ```
 
-### مثال كود المصدر لحقل نموذج خانة اختيار باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال حقل نموذج مربع الاختيار باستخدام Aspose.Words for .NET:
+### Exempel på källkod för Infoga kryssrutaformulärfält med Aspose.Words för .NET
+Här är den fullständiga källkoden för att infoga ett kryssrutaformulär med Aspose.Words för .NET:
 
 ```csharp
 
@@ -50,7 +50,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Kom ihåg att justera koden efter dina specifika krav och utöka den med ytterligare funktionalitet efter behov.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج حقل نموذج خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك باستخدام حقول نموذج مربعات الاختيار التفاعلية.
+## Slutsats
+Grattis! Du har framgångsrikt lärt dig hur du infogar ett kryssrutaformulär i ett Word-dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide och använda den medföljande källkoden kan du nu förbättra dina dokument med interaktiva kryssrutaformulär.

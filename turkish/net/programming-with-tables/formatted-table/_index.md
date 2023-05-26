@@ -1,41 +1,41 @@
 ---
-title: جدول منسق
-linktitle: جدول منسق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET.
+title: Biçimlendirilmiş Tablo
+linktitle: Biçimlendirilmiş Tablo
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde biçimlendirilmiş tablo oluşturmayı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/formatted-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من إنشاء جداول بتنسيق مخصص في مستندات Word الخاصة بك برمجيًا.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde biçimlendirilmiş tablo oluşturmayı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizde programlı olarak özel biçimlendirme ile tablolar oluşturabileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء بناء الجدول المنسق ، نحتاج إلى إنشاء مستند جديد وتهيئة منشئ المستندات. اتبع هذه الخطوات:
+## Adım 2: Belgeyi oluşturma ve belge oluşturucuyu başlatma
+Biçimlendirilmiş tabloyu oluşturmaya başlamak için yeni bir belge oluşturmamız ve belge oluşturucuyu başlatmamız gerekiyor. Bu adımları takip et:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وتهيئة منشئ المستند
+// Belgeyi oluşturun ve belge oluşturucuyu başlatın
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة 3: بناء الجدول المنسق
-بعد ذلك ، سنقوم ببناء الجدول المنسق باستخدام الطرق التي يوفرها منشئ المستندات. استخدم الكود التالي:
+## 3. Adım: Biçimlendirilmiş Tabloyu Oluşturma
+Ardından, belge oluşturucu tarafından sağlanan yöntemleri kullanarak biçimlendirilmiş tabloyu oluşturacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
-// ابدأ بناء المصفوفة
+// Dizi oluşturmaya başla
 Table table = builder. StartTable();
 
-// بناء صف رأس الجدول
+// Tablo başlık satırının oluşturulması
 builder. InsertCell();
 table. LeftIndent = 20.0;
 builder.RowFormat.Height = 40.0;
@@ -57,7 +57,7 @@ builder.Write("Header Row,\n Cell 3");
 
 builder. EndRow();
 
-// بناء الجسم المصفوفة
+// Dizi gövdesinin yapısı
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
@@ -93,35 +93,35 @@ builder.Write("Content Line 2, Cell 3");
 
 builder. EndRow();
 
-// نهاية بناء المصفوفة
+// Dizi oluşturmanın sonu
 builder. EndTable();
 ```
 
- هنا نستخدم منشئ المستندات لبناء الجدول خطوة بخطوة. نبدأ بالاتصال`StartTable()` لتهيئة الجدول. ثم نستخدم`InsertCell()` لإدراج الخلايا و`Write()` لإضافة محتوى إلى كل خلية. نستخدم أيضًا خصائص تنسيق مختلفة لتحديد تنسيق صفوف الجدول والخلايا والنص.
+ Burada tabloyu adım adım oluşturmak için belge oluşturucuyu kullanıyoruz. arayarak başlıyoruz`StartTable()` tabloyu başlatmak için. Sonra kullanırız`InsertCell()` hücreleri eklemek ve`Write()` her hücreye içerik eklemek için. Tablo satırlarının, hücrelerin ve metnin biçimlendirmesini tanımlamak için farklı biçimlendirme özellikleri de kullanırız.
 
-## الخطوة 4: احفظ المستند
-أخيرًا ، نحتاج إلى حفظ المستند الذي يحتوي على الجدول المنسق. استخدم الكود التالي:
+## 4. Adım: Belgeyi kaydedin
+Son olarak, biçimlendirilmiş tabloyu içeren belgeyi kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
-// احفظ المستند
+// belgeyi kaydet
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### نموذج التعليمات البرمجية المصدر للجدول المنسق باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Biçimlendirilmiş Tablo için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Table table = builder.StartTable();
 	builder.InsertCell();
-	// يجب تطبيق التنسيق الواسع للجدول بعد وجود صف واحد على الأقل في الجدول.
+	// Tablo genişliğinde biçimlendirme, tabloda en az bir satır bulunduktan sonra uygulanmalıdır.
 	table.LeftIndent = 20.0;
-	// عيّن الارتفاع وحدد قاعدة الارتفاع لصف الرأس.
+	// Yüksekliği ayarlayın ve başlık satırı için yükseklik kuralını tanımlayın.
 	builder.RowFormat.Height = 40.0;
 	builder.RowFormat.HeightRule = HeightRule.AtLeast;
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
@@ -131,7 +131,7 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 	builder.Font.Bold = true;
 	builder.CellFormat.Width = 100.0;
 	builder.Write("Header Row,\n Cell 1");
-	// لا نحتاج إلى تحديد عرض هذه الخلية لأنها موروثة من الخلية السابقة.
+	// Bir önceki hücreden devralındığı için bu hücrenin genişliğini belirtmemize gerek yok.
 	builder.InsertCell();
 	builder.Write("Header Row,\n Cell 2");
 	builder.InsertCell();
@@ -141,11 +141,11 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 	builder.CellFormat.Width = 100.0;
 	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// إعادة تعيين الارتفاع وتحديد قاعدة ارتفاع مختلفة لجسم الجدول.
+	// Yüksekliği sıfırlayın ve tablo gövdesi için farklı bir yükseklik kuralı tanımlayın.
 	builder.RowFormat.Height = 30.0;
 	builder.RowFormat.HeightRule = HeightRule.Auto;
 	builder.InsertCell();
-	// إعادة تعيين تنسيق الخط.
+	// Yazı tipi biçimlendirmesini sıfırlayın.
 	builder.Font.Size = 12;
 	builder.Font.Bold = false;
 	builder.Write("Row 1, Cell 1 Content");
@@ -168,5 +168,5 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 	doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك إنشاء جداول مخصصة بتنسيق محدد في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة تقديم بياناتك وتنظيمها بطريقة جذابة بصريًا ومنظمة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde biçimlendirilmiş tablo oluşturmayı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizde programlı olarak belirli biçimlendirmeyle özel tablolar oluşturabilirsiniz. Bu özellik, verilerinizi görsel olarak çekici ve düzenli bir şekilde sunmanıza ve yapılandırmanıza olanak tanır.

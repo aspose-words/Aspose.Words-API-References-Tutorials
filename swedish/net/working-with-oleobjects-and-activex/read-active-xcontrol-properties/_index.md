@@ -1,26 +1,26 @@
 ---
-title: قراءة خصائص Active XControl
-linktitle: قراءة خصائص Active XControl
-second_title: Aspose.Words لمراجع .NET API
-description: اقرأ خصائص عناصر تحكم ActiveX في مستند Word باستخدام Aspose.Words for .NET.
+title: Läs Active XControl-egenskaper
+linktitle: Läs Active XControl-egenskaper
+second_title: Aspose.Words för .NET API Referens
+description: Läs egenskaperna för ActiveX-kontroller i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
 
-في هذا الدليل التفصيلي ، سنوضح لك كيفية قراءة خصائص عناصر تحكم ActiveX في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+I den här steg-för-steg-guiden kommer vi att visa dig hur du läser egenskaperna för ActiveX-kontroller i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förse dig med den fullständiga källkoden och visa dig hur du formaterar markdown-utdata.
 
-## الخطوة 1: تهيئة المستند
+## Steg 1: Dokumentinitiering
 
- الخطوة الأولى هي تهيئة ملف`Document` الكائن عن طريق تحميل مستند Word الذي يحتوي على عناصر تحكم ActiveX. تأكد من استبدال`MyDir` بالمسار الفعلي للدليل الذي يحتوي على المستند.
+ Det första steget är att initiera`Document` objekt genom att ladda Word-dokumentet som innehåller ActiveX-kontrollerna. Se till att byta ut`MyDir` med den faktiska sökvägen till katalogen som innehåller dokumentet.
 
 ```csharp
 Document doc = new Document(MyDir + "ActiveX controls.docx");
 ```
 
-## الخطوة 2: استرداد عناصر تحكم ActiveX
+## Steg 2: Återställ ActiveX-kontroller
 
- في هذه الخطوة ، سوف نكرر كل منها`Shape` من المستند لاسترداد عناصر تحكم ActiveX وقراءة خصائصها.
+ I det här steget går vi igenom var och en`Shape` av dokumentet för att hämta ActiveX-kontrollerna och läsa deras egenskaper.
 
 ```csharp
 string properties = "";
@@ -49,9 +49,9 @@ properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes
 Console.WriteLine("\n" + properties);
 ```
 
-### مثال على شفرة المصدر لـ Read Active XControl Properties باستخدام Aspose.Words for .NET
+### Exempel på källkod för Läs Active XControl Properties med Aspose.Words för .NET
 
-فيما يلي التعليمات البرمجية المصدر الكاملة لقراءة خصائص عناصر تحكم ActiveX باستخدام Aspose.Words for .NET:
+Här är den fullständiga källkoden för att läsa egenskaperna för ActiveX-kontroller med Aspose.Words för .NET:
 
 ```csharp
 	Document doc = new Document(MyDir + "ActiveX controls.docx");

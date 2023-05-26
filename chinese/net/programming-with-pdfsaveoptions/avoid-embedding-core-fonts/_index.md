@@ -1,62 +1,62 @@
 ---
-title: تجنب تضمين الخطوط الأساسية
-linktitle: تجنب تضمين الخطوط الأساسية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تجنب تضمين الخط الأساسي عند تحويل مستندات Word إلى PDF باستخدام Aspose.Words for .NET.
+title: 避免嵌入核心字体
+linktitle: 避免嵌入核心字体
+second_title: Aspose.Words for .NET API 参考
+description: 了解在使用 Aspose.Words for .NET 将 Word 文档转换为 PDF 时如何避免基本字体嵌入。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات استخدام ميزة Avoid Basic Font Embedding مع Aspose.Words for .NET. تتيح لك هذه الميزة التحكم في ما إذا كان يجب تضمين الخطوط الأساسية مثل Arial و Times New Roman وما إلى ذلك في ملف PDF عند تحويل مستند Word. اتبع الخطوات التالية:
+在本教程中，我们将引导您完成使用 Aspose.Words for .NET 的避免基本字体嵌入功能的步骤。此功能允许您控制在转换 Word 文档时是否必须在 PDF 中嵌入 Arial、Times New Roman 等基本字体。请按照以下步骤操作：
 
-## الخطوة 1: تحميل المستند
+## 第 1 步：装入文档
 
-ابدأ بتحميل مستند Word الذي تريد تحويله إلى PDF:
+首先上传要转换为 PDF 的 Word 文档：
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح لمستند Word الخاص بك.
+请务必指定正确的 Word 文档路径。
 
-## الخطوة 2: تعيين خيارات تحويل PDF
+## 第 2 步：设置 PDF 转换选项
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وقم بتمكين تجنب تضمين الخط الأساسي:
+创建 PdfSaveOptions 类的实例并启用基本字体嵌入避免：
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
 ```
 
-يتحكم هذا الخيار فيما إذا كان يجب تضمين الخطوط الأساسية في ملف PDF أم لا.
+此选项控制基本字体是否应嵌入 PDF 中。
 
-## الخطوة 3: تحويل المستند إلى PDF
+## 第 3 步：将文档转换为 PDF
 
- استخدم ال`Save` طريقة لتحويل مستند Word إلى PDF عن طريق تحديد خيارات التحويل:
+使用`Save`通过指定转换选项将 Word 文档转换为 PDF 的方法：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+确保指定正确的路径以保存转换后的 PDF。
 
-### مثال على شفرة المصدر لتجنب تضمين الخطوط الأساسية باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 避免嵌入核心字体的示例源代码
 
-إليك الكود المصدري الكامل لاستخدام الميزة لتجنب تضمين الخط الأساسي مع Aspose.Words for .NET:
+下面是使用 Aspose.Words for .NET 避免核心字体嵌入功能的完整源代码：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// لن يتم تضمين ملف PDF الناتج مع الخطوط الأساسية مثل Arial و Times New Roman وما إلى ذلك.
+	//输出的 PDF 不会嵌入 Arial、Times New Roman 等核心字体。
 	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 
 ```
 
-باتباع هذه الخطوات ، يمكنك التحكم بسهولة فيما إذا كان يجب تضمين الخطوط الأساسية في ملف PDF عند تحويل مستند Word باستخدام Aspose.Words for .NET.
+通过执行这些步骤，您可以轻松地控制在使用 Aspose.Words for .NET 转换 Word 文档时是否应将基本字体嵌入到 PDF 中。
 

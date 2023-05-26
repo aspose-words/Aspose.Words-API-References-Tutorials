@@ -1,32 +1,32 @@
 ---
-title: إنشاء نمط الجدول
-linktitle: إنشاء نمط الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإنشاء نمط جدول مخصص باستخدام Aspose.Words for .NET.
+title: Crea stile tabella
+linktitle: Crea stile tabella
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata alla creazione di uno stile di tabella personalizzato utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/create-table-style/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لإنشاء نمط جدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية إنشاء نمط مخصص للجداول الخاصة بك في مستندات Word باستخدام Aspose.Words for .NET.
+In questo tutorial, ti guideremo attraverso il processo passo dopo passo per creare uno stile di tabella utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come creare uno stile personalizzato per le tue tabelle nei tuoi documenti Word usando Aspose.Words per .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+Innanzitutto, devi impostare il percorso della directory dei documenti. Questa è la posizione in cui desideri salvare il documento Word modificato. Sostituisci "LA TUA CARTELLA DEI DOCUMENTI" con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## Passaggio 2: creare un nuovo documento e un generatore di documenti
+ Successivamente, è necessario creare una nuova istanza del file`Document` class e un costruttore di documenti per quel documento.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدول جديد وأضف خلايا
-لبدء إنشاء الجدول ، نستخدم ملف`StartTable()` طريقة منشئ المستندات ، ثم نضيف خلايا إلى الجدول باستخدام الامتداد`InsertCell()` الطريقة ونكتب محتويات الخلايا إلى ملف`Write()` طريقة.
+## Passaggio 3: avvia una nuova tabella e aggiungi celle
+Per iniziare a creare la tabella, usiamo il file`StartTable()` metodo del generatore di documenti, quindi aggiungiamo celle alla tabella utilizzando il`InsertCell()` metodo e scriviamo il contenuto delle celle utilizzando il`Write()` metodo.
 
 ```csharp
 Table table = builder. StartTable();
@@ -40,8 +40,8 @@ builder. InsertCell();
 builder. EndTable();
 ```
 
-## الخطوة 4: إنشاء نمط الجدول
- الآن يمكننا إنشاء نمط جدول باستخدام امتداد`TableStyle` الطبقة و`Add()` طريقة من الوثيقة`s `مجموعة Styles`. نحدد خصائص النمط ، مثل الحدود والهوامش والحشوات.
+## Passaggio 4: crea uno stile di tabella
+ Ora possiamo creare uno stile di tabella usando il`TableStyle` classe e il`Add()` metodo dal documento`s `Collezione di stili. Definiamo le proprietà dello stile, come bordi, margini e padding.
 
 ```csharp
 TableStyle tableStyle = (TableStyle)doc.Styles.Add(StyleType.Table, "MyTableStyle1");
@@ -53,15 +53,15 @@ tableStyle.TopPadding = 12;
 tableStyle.BottomPadding = 12;
 ```
 
-## الخطوة 5: قم بتطبيق نمط الجدول على الجدول
- أخيرًا ، نطبق نمط الجدول الذي أنشأناه على الجدول باستخدام`Style` خاصية الجدول.
+## Passaggio 5: applica lo stile della tabella alla tabella
+ Infine, applichiamo lo stile di tabella che abbiamo creato alla tabella utilizzando il`Style` proprietà della tavola.
 
 ```csharp
 table.Style = tableStyle;
 ```
 
-## الخطوة 6: احفظ المستند المعدل
-أخيرًا احفظ المستند المعدل في ملف. يمكنك اختيار اسم وموقع مناسبين للمستند الناتج.
+## Passaggio 6: salvare il documento modificato
+Infine salvare il documento modificato in un file. È possibile scegliere un nome e una posizione appropriati per il documento di output.
 
 ```csharp
 
@@ -69,12 +69,12 @@ table.Style = tableStyle;
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.CreateTableStyle.docx");
 ```
 
-تهنئة ! لقد أنشأت الآن نمطًا مخصصًا لجدولك باستخدام Aspose.Words for .NET.
+Congratulazioni! Ora hai creato uno stile personalizzato per la tua tabella utilizzando Aspose.Words per .NET.
 
-### نموذج التعليمات البرمجية المصدر لـ Create Table Style باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Crea stile tabella utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -99,5 +99,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.CreateTableStyle.docx");
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.CreateTableStyle.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء نمط جدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تخصيص نمط الجداول الخاصة بك في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية الاحتياجات الخاصة.
+## Conclusione
+In questo tutorial, abbiamo imparato come creare uno stile di tabella utilizzando Aspose.Words per .NET. Seguendo questa guida passo-passo, puoi facilmente personalizzare lo stile delle tue tabelle nei tuoi documenti Word. Aspose.Words offre un'API potente e flessibile per la manipolazione e la formattazione delle tabelle nei tuoi documenti. Con questa conoscenza, puoi migliorare la presentazione visiva dei tuoi documenti Word e soddisfare esigenze specifiche.

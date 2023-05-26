@@ -1,56 +1,56 @@
 ---
-title: تخطي الخطوط المضمنة Arial و Times Roman Fonts
-linktitle: تخطي الخطوط المضمنة Arial و Times Roman Fonts
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي لإنشاء ملف PDF بدون تضمين خطوط Arial و Times Roman باستخدام Aspose.Words for .NET.
+title: Hoppa över inbäddade Arial- och Times Roman-teckensnitt
+linktitle: Hoppa över inbäddade Arial- och Times Roman-teckensnitt
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att generera PDF utan att bädda in Arial- och Times Roman-teckensnitt med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام الميزة لتخطي خطوط Arial و Times Roman المضمنة إلى حجم ملف التعريف باستخدام Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تكوين خيار وضع دمج الخط في مستند وإنشاء ملف PDF بدون تضمين خطوط Arial و Times Roman.
+Den här artikeln ger en steg-för-steg-guide om hur du använder funktionen för att hoppa över inbäddade Arial- och Times Roman-teckensnitt till metafilstorlek med Aspose.Words för .NET. Vi kommer att förklara varje del av koden i detalj. I slutet av denna handledning kommer du att kunna förstå hur du konfigurerar alternativet för typsnittsinbäddningsläge i ett dokument och genererar en PDF utan att bädda in Arial- och Times Roman-teckensnitt.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Innan du börjar, se till att du har installerat och konfigurerat Aspose.Words for .NET-biblioteket i ditt projekt. Du hittar biblioteket och installationsinstruktioner på Asposes webbplats.
 
-## الخطوة 1: تحديد دليل المستند
+## Steg 1: Definiera dokumentkatalogen
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ För att börja måste du definiera sökvägen till katalogen där dina dokument finns. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Steg 2: Ladda upp dokumentet
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Därefter måste vi ladda dokumentet vi vill bearbeta. I det här exemplet antar vi att dokumentet heter "Rendering.docx" och finns i den angivna dokumentkatalogen.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF مع دمج الخط
+## Steg 3: Konfigurera spara som PDF-alternativ med teckensnittsinbäddning
 
- لتخطي تضمين خطوط Arial و Times Roman في ملف PDF الذي تم إنشاؤه ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن وتعيين`FontEmbeddingMode` ملكية ل`PdfFontEmbeddingMode.EmbedAll`.
+ För att hoppa över att bädda in Arial- och Times Roman-teckensnitt i den genererade PDF-filen måste vi konfigurera`PdfSaveOptions` objekt och ställ in`FontEmbeddingMode` egendom till`PdfFontEmbeddingMode.EmbedAll`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
 ```
 
-## الخطوة 4: احفظ المستند كملف PDF بدون خطوط مضمنة
+## Steg 4: Spara dokumentet som PDF utan inbäddade teckensnitt
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Slutligen kan vi spara dokumentet i PDF-format med hjälp av de sparade alternativen som konfigurerats tidigare.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في إنشاء ملف PDF بدون تضمين خطوط Arial و Times Roman باستخدام Aspose.Words for .NET.
+Det är allt ! Du har framgångsrikt skapat en PDF utan att bädda in Arial- och Times Roman-teckensnitt med Aspose.Words för .NET.
 
-### مثال على كود المصدر لتخطي خطوط Arial و Times Roman المضمنة بحجم ملف التعريف باستخدام Aspose.Words for .NET
+### Exempel på källkod för att hoppa över inbäddade Arial- och Times Roman-teckensnitt i metafilstorlek med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 

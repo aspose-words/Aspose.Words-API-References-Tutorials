@@ -1,51 +1,51 @@
 ---
-title: حذف الحقول
-linktitle: حذف الحقول
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لحذف حقول الدمج في مستندات Word باستخدام Aspose.Words for .NET.
+title: Elimina campi
+linktitle: Elimina campi
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida passo passo per l'eliminazione dei campi di unione nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/delete-fields/
 ---
 
-لشرح كيفية استخدام ميزة "حذف الحقول" في Aspose. كلمات لـ .NET قمنا بإنشاء دليل خطوة بخطوة أدناه. 
+Per spiegare come utilizzare la funzione "Elimina campi" in Aspose. Words for .NET abbiamo creato una guida passo passo qui sotto. 
 
-من المهم متابعة كل خطوة عن كثب من أجل تحقيق النتائج المرجوة. 
+È importante seguire attentamente ogni passaggio per ottenere i risultati desiderati. 
 
-## الخطوة الأولى: إنشاء مستند جديد
+## Passaggio 1: creazione di un nuovo documento
 
-في مقتطف الشفرة هذا ، نبدأ بإنشاء مستند فارغ جديد باستخدام السطر التالي: 
+In questo frammento di codice iniziamo creando un nuovo documento vuoto utilizzando la seguente riga: 
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: إزالة دمج الحقول
+## Passaggio 2: rimuovere i campi di unione
 
- لإزالة جميع حقول الدمج الموجودة في المستند ، نستخدم ملحق`DeleteFields()` وظيفة. 
+ Per rimuovere tutti i campi di unione presenti nel documento utilizziamo il file`DeleteFields()` funzione. 
 
-هذا مفيد بشكل خاص إذا كنت ترغب في الاحتفاظ فقط بالمحتوى الثابت وإزالة أي معلومات دمج. 
+Ciò è particolarmente utile se si desidera mantenere solo il contenuto statico e rimuovere qualsiasi informazione di unione. 
 
-### مثال رمز المصدر لحذف الحقول باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per eliminare i campi con Aspose.Words per .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تحميل المستند الحالي.
+// Carica il documento esistente.
 Document doc = new Document(dataDir + "YourDocument.docx");
 
-// قم بإزالة حقول الدمج.
+// Rimuovi i campi di unione.
 doc.MailMerge.DeleteFields();
 
-// احفظ المستند المعدل.
+// Salva il documento modificato.
 doc.Save(dataDir + "YourDocument_WithoutFields.docx");
 ```
 
- في مثالنا ، نقوم أولاً بتحميل مستند موجود قبل الاتصال`DeleteFields()`. أخيرًا نحفظ المستند المعدل باسم ملف جديد. 
+ Nel nostro esempio carichiamo prima un documento esistente prima di chiamare`DeleteFields()`. Infine salviamo il documento modificato con un nuovo nome file. 
 
-من أجل إزالة حقول الدمج بشكل فعال من مستند باستخدام Aspose.Words ميزة "إزالة الحقول" في .NET ، خذ إشارة من هذا المثال. 
+Per rimuovere efficacemente i campi di unione da un documento utilizzando Aspose.Words per la funzione "Rimuovi campi" di .NET, prendi spunto da questo esempio. 
 
-تذكر دائمًا استبدال "دليل المستندات" بمسار الدليل المحدد. 
+Ricorda sempre di sostituire "LA TUA CARTELLA DEI DOCUMENTI" con il tuo percorso di directory specifico. 
 
-وبذلك تم الانتهاء من دليلنا حول تنفيذ وظيفة "حذف الحقول" من خلال Aspose.Words for .NET.
+Si è così conclusa la nostra guida sull'implementazione della funzionalità "Elimina campi" tramite Aspose.Words per .NET.

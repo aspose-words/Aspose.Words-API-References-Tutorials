@@ -1,59 +1,59 @@
 ---
-title: وصل كلمات اللغات
-linktitle: وصل كلمات اللغات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Separar Palabras De Idiomas
+linktitle: Separar Palabras De Idiomas
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a separar palabras en diferentes idiomas en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 
-في هذا البرنامج التعليمي المفصل خطوة بخطوة ، سنوجهك حول كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+En este tutorial paso a paso, lo guiaremos sobre cómo separar palabras en diferentes idiomas en documentos de Word usando Aspose.Words para .NET. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si aún no lo ha hecho, descargue e instale la biblioteca desde el sitio oficial.
 
-## الخطوة 1: تهيئة كائن المستند
+## Paso 1: inicialización del objeto de documento
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق تحديد المسار إلى المستند المصدر الذي يحتوي على نص بلغات مختلفة:
+ Primero, inicialice el`Document` objeto especificando la ruta a su documento de origen que contiene texto en diferentes idiomas:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## الخطوة 2: حفظ قواميس الواصلة
+## Paso 2: Guardar diccionarios de separación de sílabas
 
-بعد ذلك ، احفظ قواميس الواصلة للغات المختلفة التي تريد معالجتها. في هذا المثال ، نسجل قواميس للغة الإنجليزية الأمريكية والألمانية السويسرية:
+A continuación, guarde los diccionarios de partición de palabras para los diferentes idiomas que desea procesar. En este ejemplo, registramos diccionarios para inglés americano y alemán suizo:
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
 Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 ```
 
-تأكد من أن لديك ملفات القاموس المناسبة في دليل البيانات الخاص بك.
+Asegúrese de tener los archivos de diccionario apropiados en su directorio de datos.
 
-## الخطوة 3: معالجة الكلمات عن طريق الواصلة
+## Paso 3: procesamiento de palabras por separación de sílabas
 
- يمكنك الآن استخدام ميزات الواصلة لمعالجة الكلمات بلغات مختلفة. يمكنك استخدام طرق مختلفة لـ`Document` أو`DocumentBuilder`حسب احتياجاتك الخاصة.
+ Ahora puede usar las funciones de división de palabras para procesar palabras en diferentes idiomas. Puede utilizar diferentes métodos de`Document` o`DocumentBuilder`dependiendo de sus necesidades específicas.
 
 ```csharp
-// مثال: استخدام أسلوب الواصلة في DocumentBuilder
+// Ejemplo: uso del método de guiones de DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Write("Example of text to hyphenate");
 builder.InsertHyphenation();
 ```
 
-## الخطوة 4: احفظ المستند
+## Paso 4: Guarde el documento
 
-أخيرًا ، احفظ المستند المعدل:
+Finalmente, guarde el documento modificado:
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-لذا ! لقد نجحت في معالجة الكلمات عن طريق الواصلة بلغات مختلفة في مستند Word باستخدام Aspose.Words for .NET.
+Entonces ! Ha procesado correctamente las palabras al dividirlas en diferentes idiomas en un documento de Word utilizando Aspose.Words para .NET.
 
-### عينة من التعليمات البرمجية المصدر لوصل الكلمات باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para separación de palabras usando Aspose.Words para .NET
 
 	```csharp
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,4 +65,4 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 	doc.Save(dataDir + "TreatmentByCesure.pdf");
 	```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Siéntase libre de usar este código en sus propios proyectos y modifíquelo para satisfacer sus necesidades específicas.

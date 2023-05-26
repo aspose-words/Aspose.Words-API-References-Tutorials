@@ -1,57 +1,57 @@
 ---
-title: أقحم الصور
-linktitle: أقحم الصور
-second_title: Aspose.Words لمراجع .NET API
-description: دليل مفصّل خطوة بخطوة لتمكين استيفاء الصور باستخدام Aspose.Words for .NET.
+title: Görüntüleri Enterpolasyonla
+linktitle: Görüntüleri Enterpolasyonla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile görüntü enterpolasyonunu etkinleştirmek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/interpolate-images/
 ---
 
-تقدم هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام ميزة الاستيفاء للصور مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، سوف تكون قادرًا على فهم كيفية تمكين استيفاء الصور عند التحويل إلى PDF.
+Bu makale, görüntü enterpolasyon özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, PDF'ye dönüştürürken görüntü enterpolasyonunu nasıl etkinleştireceğinizi anlayabileceksiniz.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
-## الخطوة 1: تحديد دليل المستند
+## 1. Adım: Belge dizinini tanımlayın
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Başlamak için, belgelerinizin bulunduğu dizine giden yolu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## 2. Adım: Belgeyi yükleyin
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Ardından, işlemek istediğimiz belgeyi yüklememiz gerekiyor. Bu örnekte, belgenin "Rendering.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: قم بتكوين خيارات الحفظ بتنسيق PDF باستخدام إطار الإقحام
+## 3. Adım: Çerçeve enterpolasyonu ile PDF olarak kaydetme seçeneklerini yapılandırın
 
- لتمكين استيفاء الصور عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن عن طريق تعيين`InterpolateImages` ملكية ل`true`.
+ PDF'ye dönüştürürken görüntülerin enterpolasyonunu etkinleştirmek için,`PdfSaveOptions` ayarlayarak nesne`InterpolateImages` mülkiyet`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-## الخطوة 4: احفظ المستند كملف PDF مع استيفاء الإطار
+## 4. Adım: Belgeyi çerçeve enterpolasyonuyla PDF olarak kaydedin
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Son olarak, daha önce yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedebiliriz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تمكين استيفاء الصور أثناء تحويل مستند إلى PDF باستخدام Aspose.Words for .NET.
+Bu kadar ! Aspose.Words for .NET kullanarak bir belgeyi PDF'ye dönüştürürken görüntü enterpolasyonunu başarıyla etkinleştirdiniz.
 
-### مثال على شفرة المصدر لاستيفاء الصورة باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile görüntü enterpolasyonu için örnek kaynak kodu
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 

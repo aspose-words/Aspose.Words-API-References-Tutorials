@@ -1,54 +1,54 @@
 ---
-title: تعيين لون التحكم في المحتوى
-linktitle: تعيين لون التحكم في المحتوى
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين لون عنصر تحكم المحتوى في مستند Word باستخدام Aspose.Words for .NET ، مع تخصيص مظهره.
+title: Legen Sie die Farbe der Inhaltssteuerung fest
+linktitle: Legen Sie die Farbe der Inhaltssteuerung fest
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Farbe eines Inhaltssteuerelements in einem Word-Dokument festlegen und dessen Erscheinungsbild anpassen.
 type: docs
 weight: 10
 url: /de/net/programming-with-sdt/set-content-control-color/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية تعيين لون عنصر تحكم المحتوى في مستند Word باستخدام Aspose.Words for .NET. يمكنك تخصيص مظهر عناصر تحكم المحتوى عن طريق تغيير لونها.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET die Farbe eines Inhaltssteuerelements in einem Word-Dokument festlegen. Sie können das Erscheinungsbild von Inhaltssteuerelementen anpassen, indem Sie deren Farbe ändern.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Voraussetzungen
+Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words für .NET-Bibliothek installiert.
+- Grundkenntnisse in C# und der Arbeit mit Word-Dokumenten.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
+ Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem sich Ihr Dokument befindet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند واسترجع عنصر التحكم في المحتوى
- قم بتحميل مستند Word باستخدام ملف`Document` مُنشئ ، تمرير المسار إلى المستند كمعامل. استرجع عنصر التحكم في المحتوى المطلوب من المستند. في هذا المثال ، نفترض أن عنصر التحكم في المحتوى هو أول علامة منظمة للمستند في المستند.
+## Schritt 2: Laden Sie das Dokument und rufen Sie die Inhaltssteuerung ab
+ Laden Sie das Word-Dokument mit`Document` Konstruktor, der den Pfad zum Dokument als Parameter übergibt. Rufen Sie das gewünschte Inhaltssteuerelement aus dem Dokument ab. In diesem Beispiel gehen wir davon aus, dass das Inhaltssteuerelement das erste strukturierte Dokument-Tag im Dokument ist.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
-## الخطوة 3: اضبط لون التحكم في المحتوى
- اضبط لون عنصر تحكم المحتوى عن طريق تعيين ملف`Color` قيمة`Color` خاصية علامة المستند المنظم. في هذا المثال ، قمنا بتعيين اللون إلى الأحمر.
+## Schritt 3: Legen Sie die Inhaltskontrollfarbe fest
+ Legen Sie die Farbe des Inhaltssteuerelements fest, indem Sie a zuweisen`Color` Wert für die`Color` Eigenschaft des strukturierten Dokument-Tags. In diesem Beispiel stellen wir die Farbe auf Rot ein.
 
 ```csharp
 sdt.Color = Color.Red;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند المعدل إلى الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.SetContentControlColor.docx".
+## Schritt 4: Speichern Sie das Dokument
+ Speichern Sie das geänderte Dokument mit im angegebenen Verzeichnis`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithSdt.SetContentControlColor.docx“.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlColor.docx");
 ```
 
-### مثال على شفرة المصدر لـ Set Content Control Color باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Set Content Control Color“ mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -57,4 +57,4 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlColor.docx");
 	doc.Save(dataDir + "WorkingWithSdt.SetContentControlColor.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تعيين لون عنصر تحكم المحتوى في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Das ist es! Sie haben die Farbe eines Inhaltssteuerelements in Ihrem Word-Dokument mit Aspose.Words für .NET erfolgreich festgelegt.

@@ -1,53 +1,53 @@
 ---
-title: عرض عنوان المستند في شريط عنوان النافذة
-linktitle: عرض عنوان المستند في شريط عنوان النافذة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+title: Dokumenttitel in der Titelleiste des Fensters anzeigen
+linktitle: Dokumenttitel in der Titelleiste des Fensters anzeigen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie beim Konvertieren in PDF mit Aspose.Words für .NET den Dokumenttitel in der Titelleiste des Fensters anzeigen.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titlebar/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال الخطوات لعرض عنوان المستند في شريط عنوان النافذة باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة عرض عنوان المستند في شريط عنوان النافذة عند فتح مستند PDF الذي تم إنشاؤه. اتبع الخطوات التالية:
+In diesem Tutorial führen wir Sie durch die Schritte zum Anzeigen des Dokumenttitels in der Fenstertitelleiste mit Aspose.Words für .NET. Mit dieser Funktion können Sie den Dokumenttitel in der Titelleiste des Fensters anzeigen, wenn Sie das generierte PDF-Dokument öffnen. Folgen Sie den unteren Schritten:
 
-## الخطوة 1: تحميل المستند
+## Schritt 1: Laden des Dokuments
 
-ابدأ بتحميل المستند الذي تريد تحويله إلى PDF:
+Laden Sie zunächst das Dokument hoch, das Sie in PDF konvertieren möchten:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح للمستند الخاص بك.
+Stellen Sie sicher, dass Sie den korrekten Pfad zu Ihrem Dokument angeben.
 
-## الخطوة 2: تكوين خيارات حفظ PDF
+## Schritt 2: Konfigurieren Sie die PDF-Speicheroptionen
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وقم بتمكين عرض عنوان المستند في شريط عنوان النافذة:
+Erstellen Sie eine Instanz der PdfSaveOptions-Klasse und aktivieren Sie die Anzeige des Dokumenttitels in der Fenstertitelleiste:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { DisplayDocTitle = true };
 ```
 
-يتيح هذا الخيار عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF.
+Diese Option ermöglicht die Anzeige des Dokumenttitels in der Fenstertitelleiste beim Konvertieren in PDF.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## Schritt 3: Dokument in PDF konvertieren
 
- استخدم ال`Save` طريقة تحويل المستند إلى PDF مع تحديد خيارات التحويل:
+ Benutzen Sie die`Save` Methode zum Konvertieren des Dokuments in PDF unter Angabe der Konvertierungsoptionen:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Stellen Sie sicher, dass Sie den richtigen Pfad zum Speichern der konvertierten PDF-Datei angeben.
 
-### مثال على شفرة المصدر لعرض عنوان المستند في شريط عناوين النافذة باستخدام Aspose.Words for .NET
+### Beispielquellcode für die Anzeige des Dokumenttitels in der Fenstertitelleiste mit Aspose.Words für .NET
 
-إليك كود المصدر الكامل لعرض عنوان المستند في شريط عنوان النافذة في مستند PDF باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Quellcode zum Anzeigen des Dokumenttitels in der Fenstertitelleiste in einem PDF-Dokument mit Aspose.Words für .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -56,5 +56,5 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pd
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
         
 ```
-باتباع هذه الخطوات ، يمكنك بسهولة عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+Wenn Sie diese Schritte befolgen, können Sie den Dokumenttitel beim Konvertieren in PDF mit Aspose.Words für .NET ganz einfach in der Titelleiste des Fensters anzeigen.
 

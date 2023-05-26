@@ -1,49 +1,49 @@
 ---
-title: حفظ الصور بتنسيق Wmf
-linktitle: حفظ الصور بتنسيق Wmf
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حفظ الصور بتنسيق WMF عند التحويل إلى RTF باستخدام Aspose.Words for .NET.
+title: Spara bilder som Wmf
+linktitle: Spara bilder som Wmf
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du sparar bilder som WMF när du konverterar till RTF med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-rtfsaveoptions/saving-images-as-wmf/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف كود المصدر C # المقدم لميزة "حفظ الصور كـ WMF مع خيارات حفظ RTF" مع Aspose.Words for .NET. تتيح لك هذه الميزة حفظ صور المستند بتنسيق Windows Metafile (WMF) عند التحويل إلى تنسيق RTF.
+I den här handledningen kommer vi att utforska C#-källkoden som tillhandahålls för funktionen "Spara bilder som WMF med RTF-sparalternativ" med Aspose.Words för .NET. Med den här funktionen kan du spara dokumentbilder i Windows Metafile-format (WMF) när du konverterar till RTF-format.
 
-## الخطوة الأولى: تهيئة البيئة
+## Steg 1: Sätta upp miljön
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Innan du börjar, se till att du har ställt in din utvecklingsmiljö med Aspose.Words för .NET. Se till att du har lagt till nödvändiga referenser och importerat lämpliga namnområden.
 
-## الخطوة الثانية: تحميل المستند
+## Steg 2: Ladda dokumentet
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+ I det här steget laddar vi dokumentet med hjälp av`Document` metod och skickar sökvägen till DOCX-filen som ska laddas.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي
+## Steg 3: Konfigurera alternativ för säkerhetskopiering
 
 ```csharp
 RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
 ```
 
-في هذه الخطوة ، نقوم بتكوين خيارات النسخ الاحتياطي لـ RTF. نخلق ملف`RtfSaveOptions` كائن وتعيين`SaveImagesAsWmf` ملكية ل`true`. هذا يخبر Aspose.Words بحفظ صور الوثيقة بصيغة WMF عند التحويل إلى RTF.
+ det här steget konfigurerar vi alternativen för RTF-säkerhetskopiering. Vi skapar en ny`RtfSaveOptions` objekt och ställ in`SaveImagesAsWmf` egendom till`true`. Detta säger till Aspose.Words att spara dokumentbilderna som WMF vid konvertering till RTF.
 
-## الخطوة 4: حفظ المستند
+## Steg 4: Spara dokumentet
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نقوم بحفظ المستند الناتج بتنسيق RTF باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج ، جنبًا إلى جنب مع خيارات الحفظ المحددة.
+ I detta sista steg sparar vi det resulterande dokumentet i RTF-format med hjälp av`Save` metod och skicka sökvägen till utdatafilen, tillsammans med de angivna sparaalternativen.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لحفظ صور المستند بتنسيق WMF أثناء التحويل إلى تنسيق RTF. سيتم حفظ المستند الناتج في الدليل المحدد باسم "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf".
+Nu kan du köra källkod för att spara dokumentbilder i WMF-format samtidigt som du konverterar till RTF-format. Det resulterande dokumentet kommer att sparas i den angivna katalogen med namnet "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf".
 
-### عينة من التعليمات البرمجية المصدر لوظيفة حفظ صور WMF باستخدام خيارات حفظ RTF باستخدام Aspose.Words for .NET ".
+### Exempel på källkod för funktionalitet för att spara WMF-bilder med RTF-sparalternativ med Aspose.Words för .NET".
 
 ```csharp
 
@@ -58,10 +58,10 @@ doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOption
             
         
 ```
-## خاتمة
+## Slutsats
 
-في هذا البرنامج التعليمي ، اكتشفنا وظيفة حفظ الصور بتنسيق WMF مع خيارات حفظ RTF في Aspose.Words for .NET. تعلمنا كيفية حفظ الصور من مستند بتنسيق WMF عند التحويل إلى تنسيق RTF.
+I den här handledningen utforskade vi funktionaliteten för att spara bilder som WMF med RTF-sparalternativ i Aspose.Words för .NET. Vi lärde oss hur man sparar bilder från ett dokument i WMF-format när man konverterar till RTF-format.
 
-هذه الميزة مفيدة عندما تريد الحفاظ على جودة ودقة الصور في مستندات RTF الخاصة بك. من خلال حفظ الصور بتنسيق WMF ، يمكنك التأكد من بقاء مظهرها وحدتها كما هي.
+Den här funktionen är användbar när du vill behålla kvaliteten och upplösningen på bilder i dina RTF-dokument. Genom att spara bilder i WMF-format kan du säkerställa att deras utseende och skärpa förblir intakta.
 
-يوفر Aspose.Words for .NET العديد من الميزات المتقدمة لمعالجة المستندات وإنشائها. يعد حفظ الصور بتنسيق WMF أثناء التحويل إلى تنسيق RTF أحد الأدوات القوية العديدة التي يوفرها لك.
+Aspose.Words för .NET erbjuder många avancerade funktioner för dokumenthantering och generering. Att spara bilder i WMF-format medan du konverterar till RTF-format är ett av de många kraftfulla verktyg det ger dig.

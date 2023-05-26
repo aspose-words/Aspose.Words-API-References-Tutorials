@@ -1,68 +1,68 @@
 ---
-title: تنسيق الصف تعطيل الفاصل عبر الصفحات
-linktitle: تنسيق الصف تعطيل الفاصل عبر الصفحات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل فاصل الأسطر لجدول عبر صفحات متعددة في مستند Word باستخدام Aspose.Words for .NET.
+title: Formato de fila Desactivar división entre páginas
+linktitle: Formato de fila Desactivar división entre páginas
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a deshabilitar el salto de línea para una tabla en varias páginas en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تعطيل فاصل الأسطر لجدول متعدد الصفحات في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تعطيل فصل الأسطر لجميع الصفوف في الجدول الخاص بك في مستندات Word الخاصة بك.
+En este tutorial, aprenderemos cómo deshabilitar el salto de línea de una tabla de varias páginas en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá deshabilitar el salto de línea para todas las filas de su tabla en sus documentos de Word.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Paso 1: Configuración del proyecto
+1. Inicie Visual Studio y cree un nuevo proyecto de C#.
+2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## Paso 2: Cargar el documento
+Para comenzar a trabajar con el documento, siga estos pasos:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Cargue el documento
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
-تأكد من استبدال "دليل المستندات الخاص بك" بالمسار الفعلي إلى دليل المستندات الخاص بك وقم بتوفير اسم الملف الصحيح.
+Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos y proporcione el nombre de archivo correcto.
 
-## الخطوة 3: تعطيل فاصل صفوف الجدول
-بعد ذلك ، سنقوم بتعطيل فصل الصفوف لجميع الصفوف في الجدول. استخدم الكود التالي:
+## Paso 3: deshabilite el salto de fila de la tabla
+A continuación, desactivaremos la división de filas para todas las filas de la tabla. Usa el siguiente código:
 
 ```csharp
-// استرجع الجدول
+// recuperar la mesa
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 
-// تعطيل فاصل الصف لجميع الصفوف في الجدول
+// Deshabilitar el salto de fila para todas las filas de la tabla
 foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```
 
- هنا نستخدم المستند لجلب الجدول الأول ثم نكرره عبر جميع الصفوف في الجدول باستخدام حلقة foreach. داخل الحلقة ، نقوم بتعطيل فصل الصفوف لكل صف عن طريق ضبط`RowFormat.AllowBreakAcrossPages` ملكية ل`false`.
+ Aquí usamos el documento para obtener la primera tabla y luego iteramos a través de todas las filas de la tabla usando un bucle foreach. Dentro del ciclo, deshabilitamos el salto de fila para cada fila configurando el`RowFormat.AllowBreakAcrossPages` propiedad a`false`.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تعطيل فاصل أسطر الجدول. استخدم الكود التالي:
+## Paso 4: Guardar el documento modificado
+Finalmente, debemos guardar el documento modificado con el salto de línea de la tabla deshabilitado. Usa el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Asegúrese de especificar la ruta y el nombre de archivo correctos para el documento de salida.
 
-### نموذج التعليمات البرمجية المصدر لتنسيق الصف تعطيل الفاصل عبر الصفحات باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para la desactivación del formato de fila entre páginas usando Aspose.Words para .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-// تعطيل التقسيم عبر الصفحات لجميع الصفوف في الجدول.
+// Deshabilite la separación entre páginas para todas las filas de la tabla.
 foreach (Row row in table.Rows)
 	row.RowFormat.AllowBreakAcrossPages = false;
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعطيل فاصل الأسطر لجدول متعدد الصفحات في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تطبيق هذا التعطيل على جداولك في مستندات Word الخاصة بك.
+## Conclusión
+En este tutorial, aprendimos cómo deshabilitar el salto de línea de una tabla de varias páginas en un documento de Word usando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# provisto, puede aplicar esta desactivación a sus tablas en sus documentos de Word.

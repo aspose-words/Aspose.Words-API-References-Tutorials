@@ -1,20 +1,20 @@
 ---
-title: انقسام المستند
-linktitle: انقسام المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على العناوين html ، والأقسام html ، والأقسام ، والصفحة بصفحة ، ودمج المستندات ، وبحسب نطاق الصفحات
+title: Belgeyi Böl
+linktitle: Belgeyi Böl
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, html başlıklarına göre, html bölümlerine göre, bölümlere göre, sayfa sayfa, belgeleri birleştirme ve sayfa aralığına göre içerir
 type: docs
 weight: 1450
 url: /tr/net/split-document/
 ---
-يُعد Split Document مصدرًا شاملاً يشرح كيفية تقسيم المستند إلى أجزاء منفصلة باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية شرحًا تفصيليًا خطوة بخطوة ، وأمثلة كاملة لشفرة المصدر ، ونصائح عملية لتقسيم مستند وفقًا لشروط مختلفة ، مثل عدد الصفحات والأقسام والفقرات وما إلى ذلك. هذا المورد ضروري للمطورين الذين يرغبون في أتمتة عملية تقسيم المستندات الكبيرة وتبسيط إدارة الأجزاء الفردية. باستخدام Aspose.Words for .NET ، يمكنك بسهولة استخراج أجزاء مختلفة من المستند وحفظها ومعالجتها ، مما يؤدي إلى تحسين كفاءة ومرونة سير عمل معالجة المستندات بشكل كبير.
+Bölünmüş Belge, Aspose.Words for .NET kitaplığı kullanılarak bir belgenin nasıl ayrı parçalara bölüneceğini açıklayan kapsamlı bir kaynaktır. Öğreticiler, ayrıntılı adım adım açıklamalar, eksiksiz kaynak kodu örnekleri ve bir belgeyi sayfa, bölüm, paragraf sayısı vb. farklı koşullara göre bölmek için pratik ipuçları sağlar. Bu kaynak, otomatikleştirmek isteyen geliştiriciler için gereklidir. büyük belgeleri bölme ve tek tek parçaların yönetimini basitleştirme süreci. Aspose.Words for .NET ile, belge işleme iş akışınızın verimliliğini ve esnekliğini büyük ölçüde artırarak, bir belgenin farklı bölümlerini kolayca çıkarabilir, kaydedebilir ve değiştirebilirsiniz.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [حسب العناوين Html](./by-headings-html/) | دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # لميزة By Heading HTML في Aspose.Words for .NET |
-| [حسب أقسام Html](./by-sections-html/) | تعرف على كيفية تقسيم مستند Word إلى أقسام Html باستخدام Aspose.Words for .NET مع مثال رمز كامل. |
-| [حسب الأقسام](./by-sections/) | تعرف على كيفية تقسيم مستند Word إلى أقسام منفصلة باستخدام Aspose.Words for .NET مع مثال رمز كامل. |
-| [صفحة بالصفحة](./page-by-page/) | دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # لميزة Aspose.Words صفحة بصفحة لـ .NET |
-| [دمج المستندات](./merge-documents/) | دليل خطوة بخطوة لشرح كود مصدر C # لميزة دمج المستندات في Aspose.Words for .NET |
-| [حسب نطاق الصفحة](./by-page-range/) | استخرج بسهولة حسب نطاق الصفحات من مستند Word باستخدام Aspose.Words for .NET دليل خطوة بخطوة. |
+| [Başlıklara göre Html](./by-headings-html/) | Aspose.Words for .NET'in Başlığa Göre HTML özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz |
+| [Bölümlere Göre Html](./by-sections-html/) | Eksiksiz bir kod örneği ile Aspose.Words for .NET kullanarak bir Word belgesini Html'de bölümlere ayırmayı öğrenin. |
+| [Bölümlere göre](./by-sections/) | Eksiksiz bir kod örneği ile Aspose.Words for .NET kullanarak bir Word belgesini nasıl ayrı bölümlere ayıracağınızı öğrenin. |
+| [sayfa sayfa](./page-by-page/) | .NET için Aspose.Words Sayfa Sayfa özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz |
+| [Belgeleri Birleştir](./merge-documents/) | Aspose.Words for .NET'in Belgeleri Birleştir özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz |
+| [Sayfa Aralığına Göre](./by-page-range/) | Aspose.Words for .NET Adım adım kılavuzunu kullanarak bir Word belgesinden sayfa aralığına göre kolayca ayıklayın. |

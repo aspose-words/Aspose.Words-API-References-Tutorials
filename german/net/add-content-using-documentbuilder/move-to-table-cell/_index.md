@@ -1,28 +1,28 @@
 ---
-title: الانتقال إلى خلية الجدول
-linktitle: الانتقال إلى خلية الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لاستخدام Move To Table Cell في Aspose.Words for .NET
+title: In Tabellenzelle verschieben
+linktitle: In Tabellenzelle verschieben
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zur Verwendung von „In Tabellenzelle verschieben“ in Aspose.Words für .NET
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/move-to-table-cell/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة Move To Table Cell في Aspose.Words for .NET باستخدام كود المصدر C # المقدم خطوة بخطوة. تتيح لك هذه الميزة التنقل والتعامل مع خلايا معينة داخل جدول في مستند Word. اتبع الخطوات أدناه لدمج هذه الوظيفة في تطبيقك.
+In diesem Beispiel führen wir Sie Schritt für Schritt durch die Verwendung der Funktion „In Tabellenzelle verschieben“ von Aspose.Words für .NET mithilfe des bereitgestellten C#-Quellcodes. Mit dieser Funktion können Sie in einer Tabelle in einem Word-Dokument durch bestimmte Zellen navigieren und diese bearbeiten. Führen Sie die folgenden Schritte aus, um diese Funktionalität in Ihre Anwendung zu integrieren.
 
-## الخطوة 1: قم بتحميل المستند الذي يحتوي على الجدول
+## Schritt 1: Laden Sie das Dokument mit der Tabelle
 
-أولاً ، نحتاج إلى تحميل المستند الذي يحتوي على الجدول الذي نريد نقل الخلية إليه. استخدم الكود التالي لإنجاز هذه الخطوة:
+Zuerst müssen wir das Dokument laden, das die Tabelle enthält, in die wir die Zelle verschieben möchten. Verwenden Sie den folgenden Code, um diesen Schritt auszuführen:
 
 ```csharp
 Document doc = new Document(MyDir + "Tables.docx");
 ```
 
-يقوم هذا الرمز بتحميل المستند المحدد (استبدل "MyDir +" Tables.docx“” مع المسار الفعلي للمستند الذي يحتوي على الجدول).
+Dieser Code lädt das angegebene Dokument (ersetzen Sie „MyDir + „Tables.docx“)„“ mit dem tatsächlichen Pfad Ihres Dokuments, das die Tabelle enthält).
 
-## الخطوة 2: انقل DocumentBuilder إلى خلية جدول محددة
+## Schritt 2: Verschieben Sie den DocumentBuilder in eine bestimmte Tabellenzelle
 
-بعد ذلك ، سننقل DocumentBuilder إلى خلية جدول محددة. استخدم الكود التالي لإجراء هذه الخطوة:
+Als Nächstes verschieben wir den DocumentBuilder in eine bestimmte Tabellenzelle. Verwenden Sie den folgenden Code, um diesen Schritt auszuführen:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -30,11 +30,11 @@ builder. MoveToCell(0, 2, 3, 0);
 builder.Write("\nCell content added by DocumentBuilder");
 ```
 
- ينشئ هذا الرمز DocumentBuilder من المستند الموجود ثم ينقل المؤشر من DocumentBuilder إلى خلية الجدول المحددة. أخيرًا ، يضيف محتوى إلى تلك الخلية باستخدام ملف DocumentBuilder`Write()` طريقة.
+ Dieser Code erstellt einen DocumentBuilder aus dem vorhandenen Dokument und bewegt dann den Cursor vom DocumentBuilder zur angegebenen Tabellenzelle. Schließlich fügt es mithilfe des DocumentBuilders Inhalt zu dieser Zelle hinzu`Write()` Methode.
 
-## الخطوة 3: تحقق من النتيجة
+## Schritt 3: Überprüfen Sie das Ergebnis
 
-يمكنك الآن التحقق من نجاح الانتقال إلى خلية الجدول. استخدم الكود التالي لإنجاز هذه الخطوة:
+Sie können nun überprüfen, ob die Verschiebung in die Tabellenzelle erfolgreich war. Verwenden Sie den folgenden Code, um diesen Schritt auszuführen:
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -43,12 +43,12 @@ Assert.AreEqual(table.Rows[2].Cells[3], builder.CurrentNode.ParentNode.ParentNod
 Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table.Rows[2].Cells[3].GetText().Trim());
 ```
 
-يتحقق هذا الرمز من أن الخلية المحددة هي بالفعل الخلية الحالية لـ DocumentBuilder. كما يتحقق من أن المحتوى الذي تمت إضافته بواسطة DocumentBuilder قد تم حفظه بشكل صحيح في خلية الجدول.
+Dieser Code überprüft, ob die angegebene Zelle tatsächlich die aktuelle Zelle des DocumentBuilder ist. Außerdem wird überprüft, ob der vom DocumentBuilder hinzugefügte Inhalt korrekt in der Tabellenzelle gespeichert wurde.
 
-هذا كل شئ ! لقد فهمت الآن كيفية استخدام وظيفة الانتقال إلى خلية الجدول في Aspose.Words for .NET باستخدام كود المصدر المقدم. يمكنك الآن دمج هذه الوظيفة في التطبيق الخاص بك ومعالجة خلايا جدول معينة في مستندات Word.
+Das ist alles ! Sie haben nun verstanden, wie Sie die Funktion „In Tabellenzelle verschieben“ von Aspose.Words für .NET mithilfe des bereitgestellten Quellcodes verwenden. Sie können diese Funktionalität jetzt in Ihre eigene Anwendung integrieren und bestimmte Tabellenzellen in Word-Dokumenten bearbeiten.
 
 
-### مثال على شفرة المصدر للانتقال إلى خلية جدول باستخدام Aspose.Words for .NET
+### Beispielquellcode zum Verschieben in eine Tabellenzelle mit Aspose.Words für .NET
 
 
 ```csharp
@@ -56,7 +56,7 @@ Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table
 	Document doc = new Document(MyDir + "Tables.docx");
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// انقل المنشئ إلى الصف 3 ، الخلية 4 من الجدول الأول.
+	// Verschieben Sie den Builder in Zeile 3, Zelle 4 der ersten Tabelle.
 	builder.MoveToCell(0, 2, 3, 0);
 	builder.Write("\nCell contents added by DocumentBuilder");
 	Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

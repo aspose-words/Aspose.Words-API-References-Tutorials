@@ -1,36 +1,36 @@
 ---
-title: ضغط الصورة
-linktitle: ضغط الصورة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لضغط الصور باستخدام Aspose.Words for .NET.
+title: Görüntü Sıkıştırma
+linktitle: Görüntü Sıkıştırma
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile görüntüleri sıkıştırmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/image-compression/
 ---
 
-تقدم هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام ميزة ضغط الصور مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية ضغط الصور في مستند وإنشاء ملف PDF بضغط الصور المناسب.
+Bu makale, görüntü sıkıştırma özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgedeki görüntüleri nasıl sıkıştıracağınızı ve uygun görüntü sıkıştırma ile bir PDF oluşturmayı öğrenebileceksiniz.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
-## الخطوة 1: تحديد دليل المستند
+## 1. Adım: Belge dizinini tanımlayın
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Başlamak için, belgelerinizin bulunduğu dizine giden yolu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## 2. Adım: Belgeyi yükleyin
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Ardından, işlemek istediğimiz belgeyi yüklememiz gerekiyor. Bu örnekte, belgenin "Rendering.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: قم بتكوين خيارات الحفظ كملف PDF باستخدام ضغط الصور
+## 3. Adım: Görüntü sıkıştırma ile PDF olarak kaydetme seçeneklerini yapılandırın
 
- لضغط الصور عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`PdfSaveOptions` هدف. يمكننا ضبط نوع ضغط الصور وجودة JPEG وخيارات التوافق مع PDF الأخرى إذا لزم الأمر.
+ PDF'ye dönüştürürken görüntüleri sıkıştırmak için,`PdfSaveOptions` nesne. Gerekirse görüntü sıkıştırma türü, JPEG kalitesi ve diğer PDF uyumluluk seçeneklerini ayarlayabiliriz.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -40,30 +40,30 @@ PreserveFormFields = true
 };
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع ضغط الصور
+## 4. Adım: Görüntü sıkıştırma ile belgeyi PDF olarak kaydedin
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Son olarak, daha önce yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedebiliriz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOptions);
 ```
 
-## الخطوة 5: قم بتكوين خيارات الحفظ في PDF / A-2u بضغط الصور
+## 5. Adım: Görüntü sıkıştırma ile PDF/A-2u'ya kaydetme seçeneklerini yapılandırın
 
-إذا كنت تريد إنشاء ملف PDF متوافق مع PDF / A-2u بضغط الصور ، يمكنك تكوين خيارات الحفظ الإضافية.
+Görüntü sıkıştırmalı PDF/A-2u uyumlu PDF oluşturmak istiyorsanız, ek kaydetme seçeneklerini yapılandırabilirsiniz.
 
 ```csharp
 PdfSaveOptions saveOptionsA2U = new PdfSaveOptions
 {
 Compliance = PdfCompliance.PdfA2u,
 ImageCompression = PdfImageCompression.Jpeg,
-JpegQuality=100, // استخدم ضغط JPEG بجودة 50٪ لتقليل حجم الملف.
+JpegQuality=100, // Dosya boyutunu azaltmak için %50 kalitede JPEG sıkıştırması kullanın.
 };
 ```
 
-## الخطوة 6: احفظ المستند بصيغة PDF / A-2u بضغط الصورة
+## 6. Adım: Belgeyi görüntü sıkıştırmalı PDF/A-2u olarak kaydedin
 
-احفظ المستند بتنسيق PDF / A-2u باستخدام خيارات الحفظ الإضافية التي تم تكوينها مسبقًا.
+Daha önce yapılandırılan ek kaydetme seçeneklerini kullanarak belgeyi PDF/A-2u formatında kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", saveOptionsA2U);
@@ -71,13 +71,13 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", save
 
 
 
-هذا كل شئ ! لقد نجحت في ضغط الصور في مستند وإنشاء ملف PDF بضغط الصور المناسب باستخدام Aspose.Words for .NET.
+Bu kadar ! Aspose.Words for .NET'i kullanarak bir belgedeki görüntüleri başarıyla sıkıştırdınız ve uygun görüntü sıkıştırmayla bir PDF oluşturdunuz.
 
-### عينة من التعليمات البرمجية المصدر لضغط الصور باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile görüntüleri sıkıştırmak için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", save
 	{
 		Compliance = PdfCompliance.PdfA2u,
 		ImageCompression = PdfImageCompression.Jpeg,
-		JpegQuality = 100, // استخدم ضغط JPEG بجودة 50٪ لتقليل حجم الملف.
+		JpegQuality = 100, // Dosya boyutunu azaltmak için %50 kalitede JPEG sıkıştırması kullanın.
 	};
 
 	

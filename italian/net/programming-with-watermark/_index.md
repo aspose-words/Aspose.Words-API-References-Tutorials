@@ -1,15 +1,15 @@
 ---
-title: البرمجة بالعلامة المائية
-linktitle: البرمجة بالعلامة المائية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إضافة نص العلامة المائية مع خيارات محددة
+title: Programmazione con filigrana
+linktitle: Programmazione con filigrana
+second_title: Riferimento all'API Aspose.Words per .NET
+description: I tutorial contengono l'aggiunta di una filigrana di testo con opzioni specifiche
 type: docs
 weight: 1570
 url: /it/net/programming-with-watermark/
 ---
-تعد البرمجة باستخدام العلامة المائية موردًا شاملاً يرشدك خلال عملية البرمجة باستخدام العلامات المائية في مستندات Word باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية توضيحات خطوة بخطوة ورمز مصدر مفصل وأمثلة عملية لإضافة العلامات المائية وتخصيصها وإدارتها في مستندات Word الخاصة بك. ستتعلم كيفية إضافة نص أو صور أو أشكال أو رسومات كعلامات مائية ، وضبط موضعها ومظهرها ، وخيارات متقدمة مثل إضافة علامات مائية مخصصة باستخدام الحقول. هذا المورد ضروري للمطورين الذين يرغبون في أتمتة إدارة العلامات المائية في مستندات Word الخاصة بهم باستخدام Aspose.Words for .NET.
+Programmazione con filigrana è una risorsa completa che ti guida attraverso il processo di programmazione con filigrane nei documenti di Word utilizzando la libreria Aspose.Words per .NET. I tutorial forniscono spiegazioni dettagliate, codice sorgente dettagliato ed esempi pratici per l'aggiunta, la personalizzazione e la gestione di filigrane nei documenti Word. Imparerai come aggiungere testo, immagini, forme o grafica come filigrane, regolarne la posizione e l'aspetto e opzioni avanzate come l'aggiunta di filigrane personalizzate utilizzando i campi. Questa risorsa è essenziale per gli sviluppatori che desiderano automatizzare la gestione della filigrana nei propri documenti Word utilizzando Aspose.Words per .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [أضف علامة مائية نصية مع خيارات محددة](./add-text-watermark-with-specific-options/) | تعرف على كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
+| [Aggiungi filigrana di testo con opzioni specifiche](./add-text-watermark-with-specific-options/) | Scopri come aggiungere una filigrana di testo con opzioni specifiche utilizzando Aspose.Words per .NET. Guida passo dopo passo. |

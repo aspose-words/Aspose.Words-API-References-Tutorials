@@ -1,67 +1,67 @@
 ---
-title: تحويل الشكل إلى مكتب الرياضيات
-linktitle: تحويل الشكل إلى مكتب الرياضيات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل الأشكال إلى صيغ الرياضيات في Office عند تحميل المستندات باستخدام Aspose.Words for .NET.
+title: Şekli Office Matematiğine Dönüştür
+linktitle: Şekli Office Matematiğine Dönüştür
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile belgeleri yüklerken şekilleri Office matematik formüllerine nasıl dönüştüreceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/convert-shape-to-office-math/
 ---
 
-عند العمل مع المستندات التي تحتوي على أشكال رياضية في تطبيق C # ، قد تحتاج إلى تحويلها إلى صيغ الرياضيات في Office لتحسين التوافق والعرض التقديمي. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحويل الأشكال إلى صيغ الرياضيات في Office أثناء تحميل مستند. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند بتحويل الأشكال إلى صيغ الرياضيات في Office باستخدام LoadOptions.
+Bir C# uygulamasında matematik şekilleri içeren belgelerle çalışırken, daha iyi uyumluluk ve sunum için bunları Office matematik formüllerine dönüştürmeniz gerekebilir. .NET için Aspose.Words kitaplığıyla, bir belge yüklerken şekilleri kolayca Office matematik formüllerine dönüştürebilirsiniz. Bu adım adım kılavuzda, LoadOptions kullanarak şekilleri Office matematik formüllerine dönüştüren bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, .NET dahil olmak üzere farklı platformlarda Word belgeleri oluşturmak, düzenlemek, dönüştürmek ve korumak için güçlü bir kitaplıktır. Belgeleri işlemek için metin ekleme, biçimlendirmeyi değiştirme, bölümler ekleme ve çok daha fazlası gibi birçok özellik sunar.
 
-## تكوين خيارات التحميل
+## Yükleme Seçeneklerini Yapılandırma
 
-الخطوة الأولى هي تكوين خيارات التحميل لوثيقتنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. في حالتنا ، نريد تحويل الأشكال إلى صيغ الرياضيات في Office ، لذلك نحتاج إلى تعيين الخاصية ConvertShapeToOfficeMath إلى true. هيريس كيفية القيام بذلك:
+İlk adım, belgemiz için yükleme seçeneklerini yapılandırmaktır. Yükleme parametrelerini belirtmek için LoadOptions sınıfını kullanın. Bizim durumumuzda, şekilleri Office matematik formüllerine dönüştürmek istiyoruz, bu nedenle ConvertShapeToOfficeMath özelliğini true olarak ayarlamamız gerekiyor. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };
 ```
 
-قمنا بإنشاء كائن LoadOptions جديد وقمنا بتعيين الخاصية ConvertShapeToOfficeMath على true لتمكين تحويل الأشكال إلى صيغ الرياضيات في Office عند تحميل المستند.
+Yeni bir LoadOptions nesnesi oluşturuyoruz ve belgeyi yüklerken şekilleri Office matematik formüllerine dönüştürmeyi etkinleştirmek için ConvertShapeToOfficeMath özelliğini true olarak ayarlıyoruz.
 
-## تحميل المستند مع تحويل الأشكال إلى صيغ الرياضيات في Office
+## Şekilleri Office matematik formüllerine dönüştürerek belge yükleme
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل المستند باستخدام فئة Document وتحديد خيارات التحميل. هنا مثال :
+Yükleme seçeneklerini yapılandırdığımıza göre, Document sınıfını kullanarak belgeyi yükleyebilir ve yükleme seçeneklerini belirtebiliriz. İşte bir örnek :
 
 ```csharp
 Document doc = new Document(dataDir + "Office math.docx", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Office math.docx" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+Bu örnekte, belirtilen yükleme seçeneklerini kullanarak belgeler dizininde bulunan "Office math.docx" belgesini yüklüyoruz.
 
-## تسجيل الوثيقة
+## Belgenin kaydı
 
-بعد تحميل المستند بتحويل الأشكال إلى صيغ الرياضيات في Office ، يمكنك حفظه بالتنسيق المطلوب باستخدام طريقة Save لفئة Document. على سبيل المثال ، لحفظ المستند بتنسيق docx.
+Şekilleri Office matematik formüllerine dönüştüren belgeyi yükledikten sonra, Belge sınıfının Kaydet yöntemini kullanarak istediğiniz biçimde kaydedebilirsiniz. Örneğin, belgeyi .docx biçiminde kaydetmek için:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.Docx);
 ```
 
-تأكد من استبدال "dataDir" بمسار الدليل إلى مستنداتك.
+Belgelerinizin dizin yolu ile "dataDir" değiştirdiğinizden emin olun.
 
-### مثال على كود المصدر لـ LoadOptions مع وظيفة "Convert Shape To Office Math" باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan "Shape'i Office Math'a Dönüştür" işlevine sahip LoadOptions için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل بوظيفة "تحويل الشكل"
+// "Şekli Dönüştür" işleviyle yükleme seçeneklerinin yapılandırılması
 
   To Office Math"
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };
 
-// قم بتحميل المستند بالخيارات المحددة
+// Belgeyi belirtilen seçeneklerle yükleyin
 Document doc = new Document(dataDir + "Office math.docx", loadOptions);
 
-//احفظ المستند بالتنسيق المطلوب
+//Belgeyi istediğiniz biçimde kaydedin
 doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.Docx);
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند بتحويل الأشكال إلى صيغ الرياضيات في Office باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يوفر تحويل الأشكال إلى صيغ الرياضيات في Office توافقًا وعرضًا أفضل للمستندات التي تحتوي على عناصر رياضية.
+Bu kılavuzda, .NET için Aspose.Words kitaplığını kullanarak şekilleri Office matematik formüllerine dönüştüren bir belgenin nasıl yükleneceğini açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. Şekilleri Office matematik formüllerine dönüştürmek, matematik öğeleri içeren belgelerin daha iyi uyumluluğunu ve sunumunu sağlar.

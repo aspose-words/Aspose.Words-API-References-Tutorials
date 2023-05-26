@@ -1,45 +1,45 @@
 ---
-title: أضف زوايا مقصوصة
-linktitle: أضف زوايا مقصوصة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة شكل بزوايا مقصوصة إلى مستند Word باستخدام Aspose.Words for .NET.
+title: Добавить обрезанные углы
+linktitle: Добавить обрезанные углы
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как добавить фигуру с обрезанными углами в документ Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-shapes/add-corners-snipped/
 ---
 
- يشرح هذا البرنامج التعليمي كيفية إضافة شكل بزوايا مقصوصة إلى مستند Word باستخدام Aspose.Words for .NET. يمكن تخصيص شكل الزوايا المقطوعة وإدخالها باستخدام ملف`InsertShape` طريقة.
+ В этом руководстве объясняется, как добавить фигуру с обрезанными углами в документ Word с помощью Aspose.Words для .NET. Форму обрезанных углов можно настроить и вставить с помощью`InsertShape` метод.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Предпосылки
+Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Установлена библиотека Aspose.Words for .NET.
+- Базовые знания C# и работы с документами Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Шаг 1. Настройте каталог документов
+ Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Шаг 2: Создайте новый документ и DocumentBuilder
+ Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для работы с документом.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: أدخل شكل الزوايا المقصوصة
- استخدم ال`InsertShape` طريقة`DocumentBuilder` لإدراج شكل بزوايا مقصوصة. حدد نوع الشكل (في هذه الحالة ،`ShapeType.TopCornersSnipped`) وتقديم الحجم المطلوب للشكل.
+## Шаг 3: Вставьте фигуру с обрезанными углами
+ Использовать`InsertShape` метод`DocumentBuilder` объект, чтобы вставить фигуру с обрезанными углами. Укажите тип фигуры (в данном случае`ShapeType.TopCornersSnipped`) и укажите желаемый размер формы.
 
 ```csharp
 builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithShapes.AddCornersSnipped.docx".
+## Шаг 4: Сохраните документ
+ Сохраните документ в указанную директорию с помощью`Save` метод. Укажите желаемое имя файла с соответствующим расширением файла. В этом примере мы сохраняем документ как «WorkingWithShapes.AddCornersSnipped.docx».
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
@@ -49,10 +49,10 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 ```
 
-### مثال على شفرة المصدر لـ Add Corners Snipped باستخدام Aspose.Words for .NET 
+### Пример исходного кода для добавления отрезанных углов с использованием Aspose.Words для .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -66,4 +66,4 @@ doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 
 ```
 
-هذا كل شيء! لقد نجحت في إضافة شكل مقطوع من الزوايا إلى مستند Word باستخدام Aspose.Words for .NET.
+Вот и все! Вы успешно добавили фигуру с обрезанными углами в документ Word с помощью Aspose.Words для .NET.

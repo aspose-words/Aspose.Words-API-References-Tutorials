@@ -1,62 +1,62 @@
 ---
-title: الوصول إلى الإشارات المرجعية
-linktitle: الوصول إلى الإشارات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الوصول إلى الإشارات المرجعية في مستند Word باستخدام Aspose.Words for .NET.
+title: Få tillgång till bokmärken
+linktitle: Få tillgång till bokmärken
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du kommer åt bokmärken i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-bookmarks/access-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إشارات مرجعية في Aspose.Words for .NET library. توفر هذه الميزة الوصول إلى إشارات مرجعية محددة في مستند Word.
+I den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder Access Bookmarks-funktionen i Aspose.Words för .NET-biblioteket. Den här funktionen ger åtkomst till specifika bokmärken i ett Word-dokument.
 
-## المتطلبات الأساسية
+## Förutsättningar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundläggande kunskaper i C#-språket.
+- .NET-utvecklingsmiljö med Aspose.Words-biblioteket installerat.
 
-## الخطوة 1: تحميل المستند
+## Steg 1: Ladda dokumentet
 
- قبل أن نبدأ في الوصول إلى الإشارات المرجعية ، نحتاج إلى تحميل مستند Word باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` كائن يحدد مسار ملف المستند:
+ Innan vi börjar komma åt bokmärken måste vi ladda ett Word-dokument med Aspose.Words för .NET. Detta kan göras genom att instansiera en`Document` objekt som anger sökvägen till dokumentfilen:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## الخطوة 2: الوصول إلى الإشارات المرجعية
+## Steg 2: Tillgång till bokmärken
 
-بمجرد تحميل المستند ، يمكننا الوصول إلى الإشارات المرجعية في المستند. هناك طريقتان للوصول إلى الإشارات المرجعية: عن طريق الفهرس والاسم.
+När dokumentet har laddats kan vi komma åt bokmärkena i dokumentet. Det finns två sätt att komma åt bokmärken: genom index och med namn.
 
-- الوصول عن طريق الفهرس: في مثالنا ، نستخدم الفهرس 0 للوصول إلى الإشارة المرجعية الأولى للمستند:
+- Åtkomst via index: I vårt exempel använder vi index 0 för att komma åt dokumentets första bokmärke:
 
 ```csharp
 Bookmark bookmark1 = doc.Range.Bookmarks[0];
 ```
 
-- الوصول بالاسم: في مثالنا ، نستخدم الاسم "MyBookmark3" للوصول إلى إشارة مرجعية معينة في المستند:
+- Access by name: I vårt exempel använder vi namnet "MyBookmark3" för att komma åt ett specifikt bokmärke i dokumentet:
 
 ```csharp
 Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
 ```
 
-### مثال على شفرة المصدر للوصول إلى الإشارات المرجعية باستخدام Aspose.Words for .NET
+### Exempel på källkod för Access Bookmarks med Aspose.Words för .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح الوصول إلى الإشارات المرجعية باستخدام Aspose.Words for .NET:
+Här är det fullständiga exemplet på källkoden för att visa åtkomst till bokmärken med Aspose.Words för .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 	
-	// حسب الفهرس:
+	// Efter index:
 	Bookmark bookmark1 = doc.Range.Bookmarks[0];
-	// بالاسم:
+	// Vid namn:
 	Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
    
 ```
 
-## خاتمة
+## Slutsats
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة Access Bookmarks في Aspose.Words for .NET. اتبعنا دليلًا تفصيليًا لتحميل مستند والوصول إلى الإشارات المرجعية باستخدام الفهرس والاسم.
+I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder Access Bookmarks-funktionen i Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att ladda upp ett dokument och komma åt bokmärken med hjälp av index och namn.

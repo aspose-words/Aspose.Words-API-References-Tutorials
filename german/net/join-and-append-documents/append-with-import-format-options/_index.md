@@ -1,70 +1,70 @@
 ---
-title: إلحاق بخيارات تنسيق الاستيراد
-linktitle: إلحاق بخيارات تنسيق الاستيراد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند بخيارات تنسيق الاستيراد باستخدام Aspose.Words for .NET.
+title: Mit Importformatoptionen anhängen
+linktitle: Mit Importformatoptionen anhängen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument mit Importformatoptionen anhängen.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/append-with-import-format-options/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق محتويات مستند بآخر بخيارات تنسيق الاستيراد. يوضح كود المصدر المقدم كيفية فتح المستندات المصدر والوجهة ، وتحديد خيارات تنسيق الاستيراد ، وإلحاق المستند المصدر بالمستند الوجهة.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET den Inhalt eines Dokuments mit Importformatoptionen an ein anderes anhängen. Der bereitgestellte Quellcode zeigt, wie Sie die Quell- und Zieldokumente öffnen, Importformatoptionen festlegen und das Quelldokument an das Zieldokument anhängen.
 
-## الخطوة 1: قم بإعداد المشروع
+## Schritt 1: Richten Sie das Projekt ein
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words für .NET-Bibliothek installiert. Sie können es von der offiziellen Aspose-Website herunterladen oder den NuGet-Paketmanager verwenden, um es zu installieren.
+- Ein Dokumentverzeichnispfad, in dem sich die Quell- und Zieldokumente befinden.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Schritt 2: Öffnen Sie die Quell- und Zieldokumente
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Öffnen Sie die Quell- und Zieldokumente mit`Document` Klassenkonstruktor. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## الخطوة 3: حدد خيارات تنسيق الاستيراد
+## Schritt 3: Geben Sie die Optionen für das Importformat an
 
- قم بإنشاء مثيل لـ`ImportFormatOptions` فئة لتحديد خيارات تنسيق الاستيراد. في هذا المثال ، نستخدم الامتداد`KeepSourceNumbering` للتأكد من استخدام الترقيم من المستند المصدر في حالة وجود تعارضات مع المستند الوجهة.
+ Erstellen Sie eine Instanz von`ImportFormatOptions` Klasse, um die Importformatoptionen anzugeben. In diesem Beispiel verwenden wir die`KeepSourceNumbering` Eigenschaft, um sicherzustellen, dass die Nummerierung aus dem Quelldokument verwendet wird, wenn es zu Konflikten mit dem Zieldokument kommt.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بالمستند الوجهة
+## Schritt 4: Hängen Sie das Quelldokument an das Zieldokument an
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.UseDestinationStyles` كمعامل ثاني لاستخدام أنماط وتنسيق المستند الوجهة.
+ Benutzen Sie die`AppendDocument` Methode des Zieldokuments, um das Quelldokument anzuhängen. Passieren`ImportFormatMode.UseDestinationStyles` als zweiten Parameter, um die Stile und Formatierungen des Zieldokuments zu verwenden.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## الخطوة 5: احفظ المستند الوجهة
+## Schritt 5: Speichern Sie das Zieldokument
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Speichern Sie abschließend das geänderte Zieldokument mit`Save` Methode der`Document` Objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند بخيارات تنسيق الاستيراد باستخدام Aspose.Words for .NET.
+Damit ist die Implementierung des Anhängens eines Dokuments mit Importformatoptionen mithilfe von Aspose.Words für .NET abgeschlossen.
 
-### مثال على الكود المصدري للإلحاق بخيارات تنسيق الاستيراد باستخدام Aspose.Words for .NET 
+### Beispielquellcode für Append With Import Format Options mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//حدد أنه في حالة تعارض الترقيم في المستندات المصدر والوجهة ،
-	// ثم سيتم استخدام الترقيم من المستند المصدر.
+	//Geben Sie an, dass bei Nummerierungskonflikten in Quell- und Zieldokumenten
+	// dann wird die Nummerierung aus dem Quelldokument verwendet.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 

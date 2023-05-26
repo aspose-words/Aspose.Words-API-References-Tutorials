@@ -1,64 +1,64 @@
 ---
-title: اتجاه نص المستند
-linktitle: اتجاه نص المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديد اتجاه النص في مستنداتك باستخدام Aspose.Words for .NET. تحسين العرض للغات التي تكتب من اليمين إلى اليسار.
+title: Dirección del texto del documento
+linktitle: Dirección del texto del documento
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a especificar la dirección del texto en sus documentos con Aspose.Words para .NET. Mejore la visualización de los idiomas de derecha a izquierda.
 type: docs
 weight: 10
 url: /es/net/programming-with-txtloadoptions/document-text-direction/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لميزة "Document Text Direction" مع Aspose.Words for .NET. تتيح لك هذه الميزة تحديد اتجاه النص في المستند ، وهو أمر مفيد بشكل خاص للغات المكتوبة من اليمين إلى اليسار ، مثل العبرية أو العربية.
+En este tutorial, exploraremos el código fuente de C# proporcionado para la función "Dirección del texto del documento" con Aspose.Words para .NET. Esta característica le permite especificar la dirección del texto en un documento, lo cual es especialmente útil para los idiomas que se escriben de derecha a izquierda, como el hebreo o el árabe.
 
-## الخطوة الأولى: تهيئة البيئة
+## Paso 1: Configuración del entorno
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Antes de comenzar, asegúrese de haber configurado su entorno de desarrollo con Aspose.Words para .NET. Asegúrese de haber agregado las referencias necesarias e importado los espacios de nombres apropiados.
 
-## الخطوة 2: تكوين خيارات التحميل
+## Paso 2: configurar las opciones de carga
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection. Auto };
 ```
 
- في هذه الخطوة ، نقوم بتكوين خيارات تحميل المستند. نخلق ملف`TxtLoadOptions` كائن وتعيين`DocumentDirection` ملكية ل`DocumentDirection.Auto`. تخبر هذه القيمة Aspose.Words بتحديد اتجاه النص تلقائيًا بناءً على محتوى المستند.
+ En este paso, configuramos las opciones de carga de documentos. Creamos un nuevo`TxtLoadOptions` objeto y establecer el`DocumentDirection` propiedad a`DocumentDirection.Auto`. Este valor le dice a Aspose.Words que determine automáticamente la dirección del texto según el contenido del documento.
 
-## الخطوة 3: تحميل المستند
+## Paso 3: Cargar el documento
 
 ```csharp
 Document doc = new Document(dataDir + "Hebrew text.txt", loadOptions);
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف نصي للتحميل. نستخدم أيضًا خيارات التحميل المحددة.
+ En este paso, cargamos el documento usando el`Document` método y pasando la ruta al archivo de texto para cargar. También utilizamos las opciones de carga especificadas.
 
-## الخطوة 4: معالجة الفقرة وعرض اتجاه النص
+## Paso 4: Manipule el párrafo y muestre la dirección del texto
 
 ```csharp
 Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- في هذه الخطوة ، نصل إلى الفقرة الأولى من المستند باستخدام امتداد`FirstSection` و`Body` ملكيات. بعد ذلك ، نصل إلى`ParagraphFormat.Bidi` للحصول على اتجاه نص الفقرة. ثم نعرض هذه القيمة في وحدة التحكم.
+ En este paso, accedemos al primer párrafo del documento usando el`FirstSection` y`Body` propiedades. A continuación, accedemos a la`ParagraphFormat.Bidi` propiedad para obtener la dirección del texto del párrafo. Luego mostramos este valor en la consola.
 
-## الخطوة 5: احفظ المستند
+## Paso 5: Guarde el documento
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ المستند الناتج بتنسيق docx. باستخدام الامتداد`Save` الطريقة وتمرير المسار إلى ملف الإخراج.
+ En este último paso, guardamos el documento resultante en formato .docx usando el`Save` y pasando la ruta al archivo de salida.
 
-يمكنك الآن تشغيل الكود المصدري لتحميل المستند النصي وتحديد اتجاه النص. سيتم حفظ المستند الناتج في الدليل المحدد بالاسم "WorkingWithTxtLoadOptions.DocumentTextDirection.docx".
+Ahora puede ejecutar el código fuente para cargar el documento de texto y determinar la dirección del texto. El documento resultante se guardará en el directorio especificado con el nombre "WorkingWithTxtLoadOptions.DocumentTextDirection.docx".
 
-### نموذج التعليمات البرمجية المصدر لوظيفة اتجاه نص المستند باستخدام Aspose.Words for .NET.
+### Ejemplo de código fuente para la funcionalidad de dirección del texto del documento con Aspose.Words para .NET.
 
 
 ```csharp
 
             
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection.Auto };
@@ -73,18 +73,18 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
         
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا البرنامج التعليمي ، استكشفنا ميزة اتجاه نص المستند في Aspose.Words for .NET. لقد تعلمنا كيفية تحديد اتجاه النص في مستند ، خاصة بالنسبة للغات المكتوبة من اليمين إلى اليسار ، مثل العبرية أو العربية.
+En este tutorial, exploramos la característica de dirección del texto del documento en Aspose.Words para .NET. Aprendimos a especificar la dirección del texto en un documento, especialmente para los idiomas que se escriben de derecha a izquierda, como el hebreo o el árabe.
 
-هذه الميزة ضرورية لضمان عرض النص بشكل صحيح في المستندات متعددة اللغات. باستخدام خيارات التحميل المناسبة ، يمكن لـ Aspose.Words اكتشاف اتجاه النص تلقائيًا وتطبيقه على المستند.
+Esta característica es esencial para garantizar que el texto se muestre correctamente en documentos multilingües. Mediante el uso de las opciones de carga adecuadas, Aspose.Words puede detectar automáticamente la dirección del texto y aplicarlo al documento.
 
-باستخدام Aspose.Words ، يمكنك بسهولة التعامل مع اتجاه النص في مستنداتك ، مما يوفر تجربة قراءة سلسة وبديهية للمستخدمين.
+Con Aspose.Words, puede manipular fácilmente la dirección del texto en sus documentos, brindando una experiencia de lectura fluida e intuitiva para los usuarios.
 
-من المهم ملاحظة أن هذه الميزة مفيدة بشكل خاص عند العمل مع اللغات التي تتطلب اتجاهًا نصيًا محددًا. يجعل Aspose.Words هذه المهمة سهلة من خلال توفير أدوات قوية لإدارة اتجاه النص في مستنداتك.
+Es importante tener en cuenta que esta función es especialmente útil cuando se trabaja con idiomas que requieren una dirección de texto específica. Aspose.Words facilita esta tarea al proporcionar herramientas poderosas para administrar la dirección del texto en sus documentos.
 
-تذكر استخدام خيارات التحميل المناسبة ، مثل ضبط اتجاه النص التلقائي ، للحصول على النتائج التي تريدها في مستنداتك.
+Recuerde usar las opciones de carga adecuadas, como configurar la dirección automática del texto, para obtener los resultados que desea en sus documentos.
 
-يوفر Aspose.Words for .NET العديد من الميزات المتقدمة لمعالجة المستندات وإنشائها. من خلال استكشاف المزيد من الوثائق والأمثلة المقدمة من Aspose.Words ، ستتمكن من استغلال إمكانات هذه المكتبة القوية بشكل كامل.
+Aspose.Words para .NET ofrece muchas características avanzadas para la manipulación y generación de documentos. Al explorar más a fondo la documentación y los ejemplos proporcionados por Aspose.Words, podrá aprovechar al máximo las capacidades de esta poderosa biblioteca.
 
-لذلك ، لا تتردد في دمج اتجاه نص المستند في Aspose.Words لمشاريع .NET واستفد من مزاياها لإنشاء مستندات متعددة اللغات جذابة وعالية الجودة.
+Por lo tanto, no dude en integrar la dirección del texto del documento en sus proyectos Aspose.Words para .NET y aproveche sus beneficios para crear documentos multilingües atractivos y de alta calidad.

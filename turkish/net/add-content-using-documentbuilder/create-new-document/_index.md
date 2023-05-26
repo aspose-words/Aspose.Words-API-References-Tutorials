@@ -1,71 +1,71 @@
 ---
-title: قم بإنشاء مستند جديد
-linktitle: قم بإنشاء مستند جديد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء مستند Word جديد وإضافة محتوى باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Yeni Belge Oluştur
+linktitle: Yeni Belge Oluştur
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak nasıl yeni bir Word belgesi oluşturacağınızı ve içerik ekleyeceğinizi öğrenin. Adım adım rehber.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/create-new-document/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، ستتعلم كيفية إنشاء مستند Word جديد من البداية باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إنشاء مستند جديد وإضافة محتوى إليه باستخدام فئة DocumentBuilder.
+Bu adım adım öğreticide, Aspose.Words for .NET kullanarak sıfırdan yeni bir Word belgesi oluşturmayı öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, DocumentBuilder sınıfını kullanarak yeni bir belge oluşturabilecek ve buna içerik ekleyebileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: قم بإنشاء مستند جديد
-للبدء ، أنشئ مستندًا جديدًا باستخدام فئة المستند:
+## 1. Adım: Yeni Bir Belge Oluşturun
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun:
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة الثانية: إضافة محتوى إلى المستند
-بعد ذلك ، استخدم كائن DocumentBuilder لإضافة محتوى إلى المستند. قم بتهيئة DocumentBuilder بالمستند الذي تم إنشاؤه حديثًا:
+## 2. Adım: Belgeye İçerik Ekleyin
+Ardından, belgeye içerik eklemek için bir DocumentBuilder nesnesi kullanın. DocumentBuilder'ı yeni oluşturulan belgeyle başlatın:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Hello World!");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إضافة المحتوى المطلوب ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 3. Adım: Belgeyi Kaydedin
+İstediğiniz içeriği ekledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 ```
 
-## مثال كود المصدر لإنشاء مستند جديد باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لإنشاء مستند جديد باستخدام Aspose.Words for .NET:
+## Aspose.Words for .NET kullanarak Yeni Belge Oluşturmak için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak yeni bir belge oluşturmak için eksiksiz kaynak kodu burada:
 
 ```csharp
 Document doc = new Document();
 
-// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Hello World!");
 
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 ```
 
-## خاتمة
+## Çözüm
 
-تهانينا! لقد تعلمت بنجاح كيفية إنشاء مستند Word جديد باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إنشاء مستندات جديدة برمجيًا وإضافة محتوى إليها باستخدام فئة DocumentBuilder.
+Tebrikler! Aspose.Words for .NET kullanarak yeni bir Word belgesi oluşturmayı başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, artık yeni belgeleri program aracılığıyla oluşturabilir ve DocumentBuilder sınıfını kullanarak bunlara içerik ekleyebilirsiniz.
 
-يمكنك الآن إنشاء مستندات Word وتخصيصها بثقة وفقًا لمتطلباتك المحددة.
+Artık Word belgelerini özel gereksinimlerinize göre güvenle oluşturabilir ve özelleştirebilirsiniz.
 
-### مثال على شفرة المصدر لإنشاء مستند جديد باستخدام Aspose.Words for .NET:
+### Aspose.Words for .NET kullanarak Yeni Belge Oluşturmak için örnek kaynak kodu:
 
 ```csharp
 Document doc = new Document();
 
-// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Hello World!");
 
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 ```
 
-تذكر أن تقوم بضبط مسار الملف واسمه في الكود لحفظ المستند في الموقع المطلوب على نظامك.
+Belgeyi sisteminizde istediğiniz konuma kaydetmek için koddaki dosya yolunu ve adını ayarlamayı unutmayın.
 

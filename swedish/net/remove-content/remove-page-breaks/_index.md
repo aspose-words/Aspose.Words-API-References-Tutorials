@@ -1,54 +1,54 @@
 ---
-title: إزالة فواصل الصفحات
-linktitle: إزالة فواصل الصفحات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة فواصل الصفحات في مستند باستخدام Aspose.Words Library for .NET. اتبع دليلنا المفصل خطوة بخطوة للحصول على تخطيط سلس.
+title: Ta bort sidbrytningar
+linktitle: Ta bort sidbrytningar
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du tar bort sidbrytningar i ett dokument med Aspose.Words Library för .NET. Följ vår steg-för-steg-guide för en sömlös layout.
 type: docs
 weight: 10
 url: /sv/net/remove-content/remove-page-breaks/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف كيفية إزالة فواصل الصفحات من مستند باستخدام مكتبة Aspose.Words for .NET. يمكن أن تتداخل فواصل الصفحات أحيانًا مع تنسيق المستند وتخطيطه ، وقد يكون من الضروري إزالتهما برمجيًا. سنقدم دليلاً خطوة بخطوة لمساعدتك على فهم العملية وتنفيذها في مشاريع C # الخاصة بك.
+den här handledningen kommer vi att utforska hur man tar bort sidbrytningar från ett dokument med hjälp av Aspose.Words for .NET-biblioteket. Sidbrytningar kan ibland störa formateringen och layouten av ett dokument, och det kan vara nödvändigt att ta bort dem programmatiskt. Vi kommer att tillhandahålla en steg-för-steg-guide som hjälper dig att förstå processen och implementera den i dina egna C#-projekt.
 
-## متطلبات
+## Krav
 
-قبل أن نبدأ ، تأكد من توفر لديك ما يلي:
+Innan vi börjar, se till att du har följande:
 
-- المعرفة الأساسية بلغة البرمجة C #
-- تثبيت Aspose.Words لمكتبة .NET
-- Visual Studio أو أي بيئة تطوير أخرى لـ C # تم إعدادها
+- Grundläggande kunskaper i programmeringsspråket C#
+- Aspose.Words för .NET-biblioteket installerat
+- Visual Studio eller någon annan C#-utvecklingsmiljö som konfigurerats
 
-## الخطوة الأولى: تهيئة البيئة
+## Steg 1: Konfigurera miljön
 
-للبدء ، قم بإنشاء مشروع C # جديد في بيئة التطوير المفضلة لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET بشكل صحيح في مشروعك.
+För att komma igång, skapa ett nytt C#-projekt i din föredragna utvecklingsmiljö. Se till att Aspose.Words för .NET-biblioteket är korrekt refererat i ditt projekt.
 
-## الخطوة الثانية: تحميل المستند
+## Steg 2: Ladda dokumentet
 
-لإزالة فواصل الصفحات من المستند ، نحتاج أولاً إلى تحميل المستند في الذاكرة. يوضح الكود التالي كيفية تحميل مستند من دليل معين:
+För att ta bort sidbrytningar från ett dokument måste vi först ladda dokumentet i minnet. Följande kod visar hur man laddar ett dokument från en specifik katalog:
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى المستند الخاص بك.
+ Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument.
 
-## الخطوة 3: إزالة فواصل الصفحات
+## Steg 3: Ta bort sidbrytningar
 
-بمجرد تحميل المستند ، يمكننا البدء في إزالة فواصل الصفحات. يوضح مقتطف الشفرة أدناه كيفية تكرار جميع الفقرات في المستند والتحقق من فواصل الصفحات وإزالتها:
+När dokumentet har laddats kan vi börja ta bort sidbrytningarna. Kodavsnittet nedan visar hur man itererar genom alla stycken i dokumentet, kontrollerar efter sidbrytningar och tar bort dem:
 
 ```csharp
 NodeCollection paragraphs = doc.GetChildNodes(NodeType.Paragraph, true);
 
 foreach (Paragraph para in paragraphs)
 {
-     // إذا كانت الفقرة تحتوي على فاصل صفحات من قبل ، فقم بمسحها
+     // Om stycket har en sidbrytning tidigare, rensa den
      if (para.ParagraphFormat.PageBreakBefore)
          para.ParagraphFormat.PageBreakBefore = false;
 
-     // تحقق من كل عمليات التشغيل في الفقرة بحثًا عن فواصل الصفحات وقم بإزالتها
+     // Kontrollera alla körningar i stycket för sidbrytningar och ta bort dem
      foreach(Run run in para.Runs)
      {
          if (run.Text.Contains(ControlChar.PageBreak))
@@ -57,36 +57,36 @@ foreach (Paragraph para in paragraphs)
 }
 ```
 
-يتكرر مقتطف الشفرة أعلاه عبر جميع الفقرات في المستند ويتحقق مما إذا كانت كل فقرة بها فاصل صفحات قبلها. إذا تم الكشف عن فاصل صفحة ، يتم مسحه. بعد ذلك ، يتحقق من كل تشغيل داخل الفقرة بحثًا عن فواصل الصفحات ويزيلها.
+Ovanstående kodavsnitt itererar genom alla stycken i dokumentet och kontrollerar om varje stycke har en sidbrytning före sig. Om en sidbrytning upptäcks rensas den. Sedan kontrollerar den varje körning i stycket för sidbrytningar och tar bort dem.
 
-## الخطوة 4: حفظ المستند المعدل
+## Steg 4: Spara det ändrade dokumentet
 
-بعد إزالة فواصل الصفحات ، نحتاج إلى حفظ المستند المعدل. يوضح الكود التالي كيفية حفظ المستند المعدل في موقع معين:
+Efter att ha tagit bort sidbrytningarna måste vi spara det ändrade dokumentet. Följande kod visar hur man sparar det ändrade dokumentet på en specifik plats:
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- يستبدل`"modified-document.docx"` بالاسم الذي تريده للمستند المعدل.
+ Byta ut`"modified-document.docx"` med önskat namn för ditt modifierade dokument.
 
-### نموذج شفرة مصدر لإزالة فواصل الصفحات باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Remove Page Breaks med Aspose.Words för .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "your-document.docx");
 
 NodeCollection paragraphs = doc.GetChildNodes(NodeType.Paragraph, true);
 
 foreach (Paragraph para in paragraphs)
 {
-	// إذا كانت الفقرة تحتوي على فاصل صفحات قبل المجموعة ، فقم بمسحها.
+	// Om stycket har en sidbrytning före uppsättningen, rensa den.
 	if (para.ParagraphFormat.PageBreakBefore)
 		para.ParagraphFormat.PageBreakBefore = false;
 
-	//تحقق من كل عمليات التشغيل في الفقرة بحثًا عن فواصل الصفحات وقم بإزالتها.
+	//Kontrollera alla körningar i stycket för sidbrytningar och ta bort dem.
 	foreach (Run run in para.Runs)
 	{
 		if (run.Text.Contains(ControlChar.PageBreak))
@@ -98,6 +98,6 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ```
 
-## خاتمة
+## Slutsats
 
-في هذا البرنامج التعليمي ، تعلمنا كيفية إزالة فواصل الصفحات من مستند باستخدام مكتبة Aspose.Words for .NET. باتباع الدليل خطوة بخطوة ، يجب أن تكون قادرًا الآن على تنفيذ هذه الوظيفة في مشاريع C # الخاصة بك. يمكن أن تساعدك إزالة فواصل الصفحات في الحفاظ على تخطيط وتنسيق متسقين في مستنداتك.
+I den här handledningen har vi lärt oss hur man tar bort sidbrytningar från ett dokument med Aspose.Words för .NET-biblioteket. Genom att följa steg-för-steg-guiden bör du nu kunna implementera denna funktionalitet i dina egna C#-projekt. Att ta bort sidbrytningar kan hjälpa dig att behålla en konsekvent layout och formatering i dina dokument.

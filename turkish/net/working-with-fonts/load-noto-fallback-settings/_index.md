@@ -1,51 +1,51 @@
 ---
-title: قم بتحميل إعدادات Noto Fallback
-linktitle: قم بتحميل إعدادات Noto Fallback
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تحميل Noto override parameters في مستند Word باستخدام Aspose.Words for .NET.
+title: Noto Yedek Ayarlarını Yükle
+linktitle: Noto Yedek Ayarlarını Yükle
+second_title: Aspose.Words for .NET API Referansı
+description: Bu eğitimde, Noto geçersiz kılma parametrelerini Aspose.Words for .NET ile bir Word belgesine nasıl yükleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/load-noto-fallback-settings/
 ---
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تحميل إعدادات استبدال خط Noto في مستند Word باستخدام Aspose.Words Library for .NET. تسمح لك إعدادات Noto Font Substitution بإدارة استبدال الخطوط عند عرض المستندات أو طباعتها. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu öğreticide, Aspose.Words Library for .NET'i kullanarak Noto yazı tipi değiştirme ayarlarını bir Word belgesine nasıl yükleyeceğinizi göstereceğiz. Noto Yazı Tipi Değiştirme ayarları, belgeleri görüntülerken veya yazdırırken yazı tiplerinin değiştirilmesini yönetmenize olanak tanır. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وتكوين إعدادات استبدال الخط
- بعد ذلك ، سنقوم بتحميل المستند باستخدام ملف`Document` class وتكوين إعدادات تجاوز الخط باستخدام ملف`FontSettings` فصل. سنقوم بتحميل الإعدادات الاحتياطية لخط Noto باستخدام ملف`LoadNotoFallbackSettings()` طريقة.
+## 2. Adım: Belgeyi yükleyin ve yazı tipi değiştirme ayarlarını yapılandırın
+ Ardından, kullanarak belgeyi yükleyeceğiz`Document` kullanarak yazı tipi geçersiz kılma ayarlarını sınıflandırın ve yapılandırın.`FontSettings` sınıf. Kullanarak Noto yazı tipi geri dönüş ayarlarını yükleyeceğiz.`LoadNotoFallbackSettings()` yöntem.
 
 ```csharp
-// قم بتحميل المستند وتكوين إعدادات استبدال الخط
+// Belgeyi yükleyin ve yazı tipi değiştirme ayarlarını yapılandırın
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.LoadNotoFallbackSettings();
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 3: احفظ المستند
-أخيرًا ، سنقوم بحفظ المستند مع تطبيق إعدادات استبدال الخط Noto.
+## 3. Adım: Belgeyi kaydedin
+Son olarak, belgeyi Noto yazı tipi değiştirme ayarları uygulanmış olarak kaydedeceğiz.
 
 ```csharp
-// احفظ المستند
+// belgeyi kaydet
 doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 ```
 
 
-### عينة من التعليمات البرمجية المصدر لإعدادات Noto Fallback باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Noto Fallback Settings için örnek kaynak kodu 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -56,5 +56,5 @@ doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تحميل إعدادات استبدال خط Noto في مستند Word باستخدام Aspose.Words for .NET. تسمح لك إعدادات استبدال الخط Noto بإدارة استبدال الخط لتحسين عرض وطباعة مستنداتك. لا تتردد في استخدام هذه الميزة لتخصيص استبدال الخط لاحتياجاتك.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET ile Noto yazı tipi değiştirme ayarlarının bir Word belgesine nasıl yükleneceğini gördük. Noto yazı tipi değiştirme ayarları, belgelerinizin görüntülenmesini ve yazdırılmasını iyileştirmek için yazı tipi değiştirmeyi yönetmenize olanak tanır. Yazı tipi değiştirmeyi ihtiyaçlarınıza göre özelleştirmek için bu özelliği kullanmaktan çekinmeyin.

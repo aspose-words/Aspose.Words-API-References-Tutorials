@@ -1,67 +1,67 @@
 ---
-title: بناء الجدول مع الحدود
-linktitle: بناء الجدول مع الحدود
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لبناء جدول بحدود باستخدام Aspose.Words for .NET.
+title: Costruisci tabella con bordi
+linktitle: Costruisci tabella con bordi
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida passo passo alla creazione di una tabella con bordi utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/build-table-with-borders/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لإنشاء جدول بحدود باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية إنشاء جدول بحدود مخصصة في مستندات Word باستخدام Aspose.Words for .NET.
+In questo tutorial, ti guideremo attraverso il processo passo-passo per creare una tabella con bordi utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come creare una tabella con bordi personalizzati nei tuoi documenti Word utilizzando Aspose.Words per .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يتم فيه تخزين مستند Word الخاص بك. استبدل "دليل المستندات" بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+Innanzitutto, devi impostare il percorso della directory dei documenti. Qui è dove è memorizzato il tuo documento Word. Sostituisci "LA TUA CARTELLA DEI DOCUMENTI" con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند الحالي
- بعد ذلك ، تحتاج إلى تحميل مستند Word الموجود في مثيل`Document` فصل.
+## Passaggio 2: carica il documento esistente
+ Successivamente, è necessario caricare il documento Word esistente in un'istanza del file`Document` classe.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: الوصول إلى الجدول وإزالة الحدود الموجودة
- لبدء بناء الجدول بحدود ، نحتاج إلى الانتقال إلى الجدول في المستند وإزالة الحدود الموجودة. ال`ClearBorders()` طريقة يزيل كل الحدود من الجدول.
+## Passaggio 3: accedi alla tabella e rimuovi i bordi esistenti
+ Per iniziare a costruire la tabella con i bordi, dobbiamo navigare fino alla tabella nel documento e rimuovere i bordi esistenti. IL`ClearBorders()` metodo rimuove tutti i bordi dalla tabella.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. ClearBorders();
 ```
 
-## الخطوة 4: تعيين حدود الجدول
- الآن يمكننا تعيين حدود الجدول باستخدام`SetBorders()` طريقة. في هذا المثال ، نستخدم حدًا أخضر اللون بسمك 1.5 نقطة.
+## Passaggio 4: impostare i bordi della tabella
+ Ora possiamo impostare i bordi della tabella usando il`SetBorders()` metodo. In questo esempio, stiamo usando un bordo di colore verde con uno spessore di 1,5 punti.
 
 ```csharp
 table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 ```
 
-## الخطوة 5: احفظ المستند المعدل
-أخيرًا ، نحفظ المستند المعدل في ملف. يمكنك اختيار اسم وموقع مناسبين للمستند الناتج.
+## Passaggio 5: salvare il documento modificato
+Infine, salviamo il documento modificato in un file. È possibile scegliere un nome e una posizione appropriati per il documento di output.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.docx");
 ```
 
-تهنئة ! لقد قمت الآن ببناء جدول بحدود مخصصة باستخدام Aspose.Words for .NET.
+Congratulazioni! Ora hai creato una tabella con bordi personalizzati utilizzando Aspose.Words per .NET.
 
-### نموذج التعليمات البرمجية المصدر لـ Build Table With Borders باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Build Table With Borders utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//امسح أي حدود موجودة من الجدول.
+	//Cancella eventuali bordi esistenti dalla tabella.
 	table.ClearBorders();
-	// ضع حدًا أخضر حول وداخل الجدول.
+	// Imposta un bordo verde attorno e all'interno del tavolo.
 	table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول بحدود باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تخصيص حدود الجدول في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية الاحتياجات الخاصة.
+## Conclusione
+In questo tutorial, abbiamo imparato come costruire una tabella con bordi usando Aspose.Words per .NET. Seguendo questa guida dettagliata, puoi facilmente personalizzare i bordi della tabella nei tuoi documenti Word. Aspose.Words offre un'API potente e flessibile per la manipolazione e la formattazione delle tabelle nei tuoi documenti. Con questa conoscenza, puoi migliorare la presentazione visiva dei tuoi documenti Word e soddisfare esigenze specifiche.

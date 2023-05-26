@@ -1,36 +1,36 @@
 ---
-title: تصدير الإشارات المرجعية في رأس تذييل الصفحة
-linktitle: تصدير الإشارات المرجعية في رأس تذييل الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتصدير الإشارات المرجعية في الرأس والتذييل باستخدام Aspose.Words for .NET.
+title: Üst Bilgi Alt Bilgi Yer İşaretlerini Dışa Aktar
+linktitle: Üst Bilgi Alt Bilgi Yer İşaretlerini Dışa Aktar
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile üstbilgi ve altbilgi yer imlerini dışa aktarmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة إشارات مرجعية لرأس وتذييل الصفحة مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تصدير الإشارات المرجعية من رؤوس الصفحات وتذييلاتها في المستند وإنشاء ملف PDF بالإشارات المرجعية المناسبة.
+Bu makale, Üst Bilgi ve Alt Bilgi Yer İmlerini Dışa Aktar özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgenin üst bilgilerinden ve alt bilgilerinden yer imlerini nasıl dışa aktaracağınızı ve uygun yer imleriyle bir PDF oluşturmayı öğrenebileceksiniz.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
-## الخطوة 1: تحديد دليل المستند
+## 1. Adım: Belge dizinini tanımlayın
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Başlamak için, belgelerinizin bulunduğu dizine giden yolu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## 2. Adım: Belgeyi yükleyin
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن الوثيقة تسمى "Bookmarks in headers and footers.docx" وهي موجودة في دليل المستندات المحدد.
+Ardından, işlemek istediğimiz belgeyi yüklememiz gerekiyor. Bu örnekte, belgenin "Üstbilgilerdeki ve altbilgilerdeki yer imleri.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF
+## 3. Adım: PDF olarak kaydetme seçeneklerini yapılandırın
 
- لتصدير الإشارات المرجعية للرأس والتذييل ، نحتاج إلى تكوين ملف`PdfSaveOptions` هدف. في هذا المثال ، قمنا بتعيين مستوى مخطط الإشارة المرجعية الافتراضي على 1 ووضع تصدير الإشارة المرجعية للرأس والتذييل على "الأول".
+ Üstbilgi ve altbilgi yer imlerini dışa aktarmak için,`PdfSaveOptions` nesne. Bu örnekte, varsayılan yer imi anahat seviyesini 1 olarak ve üst bilgi ve alt bilgi yer imi dışa aktarma modunu "Birinci" olarak ayarladık.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,21 +38,21 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## الخطوة 4: احفظ المستند كملف PDF مع الإشارات المرجعية للرؤوس والتذييلات
+## 4. Adım: Belgeyi üst bilgiler ve alt bilgiler yer imleriyle birlikte PDF olarak kaydedin
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Son olarak, daha önce yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedebiliriz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تصدير إشارات مرجعية للرأس والتذييل من مستند وإنشاء ملف PDF مع الإشارات المرجعية المناسبة باستخدام Aspose.Words for .NET.
+Bu kadar ! Aspose.Words for .NET kullanarak bir belgeden üstbilgi ve altbilgi yer imlerini başarıyla dışa aktardınız ve uygun yer imleriyle bir PDF oluşturdunuz.
 
-### عينة من التعليمات البرمجية المصدر لتصدير الإشارات المرجعية في الرأس والتذييل باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile üstbilgi ve altbilgi yer imlerini dışa aktarmak için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 

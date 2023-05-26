@@ -1,89 +1,89 @@
 ---
-title: ربط تذييلات الرؤوس
-linktitle: ربط تذييلات الرؤوس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ربط الرؤوس والتذييلات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Encabezados de enlaces Pies de página
+linktitle: Encabezados de enlaces Pies de página
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a vincular encabezados y pies de página mientras une y agrega documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/join-and-append-documents/link-headers-footers/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Link Headers Footers في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام وإلحاق مستندات Word متعددة أثناء ربط رؤوس وتذييلات المستند المصدر بالقسم السابق في المستند الوجهة.
+Este tutorial lo guiará a través del proceso de uso de la función Vincular encabezados y pies de página de Aspose.Words para .NET. Esta característica le permite unir y adjuntar varios documentos de Word mientras vincula los encabezados y pies de página del documento de origen a la sección anterior en el documento de destino.
 
-## المتطلبات الأساسية
+## requisitos previos
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Antes de comenzar, asegúrese de tener lo siguiente:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words para .NET instalado. Puede descargarlo del sitio web de Aspose o instalarlo a través de NuGet.
+2. Visual Studio o cualquier otro entorno de desarrollo C#.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Paso 1: inicialice los directorios de documentos
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir` variable a la ruta donde se encuentran sus documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Paso 2: Cargue los documentos de origen y destino
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ A continuación, debe cargar los documentos de origen y destino utilizando Aspose.Words`Document` clase. Actualice los nombres de los archivos en el`Document` constructor de acuerdo con los nombres de sus documentos.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: اضبط المستند المُلحق على الظهور في صفحة جديدة
+## Paso 3: configure el documento adjunto para que aparezca en una página nueva
 
-للتأكد من ظهور المحتوى من المستند المصدر على صفحة جديدة في المستند الوجهة ، تحتاج إلى تعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.NewPage`.
+Para asegurarse de que el contenido del documento de origen aparezca en una nueva página en el documento de destino, debe configurar el`SectionStart` propiedad de la primera sección en el documento fuente para`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## الخطوة 4: ربط الرؤوس والتذييلات بالقسم السابق
+## Paso 4: vincular encabezados y pies de página a la sección anterior
 
- لربط رؤوس وتذييلات المستند المصدر بالمقطع السابق في المستند الوجهة ، يمكنك استخدام ملف`LinkToPrevious` طريقة`HeadersFooters` مجموعة. بالمرور`true` كمعلمة ، يمكنك تجاوز أي رؤوس أو تذييلات موجودة في المستند المصدر.
+ Para vincular los encabezados y pies de página del documento de origen a la sección anterior en el documento de destino, puede utilizar el`LinkToPrevious` metodo de la`HeadersFooters` recopilación. al pasar`true` como parámetro, anula cualquier encabezado o pie de página existente en el documento de origen.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## Paso 5: agregue el documento de origen al documento de destino
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Ahora, puede agregar el documento de origen al documento de destino usando el`AppendDocument` metodo de la`Document` clase. El`ImportFormatMode.KeepSourceFormatting` El parámetro garantiza que el formato de origen se conserve durante la operación de adición.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## Paso 6: Guarde el documento final
 
- أخيرًا ، احفظ المستند المدمج مع الرؤوس والتذييلات المرتبطة باستخدام ملف`Save` طريقة`Document` فصل.
+ Finalmente, guarde el documento combinado con los encabezados y pies de página vinculados usando el`Save` metodo de la`Document` clase.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 ```
 
-### مثال على شفرة المصدر لتذييلات رؤوس الروابط باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para enlaces de encabezados y pies de página usando Aspose.Words para .NET 
 
-إليك شفرة المصدر الكاملة لميزة "Link Headers Footers" في C # باستخدام Aspose.Words for .NET:
+Aquí está el código fuente completo para la función "Encabezados y pies de página de enlaces" en C# usando Aspose.Words para .NET:
 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بتعيين المستند المُلحق ليظهر في صفحة جديدة.
+	// Configure el documento adjunto para que aparezca en una página nueva.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
-	// اربط الرؤوس والتذييلات في المستند المصدر بالمقطع السابق.
-	// سيؤدي هذا إلى تجاوز أي رؤوس أو تذييلات موجودة بالفعل في المستند المصدر.
+	// Vincule los encabezados y pies de página del documento de origen a la sección anterior.
+	// Esto anulará cualquier encabezado o pie de página que ya se encuentre en el documento de origen.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Link Headers Footers باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الرؤوس والتذييلات من المستند المصدر المرتبط بالقسم السابق في المستند الوجهة.
+¡Eso es todo! Ha implementado con éxito la función de encabezados y pies de página de enlaces con Aspose.Words para .NET. El documento final contendrá el contenido combinado con los encabezados y pies de página del documento de origen vinculado a la sección anterior en el documento de destino.

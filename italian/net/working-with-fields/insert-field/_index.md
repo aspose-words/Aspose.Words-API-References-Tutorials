@@ -1,56 +1,56 @@
 ---
-title: أدخل الحقل
-linktitle: أدخل الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل في مستندات Word باستخدام Aspose.Words for .NET. إضفاء الطابع الشخصي على المستندات الخاصة بك مع الحقول الديناميكية.
+title: Inserisci campo
+linktitle: Inserisci campo
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire un campo nei tuoi documenti Word con Aspose.Words per .NET. Personalizza i tuoi documenti con campi dinamici.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-field/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه ، والتي تستخدم ميزة "إدراج حقل" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Ecco una guida dettagliata per spiegare il codice sorgente C# di seguito, che utilizza la funzionalità "Inserisci un campo" di Aspose.Words per .NET. Assicurati di seguire attentamente ogni passaggio per ottenere i risultati desiderati.
 
-## الخطوة 1: إعداد دليل المستند
+## Passaggio 1: impostazione della directory dei documenti
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "YOUR DOCUMENT DIRECTORY" con il percorso appropriato alla directory dei tuoi documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## Passaggio 2: creazione del documento e di DocumentBuilder
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Iniziamo creando un nuovo documento e inizializzando un DocumentBuilder.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدخال الحقل
+## Passaggio 3: Inserimento del campo
 
- نحن نستخدم ال`InsertField()` طريقة DocumentBuilder لإدراج حقل في المستند. في هذا المثال ، نقوم بإدخال حقل دمج (MERGEFIELD) مع اسم الحقل "MyFieldName" وتنسيق الدمج.
+ Noi usiamo il`InsertField()` metodo di DocumentBuilder per inserire un campo nel documento. In questo esempio, inseriamo un campo di unione (MERGEFIELD) con nome campo "MyFieldName" e formato di unione.
 
 ```csharp
 builder.InsertField(@"MERGEFIELD MyFieldName \* MERGEFORMAT");
 ```
 
-### مثال على الكود المصدري لإدخال حقل باستخدام Aspose.Words for .NET
+### Esempio del codice sorgente per l'inserimento di un campo con Aspose.Words per .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند و DocumentBuilder.
+// Creare il documento e il DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// أدخل الحقل.
+// Inserisci il campo.
 builder.InsertField(@"MERGEFIELD MyFieldName \* MERGEFORMAT");
 
 doc.Save(dataDir + "InsertionField.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأعدنا تهيئة DocumentBuilder ، ثم قمنا بإدراج حقل دمج باسم الحقل "MyFieldName" وتنسيق الدمج. ثم يتم حفظ المستند باسم ملف محدد.
+In questo esempio, abbiamo creato un nuovo documento, inizializzato un DocumentBuilder, quindi inserito un campo di unione con il nome del campo "MyFieldName" e il formato di unione. Il documento viene quindi salvato con un nome file specificato.
 
-بهذا نختتم دليلنا حول استخدام ميزة "إدراج حقل" مع Aspose.Words for .NET.
+Questo conclude la nostra guida sull'utilizzo della funzione "Inserisci un campo" con Aspose.Words per .NET.

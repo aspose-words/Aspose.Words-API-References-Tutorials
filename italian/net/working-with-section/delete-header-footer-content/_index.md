@@ -1,52 +1,52 @@
 ---
-title: حذف محتوى رأس التذييل
-linktitle: حذف محتوى رأس التذييل
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية إزالة محتوى الرأس والتذييل من مستند Word باستخدام Aspose.Words for .NET.
+title: Elimina il contenuto del piè di pagina dell'intestazione
+linktitle: Elimina il contenuto del piè di pagina dell'intestazione
+second_title: Riferimento all'API Aspose.Words per .NET
+description: In questo tutorial, scopri come rimuovere il contenuto di intestazione e piè di pagina da un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-section/delete-header-footer-content/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية إزالة محتوى الرأس والتذييل من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يمكن أن تكون إزالة المحتوى من الرؤوس والتذييلات مفيدة عندما تريد إعادة تعيين هذه العناصر أو إزالتها من المستند. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In questo tutorial, ti mostreremo come rimuovere il contenuto di intestazione e piè di pagina dal documento di Word utilizzando la libreria Aspose.Words per .NET. La rimozione del contenuto da intestazioni e piè di pagina può essere utile quando si desidera reimpostare o rimuovere questi elementi dal documento. Ti guideremo passo dopo passo per aiutarti a comprendere e implementare il codice nel tuo progetto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على الرؤوس والتذييلات التي تريد إزالتها
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti elementi:
+- Conoscenza operativa del linguaggio di programmazione C#
+- La libreria Aspose.Words per .NET installata nel tuo progetto
+- Un documento di Word contenente intestazioni e piè di pagina che desideri rimuovere
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+ Innanzitutto, devi impostare il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وانتقل إلى القسم
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فصل. سنصل إلى القسم الأول من المستند باستخدام الفهرس 0.
+## Passaggio 2: carica il documento e vai alla sezione
+ Successivamente, caricheremo il documento di Word in un'istanza di`Document` classe. Accederemo alla prima sezione del documento utilizzando l'indice 0.
 
 ```csharp
-//قم بتحميل المستند
+//Carica il documento
 Document doc = new Document(dataDir + "Document.docx");
 
-// قم بالوصول إلى القسم
+// Accedi alla sezione
 Section section = doc.Sections[0];
 ```
 
-## الخطوة 3: حذف محتوى الرأس والتذييل
- لإزالة محتوى الرأس والتذييل من القسم ، سنستخدم الامتداد`ClearHeadersFooters` طريقة.
+## Passaggio 3: eliminare il contenuto di intestazione e piè di pagina
+ Per rimuovere il contenuto dell'intestazione e del piè di pagina dalla sezione, utilizzeremo il file`ClearHeadersFooters` metodo.
 
 ```csharp
 section.ClearHeadersFooters();
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Delete Header Footer Content باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per eliminare il contenuto del piè di pagina dell'intestazione utilizzando Aspose.Words per .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -55,5 +55,5 @@ section.ClearHeadersFooters();
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية إزالة محتوى الرأس والتذييل من مستند Word باستخدام Aspose.Words for .NET. تتيح لك إزالة المحتوى من الرؤوس والتذييلات إعادة تعيين هذه العناصر المحددة أو إزالتها من المستند. لا تتردد في تخصيص هذه الميزة واستخدامها وفقًا لاحتياجاتك الخاصة.
+## Conclusione
+In questo tutorial, abbiamo visto come rimuovere il contenuto di intestazione e piè di pagina da un documento Word utilizzando Aspose.Words per .NET. La rimozione del contenuto da intestazioni e piè di pagina consente di reimpostare o rimuovere quegli elementi specifici dal documento. Sentiti libero di personalizzare e utilizzare questa funzione in base alle tue esigenze specifiche.

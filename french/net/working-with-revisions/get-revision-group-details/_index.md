@@ -1,26 +1,26 @@
 ---
-title: احصل على تفاصيل مجموعة المراجعة
-linktitle: احصل على تفاصيل مجموعة المراجعة
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على تفاصيل مجموعة المراجعة في مستند Word باستخدام Aspose.Words for .NET.
+title: Obtenir les détails du groupe de révision
+linktitle: Obtenir les détails du groupe de révision
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Obtenez les détails du groupe de révision dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-revisions/get-revision-group-details/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سوف نوضح لك كيفية الحصول على تفاصيل مجموعة المراجعات في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+Dans ce guide étape par étape, nous allons vous montrer comment obtenir les détails d'un groupe de révisions dans un document Word en utilisant Aspose.Words pour .NET. Nous vous fournirons le code source complet et vous montrerons comment formater la sortie Markdown.
 
-## الخطوة 1: تحميل المستند
+## Étape 1 : Chargement du document
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+La première étape consiste à télécharger le document contenant les révisions.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة 2: تصفح المراجعات
+## Étape 2 : Parcourir les révisions
 
-بعد ذلك ، سنقوم بتكرار المراجعات الموجودة في المستند ونعرض تفاصيلها ، مثل النوع والمؤلف والتاريخ والنص المنقح.
+Ensuite, nous allons parcourir les révisions présentes dans le document et afficher leurs détails, tels que le type, l'auteur, la date et le texte révisé.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -38,9 +38,9 @@ foreach (Revision revision in doc.Revisions)
 ```
 
 
-### مثال على شفرة المصدر للحصول على تفاصيل مجموعة المراجعة باستخدام Aspose.Words for .NET
+### Exemple de code source pour obtenir les détails du groupe de révision à l'aide de Aspose.Words pour .NET
 
-فيما يلي الكود المصدري الكامل للحصول على تفاصيل مجموعة المراجعات في مستند باستخدام Aspose.Words for .NET:
+Voici le code source complet pour obtenir les détails d'un groupe de révisions dans un document en utilisant Aspose.Words pour .NET :
 
 ```csharp
 

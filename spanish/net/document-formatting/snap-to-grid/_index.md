@@ -1,63 +1,63 @@
 ---
-title: المفاجئة إلى الشبكة
-linktitle: المفاجئة إلى الشبكة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح كود مصدر C # لميزة Snap to Grid باستخدام Aspose.Words for .NET.
+title: Encajar a la cuadricula
+linktitle: Encajar a la cuadricula
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para explicar el código fuente de C# de la función Snap to Grid con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/document-formatting/snap-to-grid/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة Snap to Grid مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+En este tutorial, lo guiaremos a través de cómo usar la función Ajustar a la cuadrícula con Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Paso 1: Crear y configurar el documento
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Para comenzar, cree un nuevo documento y un objeto DocumentBuilder asociado. Así es cómo:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: محاذاة الشبكة
+## Paso 2: Alineación de cuadrícula
 
-سنقوم الآن بتطبيق محاذاة الشبكة على فقرة محددة والخط المستخدم في الفقرة. إليك الطريقة:
+Ahora aplicaremos la alineación de cuadrícula a un párrafo específico y la fuente utilizada en el párrafo. Así es cómo:
 
 ```csharp
-// تمكين محاذاة الشبكة للفقرة
+// Habilitar alineación de cuadrícula para el párrafo
 Paragraph by = doc.FirstSection.Body.FirstParagraph;
 par.ParagraphFormat.SnapToGrid = true;
 
-// اكتب نصًا في الفقرة
+// Escribir texto en el párrafo.
 builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" +
                  "tempor incident ut labore et dolore magna aliqua.");
 
-// قم بتمكين محاذاة الشبكة للخط المستخدم في الفقرة
+// Habilitar la alineación de cuadrícula para la fuente utilizada en el párrafo
 par.Runs[0].Font.SnapToGrid = true;
 ```
 
-## الخطوة 3: حفظ المستند
+## Paso 3: Guardar el documento
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Después de insertar el campo de formulario de entrada de texto, guarde el documento en la ubicación deseada usando el`Save` método. Asegúrese de proporcionar la ruta de archivo adecuada:
 
 ```csharp
 doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 ```
 
-### مثال على شفرة المصدر لـ Snap To Grid باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Ajustar a la cuadrícula usando Aspose.Words para .NET
 
-فيما يلي رمز المصدر الكامل لميزة Snap to Grid مع Aspose.Words for .NET:
+Aquí está el código fuente completo para la función Ajustar a la cuadrícula con Aspose.Words para .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// قم بتحسين التخطيط عند الكتابة بالأحرف الآسيوية.
+	// Optimice el diseño al escribir caracteres asiáticos.
 	Paragraph par = doc.FirstSection.Body.FirstParagraph;
 	par.ParagraphFormat.SnapToGrid = true;
 
@@ -70,5 +70,5 @@ doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من محاذاة النص الخاص بك مع الشبكة وتحسين مظهر المستند باستخدام Aspose.Words for .NET.
+Con este código, podrá alinear su texto con la cuadrícula y optimizar la apariencia de su documento usando Aspose.Words para .NET.
 

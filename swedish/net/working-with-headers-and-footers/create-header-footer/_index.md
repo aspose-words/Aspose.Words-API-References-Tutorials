@@ -1,42 +1,42 @@
 ---
-title: إنشاء تذييل الرأس
-linktitle: إنشاء تذييل الرأس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء رؤوس الصفحات وتذييلاتها في مستندات Word باستخدام Aspose.Words for .NET. تخصيص الرؤوس والتذييلات لكل صفحة.
+title: Skapa sidhuvud
+linktitle: Skapa sidhuvud
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du skapar sidhuvuden och sidfötter i dina Word-dokument med Aspose.Words för .NET. Anpassa sidhuvuden och sidfötter för varje sida.
 type: docs
 weight: 10
 url: /sv/net/working-with-headers-and-footers/create-header-footer/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية لإنشاء رؤوس وتذييلات باستخدام Aspose.Words لوظائف .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Här är en steg-för-steg-guide för att förklara följande C#-källkod för att skapa sidhuvuden och sidfötter med Aspose.Words för .NET-funktionalitet. Se till att du har inkluderat Aspose.Words-biblioteket i ditt projekt innan du använder den här koden.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## Steg 1: Ange sökväg till dokumentkatalogen
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
+Var noga med att ange rätt sökväg till din dokumentkatalog där det redigerade dokumentet kommer att sparas.
 
-## الخطوة 2: قم بإنشاء مستند ومولد مستندات
+## Steg 2: Skapa ett dokument och en dokumentgenerator
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- هنا نقوم بإنشاء مثيل لـ`Document` فئة ومثيل`DocumentBuilder` فئة تسمح لنا بمعالجة المستند وإضافة عناصر.
+ Här skapar vi en instans av`Document` klass och en instans av`DocumentBuilder` klass som gör att vi kan manipulera dokumentet och lägga till element.
 
-## الخطوة 3: تعيين معلمات الصفحة والعنوان الأول
+## Steg 3: Ställ in sidparametrar och första rubrik
 
 ```csharp
 Section currentSection = builder.CurrentSection;
 PageSetup pageSetup = currentSection.PageSetup;
 
-// حدد ما إذا كنا نريد أن تختلف رؤوس / تذييلات الصفحة الأولى عن الصفحات الأخرى.
-// يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter لتحديدها
-// رؤوس / تذييلات مختلفة للصفحات الفردية والزوجية.
+// Ange om vi vill att sidhuvuden/sidfötter på den första sidan ska skilja sig från de andra sidorna.
+// Du kan också använda egenskapen PageSetup.OddAndEvenPagesHeaderFooter för att ange
+// olika sidhuvuden/sidfötter för udda och jämna sidor.
 pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
 
@@ -53,9 +53,9 @@ pageSetup.HeaderDistance = 20;
 builder. MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 ```
 
-نقوم بتعيين معلمات الصفحة ، بما في ذلك مسافة الرأس ، ثم ننتقل إلى العنوان الرئيسي (`HeaderPrimary`). نستخدم منشئ المستندات لإضافة نص وتنسيق العنوان.
+Vi ställer in sidparametrarna, inklusive rubrikens avstånd, och flyttar sedan till huvudhuvudet (`HeaderPrimary`). Vi använder dokumentgeneratorn för att lägga till text och formatera rubriken.
 
-## الخطوة 4: أدخل صورة ونصًا في العنوان الرئيسي
+## Steg 4: Infoga en bild och text i huvudhuvudet
 
 ```csharp
 builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
@@ -68,9 +68,9 @@ builder.Write("Aspose.Words - Building headers/footers.");
 builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 ```
 
-نستخدم منشئ المستندات لإدراج صورة في الزاوية اليسرى العلوية من الرأس الرئيسي ، ثم نضيف بعض النص المحاذي لليمين.
+Vi använder dokumentgeneratorn för att infoga en bild i det övre vänstra hörnet av huvudhuvudet, sedan lägger vi till lite högerjusterad text.
 
-## الخطوة 5: قم بإدراج جدول في التذييل الرئيسي
+## Steg 5: Infoga en tabell i sidfoten
 
 ```csharp
 builder.StartTable();
@@ -102,7 +102,7 @@ builder.EndTable();
 builder.MoveToDocumentEnd();
 ```
 
-## الخطوة 6: إضافة صفحة جديدة وتعيين الرؤوس / التذييلات
+## Steg 6: Lägg till en ny sida och ställ in sidhuvuden/sidfötter
 
 ```csharp
 builder. InsertBreak(BreakType.PageBreak);
@@ -111,17 +111,17 @@ builder.InsertBreak(BreakType.SectionBreakNewPage);
 currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-//لا يحتاج هذا القسم إلى رأس / تذييل مختلف للصفحة الأولى ، نحتاج فقط إلى صفحة عنوان واحدة في المستند ،
-// وقد تم بالفعل تحديد رأس / تذييل الصفحة في القسم السابق.
+//Det här avsnittet behöver inte en annan sidhuvud/sidfot för den första sidan, vi behöver bara en titelsida i dokumentet,
+// och sidhuvudet/sidfoten för den här sidan har redan definierats i föregående avsnitt.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// يعرض هذا القسم رؤوس / تذييلات القسم السابق افتراضيًا ، استدعاء currentSection.HeadersFooters.LinkToPrevious (خطأ) لكسر هذا الرابط ،
-// يختلف عرض الصفحة بالنسبة للقسم الجديد ، لذلك نحتاج إلى تعيين عروض خلايا مختلفة لجدول تذييل الصفحة.
+// Det här avsnittet visar sidhuvuden/sidfötter för föregående avsnitt som standard, anrop currentSection.HeadersFooters.LinkToPrevious(false) för att bryta denna länk,
+// sidbredden är annorlunda för det nya avsnittet, så vi måste ställa in olika cellbredder för en sidfotstabell.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-// إذا أردنا استخدام الرؤوس / التذييلات الموجودة بالفعل لهذا القسم ،
-// ولكن مع بعض التغييرات الطفيفة ، قد يكون من المنطقي نسخ الرؤوس / التذييلات
-// من القسم السابق وتطبيق التغييرات اللازمة حيث نريدها.
+// Om vi vill använda de redan befintliga sidhuvuden/sidfötter för detta avsnitt,
+// men med några mindre ändringar kan det vara vettigt att kopiera sidhuvuden/sidfötter
+// från föregående avsnitt och tillämpa de nödvändiga ändringarna där vi vill ha dem.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -130,16 +130,16 @@ Row row = primaryFooter.Tables[0].FirstRow;
 row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-// احفظ المستند
+// Spara dokumentet
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
- نضيف فاصل صفحة وفاصل مقطعي لإنشاء صفحة جديدة حيث ستكون الرؤوس / التذييلات الأولية مرئية. قمنا بتعيين معلمات القسم الجديد ، ثم نستخدم الامتداد`CopyHeadersFootersFromPreviousSection`طريقة لنسخ الرؤوس / التذييلات من القسم السابق. أخيرًا ، قمنا بتعيين عرض الخلية المناسب لجدول التذييل الرئيسي وحفظنا المستند.
+ Vi lägger till en sidbrytning och en sektionsbrytning för att skapa en ny sida där de primära sidhuvuden/sidfötter kommer att synas. Vi ställer in parametrarna för den nya sektionen, sedan använder vi`CopyHeadersFootersFromPreviousSection`metod för att kopiera sidhuvuden/sidfötter från föregående avsnitt. Slutligen ställer vi in lämpliga cellbredder för huvudsidfotstabellen och sparar dokumentet.
 
-### مثال على كود المصدر لإنشاء الرؤوس والتذييلات باستخدام Aspose.Words for .NET
+### Exempel på källkod för att skapa sidhuvuden och sidfötter med Aspose.Words för .NET
 
 ```csharp
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 	
 	Document doc = new Document();
@@ -147,9 +147,9 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	Section currentSection = builder.CurrentSection;
 	PageSetup pageSetup = currentSection.PageSetup;
-	// حدد ما إذا كنا نريد أن تختلف رؤوس / تذييلات الصفحة الأولى عن الصفحات الأخرى.
-	// يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter لتحديدها
-	// رؤوس / تذييلات مختلفة للصفحات الفردية والزوجية.
+	// Ange om vi vill att sidhuvuden/sidfötter på första sidan ska skilja sig från andra sidor.
+	// Du kan också använda egenskapen PageSetup.OddAndEvenPagesHeaderFooter för att ange
+	// olika sidhuvuden/sidfötter för udda och jämna sidor.
 	pageSetup.DifferentFirstPageHeaderFooter = true;
 	pageSetup.HeaderDistance = 20;
 
@@ -165,8 +165,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 	pageSetup.HeaderDistance = 20;
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	// أدخل صورة موضوعة في الزاوية العلوية / اليسرى من الرأس.
-	// تم ضبط المسافة من الحواف العلوية / اليسرى للصفحة على 10 نقاط.
+	// Infoga en positionerad bild i det övre/vänstra hörnet av rubriken.
+	// Avståndet från sidans övre/vänsterkant är satt till 10 punkter.
 	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
 		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
@@ -176,8 +176,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	// نستخدم جدولاً يحتوي على خليتين لعمل جزء واحد من النص على السطر (مع ترقيم الصفحات).
-	// تتم محاذاة إلى اليسار ، ويتم محاذاة الجزء الآخر من النص (مع حقوق النشر) إلى اليمين.
+	// Vi använder en tabell med två celler för att göra en del av texten på raden (med sidnumrering).
+	// Att justeras till vänster och den andra delen av texten (med upphovsrätt) ska justeras till höger.
 	builder.StartTable();
 
 	builder.CellFormat.ClearFormatting();
@@ -186,7 +186,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	// يستخدم حقلي PAGE و NUMPAGES لحساب تلقائي لرقم الصفحة الحالية والعديد من الصفحات.
+	// Den använder PAGE- och NUMPAGES-fälten för att automatiskt beräkna det aktuella sidnumret och många sidor.
 	builder.Write("Page ");
 	builder.InsertField("PAGE", "");
 	builder.Write(" of ");
@@ -207,25 +207,25 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.MoveToDocumentEnd();
 
-	// قم بعمل فاصل صفحة لإنشاء صفحة ثانية تظهر عليها الرؤوس / التذييلات الأساسية.
+	// Gör en sidbrytning för att skapa en andra sida där de primära sidhuvuden/sidfötterna kommer att synas.
 	builder.InsertBreak(BreakType.PageBreak);
 	builder.InsertBreak(BreakType.SectionBreakNewPage);
 
 	currentSection = builder.CurrentSection;
 	pageSetup = currentSection.PageSetup;
 	pageSetup.Orientation = Orientation.Landscape;
-	//لا يحتاج هذا القسم إلى رأس / تذييل مختلف للصفحة الأولى ، فنحن نحتاج فقط إلى صفحة عنوان واحدة في المستند ،
-	// وقد تم بالفعل تحديد رأس / تذييل الصفحة في القسم السابق.
+	//Det här avsnittet behöver inte en annan sidhuvud/sidfot på första sidan vi behöver bara en titelsida i dokumentet,
+	// och sidhuvudet/sidfoten för den här sidan har redan definierats i föregående avsnitt.
 	pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// يعرض هذا القسم الرؤوس / التذييلات من القسم السابق
-	// بشكل افتراضي ، قم باستدعاء currentSection.HeadersFooters.LinkToPrevious (false) لإلغاء عرض هذه الصفحة
-	// يختلف عن القسم الجديد ، وبالتالي نحتاج إلى تعيين عروض خلايا مختلفة لجدول تذييل.
+	// Det här avsnittet visar sidhuvuden/sidfötter från föregående avsnitt
+	// anrop som standard currentSection.HeadersFooters.LinkToPrevious(false) för att avbryta denna sidbredd
+	// är annorlunda för det nya avsnittet, och därför måste vi ställa in olika cellbredder för en sidfotstabell.
 	currentSection.HeadersFooters.LinkToPrevious(false);
 
-	// إذا أردنا استخدام مجموعة الرأس / التذييل الموجودة بالفعل لهذا القسم.
-	// ولكن مع بعض التعديلات الطفيفة ، قد يكون من المناسب نسخ الرؤوس / التذييلات
-	// من القسم السابق وتطبيق التعديلات اللازمة حيث نريدها.
+	// Om vi vill använda den redan befintliga sidhuvud/sidfotsuppsättningen för detta avsnitt.
+	// Men med några mindre ändringar kan det vara lämpligt att kopiera sidhuvuden/sidfötter
+	// från föregående avsnitt och tillämpa nödvändiga ändringar där vi vill ha dem.
 	CopyHeadersFootersFromPreviousSection(currentSection);
 
 	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];

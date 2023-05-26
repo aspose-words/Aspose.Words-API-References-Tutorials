@@ -1,18 +1,18 @@
 ---
-title: مناطق قابلة للتحرير غير مقيدة
-linktitle: مناطق قابلة للتحرير غير مقيدة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء مناطق قابلة للتحرير غير مقيدة في مستند Word باستخدام Aspose.Words for .NET.
+title: Obegränsade redigerbara regioner
+linktitle: Obegränsade redigerbara regioner
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du skapar obegränsade redigerbara områden i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/document-protection/unrestricted-editable-regions/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال الخطوات لاستخدام ميزة المناطق غير المقيدة القابلة للتحرير في Aspose.Words for .NET. تتيح لك هذه الميزة تحديد مناطق في مستند Word حيث يمكن تحرير المحتوى بدون قيود ، حتى إذا كان باقي المستند للقراءة فقط. اتبع الخطوات التالية:
+den här handledningen guidar vi dig genom stegen för att använda funktionen för obegränsade redigerbara områden i Aspose.Words för .NET. Den här funktionen låter dig definiera områden i ett Word-dokument där innehåll kan redigeras utan begränsningar, även om resten av dokumentet är skrivskyddat. Följ stegen nedan:
 
-## الخطوة 1: تحميل المستند وإعداد الحماية
+## Steg 1: Laddar dokumentet och ställer in skydd
 
-ابدأ بتحميل المستند الحالي:
+Börja med att ladda det befintliga dokumentet:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -21,52 +21,52 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 doc.Protect(ProtectionType.ReadOnly, "MyPassword");
 ```
 
-حماية المستند عن طريق تعيين نوع الحماية للقراءة فقط وكلمة المرور
+Skydda dokumentet genom att ställa in skrivskyddstyp och lösenord
 
-## الخطوة الثانية: إنشاء منطقة قابلة للتعديل
+## Steg 2: Skapa ett redigerbart område
 
-ابدأ بإنشاء منطقة قابلة للتحرير باستخدام كائنات EditableRangeStart و EditableRangeEnd:
+Börja med att skapa ett redigerbart område med hjälp av objekten EditableRangeStart och EditableRangeEnd:
 
 ```csharp
 EditableRangeStart edRangeStart = builder.StartEditableRange();
-// تم إنشاء كائن EditableRange من أجل EditableRangeStart الذي قمنا به للتو.
+// Ett EditableRange-objekt skapas för EditableRangeStart som vi just skapade.
 EditableRange editableRange = edRangeStart.EditableRange;
 
-// ضع شيئًا ما داخل النطاق القابل للتعديل.
+// Lägg något inom det redigerbara intervallet.
 builder.Writeln("Paragraph inside first editable range");
 
-// يتم تشكيل النطاق القابل للتحرير بشكل جيد إذا كان له بداية ونهاية.
+// Ett redigerbart område är välformat om det har en början och ett slut.
 EditableRangeEnd edRangeEnd = builder.EndEditableRange();
 
 ```
 
-## الخطوة 3: أضف محتوى خارج المناطق القابلة للتعديل
+## Steg 3: Lägg till innehåll utanför redigerbara områden
 
-يمكنك إضافة محتوى خارج المناطق القابلة للتحرير ، والتي ستبقى للقراءة فقط:
+Du kan lägga till innehåll utanför de redigerbara områdena, som förblir skrivskyddade:
 
 ```csharp
 builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
 ```
 
-## الخطوة 4: احفظ المستند
+## Steg 4: Spara dokumentet
 
-أخيرًا ، احفظ المستند المعدل:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند بالمناطق القابلة للتحرير.
+Var noga med att ange rätt sökväg och filnamn för att spara dokumentet med redigerbara områden.
 
-### مثال على شفرة المصدر للمناطق غير المقيدة القابلة للتحرير باستخدام Aspose.Words for .NET
+### Exempel på källkod för obegränsade redigerbara regioner med Aspose.Words för .NET
 
-فيما يلي رمز المصدر الكامل للمناطق القابلة للتحرير غير المقيدة باستخدام Aspose.Words for .NET:
+Här är den fullständiga källkoden för obegränsade redigerbara områden med Aspose.Words för .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// تحميل مستند وجعله للقراءة فقط.
+	// Ladda upp ett dokument och gör det som skrivskyddat.
 	Document doc = new Document(MyDir + "Document.docx");
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
@@ -74,15 +74,15 @@ doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
 
 	builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
 
-	// ابدأ نطاقًا قابلًا للتحرير.
+	// Starta ett redigerbart intervall.
 	EditableRangeStart edRangeStart = builder.StartEditableRange();
-	// تم إنشاء كائن EditableRange من أجل EditableRangeStart الذي قمنا به للتو.
+	// Ett EditableRange-objekt skapas för EditableRangeStart som vi just skapade.
 	EditableRange editableRange = edRangeStart.EditableRange;
 
-	// ضع شيئًا ما داخل النطاق القابل للتعديل.
+	// Lägg något inom det redigerbara intervallet.
 	builder.Writeln("Paragraph inside first editable range");
 
-	// يتم تشكيل النطاق القابل للتحرير بشكل جيد إذا كان له بداية ونهاية.
+	// Ett redigerbart område är välformat om det har en början och ett slut.
 	EditableRangeEnd edRangeEnd = builder.EndEditableRange();
 
 	builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
@@ -90,6 +90,6 @@ doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
 	doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
 
 ```
-باتباع هذه الخطوات ، يمكنك بسهولة إنشاء مناطق قابلة للتحرير غير مقيدة في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Genom att följa dessa steg kan du enkelt skapa obegränsade redigerbara områden i ditt Word-dokument med Aspose.Words för .NET.
 
 

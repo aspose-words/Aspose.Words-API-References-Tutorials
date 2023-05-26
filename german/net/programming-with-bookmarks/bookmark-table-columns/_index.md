@@ -1,23 +1,23 @@
 ---
-title: أعمدة الجدول المرجعية
-linktitle: أعمدة الجدول المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وضع إشارة مرجعية على عمود جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Lesezeichen für Tabellenspalten setzen
+linktitle: Lesezeichen für Tabellenspalten setzen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabellenspalte in einem Word-Dokument mit einem Lesezeichen versehen.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة أعمدة جدول الإشارات المرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة وضع إشارة مرجعية على عمود معين من الجدول في مستند Word والوصول إلى محتوى هذا العمود.
+In diesem Artikel werden wir den obigen C#-Quellcode untersuchen, um zu verstehen, wie die Funktion „Bookmark Table Columns“ in der Aspose.Words for .NET-Bibliothek verwendet wird. Mit dieser Funktion können Sie eine bestimmte Spalte einer Tabelle in einem Word-Dokument mit einem Lesezeichen versehen und auf den Inhalt dieser Spalte zugreifen.
 
-## المتطلبات الأساسية
+## Voraussetzungen
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundkenntnisse der C#-Sprache.
+- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
 
-## الخطوة الأولى: إنشاء الجدول
+## Schritt 1: Erstellen der Tabelle
 
- قبل إنشاء إشارة مرجعية على عمود جدول ، يجب علينا أولاً إنشاء الجدول باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نقوم بإنشاء جدول من صفين وعمودين:
+ Bevor wir ein Lesezeichen für eine Tabellenspalte erstellen, müssen wir zunächst die Tabelle mit a erstellen`DocumentBuilder` Objekt. In unserem Beispiel erstellen wir eine Tabelle mit zwei Zeilen und zwei Spalten:
 
 ```csharp
 builder. StartTable();
@@ -43,17 +43,17 @@ builder. EndRow();
 builder. EndTable();
 ```
 
-## الخطوة 2: إنشاء إشارة مرجعية للعمود
+## Schritt 2: Erstellen des Spaltenlesezeichens
 
- نحن نستخدم ال`StartBookmark`طريقة لإنشاء إشارة مرجعية على عمود معين من الجدول. في مثالنا ، نستخدم اسم "MyBookmark" للإشارة المرجعية:
+ Wir benutzen das`StartBookmark`Methode zum Erstellen eines Lesezeichens für eine bestimmte Spalte der Tabelle. In unserem Beispiel verwenden wir für das Lesezeichen den Namen „MyBookmark“:
 
 ```csharp
 builder. StartBookmark("MyBookmark");
 ```
 
-## الخطوة 3: الوصول إلى محتوى العمود
+## Schritt 3: Greifen Sie auf den Spalteninhalt zu
 
- نتصفح جميع الإشارات المرجعية في المستند ونعرض أسمائها. إذا كانت الإشارة المرجعية عبارة عن عمود ، فإننا نصل إلى محتويات ذلك العمود باستخدام فهرس العمود وملف`GetText` طريقة:
+ Wir gehen alle Lesezeichen im Dokument durch und zeigen ihre Namen an. Wenn es sich bei einem Lesezeichen um eine Spalte handelt, greifen wir mithilfe des Spaltenindex und des auf den Inhalt dieser Spalte zu`GetText` Methode:
 
 ```csharp
 foreach (Bookmark
@@ -70,9 +70,9 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
 }
 ```
 
-### مثال على شفرة المصدر لأعمدة جدول الإشارات باستخدام Aspose.Words for .NET
+### Beispielquellcode für Lesezeichentabellenspalten mit Aspose.Words für .NET
 
-إليك نموذج شفرة المصدر الكامل لتوضيح إنشاء إشارة مرجعية في عمود الجدول باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Beispielquellcode, um das Erstellen eines Lesezeichens für eine Tabellenspalte mit Aspose.Words für .NET zu demonstrieren:
 
 ```csharp
 
@@ -120,6 +120,6 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
         
 ```
 
-## خاتمة
+## Abschluss
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة أعمدة جدول الإشارات المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لوضع إشارة مرجعية على عمود معين من الجدول في مستند Word والانتقال إلى محتويات هذا العمود.
+In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Bookmark Table Columns“ von Aspose.Words für .NET verwendet wird. Wir haben eine Schritt-für-Schritt-Anleitung befolgt, um eine bestimmte Spalte einer Tabelle in einem Word-Dokument mit einem Lesezeichen zu versehen und zum Inhalt dieser Spalte zu springen.

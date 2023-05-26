@@ -1,52 +1,52 @@
 ---
-title: تحميل مستند مشفر
-linktitle: تحميل مستند مشفر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل وحفظ المستندات المشفرة باستخدام Aspose.Words for .NET.
+title: Şifrelenmiş Belgeyi Yükle
+linktitle: Şifrelenmiş Belgeyi Yükle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile şifrelenmiş belgeleri nasıl yükleyeceğinizi ve kaydedeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/load-encrypted-document/
 ---
 
-عند العمل مع المستندات المشفرة في تطبيق C # ، من المهم أن تكون قادرًا على تحميلها بشكل صحيح من خلال توفير كلمة المرور الصحيحة. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحميل المستندات المشفرة باستخدام خيارات التحميل المناسبة. في هذا الدليل المفصل خطوة بخطوة ، سنوضح لك كيفية استخدام كود المصدر C # الخاص بـ Aspose.Words for .NET لتحميل مستند مشفر باستخدام خيارات تحميل LoadOptions.
+Bir C# uygulamasında şifrelenmiş belgelerle çalışırken, doğru parolayı sağlayarak belgeleri doğru şekilde yükleyebilmek önemlidir. .NET için Aspose.Words kitaplığıyla, uygun yükleme seçeneklerini kullanarak şifrelenmiş belgeleri kolayca yükleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak şifreli bir belgeyi yüklemek için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, .NET dahil olmak üzere farklı platformlarda Word belgeleri oluşturmak, düzenlemek, dönüştürmek ve korumak için güçlü bir kitaplıktır. Belgeleri işlemek için metin ekleme, biçimlendirmeyi değiştirme, bölümler ekleme ve çok daha fazlası gibi birçok özellik sunar.
 
-## تحميل مستند مشفر
+## Şifrelenmiş bir belgeyi yükleme
 
-تتمثل الخطوة الأولى في تحميل مستند مشفر باستخدام خيارات التحميل المناسبة. في حالتنا ، نستخدم فئة Document لتحميل المستند عن طريق تحديد مسار المستند وكلمة المرور. هنا مثال :
+İlk adım, uygun yükleme seçeneklerini kullanarak şifrelenmiş bir belge yüklemektir. Bizim durumumuzda, belge yolunu ve parolasını belirterek belgeyi yüklemek için Document sınıfını kullanıyoruz. İşte bir örnek :
 
 ```csharp
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Encrypted.docx" الموجود في دليل المستندات باستخدام كلمة المرور "password".
+Bu örnekte, "password" parolasını kullanarak belgeler dizininde bulunan "Encrypted.docx" belgesini yüklüyoruz.
 
-## حفظ مستند مشفر
+## Şifrelenmiş bir belgeyi kaydetme
 
-بعد تحميل مستند مشفر ، يمكنك أيضًا حفظه عن طريق تحديد كلمة مرور جديدة لملف الإخراج. في مثالنا ، نستخدم فئة OdtSaveOptions لحفظ المستند بتنسيق ODT بكلمة مرور جديدة. هيريس كيفية القيام بذلك:
+Şifrelenmiş bir belgeyi karşıya yükledikten sonra, çıktı dosyası için yeni bir parola belirleyerek de kaydedebilirsiniz. Örneğimizde, OdtSaveOptions sınıfını belgeyi ODT formatında yeni bir parola ile kaydetmek için kullanıyoruz. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 
-في هذا المثال ، نحفظ المستند باسم "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt" من خلال تحديد كلمة المرور الجديدة "newpassword".
+Bu örnekte yeni şifreyi "newpassword" belirleyerek "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt" isimli belgeyi kaydediyoruz.
 
-### عينة من التعليمات البرمجية المصدر لـ LoadOptions مع وظيفة "تحميل مستند مشفر" باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan "Load Encrypted Document" işlevine sahip LoadOptions için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل مستند مشفر بكلمة المرور المحددة
+// Belirtilen parola ile şifrelenmiş bir belge yükleyin
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-//احفظ مستندًا مشفرًا بكلمة مرور جديدة
+//Şifrelenmiş bir belgeyi yeni bir parola ile kaydedin
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، شرحنا كيفية تحميل وحفظ المستندات المشفرة باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. تحميل المستندات المشفرة يحافظ على أمان بياناتك ويسمح لك بالعمل مع المستندات المحمية في Aspose.Words.
+Bu kılavuzda, .NET için Aspose.Words kitaplığı kullanılarak şifrelenmiş belgelerin nasıl yüklenip kaydedileceğini açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. Şifrelenmiş belgeleri yüklemek, verilerinizi güvende tutar ve Aspose.Words'te korumalı belgelerle çalışmanıza olanak tanır.

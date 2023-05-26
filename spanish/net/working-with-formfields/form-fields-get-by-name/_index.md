@@ -1,61 +1,61 @@
 ---
-title: الحصول على حقول النموذج بالاسم
-linktitle: الحصول على حقول النموذج بالاسم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد وتعديل حقول النموذج بالاسم في مستندات Word باستخدام Aspose.Words for .NET.
+title: Campos de formulario Obtener por nombre
+linktitle: Campos de formulario Obtener por nombre
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a recuperar y modificar campos de formulario por nombre en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-formfields/form-fields-get-by-name/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لاسترداد حقول النماذج بالاسم من مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+En este tutorial paso a paso, lo guiaremos sobre cómo usar Aspose.Words para .NET para recuperar campos de formulario por nombre de un documento de Word. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde el sitio web oficial.
 
-## الخطوة 1: تهيئة كائن المستند
+## Paso 1: inicialización del objeto de documento
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق توفير المسار إلى المستند المصدر الذي يحتوي على حقول النموذج:
+ Primero, inicialice el`Document` objeto proporcionando la ruta a su documento de origen que contiene campos de formulario:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## الخطوة 2: استرجاع حقول النموذج
+## Paso 2: Recuperar campos de formulario
 
- بعد ذلك ، قم بالوصول إلى`FormFields` ممتلكات`Range` كائن في المستند لاسترداد جميع حقول النموذج:
+ A continuación, acceda a la`FormFields` propiedad de la`Range` objeto en el documento para recuperar todos los campos del formulario:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;
 ```
 
-يمكنك استرداد حقول النموذج إما بالفهرس أو بالاسم. في هذا المثال ، نسترجع حقل نموذج باستخدام كلتا الطريقتين:
+Puede recuperar campos de formulario por índice o por nombre. En este ejemplo, recuperamos un campo de formulario utilizando ambos métodos:
 
 ```csharp
-FormField formField1 = documentFormFields[3]; // استرجاع الفهرس
-FormField formField2 = documentFormFields["Text2"]; // استرجاع بالاسم
+FormField formField1 = documentFormFields[3]; // Recuperando por índice
+FormField formField2 = documentFormFields["Text2"]; // Recuperando por nombre
 ```
 
-## الخطوة 3: تعديل خصائص حقل النموذج
+## Paso 3: modificación de las propiedades de los campos de formulario
 
- بمجرد استرداد حقول النموذج ، يمكنك تعديل خصائصها حسب الحاجة. في هذا المثال ، نقوم بتغيير حجم الخط من`formField1` إلى 20 ولون خط`formField2` إلى الأحمر:
+ Una vez que haya recuperado los campos del formulario, puede modificar sus propiedades según sea necesario. En este ejemplo, cambiamos el tamaño de fuente de`formField1` a 20 y el color de fuente de`formField2` a rojo:
 
 ```csharp
 formField1.Font.Size = 20;
 formField2.Font.Color = Color.Red;
 ```
 
-## الخطوة 4: حفظ المستند
+## Paso 4: Guardar el documento
 
-أخيرًا ، احفظ المستند المعدل:
+Finalmente, guarde el documento modificado:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-هذا كل شيء! لقد نجحت في استرداد حقول النموذج بالاسم وتعديل خصائصها في مستند Word باستخدام Aspose.Words for .NET.
+¡Eso es todo! Recuperó correctamente los campos de formulario por nombre y modificó sus propiedades en un documento de Word utilizando Aspose.Words para .NET.
 
-### مثال على كود المصدر لحقول النموذج الحصول على حسب الاسم باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Campos de formulario Obtener por nombre usando Aspose.Words para .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
@@ -72,4 +72,4 @@ formField2.Font.Color = Color.Red;
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Siéntase libre de usar este código en sus propios proyectos y modifíquelo de acuerdo con sus requisitos específicos.

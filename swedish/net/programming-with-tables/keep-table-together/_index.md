@@ -1,37 +1,37 @@
 ---
-title: حافظ على الجدول معًا
-linktitle: حافظ على الجدول معًا
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تجميع الجدول معًا في مستند Word باستخدام Aspose.Words for .NET.
+title: Håll ihop bordet
+linktitle: Håll ihop bordet
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du håller ihop ett bord i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-tables/keep-table-together/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تجميع الجدول معًا في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من الحفاظ على الجدول سليمًا دون تقسيمه عبر صفحات متعددة في مستندات Word الخاصة بك.
+I den här handledningen ska vi lära oss hur man håller ihop en tabell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av den här handledningen kommer du att kunna behålla en tabell intakt utan att den delas över flera sidor i dina Word-dokument.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Steg 1: Projektinställning
+1. Starta Visual Studio och skapa ett nytt C#-projekt.
+2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
-## الخطوة الثانية: تحميل المستند واسترجاع الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند وإحضار الجدول الذي نريد الاحتفاظ به معًا. اتبع هذه الخطوات:
+## Steg 2: Ladda dokumentet och hämta tabellen
+För att börja arbeta med tabellen måste vi ladda dokumentet och hämta tabellen vi vill behålla tillsammans. Följ dessa steg:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 
-// استرجع الجدول
+// Hämta bordet
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog.
 
-## الخطوة 3: تفعيل خيار "KeepWithNext"
-للحفاظ على الجدول معًا ومنع انقسامه عبر صفحات متعددة ، نحتاج إلى تمكين الخيار "KeepWithNext" لكل فقرة في الجدول باستثناء الفقرات الأخيرة من الصف الأخير من الجدول. استخدم الكود التالي:
+## Steg 3: Aktivera alternativet "KeepWithNext".
+För att hålla ihop tabellen och förhindra att den delas upp över flera sidor, måste vi aktivera alternativet "KeepWithNext" för varje stycke i tabellen förutom de sista styckena i den sista raden i tabellen. Använd följande kod:
 
 ```csharp
 foreach(Cell cell in table.GetChildNodes(NodeType.Cell, true))
@@ -43,27 +43,27 @@ para.ParagraphFormat.KeepWithNext = true;
 }
 ```
 
-هنا نقوم بعمل حلقة عبر كل خلية في الجدول وتمكين خيار "KeepWithNext" لكل فقرة في الخلية باستثناء الفقرات الأخيرة من الصف الأخير في الجدول.
+Här går vi igenom varje cell i tabellen och aktiverar alternativet "KeepWithNext" för varje stycke i cellen förutom de sista styckena i den sista raden i tabellen.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تثبيت الجدول معًا. استخدم الكود التالي:
+## Steg 4: Spara det ändrade dokumentet
+Slutligen måste vi spara det ändrade dokumentet med tabellen sammanhållen. Använd följande kod:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 
-### عينة من التعليمات البرمجية المصدر لـ Keep Table Together باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Keep Table Together med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// نحتاج إلى تمكين KeepWithNext لكل فقرة في الجدول لمنعها من اختراق الصفحة ،
-	// باستثناء الفقرات الأخيرة في الصف الأخير من الجدول.
+	// Vi måste aktivera KeepWithNext för varje stycke i tabellen för att förhindra att den bryts över en sida,
+	// förutom de sista styckena i den sista raden i tabellen.
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();
@@ -74,5 +74,5 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 	doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تجميع الجدول معًا في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك الحفاظ على الجدول سليمًا ومنعه من الانقسام عبر صفحات متعددة في مستنداتك. تمنحك هذه الميزة مزيدًا من التحكم في مظهر الجداول وتخطيطها في مستنداتك.
+## Slutsats
+I den här handledningen lärde vi oss hur man håller ihop en tabell i ett Word-dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden och implementera den medföljande C#-koden kan du behålla en tabell intakt och förhindra att den delas upp på flera sidor i dina dokument. Den här funktionen ger dig mer kontroll över utseendet och layouten på dina tabeller i dina dokument.

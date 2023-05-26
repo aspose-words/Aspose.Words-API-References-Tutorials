@@ -1,27 +1,27 @@
 ---
-title: استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة
-linktitle: استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لاستخدام حرف مسافة لكل مستوى في قائمة المسافة البادئة في Aspose.Words for .NET. قم بإنشاء مستندات Word جيدة التنظيم بسهولة.
+title: Utiliser le caractère d'espace par niveau pour l'indentation de la liste
+linktitle: Utiliser le caractère d'espace par niveau pour l'indentation de la liste
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour l'utilisation d'un espace par niveau pour l'indentation de liste dans Aspose.Words pour .NET. Créez facilement des documents Word bien structurés.
 type: docs
 weight: 10
 url: /fr/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words إمكانية استخدام حرف مسافة واحد لكل مستوى لعمل مسافة بادئة للقوائم. في هذا الدليل ، سنوضح لك كيفية استخدام كود المصدر C # الخاص بـ Aspose.Words for .NET لتنفيذ هذه الوظيفة.
+Aspose.Words pour .NET est une bibliothèque puissante pour créer, éditer et manipuler des documents Word dans une application C#. Parmi les fonctionnalités offertes par Aspose.Words figure la possibilité d'utiliser un espace par niveau pour l'indentation des listes. Dans ce guide, nous allons vous montrer comment utiliser le code source C# de Aspose.Words pour .NET pour implémenter cette fonctionnalité.
 
-## فهم مكتبة Aspose.Words
+## Comprendre la bibliothèque Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الوظائف لإنشاء وتعديل ومعالجة مستندات Word ، بما في ذلك إدارة القوائم والمسافة البادئة.
+Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque populaire qui rend le travail avec les documents Word simple et efficace. Il offre un large éventail de fonctionnalités pour créer, modifier et manipuler des documents Word, y compris la gestion des listes et de l'indentation.
 
-## إنشاء الوثيقة وإضافة المحتوى
+## Création du document et ajout de contenu
 
-تتمثل الخطوة الأولى في إنشاء مستند جديد وإضافة محتوى إليه. استخدم فئة المستند لإنشاء مثيل مستند جديد. ثم استخدم فئة DocumentBuilder لإضافة نص وإنشاء قائمة بمستويات متعددة من المسافة البادئة. هنا مثال :
+La première étape consiste à créer un nouveau document et à y ajouter du contenu. Utilisez la classe Document pour créer une nouvelle instance de document. Utilisez ensuite la classe DocumentBuilder pour ajouter du texte et créer une liste avec plusieurs niveaux d'indentation. Voici un exemple :
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+// Créer une liste avec trois niveaux d'indentation
 builder.ListFormat.ApplyNumberDefault();
 builder. Writen("Element 1");
 builder.ListFormat.ListIndent();
@@ -30,11 +30,11 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند جديد واستخدام DocumentBuilder لإضافة نص وإنشاء قائمة بثلاثة مستويات من المسافة البادئة. لقد أضفنا ثلاثة عناصر إلى القائمة ، مع وضع مسافة بادئة لكل عنصر في مستوى إضافي.
+Dans cet exemple, nous créons un nouveau document et utilisons le DocumentBuilder pour ajouter du texte et créer une liste avec trois niveaux d'indentation. Nous avons ajouté trois éléments à la liste, chaque élément étant mis en retrait d'un niveau supplémentaire.
 
-## استخدام مسافة واحدة لكل مستوى للمسافة البادئة للقائمة
+## Utilisation d'un espace par niveau pour l'indentation de la liste
 
-بمجرد إضافة المحتوى ، يمكننا الآن تكوين المسافة البادئة للقوائم باستخدام حرف مسافة واحد لكل مستوى. لهذا نستخدم فئة TxtSaveOptions وقمنا بتعيين خاصية ListIndentation.Count على عدد مستويات المسافة البادئة وخاصية ListIndentation.Character إلى حرف المسافة المراد استخدامه. إليك الطريقة:
+Une fois le contenu ajouté, nous pouvons maintenant configurer l'indentation des listes en utilisant un espace par niveau. Pour cela nous utilisons la classe TxtSaveOptions et nous définissons la propriété ListIndentation.Count sur le nombre de niveaux d'indentation et la propriété ListIndentation.Character sur le caractère espace à utiliser. Voici comment:
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -44,11 +44,11 @@ saveOptions.ListIndentation.Character = ' ';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-في هذا المثال ، أنشأنا مثيلًا لـ TxtSaveOptions وقمنا بتعيين خاصية ListIndentation.Count على 3 للإشارة إلى وجود ثلاثة مستويات من المسافة البادئة في القائمة. قمنا أيضًا بتعيين خاصية ListIndentation.Character إلى حرف المسافة ('') الذي نريد استخدامه للمسافة البادئة.
+Dans cet exemple, nous créons une instance de TxtSaveOptions et définissons la propriété ListIndentation.Count sur 3 pour indiquer qu'il existe trois niveaux d'indentation dans la liste. Nous définissons également la propriété ListIndentation.Character sur le caractère d'espacement (' ') que nous voulons utiliser pour l'indentation.
 
-### مثال على شفرة المصدر لميزة "استخدام حرف مسافة واحد لكل مستوى للمسافة البادئة للقائمة" مع Aspose.Words for .NET
+### Exemple de code source pour la fonctionnalité "Utiliser un espace par niveau pour l'indentation de la liste" avec Aspose.Words pour .NET
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لميزة "استخدام حرف مسافة واحد لكل مستوى للمسافة البادئة للقائمة" مع Aspose.Words for .NET:
+Voici l'exemple de code source complet pour la fonctionnalité "Utiliser un espace par niveau pour l'indentation de la liste" avec Aspose.Words pour .NET :
 
 ```csharp
 
@@ -61,14 +61,14 @@ namespace Example
      {
          static void Main(string[] args)
          {
-             // المسار إلى دليل المستند الخاص بك
+             // Chemin d'accès à votre répertoire de documents
              string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-             // قم بإنشاء المستند وإضافة محتوى
+             // Créer le document et ajouter du contenu
              Document doc = new Document();
              DocumentBuilder builder = new DocumentBuilder(doc);
 
-             // قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+             // Créer une liste avec trois niveaux d'indentation
              builder.ListFormat.ApplyNumberDefault();
              builder. Writen("Element 1");
              builder.ListFormat.ListIndent();
@@ -76,12 +76,12 @@ namespace Example
              builder.ListFormat.ListIndent();
              builder.Write("Element 3");
 
-             // استخدم مسافة واحدة لكل مستوى للمسافة البادئة للقائمة
+             // Utilisez un espace par niveau pour l'indentation de la liste
              TxtSaveOptions saveOptions = new TxtSaveOptions();
              saveOptions.ListIndentation.Count = 3;
              saveOptions.ListIndentation.Character = ' ';
 
-             // احفظ المستند بالخيارات المحددة
+             // Enregistrez le document avec les options spécifiées
              doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
          }
      }
@@ -89,6 +89,6 @@ namespace Example
 
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا الدليل ، أوضحنا كيفية استخدام Aspose.Words for .NET لتطبيق وظيفة "استخدام حرف مسافة واحد لكل مستوى من أجل المسافة البادئة للقائمة". باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تكوين المسافة البادئة للقوائم في مستندات Word الخاصة بك باستخدام حرف مسافة واحد لكل مستوى. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع تنسيق النص وإدارة القوائم ، مما يسمح لك بإنشاء مستندات جيدة التنظيم في تطبيق C # الخاص بك.
+Dans ce guide, nous avons expliqué comment utiliser Aspose.Words pour .NET pour appliquer la fonctionnalité "Utiliser un espace par niveau pour l'indentation de la liste". En suivant les étapes fournies et en utilisant le code source C# fourni, vous pouvez facilement configurer l'indentation des listes dans vos documents Word en utilisant un espace par niveau. Aspose.Words offre une flexibilité et une puissance considérables pour travailler avec le formatage du texte et la gestion des listes, vous permettant de créer des documents bien structurés dans votre application C#.

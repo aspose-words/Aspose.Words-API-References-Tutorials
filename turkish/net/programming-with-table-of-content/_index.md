@@ -1,20 +1,20 @@
 ---
-title: البرمجة مع جدول المحتويات
-linktitle: البرمجة مع جدول المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تغيير نمط toc وتغيير توقف علامة التبويب toc
+title: İçindekiler ile Programlama
+linktitle: İçindekiler ile Programlama
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, toc seviyesinin değişiklik stilini ve toc sekme duraklarını değiştirmeyi içerir
 type: docs
 weight: 1420
 url: /tr/net/programming-with-table-of-content/
 ---
-ترشدك البرامج التعليمية لـ Aspose.Words for .NET حول البرمجة باستخدام جدول المحتويات عبر خطوات معالجة جداول المحتويات وتخصيصها في مستندات Word الخاصة بك. سوف تتعلم كيفية إنشاء وتحديث وتخصيص جداول المحتويات لتنظيم محتوى المستندات الخاصة بك بشكل فعال.
+İçindekiler tablosuyla programlama üzerine Aspose.Words for .NET öğreticileri, Word belgelerinizdeki içindekiler tablosunu işleme ve özelleştirme adımlarında size yol gösterir. Belgelerinizin içeriğini etkili bir şekilde düzenlemek için içindekiler tablolarını nasıl oluşturacağınızı, güncelleyeceğinizi ve özelleştireceğinizi öğreneceksiniz.
 
-توفر هذه البرامج التعليمية أمثلة على التعليمات البرمجية خطوة بخطوة وتفسيرات واضحة لكيفية استخدام ميزات Aspose.Words for .NET للعمل مع جداول المحتويات. ستتعلم كيفية إضافة مستويات العناوين ، وتحديد أنماط التنسيق ، وتخصيص مظهر وسلوك جداول المحتويات ، وإدارة التحديثات التلقائية.
+Bu eğitimler adım adım kod örnekleri ve içindekiler tablosuyla çalışmak için Aspose.Words for .NET özelliklerinin nasıl kullanılacağına dair anlaşılır açıklamalar sağlar. Başlık düzeyleri eklemeyi, biçimlendirme stillerini belirlemeyi, içindekiler tablosunun görünümünü ve davranışını özelleştirmeyi ve otomatik güncellemeleri yönetmeyi öğreneceksiniz.
 
-سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان التقنيات المتقدمة لإنشاء جداول محتويات احترافية والحفاظ عليها في مستندات Word باستخدام Aspose.Words for .NET. حسِّن تنظيم مستنداتك واجعل التنقل أسهل للمستخدمين من خلال هذه البرامج التعليمية الشاملة والمفيدة.
+İster yeni başlayan ister deneyimli bir geliştirici olun, bu eğitimler, Aspose.Words for .NET kullanarak Word belgelerinizde profesyonel içindekiler tabloları oluşturmaya ve sürdürmeye yönelik gelişmiş tekniklerde uzmanlaşmanıza yardımcı olacaktır. Bu kapsamlı ve bilgilendirici eğitimlerle belgelerinizin organizasyonunu geliştirin ve kullanıcılarınız için gezinmeyi kolaylaştırın.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [تغيير نمط مستوى Toc](./change-style-of-toc-level/) | تعرف على كيفية تغيير نمط مستوى جدول المحتويات بسهولة في مستند Word باستخدام Aspose.Words for .NET. |
-| [تغيير Toc Tab Stops](./change-toc-tab-stops/) | تعرف على كيفية تغيير علامات تبويب جدول المحتويات في مستند Word باستخدام Aspose.Words for .NET. |
+| [Toc Düzeyinin Stilini Değiştirme](./change-style-of-toc-level/) | Aspose.Words for .NET kullanarak bir Word belgesindeki içindekiler düzeyi stilini kolayca nasıl değiştireceğinizi öğrenin. |
+| [Toc Sekme Duraklarını Değiştir](./change-toc-tab-stops/) | Aspose.Words for .NET kullanarak bir Word belgesindeki içindekiler tablosu sekmelerini nasıl değiştireceğinizi öğrenin. |

@@ -1,44 +1,44 @@
 ---
-title: إدراج مخطط مساحي
-linktitle: إدراج مخطط مساحي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مخطط مساحي في مستند باستخدام Aspose.Words for .NET. أضف بيانات السلسلة واحفظ المستند مع الرسم البياني.
+title: Inserisci grafico ad area
+linktitle: Inserisci grafico ad area
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire un grafico ad area in un documento utilizzando Aspose.Words per .NET. Aggiungi i dati della serie e salva il documento con il grafico.
 type: docs
 weight: 10
 url: /it/net/programming-with-charts/insert-area-chart/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مخطط مساحي في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وحفظ المستند.
+Questo tutorial spiega come utilizzare Aspose.Words per .NET per inserire un grafico ad area in un documento. Il codice sorgente fornito mostra come creare un grafico, aggiungere dati di serie e salvare il documento.
 
-## الخطوة 1: قم بإعداد المشروع
+## Passaggio 1: impostare il progetto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Assicurati di avere i seguenti prerequisiti:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words per la libreria .NET installata. Puoi scaricarlo dal sito Web ufficiale di Aspose o utilizzare il gestore di pacchetti NuGet per installarlo.
+- Un percorso di directory del documento in cui verrà salvato il documento di output.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Passaggio 2: crea un nuovo documento e inserisci un grafico
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Crea un nuovo`Document` oggetto e a`DocumentBuilder` per costruire il documento.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط مساحي في المستند.
+ Quindi, usa il`InsertChart` metodo del`DocumentBuilder` per inserire un grafico ad area nel documento.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Passaggio 3: aggiungi i dati della serie al grafico
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمس نقاط بيانات مع التواريخ والقيم المقابلة.
+Aggiungi i dati della serie al grafico. In questo esempio, aggiungeremo cinque punti dati con date e valori corrispondenti.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new []
@@ -52,20 +52,20 @@ chart.Series.Add("Aspose Series 1", new []
 new double[] { 32, 32, 28, 12, 15 });
 ```
 
-## الخطوة 4: احفظ المستند
+## Passaggio 4: salvare il documento
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Infine, salva il documento nella directory specificata utilizzando il file`Save` metodo del`Document` oggetto.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertAreaChart.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مخطط مساحي باستخدام Aspose.Words for .NET.
+Questo completa l'implementazione dell'inserimento di un grafico ad area utilizzando Aspose.Words per .NET.
 
-### مثال على شفرة المصدر لإدراج مخطط منطقة باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Inserisci grafico ad area utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

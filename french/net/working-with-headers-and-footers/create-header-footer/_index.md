@@ -1,42 +1,42 @@
 ---
-title: إنشاء تذييل الرأس
-linktitle: إنشاء تذييل الرأس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء رؤوس الصفحات وتذييلاتها في مستندات Word باستخدام Aspose.Words for .NET. تخصيص الرؤوس والتذييلات لكل صفحة.
+title: Créer un en-tête de pied de page
+linktitle: Créer un en-tête de pied de page
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à créer des en-têtes et des pieds de page dans vos documents Word avec Aspose.Words pour .NET. Personnalisez les en-têtes et pieds de page pour chaque page.
 type: docs
 weight: 10
 url: /fr/net/working-with-headers-and-footers/create-header-footer/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية لإنشاء رؤوس وتذييلات باستخدام Aspose.Words لوظائف .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Voici un guide étape par étape pour expliquer le code source C # suivant pour créer des en-têtes et des pieds de page à l'aide de la fonctionnalité Aspose.Words pour .NET. Assurez-vous d'avoir inclus la bibliothèque Aspose.Words dans votre projet avant d'utiliser ce code.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## Étape 1 : Définir le chemin du répertoire de documents
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
+Assurez-vous de spécifier le chemin correct vers votre répertoire de documents où le document modifié sera enregistré.
 
-## الخطوة 2: قم بإنشاء مستند ومولد مستندات
+## Étape 2 : créer un document et un générateur de documents
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- هنا نقوم بإنشاء مثيل لـ`Document` فئة ومثيل`DocumentBuilder` فئة تسمح لنا بمعالجة المستند وإضافة عناصر.
+ Ici, nous créons une instance de`Document` classe et une instance de`DocumentBuilder` classe qui nous permettra de manipuler le document et d'ajouter des éléments.
 
-## الخطوة 3: تعيين معلمات الصفحة والعنوان الأول
+## Étape 3 : Définir les paramètres de la page et le premier en-tête
 
 ```csharp
 Section currentSection = builder.CurrentSection;
 PageSetup pageSetup = currentSection.PageSetup;
 
-// حدد ما إذا كنا نريد أن تختلف رؤوس / تذييلات الصفحة الأولى عن الصفحات الأخرى.
-// يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter لتحديدها
-// رؤوس / تذييلات مختلفة للصفحات الفردية والزوجية.
+// Précisez si nous voulons que les en-têtes/pieds de page de la première page soient différents des autres pages.
+// Vous pouvez également utiliser la propriété PageSetup.OddAndEvenPagesHeaderFooter pour spécifier
+// différents en-têtes/pieds de page pour les pages paires et impaires.
 pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
 
@@ -53,9 +53,9 @@ pageSetup.HeaderDistance = 20;
 builder. MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 ```
 
-نقوم بتعيين معلمات الصفحة ، بما في ذلك مسافة الرأس ، ثم ننتقل إلى العنوان الرئيسي (`HeaderPrimary`). نستخدم منشئ المستندات لإضافة نص وتنسيق العنوان.
+Nous définissons les paramètres de la page, y compris la distance de l'en-tête, puis passons à l'en-tête principal (`HeaderPrimary`). Nous utilisons le générateur de document pour ajouter du texte et formater l'en-tête.
 
-## الخطوة 4: أدخل صورة ونصًا في العنوان الرئيسي
+## Étape 4 : Insérez une image et du texte dans l'en-tête principal
 
 ```csharp
 builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
@@ -68,9 +68,9 @@ builder.Write("Aspose.Words - Building headers/footers.");
 builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 ```
 
-نستخدم منشئ المستندات لإدراج صورة في الزاوية اليسرى العلوية من الرأس الرئيسي ، ثم نضيف بعض النص المحاذي لليمين.
+Nous utilisons le générateur de documents pour insérer une image dans le coin supérieur gauche de l'en-tête principal, puis nous ajoutons du texte aligné à droite.
 
-## الخطوة 5: قم بإدراج جدول في التذييل الرئيسي
+## Étape 5 : Insérer un tableau dans le pied de page principal
 
 ```csharp
 builder.StartTable();
@@ -102,7 +102,7 @@ builder.EndTable();
 builder.MoveToDocumentEnd();
 ```
 
-## الخطوة 6: إضافة صفحة جديدة وتعيين الرؤوس / التذييلات
+## Étape 6 : Ajouter une nouvelle page et définir des en-têtes/pieds de page
 
 ```csharp
 builder. InsertBreak(BreakType.PageBreak);
@@ -111,17 +111,17 @@ builder.InsertBreak(BreakType.SectionBreakNewPage);
 currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-//لا يحتاج هذا القسم إلى رأس / تذييل مختلف للصفحة الأولى ، نحتاج فقط إلى صفحة عنوان واحدة في المستند ،
-// وقد تم بالفعل تحديد رأس / تذييل الصفحة في القسم السابق.
+//Cette section n'a pas besoin d'un en-tête/pied de page différent pour la première page, nous n'avons besoin que d'une seule page de titre dans le document,
+// et l'en-tête/pied de page de cette page a déjà été défini dans la section précédente.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// يعرض هذا القسم رؤوس / تذييلات القسم السابق افتراضيًا ، استدعاء currentSection.HeadersFooters.LinkToPrevious (خطأ) لكسر هذا الرابط ،
-// يختلف عرض الصفحة بالنسبة للقسم الجديد ، لذلك نحتاج إلى تعيين عروض خلايا مختلفة لجدول تذييل الصفحة.
+// Cette section affiche les en-têtes/pieds de page de la section précédente par défaut, appelez currentSection.HeadersFooters.LinkToPrevious(false) pour rompre ce lien,
+// la largeur de la page est différente pour la nouvelle section, nous devons donc définir différentes largeurs de cellule pour un tableau de pied de page.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-// إذا أردنا استخدام الرؤوس / التذييلات الموجودة بالفعل لهذا القسم ،
-// ولكن مع بعض التغييرات الطفيفة ، قد يكون من المنطقي نسخ الرؤوس / التذييلات
-// من القسم السابق وتطبيق التغييرات اللازمة حيث نريدها.
+// Si nous voulons utiliser les en-têtes/pieds de page déjà existants pour cette section,
+// mais avec quelques modifications mineures, il peut être judicieux de copier les en-têtes/pieds de page
+// de la section précédente et appliquez les modifications nécessaires là où vous le souhaitez.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -130,16 +130,16 @@ Row row = primaryFooter.Tables[0].FirstRow;
 row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-// احفظ المستند
+// Enregistrer le document
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
- نضيف فاصل صفحة وفاصل مقطعي لإنشاء صفحة جديدة حيث ستكون الرؤوس / التذييلات الأولية مرئية. قمنا بتعيين معلمات القسم الجديد ، ثم نستخدم الامتداد`CopyHeadersFootersFromPreviousSection`طريقة لنسخ الرؤوس / التذييلات من القسم السابق. أخيرًا ، قمنا بتعيين عرض الخلية المناسب لجدول التذييل الرئيسي وحفظنا المستند.
+ Nous ajoutons un saut de page et un saut de section pour créer une nouvelle page où les principaux en-têtes/pieds de page seront visibles. Nous définissons les paramètres de la nouvelle section, puis nous utilisons le`CopyHeadersFootersFromPreviousSection`méthode pour copier les en-têtes/pieds de page de la section précédente. Enfin, nous définissons les largeurs de cellule appropriées pour le tableau de pied de page principal et enregistrons le document.
 
-### مثال على كود المصدر لإنشاء الرؤوس والتذييلات باستخدام Aspose.Words for .NET
+### Exemple de code source pour créer des en-têtes et des pieds de page avec Aspose.Words pour .NET
 
 ```csharp
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 	
 	Document doc = new Document();
@@ -147,9 +147,9 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	Section currentSection = builder.CurrentSection;
 	PageSetup pageSetup = currentSection.PageSetup;
-	// حدد ما إذا كنا نريد أن تختلف رؤوس / تذييلات الصفحة الأولى عن الصفحات الأخرى.
-	// يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter لتحديدها
-	// رؤوس / تذييلات مختلفة للصفحات الفردية والزوجية.
+	// Spécifiez si nous voulons que les en-têtes/pieds de page de la première page soient différents des autres pages.
+	// Vous pouvez également utiliser la propriété PageSetup.OddAndEvenPagesHeaderFooter pour spécifier
+	// différents en-têtes/pieds de page pour les pages paires et impaires.
 	pageSetup.DifferentFirstPageHeaderFooter = true;
 	pageSetup.HeaderDistance = 20;
 
@@ -165,8 +165,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 	pageSetup.HeaderDistance = 20;
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	// أدخل صورة موضوعة في الزاوية العلوية / اليسرى من الرأس.
-	// تم ضبط المسافة من الحواف العلوية / اليسرى للصفحة على 10 نقاط.
+	// Insérez une image positionnée dans le coin supérieur/gauche de l'en-tête.
+	// La distance des bords supérieur/gauche de la page est définie sur 10 points.
 	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
 		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
@@ -176,8 +176,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	// نستخدم جدولاً يحتوي على خليتين لعمل جزء واحد من النص على السطر (مع ترقيم الصفحات).
-	// تتم محاذاة إلى اليسار ، ويتم محاذاة الجزء الآخر من النص (مع حقوق النشر) إلى اليمين.
+	// Nous utilisons un tableau à deux cellules pour faire une partie du texte sur la ligne (avec numérotation des pages).
+	// A aligner à gauche, et l'autre partie du texte (avec copyright) à aligner à droite.
 	builder.StartTable();
 
 	builder.CellFormat.ClearFormatting();
@@ -186,7 +186,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	// يستخدم حقلي PAGE و NUMPAGES لحساب تلقائي لرقم الصفحة الحالية والعديد من الصفحات.
+	// Il utilise les champs PAGE et NUMPAGES pour calculer automatiquement le numéro de page actuel et de nombreuses pages.
 	builder.Write("Page ");
 	builder.InsertField("PAGE", "");
 	builder.Write(" of ");
@@ -207,25 +207,25 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.MoveToDocumentEnd();
 
-	// قم بعمل فاصل صفحة لإنشاء صفحة ثانية تظهر عليها الرؤوس / التذييلات الأساسية.
+	// Faites un saut de page pour créer une deuxième page sur laquelle les principaux en-têtes/pieds de page seront visibles.
 	builder.InsertBreak(BreakType.PageBreak);
 	builder.InsertBreak(BreakType.SectionBreakNewPage);
 
 	currentSection = builder.CurrentSection;
 	pageSetup = currentSection.PageSetup;
 	pageSetup.Orientation = Orientation.Landscape;
-	//لا يحتاج هذا القسم إلى رأس / تذييل مختلف للصفحة الأولى ، فنحن نحتاج فقط إلى صفحة عنوان واحدة في المستند ،
-	// وقد تم بالفعل تحديد رأس / تذييل الصفحة في القسم السابق.
+	//Cette section n'a pas besoin d'un en-tête/pied de page de première page différent, nous n'avons besoin que d'une seule page de titre dans le document,
+	// et l'en-tête/pied de page de cette page a déjà été défini dans la section précédente.
 	pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// يعرض هذا القسم الرؤوس / التذييلات من القسم السابق
-	// بشكل افتراضي ، قم باستدعاء currentSection.HeadersFooters.LinkToPrevious (false) لإلغاء عرض هذه الصفحة
-	// يختلف عن القسم الجديد ، وبالتالي نحتاج إلى تعيين عروض خلايا مختلفة لجدول تذييل.
+	// Cette section affiche les en-têtes/pieds de page de la section précédente
+	// par défaut appelez currentSection.HeadersFooters.LinkToPrevious(false) pour annuler cette largeur de page
+	// est différent pour la nouvelle section, et nous devons donc définir différentes largeurs de cellule pour un tableau de pied de page.
 	currentSection.HeadersFooters.LinkToPrevious(false);
 
-	// إذا أردنا استخدام مجموعة الرأس / التذييل الموجودة بالفعل لهذا القسم.
-	// ولكن مع بعض التعديلات الطفيفة ، قد يكون من المناسب نسخ الرؤوس / التذييلات
-	// من القسم السابق وتطبيق التعديلات اللازمة حيث نريدها.
+	// Si nous voulons utiliser l'ensemble d'en-tête/pied de page déjà existant pour cette section.
+	// Mais avec quelques modifications mineures, il peut être opportun de copier les en-têtes/pieds de page
+	// de la section précédente et appliquez les modifications nécessaires là où vous le souhaitez.
 	CopyHeadersFootersFromPreviousSection(currentSection);
 
 	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];

@@ -1,48 +1,48 @@
 ---
-title: قسم متعدد
-linktitle: قسم متعدد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد علامات المستندات المنظمة متعددة الأقسام ومعالجتها في مستند Word باستخدام Aspose.Words for .NET.
+title: Mehrteilig
+linktitle: Mehrteilig
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET strukturierte Dokument-Tags mit mehreren Abschnitten in einem Word-Dokument abrufen und verarbeiten.
 type: docs
 weight: 10
 url: /de/net/programming-with-sdt/multi-section/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية العمل مع علامات المستندات المهيكلة متعددة الأقسام في مستند Word باستخدام Aspose.Words for .NET. يمكنك استرداد علامات القسم الموجودة في المستند ومعالجتها.
+In diesem Tutorial wird erklärt, wie Sie mit Aspose.Words für .NET mit strukturierten Dokument-Tags mit mehreren Abschnitten in einem Word-Dokument arbeiten. Sie können die im Dokument vorhandenen Abschnitts-Tags abrufen und verarbeiten.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Voraussetzungen
+Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words für .NET-Bibliothek installiert.
+- Grundkenntnisse in C# und der Arbeit mit Word-Dokumenten.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستند الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
+ Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem sich Ihr Dokument befindet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند واسترجع العلامات متعددة الأقسام
- قم بتحميل مستند Word باستخدام ملف`Document` مُنشئ ، تمرير المسار إلى المستند كمعامل. استرجع جميع عُقد بدء نطاق علامة المستند المهيكلة في المستند باستخدام امتداد`GetChildNodes` طريقة.
+## Schritt 2: Laden Sie das Dokument und rufen Sie Tags mit mehreren Abschnitten ab
+ Laden Sie das Word-Dokument mit`Document` Konstruktor, der den Pfad zum Dokument als Parameter übergibt. Rufen Sie alle Startknoten des strukturierten Dokument-Tag-Bereichs im Dokument mit ab`GetChildNodes` Methode.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
 NodeCollection tags = doc.GetChildNodes(NodeType.StructuredDocumentTagRangeStart, true);
 ```
 
-## الخطوة 3: معالجة العلامات متعددة الأقسام
-كرر خلال مجموعة عقد بدء نطاق علامة المستند المنظمة. في هذا المثال ، نقوم ببساطة بطباعة عنوان كل علامة إلى وحدة التحكم. يمكنك إجراء مزيد من المعالجة بناءً على متطلباتك.
+## Schritt 3: Verarbeiten Sie die Multi-Section-Tags
+Durchlaufen Sie die Sammlung der Startknoten des strukturierten Dokument-Tag-Bereichs. In diesem Beispiel geben wir einfach den Titel jedes Tags auf der Konsole aus. Sie können die Weiterverarbeitung entsprechend Ihren Anforderungen durchführen.
 
 ```csharp
 foreach (StructuredDocumentTagRangeStart tag in tags)
     Console.WriteLine(tag.Title);
 ```
 
-### مثال على شفرة المصدر للقسم المتعدد باستخدام Aspose.Words for .NET 
+### Beispielquellcode für Multi Section mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -51,4 +51,4 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 		Console.WriteLine(tag.Title);
 ```
 
-هذا كل شيء! لقد نجحت في استرداد علامات المستندات المنظمة متعددة الأقسام ومعالجتها في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Das ist es! Sie haben mit Aspose.Words für .NET erfolgreich strukturierte Dokument-Tags mit mehreren Abschnitten in Ihrem Word-Dokument abgerufen und verarbeitet.

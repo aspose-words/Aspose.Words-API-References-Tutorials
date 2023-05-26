@@ -1,57 +1,57 @@
 ---
-title: تعديل وحدات ماكرو Vba
-linktitle: تعديل وحدات ماكرو Vba
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تحرير وحدات ماكرو VBA لمستند Word باستخدام Aspose.Words for .NET.
+title: Ändra Vba-makron
+linktitle: Ändra Vba-makron
+second_title: Aspose.Words för .NET API Referens
+description: I den här handledningen lär du dig hur du redigerar VBA-makron i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-vba-macros/modify-vba-macros/
 ---
-في هذا البرنامج التعليمي ، سنشرح كيفية تعديل وحدات ماكرو VBA لمستند Word باستخدام مكتبة Aspose.Words لـ .NET. يسمح لك تحرير وحدات ماكرو VBA بتحديث رمز VBA الموجود في مستند Word الخاص بك. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+I den här handledningen kommer vi att förklara hur man ändrar VBA-makron i ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Genom att redigera VBA-makron kan du uppdatera befintlig VBA-kod i ditt Word-dokument. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على وحدات ماكرو VBA التي تريد تعديلها
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
+- Ett Word-dokument som innehåller VBA-makron som du vill ändra
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+ Först måste du ställa in katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند الذي يحتوي على وحدات ماكرو VBA
-بعد ذلك ، سنقوم بتحميل مستند Word الذي يحتوي على وحدات ماكرو VBA التي نريد تعديلها.
+## Steg 2: Ladda dokumentet som innehåller VBA-makron
+Därefter kommer vi att ladda Word-dokumentet som innehåller VBA-makron som vi vill ändra.
 
 ```csharp
-// قم بتحميل المستند الذي يحتوي على وحدات ماكرو VBA
+// Ladda dokumentet som innehåller VBA-makron
 Document doc = new Document(dataDir + "VBA project.docm");
 VbaProject project = doc.VbaProject;
 ```
 
-## الخطوة 3: تعديل التعليمات البرمجية المصدر للماكرو
- سنقوم الآن بتعديل الكود المصدري لأول ماكرو لمشروع VBA. استبدل ملف`newSourceCode` متغير مع كود المصدر الجديد الذي تريد استخدامه.
+## Steg 3: Ändra makrokällkoden
+ Vi ska nu modifiera källkoden för det första makrot i VBA-projektet. Ersätt`newSourceCode` variabel med den nya källkoden du vill använda.
 
 ```csharp
 const string newSourceCode = "Test change source code";
 project.Modules[0].SourceCode = newSourceCode;
 ```
 
-## الخطوة 4: احفظ المستند المعدل
-أخيرًا ، سنقوم بحفظ المستند المعدل بوحدات ماكرو VBA المحدثة في ملف.
+## Steg 4: Spara det ändrade dokumentet
+Slutligen kommer vi att spara det modifierade dokumentet med de uppdaterade VBA-makron till en fil.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
 ```
 
-### نموذج لشفرة مصدر لتعديل وحدات ماكرو Vba باستخدام Aspose.Words for .NET
+### Exempel på källkod för Ändra Vba-makron med Aspose.Words för .NET
  
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "VBA project.docm");
@@ -62,5 +62,5 @@ doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تحرير وحدات ماكرو VBA في مستند Word باستخدام Aspose.Words for .NET. يتيح لك تحرير وحدات ماكرو VBA تحديث تعليمات VBA البرمجية الموجودة في المستند الخاص بك لإجراء تغييرات أو تحسينات. لا تتردد في استخدام هذه الميزة لمزيد من التخصيص والأتمتة لمستندات Word الخاصة بك.
+## Slutsats
+I den här handledningen såg vi hur man redigerar VBA-makron i ett Word-dokument med Aspose.Words för .NET. Genom att redigera VBA-makron kan du uppdatera befintlig VBA-kod i ditt dokument för att göra ändringar eller förbättringar. Använd gärna den här funktionen för att ytterligare anpassa och automatisera dina Word-dokument.

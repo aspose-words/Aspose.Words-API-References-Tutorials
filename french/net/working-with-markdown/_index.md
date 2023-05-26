@@ -1,34 +1,34 @@
 ---
-title: العمل مع Markdown
-linktitle: العمل مع Markdown
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية كتابة النص الغامق والنص المائل والنص الخطي والشفرة المضمنة والربط التلقائي وإضافة صورة والقائمة المرتبة والعنوان والجدول وقراءة مستند تخفيض السعر باستخدام Aspose.Words for .NET.
+title: Travailler avec Markdown
+linktitle: Travailler avec Markdown
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels expliquent comment mettre du texte en gras, du texte en italique, barré, du code en ligne, des liens automatiques, ajouter une image, une liste ordonnée, un en-tête, un tableau et lire un document de démarquage à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 810
 url: /fr/net/working-with-markdown/
 ---
 
-يوفر العمل مع Markdown مصدرًا شاملاً لتعلم كيفية التعامل مع تنسيق Markdown باستخدام مكتبة Aspose.Words for .NET. تقدم البرامج التعليمية تفسيرات مفصلة ، وكود مصدر كامل وأمثلة عملية لمعالجة وإنشاء مستندات Markdown ، بما في ذلك استيراد ملفات Markdown ، وتحويل مستندات Word إلى Markdown ، وتخصيص تصميم Markdown ، والتصدير إلى PDF ، وما إلى ذلك من التنسيقات الأخرى وغير ذلك الكثير. هذا المورد ضروري للمطورين الذين يرغبون في إتقان استخدام Markdown مع Aspose.Words for .NET والاستفادة الكاملة من ميزاته المتقدمة لإنشاء المحتوى المستند إلى النص.
+Travailler avec Markdown fournit une ressource complète pour apprendre à travailler avec le format Markdown à l'aide de la bibliothèque Aspose.Words pour .NET. Les didacticiels fournissent des explications détaillées, un code source complet et des exemples pratiques pour manipuler et générer des documents Markdown, y compris l'importation de fichiers Markdown, la conversion de documents Word en Markdown, la personnalisation du style Markdown, l'exportation au format PDF, etc. d'autres formats et bien plus encore. Cette ressource est essentielle pour les développeurs qui souhaitent maîtriser l'utilisation de Markdown avec Aspose.Words pour .NET et tirer pleinement parti de ses fonctionnalités avancées pour la génération de contenu textuel.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [نص عريض](./bold-text/) | تعرف على كيفية كتابة نص غامق باستخدام Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET. |
-| [نص مائل](./italic-text/) | تعرف على كيفية كتابة نص مائل باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [يتوسطه خط](./strikethrough/) | تعرف على كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [رمز مضمّن](./inline-code/) | تعرف على كيفية تضمين التعليمات البرمجية باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [ربط تلقائي](./autolink/) | تعرف على كيفية إدراج الارتباط التلقائي مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET. |
-| [وصلة](./link/) | تعرف على كيفية إدراج الروابط مع Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [صورة](./image/) | تعرف على كيفية إدراج الصورة وتخصيصها باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [قاعدة افقية](./horizontal-rule/) | تعرف على كيفية إدراج قاعدة أفقية باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [عنوان](./heading/) | تعرف على كيفية استخدام العنوان مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET. |
-| [عنوان Setext](./setext-heading/) | تعرف على كيفية استخدام عناوين Setext لتنسيق مستنداتك باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [رمز مسافة بادئة](./indented-code/) | تعرف على كيفية استخدام التعليمات البرمجية ذات المسافات البادئة مع دليل Aspose.Words for .NET خطوة بخطوة. |
-| [كود مسيّج](./fenced-code/) | تعرف على كيفية استخدام ميزة الشفرة المسيجة مع دليل Aspose.Words for .NET خطوة بخطوة. |
-| [يقتبس](./quote/) | تعرف على كيفية استخدام الاقتباس مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET. |
-| [قائمة نقطية](./bulleted-list/) | تعرف على كيفية إنشاء قائمة نقطية باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [قائمة مرتبة](./ordered-list/) | تعرف على كيفية إنشاء قائمة مرتبة باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [طاولة](./table/) | تعرف على كيفية إنشاء جدول باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [اقرأ مستند Markdown](./read-markdown-document/) | تعرف على كيفية قراءة مستند تخفيض السعر باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [تأكيدات](./emphases/) | تعرف على كيفية استخدام التأكيدات (بالخط العريض والمائل) باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [استخدم مصدر التحذير](./use-warning-source/) | تعرف على كيفية استخدام مصدر التحذير مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET. |
+| [Texte en gras](./bold-text/) | Apprenez à mettre du texte en gras avec le guide étape par étape Aspose.Words pour .NET. |
+| [Texte en italique](./italic-text/) | Apprenez à mettre du texte en italique avec le guide étape par étape Aspose.Words pour .NET. |
+| [Barré](./strikethrough/) | Apprenez à appliquer le style de texte barré avec le guide étape par étape Aspose.Words pour .NET. |
+| [Code en ligne](./inline-code/) | Apprenez à coder en ligne avec le guide étape par étape Aspose.Words pour .NET. |
+| [Lien automatique](./autolink/) | Apprenez à insérer un lien automatique avec le guide étape par étape Aspose.Words pour .NET. |
+| [Lien](./link/) | Apprenez à insérer des liens avec Aspose.Words pour .NET. Guide étape par étape. |
+| [Image](./image/) | Apprenez à insérer et personnaliser une image avec le guide étape par étape Aspose.Words pour .NET. |
+| [La règle horizontale](./horizontal-rule/) | Apprenez à insérer une règle horizontale avec le guide pas à pas Aspose.Words pour .NET. |
+| [Titre](./heading/) | Apprenez à utiliser le titre avec Aspose.Words pour .NET Guide étape par étape. |
+| [En-tête de texte](./setext-heading/) | Apprenez à utiliser les en-têtes Setext pour formater vos documents avec le guide étape par étape Aspose.Words pour .NET. |
+| [Code en retrait](./indented-code/) | Apprenez à utiliser le code indenté avec le guide pas à pas Aspose.Words pour .NET. |
+| [Code clôturé](./fenced-code/) | Apprenez à utiliser la fonctionnalité de code clôturé avec Aspose.Words for .NET Guide étape par étape. |
+| [Citation](./quote/) | Apprenez à utiliser la citation avec Aspose.Words pour .NET Guide étape par étape. |
+| [Liste à puces](./bulleted-list/) | Apprenez à créer une liste à puces avec le guide étape par étape Aspose.Words pour .NET. |
+| [Liste ordonnée](./ordered-list/) | Apprenez à créer une liste ordonnée avec le guide étape par étape Aspose.Words pour .NET. |
+| [Tableauau](./table/) | Apprenez à créer un tableau avec le guide pas à pas Aspose.Words pour .NET. |
+| [Lire le document Markdown](./read-markdown-document/) | Apprenez à lire un document Markdown avec le guide étape par étape Aspose.Words pour .NET. |
+| [Accents](./emphases/) | Apprenez à utiliser les accents (gras et italique) avec Aspose.Words pour le guide étape par étape .NET. |
+| [Utiliser la source d'avertissement](./use-warning-source/) | Apprenez à utiliser la source d'avertissement avec le guide étape par étape Aspose.Words pour .NET. |

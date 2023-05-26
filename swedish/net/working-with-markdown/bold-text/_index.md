@@ -1,51 +1,51 @@
 ---
-title: نص عريض
-linktitle: نص عريض
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية كتابة نص غامق باستخدام Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Fettext
+linktitle: Fettext
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du gör fet text med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/working-with-markdown/bold-text/
 ---
 
-في هذا المثال ، سنخبرك بكيفية كتابة نص غامق باستخدام Aspose.Words for .NET. النص الغامق يجعله أكثر وضوحًا ويعطيه أهمية أكبر.
+I det här exemplet kommer vi att berätta för dig hur du gör fet text med Aspose.Words för .NET. Fet text gör den mer synlig och ger den mer framträdande plats.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Steg 1: Använda en dokumentgenerator
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Först använder vi en dokumentgenerator för att lägga till innehåll i vårt dokument.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: نص عريض
+## Steg 2: Fet text
 
- يمكننا جعل النص غامقًا عن طريق تعيين منشئ المستندات`Font.Bold` ملكية ل`true`.
+ Vi kan feta texten genom att ställa in dokumentbyggarens`Font.Bold` egendom till`true`.
 
 ```csharp
 builder.Font.Bold = true;
 ```
 
-## الخطوة 3: أضف محتوى إلى المستند
+## Steg 3: Lägg till innehåll i dokumentet
 
- يمكننا الآن إضافة محتوى إلى المستند باستخدام طرق إنشاء المستندات ، مثل`Writeln`، مما يضيف سطرًا من النص.
+ Nu kan vi lägga till innehåll i dokumentet med hjälp av dokumentbyggarmetoderna, som t.ex`Writeln`, som lägger till en textrad.
 
 ```csharp
 builder.Writeln("This text will be bold");
 ```
 
-## مثال على كود المصدر للنص الغامق باستخدام Aspose.Words for .NET
+## Exempel på källkod för fet text med Aspose.Words för .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص غامقًا.
+	// Gör texten fet.
 	builder.Font.Bold = true;
 	builder.Writeln("This text will be Bold");  
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية كتابة نص غامق باستخدام Aspose.Words for .NET.
+Grattis! Du har nu lärt dig hur man fet text med Aspose.Words för .NET.
 
 

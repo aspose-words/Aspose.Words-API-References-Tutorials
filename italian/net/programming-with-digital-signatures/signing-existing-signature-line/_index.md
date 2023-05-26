@@ -1,18 +1,18 @@
 ---
-title: توقيع خط التوقيع الحالي
-linktitle: توقيع خط التوقيع الحالي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية توقيع سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET.
+title: Firma della riga della firma esistente
+linktitle: Firma della riga della firma esistente
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come firmare una riga della firma esistente in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لاستخدام ميزة التوقيع لسطر التوقيع الحالي مع Aspose.Words for .NET. تتيح لك هذه الميزة التوقيع رقميًا على سطر توقيع موجود بالفعل في مستند Word. اتبع الخطوات التالية:
+In questo tutorial, ti guideremo attraverso i passaggi per utilizzare la funzionalità di firma di una riga di firma esistente con Aspose.Words per .NET. Questa funzionalità consente di firmare digitalmente una riga di firma già presente in un documento Word. Segui i passaggi seguenti:
 
-## الخطوة 1: تحميل المستند والوصول إلى سطر التوقيع
+## Passaggio 1: caricamento del documento e accesso alla riga della firma
 
-ابدأ بتحميل المستند الذي يحتوي على سطر التوقيع الموجود:
+Inizia caricando il documento contenente la riga della firma esistente:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +21,9 @@ Document doc = new Document(dataDir + "Signature line.docx");
 SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## الخطوة 2: تعيين خيارات التوقيع
+## Passaggio 2: impostazione delle opzioni di firma
 
-قم بإنشاء مثيل لفئة SignOptions وقم بتعيين خيارات التوقيع ، بما في ذلك معرف سطر التوقيع وصورة خط التوقيع:
+Crea un'istanza della classe SignOptions e imposta le opzioni della firma, inclusi l'ID della riga della firma e l'immagine della riga della firma:
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -33,37 +33,37 @@ SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.em
 };
 ```
 
-تأكد من تحديد المسار الصحيح لصورة خط التوقيع.
+Assicurati di specificare il percorso corretto per l'immagine della riga della firma.
 
-## الخطوة الثالثة: تحميل الشهادة
+## Passaggio 3: caricamento del certificato
 
-ابدأ بتحميل شهادة التوقيع باستخدام فئة CertificateHolder:
+Inizia caricando il certificato di firma utilizzando la classe CertificateHolder:
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-تأكد من تحديد المسار الصحيح لشهادتك وكلمة المرور المرتبطة بها.
+Assicurati di specificare il percorso corretto per il certificato e la password associata.
 
-## الخطوة 4: توقيع سطر التوقيع الحالي
+## Passaggio 4: firma della riga della firma esistente
 
-استخدم فئة DigitalSignatureUtil لتوقيع سطر التوقيع الموجود:
+Utilizzare la classe DigitalSignatureUtil per firmare la riga della firma esistente:
 
 ```csharp
 DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 	dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند المصدر والمستند الموقع والشهادة.
+Assicurati di specificare i percorsi corretti per il documento di origine, il documento firmato e il certificato.
 
-### مثال على شفرة المصدر لتوقيع سطر التوقيع الحالي باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per la firma della riga della firma esistente utilizzando Aspose.Words per .NET
 
-إليك كود المصدر الكامل لتوقيع سطر توقيع موجود مع Aspose.Words for .NET:
+Ecco il codice sorgente completo per firmare una linea di firma esistente con Aspose.Words per .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Signature line.docx");
 	
@@ -84,5 +84,5 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة توقيع سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET.
+Seguendo questi passaggi, puoi facilmente firmare una riga della firma esistente in un documento Word con Aspose.Words per .NET.
 

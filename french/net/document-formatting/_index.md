@@ -1,24 +1,24 @@
 ---
-title: تنسيق المستند
-linktitle: تنسيق المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على مسافة بين النص الآسيوي واللاتيني ومجموعة فواصل أسطر الطباعة الآسيوية وتنسيق الفقرة وتنسيق قائمة متعددة المستويات وتطبيق نمط الفقرة.
+title: Formatage des documents
+linktitle: Formatage des documents
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent un espace entre le texte asiatique et latin, le groupe de sauts de ligne de typographie asiatique, la mise en forme des paragraphes, la mise en forme des listes à plusieurs niveaux et appliquent un style de paragraphe.
 type: docs
 weight: 1490
 url: /fr/net/document-formatting/
 ---
 
-يغطي البرنامج التعليمي جوانب مختلفة مثل تنسيق النص والفقرات والجداول والصور وغير ذلك الكثير. يوفر أمثلة واضحة للكود وشروحات خطوة بخطوة لإرشادك خلال عملية تنسيق المستندات باستخدام Aspose.Words. سواء كنت مبتدئًا أو مطورًا متمرسًا ، سيكون هذا البرنامج التعليمي مصدرًا قيمًا لتحسين مهارات تنسيق المستندات باستخدام Aspose.Words for .NET.
+Le didacticiel couvre divers aspects tels que la mise en forme du texte, des paragraphes, des tableaux, des images et bien plus encore. Il fournit des exemples de code clairs et des explications étape par étape pour vous guider tout au long du processus de formatage de documents à l'aide d'Aspose.Words. Que vous soyez un développeur débutant ou expérimenté, ce didacticiel sera une ressource précieuse pour améliorer vos compétences en matière de formatage de documents avec Aspose.Words pour .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [المسافة بين النص الآسيوي واللاتيني](./space-between-asian-and-latin-text/) | تعرف على كيفية ضبط المسافة تلقائيًا بين النص الآسيوي واللاتيني في مستندك باستخدام Aspose.Words for .NET. |
-| [مجموعة فواصل خطوط الطباعة الآسيوية](./asian-typography-line-break-group/) | تعرف على كيفية استخدام مجموعة فواصل أسطر الطباعة الآسيوية مع Aspose.Words for .NET. |
-| [تنسيق الفقرة](./paragraph-formatting/) | تعرف على كيفية تطبيق التنسيق المخصص على فقراتك باستخدام Aspose.Words for .NET. |
-| [تنسيق قائمة متعددة المستويات](./multilevel-list-formatting/) | تعرف على كيفية إنشاء قائمة متعددة المستويات وتطبيق تنسيق مخصص باستخدام Aspose.Words for .NET. |
-| [تطبيق نمط الفقرة](./apply-paragraph-style/) | تعرف على كيفية تطبيق نمط فقرة باستخدام Aspose.Words for .NET. |
-| [تطبيق الحدود والتظليل على الفقرة](./apply-borders-and-shading-to-paragraph/) | تعرف على كيفية تطبيق الحدود والتظليل على فقرة باستخدام Aspose.Words for .NET. |
-| [تغيير تباعد الفقرات الآسيوية والمسافات البادئة](./change-asian-paragraph-spacing-and-indents/) | تعرف على كيفية تغيير تباعد الفقرات الآسيوية والمسافات البادئة باستخدام Aspose.Words for .NET. |
-| [المفاجئة إلى الشبكة](./snap-to-grid/) | دليل خطوة بخطوة لشرح كود مصدر C # لميزة Snap to Grid باستخدام Aspose.Words for .NET. |
-| [احصل على فاصل نمط الفقرة](./get-paragraph-style-separator/) | تعرف على كيفية الحصول على فاصل نمط الفقرة باستخدام Aspose.Words for .NET. |
+| [Espace entre le texte asiatique et latin](./space-between-asian-and-latin-text/) | Apprenez à ajuster automatiquement l'espace entre le texte asiatique et latin dans votre document avec Aspose.Words pour .NET. |
+| [Groupe de saut de ligne de typographie asiatique](./asian-typography-line-break-group/) | Apprenez à utiliser le groupe de saut de ligne Asian Typography avec Aspose.Words pour .NET. |
+| [Formatage des paragraphes](./paragraph-formatting/) | Apprenez à appliquer une mise en forme personnalisée à vos paragraphes avec Aspose.Words pour .NET. |
+| [Formatage de liste à plusieurs niveaux](./multilevel-list-formatting/) | Apprenez à créer une liste à plusieurs niveaux et à appliquer une mise en forme personnalisée avec Aspose.Words pour .NET. |
+| [Appliquer le style de paragraphe](./apply-paragraph-style/) | Apprenez à appliquer un style de paragraphe à l'aide de Aspose.Words pour .NET. |
+| [Appliquer les bordures et l'ombrage au paragraphe](./apply-borders-and-shading-to-paragraph/) | Apprenez à appliquer des bordures et des ombres à un paragraphe avec Aspose.Words pour .NET. |
+| [Modifier l'espacement et les retraits des paragraphes asiatiques](./change-asian-paragraph-spacing-and-indents/) | Apprenez à modifier l'espacement et les retraits des paragraphes asiatiques avec Aspose.Words pour .NET. |
+| [Aligner sur la grille](./snap-to-grid/) | Guide étape par étape pour expliquer le code source C # de la fonctionnalité Snap to Grid avec Aspose.Words pour .NET. |
+| [Obtenir le séparateur de style de paragraphe](./get-paragraph-style-separator/) | Apprenez à obtenir le séparateur de style de paragraphe avec Aspose.Words pour .NET. |

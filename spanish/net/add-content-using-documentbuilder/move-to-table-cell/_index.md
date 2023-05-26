@@ -1,28 +1,28 @@
 ---
-title: الانتقال إلى خلية الجدول
-linktitle: الانتقال إلى خلية الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لاستخدام Move To Table Cell في Aspose.Words for .NET
+title: Mover a la celda de la tabla
+linktitle: Mover a la celda de la tabla
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para usar Move To Table Cell en Aspose.Words para .NET
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/move-to-table-cell/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة Move To Table Cell في Aspose.Words for .NET باستخدام كود المصدر C # المقدم خطوة بخطوة. تتيح لك هذه الميزة التنقل والتعامل مع خلايا معينة داخل جدول في مستند Word. اتبع الخطوات أدناه لدمج هذه الوظيفة في تطبيقك.
+En este ejemplo, lo guiaremos a través de cómo usar la función Mover a la celda de la tabla de Aspose.Words para .NET usando el código fuente de C# proporcionado paso a paso. Esta característica le permite navegar y manipular celdas específicas dentro de una tabla en un documento de Word. Siga los pasos a continuación para integrar esta funcionalidad en su aplicación.
 
-## الخطوة 1: قم بتحميل المستند الذي يحتوي على الجدول
+## Paso 1: Cargue el documento que contiene la tabla
 
-أولاً ، نحتاج إلى تحميل المستند الذي يحتوي على الجدول الذي نريد نقل الخلية إليه. استخدم الكود التالي لإنجاز هذه الخطوة:
+Primero, necesitamos cargar el documento que contiene la tabla a la que queremos mover la celda. Utilice el siguiente código para realizar este paso:
 
 ```csharp
 Document doc = new Document(MyDir + "Tables.docx");
 ```
 
-يقوم هذا الرمز بتحميل المستند المحدد (استبدل "MyDir +" Tables.docx“” مع المسار الفعلي للمستند الذي يحتوي على الجدول).
+Este código carga el documento especificado (reemplace "MyDir + "Tables.docx"" con la ruta real de su documento que contiene la tabla).
 
-## الخطوة 2: انقل DocumentBuilder إلى خلية جدول محددة
+## Paso 2: Mueva DocumentBuilder a una celda de tabla específica
 
-بعد ذلك ، سننقل DocumentBuilder إلى خلية جدول محددة. استخدم الكود التالي لإجراء هذه الخطوة:
+A continuación, moveremos DocumentBuilder a una celda de tabla específica. Use el siguiente código para realizar este paso:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -30,11 +30,11 @@ builder. MoveToCell(0, 2, 3, 0);
 builder.Write("\nCell content added by DocumentBuilder");
 ```
 
- ينشئ هذا الرمز DocumentBuilder من المستند الموجود ثم ينقل المؤشر من DocumentBuilder إلى خلية الجدول المحددة. أخيرًا ، يضيف محتوى إلى تلك الخلية باستخدام ملف DocumentBuilder`Write()` طريقة.
+ Este código crea un DocumentBuilder a partir del documento existente y luego mueve el cursor del DocumentBuilder a la celda de la tabla especificada. Finalmente, agrega contenido a esa celda usando el DocumentBuilder`Write()` método.
 
-## الخطوة 3: تحقق من النتيجة
+## Paso 3: Comprueba el resultado
 
-يمكنك الآن التحقق من نجاح الانتقال إلى خلية الجدول. استخدم الكود التالي لإنجاز هذه الخطوة:
+Ahora puede verificar que el movimiento a la celda de la tabla fue exitoso. Utilice el siguiente código para realizar este paso:
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -43,12 +43,12 @@ Assert.AreEqual(table.Rows[2].Cells[3], builder.CurrentNode.ParentNode.ParentNod
 Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table.Rows[2].Cells[3].GetText().Trim());
 ```
 
-يتحقق هذا الرمز من أن الخلية المحددة هي بالفعل الخلية الحالية لـ DocumentBuilder. كما يتحقق من أن المحتوى الذي تمت إضافته بواسطة DocumentBuilder قد تم حفظه بشكل صحيح في خلية الجدول.
+Este código verifica que la celda especificada sea de hecho la celda actual de DocumentBuilder. También verifica que el contenido agregado por DocumentBuilder se haya guardado correctamente en la celda de la tabla.
 
-هذا كل شئ ! لقد فهمت الآن كيفية استخدام وظيفة الانتقال إلى خلية الجدول في Aspose.Words for .NET باستخدام كود المصدر المقدم. يمكنك الآن دمج هذه الوظيفة في التطبيق الخاص بك ومعالجة خلايا جدول معينة في مستندات Word.
+Eso es todo ! Ahora ha entendido cómo usar la funcionalidad de mover a la celda de la tabla de Aspose.Words para .NET usando el código fuente proporcionado. Ahora puede integrar esta funcionalidad en su propia aplicación y manipular celdas de tabla específicas en documentos de Word.
 
 
-### مثال على شفرة المصدر للانتقال إلى خلية جدول باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para moverse a una celda de tabla usando Aspose.Words para .NET
 
 
 ```csharp
@@ -56,7 +56,7 @@ Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table
 	Document doc = new Document(MyDir + "Tables.docx");
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// انقل المنشئ إلى الصف 3 ، الخلية 4 من الجدول الأول.
+	// Mueva el generador a la fila 3, celda 4 de la primera tabla.
 	builder.MoveToCell(0, 2, 3, 0);
 	builder.Write("\nCell contents added by DocumentBuilder");
 	Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

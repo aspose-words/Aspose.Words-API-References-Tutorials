@@ -1,34 +1,34 @@
 ---
-title: أدخل الحقل باستخدام Field Builder
-linktitle: أدخل الحقل باستخدام Field Builder
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Infoga fält med Field Builder
+linktitle: Infoga fält med Field Builder
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar anpassade fält i dina Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/insert-field-using-field-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج حقل باستخدام FieldBuilder" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som använder funktionen "Infoga ett fält med FieldBuilder" i Aspose.Words för .NET. Se till att följa varje steg noggrant för att få önskat resultat.
 
-## الخطوة 1: إعداد دليل المستند
+## Steg 1: Installation av dokumentkatalog
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند
+## Steg 2: Skapa dokumentet
 
-نبدأ بإنشاء مستند جديد.
+Vi börjar med att skapa ett nytt dokument.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: بناء حقل IF باستخدام FieldBuilder
+## Steg 3: Bygg IF-fältet med FieldBuilder
 
-نستخدم فئة FieldBuilder لإنشاء حقل IF مع حقلي MERGEFIELD متداخلين. في هذا المثال ، يعرض الحقل IF الاسم الأول والأخير بناءً على شرط.
+Vi använder klassen FieldBuilder för att konstruera ett IF-fält med två kapslade MERGEFIELD-fält. I det här exemplet visar IF-fältet för- och efternamn baserat på ett villkor.
 
 ```csharp
 FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
@@ -45,25 +45,25 @@ FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
              .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
 ```
 
-## الخطوة 4: إدخال حقل IF في المستند
+## Steg 4: Infoga IF-fältet i dokumentet
 
- نحن نستخدم ال`BuildAndInsert()` طريقة لإنشاء وإدراج حقل IF في موقع محدد في المستند.
+ Vi använder`BuildAndInsert()` metod för att bygga och infoga IF-fältet på en specifik plats i dokumentet.
 
 ```csharp
 Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
 field. Update();
 ```
 
-### مثال على شفرة المصدر لإدخال حقل باستخدام FieldBuilder مع Aspose.Words for .NET
+### Exempel på källkod för att infoga ett fält med FieldBuilder med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة.
+// Skapande av dokument.
 Document doc = new Document();
 
-// إنشاء حقل IF باستخدام FieldBuilder.
+// Konstruktion av IF-fältet med FieldBuilder.
 FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
      .AddArgument("left expression")
      .AddArgument("=")
@@ -77,11 +77,11 @@ FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
              .AddText("Lastname: ")
              .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
 
-// أدخل حقل IF في المستند.
+// Infoga OM-fältet i dokumentet.
 Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
 field. Update();
 
 doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأنشأنا حقل IF مع حقول MERGEFIELD المتداخلة ، ثم قمنا بإدراج هذا الحقل في المستند في موقع محدد. ثم يتم حفظ المستند باسم ملف محدد.
+det här exemplet skapade vi ett nytt dokument, konstruerade ett IF-fält med kapslade MERGEFIELD-fält och infogade sedan det fältet i dokumentet på en angiven plats. Dokumentet sparas sedan med ett specifikt filnamn.

@@ -1,62 +1,62 @@
 ---
-title: كرر الصفوف في الصفحات اللاحقة
-linktitle: كرر الصفوف في الصفحات اللاحقة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تكرار صفوف الجدول في الصفحات اللاحقة في مستند Word باستخدام Aspose.Words for .NET.
+title: Répéter les lignes sur les pages suivantes
+linktitle: Répéter les lignes sur les pages suivantes
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à répéter les lignes d'un tableau sur les pages suivantes d'un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تكرار صفوف الجدول في الصفحات اللاحقة من مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تحديد صفوف لتكرارها في الصفحات اللاحقة من الجدول في مستندات Word الخاصة بك.
+Dans ce didacticiel, nous allons apprendre à répéter les lignes d'un tableau sur les pages suivantes d'un document Word à l'aide de Aspose.Words pour .NET. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous serez en mesure de spécifier les lignes à répéter sur les pages suivantes de votre tableau dans vos documents Word.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Étape 1 : configuration du projet
+1. Lancez Visual Studio et créez un nouveau projet C#.
+2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Etape 2 : Création du document et initialisation du générateur de document
+Pour commencer à travailler avec le document et le générateur de documents, suivez ces étapes :
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// création de documents
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Initialiser le générateur de documents
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Assurez-vous de remplacer "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin d'accès réel à votre répertoire de documents.
 
-## الخطوة الثالثة: بناء الجدول بالصفوف المتكررة
-بعد ذلك ، سننشئ جدولًا به صفوف متكررة في الصفحات اللاحقة. استخدم الكود التالي:
+## Étape 3 : Construire le tableau avec des lignes répétées
+Ensuite, nous allons créer un tableau avec des lignes répétées sur les pages suivantes. Utilisez le code suivant :
 
 ```csharp
-// بداية الجدول
+// Début du tableau
 builder. StartTable();
 
-// تكوين معلمات السطر الأول (خطوط الرأس)
+// Configuration des paramètres de la première ligne (lignes d'en-tête)
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// أدخل الخلية الأولى في الصف الأول
+// Insérer la première cellule de la première ligne
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
 
-// أدخل الخلية الثانية من الصف الأول
+// Insérer la deuxième cellule de la première ligne
 builder. InsertCell();
 builder.Writeln("Header line 2");
 builder. EndRow();
 
-// قم بتكوين معلمات الأسطر التالية
+// Configurez les paramètres des lignes suivantes
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 
-// تكرار لإدراج الخلايا في الصفوف التالية
+// Boucle pour insérer les cellules dans les lignes suivantes
 for (int i = 0; i < 50; i++)
 {
 builder. InsertCell();
@@ -67,27 +67,27 @@ builder.Write("Text column 2");
 builder. EndRow();
 }
 
-// نهاية الجدول
+// Fin de tableau
 builder. EndTable();
 ```
 
- هنا نستخدم أداة إنشاء المستندات لبناء جدول يحتوي على صفين رأسيين وصفوف بيانات متعددة. ال`RowFormat.HeadingFormat`تُستخدم المعلمات لتحديد صفوف الرأس التي يجب تكرارها في الصفحات اللاحقة.
+ Ici, nous utilisons le générateur de documents pour créer un tableau avec deux lignes d'en-tête et plusieurs lignes de données. Le`RowFormat.HeadingFormat`Les paramètres sont utilisés pour marquer les lignes d'en-tête qui doivent être répétées sur les pages suivantes.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرا الولايات المتحدة
+## Étape 4 : Enregistrer le document modifié
+Enfin NOUS
 
-  تحتاج إلى حفظ المستند المعدل مع تكرار صفوف الرؤوس في الصفحات اللاحقة من الجدول. استخدم الكود التالي:
+  devez enregistrer le document modifié avec les lignes d'en-tête répétées sur les pages suivantes du tableau. Utilisez le code suivant :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour le document de sortie.
 
-### نموذج لشفرة مصدر لصفوف التكرار في الصفحات اللاحقة باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Répéter les lignes sur les pages suivantes à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -116,5 +116,5 @@ for (int i = 0; i < 50; i++)
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تكرار صفوف الجدول في الصفحات اللاحقة من مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تحديد الأسطر التي يجب تكرارها وفقًا لاحتياجاتك الخاصة في مستندات Word الخاصة بك.
+## Conclusion
+Dans ce didacticiel, nous avons appris à répéter les lignes d'un tableau sur les pages suivantes d'un document Word à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez spécifier les lignes à répéter en fonction de vos besoins spécifiques dans vos documents Word.

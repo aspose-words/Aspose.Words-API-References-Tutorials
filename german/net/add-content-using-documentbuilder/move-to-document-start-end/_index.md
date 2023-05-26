@@ -1,71 +1,71 @@
 ---
-title: الانتقال إلى المستند بداية النهاية
-linktitle: الانتقال إلى المستند بداية النهاية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للانتقال إلى بداية المستند ونهايته في مستندات Word باستخدام هذا الدليل التفصيلي.
+title: Zum Anfangs-Ende des Dokuments verschieben
+linktitle: Zum Anfangs-Ende des Dokuments verschieben
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET zum Dokumentanfang und -ende in Word-Dokumenten wechseln.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Document Start / End في Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تتيح للمطورين إنشاء مستندات Word وتعديلها وتحويلها برمجيًا. تتيح لنا ميزة Move To Document Start / End إمكانية التنقل إلى بداية المستند أو نهايته باستخدام فئة DocumentBuilder.
+In diesem Beispiel untersuchen wir die Funktion „An Dokumentanfang/-ende verschieben“ von Aspose.Words für .NET. Aspose.Words ist eine leistungsstarke Bibliothek zur Dokumentbearbeitung, mit der Entwickler Word-Dokumente programmgesteuert erstellen, ändern und konvertieren können. Mit der Funktion „An Anfang/Ende des Dokuments verschieben“ können wir mithilfe der DocumentBuilder-Klasse zum Anfang oder Ende eines Dokuments navigieren.
 
-## شرح شفرة المصدر خطوة بخطوة
+## Den Quellcode Schritt für Schritt erklären
 
-دعنا ننتقل إلى التعليمات البرمجية المصدر خطوة بخطوة لفهم كيفية استخدام ميزة Move To Document Start / End باستخدام Aspose.Words for .NET.
+Lassen Sie uns den Quellcode Schritt für Schritt durchgehen, um zu verstehen, wie Sie die Funktion „An Dokumentanfang/-ende verschieben“ mit Aspose.Words für .NET verwenden.
 
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## Schritt 1: Initialisieren des Dokuments und des Dokument-Builders
 
-بعد ذلك ، قم بتهيئة كائنات Document و DocumentBuilder:
+Als nächstes initialisieren Sie die Objekte Document und DocumentBuilder:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: الانتقال إلى بداية المستند
+## Schritt 2: Zum Dokumentanfang wechseln
 
-لنقل موضع المؤشر إلى بداية المستند ، استخدم طريقة MoveToDocumentStart لفئة DocumentBuilder:
+Um die Cursorposition an den Anfang des Dokuments zu verschieben, verwenden Sie die MoveToDocumentStart-Methode der DocumentBuilder-Klasse:
 
 ```csharp
 builder.MoveToDocumentStart();
 ```
 
-## الخطوة 3: الانتقال إلى نهاية المستند
+## Schritt 3: Zum Ende des Dokuments wechseln
 
-لتحريك موضع المؤشر إلى نهاية المستند ، استخدم طريقة MoveToDocumentEnd لفئة DocumentBuilder:
+Um die Cursorposition an das Ende des Dokuments zu verschieben, verwenden Sie die MoveToDocumentEnd-Methode der DocumentBuilder-Klasse:
 
 ```csharp
 builder.MoveToDocumentEnd();
 ```
 
-## الخطوة 4: إخراج موضع المؤشر
+## Schritt 4: Ausgabe der Cursorposition
 
-يمكنك إخراج موضع المؤشر باستخدام Console.WriteLine أو أي طريقة أخرى مرغوبة. على سبيل المثال:
+Sie können die Cursorposition mit Console.WriteLine oder einer anderen gewünschten Methode ausgeben. Zum Beispiel:
 
 ```csharp
 Console.WriteLine("\nThis is the beginning of the document.");
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-### مثال على شفرة المصدر لـ Move To Document Start / End باستخدام Aspose.Words for .NET
+### Beispielquellcode für „An Dokumentanfang/-ende verschieben“ mit Aspose.Words für .NET
 
 ```csharp
 	
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// انقل موضع المؤشر إلى بداية المستند.
+	// Bewegen Sie die Cursorposition an den Anfang Ihres Dokuments.
 	builder.MoveToDocumentStart();
 	Console.WriteLine("\nThis is the beginning of the document.");
 
-	// انقل موضع المؤشر إلى نهاية المستند.
+	// Bewegen Sie die Cursorposition an das Ende Ihres Dokuments.
 	builder.MoveToDocumentEnd();
 	Console.WriteLine("\nThis is the end of the document.");
 	
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا المثال ، اكتشفنا ميزة Move To Document Start / End في Aspose.Words for .NET. تعلمنا كيفية الانتقال إلى بداية ونهاية المستند باستخدام فئة DocumentBuilder. هذه الميزة مفيدة عند العمل برمجيًا مع مستندات Word والحاجة إلى معالجة المحتوى أو إدراجه في مواضع محددة داخل المستند.
+In diesem Beispiel haben wir die Funktion „An Dokumentanfang/-ende verschieben“ von Aspose.Words für .NET untersucht. Wir haben gelernt, wie man mit der DocumentBuilder-Klasse zum Anfang und Ende eines Dokuments navigiert. Diese Funktion ist nützlich, wenn Sie programmgesteuert mit Word-Dokumenten arbeiten und Inhalte an bestimmten Stellen im Dokument bearbeiten oder einfügen müssen.

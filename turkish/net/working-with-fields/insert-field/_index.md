@@ -1,56 +1,56 @@
 ---
-title: أدخل الحقل
-linktitle: أدخل الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل في مستندات Word باستخدام Aspose.Words for .NET. إضفاء الطابع الشخصي على المستندات الخاصة بك مع الحقول الديناميكية.
+title: Alan Ekle
+linktitle: Alan Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile Word belgelerinize nasıl alan ekleyeceğinizi öğrenin. Belgelerinizi dinamik alanlarla kişiselleştirin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/insert-field/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه ، والتي تستخدم ميزة "إدراج حقل" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aşağıda Aspose.Words for .NET'in "Insert a Field" özelliğini kullanan C# kaynak kodunu adım adım açıklayan bir kılavuz bulunmaktadır. İstenen sonuçları elde etmek için her adımı dikkatlice uyguladığınızdan emin olun.
 
-## الخطوة 1: إعداد دليل المستند
+## 1. Adım: Belge Dizini Kurulumu
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## 2. Adım: Document ve DocumentBuilder'ı Oluşturma
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Yeni bir belge oluşturarak ve bir DocumentBuilder başlatarak başlıyoruz.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدخال الحقل
+## 3. Adım: Alanın eklenmesi
 
- نحن نستخدم ال`InsertField()` طريقة DocumentBuilder لإدراج حقل في المستند. في هذا المثال ، نقوم بإدخال حقل دمج (MERGEFIELD) مع اسم الحقل "MyFieldName" وتنسيق الدمج.
+ biz kullanıyoruz`InsertField()` Belgeye bir alan eklemek için DocumentBuilder yöntemi. Bu örnekte, "MyFieldName" alan adına ve birleştirme biçimine sahip bir birleştirme alanı (MERGEFIELD) ekliyoruz.
 
 ```csharp
 builder.InsertField(@"MERGEFIELD MyFieldName \* MERGEFORMAT");
 ```
 
-### مثال على الكود المصدري لإدخال حقل باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile bir alan eklemek için kaynak kodu örneği
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند و DocumentBuilder.
+// Belgeyi ve DocumentBuilder'ı oluşturun.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// أدخل الحقل.
+// alanı girin.
 builder.InsertField(@"MERGEFIELD MyFieldName \* MERGEFORMAT");
 
 doc.Save(dataDir + "InsertionField.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأعدنا تهيئة DocumentBuilder ، ثم قمنا بإدراج حقل دمج باسم الحقل "MyFieldName" وتنسيق الدمج. ثم يتم حفظ المستند باسم ملف محدد.
+Bu örnekte, yeni bir belge oluşturduk, bir DocumentBuilder başlattık ve ardından "AlanAdım" alan adına ve birleştirme biçimine sahip bir birleştirme alanı ekledik. Belge daha sonra belirtilen dosya adıyla kaydedilir.
 
-بهذا نختتم دليلنا حول استخدام ميزة "إدراج حقل" مع Aspose.Words for .NET.
+Aspose.Words for .NET ile "Insert a Field" (Alan Ekle) özelliğinin kullanımına ilişkin kılavuzumuz burada sona eriyor.

@@ -1,32 +1,32 @@
 ---
-title: أحرف التعريف في نمط البحث
-linktitle: أحرف التعريف في نمط البحث
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام الحروف الأولية في نمط البحث باستخدام Aspose.Words for .NET لمعالجة مستندات Word.
+title: Arama Modelindeki Meta Karakterler
+linktitle: Arama Modelindeki Meta Karakterler
+second_title: Aspose.Words for .NET API Referansı
+description: Word belgelerini işlemek için Aspose.Words for .NET ile arama modelinde meta karakterleri nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/meta-characters-in-search-pattern/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Meta Characters In Search Pattern في Aspose.Words for .NET library. تتيح لك هذه الميزة استخدام أحرف أولية خاصة لإجراء عمليات بحث واستبدال متقدمة في مستندات Word.
+Bu makalede, Aspose.Words for .NET kitaplığında Meta Karakterler Arama Modeli işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, Word belgelerinde gelişmiş aramalar ve değiştirmeler yapmak için özel metakarakterler kullanmanıza olanak tanır.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# dili hakkında temel bilgi.
+- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## 1. Adım: Yeni Belge Oluşturma
 
- قبل أن نبدأ في استخدام الحروف الأولية في نمط البحث ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Arama modelinde meta karakterleri kullanmaya başlamadan önce Aspose.Words for .NET kullanarak yeni bir belge oluşturmamız gerekiyor. Bu, bir örneği başlatarak yapılabilir.`Document` nesne:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل النص في المستند
+## 2. Adım: Belgeye metin ekleyin
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نستخدم الامتداد`Writeln` و`Write` طرق لإدراج سطرين من النص:
+ Bir belgemiz olduğunda, bir metin kullanarak metin ekleyebiliriz.`DocumentBuilder` nesne. Örneğimizde,`Writeln` Ve`Write` iki satır metin ekleme yöntemleri:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -34,17 +34,17 @@ builder.Writeln("This is line 1");
 builder.Writeln("This is line 2");
 ```
 
-## الخطوة 3: البحث عن النص واستبداله بأحرف أولية
+## 3. Adım: Metni bulun ve meta karakterlerle değiştirin
 
- الآن سوف نستخدم ملف`Range.Replace` وظيفة للبحث عن نص واستبداله باستخدام نمط بحث يحتوي على أحرف أولية خاصة. في مثالنا ، نستبدل عبارة "This is line 1 & pThis is line 2" بـ "هذا السطر مستبدل" باستخدام`&p` الحرف الأولي لتمثيل فاصل فقرة:
+ Şimdi kullanacağız`Range.Replace` özel metakarakterler içeren bir arama deseni kullanarak metni arama ve değiştirme işlevi. Örneğimizde, "Bu satır 1&pBu satır 2" ifadesini "Bu satır değiştirildi" ile değiştiriyoruz.`&p` paragraf sonunu temsil eden meta karakter:
 
 ```csharp
 doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
 ```
 
-## الخطوة 4: إدراج فاصل صفحة في المستند
+## 4. Adım: Belgeye sayfa sonu ekleme
 
- لتوضيح استخدام حرف أولي آخر ، سنقوم بإدراج فاصل صفحات في المستند باستخدام الامتداد`InsertBreak` الطريقة مع`BreakType.PageBreak` معامل. نحرك المؤشر أولاً من ملف`DocumentBuilder` في نهاية المستند ، ثم نقوم بإدخال فاصل الصفحة وسطر جديد من النص:
+ Başka bir meta karakterin kullanımını göstermek için, belgeye bir sayfa sonu ekleyeceğiz.`InsertBreak` ile yöntem`BreakType.PageBreak` parametre. Önce imleci hareket ettiriyoruz`DocumentBuilder` belgenin sonuna, ardından sayfa sonunu ve yeni bir metin satırı ekliyoruz:
 
 ```csharp
 builder. MoveToDocumentEnd();
@@ -53,25 +53,25 @@ builder. InsertBreak(BreakType.PageBreak);
 builder.Writeln("This is line 2");
 ```
 
-## الخطوة 5: ابحث عن حرف أولي آخر واستبدله
+## 5. Adım: Bulun ve başka bir meta karakterle değiştirin
 
- سنقوم الآن بإجراء بحث آخر واستبداله باستخدام ملف`&m` الحرف الأولي لتمثيل فاصل صفحة. نستبدل العبارة "هذا هو السطر 1 و m هذا هو السطر 2" بعبارة "يتم استبدال فاصل الصفحة بنص جديد." :
+ Şimdi başka bir arama gerçekleştireceğiz ve`&m` sayfa sonunu temsil eden meta karakter. "Bu satır 1&mBu satır 2" ifadesini "Sayfa sonu yeni metinle değiştirildi" ile değiştiriyoruz. :
 
 ```csharp
 doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");
 ```
 
-## الخطوة 6: حفظ المستند المحرر
+## 6. Adım: Düzenlenen belgeyi kaydetme
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+ Son olarak, değiştirilmiş belgeyi kullanarak belirtilen bir dizine kaydediyoruz.`Save` yöntem:
 
 ```csharp
 doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");
 ```
 
-### مثال على شفرة المصدر لـ Meta Characters في نمط البحث باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Arama Modelindeki Meta Karakterler için örnek kaynak kodu
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام الأحرف الأولية في نمط البحث مع Aspose.Words for .NET:
+Aspose.Words for .NET ile arama modelinde meta karakterlerin kullanımını gösteren tam örnek kaynak kodu burada:
 
 ```csharp
 
@@ -82,7 +82,7 @@ doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");
 	&l - manual line break
 	*/
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -103,6 +103,6 @@ doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");
 
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام الحروف الأولية في نمط البحث في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص وإجراء بحث واستبدال باستخدام أحرف أولية خاصة وإدراج فواصل الصفحات وحفظ المستند المحرر.
+Bu makalede, Aspose.Words for .NET arama modelinde meta karakterlerin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belge oluşturmak, metin eklemek, özel meta karakterleri kullanarak arama yapmak ve değiştirmek, sayfa sonları eklemek ve düzenlenen belgeyi kaydetmek için adım adım bir kılavuz izledik.

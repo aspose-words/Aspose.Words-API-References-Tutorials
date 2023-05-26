@@ -1,60 +1,60 @@
 ---
-title: حماية كلمة المرور
-linktitle: حماية كلمة المرور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حماية مستندات Word الخاصة بك بكلمة مرور باستخدام Aspose.Words for .NET.
+title: 密码保护
+linktitle: 密码保护
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 密码保护您的 Word 文档。
 type: docs
 weight: 10
 url: /zh/net/document-protection/password-protection/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات استخدام ميزة الحماية بكلمة مرور في Aspose.Words for .NET. تتيح لك هذه الميزة حماية مستند Word بكلمة مرور لضمان سريته. اتبع الخطوات التالية:
+在本教程中，我们将引导您完成使用 Aspose.Words for .NET 的密码保护功能的步骤。此功能允许您使用密码保护 Word 文档以确保其机密性。请按照以下步骤操作：
 
-## الخطوة 1: إنشاء المستند وتطبيق الحماية
+## 第 1 步：创建文档并应用保护
 
-ابدأ بإنشاء مثيل لفئة المستند:
+首先创建 Document 类的实例：
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة الثانية: تطبيق الحماية بكلمة مرور
+## 第 2 步：应用密码保护
 
-ثم يمكنك تطبيق الحماية بكلمة مرور باستخدام طريقة حماية () كائن المستند:
+然后您可以使用 Document 对象的 Protect() 方法应用密码保护：
 
 ```csharp
 doc.Protect(ProtectionType.NoProtection, "password");
 ```
 
-تأكد من استبدال كلمة المرور بكلمة المرور الفعلية التي تريد استخدامها لحماية المستند.
+请务必将“密码”替换为您要用于保护文档的实际密码。
 
-## الخطوة 3: حفظ المستند المحمي
+## 第 3 步：保存受保护的文档
 
-أخيرًا ، يمكنك حفظ المستند المحمي باستخدام طريقة Save () لكائن Document:
+最后，您可以使用 Document 对象的 Save() 方法保存受保护的文档：
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند المحمي.
+请务必指定正确的路径和文件名以保存受保护的文档。
 
-### مثال على شفرة المصدر لحماية كلمة المرور باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的密码保护示例源代码
 
-فيما يلي رمز المصدر الكامل لحماية كلمة المرور باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 进行密码保护的完整源代码：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 
-	//تطبيق حماية المستندات.
+	//应用文档保护。
 	doc.Protect(ProtectionType.NoProtection, "password");
 
 	doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ```
 
-تذكر استبدال "دليل المستندات" بدليل المستندات و "كلمة المرور" بكلمة المرور الفعلية التي تريد استخدامها.
+请记住将“您的文档目录”替换为您的文档目录，并将“密码”替换为您要使用的实际密码。
 

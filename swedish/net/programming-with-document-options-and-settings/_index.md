@@ -1,25 +1,25 @@
 ---
-title: البرمجة مع خيارات وإعدادات المستند
-linktitle: البرمجة مع خيارات وإعدادات المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تحسين لـ ms word ، وإظهار الأخطاء النحوية والإملائية ، وتنظيف الأنماط والقوائم غير المستخدمة ، وتنظيف النمط المكرر ، وخيارات العرض ، ووثيقة pa
+title: Programmering med dokumentalternativ och inställningar
+linktitle: Programmering med dokumentalternativ och inställningar
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar innehåller optimera för ms word, visar grammatiska och stavningsfel, rensar oanvända stilar och listor, städar dubblettstil, visningsalternativ, dokumentpa.
 type: docs
 weight: 1510
 url: /sv/net/programming-with-document-options-and-settings/
 ---
-ترشدك برامج Aspose.Words for .NET التعليمية حول "البرمجة مع خيارات وإعدادات المستند" عبر الميزات والتقنيات المتنوعة لمعالجة خيارات وإعدادات المستندات في Aspose.Words for .NET. تساعدك هذه البرامج التعليمية على فهم كيفية تخصيص إعدادات التحميل وإدارة الخطوط وتنسيقات المستندات والقوالب والمزيد.
+Handledningarna för Aspose.Words för .NET "Programmering med dokumentalternativ och inställningar" leder dig genom de olika funktionerna och teknikerna för att manipulera dokumentalternativ och inställningar i Aspose.Words för .NET. Dessa handledningar hjälper dig att förstå hur du anpassar uppladdningsinställningar, hanterar teckensnitt, dokumentformat, mallar och mer.
 
-توضح البرامج التعليمية كيفية تخصيص خيارات تحميل المستند. ستتعلم كيفية تحديد معلمات التحميل مثل إدارة الخطوط ودقة الارتباط وتحسين الأداء وما إلى ذلك. تتيح لك هذه الخيارات التحكم بدقة في سلوك تحميل المستندات وتحسين أداء تطبيقك.
+Handledningarna förklarar hur du anpassar alternativen för dokumentladdning. Du kommer att lära dig hur du anger laddningsparametrar som teckensnittshantering, länkupplösning, prestandaoptimering, etc. Dessa alternativ låter dig kontrollera dokumentladdningsbeteendet exakt och optimera prestandan för din applikation.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [تحسين لبرنامج MS Word](./optimize-for-ms-word/) | دليل تفصيلي خطوة بخطوة لتحسين مستند لبرنامج MS Word باستخدام Aspose.Words for .NET. |
-| [إظهار الأخطاء النحوية والإملائية](./show-grammatical-and-spelling-errors/) | دليل تفصيلي خطوة بخطوة لتمكين عرض الأخطاء النحوية والإملائية في مستند باستخدام Aspose.Words for .NET. |
-| [تنظيف الأنماط والقوائم غير المستخدمة](./cleanup-unused-styles-and-lists/) | دليل خطوة بخطوة لتنظيف الأنماط والقوائم غير المستخدمة في مستند باستخدام Aspose.Words for .NET. |
-| [تنظيف النمط المكرر](./cleanup-duplicate-style/) | دليل خطوة بخطوة لتنظيف الأنماط المكررة في مستند باستخدام Aspose.Words for .NET. تم تضمين كود المصدر الكامل. |
-| [عرض الخيارات](./view-options/) | دليل تفصيلي خطوة بخطوة لتكوين خيارات عرض المستند باستخدام Aspose.Words for .NET. |
-| [وثيقة إعداد الصفحة](./document-page-setup/) | دليل خطوة بخطوة لإعداد تخطيط مستند باستخدام Aspose.Words for .NET. |
-| [أضف اليابانية كلغات تحرير](./add-japanese-as-editing-languages/) | دليل خطوة بخطوة لإضافة اليابانية كلغة تحرير باستخدام Aspose.Words for .NET. |
-| [تعيين اللغة الروسية كلغة تحرير افتراضية](./set-russian-as-default-editing-language/) | دليل خطوة بخطوة لتعيين اللغة الروسية كلغة تحرير افتراضية لمستند باستخدام Aspose.Words for .NET. |
-| [تعيين إعداد الصفحة وتنسيق القسم](./set-page-setup-and-section-formatting/) | دليل خطوة بخطوة لإعداد تخطيط المستند وتنسيق القسم باستخدام Aspose.Words for .NET. |
+| [Optimera för Ms Word](./optimize-for-ms-word/) | Steg-för-steg-guide för att optimera ett dokument för MS Word med Aspose.Words för .NET. |
+| [Visa grammatiska och stavningsfel](./show-grammatical-and-spelling-errors/) | Steg-för-steg-guide för att möjliggöra visning av grammatiska fel och stavfel i ett dokument med Aspose.Words för .NET. |
+| [Rensa oanvända stilar och listor](./cleanup-unused-styles-and-lists/) | Steg-för-steg-guide för att rensa bort oanvända stilar och listor i ett dokument med Aspose.Words för .NET. |
+| [Cleanup Duplicate Style](./cleanup-duplicate-style/) | Steg för steg guide för att rensa upp dubbletter av stilar i ett dokument med Aspose.Words för .NET. Fullständig källkod ingår. |
+| [Visa alternativ](./view-options/) | Steg-för-steg-guide för att konfigurera dokumentvisningsalternativ med Aspose.Words för .NET. |
+| [Dokument sidinställningar](./document-page-setup/) | Steg-för-steg-guide för att sätta upp en dokumentlayout med Aspose.Words för .NET. |
+| [Lägg till japanska som redigeringsspråk](./add-japanese-as-editing-languages/) | Steg-för-steg-guide för att lägga till japanska som redigeringsspråk med Aspose.Words för .NET. |
+| [Ställ in ryska som standardredigeringsspråk](./set-russian-as-default-editing-language/) | Steg-för-steg-guide för att ställa in ryska som standardredigeringsspråk för ett dokument med Aspose.Words för .NET. |
+| [Ställ in sidinställningar och avsnittsformatering](./set-page-setup-and-section-formatting/) | Steg-för-steg-guide för att ställa in ett dokuments layout och sektionsformatering med Aspose.Words för .NET. |

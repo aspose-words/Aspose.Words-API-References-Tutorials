@@ -1,56 +1,56 @@
 ---
-title: تعمل حقول النموذج مع الخصائص
-linktitle: تعمل حقول النموذج مع الخصائص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التعامل مع خصائص حقل النموذج في مستندات Word باستخدام Aspose.Words for .NET.
+title: Les champs de formulaire fonctionnent avec les propriétés
+linktitle: Les champs de formulaire fonctionnent avec les propriétés
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à utiliser les propriétés de champ de formulaire dans les documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-formfields/form-fields-work-with-properties/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية التعامل مع خصائص حقل النموذج في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Dans ce didacticiel étape par étape, nous vous expliquerons comment utiliser les propriétés de champ de formulaire dans un document Word à l'aide de Aspose.Words pour .NET. Nous vous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque depuis le site officiel.
 
-## الخطوة 1: تهيئة كائن المستند
+## Étape 1 : Initialisation de l'objet document
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق توفير المسار إلى المستند المصدر الذي يحتوي على حقول النموذج:
+ Tout d'abord, initialisez le`Document` objet en fournissant le chemin d'accès à votre document source contenant les champs de formulaire :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## الخطوة 2: الوصول إلى حقل النموذج
+## Étape 2 : Accéder à un champ de formulaire
 
-بعد ذلك ، قم باسترداد حقل نموذج معين من مجموعة حقول نموذج المستند. في هذا المثال ، نصل إلى حقل النموذج في الفهرس 3:
+Ensuite, récupérez un champ de formulaire spécifique à partir de la collection de champs de formulaire du document. Dans cet exemple, nous accédons au champ de formulaire à l'index 3 :
 
 ```csharp
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## الخطوة 3: العمل مع خصائص حقل النموذج
+## Étape 3 : Travailler avec les propriétés du champ de formulaire
 
- يمكنك معالجة الخصائص المختلفة لحقل النموذج بناءً على نوعه. في هذا المثال ، نتحقق مما إذا كان حقل النموذج من النوع`FieldType.FieldFormTextInput` وضبطها`Result` بناء على ذلك:
+ Vous pouvez manipuler diverses propriétés du champ de formulaire en fonction de son type. Dans cet exemple, nous vérifions si le champ du formulaire est de type`FieldType.FieldFormTextInput` et régler son`Result` propriété en conséquence :
 
 ```csharp
 if (formField.Type == FieldType.FieldFormTextInput)
     formField.Result = "My name is " + formField.Name;
 ```
 
-لا تتردد في استكشاف خصائص أخرى وإجراء عمليات مختلفة بناءً على متطلباتك المحددة.
+N'hésitez pas à explorer d'autres propriétés et à effectuer différentes opérations en fonction de vos besoins spécifiques.
 
-## الخطوة 4: حفظ المستند
+## Étape 4 : Enregistrer le document
 
-أخيرًا ، احفظ المستند المعدل:
+Enfin, enregistrez le document modifié :
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-هذا كل شيء! لقد نجحت في العمل مع خصائص حقل النموذج في مستند Word باستخدام Aspose.Words for .NET.
+C'est ça! Vous avez travaillé avec succès avec les propriétés de champ de formulaire dans un document Word à l'aide d'Aspose.Words pour .NET.
 
-### مثال على كود المصدر لحقول النموذج العمل مع الخصائص باستخدام Aspose.Words for .NET
+### Exemple de code source pour les champs de formulaire Travailler avec les propriétés à l'aide de Aspose.Words pour .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -63,4 +63,4 @@ if (formField.Type == FieldType.FieldFormTextInput)
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.

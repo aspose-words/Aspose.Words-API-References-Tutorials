@@ -1,26 +1,26 @@
 ---
-title: احصل على تفاصيل مجموعة المراجعة
-linktitle: احصل على تفاصيل مجموعة المراجعة
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على تفاصيل مجموعة المراجعة في مستند Word باستخدام Aspose.Words for .NET.
+title: Revizyon Grubu Ayrıntılarını Alın
+linktitle: Revizyon Grubu Ayrıntılarını Alın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde revizyon grubu ayrıntılarını alın.
 type: docs
 weight: 10
 url: /tr/net/working-with-revisions/get-revision-group-details/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سوف نوضح لك كيفية الحصول على تفاصيل مجموعة المراجعات في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+Bu adım adım kılavuzda, Aspose.Words for .NET kullanarak bir Word belgesindeki bir revizyon grubunun ayrıntılarını nasıl alacağınızı göstereceğiz. Size tam kaynak kodunu sağlayacağız ve işaretleme çıktısını nasıl biçimlendireceğinizi göstereceğiz.
 
-## الخطوة 1: تحميل المستند
+## 1. Adım: Belgeyi yükleme
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+İlk adım, revizyonları içeren belgeyi yüklemektir.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة 2: تصفح المراجعات
+## 2. Adım: Düzeltmelere göz atın
 
-بعد ذلك ، سنقوم بتكرار المراجعات الموجودة في المستند ونعرض تفاصيلها ، مثل النوع والمؤلف والتاريخ والنص المنقح.
+Ardından, belgede bulunan düzeltmeler arasında dolaşacağız ve tür, yazar, tarih ve düzeltilmiş metin gibi ayrıntılarını göstereceğiz.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -38,9 +38,9 @@ foreach (Revision revision in doc.Revisions)
 ```
 
 
-### مثال على شفرة المصدر للحصول على تفاصيل مجموعة المراجعة باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Revizyon Grubu Ayrıntılarını Al için örnek kaynak kodu
 
-فيما يلي الكود المصدري الكامل للحصول على تفاصيل مجموعة المراجعات في مستند باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanan bir belgedeki bir grup revizyonun ayrıntılarını almak için eksiksiz kaynak kodu burada:
 
 ```csharp
 

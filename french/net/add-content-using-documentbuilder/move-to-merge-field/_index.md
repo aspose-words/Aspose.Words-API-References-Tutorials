@@ -1,85 +1,85 @@
 ---
-title: نقل إلى دمج الحقل
-linktitle: نقل إلى دمج الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تنفيذ ميزة Move To Merge Field في Aspose.Words for .NET باستخدام دليل خطوة بخطوة.
+title: Déplacer vers le champ de fusion
+linktitle: Déplacer vers le champ de fusion
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à implémenter la fonctionnalité Déplacer vers le champ de fusion dans Aspose.Words pour .NET à l'aide d'un guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Merge Field الخاصة بـ Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تمكن المطورين من إنشاء وتعديل وتحويل مستندات Word برمجيًا. تتيح لنا ميزة Move To Merge Field التنقل لدمج الحقول داخل مستند وتنفيذ عمليات مختلفة عليها.
+Dans cet exemple, nous allons explorer la fonctionnalité Move To Merge Field de Aspose.Words pour .NET. Aspose.Words est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programme. La fonction Déplacer vers le champ de fusion nous permet de naviguer pour fusionner des champs dans un document et d'effectuer diverses opérations dessus.
 
 
-## شرح شفرة المصدر خطوة بخطوة
+## Expliquer le code source étape par étape
 
-دعنا ننتقل إلى الكود المصدري خطوة بخطوة لفهم كيفية استخدام ميزة Move To Merge Field باستخدام Aspose.Words for .NET.
+Passons en revue le code source étape par étape pour comprendre comment utiliser la fonctionnalité Move To Merge Field en utilisant Aspose.Words pour .NET.
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## Étape 1 : Initialisation du document et du générateur de documents
 
-أولاً ، قم بتهيئة كائنات Document و DocumentBuilder:
+Tout d'abord, initialisez les objets Document et DocumentBuilder :
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2 إدراج حقل دمج وإضافة نص بعده
+## Étape 2 Insertion d'un champ de fusion et ajout de texte après celui-ci
 
-استخدم الأسلوب InsertField لفئة DocumentBuilder لإدراج حقل دمج ، ثم قم بإضافة نص بعده:
+Utilisez la méthode InsertField de la classe DocumentBuilder pour insérer un champ de fusion, puis ajoutez du texte après :
 
 ```csharp
 Field field = builder.InsertField("MERGEFIELD field");
 builder.Write(" Text after the field.");
 ```
 
-## الخطوة 3: مؤشر المنشئ موجود حاليًا في نهاية المستند.
+## Étape 3 : Le curseur du générateur se trouve actuellement à la fin du document.
 
 ```csharp
 Assert.Null(builder.CurrentNode);
 ```
-## الخطوة 4: نقل مؤشر منشئ المستند إلى حقل الدمج
+## Étape 4 : déplacement du curseur du générateur de document vers le champ de fusion
 
-لنقل مؤشر منشئ المستند إلى حقل الدمج ، استخدم طريقة MoveToField لفئة DocumentBuilder:
+Pour déplacer le curseur du générateur de document vers le champ de fusion, utilisez la méthode MoveToField de la classe DocumentBuilder :
 
 ```csharp
 builder.MoveToField(field, true);
 ```
 
-## إضافة نص مباشرة بعد حقل الدمج
+## Ajouter du texte immédiatement après le champ de fusion
 
-بمجرد أن يكون مؤشر منشئ المستند داخل حقل الدمج ، يمكنك إضافة نص مباشرةً بعده باستخدام طريقة الكتابة:
+Une fois que le curseur du générateur de document se trouve dans le champ de fusion, vous pouvez ajouter du texte immédiatement après en utilisant la méthode Write :
 
 ```csharp
 Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
 builder.Write(" Text immediately after the field.");
 ```
 
-### مثال على شفرة المصدر لـ Move To Merge Field باستخدام Aspose.Words for .NET
+### Exemple de code source pour Move To Merge Field en utilisant Aspose.Words pour .NET
 
 ```csharp
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// أدخل حقلاً باستخدام DocumentBuilder وأضف سلسلة نصية بعده.
+	// Insérez un champ à l'aide de DocumentBuilder et ajoutez une suite de texte après celui-ci.
 	Field field = builder.InsertField("MERGEFIELD field");
 	builder.Write(" Text after the field.");
 
-	// يوجد مؤشر المنشئ حاليًا في نهاية المستند.
+	// Le curseur du constructeur est actuellement à la fin du document.
 	Assert.Null(builder.CurrentNode);
-	// يمكننا نقل المنشئ إلى حقل مثل هذا ، ووضع المؤشر على الفور بعد الحقل.
+	// Nous pouvons déplacer le générateur vers un champ comme celui-ci, en plaçant le curseur immédiatement après le champ.
 	builder.MoveToField(field, true);
 
-	// لاحظ أن المؤشر موجود في مكان ما بعد عقدة FieldEnd للحقل ، مما يعني أننا لسنا في الواقع داخل الحقل.
-	// إذا كنا نرغب في نقل DocumentBuilder إلى داخل حقل ،
-	// سنحتاج إلى نقله إلى عقدة FieldStart أو FieldSeparator باستخدام طريقة DocumentBuilder.MoveTo ().
+	// Notez que le curseur se trouve à un endroit après le nœud FieldEnd du champ, ce qui signifie que nous ne sommes pas réellement à l'intérieur du champ.
+	// Si nous souhaitons déplacer le DocumentBuilder à l'intérieur d'un champ,
+	// nous devrons le déplacer vers le nœud FieldStart ou FieldSeparator d'un champ à l'aide de la méthode DocumentBuilder.MoveTo().
 	Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
 	builder.Write(" Text immediately after the field.");
 	
 ```
 
-## خاتمة
+## Conclusion
 
-لقد اكتشفنا ميزة Move To Merge Field الخاصة بـ Aspose.Words for .NET. لقد تعلمنا كيفية التنقل لدمج الحقول داخل مستند باستخدام فئة DocumentBuilder وتنفيذ العمليات عليها. هذه الميزة مفيدة عند العمل برمجيًا مع الدمج
+nous avons exploré la fonctionnalité Move To Merge Field de Aspose.Words pour .NET. Nous avons appris à naviguer pour fusionner des champs dans un document à l'aide de la classe DocumentBuilder et à effectuer des opérations dessus. Cette fonctionnalité est utile lorsque vous travaillez par programmation avec la fusion
 

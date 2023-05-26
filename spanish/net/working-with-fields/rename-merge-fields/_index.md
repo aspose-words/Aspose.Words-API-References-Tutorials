@@ -1,26 +1,26 @@
 ---
-title: إعادة تسمية حقول الدمج
-linktitle: إعادة تسمية حقول الدمج
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، ستتعلم كيفية إعادة تسمية حقول الدمج في مستند باستخدام Aspose.Words for .NET.
+title: Cambiar el nombre de los campos de combinación
+linktitle: Cambiar el nombre de los campos de combinación
+second_title: Referencia de API de Aspose.Words para .NET
+description: En este tutorial, aprenderá a cambiar el nombre de los campos de combinación en un documento utilizando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/rename-merge-fields/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود المصدر C # أدناه والذي يستخدم ميزة إعادة تسمية حقل الدمج في Aspose.Words for .NET. اتبع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación, que utiliza la función de cambio de nombre de campo de combinación de Aspose.Words para .NET. Siga cada paso cuidadosamente para obtener los resultados deseados.
 
-## الخطوة 1: إعداد دليل المستند
+## Paso 1: Configuración del directorio de documentos
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+En el código provisto, debe especificar el directorio de sus documentos. Reemplace el valor "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند وإدراج حقول الدمج
+## Paso 2: crear el documento e insertar los campos de combinación
 
- نبدأ بإنشاء مستند جديد واستخدام ملف`DocumentBuilder` لإدراج حقول الدمج.
+ Comenzamos creando un nuevo documento y usando un`DocumentBuilder` para insertar los campos de combinación.
 
 ```csharp
 Document doc = new Document();
@@ -30,9 +30,9 @@ builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 ```
 
-## الخطوة 3: إعادة تسمية حقول الدمج
+## Paso 3: Cambiar el nombre de los campos de combinación
 
-نقوم بإجراء حلقة عبر كل حقل في نطاق المستند ، وإذا كان حقل دمج ، فإننا نعيد تسمية الحقل عن طريق إضافة "_أعيدت تسميته "لاحقة.
+Recorremos cada campo en el rango del documento, y si es un campo de combinación, cambiamos el nombre del campo agregando el "_Sufijo renombrado".
 
 ```csharp
 foreach(Field f in doc.Range.Fields)
@@ -46,28 +46,28 @@ foreach(Field f in doc.Range.Fields)
 }
 ```
 
-## الخطوة 4: حفظ المستند
+## Paso 4: Guardar el documento
 
- أخيرًا ، نسمي`Save()` طريقة لحفظ المستند المعدل.
+ Finalmente, llamamos a la`Save()` para guardar el documento modificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-### مثال على رمز المصدر لإعادة تسمية حقول الدمج باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para cambiar el nombre de los campos de combinación con Aspose.Words para .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وإدراج حقول الدمج.
+// Cree el documento e inserte los campos de combinación.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 
-// إعادة تسمية حقول الدمج.
+// Cambiar el nombre de los campos de combinación.
 foreach(Field f in doc.Range.Fields)
 {
      if (f.Type == FieldType.FieldMergeField)
@@ -78,8 +78,8 @@ foreach(Field f in doc.Range.Fields)
      }
 }
 
-// احفظ المستند.
+// Guarde el documento.
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-اتبع هذه الخطوات لإعادة تسمية حقول الدمج في مستندك باستخدام Aspose.Words for .NET.
+Siga estos pasos para cambiar el nombre de los campos de combinación en su documento usando Aspose.Words para .NET.

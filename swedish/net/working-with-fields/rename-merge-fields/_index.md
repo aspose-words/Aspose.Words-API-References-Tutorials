@@ -1,26 +1,26 @@
 ---
-title: إعادة تسمية حقول الدمج
-linktitle: إعادة تسمية حقول الدمج
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، ستتعلم كيفية إعادة تسمية حقول الدمج في مستند باستخدام Aspose.Words for .NET.
+title: Byt namn på sammanslagningsfält
+linktitle: Byt namn på sammanslagningsfält
+second_title: Aspose.Words för .NET API Referens
+description: I den här handledningen kommer du att lära dig hur du byter namn på sammanslagningsfält i ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/rename-merge-fields/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود المصدر C # أدناه والذي يستخدم ميزة إعادة تسمية حقل الدمج في Aspose.Words for .NET. اتبع كل خطوة بعناية للحصول على النتائج المرجوة.
+Här är en steg-för-steg-guide för att förklara C#-källkoden nedan som använder funktionen för att byta namn på sammanslagningsfält i Aspose.Words för .NET. Följ varje steg noggrant för att få önskat resultat.
 
-## الخطوة 1: إعداد دليل المستند
+## Steg 1: Installation av dokumentkatalog
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند وإدراج حقول الدمج
+## Steg 2: Skapa dokumentet och infoga sammanslagningsfälten
 
- نبدأ بإنشاء مستند جديد واستخدام ملف`DocumentBuilder` لإدراج حقول الدمج.
+ Vi börjar med att skapa ett nytt dokument och använda en`DocumentBuilder` för att infoga sammanslagningsfälten.
 
 ```csharp
 Document doc = new Document();
@@ -30,9 +30,9 @@ builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 ```
 
-## الخطوة 3: إعادة تسمية حقول الدمج
+## Steg 3: Byt namn på sammanslagningsfält
 
-نقوم بإجراء حلقة عبر كل حقل في نطاق المستند ، وإذا كان حقل دمج ، فإننا نعيد تسمية الحقل عن طريق إضافة "_أعيدت تسميته "لاحقة.
+Vi går igenom varje fält i dokumentområdet, och om det är ett sammanslagningsfält byter vi namn på fältet genom att lägga till "_Omdöpt" suffix.
 
 ```csharp
 foreach(Field f in doc.Range.Fields)
@@ -46,28 +46,28 @@ foreach(Field f in doc.Range.Fields)
 }
 ```
 
-## الخطوة 4: حفظ المستند
+## Steg 4: Spara dokumentet
 
- أخيرًا ، نسمي`Save()` طريقة لحفظ المستند المعدل.
+ Slutligen kallar vi`Save()` metod för att spara det ändrade dokumentet.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-### مثال على رمز المصدر لإعادة تسمية حقول الدمج باستخدام Aspose.Words for .NET
+### Källkodsexempel för att byta namn på sammanslagningsfält med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وإدراج حقول الدمج.
+// Skapa dokumentet och infoga sammanslagningsfälten.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 
-// إعادة تسمية حقول الدمج.
+// Byt namn på sammanslagningsfält.
 foreach(Field f in doc.Range.Fields)
 {
      if (f.Type == FieldType.FieldMergeField)
@@ -78,8 +78,8 @@ foreach(Field f in doc.Range.Fields)
      }
 }
 
-// احفظ المستند.
+// Spara dokumentet.
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-اتبع هذه الخطوات لإعادة تسمية حقول الدمج في مستندك باستخدام Aspose.Words for .NET.
+Följ dessa steg för att byta namn på sammanslagningsfält i ditt dokument med Aspose.Words för .NET.

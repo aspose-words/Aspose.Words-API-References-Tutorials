@@ -1,31 +1,31 @@
 ---
-title: التحويل بين وحدات القياس
-linktitle: التحويل بين وحدات القياس
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة للتحويل بين وحدات القياس في مستند باستخدام Aspose.Words for .NET.
+title: Ölçü Birimleri Arasında Dönüştür
+linktitle: Ölçü Birimleri Arasında Dönüştür
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir belgede ölçüm birimleri arasında dönüşüm yapmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-document-properties/convert-between-measurement-units/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # للتحويل بين وحدات القياس باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تحديد الهوامش ومسافات الرأس والتذييل وما إلى ذلك في وحدات قياس مختلفة.
+Bu eğitimde, Aspose.Words for .NET ile ölçüm birimleri arasında dönüştürme yapmak için C# kaynak kodunda size yol göstereceğiz. Bu özellik, farklı ölçü birimlerinde kenar boşluklarını, üst bilgi ve alt bilgi mesafelerini vb. belirlemenizi sağlar.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: إنشاء المستند والمنشئ
+## 2. Adım: Belgeyi ve Oluşturucuyu Oluşturma
 
-في هذه الخطوة ، سننشئ مستندًا جديدًا ونهيئ المُنشئ. استخدم الكود التالي:
+Bu adımda yeni bir belge oluşturacağız ve yapıcıyı başlatacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تكوين وحدات القياس
+## 3. Adım: Ölçü birimlerini yapılandırın
 
-سنقوم الآن بتحويل قيم الهوامش ومسافات الرأس والتذييل وما إلى ذلك في وحدات قياس مختلفة. استخدم الكود التالي لتحديد القيم في وحدات قياس معينة:
+Şimdi kenar boşlukları, üst bilgi ve alt bilgi mesafeleri vb. için değerleri farklı ölçü birimlerine dönüştüreceğiz. Değerleri belirli ölçü birimlerinde belirtmek için aşağıdaki kodu kullanın:
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -37,9 +37,9 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- يستخدم هذا الرمز الامتداد`ConvertUtil` فئة Aspose. Words لتحويل القيم المحددة إلى بوصة (`InchToPoint` ). يمكنك أيضًا استخدام طرق التحويل الأخرى المتوفرة في ملف`ConvertUtil` فئة لتحويل القيم إلى وحدات قياس أخرى.
+ Bu kod kullanır`ConvertUtil` Aspose.Words sınıfı, belirtilen değerleri inç'e (`InchToPoint` ). Ayrıca diğer dönüştürme yöntemlerini de kullanabilirsiniz.`ConvertUtil` değerleri diğer ölçü birimlerine dönüştürmek için sınıf.
 
-### مثال على شفرة المصدر للتحويل بين وحدات القياس باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Ölçüm Birimleri Arasında Dönüştürme için örnek kaynak kodu
 
 ```csharp
 
@@ -56,4 +56,4 @@ pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
   
 ```
 
-لقد تعلمت الآن كيفية التحويل بين وحدات القياس عند تحديد الهوامش ومسافات الرأس والتذييل وما إلى ذلك في مستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تحديد القيم في وحدات القياس المطلوبة في مستنداتك الخاصة.
+Artık Aspose.Words for .NET kullanarak bir belgede kenar boşluklarını, üst bilgi ve alt bilgi mesafelerini vb. belirtirken ölçüm birimleri arasında nasıl dönüşüm yapacağınızı öğrendiniz. Bu eğitimde verilen adım adım kılavuzu izleyerek, kendi belgelerinizde istediğiniz ölçü birimlerindeki değerleri kolayca belirtebilirsiniz.

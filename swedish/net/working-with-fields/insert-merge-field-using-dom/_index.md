@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل الدمج باستخدام DOM
-linktitle: أدخل حقل الدمج باستخدام DOM
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول دمج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Infoga sammanslagningsfält med DOM
+linktitle: Infoga sammanslagningsfält med DOM
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar anpassade sammanslagningsfält i dina Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/insert-merge-field-using-dom/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي تستخدم ميزة "إدراج حقل دمج الحقول" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Här är en steg-för-steg-guide för att förklara C#-källkoden nedan som använder funktionen "Insert Field Merge Field" i Aspose.Words för .NET. Se till att följa varje steg noggrant för att få önskat resultat.
 
-## الخطوة 1: إعداد دليل المستند
+## Steg 1: Installation av dokumentkatalog
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## Steg 2: Skapa Document and DocumentBuilder
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Vi börjar med att skapa ett nytt dokument och initiera en DocumentBuilder.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تحريك المؤشر إلى الفقرة
+## Steg 3: Flytta markören till stycket
 
- نحن نستخدم ال`MoveTo()` طريقة DocumentBuilder لتحريك المؤشر إلى الفقرة حيث نريد إدراج حقل دمج الحقل.
+ Vi använder`MoveTo()` metoden i DocumentBuilder för att flytta markören till stycket där vi vill infoga fältsammanfogningsfältet.
 
 ```csharp
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 builder. MoveTo(para);
 ```
 
-## الخطوة 4: إدخال حقل دمج الحقول
+## Steg 4: Infoga fältsammanfogningsfältet
 
- نحن نستخدم برنامج DocumentBuilder`InsertField()` طريقة لإدراج حقل دمج حقل في الفقرة.
+ Vi använder DocumentBuilder's`InsertField()` metod för att infoga ett sammanslagningsfält för fält i stycket.
 
 ```csharp
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
 ```
 
-نقوم بعد ذلك بتكوين خصائص حقل دمج الحقول عن طريق تحديد الخيارات المناسبة ، مثل اسم الحقل والنص قبل الحقل وبعده وخيارات التنسيق الرأسي.
+Vi konfigurerar sedan egenskaperna för fältsammanslagning genom att ange lämpliga alternativ, såsom fältnamn, text före och efter fältet och vertikala formateringsalternativ.
 
 ```csharp
 field.FieldName = "Test1";
@@ -54,27 +54,27 @@ field. IsMapped = true;
 field. IsVerticalFormatting = true;
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Slutligen kallar vi`Update()` metod för att uppdatera fältet.
 
 ```csharp
 field. Update();
 ```
 
-### نموذج التعليمات البرمجية المصدر لإدخال حقل دمج الحقول مع Aspose.Words for .NET
+### Exempel på källkod för att infoga ett sammanslagningsfält för fält med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند و DocumentBuilder.
+// Skapa dokumentet och DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// حرك المؤشر إلى الفقرة.
+// Flytta markören till stycket.
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 builder. MoveTo(para);
 
-// أدخل حقل دمج الحقول.
+// Infoga sammanslagningsfält för fält.
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
 
 field.FieldName = "Test1";
@@ -83,10 +83,10 @@ field. TextAfter = "Test3";
 field. IsMapped = true;
 field. IsVerticalFormatting = true;
 
-// قم بتحديث الحقل.
+// Uppdatera fältet.
 field. Update();
 
 doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، ونقلنا المؤشر إلى الفقرة المطلوبة ، ثم أدخلنا حقل دمج الحقول في المستند.
+I det här exemplet skapade vi ett nytt dokument, flyttade markören till önskat stycke och infogade sedan ett sammanslagningsfält för fält i dokumentet.

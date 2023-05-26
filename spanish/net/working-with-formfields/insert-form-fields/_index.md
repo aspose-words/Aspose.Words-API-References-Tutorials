@@ -1,46 +1,46 @@
 ---
-title: أدخل حقول النموذج
-linktitle: أدخل حقول النموذج
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج القائمة المنسدلة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Insertar campos de formulario
+linktitle: Insertar campos de formulario
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a insertar campos de formulario desplegables en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-formfields/insert-form-fields/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية إدراج حقول النموذج ، وتحديداً حقل نموذج القائمة المنسدلة ، في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+En este tutorial paso a paso, lo guiaremos sobre cómo insertar campos de formulario, específicamente un campo de formulario desplegable, en un documento de Word usando Aspose.Words para .NET. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde el sitio web oficial.
 
-## الخطوة 1: تهيئة المستند وكائنات DocumentBuilder
+## Paso 1: inicialización de los objetos Document y DocumentBuilder
 
- أولاً ، قم بتهيئة ملف`Document` و`DocumentBuilder` أشياء:
+ Primero, inicialice el`Document` y`DocumentBuilder` objetos:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إدراج حقل نموذج منسدل
+## Paso 2: Inserción de un campo de formulario desplegable
 
- بعد ذلك ، حدد خيارات حقل نموذج القائمة المنسدلة وأدخله في المستند باستخدام ملف`InsertComboBox` طريقة`DocumentBuilder`هدف. في هذا المثال ، نقوم بإدراج حقل نموذج منسدلة باسم "DropDown" مع ثلاثة خيارات: "واحد" و "اثنان" و "ثلاثة":
+ A continuación, especifique las opciones para el campo de formulario desplegable e insértelo en el documento usando el`InsertComboBox` metodo de la`DocumentBuilder`objeto. En este ejemplo, insertamos un campo de formulario desplegable llamado "DropDown" con tres opciones: "Uno", "Dos" y "Tres":
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## الخطوة 3: حفظ المستند
+## Paso 3: Guardar el documento
 
-أخيرًا ، احفظ المستند:
+Finalmente, guarde el documento:
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إدراج حقل نموذج منسدل في مستند Word باستخدام Aspose.Words for .NET.
+¡Eso es todo! Ha insertado con éxito un campo de formulario desplegable en un documento de Word utilizando Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لإدراج حقول النموذج باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Insertar campos de formulario usando Aspose.Words para .NET
 
 ```csharp
 Document doc = new Document();
@@ -52,4 +52,4 @@ builder.InsertComboBox("DropDown", items, 0);
 doc.Save("OutputDocument.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Siéntase libre de usar este código en sus propios proyectos y modifíquelo de acuerdo con sus requisitos específicos.

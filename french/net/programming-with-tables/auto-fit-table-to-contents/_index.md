@@ -1,59 +1,59 @@
 ---
-title: احتواء تلقائي للجدول مع المحتويات
-linktitle: احتواء تلقائي للجدول مع المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ملاءمة الجدول تلقائيًا لمحتوياته في مستند Word باستخدام Aspose.Words for .NET.
+title: Ajuster automatiquement le tableau au contenu
+linktitle: Ajuster automatiquement le tableau au contenu
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Découvrez comment ajuster automatiquement un tableau à son contenu dans un document Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/auto-fit-table-to-contents/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words لـ .NET لملاءمة جدول تلقائيًا مع محتوياته في مستند Word باستخدام C #. سنمر بعملية كتابة التعليمات البرمجية خطوة بخطوة لتحقيق هذه الوظيفة. بنهاية هذا البرنامج التعليمي ، سيكون لديك فهم واضح لكيفية التعامل مع الجداول في مستندات Word برمجيًا.
+Dans ce didacticiel, nous apprendrons à utiliser Aspose.Words pour .NET pour adapter automatiquement un tableau à son contenu dans un document Word à l'aide de C#. Nous allons passer par le processus étape par étape d'écriture de code pour réaliser cette fonctionnalité. À la fin de ce didacticiel, vous comprendrez clairement comment manipuler des tableaux dans des documents Word par programme.
 
-## الخطوة 1: قم بإعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Étape 1 : Configurer le projet
+1. Lancez Visual Studio et créez un nouveau projet C#.
+2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
-## الخطوة 2: قم بتحميل مستند Word
-لبدء العمل مع الجدول ، نحتاج إلى تحميل مستند Word الذي يحتوي على الجدول. اتبع هذه الخطوات:
+## Étape 2 : Chargez le document Word
+Pour commencer à travailler avec le tableau, nous devons charger le document Word qui contient le tableau. Suivez ces étapes:
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//قم بتحميل مستند Word
+//Charger le document Word
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-تأكد من استبدال "دليل المستند" بالمسار الفعلي إلى المستند.
+Assurez-vous de remplacer "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin d'accès réel à votre document.
 
-## الخطوة 3: الوصول إلى الجدول وضبطه تلقائيًا مع المحتويات
-بعد ذلك ، نحتاج إلى الوصول إلى الجدول داخل المستند وتطبيق سلوك الاحتواء التلقائي. استخدم الكود التالي:
+## Étape 3 : Accédez au tableau et adaptez-le automatiquement au contenu
+Ensuite, nous devons accéder au tableau dans le document et appliquer le comportement d'ajustement automatique. Utilisez le code suivant :
 
 ```csharp
-// الوصول إلى الجدول
+// Accéder au tableau
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
-// احتواء الجدول تلقائيًا مع محتوياته
+// Ajuster automatiquement le tableau à son contenu
 table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
- هنا ، نقوم بإلقاء أول عقدة فرعية من النوع`Table` من المستند ثم استخدام امتداد`AutoFit` الطريقة مع`AutoFitToContents` لضبط عرض الجدول ليلائم محتواه.
+ Ici, nous coulons le premier nœud enfant de type`Table` à partir du document, puis à l'aide de la`AutoFit` méthode avec la`AutoFitToContents` comportement pour ajuster la largeur du tableau en fonction de son contenu.
 
-## الخطوة 4: احفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل بالجدول المجهز تلقائيًا. استخدم الكود التالي:
+## Étape 4 : Enregistrer le document modifié
+Enfin, nous devons enregistrer le document modifié avec le tableau ajusté automatiquement. Utilisez le code suivant :
 
 ```csharp
-// احفظ المستند المعدل
+// Enregistrer le document modifié
 doc.Save(dataDir + "WorkingWithTables.AutoFitTableToContents.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour le document de sortie.
 
-### عينة من التعليمات البرمجية المصدر لـ Auto Fit Table To Contents باستخدام Aspose.Words for .NET 
+### Exemple de code source pour l'ajustement automatique du tableau au contenu à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -62,5 +62,5 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitTableToContents.docx");
 	doc.Save(dataDir + "WorkingWithTables.AutoFitTableToContents.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية ملاءمة الجدول تلقائيًا لمحتوياته في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك معالجة الجداول في مستندات Word برمجيًا. يتيح لك ذلك ضبط عرض الجدول ديناميكيًا بناءً على محتواه ، مما يوفر مستندًا أكثر احترافًا وجاذبية.
+## Conclusion
+Dans ce didacticiel, nous avons appris à ajuster automatiquement un tableau à son contenu dans un document Word à l'aide de Aspose.Words pour .NET. En suivant le guide étape par étape et en implémentant le code C# fourni, vous pouvez manipuler des tableaux dans vos documents Word par programmation. Cela vous permet d'ajuster dynamiquement la largeur du tableau en fonction de son contenu, fournissant un document plus professionnel et visuellement attrayant.

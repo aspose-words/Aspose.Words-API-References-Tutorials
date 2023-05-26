@@ -1,24 +1,24 @@
 ---
-title: تعيين مجلدات الخطوط ذات الأولوية
-linktitle: تعيين مجلدات الخطوط ذات الأولوية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد مجلدات الخطوط ذات الأولوية عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Yazı Tipi Klasörlerini Öncelikli Olarak Ayarla
+linktitle: Yazı Tipi Klasörlerini Öncelikli Olarak Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir belgeyi işlerken yazı tipi klasörlerini öncelikli olarak ayarlamak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلدات الخطوط ذات الأولوية عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلدات خطوط متعددة ذات أولوية بحث مخصصة عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir belgeyi işlerken yazı tipi klasörlerini öncelikli olarak ayarlamak için size adım adım yol göstereceğiz. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sağlayacağız. Bu eğitimin sonunda, belgelerinizi Aspose.Words for .NET kullanarak işlerken özel arama önceliğine sahip çoklu yazı tipi klasörlerini nasıl belirteceğinizi öğreneceksiniz.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+Öncelikle, belgeler dizininize giden yolu ayarlamanız gerekir. Bu, düzenlenen işlenmiş belgenizi kaydetmek istediğiniz konumdur. "BELGELER DİZİNİNİZİ" uygun yolla değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تعيين مجلدات الخطوط ذات الأولوية
- ثم يمكنك ضبط مجلدات الخطوط ذات الأولوية باستخدام امتداد`FontSettings` الطبقة و`SetFontsSources()` طريقة. يمكنك تحديد مصادر خطوط متعددة باستخدام مثيلات`SystemFontSource` و`FolderFontSource`. في هذا المثال ، حددنا مصدرين للخطوط: المصدر الافتراضي لخطوط النظام ومجلد الخط المخصص بأولوية 1.
+## 2. Adım: Yazı tipi klasörlerini öncelikli olarak ayarlayın
+ Ardından, yazı tipi klasörlerini öncelikli olarak ayarlayabilirsiniz.`FontSettings` sınıf ve`SetFontsSources()` yöntem. Örneklerini kullanarak birden çok yazı tipi kaynağı belirleyebilirsiniz.`SystemFontSource` Ve`FolderFontSource`. Bu örnekte, iki yazı tipi kaynağı tanımladık: varsayılan sistem yazı tipi kaynağı ve 1 önceliğe sahip özel bir yazı tipi klasörü.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
@@ -27,23 +27,23 @@ new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true, 1)
 });
 ```
 
-## الخطوة 3: قم بتحميل المستند للعرض
- يمكنك الآن تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## 3. Adım: Oluşturulacak belgeyi yükleyin
+ Artık belgeyi kullanarak işlenecek belgeyi yükleyebilirsiniz.`Document` sınıf. Doğru belge yolunu belirttiğinizden emin olun.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 4: احفظ المستند المقدم
- أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## 4. Adım: Oluşturulan belgeyi kaydedin
+ Son olarak, işlenen belgeyi kullanarak bir dosyaya kaydedebilirsiniz.`Save()` yöntemi`Document` sınıf. Doğru yolu ve dosya adını belirttiğinizden emin olun.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders With Priority باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Öncelikli Yazı Tipleri Klasörlerini Ayarlamak için örnek kaynak kodu 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
@@ -54,5 +54,5 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلدات الخطوط ذات الأولوية عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلدات خطوط متعددة ذات أولوية بحث مخصصة عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir belgeyi işlerken yazı tipi klasörlerini nasıl öncelikli olarak ayarlayacağımızı öğrendik. Bu adım adım kılavuzu izleyerek, belgelerinizi işlerken özel arama önceliğine sahip birden çok yazı tipi klasörünü kolayca belirtebilirsiniz. Aspose.Words, belgelerinizdeki yazı tipleriyle çalışmak için güçlü ve esnek bir API sunar. Bu bilgiyle, belgelerinizi özel ihtiyaçlarınıza göre işlerken kullanılan yazı tipi kaynaklarını kontrol edebilir ve özelleştirebilirsiniz.

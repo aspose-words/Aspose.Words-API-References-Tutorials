@@ -1,40 +1,40 @@
 ---
-title: العمل مع الحقول
-linktitle: العمل مع الحقول
-second_title: Aspose.Words لمراجع .NET API
-description: توضح البرامج التعليمية كيفية إدراج الحقل ، وتحديث الثقافة المحفوظة ، واستبدال الارتباط التشعبي للحقل ، وإزالة الحقل ، وإدراج الحقول المتداخلة في مستند Word باستخدام Aspose.Words for .NET
+title: Lavorare con i campi
+linktitle: Lavorare con i campi
+second_title: Riferimento all'API Aspose.Words per .NET
+description: tutorial mostrano come inserire il campo, aggiornare la cultura archiviata, sostituire il collegamento ipertestuale del campo, rimuovere il campo e inserire campi nidificati nel documento di Word utilizzando in Aspose.Words per .NET
 type: docs
 weight: 140
 url: /it/net/working-with-fields/
 ---
-هذا مورد شامل لتعلم كيفية العمل مع الحقول في مستندات Word باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية تفسيرات خطوة بخطوة ، وشفرة مصدر مفصلة ، وأمثلة عملية للتعامل الفعال مع الحقول وإدارتها مثل رموز الحقول والتحديثات وعروض النتائج وشروط IF ودمج البريد والمزيد. هذا المورد ضروري للمطورين الراغبين في أتمتة إنشاء مستندات Word ومعالجتها باستخدام Aspose.Words for .NET.
+Questa è una risorsa completa per imparare a lavorare con i campi nei documenti di Word utilizzando la libreria Aspose.Words per .NET. I tutorial forniscono spiegazioni dettagliate, codice sorgente dettagliato ed esempi pratici per manipolare e gestire in modo efficace campi come codici di campo, aggiornamenti, visualizzazioni dei risultati, condizioni IF, fusioni di posta e altro ancora. Questa risorsa è essenziale per gli sviluppatori che desiderano automatizzare la generazione e la manipolazione di documenti Word utilizzando Aspose.Words per .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [كود الحقل](./field-code/) | دليل خطوة بخطوة للحصول على رمز الحقل والنتيجة الميدانية في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. |
-| [تغيير مصدر ثقافة تحديث الحقل](./change-field-update-culture-source/) | تغيير ثقافة تحديث الحقل المصدر: دليل خطوة بخطوة لتعديل مصدر الثقافة في Aspose.Words for .NET.|
-| [حدد الإعدادات المحلية على مستوى الحقل](./specify-locale-at-field-level/) | تعرف على كيفية تحديد الترجمة على مستوى الحقل في مستندات Word باستخدام Aspose.Words for .NET. |
-| [استبدل الارتباطات التشعبية](./replace-hyperlinks/) | استبدل الارتباطات التشعبية في مستندات Word باستخدام Aspose.Words for .NET. إرشادات خطوة بخطوة لاستبدال الارتباطات التشعبية. |
-| [إعادة تسمية حقول الدمج](./rename-merge-fields/) | في هذا البرنامج التعليمي ، ستتعلم كيفية إعادة تسمية حقول الدمج في مستند باستخدام Aspose.Words for .NET. |
-| [إزالة الحقل](./remove-field/) | في هذا الدليل ، ستتعلم كيفية حذف حقل معين في مستند باستخدام Aspose.Words for .NET. |
-| [أدخل حقل TOA بدون Document Builder](./insert-toafield-without-document-builder/) | دليل خطوة بخطوة لإدخال حقل TOA بدون Document Builder باستخدام Aspose.Words for .NET. |
-| [أدخل الحقول المتداخلة](./insert-nested-fields/) | تعرف على كيفية إدراج الحقول المتداخلة بسهولة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [أدخل حقل الدمج باستخدام DOM](./insert-merge-field-using-dom/) | تعرف على كيفية إدراج حقول دمج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM](./insert-mail-merge-address-block-field-using-dom/) | تعرف على كيفية إدراج حقل كتلة عنوان دمج المراسلات في مستندات Word باستخدام Aspose.Words for .NET. |
-| [قم بإدراج FieldIncludeText بدون Document Builder](./insert-field-include-text-without-document-builder/) | تعرف على كيفية إدراج حقل FieldIncludeText في مستندات Word باستخدام Aspose.Words for .NET. |
-| [إدراج حقل بلا](./insert-field-none/) | تعرف على كيفية برنامج Insérez un Champ AUCUN dans vos documents Word avec Aspose.Words pour .NET. |
-| [أدخل الحقل](./insert-field/) | تعرف على كيفية إدراج حقل في مستندات Word باستخدام Aspose.Words for .NET. إضفاء الطابع الشخصي على المستندات الخاصة بك مع الحقول الديناميكية. |
-| [أدخل الحقل باستخدام Field Builder](./insert-field-using-field-builder/) | تعرف على كيفية إدراج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [أدخل حقل المؤلف](./insert-author-field/) | تعرف على كيفية إدراج حقل AUTHOR في مستندات Word باستخدام Aspose.Words for .NET. حدد اسم المؤلف لتخصيص مستنداتك. |
-| [أدخل ASKField With Out Document Builder](./insert-askfield-with-out-document-builder/) | تعرف على كيفية إدراج حقل ASK في مستندات Word باستخدام Aspose.Words for .NET. |
-| [أدخل الحقل المتقدم بدون Document Builder](./insert-advance-field-with-out-document-builder/) | تعرف على كيفية إدراج حقل متقدم في مستندات Word باستخدام Aspose.Words for .NET. |
-| [احصل على أسماء حقول دمج المراسلات](./get-mail-merge-field-names/) | تعرف على كيفية الحصول على أسماء حقول دمج البريد في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. |
-| [حذف الحقول](./delete-fields/) | دليل خطوة بخطوة لحذف حقول الدمج في مستندات Word باستخدام Aspose.Words for .NET |
-| [ثقافة التحديث الميداني](./field-update-culture/) | تعرف على كيفية تحديث الثقافة الميدانية في مستندات Word باستخدام Aspose.Words for .NET. |
-| [نتائج العرض الميداني](./field-display-results/) | دليل خطوة بخطوة لعرض النتائج الميدانية في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. |
-| [تقييم حالة IF](./evaluate-ifcondition/) | دليل خطوة بخطوة لتقييم حالة IF في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تحويل الحقول في الفقرة](./convert-fields-in-paragraph/) | تحويل حقول IF إلى نص عادي في فقرة باستخدام Aspose.Words for .NET. |
-| [تحويل الحقول في المستند](./convert-fields-in-document/) | دليل تفصيلي خطوة بخطوة لتحويل حقول المستند إلى نص باستخدام Aspose.Words for .NET. |
-| [تحويل الحقول في الجسم](./convert-fields-in-body/) | تعرف على كيفية استخدام Aspose.Words for .NET لتحويل حقول الصفحة إلى نص في نص مستند Word. |
-| [تغيير اللغة](./change-locale/) | تعرف على كيفية تغيير الإعدادات المحلية لتنسيق التاريخ والأرقام في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Codice campo](./field-code/) | Guida passo passo per ottenere il codice di campo e il risultato del campo nei tuoi documenti Word con Aspose.Words per .NET. |
+| [Cambia campo Aggiorna origine cultura](./change-field-update-culture-source/) | Modifica campo Aggiorna origine cultura: guida passo passo per modificare l'origine cultura in Aspose.Words per .NET.|
+| [Specifica la lingua a livello di campo](./specify-locale-at-field-level/) | Scopri come specificare la localizzazione a livello di campo nei documenti di Word con Aspose.Words per .NET. |
+| [Sostituisci collegamenti ipertestuali](./replace-hyperlinks/) | Sostituisci i collegamenti ipertestuali nei documenti di Word utilizzando Aspose.Words per .NET. Istruzioni dettagliate per la sostituzione dei collegamenti ipertestuali. |
+| [Rinomina campi di unione](./rename-merge-fields/) | In questo tutorial imparerai come rinominare i campi di unione in un documento utilizzando Aspose.Words per .NET. |
+| [Rimuovi campo](./remove-field/) | In questa guida imparerai come eliminare un campo specifico in un documento utilizzando Aspose.Words per .NET. |
+| [Inserisci campo TOA senza Document Builder](./insert-toafield-without-document-builder/) | Guida passo passo per inserire il campo TOA senza Document Builder utilizzando Aspose.Words per .NET. |
+| [Inserisci campi nidificati](./insert-nested-fields/) | Scopri come inserire facilmente campi nidificati nei tuoi documenti Word con Aspose.Words per .NET. |
+| [Inserisci campo di unione utilizzando DOM](./insert-merge-field-using-dom/) | Scopri come inserire campi di unione di campi personalizzati nei tuoi documenti Word con Aspose.Words per .NET. |
+| [Inserisci il campo di blocco dell'indirizzo di stampa unione utilizzando DOM](./insert-mail-merge-address-block-field-using-dom/) | Scopri come inserire un campo di blocco dell'indirizzo di stampa unione nei documenti di Word con Aspose.Words per .NET. |
+| [Inserisci FieldIncludeText senza Document Builder](./insert-field-include-text-without-document-builder/) | Scopri come inserire un campo FieldIncludeText nei tuoi documenti Word con Aspose.Words per .NET. |
+| [Inserisci campo Nessuno](./insert-field-none/) | Scopri come inserire un campione AUCUN nei tuoi documenti Word con Aspose.Words pour .NET. |
+| [Inserisci campo](./insert-field/) | Scopri come inserire un campo nei tuoi documenti Word con Aspose.Words per .NET. Personalizza i tuoi documenti con campi dinamici. |
+| [Inserisci campo utilizzando Field Builder](./insert-field-using-field-builder/) | Scopri come inserire campi personalizzati nei tuoi documenti Word con Aspose.Words per .NET. |
+| [Inserisci campo autore](./insert-author-field/) | Scopri come inserire un campo AUTHOR nei tuoi documenti Word con Aspose.Words per .NET. Specifica il nome dell'autore per personalizzare i tuoi documenti. |
+| [Inserisci ASKField With Out Document Builder](./insert-askfield-with-out-document-builder/) | Scopri come inserire un campo ASK nei tuoi documenti Word con Aspose.Words per .NET. |
+| [Inserisci campo avanzato senza il generatore di documenti](./insert-advance-field-with-out-document-builder/) | Scopri come inserire un campo avanzato nei tuoi documenti Word con Aspose.Words per .NET. |
+| [Ottieni i nomi dei campi di stampa unione](./get-mail-merge-field-names/) | Scopri come ottenere i nomi dei campi di stampa unione nei documenti di Word con Aspose.Words per .NET. |
+| [Elimina campi](./delete-fields/) | Guida passo passo per l'eliminazione dei campi di unione nei documenti di Word utilizzando Aspose.Words per .NET |
+| [Cultura dell'aggiornamento sul campo](./field-update-culture/) | Scopri come aggiornare la cultura del campo nei tuoi documenti Word con Aspose.Words per .NET. |
+| [Risultati di visualizzazione del campo](./field-display-results/) | Guida passo passo per la visualizzazione dei risultati del campo nei documenti di Word con Aspose.Words per .NET. |
+| [Valutare la condizione SE](./evaluate-ifcondition/) | Guida passo passo per valutare la condizione IF nei tuoi documenti Word con Aspose.Words per .NET. |
+| [Converti campi nel paragrafo](./convert-fields-in-paragraph/) | Converti i campi IF in testo normale in un paragrafo con Aspose.Words per .NET. |
+| [Converti campi nel documento](./convert-fields-in-document/) | Guida dettagliata per convertire i campi del documento in testo utilizzando Aspose.Words per .NET. |
+| [Converti campi nel corpo](./convert-fields-in-body/) | Scopri come utilizzare Aspose.Words per .NET per convertire i campi della pagina in testo nel corpo di un documento di Word. |
+| [Cambia locale](./change-locale/) | Scopri come modificare le impostazioni locali per la formattazione di data e numero nei documenti di Word utilizzando Aspose.Words per .NET. |

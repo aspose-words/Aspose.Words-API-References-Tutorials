@@ -1,51 +1,51 @@
 ---
-title: حذف الحقول
-linktitle: حذف الحقول
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لحذف حقول الدمج في مستندات Word باستخدام Aspose.Words for .NET.
+title: Ta bort fält
+linktitle: Ta bort fält
+second_title: Aspose.Words för .NET API Referens
+description: Steg för steg guide för att ta bort sammanslagningsfält i dina Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/delete-fields/
 ---
 
-لشرح كيفية استخدام ميزة "حذف الحقول" في Aspose. كلمات لـ .NET قمنا بإنشاء دليل خطوة بخطوة أدناه. 
+För att förklara hur man använder funktionen "Ta bort fält" i Aspose. Ord för .NET vi har skapat en steg för steg guide nedan. 
 
-من المهم متابعة كل خطوة عن كثب من أجل تحقيق النتائج المرجوة. 
+Det är viktigt att följa varje steg noga för att uppnå önskat resultat. 
 
-## الخطوة الأولى: إنشاء مستند جديد
+## Steg 1: Skapa ett nytt dokument
 
-في مقتطف الشفرة هذا ، نبدأ بإنشاء مستند فارغ جديد باستخدام السطر التالي: 
+I det här kodavsnittet börjar vi med att skapa ett nytt tomt dokument med följande rad: 
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: إزالة دمج الحقول
+## Steg 2: Ta bort sammanfogningsfält
 
- لإزالة جميع حقول الدمج الموجودة في المستند ، نستخدم ملحق`DeleteFields()` وظيفة. 
+ För att ta bort alla sammanslagningsfält som finns i dokumentet använder vi`DeleteFields()` fungera. 
 
-هذا مفيد بشكل خاص إذا كنت ترغب في الاحتفاظ فقط بالمحتوى الثابت وإزالة أي معلومات دمج. 
+Detta är särskilt användbart om du bara vill behålla det statiska innehållet och ta bort all sammanfogningsinformation. 
 
-### مثال رمز المصدر لحذف الحقول باستخدام Aspose.Words for .NET
+### Källkodsexempel för Ta bort fält med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تحميل المستند الحالي.
+// Ladda befintligt dokument.
 Document doc = new Document(dataDir + "YourDocument.docx");
 
-// قم بإزالة حقول الدمج.
+// Ta bort sammanslagningsfält.
 doc.MailMerge.DeleteFields();
 
-// احفظ المستند المعدل.
+// Spara det ändrade dokumentet.
 doc.Save(dataDir + "YourDocument_WithoutFields.docx");
 ```
 
- في مثالنا ، نقوم أولاً بتحميل مستند موجود قبل الاتصال`DeleteFields()`. أخيرًا نحفظ المستند المعدل باسم ملف جديد. 
+ I vårt exempel laddar vi först ett befintligt dokument innan vi ringer`DeleteFields()`. Slutligen sparar vi det ändrade dokumentet med ett nytt filnamn. 
 
-من أجل إزالة حقول الدمج بشكل فعال من مستند باستخدام Aspose.Words ميزة "إزالة الحقول" في .NET ، خذ إشارة من هذا المثال. 
+För att effektivt ta bort sammanslagna fält från ett dokument med Aspose.Words för .NET:s "Ta bort fält"-funktion, ta en cue från detta exempel. 
 
-تذكر دائمًا استبدال "دليل المستندات" بمسار الدليل المحدد. 
+Kom alltid ihåg att ersätta "DIN DOKUMENTKATOGRAF" med din specifika katalogsökväg. 
 
-وبذلك تم الانتهاء من دليلنا حول تنفيذ وظيفة "حذف الحقول" من خلال Aspose.Words for .NET.
+Vår guide för implementering av "Delete Fields"-funktionaliteten genom Aspose.Words för .NET har därmed avslutats.

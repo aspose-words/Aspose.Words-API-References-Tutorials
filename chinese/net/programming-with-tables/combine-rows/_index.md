@@ -1,75 +1,75 @@
 ---
-title: ضم الصفوف
-linktitle: ضم الصفوف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية دمج صفوف الجدول في مستند Word باستخدام Aspose.Words for .NET.
+title: 合并行
+linktitle: 合并行
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 合并 Word 文档中的表格行。
 type: docs
 weight: 10
 url: /zh/net/programming-with-tables/combine-rows/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words for .NET لدمج صفوف الجداول في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من معالجة ودمج صفوف الجدول في مستندات Word الخاصة بك برمجيًا.
+在本教程中，我们将学习如何使用 Aspose.Words for .NET 来组合 Word 文档中的表格行。我们将按照逐步指南来理解代码并实现此功能。在本教程结束时，您将能够以编程方式操作和合并 Word 文档中的表格行。
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## 第 1 步：项目设置
+1. 启动 Visual Studio 并创建一个新的 C# 项目。
+2. 添加对 Aspose.Words for .NET 库的引用。
 
-## الخطوة الثانية: تحميل المستند والوصول إلى الجداول
-لبدء العمل مع الجداول ، نحتاج إلى تحميل المستند الذي يحتوي عليها والوصول إليها. اتبع هذه الخطوات:
+## 第 2 步：加载文档并访问表格
+要开始使用表，我们需要加载包含它们的文档并访问它们。按着这些次序：
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//装入文档
 Document doc = new Document(dataDir + "Tables.docx");
 
-// الوصول إلى الجداول
+//访问表
 Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
 Table secondTable = (Table)doc.GetChild(NodeType.Table, 1, true);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+请务必将“您的文档目录”替换为您的文档目录的实际路径。
 
-## الخطوة 3: دمج صفوف الجدول
-بعد ذلك ، سنجمع صفوف الجدول الثاني في نهاية الجدول الأول. استخدم الكود التالي:
+## 第 3 步：合并表行
+接下来，我们将第二个表的行合并到第一个表的末尾。使用以下代码：
 
 ```csharp
-// مزيج من صفوف الجدول
+//表格行的组合
 while (secondTable.HasChildNodes)
      firstTable.Rows.Add(secondTable.FirstRow);
 secondTable.Remove();
 ```
 
- هنا نستخدم ملف`while` loop للتكرار على جميع صفوف المصفوفة الثانية وإضافتها إلى نهاية المصفوفة الأولى باستخدام`Add` طريقة. بعد ذلك ، نقوم بإزالة الجدول الثاني من المستند باستخدام ملف`Remove` طريقة.
+这里我们使用一个`while`循环遍历第二个数组的所有行，并使用`Add`方法。接下来，我们使用`Remove`方法。
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع صفوف الجدول المدمجة. استخدم الكود التالي:
+## 第 4 步：保存修改后的文档
+最后，我们需要将修改后的文档与合并的表格行一起保存。使用以下代码：
 
 ```csharp
-// احفظ المستند المعدل
+//保存修改后的文件
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+请务必为输出文档指定正确的路径和文件名。
 
-### عينة من التعليمات البرمجية المصدر لـ Combine Rows باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 合并行的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
-	// سيتم إلحاق الصفوف من الجدول الثاني بنهاية الجدول الأول.
+	//第二个表中的行将附加到第一个表的末尾。
 	Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
 	Table secondTable = (Table) doc.GetChild(NodeType.Table, 1, true);
-	// إلحاق كافة الصفوف من الجدول الحالي بالجداول التالية
-	// مع عدد الخلايا المختلفة والعروض يمكن ضمها في جدول واحد.
+	//将当前表中的所有行附加到下一个表
+	//可以将具有不同单元格数和宽度的单元格合并到一个表中。
 	while (secondTable.HasChildNodes)
 		firstTable.Rows.Add(secondTable.FirstRow);
 	secondTable.Remove();
 	doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية دمج صفوف الجداول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك معالجة صفوف الجدول في مستندات Word برمجيًا. تتيح لك هذه الميزة دمج البيانات وتنظيمها في جدول بكفاءة.
+## 结论
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 合并 Word 文档中的表格行。通过遵循此分步指南并实施提供的 C# 代码，您可以以编程方式操作 Word 文档中的表格行。此功能允许您有效地将数据合并和组织到表格中。

@@ -1,36 +1,36 @@
 ---
-title: أدخل حقل نموذج إدخال النص
-linktitle: أدخل حقل نموذج إدخال النص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET لإدراج حقل نموذج إدخال النص في مستندات Word باستخدام هذا الدليل المفصل خطوة بخطوة.
+title: Inserisci il campo del modulo di immissione del testo
+linktitle: Inserisci il campo del modulo di immissione del testo
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come utilizzare Aspose.Words per .NET per inserire il campo del modulo di immissione del testo nei documenti di Word con questa guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-text-input-form-field/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سنستكشف كيفية استخدام ميزة إدراج حقل نموذج إدخال نص في Aspose.Words for .NET لإضافة حقول نموذج إدخال النص ومعالجتها في مستندات Word باستخدام كود مصدر C #. تسمح حقول نموذج إدخال النص للمستخدمين بإدخال نص مخصص داخل المستند ، مما يجعلها مثالية لإنشاء نماذج واستبيانات تفاعلية. باتباع الإرشادات أدناه ، ستتمكن من إدراج حقول نموذج إدخال النص وتخصيصها بسهولة في مستنداتك. هيا بنا نبدأ!
+In questa guida dettagliata, esploreremo come utilizzare la funzione Inserisci campo modulo di immissione testo in Aspose.Words per .NET per aggiungere e manipolare i campi modulo di immissione testo nei documenti Word utilizzando il codice sorgente C#. I campi del modulo di immissione del testo consentono agli utenti di inserire testo personalizzato all'interno di un documento, rendendoli ideali per la creazione di moduli e questionari interattivi. Seguendo le istruzioni riportate di seguito, sarai in grado di inserire e personalizzare facilmente i campi del modulo di immissione del testo nei tuoi documenti. Iniziamo!
 
-## مقدمة عن ميزة "إدراج حقل نموذج إدخال النص" في Aspose.Words for .NET
+## Introduzione alla funzione Inserisci campo modulo di immissione testo in Aspose.Words per .NET
 
-تتيح لك ميزة "إدراج حقل نموذج إدخال النص" في Aspose.Words for .NET إضافة حقول نموذج إدخال نص برمجيًا إلى مستندات Word الخاصة بك. توفر حقول النموذج هذه عنصرًا تفاعليًا حيث يمكن للمستخدمين إدخال نص أو بيانات مخصصة.
+La funzione Inserisci campo modulo di immissione testo in Aspose.Words per .NET consente di aggiungere campi modulo di immissione testo a livello di codice ai documenti di Word. Questi campi modulo forniscono un elemento interattivo in cui gli utenti possono inserire testo o dati personalizzati.
 
-## فهم متطلبات استخدام الميزة
+## Comprensione dei requisiti per l'utilizzo della funzione
 
-قبل متابعة التنفيذ ، تأكد من استيفاء المتطلبات التالية:
+Prima di procedere con l'implementazione, assicurarsi di soddisfare i seguenti requisiti:
 
-1. تم تثبيت Aspose.Words for .NET library في مشروعك.
-2. المعرفة الأساسية بلغة البرمجة C #.
-3. مستند Word موجود أو مستند جديد لإدراج حقل نموذج إدخال النص.
+1. Aspose.Words per la libreria .NET installata nel tuo progetto.
+2. Conoscenza base del linguaggio di programmazione C#.
+3. Un documento Word esistente o un nuovo documento per inserire il campo del modulo di input del testo.
 
-تأكد من توفر هذه المتطلبات الأساسية للمضي قدمًا بسلاسة.
+Assicurati di disporre di questi prerequisiti per procedere senza intoppi.
 
-## دليل تفصيلي خطوة بخطوة لتنفيذ إدراج حقل نموذج إدخال نص باستخدام كود مصدر C #
+## Guida dettagliata all'implementazione del campo Inserisci modulo di immissione testo utilizzando il codice sorgente C#
 
-اتبع الخطوات أدناه لتنفيذ ميزة إدراج حقل نموذج إدخال النص باستخدام كود مصدر C # المقدم:
+Seguire i passaggi seguenti per implementare la funzionalità Inserisci campo modulo di immissione testo utilizzando il codice sorgente C# fornito:
 
-### الخطوة 1: تهيئة مستند إنشاء المستندات
+### Passaggio 1: inizializzazione del documento e del generatore di documenti
 
-للبدء ، قم بتهيئة المستند ومنشئ المستندات. يُعد منشئ المستندات أداة قوية توفرها Aspose.Words for .NET والتي تتيح لنا إنشاء مستندات Word ومعالجتها برمجيًا. استخدم مقتطف الشفرة التالي:
+Per iniziare, inizializza il documento e il generatore di documenti. Il generatore di documenti è un potente strumento fornito da Aspose.Words per .NET che ci consente di costruire e manipolare documenti Word a livello di codice. Utilizza il seguente frammento di codice:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,31 +39,31 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-### الخطوة 2: إدخال حقل نموذج إدخال النص
+### Passaggio 2: inserimento del campo del modulo di immissione del testo
 
- بعد ذلك ، سنقوم بإدخال حقل نموذج إدخال النص في المستند باستخدام الامتداد`InsertTextInput` طريقة. تقبل هذه الطريقة معلمات مختلفة ، بما في ذلك اسم حقل النموذج ونوع حقل النموذج (في هذه الحالة ،`TextFormFieldType.Regular`والقيمة الافتراضية والحد الأقصى للطول. هذا مثال:
+ Successivamente, inseriremo il campo del modulo di immissione del testo nel documento utilizzando il file`InsertTextInput` metodo. Questo metodo accetta vari parametri, tra cui il nome del campo modulo, il tipo di campo modulo (in questo caso,`TextFormFieldType.Regular`), il valore predefinito e la lunghezza massima. Ecco un esempio:
 
 ```csharp
 builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
 ```
 
-سوف يقوم الكود أعلاه بإدراج حقل نموذج إدخال نص بالاسم "TextInput" ، والقيمة الافتراضية "Hello" ، ولا يوجد حد أقصى للطول.
+Il codice precedente inserirà un campo del modulo di input di testo con il nome "TextInput", un valore predefinito di "Hello" e nessuna limitazione di lunghezza massima.
 
-### الخطوة 3: حفظ المستند
+### Passaggio 3: salvare il documento
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Dopo aver inserito il campo del modulo di immissione del testo, salvare il documento nella posizione desiderata utilizzando il file`Save` metodo. Assicurati di fornire il percorso file appropriato:
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```
 
-سيحفظ هذا الرمز المستند مع حقل نموذج إدخال النص المدرج في الموقع المحدد.
+Questo codice salverà il documento con il campo del modulo di input del testo inserito nella posizione specificata.
 
-### مثال على شفرة المصدر لإدراج حقل نموذج إدخال نص باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per inserire il campo del modulo di immissione del testo utilizzando Aspose.Words per .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	
 	Document doc = new Document();

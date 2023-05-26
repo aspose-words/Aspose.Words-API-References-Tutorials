@@ -1,21 +1,21 @@
 ---
-title: تغيير مصدر ثقافة تحديث الحقل
-linktitle: تغيير مصدر ثقافة تحديث الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: تغيير مصدر ثقافة تحديث الحقل ، دليل خطوة بخطوة لتعديل مصدر الثقافة في Aspose.Words for .NET.
+title: Alanı Değiştir Kültür Kaynağını Güncelle
+linktitle: Alanı Değiştir Kültür Kaynağını Güncelle
+second_title: Aspose.Words for .NET API Referansı
+description: Alanı Değiştir Kültür Kaynağını Güncelle, Aspose.Words for .NET'te kültür kaynağını değiştirmek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/change-field-update-culture-source/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال عملية تغيير مصدر ثقافة التحديث الميداني في مستندات Word باستخدام Aspose.Words for .NET. من خلال تعديل مصدر الثقافة ، يمكنك التحكم في تنسيق التاريخ أثناء تحديث الحقل وعمليات دمج البريد. سنزودك بشفرة المصدر C # الضرورية والتعليمات خطوة بخطوة لتحقيق ذلك.
+Bu öğreticide, Aspose.Words for .NET kullanarak Word belgelerindeki alan güncelleme kültürü kaynağını değiştirme sürecinde size rehberlik edeceğiz. Kültür kaynağını değiştirerek, alan güncelleme ve adres mektup birleştirme işlemleri sırasında tarih biçimlendirmesini kontrol edebilirsiniz. Bunu başarmak için size gerekli C# kaynak kodunu ve adım adım yönergeleri sağlayacağız.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند و DocumentBuilder
-للبدء ، قم بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+## 1. Adım: Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfının bir örneğini ve DocumentBuilder nesnesini oluşturun:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,8 +23,8 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل محتوى بلغة محددة
-بعد ذلك ، قم بتعيين الإعدادات المحلية على اللغة الألمانية وأدخل الحقول بتنسيق التاريخ:
+## 2. Adım: Belirli Yerel Ayarla İçeriği Ekleyin
+Ardından, yerel ayarı Almanca olarak ayarlayın ve tarih biçimlendirmeli alanlar ekleyin:
 
 ```csharp
 builder.Font.LocaleId = 1031;
@@ -33,35 +33,35 @@ builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 ```
 
-في الكود أعلاه ، قمنا بتعيين لغة الخط إلى الألمانية (معرف اللغة 1031) وقمنا بإدخال حقلين بتنسيق تاريخ محدد.
+Yukarıdaki kodda, yazı tipi yerel ayarını Almanca (yerel ayar kimliği 1031) olarak ayarlıyoruz ve belirli tarih biçimlendirmesiyle iki alan ekliyoruz.
 
-## الخطوة 3: تغيير مصدر ثقافة تحديث الحقل
-لتغيير مصدر ثقافة تحديث الحقل ، استخدم فئة FieldOptions:
+## 3. Adım: Alanı Değiştir Kültür Kaynağını Güncelleyin
+Alan güncelleme kültürü kaynağını değiştirmek için FieldOptions sınıfını kullanın:
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 ```
 
-في هذا المثال ، قمنا بتعيين الثقافة المستخدمة أثناء التحديث الميداني ليتم اختيارها من الثقافة المستخدمة في الحقل.
+Bu örnekte, alan tarafından kullanılan kültürden seçilecek alan güncellemesi sırasında kullanılan kültürü ayarladık.
 
-## الخطوة 4: قم بإجراء دمج المراسلات
-نفذ عملية دمج المراسلات وحدد قيمة التاريخ للحقل "Date2":
+## Adım 4: Adres Mektup Birleştirme Gerçekleştirin
+Bir adres-mektup birleştirme işlemi gerçekleştirin ve "Tarih2" alanı için tarih değerini belirtin:
 
 ```csharp
 doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
 ```
 
-في مقتطف الشفرة هذا ، نقوم بتنفيذ عملية دمج البريد وتوفير قيمة DateTime للحقل "Date2".
+Bu kod parçacığında adres-mektup birleştirme işlemini yürütüyoruz ve "Date2" alanı için bir DateTime değeri veriyoruz.
 
-## الخطوة 5: احفظ المستند
-احفظ المستند المعدل في ملف باستخدام طريقة Save لفئة Document:
+## 5. Adım: Belgeyi Kaydedin
+Değiştirilen belgeyi Document sınıfının Save yöntemini kullanarak bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
-### مثال رمز المصدر لتغيير مصدر ثقافة تحديث الحقل باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لتغيير مصدر ثقافة تحديث الحقل في مستندات Word باستخدام Aspose.Words for .NET:
+### Aspose.Words for .NET kullanarak Alan Güncelleme Kültür Kaynağını Değiştirmek için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak Word belgelerinde alan güncelleme kültürü kaynağını değiştirmek için eksiksiz kaynak kodu burada:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -80,5 +80,5 @@ doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تغيير مصدر ثقافة التحديث الميداني في مستندات Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن التحكم في الثقافة المستخدمة لتنسيق التاريخ أثناء عمليات تحديث الحقل ودمج البريد. قم بتخصيص مصدر الثقافة وفقًا لمتطلباتك لضمان تاريخ دقيق ومتسق.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak Word belgelerinde alan güncelleme kültürü kaynağını nasıl değiştireceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak, alan güncelleme ve adres mektup birleştirme işlemleri sırasında tarih biçimlendirme için kullanılan kültürü artık kontrol edebilirsiniz. Doğru ve tutarlı tarih sağlamak için kültür kaynağını gereksinimlerinize göre özelleştirin.

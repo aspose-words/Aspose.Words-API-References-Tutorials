@@ -1,78 +1,78 @@
 ---
-title: جدول متداخل
-linktitle: جدول متداخل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET.
+title: Kapslad tabell
+linktitle: Kapslad tabell
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du skapar en kapslad tabell i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-tables/nested-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من إنشاء جداول متداخلة في مستندات Word الخاصة بك برمجيًا.
+I den här handledningen kommer vi att lära oss hur man skapar en kapslad tabell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna skapa kapslade tabeller i dina Word-dokument programmatiskt.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Steg 1: Projektinställning
+1. Starta Visual Studio och skapa ett nytt C#-projekt.
+2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Steg 2: Skapa dokumentet och initialisera dokumentgeneratorn
+För att börja arbeta med dokument- och dokumentgeneratorn, följ dessa steg:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Skapande av dokument
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Initiera dokumentgeneratorn
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog.
 
-## الخطوة 3: بناء الجدول المتداخل
-بعد ذلك ، سنبني الجدول المتداخل عن طريق إدراج الخلايا في الجدول الخارجي وإنشاء جدول جديد داخل الخلية الأولى. استخدم الكود التالي:
+## Steg 3: Bygg det kapslade bordet
+Därefter bygger vi den kapslade tabellen genom att infoga celler i den yttre tabellen och skapa en ny tabell inuti den första cellen. Använd följande kod:
 
 ```csharp
-// أدخل الخلية الأولى من الجدول الخارجي
+// Infoga den första cellen i den yttre tabellen
 Cell cell = builder. InsertCell();
 builder.Writeln("Cell 1 of the outer table");
 
-// أدخل الخلية الثانية من الجدول الخارجي
+// Infoga den andra cellen i den yttre tabellen
 builder. InsertCell();
 builder.Writeln("Cell 2 of the outer table");
 
-// إنهاء الجدول الخارجي
+// Avslutning av ytterbordet
 builder. EndTable();
 
-// الانتقال إلى الخلية الأولى في الجدول الخارجي
+// Flytta till den första cellen i den yttre tabellen
 builder.MoveTo(cell.FirstParagraph);
 
-// بناء الجدول الداخلي
+// Bygg det inre bordet
 builder. InsertCell();
 builder.Writeln("Cell 1 of inner table");
 builder. InsertCell();
 builder.Writeln("Cell 2 of the inner table");
 
-// نهاية الجدول الداخلي
+// Slutet på det inre bordet
 builder. EndTable();
 ```
 
-هنا نستخدم منشئ المستندات لإدراج الخلايا والمحتوى في الجدول الخارجي. ثم ننقل مؤشر منشئ المستندات إلى الخلية الأولى من الجدول الخارجي ونبني جدولًا جديدًا بداخله عن طريق إدراج الخلايا والمحتوى.
+Här använder vi dokumentbyggaren för att infoga celler och innehåll i den yttre tabellen. Sedan flyttar vi dokumentbyggaren till den första cellen i den yttre tabellen och bygger en ny tabell inuti genom att infoga celler och innehåll.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل بالجدول المتداخل. استخدم الكود التالي:
+## Steg 4: Spara det ändrade dokumentet
+Slutligen måste vi spara det modifierade dokumentet med den kapslade tabellen. Använd följande kod:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح وملف الاسم لمستند الإخراج.
+Var noga med att ange rätt sökväg och namnfil för utdatadokumentet.
 
-### نموذج التعليمات البرمجية المصدر للجدول المتداخل باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Nested Table med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -81,12 +81,12 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.Writeln("Outer Table Cell 1");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
-	// هذا الاستدعاء مهم لإنشاء جدول متداخل داخل الجدول الأول.
-	// بدون هذا الاستدعاء ، سيتم إلحاق الخلايا المدرجة أدناه بالجدول الخارجي.
+	// Detta anrop är viktigt för att skapa en kapslad tabell i den första tabellen.
+	// Utan detta anrop kommer cellerna som infogas nedan att läggas till i den yttre tabellen.
 	builder.EndTable();
-	// الانتقال إلى الخلية الأولى في الجدول الخارجي.
+	// Flytta till den första cellen i den yttre tabellen.
 	builder.MoveTo(cell.FirstParagraph);
-	// بناء الجدول الداخلي.
+	// Bygg det inre bordet.
 	builder.InsertCell();
 	builder.Writeln("Inner Table Cell 1");
 	builder.InsertCell();
@@ -95,5 +95,5 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك إنشاء جداول متداخلة وفقًا لاحتياجاتك الخاصة في مستندات Word الخاصة بك برمجيًا.
+## Slutsats
+I den här handledningen lärde vi oss hur man skapar en kapslad tabell i ett Word-dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide och implementera den medföljande C#-koden kan du skapa kapslade tabeller enligt dina specifika behov i dina Word-dokument programmatiskt.

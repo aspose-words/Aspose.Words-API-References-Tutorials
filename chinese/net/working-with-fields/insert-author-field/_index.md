@@ -1,64 +1,64 @@
 ---
-title: أدخل حقل المؤلف
-linktitle: أدخل حقل المؤلف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل AUTHOR في مستندات Word باستخدام Aspose.Words for .NET. حدد اسم المؤلف لتخصيص مستنداتك.
+title: 插入作者字段
+linktitle: 插入作者字段
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在您的 Word 文档中插入作者字段。指定作者姓名以个性化您的文档。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/insert-author-field/
 ---
 
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود المصدر C # أدناه ، والذي يستخدم ميزة "إدراج حقل مؤلف" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+这是一个分步指南，用于解释下面的 C# 源代码，它使用 Aspose.Words for .NET 的“插入作者字段”功能。确保仔细执行每个步骤以获得所需的结果。
 
-## الخطوة 1: إعداد دليل المستند
+## 第 1 步：文档目录设置
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+在提供的代码中，您必须指定文档的目录。将值“YOUR DOCUMENT DIRECTORY”替换为您的文档目录的适当路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## 第 2 步：创建文档和段落
 
-نبدأ بإنشاء مستند جديد وجلب الفقرة الأولى.
+我们首先创建一个新文档并获取第一段。
 
 ```csharp
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## الخطوة 3: أدخل حقل AUTHOR
+## 第 3 步：插入 AUTHOR 字段
 
- نحن نستخدم ال`AppendField()` طريقة لإدراج حقل AUTHOR في الفقرة.
+我们使用`AppendField()`在段落中插入 AUTHOR 字段的方法。
 
 ```csharp
 FieldAuthor field = (FieldAuthor)para.AppendField(FieldType.FieldAuthor, false);
 ```
 
- ثم نقوم بتكوين المجال`AuthorName` الخاصية لتحديد اسم المؤلف.
+然后我们配置字段的`AuthorName`属性来指定作者的名字。
 
 ```csharp
 field. AuthorName = "Test1";
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+最后，我们称`Update()`更新字段的方法。
 
 ```csharp
 field. Update();
 ```
 
-### مثال على شفرة المصدر لإدخال حقل AUTHOR مع Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 插入 AUTHOR 字段的源代码示例
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة.
+//文档创建。
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-// أدخل حقل AUTHOR.
+//插入作者字段。
 FieldAuthor field = (FieldAuthor)para.AppendField(FieldType.FieldAuthor, false);
 
 field. AuthorName = "Test1";
@@ -68,6 +68,6 @@ field. Update();
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأدخلنا حقل AUTHOR ، وضبطنا اسم المؤلف ، وحفظنا المستند باسم ملف محدد.
+在本例中，我们创建了一个新文档，插入了一个 AUTHOR 字段，配置了作者姓名，并以指定的文件名保存了该文档。
 
-بهذا يختتم دليلنا حول استخدام ميزة "إدراج حقل المؤلف" مع Aspose.Words for .NET.
+我们关于使用 Aspose.Words for .NET 的“插入作者字段”功能的指南到此结束。

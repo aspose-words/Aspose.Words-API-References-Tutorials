@@ -1,67 +1,67 @@
 ---
-title: تحويل الحقول في المستند
-linktitle: تحويل الحقول في المستند
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحويل حقول المستند إلى نص باستخدام Aspose.Words for .NET.
+title: Belgedeki Alanları Dönüştür
+linktitle: Belgedeki Alanları Dönüştür
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak belge alanlarını metne dönüştürmek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/convert-fields-in-document/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك دليلًا خطوة بخطوة باستخدام وظيفة ConvertFieldsInDocument في Aspose.Words لبرنامج .NET. سنشرح بالتفصيل الكود المصدري C # اللازم لهذه الميزة ونقدم عينة من تنسيقات إخراج تخفيض السعر.
+Bu öğreticide, Aspose.Words for .NET yazılımının ConvertFieldsInDocument işlevini kullanarak size adım adım kılavuzluk edeceğiz. Bu özellik için gereken C# kaynak kodunu ayrıntılı olarak açıklayacağız ve örnek işaretleme çıktı biçimleri sağlayacağız.
 
-## الخطوة 1: المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+## 1. Adım: Önkoşullar
+Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET مثبتة على جهاز التطوير الخاص بك.
-- مستند Word يحتوي على حقول مرتبطة تريد تحويلها إلى نص.
-- دليل مستند حيث يمكنك حفظ المستند المحول.
+- Geliştirme makinenizde kurulu Aspose.Words for .NET.
+- Metne dönüştürmek istediğiniz bağlantılı alanları içeren bir Word belgesi.
+- Dönüştürülen belgeyi kaydedebileceğiniz bir belge dizini.
 
-## الخطوة الثانية: تهيئة البيئة
-تأكد من تكوين بيئة التطوير الخاصة بك بشكل صحيح لاستخدام Aspose.Words لـ .NET. قم باستيراد مساحات الأسماء الضرورية وقم بتعيين المسار إلى دليل المستندات.
+## 2. Adım: Ortamı ayarlama
+Aspose.Words for .NET'i kullanmak için geliştirme ortamınızı doğru şekilde yapılandırdığınızdan emin olun. Gerekli ad alanlarını içe aktarın ve belgeler dizininize giden yolu ayarlayın.
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 3: قم بتحميل المستند
- استخدم ال`Document` class of Aspose.Words لتحميل مستند Word الذي يحتوي على الحقول المرتبطة التي تريد تحويلها.
+## 3. Adım: Belgeyi yükleyin
+ Kullan`Document` dönüştürmek istediğiniz bağlantılı alanları içeren Word belgesini yüklemek için Aspose.Words sınıfı.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");
 ```
 
-## الخطوة 4: تحويل الحقول المرتبطة إلى نص
- استخدم ال`Unlink()` طريقة لتحويل جميع حقول النوع "IF" التي تمت مواجهتها في المستند إلى نص. تُستخدم هذه الطريقة لتحويل الحقول المرتبطة إلى محتوى نصي.
+## 4. Adım: İlişkili alanları metne dönüştürün
+ Kullan`Unlink()` belgede karşılaşılan tüm "IF" tipi alanları metne dönüştürme yöntemi. Bu yöntem, bağlantılı alanları metin içeriklerine dönüştürmek için kullanılır.
 
 ```csharp
 doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f.Unlink());
 ```
 
-## الخطوة 5: احفظ المستند المحول
- استخدم ال`Save()` طريقة لحفظ المستند مع الحقول المحولة إلى نص في دليل المستند المحدد.
+## 5. Adım: Dönüştürülen belgeyi kaydedin
+ Kullan`Save()` Belgeyi, belirtilen belge dizininde metne dönüştürülmüş alanlarla kaydetme yöntemi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 ```
 
-## نموذج التعليمات البرمجية المصدر لـ ConvertFieldsInDocument باستخدام Aspose.Words for .NET
+## Aspose.Words for .NET kullanan ConvertFieldsInDocument için örnek kaynak kodu
 
-فيما يلي رمز المصدر الكامل لوظيفة ConvertFieldsInDocument:
+İşte ConvertFieldsInDocument işlevi için eksiksiz kaynak kodu:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(MyDir + "Linked fields.docx");
 
-// قم بتمرير المعلمات المناسبة لتحويل جميع حقول IF التي تمت مواجهتها في المستند (بما في ذلك الرؤوس والتذييلات) إلى نص.
+// Belgede karşılaşılan tüm IF alanlarını (üstbilgiler ve altbilgiler dahil) metne dönüştürmek için uygun parametreleri iletin.
 doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f.Unlink());
 
-// احفظ المستند مع الحقول التي تم تحويلها إلى قرص
+// Belgeyi diske dönüştürülmüş alanlarla kaydedin
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 ```
 
-## خاتمة
-تعد وظيفة Aspose.Words for .NET's ConvertFieldsInDocument وظيفة أداة قوية لتحويل الحقول المرتبطة في مستند Word إلى نص. 
+## Çözüm
+Aspose.Words for .NET'in ConvertFieldsInDocument işlevi, bir Word belgesindeki bağlantılı alanları metne dönüştürmek için güçlü bir araçtır. 

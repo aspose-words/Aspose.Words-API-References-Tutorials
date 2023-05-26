@@ -1,56 +1,56 @@
 ---
-title: تعمل حقول النموذج مع الخصائص
-linktitle: تعمل حقول النموذج مع الخصائص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التعامل مع خصائص حقل النموذج في مستندات Word باستخدام Aspose.Words for .NET.
+title: Formulärfält fungerar med egenskaper
+linktitle: Formulärfält fungerar med egenskaper
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du arbetar med formulärfältsegenskaper i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-formfields/form-fields-work-with-properties/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية التعامل مع خصائص حقل النموذج في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+I denna steg-för-steg handledning kommer vi att guida dig om hur du arbetar med formulärfältsegenskaper i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
-## الخطوة 1: تهيئة كائن المستند
+## Steg 1: Initiera dokumentobjektet
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق توفير المسار إلى المستند المصدر الذي يحتوي على حقول النموذج:
+ Initiera först`Document` objekt genom att ange sökvägen till ditt källdokument som innehåller formulärfält:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## الخطوة 2: الوصول إلى حقل النموذج
+## Steg 2: Få åtkomst till ett formulärfält
 
-بعد ذلك ، قم باسترداد حقل نموذج معين من مجموعة حقول نموذج المستند. في هذا المثال ، نصل إلى حقل النموذج في الفهرس 3:
+Hämta sedan ett specifikt formulärfält från dokumentets formulärfältsamling. I det här exemplet kommer vi åt formulärfältet vid index 3:
 
 ```csharp
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## الخطوة 3: العمل مع خصائص حقل النموذج
+## Steg 3: Arbeta med formulärfältegenskaper
 
- يمكنك معالجة الخصائص المختلفة لحقل النموذج بناءً على نوعه. في هذا المثال ، نتحقق مما إذا كان حقل النموذج من النوع`FieldType.FieldFormTextInput` وضبطها`Result` بناء على ذلك:
+ Du kan manipulera olika egenskaper för formulärfältet baserat på dess typ. I det här exemplet kontrollerar vi om formulärfältet är av typen`FieldType.FieldFormTextInput` och ställ in dess`Result` egendom i enlighet därmed:
 
 ```csharp
 if (formField.Type == FieldType.FieldFormTextInput)
     formField.Result = "My name is " + formField.Name;
 ```
 
-لا تتردد في استكشاف خصائص أخرى وإجراء عمليات مختلفة بناءً على متطلباتك المحددة.
+Utforska gärna andra fastigheter och utför olika operationer utifrån dina specifika krav.
 
-## الخطوة 4: حفظ المستند
+## Steg 4: Spara dokumentet
 
-أخيرًا ، احفظ المستند المعدل:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-هذا كل شيء! لقد نجحت في العمل مع خصائص حقل النموذج في مستند Word باستخدام Aspose.Words for .NET.
+Det är allt! Du har framgångsrikt arbetat med formulärfältsegenskaper i ett Word-dokument med Aspose.Words för .NET.
 
-### مثال على كود المصدر لحقول النموذج العمل مع الخصائص باستخدام Aspose.Words for .NET
+### Exempel på källkod för formulärfält Arbeta med egenskaper med Aspose.Words för .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -63,4 +63,4 @@ if (formField.Type == FieldType.FieldFormTextInput)
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Använd gärna den här koden i dina egna projekt och modifiera den efter dina specifika krav.

@@ -1,50 +1,50 @@
 ---
-title: تطبيق نمط الفقرة
-linktitle: تطبيق نمط الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق نمط فقرة باستخدام Aspose.Words for .NET.
+title: Aplicar estilo de párrafo
+linktitle: Aplicar estilo de párrafo
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a aplicar un estilo de párrafo con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/document-formatting/apply-paragraph-style/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تطبيق نمط فقرة باستخدام Aspose.Words for .NET. اتبع الخطوات أدناه لفهم الكود المصدري وتطبيق نمط الفقرة.
+En este tutorial, lo guiaremos a través de cómo aplicar un estilo de párrafo usando Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar el estilo de párrafo.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Paso 1: Crear y configurar el documento
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Para comenzar, cree un nuevo documento y un objeto DocumentBuilder asociado. Así es cómo:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين نمط الفقرة
+## Paso 2: Configurar el estilo de párrafo
 
-سنقوم الآن بتكوين نمط الفقرة باستخدام معرف النمط المدمج. إليك الطريقة:
+Ahora configuraremos el estilo de párrafo utilizando el identificador de estilo integrado. Así es cómo:
 
 ```csharp
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;
 ```
 
-## الخطوة 3: أضف محتوى
+## Paso 3: Agregar contenido
 
-سنقوم بإضافة محتوى إلى الفقرة. إليك الطريقة:
+Vamos a añadir contenido al párrafo. Así es cómo:
 
 ```csharp
 builder.Write("Hello");
 doc.Save(dataDir + "DocumentFormatting.ApplyParagraphStyle.docx");
 ```
 
-### مثال على شفرة المصدر لتطبيق Paragraph Style باستخدام Aspose.Words for .NET
+### Código fuente de ejemplo para Aplicar estilo de párrafo usando Aspose.Words para .NET
 
-فيما يلي رمز المصدر الكامل لميزة "تطبيق نمط الفقرة" مع Aspose.Words for .NET:
+Aquí está el código fuente completo para la función Aplicar estilo de párrafo con Aspose.Words para .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -56,5 +56,5 @@ doc.Save(dataDir + "DocumentFormatting.ApplyParagraphStyle.docx");
 	
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تطبيق نمط فقرة باستخدام Aspose.Words for .NET.
+Con este código podrás aplicar un estilo de párrafo usando Aspose.Words para .NET.
 

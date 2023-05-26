@@ -1,30 +1,30 @@
 ---
-title: أضف شكل المجموعة
-linktitle: أضف شكل المجموعة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة شكل مجموعة بأشكال متعددة إلى مستند Word باستخدام Aspose.Words for .NET.
+title: 添加组形状
+linktitle: 添加组形状
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将具有多个形状的组形状添加到 Word 文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-shapes/add-group-shape/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إضافة شكل مجموعة يحتوي على أشكال متعددة إلى مستند Word باستخدام Aspose.Words for .NET. تسمح لك أشكال المجموعة بدمج أشكال متعددة ومعالجتها ككيان واحد.
+本教程介绍如何使用 Aspose.Words for .NET 将包含多个形状的组形状添加到 Word 文档。组形状允许您将多个形状组合和操作为一个实体。
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## 先决条件
+要学习本教程，您需要具备以下条件：
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- 安装了 Aspose.Words for .NET 库。
+- C# 的基本知识和使用 Word 文档。
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## 第 1 步：设置文档目录
+首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`使用要保存文档的目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد وشكل جماعي
- قم بإنشاء مثيل جديد لملف`Document` فئة و`GroupShape` كائن للعمل مع المستند.
+## 第 2 步：创建新文档和 GroupShape
+创建一个新的实例`Document`类和`GroupShape`对象来处理文档。
 
 ```csharp
 Document doc = new Document();
@@ -32,8 +32,8 @@ doc.EnsureMinimum();
 GroupShape groupShape = new GroupShape(doc);
 ```
 
-## الخطوة 3: إنشاء وإضافة أشكال إلى GroupShape
- قم بإنشاء أشكال فردية مثل`accentBorderShape` و`actionButtonShape` باستخدام`Shape` فصل. تخصيص خصائصهم حسب الرغبة. إلحاق هذه الأشكال بملف`groupShape` هدف.
+## 第 3 步：创建形状并将其添加到 GroupShape
+创建单独的形状，例如`accentBorderShape`和`actionButtonShape`使用`Shape`班级。根据需要自定义它们的属性。将这些形状附加到`groupShape`目的。
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -48,8 +48,8 @@ Shape actionButtonShape = new Shape(doc, ShapeType.ActionButtonBeginning)
 groupShape.AppendChild(actionButtonShape);
 ```
 
-## الخطوة 4: تعيين الأبعاد لشكل المجموعة
- قم بتعيين العرض والارتفاع وحجم التنسيق لملف`groupShape`.
+## 第 4 步：设置 GroupShape 的维度
+设置宽度、高度和坐标大小`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -57,25 +57,25 @@ groupShape.Height = 200;
 groupShape.CoordSize = new Size(200, 200);
 ```
 
-## الخطوة 5: أدخل GroupShape في المستند
- إنشاء`DocumentBuilder` الكائن وإدراج`groupShape` في المستند باستخدام ملف`InsertNode` طريقة.
+## 第 5 步：将 GroupShape 插入到文档中
+创建一个`DocumentBuilder`对象并插入`groupShape`使用`InsertNode`方法。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertNode(groupShape);
 ```
 
-## الخطوة 6: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save`طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithShapes.AddGroupShape.docx".
+## 第 6 步：保存文档
+使用 将文档保存到指定目录`Save`方法。提供具有适当文件扩展名的所需文件名。在本例中，我们将文档保存为“WorkingWithShapes.AddGroupShape.docx”。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-### مثال على شفرة المصدر لإضافة شكل المجموعة باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 添加组形状的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -96,4 +96,4 @@ doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 	doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إضافة شكل مجموعة يحتوي على أشكال متعددة إلى مستند Word الخاص بك باستخدام Aspose.W
+就是这样！您已使用 Aspose.W 成功地将包含多个形状的组形状添加到您的 Word 文档中

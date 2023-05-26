@@ -1,36 +1,36 @@
 ---
-title: تغيير حجم خطوط Wmf إلى حجم ملف التعريف
-linktitle: تغيير حجم خطوط Wmf إلى حجم ملف التعريف
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لضبط حجم خط WMF عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+title: Mettre à l'échelle les polices WMF à la taille du métafichier
+linktitle: Mettre à l'échelle les polices WMF à la taille du métafichier
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour ajuster la taille de la police WMF lors de la conversion en PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة WMF Font Scaling to Metafile Size مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تمكين أو تعطيل قياس خط WMF عند التحويل إلى PDF.
+Cet article fournit un guide étape par étape sur l'utilisation de la fonction de mise à l'échelle des polices WMF à la taille du métafichier avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. À la fin de ce didacticiel, vous serez en mesure de comprendre comment activer ou désactiver la mise à l'échelle des polices WMF lors de la conversion en PDF.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words pour .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
 
-## الخطوة 1: تحديد دليل المستند
+## Étape 1 : Définir le répertoire des documents
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Pour commencer, vous devez définir le chemin vers le répertoire où se trouvent vos documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel à votre répertoire de documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Étape 2 : Téléchargez le document
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "WMF with text.docx" ويقع في دليل المستندات المحدد.
+Ensuite, nous devons charger le document que nous voulons traiter. Dans cet exemple, nous supposons que le document s'appelle "WMF avec text.docx" et se trouve dans le répertoire de documents spécifié.
 
 ```csharp
 Document doc = new Document(dataDir + "WMF with text.docx");
 ```
 
-## الخطوة 3: تكوين خيارات عرض ملف التعريف
+## Étape 3 : Configurer les options de rendu des métafichiers
 
- لتمكين أو تعطيل تحجيم خط WMF إلى حجم ملف التعريف ، نحتاج إلى تكوين ملف`MetafileRenderingOptions` هدف. في هذا المثال ، نقوم بتعطيل تحجيم الخط عن طريق تعيين الامتداد`ScaleWmfFontsToMetafileSize` ملكية ل`false`.
+ Pour activer ou désactiver la mise à l'échelle des polices WMF à la taille du métafichier, nous devons configurer le`MetafileRenderingOptions` objet. Dans cet exemple, nous désactivons la mise à l'échelle des polices en définissant le paramètre`ScaleWmfFontsToMetafileSize` propriété à`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -39,31 +39,31 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-## الخطوة 4: تكوين خيارات حفظ كملف PDF مع خيارات عرض ملف التعريف
+## Étape 4 : Configurez les options d'enregistrement au format PDF avec les options de rendu des métafichiers
 
-أخيرًا ، يمكننا تكوين خيارات الحفظ إلى PDF باستخدام خيارات عرض ملف التعريف التي تم تكوينها مسبقًا.
+Enfin, nous pouvons configurer les options d'enregistrement au format PDF à l'aide des options de rendu de métafichier configurées précédemment.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 ```
 
-## الخطوة 5: احفظ المستند بصيغة PDF باستخدام خيارات عرض ملف التعريف
+## Étape 5 : Enregistrer le document au format PDF avec les options de rendu des métafichiers
 
-احفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Enregistrez le document au format PDF en utilisant les options d'enregistrement précédemment configurées.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تمكين أو تعطيل تحجيم خط WMF إلى حجم ملف التعريف عند التحويل
+C'est tout ! Vous avez activé ou désactivé avec succès la mise à l'échelle des polices WMF à la taille du métafichier lors de la conversion
 
-مستند PDF باستخدام Aspose.Words for .NET.
+un document PDF en utilisant Aspose.Words pour .NET.
 
-### مثال على شفرة المصدر لمقياس خطوط WMF إلى حجم ملف التعريف باستخدام Aspose.Words for .NET
+### Exemple de code source pour la mise à l'échelle des polices WMF à la taille du métafichier avec Aspose.Words pour .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "WMF with text.docx");
 
@@ -72,8 +72,8 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", 
 		ScaleWmfFontsToMetafileSize = false
 	};
 
-	// إذا تعذر على Aspose.Words عرض بعض سجلات ملف التعريف بشكل صحيح إلى رسومات متجهة
-	// ثم يعرض Aspose.Words ملف التعريف هذا إلى صورة نقطية.
+	// Si Aspose.Words ne peut pas restituer correctement certains des enregistrements de métafichier en graphiques vectoriels
+	// puis Aspose.Words restitue ce métafichier en bitmap.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);

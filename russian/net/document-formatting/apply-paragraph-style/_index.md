@@ -1,50 +1,50 @@
 ---
-title: تطبيق نمط الفقرة
-linktitle: تطبيق نمط الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق نمط فقرة باستخدام Aspose.Words for .NET.
+title: Применить стиль абзаца
+linktitle: Применить стиль абзаца
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как применить стиль абзаца с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/document-formatting/apply-paragraph-style/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تطبيق نمط فقرة باستخدام Aspose.Words for .NET. اتبع الخطوات أدناه لفهم الكود المصدري وتطبيق نمط الفقرة.
+В этом руководстве мы расскажем, как применить стиль абзаца с помощью Aspose.Words для .NET. Выполните следующие шаги, чтобы понять исходный код и применить стиль абзаца.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Шаг 1: Создание и настройка документа
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Для начала создайте новый документ и связанный с ним объект DocumentBuilder. Вот как:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين نمط الفقرة
+## Шаг 2. Настройка стиля абзаца
 
-سنقوم الآن بتكوين نمط الفقرة باستخدام معرف النمط المدمج. إليك الطريقة:
+Теперь мы настроим стиль абзаца, используя встроенный идентификатор стиля. Вот как:
 
 ```csharp
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;
 ```
 
-## الخطوة 3: أضف محتوى
+## Шаг 3. Добавьте контент
 
-سنقوم بإضافة محتوى إلى الفقرة. إليك الطريقة:
+Мы собираемся добавить содержимое в абзац. Вот как:
 
 ```csharp
 builder.Write("Hello");
 doc.Save(dataDir + "DocumentFormatting.ApplyParagraphStyle.docx");
 ```
 
-### مثال على شفرة المصدر لتطبيق Paragraph Style باستخدام Aspose.Words for .NET
+### Пример исходного кода для применения стиля абзаца с использованием Aspose.Words для .NET
 
-فيما يلي رمز المصدر الكامل لميزة "تطبيق نمط الفقرة" مع Aspose.Words for .NET:
+Вот полный исходный код функции «Применить стиль абзаца» в Aspose.Words для .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Путь к каталогу документов.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -56,5 +56,5 @@ doc.Save(dataDir + "DocumentFormatting.ApplyParagraphStyle.docx");
 	
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تطبيق نمط فقرة باستخدام Aspose.Words for .NET.
+С помощью этого кода вы сможете применить стиль абзаца, используя Aspose.Words для .NET.
 

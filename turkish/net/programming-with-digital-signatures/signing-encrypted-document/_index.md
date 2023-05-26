@@ -1,54 +1,54 @@
 ---
-title: توقيع وثيقة مشفرة
-linktitle: توقيع وثيقة مشفرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التوقيع رقميًا على مستند مشفر باستخدام Aspose.Words for .NET.
+title: Şifrelenmiş Belgeyi İmzalama
+linktitle: Şifrelenmiş Belgeyi İmzalama
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile şifrelenmiş bir belgeyi dijital olarak nasıl imzalayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-digital-signatures/signing-encrypted-document/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات استخدام ميزة توقيع مستند مشفر باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة التوقيع رقميًا على مستند Word المشفر باستخدام كلمة مرور فك التشفير. اتبع الخطوات التالية:
+Bu eğitimde, Aspose.Words for .NET ile şifrelenmiş bir belgeyi imzalama özelliğini kullanma adımlarında size rehberlik edeceğiz. Bu özellik, bir şifre çözme parolası kullanılarak şifrelenmiş bir Word belgesini dijital olarak imzalamanıza olanak tanır. Aşağıdaki adımları takip et:
 
-## الخطوة 1: تعيين خيارات التوقيع
+## 1. Adım: İmza Seçeneklerini Ayarlama
 
-قم بإنشاء مثيل لفئة SignOptions وقم بتعيين كلمة مرور فك التشفير:
+SignOptions sınıfının bir örneğini oluşturun ve şifre çözme parolasını ayarlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionpassword" };
 ```
 
-تأكد من تحديد كلمة مرور فك التشفير الصحيحة للمستند المشفر.
+Şifrelenmiş belgeniz için doğru şifre çözme parolasını belirttiğinizden emin olun.
 
-## الخطوة الثانية: تحميل الشهادة
+## 2. Adım: Sertifikanın yüklenmesi
 
-ابدأ بتحميل شهادة التوقيع باستخدام فئة CertificateHolder:
+CertificateHolder sınıfını kullanarak imzalama sertifikasını yükleyerek başlayın:
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-تأكد من تحديد المسار الصحيح لشهادتك وكلمة المرور المرتبطة بها.
+Sertifikanızın ve ilişkili parolanızın doğru yolunu belirttiğinizden emin olun.
 
-## الخطوة الثالثة: توقيع الوثيقة المشفرة
+## 3. Adım: Şifrelenmiş belgeyi imzalama
 
-استخدم فئة DigitalSignatureUtil لتوقيع المستند المشفر:
+Şifreli belgeyi imzalamak için DigitalSignatureUtil sınıfını kullanın:
 
 ```csharp
 DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
 	certHolder, signOptions);
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند المشفر والمستند الموقع والشهادة.
+Şifreli belge, imzalı belge ve sertifika için doğru yolları belirttiğinizden emin olun.
 
-### مثال على شفرة المصدر لتوقيع المستند المشفر باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Şifrelenmiş Belgeyi İmzalamak için örnek kaynak kodu
 
-فيما يلي رمز المصدر الكامل لتوقيع مستند مشفر باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET ile şifrelenmiş bir belgeyi imzalamak için eksiksiz kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
 
@@ -59,5 +59,5 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document
 	
 
 ```
-باتباع هذه الخطوات ، يمكنك بسهولة توقيع مستند Word مشفر باستخدام Aspose.Words for .NET.
+Bu adımları izleyerek şifreli bir Word belgesini Aspose.Words for .NET ile kolayca imzalayabilirsiniz.
 

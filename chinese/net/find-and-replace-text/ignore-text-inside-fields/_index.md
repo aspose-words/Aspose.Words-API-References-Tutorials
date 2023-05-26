@@ -1,88 +1,88 @@
 ---
-title: تجاهل النص داخل الحقول
-linktitle: تجاهل النص داخل الحقول
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة "تجاهل النص داخل الحقول" في Aspose.Words for .NET.
+title: 忽略字段内的文本
+linktitle: 忽略字段内的文本
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 的“忽略字段内的文本”功能。
 type: docs
 weight: 10
 url: /zh/net/find-and-replace-text/ignore-text-inside-fields/
 ---
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Ignore Text Inside Fields في مكتبة Aspose.Words for .NET. هذه الميزة مفيدة عندما نريد تجاهل النص داخل الحقول عند معالجة المستندات.
+在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的忽略字段内的文本功能。当我们想在操作文档时忽略字段内的文本时，此功能很有用。
 
-## المتطلبات الأساسية
+## 先决条件
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# 语言的基础知识。
+- 安装了 Aspose.Words 库的 .NET 开发环境。
 
-## الخطوة الأولى: إنشاء مستند جديد
+## 第 1 步：创建新文档
 
- قبل أن نبدأ في معالجة النص داخل الحقول ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+在开始操作字段内的文本之前，我们需要使用 Aspose.Words for .NET 创建一个新文档。这可以通过实例化一个`Document`目的：
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: إدخال حقل يحتوي على نص بداخله
+## 第 2 步：插入一个包含文本的字段
 
- بمجرد أن نحصل على مستند ، يمكننا إدخال حقل يحتوي على نص بداخله باستخدام ملف`DocumentBuilder` هدف. على سبيل المثال ، لإدراج حقل "INCLUDETEXT" مع النص "Text in field" ، يمكننا استخدام`InsertField` طريقة:
+一旦我们有了一个文档，我们就可以在其中插入一个包含文本的字段，使用`DocumentBuilder`目的。例如，要插入带有文本“Text in field”的“INCLUDETEXT”字段，我们可以使用`InsertField`方法：
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
-## الخطوة 3: استخدام وظيفة Ignore Text Inside Fields
+## 第 3 步：使用忽略字段内的文本功能
 
- لتجاهل النص داخل الحقول في العمليات اللاحقة ، يمكننا استخدام`FindReplaceOptions` كائن وتعيين`IgnoreFields` ملكية ل`true`:
+要在后续操作中忽略字段内的文本，我们可以使用`FindReplaceOptions`对象并设置`IgnoreFields`财产给`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
 
-## الخطوة 4: استخدام التعبيرات النمطية للبحث والاستبدال
+## 第 4 步：使用正则表达式进行搜索和替换
 
-لإجراء عمليات البحث والاستبدال على نص المستند ، سنستخدم التعبيرات العادية. في مثالنا ، سنبحث عن جميع تكرارات الحرف "e" ونستبدلها بعلامة النجمة "* ". سنستخدم .NET`Regex` فئة لهذا:
+要对文档的文本执行搜索和替换操作，我们将使用正则表达式。在我们的示例中，我们将搜索所有出现的字母“e”并将它们替换为星号“*“。我们将使用 .NET 的`Regex`为此类：
 
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## الخطوة 5: عرض إخراج المستند المعدل
+## 第 5 步：查看修改后的文档输出
 
-بعد تطبيق البحث والاستبدال ، يمكننا عرض المحتوى الذي تم تغييره في المستند باستخدام`GetText` طريقة:
+应用搜索和替换后，我们可以使用`GetText`方法：
 
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## الخطوة 6: تغيير الخيارات لتضمين الحقول
+## 第 6 步：更改选项以包含字段
 
- نقوم بتضمين النص داخل الحقول في نتيجة الإخراج ، يمكننا تغيير الخيارات لعدم تجاهل الحقول. لهذا سنقوم بتعيين`IgnoreFields` ملكية ل`false`:
+我们在输出结果中包含字段内的文本，我们可以更改选项以不忽略这些字段。为此，我们将设置`IgnoreFields`财产给`false`:
 
 ```csharp
 options.IgnoreFields = false;
 ```
 
-## الخطوة 7: عرض الوثيقة المعدلة مع الحقول
+## 第 7 步：显示包含字段的修改后的文档
 
-بعد تغيير الخيارات ، يمكننا إجراء البحث والاستبدال مرة أخرى للحصول على النتيجة بالنص الموجود داخل الحقول المضمنة:
+更改选项后，我们可以再次执行搜索和替换以获得包含字段内文本的结果：
 
 ```csharp
 doc.Range.Replace(regex, "*", options);
 Console.WriteLine(doc.GetText());
 ```
 
-### مثال على شفرة المصدر لـ Ignore Text Inside Fields باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 忽略字段内文本的示例源代码
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام وظيفة Ignore Text Inside Fields مع Aspose.Words for .NET:
+下面是完整的示例源代码，用于演示在 Aspose.Words for .NET 中使用忽略字段内的文本功能：
 
 ```csharp
     
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// أدخل الحقل مع النص بداخله.
+	//插入带有文本的字段。
 	builder.InsertField("INCLUDETEXT", "Text in field");
 	
 	FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -99,6 +99,6 @@ Console.WriteLine(doc.GetText());
   
 ```
 
-## خاتمة
+## 结论
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة Ignore Text Inside Fields في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند ، وإدخال حقل به نص بداخله ، واستخدام وظيفة Ignore Text Inside Fields ، وإجراء البحث واستبدال العمليات بالتعبيرات العادية ، وعرض المستند المعدل.
+在本文中，我们探索了 C# 源代码以了解如何在 Aspose.Words for .NET 中使用忽略字段内的文本功能。我们按照一步一步的指南创建了一个文档，插入一个里面有文本的字段，使用忽略字段内的文本功能，用正则表达式执行搜索和替换操作，并显示修改后的文档。

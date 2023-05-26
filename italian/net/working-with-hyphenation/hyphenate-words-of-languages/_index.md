@@ -1,59 +1,59 @@
 ---
-title: وصل كلمات اللغات
-linktitle: وصل كلمات اللغات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Parole sillabate delle lingue
+linktitle: Parole sillabate delle lingue
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come sillabare le parole in diverse lingue nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 
-في هذا البرنامج التعليمي المفصل خطوة بخطوة ، سنوجهك حول كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In questo tutorial passo-passo, ti guideremo su come sillabare le parole in diverse lingue nei documenti di Word usando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria dal sito ufficiale.
 
-## الخطوة 1: تهيئة كائن المستند
+## Passaggio 1: inizializzazione dell'oggetto documento
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق تحديد المسار إلى المستند المصدر الذي يحتوي على نص بلغات مختلفة:
+ Per prima cosa, inizializza il file`Document` oggetto specificando il percorso del documento di origine contenente testo in diverse lingue:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## الخطوة 2: حفظ قواميس الواصلة
+## Passaggio 2: salvare i dizionari di sillabazione
 
-بعد ذلك ، احفظ قواميس الواصلة للغات المختلفة التي تريد معالجتها. في هذا المثال ، نسجل قواميس للغة الإنجليزية الأمريكية والألمانية السويسرية:
+Successivamente, salva i dizionari di sillabazione per le diverse lingue che desideri elaborare. In questo esempio registriamo dizionari per l'inglese americano e il tedesco svizzero:
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
 Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 ```
 
-تأكد من أن لديك ملفات القاموس المناسبة في دليل البيانات الخاص بك.
+Assicurati di avere i file di dizionario appropriati nella directory dei dati.
 
-## الخطوة 3: معالجة الكلمات عن طريق الواصلة
+## Passaggio 3: elaborazione delle parole mediante sillabazione
 
- يمكنك الآن استخدام ميزات الواصلة لمعالجة الكلمات بلغات مختلفة. يمكنك استخدام طرق مختلفة لـ`Document` أو`DocumentBuilder`حسب احتياجاتك الخاصة.
+ Ora puoi utilizzare le funzioni di sillabazione per elaborare parole in lingue diverse. Puoi usare diversi metodi di`Document` O`DocumentBuilder` seconda delle vostre specifiche esigenze.
 
 ```csharp
-// مثال: استخدام أسلوب الواصلة في DocumentBuilder
+// Esempio: utilizzo del metodo Hyphenate di DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Write("Example of text to hyphenate");
 builder.InsertHyphenation();
 ```
 
-## الخطوة 4: احفظ المستند
+## Passaggio 4: salvare il documento
 
-أخيرًا ، احفظ المستند المعدل:
+Infine, salva il documento modificato:
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-لذا ! لقد نجحت في معالجة الكلمات عن طريق الواصلة بلغات مختلفة في مستند Word باستخدام Aspose.Words for .NET.
+COSÌ ! Hai elaborato correttamente le parole sillabandole in diverse lingue in un documento di Word utilizzando Aspose.Words per .NET.
 
-### عينة من التعليمات البرمجية المصدر لوصل الكلمات باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per la sillabazione delle parole utilizzando Aspose.Words per .NET
 
 	```csharp
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,4 +65,4 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 	doc.Save(dataDir + "TreatmentByCesure.pdf");
 	```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.

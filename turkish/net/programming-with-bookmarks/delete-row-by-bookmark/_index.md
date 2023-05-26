@@ -1,40 +1,40 @@
 ---
-title: حذف الصف حسب الإشارة المرجعية
-linktitle: حذف الصف حسب الإشارة المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حذف صف جدول بناءً على إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET.
+title: Yer İşaretine Göre Satırı Sil
+linktitle: Yer İşaretine Göre Satırı Sil
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir belgedeki belirli bir yer imine dayalı bir tablo satırını nasıl sileceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 
-في هذه المقالة ، سوف نستكشف كود المصدر C # أعلاه لفهم كيفية استخدام وظيفة حذف الصف حسب الإشارة المرجعية في Aspose.Words لمكتبة .NET. تتيح لك هذه الميزة حذف صف جدول بناءً على إشارة مرجعية معينة في المستند.
+Bu makalede, Aspose.Words for .NET kitaplığındaki Yer İşaretine Göre Satırı Sil işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, bir belgedeki belirli bir yer imine dayalı olarak bir tablo satırını silmenizi sağlar.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# dili hakkında temel bilgi.
+- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## الخطوة 1: الحصول على الإشارة المرجعية
+## 1. Adım: Yer imini alma
 
- نحن نستخدم ال`Bookmarks`خاصية نطاق المستند للحصول على الإشارة المرجعية المحددة التي نريد استخدامها لحذف صف الجدول:
+ biz kullanıyoruz`Bookmarks`tablo satırını silmek için kullanmak istediğimiz belirli yer işaretini almak için belge aralığının özelliği:
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
 ```
 
-## الخطوة 2: حذف صف الجدول
+## 2. Adım: Tablo satırının silinmesi
 
- نحن نستخدم ال`GetAncestor` طريقة الحصول على`Row` اكتب العنصر الأصل للإشارة المرجعية. بعد ذلك ، نستخدم ملف`Remove` طريقة إزالة صف الجدول:
+ biz kullanıyoruz`GetAncestor` almak için yöntem`Row` yer iminin üst öğesini yazın. Daha sonra,`Remove` tablo satırını kaldırma yöntemi:
 
 ```csharp
 Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
 row?.Remove();
 ```
 
-### مثال على شفرة المصدر لـ Delete Row By Bookmark باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Satırı Yer İmine Göre Sil için örnek kaynak kodu
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح حذف صف جدول بناءً على إشارة مرجعية معينة باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanarak belirli bir yer imine dayalı bir tablo satırını silmeyi gösteren tam örnek kaynak kodu burada:
 
 ```csharp
 
@@ -45,6 +45,6 @@ row?.Remove();
         
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام وظيفة حذف الصف حسب الإشارة المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لحذف صف جدول بناءً على إشارة مرجعية محددة في المستند.
+Bu makalede, Aspose.Words for .NET'in Yer İşaretine Göre Satırı Sil işlevinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Belgedeki belirli bir yer imine dayalı olarak bir tablo satırını silmek için adım adım ilerleyen bir kılavuz izledik.

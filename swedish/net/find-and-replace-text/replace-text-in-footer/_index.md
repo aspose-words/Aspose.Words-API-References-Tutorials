@@ -1,49 +1,49 @@
 ---
-title: استبدال النص في التذييل
-linktitle: استبدال النص في التذييل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استبدال النص في تذييل مستندات Word باستخدام Aspose.Words for .NET.
+title: Ersätt text i sidfot
+linktitle: Ersätt text i sidfot
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ersätter text i sidfoten i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/find-and-replace-text/replace-text-in-footer/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة استبدال النص في التذييل في Aspose.Words لمكتبة .NET. تتيح لك هذه الميزة البحث عن نص معين واستبداله في تذييلات مستندات Word.
+I den här artikeln kommer vi att utforska ovanstående C#-källkod för att förstå hur man använder funktionen Ersätt text i sidfot i Aspose.Words för .NET-biblioteket. Med den här funktionen kan du hitta och ersätta specifik text i sidfötter i Word-dokument.
 
-## المتطلبات الأساسية
+## Förutsättningar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundläggande kunskaper i C#-språket.
+- .NET-utvecklingsmiljö med Aspose.Words-biblioteket installerat.
 
-## الخطوة 1: قم بتحميل المستند
+## Steg 1: Ladda dokumentet
 
-قبل أن نبدأ في استخدام استبدال النص في التذييل ، نحتاج إلى تحميل المستند إلى Aspose.Words for .NET. يمكن القيام بذلك باستخدام ملف`Document` فئة وتحديد مسار ملف المستند:
+Innan vi börjar använda textersättning i sidfoten måste vi ladda dokumentet i Aspose.Words för .NET. Detta kan göras med hjälp av`Document` klass och ange sökvägen till dokumentfilen:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Footer.docx");
 ```
 
-## الخطوة 2: الوصول إلى التذييل
+## Steg 2: Öppna sidfoten
 
- بمجرد تحميل المستند ، نحتاج إلى الوصول إلى التذييل لإجراء استبدال النص. في مثالنا ، نستخدم الامتداد`HeadersFooters` خاصية القسم الأول من المستند للحصول على مجموعة الرؤوس / التذييلات. بعد ذلك ، نختار التذييل الرئيسي باستخدام`HeaderFooterType.FooterPrimary` فِهرِس:
+ När dokumentet har laddats måste vi komma åt sidfoten för att utföra textersättningen. I vårt exempel använder vi`HeadersFooters` egenskapen för den första delen av dokumentet för att få samlingen av sidhuvuden/sidfötter. Därefter väljer vi huvudsidfoten med hjälp av`HeaderFooterType.FooterPrimary` index:
 
 ```csharp
 HeaderFooterCollection headersFooters = doc.FirstSection.HeadersFooters;
 HeaderFooter footer = headersFooters[HeaderFooterType.FooterPrimary];
 ```
 
-## الخطوة 3: تكوين خيارات البحث والاستبدال
+## Steg 3: Konfigurera sök- och ersättalternativ
 
- سنقوم الآن بتكوين خيارات البحث والاستبدال باستخدام ملف`FindReplaceOptions` هدف. في مثالنا ، حددنا`MatchCase` ل`false` لتجاهل الحالة عند البحث ، و`FindWholeWordsOnly` ل`false` للسماح بالبحث عن أجزاء من الكلمات واستبدالها:
+ Nu kommer vi att konfigurera hitta och ersätta alternativ med hjälp av en`FindReplaceOptions` objekt. I vårt exempel sätter vi`MatchCase` till`false` att ignorera skiftläge när du söker, och`FindWholeWordsOnly` till`false` för att låta delar av ord sökas och ersättas:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { MatchCase = false, FindWholeWordsOnly = false };
 ```
 
-## الخطوة 4: استبدال النص في التذييل
+## Steg 4: Ersätt text i sidfoten
 
- نحن نستخدم ال`Range.Replace` طريقة لإجراء استبدال النص في التذييل. في مثالنا ، نستبدل العبارة "(C) 2006 Aspose Pty Ltd." بواسطة "حقوق الطبع والنشر (C) 2020 لشركة Aspose Pty Ltd." :
+ Vi använder`Range.Replace` metod för att utföra textersättning i sidfoten. I vårt exempel ersätter vi frasen "(C) 2006 Aspose Pty Ltd." av "Copyright (C) 2020 av Aspose Pty Ltd." :
 
 ```csharp
 footer
@@ -51,21 +51,21 @@ footer
 .Range.Replace("(C) 2006 Aspose Pty Ltd.", "Copyright (C) 2020 by Aspose Pty Ltd.", options);
 ```
 
-## الخطوة 5: احفظ المستند المحرر
+## Steg 5: Spara det redigerade dokumentet
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+ Slutligen sparar vi det ändrade dokumentet i en specificerad katalog med hjälp av`Save` metod:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
 ```
 
-### مثال على شفرة المصدر لاستبدال النص في التذييل باستخدام Aspose.Words لـ .NET
+### Exempel på källkod för Ersätt text i sidfot med Aspose.Words för .NET
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام استبدال نص التذييل بـ Aspose.Words for .NET:
+Här är den fullständiga källkoden för att demonstrera användningen av sidfotsersättning med Aspose.Words för .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Footer.docx");
 
@@ -81,6 +81,6 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
         
 ```
 
-## خاتمة
+## Slutsats
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة استبدال النص في التذييل في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لتحميل مستند ، والوصول إلى التذييل ، وتكوين خيارات البحث والاستبدال ، وإجراء استبدال النص ، وحفظ المستند المحرر.
+I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Ersätt text i sidfot i Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att ladda ett dokument, komma åt sidfoten, konfigurera sök- och ersättalternativ, utföra textersättning och spara det redigerade dokumentet.

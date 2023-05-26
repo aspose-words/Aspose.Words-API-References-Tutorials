@@ -1,52 +1,52 @@
 ---
-title: اضبط مستوى الضغط
-linktitle: اضبط مستوى الضغط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين مستوى الضغط عند حفظ مستند باستخدام Aspose.Words for .NET.
+title: Définir le niveau de compression
+linktitle: Définir le niveau de compression
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à définir le niveau de compression lors de l'enregistrement d'un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-ooxmlsaveoptions/set-compression-level/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف كود المصدر C # المقدم لضبط مستوى الضغط عند حفظ مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة التحكم في مستوى ضغط المستند الذي تم إنشاؤه.
+Dans ce didacticiel, nous allons explorer le code source C # fourni pour définir le niveau de compression lors de l'enregistrement d'un document à l'aide de Aspose.Words pour .NET. Cette fonctionnalité vous permet de contrôler le niveau de compression du document généré.
 
-## الخطوة الأولى: تهيئة البيئة
+## Étape 1 : Configurer l'environnement
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Avant de commencer, assurez-vous d'avoir configuré votre environnement de développement avec Aspose.Words pour .NET. Assurez-vous d'avoir ajouté les références nécessaires et importé les espaces de noms appropriés.
 
-## الخطوة الثانية: تحميل المستند
+## Étape 2 : Chargement du document
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+ Dans cette étape, nous chargeons le document en utilisant le`Document` méthode et en passant le chemin vers le fichier DOCX à charger.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي لـ OOXML
+## Étape 3 : Configuration des options de sauvegarde OOXML
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { CompressionLevel = CompressionLevel.SuperFast };
 ```
 
- في هذه الخطوة ، نقوم بتهيئة خيارات حفظ OOXML باستخدام امتداد`OoxmlSaveOptions` فصل. قمنا بتعيين مستوى الضغط على`SuperFast` للحصول على ضغط أسرع.
+ Dans cette étape, nous configurons les options de sauvegarde OOXML à l'aide de`OoxmlSaveOptions` classe. Nous avons défini le niveau de compression sur`SuperFast` pour obtenir une compression plus rapide.
 
-## الخطوة 4: احفظ المستند بمستوى الضغط المحدد
+## Étape 4 : Enregistrez le document avec le niveau de compression spécifié
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ المستند باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج بامتداد`.docx` بالإضافة إلى خيارات الحفظ المحددة.
+ Dans cette dernière étape, nous enregistrons le document en utilisant le`Save` méthode et en passant le chemin vers le fichier de sortie avec la`.docx` extension, ainsi que les options d'enregistrement spécifiées.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لضبط مستوى الضغط عند حفظ مستند. سيتم حفظ الملف الناتج في الدليل المحدد باسم "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx".
+Vous pouvez maintenant exécuter le code source pour définir le niveau de compression lors de l'enregistrement d'un document. Le fichier résultant sera enregistré dans le répertoire spécifié sous le nom "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx".
 
-### نموذج التعليمات البرمجية المصدر لـ Set Compression Level باستخدام Aspose.Words for .NET 
+### Exemple de code source pour définir le niveau de compression à l'aide de Aspose.Words pour .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Document.docx");
@@ -58,14 +58,14 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveO
         
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة تعيين مستوى الضغط عند حفظ مستند باستخدام Aspose.Words for .NET. من خلال تحديد المستوى المناسب للضغط ، يمكنك تحسين حجم المستند وسرعة الإنشاء.
+Dans ce didacticiel, nous avons exploré la fonctionnalité de définition du niveau de compression lors de l'enregistrement d'un document à l'aide de Aspose.Words pour .NET. En spécifiant le niveau de compression approprié, vous pouvez optimiser la taille du document et la vitesse de génération.
 
- ال`OoxmlSaveOptions`يوفر class المرونة للتحكم في مستوى الضغط عن طريق تعيين`CompressionLevel` إلى قيمة مناسبة ، مثل`SuperFast`. يتيح لك ذلك تحقيق التوازن الصحيح بين حجم الملف وسرعة النسخ الاحتياطي بناءً على احتياجاتك الخاصة.
+ Le`OoxmlSaveOptions`offre la possibilité de contrôler le niveau de compression en définissant la`CompressionLevel` propriété à une valeur appropriée, telle que`SuperFast`. Cela vous permet de trouver le bon équilibre entre la taille du fichier et la vitesse de sauvegarde en fonction de vos besoins spécifiques.
 
-يمكن أن يكون استخدام الضغط مفيدًا عندما تحتاج إلى تقليل حجم الملفات التي تم إنشاؤها ، خاصةً للمستندات الكبيرة. يمكن أن يؤدي ذلك إلى تسهيل تخزين المستندات ومشاركتها ونقلها.
+L'utilisation de la compression peut être bénéfique lorsque vous devez réduire la taille des fichiers générés, en particulier pour les documents volumineux. Cela peut faciliter le stockage, le partage et la transmission de documents.
 
-يوفر Aspose.Words for .NET مجموعة من الخيارات والميزات القوية لمعالجة المستندات. باستخدام خيارات النسخ الاحتياطي المناسبة ، يمكنك تخصيص عملية إنشاء المستندات وتحسين أداء تطبيقك.
+Aspose.Words pour .NET offre une gamme d'options et de fonctionnalités puissantes pour la manipulation de documents. En utilisant les options de sauvegarde appropriées, vous pouvez personnaliser le processus de génération de documents et optimiser les performances de votre application.
 
-لا تتردد في استكشاف المزيد من ميزات Aspose.Words for .NET لتحسين سير عمل إنشاء المستندات.
+N'hésitez pas à explorer plus de fonctionnalités d'Aspose.Words pour .NET pour améliorer votre flux de travail de génération de documents.

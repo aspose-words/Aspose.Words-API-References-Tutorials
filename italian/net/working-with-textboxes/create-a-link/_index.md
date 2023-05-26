@@ -1,16 +1,16 @@
 ---
-title: إنشاء ارتباط
-linktitle: إنشاء ارتباط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء رابط بين TextBoxes في مستند Word باستخدام Aspose.Words for .NET.
+title: Crea un collegamento
+linktitle: Crea un collegamento
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come creare un collegamento tra le caselle di testo in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-textboxes/create-a-link/
 ---
 
-## الخطوة 1: إعداد المستند وإنشاء أشكال TextBox
+## Passaggio 1: impostazione del documento e creazione di forme TextBox
 
- للبدء ، نحتاج إلى إعداد المستند وإنشاء شكلين مربع نص. يقوم الكود التالي بتهيئة مثيل جديد لملف`Document` فئة وإنشاء شكلين لمربع النص:
+ Per iniziare, dobbiamo impostare il documento e creare due forme TextBox. Il codice seguente inizializza una nuova istanza di`Document` class e crea due forme di caselle di testo:
 
 ```csharp
 Document doc = new Document();
@@ -21,18 +21,18 @@ TextBox textBox1 = shape1.TextBox;
 TextBox textBox2 = shape2.TextBox;
 ```
 
-## الخطوة 2: إنشاء ارتباط بين مربعات النص
+## Passaggio 2: creazione di un collegamento tra le caselle di testo
 
- سنقوم الآن بإنشاء رابط بين مربعي النص باستخدام امتداد`IsValidLinkTarget()` الطريقة و`Next` خاصية TextBox الأول.
+ Ora creeremo un collegamento tra i due TextBox utilizzando il`IsValidLinkTarget()` metodo e il`Next` proprietà del primo TextBox.
 
 ```csharp
 if (textBox1.IsValidLinkTarget(textBox2))
      textBox1. Next = textBox2;
 ```
 
- ال`IsValidLinkTarget()` يتحقق الأسلوب مما إذا كان يمكن أن يكون TextBox الثاني هدفًا صالحًا للارتباط الخاص بـ TextBox الأول. إذا نجح التحقق من الصحة ، فإن`Next` تم تعيين خاصية TextBox الأول على TextBox الثاني ، مما يؤدي إلى إنشاء ارتباط بين الاثنين.
+ IL`IsValidLinkTarget()` Il metodo controlla se il secondo TextBox può essere una destinazione valida per il collegamento del primo TextBox. Se la convalida ha esito positivo, il`Next` La proprietà del primo TextBox è impostata sul secondo TextBox, creando un collegamento tra i due.
 
-### مثال على شفرة المصدر للارتباط بـ Aspose.Words for .NET
+### Esempio di codice sorgente da collegare con Aspose.Words per .NET
 
 ```csharp
 Document doc = new Document();

@@ -1,40 +1,40 @@
 ---
-title: الانتقال إلى تذييلات الرؤوس
-linktitle: الانتقال إلى تذييلات الرؤوس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للتنقل وتعديل الرؤوس والتذييلات في مستندات Word باستخدام هذا الدليل التفصيلي.
+title: Перейти к верхним колонтитулам
+linktitle: Перейти к верхним колонтитулам
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как использовать Aspose.Words для .NET для навигации и изменения верхних и нижних колонтитулов в документах Word с помощью этого пошагового руководства.
 type: docs
 weight: 10
 url: /ru/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Headers Footers في Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تتيح للمطورين إنشاء مستندات Word وتعديلها وتحويلها برمجيًا. تتيح لنا ميزة Move To Headers / Footers التنقل إلى رؤوس وتذييلات مختلفة داخل المستند وإضافة محتوى إليها.
+В этом примере мы рассмотрим функцию «Переместить в нижние колонтитулы» в Aspose.Words для .NET. Aspose.Words — это мощная библиотека для работы с документами, которая позволяет разработчикам программно создавать, изменять и преобразовывать документы Word. Функция «Переместить в верхние/нижние колонтитулы» позволяет нам переходить к различным верхним и нижним колонтитулам в документе и добавлять к ним контент.
 
-دعنا ننتقل إلى الكود المصدري خطوة بخطوة لفهم كيفية استخدام ميزة Move To Headers / Footers باستخدام Aspose.Words for .NET.
+Давайте шаг за шагом рассмотрим исходный код, чтобы понять, как использовать функцию «Переместить в верхние/нижние колонтитулы» с помощью Aspose.Words для .NET.
 
 
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## Шаг 1: Инициализация документа и построителя документов
 
-أولاً ، قم بتهيئة كائنات Document و DocumentBuilder:
+Сначала инициализируйте объекты Document и DocumentBuilder:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الرؤوس والتذييلات
+## Шаг 2. Настройка верхних и нижних колонтитулов
 
-حدد إعدادات الرأس / التذييل للمستند. في هذا المثال ، قمنا بتعيين الرؤوس والتذييلات لتكون مختلفة للصفحة الأولى وللصفحات الفردية / الزوجية:
+Укажите параметры верхнего/нижнего колонтитула для документа. В этом примере мы установили разные верхние и нижние колонтитулы для первой страницы и для нечетных/четных страниц:
 
 ```csharp
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 ```
 
-## الخطوة 3: إنشاء رؤوس الصفحات المختلفة
+## Шаг 3: Создание заголовков для разных страниц
 
-انتقل إلى كل نوع من أنواع العناوين وأضف محتوى إليها. في هذا المثال ، نقوم بإنشاء رؤوس للصفحة الأولى وحتى الصفحات وجميع الصفحات الأخرى:
+Перейдите к каждому типу заголовков и добавьте к ним контент. В этом примере мы создаем заголовки для первой страницы, четных страниц и всех остальных страниц:
 
 ```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
@@ -47,38 +47,38 @@ builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 builder.Write("Header for all other pages");
 ```
 
-## الخطوة 4: إنشاء صفحات في المستند
-أضف محتوى إلى المستند لإنشاء صفحات متعددة. على سبيل المثال:
+## Шаг 4: Создание страниц в документе
+Добавьте содержимое в документ, чтобы создать несколько страниц. Например:
 
 ```csharp
-// قم بإنشاء صفحتين في المستند.
+// Создайте две страницы в документе.
 builder.MoveToSection(0);
 builder.Writeln("Page1");
 builder.InsertBreak(BreakType.PageBreak);
 builder.Writeln("Page2");
 ```
-## الخطوة 5: حفظ المستند
+## Шаг 5: Сохранение документа
 
-احفظ المستند المعدل في المكان المطلوب:
+Сохраните измененный документ в нужном месте:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```
 
-تأكد من تحديد مسار الملف المناسب وتنسيقه (على سبيل المثال ، DOCX).
+Обязательно укажите правильный путь к файлу и формат (например, DOCX).
 
-### مثال على شفرة المصدر لـ Move To Headers / Footers باستخدام Aspose.Words for .NET
+### Пример исходного кода для перемещения в верхние/нижние колонтитулы с использованием Aspose.Words для .NET
 
 ```csharp
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// حدد أننا نريد اختلاف الرؤوس والتذييلات للصفحات الأولى والزوجية والفردية.
+	// Укажите, что мы хотим, чтобы верхние и нижние колонтитулы были разными для первой, четной и нечетной страниц.
 	builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 	builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
-	// قم بإنشاء الرؤوس.
+	// Создайте заголовки.
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
 	builder.Write("Header for the first page");
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
@@ -86,7 +86,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.doc
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 	builder.Write("Header for all other pages");
 
-	// قم بإنشاء صفحتين في المستند.
+	// Создайте две страницы в документе.
 	builder.MoveToSection(0);
 	builder.Writeln("Page1");
 	builder.InsertBreak(BreakType.PageBreak);

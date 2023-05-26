@@ -1,35 +1,35 @@
 ---
-title: تنسيق رقم تسمية البيانات
-linktitle: تنسيق رقم تسمية البيانات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تنسيق عدد تسميات البيانات في مخطط باستخدام Aspose.Words for .NET. تخصيص تنسيقات الأرقام لتسميات البيانات بسهولة.
+title: Veri Etiketinin Biçim Numarası
+linktitle: Veri Etiketinin Biçim Numarası
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir grafikteki veri etiketi sayısını nasıl biçimlendireceğinizi öğrenin. Veri etiketleri için sayı biçimlerini kolayca özelleştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/format-number-of-data-label/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتنسيق عدد تسميات البيانات في مخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وتخصيص تنسيق الأرقام لتسميات البيانات.
+Bu eğitim, bir grafikteki veri etiketi sayısını biçimlendirmek için Aspose.Words for .NET'in nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve veri etiketlerinin sayı biçiminin nasıl özelleştirileceğini gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Çıktı belgesinin kaydedileceği bir belge dizini yolu.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 2. Adım: Yeni bir belge oluşturun ve bir grafik ekleyin
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، أدخل مخططًا في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`في هذا المثال ، سنقوم بإدراج مخطط خطي.
+ Ardından, kullanarak belgeye bir grafik ekleyin.`InsertChart` yöntemi`DocumentBuilder`Bu örnekte, bir çizgi grafiği ekleyeceğiz.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -37,9 +37,9 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## 3. Adım: Seri verilerini grafiğe ekleyin
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف ثلاث فئات والقيم المقابلة لها.
+Grafiğe seri verileri ekleyin. Bu örnekte, üç kategori ve bunlara karşılık gelen değerleri ekleyeceğiz.
 
 ```csharp
 chart.Series.Clear();
@@ -49,9 +49,9 @@ ChartSeries series1 = chart.Series.Add("Aspose Series 1",
 series1.HasDataLabels = true;
 ```
 
-## الخطوة 4: تخصيص تنسيق الأرقام لتسميات البيانات
+## 4. Adım: Veri etiketlerinin sayı biçimini özelleştirin
 
- لتنسيق عدد تسميات البيانات ، قم بالوصول إلى`DataLabels` المجموعة المرتبطة بالسلسلة.
+ Veri etiketi sayısını biçimlendirmek için şuraya erişin:`DataLabels` diziyle ilişkili koleksiyon.
 
 ```csharp
 series1.DataLabels.ShowValue = true;
@@ -60,22 +60,22 @@ series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 ```
 
-في هذا المثال ، قمنا بتعيين تنسيقات أرقام مختلفة لكل تسمية بيانات. تم تنسيق تسمية البيانات الأولى كعملة ، والثانية كتاريخ ، والثالثة كنسبة مئوية.
+Bu örnekte, her veri etiketi için farklı sayı biçimleri ayarladık. İlk veri etiketi para birimi olarak, ikincisi tarih olarak ve üçüncüsü yüzde olarak biçimlendirilir.
 
-## الخطوة 5: احفظ المستند
+## 5. Adım: Belgeyi kaydedin
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Son olarak, belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-هذا يكمل تنفيذ تنسيق عدد تسميات البيانات في مخطط باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanılarak bir grafikteki veri etiketi sayısını biçimlendirme uygulamasını tamamlar.
 
-### مثال على شفرة المصدر لتنسيق رقم تسمية البيانات باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Format Number of Data Label için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 	Chart chart = shape.Chart;
 	chart.Title.Text = "Data Labels With Different Number Format";
-	// حذف السلاسل التي تم إنشاؤها بشكل افتراضي.
+	// Oluşturulan varsayılan seriyi silin.
 	chart.Series.Clear();
 	ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
 		new string[] { "Category 1", "Category 2", "Category 3" }, 
@@ -93,8 +93,8 @@ doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 	series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
 	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
 	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
-	// أو يمكنك تعيين كود التنسيق لربطه بخلية مصدر ،
-	// في هذه الحالة ، سيتم إعادة تعيين NumberFormat إلى عام وسيتم توريثه من خلية مصدر.
+	// Veya bir kaynak hücreye bağlanacak biçim kodunu ayarlayabilirsiniz,
+	// bu durumda NumberFormat genele sıfırlanacak ve bir kaynak hücreden devralınacaktır.
 	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```

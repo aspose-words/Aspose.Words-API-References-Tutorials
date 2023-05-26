@@ -1,33 +1,33 @@
 ---
-title: تصدير إلى Markdown مع محاذاة محتوى الجدول
-linktitle: تصدير إلى Markdown مع محاذاة محتوى الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تصدير محتوى الجدول بمحاذاة مختلفة لملفات Markdown باستخدام Aspose.Words for .NET.
+title: Exportera till Markdown med tabellinnehållsjustering
+linktitle: Exportera till Markdown med tabellinnehållsjustering
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du exporterar tabellinnehåll med olika justeringar till Markdown-filer med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية التي تساعد في تصدير المحتوى إلى ملف Markdown مع محاذاة محتوى الجدول باستخدام مكتبة Aspose.Words لـ .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Här är en steg-för-steg-guide för att förklara följande C#-källkod som hjälper till att exportera innehåll till en Markdown-fil med tabellinnehållsjustering med hjälp av Aspose.Words-biblioteket för .NET. Se till att du har inkluderat Aspose.Words-biblioteket i ditt projekt innan du använder den här koden.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## Steg 1: Ange sökväg till dokumentkatalogen
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
+Var noga med att ange rätt sökväg till din dokumentkatalog där det redigerade dokumentet kommer att sparas.
 
-## الخطوة 2: قم بإنشاء مستند ومولد مستندات
+## Steg 2: Skapa ett dokument och en dokumentgenerator
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- هنا نقوم بإنشاء مثيل لـ`Document` فئة ومثيل`DocumentBuilder` فئة تسمح لنا بمعالجة المستند وإضافة عناصر.
+ Här skapar vi en instans av`Document` klass och en instans av`DocumentBuilder` klass som gör att vi kan manipulera dokumentet och lägga till element.
 
-## الخطوة 3: أدخل خلايا في الجدول بمحاذاة فقرات مختلفة
+## Steg 3: Infoga celler i tabellen med olika styckejusteringar
 
 ```csharp
 builder. InsertCell();
@@ -38,9 +38,9 @@ builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.Write("Cell2");
 ```
 
-نستخدم Document Builder لإدراج خلايا في الجدول وتعيين محاذاة فقرة مختلفة لكل خلية.
+Vi använder Document Builder för att infoga celler i tabellen och ställa in olika styckejusteringar för varje cell.
 
-## الخطوة 4: قم بتعيين خيارات تصدير Markdown وحفظ المستند المعدل
+## Steg 4: Ställ in Markdown-exportalternativ och spara det ändrade dokumentet
 
 ```csharp
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
@@ -59,14 +59,14 @@ saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 ```
 
-قمنا بتعيين خيارات تصدير Markdown بمحاذاة محتوى جدول مختلفة ، ثم احفظنا المستند المعدل باستخدام كل خيار محاذاة.
+Vi ställer in Markdown-exportalternativen med olika tabellinnehållsjusteringar och sparar sedan det modifierade dokumentet med varje justeringsalternativ.
 
-### مثال على شفرة المصدر للتصدير إلى Markdown مع محاذاة محتوى الجدول باستخدام Aspose.Words for .NET
+### Exempel på källkod att exportera till Markdown med tabellinnehållsjustering med Aspose.Words för .NET
 
 ```csharp
 
             
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
     string dataDir = "YOUR DOCUMENT DIRECTORY";
 	
 	Document doc = new Document();
@@ -79,7 +79,7 @@ doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 	builder.Write("Cell2");
 
-	// يجعل كل الفقرات الموجودة داخل الجدول محاذاة.
+	// Gör att alla stycken i tabellen justeras.
 	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 	{
 		TableContentAlignment = TableContentAlignment.Left
@@ -92,10 +92,10 @@ doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 	saveOptions.TableContentAlignment = TableContentAlignment.Center;
 	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.CenterTableContentAlignment.md", saveOptions);
 
-	// سيتم أخذ المحاذاة في هذه الحالة من الفقرة الأولى في عمود الجدول المقابل.
+	// Justeringen i detta fall kommer att tas från första stycket i motsvarande tabellkolumn.
 	saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 	
-	// احفظ المستند المعدل
+	// Spara det ändrade dokumentet
 	doc.Save(dataDir + "WorkingWithMarkdownSaveOptions.AutoTableContentAlignment.md", saveOptions);
             
         

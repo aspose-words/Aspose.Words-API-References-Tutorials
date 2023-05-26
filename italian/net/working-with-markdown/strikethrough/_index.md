@@ -1,51 +1,51 @@
 ---
-title: يتوسطه خط
-linktitle: يتوسطه خط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Barrato
+linktitle: Barrato
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come applicare lo stile di testo barrato con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/strikethrough/
 ---
 
 
-في هذا المثال ، سنرشدك إلى كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام Aspose.Words for .NET. يتم استخدام نص يتوسطه خط للإشارة إلى حذف النص أو أنه لم يعد صالحًا.
+In questo esempio, ti illustreremo come applicare lo stile di testo barrato utilizzando Aspose.Words per .NET. Il testo barrato viene utilizzato per indicare che il testo è stato eliminato o non è più valido.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Passaggio 1: utilizzo di un generatore di documenti
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Innanzitutto, utilizzeremo un generatore di documenti per aggiungere contenuto al nostro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تطبيق نمط النص يتوسطه خط
+## Passaggio 2: applica lo stile del testo barrato
 
- سنقوم بتمكين نمط النص يتوسطه خط من خلال تعيين`StrikeThrough` ممتلكات`Font` يعترض على`true`.
+ Abiliteremo lo stile del testo barrato impostando il`StrikeThrough` proprietà del`Font` opporsi a`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;
 ```
 
-## الخطوة 3: أضف نص يتوسطه خط
+## Passaggio 3: aggiungi il testo barrato
 
- يمكننا الآن إضافة نص يتوسطه خط باستخدام منشئ المستندات`Writeln` طريقة.
+ Ora possiamo aggiungere testo barrato utilizzando il generatore di documenti`Writeln` metodo.
 
 ```csharp
 builder.Writeln("This text will be StrikeThrough");
 ```
 
 
-### مثال على شفرة المصدر لنص يتوسطه خط مع Aspose.Words for .NET
+### Esempio di codice sorgente per testo barrato con Aspose.Words per .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص يتوسطه خط.
+	// Rendi il testo Barrato.
 	builder.Font.StrikeThrough = true;
 	builder.Writeln("This text will be StrikeThrough");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام Aspose.Words for .NET.
+Congratulazioni! Ora hai imparato come applicare lo stile di testo barrato con Aspose.Words per .NET.

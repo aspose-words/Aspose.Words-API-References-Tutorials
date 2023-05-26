@@ -1,59 +1,59 @@
 ---
-title: وصل كلمات اللغات
-linktitle: وصل كلمات اللغات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Dillerin Tireli Kelimeleri
+linktitle: Dillerin Tireli Kelimeleri
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerinde farklı dillerdeki sözcükleri nasıl heceleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 
-في هذا البرنامج التعليمي المفصل خطوة بخطوة ، سنوجهك حول كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Bu adım adım öğreticide, Aspose.Words for .NET kullanarak Word belgelerinde farklı dillerdeki sözcükleri nasıl heceleyeceğiniz konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinize nasıl uygulayacağınızı göstereceğiz.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kütüphaneyi resmi siteden indirip yükleyin.
 
-## الخطوة 1: تهيئة كائن المستند
+## 1. Adım: Belge Nesnesini Başlatma
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق تحديد المسار إلى المستند المصدر الذي يحتوي على نص بلغات مختلفة:
+ İlk olarak,`Document` farklı dillerde metin içeren kaynak belgenizin yolunu belirterek itiraz edin:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## الخطوة 2: حفظ قواميس الواصلة
+## 2. Adım: Tireleme Sözlüklerini Kaydetme
 
-بعد ذلك ، احفظ قواميس الواصلة للغات المختلفة التي تريد معالجتها. في هذا المثال ، نسجل قواميس للغة الإنجليزية الأمريكية والألمانية السويسرية:
+Ardından, işlemek istediğiniz farklı diller için heceleme sözlüklerini kaydedin. Bu örnekte, Amerikan İngilizcesi ve İsviçre Almancası için sözlükleri kaydediyoruz:
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
 Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 ```
 
-تأكد من أن لديك ملفات القاموس المناسبة في دليل البيانات الخاص بك.
+Veri dizininizde uygun sözlük dosyalarının bulunduğundan emin olun.
 
-## الخطوة 3: معالجة الكلمات عن طريق الواصلة
+## 3. Adım: Kelimeleri tireleme yoluyla işleme
 
- يمكنك الآن استخدام ميزات الواصلة لمعالجة الكلمات بلغات مختلفة. يمكنك استخدام طرق مختلفة لـ`Document` أو`DocumentBuilder`حسب احتياجاتك الخاصة.
+ Artık farklı dillerdeki sözcükleri işlemek için heceleme özelliklerini kullanabilirsiniz. farklı yöntemler kullanabilirsiniz`Document` veya`DocumentBuilder`özel ihtiyaçlarınıza bağlı olarak.
 
 ```csharp
-// مثال: استخدام أسلوب الواصلة في DocumentBuilder
+// Örnek: DocumentBuilder'ın Tireleme yöntemini kullanma
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Write("Example of text to hyphenate");
 builder.InsertHyphenation();
 ```
 
-## الخطوة 4: احفظ المستند
+## 4. Adım: Belgeyi kaydedin
 
-أخيرًا ، احفظ المستند المعدل:
+Son olarak, değiştirilen belgeyi kaydedin:
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-لذا ! لقد نجحت في معالجة الكلمات عن طريق الواصلة بلغات مختلفة في مستند Word باستخدام Aspose.Words for .NET.
+Bu yüzden ! Aspose.Words for .NET kullanarak bir Word belgesinde kelimeleri farklı dillerde heceleyerek başarılı bir şekilde işlediniz.
 
-### عينة من التعليمات البرمجية المصدر لوصل الكلمات باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak kelime tireleme için örnek kaynak kodu
 
 	```csharp
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,4 +65,4 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 	doc.Save(dataDir + "TreatmentByCesure.pdf");
 	```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şekilde değiştirmekten çekinmeyin.

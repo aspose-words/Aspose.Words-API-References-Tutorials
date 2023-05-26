@@ -1,26 +1,26 @@
 ---
-title: البرمجة بخصائص المستند
-linktitle: البرمجة بخصائص المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على متغيرات ، تعداد الخصائص ، إضافة خصائص وثيقة مخصصة ، إزالة خصائص المستند المخصصة ، إزالة المعلومات الشخصية ، التكوين
+title: Belge Özellikleri ile Programlama
+linktitle: Belge Özellikleri ile Programlama
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, değişken alma, özellikleri numaralandırma, özel belge özellikleri ekleme, özel belge özelliklerini kaldırma, kişisel bilgileri kaldırma, yapılandırma içerir.
 type: docs
 weight: 1520
 url: /tr/net/programming-with-document-properties/
 ---
-توفر البرامج التعليمية لـ Aspose.Words for .NET حول البرمجة بخصائص المستند نظرة متعمقة على إدارة خصائص المستندات في مشروعاتك. في هذه البرامج التعليمية ، ستتعلم كيفية الوصول إلى الخصائص وتعديلها وحذفها مثل العنوان والمؤلف والكلمات الرئيسية وما إلى ذلك ، لتخصيص مستندات Word الخاصة بك. ستتعلم أيضًا كيفية إضافة خصائص مخصصة لتلبية احتياجاتك الخاصة.
+Belge özellikleriyle programlama üzerine Aspose.Words for .NET öğreticileri, projelerinizdeki belge özelliklerini yönetmeye derinlemesine bir bakış sağlar. Bu eğitimlerde, Word belgelerinizi kişiselleştirmek için başlık, yazar, anahtar sözcükler vb. özelliklere nasıl erişeceğinizi, bunları değiştireceğinizi ve sileceğinizi öğreneceksiniz. Özel ihtiyaçlarınızı karşılamak için özel özellikleri nasıl ekleyeceğinizi de öğreneceksiniz.
 
-ستوجهك هذه البرامج التعليمية خطوة بخطوة لاستخدام مكتبة Aspose.Words for .NET للتفاعل مع خصائص المستند. سوف تتعلم كيفية استخراج الخصائص الموجودة وتعيين قيم جديدة وإزالة الخصائص غير المرغوب فيها. من خلال فهم كيفية التعامل مع خصائص المستند ، ستتمكن من إنشاء مستندات Word احترافية وتخصيصها لتناسب متطلباتك.
+Bu öğreticiler, belge özellikleriyle etkileşim kurmak için Aspose.Words for .NET kitaplığını kullanmak için adım adım size rehberlik edecek. Mevcut özellikleri nasıl çıkaracağınızı, yeni değerler ayarlayacağınızı ve istenmeyen özellikleri nasıl kaldıracağınızı öğreneceksiniz. Belge özelliklerini nasıl değiştireceğinizi anlayarak, profesyonel Word belgeleri oluşturabilecek ve bunları ihtiyaçlarınıza göre özelleştirebileceksiniz.
 
-سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستزودك برامج Aspose.Words for .NET التعليمية حول البرمجة بخصائص المستندات بالمعرفة والمهارات اللازمة لإدارة خصائص مستند Word بشكل فعال وتحسين سير عمل التطوير لديك.
+İster yeni başlayan ister deneyimli bir geliştirici olun, belge özellikleriyle programlama üzerine Aspose.Words for .NET eğitimleri, Word belge özelliklerinizi etkili bir şekilde yönetmeniz ve geliştirme iş akışınızı optimize etmeniz için gereken bilgi ve becerileri size sağlayacaktır.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [احصل على المتغيرات](./get-variables/) | دليل خطوة بخطوة لاسترداد متغيرات المستند باستخدام Aspose.Words for .NET. |
-| [تعداد الخصائص](./enumerate-properties/) | دليل خطوة بخطوة لتعداد خصائص المستند باستخدام Aspose.Words for .NET. |
-| [أضف خصائص المستند المخصصة](./add-custom-document-properties/) | دليل خطوة بخطوة لإضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET. |
-| [قم بإزالة خصائص المستند المخصصة](./remove-custom-document-properties/) | دليل تفصيلي خطوة بخطوة لإزالة الخصائص المخصصة من مستند باستخدام Aspose.Words for .NET. |
-| [إزالة المعلومات الشخصية](./remove-personal-information/) | دليل تفصيلي خطوة بخطوة لإزالة المعلومات الشخصية من مستند باستخدام Aspose.Words for .NET. |
-| [تكوين ارتباط إلى المحتوى](./configuring-link-to-content/) | دليل تفصيلي خطوة بخطوة لإعداد الارتباط بالمحتوى في مستند باستخدام Aspose.Words for .NET. |
-| [التحويل بين وحدات القياس](./convert-between-measurement-units/) | دليل تفصيلي خطوة بخطوة للتحويل بين وحدات القياس في مستند باستخدام Aspose.Words for .NET. |
-| [استخدم أحرف التحكم](./use-control-characters/) | دليل خطوة بخطوة لاستخدام أحرف التحكم مع Aspose.Words for .NET. |
+| [Değişkenleri Al](./get-variables/) | Aspose.Words for .NET ile belge değişkenlerini almak için adım adım kılavuz. |
+| [Özellikleri Numaralandır](./enumerate-properties/) | Aspose.Words for .NET ile belge özelliklerini numaralandırmak için adım adım kılavuz. |
+| [Özel Belge Özellikleri Ekle](./add-custom-document-properties/) | Aspose.Words for .NET ile bir belgeye özel özellikler eklemek için adım adım kılavuz. |
+| [Özel Belge Özelliklerini Kaldırma](./remove-custom-document-properties/) | Aspose.Words for .NET ile bir belgeden özel özellikleri kaldırmak için adım adım kılavuz. |
+| [Kişisel Bilgileri Kaldır](./remove-personal-information/) | Aspose.Words for .NET ile bir belgeden kişisel bilgileri kaldırmak için adım adım kılavuz. |
+| [İçeriğe Bağlantıyı Yapılandırma](./configuring-link-to-content/) | Aspose.Words for .NET ile bir belgedeki içeriğe bağlantı kurmak için adım adım kılavuz. |
+| [Ölçü Birimleri Arasında Dönüştür](./convert-between-measurement-units/) | Aspose.Words for .NET ile bir belgede ölçüm birimleri arasında dönüşüm yapmak için adım adım kılavuz. |
+| [Kontrol Karakterlerini Kullan](./use-control-characters/) | Aspose.Words for .NET ile kontrol karakterlerini kullanmak için adım adım kılavuz. |

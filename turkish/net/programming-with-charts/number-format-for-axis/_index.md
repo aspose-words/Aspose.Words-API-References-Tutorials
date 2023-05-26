@@ -1,44 +1,44 @@
 ---
-title: تنسيق الأرقام للمحور
-linktitle: تنسيق الأرقام للمحور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين تنسيق الأرقام لمحور في مخطط باستخدام Aspose.Words for .NET.
+title: Eksen İçin Sayı Biçimi
+linktitle: Eksen İçin Sayı Biçimi
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir grafikte bir eksen için sayı biçimini nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/number-format-for-axis/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين تنسيق الأرقام لمحور في الرسم البياني. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات سلسلة وتنسيق تسميات المحور.
+Bu öğretici, Aspose.Words for .NET'in grafikteki bir eksen için sayı formatını ayarlamak üzere nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve eksen etiketlerinin nasıl biçimlendirileceğini gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Çıktı belgesinin kaydedileceği bir belge dizini yolu.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 2. Adım: Yeni bir belge oluşturun ve bir grafik ekleyin
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط عمودي في المستند.
+ Ardından,`InsertChart` yöntemi`DocumentBuilder` belgeye bir sütun grafiği eklemek için.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## 3. Adım: Seri verilerini grafiğe ekleyin
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمسة عناصر بقيمها المقابلة.
+Grafiğe seri verileri ekleyin. Bu örnekte, karşılık gelen değerleri ile beş öğe ekleyeceğiz.
 
 ```csharp
 chart.Series.Clear();
@@ -47,28 +47,28 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
 ```
 
-## الخطوة 4: قم بتنسيق تسميات المحور
+## 4. Adım: Eksen etiketlerini biçimlendirin
 
- لتعيين تنسيق الأرقام لتسميات المحور ص ، قم بالوصول إلى ملف`AxisY` خاصية الرسم البياني وتعيين`NumberFormat.FormatCode` إلى التنسيق المطلوب. في هذا المثال ، قمنا بتعيين التنسيق على "#، ## 0" لعرض الأرقام مع الآلاف من الفواصل.
+ Y ekseni etiketlerinin sayı biçimini ayarlamak için şuraya erişin:`AxisY` grafiğin özelliğini ayarlayın ve`NumberFormat.FormatCode` özelliğini istediğiniz biçime getirin. Bu örnekte, sayıları binlik ayırıcılarla görüntülemek için biçimi "#,##0" olarak ayarladık.
 
 ```csharp
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-## الخطوة 5: احفظ المستند
+## 5. Adım: Belgeyi kaydedin
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Son olarak, belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
-هذا يكمل تنفيذ إعداد تنسيق الأرقام للمحور باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanılarak eksen için sayı biçimini ayarlama uygulamasını tamamlar.
 
-### مثال على الكود المصدري لـ Number Format For Axis باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Number Format For Axis için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

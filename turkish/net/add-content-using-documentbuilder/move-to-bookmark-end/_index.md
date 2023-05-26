@@ -1,64 +1,64 @@
 ---
-title: الانتقال إلى نهاية الإشارة المرجعية
-linktitle: الانتقال إلى نهاية الإشارة المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للانتقال إلى نهاية إشارة مرجعية في مستندات Word باستخدام هذا الدليل التفصيلي خطوة بخطوة.
+title: Yer İşareti Sonuna Taşı
+linktitle: Yer İşareti Sonuna Taşı
+second_title: Aspose.Words for .NET API Referansı
+description: Bu adım adım kılavuz ile Word belgelerinde bir yer iminin sonuna gitmek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Bookmark End في Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تمكن المطورين من إنشاء وتعديل وتحويل مستندات Word برمجيًا. تسمح لنا ميزة Move To Bookmark End بالانتقال إلى نهاية إشارة مرجعية معينة داخل مستند وإضافة محتوى بعدها.
+Bu örnekte, Aspose.Words for .NET'in Yer İşareti Sonuna Taşı özelliğini inceleyeceğiz. Aspose.Words, geliştiricilerin Word belgelerini program aracılığıyla oluşturmasına, değiştirmesine ve dönüştürmesine olanak sağlayan güçlü bir belge işleme kitaplığıdır. Yer İmi Sonuna Taşı özelliği, bir belgedeki belirli bir yer iminin sonuna gitmemizi ve ondan sonra içerik eklememizi sağlar.
 
-## تهيئة البيئة
+## ortamın ayarlanması
 
-قبل الخوض في تفاصيل التنفيذ ، دعنا نتأكد من إعداد البيئة اللازمة للعمل مع Aspose.Words for .NET. تأكد من حصولك على ما يلي:
+Uygulama ayrıntılarına girmeden önce, Aspose.Words for .NET ile çalışmak için gerekli ortama sahip olduğumuzdan emin olalım. Aşağıdakilere sahip olduğunuzdan emin olun:
 
-- تثبيت عملي لـ Aspose.Words لمكتبة .NET
-- المعرفة الأساسية بلغة البرمجة C #
-- الوصول إلى بيئة تطوير .NET
+- Aspose.Words for .NET kitaplığının çalışan bir kurulumu
+- C# programlama dili hakkında temel bilgi
+- .NET geliştirme ortamına erişim
 
-## فهم ميزة Move To Bookmark End في Aspose.Words for .NET
+## Aspose.Words for .NET'in Yer İşareti Sonuna Taşı özelliğini anlama
 
-تسمح لك ميزة Move To Bookmark End بالانتقال إلى نهاية إشارة مرجعية في مستند Word باستخدام Aspose.Words for .NET. هذه الميزة مفيدة عندما تريد إضافة محتوى بعد إشارة مرجعية معينة في وثيقتك برمجيًا.
+Yer İşareti Sonuna Taşı özelliği, Aspose.Words for .NET'i kullanarak bir Word belgesi içindeki bir yer işaretinin sonuna gitmenizi sağlar. Bu özellik, belgenizdeki belirli bir yer iminden sonra programlı olarak içerik eklemek istediğinizde kullanışlıdır.
 
-## شرح شفرة المصدر خطوة بخطوة
+## Kaynak kodunu adım adım açıklama
 
-دعنا نقسم كود المصدر المقدم خطوة بخطوة لفهم كيفية استخدام ميزة Move To Bookmark End في Aspose.Words for .NET.
+Aspose.Words for .NET'te Yer İşareti Sonuna Taşı özelliğinin nasıl kullanılacağını anlamak için sağlanan kaynak kodunu adım adım inceleyelim.
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## 1. Adım: Belge ve belge oluşturucuyu başlatma
 
- أولاً ، نحتاج إلى تهيئة`Document` و`DocumentBuilder` أشياء:
+ İlk olarak, başlatmamız gerekiyor`Document` Ve`DocumentBuilder` nesneler:
 
 ```csharp
 Document doc = new Document(MyDir + "Bookmarks.docx");
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: الانتقال إلى نهاية الإشارة المرجعية
+## 2. Adım: Yer imi sonuna gitme
 
- للانتقال إلى نهاية إشارة مرجعية ، استخدم ملحق`MoveToBookmark` طريقة`DocumentBuilder` فصل:
+ Bir yer iminin sonuna gitmek için`MoveToBookmark` yöntemi`DocumentBuilder` sınıf:
 
 ```csharp
 builder.MoveToBookmark("MyBookmark1", false, true);
 ```
 
- ال`MoveToBookmark` تأخذ الطريقة ثلاث معلمات:
-- اسم الإشارة المرجعية: أدخل اسم الإشارة المرجعية التي تريد الانتقال إليها.
--  IsBookmarkStart: اضبط على`false` للانتقال إلى نهاية الإشارة المرجعية.
--  IsBookmarkEnd: اضبط على`true` للإشارة إلى أنك تريد الانتقال إلى نهاية الإشارة المرجعية.
+ bu`MoveToBookmark` yöntem üç parametre alır:
+- Yer imi adı: Taşımak istediğiniz yer işaretinin adını girin.
+-  IsBookmarkStart: olarak ayarlayın`false` yer iminin sonuna gitmek için
+-  IsBookmarkEnd: olarak ayarlayın`true` yer imi sonuna gitmek istediğinizi belirtmek için
 
-## الخطوة 3: إضافة محتوى في نهاية الإشارة المرجعية
+## 3. Adım: Yer iminin sonuna içerik ekleme
 
-بمجرد الانتقال إلى نهاية الإشارة المرجعية ، يمكنك إضافة محتوى باستخدام الطرق المختلفة التي يوفرها`DocumentBuilder` فصل. في هذا المثال ، نستخدم الامتداد`Writeln` طريقة كتابة سطر من النص:
+Yer imi sonuna geldiğinizde, tarafından sağlanan çeşitli yöntemleri kullanarak içerik ekleyebilirsiniz.`DocumentBuilder` sınıf. Bu örnekte,`Writeln` bir metin satırı yazma yöntemi:
 
 ```csharp
 builder.Writeln("This is a bookmark.");
 ```
 
- ال`Writeln` تقوم الطريقة بإلحاق النص المحدد كفقرة جديدة في الموضع الحالي لملف`DocumentBuilder`.
+ bu`Writeln` yöntem, belirtilen metni yeni bir paragraf olarak metnin geçerli konumuna ekler.`DocumentBuilder`.
 
-### مثال على شفرة المصدر لـ Move To Bookmark End باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Yer İşareti Sonuna Taşı için örnek kaynak kodu
 
 ```csharp
 
@@ -70,7 +70,7 @@ builder.Writeln("This is a bookmark.");
 	
 ```
 
-## خاتمة
+## Çözüm
 
-استكشفنا ميزة Move To Bookmark End في Aspose.Words for .NET. لقد تعلمنا كيفية الانتقال إلى نهاية إشارة مرجعية وإضافة محتوى برمجيًا باستخدام كود المصدر المقدم. توفر هذه الميزة المرونة في التعامل مع مستندات Word باستخدام Aspose.Words for .NET.
+Aspose.Words for .NET'in Yer İşareti Sonuna Taşı özelliğini inceledik. Bir yer iminin sonuna gitmeyi ve sağlanan kaynak kodunu kullanarak programlı olarak içerik eklemeyi öğrendik. Bu özellik, Aspose.Words for .NET kullanarak Word belgelerinin işlenmesinde esneklik sağlar.
 

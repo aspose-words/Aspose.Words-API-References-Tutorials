@@ -1,44 +1,44 @@
 ---
-title: وحدة الفاصل الزمني بين التسميات على المحور
-linktitle: وحدة الفاصل الزمني بين التسميات على المحور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين وحدة الفاصل الزمني بين التسميات على محور الرسم البياني باستخدام Aspose.Words for .NET.
+title: Unidad de intervalo entre etiquetas en el eje
+linktitle: Unidad de intervalo entre etiquetas en el eje
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a establecer la unidad de intervalo entre etiquetas en el eje de un gráfico usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-charts/interval-unit-between-labels-on-axis/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين وحدة الفاصل بين التسميات على محور الرسم البياني. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات سلسلة وتخصيص تسميات المحور.
+Este tutorial explica cómo usar Aspose.Words para .NET para establecer la unidad de intervalo entre etiquetas en el eje de un gráfico. El código fuente proporcionado muestra cómo crear un gráfico, agregar datos de series y personalizar las etiquetas de los ejes.
 
-## الخطوة 1: قم بإعداد المشروع
+## Paso 1: configurar el proyecto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Asegúrese de tener los siguientes requisitos previos:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words para la biblioteca .NET instalada. Puede descargarlo del sitio web oficial de Aspose o usar el administrador de paquetes NuGet para instalarlo.
+- Una ruta de directorio del documento donde se guardará el documento de salida.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Paso 2: Cree un nuevo documento e inserte un gráfico
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Crear un nuevo`Document` objeto y un`DocumentBuilder` para construir el documento.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط عمودي في المستند.
+ A continuación, utilice el`InsertChart` metodo de la`DocumentBuilder` para insertar un gráfico de columnas en el documento.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Paso 3: Agregar datos de series al gráfico
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمسة عناصر بقيمها المقابلة.
+Agregue datos de serie al gráfico. En este ejemplo, agregaremos cinco elementos con sus valores correspondientes.
 
 ```csharp
 chart.Series.Clear();
@@ -47,28 +47,28 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## الخطوة 4: تخصيص تسميات المحور
+## Paso 4: personaliza las etiquetas de los ejes
 
- لتعيين وحدة الفاصل الزمني بين التسميات على المحور X ، قم بالوصول إلى ملف`AxisX` خاصية الرسم البياني وتعيين`TickLabelSpacing` إلى القيمة المطلوبة. في هذا المثال ، قمنا بتعيين التباعد على 2.
+ Para establecer la unidad de intervalo entre etiquetas en el eje X, acceda a la`AxisX` propiedad del gráfico y establecer la`TickLabelSpacing` propiedad al valor deseado. En este ejemplo, establecemos el espaciado en 2.
 
 ```csharp
 chart.AxisX.TickLabelSpacing = 2;
 ```
 
-## الخطوة 5: احفظ المستند
+## Paso 5: Guarde el documento
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Finalmente, guarde el documento en el directorio especificado usando el`Save` metodo de la`Document` objeto.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 ```
 
-هذا يكمل تنفيذ إعداد وحدة الفاصل الزمني بين الملصقات على المحور باستخدام Aspose.Words for .NET.
+Esto completa la implementación de establecer la unidad de intervalo entre etiquetas en el eje usando Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لوحدة الفاصل الزمني بين الملصقات على المحور باستخدام Aspose.Words for .NET 
+### Código fuente de ejemplo para Unidad de intervalo entre etiquetas en eje usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

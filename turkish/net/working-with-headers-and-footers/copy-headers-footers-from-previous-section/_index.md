@@ -1,37 +1,37 @@
 ---
-title: نسخ تذييلات الرؤوس من القسم السابق
-linktitle: نسخ تذييلات الرؤوس من القسم السابق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية نسخ الرؤوس والتذييلات من القسم السابق في مستندات Word باستخدام Aspose.Words for .NET.
+title: Önceki Bölümden Üstbilgileri Altbilgileri Kopyala
+linktitle: Önceki Bölümden Üstbilgileri Altbilgileri Kopyala
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerinin önceki bölümlerinden üst bilgileri ve alt bilgileri nasıl kopyalayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-headers-and-footers/copy-headers-footers-from-previous-section/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية نسخ الرؤوس والتذييلات من القسم السابق في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Bu adım adım öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki önceki bölümdeki üst bilgileri ve alt bilgileri nasıl kopyalayacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
 
-## الخطوة 1: الوصول إلى القسم السابق
+## 1. Adım: Önceki Bölüme Erişim
 
- أولاً ، قم باسترداد القسم السابق من خلال الوصول إلى ملف`PreviousSibling` خاصية القسم الحالي:
+ İlk olarak, erişerek önceki bölümü alın.`PreviousSibling` geçerli bölümün özelliği:
 
 ```csharp
 Section previousSection = (Section)section.PreviousSibling;
 ```
 
-## الخطوة 2: التحقق من القسم السابق
+## 2. Adım: Önceki Bölümü Kontrol Etme
 
-بعد ذلك ، تحقق من وجود قسم سابق. إذا لم يكن هناك قسم سابق ، فنعود ببساطة:
+Ardından, önceki bir bölümün olup olmadığını kontrol edin. Önceki bölüm yoksa, basitçe geri döneriz:
 
 ```csharp
 if (previousSection == null)
     return;
 ```
 
-## الخطوة 3: مسح ونسخ الرؤوس والتذييلات
+## 3. Adım: Üstbilgileri ve Altbilgileri Temizleme ve Kopyalama
 
-لنسخ الرؤوس والتذييلات من القسم السابق إلى القسم الحالي ، نقوم بمسح الرؤوس والتذييلات الموجودة في القسم الحالي ثم نكررها من خلال الرؤوس والتذييلات في القسم السابق لإضافة نسخ مستنسخة إلى القسم الحالي:
+Önceki bölümden geçerli bölüme üstbilgileri ve altbilgileri kopyalamak için, geçerli bölümdeki mevcut üstbilgileri ve altbilgileri temizleriz ve ardından mevcut bölüme klonlanmış kopyalar eklemek için önceki bölümün üstbilgileri ve altbilgilerini yineleriz:
 
 ```csharp
 section.HeadersFooters.Clear();
@@ -40,17 +40,17 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
     section.HeadersFooters.Add(headerFooter.Clone(true));
 ```
 
-## الخطوة 4: حفظ المستند
+## 4. Adım: Belgeyi Kaydetme
 
-أخيرًا ، احفظ المستند المعدل:
+Son olarak, değiştirilen belgeyi kaydedin:
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-هذا كل شيء! لقد نجحت في نسخ الرؤوس والتذييلات من القسم السابق إلى القسم الحالي في مستند Word باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesindeki önceki bölümden geçerli bölüme üst bilgileri ve alt bilgileri başarıyla kopyaladınız.
 
-### مثال على شفرة المصدر لنسخ تذييلات الرؤوس من القسم السابق باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Önceki Bölümden Başlıkları Altbilgileri Kopyalamak için örnek kaynak kodu
 
 ```csharp
 Section previousSection = (Section)section.PreviousSibling;
@@ -66,4 +66,4 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
 doc.Save("OutputDocument.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimlerinize göre değiştirin.

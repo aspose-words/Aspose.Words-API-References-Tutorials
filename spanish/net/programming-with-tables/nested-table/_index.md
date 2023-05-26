@@ -1,78 +1,78 @@
 ---
-title: جدول متداخل
-linktitle: جدول متداخل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET.
+title: Tabla anidada
+linktitle: Tabla anidada
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a crear una tabla anidada en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/nested-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من إنشاء جداول متداخلة في مستندات Word الخاصة بك برمجيًا.
+En este tutorial, aprenderemos cómo crear una tabla anidada en un documento de Word utilizando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá crear tablas anidadas en sus documentos de Word mediante programación.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Paso 1: Configuración del proyecto
+1. Inicie Visual Studio y cree un nuevo proyecto de C#.
+2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Paso 2: Creación del documento e inicialización del generador de documentos
+Para comenzar a trabajar con el documento y el generador de documentos, siga estos pasos:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Creación de documentos
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Inicializar el generador de documentos
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
-## الخطوة 3: بناء الجدول المتداخل
-بعد ذلك ، سنبني الجدول المتداخل عن طريق إدراج الخلايا في الجدول الخارجي وإنشاء جدول جديد داخل الخلية الأولى. استخدم الكود التالي:
+## Paso 3: Construcción de la tabla anidada
+A continuación, crearemos la tabla anidada insertando celdas en la tabla exterior y creando una nueva tabla dentro de la primera celda. Usa el siguiente código:
 
 ```csharp
-// أدخل الخلية الأولى من الجدول الخارجي
+// Inserta la primera celda de la tabla exterior.
 Cell cell = builder. InsertCell();
 builder.Writeln("Cell 1 of the outer table");
 
-// أدخل الخلية الثانية من الجدول الخارجي
+// Inserta la segunda celda de la tabla exterior.
 builder. InsertCell();
 builder.Writeln("Cell 2 of the outer table");
 
-// إنهاء الجدول الخارجي
+// Terminación de la mesa exterior
 builder. EndTable();
 
-// الانتقال إلى الخلية الأولى في الجدول الخارجي
+// Ir a la primera celda de la tabla exterior
 builder.MoveTo(cell.FirstParagraph);
 
-// بناء الجدول الداخلي
+// Construye la mesa interior
 builder. InsertCell();
 builder.Writeln("Cell 1 of inner table");
 builder. InsertCell();
 builder.Writeln("Cell 2 of the inner table");
 
-// نهاية الجدول الداخلي
+// Fin de la mesa interior
 builder. EndTable();
 ```
 
-هنا نستخدم منشئ المستندات لإدراج الخلايا والمحتوى في الجدول الخارجي. ثم ننقل مؤشر منشئ المستندات إلى الخلية الأولى من الجدول الخارجي ونبني جدولًا جديدًا بداخله عن طريق إدراج الخلايا والمحتوى.
+Aquí usamos el generador de documentos para insertar celdas y contenido en la tabla exterior. Luego, movemos el cursor del generador de documentos a la primera celda de la tabla exterior y creamos una nueva tabla en el interior insertando celdas y contenido.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل بالجدول المتداخل. استخدم الكود التالي:
+## Paso 4: Guardar el documento modificado
+Finalmente, necesitamos guardar el documento modificado con la tabla anidada. Usa el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح وملف الاسم لمستند الإخراج.
+Asegúrese de especificar la ruta y el nombre de archivo correctos para el documento de salida.
 
-### نموذج التعليمات البرمجية المصدر للجدول المتداخل باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para la tabla anidada usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -81,12 +81,12 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.Writeln("Outer Table Cell 1");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
-	// هذا الاستدعاء مهم لإنشاء جدول متداخل داخل الجدول الأول.
-	// بدون هذا الاستدعاء ، سيتم إلحاق الخلايا المدرجة أدناه بالجدول الخارجي.
+	// Esta llamada es importante para crear una tabla anidada dentro de la primera tabla.
+	// Sin esta llamada, las celdas insertadas a continuación se agregarán a la tabla exterior.
 	builder.EndTable();
-	// الانتقال إلى الخلية الأولى في الجدول الخارجي.
+	// Mover a la primera celda de la tabla exterior.
 	builder.MoveTo(cell.FirstParagraph);
-	// بناء الجدول الداخلي.
+	// Construye la mesa interior.
 	builder.InsertCell();
 	builder.Writeln("Inner Table Cell 1");
 	builder.InsertCell();
@@ -95,5 +95,5 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك إنشاء جداول متداخلة وفقًا لاحتياجاتك الخاصة في مستندات Word الخاصة بك برمجيًا.
+## Conclusión
+En este tutorial, aprendimos cómo crear una tabla anidada en un documento de Word usando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# proporcionado, puede crear tablas anidadas según sus necesidades específicas en sus documentos de Word mediante programación.

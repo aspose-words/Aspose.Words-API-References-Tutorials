@@ -1,34 +1,34 @@
 ---
-title: البرمجة مع أنماط الجدول والتنسيق
-linktitle: البرمجة مع أنماط الجدول والتنسيق
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على الحصول على مسافة بين النص المحيط بالجدول ، وتطبيق حدود المخطط التفصيلي ، وإنشاء جدول بحدود ، وتعديل تنسيق الصف ، وتطبيق تنسيق الصف ، وتعيين c
+title: Tablo Stilleri ve Biçimlendirme ile Programlama
+linktitle: Tablo Stilleri ve Biçimlendirme ile Programlama
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, metni çevreleyen tablo arasındaki mesafeyi alma, anahat kenarlığı uygulama, kenarlıklı tablo oluşturma, satır biçimlendirmesini değiştirme, satır biçimlendirmesini uygulama, c ayarlamayı içerir.
 type: docs
 weight: 1580
 url: /tr/net/programming-with-table-styles-and-formatting/
 ---
-توفر Aspose.Words for .NET Tutorials on Programming with Table Styles and Formatting موردًا قيمًا للمطورين الذين يرغبون في معالجة الجداول وتنسيقها بشكل فعال في مستندات Word الخاصة بهم. تغطي البرامج التعليمية المفاهيم الأساسية لأنماط الجدول ، مثل إنشاء أنماط الجدول وتعديلها وحذفها. كما أنها توضح كيفية تطبيق الأنماط المحددة مسبقًا والمخصصة على الجداول ، بالإضافة إلى كيفية تنسيق الخلايا والحدود وعناصر الجدول الأخرى.
+Aspose.Words for .NET Tutorials on Table Styles and Formatting ile Programlama, Word belgelerindeki tabloları etkili bir şekilde değiştirmek ve biçimlendirmek isteyen geliştiriciler için değerli bir kaynak sağlar. Öğreticiler, tablo stilleri oluşturma, değiştirme ve silme gibi tablo stillerinin temel kavramlarını kapsar. Ayrıca, önceden tanımlanmış ve özel stillerin tablolara nasıl uygulanacağının yanı sıra hücrelerin, kenarlıkların ve diğer tablo öğelerinin nasıl biçimlendirileceğini de açıklarlar.
 
-توفر هذه البرامج التعليمية خطوة بخطوة عينات تعليمات برمجية واضحة وموجزة ، جنبًا إلى جنب مع الشروحات التفصيلية ، التي توجه المطورين خلال كل خطوة من خطوات معالجة الجدول وتنسيقه. تغطي البرامج التعليمية أيضًا الموضوعات المتقدمة ، مثل إضافة الصفوف والأعمدة وحذفها ودمج الخلايا وتقسيمها وإضافة الأنماط الشرطية إلى الجداول.
+Bu adım adım öğreticiler, geliştiricilere tablo işleme ve biçimlendirme sürecinin her adımında rehberlik eden ayrıntılı açıklamalarla birlikte net ve özlü kod örnekleri sağlar. Öğreticiler ayrıca satır ve sütun ekleme ve silme, hücreleri birleştirme ve bölme ve tablolara koşullu stiller ekleme gibi ileri düzey konuları da kapsar.
 
-ستساعد هذه البرامج التعليمية المطورين على إتقان التقنيات الأساسية للعمل مع الجداول في Aspose.Words for .NET. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه الموارد على تحسين مهارات التلاعب بالجدول والتنسيق ، مما يسمح لك بإنشاء مستندات Word احترافية وجمالية.
+Bu eğitimler, geliştiricilerin Aspose.Words for .NET'te tablolarla çalışmak için temel teknikleri öğrenmelerine yardımcı olacaktır. İster yeni başlayan ister deneyimli bir geliştirici olun, bu kaynaklar tablo işleme ve biçimlendirme becerilerinizi geliştirmenize yardımcı olarak profesyonel ve estetik açıdan hoş Word belgeleri oluşturmanıza olanak tanır.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [الحصول على مسافة بين النص المحيط بالجدول](./get-distance-between-table-surrounding-text/) | دليل خطوة بخطوة لمعرفة المسافة بين النص والجدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [تطبيق حدود المخطط التفصيلي](./apply-outline-border/) | دليل خطوة بخطوة لتطبيق حدود المخطط على جدول باستخدام Aspose.Words for .NET. |
-| [بناء الجدول مع الحدود](./build-table-with-borders/) | دليل خطوة بخطوة لبناء جدول بحدود باستخدام Aspose.Words for .NET. |
-| [تعديل تنسيق الصف](./modify-row-formatting/) | دليل خطوة بخطوة لتغيير تنسيق صف الجدول باستخدام Aspose.Words for .NET. |
-| [تطبيق تنسيق الصفوف](./apply-row-formatting/) | دليل خطوة بخطوة لتطبيق تنسيق الصفوف على جدول باستخدام Aspose.Words for .NET. |
-| [تعيين مساحة الخلية](./set-cell-padding/) | دليل خطوة بخطوة لتحديد هوامش خلايا الجدول باستخدام Aspose.Words for .NET. |
-| [تعديل تنسيق الخلية](./modify-cell-formatting/) | دليل خطوة بخطوة لتغيير تنسيق خلية في جدول باستخدام Aspose.Words for .NET. |
-| [تنسيق الجدول والخلية بحدود مختلفة](./format-table-and-cell-with-different-borders/) | دليل خطوة بخطوة لتنسيق الجدول والخلية بحدود مختلفة باستخدام Aspose.Words for .NET. |
-| [تعيين عنوان الجدول ووصفه](./set-table-title-and-description/) | دليل خطوة بخطوة لتعيين عنوان ووصف للجدول باستخدام Aspose.Words for .NET. |
-| [السماح بتباعد الخلايا](./allow-cell-spacing/) | دليل خطوة بخطوة للسماح بتباعد الخلايا باستخدام Aspose.Words for .NET. |
-| [بناء الجدول بأسلوب](./build-table-with-style/) | دليل خطوة بخطوة لبناء طاولة بنمط مخصص باستخدام Aspose.Words for .NET. |
-| [قم بتوسيع التنسيق في الخلايا والصف من النمط](./expand-formatting-on-cells-and-row-from-style/) | دليل خطوة بخطوة لتوسيع التنسيق إلى الخلايا والصفوف من نمط الجدول باستخدام Aspose.Words for .NET. |
-| [إنشاء نمط الجدول](./create-table-style/) | دليل خطوة بخطوة لإنشاء نمط جدول مخصص باستخدام Aspose.Words for .NET. |
-| [حدد التنسيق الشرطي](./define-conditional-formatting/) | دليل خطوة بخطوة لتحديد التنسيق الشرطي في جدول باستخدام Aspose.Words for .NET. |
-| [تعيين تنسيق خلايا الجدول](./set-table-cell-formatting/) | دليل خطوة بخطوة لإعداد تنسيق خلايا الجدول باستخدام Aspose.Words for .NET. |
-| [تعيين تنسيق صف الجدول](./set-table-row-formatting/) | دليل خطوة بخطوة لإعداد تنسيق صف الجدول باستخدام Aspose.Words for .NET. |
+| [Metni Çevreleyen Tablo Arasındaki Mesafeyi Alın](./get-distance-between-table-surrounding-text/) | Aspose.Words for .NET kullanarak bir Word belgesindeki metin ve tablo arasındaki mesafeyi bulmak için adım adım kılavuz. |
+| [Anahat Kenarlığını Uygula](./apply-outline-border/) | Aspose.Words for .NET kullanarak bir tabloya dış hat kenarlığı uygulamak için adım adım kılavuz. |
+| [Kenarlıklı Tablo Oluştur](./build-table-with-borders/) | Aspose.Words for .NET kullanarak kenarlıklı bir tablo oluşturmak için adım adım kılavuz. |
+| [Satır Biçimlendirmesini Değiştir](./modify-row-formatting/) | Aspose.Words for .NET kullanarak tablo satırı biçimlendirmesini değiştirmek için adım adım kılavuz. |
+| [Satır Biçimlendirmesini Uygula](./apply-row-formatting/) | Aspose.Words for .NET kullanarak bir tabloya satır biçimlendirmesi uygulamak için adım adım kılavuz. |
+| [Hücre Dolgusunu Ayarla](./set-cell-padding/) | Aspose.Words for .NET kullanarak tablo hücresi kenar boşluklarını ayarlamak için adım adım kılavuz. |
+| [Hücre Formatını Değiştir](./modify-cell-formatting/) | Aspose.Words for .NET kullanarak tablodaki bir hücrenin biçimlendirmesini değiştirmek için adım adım kılavuz. |
+| [Tabloyu ve Hücreyi Farklı Kenarlıklarla Biçimlendirme](./format-table-and-cell-with-different-borders/) | Aspose.Words for .NET kullanarak tablo ve hücreyi farklı kenarlıklarla biçimlendirmek için adım adım kılavuz. |
+| [Tablo Başlığını ve Açıklamasını Ayarla](./set-table-title-and-description/) | Aspose.Words for .NET kullanarak bir tablonun başlığını ve açıklamasını ayarlamak için adım adım kılavuz. |
+| [Hücre Aralığına İzin Ver](./allow-cell-spacing/) | Aspose.Words for .NET kullanarak hücre aralığına izin vermek için adım adım kılavuz. |
+| [Stile Sahip Tablo Oluşturun](./build-table-with-style/) | Aspose.Words for .NET kullanarak özel bir stille tablo oluşturmak için adım adım kılavuz. |
+| [Hücrelerde ve Stilden Satırda Biçimlendirmeyi Genişletin](./expand-formatting-on-cells-and-row-from-style/) | Aspose.Words for .NET kullanarak bir tablo stilinden biçimlendirmeyi hücrelere ve satırlara genişletmek için adım adım kılavuz. |
+| [Tablo Stili Oluştur](./create-table-style/) | Aspose.Words for .NET kullanarak özel bir tablo stili oluşturmak için adım adım kılavuz. |
+| [Koşullu Biçimlendirmeyi Tanımla](./define-conditional-formatting/) | Aspose.Words for .NET kullanarak bir tabloda koşullu biçimlendirmeyi tanımlamak için adım adım kılavuz. |
+| [Tablo Hücre Biçimlendirmesini Ayarla](./set-table-cell-formatting/) | Aspose.Words for .NET kullanarak tablo hücresi biçimlendirmesini ayarlamak için adım adım kılavuz. |
+| [Tablo Satırı Biçimlendirmesini Ayarla](./set-table-row-formatting/) | Aspose.Words for .NET kullanarak tablo satırı biçimlendirmesini ayarlamak için adım adım kılavuz. |

@@ -1,61 +1,61 @@
 ---
-title: تصدير خصائص مخصصة
-linktitle: تصدير خصائص مخصصة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تصدير الخصائص المخصصة عند تحويل المستندات إلى PDF باستخدام Aspose.Words for .NET.
+title: Benutzerdefinierte Eigenschaften exportieren
+linktitle: Benutzerdefinierte Eigenschaften exportieren
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie benutzerdefinierte Eigenschaften exportieren, wenn Sie Dokumente mit Aspose.Words für .NET in PDF konvertieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لتصدير الخصائص المخصصة للمستند باستخدام Aspose.Words for .NET. يتيح لك تصدير الخصائص المخصصة تضمين معلومات إضافية في مستند PDF الذي تم إنشاؤه. اتبع الخطوات التالية:
+In diesem Tutorial führen wir Sie durch die Schritte zum Exportieren der benutzerdefinierten Eigenschaften eines Dokuments mit Aspose.Words für .NET. Durch den Export benutzerdefinierter Eigenschaften können Sie zusätzliche Informationen in das generierte PDF-Dokument einfügen. Folgen Sie den unteren Schritten:
 
-## الخطوة 1: إنشاء مستند وإضافة خصائص مخصصة
+## Schritt 1: Erstellen eines Dokuments und Hinzufügen benutzerdefinierter Eigenschaften
 
-ابدأ بإنشاء مثيل لفئة المستند:
+Erstellen Sie zunächst eine Instanz der Document-Klasse:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: إضافة خصائص مخصصة
-بعد ذلك ، أضف الخصائص المخصصة المطلوبة. على سبيل المثال ، لإضافة خاصية "شركة" بالقيمة "Aspose" ، استخدم`Add` طريقة مجموعة CustomDocumentProperties:
+## Schritt 2: Benutzerdefinierte Eigenschaften hinzufügen
+Fügen Sie als Nächstes die gewünschten benutzerdefinierten Eigenschaften hinzu. Um beispielsweise eine „Company“-Eigenschaft mit dem Wert „Aspose“ hinzuzufügen, verwenden Sie die`Add` Methode der CustomDocumentProperties-Sammlung:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-يمكنك إضافة العديد من الخصائص المخصصة حسب الحاجة.
+Sie können beliebig viele benutzerdefinierte Eigenschaften hinzufügen.
 
-## الخطوة 3: قم بتعيين خيارات تصدير PDF
+## Schritt 3: PDF-Exportoptionen festlegen
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وحدد كيفية تصدير الخصائص المخصصة:
+Erstellen Sie eine Instanz der PdfSaveOptions-Klasse und geben Sie an, wie benutzerdefinierte Eigenschaften exportiert werden:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
 ```
 
-يتحكم هذا الخيار في تصدير الخصائص المخصصة عند التحويل إلى PDF.
+Diese Option steuert den Export benutzerdefinierter Eigenschaften beim Konvertieren in PDF.
 
-## الخطوة 4: تحويل المستند إلى PDF
+## Schritt 4: Dokument in PDF konvertieren
 
- استخدم ال`Save` طريقة تحويل المستند إلى PDF مع تحديد خيارات التحويل:
+ Benutzen Sie die`Save` Methode zum Konvertieren des Dokuments in PDF unter Angabe der Konvertierungsoptionen:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Stellen Sie sicher, dass Sie den richtigen Pfad zum Speichern der konvertierten PDF-Datei angeben.
 
-### مثال على شفرة المصدر لتصدير الخصائص المخصصة باستخدام Aspose.Words for .NET
+### Beispielquellcode für den Export benutzerdefinierter Eigenschaften mit Aspose.Words für .NET
 
-إليك التعليمات البرمجية المصدر الكاملة لتصدير الخصائص المخصصة من مستند باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Quellcode zum Exportieren benutzerdefinierter Eigenschaften aus einem Dokument mit Aspose.Words für .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -66,5 +66,5 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveO
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة تصدير الخصائص المخصصة للمستند عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+Wenn Sie diese Schritte befolgen, können Sie beim Konvertieren in PDF mit Aspose.Words für .NET problemlos benutzerdefinierte Eigenschaften eines Dokuments exportieren.
 

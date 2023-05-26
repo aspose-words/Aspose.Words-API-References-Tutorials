@@ -1,59 +1,59 @@
 ---
-title: تحويل الحقول في الجسم
-linktitle: تحويل الحقول في الجسم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET لتحويل حقول الصفحة إلى نص في نص مستند Word.
+title: Convertir les champs dans le corps
+linktitle: Convertir les champs dans le corps
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à utiliser Aspose.Words pour .NET pour convertir les champs Page en texte dans le corps d'un document Word.
 type: docs
 weight: 10
 url: /fr/net/working-with-fields/convert-fields-in-body/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنرشدك إلى كيفية استخدام ميزة ConvertFieldsInBody في Aspose.Words for .NET باستخدام كود المصدر C # المقدم. تتيح لك هذه الميزة تحويل حقول معينة في نص المستند إلى نص عادي ، مما يسهل معالجة المستندات الخاصة بك. اتبع الخطوات أدناه لاستخدام هذه الميزة بشكل فعال.
+Dans ce didacticiel pas à pas, nous vous expliquerons comment utiliser la fonctionnalité ConvertFieldsInBody de Aspose.Words pour .NET à l'aide du code source C# fourni. Cette fonctionnalité vous permet de convertir des champs spécifiques du corps de votre document en texte brut, ce qui facilite le traitement de vos documents. Suivez les étapes ci-dessous pour utiliser efficacement cette fonctionnalité.
 
-## الخطوة 1: المتطلبات الأساسية
+## Étape 1 : Prérequis
 
-قبل أن تبدأ ، تأكد من تثبيت Aspose.Words for .NET وأن لديك مستندًا جاهزًا للمعالجة. تأكد أيضًا من أن لديك مسار الدليل إلى مستنداتك.
+Avant de commencer, assurez-vous d'avoir installé Aspose.Words pour .NET et d'avoir un document prêt à être traité. Assurez-vous également que vous avez le chemin du répertoire vers vos documents.
 
-## الخطوة 2: قم بتحميل المستند
+## Étape 2 : Chargez le document
 
-ابدأ بالتصريح عن متغير للمسار إلى دليل المستندات ، ثم استخدم هذا المتغير لتهيئة كائن المستند من المستند المحدد. في مثالنا ، يُطلق على المستند اسم "Linked Field.docx".
+Commencez par déclarer une variable pour le chemin d'accès à votre répertoire de documents, puis utilisez cette variable pour initialiser un objet Document à partir du document spécifié. Dans notre exemple, le document s'appelle "Champs liés.docx".
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك.
+// Le chemin d'accès à votre répertoire de documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Charger le document
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-## الخطوة 3: تحويل حقول الصفحة إلى نص عادي
+## Étape 3 : convertir les champs de page en texte brut
 
-الآن بعد أن تم تحميل المستند ، يمكننا الانتقال إلى خطوات التحويل. لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول ، يمكنك استخدام ملحق`Range.Fields` طريقة للحصول على جميع الحقول في النطاق المحدد ، ثم تصفية الحقول من النوع`FieldType.FieldPage` . ثم يمكنك استخدام ملف`ForEach` طريقة للتكرار عبر كل حقل واستدعاء`Unlink()` طريقة لتحويله إلى نص عادي.
+Maintenant que le document est chargé, nous pouvons passer aux étapes de conversion. Pour convertir les champs de la page en texte brut dans le corps de la première section, vous pouvez utiliser la`Range.Fields` méthode pour obtenir tous les champs dans la plage spécifiée, puis filtrer les champs de type`FieldType.FieldPage` . Ensuite, vous pouvez utiliser le`ForEach` méthode pour parcourir chaque champ et appeler la`Unlink()` méthode pour le convertir en texte brut.
 
 ```csharp
-// قم بتمرير المعلمات المناسبة لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول.
+// Passez les paramètres appropriés pour convertir les champs de la page en texte brut dans le corps de la première section.
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.Unlink());
 ```
 
-## الخطوة 4: احفظ المستند المعدل
+## Étape 4 : Enregistrer le document modifié
 
- بمجرد تحويل حقول الصفحة إلى نص عادي ، يمكنك حفظ المستند المعدل باستخدام امتداد`Save()` طريقة وتحديد مسار واسم ملف الإخراج. في مثالنا ، نحفظها كـ "WorkingWithFields.ConvertFieldsInBody.docx".
+ Une fois que vous avez converti les champs de la page en texte brut, vous pouvez enregistrer le document modifié à l'aide de la`Save()` méthode et en spécifiant le chemin et le nom du fichier de sortie. Dans notre exemple, nous l'enregistrons sous "WorkingWithFields.ConvertFieldsInBody.docx".
 
 ```csharp
-// احفظ المستند المعدل
+// Enregistrer le document modifié
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
 
-### مثال على شفرة المصدر لتحويل الحقول في النص باستخدام Aspose.Words for .NET
+### Exemple de code source pour convertir des champs dans le corps avec Aspose.Words pour .NET
 
-إليك مثال شفرة المصدر الكاملة لتحويل الحقول إلى نص باستخدام Aspose.Words for .NET:
+Voici l'exemple de code source complet pour convertir les champs dans le corps à l'aide de Aspose.Words pour .NET :
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك.
+// Le chemin d'accès à votre répertoire de documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Charger le document
 Document doc = new Document(dataDir + "Linked fields.docx");
 
-// قم بتمرير المعلمات المناسبة لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول.
+// Passez les paramètres appropriés pour convertir les champs de la page en texte brut dans le corps de la première section.
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A

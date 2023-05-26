@@ -1,35 +1,35 @@
 ---
-title: رمز مضمّن
-linktitle: رمز مضمّن
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تضمين التعليمات البرمجية باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Встроенный код
+linktitle: Встроенный код
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как встраивать код с помощью Aspose.Words для .NET. Пошаговое руководство.
 type: docs
 weight: 10
 url: /ru/net/working-with-markdown/inline-code/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة الشفرة المضمنة مع Aspose.Words for .NET. يتم استخدام التعليمات البرمجية المضمنة لتمثيل أجزاء من التعليمات البرمجية بشكل مرئي داخل فقرة.
+В этом примере мы покажем вам, как использовать функцию встроенного кода с Aspose.Words для .NET. Встроенный код используется для визуального представления фрагментов кода внутри абзаца.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Шаг 1: Использование генератора документов
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Во-первых, мы будем использовать генератор документов, чтобы добавить содержимое в наш документ.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: أضف نمطًا للرمز المضمَّن
+## Шаг 2. Добавьте стиль для встроенного кода.
 
- سنضيف نمطًا مخصصًا للشفرة المضمنة باستخدام امتداد`Styles.Add` طريقة`Document` هدف. في هذا المثال ، نقوم بإنشاء نمط يسمى "InlineCode" للشفرة المضمنة مع علامة خلفية افتراضية.
+ Мы добавим собственный стиль для встроенного кода, используя`Styles.Add` метод`Document` объект. В этом примере мы создаем стиль под названием «InlineCode» для встроенного кода с обратной кавычкой по умолчанию.
 
 ```csharp
 Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 builder.Font.Style = inlineCode1BackTicks;
 ```
 
-## الخطوة 3: أضف التعليمات البرمجية المضمنة
+## Шаг 3. Добавьте встроенный код
 
-الآن يمكننا إضافة التعليمات البرمجية المضمنة باستخدام النمط المخصص "InlineCode". في هذا المثال ، نضيف جزأين من النص بأرقام مختلفة من backticks.
+Теперь мы можем добавить встроенный код, используя собственный стиль «InlineCode». В этом примере мы добавляем два фрагмента текста с разным количеством обратных кавычек.
 
 ```csharp
 builder.Writeln("Text with InlineCode style with 1 backtick");
@@ -42,23 +42,23 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 ```
 
 
-### مثال على شفرة المصدر لـ Inline Code مع Aspose.Words for .NET
+### Пример исходного кода для встроенного кода с Aspose.Words для .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Используйте конструктор документов, чтобы добавить содержимое в документ.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	//تم فقدان عدد backticks ، سيتم استخدام علامة خلفية واحدة بشكل افتراضي.
+	//Количество обратных кавычек пропущено, по умолчанию будет использоваться одна обратная кавычка.
 	Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 	builder.Font.Style = inlineCode1BackTicks;
 	builder.Writeln("Text with InlineCode style with 1 backtick");
 
-	// سيكون هناك 3 باكتيكس.
+	// Будет 3 обратных галочки.
 	Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
 	builder.Font.Style = inlineCode3BackTicks;
 	builder.Writeln("Text with InlineCode style with 3 backtick");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام وظيفة التعليمات البرمجية المضمنة مع Aspose.Words for .NET.
+Поздравляем! Теперь вы узнали, как использовать функции встроенного кода с Aspose.Words для .NET.
 

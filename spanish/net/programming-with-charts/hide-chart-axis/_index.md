@@ -1,44 +1,44 @@
 ---
-title: إخفاء محور التخطيط
-linktitle: إخفاء محور التخطيط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إخفاء محور الرسم البياني في مستند باستخدام Aspose.Words for .NET. إخفاء المحور لعرض مخطط أوضح وأكثر تركيزًا.
+title: Ocultar eje de gráfico
+linktitle: Ocultar eje de gráfico
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a ocultar el eje del gráfico en un documento con Aspose.Words para .NET. Oculte el eje para una visualización del gráfico más limpia y enfocada.
 type: docs
 weight: 10
 url: /es/net/programming-with-charts/hide-chart-axis/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإخفاء محور المخطط في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات سلسلة وإخفاء محور المخطط.
+Este tutorial explica cómo usar Aspose.Words para .NET para ocultar el eje del gráfico en un documento. El código fuente proporcionado muestra cómo crear un gráfico, agregar datos de serie y ocultar el eje del gráfico.
 
-## الخطوة 1: قم بإعداد المشروع
+## Paso 1: configurar el proyecto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Asegúrese de tener los siguientes requisitos previos:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words para la biblioteca .NET instalada. Puede descargarlo del sitio web oficial de Aspose o usar el administrador de paquetes NuGet para instalarlo.
+- Una ruta de directorio del documento donde se guardará el documento de salida.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Paso 2: Cree un nuevo documento e inserte un gráfico
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Crear un nuevo`Document` objeto y un`DocumentBuilder` para construir el documento.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، أدخل مخططًا في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`. في هذا المثال ، سنقوم بإدراج مخطط عمودي.
+ A continuación, inserte un gráfico en el documento utilizando el`InsertChart` metodo de la`DocumentBuilder`. En este ejemplo, insertaremos un gráfico de columnas.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Paso 3: Agregar datos de series al gráfico
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمسة عناصر والقيم المقابلة لها.
+Agregue datos de serie al gráfico. En este ejemplo, agregaremos cinco elementos y sus valores correspondientes.
 
 ```csharp
 chart.Series.Clear();
@@ -47,30 +47,30 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## الخطوة 4: إخفاء محور المخطط
+## Paso 4: ocultar el eje del gráfico
 
- لإخفاء محور المخطط ، قم بالوصول إلى ملف`AxisY` خاصية الرسم البياني وتعيين`Hidden` ملكية ل`true`.
+ Para ocultar el eje del gráfico, acceda a la`AxisY` propiedad del gráfico y establecer la`Hidden` propiedad a`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-في هذا المثال ، نقوم بإخفاء المحور ص في الرسم البياني.
+En este ejemplo, ocultamos el eje Y del gráfico.
 
-## الخطوة 5: احفظ المستند
+## Paso 5: Guarde el documento
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Finalmente, guarde el documento en el directorio especificado usando el`Save` metodo de la`Document` objeto.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 ```
 
-هذا يكمل تنفيذ إخفاء محور الرسم البياني باستخدام Aspose.Words for .NET.
+Esto completa la implementación de ocultar el eje del gráfico usando Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لإخفاء محور الرسم البياني باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Ocultar eje de gráfico usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

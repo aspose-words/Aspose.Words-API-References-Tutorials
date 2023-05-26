@@ -1,43 +1,43 @@
 ---
-title: فتح ميزات النوع
-linktitle: فتح ميزات النوع
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET
+title: Offene Typfunktionen
+linktitle: Offene Typfunktionen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie Open Type-Funktionen in Aspose.Words für .NET aktivieren und verwenden
 type: docs
 weight: 10
 url: /de/net/enable-opentype-features/open-type-features/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من العمل باستخدام ميزات Open Type في مستندات Word الخاصة بك.
+In diesem umfassenden Tutorial erfahren Sie, wie Sie Open Type-Funktionen in Aspose.Words für .NET aktivieren und nutzen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieses Handbuchs werden Sie in der Lage sein, mit Open Type-Funktionen in Ihren Word-Dokumenten zu arbeiten.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## الخطوة 1: قم بتحميل المستند
-للبدء ، قم بتحميل المستند باستخدام فئة المستند:
+## Schritt 1: Laden Sie das Dokument
+Laden Sie zunächst das Dokument mit der Document-Klasse:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "OpenType text shaping.docx");
 ```
 
-## الخطوة 2: تفعيل ميزات النوع المفتوح
-لتمكين ميزات Open Type ، قم بتعيين خاصية TextShaperFactory لفئة LayoutOptions على مثيل لمصنع شكل النص المطلوب. في هذا المثال ، نستخدم HarfBuzzTextShaperFactory:
+## Schritt 2: Aktivieren Sie Open Type-Funktionen
+Um Open Type-Funktionen zu aktivieren, legen Sie die TextShaperFactory-Eigenschaft der LayoutOptions-Klasse auf eine Instanz der gewünschten Textformer-Factory fest. In diesem Beispiel verwenden wir die HarfBuzzTextShaperFactory:
 
 ```csharp
 doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzTextShaperFactory.Instance;
 ```
 
-## الخطوة 3: احفظ المستند
-بعد تمكين ميزات Open Type ، احفظ المستند بتنسيق الإخراج المطلوب ، مثل PDF:
+## Schritt 3: Speichern Sie das Dokument
+Nachdem Sie die Open Type-Funktionen aktiviert haben, speichern Sie das Dokument im gewünschten Ausgabeformat, z. B. PDF:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-### مثال على كود المصدر لميزات النوع المفتوح باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لاستخدام ميزات Open Type في Aspose.Words for .NET:
+### Beispielquellcode für Open Type Features mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode für die Verwendung von Open Type-Funktionen in Aspose.Words für .NET:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -48,7 +48,7 @@ doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzText
 doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن العمل مع ميزات Open Type في مستندات Word الخاصة بك.
+## Abschluss
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie Open Type-Funktionen in Aspose.Words für .NET aktivieren und nutzen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie jetzt mit Open Type-Funktionen in Ihren Word-Dokumenten arbeiten.
 
-توفر ميزات Open Type إمكانات طباعة وتشكيل نصية محسّنة ، مما يسمح لك بإنشاء مستندات جذابة بصريًا وذات مظهر احترافي. جرب مصانع مختلفة لأشكال النص واستكشف إمكانيات ميزات Open Type في مشروعاتك.
+Open Type-Funktionen bieten erweiterte Möglichkeiten zur Typografie und Textgestaltung, sodass Sie optisch ansprechende und professionell aussehende Dokumente erstellen können. Experimentieren Sie mit verschiedenen Textformerfabriken und erkunden Sie die Möglichkeiten von Open Type-Funktionen in Ihren Projekten.

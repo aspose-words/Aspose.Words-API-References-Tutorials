@@ -1,26 +1,26 @@
 ---
-title: البرمجة بخصائص المستند
-linktitle: البرمجة بخصائص المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على متغيرات ، تعداد الخصائص ، إضافة خصائص وثيقة مخصصة ، إزالة خصائص المستند المخصصة ، إزالة المعلومات الشخصية ، التكوين
+title: Programmering med dokumentegenskaper
+linktitle: Programmering med dokumentegenskaper
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar innehåller hämta variabler, räkna upp egenskaper, lägg till anpassade dokumentegenskaper, ta bort anpassade dokumentegenskaper, ta bort personlig information, konfigurera
 type: docs
 weight: 1520
 url: /sv/net/programming-with-document-properties/
 ---
-توفر البرامج التعليمية لـ Aspose.Words for .NET حول البرمجة بخصائص المستند نظرة متعمقة على إدارة خصائص المستندات في مشروعاتك. في هذه البرامج التعليمية ، ستتعلم كيفية الوصول إلى الخصائص وتعديلها وحذفها مثل العنوان والمؤلف والكلمات الرئيسية وما إلى ذلك ، لتخصيص مستندات Word الخاصة بك. ستتعلم أيضًا كيفية إضافة خصائص مخصصة لتلبية احتياجاتك الخاصة.
+Aspose.Words för .NET-handledningarna om programmering med dokumentegenskaper ger en djupgående titt på hur du hanterar dokumentegenskaper i dina projekt. I dessa handledningar kommer du att lära dig hur du kommer åt, ändrar och tar bort egenskaper som titel, författare, nyckelord, etc., för att anpassa dina Word-dokument. Du kommer också att lära dig hur du lägger till anpassade egenskaper för att möta dina specifika behov.
 
-ستوجهك هذه البرامج التعليمية خطوة بخطوة لاستخدام مكتبة Aspose.Words for .NET للتفاعل مع خصائص المستند. سوف تتعلم كيفية استخراج الخصائص الموجودة وتعيين قيم جديدة وإزالة الخصائص غير المرغوب فيها. من خلال فهم كيفية التعامل مع خصائص المستند ، ستتمكن من إنشاء مستندات Word احترافية وتخصيصها لتناسب متطلباتك.
+Dessa handledningar guidar dig steg för steg för att använda Aspose.Words för .NET-biblioteket för att interagera med dokumentegenskaper. Du kommer att lära dig hur du extraherar befintliga egenskaper, ställer in nya värden och tar bort oönskade egenskaper. Genom att förstå hur man manipulerar dokumentegenskaper kommer du att kunna skapa professionella Word-dokument och anpassa dem för att passa dina krav.
 
-سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستزودك برامج Aspose.Words for .NET التعليمية حول البرمجة بخصائص المستندات بالمعرفة والمهارات اللازمة لإدارة خصائص مستند Word بشكل فعال وتحسين سير عمل التطوير لديك.
+Oavsett om du är nybörjare eller erfaren utvecklare kommer Aspose.Words för .NET-handledningarna om programmering med dokumentegenskaper att ge dig kunskap och färdigheter för att effektivt hantera dina Word-dokumentegenskaper och optimera ditt utvecklingsarbetsflöde.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [احصل على المتغيرات](./get-variables/) | دليل خطوة بخطوة لاسترداد متغيرات المستند باستخدام Aspose.Words for .NET. |
-| [تعداد الخصائص](./enumerate-properties/) | دليل خطوة بخطوة لتعداد خصائص المستند باستخدام Aspose.Words for .NET. |
-| [أضف خصائص المستند المخصصة](./add-custom-document-properties/) | دليل خطوة بخطوة لإضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET. |
-| [قم بإزالة خصائص المستند المخصصة](./remove-custom-document-properties/) | دليل تفصيلي خطوة بخطوة لإزالة الخصائص المخصصة من مستند باستخدام Aspose.Words for .NET. |
-| [إزالة المعلومات الشخصية](./remove-personal-information/) | دليل تفصيلي خطوة بخطوة لإزالة المعلومات الشخصية من مستند باستخدام Aspose.Words for .NET. |
-| [تكوين ارتباط إلى المحتوى](./configuring-link-to-content/) | دليل تفصيلي خطوة بخطوة لإعداد الارتباط بالمحتوى في مستند باستخدام Aspose.Words for .NET. |
-| [التحويل بين وحدات القياس](./convert-between-measurement-units/) | دليل تفصيلي خطوة بخطوة للتحويل بين وحدات القياس في مستند باستخدام Aspose.Words for .NET. |
-| [استخدم أحرف التحكم](./use-control-characters/) | دليل خطوة بخطوة لاستخدام أحرف التحكم مع Aspose.Words for .NET. |
+| [Skaffa variabler](./get-variables/) | Steg-för-steg guide för att hämta dokumentvariabler med Aspose.Words för .NET. |
+| [Räkna upp egenskaper](./enumerate-properties/) | Steg-för-steg-guide för att räkna upp dokumentegenskaper med Aspose.Words för .NET. |
+| [Lägg till anpassade dokumentegenskaper](./add-custom-document-properties/) | Steg för steg guide för att lägga till anpassade egenskaper till ett dokument med Aspose.Words för .NET. |
+| [Ta bort anpassade dokumentegenskaper](./remove-custom-document-properties/) | Steg-för-steg guide för att ta bort anpassade egenskaper från ett dokument med Aspose.Words för .NET. |
+| [Ta bort personlig information](./remove-personal-information/) | Steg-för-steg-guide för att ta bort personlig information från ett dokument med Aspose.Words för .NET. |
+| [Konfigurera länk till innehåll](./configuring-link-to-content/) | Steg-för-steg-guide för att ställa in länkning till innehåll i ett dokument med Aspose.Words för .NET. |
+| [Konvertera mellan måttenheter](./convert-between-measurement-units/) | Steg-för-steg guide för att konvertera mellan måttenheter i ett dokument med Aspose.Words för .NET. |
+| [Använd kontrolltecken](./use-control-characters/) | Steg-för-steg-guide för att använda kontrolltecken med Aspose.Words för .NET. |

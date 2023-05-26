@@ -1,39 +1,39 @@
 ---
-title: تحقق من تأثير النص DrawingML
-linktitle: تحقق من تأثير النص DrawingML
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية التحقق من تأثيرات نص DrawingML في مستند Word باستخدام Aspose.Words for .NET.
+title: Überprüfen Sie den DrawingML-Texteffekt
+linktitle: Überprüfen Sie den DrawingML-Texteffekt
+second_title: Aspose.Words für .NET API-Referenz
+description: In diesem Tutorial erfahren Sie, wie Sie DrawingML-Texteffekte in einem Word-Dokument mit Aspose.Words für .NET überprüfen.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/check-drawingml-text-effect/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية التحقق من تأثيرات نص DrawingML في مستند Word باستخدام Aspose.Words Library for .NET. يتيح لك التحقق من تأثيرات نص DrawingML تحديد ما إذا تم تطبيق تأثير معين على جزء من النص. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In diesem Tutorial zeigen wir Ihnen, wie Sie DrawingML-Texteffekte in einem Word-Dokument mithilfe der Aspose.Words-Bibliothek für .NET überprüfen. Durch die Überprüfung von DrawingML-Texteffekten können Sie feststellen, ob ein bestimmter Effekt auf einen Teil des Textes angewendet wird. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على تأثيرات نصية DrawingML
+## Voraussetzungen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
+- Grundkenntnisse der Programmiersprache C#
+- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
+- Ein Word-Dokument, das DrawingML-Texteffekte enthält
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+ Zuerst müssen Sie den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments festlegen. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وتحقق من تأثيرات النص
-بعد ذلك ، سنقوم بتحميل مستند Word والوصول إلى مجموعة عمليات التشغيل (تسلسل الأحرف) في الفقرة الأولى من نص المستند. بعد ذلك ، سوف نتحقق مما إذا تم تطبيق أي تأثيرات نصية معينة لـ DrawingML على خط التشغيل الأول.
+## Schritt 2: Laden Sie das Dokument und überprüfen Sie die Texteffekte
+Als Nächstes laden wir das Word-Dokument und greifen auf die Sammlung von Abläufen (Zeichenfolgen) im ersten Absatz des Hauptteils des Dokuments zu. Als Nächstes prüfen wir, ob bestimmte DrawingML-Texteffekte auf die Schriftart des ersten Durchlaufs angewendet werden.
 
 ```csharp
-//قم بتحميل المستند
+//Laden Sie das Dokument
 Document doc = new Document(dataDir + "DrawingML text effects.docx");
 RunCollection runs = doc.FirstSection.Body.FirstParagraph.Runs;
 Font runFont = runs[0].Font;
 
-// تحقق من تأثيرات النص DrawingML
+// Überprüfen Sie die Texteffekte von DrawingML
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Shadow));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Effect3D));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Reflection));
@@ -41,18 +41,18 @@ Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Outline));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
 ```
 
-### عينة من التعليمات البرمجية المصدر للتحقق من تأثير DMLText باستخدام Aspose.Words for .NET 
+### Beispielquellcode für Check DMLText Effect mit Aspose.Words für .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "DrawingML text effects.docx");
 RunCollection runs = doc.FirstSection.Body.FirstParagraph.Runs;
 Font runFont = runs[0].Font;
 
-// قد يكون للتشغيل الواحد عدة تأثيرات نصية Dml مطبقة.
+// Bei einem Lauf können mehrere DML-Texteffekte angewendet werden.
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Shadow));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Effect3D));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Reflection));
@@ -61,5 +61,5 @@ Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية التحقق من تأثيرات نص DrawingML في مستند Word باستخدام Aspose.Words for .NET. يتيح لك التحقق من تأثيرات نص DrawingML تحديد أجزاء النص التي تم تطبيق تأثيرات معينة عليها. لا تتردد في استخدام هذه الميزة لمعالجة وتحليل تأثيرات النص في مستندات Word الخاصة بك.
+## Abschluss
+In diesem Tutorial haben wir gesehen, wie man DrawingML-Texteffekte in einem Word-Dokument mit Aspose.Words für .NET überprüft. Durch die Überprüfung von DrawingML-Texteffekten können Sie Textteile identifizieren, auf die bestimmte Effekte angewendet werden. Nutzen Sie diese Funktion gerne zum Bearbeiten und Analysieren von Texteffekten in Ihren Word-Dokumenten.

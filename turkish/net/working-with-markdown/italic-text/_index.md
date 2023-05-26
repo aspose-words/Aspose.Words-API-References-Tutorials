@@ -1,44 +1,44 @@
 ---
-title: نص مائل
-linktitle: نص مائل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية كتابة نص مائل باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: İtalik Metin
+linktitle: İtalik Metin
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET Adım adım kılavuz ile metni italik yapmayı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/italic-text/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة النص المائل مع Aspose.Words for .NET. يستخدم النص المائل للتأكيد على أجزاء معينة من المستند.
+Bu örnekte, italik metin özelliğini Aspose.Words for .NET ile nasıl kullanacağınız konusunda size yol göstereceğiz. İtalik metin, bir belgenin belirli bölümlerini vurgulamak için kullanılır.
 
-## الخطوة 1: استخدام منشئ المستندات
+## 1. Adım: Bir belge oluşturucu kullanma
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+İlk olarak, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: اجعل النص مائلًا
+## 2. Adım: Metni İtalik Yap
 
- يمكننا جعل النص مائلاً عن طريق تعيين الخط`Italic` ملكية ل`true`.
+ Yazı tipini ayarlayarak metni italik hale getirebiliriz.`Italic` mülkiyet`true`.
 
 ```csharp
 builder.Font.Italic = true;
 builder.Writeln("This text will be in italics");
 ```
 
-### مثال على شفرة المصدر للنص المائل باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile italik metin için örnek kaynak kodu
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص مائلًا.
+	// Metni italik yapın.
 	builder.Font.Italic = true;
 	builder.Writeln("This text will be Italic");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة النص المائل مع Aspose.Words for .NET.
+Tebrikler! Artık italik metin özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.
 

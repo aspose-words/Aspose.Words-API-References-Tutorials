@@ -1,20 +1,20 @@
 ---
-title: نوع التحكم المفضل
-linktitle: نوع التحكم المفضل
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحديد نوع عنصر التحكم المفضل عند تحميل مستند HTML باستخدام Aspose.Words for .NET.
+title: Bevorzugter Steuerungstyp
+linktitle: Bevorzugter Steuerungstyp
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Festlegen des bevorzugten Steuerelementtyps beim Laden eines HTML-Dokuments mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة نوع عنصر التحكم المفضل مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تحديد نوع عنصر التحكم المفضل عند تحميل مستند HTML.
+Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zur Verwendung der Funktion „Bevorzugter Steuerelementtyp“ mit Aspose.Words für .NET. Wir werden jeden Teil des Codes im Detail erklären. Am Ende dieses Tutorials erfahren Sie, wie Sie beim Laden eines HTML-Dokuments den bevorzugten Steuerelementtyp angeben.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert und konfiguriert haben. Die Bibliothek und Installationsanweisungen finden Sie auf der Aspose-Website.
 
-## الخطوة 1: تحديد كود HTML
+## Schritt 1: Definieren Sie den HTML-Code
 
- للبدء ، تحتاج إلى تحديد كود HTML الذي تريد تحميله كمستند. في هذا المثال ، قمنا بتعريف ملف`html` متغير يحتوي على كود HTML لمحدد مع خيارات.
+ Zunächst müssen Sie den HTML-Code definieren, den Sie als Dokument laden möchten. In diesem Beispiel haben wir eine definiert`html` Variable, die den HTML-Code eines Selektors mit Optionen enthält.
 
 ```csharp
 const string html=@"
@@ -27,24 +27,24 @@ const string html=@"
 ";
 ```
 
-## الخطوة 2: تعيين خيارات تحميل HTML
+## Schritt 2: Legen Sie die HTML-Ladeoptionen fest
 
- بعد ذلك ، نقوم بإنشاء ملف`HtmlLoadOptions` كائن وتعيين`PreferredControlType` ملكية ل`HtmlControlType.StructuredDocumentTag`. هذا يخبر Aspose.Words باستخدام StructuredDocumentTags لتمثيل HTML عند التحميل.
+ Als nächstes erstellen wir eine`HtmlLoadOptions` Objekt und legen Sie das fest`PreferredControlType` Eigentum zu`HtmlControlType.StructuredDocumentTag`. Dadurch wird Aspose.Words angewiesen, beim Laden StructuredDocumentTags zur Darstellung von HTML zu verwenden.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
-## الخطوة 3: تحميل وحفظ المستند
+## Schritt 3: Laden und speichern Sie das Dokument
 
- نحن نستخدم ال`Document` فئة لتحميل كود HTML من تدفق الذاكرة مع خيارات التحميل المحددة مسبقًا. ثم نقوم بحفظ المستند في الدليل المحدد بامتداد`.docx` تنسيق الملف.
+ Wir benutzen das`Document` Klasse zum Laden von HTML-Code aus einem Speicherstream mit den zuvor definierten Ladeoptionen. Anschließend speichern wir das Dokument im angegebenen Verzeichnis mit`.docx` Datei Format.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### مثال على شفرة المصدر لنوع التحكم المفضل مع Aspose.Words for .NET
+### Beispielquellcode für bevorzugten Steuerelementtyp mit Aspose.Words für .NET
 
 ```csharp
 	
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 			</select>
 		</html>
 	";
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 
@@ -66,4 +66,4 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 ```
 
-هذا كل شئ ! لقد نجحت في تحديد نوع عنصر التحكم المفضل عند تحميل مستند HTML باستخدام Aspose.Words for .NET.
+Das ist alles ! Sie haben den bevorzugten Steuerelementtyp beim Laden eines HTML-Dokuments mit Aspose.Words für .NET erfolgreich angegeben.

@@ -1,44 +1,44 @@
 ---
-title: إخفاء محور التخطيط
-linktitle: إخفاء محور التخطيط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إخفاء محور الرسم البياني في مستند باستخدام Aspose.Words for .NET. إخفاء المحور لعرض مخطط أوضح وأكثر تركيزًا.
+title: 隐藏图表轴
+linktitle: 隐藏图表轴
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 隐藏文档中的图表轴。隐藏轴以获得更清晰、更集中的图表显示。
 type: docs
 weight: 10
 url: /zh/net/programming-with-charts/hide-chart-axis/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإخفاء محور المخطط في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات سلسلة وإخفاء محور المخطط.
+本教程解释了如何使用 Aspose.Words for .NET 隐藏文档中的图表轴。提供的源代码演示了如何创建图表、添加系列数据和隐藏图表轴。
 
-## الخطوة 1: قم بإعداد المشروع
+## 第 1 步：设置项目
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+确保您具有以下先决条件：
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- 安装了 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载或使用 NuGet 包管理器安装它。
+- 将保存输出文档的文档目录路径。
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 第 2 步：创建新文档并插入图表
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، أدخل مخططًا في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`. في هذا المثال ، سنقوم بإدراج مخطط عمودي.
+接下来，使用`InsertChart`的方法`DocumentBuilder`.在此示例中，我们将插入一个柱形图。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## 第 3 步：将系列数据添加到图表
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمسة عناصر والقيم المقابلة لها.
+将系列数据添加到图表中。在此示例中，我们将添加五个项目及其相应的值。
 
 ```csharp
 chart.Series.Clear();
@@ -47,30 +47,30 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## الخطوة 4: إخفاء محور المخطط
+## 第 4 步：隐藏图表轴
 
- لإخفاء محور المخطط ، قم بالوصول إلى ملف`AxisY` خاصية الرسم البياني وتعيين`Hidden` ملكية ل`true`.
+要隐藏图表轴，请访问`AxisY`图表的属性并设置`Hidden`财产给`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-في هذا المثال ، نقوم بإخفاء المحور ص في الرسم البياني.
+在这个例子中，我们隐藏了图表的 Y 轴。
 
-## الخطوة 5: احفظ المستند
+## 第 5 步：保存文档
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+最后，使用 将文件保存到指定目录`Save`的方法`Document`目的。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 ```
 
-هذا يكمل تنفيذ إخفاء محور الرسم البياني باستخدام Aspose.Words for .NET.
+这样就完成了使用Aspose.Words for .NET隐藏图表轴的实现。
 
-### مثال على شفرة المصدر لإخفاء محور الرسم البياني باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 隐藏图表轴的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

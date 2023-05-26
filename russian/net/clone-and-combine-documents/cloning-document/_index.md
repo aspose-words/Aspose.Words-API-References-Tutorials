@@ -1,41 +1,41 @@
 ---
-title: وثيقة الاستنساخ
-linktitle: وثيقة الاستنساخ
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استنساخ مستند Word باستخدام Aspose.Words for .NET.
+title: Клонирование документа
+linktitle: Клонирование документа
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как клонировать документ Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/clone-and-combine-documents/cloning-document/
 ---
 
-في هذا البرنامج التعليمي ، سنخبرك بكيفية استنساخ مستند Word باستخدام ميزة النسخ في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر وإنشاء نسخة طبق الأصل من مستند موجود.
+В этом уроке мы расскажем вам, как клонировать документ Word, используя функцию клонирования Aspose.Words для .NET. Выполните следующие шаги, чтобы понять исходный код и создать точную копию существующего документа.
 
-## الخطوة 1: تحميل المستند
+## Шаг 1: Загрузка документа
 
-للبدء ، حدد دليل المستند الخاص بك وقم بتحميل المستند الموجود في كائن المستند. إليك الطريقة:
+Для начала укажите каталог документов и загрузите существующий документ в объект Document. Вот как:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## الخطوة 2: استنساخ المستند
+## Шаг 2. Клонируйте документ
 
-سنقوم الآن باستنساخ المستند لإنشاء نسخة طبق الأصل منه. إليك الطريقة:
+Теперь мы собираемся клонировать документ, создав его точную копию. Вот как:
 
 ```csharp
 Document clone = doc.Clone();
 clone.Save(dataDir + "CloneAndCombineDocuments.ClonageDocument.docx");
 ```
 
-### مثال على شفرة المصدر لنسخ المستند باستخدام Aspose.Words for .NET
+### Пример исходного кода для клонирования документа с использованием Aspose.Words для .NET
 
-فيما يلي رمز المصدر الكامل لميزة استنساخ مستندات Aspose.Words لـ .NET:
+Вот полный исходный код функции клонирования документов Aspose.Words для .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Путь к каталогу документов.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";            
 	Document doc = new Document(MyDir + "Document.docx");
 
@@ -44,5 +44,5 @@ clone.Save(dataDir + "CloneAndCombineDocuments.ClonageDocument.docx");
 	
 ```
 
-باستخدام هذا الرمز ، ستتمكن من استنساخ مستند Word باستخدام Aspose.Words for .NET. سيتم حفظ النسخة الدقيقة من المستند باسم ملف جديد.
+С помощью этого кода вы сможете клонировать документ Word, используя Aspose.Words для .NET. Точная копия документа будет сохранена под новым именем файла.
 

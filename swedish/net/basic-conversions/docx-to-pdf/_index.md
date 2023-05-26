@@ -1,36 +1,36 @@
 ---
-title: Docx إلى Pdf
-linktitle: Docx إلى Pdf
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات Word من Docx إلى PDF باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Docx till pdf
+linktitle: Docx till pdf
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du konverterar Word-dokument från Docx till PDF med Aspose.Words för .NET. Steg-för-steg handledning med exempel på källkod.
 type: docs
 weight: 10
 url: /sv/net/basic-conversions/docx-to-pdf/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى PDF. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att konvertera ett Word-dokument i Docx-format till PDF. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
-## الخطوة 1: تهيئة كائن المستند
+## Steg 1: Initiera dokumentobjektet
 
- أولاً ، قم بتهيئة ملف`Document` كائن مع المسار إلى مستندك المصدر بتنسيق Docx:
+ Initiera först`Document` objekt med sökvägen till ditt källdokument i Docx-format:
 
 ```csharp
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## الخطوة 2: حفظ المستند بتنسيق PDF
+## Steg 2: Spara dokumentet i PDF-format
 
- بعد ذلك ، احفظ المستند بتنسيق PDF عن طريق استدعاء ملف`Save` طريقة على`Document` كائن وتوفير المسار واسم الملف لمستند PDF الناتج:
+ Spara sedan dokumentet i PDF-format genom att anropa`Save` metod på`Document` objekt och ange sökvägen och filnamnet för PDF-dokumentet:
 
 ```csharp
 doc.Save(MyDir + "BaseConversions.DocxToPdf.pdf");
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند Word بتنسيق Docx إلى PDF باستخدام Aspose.Words for .NET.
+Det är allt! Du har framgångsrikt konverterat ett Word-dokument i Docx-format till PDF med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لـ Docx To Pdf باستخدام Aspose.Words for .NET
+### Exempel på källkod för Docx till pdf med Aspose.Words för .NET
 
 ```csharp
 
@@ -40,4 +40,4 @@ doc.Save(MyDir + "BaseConversions.DocxToPdf.pdf");
 	
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Använd gärna den här koden i dina egna projekt och modifiera den efter dina specifika krav.

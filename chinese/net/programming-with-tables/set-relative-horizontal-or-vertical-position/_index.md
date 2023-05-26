@@ -1,61 +1,61 @@
 ---
-title: تعيين الوضع الأفقي أو الرأسي النسبي
-linktitle: تعيين الوضع الأفقي أو الرأسي النسبي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين الوضع الأفقي أو الرأسي النسبي للجدول في مستند Word باستخدام Aspose.Words for .NET.
+title: 设置相对水平或垂直位置
+linktitle: 设置相对水平或垂直位置
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 设置表格在 Word 文档中的相对水平或垂直位置。
 type: docs
 weight: 10
 url: /zh/net/programming-with-tables/set-relative-horizontal-or-vertical-position/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تعيين الوضع الأفقي أو الرأسي النسبي للجدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستكون قادرًا على تعيين الوضع الأفقي أو الرأسي النسبي لجدولك في مستندات Word الخاصة بك.
+在本教程中，我们将学习如何使用 Aspose.Words for .NET 设置 Word 文档中表格的相对水平或垂直位置。我们将按照逐步指南来理解代码并实现此功能。在本教程结束时，您将能够在 Word 文档中设置表格的相对水平或垂直位置。
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## 第 1 步：项目设置
+1. 启动 Visual Studio 并创建一个新的 C# 项目。
+2. 添加对 Aspose.Words for .NET 库的引用。
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## 第 2 步：装入文档
+要开始使用该文档，请执行以下步骤：
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//装入文档
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-تأكد من استبدال "دليل المستندات الخاص بك" بالمسار الفعلي إلى دليل المستندات الخاص بك وقم بتوفير اسم الملف الصحيح.
+请务必将“您的文档目录”替换为文档目录的实际路径并提供正确的文件名。
 
-## الخطوة 3: تحديد الموضع النسبي للجدول
-بعد ذلك ، سنقوم بتعيين الوضع النسبي الأفقي أو الرأسي للجدول. استخدم الكود التالي:
+## 第三步：设置表格的相对位置
+接下来，我们将设置表格的相对水平或垂直位置。使用以下代码：
 
 ```csharp
-// استرجع الجدول
+//检索表
 Table table = doc.FirstSection.Body.Tables[0];
 
-//تعريف الوضع الأفقي النسبي للجدول
+//工作台相对水平位置的定义
 table.HorizontalAnchor = RelativeHorizontalPosition.Column;
 
-// تحديد الوضع الرأسي النسبي للجدول
+//定义表格的相对垂直位置
 table.VerticalAnchor = RelativeVerticalPosition.Page;
 ```
 
- هنا نستخدم المستند لاسترداد الجدول الأول من نص القسم الأول. بعد ذلك ، قمنا بتعيين الموضع الأفقي النسبي للجدول بامتداد`HorizontalAnchor` الملكية باستخدام`RelativeHorizontalPosition.Column` قيمة. وبالمثل ، قمنا بتعيين الوضع الرأسي النسبي للجدول بامتداد`VerticalAnchor` الملكية باستخدام`RelativeVerticalPosition.Page` قيمة.
+这里我们使用文档从第一节的正文中检索第一个表。接下来，我们设置表格的相对水平位置`HorizontalAnchor`属性使用`RelativeHorizontalPosition.Column`价值。同样，我们设置表格的相对垂直位置`VerticalAnchor`属性使用`RelativeVerticalPosition.Page`价值。
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تحديد الموضع النسبي للجدول. استخدم الكود التالي:
+## 第 4 步：保存修改后的文档
+最后，我们需要保存修改后的文档，并定义表格的相对位置。使用以下代码：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+请务必为输出文档指定正确的路径和文件名。
 
-### عينة من التعليمات البرمجية المصدر لـ Set Relative Horizontal Or Vertical Position باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 设置相对水平或垂直位置的示例源代码 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
@@ -65,5 +65,5 @@ table.VerticalAnchor = RelativeVerticalPosition.Page;
 doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين الوضع الأفقي أو الرأسي النسبي للجدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تطبيق هذا الموضع النسبي على جداولك في مستندات Word الخاصة بك.
+## 结论
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 设置 Word 文档中表格的相对水平或垂直位置。通过遵循此分步指南并实施提供的 C# 代码，您可以将此相对位置应用于 Word 文档中的表格。

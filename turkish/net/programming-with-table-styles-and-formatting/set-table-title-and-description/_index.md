@@ -1,31 +1,31 @@
 ---
-title: تعيين عنوان الجدول ووصفه
-linktitle: تعيين عنوان الجدول ووصفه
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتعيين عنوان ووصف للجدول باستخدام Aspose.Words for .NET.
+title: Tablo Başlığını ve Açıklamasını Ayarla
+linktitle: Tablo Başlığını ve Açıklamasını Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir tablonun başlığını ve açıklamasını ayarlamak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-styles-and-formatting/set-table-title-and-description/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين عنوان الجدول ووصفه باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية إضافة عنوان ووصف إلى جدول في مستندات Word باستخدام Aspose.Words for .NET.
+Bu eğitimde, Aspose.Words for .NET'i kullanarak bir tablonun başlığını ve açıklamasını ayarlamak için size adım adım yol göstereceğiz. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sağlayacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak Word belgelerinizdeki bir tabloya nasıl başlık ve açıklama ekleyeceğinizi öğreneceksiniz.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+Öncelikle, belgeler dizininize giden yolu ayarlamanız gerekir. Bu, düzenlenmiş Word belgenizi kaydetmek istediğiniz konumdur. "BELGELER DİZİNİNİZİ" uygun yolla değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند الذي يحتوي على الجدول
- بعد ذلك ، تحتاج إلى تحميل المستند الذي يحتوي على الجدول باستخدام ملف`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## 2. Adım: Tabloyu içeren belgeyi yükleyin
+ Ardından, tabloyu içeren belgeyi kullanarak yüklemeniz gerekir.`Document` sınıf. Doğru belge yolunu belirttiğinizden emin olun.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: قم بالوصول إلى الجدول وقم بتعيين العنوان والوصف
- يمكنك الآن الوصول إلى الجدول الموجود في المستند باستخدام ملف`GetChild()` الطريقة و`Table` فصل. بعد ذلك ، قم بتعيين عنوان الجدول ووصفه باستخدام ملف`Title` و`Description` ملكيات.
+## 3. Adım: Tabloya erişin ve başlığı ve açıklamayı ayarlayın
+ Artık belgedeki tabloya şunu kullanarak erişebilirsiniz:`GetChild()` yöntem ve`Table` sınıf. Ardından, kullanarak tablo başlığını ve açıklamasını ayarlayın.`Title` Ve`Description` özellikler.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -33,22 +33,22 @@ table.Title = "Test Title";
 table.Description = "Test Description";
 ```
 
-## الخطوة 4: تعيين خيارات النسخ الاحتياطي
- إذا كنت تريد تحديد خيارات الحفظ ، فيمكنك تهيئتها باستخدام ملف`OoxmlSaveOptions` فصل. في هذا المثال ، استخدمنا الامتداد`Compliance` الخيار لتحديد التوافق مع تنسيق ISO 29500: 2008 الصارم.
+## 4. Adım: Yedekleme seçeneklerini ayarlayın
+ Kaydetme seçeneklerini belirtmek isterseniz, bunları kullanarak yapılandırabilirsiniz.`OoxmlSaveOptions` sınıf. Bu örnekte, biz kullandık`Compliance` ISO 29500:2008 Strict biçimiyle uyumluluğu belirtme seçeneği.
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
-## الخطوة 5: تحسين توافق المستندات
- يمكنك أيضًا تحسين توافق المستندات باستخدام تنسيق`OptimizeFor()` طريقة`CompatibilityOptions` فصل. في هذا المثال ، قمنا بتحسين المستند لـ Word 2016.
+## 5. Adım: Belge uyumluluğunu optimize edin
+ kullanarak belge uyumluluğunu da optimize edebilirsiniz.`OptimizeFor()` yöntemi`CompatibilityOptions` sınıf. Bu örnekte, belgeyi Word 2016 için optimize ettik.
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(Aspose.Words.Settings.MsWordVersion.Word2016);
 ```
 
-## الخطوة 6: احفظ المستند المعدل
- أخيرًا ، يمكنك حفظ المستند المعدل في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## 6. Adım: Değiştirilen belgeyi kaydedin
+ Son olarak, değiştirilen belgeyi kullanarak bir dosyaya kaydedebilirsiniz.`Save()` yöntemi`Document` sınıf. Doğru yolu ve dosya adını belirttiğinizden emin olun.
 
 
 
@@ -56,10 +56,10 @@ doc.CompatibilityOptions.OptimizeFor(Aspose.Words.Settings.MsWordVersion.Word201
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescription.docx", options);
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Table Title and Description باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Set Table Title And Description için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -71,5 +71,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescription.docx", options);
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين عنوان الجدول ووصفه باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة إضافة عنوان ووصف إلى جدول في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تخصيص البنية والمعلومات المرتبطة بجداولك وفقًا لاحتياجاتك الخاصة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir tablonun başlığını ve açıklamasını nasıl ayarlayacağımızı öğrendik. Bu adım adım kılavuzu izleyerek, Word belgelerinizdeki bir tabloya kolayca başlık ve açıklama ekleyebilirsiniz. Aspose.Words, belgelerinizdeki tabloları değiştirmek ve biçimlendirmek için güçlü ve esnek bir API sunar. Bu bilgiyle, tablolarınızla ilişkili yapıyı ve bilgileri özel ihtiyaçlarınıza göre özelleştirebilirsiniz.

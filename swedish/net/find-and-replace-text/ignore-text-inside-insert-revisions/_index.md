@@ -1,31 +1,31 @@
 ---
-title: تجاهل النص داخل إدراج المراجعات
-linktitle: تجاهل النص داخل إدراج المراجعات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة "Ignore Text Inside Insert Revisions" في Aspose.Words for .NET للتعامل مع مراجعات الإدراج في مستندات Word.
+title: Ignorera text inuti Infoga ändringar
+linktitle: Ignorera text inuti Infoga ändringar
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder funktionen "Ignorera text inuti infoga versioner" i Aspose.Words för .NET för att manipulera infogningsrevisioner i Word-dokument.
 type: docs
 weight: 10
 url: /sv/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Ignore Text Inside Insert Revisions في Aspose.Words مكتبة .NET. هذه الميزة مفيدة عندما نريد تجاهل النص داخل إدراج المراجعات أثناء معالجة المستندات.
+I den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder Ignore Text Inside Insert Revisions-funktionen i Aspose.Words for .NET-biblioteket. Den här funktionen är användbar när vi vill ignorera text i infogningsrevisioner medan vi manipulerar dokument.
 
-## المتطلبات الأساسية
+## Förutsättningar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundläggande kunskaper i C#-språket.
+- .NET-utvecklingsmiljö med Aspose.Words-biblioteket installerat.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## Steg 1: Skapa ett nytt dokument
 
- قبل أن نبدأ في معالجة النص داخل تنقيحات الإدخال ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Innan vi börjar manipulera text i infogningsversioner måste vi skapa ett nytt dokument med Aspose.Words för .NET. Detta kan göras genom att instansiera en`Document` objekt:
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل نصًا مع تتبع المراجعة
+## Steg 2: Infoga text med revisionsspårning
 
- بمجرد الحصول على مستند ، يمكننا إدراج نص مع تتبع المراجعة باستخدام ملف`DocumentBuilder` هدف. على سبيل المثال ، لإدراج النص "المُدرج" مع تتبع المراجعة ، يمكننا استخدام`StartTrackRevisions`, `Writeln` و`StopTrackRevisions` طُرق:
+ När vi har ett dokument kan vi infoga text med revisionsspårning med hjälp av en`DocumentBuilder` objekt. Till exempel, för att infoga texten "Infogad" med revisionsspårning, kan vi använda`StartTrackRevisions`, `Writeln` och`StopTrackRevisions` metoder:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -34,50 +34,50 @@ builder.Writeln("Inserted");
 doc.StopTrackRevisions();
 ```
 
-## الخطوة 3: أدخل نصًا لم تتم مراجعته
+## Steg 3: Infoga ogranskad text
 
- بالإضافة إلى النص مع تتبع المراجعة ، يمكننا أيضًا إدراج نص غير منقح باستخدام امتداد`DocumentBuilder`هدف. على سبيل المثال ، لإدراج النص "نص" بدون مراجعة ، يمكننا استخدام`Write` طريقة:
+ Förutom text med revisionsspårning kan vi även infoga oreviderad text med hjälp av`DocumentBuilder`objekt. Till exempel, för att infoga texten "Text" utan revision, kan vi använda`Write` metod:
 
 ```csharp
 builder.Write("Text");
 ```
 
-## الخطوة 4: استخدام وظيفة Ignore Text Inside Insert Revisions
+## Steg 4: Använd funktionen Ignorera text inuti Infoga ändringar
 
- لتجاهل النص داخل إدراج المراجعات في العمليات اللاحقة ، يمكننا استخدام ملف`FindReplaceOptions` كائن وتعيين`IgnoreInserted` ملكية ل`true`:
+ För att ignorera text inuti infoga revisioner på efterföljande operationer kan vi använda a`FindReplaceOptions` objekt och ställ in`IgnoreInserted` egendom till`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
 ```
 
-## الخطوة 5: استخدام التعبيرات النمطية للبحث والاستبدال
+## Steg 5: Använda reguljära uttryck för att söka och ersätta
 
-لإجراء عمليات البحث والاستبدال على نص المستند ، سنستخدم التعبيرات العادية. في مثالنا ، سنبحث عن جميع تكرارات الحرف "e" ونستبدلها بعلامة النجمة "* ". سنستخدم .NET`Regex` فئة لهذا:
+För att utföra sökoperationer och ersätta dokumenttexten kommer vi att använda reguljära uttryck. I vårt exempel kommer vi att söka efter alla förekomster av bokstaven "e" och ersätta dem med en asterisk "* ". Vi kommer att använda .NET`Regex` klass för detta:
 
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## الخطوة 6: عرض إخراج المستند المعدل
+## Steg 6: Visa den modifierade dokumentutmatningen
 
-بعد تطبيق البحث والاستبدال ، يمكننا عرض المحتوى الذي تم تغييره في المستند باستخدام`GetText` طريقة:
+Efter att ha tillämpat sökningen och ersätt, kan vi visa det ändrade innehållet i dokumentet med hjälp av`GetText` metod:
 
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## الخطوة 7: تغيير الخيارات لتضمين إدراج المراجعات
+## Steg 7: Ändra alternativ för att inkludera infogningsrevisioner
 
- إذا أردنا تضمين النص داخل مراجعات الإدراج في نتيجة الإخراج ، فيمكننا تغيير الخيارات لعدم تجاهل مراجعات الإدراج. لهذا سنقوم بتعيين`IgnoreInserted` ملكية ل`false`:
+ Om vi vill inkludera texten inuti infogningsrevisionerna i utdataresultatet, kan vi ändra alternativen för att inte ignorera infogningsrevisionerna. För detta kommer vi att ställa in`IgnoreInserted` egendom till`false`:
 
 ```csharp
 options.IgnoreInserted = false;
 ```
 
-## الخطوة 8: عرض المستند المعدل مع إدراج المراجعات
+## Steg 8: Visa det ändrade dokumentet med infogningsrevisioner
 
-بعد تغيير الخيارات ، يمكننا إجراء البحث والاستبدال مرة أخرى للحصول على النتيجة مع النص الموجود داخل المراجعات المدرجة:
+Efter att ha ändrat alternativen kan vi utföra sökningen och ersätta igen för att få resultatet med texten inuti insättningsrevisionerna:
 
 ```csharp
 doc.Range.Replace(regex, "*", options);
@@ -85,9 +85,9 @@ Console.WriteLine(doc.GetText());
 ```
 
 
-### مثال على شفرة المصدر لـ Ignore Text Inside Insert Revisions باستخدام Aspose.Words for .NET
+### Exempel på källkod för Ignorera text inuti Infoga versioner med Aspose.Words för .NET
 
-فيما يلي نموذج الكود المصدري الكامل لتوضيح استخدام وظيفة Ignore Text Inside Insert Revisions مع Aspose.Words for .NET:
+Här är den fullständiga källkoden för att demonstrera användningen av funktionen Ignorera text inuti infoga ändringar med Aspose.Words för .NET:
 
 
 ```csharp
@@ -95,12 +95,12 @@ Console.WriteLine(doc.GetText());
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// أدخل النص مع تتبع المراجعات.
+	// Infoga text med spårningsrevisioner.
 	doc.StartTrackRevisions("author", DateTime.Now);
 	builder.Writeln("Inserted");
 	doc.StopTrackRevisions();
 
-	// أدخل نصًا غير منقح.
+	// Infoga icke-reviderad text.
 	builder.Write("Text");
 
 	FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -117,6 +117,6 @@ Console.WriteLine(doc.GetText());
    
 ```
 
-## خاتمة
+## Slutsats
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة Ignore Text Inside Insert Revisions في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند ، وإدخال نص مع مراجعات التعقب والنص غير المنقح ، واستخدام وظيفة Ignore Text Inside Insert Revisions ، وإجراء عمليات البحث واستبدال العمليات بالتعبيرات العادية ، وعرض المستند المعدل.
+I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Ignorera text inuti infoga ändringar i Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att skapa ett dokument, infoga text med spårningsrevisioner och oreviderad text, använda funktionen Ignorera text inuti Infoga revisioner, utföra sökning och ersätta operationer med reguljära uttryck och visa det ändrade dokumentet.

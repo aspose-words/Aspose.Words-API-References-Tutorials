@@ -1,52 +1,52 @@
 ---
-title: تشفير Docx بكلمة مرور
-linktitle: تشفير Docx بكلمة مرور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تشفير ملف DOCX بكلمة مرور باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل لأمن الوثيقة.
+title: Cifrar Docx con contraseña
+linktitle: Cifrar Docx con contraseña
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a cifrar un archivo DOCX con una contraseña usando Aspose.Words para .NET. Tutorial completo para la seguridad de los documentos.
 type: docs
 weight: 10
 url: /es/net/programming-with-ooxmlsaveoptions/encrypt-docx-with-password/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف كود المصدر C # المقدم لتشفير ملف DOCX بكلمة مرور باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة حماية المستند بجعل الوصول إليه متاحًا فقط بكلمة مرور محددة.
+En este tutorial, exploraremos el código fuente de C# proporcionado para cifrar un archivo DOCX con una contraseña usando Aspose.Words para .NET. Esta característica le permite proteger su documento haciéndolo accesible solo con una contraseña específica.
 
-## الخطوة الأولى: تهيئة البيئة
+## Paso 1: Configuración del entorno
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Antes de comenzar, asegúrese de haber configurado su entorno de desarrollo con Aspose.Words para .NET. Asegúrese de haber agregado las referencias necesarias e importado los espacios de nombres apropiados.
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+ En este paso, cargamos el documento usando el`Document` método y pasando la ruta al archivo DOCX para cargar.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي لـ OOXML
+## Paso 3: Configuración de las opciones de copia de seguridad de OOXML
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-في هذه الخطوة ، نقوم بتهيئة خيارات حفظ OOXML عن طريق إنشاء ملف`OoxmlSaveOptions` هدف. نحدد كلمة المرور المرغوبة لتشفير المستند عن طريق تعيين`Password` خاصية كلمة المرور المخصصة الخاصة بك.
+En este paso, configuramos las opciones de guardado de OOXML creando un nuevo`OoxmlSaveOptions` objeto. Especificamos la contraseña deseada para cifrar el documento configurando el`Password` propiedad a su contraseña personalizada.
 
-## الخطوة 4: تشفير المستند بكلمة مرور
+## Paso 4: Cifrar el documento con contraseña
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ المستند باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج بامتداد`.docx` بالإضافة إلى خيارات الحفظ المحددة.
+ En este último paso, guardamos el documento usando el`Save` y pasando la ruta al archivo de salida con el`.docx` extensión, junto con las opciones de guardado especificadas.
 
-يمكنك الآن تشغيل الكود المصدري لتشفير مستند DOCX بكلمة مرور. سيتم حفظ الملف الناتج في الدليل المحدد بالاسم "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx". تأكد من الحفاظ على كلمة المرور الخاصة بك آمنة ، حيث ستكون هناك حاجة لفتح المستند المشفر.
+Ahora puede ejecutar el código fuente para cifrar su documento DOCX con una contraseña. El archivo resultante se guardará en el directorio especificado con el nombre "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx". Asegúrese de mantener segura su contraseña, ya que la necesitará para abrir el documento cifrado.
 
-### عينة من التعليمات البرمجية المصدر لـ Encrypt Docx With Password باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Cifrar Docx con contraseña usando Aspose.Words para .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";  
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -58,12 +58,12 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", s
         
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة تشفير ملف DOCX بكلمة مرور باستخدام Aspose.Words for .NET. لقد تعلمنا كيفية حماية مستنداتنا من خلال جعل الوصول إليها متاحًا فقط باستخدام كلمة مرور محددة.
+En este tutorial, exploramos la funcionalidad de cifrar un archivo DOCX con una contraseña usando Aspose.Words para .NET. Aprendimos cómo proteger nuestros documentos haciéndolos accesibles solo con una contraseña específica.
 
-تشفير المستندات هو إجراء أمني أساسي لحماية المعلومات الحساسة. بفضل Aspose.Words for .NET ، يمكننا بسهولة إضافة هذه الوظيفة إلى تطبيقاتنا.
+El cifrado de documentos es una medida de seguridad esencial para proteger la información confidencial. Gracias a Aspose.Words for .NET podemos añadir fácilmente esta funcionalidad a nuestras aplicaciones.
 
-باتباع الخطوات المقدمة ، يمكنك دمج تشفير كلمة المرور في Aspose.Words لمشاريع .NET والتأكد من سرية مستنداتك.
+Siguiendo los pasos proporcionados, puede integrar el cifrado de contraseñas en sus proyectos Aspose.Words para .NET y garantizar la confidencialidad de sus documentos.
 
-لا تتردد في تجربة الميزات الأخرى التي تقدمها Aspose.Words for .NET لإثراء تطبيقاتك بميزات معالجة المستندات المتقدمة.
+Siéntase libre de experimentar con otras funciones que ofrece Aspose.Words para .NET para enriquecer sus aplicaciones con funciones avanzadas de manipulación de documentos.

@@ -1,56 +1,56 @@
 ---
-title: إدراج حقل بلا
-linktitle: إدراج حقل بلا
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية برنامج Insérez un Champ AUCUN dans vos documents Word avec Aspose.Words pour .NET.
+title: Infoga fält Inget
+linktitle: Infoga fält Inget
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du lägger in en mästare AUCUN i dokumenten Word avec Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/insert-field-none/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "Insert NONE Field" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som använder funktionen "Infoga inget fält" i Aspose.Words för .NET. Se till att följa varje steg noggrant för att få önskat resultat.
 
-## الخطوة 1: إعداد دليل المستند
+## Steg 1: Installation av dokumentkatalog
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## Steg 2: Skapa Document and DocumentBuilder
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Vi börjar med att skapa ett nytt dokument och initiera en DocumentBuilder.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدخال حقل NONE
+## Steg 3: Infoga fältet INGEN
 
- نحن نستخدم ال`InsertField()` طريقة DocumentBuilder لإدراج حقل NONE في المستند.
+ Vi använder`InsertField()` metod för DocumentBuilder för att infoga ett INGEN-fält i dokumentet.
 
 ```csharp
 FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, false);
 ```
 
-### مثال على الكود المصدري لإدخال حقل NONE مع Aspose.Words for .NET
+### Källkodsexempel för att infoga ett NONE-fält med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند و DocumentBuilder.
+// Skapa dokumentet och DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// أدخل الحقل NONE.
+// Infoga INGEN-fältet.
 FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, false);
 
 doc.Save(dataDir + "InsertionFieldNone.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأعدنا تهيئة DocumentBuilder ، ثم قمنا بإدراج حقل NONE. ثم يتم حفظ المستند باسم ملف محدد.
+I det här exemplet har vi skapat ett nytt dokument, initierat en DocumentBuilder och sedan infogat ett INGEN-fält. Dokumentet sparas sedan med ett angivet filnamn.
 
-بهذا نختتم دليلنا حول استخدام ميزة "إدراج NONE Field" مع Aspose.Words for .NET.
+Detta avslutar vår guide om hur du använder funktionen "Infoga inget fält" med Aspose.Words för .NET.

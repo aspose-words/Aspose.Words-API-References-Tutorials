@@ -1,21 +1,21 @@
 ---
-title: أدخل فقرة
-linktitle: أدخل فقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج فقرات منسقة في مستندات Word باستخدام Aspose.Words for .NET.
+title: 插入段落
+linktitle: 插入段落
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入格式化段落。
 type: docs
 weight: 10
 url: /zh/net/add-content-using-documentbuilder/insert-paragraph/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج فقرات في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة فقرات منسقة إلى مستنداتك.
+在这个综合教程中，您将学习如何使用 Aspose.Words for .NET 将段落插入到 Word 文档中。我们将指导您完成整个过程，并为您提供必要的 C# 代码片段。在本指南结束时，您将能够向文档中添加格式化段落。
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## 先决条件
+在我们开始之前，请确保您具备以下先决条件：
+- Aspose.Words for .NET 库安装在您的系统上。
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 第 1 步：创建新文档和 DocumentBuilder
+首先，使用 Document 类创建一个新文档并初始化一个 DocumentBuilder 对象：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,8 +23,8 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تعيين الخط والتنسيق
-بعد ذلك ، قم بإعداد خصائص الخط وتنسيق الفقرة باستخدام كائنات Font و ParagraphFormat على التوالي:
+## 第 2 步：设置字体和格式
+接下来，分别使用 Font 和 ParagraphFormat 对象设置字体属性和段落格式：
 
 ```csharp
 Font font = builder.Font;
@@ -40,22 +40,22 @@ paragraphFormat.Alignment = ParagraphAlignment.Justify;
 paragraphFormat.KeepTogether = true;
 ```
 
-## الخطوة 3: أدخل فقرة
-بعد إعداد الخط والتنسيق ، استخدم طريقة Writeln لفئة DocumentBuilder لإدراج فقرة كاملة:
+## 第 3 步：插入段落
+设置字体和格式后，使用 DocumentBuilder 类的 Writeln 方法插入一整段：
 
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```
 
-## الخطوة 4: احفظ المستند
-بعد إدراج الفقرة ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 第 4 步：保存文档
+插入段落后，使用 Document 类的 Save 方法将文档保存到文件中：
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
-## مثال على كود المصدر لإدراج فقرة باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال فقرة باستخدام Aspose.Words for .NET:
+## 使用 Aspose.Words for .NET 插入段落的示例源代码
+下面是使用 Aspose.Words for .NET 插入段落的完整源代码：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -79,5 +79,5 @@ builder.Writeln("A whole paragraph.");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج فقرات منسقة في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إضافة فقرات مخصصة مع خطوط معينة وتنسيق ومحاذاة مستنداتك.
+## 结论
+恭喜！您已经成功学习了如何使用 Aspose.Words for .NET 将格式化的段落插入到 Word 文档中。按照分步指南并利用提供的源代码，您现在可以将具有特定字体、格式和对齐方式的自定义段落添加到您的文档中。

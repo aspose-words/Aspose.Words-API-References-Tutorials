@@ -1,51 +1,51 @@
 ---
-title: يتوسطه خط
-linktitle: يتوسطه خط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Üstü çizili
+linktitle: Üstü çizili
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET Adım adım kılavuz ile üzeri çizili metin stilini nasıl uygulayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/strikethrough/
 ---
 
 
-في هذا المثال ، سنرشدك إلى كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام Aspose.Words for .NET. يتم استخدام نص يتوسطه خط للإشارة إلى حذف النص أو أنه لم يعد صالحًا.
+Bu örnekte, üstü çizili metin stilini Aspose.Words for .NET kullanarak nasıl uygulayacağınızı size göstereceğiz. Üstü çizili metin, metnin silindiğini veya artık geçerli olmadığını belirtmek için kullanılır.
 
-## الخطوة 1: استخدام منشئ المستندات
+## 1. Adım: Bir belge oluşturucu kullanma
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+İlk olarak, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تطبيق نمط النص يتوسطه خط
+## 2. Adım: Üstü çizili metin stilini uygulayın
 
- سنقوم بتمكين نمط النص يتوسطه خط من خلال تعيين`StrikeThrough` ممتلكات`Font` يعترض على`true`.
+ Ayarlayarak üstü çizili metin stilini etkinleştireceğiz.`StrikeThrough` mülkiyeti`Font` itiraz etmek`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;
 ```
 
-## الخطوة 3: أضف نص يتوسطه خط
+## 3. Adım: Üstü çizili metin ekleyin
 
- يمكننا الآن إضافة نص يتوسطه خط باستخدام منشئ المستندات`Writeln` طريقة.
+ Artık belge oluşturucuyu kullanarak üstü çizili metin ekleyebiliriz.`Writeln` yöntem.
 
 ```csharp
 builder.Writeln("This text will be StrikeThrough");
 ```
 
 
-### مثال على شفرة المصدر لنص يتوسطه خط مع Aspose.Words for .NET
+### Aspose.Words for .NET ile üstü çizili metin için örnek kaynak kodu
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص يتوسطه خط.
+	// Metni üstü çizili yapın.
 	builder.Font.StrikeThrough = true;
 	builder.Writeln("This text will be StrikeThrough");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام Aspose.Words for .NET.
+Tebrikler! Artık üstü çizili metin stilini Aspose.Words for .NET ile nasıl uygulayacağınızı öğrendiniz.

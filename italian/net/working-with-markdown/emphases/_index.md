@@ -1,35 +1,35 @@
 ---
-title: تأكيدات
-linktitle: تأكيدات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام التأكيدات (بالخط العريض والمائل) باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Enfasi
+linktitle: Enfasi
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come utilizzare le sottolineature (grassetto e corsivo) con Aspose.Words per la guida passo-passo .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/emphases/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام التأكيدات مع Aspose.Words for .NET. يتم استخدام التأكيدات للتأكيد على أجزاء معينة من النص ، مثل الخط الغامق والمائل.
+In questo esempio, spiegheremo come utilizzare le sottolineature con Aspose.Words per .NET. l'enfasi viene utilizzata per enfatizzare alcune parti del testo, come il grassetto e il corsivo.
 
-## الخطوة 1: تهيئة المستند
+## Passaggio 1: inizializzazione del documento
 
- أولاً ، سنهيئ المستند عن طريق إنشاء مثيل لـ`Document` فصل.
+ Innanzitutto, inizializzeremo il documento creando un'istanza di`Document` classe.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: استخدام منشئ المستندات
+## Passaggio 2: utilizzo di un generatore di documenti
 
-بعد ذلك ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Successivamente, utilizzeremo un generatore di documenti per aggiungere contenuto al nostro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إضافة نص مع التوكيدات
+## Passaggio 3: aggiungi testo con Enfasi
 
-يمكننا إضافة نص تأكيدات عن طريق تغيير خصائص خط منشئ المستند. في هذا المثال ، نستخدم الخط الغامق والمائل للتأكيد على أجزاء مختلفة من النص.
+Possiamo aggiungere testo di enfasi modificando le proprietà del carattere del generatore di documenti. In questo esempio, usiamo il grassetto e il corsivo per enfatizzare diverse parti del testo.
 
 ```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as emphases indicators.");
@@ -59,17 +59,17 @@ builder. Write(".");
 
 ```
 
-## الخطوة 4: حفظ المستند
+## Passaggio 4: salvare il documento
 
- أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب. في هذا المثال ، نستخدم الامتداد`.md` التمديد لتنسيق Markdown.
+ Infine, possiamo salvare il documento nel formato desiderato. In questo esempio, stiamo usando il`.md` estensione per un formato Markdown.
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام التأكيدات مع Aspose.Words for .NET.
+Congratulazioni! Ora hai imparato come utilizzare le sottolineature con Aspose.Words per .NET.
 
-### مثال على شفرة المصدر للتأكيد باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Emphases utilizzando Aspose.Words per .NET
 
 
 ```csharp

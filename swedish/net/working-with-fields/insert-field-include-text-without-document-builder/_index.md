@@ -1,70 +1,70 @@
 ---
-title: قم بإدراج FieldIncludeText بدون Document Builder
-linktitle: قم بإدراج FieldIncludeText بدون Document Builder
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل FieldIncludeText في مستندات Word باستخدام Aspose.Words for .NET.
+title: Infoga FieldIncludeText utan dokumentbyggare
+linktitle: Infoga FieldIncludeText utan dokumentbyggare
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar ett FieldIncludeText-fält i dina Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود مصدر C # أدناه ، والذي يستخدم وظيفة "إدراج حقل FieldIncludeText" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som använder funktionen "Infoga ett FieldIncludeText-fält" i Aspose.Words för .NET. Se till att följa varje steg noggrant för att få önskat resultat.
 
-## الخطوة 1: إعداد دليل المستند
+## Steg 1: Installation av dokumentkatalog
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## Steg 2: Skapa dokumentet och stycket
 
-نبدأ بإنشاء مستند جديد وتهيئة فقرة.
+Vi börjar med att skapa ett nytt dokument och initialisera ett stycke.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 3: إدراج حقل FieldIncludeText
+## Steg 3: Infoga fältet FieldIncludeText
 
- نحن نستخدم ال`AppendField()` طريقة لإدراج حقل FieldIncludeText في الفقرة.
+ Vi använder`AppendField()` metod för att infoga ett FieldIncludeText-fält i stycket.
 
 ```csharp
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
 ```
 
-ثم نقوم بتكوين خصائص حقل FieldIncludeText عن طريق تحديد اسم الإشارة المرجعية واسم الملف المصدر.
+Vi konfigurerar sedan egenskaperna för FieldIncludeText-fältet genom att ange namnet på bokmärket och namnet på källfilen.
 
 ```csharp
 fieldIncludeText.BookmarkName = "bookmark";
 fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
 ```
 
-بعد ذلك ، نضيف الفقرة إلى نص المستند.
+Därefter lägger vi till stycket i dokumentets brödtext.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Slutligen kallar vi`Update()` metod för att uppdatera fältet.
 
 ```csharp
 fieldIncludeText.Update();
 ```
 
-### مثال على شفرة المصدر لإدخال حقل FieldIncludeText مع Aspose.Words for .NET
+### Exempel på källkoden för att infoga ett FieldIncludeText-fält med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند والفقرة.
+// Skapa dokumentet och stycket.
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
-// أدخل الحقل FieldIncludeText.
+// Infoga fältet FieldIncludeText.
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
 
 fieldIncludeText.BookmarkName = "bookmark";
@@ -77,6 +77,6 @@ fieldIncludeText.Update();
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأعدنا فقرة ، وأدخلنا FieldIncludeTexten يحدد اسم الإشارة المرجعية واسم الملف المصدر ، وحفظنا المستند باسم ملف محدد.
+I det här exemplet skapade vi ett nytt dokument, initierade ett stycke, infogade en FieldIncludeTexten som anger bokmärkesnamnet och källfilens namn och sparade dokumentet med ett specificerat filnamn.
 
-بهذا يختتم دليلنا حول استخدام ميزة "Insert a FieldIncludeText" مع Aspose.Words for .NET.
+Detta avslutar vår guide om hur du använder funktionen "Insert a FieldIncludeText" med Aspose.Words för .NET.

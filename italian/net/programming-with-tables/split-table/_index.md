@@ -1,52 +1,52 @@
 ---
-title: انقسام الجدول
-linktitle: انقسام الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تقسيم جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Tavolo diviso
+linktitle: Tavolo diviso
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come dividere una tabella in un documento Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/split-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تقسيم جدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من تقسيم جدول من صف معين في مستندات Word الخاصة بك.
+In questo tutorial impareremo come dividere una tabella in un documento Word usando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di dividere una tabella da una determinata riga nei tuoi documenti Word.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Passaggio 1: impostazione del progetto
+1. Avvia Visual Studio e crea un nuovo progetto C#.
+2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## Passaggio 2: caricamento del documento
+Per iniziare a lavorare con il documento, attenersi alla seguente procedura:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Carica il documento
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-تأكد من استبدال "دليل المستندات الخاص بك" بالمسار الفعلي إلى دليل المستندات الخاص بك وقم بتوفير اسم الملف الصحيح.
+Assicurati di sostituire "YOUR DOCUMENTS DIRECTORY" con il percorso effettivo della directory dei documenti e fornisci il nome file corretto.
 
-## الخطوة 3: قسمة الجدول
-بعد ذلك سنقوم بتقسيم الجدول من صف معين. استخدم الكود التالي:
+## Passaggio 3: divisione del tavolo
+Successivamente divideremo la tabella da una determinata riga. Usa il seguente codice:
 
 ```csharp
-// استرجع الجدول الأول
+// Recupera la prima tabella
 Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
 
-// تحديد الخط الذي سيتم تقسيم الجدول منه
+// Determinazione della linea da cui dividere la tavola
 Row row = firstTable.Rows[2];
 
-// قم بإنشاء حاوية جديدة للجدول المقسم
+// Crea un nuovo contenitore per la tabella divisa
 Table table = (Table)firstTable.Clone(false);
 
-// أدخل الحاوية بعد الجدول الأصلي
+// Inserisci il contenitore dopo la tabella originale
 firstTable.ParentNode.InsertAfter(table, firstTable);
 
-// أضف فقرة عازلة للحفاظ على مسافة بين الجداول
+// Aggiungi un paragrafo separatore per mantenere una distanza tra le tabelle
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
 
-// انقل الصفوف من الجدول الأصلي إلى جدول الانقسام
+// Sposta le righe dalla tabella originale alla tabella divisa
 Row currentRow;
 do
 {
@@ -55,34 +55,34 @@ table. PrependChild(currentRow);
 } while (currentRow != row);
 ```
 
-هنا نستخدم المستند لاسترداد الجدول الأول من عقدة المستند. ثم نحدد الصف الذي نريد تقسيم الجدول منه ، في هذا المثال هو الصف الثالث (الفهرس 2). نقوم بعد ذلك بإنشاء حاوية جديدة عن طريق استنساخ الجدول الأصلي ثم إدخاله بعد الجدول الأصلي. نضيف أيضًا فقرة عازلة للحفاظ على مسافة بين الجدولين. ثم ننقل الصفوف من الجدول الأصلي إلى الجدول المنفصل باستخدام حلقة do-while حتى نصل إلى الصف المحدد.
+Qui usiamo il documento per recuperare la prima tabella dal nodo del documento. Quindi determiniamo la riga da cui vogliamo dividere la tabella, in questo esempio è la terza riga (indice 2). Creiamo quindi un nuovo contenitore clonando la tabella originale e poi lo inseriamo dopo la tabella originale. Aggiungiamo anche un paragrafo buffer per mantenere una distanza tra le due tabelle. Quindi spostiamo le righe dalla tabella originale alla tabella divisa utilizzando un ciclo do-while finché non raggiungiamo la riga specificata.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ ملف
+## Passaggio 4: salvare il documento modificato
+Infine, dobbiamo salvare il file
 
-  تم تعديل المستند باستخدام الجدول المقسم. استخدم الكود التالي:
+  documento modificato con la tabella divisa. Usa il seguente codice:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Assicurati di specificare il percorso e il nome file corretti per il documento di output.
 
-### نموذج التعليمات البرمجية المصدر لـ Split Table باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Split Table utilizzando Aspose.Words per .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");
 Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
-// سنقوم بتقسيم الجدول في الصف الثالث (ضمناً).
+// Divideremo il tavolo alla terza riga (inclusa).
 Row row = firstTable.Rows[2];
-// قم بإنشاء حاوية جديدة للجدول المقسم.
+// Crea un nuovo contenitore per la tabella divisa.
 Table table = (Table) firstTable.Clone(false);
-// أدخل الحاوية بعد الأصل.
+// Inserire il contenitore dopo l'originale.
 firstTable.ParentNode.InsertAfter(table, firstTable);
-// أضف فقرة عازلة لضمان بقاء الجداول منفصلة.
+// Aggiungi un paragrafo buffer per assicurarti che le tabelle rimangano separate.
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
 Row currentRow;
 do
@@ -93,5 +93,5 @@ do
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تقسيم جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك بسهولة تقسيم الجداول من سطر معين في مستندات Word الخاصة بك.
+## Conclusione
+In questo tutorial, abbiamo imparato come dividere una tabella in un documento Word usando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi dividere facilmente le tabelle da una determinata riga nei tuoi documenti Word.

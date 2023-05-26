@@ -1,45 +1,45 @@
 ---
-title: أدخل مسطرة أفقية
-linktitle: أدخل مسطرة أفقية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج القواعد الأفقية في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Horizontale Regel einfügen
+linktitle: Horizontale Regel einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET horizontale Regeln in Word-Dokumente einfügen. Schritt für Schritt Anleitung.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج قاعدة أفقية في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إضافة قواعد أفقية إلى مستنداتك للفصل البصري والتنظيم.
+In diesem umfassenden Beispiel erfahren Sie, wie Sie mit Aspose.Words für .NET eine horizontale Linie in ein Word-Dokument einfügen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieses Leitfadens werden Sie in der Lage sein, Ihren Dokumenten horizontale Regeln zur visuellen Trennung und Organisation hinzuzufügen.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Schritt 1: Erstellen Sie ein neues Dokument und einen neuen DocumentBuilder
+Erstellen Sie zunächst ein neues Dokument mit der Document-Klasse und initialisieren Sie ein DocumentBuilder-Objekt:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل قاعدة أفقية
-بعد ذلك ، استخدم طريقة Writeln لفئة DocumentBuilder لإضافة نص وصفي ثم أدخل قاعدة أفقية:
+## Schritt 2: Fügen Sie eine horizontale Regel ein
+Als nächstes verwenden Sie die Writeln-Methode der DocumentBuilder-Klasse, um einen beschreibenden Text hinzuzufügen und anschließend eine horizontale Regel einzufügen:
 
 ```csharp
 builder.Writeln("Insert a horizontal rule shape into the document.");
 builder.InsertHorizontalRule();
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج القاعدة الأفقية ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Schritt 3: Speichern Sie das Dokument
+Speichern Sie das Dokument nach dem Einfügen der horizontalen Linie mit der Save-Methode der Document-Klasse in einer Datei:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
-### مثال رمز مصدر لإدراج قاعدة أفقية باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لإدخال قاعدة أفقية باستخدام Aspose.Words for .NET:
-تعتبر القواعد الأفقية مفيدة لسيناريوهات مختلفة ، مثل تقسيم الأقسام أو إنشاء فواصل مرئية أو تمييز المعلومات المهمة.
+### Beispielquellcode für „Horizontale Regel einfügen“ mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode zum Einfügen einer horizontalen Regel mit Aspose.Words für .NET:
+Horizontale Regeln sind für verschiedene Szenarien nützlich, z. B. zum Unterteilen von Abschnitten, zum Erstellen visueller Unterbrechungen oder zum Hervorheben wichtiger Informationen.
 
 ```csharp
 
@@ -53,8 +53,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.doc
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Denken Sie daran, den Code an Ihre spezifischen Anforderungen anzupassen und ihn bei Bedarf um zusätzliche Funktionen zu erweitern.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج قاعدة أفقية في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن فصل المستندات وتنظيمها بصريًا باستخدام القواعد الأفقية.
+## Abschluss
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET eine horizontale Linie in ein Word-Dokument einfügen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie Ihre Dokumente jetzt mithilfe horizontaler Regeln visuell trennen und organisieren.
 

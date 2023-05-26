@@ -1,20 +1,20 @@
 ---
-title: البرمجة مع جدول المحتويات
-linktitle: البرمجة مع جدول المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تغيير نمط toc وتغيير توقف علامة التبويب toc
+title: Programmierung mit Inhaltsverzeichnis
+linktitle: Programmierung mit Inhaltsverzeichnis
+second_title: Aspose.Words für .NET API-Referenz
+description: Die Tutorials beinhalten das Ändern des Inhaltsverzeichnis-Levels und Tabstopps zum Ändern des Inhaltsverzeichnisses
 type: docs
 weight: 1420
 url: /de/net/programming-with-table-of-content/
 ---
-ترشدك البرامج التعليمية لـ Aspose.Words for .NET حول البرمجة باستخدام جدول المحتويات عبر خطوات معالجة جداول المحتويات وتخصيصها في مستندات Word الخاصة بك. سوف تتعلم كيفية إنشاء وتحديث وتخصيص جداول المحتويات لتنظيم محتوى المستندات الخاصة بك بشكل فعال.
+Die Aspose.Words für .NET-Tutorials zum Programmieren mit dem Inhaltsverzeichnis führen Sie durch die Schritte zum Bearbeiten und Anpassen von Inhaltsverzeichnissen in Ihren Word-Dokumenten. Sie erfahren, wie Sie Inhaltsverzeichnisse erstellen, aktualisieren und anpassen, um den Inhalt Ihrer Dokumente effektiv zu organisieren.
 
-توفر هذه البرامج التعليمية أمثلة على التعليمات البرمجية خطوة بخطوة وتفسيرات واضحة لكيفية استخدام ميزات Aspose.Words for .NET للعمل مع جداول المحتويات. ستتعلم كيفية إضافة مستويات العناوين ، وتحديد أنماط التنسيق ، وتخصيص مظهر وسلوك جداول المحتويات ، وإدارة التحديثات التلقائية.
+Diese Tutorials bieten Schritt-für-Schritt-Codebeispiele und klare Erklärungen zur Verwendung von Aspose.Words für .NET-Funktionen zum Arbeiten mit Inhaltsverzeichnissen. Sie erfahren, wie Sie Überschriftenebenen hinzufügen, Formatierungsstile festlegen, das Erscheinungsbild und Verhalten von Inhaltsverzeichnissen anpassen und automatische Aktualisierungen verwalten.
 
-سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان التقنيات المتقدمة لإنشاء جداول محتويات احترافية والحفاظ عليها في مستندات Word باستخدام Aspose.Words for .NET. حسِّن تنظيم مستنداتك واجعل التنقل أسهل للمستخدمين من خلال هذه البرامج التعليمية الشاملة والمفيدة.
+Unabhängig davon, ob Sie Anfänger oder erfahrener Entwickler sind, helfen Ihnen diese Tutorials dabei, die fortgeschrittenen Techniken zum Erstellen und Verwalten professioneller Inhaltsverzeichnisse in Ihren Word-Dokumenten mit Aspose.Words für .NET zu erlernen. Verbessern Sie die Organisation Ihrer Dokumente und erleichtern Sie Ihren Benutzern die Navigation mit diesen umfassenden und informativen Tutorials.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [تغيير نمط مستوى Toc](./change-style-of-toc-level/) | تعرف على كيفية تغيير نمط مستوى جدول المحتويات بسهولة في مستند Word باستخدام Aspose.Words for .NET. |
-| [تغيير Toc Tab Stops](./change-toc-tab-stops/) | تعرف على كيفية تغيير علامات تبويب جدول المحتويات في مستند Word باستخدام Aspose.Words for .NET. |
+| [Ändern Sie den Stil der Toc-Ebene](./change-style-of-toc-level/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ganz einfach den Stil einer Inhaltsverzeichnisebene in einem Word-Dokument ändern. |
+| [Inhaltsverzeichnis-Tabstopps ändern](./change-toc-tab-stops/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Registerkarten des Inhaltsverzeichnisses in einem Word-Dokument ändern. |

@@ -1,83 +1,83 @@
 ---
-title: قم بإنشاء مشروع Vba
-linktitle: قم بإنشاء مشروع Vba
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية إنشاء مشروع VBA في مستند Word باستخدام Aspose.Words for .NET.
+title: Skapa Vba-projekt
+linktitle: Skapa Vba-projekt
+second_title: Aspose.Words för .NET API Referens
+description: I den här handledningen lär du dig hur du skapar ett VBA-projekt i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-vba-macros/create-vba-project/
 ---
 
-في هذا البرنامج التعليمي ، سنخبرك بكيفية إنشاء مشروع VBA في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يتيح لك إنشاء مشروع VBA إضافة رمز VBA مخصص إلى مستند Word الخاص بك. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+den här handledningen kommer vi att berätta för dig hur du skapar ett VBA-projekt i ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Genom att skapa ett VBA-projekt kan du lägga till anpassad VBA-kod till ditt Word-dokument. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+ Först måste du ställa in katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بإنشاء مستند ومشروع VBA جديدين
- بعد ذلك ، سننشئ مستندًا جديدًا عن طريق إنشاء مثيل لملف`Document` فئة ومشروع VBA فارغ عن طريق إنشاء مثيل`VbaProject` فصل.
+## Steg 2: Skapa ett nytt VBA-dokument och projekt
+ Därefter kommer vi att skapa ett nytt dokument genom att instansiera`Document` klass och ett tomt VBA-projekt genom att instansiera`VbaProject` klass.
 
 ```csharp
-// قم بإنشاء مستند جديد
+// Skapa ett nytt dokument
 Document doc = new Document();
 
-// قم بإنشاء مشروع VBA جديد
+// Skapa ett nytt VBA-projekt
 VbaProject project = new VbaProject();
 project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-## الخطوة 3: إنشاء وحدة نمطية جديدة وتحديد شفرة مصدر الماكرو
- سننشئ وحدة نمطية جديدة عن طريق إنشاء مثيل لملف`VbaModule` فئة وتحديد اسم الماكرو ونوع (وحدة إجرائية) وكود المصدر.
+## Steg 3: Skapa en ny modul och ange makrokällkod
+ Vi kommer att skapa en ny modul genom att instansiera`VbaModule` klass och anger makronamn, typ (procedurmodul) och källkod.
 
 ```csharp
-// قم بإنشاء وحدة جديدة
+// Skapa en ny modul
 VbaModule module = new VbaModule();
 module.Name = "AsposeModule";
 module.Type = VbaModuleType.ProceduralModule;
 module.SourceCode = "New Source Code";
 
-// أضف الوحدة النمطية إلى مشروع VBA
+// Lägg till modulen i VBA-projektet
 doc.VbaProject.Modules.Add(module);
 ```
 
-## الخطوة 4: احفظ المستند
-أخيرًا ، سنحفظ المستند مع مشروع VBA الذي تم إنشاؤه في ملف.
+## Steg 4: Spara dokumentet
+Slutligen kommer vi att spara dokumentet med VBA-projektet skapat i en fil.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Create Vba Project باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Skapa Vba-projekt med Aspose.Words för .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 VbaProject project = new VbaProject();
 project.Name = "AsposeProject";
 doc.VbaProject = project;
-// إنشاء وحدة نمطية جديدة وتحديد شفرة مصدر الماكرو.
+// Skapa en ny modul och ange en makrokällkod.
 VbaModule module = new VbaModule();
 module.Name = "AsposeModule";
 module.Type = VbaModuleType.ProceduralModule;
 module.SourceCode = "New source code";
-// أضف وحدة إلى مشروع VBA.
+// Lägg till modul till VBA-projektet.
 doc.VbaProject.Modules.Add(module);
 doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية إنشاء مشروع VBA في مستند Word باستخدام Aspose.Words for .NET. يتيح لك إنشاء مشروع VBA إضافة رمز VBA وتخصيصه في مستند Word الخاص بك. لا تتردد في استخدام هذه الميزة لأتمتة المهام أو إضافة وظائف مخصصة إلى مستندات Word الخاصة بك.
+## Slutsats
+den här handledningen såg vi hur man skapar ett VBA-projekt i ett Word-dokument med Aspose.Words för .NET. Genom att skapa ett VBA-projekt kan du lägga till och anpassa VBA-kod i ditt Word-dokument. Använd gärna den här funktionen för att automatisera uppgifter eller lägga till anpassade funktioner i dina Word-dokument.

@@ -1,35 +1,35 @@
 ---
-title: أدخل حقل TOA بدون Document Builder
-linktitle: أدخل حقل TOA بدون Document Builder
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإدخال حقل TOA بدون Document Builder باستخدام Aspose.Words for .NET.
+title: Inserisci campo TOA senza Document Builder
+linktitle: Inserisci campo TOA senza Document Builder
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida passo passo per inserire il campo TOA senza Document Builder utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-toafield-without-document-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "TOA Field Insertion" في Aspose.Words for .NET. اتبع كل خطوة بعناية للحصول على النتائج المرجوة.
+Ecco una guida dettagliata per spiegare il codice sorgente C# di seguito, che utilizza la funzione "Inserimento campo TOA" di Aspose.Words per .NET. Segui attentamente ogni passaggio per ottenere i risultati desiderati.
 
-## الخطوة 1: إعداد دليل المستند
+## Passaggio 1: impostazione della directory dei documenti
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "YOUR DOCUMENT DIRECTORY" con il percorso appropriato alla directory dei tuoi documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## Passaggio 2: creazione del documento e del paragrafo
 
-نبدأ بإنشاء مستند جديد وتهيئة فقرة.
+Iniziamo creando un nuovo documento e inizializzando un paragrafo.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 3: إدخال حقل TA
+## Passo 3: Inserimento del campo TA
 
-نستخدم فئة FieldTA لإدراج حقل TA في الفقرة.
+Usiamo la classe FieldTA per inserire un campo TA nel paragrafo.
 
 ```csharp
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
@@ -37,56 +37,56 @@ fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 ```
 
-## الخطوة 4: إضافة الفقرة إلى نص المستند
+## Passaggio 4: aggiunta del paragrafo al corpo del documento
 
-نضيف الفقرة التي تحتوي على حقل TA إلى نص المستند.
+Aggiungiamo il paragrafo contenente il campo TA al corpo del documento.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## الخطوة 5: إنشاء فقرة لحقل TOA
+## Passaggio 5: creazione del paragrafo per il campo TOA
 
-نقوم بإنشاء فقرة جديدة لحقل TOA.
+Creiamo un nuovo paragrafo per il campo TOA.
 
 ```csharp
 para = new Paragraph(doc);
 ```
 
-## الخطوة 6: إدخال حقل TOA
+## Passaggio 6: Inserimento del campo TOA
 
-نستخدم فئة FieldToa لإدراج حقل TOA في الفقرة.
+Usiamo la classe FieldToa per inserire un campo TOA nel paragrafo.
 
 ```csharp
 FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 ```
 
-## الخطوة 7: إضافة الفقرة إلى نص المستند
+## Passaggio 7: aggiunta del paragrafo al corpo del documento
 
-نضيف الفقرة التي تحتوي على حقل TOA إلى نص المستند.
+Aggiungiamo il paragrafo contenente il campo TOA al corpo del documento.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## الخطوة 8: تحديث TOA Field
+## Passaggio 8: aggiorna il campo TOA
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث حقل TOA.
+ Infine, chiamiamo il`Update()` metodo per aggiornare il campo TOA.
 
 ```csharp
 fieldToa.Update();
 ```
 
-### مثال على رمز المصدر لإدخال حقل TOA بدون Document Builder مع Aspose.Words for .NET
+### Esempio di codice sorgente per l'inserimento di campi TOA senza Document Builder con Aspose.Words per .NET
 
 ```csharp
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
-// نريد إدخال حقول TA و TOA مثل هذا:
-// {TA \ c 1 \ l "القيمة 0"}
-// {TOA \ c 1}
+// Vogliamo inserire i campi TA e TOA in questo modo:
+// { TA \c 1 \l "Valore 0" }
+// { TOA \c 1 }
 
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);
 fieldTA.EntryCategory = "1";

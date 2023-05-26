@@ -1,21 +1,21 @@
 ---
-title: أدخل جدول المحتويات
-linktitle: أدخل جدول المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج جدول محتويات في مستندات Word باستخدام Aspose.Words for .NET.
+title: Infoga innehållsförteckning
+linktitle: Infoga innehållsförteckning
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar en innehållsförteckning i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج جدول محتويات في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إنشاء جدول محتويات بالعناوين المناسبة وأرقام الصفحات.
+I den här omfattande handledningen kommer du att lära dig hur du infogar en innehållsförteckning i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna skapa en innehållsförteckning med lämpliga rubriker och sidnummer.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Förutsättningar
+Innan vi börjar, se till att du har följande förutsättningar:
+- Aspose.Words för .NET-biblioteket installerat på ditt system.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Steg 1: Skapa ett nytt dokument och DocumentBuilder
+För att börja, skapa ett nytt dokument med klassen Document och initiera ett DocumentBuilder-objekt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,15 +23,15 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل جدول المحتويات
-بعد ذلك ، استخدم الأسلوب InsertTableOfContents لفئة DocumentBuilder لإدراج جدول محتويات. حدد خيارات التنسيق المطلوبة في الطريقة:
+## Steg 2: Infoga en innehållsförteckning
+Använd sedan metoden InsertTableOfContents i klassen DocumentBuilder för att infoga en innehållsförteckning. Ange de nödvändiga formateringsalternativen inom metoden:
 
 ```csharp
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## الخطوة 3: إضافة محتوى المستند
-بعد إدراج جدول المحتويات ، أضف محتوى المستند الفعلي. قم بتعيين أنماط العناوين المناسبة باستخدام StyleIdentifier:
+## Steg 3: Lägg till dokumentinnehåll
+När du har infogat innehållsförteckningen lägger du till det faktiska dokumentinnehållet. Ställ in lämpliga rubrikstilar med StyleIdentifier:
 
 ```csharp
 builder.InsertBreak(BreakType.PageBreak);
@@ -60,35 +60,35 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## الخطوة 4: تحديث جدول المحتويات
-سيكون جدول المحتويات المُدرج حديثًا فارغًا في البداية. لتعبئتها ، قم بتحديث الحقول في المستند:
+## Steg 4: Uppdatera innehållsförteckningen
+Den nyligen infogade innehållsförteckningen kommer till en början att vara tom. För att fylla i det, uppdatera fälten i dokumentet:
 
 ```csharp
 doc.UpdateFields();
 ```
 
-## الخطوة 5: احفظ المستند
-بعد إدراج جدول المحتويات وتحديث الحقول ، احفظ المستند في ملف باستخدام طريقة Save من فئة Document:
+## Steg 5: Spara dokumentet
+Efter att ha infogat innehållsförteckningen och uppdaterat fälten, spara dokumentet till en fil med hjälp av Spara-metoden för klassen Document:
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
 
-### مثال كود المصدر لإدراج جدول المحتويات باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال جدول محتويات باستخدام Aspose.Words for .NET:
+### Exempel på källkod för Infoga innehållsförteckning med Aspose.Words för .NET
+Här är den fullständiga källkoden för att infoga en innehållsförteckning med Aspose.Words för .NET:
 
 ```csharp
 
             string dataDir = "YOUR DOCUMENT DIRECTORY";
 			
-            // تهيئة DocumentBuilder بكائن المستند
+            // Initiera DocumentBuilder med Document-objekt
             Document doc = new Document();
             DocumentBuilder builder = new DocumentBuilder(doc);
             
-            // إدراج جدول المحتويات
+            // Infoga innehållsförteckninga
 			builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
             
-            // ابدأ محتوى المستند الفعلي في الصفحة الثانية.
+            // Starta själva dokumentinnehållet på den andra sidan.
             builder.InsertBreak(BreakType.PageBreak);
 
             builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
@@ -121,8 +121,8 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
             builder.Writeln("Heading 3.3");
 
             
-            // سيكون جدول المحتويات المُدرج حديثًا فارغًا في البداية.
-            // يجب أن يتم ملؤها عن طريق تحديث الحقول في المستند.
+            // Den nyligen infogade innehållsförteckningen kommer till en början att vara tom.
+            // Den måste fyllas i genom att uppdatera fälten i dokumentet.
             doc.UpdateFields();
             
 

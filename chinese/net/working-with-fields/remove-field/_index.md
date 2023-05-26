@@ -1,62 +1,62 @@
 ---
-title: إزالة الحقل
-linktitle: إزالة الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا الدليل ، ستتعلم كيفية حذف حقل معين في مستند باستخدام Aspose.Words for .NET.
+title: 删除字段
+linktitle: 删除字段
+second_title: Aspose.Words for .NET API 参考
+description: 在本指南中，您将学习如何使用 Aspose.Words for .NET 删除文档中的特定字段。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/remove-field/
 ---
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم وظيفة "إزالة الحقل" في Aspose.Words for .NET. اتبع كل خطوة بعناية للحصول على النتائج المرجوة.
+这是一个分步指南，用于解释下面的 C# 源代码，它使用 Aspose.Words for .NET 的“字段删除”功能。仔细执行每个步骤以获得所需的结果。
 
-## الخطوة 1: إعداد دليل المستند
+## 第 1 步：文档目录设置
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+在提供的代码中，您必须指定文档的目录。将值“YOUR DOCUMENT DIRECTORY”替换为您的文档目录的适当路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## 第 2 步：装入文档
 
-نبدأ بتحميل المستند الحالي من الملف المحدد.
+我们首先从指定文件加载现有文档。
 
 ```csharp
 Document doc = new Document(dataDir + "Various fields.docx");
 ```
 
-## الخطوة 3: حذف الحقل
+## 第 3 步：删除字段
 
- نختار الحقل الأول في نطاق المستندات ونستخدم ملف`Remove()` طريقة إزالته.
+我们选择文档范围中的第一个字段并使用`Remove()`方法来删除它。
 
 ```csharp
 Field field = doc.Range.Fields[0];
 field. Remove();
 ```
 
-## الخطوة 4: حفظ المستند
+## 第 4 步：保存文档
 
- أخيرًا ، نسمي`Save()` طريقة لحفظ المستند المعدل.
+最后，我们称`Save()`保存修改文档的方法。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 ```
 
-### مثال على شفرة المصدر لحذف الحقل باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 删除字段的示例源代码
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+//装入文档。
 Document doc = new Document(dataDir + "Various fields.docx");
 
-// اختيار الحقل المراد حذفه.
+//选择要删除的字段。
 Field field = doc.Range.Fields[0];
 field. Remove();
 
-// احفظ المستند.
+//保存文档。
 doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 ```
 
-اتبع هذه الخطوات لحذف حقل معين في وثيقتك باستخدام Aspose.Words for .NET.
+按照以下步骤使用 Aspose.Words for .NET 删除文档中的特定字段。

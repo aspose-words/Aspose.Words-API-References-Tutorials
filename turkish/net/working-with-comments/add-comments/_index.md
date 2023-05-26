@@ -1,21 +1,21 @@
 ---
-title: أضف التعليقات
-linktitle: أضف التعليقات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة تعليقات إلى مستندات Word باستخدام Aspose.Words for .NET.
+title: Yorum ekle
+linktitle: Yorum ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerine nasıl yorum ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-comments/add-comments/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إضافة تعليقات إلى مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إدراج التعليقات وتخصيص محتواها في مستنداتك.
+Bu kapsamlı öğreticide, Aspose.Words for .NET kullanarak bir Word belgesine nasıl yorum ekleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, belgelerinize yorum ekleyebilecek ve içeriklerini özelleştirebileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesi başlatın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,42 +23,42 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: إضافة محتوى إلى المستند
-بعد ذلك ، أضف المحتوى المطلوب إلى المستند باستخدام كائن DocumentBuilder. في هذا المثال ، نضيف بعض النصوص:
+## 2. Adım: Belgeye İçerik Ekleyin
+Ardından, DocumentBuilder nesnesini kullanarak istenen içeriği belgeye ekleyin. Bu örnekte, biraz metin ekliyoruz:
 
 ```csharp
 builder.Write("Some text is added.");
 ```
 
-## الخطوة 3: قم بإنشاء تعليق وإضافة محتويات
-لإضافة تعليق ، قم بإنشاء مثيل للفئة Comment ، وتمرير كائن Document ، واسم المؤلف ، والأحرف الأولى للمؤلف ، والتاريخ الحالي:
+## 3. Adım: Bir Yorum Oluşturun ve İçerik Ekleyin
+Yorum eklemek için, Document nesnesini, yazar adını, yazarın adının baş harflerini ve geçerli tarihi ileten bir Comment sınıfı örneği oluşturun:
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-بعد ذلك ، قم بإلحاق التعليق بالفقرة الحالية:
+Ardından, yorumu geçerli paragrafa ekleyin:
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
 ```
 
-أضف محتويات إلى التعليق ، مثل فقرة ونص:
+Yoruma paragraf ve metin gibi içerikler ekleyin:
 
 ```csharp
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
-## الخطوة 4: احفظ المستند
-بعد إضافة التعليق ومحتوياته ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 4. Adım: Belgeyi Kaydedin
+Yorumu ve içeriğini ekledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 ```
 
-## مثال كود المصدر لإضافة تعليقات باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإضافة التعليقات باستخدام Aspose.Words for .NET:
+## Aspose.Words for .NET kullanarak Yorum Ekleme için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak yorum eklemek için eksiksiz kaynak kodu burada:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -76,7 +76,7 @@ comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إضافة تعليقات إلى مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إدراج التعليقات وتخصيص محتواها في مستنداتك.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine nasıl yorum ekleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak, artık belgelerinize yorum ekleyebilir ve içeriklerini özelleştirebilirsiniz.
 
-التعليقات مفيدة للتعاون أو توفير معلومات إضافية أو تدوين الملاحظات داخل المستند. جرب أسماء مؤلفين مختلفة وأحرف أولى ومحتويات تعليق لتلبية متطلباتك المحددة.
+Yorumlar, işbirliği yapmak, ek bilgi sağlamak veya bir belge içinde notlar almak için kullanışlıdır. Özel gereksinimlerinizi karşılamak için farklı yazar adları, baş harfler ve yorum içerikleri ile denemeler yapın.

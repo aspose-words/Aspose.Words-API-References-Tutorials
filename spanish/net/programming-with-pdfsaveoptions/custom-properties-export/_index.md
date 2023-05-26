@@ -1,61 +1,61 @@
 ---
-title: تصدير خصائص مخصصة
-linktitle: تصدير خصائص مخصصة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تصدير الخصائص المخصصة عند تحويل المستندات إلى PDF باستخدام Aspose.Words for .NET.
+title: Exportación de propiedades personalizadas
+linktitle: Exportación de propiedades personalizadas
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a exportar propiedades personalizadas al convertir documentos a PDF con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لتصدير الخصائص المخصصة للمستند باستخدام Aspose.Words for .NET. يتيح لك تصدير الخصائص المخصصة تضمين معلومات إضافية في مستند PDF الذي تم إنشاؤه. اتبع الخطوات التالية:
+En este tutorial, lo guiaremos a través de los pasos para exportar las propiedades personalizadas de un documento usando Aspose.Words para .NET. La exportación de propiedades personalizadas le permite incluir información adicional en el documento PDF generado. Siga los pasos a continuación:
 
-## الخطوة 1: إنشاء مستند وإضافة خصائص مخصصة
+## Paso 1: crear un documento y agregar propiedades personalizadas
 
-ابدأ بإنشاء مثيل لفئة المستند:
+Comience creando una instancia de la clase Documento:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: إضافة خصائص مخصصة
-بعد ذلك ، أضف الخصائص المخصصة المطلوبة. على سبيل المثال ، لإضافة خاصية "شركة" بالقيمة "Aspose" ، استخدم`Add` طريقة مجموعة CustomDocumentProperties:
+## Paso 2: Agregar propiedades personalizadas
+ continuación, agregue las propiedades personalizadas deseadas. Por ejemplo, para agregar una propiedad "Empresa" con el valor "Aspose", use el`Add` método de la colección CustomDocumentProperties:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-يمكنك إضافة العديد من الخصائص المخصصة حسب الحاجة.
+Puede agregar tantas propiedades personalizadas como sea necesario.
 
-## الخطوة 3: قم بتعيين خيارات تصدير PDF
+## Paso 3: Configure las opciones de exportación de PDF
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وحدد كيفية تصدير الخصائص المخصصة:
+Cree una instancia de la clase PdfSaveOptions y especifique cómo exportar propiedades personalizadas:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
 ```
 
-يتحكم هذا الخيار في تصدير الخصائص المخصصة عند التحويل إلى PDF.
+Esta opción controla la exportación de propiedades personalizadas al convertir a PDF.
 
-## الخطوة 4: تحويل المستند إلى PDF
+## Paso 4: Convertir documento a PDF
 
- استخدم ال`Save` طريقة تحويل المستند إلى PDF مع تحديد خيارات التحويل:
+ Utilizar el`Save` método para convertir el documento a PDF especificando las opciones de conversión:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Asegúrese de especificar la ruta correcta para guardar el PDF convertido.
 
-### مثال على شفرة المصدر لتصدير الخصائص المخصصة باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para la exportación de propiedades personalizadas mediante Aspose.Words para .NET
 
-إليك التعليمات البرمجية المصدر الكاملة لتصدير الخصائص المخصصة من مستند باستخدام Aspose.Words for .NET:
+Aquí está el código fuente completo para exportar propiedades personalizadas desde un documento usando Aspose.Words para .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -66,5 +66,5 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveO
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة تصدير الخصائص المخصصة للمستند عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+Siguiendo estos pasos, puede exportar fácilmente las propiedades personalizadas de un documento al convertirlo a PDF con Aspose.Words para .NET.
 

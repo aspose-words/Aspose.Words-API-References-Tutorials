@@ -1,25 +1,25 @@
 ---
-title: البرمجة مع خيارات وإعدادات المستند
-linktitle: البرمجة مع خيارات وإعدادات المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تحسين لـ ms word ، وإظهار الأخطاء النحوية والإملائية ، وتنظيف الأنماط والقوائم غير المستخدمة ، وتنظيف النمط المكرر ، وخيارات العرض ، ووثيقة pa
+title: 使用文档选项和设置进行编程
+linktitle: 使用文档选项和设置进行编程
+second_title: Aspose.Words for .NET API 参考
+description: 教程包含优化 ms word、显示语法和拼写错误、清理未使用的样式和列表、清理重复样式、查看选项、文档 pa
 type: docs
 weight: 1510
 url: /zh/net/programming-with-document-options-and-settings/
 ---
-ترشدك برامج Aspose.Words for .NET التعليمية حول "البرمجة مع خيارات وإعدادات المستند" عبر الميزات والتقنيات المتنوعة لمعالجة خيارات وإعدادات المستندات في Aspose.Words for .NET. تساعدك هذه البرامج التعليمية على فهم كيفية تخصيص إعدادات التحميل وإدارة الخطوط وتنسيقات المستندات والقوالب والمزيد.
+Aspose.Words for .NET“使用文档选项和设置进行编程”教程将带您了解在 Aspose.Words for .NET 中操作文档选项和设置的各种功能和技术。这些教程可帮助您了解如何自定义上传设置、管理字体、文档格式、模板等。
 
-توضح البرامج التعليمية كيفية تخصيص خيارات تحميل المستند. ستتعلم كيفية تحديد معلمات التحميل مثل إدارة الخطوط ودقة الارتباط وتحسين الأداء وما إلى ذلك. تتيح لك هذه الخيارات التحكم بدقة في سلوك تحميل المستندات وتحسين أداء تطبيقك.
+这些教程解释了如何自定义文档加载选项。您将学习如何指定加载参数，如字体管理、链接解析、性能优化等。这些选项允许您精确控制文档加载行为并优化应用程序的性能。
 
- ## دروس
-| عنوان | وصف |
+ ## 教程
+| 标题 | 描述 |
 | --- | --- |
-| [تحسين لبرنامج MS Word](./optimize-for-ms-word/) | دليل تفصيلي خطوة بخطوة لتحسين مستند لبرنامج MS Word باستخدام Aspose.Words for .NET. |
-| [إظهار الأخطاء النحوية والإملائية](./show-grammatical-and-spelling-errors/) | دليل تفصيلي خطوة بخطوة لتمكين عرض الأخطاء النحوية والإملائية في مستند باستخدام Aspose.Words for .NET. |
-| [تنظيف الأنماط والقوائم غير المستخدمة](./cleanup-unused-styles-and-lists/) | دليل خطوة بخطوة لتنظيف الأنماط والقوائم غير المستخدمة في مستند باستخدام Aspose.Words for .NET. |
-| [تنظيف النمط المكرر](./cleanup-duplicate-style/) | دليل خطوة بخطوة لتنظيف الأنماط المكررة في مستند باستخدام Aspose.Words for .NET. تم تضمين كود المصدر الكامل. |
-| [عرض الخيارات](./view-options/) | دليل تفصيلي خطوة بخطوة لتكوين خيارات عرض المستند باستخدام Aspose.Words for .NET. |
-| [وثيقة إعداد الصفحة](./document-page-setup/) | دليل خطوة بخطوة لإعداد تخطيط مستند باستخدام Aspose.Words for .NET. |
-| [أضف اليابانية كلغات تحرير](./add-japanese-as-editing-languages/) | دليل خطوة بخطوة لإضافة اليابانية كلغة تحرير باستخدام Aspose.Words for .NET. |
-| [تعيين اللغة الروسية كلغة تحرير افتراضية](./set-russian-as-default-editing-language/) | دليل خطوة بخطوة لتعيين اللغة الروسية كلغة تحرير افتراضية لمستند باستخدام Aspose.Words for .NET. |
-| [تعيين إعداد الصفحة وتنسيق القسم](./set-page-setup-and-section-formatting/) | دليل خطوة بخطوة لإعداد تخطيط المستند وتنسيق القسم باستخدام Aspose.Words for .NET. |
+| [优化 Ms Word](./optimize-for-ms-word/) | 使用 Aspose.Words for .NET 优化 MS Word 文档的分步指南。 |
+| [显示语法和拼写错误](./show-grammatical-and-spelling-errors/) | 使用 Aspose.Words for .NET 启用文档中语法和拼写错误显示的分步指南。 |
+| [清理未使用的样式和列表](./cleanup-unused-styles-and-lists/) | 使用 Aspose.Words for .NET 清理文档中未使用的样式和列表的分步指南。 |
+| [清理重复样式](./cleanup-duplicate-style/) | 使用 Aspose.Words for .NET 清理文档中重复样式的分步指南。包括完整的源代码。 |
+| [查看选项](./view-options/) | 使用 Aspose.Words for .NET 配置文档显示选项的分步指南。 |
+| [文档页面设置](./document-page-setup/) | 使用 Aspose.Words for .NET 设置文档布局的分步指南。 |
+| [添加日语作为编辑语言](./add-japanese-as-editing-languages/) | 使用 Aspose.Words for .NET 添加日语作为编辑语言的分步指南。 |
+| [将俄语设置为默认编辑语言](./set-russian-as-default-editing-language/) | 使用 Aspose.Words for .NET 将俄语设置为文档的默认编辑语言的分步指南。 |
+| [设置页面设置和部分格式](./set-page-setup-and-section-formatting/) | 使用 Aspose.Words for .NET 设置文档布局和部分格式的分步指南。 |

@@ -1,48 +1,48 @@
 ---
-title: تحديث البيانات المرجعية
-linktitle: تحديث البيانات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح شفرة المصدر C # لميزة تحديث بيانات الإشارة المرجعية Aspose.Words لـ .NET.
+title: Mettre à jour les données des signets
+linktitle: Mettre à jour les données des signets
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour expliquer le code source C # de la fonctionnalité de mise à jour des données de signet Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-في هذا البرنامج التعليمي ، سننتقل عبر دليل تفصيلي خطوة بخطوة لفهم ميزة تحديث بيانات الإشارة المرجعية وتنفيذها في Aspose.Words for .NET. تتيح لك هذه الميزة تحديث محتوى وخصائص الإشارات المرجعية داخل مستند Word باستخدام كود مصدر C #.
+Dans ce didacticiel, nous allons parcourir un guide étape par étape pour comprendre et implémenter la fonctionnalité de mise à jour des données de signet d'Aspose.Words pour .NET. Cette fonctionnalité vous permet de mettre à jour le contenu et les propriétés des signets dans un document Word à l'aide du code source C#.
 
-## متطلبات
+## Exigences
 
-قبل متابعة البرنامج التعليمي ، تأكد من توفر المتطلبات التالية:
+Avant de poursuivre le didacticiel, assurez-vous que les conditions suivantes sont remplies :
 
-- تثبيت Aspose.Words لمكتبة .NET
-- المعرفة الأساسية بلغة البرمجة C #
-- Visual Studio أو أي IDE متوافق آخر
+- Bibliothèque Aspose.Words pour .NET installée
+- Connaissance de base du langage de programmation C#
+- Visual Studio ou tout autre IDE compatible
 
-## الخطوة 1: قم بتحميل المستند
+## Étape 1 : Charger le document
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي يحتوي على الإشارات المرجعية التي نريد تحديثها. بافتراض أن لديك المستند مخزّنًا في دليل معين ، استخدم الكود التالي لتحميل المستند:
+Dans cette étape, nous allons charger le document Word contenant les signets que nous souhaitons mettre à jour. En supposant que le document soit stocké dans un répertoire spécifique, utilisez le code suivant pour charger le document :
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` مع مسار الدليل الفعلي حيث يوجد المستند الخاص بك.
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel au répertoire où se trouve votre document.
 
-## الخطوة 2: الوصول إلى الإشارة المرجعية
+## Étape 2 : Accéder au marque-page
 
-لتحديث بيانات الإشارة المرجعية ، نحتاج أولاً إلى الوصول إلى الإشارة المرجعية المحددة داخل المستند. كل إشارة مرجعية لها اسم فريد مرتبط بها. استخدم الكود التالي للوصول إلى إشارة مرجعية تسمى "MyBookmark1":
+Pour mettre à jour les données du signet, nous devons d'abord accéder au signet spécifique dans le document. Chaque signet est associé à un nom unique. Utilisez le code suivant pour accéder à un signet nommé "MyBookmark1":
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks["MyBookmark1"];
 ```
 
-تأكد من تطابق اسم الإشارة المرجعية مع الاسم الموجود في المستند. يمكنك تعديله حسب متطلباتك.
+Assurez-vous que le nom du signet correspond à celui de votre document. Vous pouvez le modifier selon vos besoins.
 
-## الخطوة 3: تحديث خصائص الإشارات المرجعية والمحتوى
+## Étape 3 : Mettre à jour les propriétés et le contenu des favoris
 
-بمجرد الوصول إلى الإشارة المرجعية ، يمكنك تحديث خصائصها ومحتواها. في مقتطف الشفرة التالي ، سنقوم بتحديث اسم الإشارة المرجعية ونصها:
+Une fois que vous avez accédé au signet, vous pouvez mettre à jour ses propriétés et son contenu. Dans l'extrait de code suivant, nous mettrons à jour le nom et le texte du signet :
 
 ```csharp
 string name = bookmark.Name;
@@ -52,23 +52,23 @@ bookmark.Name = "RenamedBookmark";
 bookmark.Text = "This is a new bookmarked text.";
 ```
 
-يمكنك تخصيص اسم الإشارة المرجعية والنص الجديد وفقًا لاحتياجاتك. الرمز أعلاه يعيد تسمية الإشارة المرجعية إلى "RenamedBookmark" ويقوم بتحديث محتوى النص.
+Vous pouvez personnaliser le nom du signet et le nouveau texte en fonction de vos besoins. Le code ci-dessus renomme le signet en "RenamedBookmark" et met à jour le contenu du texte.
 
-## الخطوة 4: احفظ المستند المحدث
+## Étape 4 : Enregistrer le document mis à jour
 
-بعد تحديث بيانات الإشارة المرجعية ، تحتاج إلى حفظ المستند المعدل. استخدم الكود التالي لحفظ المستند:
+Après avoir mis à jour les données du signet, vous devez enregistrer le document modifié. Utilisez le code suivant pour enregistrer le document :
 
 ```csharp
 doc.Save(dataDir + "UpdatedDocument.docx");
 ```
 
-سيحفظ هذا الرمز المستند المعدل باسم "UpdatedDocument.docx" في نفس الدليل مثل المستند الأصلي.
+Ce code enregistrera le document modifié sous le nom "UpdatedDocument.docx" dans le même répertoire que le document d'origine.
 
-### مثال على شفرة المصدر لتحديث بيانات الإشارة المرجعية باستخدام Aspose.Words for .NET
+### Exemple de code source pour la mise à jour des données de signet à l'aide d'Aspose.Words pour .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 
@@ -82,8 +82,8 @@ doc.Save(dataDir + "UpdatedDocument.docx");
 
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` مع مسار الدليل الفعلي حيث يوجد المستند الخاص بك.
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel au répertoire où se trouve votre document.
 
-## خاتمة
+## Conclusion
 
-تهانينا! لقد تعلمت بنجاح كيفية تحديث بيانات الإشارات المرجعية باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة المقدم في هذا البرنامج التعليمي ، يجب أن تكون قادرًا الآن على دمج هذه الميزة في تطبيقات C # الخاصة بك ومعالجة الإشارات المرجعية في مستندات Word برمجيًا.
+Toutes nos félicitations! Vous avez appris avec succès comment mettre à jour les données des signets à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape fourni dans ce didacticiel, vous devriez maintenant être en mesure d'intégrer cette fonctionnalité dans vos applications C# et de manipuler les signets dans les documents Word par programmation.

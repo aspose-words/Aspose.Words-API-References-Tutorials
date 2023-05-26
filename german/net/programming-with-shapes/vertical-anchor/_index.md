@@ -1,69 +1,69 @@
 ---
-title: مرساة عمودية
-linktitle: مرساة عمودية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وضع الشكل عموديًا داخل مستند باستخدام ميزة الارتساء العمودي في Aspose.Words for .NET.
+title: Vertikaler Anker
+linktitle: Vertikaler Anker
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie eine Form mithilfe der vertikalen Ankerfunktion in Aspose.Words für .NET vertikal innerhalb eines Dokuments positionieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-shapes/vertical-anchor/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام ميزة الارتساء العمودي في Aspose.Words for .NET لوضع الشكل عموديًا داخل المستند. من خلال تعيين خاصية الارتساء العمودي للشكل ، يمكنك التحكم في المحاذاة الرأسية بالنسبة إلى النص أو الصفحة.
+In diesem Tutorial wird erklärt, wie Sie die vertikale Ankerfunktion in Aspose.Words für .NET verwenden, um eine Form vertikal innerhalb eines Dokuments zu positionieren. Durch Festlegen der vertikalen Ankereigenschaft einer Form können Sie deren vertikale Ausrichtung relativ zum Text oder zur Seite steuern.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Voraussetzungen
+Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words für .NET-Bibliothek installiert.
+- Grundkenntnisse in C# und der Arbeit mit Word-Dokumenten.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
+ Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"`mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Schritt 2: Erstellen Sie ein neues Dokument und einen neuen DocumentBuilder
+ Erstellen Sie eine neue Instanz von`Document` Klasse und a`DocumentBuilder` Objekt, um mit dem Dokument zu arbeiten.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدراج وتكوين شكل
- أدخل شكلاً في المستند باستخدام ملف`InsertShape` طريقة`DocumentBuilder` هدف. اضبط الأبعاد المطلوبة للشكل.
+## Schritt 3: Fügen Sie eine Form ein und konfigurieren Sie sie
+ Fügen Sie mithilfe von eine Form in das Dokument ein`InsertShape` Methode der`DocumentBuilder` Objekt. Stellen Sie die gewünschten Abmessungen für die Form ein.
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
 ```
 
-## الخطوة 4: اضبط المرساة الرأسية
-قم بتعيين خاصية الارتساء العمودي للشكل للتحكم في المحاذاة الرأسية. في هذا المثال ، قمنا بتعيينه على "الجزء السفلي" لربط الشكل أسفل النص أو الصفحة.
+## Schritt 4: Setzen Sie den vertikalen Anker
+Legen Sie die vertikale Ankereigenschaft der Form fest, um ihre vertikale Ausrichtung zu steuern. In diesem Beispiel setzen wir es auf „Unten“, um die Form am unteren Rand des Textes oder der Seite zu verankern.
 
 ```csharp
 textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;
 ```
 
-## الخطوة 5: أضف محتوى إلى الشكل
- استخدم ال`MoveTo` طريقة`DocumentBuilder` كائن لتحريك المؤشر إلى الفقرة الأولى من الشكل. ثم استخدم ملف`Write` طريقة لإضافة محتوى إلى الشكل.
+## Schritt 5: Fügen Sie der Form Inhalte hinzu
+ Benutzen Sie die`MoveTo` Methode der`DocumentBuilder` Objekt, um den Cursor zum ersten Absatz der Form zu bewegen. Dann verwenden Sie die`Write` Methode zum Hinzufügen von Inhalten zur Form.
 
 ```csharp
 builder.MoveTo(textBox.FirstParagraph);
 builder.Write("Textbox contents");
 ```
 
-## الخطوة 6: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithShapes.VerticalAnchor.docx".
+## Schritt 6: Speichern Sie das Dokument
+ Speichern Sie das Dokument mit im angegebenen Verzeichnis`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithShapes.VerticalAnchor.docx“.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");
 ```
 
-### مثال على شفرة المصدر لـ Vertical Anchor باستخدام Aspose.Words for .NET 
+### Beispielquellcode für Vertical Anchor mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -75,4 +75,4 @@ doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");
 	doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");
 ```
 
-هذا كل شيء! لقد نجحت في استخدام ميزة الارتساء العمودي في Aspose.Words for .NET لوضع الشكل عموديًا داخل المستند.
+Das ist es! Sie haben die vertikale Ankerfunktion in Aspose.Words für .NET erfolgreich verwendet, um eine Form vertikal innerhalb eines Dokuments zu positionieren.

@@ -1,47 +1,47 @@
 ---
-title: تنسيق الخط
-linktitle: تنسيق الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET.
+title: Formato de fuente
+linktitle: Formato de fuente
+second_title: Referencia de API de Aspose.Words para .NET
+description: En este tutorial, aprenda a formatear la fuente en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/font-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تنسيق الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يتيح لك تنسيق الخط تخصيص مظهر النص ، بما في ذلك الحجم والغامق واللون والخط والتسطير والمزيد. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+En este tutorial, lo guiaremos a través de cómo dar formato a la fuente en un documento de Word utilizando la biblioteca Aspose.Words para .NET. El formato de fuente le permite personalizar la apariencia del texto, incluido el tamaño, la negrita, el color, la fuente, el subrayado y más. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes elementos:
+- Un conocimiento práctico del lenguaje de programación C#
+- La biblioteca Aspose.Words para .NET instalada en su proyecto
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+ Primero, debe establecer la ruta del directorio en la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta adecuada.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومولد مستندات
- بعد ذلك ، سننشئ مستندًا جديدًا عن طريق إنشاء مثيل لملف`Document` class ومنشئ المستندات عن طريق إنشاء مثيل لملف`DocumentBuilder` فصل.
+## Paso 2: Crear un nuevo documento y generador de documentos
+ A continuación, crearemos un nuevo documento instanciando el`Document` class y un generador de documentos instanciando el`DocumentBuilder` clase.
 
 ```csharp
-// قم بإنشاء مستند جديد
+// Crear un nuevo documento
 Document doc = new Document();
 
-// قم بإنشاء منشئ المستندات
+// Crear un generador de documentos
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تكوين تنسيق الخط
- الآن سوف نصل إلى`Font` كائن من منشئ المستند وتكوين خصائص تنسيق الخط مثل الحجم ، والجريء ، واللون ، والخط ، والتسطير ، وما إلى ذلك.
+## Paso 3: configurar el formato de fuente
+ Ahora accederemos a la`Font` objeto del generador de documentos y configure las propiedades de formato de fuente, como tamaño, negrita, color, fuente, subrayado, etc.
 
 ```csharp
-// الوصول إلى الخط
+// Accede a la fuente
 Font font = builder.Font;
 
-// تكوين تنسيق الخط
+// Configurar formato de fuente
 font.Size = 16;
 font. Bold = true;
 font.Color = Color.Blue;
@@ -49,24 +49,24 @@ font.Name = "Arial";
 font.Underline = Underline.Dash;
 ```
 
-## الخطوة 4: أضف نصًا إلى المستند
-بعد ذلك ، سنستخدم منشئ المستندات لإضافة بعض النص المنسق إلى المستند.
+## Paso 4: Agregar texto al documento
+A continuación, usaremos el generador de documentos para agregar texto formateado al documento.
 
 ```csharp
-// أضف نصًا إلى المستند
+// Agregar texto al documento
 builder.Write("Example text.");
 ```
 
-## الخطوة 5: احفظ المستند
-أخيرًا ، سنحفظ المستند الذي يحتوي على تنسيق الخط.
+## Paso 5: Guarde el documento
+Finalmente, guardaremos el documento que contiene el formato de fuente.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لتنسيق الخط باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para el formato de fuente usando Aspose.Words para .NET 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -81,5 +81,5 @@ builder.Write("Sample text.");
 doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET. يسمح لك تنسيق الخط بتخصيص مظهر النص في مستنداتك. لا تتردد في استخدام هذه الميزة لإنشاء مستندات جذابة واحترافية.
+## Conclusión
+En este tutorial, vimos cómo formatear fuentes en un documento de Word usando Aspose.Words para .NET. El formato de fuente le permite personalizar la apariencia del texto en sus documentos. No dude en utilizar esta función para crear documentos atractivos y profesionales.

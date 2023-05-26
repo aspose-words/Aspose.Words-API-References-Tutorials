@@ -1,34 +1,34 @@
 ---
-title: وثيقة إعداد الصفحة
-linktitle: وثيقة إعداد الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد تخطيط مستند باستخدام Aspose.Words for .NET.
+title: Belge Sayfası Yapısı
+linktitle: Belge Sayfası Yapısı
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir belge mizanpajı oluşturmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-document-options-and-settings/document-page-setup/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتكوين تخطيط المستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة ضبط وضع التخطيط وعدد الأحرف في كل سطر وعدد الأسطر في كل صفحة.
+Bu eğitimde, Aspose.Words for .NET ile belge düzenini yapılandırmak için C# kaynak kodunda size yol göstereceğiz. Bu özellik, düzen modunu, satır başına karakter sayısını ve sayfa başına satır sayısını ayarlamanıza olanak tanır.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد تهيئته. استخدم الكود التالي لتحميل المستند:
+Bu adımda yapılandırmak istediğimiz Word belgesini yükleyeceğiz. Belgeyi yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
 
-## الخطوة 3: إعداد التخطيط
+## 3. Adım: Düzeni ayarlama
 
-لنقم الآن بتهيئة تخطيط المستند. استخدم الكود التالي لضبط وضع التخطيط ، وعدد الأحرف في كل سطر ، وعدد الأسطر في كل صفحة:
+Şimdi belge düzenini yapılandıralım. Düzen modunu, satır başına karakter sayısını ve sayfa başına satır sayısını ayarlamak için aşağıdaki kodu kullanın:
 
 ```csharp
 doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
@@ -38,20 +38,20 @@ doc.FirstSection.PageSetup.LinesPerPage = 10;
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx");
 ```
 
-يقوم هذا الرمز بتعيين وضع التخطيط على "الشبكة" ثم يحدد عدد الأحرف في كل سطر وعدد الأسطر في كل صفحة.
+Bu kod, düzen modunu "Kılavuz" olarak ayarlar ve ardından satır başına karakter sayısını ve sayfa başına satır sayısını belirtir.
 
-### مثال على الكود المصدري لإعداد صفحة المستند باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Document Page Setup için örnek kaynak kodu
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
-	// اضبط وضع التخطيط لقسم يسمح بتعريف سلوك شبكة الوثيقة.
-	// لاحظ أن علامة التبويب Document Grid تصبح مرئية في مربع حوار إعداد الصفحة في MS Word
-	// إذا تم تعريف أي لغة آسيوية على أنها لغة تحرير.
+	// Belge ızgara davranışını tanımlamaya izin veren bir bölüm için düzen modunu ayarlayın.
+	// Belge Izgarası sekmesinin MS Word'ün Sayfa Yapısı iletişim kutusunda görünür hale geldiğini unutmayın.
+	// herhangi bir Asya dili düzenleme dili olarak tanımlanırsa.
 	doc.FirstSection.PageSetup.LayoutMode = SectionLayoutMode.Grid;
 	doc.FirstSection.PageSetup.CharactersPerLine = 30;
 	doc.FirstSection.PageSetup.LinesPerPage = 10;
@@ -60,6 +60,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
    
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ bölümünde doğru belge yolunu belirttiğinizden emin olun.`dataDir` değişken.
 
-لقد تعلمت الآن كيفية تكوين تخطيط المستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تخصيص تخطيط المستندات الخاصة بك.
+Artık bir belgenin düzenini Aspose.Words for .NET kullanarak nasıl yapılandıracağınızı öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek kendi belgelerinizin düzenini kolayca özelleştirebilirsiniz.

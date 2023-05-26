@@ -1,68 +1,68 @@
 ---
-title: دقة المقارنة
-linktitle: دقة المقارنة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على ميزة مقارنة التفاصيل في Aspose.Words for .NET التي تسمح بمقارنة المستندات حرفًا بحرف ، والإبلاغ عن التغييرات التي تم إجراؤها.
+title: Comparación de granularidad
+linktitle: Comparación de granularidad
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda la característica Comparar granularidad de Aspose.Words para .NET que permite comparar documentos carácter por carácter e informar los cambios realizados.
 type: docs
 weight: 10
 url: /es/net/compare-documents/comparison-granularity/
 ---
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة مقارنة التفاصيل في Aspose.Words for .NET.
+Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación, que utiliza la función Comparar granularidad de Aspose.Words para .NET.
 
-## الخطوة 1: مقدمة
+## Paso 1: Introducción
 
-تتيح لك ميزة مقارنة التفاصيل في Aspose.Words for .NET مقارنة المستندات على مستوى الأحرف. هذا يعني أنه سيتم مقارنة كل حرف وسيتم الإبلاغ عن التغييرات وفقًا لذلك.
+La función Comparar granularidad de Aspose.Words para .NET le permite comparar documentos a nivel de carácter. Esto significa que cada carácter se comparará y los cambios se informarán en consecuencia.
 
-## الخطوة الثانية: تهيئة البيئة
+## Paso 2: Configuración del entorno
 
-قبل أن تبدأ ، تحتاج إلى إعداد بيئة التطوير الخاصة بك للعمل مع Aspose.Words for .NET. تأكد من تثبيت مكتبة Aspose.Words وأن لديك مشروع C # مناسب لتضمين الكود.
+Antes de comenzar, debe configurar su entorno de desarrollo para trabajar con Aspose.Words para .NET. Asegúrese de tener instalada la biblioteca Aspose.Words y tener un proyecto de C# adecuado para incrustar el código.
 
-## الخطوة 3: إضافة التجميعات المطلوبة
+## Paso 3: agregue los ensamblajes necesarios
 
-لاستخدام ميزة مقارنة التفاصيل في Aspose.Words for .NET ، تحتاج إلى إضافة التجميعات الضرورية إلى مشروعك. تأكد من أن لديك المراجع المناسبة لـ Aspose. Words في مشروعك.
+Para usar la función Comparar granularidad de Aspose.Words para .NET, debe agregar los ensamblajes necesarios a su proyecto. Asegúrese de tener las referencias adecuadas a Aspose.Words en su proyecto.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.DocumentBuilder;
 ```
 
-## الخطوة 4: إنشاء المستندات
+## Paso 4: Creación de documentos
 
-في هذه الخطوة ، سننشئ وثيقتين باستخدام فئة DocumentBuilder. سيتم استخدام هذه الوثائق للمقارنة.
+En este paso, crearemos dos documentos utilizando la clase DocumentBuilder. Estos documentos se utilizarán para la comparación.
 
 ```csharp
-// قم بإنشاء مستند أ.
+// Crear documento A.
 DocumentBuilder builderA = new DocumentBuilder(new Document());
 builderA.Writeln("This is a simple A word.");
 
-// إنشاء مستند B.
+// Crear documento B.
 DocumentBuilder builderB = new DocumentBuilder(new Document());
 builderB.Writeln("This is simple B words.");
 ```
 
-## الخطوة 5: تكوين خيارات المقارنة
+## Paso 5: Configuración de las opciones de comparación
 
-في هذه الخطوة ، سنقوم بتكوين خيارات المقارنة لتحديد دقة المقارنة. هنا سوف نستخدم دقة على مستوى الحرف.
+En este paso, configuraremos las opciones de comparación para especificar la granularidad de comparación. Aquí usaremos granularidad a nivel de carácter.
 
 ```csharp
 CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.CharLevel };
 ```
 
-## الخطوة 6: مقارنة المستندات
+## Paso 6: Comparación de documentos
 
-دعنا الآن نقارن المستندات باستخدام طريقة المقارنة لفئة المستند. سيتم حفظ التغييرات في المستند أ.
+Ahora comparemos los documentos usando el método Compare de la clase Document. Los cambios se guardarán en el documento A.
 
 ```csharp
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- ال`Compare` يقارن الأسلوب المستند A بالمستند B ويحفظ التغييرات في المستند A. يمكنك تحديد اسم المؤلف وتاريخ المقارنة كمرجع.
+ El`Compare` El método compara el documento A con el documento B y guarda los cambios en el documento A. Puede especificar el nombre del autor y la fecha de comparación como referencia.
 
-## خاتمة
+## Conclusión
 
-في هذه المقالة ، استكشفنا ميزة مقارنة التفاصيل في Aspose.Words for .NET. تتيح لك هذه الميزة مقارنة المستندات على مستوى الأحرف وتقرير التغييرات. يمكنك استخدام هذه المعرفة لإجراء مقارنات تفصيلية بين المستندات في مشاريعك.
+En este artículo, exploramos la función Comparar granularidad de Aspose.Words para .NET. Esta característica le permite comparar documentos a nivel de carácter e informar cambios. Puede utilizar este conocimiento para realizar comparaciones detalladas de documentos en sus proyectos.
 
-### نموذج لشفرة مصدر للمقارنة باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para la granularidad de comparación con Aspose.Words para .NET
 
 ```csharp
             

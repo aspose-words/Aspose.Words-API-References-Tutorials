@@ -1,51 +1,51 @@
 ---
-title: يتوسطه خط
-linktitle: يتوسطه خط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Durchgestrichen
+linktitle: Durchgestrichen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie den durchgestrichenen Textstil mit Aspose.Words für .NET anwenden.
 type: docs
 weight: 10
 url: /de/net/working-with-markdown/strikethrough/
 ---
 
 
-في هذا المثال ، سنرشدك إلى كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام Aspose.Words for .NET. يتم استخدام نص يتوسطه خط للإشارة إلى حذف النص أو أنه لم يعد صالحًا.
+In diesem Beispiel zeigen wir Ihnen, wie Sie den durchgestrichenen Textstil mit Aspose.Words für .NET anwenden. Durchgestrichener Text wird verwendet, um anzuzeigen, dass der Text gelöscht wurde oder nicht mehr gültig ist.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Schritt 1: Verwendung eines Dokumentengenerators
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Zuerst verwenden wir einen Dokumentgenerator, um Inhalte zu unserem Dokument hinzuzufügen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تطبيق نمط النص يتوسطه خط
+## Schritt 2: Durchgestrichenen Textstil anwenden
 
- سنقوم بتمكين نمط النص يتوسطه خط من خلال تعيين`StrikeThrough` ممتلكات`Font` يعترض على`true`.
+ Wir aktivieren den durchgestrichenen Textstil, indem wir festlegen`StrikeThrough` Eigentum der`Font` widersprechen`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;
 ```
 
-## الخطوة 3: أضف نص يتوسطه خط
+## Schritt 3: Durchgestrichenen Text hinzufügen
 
- يمكننا الآن إضافة نص يتوسطه خط باستخدام منشئ المستندات`Writeln` طريقة.
+ Wir können jetzt mit dem Dokumentgenerator durchgestrichenen Text hinzufügen`Writeln` Methode.
 
 ```csharp
 builder.Writeln("This text will be StrikeThrough");
 ```
 
 
-### مثال على شفرة المصدر لنص يتوسطه خط مع Aspose.Words for .NET
+### Beispielquellcode für durchgestrichenen Text mit Aspose.Words für .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص يتوسطه خط.
+	// Machen Sie den Text durchgestrichen.
 	builder.Font.StrikeThrough = true;
 	builder.Writeln("This text will be StrikeThrough");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام Aspose.Words for .NET.
+Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie den durchgestrichenen Textstil mit Aspose.Words für .NET anwenden.

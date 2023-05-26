@@ -1,59 +1,59 @@
 ---
-title: Doc إلى Docx
-linktitle: Doc إلى Docx
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات Word من تنسيق doc. إلى تنسيق Docx باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Da Doc a Docx
+linktitle: Da Doc a Docx
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come convertire i documenti di Word dal formato .doc al formato Docx utilizzando Aspose.Words per .NET. Tutorial passo passo con codice sorgente di esempio.
 type: docs
 weight: 10
 url: /it/net/basic-conversions/doc-to-docx/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لاستخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق .doc إلى تنسيق Docx. سنشرح الكود المصدري C # المقدم ونوجهك حول كيفية تنفيذه في مشاريعك الخاصة.
+In questo tutorial, ti guideremo attraverso il processo passo-passo dell'utilizzo di Aspose.Words per .NET per convertire un documento Word in formato .doc nel formato Docx. Spiegheremo il codice sorgente C# fornito e ti guideremo su come implementarlo nei tuoi progetti.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria dal sito ufficiale.
 
-## الخطوة الأولى: تهيئة البيئة التنموية
+## Passaggio 1: configurazione dell'ambiente di sviluppo
 
-قبل أن تبدأ في البرمجة ، تأكد من أن لديك بيئة تطوير مناسبة. افتح Visual Studio أو C # IDE المفضل لديك وقم بإنشاء مشروع جديد.
+Prima di iniziare a programmare, assicurati di disporre di un ambiente di sviluppo adatto. Apri Visual Studio o il tuo IDE C# preferito e crea un nuovo progetto.
 
-## الخطوة 2: إضافة المراجع واستيراد مساحات الأسماء
+## Passaggio 2: aggiunta di riferimenti e importazione di spazi dei nomi
 
-لاستخدام Aspose.Words for .NET ، تحتاج إلى إضافة مراجع إلى المكتبة في مشروعك. انقر بزر الماوس الأيمن على مجلد المراجع في مشروعك ، وحدد "إضافة مرجع" ، واستعرض الموقع حيث قمت بتثبيت مكتبة Aspose.Words for .NET. حدد الإصدار المناسب وانقر على "موافق" لإضافة المرجع.
+Per utilizzare Aspose.Words per .NET, è necessario aggiungere riferimenti alla libreria nel progetto. Fai clic con il pulsante destro del mouse sulla cartella Riferimenti nel tuo progetto, seleziona "Aggiungi riferimento" e vai alla posizione in cui hai installato la libreria Aspose.Words per .NET. Selezionare la versione appropriata e fare clic su "OK" per aggiungere il riferimento.
 
-بعد ذلك ، قم باستيراد مساحات الأسماء الضرورية أعلى ملف C # الخاص بك:
+Successivamente, importa gli spazi dei nomi necessari nella parte superiore del file C#:
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 3: تهيئة كائن المستند
+## Passaggio 3: inizializzazione dell'oggetto documento
 
- في هذه الخطوة ، ستقوم بتهيئة ملف`Document` مع المسار إلى المستند المصدر بتنسيق doc. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع مسار الدليل الفعلي حيث يوجد المستند الخاص بك ، و`"Document.doc"` باسم المستند المصدر الخاص بك. إليك مقتطف الشفرة:
+ In questo passaggio, inizializzerai il file`Document` oggetto con il percorso del documento di origine in formato .doc. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento e`"Document.doc"` con il nome del documento di origine. Ecco lo snippet di codice:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.doc");
 ```
 
-## الخطوة 4: تحويل المستند إلى تنسيق Docx
+## Passaggio 4: conversione del documento in formato Docx
 
- الآن بعد أن قمت بتهيئة ملف`Document`كائن ، يمكنك متابعة عملية التحويل. يوفر Aspose.Words for .NET خيارات وإعدادات متنوعة للتخصيص ، ولكن للتحويل الأساسي ، لا يلزم وجود معلمات إضافية.
+ Ora che hai inizializzato il file`Document`oggetto, puoi procedere con il processo di conversione. Aspose.Words per .NET offre varie opzioni e impostazioni per la personalizzazione, ma per una conversione di base non sono richiesti parametri aggiuntivi.
 
-## الخطوة 5: حفظ المستند المحول
+## Passaggio 5: salvare il documento convertito
 
- لحفظ المستند المحول بتنسيق Docx ، تحتاج إلى استدعاء ملف`Save` طريقة على`Document` هدف. قم بتوفير المسار واسم الملف للمستند الناتج. في هذا المثال ، سنحفظه باسم`"BaseConversions.DocToDocx.docx"`. إليك مقتطف الشفرة:
+ Per salvare il documento convertito in formato Docx, è necessario chiamare il file`Save` metodo sul`Document` oggetto. Fornire il percorso e il nome del file per il documento di output. In questo esempio, lo salveremo come`"BaseConversions.DocToDocx.docx"`. Ecco lo snippet di codice:
 
 ```csharp
 doc.Save(dataDir + "BaseConversions.DocToDocx.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند Word بتنسيق .doc إلى تنسيق Docx باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai convertito con successo un documento Word in formato .doc nel formato Docx utilizzando Aspose.Words per .NET.
 
-### مثال على شفرة المصدر لـ Doc To Docx باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Doc To Docx utilizzando Aspose.Words per .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.doc");
 
@@ -61,7 +61,7 @@ doc.Save(dataDir + "BaseConversions.DocToDocx.docx");
 	
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.
 
 
 

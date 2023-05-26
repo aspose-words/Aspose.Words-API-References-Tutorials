@@ -1,42 +1,42 @@
 ---
-title: دمج المستندات
-linktitle: دمج المستندات
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح كود مصدر C # لميزة دمج المستندات في Aspose.Words for .NET
+title: Dokumente zusammenführen
+linktitle: Dokumente zusammenführen
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Funktion „Dokumente zusammenführen“ von Aspose.Words für .NET
 type: docs
 weight: 10
 url: /de/net/split-document/merge-documents/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية دمج مستندات Word متعددة باستخدام ميزة دمج المستندات في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر والحصول على مستند مدمج يحتوي على كافة المستندات المصدر.
+In diesem Tutorial zeigen wir Ihnen, wie Sie mehrere Word-Dokumente mithilfe der Funktion „Dokumente zusammenführen“ von Aspose.Words für .NET zusammenführen. Führen Sie die folgenden Schritte aus, um den Quellcode zu verstehen und ein zusammengeführtes Dokument mit allen Quelldokumenten zu erhalten.
 
-## الخطوة 1: ابحث عن المستندات المراد دمجها
+## Schritt 1: Suchen Sie nach zusammenzuführenden Dokumenten
 
-قبل دمج المستندات ، نحتاج إلى تحديد موقع المستندات المصدر المراد دمجها. إليك الطريقة:
+Bevor wir die Dokumente zusammenführen, müssen wir die zusammenzuführenden Quelldokumente finden. Hier ist wie:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
-// ابحث عن المستندات المراد دمجها.
+// Suchen Sie nach zusammenzuführenden Dokumenten.
 FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
 .GetFileSystemInfos("SplitDocument.PageParPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
 string sourceDocumentPath =
 Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.TopDirectoryOnly)[0];
 ```
 
-## الخطوة 2: دمج المستندات
+## Schritt 2: Dokumente zusammenführen
 
-سنقوم الآن بدمج المستندات واحدة تلو الأخرى لإنشاء مستند مدمج نهائي. إليك الطريقة:
+Jetzt führen wir die Dokumente einzeln zusammen, um ein endgültiges zusammengeführtes Dokument zu erstellen. Hier ist wie:
 
 ```csharp
-// افتح الجزء الأول من المستند الناتج.
+// Öffnen Sie den ersten Teil des resultierenden Dokuments.
 Document sourceDoc = new Document(sourceDocumentPath);
 
-// قم بإنشاء مستند ناتج جديد.
+// Erstellen Sie ein neues resultierendes Dokument.
 Document mergedDoc = new Document();
 DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-// دمج المستندات واحدة تلو الأخرى.
+// Führen Sie die Dokumente einzeln zusammen.
 foreach(FileSystemInfo documentPath in documentPaths)
 {
 if (documentPath.FullName == sourceDocumentPath)
@@ -50,28 +50,28 @@ sourceDoc = new Document(documentPath.FullName);
 mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
 
-### مثال على شفرة المصدر لدمج المستندات باستخدام Aspose.Words for .NET
+### Beispielquellcode für Merge Documents mit Aspose.Words für .NET
 
-فيما يلي رمز المصدر الكامل لميزة دمج المستندات في Aspose.Words for .NET:
+Hier ist der vollständige Quellcode für die Funktion „Dokumente zusammenführen“ von Aspose.Words für .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// البحث عن المستندات باستخدام الدمج.
+	// Suchen Sie nach Dokumenten, die zum Zusammenführen verwendet werden.
 	FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
 		.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
 	string sourceDocumentPath =
 		Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
 
-	// افتح الجزء الأول من المستند الناتج.
+	// Öffnen Sie den ersten Teil des resultierenden Dokuments.
 	Document sourceDoc = new Document(sourceDocumentPath);
 
-	// قم بإنشاء مستند ناتج جديد.
+	// Erstellen Sie ein neues resultierendes Dokument.
 	Document mergedDoc = new Document();
 	DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-	// دمج أجزاء المستند واحدًا تلو الآخر.
+	// Dokumentteile einzeln zusammenführen.
 	foreach (FileSystemInfo documentPath in documentPaths)
 	{
 		if (documentPath.FullName == sourceDocumentPath)

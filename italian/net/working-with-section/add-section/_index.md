@@ -1,45 +1,45 @@
 ---
-title: إضافة قسم
-linktitle: إضافة قسم
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية إضافة قسم إلى مستند Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة لهيكلة المستند الخاص بك.
+title: Aggiungi sezione
+linktitle: Aggiungi sezione
+second_title: Riferimento all'API Aspose.Words per .NET
+description: In questo tutorial, scopri come aggiungere una sezione a un documento di Word utilizzando Aspose.Words per .NET. Guida passo passo per strutturare il tuo documento.
 type: docs
 weight: 10
 url: /it/net/working-with-section/add-section/
 ---
 
-في هذا البرنامج التعليمي ، سنخبرك بكيفية إضافة قسم جديد إلى مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تساعد إضافة أقسام في تنظيم المستند وبنيته بشكل أكثر كفاءة. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In questo tutorial, ti spiegheremo come aggiungere una nuova sezione a un documento Word utilizzando la libreria Aspose.Words per .NET. L'aggiunta di sezioni aiuta a organizzare e strutturare il documento in modo più efficiente. Ti guideremo passo dopo passo per aiutarti a comprendere e implementare il codice nel tuo progetto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti elementi:
+- Conoscenza operativa del linguaggio di programmazione C#
+- La libreria Aspose.Words per .NET installata nel tuo progetto
 
-## الخطوة 1: قم بإنشاء مستند ومنشئ
- أولاً ، سننشئ مثيلاً لملف`Document` فئة وما يرتبط بها`DocumentBuilder` المُنشئ لبناء المستند.
+## Passaggio 1: creare un documento e un costruttore
+ Innanzitutto, creeremo un'istanza di`Document` classe e un associato`DocumentBuilder` costruttore per costruire il documento.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أضف محتوى إلى المستند
- بعد ذلك ، سنستخدم ملف`DocumentBuilder`المُنشئ لإضافة محتوى إلى المستند. في هذا المثال ، نضيف سطرين من النص.
+## Passaggio 2: aggiungere contenuto al documento
+ Successivamente, useremo il`DocumentBuilder`costruttore per aggiungere contenuto al documento. In questo esempio, aggiungiamo due righe di testo.
 
 ```csharp
 builder.Writeln("Hello1");
 builder.Writeln("Hello2");
 ```
 
-## الخطوة 3: أضف قسمًا جديدًا
- لإضافة قسم جديد إلى المستند ، سننشئ مثيلًا لملف`Section` فئة وإضافتها إلى`Sections` جمع الوثيقة.
+## Passaggio 3: aggiungi una nuova sezione
+ Per aggiungere una nuova sezione al documento, creeremo un'istanza del file`Section` class e aggiungerlo al file`Sections` raccolta del documento.
 
 ```csharp
 Section sectionToAdd = new Section(doc);
 doc.Sections.Add(sectionToAdd);
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Add Section باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Aggiungi sezione utilizzando Aspose.Words per .NET 
 
 ```csharp
 
@@ -51,5 +51,5 @@ doc.Sections.Add(sectionToAdd);
 	doc.Sections.Add(sectionToAdd);
 
 ```
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية إضافة قسم جديد إلى مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات الموضحة ، يمكنك بسهولة تنظيم وبناء المستند الخاص بك عن طريق إضافة أقسام. لا تتردد في تخصيص محتوى القسم وخصائصه لاحتياجاتك الخاصة.
+## Conclusione
+In questo tutorial abbiamo visto come aggiungere una nuova sezione ad un documento Word utilizzando Aspose.Words per .NET. Seguendo i passaggi descritti, puoi facilmente organizzare e strutturare il tuo documento aggiungendo sezioni. Sentiti libero di personalizzare il contenuto e le proprietà della sezione in base alle tue esigenze specifiche.

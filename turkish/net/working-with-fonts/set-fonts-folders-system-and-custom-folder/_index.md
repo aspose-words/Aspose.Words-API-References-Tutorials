@@ -1,31 +1,31 @@
 ---
-title: تعيين نظام مجلدات الخطوط والمجلد المخصص
-linktitle: تعيين نظام مجلدات الخطوط والمجلد المخصص
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد النظام ومجلدات الخطوط المخصصة عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Yazı Tipleri Klasör Sistemini ve Özel Klasörü Ayarla
+linktitle: Yazı Tipleri Klasör Sistemini ve Özel Klasörü Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir belgeyi işlerken sistem ve özel yazı tipi klasörlerini ayarlamak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلدات خطوط النظام ومجلد مخصص عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلدات خطوط متعددة ، بما في ذلك مجلد النظام والمجلد المخصص ، لاستخدامها عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi işlerken sistem yazı tipi klasörlerini ve özel bir klasörü ayarlamak için size adım adım yol göstereceğiz. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sağlayacağız. Bu eğitimin sonunda, belgelerinizi Aspose.Words for .NET kullanarak işlerken kullanmak için sistem klasörü ve özel bir klasör dahil olmak üzere birden çok yazı tipi klasörünü nasıl belirteceğinizi öğreneceksiniz.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+Öncelikle, belgeler dizininize giden yolu ayarlamanız gerekir. Bu, düzenlenen işlenmiş belgenizi kaydetmek istediğiniz konumdur. "BELGELER DİZİNİNİZİ" uygun yolla değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند للعرض
- ثم يمكنك تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## 2. Adım: Oluşturulacak belgeyi yükleyin
+ Ardından, belgeyi kullanarak işlenecek belgeyi yükleyebilirsiniz.`Document` sınıf. Doğru belge yolunu belirttiğinizden emin olun.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تعيين مجلدات الخط المخصصة والنظام
- يمكنك الآن تعيين مجلدات خطوط النظام ومجلد مخصص باستخدام ملف`FontSettings` الطبقة و`SetFontsSources()` طريقة. أولاً ، تحتاج إلى استرداد قائمة مصادر الخطوط المعتمدة على البيئة التي تستخدم`GetFontsSources()` وتخزينه في قائمة. ثم يمكنك إنشاء مثيل جديد من`FolderFontSource`تحديد المسار إلى المجلد المخصص الذي يحتوي على الخطوط الخاصة بك. أضف هذا المثيل إلى قائمة مصادر الخطوط الموجودة. أخيرًا ، استخدم`SetFontsSources()` لتحديث مصادر الخطوط بالقائمة الجديدة.
+## 3. Adım: Sistem ve özel yazı tipi klasörlerini ayarlayın
+ Artık sistem yazı tipi klasörlerini ve özel bir klasörü kullanarak ayarlayabilirsiniz.`FontSettings` sınıf ve`SetFontsSources()` yöntem. Öncelikle, kullanarak ortama bağlı yazı tipi kaynaklarının listesini almanız gerekir.`GetFontsSources()` ve bir listede saklayın. Ardından, yeni bir örnek oluşturabilirsiniz.`FolderFontSource`yazı tiplerinizi içeren özel klasörün yolunu belirterek. Bu örneği mevcut yazı tipi kaynakları listesine ekleyin. Son olarak, kullan`SetFontsSources()` Yazı tipi kaynaklarını yeni listeyle güncellemek için.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -36,37 +36,37 @@ FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
 ```
 
-## الخطوة 4: تطبيق إعدادات الخط
- بعد ذلك ، تحتاج إلى تطبيق إعدادات الخط على المستند الخاص بك باستخدام ملف`FontSettings` ممتلكات`Document` فصل.
+## 4. Adım: Yazı Tipi Ayarlarını Uygulayın
+ Ardından, kullanarak yazı tipi ayarlarını belgenize uygulamanız gerekir.`FontSettings` mülkiyeti`Document` sınıf.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 5: احفظ المستند المقدم
-أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف بواسطة
+## 5. Adım: Oluşturulan belgeyi kaydedin
+Son olarak, işlenen belgeyi şu şekilde bir dosyaya kaydedebilirsiniz:
 
-   باستخدام`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+   kullanmak`Save()` yöntemi`Document` sınıf. Doğru yolu ve dosya adını belirttiğinizden emin olun.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders System والمجلد المخصص باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Set Fonts Folders System ve Custom Folder için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Rendering.docx");
 	FontSettings fontSettings = new FontSettings();
-	// استرجع مصفوفة مصادر الخطوط المعتمدة على البيئة والتي يتم البحث عنها افتراضيًا.
-	// على سبيل المثال سيحتوي هذا على مصدر "Windows \ Fonts \" على أجهزة Windows.
-	// نضيف هذه المجموعة إلى قائمة جديدة لتسهيل إضافة أو إزالة مدخلات الخط.
+	// Varsayılan olarak aranan ortama bağlı yazı tipi kaynakları dizisini alın.
+	// Örneğin bu, Windows makinelerinde bir "Windows\Fonts\" kaynağı içerecektir.
+	// Yazı tipi girişlerini eklemeyi veya kaldırmayı çok daha kolay hale getirmek için bu diziyi yeni bir Listeye ekliyoruz.
 	List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-	// أضف مصدر مجلد جديد والذي سيوجه Aspose.Words للبحث في المجلد التالي عن الخطوط.
+	// Aspose.Words'e yazı tiplerini aşağıdaki klasörde arama talimatı verecek yeni bir klasör kaynağı ekleyin.
 	FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-	// أضف المجلد المخصص الذي يحتوي على خطوطنا إلى قائمة مصادر الخطوط الموجودة.
+	// Yazı tiplerimizi içeren özel klasörü mevcut yazı tipi kaynakları listesine ekleyin.
 	fontSources.Add(folderFontSource);
 	FontSourceBase[] updatedFontSources = fontSources.ToArray();
 	fontSettings.SetFontsSources(updatedFontSources);
@@ -74,5 +74,5 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلدات خطوط النظام ومجلد مخصص عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلدات خطوط متعددة ، بما في ذلك مجلد النظام والمجلد المخصص ، لاستخدامهما عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir belgeyi işlerken sistem yazı tipi klasörlerini ve özel bir klasörü nasıl ayarlayacağımızı öğrendik. Bu adım adım kılavuzu izleyerek, belgelerinizi işlerken kullanmak üzere sistem klasörü ve özel bir klasör dahil olmak üzere birden çok yazı tipi klasörünü kolayca belirleyebilirsiniz. Aspose.Words, belgelerinizdeki yazı tipleriyle çalışmak için güçlü ve esnek bir API sunar. Bu bilgiyle, belgelerinizi özel ihtiyaçlarınıza göre işlerken kullanılan yazı tipi kaynaklarını kontrol edebilir ve özelleştirebilirsiniz.

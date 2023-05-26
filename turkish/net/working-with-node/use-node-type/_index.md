@@ -1,37 +1,37 @@
 ---
-title: استخدم نوع العقدة
-linktitle: استخدم نوع العقدة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام نوع العقدة للوصول إلى المعلومات الخاصة بالمستند باستخدام Aspose.Words for .NET.
+title: Düğüm Türünü Kullan
+linktitle: Düğüm Türünü Kullan
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile belgeye özgü bilgilere erişmek için düğüm türünü nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-node/use-node-type/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية استخدام وظيفة نوع العقدة مع Aspose.Words for .NET.
+Aspose.Words for .NET ile düğüm tipi işlevselliğinin nasıl kullanılacağını gösteren aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## 1. Adım: Gerekli referansları içe aktarın
+Başlamadan önce, Aspose.Words for .NET'i kullanmak için gerekli referansları projenize aktardığınızdan emin olun. Bu, Aspose.Words kitaplığının içe aktarılmasını ve gerekli ad alanlarının kaynak dosyanıza eklenmesini içerir.
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## 2. Adım: Yeni bir belge oluşturun
+ Bu adımda, kullanarak yeni bir belge oluşturacağız.`Document` sınıf.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: الحصول على نوع عقدة المستند
- للحصول على نوع عقدة المستند ، نستخدم امتداد`NodeType` ملكية.
+## 3. Adım: Belge Düğümü Türünü Alın
+ Bir belgenin düğüm tipini elde etmek için,`NodeType` mülk.
 
 ```csharp
 NodeType type = doc.NodeType;
 ```
 
-### نموذج التعليمات البرمجية المصدر لاستخدام نوع العقدة مع Aspose.Words for .NET
+### Aspose.Words for .NET ile Düğüm Tipini Kullanmak İçin Örnek Kaynak Kodu
 
 ```csharp
 Document doc = new Document();
@@ -39,5 +39,5 @@ Document doc = new Document();
 NodeType type = doc.NodeType;
 ```
 
-هذا مثال رمز كامل لاستخدام نوع العقدة مع Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Bu, düğüm tipini Aspose.Words for .NET ile kullanmak için eksiksiz bir kod örneğidir. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları uyguladığınızdan emin olun.
 

@@ -1,26 +1,26 @@
 ---
-title: احصل على مجموعات المراجعة
-linktitle: احصل على مجموعات المراجعة
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على مجموعات المراجعة في مستند Word باستخدام Aspose.Words for .NET.
+title: Revizyon Gruplarını Alın
+linktitle: Revizyon Gruplarını Alın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde revizyon grupları alın.
 type: docs
 weight: 10
 url: /tr/net/working-with-revisions/get-revision-groups/
 ---
 
-في هذا الدليل التدريجي ، سنخبرك بكيفية الحصول على مجموعات المراجعة في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+Bu adım adım kılavuzda, size Aspose.Words for .NET kullanarak bir Word belgesindeki revizyon gruplarını nasıl alacağınızı anlatacağız. Size tam kaynak kodunu sağlayacağız ve işaretleme çıktısını nasıl biçimlendireceğinizi göstereceğiz.
 
-## الخطوة 1: تحميل المستند
+## 1. Adım: Belgeyi yükleme
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+İlk adım, revizyonları içeren belgeyi yüklemektir.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة 2: تصفح مجموعات المراجعة
+## 2. Adım: Revizyon Gruplarına Göz Atın
 
-بعد ذلك ، سنقوم بعمل حلقة عبر مجموعات المراجعة الموجودة في المستند ونعرض تفاصيلها ، مثل المؤلف ونوع المراجعة والنص المنقح.
+Ardından, belgede bulunan düzeltme grupları arasında dolaşacağız ve yazar, düzeltme türü ve düzeltilmiş metin gibi ayrıntılarını göstereceğiz.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -31,9 +31,9 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 ```
 
 
-### مثال على شفرة المصدر للحصول على مجموعات المراجعة باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Get Revision Groups için örnek kaynak kodu
 
-إليك التعليمات البرمجية المصدر الكاملة للحصول على مجموعات المراجعة في مستند باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanarak bir belgedeki revizyon gruplarını almak için eksiksiz kaynak kodu burada:
 
 ```csharp
 

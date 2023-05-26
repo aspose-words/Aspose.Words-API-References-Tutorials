@@ -1,46 +1,46 @@
 ---
-title: إدراج كائن Ole كرمز
-linktitle: إدراج كائن Ole كرمز
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج كائن OLE كرمز باستخدام Aspose.Words for .NET.
+title: Insérer un objet Ole en tant qu'icône
+linktitle: Insérer un objet Ole en tant qu'icône
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer un objet OLE sous forme d'icône avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية إدراج كائن OLE كأيقونة باستخدام Aspose.Words for .NET.
+Voici un guide étape par étape pour expliquer le code source C # ci-dessous qui illustre comment insérer un objet OLE sous forme d'icône à l'aide de Aspose.Words pour .NET.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Étape 1 : Importez les références nécessaires
+Avant de commencer, assurez-vous d'avoir importé les références nécessaires pour utiliser Aspose.Words pour .NET dans votre projet. Cela inclut l'importation de la bibliothèque Aspose.Words et l'ajout des espaces de noms requis à votre fichier source.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومولد مستندات
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` class ومُنشئ المستندات باستخدام امتداد`DocumentBuilder` فصل.
+## Étape 2 : Créer un nouveau document et un générateur de documents
+ Dans cette étape, nous allons créer un nouveau document en utilisant le`Document` classe et un générateur de documents utilisant la`DocumentBuilder` classe.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: أدخل كائن OLE كرمز
- استخدم وثيقة منشئ`InsertOleObjectAsIcon` طريقة لإدراج كائن OLE كرمز في المستند. حدد مسار ملف OLE وعلامة العرض ومسار الرمز واسم الكائن المضمن.
+## Étape 3 : Insérer un objet OLE en tant qu'icône
+ Utilisez le générateur de documents`InsertOleObjectAsIcon` méthode pour insérer un objet OLE sous forme d'icône dans le document. Spécifiez le chemin du fichier OLE, l'indicateur d'affichage, le chemin de l'icône et le nom de l'objet incorporé.
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
 ```
 
-## الخطوة 4: احفظ المستند
- استخدم ملف`Save` طريقة لحفظ المستند في ملف.
+## Étape 4 : Enregistrez le document
+ Utilisez le document`Save` méthode pour enregistrer le document dans un fichier.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
 ```
 
-### مثال على شفرة المصدر لإدراج كائن OLE كرمز مع Aspose.Words for .NET
+### Exemple de code source pour insérer un objet OLE en tant qu'icône avec Aspose.Words pour .NET
 
 ```csharp
 Document doc = new Document();
@@ -51,4 +51,4 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
 ```
 
-هذا نموذج كود كامل لإدراج كائن OLE كأيقونة مع Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Il s'agit d'un exemple de code complet pour insérer un objet OLE en tant qu'icône avec Aspose.Words pour .NET. Assurez-vous d'importer les références nécessaires et suivez les étapes décrites précédemment pour intégrer ce code dans votre projet.

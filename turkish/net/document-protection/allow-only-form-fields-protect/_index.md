@@ -1,28 +1,28 @@
 ---
-title: السماح فقط لحقول النموذج بالحماية
-linktitle: السماح فقط لحقول النموذج بالحماية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET لحماية المستندات والسماح فقط بتحرير حقول النموذج.
+title: Yalnızca Form Alanlarının Korunmasına İzin Ver
+linktitle: Yalnızca Form Alanlarının Korunmasına İzin Ver
+second_title: Aspose.Words for .NET API Referansı
+description: Belgeleri korumak ve yalnızca form alanlarının düzenlenmesine izin vermek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/document-protection/allow-only-form-fields-protect/
 ---
 
-تعد حماية المستندات ميزة أساسية عند العمل مع الملفات داخل تطبيق C # الخاص بك. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك حماية مستنداتك بسهولة والسماح فقط بتحرير حقول النموذج. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام الكود المصدري C # للسماح فقط بتحرير حقول النموذج باستخدام ميزة Allow Only Form Fields Protect في Aspose.Words for .NET.
+Belge koruması, C# uygulamanızdaki dosyalarla çalışırken önemli bir özelliktir. .NET için Aspose.Words kitaplığı ile belgelerinizi kolayca koruyabilir ve yalnızca form alanlarının düzenlenmesine izin verebilirsiniz. Bu adım adım kılavuzda, Aspose.Words for .NET'in Yalnızca Form Alanlarının Korunmasına İzin Ver özelliği kullanılarak yalnızca form alanlarının düzenlenmesine izin vermek için C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
-## الخطوة 1: إعداد دليل المستندات
+## 1. Adım: Belge Dizininin Ayarlanması
 
-الخطوة الأولى هي تحديد دليل المستند الخاص بك. يجب عليك تحديد المسار حيث تريد حفظ المستند المحمي. على سبيل المثال :
+İlk adım, belgenizin dizinini tanımlamaktır. Korunan belgeyi kaydetmek istediğiniz yolu belirtmelisiniz. Örneğin :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة الثانية: إدخال الأقسام والنص
+## 2. Adım: Bölümler ve Metin Ekleme
 
-بعد ذلك ، تحتاج إلى إدراج أقسام ونص في المستند. استخدم فئة DocumentBuilder المقدمة من Aspose.Words لبناء محتوى وثيقتك. اليك مثال بسيط:
+Ardından, belgenize bölümler ve metin eklemeniz gerekir. Belgenizin içeriğini oluşturmak için Aspose.Words tarafından sağlanan DocumentBuilder sınıfını kullanın. İşte basit bir örnek:
 
 ```csharp
 Document doc = new Document();
@@ -30,58 +30,58 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند فارغ جديد ثم نستخدم DocumentBuilder لإضافة سطر من النص.
+Bu örnekte, yeni bir boş belge oluşturuyoruz ve ardından bir metin satırı eklemek için DocumentBuilder'ı kullanıyoruz.
 
-## الخطوة 3: تمكين حماية المستند
+## 3. Adım: Belge Korumasını Etkinleştirme
 
- تعمل حماية المستندات فقط عند تمكين حماية المستندات. يمكنك تمكين حماية المستندات باستخدام`Protect` طريقة فئة المستند. إليك الطريقة:
-
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
-
-في هذا المثال ، نقوم بتمكين حماية المستندات من خلال تحديد نوع الحماية `
-
-AllowOnlyFormFields` وتعيين كلمة مرور.
-
-## الخطوة 4: السماح فقط بحقول النموذج
-
-الآن بعد أن تم تمكين حماية المستندات ، نحتاج إلى تحديد السماح فقط بتحرير حقول النموذج. هذا يضمن أن المستخدمين يمكنهم فقط تحرير أجزاء من المستند تمثل حقول نموذج. إليك الطريقة:
+ Belge koruması yalnızca belge koruması etkinleştirildiğinde çalışır. kullanarak belge korumasını etkinleştirebilirsiniz.`Protect` Document sınıfının yöntemi. İşte nasıl:
 
 ```csharp
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 ```
 
-تأكد من استبدال "كلمة المرور" بكلمة المرور التي قمت بتعيينها مسبقًا.
+Bu örnekte, ` koruma türünü belirterek belge korumasını etkinleştiriyoruz.
 
-## الخطوة 5: حفظ المستند المحمي
+AllowOnlyFormFields` ve bir parola ayarlama.
 
-أخيرًا ، يمكنك حفظ المستند المحمي باستخدام امتداد`Save` طريقة فئة المستند. حدد مسار الملف الكامل واسم الملف المطلوب. على سبيل المثال :
+## 4. Adım: Yalnızca Form Alanlarına İzin Verme
+
+Artık belge koruması etkinleştirildiğine göre, yalnızca form alanlarının düzenlenmesine izin verildiğini belirtmemiz gerekiyor. Bu, kullanıcıların belgenin yalnızca form alanları olan kısımlarını düzenleyebilmelerini sağlar. İşte nasıl:
+
+```csharp
+doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
+
+"Parola"yı daha önce belirlediğiniz parolayla değiştirdiğinizden emin olun.
+
+## 5. Adım: Korumalı Belgeyi Kaydetme
+
+Son olarak, korumalı belgeyi kullanarak kaydedebilirsiniz.`Save` Document sınıfının yöntemi. Tam dosya yolunu ve istenen dosya adını belirtin. Örneğin :
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ```
 
-تأكد من استبدال "dataDir" بالمسار إلى دليل المستند.
+"dataDir" öğesini belge dizininizin yolu ile değiştirdiğinizden emin olun.
 
-### مثال على شفرة المصدر لميزة Allow Only Form Fields Protect باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Allow Only Form Fields Protect özelliği için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// أدخل قسمين مع بعض النص.
+// Biraz metin içeren iki bölüm ekleyin.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 
-// لا تعمل حماية المستند إلا عند تشغيل حماية المستند ولا يُسمح إلا بالتحرير في حقول النموذج.
+// Bir belge koruması, yalnızca belge koruması açıldığında çalışır ve yalnızca form alanlarında düzenlemeye izin verilir.
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
-// احفظ المستند المحمي.
+// Korunan belgeyi kaydedin.
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، اكتشفنا كيفية استخدام مكتبة Aspose.Words لـ .NET لحماية مستند والسماح فقط بتحرير حقول النموذج. باتباع الخطوات المقدمة ، يمكنك بسهولة تنفيذ هذه الوظيفة في تطبيق C # الخاص بك. تعد حماية المستندات أمرًا ضروريًا لضمان أمان وسرية مستنداتك.
+Bu kılavuzda, bir belgeyi korumak ve yalnızca form alanlarının düzenlenmesine izin vermek için Aspose.Words kitaplığının .NET için nasıl kullanılacağını inceledik. Sağlanan adımları izleyerek bu işlevi C# uygulamanızda kolayca uygulayabilirsiniz. Belgelerinizin güvenliğini ve gizliliğini sağlamak için belge koruması şarttır.

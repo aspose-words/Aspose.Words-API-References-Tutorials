@@ -1,41 +1,41 @@
 ---
-title: جدول منسق
-linktitle: جدول منسق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET.
+title: Tabella formattata
+linktitle: Tabella formattata
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come creare una tabella formattata in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/formatted-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من إنشاء جداول بتنسيق مخصص في مستندات Word الخاصة بك برمجيًا.
+In questo tutorial impareremo come creare una tabella formattata in un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di creare tabelle con formattazione personalizzata nei tuoi documenti Word a livello di programmazione.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Passaggio 1: impostazione del progetto
+1. Avvia Visual Studio e crea un nuovo progetto C#.
+2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء بناء الجدول المنسق ، نحتاج إلى إنشاء مستند جديد وتهيئة منشئ المستندات. اتبع هذه الخطوات:
+## Passaggio 2: creazione del documento e inizializzazione del generatore di documenti
+Per iniziare a costruire la tabella formattata, dobbiamo creare un nuovo documento e inizializzare il generatore di documenti. Segui questi passi:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وتهيئة منشئ المستند
+// Creare il documento e inizializzare il generatore di documenti
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti.
 
-## الخطوة 3: بناء الجدول المنسق
-بعد ذلك ، سنقوم ببناء الجدول المنسق باستخدام الطرق التي يوفرها منشئ المستندات. استخدم الكود التالي:
+## Passaggio 3: creazione della tabella formattata
+Successivamente, costruiremo la tabella formattata utilizzando i metodi forniti dal generatore di documenti. Usa il seguente codice:
 
 ```csharp
-// ابدأ بناء المصفوفة
+// Inizia la costruzione dell'array
 Table table = builder. StartTable();
 
-// بناء صف رأس الجدول
+// Costruzione della riga di intestazione della tabella
 builder. InsertCell();
 table. LeftIndent = 20.0;
 builder.RowFormat.Height = 40.0;
@@ -57,7 +57,7 @@ builder.Write("Header Row,\n Cell 3");
 
 builder. EndRow();
 
-// بناء الجسم المصفوفة
+// Costruzione del corpo dell'array
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
@@ -93,35 +93,35 @@ builder.Write("Content Line 2, Cell 3");
 
 builder. EndRow();
 
-// نهاية بناء المصفوفة
+// Fine della costruzione dell'array
 builder. EndTable();
 ```
 
- هنا نستخدم منشئ المستندات لبناء الجدول خطوة بخطوة. نبدأ بالاتصال`StartTable()` لتهيئة الجدول. ثم نستخدم`InsertCell()` لإدراج الخلايا و`Write()` لإضافة محتوى إلى كل خلية. نستخدم أيضًا خصائص تنسيق مختلفة لتحديد تنسيق صفوف الجدول والخلايا والنص.
+ Qui usiamo il generatore di documenti per costruire la tabella passo dopo passo. Iniziamo chiamando`StartTable()` per inizializzare la tabella. Quindi usiamo`InsertCell()` per inserire celle e`Write()` per aggiungere contenuto a ciascuna cella. Utilizziamo anche diverse proprietà di formattazione per definire la formattazione di righe, celle e testo della tabella.
 
-## الخطوة 4: احفظ المستند
-أخيرًا ، نحتاج إلى حفظ المستند الذي يحتوي على الجدول المنسق. استخدم الكود التالي:
+## Passaggio 4: salvare il documento
+Infine, dobbiamo salvare il documento contenente la tabella formattata. Usa il seguente codice:
 
 ```csharp
-// احفظ المستند
+// Salva il documento
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Assicurati di specificare il percorso e il nome file corretti per il documento di output.
 
-### نموذج التعليمات البرمجية المصدر للجدول المنسق باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per la tabella formattata utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Table table = builder.StartTable();
 	builder.InsertCell();
-	// يجب تطبيق التنسيق الواسع للجدول بعد وجود صف واحد على الأقل في الجدول.
+	// La formattazione a livello di tabella deve essere applicata dopo che almeno una riga è presente nella tabella.
 	table.LeftIndent = 20.0;
-	// عيّن الارتفاع وحدد قاعدة الارتفاع لصف الرأس.
+	// Imposta l'altezza e definisci la regola dell'altezza per la riga di intestazione.
 	builder.RowFormat.Height = 40.0;
 	builder.RowFormat.HeightRule = HeightRule.AtLeast;
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
@@ -131,7 +131,7 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 	builder.Font.Bold = true;
 	builder.CellFormat.Width = 100.0;
 	builder.Write("Header Row,\n Cell 1");
-	// لا نحتاج إلى تحديد عرض هذه الخلية لأنها موروثة من الخلية السابقة.
+	// Non abbiamo bisogno di specificare la larghezza di questa cella perché è ereditata dalla cella precedente.
 	builder.InsertCell();
 	builder.Write("Header Row,\n Cell 2");
 	builder.InsertCell();
@@ -141,11 +141,11 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 	builder.CellFormat.Width = 100.0;
 	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// إعادة تعيين الارتفاع وتحديد قاعدة ارتفاع مختلفة لجسم الجدول.
+	// Reimposta l'altezza e definisci una regola di altezza diversa per il corpo della tabella.
 	builder.RowFormat.Height = 30.0;
 	builder.RowFormat.HeightRule = HeightRule.Auto;
 	builder.InsertCell();
-	// إعادة تعيين تنسيق الخط.
+	// Ripristina la formattazione dei caratteri.
 	builder.Font.Size = 12;
 	builder.Font.Bold = false;
 	builder.Write("Row 1, Cell 1 Content");
@@ -168,5 +168,5 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 	doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك إنشاء جداول مخصصة بتنسيق محدد في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة تقديم بياناتك وتنظيمها بطريقة جذابة بصريًا ومنظمة.
+## Conclusione
+In questo tutorial, abbiamo imparato come creare una tabella formattata in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi creare tabelle personalizzate con una formattazione specifica nei documenti di Word a livello di codice. Questa funzione ti consente di presentare e strutturare i tuoi dati in modo visivamente accattivante e organizzato.

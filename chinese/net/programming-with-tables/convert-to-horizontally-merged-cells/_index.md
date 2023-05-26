@@ -1,56 +1,56 @@
 ---
-title: تحويل إلى خلايا مدمجة أفقيًا
-linktitle: تحويل إلى خلايا مدمجة أفقيًا
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word باستخدام Aspose.Words for .NET.
+title: 转换为水平合并的单元格
+linktitle: 转换为水平合并的单元格
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将表格单元格转换为 Word 文档中的水平合并单元格。
 type: docs
 weight: 10
 url: /zh/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words for .NET لتحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من معالجة خلايا الجدول في مستندات Word الخاصة بك برمجيًا.
+在本教程中，我们将学习如何使用 Aspose.Words for .NET 将表格单元格转换为 Word 文档中的水平合并单元格。我们将按照逐步指南来理解代码并实现此功能。在本教程结束时，您将能够以编程方式操作 Word 文档中的表格单元格。
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## 第 1 步：项目设置
+1. 启动 Visual Studio 并创建一个新的 C# 项目。
+2. 添加对 Aspose.Words for .NET 库的引用。
 
-## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+## 第 2 步：加载文档并访问表格
+要开始使用该表，我们需要加载包含它的文档并访问它。按着这些次序：
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//装入文档
 Document doc = new Document(dataDir + "Table with merged cells.docx");
 
-// الوصول إلى المصفوفة
+//访问数组
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات. تأكد أيضًا من أن المستند يحتوي على جدول به خلايا مدمجة أفقيًا.
+请务必将“您的文档目录”替换为您的文档目录的实际路径。此外，请确保文档包含一个带有水平合并单元格的表格。
 
-## الخطوة 3: التحويل إلى خلايا مدمجة أفقيًا
- بعد ذلك ، سنقوم بتحويل خلايا الجدول إلى خلايا مدمجة أفقيًا باستخدام الامتداد`ConvertToHorizontallyMergedCells()` طريقة. استخدم الكود التالي:
+## 第 3 步：转换为水平合并的单元格
+接下来，我们将使用`ConvertToHorizontallyMergedCells()`方法。使用以下代码：
 
 ```csharp
-// التحويل إلى خلايا مدمجة أفقيًا
+//转换为水平合并的单元格
 table. ConvertToHorizontallyMergedCells();
 ```
 
- هنا فقط نسمي`ConvertToHorizontallyMergedCells()` الطريقة على المصفوفة لإجراء التحويل.
+在这里我们只调用`ConvertToHorizontallyMergedCells()`数组上的方法来执行转换。
 
-### عينة من التعليمات البرمجية المصدر للتحويل إلى خلايا مدمجة أفقيًا باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 转换为水平合并单元格的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table with merged cells.docx");
 	Table table = doc.FirstSection.Body.Tables[0];
-	// تحتوي الخلايا المدمجة الآن على أعلام دمج مناسبة.
+	//现在合并的单元格有适当的合并标志。
 	table.ConvertToHorizontallyMergedCells();
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك معالجة خلايا الجدول في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة إدارة وتنظيم بياناتك بطريقة مرنة ومخصصة في جدول.
+## 结论
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 将表格单元格转换为 Word 文档中的水平合并单元格。通过遵循此分步指南并实施提供的 C# 代码，您可以以编程方式操作 Word 文档中的表格单元格。此功能允许您在表格中以灵活和个性化的方式管理和组织数据。

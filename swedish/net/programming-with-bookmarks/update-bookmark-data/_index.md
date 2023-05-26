@@ -1,48 +1,48 @@
 ---
-title: تحديث البيانات المرجعية
-linktitle: تحديث البيانات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح شفرة المصدر C # لميزة تحديث بيانات الإشارة المرجعية Aspose.Words لـ .NET.
+title: Uppdatera bokmärkesdata
+linktitle: Uppdatera bokmärkesdata
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att förklara C#-källkoden för Aspose.Words-funktionen för uppdatering av bokmärkesdata för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-في هذا البرنامج التعليمي ، سننتقل عبر دليل تفصيلي خطوة بخطوة لفهم ميزة تحديث بيانات الإشارة المرجعية وتنفيذها في Aspose.Words for .NET. تتيح لك هذه الميزة تحديث محتوى وخصائص الإشارات المرجعية داخل مستند Word باستخدام كود مصدر C #.
+I den här handledningen kommer vi att gå igenom en steg-för-steg-guide för att förstå och implementera funktionen Uppdatera bokmärkesdata i Aspose.Words för .NET. Den här funktionen låter dig uppdatera innehållet och egenskaperna för bokmärken i ett Word-dokument med hjälp av C#-källkoden.
 
-## متطلبات
+## Krav
 
-قبل متابعة البرنامج التعليمي ، تأكد من توفر المتطلبات التالية:
+Innan du fortsätter med handledningen, se till att du har följande krav på plats:
 
-- تثبيت Aspose.Words لمكتبة .NET
-- المعرفة الأساسية بلغة البرمجة C #
-- Visual Studio أو أي IDE متوافق آخر
+- Aspose.Words för .NET-biblioteket installerat
+- Grundläggande kunskaper i programmeringsspråket C#
+- Visual Studio eller någon annan kompatibel IDE
 
-## الخطوة 1: قم بتحميل المستند
+## Steg 1: Ladda dokumentet
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي يحتوي على الإشارات المرجعية التي نريد تحديثها. بافتراض أن لديك المستند مخزّنًا في دليل معين ، استخدم الكود التالي لتحميل المستند:
+I det här steget kommer vi att ladda Word-dokumentet som innehåller de bokmärken vi vill uppdatera. Förutsatt att du har dokumentet lagrat i en specifik katalog, använd följande kod för att ladda dokumentet:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` مع مسار الدليل الفعلي حيث يوجد المستند الخاص بك.
+ Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska katalogsökvägen där ditt dokument finns.
 
-## الخطوة 2: الوصول إلى الإشارة المرجعية
+## Steg 2: Öppna bokmärket
 
-لتحديث بيانات الإشارة المرجعية ، نحتاج أولاً إلى الوصول إلى الإشارة المرجعية المحددة داخل المستند. كل إشارة مرجعية لها اسم فريد مرتبط بها. استخدم الكود التالي للوصول إلى إشارة مرجعية تسمى "MyBookmark1":
+För att uppdatera bokmärkesdata måste vi först komma åt det specifika bokmärket i dokumentet. Varje bokmärke har ett unikt namn kopplat till sig. Använd följande kod för att komma åt ett bokmärke med namnet "MyBookmark1":
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks["MyBookmark1"];
 ```
 
-تأكد من تطابق اسم الإشارة المرجعية مع الاسم الموجود في المستند. يمكنك تعديله حسب متطلباتك.
+Se till att bokmärkets namn matchar det i ditt dokument. Du kan ändra det enligt dina krav.
 
-## الخطوة 3: تحديث خصائص الإشارات المرجعية والمحتوى
+## Steg 3: Uppdatera bokmärkesegenskaper och innehåll
 
-بمجرد الوصول إلى الإشارة المرجعية ، يمكنك تحديث خصائصها ومحتواها. في مقتطف الشفرة التالي ، سنقوم بتحديث اسم الإشارة المرجعية ونصها:
+När du har kommit åt bokmärket kan du uppdatera dess egenskaper och innehåll. I följande kodavsnitt kommer vi att uppdatera bokmärkets namn och text:
 
 ```csharp
 string name = bookmark.Name;
@@ -52,23 +52,23 @@ bookmark.Name = "RenamedBookmark";
 bookmark.Text = "This is a new bookmarked text.";
 ```
 
-يمكنك تخصيص اسم الإشارة المرجعية والنص الجديد وفقًا لاحتياجاتك. الرمز أعلاه يعيد تسمية الإشارة المرجعية إلى "RenamedBookmark" ويقوم بتحديث محتوى النص.
+Du kan anpassa bokmärkets namn och den nya texten efter dina behov. Ovanstående kod byter namn på bokmärket till "RenamedBookmark" och uppdaterar textinnehållet.
 
-## الخطوة 4: احفظ المستند المحدث
+## Steg 4: Spara det uppdaterade dokumentet
 
-بعد تحديث بيانات الإشارة المرجعية ، تحتاج إلى حفظ المستند المعدل. استخدم الكود التالي لحفظ المستند:
+När du har uppdaterat bokmärkesdata måste du spara det ändrade dokumentet. Använd följande kod för att spara dokumentet:
 
 ```csharp
 doc.Save(dataDir + "UpdatedDocument.docx");
 ```
 
-سيحفظ هذا الرمز المستند المعدل باسم "UpdatedDocument.docx" في نفس الدليل مثل المستند الأصلي.
+Denna kod kommer att spara det ändrade dokumentet med namnet "UpdatedDocument.docx" i samma katalog som originaldokumentet.
 
-### مثال على شفرة المصدر لتحديث بيانات الإشارة المرجعية باستخدام Aspose.Words for .NET
+### Exempel på källkod för Uppdatera bokmärkesdata med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 
@@ -82,8 +82,8 @@ doc.Save(dataDir + "UpdatedDocument.docx");
 
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` مع مسار الدليل الفعلي حيث يوجد المستند الخاص بك.
+ Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska katalogsökvägen där ditt dokument finns.
 
-## خاتمة
+## Slutsats
 
-تهانينا! لقد تعلمت بنجاح كيفية تحديث بيانات الإشارات المرجعية باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة المقدم في هذا البرنامج التعليمي ، يجب أن تكون قادرًا الآن على دمج هذه الميزة في تطبيقات C # الخاصة بك ومعالجة الإشارات المرجعية في مستندات Word برمجيًا.
+Grattis! Du har framgångsrikt lärt dig hur du uppdaterar bokmärkesdata med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide som finns i denna handledning, bör du nu kunna införliva den här funktionen i dina C#-applikationer och manipulera bokmärken i Word-dokument programmatiskt.

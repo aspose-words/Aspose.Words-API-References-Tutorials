@@ -1,34 +1,34 @@
 ---
-title: أضف خصائص المستند المخصصة
-linktitle: أضف خصائص المستند المخصصة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET.
+title: Lägg till anpassade dokumentegenskaper
+linktitle: Lägg till anpassade dokumentegenskaper
+second_title: Aspose.Words för .NET API Referens
+description: Steg för steg guide för att lägga till anpassade egenskaper till ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-document-properties/add-custom-document-properties/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إضافة معلومات مخصصة إلى المستند.
+den här handledningen går vi igenom C#-källkoden för att lägga till anpassade egenskaper till ett dokument med Aspose.Words för .NET. Denna funktion låter dig lägga till anpassad information till dokumentet.
 
-## الخطوة 1: إعداد المشروع
+## Steg 1: Projektinställning
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
 
-## الخطوة الثانية: تحميل المستند
+## Steg 2: Ladda dokumentet
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد إضافة خصائص مخصصة إليه. استخدم الكود التالي لتحميل المستند:
+I det här steget kommer vi att ladda Word-dokumentet som vi vill lägga till anpassade egenskaper till. Använd följande kod för att ladda dokumentet:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till katalogen där ditt dokument finns.
 
-## الخطوة 3: إضافة خصائص مخصصة
+## Steg 3: Lägg till anpassade egenskaper
 
-الآن دعنا نضيف خصائص مخصصة إلى المستند. استخدم الكود التالي لإضافة الخصائص:
+Låt oss nu lägga till anpassade egenskaper till dokumentet. Använd följande kod för att lägga till egenskaperna:
 
 ```csharp
 CustomDocumentProperties customDocumentProperties = doc.CustomDocumentProperties;
@@ -42,13 +42,13 @@ customDocumentProperties.Add("Authorized Revision", doc.BuiltInDocumentPropertie
 customDocumentProperties.Add("Authorized Amount", 123.45);
 ```
 
-يتحقق هذا الرمز أولاً مما إذا كانت الخاصية "معتمد" موجودة بالفعل في الخصائص المخصصة. إذا كان موجودًا ، فستتوقف العملية. وبخلاف ذلك ، تتم إضافة الخصائص المخصصة إلى المستند.
+Den här koden kontrollerar först om egenskapen "Authorized" redan finns i de anpassade egenskaperna. Om det finns avbryts processen. Annars läggs de anpassade egenskaperna till i dokumentet.
 
-### مثال على شفرة المصدر لإضافة خصائص وثيقة مخصصة باستخدام Aspose.Words for .NET
+### Exempel på källkod för Lägg till anpassade dokumentegenskaper med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx");
 
@@ -64,6 +64,6 @@ customDocumentProperties.Add("Authorized Amount", 123.45);
 
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Var noga med att ange rätt dokumentsökväg i`dataDir` variabel.
 
-لقد تعلمت الآن كيفية إضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إضافة خصائصك المخصصة إلى مستنداتك.
+Du har nu lärt dig hur du lägger till anpassade egenskaper till ett dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide som finns i denna handledning kan du enkelt lägga till dina egna anpassade egenskaper till dina dokument.

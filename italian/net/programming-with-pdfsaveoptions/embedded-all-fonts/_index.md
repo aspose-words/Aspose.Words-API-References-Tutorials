@@ -1,66 +1,66 @@
 ---
-title: جميع الخطوط المضمنة
-linktitle: جميع الخطوط المضمنة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتضمين كل الخطوط في ملف PDF باستخدام Aspose.Words for .NET.
+title: Tutti i caratteri incorporati
+linktitle: Tutti i caratteri incorporati
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida passo passo per incorporare tutti i font in un PDF utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة Embedded All Fonts في Aspose.Words for .NET. سنستعرض مقتطف الشفرة ونوضح كل جزء بالتفصيل. بنهاية هذا البرنامج التعليمي ، ستكون قادرًا على فهم كيفية تضمين جميع الخطوط في مستند وإنشاء ملف PDF مع الخطوط المضمنة باستخدام Aspose.Words for .NET.
+Questo articolo fornisce una guida dettagliata su come utilizzare la funzione Incorpora tutti i caratteri di Aspose.Words per .NET. Esamineremo lo snippet di codice e spiegheremo ogni parte in dettaglio. Alla fine di questo tutorial, sarai in grado di capire come incorporare tutti i caratteri in un documento e generare un PDF con i caratteri incorporati utilizzando Aspose.Words per .NET.
 
-قبل أن نبدأ ، تأكد من تثبيت وإعداد مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Prima di iniziare, assicurati di avere la libreria Aspose.Words per .NET installata e configurata nel tuo progetto. Puoi trovare la libreria e le istruzioni di installazione sul sito web di Aspose.
 
-## الخطوة 1: تحديد مسار دليل المستند
+## Passaggio 1: definire il percorso della directory del documento
 
-للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد المستندات الخاصة بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+Per iniziare, devi definire il percorso della directory in cui si trovano i tuoi documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Passaggio 2: caricare il documento
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يحمل اسم "Rendering.docx" ويقع في دليل المستند المحدد.
+Successivamente, dobbiamo caricare il documento che vogliamo elaborare. In questo esempio, si presuppone che il documento sia denominato "Rendering.docx" e si trovi nella directory del documento specificata.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات حفظ PDF
+## Passaggio 3: configurare le opzioni di salvataggio PDF
 
- لتضمين كل الخطوط في ملف PDF الناتج ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن مع`EmbedFullFonts` تعيين الخاصية على`true`. هذا يضمن أن كل الخطوط المستخدمة في الوثيقة متضمنة في ملف PDF الذي تم إنشاؤه.
+ Per incorporare tutti i font nel PDF risultante, dobbiamo configurare il file`PdfSaveOptions` oggetto con il`EmbedFullFonts` proprietà impostata su`true`. Ciò garantisce che tutti i font utilizzati nel documento siano inclusi nel file PDF generato.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع الخطوط المضمنة
+## Passaggio 4: salva il documento come PDF con caratteri incorporati
 
- أخيرًا ، يمكننا حفظ المستند كملف PDF مع الخطوط المضمنة. حدد اسم ملف الإخراج ، و`saveOptions` كائن قمنا بتكوينه في الخطوة السابقة.
+ Infine, possiamo salvare il documento come file PDF con i caratteri incorporati. Specificare il nome del file di output e il file`saveOptions` oggetto che abbiamo configurato nel passaggio precedente.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptions);
 ```
 
-هذا كل شيء! لقد نجحت في دمج جميع الخطوط في مستند وإنشاء ملف PDF مع الخطوط المضمنة باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai incorporato correttamente tutti i caratteri in un documento e generato un PDF con i caratteri incorporati utilizzando Aspose.Words per .NET.
 
-### مثال على شفرة المصدر لـ Embedded All Fonts باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Embedded All Fonts utilizzando Aspose.Words per .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// سيتم تضمين ملف PDF الناتج مع جميع الخطوط الموجودة في المستند.
+	// Il PDF di output verrà incorporato con tutti i caratteri trovati nel documento.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptions);
   
 ```
 
-## خاتمة
+## Conclusione
 
-في هذا البرنامج التعليمي ، قمنا بتغطية العملية خطوة بخطوة لاستخدام ميزة Embedded All Fonts في Aspose.Words for .NET. لقد تعلمنا كيفية تحميل مستند ، وتكوين خيارات حفظ PDF ، وحفظ المستند كملف PDF مع الخطوط المضمنة. باتباع هذا الدليل ، يمكنك التأكد من أن مستندات PDF الخاصة بك تحتوي على جميع الخطوط الضرورية المضمنة ، مما يوفر عرضًا متسقًا ودقيقًا عبر الأجهزة والأنظمة الأساسية المختلفة.
+In questo tutorial, abbiamo coperto il processo passo-passo dell'utilizzo della funzione Incorpora tutti i caratteri di Aspose.Words per .NET. Abbiamo imparato come caricare un documento, configurare le opzioni di salvataggio PDF e salvare il documento come file PDF con caratteri incorporati. Seguendo questa guida, puoi assicurarti che i tuoi documenti PDF abbiano tutti i caratteri necessari incorporati, fornendo un rendering coerente e accurato su diversi dispositivi e piattaforme.

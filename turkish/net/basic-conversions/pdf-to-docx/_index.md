@@ -1,41 +1,41 @@
 ---
-title: PDF إلى Docx
-linktitle: PDF إلى Docx
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات PDF إلى تنسيق Docx باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Pdf'den Docx'e
+linktitle: Pdf'den Docx'e
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak PDF belgelerini Docx formatına nasıl dönüştüreceğinizi öğrenin. Örnek kaynak koduyla adım adım öğretici.
 type: docs
 weight: 10
 url: /tr/net/basic-conversions/pdf-to-docx/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند PDF إلى تنسيق Docx. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Bu adım adım öğreticide, bir PDF belgesini Docx formatına dönüştürmek için Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
 
-## الخطوة 1: تهيئة كائن المستند
+## 1. Adım: Belge Nesnesini Başlatma
 
- أولاً ، قم بتهيئة ملف`Document` كائن من خلال توفير المسار إلى مستند PDF الخاص بك:
+ İlk olarak,`Document` PDF belgenizin yolunu sağlayarak itiraz edin:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Pdf Document.pdf");
 ```
 
-## الخطوة 2: حفظ المستند بتنسيق Docx
+## Adım 2: Belgeyi Docx Formatında Kaydetme
 
- بعد ذلك ، احفظ المستند بتنسيق Docx عن طريق استدعاء ملف`Save` طريقة على`Document`كائن وتوفير المسار واسم الملف لمستند Docx الناتج:
+ Sonra, çağırarak belgeyi Docx formatında kaydedin.`Save` yöntemi`Document`nesne ve çıktı Docx belgesi için yol ve dosya adını sağlama:
 
 ```csharp
 doc.Save(dataDir + "BaseConversions.PdfToDocx.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند PDF إلى تنسيق Docx باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET'i kullanarak bir PDF belgesini başarıyla Docx formatına dönüştürdünüz.
 
-### مثال على شفرة المصدر لـ Pdf To Docx باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Pdf To Docx için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Pdf Document.pdf");
 
@@ -43,4 +43,4 @@ doc.Save(dataDir + "BaseConversions.PdfToDocx.docx");
 	
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimlerinize göre değiştirin.

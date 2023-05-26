@@ -1,43 +1,43 @@
 ---
-title: كود مسيّج
-linktitle: كود مسيّج
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة الشفرة المسيجة مع دليل Aspose.Words for .NET خطوة بخطوة.
+title: Código cercado
+linktitle: Código cercado
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a usar la función de código delimitado con Aspose.Words para la guía paso a paso de .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-markdown/fenced-code/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة الشفرة المسيجة مع Aspose.Words for .NET. يتم استخدام الكود المسيج لتمثيل كتل من التعليمات البرمجية بتنسيق محدد.
+En este ejemplo, lo guiaremos a través de cómo usar la función de código delimitado con Aspose.Words para .NET. El código delimitado se utiliza para representar bloques de código con un formato específico.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Paso 1: usar un generador de documentos
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Primero, usaremos un generador de documentos para agregar contenido a nuestro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: إضافة نمط للرمز المسيَّج
+## Paso 2: agregar un estilo para el código delimitado
 
- سنضيف نمطًا مخصصًا للشفرة المسيجة باستخدام امتداد`Styles.Add` طريقة`Document` هدف. في هذا المثال ، نقوم بإنشاء نمط يسمى "FencedCode" للرمز المسيَّج.
+ Agregaremos un estilo personalizado para el código delimitado usando el`Styles.Add` metodo de la`Document` objeto. En este ejemplo, estamos creando un estilo llamado "FencedCode" para el código delimitado.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
 builder.ParagraphFormat.Style = fencedCode;
 ```
 
-## الخطوة 3: إضافة كود مسيّج بدون معلومات
+## Paso 3: Agregar código delimitado sin información
 
-الآن يمكننا إضافة كتلة رمز مسيجة بدون سلسلة معلومات باستخدام النمط المخصص "FencedCode".
+Ahora podemos agregar un bloque de código cercado sin una cadena de información usando el estilo personalizado "FencedCode".
 
 ```csharp
 builder.Writeln("This is an fenced code");
 ```
 
-## الخطوة 4: إضافة رمز مسيَّج بسلسلة المعلومات
+## Paso 4: Agregar código delimitado con cadena de información
 
-يمكننا أيضًا إضافة كتلة تعليمات برمجية مسيجة بسلسلة من المعلومات باستخدام نمط مخصص آخر. في هذا المثال ، نقوم بإنشاء نمط يسمى "FencedCode.C #" لتمثيل كتلة من كود C #.
+También podemos agregar un bloque de código delimitado con una cadena de información usando otro estilo personalizado. En este ejemplo, estamos creando un estilo llamado "FencedCode.C#" para representar un bloque de código C#.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
@@ -45,10 +45,10 @@ builder.ParagraphFormat.Style = fencedCodeWithInfo;
 builder.Writeln("This is a fenced code with info string");
 ```
 
-### مثال لشفرة المصدر لـ Fined Code باستخدام Aspose.Words for .NET
+### Código fuente de ejemplo para Código cercado usando Aspose.Words para .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Use un generador de documentos para agregar contenido al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
 	Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");

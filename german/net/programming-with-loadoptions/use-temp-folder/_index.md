@@ -1,52 +1,52 @@
 ---
-title: استخدم مجلد Temp
-linktitle: استخدم مجلد Temp
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام مجلد مؤقت عند تحميل المستندات باستخدام Aspose.Words for .NET.
+title: Verwenden Sie den Temp-Ordner
+linktitle: Verwenden Sie den Temp-Ordner
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie beim Hochladen von Dokumenten mit Aspose.Words für .NET einen temporären Ordner verwenden.
 type: docs
 weight: 10
 url: /de/net/programming-with-loadoptions/use-temp-folder/
 ---
 
-عند العمل مع مستندات Word في تطبيق C # ، قد يكون من الضروري استخدام مجلد مؤقت لتخزين الملفات المؤقتة التي تم إنشاؤها أثناء معالجة المستند. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحديد مجلد مؤقت باستخدام خيارات تحميل LoadOptions. في هذا الدليل المفصل خطوة بخطوة ، سنوضح لك كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند باستخدام مجلد مؤقت محدد باستخدام خيارات تحميل LoadOptions.
+Beim Arbeiten mit Word-Dokumenten in einer C#-Anwendung kann es erforderlich sein, einen temporären Ordner zum Speichern temporärer Dateien zu verwenden, die während der Dokumentverarbeitung generiert werden. Mit der Aspose.Words-Bibliothek für .NET können Sie mithilfe der LoadOptions-Ladeoptionen ganz einfach einen temporären Ordner angeben. In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie Aspose.Words für .NET C#-Quellcode verwenden, um ein Dokument mithilfe eines temporären Ordners zu laden, der mit den LoadOptions-Ladeoptionen angegeben wurde.
 
-## فهم مكتبة Aspose.Words
+## Grundlegendes zur Aspose.Words-Bibliothek
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten, Konvertieren und Schützen von Word-Dokumenten auf verschiedenen Plattformen, einschließlich .NET. Es bietet viele Funktionen zum Bearbeiten von Dokumenten, wie zum Beispiel das Einfügen von Text, das Ändern von Formatierungen, das Hinzufügen von Abschnitten und vieles mehr.
 
-## تكوين خيارات التحميل
+## Ladeoptionen konfigurieren
 
-الخطوة الأولى هي تكوين خيارات التحميل لوثيقتنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى ضبط خاصية TempFolder على مسار المجلد المؤقت المطلوب. هيريس كيفية القيام بذلك:
+Der erste Schritt besteht darin, die Ladeoptionen für unser Dokument zu konfigurieren. Verwenden Sie die LoadOptions-Klasse, um Ladeparameter anzugeben. In unserem Fall müssen wir die TempFolder-Eigenschaft auf den Pfad des gewünschten temporären Ordners setzen. So geht's:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { TempFolder = ArtifactsDir };
 ```
 
-نقوم بإنشاء كائن LoadOptions جديد وتعيين خاصية TempFolder إلى مسار المجلد المؤقت المطلوب.
+Wir erstellen ein neues LoadOptions-Objekt und setzen die TempFolder-Eigenschaft auf den Pfad des gewünschten temporären Ordners.
 
-## تحميل المستند باستخدام مجلد مؤقت محدد
+## Laden Sie das Dokument mithilfe des angegebenen temporären Ordners hoch
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل المستند باستخدام فئة Document وتحديد خيارات التحميل. هنا مثال :
+Nachdem wir nun die Ladeoptionen konfiguriert haben, können wir das Dokument mithilfe der Document-Klasse laden und die Ladeoptionen angeben. Hier ist ein Beispiel :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Document.docx" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+In diesem Beispiel laden wir das Dokument „Document.docx“, das sich im Dokumentenverzeichnis befindet, mit den angegebenen Ladeoptionen.
 
-### مثال على شفرة المصدر لـ LoadOptions مع وظيفة "Use Temp Folder" باستخدام Aspose.Words for .NET
+### Beispielquellcode für LoadOptions mit der Funktionalität „Temporären Ordner verwenden“ unter Verwendung von Aspose.Words für .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "استخدام مجلد مؤقت"
+// Konfigurieren Sie Ladeoptionen mit der Funktion „Temporären Ordner verwenden“.
 LoadOptions loadOptions = new LoadOptions { TempFolder = ArtifactsDir };
 
-// قم بتحميل المستند باستخدام مجلد مؤقت محدد
+// Laden Sie das Dokument mithilfe eines angegebenen temporären Ordners
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند باستخدام مجلد مؤقت محدد باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يسمح استخدام مجلد مؤقت بتخزين الملفات المؤقتة التي تم إنشاؤها أثناء معالجة المستندات بطريقة منظمة وفعالة.
+In dieser Anleitung haben wir erklärt, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET ein Dokument mithilfe eines angegebenen temporären Ordners hochladen. Indem Sie die bereitgestellten Schritte befolgen und den bereitgestellten C#-Quellcode verwenden, können Sie diese Funktionalität problemlos in Ihrer C#-Anwendung anwenden. Durch die Verwendung eines temporären Ordners können temporäre Dateien, die während der Dokumentenverarbeitung generiert werden, auf organisierte und effiziente Weise gespeichert werden.

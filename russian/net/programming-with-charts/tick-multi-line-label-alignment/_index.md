@@ -1,70 +1,70 @@
 ---
-title: ضع علامة على محاذاة تسمية متعددة الأسطر
-linktitle: ضع علامة على محاذاة تسمية متعددة الأسطر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية محاذاة تسميات التجزئة متعددة الأسطر في محور الرسم البياني باستخدام Aspose.Words for .NET.
+title: Установите флажок «Выравнивание многострочной метки»
+linktitle: Установите флажок «Выравнивание многострочной метки»
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как выровнять многострочные метки делений на оси диаграммы с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-charts/tick-multi-line-label-alignment/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين محاذاة تسميات التجزئة متعددة الأسطر في محور المخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط والوصول إلى المحور وتعديل محاذاة تسمية التجزئة.
+В этом руководстве объясняется, как использовать Aspose.Words для .NET для установки выравнивания многострочных меток в виде галочек на оси диаграммы. В предоставленном исходном коде показано, как создать диаграмму, получить доступ к оси и изменить выравнивание метки деления.
 
-## الخطوة 1: قم بإعداد المشروع
+## Шаг 1: Настройте проект
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Убедитесь, что у вас есть следующие предварительные условия:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Установлена библиотека Aspose.Words for .NET. Вы можете загрузить его с официального веб-сайта Aspose или использовать менеджер пакетов NuGet для его установки.
+- Путь к каталогу документа, в котором будет сохранен выходной документ.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Шаг 2. Создайте новый документ и вставьте диаграмму
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Создать новый`Document` объект и`DocumentBuilder` для построения документа.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط مبعثر في المستند.
+ Далее используйте`InsertChart` метод`DocumentBuilder` чтобы вставить точечную диаграмму в документ.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
 ChartAxis axis = shape.Chart.AxisX;
 ```
 
-## الخطوة 3: ضبط محاذاة تسمية التجزئة
+## Шаг 3. Установите выравнивание галочки
 
- لتعيين محاذاة تسميات التجزئة متعددة الأسطر ، قم بالوصول إلى`AxisX` خاصية الرسم البياني وتعيين`TickLabelAlignment` الخاصية للمحاذاة المطلوبة. في هذا المثال ، قمنا بتعيين المحاذاة إلى`ParagraphAlignment.Right`.
+ Чтобы настроить выравнивание многострочных меток в виде галочек, откройте`AxisX` свойство диаграммы и установить`TickLabelAlignment` свойство до желаемого выравнивания. В этом примере мы устанавливаем выравнивание на`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
 ```
 
-## الخطوة 4: احفظ المستند
+## Шаг 4: Сохраните документ
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Наконец, сохраните документ в указанный каталог, используя`Save` метод`Document` объект.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 ```
 
-هذا يكمل تنفيذ إعداد محاذاة تسمية العلامات متعددة الأسطر باستخدام Aspose.Words for .NET.
+На этом реализация настройки выравнивания многострочных меток с помощью Aspose.Words for .NET завершена.
 
-### مثال على شفرة المصدر لـ Tick Multi Line Label Alignment باستخدام Aspose.Words for .NET 
+### Пример исходного кода для выравнивания меток Tick Multi Line с использованием Aspose.Words для .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
 	ChartAxis axis = shape.Chart.AxisX;
-	// هذه الخاصية لها تأثير فقط للتسميات متعددة الخطوط.
+	// Это свойство действует только для многострочных меток.
 	axis.TickLabelAlignment = ParagraphAlignment.Right;
 	doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 ```

@@ -1,21 +1,21 @@
 ---
-title: أدخل جدول المحتويات
-linktitle: أدخل جدول المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج جدول محتويات في مستندات Word باستخدام Aspose.Words for .NET.
+title: Inserisci sommario
+linktitle: Inserisci sommario
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire un sommario nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج جدول محتويات في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إنشاء جدول محتويات بالعناوين المناسبة وأرقام الصفحات.
+In questo tutorial completo imparerai come inserire un sommario in un documento Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo i frammenti di codice C# necessari. Alla fine di questa guida, sarai in grado di generare un sommario con intestazioni e numeri di pagina appropriati.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti prerequisiti:
+- Aspose.Words per la libreria .NET installata sul tuo sistema.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Passaggio 1: creare un nuovo documento e DocumentBuilder
+Per iniziare, crea un nuovo documento utilizzando la classe Document e inizializza un oggetto DocumentBuilder:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,15 +23,15 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل جدول المحتويات
-بعد ذلك ، استخدم الأسلوب InsertTableOfContents لفئة DocumentBuilder لإدراج جدول محتويات. حدد خيارات التنسيق المطلوبة في الطريقة:
+## Passaggio 2: inserire un sommario
+Utilizzare quindi il metodo InsertTableOfContents della classe DocumentBuilder per inserire un sommario. Specificare le opzioni di formattazione richieste all'interno del metodo:
 
 ```csharp
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## الخطوة 3: إضافة محتوى المستند
-بعد إدراج جدول المحتويات ، أضف محتوى المستند الفعلي. قم بتعيين أنماط العناوين المناسبة باستخدام StyleIdentifier:
+## Passaggio 3: aggiungi il contenuto del documento
+Dopo aver inserito il sommario, aggiungi il contenuto effettivo del documento. Imposta gli stili di intestazione appropriati utilizzando StyleIdentifier:
 
 ```csharp
 builder.InsertBreak(BreakType.PageBreak);
@@ -60,35 +60,35 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## الخطوة 4: تحديث جدول المحتويات
-سيكون جدول المحتويات المُدرج حديثًا فارغًا في البداية. لتعبئتها ، قم بتحديث الحقول في المستند:
+## Passaggio 4: aggiorna il sommario
+Il sommario appena inserito sarà inizialmente vuoto. Per popolarlo, aggiorna i campi nel documento:
 
 ```csharp
 doc.UpdateFields();
 ```
 
-## الخطوة 5: احفظ المستند
-بعد إدراج جدول المحتويات وتحديث الحقول ، احفظ المستند في ملف باستخدام طريقة Save من فئة Document:
+## Passaggio 5: salvare il documento
+Dopo aver inserito il sommario e aggiornato i campi, salvare il documento in un file utilizzando il metodo Save della classe Document:
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
 
-### مثال كود المصدر لإدراج جدول المحتويات باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال جدول محتويات باستخدام Aspose.Words for .NET:
+### Esempio di codice sorgente per Inserisci sommario utilizzando Aspose.Words per .NET
+Ecco il codice sorgente completo per l'inserimento di un sommario utilizzando Aspose.Words per .NET:
 
 ```csharp
 
             string dataDir = "YOUR DOCUMENT DIRECTORY";
 			
-            // تهيئة DocumentBuilder بكائن المستند
+            // Inizializza DocumentBuilder con l'oggetto Document
             Document doc = new Document();
             DocumentBuilder builder = new DocumentBuilder(doc);
             
-            // إدراج جدول المحتويات
+            // Inserisci la tabella dei contenutia
 			builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
             
-            // ابدأ محتوى المستند الفعلي في الصفحة الثانية.
+            // Avviare il contenuto effettivo del documento nella seconda pagina.
             builder.InsertBreak(BreakType.PageBreak);
 
             builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
@@ -121,8 +121,8 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
             builder.Writeln("Heading 3.3");
 
             
-            // سيكون جدول المحتويات المُدرج حديثًا فارغًا في البداية.
-            // يجب أن يتم ملؤها عن طريق تحديث الحقول في المستند.
+            // Il sommario appena inserito sarà inizialmente vuoto.
+            // Deve essere popolato aggiornando i campi nel documento.
             doc.UpdateFields();
             
 

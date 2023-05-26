@@ -1,20 +1,20 @@
 ---
-title: قائمة إعادة التشغيل في كل قسم
-linktitle: قائمة إعادة التشغيل في كل قسم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words for .NET.
+title: Starten Sie die Liste in jedem Abschnitt neu
+linktitle: Starten Sie die Liste in jedem Abschnitt neu
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine nummerierte Liste für jeden Abschnitt in einem Word-Dokument zurücksetzen.
 type: docs
 weight: 10
 url: /de/net/working-with-list/restart-list-at-each-section/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In diesem Schritt-für-Schritt-Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET eine nummerierte Liste für jeden Abschnitt in einem Word-Dokument zurücksetzen. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und konfiguriert ist. Wenn Sie es noch nicht getan haben, laden Sie die Bibliothek von der offiziellen Website herunter und installieren Sie sie.
 
-## الخطوة 1: إنشاء المستند والقائمة
+## Schritt 1: Dokument und Liste erstellen
 
-أولاً ، أنشئ مستندًا جديدًا وأضف قائمة رقمية افتراضية:
+Erstellen Sie zunächst ein neues Dokument und fügen Sie eine standardmäßig nummerierte Liste hinzu:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -26,9 +26,9 @@ List list = doc.Lists[0];
 list. IsRestartAtEachSection = true;
 ```
 
-## الخطوة 2: إضافة عناصر إلى القائمة
+## Schritt 2: Elemente zur Liste hinzufügen
 
- ثم استخدم ملف`DocumentBuilder` لإضافة عناصر إلى القائمة. يمكنك استخدام حلقة لإضافة عناصر متعددة إلى القائمة:
+ Dann verwenden Sie a`DocumentBuilder` um Elemente zur Liste hinzuzufügen. Sie können eine Schleife verwenden, um mehrere Elemente zur Liste hinzuzufügen:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -43,11 +43,11 @@ for (int i = 1; i < 45; i++)
 }
 ```
 
-في هذا المثال ، نقوم بإدراج فاصل مقطعي بعد عنصر القائمة الخامس عشر لتوضيح إعادة الترقيم.
+In diesem Beispiel fügen wir nach dem 15. Listenelement einen Abschnittsumbruch ein, um die Neunummerierung zu veranschaulichen.
 
-## الخطوة 3: احفظ المستند المعدل
+## Schritt 3: Speichern Sie das geänderte Dokument
 
-أخيرًا ، احفظ المستند المعدل:
+Speichern Sie abschließend das geänderte Dokument:
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
@@ -55,9 +55,9 @@ OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.I
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-لذا ! لقد نجحت في إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words for .NET.
+So ! Sie haben mit Aspose.Words für .NET erfolgreich eine nummerierte Liste für jeden Abschnitt in einem Word-Dokument zurückgesetzt.
 
-### مثال على كود المصدر لإعادة تعيين القائمة في كل قسم
+### Beispielquellcode zum Zurücksetzen der Liste in jedem Abschnitt
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -85,4 +85,4 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und an Ihre spezifischen Bedürfnisse anpassen.

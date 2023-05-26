@@ -1,37 +1,37 @@
 ---
-title: تعديل إعداد الصفحة في جميع الأقسام
-linktitle: تعديل إعداد الصفحة في جميع الأقسام
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تعديل إعداد الصفحة في جميع أقسام مستند Word باستخدام Aspose.Words for .NET.
+title: Tüm Bölümlerde Sayfa Düzenini Değiştirin
+linktitle: Tüm Bölümlerde Sayfa Düzenini Değiştirin
+second_title: Aspose.Words for .NET API Referansı
+description: Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinin tüm bölümlerindeki sayfa düzenini nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-section/modify-page-setup-in-all-sections/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية تعديل إعداد الصفحة في جميع أقسام مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يمكن أن يتضمن تغيير إعداد الصفحة إعدادات مثل حجم الورق والهوامش والاتجاه وما إلى ذلك. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu öğreticide, size Aspose.Words for .NET kitaplığını kullanarak bir Word belgesinin tüm bölümlerindeki sayfa düzenini nasıl değiştireceğinizi göstereceğiz. Sayfa düzenini değiştirmek, kağıt boyutu, kenar boşlukları, yönlendirme vb. ayarları içerebilir. Kodu anlamanıza ve .NET projenizde uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بإنشاء مستند وإضافة محتوى وأقسام
-بعد ذلك ، سننشئ مستندًا فارغًا عن طريق إنشاء مثيل`Document` فئة وما يرتبط بها`DocumentBuilder` المُنشئ لإضافة محتوى وأقسام إلى المستند. في هذا المثال ، نضيف محتوى وثلاثة أقسام.
+## 2. Adım: Bir belge oluşturun ve içerik ve bölümler ekleyin
+Ardından, örnekleyerek boş bir belge oluşturacağız.`Document` sınıf ve ilgili`DocumentBuilder` Belgeye içerik ve bölümler eklemek için yapıcı. Bu örnekte içerik ve üç bölüm ekliyoruz.
 
 ```csharp
-// قم بإنشاء مستند
+// Bir belge oluştur
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// أضف المحتوى والأقسام
+// İçerik ve bölümler ekleyin
 builder.Writeln("Hello1");
 doc.AppendChild(new Section(doc));
 builder.Writeln("Hello22");
@@ -41,19 +41,19 @@ doc.AppendChild(new Section(doc));
 builder.Writeln("Hello45");
 ```
 
-## الخطوة 3: تحرير إعداد الصفحة في جميع الأقسام
- لتغيير إعداد الصفحة في جميع أقسام المستند ، نستخدم ملف`foreach` حلقة للحلقة خلال كل قسم والوصول إلى ملف`PageSetup` ملكية. في هذا المثال ، نقوم بتغيير حجم الورق لجميع الأقسام عن طريق تعيين القيمة إلى`PaperSize.Letter`.
+## 3. Adım: Tüm bölümlerde sayfa düzenini düzenleyin
+ Belgenin tüm bölümlerinde sayfa düzenini değiştirmek için bir`foreach` her bölüm boyunca döngü ve erişim için döngü`PageSetup` mülk. Bu örnekte, değeri olarak ayarlayarak tüm bölümlerin kağıt boyutunu değiştiriyoruz.`PaperSize.Letter`.
 
 ```csharp
 foreach(Section section in doc.Sections)
      section.PageSetup.PaperSize = PaperSize.Letter;
 ```
 
-### نموذج لشفرة مصدر لتعديل إعداد الصفحة في جميع الأقسام باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Tüm Bölümlerde Sayfa Düzenini Değiştirmek için örnek kaynak kodu 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -66,13 +66,13 @@ builder.Writeln("Hello3");
 doc.AppendChild(new Section(doc));
 builder.Writeln("Hello45");
 
-// من المهم أن نفهم أن المستند يمكن أن يحتوي على العديد من الأقسام ،
-// ولكل قسم إعداد صفحته. في هذه الحالة ، نريد تعديلها جميعًا.
+// Bir belgenin birçok bölüm içerebileceğini anlamak önemlidir.
+// ve her bölümün kendi sayfa düzeni vardır. Bu durumda, hepsini değiştirmek istiyoruz.
 foreach (Section section in doc)
 	section.PageSetup.PaperSize = PaperSize.Letter;
 doc.Save(dataDir + "WorkingWithSection.ModifyPageSetupInAllSections.doc");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تعديل إعداد الصفحة في جميع أقسام مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات الموضحة ، يمكنك الوصول بسهولة إلى كل قسم وتخصيص إعدادات تكوين الصفحة. لا تتردد في تكييف هذه الميزة واستخدامها لتلبية احتياجاتك الخاصة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinin tüm bölümlerinde sayfa düzenini nasıl değiştireceğimizi gördük. Açıklanan adımları izleyerek her bölüme kolayca erişebilir ve sayfa yapılandırma ayarlarını özelleştirebilirsiniz. Özel ihtiyaçlarınızı karşılamak için bu özelliği uyarlamaktan ve kullanmaktan çekinmeyin.

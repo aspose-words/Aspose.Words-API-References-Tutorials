@@ -1,84 +1,84 @@
 ---
-title: دمج عمودي
-linktitle: دمج عمودي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الدمج الرأسي للخلايا في جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Vertikale Zusammenführung
+linktitle: Vertikale Zusammenführung
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Zellen in einer Tabelle in einem Word-Dokument vertikal zusammenführen.
 type: docs
 weight: 10
 url: /de/net/programming-with-tables/vertical-merge/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية دمج الخلايا رأسيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من دمج الخلايا عموديًا في الجداول الخاصة بك في مستندات Word.
+In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Zellen in einer Tabelle in einem Word-Dokument vertikal zusammenführen. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials werden Sie in der Lage sein, Zellen in Ihren Tabellen in Word-Dokumenten vertikal zusammenzuführen.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Schritt 1: Projekteinrichtung
+1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
+2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## Schritt 2: Laden des Dokuments
+Führen Sie die folgenden Schritte aus, um mit der Arbeit mit dem Dokument zu beginnen:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء مستند جديد
+// Erstellen Sie ein neues Dokument
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Stellen Sie sicher, dass Sie „IHR DOKUMENTENVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis ersetzen.
 
-## الخطوة 3: دمج الخلايا عموديًا
-بعد ذلك سنقوم بدمج الخلايا عموديًا في الجدول. استخدم الكود التالي:
+## Schritt 3: Zellen vertikal zusammenführen
+Als nächstes werden wir die Zellen vertikal in der Tabelle zusammenführen. Verwenden Sie den folgenden Code:
 
 ```csharp
-// أدخل خلية
+// Fügen Sie eine Zelle ein
 builder. InsertCell();
 
-// تطبيق الدمج العمودي على الخلية الأولى
+// Wenden Sie die vertikale Zusammenführung auf die erste Zelle an
 builder.CellFormat.VerticalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
 
-// أدخل خلية أخرى
+// Fügen Sie eine weitere Zelle ein
 builder. InsertCell();
 
-// لا تطبق أي دمج عمودي على الخلية
+// Wenden Sie keine vertikale Zusammenführung auf die Zelle an
 builder.CellFormat.VerticalMerge = CellMerge.None;
 builder.Write("Text in a cell");
 builder. EndRow();
 
-// أدخل خلية
+// Fügen Sie eine Zelle ein
 builder. InsertCell();
 
-// تطبيق الدمج العمودي مع الخلية السابقة
+// Wenden Sie die vertikale Zusammenführung mit der vorherigen Zelle an
 builder.CellFormat.VerticalMerge = CellMerge.Previous;
 
-// أدخل خلية أخرى
+// Fügen Sie eine weitere Zelle ein
 builder. InsertCell();
 
-// لا تطبق أي دمج عمودي على الخلية
+// Wenden Sie keine vertikale Zusammenführung auf die Zelle an
 builder.CellFormat.VerticalMerge = CellMerge.None;
 builder.Write("Text in another cell");
 builder. EndRow();
 
-//قم بإنهاء إنشاء الجدول
+//Beenden Sie die Erstellung der Tabelle
 builder. EndTable();
 ```
 
-في هذا الكود ، نستخدم مُنشئ DocumentBuilder لإدراج خلايا في جدول. نقوم بتطبيق الدمج الرأسي على الخلايا باستخدام خاصية CellFormat.VerticalMerge. نستخدم CellMerge ، أولًا لدمج الخلايا الأول ، CellMerge. سابقًا للدمج مع الخلية السابقة ، و CellMerge. لا يوجد أي دمج رأسي.
+In diesem Code verwenden wir den DocumentBuilder-Konstruktor, um Zellen in eine Tabelle einzufügen. Mithilfe der CellFormat.VerticalMerge-Eigenschaft wenden wir die vertikale Zusammenführung auf Zellen an. Wir verwenden CellMerge.First für die erste Zellzusammenführung, CellMerge.Previous für die Zusammenführung mit der vorherigen Zelle und CellMerge.None für keine vertikale Zusammenführung.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع الخلايا المدمجة. استخدم الكود التالي:
+## Schritt 4: Speichern des geänderten Dokuments
+Schließlich müssen wir das geänderte Dokument mit den zusammengeführten Zellen speichern. Verwenden Sie den folgenden Code:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabedokument angeben.
 
-### عينة من التعليمات البرمجية المصدر لـ Vertical Merge باستخدام Aspose.Words for .NET 
+### Beispielquellcode für Vertical Merge mit Aspose.Words für .NET 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 	builder.Write("Text in one cell");
 	builder.EndRow();
 	builder.InsertCell();
-	// تم دمج هذه الخلية عموديًا في الخلية أعلاه ويجب أن تكون فارغة.
+	// Diese Zelle ist vertikal mit der Zelle darüber verbunden und sollte leer sein.
 	builder.CellFormat.VerticalMerge = CellMerge.Previous;
 	builder.InsertCell();
 	builder.CellFormat.VerticalMerge = CellMerge.None;
@@ -101,5 +101,5 @@ doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 	doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية دمج الخلايا رأسيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك بسهولة دمج الخلايا العمودي في الجداول الخاصة بك.
+## Abschluss
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Zellen in einer Tabelle in einem Word-Dokument vertikal zusammenführt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie vertikale Zellen in Ihren Tabellen problemlos zusammenführen.

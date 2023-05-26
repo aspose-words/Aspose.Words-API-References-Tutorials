@@ -1,61 +1,61 @@
 ---
-title: تعيين الوضع الأفقي أو الرأسي النسبي
-linktitle: تعيين الوضع الأفقي أو الرأسي النسبي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين الوضع الأفقي أو الرأسي النسبي للجدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Göreceli Yatay veya Dikey Konumu Ayarla
+linktitle: Göreceli Yatay veya Dikey Konumu Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesindeki bir tablonun göreli yatay veya dikey konumunu nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/set-relative-horizontal-or-vertical-position/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تعيين الوضع الأفقي أو الرأسي النسبي للجدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستكون قادرًا على تعيين الوضع الأفقي أو الرأسي النسبي لجدولك في مستندات Word الخاصة بك.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun göreli yatay veya dikey konumunu nasıl ayarlayacağımızı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizde tablonuzun göreli yatay veya dikey konumunu ayarlayabileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## 2. Adım: Belgeyi yükleme
+Belgeyle çalışmaya başlamak için şu adımları izleyin:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-تأكد من استبدال "دليل المستندات الخاص بك" بالمسار الفعلي إلى دليل المستندات الخاص بك وقم بتوفير اسم الملف الصحيح.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden ve doğru dosya adını girdiğinizden emin olun.
 
-## الخطوة 3: تحديد الموضع النسبي للجدول
-بعد ذلك ، سنقوم بتعيين الوضع النسبي الأفقي أو الرأسي للجدول. استخدم الكود التالي:
+## 3. Adım: Tablonun göreli konumunun ayarlanması
+Ardından, tablonun göreli yatay veya dikey konumunu ayarlayacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
-// استرجع الجدول
+// tabloyu al
 Table table = doc.FirstSection.Body.Tables[0];
 
-//تعريف الوضع الأفقي النسبي للجدول
+//Tablonun göreli yatay konumunun tanımı
 table.HorizontalAnchor = RelativeHorizontalPosition.Column;
 
-// تحديد الوضع الرأسي النسبي للجدول
+// Tablonun göreli dikey konumunu tanımlayın
 table.VerticalAnchor = RelativeVerticalPosition.Page;
 ```
 
- هنا نستخدم المستند لاسترداد الجدول الأول من نص القسم الأول. بعد ذلك ، قمنا بتعيين الموضع الأفقي النسبي للجدول بامتداد`HorizontalAnchor` الملكية باستخدام`RelativeHorizontalPosition.Column` قيمة. وبالمثل ، قمنا بتعيين الوضع الرأسي النسبي للجدول بامتداد`VerticalAnchor` الملكية باستخدام`RelativeVerticalPosition.Page` قيمة.
+ Burada, ilk bölümün gövdesinden ilk tabloyu almak için belgeyi kullanıyoruz. Ardından, tablonun göreli yatay konumunu`HorizontalAnchor` özelliğini kullanan`RelativeHorizontalPosition.Column` değer. Benzer şekilde, tablonun göreli dikey konumunu`VerticalAnchor` özelliğini kullanan`RelativeVerticalPosition.Page` değer.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تحديد الموضع النسبي للجدول. استخدم الكود التالي:
+## 4. Adım: Değiştirilen belgeyi kaydetme
+Son olarak, değiştirilmiş belgeyi tanımlanmış tablonun göreli konumu ile kaydetmemiz gerekir. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### عينة من التعليمات البرمجية المصدر لـ Set Relative Horizontal Or Vertical Position باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Göreceli Yatay Veya Dikey Konum Belirlemek için örnek kaynak kodu 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
@@ -65,5 +65,5 @@ table.VerticalAnchor = RelativeVerticalPosition.Page;
 doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين الوضع الأفقي أو الرأسي النسبي للجدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تطبيق هذا الموضع النسبي على جداولك في مستندات Word الخاصة بك.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun göreli yatay veya dikey konumunu nasıl ayarlayacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, bu göreli konumu Word belgelerinizdeki tablolarınıza uygulayabilirsiniz.

@@ -1,33 +1,33 @@
 ---
-title: تصدير عناوين Cid لموارد Mhtml
-linktitle: تصدير عناوين Cid لموارد Mhtml
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتصدير عناوين URL لـ CID لموارد MHTML عند حفظ مستند باستخدام Aspose.Words for .NET.
+title: Exporter les URL Cid pour les ressources Mhtml
+linktitle: Exporter les URL Cid pour les ressources Mhtml
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour exporter les URL CID des ressources MHTML lors de l'enregistrement d'un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-htmlsaveoptions/export-cid-urls-for-mhtml-resources/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر التعليمات البرمجية المصدر C # لتصدير عناوين CID URL لموارد MHTML باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تصدير عناوين URL لمعرف CID لموارد MHTML عند حفظ مستند بتنسيق MHTML.
+Dans ce didacticiel, nous vous guiderons à travers le code source C # pour exporter des URL CID pour les ressources MHTML avec Aspose.Words pour .NET. Cette fonctionnalité vous permet d'exporter les URL CID des ressources MHTML lors de l'enregistrement d'un document au format MHTML.
 
-## الخطوة 1: إعداد المشروع
+## Étape 1 : configuration du projet
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Pour commencer, créez un nouveau projet C# dans votre IDE préféré. Assurez-vous que la bibliothèque Aspose.Words pour .NET est référencée dans votre projet.
 
-## الخطوة الثانية: تحميل المستند
+## Étape 2 : Chargement du document
 
-في هذه الخطوة ، سنقوم بتحميل المستند للتصدير. استخدم الكود التالي لتحميل المستند من دليل محدد:
+Dans cette étape, nous allons charger le document à exporter. Utilisez le code suivant pour charger le document à partir d'un répertoire spécifié :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Content-ID.docx");
 ```
 
- هذا الرمز ينشئ مثيل`Document` عن طريق تحميل المستند من الدليل المحدد.
+ Ce code crée une instance de`Document` en chargeant le document depuis le répertoire spécifié.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي بتنسيق HTML
+## Étape 3 : Configuration des options de sauvegarde HTML
 
-سنقوم الآن بتكوين خيارات حفظ HTML لتصدير عناوين CID URL لموارد MHTML. استخدم الكود التالي:
+Nous allons maintenant configurer les options d'enregistrement HTML pour exporter les URL CID des ressources MHTML. Utilisez le code suivant :
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Mhtml)
@@ -37,23 +37,23 @@ ExportCidUrlsForMhtmlResources = true
 };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions` مع ضبط تنسيق الحفظ على MHTML. كما يتيح أيضًا تصدير عناوين URL لـ CID لموارد MHTML عن طريق الإعداد`ExportCidUrlsForMhtmlResources` ل`true`.
+ Ce code crée une instance de`HtmlSaveOptions` avec le format d'enregistrement défini sur MHTML. Il permet également l'exportation des URL CID des ressources MHTML en définissant`ExportCidUrlsForMhtmlResources` pour`true`.
 
-## الخطوة 4: تحويل وحفظ المستند إلى MHTML
+## Étape 4 : conversion et enregistrement du document au format MHTML
 
-أخيرًا ، سنقوم بتحويل المستند إلى MHTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+Enfin, nous convertirons le document en MHTML en utilisant les options d'enregistrement HTML configurées précédemment. Utilisez le code suivant :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mhtml", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى MHTML ويحفظه في ملف يحتوي على عناوين URL لـ CID لموارد MHTML التي تم تصديرها.
+Ce code convertit le document en MHTML et l'enregistre dans un fichier avec les URL CID des ressources MHTML exportées.
 
-### مثال على شفرة المصدر لـ Export Cid Urls For Mhtml Resources باستخدام Aspose.Words for .NET
+### Exemple de code source pour Exporter les URL Cid pour les ressources Mhtml à l'aide de Aspose.Words pour .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Content-ID.docx");
 
@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+ Assurez-vous de spécifier le chemin d'accès correct au répertoire de documents dans le`dataDir` variable.
 
-لقد تعلمت الآن كيفية تصدير عناوين URL لمعرف CID لموارد MHTML عند حفظ مستند بتنسيق MHTML باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إدارة عناوين CID URL في مستندات MHTML التي تم تصديرها.
+Vous avez maintenant appris à exporter les URL CID des ressources MHTML lors de l'enregistrement d'un document au format MHTML à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape fourni dans ce didacticiel, vous pouvez facilement gérer les URL CID dans vos documents MHTML exportés.
 

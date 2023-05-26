@@ -1,19 +1,19 @@
 ---
-title: البرمجة باستخدام خيارات Rtfsave
-linktitle: البرمجة باستخدام خيارات Rtfsave
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على حفظ الصور بتنسيق wmf
+title: Programmering med Rtfsaveoptions
+linktitle: Programmering med Rtfsaveoptions
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar innehåller att spara bilder som wmf
 type: docs
 weight: 1690
 url: /sv/net/programming-with-rtfsaveoptions/
 ---
-تم تصميم البرامج التعليمية لـ Aspose.Words for .NET لإرشادك خلال استخدام مكتبة Aspose.Words for .NET ، والتي تتيح لك معالجة مستندات Word وإدارتها بسهولة وكفاءة. يعلمك البرنامج التعليمي "البرمجة باستخدام RTFSaveOptions" كيفية حفظ مستندات Word بتنسيق RTF باستخدام خيارات وإعدادات مختلفة. سوف تتعلم كيفية تخصيص التحويل وإدارة الصور والخطوط وأكثر من ذلك بكثير. اتبع التعليمات خطوة بخطوة واحصل على نتائج احترافية عالية الجودة.
+Handledningarna för Aspose.Words för .NET är utformade för att guida dig genom användningen av Aspose.Words för .NET-biblioteket, som låter dig manipulera och hantera Word-dokument med lätthet och effektivitet. Handledningen "Programmering med RTFSaveOptions" lär dig hur du sparar dina Word-dokument i RTF-format med hjälp av olika alternativ och inställningar. Du kommer att lära dig hur du anpassar konvertering, hanterar bilder, typsnitt och mycket mer. Följ steg-för-steg-instruktionerna och få resultat av professionell kvalitet.
 
-تزودك هذه البرامج التعليمية بأمثلة عملية وإرشادات خطوة بخطوة لتحقيق أقصى استفادة من Aspose.Words Library for .NET. سوف تكتشف كيفية التعامل مع محتوى مستندات Word وإدارة الأنماط والجداول والصور والأقسام والعديد من العناصر الأخرى. سواء كنت مطورًا متمرسًا أو جديدًا في تطوير .NET ، ستساعدك هذه البرامج التعليمية على إتقان الميزات المتقدمة لـ Aspose.Words وبناء تطبيقات قوية ومخصصة.
+Dessa handledningar ger dig praktiska exempel och steg-för-steg-instruktioner för att få ut det mesta av Aspose.Words-biblioteket för .NET. Du kommer att upptäcka hur du manipulerar innehållet i Word-dokument, hanterar stilar, tabeller, bilder, avsnitt och många andra element. Oavsett om du är en erfaren utvecklare eller nybörjare inom .NET-utveckling, kommer dessa tutorials hjälpa dig att bemästra de avancerade funktionerna i Aspose.Words och bygga kraftfulla, anpassade applikationer.
 
-باستخدام البرامج التعليمية Aspose.Words for .NET ، ستتمكن من إدارة مستندات Word ومعالجتها بسهولة في مشاريع .NET الخاصة بك. استكشف البرامج التعليمية المتنوعة المتوفرة على موقع Aspose المرجعي واكتشف كيفية معالجة مستندات Word وتحويلها وتخصيصها بدقة وبساطة. ستساعدك الموارد المتوفرة على تسريع عملية التطوير وتحسين عملياتك وتوفير تجربة مستخدم محسّنة مع ميزات معالجة المستندات المتقدمة.
+Genom att använda Aspose.Words för .NET-handledningarna kommer du enkelt att kunna hantera och bearbeta Word-dokument i dina .NET-projekt. Utforska de olika handledningarna som finns på Aspose-referenswebbplatsen och upptäck hur du manipulerar, konverterar och anpassar dina Word-dokument med precision och enkelhet. De tillhandahållna resurserna hjälper dig att påskynda din utveckling, optimera dina processer och ge en förbättrad användarupplevelse med avancerade dokumentmanipuleringsfunktioner.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [حفظ الصور بتنسيق Wmf](./saving-images-as-wmf/) | تعرف على كيفية حفظ الصور بتنسيق WMF عند التحويل إلى RTF باستخدام Aspose.Words for .NET. |
+| [Spara bilder som Wmf](./saving-images-as-wmf/) | Lär dig hur du sparar bilder som WMF när du konverterar till RTF med Aspose.Words för .NET. |

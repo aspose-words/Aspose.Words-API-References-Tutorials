@@ -1,38 +1,38 @@
 ---
-title: التحكم في محتوى مربع نص منسق
-linktitle: التحكم في محتوى مربع نص منسق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء عنصر تحكم في محتوى مربع نص منسق في مستند Word باستخدام Aspose.Words for .NET مما يتيح تنسيق النص وتصميمه.
+title: Innehållskontroll för Rich Text Box
+linktitle: Innehållskontroll för Rich Text Box
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du skapar en innehållskontroll för rik textruta i ett Word-dokument med Aspose.Words för .NET som möjliggör textformatering och stil.
 type: docs
 weight: 10
 url: /sv/net/programming-with-sdt/rich-text-box-content-control/
 ---
 
-يوضح هذا البرنامج التعليمي كيفية إنشاء عنصر تحكم محتوى مربع نص منسق في مستند Word باستخدام Aspose.Words for .NET. تسمح عناصر التحكم في محتوى مربع النص المنسق للمستخدمين بإدخال نص وتنسيقه باستخدام أنماط وخيارات تنسيق متنوعة.
+Den här handledningen visar hur man skapar en innehållskontroll för rik textruta i ett Word-dokument med Aspose.Words för .NET. Innehållskontroller för rich text box låter användare skriva in och formatera text med olika stilar och formateringsalternativ.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Förutsättningar
+För att följa denna handledning måste du ha följande:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words för .NET-biblioteket installerat.
+- Grundläggande kunskaper i C# och att arbeta med Word-dokument.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Steg 1: Konfigurera dokumentkatalogen
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و StructuredDocumentTag
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`StructuredDocumentTag` لتمثيل عنصر تحكم محتوى مربع النص المنسق. حدد`SdtType.RichText` كنوع و`MarkupLevel.Block` كمستوى الترميز لإنشاء مربع نص منسق على مستوى الكتلة.
+## Steg 2: Skapa ett dokument och StructuredDocumentTag
+ Skapa en ny instans av`Document` klass och a`StructuredDocumentTag` för att representera innehållskontrollen för RTF-rutan. Specificera`SdtType.RichText` som typ och`MarkupLevel.Block` som uppmärkningsnivå för att skapa en rik textruta på blocknivå.
 
 ```csharp
 Document doc = new Document();
 StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichText, MarkupLevel.Block);
 ```
 
-## الخطوة 3: إنشاء وتنسيق محتوى نص منسق
-قم بإنشاء فقرة وتشغيلها لتمثيل محتوى النص المنسق. اضبط النص وخيارات التنسيق مثل اللون والخط وما إلى ذلك.
+## Steg 3: Skapa och formatera Rich Text-innehållet
+Skapa ett stycke och kör för att representera innehållet med rik text. Ställ in text- och formateringsalternativ som färg, teckensnitt etc.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
@@ -42,31 +42,31 @@ run.Font.Color = Color.Green;
 para.Runs.Add(run);
 ```
 
-## الخطوة 4: أضف محتوى Rich Text إلى عنصر التحكم في المحتوى
-أضف الفقرة مع محتوى النص المنسق إلى ملف`ChildNodes` مجموعة من عنصر تحكم محتوى مربع نص منسق.
+## Steg 4: Lägg till Rich Text-innehållet till innehållskontrollen
+Lägg till stycket med rik textinnehåll till`ChildNodes` samling av innehållskontrollen för RTF-rutan.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);
 ```
 
-## الخطوة 5: قم بإلحاق Content Control بالمستند
- قم بإلحاق عنصر تحكم محتوى مربع النص المنسق بجسم المستند باستخدام ملف`AppendChild` طريقة نص القسم الأول من المستند.
+## Steg 5: Lägg till innehållskontrollen till dokumentet
+ Lägg till innehållskontrollen för RTF-rutan till dokumentets brödtext genom att använda`AppendChild` metoden för dokumentets första avsnitts kropp.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);
 ```
 
-## الخطوة 6: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.RichTextBoxContentControl.docx".
+## Steg 6: Spara dokumentet
+ Spara dokumentet i den angivna katalogen med hjälp av`Save` metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.RichTextBoxContentControl.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ```
 
-### مثال على شفرة المصدر للتحكم في محتوى Rich Text Box باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Rich Text Box Content Control med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -81,4 +81,4 @@ doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 	doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إنشاء عنصر تحكم محتوى مربع نص منسق في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Det är allt! Du har framgångsrikt skapat en innehållskontroll för rik textruta i ditt Word-dokument med Aspose.Words för .NET.

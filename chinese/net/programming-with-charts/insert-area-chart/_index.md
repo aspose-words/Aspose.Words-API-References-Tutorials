@@ -1,44 +1,44 @@
 ---
-title: إدراج مخطط مساحي
-linktitle: إدراج مخطط مساحي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مخطط مساحي في مستند باستخدام Aspose.Words for .NET. أضف بيانات السلسلة واحفظ المستند مع الرسم البياني.
+title: 插入面积图
+linktitle: 插入面积图
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将面积图插入到文档中。添加系列数据并与图表一起保存文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-charts/insert-area-chart/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مخطط مساحي في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وحفظ المستند.
+本教程解释了如何使用 Aspose.Words for .NET 将面积图插入到文档中。提供的源代码演示了如何创建图表、添加系列数据和保存文档。
 
-## الخطوة 1: قم بإعداد المشروع
+## 第 1 步：设置项目
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+确保您具有以下先决条件：
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- 安装了 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载或使用 NuGet 包管理器安装它。
+- 将保存输出文档的文档目录路径。
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 第 2 步：创建新文档并插入图表
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط مساحي في المستند.
+接下来，使用`InsertChart`的方法`DocumentBuilder`将面积图插入到文档中。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## 第 3 步：将系列数据添加到图表
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمس نقاط بيانات مع التواريخ والقيم المقابلة.
+将系列数据添加到图表中。在此示例中，我们将添加五个具有相应日期和值的数据点。
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new []
@@ -52,20 +52,20 @@ chart.Series.Add("Aspose Series 1", new []
 new double[] { 32, 32, 28, 12, 15 });
 ```
 
-## الخطوة 4: احفظ المستند
+## 第 4 步：保存文档
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+最后，使用 将文件保存到指定目录`Save`的方法`Document`目的。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertAreaChart.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مخطط مساحي باستخدام Aspose.Words for .NET.
+这样就完成了使用Aspose.Words for .NET 插入面积图的实现。
 
-### مثال على شفرة المصدر لإدراج مخطط منطقة باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 插入面积图的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

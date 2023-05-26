@@ -1,35 +1,35 @@
 ---
-title: تعيين إعداد الصفحة وتنسيق القسم
-linktitle: تعيين إعداد الصفحة وتنسيق القسم
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد تخطيط المستند وتنسيق القسم باستخدام Aspose.Words for .NET.
+title: Sayfa Yapısını ve Bölüm Biçimlendirmesini Ayarlayın
+linktitle: Sayfa Yapısını ve Bölüm Biçimlendirmesini Ayarlayın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir belgenin düzenini ve bölüm biçimlendirmesini ayarlamak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-document-options-and-settings/set-page-setup-and-section-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإعداد تنسيق التخطيط والقسم باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تعيين اتجاه الصفحة والهوامش وحجم الورق.
+Bu eğitimde, Aspose.Words for .NET ile mizanpaj ve bölüm biçimlendirmesi ayarlamak için C# kaynak kodunda size yol göstereceğiz. Bu özellik, sayfa yönünü, kenar boşluklarını ve kağıt boyutunu ayarlamanızı sağlar.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة 2: إنشاء المستند
+## 2. Adım: Belgeyi oluşturma
 
-في هذه الخطوة ، سننشئ مستندًا جديدًا. استخدم الكود التالي لإنشاء المستند وتهيئة المنشئ:
+Bu adımda yeni bir belge oluşturacağız. Belgeyi oluşturmak ve oluşturucuyu başlatmak için aşağıdaki kodu kullanın:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile.
 
-## الخطوة 3: إعداد التخطيط وحفظ المستند
+## 3. Adım: Düzeni ayarlama ve belgeyi kaydetme
 
-لنقم الآن بتهيئة تخطيط المستند. استخدم الكود التالي لتعيين الاتجاه والهوامش وحجم الورق:
+Şimdi belge düzenini yapılandıralım. Yönü, kenar boşluklarını ve kağıt boyutunu ayarlamak için aşağıdaki kodu kullanın:
 
 ```csharp
 builder.PageSetup.Orientation = Orientation.Landscape;
@@ -39,13 +39,13 @@ builder.PageSetup.PaperSize = PaperSize.Paper10x14;
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSectionFormatting.docx");
 ```
 
-سيقوم هذا الرمز بتعيين اتجاه الصفحة إلى أفقي ، والهامش الأيسر على 50 ، وحجم الورق إلى 10x14.
+Bu kod, sayfa yönünü yatay, sol kenar boşluğunu 50 ve kağıt boyutunu 10x14 olarak ayarlayacaktır.
 
-### مثال على الكود المصدري لتعيين إعداد الصفحة وتنسيق القسم باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Sayfa Yapısını Ayarlama ve Bölüm Biçimlendirme için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -58,6 +58,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSection
   
 ```
 
-تأكد من تحديد المسار الصحيح للدليل حيث تريد حفظ المستند بتنسيق`dataDir` عامل.
+Belgeyi kaydetmek istediğiniz dizine giden doğru yolu belirttiğinizden emin olun.`dataDir` değişken.
 
-لقد تعلمت الآن كيفية تكوين التخطيط وتنسيق القسم من المستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تخصيص تخطيط وتنسيق المستندات الخاصة بك.
+Aspose.Words for .NET kullanarak bir belgenin düzenini ve bölüm biçimlendirmesini nasıl yapılandıracağınızı artık öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek, kendi belgelerinizin düzenini ve biçimlendirmesini kolayca özelleştirebilirsiniz.

@@ -1,36 +1,36 @@
 ---
-title: ضغط الصورة
-linktitle: ضغط الصورة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لضغط الصور باستخدام Aspose.Words for .NET.
+title: Compressione delle immagini
+linktitle: Compressione delle immagini
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida passo passo alla compressione delle immagini con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/image-compression/
 ---
 
-تقدم هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام ميزة ضغط الصور مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية ضغط الصور في مستند وإنشاء ملف PDF بضغط الصور المناسب.
+Questo articolo fornisce una guida passo passo su come utilizzare la funzione di compressione delle immagini con Aspose.Words per .NET. Spiegheremo ogni parte del codice in dettaglio. Alla fine di questo tutorial, sarai in grado di capire come comprimere le immagini in un documento e generare un PDF con una corretta compressione delle immagini.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Prima di iniziare, assicurati di aver installato e configurato la libreria Aspose.Words per .NET nel tuo progetto. Puoi trovare la libreria e le istruzioni di installazione sul sito web di Aspose.
 
-## الخطوة 1: تحديد دليل المستند
+## Passaggio 1: definire la directory dei documenti
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Per iniziare, devi definire il percorso della directory in cui si trovano i tuoi documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Passaggio 2: caricare il documento
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Successivamente, dobbiamo caricare il documento che vogliamo elaborare. In questo esempio, supponiamo che il documento si chiami "Rendering.docx" e si trovi nella directory dei documenti specificata.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: قم بتكوين خيارات الحفظ كملف PDF باستخدام ضغط الصور
+## Passaggio 3: configurare le opzioni di salvataggio come PDF con la compressione delle immagini
 
- لضغط الصور عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`PdfSaveOptions` هدف. يمكننا ضبط نوع ضغط الصور وجودة JPEG وخيارات التوافق مع PDF الأخرى إذا لزم الأمر.
+ Per comprimere le immagini durante la conversione in PDF, dobbiamo configurare il file`PdfSaveOptions` oggetto. Possiamo impostare il tipo di compressione dell'immagine, la qualità JPEG e altre opzioni di conformità PDF, se necessario.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -40,30 +40,30 @@ PreserveFormFields = true
 };
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع ضغط الصور
+## Passaggio 4: salva il documento come PDF con la compressione delle immagini
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Infine, possiamo salvare il documento in formato PDF utilizzando le opzioni di salvataggio configurate in precedenza.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOptions);
 ```
 
-## الخطوة 5: قم بتكوين خيارات الحفظ في PDF / A-2u بضغط الصور
+## Passaggio 5: configurare le opzioni per il salvataggio in PDF/A-2u con compressione delle immagini
 
-إذا كنت تريد إنشاء ملف PDF متوافق مع PDF / A-2u بضغط الصور ، يمكنك تكوين خيارات الحفظ الإضافية.
+Se desideri generare PDF conforme a PDF/A-2u con compressione delle immagini, puoi configurare le opzioni di salvataggio aggiuntive.
 
 ```csharp
 PdfSaveOptions saveOptionsA2U = new PdfSaveOptions
 {
 Compliance = PdfCompliance.PdfA2u,
 ImageCompression = PdfImageCompression.Jpeg,
-JpegQuality=100, // استخدم ضغط JPEG بجودة 50٪ لتقليل حجم الملف.
+JpegQuality=100, // Usa la compressione JPEG con una qualità del 50% per ridurre le dimensioni del file.
 };
 ```
 
-## الخطوة 6: احفظ المستند بصيغة PDF / A-2u بضغط الصورة
+## Passaggio 6: salvare il documento come PDF/A-2u con compressione dell'immagine
 
-احفظ المستند بتنسيق PDF / A-2u باستخدام خيارات الحفظ الإضافية التي تم تكوينها مسبقًا.
+Salvare il documento in formato PDF/A-2u utilizzando le opzioni di salvataggio aggiuntive configurate in precedenza.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", saveOptionsA2U);
@@ -71,13 +71,13 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", save
 
 
 
-هذا كل شئ ! لقد نجحت في ضغط الصور في مستند وإنشاء ملف PDF بضغط الصور المناسب باستخدام Aspose.Words for .NET.
+È tutto ! Hai compresso correttamente le immagini in un documento e generato un PDF con una corretta compressione delle immagini utilizzando Aspose.Words per .NET.
 
-### عينة من التعليمات البرمجية المصدر لضغط الصور باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per la compressione di immagini con Aspose.Words per .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", save
 	{
 		Compliance = PdfCompliance.PdfA2u,
 		ImageCompression = PdfImageCompression.Jpeg,
-		JpegQuality = 100, // استخدم ضغط JPEG بجودة 50٪ لتقليل حجم الملف.
+		JpegQuality = 100, // Usa la compressione JPEG con una qualità del 50% per ridurre le dimensioni del file.
 	};
 
 	

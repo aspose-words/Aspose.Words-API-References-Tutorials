@@ -1,36 +1,36 @@
 ---
-title: أدخل حقل نموذج إدخال النص
-linktitle: أدخل حقل نموذج إدخال النص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET لإدراج حقل نموذج إدخال النص في مستندات Word باستخدام هذا الدليل المفصل خطوة بخطوة.
+title: Insérer un champ de formulaire de saisie de texte
+linktitle: Insérer un champ de formulaire de saisie de texte
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à utiliser Aspose.Words pour .NET pour insérer un champ de formulaire de saisie de texte dans des documents Word avec ce guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-text-input-form-field/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سنستكشف كيفية استخدام ميزة إدراج حقل نموذج إدخال نص في Aspose.Words for .NET لإضافة حقول نموذج إدخال النص ومعالجتها في مستندات Word باستخدام كود مصدر C #. تسمح حقول نموذج إدخال النص للمستخدمين بإدخال نص مخصص داخل المستند ، مما يجعلها مثالية لإنشاء نماذج واستبيانات تفاعلية. باتباع الإرشادات أدناه ، ستتمكن من إدراج حقول نموذج إدخال النص وتخصيصها بسهولة في مستنداتك. هيا بنا نبدأ!
+Dans ce guide étape par étape, nous allons explorer comment utiliser la fonctionnalité Insérer un champ de formulaire de saisie de texte dans Aspose.Words pour .NET pour ajouter et manipuler des champs de formulaire de saisie de texte dans vos documents Word à l'aide du code source C#. Les champs de formulaire de saisie de texte permettent aux utilisateurs de saisir du texte personnalisé dans un document, ce qui les rend idéaux pour créer des formulaires et des questionnaires interactifs. En suivant les instructions ci-dessous, vous pourrez facilement insérer et personnaliser des champs de formulaire de saisie de texte dans vos documents. Commençons!
 
-## مقدمة عن ميزة "إدراج حقل نموذج إدخال النص" في Aspose.Words for .NET
+## Introduction à la fonctionnalité Insérer un champ de formulaire de saisie de texte dans Aspose.Words pour .NET
 
-تتيح لك ميزة "إدراج حقل نموذج إدخال النص" في Aspose.Words for .NET إضافة حقول نموذج إدخال نص برمجيًا إلى مستندات Word الخاصة بك. توفر حقول النموذج هذه عنصرًا تفاعليًا حيث يمكن للمستخدمين إدخال نص أو بيانات مخصصة.
+La fonctionnalité Insérer un champ de formulaire de saisie de texte dans Aspose.Words pour .NET vous permet d'ajouter des champs de formulaire de saisie de texte par programme à vos documents Word. Ces champs de formulaire fournissent un élément interactif dans lequel les utilisateurs peuvent saisir du texte ou des données personnalisés.
 
-## فهم متطلبات استخدام الميزة
+## Comprendre les conditions d'utilisation de la fonctionnalité
 
-قبل متابعة التنفيذ ، تأكد من استيفاء المتطلبات التالية:
+Avant de procéder à la mise en œuvre, assurez-vous que vous remplissez les conditions suivantes :
 
-1. تم تثبيت Aspose.Words for .NET library في مشروعك.
-2. المعرفة الأساسية بلغة البرمجة C #.
-3. مستند Word موجود أو مستند جديد لإدراج حقل نموذج إدخال النص.
+1. Bibliothèque Aspose.Words pour .NET installée dans votre projet.
+2. Connaissance de base du langage de programmation C#.
+3. Un document Word existant ou un nouveau document pour insérer le champ du formulaire de saisie de texte.
 
-تأكد من توفر هذه المتطلبات الأساسية للمضي قدمًا بسلاسة.
+Assurez-vous que ces conditions préalables sont en place pour procéder en douceur.
 
-## دليل تفصيلي خطوة بخطوة لتنفيذ إدراج حقل نموذج إدخال نص باستخدام كود مصدر C #
+## Guide étape par étape pour implémenter Insérer un champ de formulaire de saisie de texte à l'aide du code source C #
 
-اتبع الخطوات أدناه لتنفيذ ميزة إدراج حقل نموذج إدخال النص باستخدام كود مصدر C # المقدم:
+Suivez les étapes ci-dessous pour implémenter la fonctionnalité Insérer un champ de formulaire de saisie de texte à l'aide du code source C# fourni :
 
-### الخطوة 1: تهيئة مستند إنشاء المستندات
+### Étape 1 : Initialisation du document et du générateur de documents
 
-للبدء ، قم بتهيئة المستند ومنشئ المستندات. يُعد منشئ المستندات أداة قوية توفرها Aspose.Words for .NET والتي تتيح لنا إنشاء مستندات Word ومعالجتها برمجيًا. استخدم مقتطف الشفرة التالي:
+Pour commencer, initialisez le document et le générateur de document. Le générateur de documents est un outil puissant fourni par Aspose.Words pour .NET qui nous permet de construire et de manipuler des documents Word par programmation. Utilisez l'extrait de code suivant :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,31 +39,31 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-### الخطوة 2: إدخال حقل نموذج إدخال النص
+### Étape 2 : Insertion du champ du formulaire de saisie de texte
 
- بعد ذلك ، سنقوم بإدخال حقل نموذج إدخال النص في المستند باستخدام الامتداد`InsertTextInput` طريقة. تقبل هذه الطريقة معلمات مختلفة ، بما في ذلك اسم حقل النموذج ونوع حقل النموذج (في هذه الحالة ،`TextFormFieldType.Regular`والقيمة الافتراضية والحد الأقصى للطول. هذا مثال:
+ Ensuite, nous allons insérer le champ du formulaire de saisie de texte dans le document à l'aide de la`InsertTextInput` méthode. Cette méthode accepte divers paramètres, dont le nom du champ de formulaire, le type de champ de formulaire (dans ce cas,`TextFormFieldType.Regular`), la valeur par défaut et la longueur maximale. Voici un exemple :
 
 ```csharp
 builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
 ```
 
-سوف يقوم الكود أعلاه بإدراج حقل نموذج إدخال نص بالاسم "TextInput" ، والقيمة الافتراضية "Hello" ، ولا يوجد حد أقصى للطول.
+Le code ci-dessus insérera un champ de formulaire de saisie de texte avec le nom "TextInput", une valeur par défaut de "Hello", et aucune restriction de longueur maximale.
 
-### الخطوة 3: حفظ المستند
+### Étape 3 : Enregistrer le document
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Après avoir inséré le champ du formulaire de saisie de texte, enregistrez le document à l'emplacement souhaité à l'aide de la`Save` méthode. Assurez-vous de fournir le chemin d'accès au fichier approprié :
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```
 
-سيحفظ هذا الرمز المستند مع حقل نموذج إدخال النص المدرج في الموقع المحدد.
+Ce code enregistrera le document avec le champ de formulaire de saisie de texte inséré à l'emplacement spécifié.
 
-### مثال على شفرة المصدر لإدراج حقل نموذج إدخال نص باستخدام Aspose.Words for .NET
+### Exemple de code source pour Insérer un champ de formulaire de saisie de texte à l'aide de Aspose.Words pour .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	
 	Document doc = new Document();

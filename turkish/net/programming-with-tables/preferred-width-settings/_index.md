@@ -1,98 +1,98 @@
 ---
-title: إعدادات العرض المفضلة
-linktitle: إعدادات العرض المفضلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين عروض خلية الجدول المفضلة في مستند Word باستخدام Aspose.Words for .NET.
+title: Tercih Edilen Genişlik Ayarları
+linktitle: Tercih Edilen Genişlik Ayarları
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde tercih edilen tablo hücresi genişliklerini nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/preferred-width-settings/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تعيين إعدادات العرض المفضلة لخلايا الجدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تحديد عروض مختلفة مفضلة لخلايا الجدول في مستندات Word الخاصة بك.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki tablo hücreleri için tercih edilen genişlik ayarlarının nasıl ayarlanacağını öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki tablo hücreleriniz için farklı tercih edilen genişlikler belirtebileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Adım 2: Belgeyi oluşturma ve belge oluşturucuyu başlatma
+Belge ve belge oluşturucuyla çalışmaya başlamak için şu adımları izleyin:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Belge oluşturma
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Belge oluşturucuyu başlat
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة 3: بناء الجدول بالعروض المفضلة
-بعد ذلك ، سنقوم ببناء جدول بثلاث خلايا لها عروض مختلفة مفضلة. استخدم الكود التالي:
+## 3. Adım: Tabloyu tercih edilen genişliklerle oluşturmak
+Ardından, tercih edilen farklı genişliklere sahip üç hücreli bir tablo oluşturacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
-// بداية الجدول
+// tablonun başlangıcı
 builder. StartTable();
 
-// أدخل خلية ذات حجم مطلق
+// Mutlak boyutta bir hücre ekle
 builder. InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
 builder.Writeln("Cell with a width of 40 points");
 
-// أدخل خلية ذات حجم نسبي (بالنسبة المئوية)
+// Göreceli boyutta bir hücre ekleyin (yüzde olarak)
 builder. InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 builder.Writeln("Cell with 20% width");
 
-// أدخل خلية ذات حجم تلقائي
+// Otomatik boyutlu bir hücre ekle
 builder. InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
 builder.Writeln("Auto-size cell. The size of this cell is calculated from the preferred width of the table. In this case, the cell will fill the rest of the available space.");
 
-// نهاية الجدول
+// tablonun sonu
 builder. EndTable();
 ```
 
-هنا نستخدم منشئ المستندات لبناء جدول بثلاث خلايا. للخلية الأولى عرض مفضل يبلغ 40 نقطة ، والخلية الثانية لها عرض مفضل بنسبة 20٪ من عرض الجدول ، والخلية الثالثة لها عرض مفضل تلقائي يتم ضبطه
+Burada, üç hücreli bir tablo oluşturmak için belge oluşturucuyu kullanıyoruz. Birinci hücrenin tercih edilen genişliği 40 puntodur, ikinci hücrenin tercih edilen genişliği tablo genişliğinin %20'sidir ve üçüncü hücrenin otomatik olarak ayarlanan tercih edilen genişliği vardır.
 
-  حسب المساحة المتوفرة.
+  mevcut alana bağlı olarak.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل بإعدادات العرض المفضلة المحددة لخلايا الجدول. استخدم الكود التالي:
+## 4. Adım: Değiştirilen belgeyi kaydetme
+Son olarak, değiştirilen belgeyi tablo hücreleri için tanımlanan tercih edilen genişlik ayarlarıyla kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### نموذج رمز مصدر لإعدادات العرض المفضلة باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Tercih Edilen Genişlik Ayarları için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// أدخل صف جدول مكون من ثلاث خلايا لها عروض مختلفة مفضلة.
+	// Tercih edilen farklı genişliklere sahip üç hücreden oluşan bir tablo satırı ekleyin.
 	builder.StartTable();
-	// أدخل خلية ذات حجم مطلق.
+	// Mutlak boyutlu bir hücre ekleyin.
 	builder.InsertCell();
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
 	builder.Writeln("Cell at 40 points width");
-	// أدخل خلية ذات حجم نسبي (نسبة مئوية).
+	// Göreceli (yüzde) boyutlu bir hücre ekleyin.
 	builder.InsertCell();
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 	builder.Writeln("Cell at 20% width");
-	// أدخل خلية بحجم تلقائي.
+	// Otomatik boyutlu bir hücre ekleyin.
 	builder.InsertCell();
 	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
@@ -102,5 +102,5 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 	doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين إعدادات العرض المفضلة لخلايا الجدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تخصيص عرض خلايا الجدول وفقًا لاحتياجاتك المحددة في مستندات Word الخاصة بك.
+## Çözüm
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki tablo hücreleri için tercih edilen genişlik ayarlarının nasıl ayarlanacağını öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, tablo hücre genişliklerinizi Word belgelerinizdeki özel ihtiyaçlarınıza göre özelleştirebilirsiniz.

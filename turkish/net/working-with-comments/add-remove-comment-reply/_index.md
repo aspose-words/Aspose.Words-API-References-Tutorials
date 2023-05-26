@@ -1,55 +1,55 @@
 ---
-title: إضافة إزالة التعليق الرد
-linktitle: إضافة إزالة التعليق الرد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة وإزالة الردود على التعليقات في مستندات Word باستخدام Aspose.Words for .NET.
+title: Ekle Yorum Kaldır Yanıtla
+linktitle: Ekle Yorum Kaldır Yanıtla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerine yorum yanıtlarını nasıl ekleyeceğinizi ve kaldıracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-comments/add-remove-comment-reply/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إضافة ردود التعليقات وإزالتها في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إدارة ردود التعليقات وتخصيصها وفقًا لمتطلباتك.
+Bu kapsamlı eğitimde, Aspose.Words for .NET kullanarak bir Word belgesine yorum yanıtlarını nasıl ekleyeceğinizi ve kaldıracağınızı öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, yorum yanıtlarını yönetebilecek ve gereksinimlerinize göre özelleştirebileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: قم بتحميل المستند
-للبدء ، قم بتحميل المستند الذي يحتوي على التعليقات باستخدام فئة المستند:
+## 1. Adım: Belgeyi Yükleyin
+Başlamak için, açıklamaları içeren belgeyi Document sınıfını kullanarak yükleyin:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
 ```
 
-## الخطوة 2: الوصول إلى التعليق وإدارة الردود
-بعد ذلك ، قم بالوصول إلى التعليق من المستند باستخدام طريقة GetChild مع معلمة NodeType.Comment:
+## 2. Adım: Yoruma Erişin ve Yanıtları Yönetin
+Ardından, NodeType.Comment parametresiyle GetChild yöntemini kullanarak belgeden yoruma erişin:
 
 ```csharp
 Comment comment = (Comment)doc.GetChild(NodeType.Comment, 0, true);
 ```
 
-لإزالة رد من التعليق ، استخدم طريقة RemoveReply وقم بتوفير فهرس الرد المطلوب:
+Yorumdan bir yanıtı kaldırmak için RemoveReply yöntemini kullanın ve istenen yanıt dizinini sağlayın:
 
 ```csharp
 comment.RemoveReply(comment.Replies[0]);
 ```
 
-لإضافة رد جديد على التعليق ، استخدم طريقة AddReply وقم بتوفير اسم المؤلف والأحرف الأولى من اسم المؤلف والتاريخ والوقت ونص الرد:
+Yoruma yeni bir yanıt eklemek için AddReply yöntemini kullanın ve yazar adını, yazarın baş harflerini, tarih ve saati ve yanıt metnini sağlayın:
 
 ```csharp
 comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New reply");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إضافة الردود على التعليقات أو إزالتها ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 3. Adım: Belgeyi Kaydedin
+Yorum yanıtlarını ekledikten veya çıkardıktan sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 ```
 
-### مثال على كود المصدر لإضافة وإزالة التعليقات باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لإضافة وإزالة الردود على التعليقات باستخدام Aspose.Words for .NET:
+### Aspose.Words for .NET kullanarak Yorum Yanıtları Ekleme ve Kaldırma için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak yorum yanıtları eklemek ve kaldırmak için eksiksiz kaynak kodu burada:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -64,7 +64,7 @@ comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New re
 doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إضافة وإزالة الردود على التعليقات في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام الكود المصدري المقدم ، يمكنك الآن إدارة ردود التعليقات وتخصيصها وفقًا لمتطلباتك.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine yorum yanıtlarını nasıl ekleyeceğinizi ve kaldıracağınızı başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, artık yorum yanıtlarını yönetebilir ve gereksinimlerinize göre özelleştirebilirsiniz.
 
-تسمح الردود على التعليقات بالمناقشات التعاونية والتعليقات داخل المستند. جرّب مؤلفي الردود المختلفين والأحرف الأولى والتواريخ والنصوص لتعزيز التعاون والتواصل داخل مستنداتك.
+Yorum yanıtları, bir belge içinde işbirlikçi tartışmalara ve geri bildirime izin verir. Belgelerinizde işbirliğini ve iletişimi geliştirmek için farklı yanıt yazarları, baş harfleri, tarihler ve metinlerle denemeler yapın.

@@ -1,70 +1,70 @@
 ---
-title: ضع علامة على محاذاة تسمية متعددة الأسطر
-linktitle: ضع علامة على محاذاة تسمية متعددة الأسطر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية محاذاة تسميات التجزئة متعددة الأسطر في محور الرسم البياني باستخدام Aspose.Words for .NET.
+title: 勾选多行标签对齐
+linktitle: 勾选多行标签对齐
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 对齐图表轴中的刻度多行标签。
 type: docs
 weight: 10
 url: /zh/net/programming-with-charts/tick-multi-line-label-alignment/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين محاذاة تسميات التجزئة متعددة الأسطر في محور المخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط والوصول إلى المحور وتعديل محاذاة تسمية التجزئة.
+本教程解释了如何使用 Aspose.Words for .NET 设置图表轴中刻度多线标签的对齐方式。提供的源代码演示了如何创建图表、访问轴和修改刻度标签对齐方式。
 
-## الخطوة 1: قم بإعداد المشروع
+## 第 1 步：设置项目
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+确保您具有以下先决条件：
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- 安装了 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载或使用 NuGet 包管理器安装它。
+- 将保存输出文档的文档目录路径。
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 第 2 步：创建新文档并插入图表
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط مبعثر في المستند.
+接下来，使用`InsertChart`的方法`DocumentBuilder`将散点图插入到文档中。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
 ChartAxis axis = shape.Chart.AxisX;
 ```
 
-## الخطوة 3: ضبط محاذاة تسمية التجزئة
+## 第 3 步：设置刻度标签对齐方式
 
- لتعيين محاذاة تسميات التجزئة متعددة الأسطر ، قم بالوصول إلى`AxisX` خاصية الرسم البياني وتعيين`TickLabelAlignment` الخاصية للمحاذاة المطلوبة. في هذا المثال ، قمنا بتعيين المحاذاة إلى`ParagraphAlignment.Right`.
+要设置刻度多行标签的对齐方式，请访问`AxisX`图表的属性并设置`TickLabelAlignment`属性到所需的对齐方式。在这个例子中，我们将对齐方式设置为`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
 ```
 
-## الخطوة 4: احفظ المستند
+## 第 4 步：保存文档
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+最后，使用 将文件保存到指定目录`Save`的方法`Document`目的。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 ```
 
-هذا يكمل تنفيذ إعداد محاذاة تسمية العلامات متعددة الأسطر باستخدام Aspose.Words for .NET.
+这样就完成了使用Aspose.Words for .NET设置刻度多行标签对齐方式的实现。
 
-### مثال على شفرة المصدر لـ Tick Multi Line Label Alignment باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的 Tick Multi Line Label Alignment 示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
 	ChartAxis axis = shape.Chart.AxisX;
-	// هذه الخاصية لها تأثير فقط للتسميات متعددة الخطوط.
+	//此属性仅对多行标签有效。
 	axis.TickLabelAlignment = ParagraphAlignment.Right;
 	doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 ```

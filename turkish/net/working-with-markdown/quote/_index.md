@@ -1,35 +1,35 @@
 ---
-title: يقتبس
-linktitle: يقتبس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام الاقتباس مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Alıntı
+linktitle: Alıntı
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile teklifin nasıl kullanılacağını öğrenin Adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/quote/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام ميزة الاقتباس مع Aspose.Words for .NET Quote تُستخدم لإبراز أقسام النص من خلال إحاطةهم بحد خاص.
+Bu örnekte, alıntı özelliğinin Aspose ile nasıl kullanılacağını açıklayacağız. NET için Words Alıntı, metnin bölümlerini özel bir kenarlıkla çevreleyerek vurgulamak için kullanılır.
 
-## الخطوة 1: استخدام منشئ المستندات
+## 1. Adım: Bir belge oluşturucu kullanma
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+İlk olarak, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة الثانية: استخدام أسلوب الاقتباس الافتراضي
+## 2. Adım: Varsayılan Alıntı Stilini Kullanma
 
-سنستخدم نمط الفقرة الافتراضي المسمى "اقتباس" لتطبيق تنسيق الاقتباس على النص.
+Metne alıntı biçimlendirmesi uygulamak için "Alıntı" adlı varsayılan paragraf stilini kullanacağız.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Quote";
 builder.Writeln("Blockquote");
 ```
 
-## الخطوة 3: إنشاء أنماط للمستويات المتداخلة
+## 3. Adım: Yuvalanmış düzeyler için stiller oluşturma
 
- يمكننا إنشاء أنماط للمستويات المتداخلة باستخدام امتداد`Styles.Add` طريقة`Document` هدف. في هذا المثال ، نقوم بإنشاء نمط يسمى "Quote1" لتمثيل مستوى اقتباس متداخل.
+ Kullanarak iç içe seviyeler için stiller oluşturabiliriz.`Styles.Add` yöntemi`Document` nesne. Bu örnekte, iç içe bir alıntı düzeyini temsil etmek için "Alıntı1" adlı bir stil oluşturuyoruz.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
@@ -38,18 +38,18 @@ builder.Document.Styles["Quote1"].BaseStyleName = "Quote";
 builder.Writeln("1. Nested blockquote");
 ```
 
-### مثال على شفرة المصدر للاقتباسات باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile alıntılar için örnek kaynak kodu
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// بشكل افتراضي ، يخزن المستند نمط blockquote للمستوى الأول.
+	// Varsayılan olarak bir belge, birinci seviye için blok alıntı stilini saklar.
 	builder.ParagraphFormat.StyleName = "Quote";
 	builder.Writeln("Blockquote");
 
-	// إنشاء أنماط للمستويات المتداخلة من خلال وراثة النمط.
+	// Stil devralma yoluyla iç içe düzeyler için stiller oluşturun.
 	Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
 	builder.ParagraphFormat.Style = quoteLevel2;
 	builder.Document.Styles["Quote1"].BaseStyleName = "Quote";
@@ -57,5 +57,5 @@ builder.Writeln("1. Nested blockquote");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الاقتباسات مع Aspose.Words for .NET.
+Tebrikler! Artık alıntı özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.
 

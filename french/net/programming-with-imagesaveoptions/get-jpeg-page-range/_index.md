@@ -1,31 +1,31 @@
 ---
-title: احصل على نطاق صفحات Jpeg
-linktitle: احصل على نطاق صفحات Jpeg
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على مجموعة من صفحات JPEG باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل لاستخراج الصور المخصصة.
+title: Obtenir la plage de pages JPEG
+linktitle: Obtenir la plage de pages JPEG
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à obtenir une gamme de pages JPEG avec Aspose.Words pour .NET. Tutoriel complet pour extraire des images personnalisées.
 type: docs
 weight: 10
 url: /fr/net/programming-with-imagesaveoptions/get-jpeg-page-range/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف كود المصدر C # المقدم لميزة "Get Range of JPEG Pages" مع Aspose.Words for .NET. تتيح لك هذه الميزة تحويل نطاق معين من صفحات المستند إلى صور بتنسيق JPEG.
+Dans ce didacticiel, nous allons explorer le code source C # fourni pour la fonctionnalité "Get Range of JPEG Pages" avec Aspose.Words pour .NET. Cette fonctionnalité vous permet de convertir une plage spécifique de pages d'un document en images au format JPEG.
 
-## الخطوة الأولى: تهيئة البيئة
+## Étape 1 : Configurer l'environnement
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Avant de commencer, assurez-vous d'avoir configuré votre environnement de développement avec Aspose.Words pour .NET. Assurez-vous d'avoir ajouté les références nécessaires et importé les espaces de noms appropriés.
 
-## الخطوة الثانية: تحميل المستند
+## Étape 2 : Chargement du document
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+ Dans cette étape, nous chargeons le document en utilisant le`Document` méthode et en passant le chemin vers le fichier DOCX à charger.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي للصور
+## Étape 3 : Configurer les options de sauvegarde d'image
 
 ```csharp
 ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Jpeg);
@@ -35,38 +35,38 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- في هذه الخطوة ، نقوم بتكوين خيارات النسخ الاحتياطي للصور. نخلق ملف`ImageSaveOptions` كائن يحدد تنسيق الحفظ المطلوب ، هنا "Jpeg" لتنسيق JPEG. نقوم أيضًا بتعيين نطاق الصفحات للتحويل باستخدام امتداد`PageSet`هدف. أخيرًا ، نقوم بضبط سطوع الصورة وتباينها باستخدام ملف`ImageBrightness` و`ImageContrast` الخصائص ، على التوالي. نقوم أيضًا بتغيير الدقة الأفقية باستخدام`HorizontalResolution` ملكية.
+ Dans cette étape, nous configurons les options de sauvegarde des images. Nous créons un nouveau`ImageSaveOptions` objet précisant le format de sauvegarde souhaité, ici "Jpeg" pour le format JPEG. Nous définissons également la plage de pages à convertir à l'aide de la`PageSet`objet. Enfin, nous ajustons la luminosité et le contraste de l'image à l'aide de la`ImageBrightness` et`ImageContrast` propriétés, respectivement. Nous modifions également la résolution horizontale à l'aide de la`HorizontalResolution` propriété.
 
-## الخطوة 4: نسخ الصور احتياطيًا
+## Étape 4 : sauvegarde des images
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
 ```
 
- في هذه الخطوة الأخيرة ، نقوم بحفظ الصور الخاصة بنطاق الصفحات المحدد بتنسيق JPEG باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج ، جنبًا إلى جنب مع خيارات الحفظ المحددة.
+ Dans cette dernière étape, nous enregistrons les images de la plage de pages spécifiée au format JPEG à l'aide de la`Save` et en transmettant le chemin d'accès au fichier de sortie, ainsi que les options d'enregistrement spécifiées.
 
-يمكنك الآن تشغيل الكود المصدري لتحويل نطاق معين من الصفحات في مستندك إلى صور JPEG. سيتم حفظ الملف الناتج في الدليل المحدد بالاسم "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg".
+Vous pouvez maintenant exécuter le code source pour convertir une plage spécifique de pages de votre document en images JPEG. Le fichier résultant sera enregistré dans le répertoire spécifié avec le nom "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg".
 
-### نموذج لشفرة مصدر للحصول على نطاق صفحات Jpeg باستخدام Aspose.Words For .NET
+### Exemple de code source pour obtenir la plage de pages Jpeg à l'aide de Aspose.Words pour .NET
 
 ```csharp 
- // المسار إلى دليل المستند الخاص بك
+ // Chemin d'accès à votre répertoire de documents
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");
 
 ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Jpeg);
 
-// اضبط "PageSet" على "0" لتحويل الصفحة الأولى فقط من المستند.
+// Définissez "PageSet" sur "0" pour convertir uniquement la première page d'un document.
 options.PageSet = new PageSet(0);
 
-// قم بتغيير سطوع الصورة وتباينها.
-// كلاهما على مقياس 0-1 وهما 0.5 افتراضيًا.
+// Modifiez la luminosité et le contraste de l'image.
+// Les deux sont sur une échelle de 0 à 1 et sont à 0,5 par défaut.
 options.ImageBrightness = 0.3f;
 options.ImageContrast = 0.7f;
 
-// تغيير الدقة الأفقية.
-// القيمة الافتراضية لهذه الخصائص هي 96.0 ، لدقة 96 نقطة في البوصة.
+// Modifiez la résolution horizontale.
+// La valeur par défaut de ces propriétés est 96,0, pour une résolution de 96 dpi.
 options.HorizontalResolution = 72f;
 
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
@@ -74,12 +74,12 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
         
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة الحصول على نطاق صفحات JPEG باستخدام Aspose.Words for .NET. لقد تعلمنا كيفية تحويل نطاق معين من صفحات المستند إلى صور بتنسيق JPEG ، أثناء تخصيص خيارات الحفظ.
+Dans ce didacticiel, nous avons exploré la fonctionnalité d'obtention d'une plage de pages JPEG avec Aspose.Words pour .NET. Nous avons appris à convertir une plage spécifique de pages d'un document en images au format JPEG, tout en personnalisant les options d'enregistrement.
 
-هذه الميزة مفيدة عندما تريد استخراج صفحات معينة من مستند وحفظها كصور JPEG. يمكنك أيضًا ضبط السطوع والتباين والدقة الأفقية للصور لتحقيق نتائج مخصصة.
+Cette fonctionnalité est utile lorsque vous souhaitez extraire des pages spécifiques d'un document et les enregistrer en tant qu'images JPEG. Vous pouvez également régler la luminosité, le contraste et la résolution horizontale des images pour obtenir des résultats personnalisés.
 
-تقدم Aspose.Words for .NET مجموعة واسعة من الميزات المتقدمة لمعالجة المستندات وإنشائها. يعد الحصول على نطاق صفحات JPEG أحد الأدوات القوية العديدة التي يضعها تحت تصرفك.
+Aspose.Words pour .NET offre une vaste gamme de fonctionnalités avancées pour la manipulation et la génération de documents. Obtenir une plage de pages JPEG est l'un des nombreux outils puissants qu'il met à votre disposition.
 
-لا تتردد في دمج هذه الميزة في Aspose.Words لمشاريع .NET للحصول على صور JPEG عالية الجودة من مستنداتك.
+N'hésitez pas à intégrer cette fonctionnalité dans vos projets Aspose.Words pour .NET pour obtenir des images JPEG de haute qualité à partir de vos documents.

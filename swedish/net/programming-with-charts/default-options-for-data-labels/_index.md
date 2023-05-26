@@ -1,44 +1,44 @@
 ---
-title: الخيارات الافتراضية لتسميات البيانات
-linktitle: الخيارات الافتراضية لتسميات البيانات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين الخيارات الافتراضية لتسميات البيانات في مخطط باستخدام Aspose.Words for .NET.
+title: Standardalternativ för dataetiketter
+linktitle: Standardalternativ för dataetiketter
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ställer in standardalternativ för dataetiketter i ett diagram med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-charts/default-options-for-data-labels/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين الخيارات الافتراضية لتسميات البيانات في الرسم البياني. يوضح الكود المقدم كيفية إنشاء مخطط وإضافة سلسلة بيانات وتخصيص تسميات البيانات باستخدام Aspose.Words.
+Denna handledning förklarar hur man använder Aspose.Words för .NET för att ställa in standardalternativ för dataetiketter i ett diagram. Koden som tillhandahålls visar hur man skapar ett diagram, lägger till dataserier och anpassar dataetiketterna med Aspose.Words.
 
-## الخطوة 1: قم بإعداد المشروع
+## Steg 1: Konfigurera projektet
 
-قبل أن نبدأ ، تأكد من توفر المتطلبات التالية:
+Innan vi börjar, se till att du har följande krav på plats:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från den officiella Aspose-webbplatsen eller använda NuGet-pakethanteraren för att installera den.
+- En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram
 
- أولاً ، لنقم بإنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Låt oss först skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، نقوم بإدراج مخطط في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`. في هذا المثال ، سنقوم بإدراج مخطط دائري.
+ Därefter infogar vi ett diagram i dokumentet med hjälp av`InsertChart` metod för`DocumentBuilder`. I det här exemplet kommer vi att infoga ett cirkeldiagram.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف سلسلة البيانات إلى الرسم البياني
+## Steg 3: Lägg till dataserier i diagrammet
 
-الآن ، دعنا نضيف سلسلة بيانات إلى المخطط. في هذا المثال ، سنضيف ثلاث فئات والقيم المقابلة لها.
+Låt oss nu lägga till en dataserie i diagrammet. I det här exemplet lägger vi till tre kategorier och deras motsvarande värden.
 
 ```csharp
 chart.Series.Clear();
@@ -47,15 +47,15 @@ ChartSeries series = chart.Series.Add("Aspose Series 1",
     new double[] { 2.7, 3.2, 0.8 });
 ```
 
-## الخطوة 4: تخصيص تسميات البيانات
+## Steg 4: Anpassa dataetiketter
 
- لتخصيص تسميات البيانات في المخطط ، نحتاج إلى الوصول إلى ملف`ChartDataLabelCollection` الكائن المرتبط بالسلسلة.
+ För att anpassa dataetiketterna i diagrammet måste vi komma åt`ChartDataLabelCollection` objekt som är kopplat till serien.
 
 ```csharp
 ChartDataLabelCollection labels = series.DataLabels;
 ```
 
- يمكننا بعد ذلك تعديل الخصائص المختلفة لملف`labels` لتعيين الخيارات المطلوبة لتسميات البيانات. في هذا المثال ، سنقوم بتمكين عرض النسبة المئوية والقيمة ، وتعطيل الخطوط البادئة ، وتعيين فاصل مخصص.
+ Vi kan sedan modifiera olika egenskaper hos`labels` objekt för att ställa in önskade alternativ för dataetiketter. I det här exemplet kommer vi att aktivera visning av procent och värde, inaktivera ledarlinjer och ställa in en anpassad avgränsare.
 
 ```csharp
 labels.ShowPercentage = true;
@@ -64,20 +64,20 @@ labels.ShowLeaderLines = false;
 labels.Separator = " - ";
 ```
 
-## الخطوة 5: احفظ المستند
+## Steg 5: Spara dokumentet
 
- أخيرًا ، نحفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Slutligen sparar vi dokumentet i den angivna katalogen med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ```
 
-هذا يكمل تنفيذ إعداد الخيارات الافتراضية لتسميات البيانات في مخطط باستخدام Aspose.Words for .NET.
+Detta slutför implementeringen av att ställa in standardalternativ för dataetiketter i ett diagram med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر للخيارات الافتراضية لعناوين البيانات باستخدام Aspose.Words for .NET 
+### Exempel på källkod för standardalternativ för dataetiketter med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -1,53 +1,53 @@
 ---
-title: عرض عنوان المستند في شريط عنوان النافذة
-linktitle: عرض عنوان المستند في شريط عنوان النافذة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+title: Visualizza il titolo del documento nella barra del titolo della finestra
+linktitle: Visualizza il titolo del documento nella barra del titolo della finestra
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come visualizzare il titolo del documento nella barra del titolo della finestra durante la conversione in PDF con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titlebar/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال الخطوات لعرض عنوان المستند في شريط عنوان النافذة باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة عرض عنوان المستند في شريط عنوان النافذة عند فتح مستند PDF الذي تم إنشاؤه. اتبع الخطوات التالية:
+In questo tutorial, ti guideremo attraverso i passaggi per visualizzare il titolo del documento nella barra del titolo della finestra con Aspose.Words per .NET. Questa funzione consente di visualizzare il titolo del documento nella barra del titolo della finestra quando si apre il documento PDF generato. Segui i passaggi seguenti:
 
-## الخطوة 1: تحميل المستند
+## Passaggio 1: caricamento del documento
 
-ابدأ بتحميل المستند الذي تريد تحويله إلى PDF:
+Inizia caricando il documento che desideri convertire in PDF:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح للمستند الخاص بك.
+Assicurati di specificare il percorso corretto del documento.
 
-## الخطوة 2: تكوين خيارات حفظ PDF
+## Passaggio 2: configurare le opzioni di salvataggio PDF
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وقم بتمكين عرض عنوان المستند في شريط عنوان النافذة:
+Creare un'istanza della classe PdfSaveOptions e abilitare la visualizzazione del titolo del documento nella barra del titolo della finestra:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { DisplayDocTitle = true };
 ```
 
-يتيح هذا الخيار عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF.
+Questa opzione abilita la visualizzazione del titolo del documento nella barra del titolo della finestra durante la conversione in PDF.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## Passo 3: Converti documento in PDF
 
- استخدم ال`Save` طريقة تحويل المستند إلى PDF مع تحديد خيارات التحويل:
+ Usa il`Save` metodo per convertire il documento in PDF specificando le opzioni di conversione:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Assicurati di specificare il percorso corretto per salvare il PDF convertito.
 
-### مثال على شفرة المصدر لعرض عنوان المستند في شريط عناوين النافذة باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Display Doc Title In Window Titlebar utilizzando Aspose.Words per .NET
 
-إليك كود المصدر الكامل لعرض عنوان المستند في شريط عنوان النافذة في مستند PDF باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente completo per visualizzare il titolo del documento nella barra del titolo della finestra in un documento PDF con Aspose.Words per .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -56,5 +56,5 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pd
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
         
 ```
-باتباع هذه الخطوات ، يمكنك بسهولة عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+Seguendo questi passaggi, puoi visualizzare facilmente il titolo del documento nella barra del titolo della finestra durante la conversione in PDF con Aspose.Words per .NET.
 

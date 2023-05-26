@@ -1,59 +1,59 @@
 ---
-title: حقول النموذج تحصل على مجموعة حقول النموذج
-linktitle: حقول النموذج تحصل على مجموعة حقول النموذج
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد مجموعة حقول النموذج ومعالجتها في مستندات Word باستخدام Aspose.Words for .NET.
+title: Campos de formulario Obtener colección de campos de formulario
+linktitle: Campos de formulario Obtener colección de campos de formulario
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a recuperar y manipular la colección de campos de formulario en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-formfields/form-fields-get-form-fields-collection/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لاسترداد مجموعة حقول النموذج من مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+En este tutorial paso a paso, lo guiaremos sobre cómo usar Aspose.Words para .NET para recuperar la colección de campos de formulario de un documento de Word. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde el sitio web oficial.
 
-## الخطوة 1: تهيئة كائن المستند
+## Paso 1: inicialización del objeto de documento
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق توفير المسار إلى المستند المصدر الذي يحتوي على حقول النموذج:
+ Primero, inicialice el`Document` objeto proporcionando la ruta a su documento de origen que contiene campos de formulario:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## الخطوة 2: استرداد مجموعة حقول النموذج
+## Paso 2: Recuperar la colección de campos de formulario
 
- بعد ذلك ، قم بالوصول إلى`FormFields` ممتلكات`Range` كائن في المستند لاسترداد مجموعة حقول النموذج:
+ A continuación, acceda a la`FormFields` propiedad de la`Range` objeto en el documento para recuperar la colección de campos de formulario:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;
 ```
 
- الآن ، لديك مجموعة حقول النموذج من مستند Word المخزنة في ملف`formFields` عامل.
+ Ahora, tiene la colección de campos de formulario del documento de Word almacenados en el`formFields` variable.
 
-## الخطوة 3: الوصول إلى حقول النموذج ومعالجتها
+## Paso 3: Acceso y manipulación de los campos del formulario
 
-يمكنك التكرار من خلال مجموعة حقول النموذج وتنفيذ عمليات مختلفة في كل حقل نموذج ، مثل الحصول على القيم أو تعيينها ، أو تعديل التنسيق ، أو استخراج المعلومات.
+Puede iterar a través de la colección de campos de formulario y realizar varias operaciones en cada campo de formulario, como obtener o establecer valores, modificar el formato o extraer información.
 
 ```csharp
 foreach (FormField formField in formFields)
 {
-    // الوصول إلى كل حقل نموذج والتعامل معه
-    //...
+    // Acceda y manipule cada campo del formulario
+    // ...
 }
 ```
 
-## الخطوة 4: حفظ المستند
+## Paso 4: Guardar el documento
 
-أخيرًا ، احفظ المستند المعدل إذا لزم الأمر:
+Finalmente, guarde el documento modificado si es necesario:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-هذا كل شيء! لقد نجحت في استرداد مجموعة حقول النموذج من مستند Word باستخدام Aspose.Words for .NET.
+¡Eso es todo! Ha recuperado con éxito la colección de campos de formulario de un documento de Word utilizando Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لحقول النموذج احصل على مجموعة حقول النموذج باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para campos de formulario Obtenga la colección de campos de formulario usando Aspose.Words para .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -61,10 +61,10 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 FormFieldCollection formFields = doc.Range.FormFields;
 
-// الوصول إلى حقول النموذج ومعالجتها حسب الحاجة
-//...
+// Acceda y manipule los campos del formulario según sea necesario
+// ...
 
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Siéntase libre de usar este código en sus propios proyectos y modifíquelo de acuerdo con sus requisitos específicos.

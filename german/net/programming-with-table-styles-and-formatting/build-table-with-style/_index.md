@@ -1,63 +1,63 @@
 ---
-title: بناء الجدول بأسلوب
-linktitle: بناء الجدول بأسلوب
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لبناء طاولة بنمط مخصص باستخدام Aspose.Words for .NET.
+title: Bauen Sie einen Tisch mit Stil
+linktitle: Bauen Sie einen Tisch mit Stil
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Erstellen einer Tabelle mit einem benutzerdefinierten Stil mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-table-styles-and-formatting/build-table-with-style/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لإنشاء جدول مصمم باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية إنشاء جدول بنمط مخصص في مستندات Word باستخدام Aspose.Words for .NET.
+In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess zum Erstellen einer gestalteten Tabelle mit Aspose.Words für .NET. Wir erklären Ihnen den gebündelten C#-Quellcode und stellen Ihnen eine umfassende Anleitung zur Verfügung, die Ihnen hilft, diese Funktion zu verstehen und in Ihren eigenen Projekten zu implementieren. Am Ende dieses Tutorials erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle mit einem benutzerdefinierten Stil in Ihren Word-Dokumenten erstellen.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+Zuerst müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis festlegen. Dies ist der Ort, an dem Sie Ihr bearbeitetes Word-Dokument speichern möchten. Ersetzen Sie „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## Schritt 2: Erstellen Sie ein neues Dokument und einen Dokument-Builder
+ Als nächstes müssen Sie eine neue Instanz von erstellen`Document` Klasse und einen Dokumentkonstruktor für dieses Dokument.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدولًا جديدًا وأدخل خلية
- لبدء بناء الجدول ، نستخدم ملف`StartTable()` طريقة إنشاء المستندات ، ثم نقوم بإدخال خلية في الجدول باستخدام الامتداد`InsertCell()` طريقة.
+## Schritt 3: Erstellen Sie eine neue Tabelle und fügen Sie eine Zelle ein
+ Um mit dem Aufbau der Tabelle zu beginnen, verwenden wir die`StartTable()` Methode des Document Builders, dann fügen wir mit der eine Zelle in die Tabelle ein`InsertCell()` Methode.
 
 ```csharp
 Table table = builder. StartTable();
 builder. InsertCell();
 ```
 
-## الخطوة 4: تحديد نمط الجدول
- الآن يمكننا ضبط نمط الجدول باستخدام امتداد`StyleIdentifier` ملكية. في هذا المثال ، نستخدم النمط "MediumShading1Accent1".
+## Schritt 4: Definieren Sie den Stil der Tabelle
+ Jetzt können wir den Tabellenstil mit festlegen`StyleIdentifier` Eigentum. In diesem Beispiel verwenden wir den Stil „MediumShading1Accent1“.
 
 ```csharp
 table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
 ```
 
-## الخطوة 5: تطبيق خيارات النمط على الجدول
- يمكننا تحديد الخصائص التي يجب تنسيقها بواسطة النمط باستخدام`StyleOptions`خاصية المصفوفة. في هذا المثال ، نطبق الخيارات التالية: "FirstColumn" و "RowBands" و "FirstRow".
+## Schritt 5: Wenden Sie Stiloptionen auf die Tabelle an
+ Mit können wir festlegen, welche Merkmale durch den Stil formatiert werden sollen`StyleOptions`Eigenschaft des Arrays. In diesem Beispiel wenden wir die folgenden Optionen an: „FirstColumn“, „RowBands“ und „FirstRow“.
 
 ```csharp
 table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
 ```
 
-## الخطوة 6: ضبط حجم الجدول تلقائيًا
- لضبط حجم المصفوفة تلقائيًا بناءً على محتوياتها ، نستخدم الامتداد`AutoFit()` الطريقة مع`AutoFitBehavior.AutoFitToContents` سلوك.
+## Schritt 6: Tabellengröße automatisch anpassen
+ Um die Größe des Arrays basierend auf seinem Inhalt automatisch anzupassen, verwenden wir die`AutoFit()` Methode mit der`AutoFitBehavior.AutoFitToContents` Verhalten.
 
 ```csharp
 table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
-## الخطوة 7: أضف محتوى إلى الخلايا
- الآن يمكننا إضافة محتوى إلى الخلايا باستخدام امتداد`Writeln()` و`InsertCell()` طرق منشئ الوثيقة. في هذا المثال ، نضيف رؤوس "العنصر" و "الكمية (
+## Schritt 7: Inhalte zu Zellen hinzufügen
+ Jetzt können wir mit dem Inhalt zu Zellen hinzufügen`Writeln()` Und`InsertCell()` Methoden des Document Builders. In diesem Beispiel fügen wir die Überschriften für „Artikel“ und „Menge“ hinzu (
 
-كغ) "والبيانات المقابلة.
+kg)“ und die entsprechenden Daten.
 
 ```csharp
 builder.Writeln("Item");
@@ -82,29 +82,29 @@ builder.Writeln("50");
 builder. EndRow();
 ```
 
-## الخطوة 8: احفظ المستند المعدل
-أخيرًا ، نحفظ المستند المعدل في ملف. يمكنك اختيار اسم وموقع مناسبين للمستند الناتج.
+## Schritt 8: Speichern Sie das geänderte Dokument
+Abschließend speichern wir das geänderte Dokument in einer Datei. Sie können einen geeigneten Namen und Speicherort für das Ausgabedokument auswählen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
-تهنئة ! لقد قمت الآن ببناء جدول مصمم بشكل مخصص باستخدام Aspose.Words for .NET.
+Herzlichen Glückwunsch! Sie haben jetzt mit Aspose.Words für .NET eine benutzerdefinierte gestaltete Tabelle erstellt.
 
-### نموذج التعليمات البرمجية المصدر لـ Build Table With Style باستخدام Aspose.Words for .NET 
+### Beispielquellcode für Build Table With Style mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Table table = builder.StartTable();
-	// يجب علينا إدراج صف واحد على الأقل أولاً قبل تعيين أي تنسيق للجدول.
+	// Wir müssen zuerst mindestens eine Zeile einfügen, bevor wir eine Tabellenformatierung festlegen.
 	builder.InsertCell();
-	// قم بتعيين نمط الجدول المستخدم بناءً على معرف النمط الفريد.
+	// Legen Sie den verwendeten Tabellenstil basierend auf der eindeutigen Stilkennung fest.
 	table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-	// قم بتطبيق الميزات التي يجب تنسيقها حسب النمط.
+	// Anwenden, welche Features durch den Stil formatiert werden sollen.
 	table.StyleOptions =
 		TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
 	table.AutoFit(AutoFitBehavior.AutoFitToContents);
@@ -131,5 +131,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول مصمم باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تخصيص نمط الجداول الخاصة بك في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية الاحتياجات الخاصة.
+## Abschluss
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET eine gestaltete Tabelle erstellt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie den Stil Ihrer Tabellen in Ihren Word-Dokumenten ganz einfach anpassen. Aspose.Words bietet eine leistungsstarke und flexible API zum Bearbeiten und Formatieren von Tabellen in Ihren Dokumenten. Mit diesem Wissen können Sie die visuelle Darstellung Ihrer Word-Dokumente verbessern und spezifische Anforderungen erfüllen.

@@ -1,30 +1,30 @@
 ---
-title: حذف القسم
-linktitle: حذف القسم
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية إزالة قسم معين من مستند Word باستخدام Aspose.Words for .NET.
+title: Elimina sezione
+linktitle: Elimina sezione
+second_title: Riferimento all'API Aspose.Words per .NET
+description: In questo tutorial, scopri come rimuovere una sezione specifica da un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-section/delete-section/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية حذف قسم معين من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يمكن أن يكون حذف قسم مفيدًا لإعادة ترتيب أو حذف أجزاء معينة من المستند. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In questo tutorial, ti mostreremo come eliminare una sezione specifica di un documento Word utilizzando la libreria Aspose.Words per .NET. L'eliminazione di una sezione può essere utile per riorganizzare o eliminare parti specifiche del documento. Ti guideremo passo dopo passo per aiutarti a comprendere e implementare il codice nel tuo progetto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti elementi:
+- Conoscenza operativa del linguaggio di programmazione C#
+- La libreria Aspose.Words per .NET installata nel tuo progetto
 
-## الخطوة 1: قم بإنشاء مستند ومنشئ
- أولاً ، سننشئ مثيلاً لملف`Document` فئة وما يرتبط بها`DocumentBuilder` المُنشئ لبناء المستند.
+## Passaggio 1: creare un documento e un costruttore
+ Innanzitutto, creeremo un'istanza di`Document` classe e un associato`DocumentBuilder` costruttore per costruire il documento.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: إضافة محتوى وأقسام
- بعد ذلك ، سنستخدم ملف`DocumentBuilder` المُنشئ لإضافة محتوى وأقسام إلى المستند. في هذا المثال ، نضيف سطرين من النص وقسمين.
+## Passaggio 2: aggiungi contenuti e sezioni
+ Successivamente, useremo il`DocumentBuilder` costruttore per aggiungere contenuto e sezioni al documento. In questo esempio, stiamo aggiungendo due righe di testo e due sezioni.
 
 ```csharp
 builder.Writeln("Hello1");
@@ -33,14 +33,14 @@ builder.Writeln("Hello2");
 doc.AppendChild(new Section(doc));
 ```
 
-## الخطوة 3: حذف قسم معين
- لإزالة قسم معين من المستند ، سنستخدم ملف`RemoveAt` طريقة المستند`Sections` المجموعة ، مع تحديد فهرس القسم المراد إزالته.
+## Passaggio 3: eliminare una sezione specifica
+ Per rimuovere una sezione specifica del documento, utilizzeremo il file`RemoveAt` metodo del documento`Sections` raccolta, specificando l'indice della sezione da rimuovere.
 
 ```csharp
 doc.Sections.RemoveAt(0);
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Delete Section باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Elimina sezione utilizzando Aspose.Words per .NET 
 
 ```csharp
 
@@ -54,6 +54,6 @@ doc.Sections.RemoveAt(0);
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية إزالة قسم معين من مستند Word باستخدام Aspose.Words for .NET. يتيح لك حذف الأقسام إعادة ترتيب أجزاء معينة من المستند أو حذفها. لا تتردد في تخصيص هذه الميزة واستخدامها وفقًا لاحتياجاتك الخاصة.
+## Conclusione
+In questo tutorial abbiamo visto come rimuovere una specifica sezione da un documento Word utilizzando Aspose.Words per .NET. L'eliminazione di sezioni consente di riorganizzare o eliminare parti specifiche del documento. Sentiti libero di personalizzare e utilizzare questa funzione in base alle tue esigenze specifiche.
 

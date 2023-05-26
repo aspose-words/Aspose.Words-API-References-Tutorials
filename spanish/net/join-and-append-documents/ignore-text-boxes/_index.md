@@ -1,45 +1,45 @@
 ---
-title: تجاهل مربعات النص
-linktitle: تجاهل مربعات النص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند أثناء تجاهل تنسيق مربع النص باستخدام Aspose.Words for .NET.
+title: Ignorar cuadros de texto
+linktitle: Ignorar cuadros de texto
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a agregar un documento mientras ignora el formato de cuadro de texto usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/join-and-append-documents/ignore-text-boxes/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق مستند مع الحفاظ على تنسيق مربعات النص. يوضح كود المصدر المقدم كيفية إعداد خيارات تنسيق الاستيراد لتضمين مربعات النص أثناء عملية الإلحاق.
+Este tutorial explica cómo usar Aspose.Words para .NET para agregar un documento y conservar el formato de los cuadros de texto. El código fuente proporcionado demuestra cómo configurar las opciones de formato de importación para incluir cuadros de texto durante el proceso de adición.
 
-## الخطوة 1: قم بإعداد المشروع
+## Paso 1: configurar el proyecto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Asegúrese de tener los siguientes requisitos previos:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words para la biblioteca .NET instalada. Puede descargarlo del sitio web oficial de Aspose o usar el administrador de paquetes NuGet para instalarlo.
+- Una ruta de directorio de documentos donde se encuentran los documentos de origen y de destino.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Paso 2: Abra los documentos de origen y destino
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Abra los documentos de origen y de destino con el`Document` constructor de clases. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إعداد خيارات تنسيق الاستيراد
+## Paso 3: Configure las opciones de formato de importación
 
- قم بإنشاء مثيل لـ`ImportFormatOptions` فئة وضبط`IgnoreTextBoxes` ملكية ل`false`. يضمن ذلك تضمين مربعات النص أثناء عملية الإلحاق مع الحفاظ على تنسيقها.
+ Crear una instancia de la`ImportFormatOptions` clase y establecer el`IgnoreTextBoxes` propiedad a`false`. Esto garantiza que los cuadros de texto se incluyan durante el proceso de adición conservando su formato.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 ```
 
-## الخطوة 4: إلحاق محتوى مربع نص
+## Paso 4: agregar el contenido del cuadro de texto
 
- إنشاء`NodeImporter` كائن واستخدمه لاستيراد عقد مربع نص من المستند المصدر إلى المستند الوجهة. كرر خلال كل فقرة في المستند المصدر واستوردها إلى المستند الوجهة.
+ Crear un`NodeImporter` objeto y utilícelo para importar nodos de cuadro de texto desde el documento de origen al documento de destino. Recorre cada párrafo del documento de origen e impórtalo al documento de destino.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -51,25 +51,25 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## الخطوة 5: احفظ المستند الوجهة
+## Paso 5: Guarde el documento de destino
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Finalmente, guarde el documento de destino modificado usando el`Save` metodo de la`Document` objeto.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند مع الحفاظ على تنسيق مربع النص باستخدام Aspose.Words for .NET.
+Esto completa la implementación de agregar un documento mientras se conserva el formato del cuadro de texto usando Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لـ Ignore Text Boxes باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Ignorar cuadros de texto usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//احتفظ بتنسيق مربعات النص المصدر عند الاستيراد.
+	//Mantenga el formato de los cuadros de texto de origen al importar.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

@@ -1,44 +1,44 @@
 ---
-title: رمز مسافة بادئة
-linktitle: رمز مسافة بادئة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام التعليمات البرمجية ذات المسافات البادئة مع دليل Aspose.Words for .NET خطوة بخطوة.
+title: Codice rientrato
+linktitle: Codice rientrato
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come utilizzare il codice indentato con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/indented-code/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام ميزة الشفرة ذات المسافة البادئة مع Aspose.Words for .NET. يتم استخدام التعليمات البرمجية ذات المسافة البادئة لتمثيل كتل التعليمات البرمجية بصريًا بتنسيق محدد.
+In questo esempio, spiegheremo come utilizzare la funzione di codice indentato con Aspose.Words per .NET. Il codice indentato viene utilizzato per rappresentare visivamente blocchi di codice con una formattazione specifica.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Passaggio 1: utilizzo di un generatore di documenti
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Innanzitutto, utilizzeremo un generatore di documenti per aggiungere contenuto al nostro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: أضف نمطًا للرمز ذي المسافة البادئة
+## Passaggio 2: aggiungi uno stile per il codice rientrato
 
- سنضيف نمطًا مخصصًا للشفرة ذات المسافة البادئة باستخدام امتداد`Styles.Add` طريقة`Document` هدف. في هذا المثال ، نقوم بإنشاء نمط يسمى "IndentedCode" للشفرة ذات المسافة البادئة.
+ Aggiungeremo uno stile personalizzato per il codice rientrato utilizzando il`Styles.Add` metodo del`Document` oggetto. In questo esempio, stiamo creando uno stile chiamato "IndentedCode" per il codice indentato.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
 ```
 
-## الخطوة 3: أضف التعليمات البرمجية ذات المسافة البادئة
+## Passaggio 3: aggiungi il codice rientrato
 
-الآن يمكننا إضافة كتلة تعليمات برمجية ذات مسافة بادئة باستخدام النمط المخصص "IndentedCode".
+Ora possiamo aggiungere un blocco di codice indentato utilizzando lo stile personalizzato "IndentedCode".
 
 ```csharp
 builder.Writeln("This is an indented code block");
 ```
 
-### مثال على شفرة المصدر للتعليمات البرمجية ذات المسافات البادئة باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per codice indentato con Aspose.Words per .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
 	Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
@@ -47,5 +47,5 @@ builder.Writeln("This is an indented code block");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الشفرة ذات المسافة البادئة مع Aspose.Words for .NET.
+Congratulazioni! Ora hai imparato come utilizzare la funzione di codice rientrato con Aspose.Words per .NET.
 

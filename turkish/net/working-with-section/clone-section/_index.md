@@ -1,46 +1,46 @@
 ---
-title: قسم الاستنساخ
-linktitle: قسم الاستنساخ
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استنساخ قسم في مستند Word باستخدام Aspose.Words for .NET.
+title: Klon Bölümü
+linktitle: Klon Bölümü
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki bir bölümü nasıl kopyalayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-section/clone-section/
 ---
 
-في هذا البرنامج التعليمي ، سنخبرك بكيفية استنساخ قسم من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يؤدي استنساخ قسم إلى إنشاء نسخة متطابقة من القسم الموجود. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu eğitimde, size Aspose.Words .NET kitaplığını kullanarak bir Word belgesinin bir bölümünü nasıl kopyalayacağınızı anlatacağız. Bir bölümün klonlanması, mevcut bölümün özdeş bir kopyasını oluşturur. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على القسم الذي تريد استنساخه
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
+- Klonlamak istediğiniz bölümü içeren bir Word belgesi
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند واستنساخ القسم
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فصل. ثم سنستخدم ملف`Clone` طريقة استنساخ القسم الأول من المستند.
+## 2. Adım: Belgeyi yükleyin ve bölümü kopyalayın
+ Ardından, Word belgesini bir örneğine yükleyeceğiz.`Document` sınıf. daha sonra kullanacağız`Clone` belgenin ilk bölümünü klonlama yöntemi.
 
 ```csharp
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Document.docx");
 
-// استنساخ القسم
+// Bölümü klonla
 Section cloneSection = doc.Sections[0].Clone();
 ```
 
 
-### عينة من التعليمات البرمجية المصدر لقسم النسخ باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Klon Bölüm için örnek kaynak kodu 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -48,5 +48,5 @@ Section cloneSection = doc.Sections[0].Clone();
 	
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية استنساخ قسم من مستند Word باستخدام Aspose.Words for .NET. يسمح لك استنساخ الأقسام بإنشاء نسخ متطابقة من الأقسام الموجودة في المستند. لا تتردد في تخصيص ميزة الاستنساخ هذه واستخدامها في مشاريعك لمعالجة أقسام مستنداتك وتحريرها بكفاءة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinin bir bölümünün nasıl kopyalanacağını gördük. Bölüm klonlama, bir belgedeki mevcut bölümlerin aynı kopyalarını oluşturmanıza olanak tanır. Belgelerinizin bölümlerini verimli bir şekilde işlemek ve düzenlemek için projelerinizde bu klon özelliğini özelleştirmekten ve kullanmaktan çekinmeyin.

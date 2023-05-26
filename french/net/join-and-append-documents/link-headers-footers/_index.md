@@ -1,89 +1,89 @@
 ---
-title: ربط تذييلات الرؤوس
-linktitle: ربط تذييلات الرؤوس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ربط الرؤوس والتذييلات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Liens En-têtes Pieds de page
+linktitle: Liens En-têtes Pieds de page
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à lier des en-têtes et des pieds de page tout en joignant et en ajoutant des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/join-and-append-documents/link-headers-footers/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Link Headers Footers في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام وإلحاق مستندات Word متعددة أثناء ربط رؤوس وتذييلات المستند المصدر بالقسم السابق في المستند الوجهة.
+Ce didacticiel vous guidera tout au long du processus d'utilisation de la fonctionnalité Link Headers Footers d'Aspose.Words pour .NET. Cette fonctionnalité vous permet de joindre et d'ajouter plusieurs documents Word tout en liant les en-têtes et les pieds de page du document source à la section précédente du document de destination.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words pour .NET installé. Vous pouvez le télécharger depuis le site Web d'Aspose ou l'installer via NuGet.
+2. Visual Studio ou tout autre environnement de développement C#.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Étape 1 : Initialiser les répertoires de documents
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir` variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Étape 2 : Chargez les documents source et de destination
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Ensuite, vous devez charger les documents source et de destination à l'aide de Aspose.Words`Document` classe. Mettez à jour les noms de fichiers dans le`Document` constructeur en fonction des noms de vos documents.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: اضبط المستند المُلحق على الظهور في صفحة جديدة
+## Étape 3 : Définir le document ajouté pour qu'il apparaisse sur une nouvelle page
 
-للتأكد من ظهور المحتوى من المستند المصدر على صفحة جديدة في المستند الوجهة ، تحتاج إلى تعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.NewPage`.
+Pour vous assurer que le contenu du document source apparaît sur une nouvelle page du document de destination, vous devez définir le`SectionStart` propriété de la première section du document source pour`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## الخطوة 4: ربط الرؤوس والتذييلات بالقسم السابق
+## Étape 4 : Liez les en-têtes et les pieds de page à la section précédente
 
- لربط رؤوس وتذييلات المستند المصدر بالمقطع السابق في المستند الوجهة ، يمكنك استخدام ملف`LinkToPrevious` طريقة`HeadersFooters` مجموعة. بالمرور`true` كمعلمة ، يمكنك تجاوز أي رؤوس أو تذييلات موجودة في المستند المصدر.
+ Pour lier les en-têtes et pieds de page du document source à la section précédente du document de destination, vous pouvez utiliser la`LinkToPrevious` méthode de la`HeadersFooters` collection. En passant`true` en tant que paramètre, vous remplacez tous les en-têtes ou pieds de page existants dans le document source.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## Étape 5 : Ajouter le document source au document de destination
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Maintenant, vous pouvez ajouter le document source au document de destination en utilisant le`AppendDocument` méthode de la`Document` classe. Le`ImportFormatMode.KeepSourceFormatting` Le paramètre garantit que la mise en forme de la source est préservée pendant l'opération d'ajout.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## Étape 6 : Enregistrez le document final
 
- أخيرًا ، احفظ المستند المدمج مع الرؤوس والتذييلات المرتبطة باستخدام ملف`Save` طريقة`Document` فصل.
+ Enfin, enregistrez le document fusionné avec les en-têtes et pieds de page liés à l'aide de la`Save` méthode de la`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 ```
 
-### مثال على شفرة المصدر لتذييلات رؤوس الروابط باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Link Headers Footers utilisant Aspose.Words pour .NET 
 
-إليك شفرة المصدر الكاملة لميزة "Link Headers Footers" في C # باستخدام Aspose.Words for .NET:
+Voici le code source complet de la fonctionnalité "Link Headers Footers" en C# en utilisant Aspose.Words pour .NET :
 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بتعيين المستند المُلحق ليظهر في صفحة جديدة.
+	// Définissez le document ajouté pour qu'il apparaisse sur une nouvelle page.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
-	// اربط الرؤوس والتذييلات في المستند المصدر بالمقطع السابق.
-	// سيؤدي هذا إلى تجاوز أي رؤوس أو تذييلات موجودة بالفعل في المستند المصدر.
+	// Liez les en-têtes et pieds de page du document source à la section précédente.
+	// Cela remplacera tous les en-têtes ou pieds de page déjà trouvés dans le document source.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Link Headers Footers باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الرؤوس والتذييلات من المستند المصدر المرتبط بالقسم السابق في المستند الوجهة.
+C'est ça! Vous avez implémenté avec succès la fonctionnalité Link Headers Footers à l'aide de Aspose.Words pour .NET. Le document final contiendra le contenu fusionné avec les en-têtes et pieds de page du document source liés à la section précédente dans le document de destination.

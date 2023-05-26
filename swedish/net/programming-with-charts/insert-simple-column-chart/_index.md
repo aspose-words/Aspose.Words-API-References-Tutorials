@@ -1,44 +1,44 @@
 ---
-title: إدراج مخطط عمودي بسيط
-linktitle: إدراج مخطط عمودي بسيط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مخطط عمودي بسيط في مستند باستخدام Aspose.Words for .NET.
+title: Infoga enkelt kolumndiagram
+linktitle: Infoga enkelt kolumndiagram
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar ett enkelt kolumndiagram i ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-charts/insert-simple-column-chart/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مخطط عمودي بسيط في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وحفظ المستند.
+Denna handledning förklarar hur man använder Aspose.Words för .NET för att infoga ett enkelt kolumndiagram i ett dokument. Den medföljande källkoden visar hur man skapar ett diagram, lägger till seriedata och sparar dokumentet.
 
-## الخطوة 1: قم بإعداد المشروع
+## Steg 1: Konfigurera projektet
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Se till att du har följande förutsättningar:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från den officiella Aspose-webbplatsen eller använda NuGet-pakethanteraren för att installera den.
+- En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط عمودي في المستند. يمكنك تحديد أنواع وأحجام مخططات مختلفة حسب متطلباتك.
+ Använd sedan`InsertChart` metod för`DocumentBuilder` för att infoga ett kolumndiagram i dokumentet. Du kan ange olika diagramtyper och storlekar enligt dina krav.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Steg 3: Lägg till seriedata i diagrammet
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف سلاسل متعددة بفئتين لكل منهما.
+Lägg till seriedata i diagrammet. I det här exemplet lägger vi till flera serier med två kategorier vardera.
 
 ```csharp
 ChartSeriesCollection seriesColl = chart.Series;
@@ -53,34 +53,34 @@ seriesColl.Add("Aspose Series 4", categories, new double[] { 7, 8 });
 seriesColl.Add("Aspose Series 5", categories, new double[] { 9, 10 });
 ```
 
-## الخطوة 4: احفظ المستند
+## Steg 4: Spara dokumentet
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Slutligen sparar du dokumentet i den angivna katalogen med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مخطط عمودي بسيط باستخدام Aspose.Words for .NET.
+Detta slutför implementeringen av att infoga ett enkelt kolumndiagram med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لإدراج مخطط عمودي بسيط باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Insert Simple Column Chart med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// يمكنك تحديد أنواع وأحجام مختلفة من المخططات.
+	// Du kan ange olika diagramtyper och storlekar.
 	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 	Chart chart = shape.Chart;
 	ChartSeriesCollection seriesColl = chart.Series;
 	Console.WriteLine(seriesColl.Count);
-	// حذف السلاسل التي تم إنشاؤها بشكل افتراضي.
+	// Ta bort standardgenererade serier.
 	seriesColl.Clear();
-	// قم بإنشاء مصفوفة أسماء الفئات ، في هذا البرنامج التعليمي لدينا فئتان.
+	// Skapa kategorinamn array, i den här handledningen har vi två kategorier.
 	string[] categories = new string[] { "Category 1", "Category 2" };
-	// الرجاء ملاحظة أنه يجب ألا تكون صفائف البيانات فارغة ويجب أن تكون المصفوفات بنفس الحجم.
+	// Observera att datamatriser inte får vara tomma och matriser måste ha samma storlek.
 	seriesColl.Add("Aspose Series 1", categories, new double[] { 1, 2 });
 	seriesColl.Add("Aspose Series 2", categories, new double[] { 3, 4 });
 	seriesColl.Add("Aspose Series 3", categories, new double[] { 5, 6 });

@@ -1,28 +1,28 @@
 ---
-title: استخدام أجزاء مهام ملحق الويب
-linktitle: استخدام أجزاء مهام ملحق الويب
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لاستخدام أجزاء مهام ملحق الويب مع Aspose.Words for .NET.
+title: 使用 Web 扩展任务面板
+linktitle: 使用 Web 扩展任务面板
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Web 扩展任务面板和 Aspose.Words for .NET 的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-webextension/using-web-extension-task-panes/
 ---
 
-تقدم هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام أجزاء مهمة امتداد الويب مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية إضافة أجزاء المهام وتكوينها لملحقات الويب.
+本文提供了有关如何将 Web 扩展任务窗格与 Aspose.Words for .NET 一起使用的分步指南。我们将详细解释代码的每一部分。在本教程结束时，您将能够了解如何为 Web 扩展添加和配置任务窗格。
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+在开始之前，请确保您已经在项目中安装并配置了 Aspose.Words for .NET 库。您可以在 Aspose 网站上找到库和安装说明。
 
-## الخطوة 1: تحديد دليل المستند
+## 第一步：定义文档目录
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث تريد حفظ المستند الذي تم إنشاؤه. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+首先，您需要定义要保存生成的文档的目录路径。代替`"YOUR DOCUMENT DIRECTORY"`使用文档目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء جزء مهام وتكوينه
+## 步骤 2：创建和配置任务窗格
 
- نقوم بإنشاء ملف`TaskPane` الكائن وإضافته إلى المستند`s `مجموعة WebExtensionTaskPanes`. بعد ذلك ، نقوم بتكوين خصائص جزء المهام ، مثل حالة الإرساء والرؤية والعرض.
+我们创造一个`TaskPane`对象并将其添加到文档中`s `WebExtensionTaskPanes 集合。接下来，我们配置任务窗格的属性，例如停靠状态、可见性和宽度。
 
 ```csharp
 Document doc = new Document();
@@ -35,7 +35,7 @@ taskPane.IsVisible = true;
 taskPane.Width = 300;
 ```
 
-قمنا أيضًا بتعيين بيانات اعتماد امتداد الويب بما في ذلك معرف الكتالوج والإصدار ونوع المتجر.
+我们还设置了 Web 扩展凭据，包括目录 ID、版本和商店类型。
 
 ```csharp
 taskPane.WebExtension.Reference.Id = "wa102923726";
@@ -44,7 +44,7 @@ taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
 taskPane.WebExtension.Reference.Store = "th-TH";
 ```
 
-أخيرًا ، نضيف خصائص وارتباطات إلى امتداد الويب.
+最后，我们将属性和绑定添加到 Web 扩展。
 
 ```csharp
 taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
@@ -52,17 +52,17 @@ taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_150
 	WebExtensionBindingType.Text, "194740422"));
 ```
 
-## الخطوة 3: احفظ المستند وقم بتحميله
+## 第 3 步：保存和加载文档
 
-نحفظ المستند مع أجزاء المهام المكونة في الدليل المحدد.
+我们使用在指定目录中配置的任务窗格保存文档。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## الخطوة 4: عرض معلومات أجزاء المهام
+## 步骤 4：显示任务窗格信息
 
-بعد ذلك ، نقوم بتحميل المستند وعرض معلومات مصدر جزء المهام.
+接下来，我们加载文档并显示任务窗格源信息。
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
@@ -77,14 +77,14 @@ Console.WriteLine($"Vendor: \"{reference.Store}\", version: \"{reference.Version
 }
 ```
 
-هذا كل شئ ! لقد نجحت في استخدام أجزاء مهام ملحق الويب مع Aspose.Words for .NET.
+就这样 ！您已经成功地将 Web 扩展任务窗格与 Aspose.Words for .NET 结合使用。
 
-### مثال على شفرة المصدر لاستخدام أجزاء مهام امتداد الويب مع Aspose.Words for .NET
+### 将 Web 扩展任务窗格与 Aspose.Words for .NET 一起使用的示例源代码
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 

@@ -1,41 +1,41 @@
 ---
-title: وصلة
-linktitle: وصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الروابط مع Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Collegamento
+linktitle: Collegamento
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire collegamenti con Aspose.Words per .NET. Guida passo dopo passo.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/link/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة الروابط مع Aspose.Words for .NET. تُستخدم الروابط لإنشاء مراجع قابلة للنقر لمواقع الويب أو المستندات الأخرى.
+In questo esempio, ti illustreremo come utilizzare la funzionalità dei collegamenti con Aspose.Words per .NET. I collegamenti vengono utilizzati per creare riferimenti cliccabili a siti Web o altri documenti.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Passaggio 1: utilizzo di un generatore di documenti
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Innanzitutto, utilizzeremo un generatore di documenti per aggiungere contenuto al nostro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة الثانية: إدخال ارتباط
+## Passaggio 2: Inserimento di un collegamento
 
- يمكننا إدراج ارتباط باستخدام ملف`Insertlink` طريقة منشئ الوثيقة. نحتاج إلى تحديد نص الرابط ، هنا "Aspose" ، بالإضافة إلى عنوان URL المقصود.
+ Possiamo inserire un collegamento utilizzando il file`Insertlink` metodo del generatore di documenti. Dobbiamo specificare il testo del collegamento, qui "Aspose", così come l'URL di destinazione.
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com "، خطأ) ؛
+builder.Insertlink("Aspose", "https://www.aspose.com", falso);
 ```
 
-### مثال على شفرة المصدر للروابط مع Aspose.Words for .NET
+### Codice sorgente di esempio per collegamenti con Aspose.Words per .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// أدخل ارتباط.
-	builder.Insertlink("Aspose", "https://www.aspose.com "، خطأ) ؛
+	// Inserisci collegamento.
+	builder.Insertlink("Aspose", "https://www.aspose.com", falso);
             
 ```
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الروابط مع Aspose.Words for .NET.
+Congratulazioni! Ora hai imparato come utilizzare la funzionalità dei collegamenti con Aspose.Words per .NET.
 

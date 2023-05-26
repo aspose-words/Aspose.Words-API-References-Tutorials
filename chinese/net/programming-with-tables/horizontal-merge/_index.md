@@ -1,35 +1,35 @@
 ---
-title: دمج أفقي
-linktitle: دمج أفقي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية دمج الخلايا أفقيًا في جدول Word باستخدام Aspose.Words for .NET.
+title: 水平合并
+linktitle: 水平合并
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 水平合并 Word 表格中的单元格。
 type: docs
 weight: 10
 url: /zh/net/programming-with-tables/horizontal-merge/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية دمج الخلايا أفقيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من دمج الخلايا أفقيًا في جداول Word برمجيًا.
+在本教程中，我们将学习如何使用 Aspose.Words for .NET 水平合并 Word 文档中表格中的单元格。我们将按照逐步指南来理解代码并实现此功能。在本教程结束时，您将能够以编程方式水平合并 Word 表格中的单元格。
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## 第 1 步：项目设置
+1. 启动 Visual Studio 并创建一个新的 C# 项目。
+2. 添加对 Aspose.Words for .NET 库的引用。
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع الجدول والخلايا ، نحتاج إلى إنشاء مستند جديد وتهيئة منشئ المستندات. اتبع هذه الخطوات:
+## 第 2 步：创建文档并初始化文档生成器
+要开始使用表格和单元格，我们需要创建一个新文档并初始化文档生成器。按着这些次序：
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وتهيئة منشئ المستند
+//创建文档并初始化文档生成器
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+请务必将“您的文档目录”替换为您的文档目录的实际路径。
 
-## الخطوة 3: بناء الجدول مع الدمج الأفقي للخلايا
-بعد ذلك ، سنبني الجدول ونطبق دمج الخلايا الأفقي باستخدام الخصائص التي توفرها Aspose.Words لـ .NET. استخدم الكود التالي:
+## 第 3 步：通过水平合并单元格构建表格
+接下来，我们将构建表格并使用 Aspose.Words for .NET 提供的属性应用水平单元格合并。使用以下代码：
 
 ```csharp
 builder. InsertCell();
@@ -37,7 +37,7 @@ builder.CellFormat.HorizontalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
 builder. InsertCell();
 builder.CellFormat.HorizontalMerge = CellMerge.Previous;
-// تم دمج هذه الخلية مع الخلية السابقة ويجب أن تكون فارغة.
+//此单元格与前一个单元格合并，应为空。
 builder. EndRow();
 
 builder. InsertCell();
@@ -49,10 +49,10 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- هنا نستخدم منشئ المستندات لبناء الجدول وتعيين خصائص الدمج الأفقي للخلية. نحن نستخدم ال`HorizontalMerge` ممتلكات`CellFormat` لتحديد نوع الدمج الأفقي المراد تطبيقه على كل خلية. استخدام`CellMerge.First` نقوم بدمج الخلية الأولى مع الأخرى التالية ، أثناء استخدام`CellMerge.Previous` نقوم بدمج الخلية الحالية مع الخلية السابقة.`CellMerge.None` يشير إلى أنه لا ينبغي دمج الخلية.
+这里我们使用文档构建器来构建表格并设置单元格水平合并属性。我们使用`HorizontalMerge`的财产`CellFormat`对象指定要应用于每个单元格的水平合并类型。使用`CellMerge.First`我们将第一个单元格与下一个单元格合并，同时使用`CellMerge.Previous`我们将当前单元格与前一个单元格合并。`CellMerge.None`指示不应合并该单元格。
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع دمج الخلايا أفقيًا. استخدم الكود التالي:
+## 第 4 步：保存修改后的文档
+最后，我们需要将修改后的文档与水平合并的单元格一起保存。使用以下代码：
 
 ```csharp
 doc.Save(data
@@ -60,12 +60,12 @@ doc.Save(data
 Dir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+请务必为输出文档指定正确的路径和文件名。
 
-### عينة من التعليمات البرمجية المصدر للدمج الأفقي باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的水平合并示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -74,7 +74,7 @@ Dir + "WorkingWithTables.HorizontalMerge.docx");
 	builder.CellFormat.HorizontalMerge = CellMerge.First;
 	builder.Write("Text in merged cells.");
 	builder.InsertCell();
-	// تم دمج هذه الخلية مع الخلية السابقة ويجب أن تكون فارغة.
+	//此单元格已合并到前一个单元格，应为空。
 	builder.CellFormat.HorizontalMerge = CellMerge.Previous;
 	builder.EndRow();
 	builder.InsertCell();
@@ -87,5 +87,5 @@ Dir + "WorkingWithTables.HorizontalMerge.docx");
 	doc.Save(dataDir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية دمج الخلايا أفقيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تطبيق دمج الخلايا الأفقية في جداول Word برمجيًا. تتيح لك هذه الميزة إنشاء تخطيطات جدول أكثر تعقيدًا وتنظيم بياناتك بشكل أفضل.
+## 结论
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 水平合并 Word 文档中表格中的单元格。通过遵循此分步指南并实施提供的 C# 代码，您可以以编程方式在 Word 表格中应用水平单元格合并。此功能允许您创建更复杂的表格布局并更好地组织数据。

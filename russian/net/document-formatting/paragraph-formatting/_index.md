@@ -1,29 +1,29 @@
 ---
-title: تنسيق الفقرة
-linktitle: تنسيق الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق التنسيق المخصص على فقراتك باستخدام Aspose.Words for .NET.
+title: Форматирование абзаца
+linktitle: Форматирование абзаца
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как применить пользовательское форматирование к абзацам с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/document-formatting/paragraph-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة تنسيق الفقرة مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+В этом руководстве мы расскажем вам, как использовать функцию форматирования абзаца с Aspose.Words для .NET. Выполните следующие шаги, чтобы понять исходный код и применить изменения.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Шаг 1: Создание и настройка документа
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Для начала создайте новый документ и связанный с ним объект DocumentBuilder. Вот как:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تنسيق الفقرة
+## Шаг 2: Форматирование абзаца
 
-سنقوم الآن بتطبيق التنسيق على الفقرة باستخدام الخصائص المتاحة في كائن ParagraphFormat من كائن DocumentBuilder. إليك الطريقة:
+Теперь мы применим форматирование к абзацу, используя свойства, доступные в объекте ParagraphFormat объекта DocumentBuilder. Вот как:
 
 ```csharp
 ParagraphFormat paragraphFormat = builder.ParagraphFormat;
@@ -33,9 +33,9 @@ paragraphFormat. RightIndent = 50;
 paragraphFormat. SpaceAfter = 25;
 ```
 
-## الخطوة 3: حفظ المستند
+## Шаг 3: Сохранение документа
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ После вставки поля формы ввода текста сохраните документ в нужное место с помощью кнопки`Save` метод. Обязательно укажите правильный путь к файлу:
 
 ```csharp
 builder.Writeln(
@@ -46,14 +46,14 @@ builder.Writeln(
 doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
 ```
 
-### مثال على شفرة المصدر لتنسيق الفقرة باستخدام Aspose.Words for .NET
+### Пример исходного кода для форматирования абзаца с использованием Aspose.Words для .NET
 
-فيما يلي رمز المصدر الكامل لميزة تنسيق الفقرة باستخدام Aspose.Words for .NET:
+Вот полный исходный код функции форматирования абзаца с Aspose.Words для .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Путь к каталогу документов.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -73,5 +73,5 @@ doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
 	
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تطبيق تنسيقات مختلفة على فقراتك باستخدام Aspose.Words for .NET.
+С помощью этого кода вы сможете применять различное форматирование к своим абзацам, используя Aspose.Words для .NET.
 

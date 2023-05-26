@@ -1,52 +1,52 @@
 ---
-title: حذف محتوى رأس التذييل
-linktitle: حذف محتوى رأس التذييل
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية إزالة محتوى الرأس والتذييل من مستند Word باستخدام Aspose.Words for .NET.
+title: Löschen Sie den Inhalt der Kopf- und Fußzeile
+linktitle: Löschen Sie den Inhalt der Kopf- und Fußzeile
+second_title: Aspose.Words für .NET API-Referenz
+description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Kopf- und Fußzeileninhalte aus einem Word-Dokument entfernen.
 type: docs
 weight: 10
 url: /de/net/working-with-section/delete-header-footer-content/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية إزالة محتوى الرأس والتذييل من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يمكن أن تكون إزالة المحتوى من الرؤوس والتذييلات مفيدة عندما تريد إعادة تعيين هذه العناصر أو إزالتها من المستند. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In diesem Tutorial zeigen wir Ihnen, wie Sie Kopf- und Fußzeileninhalte mithilfe der Aspose.Words-Bibliothek für .NET aus einem Word-Dokument entfernen. Das Entfernen von Inhalten aus Kopf- und Fußzeilen kann nützlich sein, wenn Sie diese Elemente zurücksetzen oder aus Ihrem Dokument entfernen möchten. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على الرؤوس والتذييلات التي تريد إزالتها
+## Voraussetzungen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
+- Grundkenntnisse der Programmiersprache C#
+- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
+- Ein Word-Dokument mit Kopf- und Fußzeilen, die Sie entfernen möchten
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+ Zuerst müssen Sie den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments festlegen. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وانتقل إلى القسم
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فصل. سنصل إلى القسم الأول من المستند باستخدام الفهرس 0.
+## Schritt 2: Laden Sie das Dokument und gehen Sie zum Abschnitt
+ Als nächstes laden wir das Word-Dokument in eine Instanz von`Document` Klasse. Wir greifen über den Index 0 auf den ersten Abschnitt des Dokuments zu.
 
 ```csharp
-//قم بتحميل المستند
+//Laden Sie das Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
-// قم بالوصول إلى القسم
+// Greifen Sie auf den Abschnitt zu
 Section section = doc.Sections[0];
 ```
 
-## الخطوة 3: حذف محتوى الرأس والتذييل
- لإزالة محتوى الرأس والتذييل من القسم ، سنستخدم الامتداد`ClearHeadersFooters` طريقة.
+## Schritt 3: Kopf- und Fußzeileninhalt löschen
+ Um den Inhalt der Kopf- und Fußzeile aus dem Abschnitt zu entfernen, verwenden wir die`ClearHeadersFooters` Methode.
 
 ```csharp
 section.ClearHeadersFooters();
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Delete Header Footer Content باستخدام Aspose.Words for .NET 
+### Beispielquellcode zum Löschen von Kopf- und Fußzeileninhalten mit Aspose.Words für .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -55,5 +55,5 @@ section.ClearHeadersFooters();
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية إزالة محتوى الرأس والتذييل من مستند Word باستخدام Aspose.Words for .NET. تتيح لك إزالة المحتوى من الرؤوس والتذييلات إعادة تعيين هذه العناصر المحددة أو إزالتها من المستند. لا تتردد في تخصيص هذه الميزة واستخدامها وفقًا لاحتياجاتك الخاصة.
+## Abschluss
+In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET Kopf- und Fußzeileninhalte aus einem Word-Dokument entfernt. Durch das Entfernen von Inhalten aus Kopf- und Fußzeilen können Sie diese spezifischen Elemente zurücksetzen oder aus Ihrem Dokument entfernen. Sie können diese Funktion gerne an Ihre spezifischen Bedürfnisse anpassen und nutzen.

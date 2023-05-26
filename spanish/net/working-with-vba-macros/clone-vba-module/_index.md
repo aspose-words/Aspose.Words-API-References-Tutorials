@@ -1,60 +1,60 @@
 ---
-title: وحدة استنساخ Vba
-linktitle: وحدة استنساخ Vba
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية استنساخ وحدة VBA من مستند Word باستخدام Aspose.Words for .NET.
+title: Clonar Módulo Vba
+linktitle: Clonar Módulo Vba
+second_title: Referencia de API de Aspose.Words para .NET
+description: En este tutorial, aprenda a clonar un módulo de VBA desde un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-vba-macros/clone-vba-module/
 ---
 
-في هذا البرنامج التعليمي ، سنخبرك بكيفية استنساخ وحدة VBA من مستند Word باستخدام وحدات ماكرو باستخدام مكتبة Aspose.Words لـ .NET. يسمح لك استنساخ وحدة VBA النمطية بإعادة استخدام أو نسخ كود VBA من مستند مصدر إلى مستند آخر. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+En este tutorial, le diremos cómo clonar un módulo VBA de un documento de Word con macros utilizando la biblioteca Aspose.Words para .NET. La clonación de un módulo de VBA le permite reutilizar o copiar el código de VBA de un documento de origen a otro documento. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على مشروع VBA مع الوحدة النمطية التي تريد استنساخها
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes elementos:
+- Un conocimiento práctico del lenguaje de programación C#
+- La biblioteca Aspose.Words para .NET instalada en su proyecto
+- Un documento de Word que contiene un proyecto VBA con el módulo que desea clonar
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+ Primero, debe establecer la ruta del directorio en la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta adecuada.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل مستند المصدر
-بعد ذلك ، سنقوم بتحميل مستند Word المصدر ، والذي يحتوي على مشروع VBA والوحدة التي نريد استنساخها.
+## Paso 2: Cargue el documento de origen
+A continuación, cargaremos el documento fuente de Word, que contiene el proyecto VBA y el módulo que queremos clonar.
 
 ```csharp
-// قم بتحميل المستند المصدر
+// Cargue el documento de origen
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## الخطوة 3: قم بإنشاء مستند جديد باستخدام مشروع VBA واستنساخ الوحدة النمطية
-سننشئ مستندًا جديدًا بمشروع VBA فارغ وننسخ الوحدة المحددة من المستند المصدر.
+## Paso 3: Cree un nuevo documento con el proyecto VBA y clone el módulo
+Crearemos un nuevo documento con un proyecto de VBA vacío y clonaremos el módulo especificado del documento de origen.
 
 ```csharp
-// قم بإنشاء مستند جديد بمشروع VBA فارغ
+// Cree un nuevo documento con un proyecto de VBA vacío
 Document destDoc = new Document { VbaProject = new VbaProject() };
 
-// استنساخ الوحدة
+// Clonar el módulo
 VbaModule copyModule = doc.VbaProject.Modules["Module1"].Clone();
 destDoc.VbaProject.Modules.Add(copyModule);
 ```
 
-## الخطوة 4: احفظ المستند الوجهة
-أخيرًا ، سنحفظ المستند الوجهة مع وحدة VBA المستنسخة في ملف.
+## Paso 4: Guarde el documento de destino
+Finalmente, guardaremos el documento de destino con el módulo VBA clonado en un archivo.
 
 ```csharp
 destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 ```
 
-### نموذج لشفرة مصدر لـ Clone Vba Module باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Clone Vba Module usando Aspose.Words para .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "VBA project.docm");
@@ -66,5 +66,5 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية استنساخ وحدة VBA من مستند Word باستخدام وحدات ماكرو باستخدام Aspose.Words for .NET. يسمح لك نسخ وحدات VBA النمطية بإعادة استخدام تعليمات VBA البرمجية بسهولة من مستند مصدر واحد في مستند آخر. لا تتردد في استخدام هذه الميزة لتنظيم وإدارة وحدات الماكرو الخاصة بك في مستندات مختلفة.
+## Conclusión
+En este tutorial, vimos cómo clonar un módulo VBA de un documento de Word con macros usando Aspose.Words para .NET. La clonación de módulos VBA le permite reutilizar fácilmente el código VBA de un documento fuente en otro documento. Siéntase libre de usar esta función para organizar y administrar sus macros en diferentes documentos.

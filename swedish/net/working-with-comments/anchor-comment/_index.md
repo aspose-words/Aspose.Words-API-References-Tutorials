@@ -1,21 +1,21 @@
 ---
-title: تعليق المرساة
-linktitle: تعليق المرساة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إرساء ردود التعليقات على نص معين في مستندات Word باستخدام Aspose.Words for .NET.
+title: Ankarekommentar
+linktitle: Ankarekommentar
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du förankrar kommentarsvar till specifik text i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-comments/anchor-comment/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إرساء ردود التعليقات على نص معين في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من ربط التعليقات بنص محدد في مستنداتك.
+den här omfattande handledningen kommer du att lära dig hur du förankrar kommentarsvar till specifik text i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna associera kommentarer med specifik text i dina dokument.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Förutsättningar
+Innan vi börjar, se till att du har följande förutsättningar:
+- Aspose.Words för .NET-biblioteket installerat på ditt system.
 
-## الخطوة 1: إنشاء مستند جديد وإضافة نص
-للبدء ، أنشئ مستندًا جديدًا باستخدام فئة المستند وأضف النص المطلوب:
+## Steg 1: Skapa ett nytt dokument och lägg till text
+För att börja, skapa ett nytt dokument med klassen Document och lägg till önskad text:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,8 +36,8 @@ para2.AppendChild(run4);
 doc.FirstSection.Body.AppendChild(para2);
 ```
 
-## الخطوة 2: قم بإنشاء تعليق وإضافة نطاق تعليق
-بعد ذلك ، قم بإنشاء تعليق واربطه بنص معين باستخدام كائني CommentRangeStart و CommentRangeEnd:
+## Steg 2: Skapa en kommentar och lägg till kommentarintervall
+Skapa sedan en kommentar och associera den med specifik text med CommentRangeStart och CommentRangeEnd-objekt:
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
@@ -52,24 +52,24 @@ run3.ParentNode.InsertAfter(commentRangeEnd, run3);
 commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إرساء التعليق على نص معين ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Steg 3: Spara dokumentet
+Efter att ha förankrat kommentaren till specifik text, spara dokumentet till en fil med hjälp av Spara-metoden för klassen Document:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 ```
 
-### مثال رمز مصدر للتعليق المرساة الرد باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لترسيخ الرد على التعليق باستخدام Aspose.Words for .NET:
+### Exempel på källkod för Anchor Comment Svara med Aspose.Words för .NET
+Här är den fullständiga källkoden för att förankra ett kommentarsvar med Aspose.Words för .NET:
 
 ```csharp
 
-    // قم بإنشاء مثيل من المستند.
+    // Skapa en instans av dokumentet.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";        
 	Document doc = new Document();
 
-    // إنشاء ثلاثة كائنات تشغيل.
-    //يقوم أول اثنان بتشغيل بعض النصوص ، بينما يقوم الثالث بتشغيل تعليق
+    // Skapa tre Kör-objekt.
+    //De två första kör lite text, medan den tredje kör en kommentar
 
 	Paragraph para1 = new Paragraph(doc);
 	Run run1 = new Run(doc, "Some ");
@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 	comment.Paragraphs.Add(new Paragraph(doc));
 	comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 
-	// يحتوي كل كائن تشغيل على كائن CommentRangeStart و CommentRangeEnd مرتبط.
+	// Vart och ett av Kör-objekten har ett associerat CommentRangeStart- och CommentRangeEnd-objekt.
 
 	CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
 	CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);

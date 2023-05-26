@@ -1,51 +1,51 @@
 ---
-title: تعيين إعدادات الخط الاحتياطي
-linktitle: تعيين إعدادات الخط الاحتياطي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين إعدادات استبدال الخطوط في Aspose.Words for .NET وتخصيص استبدال الخط في مستندات Word.
+title: Yazı Tipi Yedek Ayarlarını Ayarlayın
+linktitle: Yazı Tipi Yedek Ayarlarını Ayarlayın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'te yazı tipi değiştirme ayarlarını nasıl yapacağınızı ve Word belgelerinizde yazı tipi değiştirmeyi nasıl özelleştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-font-fallback-settings/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين إعدادات استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. تسمح لك إعدادات استبدال الخط بتحديد الخطوط البديلة لاستخدامها عندما لا تكون الخطوط المحددة متاحة.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi değiştirme ayarlarını nasıl yapacağınızı göstereceğiz. Yazı tipi değiştirme ayarları, belirtilen yazı tipleri mevcut olmadığında kullanılacak değiştirme yazı tiplerini belirtmenize olanak tanır.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+Dizin yolunu Word belgenizin konumuna ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل إعدادات استبدال الخط
- قم بإنشاء مثيل لـ`FontSettings` فئة واستخدام`Load`طريقة لتحميل إعدادات تجاوز الخط من ملف XML. يجب أن يحتوي ملف XML المحدد على قواعد استبدال الخط المراد استخدامها.
+## 2. Adım: Yazı tipi değiştirme ayarlarını yükleyin
+ örneğini oluşturun`FontSettings` sınıflandırın ve kullanın`Load`yazı tipi geçersiz kılma ayarlarını bir XML dosyasından yükleme yöntemi. Belirtilen XML dosyası, kullanılacak yazı tipi değiştirme kurallarını içermelidir.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
 ```
 
-## الخطوة 3: تطبيق إعدادات استبدال الخط
- إقران إعدادات استبدال الخط بالمستند من خلال تخصيصها للمستند`FontSettings` ملكية.
+## 3. Adım: Yazı tipi değiştirme ayarlarını uygulayın
+ Yazı tipi değiştirme ayarlarını belgeye atayarak belgeyle ilişkilendirin.`FontSettings` mülk.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند باستخدام ملف`Save` طريقة`Document` بالمسار واسم الملف المناسبين.
+## 4. Adım: Belgeyi kaydedin
+ kullanarak belgeyi kaydedin.`Save` yöntemi`Document` uygun yol ve dosya adıyla.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Font Fallback Settings باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Font Fallback Ayarlarını Ayarlamak için örnek kaynak kodu 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -55,5 +55,5 @@ doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تعيين إعدادات استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. جرب قواعد مختلفة لاستبدال الخطوط للتأكد من تناسق وثيقتك ، حتى عندما لا تكون الخطوط المحددة متاحة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi değiştirme ayarlarını nasıl yapacağınızı öğrendiniz. Belirtilen yazı tipleri mevcut olmadığında bile belgenizin tutarlı görünmesini sağlamak için farklı yazı tipi değiştirme kurallarını deneyin.

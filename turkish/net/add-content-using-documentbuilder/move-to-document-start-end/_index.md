@@ -1,71 +1,71 @@
 ---
-title: الانتقال إلى المستند بداية النهاية
-linktitle: الانتقال إلى المستند بداية النهاية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للانتقال إلى بداية المستند ونهايته في مستندات Word باستخدام هذا الدليل التفصيلي.
+title: Belge Başlangıç Sonuna Taşı
+linktitle: Belge Başlangıç Sonuna Taşı
+second_title: Aspose.Words for .NET API Referansı
+description: Bu adım adım kılavuz ile Word belgelerinde belge başlangıcına ve bitişine gitmek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Document Start / End في Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تتيح للمطورين إنشاء مستندات Word وتعديلها وتحويلها برمجيًا. تتيح لنا ميزة Move To Document Start / End إمكانية التنقل إلى بداية المستند أو نهايته باستخدام فئة DocumentBuilder.
+Bu örnekte, Aspose.Words for .NET'in Belge Başlangıcına/Bitişine Taşı özelliğini inceleyeceğiz. Aspose.Words, geliştiricilerin Word belgelerini program aracılığıyla oluşturmasına, değiştirmesine ve dönüştürmesine olanak sağlayan güçlü bir belge işleme kitaplığıdır. Belge Başlangıcına/Bitişine Taşı özelliği, DocumentBuilder sınıfını kullanarak bir belgenin başına veya sonuna gitmemizi sağlar.
 
-## شرح شفرة المصدر خطوة بخطوة
+## Kaynak kodunu adım adım açıklama
 
-دعنا ننتقل إلى التعليمات البرمجية المصدر خطوة بخطوة لفهم كيفية استخدام ميزة Move To Document Start / End باستخدام Aspose.Words for .NET.
+Aspose.Words for .NET kullanarak Belge Başlangıcına/Bitirine Taşı özelliğinin nasıl kullanılacağını anlamak için kaynak kodunu adım adım inceleyelim.
 
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## 1. Adım: Belge ve belge oluşturucuyu başlatma
 
-بعد ذلك ، قم بتهيئة كائنات Document و DocumentBuilder:
+Ardından, Document ve DocumentBuilder nesnelerini başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: الانتقال إلى بداية المستند
+## 2. Adım: Belge başlangıcına gitme
 
-لنقل موضع المؤشر إلى بداية المستند ، استخدم طريقة MoveToDocumentStart لفئة DocumentBuilder:
+İmleç konumunu belgenin başına taşımak için DocumentBuilder sınıfının MoveToDocumentStart yöntemini kullanın:
 
 ```csharp
 builder.MoveToDocumentStart();
 ```
 
-## الخطوة 3: الانتقال إلى نهاية المستند
+## 3. Adım: Belgenin sonuna gitme
 
-لتحريك موضع المؤشر إلى نهاية المستند ، استخدم طريقة MoveToDocumentEnd لفئة DocumentBuilder:
+İmleç konumunu belgenin sonuna taşımak için DocumentBuilder sınıfının MoveToDocumentEnd yöntemini kullanın:
 
 ```csharp
 builder.MoveToDocumentEnd();
 ```
 
-## الخطوة 4: إخراج موضع المؤشر
+## Adım 4: İmleç konumunun çıktısını alma
 
-يمكنك إخراج موضع المؤشر باستخدام Console.WriteLine أو أي طريقة أخرى مرغوبة. على سبيل المثال:
+Console.WriteLine veya istediğiniz başka bir yöntemi kullanarak imleç konumunun çıktısını alabilirsiniz. Örneğin:
 
 ```csharp
 Console.WriteLine("\nThis is the beginning of the document.");
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-### مثال على شفرة المصدر لـ Move To Document Start / End باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Document Start/End'e Taşı için örnek kaynak kodu
 
 ```csharp
 	
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// انقل موضع المؤشر إلى بداية المستند.
+	// İmleç konumunu belgenizin başına taşıyın.
 	builder.MoveToDocumentStart();
 	Console.WriteLine("\nThis is the beginning of the document.");
 
-	// انقل موضع المؤشر إلى نهاية المستند.
+	// İmleç konumunu belgenizin sonuna taşıyın.
 	builder.MoveToDocumentEnd();
 	Console.WriteLine("\nThis is the end of the document.");
 	
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا المثال ، اكتشفنا ميزة Move To Document Start / End في Aspose.Words for .NET. تعلمنا كيفية الانتقال إلى بداية ونهاية المستند باستخدام فئة DocumentBuilder. هذه الميزة مفيدة عند العمل برمجيًا مع مستندات Word والحاجة إلى معالجة المحتوى أو إدراجه في مواضع محددة داخل المستند.
+Bu örnekte, Aspose.Words for .NET'in Belge Başlangıcına/Bitişine Taşı özelliğini inceledik. DocumentBuilder sınıfını kullanarak bir belgenin başına ve sonuna nasıl gidileceğini öğrendik. Bu özellik, Word belgeleriyle programlı olarak çalışırken ve belgedeki belirli konumlara içerik eklemeye veya değiştirmeye ihtiyaç duyulduğunda kullanışlıdır.

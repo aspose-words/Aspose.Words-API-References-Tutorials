@@ -1,16 +1,16 @@
 ---
-title: إنشاء ارتباط
-linktitle: إنشاء ارتباط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء رابط بين TextBoxes في مستند Word باستخدام Aspose.Words for .NET.
+title: Bağlantı Oluştur
+linktitle: Bağlantı Oluştur
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesindeki TextBox'lar arasında nasıl bağlantı oluşturacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-textboxes/create-a-link/
 ---
 
-## الخطوة 1: إعداد المستند وإنشاء أشكال TextBox
+## 1. Adım: Belgeyi ayarlama ve TextBox şekilleri oluşturma
 
- للبدء ، نحتاج إلى إعداد المستند وإنشاء شكلين مربع نص. يقوم الكود التالي بتهيئة مثيل جديد لملف`Document` فئة وإنشاء شكلين لمربع النص:
+ Başlamak için belgeyi kurmamız ve iki TextBox şekli oluşturmamız gerekiyor. Aşağıdaki kod, yeni bir örneğini başlatır.`Document` class ve iki metin kutusu şekli oluşturur:
 
 ```csharp
 Document doc = new Document();
@@ -21,18 +21,18 @@ TextBox textBox1 = shape1.TextBox;
 TextBox textBox2 = shape2.TextBox;
 ```
 
-## الخطوة 2: إنشاء ارتباط بين مربعات النص
+## Adım 2: Metin Kutuları arasında bir bağlantı oluşturma
 
- سنقوم الآن بإنشاء رابط بين مربعي النص باستخدام امتداد`IsValidLinkTarget()` الطريقة و`Next` خاصية TextBox الأول.
+ Şimdi kullanarak iki TextBox arasında bir bağlantı oluşturacağız.`IsValidLinkTarget()` yöntem ve`Next` ilk TextBox'ın özelliği.
 
 ```csharp
 if (textBox1.IsValidLinkTarget(textBox2))
      textBox1. Next = textBox2;
 ```
 
- ال`IsValidLinkTarget()` يتحقق الأسلوب مما إذا كان يمكن أن يكون TextBox الثاني هدفًا صالحًا للارتباط الخاص بـ TextBox الأول. إذا نجح التحقق من الصحة ، فإن`Next` تم تعيين خاصية TextBox الأول على TextBox الثاني ، مما يؤدي إلى إنشاء ارتباط بين الاثنين.
+ bu`IsValidLinkTarget()` yöntem, ikinci TextBox'un birinci TextBox'un bağlantısı için geçerli bir hedef olup olamayacağını kontrol eder. Doğrulama başarılı olursa,`Next` ilk TextBox özelliği ikinci TextBox olarak ayarlanarak ikisi arasında bir bağlantı oluşturulur.
 
-### مثال على شفرة المصدر للارتباط بـ Aspose.Words for .NET
+### Aspose.Words for .NET ile bağlantı kurmak için örnek kaynak kodu
 
 ```csharp
 Document doc = new Document();

@@ -1,68 +1,68 @@
 ---
-title: تنسيق الصف تعطيل الفاصل عبر الصفحات
-linktitle: تنسيق الصف تعطيل الفاصل عبر الصفحات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل فاصل الأسطر لجدول عبر صفحات متعددة في مستند Word باستخدام Aspose.Words for .NET.
+title: Formato riga Disabilita l'interruzione tra le pagine
+linktitle: Formato riga Disabilita l'interruzione tra le pagine
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come disabilitare l'interruzione di riga per una tabella su più pagine in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تعطيل فاصل الأسطر لجدول متعدد الصفحات في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تعطيل فصل الأسطر لجميع الصفوف في الجدول الخاص بك في مستندات Word الخاصة بك.
+In questo tutorial impareremo come disabilitare l'interruzione di riga di una tabella a più pagine in un documento di Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di disabilitare l'interruzione di riga per tutte le righe della tabella nei documenti di Word.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Passaggio 1: impostazione del progetto
+1. Avvia Visual Studio e crea un nuovo progetto C#.
+2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## Passaggio 2: caricamento del documento
+Per iniziare a lavorare con il documento, attenersi alla seguente procedura:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Carica il documento
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
-تأكد من استبدال "دليل المستندات الخاص بك" بالمسار الفعلي إلى دليل المستندات الخاص بك وقم بتوفير اسم الملف الصحيح.
+Assicurati di sostituire "YOUR DOCUMENTS DIRECTORY" con il percorso effettivo della directory dei documenti e fornisci il nome file corretto.
 
-## الخطوة 3: تعطيل فاصل صفوف الجدول
-بعد ذلك ، سنقوم بتعطيل فصل الصفوف لجميع الصفوف في الجدول. استخدم الكود التالي:
+## Passaggio 3: disabilitare l'interruzione di riga della tabella
+Successivamente, disabiliteremo l'interruzione di riga per tutte le righe nella tabella. Usa il seguente codice:
 
 ```csharp
-// استرجع الجدول
+// Recupera il tavolo
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 
-// تعطيل فاصل الصف لجميع الصفوف في الجدول
+// Disabilita l'interruzione di riga per tutte le righe della tabella
 foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```
 
- هنا نستخدم المستند لجلب الجدول الأول ثم نكرره عبر جميع الصفوف في الجدول باستخدام حلقة foreach. داخل الحلقة ، نقوم بتعطيل فصل الصفوف لكل صف عن طريق ضبط`RowFormat.AllowBreakAcrossPages` ملكية ل`false`.
+ Qui usiamo il documento per recuperare la prima tabella e poi iteriamo attraverso tutte le righe della tabella usando un ciclo foreach. All'interno del ciclo, disabilitiamo l'interruzione di riga per ogni riga impostando il`RowFormat.AllowBreakAcrossPages` proprietà a`false`.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تعطيل فاصل أسطر الجدول. استخدم الكود التالي:
+## Passaggio 4: salvare il documento modificato
+Infine, dobbiamo salvare il documento modificato con l'interruzione di riga della tabella disabilitata. Usa il seguente codice:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Assicurati di specificare il percorso e il nome file corretti per il documento di output.
 
-### نموذج التعليمات البرمجية المصدر لتنسيق الصف تعطيل الفاصل عبر الصفحات باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per il formato di riga Disabilita l'interruzione tra le pagine utilizzando Aspose.Words per .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-// تعطيل التقسيم عبر الصفحات لجميع الصفوف في الجدول.
+// Disabilita l'interruzione tra le pagine per tutte le righe della tabella.
 foreach (Row row in table.Rows)
 	row.RowFormat.AllowBreakAcrossPages = false;
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعطيل فاصل الأسطر لجدول متعدد الصفحات في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تطبيق هذا التعطيل على جداولك في مستندات Word الخاصة بك.
+## Conclusione
+In questo tutorial, abbiamo imparato come disabilitare l'interruzione di riga di una tabella multipagina in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi applicare questa disabilitazione alle tue tabelle nei tuoi documenti Word.

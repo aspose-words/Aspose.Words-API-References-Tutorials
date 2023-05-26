@@ -1,29 +1,29 @@
 ---
-title: الانتقال إلى القسم
-linktitle: الانتقال إلى القسم
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لاستخدام Move To Section في Aspose.Words for .NET يعالج الأقسام والفقرات في مستندات Word.
+title: Bölüme Taşı
+linktitle: Bölüme Taşı
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'te Bölüme Taşı'yı kullanmak için adım adım kılavuz, Word belgelerindeki bölümleri ve paragrafları manipüle eder.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/move-to-section/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة Move To Section في Aspose.Words for .NET خطوة بخطوة باستخدام كود المصدر C # المقدم. تتيح لك هذه الميزة التنقل والتعامل مع الأقسام المختلفة داخل مستند Word. اتبع الخطوات أدناه لدمج هذه الوظيفة في تطبيقك.
+Bu örnekte, sağlanan C# kaynak kodunu kullanarak Aspose.Words for .NET'in Bölüme Taşı özelliğini nasıl kullanacağınızı adım adım göstereceğiz. Bu özellik, bir Word belgesi içindeki farklı bölümlerde gezinmenizi ve bunları değiştirmenizi sağlar. Bu işlevi uygulamanıza entegre etmek için aşağıdaki adımları izleyin.
 
-## الخطوة 1: قم بإنشاء مستند جديد وإضافة قسم
+## 1. Adım: Yeni bir belge oluşturun ve bir bölüm ekleyin
 
-أولاً ، نحتاج إلى إنشاء مستند جديد وإضافة قسم إليه. استخدم الكود التالي لإنجاز هذه الخطوة:
+Öncelikle yeni bir belge oluşturup ona bir bölüm eklememiz gerekiyor. Bu adımı gerçekleştirmek için aşağıdaki kodu kullanın:
 
 ```csharp
 Document doc = new Document();
 doc.AppendChild(new Section(doc));
 ```
 
-ينشئ هذا الرمز مستندًا فارغًا جديدًا ويضيف قسمًا إلى هذا المستند.
+Bu kod yeni bir boş belge oluşturur ve bu belgeye bir bölüm ekler.
 
-## الخطوة 2: انقل DocumentBuilder إلى القسم الثاني وأضف نصًا
+## 2. Adım: DocumentBuilder'ı ikinci bölüme taşıyın ve metin ekleyin
 
-بعد ذلك ، نحتاج إلى نقل DocumentBuilder إلى القسم الثاني من المستند وإضافة بعض النص هناك. استخدم الكود التالي لإجراء هذه الخطوة:
+Ardından, DocumentBuilder'ı belgenin ikinci bölümüne taşımamız ve oraya biraz metin eklememiz gerekiyor. Bu adımı gerçekleştirmek için aşağıdaki kodu kullanın:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -31,11 +31,11 @@ builder. MoveToSection(1);
 builder.Writeln("Text added to the 2nd section.");
 ```
 
-ينشئ هذا الرمز DocumentBuilder من المستند الموجود ، ثم ينقل المؤشر من DocumentBuilder إلى القسم الثاني من المستند. أخيرًا ، يضيف النص المحدد إلى هذا القسم.
+Bu kod, mevcut belgeden bir DocumentBuilder oluşturur, ardından imleci DocumentBuilder'dan belgenin ikinci bölümüne taşır. Son olarak, belirtilen metni bu bölüme ekler.
 
-## الخطوة 3: تحميل مستند بالفقرات الموجودة
+## 3. Adım: Belgeyi mevcut paragraflarla yükleyin
 
-إذا كنت تريد العمل مع مستند موجود يحتوي على فقرات ، فيمكنك تحميل هذا المستند باستخدام الكود التالي:
+Paragraf içeren mevcut bir belge ile çalışmak istiyorsanız, bu belgeyi aşağıdaki kodu kullanarak yükleyebilirsiniz:
 
 ```csharp
 doc = new Document(MyDir + "Paragraphs.docx");
@@ -43,21 +43,21 @@ ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 Assert.AreEqual(22, paragraphs.Count);
 ```
 
-يقوم هذا الرمز بتحميل المستند المحدد (استبدل "MyDir +" Paragraphs.docx“”بالمسار الفعلي إلى المستند الخاص بك) والوصول إلى مجموعة الفقرات من القسم الأول من المستند. الخط`Assert.AreEqual(22, paragraphs.Count);` يتحقق من أن المستند يحتوي على 22 فقرة.
+Bu kod belirtilen belgeyi yükler ("MyDir + "Paragraphs.docx yerine""belgenizin gerçek yolu ile) ve belgenin ilk bölümünden paragraf koleksiyonuna erişir. Çizgi`Assert.AreEqual(22, paragraphs.Count);` belgenin 22 paragraf içerdiğini kontrol eder.
 
-## الخطوة 4: إنشاء DocumentBuilder لمستند
+## 4. Adım: bir belge için DocumentBuilder oluşturun
 
-يمكنك إنشاء مؤشر DocumentBuilder على فقرة معينة باستخدام المؤشرات الموضعية.
+Konum indekslerini kullanarak DocumentBuilder imlecini belirli bir paragrafa oluşturabilirsiniz.
 
 ```csharp
 builder = new DocumentBuilder(doc);
 Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
-## الخطوة 5: حرك المؤشر إلى فقرة معينة
+## 5. Adım: İmleci belirli bir paragrafa taşıyın
 
 
-يمكنك تحريك مؤشر DocumentBuilder إلى فقرة معينة باستخدام المؤشرات الموضعية. هيريس كيفية القيام بذلك:
+Konum indekslerini kullanarak DocumentBuilder imlecini belirli bir paragrafa taşıyabilirsiniz. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
 builder. MoveToParagraph(2, 10);
@@ -66,9 +66,9 @@ builder.Writeln("This is a new third paragraph.");
 Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
-يقوم هذا الرمز بنقل مؤشر DocumentBuilder إلى الفقرة الثالثة من القسم الثاني (الفقرة في الفهرس 2) وإلى الموضع 10. ثم يضيف فقرة جديدة مع بعض النص ويتحقق من وضع المؤشر بشكل جيد على هذه الفقرة الجديدة.
+Bu kod, DocumentBuilder'ın imlecini ikinci bölümün üçüncü paragrafına (paragraf 2'deki indeks) ve 10. konuma taşır. Ardından, biraz metin içeren yeni bir paragraf ekler ve imlecin bu yeni paragrafta iyi konumlandırıldığını kontrol eder.
 
-### مثال على شفرة المصدر لـ Move To Move To Section باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Move To Move To Section için örnek kaynak kodu
 
 ```csharp
 
@@ -76,22 +76,22 @@ Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 	Document doc = new Document();
 	doc.AppendChild(new Section(doc));
 
-	// انقل DocumentBuilder إلى القسم الثاني وأضف نصًا.
+	// Bir DocumentBuilder'ı ikinci bölüme taşıyın ve metin ekleyin.
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.MoveToSection(1);
 	builder.Writeln("Text added to the 2nd section.");
 
-	// إنشاء وثيقة مع فقرات.
+	// Paragraflarla belge oluşturun.
 	doc = new Document(MyDir + "Paragraphs.docx");
 	ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 	Assert.AreEqual(22, paragraphs.Count);
 
-	//عندما نقوم بإنشاء DocumentBuilder لمستند ، يكون المؤشر في بداية المستند افتراضيًا ،
-	// وسيتم إضافة أي محتوى مضاف بواسطة DocumentBuilder إلى المستند.
+	//Bir belge için DocumentBuilder oluşturduğumuzda, imleci varsayılan olarak belgenin en başındadır,
+	// ve DocumentBuilder tarafından eklenen herhangi bir içerik belgenin başına eklenecektir.
 	builder = new DocumentBuilder(doc);
 	Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 
-	// يمكنك تحريك المؤشر إلى أي موضع في الفقرة.
+	// İmleci bir paragrafta herhangi bir konuma taşıyabilirsiniz.
 	builder.MoveToParagraph(2, 10);
 	Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
 	builder.Writeln("This is a new third paragraph. ");
@@ -100,5 +100,5 @@ Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
         
 ```
 
-هذا كل شئ ! لقد فهمت الآن كيفية استخدام وظيفة الانتقال إلى قسم Aspose.Words for .NET باستخدام كود المصدر المقدم. يمكنك الآن دمج هذه الوظيفة في التطبيق الخاص بك ومعالجة أقسام وفقرات مستندات Word بشكل ديناميكي.
+Bu kadar ! Sağlanan kaynak kodunu kullanarak Aspose.Words for .NET'in bölüme taşıma işlevini artık nasıl kullanacağınızı anladınız. Artık bu işlevi kendi uygulamanıza entegre edebilir ve Word belgelerinizin bölümlerini ve paragraflarını dinamik olarak değiştirebilirsiniz.
 

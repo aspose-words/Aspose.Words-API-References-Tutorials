@@ -1,28 +1,28 @@
 ---
-title: طاولة
-linktitle: طاولة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء جدول باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Tavolo
+linktitle: Tavolo
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come creare una tabella con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/table/
 ---
 
 
-في هذا المثال ، سنرشدك إلى كيفية إنشاء جدول باستخدام Aspose.Words for .NET. الجدول عبارة عن هيكل بيانات ينظم المعلومات في صفوف وأعمدة.
+In questo esempio, ti illustreremo come creare una tabella utilizzando Aspose.Words per .NET. Una tabella è una struttura di dati che organizza le informazioni in righe e colonne.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Passaggio 1: utilizzo di un generatore di documenti
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Innanzitutto, utilizzeremo un generatore di documenti per aggiungere contenuto al nostro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
 
-## الخطوة 2: أضف الخلايا والبيانات
+## Passaggio 2: aggiungi celle e dati
 
- سنضيف خلايا وبيانات إلى جدولنا باستخدام`InsertCell` الطريقة و`Writeln` طريقة منشئ الوثيقة.
+ Aggiungeremo celle e dati alla nostra tabella utilizzando il`InsertCell` metodo e il`Writeln` metodo del generatore di documenti.
 
 ```csharp
 builder. InsertCell();
@@ -36,19 +36,19 @@ builder. InsertCell();
 builder.Writeln("d");
 ```
 
-### مثال على شفرة المصدر لإنشاء جدول باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per la creazione di una tabella con Aspose.Words per .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// أضف الصف الأول.
+	// Aggiungi la prima riga.
 	builder.InsertCell();
 	builder.Writeln("a");
 	builder.InsertCell();
 	builder.Writeln("b");
 
-	// أضف الصف الثاني.
+	// Aggiungi la seconda riga.
 	builder.InsertCell();
 	builder.Writeln("c");
 	builder.InsertCell();
@@ -56,4 +56,4 @@ builder.Writeln("d");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية إنشاء جدول باستخدام Aspose.Words for .NET.
+Congratulazioni! Ora hai imparato come creare una tabella con Aspose.Words per .NET.

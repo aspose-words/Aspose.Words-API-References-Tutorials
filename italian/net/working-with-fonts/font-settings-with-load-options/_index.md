@@ -1,48 +1,48 @@
 ---
-title: إعدادات الخط مع خيارات التحميل
-linktitle: إعدادات الخط مع خيارات التحميل
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تحميل مستند Word بخيارات تحميل مخصصة وإعدادات الخط المقابلة.
+title: Impostazioni dei caratteri con opzioni di caricamento
+linktitle: Impostazioni dei caratteri con opzioni di caricamento
+second_title: Riferimento all'API Aspose.Words per .NET
+description: In questo tutorial, scopri come caricare un documento Word con opzioni di caricamento personalizzate e le corrispondenti impostazioni dei caratteri.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/font-settings-with-load-options/
 ---
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية استخدام خيارات التحميل مع إعدادات الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تتيح لك خيارات التحميل تحديد إعدادات إضافية عند تحميل مستند ، بما في ذلك إعدادات الخط. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In questo tutorial, ti mostreremo come utilizzare le opzioni di caricamento con le impostazioni dei caratteri in un documento Word utilizzando la libreria Aspose.Words per .NET. Le opzioni di caricamento consentono di specificare impostazioni aggiuntive durante il caricamento di un documento, comprese le impostazioni dei caratteri. Ti guideremo passo dopo passo per aiutarti a comprendere e implementare il codice nel tuo progetto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti elementi:
+- Conoscenza operativa del linguaggio di programmazione C#
+- La libreria Aspose.Words per .NET installata nel tuo progetto
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+ Innanzitutto, devi impostare il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تكوين خيارات التحميل مع إعدادات الخط
- بعد ذلك ، سننشئ مثيلًا لـ`LoadOptions` وحدد إعدادات الخط عن طريق إنشاء مثيل جديد من`FontSettings` وتعيينه إلى`loadOptions.FontSettings`.
+## Passaggio 2: configurare le opzioni di caricamento con le impostazioni dei caratteri
+ Successivamente, creeremo un'istanza di`LoadOptions` e specificare le impostazioni dei caratteri creando una nuova istanza di`FontSettings` e assegnandolo a`loadOptions.FontSettings`.
 
 ```csharp
-// تكوين خيارات التحميل مع إعدادات الخط
+// Configura le opzioni di caricamento con le impostazioni dei caratteri
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.FontSettings = new FontSettings();
 ```
 
-## الخطوة 3: قم بتحميل المستند بخيارات التحميل
- الآن سنقوم بتحميل المستند باستخدام`LoadOptions` وحدد خيارات التحميل التي قمنا بتكوينها.
+## Passaggio 3: caricare il documento con le opzioni di caricamento
+ Ora caricheremo il documento usando`LoadOptions` e specificare le opzioni di caricamento che abbiamo configurato.
 
 ```csharp
-// قم بتحميل المستند بخيارات التحميل
+// Carica il documento con le opzioni di caricamento
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
-### نموذج التعليمات البرمجية المصدر لإعدادات الخط مع خيارات التحميل باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per le impostazioni dei caratteri con le opzioni di caricamento utilizzando Aspose.Words per .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 LoadOptions loadOptions = new LoadOptions();
@@ -50,5 +50,5 @@ loadOptions.FontSettings = new FontSettings();
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية استخدام خيارات التحميل مع إعدادات الخط في مستند Word باستخدام Aspose.Words for .NET. تتيح لك خيارات التحميل تخصيص تحميل المستند عن طريق تحديد إعدادات إضافية ، بما في ذلك إعدادات الخط. لا تتردد في استخدام هذه الميزة لتخصيص تحميل المستندات وفقًا لاحتياجاتك الخاصة.
+## Conclusione
+In questo tutorial, abbiamo visto come utilizzare le opzioni di caricamento con le impostazioni dei caratteri in un documento Word con Aspose.Words per .NET. Le opzioni di caricamento consentono di personalizzare il caricamento del documento specificando impostazioni aggiuntive, comprese le impostazioni dei caratteri. Sentiti libero di utilizzare questa funzione per adattare il caricamento dei documenti alle tue esigenze specifiche.

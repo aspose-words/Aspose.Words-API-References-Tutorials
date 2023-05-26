@@ -1,15 +1,15 @@
 ---
-title: البرمجة مع Officemath
-linktitle: البرمجة مع Officemath
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على معادلات رياضية
+title: Programmazione con OfficeMath
+linktitle: Programmazione con OfficeMath
+second_title: Riferimento all'API Aspose.Words per .NET
+description: I tutorial contengono equazioni matematiche
 type: docs
 weight: 1550
 url: /it/net/programming-with-officemath/
 ---
-ستوجهك البرامج التعليمية Aspose.Words for .NET حول البرمجة باستخدام OfficeMath خلال استخدام وظيفة OfficeMath لمعالجة المعادلات الرياضية وتنسيقها في مستندات Word الخاصة بك. سوف تتعلم كيفية إنشاء وتعديل وحذف المعادلات الرياضية ، وكذلك كيفية تطبيق أنماط وتنسيقات محددة. ستزودك هذه البرامج التعليمية بفهم متعمق لمعالجة المعادلات الرياضية في مستندات Word الخاصة بك.
+Le esercitazioni Aspose.Words per .NET sulla programmazione con OfficeMath ti guideranno attraverso l'utilizzo della funzionalità OfficeMath per manipolare e formattare equazioni matematiche nei tuoi documenti Word. Imparerai come creare, modificare ed eliminare equazioni matematiche, nonché come applicare stili e formattazioni specifici. Questi tutorial ti forniranno una comprensione approfondita della manipolazione delle equazioni matematiche nei tuoi documenti Word.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [معادلات الرياضيات](./math-equations/) | تعرف على كيفية إضافة معادلات رياضية إلى مستندات Word باستخدام Aspose.Words for .NET. |
+| [Equazioni matematiche](./math-equations/) | Scopri come aggiungere equazioni matematiche ai tuoi documenti Word utilizzando Aspose.Words per .NET. |

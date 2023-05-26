@@ -1,46 +1,46 @@
 ---
-title: أدخل الجدول مباشرة
-linktitle: أدخل الجدول مباشرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET.
+title: Insertar tabla directamente
+linktitle: Insertar tabla directamente
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a insertar una tabla directamente en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/insert-table-directly/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من إدراج الجداول مباشرةً في مستندات Word برمجيًا.
+En este tutorial, aprenderemos cómo insertar directamente una tabla en un documento de Word utilizando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá insertar tablas directamente en sus documentos de Word mediante programación.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Paso 1: Configuración del proyecto
+1. Inicie Visual Studio y cree un nuevo proyecto de C#.
+2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
-## الخطوة 2: إنشاء المستند والجدول
-لبدء العمل مع المصفوفة ، نحتاج إلى إنشاء مستند جديد وتهيئة المصفوفة. اتبع هذه الخطوات:
+## Paso 2: Creación del documento y la tabla
+Para comenzar a trabajar con la matriz, debemos crear un nuevo documento e inicializar la matriz. Sigue estos pasos:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Creación de documentos
 Document doc = new Document();
 
-// قم بإنشاء المصفوفة
+// Crear la matriz
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
-## الخطوة 3: بناء المصفوفة
-بعد ذلك ، سنبني الجدول بإضافة صفوف وخلايا. استخدم الكود التالي كمثال:
+## Paso 3: Construyendo la matriz
+continuación, construiremos la tabla agregando filas y celdas. Use el siguiente código como ejemplo:
 
 ```csharp
-// قم بإنشاء الصف الأول
+// Crea la primera fila
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);
 
-// قم بإنشاء الخلية الأولى
+// Crear la primera celda
 Cell cell = new Cell(doc);
 cell.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 cell.CellFormat.Width = 80;
@@ -48,54 +48,54 @@ cell.AppendChild(new Paragraph(doc));
 cell.FirstParagraph.AppendChild(new Run(doc, "Text in row 1, cell 1"));
 row.AppendChild(cell);
 
-// قم بتكرار الخلية للخلية الثانية في الصف
+// Duplicar la celda para la segunda celda de la fila.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Text in row 1, cell 2"));
 ```
 
- هنا ننشئ صفًا بامتداد`AllowBreakAcrossPages` تعيين الخاصية على`true` للسماح بفصل الصفحات بين الصفوف. نقوم بعد ذلك بإنشاء خلية ذات خلفية ملونة وعرض ثابت ومحتوى نصي محدد. ثم نكرر هذه الخلية لإنشاء الخلية الثانية في الصف.
+ Aquí creamos una fila con el`AllowBreakAcrossPages` propiedad establecida en`true` para permitir el salto de página entre filas. Luego creamos una celda con un fondo de color, ancho fijo y contenido de texto específico. Luego duplicamos esta celda para crear la segunda celda en la fila.
 
-## الخطوة 4: جدول ملاءمة تلقائي
-يمكننا تطبيق تعديلات تلقائية على الجدول لتنسيقه بشكل صحيح. استخدم الكود التالي:
+## Paso 4: Tabla de ajuste automático
+Podemos aplicar ajustes automáticos a la tabla para formatearla correctamente. Usa el siguiente código:
 
 ```csharp
 table. AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
-يطبق سطر التعليمات البرمجية هذا احتواءًا تلقائيًا استنادًا إلى عرض العمود الثابت.
+Esta línea de código aplica un ajuste automático basado en anchos de columna fijos.
 
-## الخطوة 5: تسجيل ملف
+## Paso 5: Registrar el
 
-  وثيقة معدلة
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع إدراج الجدول مباشرةً. استخدم الكود التالي:
+  documento modificado
+Finalmente, necesitamos guardar el documento modificado con la tabla insertada directamente. Usa el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Asegúrese de especificar la ruta y el nombre de archivo correctos para el documento de salida.
 
-### نموذج التعليمات البرمجية المصدر لـ Insert Table مباشرة باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Insertar tabla directamente usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
-	// نبدأ بإنشاء كائن الجدول. لاحظ أنه يجب علينا تمرير كائن المستند
-	//منشئ كل عقدة. هذا لأن كل عقدة نقوم بإنشائها يجب أن تنتمي
-	// لبعض الوثائق.
+	// Comenzamos creando el objeto de la tabla. Tenga en cuenta que debemos pasar el objeto del documento
+	//al constructor de cada nodo. Esto se debe a que cada nodo que creamos debe pertenecer
+	// a algún documento.
 	Table table = new Table(doc);
 	doc.FirstSection.Body.AppendChild(table);
-	// هنا يمكننا أن نطلق على "ضمان الحد الأدنى" لإنشاء الصفوف والخلايا لنا. تستخدم هذه الطريقة
-	// للتأكد من أن العقدة المحددة صالحة. في هذه الحالة ، يجب أن يحتوي الجدول الصالح على صف واحد وخلية واحدة على الأقل.
-	// بدلاً من ذلك ، سنتعامل مع إنشاء الصف والجدول بأنفسنا.
-	// ستكون هذه أفضل طريقة للقيام بذلك إذا كنا ننشئ جدولًا داخل خوارزمية.
+	// Aquí podríamos llamar a GuaranteeMinimum para crear las filas y celdas para nosotros. Este método se utiliza
+	// para asegurarse de que el nodo especificado es válido. En este caso, una tabla válida debe tener al menos una fila y una celda.
+	// En su lugar, nos encargaremos de crear la fila y la tabla nosotros mismos.
+	// Esta sería la mejor manera de hacer esto si estuviéramos creando una tabla dentro de un algoritmo.
 	Row row = new Row(doc);
 	row.RowFormat.AllowBreakAcrossPages = true;
 	table.AppendChild(row);
-	// يمكننا الآن تطبيق أي إعدادات احتواء تلقائي.
+	// Ahora podemos aplicar cualquier configuración de ajuste automático.
 	table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 	Cell cell = new Cell(doc);
 	cell.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
@@ -103,13 +103,13 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 	cell.AppendChild(new Paragraph(doc));
 	cell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 1 Text"));
 	row.AppendChild(cell);
-	// ثم نكرر العملية للخلايا والصفوف الأخرى في الجدول.
-	// يمكننا أيضًا تسريع الأمور عن طريق استنساخ الخلايا والصفوف الموجودة.
+	// Luego repetiríamos el proceso para las otras celdas y filas de la tabla.
+	// También podemos acelerar las cosas clonando celdas y filas existentes.
 	row.AppendChild(cell.Clone(false));
 	row.LastCell.AppendChild(new Paragraph(doc));
 	row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
 	doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ رمز C # المقدم ، يمكنك إدراج الجداول مباشرةً في مستندات Word برمجيًا. تتيح لك هذه الميزة إنشاء الجداول وتخصيصها وفقًا لاحتياجاتك الخاصة.
+## Conclusión
+En este tutorial, aprendimos cómo insertar directamente una tabla en un documento de Word usando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# provisto, puede insertar tablas directamente en sus documentos de Word mediante programación. Esta característica le permite crear y personalizar tablas según sus necesidades específicas.

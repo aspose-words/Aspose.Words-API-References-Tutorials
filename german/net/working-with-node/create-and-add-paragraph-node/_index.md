@@ -1,58 +1,58 @@
 ---
-title: إنشاء وإضافة فقرة العقدة
-linktitle: إنشاء وإضافة فقرة العقدة
-second_title: Aspose.Words لمراجع .NET API
-description: قم بإنشاء وإضافة عقدة فقرة إلى مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+title: Absatzknoten erstellen und hinzufügen
+linktitle: Absatzknoten erstellen und hinzufügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erstellen Sie mit Aspose.Words für .NET einen Absatzknoten und fügen Sie ihn zu Ihren Word-Dokumenten hinzu.
 type: docs
 weight: 10
 url: /de/net/working-with-node/create-and-add-paragraph-node/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية إنشاء وإضافة عقدة فقرة باستخدام Aspose.Words for .NET.
+Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der veranschaulicht, wie Sie mit Aspose.Words für .NET einen Absatzknoten erstellen und hinzufügen.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Schritt 1: Importieren Sie die erforderlichen Referenzen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die erforderlichen Referenzen zur Verwendung von Aspose.Words für .NET in Ihr Projekt importiert haben. Dazu gehört das Importieren der Aspose.Words-Bibliothek und das Hinzufügen der erforderlichen Namespaces zu Ihrer Quelldatei.
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## Schritt 2: Erstellen Sie ein neues Dokument
+ In diesem Schritt erstellen wir ein neues Dokument mit`Document` Klasse.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: قم بإنشاء عقدة فقرة
- الآن سنقوم بإنشاء عقدة فقرة باستخدام امتداد`Paragraph` فئة وتمرير الوثيقة كمعامل.
+## Schritt 3: Erstellen Sie einen Absatzknoten
+ Jetzt erstellen wir einen Absatzknoten mit`Paragraph` Klasse und Übergabe des Dokuments als Parameter.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 4: الوصول إلى قسم المستند
- لإضافة فقرة إلى المستند ، نحتاج إلى الوصول إلى القسم الأخير من المستند باستخدام ملف`LastSection` ملكية.
+## Schritt 4: Greifen Sie auf den Dokumentbereich zu
+ Um den Absatz zum Dokument hinzuzufügen, müssen wir mit auf den letzten Abschnitt des Dokuments zugreifen`LastSection` Eigentum.
 
 ```csharp
 Section section = doc.LastSection;
 ```
 
-## الخطوة 5: أضف عقدة الفقرة إلى المستند
- الآن بعد أن أصبح لدينا قسم المستند ، يمكننا إضافة عقدة الفقرة إلى القسم باستخدام ملف`AppendChild` طريقة على القسم`Body` ملكية.
+## Schritt 5: Fügen Sie den Absatzknoten zum Dokument hinzu
+ Nachdem wir nun den Dokumentabschnitt haben, können wir den Absatzknoten mithilfe von zum Abschnitt hinzufügen`AppendChild` Methode auf dem Abschnitt`Body` Eigentum.
 
 ```csharp
 section.Body.AppendChild(para);
 ```
 
-## الخطوة 6: احفظ المستند
- أخيرًا ، لحفظ المستند ، يمكنك استخدام ملف`Save` عن طريق تحديد تنسيق الإخراج المطلوب ، مثل تنسيق DOCX.
+## Schritt 6: Speichern Sie das Dokument
+ Zum Speichern des Dokuments können Sie schließlich die Datei verwenden`Save` Methode durch Angabe des gewünschten Ausgabeformats, z. B. DOCX-Format.
 
 ```csharp
 doc.Save("output.docx", SaveFormat.Docx);
 ```
 
-### نموذج التعليمات البرمجية المصدر لإنشاء وإضافة فقرة عقدة باستخدام Aspose.Words for .NET
+### Beispielquellcode zum Erstellen und Hinzufügen eines Absatzknotens mit Aspose.Words für .NET
 
 ```csharp
 Document doc = new Document();
@@ -64,4 +64,4 @@ section.Body.AppendChild(para);
 
 ```
 
-هذا مثال رمز كامل لإنشاء وإضافة فقرة باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Dies ist ein vollständiges Codebeispiel zum Erstellen und Hinzufügen eines Absatzknotens mit Aspose.Words für .NET. Stellen Sie sicher, dass Sie die erforderlichen Referenzen importieren und die zuvor beschriebenen Schritte befolgen, um diesen Code in Ihr Projekt zu integrieren.

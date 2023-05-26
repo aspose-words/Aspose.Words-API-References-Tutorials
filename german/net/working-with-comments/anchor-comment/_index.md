@@ -1,21 +1,21 @@
 ---
-title: تعليق المرساة
-linktitle: تعليق المرساة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إرساء ردود التعليقات على نص معين في مستندات Word باستخدام Aspose.Words for .NET.
+title: Ankerkommentar
+linktitle: Ankerkommentar
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Kommentarantworten zu bestimmtem Text in Word-Dokumenten verankern.
 type: docs
 weight: 10
 url: /de/net/working-with-comments/anchor-comment/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إرساء ردود التعليقات على نص معين في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من ربط التعليقات بنص محدد في مستنداتك.
+In diesem umfassenden Tutorial erfahren Sie, wie Sie Kommentarantworten mit Aspose.Words für .NET an einem bestimmten Text in einem Word-Dokument verankern. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieses Leitfadens werden Sie in der Lage sein, Kommentare mit bestimmtem Text in Ihren Dokumenten zu verknüpfen.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## الخطوة 1: إنشاء مستند جديد وإضافة نص
-للبدء ، أنشئ مستندًا جديدًا باستخدام فئة المستند وأضف النص المطلوب:
+## Schritt 1: Erstellen Sie ein neues Dokument und fügen Sie Text hinzu
+Erstellen Sie zunächst ein neues Dokument mit der Document-Klasse und fügen Sie den gewünschten Text hinzu:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,8 +36,8 @@ para2.AppendChild(run4);
 doc.FirstSection.Body.AppendChild(para2);
 ```
 
-## الخطوة 2: قم بإنشاء تعليق وإضافة نطاق تعليق
-بعد ذلك ، قم بإنشاء تعليق واربطه بنص معين باستخدام كائني CommentRangeStart و CommentRangeEnd:
+## Schritt 2: Erstellen Sie einen Kommentar und fügen Sie einen Kommentarbereich hinzu
+Erstellen Sie als Nächstes einen Kommentar und verknüpfen Sie ihn mithilfe der Objekte CommentRangeStart und CommentRangeEnd mit einem bestimmten Text:
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
@@ -52,24 +52,24 @@ run3.ParentNode.InsertAfter(commentRangeEnd, run3);
 commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إرساء التعليق على نص معين ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Schritt 3: Speichern Sie das Dokument
+Nachdem Sie den Kommentar in einem bestimmten Text verankert haben, speichern Sie das Dokument mit der Save-Methode der Document-Klasse in einer Datei:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 ```
 
-### مثال رمز مصدر للتعليق المرساة الرد باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لترسيخ الرد على التعليق باستخدام Aspose.Words for .NET:
+### Beispielquellcode für eine Ankerkommentarantwort mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode zum Verankern einer Kommentarantwort mit Aspose.Words für .NET:
 
 ```csharp
 
-    // قم بإنشاء مثيل من المستند.
+    // Erstellen Sie eine Instanz des Dokuments.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";        
 	Document doc = new Document();
 
-    // إنشاء ثلاثة كائنات تشغيل.
-    //يقوم أول اثنان بتشغيل بعض النصوص ، بينما يقوم الثالث بتشغيل تعليق
+    // Erstellen Sie drei Run-Objekte.
+    //Die ersten beiden führen einen Text aus, während der dritte einen Kommentar ausführt
 
 	Paragraph para1 = new Paragraph(doc);
 	Run run1 = new Run(doc, "Some ");
@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 	comment.Paragraphs.Add(new Paragraph(doc));
 	comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 
-	// يحتوي كل كائن تشغيل على كائن CommentRangeStart و CommentRangeEnd مرتبط.
+	// Jedes der Run-Objekte verfügt über ein zugehöriges CommentRangeStart- und CommentRangeEnd-Objekt.
 
 	CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
 	CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);

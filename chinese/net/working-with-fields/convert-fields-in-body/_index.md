@@ -1,59 +1,59 @@
 ---
-title: تحويل الحقول في الجسم
-linktitle: تحويل الحقول في الجسم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET لتحويل حقول الصفحة إلى نص في نص مستند Word.
+title: 转换正文中的字段
+linktitle: 转换正文中的字段
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将页面字段转换为 Word 文档正文中的文本。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/convert-fields-in-body/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنرشدك إلى كيفية استخدام ميزة ConvertFieldsInBody في Aspose.Words for .NET باستخدام كود المصدر C # المقدم. تتيح لك هذه الميزة تحويل حقول معينة في نص المستند إلى نص عادي ، مما يسهل معالجة المستندات الخاصة بك. اتبع الخطوات أدناه لاستخدام هذه الميزة بشكل فعال.
+在这个循序渐进的教程中，我们将带您了解如何使用提供的 C# 源代码使用 Aspose.Words for .NET 的 ConvertFieldsInBody 功能。此功能允许您将文档正文中的特定字段转换为纯文本，使您的文档更易于处理。请按照以下步骤有效地使用此功能。
 
-## الخطوة 1: المتطلبات الأساسية
+## 第 1 步：先决条件
 
-قبل أن تبدأ ، تأكد من تثبيت Aspose.Words for .NET وأن لديك مستندًا جاهزًا للمعالجة. تأكد أيضًا من أن لديك مسار الدليل إلى مستنداتك.
+在开始之前，请确保您已经安装了 Aspose.Words for .NET 并准备好处理文档。还要确保您有文档的目录路径。
 
-## الخطوة 2: قم بتحميل المستند
+## 第 2 步：装入文档
 
-ابدأ بالتصريح عن متغير للمسار إلى دليل المستندات ، ثم استخدم هذا المتغير لتهيئة كائن المستند من المستند المحدد. في مثالنا ، يُطلق على المستند اسم "Linked Field.docx".
+首先为文档目录的路径声明一个变量，然后使用该变量从指定的文档中初始化一个 Document 对象。在我们的示例中，该文档称为“Linked fields.docx”。
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//装入文档
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-## الخطوة 3: تحويل حقول الصفحة إلى نص عادي
+## 第 3 步：将页面字段转换为纯文本
 
-الآن بعد أن تم تحميل المستند ، يمكننا الانتقال إلى خطوات التحويل. لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول ، يمكنك استخدام ملحق`Range.Fields` طريقة للحصول على جميع الحقول في النطاق المحدد ، ثم تصفية الحقول من النوع`FieldType.FieldPage` . ثم يمكنك استخدام ملف`ForEach` طريقة للتكرار عبر كل حقل واستدعاء`Unlink()` طريقة لتحويله إلى نص عادي.
+现在文档已加载，我们可以继续进行转换步骤。要将页面字段转换为第一部分正文中的纯文本，您可以使用`Range.Fields`方法获取指定范围内的所有字段，然后过滤掉类型的字段`FieldType.FieldPage`.然后你可以使用`ForEach`循环遍历每个字段并调用`Unlink()`方法将其转换为纯文本。
 
 ```csharp
-// قم بتمرير المعلمات المناسبة لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول.
+//传递适当的参数以将页面字段转换为第一部分正文中的纯文本。
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.Unlink());
 ```
 
-## الخطوة 4: احفظ المستند المعدل
+## 第 4 步：保存修改后的文档
 
- بمجرد تحويل حقول الصفحة إلى نص عادي ، يمكنك حفظ المستند المعدل باستخدام امتداد`Save()` طريقة وتحديد مسار واسم ملف الإخراج. في مثالنا ، نحفظها كـ "WorkingWithFields.ConvertFieldsInBody.docx".
+将页面字段转换为纯文本后，您可以使用`Save()`方法并指定输出文件的路径和名称。在我们的示例中，我们将其保存为“WorkingWithFields.ConvertFieldsInBody.docx”。
 
 ```csharp
-// احفظ المستند المعدل
+//保存修改后的文件
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
 
-### مثال على شفرة المصدر لتحويل الحقول في النص باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 转换正文字段的示例源代码
 
-إليك مثال شفرة المصدر الكاملة لتحويل الحقول إلى نص باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 将字段转换为正文的完整源代码示例：
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//装入文档
 Document doc = new Document(dataDir + "Linked fields.docx");
 
-// قم بتمرير المعلمات المناسبة لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول.
+//传递适当的参数以将页面字段转换为第一部分正文中的纯文本。
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A

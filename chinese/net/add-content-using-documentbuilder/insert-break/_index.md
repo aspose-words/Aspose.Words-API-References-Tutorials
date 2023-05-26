@@ -1,29 +1,29 @@
 ---
-title: أدخل فاصل
-linktitle: أدخل فاصل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج فواصل الصفحات في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: 插入中断
+linktitle: 插入中断
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入分页符。分步指南。
 type: docs
 weight: 10
 url: /zh/net/add-content-using-documentbuilder/insert-break/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج فواصل الصفحات في مستند Word باستخدام طريقة InsertBreak في Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من التحكم في فواصل الصفحات داخل المستند الخاص بك.
+在这个综合示例中，您将学习如何使用 Aspose.Words for .NET 中的 InsertBreak 方法将分页符插入 Word 文档。我们将指导您完成整个过程，并为您提供必要的 C# 代码片段。到本指南结束时，您将能够控制文档中的分页符。
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## 先决条件
+在我们开始之前，请确保您具备以下先决条件：
+- Aspose.Words for .NET 库安装在您的系统上。
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 第 1 步：创建新文档和 DocumentBuilder
+首先，使用 Document 类创建一个新文档并初始化一个 DocumentBuilder 对象：
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل المحتوى وفواصل الصفحات
-بعد ذلك ، استخدم طريقة Writeln لفئة DocumentBuilder لإضافة محتوى إلى المستند. لإدراج فاصل صفحات ، استخدم الأسلوب InsertBreak مع المعلمة BreakType.PageBreak:
+## 第 2 步：插入内容和分页符
+接下来，使用 DocumentBuilder 类的 Writeln 方法向文档添加内容。要插入分页符，请使用带有 BreakType.PageBreak 参数的 InsertBreak 方法：
 
 ```csharp
 builder.Writeln("This is page 1.");
@@ -35,15 +35,15 @@ builder.InsertBreak(BreakType.PageBreak);
 builder.Writeln("This is page 3.");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج المحتوى وفواصل الصفحات ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 第 3 步：保存文档
+插入内容和分页符后，使用 Document 类的 Save 方法将文档保存到文件中：
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-### مثال على كود المصدر لإدراج استراحة باستخدام Aspose.Words for .NET
-فيما يلي شفرة المصدر الكاملة لإدخال فواصل الصفحات باستخدام Aspose.Words for .NET:
+### 使用 Aspose.Words for .NET 插入中断的示例源代码
+下面是使用 Aspose.Words for .NET 插入分页符的完整源代码：
 
 ```csharp
 
@@ -62,8 +62,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 			
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+请记住根据您的特定要求调整代码，并根据需要使用其他功能对其进行增强。
 
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج فواصل الصفحات في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن التحكم في ترقيم الصفحات وتخطيط المستند عن طريق إدراج فواصل الصفحات في المواضع المطلوبة.
+## 结论
+恭喜！您已经成功学习了如何使用 Aspose.Words for .NET 将分页符插入 Word 文档。按照分步指南并利用提供的源代码，您现在可以通过在所需位置插入分页符来控制文档的分页和布局。

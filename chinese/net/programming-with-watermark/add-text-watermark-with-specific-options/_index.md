@@ -1,34 +1,34 @@
 ---
-title: أضف علامة مائية نصية مع خيارات محددة
-linktitle: أضف علامة مائية نصية مع خيارات محددة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: 使用特定选项添加文本水印
+linktitle: 使用特定选项添加文本水印
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 添加具有特定选项的文本水印。分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-watermark/add-text-watermark-with-specific-options/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. العلامة المائية النصية هي نص متراكب على مستند للإشارة إلى أنه مسودة وسري وما إلى ذلك.
+在本教程中，我们将向您介绍如何使用 Aspose.Words for .NET 添加具有特定选项的文本水印。文本水印是叠加在文档上的文本，表示它是草稿、机密等。
 
-## الخطوة 1: استخدام منشئ المستندات
+## 第 1 步：使用文档生成器
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+首先，我们将使用文档生成器将内容添加到我们的文档中。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## 第 2 步：装入文档
 
-سنقوم بتحميل مستند موجود باستخدام مسار المستند.
+我们将使用文档路径加载现有文档。
 
 ```csharp
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## الخطوة 3: أضف علامة مائية نصية بخيارات محددة
+## 第 3 步：使用特定选项添加文本水印
 
- سنقوم بإنشاء مثيل لـ`TextWatermarkOptions` فئة وتعيين الخيارات المطلوبة للعلامة المائية النصية.
+我们将创建一个实例`TextWatermarkOptions`类并为文本水印设置所需的选项。
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()
@@ -43,19 +43,19 @@ IsSemitrasparent = false
 doc.Watermark.SetText("Test", options);
 ```
 
-## الخطوة 4: احفظ المستند
+## 第 4 步：保存文档
 
-أخيرًا ، يمكننا حفظ المستند بعلامة مائية نصية مضافة.
+最后，我们可以保存添加了文本水印的文档。
 
 ```csharp
 	doc.Save(dataDir + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx");
 ```
 
-### مثال على شفرة المصدر لإضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 添加具有特定选项的文本水印的示例源代码
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Document.docx");
 
@@ -74,5 +74,5 @@ doc.Watermark.SetText("Test", options);
 	
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET.
+恭喜！您现在已经了解了如何使用 Aspose.Words for .NET 使用特定选项添加文本水印。
 

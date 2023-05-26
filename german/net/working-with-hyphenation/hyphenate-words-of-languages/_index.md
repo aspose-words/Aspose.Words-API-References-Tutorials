@@ -1,59 +1,59 @@
 ---
-title: وصل كلمات اللغات
-linktitle: وصل كلمات اللغات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Wörter von Sprachen trennen
+linktitle: Wörter von Sprachen trennen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Wörter in verschiedenen Sprachen in Word-Dokumenten trennen.
 type: docs
 weight: 10
 url: /de/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 
-في هذا البرنامج التعليمي المفصل خطوة بخطوة ، سنوجهك حول كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET Wörter in verschiedenen Sprachen in Word-Dokumenten trennen. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und konfiguriert ist. Wenn Sie es noch nicht getan haben, laden Sie die Bibliothek von der offiziellen Website herunter und installieren Sie sie.
 
-## الخطوة 1: تهيئة كائن المستند
+## Schritt 1: Initialisieren des Dokumentobjekts
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق تحديد المسار إلى المستند المصدر الذي يحتوي على نص بلغات مختلفة:
+ Initialisieren Sie zunächst die`Document` -Objekt, indem Sie den Pfad zu Ihrem Quelldokument angeben, das Text in verschiedenen Sprachen enthält:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## الخطوة 2: حفظ قواميس الواصلة
+## Schritt 2: Silbentrennungswörterbücher speichern
 
-بعد ذلك ، احفظ قواميس الواصلة للغات المختلفة التي تريد معالجتها. في هذا المثال ، نسجل قواميس للغة الإنجليزية الأمريكية والألمانية السويسرية:
+Speichern Sie als Nächstes die Silbentrennungswörterbücher für die verschiedenen Sprachen, die Sie verarbeiten möchten. In diesem Beispiel registrieren wir Wörterbücher für amerikanisches Englisch und Schweizerdeutsch:
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
 Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 ```
 
-تأكد من أن لديك ملفات القاموس المناسبة في دليل البيانات الخاص بك.
+Stellen Sie sicher, dass sich in Ihrem Datenverzeichnis die entsprechenden Wörterbuchdateien befinden.
 
-## الخطوة 3: معالجة الكلمات عن طريق الواصلة
+## Schritt 3: Wörter durch Silbentrennung verarbeiten
 
- يمكنك الآن استخدام ميزات الواصلة لمعالجة الكلمات بلغات مختلفة. يمكنك استخدام طرق مختلفة لـ`Document` أو`DocumentBuilder`حسب احتياجاتك الخاصة.
+ Jetzt können Sie Silbentrennungsfunktionen verwenden, um Wörter in verschiedenen Sprachen zu verarbeiten. Sie können verschiedene Methoden verwenden`Document` oder`DocumentBuilder`abhängig von Ihren spezifischen Bedürfnissen.
 
 ```csharp
-// مثال: استخدام أسلوب الواصلة في DocumentBuilder
+// Beispiel: Verwendung der Hyphenate-Methode von DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Write("Example of text to hyphenate");
 builder.InsertHyphenation();
 ```
 
-## الخطوة 4: احفظ المستند
+## Schritt 4: Speichern Sie das Dokument
 
-أخيرًا ، احفظ المستند المعدل:
+Speichern Sie abschließend das geänderte Dokument:
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-لذا ! لقد نجحت في معالجة الكلمات عن طريق الواصلة بلغات مختلفة في مستند Word باستخدام Aspose.Words for .NET.
+So ! Sie haben Wörter erfolgreich verarbeitet, indem Sie sie in verschiedenen Sprachen in einem Word-Dokument mit Aspose.Words für .NET getrennt haben.
 
-### عينة من التعليمات البرمجية المصدر لوصل الكلمات باستخدام Aspose.Words for .NET
+### Beispielquellcode für die Worttrennung mit Aspose.Words für .NET
 
 	```csharp
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,4 +65,4 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 	doc.Save(dataDir + "TreatmentByCesure.pdf");
 	```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und an Ihre spezifischen Bedürfnisse anpassen.

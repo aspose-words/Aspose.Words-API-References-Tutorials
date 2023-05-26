@@ -1,54 +1,54 @@
 ---
-title: الانتقال إلى الفقرة
-linktitle: الانتقال إلى الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة Aspose.Words for .NET's Move To Paragraph للتنقل ومعالجة الفقرات في مستندات Word برمجيًا.
+title: Flytta till stycke
+linktitle: Flytta till stycke
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder Aspose.Words för .NET:s Move To Paragraph-funktion för att navigera och manipulera stycken i Word-dokument programmatiskt.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/move-to-paragraph/
 ---
 
-في هذا المثال خطوة بخطوة ، سوف نستكشف ميزة Move To Paragraph في Aspose.Words for .NET. تسمح هذه الميزة للمطورين بالتنقل ومعالجة الفقرات داخل مستند Word برمجيًا. باتباع هذا الدليل ، ستتعلم كيفية تنفيذ ميزة الانتقال إلى الفقرة واستخدامها بشكل فعال.
+I det här steg-för-steg-exemplet kommer vi att utforska funktionen Flytta till stycke i Aspose.Words för .NET. Denna funktion låter utvecklare navigera och manipulera stycken i ett Word-dokument programmatiskt. Genom att följa den här guiden lär du dig hur du implementerar och använder funktionen Flytta till stycke effektivt.
 
-يوضح الكود أعلاه استخدام ميزة Move To Paragraph. دعونا نفهم كل خطوة بالتفصيل:
+Ovanstående kod visar användningen av funktionen Flytta till stycke. Låt oss förstå varje steg i detalj:
 
-## الخطوة 1: تحميل المستند
+## Steg 1: Ladda dokumentet
 
- نبدأ بتحميل مستند Word في مثيل`Document` فصل. ال`MyDir`متغير يمثل مسار الدليل حيث يوجد المستند. يجب استبداله بمسار الدليل الفعلي أو تعديل الكود وفقًا لذلك.
+ Vi börjar med att ladda Word-dokumentet i en instans av`Document` klass. De`MyDir`variabel representerar katalogsökvägen där dokumentet finns. Du bör ersätta den med den faktiska katalogsökvägen eller ändra koden därefter.
 
 ```csharp
 Document doc = new Document(MyDir + "Paragraphs.docx");
 ```
 
-## الخطوة 2: تهيئة DocumentBuilder
+## Steg 2: Initiera DocumentBuilder
 
- بعد ذلك ، نقوم بإنشاء ملف`DocumentBuilder` الكائن وربطه بالمستند الذي تم تحميله. ال`DocumentBuilder` توفر class طرقًا وخصائص مختلفة لمعالجة محتوى المستند.
+ Därefter skapar vi en`DocumentBuilder` objekt och associera det med det laddade dokumentet. De`DocumentBuilder` klass tillhandahåller olika metoder och egenskaper för att manipulera dokumentets innehåll.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: الانتقال إلى فقرة محددة
+## Steg 3: Flytta till ett specifikt stycke
 
- ال`MoveToParagraph` يتم استخدام الطريقة لوضع منشئ المستند في فقرة معينة داخل المستند. يأخذ معلمتين: فهرس الفقرة الهدف وموضع الحرف داخل تلك الفقرة (يمثل 0 بداية الفقرة).
+ De`MoveToParagraph` metod används för att placera dokumentbyggaren vid ett specifikt stycke i dokumentet. Det krävs två parametrar: indexet för målstycket och teckenpositionen inom det stycket (0 representerar början av stycket).
 
-في المثال المقدم ، ننتقل إلى الفقرة الثالثة (الفهرس 2) من المستند:
+I det angivna exemplet går vi till det tredje stycket (index 2) i dokumentet:
 
 ```csharp
 builder.MoveToParagraph(2, 0);
 ```
 
-## الخطوة 4: تعديل محتوى الفقرة
+## Steg 4: Ändra styckeinnehållet
 
- بمجرد وضع المنشئ في الفقرة المطلوبة ، يمكننا استخدام الامتداد`Writeln`طريقة لإضافة أو تعديل محتوى تلك الفقرة. في هذه الحالة ، نضيف النص "هذه هي الفقرة الثالثة".
+ När byggaren är placerad vid önskat stycke kan vi använda`Writeln`metod för att lägga till eller ändra innehållet i det stycket. I det här fallet lägger vi till texten "Detta är tredje stycket."
 
 ```csharp
 builder.Writeln("This is the 3rd paragraph.");
 ```
 
-### مثال كود المصدر للانتقال إلى الفقرة باستخدام Aspose.Words for .NET
+### Exempel på källkod för Move To Paragraph med Aspose.Words för .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتنفيذ ميزة Move To Paragraph باستخدام Aspose.Words for .NET:
+Nedan är det kompletta exemplet på källkoden för implementering av funktionen Flytta till stycke med Aspose.Words för .NET:
 
 ```csharp
 
@@ -60,5 +60,5 @@ builder.Writeln("This is the 3rd paragraph.");
 	
 ```
 
-باتباع هذا الدليل واستخدام ميزة النقل إلى الفقرة ، يمكنك معالجة الفقرات برمجيًا في مستندات Word باستخدام Aspose.Words for .NET.
+Genom att följa den här guiden och använda funktionen Flytta till stycke kan du manipulera stycken i Word-dokument med hjälp av Aspose.Words för .NET.
 

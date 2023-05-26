@@ -1,56 +1,56 @@
 ---
-title: احصل على تباعد أسطر الخط
-linktitle: احصل على تباعد أسطر الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تباعد بين الخطوط في مستند Word باستخدام Aspose.Words for .NET.
+title: Ottieni l'interlinea dei caratteri
+linktitle: Ottieni l'interlinea dei caratteri
+second_title: Riferimento all'API Aspose.Words per .NET
+description: In questo tutorial, scopri come ottenere l'interlinea dei caratteri in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/get-font-line-spacing/
 ---
-في هذا البرنامج التعليمي ، سنخبرك بكيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يحدد تباعد أسطر الخط المسافة العمودية بين سطور النص. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In questo tutorial, ti spiegheremo come ottenere l'interlinea del carattere in un documento di Word utilizzando la libreria Aspose.Words per .NET. L'interlinea del carattere definisce lo spazio verticale tra le righe di testo. Ti guideremo passo dopo passo per aiutarti a comprendere e implementare il codice nel tuo progetto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti elementi:
+- Conoscenza operativa del linguaggio di programmazione C#
+- La libreria Aspose.Words per .NET installata nel tuo progetto
 
-## الخطوة 1: إنشاء مستند جديد ومولد مستندات
- أولاً ، سننشئ مستندًا جديدًا عن طريق إنشاء مثيل لملف`Document` class ومنشئ المستندات عن طريق إنشاء مثيل لملف`DocumentBuilder` فصل.
+## Passaggio 1: crea un nuovo documento e un generatore di documenti
+ Innanzitutto, creeremo un nuovo documento istanziando il file`Document` class e un generatore di documenti istanziando il file`DocumentBuilder` classe.
 
 ```csharp
-// قم بإنشاء مستند جديد
+// Crea un nuovo documento
 Document doc = new Document();
 
-// قم بإنشاء منشئ المستندات
+// Crea un generatore di documenti
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الخط
- بعد ذلك ، سنقوم بتكوين الخط عن طريق تعيين ملف`Name` خاصية منشئ الوثيقة.
+## Passaggio 2: configura il carattere
+ Successivamente, configureremo il carattere impostando il file`Name` proprietà del generatore di documenti.
 
 ```csharp
-//تكوين الخط
+//Configura il carattere
 builder.Font.Name = "Calibri";
 ```
 
-## الخطوة 3: أضف نصًا إلى المستند
-سنستخدم الآن منشئ المستندات لإضافة نص منسق إلى المستند.
+## Passaggio 3: aggiungi testo al documento
+Useremo ora il generatore di documenti per aggiungere testo formattato al documento.
 
 ```csharp
-// أضف نصًا إلى المستند
+// Aggiungi testo al documento
 builder. Writen("qText");
 ```
 
-## الخطوة 4: احصل على تباعد أسطر الخطوط
- الآن سوف نصل إلى`Font` كائن من الفقرة الأولى من المستند واسترداد قيمة`LineSpacing` ملكية.
+## Passaggio 4: ottieni l'interlinea dei caratteri
+ Ora accederemo al file`Font` oggetto del primo paragrafo del documento e recuperare il valore del`LineSpacing` proprietà.
 
 ```csharp
-// احصل على تباعد الأسطر للخط
+// Ottieni l'interlinea del carattere
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### نموذج لشفرة مصدر للحصول على تباعد أسطر الخطوط باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per ottenere l'interlinea dei caratteri utilizzando Aspose.Words per .NET 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -60,5 +60,5 @@ Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام Aspose.Words for .NET. يعد تباعد أسطر الخطوط أمرًا مهمًا للتحكم في التباعد الرأسي بين سطور النص. لا تتردد في استخدام هذه الميزة لتخصيص مظهر النص في مستنداتك.
+## Conclusione
+In questo tutorial, abbiamo visto come ottenere l'interlinea dei caratteri in un documento Word con Aspose.Words per .NET. L'interlinea dei caratteri è importante per controllare la spaziatura verticale tra le righe di testo. Sentiti libero di usare questa funzione per personalizzare l'aspetto del tuo testo nei tuoi documenti.

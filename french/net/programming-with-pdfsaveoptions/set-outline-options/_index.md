@@ -1,36 +1,36 @@
 ---
-title: تعيين خيارات المخطط التفصيلي
-linktitle: تعيين خيارات المخطط التفصيلي
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتعيين خيارات المخطط التفصيلي في مستند PDF باستخدام Aspose.Words for .NET.
+title: Définir les options de contour
+linktitle: Définir les options de contour
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour définir les options de plan dans un document PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/set-outline-options/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام خيارات المخطط التفصيلي المحددة لميزة حجم ملف التعريف باستخدام Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تعيين خيارات المخطط التفصيلي في مستند وإنشاء ملف PDF باستخدام خيارات المخطط التفصيلية المقابلة.
+Cet article fournit un guide étape par étape sur la façon d'utiliser les options de contour définies pour la fonctionnalité de taille de métafichier avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. À la fin de ce didacticiel, vous serez en mesure de comprendre comment définir les options de contour dans un document et générer un PDF avec les options de contour correspondantes.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words pour .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
 
-## الخطوة 1: تحديد دليل المستند
+## Étape 1 : Définir le répertoire des documents
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Pour commencer, vous devez définir le chemin vers le répertoire où se trouvent vos documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel à votre répertoire de documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Étape 2 : Téléchargez le document
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Ensuite, nous devons charger le document que nous voulons traiter. Dans cet exemple, nous supposons que le document s'appelle "Rendering.docx" et se trouve dans le répertoire de documents spécifié.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF مع خيارات الخطة
+## Étape 3 : Configurer les options d'enregistrement au format PDF avec les options de plan
 
- لتعيين خيارات المخطط التفصيلي في ملف PDF الذي تم إنشاؤه ، نحتاج إلى تكوين ملف`PdfSaveOptions` هدف. يمكننا تعيين عدد مستويات مخطط العنوان (`HeadingsOutlineLevels`) وعدد مستويات المخطط التفصيلي الموسع (`ExpandedOutlineLevels`).
+ Pour définir les options de contour dans le PDF généré, nous devons configurer le`PdfSaveOptions` objet. Nous pouvons définir le nombre de niveaux de contour de titre (`HeadingsOutlineLevels`) et le nombre de niveaux hiérarchiques développés (`ExpandedOutlineLevels`).
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,22 +38,22 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع خيارات المخطط التفصيلي
+## Étape 4 : Enregistrer le document au format PDF avec les options de plan
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Enfin, nous pouvons enregistrer le document au format PDF en utilisant les options d'enregistrement configurées précédemment.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تعيين خيارات المخطط التفصيلي في مستند وإنشاء ملف PDF مع خيارات المخطط التفصيلية المقابلة باستخدام Aspose.Words for .NET.
+C'est tout ! Vous avez défini avec succès les options de plan dans un document et généré un PDF avec les options de plan correspondantes à l'aide d'Aspose.Words pour .NET.
 
-### مثال على شفرة المصدر لتعيين خيارات الخطة لحجم ملف التعريف باستخدام Aspose.Words for .NET
+### Exemple de code source pour définir les options de plan sur la taille du métafichier avec Aspose.Words pour .NET
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 

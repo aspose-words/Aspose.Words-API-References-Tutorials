@@ -1,31 +1,31 @@
 ---
-title: تجاهل النص داخل إدراج المراجعات
-linktitle: تجاهل النص داخل إدراج المراجعات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة "Ignore Text Inside Insert Revisions" في Aspose.Words for .NET للتعامل مع مراجعات الإدراج في مستندات Word.
+title: Ekleme Revizyonlarının İçindeki Metni Yoksay
+linktitle: Ekleme Revizyonlarının İçindeki Metni Yoksay
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'in "Insert Revizyonlarının İçindeki Metni Yoksay" özelliğinin Word belgelerindeki ekleme revizyonlarını işlemek için nasıl kullanılacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Ignore Text Inside Insert Revisions في Aspose.Words مكتبة .NET. هذه الميزة مفيدة عندما نريد تجاهل النص داخل إدراج المراجعات أثناء معالجة المستندات.
+Bu makalede, Aspose.Words for .NET kitaplığındaki Revizyonların İçinde Metni Yoksay işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, belgeleri işlerken ekleme revizyonlarının içindeki metni yok saymak istediğimizde kullanışlıdır.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# dili hakkında temel bilgi.
+- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## 1. Adım: Yeni Belge Oluşturma
 
- قبل أن نبدأ في معالجة النص داخل تنقيحات الإدخال ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ İnsert revizyonlarının içindeki metni manipüle etmeye başlamadan önce, Aspose.Words for .NET kullanarak yeni bir belge oluşturmamız gerekiyor. Bu, bir örneği başlatarak yapılabilir.`Document` nesne:
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل نصًا مع تتبع المراجعة
+## 2. Adım: Revizyon takibi ile metin ekleyin
 
- بمجرد الحصول على مستند ، يمكننا إدراج نص مع تتبع المراجعة باستخدام ملف`DocumentBuilder` هدف. على سبيل المثال ، لإدراج النص "المُدرج" مع تتبع المراجعة ، يمكننا استخدام`StartTrackRevisions`, `Writeln` و`StopTrackRevisions` طُرق:
+ Bir belgemiz olduğunda, revizyon izlemeli bir metin ekleyebiliriz.`DocumentBuilder` nesne. Örneğin, revizyon takibi ile "Eklendi" metnini eklemek için`StartTrackRevisions`, `Writeln` Ve`StopTrackRevisions` yöntemler:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -34,50 +34,50 @@ builder.Writeln("Inserted");
 doc.StopTrackRevisions();
 ```
 
-## الخطوة 3: أدخل نصًا لم تتم مراجعته
+## 3. Adım: İncelenmemiş metni ekleyin
 
- بالإضافة إلى النص مع تتبع المراجعة ، يمكننا أيضًا إدراج نص غير منقح باستخدام امتداد`DocumentBuilder`هدف. على سبيل المثال ، لإدراج النص "نص" بدون مراجعة ، يمكننا استخدام`Write` طريقة:
+ Revizyon izlemeli metne ek olarak,`DocumentBuilder`nesne. Örneğin, "Metin" metnini düzeltme yapmadan eklemek için`Write` yöntem:
 
 ```csharp
 builder.Write("Text");
 ```
 
-## الخطوة 4: استخدام وظيفة Ignore Text Inside Insert Revisions
+## 4. Adım: Revizyonların İçindeki Metni Yoksay işlevinin kullanılması
 
- لتجاهل النص داخل إدراج المراجعات في العمليات اللاحقة ، يمكننا استخدام ملف`FindReplaceOptions` كائن وتعيين`IgnoreInserted` ملكية ل`true`:
+ Sonraki işlemlerde ekleme revizyonları içindeki metni yok saymak için bir`FindReplaceOptions` nesne ve ayarlayın`IgnoreInserted` mülkiyet`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
 ```
 
-## الخطوة 5: استخدام التعبيرات النمطية للبحث والاستبدال
+## 5. Adım: Arama ve değiştirme için normal ifadeleri kullanma
 
-لإجراء عمليات البحث والاستبدال على نص المستند ، سنستخدم التعبيرات العادية. في مثالنا ، سنبحث عن جميع تكرارات الحرف "e" ونستبدلها بعلامة النجمة "* ". سنستخدم .NET`Regex` فئة لهذا:
+Belge metninde arama ve değiştirme işlemlerini gerçekleştirmek için düzenli ifadeler kullanacağız. Örneğimizde, "e" harfinin geçtiği tüm yerleri arayacağız ve bunları bir yıldız işaretiyle değiştireceğiz "* ".NET'leri kullanacağız`Regex` Bunun için sınıf:
 
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## الخطوة 6: عرض إخراج المستند المعدل
+## 6. Adım: Değiştirilmiş Belge Çıktısını Görüntüleme
 
-بعد تطبيق البحث والاستبدال ، يمكننا عرض المحتوى الذي تم تغييره في المستند باستخدام`GetText` طريقة:
+Ara ve değiştir işlemini uyguladıktan sonra, belgenin değişen içeriğini kullanarak görüntüleyebiliriz.`GetText` yöntem:
 
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## الخطوة 7: تغيير الخيارات لتضمين إدراج المراجعات
+## Adım 7: Ekleme Revizyonlarını Dahil Etmek İçin Seçenekleri Değiştirme
 
- إذا أردنا تضمين النص داخل مراجعات الإدراج في نتيجة الإخراج ، فيمكننا تغيير الخيارات لعدم تجاهل مراجعات الإدراج. لهذا سنقوم بتعيين`IgnoreInserted` ملكية ل`false`:
+ İnsert revizyonlarının içindeki metni çıktı sonucuna dahil etmek istiyorsak, insert revizyonlarını göz ardı etmemek için seçenekleri değiştirebiliriz. Bunun için ayarlayacağımız`IgnoreInserted` mülkiyet`false`:
 
 ```csharp
 options.IgnoreInserted = false;
 ```
 
-## الخطوة 8: عرض المستند المعدل مع إدراج المراجعات
+## Adım 8: Değiştirilmiş Belgeyi Revizyon Ekleme ile Görüntüleme
 
-بعد تغيير الخيارات ، يمكننا إجراء البحث والاستبدال مرة أخرى للحصول على النتيجة مع النص الموجود داخل المراجعات المدرجة:
+Seçenekleri değiştirdikten sonra, eklenen revizyonların içindeki metinle sonucu elde etmek için aramayı gerçekleştirebilir ve tekrar değiştirebiliriz:
 
 ```csharp
 doc.Range.Replace(regex, "*", options);
@@ -85,9 +85,9 @@ Console.WriteLine(doc.GetText());
 ```
 
 
-### مثال على شفرة المصدر لـ Ignore Text Inside Insert Revisions باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Insert Revizyonları İçerisindeki Metni Yoksay için örnek kaynak kodu
 
-فيما يلي نموذج الكود المصدري الكامل لتوضيح استخدام وظيفة Ignore Text Inside Insert Revisions مع Aspose.Words for .NET:
+Aspose.Words for .NET ile Revizyonlar İçerisindeki Metni Yoksay işlevinin kullanımını gösteren tam örnek kaynak kodunu burada bulabilirsiniz:
 
 
 ```csharp
@@ -95,12 +95,12 @@ Console.WriteLine(doc.GetText());
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// أدخل النص مع تتبع المراجعات.
+	// İzleme revizyonları ile metin ekleyin.
 	doc.StartTrackRevisions("author", DateTime.Now);
 	builder.Writeln("Inserted");
 	doc.StopTrackRevisions();
 
-	// أدخل نصًا غير منقح.
+	// Düzeltilmemiş metin ekleyin.
 	builder.Write("Text");
 
 	FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
@@ -117,6 +117,6 @@ Console.WriteLine(doc.GetText());
    
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة Ignore Text Inside Insert Revisions في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند ، وإدخال نص مع مراجعات التعقب والنص غير المنقح ، واستخدام وظيفة Ignore Text Inside Insert Revisions ، وإجراء عمليات البحث واستبدال العمليات بالتعبيرات العادية ، وعرض المستند المعدل.
+Bu makalede, Aspose.Words for .NET'te Revizyonların İçinde Metni Yoksay işlevinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belge oluşturmak, revizyonları ve düzeltilmemiş metni izleyerek metin eklemek, Revizyonların İçindeki Metni Yoksay işlevini kullanmak, düzenli ifadelerle arama ve değiştirme işlemlerini gerçekleştirmek ve değiştirilen belgeyi görüntülemek için adım adım bir kılavuz izledik.

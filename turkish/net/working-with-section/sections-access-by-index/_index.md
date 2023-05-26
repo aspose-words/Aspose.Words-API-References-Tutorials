@@ -1,71 +1,71 @@
 ---
-title: الوصول إلى الأقسام حسب الفهرس
-linktitle: الوصول إلى الأقسام حسب الفهرس
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس وتغيير إعداداتها باستخدام Aspose.Words for .NET.
+title: Dizine Göre Bölümlere Erişim
+linktitle: Dizine Göre Bölümlere Erişim
+second_title: Aspose.Words for .NET API Referansı
+description: Bu öğreticide, bir Word belgesinin bölümlerine dizine göre nasıl erişileceğini ve Aspose.Words for .NET ile bunların ayarlarını nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-section/sections-access-by-index/
 ---
 
-في هذا البرنامج التعليمي ، سنوضح لك كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس باستخدام مكتبة Aspose.Words لـ .NET. يتيح لك الوصول إلى الأقسام حسب الفهرس استهداف قسم معين في المستند وتغيير إعداداته. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu öğreticide, Aspose.Words .NET kitaplığını kullanarak bir Word belgesinin bölümlerine dizine göre nasıl erişeceğinizi göstereceğiz. Bölümlere dizine göre erişim, belgenizdeki belirli bir bölümü hedeflemenize ve ayarlarını değiştirmenize olanak tanır. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على الأقسام التي ترغب في تعديلها
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
+- Değiştirmek istediğiniz bölümleri içeren bir Word belgesi
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وانتقل إلى قسم بفهرس
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document`فصل. للوصول إلى قسم معين ، نستخدم فهرس القسم. في هذا المثال ، نصل إلى القسم الأول باستخدام الفهرس 0.
+## 2. Adım: Belgeyi yükleyin ve dizine göre bir bölüme atlayın
+ Ardından, Word belgesini bir örneğine yükleyeceğiz.`Document`sınıf. Belirli bir bölüme erişmek için bölüm dizinini kullanırız. Bu örnekte, 0 indeksini kullanarak ilk bölüme erişiyoruz.
 
 ```csharp
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Document.docx");
 
-// الوصول إلى قسم بالفهرس
+// Dizine göre bir bölüme erişme
 Section section = doc.Sections[0];
 ```
 
-## الخطوة 3: تحرير إعدادات القسم
- لتعديل إعدادات القسم ، نستخدم خصائص القسم`PageSetup` هدف. في هذا المثال ، نقوم بتغيير الهوامش ، ومسافة الرأس والتذييل ، وتباعد أعمدة النص.
+## 3. Adım: Bölüm ayarlarını düzenleyin
+ Bölüm ayarlarını değiştirmek için bölümün özelliklerini kullanırız.`PageSetup` nesne. Bu örnekte kenar boşluklarını, üst bilgi ve alt bilgi mesafesini ve metin sütun aralığını değiştiriyoruz.
 
 ```csharp
-section.PageSetup.LeftMargin = 90; // 3.17 سم
-section.PageSetup.RightMargin = 90; // 3.17 سم
-section.PageSetup.TopMargin = 72; // 2.54 سم
-section.PageSetup.BottomMargin = 72; // 2.54 سم
-section.PageSetup.HeaderDistance = 35.4; // 1.25 سم
-section.PageSetup.FooterDistance = 35.4; // 1.25 سم
-section.PageSetup.TextColumns.Spacing = 35.4; // 1.25 سم
+section.PageSetup.LeftMargin = 90; // 3.17cm
+section.PageSetup.RightMargin = 90; // 3.17cm
+section.PageSetup.TopMargin = 72; // 2,54cm
+section.PageSetup.BottomMargin = 72; // 2,54cm
+section.PageSetup.HeaderDistance = 35.4; // 1.25cm
+section.PageSetup.FooterDistance = 35.4; // 1.25cm
+section.PageSetup.TextColumns.Spacing = 35.4; // 1.25cm
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Sections Access By Index باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Dizine Göre Bölüm Erişimi için örnek kaynak kodu 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
 Section section = doc.Sections[0];
-section.PageSetup.LeftMargin = 90; // 3.17 سم
-section.PageSetup.RightMargin = 90; // 3.17 سم
-section.PageSetup.TopMargin = 72; // 2.54 سم
-section.PageSetup.BottomMargin = 72; // 2.54 سم
-section.PageSetup.HeaderDistance = 35.4; // 1.25 سم
-section.PageSetup.FooterDistance = 35.4; // 1.25 سم
-section.PageSetup.TextColumns.Spacing = 35.4; // 1.25 سم
+section.PageSetup.LeftMargin = 90; // 3.17cm
+section.PageSetup.RightMargin = 90; // 3.17cm
+section.PageSetup.TopMargin = 72; // 2.54cm
+section.PageSetup.BottomMargin = 72; // 2.54cm
+section.PageSetup.HeaderDistance = 35.4; // 1.25cm
+section.PageSetup.FooterDistance = 35.4; // 1.25cm
+section.PageSetup.TextColumns.Spacing = 35.4; // 1.25cm
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس وتغيير إعداداتها باستخدام Aspose.Words for .NET. يتيح لك الوصول إلى الأقسام حسب الفهرس استهداف أقسام معينة في المستند وتخصيصها. لا تتردد في استخدام هذه الميزة لتلبية احتياجاتك الخاصة.
+## Çözüm
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinin bölümlerine dizine göre nasıl erişeceğimizi ve bunların ayarlarını nasıl değiştireceğimizi gördük. Bölümlere dizine göre erişim, belgenizdeki belirli bölümleri hedeflemenize ve özelleştirmenize olanak tanır. Özel ihtiyaçlarınızı karşılamak için bu özelliği kullanmaktan çekinmeyin.

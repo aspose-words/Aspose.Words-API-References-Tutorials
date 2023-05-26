@@ -1,51 +1,51 @@
 ---
-title: حسب العناوين Html
-linktitle: حسب العناوين Html
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # لميزة By Heading HTML في Aspose.Words for .NET
+title: Efter rubriker Html
+linktitle: Efter rubriker Html
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att förklara C#-källkoden för HTML-funktionen By Heading i Aspose.Words för .NET
 type: docs
 weight: 10
 url: /sv/net/split-document/by-headings-html/
 ---
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تقسيم مستند Word إلى أجزاء أصغر باستخدام ميزة By HTML Heading في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم الكود المصدري وإنشاء مستندات HTML منفصلة استنادًا إلى العنوان.
+I den här handledningen går vi igenom hur du delar upp ett Word-dokument i mindre delar med hjälp av funktionen By HTML Heading i Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och generera separata HTML-dokument baserat på Rubrik.
 
-## الخطوة 1: تحميل المستند
+## Steg 1: Ladda dokumentet
 
-للبدء ، حدد الدليل للمستند الخاص بك وقم بتحميل المستند في كائن المستند. إليك الطريقة:
+För att komma igång, ange katalogen för ditt dokument och ladda dokumentet i ett dokumentobjekt. Här är hur:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```
 
-## الخطوة 2: تقسيم المستند عن طريق العنوان بتنسيق HTML
+## Steg 2: Dela upp dokumentet efter rubrik i HTML-format
 
-سنقوم الآن بتعيين خيارات الحفظ لتقسيم المستند إلى أجزاء أصغر بناءً على العنوان بتنسيق HTML. إليك الطريقة:
+Nu kommer vi att ställa in sparaalternativ för att dela upp dokumentet i mindre delar baserat på Rubrik i HTML-format. Här är hur:
 
 ```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
 {
-// قسّم المستند إلى أجزاء أصغر ، في هذه الحالة افصله حسب العنوان.
+// Dela upp dokumentet i mindre delar, i det här fallet separera det efter titel.
 DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 };
 
 doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
 ```
 
-### مثال على شفرة المصدر لـ By Headings HTML باستخدام Aspose.Words for .NET
+### Exempel på källkod för By Headings HTML med Aspose.Words för .NET
 
-فيما يلي شفرة المصدر الكاملة لميزة By HTML Heading في Aspose.Words for .NET:
+Här är den fullständiga källkoden för funktionen By HTML Heading i Aspose.Words för .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Rendering.docx");
 
 	HtmlSaveOptions options = new HtmlSaveOptions
 	{
-		// قسّم مستندًا إلى أجزاء أصغر ، في هذه الحالة ، قسم حسب العنوان.
+		// Dela upp ett dokument i mindre delar, i det här fallet delat efter rubrik.
 		DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 	};
 	
@@ -55,5 +55,5 @@ doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تقسيم مستند Word إلى أجزاء أصغر باستخدام Aspose.Words for .NET ، بناءً على العناوين. يمكنك بعد ذلك إنشاء مستندات HTML منفصلة لكل جزء.
+Med denna kod kommer du att kunna dela upp ett Word-dokument i mindre delar med Aspose.Words för .NET, baserat på rubriker. Du kan sedan generera separata HTML-dokument för varje del.
 

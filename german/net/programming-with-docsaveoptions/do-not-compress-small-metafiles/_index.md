@@ -1,32 +1,32 @@
 ---
-title: لا تقم بضغط ملفات التعريف الصغيرة
-linktitle: لا تقم بضغط ملفات التعريف الصغيرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET لتمكين ميزة Do Not Compress Small Metafiles عند حفظ المستندات.
+title: Komprimieren Sie keine kleinen Metadateien
+linktitle: Komprimieren Sie keine kleinen Metadateien
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Funktion „Kleine Metadateien nicht komprimieren“ beim Speichern von Dokumenten aktivieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
 
-يعد ضغط البيانات الوصفية في المستند ميزة شائعة عند العمل مع الملفات في تطبيق C #. ومع ذلك ، قد يكون من الضروري عدم ضغط البيانات الوصفية للملفات الصغيرة للحفاظ على جودتها. في هذا الدليل المفصل خطوة بخطوة ، سنوضح لك كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لتمكين ميزة "عدم ضغط ملفات التعريف الصغيرة" في خيارات حفظ المستند.
+Das Komprimieren von Metadaten in einem Dokument ist eine häufige Funktion beim Arbeiten mit Dateien in einer C#-Anwendung. Es kann jedoch erforderlich sein, die Metadaten kleiner Dateien nicht zu komprimieren, um deren Qualität zu erhalten. In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie den C#-Quellcode von Aspose.Words für .NET verwenden, um die Funktion „Kleine Metadateien nicht komprimieren“ in den Dokumentspeicheroptionen zu aktivieren.
 
-## فهم مكتبة Aspose.Words
+## Grundlegendes zur Aspose.Words-Bibliothek
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten, Konvertieren und Schützen von Word-Dokumenten auf verschiedenen Plattformen, einschließlich .NET. Es bietet viele Funktionen zum Bearbeiten von Dokumenten, wie zum Beispiel das Einfügen von Text, das Ändern von Formatierungen, das Hinzufügen von Abschnitten und vieles mehr.
 
-## الخطوة 1: تعيين دليل المستندات
+## Schritt 1: Dokumentverzeichnis festlegen
 
-الخطوة الأولى هي تحديد الدليل حيث تريد حفظ المستند. يجب عليك تحديد مسار الدليل الكامل. على سبيل المثال :
+Der erste Schritt besteht darin, das Verzeichnis zu definieren, in dem Sie das Dokument speichern möchten. Sie müssen den vollständigen Verzeichnispfad angeben. Zum Beispiel :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Stellen Sie sicher, dass Sie „IHR DOKUMENTENVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis ersetzen.
 
-## الخطوة 2: أدخل المقاطع والنص
+## Schritt 2: Abschnitte und Text einfügen
 
-ثم يمكنك إدراج أقسام ونص في المستند الخاص بك. استخدم فئة DocumentBuilder المقدمة من Aspose.Words لبناء محتوى وثيقتك. اليك مثال بسيط:
+Anschließend können Sie Abschnitte und Texte in Ihr Dokument einfügen. Verwenden Sie die von Aspose.Words bereitgestellte DocumentBuilder-Klasse, um den Inhalt Ihres Dokuments zu erstellen. Hier ist ein einfaches Beispiel:
 
 ```csharp
 Document doc = new Document();
@@ -34,59 +34,59 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند فارغ جديد ثم نستخدم DocumentBuilder لإضافة سطر من النص.
+In diesem Beispiel erstellen wir ein neues leeres Dokument und fügen dann mit DocumentBuilder eine Textzeile hinzu.
 
-## الخطوة 3: خيارات الإعداد
+## Schritt 3: Setup-Optionen
 
-'تسجيل
+'Anmeldung
 
-لنقم الآن بتهيئة خيارات الحفظ لمستندنا. استخدم فئة DocSaveOptions لتحديد إعدادات الحفظ. على سبيل المثال :
+Jetzt konfigurieren wir die Speicheroptionen für unser Dokument. Verwenden Sie die DocSaveOptions-Klasse, um Speichereinstellungen anzugeben. Zum Beispiel :
 
 ```csharp
 DocSaveOptions saveOptions = new DocSaveOptions();
 ```
 
-في هذا المثال ، نقوم بإنشاء كائن DocSaveOptions جديد لتعيين خيارات الحفظ.
+In diesem Beispiel erstellen wir ein neues DocSaveOptions-Objekt, um Speicheroptionen festzulegen.
 
-## الخطوة 4: تمكين ميزة "عدم ضغط ملفات التعريف الصغيرة"
+## Schritt 4: Aktivieren Sie die Funktion „Kleine Metadateien nicht komprimieren“.
 
- لتمكين ميزة "عدم ضغط ملفات التعريف الصغيرة" ، يجب عليك تعيين ملف`Compliance` خاصية كائن DocSaveOptions إلى القيمة`PdfCompliance.PdfA1a`. إليك الطريقة:
+ Um die Funktion „Kleine Metadateien nicht komprimieren“ zu aktivieren, müssen Sie Folgendes festlegen`Compliance` Eigenschaft des DocSaveOptions-Objekts auf den Wert`PdfCompliance.PdfA1a`. Hier ist wie:
 
 ```csharp
 saveOptions.Compliance = PdfCompliance.PdfA1a;
 ```
 
-يضمن هذا التكوين عدم ضغط البيانات الأولية للملف الصغير عند حفظ المستند.
+Diese Konfiguration stellt sicher, dass Metadaten kleiner Dateien beim Speichern des Dokuments nicht komprimiert werden.
 
-## الخطوة 5: احفظ المستند
+## Schritt 5: Speichern Sie das Dokument
 
- أخيرًا ، يمكنك حفظ المستند باستخدام ملف`Save` طريقة فئة المستند. حدد المسار الكامل للملف واسم الملف المطلوب. على سبيل المثال :
+ Abschließend können Sie das Dokument mit speichern`Save` Methode der Document-Klasse. Geben Sie den vollständigen Pfad zur Datei und den gewünschten Dateinamen an. Zum Beispiel :
 
 ```csharp
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 ```
 
-تأكد من استبدال "dataDir" بالمسار إلى دليل المستند.
+Ersetzen Sie „dataDir“ unbedingt durch den Pfad zu Ihrem Dokumentverzeichnis.
 
-### مثال على شفرة المصدر لـ DocSaveOptions مع ميزة "عدم ضغط ملفات التعريف الصغيرة" باستخدام Aspose.Words for .NET
+### Beispielquellcode für DocSaveOptions mit der Funktion „Kleine Metadateien nicht komprimieren“ unter Verwendung von Aspose.Words für .NET
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// أدخل قسمين مع بعض النص.
+// Fügen Sie zwei Abschnitte mit etwas Text ein.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 
-// تكوين خيارات الحفظ مع ميزة "عدم ضغط ملفات التعريف الصغيرة"
+// Konfigurieren Sie Speicheroptionen mit der Funktion „Kleine Metadateien nicht komprimieren“.
 DocSaveOptions saveOptions = new DocSaveOptions();
 saveOptions.Compliance = PdfCompliance.PdfA1a;
 
-// احفظ المستند بالخيارات المحددة
+// Speichern Sie das Dokument mit den angegebenen Optionen
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا الدليل ، شرحنا كيفية استخدام مكتبة Aspose.Words لـ .NET لتمكين ميزة "Do Not Compress Small Metafiles" عند حفظ مستند. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. قد يكون الحفاظ على البيانات الوصفية للملفات الصغيرة غير المضغوطة أمرًا مهمًا للحفاظ على جودة المستند وسلامته.
+In dieser Anleitung haben wir erklärt, wie Sie die Aspose.Words-Bibliothek für .NET verwenden, um beim Speichern eines Dokuments die Funktion „Kleine Metadateien nicht komprimieren“ zu aktivieren. Indem Sie die bereitgestellten Schritte befolgen und den bereitgestellten C#-Quellcode verwenden, können Sie diese Funktionalität problemlos in Ihrer C#-Anwendung anwenden. Die Beibehaltung unkomprimierter Metadaten kleiner Dateien kann für die Aufrechterhaltung der Dokumentqualität und -integrität wichtig sein.

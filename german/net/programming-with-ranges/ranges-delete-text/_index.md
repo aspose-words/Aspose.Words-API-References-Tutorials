@@ -1,65 +1,65 @@
 ---
-title: نطاقات حذف النص
-linktitle: نطاقات حذف النص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حذف نص في نطاقات محددة في مستند Word باستخدام Aspose.Words for .NET.
+title: Bereiche Text löschen
+linktitle: Bereiche Text löschen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Text in bestimmten Bereichen in einem Word-Dokument löschen.
 type: docs
 weight: 10
 url: /de/net/programming-with-ranges/ranges-delete-text/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words القدرة على حذف نص معين ضمن نطاقات محددة من المستند. في هذا الدليل ، سنرشدك إلى كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لحذف نص في نطاقات محددة في مستند Word.
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten in einer C#-Anwendung. Zu den von Aspose.Words angebotenen Funktionen gehört die Möglichkeit, bestimmten Text innerhalb definierter Bereiche eines Dokuments zu löschen. In dieser Anleitung führen wir Sie durch die Verwendung des C#-Quellcodes von Aspose.Words für .NET, um Text in bestimmten Bereichen in einem Word-Dokument zu löschen.
 
-## فهم مكتبة Aspose.Words
+## Grundlegendes zur Aspose.Words-Bibliothek
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك حذف النص في نطاقات محددة.
+Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Arbeit mit Word-Dokumenten einfach und effizient macht. Es bietet zahlreiche Funktionen zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten, einschließlich des Löschens von Text in bestimmten Bereichen.
 
-## تحميل مستند Word
+## Laden des Word-Dokuments
 
-تتمثل الخطوة الأولى في تحميل مستند Word حيث تريد حذف النص. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+Der erste Schritt besteht darin, das Word-Dokument an der Stelle zu laden, an der Sie Text löschen möchten. Verwenden Sie die Document-Klasse, um das Dokument aus der Quelldatei zu laden. Hier ist ein Beispiel :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Document.docx" الموجود في دليل المستندات.
+In diesem Beispiel laden wir das Dokument „Document.docx“, das sich im Dokumentenverzeichnis befindet.
 
-## حذف النص في نطاقات محددة
+## Text in bestimmten Bereichen löschen
 
-بمجرد تحميل المستند ، يمكنك التنقل إلى أقسام المستند وتحديد النطاقات حيث تريد حذف النص. في هذا المثال ، سنزيل كل النص من القسم الأول من المستند. إليك الطريقة:
+Sobald das Dokument geladen ist, können Sie zu Abschnitten des Dokuments navigieren und die Bereiche angeben, in denen Sie Text löschen möchten. In diesem Beispiel entfernen wir den gesamten Text aus dem ersten Abschnitt des Dokuments. Hier ist wie:
 
 ```csharp
 doc.Sections[0].Range.Delete();
 ```
 
-في هذا المثال ، نقوم بالوصول إلى القسم الأول من المستند باستخدام الفهرس 0 (الأقسام مفهرسة من 0). بعد ذلك ، نسمي طريقة الحذف في نطاق القسم لحذف كل النص من هذا النطاق.
+In diesem Beispiel greifen wir mit Index 0 auf den ersten Abschnitt des Dokuments zu (Abschnitte werden ab 0 indiziert). Als Nächstes rufen wir die Methode „Delete“ für den Abschnittsbereich auf, um den gesamten Text aus diesem Bereich zu löschen.
 
-## احفظ المستند المعدل
+## Geändertes Dokument speichern
 
-بمجرد حذف النص في النطاقات المحددة ، يمكنك حفظ المستند المعدل باستخدام طريقة Save لفئة Document. هنا مثال :
+Nachdem Sie den Text in den angegebenen Bereichen gelöscht haben, können Sie das geänderte Dokument mit der Save-Methode der Document-Klasse speichern. Hier ist ein Beispiel :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 ```
 
-في هذا المثال ، نحفظ المستند المعدل باسم "WorkingWithRangesDeleteText.ModifiedDocument.docx".
+In diesem Beispiel speichern wir das geänderte Dokument als „WorkingWithRangesDeleteText.ModifiedDocument.docx“.
 
-### مثال على شفرة المصدر لوظيفة "حذف النص في النطاقات" باستخدام Aspose.Words for .NET
+### Beispielquellcode für die Funktion „Text in Bereichen löschen“ mit Aspose.Words für .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+//Laden Sie das Word-Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
-// احذف النص في القسم الأول من المستند
+// Löschen Sie den Text im ersten Abschnitt des Dokuments
 doc.Sections[0].Range.Delete();
 
-// احفظ المستند المعدل
+// Speichern Sie das geänderte Dokument
 doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا الدليل ، قمنا بتغطية كيفية استخدام Aspose.Words for .NET لحذف نص في نطاقات محددة من مستند Word باستخدام كود المصدر C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة حذف النص في نطاقات محددة في مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose. Words مرونة هائلة وقوة للعمل مع نطاقات من النصوص ، مما يسمح لك بإنشاء وتحرير مستندات Word بدقة وبشكل هادف.
+In diesem Handbuch haben wir beschrieben, wie Sie Aspose.Words für .NET verwenden, um Text in bestimmten Bereichen eines Word-Dokuments mithilfe des bereitgestellten C#-Quellcodes zu löschen. Wenn Sie die bereitgestellten Schritte befolgen, können Sie problemlos Text in definierten Bereichen in Ihren Word-Dokumenten in Ihrer C#-Anwendung löschen. Aspose.Words bietet enorme Flexibilität und Leistungsfähigkeit für die Arbeit mit Textbereichen und ermöglicht Ihnen das präzise und zielgerichtete Erstellen und Bearbeiten von Word-Dokumenten.

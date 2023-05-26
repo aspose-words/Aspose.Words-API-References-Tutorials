@@ -1,54 +1,54 @@
 ---
-title: نص إضافي المواقع
-linktitle: نص إضافي المواقع
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التحكم في موضع النص الإضافي عند تحويل مستندات Word إلى PDF باستخدام Aspose.Words for .NET.
+title: Positionnement supplémentaire du texte
+linktitle: Positionnement supplémentaire du texte
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à contrôler le placement de texte supplémentaire lors de la conversion de documents Word en PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/additional-text-positioning/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات استخدام ميزة تحديد موضع النص الإضافية مع Aspose.Words for .NET. تتيح لك هذه الميزة التحكم في وضع نص إضافي عند تحويل مستند Word إلى PDF. اتبع الخطوات التالية:
+Dans ce didacticiel, nous vous expliquerons les étapes à suivre pour utiliser la fonctionnalité de positionnement de texte supplémentaire avec Aspose.Words pour .NET. Cette fonctionnalité vous permet de contrôler le placement de texte supplémentaire lors de la conversion d'un document Word en PDF. Suivez les étapes ci-dessous :
 
-## الخطوة 1: تحميل المستند
+## Étape 1 : Chargement du document
 
-ابدأ بتحميل مستند Word الذي تريد تحويله إلى PDF:
+Commencez par télécharger le document Word que vous souhaitez convertir en PDF :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح لمستند Word الخاص بك.
+Assurez-vous de spécifier le chemin d'accès correct à votre document Word.
 
-## الخطوة 2: تعيين خيارات تحويل PDF
+## Étape 2 : Définir les options de conversion PDF
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وقم بتمكين وضع نص إضافي:
+Créez une instance de la classe PdfSaveOptions et activez le positionnement de texte supplémentaire :
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { AdditionalTextPositioning = true };
 ```
 
-يتحكم هذا الخيار في الموضع الدقيق للنص الإضافي في ملف PDF.
+Cette option contrôle le positionnement précis du texte supplémentaire dans le PDF.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## Étape 3 : Convertir le document en PDF
 
- استخدم ال`Save` طريقة لتحويل مستند Word إلى PDF عن طريق تحديد خيارات التحويل:
+ Utilisez le`Save` méthode pour convertir le document Word en PDF en spécifiant les options de conversion :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Assurez-vous de spécifier le chemin d'accès correct pour enregistrer le PDF converti.
 
-### مثال على شفرة المصدر لتحديد موضع النص الإضافي باستخدام Aspose.Words for .NET
+### Exemple de code source pour le positionnement de texte supplémentaire à l'aide d'Aspose.Words pour .NET
 
-إليك شفرة المصدر الكاملة لاستخدام وظيفة تحديد موضع النص الإضافية مع Aspose.Words for .NET:
+Voici le code source complet pour utiliser la fonctionnalité de positionnement de texte supplémentaire avec Aspose.Words pour .NET :
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -57,5 +57,5 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", sa
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", saveOptions);
 
 ```
-باتباع هذه الخطوات ، يمكنك التحكم بسهولة في وضع نص إضافي عند تحويل مستند Word إلى PDF باستخدام Aspose.Words for .NET.
+En suivant ces étapes, vous pouvez facilement contrôler le positionnement du texte supplémentaire lors de la conversion d'un document Word en PDF avec Aspose.Words pour .NET.
 

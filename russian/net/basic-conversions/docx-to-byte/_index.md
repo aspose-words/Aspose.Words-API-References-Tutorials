@@ -1,64 +1,64 @@
 ---
-title: Docx إلى بايت
-linktitle: Docx إلى بايت
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات Word من Docx إلى مصفوفة بايت باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Docx в байт
+linktitle: Docx в байт
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как преобразовать документы Word из Docx в массив байтов с помощью Aspose.Words для .NET. Пошаговое руководство с примером исходного кода.
 type: docs
 weight: 10
 url: /ru/net/basic-conversions/docx-to-byte/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى مصفوفة بايت. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+В этом пошаговом руководстве мы расскажем вам, как использовать Aspose.Words для .NET для преобразования документа Word в формате Docx в массив байтов. Мы объясним предоставленный исходный код C# и покажем вам, как реализовать его в ваших собственных проектах.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Для начала убедитесь, что Aspose.Words for .NET установлен и настроен в вашей среде разработки. Если вы этого не сделали, скачайте и установите библиотеку с официального сайта.
 
-## الخطوة 1: تهيئة MemoryStream
+## Шаг 1: Инициализация MemoryStream
 
- أولاً ، قم بإنشاء مثيل لملف`MemoryStream` فئة لتخزين المستند المحول كمصفوفة بايت:
+ Сначала создайте экземпляр`MemoryStream` класс для хранения преобразованного документа в виде массива байтов:
 
 ```csharp
 MemoryStream outStream = new MemoryStream();
 ```
 
-## الخطوة 2: حفظ المستند في MemoryStream
+## Шаг 2: Сохранение документа в MemoryStream
 
- بعد ذلك ، استخدم ملف`Save` طريقة`Document` فئة لحفظ المستند في ملف`MemoryStream` بتنسيق Docx:
+ Далее используйте`Save` метод`Document` класс, чтобы сохранить документ в`MemoryStream` в формате docx:
 
 ```csharp
 doc.Save(outStream, SaveFormat.Docx);
 ```
 
-## الخطوة 3: تحويل MemoryStream إلى صفيف بايت
+## Шаг 3: Преобразование MemoryStream в байтовый массив
 
- لتحويل ملف`MemoryStream` الذي يحتوي على مستند Docx إلى مصفوفة بايت ، استخدم الامتداد`ToArray` طريقة:
+ Чтобы преобразовать`MemoryStream` содержащий документ Docx в массив байтов, используйте метод`ToArray` метод:
 
 ```csharp
 byte[] docBytes = outStream.ToArray();
 ```
 
-## الخطوة 4: تهيئة MemoryStream من صفيف بايت
+## Шаг 4: Инициализация MemoryStream из байтового массива
 
- الآن ، قم بتهيئة مثيل جديد من`MemoryStream`باستخدام مصفوفة البايت التي تم الحصول عليها في الخطوة السابقة:
+ Теперь инициализируйте новый экземпляр`MemoryStream`используя массив байтов, полученный на предыдущем шаге:
 
 ```csharp
 MemoryStream inStream = new MemoryStream(docBytes);
 ```
 
-## الخطوة 5: إنشاء مستند من MemoryStream
+## Шаг 5: Создание документа из MemoryStream
 
- أخيرًا ، قم بإنشاء ملف`Document` كائن من`MemoryStream`:
+ Наконец, создайте новый`Document` объект из`MemoryStream`:
 
 ```csharp
 Document docFromBytes = new Document(inStream);
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند Word بتنسيق Docx إلى مصفوفة بايت باستخدام Aspose.Words for .NET.
+Вот и все! Вы успешно преобразовали документ Word в формате Docx в массив байтов с помощью Aspose.Words для .NET.
 
-### مثال على شفرة المصدر لـ Docx To Byte باستخدام Aspose.Words for .NET
+### Пример исходного кода для Docx To Byte с использованием Aspose.Words для .NET
 
 ```csharp
 
-	// MemoryStream outStream = new MemoryStream () ؛
+	// Поток Памяти outStream = новый Поток Памяти();
 	doc.Save(outStream, SaveFormat.Docx);
 
 	byte[] docBytes = outStream.ToArray();
@@ -68,4 +68,4 @@ Document docFromBytes = new Document(inStream);
 	
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Не стесняйтесь использовать этот код в своих проектах и модифицировать его в соответствии с вашими конкретными требованиями.

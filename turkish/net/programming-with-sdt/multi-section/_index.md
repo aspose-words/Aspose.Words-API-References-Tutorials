@@ -1,48 +1,48 @@
 ---
-title: قسم متعدد
-linktitle: قسم متعدد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد علامات المستندات المنظمة متعددة الأقسام ومعالجتها في مستند Word باستخدام Aspose.Words for .NET.
+title: Çoklu Bölüm
+linktitle: Çoklu Bölüm
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki çok bölümlü yapılandırılmış belge etiketlerini nasıl alacağınızı ve işleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/multi-section/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية العمل مع علامات المستندات المهيكلة متعددة الأقسام في مستند Word باستخدام Aspose.Words for .NET. يمكنك استرداد علامات القسم الموجودة في المستند ومعالجتها.
+Bu öğretici, Aspose.Words for .NET kullanarak bir Word belgesinde çok bölümlü yapılandırılmış belge etiketleriyle nasıl çalışılacağını açıklar. Belgede bulunan bölüm etiketlerini alabilir ve işleyebilirsiniz.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Önkoşullar
+Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words for .NET kitaplığı yüklendi.
+- Temel C# bilgisi ve Word belgeleriyle çalışma.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستند الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## 1. Adım: Belge Dizinini kurun
+ Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند واسترجع العلامات متعددة الأقسام
- قم بتحميل مستند Word باستخدام ملف`Document` مُنشئ ، تمرير المسار إلى المستند كمعامل. استرجع جميع عُقد بدء نطاق علامة المستند المهيكلة في المستند باستخدام امتداد`GetChildNodes` طريقة.
+## 2. Adım: Belgeyi Yükleyin ve Çok Bölümlü Etiketleri Alın
+ kullanarak Word belgesini yükleyin.`Document` yapıcı, belgenin yolunu bir parametre olarak iletir. kullanarak belgedeki tüm yapılandırılmış belge etiketi aralığı başlangıç düğümlerini alın.`GetChildNodes` yöntem.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
 NodeCollection tags = doc.GetChildNodes(NodeType.StructuredDocumentTagRangeStart, true);
 ```
 
-## الخطوة 3: معالجة العلامات متعددة الأقسام
-كرر خلال مجموعة عقد بدء نطاق علامة المستند المنظمة. في هذا المثال ، نقوم ببساطة بطباعة عنوان كل علامة إلى وحدة التحكم. يمكنك إجراء مزيد من المعالجة بناءً على متطلباتك.
+## 3. Adım: Çok Bölümlü Etiketleri İşleyin
+Yapılandırılmış belge etiketi aralığı başlangıç düğümlerinin koleksiyonunu yineleyin. Bu örnekte, her etiketin başlığını konsola yazdırıyoruz. Gereksinimlerinize göre daha fazla işlem yapabilirsiniz.
 
 ```csharp
 foreach (StructuredDocumentTagRangeStart tag in tags)
     Console.WriteLine(tag.Title);
 ```
 
-### مثال على شفرة المصدر للقسم المتعدد باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Çoklu Bölüm için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -51,4 +51,4 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 		Console.WriteLine(tag.Title);
 ```
 
-هذا كل شيء! لقد نجحت في استرداد علامات المستندات المنظمة متعددة الأقسام ومعالجتها في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenizdeki çok bölümlü yapılandırılmış belge etiketlerini başarıyla aldınız ve işlediniz.

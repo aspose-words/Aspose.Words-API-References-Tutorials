@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل نموذج مربع التحرير والسرد
-linktitle: أدخل حقل نموذج مربع التحرير والسرد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج مربع التحرير والسرد في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Açılan Kutu Form Alanı Ekle
+linktitle: Açılan Kutu Form Alanı Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerine açılan kutu form alanlarını nasıl ekleyeceğinizi öğrenin. Adım adım rehber.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج حقل نموذج مربع تحرير وسرد في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة حقول نموذج مربع التحرير والسرد بخصائص قابلة للتخصيص إلى مستنداتك.
+Bu kapsamlı örnekte, Aspose.Words for .NET kullanarak bir Word belgesine birleşik giriş kutusu form alanını nasıl ekleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, belgelerinize özelleştirilebilir özelliklere sahip birleşik giriş kutusu form alanları ekleyebileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesi başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: تحديد عناصر صندوق الكومبو
-بعد ذلك ، حدد مصفوفة من العناصر لحقل نموذج مربع التحرير والسرد:
+## 2. Adım: Açılan Kutu Öğelerini Tanımlayın
+Ardından, birleşik giriş kutusu form alanı için bir dizi öğe tanımlayın:
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
 ```
 
-## الخطوة 3: أدخل حقل نموذج مربع تحرير وسرد
-استخدم الأسلوب InsertComboBox لفئة DocumentBuilder لإدراج حقل نموذج مربع تحرير وسرد. أدخل الاسم ومجموعة العناصر والفهرس المحدد كمعلمات:
+## 3. Adım: Açılan Kutu Form Alanı Ekleyin
+Birleşik giriş kutusu form alanı eklemek için DocumentBuilder sınıfının InsertComboBox yöntemini kullanın. Adı, öğe dizisini ve seçilen dizini parametre olarak sağlayın:
 
 ```csharp
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## الخطوة 4: احفظ المستند
-بعد إدراج حقل نموذج مربع التحرير والسرد ، احفظ المستند في ملف باستخدام طريقة Save لفئة المستند:
+## 4. Adım: Belgeyi Kaydedin
+Birleşik giriş kutusu form alanını ekledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
 ```
 
-### مثال رمز مصدر لإدراج حقل نموذج مربع تحرير وسرد باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لإدخال حقل نموذج مربع التحرير والسرد باستخدام Aspose.Words for .NET:
+### Aspose.Words for .NET kullanarak Birleşik Giriş Kutusu Form Alanı Eklemek için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak açılan kutu form alanı eklemek için eksiksiz kaynak kodu burada:
 
 ```csharp
 
@@ -59,7 +59,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Kodu özel gereksinimlerinize göre ayarlamayı ve gerektiğinde ek işlevlerle geliştirmeyi unutmayın.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج حقل نموذج مربع تحرير وسرد في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك باستخدام حقول نموذج مربع التحرير والسرد التفاعلي.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine açılan kutu form alanını nasıl ekleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak, artık belgelerinizi etkileşimli açılan kutu form alanlarıyla geliştirebilirsiniz.

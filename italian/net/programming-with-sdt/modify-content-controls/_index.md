@@ -1,41 +1,41 @@
 ---
-title: تعديل عناصر التحكم في المحتوى
-linktitle: تعديل عناصر التحكم في المحتوى
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعديل النص والقوائم المنسدلة والصور ضمن عناصر التحكم في المحتوى في مستند Word باستخدام Aspose.Words for .NET.
+title: Modifica i controlli del contenuto
+linktitle: Modifica i controlli del contenuto
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come modificare testo, elenchi a discesa e immagini all'interno dei controlli del contenuto in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-sdt/modify-content-controls/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية تعديل الأنواع المختلفة من عناصر التحكم في المحتوى في مستند Word باستخدام Aspose.Words for .NET. يمكنك تحديث النص أو القيمة المحددة لقائمة منسدلة أو استبدال صورة ضمن عناصر التحكم في المحتوى.
+Questo tutorial spiega come modificare diversi tipi di controlli del contenuto in un documento di Word utilizzando Aspose.Words per .NET. È possibile aggiornare il testo, il valore selezionato di un elenco a discesa o sostituire un'immagine all'interno dei controlli del contenuto.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Prerequisiti
+Per seguire questo tutorial, è necessario disporre di quanto segue:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words per la libreria .NET installata.
+- Conoscenza di base di C# e lavoro con documenti Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستند الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## Passaggio 1: impostare la directory dei documenti
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند وتكرار عناصر التحكم في المحتوى
- قم بتحميل مستند Word باستخدام ملف`Document`مُنشئ ، تمرير المسار إلى المستند كمعامل. كرر على جميع علامات المستند المهيكلة في المستند باستخدام ملف`foreach` حلقة.
+## Passaggio 2: caricare il documento e iterare sui controlli del contenuto
+ Carica il documento Word usando il file`Document`costruttore, passando il percorso al documento come parametro. Iterare su tutti i tag del documento strutturato nel documento utilizzando a`foreach` ciclo continuo.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
 foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
 {
-    // نفذ الإجراءات بناءً على نوع التحكم في المحتوى
+    // Eseguire azioni in base al tipo di controllo del contenuto
 }
 ```
 
-## الخطوة 3: تعديل التحكم في محتوى النص العادي
- لعناصر تحكم المحتوى من النوع`SdtType.PlainText`، قم بإزالة جميع العناصر الفرعية الموجودة ، وقم بإنشاء فقرة جديدة ، وقم بإلحاق تشغيل بالنص المطلوب.
+## Passaggio 3: modifica del controllo del contenuto in testo normale
+ Per i controlli del contenuto di tipo`SdtType.PlainText`, rimuovi tutti i figli esistenti, crea un nuovo paragrafo e aggiungi una sequenza con il testo desiderato.
 
 ```csharp
 case SdtType.PlainText:
@@ -48,8 +48,8 @@ case SdtType.PlainText:
 }
 ```
 
-## الخطوة 4: تعديل التحكم في محتوى القائمة المنسدلة
- لعناصر تحكم المحتوى من النوع`SdtType.DropDownList` ، قم بتحديث القيمة المحددة عن طريق تعيينها على ملف`SdtListItem`.
+## Passaggio 4: modificare il controllo del contenuto dell'elenco a discesa
+ Per i controlli del contenuto di tipo`SdtType.DropDownList` , aggiornare il valore selezionato impostandolo su un valore specifico`SdtListItem`.
 
 ```csharp
 case SdtType.DropDownList:
@@ -60,8 +60,8 @@ case SdtType.DropDownList:
 }
 ```
 
-## الخطوة 5: تعديل برنامج التحكم في محتوى الصورة
- لعناصر تحكم المحتوى من النوع`SdtType.Picture`واسترداد الشكل داخل عنصر تحكم المحتوى واستبدال صورته بأخرى جديدة.
+## Passaggio 5: modificare il controllo del contenuto dell'immagine
+ Per i controlli del contenuto di tipo`SdtType.Picture`, recuperare la forma all'interno del controllo contenuto e sostituirne l'immagine con una nuova.
 
 ```csharp
 case SdtType.Picture:
@@ -75,17 +75,17 @@ case SdtType.Picture:
 }
 ```
 
-## الخطوة 6: احفظ المستند المعدل
- احفظ المستند المعدل إلى الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.ModifyContentControls.docx".
+## Passaggio 6: salvare il documento modificato
+ Salvare il documento modificato nella directory specificata utilizzando il file`Save` metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithSdt.ModifyContentControls.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 ```
 
-### مثال على شفرة المصدر لتعديل عناصر التحكم في المحتوى باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per modificare i controlli del contenuto utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -122,4 +122,4 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 
-هذا كل شيء! لقد نجحت في تعديل أنواع مختلفة من عناصر تحكم المحتوى في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai modificato correttamente diversi tipi di controlli del contenuto nel documento di Word utilizzando Aspose.Words per .NET.

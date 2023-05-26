@@ -1,54 +1,54 @@
 ---
-title: إزالة التذييلات
-linktitle: إزالة التذييلات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة التذييلات بسهولة من مستندات Word باستخدام Aspose.Words for .NET. اتبع دليلنا المفصل خطوة بخطوة للتعامل الفعال مع ملفات DOCX.
+title: Ta bort sidfötter
+linktitle: Ta bort sidfötter
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du enkelt tar bort sidfötter från Word-dokument med Aspose.Words för .NET. Följ vår steg-för-steg-guide för effektiv hantering av DOCX-filer.
 type: docs
 weight: 10
 url: /sv/net/remove-content/remove-footers/
 ---
-عندما يتعلق الأمر بالعمل مع مستندات Word في تطبيق .NET الخاص بك ، فإن Aspose.Words أداة قوية ومتعددة الاستخدامات يمكنها مساعدتك في معالجة ملفات DOCX بسهولة. في هذه المقالة ، سوف نستكشف ميزة معينة في Aspose.Words: إزالة التذييلات.
+När det kommer till att arbeta med Word-dokument i din .NET-applikation är Aspose.Words ett kraftfullt och mångsidigt verktyg som kan hjälpa dig att enkelt manipulera DOCX-filer. I den här artikeln kommer vi att utforska en specifik funktion i Aspose.Words: att ta bort sidfötter.
 
-## فهم Aspose.Words for .NET
+## Förstå Aspose.Words för .NET
 
-Aspose.Words for .NET مكتبة فصول قوية لإنشاء وتعديل وتحويل ومعالجة مستندات Word في تطبيقات .NET. يقدم مجموعة واسعة من الميزات بما في ذلك إدارة الرؤوس والتذييلات والصور وتنسيق النص والمزيد.
+Aspose.Words för .NET är ett kraftfullt klassbibliotek för att skapa, modifiera, konvertera och manipulera Word-dokument i .NET-applikationer. Den erbjuder ett brett utbud av funktioner inklusive hantering av sidhuvuden, sidfötter, bilder, textformatering och mer.
 
-## الغرض من إزالة التذييلات في Aspose. Words
+## Syftet med att ta bort sidfötter i Aspose.Words
 
-قد تكون هناك حالات تريد فيها إزالة التذييلات من مستند Word. قد يرجع ذلك إلى أسباب مختلفة ، مثل الحاجة إلى حذف المعلومات الحساسة ، أو لتكييف المستند لاستخدام آخر أو ببساطة لإزالة العناصر غير المرغوب فيها. يجعل Aspose.Words هذه المهمة أسهل بكثير من خلال إعطائك طريقة سهلة وفعالة لإزالة التذييلات من مستنداتك.
+Det kan finnas tillfällen där du vill ta bort sidfötter från ett Word-dokument. Detta kan bero på olika anledningar, som att man behöver radera känslig information, att anpassa dokumentet för annan användning eller helt enkelt att eliminera oönskade element. Aspose.Words gör denna uppgift mycket enklare genom att ge dig ett enkelt och effektivt sätt att ta bort sidfötter från dina dokument.
 
-## الخطوة 1: قم بتعيين مسار دليل المستند
+## Steg 1: Ställ in dokumentkatalogsökvägen
 
-قبل أن تبدأ ، تأكد من تعيين دليل المستند الخاص بك في متغير "dataDir". سيسمح لك هذا بتحديد الموقع الدقيق حيث يوجد ملف DOCX الخاص بك.
+Innan du börjar, se till att du har ställt in din dokumentkatalog i variabeln "dataDir". Detta gör att du kan ange den exakta platsen där din DOCX-fil finns.
 
 ```csharp
 string dataDir = "PATH_TO_YOUR_DOCUMENT_DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Steg 2: Ladda dokumentet
 
-تتمثل الخطوة الأولى في تحميل المستند في كائن من نوع Document. سيسمح لك ذلك بالوصول إلى محتويات المستند ومعالجتها.
+Det första steget är att ladda dokumentet i ett objekt av typen Dokument. Detta gör att du kan komma åt och manipulera innehållet i dokumentet.
 
 ```csharp
 Document doc = new Document(dataDir + "Name_of_document.docx");
 ```
 
-تأكد من استبدال "Name_of_document.docx" بالاسم الفعلي للمستند الخاص بك.
+Se till att ersätta "Namn_på_dokument.docx" med det faktiska namnet på ditt dokument.
 
-## الخطوة 3: كرر من خلال الأقسام
+## Steg 3: Iterera genom sektioner
 
-يمكن أن يحتوي مستند Word على أقسام متعددة ، ويمكن أن يكون لكل قسم تذييلاته الخاصة. يجب أن نذهب من خلال كل قسم من المستند للوصول إلى التذييلات.
+Ett Word-dokument kan innehålla flera avsnitt och varje avsnitt kan ha sina egna sidfötter. Vi måste gå igenom varje del av dokumentet för att komma till sidfötterna.
 
 ```csharp
 foreach (Section section in doc)
 {
-     // رمز لإزالة التذييلات
+     // Kod för att ta bort sidfötter
 }
 ```
 
-## الخطوة 4: إزالة التذييلات
+## Steg 4: Ta bort sidfötter
 
-الآن وقد انتقلنا إلى قسم معين ، يمكننا إزالة التذييلات من هذا القسم. في Aspose.Words ، هناك أنواع مختلفة من التذييلات المحتملة ، مثل "FooterFirst" (للصفحة الأولى) و "FooterPrimary" (للصفحات الفردية) و "FooterEven" (للصفحات الزوجية). نحتاج إلى التحقق من كل هذه الأنواع من التذييلات وإزالتها.
+Nu när vi har navigerat till ett specifikt avsnitt kan vi ta bort sidfötter från det avsnittet. I Aspose.Words finns det olika typer av möjliga sidfötter, som "FooterFirst" (för första sidan), "FooterPrimary" (för udda sidor) och "FooterEven" (för jämna sidor). Vi måste kontrollera och ta bort alla dessa typer av sidfötter.
 
 ```csharp
 HeaderFooter footer = section.HeadersFooters[HeaderFooterType.Footer
@@ -63,32 +63,32 @@ footer = section.HeadersFooters[HeaderFooterType.FooterEven];
 footer?.Remove();
 ```
 
-## الخطوة 5: احفظ المستند المعدل
+## Steg 5: Spara det ändrade dokumentet
 
-بمجرد الانتهاء من إزالة التذييلات ، يمكننا حفظ المستند المحرر في ملف منفصل.
+När vi är klara med att ta bort sidfötterna kan vi spara det redigerade dokumentet i en separat fil.
 
 ```csharp
 doc.Save(dataDir + "Name_of_modified_document.docx");
 ```
 
-لا تنس تحديد اسم وموقع الملف المعدل في "Name_of_modified_document.docx".
+Glöm inte att ange namnet och platsen för den modifierade filen i "Name_of_modified_document.docx".
 
-### نموذج التعليمات البرمجية المصدر لإزالة التذييلات باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Ta bort sidfötter med Aspose.Words för .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Header and footer types.docx");
 
 foreach (Section section in doc)
 {
-	// ما يصل إلى ثلاثة تذييلات مختلفة ممكنة في قسم (للصفحات الأولى ، الزوجية والفردية)
-	// نتحقق منها ونحذفها جميعًا.
+	// Upp till tre olika sidfötter är möjliga i ett avsnitt (för första, jämna och udda sidor)
+	// vi kontrollerar och raderar dem alla.
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// التذييل الأساسي هو التذييل المستخدم للصفحات الفردية.
+	// Primär sidfot är sidfoten som används för udda sidor.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
         
 ```
 
-## خاتمة
+## Slutsats
 
-في هذه المقالة ، اكتشفنا كيفية إزالة التذييلات من مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات المقدمة ، يمكنك بسهولة معالجة مستنداتك وإزالة التذييلات غير المرغوب فيها. يقدم Aspose.Words حلاً فعالاً وملائماً للعمل مع مستندات Word في تطبيق .NET الخاص بك.
+I den här artikeln undersökte vi hur man tar bort sidfötter från ett Word-dokument med Aspose.Words för .NET. Genom att följa de angivna stegen kan du enkelt manipulera dina dokument och ta bort oönskade sidfötter. Aspose.Words erbjuder en kraftfull och bekväm lösning för att arbeta med Word-dokument i din .NET-applikation.
 

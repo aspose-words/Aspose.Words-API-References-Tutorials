@@ -1,48 +1,48 @@
 ---
-title: فك الإشارات المرجعية في الصف
-linktitle: فك الإشارات المرجعية في الصف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية فك تشابك الإشارات المرجعية للصفوف المتداخلة لإزالة صفوف معينة دون التأثير على الإشارات المرجعية الأخرى.
+title: Zeilenlesezeichen entwirren
+linktitle: Zeilenlesezeichen entwirren
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie verschachtelte Zeilenlesezeichen entwirren, um bestimmte Zeilen zu entfernen, ohne dass sich dies auf andere Lesezeichen auswirkt.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Untangle Row Bookmarks في Aspose.Words for .NET library. تتيح هذه الوظيفة إمكانية وضع نهايات الإشارات المرجعية للسطر في نفس السطر مثل بدايات الإشارات المرجعية.
+In diesem Artikel untersuchen wir den obigen C#-Quellcode, um zu verstehen, wie die Funktion „Zeilenlesezeichen entwirren“ in der Bibliothek „Aspose.Words für .NET“ verwendet wird. Diese Funktion ermöglicht es, die Enden von Lesezeichen von Zeilen in die gleiche Zeile wie die Anfänge von Lesezeichen zu setzen.
 
-## المتطلبات الأساسية
+## Voraussetzungen
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundkenntnisse der C#-Sprache.
+- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
 
-## الخطوة 1: تحميل المستند
+## Schritt 1: Laden des Dokuments
 
- نحن نستخدم ال`Document` فئة لتحميل المستند الحالي من ملف:
+ Wir benutzen das`Document` Klasse zum Laden des vorhandenen Dokuments aus einer Datei:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## الخطوة 2: كشف خط الإشارات المرجعية
+## Schritt 2: Linien-Lesezeichen entwirren
 
- نحن نستخدم ال`Untangle` وظيفة لفك تشابك الإشارات المرجعية من الصفوف. تؤدي هذه الوظيفة المهمة المخصصة لوضع نهايات الأسطر المرجعية في نفس السطر الذي تبدأ فيه الإشارة المرجعية:
+ Wir benutzen das`Untangle` Funktion zum Entwirren von Lesezeichen aus Zeilen. Diese Funktion führt die benutzerdefinierte Aufgabe aus, die Enden der Lesezeichenzeilen in derselben Zeile zu platzieren, in der das Lesezeichen beginnt:
 
 ```csharp
 Untangle(doc);
 ```
 
-## الخطوة 3: حذف سطر بإشارة مرجعية
+## Schritt 3: Zeile per Lesezeichen löschen
 
- نحن نستخدم ال`DeleteRowByBookmark` وظيفة لحذف صف معين من خلال الإشارة المرجعية الخاصة به:
+ Wir benutzen das`DeleteRowByBookmark` Funktion zum Löschen einer bestimmten Zeile anhand ihres Lesezeichens:
 
 ```csharp
 DeleteRowByBookmark(doc, "ROW2");
 ```
 
-## الخطوة 4: التحقق من سلامة الإشارات المرجعية الأخرى
+## Schritt 4: Überprüfen Sie die Integrität anderer Lesezeichen
 
-نتحقق من عدم تلف الإشارات المرجعية الأخرى عن طريق التحقق مما إذا كانت نهاية الإشارة المرجعية لا تزال موجودة:
+Wir stellen sicher, dass die anderen Lesezeichen nicht beschädigt wurden, indem wir prüfen, ob das Ende des Lesezeichens noch vorhanden ist:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -51,24 +51,24 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### مثال على شفرة المصدر لـ Untangle Row Bookmarks باستخدام Aspose.Words for .NET**
+### Beispielquellcode für Untangle Row Bookmarks mit Aspose.Words für .NET**
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لفك تشابك الإشارات المرجعية من الأسطر باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Beispielquellcode zum Entwirren von Lesezeichen aus Zeilen mithilfe von Aspose.Words für .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	//يؤدي ذلك إلى تنفيذ المهمة المخصصة لوضع إشارة مرجعية للصف في نفس الصف مع بدء الإشارة المرجعية.
+	//Dadurch wird die benutzerdefinierte Aufgabe ausgeführt, die Enden der Zeilenlesezeichen in derselben Zeile wie die Lesezeichenanfänge zu platzieren.
 	Untangle(doc);
 
-	// يمكننا الآن حذف الصفوف بسهولة بواسطة إشارة مرجعية دون الإضرار بأي إشارات مرجعية للصفوف الأخرى.
+	// Jetzt können wir ganz einfach Zeilen mit einem Lesezeichen löschen, ohne die Lesezeichen einer anderen Zeile zu beschädigen.
 	DeleteRowByBookmark(doc, "ROW2");
 
-	// هذا فقط للتحقق من عدم تلف الإشارة المرجعية الأخرى.
+	// Dies dient lediglich der Überprüfung, ob das andere Lesezeichen nicht beschädigt wurde.
 	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
 		throw new Exception("Wrong, the end of the bookmark was deleted.");
 
@@ -76,6 +76,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 
 ```
 
-## خاتمة
+## Abschluss
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة Untangle Row Bookmarks في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لفك تشابك الإشارات المرجعية للصفوف وحذف صف معين دون الإضرار بالإشارات المرجعية الأخرى.
+In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Zeilenlesezeichen entwirren“ von Aspose.Words für .NET verwendet wird. Wir haben eine Schritt-für-Schritt-Anleitung befolgt, um Zeilenlesezeichen zu entwirren und eine bestimmte Zeile zu löschen, ohne andere Lesezeichen zu beschädigen.

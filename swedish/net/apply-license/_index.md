@@ -1,18 +1,18 @@
 ---
-title: تطبيق الترخيص
-linktitle: تطبيق الترخيص
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على إرشادات خطوة بخطوة لتطبيق ترخيص Aspose.Words في مشاريع .NET الخاصة بك. اتبع الخطوات لتمكين الوظائف الكاملة لمكتبة Aspose.Words.
+title: Tillämpa licens
+linktitle: Tillämpa licens
+second_title: Aspose.Words för .NET API Referens
+description: Få steg-för-steg-instruktioner för att tillämpa en Aspose.Words-licens i dina .NET-projekt. Följ stegen för att aktivera full funktionalitet för Aspose.Words-biblioteket.
 type: docs
 weight: 10
 url: /sv/net/apply-license/
 ---
 
-توفر هذه الصفحة دليلاً مفصلاً حول كيفية تطبيق ترخيص في مشاريع تستخدم Aspose.Words for .NET. يشرح هذا البرنامج التعليمي خطوة بخطوة كيفية استخدام ترخيص لتفعيل جميع ميزات Aspose.Words. كما يوفر نموذج التعليمات البرمجية لتوضيح عملية الترخيص. اتبع هذا الدليل لتطبيق الترخيص والحصول على أقصى استفادة من مكتبة Aspose.Words القوية في تطبيقات .NET.
+Den här sidan ger en detaljerad guide om hur man ansöker om en licens i projekt som använder Aspose.Words för .NET. Denna handledning förklarar steg för steg hur man använder en licens för att aktivera alla funktioner i Aspose.Words. Den tillhandahåller också exempelkod för att illustrera licensieringsprocessen. Följ den här guiden för att ansöka om licens och få ut det mesta av det kraftfulla Aspose.Words-biblioteket i dina .NET-applikationer.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [تطبيق الترخيص من ملف](./apply-license-from-file/) | تعرف على كيفية تطبيق ترخيص من ملف باستخدام Aspose.Words for .NET.|
-| [تطبيق الترخيص من الدفق](./apply-license-from-stream/) | تعرف على كيفية تطبيق ترخيص من تدفق باستخدام Aspose.Words for .NET.|
-| [تطبيق الترخيص المقنن](./apply-metered-license/) | تعرف على كيفية تطبيق ترخيص محدود باستخدام Aspose.Words for .NET. |
+| [Tillämpa licens från fil](./apply-license-from-file/) | Lär dig hur du ansöker om en licens från en fil med Aspose.Words för .NET.|
+| [Använd licens från Stream](./apply-license-from-stream/) | Lär dig hur du ansöker om en licens från en stream med Aspose.Words för .NET.|
+| [Tillämpa mätlicens](./apply-metered-license/) | Lär dig hur du ansöker en uppmätt licens med Aspose.Words för .NET. |

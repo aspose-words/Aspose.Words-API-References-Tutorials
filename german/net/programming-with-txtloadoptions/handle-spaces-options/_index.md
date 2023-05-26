@@ -1,23 +1,23 @@
 ---
-title: التعامل مع خيارات المسافات
-linktitle: التعامل مع خيارات المسافات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدارة المساحات في مستندات TXT الخاصة بك باستخدام Aspose.Words for .NET. قم بإزالة المسافات غير الضرورية وتحسين إمكانية القراءة.
+title: Optionen für Leerzeichen behandeln
+linktitle: Optionen für Leerzeichen behandeln
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie Leerzeichen in Ihren TXT-Dokumenten mit Aspose.Words für .NET verwalten. Entfernen Sie unnötige Leerzeichen und verbessern Sie die Lesbarkeit.
 type: docs
 weight: 10
 url: /de/net/programming-with-txtloadoptions/handle-spaces-options/
 ---
 
-في هذا البرنامج التعليمي ، سنستكشف كود المصدر C # المقدم لوظيفة "إدارة المساحات باستخدام خيارات تحميل TXT" مع Aspose.Words for .NET. تتيح لك هذه الميزة تحديد سلوك معالجة المسافات البيضاء عند تحميل مستند TXT.
+In diesem Tutorial untersuchen wir den C#-Quellcode, der für die Funktionalität „Verwalten von Leerzeichen mit TXT-Ladeoptionen“ mit Aspose.Words für .NET bereitgestellt wird. Mit dieser Funktion können Sie das Verhalten beim Umgang mit Leerzeichen beim Laden eines TXT-Dokuments festlegen.
 
-## الخطوة الأولى: تهيئة البيئة
+## Schritt 1: Einrichten der Umgebung
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Bevor Sie beginnen, stellen Sie sicher, dass Sie Ihre Entwicklungsumgebung mit Aspose.Words für .NET eingerichtet haben. Stellen Sie sicher, dass Sie die erforderlichen Verweise hinzugefügt und die entsprechenden Namespaces importiert haben.
 
-## الخطوة 2: إنشاء مستند نصي
+## Schritt 2: Erstellen des Textdokuments
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 const string textDoc = "Line 1\n" +
@@ -25,9 +25,9 @@ const string textDoc = "Line 1\n" +
                         "Line 3";
 ```
 
-في هذه الخطوة ، نقوم بإنشاء سلسلة نصية تحاكي مستندًا نصيًا يحتوي على أسطر بها مسافات بادئة وزائدة.
+In diesem Schritt erstellen wir eine Textzeichenfolge, die ein Textdokument simuliert, das Zeilen mit führenden und nachgestellten Leerzeichen enthält.
 
-## الخطوة 3: تكوين خيارات التحميل
+## Schritt 3: Upload-Optionen konfigurieren
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions
@@ -37,32 +37,32 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- في هذه الخطوة ، نقوم بتهيئة الخيارات لتحميل مستند TXT. نخلق ملف`TxtLoadOptions` كائن وتعيين`LeadingSpacesOptions` و`TrailingSpacesOptions` خصائص`TxtLeadingSpacesOptions.Trim` و`TxtTrailingSpacesOptions.Trim` على التوالى. هذا يخبر Aspose. Words بإزالة المسافات البادئة والزائدة من الأسطر عند تحميل المستند.
+ In diesem Schritt konfigurieren wir die Optionen zum Laden des TXT-Dokuments. Wir schaffen ein Neues`TxtLoadOptions` Objekt und legen Sie das fest`LeadingSpacesOptions` Und`TrailingSpacesOptions` Eigenschaften zu`TxtLeadingSpacesOptions.Trim` Und`TxtTrailingSpacesOptions.Trim` bzw. Dadurch wird Aspose.Words angewiesen, beim Laden des Dokuments führende und nachgestellte Leerzeichen aus Zeilen zu entfernen.
 
-## الخطوة 4: تحميل المستند
+## Schritt 4: Laden des Dokuments
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير دفق الذاكرة الذي يحتوي على سلسلة نصية محددة وخيارات التحميل.
+ In diesem Schritt laden wir das Dokument mit`Document` -Methode und Übergabe des Speicherstreams, der die angegebene Textzeichenfolge und Ladeoptionen enthält.
 
-## الخطوة 5: احفظ المستند
+## Schritt 5: Speichern Sie das Dokument
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ المستند الناتج بتنسيق docx. باستخدام الامتداد`Save` الطريقة وتمرير المسار إلى ملف الإخراج.
+ In diesem letzten Schritt speichern wir das resultierende Dokument im .docx-Format mit`Save` -Methode und Übergabe des Pfads zur Ausgabedatei.
 
-يمكنك الآن تشغيل الكود المصدري لتحميل المستند النصي عن طريق تحديد خيارات معالجة المسافات. سيتم حفظ المستند الناتج في الدليل المحدد باسم "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx".
+Jetzt können Sie den Quellcode ausführen, um das Textdokument zu laden, indem Sie Optionen für die Leerzeichenbehandlung angeben. Das resultierende Dokument wird im angegebenen Verzeichnis mit dem Namen „WorkingWithTxtLoadOptions.HandleSpacesOptions.docx“ gespeichert.
 
-### نموذج رمز مصدر لميزة إدارة المساحة مع خيارات تحميل TXT مع Aspose.Words for .NET*
+### Beispielquellcode für die Speicherverwaltungsfunktion mit TXT-Ladeoptionen mit Aspose.Words für .NET*
 
 ```csharp
 
             
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 const string textDoc = "      Line 1 \n" +
@@ -82,18 +82,18 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx")
         
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة إدارة المساحات باستخدام خيارات تحميل TXT في Aspose.Words for .NET. لقد تعلمنا كيفية تحديد سلوك التعامل مع المسافات البيضاء عند تحميل مستند TXT.
+In diesem Tutorial haben wir die Funktionalität der Verwaltung von Leerzeichen mit TXT-Ladeoptionen in Aspose.Words für .NET untersucht. Wir haben gelernt, wie man das Verhalten beim Umgang mit Leerzeichen beim Laden eines TXT-Dokuments festlegt.
 
-هذه الميزة مفيدة جدًا للتعامل مع المسافات غير الضرورية على يسار ويمين الأسطر في المستند. من خلال تكوين خيارات التحميل المناسبة ، يمكنك بسهولة إزالة هذه المساحات غير المرغوب فيها ، مما يساعد على جعل محتوى المستند أكثر وضوحًا وقابلية للقراءة.
+Diese Funktion ist sehr nützlich, um mit unnötigen Leerzeichen links und rechts von Zeilen in einem Dokument umzugehen. Durch die Konfiguration der entsprechenden Ladeoptionen können Sie diese unerwünschten Leerzeichen einfach entfernen, was dazu beiträgt, den Inhalt des Dokuments sauberer und lesbarer zu machen.
 
-يوفر Aspose.Words for .NET العديد من الميزات المتقدمة لمعالجة المستندات وإنشائها. تعد إدارة المساحات عند تحميل مستند TXT واحدة من العديد من الأدوات القوية التي تضعها تحت تصرفك.
+Aspose.Words für .NET bietet viele erweiterte Funktionen für die Dokumentbearbeitung und -generierung. Das Verwalten von Leerzeichen beim Laden eines TXT-Dokuments ist eines der vielen leistungsstarken Tools, die Ihnen zur Verfügung stehen.
 
- من المهم اختيار خيارات إدارة المساحة التي تناسب السيناريو الخاص بك بشكل أفضل. في هذا المثال ، استخدمنا الامتداد`Trim`خيارات لإزالة المسافات غير الضرورية من بداية ونهاية السطر. ومع ذلك ، لدى Aspose.Words أيضًا خيارات أخرى للاحتفاظ بالمسافات أو إزالتها تمامًا أو الاحتفاظ بها كما هي.
+ Es ist wichtig, die Raumverwaltungsoptionen auszuwählen, die am besten zu Ihrem spezifischen Szenario passen. In diesem Beispiel haben wir das verwendet`Trim`Optionen zum Entfernen unnötiger Leerzeichen am Anfang und Ende der Zeile. Aspose.Words verfügt jedoch auch über andere Optionen, um Leerzeichen beizubehalten, sie vollständig zu entfernen oder sie unverändert zu lassen.
 
-لا تنس تكييف هذه الخيارات وفقًا لاحتياجاتك الخاصة وهيكل مستندات TXT الخاصة بك.
+Vergessen Sie nicht, diese Optionen an Ihre spezifischen Bedürfnisse und die Struktur Ihrer TXT-Dokumente anzupassen.
 
-باستخدام Aspose.Words for .NET ، يمكنك بسهولة معالجة المسافات البيضاء في مستنداتك ، وتحسين جودة التخطيط وقابلية قراءة المحتوى.
+Mit Aspose.Words für .NET können Sie Leerzeichen in Ihren Dokumenten einfach bearbeiten und so die Layoutqualität und die Lesbarkeit des Inhalts verbessern.
 
-لذلك ، لا تتردد في دمج إدارة المسافات البيضاء مع خيارات تحميل TXT في Aspose.Words لمشاريع .NET واستفد من مزاياها لإنشاء مستندات جيدة التنسيق وسهلة القراءة.
+Zögern Sie also nicht, die Whitespace-Verwaltung mit TXT-Ladeoptionen in Ihre Aspose.Words für .NET-Projekte zu integrieren und nutzen Sie deren Vorteile, um gut formatierte und leicht lesbare Dokumente zu erstellen.

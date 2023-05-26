@@ -1,22 +1,22 @@
 ---
-title: إزالة المحتوى
-linktitle: إزالة المحتوى
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إزالة فواصل الصفحات ، وإزالة فواصل الصفحات ، وإزالة فواصل الأقسام ، وإزالة التذييلات ، وإزالة toc ، وإزالة جدول المحتويات
+title: İçeriği Kaldır
+linktitle: İçeriği Kaldır
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, sayfa sonlarını kaldırmayı, sayfa sonlarını kaldırmayı, bölüm sonlarını kaldırmayı, altbilgileri kaldırmayı, toc'u kaldırmayı ve içindekiler tablosunu kaldırmayı içerir
 type: docs
 weight: 1370
 url: /tr/net/remove-content/
 ---
-قم بإزالة المحتوى من مستند يرشدك خطوة بخطوة لفهم كيفية استخدام مكتبة Aspose.Words لإزالة محتوى معين ، مثل النص أو الصور أو الجداول ، من مستند Word. ستتعلم كيفية استخدام ميزات البحث والحذف في Aspose.Words لتبسيط عملية معالجة المستندات وتحسين أتمتة مهامك.
+Belgeden içeriği kaldır, bir Word belgesinden metin, resim veya tablo gibi belirli içeriği kaldırmak için Aspose.Words kitaplığını nasıl kullanacağınızı anlamanız için size adım adım rehberlik eder. Belge işleme sürecini basitleştirmek ve görevlerinizin otomasyonunu geliştirmek için Aspose.Words'ün arama ve silme özelliklerini nasıl kullanacağınızı öğreneceksiniz.
 
-توفر هذه البرامج التعليمية أمثلة واضحة وموجزة على التعليمات البرمجية مع شرح خطوة بخطوة ، مما يجعل من السهل تعلم المفاهيم وتطبيقها في الممارسة العملية. باتباع الخطوات المقدمة ، ستتمكن من فهم أساسيات استخدام Aspose.Words for .NET وتطبيق هذه المعرفة على مشاريعك الخاصة. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على تعلم المهارات التي تحتاجها للعمل بفعالية مع مستندات Word في تطبيقاتك.
+Bu öğreticiler, adım adım açıklamalarla açık ve özlü kod örnekleri sunarak öğrenmeyi ve kavramları pratikte uygulamayı kolaylaştırır. Verilen adımları takip ederek Aspose.Words for .NET kullanımının temellerini anlayabilecek ve bu bilgileri kendi projelerinize uygulayabileceksiniz. İster yeni başlayan ister deneyimli bir geliştirici olun, bu eğitimler, uygulamalarınızda Word belgeleriyle etkili bir şekilde çalışmak için ihtiyaç duyduğunuz becerileri öğrenmenize yardımcı olacaktır.
 
-سواء أكنت بحاجة إلى معالجة مستندات Word أو إنشائها أو تحويلها أو إنشائها ، فإن برامج Aspose.Words for .NET التعليمية تزودك بالمعرفة والمهارات اللازمة لاستغلال وظائف مكتبة Aspose.Words بشكل كامل. من خلال فهم هذه المفاهيم الأساسية ، ستتمكن من تطوير تطبيقات قوية ومخصصة لتلبية احتياجات معالجة مستندات Word الخاصة بك.
+İster Word belgelerini manipüle etmeye, oluşturmaya, dönüştürmeye veya üretmeye ihtiyacınız olsun, Aspose.Words for .NET eğitimleri size Aspose.Words kitaplığının işlevselliğinden tam anlamıyla yararlanmanız için gereken bilgi ve becerileri sağlar. Bu temel kavramları anlayarak, özel Word belge işleme ihtiyaçlarınızı karşılamak için güçlü, özel uygulamalar geliştirebileceksiniz.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [إزالة فواصل الصفحات](./remove-page-breaks/) | تعرف على كيفية إزالة فواصل الصفحات في مستند باستخدام Aspose.Words Library for .NET. اتبع دليلنا المفصل خطوة بخطوة للحصول على تخطيط سلس. |
-| [إزالة فواصل المقاطع](./remove-section-breaks/) | تعرف على كيفية إزالة فواصل الأقسام في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تخلص بشكل فعال من فواصل المقاطع التي يمكن أن تعطل تنسيق المستند.|
-| [إزالة التذييلات](./remove-footers/) | تعرف على كيفية إزالة التذييلات بسهولة من مستندات Word باستخدام Aspose.Words for .NET. اتبع دليلنا المفصل خطوة بخطوة للتعامل الفعال مع ملفات DOCX. |
-| [قم بإزالة جدول المحتويات](./remove-table-of-contents/) | تعرف على كيفية إزالة جدول المحتويات من مستند Word باستخدام Aspose.Words for .NET. |
+| [Sayfa Sonlarını Kaldır](./remove-page-breaks/) | Aspose.Words Library for .NET'i kullanarak bir belgedeki sayfa sonlarını nasıl kaldıracağınızı öğrenin. Sorunsuz bir düzen için adım adım kılavuzumuzu izleyin. |
+| [Bölüm Sonlarını Kaldır](./remove-section-breaks/) | Aspose.Words library for .NET kullanarak bir Word belgesindeki bölüm sonlarını nasıl kaldıracağınızı öğrenin. Belge biçimlendirmenizi bozabilecek bölüm sonlarını etkili bir şekilde ortadan kaldırın.|
+| [Altbilgileri Kaldır](./remove-footers/) | Aspose.Words for .NET ile Word belgelerinden alt bilgileri kolayca nasıl kaldıracağınızı öğrenin. DOCX dosyalarının verimli bir şekilde işlenmesi için adım adım kılavuzumuzu izleyin. |
+| [İçindekiler Tablosunu Kaldır](./remove-table-of-contents/) | Aspose.Words for .NET kullanarak bir Word belgesinden içindekileri nasıl kaldıracağınızı öğrenin. |

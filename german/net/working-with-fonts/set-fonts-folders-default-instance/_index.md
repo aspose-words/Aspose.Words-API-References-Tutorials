@@ -1,47 +1,47 @@
 ---
-title: تعيين المثيل الافتراضي مجلدات الخطوط
-linktitle: تعيين المثيل الافتراضي مجلدات الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتعيين مجلد الخط الافتراضي عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Legen Sie die Standardinstanz für Schriftartenordner fest
+linktitle: Legen Sie die Standardinstanz für Schriftartenordner fest
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Festlegen des Standardschriftartordners beim Rendern eines Dokuments mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/set-fonts-folders-default-instance/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلد الخط الافتراضي عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تعيين مجلد الخط الافتراضي لاستخدامه عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess zum Festlegen des Standardschriftartordners beim Rendern eines Dokuments mit Aspose.Words für .NET. Wir erklären Ihnen den gebündelten C#-Quellcode und stellen Ihnen eine umfassende Anleitung zur Verfügung, die Ihnen hilft, diese Funktion zu verstehen und in Ihren eigenen Projekten zu implementieren. Am Ende dieses Tutorials erfahren Sie, wie Sie den Standardschriftartordner festlegen, der beim Rendern Ihrer Dokumente mit Aspose.Words für .NET verwendet werden soll.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+Zuerst müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis festlegen. Dies ist der Ort, an dem Sie Ihr bearbeitetes gerendertes Dokument speichern möchten. Ersetzen Sie „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تعيين مجلد الخط الافتراضي
- ثم يمكنك تعيين مجلد الخط الافتراضي باستخدام ملف`FontSettings.DefaultInstance` الطبقة و`SetFontsFolder()` طريقة. حدد المسار إلى مجلد الخطوط الذي تريد استخدامه كمجلد افتراضي.
+## Schritt 2: Legen Sie den Standard-Schriftartenordner fest
+ Anschließend können Sie den Standard-Schriftartenordner mithilfe von festlegen`FontSettings.DefaultInstance` Klasse und die`SetFontsFolder()` Methode. Geben Sie den Pfad zum Schriftartenordner an, den Sie als Standardordner verwenden möchten.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
 ```
 
-## الخطوة 3: قم بتحميل المستند للعرض
- يمكنك الآن تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Schritt 3: Laden Sie das zu rendernde Dokument
+ Jetzt können Sie das zu rendernde Dokument mit laden`Document` Klasse. Stellen Sie sicher, dass Sie den richtigen Dokumentpfad angeben.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 4: احفظ المستند المقدم
- أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## Schritt 4: Speichern Sie das gerenderte Dokument
+ Schließlich können Sie das gerenderte Dokument mithilfe von in einer Datei speichern`Save()` Methode der`Document` Klasse. Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen angeben.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders Default Instance باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Set Fonts Folders Default Instance“ mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
@@ -49,5 +49,5 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلد الخط الافتراضي عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلد الخطوط الذي تريد استخدامه كمجلد افتراضي عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+## Abschluss
+In diesem Tutorial haben wir gelernt, wie man den Standardschriftartordner beim Rendern eines Dokuments mit Aspose.Words für .NET festlegt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie ganz einfach angeben, welcher Schriftartenordner beim Rendern Ihrer Dokumente als Standardordner verwendet werden soll. Aspose.Words bietet eine leistungsstarke und flexible API für die Arbeit mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die beim Rendern Ihrer Dokumente verwendeten Schriftartquellen steuern und an Ihre spezifischen Anforderungen anpassen.

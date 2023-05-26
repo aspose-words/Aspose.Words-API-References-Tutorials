@@ -1,31 +1,31 @@
 ---
-title: إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه
-linktitle: إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إظهار أو إخفاء محتوى الإشارات المرجعية باستخدام Aspose.Words for .NET.
+title: 显示隐藏书签内容
+linktitle: 显示隐藏书签内容
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 显示或隐藏书签内容。
 type: docs
 weight: 10
 url: /zh/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إظهار إخفاء المحتوى المرتبط بإشارة مرجعية في Aspose.Words for .NET library. تتيح لك هذه الميزة إظهار أو إخفاء محتويات إشارة مرجعية بناءً على شرط معين عند دمج البيانات.
+在本文中，我们将探索上述 C# 源代码，以了解如何在 Aspose.Words for .NET 库中使用显示隐藏书签内容功能。此功能允许您在合并数据时根据特定条件显示或隐藏书签的内容。
 
-## المتطلبات الأساسية
+## 先决条件
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# 语言的基础知识。
+- 安装了 Aspose.Words 库的 .NET 开发环境。
 
-## الخطوة 1: الحصول على الإشارة المرجعية
+## 第 1 步：获取书签
 
- نحن نستخدم ال`Bookmarks` خاصية نطاق المستند للحصول على الإشارة المرجعية المحددة التي نريد إظهار المحتوى أو إخفائه:
+我们使用`Bookmarks`文档范围的属性以获取我们要显示或隐藏内容的特定书签：
 
 ```csharp
 Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 ```
 
-## الخطوة 2: إدراج حقول الدمج
+## 第 2 步：插入合并字段
 
- نحن نستخدم منشئ المستندات`DocumentBuilder` لإدراج حقول الدمج الضرورية. ستعمل حقول الدمج هذه على تعيين شرط لإظهار أو إخفاء محتوى الإشارة المرجعية بناءً على قيمة`showHide` عامل:
+我们使用文档生成器`DocumentBuilder`插入必要的合并字段。这些合并字段将设置一个条件来显示或隐藏书签内容，具体取决于`showHide`多变的：
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -40,11 +40,11 @@ builder. Write("\"");
 builder. Write(" \"\"");
 ```
 
-## الخطوة 3: نقل محتوى الإشارة المرجعية
+## 第 3 步：移动书签内容
 
-ندور محتويات الإشارة المرجعية وننقلها حتى تظهر
+我们遍历书签的内容并移动它以使其出现
 
-ISSE قبل الإشارة المرجعية. سيتحكم هذا في إظهار المحتوى أو إخفائه بناءً على الشرط المحدد:
+书签前的 isse。这将根据指定条件控制显示或隐藏内容：
 
 ```csharp
 Node currentNode = field. Start;
@@ -62,9 +62,9 @@ while (currentNode != null && flag)
 }
 ```
 
-## الخطوة 4: نقل باقي محتوى الإشارة المرجعية
+## 第 4 步：移动剩余的书签内容
 
-نقوم بنقل باقي محتوى الإشارة المرجعية بعد الإشارة المرجعية ، باستخدام عقدة نهاية الإشارة المرجعية كنقطة إدخال:
+我们将剩余的书签内容移动到书签之后，使用书签的结束节点作为插入点：
 
 ```csharp
 Node endNode = bm.BookmarkEnd;
@@ -82,17 +82,17 @@ while (currentNode != null && flag)
 }
 ```
 
-## الخطوة 5: تنفيذ الدمج
+## 第 5 步：执行合并
 
- نحن نستخدم ال`Execute` طريقة الوثيقة`s `دمج المراسلات` object to execute the merge using the bookmark name and the value of the `متغير showHide`:
+我们使用`Execute`文档的方法`s `邮件合并` object to execute the merge using the bookmark name and the value of the `showHide` 变量：
 
 ```csharp
 doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 ```
 
-### مثال على شفرة المصدر لـ Show Hide Bookmarked Content باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 显示隐藏书签内容的示例源代码
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح إظهار أو إخفاء محتوى الإشارة المرجعية باستخدام Aspose.Words for .NET:
+以下是演示使用 Aspose.Words for .NET 显示或隐藏书签内容的完整源代码示例：
 
 ```csharp
 
@@ -101,7 +101,7 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.MoveToDocumentEnd();
 
-	// {إذا كان "{MERGEFIELD إشارة مرجعية}" = "صحيح" "" ""}
+	// {IF "{MERGEFIELD 书签}" = "true" "" ""}
 	Field field = builder.InsertField("IF \"", null);
 	builder.MoveTo(field.Start.NextSibling);
 	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
@@ -142,6 +142,6 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 
 ```
 
-## خاتمة
+## 结论
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة إظهار إخفاء المحتوى المرتبط بإشارة مرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإظهار أو إخفاء محتويات إشارة مرجعية بناءً على شرط معين عند دمج البيانات.
+在本文中，我们探索了 C# 源代码以了解如何使用 Aspose.Words for .NET 的显示隐藏书签内容功能。我们已按照分步指南在合并数据时根据特定条件显示或隐藏书签的内容。

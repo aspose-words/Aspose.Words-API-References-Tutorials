@@ -1,33 +1,33 @@
 ---
-title: حل أسماء الخطوط
-linktitle: حل أسماء الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لحل أسماء الخطوط المفقودة عند التحويل إلى HTML باستخدام Aspose.Words for .NET.
+title: Yazı Tipi Adlarını Çöz
+linktitle: Yazı Tipi Adlarını Çöz
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile HTML'ye dönüştürürken eksik yazı tipi adlarını çözmek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر التعليمات البرمجية المصدر C # لحل أسماء الخطوط المفقودة باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة حل أسماء الخطوط المفقودة تلقائيًا عند تحويل مستند إلى HTML.
+Bu eğitimde, Aspose.Words for .NET ile eksik yazı tipi adlarını çözmek için C# kaynak kodunda size yol göstereceğiz. Bu özellik, bir belgeyi HTML'ye dönüştürürken eksik yazı tipi adlarını otomatik olarak çözmenizi sağlar.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-في هذه الخطوة ، سنقوم بتحميل المستند لتتم معالجته. استخدم الكود التالي لتحميل المستند من دليل محدد:
+Bu adımda, işlenecek belgeyi yükleyeceğiz. Belgeyi belirli bir dizinden yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Missing font.docx");
 ```
 
- هذا الرمز ينشئ مثيل`Document` عن طريق تحميل المستند من الدليل المحدد.
+ Bu kod, örneğini oluşturur`Document` belgeyi belirtilen dizinden yükleyerek.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي بتنسيق HTML
+## 3. Adım: HTML yedekleme seçeneklerini yapılandırma
 
-سنقوم الآن بتكوين خيارات حفظ HTML لحل أسماء الخطوط المفقودة أثناء التحويل. استخدم الكود التالي:
+Şimdi dönüştürme sırasında eksik yazı tipi adlarını çözmek için HTML kaydetme seçeneklerini yapılandıracağız. Aşağıdaki kodu kullanın:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
@@ -37,23 +37,23 @@ ResolveFontNames=true
 };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions`وتعيين`ResolveFontNames` الخيار ل`true` لحل أسماء الخطوط المفقودة عند التحويل إلى HTML. أيضا ،`PrettyFormat` تم تعيين الخيار إلى`true` للحصول على كود HTML منسق بشكل جيد.
+ Bu kod, örneğini oluşturur`HtmlSaveOptions`ve ayarlar`ResolveFontNames` seçeneği`true` HTML'ye dönüştürürken eksik yazı tipi adlarını çözmek için. Ayrıca`PrettyFormat` seçeneği ayarlandı`true` güzel biçimlendirilmiş HTML kodu almak için.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## 4. Adım: Belgeyi HTML'ye dönüştürme ve kaydetme
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+Son olarak, daha önce yapılandırılmış HTML kaydetme seçeneklerini kullanarak belgeyi HTML'ye dönüştüreceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML عن طريق حل أسماء الخطوط المفقودة تلقائيًا ، ويحفظ ملف HTML المحول في الدليل المحدد.
+Bu kod, eksik yazı tipi adlarını otomatik olarak çözerek belgeyi HTML'ye dönüştürür ve dönüştürülen HTML dosyasını belirtilen dizine kaydeder.
 
-### مثال على شفرة المصدر لحل أسماء الخطوط باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Yazı Tipi Adlarını Çözümlemek için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Missing font.docx");
 
@@ -66,4 +66,4 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptio
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+ içindeki belgeler dizinine giden doğru yolu belirttiğinizden emin olun.`dataDir` değişken.

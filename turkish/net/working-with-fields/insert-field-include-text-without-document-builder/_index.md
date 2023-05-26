@@ -1,70 +1,70 @@
 ---
-title: قم بإدراج FieldIncludeText بدون Document Builder
-linktitle: قم بإدراج FieldIncludeText بدون Document Builder
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل FieldIncludeText في مستندات Word باستخدام Aspose.Words for .NET.
+title: Belge Oluşturucu Olmadan FieldIncludeText Ekleme
+linktitle: Belge Oluşturucu Olmadan FieldIncludeText Ekleme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile Word belgelerinize FieldIncludeText alanını nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود مصدر C # أدناه ، والذي يستخدم وظيفة "إدراج حقل FieldIncludeText" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aspose.Words for .NET'in "Bir FieldIncludeText alanı ekle" işlevini kullanan aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz. İstenen sonuçları elde etmek için her adımı dikkatlice uyguladığınızdan emin olun.
 
-## الخطوة 1: إعداد دليل المستند
+## 1. Adım: Belge Dizini Kurulumu
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## 2. Adım: Belgeyi ve Paragrafı Oluşturma
 
-نبدأ بإنشاء مستند جديد وتهيئة فقرة.
+Yeni bir belge oluşturarak ve bir paragraf başlatarak başlıyoruz.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 3: إدراج حقل FieldIncludeText
+## 3. Adım: FieldIncludeText alanını ekleme
 
- نحن نستخدم ال`AppendField()` طريقة لإدراج حقل FieldIncludeText في الفقرة.
+ biz kullanıyoruz`AppendField()` Paragrafa bir FieldIncludeText alanı eklemek için yöntem.
 
 ```csharp
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
 ```
 
-ثم نقوم بتكوين خصائص حقل FieldIncludeText عن طريق تحديد اسم الإشارة المرجعية واسم الملف المصدر.
+Ardından, yer işaretinin adını ve kaynak dosyanın adını belirterek FieldIncludeText alanının özelliklerini yapılandırıyoruz.
 
 ```csharp
 fieldIncludeText.BookmarkName = "bookmark";
 fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
 ```
 
-بعد ذلك ، نضيف الفقرة إلى نص المستند.
+Ardından, paragrafı belgenin gövdesine ekliyoruz.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Son olarak, diyoruz`Update()` alanı güncelleme yöntemi.
 
 ```csharp
 fieldIncludeText.Update();
 ```
 
-### مثال على شفرة المصدر لإدخال حقل FieldIncludeText مع Aspose.Words for .NET
+### Aspose.Words for .NET ile bir FieldIncludeText alanı eklemek için kaynak kodu örneği
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند والفقرة.
+// Belgeyi ve paragrafı oluşturun.
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
-// أدخل الحقل FieldIncludeText.
+// FieldIncludeText alanını ekleyin.
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
 
 fieldIncludeText.BookmarkName = "bookmark";
@@ -77,6 +77,6 @@ fieldIncludeText.Update();
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأعدنا فقرة ، وأدخلنا FieldIncludeTexten يحدد اسم الإشارة المرجعية واسم الملف المصدر ، وحفظنا المستند باسم ملف محدد.
+Bu örnekte, yeni bir belge oluşturduk, bir paragraf başlattık, yer imi adını ve kaynak dosya adını belirten bir FieldIncludeTexten ekledik ve belgeyi belirtilen bir dosya adıyla kaydettik.
 
-بهذا يختتم دليلنا حول استخدام ميزة "Insert a FieldIncludeText" مع Aspose.Words for .NET.
+Bu, Aspose.Words for .NET ile "Insert a FieldIncludeText" özelliğini kullanma konusundaki kılavuzumuzu sonlandırıyor.

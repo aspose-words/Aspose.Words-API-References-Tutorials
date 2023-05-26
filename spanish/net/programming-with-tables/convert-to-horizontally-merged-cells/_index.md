@@ -1,56 +1,56 @@
 ---
-title: تحويل إلى خلايا مدمجة أفقيًا
-linktitle: تحويل إلى خلايا مدمجة أفقيًا
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word باستخدام Aspose.Words for .NET.
+title: Convertir a celdas combinadas horizontalmente
+linktitle: Convertir a celdas combinadas horizontalmente
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a convertir celdas de tabla en celdas combinadas horizontalmente en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words for .NET لتحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من معالجة خلايا الجدول في مستندات Word الخاصة بك برمجيًا.
+En este tutorial, aprenderemos a usar Aspose.Words para .NET para convertir celdas de tabla en celdas combinadas horizontalmente en un documento de Word. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá manipular las celdas de la tabla en sus documentos de Word mediante programación.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Paso 1: Configuración del proyecto
+1. Inicie Visual Studio y cree un nuevo proyecto de C#.
+2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
-## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+## Paso 2: Cargar el documento y acceder a la tabla
+Para empezar a trabajar con la tabla, necesitamos cargar el documento que la contiene y acceder a ella. Sigue estos pasos:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Cargue el documento
 Document doc = new Document(dataDir + "Table with merged cells.docx");
 
-// الوصول إلى المصفوفة
+// Acceso a la matriz
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات. تأكد أيضًا من أن المستند يحتوي على جدول به خلايا مدمجة أفقيًا.
+Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos. Además, asegúrese de que el documento contenga una tabla con celdas combinadas horizontalmente.
 
-## الخطوة 3: التحويل إلى خلايا مدمجة أفقيًا
- بعد ذلك ، سنقوم بتحويل خلايا الجدول إلى خلايا مدمجة أفقيًا باستخدام الامتداد`ConvertToHorizontallyMergedCells()` طريقة. استخدم الكود التالي:
+## Paso 3: convertir a celdas combinadas horizontalmente
+ A continuación, convertiremos las celdas de la tabla en celdas combinadas horizontalmente usando el`ConvertToHorizontallyMergedCells()` método. Usa el siguiente código:
 
 ```csharp
-// التحويل إلى خلايا مدمجة أفقيًا
+// Convertir a celdas combinadas horizontalmente
 table. ConvertToHorizontallyMergedCells();
 ```
 
- هنا فقط نسمي`ConvertToHorizontallyMergedCells()` الطريقة على المصفوفة لإجراء التحويل.
+ Aquí solo llamamos a la`ConvertToHorizontallyMergedCells()` método en la matriz para realizar la conversión.
 
-### عينة من التعليمات البرمجية المصدر للتحويل إلى خلايا مدمجة أفقيًا باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para convertir a celdas combinadas horizontalmente usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table with merged cells.docx");
 	Table table = doc.FirstSection.Body.Tables[0];
-	// تحتوي الخلايا المدمجة الآن على أعلام دمج مناسبة.
+	// Ahora las celdas combinadas tienen banderas de combinación apropiadas.
 	table.ConvertToHorizontallyMergedCells();
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك معالجة خلايا الجدول في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة إدارة وتنظيم بياناتك بطريقة مرنة ومخصصة في جدول.
+## Conclusión
+En este tutorial, aprendimos cómo convertir celdas de tabla en celdas combinadas horizontalmente en un documento de Word usando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# provisto, puede manipular las celdas de la tabla en sus documentos de Word mediante programación. Esta característica le permite administrar y organizar sus datos de forma flexible y personalizada en una tabla.

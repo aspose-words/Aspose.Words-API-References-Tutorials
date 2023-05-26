@@ -1,21 +1,21 @@
 ---
-title: البرمجة مع Txtsaveoptions
-linktitle: البرمجة مع Txtsaveoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إضافة علامات ثنائية الاتجاه ، واستخدام حرف جدولة لكل مستوى للمسافة البادئة للقائمة واستخدام حرف مسافة لكل مستوى للمسافة البادئة للقائمة
+title: Programmering med Txtsaveoptions
+linktitle: Programmering med Txtsaveoptions
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar innehåller lägga till bidi-tecken, använd tabbtecken per nivå för listindrag och använd blankstegstecken per nivå för listindrag
 type: docs
 weight: 1700
 url: /sv/net/programming-with-txtsaveoptions/
 ---
-توجهك دروس Aspose.Words for .NET التعليمية عبر الميزات والاستخدامات المتنوعة للمكتبة في سياق معالجة مستندات Word. يركز أحد البرامج التعليمية على البرمجة باستخدام خيارات حفظ TXT ، والتي توضح لك كيفية إنشاء ملفات نصية من مستندات Word مع الحفاظ على تنسيق المحتوى وهيكله. ستتعلم كيفية استخدام الخيارات المتنوعة المتاحة لتخصيص تحويل المستندات إلى ملفات نصية ، مثل تحديد محدد العمود وإدارة المسافات البيضاء.
+Aspose.Words för .NET tutorials leder dig genom de olika funktionerna och användningarna av biblioteket i samband med manipulering av Word-dokument. En av handledningarna fokuserar på programmering med TXT-sparalternativ, och visar hur du genererar textfiler från Word-dokument samtidigt som innehållsformatering och struktur bibehålls. Du kommer att lära dig hur du använder de olika tillgängliga alternativen för att anpassa konverteringen av dokument till textfiler, som att ange kolumnavgränsare och hantera blanksteg.
 
-توفر هذه البرامج التعليمية إرشادات خطوة بخطوة ، جنبًا إلى جنب مع نموذج كود C # ، لمساعدتك على فهم المفاهيم المشمولة وممارستها. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستجد معلومات مفصلة حول كيفية استخدام Aspose.Words for .NET وكيفية تحقيق أقصى استفادة من مكتبة معالجة المستندات القوية هذه.
+Dessa handledningar ger steg-för-steg-instruktioner, tillsammans med exempel på C#-kod, för att hjälpa dig att förstå och öva på de begrepp som behandlas. Oavsett om du är nybörjare eller en erfaren utvecklare, hittar du detaljerad information om hur du använder Aspose.Words för .NET och hur du får ut det mesta av detta kraftfulla dokumentmanipuleringsbibliotek.
 
-بفضل هذه البرامج التعليمية ، ستتمكن من الاستفادة الكاملة من وظائف Aspose.Words for .NET وتطوير حلول فعالة لإنشاء مستندات Word وتحويلها ومعالجتها في تطبيقاتك. اتبع الخطوات واستكشف أمثلة التعليمات البرمجية وقم ببناء مهاراتك لإنشاء تطبيقات Word قوية وعالية الأداء.
+Tack vare dessa handledningar kommer du att fullt ut kunna utnyttja funktionerna i Aspose.Words för .NET och utveckla effektiva lösningar för generering, konvertering och manipulering av Word-dokument i dina applikationer. Följ stegen, utforska kodexemplen och bygg dina färdigheter för att bygga robusta, högpresterande Word-appar.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [أضف علامات ثنائية الاتجاه](./add-bidi-marks/) | تعلم كيفية إضافة علامات ثنائية الاتجاه إلى مستند Word باستخدام Aspose.Words for .NET وإنشاء مستندات احترافية متعددة اللغات. |
-| [استخدم حرف الجدولة لكل مستوى للمسافة البادئة للقائمة](./use-tab-character-per-level-for-list-indentation/) | تعرف على كيفية استخدام قوائم المسافات البادئة مع ميزة حروف الجدولة في Aspose.Words for .NET. اتبع هذا الدليل المفصل خطوة بخطوة لإنشاء مستندات جيدة التنظيم وقابلة للقراءة. وفر الوقت وحسّن سير عملك باستخدام هذه الميزة القوية. الوصول إلى البرنامج التعليمي الكامل الآن. |
-| [استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة](./use-space-character-per-level-for-list-indentation/) | دليل تفصيلي خطوة بخطوة لاستخدام حرف مسافة لكل مستوى في قائمة المسافة البادئة في Aspose.Words for .NET. قم بإنشاء مستندات Word جيدة التنظيم بسهولة. |
+| [Lägg till Bidi Marks](./add-bidi-marks/) | Lär dig att lägga till Bidi-märken i ett Word-dokument med Aspose.Words för .NET och skapa professionella flerspråkiga dokument. |
+| [Använd fliktecken per nivå för listindrag](./use-tab-character-per-level-for-list-indentation/) | Lär dig hur du använder funktionen för indragslistor med tabbtecken i Aspose.Words för .NET. Följ denna steg-för-steg-guide för att skapa välstrukturerade och läsbara dokument. Spara tid och förbättra ditt arbetsflöde med denna kraftfulla funktion. Få tillgång till hela handledningen nu. |
+| [Använd mellanslagstecken per nivå för listindrag](./use-space-character-per-level-for-list-indentation/) | Steg-för-steg-guide för att använda ett mellanslagstecken per nivå för listindrag i Aspose.Words för .NET. Skapa välstrukturerade Word-dokument med lätthet. |

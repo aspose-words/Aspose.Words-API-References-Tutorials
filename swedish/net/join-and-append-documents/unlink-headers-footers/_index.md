@@ -1,78 +1,78 @@
 ---
-title: فك ارتباط تذييلات الرؤوس
-linktitle: فك ارتباط تذييلات الرؤوس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الانضمام إلى مستندات Word وإلحاقها أثناء إلغاء ربط الرؤوس والتذييلات باستخدام Aspose.Words for .NET.
+title: Ta bort länk sidhuvuden Sidfot
+linktitle: Ta bort länk sidhuvuden Sidfot
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du går med i och lägger till Word-dokument samtidigt som du kopplar bort sidhuvuden och sidfötter med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/unlink-headers-footers/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Unlink Headers Footers في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء إلغاء ربط الرؤوس والتذييلات من المستند المصدر.
+Denna handledning guidar dig genom processen att använda funktionen Unlink Headers Footers i Aspose.Words för .NET. Den här funktionen låter dig gå med i och lägga till Word-dokument samtidigt som du tar bort länkarna för sidhuvuden och sidfötter från källdokumentet.
 
-## المتطلبات الأساسية
+## Förutsättningar
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Innan du börjar, se till att du har följande:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words för .NET installerat. Du kan ladda ner den från Asposes webbplats eller installera den via NuGet.
+2. Visual Studio eller någon annan C#-utvecklingsmiljö.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Steg 1: Initiera dokumentkatalogerna
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir` variabel till sökvägen där dina dokument finns.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Steg 2: Ladda käll- och måldokumenten
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إلغاء ربط الرؤوس والتذييلات في المستند المصدر
+## Steg 3: Koppla bort sidhuvuden och sidfötter i källdokumentet
 
- لإلغاء ارتباط الرؤوس والتذييلات في المستند المصدر من متابعة رؤوس وتذييلات المستند الوجهة ، تحتاج إلى تعيين`LinkToPrevious` ممتلكات`HeadersFooters` المجموعة في القسم الأول من المستند المصدر إلى`false`.
+ För att koppla bort sidhuvuden och sidfötter i källdokumentet från att fortsätta måldokumentets sidhuvuden och sidfötter måste du ställa in`LinkToPrevious` egendom av`HeadersFooters` samling i det första avsnittet av källdokumentet till`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بمستند الوجهة
+## Steg 4: Bifoga källdokumentet till destinationsdokumentet
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Nu kan du lägga till källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. De`ImportFormatMode.KeepSourceFormatting` parametern säkerställer att källformateringen bevaras under tilläggsåtgärden.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند النهائي
+## Steg 5: Spara det slutliga dokumentet
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة Unlink Headers Footers باستخدام ملحق`Save` طريقة`Document` فصل.
+ Slutligen sparar du det sammanslagna dokumentet med funktionen Unlink Headers Footers aktiverad med hjälp av`Save` metod för`Document` klass.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 ```
 
-### مثال على شفرة المصدر لإلغاء ربط تذييلات الرؤوس باستخدام Aspose.Words for .NET
+### Exempel på källkod för Unlink Headers Footers med Aspose.Words för .NET
 
-إليك شفرة المصدر الكاملة لميزة "Unlink Headers Footers" في C # باستخدام Aspose.Words for .NET:
+Här är den fullständiga källkoden för funktionen "Unlink Headers Footers" i C# med Aspose.Words för .NET:
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بفك ارتباط الرؤوس والتذييلات في المستند المصدر لإيقاف ذلك
-	// من متابعة رؤوس وتذييلات المستند الوجهة.
+	// Ta bort länkarna till sidhuvuden och sidfötter i källdokumentet för att stoppa detta
+	// från att fortsätta destinationsdokumentets sidhuvuden och sidfötter.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Unlink Headers Footers باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الرؤوس والتذييلات من المستند المصدر غير المرتبط بالمستند الوجهة.
+Det är allt! Du har framgångsrikt implementerat funktionen Unlink Headers Footers med Aspose.Words för .NET. Det slutliga dokumentet kommer att innehålla det sammanslagna innehållet med sidhuvuden och sidfötter från källdokumentet bortkopplade från måldokumentet.

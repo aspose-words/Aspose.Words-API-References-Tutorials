@@ -1,51 +1,51 @@
 ---
-title: يتوسطه خط
-linktitle: يتوسطه خط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: tachado
+linktitle: tachado
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a aplicar el estilo de texto tachado con la guía paso a paso de Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-markdown/strikethrough/
 ---
 
 
-في هذا المثال ، سنرشدك إلى كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام Aspose.Words for .NET. يتم استخدام نص يتوسطه خط للإشارة إلى حذف النص أو أنه لم يعد صالحًا.
+En este ejemplo, lo guiaremos a través de cómo aplicar el estilo de texto tachado usando Aspose.Words para .NET. El texto tachado se utiliza para indicar que el texto se eliminó o ya no es válido.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Paso 1: usar un generador de documentos
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Primero, usaremos un generador de documentos para agregar contenido a nuestro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تطبيق نمط النص يتوسطه خط
+## Paso 2: aplica el estilo de texto tachado
 
- سنقوم بتمكين نمط النص يتوسطه خط من خلال تعيين`StrikeThrough` ممتلكات`Font` يعترض على`true`.
+ Habilitaremos el estilo de texto tachado configurando el`StrikeThrough` propiedad de la`Font` oponerse a`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;
 ```
 
-## الخطوة 3: أضف نص يتوسطه خط
+## Paso 3: Agrega texto tachado
 
- يمكننا الآن إضافة نص يتوسطه خط باستخدام منشئ المستندات`Writeln` طريقة.
+ Ahora podemos agregar texto tachado usando el generador de documentos`Writeln` método.
 
 ```csharp
 builder.Writeln("This text will be StrikeThrough");
 ```
 
 
-### مثال على شفرة المصدر لنص يتوسطه خط مع Aspose.Words for .NET
+### Código fuente de ejemplo para texto tachado con Aspose.Words para .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Use un generador de documentos para agregar contenido al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص يتوسطه خط.
+	// Haz el texto tachado.
 	builder.Font.StrikeThrough = true;
 	builder.Writeln("This text will be StrikeThrough");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام Aspose.Words for .NET.
+¡Felicidades! Ahora ha aprendido a aplicar el estilo de texto tachado con Aspose.Words para .NET.

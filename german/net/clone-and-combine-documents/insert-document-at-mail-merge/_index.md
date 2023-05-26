@@ -1,63 +1,63 @@
 ---
-title: إدراج مستند في دمج المراسلات
-linktitle: إدراج مستند في دمج المراسلات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words for .NET.
+title: Dokument beim Seriendruck einfügen
+linktitle: Dokument beim Seriendruck einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument beim Seriendruck in ein anderes einfügen.
 type: docs
 weight: 10
 url: /de/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام ميزة "إدراج مستند أثناء دمج المراسلات" في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم كود المصدر وإجراء عملية إدراج المستند.
+In diesem Tutorial zeigen wir Ihnen, wie Sie beim Seriendruck mithilfe der Funktion „Dokument beim Seriendruck einfügen“ von Aspose.Words für .NET ein Dokument in ein anderes Dokument einfügen. Führen Sie die folgenden Schritte aus, um den Quellcode zu verstehen und das Einfügen des Dokuments durchzuführen.
 
-## الخطوة 1: تحميل المستند الرئيسي
+## Schritt 1: Laden des Hauptdokuments
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند الرئيسي في كائن المستند. إليك الطريقة:
+Geben Sie zunächst das Verzeichnis für Ihre Dokumente an und laden Sie das Hauptdokument in ein Document-Objekt. Hier ist wie:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 ```
 
-## الخطوة 2: تكوين دمج المراسلات
+## Schritt 2: Konfigurieren Sie den Seriendruck
 
-لنقم الآن بتكوين دمج المراسلات وتحديد رد نداء دمج الحقول لإدراج مستند في مستند آخر. إليك الطريقة:
+Nun konfigurieren wir den Serienbrief und geben den Feld-Merge-Callback an, um ein Dokument in ein anderes Dokument einzufügen. Hier ist wie:
 
 ```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
 ```
 
-## الخطوة 3: تشغيل دمج المراسلات
+## Schritt 3: Ausführen des Seriendrucks
 
-سنقوم بتشغيل دمج البريد من خلال توفير أسماء حقول الدمج والبيانات المقابلة. إليك الطريقة:
+Wir führen den Seriendruck durch, indem wir die Namen der Seriendruckfelder und die entsprechenden Daten angeben. Hier ist wie:
 
 ```csharp
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-### مثال على شفرة المصدر لـ Insert Document At Mail Merge باستخدام Aspose.Words for .NET
+### Beispielquellcode für „Dokument beim Seriendruck einfügen“ mit Aspose.Words für .NET
 
-فيما يلي رمز المصدر الكامل لميزة "إدراج مستند في دمج المراسلات" في Aspose.Words for .NET:
+Hier ist der vollständige Quellcode für die Funktion „Dokument in Serienbrief einfügen“ von Aspose.Words für .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
 	mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-	//يحتوي المستند الرئيسي على حقل دمج يسمى "Document_1".
-	// تحتوي البيانات المقابلة لهذا الحقل على مسار مؤهل بالكامل إلى المستند.
-	// يجب إدراج ذلك في هذا المجال.
+	//Das Hauptdokument enthält ein Zusammenführungsfeld namens „Document_1“.
+	// Die entsprechenden Daten für dieses Feld enthalten einen vollständig qualifizierten Pfad zum Dokument.
+	// Das sollte in dieses Feld eingefügt werden.
 	mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 
 	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words for .NET. سيتم حفظ المستند الناتج تحت اسم جديد
+Mit diesem Code können Sie beim Seriendruck mit Aspose.Words für .NET ein Dokument in ein anderes Dokument einfügen. Das resultierende Dokument wird unter einem neuen Namen gespeichert
 
 
 

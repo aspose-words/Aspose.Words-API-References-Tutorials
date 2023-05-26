@@ -1,78 +1,78 @@
 ---
-title: جدول متداخل
-linktitle: جدول متداخل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET.
+title: İç İçe Tablo
+linktitle: İç İçe Tablo
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde iç içe tablo oluşturmayı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/nested-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من إنشاء جداول متداخلة في مستندات Word الخاصة بك برمجيًا.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde iç içe tablo oluşturmayı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizde programlı olarak iç içe tablolar oluşturabileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Adım 2: Belgeyi oluşturma ve belge oluşturucuyu başlatma
+Belge ve belge oluşturucuyla çalışmaya başlamak için şu adımları izleyin:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Belge oluşturma
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Belge oluşturucuyu başlat
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة 3: بناء الجدول المتداخل
-بعد ذلك ، سنبني الجدول المتداخل عن طريق إدراج الخلايا في الجدول الخارجي وإنشاء جدول جديد داخل الخلية الأولى. استخدم الكود التالي:
+## 3. Adım: İç İçe Tabloyu Oluşturma
+Ardından, dış tabloya hücreler ekleyerek ve ilk hücrenin içinde yeni bir tablo oluşturarak yuvalanmış tabloyu oluşturacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
-// أدخل الخلية الأولى من الجدول الخارجي
+// Dış tablonun ilk hücresini ekle
 Cell cell = builder. InsertCell();
 builder.Writeln("Cell 1 of the outer table");
 
-// أدخل الخلية الثانية من الجدول الخارجي
+// Dış tablonun ikinci hücresini ekle
 builder. InsertCell();
 builder.Writeln("Cell 2 of the outer table");
 
-// إنهاء الجدول الخارجي
+// Dış tablonun sonlandırılması
 builder. EndTable();
 
-// الانتقال إلى الخلية الأولى في الجدول الخارجي
+// Dış tablonun ilk hücresine git
 builder.MoveTo(cell.FirstParagraph);
 
-// بناء الجدول الداخلي
+// İç tabloyu oluştur
 builder. InsertCell();
 builder.Writeln("Cell 1 of inner table");
 builder. InsertCell();
 builder.Writeln("Cell 2 of the inner table");
 
-// نهاية الجدول الداخلي
+// İç tablonun sonu
 builder. EndTable();
 ```
 
-هنا نستخدم منشئ المستندات لإدراج الخلايا والمحتوى في الجدول الخارجي. ثم ننقل مؤشر منشئ المستندات إلى الخلية الأولى من الجدول الخارجي ونبني جدولًا جديدًا بداخله عن طريق إدراج الخلايا والمحتوى.
+Burada dış tabloya hücre ve içerik eklemek için belge oluşturucuyu kullanıyoruz. Ardından, belge oluşturucu imlecini dış tablonun ilk hücresine hareket ettiriyoruz ve içine hücreler ve içerik ekleyerek yeni bir tablo oluşturuyoruz.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل بالجدول المتداخل. استخدم الكود التالي:
+## 4. Adım: Değiştirilen belgeyi kaydetme
+Son olarak değiştirilen belgeyi iç içe tablo ile kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح وملف الاسم لمستند الإخراج.
+Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### نموذج التعليمات البرمجية المصدر للجدول المتداخل باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Nested Table için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -81,12 +81,12 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.Writeln("Outer Table Cell 1");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
-	// هذا الاستدعاء مهم لإنشاء جدول متداخل داخل الجدول الأول.
-	// بدون هذا الاستدعاء ، سيتم إلحاق الخلايا المدرجة أدناه بالجدول الخارجي.
+	// Bu çağrı, ilk tablo içinde iç içe geçmiş bir tablo oluşturmak için önemlidir.
+	// Bu çağrı olmadan, aşağıya eklenen hücreler dış tabloya eklenir.
 	builder.EndTable();
-	// الانتقال إلى الخلية الأولى في الجدول الخارجي.
+	// Dış tablonun ilk hücresine git.
 	builder.MoveTo(cell.FirstParagraph);
-	// بناء الجدول الداخلي.
+	// İç tabloyu oluşturun.
 	builder.InsertCell();
 	builder.Writeln("Inner Table Cell 1");
 	builder.InsertCell();
@@ -95,5 +95,5 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك إنشاء جداول متداخلة وفقًا لاحتياجاتك الخاصة في مستندات Word الخاصة بك برمجيًا.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde iç içe tablo oluşturmayı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, programlı olarak Word belgelerinizde özel ihtiyaçlarınıza göre iç içe geçmiş tablolar oluşturabilirsiniz.

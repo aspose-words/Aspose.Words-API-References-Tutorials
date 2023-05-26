@@ -1,28 +1,28 @@
 ---
-title: مجموعة فواصل أسطر الطباعة الآسيوية
-linktitle: مجموعة فواصل أسطر الطباعة الآسيوية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام مجموعة فواصل أسطر الطباعة الآسيوية مع Aspose.Words for .NET.
+title: Asian Typography Line Break Group
+linktitle: Asian Typography Line Break Group
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder asiatisk typografi radbrytningsgrupp med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/document-formatting/asian-typography-line-break-group/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية استخدام ميزة مجموعة فواصل أسطر الطباعة الآسيوية مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر وتطبيق تغييرات التنسيق.
+I den här handledningen kommer vi att visa dig hur du använder funktionen Asian Typography radbrytningsgrupp med Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och tillämpa formateringsändringar.
 
-## الخطوة 1: تحميل المستند
+## Steg 1: Ladda dokumentet
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند الذي يحتوي على الطباعة الآسيوية في كائن المستند. إليك الطريقة:
+För att komma igång, ange katalogen för dina dokument och ladda dokumentet som innehåller den asiatiska typografin i ett dokumentobjekt. Här är hur:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Asian typography.docx");
 ```
 
-## الخطوة 2: إعداد الطباعة الآسيوية
+## Steg 2: Inställning av asiatisk typografi
 
-سنقوم الآن بتكوين إعدادات الطباعة الآسيوية للفقرة الأولى من المستند. إليك الطريقة:
+Vi kommer nu att konfigurera de asiatiska typografiinställningarna för det första stycket i dokumentet. Här är hur:
 
 ```csharp
 ParagraphFormat format = doc.FirstSection.Body.Paragraphs[0].ParagraphFormat;
@@ -31,21 +31,21 @@ format. WordWrap = true;
 format. HangingPunctuation = false;
 ```
 
-## الخطوة 3: حفظ المستند
+## Steg 3: Spara dokumentet
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ När du har infogat formulärfältet för textinmatning sparar du dokumentet på önskad plats med hjälp av`Save` metod. Se till att ange rätt sökväg:
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 ```
 
-### مثال على شفرة المصدر لمجموعة خطوط الطباعة الآسيوية باستخدام Aspose.Words for .NET
+### Exempel på källkod för Asian Typography Line Break Group med Aspose.Words för .NET
 
-فيما يلي شفرة المصدر الكاملة لميزة Asian Typography Line Break Group مع Aspose.Words for .NET:
+Här är den fullständiga källkoden för funktionen Asian Typography Line Break Group med Aspose.Words för .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
@@ -57,5 +57,5 @@ doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 	doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 	
 ```
-باستخدام هذا الرمز ، ستتمكن من تطبيق مجموعة فواصل أسطر الطباعة الآسيوية باستخدام Aspose.Words for .NET.
+Med denna kod kommer du att kunna tillämpa asiatisk typografi radbrytningsgrupp med Aspose.Words för .NET.
 

@@ -1,61 +1,61 @@
 ---
-title: خطوط المجموعة الفرعية المضمنة
-linktitle: خطوط المجموعة الفرعية المضمنة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتضمين مجموعات الخطوط الفرعية في ملف PDF باستخدام Aspose.Words for .NET.
+title: Eingebettete Teilsatzschriftarten
+linktitle: Eingebettete Teilsatzschriftarten
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Einbetten von Schriftartteilmengen in ein PDF mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة تضمين مجموعة الخطوط الفرعية مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تضمين مجموعات فرعية من الخطوط في مستند وإنشاء ملف PDF يحتوي فقط على الحروف الرسومية المستخدمة في المستند.
+Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zur Verwendung der Funktion zum Einbetten von Schriftartteilmengen mit Aspose.Words für .NET. Wir werden jeden Teil des Codes im Detail erklären. Am Ende dieses Tutorials werden Sie verstehen, wie Sie Teilsätze von Schriftarten in ein Dokument einbetten und eine PDF-Datei erstellen, die nur die im Dokument verwendeten Glyphen enthält.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert und konfiguriert haben. Die Bibliothek und Installationsanweisungen finden Sie auf der Aspose-Website.
 
-## الخطوة 1: تحديد دليل المستند
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Zunächst müssen Sie den Pfad zu dem Verzeichnis definieren, in dem sich Ihre Dokumente befinden. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Schritt 2: Laden Sie das Dokument hoch
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Als nächstes müssen wir das Dokument laden, das wir verarbeiten möchten. In diesem Beispiel gehen wir davon aus, dass das Dokument „Rendering.docx“ heißt und sich im angegebenen Dokumentenverzeichnis befindet.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF
+## Schritt 3: Konfigurieren Sie die Optionen zum Speichern als PDF
 
- لإنشاء ملف PDF يحتوي فقط على مجموعات فرعية من الخطوط المستخدمة في المستند ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن مع`EmbedFullFonts` تعيين الخاصية على`false`.
+ Um eine PDF-Datei zu erstellen, die nur die Teilmengen der im Dokument verwendeten Schriftarten enthält, müssen wir die konfigurieren`PdfSaveOptions` Objekt mit dem`EmbedFullFonts` Eigenschaft festgelegt auf`false`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع مجموعات الخطوط الفرعية
+## Schritt 4: Dokument als PDF mit Schriftart-Untergruppen speichern
 
- أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام مجموعات الخطوط الفرعية. حدد اسم ملف الإخراج و`saveOptions` كائن قمنا بتكوينه في الخطوة السابقة.
+ Schließlich können wir das Dokument mithilfe der Schriftarten-Untergruppen als PDF speichern. Geben Sie den Namen der Ausgabedatei und die Datei an`saveOptions` Objekt, das wir im vorherigen Schritt konfiguriert haben.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تضمين مجموعات فرعية من الخطوط في مستند وإنشاء ملف PDF يحتوي فقط على الحروف الرسومية المستخدمة في المستند مع Aspose.Words for .NET.
+Das ist alles ! Sie haben Teilsätze von Schriftarten erfolgreich in ein Dokument eingebettet und mit Aspose.Words für .NET eine PDF-Datei generiert, die nur die im Dokument verwendeten Glyphen enthält.
 
-### عينة من التعليمات البرمجية المصدر لتضمين مجموعات فرعية من الخطوط باستخدام Aspose.Words for .NET
+### Beispielquellcode zum Einbetten von Schriftartteilmengen mit Aspose.Words für .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// سيحتوي ملف PDF الناتج على مجموعات فرعية من الخطوط الموجودة في المستند.
-	// يتم تضمين الحروف الرسومية المستخدمة في الوثيقة فقط في خطوط PDF.
+	// Die Ausgabe-PDF enthält Teilmengen der Schriftarten im Dokument.
+	// In den PDF-Schriftarten sind nur die im Dokument verwendeten Glyphen enthalten.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);

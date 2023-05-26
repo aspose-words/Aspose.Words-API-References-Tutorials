@@ -1,34 +1,34 @@
 ---
-title: تجاهل النص داخل حذف المراجعات
-linktitle: تجاهل النص داخل حذف المراجعات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة "تجاهل النص داخل حذف المراجعات" في Aspose.Words for .NET.
+title: Ignorera text inuti Ta bort ändringar
+linktitle: Ignorera text inuti Ta bort ändringar
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder funktionen "Ignorera text i radera ändringar" i Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام ميزة "تجاهل النص داخل حذف المراجعات" في مكتبة Aspose.Words for .NET. هذه الميزة مفيدة عندما نريد تجاهل النص داخل مراجعات الحذف عند العمل مع المستندات.
+I den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder funktionen "Ignorera text i radera ändringar" i Aspose.Words för .NET-biblioteket. Den här funktionen är användbar när vi vill ignorera text i raderingsversioner när vi arbetar med dokument.
 
-## نظرة عامة على مكتبة Aspose.Words for .NET
+## Översikt över Aspose.Words för .NET-biblioteket
 
-قبل الخوض في تفاصيل الكود ، دعني أقدم باختصار مكتبة Aspose.Words for .NET. إنها مكتبة قوية تسمح بإنشاء وتعديل وتحويل مستندات Word في تطبيقات .NET. يوفر العديد من الميزات المتقدمة للعمل مع المستندات ، بما في ذلك إدارة المراجعة.
+Innan jag dyker in i koddetaljerna, låt mig kort presentera Aspose.Words för .NET-biblioteket. Det är ett kraftfullt bibliotek som gör det möjligt att skapa, ändra och konvertera Word-dokument i .NET-applikationer. Den erbjuder många avancerade funktioner för att arbeta med dokument, inklusive revisionshantering.
 
-## فهم ميزة "تجاهل النص داخل حذف المراجعات"
+## Förstå funktionen "Ignorera text i radera versioner".
 
-تتيح لك ميزة "تجاهل النص الداخلي حذف المراجعات" في Aspose.Words for .NET تحديد ما إذا كان يجب تجاهل النص الموجود داخل مراجعات الحذف أثناء عمليات معينة ، مثل البحث عن النص واستبداله. عند تمكين هذه الميزة ، لا يتم اعتبار النص المحذوف داخل المراجعات أثناء العمليات.
+Funktionen "Ignorera text i raderingsversioner" i Aspose.Words för .NET låter dig ange om text i raderingsversioner ska ignoreras under vissa operationer, som att hitta och ersätta text. När den här funktionen är aktiverad, beaktas inte raderad text i revisioner under drift.
 
-## الخطوة 1: إنشاء مستند جديد باستخدام Aspose.Words for .NET
+## Steg 1: Skapa ett nytt dokument med Aspose.Words för .NET
 
- قبل أن نبدأ في معالجة النص في مستند ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن أن يتم ذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Innan vi börjar manipulera text i ett dokument måste vi skapa ett nytt dokument med Aspose.Words för .NET. Det kan göras genom att instansiera en`Document` objekt:
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: إدخال نص غير منقح في المستند
+## Steg 2: Infoga icke-reviderad text i dokumentet
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص لم تتم مراجعته باستخدام ملف`DocumentBuilder` هدف. على سبيل المثال ، لإدراج النص "النص المحذوف" ، يمكننا استخدام الامتداد`Writeln` و`Write` طُرق:
+ När vi väl har ett dokument kan vi infoga ogranskad text med hjälp av en`DocumentBuilder` objekt. Till exempel, för att infoga texten "Raderad text", kan vi använda`Writeln` och`Write` metoder:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -36,9 +36,9 @@ builder. Writen("Deleted");
 builder. Write("Text");
 ```
 
-## الخطوة 3: إزالة فقرة مع تتبع المراجعات
+## Steg 3: Ta bort ett stycke med spårningsrevisioner
 
-لتوضيح استخدام ميزة "تجاهل النص داخل حذف المراجعات" ، سنحذف فقرة من المستند باستخدام تتبع المراجعة. سيسمح لنا ذلك بمعرفة كيف تؤثر هذه الميزة على العمليات اللاحقة.
+För att illustrera användningen av funktionen "Ignorera text i radera ändringar" kommer vi att ta bort ett stycke från dokumentet med hjälp av revisionsspårning. Detta gör att vi kan se hur den här funktionen påverkar efterföljande operationer.
 
 ```csharp
 doc.StartTrackRevisions("author", DateTime.Now);
@@ -46,62 +46,62 @@ doc.FirstSection.Body.FirstParagraph.Remove();
 doc.StopTrackRevisions();
 ```
 
-## الخطوة 4: تطبيق ميزة "تجاهل النص داخل حذف المراجعات"
+## Steg 4: Använd funktionen "Ignorera text i radera ändringar".
 
- الآن وقد أعددنا وثيقتنا عن طريق حذف فقرة ، يمكننا تمكين ميزة "تجاهل النص داخل حذف المراجعات" باستخدام`FindReplaceOptions` هدف. سنقوم بتعيين`IgnoreDeleted` ملكية ل`true`:
+ Nu när vi har förberett vårt dokument genom att ta bort ett stycke kan vi aktivera funktionen "Ignorera text inuti radera ändringar" med en`FindReplaceOptions` objekt. Vi kommer att ställa in`IgnoreDeleted` egendom till`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 ```
 
-## الخطوة 5: استخدام التعبيرات النمطية للبحث والاستبدال
+## Steg 5: Använd reguljära uttryck för att hitta och ersätta
 
-لإجراء عمليات البحث والاستبدال على نص المستند ، سنستخدم التعبيرات العادية. في مثالنا ، سنبحث عن جميع تكرارات الحرف "e" ونستبدلها بعلامة النجمة "* ". .شبكة`Regex` يتم استخدام فئة لهذا:
+För att utföra sök- och ersättningsoperationer på texten i dokumentet kommer vi att använda reguljära uttryck. I vårt exempel kommer vi att söka efter alla förekomster av bokstaven "e" och ersätta dem med en asterisk "* ". .NET`Regex` klass används för detta:
 
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## الخطوة 6: عرض مخرجات الوثيقة المعدلة
+## Steg 6: Visar den modifierade dokumentutmatningen
 
-بعد تطبيق البحث والاستبدال ، يمكننا عرض المحتوى الذي تم تغييره في المستند باستخدام`GetText` طريقة:
+Efter att ha tillämpat sökningen och ersätt, kan vi visa det ändrade innehållet i dokumentet med hjälp av`GetText` metod:
 
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## الخطوة 7: تعديل الخيارات لتضمين النص المحذوف
+## Steg 7: Ändra alternativen för att inkludera raderad text
 
- إذا أردنا تضمين نص محذوف في نتيجة الإخراج ، فيمكننا تغيير الخيارات لعدم تجاهل النص المحذوف. لهذا سنقوم بتعيين`IgnoreDeleted` ملكية ل`false`:
+ Om vi vill inkludera raderad text i utdataresultatet kan vi ändra alternativen för att inte ignorera raderad text. För detta kommer vi att ställa in`IgnoreDeleted` egendom till`false`:
 
 ```csharp
 options. IgnoreDeleted = false;
 ```
 
-## الخطوة 8: إخراج المستند المعدل بالنص المحذوف
+## Steg 8: Mata ut det ändrade dokumentet med raderad text
 
-بعد تغيير الخيارات ، يمكننا إجراء البحث والاستبدال مرة أخرى للحصول على النتيجة مع تضمين النص المحذوف:
+Efter att ha ändrat alternativen kan vi utföra sökningen och ersätta igen för att få resultatet med den raderade texten inkluderad:
 
 ```csharp
 doc.Range.Replace(regex, "*", options);
 Console.WriteLine(doc.GetText());
 ```
 
-### مثال على شفرة المصدر لـ Ignore Text Inside Delete Revisions باستخدام Aspose.Words for .NET
+### Exempel på källkod för Ignorera text inuti Ta bort revisioner med Aspose.Words för .NET
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام ميزة "تجاهل النص داخل حذف المراجعات" مع Aspose.Words for .NET:
+Här är det fullständiga källkodsexemplet för att demonstrera användningen av funktionen "Ignorera text i radera ändringar" med Aspose.Words för .NET:
 
 ```csharp
         
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// أدخل نصًا غير منقح.
+	// Infoga icke-reviderad text.
 	builder.Writeln("Deleted");
 	builder.Write("Text");
 
-	// إزالة الفقرة الأولى مع تتبع المراجعات.
+	// Ta bort första stycket med spårningsrevisioner.
 	doc.StartTrackRevisions("author", DateTime.Now);
 	doc.FirstSection.Body.FirstParagraph.Remove();
 	doc.StopTrackRevisions();
@@ -120,7 +120,7 @@ Console.WriteLine(doc.GetText());
     
 ```
 
-## خاتمة
+## Slutsats
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام ميزة "تجاهل النص داخل حذف المراجعات" في Aspose.Words for .NET. هذه الميزة مفيدة لتجاهل النص داخل مراجعات الحذف عند معالجة المستندات. اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص وحذف فقرة مع تتبع المراجعة وتطبيق ميزة "تجاهل النص داخل حذف المراجعات" وإجراء عمليات البحث والاستبدال.
+den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen "Ignorera text i radera ändringar" i Aspose.Words för .NET. Den här funktionen är användbar för att ignorera text i raderingsversioner när du manipulerar dokument. Vi följde en steg-för-steg-guide för att skapa ett dokument, infoga text, ta bort ett stycke med revisionsspårning, tillämpa funktionen "Ignorera text inuti radera revisioner" och utföra sök- och ersättningsoperationer.
 

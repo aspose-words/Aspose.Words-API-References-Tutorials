@@ -1,65 +1,65 @@
 ---
-title: قسم النسخ
-linktitle: قسم النسخ
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية نسخ قسم من مستند Word إلى مستند آخر باستخدام Aspose.Words for .NET.
+title: Copiar sección
+linktitle: Copiar sección
+second_title: Referencia de API de Aspose.Words para .NET
+description: En este tutorial, aprenda a copiar una sección de un documento de Word a otro documento usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-section/copy-section/
 ---
 
-في هذا البرنامج التعليمي ، سنشرح كيفية نسخ قسم من مستند Word إلى مستند آخر باستخدام مكتبة Aspose.Words لـ .NET. يسمح لك نسخ قسم بنقل قسم معين من مستند مصدر إلى مستند وجهة. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+En este tutorial, explicaremos cómo copiar una sección de un documento de Word a otro documento utilizando la biblioteca Aspose.Words para .NET. Copiar una sección le permite transferir una sección específica de un documento de origen a un documento de destino. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند مصدر يحتوي على القسم الذي تريد نسخه
-- مستند وجهة فارغ حيث تريد نسخ القسم
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes elementos:
+- Un conocimiento práctico del lenguaje de programación C#
+- La biblioteca Aspose.Words para .NET instalada en su proyecto
+- Un documento de origen que contiene la sección que desea copiar
+- Un documento de destino vacío donde desea copiar la sección
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+ Primero, debe establecer la ruta del directorio donde se encuentran sus documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta adecuada.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل مستندات المصدر والوجهة
- بعد ذلك ، سنقوم بتحميل المستند المصدر في مثيل لـ`Document` فئة تسمى`srcDoc` . سننشئ أيضًا مثيلًا فارغًا لملف`Document` فئة تسمى`dstDoc` للمستند الوجهة.
+## Paso 2: Cargue los documentos de origen y destino
+ A continuación, cargaremos el documento de origen en una instancia del`Document` clase llamada`srcDoc` . También crearemos una instancia vacía del`Document` clase llamada`dstDoc` para el documento de destino.
 
 ```csharp
-// قم بتحميل المستند المصدر
+// Cargue el documento de origen
 Document srcDoc = new Document(dataDir + "Document.docx");
 
-// قم بإنشاء مستند وجهة فارغ
+// Crear un documento de destino vacío
 Document dstDoc = new Document();
 ```
 
-## الخطوة 3: انسخ القسم إلى المستند الوجهة
-لنسخ القسم من المستند المصدر إلى المستند الوجهة ، سنستخدم الامتداد`ImportNode` طريقة لاستيراد قسم المصدر وإضافته إلى المستند الوجهة.
+## Paso 3: Copie la sección al documento de destino
+Para copiar la sección del documento de origen al documento de destino, utilizaremos el`ImportNode` para importar la sección de origen y agregarla al documento de destino.
 
 ```csharp
-// احصل على قسم المصدر
+// Obtener la sección de origen
 Section sourceSection = srcDoc.Sections[0];
 
-// انسخ المقطع إلى المستند الوجهة
+// Copie la sección al documento de destino
 Section newSection = (Section)dstDoc.ImportNode(sourceSection, true);
 dstDoc.Sections.Add(newSection);
 ```
 
-## الخطوة 4: احفظ المستند الوجهة
-أخيرًا ، سنحفظ المستند الوجهة مع القسم المنسوخ إلى ملف.
+## Paso 4: Guarde el documento de destino
+Finalmente, guardaremos el documento de destino con la sección copiada en un archivo.
 
 ```csharp
 dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لقسم النسخ باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Copiar sección usando Aspose.Words para .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document.docx");
@@ -71,5 +71,5 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية نسخ قسم من مستند Word إلى مستند آخر باستخدام Aspose.Words for .NET. يسمح لك نسخ الأقسام بنقل أقسام محددة بسهولة من مستند مصدر إلى مستند وجهة. لا تتردد في استخدام هذه الطريقة لتنظيم أجزاء من مستنداتك ومعالجتها بكفاءة.
+## Conclusión
+En este tutorial, vimos cómo copiar una sección de un documento de Word a otro documento usando Aspose.Words para .NET. La copia de secciones le permite transferir fácilmente secciones específicas de un documento de origen a un documento de destino. Siéntase libre de usar este método para organizar y manipular eficientemente secciones de sus documentos.

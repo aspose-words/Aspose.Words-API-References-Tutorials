@@ -1,64 +1,64 @@
 ---
-title: اتجاه نص المستند
-linktitle: اتجاه نص المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديد اتجاه النص في مستنداتك باستخدام Aspose.Words for .NET. تحسين العرض للغات التي تكتب من اليمين إلى اليسار.
+title: Belge Metin Yönü
+linktitle: Belge Metin Yönü
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile belgelerinizde metin yönünü nasıl belirleyeceğinizi öğrenin. Sağdan sola yazılan diller için ekranı iyileştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-txtloadoptions/document-text-direction/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لميزة "Document Text Direction" مع Aspose.Words for .NET. تتيح لك هذه الميزة تحديد اتجاه النص في المستند ، وهو أمر مفيد بشكل خاص للغات المكتوبة من اليمين إلى اليسار ، مثل العبرية أو العربية.
+Bu öğreticide, Aspose.Words for .NET ile "Belge Metni Yönü" özelliği için sağlanan C# kaynak kodunu keşfedeceğiz. Bu özellik, özellikle İbranice veya Arapça gibi sağdan sola yazılan diller için kullanışlı olan bir belgedeki metnin yönünü belirlemenizi sağlar.
 
-## الخطوة الأولى: تهيئة البيئة
+## 1. Adım: Ortamı ayarlama
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
-## الخطوة 2: تكوين خيارات التحميل
+## 2. Adım: Yükleme seçeneklerini yapılandırma
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection. Auto };
 ```
 
- في هذه الخطوة ، نقوم بتكوين خيارات تحميل المستند. نخلق ملف`TxtLoadOptions` كائن وتعيين`DocumentDirection` ملكية ل`DocumentDirection.Auto`. تخبر هذه القيمة Aspose.Words بتحديد اتجاه النص تلقائيًا بناءً على محتوى المستند.
+ Bu adımda, belge yükleme seçeneklerini yapılandırıyoruz. yeni bir tane yaratıyoruz`TxtLoadOptions` nesne ve ayarlayın`DocumentDirection` mülkiyet`DocumentDirection.Auto`. Bu değer, Aspose.Words'e belgenin içeriğine göre metin yönünü otomatik olarak belirlemesini söyler.
 
-## الخطوة 3: تحميل المستند
+## 3. Adım: Belgeyi yükleme
 
 ```csharp
 Document doc = new Document(dataDir + "Hebrew text.txt", loadOptions);
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف نصي للتحميل. نستخدم أيضًا خيارات التحميل المحددة.
+ Bu adımda, kullanarak belgeyi yüklüyoruz`Document` yöntemi ve yolu yüklenecek metin dosyasına geçirme. Belirtilen yükleme seçeneklerini de kullanıyoruz.
 
-## الخطوة 4: معالجة الفقرة وعرض اتجاه النص
+## 4. Adım: Paragrafı değiştirin ve metin yönünü görüntüleyin
 
 ```csharp
 Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- في هذه الخطوة ، نصل إلى الفقرة الأولى من المستند باستخدام امتداد`FirstSection` و`Body` ملكيات. بعد ذلك ، نصل إلى`ParagraphFormat.Bidi` للحصول على اتجاه نص الفقرة. ثم نعرض هذه القيمة في وحدة التحكم.
+ Bu adımda, kullanarak belgenin ilk paragrafına erişiyoruz.`FirstSection` Ve`Body` özellikler. Ardından,`ParagraphFormat.Bidi` özelliği paragrafın metin yönünü almak için. Daha sonra bu değeri konsolda gösteriyoruz.
 
-## الخطوة 5: احفظ المستند
+## 5. Adım: Belgeyi kaydedin
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ المستند الناتج بتنسيق docx. باستخدام الامتداد`Save` الطريقة وتمرير المسار إلى ملف الإخراج.
+ Bu son adımda, ortaya çıkan belgeyi kullanarak .docx formatında kaydediyoruz.`Save` yöntemi ve yolu çıktı dosyasına geçirme.
 
-يمكنك الآن تشغيل الكود المصدري لتحميل المستند النصي وتحديد اتجاه النص. سيتم حفظ المستند الناتج في الدليل المحدد بالاسم "WorkingWithTxtLoadOptions.DocumentTextDirection.docx".
+Artık metin belgesini yüklemek ve metin yönünü belirlemek için kaynak kodunu çalıştırabilirsiniz. Elde edilen belge belirtilen dizine "WorkingWithTxtLoadOptions.DocumentTextDirection.docx" adıyla kaydedilecektir.
 
-### نموذج التعليمات البرمجية المصدر لوظيفة اتجاه نص المستند باستخدام Aspose.Words for .NET.
+### Aspose.Words for .NET ile belge metin yönü işlevselliği için örnek kaynak kodu.
 
 
 ```csharp
 
             
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection.Auto };
@@ -73,18 +73,18 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
         
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا البرنامج التعليمي ، استكشفنا ميزة اتجاه نص المستند في Aspose.Words for .NET. لقد تعلمنا كيفية تحديد اتجاه النص في مستند ، خاصة بالنسبة للغات المكتوبة من اليمين إلى اليسار ، مثل العبرية أو العربية.
+Bu öğreticide, Aspose.Words for .NET'teki belge metni yönü özelliğini inceledik. Özellikle İbranice veya Arapça gibi sağdan sola yazılan diller için bir belgedeki metnin yönünü nasıl belirleyeceğimizi öğrendik.
 
-هذه الميزة ضرورية لضمان عرض النص بشكل صحيح في المستندات متعددة اللغات. باستخدام خيارات التحميل المناسبة ، يمكن لـ Aspose.Words اكتشاف اتجاه النص تلقائيًا وتطبيقه على المستند.
+Bu özellik, metnin çok dilli belgelerde doğru şekilde görüntülenmesini sağlamak için gereklidir. Aspose.Words, uygun yükleme seçeneklerini kullanarak metnin yönünü otomatik olarak algılayabilir ve bunu belgeye uygulayabilir.
 
-باستخدام Aspose.Words ، يمكنك بسهولة التعامل مع اتجاه النص في مستنداتك ، مما يوفر تجربة قراءة سلسة وبديهية للمستخدمين.
+Aspose.Words ile belgelerinizdeki metnin yönünü kolayca değiştirerek kullanıcılara sorunsuz ve sezgisel bir okuma deneyimi sağlayabilirsiniz.
 
-من المهم ملاحظة أن هذه الميزة مفيدة بشكل خاص عند العمل مع اللغات التي تتطلب اتجاهًا نصيًا محددًا. يجعل Aspose.Words هذه المهمة سهلة من خلال توفير أدوات قوية لإدارة اتجاه النص في مستنداتك.
+Bu özelliğin, özellikle belirli metin yönü gerektiren dillerle çalışırken kullanışlı olduğuna dikkat etmek önemlidir. Aspose.Words, belgelerinizdeki metnin yönünü yönetmek için güçlü araçlar sağlayarak bu görevi kolaylaştırır.
 
-تذكر استخدام خيارات التحميل المناسبة ، مثل ضبط اتجاه النص التلقائي ، للحصول على النتائج التي تريدها في مستنداتك.
+Belgelerinizde istediğiniz sonuçları elde etmek için otomatik metin yönünü ayarlamak gibi uygun yükleme seçeneklerini kullanmayı unutmayın.
 
-يوفر Aspose.Words for .NET العديد من الميزات المتقدمة لمعالجة المستندات وإنشائها. من خلال استكشاف المزيد من الوثائق والأمثلة المقدمة من Aspose.Words ، ستتمكن من استغلال إمكانات هذه المكتبة القوية بشكل كامل.
+Aspose.Words for .NET, belge işleme ve oluşturma için birçok gelişmiş özellik sunar. Aspose.Words tarafından sağlanan belgeleri ve örnekleri daha fazla keşfederek, bu güçlü kitaplığın yeteneklerinden tam anlamıyla yararlanabileceksiniz.
 
-لذلك ، لا تتردد في دمج اتجاه نص المستند في Aspose.Words لمشاريع .NET واستفد من مزاياها لإنشاء مستندات متعددة اللغات جذابة وعالية الجودة.
+Bu nedenle, belge metni yönünü Aspose.Words for .NET projelerinize entegre etmekten çekinmeyin ve çekici ve yüksek kaliteli çok dilli belgeler oluşturmak için avantajlarından yararlanın.

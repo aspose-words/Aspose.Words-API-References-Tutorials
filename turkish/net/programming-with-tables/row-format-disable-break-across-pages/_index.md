@@ -1,68 +1,68 @@
 ---
-title: تنسيق الصف تعطيل الفاصل عبر الصفحات
-linktitle: تنسيق الصف تعطيل الفاصل عبر الصفحات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل فاصل الأسطر لجدول عبر صفحات متعددة في مستند Word باستخدام Aspose.Words for .NET.
+title: Satır Biçimi Sayfalar Arasında Arayı Devre Dışı Bırak
+linktitle: Satır Biçimi Sayfalar Arasında Arayı Devre Dışı Bırak
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde birden çok sayfada bir tablo için satır sonunu nasıl devre dışı bırakacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تعطيل فاصل الأسطر لجدول متعدد الصفحات في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تعطيل فصل الأسطر لجميع الصفوف في الجدول الخاص بك في مستندات Word الخاصة بك.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde çok sayfalı bir tablonun satır sonunu nasıl devre dışı bırakacağımızı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki tablonuzdaki tüm satırlar için satır kesmeyi devre dışı bırakabileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## 2. Adım: Belgeyi yükleme
+Belgeyle çalışmaya başlamak için şu adımları izleyin:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
-تأكد من استبدال "دليل المستندات الخاص بك" بالمسار الفعلي إلى دليل المستندات الخاص بك وقم بتوفير اسم الملف الصحيح.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden ve doğru dosya adını girdiğinizden emin olun.
 
-## الخطوة 3: تعطيل فاصل صفوف الجدول
-بعد ذلك ، سنقوم بتعطيل فصل الصفوف لجميع الصفوف في الجدول. استخدم الكود التالي:
+## 3. Adım: Tablo satır sonunu devre dışı bırakın
+Ardından, tablodaki tüm satırlar için satır kesmeyi devre dışı bırakacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
-// استرجع الجدول
+// tabloyu al
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 
-// تعطيل فاصل الصف لجميع الصفوف في الجدول
+// Tablodaki tüm satırlar için satır sonunu devre dışı bırak
 foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```
 
- هنا نستخدم المستند لجلب الجدول الأول ثم نكرره عبر جميع الصفوف في الجدول باستخدام حلقة foreach. داخل الحلقة ، نقوم بتعطيل فصل الصفوف لكل صف عن طريق ضبط`RowFormat.AllowBreakAcrossPages` ملكية ل`false`.
+ Burada ilk tabloyu getirmek için belgeyi kullanıyoruz ve ardından bir foreach döngüsü kullanarak tablodaki tüm satırları yineliyoruz. Döngünün içinde, ayarlayarak her satır için satır kesmeyi devre dışı bırakırız.`RowFormat.AllowBreakAcrossPages` mülkiyet`false`.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تعطيل فاصل أسطر الجدول. استخدم الكود التالي:
+## 4. Adım: Değiştirilen belgeyi kaydetme
+Son olarak, değiştirilen belgeyi tablo satır sonu devre dışı bırakılmış olarak kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### نموذج التعليمات البرمجية المصدر لتنسيق الصف تعطيل الفاصل عبر الصفحات باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Sayfalar Arasında Arayı Devre Dışı Bırakmak için Satır Biçimi için örnek kaynak kodu 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-// تعطيل التقسيم عبر الصفحات لجميع الصفوف في الجدول.
+// Tablodaki tüm satırlar için sayfalar arasında bölmeyi devre dışı bırakın.
 foreach (Row row in table.Rows)
 	row.RowFormat.AllowBreakAcrossPages = false;
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعطيل فاصل الأسطر لجدول متعدد الصفحات في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تطبيق هذا التعطيل على جداولك في مستندات Word الخاصة بك.
+## Çözüm
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde çok sayfalı bir tablonun satır sonunu nasıl devre dışı bırakacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, bu devre dışı bırakmayı Word belgelerinizdeki tablolarınıza uygulayabilirsiniz.

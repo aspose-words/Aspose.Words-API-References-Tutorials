@@ -1,28 +1,28 @@
 ---
-title: الاحتفاظ بتنسيق المصدر
-linktitle: الاحتفاظ بتنسيق المصدر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند مصدر بمستند وجهة مع الحفاظ على التنسيق الأصلي باستخدام Aspose.Words for .NET.
+title: 保留源格式
+linktitle: 保留源格式
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将源文档附加到目标文档，同时保留原始格式。
 type: docs
 weight: 10
 url: /zh/net/join-and-append-documents/keep-source-formatting/
 ---
 
-يوضح هذا البرنامج التعليمي كيفية إلحاق مستند مصدر بمستند وجهة مع الحفاظ على التنسيق الأصلي للمستند المصدر باستخدام Aspose.Words for .NET.
+本教程演示如何使用 Aspose.Words for .NET 将源文档附加到目标文档，同时保留源文档的原始格式。
 
-## الخطوة 1: قم بإعداد المشروع
+## 第 1 步：设置项目
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+确保您具有以下先决条件：
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ مستندات المصدر والوجهة.
+- 安装了 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载或使用 NuGet 包管理器安装它。
+- 将保存源文档和目标文档的文档目录路径。
 
-## الخطوة 2: قم بإنشاء الوجهة والمستندات المصدر
+## 第 2 步：创建目标文档和源文档
 
- إنشاء مثيلات من`Document` للوجهة والمستندات المصدر.
+创建实例`Document`对于目标文件和源文件。
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document dstDoc = new Document();
@@ -32,36 +32,36 @@ Document srcDoc = new Document();
 srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 ```
 
-## الخطوة 3: قم بإلحاق المستند المصدر بالمستند الوجهة
+## 第 3 步：将源文档附加到目标文档
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.KeepSourceFormatting` كوضع تنسيق الاستيراد للاحتفاظ بالتنسيق الأصلي للمستند المصدر.
+使用`AppendDocument`附加源文档的目标文档的方法。经过`ImportFormatMode.KeepSourceFormatting`作为导入格式模式，保留源文档的原始格式。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 4: احفظ المستند المعدل
+## 第 4 步：保存修改后的文档
 
-احفظ المستند المعدل باستخدام ملف`Save` طريقة`Document` هدف.
+使用`Save`的方法`Document`目的。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند مصدر بمستند الوجهة مع الاحتفاظ بالتنسيق الأصلي باستخدام Aspose.Words for .NET.
+这样就完成了使用 Aspose.Words for .NET 在保持原始格式的同时将源文档附加到目标文档的实现。
 
-### مثال على شفرة المصدر لـ Keep Source Formatting باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的 Keep Source Formatting 示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document dstDoc = new Document();
 	dstDoc.FirstSection.Body.AppendParagraph("Destination document text. ");
 	Document srcDoc = new Document();
 	srcDoc.FirstSection.Body.AppendParagraph("Source document text. ");
-	// قم بإلحاق المستند المصدر بالمستند الوجهة.
-	// قم بتمرير وضع التنسيق للاحتفاظ بالتنسيق الأصلي للمستند المصدر عند استيراده.
+	//将源文档附加到目标文档。
+	//通过格式模式以在导入时保留源文档的原始格式。
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
 ```

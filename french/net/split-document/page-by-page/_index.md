@@ -1,55 +1,55 @@
 ---
-title: صفحة بالصفحة
-linktitle: صفحة بالصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # لميزة Aspose.Words صفحة بصفحة لـ .NET
+title: Page par page
+linktitle: Page par page
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour expliquer le code source C # de la fonctionnalité Aspose.Words page par page pour .NET
 type: docs
 weight: 10
 url: /fr/net/split-document/page-by-page/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تقسيم مستند Word إلى صفحات فردية باستخدام ميزة صفحة بصفحة في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر والحصول على مستندات منفصلة لكل صفحة.
+Dans ce didacticiel, nous vous expliquerons comment diviser un document Word en pages individuelles à l'aide de la fonctionnalité Page par page d'Aspose.Words pour .NET. Suivez les étapes ci-dessous pour comprendre le code source et obtenir des documents distincts pour chaque page.
 
-## الخطوة 1: تحميل المستند
+## Étape 1 : Chargement du document
 
-للبدء ، حدد الدليل للمستند الخاص بك وقم بتحميل المستند في كائن المستند. إليك الطريقة:
+Pour commencer, spécifiez le répertoire de votre document et chargez le document dans un objet Document. Voici comment:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```
 
-## الخطوة 2: قسّم المستند على الصفحة
+## Étape 2 : Divisez le document par page
 
-سنقوم الآن بالتكرار خلال كل صفحة من المستند ونقسم المستند إلى صفحات فردية. إليك الطريقة:
+Nous allons maintenant parcourir chaque page du document et diviser le document en pages individuelles. Voici comment:
 
 ```csharp
 int pageCount = doc. PageCount;
 
 for (int page = 0; page < pageCount; page++)
 {
-// احفظ كل صفحة كمستند منفصل.
+// Enregistrez chaque page dans un document distinct.
 Document extractedPage = doc.ExtractPages(page, 1);
 extractedPage.Save(dataDir + $"SplitDocument.PageParPage_{page + 1}.docx");
 }
 ```
 
-## الخطوة 3: دمج المستندات
+## Étape 3 : fusionner des documents
 
-بمجرد أن يكون لديك مستندات منفصلة لكل صفحة ، يمكنك دمجها إذا لزم الأمر. إليك الطريقة:
+Une fois que vous avez des documents séparés pour chaque page, vous pouvez les fusionner si nécessaire. Voici comment:
 
 ```csharp
 MergeDocuments();
 ```
 
-### مثال على شفرة المصدر لـ Page By Page باستخدام Aspose.Words for .NET
+### Exemple de code source pour Page By Page utilisant Aspose.Words pour .NET
 
-فيما يلي شفرة المصدر الكاملة لميزة صفحة بصفحة في Aspose.Words for .NET:
+Voici le code source complet de la fonctionnalité Page par page d'Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Big document.docx");
 
@@ -57,7 +57,7 @@ MergeDocuments();
 
 	for (int page = 0; page < pageCount; page++)
 	{
-		// احفظ كل صفحة كمستند منفصل.
+		// Enregistrez chaque page dans un document distinct.
 		Document extractedPage = doc.ExtractPages(page, 1);
 		extractedPage.Save(dataDir + $"SplitDocument.PageByPage_{page + 1}.docx");
 	}
@@ -67,5 +67,5 @@ MergeDocuments();
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تقسيم مستند Word إلى صفحات فردية باستخدام Aspose.Words for .NET. يمكنك أيضًا دمج مستندات منفصلة إذا لزم الأمر.
+Avec ce code, vous pourrez diviser un document Word en pages individuelles en utilisant Aspose.Words pour .NET. Vous pouvez également fusionner des documents distincts si nécessaire.
 

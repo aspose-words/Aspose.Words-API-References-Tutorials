@@ -1,71 +1,71 @@
 ---
-title: نتائج العرض الميداني
-linktitle: نتائج العرض الميداني
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لعرض النتائج الميدانية في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+title: Resultados de visualización de campo
+linktitle: Resultados de visualización de campo
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para mostrar resultados de campo en sus documentos de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/field-display-results/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إظهار نتائج الحقول" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación, que utiliza la función "Mostrar resultados de campo" de Aspose.Words para .NET. Asegúrese de seguir cada paso cuidadosamente para obtener los resultados deseados.
 
-## الخطوة 1: إعداد دليل المستند
+## Paso 1: Configuración del directorio de documentos
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+En el código provisto, debe especificar el directorio de sus documentos. Reemplace el valor "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
-تتمثل الخطوة الأولى في تحميل المستند الذي تريد عرض نتائج الحقول فيه.
+El primer paso es cargar el documento en el que desea mostrar los resultados del campo.
 
 ```csharp
 Document document = new Document(dataDir + "Miscellaneous fields.docx");
 ```
 
-تأكد من استبدال "Miscellaneous Fields.docx" باسم ملفك الخاص.
+Asegúrese de reemplazar "Miscellaneous Fields.docx" con el nombre de su propio archivo.
 
-## الخطوة 3: تحديث الحقول
+## Paso 3: Actualizar campos
 
- نحن نستخدم ال`UpdateFields()` طريقة لتحديث كافة الحقول في المستند.
+ usamos el`UpdateFields()` para actualizar todos los campos del documento.
 
 ```csharp
 document. UpdateFields();
 ```
 
-هذه الخطوة مهمة لأنها تضمن عرض النتائج الميدانية بشكل صحيح.
+Este paso es importante porque garantiza que los resultados de los campos se muestren correctamente.
 
-## الخطوة 4: عرض النتائج الميدانية
+## Paso 4: Visualización de resultados de campo
 
- نحن نستخدم`foreach` حلقة للتكرار خلال جميع الحقول في المستند وعرض نتائجها.
+ usamos un`foreach` bucle para recorrer todos los campos del documento y mostrar sus resultados.
 
 ```csharp
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
 
- في كل تكرار للحلقة ، نصل إلى ملف`DisplayResult` خاصية الحقل للحصول على النتيجة المعروضة.
+ En cada iteración del ciclo, accedemos a la`DisplayResult` propiedad del campo para obtener el resultado mostrado.
 
-### مثال رمز المصدر لعرض نتائج الحقول باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para mostrar resultados de campo con Aspose.Words para .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+// Cargue el documento.
 Document document = new Document(dataDir + "Miscellaneous fields.docx");
 
-// تحديث الحقول.
+// Actualizar campos.
 document. UpdateFields();
 
-// عرض النتائج الميدانية.
+// Visualización de resultados de campo.
 foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
 
-في هذا المثال ، حمّلنا مستندًا ، وحدّثنا جميع الحقول ، ثم انتقلنا عبر الحقول لعرض نتائجها. يمكنك تخصيص هذه الخطوة باستخدام المنطق الخاص بك لمعالجة النتائج الميدانية.
+En este ejemplo, cargamos un documento, actualizamos todos los campos y luego recorrimos los campos para mostrar sus resultados. Puede personalizar este paso utilizando su propia lógica para procesar los resultados de los campos.
 
-هذا يختتم دليلنا لاستخدام ميزة "إظهار النتائج الميدانية" مع Aspose.Words for .NET.
+Esto concluye nuestra guía para usar la función "Mostrar resultados de campo" con Aspose.Words para .NET.

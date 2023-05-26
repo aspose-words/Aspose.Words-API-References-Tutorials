@@ -1,17 +1,17 @@
 ---
-title: إزالة قيود القراءة فقط
-linktitle: إزالة قيود القراءة فقط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET.
+title: 解除只读限制
+linktitle: 解除只读限制
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 从 Word 文档中删除只读限制。
 type: docs
 weight: 10
 url: /zh/net/document-protection/remove-read-only-restriction/
 ---
-في هذا البرنامج التعليمي ، سنرشدك عبر خطوات استخدام ميزة إزالة قيود القراءة فقط Aspose.Words for .NET. تتيح لك هذه الميزة إزالة قيود القراءة فقط من مستند Word لجعله قابلاً للتحرير. اتبع الخطوات التالية:
+在本教程中，我们将引导您完成使用 Aspose.Words for .NET 只读限制删除功能的步骤。此功能允许您从 Word 文档中删除只读限制，使其可编辑。请按照以下步骤操作：
 
-## الخطوة 1: إنشاء المستند وإعداد الحماية
+## 第 1 步：创建文档并设置保护
 
-ابدأ بإنشاء مثيل لفئة المستند:
+首先创建 Document 类的实例：
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -19,50 +19,50 @@ Document doc = new Document();
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
-قم بتعيين كلمة مرور للمستند باستخدام خاصية SetPassword () للكائن WriteProtection:
+使用 WriteProtection 对象的 SetPassword() 属性为文档设置密码：
 
-تأكد من استبدال "MyPassword" بكلمة المرور الفعلية التي استخدمتها لحماية المستند.
+请务必将“MyPassword”替换为您用于保护文档的实际密码。
 
-## الخطوة 2: إزالة قيود القراءة فقط
+## 第 2 步：解除只读限制
 
-لإزالة تقييد القراءة فقط ، قم بتعيين الخاصية ReadOnlyRecommended إلى false:
+要删除只读限制，请将 ReadOnlyRecommended 属性设置为 false：
 
 ```csharp
 doc.WriteProtection.ReadOnlyRecommended = false;
 ```
 
-## الخطوة 3: تطبيق حماية غير مقيدة
+## 第 3 步：应用无限制保护
 
-أخيرًا ، قم بتطبيق حماية غير مقيدة باستخدام طريقة حماية كائن المستند:
+最后，使用 Document 对象的 Protect() 方法应用不受限制的保护：
 
 ```csharp
 doc.Protect(ProtectionType.NoProtection);
 doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند بدون قيود القراءة فقط.
+请务必指定正确的路径和文件名以保存没有只读限制的文档。
 
-### مثال على شفرة المصدر الخاصة بإزالة القيود للقراءة فقط باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 移除只读限制的示例源代码
 
-فيما يلي شفرة المصدر الكاملة لإزالة قيود القراءة فقط باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 移除只读限制的完整源代码：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	
-	// أدخل كلمة مرور يصل طولها إلى 15 حرفًا.
+	//输入最多 15 个字符的密码。
 	doc.WriteProtection.SetPassword("MyPassword");
 
-	// قم بإزالة خيار القراءة فقط.
+	//删除只读选项。
 	doc.WriteProtection.ReadOnlyRecommended = false;
 
-	// تطبيق الحماية ضد الكتابة دون أي حماية.
+	//在没有任何保护的情况下应用写保护。
 	doc.Protect(ProtectionType.NoProtection);
 	doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة إزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET.
+通过执行这些步骤，您可以使用 Aspose.Words for .NET 轻松地从 Word 文档中删除只读限制。
 

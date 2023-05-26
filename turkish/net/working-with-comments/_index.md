@@ -1,19 +1,19 @@
 ---
-title: التعامل مع التعليقات
-linktitle: التعامل مع التعليقات
-second_title: Aspose.Words لمراجع .NET API
-description: توضح البرامج التعليمية كيفية إضافة التعليقات وإرساء التعليقات وإضافة / إزالة الرد على التعليقات واستخراج التعليقات وحل التعليقات والردود في Aspose.Words for .NET
+title: Yorumlarla Çalışmak
+linktitle: Yorumlarla Çalışmak
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, Aspose.Words for .NET'te yorum eklemeyi, yorumları bağlamayı, yorum yanıtı ekleme/kaldırmayı, yorumları ayıklamayı ve yorum ve yanıtları çözümlemeyi gösterir.
 type: docs
 weight: 50
 url: /tr/net/working-with-comments/
 ---
 
-في هذه البرامج التعليمية ، ستتعلم جوانب مختلفة من التعامل مع التعليقات في مستندات Word باستخدام Aspose.Words for .NET. سوف تكتشف كيفية إضافة التعليقات إلى المستندات ، وإرساء ردود التعليقات على نص معين ، وإضافة وإزالة الردود على التعليقات ، وحل التعليقات والردود عليها. يوفر كل برنامج تعليمي دليلاً مفصلاً خطوة بخطوة مع شفرة المصدر الكاملة ، مما يتيح لك تحسين التعاون وإدارة التعليقات داخل مستندات Word باستخدام Aspose.Words for .NET.
+Bu eğitimlerde, Aspose.Words for .NET kullanarak Word belgelerindeki yorumlarla çalışmanın çeşitli yönlerini öğreneceksiniz. Belgelere yorum eklemeyi, yorum yanıtlarını belirli bir metne bağlamayı, yorum yanıtlarını eklemeyi ve kaldırmayı ve yorumları ve yanıtlarını çözmeyi keşfedeceksiniz. Her eğitim, tam kaynak kodunu içeren adım adım bir kılavuz sağlayarak, Aspose.Words for .NET kullanarak Word belgelerinizde işbirliğini ve geri bildirim yönetimini geliştirmenizi sağlar.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [أضف التعليقات](./add-comments/) | تعرف على كيفية إضافة تعليقات إلى مستندات Word باستخدام Aspose.Words for .NET. |
-| [تعليق المرساة](./anchor-comment/) | تعرف على كيفية إرساء ردود التعليقات على نص معين في مستندات Word باستخدام Aspose.Words for .NET. |
-| [إضافة إزالة التعليق الرد](./add-remove-comment-reply/) | تعرف على كيفية إضافة وإزالة الردود على التعليقات في مستندات Word باستخدام Aspose.Words for .NET. |
-| [حل التعليق والردود](./comment-resolved-and-replies/) | تعرف على كيفية حل التعليقات والردود عليها في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Yorum ekle](./add-comments/) | Aspose.Words for .NET kullanarak Word belgelerine nasıl yorum ekleyeceğinizi öğrenin. |
+| [Çapa Yorumu](./anchor-comment/) | Aspose.Words for .NET kullanarak Word belgelerindeki belirli metinlere yorum yanıtlarını nasıl tutturacağınızı öğrenin. |
+| [Ekle Yorum Kaldır Yanıtla](./add-remove-comment-reply/) | Aspose.Words for .NET kullanarak Word belgelerine yorum yanıtlarını nasıl ekleyeceğinizi ve kaldıracağınızı öğrenin. |
+| [Yorum Çözüldü ve Yanıtlar](./comment-resolved-and-replies/) | Aspose.Words for .NET kullanarak Word belgelerindeki yorumları ve yanıtlarını nasıl çözeceğinizi öğrenin. |

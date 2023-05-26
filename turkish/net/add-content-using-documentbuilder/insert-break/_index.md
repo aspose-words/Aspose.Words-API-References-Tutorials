@@ -1,29 +1,29 @@
 ---
-title: أدخل فاصل
-linktitle: أدخل فاصل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج فواصل الصفحات في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Mola Ekle
+linktitle: Mola Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerine nasıl sayfa sonları ekleyeceğinizi öğrenin. Adım adım rehber.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-break/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج فواصل الصفحات في مستند Word باستخدام طريقة InsertBreak في Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من التحكم في فواصل الصفحات داخل المستند الخاص بك.
+Bu kapsamlı örnekte, Aspose.Words for .NET'te InsertBreak yöntemini kullanarak bir Word belgesine nasıl sayfa sonları ekleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, belgenizdeki sayfa sonlarını kontrol edebileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesi başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل المحتوى وفواصل الصفحات
-بعد ذلك ، استخدم طريقة Writeln لفئة DocumentBuilder لإضافة محتوى إلى المستند. لإدراج فاصل صفحات ، استخدم الأسلوب InsertBreak مع المعلمة BreakType.PageBreak:
+## 2. Adım: İçerik ve Sayfa Sonları Ekleyin
+Ardından, belgeye içerik eklemek için DocumentBuilder sınıfının Writeln yöntemini kullanın. Sayfa sonu eklemek için, BreakType.PageBreak parametresiyle InsertBreak yöntemini kullanın:
 
 ```csharp
 builder.Writeln("This is page 1.");
@@ -35,15 +35,15 @@ builder.InsertBreak(BreakType.PageBreak);
 builder.Writeln("This is page 3.");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج المحتوى وفواصل الصفحات ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 3. Adım: Belgeyi Kaydedin
+İçeriği ve sayfa sonlarını ekledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-### مثال على كود المصدر لإدراج استراحة باستخدام Aspose.Words for .NET
-فيما يلي شفرة المصدر الكاملة لإدخال فواصل الصفحات باستخدام Aspose.Words for .NET:
+### Aspose.Words for .NET kullanan Insert Break için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak sayfa sonları eklemek için eksiksiz kaynak kodu burada:
 
 ```csharp
 
@@ -62,8 +62,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 			
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Kodu özel gereksinimlerinize göre ayarlamayı ve gerektiğinde ek işlevlerle geliştirmeyi unutmayın.
 
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج فواصل الصفحات في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن التحكم في ترقيم الصفحات وتخطيط المستند عن طريق إدراج فواصل الصفحات في المواضع المطلوبة.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine sayfa sonları eklemeyi başarıyla öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak, istenen konumlara sayfa sonları ekleyerek artık belgenizin sayfalandırmasını ve düzenini kontrol edebilirsiniz.

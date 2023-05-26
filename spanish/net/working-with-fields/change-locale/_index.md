@@ -1,21 +1,21 @@
 ---
-title: تغيير اللغة
-linktitle: تغيير اللغة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير الإعدادات المحلية لتنسيق التاريخ والأرقام في مستندات Word باستخدام Aspose.Words for .NET.
+title: Cambiar configuración regional
+linktitle: Cambiar configuración regional
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a cambiar la configuración regional para el formato de fecha y número en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/change-locale/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال عملية تغيير الإعدادات المحلية في مستندات Word باستخدام Aspose.Words for .NET. من خلال تعديل الإعدادات المحلية ، يمكنك التحكم في تنسيق التواريخ والأرقام أثناء عمليات دمج البريد. سنزودك بشفرة المصدر C # الضرورية والتعليمات خطوة بخطوة لتحقيق ذلك.
+En este tutorial, lo guiaremos a través del proceso de cambio de configuración regional en documentos de Word usando Aspose.Words para .NET. Al modificar la configuración regional, puede controlar el formato de fechas y números durante las operaciones de combinación de correspondencia. Le proporcionaremos el código fuente de C# necesario y las instrucciones paso a paso para lograrlo.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
+- Aspose.Words para la biblioteca .NET instalada en su sistema.
 
-## الخطوة 1: إنشاء مستند و DocumentBuilder
-للبدء ، قم بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+## Paso 1: Cree un documento y DocumentBuilder
+Para comenzar, cree una instancia de la clase Document y un objeto DocumentBuilder:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,52 +23,52 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل حقل
-بعد ذلك ، أدخل حقل دمج في المستند باستخدام طريقة InsertField:
+## Paso 2: Insertar un campo
+A continuación, inserte un campo de combinación en el documento utilizando el método InsertField:
 
 ```csharp
 builder.InsertField("MERGEFIELD Date");
 ```
 
-في الكود أعلاه ، نقوم بإدراج حقل دمج يسمى "التاريخ" في المستند.
+En el código anterior, insertamos un campo de combinación llamado "Fecha" en el documento.
 
-## الخطوة 3: قم بتغيير اللغة
-لتغيير لغة تنسيق التاريخ والأرقام ، يمكنك تعديل الثقافة الحالية لمؤشر الترابط. في هذا المثال ، سنقوم بتعيين اللغة إلى الألمانية ("de-DE"):
+## Paso 3: cambiar la configuración regional
+Para cambiar la configuración regional del formato de fecha y número, puede modificar la referencia cultural actual del hilo. En este ejemplo, estableceremos la configuración regional en alemán ("de-DE"):
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-في الكود أعلاه ، نقوم بتخزين الثقافة الحالية ثم نقوم بتعيين ثقافة الخيط الحالي على اللغة الألمانية.
+En el código anterior, almacenamos la cultura actual y luego establecemos la cultura del subproceso actual en alemán.
 
-## الخطوة 4: قم بإجراء دمج المراسلات
-نفّذ عملية دمج المراسلات وقدم قيمة التاريخ لحقل "التاريخ":
+## Paso 4: realizar la combinación de correspondencia
+Realice una operación de combinación de correspondencia y proporcione el valor de fecha para el campo "Fecha":
 
 ```csharp
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-في مقتطف الشفرة هذا ، ننفذ عملية دمج المراسلات ونقدم التاريخ الحالي كقيمة لحقل "التاريخ".
+En este fragmento de código, ejecutamos la operación de combinación de correspondencia y proporcionamos la fecha actual como valor para el campo "Fecha".
 
-## الخطوة 5: استعادة الإعدادات المحلية الأصلية
-بعد اكتمال دمج المراسلات ، قم باستعادة البيانات الموروثة الأصلية لمؤشر الترابط:
+## Paso 5: restaurar la configuración regional original
+Una vez completada la combinación de correspondencia, restaure la referencia cultural original para el hilo:
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = currentCulture;
 ```
 
-في الكود أعلاه ، نقوم باستعادة الثقافة الأصلية للخيط.
+En el código anterior, restauramos la cultura original del hilo.
 
-## الخطوة 6: احفظ المستند
-احفظ المستند المعدل في ملف باستخدام طريقة Save لفئة Document:
+## Paso 6: Guarde el documento
+Guarde el documento modificado en un archivo utilizando el método Guardar de la clase Documento:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-### مثال على كود المصدر لتغيير اللغة باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لتغيير اللغة في مستندات Word باستخدام Aspose.Words for .NET:
+### Ejemplo de código fuente para cambiar la configuración regional usando Aspose.Words para .NET
+Aquí está el código fuente completo para cambiar la configuración regional en documentos de Word usando Aspose.Words para .NET:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -87,5 +87,5 @@ Thread.CurrentThread.CurrentCulture = currentCulture;
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تغيير اللغة في مستندات Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن التحكم في تنسيق التواريخ والأرقام أثناء عمليات دمج المراسلات. قم بتخصيص الإعدادات المحلية وفقًا لمتطلباتك لضمان التنسيق الدقيق والمتسق في مستنداتك.
+## Conclusión
+¡Felicidades! Ha aprendido con éxito cómo cambiar la configuración regional en documentos de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente provisto, ahora puede controlar el formato de fechas y números durante las operaciones de combinación de correspondencia. Personalice la configuración regional de acuerdo con sus requisitos para garantizar un formato preciso y uniforme en sus documentos.

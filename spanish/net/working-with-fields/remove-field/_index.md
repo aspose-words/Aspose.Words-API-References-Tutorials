@@ -1,62 +1,62 @@
 ---
-title: إزالة الحقل
-linktitle: إزالة الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا الدليل ، ستتعلم كيفية حذف حقل معين في مستند باستخدام Aspose.Words for .NET.
+title: Eliminar campo
+linktitle: Eliminar campo
+second_title: Referencia de API de Aspose.Words para .NET
+description: En esta guía, aprenderá a eliminar un campo específico en un documento usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/remove-field/
 ---
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم وظيفة "إزالة الحقل" في Aspose.Words for .NET. اتبع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación, que usa la funcionalidad "Eliminación de campo" de Aspose.Words para .NET. Siga cada paso cuidadosamente para obtener los resultados deseados.
 
-## الخطوة 1: إعداد دليل المستند
+## Paso 1: Configuración del directorio de documentos
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+En el código provisto, debe especificar el directorio de sus documentos. Reemplace el valor "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
-نبدأ بتحميل المستند الحالي من الملف المحدد.
+Comenzamos cargando el documento existente desde el archivo especificado.
 
 ```csharp
 Document doc = new Document(dataDir + "Various fields.docx");
 ```
 
-## الخطوة 3: حذف الحقل
+## Paso 3: Eliminar el campo
 
- نختار الحقل الأول في نطاق المستندات ونستخدم ملف`Remove()` طريقة إزالته.
+ Seleccionamos el primer campo en el rango del documento y usamos el`Remove()` método para eliminarlo.
 
 ```csharp
 Field field = doc.Range.Fields[0];
 field. Remove();
 ```
 
-## الخطوة 4: حفظ المستند
+## Paso 4: Guardar el documento
 
- أخيرًا ، نسمي`Save()` طريقة لحفظ المستند المعدل.
+ Finalmente, llamamos a la`Save()` para guardar el documento modificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 ```
 
-### مثال على شفرة المصدر لحذف الحقل باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para la eliminación de campos con Aspose.Words para .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+// Cargue el documento.
 Document doc = new Document(dataDir + "Various fields.docx");
 
-// اختيار الحقل المراد حذفه.
+// Selección del campo a borrar.
 Field field = doc.Range.Fields[0];
 field. Remove();
 
-// احفظ المستند.
+// Guarde el documento.
 doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 ```
 
-اتبع هذه الخطوات لحذف حقل معين في وثيقتك باستخدام Aspose.Words for .NET.
+Siga estos pasos para eliminar un campo específico en su documento usando Aspose.Words para .NET.

@@ -1,37 +1,37 @@
 ---
-title: تعيين اللغة الروسية كلغة تحرير افتراضية
-linktitle: تعيين اللغة الروسية كلغة تحرير افتراضية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتعيين اللغة الروسية كلغة تحرير افتراضية لمستند باستخدام Aspose.Words for .NET.
+title: Ställ in ryska som standardredigeringsspråk
+linktitle: Ställ in ryska som standardredigeringsspråk
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att ställa in ryska som standardredigeringsspråk för ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-document-options-and-settings/set-russian-as-default-editing-language/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتعيين اللغة الروسية كلغة تحرير افتراضية باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة ضبط اللغة الافتراضية عند تحميل مستند.
+I den här handledningen går vi igenom C#-källkoden för att ställa in ryska som standardredigeringsspråk med Aspose.Words för .NET. Den här funktionen låter dig ställa in standardspråket när du laddar ett dokument.
 
-## الخطوة 1: إعداد المشروع
+## Steg 1: Projektinställning
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
 
-## الخطوة الثانية: تحميل المستند
+## Steg 2: Ladda dokumentet
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد تعيين اللغة الروسية له كلغة التحرير الافتراضية. استخدم الكود التالي لتحميل المستند:
+I det här steget kommer vi att ladda Word-dokumentet för vilket vi vill ställa in ryska som standardspråk för redigering. Använd följande kod för att ladda dokumentet:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;
 
-// المسار إلى دليل المستندات.
+// Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till katalogen där ditt dokument finns.
 
-## الخطوة 3: التحقق من اللغة الافتراضية
+## Steg 3: Kontrollera standardspråket
 
-بعد تحميل المستند ، سنتحقق مما إذا كانت اللغة الافتراضية قد تم ضبطها بشكل صحيح على الروسية. استخدم الكود التالي للحصول على معرف اللغة الافتراضي:
+Efter att ha laddat upp dokumentet kommer vi att kontrollera om standardspråket är korrekt inställt på ryska. Använd följande kod för att få standardspråk-ID:
 
 ```csharp
 int localeId = doc.Styles.DefaultFont.LocaleId;
@@ -41,16 +41,16 @@ Console.WriteLine(
 		: "The document default language was set to another than Russian language originally, so it is not overridden.");
 ```
 
-يتحقق الكود مما إذا كان معرف اللغة يطابق معرف اللغة الروسية. وفقًا للنتيجة ، فإنه يعرض رسالة مقابلة.
+Koden kontrollerar om språk-ID stämmer överens med ryska. Enligt resultatet visas ett motsvarande meddelande.
 
-### مثال على شفرة المصدر لتعيين الروسية كلغة تحرير افتراضية باستخدام Aspose.Words for .NET
+### Exempel på källkod för Ange ryska som standardredigeringsspråk med Aspose.Words för .NET
 
 ```csharp
 
 	LoadOptions loadOptions = new LoadOptions();
 	loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;
 	
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 
@@ -62,6 +62,6 @@ Console.WriteLine(
 
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Var noga med att ange rätt dokumentsökväg i`dataDir` variabel.
 
-لقد تعلمت الآن كيفية تعيين اللغة الروسية كلغة تحرير افتراضية لمستند باستخدام Aspose.Words for .NET. باتباع دليل الخطوة
+Du har nu lärt dig hur du ställer in ryska som standardredigeringsspråk för ett dokument med Aspose.Words för .NET. Genom att följa stegguiden

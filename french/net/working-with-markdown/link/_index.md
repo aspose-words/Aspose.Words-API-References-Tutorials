@@ -1,41 +1,41 @@
 ---
-title: وصلة
-linktitle: وصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الروابط مع Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Lien
+linktitle: Lien
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer des liens avec Aspose.Words pour .NET. Guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/working-with-markdown/link/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة الروابط مع Aspose.Words for .NET. تُستخدم الروابط لإنشاء مراجع قابلة للنقر لمواقع الويب أو المستندات الأخرى.
+Dans cet exemple, nous vous expliquerons comment utiliser la fonctionnalité de liens avec Aspose.Words pour .NET. Les liens sont utilisés pour créer des références cliquables vers des sites Web ou d'autres documents.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Étape 1 : Utiliser un générateur de documents
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Tout d'abord, nous allons utiliser un générateur de document pour ajouter du contenu à notre document.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة الثانية: إدخال ارتباط
+## Étape 2 : Insertion d'un lien
 
- يمكننا إدراج ارتباط باستخدام ملف`Insertlink` طريقة منشئ الوثيقة. نحتاج إلى تحديد نص الرابط ، هنا "Aspose" ، بالإضافة إلى عنوان URL المقصود.
+ Nous pouvons insérer un lien en utilisant le`Insertlink` méthode du générateur de documents. Il faut préciser le texte du lien, ici "Aspose", ainsi que l'URL de destination.
 
 ```csharp
-builder.Insertlink("Aspose", "https://www.aspose.com "، خطأ) ؛
+builder.Insertlink("Aspose", "https://www.aspose.com", faux);
 ```
 
-### مثال على شفرة المصدر للروابط مع Aspose.Words for .NET
+### Exemple de code source pour les liens avec Aspose.Words pour .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilisez un générateur de document pour ajouter du contenu au document.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// أدخل ارتباط.
-	builder.Insertlink("Aspose", "https://www.aspose.com "، خطأ) ؛
+	// Insérer un lien.
+	builder.Insertlink("Aspose", "https://www.aspose.com", faux);
             
 ```
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الروابط مع Aspose.Words for .NET.
+Félicitation ! Vous avez maintenant appris à utiliser la fonction de liens avec Aspose.Words pour .NET.
 

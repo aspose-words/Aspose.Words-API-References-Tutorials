@@ -1,78 +1,78 @@
 ---
-title: فك ارتباط تذييلات الرؤوس
-linktitle: فك ارتباط تذييلات الرؤوس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الانضمام إلى مستندات Word وإلحاقها أثناء إلغاء ربط الرؤوس والتذييلات باستخدام Aspose.Words for .NET.
+title: Üstbilgilerin Altbilgilerin Bağlantısını Kaldırma
+linktitle: Üstbilgilerin Altbilgilerin Bağlantısını Kaldırma
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak üstbilgi ve altbilgi bağlantısını kaldırırken Word belgelerini nasıl birleştireceğinizi ve ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/unlink-headers-footers/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Unlink Headers Footers في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء إلغاء ربط الرؤوس والتذييلات من المستند المصدر.
+Bu eğitim, Aspose.Words for .NET'in Unlink Headers Footers özelliğini kullanma sürecinde size rehberlik edecektir. Bu özellik, üstbilgilerin ve altbilgilerin kaynak belgeden bağlantısını kaldırırken Word belgelerini birleştirmenize ve eklemenize olanak tanır.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words for .NET kurulu. Aspose web sitesinden indirebilir veya NuGet aracılığıyla kurabilirsiniz.
+2. Visual Studio veya başka herhangi bir C# geliştirme ortamı.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## 1. Adım: Belge Dizinlerini Başlatın
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir` belgelerinizin bulunduğu yola değişken.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## 2. Adım: Kaynak ve Hedef Belgeleri Yükleyin
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Ardından, Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. içindeki dosya adlarını güncelleyin.`Document` belge adlarınıza göre yapıcı.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إلغاء ربط الرؤوس والتذييلات في المستند المصدر
+## 3. Adım: Kaynak Belgedeki Üstbilgiler ve Altbilgilerin Bağlantısını Kaldırın
 
- لإلغاء ارتباط الرؤوس والتذييلات في المستند المصدر من متابعة رؤوس وتذييلات المستند الوجهة ، تحتاج إلى تعيين`LinkToPrevious` ممتلكات`HeadersFooters` المجموعة في القسم الأول من المستند المصدر إلى`false`.
+ Kaynak belgedeki üstbilgiler ve altbilgiler ile devam eden hedef belgenin üstbilgiler ve altbilgiler arasındaki bağlantıyı kaldırmak için,`LinkToPrevious` mülkiyeti`HeadersFooters` kaynak belgenin ilk bölümünde toplama`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بمستند الوجهة
+## Adım 4: Kaynak Belgeyi Hedef Belgeye Ekleyin
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Artık, kaynak belgeyi hedef belgeye aşağıdakileri kullanarak ekleyebilirsiniz:`AppendDocument` yöntemi`Document` sınıf. bu`ImportFormatMode.KeepSourceFormatting` parametresi, ekleme işlemi sırasında kaynak formatının korunmasını sağlar.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند النهائي
+## 5. Adım: Nihai Belgeyi Kaydedin
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة Unlink Headers Footers باستخدام ملحق`Save` طريقة`Document` فصل.
+ Son olarak, birleştirilmiş belgeyi Üstbilgilerin Altbilgilerin Bağlantısını Kaldır özelliği etkinleştirilerek kaydedin.`Save` yöntemi`Document` sınıf.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 ```
 
-### مثال على شفرة المصدر لإلغاء ربط تذييلات الرؤوس باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Unlink Headers Footers için örnek kaynak kodu
 
-إليك شفرة المصدر الكاملة لميزة "Unlink Headers Footers" في C # باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanan C# dilindeki "Üstbilgilerin Altbilgilerin Bağlantısını Kaldır" özelliğinin tam kaynak kodu burada:
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بفك ارتباط الرؤوس والتذييلات في المستند المصدر لإيقاف ذلك
-	// من متابعة رؤوس وتذييلات المستند الوجهة.
+	// Bunu durdurmak için kaynak belgedeki üstbilgilerin ve altbilgilerin bağlantısını kaldırın.
+	// hedef belgenin üstbilgileri ve altbilgilerine devam etmekten.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Unlink Headers Footers باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الرؤوس والتذييلات من المستند المصدر غير المرتبط بالمستند الوجهة.
+Bu kadar! Aspose.Words for .NET'i kullanarak Başlıkların Altbilgilerin Bağlantısını Kaldır özelliğini başarıyla uyguladınız. Nihai belge, hedef belgeden bağlantısı kaldırılmış kaynak belgedeki üstbilgiler ve altbilgilerle birleştirilmiş içeriği içerecektir.

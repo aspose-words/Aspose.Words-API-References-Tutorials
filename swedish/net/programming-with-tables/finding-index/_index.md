@@ -1,60 +1,60 @@
 ---
-title: إيجاد الفهرس
-linktitle: إيجاد الفهرس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية العثور على فهارس الجدول والصف والخلية في مستند Word باستخدام Aspose.Words for .NET.
+title: Hitta Index
+linktitle: Hitta Index
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du hittar tabell-, rad- och cellindex i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-tables/finding-index/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words for .NET للعثور على فهارس جدول وصف وخلية في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من العثور على فهارس عناصر الصفيف في مستندات Word الخاصة بك برمجيًا.
+I den här handledningen kommer vi att lära oss hur man använder Aspose.Words för .NET för att hitta indexen för en tabell, rad och cell i ett Word-dokument. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna hitta indexen för arrayelement i dina Word-dokument programmatiskt.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Steg 1: Projektinställning
+1. Starta Visual Studio och skapa ett nytt C#-projekt.
+2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
-## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+## Steg 2: Ladda dokumentet och komma åt tabellen
+För att börja arbeta med tabellen måste vi ladda dokumentet som innehåller den och komma åt den. Följ dessa steg:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "Tables.docx");
 
-// الوصول إلى المصفوفة
+// Tillgång till arrayen
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog.
 
-## الخطوة 3: ابحث عن فهرس الجدول والصف والخلية
-بعد ذلك ، سنجد فهارس الجدول والصف والخلية في المصفوفة باستخدام الطرق التي يوفرها Aspose.Words for .NET. استخدم الكود التالي:
+## Steg 3: Hitta tabell, rad och cellindex
+Därefter hittar vi tabell-, rad- och cellindex i arrayen med metoderna som tillhandahålls av Aspose.Words för .NET. Använd följande kod:
 
 ```csharp
-// ابحث عن فهرس الجدول
+// Hitta tabellindexet
 NodeCollection allTables = doc.GetChildNodes(NodeType.Table, true);
 int tableIndex = allTables.IndexOf(table);
 Console.WriteLine("\nTable index is " + tableIndex);
 
-// ابحث عن فهرس الصف
+// Hitta radindex
 int rowIndex = table.IndexOf(table.LastRow);
 Console.WriteLine("\nLine index is " + rowIndex);
 
-// ابحث عن فهرس الخلية
+// Hitta cellindex
 Row row = table. LastRow;
 int cellIndex = row.IndexOf(row.Cells[4]);
 Console.WriteLine("\nCell index is " + cellIndex);
 ```
 
- هنا نستخدم ملف`GetChildNodes` طريقة للحصول على جميع الجداول في المستند. ثم نستخدم`IndexOf` للعثور على فهرس الجدول المحدد في مجموعة جميع الجداول. وبالمثل ، نستخدم`IndexOf` للعثور على فهرس الصف الأخير في الجدول ، و`IndexOf` داخل صف للعثور على فهرس خلية معينة.
+ Här använder vi`GetChildNodes` metod för att hämta alla tabeller i dokumentet. Då använder vi`IndexOf` för att hitta indexet för den specifika tabellen i samlingen av alla tabeller. På samma sätt använder vi`IndexOf` för att hitta indexet för den sista raden i tabellen, och`IndexOf` inuti en rad för att hitta indexet för en specifik cell.
 
-### عينة من التعليمات البرمجية المصدر للعثور على الفهرس باستخدام Aspose.Words for .NET 
+### Exempel på källkod för att hitta index med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -69,5 +69,5 @@ Console.WriteLine("\nCell index is " + cellIndex);
 	Console.WriteLine("\nCell index is " + cellIndex);
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية العثور على فهارس الجدول والصف والخلية في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك العثور على المواضع الدقيقة لعناصر الصفيف وتحديدها في مستندات Word الخاصة بك برمجيًا. تسمح لك هذه الميزة بمعالجة عناصر المصفوفة والتفاعل معها بدقة لتناسب احتياجاتك الخاصة.
+## Slutsats
+den här handledningen lärde vi oss hur man hittar indexen för en tabell, rad och cell i ett Word-dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide och implementera den medföljande C#-koden kan du hitta och identifiera de exakta positionerna för arrayelement i dina Word-dokument programmatiskt. Den här funktionen låter dig manipulera och interagera med arrayelement exakt för att passa dina specifika behov.

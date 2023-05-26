@@ -1,31 +1,31 @@
 ---
-title: تعيين مجلد خطوط النوع الحقيقي
-linktitle: تعيين مجلد خطوط النوع الحقيقي
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لإعداد مجلد خطوط الكتابة الصحيحة عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Establecer carpeta de fuentes True Type
+linktitle: Establecer carpeta de fuentes True Type
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para configurar la carpeta de fuentes True Type al renderizar un documento usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/set-true-type-fonts-folder/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلد خطوط الكتابة الحقيقية عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلد مخصص يحتوي على خطوط True Type لاستخدامه عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para configurar la carpeta de fuentes True Type al representar un documento con Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo especificar una carpeta personalizada que contenga fuentes True Type para usar cuando represente sus documentos usando Aspose.Words para .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند للعرض
- بعد ذلك ، تحتاج إلى تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Paso 2: Cargue el documento para renderizar
+ A continuación, debe cargar el documento para renderizar utilizando el`Document` clase. Asegúrese de especificar la ruta correcta del documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تعيين مجلد خطوط النوع الحقيقي
- يمكنك الآن تحديد مجلد خطوط الكتابة الحقيقية لاستخدامها عند التقديم عن طريق إنشاء مثيل لملف`FontSettings` الطبقة واستخدام`SetFontsFolder()` طريقة لتعيين مجلد الخطوط. يمكنك تحديد مجلد مخصص يحتوي على خطوط True Type الخاصة بك. المعلمة الثانية ل`SetFontsFolder()` يشير إلى ما إذا كنت تريد البحث في المجلدات الفرعية للمجلد المحدد أيضًا.
+## Paso 3: Configurar la carpeta de fuentes True Type
+ Ahora puede especificar la carpeta de fuentes de tipo verdadero para usar al renderizar creando una instancia de la`FontSettings` clase y usando el`SetFontsFolder()` método para establecer la carpeta de fuentes. Puede especificar una carpeta personalizada que contenga sus fuentes True Type. El segundo parámetro a`SetFontsFolder()` indica si también desea buscar subcarpetas de la carpeta especificada.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -33,29 +33,29 @@ fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 4: احفظ المستند المقدم
- أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## Paso 4: Guarde el documento renderizado
+ Finalmente, puede guardar el documento renderizado en un archivo usando el`Save()` metodo de la`Document` clase. Asegúrese de especificar la ruta y el nombre de archivo correctos.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set True Type Fonts Folder باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para establecer la carpeta de fuentes True Type usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Rendering.docx");
 	FontSettings fontSettings = new FontSettings();
-	// لاحظ أن هذا الإعداد سيتجاوز أي مصادر افتراضية للخطوط يتم البحث عنها افتراضيًا. الآن سيتم البحث عن هذه المجلدات فقط
-	// الخطوط عند تقديم الخطوط أو دمجها. لإضافة مصدر خط إضافي مع الاحتفاظ بمصادر خطوط النظام ، استخدم كلاً من FontSettings.GetFontSources و
-	// FontSettings.SetFontSources بدلاً من ذلك
+	// Tenga en cuenta que esta configuración anulará cualquier fuente de fuente predeterminada que se busque de forma predeterminada. Ahora solo se buscarán estas carpetas
+	// Fuentes al renderizar o incrustar fuentes. Para agregar una fuente de fuente adicional mientras mantiene las fuentes de fuente del sistema, use FontSettings.GetFontSources y
+	// FontSettings.SetFontSources en su lugar
 	fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-	// ضبط إعدادات الخط
+	// Establecer la configuración de fuente
 	doc.FontSettings = fontSettings;
 	doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلد خطوط الكتابة الحقيقية عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلد مخصص يحتوي على خطوط True Type لاستخدامها عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في الخطوط المستخدمة وتخصيصها عند تقديم مستنداتك وفقًا لاحتياجاتك الخاصة.
+## Conclusión
+En este tutorial, aprendimos cómo configurar la carpeta de fuentes True Type al representar un documento con Aspose.Words para .NET. Al seguir esta guía paso a paso, puede especificar fácilmente una carpeta personalizada que contenga fuentes True Type para usar al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para trabajar con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar las fuentes utilizadas al renderizar sus documentos según sus necesidades específicas.

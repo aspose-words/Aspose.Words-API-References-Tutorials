@@ -1,78 +1,78 @@
 ---
-title: جدول متداخل
-linktitle: جدول متداخل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET.
+title: Tabella nidificata
+linktitle: Tabella nidificata
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come creare una tabella nidificata in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/nested-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من إنشاء جداول متداخلة في مستندات Word الخاصة بك برمجيًا.
+In questo tutorial impareremo come creare una tabella nidificata in un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di creare tabelle nidificate nei tuoi documenti Word a livello di programmazione.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Passaggio 1: impostazione del progetto
+1. Avvia Visual Studio e crea un nuovo progetto C#.
+2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Passaggio 2: creazione del documento e inizializzazione del generatore di documenti
+Per iniziare a lavorare con il documento e il generatore di documenti, attenersi alla seguente procedura:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Creazione di documenti
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Inizializza il generatore di documenti
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti.
 
-## الخطوة 3: بناء الجدول المتداخل
-بعد ذلك ، سنبني الجدول المتداخل عن طريق إدراج الخلايا في الجدول الخارجي وإنشاء جدول جديد داخل الخلية الأولى. استخدم الكود التالي:
+## Passaggio 3: creazione della tabella nidificata
+Successivamente, costruiremo la tabella nidificata inserendo celle nella tabella esterna e creando una nuova tabella all'interno della prima cella. Usa il seguente codice:
 
 ```csharp
-// أدخل الخلية الأولى من الجدول الخارجي
+// Inserisci la prima cella della tabella esterna
 Cell cell = builder. InsertCell();
 builder.Writeln("Cell 1 of the outer table");
 
-// أدخل الخلية الثانية من الجدول الخارجي
+// Inserisci la seconda cella della tabella esterna
 builder. InsertCell();
 builder.Writeln("Cell 2 of the outer table");
 
-// إنهاء الجدول الخارجي
+// Terminazione della tabella esterna
 builder. EndTable();
 
-// الانتقال إلى الخلية الأولى في الجدول الخارجي
+// Passa alla prima cella della tabella esterna
 builder.MoveTo(cell.FirstParagraph);
 
-// بناء الجدول الداخلي
+// Costruisci il tavolo interno
 builder. InsertCell();
 builder.Writeln("Cell 1 of inner table");
 builder. InsertCell();
 builder.Writeln("Cell 2 of the inner table");
 
-// نهاية الجدول الداخلي
+// Fine del tavolo interno
 builder. EndTable();
 ```
 
-هنا نستخدم منشئ المستندات لإدراج الخلايا والمحتوى في الجدول الخارجي. ثم ننقل مؤشر منشئ المستندات إلى الخلية الأولى من الجدول الخارجي ونبني جدولًا جديدًا بداخله عن طريق إدراج الخلايا والمحتوى.
+Qui usiamo il generatore di documenti per inserire celle e contenuto nella tabella esterna. Quindi spostiamo il cursore del generatore di documenti sulla prima cella della tabella esterna e creiamo una nuova tabella all'interno inserendo celle e contenuto.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل بالجدول المتداخل. استخدم الكود التالي:
+## Passaggio 4: salvare il documento modificato
+Infine, dobbiamo salvare il documento modificato con la tabella nidificata. Usa il seguente codice:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح وملف الاسم لمستند الإخراج.
+Assicurarsi di specificare il percorso e il nome file corretti per il documento di output.
 
-### نموذج التعليمات البرمجية المصدر للجدول المتداخل باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Nested Table utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -81,12 +81,12 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.Writeln("Outer Table Cell 1");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
-	// هذا الاستدعاء مهم لإنشاء جدول متداخل داخل الجدول الأول.
-	// بدون هذا الاستدعاء ، سيتم إلحاق الخلايا المدرجة أدناه بالجدول الخارجي.
+	// Questa chiamata è importante per creare una tabella nidificata all'interno della prima tabella.
+	// Senza questa chiamata, le celle inserite di seguito verranno aggiunte alla tabella esterna.
 	builder.EndTable();
-	// الانتقال إلى الخلية الأولى في الجدول الخارجي.
+	// Passa alla prima cella della tabella esterna.
 	builder.MoveTo(cell.FirstParagraph);
-	// بناء الجدول الداخلي.
+	// Costruisci il tavolo interno.
 	builder.InsertCell();
 	builder.Writeln("Inner Table Cell 1");
 	builder.InsertCell();
@@ -95,5 +95,5 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك إنشاء جداول متداخلة وفقًا لاحتياجاتك الخاصة في مستندات Word الخاصة بك برمجيًا.
+## Conclusione
+In questo tutorial, abbiamo imparato come creare una tabella nidificata in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi creare tabelle nidificate in base alle tue esigenze specifiche nei tuoi documenti Word a livello di programmazione.

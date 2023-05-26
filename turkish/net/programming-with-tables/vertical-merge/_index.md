@@ -1,84 +1,84 @@
 ---
-title: دمج عمودي
-linktitle: دمج عمودي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الدمج الرأسي للخلايا في جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Dikey Birleştirme
+linktitle: Dikey Birleştirme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablodaki hücreleri dikey olarak birleştirmeyi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/vertical-merge/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية دمج الخلايا رأسيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من دمج الخلايا عموديًا في الجداول الخاصة بك في مستندات Word.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablodaki hücreleri dikey olarak birleştirmeyi öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki tablolarınızdaki hücreleri dikey olarak birleştirebileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## 2. Adım: Belgeyi yükleme
+Belgeyle çalışmaya başlamak için şu adımları izleyin:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء مستند جديد
+// Yeni bir belge oluştur
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة 3: دمج الخلايا عموديًا
-بعد ذلك سنقوم بدمج الخلايا عموديًا في الجدول. استخدم الكود التالي:
+## 3. Adım: Dikey Hücreleri Birleştirme
+Daha sonra tablodaki hücreleri dikey olarak birleştireceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
-// أدخل خلية
+// hücre ekle
 builder. InsertCell();
 
-// تطبيق الدمج العمودي على الخلية الأولى
+// Dikey birleştirmeyi ilk hücreye uygula
 builder.CellFormat.VerticalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
 
-// أدخل خلية أخرى
+// Başka bir hücre ekle
 builder. InsertCell();
 
-// لا تطبق أي دمج عمودي على الخلية
+// Hücreye dikey birleştirme uygulama
 builder.CellFormat.VerticalMerge = CellMerge.None;
 builder.Write("Text in a cell");
 builder. EndRow();
 
-// أدخل خلية
+// hücre ekle
 builder. InsertCell();
 
-// تطبيق الدمج العمودي مع الخلية السابقة
+// Dikey birleştirmeyi önceki hücreyle uygula
 builder.CellFormat.VerticalMerge = CellMerge.Previous;
 
-// أدخل خلية أخرى
+// Başka bir hücre ekle
 builder. InsertCell();
 
-// لا تطبق أي دمج عمودي على الخلية
+// Hücreye dikey birleştirme uygulama
 builder.CellFormat.VerticalMerge = CellMerge.None;
 builder.Write("Text in another cell");
 builder. EndRow();
 
-//قم بإنهاء إنشاء الجدول
+//Tablonun oluşturulmasını sonlandırın
 builder. EndTable();
 ```
 
-في هذا الكود ، نستخدم مُنشئ DocumentBuilder لإدراج خلايا في جدول. نقوم بتطبيق الدمج الرأسي على الخلايا باستخدام خاصية CellFormat.VerticalMerge. نستخدم CellMerge ، أولًا لدمج الخلايا الأول ، CellMerge. سابقًا للدمج مع الخلية السابقة ، و CellMerge. لا يوجد أي دمج رأسي.
+Bu kodda, bir tabloya hücre eklemek için DocumentBuilder yapıcısını kullanıyoruz. CellFormat.VerticalMerge özelliğini kullanarak hücrelere dikey birleştirme uyguluyoruz. İlk hücre birleştirme için CellMerge.First, önceki hücreyle birleştirme için CellMerge.Previous ve dikey birleştirme olmaması için CellMerge.None kullanıyoruz.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع الخلايا المدمجة. استخدم الكود التالي:
+## 4. Adım: Değiştirilen belgeyi kaydetme
+Son olarak, değiştirilen belgeyi birleştirilmiş hücrelerle kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### عينة من التعليمات البرمجية المصدر لـ Vertical Merge باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Vertical Merge için örnek kaynak kodu 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 	builder.Write("Text in one cell");
 	builder.EndRow();
 	builder.InsertCell();
-	// تم دمج هذه الخلية عموديًا في الخلية أعلاه ويجب أن تكون فارغة.
+	// Bu hücre, yukarıdaki hücreye dikey olarak birleştirilmiştir ve boş olmalıdır.
 	builder.CellFormat.VerticalMerge = CellMerge.Previous;
 	builder.InsertCell();
 	builder.CellFormat.VerticalMerge = CellMerge.None;
@@ -101,5 +101,5 @@ doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 	doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية دمج الخلايا رأسيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك بسهولة دمج الخلايا العمودي في الجداول الخاصة بك.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablodaki hücreleri dikey olarak birleştirmeyi öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak tablolarınızdaki Dikey hücreleri kolayca birleştirebilirsiniz.

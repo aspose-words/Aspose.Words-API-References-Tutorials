@@ -1,85 +1,85 @@
 ---
-title: نقل إلى دمج الحقل
-linktitle: نقل إلى دمج الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تنفيذ ميزة Move To Merge Field في Aspose.Words for .NET باستخدام دليل خطوة بخطوة.
+title: Alanı Birleştirmek İçin Taşı
+linktitle: Alanı Birleştirmek İçin Taşı
+second_title: Aspose.Words for .NET API Referansı
+description: Adım adım kılavuz kullanarak Aspose.Words for .NET'te Birleştirme Alanına Taşı özelliğini nasıl uygulayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Merge Field الخاصة بـ Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تمكن المطورين من إنشاء وتعديل وتحويل مستندات Word برمجيًا. تتيح لنا ميزة Move To Merge Field التنقل لدمج الحقول داخل مستند وتنفيذ عمليات مختلفة عليها.
+Bu örnekte, Aspose.Words for .NET'in Birleştirme Alanına Taşı özelliğini inceleyeceğiz. Aspose.Words, geliştiricilerin Word belgelerini program aracılığıyla oluşturmasına, değiştirmesine ve dönüştürmesine olanak sağlayan güçlü bir belge işleme kitaplığıdır. Birleştirme Alanına Taşı özelliği, bir belgedeki alanları birleştirmek için gezinmemize ve bunlar üzerinde çeşitli işlemler gerçekleştirmemize olanak tanır.
 
 
-## شرح شفرة المصدر خطوة بخطوة
+## Kaynak kodunu adım adım açıklama
 
-دعنا ننتقل إلى الكود المصدري خطوة بخطوة لفهم كيفية استخدام ميزة Move To Merge Field باستخدام Aspose.Words for .NET.
+Aspose.Words for .NET kullanarak Birleştirme Alanına Taşı özelliğinin nasıl kullanılacağını anlamak için kaynak kodunu adım adım inceleyelim.
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## 1. Adım: Belge ve belge oluşturucuyu başlatma
 
-أولاً ، قم بتهيئة كائنات Document و DocumentBuilder:
+Önce Document ve DocumentBuilder nesnelerini başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2 إدراج حقل دمج وإضافة نص بعده
+## 2. Adım Bir birleştirme alanı ekleme ve ardından metin ekleme
 
-استخدم الأسلوب InsertField لفئة DocumentBuilder لإدراج حقل دمج ، ثم قم بإضافة نص بعده:
+Bir birleştirme alanı eklemek için DocumentBuilder sınıfının InsertField yöntemini kullanın ve ardından bundan sonra metin ekleyin:
 
 ```csharp
 Field field = builder.InsertField("MERGEFIELD field");
 builder.Write(" Text after the field.");
 ```
 
-## الخطوة 3: مؤشر المنشئ موجود حاليًا في نهاية المستند.
+## Adım 3: Oluşturucunun imleci şu anda belgenin sonundadır.
 
 ```csharp
 Assert.Null(builder.CurrentNode);
 ```
-## الخطوة 4: نقل مؤشر منشئ المستند إلى حقل الدمج
+## 4. Adım: Belge oluşturucu imlecini birleştirme alanına taşıma
 
-لنقل مؤشر منشئ المستند إلى حقل الدمج ، استخدم طريقة MoveToField لفئة DocumentBuilder:
+Belge oluşturucu imlecini birleştirme alanına taşımak için DocumentBuilder sınıfının MoveToField yöntemini kullanın:
 
 ```csharp
 builder.MoveToField(field, true);
 ```
 
-## إضافة نص مباشرة بعد حقل الدمج
+## Birleştirme alanından hemen sonra metin ekleme
 
-بمجرد أن يكون مؤشر منشئ المستند داخل حقل الدمج ، يمكنك إضافة نص مباشرةً بعده باستخدام طريقة الكتابة:
+Belge oluşturucu imleci birleştirme alanının içine girdikten sonra, Write yöntemini kullanarak hemen arkasına metin ekleyebilirsiniz:
 
 ```csharp
 Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
 builder.Write(" Text immediately after the field.");
 ```
 
-### مثال على شفرة المصدر لـ Move To Merge Field باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Birleştirme Alanına Taşı için örnek kaynak kodu
 
 ```csharp
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// أدخل حقلاً باستخدام DocumentBuilder وأضف سلسلة نصية بعده.
+	// DocumentBuilder'ı kullanarak bir alan ekleyin ve ardından bir dizi metin ekleyin.
 	Field field = builder.InsertField("MERGEFIELD field");
 	builder.Write(" Text after the field.");
 
-	// يوجد مؤشر المنشئ حاليًا في نهاية المستند.
+	// Oluşturucunun imleci şu anda belgenin sonundadır.
 	Assert.Null(builder.CurrentNode);
-	// يمكننا نقل المنشئ إلى حقل مثل هذا ، ووضع المؤشر على الفور بعد الحقل.
+	// İmleci alanın hemen sonrasına getirerek oluşturucuyu böyle bir alana taşıyabiliriz.
 	builder.MoveToField(field, true);
 
-	// لاحظ أن المؤشر موجود في مكان ما بعد عقدة FieldEnd للحقل ، مما يعني أننا لسنا في الواقع داخل الحقل.
-	// إذا كنا نرغب في نقل DocumentBuilder إلى داخل حقل ،
-	// سنحتاج إلى نقله إلى عقدة FieldStart أو FieldSeparator باستخدام طريقة DocumentBuilder.MoveTo ().
+	// İmlecin, alanın FieldEnd düğümünü geçen bir yerde olduğuna, yani aslında alanın içinde olmadığımıza dikkat edin.
+	// DocumentBuilder'ı bir alanın içine taşımak istersek,
+	// onu DocumentBuilder.MoveTo() yöntemini kullanarak bir alanın FieldStart veya FieldSeparator düğümüne taşımamız gerekecek.
 	Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
 	builder.Write(" Text immediately after the field.");
 	
 ```
 
-## خاتمة
+## Çözüm
 
-لقد اكتشفنا ميزة Move To Merge Field الخاصة بـ Aspose.Words for .NET. لقد تعلمنا كيفية التنقل لدمج الحقول داخل مستند باستخدام فئة DocumentBuilder وتنفيذ العمليات عليها. هذه الميزة مفيدة عند العمل برمجيًا مع الدمج
+Aspose.Words for .NET'in Birleştirme Alanına Taşı özelliğini inceledik. DocumentBuilder sınıfını kullanarak bir belgedeki alanları birleştirmek için nasıl gezineceğimizi ve bunlar üzerinde işlemler yapmayı öğrendik. Bu özellik, birleştirme ile programlı olarak çalışırken kullanışlıdır.
 

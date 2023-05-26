@@ -1,41 +1,41 @@
 ---
-title: البرمجة بالجداول
-linktitle: البرمجة بالجداول
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على جدول الاحتواء التلقائي للمحتويات وجدول الاحتواء التلقائي لعروض الأعمدة الثابتة وجدول الاحتواء التلقائي لعرض الصفحة وجدول الإنشاء من جدول البيانات واستيراد الجدول من
+title: 使用表编程
+linktitle: 使用表编程
+second_title: Aspose.Words for .NET API 参考
+description: 教程包含自动调整表格到内容、自动调整表格到固定列宽、自动调整表格到页面宽度、从数据表构建表格、从导入表格
 type: docs
 weight: 1590
 url: /zh/net/programming-with-tables/
 ---
-سوف ترشدك برامج Aspose.Words for .NET التعليمية حول البرمجة باستخدام الجداول إلى مختلف الميزات والتقنيات لمعالجة الجداول في مستندات Word الخاصة بك. ستتعلم كيفية إنشاء الجداول وتعديلها وتنسيقها ، وكذلك كيفية إضافة الخلايا والصفوف والأعمدة ديناميكيًا. ستزودك هذه البرامج التعليمية بإرشادات تفصيلية خطوة بخطوة ، وأمثلة واضحة للكود ، وشروحات لمساعدتك على إتقان معالجة الجدول في Aspose.Words for .NET.
+Aspose.Words for .NET 关于表格编程的教程将指导您了解在 Word 文档中操作表格的各种功能和技术。您将学习如何创建、修改和格式化表格，以及如何动态添加单元格、行和列。这些教程将为您提供详细的分步说明、清晰的代码示例和解释，以帮助您掌握 Aspose.Words for .NET 中的表格操作。
 
-سواء كنت تريد تعديل تخطيط الجدول ، أو دمج الخلايا ، أو إضافة عناوين الأعمدة ، أو فرز بيانات الجدول ، ستوضح لك البرامج التعليمية كيفية إنجاز هذه المهام بكفاءة باستخدام Aspose.Words for .NET. ستتعلم أيضًا كيفية استخراج بيانات الجدول وتحديثها وإضافة حدود وتطبيق أنماط مخصصة على الخلايا. ستمنحك البرامج التعليمية فهمًا عميقًا للتلاعب بالجدول ، مما يسمح لك بإنشاء مستندات Word احترافية ومنظمة بشكل جيد.
+无论您是想调整表格布局、合并单元格、添加列标题还是对表格数据进行排序，教程都将向您展示如何使用 Aspose.Words for .NET 高效地完成这些任务。您还将学习如何提取和更新表格数据、添加边框以及将自定义样式应用于单元格。这些教程将使您深入了解表格操作，使您能够创建专业且结构良好的 Word 文档。
 
-باتباع هذه البرامج التعليمية ، ستتمكن من الاستفادة الكاملة من ميزات معالجة الجدول في Aspose.Words for .NET. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستمنحك هذه البرامج التعليمية أساسًا متينًا لإنشاء الجداول وتنسيقها وإدارتها في مستندات Word باستخدام Aspose.Words for .NET. ستتمكن من تحسين مهاراتك في البرمجة وتحسين سير عملك لإنشاء مستندات احترافية عالية الجودة.
+通过遵循这些教程，您将能够充分利用 Aspose.Words for .NET 的表格操作功能。无论您是初学者还是经验丰富的开发人员，这些教程都将为您使用 Aspose.Words for .NET 在 Word 文档中创建、格式化和管理表格打下坚实的基础。您将能够提高您的编程技能并优化您的工作流程，以创建专业、高质量的文档。
 
- ## دروس
-| عنوان | وصف |
+ ## 教程
+| 标题 | 描述 |
 | --- | --- |
-| [احتواء تلقائي للجدول مع المحتويات](./auto-fit-table-to-contents/) | تعرف على كيفية ملاءمة الجدول تلقائيًا لمحتوياته في مستند Word باستخدام Aspose.Words for .NET. |
-| [استنساخ الجدول الكامل](./clone-complete-table/) | تعرف على كيفية استنساخ جدول كامل في مستند Word باستخدام Aspose.Words for .NET. |
-| [إيجاد الفهرس](./finding-index/) | تعرف على كيفية العثور على فهارس الجدول والصف والخلية في مستند Word باستخدام Aspose.Words for .NET. |
-| [أدخل الجدول مباشرة](./insert-table-directly/) | تعرف على كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET. |
-| [إدراج جدول من Html](./insert-table-from-html/) | تعرف على كيفية إدراج جدول من HTML في مستند Word باستخدام Aspose.Words for .NET. |
-| [إنشاء جدول بسيط](./create-simple-table/) | تعرف على كيفية إنشاء جدول بسيط في مستند Word باستخدام Aspose.Words for .NET. |
-| [جدول منسق](./formatted-table/) | تعرف على كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET. |
-| [جدول متداخل](./nested-table/) | تعرف على كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET. |
-| [ضم الصفوف](./combine-rows/) | تعرف على كيفية دمج صفوف الجدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [انقسام الجدول](./split-table/) | تعرف على كيفية تقسيم جدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [تنسيق الصف تعطيل الفاصل عبر الصفحات](./row-format-disable-break-across-pages/) | تعرف على كيفية تعطيل فاصل الأسطر لجدول عبر صفحات متعددة في مستند Word باستخدام Aspose.Words for .NET. |
-| [حافظ على الجدول معًا](./keep-table-together/) | تعرف على كيفية تجميع الجدول معًا في مستند Word باستخدام Aspose.Words for .NET. |
-| [دمج عمودي](./vertical-merge/) | تعرف على كيفية الدمج الرأسي للخلايا في جدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [دمج أفقي](./horizontal-merge/) | تعرف على كيفية دمج الخلايا أفقيًا في جدول Word باستخدام Aspose.Words for .NET. |
-| [تحويل إلى خلايا مدمجة أفقيًا](./convert-to-horizontally-merged-cells/) | تعرف على كيفية تحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word باستخدام Aspose.Words for .NET. |
-| [كرر الصفوف في الصفحات اللاحقة](./repeat-rows-on-subsequent-pages/) | تعرف على كيفية تكرار صفوف الجدول في الصفحات اللاحقة في مستند Word باستخدام Aspose.Words for .NET. |
-| [احتواء تلقائي لعرض الصفحة](./auto-fit-to-page-width/) | تعرف على كيفية ملاءمة جدول تلقائيًا لعرض الصفحة في مستند Word باستخدام Aspose.Words for .NET. |
-| [إعدادات العرض المفضلة](./preferred-width-settings/) | تعرف على كيفية تعيين عروض خلية الجدول المفضلة في مستند Word باستخدام Aspose.Words for .NET. |
-| [استرجاع نوع العرض المفضل](./retrieve-preferred-width-type/) | تعرف على كيفية استرداد النوع وقيمة العرض المفضلة لخلية في جدول Word باستخدام Aspose.Words for .NET. |
-| [الحصول على الجدول الموقف](./get-table-position/) | تعرف على كيفية الحصول على موضع الجدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [الحصول على موقف الجدول العائم](./get-floating-table-position/) | تعرف على كيفية الحصول على موضع الجداول العائمة في مستند Word باستخدام Aspose.Words for .NET. |
-| [موقف الجدول العائم](./floating-table-position/) | تعرف على كيفية وضع جدول في موضع متحرك في مستند Word باستخدام Aspose.Words for .NET. |
-| [تعيين الوضع الأفقي أو الرأسي النسبي](./set-relative-horizontal-or-vertical-position/) | تعرف على كيفية تعيين الوضع الأفقي أو الرأسي النسبي للجدول في مستند Word باستخدام Aspose.Words for .NET. |
+| [自动调整表格到目录](./auto-fit-table-to-contents/) | 了解如何使用 Aspose.Words for .NET 自动调整表格以适应其在 Word 文档中的内容。 |
+| [克隆完整表](./clone-complete-table/) | 了解如何使用 Aspose.Words for .NET 将整个表格克隆到 Word 文档中。 |
+| [查找索引](./finding-index/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中查找表、行和单元格索引。 |
+| [直接插入表格](./insert-table-directly/) | 了解如何使用 Aspose.Words for .NET 将表格直接插入到 Word 文档中。 |
+| [从 Html 插入表格](./insert-table-from-html/) | 了解如何使用 Aspose.Words for .NET 将表格从 HTML 插入到 Word 文档中。 |
+| [创建简单表](./create-simple-table/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建一个简单的表格。 |
+| [格式化表格](./formatted-table/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建格式化表格。 |
+| [嵌套表](./nested-table/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建嵌套表格。 |
+| [合并行](./combine-rows/) | 了解如何使用 Aspose.Words for .NET 合并 Word 文档中的表格行。 |
+| [拆分表](./split-table/) | 了解如何使用 Aspose.Words for .NET 拆分 Word 文档中的表格。 |
+| [行格式禁用跨页拆分](./row-format-disable-break-across-pages/) | 了解如何使用 Aspose.Words for .NET 为 Word 文档中的多页表格禁用换行符。 |
+| [把桌子放在一起](./keep-table-together/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中将表格放在一起。 |
+| [垂直合并](./vertical-merge/) | 了解如何使用 Aspose.Words for .NET 垂直合并 Word 文档中表格中的单元格。 |
+| [水平合并](./horizontal-merge/) | 了解如何使用 Aspose.Words for .NET 水平合并 Word 表格中的单元格。 |
+| [转换为水平合并的单元格](./convert-to-horizontally-merged-cells/) | 了解如何使用 Aspose.Words for .NET 将表格单元格转换为 Word 文档中的水平合并单元格。 |
+| [在后续页面上重复行](./repeat-rows-on-subsequent-pages/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档的后续页面上重复表格行。 |
+| [自动适应页面宽度](./auto-fit-to-page-width/) | 了解如何使用 Aspose.Words for .NET 使表格自动适应 Word 文档中的页面宽度。 |
+| [首选宽度设置](./preferred-width-settings/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中设置首选表格单元格宽度。 |
+| [检索首选宽度类型](./retrieve-preferred-width-type/) | 了解如何使用 Aspose.Words for .NET 检索 Word 表格中单元格的类型和首选宽度值。 |
+| [获取表格位置](./get-table-position/) | 了解如何使用 Aspose.Words for .NET 获取表格在 Word 文档中的位置。 |
+| [获取浮动表位置](./get-floating-table-position/) | 了解如何使用 Aspose.Words for .NET 获取浮动表格在 Word 文档中的位置。 |
+| [浮动表位置](./floating-table-position/) | 了解如何使用 Aspose.Words for .NET 将表格定位在 Word 文档中的浮动位置。 |
+| [设置相对水平或垂直位置](./set-relative-horizontal-or-vertical-position/) | 了解如何使用 Aspose.Words for .NET 设置表格在 Word 文档中的相对水平或垂直位置。 |

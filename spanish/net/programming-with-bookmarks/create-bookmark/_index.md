@@ -1,23 +1,23 @@
 ---
-title: إنشاء إشارة مرجعية
-linktitle: إنشاء إشارة مرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF باستخدام Aspose.Words for .NET.
+title: Crear marcador
+linktitle: Crear marcador
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a crear marcadores en un documento y especifique niveles de vista previa de marcadores en un PDF usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/create-bookmark/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إنشاء إشارة مرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF ناتج.
+En este artículo, exploraremos el código fuente de C# anterior para entender cómo usar la función Crear marcador en la biblioteca Aspose.Words para .NET. Esta función le permite crear marcadores en un documento y especificar niveles de vista previa de marcadores en un archivo PDF de salida.
 
-## المتطلبات الأساسية
+## requisitos previos
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conocimientos básicos del lenguaje C#.
+- Entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
 
-## الخطوة 1: إنشاء المستند والمولد
+## Paso 1: Crear el Documento y el Generador
 
- قبل إنشاء إشارات مرجعية ، نحتاج إلى إنشاء مستند ومنشئ مستندات باستخدام امتداد`Document` و`DocumentBuilder` أشياء:
+ Antes de crear marcadores, necesitamos crear un documento y un generador de documentos usando el`Document` y`DocumentBuilder` objetos:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -25,22 +25,22 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إنشاء الإشارة المرجعية الرئيسية
+## Paso 2: Crear el marcador principal
 
- نحن نستخدم ال`StartBookmark` طريقة لبدء إشارة مرجعية رئيسية و`EndBookmark` طريقة لإنهائه. في ما بينهما ، يمكننا إضافة نص وإشارات مرجعية أخرى:
+ usamos el`StartBookmark` método para iniciar un marcador principal y el`EndBookmark` método para terminarlo. En el medio, podemos agregar texto y otros marcadores:
 
 ```csharp
 builder. StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
 
-// أضف المزيد من الإشارات المرجعية أو النص هنا.
+// Agregue más marcadores o texto aquí.
 
 builder. EndBookmark("My Bookmark");
 ```
 
-## الخطوة 3: إنشاء إشارات مرجعية متداخلة
+## Paso 3: crear marcadores anidados
 
- يمكننا أيضًا إنشاء إشارات مرجعية متداخلة داخل إشارة مرجعية رئيسية. نحن نستخدم نفس الشيء`StartBookmark` و`EndBookmark` طرق لإنشاء وإنهاء الإشارات المرجعية المتداخلة:
+ También podemos crear marcadores anidados dentro de un marcador principal. usamos lo mismo`StartBookmark` y`EndBookmark` métodos para crear y finalizar marcadores anidados:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -48,11 +48,11 @@ builder.Writeln("Text inside nested bookmark.");
 builder.EndBookmark("Embedded bookmark");
 ```
 
-## الخطوة 4: تحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج
+## Paso 4: Especificación de niveles de vista previa de marcadores en el archivo PDF de salida
 
- نحن نستخدم ال`PdfSaveOptions` لتحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج. نحن نستخدم ال`BookmarksOutlineLevels` ملكية
+ usamos el`PdfSaveOptions` objeto para especificar los niveles de vista previa del marcador en el archivo PDF de salida. usamos el`BookmarksOutlineLevels` propiedad
 
-  لإضافة إشارات مرجعية رئيسية وإشارات مرجعية متداخلة بمستوياتها الخاصة:
+  para agregar marcadores principales y marcadores anidados con sus respectivos niveles:
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
@@ -61,13 +61,13 @@ options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### مثال على شفرة المصدر لإنشاء إشارة مرجعية باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Crear marcador usando Aspose.Words para .NET
 
-إليك المثال الكامل لشفرة المصدر لتوضيح إنشاء إشارات مرجعية باستخدام Aspose.Words for .NET:
+Aquí está el código fuente de ejemplo completo para demostrar la creación de marcadores usando Aspose.Words para .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -90,6 +90,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
   
 ```
 
-## خاتمة
+## Conclusión
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة إنشاء إشارة مرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارة المرجعية في ملف PDF ناتج.
+En este artículo, exploramos el código fuente de C# para comprender cómo usar la función Crear marcador de Aspose.Words para .NET. Hemos seguido una guía paso a paso para crear marcadores en un documento y especificar niveles de vista previa de marcadores en un archivo PDF de salida.

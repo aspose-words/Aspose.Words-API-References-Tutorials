@@ -1,55 +1,55 @@
 ---
-title: خانة اختيار اكتب Content Control
-linktitle: خانة اختيار اكتب Content Control
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء عنصر تحكم في المحتوى من نوع خانة اختيار في مستند Word باستخدام Aspose.Words for .NET.
+title: Тип флажка Управление содержимым
+linktitle: Тип флажка Управление содержимым
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как создать элемент управления содержимым типа «флажок» в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-sdt/check-box-type-content-control/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إنشاء عنصر تحكم في محتوى نوع خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. تتيح عناصر التحكم في محتوى خانة الاختيار للمستخدمين تحديد خانة اختيار أو مسحها داخل المستند.
+В этом руководстве объясняется, как создать элемент управления содержимым типа флажка в документе Word с помощью Aspose.Words для .NET. Элементы управления содержимым флажка позволяют пользователям устанавливать или снимать флажок в документе.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Предпосылки
+Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Установлена библиотека Aspose.Words for .NET.
+- Базовые знания C# и работы с документами Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Шаг 1. Настройте каталог документов
+ Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` لبناء محتوى المستند.
+## Шаг 2: Создайте документ и DocumentBuilder
+ Создайте новый экземпляр`Document` класс и`DocumentBuilder` для построения содержимого документа.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إضافة خانة اختيار اكتب Content Control
- إنشاء`StructuredDocumentTag` مع`SdtType.Checkbox` لتمثيل عنصر تحكم محتوى خانة الاختيار. حدد`MarkupLevel.Inline` لوضعه داخل النص.
+## Шаг 3. Добавьте элемент управления содержимым типа флажка
+ Создать`StructuredDocumentTag` с`SdtType.Checkbox` для представления элемента управления содержимым флажка. Указать`MarkupLevel.Inline` разместить его в тексте.
 
 ```csharp
 StructuredDocumentTag sdtCheckBox = new StructuredDocumentTag(doc, SdtType.Checkbox, MarkupLevel.Inline);
 builder.InsertNode(sdtCheckBox);
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.CheckBoxTypeContentControl.docx".
+## Шаг 4: Сохраните документ
+ Сохраните документ в указанную директорию с помощью`Save` метод. Укажите желаемое имя файла с соответствующим расширением файла. В этом примере мы сохраняем документ как «WorkingWithSdt.CheckBoxTypeContentControl.docx».
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.Docx);
 ```
 
-### مثال على شفرة المصدر لخانة الاختيار اكتب Content Control باستخدام Aspose.Words for .NET 
+### Пример исходного кода для элемента управления содержимым типа флажка с использованием Aspose.Words для .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -59,4 +59,4 @@ doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.
 	doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.Docx);
 ```
 
-هذا كل شيء! لقد نجحت في إنشاء عنصر تحكم في محتوى نوع خانة اختيار في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Вот и все! Вы успешно создали элемент управления содержимым типа флажка в документе Word, используя Aspose.Words для .NET.

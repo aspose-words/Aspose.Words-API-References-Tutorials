@@ -1,19 +1,19 @@
 ---
-title: أعد تشغيل رقم القائمة
-linktitle: أعد تشغيل رقم القائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إعادة تعيين رقم قائمة في مستند Word باستخدام Aspose.Words for .NET.
+title: Riavvia il numero dell'elenco
+linktitle: Riavvia il numero dell'elenco
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come reimpostare il numero di un elenco in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-list/restart-list-number/
 ---
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية إعادة تعيين رقم قائمة في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In questo tutorial passo-passo, ti mostreremo come reimpostare il numero di un elenco in un documento di Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria dal sito ufficiale.
 
-## الخطوة 1: إنشاء مُنشئ المستند والمستند
+## Passaggio 1: creazione del documento e del generatore di documenti
 
-أولاً ، قم بإنشاء مستند جديد ومولد المستندات المرتبط به:
+Innanzitutto, crea un nuovo documento e un generatore di documenti associato:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +21,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: إنشاء وتخصيص القائمة الأولى
+## Passaggio 2: creazione e personalizzazione del primo elenco
 
-بعد ذلك ، قم بإنشاء قائمة بناءً على قالب موجود ، ثم قم بتخصيص مستوياته:
+Successivamente, crea un elenco basato su un modello esistente, quindi personalizza i suoi livelli:
 
 ```csharp
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
@@ -31,9 +31,9 @@ list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
 ```
 
-## الخطوة 3: إضافة عناصر إلى القائمة الأولى
+## Passaggio 3: aggiunta di elementi al primo elenco
 
-استخدم منشئ المستندات لإضافة عناصر إلى القائمة الأولى وإزالة أرقام القائمة:
+Utilizza il generatore di documenti per aggiungere elementi al primo elenco e rimuovere i numeri di elenco:
 
 ```csharp
 builder.Writeln("List 1 starts below:");
@@ -43,20 +43,20 @@ builder. Writen("Element 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## الخطوة 4: إنشاء وتخصيص القائمة الثانية
+## Passaggio 4: creazione e personalizzazione del secondo elenco
 
-لإعادة استخدام القائمة الأولى عن طريق إعادة تعيين الرقم ، قم بإنشاء نسخة من تخطيط القائمة الأصلي:
+Per riutilizzare il primo elenco reimpostando il numero, crea una copia del layout dell'elenco originale:
 
 ```csharp
 List list2 = doc.Lists.AddCopy(list1);
 list2.ListLevels[0].StartAt = 10;
 ```
 
-يمكنك أيضًا إجراء تغييرات إضافية على القائمة الثانية إذا لزم الأمر.
+È inoltre possibile apportare ulteriori modifiche al secondo elenco, se necessario.
 
-## الخطوة 5: إضافة عناصر إلى القائمة الثانية
+## Passaggio 5: aggiunta di elementi al secondo elenco
 
-استخدم منشئ المستندات مرة أخرى لإضافة عناصر إلى القائمة الثانية وإزالة أرقام القائمة:
+Utilizza nuovamente il generatore di documenti per aggiungere elementi al secondo elenco e rimuovere i numeri dell'elenco:
 
 ```csharp
 builder.Writeln("List 2 starts below:");
@@ -66,24 +66,24 @@ builder. Writen("Element 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## الخطوة 6: احفظ المستند المعدل
+## Passaggio 6: salvare il documento modificato
 
-أخيرًا ، احفظ المستند المعدل:
+Infine, salva il documento modificato:
 
 ```csharp
 builder.Document.Save(dataDir + "ResetListNumber.docx");
 ```
 
-لذا ! لقد نجحت في إعادة تعيين رقم قائمة في مستند Word باستخدام Aspose.Words for .NET.
+COSÌ ! Hai reimpostato correttamente il numero di un elenco in un documento di Word utilizzando Aspose.Words per .NET.
 
-### نموذج التعليمات البرمجية المصدر لإعادة تعيين رقم القائمة
+### Esempio di codice sorgente per il ripristino del numero di elenco
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة تستند إلى قالب.
+// Crea un elenco basato su un modello.
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
 list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
@@ -94,10 +94,10 @@ builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
 
-// لإعادة استخدام القائمة الأولى ، نحتاج إلى إعادة تشغيل الترقيم عن طريق إنشاء نسخة من تنسيق القائمة الأصلي.
+// Per riutilizzare il primo elenco, è necessario riavviare la numerazione creando una copia della formattazione originale dell'elenco.
 List list2 = doc.Lists.AddCopy(list1);
 
-// يمكننا تعديل القائمة الجديدة بأي طريقة ، بما في ذلك تعيين رقم بدء جديد.
+// Possiamo modificare la nuova lista in qualsiasi modo, inclusa l'impostazione di un nuovo pettorale.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");

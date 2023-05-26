@@ -1,59 +1,59 @@
 ---
-title: حقول النموذج تحصل على مجموعة حقول النموذج
-linktitle: حقول النموذج تحصل على مجموعة حقول النموذج
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد مجموعة حقول النموذج ومعالجتها في مستندات Word باستخدام Aspose.Words for .NET.
+title: Formulärfält Hämta formulärfältsamling
+linktitle: Formulärfält Hämta formulärfältsamling
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du hämtar och manipulerar insamling av formulärfält i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-formfields/form-fields-get-form-fields-collection/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لاسترداد مجموعة حقول النموذج من مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att hämta samlingen av formulärfält från ett Word-dokument. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
-## الخطوة 1: تهيئة كائن المستند
+## Steg 1: Initiera dokumentobjektet
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق توفير المسار إلى المستند المصدر الذي يحتوي على حقول النموذج:
+ Initiera först`Document` objekt genom att ange sökvägen till ditt källdokument som innehåller formulärfält:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## الخطوة 2: استرداد مجموعة حقول النموذج
+## Steg 2: Hämta formulärfältsamlingen
 
- بعد ذلك ، قم بالوصول إلى`FormFields` ممتلكات`Range` كائن في المستند لاسترداد مجموعة حقول النموذج:
+ Gå sedan till`FormFields` egendom av`Range` objekt i dokumentet för att hämta samlingen av formulärfält:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;
 ```
 
- الآن ، لديك مجموعة حقول النموذج من مستند Word المخزنة في ملف`formFields` عامل.
+ Nu har du samlingen av formulärfält från Word-dokumentet lagrad i`formFields` variabel.
 
-## الخطوة 3: الوصول إلى حقول النموذج ومعالجتها
+## Steg 3: Få åtkomst till och manipulera formulärfälten
 
-يمكنك التكرار من خلال مجموعة حقول النموذج وتنفيذ عمليات مختلفة في كل حقل نموذج ، مثل الحصول على القيم أو تعيينها ، أو تعديل التنسيق ، أو استخراج المعلومات.
+Du kan iterera genom insamlingen av formulärfält och utföra olika operationer på varje formulärfält, som att hämta eller ställa in värden, ändra formatering eller extrahera information.
 
 ```csharp
 foreach (FormField formField in formFields)
 {
-    // الوصول إلى كل حقل نموذج والتعامل معه
-    //...
+    // Få åtkomst till och manipulera varje formulärfält
+    // ...
 }
 ```
 
-## الخطوة 4: حفظ المستند
+## Steg 4: Spara dokumentet
 
-أخيرًا ، احفظ المستند المعدل إذا لزم الأمر:
+Spara slutligen det ändrade dokumentet om det behövs:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-هذا كل شيء! لقد نجحت في استرداد مجموعة حقول النموذج من مستند Word باستخدام Aspose.Words for .NET.
+Det är allt! Du har framgångsrikt hämtat samlingen av formulärfält från ett Word-dokument med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لحقول النموذج احصل على مجموعة حقول النموذج باستخدام Aspose.Words for .NET
+### Exempel på källkod för formulärfält Hämta formulärfältsamling med Aspose.Words för .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -61,10 +61,10 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 FormFieldCollection formFields = doc.Range.FormFields;
 
-// الوصول إلى حقول النموذج ومعالجتها حسب الحاجة
-//...
+// Få åtkomst till och manipulera formulärfälten efter behov
+// ...
 
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Använd gärna den här koden i dina egna projekt och modifiera den efter dina specifika krav.

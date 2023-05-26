@@ -1,56 +1,56 @@
 ---
-title: إزالة المعلومات الشخصية
-linktitle: إزالة المعلومات الشخصية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لإزالة المعلومات الشخصية من مستند باستخدام Aspose.Words for .NET.
+title: Eliminar información personal
+linktitle: Eliminar información personal
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para eliminar información personal de un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-document-properties/remove-personal-information/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإزالة المعلومات الشخصية من مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إزالة المعلومات الشخصية الحساسة من مستند ، مثل بيانات تعريف المؤلف.
+En este tutorial, lo guiaremos a través del código fuente de C# para eliminar información personal de un documento con Aspose.Words para .NET. Esta función le permite eliminar información personal confidencial de un documento, como los datos de identificación del autor.
 
-## الخطوة 1: إعداد المشروع
+## Paso 1: Configuración del proyecto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد إزالة المعلومات الشخصية منه. استخدم الكود التالي لتحميل المستند:
+En este paso, subiremos el documento de Word del que queremos eliminar la información personal. Use el siguiente código para cargar el documento:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInformation = true };
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Reemplazar`"YOUR DOCUMENTS DIRECTORY"` con la ruta real del directorio donde se encuentra su documento.
 
-## الخطوة 3: حذف المعلومات الشخصية
+## Paso 3: Eliminar información personal
 
- الآن سنعمل على تمكين إزالة المعلومات الشخصية عن طريق تعيين`RemovePersonalInformation` ملكية ل`true`. استخدم الكود التالي:
+ Ahora habilitaremos la eliminación de información personal configurando el`RemovePersonalInformation` propiedad a`true`. Usa el siguiente código:
 
 ```csharp
 doc.RemovePersonalInformation = true;
 ```
 
-ينشط هذا الرمز حذف المعلومات الشخصية في المستند.
+Este código activa la eliminación de información personal en el documento.
 
-## الخطوة 4: حفظ المستند
+## Paso 4: Guardar el documento
 
-أخيرًا ، سنحفظ المستند مع إزالة المعلومات الشخصية. استخدم الكود التالي:
+Finalmente, guardaremos el documento con la información personal eliminada. Usa el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.docx");
 ```
 
-يحفظ هذا الرمز المستند مع إزالة المعلومات الشخصية إلى ملف جديد.
+Este código guarda el documento con la información personal eliminada en un nuevo archivo.
 
-### مثال على شفرة المصدر لإزالة المعلومات الشخصية باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para eliminar información personal usando Aspose.Words para .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInformation = true };
 
@@ -58,6 +58,6 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 	
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Asegúrese de especificar la ruta correcta del documento en el`dataDir` variable.
 
-لقد تعلمت الآن كيفية إزالة المعلومات الشخصية من مستند باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إزالة المعلومات الحساسة من المستندات الخاصة بك.
+Ahora ha aprendido cómo eliminar información personal de un documento usando Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede eliminar fácilmente información confidencial de sus propios documentos.

@@ -1,30 +1,30 @@
 ---
-title: رد اتصال الواصلة
-linktitle: رد اتصال الواصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام رد نداء الواصلة في Aspose.Words for .NET للتعامل مع الواصلة في الكلمات.
+title: Richiamata di sillabazione
+linktitle: Richiamata di sillabazione
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come utilizzare il callback della sillabazione in Aspose.Words per .NET per gestire la sillabazione delle parole.
 type: docs
 weight: 10
 url: /it/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية استخدام ميزة رد الاتصال في Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In questo tutorial passo-passo, ti mostreremo come utilizzare la funzione di callback della sillabazione in Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria dal sito ufficiale.
 
-## الخطوة 1: حفظ تذكير الواصلة
+## Passaggio 1: salva il promemoria di sillabazione
 
- أولاً ، سنقوم بتسجيل رد نداء الواصلة باستخدام مخصص`CustomHyphenationCallback` فصل. سيسمح لنا ذلك بالتعامل مع الواصلة وفقًا لقواعدنا الخاصة:
+ Per prima cosa, registreremo il callback della sillabazione usando un custom`CustomHyphenationCallback` classe. Questo ci permetterà di gestire la sillabazione delle parole secondo le nostre regole:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
 ```
 
- تأكد من أنك قمت بتنفيذ`CustomHyphenationCallback`فئة وفقًا لاحتياجاتك الخاصة.
+ Assicurati di aver implementato il`CustomHyphenationCallback`classe in base alle vostre specifiche esigenze.
 
-## الخطوة 2: تحميل المستند وتطبيق الواصلة
+## Passaggio 2: caricamento del documento e applicazione della sillabazione
 
-بعد ذلك ، قم بتحميل المستند الخاص بك من الدليل المحدد وقم بوصل الكلمات باستخدام Aspose.Words:
+Quindi, carica il tuo documento dalla directory specificata e sillaba le parole usando Aspose.Words:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,9 +32,9 @@ Document document = new Document(dataDir + "German text.docx");
 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
 ```
 
-## الخطوة 3: معالجة أخطاء القاموس المفقودة
+## Passaggio 3: gestione degli errori di dizionario mancanti
 
-في حالة فقد قاموس الواصلة ، سنكتشف الاستثناء المقابل ونعرض رسالة خطأ:
+Nel caso in cui manchi un dizionario di sillabazione, rileveremo l'eccezione corrispondente e visualizzeremo un messaggio di errore:
 
 ```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
@@ -43,9 +43,9 @@ catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary")
 }
 ```
 
-## الخطوة 4: تنظيف وتعطيل تذكير الواصلة
+## Passaggio 4: pulizia e disabilitazione del promemoria di sillabazione
 
-أخيرًا ، للتنظيف وإيقاف تشغيل تذكير الواصلة ، قم بتنفيذ الخطوات التالية:
+Infine, per la pulizia e per disattivare il promemoria di sillabazione, eseguire i seguenti passaggi:
 
 ```csharp
 finally
@@ -54,16 +54,16 @@ finally
 }
 ```
 
-يؤدي هذا إلى تنظيف وتعطيل تذكير الواصلة بعد الانتهاء من المعالجة.
+Questo pulisce e disabilita il promemoria di sillabazione dopo aver terminato l'elaborazione.
 
-لذا ! لقد نجحت في استخدام رد نداء الواصلة في Aspose.Words for .NET.
+COSÌ ! Hai utilizzato correttamente il callback di sillabazione in Aspose.Words per .NET.
 
-### نموذج التعليمات البرمجية المصدر لرد الاتصال الواصلة مع Aspose.Words for .NET
+### Esempio di codice sorgente per la richiamata di sillabazione con Aspose.Words per .NET
 
 ```csharp
 try
 {
-	 // تسجيل رد الاتصال الواصلة.
+	 // Registra callback di sillabazione.
 	 Hyphenation.Callback = new CustomHyphenationCallback();
 	 string dataDir = "YOUR DOCUMENT DIRECTORY";
 	 Document document = new Document(dataDir + "German text.docx");
@@ -80,4 +80,4 @@ finally
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.

@@ -1,41 +1,41 @@
 ---
-title: Docx إلى Epub
-linktitle: Docx إلى Epub
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات Word من تنسيق Docx إلى تنسيق Epub باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Docx zu Epub
+linktitle: Docx zu Epub
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für .NET vom Docx- in das Epub-Format konvertieren. Schritt-für-Schritt-Anleitung mit Beispielquellcode.
 type: docs
 weight: 10
 url: /de/net/basic-conversions/docx-to-epub/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى تنسيق Epub. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET ein Word-Dokument im Docx-Format in das Epub-Format konvertieren. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek von der offiziellen Website herunter und installieren Sie sie.
 
-## الخطوة 1: تهيئة كائن المستند
+## Schritt 1: Initialisieren des Dokumentobjekts
 
- أولاً ، تحتاج إلى تهيئة ملف`Document` عن طريق توفير المسار إلى المستند المصدر بتنسيق Docx. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع مسار الدليل الفعلي حيث يوجد المستند الخاص بك ، و`"Document.docx"` باسم المستند المصدر الخاص بك. إليك مقتطف الشفرة:
+ Zuerst müssen Sie das initialisieren`Document` Objekt, indem Sie den Pfad zu Ihrem Quelldokument im Docx-Format angeben. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Verzeichnispfad, in dem sich Ihr Dokument befindet, und`"Document.docx"` mit dem Namen Ihres Quelldokuments. Hier ist der Codeausschnitt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## الخطوة 2: تحويل المستند إلى تنسيق Epub
+## Schritt 2: Konvertieren des Dokuments in das Epub-Format
 
- بعد ذلك ، يمكنك متابعة عملية التحويل. اتصل ب`Save` طريقة على`Document` كائن وتوفير المسار واسم الملف للمستند الناتج بتنسيق Epub. في هذا المثال ، سنحفظه باسم`"BaseConversions.DocxToEpub.epub"`. إليك مقتطف الشفرة:
+ Als nächstes können Sie mit dem Konvertierungsprozess fortfahren. Ruf den`Save` Methode auf der`Document` Objekt und geben Sie den Pfad und Dateinamen für das Ausgabedokument im Epub-Format an. In diesem Beispiel speichern wir es als`"BaseConversions.DocxToEpub.epub"`. Hier ist der Codeausschnitt:
 
 ```csharp
 doc.Save(dataDir + "BaseConversions.DocxToEpub.epub");
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند Word بتنسيق Docx إلى تنسيق Epub باستخدام Aspose.Words for .NET.
+Das ist es! Sie haben mit Aspose.Words für .NET erfolgreich ein Word-Dokument im Docx-Format in das Epub-Format konvertiert.
 
-### مثال على شفرة المصدر لـ Docx To Epub باستخدام Aspose.Words for .NET
+### Beispielquellcode für Docx To Epub mit Aspose.Words für .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
@@ -43,4 +43,4 @@ doc.Save(dataDir + "BaseConversions.DocxToEpub.epub");
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprechend Ihren spezifischen Anforderungen modifizieren.

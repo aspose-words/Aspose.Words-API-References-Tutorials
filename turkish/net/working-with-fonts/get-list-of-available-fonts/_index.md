@@ -1,47 +1,47 @@
 ---
-title: الحصول على قائمة الخطوط المتاحة
-linktitle: الحصول على قائمة الخطوط المتاحة
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words for .NET.
+title: Kullanılabilir Yazı Tiplerinin Listesini Alın
+linktitle: Kullanılabilir Yazı Tiplerinin Listesini Alın
+second_title: Aspose.Words for .NET API Referansı
+description: Bu öğreticide, Aspose.Words for .NET'te bulunan yazı tiplerinin listesini nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/get-list-of-available-fonts/
 ---
-في هذا البرنامج التعليمي ، سنشرح كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words for .NET. تتيح لك قائمة الخطوط المتوفرة معرفة الخطوط التي يمكنك استخدامها في مستنداتك. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu öğreticide, Aspose.Words for .NET'te bulunan yazı tiplerinin listesini nasıl alacağınızı açıklayacağız. Kullanılabilir yazı tiplerinin listesi, belgelerinizde hangi yazı tiplerini kullanabileceğinizi bilmenizi sağlar. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تكوين مصادر الخطوط
- بعد ذلك ، سننشئ مثيلًا لـ`FontSettings` واحصل على مصادر الخطوط الحالية باستخدام امتداد`GetFontsSources()` طريقة. سنضيف أيضًا مصدر خط جديدًا عن طريق تحديد مجلد يحتوي على الخطوط.
+## 2. Adım: Yazı tipi kaynaklarını yapılandırın
+ Ardından, bir örneğini oluşturacağız`FontSettings` ve kullanarak mevcut yazı tipi kaynaklarını edinin.`GetFontsSources()` yöntem. Fontları içeren bir klasör belirterek yeni bir font kaynağı da ekleyeceğiz.
 
 ```csharp
-// تكوين مصادر الخط
+// Yazı tipi kaynaklarını yapılandırma
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 
-// أضف مصدر خط جديد
+// Yeni bir yazı tipi kaynağı ekleyin
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
 fontSources.Add(folderFontSource);
 
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## الخطوة 3: احصل على قائمة الخطوط المتاحة
- الآن سوف نتصفح الخطوط المتاحة باستخدام امتداد`GetAvailableFonts()` الطريقة على مصدر الخط الأول المحدث.
+## 3. Adım: Kullanılabilir yazı tiplerinin listesini alın
+ Şimdi kullanarak mevcut yazı tiplerine göz atacağız.`GetAvailableFonts()` yöntemi ilk güncellenen yazı tipi kaynağında.
 
 ```csharp
-// الحصول على قائمة الخطوط المتاحة
+// Kullanılabilir yazı tiplerinin listesini edinin
 foreach(PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 {
 Console.WriteLine("Font Family Name: " + fontInfo.FontFamilyName);
@@ -52,18 +52,18 @@ Console.WriteLine("Path: " + fontInfo.FilePath);
 ```
 
 
-### عينة من التعليمات البرمجية المصدر للحصول على قائمة الخطوط المتاحة باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Kullanılabilir Yazı Tiplerinin Listesini Al için örnek kaynak kodu 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// أضف مصدر مجلد جديد والذي سيوجه Aspose.Words للبحث في المجلد التالي عن الخطوط.
+// Aspose.Words'e yazı tiplerini aşağıdaki klasörde arama talimatı verecek yeni bir klasör kaynağı ekleyin.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// أضف المجلد المخصص الذي يحتوي على خطوطنا إلى قائمة مصادر الخطوط الموجودة.
+// Yazı tiplerimizi içeren özel klasörü mevcut yazı tipi kaynakları listesine ekleyin.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -76,5 +76,5 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words for .NET. يتيح لك هذا معرفة الخطوط التي يمكنك استخدامها في مستنداتك. لا تتردد في استخدام هذه الميزة لاختيار الخطوط المناسبة لاحتياجاتك.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET'te bulunan yazı tiplerinin listesini nasıl alacağımızı gördük. Bu, belgelerinizde hangi yazı tiplerini kullanabileceğinizi bilmenizi sağlar. İhtiyaçlarınıza uygun yazı tiplerini seçmek için bu özelliği kullanmaktan çekinmeyin.

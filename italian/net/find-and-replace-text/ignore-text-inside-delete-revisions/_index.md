@@ -1,34 +1,34 @@
 ---
-title: تجاهل النص داخل حذف المراجعات
-linktitle: تجاهل النص داخل حذف المراجعات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة "تجاهل النص داخل حذف المراجعات" في Aspose.Words for .NET.
+title: Ignora il testo all'interno Elimina revisioni
+linktitle: Ignora il testo all'interno Elimina revisioni
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come utilizzare la funzione "Ignora testo all'interno di Elimina revisioni" di Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام ميزة "تجاهل النص داخل حذف المراجعات" في مكتبة Aspose.Words for .NET. هذه الميزة مفيدة عندما نريد تجاهل النص داخل مراجعات الحذف عند العمل مع المستندات.
+In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzionalità "Ignora testo all'interno di Elimina revisioni" nella libreria Aspose.Words per .NET. Questa funzione è utile quando si desidera ignorare il testo all'interno delle revisioni di eliminazione quando si lavora con i documenti.
 
-## نظرة عامة على مكتبة Aspose.Words for .NET
+## Panoramica della libreria Aspose.Words per .NET
 
-قبل الخوض في تفاصيل الكود ، دعني أقدم باختصار مكتبة Aspose.Words for .NET. إنها مكتبة قوية تسمح بإنشاء وتعديل وتحويل مستندات Word في تطبيقات .NET. يوفر العديد من الميزات المتقدمة للعمل مع المستندات ، بما في ذلك إدارة المراجعة.
+Prima di approfondire i dettagli del codice, vorrei introdurre brevemente la libreria Aspose.Words per .NET. È una potente libreria che consente di creare, modificare e convertire documenti Word in applicazioni .NET. Offre molte funzionalità avanzate per lavorare con i documenti, inclusa la gestione delle revisioni.
 
-## فهم ميزة "تجاهل النص داخل حذف المراجعات"
+## Comprensione della funzione "Ignora testo all'interno di Elimina revisioni".
 
-تتيح لك ميزة "تجاهل النص الداخلي حذف المراجعات" في Aspose.Words for .NET تحديد ما إذا كان يجب تجاهل النص الموجود داخل مراجعات الحذف أثناء عمليات معينة ، مثل البحث عن النص واستبداله. عند تمكين هذه الميزة ، لا يتم اعتبار النص المحذوف داخل المراجعات أثناء العمليات.
+La funzione "Ignora testo all'interno delle revisioni di eliminazione" in Aspose.Words per .NET consente di specificare se il testo all'interno delle revisioni di eliminazione deve essere ignorato durante determinate operazioni, come la ricerca e la sostituzione del testo. Quando questa funzione è abilitata, il testo eliminato all'interno delle revisioni non viene considerato durante le operazioni.
 
-## الخطوة 1: إنشاء مستند جديد باستخدام Aspose.Words for .NET
+## Passaggio 1: creazione di un nuovo documento utilizzando Aspose.Words per .NET
 
- قبل أن نبدأ في معالجة النص في مستند ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن أن يتم ذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Prima di iniziare a manipolare il testo in un documento, è necessario creare un nuovo documento utilizzando Aspose.Words per .NET. Può essere fatto istanziando a`Document` oggetto:
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: إدخال نص غير منقح في المستند
+## Passaggio 2: inserimento di testo non revisionato nel documento
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص لم تتم مراجعته باستخدام ملف`DocumentBuilder` هدف. على سبيل المثال ، لإدراج النص "النص المحذوف" ، يمكننا استخدام الامتداد`Writeln` و`Write` طُرق:
+ Una volta che abbiamo un documento, possiamo inserire il testo non rivisto usando a`DocumentBuilder` oggetto. Ad esempio, per inserire il testo "Deleted Text", possiamo utilizzare l'`Writeln` E`Write` metodi:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -36,9 +36,9 @@ builder. Writen("Deleted");
 builder. Write("Text");
 ```
 
-## الخطوة 3: إزالة فقرة مع تتبع المراجعات
+## Passaggio 3: rimozione di un paragrafo con revisioni di tracciamento
 
-لتوضيح استخدام ميزة "تجاهل النص داخل حذف المراجعات" ، سنحذف فقرة من المستند باستخدام تتبع المراجعة. سيسمح لنا ذلك بمعرفة كيف تؤثر هذه الميزة على العمليات اللاحقة.
+Per illustrare l'uso della funzione "Ignora testo all'interno di Elimina revisioni", elimineremo un paragrafo dal documento utilizzando il monitoraggio delle revisioni. Questo ci permetterà di vedere come questa funzione influisce sulle operazioni successive.
 
 ```csharp
 doc.StartTrackRevisions("author", DateTime.Now);
@@ -46,62 +46,62 @@ doc.FirstSection.Body.FirstParagraph.Remove();
 doc.StopTrackRevisions();
 ```
 
-## الخطوة 4: تطبيق ميزة "تجاهل النص داخل حذف المراجعات"
+## Passaggio 4: applicazione della funzione "Ignora testo all'interno di Elimina revisioni".
 
- الآن وقد أعددنا وثيقتنا عن طريق حذف فقرة ، يمكننا تمكين ميزة "تجاهل النص داخل حذف المراجعات" باستخدام`FindReplaceOptions` هدف. سنقوم بتعيين`IgnoreDeleted` ملكية ل`true`:
+ Ora che abbiamo preparato il nostro documento eliminando un paragrafo, possiamo abilitare la funzione "Ignora testo all'interno Elimina revisioni" utilizzando un`FindReplaceOptions` oggetto. Imposteremo il`IgnoreDeleted` proprietà a`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 ```
 
-## الخطوة 5: استخدام التعبيرات النمطية للبحث والاستبدال
+## Passaggio 5: utilizzo delle espressioni regolari per trovare e sostituire
 
-لإجراء عمليات البحث والاستبدال على نص المستند ، سنستخدم التعبيرات العادية. في مثالنا ، سنبحث عن جميع تكرارات الحرف "e" ونستبدلها بعلامة النجمة "* ". .شبكة`Regex` يتم استخدام فئة لهذا:
+Per eseguire operazioni di ricerca e sostituzione sul testo del documento, utilizzeremo espressioni regolari. Nel nostro esempio, cercheremo tutte le occorrenze della lettera "e" e le sostituiremo con un asterisco "* ". .NETTO`Regex` la classe è utilizzata per questo:
 
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## الخطوة 6: عرض مخرجات الوثيقة المعدلة
+## Passaggio 6: visualizzazione dell'output del documento modificato
 
-بعد تطبيق البحث والاستبدال ، يمكننا عرض المحتوى الذي تم تغييره في المستند باستخدام`GetText` طريقة:
+Dopo aver applicato la ricerca e la sostituzione, possiamo visualizzare il contenuto modificato del documento utilizzando il file`GetText` metodo:
 
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## الخطوة 7: تعديل الخيارات لتضمين النص المحذوف
+## Passaggio 7: modifica delle opzioni per includere il testo eliminato
 
- إذا أردنا تضمين نص محذوف في نتيجة الإخراج ، فيمكننا تغيير الخيارات لعدم تجاهل النص المحذوف. لهذا سنقوم بتعيين`IgnoreDeleted` ملكية ل`false`:
+ Se vogliamo includere il testo eliminato nel risultato di output, possiamo modificare le opzioni per non ignorare il testo eliminato. Per questo imposteremo il`IgnoreDeleted` proprietà a`false`:
 
 ```csharp
 options. IgnoreDeleted = false;
 ```
 
-## الخطوة 8: إخراج المستند المعدل بالنص المحذوف
+## Passaggio 8: emettere il documento modificato con il testo eliminato
 
-بعد تغيير الخيارات ، يمكننا إجراء البحث والاستبدال مرة أخرى للحصول على النتيجة مع تضمين النص المحذوف:
+Dopo aver modificato le opzioni, possiamo eseguire nuovamente la ricerca e sostituire per ottenere il risultato con il testo eliminato incluso:
 
 ```csharp
 doc.Range.Replace(regex, "*", options);
 Console.WriteLine(doc.GetText());
 ```
 
-### مثال على شفرة المصدر لـ Ignore Text Inside Delete Revisions باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Ignore Text Inside Delete Revisions utilizzando Aspose.Words per .NET
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام ميزة "تجاهل النص داخل حذف المراجعات" مع Aspose.Words for .NET:
+Ecco il codice sorgente di esempio completo per dimostrare l'uso della funzione "Ignora testo all'interno di Elimina revisioni" con Aspose.Words per .NET:
 
 ```csharp
         
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// أدخل نصًا غير منقح.
+	// Inserisci testo non revisionato.
 	builder.Writeln("Deleted");
 	builder.Write("Text");
 
-	// إزالة الفقرة الأولى مع تتبع المراجعات.
+	// Rimuovi il primo paragrafo con il monitoraggio delle revisioni.
 	doc.StartTrackRevisions("author", DateTime.Now);
 	doc.FirstSection.Body.FirstParagraph.Remove();
 	doc.StopTrackRevisions();
@@ -120,7 +120,7 @@ Console.WriteLine(doc.GetText());
     
 ```
 
-## خاتمة
+## Conclusione
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام ميزة "تجاهل النص داخل حذف المراجعات" في Aspose.Words for .NET. هذه الميزة مفيدة لتجاهل النص داخل مراجعات الحذف عند معالجة المستندات. اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص وحذف فقرة مع تتبع المراجعة وتطبيق ميزة "تجاهل النص داخل حذف المراجعات" وإجراء عمليات البحث والاستبدال.
+In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzionalità "Ignora testo all'interno di Elimina revisioni" in Aspose.Words per .NET. Questa funzione è utile per ignorare il testo all'interno delle revisioni di eliminazione durante la manipolazione dei documenti. Abbiamo seguito una guida passo-passo per creare un documento, inserire testo, eliminare un paragrafo con il monitoraggio delle revisioni, applicare la funzione "Ignora testo all'interno di Elimina revisioni" ed eseguire operazioni di ricerca e sostituzione.
 

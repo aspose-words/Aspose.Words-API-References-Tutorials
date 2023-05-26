@@ -1,61 +1,61 @@
 ---
-title: تعيين الوضع الأفقي أو الرأسي النسبي
-linktitle: تعيين الوضع الأفقي أو الرأسي النسبي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين الوضع الأفقي أو الرأسي النسبي للجدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Définir la position horizontale ou verticale relative
+linktitle: Définir la position horizontale ou verticale relative
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à définir la position horizontale ou verticale relative d'un tableau dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/set-relative-horizontal-or-vertical-position/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تعيين الوضع الأفقي أو الرأسي النسبي للجدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستكون قادرًا على تعيين الوضع الأفقي أو الرأسي النسبي لجدولك في مستندات Word الخاصة بك.
+Dans ce didacticiel, nous allons apprendre à définir la position horizontale ou verticale relative d'un tableau dans un document Word à l'aide de Aspose.Words pour .NET. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous serez en mesure de définir la position horizontale ou verticale relative de votre tableau dans vos documents Word.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Étape 1 : configuration du projet
+1. Lancez Visual Studio et créez un nouveau projet C#.
+2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## Étape 2 : Chargement du document
+Pour commencer à travailler avec le document, procédez comme suit :
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Charger le document
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-تأكد من استبدال "دليل المستندات الخاص بك" بالمسار الفعلي إلى دليل المستندات الخاص بك وقم بتوفير اسم الملف الصحيح.
+Assurez-vous de remplacer "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin d'accès réel à votre répertoire de documents et fournissez le nom de fichier correct.
 
-## الخطوة 3: تحديد الموضع النسبي للجدول
-بعد ذلك ، سنقوم بتعيين الوضع النسبي الأفقي أو الرأسي للجدول. استخدم الكود التالي:
+## Étape 3 : Réglage de la position relative de la table
+Ensuite, nous allons définir la position horizontale ou verticale relative de la table. Utilisez le code suivant :
 
 ```csharp
-// استرجع الجدول
+// Récupérer le tableau
 Table table = doc.FirstSection.Body.Tables[0];
 
-//تعريف الوضع الأفقي النسبي للجدول
+//Définition de la position horizontale relative de la table
 table.HorizontalAnchor = RelativeHorizontalPosition.Column;
 
-// تحديد الوضع الرأسي النسبي للجدول
+// Définir la position verticale relative de la table
 table.VerticalAnchor = RelativeVerticalPosition.Page;
 ```
 
- هنا نستخدم المستند لاسترداد الجدول الأول من نص القسم الأول. بعد ذلك ، قمنا بتعيين الموضع الأفقي النسبي للجدول بامتداد`HorizontalAnchor` الملكية باستخدام`RelativeHorizontalPosition.Column` قيمة. وبالمثل ، قمنا بتعيين الوضع الرأسي النسبي للجدول بامتداد`VerticalAnchor` الملكية باستخدام`RelativeVerticalPosition.Page` قيمة.
+ Ici, nous utilisons le document pour récupérer le premier tableau du corps de la première section. Ensuite, nous définissons la position horizontale relative de la table avec le`HorizontalAnchor` propriété à l'aide de la`RelativeHorizontalPosition.Column` valeur. De même, nous fixons la position verticale relative de la table avec le`VerticalAnchor` propriété à l'aide de la`RelativeVerticalPosition.Page` valeur.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تحديد الموضع النسبي للجدول. استخدم الكود التالي:
+## Étape 4 : Enregistrer le document modifié
+Enfin, nous devons enregistrer le document modifié avec la position relative de la table définie. Utilisez le code suivant :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour le document de sortie.
 
-### عينة من التعليمات البرمجية المصدر لـ Set Relative Horizontal Or Vertical Position باستخدام Aspose.Words for .NET 
+### Exemple de code source pour définir la position horizontale ou verticale relative à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
@@ -65,5 +65,5 @@ table.VerticalAnchor = RelativeVerticalPosition.Page;
 doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين الوضع الأفقي أو الرأسي النسبي للجدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تطبيق هذا الموضع النسبي على جداولك في مستندات Word الخاصة بك.
+## Conclusion
+Dans ce didacticiel, nous avons appris à définir la position horizontale ou verticale relative d'un tableau dans un document Word à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez appliquer cette position relative à vos tableaux dans vos documents Word.

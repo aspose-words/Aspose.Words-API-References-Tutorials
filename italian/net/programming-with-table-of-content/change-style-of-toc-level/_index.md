@@ -1,65 +1,65 @@
 ---
-title: تغيير نمط مستوى Toc
-linktitle: تغيير نمط مستوى Toc
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير نمط مستوى جدول المحتويات بسهولة في مستند Word باستخدام Aspose.Words for .NET.
+title: Cambia lo stile del livello Toc
+linktitle: Cambia lo stile del livello Toc
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come modificare facilmente lo stile di un livello di sommario in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words القدرة على تغيير نمط مستوى معين من جدول محتويات المستند. في هذا الدليل ، سنوضح لك كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لتغيير نمط مستوى جدول محتويات مستند Word.
+Aspose.Words per .NET è una potente libreria per creare, modificare e manipolare documenti Word in un'applicazione C#. Tra le caratteristiche offerte da Aspose.Words c'è la possibilità di cambiare lo stile di un livello specifico del sommario di un documento. In questa guida vi mostreremo come utilizzare il codice sorgente C# di Aspose.Words per .NET per modificare lo stile di un livello del sommario di un documento Word.
 
-## فهم مكتبة Aspose.Words
+## Comprensione della libreria Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك تغيير نمط جدول المحتويات.
+Prima di immergersi nel codice, è importante comprendere la libreria Aspose.Words per .NET. Aspose.Words è una libreria popolare che rende il lavoro con i documenti di Word facile ed efficiente. Offre una vasta gamma di funzionalità per la creazione, la modifica e la manipolazione di documenti Word, inclusa la modifica dello stile del sommario.
 
-## إنشاء وثيقة جديدة
+## Creazione di un nuovo documento
 
-تتمثل الخطوة الأولى في إنشاء مستند Word جديد حيث تريد تغيير نمط جدول المحتويات. استخدم فئة المستند لإنشاء مستند جديد. هنا مثال :
+Il primo passaggio consiste nel creare un nuovo documento di Word in cui si desidera modificare lo stile del sommario. Utilizzare la classe Document per creare un nuovo documento. Ecco un esempio:
 
 ```csharp
 Document doc = new Document();
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند فارغ جديد.
+In questo esempio, stiamo creando un nuovo documento vuoto.
 
-## تغيير نمط جدول المحتويات
+## Modifica dello stile di un livello di sommario
 
-بمجرد إنشاء المستند ، يمكنك الوصول إلى أنماط المستند وتغيير النمط المستخدم لمستوى معين من جدول المحتويات. في هذا المثال ، سنقوم بتعديل النمط المستخدم للمستوى الأول من جدول المحتويات. إليك الطريقة:
+Una volta creato il documento, puoi accedere agli stili del documento e modificare lo stile utilizzato per un livello specifico del sommario. In questo esempio, modificheremo lo stile utilizzato per il primo livello dell'indice. Ecco come:
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-في هذا المثال ، نستخدم خاصية Styles لفئة Document للوصول إلى أنماط المستند. بعد ذلك ، نستخدم معرف النمط StyleIdentifier.Toc1 للوصول إلى النمط المستخدم للمستوى الأول من جدول المحتويات. أخيرًا ، نقوم بتعديل الخاصية Font.Bold للنمط لجعلها غامقة.
+In questo esempio, utilizziamo la proprietà Styles della classe Document per accedere agli stili del documento. Successivamente, utilizziamo l'identificatore di stile StyleIdentifier.Toc1 per accedere allo stile utilizzato per il primo livello del sommario. Infine, modifichiamo la proprietà Font.Bold dello stile per renderlo grassetto.
 
-## احفظ المستند المعدل
+## Salva documento modificato
 
-بمجرد إجراء التعديلات اللازمة على نمط جدول المحتويات ، يمكنك حفظ المستند المعدل باستخدام طريقة Save لفئة Document. هنا مثال :
+Una volta apportate le necessarie modifiche allo stile dell'indice, è possibile salvare il documento modificato utilizzando il metodo Save della classe Document. Ecco un esempio:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 ```
 
-في هذا المثال ، نحفظ المستند المعدل باسم "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx".
+In questo esempio, salviamo il documento modificato come "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx".
 
-## مثال على شفرة المصدر لميزة "تغيير نمط مستوى جدول المحتويات" باستخدام Aspose.Words for .NET
+## Codice sorgente di esempio per la funzionalità "Cambia lo stile di un livello di sommario" con Aspose.Words per .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء مستند جديد
+// Crea un nuovo documento
 Document doc = new Document();
 
-// تعديل نمط المستوى الأول لجدول المحتويات
+// Modifica dello stile del primo livello dell'indice
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
-// احفظ المستند المعدل
+// Salva il documento modificato
 doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 ```
 
-## خاتمة
+## Conclusione
 
-في هذا الدليل ، شرحنا كيفية استخدام Aspose.Words for .NET لتغيير نمط مستوى جدول محتويات مستند Word باستخدام كود المصدر C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة تخصيص نمط جدول المحتويات في مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع أنماط وتنسيقات مستنداتك ، مما يسمح لك بإنشاء مستندات Word جذابة واحترافية.
+In questa guida, abbiamo spiegato come utilizzare Aspose.Words per .NET per modificare lo stile di un livello del sommario di un documento Word utilizzando il codice sorgente C# fornito. Seguendo i passaggi forniti, puoi facilmente personalizzare lo stile del sommario nei tuoi documenti Word nella tua applicazione C#. Aspose.Words offre un'enorme flessibilità e potenza per lavorare con gli stili e la formattazione dei tuoi documenti, permettendoti di creare documenti Word attraenti e professionali.

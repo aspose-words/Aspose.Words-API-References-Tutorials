@@ -1,26 +1,26 @@
 ---
-title: البرمجة بخصائص المستند
-linktitle: البرمجة بخصائص المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على متغيرات ، تعداد الخصائص ، إضافة خصائص وثيقة مخصصة ، إزالة خصائص المستند المخصصة ، إزالة المعلومات الشخصية ، التكوين
+title: Programmation avec les propriétés du document
+linktitle: Programmation avec les propriétés du document
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent des variables d'obtention, des propriétés d'énumération, l'ajout de propriétés de document personnalisées, la suppression de propriétés de document personnalisées, la suppression d'informations personnelles, la configuration
 type: docs
 weight: 1520
 url: /fr/net/programming-with-document-properties/
 ---
-توفر البرامج التعليمية لـ Aspose.Words for .NET حول البرمجة بخصائص المستند نظرة متعمقة على إدارة خصائص المستندات في مشروعاتك. في هذه البرامج التعليمية ، ستتعلم كيفية الوصول إلى الخصائص وتعديلها وحذفها مثل العنوان والمؤلف والكلمات الرئيسية وما إلى ذلك ، لتخصيص مستندات Word الخاصة بك. ستتعلم أيضًا كيفية إضافة خصائص مخصصة لتلبية احتياجاتك الخاصة.
+Les didacticiels Aspose.Words pour .NET sur la programmation avec les propriétés de document fournissent un aperçu approfondi de la gestion des propriétés de document dans vos projets. Dans ces didacticiels, vous apprendrez à accéder, modifier et supprimer des propriétés telles que le titre, l'auteur, les mots-clés, etc., pour personnaliser vos documents Word. Vous apprendrez également à ajouter des propriétés personnalisées pour répondre à vos besoins spécifiques.
 
-ستوجهك هذه البرامج التعليمية خطوة بخطوة لاستخدام مكتبة Aspose.Words for .NET للتفاعل مع خصائص المستند. سوف تتعلم كيفية استخراج الخصائص الموجودة وتعيين قيم جديدة وإزالة الخصائص غير المرغوب فيها. من خلال فهم كيفية التعامل مع خصائص المستند ، ستتمكن من إنشاء مستندات Word احترافية وتخصيصها لتناسب متطلباتك.
+Ces didacticiels vous guideront étape par étape pour utiliser la bibliothèque Aspose.Words pour .NET afin d'interagir avec les propriétés du document. Vous apprendrez à extraire les propriétés existantes, à définir de nouvelles valeurs et à supprimer les propriétés indésirables. En comprenant comment manipuler les propriétés du document, vous serez en mesure de créer des documents Word professionnels et de les personnaliser en fonction de vos besoins.
 
-سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستزودك برامج Aspose.Words for .NET التعليمية حول البرمجة بخصائص المستندات بالمعرفة والمهارات اللازمة لإدارة خصائص مستند Word بشكل فعال وتحسين سير عمل التطوير لديك.
+Que vous soyez un développeur débutant ou expérimenté, les didacticiels Aspose.Words pour .NET sur la programmation avec les propriétés de document vous fourniront les connaissances et les compétences nécessaires pour gérer efficacement les propriétés de votre document Word et optimiser votre flux de travail de développement.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [احصل على المتغيرات](./get-variables/) | دليل خطوة بخطوة لاسترداد متغيرات المستند باستخدام Aspose.Words for .NET. |
-| [تعداد الخصائص](./enumerate-properties/) | دليل خطوة بخطوة لتعداد خصائص المستند باستخدام Aspose.Words for .NET. |
-| [أضف خصائص المستند المخصصة](./add-custom-document-properties/) | دليل خطوة بخطوة لإضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET. |
-| [قم بإزالة خصائص المستند المخصصة](./remove-custom-document-properties/) | دليل تفصيلي خطوة بخطوة لإزالة الخصائص المخصصة من مستند باستخدام Aspose.Words for .NET. |
-| [إزالة المعلومات الشخصية](./remove-personal-information/) | دليل تفصيلي خطوة بخطوة لإزالة المعلومات الشخصية من مستند باستخدام Aspose.Words for .NET. |
-| [تكوين ارتباط إلى المحتوى](./configuring-link-to-content/) | دليل تفصيلي خطوة بخطوة لإعداد الارتباط بالمحتوى في مستند باستخدام Aspose.Words for .NET. |
-| [التحويل بين وحدات القياس](./convert-between-measurement-units/) | دليل تفصيلي خطوة بخطوة للتحويل بين وحدات القياس في مستند باستخدام Aspose.Words for .NET. |
-| [استخدم أحرف التحكم](./use-control-characters/) | دليل خطوة بخطوة لاستخدام أحرف التحكم مع Aspose.Words for .NET. |
+| [Obtenir des variables](./get-variables/) | Guide étape par étape pour récupérer des variables de document avec Aspose.Words pour .NET. |
+| [Énumérer les propriétés](./enumerate-properties/) | Guide étape par étape pour énumérer les propriétés du document avec Aspose.Words pour .NET. |
+| [Ajouter des propriétés de document personnalisées](./add-custom-document-properties/) | Guide étape par étape pour ajouter des propriétés personnalisées à un document avec Aspose.Words pour .NET. |
+| [Supprimer les propriétés de document personnalisées](./remove-custom-document-properties/) | Guide étape par étape pour supprimer les propriétés personnalisées d'un document avec Aspose.Words pour .NET. |
+| [Supprimer les informations personnelles](./remove-personal-information/) | Guide étape par étape pour supprimer des informations personnelles d'un document avec Aspose.Words pour .NET. |
+| [Configuration du lien vers le contenu](./configuring-link-to-content/) | Guide étape par étape pour configurer la liaison au contenu d'un document avec Aspose.Words pour .NET. |
+| [Convertir entre les unités de mesure](./convert-between-measurement-units/) | Guide étape par étape pour la conversion entre les unités de mesure dans un document avec Aspose.Words pour .NET. |
+| [Utiliser les caractères de contrôle](./use-control-characters/) | Guide étape par étape pour l'utilisation des caractères de contrôle avec Aspose.Words pour .NET. |

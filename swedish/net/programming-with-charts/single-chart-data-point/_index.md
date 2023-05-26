@@ -1,44 +1,44 @@
 ---
-title: نقطة بيانات مخطط واحد
-linktitle: نقطة بيانات مخطط واحد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تخصيص نقطة بيانات واحدة في مخطط باستخدام Aspose.Words for .NET.
+title: Enstaka diagramdatapunkt
+linktitle: Enstaka diagramdatapunkt
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du anpassar en enskild datapunkt i ett diagram med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-charts/single-chart-data-point/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتخصيص نقطة بيانات واحدة في مخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط والوصول إلى نقاط بيانات محددة وتعديل خصائصها.
+Denna handledning förklarar hur man använder Aspose.Words för .NET för att anpassa en enda datapunkt i ett diagram. Den medföljande källkoden visar hur man skapar ett diagram, kommer åt specifika datapunkter och ändrar deras egenskaper.
 
-## الخطوة 1: قم بإعداد المشروع
+## Steg 1: Konfigurera projektet
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Se till att du har följande förutsättningar:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från den officiella Aspose-webbplatsen eller använda NuGet-pakethanteraren för att installera den.
+- En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Steg 2: Skapa ett nytt dokument och infoga ett diagram
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط خطي في المستند.
+ Använd sedan`InsertChart` metod för`DocumentBuilder` för att infoga ett linjediagram i dokumentet.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: الوصول إلى نقاط البيانات وتخصيصها
+## Steg 3: Få åtkomst till och anpassa datapunkter
 
- لتعديل نقاط البيانات الفردية ، تحتاج إلى الوصول إلى ملف`ChartDataPointCollection` من السلسلة وحدد نقطة البيانات المطلوبة باستخدام الفهرس.
+ För att ändra enskilda datapunkter måste du komma åt`ChartDataPointCollection` av serien och välj önskad datapunkt med hjälp av indexet.
 
 ```csharp
 ChartSeries series0 = chart.Series[0];
@@ -61,20 +61,20 @@ dataPoint12.Marker.Symbol = MarkerSymbol.Star;
 dataPoint12.Marker.Size = 20;
 ```
 
-## الخطوة 4: احفظ المستند
+## Steg 4: Spara dokumentet
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Slutligen sparar du dokumentet i den angivna katalogen med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartDataPoint.docx");
 ```
 
-هذا يكمل تنفيذ تخصيص نقطة بيانات واحدة في مخطط باستخدام Aspose.Words for .NET.
+Detta slutför implementeringen av att anpassa en enda datapunkt i ett diagram med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لنقطة بيانات الرسم البياني الفردي باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Single Chart Data Point med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -1,31 +1,31 @@
 ---
-title: تعيين مجلد خطوط النوع الحقيقي
-linktitle: تعيين مجلد خطوط النوع الحقيقي
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لإعداد مجلد خطوط الكتابة الصحيحة عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Définir le dossier des polices True Type
+linktitle: Définir le dossier des polices True Type
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour définir le dossier des polices True Type lors du rendu d'un document à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/set-true-type-fonts-folder/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلد خطوط الكتابة الحقيقية عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلد مخصص يحتوي على خطوط True Type لاستخدامه عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+Dans ce didacticiel, nous vous expliquerons étape par étape le processus de définition du dossier de polices True Type lors du rendu d'un document à l'aide de Aspose.Words pour .NET. Nous expliquerons le code source C# fourni et vous fournirons un guide complet pour vous aider à comprendre et à implémenter cette fonctionnalité dans vos propres projets. À la fin de ce didacticiel, vous saurez comment spécifier un dossier personnalisé contenant les polices True Type à utiliser lors du rendu de vos documents à l'aide d'Aspose.Words pour .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Il s'agit de l'emplacement où vous souhaitez enregistrer votre document rendu modifié. Remplacez "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin approprié.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند للعرض
- بعد ذلك ، تحتاج إلى تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Étape 2 : Chargez le document à afficher
+ Ensuite, vous devez charger le document à rendre à l'aide de la`Document` classe. Assurez-vous de spécifier le bon chemin d'accès au document.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تعيين مجلد خطوط النوع الحقيقي
- يمكنك الآن تحديد مجلد خطوط الكتابة الحقيقية لاستخدامها عند التقديم عن طريق إنشاء مثيل لملف`FontSettings` الطبقة واستخدام`SetFontsFolder()` طريقة لتعيين مجلد الخطوط. يمكنك تحديد مجلد مخصص يحتوي على خطوط True Type الخاصة بك. المعلمة الثانية ل`SetFontsFolder()` يشير إلى ما إذا كنت تريد البحث في المجلدات الفرعية للمجلد المحدد أيضًا.
+## Étape 3 : Définir le dossier des polices True Type
+ Vous pouvez désormais spécifier le dossier des polices True Type à utiliser lors du rendu en créant une instance de`FontSettings` classe et en utilisant la`SetFontsFolder()` méthode pour définir le dossier des polices. Vous pouvez spécifier un dossier personnalisé contenant vos polices True Type. Le deuxième paramètre à`SetFontsFolder()` indique si vous souhaitez également rechercher les sous-dossiers du dossier spécifié.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -33,29 +33,29 @@ fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 4: احفظ المستند المقدم
- أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## Étape 4 : Enregistrer le document rendu
+ Enfin, vous pouvez enregistrer le document rendu dans un fichier à l'aide de la`Save()` méthode de la`Document` classe. Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set True Type Fonts Folder باستخدام Aspose.Words for .NET 
+### Exemple de code source pour le dossier Set True Type Fonts à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Rendering.docx");
 	FontSettings fontSettings = new FontSettings();
-	// لاحظ أن هذا الإعداد سيتجاوز أي مصادر افتراضية للخطوط يتم البحث عنها افتراضيًا. الآن سيتم البحث عن هذه المجلدات فقط
-	// الخطوط عند تقديم الخطوط أو دمجها. لإضافة مصدر خط إضافي مع الاحتفاظ بمصادر خطوط النظام ، استخدم كلاً من FontSettings.GetFontSources و
-	// FontSettings.SetFontSources بدلاً من ذلك
+	// Notez que ce paramètre remplacera toutes les sources de polices par défaut qui sont recherchées par défaut. Désormais, seuls ces dossiers seront recherchés
+	// Polices lors du rendu ou de l'incorporation de polices. Pour ajouter une source de police supplémentaire tout en conservant les sources de police système, utilisez à la fois FontSettings.GetFontSources et
+	// FontSettings.SetFontSources à la place
 	fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-	// ضبط إعدادات الخط
+	// Définir les paramètres de police
 	doc.FontSettings = fontSettings;
 	doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلد خطوط الكتابة الحقيقية عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلد مخصص يحتوي على خطوط True Type لاستخدامها عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في الخطوط المستخدمة وتخصيصها عند تقديم مستنداتك وفقًا لاحتياجاتك الخاصة.
+## Conclusion
+Dans ce didacticiel, nous avons appris à définir le dossier des polices True Type lors du rendu d'un document à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape, vous pouvez facilement spécifier un dossier personnalisé contenant les polices True Type à utiliser lors du rendu de vos documents. Aspose.Words offre une API puissante et flexible pour travailler avec les polices dans vos documents. Grâce à ces connaissances, vous pouvez contrôler et personnaliser les polices utilisées lors du rendu de vos documents selon vos besoins spécifiques.

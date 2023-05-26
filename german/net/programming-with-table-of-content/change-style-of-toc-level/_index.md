@@ -1,65 +1,65 @@
 ---
-title: تغيير نمط مستوى Toc
-linktitle: تغيير نمط مستوى Toc
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير نمط مستوى جدول المحتويات بسهولة في مستند Word باستخدام Aspose.Words for .NET.
+title: Ändern Sie den Stil der Toc-Ebene
+linktitle: Ändern Sie den Stil der Toc-Ebene
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ganz einfach den Stil einer Inhaltsverzeichnisebene in einem Word-Dokument ändern.
 type: docs
 weight: 10
 url: /de/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words القدرة على تغيير نمط مستوى معين من جدول محتويات المستند. في هذا الدليل ، سنوضح لك كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لتغيير نمط مستوى جدول محتويات مستند Word.
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten in einer C#-Anwendung. Zu den von Aspose.Words angebotenen Funktionen gehört die Möglichkeit, den Stil einer bestimmten Ebene des Inhaltsverzeichnisses eines Dokuments zu ändern. In dieser Anleitung zeigen wir Ihnen, wie Sie den C#-Quellcode von Aspose.Words für .NET verwenden, um den Stil einer Ebene des Inhaltsverzeichnisses eines Word-Dokuments zu ändern.
 
-## فهم مكتبة Aspose.Words
+## Grundlegendes zur Aspose.Words-Bibliothek
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك تغيير نمط جدول المحتويات.
+Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Arbeit mit Word-Dokumenten einfach und effizient macht. Es bietet zahlreiche Funktionen zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten, einschließlich der Änderung des Inhaltsverzeichnisstils.
 
-## إنشاء وثيقة جديدة
+## Erstellen eines neuen Dokuments
 
-تتمثل الخطوة الأولى في إنشاء مستند Word جديد حيث تريد تغيير نمط جدول المحتويات. استخدم فئة المستند لإنشاء مستند جديد. هنا مثال :
+Der erste Schritt besteht darin, ein neues Word-Dokument zu erstellen, dessen Inhaltsverzeichnisstil Sie ändern möchten. Verwenden Sie die Document-Klasse, um ein neues Dokument zu erstellen. Hier ist ein Beispiel :
 
 ```csharp
 Document doc = new Document();
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند فارغ جديد.
+In diesem Beispiel erstellen wir ein neues leeres Dokument.
 
-## تغيير نمط جدول المحتويات
+## Ändern des Stils einer Inhaltsverzeichnisebene
 
-بمجرد إنشاء المستند ، يمكنك الوصول إلى أنماط المستند وتغيير النمط المستخدم لمستوى معين من جدول المحتويات. في هذا المثال ، سنقوم بتعديل النمط المستخدم للمستوى الأول من جدول المحتويات. إليك الطريقة:
+Sobald das Dokument erstellt wurde, können Sie auf Dokumentstile zugreifen und den Stil ändern, der für eine bestimmte Ebene des Inhaltsverzeichnisses verwendet wird. In diesem Beispiel ändern wir den Stil, der für die erste Ebene des Inhaltsverzeichnisses verwendet wird. Hier ist wie:
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-في هذا المثال ، نستخدم خاصية Styles لفئة Document للوصول إلى أنماط المستند. بعد ذلك ، نستخدم معرف النمط StyleIdentifier.Toc1 للوصول إلى النمط المستخدم للمستوى الأول من جدول المحتويات. أخيرًا ، نقوم بتعديل الخاصية Font.Bold للنمط لجعلها غامقة.
+In diesem Beispiel verwenden wir die Styles-Eigenschaft der Document-Klasse, um auf Dokumentstile zuzugreifen. Als Nächstes verwenden wir die Stilkennung StyleIdentifier.Toc1, um auf den Stil zuzugreifen, der für die erste Ebene des Inhaltsverzeichnisses verwendet wird. Schließlich ändern wir die Font.Bold-Eigenschaft des Stils, um ihn fett zu machen.
 
-## احفظ المستند المعدل
+## Geändertes Dokument speichern
 
-بمجرد إجراء التعديلات اللازمة على نمط جدول المحتويات ، يمكنك حفظ المستند المعدل باستخدام طريقة Save لفئة Document. هنا مثال :
+Nachdem Sie die erforderlichen Änderungen am Stil des Inhaltsverzeichnisses vorgenommen haben, können Sie das geänderte Dokument mit der Save-Methode der Document-Klasse speichern. Hier ist ein Beispiel :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 ```
 
-في هذا المثال ، نحفظ المستند المعدل باسم "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx".
+In diesem Beispiel speichern wir das geänderte Dokument als „WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx“.
 
-## مثال على شفرة المصدر لميزة "تغيير نمط مستوى جدول المحتويات" باستخدام Aspose.Words for .NET
+## Beispielquellcode für die Funktion „Ändern des Stils einer Inhaltsverzeichnisebene“ mit Aspose.Words für .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء مستند جديد
+// Erstellen Sie ein neues Dokument
 Document doc = new Document();
 
-// تعديل نمط المستوى الأول لجدول المحتويات
+// Änderung des Stils der ersten Ebene des Inhaltsverzeichnisses
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
-// احفظ المستند المعدل
+// Speichern Sie das geänderte Dokument
 doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا الدليل ، شرحنا كيفية استخدام Aspose.Words for .NET لتغيير نمط مستوى جدول محتويات مستند Word باستخدام كود المصدر C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة تخصيص نمط جدول المحتويات في مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع أنماط وتنسيقات مستنداتك ، مما يسمح لك بإنشاء مستندات Word جذابة واحترافية.
+In diesem Handbuch haben wir erklärt, wie Sie Aspose.Words für .NET verwenden, um den Stil einer Ebene des Inhaltsverzeichnisses eines Word-Dokuments mithilfe des bereitgestellten C#-Quellcodes zu ändern. Indem Sie die bereitgestellten Schritte befolgen, können Sie den Stil des Inhaltsverzeichnisses in Ihren Word-Dokumenten in Ihrer C#-Anwendung ganz einfach anpassen. Aspose.Words bietet enorme Flexibilität und Möglichkeiten, mit den Stilen und Formatierungen Ihrer Dokumente zu arbeiten, sodass Sie attraktive und professionelle Word-Dokumente erstellen können.

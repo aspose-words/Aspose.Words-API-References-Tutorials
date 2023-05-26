@@ -1,40 +1,40 @@
 ---
-title: تعيين تنسيق صف الجدول
-linktitle: تعيين تنسيق صف الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد تنسيق صف الجدول باستخدام Aspose.Words for .NET.
+title: Ställ in formatering av tabellrader
+linktitle: Ställ in formatering av tabellrader
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att ställa in tabellradsformatering med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين تنسيق صف الجدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية ضبط الارتفاع والحشو لصف الجدول في مستندات Word باستخدام Aspose.Words for .NET.
+I den här handledningen går vi igenom steg-för-steg-processen för att ställa in tabellradsformatering med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och förse dig med en omfattande guide som hjälper dig att förstå och implementera den här funktionen i dina egna projekt. I slutet av denna handledning kommer du att veta hur du justerar höjden och fyllningarna på en tabellrad i dina Word-dokument med Aspose.Words för .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+Först måste du ställa in sökvägen till din dokumentkatalog. Det här är platsen där du vill spara ditt redigerade Word-dokument. Ersätt "DIN DOKUMENTKATOLOG" med lämplig sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## Steg 2: Skapa ett nytt dokument- och dokumentbyggare
+ Därefter måste du skapa en ny instans av`Document` klass och en dokumentkonstruktor för det dokumentet.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدول جديد وأضف خلية
-لبدء إنشاء الجدول ، نستخدم ملف`StartTable()` طريقة منشئ المستند ، ثم نضيف خلية إلى الجدول باستخدام الامتداد`InsertCell()` طريقة.
+## Steg 3: Starta en ny tabell och lägg till en cell
+För att börja skapa tabellen använder vi`StartTable()` metoden för dokumentkonstruktorn lägger vi till en cell i tabellen med hjälp av`InsertCell()` metod.
 
 ```csharp
 Table table = builder. StartTable();
 builder. InsertCell();
 ```
 
-## الخطوة 4: تحديد تنسيق الخط
- الآن يمكننا ضبط تنسيق الصف من خلال الوصول إلى ملف`RowFormat` كائن`DocumentBuilder` هدف. يمكننا ضبط ارتفاع الخط والهوامش (الحشوات) باستخدام الخصائص المقابلة.
+## Steg 4: Definiera linjeformateringen
+ Nu kan vi ställa in radformateringen genom att komma åt`RowFormat` föremålet för`DocumentBuilder` objekt. Vi kan ställa in linjehöjden och marginalerna (utfyllnaderna) med hjälp av motsvarande egenskaper.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;
@@ -42,8 +42,8 @@ rowFormat. Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
-## الخطوة 5: تعيين هوامش الجدول
- بعد ذلك ، يمكننا ضبط حشوات الجدول من خلال الوصول إلى الخصائص المقابلة لـ`Table` هدف. سيتم تطبيق هذه الهوامش على جميع صفوف الجدول.
+## Steg 5: Ställ in tabellmarginaler
+ Därefter kan vi ställa in tabellfyllningarna genom att komma åt motsvarande egenskaper för`Table` objekt. Dessa marginaler kommer att tillämpas på alla rader i tabellen.
 
 ```csharp
 table. LeftPadding = 30;
@@ -52,17 +52,17 @@ table. TopPadding = 30;
 table. BottomPadding = 30;
 ```
 
-## الخطوة 6: أضف محتوى إلى الصف
- أخيرًا ، يمكننا إضافة محتوى إلى السطر باستخدام منشئ المستندات`Writeln()` طريقة.
+## Steg 6: Lägg till innehåll i raden
+ Slutligen kan vi lägga till innehåll på raden med hjälp av dokumentbyggarens`Writeln()` metod.
 
 ```csharp
 builder.Writeln("I'm a beautifully formatted line.");
 ```
 
-## الخطوة 7: قم بإنهاء الجدول وحفظ المستند
-في
+## Steg 7: Avsluta tabellen och spara dokumentet
+I
 
- النهاية ، ننتهي من إنشاء الجدول باستخدام`EndRow()` و`EndTable()` الطريقة ، ثم نقوم بحفظ المستند المعدل في ملف.
+ slutar vi att skapa tabellen med hjälp av`EndRow()` och`EndTable()` metod, sedan sparar vi det ändrade dokumentet till en fil.
 
 ```csharp
 builder. EndRow();
@@ -70,10 +70,10 @@ builder. EndTable();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Table Row Formatting باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Set Table Row-formatering med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 	RowFormat rowFormat = builder.RowFormat;
 	rowFormat.Height = 100;
 	rowFormat.HeightRule = HeightRule.Exactly;
-	// يتم تعيين خصائص التنسيق هذه في الجدول ويتم تطبيقها على جميع الصفوف في الجدول.
+	// Dessa formateringsegenskaper ställs in i tabellen och tillämpas på alla rader i tabellen.
 	table.LeftPadding = 30;
 	table.RightPadding = 30;
 	table.TopPadding = 30;
@@ -94,5 +94,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين تنسيق صف الجدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة ضبط ارتفاع صف الجدول والهوامش في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تخصيص التخطيط المرئي لجداولك وفقًا لاحتياجاتك الخاصة.
+## Slutsats
+den här handledningen lärde vi oss hur man ställer in tabellradsformatering med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide kan du enkelt justera tabellradshöjd och marginaler i dina Word-dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för att manipulera och formatera tabeller i dina dokument. Med denna kunskap kan du anpassa den visuella layouten av dina bord till dina specifika behov.

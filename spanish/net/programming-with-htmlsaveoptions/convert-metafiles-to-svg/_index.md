@@ -1,22 +1,22 @@
 ---
-title: تحويل ملفات التعريف إلى Svg
-linktitle: تحويل ملفات التعريف إلى Svg
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحويل ملفات التعريف إلى تنسيق SVG عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET.
+title: Convertir Metarchivos a Svg
+linktitle: Convertir Metarchivos a Svg
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para convertir metarchivos a formato SVG al convertir un documento a HTML con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-htmlsaveoptions/convert-metafiles-to-svg/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتحويل ملفات التعريف إلى تنسيق SVG باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تحويل ملفات التعريف إلى تنسيق SVG عند تحويل مستند إلى HTML.
+En este tutorial, lo guiaremos a través del código fuente de C# para convertir metarchivos al formato SVG con Aspose.Words para .NET. Esta función le permite convertir metarchivos a formato SVG al convertir un documento a HTML.
 
-## الخطوة 1: إعداد المشروع
+## Paso 1: Configuración del proyecto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
 
-## الخطوة 2: إدراج صورة SVG في المستند
+## Paso 2: Insertar una imagen SVG en el documento
 
-في هذه الخطوة ، سنقوم بإدراج صورة SVG في المستند المراد تحويله. استخدم الكود التالي لإدراج صورة SVG باستخدام علامة HTML:
+En este paso, insertaremos una imagen SVG en el documento a convertir. Use el siguiente código para insertar una imagen SVG usando una etiqueta HTML:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -31,33 +31,33 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- هذا الرمز ينشئ مثيل`Document` و`DocumentBuilder` لبناء الوثيقة. يقوم بإدراج ملف`<svg>` علامة تحتوي على أ`<polygon>` عنصر بسمات لتحديد شكل ونمط صورة SVG.
+ Este código crea una instancia de`Document` y`DocumentBuilder` para construir el documento. Se inserta un`<svg>` etiqueta que contiene un`<polygon>` elemento con atributos para definir la forma y el estilo de la imagen SVG.
 
-## الخطوة 3: تعيين خيارات حفظ HTML
+## Paso 3: establece las opciones de guardado de HTML
 
-سنقوم الآن بتعيين خيارات حفظ HTML ، وتحديد أنه يجب تحويل ملفات التعريف إلى تنسيق SVG. استخدم الكود التالي:
+Ahora configuraremos las opciones de guardado de HTML, especificando que los metarchivos deben convertirse al formato SVG. Usa el siguiente código:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Svg };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions` ومجموعات`MetafileFormat` ل`HtmlMetafileFormat.Svg` لتحديد أن ملفات التعريف يجب أن يتم تحويلها إلى تنسيق SVG عند التحويل إلى HTML.
+ Este código crea una instancia de`HtmlSaveOptions` y conjuntos`MetafileFormat` a`HtmlMetafileFormat.Svg` para especificar que los metarchivos deben convertirse a formato SVG al convertirlos a HTML.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## Paso 4: Convertir y guardar el documento a HTML
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML المحددة مسبقًا. استخدم الكود التالي:
+Finalmente, convertiremos el documento a HTML utilizando las opciones de guardado de HTML definidas anteriormente. Usa el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML ويحفظه في ملف مع ملفات التعريف المحولة إلى SVG.
+Este código convierte el documento a HTML y lo guarda en un archivo con los metarchivos convertidos a SVG.
 
-### مثال على شفرة المصدر لتحويل ملفات التعريف إلى Svg باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para convertir metarchivos a Svg usando Aspose.Words para .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);

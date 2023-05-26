@@ -1,51 +1,51 @@
 ---
-title: نص عريض
-linktitle: نص عريض
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية كتابة نص غامق باستخدام Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Texto en negrita
+linktitle: Texto en negrita
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a poner texto en negrita con Aspose.Words para la guía paso a paso de .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-markdown/bold-text/
 ---
 
-في هذا المثال ، سنخبرك بكيفية كتابة نص غامق باستخدام Aspose.Words for .NET. النص الغامق يجعله أكثر وضوحًا ويعطيه أهمية أكبر.
+En este ejemplo, le diremos cómo poner texto en negrita con Aspose.Words para .NET. El texto en negrita lo hace más visible y le da más protagonismo.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Paso 1: usar un generador de documentos
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Primero, usaremos un generador de documentos para agregar contenido a nuestro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: نص عريض
+## Paso 2: texto en negrita
 
- يمكننا جعل النص غامقًا عن طريق تعيين منشئ المستندات`Font.Bold` ملكية ل`true`.
+ Podemos poner el texto en negrita configurando el generador de documentos`Font.Bold` propiedad a`true`.
 
 ```csharp
 builder.Font.Bold = true;
 ```
 
-## الخطوة 3: أضف محتوى إلى المستند
+## Paso 3: Agregar contenido al documento
 
- يمكننا الآن إضافة محتوى إلى المستند باستخدام طرق إنشاء المستندات ، مثل`Writeln`، مما يضيف سطرًا من النص.
+ Ahora podemos agregar contenido al documento utilizando los métodos del generador de documentos, como`Writeln`, que añade una línea de texto.
 
 ```csharp
 builder.Writeln("This text will be bold");
 ```
 
-## مثال على كود المصدر للنص الغامق باستخدام Aspose.Words for .NET
+## Ejemplo de código fuente para texto en negrita usando Aspose.Words para .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Use un generador de documentos para agregar contenido al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص غامقًا.
+	// Pon el texto en negrita.
 	builder.Font.Bold = true;
 	builder.Writeln("This text will be Bold");  
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية كتابة نص غامق باستخدام Aspose.Words for .NET.
+¡Felicidades! Ahora ha aprendido a poner texto en negrita con Aspose.Words para .NET.
 
 

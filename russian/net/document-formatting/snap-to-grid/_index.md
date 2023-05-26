@@ -1,63 +1,63 @@
 ---
-title: المفاجئة إلى الشبكة
-linktitle: المفاجئة إلى الشبكة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح كود مصدر C # لميزة Snap to Grid باستخدام Aspose.Words for .NET.
+title: Привязки к сетке
+linktitle: Привязки к сетке
+second_title: Справочник по API Aspose.Words для .NET
+description: Пошаговое руководство по объяснению исходного кода C# функции Snap to Grid с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/document-formatting/snap-to-grid/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة Snap to Grid مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+В этом руководстве мы расскажем вам, как использовать функцию «Привязать к сетке» с Aspose.Words для .NET. Выполните следующие шаги, чтобы понять исходный код и применить изменения.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Шаг 1: Создание и настройка документа
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Для начала создайте новый документ и связанный с ним объект DocumentBuilder. Вот как:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: محاذاة الشبكة
+## Шаг 2: Выравнивание сетки
 
-سنقوم الآن بتطبيق محاذاة الشبكة على فقرة محددة والخط المستخدم في الفقرة. إليك الطريقة:
+Теперь мы применим выравнивание по сетке к конкретному абзацу и используемому в абзаце шрифту. Вот как:
 
 ```csharp
-// تمكين محاذاة الشبكة للفقرة
+// Включить выравнивание по сетке для абзаца
 Paragraph by = doc.FirstSection.Body.FirstParagraph;
 par.ParagraphFormat.SnapToGrid = true;
 
-// اكتب نصًا في الفقرة
+// Напишите текст в абзаце
 builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" +
                  "tempor incident ut labore et dolore magna aliqua.");
 
-// قم بتمكين محاذاة الشبكة للخط المستخدم في الفقرة
+// Включить выравнивание по сетке для шрифта, используемого в абзаце
 par.Runs[0].Font.SnapToGrid = true;
 ```
 
-## الخطوة 3: حفظ المستند
+## Шаг 3: Сохранение документа
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ После вставки поля формы ввода текста сохраните документ в нужное место с помощью кнопки`Save` метод. Обязательно укажите правильный путь к файлу:
 
 ```csharp
 doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 ```
 
-### مثال على شفرة المصدر لـ Snap To Grid باستخدام Aspose.Words for .NET
+### Пример исходного кода для Snap To Grid с использованием Aspose.Words для .NET
 
-فيما يلي رمز المصدر الكامل لميزة Snap to Grid مع Aspose.Words for .NET:
+Вот полный исходный код функции Snap to Grid с Aspose.Words для .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Путь к каталогу документов.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// قم بتحسين التخطيط عند الكتابة بالأحرف الآسيوية.
+	// Оптимизируйте макет при вводе азиатских символов.
 	Paragraph par = doc.FirstSection.Body.FirstParagraph;
 	par.ParagraphFormat.SnapToGrid = true;
 
@@ -70,5 +70,5 @@ doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من محاذاة النص الخاص بك مع الشبكة وتحسين مظهر المستند باستخدام Aspose.Words for .NET.
+С помощью этого кода вы сможете выровнять текст по сетке и оптимизировать внешний вид документа с помощью Aspose.Words для .NET.
 

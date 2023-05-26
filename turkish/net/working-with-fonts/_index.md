@@ -1,42 +1,42 @@
 ---
-title: العمل مع الخطوط
-linktitle: العمل مع الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: توضح البرامج التعليمية كيفية تطبيق تنسيق الخط ، وتباعد أسطر الخطوط ، وتأثير DMLText ، وتمكين / تعطيل بديل الخط ، وإعدادات الخط الاحتياطي ، والحصول على قائمة بالخط المتاح في مستند Word باستخدام Aspose.Words for .NET
+title: Yazı Tipleriyle Çalışmak
+linktitle: Yazı Tipleriyle Çalışmak
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, Aspose.Words for .NET kullanarak yazı tipi biçimlendirmesinin, yazı tipi satırı aralığının, DMLText Efektinin, yazı tipi değiştirmenin etkinleştirilmesi/devre dışı bırakılmasının, yazı tipi geri dönüş ayarlarının nasıl uygulanacağını, Word Belgesinde kullanılabilir yazı tipi listesinin nasıl alınacağını gösterir.
 type: docs
 weight: 420
 url: /tr/net/working-with-fonts/
 ---
 
-ترشدك دروس العمل باستخدام الخطوط إلى جوانب مختلفة من العمل مع الخطوط ، مما يسمح لك بإجراء عمليات مثل تغيير تنسيق الخط ، وتحميل الخطوط من أدلة معينة ، وإدارة الخطوط البديلة والمزيد.
+Yazı Tipleriyle Çalışma eğitimleri, yazı tipleriyle çalışmanın çeşitli yönlerinde size rehberlik ederek yazı tipi formatını değiştirme, yazı tiplerini belirli dizinlerden yükleme, yazı tiplerini değiştirmeyi yönetme ve daha fazlası gibi işlemleri gerçekleştirmenize olanak tanır.
 
-توفر لك البرامج التعليمية شرحًا تفصيليًا خطوة بخطوة لكل ميزة ، جنبًا إلى جنب مع كود مصدر لغة C # لتوضيح المفاهيم. ستتعلم كيفية استخدام الفئات والطرق من Aspose.Words Library for .NET لأداء مهام محددة متعلقة بالخط في مستندات Word الخاصة بك.
+Öğreticiler, kavramları göstermek için C# dil kaynak kodunun yanı sıra her özellik için ayrıntılı adım adım açıklamalar sağlar. Word belgelerinizde yazı tipiyle ilgili belirli görevleri gerçekleştirmek için Aspose.Words Library for .NET'ten sınıfları ve yöntemleri nasıl kullanacağınızı öğreneceksiniz.
 
-سواء كنت ترغب في تنسيق النص باستخدام خطوط مختلفة ، أو تعيين قواعد استبدال الخطوط ، أو تحميل الخطوط من أدلة معينة ، أو تلقي إشعارات الخطوط ، فإن البرامج التعليمية "العمل مع الخطوط" ستزودك بالمعرفة اللازمة لإنجاز هذه المهام. بسهولة.
+Metni farklı yazı tipleriyle biçimlendirmek, yazı tipi değiştirme kurallarını ayarlamak, belirli dizinlerden yazı tipleri yüklemek veya yazı tipi bildirimleri almak isteyip istemediğinize göre, "Yazı Tipleriyle Çalışma" eğitimleri size bu görevleri gerçekleştirmeniz için gereken bilgileri sağlayacaktır. kolaylıkla.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [تنسيق الخط](./font-formatting/) | في هذا البرنامج التعليمي ، تعرف على كيفية تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET. |
-| [احصل على تباعد أسطر الخط](./get-font-line-spacing/) | في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تباعد بين الخطوط في مستند Word باستخدام Aspose.Words for .NET. |
-| [تحقق من تأثير النص DrawingML](./check-drawingml-text-effect/) | في هذا البرنامج التعليمي ، تعرف على كيفية التحقق من تأثيرات نص DrawingML في مستند Word باستخدام Aspose.Words for .NET. |
-| [قم بتعيين تنسيق الخط](./set-font-formatting/) | تعرف على كيفية تعيين تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET وإنشاء مستندات جذابة. |
-| [قم بتعيين علامة توكيد الخط](./set-font-emphasis-mark/) | تعرف على كيفية تعيين نمط تأكيد الخط في مستند Word باستخدام Aspose.Words for .NET. |
-| [تعيين مجلدات الخطوط](./set-fonts-folders/) | دليل خطوة بخطوة لإعداد مجلدات الخطوط عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [قم بتمكين تعطيل استبدال الخط](./enable-disable-font-substitution/) | في هذا البرنامج التعليمي ، تعرف على كيفية تمكين أو تعطيل استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. |
-| [تعيين إعدادات الخط الاحتياطي](./set-font-fallback-settings/) | تعرف على كيفية تعيين إعدادات استبدال الخطوط في Aspose.Words for .NET وتخصيص استبدال الخط في مستندات Word. |
-| [قم بتحميل إعدادات Noto Fallback](./load-noto-fallback-settings/) | في هذا البرنامج التعليمي ، تعرف على كيفية تحميل Noto override parameters في مستند Word باستخدام Aspose.Words for .NET. |
-| [تعيين المثيل الافتراضي مجلدات الخطوط](./set-fonts-folders-default-instance/) | دليل خطوة بخطوة لتعيين مجلد الخط الافتراضي عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [تعيين مجلدات الخطوط متعددة المجلدات](./set-fonts-folders-multiple-folders/) | دليل خطوة بخطوة لتعيين مجلدات خطوط متعددة عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [تعيين نظام مجلدات الخطوط والمجلد المخصص](./set-fonts-folders-system-and-custom-folder/) | دليل خطوة بخطوة لإعداد النظام ومجلدات الخطوط المخصصة عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [تعيين مجلدات الخطوط ذات الأولوية](./set-fonts-folders-with-priority/) | دليل خطوة بخطوة لإعداد مجلدات الخطوط ذات الأولوية عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [تعيين مجلد خطوط النوع الحقيقي](./set-true-type-fonts-folder/) | دليل تفصيلي خطوة بخطوة لإعداد مجلد خطوط الكتابة الصحيحة عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [حدد الخط الافتراضي عند التقديم](./specify-default-font-when-rendering/) | دليل تفصيلي خطوة بخطوة لتحديد الخط الافتراضي عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [إعدادات الخط مع خيارات التحميل](./font-settings-with-load-options/) | في هذا البرنامج التعليمي ، تعرف على كيفية تحميل مستند Word بخيارات تحميل مخصصة وإعدادات الخط المقابلة.|
-| [تعيين مجلد الخطوط](./set-fonts-folder/) | تعرف على كيفية تعيين دليل الخطوط في Aspose.Words for .NET وتأكد من توفر الخطوط المستخدمة في مستنداتك. |
-| [المثيل الافتراضي لإعدادات الخط](./font-settings-default-instance/) | في هذا البرنامج التعليمي ، تعرف على كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET. |
-| [الحصول على قائمة الخطوط المتاحة](./get-list-of-available-fonts/) | في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words for .NET. |
-| [تلقي إخطارات الخطوط](./receive-notifications-of-fonts/) | تعرف على كيفية تلقي إشعارات الخطوط المفقودة أو المستبدلة عند استخدام Aspose.Words for .NET. |
-| [تلقي إشعار تحذير](./receive-warning-notification/) | تعرف على كيفية تلقي إشعار تحذير عند استخدام Aspose.Words for .NET وإدارة أية مشكلات أو تحذيرات في مستنداتك. |
-| [مثال مصدر خط Steam](./resource-steam-font-source-example/) | تعرف على كيفية استخدام مصدر خط تدفق الموارد لتحميل الخطوط المخصصة في Aspose.Words for .NET. |
-| [احصل على استبدال بدون لاحقات](./get-substitution-without-suffixes/) | في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تجاوزات غير لاحقة في مستند Word باستخدام Aspose.Words for .NET. |
+| [Yazı Tipi Biçimlendirme](./font-formatting/) | Bu öğreticide, bir Word belgesindeki yazı tipini Aspose.Words for .NET ile nasıl biçimlendireceğinizi öğrenin. |
+| [Yazı Tipi Satır Aralığını Alın](./get-font-line-spacing/) | Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinde yazı tipi satır aralığını nasıl alacağınızı öğrenin. |
+| [DrawingML Metin Efektini Kontrol Edin](./check-drawingml-text-effect/) | Bu eğitimde, Aspose.Words for .NET ile bir Word belgesindeki DrawingML metin efektlerini nasıl kontrol edeceğinizi öğrenin. |
+| [Yazı Tipi Formatını Ayarla](./set-font-formatting/) | Aspose.Words for .NET kullanarak Word belgesinde yazı tipi biçimlendirmesini nasıl ayarlayacağınızı öğrenin ve çekici belgeler oluşturun. |
+| [Yazı Tipi Vurgu İşaretini Ayarla](./set-font-emphasis-mark/) | Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi vurgu stilini nasıl ayarlayacağınızı öğrenin. |
+| [Yazı Tipi Klasörlerini Ayarla](./set-fonts-folders/) | Aspose.Words for .NET kullanarak bir belgeyi işlerken yazı tipi klasörlerini ayarlamak için adım adım kılavuz. |
+| [Yazı Tipi Değiştirmeyi Devre Dışı Bırakmayı Etkinleştir](./enable-disable-font-substitution/) | Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinde yazı tipi değiştirmeyi nasıl etkinleştireceğinizi veya devre dışı bırakacağınızı öğrenin. |
+| [Yazı Tipi Yedek Ayarlarını Ayarlayın](./set-font-fallback-settings/) | Aspose.Words for .NET'te yazı tipi değiştirme ayarlarını nasıl yapacağınızı ve Word belgelerinizde yazı tipi değiştirmeyi nasıl özelleştireceğinizi öğrenin. |
+| [Noto Yedek Ayarlarını Yükle](./load-noto-fallback-settings/) | Bu eğitimde, Noto geçersiz kılma parametrelerini Aspose.Words for .NET ile bir Word belgesine nasıl yükleyeceğinizi öğrenin. |
+| [Font Klasörleri Varsayılan Örneği Ayarla](./set-fonts-folders-default-instance/) | Aspose.Words for .NET kullanarak bir belgeyi işlerken varsayılan yazı tipi klasörünü ayarlamak için adım adım kılavuz. |
+| [Font Klasörlerini Birden Fazla Klasör Olarak Ayarla](./set-fonts-folders-multiple-folders/) | Aspose.Words for .NET kullanarak bir belgeyi işlerken birden fazla yazı tipi klasörü ayarlamak için adım adım kılavuz. |
+| [Yazı Tipleri Klasör Sistemini ve Özel Klasörü Ayarla](./set-fonts-folders-system-and-custom-folder/) | Aspose.Words for .NET kullanarak bir belgeyi işlerken sistem ve özel yazı tipi klasörlerini ayarlamak için adım adım kılavuz. |
+| [Yazı Tipi Klasörlerini Öncelikli Olarak Ayarla](./set-fonts-folders-with-priority/) | Aspose.Words for .NET kullanarak bir belgeyi işlerken yazı tipi klasörlerini öncelikli olarak ayarlamak için adım adım kılavuz. |
+| [True Type Yazı Tipleri Klasörünü Ayarla](./set-true-type-fonts-folder/) | Aspose.Words for .NET kullanarak bir belgeyi işlerken gerçek tip yazı tipi klasörünü ayarlamak için adım adım kılavuz. |
+| [İşleme Sırasında Varsayılan Yazı Tipini Belirtin](./specify-default-font-when-rendering/) | Aspose.Words for .NET kullanarak bir belgeyi işlerken varsayılan yazı tipini belirlemek için adım adım kılavuz. |
+| [Yükleme Seçenekleriyle Yazı Tipi Ayarları](./font-settings-with-load-options/) | Bu öğreticide, özel yükleme seçenekleri ve karşılık gelen yazı tipi ayarlarıyla bir Word belgesini nasıl yükleyeceğinizi öğrenin.|
+| [Yazı Tipleri Klasörünü Ayarla](./set-fonts-folder/) | Aspose.Words for .NET'te yazı tipi dizinini nasıl ayarlayacağınızı ve belgelerinizde kullanılan yazı tiplerinin kullanılabilirliğini nasıl sağlayacağınızı öğrenin. |
+| [Yazı Tipi Ayarları Varsayılan Örneği](./font-settings-default-instance/) | Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde varsayılan yazı tipi ayarlarının nasıl yapılandırılacağını öğrenin. |
+| [Kullanılabilir Yazı Tiplerinin Listesini Alın](./get-list-of-available-fonts/) | Bu öğreticide, Aspose.Words for .NET'te bulunan yazı tiplerinin listesini nasıl alacağınızı öğrenin. |
+| [Yazı Tiplerinin Bildirimlerini Alın](./receive-notifications-of-fonts/) | Aspose.Words for .NET kullanırken eksik veya değiştirilmiş yazı tipi bildirimlerini nasıl alacağınızı öğrenin. |
+| [Uyarı Bildirimi Al](./receive-warning-notification/) | Aspose.Words for .NET kullanırken nasıl uyarı bildirimi alacağınızı ve belgelerinizdeki sorunları veya uyarıları nasıl yöneteceğinizi öğrenin. |
+| [Kaynak Steam Yazı Tipi Kaynağı Örneği](./resource-steam-font-source-example/) | Özel yazı tiplerini Aspose.Words for .NET'e yüklemek için Kaynak Akışı Yazı Tipi Kaynağını nasıl kullanacağınızı öğrenin. |
+| [Sonekler Olmadan Değiştirme Alın](./get-substitution-without-suffixes/) | Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinde soneksiz geçersiz kılmaların nasıl elde edileceğini öğrenin. |

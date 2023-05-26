@@ -1,51 +1,51 @@
 ---
-title: نص عريض
-linktitle: نص عريض
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية كتابة نص غامق باستخدام Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Testo grassetto
+linktitle: Testo grassetto
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come mettere in grassetto il testo con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/bold-text/
 ---
 
-في هذا المثال ، سنخبرك بكيفية كتابة نص غامق باستخدام Aspose.Words for .NET. النص الغامق يجعله أكثر وضوحًا ويعطيه أهمية أكبر.
+In questo esempio, ti diremo come mettere in grassetto il testo con Aspose.Words per .NET. Il testo in grassetto lo rende più visibile e gli conferisce maggiore risalto.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Passaggio 1: utilizzo di un generatore di documenti
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Innanzitutto, utilizzeremo un generatore di documenti per aggiungere contenuto al nostro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: نص عريض
+## Passaggio 2: testo in grassetto
 
- يمكننا جعل النص غامقًا عن طريق تعيين منشئ المستندات`Font.Bold` ملكية ل`true`.
+ Possiamo mettere in grassetto il testo impostando il costruttore del documento`Font.Bold` proprietà a`true`.
 
 ```csharp
 builder.Font.Bold = true;
 ```
 
-## الخطوة 3: أضف محتوى إلى المستند
+## Passaggio 3: aggiungere contenuto al documento
 
- يمكننا الآن إضافة محتوى إلى المستند باستخدام طرق إنشاء المستندات ، مثل`Writeln`، مما يضيف سطرًا من النص.
+ Ora possiamo aggiungere contenuto al documento utilizzando i metodi del generatore di documenti, come ad esempio`Writeln`, che aggiunge una riga di testo.
 
 ```csharp
 builder.Writeln("This text will be bold");
 ```
 
-## مثال على كود المصدر للنص الغامق باستخدام Aspose.Words for .NET
+## Esempio di codice sorgente per testo in grassetto utilizzando Aspose.Words per .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص غامقًا.
+	// Rendi il testo in grassetto.
 	builder.Font.Bold = true;
 	builder.Writeln("This text will be Bold");  
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية كتابة نص غامق باستخدام Aspose.Words for .NET.
+Congratulazioni! Ora hai imparato come mettere in grassetto il testo con Aspose.Words per .NET.
 
 

@@ -1,17 +1,17 @@
 ---
-title: العمل مع الحاشية السفلية والتعليق الختامي
-linktitle: العمل مع الحاشية السفلية والتعليق الختامي
-second_title: Aspose.Words لمراجع .NET API
-description: تشرح البرامج التعليمية كيفية تعيين الحاشية السفلية والتعليقات الختامية في مستند Word باستخدام Aspose.Words for .NET
+title: Trabajar con notas al pie y notas al final
+linktitle: Trabajar con notas al pie y notas al final
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales explican cómo configurar una nota al pie y una nota al final en un documento de Word usando Aspose.Words para .NET
 type: docs
 weight: 660
 url: /es/net/working-with-footnote-and-endnote/
 ---
-يعد العمل باستخدام الحواشي السفلية والتعليقات الختامية مصدرًا شاملاً يرشدك خلال العمل مع الحواشي السفلية والتعليقات الختامية في مستندات Word باستخدام مكتبة Aspose.Words لـ .NET. توفر البرامج التعليمية شرحًا تفصيليًا خطوة بخطوة ، وشفرة مصدر كاملة ، وأمثلة عملية لإضافة الحواشي السفلية والتعليقات الختامية وتعديلها وإزالتها. ستتعلم أيضًا كيفية تخصيص تنسيق وأسلوب الملاحظات ، والتنقل بين الملاحظات ، وتحويلها إلى تنسيقات مختلفة ، مثل PDF أو HTML. هذا المورد ضروري للمطورين الراغبين في إدارة المراجع والتعليقات التوضيحية في مستندات Word الخاصة بهم باستخدام Aspose.Words for .NET.
+Trabajar con notas al pie y notas al final es un recurso integral que lo guía a través del trabajo con notas al pie y notas al final en sus documentos de Word utilizando la biblioteca Aspose.Words para .NET. Los tutoriales brindan explicaciones detalladas paso a paso, código fuente completo y ejemplos prácticos para agregar, modificar y eliminar notas al pie y notas al final. También aprenderá a personalizar el formato y el estilo de las notas, navegar entre notas y convertirlas a diferentes formatos, como PDF o HTML. Este recurso es esencial para los desarrolladores que deseen administrar referencias y anotaciones en sus documentos de Word utilizando Aspose.Words para .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [تعيين أعمدة الملاحظات القدم](./set-foot-note-columns/) | تعرف على كيفية تعيين عدد الأعمدة للحواشي السفلية في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تعيين موضع الحاشية السفلية وملاحظة النهاية](./set-footnote-and-end-note-position/) | تعرف على كيفية تعيين موضع الحواشي السفلية والتعليقات الختامية في مستندات Word باستخدام Aspose.Words for .NET. |
-| [قم بتعيين خيارات التعليق الختامي](./set-endnote-options/) | تعرف على كيفية تعيين خيارات التعليقات الختامية في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Establecer columnas de notas al pie](./set-foot-note-columns/) | Aprenda a configurar el número de columnas para notas al pie en documentos de Word usando Aspose.Words para .NET. |
+| [Establecer la posición de la nota al pie y la nota final](./set-footnote-and-end-note-position/) | Aprenda a establecer la posición de las notas al pie y al final en documentos de Word usando Aspose.Words para .NET. |
+| [Establecer opciones de notas al final](./set-endnote-options/) | Aprenda a configurar las opciones de notas al final en documentos de Word usando Aspose.Words para .NET. |

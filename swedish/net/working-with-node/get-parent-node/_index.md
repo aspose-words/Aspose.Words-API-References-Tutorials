@@ -1,56 +1,56 @@
 ---
-title: احصل على العقدة الأصلية
-linktitle: احصل على العقدة الأصلية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على العقدة الأصلية لعنصر معين باستخدام Aspose.Words for .NET.
+title: Skaffa föräldernod
+linktitle: Skaffa föräldernod
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du får föräldranoden för ett specifikt element med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-node/get-parent-node/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية الحصول على العقدة الأصلية باستخدام Aspose.Words for .NET.
+Här är en steg-för-steg-guide för att förklara C#-källkoden nedan som illustrerar hur man skaffar föräldernoden med Aspose.Words för .NET.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Steg 1: Importera nödvändiga referenser
+Innan du börjar, se till att du har importerat de nödvändiga referenserna för att använda Aspose.Words för .NET i ditt projekt. Detta inkluderar att importera Aspose.Words-biblioteket och lägga till de nödvändiga namnområdena till din källfil.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Nodes;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## Steg 2: Skapa ett nytt dokument
+ I det här steget kommer vi att skapa ett nytt dokument med hjälp av`Document` klass.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: الوصول إلى العقدة الأصلية
-للحصول على العقدة الأصلية لعقدة معينة ، نحتاج إلى الوصول إلى تلك العقدة أولاً. في هذا المثال ، نقوم بالوصول إلى أول عقدة فرعية من المستند ، والتي تكون عادةً قسمًا.
+## Steg 3: Gå till föräldranoden
+För att få föräldernoden för en specifik nod måste vi först komma åt den noden. I det här exemplet kommer vi åt dokumentets första underordnade nod, som vanligtvis är ett avsnitt.
 
 ```csharp
 Node section = doc.FirstChild;
 ```
 
-## الخطوة 4: تحقق من العقدة الأصلية
-الآن بعد أن أصبح لدينا العقدة المحددة ، يمكننا التحقق مما إذا كانت العقدة الأصلية تتطابق مع المستند نفسه. في هذا المثال ، نقارن العقدة الأصلية بالمستند باستخدام عامل المساواة (`==`) وعرض النتيجة.
+## Steg 4: Kontrollera föräldranoden
+Nu när vi har den specifika noden kan vi kontrollera om dess överordnade nod matchar själva dokumentet. I det här exemplet jämför vi den överordnade noden med dokumentet med hjälp av likhetsoperatorn (`==`) och visa resultatet.
 
 ```csharp
 Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
-### عينة من التعليمات البرمجية المصدر للحصول على العقدة الأصلية باستخدام Aspose.Words for .NET
+### Exempel på källkod för att få överordnad nod med Aspose.Words för .NET
 
 
 ```csharp
 	Document doc = new Document();
 
-	// المقطع هو العقدة الفرعية الأولى من المستند.
+	// Sektionen är den första underordnade noden i dokumentet.
 	Node section = doc.FirstChild;
 
-	// العقدة الرئيسية للقسم هي الوثيقة.
+	// Sektionens överordnade nod är dokumentet.
 	Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
             
 ```
 
-هذا مثال رمز كامل للحصول على العقدة الأصلية لعقدة معينة باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Detta är ett komplett kodexempel för att få föräldernoden för en specifik nod med Aspose.Words för .NET. Var noga med att importera nödvändiga referenser och följ stegen som beskrivits tidigare för att integrera denna kod i ditt projekt.

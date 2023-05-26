@@ -1,41 +1,41 @@
 ---
-title: Docx إلى Txt
-linktitle: Docx إلى Txt
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات Word من Docx إلى نص عادي (Txt) باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Docx till txt
+linktitle: Docx till txt
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du konverterar Word-dokument från Docx till vanlig text (Txt) med Aspose.Words för .NET. Steg-för-steg handledning med exempel på källkod.
 type: docs
 weight: 10
 url: /sv/net/basic-conversions/docx-to-txt/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى نص عادي (Txt). سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+I denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att konvertera ett Word-dokument i Docx-format till vanlig text (Txt). Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
-## الخطوة 1: تهيئة كائن المستند
+## Steg 1: Initiera dokumentobjektet
 
- أولاً ، قم بتهيئة ملف`Document` كائن مع المسار إلى مستندك المصدر بتنسيق Docx:
+ Initiera först`Document` objekt med sökvägen till ditt källdokument i Docx-format:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## الخطوة 2: حفظ المستند بتنسيق Txt
+## Steg 2: Spara dokumentet i Txt-format
 
- بعد ذلك ، احفظ المستند بتنسيق نص عادي (Txt) عن طريق استدعاء ملف`Save` طريقة على`Document` كائن وتوفير المسار واسم الملف لمستند Txt الناتج:
+ Spara sedan dokumentet i vanlig text (Txt)-format genom att anropa`Save` metod på`Document` objekt och ange sökvägen och filnamnet för det utgående Txt-dokumentet:
 
 ```csharp
 doc.Save(dataDir + "BaseConversions.DocxToTxt.txt");
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند Word بتنسيق Docx إلى نص عادي (Txt) باستخدام Aspose.Words for .NET.
+Det är allt! Du har framgångsrikt konverterat ett Word-dokument i Docx-format till vanlig text (Txt) med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لـ Docx To Txt باستخدام Aspose.Words for .NET
+### Exempel på källkod för Docx To Txt med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Document.docx");
 
@@ -43,4 +43,4 @@ doc.Save(dataDir + "BaseConversions.DocxToTxt.txt");
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Använd gärna den här koden i dina egna projekt och modifiera den efter dina specifika krav.

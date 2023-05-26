@@ -1,64 +1,64 @@
 ---
-title: تجاهل رأس تذييل الصفحة
-linktitle: تجاهل رأس تذييل الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند مع تجاهل محتوى الرأس والتذييل باستخدام Aspose.Words for .NET.
+title: Ignorar encabezado de pie de página
+linktitle: Ignorar encabezado de pie de página
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a agregar un documento ignorando el contenido del encabezado y el pie de página con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/join-and-append-documents/ignore-header-footer/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق مستند مع تجاهل محتوى الرأس والتذييل. يوضح كود المصدر المقدم كيفية إعداد خيارات تنسيق الاستيراد لاستبعاد الرأس والتذييل أثناء عملية الإلحاق.
+Este tutorial explica cómo usar Aspose.Words para .NET para agregar un documento ignorando el contenido del encabezado y el pie de página. El código fuente proporcionado muestra cómo configurar las opciones de formato de importación para excluir el encabezado y el pie de página durante el proceso de adición.
 
-## الخطوة 1: قم بإعداد المشروع
+## Paso 1: configurar el proyecto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Asegúrese de tener los siguientes requisitos previos:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words para la biblioteca .NET instalada. Puede descargarlo del sitio web oficial de Aspose o usar el administrador de paquetes NuGet para instalarlo.
+- Una ruta de directorio de documentos donde se encuentran los documentos de origen y de destino.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Paso 2: Abra los documentos de origen y destino
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Abra los documentos de origen y de destino con el`Document` constructor de clases. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDocument = new Document(dataDir + "Document source.docx");
 Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إعداد خيارات تنسيق الاستيراد
+## Paso 3: Configure las opciones de formato de importación
 
- قم بإنشاء مثيل لـ`ImportFormatOptions` فئة وضبط`IgnoreHeaderFooter` ملكية ل`false`. يضمن ذلك تضمين محتوى الرأس والتذييل أثناء عملية الإلحاق.
+ Crear una instancia de la`ImportFormatOptions` clase y establecer el`IgnoreHeaderFooter` propiedad a`false`. Esto garantiza que el contenido del encabezado y pie de página se incluya durante el proceso de adición.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بالمستند الوجهة
+## Paso 4: agregue el documento de origen al documento de destino
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.KeepSourceFormatting` كمعامل ثاني وخيارات تنسيق الاستيراد كمعامل ثالث.
+ Utilizar el`AppendDocument` del documento de destino para anexar el documento de origen. Aprobar`ImportFormatMode.KeepSourceFormatting` como segundo parámetro y las opciones de formato de importación como tercer parámetro.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
 ```
 
-## الخطوة 5: احفظ المستند الوجهة
+## Paso 5: Guarde el documento de destino
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Finalmente, guarde el documento de destino modificado usando el`Save` metodo de la`Document` objeto.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند مع تجاهل محتوى الرأس والتذييل باستخدام Aspose.Words for .NET.
+Esto completa la implementación de agregar un documento mientras se ignora el contenido del encabezado y pie de página usando Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لـ Ignore Header Footer باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Ignorar encabezado y pie de página usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

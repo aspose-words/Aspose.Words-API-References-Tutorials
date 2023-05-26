@@ -1,21 +1,21 @@
 ---
-title: البرمجة باستخدام Docsaveoptions
-linktitle: البرمجة باستخدام Docsaveoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على مستند مشفر بكلمة مرور ، ولا تقم بضغط ملفات تعريف صغيرة ولا تقم بحفظ تعداد نقطي للصورة
+title: Programación con Docsaveoptions
+linktitle: Programación con Docsaveoptions
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales contienen documentos cifrados con contraseña, no comprimen metarchivos pequeños y no guardan viñetas de imágenes
 type: docs
 weight: 1600
 url: /es/net/programming-with-docsaveoptions/
 ---
-توفر البرامج التعليمية Aspose.Words for .NET حول البرمجة باستخدام DocSaveOptions دليلاً شاملاً للعمل مع خيارات حفظ المستندات في Aspose.Words. توجهك هذه البرامج التعليمية عبر ميزات مختلفة ، بما في ذلك حفظ المستندات بتنسيق PDF و XPS و HTML والمزيد. ستتعلم أيضًا كيفية إدارة خيارات الضغط وأمان المستندات والبيانات الوصفية والخطوط المضمنة والمزيد.
+Los tutoriales de Aspose.Words para .NET sobre programación con DocSaveOptions brindan una guía completa para trabajar con opciones para guardar documentos en Aspose.Words. Estos tutoriales lo guían a través de diferentes funciones, incluido el almacenamiento de documentos en PDF, XPS, HTML y más. También aprenderá a administrar las opciones de compresión, la seguridad de los documentos, los metadatos, las fuentes incrustadas y más.
 
-كل برنامج تعليمي مصحوب بشفرة مصدر مفصلة وأمثلة عملية تسمح لك بسهولة فهم وتطبيق المفاهيم المقدمة. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان خيارات حفظ المستندات في Aspose.Words for .NET وإنشاء مستندات عالية الجودة تلبي احتياجاتك الخاصة.
+Cada tutorial va acompañado de un código fuente detallado y ejemplos prácticos que le permitirán comprender y aplicar fácilmente los conceptos presentados. Ya sea que sea un desarrollador principiante o experimentado, estos tutoriales lo ayudarán a dominar las opciones para guardar documentos en Aspose.Words para .NET y crear documentos de alta calidad que satisfagan sus necesidades específicas.
 
-باتباع هذه البرامج التعليمية ، ستتعلم أفضل الممارسات لحفظ المستندات بتنسيقات مختلفة ، وتخصيص خيارات الحفظ وفقًا لتفضيلاتك. ستمنحك الأمثلة العملية خبرة عملية لتطبيق هذه المعرفة في مشاريعك الخاصة. باستخدام Aspose.Words for .NET ، لديك أداة قوية لمعالجة مستندات Word وستساعدك هذه البرامج التعليمية على تحقيق أقصى استفادة من هذه المكتبة.
+Siguiendo estos tutoriales, aprenderá las mejores prácticas para guardar sus documentos en diferentes formatos, personalizando las opciones de guardado según sus preferencias. Los ejemplos prácticos le darán experiencia práctica para aplicar este conocimiento en sus propios proyectos. Con Aspose.Words para .NET tiene una poderosa herramienta para manipular documentos de Word y estos tutoriales lo ayudarán a aprovechar al máximo esta biblioteca.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [تشفير الوثيقة بكلمة مرور](./encrypt-document-with-password/) | تعرف على كيفية تشفير المستندات بكلمة مرور باستخدام Aspose.Words for .NET.  |
-| [لا تقم بضغط ملفات التعريف الصغيرة](./do-not-compress-small-metafiles/) | تعرف على كيفية استخدام Aspose.Words for .NET لتمكين ميزة لا تقم بضغط ملفات التعريف الصغيرة عند حفظ المستندات. |
-| [لا تقم بحفظ صورة نقطية](./do-not-save-picture-bullet/) | تعرف على كيفية تعطيل حفظ الرموز النقطية للصور في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Cifrar documento con contraseña](./encrypt-document-with-password/) | Aprenda a cifrar documentos con una contraseña utilizando Aspose.Words para .NET.  |
+| [No comprima metarchivos pequeños](./do-not-compress-small-metafiles/) | Aprenda a usar Aspose.Words para .NET para habilitar la función No comprimir pequeños metarchivos al guardar documentos. |
+| [No guardar viñeta de imagen](./do-not-save-picture-bullet/) | Aprenda a deshabilitar el guardado de viñetas de imágenes en documentos de Word usando Aspose.Words para .NET. |

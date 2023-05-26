@@ -1,32 +1,32 @@
 ---
-title: حدد التنسيق الشرطي
-linktitle: حدد التنسيق الشرطي
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتحديد التنسيق الشرطي في جدول باستخدام Aspose.Words for .NET.
+title: 定义条件格式
+linktitle: 定义条件格式
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 在表格中定义条件格式的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-table-styles-and-formatting/define-conditional-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتحديد التنسيق الشرطي باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تطبيق التنسيق الشرطي على جدول في مستندات Word باستخدام Aspose.Words for .NET.
+在本教程中，我们将逐步引导您使用 Aspose.Words for .NET 定义条件格式。我们将解释捆绑的 C# 源代码，并为您提供全面的指南，以帮助您了解并在您自己的项目中实现此功能。在本教程结束时，您将了解如何使用 Aspose.Words for .NET 将条件格式应用于 Word 文档中的表格。
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## 第一步：定义文档目录
+首先，您需要设置文档目录的路径。这是您要保存编辑后的 Word 文档的位置。用适当的路径替换“您的文档目录”。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## 第 2 步：创建新文档和文档生成器
+接下来，您需要创建一个新的实例`Document`类和该文档的文档构造函数。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدول جديد وأضف خلايا
-لبدء إنشاء الجدول ، نستخدم ملف`StartTable()` طريقة منشئ المستندات ، ثم نضيف خلايا إلى الجدول باستخدام الامتداد`InsertCell()` الطريقة ونكتب محتويات الخلايا إلى ملف`Write()` طريقة.
+## 第 3 步：开始一个新表并添加单元格
+要开始创建表，我们使用`StartTable()`文档生成器的方法，然后我们使用`InsertCell()`方法，我们将单元格的内容写入使用`Write()`方法。
 
 ```csharp
 Table table = builder. StartTable();
@@ -40,8 +40,8 @@ builder. InsertCell();
 builder. EndTable();
 ```
 
-## الخطوة 4: إنشاء نمط جدول وتعيين التنسيق الشرطي
- الآن يمكننا إنشاء نمط جدول باستخدام امتداد`TableStyle` الطبقة و`Add()` طريقة من الوثيقة`s `الأنماط` collection. We can then set the conditional formatting for the first row of the table by accessing the `الأنماط الشرطية` property of the table style and using the `FirstRow`.
+## 第 4 步：创建表格样式并设置条件格式
+现在我们可以使用`TableStyle`类和`Add()`文档中的方法`s `样式` collection. We can then set the conditional formatting for the first row of the table by accessing the `条件样式` property of the table style and using the `FirstRow` 属性。
 
 ```csharp
 TableStyle tableStyle = (TableStyle)doc.Styles.Add(StyleType.Table, "MyTableStyle1");
@@ -49,28 +49,28 @@ tableStyle.ConditionalStyles.FirstRow.Shading.BackgroundPatternColor = Color.Gre
 tableStyle.ConditionalStyles.FirstRow.Shading.Texture = TextureIndex.TextureNone;
 ```
 
-## الخطوة 5: قم بتطبيق نمط الجدول على الجدول
- أخيرًا ، نطبق نمط الجدول الذي أنشأناه على الجدول باستخدام`Style` خاصية الجدول.
+## 第 5 步：将表格样式应用于表格
+最后，我们将创建的表格样式应用到表格中，使用`Style`表的属性。
 
 ```csharp
 table.Style = tableStyle;
 ```
 
-## الخطوة 6: احفظ المستند المعدل
-أخيرًا احفظ المستند المعدل في ملف. يمكنك اختيار اسم و
+## 第 6 步：保存修改后的文件
+最后将修改后的文档保存到文件中。你可以选择一个名字和
 
-  موقع مناسب لمستند الإخراج.
+  输出文档的适当位置。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatting.docx");
 ```
 
-تهنئة ! لقد قمت الآن بتعريف التنسيق الشرطي لجدولك باستخدام Aspose.Words for .NET.
+恭喜！您现在已经使用 Aspose.Words for .NET 为表格定义了条件格式。
 
-### نموذج التعليمات البرمجية المصدر لـ Define Conditional Formatting باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 定义条件格式的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -91,5 +91,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatt
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatting.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين التنسيق الشرطي باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تطبيق التنسيق الشرطي على الجداول الخاصة بك في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية الاحتياجات الخاصة.
+## 结论
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 设置条件格式。按照此分步指南，您可以轻松地将条件格式应用于 Word 文档中的表格。 Aspose.Words 提供了一个强大而灵活的 API，用于操作和格式化文档中的表格。有了这些知识，您就可以改进 Word 文档的视觉呈现并满足特定需求。

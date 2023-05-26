@@ -1,58 +1,58 @@
 ---
-title: إنشاء وإضافة فقرة العقدة
-linktitle: إنشاء وإضافة فقرة العقدة
-second_title: Aspose.Words لمراجع .NET API
-description: قم بإنشاء وإضافة عقدة فقرة إلى مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+title: Skapa och lägg till styckenod
+linktitle: Skapa och lägg till styckenod
+second_title: Aspose.Words för .NET API Referens
+description: Skapa och lägg till en styckenod i dina Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-node/create-and-add-paragraph-node/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية إنشاء وإضافة عقدة فقرة باستخدام Aspose.Words for .NET.
+Här är en steg-för-steg-guide för att förklara C#-källkoden nedan som illustrerar hur man skapar och lägger till en styckenod med Aspose.Words för .NET.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Steg 1: Importera nödvändiga referenser
+Innan du börjar, se till att du har importerat de nödvändiga referenserna för att använda Aspose.Words för .NET i ditt projekt. Detta inkluderar att importera Aspose.Words-biblioteket och lägga till de nödvändiga namnområdena till din källfil.
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## Steg 2: Skapa ett nytt dokument
+ I det här steget kommer vi att skapa ett nytt dokument med hjälp av`Document` klass.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: قم بإنشاء عقدة فقرة
- الآن سنقوم بإنشاء عقدة فقرة باستخدام امتداد`Paragraph` فئة وتمرير الوثيقة كمعامل.
+## Steg 3: Skapa en styckenod
+ Nu kommer vi att skapa en styckenod med hjälp av`Paragraph` klass och skicka dokumentet som en parameter.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 4: الوصول إلى قسم المستند
- لإضافة فقرة إلى المستند ، نحتاج إلى الوصول إلى القسم الأخير من المستند باستخدام ملف`LastSection` ملكية.
+## Steg 4: Öppna dokumentsektionen
+ För att lägga till stycket i dokumentet måste vi komma åt den sista delen av dokumentet med hjälp av`LastSection` fast egendom.
 
 ```csharp
 Section section = doc.LastSection;
 ```
 
-## الخطوة 5: أضف عقدة الفقرة إلى المستند
- الآن بعد أن أصبح لدينا قسم المستند ، يمكننا إضافة عقدة الفقرة إلى القسم باستخدام ملف`AppendChild` طريقة على القسم`Body` ملكية.
+## Steg 5: Lägg till styckenoden i dokumentet
+ Nu när vi har dokumentavsnittet kan vi lägga till styckenoden till avsnittet med hjälp av`AppendChild` metod på sektionens`Body` fast egendom.
 
 ```csharp
 section.Body.AppendChild(para);
 ```
 
-## الخطوة 6: احفظ المستند
- أخيرًا ، لحفظ المستند ، يمكنك استخدام ملف`Save` عن طريق تحديد تنسيق الإخراج المطلوب ، مثل تنسيق DOCX.
+## Steg 6: Spara dokumentet
+ Slutligen, för att spara dokumentet, kan du använda`Save` metod genom att ange önskat utdataformat, såsom DOCX-format.
 
 ```csharp
 doc.Save("output.docx", SaveFormat.Docx);
 ```
 
-### نموذج التعليمات البرمجية المصدر لإنشاء وإضافة فقرة عقدة باستخدام Aspose.Words for .NET
+### Exempel på källkod för att skapa och lägga till paragrafnod med Aspose.Words för .NET
 
 ```csharp
 Document doc = new Document();
@@ -64,4 +64,4 @@ section.Body.AppendChild(para);
 
 ```
 
-هذا مثال رمز كامل لإنشاء وإضافة فقرة باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Detta är ett komplett kodexempel för att skapa och lägga till en styckenod med Aspose.Words för .NET. Var noga med att importera nödvändiga referenser och följ stegen som beskrivits tidigare för att integrera denna kod i ditt projekt.

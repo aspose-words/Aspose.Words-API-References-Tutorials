@@ -1,63 +1,63 @@
 ---
-title: السماح بتباعد الخلايا
-linktitle: السماح بتباعد الخلايا
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة للسماح بتباعد الخلايا باستخدام Aspose.Words for .NET.
+title: Autoriser l'espacement des cellules
+linktitle: Autoriser l'espacement des cellules
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour autoriser l'espacement des cellules à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-table-styles-and-formatting/allow-cell-spacing/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة للسماح بتباعد الخلايا في الجداول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # الذي ينجز هذه المهمة ونقدم دليلاً شاملاً لمساعدتك على فهمها وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، سيكون لديك فهم واضح لكيفية التعامل مع تنسيق الجدول في مستندات Word باستخدام Aspose.Words for .NET.
+Dans ce didacticiel, nous vous expliquerons étape par étape le processus d'autorisation de l'espacement des cellules dans les tableaux à l'aide de Aspose.Words pour .NET. Nous expliquerons le code source C # qui accomplit cette tâche et fournirons un guide complet pour vous aider à le comprendre et à l'implémenter dans vos propres projets. À la fin de ce didacticiel, vous comprendrez clairement comment manipuler la mise en forme des tableaux dans vos documents Word à l'aide d'Aspose.Words pour .NET.
 
-## الخطوة 1: قم بتعيين دليل المستندات
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. هذا هو الموقع حيث يتم تخزين مستند Word الخاص بك. استبدل "دليل المستندات" بالمسار المناسب.
+## Étape 1 : Définir le répertoire de documents
+Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Il s'agit de l'emplacement où votre document Word est stocké. Remplacez "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin approprié.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- بعد ذلك ، تحتاج إلى تحميل مستند Word في مثيل لـ`Document` فصل.
+## Étape 2 : Charger le document
+ Ensuite, vous devez charger le document Word dans une instance du`Document` classe.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: الوصول إلى الجدول
- للسماح بتباعد الخلايا ، نحتاج إلى الوصول إلى الجدول داخل المستند. ال`Table` يمثل class جدولًا في Aspose.Words.
+## Étape 3 : Accéder au tableau
+ Pour permettre l'espacement des cellules, nous devons accéder au tableau dans le document. Le`Table` la classe représente une table dans Aspose.Words.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## الخطوة 4: تفعيل تباعد الخلايا
- الآن ، يمكننا تمكين تباعد الخلايا عن طريق تعيين`AllowCellSpacing`ممتلكات الجدول ل`true`. تحدد هذه الخاصية ما إذا كان يمكن أن يحتوي الجدول على تباعد خلايا.
+## Étape 4 : Activer l'espacement des cellules
+ Maintenant, nous pouvons activer l'espacement des cellules en définissant le`AllowCellSpacing`propriété de la table à`true`. Cette propriété détermine si le tableau peut avoir un espacement des cellules.
 
 ```csharp
 table.AllowCellSpacing = true;
 ```
 
-## الخطوة 5: تعيين تباعد الخلايا
- لتحديد مقدار المسافة بين الخلايا ، نستخدم الامتداد`CellSpacing` خاصية الجدول. في هذا المثال ، قمنا بتعيين تباعد الخلايا على نقطتين.
+## Étape 5 : Définir l'espacement des cellules
+ Pour spécifier la quantité d'espace entre les cellules, nous utilisons le`CellSpacing` propriété du tableau. Dans cet exemple, nous avons défini l'espacement des cellules sur 2 points.
 
 ```csharp
 table. CellSpacing = 2;
 ```
 
-## الخطوة 6: احفظ المستند المعدل
-أخيرًا ، نحفظ المستند المعدل في ملف. يمكنك اختيار اسم وموقع مناسبين للمستند الناتج.
+## Étape 6 : Enregistrer le document modifié
+Enfin, nous enregistrons le document modifié dans un fichier. Vous pouvez choisir un nom et un emplacement appropriés pour le document de sortie.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 ```
 
-تهانينا! لقد نجحت في السماح بتباعد الخلايا في الجداول باستخدام Aspose.Words for .NET.
+Toutes nos félicitations! Vous avez autorisé avec succès l'espacement des cellules dans les tableaux à l'aide de Aspose.Words pour .NET.
 
-### عينة من التعليمات البرمجية المصدر لـ Allow Cell Spacing باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Autoriser l'espacement des cellules à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -67,5 +67,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تمكين تباعد الخلايا في الجداول باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة دمج هذه الوظيفة في مشاريع C # الخاصة بك. تعد معالجة تنسيق الجدول جانبًا أساسيًا من جوانب معالجة المستندات و Aspose. توفر الكلمات واجهة برمجة تطبيقات قوية ومرنة لتحقيق ذلك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية متطلبات التنسيق المحددة.
+## Conclusion
+Dans ce didacticiel, nous avons appris à activer l'espacement des cellules dans les tableaux à l'aide de Aspose.Words pour .NET. En suivant le guide étape par étape, vous pouvez facilement intégrer cette fonctionnalité dans vos projets C#. La manipulation du formatage des tableaux est un aspect essentiel du traitement des documents et d'Aspose. Words fournit une API puissante et flexible pour y parvenir. Grâce à ces connaissances, vous pouvez améliorer la présentation visuelle de vos documents Word et répondre à des exigences de formatage spécifiques.

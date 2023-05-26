@@ -1,31 +1,31 @@
 ---
-title: تغيير Toc Tab Stops
-linktitle: تغيير Toc Tab Stops
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير علامات تبويب جدول المحتويات في مستند Word باستخدام Aspose.Words for .NET.
+title: Toc Sekme Duraklarını Değiştir
+linktitle: Toc Sekme Duraklarını Değiştir
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki içindekiler tablosu sekmelerini nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الوظائف التي تقدمها Aspose.Words ، هناك إمكانية تعديل علامات التبويب المستخدمة في جدول محتويات مستند Word. في هذا الدليل ، سنوضح لك كيفية استخدام شفرة المصدر C # الخاصة بـ Aspose.Words for .NET لتغيير علامات التبويب في جدول محتويات المستند.
+Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, düzenlemek ve değiştirmek için güçlü bir kitaplıktır. Aspose.Words tarafından sunulan işlevler arasında, bir Word belgesinin içindekiler tablosunda kullanılan sekmeleri değiştirme olasılığı vardır. Bu kılavuzda, bir belgenin içindekiler tablosundaki sekmeleri değiştirmek için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك علامات تبويب جدول المحتويات المتغيرة.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle çalışmayı kolay ve verimli hale getiren popüler bir kitaplıktır. İçindekiler sekmelerini değiştirmek de dahil olmak üzere Word belgeleri oluşturmak, düzenlemek ve değiştirmek için çok çeşitli özellikler sunar.
 
-## تحميل المستند الذي يحتوي على جدول المحتويات
+## İçindekiler tablosunu içeren belgeyi yükleme
 
-الخطوة الأولى هي تحميل مستند Word الذي يحتوي على جدول المحتويات الذي تريد تعديله. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+İlk adım, değiştirmek istediğiniz içindekiler tablosunu içeren Word belgesini yüklemektir. Belgeyi kaynak dosyadan yüklemek için Document sınıfını kullanın. İşte bir örnek :
 
 ```csharp
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Table of content.docx" الموجود في دليل documents.
+Bu örnekte, belgeler dizininde bulunan "İçindekiler.docx" belgesini yüklüyoruz.
 
-## تغيير علامات التبويب في جدول المحتويات
+## İçindekiler tablosundaki sekmeleri değiştirme
 
-بمجرد تحميل المستند ، ننتقل إلى كل فقرة في المستند ونتحقق مما إذا كان قد تم تنسيقها باستخدام أنماط نتائج جدول المحتويات (TOC). إذا كان الأمر كذلك ، نقوم بتعديل علامات التبويب المستخدمة لمحاذاة أرقام الصفحات. إليك الطريقة:
+Belge yüklendikten sonra, belgenin her paragrafını inceliyoruz ve İçindekiler Tablosu (TOC) sonuç stilleri kullanılarak biçimlendirilip biçimlendirilmediğini kontrol ediyoruz. Öyleyse, sayfa numaralarını hizalamak için kullanılan sekmeleri değiştiririz. İşte nasıl:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -40,28 +40,28 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-في هذا المثال ، نستخدم حلقة للتكرار خلال كل فقرة في المستند. نتحقق بعد ذلك من تنسيق الفقرة باستخدام أنماط نتيجة جدول المحتويات (TOC). إذا كان الأمر كذلك ، فإننا نصل إلى علامة التبويب الأولى المستخدمة في هذه الفقرة ونقوم بتعديلها عن طريق إزالة علامة التبويب القديمة وإضافة علامة تبويب جديدة بموضع معدل.
+Bu örnekte, belgedeki her paragrafta dolaşmak için bir döngü kullanıyoruz. Ardından, paragrafın İçindekiler Tablosu Sonuç (TOC) stilleri kullanılarak biçimlendirilip biçimlendirilmediğini kontrol ederiz. Öyleyse, bu paragrafta kullanılan ilk sekmeye erişir ve eski sekmeyi kaldırarak ve değiştirilmiş bir konuma sahip yeni bir sekme ekleyerek değiştiririz.
 
-## احفظ المستند المعدل
+## Değiştirilen belgeyi kaydet
 
-بمجرد إجراء التغييرات اللازمة على علامات التبويب في جدول المحتويات ، يمكنك حفظ المستند المعدل باستخدام طريقة Save لفئة Document. هنا مثال :
+İçindekiler tablosundaki sekmelerde gerekli değişiklikleri yaptıktan sonra, değiştirilen belgeyi Document sınıfının Save yöntemini kullanarak kaydedebilirsiniz. İşte bir örnek :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-في هذا المثال ، نحفظ المستند المعدل باسم "WorkingWithTableOfContent.ChangeTocTabStops.docx".
+Bu örnekte değiştirilen belgeyi "WorkingWithTableOfContent.ChangeTocTabStops.docx" olarak kaydediyoruz.
 
-### نموذج شفرة مصدر لميزة "تحرير جدول المحتويات" باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile "İçindekiler Sekmelerini Düzenle" özelliği için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند الذي يحتوي على جدول المحتويات
+// İçindekiler tablosunu içeren belgeyi yükleyin
 Document doc = new Document(dataDir + "Table of contents.docx");
 
-// قم بتعديل علامات تبويب جدول المحتويات
+// İçindekiler tablosunun sekmelerini değiştirme
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 {
      if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
@@ -73,10 +73,10 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
      }
 }
 
-// احفظ المستند المعدل
+// Değiştirilen belgeyi kaydet
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، قمنا بتغطية كيفية استخدام Aspose.Words for .NET لتغيير علامات التبويب في جدول محتويات مستند Word باستخدام الكود المصدري C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة تخصيص علامات تبويب جدول المحتويات في مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع أنماط وتنسيقات مستنداتك ، مما يسمح لك بإنشاء مستندات Word جذابة واحترافية.
+Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesinin içindekiler tablosundaki sekmeleri değiştirmek için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Sağlanan adımları izleyerek, C# uygulamanızdaki Word belgelerinizdeki içindekiler sekmelerini kolayca özelleştirebilirsiniz. Aspose.Words, çekici ve profesyonel Word belgeleri oluşturmanıza izin vererek, belgelerinizin stilleri ve biçimlendirmesiyle çalışmak için muazzam bir esneklik ve güç sunar.

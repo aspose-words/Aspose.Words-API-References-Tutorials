@@ -1,36 +1,36 @@
 ---
-title: البرمجة مع الرسوم البيانية
-linktitle: البرمجة مع الرسوم البيانية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على رقم تنسيق تسمية البيانات ، وإنشاء مخطط باستخدام الشكل ، وإدراج مخطط عمودي بسيط ، وإدراج مخطط عمودي ، وإدراج مخطط منطقة ، وإدراج مخطط فقاعي ،
+title: Programmieren mit Diagrammen
+linktitle: Programmieren mit Diagrammen
+second_title: Aspose.Words für .NET API-Referenz
+description: Die Tutorials enthalten die Formatierung der Anzahl der Datenbeschriftungen, das Erstellen eines Diagramms mithilfe einer Form, das Einfügen eines einfachen Säulendiagramms, das Einfügen eines Säulendiagramms, das Einfügen eines Flächendiagramms und das Einfügen eines Blasendiagramms.
 type: docs
 weight: 1540
 url: /de/net/programming-with-charts/
 ---
-تقدم Aspose.Words for .NET Graphics Programming Tutorials مصدرًا شاملاً لتعلم كيفية إنشاء الرسوميات ومعالجتها في مستندات Word الخاصة بك. توجهك البرامج التعليمية عبر خطوات إضافة المخططات وتخصيص مظهرها وتحرير البيانات والمزيد. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان ميزات الرسومات في Aspose.Words.
+Die Aspose.Words for .NET Graphics Programming Tutorials bieten eine umfassende Ressource zum Erlernen der Erstellung und Bearbeitung von Grafiken in Ihren Word-Dokumenten. Tutorials führen Sie durch die Schritte zum Hinzufügen von Diagrammen, zum Anpassen ihres Erscheinungsbilds, zum Bearbeiten von Daten und mehr. Egal, ob Sie Anfänger oder erfahrener Entwickler sind, diese Tutorials helfen Ihnen, die Grafikfunktionen in Aspose.Words zu beherrschen.
 
-في هذه البرامج التعليمية ، ستتعلم كيفية إنشاء أنواع مختلفة من المخططات مثل المخططات الشريطية ، والمخططات الدائرية ، ومخططات المنطقة ، والمخططات الخطية ، وما إلى ذلك. ستتعلم أيضًا كيفية تخصيص عناصر المخطط مثل العناوين ، ومفاتيح الرسم البياني ، وتسميات البيانات ، و المحاور. ستوضح لك البرامج التعليمية كيفية التعامل مع بيانات المخطط عن طريق إضافة سلسلة البيانات أو تعديلها أو حذفها.
+In diesen Tutorials erfahren Sie, wie Sie verschiedene Diagrammtypen wie Balkendiagramme, Kreisdiagramme, Flächendiagramme, Liniendiagramme usw. erstellen. Außerdem erfahren Sie, wie Sie Diagrammelemente wie Titel, Legenden, Datenbeschriftungen usw. anpassen Achsen. Die Tutorials zeigen Ihnen, wie Sie Diagrammdaten bearbeiten, indem Sie Datenreihen hinzufügen, ändern oder löschen.
 
-باستخدام هذه البرامج التعليمية ، ستتمكن من تحسين مستندات Word الخاصة بك عن طريق إضافة رسومات جذابة وغنية بالمعلومات. ستتعلم كيفية الاستفادة من ميزات الرسومات المتقدمة في Aspose.Words for .NET ودمجها بشكل فعال في تطبيقاتك. استكشف هذه الدروس لتوسيع مهاراتك الرسومية في Aspose.Words.
+Mit diesen Tutorials können Sie Ihre Word-Dokumente durch das Hinzufügen optisch ansprechender und informativer Grafiken verbessern. Sie erfahren, wie Sie die erweiterten Grafikfunktionen von Aspose.Words für .NET nutzen und effektiv in Ihre Anwendungen integrieren. Entdecken Sie diese Tutorials, um Ihre Grafikfähigkeiten in Aspose.Words zu erweitern.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [تنسيق رقم تسمية البيانات](./format-number-of-data-label/) | تعرف على كيفية تنسيق عدد تسميات البيانات في مخطط باستخدام Aspose.Words for .NET. تخصيص تنسيقات الأرقام لتسميات البيانات بسهولة. |
-| [إنشاء مخطط باستخدام الشكل](./create-chart-using-shape/) | تعرف على كيفية إنشاء مخطط وتخصيصه باستخدام شكل في مستند Word باستخدام Aspose.Words for .NET. |
-| [إدراج مخطط عمودي بسيط](./insert-simple-column-chart/) | تعرف على كيفية إدراج مخطط عمودي بسيط في مستند باستخدام Aspose.Words for .NET. |
-| [إدراج مخطط عمودي](./insert-column-chart/) | تعرف على كيفية إدراج مخطط عمودي في مستند باستخدام Aspose.Words for .NET. |
-| [إدراج مخطط مساحي](./insert-area-chart/) | تعرف على كيفية إدراج مخطط مساحي في مستند باستخدام Aspose.Words for .NET. أضف بيانات السلسلة واحفظ المستند مع الرسم البياني. |
-| [إدراج مخطط فقاعي](./insert-bubble-chart/) | تعرف على كيفية إدراج مخطط فقاعي في مستند باستخدام Aspose.Words for .NET. أضف بيانات متسلسلة بقيم X و Y وقيم حجم الفقاعة. |
-| [إدراج مخطط مبعثر](./insert-scatter-chart/) | تعرف على كيفية إدراج مخطط مبعثر في مستند باستخدام Aspose.Words for .NET. أضف بيانات السلاسل بإحداثيات X و Y. |
-| [حدد خصائص XYAxis](./define-xyaxis-properties/) | تعرف على كيفية تحديد خصائص المحور XY في مخطط باستخدام Aspose.Words for .NET. يتم عرض خيارات التخصيص للمحاور X و Y. |
-| [قيم التاريخ والوقت إلى المحور](./date-time-values-to-axis/) | تعرف على كيفية إضافة قيم التاريخ والوقت إلى محور الرسم البياني باستخدام Aspose.Words for .NET. |
-| [تنسيق الأرقام للمحور](./number-format-for-axis/) | تعرف على كيفية تعيين تنسيق الأرقام لمحور في مخطط باستخدام Aspose.Words for .NET. |
-| [حدود المحور](./bounds-of-axis/) | تعرف على كيفية تعيين حدود المحور في مخطط باستخدام Aspose.Words for .NET للتحكم في نطاق القيم المعروضة على المحور. |
-| [وحدة الفاصل الزمني بين التسميات على المحور](./interval-unit-between-labels-on-axis/) | تعرف على كيفية تعيين وحدة الفاصل الزمني بين التسميات على محور الرسم البياني باستخدام Aspose.Words for .NET. |
-| [إخفاء محور التخطيط](./hide-chart-axis/) | تعرف على كيفية إخفاء محور الرسم البياني في مستند باستخدام Aspose.Words for .NET. إخفاء المحور لعرض مخطط أوضح وأكثر تركيزًا. |
-| [ضع علامة على محاذاة تسمية متعددة الأسطر](./tick-multi-line-label-alignment/) | تعرف على كيفية محاذاة تسميات التجزئة متعددة الأسطر في محور الرسم البياني باستخدام Aspose.Words for .NET. |
-| [تسمية بيانات المخطط](./chart-data-label/) | تعرف على كيفية إضافة تسميات البيانات وتخصيصها في مخطط باستخدام Aspose.Words for .NET لتوفير معلومات إضافية حول نقاط البيانات. |
-| [الخيارات الافتراضية لتسميات البيانات](./default-options-for-data-labels/) | تعرف على كيفية تعيين الخيارات الافتراضية لتسميات البيانات في مخطط باستخدام Aspose.Words for .NET. |
-| [نقطة بيانات مخطط واحد](./single-chart-data-point/) | تعرف على كيفية تخصيص نقطة بيانات واحدة في مخطط باستخدام Aspose.Words for .NET. |
-| [سلسلة مخطط واحد](./single-chart-series/) | تعرف على كيفية تخصيص سلسلة مخططات مفردة في مخطط باستخدام Aspose.Words for .NET. |
+| [Formatieren Sie die Nummer des Datenetiketts](./format-number-of-data-label/) | Erfahren Sie, wie Sie die Anzahl der Datenbeschriftungen in einem Diagramm mit Aspose.Words für .NET formatieren. Passen Sie ganz einfach Zahlenformate für Datenbeschriftungen an. |
+| [Erstellen Sie ein Diagramm mithilfe einer Form](./create-chart-using-shape/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Diagramm mithilfe einer Form in einem Word-Dokument erstellen und anpassen. |
+| [Fügen Sie ein einfaches Säulendiagramm ein](./insert-simple-column-chart/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein einfaches Säulendiagramm in ein Dokument einfügen. |
+| [Säulendiagramm einfügen](./insert-column-chart/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Säulendiagramm in ein Dokument einfügen. |
+| [Flächendiagramm einfügen](./insert-area-chart/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Flächendiagramm in ein Dokument einfügen. Fügen Sie Seriendaten hinzu und speichern Sie das Dokument mit dem Diagramm. |
+| [Blasendiagramm einfügen](./insert-bubble-chart/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Blasendiagramm in ein Dokument einfügen. Fügen Sie Seriendaten mit X-, Y- und Blasengrößenwerten hinzu. |
+| [Streudiagramm einfügen](./insert-scatter-chart/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Streudiagramm in ein Dokument einfügen. Fügen Sie Seriendaten mit X- und Y-Koordinaten hinzu. |
+| [Definieren Sie XYAxis-Eigenschaften](./define-xyaxis-properties/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET XY-Achseneigenschaften in einem Diagramm definieren. Anpassungsmöglichkeiten für die X- und Y-Achse werden demonstriert. |
+| [Datum-Uhrzeit-Werte zur Achse](./date-time-values-to-axis/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Datums- und Uhrzeitwerte zur Achse eines Diagramms hinzufügen. |
+| [Zahlenformat für Achse](./number-format-for-axis/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET das Zahlenformat für eine Achse in einem Diagramm festlegen. |
+| [Grenzen der Achse](./bounds-of-axis/) | Erfahren Sie, wie Sie die Grenzen einer Achse in einem Diagramm mithilfe von Aspose.Words für .NET festlegen und den auf der Achse angezeigten Wertebereich steuern. |
+| [Intervalleinheit zwischen Beschriftungen auf der Achse](./interval-unit-between-labels-on-axis/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Intervalleinheit zwischen Beschriftungen auf der Achse eines Diagramms festlegen. |
+| [Diagrammachse ausblenden](./hide-chart-axis/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Diagrammachse in einem Dokument ausblenden. Blenden Sie die Achse aus, um eine übersichtlichere und fokussiertere Diagrammanzeige zu erzielen. |
+| [Aktivieren Sie die Option „Mehrzeilige Beschriftungsausrichtung“.](./tick-multi-line-label-alignment/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET mehrzeilige Markierungsbeschriftungen in einer Diagrammachse ausrichten. |
+| [Diagrammdatenbeschriftung](./chart-data-label/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Datenbeschriftungen in einem Diagramm hinzufügen und anpassen, um zusätzliche Informationen zu Datenpunkten bereitzustellen. |
+| [Standardoptionen für Datenbeschriftungen](./default-options-for-data-labels/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Standardoptionen für Datenbeschriftungen in einem Diagramm festlegen. |
+| [Einzelner Diagrammdatenpunkt](./single-chart-data-point/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET einen einzelnen Datenpunkt in einem Diagramm anpassen. |
+| [Einzelne Diagrammserie](./single-chart-series/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET einzelne Diagrammreihen in einem Diagramm anpassen. |

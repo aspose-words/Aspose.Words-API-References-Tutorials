@@ -1,44 +1,44 @@
 ---
-title: سلسلة مخطط واحد
-linktitle: سلسلة مخطط واحد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تخصيص سلسلة مخططات مفردة في مخطط باستخدام Aspose.Words for .NET.
+title: Série de graphiques uniques
+linktitle: Série de graphiques uniques
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à personnaliser une seule série de graphiques dans un graphique à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-charts/single-chart-series/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتخصيص سلسلة مخططات مفردة في مخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط والوصول إلى سلسلة معينة وتعديل خصائصها.
+Ce didacticiel explique comment utiliser Aspose.Words pour .NET pour personnaliser une seule série de graphiques dans un graphique. Le code source fourni montre comment créer un graphique, accéder à des séries spécifiques et modifier leurs propriétés.
 
-## الخطوة 1: قم بإعداد المشروع
+## Étape 1 : Configurer le projet
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Assurez-vous que vous disposez des prérequis suivants :
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger à partir du site Web officiel d'Aspose ou utiliser le gestionnaire de packages NuGet pour l'installer.
+- Un chemin d'accès au répertoire de documents où le document de sortie sera enregistré.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Étape 2 : Créer un nouveau document et insérer un graphique
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط خطي في المستند.
+ Ensuite, utilisez le`InsertChart` méthode de la`DocumentBuilder` pour insérer un graphique en courbes dans le document.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: الوصول إلى سلسلة المخططات وتخصيصها
+## Étape 3 : Accédez aux séries de graphiques et personnalisez-les
 
- لتعديل سلسلة مخططات مفردة ، تحتاج إلى الوصول إلى ملف`ChartSeries` كائنات الرسم البياني.
+ Pour modifier une seule série de graphiques, vous devez accéder au`ChartSeries` objets du graphique.
 
 ```csharp
 ChartSeries series0 = chart.Series[0];
@@ -58,20 +58,20 @@ series1.Marker.Symbol = MarkerSymbol.Star;
 series1.Marker.Size = 10;
 ```
 
-## الخطوة 4: احفظ المستند
+## Étape 4 : Enregistrez le document
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Enfin, enregistrez le document dans le répertoire spécifié à l'aide de la`Save` méthode de la`Document` objet.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 ```
 
-هذا يكمل تنفيذ تخصيص سلسلة مخططات واحدة باستخدام Aspose.Words for .NET.
+Ceci termine l'implémentation de la personnalisation d'une seule série de graphiques à l'aide d'Aspose.Words pour .NET.
 
-### مثال على شفرة المصدر لسلسلة مخطط واحد باستخدام Aspose.Words for .NET 
+### Exemple de code source pour une série de graphiques uniques utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -82,10 +82,10 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 	ChartSeries series1 = chart.Series[1];
 	series0.Name = "Chart Series Name 1";
 	series1.Name = "Chart Series Name 2";
-	// يمكنك أيضًا تحديد ما إذا كان الخط الذي يربط النقاط على الرسم البياني سيتم تنعيمه باستخدام خطوط Catmull-Rom.
+	// Vous pouvez également spécifier si la ligne reliant les points sur le graphique doit être lissée à l'aide de splines Catmull-Rom.
 	series0.Smooth = true;
 	series1.Smooth = true;
-	// يحدد ما إذا كان العنصر الأصلي سيعكس ألوانه افتراضيًا إذا كانت القيمة سالبة.
+	// Spécifie si par défaut l'élément parent doit inverser ses couleurs si la valeur est négative.
 	series0.InvertIfNegative = true;
 	series0.Marker.Symbol = MarkerSymbol.Circle;
 	series0.Marker.Size = 15;

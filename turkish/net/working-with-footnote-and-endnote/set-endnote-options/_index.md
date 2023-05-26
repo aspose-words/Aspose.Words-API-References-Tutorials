@@ -1,46 +1,46 @@
 ---
-title: قم بتعيين خيارات التعليق الختامي
-linktitle: قم بتعيين خيارات التعليق الختامي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين خيارات التعليقات الختامية في مستندات Word باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Son Not Seçeneklerini Ayarla
+linktitle: Son Not Seçeneklerini Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerinde son not seçeneklerini nasıl ayarlayacağınızı öğrenin. Örnek kaynak koduyla adım adım öğretici.
 type: docs
 weight: 10
 url: /tr/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتعيين خيارات التعليقات الختامية في مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Bu adım adım öğreticide, bir Word belgesinde son not seçeneklerini ayarlamak için Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
 
-## الخطوة 1: تهيئة كائن المستند
+## 1. Adım: Belge Nesnesini Başlatma
 
- أولاً ، قم بتهيئة ملف`Document` من خلال توفير المسار إلى المستند المصدر:
+ İlk olarak,`Document` kaynak belgenizin yolunu sağlayarak itiraz edin:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## الخطوة 2: تهيئة كائن DocumentBuilder
+## 2. Adım: DocumentBuilder Nesnesini Başlatma
 
- بعد ذلك ، قم بتهيئة ملف`DocumentBuilder` كائن لإجراء عمليات على المستند:
+ Ardından,`DocumentBuilder` belge üzerinde işlem gerçekleştirmek için nesne:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إضافة نص وتعليق ختامي
+## 3. Adım: Metin ve Son Not Ekleme
 
- استخدم ال`Write` طريقة`DocumentBuilder` كائن لإضافة نص إلى المستند ، و`InsertFootnote` طريقة لإدراج تعليق ختامي:
+ Kullan`Write` yöntemi`DocumentBuilder` belgeye metin eklemek için nesne ve`InsertFootnote` son not ekleme yöntemi:
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## الخطوة 4: تعيين خيارات التعليقات الختامية
+## 4. Adım: Son Not Seçeneklerini Ayarlama
 
- الوصول إلى`EndnoteOptions` خاصية المستند لتعديل خيارات التعليقات الختامية. في هذا المثال ، قمنا بتعيين قاعدة إعادة التشغيل لإعادة التشغيل في كل صفحة والموضع إلى نهاية القسم:
+ Erişmek`EndnoteOptions` Son not seçeneklerini değiştirmek için belgenin özelliği. Bu örnekte, yeniden başlatma kuralını her sayfada yeniden başlayacak ve konumu bölümün sonuna ayarlayacağız:
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -48,17 +48,17 @@ option.RestartRule = FootnoteNumberingRule.RestartPage;
 option.Position = EndnotePosition.EndOfSection;
 ```
 
-## الخطوة 5: حفظ المستند
+## 5. Adım: Belgeyi Kaydetme
 
-أخيرًا ، احفظ المستند المعدل:
+Son olarak, değiştirilen belgeyi kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تعيين خيارات التعليقات الختامية في مستند Word باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET kullanarak bir Word belgesinde son not seçeneklerini başarıyla ayarladınız.
 
-### مثال على شفرة المصدر لتعيين خيارات التعليق الختامي باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Set Endnote Options için örnek kaynak kodu
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";	
@@ -75,4 +75,4 @@ option.Position = EndnotePosition.EndOfSection;
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimlerinize göre değiştirin.

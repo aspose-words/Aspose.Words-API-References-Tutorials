@@ -1,48 +1,48 @@
 ---
-title: فك الإشارات المرجعية في الصف
-linktitle: فك الإشارات المرجعية في الصف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية فك تشابك الإشارات المرجعية للصفوف المتداخلة لإزالة صفوف معينة دون التأثير على الإشارات المرجعية الأخرى.
+title: Untangle radbokmärken
+linktitle: Untangle radbokmärken
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du reder ut kapslade radbokmärken för att ta bort specifika rader utan att påverka andra bokmärken.
 type: docs
 weight: 10
 url: /sv/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Untangle Row Bookmarks في Aspose.Words for .NET library. تتيح هذه الوظيفة إمكانية وضع نهايات الإشارات المرجعية للسطر في نفس السطر مثل بدايات الإشارات المرجعية.
+den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder Untangle Row Bookmarks-funktionen i Aspose.Words för .NET-biblioteket. Denna funktion gör det möjligt att sätta slutet av bokmärken på rader på samma rad som början på bokmärken.
 
-## المتطلبات الأساسية
+## Förutsättningar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundläggande kunskaper i C#-språket.
+- .NET-utvecklingsmiljö med Aspose.Words-biblioteket installerat.
 
-## الخطوة 1: تحميل المستند
+## Steg 1: Ladda dokumentet
 
- نحن نستخدم ال`Document` فئة لتحميل المستند الحالي من ملف:
+ Vi använder`Document` klass för att ladda det befintliga dokumentet från en fil:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## الخطوة 2: كشف خط الإشارات المرجعية
+## Steg 2: Rensa upp linjebokmärken
 
- نحن نستخدم ال`Untangle` وظيفة لفك تشابك الإشارات المرجعية من الصفوف. تؤدي هذه الوظيفة المهمة المخصصة لوضع نهايات الأسطر المرجعية في نفس السطر الذي تبدأ فيه الإشارة المرجعية:
+ Vi använder`Untangle` funktion för att reda ut bokmärken från rader. Den här funktionen utför den anpassade uppgiften att placera bokmärkesändarna på rader på samma rad som bokmärket börjar:
 
 ```csharp
 Untangle(doc);
 ```
 
-## الخطوة 3: حذف سطر بإشارة مرجعية
+## Steg 3: Ta bort rad för bokmärke
 
- نحن نستخدم ال`DeleteRowByBookmark` وظيفة لحذف صف معين من خلال الإشارة المرجعية الخاصة به:
+ Vi använder`DeleteRowByBookmark` funktion för att ta bort en specifik rad efter dess bokmärke:
 
 ```csharp
 DeleteRowByBookmark(doc, "ROW2");
 ```
 
-## الخطوة 4: التحقق من سلامة الإشارات المرجعية الأخرى
+## Steg 4: Kontrollera integriteten för andra bokmärken
 
-نتحقق من عدم تلف الإشارات المرجعية الأخرى عن طريق التحقق مما إذا كانت نهاية الإشارة المرجعية لا تزال موجودة:
+Vi verifierar att de andra bokmärkena inte har skadats genom att kontrollera om slutet av bokmärket fortfarande finns kvar:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -51,24 +51,24 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### مثال على شفرة المصدر لـ Untangle Row Bookmarks باستخدام Aspose.Words for .NET**
+### Exempel på källkod för Untangle Row Bookmarks med Aspose.Words för .NET**
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لفك تشابك الإشارات المرجعية من الأسطر باستخدام Aspose.Words for .NET:
+Här är den fullständiga källkoden för att reda ut bokmärken från rader med Aspose.Words för .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	//يؤدي ذلك إلى تنفيذ المهمة المخصصة لوضع إشارة مرجعية للصف في نفس الصف مع بدء الإشارة المرجعية.
+	//Detta utför den anpassade uppgiften att sätta radbokmärkets ändar i samma rad som bokmärket börjar.
 	Untangle(doc);
 
-	// يمكننا الآن حذف الصفوف بسهولة بواسطة إشارة مرجعية دون الإضرار بأي إشارات مرجعية للصفوف الأخرى.
+	// Nu kan vi enkelt ta bort rader efter ett bokmärke utan att skada någon annan rads bokmärken.
 	DeleteRowByBookmark(doc, "ROW2");
 
-	// هذا فقط للتحقق من عدم تلف الإشارة المرجعية الأخرى.
+	// Detta är bara för att kontrollera att det andra bokmärket inte var skadat.
 	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
 		throw new Exception("Wrong, the end of the bookmark was deleted.");
 
@@ -76,6 +76,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 
 ```
 
-## خاتمة
+## Slutsats
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة Untangle Row Bookmarks في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لفك تشابك الإشارات المرجعية للصفوف وحذف صف معين دون الإضرار بالإشارات المرجعية الأخرى.
+I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder Untangle Row Bookmarks-funktionen i Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att reda ut radbokmärken och ta bort en specifik rad utan att skada andra bokmärken.

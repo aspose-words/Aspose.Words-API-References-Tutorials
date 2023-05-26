@@ -1,40 +1,40 @@
 ---
-title: العمل مع الحقول
-linktitle: العمل مع الحقول
-second_title: Aspose.Words لمراجع .NET API
-description: توضح البرامج التعليمية كيفية إدراج الحقل ، وتحديث الثقافة المحفوظة ، واستبدال الارتباط التشعبي للحقل ، وإزالة الحقل ، وإدراج الحقول المتداخلة في مستند Word باستخدام Aspose.Words for .NET
+title: 使用字段
+linktitle: 使用字段
+second_title: Aspose.Words for .NET API 参考
+description: 教程展示了如何使用 Aspose.Words for .NET 插入字段、更新字段文化、替换字段超链接、删除字段以及将嵌套字段插入到 Word 文档中
 type: docs
 weight: 140
 url: /zh/net/working-with-fields/
 ---
-هذا مورد شامل لتعلم كيفية العمل مع الحقول في مستندات Word باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية تفسيرات خطوة بخطوة ، وشفرة مصدر مفصلة ، وأمثلة عملية للتعامل الفعال مع الحقول وإدارتها مثل رموز الحقول والتحديثات وعروض النتائج وشروط IF ودمج البريد والمزيد. هذا المورد ضروري للمطورين الراغبين في أتمتة إنشاء مستندات Word ومعالجتها باستخدام Aspose.Words for .NET.
+这是学习如何使用 Aspose.Words for .NET 库处理 Word 文档中的字段的综合资源。教程提供了逐步解释、详细源代码和实际示例，以有效地操作和管理字段，例如字段代码、更新、结果显示、IF 条件、邮件合并等等。该资源对于希望使用 Aspose.Words for .NET 自动生成和操作 Word 文档的开发人员来说是必不可少的。
 
- ## دروس
-| عنوان | وصف |
+ ## 教程
+| 标题 | 描述 |
 | --- | --- |
-| [كود الحقل](./field-code/) | دليل خطوة بخطوة للحصول على رمز الحقل والنتيجة الميدانية في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. |
-| [تغيير مصدر ثقافة تحديث الحقل](./change-field-update-culture-source/) | تغيير ثقافة تحديث الحقل المصدر: دليل خطوة بخطوة لتعديل مصدر الثقافة في Aspose.Words for .NET.|
-| [حدد الإعدادات المحلية على مستوى الحقل](./specify-locale-at-field-level/) | تعرف على كيفية تحديد الترجمة على مستوى الحقل في مستندات Word باستخدام Aspose.Words for .NET. |
-| [استبدل الارتباطات التشعبية](./replace-hyperlinks/) | استبدل الارتباطات التشعبية في مستندات Word باستخدام Aspose.Words for .NET. إرشادات خطوة بخطوة لاستبدال الارتباطات التشعبية. |
-| [إعادة تسمية حقول الدمج](./rename-merge-fields/) | في هذا البرنامج التعليمي ، ستتعلم كيفية إعادة تسمية حقول الدمج في مستند باستخدام Aspose.Words for .NET. |
-| [إزالة الحقل](./remove-field/) | في هذا الدليل ، ستتعلم كيفية حذف حقل معين في مستند باستخدام Aspose.Words for .NET. |
-| [أدخل حقل TOA بدون Document Builder](./insert-toafield-without-document-builder/) | دليل خطوة بخطوة لإدخال حقل TOA بدون Document Builder باستخدام Aspose.Words for .NET. |
-| [أدخل الحقول المتداخلة](./insert-nested-fields/) | تعرف على كيفية إدراج الحقول المتداخلة بسهولة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [أدخل حقل الدمج باستخدام DOM](./insert-merge-field-using-dom/) | تعرف على كيفية إدراج حقول دمج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM](./insert-mail-merge-address-block-field-using-dom/) | تعرف على كيفية إدراج حقل كتلة عنوان دمج المراسلات في مستندات Word باستخدام Aspose.Words for .NET. |
-| [قم بإدراج FieldIncludeText بدون Document Builder](./insert-field-include-text-without-document-builder/) | تعرف على كيفية إدراج حقل FieldIncludeText في مستندات Word باستخدام Aspose.Words for .NET. |
-| [إدراج حقل بلا](./insert-field-none/) | تعرف على كيفية برنامج Insérez un Champ AUCUN dans vos documents Word avec Aspose.Words pour .NET. |
-| [أدخل الحقل](./insert-field/) | تعرف على كيفية إدراج حقل في مستندات Word باستخدام Aspose.Words for .NET. إضفاء الطابع الشخصي على المستندات الخاصة بك مع الحقول الديناميكية. |
-| [أدخل الحقل باستخدام Field Builder](./insert-field-using-field-builder/) | تعرف على كيفية إدراج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [أدخل حقل المؤلف](./insert-author-field/) | تعرف على كيفية إدراج حقل AUTHOR في مستندات Word باستخدام Aspose.Words for .NET. حدد اسم المؤلف لتخصيص مستنداتك. |
-| [أدخل ASKField With Out Document Builder](./insert-askfield-with-out-document-builder/) | تعرف على كيفية إدراج حقل ASK في مستندات Word باستخدام Aspose.Words for .NET. |
-| [أدخل الحقل المتقدم بدون Document Builder](./insert-advance-field-with-out-document-builder/) | تعرف على كيفية إدراج حقل متقدم في مستندات Word باستخدام Aspose.Words for .NET. |
-| [احصل على أسماء حقول دمج المراسلات](./get-mail-merge-field-names/) | تعرف على كيفية الحصول على أسماء حقول دمج البريد في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. |
-| [حذف الحقول](./delete-fields/) | دليل خطوة بخطوة لحذف حقول الدمج في مستندات Word باستخدام Aspose.Words for .NET |
-| [ثقافة التحديث الميداني](./field-update-culture/) | تعرف على كيفية تحديث الثقافة الميدانية في مستندات Word باستخدام Aspose.Words for .NET. |
-| [نتائج العرض الميداني](./field-display-results/) | دليل خطوة بخطوة لعرض النتائج الميدانية في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. |
-| [تقييم حالة IF](./evaluate-ifcondition/) | دليل خطوة بخطوة لتقييم حالة IF في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تحويل الحقول في الفقرة](./convert-fields-in-paragraph/) | تحويل حقول IF إلى نص عادي في فقرة باستخدام Aspose.Words for .NET. |
-| [تحويل الحقول في المستند](./convert-fields-in-document/) | دليل تفصيلي خطوة بخطوة لتحويل حقول المستند إلى نص باستخدام Aspose.Words for .NET. |
-| [تحويل الحقول في الجسم](./convert-fields-in-body/) | تعرف على كيفية استخدام Aspose.Words for .NET لتحويل حقول الصفحة إلى نص في نص مستند Word. |
-| [تغيير اللغة](./change-locale/) | تعرف على كيفية تغيير الإعدادات المحلية لتنسيق التاريخ والأرقام في مستندات Word باستخدام Aspose.Words for .NET. |
+| [字段代码](./field-code/) | 使用 Aspose.Words for .NET 获取 Word 文档中的字段代码和字段结果的分步指南。 |
+| [更改字段更新文化来源](./change-field-update-culture-source/) | 更改字段更新文化来源：在 Aspose.Words for .NET 中修改文化源的分步指南。|
+| [在字段级别指定语言环境](./specify-locale-at-field-level/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中指定字段级本地化。 |
+| [替换超链接](./replace-hyperlinks/) | 使用 Aspose.Words for .NET 替换 Word 文档中的超链接。替换超链接的分步说明。 |
+| [重命名合并字段](./rename-merge-fields/) | 在本教程中，您将学习如何使用 Aspose.Words for .NET 重命名文档中的合并字段。 |
+| [删除字段](./remove-field/) | 在本指南中，您将学习如何使用 Aspose.Words for .NET 删除文档中的特定字段。 |
+| [在没有文档生成器的情况下插入 TOA 字段](./insert-toafield-without-document-builder/) | 使用 Aspose.Words for .NET 的分步指南，无需文档生成器即可插入 TOA 字段。 |
+| [插入嵌套字段](./insert-nested-fields/) | 了解如何使用 Aspose.Words for .NET 轻松地将嵌套字段插入到您的 Word 文档中。 |
+| [使用 DOM 插入合并字段](./insert-merge-field-using-dom/) | 了解如何使用 Aspose.Words for .NET 将自定义字段合并字段插入到您的 Word 文档中。 |
+| [使用 DOM 插入邮件合并地址块字段](./insert-mail-merge-address-block-field-using-dom/) | 了解如何使用 Aspose.Words for .NET 将邮件合并地址块字段插入到您的 Word 文档中。 |
+| [在没有文档生成器的情况下插入 FieldIncludeText](./insert-field-include-text-without-document-builder/) | 了解如何使用 Aspose.Words for .NET 在您的 Word 文档中插入 FieldIncludeText 字段。 |
+| [插入字段无](./insert-field-none/) | 了解如何在 Word avec Aspose.Words pour .NET 中插入 un champ AUCUN dans vos 文档。 |
+| [插入字段](./insert-field/) | 了解如何使用 Aspose.Words for .NET 将字段插入到您的 Word 文档中。使用动态字段个性化您的文档。 |
+| [使用字段生成器插入字段](./insert-field-using-field-builder/) | 了解如何使用 Aspose.Words for .NET 将自定义字段插入到您的 Word 文档中。 |
+| [插入作者字段](./insert-author-field/) | 了解如何使用 Aspose.Words for .NET 在您的 Word 文档中插入作者字段。指定作者姓名以个性化您的文档。 |
+| [使用 Out Document Builder 插入 ASKField](./insert-askfield-with-out-document-builder/) | 了解如何使用 Aspose.Words for .NET 将 ASK 字段插入到您的 Word 文档中。 |
+| [在没有文档生成器的情况下插入高级字段](./insert-advance-field-with-out-document-builder/) | 了解如何使用 Aspose.Words for .NET 将高级字段插入到您的 Word 文档中。 |
+| [获取邮件合并字段名称](./get-mail-merge-field-names/) | 了解如何使用 Aspose.Words for .NET 在您的 Word 文档中获取邮件合并字段名称。 |
+| [删除字段](./delete-fields/) | 使用 Aspose.Words for .NET 删除 Word 文档中合并字段的分步指南 |
+| [现场更新文化](./field-update-culture/) | 了解如何使用 Aspose.Words for .NET 更新 Word 文档中的字段区域性。 |
+| [现场显示结果](./field-display-results/) | 使用 Aspose.Words for .NET 在 Word 文档中显示字段结果的分步指南。 |
+| [评估 IF 条件](./evaluate-ifcondition/) | 使用 Aspose.Words for .NET 评估 Word 文档中的 IF 条件的分步指南。 |
+| [转换段落中的字段](./convert-fields-in-paragraph/) | 使用 Aspose.Words for .NET 将 IF 字段转换为段落中的纯文本。 |
+| [转换文档中的字段](./convert-fields-in-document/) | 使用 Aspose.Words for .NET 将文档字段转换为文本的分步指南。 |
+| [转换正文中的字段](./convert-fields-in-body/) | 了解如何使用 Aspose.Words for .NET 将页面字段转换为 Word 文档正文中的文本。 |
+| [更改语言环境](./change-locale/) | 了解如何使用 Aspose.Words for .NET 更改 Word 文档中日期和数字格式的区域设置。 |

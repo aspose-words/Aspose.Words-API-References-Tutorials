@@ -1,30 +1,30 @@
 ---
-title: العمل مع القسم
-linktitle: العمل مع القسم
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على قسم إضافة ، وحذف قسم ، وحذف جميع الأقسام ، وإلحاق محتوى القسم ، وقسم استنساخ ، وقسم نسخ ، وحذف محتوى تذييل الصفحة ، وحذف محتوى القسم ، وتعديل إعداد الصفحة في جميع الأقسام والأقسام ، والوصول إلى الفهرس باستخدام Aspose.Words for .NET.
+title: Trabajando con Sección
+linktitle: Trabajando con Sección
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales contienen agregar sección, eliminar sección, eliminar todas las secciones, agregar contenido de sección, clonar sección, copiar sección, eliminar contenido de pie de página de encabezado, eliminar contenido de sección, modificar la configuración de la página en todas las secciones y acceder a las secciones por índice usando Aspose.Words para .NET.
 type: docs
 weight: 1220
 url: /es/net/working-with-section/
 ---
-يوفر العمل مع الأقسام مورداً قيماً للمطورين الراغبين في إتقان العمل مع الأقسام في مستندات Word. توفر هذه البرامج التعليمية إرشادات خطوة بخطوة ، ونموذج التعليمات البرمجية ، وشروحات خطوة بخطوة لمساعدتك على فهم الميزات المتعلقة بالقسم واستخدامها بشكل فعال في Aspose.Words.
+Trabajar con secciones ofrece un recurso valioso para los desarrolladores que desean dominar el trabajo con secciones en documentos de Word. Estos tutoriales brindan instrucciones paso a paso, código de muestra y explicaciones paso a paso para ayudarlo a comprender y usar de manera efectiva las funciones relacionadas con la sección en Aspose.Words.
 
-تغطي البرامج التعليمية أساسيات العمل مع الأقسام ، بما في ذلك إنشاء أقسام جديدة وإضافة محتوى وتغيير إعدادات التخطيط والمزيد. ستتعلم كيفية التعامل مع الأقسام لتخصيص بنية المستند وإنشاء تخطيطات احترافية.
+Los tutoriales cubren los aspectos básicos del trabajo con secciones, incluida la creación de nuevas secciones, la adición de contenido, el cambio de la configuración de diseño y más. Aprenderá a manipular secciones para personalizar la estructura de su documento y crear diseños profesionales.
 
-تركز البرامج التعليمية أيضًا على حذف وتعديل الأقسام الموجودة. ستتعلم كيفية حذف أقسام معينة ، وإعادة ترتيب الأقسام ، وتغيير إعدادات التخطيط ، وتنفيذ عمليات متقدمة أخرى لتخصيص مستندات Word الخاصة بك وفقًا لاحتياجاتك الخاصة.
+Los tutoriales también se enfocan en eliminar y modificar secciones existentes. Aprenderá a eliminar secciones específicas, reorganizar secciones, cambiar la configuración de diseño y realizar otras operaciones avanzadas para adaptar sus documentos de Word a sus necesidades específicas.
 
-باتباع هذه البرامج التعليمية ، ستتمكن من إدارة الأقسام في مستندات Word بسهولة باستخدام Aspose.Words for .NET. سواء كنت ترغب في إنشاء مستندات جديدة أو تعديل مستندات موجودة أو تخصيص أقسام ، فإن هذه البرامج التعليمية ستزودك بالمعرفة والمهارات اللازمة لإنجاز هذه المهام بنجاح.
+Al seguir estos tutoriales, podrá administrar secciones en sus documentos de Word con facilidad utilizando Aspose.Words para .NET. Ya sea que desee crear nuevos documentos, modificar documentos existentes o personalizar secciones, estos tutoriales le proporcionarán el conocimiento y las habilidades para realizar estas tareas con éxito.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [إضافة قسم](./add-section/) | في هذا البرنامج التعليمي ، تعرف على كيفية إضافة قسم إلى مستند Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة لهيكلة المستند الخاص بك. |
-| [حذف القسم](./delete-section/) | في هذا البرنامج التعليمي ، تعرف على كيفية إزالة قسم معين من مستند Word باستخدام Aspose.Words for .NET. |
-| [حذف كافة الأقسام](./delete-all-sections/) | في هذا البرنامج التعليمي ، تعرف على كيفية إزالة جميع الأقسام من مستند Word باستخدام Aspose.Words for .NET. |
-| [إلحاق محتوى القسم](./append-section-content/) | في هذا البرنامج التعليمي ، تعرف على كيفية إضافة محتوى إلى أقسام معينة من مستند Word باستخدام Aspose.Words for .NET.  |
-| [قسم الاستنساخ](./clone-section/) | في هذا البرنامج التعليمي ، تعرف على كيفية استنساخ قسم في مستند Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [قسم النسخ](./copy-section/) | في هذا البرنامج التعليمي ، تعرف على كيفية نسخ قسم من مستند Word إلى مستند آخر باستخدام Aspose.Words for .NET. |
-| [حذف محتوى رأس التذييل](./delete-header-footer-content/) | في هذا البرنامج التعليمي ، تعرف على كيفية إزالة محتوى الرأس والتذييل من مستند Word باستخدام Aspose.Words for .NET.  |
-| [حذف محتوى القسم](./delete-section-content/) | في هذا البرنامج التعليمي ، تعرف على كيفية حذف المحتوى من قسم معين من مستند Word باستخدام Aspose.Words for .NET. |
-| [تعديل إعداد الصفحة في جميع الأقسام](./modify-page-setup-in-all-sections/) | في هذا البرنامج التعليمي ، تعرف على كيفية تعديل إعداد الصفحة في جميع أقسام مستند Word باستخدام Aspose.Words for .NET. |
-| [الوصول إلى الأقسام حسب الفهرس](./sections-access-by-index/) | في هذا البرنامج التعليمي ، تعرف على كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس وتغيير إعداداتها باستخدام Aspose.Words for .NET. |
+| [Agregar sección](./add-section/) | En este tutorial, aprenda a agregar una sección a un documento de Word usando Aspose.Words para .NET. Guía paso a paso para estructurar su documento. |
+| [Eliminar sección](./delete-section/) | En este tutorial, aprenda a eliminar una sección específica de un documento de Word con Aspose.Words para .NET. |
+| [Eliminar todas las secciones](./delete-all-sections/) | En este tutorial, aprenda a eliminar todas las secciones de un documento de Word usando Aspose.Words para .NET. |
+| [Agregar contenido de la sección](./append-section-content/) | En este tutorial, aprenda a agregar contenido a secciones específicas de un documento de Word usando Aspose.Words para .NET.  |
+| [Sección de clonación](./clone-section/) | En este tutorial, aprenda a clonar una sección en un documento de Word usando Aspose.Words para .NET. Guía paso por paso. |
+| [Copiar sección](./copy-section/) | En este tutorial, aprenda a copiar una sección de un documento de Word a otro documento usando Aspose.Words para .NET. |
+| [Eliminar contenido de pie de página de encabezado](./delete-header-footer-content/) | En este tutorial, aprenda a eliminar contenido de encabezado y pie de página de un documento de Word con Aspose.Words para .NET.  |
+| [Eliminar contenido de la sección](./delete-section-content/) | En este tutorial, aprenda a eliminar contenido de una sección específica de un documento de Word con Aspose.Words para .NET. |
+| [Modificar configuración de página en todas las secciones](./modify-page-setup-in-all-sections/) | En este tutorial, aprenda a modificar la configuración de la página en todas las secciones de un documento de Word con Aspose.Words para .NET. |
+| [Acceso a secciones por índice](./sections-access-by-index/) | En este tutorial, aprenda cómo acceder a las secciones de un documento de Word por índice y cambiar su configuración con Aspose.Words para .NET. |

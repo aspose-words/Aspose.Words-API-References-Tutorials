@@ -1,55 +1,55 @@
 ---
-title: صفحة بالصفحة
-linktitle: صفحة بالصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # لميزة Aspose.Words صفحة بصفحة لـ .NET
+title: 一页一页
+linktitle: 一页一页
+second_title: Aspose.Words for .NET API 参考
+description: 分步指南解释 Aspose.Words .NET 逐页功能的 C# 源代码
 type: docs
 weight: 10
 url: /zh/net/split-document/page-by-page/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تقسيم مستند Word إلى صفحات فردية باستخدام ميزة صفحة بصفحة في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر والحصول على مستندات منفصلة لكل صفحة.
+在本教程中，我们将向您介绍如何使用 Aspose.Words for .NET 的逐页功能将 Word 文档拆分为单独的页面。按照以下步骤了解源代码并获取每个页面的单独文档。
 
-## الخطوة 1: تحميل المستند
+## 第 1 步：装入文档
 
-للبدء ، حدد الدليل للمستند الخاص بك وقم بتحميل المستند في كائن المستند. إليك الطريقة:
+首先，指定文档的目录并将文档加载到 Document 对象中。就是这样：
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```
 
-## الخطوة 2: قسّم المستند على الصفحة
+## 第 2 步：按页划分文档
 
-سنقوم الآن بالتكرار خلال كل صفحة من المستند ونقسم المستند إلى صفحات فردية. إليك الطريقة:
+现在我们将遍历文档的每一页并将文档分成单独的页面。就是这样：
 
 ```csharp
 int pageCount = doc. PageCount;
 
 for (int page = 0; page < pageCount; page++)
 {
-// احفظ كل صفحة كمستند منفصل.
+//将每一页另存为单独的文档。
 Document extractedPage = doc.ExtractPages(page, 1);
 extractedPage.Save(dataDir + $"SplitDocument.PageParPage_{page + 1}.docx");
 }
 ```
 
-## الخطوة 3: دمج المستندات
+## 第 3 步：合并文档
 
-بمجرد أن يكون لديك مستندات منفصلة لكل صفحة ، يمكنك دمجها إذا لزم الأمر. إليك الطريقة:
+为每个页面创建单独的文档后，您可以根据需要合并它们。就是这样：
 
 ```csharp
 MergeDocuments();
 ```
 
-### مثال على شفرة المصدر لـ Page By Page باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的逐页示例源代码
 
-فيما يلي شفرة المصدر الكاملة لميزة صفحة بصفحة في Aspose.Words for .NET:
+以下是 Aspose.Words for .NET 的逐页功能的完整源代码：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Big document.docx");
 
@@ -57,7 +57,7 @@ MergeDocuments();
 
 	for (int page = 0; page < pageCount; page++)
 	{
-		// احفظ كل صفحة كمستند منفصل.
+		//将每一页另存为单独的文档。
 		Document extractedPage = doc.ExtractPages(page, 1);
 		extractedPage.Save(dataDir + $"SplitDocument.PageByPage_{page + 1}.docx");
 	}
@@ -67,5 +67,5 @@ MergeDocuments();
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تقسيم مستند Word إلى صفحات فردية باستخدام Aspose.Words for .NET. يمكنك أيضًا دمج مستندات منفصلة إذا لزم الأمر.
+使用此代码，您将能够使用 Aspose.Words for .NET 将 Word 文档拆分为单独的页面。如果需要，您还可以合并单独的文档。
 

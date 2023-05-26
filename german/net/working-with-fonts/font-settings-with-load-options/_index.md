@@ -1,48 +1,48 @@
 ---
-title: إعدادات الخط مع خيارات التحميل
-linktitle: إعدادات الخط مع خيارات التحميل
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تحميل مستند Word بخيارات تحميل مخصصة وإعدادات الخط المقابلة.
+title: Schriftarteinstellungen mit Ladeoptionen
+linktitle: Schriftarteinstellungen mit Ladeoptionen
+second_title: Aspose.Words für .NET API-Referenz
+description: In diesem Tutorial erfahren Sie, wie Sie ein Word-Dokument mit benutzerdefinierten Ladeoptionen und entsprechenden Schriftarteinstellungen laden.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/font-settings-with-load-options/
 ---
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية استخدام خيارات التحميل مع إعدادات الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تتيح لك خيارات التحميل تحديد إعدادات إضافية عند تحميل مستند ، بما في ذلك إعدادات الخط. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In diesem Tutorial zeigen wir Ihnen, wie Sie Ladeoptionen mit Schriftarteinstellungen in einem Word-Dokument mithilfe der Aspose.Words-Bibliothek für .NET verwenden. Mit den Ladeoptionen können Sie beim Laden eines Dokuments zusätzliche Einstellungen festlegen, einschließlich Schriftarteinstellungen. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Voraussetzungen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
+- Grundkenntnisse der Programmiersprache C#
+- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+ Zuerst müssen Sie den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments festlegen. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تكوين خيارات التحميل مع إعدادات الخط
- بعد ذلك ، سننشئ مثيلًا لـ`LoadOptions` وحدد إعدادات الخط عن طريق إنشاء مثيل جديد من`FontSettings` وتعيينه إلى`loadOptions.FontSettings`.
+## Schritt 2: Konfigurieren Sie die Ladeoptionen mit den Schriftarteinstellungen
+ Als Nächstes erstellen wir eine Instanz von`LoadOptions` und geben Sie Schriftarteinstellungen an, indem Sie eine neue Instanz von erstellen`FontSettings` und es zuordnen`loadOptions.FontSettings`.
 
 ```csharp
-// تكوين خيارات التحميل مع إعدادات الخط
+// Konfigurieren Sie Ladeoptionen mit Schriftarteinstellungen
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.FontSettings = new FontSettings();
 ```
 
-## الخطوة 3: قم بتحميل المستند بخيارات التحميل
- الآن سنقوم بتحميل المستند باستخدام`LoadOptions` وحدد خيارات التحميل التي قمنا بتكوينها.
+## Schritt 3: Laden Sie das Dokument mit den Ladeoptionen
+ Jetzt laden wir das Dokument mit`LoadOptions` und geben Sie die von uns konfigurierten Ladeoptionen an.
 
 ```csharp
-// قم بتحميل المستند بخيارات التحميل
+// Laden Sie das Dokument mit den Ladeoptionen
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
-### نموذج التعليمات البرمجية المصدر لإعدادات الخط مع خيارات التحميل باستخدام Aspose.Words for .NET 
+### Beispielquellcode für Schriftarteinstellungen mit Ladeoptionen unter Verwendung von Aspose.Words für .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 LoadOptions loadOptions = new LoadOptions();
@@ -50,5 +50,5 @@ loadOptions.FontSettings = new FontSettings();
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية استخدام خيارات التحميل مع إعدادات الخط في مستند Word باستخدام Aspose.Words for .NET. تتيح لك خيارات التحميل تخصيص تحميل المستند عن طريق تحديد إعدادات إضافية ، بما في ذلك إعدادات الخط. لا تتردد في استخدام هذه الميزة لتخصيص تحميل المستندات وفقًا لاحتياجاتك الخاصة.
+## Abschluss
+In diesem Tutorial haben wir gesehen, wie man Ladeoptionen mit Schriftarteinstellungen in einem Word-Dokument mit Aspose.Words für .NET verwendet. Mit den Ladeoptionen können Sie das Laden von Dokumenten anpassen, indem Sie zusätzliche Einstellungen festlegen, einschließlich Schriftarteinstellungen. Nutzen Sie diese Funktion gerne, um das Laden von Dokumenten an Ihre spezifischen Bedürfnisse anzupassen.

@@ -1,26 +1,26 @@
 ---
-title: التحويلات الأساسية
-linktitle: التحويلات الأساسية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على doc إلى docx ، و docx إلى rtf ، و docx إلى pdf ، و docx إلى بايت ، و docx إلى epub ، و docx إلى mhtml وإرسال بريد إلكتروني ، و docx إلى markdown ، و docx إلى txt ، و txt إلى docx ،
+title: Conversions de base
+linktitle: Conversions de base
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent doc à docx, docx à rtf, docx à pdf, docx à octet, docx à epub, docx à mhtml et envoi d'e-mail, docx à démarquage, docx à txt, txt à docx,
 type: docs
 weight: 1600
 url: /fr/net/basic-conversions/
 ---
 
-ترشدك التحويلات الأساسية خلال تحويلات المستندات الأساسية باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية شروحات خطوة بخطوة ، وكود مصدر تفصيلي وأمثلة عملية لتحويل مستندات Word إلى تنسيقات مختلفة مثل PDF و HTML و EPUB والصور والمزيد. ستتعلم أيضًا كيفية تحديد خيارات التحويل وإدارة الخطوط والصور والتخطيطات. هذا المورد ضروري للمطورين الذين يرغبون في أتمتة تحويلات المستندات باستخدام Aspose.Words for .NET ، مما يوفر مرونة وتحكمًا كاملين في عملية التحويل.
+Conversions de base vous guide à travers les conversions de documents de base à l'aide de la bibliothèque Aspose.Words pour .NET. Les didacticiels fournissent des explications étape par étape, un code source détaillé et des exemples pratiques pour convertir des documents Word en différents formats tels que PDF, HTML, EPUB, images, etc. Vous apprendrez également à spécifier les options de conversion, à gérer les polices, les images et les mises en page. Cette ressource est essentielle pour les développeurs souhaitant automatiser les conversions de documents à l'aide d'Aspose.Words pour .NET, offrant une flexibilité et un contrôle complets sur le processus de conversion.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [Doc إلى Docx](./doc-to-docx/) | تعرف على كيفية تحويل مستندات Word من تنسيق Doc إلى تنسيق Docx باستخدام Aspose.Words for .NET.  |
-| [Docx إلى Rtf](./docx-to-rtf/) | تعرف على كيفية تحويل مستندات Word من تنسيق Docx إلى تنسيق RTF باستخدام Aspose.Words for .NET.  |  
-| [Docx إلى Pdf](./docx-to-pdf/) | تعرف على كيفية تحويل مستندات Word من Docx إلى PDF باستخدام Aspose.Words for .NET. | 
-| [Docx إلى بايت](./docx-to-byte/) | تعرف على كيفية تحويل مستندات Word من Docx إلى مصفوفة بايت باستخدام Aspose.Words for .NET. |  
-| [Docx إلى Epub](./docx-to-epub/) | تعرف على كيفية تحويل مستندات Word من تنسيق Docx إلى تنسيق Epub باستخدام Aspose.Words for .NET. |
-| [Docx إلى Mhtml وإرسال بريد إلكتروني](./docx-to-mhtml-and-sending-email/) | تعرف على كيفية تحويل مستندات Word من Docx إلى MHTML وإرسالها كرسائل بريد إلكتروني باستخدام Aspose.Words و Aspose.Email. |
-| [Docx إلى Markdown](./docx-to-markdown/) | تعرف على كيفية تحويل مستندات Word من Docx إلى تنسيق Markdown باستخدام Aspose.Words for .NET. |
-| [Docx إلى Txt](./docx-to-txt/) | تعرف على كيفية تحويل مستندات Word من Docx إلى نص عادي (Txt) باستخدام Aspose.Words for .NET. |
-| [TXT إلى Docx](./txt-to-docx/) | تعرف على كيفية تحويل ملفات النص العادي (Txt) إلى مستندات Word (Docx) باستخدام Aspose.Words for .NET. | 
-| [قوات الدفاع الشعبي إلى Jpeg](./pdf-to-jpeg/) | تعرف على كيفية تحويل مستندات PDF إلى صور JPEG باستخدام Aspose.Words for .NET. |
-| [PDF إلى Docx](./pdf-to-docx/) | تعرف على كيفية تحويل مستندات PDF إلى تنسيق Docx باستخدام Aspose.Words for .NET.  |
+| [Doc à Docx](./doc-to-docx/) | Apprenez à convertir des documents Word du format Doc au format Docx en utilisant Aspose.Words pour .NET.  |
+| [Docx vers RTF](./docx-to-rtf/) | Apprenez à convertir des documents Word du format Docx au format RTF en utilisant Aspose.Words pour .NET.  |  
+| [Docx vers Pdf](./docx-to-pdf/) | Apprenez à convertir des documents Word de Docx en PDF à l'aide d'Aspose.Words pour .NET. | 
+| [Docx en octet](./docx-to-byte/) | Apprenez à convertir des documents Word de Docx en tableau d'octets à l'aide d'Aspose.Words pour .NET. |  
+| [Docx vers Epub](./docx-to-epub/) | Apprenez à convertir des documents Word du format Docx au format Epub en utilisant Aspose.Words pour .NET. |
+| [Docx en Mhtml et envoi d'e-mail](./docx-to-mhtml-and-sending-email/) | Apprenez à convertir des documents Word de Docx en MHTML et à les envoyer sous forme d'e-mails à l'aide d'Aspose.Words et d'Aspose.Email. |
+| [Docx à Markdown](./docx-to-markdown/) | Apprenez à convertir des documents Word du format Docx au format Markdown en utilisant Aspose.Words pour .NET. |
+| [Docx à Txt](./docx-to-txt/) | Apprenez à convertir des documents Word de Docx en texte brut (Txt) à l'aide d'Aspose.Words pour .NET. |
+| [Txt à Docx](./txt-to-docx/) | Apprenez à convertir des fichiers texte brut (Txt) en documents Word (Docx) à l'aide d'Aspose.Words pour .NET. | 
+| [Pdf à Jpeg](./pdf-to-jpeg/) | Apprenez à convertir des documents PDF en images JPEG à l'aide d'Aspose.Words pour .NET. |
+| [PDF à Docx](./pdf-to-docx/) | Apprenez à convertir des documents PDF au format Docx en utilisant Aspose.Words pour .NET.  |

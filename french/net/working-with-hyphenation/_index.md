@@ -1,17 +1,17 @@
 ---
-title: العمل مع الواصلة
-linktitle: العمل مع الواصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على الواصلة كلمات اللغات ، وتحميل قاموس الواصلة للغة واستدعاء الواصلة باستخدام Aspose.Words for .NET.
+title: Travailler avec la césure
+linktitle: Travailler avec la césure
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent des mots de césure de langues, chargent un dictionnaire de césure pour la langue et un rappel de césure à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 750
 url: /fr/net/working-with-hyphenation/
 ---
-يعد العمل باستخدام Hyphenation موردًا شاملاً يرشدك خلال استخدام الواصلة في مستندات Word باستخدام مكتبة Aspose.Words for .NET. . توفر البرامج التعليمية توضيحات خطوة بخطوة ، وكود مصدر كامل ، وأمثلة عملية لفهم الواصلة وإدارتها بشكل فعال في مستنداتك. ستتعلم كيفية تمكين الواصلة التلقائية ، وتخصيص قواميس الواصلة ، وتطبيق الواصلة على فقرات معينة ، والتعامل مع استثناءات الواصلة ، والمزيد. يعد هذا المورد ضروريًا للمطورين الذين يرغبون في تحسين قابلية قراءة مستندات Word وتخطيطها باستخدام الواصلة مع Aspose.Words for .NET.
+Travailler avec la césure est une ressource complète qui vous guide tout au long de l'utilisation de la césure dans vos documents Word à l'aide de la bibliothèque Aspose.Words pour .NET. . Les didacticiels fournissent des explications étape par étape, un code source complet et des exemples pratiques pour comprendre et gérer efficacement la césure dans vos documents. Vous apprendrez à activer la césure automatique, à personnaliser les dictionnaires de césure, à appliquer la césure à des paragraphes spécifiques, à gérer les exceptions de césure, etc. Cette ressource est essentielle pour les développeurs qui souhaitent améliorer la lisibilité et la mise en page de leurs documents Word en utilisant la césure avec Aspose.Words pour .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [وصل كلمات اللغات](./hyphenate-words-of-languages/) | تعرف على كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تحميل قاموس الواصلة للغة](./load-hyphenation-dictionary-for-language/) |تعرف على كيفية تحميل قاموس الواصلة للغة معينة في Aspose.Words for .NET. |
-| [رد اتصال الواصلة](./hyphenation-callback/) | تعرف على كيفية استخدام رد نداء الواصلة في Aspose.Words for .NET للتعامل مع الواصلة في الكلمات. |
+| [Césure des mots des langues](./hyphenate-words-of-languages/) | Apprenez à couper des mots dans différentes langues dans des documents Word à l'aide d'Aspose.Words pour .NET. |
+| [Charger le dictionnaire de césure pour la langue](./load-hyphenation-dictionary-for-language/) |Apprenez à charger un dictionnaire de césure pour une langue spécifique dans Aspose.Words pour .NET. |
+| [Rappel de césure](./hyphenation-callback/) | Apprenez à utiliser le rappel de césure dans Aspose.Words pour .NET pour gérer la césure des mots. |

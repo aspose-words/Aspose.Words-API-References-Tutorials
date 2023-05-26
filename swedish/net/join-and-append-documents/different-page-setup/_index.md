@@ -1,37 +1,37 @@
 ---
-title: إعداد صفحة مختلفة
-linktitle: إعداد صفحة مختلفة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند بإعدادات إعداد صفحة مختلفة باستخدام Aspose.Words for .NET.
+title: Olika sidinställningar
+linktitle: Olika sidinställningar
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du lägger till ett dokument med olika sidinställningar med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/different-page-setup/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق مستند بإعدادات صفحة مختلفة بمستند آخر. يوضح كود المصدر المقدم كيفية إعداد إعدادات صفحة مختلفة لمستندات المصدر والوجهة والتأكد من المتابعة والترقيم المناسبين.
+Denna handledning förklarar hur man använder Aspose.Words för .NET för att lägga till ett dokument med olika sidinställningar till ett annat dokument. Den medföljande källkoden visar hur man ställer in olika sidinställningar för käll- och måldokumenten och säkerställer korrekt fortsättning och numrering.
 
-## الخطوة 1: قم بإعداد المشروع
+## Steg 1: Konfigurera projektet
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Se till att du har följande förutsättningar:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från den officiella Aspose-webbplatsen eller använda NuGet-pakethanteraren för att installera den.
+- En dokumentkatalogsökväg där käll- och måldokumenten finns.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Steg 2: Öppna käll- och måldokumenten
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Öppna käll- och måldokumenten med hjälp av`Document` klass konstruktör. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: قم بإعداد إعدادات الصفحة للمستند المصدر
+## Steg 3: Ställ in sidinställningar för källdokumentet
 
- اضبط إعدادات إعداد الصفحة للمستند المصدر لضمان المتابعة والترقيم المناسبين. في هذا المثال ، قمنا بتعيين بداية القسم إلى`SectionStart.Continuous` وأعد ترقيم الصفحات. نتأكد أيضًا من تطابق عرض الصفحة وارتفاعها واتجاهها مع القسم الأخير من المستند الوجهة.
+ Justera sidinställningarna för källdokumentet för att säkerställa korrekt fortsättning och numrering. I det här exemplet ställer vi in avsnittets början till`SectionStart.Continuous` och starta om sidnumreringen. Vi ser också till att sidbredden, höjden och orienteringen matchar den sista delen av måldokumentet.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -42,9 +42,9 @@ srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeig
 srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;
 ```
 
-## الخطوة 4: تعديل تنسيق الفقرة
+## Steg 4: Ändra styckeformatering
 
-للحفاظ على التنسيق الصحيح ، كرر عبر جميع الفقرات في المستند المصدر وقم بتعيين ملف`KeepWithNext` ملكية ل`true`. هذا يضمن بقاء الفقرات معًا أثناء عملية الإلحاق.
+För att bibehålla korrekt formatering, iterera igenom alla stycken i källdokumentet och ställ in`KeepWithNext` egendom till`true`. Detta säkerställer att stycken håller ihop under bifogningsprocessen.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,45 +53,45 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بالمستند الوجهة
+## Steg 5: Lägg till källdokumentet till måldokumentet
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر المعدل بالمستند الوجهة ، مع الحفاظ على تنسيق المصدر.
+ Använd`AppendDocument` metod för måldokumentet för att lägga till det modifierade källdokumentet till måldokumentet, bevara källformateringen.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند الوجهة
+## Steg 6: Spara måldokumentet
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند بإعدادات إعداد صفحة مختلفة باستخدام Aspose.Words for .NET.
+Detta slutför implementeringen av att lägga till ett dokument med olika sidinställningar med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لإعداد صفحة مختلفة باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Different Page Setup med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بتعيين المستند المصدر للمتابعة مباشرة بعد نهاية المستند الوجهة.
+	// Ställ in källdokumentet att fortsätta direkt efter slutet av måldokumentet.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// أعد تشغيل ترقيم الصفحات في بداية المستند المصدر.
+	// Starta om sidnumreringen i början av källdokumentet.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// لضمان عدم حدوث ذلك عندما يحتوي المستند المصدر على إعدادات إعداد صفحة مختلفة ، تأكد من أن
-	// الإعدادات متطابقة بين القسم الأخير من المستند الوجهة.
-	//إذا كانت هناك أقسام أخرى مستمرة تتبع في المستند المصدر ،
-	// هذا سوف يحتاج إلى أن يتكرر لتلك الأقسام.
+	// För att säkerställa att detta inte händer när källdokumentet har andra sidinställningar, se till att
+	// inställningarna är identiska mellan den sista delen av måldokumentet.
+	//Om det finns ytterligare fortlöpande avsnitt som följer i källdokumentet,
+	// detta måste upprepas för dessa avsnitt.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;
-	// كرر خلال جميع الأقسام في المستند المصدر.
+	// Iterera igenom alla avsnitt i källdokumentet.
 	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 	{
 		para.ParagraphFormat.KeepWithNext = true;

@@ -1,23 +1,23 @@
 ---
-title: إنشاء إشارة مرجعية
-linktitle: إنشاء إشارة مرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF باستخدام Aspose.Words for .NET.
+title: Crea segnalibro
+linktitle: Crea segnalibro
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come creare segnalibri in un documento e specificare i livelli di anteprima dei segnalibri in un PDF utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/create-bookmark/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إنشاء إشارة مرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF ناتج.
+In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Crea segnalibro nella libreria Aspose.Words per .NET. Questa funzione consente di creare segnalibri in un documento e specificare i livelli di anteprima dei segnalibri in un file PDF di output.
 
-## المتطلبات الأساسية
+## Prerequisiti
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conoscenza base del linguaggio C#.
+- Ambiente di sviluppo .NET con libreria Aspose.Words installata.
 
-## الخطوة 1: إنشاء المستند والمولد
+## Passaggio 1: creazione del documento e del generatore
 
- قبل إنشاء إشارات مرجعية ، نحتاج إلى إنشاء مستند ومنشئ مستندات باستخدام امتداد`Document` و`DocumentBuilder` أشياء:
+ Prima di creare segnalibri, dobbiamo creare un documento e un generatore di documenti utilizzando il file`Document` E`DocumentBuilder` oggetti:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -25,22 +25,22 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إنشاء الإشارة المرجعية الرئيسية
+## Passaggio 2: creazione del segnalibro principale
 
- نحن نستخدم ال`StartBookmark` طريقة لبدء إشارة مرجعية رئيسية و`EndBookmark` طريقة لإنهائه. في ما بينهما ، يمكننا إضافة نص وإشارات مرجعية أخرى:
+ Noi usiamo il`StartBookmark` metodo per avviare un segnalibro principale e il`EndBookmark` metodo per farla finita. Nel mezzo, possiamo aggiungere testo e altri segnalibri:
 
 ```csharp
 builder. StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
 
-// أضف المزيد من الإشارات المرجعية أو النص هنا.
+// Aggiungi altri segnalibri o testo qui.
 
 builder. EndBookmark("My Bookmark");
 ```
 
-## الخطوة 3: إنشاء إشارات مرجعية متداخلة
+## Passaggio 3: creazione di segnalibri nidificati
 
- يمكننا أيضًا إنشاء إشارات مرجعية متداخلة داخل إشارة مرجعية رئيسية. نحن نستخدم نفس الشيء`StartBookmark` و`EndBookmark` طرق لإنشاء وإنهاء الإشارات المرجعية المتداخلة:
+ Possiamo anche creare segnalibri nidificati all'interno di un segnalibro principale. Usiamo lo stesso`StartBookmark` E`EndBookmark` metodi per creare e terminare i segnalibri nidificati:
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -48,11 +48,11 @@ builder.Writeln("Text inside nested bookmark.");
 builder.EndBookmark("Embedded bookmark");
 ```
 
-## الخطوة 4: تحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج
+## Passaggio 4: specificare i livelli di anteprima dei segnalibri nel file PDF di output
 
- نحن نستخدم ال`PdfSaveOptions` لتحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج. نحن نستخدم ال`BookmarksOutlineLevels` ملكية
+ Noi usiamo il`PdfSaveOptions` oggetto per specificare i livelli di anteprima dei segnalibri nel file PDF di output. Noi usiamo il`BookmarksOutlineLevels` proprietà
 
-  لإضافة إشارات مرجعية رئيسية وإشارات مرجعية متداخلة بمستوياتها الخاصة:
+  per aggiungere segnalibri principali e segnalibri nidificati con i rispettivi livelli:
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
@@ -61,13 +61,13 @@ options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### مثال على شفرة المصدر لإنشاء إشارة مرجعية باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Crea segnalibro utilizzando Aspose.Words per .NET
 
-إليك المثال الكامل لشفرة المصدر لتوضيح إنشاء إشارات مرجعية باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente di esempio completo per dimostrare la creazione di segnalibri utilizzando Aspose.Words per .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -90,6 +90,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
   
 ```
 
-## خاتمة
+## Conclusione
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة إنشاء إشارة مرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارة المرجعية في ملف PDF ناتج.
+In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzione Crea segnalibro di Aspose.Words per .NET. Abbiamo seguito una guida dettagliata per creare segnalibri in un documento e specificare i livelli di anteprima dei segnalibri in un file PDF di output.

@@ -1,46 +1,46 @@
 ---
-title: حدود المحور
-linktitle: حدود المحور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين حدود المحور في مخطط باستخدام Aspose.Words for .NET للتحكم في نطاق القيم المعروضة على المحور.
+title: Axelgränser
+linktitle: Axelgränser
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ställer in gränserna för en axel i ett diagram med Aspose.Words för .NET som kontrollerar intervallet av värden som visas på axeln.
 type: docs
 weight: 10
 url: /sv/net/programming-with-charts/bounds-of-axis/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية تعيين حدود المحور في مخطط باستخدام Aspose.Words for .NET. بإدراج مخطط وإضافة بيانات متسلسلة وتكوين مقياس المحور ، يمكنك تحديد الحد الأدنى والحد الأقصى لقيم المحور.
+Denna handledning förklarar hur man ställer in gränserna för en axel i ett diagram med Aspose.Words för .NET. Genom att infoga ett diagram, lägga till seriedata och konfigurera axelskalningen kan du definiera minimi- och maxvärden för axeln.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Förutsättningar
+För att följa denna handledning måste du ha följande:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words för .NET-biblioteket installerat.
+- Grundläggande kunskaper i C# och att arbeta med Word-dokument.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Steg 1: Konfigurera dokumentkatalogen
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Steg 2: Skapa ett nytt dokument och DocumentBuilder
+ Skapa en ny instans av`Document` klass och a`DocumentBuilder` objekt för att arbeta med dokumentet.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدراج وتكوين مخطط
- أدخل مخططًا في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder` هدف. قم بتعيين نوع الرسم البياني والأبعاد المطلوبة.
+## Steg 3: Infoga och konfigurera ett diagram
+ Infoga ett diagram i dokumentet med hjälp av`InsertChart` metod för`DocumentBuilder` objekt. Ställ in önskad diagramtyp och dimensioner.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 4: أضف بيانات المتسلسلة
-امسح أي سلسلة موجودة في المخطط وأضف بيانات سلسلة جديدة. في هذا المثال ، نضيف سلسلة ذات تسميات "العنصر 1" إلى "العنصر 5" والقيم المقابلة.
+## Steg 4: Lägg till seriedata
+Rensa alla befintliga serier i diagrammet och lägg till nya seriedata. I det här exemplet lägger vi till en serie med etiketter "Artikel 1" till "Artikel 5" och motsvarande värden.
 
 ```csharp
 chart.Series.Clear();
@@ -49,25 +49,25 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## الخطوة 5: تعيين حدود المحور
- قم بتكوين قياس المحور ص عن طريق تعيين القيم الدنيا والقصوى باستخدام`Scaling.Minimum` و`Scaling.Maximum` خصائص المحور.
+## Steg 5: Ställ in gränserna för axeln
+ Konfigurera skalningen av Y-axeln genom att ställa in lägsta och maximala värden med hjälp av`Scaling.Minimum` och`Scaling.Maximum` axelns egenskaper.
 
 ```csharp
 chart.AxisY.Scaling.Minimum = new AxisBound(0);
 chart.AxisY.Scaling.Maximum = new AxisBound(6);
 ```
 
-## الخطوة 6: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithCharts.BoundsOfAxis.docx".
+## Steg 6: Spara dokumentet
+ Spara dokumentet i den angivna katalogen med hjälp av`Save` metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithCharts.BoundsOfAxis.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-### مثال على شفرة المصدر لـ Bounds Of Axis باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Bounds Of Axis med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -83,4 +83,4 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 	doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تعيين حدود المحور في الرسم البياني باستخدام Aspose.Words for .NET.
+Det är allt! Du har framgångsrikt angett gränserna för en axel i ett diagram med Aspose.Words för .NET.

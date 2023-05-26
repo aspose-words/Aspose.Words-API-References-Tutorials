@@ -1,50 +1,50 @@
 ---
-title: عنوان
-linktitle: عنوان
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام العنوان مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Titre
+linktitle: Titre
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à utiliser le titre avec Aspose.Words pour .NET Guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/working-with-markdown/heading/
 ---
 
-في هذا المثال ، سوف نوضح لك كيفية استخدام ميزة العناوين مع Aspose.Words for .NET. تُستخدم العناوين لبناء محتوى المستند وتحديد أولوياته.
+Dans cet exemple, nous allons vous montrer comment utiliser la fonction de titres avec Aspose.Words pour .NET. Les titres sont utilisés pour structurer et hiérarchiser le contenu d'un document.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Étape 1 : Utiliser un générateur de documents
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Tout d'abord, nous allons utiliser un générateur de document pour ajouter du contenu à notre document.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تخصيص أنماط العناوين
+## Étape 2 : Personnaliser les styles de titre
 
-بشكل افتراضي ، يمكن أن تحتوي أنماط العناوين في Word على تنسيق غامق ومائل. إذا لم نرغب في فرض هذه الخصائص ، فنحن بحاجة إلى تعيينها صراحة على "خطأ".
+Par défaut, les styles de titre dans Word peuvent avoir une mise en forme en gras et en italique. Si nous ne voulons pas que ces propriétés soient appliquées, nous devons les définir explicitement sur "false".
 
 ```csharp
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
 
-## الخطوة 3: إضافة عنوان من المستوى 1
+## Étape 3 : Ajouter un titre de niveau 1
 
- يمكننا إضافة عنوان من المستوى 1 عن طريق تحديد اسم نمط الفقرة المناسب واستخدام امتداد`Writeln` طريقة كتابة محتوى العنوان.
+ Nous pouvons ajouter un titre de niveau 1 en spécifiant le nom du style de paragraphe approprié et en utilisant le`Writeln` méthode pour écrire le contenu du titre.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";
 builder.Writeln("This is an H1 tag");
 ```
 
-### مثال على شفرة المصدر للعنوان مع Aspose.Words for .NET
+### Exemple de code source pour le titre avec Aspose.Words pour .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilisez un générateur de document pour ajouter du contenu au document.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// بشكل افتراضي ، قد تحتوي أنماط العناوين في Word على تنسيق غامق ومائل.
-	//إذا كنا لا نريد التأكيد ، فاضبط هذه الخصائص صراحةً على false.
+	// Par défaut, les styles de titre dans Word peuvent avoir une mise en forme Gras et Italique.
+	//Si nous ne voulons pas être soulignés, définissez explicitement ces propriétés sur false.
 	builder.Font.Bold = false;
 	builder.Font.Italic = false;
 
@@ -53,6 +53,6 @@ builder.Writeln("This is an H1 tag");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة العناوين مع Aspose.Words for .NET.
+Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité des en-têtes avec Aspose.Words pour .NET.
 
 

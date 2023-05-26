@@ -1,37 +1,37 @@
 ---
-title: تطبيق الترخيص من الدفق
-linktitle: تطبيق الترخيص من الدفق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق ترخيص من تدفق باستخدام Aspose.Words for .NET. دليل خطوة بخطوة
+title: Akıştan Lisansı Uygula
+linktitle: Akıştan Lisansı Uygula
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir akıştan nasıl lisans uygulayacağınızı öğrenin. Adım adım rehber
 type: docs
 weight: 10
 url: /tr/net/apply-license/apply-license-from-stream/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، ستتعلم كيفية تطبيق ترخيص من دفق باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات الشفرة اللازمة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تطبيق ترخيص لفتح الوظائف الكاملة لـ Aspose.Words.
+Bu adım adım öğreticide, Aspose.Words for .NET kullanarak bir akıştan nasıl lisans uygulayacağınızı öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli kod parçacıklarını sağlayacağız. Bu eğitimin sonunda, Aspose.Words'ün tam işlevselliğini ortaya çıkarmak için bir lisans uygulayabileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
-- ملف ترخيص صالح لـ Aspose.Words.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
+- Aspose.Words için geçerli bir lisans dosyası.
 
-## الخطوة 1: استيراد مساحات الأسماء المطلوبة
-للبدء ، قم باستيراد مساحات الأسماء الضرورية في كود C # الخاص بك. تحتوي مساحات الأسماء هذه على الفئات والطرق اللازمة للعمل مع Aspose.Words.
+## 1. Adım: Gerekli Ad Alanlarını İçe Aktarın
+Başlamak için gerekli ad alanlarını C# kodunuza alın. Bu ad alanları, Aspose.Words ile çalışmak için gereken sınıfları ve yöntemleri içerir.
 
 ```csharp
 using Aspose.Words;
 using System.IO;
 ```
 
-## الخطوة 2: تهيئة كائن الترخيص
-بعد ذلك ، قم بتهيئة كائن الترخيص ، والذي سيتم استخدامه لتعيين ترخيص Aspose.Words. أضف الكود التالي:
+## 2. Adım: Lisans Nesnesini Başlatın
+Ardından, Aspose.Words lisansını ayarlamak için kullanılacak Lisans nesnesini başlatın. Aşağıdaki kodu ekleyin:
 
 ```csharp
 License license = new License();
 ```
 
-## الخطوة 3: تعيين الترخيص من الدفق
-لتعيين الترخيص من دفق ، استخدم الأسلوب SetLicense لكائن الترخيص. قم بإنشاء MemoryStream من ملف الترخيص وتمريره كمعامل لطريقة SetLicense.
+## 3. Adım: Akıştan Lisansı Ayarlayın
+Bir akıştan lisans ayarlamak için Lisans nesnesinin SetLicense yöntemini kullanın. Lisans dosyasından bir MemoryStream oluşturun ve bunu bir parametre olarak SetLicense yöntemine iletin.
 
 ```csharp
 try
@@ -48,8 +48,8 @@ catch (Exception e)
 }
 ```
 
-### مثال على كود المصدر لتطبيق الترخيص من Stream باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لتطبيق ترخيص من دفق باستخدام Aspose.Words for .NET:
+### Aspose.Words for .NET kullanarak Akıştan Lisans Uygulamak için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanan bir akıştan lisans uygulamak için eksiksiz kaynak kodu burada:
 
 ```csharp
 License license = new License();
@@ -68,7 +68,7 @@ catch (Exception e)
 }
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تطبيق ترخيص من تدفق باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك بسهولة تعيين الترخيص وإطلاق العنان للإمكانات الكاملة لـ Aspose.Words لمهام معالجة المستندات الخاصة بك.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir akıştan nasıl lisans uygulayacağınızı öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak lisansı kolayca ayarlayabilir ve belge işleme görevleriniz için Aspose.Words'ün tam potansiyelini ortaya çıkarabilirsiniz.
 
-يمكنك الآن بثقة تطبيق ترخيص من دفق والاستفادة من الميزات القوية لـ Aspose.Words لإنشاء مستندات Word وتعديلها وتحويلها برمجيًا.
+Artık bir akıştan güvenle lisans uygulayabilir ve Word belgelerini programlı olarak oluşturmak, değiştirmek ve dönüştürmek için Aspose.Words'ün güçlü özelliklerinden yararlanabilirsiniz.

@@ -1,44 +1,44 @@
 ---
-title: نص مائل
-linktitle: نص مائل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية كتابة نص مائل باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Kursiver Text
+linktitle: Kursiver Text
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Text mit Aspose.Words für .NET kursiv formatieren.
 type: docs
 weight: 10
 url: /de/net/working-with-markdown/italic-text/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة النص المائل مع Aspose.Words for .NET. يستخدم النص المائل للتأكيد على أجزاء معينة من المستند.
+In diesem Beispiel zeigen wir Ihnen, wie Sie die Funktion für kursiven Text mit Aspose.Words für .NET verwenden. Kursiver Text wird verwendet, um bestimmte Teile eines Dokuments hervorzuheben.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Schritt 1: Verwendung eines Dokumentengenerators
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Zuerst verwenden wir einen Dokumentgenerator, um Inhalte zu unserem Dokument hinzuzufügen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: اجعل النص مائلًا
+## Schritt 2: Text kursiv schreiben
 
- يمكننا جعل النص مائلاً عن طريق تعيين الخط`Italic` ملكية ل`true`.
+ Wir können Text kursiv formatieren, indem wir die Schriftart festlegen`Italic` Eigentum zu`true`.
 
 ```csharp
 builder.Font.Italic = true;
 builder.Writeln("This text will be in italics");
 ```
 
-### مثال على شفرة المصدر للنص المائل باستخدام Aspose.Words for .NET
+### Beispielquellcode für kursiven Text mit Aspose.Words für .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص مائلًا.
+	// Machen Sie den Text kursiv.
 	builder.Font.Italic = true;
 	builder.Writeln("This text will be Italic");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة النص المائل مع Aspose.Words for .NET.
+Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Funktion für kursiven Text mit Aspose.Words für .NET verwenden.
 

@@ -1,41 +1,41 @@
 ---
-title: أدخل ASKField بدون Document Builder
-linktitle: أدخل ASKField بدون Document Builder
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل ASK في مستندات Word باستخدام Aspose.Words for .NET.
+title: Fügen Sie ASKField ohne Document Builder ein
+linktitle: Fügen Sie ASKField ohne Document Builder ein
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein ASK-Feld in Ihre Word-Dokumente einfügen.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج حقل ASK بدون DocumentBuilder" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der die Funktion „Ein ASK-Feld ohne DocumentBuilder einfügen“ von Aspose.Words für .NET verwendet. Stellen Sie sicher, dass Sie jeden Schritt sorgfältig befolgen, um die gewünschten Ergebnisse zu erzielen.
 
-## الخطوة 1: إعداد دليل المستند
+## Schritt 1: Einrichten des Dokumentenverzeichnisses
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Im bereitgestellten Code müssen Sie das Verzeichnis Ihrer Dokumente angeben. Ersetzen Sie den Wert „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## Schritt 2: Dokument und Absatz erstellen
 
-نبدأ بإنشاء مستند جديد وجلب الفقرة الأولى.
+Wir beginnen damit, ein neues Dokument zu erstellen und den ersten Absatz abzurufen.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## الخطوة 3: إدخال حقل ASK
+## Schritt 3: Einfügen des ASK-Feldes
 
- نحن نستخدم ال`AppendField()` طريقة لإدراج حقل ASK في الفقرة.
+ Wir benutzen das`AppendField()` Methode zum Einfügen eines ASK-Feldes in den Absatz.
 
 ```csharp
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
 ```
 
-ثم نقوم بتكوين الخصائص المختلفة لحقل ASK عن طريق تحديد القيم المطلوبة.
+Anschließend konfigurieren wir die verschiedenen Eigenschaften des ASK-Felds, indem wir die gewünschten Werte angeben.
 
 ```csharp
 field.BookmarkName = "Test 1";
@@ -44,23 +44,23 @@ field. DefaultResponse = "Test3";
 field. PromptOnceOnMailMerge = true;
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Abschließend nennen wir die`Update()` Methode zum Aktualisieren des Felds.
 
 ```csharp
 field. Update();
 ```
 
-### مثال على الكود المصدري لإدخال حقل ASK بدون DocumentBuilder مع Aspose.Words for .NET
+### Beispiel des Quellcodes zum Einfügen eines ASK-Feldes ohne DocumentBuilder mit Aspose.Words für .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Der Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة.
+// Dokumentenerstellung.
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-// أدخل حقل ASK.
+// Fügen Sie das ASK-Feld ein.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
 
 field.BookmarkName = "Test 1";
@@ -73,6 +73,6 @@ field. Update();
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأدخلنا حقل ASK دون استخدام DocumentBuilder ، وقمنا بتكوين الخصائص المختلفة للحقل ، وحفظنا المستند باسم ملف محدد.
+In diesem Beispiel haben wir ein neues Dokument erstellt, ein ASK-Feld ohne Verwendung von DocumentBuilder eingefügt, die verschiedenen Eigenschaften des Felds konfiguriert und das Dokument unter einem angegebenen Dateinamen gespeichert.
 
-هذا يختتم دليلنا حول استخدام ميزة "إدراج حقل ASK بدون DocumentBuilder" مع Aspose.Words for .NET.
+Damit ist unser Leitfaden zur Verwendung der Funktion „ASK-Feld ohne DocumentBuilder einfügen“ mit Aspose.Words für .NET abgeschlossen.

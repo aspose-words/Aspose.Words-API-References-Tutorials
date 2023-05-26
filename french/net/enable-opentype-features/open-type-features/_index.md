@@ -1,43 +1,43 @@
 ---
-title: فتح ميزات النوع
-linktitle: فتح ميزات النوع
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET
+title: Caractéristiques de type ouvert
+linktitle: Caractéristiques de type ouvert
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Découvrez comment activer et utiliser les fonctionnalités Open Type dans Aspose.Words pour .NET
 type: docs
 weight: 10
 url: /fr/net/enable-opentype-features/open-type-features/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من العمل باستخدام ميزات Open Type في مستندات Word الخاصة بك.
+Dans ce didacticiel complet, vous apprendrez à activer et à utiliser les fonctionnalités Open Type dans Aspose.Words pour .NET. Nous vous guiderons tout au long du processus et vous fournirons les extraits de code C# nécessaires. À la fin de ce guide, vous serez en mesure de travailler avec les fonctionnalités Open Type dans vos documents Word.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Conditions préalables
+Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
+- Bibliothèque Aspose.Words pour .NET installée sur votre système.
 
-## الخطوة 1: قم بتحميل المستند
-للبدء ، قم بتحميل المستند باستخدام فئة المستند:
+## Étape 1 : Charger le document
+Pour commencer, chargez le document à l'aide de la classe Document :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "OpenType text shaping.docx");
 ```
 
-## الخطوة 2: تفعيل ميزات النوع المفتوح
-لتمكين ميزات Open Type ، قم بتعيين خاصية TextShaperFactory لفئة LayoutOptions على مثيل لمصنع شكل النص المطلوب. في هذا المثال ، نستخدم HarfBuzzTextShaperFactory:
+## Étape 2 : Activer les fonctionnalités Open Type
+Pour activer les fonctionnalités Open Type, définissez la propriété TextShaperFactory de la classe LayoutOptions sur une instance de la fabrique de mise en forme de texte souhaitée. Dans cet exemple, nous utilisons la HarfBuzzTextShaperFactory :
 
 ```csharp
 doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzTextShaperFactory.Instance;
 ```
 
-## الخطوة 3: احفظ المستند
-بعد تمكين ميزات Open Type ، احفظ المستند بتنسيق الإخراج المطلوب ، مثل PDF:
+## Étape 3 : Enregistrer le document
+Après avoir activé les fonctionnalités Open Type, enregistrez le document dans le format de sortie souhaité, tel que PDF :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-### مثال على كود المصدر لميزات النوع المفتوح باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لاستخدام ميزات Open Type في Aspose.Words for .NET:
+### Exemple de code source pour les fonctionnalités Open Type utilisant Aspose.Words pour .NET
+Voici le code source complet pour utiliser les fonctionnalités Open Type dans Aspose.Words pour .NET :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -48,7 +48,7 @@ doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzText
 doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن العمل مع ميزات Open Type في مستندات Word الخاصة بك.
+## Conclusion
+Toutes nos félicitations! Vous avez appris avec succès comment activer et utiliser les fonctionnalités Open Type dans Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais utiliser les fonctionnalités Open Type dans vos documents Word.
 
-توفر ميزات Open Type إمكانات طباعة وتشكيل نصية محسّنة ، مما يسمح لك بإنشاء مستندات جذابة بصريًا وذات مظهر احترافي. جرب مصانع مختلفة لأشكال النص واستكشف إمكانيات ميزات Open Type في مشروعاتك.
+Les fonctionnalités Open Type offrent des capacités de typographie et de mise en forme de texte améliorées, vous permettant de créer des documents visuellement attrayants et d'aspect professionnel. Expérimentez avec différentes usines de mise en forme de texte et explorez les possibilités des fonctionnalités Open Type dans vos projets.

@@ -1,44 +1,44 @@
 ---
-title: وحدة الفاصل الزمني بين التسميات على المحور
-linktitle: وحدة الفاصل الزمني بين التسميات على المحور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين وحدة الفاصل الزمني بين التسميات على محور الرسم البياني باستخدام Aspose.Words for .NET.
+title: Eksen Üzerindeki Etiketler Arasındaki Aralık Birimi
+linktitle: Eksen Üzerindeki Etiketler Arasındaki Aralık Birimi
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir grafiğin ekseni üzerindeki etiketler arasındaki aralık birimini nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/interval-unit-between-labels-on-axis/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين وحدة الفاصل بين التسميات على محور الرسم البياني. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات سلسلة وتخصيص تسميات المحور.
+Bu eğitim, bir grafiğin ekseni üzerindeki etiketler arasındaki aralık birimini ayarlamak için Aspose.Words for .NET'in nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve eksen etiketlerinin nasıl özelleştirileceğini gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Çıktı belgesinin kaydedileceği bir belge dizini yolu.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 2. Adım: Yeni bir belge oluşturun ve bir grafik ekleyin
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط عمودي في المستند.
+ Ardından,`InsertChart` yöntemi`DocumentBuilder` belgeye bir sütun grafiği eklemek için.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## 3. Adım: Seri verilerini grafiğe ekleyin
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمسة عناصر بقيمها المقابلة.
+Grafiğe seri verileri ekleyin. Bu örnekte, karşılık gelen değerleri ile beş öğe ekleyeceğiz.
 
 ```csharp
 chart.Series.Clear();
@@ -47,28 +47,28 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## الخطوة 4: تخصيص تسميات المحور
+## 4. Adım: Eksen etiketlerini özelleştirin
 
- لتعيين وحدة الفاصل الزمني بين التسميات على المحور X ، قم بالوصول إلى ملف`AxisX` خاصية الرسم البياني وتعيين`TickLabelSpacing` إلى القيمة المطلوبة. في هذا المثال ، قمنا بتعيين التباعد على 2.
+ X eksenindeki etiketler arasındaki aralık birimini ayarlamak için şuraya erişin:`AxisX` grafiğin özelliğini ayarlayın ve`TickLabelSpacing` özelliği istenen değere getirin. Bu örnekte, aralığı 2 olarak ayarladık.
 
 ```csharp
 chart.AxisX.TickLabelSpacing = 2;
 ```
 
-## الخطوة 5: احفظ المستند
+## 5. Adım: Belgeyi kaydedin
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Son olarak, belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 ```
 
-هذا يكمل تنفيذ إعداد وحدة الفاصل الزمني بين الملصقات على المحور باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanılarak eksen üzerindeki etiketler arasındaki aralık birimini ayarlama uygulamasını tamamlar.
 
-### مثال على شفرة المصدر لوحدة الفاصل الزمني بين الملصقات على المحور باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Eksen Üzerindeki Etiketler Arasındaki Aralık Birimi için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

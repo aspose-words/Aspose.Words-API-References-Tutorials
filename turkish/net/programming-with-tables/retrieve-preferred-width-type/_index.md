@@ -1,56 +1,56 @@
 ---
-title: استرجاع نوع العرض المفضل
-linktitle: استرجاع نوع العرض المفضل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد النوع وقيمة العرض المفضلة لخلية في جدول Word باستخدام Aspose.Words for .NET.
+title: Tercih Edilen Genişlik Tipini Al
+linktitle: Tercih Edilen Genişlik Tipini Al
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word tablosundaki bir hücrenin tipini ve tercih edilen genişlik değerini nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/retrieve-preferred-width-type/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استرداد نوع العرض المفضل وقيمته من خلية جدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من استرداد نوع العرض المفضل (مطلق أو نسبي أو تلقائي) وقيمته لخلية معينة في جداول مستندات Word الخاصة بك.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablo hücresinden tercih edilen genişlik tipini ve değerini almayı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu öğreticinin sonunda, Word belge tablolarınızdaki belirli bir hücre için tercih edilen genişlik türünü (mutlak, göreli veya otomatik) ve bunun değerini alabileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## 2. Adım: Belgeyi yükleme
+Belgeyle çalışmaya başlamak için şu adımları izleyin:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-تأكد من استبدال "دليل المستندات الخاص بك" بالمسار الفعلي إلى دليل المستندات الخاص بك وقم بتوفير اسم الملف الصحيح.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden ve doğru dosya adını girdiğinizden emin olun.
 
-## الخطوة 3: استرجاع نوع العرض وقيمته المفضلين
-بعد ذلك ، سنقوم باسترداد نوع العرض المفضل وقيمته لخلية جدول معينة. استخدم الكود التالي:
+## 3. Adım: Tercih edilen genişlik tipini ve değerini alma
+Ardından, belirli bir tablo hücresi için tercih edilen genişlik tipini ve değerini alacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
-// استرجع الجدول
+// tabloyu al
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 
-// تنشيط الضبط التلقائي للجدول
+// Otomatik tablo ayarını etkinleştirin
 table. AllowAutoFit = true;
 
-// استرجع الخلية الأولى من الصف الأول
+// İlk satırın ilk hücresini al
 Cell firstCell = table.FirstRow.FirstCell;
 
-// استرجع نوع العرض المفضل وقيمته
+// Tercih edilen genişlik tipini ve değerini alın
 PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-هنا نستخدم المستند لجلب الجدول الأول ، ثم نقوم بتمكين الجدول التلقائي الملائم مع`AllowAutoFit` ملكية. ثم نسترجع الخلية الأولى من الصف الأول من الجدول. من هذه الخلية ، يمكننا استرداد نوع العرض المفضل بامتداد`PreferredWidth.Type` الممتلكات وقيمتها مع`PreferredWidth.Value` ملكية.
+Burada ilk tabloyu getirmek için belgeyi kullanıyoruz, ardından otomatik tabloyu`AllowAutoFit` mülk. Sonra tablonun ilk satırının ilk hücresini alırız. Bu hücreden, tercih edilen genişlik tipini şu şekilde alabiliriz:`PreferredWidth.Type` özelliği ve değeri ile`PreferredWidth.Value` mülk.
 
-### نموذج التعليمات البرمجية المصدر لـ Retrieve Preferred Width Type باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Tercih Edilen Genişlik Tipini Al için örnek kaynak kodu 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");
@@ -61,5 +61,5 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية استرداد نوع العرض المفضل وقيمته من خلية جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك استرداد هذه المعلومات لخلايا معينة في جداول مستندات Word الخاصة بك.
+## Çözüm
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablo hücresinden tercih edilen genişlik tipini ve değerini almayı öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, Word belge tablolarınızdaki belirli hücreler için bu bilgileri alabilirsiniz.

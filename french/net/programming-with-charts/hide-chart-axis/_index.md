@@ -1,44 +1,44 @@
 ---
-title: إخفاء محور التخطيط
-linktitle: إخفاء محور التخطيط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إخفاء محور الرسم البياني في مستند باستخدام Aspose.Words for .NET. إخفاء المحور لعرض مخطط أوضح وأكثر تركيزًا.
+title: Masquer l'axe du graphique
+linktitle: Masquer l'axe du graphique
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à masquer l'axe du graphique dans un document à l'aide de Aspose.Words pour .NET. Masquez l'axe pour un affichage graphique plus net et plus ciblé.
 type: docs
 weight: 10
 url: /fr/net/programming-with-charts/hide-chart-axis/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإخفاء محور المخطط في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات سلسلة وإخفاء محور المخطط.
+Ce didacticiel explique comment utiliser Aspose.Words pour .NET pour masquer l'axe du graphique dans un document. Le code source fourni montre comment créer un graphique, ajouter des données de série et masquer l'axe du graphique.
 
-## الخطوة 1: قم بإعداد المشروع
+## Étape 1 : Configurer le projet
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Assurez-vous que vous disposez des prérequis suivants :
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger à partir du site Web officiel d'Aspose ou utiliser le gestionnaire de packages NuGet pour l'installer.
+- Un chemin d'accès au répertoire de documents où le document de sortie sera enregistré.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Étape 2 : Créer un nouveau document et insérer un graphique
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، أدخل مخططًا في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`. في هذا المثال ، سنقوم بإدراج مخطط عمودي.
+ Ensuite, insérez un graphique dans le document à l'aide de la`InsertChart` méthode de la`DocumentBuilder`. Dans cet exemple, nous allons insérer un histogramme.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Étape 3 : Ajouter des données de série au graphique
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمسة عناصر والقيم المقابلة لها.
+Ajoutez des données de série au graphique. Dans cet exemple, nous allons ajouter cinq éléments et leurs valeurs correspondantes.
 
 ```csharp
 chart.Series.Clear();
@@ -47,30 +47,30 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## الخطوة 4: إخفاء محور المخطط
+## Étape 4 : Masquer l'axe du graphique
 
- لإخفاء محور المخطط ، قم بالوصول إلى ملف`AxisY` خاصية الرسم البياني وتعيين`Hidden` ملكية ل`true`.
+ Pour masquer l'axe du graphique, accédez à la`AxisY` propriété du graphique et définissez la`Hidden` propriété à`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-في هذا المثال ، نقوم بإخفاء المحور ص في الرسم البياني.
+Dans cet exemple, nous masquons l'axe Y du graphique.
 
-## الخطوة 5: احفظ المستند
+## Étape 5 : Enregistrez le document
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Enfin, enregistrez le document dans le répertoire spécifié à l'aide de la`Save` méthode de la`Document` objet.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 ```
 
-هذا يكمل تنفيذ إخفاء محور الرسم البياني باستخدام Aspose.Words for .NET.
+Ceci termine l'implémentation du masquage de l'axe du graphique à l'aide de Aspose.Words pour .NET.
 
-### مثال على شفرة المصدر لإخفاء محور الرسم البياني باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Hide Chart Axis en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -1,33 +1,33 @@
 ---
-title: قراءة Vba Macros
-linktitle: قراءة Vba Macros
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية قراءة وحدات ماكرو VBA من مستند Word باستخدام Aspose.Words for .NET.
+title: Lesen Sie Vba-Makros
+linktitle: Lesen Sie Vba-Makros
+second_title: Aspose.Words für .NET API-Referenz
+description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET VBA-Makros aus einem Word-Dokument lesen.
 type: docs
 weight: 10
 url: /de/net/working-with-vba-macros/read-vba-macros/
 ---
-في هذا البرنامج التعليمي ، سنشرح كيفية قراءة وحدات ماكرو VBA من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تسمح لك قراءة وحدات ماكرو VBA بالوصول إلى رمز VBA الموجود في مستند Word الخاص بك. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In diesem Tutorial erklären wir, wie Sie VBA-Makros aus einem Word-Dokument mithilfe der Aspose.Words-Bibliothek für .NET lesen. Durch das Lesen von VBA-Makros können Sie auf vorhandenen VBA-Code in Ihrem Word-Dokument zugreifen. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على وحدات ماكرو VBA
+## Voraussetzungen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
+- Grundkenntnisse der Programmiersprache C#
+- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
+- Ein Word-Dokument mit VBA-Makros
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+ Zuerst müssen Sie den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments festlegen. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند واقرأ وحدات ماكرو VBA
-بعد ذلك ، سنقوم بتحميل مستند Word والتحقق مما إذا كان يحتوي على مشروع VBA. إذا كان المستند يحتوي على مشروع VBA ، فسنقوم بتكرار جميع الوحدات في المشروع ونعرض الكود المصدري لكل وحدة.
+## Schritt 2: Laden Sie das Dokument und lesen Sie die VBA-Makros
+Als nächstes laden wir das Word-Dokument und prüfen, ob es ein VBA-Projekt enthält. Wenn das Dokument ein VBA-Projekt enthält, durchlaufen wir alle Module im Projekt und zeigen den Quellcode für jedes Modul an.
 
 ```csharp
-//قم بتحميل المستند
+//Laden Sie das Dokument
 Document doc = new Document(dataDir + "VBA project.docm");
 if (doc.VbaProject!= null)
 {
@@ -38,11 +38,11 @@ Console.WriteLine(module.SourceCode);
 }
 ```
 
-### نموذج لشفرة مصدر لقراءة وحدات ماكرو Vba باستخدام Aspose.Words for .NET 
+### Beispielquellcode zum Lesen von VBA-Makros mit Aspose.Words für .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "VBA project.docm");
@@ -56,7 +56,7 @@ if (doc.VbaProject != null)
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية قراءة وحدات ماكرو VBA من مستند Word باستخدام Aspose.Words for .NET. تتيح لك قراءة وحدات ماكرو VBA الوصول إلى رمز VBA الموجود في المستند الخاص بك وتنفيذ العمليات وفقًا لاحتياجاتك. لا تتردد في استخدام هذه الميزة لمراجعة وتحليل وحدات ماكرو VBA في مستندات Word الخاصة بك.
+## Abschluss
+In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET VBA-Makros aus einem Word-Dokument liest. Durch das Lesen von VBA-Makros können Sie auf vorhandenen VBA-Code in Ihrem Dokument zugreifen und Vorgänge entsprechend Ihren Anforderungen ausführen. Nutzen Sie diese Funktion gerne zum Überprüfen und Analysieren von VBA-Makros in Ihren Word-Dokumenten.
 
 

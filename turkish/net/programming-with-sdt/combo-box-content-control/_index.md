@@ -1,38 +1,38 @@
 ---
-title: التحكم في محتوى صندوق التحرير والسرد
-linktitle: التحكم في محتوى صندوق التحرير والسرد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء عنصر تحكم محتوى Combo Box في مستند Word باستخدام Aspose.Words for .NET.
+title: Açılan Kutu İçeriği Kontrolü
+linktitle: Açılan Kutu İçeriği Kontrolü
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesinde Birleşik Giriş Kutusu İçerik Kontrolü oluşturmayı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/combo-box-content-control/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إنشاء عنصر تحكم محتوى Combo Box في مستند Word باستخدام Aspose.Words for .NET. تتيح عناصر التحكم في محتوى مربع التحرير والسرد للمستخدمين تحديد عنصر من القائمة المنسدلة.
+Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesinde Birleşik Giriş Kutusu İçerik Kontrolü'nün nasıl oluşturulacağını açıklar. Birleşik giriş kutusu içerik denetimleri, kullanıcıların açılır listeden bir öğe seçmesine olanak tanır.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Önkoşullar
+Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words for .NET kitaplığı yüklendi.
+- Temel C# bilgisi ve Word belgeleriyle çalışma.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستند الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## 1. Adım: Belge Dizinini kurun
+ Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و StructuredDocumentTag
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`StructuredDocumentTag` لتمثيل عنصر تحكم محتوى مربع التحرير والسرد. حدد`SdtType.ComboBox` كنوع و`MarkupLevel.Block` كمستوى الترميز لإنشاء مربع تحرير وسرد على مستوى الكتلة.
+## 2. Adım: Bir Belge ve StructuredDocumentTag Oluşturun
+ Yeni bir örneğini oluştur`Document` sınıf ve bir`StructuredDocumentTag` birleşik giriş kutusu içerik denetimini temsil etmek için. Belirtin`SdtType.ComboBox` tip olarak ve`MarkupLevel.Block` blok düzeyinde birleşik giriş kutusu oluşturmak için biçimlendirme düzeyi olarak.
 
 ```csharp
 Document doc = new Document();
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, MarkupLevel.Block);
 ```
 
-## الخطوة 3: أضف عناصر إلى صندوق التحرير والسرد
- أضف عناصر إلى مربع التحرير والسرد باستخدام ملف`ListItems` ممتلكات`StructuredDocumentTag` . يتم تمثيل كل عنصر بامتداد`SdtListItem` كائن ، والذي يأخذ نص عرض وقيمة. في هذا المثال ، نضيف ثلاثة عناصر إلى مربع التحرير والسرد.
+## 3. Adım: Açılan Kutuya Öğeler Ekleyin
+ kullanarak birleşik giriş kutusuna öğe ekleyin.`ListItems` mülkiyeti`StructuredDocumentTag` . Her öğe bir ile temsil edilir`SdtListItem` bir görüntüleme metni ve bir değer alan nesne. Bu örnekte, açılan kutuya üç öğe ekliyoruz.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
@@ -40,24 +40,24 @@ sdt.ListItems.Add(new SdtListItem("Item 1", "1"));
 sdt.ListItems.Add(new SdtListItem("Item 2", "2"));
 ```
 
-## الخطوة 4: إلحاق StructuredDocumentTag بالمستند
- قم بإلحاق عنصر تحكم محتوى مربع التحرير والسرد بنص المستند باستخدام`AppendChild` طريقة نص القسم الأول من المستند.
+## 4. Adım: StructuredDocumentTag'i Belgeye Ekleyin
+ Birleşik giriş kutusu içerik denetimini belgenin gövdesine şu şekilde ekleyin:`AppendChild` belgenin ilk bölümünün gövdesi yöntemi.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdt);
 ```
 
-## الخطوة 5: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.ComboBoxContentControl.docx".
+## 5. Adım: Belgeyi Kaydedin
+ kullanarak belgeyi belirtilen dizine kaydedin.`Save` yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.ComboBoxContentControl.docx" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ```
 
-### مثال على شفرة المصدر للتحكم في محتوى صندوق التحرير والسرد باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Combo Box Content Control için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -69,4 +69,4 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 	doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إنشاء عنصر تحكم محتوى Combo Box في مستند Word باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenizde Birleşik Giriş Kutusu İçerik Kontrolü'nü başarıyla oluşturdunuz.

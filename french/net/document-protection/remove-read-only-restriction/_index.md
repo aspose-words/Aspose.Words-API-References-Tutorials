@@ -1,17 +1,17 @@
 ---
-title: إزالة قيود القراءة فقط
-linktitle: إزالة قيود القراءة فقط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET.
+title: Supprimer la restriction de lecture seule
+linktitle: Supprimer la restriction de lecture seule
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Découvrez comment supprimer la restriction en lecture seule d'un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/document-protection/remove-read-only-restriction/
 ---
-في هذا البرنامج التعليمي ، سنرشدك عبر خطوات استخدام ميزة إزالة قيود القراءة فقط Aspose.Words for .NET. تتيح لك هذه الميزة إزالة قيود القراءة فقط من مستند Word لجعله قابلاً للتحرير. اتبع الخطوات التالية:
+Dans ce didacticiel, nous vous expliquerons les étapes à suivre pour utiliser Aspose.Words pour la fonctionnalité de suppression des restrictions en lecture seule .NET. Cette fonctionnalité vous permet de supprimer la restriction de lecture seule d'un document Word pour le rendre modifiable. Suivez les étapes ci-dessous :
 
-## الخطوة 1: إنشاء المستند وإعداد الحماية
+## Étape 1 : création du document et définition de la protection
 
-ابدأ بإنشاء مثيل لفئة المستند:
+Commencez par créer une instance de la classe Document :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -19,50 +19,50 @@ Document doc = new Document();
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
-قم بتعيين كلمة مرور للمستند باستخدام خاصية SetPassword () للكائن WriteProtection:
+Définissez un mot de passe pour le document à l'aide de la propriété SetPassword() de l'objet WriteProtection :
 
-تأكد من استبدال "MyPassword" بكلمة المرور الفعلية التي استخدمتها لحماية المستند.
+Assurez-vous de remplacer "MyPassword" par le mot de passe réel que vous avez utilisé pour protéger le document.
 
-## الخطوة 2: إزالة قيود القراءة فقط
+## Étape 2 : Supprimer la restriction de lecture seule
 
-لإزالة تقييد القراءة فقط ، قم بتعيين الخاصية ReadOnlyRecommended إلى false:
+Pour supprimer la restriction de lecture seule, définissez la propriété ReadOnlyRecommended sur false :
 
 ```csharp
 doc.WriteProtection.ReadOnlyRecommended = false;
 ```
 
-## الخطوة 3: تطبيق حماية غير مقيدة
+## Étape 3 : Appliquer la protection illimitée
 
-أخيرًا ، قم بتطبيق حماية غير مقيدة باستخدام طريقة حماية كائن المستند:
+Enfin, appliquez une protection illimitée à l'aide de la méthode Protect() de l'objet Document :
 
 ```csharp
 doc.Protect(ProtectionType.NoProtection);
 doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند بدون قيود القراءة فقط.
+Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour enregistrer le document sans la restriction de lecture seule.
 
-### مثال على شفرة المصدر الخاصة بإزالة القيود للقراءة فقط باستخدام Aspose.Words for .NET
+### Exemple de code source pour supprimer la restriction en lecture seule à l'aide de Aspose.Words pour .NET
 
-فيما يلي شفرة المصدر الكاملة لإزالة قيود القراءة فقط باستخدام Aspose.Words for .NET:
+Voici le code source complet pour supprimer la restriction en lecture seule à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	
-	// أدخل كلمة مرور يصل طولها إلى 15 حرفًا.
+	// Saisissez un mot de passe comportant jusqu'à 15 caractères.
 	doc.WriteProtection.SetPassword("MyPassword");
 
-	// قم بإزالة خيار القراءة فقط.
+	// Supprimez l'option de lecture seule.
 	doc.WriteProtection.ReadOnlyRecommended = false;
 
-	// تطبيق الحماية ضد الكتابة دون أي حماية.
+	// Appliquez la protection en écriture sans aucune protection.
 	doc.Protect(ProtectionType.NoProtection);
 	doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة إزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET.
+En suivant ces étapes, vous pouvez facilement supprimer la restriction en lecture seule d'un document Word avec Aspose.Words pour .NET.
 

@@ -1,51 +1,51 @@
 ---
-title: حذف محتوى القسم
-linktitle: حذف محتوى القسم
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية حذف المحتوى من قسم معين من مستند Word باستخدام Aspose.Words for .NET.
+title: Abschnittsinhalt löschen
+linktitle: Abschnittsinhalt löschen
+second_title: Aspose.Words für .NET API-Referenz
+description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Inhalte aus einem bestimmten Abschnitt eines Word-Dokuments löschen.
 type: docs
 weight: 10
 url: /de/net/working-with-section/delete-section-content/
 ---
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية حذف المحتوى من قسم معين من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يمكن أن تكون إزالة المحتوى من أحد الأقسام مفيدة عندما تريد إعادة تعيين محتوى معين أو إزالته من هذا القسم. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In diesem Tutorial zeigen wir Ihnen, wie Sie mithilfe der Aspose.Words-Bibliothek für .NET Inhalte aus einem bestimmten Abschnitt eines Word-Dokuments löschen. Das Entfernen von Inhalten aus einem Abschnitt kann nützlich sein, wenn Sie bestimmte Inhalte aus diesem Abschnitt zurücksetzen oder entfernen möchten. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على القسم الذي تريد حذف محتواه
+## Voraussetzungen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
+- Grundkenntnisse der Programmiersprache C#
+- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
+- Ein Word-Dokument, das den Abschnitt enthält, dessen Inhalt Sie löschen möchten
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+ Zuerst müssen Sie den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments festlegen. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وانتقل إلى القسم
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فصل. سنصل إلى القسم الأول من المستند باستخدام الفهرس 0.
+## Schritt 2: Laden Sie das Dokument und gehen Sie zum Abschnitt
+ Als nächstes laden wir das Word-Dokument in eine Instanz von`Document` Klasse. Wir greifen über den Index 0 auf den ersten Abschnitt des Dokuments zu.
 
 ```csharp
-//قم بتحميل المستند
+//Laden Sie das Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
-// قم بالوصول إلى القسم
+// Greifen Sie auf den Abschnitt zu
 Section section = doc.Sections[0];
 ```
 
-## الخطوة 3: حذف محتوى القسم
-لمسح محتوى القسم ، سنستخدم القسم`ClearContent` طريقة.
+## Schritt 3: Abschnittsinhalt löschen
+Um den Inhalt des Abschnitts zu löschen, verwenden wir die Abschnittsinhalte`ClearContent` Methode.
 
 ```csharp
 section.ClearContent();
 ```
 
-### نموذج التعليمات البرمجية المصدر لحذف محتوى القسم باستخدام Aspose.Words for .NET 
+### Beispielquellcode zum Löschen von Abschnittsinhalten mit Aspose.Words für .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -54,5 +54,5 @@ section.ClearContent();
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية حذف المحتوى من قسم معين من مستند Word باستخدام Aspose.Words for .NET. تسمح لك إزالة المحتوى من القسم بإعادة تعيين محتوى معين أو إزالته من هذا القسم. لا تتردد في تخصيص هذه الميزة واستخدامها وفقًا لاحتياجاتك الخاصة.
+## Abschluss
+In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET Inhalte aus einem bestimmten Abschnitt eines Word-Dokuments löscht. Durch das Entfernen von Inhalten aus einem Abschnitt können Sie bestimmte Inhalte aus diesem Abschnitt zurücksetzen oder entfernen. Sie können diese Funktion gerne an Ihre spezifischen Bedürfnisse anpassen und nutzen.

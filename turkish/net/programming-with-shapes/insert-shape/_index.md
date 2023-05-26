@@ -1,38 +1,38 @@
 ---
-title: أدخل الشكل
-linktitle: أدخل الشكل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الأشكال في مستند Word باستخدام Aspose.Words for .NET.
+title: Şekil Ekle
+linktitle: Şekil Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesine nasıl şekil ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-shapes/insert-shape/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إدراج الأشكال في مستند Word باستخدام Aspose.Words for .NET. يمكن استخدام الأشكال لتحسين المظهر المرئي وتخطيط المستندات الخاصة بك.
+Bu öğretici, Aspose.Words for .NET kullanarak bir Word belgesine şekillerin nasıl ekleneceğini açıklar. Şekiller, belgelerinizin görsel görünümünü ve düzenini geliştirmek için kullanılabilir.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Önkoşullar
+Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words for .NET kitaplığı yüklendi.
+- Temel C# bilgisi ve Word belgeleriyle çalışma.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## 1. Adım: Belge Dizinini kurun
+ Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## 2. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
+ Yeni bir örneğini oluştur`Document` sınıf ve bir`DocumentBuilder` belgeyle çalışmak için nesne.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: أدخل الأشكال
- استخدم ال`InsertShape` طريقة`DocumentBuilder` كائن لإدراج الأشكال في المستند. حدد نوع الشكل والمواضع النسبية الأفقية والعمودية وأبعاد الصفحة وحجمها ونوع الالتفاف. يمكنك أيضًا ضبط زاوية دوران الأشكال إذا رغبت في ذلك.
+## 3. Adım: Şekilleri Ekleyin
+ Kullan`InsertShape` yöntemi`DocumentBuilder` belgeye şekiller eklemek için nesne. Şekil tipini, göreli yatay ve dikey konumları, sayfa boyutlarını, boyutunu ve sarma tipini belirtin. İsterseniz şekillerin dönüş açısını da ayarlayabilirsiniz.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,
@@ -43,8 +43,8 @@ shape = builder.InsertShape(ShapeType.TextBox, 50, 50);
 shape.Rotation = 30.0;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithShapes.InsertShape.docx".
+## 4. Adım: Belgeyi Kaydedin
+ kullanarak belgeyi belirtilen dizine kaydedin.`Save` yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithShapes.InsertShape.docx" olarak kaydediyoruz.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
@@ -54,10 +54,10 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-### مثال على التعليمات البرمجية المصدر لـ Insert Shape باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Insert Shape için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -75,4 +75,4 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 	doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-هذا كل شيء! لقد نجحت في إدراج الأشكال في مستند Word باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenize şekilleri başarıyla eklediniz.

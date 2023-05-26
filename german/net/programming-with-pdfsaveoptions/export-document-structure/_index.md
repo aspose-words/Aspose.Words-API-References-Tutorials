@@ -1,62 +1,62 @@
 ---
-title: تصدير هيكل الوثيقة
-linktitle: تصدير هيكل الوثيقة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتصدير بنية المستند باستخدام Aspose.Words for .NET.
+title: Dokumentstruktur exportieren
+linktitle: Dokumentstruktur exportieren
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Exportieren der Dokumentstruktur mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/export-document-structure/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة بنية مستند التصدير مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، سوف تكون قادرًا على فهم كيفية تصدير بنية المستند وإنشاء ملف PDF بهيكل المستند المرئي.
+Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zur Verwendung der Funktion „Dokumentstruktur exportieren“ mit Aspose.Words für .NET. Wir werden jeden Teil des Codes im Detail erklären. Am Ende dieses Tutorials werden Sie verstehen, wie Sie die Struktur eines Dokuments exportieren und ein PDF mit sichtbarer Struktur des Dokuments erstellen.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert und konfiguriert haben. Die Bibliothek und Installationsanweisungen finden Sie auf der Aspose-Website.
 
-## الخطوة 1: تحديد دليل المستند
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Zunächst müssen Sie den Pfad zu dem Verzeichnis definieren, in dem sich Ihre Dokumente befinden. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Schritt 2: Laden Sie das Dokument hoch
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Paragraphs.docx" ويقع في دليل المستندات المحدد.
+Als nächstes müssen wir das Dokument laden, das wir verarbeiten möchten. In diesem Beispiel gehen wir davon aus, dass das Dokument „Paragraphs.docx“ heißt und sich im angegebenen Dokumentenverzeichnis befindet.
 
 ```csharp
 Document doc = new Document(dataDir + "Paragraphs.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF
+## Schritt 3: Konfigurieren Sie die Optionen zum Speichern als PDF
 
- لتصدير بنية المستند وجعل الهيكل مرئيًا في جزء التنقل "المحتوى" في Adobe Acrobat Pro أثناء تحرير ملف PDF ، نحتاج إلى تكوين`PdfSaveOptions` كائن مع`ExportDocumentStructure` تعيين الخاصية على`true`.
+ Um die Dokumentstruktur zu exportieren und die Struktur beim Bearbeiten der PDF-Datei im Navigationsbereich „Inhalt“ von Adobe Acrobat Pro sichtbar zu machen, müssen wir das konfigurieren`PdfSaveOptions` Objekt mit dem`ExportDocumentStructure` Eigenschaft festgelegt auf`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
 ```
 
-## الخطوة 4: احفظ المستند كملف PDF بهيكل المستند
+## Schritt 4: Speichern Sie das Dokument als PDF mit der Dokumentstruktur
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Schließlich können wir das Dokument mit den zuvor konfigurierten Speicheroptionen im PDF-Format speichern.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تصدير بنية المستند وإنشاء ملف PDF بهيكل المستند المرئي باستخدام Aspose.Words for .NET.
+Das ist alles ! Sie haben mit Aspose.Words für .NET erfolgreich eine Dokumentstruktur exportiert und eine PDF-Datei mit sichtbarer Dokumentstruktur generiert.
 
-### نموذج التعليمات البرمجية المصدر لتصدير بنية المستند باستخدام Aspose.Words for .NET
+### Beispielquellcode zum Exportieren der Dokumentstruktur mit Aspose.Words für .NET
 
 
 ```csharp
 
-            // المسار إلى دليل المستندات.
+            // Der Pfad zum Dokumentenverzeichnis.
 			string dataDir = "YOUR DOCUMENT DIRECTORY";
             Document doc = new Document(dataDir + "Paragraphs.docx");
 
-            // سيتم زيادة حجم الملف وستظهر البنية في جزء التنقل "المحتوى"
-            // Adobe Acrobat Pro ، أثناء تحرير ملف .pdf.
+            // Die Dateigröße wird erhöht und die Struktur wird im Navigationsbereich „Inhalt“ sichtbar
+            // von Adobe Acrobat Pro, während Sie die PDF-Datei bearbeiten.
             PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
 
             doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);

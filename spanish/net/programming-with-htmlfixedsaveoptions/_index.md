@@ -1,16 +1,16 @@
 ---
-title: البرمجة باستخدام Htmlfixedsaveoptions
-linktitle: البرمجة باستخدام Htmlfixedsaveoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على استخدام الخط من الجهاز الهدف وكتابة جميع قواعد css في ملف واحد
+title: Programación con Htmlfixedsaveoptions
+linktitle: Programación con Htmlfixedsaveoptions
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales contienen fuentes de uso de la máquina de destino y escriben todas las reglas CSS en un solo archivo
 type: docs
 weight: 1610
 url: /es/net/programming-with-htmlfixedsaveoptions/
 ---
-تم تصميم البرامج التعليمية لـ Aspose.Words for .NET لمساعدتك على إتقان استخدام مكتبة Aspose.Words في مشاريع .NET الخاصة بك. أحد هذه البرامج التعليمية ، بعنوان "البرمجة باستخدام HtmlFixedSaveOptions" ، يرشدك عبر الخطوات المطلوبة لتحويل مستند Word إلى HTML ثابت باستخدام خيارات الحفظ HtmlFixedSaveOptions. يشرح هذا البرنامج التعليمي كيفية تكوين خيارات الحفظ ، وكيفية تحديد إعدادات التخطيط ، وكيفية إدارة الصور والخطوط أثناء التحويل. ستتعلم أيضًا كيفية تخصيص خيارات النسخ الاحتياطي لتلبية احتياجاتك الخاصة.
+Los tutoriales de Aspose.Words para .NET están diseñados para ayudarlo a dominar el uso de la biblioteca Aspose.Words en sus proyectos de .NET. Uno de estos tutoriales, titulado "Programación con HtmlFixedSaveOptions", lo guía a través de los pasos necesarios para convertir un documento de Word a HTML fijo usando las opciones de guardado de HtmlFixedSaveOptions. Este tutorial explica cómo configurar las opciones de guardado, cómo especificar la configuración de diseño y cómo administrar imágenes y fuentes durante la conversión. También aprenderá a personalizar las opciones de copia de seguridad para satisfacer sus necesidades específicas.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [استخدم الخط من الجهاز المستهدف](./use-font-from-target-machine/) | تعرف على كيفية تحويل مستند Word إلى HTML ثابت باستخدام خطوط الجهاز الهدف باستخدام Aspose.Words for .NET. |
-| [اكتب جميع قواعد Css في ملف واحد](./write-all-css-rules-in-single-file/) | تعرف على كيفية تحويل مستند Word إلى HTML ثابت عن طريق كتابة جميع قواعد CSS في ملف واحد باستخدام Aspose.Words for .NET. |
+| [Usar fuente de la máquina de destino](./use-font-from-target-machine/) | Aprenda a convertir un documento de Word a HTML fijo usando las fuentes de la máquina de destino con Aspose.Words para .NET. |
+| [Escribir todas las reglas de CSS en un solo archivo](./write-all-css-rules-in-single-file/) | Aprenda a convertir un documento de Word a HTML fijo escribiendo todas las reglas de CSS en un solo archivo con Aspose.Words para .NET. |

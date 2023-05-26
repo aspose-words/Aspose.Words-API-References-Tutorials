@@ -1,36 +1,36 @@
 ---
-title: استخدم مصدر التحذير
-linktitle: استخدم مصدر التحذير
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام مصدر التحذير مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Uyarı Kaynağını Kullan
+linktitle: Uyarı Kaynağını Kullan
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile uyarı kaynağının nasıl kullanılacağını adım adım öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/use-warning-source/
 ---
 
-في هذا المثال ، سوف نوضح لك كيفية استخدام مصدر التحذير مع Aspose.Words for .NET. يشير مصدر التحذير إلى أصل التحذير عند استخدام وظيفة رد الاتصال.
+Bu örnekte, uyarı kaynağının Aspose.Words for .NET ile nasıl kullanılacağını göstereceğiz. Uyarı kaynağı, geri arama işlevini kullanırken uyarının kaynağını belirtir.
 
-## الخطوة 1: تحميل المستند
+## 1. Adım: Belgeyi yükleme
 
- سنقوم بتحميل مستند موجود يحتوي على تحذيرات باستخدام امتداد`Load` طريقة`Document` فصل.
+ Kullanarak uyarılar içeren mevcut bir belgeyi yükleyeceğiz.`Load` yöntemi`Document` sınıf.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Emphases markdown warning.docx");
 ```
 
-## الخطوة 3: استخدام مصدر التحذير
+## 3. Adım: Uyarı Kaynağını Kullanma
 
- سنستخدم مصدر التحذير من خلال تعيين المستند`WarningCallback` ملكية لمجموعة من`WarningInfo` أشياء.
+ Belgenin ayarını yaparak uyarı kaynağını kullanacağız.`WarningCallback` bir koleksiyona ait mülk`WarningInfo` nesneler.
 
 ```csharp
 WarningInfoCollection warnings = new WarningInfoCollection();
 doc.WarningCallback = warnings;
 ```
 
-## الخطوة 4: حفظ المستند
+## 4. Adım: Belgeyi kaydetme
 
-أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب.
+Son olarak belgeyi istediğimiz formatta kaydedebiliriz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
@@ -41,10 +41,10 @@ if (warningInfo.Source == WarningSource.Markdown)
 }
 ```
 
-### مثال التعليمات البرمجية المصدر لاستخدام مصدر التحذير مع Aspose.Words for .NET
+### Uyarı Kaynağını Aspose.Words for .NET ile Kullanmak için Örnek Kaynak Kodu
 
 ```csharp
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Emphases markdown warning.docx");
 
@@ -61,4 +61,4 @@ if (warningInfo.Source == WarningSource.Markdown)
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام مصدر التحذير مع Aspose.Words for .NET.
+Tebrikler! Artık uyarı kaynağının Aspose.Words for .NET ile nasıl kullanılacağını öğrendiniz.

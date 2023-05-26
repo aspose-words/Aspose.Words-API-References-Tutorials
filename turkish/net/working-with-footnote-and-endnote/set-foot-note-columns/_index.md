@@ -1,54 +1,54 @@
 ---
-title: تعيين أعمدة الملاحظات القدم
-linktitle: تعيين أعمدة الملاحظات القدم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين عدد الأعمدة للحواشي السفلية في مستندات Word باستخدام Aspose.Words for .NET.
+title: Dip Not Sütunlarını Ayarla
+linktitle: Dip Not Sütunlarını Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerindeki dipnotlar için sütun sayısını nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-footnote-and-endnote/set-foot-note-columns/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتعيين عدد الأعمدة للحواشي السفلية في مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Bu adım adım öğreticide, bir Word belgesindeki dipnotlar için sütun sayısını ayarlamak üzere Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
 
-## الخطوة 1: تهيئة كائن المستند
+## 1. Adım: Belge Nesnesini Başlatma
 
- أولاً ، قم بتهيئة ملف`Document` من خلال توفير المسار إلى المستند المصدر:
+ İlk olarak,`Document` kaynak belgenizin yolunu sağlayarak itiraz edin:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## الخطوة 2: إعداد أعمدة الحواشي السفلية
+## 2. Adım: Dipnot Sütunlarını Ayarlama
 
- بعد ذلك ، قم بالوصول إلى`FootnoteOptions`خاصية المستند وتعيين`Columns` الخاصية لتحديد عدد أعمدة الحواشي السفلية. في هذا المثال ، قمنا بتعيينه على 3 أعمدة:
+ Ardından, şuraya erişin:`FootnoteOptions`belgenin özelliğini ayarlayın ve`Columns` dipnotlar için sütun sayısını belirtmek için özellik. Bu örnekte, onu 3 sütuna ayarladık:
 
 ```csharp
 doc.FootnoteOptions.Columns = 3;
 ```
 
-## الخطوة 3: حفظ المستند
+## 3. Adım: Belgeyi Kaydetme
 
-أخيرًا ، احفظ المستند المعدل:
+Son olarak, değiştirilen belgeyi kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootNoteColumns.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تعيين عدد الأعمدة للحواشي السفلية في مستند Word باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET kullanarak bir Word belgesindeki dipnotlar için sütun sayısını başarıyla ayarladınız.
 
-### مثال على شفرة المصدر لـ Set Footnote Columns باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Set Footnote Columns için örnek kaynak kodu
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 Document doc = new Document(dataDir + "Document.docx");
 
-// حدد عدد الأعمدة التي يتم بها تنسيق منطقة الحواشي السفلية.
+// Dipnot alanının biçimlendirildiği sütun sayısını belirtin.
 doc.FootnoteOptions.Columns = 3;
 
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootNoteColumns.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimlerinize göre değiştirin.

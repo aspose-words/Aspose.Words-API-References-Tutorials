@@ -1,21 +1,21 @@
 ---
-title: أدخل جدول المحتويات
-linktitle: أدخل جدول المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج جدول محتويات في مستندات Word باستخدام Aspose.Words for .NET.
+title: 插入目录
+linktitle: 插入目录
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入目录。
 type: docs
 weight: 10
 url: /zh/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج جدول محتويات في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إنشاء جدول محتويات بالعناوين المناسبة وأرقام الصفحات.
+在这个综合教程中，您将学习如何使用 Aspose.Words for .NET 将目录插入到 Word 文档中。我们将指导您完成整个过程，并为您提供必要的 C# 代码片段。到本指南结束时，您将能够生成具有适当标题和页码的目录。
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## 先决条件
+在我们开始之前，请确保您具备以下先决条件：
+- Aspose.Words for .NET 库安装在您的系统上。
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 第 1 步：创建新文档和 DocumentBuilder
+首先，使用 Document 类创建一个新文档并初始化一个 DocumentBuilder 对象：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,15 +23,15 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل جدول المحتويات
-بعد ذلك ، استخدم الأسلوب InsertTableOfContents لفئة DocumentBuilder لإدراج جدول محتويات. حدد خيارات التنسيق المطلوبة في الطريقة:
+## 第 2 步：插入目录
+接下来，使用 DocumentBuilder 类的 InsertTableOfContents 方法插入目录。在方法中指定所需的格式设置选项：
 
 ```csharp
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## الخطوة 3: إضافة محتوى المستند
-بعد إدراج جدول المحتويات ، أضف محتوى المستند الفعلي. قم بتعيين أنماط العناوين المناسبة باستخدام StyleIdentifier:
+## 第 3 步：添加文档内容
+插入目录后，添加实际的文档内容。使用 StyleIdentifier 设置适当的标题样式：
 
 ```csharp
 builder.InsertBreak(BreakType.PageBreak);
@@ -60,35 +60,35 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## الخطوة 4: تحديث جدول المحتويات
-سيكون جدول المحتويات المُدرج حديثًا فارغًا في البداية. لتعبئتها ، قم بتحديث الحقول في المستند:
+## 第 4 步：更新目录
+新插入的目录最初是空的。要填充它，请更新文档中的字段：
 
 ```csharp
 doc.UpdateFields();
 ```
 
-## الخطوة 5: احفظ المستند
-بعد إدراج جدول المحتويات وتحديث الحقول ، احفظ المستند في ملف باستخدام طريقة Save من فئة Document:
+## 第 5 步：保存文档
+插入目录并更新字段后，使用 Document 类的 Save 方法将文档保存到文件中：
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
 
-### مثال كود المصدر لإدراج جدول المحتويات باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال جدول محتويات باستخدام Aspose.Words for .NET:
+### 使用 Aspose.Words for .NET 插入目录的示例源代码
+下面是使用 Aspose.Words for .NET 插入目录的完整源代码：
 
 ```csharp
 
             string dataDir = "YOUR DOCUMENT DIRECTORY";
 			
-            // تهيئة DocumentBuilder بكائن المستند
+            //使用 Document 对象初始化 DocumentBuilder
             Document doc = new Document();
             DocumentBuilder builder = new DocumentBuilder(doc);
             
-            // إدراج جدول المحتويات
+            //插入目录a
 			builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
             
-            // ابدأ محتوى المستند الفعلي في الصفحة الثانية.
+            //在第二页开始实际的文档内容。
             builder.InsertBreak(BreakType.PageBreak);
 
             builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
@@ -121,8 +121,8 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
             builder.Writeln("Heading 3.3");
 
             
-            // سيكون جدول المحتويات المُدرج حديثًا فارغًا في البداية.
-            // يجب أن يتم ملؤها عن طريق تحديث الحقول في المستند.
+            //新插入的目录最初是空的。
+            //它需要通过更新文档中的字段来填充。
             doc.UpdateFields();
             
 

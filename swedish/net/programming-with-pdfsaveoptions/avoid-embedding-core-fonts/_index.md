@@ -1,62 +1,62 @@
 ---
-title: تجنب تضمين الخطوط الأساسية
-linktitle: تجنب تضمين الخطوط الأساسية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تجنب تضمين الخط الأساسي عند تحويل مستندات Word إلى PDF باستخدام Aspose.Words for .NET.
+title: Undvik att bädda in kärnteckensnitt
+linktitle: Undvik att bädda in kärnteckensnitt
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du undviker grundläggande teckensnittsinbäddning när du konverterar Word-dokument till PDF med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات استخدام ميزة Avoid Basic Font Embedding مع Aspose.Words for .NET. تتيح لك هذه الميزة التحكم في ما إذا كان يجب تضمين الخطوط الأساسية مثل Arial و Times New Roman وما إلى ذلك في ملف PDF عند تحويل مستند Word. اتبع الخطوات التالية:
+I den här handledningen går vi igenom stegen för att använda funktionen Undvik grundläggande teckensnittsinbäddning med Aspose.Words för .NET. Den här funktionen låter dig styra om grundläggande typsnitt som Arial, Times New Roman, etc. måste bäddas in i PDF:en när du konverterar ett Word-dokument. Följ stegen nedan:
 
-## الخطوة 1: تحميل المستند
+## Steg 1: Ladda dokumentet
 
-ابدأ بتحميل مستند Word الذي تريد تحويله إلى PDF:
+Börja med att ladda upp Word-dokumentet du vill konvertera till PDF:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح لمستند Word الخاص بك.
+Var noga med att ange rätt sökväg till ditt Word-dokument.
 
-## الخطوة 2: تعيين خيارات تحويل PDF
+## Steg 2: Ställ in PDF-konverteringsalternativ
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وقم بتمكين تجنب تضمين الخط الأساسي:
+Skapa en instans av klassen PdfSaveOptions och aktivera grundläggande teckensnittsinbäddning:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
 ```
 
-يتحكم هذا الخيار فيما إذا كان يجب تضمين الخطوط الأساسية في ملف PDF أم لا.
+Det här alternativet styr om basteckensnitt ska bäddas in i PDF:en eller inte.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## Steg 3: Konvertera dokument till PDF
 
- استخدم ال`Save` طريقة لتحويل مستند Word إلى PDF عن طريق تحديد خيارات التحويل:
+ Använd`Save` metod för att konvertera Word-dokumentet till PDF genom att ange konverteringsalternativ:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Se till att ange rätt sökväg för att spara den konverterade PDF-filen.
 
-### مثال على شفرة المصدر لتجنب تضمين الخطوط الأساسية باستخدام Aspose.Words for .NET
+### Exempel på källkod för Undvik att bädda in kärnteckensnitt med Aspose.Words för .NET
 
-إليك الكود المصدري الكامل لاستخدام الميزة لتجنب تضمين الخط الأساسي مع Aspose.Words for .NET:
+Här är den fullständiga källkoden för att använda funktionen för att undvika inbäddning av kärnteckensnitt med Aspose.Words för .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// لن يتم تضمين ملف PDF الناتج مع الخطوط الأساسية مثل Arial و Times New Roman وما إلى ذلك.
+	// Utdata-PDF-filen kommer inte att bäddas in med kärnteckensnitt som Arial, Times New Roman etc.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 
 ```
 
-باتباع هذه الخطوات ، يمكنك التحكم بسهولة فيما إذا كان يجب تضمين الخطوط الأساسية في ملف PDF عند تحويل مستند Word باستخدام Aspose.Words for .NET.
+Genom att följa dessa steg kan du enkelt kontrollera om basteckensnitt ska bäddas in i PDF:en när du konverterar ett Word-dokument med Aspose.Words för .NET.
 

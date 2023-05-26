@@ -1,18 +1,18 @@
 ---
-title: إنشاء سطر توقيع جديد وتعيين معرف الموفر
-linktitle: إنشاء سطر توقيع جديد وتعيين معرف الموفر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستند Word باستخدام Aspose.Words for .NET.
+title: 创建新的签名行并设置提供商 ID
+linktitle: 创建新的签名行并设置提供商 ID
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建新的签名行和设置提供商 ID。
 type: docs
 weight: 10
 url: /zh/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لاستخدام ميزة إنشاء خط توقيع جديد وتعيين معرّف الموفر مع Aspose.Words for .NET. تتيح لك هذه الميزة إدراج سطر توقيع في مستند Word ، وتعيين الخيارات المخصصة وتوقيع المستند. اتبع الخطوات التالية:
+在本教程中，我们将引导您完成使用 Aspose.Words for .NET 的创建新签名行和设置提供者 ID 功能的步骤。此功能允许您在 Word 文档中插入签名行，设置自定义选项并签署文档。请按照以下步骤操作：
 
-## الخطوة 1: إنشاء المستند والمولد
+## 第 1 步：创建文档和生成器
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+首先创建一个 Document 类的实例和一个 DocumentBuilder 对象：
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -20,9 +20,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تعيين خيارات خط التوقيع
+## 第 2 步：设置签名行选项
 
-قم بإنشاء مثيل لفئة SignatureLineOptions وقم بتعيين الخيارات المطلوبة:
+创建 SignatureLineOptions 类的实例并设置所需的选项：
 
 ```csharp
 SignatureLineOptions signatureLineOptions = new SignatureLineOptions
@@ -37,37 +37,37 @@ AllowComments = true
 };
 ```
 
-## الخطوة 3: إدخال سطر التوقيع
+## 第 3 步：插入签名行
 
-استخدم طريقة InsertSignatureLine () لكائن DocumentBuilder لإدراج سطر التوقيع في المستند:
+使用 DocumentBuilder 对象的 InsertSignatureLine() 方法将签名行插入到文档中：
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
 ```
 
-## الخطوة 4: قم بتعيين معرف المزود
+## 第 4 步：设置提供商 ID
 
-قم بتعيين معرف الموفر لسطر التوقيع باستخدام خاصية ProviderId:
+使用 ProviderId 属性设置签名行的提供者 ID：
 
 ```csharp
 signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
 ```
 
-تأكد من تحديد معرف الموفر الصحيح لحالة الاستخدام الخاصة بك.
+请务必为您的用例指定正确的提供商 ID。
 
-## الخطوة 5: احفظ المستند
+## 第 5 步：保存文档
 
-احفظ المستند المعدل:
+保存修改后的文档：
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند.
+请务必指定正确的路径和文件名以保存文档。
 
-## الخطوة السادسة: توقيع الوثيقة
+## 第 6 步：签署文件
 
-لتوقيع الوثيقة ، تحتاج إلى تعيين خيارات التوقيع واستخدام فئة DigitalSignatureUtil:
+要签署文档，您需要设置签名选项并使用 DigitalSignatureUtil 类：
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -84,15 +84,15 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx"
 	dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions)
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند والشهادة والمستند الموقع.
+请务必为文档、证书和签名文档指定正确的路径。
 
-### مثال على شفرة المصدر لـ Create New Signature Line And Set Provider ID باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 创建新签名行和设置提供商 ID 的示例源代码
 
-إليك شفرة المصدر الكاملة لإنشاء سطر توقيع جديد وتعيين معرف الموفر باستخدام Aspose.Words for .NET:
+下面是创建新签名行并使用 Aspose.Words for .NET 设置提供者 ID 的完整源代码：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -128,5 +128,5 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx"
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+按照这些步骤，您可以使用 Aspose.Words for .NET 轻松地创建一个新的签名行并在您的 Word 文档中设置提供商 ID。
 

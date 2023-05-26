@@ -1,50 +1,50 @@
 ---
-title: مثال مصدر خط Steam
-linktitle: مثال مصدر خط Steam
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام مصدر خط تدفق الموارد لتحميل الخطوط المخصصة في Aspose.Words for .NET.
+title: Kaynak Steam Yazı Tipi Kaynağı Örneği
+linktitle: Kaynak Steam Yazı Tipi Kaynağı Örneği
+second_title: Aspose.Words for .NET API Referansı
+description: Özel yazı tiplerini Aspose.Words for .NET'e yüklemek için Kaynak Akışı Yazı Tipi Kaynağını nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/resource-steam-font-source-example/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام مصدر خط تدفق الموارد مع Aspose.Words for .NET. يتيح لك مصدر الخط هذا تحميل الخطوط من تدفق الموارد ، والذي يمكن أن يكون مفيدًا عندما تريد دمج الخطوط المخصصة في تطبيقك.
+Bu öğreticide, Resource Flow Font Source'u Aspose.Words for .NET ile nasıl kullanacağınız konusunda size yol göstereceğiz. Bu yazı tipi kaynağı, özel yazı tiplerini uygulamanıza dahil etmek istediğinizde yararlı olabilecek bir kaynak akışından yazı tiplerini yüklemenize olanak tanır.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند وتعيين مصدر خط تدفق الموارد
- بعد ذلك ، سنقوم بتحميل المستند باستخدام ملف`Document` فئة وتعيين مصدر خط تدفق الموارد باستخدام`FontSettings.DefaultInstance.SetFontsSources()` فصل. سيسمح هذا لـ Aspose.Words بالعثور على الخطوط في تدفق الموارد.
+## 2. Adım: Belgeyi Yükleyin ve Kaynak Akışı Yazı Tipi Kaynağını Ayarlayın
+ Ardından, kullanarak belgeyi yükleyeceğiz`Document` class ve kullanarak kaynak akışı yazı tipi kaynağını ayarlayın.`FontSettings.DefaultInstance.SetFontsSources()` sınıf. Bu, Aspose.Words'ün kaynak akışındaki yazı tiplerini bulmasını sağlayacaktır.
 
 ```csharp
-// تحميل المستند وتعيين مصدر خط تدفق الموارد
+// Belge yükleyin ve kaynak akışı yazı tipi kaynağını ayarlayın
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 { new SystemFontSource(), new ResourceSteamFontSource() });
 ```
 
-## الخطوة 3: احفظ المستند
-أخيرًا ، سنحفظ المستند. سيتم تحميل الخطوط من تدفق الموارد المحدد وتضمينها في المستند.
+## 3. Adım: Belgeyi kaydedin
+Son olarak belgeyi kaydedeceğiz. Yazı tipleri, belirtilen kaynak akışından yüklenecek ve belgeye gömülecektir.
 
 ```csharp
-// احفظ المستند
+// belgeyi kaydet
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
-### نموذج رمز مصدر لمثال مصدر خط Resource Steam باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Kaynak Steam Yazı Tipi Kaynak Örneği için örnek kaynak kodu 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -53,5 +53,5 @@ FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية استخدام Resource Flow Font Source مع Aspose.Words for .NET. تتيح لك هذه الميزة تحميل الخطوط من موجز الموارد ، وهو أمر مفيد عندما تريد تضمين الخطوط المخصصة في مستنداتك. جرب خطوطًا مختلفة واستكشف الإمكانيات التي توفرها Aspose.Words لإدارة الخطوط.
+## Çözüm
+Bu eğitimde, Resource Flow Font Source'u Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz. Bu özellik, belgelerinize özel yazı tiplerini gömmek istediğinizde kullanışlı olan bir kaynak beslemesinden yazı tiplerini yüklemenizi sağlar. Farklı yazı tiplerini deneyin ve Aspose.Words'ün yazı tipi yönetimi için sunduğu olanakları keşfedin.

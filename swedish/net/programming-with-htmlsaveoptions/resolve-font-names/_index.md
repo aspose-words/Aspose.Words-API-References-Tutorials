@@ -1,33 +1,33 @@
 ---
-title: حل أسماء الخطوط
-linktitle: حل أسماء الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لحل أسماء الخطوط المفقودة عند التحويل إلى HTML باستخدام Aspose.Words for .NET.
+title: Lös teckensnittsnamn
+linktitle: Lös teckensnittsnamn
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg guide för att lösa saknade teckensnittsnamn vid konvertering till HTML med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر التعليمات البرمجية المصدر C # لحل أسماء الخطوط المفقودة باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة حل أسماء الخطوط المفقودة تلقائيًا عند تحويل مستند إلى HTML.
+I den här handledningen går vi igenom C#-källkoden för att lösa saknade teckensnittsnamn med Aspose.Words för .NET. Med den här funktionen kan du automatiskt lösa saknade teckensnittsnamn när du konverterar ett dokument till HTML.
 
-## الخطوة 1: إعداد المشروع
+## Steg 1: Projektinställning
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
 
-## الخطوة الثانية: تحميل المستند
+## Steg 2: Ladda dokumentet
 
-في هذه الخطوة ، سنقوم بتحميل المستند لتتم معالجته. استخدم الكود التالي لتحميل المستند من دليل محدد:
+detta steg kommer vi att ladda dokumentet som ska behandlas. Använd följande kod för att ladda dokumentet från en angiven katalog:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Missing font.docx");
 ```
 
- هذا الرمز ينشئ مثيل`Document` عن طريق تحميل المستند من الدليل المحدد.
+ Denna kod skapar en instans av`Document` genom att ladda dokumentet från den angivna katalogen.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي بتنسيق HTML
+## Steg 3: Konfigurera alternativ för HTML-säkerhetskopiering
 
-سنقوم الآن بتكوين خيارات حفظ HTML لحل أسماء الخطوط المفقودة أثناء التحويل. استخدم الكود التالي:
+Nu kommer vi att konfigurera HTML-sparalternativ för att lösa saknade teckensnittsnamn under konvertering. Använd följande kod:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
@@ -37,23 +37,23 @@ ResolveFontNames=true
 };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions`وتعيين`ResolveFontNames` الخيار ل`true` لحل أسماء الخطوط المفقودة عند التحويل إلى HTML. أيضا ،`PrettyFormat` تم تعيين الخيار إلى`true` للحصول على كود HTML منسق بشكل جيد.
+ Denna kod skapar en instans av`HtmlSaveOptions`och ställer in`ResolveFontNames` möjlighet att`true` för att lösa saknade teckensnittsnamn vid konvertering till HTML. Även`PrettyFormat` alternativet är inställt på`true` för att få snyggt formaterad HTML-kod.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## Steg 4: Konvertera och spara dokumentet till HTML
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+Slutligen kommer vi att konvertera dokumentet till HTML med hjälp av de HTML-sparalternativ som konfigurerats tidigare. Använd följande kod:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML عن طريق حل أسماء الخطوط المفقودة تلقائيًا ، ويحفظ ملف HTML المحول في الدليل المحدد.
+Denna kod konverterar dokumentet till HTML genom att automatiskt lösa saknade teckensnittsnamn och sparar den konverterade HTML-filen i den angivna katalogen.
 
-### مثال على شفرة المصدر لحل أسماء الخطوط باستخدام Aspose.Words for .NET
+### Exempel på källkod för Resolve Font Names med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Missing font.docx");
 
@@ -66,4 +66,4 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptio
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+ Var noga med att ange rätt sökväg till dokumentkatalogen i`dataDir` variabel.

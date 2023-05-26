@@ -1,48 +1,48 @@
 ---
-title: فك الإشارات المرجعية في الصف
-linktitle: فك الإشارات المرجعية في الصف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية فك تشابك الإشارات المرجعية للصفوف المتداخلة لإزالة صفوف معينة دون التأثير على الإشارات المرجعية الأخرى.
+title: Districare i segnalibri di riga
+linktitle: Districare i segnalibri di riga
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come districare i segnalibri di riga nidificati per rimuovere righe specifiche senza influire su altri segnalibri.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Untangle Row Bookmarks في Aspose.Words for .NET library. تتيح هذه الوظيفة إمكانية وضع نهايات الإشارات المرجعية للسطر في نفس السطر مثل بدايات الإشارات المرجعية.
+In questo articolo, esploreremo il codice sorgente C# precedente per comprendere come utilizzare la funzione Untangle Row Bookmarks nella libreria Aspose.Words per .NET. Questa funzione consente di mettere le estremità dei segnalibri delle righe nella stessa riga dell'inizio dei segnalibri.
 
-## المتطلبات الأساسية
+## Prerequisiti
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conoscenza base del linguaggio C#.
+- Ambiente di sviluppo .NET con libreria Aspose.Words installata.
 
-## الخطوة 1: تحميل المستند
+## Passaggio 1: caricamento del documento
 
- نحن نستخدم ال`Document` فئة لتحميل المستند الحالي من ملف:
+ Noi usiamo il`Document` class per caricare il documento esistente da un file:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## الخطوة 2: كشف خط الإشارات المرجعية
+## Passaggio 2: svela i segnalibri della linea
 
- نحن نستخدم ال`Untangle` وظيفة لفك تشابك الإشارات المرجعية من الصفوف. تؤدي هذه الوظيفة المهمة المخصصة لوضع نهايات الأسطر المرجعية في نفس السطر الذي تبدأ فيه الإشارة المرجعية:
+ Noi usiamo il`Untangle` funzione per districare i segnalibri dalle righe. Questa funzione esegue l'attività personalizzata di inserire le estremità delle righe del segnalibro nella stessa riga in cui inizia il segnalibro:
 
 ```csharp
 Untangle(doc);
 ```
 
-## الخطوة 3: حذف سطر بإشارة مرجعية
+## Passaggio 3: elimina la riga per segnalibro
 
- نحن نستخدم ال`DeleteRowByBookmark` وظيفة لحذف صف معين من خلال الإشارة المرجعية الخاصة به:
+ Noi usiamo il`DeleteRowByBookmark` funzione per eliminare una riga specifica tramite il suo segnalibro:
 
 ```csharp
 DeleteRowByBookmark(doc, "ROW2");
 ```
 
-## الخطوة 4: التحقق من سلامة الإشارات المرجعية الأخرى
+## Passaggio 4: verifica l'integrità degli altri segnalibri
 
-نتحقق من عدم تلف الإشارات المرجعية الأخرى عن طريق التحقق مما إذا كانت نهاية الإشارة المرجعية لا تزال موجودة:
+Verifichiamo che gli altri segnalibri non siano stati danneggiati controllando se la fine del segnalibro è ancora presente:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -51,24 +51,24 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### مثال على شفرة المصدر لـ Untangle Row Bookmarks باستخدام Aspose.Words for .NET**
+### Esempio di codice sorgente per Untangle Row Bookmarks utilizzando Aspose.Words per .NET**
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لفك تشابك الإشارات المرجعية من الأسطر باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente di esempio completo per districare i segnalibri dalle righe utilizzando Aspose.Words per .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	//يؤدي ذلك إلى تنفيذ المهمة المخصصة لوضع إشارة مرجعية للصف في نفس الصف مع بدء الإشارة المرجعية.
+	//Questo esegue l'attività personalizzata di inserire la fine del segnalibro di riga nella stessa riga con l'inizio del segnalibro.
 	Untangle(doc);
 
-	// يمكننا الآن حذف الصفوف بسهولة بواسطة إشارة مرجعية دون الإضرار بأي إشارات مرجعية للصفوف الأخرى.
+	// Ora possiamo eliminare facilmente le righe da un segnalibro senza danneggiare i segnalibri di qualsiasi altra riga.
 	DeleteRowByBookmark(doc, "ROW2");
 
-	// هذا فقط للتحقق من عدم تلف الإشارة المرجعية الأخرى.
+	// Questo serve solo per verificare che l'altro segnalibro non sia stato danneggiato.
 	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
 		throw new Exception("Wrong, the end of the bookmark was deleted.");
 
@@ -76,6 +76,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 
 ```
 
-## خاتمة
+## Conclusione
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة Untangle Row Bookmarks في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لفك تشابك الإشارات المرجعية للصفوف وحذف صف معين دون الإضرار بالإشارات المرجعية الأخرى.
+In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzionalità Untangle Row Bookmarks di Aspose.Words per .NET. Abbiamo seguito una guida passo passo per districare i segnalibri di riga ed eliminare una riga specifica senza danneggiare altri segnalibri.

@@ -1,28 +1,28 @@
 ---
-title: السماح فقط لحقول النموذج بالحماية
-linktitle: السماح فقط لحقول النموذج بالحماية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET لحماية المستندات والسماح فقط بتحرير حقول النموذج.
+title: Permitir solo protección de campos de formulario
+linktitle: Permitir solo protección de campos de formulario
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a usar Aspose.Words para .NET para proteger documentos y solo permitir la edición de campos de formulario.
 type: docs
 weight: 10
 url: /es/net/document-protection/allow-only-form-fields-protect/
 ---
 
-تعد حماية المستندات ميزة أساسية عند العمل مع الملفات داخل تطبيق C # الخاص بك. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك حماية مستنداتك بسهولة والسماح فقط بتحرير حقول النموذج. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام الكود المصدري C # للسماح فقط بتحرير حقول النموذج باستخدام ميزة Allow Only Form Fields Protect في Aspose.Words for .NET.
+La protección de documentos es una característica esencial cuando se trabaja con archivos dentro de su aplicación C#. Con la biblioteca Aspose.Words para .NET, puede proteger fácilmente sus documentos y solo permitir que se editen los campos de formulario. En esta guía paso a paso, lo guiaremos a través de cómo usar el código fuente de C# para permitir que solo los campos de formulario se editen usando la función Permitir solo protección de campos de formulario de Aspose.Words para .NET.
 
-## الخطوة 1: إعداد دليل المستندات
+## Paso 1: Configuración del directorio de documentos
 
-الخطوة الأولى هي تحديد دليل المستند الخاص بك. يجب عليك تحديد المسار حيث تريد حفظ المستند المحمي. على سبيل المثال :
+El primer paso es definir el directorio de su documento. Debe especificar la ruta donde desea guardar el documento protegido. Por ejemplo :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
-## الخطوة الثانية: إدخال الأقسام والنص
+## Paso 2: Inserción de secciones y texto
 
-بعد ذلك ، تحتاج إلى إدراج أقسام ونص في المستند. استخدم فئة DocumentBuilder المقدمة من Aspose.Words لبناء محتوى وثيقتك. اليك مثال بسيط:
+continuación, debe insertar secciones y texto en su documento. Utilice la clase DocumentBuilder proporcionada por Aspose.Words para crear el contenido de su documento. Aquí hay un ejemplo simple:
 
 ```csharp
 Document doc = new Document();
@@ -30,58 +30,58 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند فارغ جديد ثم نستخدم DocumentBuilder لإضافة سطر من النص.
+En este ejemplo, creamos un nuevo documento en blanco y luego usamos DocumentBuilder para agregar una línea de texto.
 
-## الخطوة 3: تمكين حماية المستند
+## Paso 3: habilitar la protección de documentos
 
- تعمل حماية المستندات فقط عند تمكين حماية المستندات. يمكنك تمكين حماية المستندات باستخدام`Protect` طريقة فئة المستند. إليك الطريقة:
-
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
-
-في هذا المثال ، نقوم بتمكين حماية المستندات من خلال تحديد نوع الحماية `
-
-AllowOnlyFormFields` وتعيين كلمة مرور.
-
-## الخطوة 4: السماح فقط بحقول النموذج
-
-الآن بعد أن تم تمكين حماية المستندات ، نحتاج إلى تحديد السماح فقط بتحرير حقول النموذج. هذا يضمن أن المستخدمين يمكنهم فقط تحرير أجزاء من المستند تمثل حقول نموذج. إليك الطريقة:
+ La protección de documentos solo funciona cuando la protección de documentos está habilitada. Puede habilitar la protección de documentos utilizando el`Protect` método de la clase Documento. Así es cómo:
 
 ```csharp
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 ```
 
-تأكد من استبدال "كلمة المرور" بكلمة المرور التي قمت بتعيينها مسبقًا.
+En este ejemplo, habilitamos la protección de documentos especificando el tipo de protección `
 
-## الخطوة 5: حفظ المستند المحمي
+AllowOnlyFormFields` y establecer una contraseña.
 
-أخيرًا ، يمكنك حفظ المستند المحمي باستخدام امتداد`Save` طريقة فئة المستند. حدد مسار الملف الكامل واسم الملف المطلوب. على سبيل المثال :
+## Paso 4: Permitir solo campos de formulario
+
+Ahora que la protección de documentos está habilitada, debemos especificar que solo se permite la edición de campos de formulario. Esto garantiza que los usuarios solo puedan editar partes del documento que son campos de formulario. Así es cómo:
+
+```csharp
+doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
+
+Asegúrese de reemplazar "contraseña" con la contraseña que configuró anteriormente.
+
+## Paso 5: Guardar el Documento Protegido
+
+Finalmente, puede guardar el documento protegido usando el`Save` método de la clase Documento. Especifique la ruta completa del archivo y el nombre de archivo deseado. Por ejemplo :
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ```
 
-تأكد من استبدال "dataDir" بالمسار إلى دليل المستند.
+Asegúrese de reemplazar "dataDir" con la ruta a su directorio de documentos.
 
-### مثال على شفرة المصدر لميزة Allow Only Form Fields Protect باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para la función Permitir solo protección de campos de formulario con Aspose.Words para .NET
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// أدخل قسمين مع بعض النص.
+// Inserta dos secciones con algo de texto.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 
-// لا تعمل حماية المستند إلا عند تشغيل حماية المستند ولا يُسمح إلا بالتحرير في حقول النموذج.
+// La protección de un documento solo funciona cuando la protección del documento está activada y solo se permite la edición en los campos del formulario.
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
-// احفظ المستند المحمي.
+// Guarde el documento protegido.
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا الدليل ، اكتشفنا كيفية استخدام مكتبة Aspose.Words لـ .NET لحماية مستند والسماح فقط بتحرير حقول النموذج. باتباع الخطوات المقدمة ، يمكنك بسهولة تنفيذ هذه الوظيفة في تطبيق C # الخاص بك. تعد حماية المستندات أمرًا ضروريًا لضمان أمان وسرية مستنداتك.
+En esta guía, exploramos cómo usar la biblioteca Aspose.Words para .NET para proteger un documento y solo permitir que se editen los campos del formulario. Siguiendo los pasos proporcionados, puede implementar fácilmente esta funcionalidad en su aplicación C#. La protección de documentos es esencial para garantizar la seguridad y confidencialidad de sus documentos.

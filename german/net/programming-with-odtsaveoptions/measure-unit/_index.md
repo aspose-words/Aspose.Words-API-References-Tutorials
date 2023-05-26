@@ -1,67 +1,67 @@
 ---
-title: وحدة قياس
-linktitle: وحدة قياس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديد وحدة القياس عند تحويل مستند Word إلى ODT باستخدام Aspose.Words for .NET.
+title: Maßeinheit
+linktitle: Maßeinheit
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie die Maßeinheit angeben, wenn Sie ein Word-Dokument mit Aspose.Words für .NET in ODT konvertieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-odtsaveoptions/measure-unit/
 ---
 
-عند تحويل مستند Word إلى تنسيق OpenDocument Text (ODT) في تطبيق C # ، قد ترغب في تحديد وحدة القياس المستخدمة للتنسيق القابل للقياس وخصائص المحتوى. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحديد هذه الوظيفة باستخدام خيارات حفظ OdtSaveOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحويل مستند Word إلى ODT عن طريق تحديد وحدة القياس باستخدام OdtSaveOptions.
+Wenn Sie ein Word-Dokument in einer C#-Anwendung in das OpenDocument Text (ODT)-Format konvertieren, möchten Sie möglicherweise die Maßeinheit angeben, die für messbare Formatierungen und Inhaltseigenschaften verwendet wird. Mit der Aspose.Words-Bibliothek für .NET können Sie diese Funktionalität mithilfe der Speicheroptionen von OdtSaveOptions problemlos angeben. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung von Aspose.Words für .NET C#-Quellcode zum Konvertieren eines Word-Dokuments in ODT, indem wir die Maßeinheit mithilfe von OdtSaveOptions angeben.
 
-## فهم مكتبة Aspose.Words
+## Grundlegendes zur Aspose.Words-Bibliothek
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten, Konvertieren und Schützen von Word-Dokumenten auf verschiedenen Plattformen, einschließlich .NET. Es bietet viele Funktionen zum Bearbeiten von Dokumenten, wie zum Beispiel das Einfügen von Text, das Ändern von Formatierungen, das Hinzufügen von Abschnitten und vieles mehr.
 
-## تحميل مستند Word
+## Laden des Word-Dokuments
 
-الخطوة الأولى هي تحميل مستند Word الذي تريد تحويله إلى ODT. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+Der erste Schritt besteht darin, das Word-Dokument zu laden, das Sie in ODT konvertieren möchten. Verwenden Sie die Document-Klasse, um das Dokument aus der Quelldatei zu laden. Hier ist ein Beispiel :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Document.docx" الموجود في دليل المستندات.
+In diesem Beispiel laden wir das Dokument „Document.docx“, das sich im Dokumentenverzeichnis befindet.
 
-## تكوين خيارات النسخ الاحتياطي
+## Backup-Optionen konfigurieren
 
-الخطوة التالية هي تكوين خيارات النسخ الاحتياطي للتحويل إلى ODT. استخدم فئة OdtSaveOptions وقم بتعيين خاصية MeasureUnit إلى القيمة المطلوبة. على سبيل المثال ، إذا كنت تريد استخدام البوصة كوحدة قياس ، فاضبط MeasureUnit على OdtSaveMeasureUnit.Inches. هيريس كيفية القيام بذلك:
+Der nächste Schritt besteht darin, die Backup-Optionen für die Konvertierung in ODT zu konfigurieren. Verwenden Sie die Klasse OdtSaveOptions und legen Sie die Eigenschaft MeasureUnit auf den gewünschten Wert fest. Wenn Sie beispielsweise Zoll als Maßeinheit verwenden möchten, legen Sie MeasureUnit auf OdtSaveMeasureUnit.Inches fest. So geht's:
 
 ```csharp
 OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUnit.Inches };
 ```
 
-نقوم بإنشاء كائن OdtSaveOptions جديد وتعيين خاصية MeasureUnit إلى القيمة المطلوبة ، في حالتنا ، OdtSaveMeasureUnit.Inches لاستخدام البوصة كوحدة قياس.
+Wir erstellen ein neues OdtSaveOptions-Objekt und setzen die MeasureUnit-Eigenschaft auf den gewünschten Wert, in unserem Fall OdtSaveMeasureUnit.Inches, um Zoll als Maßeinheit zu verwenden.
 
-## تحويل المستند إلى ODT
+## Dokument in ODT konvertieren
 
-الآن بعد أن قمنا بتكوين خيارات الحفظ ، يمكننا المتابعة لتحويل المستند إلى ODT. استخدم طريقة Save لفئة Document لحفظ المستند المحول بتنسيق ODT عن طريق تحديد خيارات الحفظ. هنا مثال :
+Nachdem wir nun die Speicheroptionen konfiguriert haben, können wir mit der Konvertierung des Dokuments in ODT fortfahren. Verwenden Sie die Save-Methode der Document-Klasse, um das konvertierte Dokument im ODT-Format zu speichern, indem Sie Speicheroptionen angeben. Hier ist ein Beispiel :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```
 
-في هذا المثال ، نحفظ المستند المحول باسم "WorkingWithOdtSaveOptions.MeasureUnit.odt" باستخدام خيارات الحفظ المحددة.
+In diesem Beispiel speichern wir das konvertierte Dokument unter Verwendung der angegebenen Speicheroptionen als „WorkingWithOdtSaveOptions.MeasureUnit.odt“.
 
-### مثال على شفرة المصدر لـ OdtSaveOptions مع وظيفة "وحدة القياس" باستخدام Aspose.Words for .NET
+### Beispielquellcode für OdtSaveOptions mit „Maßeinheit“-Funktionalität unter Verwendung von Aspose.Words für .NET
 
 
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+//Laden Sie das Word-Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
-// تكوين خيارات النسخ الاحتياطي باستخدام ميزة "وحدة القياس"
+// Konfiguration der Backup-Optionen mit der Funktion „Maßeinheit“.
 OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUnit.Inches };
 
-// تحويل المستند إلى ODT
+// Konvertieren Sie das Dokument in ODT
 doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا الدليل ، أوضحنا كيفية تحويل مستند Word إلى ODT عن طريق تحديد وحدة القياس باستخدام خيارات حفظ OdtSaveOptions مع مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يتيح لك تحديد وحدة القياس عند التحويل إلى ODT التحكم في تنسيق وأبعاد المستند الناتج وفقًا لاحتياجاتك الخاصة.
+In dieser Anleitung haben wir erklärt, wie man ein Word-Dokument in ODT konvertiert, indem man die Maßeinheit mithilfe der OdtSaveOptions-Speicheroptionen mit der Aspose.Words-Bibliothek für .NET angibt. Indem Sie die bereitgestellten Schritte befolgen und den bereitgestellten C#-Quellcode verwenden, können Sie diese Funktionalität problemlos in Ihrer C#-Anwendung anwenden. Durch die Angabe der Maßeinheit bei der Konvertierung in ODT können Sie die Formatierung und Abmessungen des resultierenden Dokuments entsprechend Ihren spezifischen Anforderungen steuern.

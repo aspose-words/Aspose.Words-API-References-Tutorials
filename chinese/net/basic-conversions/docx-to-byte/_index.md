@@ -1,64 +1,64 @@
 ---
-title: Docx إلى بايت
-linktitle: Docx إلى بايت
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات Word من Docx إلى مصفوفة بايت باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Docx 转字节
+linktitle: Docx 转字节
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将 Word 文档从 Docx 转换为字节数组。带示例源代码的分步教程。
 type: docs
 weight: 10
 url: /zh/net/basic-conversions/docx-to-byte/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى مصفوفة بايت. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+在这个循序渐进的教程中，我们将指导您如何使用 Aspose.Words for .NET 将 Docx 格式的 Word 文档转换为字节数组。我们将解释提供的 C# 源代码，并向您展示如何在您自己的项目中实现它。
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+要开始，请确保您已在开发环境中安装和设置 Aspose.Words for .NET。如果您还没有这样做，请从官方网站下载并安装该库。
 
-## الخطوة 1: تهيئة MemoryStream
+## 第 1 步：初始化 MemoryStream
 
- أولاً ، قم بإنشاء مثيل لملف`MemoryStream` فئة لتخزين المستند المحول كمصفوفة بايت:
+首先，创建一个实例`MemoryStream`将转换后的文档存储为字节数组的类：
 
 ```csharp
 MemoryStream outStream = new MemoryStream();
 ```
 
-## الخطوة 2: حفظ المستند في MemoryStream
+## 第 2 步：将文档保存到 MemoryStream
 
- بعد ذلك ، استخدم ملف`Save` طريقة`Document` فئة لحفظ المستند في ملف`MemoryStream` بتنسيق Docx:
+接下来，使用`Save`的方法`Document`类将文档保存到`MemoryStream`Docx 格式：
 
 ```csharp
 doc.Save(outStream, SaveFormat.Docx);
 ```
 
-## الخطوة 3: تحويل MemoryStream إلى صفيف بايت
+## 第 3 步：将 MemoryStream 转换为字节数组
 
- لتحويل ملف`MemoryStream` الذي يحتوي على مستند Docx إلى مصفوفة بايت ، استخدم الامتداد`ToArray` طريقة:
+转换`MemoryStream`将 Docx 文档包含到字节数组中，使用`ToArray`方法：
 
 ```csharp
 byte[] docBytes = outStream.ToArray();
 ```
 
-## الخطوة 4: تهيئة MemoryStream من صفيف بايت
+## 第 4 步：从字节数组初始化 MemoryStream
 
- الآن ، قم بتهيئة مثيل جديد من`MemoryStream`باستخدام مصفوفة البايت التي تم الحصول عليها في الخطوة السابقة:
+现在，初始化一个新的实例`MemoryStream`使用在上一步中获得的字节数组：
 
 ```csharp
 MemoryStream inStream = new MemoryStream(docBytes);
 ```
 
-## الخطوة 5: إنشاء مستند من MemoryStream
+## 第 5 步：从 MemoryStream 创建文档
 
- أخيرًا ، قم بإنشاء ملف`Document` كائن من`MemoryStream`:
+最后，创建一个新的`Document`对象来自`MemoryStream`:
 
 ```csharp
 Document docFromBytes = new Document(inStream);
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند Word بتنسيق Docx إلى مصفوفة بايت باستخدام Aspose.Words for .NET.
+就是这样！您已经使用 Aspose.Words for .NET 成功地将 Docx 格式的 Word 文档转换为字节数组。
 
-### مثال على شفرة المصدر لـ Docx To Byte باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的 Docx To Byte 示例源代码
 
 ```csharp
 
-	// MemoryStream outStream = new MemoryStream () ؛
+	//MemoryStream outStream = new MemoryStream();
 	doc.Save(outStream, SaveFormat.Docx);
 
 	byte[] docBytes = outStream.ToArray();
@@ -68,4 +68,4 @@ Document docFromBytes = new Document(inStream);
 	
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+随意在您自己的项目中使用此代码，并根据您的特定要求对其进行修改。

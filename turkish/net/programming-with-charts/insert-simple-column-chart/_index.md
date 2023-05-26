@@ -1,44 +1,44 @@
 ---
-title: إدراج مخطط عمودي بسيط
-linktitle: إدراج مخطط عمودي بسيط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مخطط عمودي بسيط في مستند باستخدام Aspose.Words for .NET.
+title: Basit Sütun Grafiği Ekle
+linktitle: Basit Sütun Grafiği Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir belgeye basit bir sütun grafiği eklemeyi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/insert-simple-column-chart/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مخطط عمودي بسيط في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وحفظ المستند.
+Bu öğretici, bir belgeye basit bir sütun grafiği eklemek için Aspose.Words for .NET'in nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve belgenin nasıl kaydedileceğini gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Çıktı belgesinin kaydedileceği bir belge dizini yolu.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 2. Adım: Yeni bir belge oluşturun ve bir grafik ekleyin
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط عمودي في المستند. يمكنك تحديد أنواع وأحجام مخططات مختلفة حسب متطلباتك.
+ Ardından,`InsertChart` yöntemi`DocumentBuilder` belgeye bir sütun grafiği eklemek için. Gereksinimlerinize göre farklı grafik türleri ve boyutları belirleyebilirsiniz.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## 3. Adım: Seri verilerini grafiğe ekleyin
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف سلاسل متعددة بفئتين لكل منهما.
+Grafiğe seri verileri ekleyin. Bu örnekte, her biri iki kategoriye sahip birden çok seri ekleyeceğiz.
 
 ```csharp
 ChartSeriesCollection seriesColl = chart.Series;
@@ -53,34 +53,34 @@ seriesColl.Add("Aspose Series 4", categories, new double[] { 7, 8 });
 seriesColl.Add("Aspose Series 5", categories, new double[] { 9, 10 });
 ```
 
-## الخطوة 4: احفظ المستند
+## 4. Adım: Belgeyi kaydedin
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Son olarak, belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مخطط عمودي بسيط باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanarak basit bir sütun grafiği ekleme uygulamasını tamamlar.
 
-### مثال على شفرة المصدر لإدراج مخطط عمودي بسيط باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Basit Sütun Grafiği Ekleme için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// يمكنك تحديد أنواع وأحجام مختلفة من المخططات.
+	// Farklı grafik türleri ve boyutları belirleyebilirsiniz.
 	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 	Chart chart = shape.Chart;
 	ChartSeriesCollection seriesColl = chart.Series;
 	Console.WriteLine(seriesColl.Count);
-	// حذف السلاسل التي تم إنشاؤها بشكل افتراضي.
+	// Oluşturulan varsayılan seriyi silin.
 	seriesColl.Clear();
-	// قم بإنشاء مصفوفة أسماء الفئات ، في هذا البرنامج التعليمي لدينا فئتان.
+	// Kategori adları dizisi oluşturun, bu eğitimde iki kategorimiz var.
 	string[] categories = new string[] { "Category 1", "Category 2" };
-	// الرجاء ملاحظة أنه يجب ألا تكون صفائف البيانات فارغة ويجب أن تكون المصفوفات بنفس الحجم.
+	// Lütfen dikkat, veri dizileri boş olmamalıdır ve diziler aynı boyutta olmalıdır.
 	seriesColl.Add("Aspose Series 1", categories, new double[] { 1, 2 });
 	seriesColl.Add("Aspose Series 2", categories, new double[] { 3, 4 });
 	seriesColl.Add("Aspose Series 3", categories, new double[] { 5, 6 });

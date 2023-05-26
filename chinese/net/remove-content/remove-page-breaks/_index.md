@@ -1,54 +1,54 @@
 ---
-title: إزالة فواصل الصفحات
-linktitle: إزالة فواصل الصفحات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة فواصل الصفحات في مستند باستخدام Aspose.Words Library for .NET. اتبع دليلنا المفصل خطوة بخطوة للحصول على تخطيط سلس.
+title: 删除分页符
+linktitle: 删除分页符
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words Library for .NET 删除文档中的分页符。按照我们的分步指南进行无缝布局。
 type: docs
 weight: 10
 url: /zh/net/remove-content/remove-page-breaks/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف كيفية إزالة فواصل الصفحات من مستند باستخدام مكتبة Aspose.Words for .NET. يمكن أن تتداخل فواصل الصفحات أحيانًا مع تنسيق المستند وتخطيطه ، وقد يكون من الضروري إزالتهما برمجيًا. سنقدم دليلاً خطوة بخطوة لمساعدتك على فهم العملية وتنفيذها في مشاريع C # الخاصة بك.
+在本教程中，我们将探讨如何使用 Aspose.Words for .NET 库从文档中删除分页符。分页符有时会干扰文档的格式和布局，可能需要以编程方式删除它们。我们将提供分步指南，帮助您了解该过程并将其实施到您自己的 C# 项目中。
 
-## متطلبات
+## 要求
 
-قبل أن نبدأ ، تأكد من توفر لديك ما يلي:
+在我们开始之前，请确保您拥有以下内容：
 
-- المعرفة الأساسية بلغة البرمجة C #
-- تثبيت Aspose.Words لمكتبة .NET
-- Visual Studio أو أي بيئة تطوير أخرى لـ C # تم إعدادها
+- C#编程语言的基础知识
+- 安装了 Aspose.Words for .NET 库
+- Visual Studio 或任何其他 C# 开发环境设置
 
-## الخطوة الأولى: تهيئة البيئة
+## 第 1 步：设置环境
 
-للبدء ، قم بإنشاء مشروع C # جديد في بيئة التطوير المفضلة لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET بشكل صحيح في مشروعك.
+首先，在您首选的开发环境中创建一个新的 C# 项目。确保在您的项目中正确引用了 Aspose.Words for .NET 库。
 
-## الخطوة الثانية: تحميل المستند
+## 第 2 步：装入文档
 
-لإزالة فواصل الصفحات من المستند ، نحتاج أولاً إلى تحميل المستند في الذاكرة. يوضح الكود التالي كيفية تحميل مستند من دليل معين:
+要从文档中删除分页符，我们首先需要将文档加载到内存中。以下代码演示了如何从特定目录加载文档：
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//قم بتحميل المستند
+//装入文档
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى المستند الخاص بك.
+代替`"YOUR DOCUMENT DIRECTORY"`使用文档的实际路径。
 
-## الخطوة 3: إزالة فواصل الصفحات
+## 第 3 步：删除分页符
 
-بمجرد تحميل المستند ، يمكننا البدء في إزالة فواصل الصفحات. يوضح مقتطف الشفرة أدناه كيفية تكرار جميع الفقرات في المستند والتحقق من فواصل الصفحات وإزالتها:
+加载文档后，我们可以开始删除分页符。下面的代码片段演示了如何遍历文档中的所有段落、检查分页符并删除它们：
 
 ```csharp
 NodeCollection paragraphs = doc.GetChildNodes(NodeType.Paragraph, true);
 
 foreach (Paragraph para in paragraphs)
 {
-     // إذا كانت الفقرة تحتوي على فاصل صفحات من قبل ، فقم بمسحها
+     //如果段落之前有分页符，则清除它
      if (para.ParagraphFormat.PageBreakBefore)
          para.ParagraphFormat.PageBreakBefore = false;
 
-     // تحقق من كل عمليات التشغيل في الفقرة بحثًا عن فواصل الصفحات وقم بإزالتها
+     //检查段落中的所有运行是否有分页符并将其删除
      foreach(Run run in para.Runs)
      {
          if (run.Text.Contains(ControlChar.PageBreak))
@@ -57,36 +57,36 @@ foreach (Paragraph para in paragraphs)
 }
 ```
 
-يتكرر مقتطف الشفرة أعلاه عبر جميع الفقرات في المستند ويتحقق مما إذا كانت كل فقرة بها فاصل صفحات قبلها. إذا تم الكشف عن فاصل صفحة ، يتم مسحه. بعد ذلك ، يتحقق من كل تشغيل داخل الفقرة بحثًا عن فواصل الصفحات ويزيلها.
+上面的代码片段遍历文档中的所有段落，并检查每个段落之前是否有分页符。如果检测到分页符，则将其清除。然后，它检查段落中的每个运行是否有分页符并将其删除。
 
-## الخطوة 4: حفظ المستند المعدل
+## 第 4 步：保存修改后的文档
 
-بعد إزالة فواصل الصفحات ، نحتاج إلى حفظ المستند المعدل. يوضح الكود التالي كيفية حفظ المستند المعدل في موقع معين:
+去掉分页符后，我们需要保存修改后的文档。以下代码演示了如何将修改后的文档保存到特定位置：
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- يستبدل`"modified-document.docx"` بالاسم الذي تريده للمستند المعدل.
+代替`"modified-document.docx"`使用您修改后的文档所需的名称。
 
-### نموذج شفرة مصدر لإزالة فواصل الصفحات باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 删除分页符的示例源代码 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//قم بتحميل المستند
+//装入文档
 Document doc = new Document(dataDir + "your-document.docx");
 
 NodeCollection paragraphs = doc.GetChildNodes(NodeType.Paragraph, true);
 
 foreach (Paragraph para in paragraphs)
 {
-	// إذا كانت الفقرة تحتوي على فاصل صفحات قبل المجموعة ، فقم بمسحها.
+	//如果段落在设置之前有分页符，则将其清除。
 	if (para.ParagraphFormat.PageBreakBefore)
 		para.ParagraphFormat.PageBreakBefore = false;
 
-	//تحقق من كل عمليات التشغيل في الفقرة بحثًا عن فواصل الصفحات وقم بإزالتها.
+	//检查段落中的所有运行是否有分页符并将其删除。
 	foreach (Run run in para.Runs)
 	{
 		if (run.Text.Contains(ControlChar.PageBreak))
@@ -98,6 +98,6 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ```
 
-## خاتمة
+## 结论
 
-في هذا البرنامج التعليمي ، تعلمنا كيفية إزالة فواصل الصفحات من مستند باستخدام مكتبة Aspose.Words for .NET. باتباع الدليل خطوة بخطوة ، يجب أن تكون قادرًا الآن على تنفيذ هذه الوظيفة في مشاريع C # الخاصة بك. يمكن أن تساعدك إزالة فواصل الصفحات في الحفاظ على تخطيط وتنسيق متسقين في مستنداتك.
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 库从文档中删除分页符。按照分步指南，您现在应该能够在自己的 C# 项目中实现此功能。删除分页符可以帮助您在文档中保持一致的布局和格式。

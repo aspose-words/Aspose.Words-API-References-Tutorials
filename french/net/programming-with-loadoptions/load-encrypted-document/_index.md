@@ -1,52 +1,52 @@
 ---
-title: تحميل مستند مشفر
-linktitle: تحميل مستند مشفر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل وحفظ المستندات المشفرة باستخدام Aspose.Words for .NET.
+title: Charger le document chiffré
+linktitle: Charger le document chiffré
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à charger et enregistrer des documents chiffrés avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-loadoptions/load-encrypted-document/
 ---
 
-عند العمل مع المستندات المشفرة في تطبيق C # ، من المهم أن تكون قادرًا على تحميلها بشكل صحيح من خلال توفير كلمة المرور الصحيحة. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحميل المستندات المشفرة باستخدام خيارات التحميل المناسبة. في هذا الدليل المفصل خطوة بخطوة ، سنوضح لك كيفية استخدام كود المصدر C # الخاص بـ Aspose.Words for .NET لتحميل مستند مشفر باستخدام خيارات تحميل LoadOptions.
+Lorsque vous travaillez avec des documents chiffrés dans une application C#, il est important de pouvoir les charger correctement en fournissant le mot de passe correct. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement charger des documents chiffrés à l'aide des options de chargement appropriées. Dans ce guide étape par étape, nous allons vous montrer comment utiliser le code source C# de Aspose.Words pour .NET pour charger un document chiffré à l'aide des options de chargement LoadOptions.
 
-## فهم مكتبة Aspose.Words
+## Comprendre la bibliothèque Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque puissante pour créer, éditer, convertir et protéger des documents Word sur différentes plates-formes, y compris .NET. Il offre de nombreuses fonctionnalités pour manipuler des documents, telles que l'insertion de texte, la modification de la mise en forme, l'ajout de sections et bien plus encore.
 
-## تحميل مستند مشفر
+## Chargement d'un document crypté
 
-تتمثل الخطوة الأولى في تحميل مستند مشفر باستخدام خيارات التحميل المناسبة. في حالتنا ، نستخدم فئة Document لتحميل المستند عن طريق تحديد مسار المستند وكلمة المرور. هنا مثال :
+La première étape consiste à télécharger un document crypté à l'aide des options de téléchargement appropriées. Dans notre cas, nous utilisons la classe Document pour charger le document en spécifiant le chemin et le mot de passe du document. Voici un exemple :
 
 ```csharp
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Encrypted.docx" الموجود في دليل المستندات باستخدام كلمة المرور "password".
+Dans cet exemple, nous chargeons le document "Encrypted.docx" situé dans le répertoire des documents en utilisant le mot de passe "password".
 
-## حفظ مستند مشفر
+## Enregistrer un document crypté
 
-بعد تحميل مستند مشفر ، يمكنك أيضًا حفظه عن طريق تحديد كلمة مرور جديدة لملف الإخراج. في مثالنا ، نستخدم فئة OdtSaveOptions لحفظ المستند بتنسيق ODT بكلمة مرور جديدة. هيريس كيفية القيام بذلك:
+Après avoir téléchargé un document crypté, vous pouvez également l'enregistrer en spécifiant un nouveau mot de passe pour le fichier de sortie. Dans notre exemple, nous utilisons la classe OdtSaveOptions pour enregistrer le document au format ODT avec un nouveau mot de passe. Voici comment procéder :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 
-في هذا المثال ، نحفظ المستند باسم "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt" من خلال تحديد كلمة المرور الجديدة "newpassword".
+Dans cet exemple, nous enregistrons le document sous le nom "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt" en spécifiant le nouveau mot de passe "newpassword".
 
-### عينة من التعليمات البرمجية المصدر لـ LoadOptions مع وظيفة "تحميل مستند مشفر" باستخدام Aspose.Words for .NET
+### Exemple de code source pour LoadOptions avec la fonctionnalité "Load Encrypted Document" à l'aide d'Aspose.Words pour .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل مستند مشفر بكلمة المرور المحددة
+// Charger un document crypté avec le mot de passe spécifié
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-//احفظ مستندًا مشفرًا بكلمة مرور جديدة
+//Enregistrer un document crypté avec un nouveau mot de passe
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا الدليل ، شرحنا كيفية تحميل وحفظ المستندات المشفرة باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. تحميل المستندات المشفرة يحافظ على أمان بياناتك ويسمح لك بالعمل مع المستندات المحمية في Aspose.Words.
+Dans ce guide, nous avons expliqué comment charger et enregistrer des documents chiffrés à l'aide de la bibliothèque Aspose.Words pour .NET. En suivant les étapes fournies et en utilisant le code source C# fourni, vous pouvez facilement appliquer cette fonctionnalité dans votre application C#. Le téléchargement de documents cryptés protège vos données et vous permet de travailler avec des documents protégés dans Aspose.Words.

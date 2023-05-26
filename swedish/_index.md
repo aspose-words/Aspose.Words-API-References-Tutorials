@@ -1,37 +1,37 @@
 ---
-title: دروس Aspose.Words
-additionalTitle: مراجع Aspose API
-description: البرامج التعليمية ومقتطفات التعليمات البرمجية لعائلة منتجات Aspose.Words. يتضمن دروسًا أساسية ومتقدمة حول استخدام Aspose.Words.
+title: Aspose.Words Tutorials
+additionalTitle: Aspose API-referenser
+description: Handledningar och kodsnuttar av produktfamiljen Aspose.Words. Den innehåller grundläggande och förhandshandledningar för användning av Aspose.Words.
 type: docs
 weight: 10
 url: /sv/
 is_root: true
 ---
 
-## .NET 的 Aspose.Words
+## Aspose.Words för .NET
 {{% alert color="primary" %}}
-برامج Aspose.Words for .NET التعليمية ومقتطفات التعليمات البرمجية لإنشاء وتحرير وتحويل وطباعة والعديد من الميزات الأخرى لمستندات Word في تطبيقك. 
+Aspose.Words för .NET tutorials och kodsnuttar för att skapa, redigera, konvertera, skriva ut och många fler funktioner för Word-dokument i din applikation. 
 {{% /alert %}}
 
-هذه روابط لبعض المصادر المفيدة:
-- [تطبيق الترخيص](./net/apply-license/)   
-- [تمكين ميزات OpenType](./net/enable-opentype-features/)   
-- [التعامل مع التعليقات](./net/working-with-comments/)   
-- [العمل مع الحقول](./net/working-with-fields/)   
-- [العمل مع الحاشية السفلية والتعليق الختامي](./net/working-with-footnote-and-endnote/)   
-- [العمل مع FormFields](./net/working-with-formfields/)   
-- [العمل مع الرؤوس والتذييلات](./net/working-with-headers-and-footers/)   
-- [العمل مع الواصلة](./net/working-with-hyphenation/)   
-- [العمل مع القائمة](./net/working-with-list/)   
-- [العمل مع Markdown](./net/working-with-markdown/)   
-- [العمل مع Node](./net/working-with-node/)   
-- [العمل مع المراجعات](./net/working-with-revisions/)   
-- [العمل مع مربعات النص](./net/working-with-textboxes/)   
-- [انقسام المستند](./net/split-document/)   
-- [أضف محتوى باستخدام Documentbuilder](./net/add-content-using-documentbuilder/)
-- [استنساخ ودمج المستندات](./net/clone-and-combine-documents/) 
-- [قارن المستندات](./net/compare-documents/) 
-- [تنسيق المستند](./net/document-formatting/)      
-- [البرمجة بالعلامة المائية](./net/programming-with-watermark/)    
-- [البرمجة باستخدام Markdownsaveoptions](./net/programming-with-markdownsaveoptions/)   
-- [التحويلات الأساسية](./net/basic-conversions/)   
+Det här är länkar till några användbara resurser:
+- [Tillämpa licens](./net/apply-license/)   
+- [Aktivera OpenType-funktioner](./net/enable-opentype-features/)   
+- [Arbeta med kommentarer](./net/working-with-comments/)   
+- [Arbeta med Fields](./net/working-with-fields/)   
+- [Arbeta med fotnot och slutnot](./net/working-with-footnote-and-endnote/)   
+- [Arbeta med FormFields](./net/working-with-formfields/)   
+- [Arbeta med sidhuvuden och sidfötter](./net/working-with-headers-and-footers/)   
+- [Arbeta med avstavning](./net/working-with-hyphenation/)   
+- [Arbeta med List](./net/working-with-list/)   
+- [Jobbar med Markdown](./net/working-with-markdown/)   
+- [Arbeta med Node](./net/working-with-node/)   
+- [Arbeta med revisioner](./net/working-with-revisions/)   
+- [Arbeta med textboxar](./net/working-with-textboxes/)   
+- [Dela dokument](./net/split-document/)   
+- [Lägg till innehåll med Documentbuilder](./net/add-content-using-documentbuilder/)
+- [Klona och kombinera dokument](./net/clone-and-combine-documents/) 
+- [Jämför dokument](./net/compare-documents/) 
+- [Dokumentformatering](./net/document-formatting/)      
+- [Programmering med vattenstämpel](./net/programming-with-watermark/)    
+- [Programmering med Markdownsave-alternativ](./net/programming-with-markdownsaveoptions/)   
+- [Grundläggande omvandlingar](./net/basic-conversions/)   

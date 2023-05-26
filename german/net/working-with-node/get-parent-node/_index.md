@@ -1,56 +1,56 @@
 ---
-title: احصل على العقدة الأصلية
-linktitle: احصل على العقدة الأصلية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على العقدة الأصلية لعنصر معين باستخدام Aspose.Words for .NET.
+title: Übergeordneten Knoten abrufen
+linktitle: Übergeordneten Knoten abrufen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET den übergeordneten Knoten eines bestimmten Elements abrufen.
 type: docs
 weight: 10
 url: /de/net/working-with-node/get-parent-node/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية الحصول على العقدة الأصلية باستخدام Aspose.Words for .NET.
+Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der zeigt, wie Sie mit Aspose.Words für .NET den übergeordneten Knoten abrufen.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Schritt 1: Importieren Sie die erforderlichen Referenzen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die erforderlichen Referenzen zur Verwendung von Aspose.Words für .NET in Ihr Projekt importiert haben. Dazu gehört das Importieren der Aspose.Words-Bibliothek und das Hinzufügen der erforderlichen Namespaces zu Ihrer Quelldatei.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Nodes;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## Schritt 2: Erstellen Sie ein neues Dokument
+ In diesem Schritt erstellen wir ein neues Dokument mit`Document` Klasse.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: الوصول إلى العقدة الأصلية
-للحصول على العقدة الأصلية لعقدة معينة ، نحتاج إلى الوصول إلى تلك العقدة أولاً. في هذا المثال ، نقوم بالوصول إلى أول عقدة فرعية من المستند ، والتي تكون عادةً قسمًا.
+## Schritt 3: Greifen Sie auf den übergeordneten Knoten zu
+Um den übergeordneten Knoten eines bestimmten Knotens zu erhalten, müssen wir zuerst auf diesen Knoten zugreifen. In diesem Beispiel greifen wir auf den ersten untergeordneten Knoten des Dokuments zu, bei dem es sich normalerweise um einen Abschnitt handelt.
 
 ```csharp
 Node section = doc.FirstChild;
 ```
 
-## الخطوة 4: تحقق من العقدة الأصلية
-الآن بعد أن أصبح لدينا العقدة المحددة ، يمكننا التحقق مما إذا كانت العقدة الأصلية تتطابق مع المستند نفسه. في هذا المثال ، نقارن العقدة الأصلية بالمستند باستخدام عامل المساواة (`==`) وعرض النتيجة.
+## Schritt 4: Überprüfen Sie den übergeordneten Knoten
+Da wir nun den spezifischen Knoten haben, können wir prüfen, ob sein übergeordneter Knoten mit dem Dokument selbst übereinstimmt. In diesem Beispiel vergleichen wir den übergeordneten Knoten mit dem Dokument mithilfe des Gleichheitsoperators (`==`) und zeigen Sie das Ergebnis an.
 
 ```csharp
 Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
-### عينة من التعليمات البرمجية المصدر للحصول على العقدة الأصلية باستخدام Aspose.Words for .NET
+### Beispielquellcode zum Abrufen des übergeordneten Knotens mit Aspose.Words für .NET
 
 
 ```csharp
 	Document doc = new Document();
 
-	// المقطع هو العقدة الفرعية الأولى من المستند.
+	// Der Abschnitt ist der erste untergeordnete Knoten des Dokuments.
 	Node section = doc.FirstChild;
 
-	// العقدة الرئيسية للقسم هي الوثيقة.
+	// Der übergeordnete Knoten des Abschnitts ist das Dokument.
 	Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
             
 ```
 
-هذا مثال رمز كامل للحصول على العقدة الأصلية لعقدة معينة باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Dies ist ein vollständiges Codebeispiel zum Abrufen des übergeordneten Knotens eines bestimmten Knotens mit Aspose.Words für .NET. Stellen Sie sicher, dass Sie die erforderlichen Referenzen importieren und die zuvor beschriebenen Schritte befolgen, um diesen Code in Ihr Projekt zu integrieren.

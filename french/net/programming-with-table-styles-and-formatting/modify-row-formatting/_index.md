@@ -1,39 +1,39 @@
 ---
-title: تعديل تنسيق الصف
-linktitle: تعديل تنسيق الصف
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتغيير تنسيق صف الجدول باستخدام Aspose.Words for .NET.
+title: Modifier le formatage des lignes
+linktitle: Modifier le formatage des lignes
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour modifier la mise en forme des lignes de tableau à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-table-styles-and-formatting/modify-row-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتغيير تنسيق صف الجدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تغيير الحدود والارتفاع وفاصل الأسطر لصف جدول في مستندات Word باستخدام Aspose.Words for .NET.
+Dans ce didacticiel, nous vous expliquerons étape par étape le processus de modification de la mise en forme d'une ligne de tableau à l'aide de Aspose.Words pour .NET. Nous expliquerons le code source C# fourni et vous fournirons un guide complet pour vous aider à comprendre et à implémenter cette fonctionnalité dans vos propres projets. À la fin de ce didacticiel, vous saurez comment modifier les bordures, la hauteur et le saut de ligne d'une ligne de tableau dans vos documents Word à l'aide de Aspose.Words pour .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يوجد فيه مستند Word الخاص بك. استبدل "دليل المستندات" بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. C'est là que se trouve votre document Word. Remplacez "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin approprié.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند الحالي
- بعد ذلك ، تحتاج إلى تحميل مستند Word الموجود في مثيل`Document` فصل.
+## Étape 2 : Charger le document existant
+ Ensuite, vous devez charger le document Word existant dans une instance du`Document` classe.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: الوصول إلى الخط لتعديله
- لتغيير تنسيق صف الجدول ، نحتاج إلى الانتقال إلى الصف المحدد في الجدول. نحن نستخدم ال`GetChild()` و`FirstRow` طرق للحصول على المرجع للصف الأول من الجدول.
+## Etape 3 : Accéder à la ligne à modifier
+ Pour modifier la mise en forme d'une ligne de tableau, nous devons accéder à la ligne spécifique du tableau. Nous utilisons le`GetChild()` et`FirstRow` méthodes pour obtenir la référence à la première ligne de la table.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Row firstRow = table.FirstRow;
 ```
 
-## الخطوة 4: تغيير تنسيق الصف
- الآن يمكننا تغيير تنسيق الصف باستخدام خصائص ملف`RowFormat` فصل. على سبيل المثال ، يمكننا إزالة حدود الخط وتعيين الارتفاع التلقائي والسماح بفاصل الأسطر.
+## Étape 4 : Modifier la mise en forme des lignes
+ Nous pouvons maintenant modifier la mise en forme des lignes à l'aide des propriétés du`RowFormat` classe. Par exemple, nous pouvons supprimer les bordures de ligne, définir la hauteur automatique et autoriser les sauts de ligne.
 
 ```csharp
 firstRow.RowFormat.Borders.LineStyle = LineStyle.None;
@@ -41,20 +41,20 @@ firstRow.RowFormat.HeightRule = HeightRule.Auto;
 firstRow.RowFormat.AllowBreakAcrossPages = true;
 ```
 
-### نموذج التعليمات البرمجية المصدر لتعديل تنسيق الصف باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Modifier la mise en forme des lignes à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// استرجع الصف الأول في الجدول.
+	// Récupérez la première ligne du tableau.
 	Row firstRow = table.FirstRow;
 	firstRow.RowFormat.Borders.LineStyle = LineStyle.None;
 	firstRow.RowFormat.HeightRule = HeightRule.Auto;
 	firstRow.RowFormat.AllowBreakAcrossPages = true;
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تغيير تنسيق صف الجدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة ضبط الحدود والارتفاع وفاصل الأسطر للصفوف في الجداول الخاصة بك في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تخصيص التخطيط المرئي لجداولك وفقًا لاحتياجاتك الخاصة.
+## Conclusion
+Dans ce didacticiel, nous avons appris à modifier la mise en forme d'une ligne de tableau à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape, vous pouvez facilement ajuster les bordures, la hauteur et le saut de ligne des lignes de vos tableaux dans vos documents Word. Aspose.Words offre une API puissante et flexible pour manipuler et formater des tableaux dans vos documents. Grâce à ces connaissances, vous pouvez personnaliser la disposition visuelle de vos tableaux en fonction de vos besoins spécifiques.

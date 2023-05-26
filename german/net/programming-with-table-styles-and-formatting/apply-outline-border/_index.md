@@ -1,52 +1,52 @@
 ---
-title: تطبيق حدود المخطط التفصيلي
-linktitle: تطبيق حدود المخطط التفصيلي
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتطبيق حدود المخطط على جدول باستخدام Aspose.Words for .NET.
+title: Umrissrahmen anwenden
+linktitle: Umrissrahmen anwenden
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Anwenden eines Umrissrahmens auf eine Tabelle mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-table-styles-and-formatting/apply-outline-border/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتطبيق حد مخطط على جدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، سيكون لديك فهم واضح لكيفية التعامل مع حدود الجدول في مستندات Word باستخدام Aspose.Words for .NET.
+In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess zum Anwenden eines Umrissrahmens auf eine Tabelle mit Aspose.Words für .NET. Wir erklären Ihnen den gebündelten C#-Quellcode und stellen Ihnen eine umfassende Anleitung zur Verfügung, die Ihnen hilft, diese Funktion zu verstehen und in Ihren eigenen Projekten zu implementieren. Am Ende dieses Tutorials werden Sie ein klares Verständnis dafür haben, wie Sie Tabellenränder in Ihren Word-Dokumenten mit Aspose.Words für .NET bearbeiten.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يتم فيه تخزين مستند Word الخاص بك. استبدل "دليل المستندات" بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+Zuerst müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis festlegen. Hier wird Ihr Word-Dokument gespeichert. Ersetzen Sie „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- بعد ذلك ، تحتاج إلى تحميل مستند Word في مثيل لـ`Document` فصل.
+## Schritt 2: Laden Sie das Dokument hoch
+ Als nächstes müssen Sie das Word-Dokument in eine Instanz von laden`Document` Klasse.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: الوصول إلى الجدول
- لتطبيق حدود المخطط ، نحتاج إلى الوصول إلى الجدول في المستند. ال`Table` يمثل class جدولًا في Aspose.Words.
+## Schritt 3: Greifen Sie auf die Tabelle zu
+ Um einen Umrissrahmen anzuwenden, müssen wir auf die Tabelle im Dokument zugreifen. Der`Table` Die Klasse stellt eine Tabelle in Aspose.Words dar.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## الخطوة 4: قم بمحاذاة الجدول إلى وسط الصفحة
- الآن يمكننا محاذاة الجدول إلى وسط الصفحة باستخدام`Alignment` خاصية الجدول.
+## Schritt 4: Richten Sie die Tabelle in der Mitte der Seite aus
+ Jetzt können wir die Tabelle mithilfe von an der Mitte der Seite ausrichten`Alignment` Eigenschaft der Tabelle.
 
 ```csharp
 table. Alignment = Table Alignment. Center;
 ```
 
-## الخطوة 5: محو حدود الجدول الموجودة
-للبدء بحدود خارجية جديدة ، نحتاج أولاً إلى محو كل الحدود الموجودة من الجدول. يمكن القيام بذلك باستخدام ملف`ClearBorders()` طريقة.
+## Schritt 5: Vorhandene Tabellenränder löschen
+Um mit einem neuen Umrissrahmen zu beginnen, müssen wir zunächst alle vorhandenen Rahmen aus der Tabelle löschen. Dies kann mit der erfolgen`ClearBorders()` Methode.
 
 ```csharp
 table. ClearBorders();
 ```
 
-## الخطوة 6: تحديد حد أخضر حول الجدول
- يمكننا الآن تعيين حد أخضر حول الجدول باستخدام`SetBorder()` طريقة لكل جانب من الجدول. في هذا المثال ، نستخدم حدًا من النوع "مفرد" بسمك 1.5 نقطة ولون أخضر.
+## Schritt 6: Definieren Sie einen grünen Rand um die Tabelle
+ Mit können wir nun einen grünen Rand um die Tabelle setzen`SetBorder()` Methode für jede Seite der Tabelle. In diesem Beispiel verwenden wir einen Rahmen vom Typ „Single“ mit einer Dicke von 1,5 Punkt und einer grünen Farbe.
 
 ```csharp
 table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
@@ -55,45 +55,45 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## الخطوة 7: املأ الخلايا بلون الخلفية
-لتحسين العرض المرئي للجدول ، يمكننا ملء الخلايا بلون خلفية الأرض
+## Schritt 7: Füllen Sie die Zellen mit einer Hintergrundfarbe
+Um die visuelle Darstellung der Tabelle zu verbessern, können wir die Zellen mit einer Grundhintergrundfarbe füllen
 
-فكرة. في هذا المثال ، نستخدم اللون الأخضر الفاتح.
+Idee. In diesem Beispiel verwenden wir eine hellgrüne Farbe.
 
 ```csharp
 table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 ```
 
-## الخطوة 8: احفظ المستند المعدل
-أخيرًا ، نحفظ المستند المعدل في ملف. يمكنك اختيار اسم وموقع مناسبين للمستند الناتج.
+## Schritt 8: Speichern Sie das geänderte Dokument
+Abschließend speichern wir das geänderte Dokument in einer Datei. Sie können einen geeigneten Namen und Speicherort für das Ausgabedokument auswählen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-تهنئة ! لقد قمت الآن بتطبيق حد مخطط على جدول باستخدام Aspose.Words لـ .NET.
+Herzlichen Glückwunsch! Sie haben jetzt mit Aspose.Words für .NET einen Umrissrahmen auf eine Tabelle angewendet.
 
-### نموذج التعليمات البرمجية المصدر لـ Apply Outline Border باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Umrissrahmen anwenden“ mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// قم بمحاذاة الجدول إلى وسط الصفحة.
+	// Richten Sie die Tabelle in der Mitte der Seite aus.
 	table.Alignment = TableAlignment.Center;
-	//امسح أي حدود موجودة من الجدول.
+	//Löschen Sie alle vorhandenen Ränder aus der Tabelle.
 	table.ClearBorders();
-	// ضع حدًا أخضر حول الطاولة وليس بالداخل.
+	// Legen Sie einen grünen Rand um den Tisch, aber nicht nach innen.
 	table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
 	table.SetBorder(BorderType.Right, LineStyle.Single, 1.5, Color.Green, true);
 	table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 	table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
-	// املأ الخلايا بلون أخضر فاتح.
+	// Füllen Sie die Zellen mit einer hellgrünen Volltonfarbe.
 	table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تطبيق حد مخطط على جدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة دمج هذه الوظيفة في مشاريع C # الخاصة بك. يعد التلاعب بتنسيق الجدول جانبًا أساسيًا من معالجة المستندات ، ويقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لتحقيق ذلك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية المتطلبات المحددة.
+## Abschluss
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET einen Umrissrahmen auf eine Tabelle anwendet. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie diese Funktionalität problemlos in Ihre C#-Projekte integrieren. Die Manipulation der Tabellenformatierung ist ein wesentlicher Aspekt der Dokumentverarbeitung, und Aspose.Words bietet eine leistungsstarke und flexible API, um dies zu erreichen. Mit diesem Wissen können Sie die visuelle Darstellung Ihrer Word-Dokumente verbessern und spezifische Anforderungen erfüllen.

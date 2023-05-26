@@ -1,34 +1,34 @@
 ---
-title: أضف خصائص المستند المخصصة
-linktitle: أضف خصائص المستند المخصصة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET.
+title: Fügen Sie benutzerdefinierte Dokumenteigenschaften hinzu
+linktitle: Fügen Sie benutzerdefinierte Dokumenteigenschaften hinzu
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Hinzufügen benutzerdefinierter Eigenschaften zu einem Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-document-properties/add-custom-document-properties/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إضافة معلومات مخصصة إلى المستند.
+In diesem Tutorial führen wir Sie durch den C#-Quellcode, um mit Aspose.Words für .NET benutzerdefinierte Eigenschaften zu einem Dokument hinzuzufügen. Mit dieser Funktion können Sie dem Dokument benutzerdefinierte Informationen hinzufügen.
 
-## الخطوة 1: إعداد المشروع
+## Schritt 1: Projekteinrichtung
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Aspose.Words for .NET-Bibliothek verwiesen wird.
 
-## الخطوة الثانية: تحميل المستند
+## Schritt 2: Laden des Dokuments
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد إضافة خصائص مخصصة إليه. استخدم الكود التالي لتحميل المستند:
+In diesem Schritt laden wir das Word-Dokument, dem wir benutzerdefinierte Eigenschaften hinzufügen möchten. Verwenden Sie den folgenden Code, um das Dokument zu laden:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Ersetzen`"YOUR DOCUMENTS DIRECTORY"` mit dem tatsächlichen Pfad des Verzeichnisses, in dem sich Ihr Dokument befindet.
 
-## الخطوة 3: إضافة خصائص مخصصة
+## Schritt 3: Benutzerdefinierte Eigenschaften hinzufügen
 
-الآن دعنا نضيف خصائص مخصصة إلى المستند. استخدم الكود التالي لإضافة الخصائص:
+Fügen wir nun dem Dokument benutzerdefinierte Eigenschaften hinzu. Verwenden Sie den folgenden Code, um die Eigenschaften hinzuzufügen:
 
 ```csharp
 CustomDocumentProperties customDocumentProperties = doc.CustomDocumentProperties;
@@ -42,13 +42,13 @@ customDocumentProperties.Add("Authorized Revision", doc.BuiltInDocumentPropertie
 customDocumentProperties.Add("Authorized Amount", 123.45);
 ```
 
-يتحقق هذا الرمز أولاً مما إذا كانت الخاصية "معتمد" موجودة بالفعل في الخصائص المخصصة. إذا كان موجودًا ، فستتوقف العملية. وبخلاف ذلك ، تتم إضافة الخصائص المخصصة إلى المستند.
+Dieser Code prüft zunächst, ob die Eigenschaft „Autorisiert“ bereits in den benutzerdefinierten Eigenschaften vorhanden ist. Wenn es vorhanden ist, wird der Prozess unterbrochen. Andernfalls werden die benutzerdefinierten Eigenschaften dem Dokument hinzugefügt.
 
-### مثال على شفرة المصدر لإضافة خصائص وثيقة مخصصة باستخدام Aspose.Words for .NET
+### Beispielquellcode für das Hinzufügen benutzerdefinierter Dokumenteigenschaften mit Aspose.Words für .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx");
 
@@ -64,6 +64,6 @@ customDocumentProperties.Add("Authorized Amount", 123.45);
 
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Stellen Sie sicher, dass Sie den richtigen Dokumentpfad angeben`dataDir` Variable.
 
-لقد تعلمت الآن كيفية إضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إضافة خصائصك المخصصة إلى مستنداتك.
+Sie haben jetzt gelernt, wie Sie mit Aspose.Words für .NET benutzerdefinierte Eigenschaften zu einem Dokument hinzufügen. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie ganz einfach Ihre eigenen benutzerdefinierten Eigenschaften zu Ihren Dokumenten hinzufügen.

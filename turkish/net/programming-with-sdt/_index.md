@@ -1,30 +1,30 @@
 ---
-title: البرمجة باستخدام Sdt
-linktitle: البرمجة باستخدام Sdt
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على عنصر تحكم في محتوى نوع مربع الاختيار ، والحالة الحالية لمربع الاختيار ، وتعديل عناصر التحكم في المحتوى ، والتحكم في محتوى مربع التحرير والسرد ، والتحكم في محتوى مربع النص الغني ،
+title: SDT ile Programlama
+linktitle: SDT ile Programlama
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, onay kutusu türü içerik kontrolü, onay kutusunun mevcut durumu, içerik değiştirme kontrolleri, birleşik giriş kutusu içerik kontrolü, zengin metin kutusu içerik kontrolü,
 type: docs
 weight: 1400
 url: /tr/net/programming-with-sdt/
 ---
-تتيح لك برامج Aspose.Words for .NET التعليمية استكشاف ميزات المكتبة بعمق وتعلم كيفية البرمجة باستخدام محتوى منظم في Word باستخدام عناصر التحكم في المحتوى المهيكل (SDTs). ترشدك هذه البرامج التعليمية خطوة بخطوة عبر الخطوات اللازمة لإنشاء البيانات ومعالجتها واستخراجها من عناصر تحكم SDT في مستندات Word الخاصة بك.
+Aspose.Words for .NET eğitimleri, kitaplığın özelliklerini derinlemesine keşfetmenizi ve Yapılandırılmış İçerik Kontrollerini (SDT'ler) kullanarak Word'de yapılandırılmış içerikle nasıl programlanacağını öğrenmenizi sağlar. Bu adım adım öğreticiler, Word belgelerinizde SDT denetimlerinden veri oluşturmak, işlemek ve ayıklamak için gerekli adımlarda size yol gösterir.
 
-في هذه البرامج التعليمية ، ستتعلم كيفية إضافة عناصر تحكم المعاملة الخاصة والتفضيلية وإزالتها ، وكيفية تخصيصها بخصائص محددة ، وكيفية الوصول إلى بياناتها وتعديلها. ستتعلم أيضًا كيفية استخدام الأحداث المتعلقة بعناصر تحكم المعاملة الخاصة والتفاضلية لتنفيذ إجراءات مخصصة عند تعديل البيانات أو التحقق من صحتها.
+Bu eğitimlerde, SDT kontrollerini nasıl ekleyeceğinizi ve kaldıracağınızı, bunları belirli özelliklerle nasıl özelleştireceğinizi ve verilerine nasıl erişeceğinizi ve değiştireceğinizi öğreneceksiniz. Verileri değiştirirken veya doğrularken özel eylemler gerçekleştirmek için SDT kontrolleriyle ilgili olayları nasıl kullanacağınızı da öğreneceksiniz.
 
-ستساعدك نماذج التعليمات البرمجية المتوفرة في البرامج التعليمية على فهم المفاهيم وممارسة وظائف عناصر تحكم المعاملة الخاصة والتفضيلية في مشروعاتك الخاصة. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان استخدام عناصر تحكم SDT في Aspose.Words for .NET وتحسين مهارات تطوير مستندات Word.
+Öğreticilerde sağlanan kod örnekleri, kavramları anlamanıza ve kendi projelerinizde SDT kontrollerinin işlevselliğini uygulamanıza yardımcı olacaktır. İster yeni başlayan ister deneyimli bir geliştirici olun, bu eğitimler Aspose.Words for .NET'te SDT kontrollerinin kullanımında uzmanlaşmanıza ve Word belgesi geliştirme becerilerinizi geliştirmenize yardımcı olacaktır.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [خانة اختيار اكتب Content Control](./check-box-type-content-control/) | تعرف على كيفية إنشاء عنصر تحكم في المحتوى من نوع خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. |
-| [خانة الاختيار الحالية](./current-state-of-check-box/) | تعرف على كيفية استرداد الحالة الحالية لعنصر تحكم محتوى خانة الاختيار وتعيينه في مستند Word باستخدام Aspose.Words for .NET. |
-| [تعديل عناصر التحكم في المحتوى](./modify-content-controls/) | تعرف على كيفية تعديل النص والقوائم المنسدلة والصور ضمن عناصر التحكم في المحتوى في مستند Word باستخدام Aspose.Words for .NET. |
-| [التحكم في محتوى صندوق التحرير والسرد](./combo-box-content-control/) | تعرف على كيفية إنشاء عنصر تحكم محتوى Combo Box في مستند Word باستخدام Aspose.Words for .NET. |
-| [التحكم في محتوى مربع نص منسق](./rich-text-box-content-control/) | تعرف على كيفية إنشاء عنصر تحكم في محتوى مربع نص منسق في مستند Word باستخدام Aspose.Words for .NET مما يتيح تنسيق النص وتصميمه. |
-| [تعيين لون التحكم في المحتوى](./set-content-control-color/) | تعرف على كيفية تعيين لون عنصر تحكم المحتوى في مستند Word باستخدام Aspose.Words for .NET ، مع تخصيص مظهره. |
-| [مسح التحكم في المحتويات](./clear-contents-control/) | تعرف على كيفية مسح محتويات عنصر تحكم في مستند Word باستخدام Aspose.Words for .NET. |
-| [ربط SDT بجزء Xml المخصص](./bind-sdt-to-custom-xml-part/) | تعرف على كيفية ربط SDT بجزء Xml مخصص باستخدام Aspose.Words for .NET. |
-| [تعيين نمط التحكم في المحتوى](./set-content-control-style/) | تعرف على كيفية تعيين نمط عنصر تحكم المحتوى في مستند Word باستخدام Aspose.Words for .NET ، مع تطبيق تنسيق متسق. |
-| [إنشاء مقطع مكرر للجدول معين إلى جزء Xml مخصص](./creating-table-repeating-section-mapped-to-custom-xml-part/) | تعرف على كيفية إنشاء جدول مع قسم مكرر معين إلى CustomXmlPart في مستند Word باستخدام Aspose.Words for .NET. |
-| [قسم متعدد](./multi-section/) | تعرف على كيفية استرداد علامات المستندات المنظمة متعددة الأقسام ومعالجتها في مستند Word باستخدام Aspose.Words for .NET. |
-| [نطاق علامة المستند المهيكلة بدء تعيين Xml](./structured-document-tag-range-start-xml-mapping/) | تعرف على كيفية إعداد تعيين XML لنطاق علامة مستند منظم يبدأ في مستند Word باستخدام Aspose.Words for .NET. |
+| [Onay Kutusu Türü İçerik Kontrolü](./check-box-type-content-control/) | Aspose.Words for .NET kullanarak bir Word belgesinde Onay Kutusu Tipi İçerik Kontrolü oluşturmayı öğrenin. |
+| [Onay Kutusunun Mevcut Durumu](./current-state-of-check-box/) | Aspose.Words for .NET kullanarak bir Word belgesindeki bir onay kutusu içerik kontrolünün mevcut durumunu nasıl alacağınızı ve ayarlayacağınızı öğrenin. |
+| [İçerik Kontrollerini Değiştirin](./modify-content-controls/) | Aspose.Words for .NET kullanarak bir Word belgesindeki içerik kontrollerindeki metinleri, açılır listeleri ve görüntüleri nasıl değiştireceğinizi öğrenin. |
+| [Açılan Kutu İçeriği Kontrolü](./combo-box-content-control/) | Aspose.Words for .NET kullanarak bir Word belgesinde Birleşik Giriş Kutusu İçerik Kontrolü oluşturmayı öğrenin. |
+| [Zengin Metin Kutusu İçerik Kontrolü](./rich-text-box-content-control/) | Aspose.Words for .NET'i kullanarak bir Word belgesinde metin biçimlendirme ve stillendirme sağlayan zengin bir metin kutusu içerik denetimi oluşturmayı öğrenin. |
+| [İçerik Kontrol Rengini Ayarla](./set-content-control-color/) | Aspose.Words for .NET kullanarak bir Word belgesindeki içerik kontrolünün rengini, görünüşünü özelleştirerek nasıl ayarlayacağınızı öğrenin. |
+| [İçerik Kontrolünü Temizle](./clear-contents-control/) | Aspose.Words for .NET kullanarak bir Word belgesindeki kontrolün içeriğini nasıl temizleyeceğinizi öğrenin. |
+| [SDT'yi Özel Xml Bölümüne Bağla](./bind-sdt-to-custom-xml-part/) | Aspose.Words for .NET kullanarak bir SDT'yi Özel Xml Bölümüne nasıl bağlayacağınızı öğrenin. |
+| [İçerik Kontrol Stilini Ayarla](./set-content-control-style/) | Tutarlı biçimlendirme uygulayarak Aspose.Words for .NET kullanarak bir Word belgesinde içerik kontrolünün stilini nasıl ayarlayacağınızı öğrenin. |
+| [Özel Xml Bölümüne Eşlenen Tablo Yinelenen Bölüm Oluşturma](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Aspose.Words for .NET kullanarak bir Word belgesinde bir CustomXmlPart'a eşlenen yinelenen bir bölümle tablo oluşturmayı öğrenin. |
+| [Çoklu Bölüm](./multi-section/) | Aspose.Words for .NET kullanarak bir Word belgesindeki çok bölümlü yapılandırılmış belge etiketlerini nasıl alacağınızı ve işleyeceğinizi öğrenin. |
+| [Yapılandırılmış Belge Etiket Aralığı Xml Eşlemesini Başlat](./structured-document-tag-range-start-xml-mapping/) | Aspose.Words for .NET kullanarak bir Word belgesinde başlayan yapılandırılmış bir belge etiketi aralığı için XML eşlemeyi nasıl kuracağınızı öğrenin. |

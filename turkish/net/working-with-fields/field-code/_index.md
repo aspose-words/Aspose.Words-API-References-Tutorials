@@ -1,36 +1,36 @@
 ---
-title: كود الحقل
-linktitle: كود الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة للحصول على رمز الحقل والنتيجة الميدانية في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+title: Alan Kodu
+linktitle: Alan Kodu
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile Word belgelerinizde alan kodunu ve alan sonucunu almak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/field-code/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "Get Field Code" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aspose.Words for .NET'in "Get Field Code" özelliğini kullanan aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz. İstenen sonuçları elde etmek için her adımı dikkatlice uyguladığınızdan emin olun.
 
-## الخطوة 1: إعداد دليل المستند
+## 1. Adım: Belge Dizini Kurulumu
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-تتمثل الخطوة الأولى في تحميل المستند حيث تريد الحصول على رموز الحقول.
+İlk adım, alan kodlarını almak istediğiniz belgeyi yüklemektir.
 
 ```csharp
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
-تأكد من استبدال "Hyperlinks.docx" باسم الملف الخاص بك.
+"Hyperlinks.docx" dosyasını kendi dosyanızın adıyla değiştirdiğinizden emin olun.
 
-## الخطوة 3: تصفح حقول المستندات
+## 3. Adım: Belge Alanlarına Göz Atın
 
- نحن نستخدم`foreach` حلقة للتكرار خلال جميع الحقول الموجودة في المستند.
+ biz bir`foreach` belgede bulunan tüm alanlar arasında döngü yapmak için döngü.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -40,27 +40,27 @@ foreach(Field field in doc.Range.Fields)
 }
 ```
 
- في كل تكرار للحلقة ، نحصل على رمز الحقل باستخدام`GetFieldCode()` طريقة. نقوم أيضًا بتخزين نتيجة الحقل في متغير.
+ Döngünün her yinelemesinde, alan kodunu kullanarak alırız.`GetFieldCode()` yöntem. Ayrıca alanın sonucunu bir değişkende saklarız.
 
-### مثال رمز المصدر للحصول على رمز الحقل مع Aspose.Words for .NET
+### Aspose.Words for .NET ile Alan Kodu Al için Kaynak Kodu Örneği
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+// Belgeyi yükleyin.
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 
-// حلقة من خلال حقول الوثيقة.
+// Belge alanları arasında geçiş yapın.
 foreach(Field field in doc.Range.Fields)
 {
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // افعل شيئًا مع رمز الحقل والنتيجة.
+     // Alanın kodu ve sonucuyla bir şeyler yapın.
 }
 ```
 
-في هذا المثال ، قمنا بتحميل مستند ثم تدويره عبر جميع الحقول الموجودة في المستند. في كل تكرار ، حصلنا على الكود ونتيجة الحقل. يمكنك إضافة منطقك الخاص لمعالجة الكود وحقول النتائج حسب الحاجة.
+Bu örnekte, bir belge yükledik ve ardından belgede bulunan tüm alanlar arasında geçiş yaptık. Her yinelemede, alanın kodunu ve sonucunu aldık. Kodu ve sonuç alanlarını gerektiği gibi işlemek için kendi mantığınızı ekleyebilirsiniz.
 
-بهذا ينتهي دليلنا حول استخدام ميزة "Get Field Code" مع Aspose.Words for .NET.
+Bu, Aspose.Words for .NET ile "Get Field Code" özelliğini kullanma konusundaki kılavuzumuzu sonlandırıyor.

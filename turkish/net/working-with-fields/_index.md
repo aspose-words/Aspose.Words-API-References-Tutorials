@@ -1,40 +1,40 @@
 ---
-title: العمل مع الحقول
-linktitle: العمل مع الحقول
-second_title: Aspose.Words لمراجع .NET API
-description: توضح البرامج التعليمية كيفية إدراج الحقل ، وتحديث الثقافة المحفوظة ، واستبدال الارتباط التشعبي للحقل ، وإزالة الحقل ، وإدراج الحقول المتداخلة في مستند Word باستخدام Aspose.Words for .NET
+title: Alanlarla Çalışmak
+linktitle: Alanlarla Çalışmak
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, Aspose.Words for .NET kullanarak Alan eklemeyi, dosyalanmış kültürü güncellemeyi, alan köprüsünü değiştirmeyi, alanı kaldırmayı ve iç içe alanları Word Belgesine eklemeyi gösterir.
 type: docs
 weight: 140
 url: /tr/net/working-with-fields/
 ---
-هذا مورد شامل لتعلم كيفية العمل مع الحقول في مستندات Word باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية تفسيرات خطوة بخطوة ، وشفرة مصدر مفصلة ، وأمثلة عملية للتعامل الفعال مع الحقول وإدارتها مثل رموز الحقول والتحديثات وعروض النتائج وشروط IF ودمج البريد والمزيد. هذا المورد ضروري للمطورين الراغبين في أتمتة إنشاء مستندات Word ومعالجتها باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kütüphanesini kullanarak Word belgelerindeki alanlarla nasıl çalışılacağını öğrenmek için kapsamlı bir kaynaktır. Öğreticiler, adım adım açıklamalar, ayrıntılı kaynak kodu ve alan kodları, güncellemeler, sonuç görüntülemeleri, IF koşulları, adres mektup birleştirmeleri ve daha fazlası gibi alanları etkili bir şekilde işlemek ve yönetmek için pratik örnekler sunar. Bu kaynak, Aspose.Words for .NET kullanarak Word belgelerinin oluşturulmasını ve işlenmesini otomatikleştirmek isteyen geliştiriciler için çok önemlidir.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [كود الحقل](./field-code/) | دليل خطوة بخطوة للحصول على رمز الحقل والنتيجة الميدانية في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. |
-| [تغيير مصدر ثقافة تحديث الحقل](./change-field-update-culture-source/) | تغيير ثقافة تحديث الحقل المصدر: دليل خطوة بخطوة لتعديل مصدر الثقافة في Aspose.Words for .NET.|
-| [حدد الإعدادات المحلية على مستوى الحقل](./specify-locale-at-field-level/) | تعرف على كيفية تحديد الترجمة على مستوى الحقل في مستندات Word باستخدام Aspose.Words for .NET. |
-| [استبدل الارتباطات التشعبية](./replace-hyperlinks/) | استبدل الارتباطات التشعبية في مستندات Word باستخدام Aspose.Words for .NET. إرشادات خطوة بخطوة لاستبدال الارتباطات التشعبية. |
-| [إعادة تسمية حقول الدمج](./rename-merge-fields/) | في هذا البرنامج التعليمي ، ستتعلم كيفية إعادة تسمية حقول الدمج في مستند باستخدام Aspose.Words for .NET. |
-| [إزالة الحقل](./remove-field/) | في هذا الدليل ، ستتعلم كيفية حذف حقل معين في مستند باستخدام Aspose.Words for .NET. |
-| [أدخل حقل TOA بدون Document Builder](./insert-toafield-without-document-builder/) | دليل خطوة بخطوة لإدخال حقل TOA بدون Document Builder باستخدام Aspose.Words for .NET. |
-| [أدخل الحقول المتداخلة](./insert-nested-fields/) | تعرف على كيفية إدراج الحقول المتداخلة بسهولة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [أدخل حقل الدمج باستخدام DOM](./insert-merge-field-using-dom/) | تعرف على كيفية إدراج حقول دمج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM](./insert-mail-merge-address-block-field-using-dom/) | تعرف على كيفية إدراج حقل كتلة عنوان دمج المراسلات في مستندات Word باستخدام Aspose.Words for .NET. |
-| [قم بإدراج FieldIncludeText بدون Document Builder](./insert-field-include-text-without-document-builder/) | تعرف على كيفية إدراج حقل FieldIncludeText في مستندات Word باستخدام Aspose.Words for .NET. |
-| [إدراج حقل بلا](./insert-field-none/) | تعرف على كيفية برنامج Insérez un Champ AUCUN dans vos documents Word avec Aspose.Words pour .NET. |
-| [أدخل الحقل](./insert-field/) | تعرف على كيفية إدراج حقل في مستندات Word باستخدام Aspose.Words for .NET. إضفاء الطابع الشخصي على المستندات الخاصة بك مع الحقول الديناميكية. |
-| [أدخل الحقل باستخدام Field Builder](./insert-field-using-field-builder/) | تعرف على كيفية إدراج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [أدخل حقل المؤلف](./insert-author-field/) | تعرف على كيفية إدراج حقل AUTHOR في مستندات Word باستخدام Aspose.Words for .NET. حدد اسم المؤلف لتخصيص مستنداتك. |
-| [أدخل ASKField With Out Document Builder](./insert-askfield-with-out-document-builder/) | تعرف على كيفية إدراج حقل ASK في مستندات Word باستخدام Aspose.Words for .NET. |
-| [أدخل الحقل المتقدم بدون Document Builder](./insert-advance-field-with-out-document-builder/) | تعرف على كيفية إدراج حقل متقدم في مستندات Word باستخدام Aspose.Words for .NET. |
-| [احصل على أسماء حقول دمج المراسلات](./get-mail-merge-field-names/) | تعرف على كيفية الحصول على أسماء حقول دمج البريد في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. |
-| [حذف الحقول](./delete-fields/) | دليل خطوة بخطوة لحذف حقول الدمج في مستندات Word باستخدام Aspose.Words for .NET |
-| [ثقافة التحديث الميداني](./field-update-culture/) | تعرف على كيفية تحديث الثقافة الميدانية في مستندات Word باستخدام Aspose.Words for .NET. |
-| [نتائج العرض الميداني](./field-display-results/) | دليل خطوة بخطوة لعرض النتائج الميدانية في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. |
-| [تقييم حالة IF](./evaluate-ifcondition/) | دليل خطوة بخطوة لتقييم حالة IF في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تحويل الحقول في الفقرة](./convert-fields-in-paragraph/) | تحويل حقول IF إلى نص عادي في فقرة باستخدام Aspose.Words for .NET. |
-| [تحويل الحقول في المستند](./convert-fields-in-document/) | دليل تفصيلي خطوة بخطوة لتحويل حقول المستند إلى نص باستخدام Aspose.Words for .NET. |
-| [تحويل الحقول في الجسم](./convert-fields-in-body/) | تعرف على كيفية استخدام Aspose.Words for .NET لتحويل حقول الصفحة إلى نص في نص مستند Word. |
-| [تغيير اللغة](./change-locale/) | تعرف على كيفية تغيير الإعدادات المحلية لتنسيق التاريخ والأرقام في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Alan Kodu](./field-code/) | Aspose.Words for .NET ile Word belgelerinizde alan kodunu ve alan sonucunu almak için adım adım kılavuz. |
+| [Alanı Değiştir Kültür Kaynağını Güncelle](./change-field-update-culture-source/) | Alanı Değiştir Kültür Kaynağını Güncelle: Aspose.Words for .NET'te kültür kaynağını değiştirmek için adım adım kılavuz.|
+| [Alan Düzeyinde Yerel Ayarı Belirtin](./specify-locale-at-field-level/) | Aspose.Words for .NET ile Word belgelerinde alan düzeyinde yerelleştirmeyi nasıl belirteceğinizi öğrenin. |
+| [Köprüleri Değiştir](./replace-hyperlinks/) | Aspose.Words for .NET kullanarak Word belgelerindeki köprüleri değiştirin. Köprüleri değiştirmek için adım adım talimatlar. |
+| [Birleştirme Alanlarını Yeniden Adlandırın](./rename-merge-fields/) | Bu öğreticide, Aspose.Words for .NET kullanarak bir belgedeki birleştirme alanlarını nasıl yeniden adlandıracağınızı öğreneceksiniz. |
+| [Alanı Kaldır](./remove-field/) | Bu kılavuzda, Aspose.Words for .NET kullanarak bir belgedeki belirli bir alanı nasıl sileceğinizi öğreneceksiniz. |
+| [Belge Oluşturucu Olmadan TOA Alanı Ekle](./insert-toafield-without-document-builder/) | Aspose.Words for .NET kullanarak Document Builder olmadan TOA alanı eklemek için adım adım kılavuz. |
+| [İç İçe Alanlar Ekle](./insert-nested-fields/) | Aspose.Words for .NET ile iç içe geçmiş alanları Word belgelerinize kolayca nasıl ekleyeceğinizi öğrenin. |
+| [DOM Kullanarak Birleştirme Alanı Ekleme](./insert-merge-field-using-dom/) | Aspose.Words for .NET ile özel alan birleştirme alanlarını Word belgelerinize nasıl ekleyeceğinizi öğrenin. |
+| [DOM Kullanarak Adres Mektup Birleştirme Adres Bloğu Alanı Ekleme](./insert-mail-merge-address-block-field-using-dom/) | Aspose.Words for .NET ile Word belgelerinize adres mektup birleştirme adres bloğu alanını nasıl ekleyeceğinizi öğrenin. |
+| [Belge Oluşturucu Olmadan FieldIncludeText Ekleme](./insert-field-include-text-without-document-builder/) | Aspose.Words for .NET ile Word belgelerinize FieldIncludeText alanını nasıl ekleyeceğinizi öğrenin. |
+| [Alan Ekle Yok](./insert-field-none/) | Word ve Aspose.Words'ün .NET'teki belgelerine AUCUN şampiyonu eklemeyi öğrenin. |
+| [Alan Ekle](./insert-field/) | Aspose.Words for .NET ile Word belgelerinize nasıl alan ekleyeceğinizi öğrenin. Belgelerinizi dinamik alanlarla kişiselleştirin. |
+| [Field Builder'ı Kullanarak Alan Ekleme](./insert-field-using-field-builder/) | Aspose.Words for .NET ile Word belgelerinize nasıl özel alanlar ekleyeceğinizi öğrenin. |
+| [Yazar Alanı Ekle](./insert-author-field/) | Aspose.Words for .NET ile Word belgelerinize YAZAR alanı eklemeyi öğrenin. Belgelerinizi kişiselleştirmek için yazarın adını belirtin. |
+| [Belge Oluşturucu Dışında ASKField Ekle](./insert-askfield-with-out-document-builder/) | Aspose.Words for .NET ile Word belgelerinize nasıl ASK alanı ekleyeceğinizi öğrenin. |
+| [Belge Oluşturucu Olmadan Gelişmiş Alan Ekle](./insert-advance-field-with-out-document-builder/) | Aspose.Words for .NET ile Word belgelerinize nasıl gelişmiş bir alan ekleyeceğinizi öğrenin. |
+| [Adres Mektup Birleştirme Alan Adlarını Alın](./get-mail-merge-field-names/) | Aspose.Words for .NET ile Word belgelerinizde adres mektup birleştirme alan adlarını nasıl alacağınızı öğrenin. |
+| [Alanları Sil](./delete-fields/) | Aspose.Words for .NET kullanarak Word belgelerinizdeki birleştirme alanlarını silmek için adım adım kılavuz |
+| [Alan Güncelleme Kültürü](./field-update-culture/) | Aspose.Words for .NET ile Word belgelerinizdeki alan kültürünü nasıl güncelleyeceğinizi öğrenin. |
+| [Alan Görüntüleme Sonuçları](./field-display-results/) | Aspose.Words for .NET ile Word belgelerinizde alan sonuçlarını görüntülemek için adım adım kılavuz. |
+| [IF Koşulunu Değerlendir](./evaluate-ifcondition/) | Aspose.Words for .NET ile Word belgelerinizdeki IF koşulunu değerlendirmek için adım adım kılavuz. |
+| [Paragraftaki Alanları Dönüştür](./convert-fields-in-paragraph/) | Aspose.Words for .NET ile IF alanlarını bir paragraftaki düz metne dönüştürün. |
+| [Belgedeki Alanları Dönüştür](./convert-fields-in-document/) | Aspose.Words for .NET kullanarak belge alanlarını metne dönüştürmek için adım adım kılavuz. |
+| [Gövdedeki Alanları Dönüştür](./convert-fields-in-body/) | Sayfa alanlarını bir Word belgesinin gövdesindeki metne dönüştürmek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin. |
+| [Yerel Ayarı Değiştir](./change-locale/) | Aspose.Words for .NET kullanarak Word belgelerinde tarih ve sayı biçimlendirmesi için yerel ayarı nasıl değiştireceğinizi öğrenin. |

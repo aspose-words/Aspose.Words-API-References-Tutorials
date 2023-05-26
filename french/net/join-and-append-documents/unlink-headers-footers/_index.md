@@ -1,78 +1,78 @@
 ---
-title: فك ارتباط تذييلات الرؤوس
-linktitle: فك ارتباط تذييلات الرؤوس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الانضمام إلى مستندات Word وإلحاقها أثناء إلغاء ربط الرؤوس والتذييلات باستخدام Aspose.Words for .NET.
+title: Dissocier les en-têtes et les pieds de page
+linktitle: Dissocier les en-têtes et les pieds de page
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à joindre et à ajouter des documents Word tout en dissociant les en-têtes et les pieds de page à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/join-and-append-documents/unlink-headers-footers/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Unlink Headers Footers في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء إلغاء ربط الرؤوس والتذييلات من المستند المصدر.
+Ce didacticiel vous guidera tout au long du processus d'utilisation de la fonctionnalité Unlink Headers Footers d'Aspose.Words pour .NET. Cette fonctionnalité vous permet de joindre et d'ajouter des documents Word tout en dissociant les en-têtes et les pieds de page du document source.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words pour .NET installé. Vous pouvez le télécharger depuis le site Web d'Aspose ou l'installer via NuGet.
+2. Visual Studio ou tout autre environnement de développement C#.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Étape 1 : Initialiser les répertoires de documents
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir` variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Étape 2 : Chargez les documents source et de destination
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Ensuite, vous devez charger les documents source et de destination à l'aide de Aspose.Words`Document` classe. Mettez à jour les noms de fichiers dans le`Document` constructeur en fonction des noms de vos documents.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إلغاء ربط الرؤوس والتذييلات في المستند المصدر
+## Étape 3 : dissocier les en-têtes et les pieds de page du document source
 
- لإلغاء ارتباط الرؤوس والتذييلات في المستند المصدر من متابعة رؤوس وتذييلات المستند الوجهة ، تحتاج إلى تعيين`LinkToPrevious` ممتلكات`HeadersFooters` المجموعة في القسم الأول من المستند المصدر إلى`false`.
+ Pour dissocier les en-têtes et pieds de page du document source de la continuation des en-têtes et pieds de page du document de destination, vous devez définir le`LinkToPrevious` propriété de la`HeadersFooters` collection dans la première section du document source pour`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بمستند الوجهة
+## Étape 4 : Ajouter le document source au document de destination
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Maintenant, vous pouvez ajouter le document source au document de destination en utilisant le`AppendDocument` méthode de la`Document` classe. Le`ImportFormatMode.KeepSourceFormatting` Le paramètre garantit que la mise en forme de la source est préservée pendant l'opération d'ajout.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند النهائي
+## Étape 5 : Enregistrez le document final
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة Unlink Headers Footers باستخدام ملحق`Save` طريقة`Document` فصل.
+ Enfin, enregistrez le document fusionné avec la fonctionnalité Dissocier les en-têtes et les pieds de page activée à l'aide de la`Save` méthode de la`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 ```
 
-### مثال على شفرة المصدر لإلغاء ربط تذييلات الرؤوس باستخدام Aspose.Words for .NET
+### Exemple de code source pour Unlink Headers Footers en utilisant Aspose.Words pour .NET
 
-إليك شفرة المصدر الكاملة لميزة "Unlink Headers Footers" في C # باستخدام Aspose.Words for .NET:
+Voici le code source complet de la fonctionnalité "Unlink Headers Footers" en C# à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بفك ارتباط الرؤوس والتذييلات في المستند المصدر لإيقاف ذلك
-	// من متابعة رؤوس وتذييلات المستند الوجهة.
+	// Dissociez les en-têtes et les pieds de page du document source pour arrêter cela
+	// de continuer les en-têtes et pieds de page du document de destination.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Unlink Headers Footers باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الرؤوس والتذييلات من المستند المصدر غير المرتبط بالمستند الوجهة.
+C'est ça! Vous avez implémenté avec succès la fonctionnalité Unlink Headers Footers à l'aide de Aspose.Words pour .NET. Le document final contiendra le contenu fusionné avec les en-têtes et pieds de page du document source dissociés du document de destination.

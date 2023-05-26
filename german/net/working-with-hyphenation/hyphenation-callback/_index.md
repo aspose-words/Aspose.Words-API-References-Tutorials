@@ -1,30 +1,30 @@
 ---
-title: رد اتصال الواصلة
-linktitle: رد اتصال الواصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام رد نداء الواصلة في Aspose.Words for .NET للتعامل مع الواصلة في الكلمات.
+title: Rückruf zur Silbentrennung
+linktitle: Rückruf zur Silbentrennung
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie den Silbentrennungsrückruf in Aspose.Words für .NET verwenden, um die Silbentrennung von Wörtern zu verarbeiten.
 type: docs
 weight: 10
 url: /de/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية استخدام ميزة رد الاتصال في Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie die Silbentrennungs-Rückruffunktion in Aspose.Words für .NET verwenden. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und konfiguriert ist. Wenn Sie es noch nicht getan haben, laden Sie die Bibliothek von der offiziellen Website herunter und installieren Sie sie.
 
-## الخطوة 1: حفظ تذكير الواصلة
+## Schritt 1: Silbentrennungserinnerung speichern
 
- أولاً ، سنقوم بتسجيل رد نداء الواصلة باستخدام مخصص`CustomHyphenationCallback` فصل. سيسمح لنا ذلك بالتعامل مع الواصلة وفقًا لقواعدنا الخاصة:
+ Zuerst registrieren wir den Silbentrennungsrückruf mithilfe einer benutzerdefinierten Funktion`CustomHyphenationCallback` Klasse. Dadurch können wir die Silbentrennung von Wörtern nach unseren eigenen Regeln handhaben:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
 ```
 
- تأكد من أنك قمت بتنفيذ`CustomHyphenationCallback`فئة وفقًا لاحتياجاتك الخاصة.
+ Stellen Sie sicher, dass Sie das implementiert haben`CustomHyphenationCallback`Unterricht nach Ihren spezifischen Bedürfnissen.
 
-## الخطوة 2: تحميل المستند وتطبيق الواصلة
+## Schritt 2: Laden des Dokuments und Anwenden der Silbentrennung
 
-بعد ذلك ، قم بتحميل المستند الخاص بك من الدليل المحدد وقم بوصل الكلمات باستخدام Aspose.Words:
+Laden Sie als Nächstes Ihr Dokument aus dem angegebenen Verzeichnis und trennen Sie die Wörter mit Aspose.Words:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,9 +32,9 @@ Document document = new Document(dataDir + "German text.docx");
 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
 ```
 
-## الخطوة 3: معالجة أخطاء القاموس المفقودة
+## Schritt 3: Behandeln von fehlenden Wörterbuchfehlern
 
-في حالة فقد قاموس الواصلة ، سنكتشف الاستثناء المقابل ونعرض رسالة خطأ:
+Falls ein Silbentrennungswörterbuch fehlt, fangen wir die entsprechende Ausnahme ab und zeigen eine Fehlermeldung an:
 
 ```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
@@ -43,9 +43,9 @@ catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary")
 }
 ```
 
-## الخطوة 4: تنظيف وتعطيل تذكير الواصلة
+## Schritt 4: Silbentrennungserinnerung bereinigen und deaktivieren
 
-أخيرًا ، للتنظيف وإيقاف تشغيل تذكير الواصلة ، قم بتنفيذ الخطوات التالية:
+Führen Sie abschließend aus Gründen der Sauberkeit und zum Deaktivieren der Silbentrennungserinnerung die folgenden Schritte aus:
 
 ```csharp
 finally
@@ -54,16 +54,16 @@ finally
 }
 ```
 
-يؤدي هذا إلى تنظيف وتعطيل تذكير الواصلة بعد الانتهاء من المعالجة.
+Dadurch wird die Silbentrennungserinnerung nach Abschluss der Verarbeitung bereinigt und deaktiviert.
 
-لذا ! لقد نجحت في استخدام رد نداء الواصلة في Aspose.Words for .NET.
+So ! Sie haben den Silbentrennungs-Callback in Aspose.Words für .NET erfolgreich verwendet.
 
-### نموذج التعليمات البرمجية المصدر لرد الاتصال الواصلة مع Aspose.Words for .NET
+### Beispielquellcode für Silbentrennungsrückruf mit Aspose.Words für .NET
 
 ```csharp
 try
 {
-	 // تسجيل رد الاتصال الواصلة.
+	 // Rückruf für Silbentrennung registrieren.
 	 Hyphenation.Callback = new CustomHyphenationCallback();
 	 string dataDir = "YOUR DOCUMENT DIRECTORY";
 	 Document document = new Document(dataDir + "German text.docx");
@@ -80,4 +80,4 @@ finally
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und an Ihre spezifischen Bedürfnisse anpassen.

@@ -1,20 +1,20 @@
 ---
-title: حدد مستوى القائمة
-linktitle: حدد مستوى القائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديد مستوى القائمة في مستند Word باستخدام Aspose.Words for .NET.
+title: Liste Düzeyini Belirtin
+linktitle: Liste Düzeyini Belirtin
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde liste düzeyini nasıl belirleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-list/specify-list-level/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية تحديد مستوى القائمة في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Bu adım adım öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde liste düzeyini nasıl belirleyeceğinizi göstereceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinize nasıl uygulayacağınızı göstereceğiz.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kütüphaneyi resmi siteden indirip yükleyin.
 
-## الخطوة 1: إنشاء مُنشئ المستند والمستند
+## 1. Adım: Belge ve Belge Oluşturucuyu Oluşturma
 
-أولاً ، قم بإنشاء مستند جديد ومولد المستندات المرتبط به:
+İlk olarak, yeni bir belge ve ilişkili bir belge oluşturucu oluşturun:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -22,17 +22,17 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إنشاء وتطبيق قائمة رقمية
+## Adım 2: Numaralı Liste Oluşturma ve Uygulama
 
-بعد ذلك ، أنشئ قائمة ذات تعداد رقمي استنادًا إلى أحد قوالب قوائم Microsoft Word وقم بتطبيقها على الفقرة الحالية في منشئ المستندات:
+Ardından, Microsoft Word'ün liste şablonlarından birini temel alan bir numaralandırılmış liste oluşturun ve bunu belge oluşturucudaki geçerli paragrafa uygulayın:
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 ```
 
-## الخطوة 3: مواصفات مستوى القائمة
+## 3. Adım: Liste Düzeyi Spesifikasyonu
 
- استخدم وثيقة منشئ`ListLevelNumber`لتحديد مستوى القائمة وإضافة نص إلى الفقرة:
+ Belge oluşturucunun`ListLevelNumber`liste düzeyini belirtmek ve paragrafa metin eklemek için özellik:
 
 ```csharp
 for (int i = 0; i < 9; i++)
@@ -42,19 +42,19 @@ for (int i = 0; i < 9; i++)
 }
 ```
 
-كرر هذه الخطوات لتحديد مستويات القائمة وإضافة نص في كل مستوى.
+Liste düzeylerini belirlemek ve her düzeyde metin eklemek için bu adımları tekrarlayın.
 
-## الخطوة 4: إنشاء وتطبيق قائمة نقطية
+## 4. Adım: Madde İşaretli Liste Oluşturma ve Uygulama
 
-يمكنك أيضًا إنشاء قائمة نقطية وتطبيقها باستخدام أحد قوالب قوائم Microsoft Word:
+Ayrıca, Microsoft Word'ün liste şablonlarından birini kullanarak madde işaretli bir liste oluşturabilir ve uygulayabilirsiniz:
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 ```
 
-## الخطوة 5: إضافة نص إلى مستويات قائمة نقطية
+## Adım 5: Madde İşaretli Liste Düzeylerine Metin Ekleme
 
- استخدم ال`ListLevelNumber` الخاصية مرة أخرى لتحديد مستوى القائمة النقطية وإضافة نص:
+ Kullan`ListLevelNumber` madde işaretli liste düzeyini belirlemek ve metin eklemek için yeniden özelliğini kullanın:
 
 ```csharp
 for (int i = 0; i < 9; i++)
@@ -64,44 +64,44 @@ for (int i = 0; i < 9; i++)
 }
 ```
 
-## الخطوة 6: إيقاف قائمة التنسيق
+## Adım 6: Listeyi Biçimlendirmeyi Durdurun
 
- لإيقاف تنسيق القائمة ، اضبط`null` الى`List` خاصية منشئ المستندات:
+ Liste biçimlendirmesini durdurmak için,`null` için`List` belge oluşturucunun özelliği:
 
 ```csharp
 builder. ListFormat. List = null;
 ```
 
-## الخطوة 7: حفظ المستند المعدل
+## 7. Adım: Değiştirilen belgeyi kaydetme
 
-احفظ المستند المعدل:
+Değiştirilen belgeyi kaydedin:
 
 ```csharp
 builder.Document.Save(dataDir + "SpecifyListLevel.docx");
 ```
 
-لذا ! لقد نجحت في تحديد مستوى القائمة في مستند Word باستخدام Aspose.Words for .NET.
+Bu yüzden ! Aspose.Words for .NET kullanarak bir Word belgesinde liste seviyesini başarıyla belirlediniz.
 
-### نموذج التعليمات البرمجية المصدر لتحديد مستوى القائمة
+### Liste düzeyini belirtmek için örnek kaynak kodu
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة ذات تعداد رقمي استنادًا إلى أحد قوالب قائمة Microsoft Word
-// وتطبيقه على الفقرة الحالية لمنشئ المستند.
+// Microsoft Word liste şablonlarından birine dayalı olarak numaralandırılmış bir liste oluşturun
+// ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
-// هناك تسعة مستويات في هذه القائمة ، دعونا نجربها جميعًا.
+// Bu listede dokuz seviye var, hepsini deneyelim.
 for (int i = 0; i < 9; i++)
 {
 	builder.ListFormat.ListLevelNumber = i;
 	builder.Writeln("Level " + i);
 }
 
-//قم بإنشاء قائمة ذات تعداد نقطي استنادًا إلى أحد قوالب قوائم Microsoft Word
-// وتطبيقه على الفقرة الحالية لمنشئ المستند.
+//Microsoft Word liste şablonlarından birini temel alan madde işaretli bir liste oluşturun
+// ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
 for (int i = 0; i < 9; i++)
@@ -110,7 +110,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// هذه طريقة لإيقاف تنسيق القائمة.
+// Bu, liste biçimlendirmesini durdurmanın bir yoludur.
 builder.ListFormat.List = null;
 
 builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");

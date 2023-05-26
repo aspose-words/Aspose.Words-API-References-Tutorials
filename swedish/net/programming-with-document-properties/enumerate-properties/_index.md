@@ -1,34 +1,34 @@
 ---
-title: تعداد الخصائص
-linktitle: تعداد الخصائص
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتعداد خصائص المستند باستخدام Aspose.Words for .NET.
+title: Räkna upp egenskaper
+linktitle: Räkna upp egenskaper
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att räkna upp dokumentegenskaper med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-document-properties/enumerate-properties/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتعداد خصائص المستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة الوصول إلى الخصائص المضمنة والمخصصة للمستند.
+I den här handledningen går vi igenom C#-källkoden för att räkna upp dokumentegenskaper med Aspose.Words för .NET. Denna funktion låter dig komma åt inbyggda och anpassade egenskaper för ett dokument.
 
-## الخطوة 1: إعداد المشروع
+## Steg 1: Projektinställning
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
 
-## الخطوة الثانية: تحميل المستند
+## Steg 2: Ladda dokumentet
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد سرد خصائصه. استخدم الكود التالي لتحميل المستند:
+I det här steget kommer vi att ladda Word-dokumentet vars egenskaper vi vill lista. Använd följande kod för att ladda dokumentet:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till katalogen där ditt dokument finns.
 
-## الخطوة الثالثة: تعداد الخصائص
+## Steg 3: Räkna upp egenskaper
 
-الآن دعنا ندرج خصائص المستند ، الخصائص المضمنة والمخصصة. استخدم الكود التالي:
+Låt oss nu lista dokumentegenskaperna, både inbyggda och anpassade egenskaper. Använd följande kod:
 
 ```csharp
 Console.WriteLine("1. Document name: {0}", doc.OriginalFileName);
@@ -43,13 +43,13 @@ foreach(DocumentProperty prop in doc.CustomDocumentProperties)
 Console.WriteLine("{0}:{1}", prop.Name, prop.Value);
 ```
 
-يعرض هذا الرمز اسم المستند ثم يسرد الخصائص المضمنة والمخصصة التي تعرض اسمها وقيمتها.
+Den här koden visar dokumentnamnet och listar sedan de inbyggda och anpassade egenskaperna med deras namn och värde.
 
-### مثال على شفرة المصدر لـ Enumerate Properties باستخدام Aspose.Words for .NET
+### Exempel på källkod för Enumerate Properties med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx");
 	
@@ -66,7 +66,7 @@ Console.WriteLine("{0}:{1}", prop.Name, prop.Value);
 		
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Var noga med att ange rätt dokumentsökväg i`dataDir` variabel.
 
-لقد تعلمت الآن كيفية تعداد خصائص المستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك الوصول بسهولة إلى خصائص المستندات الخاصة بك وعرضها.
+Du har nu lärt dig hur du räknar upp dokumentegenskaper med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide som finns i denna handledning kan du enkelt komma åt och se egenskaperna för dina egna dokument.
 

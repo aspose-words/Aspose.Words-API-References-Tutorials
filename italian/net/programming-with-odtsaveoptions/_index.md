@@ -1,19 +1,19 @@
 ---
-title: البرمجة مع خيارات Odtsave
-linktitle: البرمجة مع خيارات Odtsave
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على وحدة القياس
+title: Programmazione con Odtsaveoptions
+linktitle: Programmazione con Odtsaveoptions
+second_title: Riferimento all'API Aspose.Words per .NET
+description: I tutorial contengono unità di misura
 type: docs
 weight: 1650
 url: /it/net/programming-with-odtsaveoptions/
 ---
-تعد برامج Aspose.Words for .NET التعليمية مصدرًا قيمًا لتعلم كيفية التعامل مع ميزات البرنامج واستغلالها بالكامل في مشروعات التطوير الخاصة بك. يأخذك البرنامج التعليمي "البرمجة باستخدام OdtSaveOptions" خطوة بخطوة من خلال استخدام فئة OdtSaveOptions لحفظ مستندات Word وتحويلها إلى تنسيق ODT (Open Document Text). ستتعلم كيفية تحديد خيارات النسخ الاحتياطي المختلفة ، مثل ضغط الصور وإدارة الخطوط وخيارات تنسيق النص والمزيد.
+I tutorial di Aspose.Words per .NET sono una risorsa preziosa per imparare a manipolare e sfruttare appieno le funzionalità del software nei tuoi progetti di sviluppo. L'esercitazione "Programmazione con OdtSaveOptions" ti guida passo dopo passo nell'utilizzo della classe OdtSaveOptions per salvare e convertire i documenti di Word in formato ODT (Open Document Text). Imparerai come specificare varie opzioni di backup, come la compressione delle immagini, la gestione dei caratteri, le opzioni di formattazione del testo e altro.
 
-تم تصميم هذه البرامج التعليمية لمساعدة المطورين على إتقان استخدام Aspose.Words for .NET واستغلال إمكاناته الكاملة. سواء كنت جديدًا في تطوير .NET أو من ذوي الخبرة ، ستجد تعليمات واضحة خطوة بخطوة ، جنبًا إلى جنب مع أمثلة التعليمات البرمجية المفيدة ، لإرشادك خلال مشاريعك. يتم تحديث البرامج التعليمية بانتظام لتشمل أحدث الميزات وأفضل ممارسات البرمجة.
+Questi tutorial sono progettati per aiutare gli sviluppatori a padroneggiare l'utilizzo di Aspose.Words per .NET e sfruttarne appieno il potenziale. Che tu sia un principiante o un esperto dello sviluppo .NET, troverai istruzioni chiare e dettagliate, insieme a pratici esempi di codice, per guidarti nei tuoi progetti. I tutorial vengono regolarmente aggiornati per includere le funzionalità più recenti e le migliori pratiche di programmazione.
 
-سواء كنت بحاجة إلى تحويل المستندات أو التعامل مع المحتوى أو إدارة التنسيق أو أتمتة مهام محددة ، فإن برامج Aspose.Words for .NET التعليمية هنا لمساعدتك. من خلال التوثيق الشامل وأمثلة التعليمات البرمجية ذات الصلة ، ستتمكن من استخدام Aspose.Words بشكل فعال في مشاريع تطوير .NET الخاصة بك ، وبالتالي زيادة الإنتاجية والجودة.
+Sia che tu abbia bisogno di convertire documenti, manipolare contenuti, gestire la formattazione o automatizzare attività specifiche, i tutorial di Aspose.Words per .NET sono qui per aiutarti. Con una documentazione completa ed esempi di codice pertinenti, sarai in grado di utilizzare efficacemente Aspose.Words nei tuoi progetti di sviluppo .NET, guadagnando così in produttività e qualità.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [وحدة قياس](./measure-unit/) | تعرف على كيفية تحديد وحدة القياس عند تحويل مستند Word إلى ODT باستخدام Aspose.Words for .NET. |
+| [Unità di misura](./measure-unit/) | Scopri come specificare l'unità di misura durante la conversione di un documento Word in ODT con Aspose.Words per .NET. |

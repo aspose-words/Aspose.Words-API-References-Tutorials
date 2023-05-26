@@ -1,71 +1,71 @@
 ---
-title: أعد تشغيل ترقيم الصفحات
-linktitle: أعد تشغيل ترقيم الصفحات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إعادة تشغيل ترقيم الصفحات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Redémarrer la numérotation des pages
+linktitle: Redémarrer la numérotation des pages
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à redémarrer la numérotation des pages tout en joignant et en ajoutant des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/join-and-append-documents/restart-page-numbering/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة إعادة تشغيل ترقيم الصفحات في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء إعادة تشغيل ترقيم الصفحات في المستند المصدر.
+Ce didacticiel vous guidera tout au long du processus d'utilisation de la fonctionnalité Redémarrer la numérotation des pages d'Aspose.Words pour .NET. Cette fonctionnalité vous permet de joindre et d'ajouter des documents Word tout en redémarrant la numérotation des pages dans le document source.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words pour .NET installé. Vous pouvez le télécharger depuis le site Web d'Aspose ou l'installer via NuGet.
+2. Visual Studio ou tout autre environnement de développement C#.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Étape 1 : Initialiser les répertoires de documents
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir` variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Étape 2 : Chargez les documents source et de destination
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Ensuite, vous devez charger les documents source et de destination à l'aide de Aspose.Words`Document` classe. Mettez à jour les noms de fichiers dans le`Document` constructeur en fonction des noms de vos documents.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: اضبط المستند المصدر على إعادة تشغيل ترقيم الصفحات
+## Étape 3 : Définir le document source pour redémarrer la numérotation des pages
 
- لإعادة تشغيل ترقيم الصفحات في المستند المصدر ، تحتاج إلى ضبط`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.NewPage` وضبط`RestartPageNumbering` ملكية ل`true`.
+ Pour redémarrer la numérotation des pages dans le document source, vous devez définir le`SectionStart` propriété de la première section du document source pour`SectionStart.NewPage` et réglez le`RestartPageNumbering` propriété à`true`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بمستند الوجهة
+## Étape 4 : Ajouter le document source au document de destination
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Maintenant, vous pouvez ajouter le document source au document de destination en utilisant le`AppendDocument` méthode de la`Document` classe. Le`ImportFormatMode.KeepSourceFormatting` Le paramètre garantit que la mise en forme de la source est préservée pendant l'opération d'ajout.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند النهائي
+## Étape 5 : Enregistrez le document final
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة إعادة تشغيل ترقيم الصفحات باستخدام ملحق`Save` طريقة`Document` فصل.
+ Enfin, enregistrez le document fusionné avec la fonction Redémarrer la numérotation des pages activée à l'aide de la`Save` méthode de la`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RestartPageNumbering.docx");
 ```
 
-### مثال على شفرة المصدر لإعادة تشغيل ترقيم الصفحات باستخدام Aspose.Words for .NET
+### Exemple de code source pour Redémarrer la numérotation des pages à l'aide de Aspose.Words pour .NET
 
-إليك شفرة المصدر الكاملة لميزة "إعادة تشغيل ترقيم الصفحات" في C # باستخدام Aspose.Words for .NET:
+Voici le code source complet de la fonctionnalité "Redémarrer la numérotation des pages" en C# à l'aide d'Aspose.Words pour .NET :
  
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -76,4 +76,4 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.RestartPageNumbering.docx");
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.RestartPageNumbering.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة إعادة تشغيل ترقيم الصفحات باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع إعادة تشغيل ترقيم الصفحات في المستند المصدر.
+C'est ça! Vous avez implémenté avec succès la fonctionnalité Redémarrer la numérotation des pages à l'aide de Aspose.Words pour .NET. Le document final contiendra le contenu fusionné avec la numérotation des pages redémarrée dans le document source.

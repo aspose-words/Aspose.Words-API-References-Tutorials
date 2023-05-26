@@ -1,17 +1,17 @@
 ---
-title: تعداد العقد الفرعية
-linktitle: تعداد العقد الفرعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعداد العقد الفرعية في فقرة باستخدام Aspose.Words for .NET.
+title: Alt Düğümleri Numaralandır
+linktitle: Alt Düğümleri Numaralandır
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir paragrafta alt düğümleri nasıl numaralandıracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-node/enumerate-child-nodes/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية تعداد العقد الفرعية باستخدام Aspose.Words for .NET.
+Aspose.Words for .NET kullanarak alt düğümlerin nasıl numaralandırılacağını gösteren aşağıdaki C# kaynak kodunu açıklayan adım adım bir kılavuz.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## 1. Adım: Gerekli referansları içe aktarın
+Başlamadan önce, Aspose.Words for .NET'i kullanmak için gerekli referansları projenize aktardığınızdan emin olun. Bu, Aspose.Words kitaplığının içe aktarılmasını ve gerekli ad alanlarının kaynak dosyanıza eklenmesini içerir.
 
 ```csharp
 using Aspose.Words;
@@ -19,33 +19,33 @@ using Aspose.Words.Nodes;
 using Aspose.Words.NodeTypes;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## 2. Adım: Yeni bir belge oluşturun
+ Bu adımda, kullanarak yeni bir belge oluşturacağız.`Document` sınıf.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: الوصول إلى الفقرة والعقد التابعة لها
- لتعداد العقد الفرعية للفقرة ، نحتاج أولاً إلى الوصول إلى الفقرة نفسها. استخدم ال`GetChild` الطريقة مع`Paragraph` نوع العقدة للحصول على الفقرة الأولى من المستند.
+## 3. Adım: Paragrafa ve alt düğümlerine erişin
+ Bir paragrafın alt düğümlerini numaralandırmak için önce paragrafın kendisine erişmemiz gerekir. Kullan`GetChild` ile yöntem`Paragraph` belgenin ilk paragrafını almak için düğüm türü.
 
 ```csharp
 Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
-بعد ذلك ، نسترجع مجموعة العقد الفرعية للفقرة باستخدام الامتداد`ChildNodes` ملكية.
+Ardından, paragrafın alt düğümlerinin koleksiyonunu kullanarak alırız.`ChildNodes` mülk.
 
 ```csharp
 NodeCollection children = paragraph. ChildNodes;
 ```
 
-## الخطوة 4: تصفح العقد الفرعية
- الآن بعد أن أصبح لدينا مجموعة العقد الفرعية ، يمكننا المرور عبرها باستخدام ملف`foreach` حلقة. نتحقق من نوع كل عقدة فرعية ونجري عمليات محددة بناءً على النوع.
+## 4. Adım: Alt düğümlere göz atın
+ Artık alt düğümler koleksiyonuna sahip olduğumuza göre, bir kullanarak bunlar arasında döngü yapabiliriz.`foreach` döngü. Her alt düğümün türünü kontrol ediyoruz ve türe göre belirli işlemler gerçekleştiriyoruz.
 
 ```csharp
 foreach (Node child in children)
 {
-     // يمكن أن تحتوي الفقرة على توابع من أنواع مختلفة مثل المسارات والأشكال وغيرها.
+     // Bir paragraf, diziler, şekiller ve diğerleri gibi farklı türlerdeki çocukları içerebilir.
      if (child. NodeType == NodeType.Run)
      {
          Run run = (Run)child;
@@ -54,9 +54,9 @@ foreach (Node child in children)
 }
 ```
 
- في هذا المثال ، نتحقق مما إذا كانت العقدة الفرعية من النوع`Run` (على سبيل المثال جزء من النص). إذا كان الأمر كذلك ، نقوم بتحويل العقدة إلى`Run` وعرض النص باستخدام`run.Text`.
+ Bu örnekte, alt düğümün türünde olup olmadığını kontrol ediyoruz.`Run` (örneğin bir metin parçası). Eğer öyleyse, düğümü şuna dönüştürürüz:`Run` kullanarak metni görüntüleyin ve`run.Text`.
 
-## مثال على شفرة المصدر لتعداد العقد الفرعية باستخدام Aspose.Words for .NET
+## Aspose.Words for .NET ile alt düğümleri numaralandırmak için örnek kaynak kodu
 
 
 ```csharp
@@ -66,7 +66,7 @@ foreach (Node child in children)
 	NodeCollection children = paragraph.ChildNodes;
 	foreach (Node child in children)
 	{
-		// قد تحتوي الفقرة على أطفال من أنواع مختلفة مثل الأشواط والأشكال وغيرها.
+		// Bir paragraf, diziler, şekiller ve diğerleri gibi çeşitli türlerdeki çocukları içerebilir.
 		if (child.NodeType == NodeType.Run)
 		{
 			Run run = (Run) child;
@@ -76,5 +76,5 @@ foreach (Node child in children)
             
 ```
 
-هذا مثال رمز كامل لتعداد العقد الفرعية للفقرة باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع
+Bu, bir paragrafın alt düğümlerini Aspose.Words for .NET ile numaralandırmak için eksiksiz bir kod örneğidir. Referansları içe aktardığınızdan emin olun
 

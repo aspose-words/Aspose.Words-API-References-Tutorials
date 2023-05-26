@@ -1,28 +1,28 @@
 ---
-title: الاحتفاظ بتنسيق المصدر
-linktitle: الاحتفاظ بتنسيق المصدر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند مصدر بمستند وجهة مع الحفاظ على التنسيق الأصلي باستخدام Aspose.Words for .NET.
+title: Kaynak biçimlendirmesini koruyun
+linktitle: Kaynak biçimlendirmesini koruyun
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak orijinal biçimlendirmeyi korurken bir kaynak belgeyi hedef belgeye nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/keep-source-formatting/
 ---
 
-يوضح هذا البرنامج التعليمي كيفية إلحاق مستند مصدر بمستند وجهة مع الحفاظ على التنسيق الأصلي للمستند المصدر باستخدام Aspose.Words for .NET.
+Bu eğitim, Aspose.Words for .NET kullanılarak kaynak belgenin orijinal biçimlendirmesi korunurken bir kaynak belgenin hedef belgeye nasıl ekleneceğini gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ مستندات المصدر والوجهة.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Kaynak ve hedef belgelerin kaydedileceği bir belge dizini yolu.
 
-## الخطوة 2: قم بإنشاء الوجهة والمستندات المصدر
+## 2. Adım: Hedef ve kaynak belgeleri oluşturun
 
- إنشاء مثيلات من`Document` للوجهة والمستندات المصدر.
+ Örneklerini oluştur`Document` hedef ve kaynak belgeler için.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document dstDoc = new Document();
@@ -32,36 +32,36 @@ Document srcDoc = new Document();
 srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 ```
 
-## الخطوة 3: قم بإلحاق المستند المصدر بالمستند الوجهة
+## 3. Adım: Kaynak belgeyi hedef belgeye ekleyin
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.KeepSourceFormatting` كوضع تنسيق الاستيراد للاحتفاظ بالتنسيق الأصلي للمستند المصدر.
+ Kullan`AppendDocument` kaynak belgeyi eklemek için hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting` kaynak belgenin orijinal biçimlendirmesini korumak için içe aktarma biçimi modu olarak.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 4: احفظ المستند المعدل
+## 4. Adım: Değiştirilen belgeyi kaydedin
 
-احفظ المستند المعدل باستخدام ملف`Save` طريقة`Document` هدف.
+Değiştirilen belgeyi şunu kullanarak kaydedin:`Save` yöntemi`Document` nesne.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند مصدر بمستند الوجهة مع الاحتفاظ بالتنسيق الأصلي باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanarak orijinal biçimlendirmeyi korurken kaynak belgeyi hedef belgeye ekleme uygulamasını tamamlar.
 
-### مثال على شفرة المصدر لـ Keep Source Formatting باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Kaynak Biçimlendirmesini Koru için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document dstDoc = new Document();
 	dstDoc.FirstSection.Body.AppendParagraph("Destination document text. ");
 	Document srcDoc = new Document();
 	srcDoc.FirstSection.Body.AppendParagraph("Source document text. ");
-	// قم بإلحاق المستند المصدر بالمستند الوجهة.
-	// قم بتمرير وضع التنسيق للاحتفاظ بالتنسيق الأصلي للمستند المصدر عند استيراده.
+	// Kaynak belgeyi hedef belgeye ekleyin.
+	// Kaynak belgeyi içe aktarırken orijinal biçimlendirmesini korumak için biçim modunu geçin.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
 ```

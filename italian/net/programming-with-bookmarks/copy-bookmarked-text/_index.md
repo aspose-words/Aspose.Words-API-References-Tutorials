@@ -1,56 +1,56 @@
 ---
-title: نسخ النص الذي تم وضع إشارة مرجعية عليه
-linktitle: نسخ النص الذي تم وضع إشارة مرجعية عليه
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية نسخ نص إشارة مرجعية من مستند مصدر إلى مستند آخر باستخدام Aspose.Words for .NET.
+title: Copia testo con segnalibro
+linktitle: Copia testo con segnalibro
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come copiare il testo del segnalibro da un documento di origine a un altro documento utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Copy Bookmarked Text في Aspose.Words for .NET library. تتيح لك هذه الميزة نسخ محتويات إشارة مرجعية معينة من مستند مصدر إلى مستند آخر.
+In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Copia testo con segnalibro nella libreria Aspose.Words per .NET. Questa funzione consente di copiare il contenuto di un segnalibro specifico da un documento di origine a un altro documento.
 
-## المتطلبات الأساسية
+## Prerequisiti
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conoscenza base del linguaggio C#.
+- Ambiente di sviluppo .NET con libreria Aspose.Words installata.
 
-## الخطوة 1: تحميل المستند المصدر
+## Passaggio 1: caricamento del documento di origine
 
- قبل نسخ نص الإشارة المرجعية ، نحتاج إلى تحميل المستند المصدر في ملف`Document` كائن باستخدام مسار الملف:
+ Prima di copiare il testo del segnalibro, dobbiamo caricare il documento di origine in a`Document` oggetto utilizzando il percorso del file:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## الخطوة 2: الحصول على إشارة مرجعية المصدر
+## Passaggio 2: ottenere il segnalibro di origine
 
- نحن نستخدم ال`Bookmarks` خاصية نطاق المستند المصدر للحصول على الإشارة المرجعية المحددة التي نريد نسخها:
+ Noi usiamo il`Bookmarks` proprietà dell'intervallo del documento di origine per ottenere il segnalibro specifico che vogliamo copiare:
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
-## الخطوة 3: إنشاء وثيقة الوجهة
+## Passaggio 3: creazione del documento di destinazione
 
-نقوم بإنشاء مستند جديد سيكون بمثابة المستند الوجهة لنسخ محتوى الإشارة المرجعية:
+Creiamo un nuovo documento che servirà come documento di destinazione per copiare il contenuto del segnalibro:
 
 ```csharp
 Document dstDoc = new Document();
 ```
 
-## الخطوة 4: تحديد موقع النسخ
+## Passaggio 4: specificare la posizione della copia
 
-نحدد الموقع حيث نريد إضافة النص المنسوخ. في مثالنا ، نضيف النص إلى نهاية نص القسم الأخير من المستند الوجهة:
+Specifichiamo la posizione in cui vogliamo aggiungere il testo copiato. Nel nostro esempio, aggiungiamo il testo alla fine del corpo dell'ultima sezione del documento di destinazione:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## الخطوة 5: استيراد نص الإشارة المرجعية ونسخه
+## Passaggio 5: importa e copia il testo del segnalibro
 
- نحن نستخدم`NodeImporter`كائن لاستيراد نص إشارة مرجعية ونسخه من مستند مصدر إلى المستند الوجهة:
+ Usiamo un`NodeImporter`oggetto per importare e copiare il testo del segnalibro da un documento di origine al documento di destinazione:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -60,26 +60,26 @@ AppendBookmarkedText(import, srcBookmark, dstNode);
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 ```
 
-### مثال على شفرة المصدر لـ Copy Bookmarked Text باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per copiare il testo con segnalibro utilizzando Aspose.Words per .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح نسخ النص من إشارة مرجعية باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente di esempio completo per dimostrare la copia del testo da un segnalibro utilizzando Aspose.Words per .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 
-	// هذه هي الإشارة المرجعية التي نريد نسخ محتواها.
+	// Questo è il segnalibro di cui vogliamo copiare il contenuto.
 	Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 
-	// سنضيف إلى هذه الوثيقة.
+	// Aggiungeremo a questo documento.
 	Document dstDoc = new Document();
 
-	// لنفترض أننا سنلحق بنهاية نص القسم الأخير.
+	// Diciamo che verremo aggiunti alla fine del corpo dell'ultima sezione.
 	CompositeNode dstNode = dstDoc.LastSection.Body;
 
-	// إذا قمت بالاستيراد عدة مرات بدون سياق واحد ، فسيؤدي ذلك إلى إنشاء العديد من الأنماط.
+	// Se importi più volte senza un singolo contesto, verranno creati molti stili.
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
 
 	AppendBookmarkedText(importer, srcBookmark, dstNode);
@@ -88,6 +88,6 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ```
 
-## خاتمة
+## Conclusione
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام الوظيفة Copy Bookmarked Text من Aspose.Words for .NET. اتبعنا دليلًا تفصيليًا لنسخ محتويات إشارة مرجعية من مستند مصدر إلى مستند آخر.
+In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzione Copia testo con segnalibro da Aspose.Words per .NET. Abbiamo seguito una guida passo passo per copiare il contenuto di un segnalibro da un documento di origine a un altro documento.

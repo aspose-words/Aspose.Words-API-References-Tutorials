@@ -1,52 +1,52 @@
 ---
-title: تخطي صور PDF
-linktitle: تخطي صور PDF
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل مستند PDF مع تخطي تحميل صور PDF باستخدام Aspose.Words for .NET.
+title: Saltar imágenes en PDF
+linktitle: Saltar imágenes en PDF
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a cargar un documento PDF sin cargar imágenes PDF con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-loadoptions/skip-pdf-images/
 ---
 
-عند العمل مع مستندات PDF في تطبيق C # ، قد يكون من الضروري تخطي تحميل صور PDF لأسباب تتعلق بالأداء أو إدارة مساحة التخزين. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تخطي تحميل صور PDF باستخدام خيارات تحميل PdfLoadOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري لـ .NET C # لتحميل مستند PDF عن طريق تخطي تحميل صور PDF باستخدام خيارات تحميل PdfLoadOptions.
+Cuando se trabaja con documentos PDF en una aplicación C#, puede que sea necesario omitir la carga de imágenes PDF por motivos de rendimiento o de gestión del espacio de almacenamiento. Con la biblioteca Aspose.Words para .NET, puede omitir fácilmente la carga de imágenes PDF utilizando las opciones de carga de PdfLoadOptions. En esta guía paso a paso, lo guiaremos a través de cómo usar Aspose.Words para el código fuente de .NET C# para cargar un documento PDF omitiendo la carga de imágenes PDF usando las opciones de carga de PdfLoadOptions.
 
-## فهم مكتبة Aspose.Words
+## Comprender la biblioteca Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Antes de sumergirse en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una poderosa biblioteca para crear, editar, convertir y proteger documentos de Word en diferentes plataformas, incluida .NET. Ofrece muchas funciones para manipular documentos, como insertar texto, cambiar el formato, agregar secciones y mucho más.
 
-## تكوين خيارات التحميل
+## Configuración de las opciones de carga
 
-الخطوة الأولى هي تكوين خيارات التحميل لوثيقة PDF الخاصة بنا. استخدم فئة PdfLoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى ضبط خاصية SkipPdfImages على true لتخطي تحميل صور PDF. هيريس كيفية القيام بذلك:
+El primer paso es configurar las opciones de carga de nuestro documento PDF. Utilice la clase PdfLoadOptions para especificar los parámetros de carga. En nuestro caso, debemos establecer la propiedad SkipPdfImages en verdadero para omitir la carga de imágenes PDF. Aquí está cómo hacerlo:
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 ```
 
-نقوم بإنشاء كائن PdfLoadOptions جديد وتعيين خاصية SkipPdfImages على true لتخطي تحميل صور PDF.
+Creamos un nuevo objeto PdfLoadOptions y establecemos la propiedad SkipPdfImages en true para omitir la carga de imágenes PDF.
 
-## قم بتحميل مستند PDF بتخطي صور PDF
+## Cargar documento PDF saltando imágenes PDF
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل مستند PDF باستخدام فئة المستند وتحديد خيارات التحميل. هنا مثال :
+Ahora que hemos configurado las opciones de carga, podemos cargar el documento PDF utilizando la clase Documento y especificar las opciones de carga. Aquí hay un ejemplo :
 
 ```csharp
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل مستند PDF "Pdf Document.pdf" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+En este ejemplo, estamos cargando el documento PDF "Pdf Document.pdf" ubicado en el directorio de documentos usando las opciones de carga especificadas.
 
-### مثال على شفرة المصدر لـ PdfLoadOptions مع وظيفة "تخطي صور PDF" باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para PdfLoadOptions con la funcionalidad "Omitir imágenes en PDF" usando Aspose.Words para .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "تخطي صور Pdf"
+// Configure las opciones de carga con la función "Omitir imágenes en PDF"
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 
-// قم بتحميل مستند PDF متخطياً صور PDF
+// Cargue el documento PDF saltándose las imágenes PDF
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند PDF مع تخطي تحميل صور PDF باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يمكن أن يؤدي تخطي تحميل صور PDF إلى تحسين الأداء وإدارة مساحة التخزين عند معالجة مستندات PDF.
+En esta guía, explicamos cómo cargar un documento PDF omitiendo la carga de imágenes PDF utilizando la biblioteca Aspose.Words para .NET. Si sigue los pasos proporcionados y usa el código fuente de C# provisto, puede aplicar fácilmente esta funcionalidad en su aplicación de C#. Omitir la carga de imágenes PDF puede mejorar el rendimiento y la gestión del espacio de almacenamiento al procesar documentos PDF.

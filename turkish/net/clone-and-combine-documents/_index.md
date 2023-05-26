@@ -1,17 +1,17 @@
 ---
-title: استنساخ ودمج المستندات
-linktitle: استنساخ ودمج المستندات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على استنساخ المستند وإدراج المستند عند الاستبدال وإدراج المستند عند دمج المراسلات.
+title: Belgeleri Klonlayın ve Birleştirin
+linktitle: Belgeleri Klonlayın ve Birleştirin
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, belge kopyalama, değiştirme sırasında belge ekleme ve adres-mektup birleştirme sırasında belge ekleme içerir.
 type: docs
 weight: 1470
 url: /tr/net/clone-and-combine-documents/
 ---
-تقدم Clone And Combine Documents دروسًا حول النسخ والجمع بين المستندات باستخدام Aspose.Words for .NET. توضح البرامج التعليمية بالتفصيل كيفية استنساخ المستندات ودمجها في سيناريوهات مختلفة. يقدمون نموذجًا من التعليمات البرمجية وشروحات خطوة بخطوة لإرشادك خلال العملية. إنه مورد مفيد لأولئك الذين يعملون مع Aspose.Words for .NET ويريدون معرفة كيفية التعامل مع المستندات بفاعلية باستخدام هذه الميزات.
+Belgeleri Klonla ve Birleştir, Aspose.Words for .NET kullanarak belgeleri klonlama ve birleştirme konusunda eğitimler sunar. Öğreticiler, belgelerin farklı senaryolarda nasıl kopyalanacağını ve birleştirileceğini ayrıntılı olarak açıklar. Süreç boyunca size yol gösterecek örnek kod ve adım adım açıklamalar sağlarlar. Aspose.Words for .NET ile çalışanlar ve bu özellikleri kullanarak belgeleri etkin bir şekilde nasıl yöneteceklerini öğrenmek isteyenler için yararlı bir kaynaktır.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [وثيقة الاستنساخ](./cloning-document/) | تعرف على كيفية استنساخ مستند Word باستخدام Aspose.Words for .NET. |
-| [أدخل المستند عند الاستبدال](./insert-document-at-replace/) | تعرف على كيفية إدراج مستند عند الاستبدال باستخدام Aspose.Words for .NET. |
-| [إدراج مستند في دمج المراسلات](./insert-document-at-mail-merge/) | تعرف على كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words for .NET. |
+| [Klonlama Belgesi](./cloning-document/) | Aspose.Words for .NET kullanarak bir Word belgesini nasıl kopyalayacağınızı öğrenin. |
+| [Değiştirme Sırasında Belge Ekle](./insert-document-at-replace/) | Aspose.Words for .NET kullanarak değiştirme sırasında nasıl belge ekleyeceğinizi öğrenin. |
+| [Adres Mektup Birleştirmede Belge Ekle](./insert-document-at-mail-merge/) | Aspose.Words for .NET'i kullanarak adres-mektup birleştirme sırasında diğerine nasıl belge ekleyeceğinizi öğrenin. |

@@ -1,20 +1,20 @@
 ---
-title: قائمة إعادة التشغيل في كل قسم
-linktitle: قائمة إعادة التشغيل في كل قسم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words for .NET.
+title: Her Bölümde Listeyi Yeniden Başlat
+linktitle: Her Bölümde Listeyi Yeniden Başlat
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesindeki her bölüme numaralı bir listeyi nasıl sıfırlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-list/restart-list-at-each-section/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Bu adım adım öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki her bölüme numaralı bir listeyi nasıl sıfırlayacağınızı göstereceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinize nasıl uygulayacağınızı göstereceğiz.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kütüphaneyi resmi siteden indirip yükleyin.
 
-## الخطوة 1: إنشاء المستند والقائمة
+## Adım 1: Belge ve Listeyi Oluşturma
 
-أولاً ، أنشئ مستندًا جديدًا وأضف قائمة رقمية افتراضية:
+İlk olarak, yeni bir belge oluşturun ve varsayılan bir numaralı liste ekleyin:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -26,9 +26,9 @@ List list = doc.Lists[0];
 list. IsRestartAtEachSection = true;
 ```
 
-## الخطوة 2: إضافة عناصر إلى القائمة
+## 2. Adım: Listeye öğe ekleme
 
- ثم استخدم ملف`DocumentBuilder` لإضافة عناصر إلى القائمة. يمكنك استخدام حلقة لإضافة عناصر متعددة إلى القائمة:
+ Daha sonra bir`DocumentBuilder` Listeye öğe eklemek için. Listeye birden çok öğe eklemek için bir döngü kullanabilirsiniz:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -43,11 +43,11 @@ for (int i = 1; i < 45; i++)
 }
 ```
 
-في هذا المثال ، نقوم بإدراج فاصل مقطعي بعد عنصر القائمة الخامس عشر لتوضيح إعادة الترقيم.
+Bu örnekte, yeniden numaralandırmayı göstermek için 15. liste öğesinden sonra bir bölüm sonu ekliyoruz.
 
-## الخطوة 3: احفظ المستند المعدل
+## 3. Adım: Değiştirilen belgeyi kaydedin
 
-أخيرًا ، احفظ المستند المعدل:
+Son olarak, değiştirilen belgeyi kaydedin:
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
@@ -55,9 +55,9 @@ OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.I
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-لذا ! لقد نجحت في إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words for .NET.
+Bu yüzden ! Aspose.Words for .NET'i kullanarak bir Word belgesindeki her bölüme numaralandırılmış bir listeyi başarıyla sıfırladınız.
 
-### مثال على كود المصدر لإعادة تعيين القائمة في كل قسم
+### Her bölümde listeyi sıfırlamak için örnek kaynak kodu
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -85,4 +85,4 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şekilde değiştirmekten çekinmeyin.

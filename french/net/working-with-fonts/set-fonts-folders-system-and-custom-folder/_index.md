@@ -1,31 +1,31 @@
 ---
-title: تعيين نظام مجلدات الخطوط والمجلد المخصص
-linktitle: تعيين نظام مجلدات الخطوط والمجلد المخصص
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد النظام ومجلدات الخطوط المخصصة عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Définir le système de dossiers de polices et le dossier personnalisé
+linktitle: Définir le système de dossiers de polices et le dossier personnalisé
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour la configuration des dossiers de polices système et personnalisées lors du rendu d'un document à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلدات خطوط النظام ومجلد مخصص عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلدات خطوط متعددة ، بما في ذلك مجلد النظام والمجلد المخصص ، لاستخدامها عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+Dans ce didacticiel, nous vous expliquerons étape par étape le processus de définition des dossiers de polices système et d'un dossier personnalisé lors du rendu d'un document à l'aide de Aspose.Words pour .NET. Nous expliquerons le code source C# fourni et vous fournirons un guide complet pour vous aider à comprendre et à implémenter cette fonctionnalité dans vos propres projets. À la fin de ce didacticiel, vous saurez comment spécifier plusieurs dossiers de polices, y compris le dossier système et un dossier personnalisé, à utiliser lors du rendu de vos documents à l'aide de Aspose.Words pour .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Il s'agit de l'emplacement où vous souhaitez enregistrer votre document rendu modifié. Remplacez "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin approprié.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند للعرض
- ثم يمكنك تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Étape 2 : Chargez le document à afficher
+ Ensuite, vous pouvez charger le document à rendre à l'aide de la`Document` classe. Assurez-vous de spécifier le bon chemin d'accès au document.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تعيين مجلدات الخط المخصصة والنظام
- يمكنك الآن تعيين مجلدات خطوط النظام ومجلد مخصص باستخدام ملف`FontSettings` الطبقة و`SetFontsSources()` طريقة. أولاً ، تحتاج إلى استرداد قائمة مصادر الخطوط المعتمدة على البيئة التي تستخدم`GetFontsSources()` وتخزينه في قائمة. ثم يمكنك إنشاء مثيل جديد من`FolderFontSource`تحديد المسار إلى المجلد المخصص الذي يحتوي على الخطوط الخاصة بك. أضف هذا المثيل إلى قائمة مصادر الخطوط الموجودة. أخيرًا ، استخدم`SetFontsSources()` لتحديث مصادر الخطوط بالقائمة الجديدة.
+## Étape 3 : Définir les dossiers de polices système et personnalisées
+ Vous pouvez maintenant définir des dossiers de polices système et un dossier personnalisé à l'aide de la`FontSettings` classe et la`SetFontsSources()` méthode. Tout d'abord, vous devez récupérer la liste des sources de polices dépendantes de l'environnement à l'aide de`GetFontsSources()` et stockez-le dans une liste. Ensuite, vous pouvez créer une nouvelle instance de`FolderFontSource`en spécifiant le chemin d'accès au dossier personnalisé contenant vos polices. Ajoutez cette instance à la liste des sources de polices existantes. Enfin, utilisez`SetFontsSources()` pour mettre à jour les sources de polices avec la nouvelle liste.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -36,37 +36,37 @@ FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
 ```
 
-## الخطوة 4: تطبيق إعدادات الخط
- بعد ذلك ، تحتاج إلى تطبيق إعدادات الخط على المستند الخاص بك باستخدام ملف`FontSettings` ممتلكات`Document` فصل.
+## Étape 4 : Appliquer les paramètres de police
+ Ensuite, vous devez appliquer les paramètres de police à votre document à l'aide de la`FontSettings` propriété de la`Document` classe.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 5: احفظ المستند المقدم
-أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف بواسطة
+## Étape 5 : Enregistrer le document rendu
+Enfin, vous pouvez enregistrer le document rendu dans un fichier en
 
-   باستخدام`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+   en utilisant le`Save()` méthode de la`Document` classe. Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders System والمجلد المخصص باستخدام Aspose.Words for .NET 
+### Exemple de code source pour le système de dossiers Set Fonts et le dossier personnalisé à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Rendering.docx");
 	FontSettings fontSettings = new FontSettings();
-	// استرجع مصفوفة مصادر الخطوط المعتمدة على البيئة والتي يتم البحث عنها افتراضيًا.
-	// على سبيل المثال سيحتوي هذا على مصدر "Windows \ Fonts \" على أجهزة Windows.
-	// نضيف هذه المجموعة إلى قائمة جديدة لتسهيل إضافة أو إزالة مدخلات الخط.
+	// Récupérez le tableau des sources de polices dépendant de l'environnement qui sont recherchées par défaut.
+	// Par exemple, cela contiendra une source "Windows\Fonts\" sur une machine Windows.
+	// Nous ajoutons ce tableau à une nouvelle liste pour faciliter l'ajout ou la suppression d'entrées de police.
 	List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-	// أضف مصدر مجلد جديد والذي سيوجه Aspose.Words للبحث في المجلد التالي عن الخطوط.
+	// Ajoutez une nouvelle source de dossier qui demandera à Aspose.Words de rechercher les polices dans le dossier suivant.
 	FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-	// أضف المجلد المخصص الذي يحتوي على خطوطنا إلى قائمة مصادر الخطوط الموجودة.
+	// Ajoutez le dossier personnalisé qui contient nos polices à la liste des sources de polices existantes.
 	fontSources.Add(folderFontSource);
 	FontSourceBase[] updatedFontSources = fontSources.ToArray();
 	fontSettings.SetFontsSources(updatedFontSources);
@@ -74,5 +74,5 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلدات خطوط النظام ومجلد مخصص عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلدات خطوط متعددة ، بما في ذلك مجلد النظام والمجلد المخصص ، لاستخدامهما عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+## Conclusion
+Dans ce didacticiel, nous avons appris à définir des dossiers de polices système et un dossier personnalisé lors du rendu d'un document à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape, vous pouvez facilement spécifier plusieurs dossiers de polices, y compris le dossier système et un dossier personnalisé, à utiliser lors du rendu de vos documents. Aspose.Words offre une API puissante et flexible pour travailler avec les polices dans vos documents. Grâce à ces connaissances, vous pouvez contrôler et personnaliser les sources de polices utilisées lors du rendu de vos documents selon vos besoins spécifiques.

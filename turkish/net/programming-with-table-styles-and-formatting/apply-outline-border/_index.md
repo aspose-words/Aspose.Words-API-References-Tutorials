@@ -1,52 +1,52 @@
 ---
-title: تطبيق حدود المخطط التفصيلي
-linktitle: تطبيق حدود المخطط التفصيلي
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتطبيق حدود المخطط على جدول باستخدام Aspose.Words for .NET.
+title: Anahat Kenarlığını Uygula
+linktitle: Anahat Kenarlığını Uygula
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir tabloya dış hat kenarlığı uygulamak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-styles-and-formatting/apply-outline-border/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتطبيق حد مخطط على جدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، سيكون لديك فهم واضح لكيفية التعامل مع حدود الجدول في مستندات Word باستخدام Aspose.Words for .NET.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir tabloya ana hat kenarlığı uygulama sürecini adım adım anlatacağız. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sağlayacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak Word belgelerinizdeki tablo kenarlıklarını nasıl değiştireceğinizi net bir şekilde anlayacaksınız.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يتم فيه تخزين مستند Word الخاص بك. استبدل "دليل المستندات" بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+Öncelikle, belgeler dizininize giden yolu ayarlamanız gerekir. Word belgenizin saklandığı yer burasıdır. "BELGELER DİZİNİNİZİ" uygun yolla değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- بعد ذلك ، تحتاج إلى تحميل مستند Word في مثيل لـ`Document` فصل.
+## 2. Adım: Belgeyi yükleyin
+ Ardından, Word belgesini bir örneğine yüklemeniz gerekir.`Document` sınıf.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: الوصول إلى الجدول
- لتطبيق حدود المخطط ، نحتاج إلى الوصول إلى الجدول في المستند. ال`Table` يمثل class جدولًا في Aspose.Words.
+## 3. Adım: Tabloya erişin
+ Anahat kenarlığı uygulamak için belgedeki tabloya erişmemiz gerekir. bu`Table` class, Aspose.Words'te bir tabloyu temsil eder.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## الخطوة 4: قم بمحاذاة الجدول إلى وسط الصفحة
- الآن يمكننا محاذاة الجدول إلى وسط الصفحة باستخدام`Alignment` خاصية الجدول.
+## 4. Adım: Tabloyu sayfanın ortasına hizalayın
+ Şimdi tabloyu kullanarak sayfanın ortasına hizalayabiliriz.`Alignment` tablonun özelliği.
 
 ```csharp
 table. Alignment = Table Alignment. Center;
 ```
 
-## الخطوة 5: محو حدود الجدول الموجودة
-للبدء بحدود خارجية جديدة ، نحتاج أولاً إلى محو كل الحدود الموجودة من الجدول. يمكن القيام بذلك باستخدام ملف`ClearBorders()` طريقة.
+## 5. Adım: Mevcut tablo kenarlıklarını silin
+Yeni bir anahat kenarlığıyla başlamak için önce tablodaki mevcut tüm sınırları silmemiz gerekir. Bu, kullanılarak yapılabilir`ClearBorders()` yöntem.
 
 ```csharp
 table. ClearBorders();
 ```
 
-## الخطوة 6: تحديد حد أخضر حول الجدول
- يمكننا الآن تعيين حد أخضر حول الجدول باستخدام`SetBorder()` طريقة لكل جانب من الجدول. في هذا المثال ، نستخدم حدًا من النوع "مفرد" بسمك 1.5 نقطة ولون أخضر.
+## Adım 6: Tablonun etrafında yeşil bir kenarlık tanımlayın
+ Artık tablonun çevresine yeşil bir çerçeve çizebiliriz.`SetBorder()` tablonun her tarafı için yöntem. Bu örnekte, 1,5 punto kalınlığında ve yeşil renkli "Single" tipi bir bordür kullanıyoruz.
 
 ```csharp
 table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
@@ -55,45 +55,45 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## الخطوة 7: املأ الخلايا بلون الخلفية
-لتحسين العرض المرئي للجدول ، يمكننا ملء الخلايا بلون خلفية الأرض
+## 7. Adım: Hücreleri arka plan rengiyle doldurun
+Tablonun görsel sunumunu iyileştirmek için hücreleri zemin arka plan rengiyle doldurabiliriz.
 
-فكرة. في هذا المثال ، نستخدم اللون الأخضر الفاتح.
+fikir. Bu örnekte açık yeşil bir renk kullanıyoruz.
 
 ```csharp
 table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 ```
 
-## الخطوة 8: احفظ المستند المعدل
-أخيرًا ، نحفظ المستند المعدل في ملف. يمكنك اختيار اسم وموقع مناسبين للمستند الناتج.
+## 8. Adım: Değiştirilen belgeyi kaydedin
+Son olarak, değiştirilen belgeyi bir dosyaya kaydediyoruz. Çıktı belgesi için uygun bir ad ve konum seçebilirsiniz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-تهنئة ! لقد قمت الآن بتطبيق حد مخطط على جدول باستخدام Aspose.Words لـ .NET.
+Tebrikler! Artık Aspose.Words for .NET'i kullanarak bir tabloya ana hat kenarlığı uyguladınız.
 
-### نموذج التعليمات البرمجية المصدر لـ Apply Outline Border باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Apply Outline Border için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// قم بمحاذاة الجدول إلى وسط الصفحة.
+	// Tabloyu sayfanın ortasına hizalayın.
 	table.Alignment = TableAlignment.Center;
-	//امسح أي حدود موجودة من الجدول.
+	//Tablodaki mevcut tüm sınırları temizleyin.
 	table.ClearBorders();
-	// ضع حدًا أخضر حول الطاولة وليس بالداخل.
+	// Masanın etrafına yeşil bir kenarlık koyun ama içine değil.
 	table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
 	table.SetBorder(BorderType.Right, LineStyle.Single, 1.5, Color.Green, true);
 	table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 	table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
-	// املأ الخلايا بلون أخضر فاتح.
+	// Hücreleri açık yeşil düz renkle doldurun.
 	table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تطبيق حد مخطط على جدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة دمج هذه الوظيفة في مشاريع C # الخاصة بك. يعد التلاعب بتنسيق الجدول جانبًا أساسيًا من معالجة المستندات ، ويقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لتحقيق ذلك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية المتطلبات المحددة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir tabloya ana hat kenarlığı uygulamayı öğrendik. Bu adım adım kılavuzu izleyerek, bu işlevi C# projelerinize kolayca entegre edebilirsiniz. Tablo biçimlendirmesinin manipüle edilmesi belge işlemenin önemli bir yönüdür ve Aspose.Words bunu başarmak için güçlü ve esnek bir API sunar. Bu bilgiyle, Word belgelerinizin görsel sunumunu geliştirebilir ve belirli gereksinimleri karşılayabilirsiniz.

@@ -1,29 +1,29 @@
 ---
-title: تطبيق الحدود والتظليل على الفقرة
-linktitle: تطبيق الحدود والتظليل على الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق الحدود والتظليل على فقرة باستخدام Aspose.Words for .NET.
+title: Applica bordi e ombreggiatura al paragrafo
+linktitle: Applica bordi e ombreggiatura al paragrafo
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come applicare bordi e ombreggiatura a un paragrafo con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية تطبيق الحدود والتظليل على فقرة باستخدام وظيفة Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر وتطبيق تغييرات التنسيق.
+In questo tutorial, ti mostreremo come applicare bordi e ombreggiature a un paragrafo utilizzando la funzionalità di Aspose.Words per .NET. Segui i passaggi seguenti per comprendere il codice sorgente e applicare le modifiche alla formattazione.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Passaggio 1: creazione e configurazione del documento
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Per iniziare, crea un nuovo documento e un oggetto DocumentBuilder associato. Ecco come:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الحدود
+## Passaggio 2: configurazione del bordo
 
-لنقم الآن بتكوين حدود الفقرة عن طريق تحديد نمط الحدود لكل جانب. إليك الطريقة:
+Ora configuriamo i bordi del paragrafo specificando lo stile del bordo per ciascun lato. Ecco come:
 
 ```csharp
 BorderCollection borders = builder.ParagraphFormat.Borders;
@@ -34,9 +34,9 @@ borders[BorderType.Top].LineStyle = LineStyle.Double;
 borders[BorderType.Bottom].LineStyle = LineStyle.Double;
 ```
 
-## الخطوة 3: إعداد الملء
+## Passaggio 3: configurazione del riempimento
 
-سنقوم الآن بتكوين تعبئة الفقرة عن طريق تحديد النسيج وألوان التعبئة. إليك الطريقة:
+Ora configureremo il riempimento del paragrafo specificando la trama ei colori di riempimento. Ecco come:
 
 ```csharp
 Shading shading = builder.ParagraphFormat.Shading;
@@ -45,29 +45,29 @@ shading.BackgroundPatternColor = System.Drawing.Color.LightCoral;
 shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 ```
 
-## الخطوة 4: أضف محتوى
+## Passaggio 4: aggiungi contenuto
 
-سنقوم بإضافة بعض المحتوى المنسق إلى الفقرة. إليك الطريقة:
+Aggiungeremo del contenuto formattato al paragrafo. Ecco come:
 
 ```csharp
 builder.Write("I'm a formatted paragraph with a double border and a nice shading.");
 ```
 
-## الخطوة 3: حفظ المستند
+## Passaggio 3: salvare il documento
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Dopo aver inserito il campo del modulo di immissione del testo, salvare il documento nella posizione desiderata utilizzando il file`Save` metodo. Assicurati di fornire il percorso file appropriato:
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ```
 
-### مثال على الكود المصدري لتطبيق الحدود والتظليل على الفقرة باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Applica bordi e ombreggiatura al paragrafo utilizzando Aspose.Words per .NET
 
-فيما يلي رمز المصدر الكامل لميزة "تطبيق الحدود والتظليل على الفقرة" باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente completo per la funzione Applica bordi e ombreggiatura al paragrafo con Aspose.Words per .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);

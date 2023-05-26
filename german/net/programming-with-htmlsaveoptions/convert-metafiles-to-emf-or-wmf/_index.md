@@ -1,22 +1,22 @@
 ---
-title: تحويل ملفات التعريف إلى Emf أو Wmf
-linktitle: تحويل ملفات التعريف إلى Emf أو Wmf
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحويل ملفات التعريف إلى تنسيقات EMF أو WMF عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET.
+title: Konvertieren Sie Metadateien in EMF oder WMF
+linktitle: Konvertieren Sie Metadateien in EMF oder WMF
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Konvertieren von Metadateien in EMF- oder WMF-Formate beim Konvertieren eines Dokuments in HTML mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتحويل ملفات التعريف إلى تنسيق EMF أو WMF باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تحويل الصور بتنسيق ملف تعريف إلى تنسيقات أكثر توافقًا مثل EMF أو WMF عند تحويل مستند إلى HTML.
+In diesem Tutorial führen wir Sie durch den C#-Quellcode, um Metadateien mit Aspose.Words für .NET in das EMF- oder WMF-Format zu konvertieren. Mit dieser Funktion können Sie Bilder im Metadateiformat in kompatiblere Formate wie EMF oder WMF konvertieren, wenn Sie ein Dokument in HTML konvertieren.
 
-## الخطوة 1: إعداد المشروع
+## Schritt 1: Projekteinrichtung
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Aspose.Words for .NET-Bibliothek verwiesen wird.
 
-## الخطوة 2: إدراج صورة في المستند
+## Schritt 2: Einfügen eines Bildes in das Dokument
 
-في هذه الخطوة ، سنقوم بإدراج صورة في المستند المراد تحويله. استخدم الكود التالي لإدراج صورة من مصدر بيانات باستخدام علامة HTML:
+In diesem Schritt fügen wir ein Bild in das zu konvertierende Dokument ein. Verwenden Sie den folgenden Code, um mithilfe eines HTML-Tags ein Bild aus einer Datenquelle einzufügen:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -30,37 +30,37 @@ builder.InsertHtml(
 		C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA
 		AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J
 		REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq
-		ch9//q1uH4TLzw4d6 + ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
+		ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
 		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- هذا الرمز ينشئ مثيل`Document` و`DocumentBuilder` لبناء الوثيقة. يقوم بإدراج ملف`<img>` علامة في المستند مع صورة مشفرة base64.
+ Dieser Code erstellt eine Instanz von`Document` Und`DocumentBuilder` um das Dokument zu erstellen. Es fügt ein`<img>` Tag mit einem Base64-codierten Bild in das Dokument einfügen.
 
-## الخطوة 3: تعيين خيارات حفظ HTML
+## Schritt 3: HTML-Speicheroptionen festlegen
 
-سنقوم الآن بتعيين خيارات حفظ HTML ، بما في ذلك تنسيق ملف التعريف لاستخدامه مع الصور. استخدم الكود التالي:
+Jetzt legen wir die HTML-Speicheroptionen fest, einschließlich des für Bilder zu verwendenden Metadateiformats. Verwenden Sie den folgenden Code:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.EmfOrWmf };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions` ومجموعات`MetafileFormat` ل`HtmlMetafileFormat.EmfOrWmf` لتحديد أن ملفات التعريف يجب تحويلها إلى تنسيق EMF أو WMF عند التحويل إلى HTML.
+ Dieser Code erstellt eine Instanz von`HtmlSaveOptions` und Sets`MetafileFormat` Zu`HtmlMetafileFormat.EmfOrWmf` um anzugeben, dass Metadateien bei der Konvertierung in HTML in das EMF- oder WMF-Format konvertiert werden sollen.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## Schritt 4: Konvertieren und Speichern des Dokuments in HTML
 
-أخيرًا سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML المحددة مسبقًا. استخدم الكود التالي:
+Abschließend konvertieren wir das Dokument mithilfe der zuvor definierten HTML-Speicheroptionen in HTML. Verwenden Sie den folgenden Code:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML ويحفظه في ملف به ملفات التعريف المحولة بتنسيق EMF أو WMF اعتمادًا على مجموعة خيارات الحفظ.
+Dieser Code konvertiert das Dokument in HTML und speichert es in einer Datei mit den konvertierten Metadateien im EMF- oder WMF-Format, abhängig von den festgelegten Speicheroptionen.
 
-### مثال على شفرة المصدر لتحويل ملفات التعريف إلى Emf أو Wmf باستخدام Aspose.Words for .NET
+### Beispielquellcode für die Konvertierung von Metadateien in EMF oder WMF mit Aspose.Words für .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html",
 			C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA
 			AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J
 			REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq
-			ch9//q1uH4TLzw4d6 + ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
+			ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
 			vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 
 	HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.EmfOrWmf };
@@ -81,6 +81,6 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html",
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+ Stellen Sie sicher, dass Sie den richtigen Pfad zum Dokumentenverzeichnis im angeben`dataDir` Variable.
 
-لقد تعلمت الآن كيفية تحويل ملفات التعريف إلى تنسيقات EMF أو WMF عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إدارة ملفات التعريف في مستندات HTML المحولة.
+Sie haben jetzt gelernt, wie Sie Metadateien in EMF- oder WMF-Formate konvertieren, wenn Sie ein Dokument mit Aspose.Words für .NET in HTML konvertieren. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie Metadateien in Ihren konvertierten HTML-Dokumenten problemlos verwalten.

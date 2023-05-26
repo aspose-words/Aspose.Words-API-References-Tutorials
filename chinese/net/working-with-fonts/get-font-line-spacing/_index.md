@@ -1,56 +1,56 @@
 ---
-title: احصل على تباعد أسطر الخط
-linktitle: احصل على تباعد أسطر الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تباعد بين الخطوط في مستند Word باستخدام Aspose.Words for .NET.
+title: 获取字体行间距
+linktitle: 获取字体行间距
+second_title: Aspose.Words for .NET API 参考
+description: 在本教程中，学习如何使用 Aspose.Words for .NET 在 Word 文档中获取字体行间距。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/get-font-line-spacing/
 ---
-في هذا البرنامج التعليمي ، سنخبرك بكيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يحدد تباعد أسطر الخط المسافة العمودية بين سطور النص. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+在本教程中，我们将告诉您如何使用 .NET 的 Aspose.Words 库获取 Word 文档中的字体行间距。字体行间距定义文本行之间的垂直间距。我们将带您一步一步地帮助您理解和实现您的 .NET 项目中的代码。
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## 先决条件
+在开始之前，请确保您拥有以下物品：
+- C# 编程语言的应用知识
+- 项目中安装的 .NET 的 Aspose.Words 库
 
-## الخطوة 1: إنشاء مستند جديد ومولد مستندات
- أولاً ، سننشئ مستندًا جديدًا عن طريق إنشاء مثيل لملف`Document` class ومنشئ المستندات عن طريق إنشاء مثيل لملف`DocumentBuilder` فصل.
+## 第 1 步：创建新文档和文档生成器
+首先，我们将通过实例化`Document`类和文档生成器通过实例化`DocumentBuilder`班级。
 
 ```csharp
-// قم بإنشاء مستند جديد
+//创建一个新文档
 Document doc = new Document();
 
-// قم بإنشاء منشئ المستندات
+//创建文档生成器
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الخط
- بعد ذلك ، سنقوم بتكوين الخط عن طريق تعيين ملف`Name` خاصية منشئ الوثيقة.
+## 第二步：配置字体
+接下来，我们将通过设置来配置字体`Name`文档生成器的属性。
 
 ```csharp
-//تكوين الخط
+//配置字体
 builder.Font.Name = "Calibri";
 ```
 
-## الخطوة 3: أضف نصًا إلى المستند
-سنستخدم الآن منشئ المستندات لإضافة نص منسق إلى المستند.
+## 第 3 步：向文档添加文本
+我们现在将使用文档生成器将格式化文本添加到文档中。
 
 ```csharp
-// أضف نصًا إلى المستند
+//向文档添加文本
 builder. Writen("qText");
 ```
 
-## الخطوة 4: احصل على تباعد أسطر الخطوط
- الآن سوف نصل إلى`Font` كائن من الفقرة الأولى من المستند واسترداد قيمة`LineSpacing` ملكية.
+## 第 4 步：获取字体行间距
+现在我们将访问`Font`文档第一段的对象并检索的值`LineSpacing`财产。
 
 ```csharp
-// احصل على تباعد الأسطر للخط
+//获取字体的行间距
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### نموذج لشفرة مصدر للحصول على تباعد أسطر الخطوط باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 获取字体行间距的示例源代码 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -60,5 +60,5 @@ Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام Aspose.Words for .NET. يعد تباعد أسطر الخطوط أمرًا مهمًا للتحكم في التباعد الرأسي بين سطور النص. لا تتردد في استخدام هذه الميزة لتخصيص مظهر النص في مستنداتك.
+## 结论
+在本教程中，我们了解了如何使用 Aspose.Words for .NET 获取 Word 文档中的字体行间距。字体行间距对于控制文本行之间的垂直间距很重要。您可以随意使用此功能来自定义文档中文本的外观。

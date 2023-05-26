@@ -1,28 +1,28 @@
 ---
-title: إدراج فاصل النمط
-linktitle: إدراج فاصل النمط
-second_title: Aspose.Words لمراجع .NET API
-description: تعلم كيفية إنشاء مستندات بأنماط مخصصة وإدراج فواصل الأنماط لتنسيق دقيق واحترافي.
+title: Insérer un séparateur de style
+linktitle: Insérer un séparateur de style
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à créer des documents avec des styles personnalisés et à insérer des séparateurs de style pour un formatage précis et professionnel.
 type: docs
 weight: 10
 url: /fr/net/programming-with-styles-and-themes/insert-style-separator/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لإدخال فاصل نمط في مستند باستخدام Aspose.Words for .NET. سنقوم بإنشاء مستند جديد وتحديد الأنماط المخصصة وإدراج فاصل النمط.
+Dans ce didacticiel, nous allons explorer le code source C# fourni pour insérer un séparateur de style dans un document à l'aide de Aspose.Words pour .NET. Nous allons créer un nouveau document, définir des styles personnalisés et insérer un séparateur de style.
 
-## الخطوة الأولى: تهيئة البيئة
+## Étape 1 : Configurer l'environnement
 
-تأكد من قيامك بإعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Assurez-vous d'avoir configuré votre environnement de développement avec Aspose.Words pour .NET. Assurez-vous d'avoir ajouté les références nécessaires et importé les espaces de noms appropriés.
 
-## الخطوة 2: إنشاء كائن مستند جديد
+## Étape 2 : Création d'un nouvel objet Document
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- في هذه الخطوة ، نقوم بإنشاء ملف`Document` كائن وما يرتبط بها`DocumentBuilder` هدف.
+ Dans cette étape, nous créons un nouveau`Document` objet et un objet associé`DocumentBuilder` objet.
 
-## الخطوة 3: إنشاء وتكوين النمط المخصص
+## Étape 3 : Création et configuration du style personnalisé
 
 ```csharp
 Style paraStyle = builder.Document.Styles.Add(StyleType.Paragraph, "MyParaStyle");
@@ -31,9 +31,9 @@ paraStyle.Font.Size = 8;
 paraStyle.Font.Name = "Arial";
 ```
 
-في هذه الخطوة ، نقوم بإنشاء نمط فقرة مخصص باسم "MyParaStyle" وقمنا بتعيين خصائص الخط الخاصة به.
+Dans cette étape, nous créons un style de paragraphe personnalisé nommé "MyParaStyle" et définissons ses propriétés de police.
 
-## الخطوة 4: إدخال فاصل الأنماط
+## Étape 4 : Insertion du séparateur de style
 
 ```csharp
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
@@ -43,19 +43,19 @@ builder.ParagraphFormat.StyleName = paraStyle.Name;
 builder.Write("This is text with some other formatting");
 ```
 
-في هذه الخطوة ، قمنا بتعيين نمط الفقرة على "العنوان 1" ، وكتابة بعض النص بهذا النمط ، ثم نقوم بإدراج فاصل نمط. ثم قمنا بتعيين نمط الفقرة على نمطنا المخصص "MyParaStyle" وكتابة بعض النص بهذا النمط.
+Dans cette étape, nous définissons le style de paragraphe sur "Titre 1", écrivons du texte avec ce style, puis insérons un séparateur de style. Ensuite, nous définissons le style de paragraphe sur notre style personnalisé "MyParaStyle" et écrivons du texte avec ce style.
 
-## الخطوة 5: احفظ المستند
+## Étape 5 : Enregistrez le document
 
-في هذه الخطوة الأخيرة ، يمكنك حفظ المستند الذي تم إنشاؤه وفقًا لاحتياجاتك.
+Dans cette dernière étape, vous pouvez enregistrer le document créé en fonction de vos besoins.
 
-يمكنك تشغيل التعليمات البرمجية المصدر لإدراج فاصل نمط في المستند. يتيح لك ذلك إنشاء أقسام نصية بأنماط مختلفة وتخصيص مظهر المستند.
+Vous pouvez exécuter du code source pour insérer un séparateur de style dans un document. Cela vous permet de créer des sections de texte avec différents styles et de personnaliser l'apparence de votre document.
 
-### نموذج التعليمات البرمجية المصدر لـ Insert Style Separator باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Insert Style Separator à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document();
@@ -66,12 +66,12 @@ paraStyle.Font.Bold = false;
 paraStyle.Font.Size = 8;
 paraStyle.Font.Name = "Arial";
 
-// إلحاق نص بنمط "العنوان 1".
+// Ajouter du texte avec le style "Titre 1".
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 builder.Write("Heading 1");
 builder.InsertStyleSeparator();
 
-// إلحاق نص بنمط آخر.
+// Ajouter du texte avec un autre style.
 builder.ParagraphFormat.StyleName = paraStyle.Name;
 builder.Write("This is text with some other formatting ");
 
@@ -80,12 +80,12 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
         
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا البرنامج التعليمي ، تعلمنا كيفية إدراج فاصل نمط في مستند باستخدام Aspose.Words for .NET. أنشأنا مستندًا جديدًا ، وحددنا نمطًا مخصصًا ، واستخدمنا فاصل النمط لتمييز أقسام النص بأنماط مختلفة.
+Dans ce didacticiel, nous avons appris à insérer un séparateur de style dans un document à l'aide de Aspose.Words pour .NET. Nous avons créé un nouveau document, défini un style personnalisé et utilisé le séparateur de style pour différencier les sections de texte avec différents styles.
 
-يوفر استخدام فواصل الأنماط مرونة إضافية عند تنسيق مستنداتك. يساعد هذا في الحفاظ على التناسق البصري مع السماح بالتنوع الأسلوبي.
+L'utilisation de séparateurs de style offre une flexibilité supplémentaire lors de la mise en forme de vos documents. Cela aide à maintenir la cohérence visuelle tout en permettant une variation stylistique.
 
-يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية لإدارة الأنماط في مستنداتك. يمكنك استكشاف هذه المكتبة بشكل أكبر لتخصيص مظهر مستنداتك وإنشاء نتائج احترافية.
+Aspose.Words pour .NET fournit une API puissante pour gérer les styles dans vos documents. Vous pouvez explorer davantage cette bibliothèque pour personnaliser l'apparence de vos documents et créer des résultats professionnels.
 
-تذكر أن تحفظ المستند الخاص بك بعد إدراج فاصل الأنماط.
+N'oubliez pas d'enregistrer votre document après avoir inséré le séparateur de style.

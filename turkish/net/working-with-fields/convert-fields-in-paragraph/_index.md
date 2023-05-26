@@ -1,38 +1,38 @@
 ---
-title: تحويل الحقول في الفقرة
-linktitle: تحويل الحقول في الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تحويل حقول IF إلى نص عادي في فقرة باستخدام Aspose.Words for .NET.
+title: Paragraftaki Alanları Dönüştür
+linktitle: Paragraftaki Alanları Dönüştür
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile IF alanlarını bir paragraftaki düz metne dönüştürün.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/convert-fields-in-paragraph/
 ---
 
-إليك برنامج تعليمي يوضح كيفية استخدام ميزة تحويل الحقول إلى فقرة مع Aspose.Words for .NET. يحول هذا الرمز جميع حقول كتابة IF التي تمت مواجهتها في الفقرة الأخيرة من المستند إلى نص عادي. اتبع الخطوات أدناه لفهم وتشغيل هذا الرمز.
+İşte, Aspose.Words for .NET ile Alanları Paragrafa Dönüştür özelliğinin nasıl kullanılacağını gösteren bir öğretici. Bu kod, bir belgenin son paragrafında karşılaşılan tüm IF tipi alanları düz metne dönüştürür. Bu kodu anlamak ve çalıştırmak için aşağıdaki adımları izleyin.
 
-تأكد من تثبيت Aspose.Words for .NET وقم بإعداد بيئة التطوير الخاصة بك قبل أن تبدأ.
+Başlamadan önce Aspose.Words for .NET'i kurduğunuzdan ve geliştirme ortamınızı kurduğunuzdan emin olun.
 
-## الخطوة 1: استيراد المراجع
+## 1. Adım: Referansları içe aktarın
 
-لاستخدام Aspose. Words في مشروعك ، تحتاج إلى إضافة المراجع الضرورية. تأكد من إضافة مرجع إلى مكتبة Aspose.Words في مشروعك.
+Aspose.Words'ü projenizde kullanmak için gerekli referansları eklemeniz gerekiyor. Projenizde Aspose.Words kitaplığına bir referans eklediğinizden emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-قبل أن تتمكن من تحويل الحقول ، يجب عليك تحميل المستند الذي يحتوي على الحقول المراد تحويلها. تأكد من تحديد المسار الصحيح للدليل الذي يحتوي على المستند. إليك كيفية تحميل المستند:
+Alanları dönüştürmeden önce dönüştürülecek alanları içeren belgeyi yüklemeniz gerekir. Belgeyi içeren dizine doğru yolu belirttiğinizden emin olun. Belgeyi şu şekilde yükleyebilirsiniz:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+// Belgeyi yükleyin.
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-استبدل "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirin.
 
-## الخطوة 3: تحويل الحقول إلى نص
+## 3. Adım: Alanları metne dönüştürme
 
-الآن بعد أن تم تحميل المستند ، يمكننا المضي قدمًا في تحويل حقول الكتابة إلى نص عادي. في هذا المثال ، نستهدف الحقول الموجودة في الفقرة الأخيرة من المستند فقط. هذا هو الكود الذي يقوم بهذا التحويل:
+Artık belge yüklendiğine göre, yazı alanlarını düz metne dönüştürmeye devam edebiliriz. Bu örnekte, yalnızca belgenin son paragrafında bulunan alanları hedefliyoruz. İşte bu dönüşümü gerçekleştiren kod:
 
 ```csharp
 doc.FirstSection.Body.LastParagraph.Range.Fields
@@ -41,33 +41,33 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
- يستخدم هذا الرمز مجموعة من أساليب LINQ لتصفية الحقول في الفقرة الأخيرة من المستند ثم تحويلها إلى نص عادي عن طريق استدعاء`Unlink()` طريقة.
+ Bu kod, belgenin son paragrafındaki alanları filtrelemek için LINQ yöntemlerinin bir kombinasyonunu kullanır ve ardından bunları çağırarak düz metne dönüştürür.`Unlink()` yöntem.
 
-## الخطوة 4: حفظ المستند المعدل
+## 4. Adım: Değiştirilen belgeyi kaydetme
 
- بمجرد تحويل الحقول ، يمكنك حفظ المستند المعدل. استخدم ال`Save()` طريقة لذلك. هنا مثال :
+ Alanlar dönüştürüldükten sonra değiştirilen belgeyi kaydedebilirsiniz. Kullan`Save()` Bunun için yöntem. İşte bir örnek :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للنسخ الاحتياطي.
+Yedekleme için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### مثال على رمز المصدر لـ Convert Fields In Paragraph باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Paragraftaki Alanları Dönüştürmek için kaynak kodu örneği
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+// Belgeyi yükleyin.
 Document doc = new Document(dataDir + "Linked fields.docx");
 
-// تحويل حقول IF إلى نص عادي في الفقرة الأخيرة من المستند.
+// Belgenin son paragrafındaki IF alanlarını düz metne dönüştürün.
 doc.FirstSection.Body.LastParagraph.Range.Fields
      .Where(f => f.Type == FieldType.FieldIf)
      .ToList()
      .ForEach(f => f.Unlink());
 
-// احفظ المستند المعدل.
+// Değiştirilen belgeyi kaydedin.
 doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ```

@@ -1,51 +1,51 @@
 ---
-title: يتوسطه خط
-linktitle: يتوسطه خط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: 删除线
+linktitle: 删除线
+second_title: Aspose.Words for .NET API 参考
+description: 通过 Aspose.Words for .NET 分步指南了解如何应用删除线文本样式。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/strikethrough/
 ---
 
 
-في هذا المثال ، سنرشدك إلى كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام Aspose.Words for .NET. يتم استخدام نص يتوسطه خط للإشارة إلى حذف النص أو أنه لم يعد صالحًا.
+在本例中，我们将向您介绍如何使用 Aspose.Words for .NET 应用删除线文本样式。删除线文本用于指示文本已删除或不再有效。
 
-## الخطوة 1: استخدام منشئ المستندات
+## 第 1 步：使用文档生成器
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+首先，我们将使用文档生成器将内容添加到我们的文档中。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تطبيق نمط النص يتوسطه خط
+## 第 2 步：应用删除线文本样式
 
- سنقوم بتمكين نمط النص يتوسطه خط من خلال تعيين`StrikeThrough` ممتلكات`Font` يعترض على`true`.
+我们将通过设置`StrikeThrough`的财产`Font`反对`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;
 ```
 
-## الخطوة 3: أضف نص يتوسطه خط
+## 第 3 步：添加删除线文本
 
- يمكننا الآن إضافة نص يتوسطه خط باستخدام منشئ المستندات`Writeln` طريقة.
+我们现在可以使用文档生成器的添加删除线文本`Writeln`方法。
 
 ```csharp
 builder.Writeln("This text will be StrikeThrough");
 ```
 
 
-### مثال على شفرة المصدر لنص يتوسطه خط مع Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的删除线文本示例源代码
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	//使用文档生成器向文档添加内容。
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص يتوسطه خط.
+	//使文本删除线。
 	builder.Font.StrikeThrough = true;
 	builder.Writeln("This text will be StrikeThrough");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام Aspose.Words for .NET.
+恭喜！您现在已经了解了如何使用 Aspose.Words for .NET 应用删除线文本样式。

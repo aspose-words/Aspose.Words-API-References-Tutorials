@@ -1,30 +1,30 @@
 ---
-title: رد اتصال الواصلة
-linktitle: رد اتصال الواصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام رد نداء الواصلة في Aspose.Words for .NET للتعامل مع الواصلة في الكلمات.
+title: Devolución de llamada con guión
+linktitle: Devolución de llamada con guión
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a usar la devolución de llamada de separación de palabras en Aspose.Words para .NET para manejar la separación de palabras.
 type: docs
 weight: 10
 url: /es/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية استخدام ميزة رد الاتصال في Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+En este tutorial paso a paso, le mostraremos cómo usar la función de devolución de llamada de partición en Aspose.Words para .NET. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si aún no lo ha hecho, descargue e instale la biblioteca desde el sitio oficial.
 
-## الخطوة 1: حفظ تذكير الواصلة
+## Paso 1: Guarde el recordatorio de división de palabras
 
- أولاً ، سنقوم بتسجيل رد نداء الواصلة باستخدام مخصص`CustomHyphenationCallback` فصل. سيسمح لنا ذلك بالتعامل مع الواصلة وفقًا لقواعدنا الخاصة:
+ Primero, registraremos la devolución de llamada de separación de palabras usando un`CustomHyphenationCallback` clase. Esto nos permitirá manejar la división de palabras según nuestras propias reglas:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
 ```
 
- تأكد من أنك قمت بتنفيذ`CustomHyphenationCallback`فئة وفقًا لاحتياجاتك الخاصة.
+ Asegúrese de haber implementado el`CustomHyphenationCallback`clase de acuerdo a sus necesidades específicas.
 
-## الخطوة 2: تحميل المستند وتطبيق الواصلة
+## Paso 2: Cargar el documento y aplicar guiones
 
-بعد ذلك ، قم بتحميل المستند الخاص بك من الدليل المحدد وقم بوصل الكلمات باستخدام Aspose.Words:
+A continuación, cargue su documento desde el directorio especificado y divida las palabras usando Aspose.Words:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,9 +32,9 @@ Document document = new Document(dataDir + "German text.docx");
 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
 ```
 
-## الخطوة 3: معالجة أخطاء القاموس المفقودة
+## Paso 3: Manejo de errores de diccionario que faltan
 
-في حالة فقد قاموس الواصلة ، سنكتشف الاستثناء المقابل ونعرض رسالة خطأ:
+En caso de que falte un diccionario de partición de palabras, detectaremos la excepción correspondiente y mostraremos un mensaje de error:
 
 ```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
@@ -43,9 +43,9 @@ catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary")
 }
 ```
 
-## الخطوة 4: تنظيف وتعطيل تذكير الواصلة
+## Paso 4: Limpiar y deshabilitar el recordatorio de separación de sílabas
 
-أخيرًا ، للتنظيف وإيقاف تشغيل تذكير الواصلة ، قم بتنفيذ الخطوات التالية:
+Finalmente, para la limpieza y para desactivar el recordatorio de partición, realice los siguientes pasos:
 
 ```csharp
 finally
@@ -54,16 +54,16 @@ finally
 }
 ```
 
-يؤدي هذا إلى تنظيف وتعطيل تذكير الواصلة بعد الانتهاء من المعالجة.
+Esto limpia y deshabilita el recordatorio de partición después de finalizar el procesamiento.
 
-لذا ! لقد نجحت في استخدام رد نداء الواصلة في Aspose.Words for .NET.
+Entonces ! Ha utilizado con éxito la devolución de llamada de partición en Aspose.Words para .NET.
 
-### نموذج التعليمات البرمجية المصدر لرد الاتصال الواصلة مع Aspose.Words for .NET
+### Ejemplo de código fuente para devolución de llamada con guiones con Aspose.Words para .NET
 
 ```csharp
 try
 {
-	 // تسجيل رد الاتصال الواصلة.
+	 // Registre la devolución de llamada con guión.
 	 Hyphenation.Callback = new CustomHyphenationCallback();
 	 string dataDir = "YOUR DOCUMENT DIRECTORY";
 	 Document document = new Document(dataDir + "German text.docx");
@@ -80,4 +80,4 @@ finally
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Siéntase libre de usar este código en sus propios proyectos y modifíquelo para satisfacer sus necesidades específicas.

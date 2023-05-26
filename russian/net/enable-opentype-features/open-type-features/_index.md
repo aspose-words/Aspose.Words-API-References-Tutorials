@@ -1,43 +1,43 @@
 ---
-title: فتح ميزات النوع
-linktitle: فتح ميزات النوع
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET
+title: Особенности открытого типа
+linktitle: Особенности открытого типа
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как включить и использовать функции Open Type в Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/enable-opentype-features/open-type-features/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من العمل باستخدام ميزات Open Type في مستندات Word الخاصة بك.
+В этом всеобъемлющем руководстве вы узнаете, как включить и использовать функции Open Type в Aspose.Words для .NET. Мы проведем вас через весь процесс и предоставим необходимые фрагменты кода C#. К концу этого руководства вы сможете работать с функциями Open Type в своих документах Word.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Предпосылки
+Прежде чем мы начнем, убедитесь, что у вас есть следующие предварительные условия:
+- В вашей системе установлена библиотека Aspose.Words for .NET.
 
-## الخطوة 1: قم بتحميل المستند
-للبدء ، قم بتحميل المستند باستخدام فئة المستند:
+## Шаг 1: Загрузите документ
+Для начала загрузите документ с помощью класса Document:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "OpenType text shaping.docx");
 ```
 
-## الخطوة 2: تفعيل ميزات النوع المفتوح
-لتمكين ميزات Open Type ، قم بتعيين خاصية TextShaperFactory لفئة LayoutOptions على مثيل لمصنع شكل النص المطلوب. في هذا المثال ، نستخدم HarfBuzzTextShaperFactory:
+## Шаг 2. Включите функции открытого типа
+Чтобы включить функции открытого типа, задайте для свойства TextShaperFactory класса LayoutOptions экземпляр нужной фабрики формирователя текста. В этом примере мы используем HarfBuzzTextShaperFactory:
 
 ```csharp
 doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzTextShaperFactory.Instance;
 ```
 
-## الخطوة 3: احفظ المستند
-بعد تمكين ميزات Open Type ، احفظ المستند بتنسيق الإخراج المطلوب ، مثل PDF:
+## Шаг 3: Сохраните документ
+После включения функций Open Type сохраните документ в желаемом формате вывода, например PDF:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-### مثال على كود المصدر لميزات النوع المفتوح باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لاستخدام ميزات Open Type في Aspose.Words for .NET:
+### Пример исходного кода для функций открытого типа с использованием Aspose.Words для .NET
+Вот полный исходный код для использования функций Open Type в Aspose.Words для .NET:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -48,7 +48,7 @@ doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzText
 doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن العمل مع ميزات Open Type في مستندات Word الخاصة بك.
+## Заключение
+Поздравляем! Вы успешно научились включать и использовать функции Open Type в Aspose.Words для .NET. Следуя пошаговому руководству и используя предоставленный исходный код, теперь вы можете работать с функциями Open Type в своих документах Word.
 
-توفر ميزات Open Type إمكانات طباعة وتشكيل نصية محسّنة ، مما يسمح لك بإنشاء مستندات جذابة بصريًا وذات مظهر احترافي. جرب مصانع مختلفة لأشكال النص واستكشف إمكانيات ميزات Open Type في مشروعاتك.
+Функции Open Type предлагают расширенные возможности типографики и оформления текста, позволяя создавать визуально привлекательные и профессионально выглядящие документы. Поэкспериментируйте с различными фабриками формирователя текста и изучите возможности функций Open Type в своих проектах.

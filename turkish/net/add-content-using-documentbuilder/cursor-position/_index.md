@@ -1,44 +1,44 @@
 ---
-title: موضع المؤشر
-linktitle: موضع المؤشر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد موضع المؤشر في مستند Word باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: İmleç Konumu
+linktitle: İmleç Konumu
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET Adım adım kılavuzunu kullanarak bir Word belgesinde imleç konumunu nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/cursor-position/
 ---
 
-في هذا المثال خطوة بخطوة ، ستتعرف على موضع المؤشر في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من استرداد العقدة والفقرة الحالية حيث يتم وضع المؤشر في المستند.
+Bu adım adım örnekte, Aspose.Words for .NET kullanarak bir Word belgesinde imleç konumunu öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, imlecin belgede konumlandırıldığı geçerli düğümü ve paragrafı alabileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesi başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: الوصول إلى العقدة الحالية والفقرة
-بعد ذلك ، استرجع العقدة والفقرة الحالية حيث تم وضع المؤشر. يمكن تحقيق ذلك باستخدام خصائص CurrentNode و CurrentParagraph لفئة DocumentBuilder:
+## 2. Adım: Geçerli Düğüme ve Paragrafa Erişin
+Ardından, imlecin konumlandırıldığı geçerli düğümü ve paragrafı alın. Bu, DocumentBuilder sınıfının CurrentNode ve CurrentParagraph özellikleri kullanılarak elde edilebilir:
 
 ```csharp
 Node curNode = builder.CurrentNode;
 Paragraph curParagraph = builder.CurrentParagraph;
 ```
 
-## الخطوة 3: استرداد معلومات موضع المؤشر
-الآن ، يمكنك استرداد المعلومات حول موضع المؤشر. في مقتطف الكود التالي ، نطبع نص الفقرة الحالية:
+## 3. Adım: İmleç Konum Bilgisini Alın
+Artık imlecin konumu hakkında bilgi alabilirsiniz. Aşağıdaki kod parçacığında, geçerli paragrafın metnini yazdırıyoruz:
 
 ```csharp
 Console.WriteLine("\nCursor move to paragraph: " + curParagraph.GetText());
 ```
 
-### مثال رمز مصدر لموقع المؤشر باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لفهم موضع المؤشر باستخدام Aspose.Words for .NET:
+### Aspose.Words for .NET kullanan İmleç Konumu için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak imleç konumunu anlamak için eksiksiz kaynak kodu burada:
 
 ```csharp
 Document doc = new Document();
@@ -50,8 +50,8 @@ Paragraph curParagraph = builder.CurrentParagraph;
 Console.WriteLine("\nCursor move to paragraph: " + curParagraph.GetText());
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية التعامل مع موضع المؤشر في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن استرداد العقدة والفقرة الحالية حيث يتم وضع المؤشر في المستند.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesinde imleç konumuyla nasıl çalışacağınızı başarıyla öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak, artık belgede imlecin konumlandırıldığı geçerli düğümü ve paragrafı alabilirsiniz.
 
-يعد فهم موضع المؤشر مفيدًا للعديد من السيناريوهات ، مثل معالجة محتوى المستند استنادًا إلى موقع المؤشر أو تنفيذ ميزات التحرير المخصصة.
+İmleç konumunu anlamak, belge içeriğini imleç konumuna göre değiştirmek veya özel düzenleme özelliklerini uygulamak gibi çeşitli senaryolar için yararlıdır.
 

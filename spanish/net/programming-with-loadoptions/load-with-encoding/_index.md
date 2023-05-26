@@ -1,51 +1,51 @@
 ---
-title: تحميل مع الترميز
-linktitle: تحميل مع الترميز
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل مستند بترميز محدد باستخدام Aspose.Words for .NET.
+title: Cargar con codificación
+linktitle: Cargar con codificación
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a cargar un documento con una codificación específica utilizando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-loadoptions/load-with-encoding/
 ---
-عند العمل مع المستندات النصية في تطبيق C # ، من المهم أن تكون قادرًا على تحميلها بشكل صحيح عن طريق تحديد التشفير الصحيح. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحميل مستندات نصية بالتشفير المطلوب باستخدام خيارات تحميل LoadOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند نصي بالتشفير المحدد باستخدام خيارات تحميل LoadOptions.
+Cuando se trabaja con documentos de texto en una aplicación C#, es importante poder cargarlos correctamente especificando la codificación correcta. Con la biblioteca Aspose.Words para .NET, puede cargar fácilmente documentos de texto con la codificación deseada utilizando las opciones de carga de LoadOptions. En esta guía paso a paso, lo guiaremos a través de cómo usar Aspose.Words para el código fuente de .NET C# para cargar un documento de texto con la codificación especificada usando las opciones de carga de LoadOptions.
 
-## فهم مكتبة Aspose.Words
+## Comprender la biblioteca Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Antes de sumergirse en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una poderosa biblioteca para crear, editar, convertir y proteger documentos de Word en diferentes plataformas, incluida .NET. Ofrece muchas funciones para manipular documentos, como insertar texto, cambiar el formato, agregar secciones y mucho más.
 
-## تكوين خيارات التحميل
+## Configuración de las opciones de carga
 
-تتمثل الخطوة الأولى في تكوين خيارات التحميل لمستندنا النصي. استخدم فئة LoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى ضبط خاصية التشفير على الترميز المطلوب ، على سبيل المثال ، Encoding.UTF7 لتشفير UTF-7. هيريس كيفية القيام بذلك:
+El primer paso es configurar las opciones de carga de nuestro documento de texto. Utilice la clase LoadOptions para especificar los parámetros de carga. En nuestro caso, debemos establecer la propiedad Codificación en la codificación deseada, por ejemplo, Codificación.UTF7 para la codificación UTF-7. Aquí está cómo hacerlo:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding.UTF7 };
 ```
 
-قمنا بإنشاء كائن LoadOptions جديد وقمنا بتعيين خاصية Encoding إلى Encoding.UTF7 لتحديد ترميز UTF-7.
+Creamos un nuevo objeto LoadOptions y establecemos la propiedad Encoding en Encoding.UTF7 para especificar la codificación UTF-7.
 
-## تحميل المستند بترميز محدد
+## Cargando documento con codificación especificada
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل المستند باستخدام فئة Document وتحديد خيارات التحميل. هنا مثال :
+Ahora que hemos configurado las opciones de carga, podemos cargar el documento usando la clase Document y especificar las opciones de carga. Aquí hay un ejemplo :
 
 ```csharp
 Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Encoded in UTF-7.txt" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+En este ejemplo, cargamos el documento "Codificado en UTF-7.txt" ubicado en el directorio de documentos utilizando las opciones de carga especificadas.
 
-### عينة من التعليمات البرمجية المصدر لـ LoadOptions مع وظيفة "Load With Encoding" باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para LoadOptions con la funcionalidad "Cargar con codificación" usando Aspose.Words para .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل بالتشفير المطلوب (UTF-7)
+// Configurar las opciones de carga con la codificación deseada (UTF-7)
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding.UTF7 };
 
-// قم بتحميل المستند بالتشفير المحدد
+// Cargue el documento con la codificación especificada
 Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند نصي بترميز محدد باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يضمن تحميل المستندات النصية بالترميز المناسب قراءة صحيحة ودقيقة للمحتوى في تطبيقك.
+En esta guía, explicamos cómo cargar un documento de texto con una codificación específica utilizando la biblioteca Aspose.Words para .NET. Si sigue los pasos proporcionados y usa el código fuente de C# provisto, puede aplicar fácilmente esta funcionalidad en su aplicación de C#. La carga de documentos de texto con la codificación adecuada garantiza una lectura correcta y precisa del contenido de su aplicación.

@@ -1,63 +1,63 @@
 ---
-title: إدراج مخطط مبعثر
-linktitle: إدراج مخطط مبعثر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مخطط مبعثر في مستند باستخدام Aspose.Words for .NET. أضف بيانات السلاسل بإحداثيات X و Y.
+title: Insertar gráfico de dispersión
+linktitle: Insertar gráfico de dispersión
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a insertar un gráfico de dispersión en un documento con Aspose.Words para .NET. Agregue datos de series con coordenadas X e Y.
 type: docs
 weight: 10
 url: /es/net/programming-with-charts/insert-scatter-chart/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مخطط مبعثر في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وحفظ المستند.
+Este tutorial explica cómo usar Aspose.Words para .NET para insertar un gráfico de dispersión en un documento. El código fuente proporcionado demuestra cómo crear un gráfico, agregar datos de series y guardar el documento.
 
-## الخطوة 1: قم بإعداد المشروع
+## Paso 1: configurar el proyecto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Asegúrese de tener los siguientes requisitos previos:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words para la biblioteca .NET instalada. Puede descargarlo del sitio web oficial de Aspose o usar el administrador de paquetes NuGet para instalarlo.
+- Una ruta de directorio del documento donde se guardará el documento de salida.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Paso 2: Cree un nuevo documento e inserte un gráfico
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Crear un nuevo`Document` objeto y un`DocumentBuilder` para construir el documento.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط مبعثر في المستند.
+ A continuación, utilice el`InsertChart` metodo de la`DocumentBuilder` para insertar un gráfico de dispersión en el documento.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Paso 3: Agregar datos de series al gráfico
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف مجموعتين من إحداثيات X و Y.
+Agregue datos de serie al gráfico. En este ejemplo, agregaremos dos conjuntos de coordenadas X e Y.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
 ```
 
-## الخطوة 4: احفظ المستند
+## Paso 4: Guarde el documento
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Finalmente, guarde el documento en el directorio especificado usando el`Save` metodo de la`Document` objeto.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مخطط مبعثر باستخدام Aspose.Words for .NET.
+Esto completa la implementación de la inserción de un gráfico de dispersión mediante Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لإدراج مخطط مبعثر باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Insertar gráfico de dispersión usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

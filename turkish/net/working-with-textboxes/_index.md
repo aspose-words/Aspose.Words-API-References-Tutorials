@@ -1,17 +1,17 @@
 ---
-title: العمل مع مربعات النص
-linktitle: العمل مع مربعات النص
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إنشاء ارتباط ، والتحقق من التسلسل ، وكسر الارتباط باستخدام Aspose.Words for .NET.
+title: Metin Kutularıyla Çalışmak
+linktitle: Metin Kutularıyla Çalışmak
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, Aspose.Words for .NET kullanarak bir bağlantı oluşturmayı, sırayı kontrol etmeyi ve bir bağlantıyı kesmeyi içerir.
 type: docs
 weight: 1320
 url: /tr/net/working-with-textboxes/
 ---
-العمل مع Textboxes هو مورد شامل يأخذك خطوة بخطوة من خلال العمل مع مربعات النص في مستندات Word باستخدام مكتبة Aspose.Words لـ .NET. تعلمك البرامج التعليمية كيفية إضافة وتعديل وحذف مربعات النص ووضعها وتحديد حجمها ونمطها وخصائصها. ستتعلم أيضًا كيفية إدارة المحتوى في مربعات النص ، بما في ذلك إضافة النص وتحريره وإضافة القوائم والجداول وعناصر أخرى. يعد هذا المورد ضروريًا للمطورين الذين يرغبون في معالجة مربعات النص في مستندات Word باستخدام Aspose.Words for .NET ، مما يوفر مزيدًا من المرونة والتخصيص في إنشاء مستندات احترافية.
+Metin Kutularıyla Çalışmak, .NET için Aspose.Words kitaplığını kullanarak Word belgelerinde metin kutuları ile çalışmanıza adım adım yol gösteren kapsamlı bir kaynaktır. Öğreticiler size metin kutularını nasıl ekleyeceğinizi, değiştireceğinizi ve sileceğinizi, onları konumlandırmayı, boyutlarını, stillerini ve özelliklerini tanımlamayı öğretir. Metin ekleme ve düzenleme, listeler, tablolar ve diğer öğeleri ekleme dahil olmak üzere metin kutularındaki içeriği nasıl yöneteceğinizi de öğreneceksiniz. Bu kaynak, profesyonel belgeler oluştururken daha fazla esneklik ve özelleştirme sağlayarak Aspose.Words for .NET kullanarak Word belgelerindeki metin kutularını değiştirmek isteyen geliştiriciler için çok önemlidir.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [إنشاء ارتباط](./create-a-link/) | تعرف على كيفية إنشاء رابط بين TextBoxes في مستند Word باستخدام Aspose.Words for .NET. |
-| [تحقق من التسلسل](./check-sequence/) | تعرف على كيفية التحقق من تسلسل TextBoxes في مستند Word باستخدام Aspose.Words for .NET. |
-| [قطع الارتباط](./break-a-link/) | تعرف على كيفية فصل الروابط في مستند Word باستخدام Aspose.Words for .NET. |
+| [Bağlantı Oluştur](./create-a-link/) | Aspose.Words for .NET ile bir Word belgesindeki TextBox'lar arasında nasıl bağlantı oluşturacağınızı öğrenin. |
+| [Kontrol Sırası](./check-sequence/) | Aspose.Words for .NET ile bir Word belgesindeki Metin Kutularının sırasını nasıl kontrol edeceğinizi öğrenin. |
+| [Bağlantıyı Kır](./break-a-link/) | Aspose.Words for .NET ile bir Word belgesindeki bağlantıların nasıl kesileceğini öğrenin. |

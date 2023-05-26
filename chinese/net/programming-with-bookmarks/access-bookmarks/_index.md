@@ -1,62 +1,62 @@
 ---
-title: الوصول إلى الإشارات المرجعية
-linktitle: الوصول إلى الإشارات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الوصول إلى الإشارات المرجعية في مستند Word باستخدام Aspose.Words for .NET.
+title: 访问书签
+linktitle: 访问书签
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 访问 Word 文档中的书签。
 type: docs
 weight: 10
 url: /zh/net/programming-with-bookmarks/access-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إشارات مرجعية في Aspose.Words for .NET library. توفر هذه الميزة الوصول إلى إشارات مرجعية محددة في مستند Word.
+在本文中，我们将探索上面的 C# 源代码，以了解如何在 Aspose.Words for .NET 库中使用 Access Bookmarks 功能。此功能提供对 Word 文档中特定书签的访问。
 
-## المتطلبات الأساسية
+## 先决条件
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# 语言的基础知识。
+- 安装了 Aspose.Words 库的 .NET 开发环境。
 
-## الخطوة 1: تحميل المستند
+## 第 1 步：装入文档
 
- قبل أن نبدأ في الوصول إلى الإشارات المرجعية ، نحتاج إلى تحميل مستند Word باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` كائن يحدد مسار ملف المستند:
+在我们开始访问书签之前，我们需要使用 Aspose.Words for .NET 加载一个 Word 文档。这可以通过实例化一个`Document`指定文档文件路径的对象：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## الخطوة 2: الوصول إلى الإشارات المرجعية
+## 第 2 步：访问书签
 
-بمجرد تحميل المستند ، يمكننا الوصول إلى الإشارات المرجعية في المستند. هناك طريقتان للوصول إلى الإشارات المرجعية: عن طريق الفهرس والاسم.
+加载文档后，我们可以访问文档中的书签。有两种访问书签的方法：按索引和按名称。
 
-- الوصول عن طريق الفهرس: في مثالنا ، نستخدم الفهرس 0 للوصول إلى الإشارة المرجعية الأولى للمستند:
+- 按索引访问：在我们的示例中，我们使用索引 0 来访问文档的第一个书签：
 
 ```csharp
 Bookmark bookmark1 = doc.Range.Bookmarks[0];
 ```
 
-- الوصول بالاسم: في مثالنا ، نستخدم الاسم "MyBookmark3" للوصول إلى إشارة مرجعية معينة في المستند:
+- 按名称访问：在我们的示例中，我们使用名称“MyBookmark3”来访问文档中的特定书签：
 
 ```csharp
 Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
 ```
 
-### مثال على شفرة المصدر للوصول إلى الإشارات المرجعية باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 访问书签的示例源代码
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح الوصول إلى الإشارات المرجعية باستخدام Aspose.Words for .NET:
+以下是演示使用 Aspose.Words for .NET 访问书签的完整示例源代码：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 	
-	// حسب الفهرس:
+	//按指数：
 	Bookmark bookmark1 = doc.Range.Bookmarks[0];
-	// بالاسم:
+	//按名字：
 	Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
    
 ```
 
-## خاتمة
+## 结论
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة Access Bookmarks في Aspose.Words for .NET. اتبعنا دليلًا تفصيليًا لتحميل مستند والوصول إلى الإشارات المرجعية باستخدام الفهرس والاسم.
+在本文中，我们研究了 C# 源代码以了解如何使用 Aspose.Words for .NET 的访问书签功能。我们按照分步指南上传文档并使用索引和名称访问书签。

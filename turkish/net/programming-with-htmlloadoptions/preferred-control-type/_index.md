@@ -1,20 +1,20 @@
 ---
-title: نوع التحكم المفضل
-linktitle: نوع التحكم المفضل
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحديد نوع عنصر التحكم المفضل عند تحميل مستند HTML باستخدام Aspose.Words for .NET.
+title: Tercih Edilen Kontrol Tipi
+linktitle: Tercih Edilen Kontrol Tipi
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir HTML belgesi yüklerken tercih edilen kontrol tipini belirlemek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة نوع عنصر التحكم المفضل مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تحديد نوع عنصر التحكم المفضل عند تحميل مستند HTML.
+Bu makale, tercih edilen kontrol tipi özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir HTML belgesi yüklerken tercih edilen kontrol tipini nasıl belirleyeceğinizi öğrenebileceksiniz.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
-## الخطوة 1: تحديد كود HTML
+## 1. Adım: HTML kodunu tanımlayın
 
- للبدء ، تحتاج إلى تحديد كود HTML الذي تريد تحميله كمستند. في هذا المثال ، قمنا بتعريف ملف`html` متغير يحتوي على كود HTML لمحدد مع خيارات.
+ Başlamak için, bir belge olarak yüklemek istediğiniz HTML kodunu tanımlamanız gerekir. Bu örnekte, bir`html` seçenekleri olan bir seçicinin HTML kodunu içeren değişken.
 
 ```csharp
 const string html=@"
@@ -27,24 +27,24 @@ const string html=@"
 ";
 ```
 
-## الخطوة 2: تعيين خيارات تحميل HTML
+## 2. Adım: HTML yükleme seçeneklerini ayarlayın
 
- بعد ذلك ، نقوم بإنشاء ملف`HtmlLoadOptions` كائن وتعيين`PreferredControlType` ملكية ل`HtmlControlType.StructuredDocumentTag`. هذا يخبر Aspose.Words باستخدام StructuredDocumentTags لتمثيل HTML عند التحميل.
+ Sonra, bir`HtmlLoadOptions` nesne ve ayarlayın`PreferredControlType` mülkiyet`HtmlControlType.StructuredDocumentTag`. Bu, Aspose.Words'e yükleme sırasında HTML'yi temsil etmesi için StructuredDocumentTags'i kullanmasını söyler.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
-## الخطوة 3: تحميل وحفظ المستند
+## 3. Adım: Belgeyi yükleyin ve kaydedin
 
- نحن نستخدم ال`Document` فئة لتحميل كود HTML من تدفق الذاكرة مع خيارات التحميل المحددة مسبقًا. ثم نقوم بحفظ المستند في الدليل المحدد بامتداد`.docx` تنسيق الملف.
+ biz kullanıyoruz`Document` Daha önce tanımlanan yükleme seçenekleriyle bir bellek akışından HTML kodu yüklemek için sınıf. Ardından, belgeyi belirtilen dizine kaydederiz.`.docx` dosya formatı.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### مثال على شفرة المصدر لنوع التحكم المفضل مع Aspose.Words for .NET
+### Aspose.Words for .NET ile tercih edilen kontrol tipi için örnek kaynak kodu
 
 ```csharp
 	
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 			</select>
 		</html>
 	";
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 
@@ -66,4 +66,4 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 ```
 
-هذا كل شئ ! لقد نجحت في تحديد نوع عنصر التحكم المفضل عند تحميل مستند HTML باستخدام Aspose.Words for .NET.
+Bu kadar ! Aspose.Words for .NET ile bir HTML belgesi yüklerken tercih edilen kontrol tipini başarıyla belirlediniz.

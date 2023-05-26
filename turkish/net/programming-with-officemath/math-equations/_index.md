@@ -1,60 +1,60 @@
 ---
-title: معادلات الرياضيات
-linktitle: معادلات الرياضيات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة معادلات رياضية إلى مستندات Word باستخدام Aspose.Words for .NET.
+title: Matematik Denklemleri
+linktitle: Matematik Denklemleri
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerinize nasıl matematik denklemleri ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-officemath/math-equations/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words إمكانية إضافة معادلات رياضية إلى مستنداتك. في هذا الدليل ، سنرشدك إلى كيفية استخدام الكود المصدري C # لـ Aspose.Words for .NET لإضافة معادلات رياضية إلى مستند Word.
+Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, düzenlemek ve değiştirmek için güçlü bir kitaplıktır. Aspose.Words'ün sunduğu özellikler arasında, belgelerinize matematiksel denklemler ekleme imkanı vardır. Bu kılavuzda, bir Word belgesine matematik denklemleri eklemek için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك دعم المعادلات الرياضية.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle çalışmayı kolay ve verimli hale getiren popüler bir kitaplıktır. Matematiksel denklemler için destek de dahil olmak üzere Word belgeleri oluşturmak, düzenlemek ve değiştirmek için çok çeşitli özellikler sunar.
 
-## تحميل مستند Word
+## Word belgesini yükleme
 
-الخطوة الأولى هي تحميل مستند Word الذي تريد إضافة معادلة رياضية إليه. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+İlk adım, bir matematik denklemi eklemek istediğiniz Word belgesini yüklemektir. Belgeyi kaynak dosyadan yüklemek için Document sınıfını kullanın. İşte bir örnek :
 
 ```csharp
 Document doc = new Document(dataDir + "Office math.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل مستند "Office math.docx" الموجود في دليل المستندات.
+Bu örnekte, belgeler dizininde bulunan "Office math.docx" belgesini yüklüyoruz.
 
-## إضافة معادلة رياضية
+## Matematik denklemi ekleme
 
-بمجرد تحميل المستند ، يمكنك الوصول إلى عنصر OfficeMath في المستند. استخدم الأسلوب GetChild لفئة المستند للحصول على عنصر OfficeMath من الفهرس المحدد. هنا مثال :
+Belge yüklendikten sonra belgedeki OfficeMath öğesine erişebilirsiniz. OfficeMath öğesini belirtilen dizinden almak için Document sınıfının GetChild yöntemini kullanın. İşte bir örnek :
 
 ```csharp
 OfficeMath officeMath = (OfficeMath)doc.GetChild(NodeType.OfficeMath, 0, true);
 ```
 
-في هذا المثال ، نحصل على عنصر OfficeMath الأول في المستند.
+Bu örnekte, belgedeki ilk OfficeMath öğesini alıyoruz.
 
-## تكوين خصائص المعادلات الرياضية
+## Matematik Denklem Özelliklerini Yapılandırma
 
-يمكنك تكوين خصائص مختلفة للمعادلة الرياضية باستخدام خصائص كائن OfficeMath. على سبيل المثال ، يمكنك تعيين نوع عرض المعادلة الرياضية باستخدام خاصية DisplayType. هنا مثال :
+OfficeMath nesne özelliklerini kullanarak matematik denkleminin çeşitli özelliklerini yapılandırabilirsiniz. Örneğin, matematik denkleminin görüntülenme tipini DisplayType özelliğini kullanarak ayarlayabilirsiniz. İşte bir örnek :
 
 ```csharp
 officeMath.DisplayType = OfficeMathDisplayType.Display;
 ```
 
-في هذا المثال ، قمنا بتعيين نوع عرض المعادلة الرياضية على "العرض" ، مما يعني أنه سيتم عرض المعادلة في السطر الخاص بها.
+Bu örnekte, matematik denkleminin görüntü tipini "Ekran" olarak ayarladık, bu, denklemin kendi satırında görüntüleneceği anlamına gelir.
 
-وبالمثل ، يمكنك تعيين محاذاة المعادلة الرياضية باستخدام خاصية الضبط. هنا مثال :
+Benzer şekilde, Yaslama özelliğini kullanarak matematik denkleminin hizalamasını ayarlayabilirsiniz. İşte bir örnek :
 
 ```csharp
 officeMath.Justification = OfficeMathJustification.Left;
 ```
 
-في هذا المثال ، قمنا بتعيين محاذاة المعادلة الرياضية إلى اليسار.
+Bu örnekte, matematik denkleminin hizalamasını sola ayarladık.
 
-## حفظ المستند بالمعادلة الرياضية
+## Belgeyi matematiksel denklemle kaydetme
 
-بمجرد تكوين خصائص المعادلة الرياضية ، يمكنك حفظ المستند المعدل باستخدام طريقة Save لفئة Document. هنا مثال :
+Matematiksel denklemin özelliklerini yapılandırdıktan sonra, değiştirilen belgeyi Document sınıfının Save yöntemini kullanarak kaydedebilirsiniz. İşte bir örnek :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx
@@ -62,28 +62,28 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx
 ");
 ```
 
-في هذا المثال ، نحفظ المستند المعدل باسم "WorkingWithOfficeMath.MathEquations.docx".
+Bu örnekte değiştirilen belgeyi "WorkingWithOfficeMath.MathEquations.docx" olarak kaydediyoruz.
 
-### مثال على الكود المصدري للمعادلات الرياضية باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile matematik denklemleri için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+//Word belgesini yükleyin
 Document doc = new Document(dataDir + "Office math.docx");
 
-// الحصول على عنصر OfficeMath
+// OfficeMath öğesini edinin
 OfficeMath officeMath = (OfficeMath)doc.GetChild(NodeType.OfficeMath, 0, true);
 
-//تكوين خصائص المعادلة الرياضية
+//Matematiksel denklemin özelliklerini yapılandırma
 officeMath.DisplayType = OfficeMathDisplayType.Display;
 officeMath.Justification = OfficeMathJustification.Left;
 
-// احفظ المستند بالمعادلة الرياضية
+// Belgeyi matematiksel denklemle kaydedin
 doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، قمنا بتغطية كيفية استخدام Aspose.Words for .NET لإضافة معادلات رياضية إلى مستند Word باستخدام الكود المصدري C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة إضافة معادلات رياضية إلى مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع المعادلات الرياضية ، مما يسمح لك بإنشاء مستندات احترافية جيدة التنسيق.
+Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesine matematik denklemleri eklemek için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Sağlanan adımları izleyerek, C# uygulamanızda Word belgelerinize kolayca matematik denklemleri ekleyebilirsiniz. Aspose.Words, matematiksel denklemlerle çalışmak için muazzam bir esneklik ve güç sunarak profesyonel, iyi biçimlendirilmiş belgeler oluşturmanıza olanak tanır.

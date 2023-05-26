@@ -1,38 +1,38 @@
 ---
-title: تصدير حقل نموذج إدخال النص كنص
-linktitle: تصدير حقل نموذج إدخال النص كنص
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتصدير حقول نموذج إدخال النص كنص عادي باستخدام Aspose.Words for .NET.
+title: Metin Giriş Formu Alanını Metin Olarak Dışa Aktar
+linktitle: Metin Giriş Formu Alanını Metin Olarak Dışa Aktar
+second_title: Aspose.Words for .NET API Referansı
+description: Metin giriş formu alanlarını Aspose.Words for .NET ile düz metin olarak dışa aktarmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-htmlsaveoptions/export-text-input-form-field-as-text/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتصدير حقول نموذج إدخال النص كنص عادي باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تصدير حقول نموذج إدخال النص كنص مقروء ، بدلاً من تصديرها كعناصر إدخال HTML.
+Bu eğitimde, metin giriş formu alanlarını Aspose.Words for .NET ile düz metin olarak dışa aktarmak için C# kaynak kodunda size yol göstereceğiz. Bu özellik, metin girişi form alanlarını HTML giriş öğeleri olarak dışa aktarmak yerine okunabilir metin olarak dışa aktarmanıza olanak tanır.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-في هذه الخطوة ، سنقوم بتحميل المستند للتصدير. استخدم الكود التالي لتحميل المستند من دليل محدد:
+Bu adımda, dışa aktarılacak belgeyi yükleyeceğiz. Belgeyi belirli bir dizinden yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- هذا الرمز ينشئ مثيل`Document` عن طريق تحميل المستند من الدليل المحدد.
+ Bu kod, örneğini oluşturur`Document` belgeyi belirtilen dizinden yükleyerek.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي بتنسيق HTML
+## 3. Adım: HTML yedekleme seçeneklerini yapılandırma
 
-سنقوم الآن بتكوين خيارات حفظ HTML لتصدير حقول نموذج إدخال النص كنص عادي. استخدم الكود التالي:
+Şimdi metin giriş formu alanlarını düz metin olarak dışa aktarmak için HTML kaydetme seçeneklerini yapılandıracağız. Aşağıdaki kodu kullanın:
 
 ```csharp
 string imagesDir = Path. Combine(ArtifactsDir, "Images");
 
-// يجب أن يكون المجلد المحدد موجودًا وأن يكون فارغًا.
+// Belirtilen klasör mevcut ve boş olmalıdır.
 if (Directory.Exists(imagesDir))
 Directory. Delete(imagesDir, true);
 
@@ -45,36 +45,36 @@ ImagesFolder = imagesDir
 };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions`وتعيين`ExportTextInputFormFieldAsText` الخيار ل`true`لتصدير حقول نموذج إدخال النص كنص عادي. علاوة على ذلك ، فإنه يحدد المجلد حيث سيتم حفظ الصور المستخرجة.
+ Bu kod, örneğini oluşturur`HtmlSaveOptions`ve ayarlar`ExportTextInputFormFieldAsText` seçeneği`true`metin giriş formu alanlarını düz metin olarak dışa aktarmak için. Ayrıca çıkarılan görüntülerin kaydedileceği klasörü belirtir.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## 4. Adım: Belgeyi HTML'ye dönüştürme ve kaydetme
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+Son olarak, daha önce yapılandırılmış HTML kaydetme seçeneklerini kullanarak belgeyi HTML'ye dönüştüreceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML عن طريق تصدير حقول نموذج إدخال النص كنص عادي ، ويحفظ ملف HTML الذي تم تصديره إلى الدليل المحدد.
+Bu kod, metin giriş formu alanlarını düz metin olarak dışa aktararak belgeyi HTML'ye dönüştürür ve dışa aktarılan HTML dosyasını belirtilen dizine kaydeder.
 
-### مثال على شفرة المصدر لحقل نموذج إدخال النص على هيئة نص باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Metin Giriş Formu Alanını Metin Olarak Dışa Aktarma için örnek kaynak kodu
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
 	string imagesDir = Path.Combine(ArtifactsDir, "Images");
 
-	// يجب أن يكون المجلد المحدد موجودًا ويجب أن يكون فارغًا.
+	// Belirtilen klasörün var olması ve boş olması gerekir.
 	if (Directory.Exists(imagesDir))
 		Directory.Delete(imagesDir, true);
 
 	Directory.CreateDirectory(imagesDir);
 
-	// قم بتعيين خيار لتصدير حقول النموذج كنص عادي ، وليس كعناصر إدخال HTML.
+	// Form alanlarını HTML giriş öğeleri olarak değil, düz metin olarak dışa aktarma seçeneğini ayarlayın.
 	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 	{
 		ExportTextInputFormFieldAsText = true, ImagesFolder = imagesDir
@@ -84,4 +84,4 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.ht
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+ içindeki belgeler dizinine giden doğru yolu belirttiğinizden emin olun.`dataDir` değişken.

@@ -1,44 +1,44 @@
 ---
-title: إدراج مخطط عمودي بسيط
-linktitle: إدراج مخطط عمودي بسيط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مخطط عمودي بسيط في مستند باستخدام Aspose.Words for .NET.
+title: 插入简单柱形图
+linktitle: 插入简单柱形图
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将简单的柱形图插入到文档中。
 type: docs
 weight: 10
 url: /zh/net/programming-with-charts/insert-simple-column-chart/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مخطط عمودي بسيط في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وحفظ المستند.
+本教程解释了如何使用 Aspose.Words for .NET 将一个简单的柱形图插入到文档中。提供的源代码演示了如何创建图表、添加系列数据和保存文档。
 
-## الخطوة 1: قم بإعداد المشروع
+## 第 1 步：设置项目
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+确保您具有以下先决条件：
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- 安装了 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载或使用 NuGet 包管理器安装它。
+- 将保存输出文档的文档目录路径。
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 第 2 步：创建新文档并插入图表
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط عمودي في المستند. يمكنك تحديد أنواع وأحجام مخططات مختلفة حسب متطلباتك.
+接下来，使用`InsertChart`的方法`DocumentBuilder`将柱形图插入到文档中。您可以根据需要指定不同的图表类型和大小。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## 第 3 步：将系列数据添加到图表
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف سلاسل متعددة بفئتين لكل منهما.
+将系列数据添加到图表中。在这个例子中，我们将添加多个系列，每个系列有两个类别。
 
 ```csharp
 ChartSeriesCollection seriesColl = chart.Series;
@@ -53,34 +53,34 @@ seriesColl.Add("Aspose Series 4", categories, new double[] { 7, 8 });
 seriesColl.Add("Aspose Series 5", categories, new double[] { 9, 10 });
 ```
 
-## الخطوة 4: احفظ المستند
+## 第 4 步：保存文档
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+最后，使用 将文件保存到指定目录`Save`的方法`Document`目的。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مخطط عمودي بسيط باستخدام Aspose.Words for .NET.
+这样就完成了使用Aspose.Words for .NET 插入一个简单柱形图的实现。
 
-### مثال على شفرة المصدر لإدراج مخطط عمودي بسيط باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 插入简单柱形图的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// يمكنك تحديد أنواع وأحجام مختلفة من المخططات.
+	//您可以指定不同的图表类型和大小。
 	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 	Chart chart = shape.Chart;
 	ChartSeriesCollection seriesColl = chart.Series;
 	Console.WriteLine(seriesColl.Count);
-	// حذف السلاسل التي تم إنشاؤها بشكل افتراضي.
+	//删除默认生成的系列。
 	seriesColl.Clear();
-	// قم بإنشاء مصفوفة أسماء الفئات ، في هذا البرنامج التعليمي لدينا فئتان.
+	//创建类别名称数组，在本教程中我们有两个类别。
 	string[] categories = new string[] { "Category 1", "Category 2" };
-	// الرجاء ملاحظة أنه يجب ألا تكون صفائف البيانات فارغة ويجب أن تكون المصفوفات بنفس الحجم.
+	//请注意，数据数组不能为空且数组大小必须相同。
 	seriesColl.Add("Aspose Series 1", categories, new double[] { 1, 2 });
 	seriesColl.Add("Aspose Series 2", categories, new double[] { 3, 4 });
 	seriesColl.Add("Aspose Series 3", categories, new double[] { 5, 6 });

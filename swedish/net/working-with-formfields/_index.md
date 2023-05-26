@@ -1,18 +1,18 @@
 ---
-title: العمل مع FormFields
-linktitle: العمل مع FormFields
-second_title: Aspose.Words لمراجع .NET API
-description: البرامج التعليمية التي تحتوي على كيفية إدراج حقول النموذج ، والعمل مع خصائص حقول النماذج ، والحصول على مجموعة حقول النموذج ، والحصول على حقول النموذج بالاسم في مستند Word باستخدام Aspose.Words for .NET.
+title: Arbeta med FormFields
+linktitle: Arbeta med FormFields
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar som innehåller hur man infogar formulärfiler, arbetar med formulärfilers egenskaper, hämtar formulärfältsinsamling och får formulärfält efter namn i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 690
 url: /sv/net/working-with-formfields/
 ---
-يعد العمل مع Form Fields موردًا شاملاً لتعلم كيفية التعامل مع حقول النماذج في مستندات Word باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية شروحات خطوة بخطوة ، وكود مصدر كامل ، وأمثلة عملية لإنشاء وتعديل وإدارة حقول النموذج مثل مربعات الاختيار ومربعات النص والقوائم المنسدلة والمزيد. ستتعلم أيضًا كيفية استخراج البيانات ونشرها من حقول النماذج ، بالإضافة إلى تخصيص تنسيقها وسلوكها. هذا المورد ضروري للمطورين الراغبين في أتمتة إنشاء النماذج وإدارتها في مستندات Word باستخدام Aspose.Words for .NET.
+Arbeta med formulärfält är en omfattande resurs för att lära dig hur man arbetar med formulärfält i Word-dokument med Aspose.Words för .NET-biblioteket. Handledningar ger steg-för-steg förklaringar, fullständig källkod och praktiska exempel för att skapa, ändra och hantera formulärfält som kryssrutor, textrutor, rullgardinslistor och mer. Du kommer också att lära dig hur du extraherar och fyller i data från formulärfält, samt anpassar deras formatering och beteende. Denna resurs är viktig för utvecklare som vill automatisera skapandet och hanteringen av formulär i Word-dokument med Aspose.Words för .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [أدخل حقول النموذج](./insert-form-fields/) | تعرف على كيفية إدراج حقول نموذج القائمة المنسدلة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تعمل حقول النموذج مع الخصائص](./form-fields-work-with-properties/) | تعرف على كيفية التعامل مع خصائص حقل النموذج في مستندات Word باستخدام Aspose.Words for .NET. |
-| [حقول النموذج تحصل على مجموعة حقول النموذج](./form-fields-get-form-fields-collection/) | تعرف على كيفية استرداد مجموعة حقول النموذج ومعالجتها في مستندات Word باستخدام Aspose.Words for .NET. |
-| [الحصول على حقول النموذج بالاسم](./form-fields-get-by-name/) | تعرف على كيفية استرداد وتعديل حقول النموذج بالاسم في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Infoga formulärfält](./insert-form-fields/) | Lär dig hur du infogar dropdown-formulärfält i Word-dokument med Aspose.Words för .NET. |
+| [Formulärfält fungerar med egenskaper](./form-fields-work-with-properties/) | Lär dig hur du arbetar med formulärfältsegenskaper i Word-dokument med Aspose.Words för .NET. |
+| [Formulärfält Hämta formulärfältsamling](./form-fields-get-form-fields-collection/) | Lär dig hur du hämtar och manipulerar insamling av formulärfält i Word-dokument med Aspose.Words för .NET. |
+| [Formulärfält får efter namn](./form-fields-get-by-name/) | Lär dig hur du hämtar och ändrar formulärfält efter namn i Word-dokument med Aspose.Words för .NET. |

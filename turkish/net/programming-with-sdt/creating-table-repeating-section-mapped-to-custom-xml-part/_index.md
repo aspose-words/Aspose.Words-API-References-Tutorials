@@ -1,38 +1,38 @@
 ---
-title: إنشاء مقطع مكرر للجدول معين إلى جزء Xml مخصص
-linktitle: إنشاء مقطع مكرر للجدول معين إلى جزء Xml مخصص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء جدول مع قسم مكرر معين إلى CustomXmlPart في مستند Word باستخدام Aspose.Words for .NET.
+title: Özel Xml Bölümüne Eşlenen Tablo Yinelenen Bölüm Oluşturma
+linktitle: Özel Xml Bölümüne Eşlenen Tablo Yinelenen Bölüm Oluşturma
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesinde bir CustomXmlPart'a eşlenen yinelenen bir bölümle tablo oluşturmayı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
 
-يوضح هذا البرنامج التعليمي كيفية إنشاء جدول مع قسم مكرر معين إلى جزء Xml مخصص في مستند Word باستخدام Aspose.Words for .NET. يسمح لك قسم التكرار بإضافة صفوف ديناميكيًا استنادًا إلى بيانات XML المخزنة في جزء Xml المخصص.
+Bu eğitim, Aspose.Words for .NET kullanılarak bir Word belgesindeki Özel Xml Bölümüne eşlenen yinelenen bir bölüm içeren bir tablonun nasıl oluşturulacağını gösterir. Yinelenen bölüm, Özel Xml Bölümünde depolanan XML verilerine dayalı olarak satırları dinamik olarak eklemenize olanak tanır.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Önkoşullar
+Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words for .NET kitaplığı yüklendi.
+- Temel C# bilgisi ve Word belgeleriyle çalışma.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستند الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## 1. Adım: Belge Dizinini kurun
+ Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` لبناء محتوى المستند.
+## 2. Adım: Bir Belge ve DocumentBuilder Oluşturun
+ Yeni bir örneğini oluştur`Document` sınıf ve bir`DocumentBuilder` Belgenin içeriğini oluşturmak için.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إضافة بيانات XML مخصصة إلى CustomXmlPart
- إنشاء`CustomXmlPart` وإضافة بيانات XML المخصصة إليها. في هذا المثال ، نقوم بإنشاء سلسلة XML تمثل مجموعة من الكتب بعناوينها ومؤلفيها.
+## 3. Adım: Bir CustomXmlPart'a Özel XML Verileri Ekleyin
+ Oluşturmak`CustomXmlPart` ve buna özel XML verileri ekleyin. Bu örnekte, başlıkları ve yazarlarıyla birlikte bir kitap koleksiyonunu temsil eden bir XML dizesi oluşturuyoruz.
 
 ```csharp
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
@@ -41,8 +41,8 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 	"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
 ```
 
-## الخطوة 4: إنشاء هيكل جدول وجدول
- ابدأ في إنشاء جدول باستخدام ملف`StartTable` طريقة`DocumentBuilder` . أضف خلايا الجدول والمحتوى باستخدام ملف`InsertCell` و`Write` طُرق.
+## 4. Adım: Bir Tablo ve Tablo Yapısı Oluşturun
+ kullanarak bir tablo oluşturmaya başlayın.`StartTable` yöntemi`DocumentBuilder` . kullanarak tablo hücreleri ve içerik ekleyin.`InsertCell` Ve`Write` yöntemler.
 
 ```csharp
 Table table = builder.StartTable();
@@ -54,8 +54,8 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## الخطوة 5: إنشاء قسم التكرار المعين إلى XML المخصص
- إنشاء`StructuredDocumentTag` مع`SdtType.RepeatingSection` لتمثيل قسم التكرار. قم بتعيين مخطط XML للقسم المكرر باستخدام امتداد`SetMapping` طريقة`XmlMapping` ملكية. في هذا المثال ، نقوم بتعيين قسم التكرار إلى`/books[1]/book`.
+## 5. Adım: Özel XML ile Eşlenen Yinelenen Bölümü Oluşturun
+ Oluşturmak`StructuredDocumentTag` ile`SdtType.RepeatingSection` yinelenen bölümü temsil etmek için. kullanarak yinelenen bölüm için XML eşlemesini ayarlayın.`SetMapping` yöntemi`XmlMapping` mülk. Bu örnekte, yinelenen bölümü şu şekilde eşliyoruz:`/books[1]/book`.
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt =
@@ -64,8 +64,8 @@ repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## الخطوة 6: إنشاء عنصر قسم مكرر وإضافة خلايا
- إنشاء`StructuredDocumentTag` مع`SdtType.RepeatingSectionItem` لتمثيل عنصر القسم المكرر. قم بإلحاقه كطفل بقسم التكرار.
+## 6. Adım: Yinelenen Bölüm Öğesini Oluşturun ve Hücreleri Ekleyin
+ Oluşturmak`StructuredDocumentTag` ile`SdtType.RepeatingSectionItem` yinelenen bölüm öğesini temsil etmek için. Yinelenen bölüme bir çocuk olarak ekleyin.
 
 ```csharp
 StructuredDocumentTag repeatingSectionItemSdt = 
@@ -73,17 +73,17 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- إنشاء`Row`لتمثيل كل عنصر في قسم التكرار وإلحاقه بعنصر القسم المكرر.
+ Oluşturmak`Row`yinelenen bölümdeki her bir öğeyi temsil etmek ve onu yinelenen bölüm öğesine eklemek.
 
 ```csharp
 Row row = new Row(doc);
 repeatingSectionItemSdt.AppendChild(row);
 ```
 
-## الخطوة 7: إضافة عناصر تحكم المحتوى داخل قسم التكرار
- يخلق`StructuredDocumentTag` الأشياء ذات`SdtType.PlainText`
+## 7. Adım: Yinelenen Bölüme İçerik Kontrolleri Ekleyin
+ Yaratmak`StructuredDocumentTag` olan nesneler`SdtType.PlainText`
 
-  لتمثيل العنوان وعناصر تحكم محتوى المؤلف. قم بتعيين مخطط XML لكل عنصر تحكم محتوى باستخدام ملف`SetMapping` طريقة`XmlMapping` ملكية. في هذا المثال ، نقوم بتعيين عنصر تحكم العنوان إلى`/books[1]/book[1]/title[1]` وسيطر المؤلف على`/books[1]/book[1]/author[1]`.
+  başlık ve yazar içerik denetimlerini temsil etmek için. kullanarak her içerik denetimi için XML eşlemesini ayarlayın.`SetMapping` yöntemi`XmlMapping` mülk. Bu örnekte, başlık kontrolünü şu şekilde eşliyoruz:`/books[1]/book[1]/title[1]` ve yazar kontrolü`/books[1]/book[1]/author[1]`.
 
 ```csharp
 StructuredDocumentTag titleSdt =
@@ -97,17 +97,17 @@ authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 row.AppendChild(authorSdt);
 ```
 
-## الخطوة 8: احفظ المستند
- احفظ المستند المعدل إلى الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
+## 8. Adım: Belgeyi Kaydedin
+ Değiştirilen belgeyi belirtilen dizine kaydedin.`Save` yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
 ```
 
-### مثال على شفرة المصدر لإنشاء قسم مكرر للجدول معين إلى جزء Xml مخصص باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Özel Xml Bölümüne Eşlenen Tablo Yinelenen Bölüm Oluşturma için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -144,4 +144,4 @@ doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXm
 
 ```
 
-هذا كل شيء! لقد نجحت في إنشاء جدول به قسم مكرر تم تعيينه إلى CustomXmlPart في مستند Word باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenizde bir CustomXmlPart'a eşlenen yinelenen bir bölüm içeren bir tabloyu başarıyla oluşturdunuz.

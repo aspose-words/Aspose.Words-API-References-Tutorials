@@ -1,18 +1,18 @@
 ---
-title: العمل مع القائمة
-linktitle: العمل مع القائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية إعادة تشغيل القائمة في كل قسم ، وتحديد مستوى القائمة ، وإعادة تشغيل رقم القائمة في المستند باستخدام Aspose.Words for .NET.
+title: Lavorare con List
+linktitle: Lavorare con List
+second_title: Riferimento all'API Aspose.Words per .NET
+description: I tutorial contengono come riavviare l'elenco in ogni sezione, specificare il livello dell'elenco, riavviare il numero dell'elenco nel documento utilizzando Aspose.Words per .NET.
 type: docs
 weight: 780
 url: /it/net/working-with-list/
 ---
 
-يعد العمل مع القوائم موردًا شاملاً يرشدك خلال العمل مع القوائم في مستندات Word باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية توضيحات خطوة بخطوة ، وكود مصدر كامل ، وأمثلة عملية لإنشاء أنواع مختلفة من القوائم وتخصيصها وإدارتها ، بما في ذلك القوائم ذات التعداد النقطي والقوائم المرقمة والقوائم متعددة المستويات. ستتعلم أيضًا كيفية إضافة العناصر وتنسيق القوائم وتغيير المظهر والمسافة البادئة والعمليات المتقدمة الأخرى. هذا المورد ضروري للمطورين الذين يريدون أتمتة إنشاء وإدارة القوائم في مستندات Word الخاصة بهم باستخدام Aspose.Words for .NET.
+Lavorare con gli elenchi è una risorsa completa che ti guida attraverso l'utilizzo degli elenchi nei documenti di Word utilizzando la libreria Aspose.Words per .NET. I tutorial forniscono spiegazioni dettagliate, codice sorgente completo ed esempi pratici per creare, personalizzare e gestire diversi tipi di elenchi, inclusi elenchi puntati, elenchi numerati ed elenchi multilivello. Imparerai anche come aggiungere elementi, formattare elenchi, modificare l'aspetto e il rientro e altre operazioni avanzate. Questa risorsa è essenziale per gli sviluppatori che desiderano automatizzare la creazione e la gestione degli elenchi nei propri documenti Word utilizzando Aspose.Words per .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [قائمة إعادة التشغيل في كل قسم](./restart-list-at-each-section/)  | تعرف على كيفية إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words for .NET. |
-| [حدد مستوى القائمة](./specify-list-level/) | تعرف على كيفية تحديد مستوى القائمة في مستند Word باستخدام Aspose.Words for .NET. |
-| [أعد تشغيل رقم القائمة](./restart-list-number/) | تعرف على كيفية إعادة تعيين رقم قائمة في مستند Word باستخدام Aspose.Words for .NET. |
+| [Riavvia l'elenco in ogni sezione](./restart-list-at-each-section/)  | Scopri come reimpostare un elenco numerato in ogni sezione in un documento di Word con Aspose.Words per .NET. |
+| [Specifica livello elenco](./specify-list-level/) | Scopri come specificare il livello di elenco in un documento di Word con Aspose.Words per .NET. |
+| [Riavvia il numero dell'elenco](./restart-list-number/) | Scopri come reimpostare il numero di un elenco in un documento di Word con Aspose.Words per .NET. |

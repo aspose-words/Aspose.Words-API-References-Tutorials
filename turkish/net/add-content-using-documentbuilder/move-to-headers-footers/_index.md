@@ -1,40 +1,40 @@
 ---
-title: الانتقال إلى تذييلات الرؤوس
-linktitle: الانتقال إلى تذييلات الرؤوس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للتنقل وتعديل الرؤوس والتذييلات في مستندات Word باستخدام هذا الدليل التفصيلي.
+title: Üstbilgilere Taşı Altbilgiler
+linktitle: Üstbilgilere Taşı Altbilgiler
+second_title: Aspose.Words for .NET API Referansı
+description: Bu adım adım kılavuz ile Word belgelerinde üst bilgiler ve alt bilgilerde gezinmek ve bunları değiştirmek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Headers Footers في Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تتيح للمطورين إنشاء مستندات Word وتعديلها وتحويلها برمجيًا. تتيح لنا ميزة Move To Headers / Footers التنقل إلى رؤوس وتذييلات مختلفة داخل المستند وإضافة محتوى إليها.
+Bu örnekte, Aspose.Words for .NET'in Üst Bilgilere Alt Bilgilere Taşı özelliğini inceleyeceğiz. Aspose.Words, geliştiricilerin Word belgelerini program aracılığıyla oluşturmasına, değiştirmesine ve dönüştürmesine olanak sağlayan güçlü bir belge işleme kitaplığıdır. Üstbilgilere/Altbilgilere Taşı özelliği, bir belge içindeki farklı üstbilgilere ve altbilgilere gitmemizi ve bunlara içerik eklememizi sağlar.
 
-دعنا ننتقل إلى الكود المصدري خطوة بخطوة لفهم كيفية استخدام ميزة Move To Headers / Footers باستخدام Aspose.Words for .NET.
+Aspose.Words for .NET kullanarak Üstbilgilere/Altbilgilere Taşı özelliğinin nasıl kullanılacağını anlamak için kaynak kodunu adım adım inceleyelim.
 
 
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## 1. Adım: Belge ve belge oluşturucuyu başlatma
 
-أولاً ، قم بتهيئة كائنات Document و DocumentBuilder:
+Önce Document ve DocumentBuilder nesnelerini başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الرؤوس والتذييلات
+## 2. Adım: Üst bilgileri ve alt bilgileri yapılandırma
 
-حدد إعدادات الرأس / التذييل للمستند. في هذا المثال ، قمنا بتعيين الرؤوس والتذييلات لتكون مختلفة للصفحة الأولى وللصفحات الفردية / الزوجية:
+Belge için üstbilgi/altbilgi ayarlarını belirtin. Bu örnekte, üst bilgileri ve alt bilgileri ilk sayfa ve tek/çift sayfalar için farklı olacak şekilde ayarladık:
 
 ```csharp
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 ```
 
-## الخطوة 3: إنشاء رؤوس الصفحات المختلفة
+## 3. Adım: Farklı sayfalar için başlıklar oluşturma
 
-انتقل إلى كل نوع من أنواع العناوين وأضف محتوى إليها. في هذا المثال ، نقوم بإنشاء رؤوس للصفحة الأولى وحتى الصفحات وجميع الصفحات الأخرى:
+Her başlık türüne gidin ve bunlara içerik ekleyin. Bu örnekte, ilk sayfa, çift sayfalar ve diğer tüm sayfalar için başlıklar oluşturuyoruz:
 
 ```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
@@ -47,38 +47,38 @@ builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 builder.Write("Header for all other pages");
 ```
 
-## الخطوة 4: إنشاء صفحات في المستند
-أضف محتوى إلى المستند لإنشاء صفحات متعددة. على سبيل المثال:
+## 4. Adım: Belgede sayfalar oluşturma
+Birden çok sayfa oluşturmak için belgeye içerik ekleyin. Örneğin:
 
 ```csharp
-// قم بإنشاء صفحتين في المستند.
+// Belgede iki sayfa oluşturun.
 builder.MoveToSection(0);
 builder.Writeln("Page1");
 builder.InsertBreak(BreakType.PageBreak);
 builder.Writeln("Page2");
 ```
-## الخطوة 5: حفظ المستند
+## 5. Adım: Belgeyi kaydetme
 
-احفظ المستند المعدل في المكان المطلوب:
+Değiştirilen belgeyi istediğiniz bir konuma kaydedin:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```
 
-تأكد من تحديد مسار الملف المناسب وتنسيقه (على سبيل المثال ، DOCX).
+Uygun dosya yolunu ve biçimini (ör. DOCX) belirttiğinizden emin olun.
 
-### مثال على شفرة المصدر لـ Move To Headers / Footers باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Üst Bilgilere/Alt Bilgilere Taşı için örnek kaynak kodu
 
 ```csharp
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// حدد أننا نريد اختلاف الرؤوس والتذييلات للصفحات الأولى والزوجية والفردية.
+	// İlk, çift ve tek sayfalar için farklı üstbilgiler ve altbilgiler istediğimizi belirtin.
 	builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 	builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
-	// قم بإنشاء الرؤوس.
+	// Başlıkları oluşturun.
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
 	builder.Write("Header for the first page");
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
@@ -86,7 +86,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.doc
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 	builder.Write("Header for all other pages");
 
-	// قم بإنشاء صفحتين في المستند.
+	// Belgede iki sayfa oluşturun.
 	builder.MoveToSection(0);
 	builder.Writeln("Page1");
 	builder.InsertBreak(BreakType.PageBreak);

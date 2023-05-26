@@ -1,29 +1,29 @@
 ---
-title: أدخل فاصل
-linktitle: أدخل فاصل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج فواصل الصفحات في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Insert Break
+linktitle: Insert Break
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar sidbrytningar i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/insert-break/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج فواصل الصفحات في مستند Word باستخدام طريقة InsertBreak في Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من التحكم في فواصل الصفحات داخل المستند الخاص بك.
+det här omfattande exemplet kommer du att lära dig hur du infogar sidbrytningar i ett Word-dokument med metoden InsertBreak i Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna kontrollera sidbrytningar i ditt dokument.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Förutsättningar
+Innan vi börjar, se till att du har följande förutsättningar:
+- Aspose.Words för .NET-biblioteket installerat på ditt system.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Steg 1: Skapa ett nytt dokument och DocumentBuilder
+För att börja, skapa ett nytt dokument med klassen Document och initiera ett DocumentBuilder-objekt:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل المحتوى وفواصل الصفحات
-بعد ذلك ، استخدم طريقة Writeln لفئة DocumentBuilder لإضافة محتوى إلى المستند. لإدراج فاصل صفحات ، استخدم الأسلوب InsertBreak مع المعلمة BreakType.PageBreak:
+## Steg 2: Infoga innehåll och sidbrytningar
+Använd sedan Writeln-metoden i klassen DocumentBuilder för att lägga till innehåll i dokumentet. För att infoga en sidbrytning, använd metoden InsertBreak med parametern BreakType.PageBreak:
 
 ```csharp
 builder.Writeln("This is page 1.");
@@ -35,15 +35,15 @@ builder.InsertBreak(BreakType.PageBreak);
 builder.Writeln("This is page 3.");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج المحتوى وفواصل الصفحات ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Steg 3: Spara dokumentet
+När du har infogat innehållet och sidbrytningarna sparar du dokumentet i en fil med hjälp av Spara-metoden för klassen Document:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-### مثال على كود المصدر لإدراج استراحة باستخدام Aspose.Words for .NET
-فيما يلي شفرة المصدر الكاملة لإدخال فواصل الصفحات باستخدام Aspose.Words for .NET:
+### Exempel på källkod för Insert Break med Aspose.Words för .NET
+Här är den fullständiga källkoden för att infoga sidbrytningar med Aspose.Words för .NET:
 
 ```csharp
 
@@ -62,8 +62,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 			
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Kom ihåg att justera koden efter dina specifika krav och utöka den med ytterligare funktionalitet efter behov.
 
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج فواصل الصفحات في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن التحكم في ترقيم الصفحات وتخطيط المستند عن طريق إدراج فواصل الصفحات في المواضع المطلوبة.
+## Slutsats
+Grattis! Du har framgångsrikt lärt dig hur man infogar sidbrytningar i ett Word-dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide och använda den medföljande källkoden kan du nu kontrollera sidnumreringen och layouten för ditt dokument genom att infoga sidbrytningar på önskade positioner.

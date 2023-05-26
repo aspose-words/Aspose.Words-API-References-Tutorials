@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM
-linktitle: أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل كتلة عنوان دمج المراسلات في مستندات Word باستخدام Aspose.Words for .NET.
+title: Insertar campo de bloque de dirección de combinación de correspondencia usando DOM
+linktitle: Insertar campo de bloque de dirección de combinación de correspondencia usando DOM
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a insertar un campo de bloque de dirección de combinación de correspondencia en sus documentos de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/insert-mail-merge-address-block-field-using-dom/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج حقل كتلة عنوان دمج المراسلات" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación, que utiliza la función "Insertar campo de bloque de dirección de combinación de correspondencia" de Aspose.Words para .NET. Asegúrese de seguir cada paso cuidadosamente para obtener los resultados deseados.
 
-## الخطوة 1: إعداد دليل المستند
+## Paso 1: Configuración del directorio de documentos
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+En el código provisto, debe especificar el directorio de sus documentos. Reemplace el valor "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## Paso 2: Crear el Documento y DocumentBuilder
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Comenzamos creando un nuevo documento e inicializando un DocumentBuilder.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تحريك المؤشر إلى الفقرة
+## Paso 3: mover el cursor al párrafo
 
- نحن نستخدم برنامج DocumentBuilder`MoveTo()` طريقة لتحريك المؤشر إلى الفقرة حيث نريد إدراج حقل كتلة عنوان دمج المراسلات.
+ Usamos el DocumentBuilder`MoveTo()` para mover el cursor al párrafo donde queremos insertar el campo de bloque de dirección de combinación de correspondencia.
 
 ```csharp
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 builder. MoveTo(para);
 ```
 
-## الخطوة 4: إدراج حقل كتلة عنوان دمج المراسلات
+## Paso 4: Inserción del campo de bloque de dirección de combinación de correspondencia
 
- نحن نستخدم برنامج DocumentBuilder`InsertField()` طريقة لإدراج حقل كتلة عنوان دمج المراسلات في الفقرة.
+ Usamos el DocumentBuilder`InsertField()` para insertar un campo de bloque de dirección de combinación de correspondencia en el párrafo.
 
 ```csharp
 FieldAddressBlock field = (FieldAddressBlock)builder.InsertField(FieldType.FieldAddressBlock, false);
 ```
 
-نقوم بعد ذلك بتكوين خصائص حقل كتلة العنوان لتحديد الخيارات المناسبة ، مثل تضمين اسم البلد / المنطقة ، وتنسيق العنوان وفقًا للبلد / المنطقة ، وأسماء البلد / المنطقة المستبعدة ، وتنسيق الاسم والعنوان ، ومعرف اللغة.
+Luego configuramos las propiedades del campo de bloque de direcciones especificando las opciones apropiadas, como incluir el nombre del país/región, formatear la dirección según el país/región, excluir los nombres de países/regiones, formato de nombre y dirección e identificador de idioma.
 
 ```csharp
 field.IncludeCountryOrRegionName = "1";
@@ -54,13 +54,13 @@ field.NameAndAddressFormat = "Test3";
 field.LanguageId = "Test 4";
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Finalmente, llamamos a la`Update()` método para actualizar el campo.
 
 ```csharp
 field. Update();
 ```
 
-### نموذج لشفرة المصدر لإدخال حقل كتلة عنوان دمج المراسلات مع Aspose.Words for .NET
+### Ejemplo de código fuente para insertar un campo de bloque de dirección de combinación de correspondencia con Aspose.Words para .NET
 
 ```csharp
 Document doc = new Document();
@@ -70,24 +70,24 @@ Paragraph para = (Paragraph) doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
 builder. MoveTo(para);
 
-// نريد إدراج كتلة عنوان لدمج البريد مثل هذا:
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3 \\ l \ "Test 4 \"}
+// Queremos insertar un bloque de dirección de combinación de correspondencia como este:
+// { BLOQUEDIRECCIÓN \\c 1 \\d \\e Prueba2 \\f Prueba3 \\l \"Prueba 4\" }
 
 FieldAddressBlock field = (FieldAddressBlock) builder.InsertField(FieldType.FieldAddressBlock, false);
 
-// {ADDRESSBLOCK \\ c 1 "}
+// { BLOQUEDIRECCIONES \\c 1" }
 field.IncludeCountryOrRegionName = "1";
 
-// {ADDRESSBLOCK \\ c 1 \\ d "}
+// { BLOQUEDIRECCIONES \\c 1 \\d" }
 field.FormatAddressOnCountryOrRegion = true;
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2}
+// { BLOQUEDIRECCIONES \\c 1 \\d \\e Prueba2 }
 field.ExcludedCountryOrRegionName = "Test2";
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3}
+// { BLOQUEDIRECCIONES \\c 1 \\d \\e Prueba2 \\f Prueba3 }
 field.NameAndAddressFormat = "Test3";
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3 \\ l \ "Test 4 \"}
+// { BLOQUEDIRECCIÓN \\c 1 \\d \\e Prueba2 \\f Prueba3 \\l \"Prueba 4\" }
 field.LanguageId = "Test 4";
 
 field. Update();

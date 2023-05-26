@@ -1,54 +1,54 @@
 ---
-title: مسح التحكم في المحتويات
-linktitle: مسح التحكم في المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية مسح محتويات عنصر تحكم في مستند Word باستخدام Aspose.Words for .NET.
+title: İçerik Kontrolünü Temizle
+linktitle: İçerik Kontrolünü Temizle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki kontrolün içeriğini nasıl temizleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/clear-contents-control/
 ---
 
-يوضح هذا البرنامج التعليمي كيفية مسح محتويات أداة معاملة خاصة في مستند Word باستخدام Aspose.Words for .NET. يؤدي مسح محتويات أداة معاملة خاصة إلى إزالة أي نص أو عقد فرعية داخل عنصر التحكم في المحتوى.
+Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesindeki bir SDT'nin içeriğinin nasıl temizleneceğini gösterir. Bir SDT'nin içeriğinin temizlenmesi, içerik denetimi içindeki tüm metinleri veya alt düğümleri kaldırır.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Önkoşullar
+Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words for .NET kitaplığı yüklendi.
+- Temel C# bilgisi ve Word belgeleriyle çalışma.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## 1. Adım: Belge Dizinini kurun
+ Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند واحصل على StructuredDocumentTag
- قم بتحميل مستند Word باستخدام ملف`Document` مُنشئ ، تمرير المسار إلى المستند كمعامل. ثم ، استرجع ملف`StructuredDocumentTag` من الوثيقة. في هذا المثال ، نفترض أن المعاملة الخاصة والتفضيلية هي العقدة الفرعية الأولى في المستند.
+## 2. Adım: Belgeyi Yükleyin ve StructuredDocumentTag'i Alın
+ kullanarak Word belgesini yükleyin.`Document` yapıcı, belgenin yolunu bir parametre olarak iletir. Ardından, istenen`StructuredDocumentTag` belgeden. Bu örnekte, SDT'nin belgedeki ilk alt düğüm olduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
-## الخطوة 3: امسح محتويات StructuredDocumentTag
- امسح محتويات SDT باستخدام ملف`Clear` طريقة. يؤدي هذا إلى إزالة أي نص أو عقد فرعية داخل عنصر التحكم في المحتوى.
+## 3. Adım: StructuredDocumentTag'in İçeriğini Temizleyin
+ kullanarak SDT'nin içeriğini temizleyin.`Clear` yöntem. Bu, içerik denetimi içindeki tüm metinleri veya alt düğümleri kaldırır.
 
 ```csharp
 sdt.Clear();
 ```
 
-## الخطوة 4: احفظ المستند
-احفظ المستند المعدل باستخدام ملف`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.ClearContentsControl.doc".
+## 4. Adım: Belgeyi Kaydedin
+Değiştirilen belgeyi şunu kullanarak kaydedin:`Save` yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.ClearContentsControl.doc" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 ```
 
-### مثال على شفرة المصدر لمسح التحكم في المحتويات باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Clear Contents Control için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -57,4 +57,4 @@ doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 	doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 ```
 
-هذا كل شيء! لقد نجحت في مسح محتويات StructuredDocumentTag في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenizdeki bir StructuredDocumentTag içeriğini başarıyla temizlediniz.

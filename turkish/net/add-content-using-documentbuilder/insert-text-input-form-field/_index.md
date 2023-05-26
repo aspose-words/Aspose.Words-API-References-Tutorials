@@ -1,36 +1,36 @@
 ---
-title: أدخل حقل نموذج إدخال النص
-linktitle: أدخل حقل نموذج إدخال النص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET لإدراج حقل نموذج إدخال النص في مستندات Word باستخدام هذا الدليل المفصل خطوة بخطوة.
+title: Metin Giriş Formu Alanı Ekle
+linktitle: Metin Giriş Formu Alanı Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Bu adım adım kılavuz ile Word belgelerine metin giriş formu alanı eklemek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-text-input-form-field/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سنستكشف كيفية استخدام ميزة إدراج حقل نموذج إدخال نص في Aspose.Words for .NET لإضافة حقول نموذج إدخال النص ومعالجتها في مستندات Word باستخدام كود مصدر C #. تسمح حقول نموذج إدخال النص للمستخدمين بإدخال نص مخصص داخل المستند ، مما يجعلها مثالية لإنشاء نماذج واستبيانات تفاعلية. باتباع الإرشادات أدناه ، ستتمكن من إدراج حقول نموذج إدخال النص وتخصيصها بسهولة في مستنداتك. هيا بنا نبدأ!
+Bu adım adım kılavuzda, C# kaynak kodunu kullanarak Word belgelerinize metin giriş formu alanları eklemek ve değiştirmek için Aspose.Words for .NET'teki Metin Giriş Formu Alanı Ekle özelliğinin nasıl kullanılacağını keşfedeceğiz. Metin giriş formu alanları, kullanıcıların bir belgeye özel metin girmesine izin vererek onları etkileşimli formlar ve anketler oluşturmak için ideal hale getirir. Aşağıdaki talimatları izleyerek metin giriş formu alanlarını belgelerinize zahmetsizce ekleyebilir ve özelleştirebilirsiniz. Başlayalım!
 
-## مقدمة عن ميزة "إدراج حقل نموذج إدخال النص" في Aspose.Words for .NET
+## Aspose.Words for .NET'te Metin Giriş Formu Alanı Ekle özelliğine giriş
 
-تتيح لك ميزة "إدراج حقل نموذج إدخال النص" في Aspose.Words for .NET إضافة حقول نموذج إدخال نص برمجيًا إلى مستندات Word الخاصة بك. توفر حقول النموذج هذه عنصرًا تفاعليًا حيث يمكن للمستخدمين إدخال نص أو بيانات مخصصة.
+Aspose.Words for .NET'teki Metin Giriş Formu Alanı Ekle özelliği, Word belgelerinize programlı olarak metin giriş formu alanları eklemenizi sağlar. Bu form alanları, kullanıcıların özel metin veya veri girebileceği etkileşimli bir öğe sağlar.
 
-## فهم متطلبات استخدام الميزة
+## Özelliği kullanmak için gereklilikleri anlama
 
-قبل متابعة التنفيذ ، تأكد من استيفاء المتطلبات التالية:
+Uygulamaya devam etmeden önce aşağıdaki gereksinimleri karşıladığınızdan emin olun:
 
-1. تم تثبيت Aspose.Words for .NET library في مشروعك.
-2. المعرفة الأساسية بلغة البرمجة C #.
-3. مستند Word موجود أو مستند جديد لإدراج حقل نموذج إدخال النص.
+1. Aspose.Words for .NET kitaplığı projenizde yüklü.
+2. C# programlama dili hakkında temel bilgi.
+3. Metin giriş formu alanına mevcut bir Word belgesi veya yeni bir belge ekleyin.
 
-تأكد من توفر هذه المتطلبات الأساسية للمضي قدمًا بسلاسة.
+Sorunsuz ilerlemek için bu ön koşullara sahip olduğunuzdan emin olun.
 
-## دليل تفصيلي خطوة بخطوة لتنفيذ إدراج حقل نموذج إدخال نص باستخدام كود مصدر C #
+## C# kaynak kodunu kullanarak Metin Giriş Formu Alanı Ekle'yi uygulamaya yönelik adım adım kılavuz
 
-اتبع الخطوات أدناه لتنفيذ ميزة إدراج حقل نموذج إدخال النص باستخدام كود مصدر C # المقدم:
+Sağlanan C# kaynak kodunu kullanarak Metin Giriş Formu Alanı Ekle özelliğini uygulamak için aşağıdaki adımları izleyin:
 
-### الخطوة 1: تهيئة مستند إنشاء المستندات
+### 1. Adım: Belge ve belge oluşturucuyu başlatma
 
-للبدء ، قم بتهيئة المستند ومنشئ المستندات. يُعد منشئ المستندات أداة قوية توفرها Aspose.Words for .NET والتي تتيح لنا إنشاء مستندات Word ومعالجتها برمجيًا. استخدم مقتطف الشفرة التالي:
+Başlamak için belgeyi ve belge oluşturucuyu başlatın. Belge oluşturucu, Aspose.Words for .NET tarafından sağlanan ve Word belgelerini programlı olarak oluşturmamıza ve değiştirmemize izin veren güçlü bir araçtır. Aşağıdaki kod parçacığını kullanın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,31 +39,31 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-### الخطوة 2: إدخال حقل نموذج إدخال النص
+### 2. Adım: Metin Giriş Formu Alanını Ekleme
 
- بعد ذلك ، سنقوم بإدخال حقل نموذج إدخال النص في المستند باستخدام الامتداد`InsertTextInput` طريقة. تقبل هذه الطريقة معلمات مختلفة ، بما في ذلك اسم حقل النموذج ونوع حقل النموذج (في هذه الحالة ،`TextFormFieldType.Regular`والقيمة الافتراضية والحد الأقصى للطول. هذا مثال:
+ Ardından, metin giriş formu alanını kullanarak belgeye ekleyeceğiz.`InsertTextInput` yöntem. Bu yöntem, form alanının adı, form alanının türü (bu durumda,`TextFormFieldType.Regular`), varsayılan değer ve maksimum uzunluk. İşte bir örnek:
 
 ```csharp
 builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
 ```
 
-سوف يقوم الكود أعلاه بإدراج حقل نموذج إدخال نص بالاسم "TextInput" ، والقيمة الافتراضية "Hello" ، ولا يوجد حد أقصى للطول.
+Yukarıdaki kod, "TextInput" adında, varsayılan "Merhaba" değeri olan ve maksimum uzunluk kısıtlaması olmayan bir metin giriş formu alanı ekleyecektir.
 
-### الخطوة 3: حفظ المستند
+### 3. Adım: Belgeyi kaydetme
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Metin giriş formu alanını ekledikten sonra, belgeyi istenen konuma kaydedin.`Save` yöntem. Uygun dosya yolunu sağladığınızdan emin olun:
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```
 
-سيحفظ هذا الرمز المستند مع حقل نموذج إدخال النص المدرج في الموقع المحدد.
+Bu kod, belirtilen konuma eklenen metin giriş formu alanıyla birlikte belgeyi kaydedecektir.
 
-### مثال على شفرة المصدر لإدراج حقل نموذج إدخال نص باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Metin Giriş Formu Alanı Ekleme için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	
 	Document doc = new Document();

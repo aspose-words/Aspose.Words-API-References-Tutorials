@@ -1,41 +1,41 @@
 ---
-title: البرمجة بالجداول
-linktitle: البرمجة بالجداول
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على جدول الاحتواء التلقائي للمحتويات وجدول الاحتواء التلقائي لعروض الأعمدة الثابتة وجدول الاحتواء التلقائي لعرض الصفحة وجدول الإنشاء من جدول البيانات واستيراد الجدول من
+title: Programmation avec des tableaux
+linktitle: Programmation avec des tableaux
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent un ajustement automatique du tableau au contenu, un ajustement automatique du tableau à des largeurs de colonne fixes, un ajustement automatique du tableau à la largeur de la page, la création d'un tableau à partir d'un tableau de données, l'importation d'un tableau à partir de
 type: docs
 weight: 1590
 url: /fr/net/programming-with-tables/
 ---
-سوف ترشدك برامج Aspose.Words for .NET التعليمية حول البرمجة باستخدام الجداول إلى مختلف الميزات والتقنيات لمعالجة الجداول في مستندات Word الخاصة بك. ستتعلم كيفية إنشاء الجداول وتعديلها وتنسيقها ، وكذلك كيفية إضافة الخلايا والصفوف والأعمدة ديناميكيًا. ستزودك هذه البرامج التعليمية بإرشادات تفصيلية خطوة بخطوة ، وأمثلة واضحة للكود ، وشروحات لمساعدتك على إتقان معالجة الجدول في Aspose.Words for .NET.
+Les didacticiels Aspose.Words pour .NET sur la programmation avec des tableaux vous guideront à travers les différentes fonctionnalités et techniques de manipulation des tableaux dans vos documents Word. Vous apprendrez à créer, modifier et mettre en forme des tableaux, ainsi qu'à ajouter dynamiquement des cellules, des lignes et des colonnes. Ces didacticiels vous fourniront des instructions détaillées étape par étape, des exemples de code clairs et des explications pour vous aider à maîtriser la manipulation des tables dans Aspose.Words pour .NET.
 
-سواء كنت تريد تعديل تخطيط الجدول ، أو دمج الخلايا ، أو إضافة عناوين الأعمدة ، أو فرز بيانات الجدول ، ستوضح لك البرامج التعليمية كيفية إنجاز هذه المهام بكفاءة باستخدام Aspose.Words for .NET. ستتعلم أيضًا كيفية استخراج بيانات الجدول وتحديثها وإضافة حدود وتطبيق أنماط مخصصة على الخلايا. ستمنحك البرامج التعليمية فهمًا عميقًا للتلاعب بالجدول ، مما يسمح لك بإنشاء مستندات Word احترافية ومنظمة بشكل جيد.
+Que vous souhaitiez ajuster la disposition du tableau, fusionner des cellules, ajouter des en-têtes de colonne ou trier des données de tableau, les didacticiels vous montreront comment accomplir ces tâches efficacement avec Aspose.Words pour .NET. Vous apprendrez également à extraire et à mettre à jour les données d'un tableau, à ajouter des bordures et à appliquer des styles personnalisés aux cellules. Les didacticiels vous donneront une compréhension approfondie de la manipulation des tableaux, vous permettant de créer des documents Word professionnels et bien structurés.
 
-باتباع هذه البرامج التعليمية ، ستتمكن من الاستفادة الكاملة من ميزات معالجة الجدول في Aspose.Words for .NET. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستمنحك هذه البرامج التعليمية أساسًا متينًا لإنشاء الجداول وتنسيقها وإدارتها في مستندات Word باستخدام Aspose.Words for .NET. ستتمكن من تحسين مهاراتك في البرمجة وتحسين سير عملك لإنشاء مستندات احترافية عالية الجودة.
+En suivant ces tutoriels, vous serez en mesure d'exploiter pleinement les fonctionnalités de manipulation de table d'Aspose.Words pour .NET. Que vous soyez un développeur débutant ou expérimenté, ces didacticiels vous donneront une base solide pour créer, formater et gérer des tableaux dans vos documents Word à l'aide d'Aspose.Words pour .NET. Vous pourrez améliorer vos compétences en programmation et optimiser votre flux de travail pour créer des documents professionnels de haute qualité.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [احتواء تلقائي للجدول مع المحتويات](./auto-fit-table-to-contents/) | تعرف على كيفية ملاءمة الجدول تلقائيًا لمحتوياته في مستند Word باستخدام Aspose.Words for .NET. |
-| [استنساخ الجدول الكامل](./clone-complete-table/) | تعرف على كيفية استنساخ جدول كامل في مستند Word باستخدام Aspose.Words for .NET. |
-| [إيجاد الفهرس](./finding-index/) | تعرف على كيفية العثور على فهارس الجدول والصف والخلية في مستند Word باستخدام Aspose.Words for .NET. |
-| [أدخل الجدول مباشرة](./insert-table-directly/) | تعرف على كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET. |
-| [إدراج جدول من Html](./insert-table-from-html/) | تعرف على كيفية إدراج جدول من HTML في مستند Word باستخدام Aspose.Words for .NET. |
-| [إنشاء جدول بسيط](./create-simple-table/) | تعرف على كيفية إنشاء جدول بسيط في مستند Word باستخدام Aspose.Words for .NET. |
-| [جدول منسق](./formatted-table/) | تعرف على كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET. |
-| [جدول متداخل](./nested-table/) | تعرف على كيفية إنشاء جدول متداخل في مستند Word باستخدام Aspose.Words for .NET. |
-| [ضم الصفوف](./combine-rows/) | تعرف على كيفية دمج صفوف الجدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [انقسام الجدول](./split-table/) | تعرف على كيفية تقسيم جدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [تنسيق الصف تعطيل الفاصل عبر الصفحات](./row-format-disable-break-across-pages/) | تعرف على كيفية تعطيل فاصل الأسطر لجدول عبر صفحات متعددة في مستند Word باستخدام Aspose.Words for .NET. |
-| [حافظ على الجدول معًا](./keep-table-together/) | تعرف على كيفية تجميع الجدول معًا في مستند Word باستخدام Aspose.Words for .NET. |
-| [دمج عمودي](./vertical-merge/) | تعرف على كيفية الدمج الرأسي للخلايا في جدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [دمج أفقي](./horizontal-merge/) | تعرف على كيفية دمج الخلايا أفقيًا في جدول Word باستخدام Aspose.Words for .NET. |
-| [تحويل إلى خلايا مدمجة أفقيًا](./convert-to-horizontally-merged-cells/) | تعرف على كيفية تحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word باستخدام Aspose.Words for .NET. |
-| [كرر الصفوف في الصفحات اللاحقة](./repeat-rows-on-subsequent-pages/) | تعرف على كيفية تكرار صفوف الجدول في الصفحات اللاحقة في مستند Word باستخدام Aspose.Words for .NET. |
-| [احتواء تلقائي لعرض الصفحة](./auto-fit-to-page-width/) | تعرف على كيفية ملاءمة جدول تلقائيًا لعرض الصفحة في مستند Word باستخدام Aspose.Words for .NET. |
-| [إعدادات العرض المفضلة](./preferred-width-settings/) | تعرف على كيفية تعيين عروض خلية الجدول المفضلة في مستند Word باستخدام Aspose.Words for .NET. |
-| [استرجاع نوع العرض المفضل](./retrieve-preferred-width-type/) | تعرف على كيفية استرداد النوع وقيمة العرض المفضلة لخلية في جدول Word باستخدام Aspose.Words for .NET. |
-| [الحصول على الجدول الموقف](./get-table-position/) | تعرف على كيفية الحصول على موضع الجدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [الحصول على موقف الجدول العائم](./get-floating-table-position/) | تعرف على كيفية الحصول على موضع الجداول العائمة في مستند Word باستخدام Aspose.Words for .NET. |
-| [موقف الجدول العائم](./floating-table-position/) | تعرف على كيفية وضع جدول في موضع متحرك في مستند Word باستخدام Aspose.Words for .NET. |
-| [تعيين الوضع الأفقي أو الرأسي النسبي](./set-relative-horizontal-or-vertical-position/) | تعرف على كيفية تعيين الوضع الأفقي أو الرأسي النسبي للجدول في مستند Word باستخدام Aspose.Words for .NET. |
+| [Ajuster automatiquement le tableau au contenu](./auto-fit-table-to-contents/) | Découvrez comment ajuster automatiquement un tableau à son contenu dans un document Word à l'aide d'Aspose.Words pour .NET. |
+| [Cloner la table complète](./clone-complete-table/) | Apprenez à cloner un tableau entier dans un document Word avec Aspose.Words pour .NET. |
+| [Trouver l'index](./finding-index/) | Apprenez à trouver des index de table, de ligne et de cellule dans un document Word avec Aspose.Words pour .NET. |
+| [Insérer le tableau directement](./insert-table-directly/) | Apprenez à insérer un tableau directement dans un document Word avec Aspose.Words pour .NET. |
+| [Insérer un tableau à partir de HTML](./insert-table-from-html/) | Apprenez à insérer un tableau HTML dans un document Word avec Aspose.Words pour .NET. |
+| [Créer un tableau simple](./create-simple-table/) | Apprenez à créer un tableau simple dans un document Word avec Aspose.Words pour .NET. |
+| [Tableau formaté](./formatted-table/) | Apprenez à créer un tableau formaté dans un document Word avec Aspose.Words pour .NET. |
+| [Tableau imbriqué](./nested-table/) | Apprenez à créer un tableau imbriqué dans un document Word avec Aspose.Words pour .NET. |
+| [Combiner les lignes](./combine-rows/) | Apprenez à combiner des lignes de tableau dans un document Word avec Aspose.Words pour .NET. |
+| [Tableau fractionné](./split-table/) | Apprenez à diviser un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. |
+| [Format de ligne Désactiver le saut sur les pages](./row-format-disable-break-across-pages/) | Découvrez comment désactiver le saut de ligne pour un tableau sur plusieurs pages dans un document Word avec Aspose.Words pour .NET. |
+| [Gardez la table ensemble](./keep-table-together/) | Apprenez à maintenir un tableau ensemble dans un document Word avec Aspose.Words pour .NET. |
+| [Fusion verticale](./vertical-merge/) | Apprenez à fusionner verticalement des cellules dans un tableau dans un document Word à l'aide de Aspose.Words pour .NET. |
+| [Fusion horizontale](./horizontal-merge/) | Apprenez à fusionner horizontalement des cellules dans un tableau Word avec Aspose.Words pour .NET. |
+| [Convertir en cellules fusionnées horizontalement](./convert-to-horizontally-merged-cells/) | Apprenez à convertir des cellules de tableau en cellules fusionnées horizontalement dans un document Word avec Aspose.Words pour .NET. |
+| [Répéter les lignes sur les pages suivantes](./repeat-rows-on-subsequent-pages/) | Apprenez à répéter les lignes d'un tableau sur les pages suivantes d'un document Word avec Aspose.Words pour .NET. |
+| [Ajustement automatique à la largeur de la page](./auto-fit-to-page-width/) | Apprenez à ajuster automatiquement un tableau à la largeur de la page dans un document Word avec Aspose.Words pour .NET. |
+| [Paramètres de largeur préférés](./preferred-width-settings/) | Découvrez comment définir les largeurs de cellule de tableau préférées dans un document Word avec Aspose.Words pour .NET. |
+| [Récupérer le type de largeur préféré](./retrieve-preferred-width-type/) | Apprenez à récupérer le type et la valeur de largeur préférée d'une cellule dans un tableau Word avec Aspose.Words pour .NET. |
+| [Obtenir la position du tableau](./get-table-position/) | Apprenez à obtenir la position d'un tableau dans un document Word avec Aspose.Words pour .NET. |
+| [Obtenir la position de la table flottante](./get-floating-table-position/) | Apprenez à obtenir la position des tableaux flottants dans un document Word avec Aspose.Words pour .NET. |
+| [Position de la table flottante](./floating-table-position/) | Apprenez à positionner un tableau dans une position flottante dans un document Word avec Aspose.Words pour .NET. |
+| [Définir la position horizontale ou verticale relative](./set-relative-horizontal-or-vertical-position/) | Apprenez à définir la position horizontale ou verticale relative d'un tableau dans un document Word avec Aspose.Words pour .NET. |

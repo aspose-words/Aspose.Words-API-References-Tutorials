@@ -1,75 +1,75 @@
 ---
-title: ضم الصفوف
-linktitle: ضم الصفوف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية دمج صفوف الجدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Satırları Birleştir
+linktitle: Satırları Birleştir
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesindeki tablo satırlarını nasıl birleştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/combine-rows/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words for .NET لدمج صفوف الجداول في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من معالجة ودمج صفوف الجدول في مستندات Word الخاصة بك برمجيًا.
+Bu öğreticide, bir Word belgesindeki tablo satırlarını birleştirmek için Aspose.Words for .NET'i nasıl kullanacağımızı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki tablo satırlarını programlı olarak değiştirebilecek ve birleştirebileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة الثانية: تحميل المستند والوصول إلى الجداول
-لبدء العمل مع الجداول ، نحتاج إلى تحميل المستند الذي يحتوي عليها والوصول إليها. اتبع هذه الخطوات:
+## Adım 2: Belgeyi yükleme ve tablolara erişme
+Tablolarla çalışmaya başlamak için onları içeren belgeyi yüklememiz ve onlara erişmemiz gerekiyor. Bu adımları takip et:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Tables.docx");
 
-// الوصول إلى الجداول
+// Tablolara erişim
 Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
 Table secondTable = (Table)doc.GetChild(NodeType.Table, 1, true);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة 3: دمج صفوف الجدول
-بعد ذلك ، سنجمع صفوف الجدول الثاني في نهاية الجدول الأول. استخدم الكود التالي:
+## 3. Adım: Tablo satırlarını birleştirme
+Daha sonra ikinci tablonun satırlarını birinci tablonun sonuna birleştireceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
-// مزيج من صفوف الجدول
+// Tablo satırlarının kombinasyonu
 while (secondTable.HasChildNodes)
      firstTable.Rows.Add(secondTable.FirstRow);
 secondTable.Remove();
 ```
 
- هنا نستخدم ملف`while` loop للتكرار على جميع صفوف المصفوفة الثانية وإضافتها إلى نهاية المصفوفة الأولى باستخدام`Add` طريقة. بعد ذلك ، نقوم بإزالة الجدول الثاني من المستند باستخدام ملف`Remove` طريقة.
+ Burada bir`while` ikinci dizinin tüm satırlarını yinelemek ve bunları kullanarak ilk dizinin sonuna eklemek için döngü`Add` yöntem. Ardından, ikinci tabloyu kullanarak belgeden kaldırıyoruz.`Remove` yöntem.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع صفوف الجدول المدمجة. استخدم الكود التالي:
+## 4. Adım: Değiştirilen belgeyi kaydetme
+Son olarak, değiştirilmiş belgeyi birleştirilmiş tablo satırlarıyla kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
 
 ```csharp
-// احفظ المستند المعدل
+// Değiştirilen belgeyi kaydet
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### عينة من التعليمات البرمجية المصدر لـ Combine Rows باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Combine Rows için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
-	// سيتم إلحاق الصفوف من الجدول الثاني بنهاية الجدول الأول.
+	// İkinci tablodaki satırlar birinci tablonun sonuna eklenir.
 	Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
 	Table secondTable = (Table) doc.GetChild(NodeType.Table, 1, true);
-	// إلحاق كافة الصفوف من الجدول الحالي بالجداول التالية
-	// مع عدد الخلايا المختلفة والعروض يمكن ضمها في جدول واحد.
+	// Geçerli tablodaki tüm satırları sonraki tablolara ekle
+	// farklı hücre sayısı ve genişlikleri ile tek bir tabloda birleştirilebilir.
 	while (secondTable.HasChildNodes)
 		firstTable.Rows.Add(secondTable.FirstRow);
 	secondTable.Remove();
 	doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية دمج صفوف الجداول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك معالجة صفوف الجدول في مستندات Word برمجيًا. تتيح لك هذه الميزة دمج البيانات وتنظيمها في جدول بكفاءة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki tablo satırlarını nasıl birleştireceğimizi öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizdeki tablo satırlarını programlı olarak değiştirebilirsiniz. Bu özellik, verilerinizi bir tabloda verimli bir şekilde birleştirmenize ve düzenlemenize olanak tanır.

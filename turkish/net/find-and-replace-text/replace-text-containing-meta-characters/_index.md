@@ -1,32 +1,32 @@
 ---
-title: استبدل النص الذي يحتوي على أحرف وصفية
-linktitle: استبدل النص الذي يحتوي على أحرف وصفية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استبدال النص الذي يحتوي على أحرف أولية في مستندات Word باستخدام Aspose.Words for .NET.
+title: Meta Karakterler İçeren Metni Değiştir
+linktitle: Meta Karakterler İçeren Metni Değiştir
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerinde meta karakter içeren metinleri nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/replace-text-containing-meta-characters/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة استبدال النص الذي يحتوي على أحرف وصفية في Aspose.Words مكتبة .NET. تتيح لك هذه الميزة استبدال أجزاء من النص في مستند يحتوي على أحرف وصفية محددة.
+Bu makalede, Aspose.Words for .NET kitaplığında Meta Karakterler İçeren Metni Değiştir işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, belirli meta karakterleri içeren bir belgedeki metin bölümlerini değiştirmenize olanak tanır.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# dili hakkında temel bilgi.
+- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## 1. Adım: Yeni Belge Oluşturma
 
- قبل أن نبدأ في استخدام استبدال النص بأحرف أولية ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Meta karakter metin değiştirmeyi kullanmaya başlamadan önce Aspose.Words for .NET kullanarak yeni bir belge oluşturmamız gerekiyor. Bu, bir örneği başlatarak yapılabilir.`Document` nesne:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل النص في المستند
+## 2. Adım: Belgeye metin ekleyin
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نستخدم الامتداد`Writeln`طريقة لإدراج فقرات نصية متعددة في أقسام مختلفة:
+ Bir belgemiz olduğunda, bir metin kullanarak metin ekleyebiliriz.`DocumentBuilder` nesne. Örneğimizde,`Writeln`farklı bölümlere birden çok metin paragrafı ekleme yöntemi:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -39,9 +39,9 @@ builder.Writeln("Second section");
 builder.Writeln("1st paragraph");
 ```
 
-## الخطوة 3: تكوين خيارات البحث والاستبدال
+## 3. Adım: Bul ve Değiştir Seçeneklerini Yapılandırma
 
- سنقوم الآن بتكوين خيارات البحث والاستبدال باستخدام ملف`FindReplaceOptions` هدف. في مثالنا ، قمنا بتعيين محاذاة الفقرات المستبدلة إلى "توسيط":
+ Şimdi bul ve değiştir seçeneklerini bir a kullanarak yapılandıracağız.`FindReplaceOptions` nesne. Örneğimizde, değiştirilen paragrafların hizalamasını "Ortalanmış" olarak ayarladık:
 
 ```csharp
 FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
@@ -50,37 +50,37 @@ findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment
 .Center;
 ```
 
-## الخطوة 4: استبدال النص الذي يحتوي على أحرف أولية
+## 4. Adım: Meta Karakter İçeren Metni Değiştirme
 
- نحن نستخدم ال`Range.Replace` طريقة لإجراء استبدال النص الذي يحتوي على أحرف أولية. في مثالنا ، نستبدل كل تكرار لكلمة "قسم" متبوعًا بفاصل فقرة بالكلمة نفسها متبوعة بعدة شرطات وفاصل فقرة جديد:
+ biz kullanıyoruz`Range.Replace` Meta karakterleri içeren metnin değiştirilmesini gerçekleştirme yöntemi. Örneğimizde, "bölüm" kelimesinin geçtiği her bir paragraf sonunu aynı kelimeyle, ardından birkaç tire ve yeni bir paragraf sonu ile değiştiriyoruz:
 
 ```csharp
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 
-## الخطوة 5: استبدال علامة نصية مخصصة
+## 5. Adım: Özel bir metin etiketini değiştirme
 
- نستخدم أيضًا ملف`Range.Replace` طريقة لاستبدال العرف "{insert-section}"علامة نصية مع فاصل مقطعي. في مثالنا ، نستبدل"{insert-section}"مع & ب" لإدراج فاصل مقطعي:
+ biz de kullanıyoruz`Range.Replace` özel değiştirme yöntemi "{insert-section}" bölüm sonu içeren metin etiketi. Örneğimizde değiştiriyoruz "{insert-section}bir bölüm sonu eklemek için "&b" ile:
 
 ```csharp
 count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 ```
 
-## الخطوة 6: حفظ المستند المحرر
+## 6. Adım: Düzenlenen belgeyi kaydetme
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+ Son olarak, değiştirilmiş belgeyi kullanarak belirtilen bir dizine kaydediyoruz.`Save` yöntem:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 ```
 
-### مثال على شفرة المصدر لاستبدال النص الذي يحتوي على أحرف وصفية باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Meta Karakterler İçeren Metni Değiştirmek için örnek kaynak kodu
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح استخدام استبدال النص الذي يحتوي على أحرف أولية مع Aspose.Words for .NET:
+Aspose.Words for .NET ile metakarakterler içeren metin değişiminin kullanımını gösteren tam örnek kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -96,17 +96,17 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 	FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 	findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 
-	// ضاعف كل فاصل فقرة بعد كلمة "قسم" ، أضف نوعًا من التسطير واجعله في المنتصف.
+	// "Bölüm" kelimesinden sonra her paragraf sonunu ikiye katlayın, bir tür alt çizgi ekleyin ve ortalayın.
 	int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 
-	// إدراج فاصل مقطعي بدلاً من علامة نصية مخصصة.
+	// Özel metin etiketi yerine bölüm sonu ekleyin.
 	count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 
 	doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
   
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة استبدال النص الذي يحتوي على أحرف وصفية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص واستبدال نص يحتوي على أحرف أولية وحفظ المستند المعدل.
+Bu makalede, Aspose.Words for .NET'in Meta Karakterler İçeren Metni Değiştir özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belge oluşturmak, metin eklemek, meta karakterleri içeren metni değiştirmek ve değiştirilen belgeyi kaydetmek için adım adım bir kılavuz izledik.
 

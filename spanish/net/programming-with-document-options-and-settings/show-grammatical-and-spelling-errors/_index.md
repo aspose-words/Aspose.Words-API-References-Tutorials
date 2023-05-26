@@ -1,34 +1,34 @@
 ---
-title: إظهار الأخطاء النحوية والإملائية
-linktitle: إظهار الأخطاء النحوية والإملائية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتمكين عرض الأخطاء النحوية والإملائية في مستند باستخدام Aspose.Words for .NET.
+title: Mostrar errores gramaticales y ortográficos
+linktitle: Mostrar errores gramaticales y ortográficos
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para habilitar la visualización de errores gramaticales y ortográficos en un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-document-options-and-settings/show-grammatical-and-spelling-errors/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتمكين عرض الأخطاء النحوية والإملائية باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة عرض الأخطاء النحوية والإملائية في المستند.
+En este tutorial, lo guiaremos a través del código fuente de C# para habilitar la visualización de errores gramaticales y ortográficos con Aspose.Words para .NET. Esta característica le permite ver errores gramaticales y ortográficos en un documento.
 
-## الخطوة 1: إعداد المشروع
+## Paso 1: Configuración del proyecto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد عرض الأخطاء النحوية والإملائية له. استخدم الكود التالي لتحميل المستند:
+En este paso, cargaremos el documento de Word para el que queremos mostrar errores gramaticales y ortográficos. Use el siguiente código para cargar el documento:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Reemplazar`"YOUR DOCUMENTS DIRECTORY"` con la ruta real del directorio donde se encuentra su documento.
 
-## الخطوة 3: تفعيل عرض الخطأ
+## Paso 3: habilite la visualización de errores
 
-سنقوم الآن بتمكين عرض الأخطاء النحوية والإملائية في المستند. استخدم الكود التالي لتمكين عرض الأخطاء:
+Ahora habilitaremos la visualización de errores gramaticales y ortográficos en el documento. Use el siguiente código para habilitar la visualización de errores:
 
 ```csharp
 doc. ShowGrammaticalErrors = true;
@@ -37,13 +37,13 @@ doc. ShowSpellingErrors = true;
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ShowGrammaticalAndSpellingErrors.docx");
 ```
 
-يتيح هذا الرمز عرض الأخطاء النحوية (`ShowGrammaticalErrors`) وأخطاء إملائية (`ShowSpellingErrors`) في المستند.
+Este código permite la visualización de errores gramaticales (`ShowGrammaticalErrors`) y faltas de ortografía (`ShowSpellingErrors`) en el documento.
 
-### مثال على شفرة المصدر لإظهار الأخطاء النحوية والإملائية باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Mostrar errores gramaticales y ortográficos usando Aspose.Words para .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
@@ -54,6 +54,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ShowGrammaticalAndSpel
 
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Asegúrese de especificar la ruta correcta del documento en el`dataDir` variable.
 
-لقد تعلمت الآن كيفية تمكين عرض الأخطاء النحوية والإملائية في مستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تمكين هذه الميزة في مستنداتك الخاصة.
+Ahora ha aprendido cómo habilitar la visualización de errores gramaticales y ortográficos en un documento usando Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede habilitar fácilmente esta función en sus propios documentos.

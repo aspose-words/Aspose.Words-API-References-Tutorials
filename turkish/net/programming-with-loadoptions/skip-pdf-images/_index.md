@@ -1,52 +1,52 @@
 ---
-title: تخطي صور PDF
-linktitle: تخطي صور PDF
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل مستند PDF مع تخطي تحميل صور PDF باستخدام Aspose.Words for .NET.
+title: Pdf Resimleri Atla
+linktitle: Pdf Resimleri Atla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile PDF görüntülerini yüklemeyi atlayarak bir PDF belgesini nasıl yükleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/skip-pdf-images/
 ---
 
-عند العمل مع مستندات PDF في تطبيق C # ، قد يكون من الضروري تخطي تحميل صور PDF لأسباب تتعلق بالأداء أو إدارة مساحة التخزين. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تخطي تحميل صور PDF باستخدام خيارات تحميل PdfLoadOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري لـ .NET C # لتحميل مستند PDF عن طريق تخطي تحميل صور PDF باستخدام خيارات تحميل PdfLoadOptions.
+Bir C# uygulamasında PDF belgeleriyle çalışırken, performans veya depolama alanı yönetimi nedenleriyle PDF görüntülerini yüklemeyi atlamak gerekebilir. .NET için Aspose.Words kitaplığıyla, PdfLoadOptions yükleme seçeneklerini kullanarak PDF görüntülerini yüklemeyi kolayca atlayabilirsiniz. Bu adım adım kılavuzda, PdfLoadOptions yükleme seçeneklerini kullanarak PDF görüntülerinin yüklenmesini atlayarak bir PDF belgesi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, .NET dahil olmak üzere farklı platformlarda Word belgeleri oluşturmak, düzenlemek, dönüştürmek ve korumak için güçlü bir kitaplıktır. Belgeleri işlemek için metin ekleme, biçimlendirmeyi değiştirme, bölümler ekleme ve çok daha fazlası gibi birçok özellik sunar.
 
-## تكوين خيارات التحميل
+## Yükleme seçeneklerini yapılandırma
 
-الخطوة الأولى هي تكوين خيارات التحميل لوثيقة PDF الخاصة بنا. استخدم فئة PdfLoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى ضبط خاصية SkipPdfImages على true لتخطي تحميل صور PDF. هيريس كيفية القيام بذلك:
+İlk adım, PDF belgemiz için yükleme seçeneklerini yapılandırmaktır. Yükleme parametrelerini belirtmek için PdfLoadOptions sınıfını kullanın. Bizim durumumuzda, PDF görüntülerini yüklemeyi atlamak için SkipPdfImages özelliğini true olarak ayarlamamız gerekiyor. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 ```
 
-نقوم بإنشاء كائن PdfLoadOptions جديد وتعيين خاصية SkipPdfImages على true لتخطي تحميل صور PDF.
+Yeni bir PdfLoadOptions nesnesi oluşturuyoruz ve PDF görüntülerini yüklemeyi atlamak için SkipPdfImages özelliğini true olarak ayarlıyoruz.
 
-## قم بتحميل مستند PDF بتخطي صور PDF
+## PDF görüntülerini atlayarak PDF belgesi yükleyin
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل مستند PDF باستخدام فئة المستند وتحديد خيارات التحميل. هنا مثال :
+Yükleme seçeneklerini yapılandırdığımıza göre, Document sınıfını kullanarak PDF belgesini yükleyebilir ve yükleme seçeneklerini belirtebiliriz. İşte bir örnek :
 
 ```csharp
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل مستند PDF "Pdf Document.pdf" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+Bu örnekte, belirtilen yükleme seçeneklerini kullanarak belgeler dizininde bulunan "Pdf Document.pdf" adlı PDF belgesini yüklüyoruz.
 
-### مثال على شفرة المصدر لـ PdfLoadOptions مع وظيفة "تخطي صور PDF" باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan "Pdf Görüntülerini Atla" işlevine sahip PdfLoadOptions için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "تخطي صور Pdf"
+// "Pdf Görüntülerini Atla" özelliği ile yükleme seçeneklerini yapılandırın
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 
-// قم بتحميل مستند PDF متخطياً صور PDF
+// PDF görüntülerini atlayarak PDF belgesini yükleyin
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند PDF مع تخطي تحميل صور PDF باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يمكن أن يؤدي تخطي تحميل صور PDF إلى تحسين الأداء وإدارة مساحة التخزين عند معالجة مستندات PDF.
+Bu kılavuzda, .NET için Aspose.Words kitaplığını kullanarak PDF görüntülerinin yüklenmesini atlayarak bir PDF belgesinin nasıl yükleneceğini açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. PDF görüntü yüklemesini atlamak, PDF belgelerini işlerken performansı ve depolama alanı yönetimini iyileştirebilir.

@@ -1,17 +1,17 @@
 ---
-title: العمل مع الواصلة
-linktitle: العمل مع الواصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على الواصلة كلمات اللغات ، وتحميل قاموس الواصلة للغة واستدعاء الواصلة باستخدام Aspose.Words for .NET.
+title: Arbeiten mit Silbentrennung
+linktitle: Arbeiten mit Silbentrennung
+second_title: Aspose.Words für .NET API-Referenz
+description: Die Tutorials enthalten die Silbentrennung von Wörtern in Sprachen, das Laden des Silbentrennungswörterbuchs für Sprachen und einen Silbentrennungsrückruf mit Aspose.Words für .NET.
 type: docs
 weight: 750
 url: /de/net/working-with-hyphenation/
 ---
-يعد العمل باستخدام Hyphenation موردًا شاملاً يرشدك خلال استخدام الواصلة في مستندات Word باستخدام مكتبة Aspose.Words for .NET. . توفر البرامج التعليمية توضيحات خطوة بخطوة ، وكود مصدر كامل ، وأمثلة عملية لفهم الواصلة وإدارتها بشكل فعال في مستنداتك. ستتعلم كيفية تمكين الواصلة التلقائية ، وتخصيص قواميس الواصلة ، وتطبيق الواصلة على فقرات معينة ، والتعامل مع استثناءات الواصلة ، والمزيد. يعد هذا المورد ضروريًا للمطورين الذين يرغبون في تحسين قابلية قراءة مستندات Word وتخطيطها باستخدام الواصلة مع Aspose.Words for .NET.
+„Arbeiten mit Silbentrennung“ ist eine umfassende Ressource, die Sie durch die Verwendung der Silbentrennung in Ihren Word-Dokumenten mithilfe der Aspose.Words für .NET-Bibliothek führt. . Die Tutorials bieten Schritt-für-Schritt-Erklärungen, vollständigen Quellcode und praktische Beispiele, um die Silbentrennung in Ihren Dokumenten effektiv zu verstehen und zu verwalten. Sie erfahren, wie Sie die automatische Silbentrennung aktivieren, Silbentrennungswörterbücher anpassen, Silbentrennung auf bestimmte Absätze anwenden, Silbentrennungsausnahmen behandeln und vieles mehr. Diese Ressource ist wichtig für Entwickler, die die Lesbarkeit und das Layout ihrer Word-Dokumente durch die Verwendung der Silbentrennung mit Aspose.Words für .NET verbessern möchten.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [وصل كلمات اللغات](./hyphenate-words-of-languages/) | تعرف على كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تحميل قاموس الواصلة للغة](./load-hyphenation-dictionary-for-language/) |تعرف على كيفية تحميل قاموس الواصلة للغة معينة في Aspose.Words for .NET. |
-| [رد اتصال الواصلة](./hyphenation-callback/) | تعرف على كيفية استخدام رد نداء الواصلة في Aspose.Words for .NET للتعامل مع الواصلة في الكلمات. |
+| [Wörter von Sprachen trennen](./hyphenate-words-of-languages/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Wörter in verschiedenen Sprachen in Word-Dokumenten trennen. |
+| [Silbentrennungswörterbuch für Sprache laden](./load-hyphenation-dictionary-for-language/) |Erfahren Sie, wie Sie in Aspose.Words für .NET ein Silbentrennungswörterbuch für eine bestimmte Sprache laden. |
+| [Rückruf zur Silbentrennung](./hyphenation-callback/) | Erfahren Sie, wie Sie den Silbentrennungsrückruf in Aspose.Words für .NET verwenden, um die Silbentrennung von Wörtern zu verarbeiten. |

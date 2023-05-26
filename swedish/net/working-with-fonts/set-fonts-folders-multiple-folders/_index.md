@@ -1,66 +1,66 @@
 ---
-title: تعيين مجلدات الخطوط متعددة المجلدات
-linktitle: تعيين مجلدات الخطوط متعددة المجلدات
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتعيين مجلدات خطوط متعددة عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Ställ in teckensnittsmappar Flera mappar
+linktitle: Ställ in teckensnittsmappar Flera mappar
+second_title: Aspose.Words för .NET API Referens
+description: Steg för steg guide för att ställa in flera teckensnittsmappar när du renderar ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/set-fonts-folders-multiple-folders/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلدات خطوط متعددة عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلدات خطوط متعددة لاستخدامها عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+den här handledningen går vi igenom steg-för-steg-processen för att ställa in flera teckensnittsmappar när du renderar ett dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och förse dig med en omfattande guide som hjälper dig att förstå och implementera den här funktionen i dina egna projekt. I slutet av denna handledning kommer du att veta hur du anger flera teckensnittsmappar som ska användas när du renderar dina dokument med Aspose.Words för .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+Först måste du ställa in sökvägen till din dokumentkatalog. Det här är platsen där du vill spara ditt redigerade renderade dokument. Ersätt "DIN DOKUMENTKATOLOG" med lämplig sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند للعرض
- ثم يمكنك تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Steg 2: Ladda dokumentet för att rendera
+ Sedan kan du ladda dokumentet för att rendera med hjälp av`Document` klass. Var noga med att ange rätt dokumentsökväg.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تعيين مجلدات الخطوط
- الآن يمكنك تعيين مجلدات خطوط متعددة باستخدام ملف`FontSettings` الطبقة و`SetFontsFolders()` طريقة. يمكنك تحديد مسارات مجلدات الخطوط التي تريد استخدامها في مصفوفة. في هذا المثال ، حددنا مجلدين للخط: "C: \ MyFonts\"و" D: \ Misc \ Fonts\”。
+## Steg 3: Ställ in teckensnittsmappar
+ Nu kan du ställa in flera teckensnittsmappar med hjälp av`FontSettings` klass och`SetFontsFolders()` metod. Du kan ange sökvägarna till teckensnittsmappar som du vill använda i en array. I det här exemplet har vi specificerat två teckensnittsmappar: "C:\MyFonts\" och "D:\Misc\Fonts\".
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 ```
 
-## الخطوة 4: تطبيق إعدادات الخط
- بعد ذلك ، تحتاج إلى تطبيق إعدادات الخط على المستند الخاص بك باستخدام ملف`FontSettings` ممتلكات`Document` فصل.
+## Steg 4: Använd teckensnittsinställningar
+ Därefter måste du tillämpa teckensnittsinställningarna på ditt dokument med hjälp av`FontSettings` egendom av`Document` klass.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 5: احفظ المستند المقدم
- أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## Steg 5: Spara det renderade dokumentet
+ Slutligen kan du spara det renderade dokumentet till en fil med hjälp av`Save()` metod för`Document` klass. Var noga med att ange rätt sökväg och filnamn.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders Multiple Folders باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Set Fonts Folders Flera mappar med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Rendering.docx");
 	FontSettings fontSettings = new FontSettings();
-	// لاحظ أن هذا الإعداد سيتجاوز أي مصادر افتراضية للخطوط يتم البحث عنها افتراضيًا. الآن سيتم البحث عن هذه المجلدات فقط
-	// الخطوط عند تقديم أو دمج الخطوط. لإضافة مصدر خط إضافي مع الاحتفاظ بمصادر خطوط النظام ، استخدم كلاً من FontSettings.GetFontSources و
-	// FontSettings.SetFontSources بدلاً من ذلك.
+	// Observera att den här inställningen åsidosätter alla standardfontkällor som söks efter som standard. Nu kommer endast dessa mappar att sökas efter
+	// teckensnitt när du renderar eller bäddar in teckensnitt. För att lägga till en extra teckensnittskälla samtidigt som systemets teckensnittskällor behålls, använd sedan både FontSettings.GetFontSources och
+	// FontSettings.SetFontSources istället.
 	fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 	doc.FontSettings = fontSettings;
 	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلدات خطوط متعددة عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلدات خطوط متعددة لاستخدامها عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+## Slutsats
+I den här handledningen lärde vi oss hur du ställer in flera teckensnittsmappar när du renderar ett dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide kan du enkelt ange flera teckensnittsmappar som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för att arbeta med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa teckensnittskällorna som används när du renderar dina dokument efter dina specifika behov.

@@ -1,45 +1,45 @@
 ---
-title: أدخل مسطرة أفقية
-linktitle: أدخل مسطرة أفقية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج القواعد الأفقية في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: 插入水平标尺
+linktitle: 插入水平标尺
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入水平线。分步指南。
 type: docs
 weight: 10
 url: /zh/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج قاعدة أفقية في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إضافة قواعد أفقية إلى مستنداتك للفصل البصري والتنظيم.
+在这个综合示例中，您将学习如何使用 Aspose.Words for .NET 将水平线插入到 Word 文档中。我们将指导您完成整个过程，并为您提供必要的 C# 代码片段。到本指南结束时，您将能够为文档添加水平线以进行视觉分隔和组织。
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## 先决条件
+在我们开始之前，请确保您具备以下先决条件：
+- Aspose.Words for .NET 库安装在您的系统上。
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 第 1 步：创建新文档和 DocumentBuilder
+首先，使用 Document 类创建一个新文档并初始化一个 DocumentBuilder 对象：
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل قاعدة أفقية
-بعد ذلك ، استخدم طريقة Writeln لفئة DocumentBuilder لإضافة نص وصفي ثم أدخل قاعدة أفقية:
+## 第 2 步：插入水平线
+接下来，使用 DocumentBuilder 类的 Writeln 方法添加描述性文本，然后插入水平线：
 
 ```csharp
 builder.Writeln("Insert a horizontal rule shape into the document.");
 builder.InsertHorizontalRule();
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج القاعدة الأفقية ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 第 3 步：保存文档
+插入水平线后，使用 Document 类的 Save 方法将文档保存到文件：
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
-### مثال رمز مصدر لإدراج قاعدة أفقية باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لإدخال قاعدة أفقية باستخدام Aspose.Words for .NET:
-تعتبر القواعد الأفقية مفيدة لسيناريوهات مختلفة ، مثل تقسيم الأقسام أو إنشاء فواصل مرئية أو تمييز المعلومات المهمة.
+### 使用 Aspose.Words for .NET 插入水平线的示例源代码
+下面是使用 Aspose.Words for .NET 插入水平线的完整源代码：
+水平线适用于各种场景，例如划分部分、创建视觉中断或突出显示重要信息。
 
 ```csharp
 
@@ -53,8 +53,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.doc
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+请记住根据您的特定要求调整代码，并根据需要使用其他功能对其进行增强。
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج قاعدة أفقية في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن فصل المستندات وتنظيمها بصريًا باستخدام القواعد الأفقية.
+## 结论
+恭喜！您已经成功学习了如何使用 Aspose.Words for .NET 将水平线插入到 Word 文档中。按照分步指南并利用提供的源代码，您现在可以使用水平规则直观地分隔和组织您的文档。
 

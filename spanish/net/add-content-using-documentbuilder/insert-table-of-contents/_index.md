@@ -1,21 +1,21 @@
 ---
-title: أدخل جدول المحتويات
-linktitle: أدخل جدول المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج جدول محتويات في مستندات Word باستخدام Aspose.Words for .NET.
+title: Insertar tabla de contenido
+linktitle: Insertar tabla de contenido
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a insertar una tabla de contenido en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج جدول محتويات في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إنشاء جدول محتويات بالعناوين المناسبة وأرقام الصفحات.
+En este completo tutorial, aprenderá cómo insertar una tabla de contenido en un documento de Word usando Aspose.Words para .NET. Lo guiaremos a través del proceso y le proporcionaremos los fragmentos de código C# necesarios. Al final de esta guía, podrá generar una tabla de contenido con encabezados y números de página apropiados.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
+- Aspose.Words para la biblioteca .NET instalada en su sistema.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Paso 1: Cree un nuevo documento y DocumentBuilder
+Para comenzar, cree un nuevo documento usando la clase Document e inicialice un objeto DocumentBuilder:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,15 +23,15 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل جدول المحتويات
-بعد ذلك ، استخدم الأسلوب InsertTableOfContents لفئة DocumentBuilder لإدراج جدول محتويات. حدد خيارات التنسيق المطلوبة في الطريقة:
+## Paso 2: inserte una tabla de contenido
+A continuación, utilice el método InsertTableOfContents de la clase DocumentBuilder para insertar una tabla de contenido. Especifique las opciones de formato requeridas dentro del método:
 
 ```csharp
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## الخطوة 3: إضافة محتوى المستند
-بعد إدراج جدول المحتويات ، أضف محتوى المستند الفعلي. قم بتعيين أنماط العناوين المناسبة باستخدام StyleIdentifier:
+## Paso 3: Agregar contenido del documento
+Después de insertar la tabla de contenido, agregue el contenido real del documento. Establezca los estilos de encabezado apropiados usando StyleIdentifier:
 
 ```csharp
 builder.InsertBreak(BreakType.PageBreak);
@@ -60,35 +60,35 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## الخطوة 4: تحديث جدول المحتويات
-سيكون جدول المحتويات المُدرج حديثًا فارغًا في البداية. لتعبئتها ، قم بتحديث الحقول في المستند:
+## Paso 4: actualice la tabla de contenido
+La tabla de contenido recién insertada estará inicialmente vacía. Para completarlo, actualice los campos en el documento:
 
 ```csharp
 doc.UpdateFields();
 ```
 
-## الخطوة 5: احفظ المستند
-بعد إدراج جدول المحتويات وتحديث الحقول ، احفظ المستند في ملف باستخدام طريقة Save من فئة Document:
+## Paso 5: Guarde el documento
+Después de insertar la tabla de contenido y actualizar los campos, guarde el documento en un archivo usando el método Guardar de la clase Documento:
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
 
-### مثال كود المصدر لإدراج جدول المحتويات باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال جدول محتويات باستخدام Aspose.Words for .NET:
+### Ejemplo de código fuente para insertar tabla de contenido usando Aspose.Words para .NET
+Aquí está el código fuente completo para insertar una tabla de contenido usando Aspose.Words para .NET:
 
 ```csharp
 
             string dataDir = "YOUR DOCUMENT DIRECTORY";
 			
-            // تهيئة DocumentBuilder بكائن المستند
+            // Inicialice DocumentBuilder con el objeto Document
             Document doc = new Document();
             DocumentBuilder builder = new DocumentBuilder(doc);
             
-            // إدراج جدول المحتويات
+            // Insertar tabla de contenidoa
 			builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
             
-            // ابدأ محتوى المستند الفعلي في الصفحة الثانية.
+            // Inicie el contenido real del documento en la segunda página.
             builder.InsertBreak(BreakType.PageBreak);
 
             builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
@@ -121,8 +121,8 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
             builder.Writeln("Heading 3.3");
 
             
-            // سيكون جدول المحتويات المُدرج حديثًا فارغًا في البداية.
-            // يجب أن يتم ملؤها عن طريق تحديث الحقول في المستند.
+            // La tabla de contenido recién insertada estará inicialmente vacía.
+            // Debe completarse actualizando los campos en el documento.
             doc.UpdateFields();
             
 

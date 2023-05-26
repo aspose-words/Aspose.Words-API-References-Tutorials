@@ -1,24 +1,24 @@
 ---
-title: تنسيق المستند
-linktitle: تنسيق المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على مسافة بين النص الآسيوي واللاتيني ومجموعة فواصل أسطر الطباعة الآسيوية وتنسيق الفقرة وتنسيق قائمة متعددة المستويات وتطبيق نمط الفقرة.
+title: 文档格式
+linktitle: 文档格式
+second_title: Aspose.Words for .NET API 参考
+description: 教程包含亚洲和拉丁文本之间的空格、亚洲排版换行符组、段落格式、多级列表格式和应用段落样式。
 type: docs
 weight: 1490
 url: /zh/net/document-formatting/
 ---
 
-يغطي البرنامج التعليمي جوانب مختلفة مثل تنسيق النص والفقرات والجداول والصور وغير ذلك الكثير. يوفر أمثلة واضحة للكود وشروحات خطوة بخطوة لإرشادك خلال عملية تنسيق المستندات باستخدام Aspose.Words. سواء كنت مبتدئًا أو مطورًا متمرسًا ، سيكون هذا البرنامج التعليمي مصدرًا قيمًا لتحسين مهارات تنسيق المستندات باستخدام Aspose.Words for .NET.
+该教程涵盖了各个方面，例如格式化文本、段落、表格、图像等等。它提供清晰的代码示例和分步说明，引导您完成使用 Aspose.Words 格式化文档的过程。无论您是初学者还是经验丰富的开发人员，本教程都将成为您使用 Aspose.Words for .NET 提高文档格式设置技能的宝贵资源。
 
- ## دروس
-| عنوان | وصف |
+ ## 教程
+| 标题 | 描述 |
 | --- | --- |
-| [المسافة بين النص الآسيوي واللاتيني](./space-between-asian-and-latin-text/) | تعرف على كيفية ضبط المسافة تلقائيًا بين النص الآسيوي واللاتيني في مستندك باستخدام Aspose.Words for .NET. |
-| [مجموعة فواصل خطوط الطباعة الآسيوية](./asian-typography-line-break-group/) | تعرف على كيفية استخدام مجموعة فواصل أسطر الطباعة الآسيوية مع Aspose.Words for .NET. |
-| [تنسيق الفقرة](./paragraph-formatting/) | تعرف على كيفية تطبيق التنسيق المخصص على فقراتك باستخدام Aspose.Words for .NET. |
-| [تنسيق قائمة متعددة المستويات](./multilevel-list-formatting/) | تعرف على كيفية إنشاء قائمة متعددة المستويات وتطبيق تنسيق مخصص باستخدام Aspose.Words for .NET. |
-| [تطبيق نمط الفقرة](./apply-paragraph-style/) | تعرف على كيفية تطبيق نمط فقرة باستخدام Aspose.Words for .NET. |
-| [تطبيق الحدود والتظليل على الفقرة](./apply-borders-and-shading-to-paragraph/) | تعرف على كيفية تطبيق الحدود والتظليل على فقرة باستخدام Aspose.Words for .NET. |
-| [تغيير تباعد الفقرات الآسيوية والمسافات البادئة](./change-asian-paragraph-spacing-and-indents/) | تعرف على كيفية تغيير تباعد الفقرات الآسيوية والمسافات البادئة باستخدام Aspose.Words for .NET. |
-| [المفاجئة إلى الشبكة](./snap-to-grid/) | دليل خطوة بخطوة لشرح كود مصدر C # لميزة Snap to Grid باستخدام Aspose.Words for .NET. |
-| [احصل على فاصل نمط الفقرة](./get-paragraph-style-separator/) | تعرف على كيفية الحصول على فاصل نمط الفقرة باستخدام Aspose.Words for .NET. |
+| [亚洲文本和拉丁文本之间的空间](./space-between-asian-and-latin-text/) | 了解如何使用 Aspose.Words for .NET 自动调整文档中亚洲文本和拉丁文本之间的间距。 |
+| [亚洲版式换行组](./asian-typography-line-break-group/) | 了解如何通过 Aspose.Words for .NET 使用 Asian Typography 换行符组。 |
+| [段落格式](./paragraph-formatting/) | 了解如何使用 Aspose.Words for .NET 将自定义格式应用于您的段落。 |
+| [多级列表格式](./multilevel-list-formatting/) | 了解如何使用 Aspose.Words for .NET 创建多级列表和应用自定义格式。 |
+| [应用段落样式](./apply-paragraph-style/) | 了解如何使用 Aspose.Words for .NET 应用段落样式。 |
+| [对段落应用边框和底纹](./apply-borders-and-shading-to-paragraph/) | 了解如何使用 Aspose.Words for .NET 将边框和底纹应用于段落。 |
+| [更改亚洲段落间距和缩进](./change-asian-paragraph-spacing-and-indents/) | 了解如何使用 Aspose.Words for .NET 更改亚洲段落间距和缩进。 |
+| [对齐网格](./snap-to-grid/) | 分步指南解释使用 Aspose.Words for .NET 对齐网格功能的 C# 源代码。 |
+| [获取段落样式分隔符](./get-paragraph-style-separator/) | 了解如何使用 Aspose.Words for .NET 获取段落样式分隔符。 |

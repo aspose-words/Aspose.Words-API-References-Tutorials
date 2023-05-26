@@ -1,23 +1,23 @@
 ---
-title: إنشاء إشارة مرجعية
-linktitle: إنشاء إشارة مرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF باستخدام Aspose.Words for .NET.
+title: Créer un signet
+linktitle: Créer un signet
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à créer des signets dans un document et à spécifier les niveaux d'aperçu des signets dans un PDF à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/create-bookmark/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إنشاء إشارة مرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF ناتج.
+Dans cet article, nous allons explorer le code source C# ci-dessus pour comprendre comment utiliser la fonction Créer un signet dans la bibliothèque Aspose.Words pour .NET. Cette fonction vous permet de créer des signets dans un document et de spécifier les niveaux d'aperçu des signets dans un fichier PDF de sortie.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Connaissance de base du langage C#.
+- Environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
-## الخطوة 1: إنشاء المستند والمولد
+## Étape 1 : Création du document et du générateur
 
- قبل إنشاء إشارات مرجعية ، نحتاج إلى إنشاء مستند ومنشئ مستندات باستخدام امتداد`Document` و`DocumentBuilder` أشياء:
+ Avant de créer des signets, nous devons créer un document et un générateur de document à l'aide de l'outil`Document` et`DocumentBuilder` objets:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -25,22 +25,22 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إنشاء الإشارة المرجعية الرئيسية
+## Étape 2 : Création du signet principal
 
- نحن نستخدم ال`StartBookmark` طريقة لبدء إشارة مرجعية رئيسية و`EndBookmark` طريقة لإنهائه. في ما بينهما ، يمكننا إضافة نص وإشارات مرجعية أخرى:
+ Nous utilisons le`StartBookmark` méthode pour démarrer un signet principal et la`EndBookmark` méthode pour y mettre fin. Entre les deux, nous pouvons ajouter du texte et d'autres signets :
 
 ```csharp
 builder. StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
 
-// أضف المزيد من الإشارات المرجعية أو النص هنا.
+// Ajoutez plus de signets ou de texte ici.
 
 builder. EndBookmark("My Bookmark");
 ```
 
-## الخطوة 3: إنشاء إشارات مرجعية متداخلة
+## Étape 3 : Créer des signets imbriqués
 
- يمكننا أيضًا إنشاء إشارات مرجعية متداخلة داخل إشارة مرجعية رئيسية. نحن نستخدم نفس الشيء`StartBookmark` و`EndBookmark` طرق لإنشاء وإنهاء الإشارات المرجعية المتداخلة:
+ Nous pouvons également créer des signets imbriqués dans un signet principal. Nous utilisons le même`StartBookmark` et`EndBookmark` méthodes pour créer et terminer des signets imbriqués :
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -48,11 +48,11 @@ builder.Writeln("Text inside nested bookmark.");
 builder.EndBookmark("Embedded bookmark");
 ```
 
-## الخطوة 4: تحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج
+## Étape 4 : Spécification des niveaux d'aperçu des signets dans le fichier PDF de sortie
 
- نحن نستخدم ال`PdfSaveOptions` لتحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج. نحن نستخدم ال`BookmarksOutlineLevels` ملكية
+ Nous utilisons le`PdfSaveOptions` objet pour spécifier les niveaux d'aperçu des signets dans le fichier PDF de sortie. Nous utilisons le`BookmarksOutlineLevels` propriété
 
-  لإضافة إشارات مرجعية رئيسية وإشارات مرجعية متداخلة بمستوياتها الخاصة:
+  pour ajouter des signets principaux et des signets imbriqués avec leurs niveaux respectifs :
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
@@ -61,13 +61,13 @@ options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### مثال على شفرة المصدر لإنشاء إشارة مرجعية باستخدام Aspose.Words for .NET
+### Exemple de code source pour Créer un signet à l'aide d'Aspose.Words pour .NET
 
-إليك المثال الكامل لشفرة المصدر لتوضيح إنشاء إشارات مرجعية باستخدام Aspose.Words for .NET:
+Voici l'exemple de code source complet pour illustrer la création de signets à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -90,6 +90,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
   
 ```
 
-## خاتمة
+## Conclusion
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة إنشاء إشارة مرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارة المرجعية في ملف PDF ناتج.
+Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonction Créer un signet d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour créer des signets dans un document et spécifier les niveaux d'aperçu des signets dans un fichier PDF de sortie.

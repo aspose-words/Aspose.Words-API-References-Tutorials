@@ -1,29 +1,29 @@
 ---
-title: منشئ المستند إدراج إشارة مرجعية
-linktitle: منشئ المستند إدراج إشارة مرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الإشارات المرجعية في مستندات Word باستخدام DocumentBuilder في Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Document Builder Lesezeichen einfügen
+linktitle: Document Builder Lesezeichen einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit DocumentBuilder in Aspose.Words für .NET Lesezeichen in Word-Dokumente einfügen. Schritt für Schritt Anleitung.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/document-builder-insert-bookmark/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج الإشارات المرجعية في مستند Word باستخدام فئة DocumentBuilder في Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إنشاء وإدارة الإشارات المرجعية داخل مستنداتك.
+In diesem umfassenden Beispiel erfahren Sie, wie Sie mithilfe der DocumentBuilder-Klasse in Aspose.Words für .NET Lesezeichen in ein Word-Dokument einfügen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieses Leitfadens werden Sie in der Lage sein, Lesezeichen in Ihren Dokumenten zu erstellen und zu verwalten.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Schritt 1: Erstellen Sie ein neues Dokument und einen neuen DocumentBuilder
+Erstellen Sie zunächst ein neues Dokument mit der Document-Klasse und initialisieren Sie ein DocumentBuilder-Objekt:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل إشارة مرجعية
-بعد ذلك ، استخدم أساليب StartBookmark و EndBookmark لفئة DocumentBuilder لإدراج إشارة مرجعية في المستند. أدخل اسمًا فريدًا للإشارة المرجعية كمعامل:
+## Schritt 2: Fügen Sie ein Lesezeichen ein
+Als nächstes verwenden Sie die Methoden StartBookmark und EndBookmark der DocumentBuilder-Klasse, um ein Lesezeichen in das Dokument einzufügen. Geben Sie als Parameter einen eindeutigen Namen für das Lesezeichen an:
 
 ```csharp
 builder.StartBookmark("FineBookmark");
@@ -31,15 +31,15 @@ builder.Writeln("This is just a fine bookmark.");
 builder.EndBookmark("FineBookmark");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الإشارة المرجعية ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Schritt 3: Speichern Sie das Dokument
+Speichern Sie das Dokument nach dem Einfügen des Lesezeichens mit der Save-Methode der Document-Klasse in einer Datei:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
 ```
 
-### مثال رمز مصدر لـ DocumentBuilder إدراج إشارة مرجعية باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لإدخال إشارة مرجعية باستخدام فئة DocumentBuilder في Aspose.Words for .NET:
+### Beispielquellcode für DocumentBuilder: Einfügen eines Lesezeichens mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode zum Einfügen eines Lesezeichens mithilfe der DocumentBuilder-Klasse in Aspose.Words für .NET:
 
 ```csharp
    
@@ -54,10 +54,10 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBoo
 	 
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج الإشارات المرجعية في مستند Word باستخدام فئة DocumentBuilder في Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إنشاء وإدارة الإشارات المرجعية داخل مستنداتك.
+## Abschluss
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mithilfe der DocumentBuilder-Klasse in Aspose.Words für .NET Lesezeichen in ein Word-Dokument einfügen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie jetzt Lesezeichen in Ihren Dokumenten erstellen und verwalten.
 
-تعد الإشارات المرجعية مفيدة لسيناريوهات متنوعة ، مثل التنقل عبر مستندات كبيرة ، أو الرجوع إلى أقسام معينة ، أو معالجة المحتوى برمجيًا داخل المناطق التي تم وضع إشارة مرجعية عليها.
+Lesezeichen sind für verschiedene Szenarien nützlich, z. B. zum Navigieren durch große Dokumente, zum Verweisen auf bestimmte Abschnitte oder zum programmgesteuerten Bearbeiten von Inhalten in mit Lesezeichen versehenen Bereichen.
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Denken Sie daran, den Code an Ihre spezifischen Anforderungen anzupassen und ihn bei Bedarf um zusätzliche Funktionen zu erweitern.
 

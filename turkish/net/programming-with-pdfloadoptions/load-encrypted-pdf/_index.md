@@ -1,34 +1,34 @@
 ---
-title: تحميل ملف PDF المشفر
-linktitle: تحميل ملف PDF المشفر
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحميل ملف PDF مشفر باستخدام Aspose.Words for .NET.
+title: Şifreli Pdf Yükle
+linktitle: Şifreli Pdf Yükle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak şifreli bir PDF yüklemek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ---
 
-عند العمل مع مستندات PDF في تطبيق .NET ، قد يكون من الضروري تحميل ملفات PDF المحمية بكلمة مرور. Aspose.Words for .NET مكتبة قوية توفر وظائف لتحميل مستندات PDF المشفرة. في هذه المقالة ، سنوجهك خطوة بخطوة لفهم هذه الميزة واستخدامها.
+.NET uygulamanızda PDF belgeleriyle çalışırken, parola korumalı PDF dosyalarını yüklemeniz gerekebilir. Aspose.Words for .NET, şifreli PDF belgelerini yüklemek için işlevsellik sağlayan güçlü bir kitaplıktır. Bu yazıda, bu özelliği anlamanız ve kullanmanız için size adım adım rehberlik edeceğiz.
 
-## فهم ميزة تحميل ملف PDF المشفر
+## Şifreli PDF Özelliğini Yüklemeyi Anlama
 
-تتيح لك ميزة تحميل ملف PDF المشفر في Aspose.Words for .NET تحميل ملفات PDF المحمية بكلمة مرور. يمكنك تحديد كلمة المرور عند تحميل المستند بحيث يمكنك الوصول إلى محتواه ومعالجته حسب الحاجة.
+Aspose.Words for .NET'in Şifreli PDF'yi Yükle özelliği, parola korumalı PDF dosyalarını yüklemenizi sağlar. İçeriğine erişebilmek ve gerektiği gibi değiştirebilmek için belgeyi yüklerken parolayı belirtebilirsiniz.
 
-## الخطوة 1: تحميل مستند PDF المشفر
+## 1. Adım: Şifreli PDF Belgesini Yükleme
 
-الخطوة الأولى هي تحميل مستند PDF المشفر في التطبيق الخاص بك. هيريس كيفية القيام بذلك:
+İlk adım, şifrelenmiş PDF belgesini uygulamanıza yüklemektir. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```
 
- تأكد من تحديد المسار الصحيح لملف PDF المشفر في ملف`dataDir` عامل.
+ Şifreli PDF dosyasına giden doğru yolu belirttiğinizden emin olun.`dataDir` değişken.
 
-## الخطوة الثانية: تشفير مستند PDF
+## 2. Adım: PDF Belgesini Şifreleme
 
- إذا كنت تريد أيضًا تشفير مستند PDF الخاص بك ، فيمكنك القيام بذلك باستخدام ملحق`PdfSaveOptions` فئة وتحديد تفاصيل التشفير:
+ PDF belgenizi de şifrelemek istiyorsanız, bunu`PdfSaveOptions` sınıf ve şifreleme ayrıntılarını belirterek:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -38,21 +38,21 @@ EncryptionDetails = new PdfEncryptionDetails("Aspose", null)
 
 ```
 
-سيؤدي ذلك إلى إنشاء نسخة مشفرة من مستند PDF في الدليل المحدد.
+Bu, belirtilen dizinde PDF belgesinin şifreli bir sürümünü oluşturacaktır.
 
-## الخطوة 3: حفظ مستند PDF المشفر
+## 3. Adım: Şifrelenmiş PDF Belgesini Kaydetme
 
-بعد تحميل مستند PDF وتشفيره اختياريًا ، يمكنك حفظه بتنسيق آخر أو معالجته بشكل أكبر وفقًا لاحتياجاتك الخاصة.
+PDF belgesini yükledikten ve isteğe bağlı olarak şifreledikten sonra, başka bir biçimde kaydedebilir veya özel ihtiyaçlarınıza göre daha fazla işleyebilirsiniz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", saveOptions);
 ```
 
-## الخطوة 5: تحميل مستند PDF المشفر بكلمة مرور
+## 5. Adım: Şifreli PDF Belgesini Parolayla Yükleme
 
-صيانة
+bakım
 
- ومع ذلك ، إذا كنت تريد تحميل مستند PDF المشفر بكلمة مرور ، فيجب عليك استخدام ملف`PdfLoadOptions` فئة وتحديد كلمة المرور عند تحميل المستند:
+ Ancak, şifreli PDF belgesini bir parola ile yüklemek istiyorsanız,`PdfLoadOptions` class ve belgeyi yüklerken parolayı belirtin:
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { Password = "Aspose", LoadFormat = LoadFormat.Pdf };
@@ -60,13 +60,13 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { Password = "Aspose", LoadForma
 doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", loadOptions);
 ```
 
- تأكد من تقديم كلمة المرور الصحيحة في ملف`Password` عامل.
+ bölümünde doğru parolayı girdiğinizden emin olun.`Password` değişken.
 
-### مثال على كود المصدر لتحميل PDF المشفر باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Şifreli PDF Yükleme için Örnek Kaynak Kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Pdf Document.pdf");
 
@@ -83,8 +83,8 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
         
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، اكتشفنا كيفية استخدام ميزة تحميل ملف PDF المشفر في Aspose.Words for .NET. لقد تعلمت كيفية تحميل ملفات PDF المشفرة ، وكيفية تشفير مستند PDF ، وكيفية تحميل ملف PDF مشفر بكلمة مرور ، وكيفية إنشاء مخرجات بتنسيق Markdown. هذه الميزة مفيدة للغاية عند العمل مع مستندات PDF آمنة.
+Bu makalede, Aspose.Words for .NET'in Şifreli PDF Yükle özelliğinin nasıl kullanılacağını inceledik. Şifreli PDF dosyalarının nasıl yükleneceğini, bir PDF belgesinin nasıl şifreleneceğini, şifreli bir PDF'nin nasıl yükleneceği ve Markdown formatında nasıl çıktı alınacağını öğrendiniz. Bu özellik, güvenli PDF belgeleriyle çalışırken son derece kullanışlıdır.
 
 

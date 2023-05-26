@@ -1,37 +1,37 @@
 ---
-title: حافظ على الجدول معًا
-linktitle: حافظ على الجدول معًا
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تجميع الجدول معًا في مستند Word باستخدام Aspose.Words for .NET.
+title: 把桌子放在一起
+linktitle: 把桌子放在一起
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中将表格放在一起。
 type: docs
 weight: 10
 url: /zh/net/programming-with-tables/keep-table-together/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تجميع الجدول معًا في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من الحفاظ على الجدول سليمًا دون تقسيمه عبر صفحات متعددة في مستندات Word الخاصة بك.
+在本教程中，我们将学习如何使用 Aspose.Words for .NET 在 Word 文档中将表格放在一起。我们将按照逐步指南来理解代码并实现此功能。到本教程结束时，您将能够保持表格完好无损，而不会在 Word 文档中将其拆分为多个页面。
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## 第 1 步：项目设置
+1. 启动 Visual Studio 并创建一个新的 C# 项目。
+2. 添加对 Aspose.Words for .NET 库的引用。
 
-## الخطوة الثانية: تحميل المستند واسترجاع الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند وإحضار الجدول الذي نريد الاحتفاظ به معًا. اتبع هذه الخطوات:
+## 第 2 步：加载文档并检索表格
+要开始使用表格，我们需要加载文档并获取我们想要保存在一起的表格。按着这些次序：
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//装入文档
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 
-// استرجع الجدول
+//检索表
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+请务必将“您的文档目录”替换为您的文档目录的实际路径。
 
-## الخطوة 3: تفعيل خيار "KeepWithNext"
-للحفاظ على الجدول معًا ومنع انقسامه عبر صفحات متعددة ، نحتاج إلى تمكين الخيار "KeepWithNext" لكل فقرة في الجدول باستثناء الفقرات الأخيرة من الصف الأخير من الجدول. استخدم الكود التالي:
+## 第 3 步：启用“KeepWithNext”选项
+为了将表格保持在一起并防止它跨多个页面拆分，我们需要为表格中的每个段落启用“KeepWithNext”选项，表格最后一行的最后一段除外。使用以下代码：
 
 ```csharp
 foreach(Cell cell in table.GetChildNodes(NodeType.Cell, true))
@@ -43,27 +43,27 @@ para.ParagraphFormat.KeepWithNext = true;
 }
 ```
 
-هنا نقوم بعمل حلقة عبر كل خلية في الجدول وتمكين خيار "KeepWithNext" لكل فقرة في الخلية باستثناء الفقرات الأخيرة من الصف الأخير في الجدول.
+在这里，我们遍历表格中的每个单元格，并为单元格中的每个段落启用“KeepWithNext”选项，表格中最后一行的最后一段除外。
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تثبيت الجدول معًا. استخدم الكود التالي:
+## 第 4 步：保存修改后的文档
+最后，我们需要将修改后的文档连同表格保存在一起。使用以下代码：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+请务必为输出文档指定正确的路径和文件名。
 
-### عينة من التعليمات البرمجية المصدر لـ Keep Table Together باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 将表格放在一起的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// نحتاج إلى تمكين KeepWithNext لكل فقرة في الجدول لمنعها من اختراق الصفحة ،
-	// باستثناء الفقرات الأخيرة في الصف الأخير من الجدول.
+	//我们需要为表格中的每个段落启用 KeepWithNext，以防止它跨页，
+	//除了表格最后一行的最后一段。
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();
@@ -74,5 +74,5 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 	doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تجميع الجدول معًا في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك الحفاظ على الجدول سليمًا ومنعه من الانقسام عبر صفحات متعددة في مستنداتك. تمنحك هذه الميزة مزيدًا من التحكم في مظهر الجداول وتخطيطها في مستنداتك.
+## 结论
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 在 Word 文档中将表格放在一起。通过遵循此分步指南并实施提供的 C# 代码，您可以保持表格完整并防止它在文档中跨多个页面拆分。此功能使您可以更好地控制文档中表格的外观和布局。

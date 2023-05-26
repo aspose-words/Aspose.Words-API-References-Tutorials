@@ -1,29 +1,29 @@
 ---
-title: أدخل Html
-linktitle: أدخل Html
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج محتوى HTML في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Inserisci Html
+linktitle: Inserisci Html
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire contenuto HTML nei documenti di Word utilizzando Aspose.Words per .NET. Guida passo dopo passo.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-html/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج محتوى HTML في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة عناصر HTML وتنسيقات وأنماط إلى مستندات Word الخاصة بك.
+In questo tutorial completo imparerai come inserire contenuto HTML in un documento Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso il processo e ti forniremo i frammenti di codice C# necessari. Alla fine di questa guida, sarai in grado di aggiungere elementi HTML, formattazione e stili ai tuoi documenti Word.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti prerequisiti:
+- Aspose.Words per la libreria .NET installata sul tuo sistema.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Passaggio 1: creare un nuovo documento e DocumentBuilder
+Per iniziare, crea un nuovo documento utilizzando la classe Document e inizializza un oggetto DocumentBuilder:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل محتوى HTML
-بعد ذلك ، استخدم الأسلوب InsertHtml لفئة DocumentBuilder لإدراج محتوى HTML في المستند. يمكنك تضمين علامات HTML والسمات والأنماط ضمن سلسلة HTML:
+## Passaggio 2: inserire il contenuto HTML
+Utilizzare quindi il metodo InsertHtml della classe DocumentBuilder per inserire contenuto HTML nel documento. Puoi includere tag, attributi e stili HTML all'interno della stringa HTML:
 
 ```csharp
 builder.InsertHtml(
@@ -33,16 +33,16 @@ builder.InsertHtml(
 	"<h1 align='left'>Heading 1 left.</h1>");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدخال محتوى HTML ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Passaggio 3: salvare il documento
+Dopo aver inserito il contenuto HTML, salvare il documento in un file utilizzando il metodo Save della classe Document:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-## مثال على كود المصدر لإدراج HTML باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال محتوى HTML في مستند Word باستخدام Aspose.Words for .NET:
-هذه الميزة مفيدة بشكل خاص عندما يكون لديك محتوى HTML موجود تريد تضمينه في مستندات Word الخاصة بك مع الحفاظ على التنسيق الأصلي والتخطيط.
+## Esempio di codice sorgente per Inserisci HTML utilizzando Aspose.Words per .NET
+Ecco il codice sorgente completo per l'inserimento di contenuto HTML in un documento Word utilizzando Aspose.Words per .NET:
+Questa funzione è particolarmente utile quando si dispone di contenuto HTML esistente che si desidera includere nei documenti di Word preservando la formattazione e il layout originali.
 
 ```csharp
 
@@ -59,9 +59,9 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمحتوى ومتطلبات HTML الخاصة بك. تأكد من أن HTML منسق بشكل جيد ومتوافق مع Aspose.Words for .NET.
+Ricorda di modificare il codice in base ai tuoi requisiti e contenuti HTML specifici. Assicurati che il tuo codice HTML sia ben formato e compatibile con Aspose.Words per .NET.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج محتوى HTML في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن دمج عناصر HTML والتنسيق والأنماط في مستندات Word الخاصة بك.
+## Conclusione
+Congratulazioni! Hai imparato con successo come inserire contenuto HTML in un documento Word utilizzando Aspose.Words per .NET. Seguendo la guida passo passo e utilizzando il codice sorgente fornito, ora puoi incorporare elementi HTML, formattazione e stili nei tuoi documenti Word.
 
 

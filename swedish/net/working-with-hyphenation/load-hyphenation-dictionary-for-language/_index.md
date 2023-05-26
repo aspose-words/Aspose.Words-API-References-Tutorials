@@ -1,48 +1,48 @@
 ---
-title: تحميل قاموس الواصلة للغة
-linktitle: تحميل قاموس الواصلة للغة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل قاموس الواصلة للغة معينة في Aspose.Words for .NET.
+title: Ladda avstavningsordbok för språk
+linktitle: Ladda avstavningsordbok för språk
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du laddar en avstavningsordbok för ett specifikt språk i Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-hyphenation/load-hyphenation-dictionary-for-language/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية تحميل قاموس الواصلة للغة معينة في Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+denna steg-för-steg handledning visar vi dig hur du laddar en avstavningsordlista för ett specifikt språk till Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
-## الخطوة 1: تحميل المستند
+## Steg 1: Ladda dokumentet
 
-أولاً ، قم بتحميل المستند الخاص بك من الدليل المحدد:
+Ladda först ditt dokument från den angivna katalogen:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## الخطوة 2: تحميل قاموس الواصلة
+## Steg 2: Laddar avstavningsordlistan
 
-بعد ذلك ، افتح دفقًا إلى ملف قاموس الواصلة واحفظه للغة المطلوبة. في هذا المثال ، نقوم بتحميل قاموس للألمانية السويسرية (de-CH):
+Öppna sedan en ström till avstavningsordboksfilen och spara den för önskat språk. I det här exemplet laddar vi en ordbok för schweizisk tyska (de-CH):
 
 ```csharp
 Stream stream = File.OpenRead(dataDir + "hyph_de_CH.dic");
 Hyphenation.RegisterDictionary("de-CH", stream);
 ```
 
-تأكد من أن لديك ملف القاموس المناسب في دليل البيانات الخاص بك.
+Se till att du har rätt ordboksfil i din datakatalog.
 
-## الخطوة 3: احفظ المستند المعدل
+## Steg 3: Spara det ändrade dokumentet
 
-أخيرًا ، احفظ المستند المعدل:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 ```
 
-لذا ! لقد نجحت في تحميل قاموس الواصلة للغة معينة في Aspose.Words for .NET.
+Så ! Du har framgångsrikt laddat en avstavningsordbok för ett specifikt språk i Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لتحميل قاموس الواصلة للغة باستخدام Aspose.Words for .NET
+### Exempel på källkod för laddning av avstavningsordbok för ett språk som använder Aspose.Words för .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -54,4 +54,4 @@ Hyphenation.RegisterDictionary("de-CH", stream);
 doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Använd gärna den här koden i dina egna projekt och modifiera den för att passa dina specifika behov.

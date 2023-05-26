@@ -1,37 +1,37 @@
 ---
-title: إلحاق مستند
-linktitle: إلحاق مستند
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق محتويات مستند بآخر باستخدام Aspose.Words for .NET.
+title: Bifoga dokument
+linktitle: Bifoga dokument
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du lägger till innehållet i ett dokument till ett annat med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/append-document/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق محتويات مستند بآخر. يوضح كود المصدر المقدم كيفية فتح مستندات المصدر والوجهة واستيراد وإلحاق أقسام من المستند المصدر إلى المستند الوجهة.
+Denna handledning förklarar hur man använder Aspose.Words för .NET för att lägga till innehållet i ett dokument till ett annat. Den medföljande källkoden visar hur man öppnar käll- och måldokumenten, importerar och lägger till avsnitt från källdokumentet till måldokumentet.
 
-## الخطوة 1: قم بإعداد المشروع
+## Steg 1: Konfigurera projektet
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Se till att du har följande förutsättningar:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från den officiella Aspose-webbplatsen eller använda NuGet-pakethanteraren för att installera den.
+- En dokumentkatalogsökväg där käll- och måldokumenten finns.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Steg 2: Öppna käll- och måldokumenten
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Öppna käll- och måldokumenten med hjälp av`Document` klass konstruktör. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إلحاق أقسام من المستند المصدر بالمستند الوجهة
+## Steg 3: Lägg till avsnitt från källdokumentet till måldokumentet
 
- قم بالتكرار خلال جميع الأقسام في المستند المصدر واستورد كل قسم في المستند الوجهة باستخدام ملف`ImportNode` طريقة. ثم قم بإلحاق القسم الذي تم استيراده بالمستند الوجهة.
+ Gå igenom alla avsnitt i källdokumentet och importera varje avsnitt till måldokumentet med hjälp av`ImportNode` metod. Lägg sedan till det importerade avsnittet till måldokumentet.
 
 ```csharp
 foreach (Section srcSection in srcDoc)
@@ -41,36 +41,36 @@ foreach (Section srcSection in srcDoc)
 }
 ```
 
-## الخطوة 4: احفظ المستند الوجهة
+## Steg 4: Spara måldokumentet
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند باستخدام Aspose.Words لـ .NET.
+Detta slutför implementeringen av att lägga till ett dokument med Aspose.Words för .NET.
 
-### مثال على الكود المصدري لإلحاق المستند باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Bifoga dokument med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// تكرار خلال جميع الأقسام في المستند المصدر.
-	// عُقد الأقسام هي عناصر فرعية مباشرة لعقدة المستند حتى نتمكن من تعداد المستند.
+	// Gå igenom alla avsnitt i källdokumentet.
+	// Sektionsnoder är omedelbara underordnade av dokumentnoden så vi kan bara räkna upp dokumentet.
 	foreach (Section srcSection in srcDoc)
 	{
-		//لأننا نقوم بنسخ قسم من مستند إلى آخر ،
-		// مطلوب لاستيراد عقدة القسم في المستند الوجهة.
-		// يعمل هذا على ضبط أي مراجع خاصة بالمستند للأنماط والقوائم وما إلى ذلك.
+		//Eftersom vi kopierar ett avsnitt från ett dokument till ett annat,
+		// det krävs för att importera sektionsnoden till måldokumentet.
+		// Detta justerar eventuella dokumentspecifika referenser till stilar, listor etc.
 		//
-		// يؤدي استيراد عقدة إلى إنشاء نسخة من العقدة الأصلية ، ولكن النسخة
-		// ss جاهزة لإدراجها في المستند الوجهة.
+		// Genom att importera en nod skapas en kopia av den ursprungliga noden, men kopian
+		// ss redo att infogas i måldokumentet.
 		Node dstSection = dstDoc.ImportNode(srcSection, true, ImportFormatMode.KeepSourceFormatting);
-		// يمكن الآن إلحاق عقدة القسم الجديدة بالمستند الوجهة.
+		// Nu kan den nya sektionsnoden läggas till måldokumentet.
 		dstDoc.AppendChild(dstSection);
 	}
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");

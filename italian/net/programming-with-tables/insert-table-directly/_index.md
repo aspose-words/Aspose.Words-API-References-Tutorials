@@ -1,46 +1,46 @@
 ---
-title: أدخل الجدول مباشرة
-linktitle: أدخل الجدول مباشرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET.
+title: Inserisci tabella direttamente
+linktitle: Inserisci tabella direttamente
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire una tabella direttamente in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/insert-table-directly/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من إدراج الجداول مباشرةً في مستندات Word برمجيًا.
+In questo tutorial impareremo come inserire direttamente una tabella in un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di inserire tabelle direttamente nei tuoi documenti Word a livello di codice.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Passaggio 1: impostazione del progetto
+1. Avvia Visual Studio e crea un nuovo progetto C#.
+2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة 2: إنشاء المستند والجدول
-لبدء العمل مع المصفوفة ، نحتاج إلى إنشاء مستند جديد وتهيئة المصفوفة. اتبع هذه الخطوات:
+## Passaggio 2: creazione del documento e della tabella
+Per iniziare a lavorare con l'array, dobbiamo creare un nuovo documento e inizializzare l'array. Segui questi passi:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Creazione di documenti
 Document doc = new Document();
 
-// قم بإنشاء المصفوفة
+// Crea la matrice
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti.
 
-## الخطوة 3: بناء المصفوفة
-بعد ذلك ، سنبني الجدول بإضافة صفوف وخلايا. استخدم الكود التالي كمثال:
+## Passaggio 3: creazione dell'array
+Successivamente, costruiremo la tabella aggiungendo righe e celle. Utilizzare il seguente codice come esempio:
 
 ```csharp
-// قم بإنشاء الصف الأول
+// Crea la prima riga
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);
 
-// قم بإنشاء الخلية الأولى
+// Crea la prima cella
 Cell cell = new Cell(doc);
 cell.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 cell.CellFormat.Width = 80;
@@ -48,54 +48,54 @@ cell.AppendChild(new Paragraph(doc));
 cell.FirstParagraph.AppendChild(new Run(doc, "Text in row 1, cell 1"));
 row.AppendChild(cell);
 
-// قم بتكرار الخلية للخلية الثانية في الصف
+// Duplica la cella per la seconda cella nella riga
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Text in row 1, cell 2"));
 ```
 
- هنا ننشئ صفًا بامتداد`AllowBreakAcrossPages` تعيين الخاصية على`true` للسماح بفصل الصفحات بين الصفوف. نقوم بعد ذلك بإنشاء خلية ذات خلفية ملونة وعرض ثابت ومحتوى نصي محدد. ثم نكرر هذه الخلية لإنشاء الخلية الثانية في الصف.
+ Qui creiamo una riga con il`AllowBreakAcrossPages` proprietà impostata su`true` per consentire l'interruzione di pagina tra le righe. Quindi creiamo una cella con uno sfondo colorato, larghezza fissa e contenuto di testo specificato. Quindi duplichiamo questa cella per creare la seconda cella nella riga.
 
-## الخطوة 4: جدول ملاءمة تلقائي
-يمكننا تطبيق تعديلات تلقائية على الجدول لتنسيقه بشكل صحيح. استخدم الكود التالي:
+## Passaggio 4: tabella di adattamento automatico
+Possiamo applicare regolazioni automatiche alla tabella per formattarla correttamente. Usa il seguente codice:
 
 ```csharp
 table. AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
-يطبق سطر التعليمات البرمجية هذا احتواءًا تلقائيًا استنادًا إلى عرض العمود الثابت.
+Questa riga di codice applica un adattamento automatico basato su larghezze di colonna fisse.
 
-## الخطوة 5: تسجيل ملف
+## Passaggio 5: registrazione del file
 
-  وثيقة معدلة
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع إدراج الجدول مباشرةً. استخدم الكود التالي:
+  documento modificato
+Infine, dobbiamo salvare il documento modificato con la tabella inserita direttamente. Usa il seguente codice:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Assicurati di specificare il percorso e il nome file corretti per il documento di output.
 
-### نموذج التعليمات البرمجية المصدر لـ Insert Table مباشرة باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Inserisci tabella direttamente utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
-	// نبدأ بإنشاء كائن الجدول. لاحظ أنه يجب علينا تمرير كائن المستند
-	//منشئ كل عقدة. هذا لأن كل عقدة نقوم بإنشائها يجب أن تنتمي
-	// لبعض الوثائق.
+	// Iniziamo creando l'oggetto tabella. Si noti che dobbiamo passare l'oggetto documento
+	//al costruttore di ciascun nodo. Questo perché ogni nodo che creiamo deve appartenere
+	// a qualche documento.
 	Table table = new Table(doc);
 	doc.FirstSection.Body.AppendChild(table);
-	// هنا يمكننا أن نطلق على "ضمان الحد الأدنى" لإنشاء الصفوف والخلايا لنا. تستخدم هذه الطريقة
-	// للتأكد من أن العقدة المحددة صالحة. في هذه الحالة ، يجب أن يحتوي الجدول الصالح على صف واحد وخلية واحدة على الأقل.
-	// بدلاً من ذلك ، سنتعامل مع إنشاء الصف والجدول بأنفسنا.
-	// ستكون هذه أفضل طريقة للقيام بذلك إذا كنا ننشئ جدولًا داخل خوارزمية.
+	// Qui potremmo chiamare GuaranteeMinimum per creare le righe e le celle per noi. Questo metodo è usato
+	// per garantire che il nodo specificato sia valido. In questo caso, una tabella valida dovrebbe avere almeno una riga e una cella.
+	// Invece, ci occuperemo noi stessi della creazione della riga e della tabella.
+	// Questo sarebbe il modo migliore per farlo se stessimo creando una tabella all'interno di un algoritmo.
 	Row row = new Row(doc);
 	row.RowFormat.AllowBreakAcrossPages = true;
 	table.AppendChild(row);
-	// يمكننا الآن تطبيق أي إعدادات احتواء تلقائي.
+	// Ora possiamo applicare qualsiasi impostazione di adattamento automatico.
 	table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 	Cell cell = new Cell(doc);
 	cell.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
@@ -103,13 +103,13 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 	cell.AppendChild(new Paragraph(doc));
 	cell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 1 Text"));
 	row.AppendChild(cell);
-	// ثم نكرر العملية للخلايا والصفوف الأخرى في الجدول.
-	// يمكننا أيضًا تسريع الأمور عن طريق استنساخ الخلايا والصفوف الموجودة.
+	// Dovremmo quindi ripetere il processo per le altre celle e righe nella tabella.
+	// Possiamo anche accelerare le cose clonando celle e righe esistenti.
 	row.AppendChild(cell.Clone(false));
 	row.LastCell.AppendChild(new Paragraph(doc));
 	row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
 	doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ رمز C # المقدم ، يمكنك إدراج الجداول مباشرةً في مستندات Word برمجيًا. تتيح لك هذه الميزة إنشاء الجداول وتخصيصها وفقًا لاحتياجاتك الخاصة.
+## Conclusione
+In questo tutorial, abbiamo imparato come inserire direttamente una tabella in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, è possibile inserire tabelle direttamente nei documenti di Word a livello di codice. Questa funzionalità consente di creare e personalizzare le tabelle in base alle proprie esigenze specifiche.

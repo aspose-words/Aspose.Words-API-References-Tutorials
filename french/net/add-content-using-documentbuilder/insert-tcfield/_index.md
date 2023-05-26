@@ -1,18 +1,18 @@
 ---
-title: أدخل TCField
-linktitle: أدخل TCField
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول TCFields ومعالجتها في مستندات Word باستخدام C # و Aspose.Words for .NET في هذا الدليل التفصيلي.
+title: Insérer le champ TCField
+linktitle: Insérer le champ TCField
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Découvrez comment insérer et manipuler des TCFields dans des documents Word à l'aide de C# et Aspose.Words pour .NET dans ce guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 
-في هذا المثال ، سنوجهك خلال عملية استخدام ميزة إدراج TCField في Aspose.Words for .NET. يمثل TCField جدول محتويات إدخال في مستند Word. سنقدم شرحًا خطوة بخطوة لشفرة المصدر C # ، جنبًا إلى جنب مع الإخراج المتوقع بتنسيق تخفيض السعر. هيا بنا نبدأ!
+Dans cet exemple, nous vous guiderons tout au long du processus d'utilisation de la fonction Insérer TCField d'Aspose.Words pour .NET. Le TCField représente une entrée de table des matières dans un document Word. Nous fournirons une explication étape par étape du code source C #, ainsi que la sortie attendue au format Markdown. Commençons!
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## Étape 1 : Initialisation du document et du générateur de documents
 
-للبدء ، نحتاج إلى تهيئة المستند ومنشئ المستندات. يُعد منشئ المستندات أداة قوية توفرها Aspose.Words for .NET والتي تتيح لنا إنشاء مستندات Word ومعالجتها برمجيًا. إليك كيف يمكنك القيام بذلك:
+Pour commencer, nous devons initialiser le document et le générateur de document. Le générateur de documents est un outil puissant fourni par Aspose.Words pour .NET qui nous permet de construire et de manipuler des documents Word par programmation. Voici comment procéder :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,40 +21,40 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إدخال TCField
+## Étape 2 : Insertion du TCField
 
- بعد ذلك ، سنقوم بإدخال TCField في المستند باستخدام امتداد`InsertField` طريقة. يمثل TCField جدول محتويات إدخال مع نص الإدخال المحدد. هذا مثال:
+ Ensuite, nous allons insérer le TCField dans le document en utilisant le`InsertField` méthode. Le TCField représente une entrée de table des matières avec le texte d'entrée spécifié. Voici un exemple :
 
 ```csharp
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
-سيقوم الكود أعلاه بإدراج TCField مع نص الإدخال "Entry Text" في المستند.
+Le code ci-dessus insérera un TCField avec le texte d'entrée "Entry Text" dans le document.
 
-## الخطوة 3: حفظ المستند
+## Étape 3 : Enregistrer le document
 
- بعد إدخال TCField ، يمكننا حفظ المستند في مكان محدد باستخدام امتداد`Save` طريقة. تأكد من توفير المسار المطلوب واسم الملف للمستند الناتج. هذا مثال:
+ Après avoir inséré le TCField, nous pouvons enregistrer le document à un emplacement spécifique en utilisant le`Save` méthode. Assurez-vous de fournir le chemin et le nom de fichier souhaités pour le document de sortie. Voici un exemple :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
-سيحفظ الكود أعلاه المستند مع TCField إلى الدليل المحدد.
+Le code ci-dessus enregistrera le document avec le TCField dans le répertoire spécifié.
 
-## تنسيقات تخفيض الإخراج
+## Formats de démarque de sortie
 
-عندما يتم تنفيذ الكود بنجاح ، سيحتوي المستند الناتج على إدخال جدول محتويات مع نص الإدخال المحدد. يتم تمثيل TCField كحقل في مستند Word ، وسيعتمد تنسيق العلامة الناتج على كيفية معالجة المستند.
+Lorsque le code est exécuté avec succès, le document de sortie contiendra une entrée de table des matières avec le texte d'entrée spécifié. Le TCField est représenté sous la forme d'un champ dans le document Word, et le format Markdown résultant dépendra de la façon dont le document est traité.
 
-يرجى ملاحظة أن المستند الناتج ليس بشكل مباشر في شكل علامة التخفيض وإنما بتنسيق Word. ومع ذلك ، عند تحويل مستند Word إلى علامة التخفيضات باستخدام الأدوات أو المكتبات المناسبة ، ستتم معالجة TCField وفقًا لذلك.
+Veuillez noter que le document de sortie n'est pas directement au format Markdown mais plutôt au format Word. Cependant, lorsque vous convertissez le document Word en Markdown à l'aide d'outils ou de bibliothèques appropriés, le TCField sera traité en conséquence.
 
-### مثال رمز مصدر لإدراج TCField باستخدام Aspose.Words لـ .NET
+### Exemple de code source pour Insert TCField en utilisant Aspose.Words pour .NET
 
-إليك المثال الكامل لشفرة المصدر لإدخال TCField باستخدام Aspose.Words for .NET:
+Voici l'exemple de code source complet pour insérer un TCField en utilisant Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	
 	Document doc = new Document();
@@ -66,7 +66,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 			
 ```
 
-لا تتردد في تعديل الكود وفقًا لمتطلباتك واستكشاف الميزات الأخرى التي توفرها Aspose.Words for .NET.
+N'hésitez pas à modifier le code en fonction de vos besoins et à explorer d'autres fonctionnalités fournies par Aspose.Words pour .NET.
 
-هذا كل شيء! لقد تعلمت بنجاح كيفية إدراج TCField باستخدام Aspose.Words for .NET.
+C'est ça! Vous avez appris avec succès comment insérer un TCField en utilisant Aspose.Words pour .NET.
 

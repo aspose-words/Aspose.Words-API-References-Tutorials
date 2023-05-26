@@ -1,34 +1,34 @@
 ---
-title: أضف علامة مائية نصية مع خيارات محددة
-linktitle: أضف علامة مائية نصية مع خيارات محددة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Lägg till textvattenstämpel med specifika alternativ
+linktitle: Lägg till textvattenstämpel med specifika alternativ
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du lägger till en textvattenstämpel med specifika alternativ med Aspose.Words för .NET. Steg-för-steg guide.
 type: docs
 weight: 10
 url: /sv/net/programming-with-watermark/add-text-watermark-with-specific-options/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. العلامة المائية النصية هي نص متراكب على مستند للإشارة إلى أنه مسودة وسري وما إلى ذلك.
+I den här handledningen kommer vi att gå igenom hur du lägger till en textvattenstämpel med specifika alternativ med Aspose.Words för .NET. En textvattenstämpel är text som läggs ovanpå ett dokument för att indikera att det är ett utkast, konfidentiellt osv.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Steg 1: Använda en dokumentgenerator
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Först använder vi en dokumentgenerator för att lägga till innehåll i vårt dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## Steg 2: Ladda dokumentet
 
-سنقوم بتحميل مستند موجود باستخدام مسار المستند.
+Vi kommer att ladda ett befintligt dokument med hjälp av dokumentsökvägen.
 
 ```csharp
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## الخطوة 3: أضف علامة مائية نصية بخيارات محددة
+## Steg 3: Lägg till textvattenstämpel med specifika alternativ
 
- سنقوم بإنشاء مثيل لـ`TextWatermarkOptions` فئة وتعيين الخيارات المطلوبة للعلامة المائية النصية.
+ Vi kommer att skapa en instans av`TextWatermarkOptions` klass och ställ in önskade alternativ för textens vattenstämpel.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()
@@ -43,19 +43,19 @@ IsSemitrasparent = false
 doc.Watermark.SetText("Test", options);
 ```
 
-## الخطوة 4: احفظ المستند
+## Steg 4: Spara dokumentet
 
-أخيرًا ، يمكننا حفظ المستند بعلامة مائية نصية مضافة.
+Slutligen kan vi spara dokumentet med den tillagda textvattenstämpeln.
 
 ```csharp
 	doc.Save(dataDir + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx");
 ```
 
-### مثال على شفرة المصدر لإضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET
+### Exempel på källkod för att lägga till textvattenstämpel med specifika alternativ med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Document.docx");
 
@@ -74,5 +74,5 @@ doc.Watermark.SetText("Test", options);
 	
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET.
+Grattis! Du har nu lärt dig hur du lägger till textvattenstämpel med specifika alternativ med Aspose.Words för .NET.
 

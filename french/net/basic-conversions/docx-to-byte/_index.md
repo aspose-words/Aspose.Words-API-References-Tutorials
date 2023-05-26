@@ -1,64 +1,64 @@
 ---
-title: Docx إلى بايت
-linktitle: Docx إلى بايت
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات Word من Docx إلى مصفوفة بايت باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Docx en octet
+linktitle: Docx en octet
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à convertir des documents Word de Docx en tableau d'octets à l'aide d'Aspose.Words pour .NET. Tutoriel étape par étape avec un exemple de code source.
 type: docs
 weight: 10
 url: /fr/net/basic-conversions/docx-to-byte/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى مصفوفة بايت. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Dans ce didacticiel étape par étape, nous vous expliquerons comment utiliser Aspose.Words pour .NET pour convertir un document Word au format Docx en un tableau d'octets. Nous vous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque depuis le site officiel.
 
-## الخطوة 1: تهيئة MemoryStream
+## Étape 1 : Initialisation du MemoryStream
 
- أولاً ، قم بإنشاء مثيل لملف`MemoryStream` فئة لتخزين المستند المحول كمصفوفة بايت:
+ Tout d'abord, créez une instance de`MemoryStream` classe pour stocker le document converti sous forme de tableau d'octets :
 
 ```csharp
 MemoryStream outStream = new MemoryStream();
 ```
 
-## الخطوة 2: حفظ المستند في MemoryStream
+## Étape 2 : Enregistrer le document dans MemoryStream
 
- بعد ذلك ، استخدم ملف`Save` طريقة`Document` فئة لحفظ المستند في ملف`MemoryStream` بتنسيق Docx:
+ Ensuite, utilisez le`Save` méthode de la`Document` classe pour enregistrer le document dans la`MemoryStream` au format Docx :
 
 ```csharp
 doc.Save(outStream, SaveFormat.Docx);
 ```
 
-## الخطوة 3: تحويل MemoryStream إلى صفيف بايت
+## Étape 3 : conversion de MemoryStream en tableau d'octets
 
- لتحويل ملف`MemoryStream` الذي يحتوي على مستند Docx إلى مصفوفة بايت ، استخدم الامتداد`ToArray` طريقة:
+ Pour convertir le`MemoryStream` contenant le document Docx dans un tableau d'octets, utilisez le`ToArray` méthode:
 
 ```csharp
 byte[] docBytes = outStream.ToArray();
 ```
 
-## الخطوة 4: تهيئة MemoryStream من صفيف بايت
+## Étape 4 : Initialisation de MemoryStream à partir d'un tableau d'octets
 
- الآن ، قم بتهيئة مثيل جديد من`MemoryStream`باستخدام مصفوفة البايت التي تم الحصول عليها في الخطوة السابقة:
+ Maintenant, initialisez une nouvelle instance de`MemoryStream`en utilisant le tableau d'octets obtenu à l'étape précédente :
 
 ```csharp
 MemoryStream inStream = new MemoryStream(docBytes);
 ```
 
-## الخطوة 5: إنشاء مستند من MemoryStream
+## Étape 5 : Création d'un document à partir de MemoryStream
 
- أخيرًا ، قم بإنشاء ملف`Document` كائن من`MemoryStream`:
+ Enfin, créez un nouveau`Document` objet de la`MemoryStream`:
 
 ```csharp
 Document docFromBytes = new Document(inStream);
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند Word بتنسيق Docx إلى مصفوفة بايت باستخدام Aspose.Words for .NET.
+C'est ça! Vous avez converti avec succès un document Word au format Docx en un tableau d'octets à l'aide de Aspose.Words pour .NET.
 
-### مثال على شفرة المصدر لـ Docx To Byte باستخدام Aspose.Words for .NET
+### Exemple de code source pour Docx To Byte en utilisant Aspose.Words pour .NET
 
 ```csharp
 
-	// MemoryStream outStream = new MemoryStream () ؛
+	// MemoryStream outStream = nouveau MemoryStream();
 	doc.Save(outStream, SaveFormat.Docx);
 
 	byte[] docBytes = outStream.ToArray();
@@ -68,4 +68,4 @@ Document docFromBytes = new Document(inStream);
 	
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.

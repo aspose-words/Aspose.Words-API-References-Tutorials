@@ -1,23 +1,23 @@
 ---
-title: أعمدة الجدول المرجعية
-linktitle: أعمدة الجدول المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وضع إشارة مرجعية على عمود جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Colonne della tabella dei segnalibri
+linktitle: Colonne della tabella dei segnalibri
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come contrassegnare una colonna della tabella in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة أعمدة جدول الإشارات المرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة وضع إشارة مرجعية على عمود معين من الجدول في مستند Word والوصول إلى محتوى هذا العمود.
+In questo articolo, esploreremo il codice sorgente C# sopra per capire come usare la funzione Bookmark Table Columns nella libreria Aspose.Words per .NET. Questa funzione consente di aggiungere un segnalibro a una colonna specifica di una tabella in un documento di Word e accedere al contenuto di tale colonna.
 
-## المتطلبات الأساسية
+## Prerequisiti
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conoscenza base del linguaggio C#.
+- Ambiente di sviluppo .NET con libreria Aspose.Words installata.
 
-## الخطوة الأولى: إنشاء الجدول
+## Passaggio 1: creazione della tabella
 
- قبل إنشاء إشارة مرجعية على عمود جدول ، يجب علينا أولاً إنشاء الجدول باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نقوم بإنشاء جدول من صفين وعمودين:
+ Prima di creare un segnalibro su una colonna della tabella, dobbiamo prima creare la tabella utilizzando a`DocumentBuilder` oggetto. Nel nostro esempio, creiamo una tabella con due righe e due colonne:
 
 ```csharp
 builder. StartTable();
@@ -43,17 +43,17 @@ builder. EndRow();
 builder. EndTable();
 ```
 
-## الخطوة 2: إنشاء إشارة مرجعية للعمود
+## Passaggio 2: creazione del segnalibro della colonna
 
- نحن نستخدم ال`StartBookmark`طريقة لإنشاء إشارة مرجعية على عمود معين من الجدول. في مثالنا ، نستخدم اسم "MyBookmark" للإشارة المرجعية:
+ Noi usiamo il`StartBookmark`metodo per creare un segnalibro su una colonna specifica della tabella. Nel nostro esempio, usiamo il nome "MyBookmark" per il segnalibro:
 
 ```csharp
 builder. StartBookmark("MyBookmark");
 ```
 
-## الخطوة 3: الوصول إلى محتوى العمود
+## Passaggio 3: accedi al contenuto della colonna
 
- نتصفح جميع الإشارات المرجعية في المستند ونعرض أسمائها. إذا كانت الإشارة المرجعية عبارة عن عمود ، فإننا نصل إلى محتويات ذلك العمود باستخدام فهرس العمود وملف`GetText` طريقة:
+ Esaminiamo tutti i segnalibri nel documento e mostriamo i loro nomi. Se un segnalibro è una colonna, accediamo al contenuto di quella colonna utilizzando l'indice della colonna e il`GetText` metodo:
 
 ```csharp
 foreach (Bookmark
@@ -70,9 +70,9 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
 }
 ```
 
-### مثال على شفرة المصدر لأعمدة جدول الإشارات باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per le colonne della tabella dei segnalibri utilizzando Aspose.Words per .NET
 
-إليك نموذج شفرة المصدر الكامل لتوضيح إنشاء إشارة مرجعية في عمود الجدول باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente di esempio completo per dimostrare la creazione di un segnalibro su una colonna della tabella utilizzando Aspose.Words per .NET:
 
 ```csharp
 
@@ -120,6 +120,6 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
         
 ```
 
-## خاتمة
+## Conclusione
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة أعمدة جدول الإشارات المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لوضع إشارة مرجعية على عمود معين من الجدول في مستند Word والانتقال إلى محتويات هذا العمود.
+In questo articolo, abbiamo esplorato il codice sorgente C# per capire come usare la funzione Bookmark Table Columns di Aspose.Words per .NET. Abbiamo seguito una guida dettagliata per aggiungere ai segnalibri una colonna specifica di una tabella in un documento di Word e passare al contenuto di quella colonna.

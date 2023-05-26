@@ -1,61 +1,61 @@
 ---
-title: خطوط المجموعة الفرعية المضمنة
-linktitle: خطوط المجموعة الفرعية المضمنة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتضمين مجموعات الخطوط الفرعية في ملف PDF باستخدام Aspose.Words for .NET.
+title: Polices de sous-ensemble intégrées
+linktitle: Polices de sous-ensemble intégrées
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour incorporer des sous-ensembles de polices dans un PDF à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة تضمين مجموعة الخطوط الفرعية مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تضمين مجموعات فرعية من الخطوط في مستند وإنشاء ملف PDF يحتوي فقط على الحروف الرسومية المستخدمة في المستند.
+Cet article fournit un guide étape par étape sur l'utilisation de la fonctionnalité d'incorporation de sous-ensemble de polices avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. À la fin de ce didacticiel, vous serez en mesure de comprendre comment intégrer des sous-ensembles de polices dans un document et générer un PDF contenant uniquement les glyphes utilisés dans le document.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words pour .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
 
-## الخطوة 1: تحديد دليل المستند
+## Étape 1 : Définir le répertoire des documents
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Pour commencer, vous devez définir le chemin vers le répertoire où se trouvent vos documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel à votre répertoire de documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Étape 2 : Téléchargez le document
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Ensuite, nous devons charger le document que nous voulons traiter. Dans cet exemple, nous supposons que le document s'appelle "Rendering.docx" et se trouve dans le répertoire de documents spécifié.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF
+## Étape 3 : Configurer les options d'enregistrement au format PDF
 
- لإنشاء ملف PDF يحتوي فقط على مجموعات فرعية من الخطوط المستخدمة في المستند ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن مع`EmbedFullFonts` تعيين الخاصية على`false`.
+ Pour créer un PDF contenant uniquement les sous-ensembles de polices utilisées dans le document, nous devons configurer le`PdfSaveOptions` objet avec le`EmbedFullFonts` propriété définie sur`false`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع مجموعات الخطوط الفرعية
+## Étape 4 : Enregistrer le document au format PDF avec des sous-ensembles de polices
 
- أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام مجموعات الخطوط الفرعية. حدد اسم ملف الإخراج و`saveOptions` كائن قمنا بتكوينه في الخطوة السابقة.
+ Enfin, nous pouvons enregistrer le document au format PDF en utilisant les sous-ensembles de polices. Spécifiez le nom du fichier de sortie et le`saveOptions` objet que nous avons configuré à l'étape précédente.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تضمين مجموعات فرعية من الخطوط في مستند وإنشاء ملف PDF يحتوي فقط على الحروف الرسومية المستخدمة في المستند مع Aspose.Words for .NET.
+C'est tout ! Vous avez intégré avec succès des sous-ensembles de polices dans un document et généré un PDF contenant uniquement les glyphes utilisés dans le document avec Aspose.Words pour .NET.
 
-### عينة من التعليمات البرمجية المصدر لتضمين مجموعات فرعية من الخطوط باستخدام Aspose.Words for .NET
+### Exemple de code source pour incorporer des sous-ensembles de polices avec Aspose.Words pour .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// سيحتوي ملف PDF الناتج على مجموعات فرعية من الخطوط الموجودة في المستند.
-	// يتم تضمين الحروف الرسومية المستخدمة في الوثيقة فقط في خطوط PDF.
+	// Le PDF de sortie contiendra des sous-ensembles des polices du document.
+	// Seuls les glyphes utilisés dans le document sont inclus dans les polices PDF.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);

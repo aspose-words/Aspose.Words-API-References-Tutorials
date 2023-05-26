@@ -1,66 +1,66 @@
 ---
-title: تغيير تباعد الفقرات الآسيوية والمسافات البادئة
-linktitle: تغيير تباعد الفقرات الآسيوية والمسافات البادئة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير تباعد الفقرات الآسيوية والمسافات البادئة باستخدام Aspose.Words for .NET.
+title: Modifier l'espacement et les retraits des paragraphes asiatiques
+linktitle: Modifier l'espacement et les retraits des paragraphes asiatiques
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à modifier l'espacement et les retraits des paragraphes asiatiques avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تغيير المسافات والمسافات البادئة لفقرة آسيوية باستخدام Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+Dans ce didacticiel, nous vous expliquerons comment modifier l'espacement et les retraits d'un paragraphe asiatique à l'aide de Aspose.Words pour .NET. Suivez les étapes ci-dessous pour comprendre le code source et appliquer les modifications.
 
-## الخطوة 1: تحميل المستند
+## Étape 1 : Chargement du document
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند الذي يحتوي على الطباعة الآسيوية في كائن المستند. إليك الطريقة:
+Pour commencer, spécifiez le répertoire de vos documents et chargez le document contenant la typographie asiatique dans un objet Document. Voici comment:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Asian typography.docx");
 ```
 
-## الخطوة 2: تغيير تباعد الفقرات والمسافات البادئة
+## Étape 2 : Modification de l'espacement des paragraphes et des retraits
 
-سنقوم الآن بتعديل المسافات والمسافات البادئة للفقرة الأولى من الوثيقة الآسيوية. إليك الطريقة:
+Nous allons maintenant modifier l'espacement et les retraits du premier paragraphe du document asiatique. Voici comment:
 
 ```csharp
 ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-format.CharacterUnitLeftIndent = 10; // تحديث ParagraphFormat.LeftIndent
-format.CharacterUnitRightIndent = 10; // تحديث ParagraphFormat.RightIndent
-format.CharacterUnitFirstLineIndent = 20; // تحديث ParagraphFormat.FirstLineIndent
-format.LineUnitBefore = 5; // قم بتحديث ParagraphFormat.SpaceBefore
-format.LineUnitAfter = 10; // تحديث ParagraphFormat.SpaceAfter
+format.CharacterUnitLeftIndent = 10; // Mettre à jour ParagraphFormat.LeftIndent
+format.CharacterUnitRightIndent = 10; // Mettre à jour ParagraphFormat.RightIndent
+format.CharacterUnitFirstLineIndent = 20; // Mettre à jour ParagraphFormat.FirstLineIndent
+format.LineUnitBefore = 5; // Mettre à jour ParagraphFormat.SpaceBefore
+format.LineUnitAfter = 10; // Mettre à jour ParagraphFormat.SpaceAfter
 ```
 
-## الخطوة 3: حفظ المستند
+## Étape 3 : Enregistrer le document
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Après avoir inséré le champ du formulaire de saisie de texte, enregistrez le document à l'emplacement souhaité à l'aide de la`Save` méthode. Assurez-vous de fournir le chemin d'accès au fichier approprié :
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc");
 ```
 
-### مثال على شفرة المصدر لتغيير المسافات والمسافات البادئة للفقرات الآسيوية باستخدام Aspose.Words for .NET
+### Exemple de code source pour modifier l'espacement des paragraphes asiatiques et les retraits à l'aide de Aspose.Words pour .NET
 
-فيما يلي رمز المصدر الكامل لميزة تحرير تباعد الفقرات والمسافات البادئة الآسيوية باستخدام Aspose.Words for .NET:
+Voici le code source complet de la fonctionnalité Modifier l'espacement des paragraphes asiatiques et les retraits avec Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // سيتم تحديث ParagraphFormat.LeftIndent
-	format.CharacterUnitRightIndent = 10;      // سيتم تحديث تنسيق الفقرة
-	format.CharacterUnitFirstLineIndent = 20;  //سيتم تحديث ParagraphFormat.FirstLineIndent
-	format.LineUnitBefore = 5;                 // سيتم تحديث ParagraphFormat.SpaceBefore
-	format.LineUnitAfter = 10;                 // سيتم تحديث ParagraphFormat.SpaceAfter
+	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent sera mis à jour
+	format.CharacterUnitRightIndent = 10;      // ParagraphFormat.RightIndent sera mis à jour
+	format.CharacterUnitFirstLineIndent = 20;  //ParagraphFormat.FirstLineIndent sera mis à jour
+	format.LineUnitBefore = 5;                 // ParagraphFormat.SpaceBefore sera mis à jour
+	format.LineUnitAfter = 10;                 // ParagraphFormat.SpaceAfter sera mis à jour
 
 	doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تغيير المسافات والمسافات البادئة لفقرة آسيوية باستخدام Aspose.Words for .NET.
+Avec ce code, vous pourrez modifier l'espacement et les retraits d'un paragraphe asiatique en utilisant Aspose.Words pour .NET.
 

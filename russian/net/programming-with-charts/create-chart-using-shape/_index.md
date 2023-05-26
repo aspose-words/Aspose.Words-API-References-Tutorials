@@ -1,46 +1,46 @@
 ---
-title: إنشاء مخطط باستخدام الشكل
-linktitle: إنشاء مخطط باستخدام الشكل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء مخطط وتخصيصه باستخدام شكل في مستند Word باستخدام Aspose.Words for .NET.
+title: Создайте диаграмму, используя фигуру
+linktitle: Создайте диаграмму, используя фигуру
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как создать и настроить диаграмму с помощью фигуры в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-charts/create-chart-using-shape/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إنشاء مخطط باستخدام شكل في مستند Word باستخدام Aspose.Words for .NET.
+В этом руководстве объясняется, как создать диаграмму с использованием фигуры в документе Word с помощью Aspose.Words для .NET.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Предпосылки
+Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Установлена библиотека Aspose.Words for .NET.
+- Базовые знания C# и работы с документами Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Шаг 1. Настройте каталог документов
+ Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Шаг 2: Создайте новый документ и DocumentBuilder
+ Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для работы с документом.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدراج وتكوين شكل مخطط
- قم بإدراج شكل مخطط في المستند باستخدام امتداد`InsertChart` طريقة`DocumentBuilder` هدف. قم بتعيين نوع الرسم البياني والأبعاد المطلوبة.
+## Шаг 3. Вставьте и настройте фигуру диаграммы
+ Вставьте фигуру диаграммы в документ, используя`InsertChart` метод`DocumentBuilder` объект. Установите желаемый тип диаграммы и размеры.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 4: تخصيص الرسم البياني
-قم بتخصيص المخطط عن طريق تعديل الخصائص المختلفة مثل عنوان المخطط ووسيلة الإيضاح.
+## Шаг 4: Настройте диаграмму
+Настройте диаграмму, изменив различные свойства, такие как заголовок и легенда диаграммы.
 
 ```csharp
 chart.Title.Show = true;
@@ -50,17 +50,17 @@ chart.Legend.Position = LegendPosition.Left;
 chart.Legend.Overlay = true;
 ```
 
-## الخطوة 5: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save`طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithCharts.CreateChartUsingShape.docx".
+## Шаг 5: Сохраните документ
+ Сохраните документ в указанную директорию с помощью`Save`метод. Укажите желаемое имя файла с соответствующим расширением файла. В этом примере мы сохраняем документ как «WorkingWithCharts.CreateChartUsingShape.docx».
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 ```
 
-### مثال على التعليمات البرمجية المصدر لإنشاء مخطط باستخدام الشكل باستخدام Aspose.Words for .NET 
+### Пример исходного кода для создания диаграммы с помощью формы с использованием Aspose.Words для .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -70,10 +70,10 @@ doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 	chart.Title.Show = true;
 	chart.Title.Text = "Line Chart Title";
 	chart.Title.Overlay = false;
-	// يرجى ملاحظة أنه إذا تم تحديد قيمة خالية أو فارغة كنص عنوان ، فسيتم عرض العنوان الذي تم إنشاؤه تلقائيًا.
+	// Обратите внимание, если в качестве текста заголовка указано нулевое или пустое значение, будет отображаться автоматически сгенерированный заголовок.
 	chart.Legend.Position = LegendPosition.Left;
 	chart.Legend.Overlay = true;
 	doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إنشاء مخطط باستخدام شكل في مستند Word باستخدام Aspose.Words for .NET.
+Вот и все! Вы успешно создали диаграмму, используя фигуру в документе Word, используя Aspose.Words для .NET.

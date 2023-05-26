@@ -1,51 +1,51 @@
 ---
-title: تعيين إعدادات الخط الاحتياطي
-linktitle: تعيين إعدادات الخط الاحتياطي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين إعدادات استبدال الخطوط في Aspose.Words for .NET وتخصيص استبدال الخط في مستندات Word.
+title: Définir les paramètres de remplacement des polices
+linktitle: Définir les paramètres de remplacement des polices
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Découvrez comment définir les paramètres de substitution de police dans Aspose.Words pour .NET et personnaliser la substitution de police dans vos documents Word.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/set-font-fallback-settings/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين إعدادات استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. تسمح لك إعدادات استبدال الخط بتحديد الخطوط البديلة لاستخدامها عندما لا تكون الخطوط المحددة متاحة.
+Dans ce didacticiel, nous allons vous montrer comment définir les paramètres de substitution de police dans un document Word à l'aide de Aspose.Words pour .NET. Les paramètres de substitution de police vous permettent de spécifier les polices de remplacement à utiliser lorsque les polices spécifiées ne sont pas disponibles.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Conditions préalables
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+- Une connaissance pratique du langage de programmation C#
+- La bibliothèque Aspose.Words pour .NET installée dans votre projet
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+Commencez par définir le chemin du répertoire vers l'emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل إعدادات استبدال الخط
- قم بإنشاء مثيل لـ`FontSettings` فئة واستخدام`Load`طريقة لتحميل إعدادات تجاوز الخط من ملف XML. يجب أن يحتوي ملف XML المحدد على قواعد استبدال الخط المراد استخدامها.
+## Étape 2 : Charger les paramètres de substitution de police
+ Créer une instance de`FontSettings` classe et utiliser le`Load`méthode pour charger les paramètres de remplacement de police à partir d'un fichier XML. Le fichier XML spécifié doit contenir les règles de substitution de police à utiliser.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
 ```
 
-## الخطوة 3: تطبيق إعدادات استبدال الخط
- إقران إعدادات استبدال الخط بالمستند من خلال تخصيصها للمستند`FontSettings` ملكية.
+## Étape 3 : Appliquer les paramètres de substitution de police
+ Associez les paramètres de substitution de police au document en les attribuant aux`FontSettings` propriété.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند باستخدام ملف`Save` طريقة`Document` بالمسار واسم الملف المناسبين.
+## Étape 4 : Enregistrez le document
+ Enregistrez le document à l'aide de la`Save` méthode de la`Document` avec le chemin et le nom de fichier appropriés.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Font Fallback Settings باستخدام Aspose.Words for .NET 
+### Exemple de code source pour définir les paramètres de remplacement des polices à l'aide d'Aspose.Words pour .NET 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -55,5 +55,5 @@ doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تعيين إعدادات استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. جرب قواعد مختلفة لاستبدال الخطوط للتأكد من تناسق وثيقتك ، حتى عندما لا تكون الخطوط المحددة متاحة.
+## Conclusion
+Dans ce didacticiel, vous avez appris à définir les paramètres de substitution de police dans un document Word à l'aide de Aspose.Words pour .NET. Expérimentez avec différentes règles de substitution de polices pour vous assurer que votre document semble cohérent, même lorsque les polices spécifiées ne sont pas disponibles.

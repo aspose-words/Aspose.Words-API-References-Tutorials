@@ -1,27 +1,27 @@
 ---
-title: استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة
-linktitle: استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لاستخدام حرف مسافة لكل مستوى في قائمة المسافة البادئة في Aspose.Words for .NET. قم بإنشاء مستندات Word جيدة التنظيم بسهولة.
+title: Använd mellanslagstecken per nivå för listindrag
+linktitle: Använd mellanslagstecken per nivå för listindrag
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att använda ett mellanslagstecken per nivå för listindrag i Aspose.Words för .NET. Skapa välstrukturerade Word-dokument med lätthet.
 type: docs
 weight: 10
 url: /sv/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words إمكانية استخدام حرف مسافة واحد لكل مستوى لعمل مسافة بادئة للقوائم. في هذا الدليل ، سنوضح لك كيفية استخدام كود المصدر C # الخاص بـ Aspose.Words for .NET لتنفيذ هذه الوظيفة.
+Aspose.Words för .NET är ett kraftfullt bibliotek för att skapa, redigera och manipulera Word-dokument i en C#-applikation. Bland funktionerna som erbjuds av Aspose.Words är möjligheten att använda ett blanksteg per nivå för indragning av listor. I den här guiden kommer vi att visa dig hur du använder C#-källkoden för Aspose.Words för .NET för att implementera denna funktionalitet.
 
-## فهم مكتبة Aspose.Words
+## Förstå Aspose.Words-biblioteket
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الوظائف لإنشاء وتعديل ومعالجة مستندات Word ، بما في ذلك إدارة القوائم والمسافة البادئة.
+Innan du dyker in i koden är det viktigt att förstå Aspose.Words-biblioteket för .NET. Aspose.Words är ett populärt bibliotek som gör arbetet med Word-dokument enkelt och effektivt. Den erbjuder ett brett utbud av funktioner för att skapa, ändra och manipulera Word-dokument, inklusive hantering av listor och indrag.
 
-## إنشاء الوثيقة وإضافة المحتوى
+## Skapa dokumentet och lägga till innehåll
 
-تتمثل الخطوة الأولى في إنشاء مستند جديد وإضافة محتوى إليه. استخدم فئة المستند لإنشاء مثيل مستند جديد. ثم استخدم فئة DocumentBuilder لإضافة نص وإنشاء قائمة بمستويات متعددة من المسافة البادئة. هنا مثال :
+Det första steget är att skapa ett nytt dokument och lägga till innehåll till det. Använd klassen Document för att skapa en ny dokumentinstans. Använd sedan klassen DocumentBuilder för att lägga till text och skapa en lista med flera nivåer av indrag. Här är ett exempel :
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+// Skapa en lista med tre nivåer av indrag
 builder.ListFormat.ApplyNumberDefault();
 builder. Writen("Element 1");
 builder.ListFormat.ListIndent();
@@ -30,11 +30,11 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند جديد واستخدام DocumentBuilder لإضافة نص وإنشاء قائمة بثلاثة مستويات من المسافة البادئة. لقد أضفنا ثلاثة عناصر إلى القائمة ، مع وضع مسافة بادئة لكل عنصر في مستوى إضافي.
+I det här exemplet skapar vi ett nytt dokument och använder DocumentBuilder för att lägga till text och skapa en lista med tre nivåer av indrag. Vi har lagt till tre objekt till listan, med varje objekt indraget en extra nivå.
 
-## استخدام مسافة واحدة لكل مستوى للمسافة البادئة للقائمة
+## Använder ett blanksteg per nivå för listindrag
 
-بمجرد إضافة المحتوى ، يمكننا الآن تكوين المسافة البادئة للقوائم باستخدام حرف مسافة واحد لكل مستوى. لهذا نستخدم فئة TxtSaveOptions وقمنا بتعيين خاصية ListIndentation.Count على عدد مستويات المسافة البادئة وخاصية ListIndentation.Character إلى حرف المسافة المراد استخدامه. إليك الطريقة:
+När innehållet har lagts till kan vi nu konfigurera indragningen av listorna med ett blanksteg per nivå. För detta använder vi klassen TxtSaveOptions och vi ställer in egenskapen ListIndentation.Count till antalet indragsnivåer och egenskapen ListIndentation.Character till det blanksteg som ska användas. Här är hur:
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -44,11 +44,11 @@ saveOptions.ListIndentation.Character = ' ';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-في هذا المثال ، أنشأنا مثيلًا لـ TxtSaveOptions وقمنا بتعيين خاصية ListIndentation.Count على 3 للإشارة إلى وجود ثلاثة مستويات من المسافة البادئة في القائمة. قمنا أيضًا بتعيين خاصية ListIndentation.Character إلى حرف المسافة ('') الذي نريد استخدامه للمسافة البادئة.
+I det här exemplet skapar vi en instans av TxtSaveOptions och ställer in egenskapen ListIndentation.Count till 3 för att indikera att det finns tre nivåer av indrag i listan. Vi ställer också in egenskapen ListIndentation.Character till det blanksteg (' ') som vi vill använda för indrag.
 
-### مثال على شفرة المصدر لميزة "استخدام حرف مسافة واحد لكل مستوى للمسافة البادئة للقائمة" مع Aspose.Words for .NET
+### Exempel på källkod för funktionen "Använd ett blanksteg per nivå för listindrag" med Aspose.Words för .NET
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لميزة "استخدام حرف مسافة واحد لكل مستوى للمسافة البادئة للقائمة" مع Aspose.Words for .NET:
+Här är den kompletta källkoden för funktionen "Använd ett blanksteg per nivå för listindrag" med Aspose.Words för .NET:
 
 ```csharp
 
@@ -61,14 +61,14 @@ namespace Example
      {
          static void Main(string[] args)
          {
-             // المسار إلى دليل المستند الخاص بك
+             // Sökväg till din dokumentkatalog
              string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-             // قم بإنشاء المستند وإضافة محتوى
+             // Skapa dokumentet och lägg till innehåll
              Document doc = new Document();
              DocumentBuilder builder = new DocumentBuilder(doc);
 
-             // قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+             // Skapa en lista med tre nivåer av indrag
              builder.ListFormat.ApplyNumberDefault();
              builder. Writen("Element 1");
              builder.ListFormat.ListIndent();
@@ -76,12 +76,12 @@ namespace Example
              builder.ListFormat.ListIndent();
              builder.Write("Element 3");
 
-             // استخدم مسافة واحدة لكل مستوى للمسافة البادئة للقائمة
+             // Använd ett blanksteg per nivå för listindrag
              TxtSaveOptions saveOptions = new TxtSaveOptions();
              saveOptions.ListIndentation.Count = 3;
              saveOptions.ListIndentation.Character = ' ';
 
-             // احفظ المستند بالخيارات المحددة
+             // Spara dokumentet med de angivna alternativen
              doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
          }
      }
@@ -89,6 +89,6 @@ namespace Example
 
 ```
 
-## خاتمة
+## Slutsats
 
-في هذا الدليل ، أوضحنا كيفية استخدام Aspose.Words for .NET لتطبيق وظيفة "استخدام حرف مسافة واحد لكل مستوى من أجل المسافة البادئة للقائمة". باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تكوين المسافة البادئة للقوائم في مستندات Word الخاصة بك باستخدام حرف مسافة واحد لكل مستوى. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع تنسيق النص وإدارة القوائم ، مما يسمح لك بإنشاء مستندات جيدة التنظيم في تطبيق C # الخاص بك.
+den här guiden förklarade vi hur man använder Aspose.Words för .NET för att tillämpa funktionen "Använd ett blanksteg per nivå för listindrag". Genom att följa de angivna stegen och använda den medföljande C#-källkoden kan du enkelt konfigurera indragningen av listor i dina Word-dokument med ett blanksteg per nivå. Aspose.Words erbjuder en enorm flexibilitet och kraft för att arbeta med textformatering och listhantering, vilket gör att du kan skapa välstrukturerade dokument i din C#-applikation.

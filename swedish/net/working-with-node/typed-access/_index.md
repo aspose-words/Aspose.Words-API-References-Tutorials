@@ -1,62 +1,62 @@
 ---
-title: الوصول المكتوب
-linktitle: الوصول المكتوب
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام الوصول المكتوب لمعالجة الجداول في Aspose.Words for .NET.
+title: Skrivet åtkomst
+linktitle: Skrivet åtkomst
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder maskinskriven åtkomst för att manipulera tabeller i Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-node/typed-access/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية استخدام ميزة الوصول المكتوب مع Aspose.Words for .NET.
+Här är en steg-för-steg-guide för att förklara C#-källkoden nedan som illustrerar hur man använder funktionen Typad Access med Aspose.Words för .NET.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Steg 1: Importera nödvändiga referenser
+Innan du börjar, se till att du har importerat de nödvändiga referenserna för att använda Aspose.Words för .NET i ditt projekt. Detta inkluderar att importera Aspose.Words-biblioteket och lägga till de nödvändiga namnområdena till din källfil.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## Steg 2: Skapa ett nytt dokument
+ I det här steget kommer vi att skapa ett nytt dokument med hjälp av`Document` klass.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: قم بالوصول إلى القسم والجسم
-للوصول إلى الجداول الواردة في المستند ، يجب علينا أولاً الوصول إلى قسم ونص الوثيقة.
+## Steg 3: Gå till avsnittet och kroppen
+För att komma åt tabellerna i dokumentet måste vi först komma åt avsnittet och dokumentets brödtext.
 
 ```csharp
 Section section = doc.FirstSection;
 Body body = section.Body;
 ```
 
-## الخطوة 4: الوصول السريع والمكتوب إلى الجداول
-الآن بعد أن أصبح لدينا نص المستند ، يمكننا استخدام الوصول السريع والمكتوب للوصول إلى جميع الجداول الموجودة في النص.
+## Steg 4: Snabb och maskinskriven åtkomst till tabeller
+Nu när vi har huvuddelen av dokumentet kan vi använda snabb och maskinskriven åtkomst för att komma åt alla tabeller som finns i brödtexten.
 
 ```csharp
 TableCollection tables = body.Tables;
 ```
 
-## الخطوة 5: تصفح الجداول
- باستخدام ملف`foreach` loop ، يمكننا المرور عبر جميع الجداول وإجراء عمليات محددة على كل جدول.
+## Steg 5: Bläddra bland tabeller
+ Genom att använda en`foreach` loop kan vi gå igenom alla tabeller och utföra specifika operationer på varje tabell.
 
 ```csharp
 foreach(Table table in tables)
 {
-     // الوصول السريع والمكتوب إلى الصف الأول من الجدول.
+     // Snabb och maskinskriven åtkomst till den första raden i tabellen.
      table.FirstRow?.Remove();
 
-     // الوصول السريع والمكتوب إلى الصف الأخير من الجدول.
+     // Snabb och maskinskriven åtkomst till den sista raden i tabellen.
      table.LastRow?.Remove();
 }
 ```
 
-في هذا المثال ، نحذف الصف الأول والأخير من كل جدول باستخدام الوصول السريع والمكتوب المقدم من Aspose.Words.
+det här exemplet tar vi bort den första och sista raden i varje tabell med den snabba och maskinskrivna åtkomsten som tillhandahålls av Aspose.Words.
 
-### نموذج التعليمات البرمجية المصدر للوصول المكتوب باستخدام Aspose.Words for .NET
+### Exempel på källkod för maskinskriven åtkomst med Aspose.Words för .NET
 
 ```csharp
 	Document doc = new Document();
@@ -64,20 +64,20 @@ foreach(Table table in tables)
 	Section section = doc.FirstSection;
 	Body body = section.Body;
 	
-	// وصول سريع مكتوب إلى جميع العقد الفرعية التابعة للجدول الموجودة في النص الأساسي.
+	// Snabbskriven åtkomst till alla underordnade tabellnoder som finns i kroppen.
 	TableCollection tables = body.Tables;
 
 	foreach (Table table in tables)
 	{
-		// وصول سريع مكتوب إلى الصف الأول من الجدول.
+		// Snabbskriven åtkomst till den första raden i tabellen.
 		table.FirstRow?.Remove();
 
-		// وصول سريع مكتوب إلى الصف الأخير من الجدول.
+		// Snabbskriven åtkomst till den sista raden i tabellen.
 		table.LastRow?.Remove();
 	}
             
 ```
 
-هذا نموذج كامل من التعليمات البرمجية للوصول المكتوب إلى الجداول باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Detta är en komplett exempelkod för maskinskriven åtkomst till tabeller med Aspose.Words för .NET. Var noga med att importera nödvändiga referenser och följ stegen som beskrivits tidigare för att integrera denna kod i ditt projekt.
 
 ---

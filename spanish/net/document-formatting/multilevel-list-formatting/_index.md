@@ -1,29 +1,29 @@
 ---
-title: تنسيق قائمة متعددة المستويات
-linktitle: تنسيق قائمة متعددة المستويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء قائمة متعددة المستويات وتطبيق تنسيق مخصص باستخدام Aspose.Words for .NET.
+title: Formato de lista multinivel
+linktitle: Formato de lista multinivel
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a crear una lista de varios niveles y aplicar formato personalizado con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/document-formatting/multilevel-list-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية استخدام ميزة تنسيق القائمة متعددة المستويات مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+En este tutorial, le mostraremos cómo usar la función de formato de lista multinivel con Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Paso 1: Crear y configurar el documento
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Para comenzar, cree un nuevo documento y un objeto DocumentBuilder asociado. Así es cómo:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تنسيق القائمة متعددة المستويات
+## Paso 2: Dar formato a la lista multinivel
 
-سنقوم الآن بتطبيق تنسيق القائمة متعدد المستويات باستخدام الطرق المتاحة في كائن DocumentBuilder. إليك الطريقة:
+Ahora aplicaremos el formato de lista multinivel utilizando los métodos disponibles en el objeto DocumentBuilder. Así es cómo:
 
 ```csharp
 builder.ListFormat.ApplyNumberDefault();
@@ -47,22 +47,22 @@ builder.Writeln("Element 3");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## الخطوة 3: حفظ المستند
+## Paso 3: Guardar el documento
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Después de insertar el campo de formulario de entrada de texto, guarde el documento en la ubicación deseada usando el`Save` método. Asegúrese de proporcionar la ruta de archivo adecuada:
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 ```
 
-### مثال على شفرة المصدر لتنسيق قائمة متعددة المستويات باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para el formato de lista multinivel usando Aspose.Words para .NET
 
-فيما يلي رمز المصدر الكامل لميزة تنسيق القائمة متعددة المستويات باستخدام Aspose.Words for .NET:
+Aquí está el código fuente completo para la función de formato de lista multinivel con Aspose.Words para .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -91,4 +91,4 @@ doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من إنشاء قائمة متعددة المستويات وتطبيق التنسيق المناسب على كل مستوى باستخدام Aspose.Words for .NET.
+Con este código podrá crear una lista de varios niveles y aplicar el formato adecuado a cada nivel utilizando Aspose.Words para .NET.

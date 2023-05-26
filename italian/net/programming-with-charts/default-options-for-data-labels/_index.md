@@ -1,44 +1,44 @@
 ---
-title: الخيارات الافتراضية لتسميات البيانات
-linktitle: الخيارات الافتراضية لتسميات البيانات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين الخيارات الافتراضية لتسميات البيانات في مخطط باستخدام Aspose.Words for .NET.
+title: Opzioni predefinite per le etichette dati
+linktitle: Opzioni predefinite per le etichette dati
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come impostare le opzioni predefinite per le etichette dei dati in un grafico utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-charts/default-options-for-data-labels/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين الخيارات الافتراضية لتسميات البيانات في الرسم البياني. يوضح الكود المقدم كيفية إنشاء مخطط وإضافة سلسلة بيانات وتخصيص تسميات البيانات باستخدام Aspose.Words.
+Questo tutorial spiega come utilizzare Aspose.Words per .NET per impostare le opzioni predefinite per le etichette dati in un grafico. Il codice fornito mostra come creare un grafico, aggiungere serie di dati e personalizzare le etichette dei dati utilizzando Aspose.Words.
 
-## الخطوة 1: قم بإعداد المشروع
+## Passaggio 1: impostare il progetto
 
-قبل أن نبدأ ، تأكد من توفر المتطلبات التالية:
+Prima di iniziare, assicurati di disporre dei seguenti requisiti:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words per la libreria .NET installata. Puoi scaricarlo dal sito Web ufficiale di Aspose o utilizzare il gestore di pacchetti NuGet per installarlo.
+- Un percorso di directory del documento in cui verrà salvato il documento di output.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Passaggio 2: crea un nuovo documento e inserisci un grafico
 
- أولاً ، لنقم بإنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Per prima cosa, creiamo un nuovo`Document` oggetto e a`DocumentBuilder` per costruire il documento.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، نقوم بإدراج مخطط في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`. في هذا المثال ، سنقوم بإدراج مخطط دائري.
+ Successivamente, inseriamo un grafico nel documento utilizzando il file`InsertChart` metodo del`DocumentBuilder`. In questo esempio, inseriremo un grafico a torta.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف سلسلة البيانات إلى الرسم البياني
+## Passaggio 3: aggiungere serie di dati al grafico
 
-الآن ، دعنا نضيف سلسلة بيانات إلى المخطط. في هذا المثال ، سنضيف ثلاث فئات والقيم المقابلة لها.
+Ora, aggiungiamo una serie di dati al grafico. In questo esempio, aggiungeremo tre categorie e i valori corrispondenti.
 
 ```csharp
 chart.Series.Clear();
@@ -47,15 +47,15 @@ ChartSeries series = chart.Series.Add("Aspose Series 1",
     new double[] { 2.7, 3.2, 0.8 });
 ```
 
-## الخطوة 4: تخصيص تسميات البيانات
+## Passaggio 4: personalizzare le etichette dei dati
 
- لتخصيص تسميات البيانات في المخطط ، نحتاج إلى الوصول إلى ملف`ChartDataLabelCollection` الكائن المرتبط بالسلسلة.
+ Per personalizzare le etichette dei dati nel grafico, dobbiamo accedere al file`ChartDataLabelCollection` oggetto associato alla serie.
 
 ```csharp
 ChartDataLabelCollection labels = series.DataLabels;
 ```
 
- يمكننا بعد ذلك تعديل الخصائص المختلفة لملف`labels` لتعيين الخيارات المطلوبة لتسميات البيانات. في هذا المثال ، سنقوم بتمكين عرض النسبة المئوية والقيمة ، وتعطيل الخطوط البادئة ، وتعيين فاصل مخصص.
+ Possiamo quindi modificare varie proprietà del file`labels` oggetto per impostare le opzioni desiderate per le etichette dei dati. In questo esempio, abiliteremo la visualizzazione della percentuale e del valore, disabiliteremo le linee guida e imposteremo un separatore personalizzato.
 
 ```csharp
 labels.ShowPercentage = true;
@@ -64,20 +64,20 @@ labels.ShowLeaderLines = false;
 labels.Separator = " - ";
 ```
 
-## الخطوة 5: احفظ المستند
+## Passaggio 5: salvare il documento
 
- أخيرًا ، نحفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Infine, salviamo il documento nella directory specificata utilizzando il file`Save` metodo del`Document` oggetto.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ```
 
-هذا يكمل تنفيذ إعداد الخيارات الافتراضية لتسميات البيانات في مخطط باستخدام Aspose.Words for .NET.
+Questo completa l'implementazione dell'impostazione delle opzioni predefinite per le etichette dei dati in un grafico utilizzando Aspose.Words per .NET.
 
-### مثال على شفرة المصدر للخيارات الافتراضية لعناوين البيانات باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per le opzioni predefinite per le etichette dati utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

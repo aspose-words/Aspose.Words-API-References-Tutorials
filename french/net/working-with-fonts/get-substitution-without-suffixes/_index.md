@@ -1,33 +1,33 @@
 ---
-title: احصل على استبدال بدون لاحقات
-linktitle: احصل على استبدال بدون لاحقات
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تجاوزات غير لاحقة في مستند Word باستخدام Aspose.Words for .NET.
+title: Obtenir une substitution sans suffixes
+linktitle: Obtenir une substitution sans suffixes
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Dans ce didacticiel, découvrez comment obtenir des remplacements sans suffixe dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية الحصول على التجاوزات بدون اللواحق في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تُستخدم البدائل بدون لاحقات لحل مشاكل استبدال الخط عند عرض المستندات أو طباعتها. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Dans ce didacticiel, nous allons vous montrer comment obtenir les remplacements sans suffixes dans un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. Les substitutions sans suffixes sont utilisées pour résoudre les problèmes de substitution de police lors de l'affichage ou de l'impression de documents. Nous vous guiderons étape par étape pour vous aider à comprendre et à implémenter le code dans votre projet .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Conditions préalables
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+- Une connaissance pratique du langage de programmation C#
+- La bibliothèque Aspose.Words pour .NET installée dans votre projet
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+ Tout d'abord, vous devez définir le chemin du répertoire vers l'emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وتكوين الاستبدالات بدون لاحقات
- بعد ذلك ، سنقوم بتحميل المستند باستخدام ملف`Document` فئة وتكوين بدائل غير لاحقة باستخدام`DocumentSubstitutionWarnings` فصل. سنضيف أيضًا مصدر خط عن طريق تحديد مجلد يحتوي على الخطوط.
+## Étape 2 : Chargez le document et configurez les substitutions sans suffixes
+ Ensuite, nous allons charger le document en utilisant le`Document` classer et configurer des substitutions sans suffixe à l'aide de`DocumentSubstitutionWarnings` classe. Nous ajouterons également une source de polices en spécifiant un dossier contenant les polices.
 
 ```csharp
-//قم بتحميل المستند وتكوين الاستبدالات بدون لاحقات
+//Charger le document et configurer les substitutions sans suffixes
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
 DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
 doc.WarningCallback = substitutionWarningHandler;
@@ -39,18 +39,18 @@ FontSourceBase[] updatedFontSources = fontSources.ToArray();
 FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
 ```
 
-## الخطوة 3: احفظ المستند
-أخيرًا ، سنحفظ المستند مع تطبيق التجاوزات بدون لاحقة.
+## Étape 3 : Enregistrez le document
+Enfin, nous enregistrerons le document avec les remplacements sans suffixe appliqués.
 
 ```csharp
-// احفظ المستند
+// Enregistrer le document
 doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر للحصول على استبدال بدون لاحقات باستخدام Aspose.Words for .NET 
+### Exemple de code source pour obtenir une substitution sans suffixes à l'aide d'Aspose.Words pour .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
@@ -65,5 +65,5 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الحصول على الإلغاءات بدون اللواحق في مستند Word باستخدام Aspose.Words for .NET. الاستبدالات بدون لاحقات مفيدة لحل مشاكل استبدال الخط. لا تتردد في استخدام هذه الميزة لتحسين عرض وطباعة مستنداتك.
+## Conclusion
+Dans ce didacticiel, nous avons vu comment obtenir les remplacements sans suffixes dans un document Word avec Aspose.Words pour .NET. Les substitutions sans suffixes sont utiles pour résoudre les problèmes de substitution de polices. N'hésitez pas à utiliser cette fonctionnalité pour améliorer l'affichage et l'impression de vos documents.

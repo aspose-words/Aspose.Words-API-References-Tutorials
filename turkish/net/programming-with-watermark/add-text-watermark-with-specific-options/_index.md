@@ -1,34 +1,34 @@
 ---
-title: أضف علامة مائية نصية مع خيارات محددة
-linktitle: أضف علامة مائية نصية مع خيارات محددة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Belirli Seçeneklerle Metin Filigranı Ekleyin
+linktitle: Belirli Seçeneklerle Metin Filigranı Ekleyin
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak belirli seçeneklerle metin filigranı eklemeyi öğrenin. Adım adım rehber.
 type: docs
 weight: 10
 url: /tr/net/programming-with-watermark/add-text-watermark-with-specific-options/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. العلامة المائية النصية هي نص متراكب على مستند للإشارة إلى أنه مسودة وسري وما إلى ذلك.
+Bu öğreticide, Aspose.Words for .NET kullanarak belirli seçeneklerle nasıl metin filigranı ekleyeceğinizi size göstereceğiz. Metin filigranı, taslak, gizli vb. olduğunu belirtmek için bir belgenin üzerine eklenen metindir.
 
-## الخطوة 1: استخدام منشئ المستندات
+## 1. Adım: Bir belge oluşturucu kullanma
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+İlk olarak, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-سنقوم بتحميل مستند موجود باستخدام مسار المستند.
+Belge yolunu kullanarak mevcut bir belgeyi yükleyeceğiz.
 
 ```csharp
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## الخطوة 3: أضف علامة مائية نصية بخيارات محددة
+## 3. Adım: Belirli seçeneklerle metin filigranı ekleyin
 
- سنقوم بإنشاء مثيل لـ`TextWatermarkOptions` فئة وتعيين الخيارات المطلوبة للعلامة المائية النصية.
+ örneğini oluşturacağız`TextWatermarkOptions` sınıfını seçin ve metin filigranı için istediğiniz seçenekleri ayarlayın.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()
@@ -43,19 +43,19 @@ IsSemitrasparent = false
 doc.Watermark.SetText("Test", options);
 ```
 
-## الخطوة 4: احفظ المستند
+## 4. Adım: Belgeyi kaydedin
 
-أخيرًا ، يمكننا حفظ المستند بعلامة مائية نصية مضافة.
+Son olarak, eklenen metin filigranı ile belgeyi kaydedebiliriz.
 
 ```csharp
 	doc.Save(dataDir + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx");
 ```
 
-### مثال على شفرة المصدر لإضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile belirli seçeneklerle metin filigranı eklemek için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Document.docx");
 
@@ -74,5 +74,5 @@ doc.Watermark.SetText("Test", options);
 	
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET.
+Tebrikler! Artık Aspose.Words for .NET kullanarak belirli seçeneklerle metin filigranı eklemeyi öğrendiniz.
 

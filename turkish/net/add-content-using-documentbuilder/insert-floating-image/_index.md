@@ -1,29 +1,29 @@
 ---
-title: إدراج صورة عائمة
-linktitle: إدراج صورة عائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الصور العائمة في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Kayan Resim Ekle
+linktitle: Kayan Resim Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerine kayan görüntüleri nasıl ekleyeceğinizi öğrenin. Adım adım rehber.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-floating-image/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج صورة عائمة في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إضافة صور مع خيارات تحديد الموضع والتفاف القابلة للتخصيص إلى مستنداتك.
+Bu kapsamlı örnekte, Aspose.Words for .NET kullanarak bir Word belgesine kayan bir görüntünün nasıl ekleneceğini öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, belgelerinize özelleştirilebilir konumlandırma ve kaydırma seçenekleriyle resimler ekleyebileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesi başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل صورة عائمة
-بعد ذلك ، استخدم طريقة InsertImage لفئة DocumentBuilder لإدراج صورة عائمة. قم بتوفير مسار ملف الصورة والموضع الأفقي والرأسي النسبي والعرض والارتفاع وخيارات الالتفاف كمعلمات:
+## 2. Adım: Bir Kayan Görüntü Ekleyin
+Ardından, kayan bir görüntü eklemek için DocumentBuilder sınıfının InsertImage yöntemini kullanın. Görüntü dosyası yolu, göreli yatay ve dikey konum, genişlik, yükseklik ve kaydırma seçeneklerini parametre olarak sağlayın:
 
 ```csharp
 builder.InsertImage(ImagesDir + "Transparent background logo.png",
@@ -36,16 +36,16 @@ builder.InsertImage(ImagesDir + "Transparent background logo.png",
 	WrapType.Square);
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الصورة العائمة ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 3. Adım: Belgeyi Kaydedin
+Kayan görüntüyü ekledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
 ```
 
-## مثال على كود المصدر لإدراج صورة عائمة باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لإدخال صورة عائمة باستخدام Aspose.Words for .NET:
-تعد الصور العائمة مفيدة لسيناريوهات مختلفة ، مثل إضافة الشعارات أو الرسوم التوضيحية أو العناصر الزخرفية التي يمكن وضعها بشكل مستقل عن نص المستند.
+## Aspose.Words for .NET kullanarak Kayan Görüntü Eklemek için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak kayan bir görüntü eklemek için eksiksiz kaynak kodu burada:
+Kayan resimler, belge metninden bağımsız olarak konumlandırılabilen logolar, resimler veya dekoratif öğeler eklemek gibi çeşitli senaryolar için kullanışlıdır.
 
 ```csharp
 
@@ -65,8 +65,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx
 	
 ```
 
-تذكر أن تقوم بضبط الكود وفقًا لمتطلباتك المحددة ، بما في ذلك مسار ملف الصورة وخيارات الموضع والالتفاف المطلوبة.
+Görüntü dosyası yolu ve istenen konumlandırma ve sarma seçenekleri dahil olmak üzere kodu, özel gereksinimlerinize göre ayarlamayı unutmayın.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج صورة عائمة في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك بصور عائمة جذابة وقابلة للتخصيص.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine kayan bir görüntünün nasıl ekleneceğini başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, artık belgelerinizi görsel olarak çekici ve özelleştirilebilir kayan görüntülerle geliştirebilirsiniz.
 

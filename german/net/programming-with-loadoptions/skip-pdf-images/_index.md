@@ -1,52 +1,52 @@
 ---
-title: تخطي صور PDF
-linktitle: تخطي صور PDF
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل مستند PDF مع تخطي تحميل صور PDF باستخدام Aspose.Words for .NET.
+title: PDF-Bilder überspringen
+linktitle: PDF-Bilder überspringen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein PDF-Dokument laden und dabei das Laden von PDF-Bildern überspringen.
 type: docs
 weight: 10
 url: /de/net/programming-with-loadoptions/skip-pdf-images/
 ---
 
-عند العمل مع مستندات PDF في تطبيق C # ، قد يكون من الضروري تخطي تحميل صور PDF لأسباب تتعلق بالأداء أو إدارة مساحة التخزين. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تخطي تحميل صور PDF باستخدام خيارات تحميل PdfLoadOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري لـ .NET C # لتحميل مستند PDF عن طريق تخطي تحميل صور PDF باستخدام خيارات تحميل PdfLoadOptions.
+Beim Arbeiten mit PDF-Dokumenten in einer C#-Anwendung kann es aus Gründen der Leistung oder der Speicherplatzverwaltung erforderlich sein, das Laden von PDF-Bildern zu überspringen. Mit der Aspose.Words-Bibliothek für .NET können Sie das Laden von PDF-Bildern mithilfe der Ladeoptionen von PdfLoadOptions problemlos überspringen. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung von Aspose.Words für .NET C#-Quellcode zum Laden eines PDF-Dokuments, indem wir das Laden von PDF-Bildern mithilfe der Ladeoptionen von PdfLoadOptions überspringen.
 
-## فهم مكتبة Aspose.Words
+## Grundlegendes zur Aspose.Words-Bibliothek
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten, Konvertieren und Schützen von Word-Dokumenten auf verschiedenen Plattformen, einschließlich .NET. Es bietet viele Funktionen zum Bearbeiten von Dokumenten, wie zum Beispiel das Einfügen von Text, das Ändern von Formatierungen, das Hinzufügen von Abschnitten und vieles mehr.
 
-## تكوين خيارات التحميل
+## Ladeoptionen konfigurieren
 
-الخطوة الأولى هي تكوين خيارات التحميل لوثيقة PDF الخاصة بنا. استخدم فئة PdfLoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى ضبط خاصية SkipPdfImages على true لتخطي تحميل صور PDF. هيريس كيفية القيام بذلك:
+Der erste Schritt besteht darin, die Ladeoptionen für unser PDF-Dokument zu konfigurieren. Verwenden Sie die PdfLoadOptions-Klasse, um Ladeparameter anzugeben. In unserem Fall müssen wir die SkipPdfImages-Eigenschaft auf true setzen, um das Laden von PDF-Bildern zu überspringen. So geht's:
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 ```
 
-نقوم بإنشاء كائن PdfLoadOptions جديد وتعيين خاصية SkipPdfImages على true لتخطي تحميل صور PDF.
+Wir erstellen ein neues PdfLoadOptions-Objekt und setzen die SkipPdfImages-Eigenschaft auf „true“, um das Laden von PDF-Bildern zu überspringen.
 
-## قم بتحميل مستند PDF بتخطي صور PDF
+## Laden Sie ein PDF-Dokument und überspringen Sie PDF-Bilder
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل مستند PDF باستخدام فئة المستند وتحديد خيارات التحميل. هنا مثال :
+Nachdem wir nun die Ladeoptionen konfiguriert haben, können wir das PDF-Dokument mithilfe der Document-Klasse laden und die Ladeoptionen angeben. Hier ist ein Beispiel :
 
 ```csharp
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل مستند PDF "Pdf Document.pdf" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+In diesem Beispiel laden wir das PDF-Dokument „Pdf Document.pdf“, das sich im Dokumentenverzeichnis befindet, mit den angegebenen Ladeoptionen.
 
-### مثال على شفرة المصدر لـ PdfLoadOptions مع وظيفة "تخطي صور PDF" باستخدام Aspose.Words for .NET
+### Beispielquellcode für PdfLoadOptions mit der Funktion „PDF-Bilder überspringen“ unter Verwendung von Aspose.Words für .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "تخطي صور Pdf"
+// Konfigurieren Sie Ladeoptionen mit der Funktion „PDF-Bilder überspringen“.
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 
-// قم بتحميل مستند PDF متخطياً صور PDF
+// Laden Sie das PDF-Dokument und überspringen Sie die PDF-Bilder
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند PDF مع تخطي تحميل صور PDF باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يمكن أن يؤدي تخطي تحميل صور PDF إلى تحسين الأداء وإدارة مساحة التخزين عند معالجة مستندات PDF.
+In dieser Anleitung haben wir erklärt, wie man ein PDF-Dokument lädt und dabei das Laden von PDF-Bildern mit der Aspose.Words-Bibliothek für .NET überspringt. Indem Sie die bereitgestellten Schritte befolgen und den bereitgestellten C#-Quellcode verwenden, können Sie diese Funktionalität problemlos in Ihrer C#-Anwendung anwenden. Das Überspringen des Ladens von PDF-Bildern kann die Leistung und die Speicherplatzverwaltung bei der Verarbeitung von PDF-Dokumenten verbessern.

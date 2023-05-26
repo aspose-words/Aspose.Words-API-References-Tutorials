@@ -1,28 +1,28 @@
 ---
-title: قم بتعيين تنسيق الخط
-linktitle: قم بتعيين تنسيق الخط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET وإنشاء مستندات جذابة.
+title: Yazı Tipi Formatını Ayarla
+linktitle: Yazı Tipi Formatını Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgesinde yazı tipi biçimlendirmesini nasıl ayarlayacağınızı öğrenin ve çekici belgeler oluşturun.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-font-formatting/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET. سوف تتعلم كيفية تطبيق أنماط مثل الغامق واللون والمائل والخط والحجم والتباعد والتسطير.
+Bu öğreticide, size Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi biçimlendirmesini nasıl ayarlayacağınızı göstereceğiz. Kalın, renkli, italik, yazı tipi, boyut, boşluk ve altı çizili gibi stilleri nasıl uygulayacağınızı öğreneceksiniz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+Dizin yolunu Word belgenizin konumuna ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بإنشاء وتنسيق المستند
- قم بإنشاء مثيل لـ`Document` الطبقة و`DocumentBuilder` فئة لبناء الوثيقة. استخدم ال`Font` ممتلكات`DocumentBuilder` للوصول إلى خصائص تنسيق الخط.
+## 2. Adım: Belgeyi oluşturun ve biçimlendirin
+ örneğini oluşturun`Document` sınıf ve`DocumentBuilder` belgeyi oluşturmak için sınıf. Kullan`Font` mülkiyeti`DocumentBuilder` yazı tipi biçimlendirme özelliklerine erişmek için.
 
 ```csharp
 Document doc = new Document();
@@ -38,17 +38,17 @@ font.Underline = Underline.Double;
 builder.Writeln("I'm a very nicely formatted string.");
 ```
 
-## الخطوة 3: احفظ المستند
- استخدم ال`Save` طريقة لحفظ المستند مع تنسيق الخط المطبق. يستبدل`"WorkingWithFonts.SetFontFormatting.docx"` مع اسم الملف المطلوب.
+## 3. Adım: Belgeyi kaydedin
+ Kullan`Save` yazı tipi biçimlendirmesi uygulanmış olarak belgeyi kaydetme yöntemi. Yer değiştirmek`"WorkingWithFonts.SetFontFormatting.docx"` İstenen dosya adıyla.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Font Formatting باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Yazı Tipi Biçimlendirmesini Ayarlamak için örnek kaynak kodu 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -66,5 +66,5 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 
 ```
 
-## خاتمة
-تهنئة ! أنت تعرف الآن كيفية تعيين تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET. يمكنك استكشاف المزيد من خيارات تنسيق الخط وإنشاء مستندات Word مخصصة وجذابة.
+## Çözüm
+Tebrikler! Artık Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi biçimlendirmesini nasıl ayarlayacağınızı biliyorsunuz. Daha fazla yazı tipi biçimlendirme seçeneği keşfedebilir ve kişiselleştirilmiş ve çekici Word belgeleri oluşturabilirsiniz.

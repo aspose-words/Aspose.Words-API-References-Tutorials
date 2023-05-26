@@ -1,54 +1,54 @@
 ---
-title: إزالة فواصل الصفحات
-linktitle: إزالة فواصل الصفحات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة فواصل الصفحات في مستند باستخدام Aspose.Words Library for .NET. اتبع دليلنا المفصل خطوة بخطوة للحصول على تخطيط سلس.
+title: Eliminar saltos de página
+linktitle: Eliminar saltos de página
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a eliminar saltos de página en un documento con la biblioteca Aspose.Words para .NET. Siga nuestra guía paso a paso para un diseño perfecto.
 type: docs
 weight: 10
 url: /es/net/remove-content/remove-page-breaks/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف كيفية إزالة فواصل الصفحات من مستند باستخدام مكتبة Aspose.Words for .NET. يمكن أن تتداخل فواصل الصفحات أحيانًا مع تنسيق المستند وتخطيطه ، وقد يكون من الضروري إزالتهما برمجيًا. سنقدم دليلاً خطوة بخطوة لمساعدتك على فهم العملية وتنفيذها في مشاريع C # الخاصة بك.
+En este tutorial, exploraremos cómo eliminar saltos de página de un documento usando la biblioteca Aspose.Words para .NET. Los saltos de página a veces pueden interferir con el formato y el diseño de un documento, y puede ser necesario eliminarlos mediante programación. Proporcionaremos una guía paso a paso para ayudarlo a comprender el proceso e implementarlo en sus propios proyectos de C#.
 
-## متطلبات
+## Requisitos
 
-قبل أن نبدأ ، تأكد من توفر لديك ما يلي:
+Antes de comenzar, asegúrese de tener lo siguiente:
 
-- المعرفة الأساسية بلغة البرمجة C #
-- تثبيت Aspose.Words لمكتبة .NET
-- Visual Studio أو أي بيئة تطوير أخرى لـ C # تم إعدادها
+- Conocimientos básicos del lenguaje de programación C#
+- Aspose.Words para la biblioteca .NET instalada
+- Visual Studio o cualquier otro entorno de desarrollo C# configurado
 
-## الخطوة الأولى: تهيئة البيئة
+## Paso 1: Configuración del entorno
 
-للبدء ، قم بإنشاء مشروع C # جديد في بيئة التطوير المفضلة لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET بشكل صحيح في مشروعك.
+Para comenzar, cree un nuevo proyecto de C# en su entorno de desarrollo preferido. Asegúrese de que la biblioteca Aspose.Words para .NET esté correctamente referenciada en su proyecto.
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
-لإزالة فواصل الصفحات من المستند ، نحتاج أولاً إلى تحميل المستند في الذاكرة. يوضح الكود التالي كيفية تحميل مستند من دليل معين:
+Para eliminar saltos de página de un documento, primero debemos cargar el documento en la memoria. El siguiente código muestra cómo cargar un documento desde un directorio específico:
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//قم بتحميل المستند
+//Cargue el documento
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى المستند الخاص بك.
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su documento.
 
-## الخطوة 3: إزالة فواصل الصفحات
+## Paso 3: Eliminar saltos de página
 
-بمجرد تحميل المستند ، يمكننا البدء في إزالة فواصل الصفحات. يوضح مقتطف الشفرة أدناه كيفية تكرار جميع الفقرات في المستند والتحقق من فواصل الصفحات وإزالتها:
+Una vez cargado el documento, podemos comenzar a eliminar los saltos de página. El fragmento de código siguiente muestra cómo recorrer todos los párrafos del documento, buscar saltos de página y eliminarlos:
 
 ```csharp
 NodeCollection paragraphs = doc.GetChildNodes(NodeType.Paragraph, true);
 
 foreach (Paragraph para in paragraphs)
 {
-     // إذا كانت الفقرة تحتوي على فاصل صفحات من قبل ، فقم بمسحها
+     // Si el párrafo tiene un salto de página antes, bórrelo
      if (para.ParagraphFormat.PageBreakBefore)
          para.ParagraphFormat.PageBreakBefore = false;
 
-     // تحقق من كل عمليات التشغيل في الفقرة بحثًا عن فواصل الصفحات وقم بإزالتها
+     // Verifique todas las líneas en el párrafo en busca de saltos de página y elimínelos
      foreach(Run run in para.Runs)
      {
          if (run.Text.Contains(ControlChar.PageBreak))
@@ -57,36 +57,36 @@ foreach (Paragraph para in paragraphs)
 }
 ```
 
-يتكرر مقتطف الشفرة أعلاه عبر جميع الفقرات في المستند ويتحقق مما إذا كانت كل فقرة بها فاصل صفحات قبلها. إذا تم الكشف عن فاصل صفحة ، يتم مسحه. بعد ذلك ، يتحقق من كل تشغيل داخل الفقرة بحثًا عن فواصل الصفحات ويزيلها.
+El fragmento de código anterior recorre en iteración todos los párrafos del documento y comprueba si cada párrafo tiene un salto de página antes. Si se detecta un salto de página, se borra. Luego, verifica cada ejecución dentro del párrafo en busca de saltos de página y los elimina.
 
-## الخطوة 4: حفظ المستند المعدل
+## Paso 4: Guardar el documento modificado
 
-بعد إزالة فواصل الصفحات ، نحتاج إلى حفظ المستند المعدل. يوضح الكود التالي كيفية حفظ المستند المعدل في موقع معين:
+Después de eliminar los saltos de página, debemos guardar el documento modificado. El siguiente código muestra cómo guardar el documento modificado en una ubicación específica:
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- يستبدل`"modified-document.docx"` بالاسم الذي تريده للمستند المعدل.
+ Reemplazar`"modified-document.docx"` con el nombre deseado para su documento modificado.
 
-### نموذج شفرة مصدر لإزالة فواصل الصفحات باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Quitar saltos de página usando Aspose.Words para .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//قم بتحميل المستند
+//Cargue el documento
 Document doc = new Document(dataDir + "your-document.docx");
 
 NodeCollection paragraphs = doc.GetChildNodes(NodeType.Paragraph, true);
 
 foreach (Paragraph para in paragraphs)
 {
-	// إذا كانت الفقرة تحتوي على فاصل صفحات قبل المجموعة ، فقم بمسحها.
+	// Si el párrafo tiene un salto de página antes del conjunto, bórrelo.
 	if (para.ParagraphFormat.PageBreakBefore)
 		para.ParagraphFormat.PageBreakBefore = false;
 
-	//تحقق من كل عمليات التشغيل في الفقرة بحثًا عن فواصل الصفحات وقم بإزالتها.
+	//Verifique todas las líneas en el párrafo en busca de saltos de página y elimínelos.
 	foreach (Run run in para.Runs)
 	{
 		if (run.Text.Contains(ControlChar.PageBreak))
@@ -98,6 +98,6 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا البرنامج التعليمي ، تعلمنا كيفية إزالة فواصل الصفحات من مستند باستخدام مكتبة Aspose.Words for .NET. باتباع الدليل خطوة بخطوة ، يجب أن تكون قادرًا الآن على تنفيذ هذه الوظيفة في مشاريع C # الخاصة بك. يمكن أن تساعدك إزالة فواصل الصفحات في الحفاظ على تخطيط وتنسيق متسقين في مستنداتك.
+En este tutorial, hemos aprendido cómo eliminar saltos de página de un documento utilizando la biblioteca Aspose.Words para .NET. Al seguir la guía paso a paso, ahora debería poder implementar esta funcionalidad en sus propios proyectos de C#. Quitar los saltos de página puede ayudarlo a mantener un diseño y un formato coherentes en sus documentos.

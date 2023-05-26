@@ -1,21 +1,21 @@
 ---
-title: تحميل نطاق الصفحات من ملف PDF
-linktitle: تحميل نطاق الصفحات من ملف PDF
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحميل نطاق معين من صفحات PDF باستخدام Aspose.Words for .NET.
+title: 加载 Pdf 的页面范围
+linktitle: 加载 Pdf 的页面范围
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 加载特定 PDF 页面范围的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تحميل نطاق صفحات معين من مستند PDF باستخدام Aspose.Words for .NET. اتبع الخطوات التالية:
+在本教程中，我们将带您了解如何使用 Aspose.Words for .NET 从 PDF 文档加载特定页面范围。请按照以下步骤操作：
 
-## الخطوة 1: تحميل مجموعة من صفحات PDF
+## 第 1 步：加载一系列 PDF 页面
 
-استخدم الكود التالي لتحميل نطاق صفحات معين من مستند PDF:
+使用以下代码从 PDF 文档加载特定页面范围：
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -23,25 +23,25 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- في هذا المثال ، نقوم بتحميل الصفحة الأولى من مستند PDF. يمكنك تغيير قيم`PageIndex` و`PageCount` إلى نطاق الصفحات المطلوب.
+在此示例中，我们正在加载 PDF 文档的第一页。您可以更改的值`PageIndex`和`PageCount`到所需的页面范围。
 
-## الخطوة 2: حفظ المستند
+## 第 2 步：保存文档
 
- أخيرًا ، يمكنك حفظ المستند الذي يحتوي على نطاق الصفحات المحدد باستخدام امتداد`Save` طريقة:
+最后，您可以使用`Save`方法：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ المستند المحرر.
+请务必指定正确的路径以保存编辑后的文档。
 
-هذا كل شئ ! لقد قمت الآن بتحميل نطاق صفحات معين من مستند PDF باستخدام Aspose.Words for .NET.
+就这样 ！您现在已经使用 Aspose.Words for .NET 从 PDF 文档加载了特定的页面范围。
 
-### مثال على شفرة المصدر لتحميل نطاق الصفحات من ملف PDF باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 加载 Pdf 页面范围的示例源代码
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
 
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 	doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
    
 ```
-تذكر تحديد المسار الصحيح إلى دليل مستندات PDF الخاصة بك.
+请记住指定 PDF 文档目录的正确路径。
 
 
 

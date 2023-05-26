@@ -1,20 +1,20 @@
 ---
-title: البرمجة مع جدول المحتويات
-linktitle: البرمجة مع جدول المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تغيير نمط toc وتغيير توقف علامة التبويب toc
+title: Programmering med innehållsförteckning
+linktitle: Programmering med innehållsförteckning
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar innehåller ändra stil på toc-nivå och ändra toc-tabstopp
 type: docs
 weight: 1420
 url: /sv/net/programming-with-table-of-content/
 ---
-ترشدك البرامج التعليمية لـ Aspose.Words for .NET حول البرمجة باستخدام جدول المحتويات عبر خطوات معالجة جداول المحتويات وتخصيصها في مستندات Word الخاصة بك. سوف تتعلم كيفية إنشاء وتحديث وتخصيص جداول المحتويات لتنظيم محتوى المستندات الخاصة بك بشكل فعال.
+Aspose.Words för .NET-handledningarna om programmering med innehållsförteckningen leder dig genom stegen för att manipulera och anpassa innehållsförteckningar i dina Word-dokument. Du kommer att lära dig hur du skapar, uppdaterar och anpassar innehållsförteckningar för att effektivt organisera innehållet i dina dokument.
 
-توفر هذه البرامج التعليمية أمثلة على التعليمات البرمجية خطوة بخطوة وتفسيرات واضحة لكيفية استخدام ميزات Aspose.Words for .NET للعمل مع جداول المحتويات. ستتعلم كيفية إضافة مستويات العناوين ، وتحديد أنماط التنسيق ، وتخصيص مظهر وسلوك جداول المحتويات ، وإدارة التحديثات التلقائية.
+Dessa handledningar ger steg-för-steg-kodexempel och tydliga förklaringar av hur man använder Aspose.Words för .NET-funktioner för att arbeta med innehållsförteckningar. Du kommer att lära dig hur du lägger till rubriknivåer, anger formateringsstilar, anpassar utseendet och beteendet hos innehållsförteckningar och hanterar automatiska uppdateringar.
 
-سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان التقنيات المتقدمة لإنشاء جداول محتويات احترافية والحفاظ عليها في مستندات Word باستخدام Aspose.Words for .NET. حسِّن تنظيم مستنداتك واجعل التنقل أسهل للمستخدمين من خلال هذه البرامج التعليمية الشاملة والمفيدة.
+Oavsett om du är nybörjare eller en erfaren utvecklare, kommer dessa tutorials hjälpa dig att bemästra de avancerade teknikerna för att skapa och underhålla professionella innehållsförteckningar i dina Word-dokument med Aspose.Words för .NET. Förbättra organisationen av dina dokument och gör navigeringen enklare för dina användare med dessa omfattande och informativa handledningar.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [تغيير نمط مستوى Toc](./change-style-of-toc-level/) | تعرف على كيفية تغيير نمط مستوى جدول المحتويات بسهولة في مستند Word باستخدام Aspose.Words for .NET. |
-| [تغيير Toc Tab Stops](./change-toc-tab-stops/) | تعرف على كيفية تغيير علامات تبويب جدول المحتويات في مستند Word باستخدام Aspose.Words for .NET. |
+| [Ändra stil på Toc-nivå](./change-style-of-toc-level/) | Lär dig hur du enkelt ändrar stilen på en innehållsförteckningsnivå i ett Word-dokument med Aspose.Words för .NET. |
+| [Ändra Toc Tab Stops](./change-toc-tab-stops/) | Lär dig hur du ändrar innehållsförteckningsflikar i ett Word-dokument med Aspose.Words för .NET. |

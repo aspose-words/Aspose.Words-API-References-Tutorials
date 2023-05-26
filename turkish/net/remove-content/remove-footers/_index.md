@@ -1,54 +1,54 @@
 ---
-title: إزالة التذييلات
-linktitle: إزالة التذييلات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة التذييلات بسهولة من مستندات Word باستخدام Aspose.Words for .NET. اتبع دليلنا المفصل خطوة بخطوة للتعامل الفعال مع ملفات DOCX.
+title: Altbilgileri Kaldır
+linktitle: Altbilgileri Kaldır
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile Word belgelerinden alt bilgileri kolayca nasıl kaldıracağınızı öğrenin. DOCX dosyalarının verimli bir şekilde işlenmesi için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/remove-content/remove-footers/
 ---
-عندما يتعلق الأمر بالعمل مع مستندات Word في تطبيق .NET الخاص بك ، فإن Aspose.Words أداة قوية ومتعددة الاستخدامات يمكنها مساعدتك في معالجة ملفات DOCX بسهولة. في هذه المقالة ، سوف نستكشف ميزة معينة في Aspose.Words: إزالة التذييلات.
+.NET uygulamanızda Word belgeleriyle çalışmak söz konusu olduğunda Aspose.Words, DOCX dosyalarını kolayca değiştirmenize yardımcı olabilecek güçlü ve çok yönlü bir araçtır. Bu makalede, Aspose.Words'ün belirli bir özelliğini inceleyeceğiz: altbilgileri kaldırma.
 
-## فهم Aspose.Words for .NET
+## Aspose.Words for .NET'i Anlamak
 
-Aspose.Words for .NET مكتبة فصول قوية لإنشاء وتعديل وتحويل ومعالجة مستندات Word في تطبيقات .NET. يقدم مجموعة واسعة من الميزات بما في ذلك إدارة الرؤوس والتذييلات والصور وتنسيق النص والمزيد.
+Aspose.Words for .NET, .NET uygulamalarında Word belgeleri oluşturmak, değiştirmek, dönüştürmek ve işlemek için güçlü bir sınıf kitaplığıdır. Üstbilgileri, altbilgileri, resimleri, metin biçimlendirmesini ve daha fazlasını yönetme dahil olmak üzere çok çeşitli özellikler sunar.
 
-## الغرض من إزالة التذييلات في Aspose. Words
+## Aspose.Words'te Alt Bilgileri Kaldırmanın Amacı
 
-قد تكون هناك حالات تريد فيها إزالة التذييلات من مستند Word. قد يرجع ذلك إلى أسباب مختلفة ، مثل الحاجة إلى حذف المعلومات الحساسة ، أو لتكييف المستند لاستخدام آخر أو ببساطة لإزالة العناصر غير المرغوب فيها. يجعل Aspose.Words هذه المهمة أسهل بكثير من خلال إعطائك طريقة سهلة وفعالة لإزالة التذييلات من مستنداتك.
+Bir Word belgesinden altbilgileri kaldırmak istediğiniz durumlar olabilir. Bu, hassas bilgilerin silinmesi, belgenin başka bir kullanım için uyarlanması veya istenmeyen unsurların ortadan kaldırılması gibi çeşitli nedenlere bağlı olabilir. Aspose.Words, belgelerinizden altbilgileri kaldırmanız için kolay ve etkili bir yol sağlayarak bu görevi çok daha kolaylaştırır.
 
-## الخطوة 1: قم بتعيين مسار دليل المستند
+## 1. Adım: Belge Dizini Yolunu Ayarlayın
 
-قبل أن تبدأ ، تأكد من تعيين دليل المستند الخاص بك في متغير "dataDir". سيسمح لك هذا بتحديد الموقع الدقيق حيث يوجد ملف DOCX الخاص بك.
+Başlamadan önce, "dataDir" değişkeninde belge dizininizi ayarladığınızdan emin olun. Bu, DOCX dosyanızın bulunduğu tam konumu belirtmenize olanak tanır.
 
 ```csharp
 string dataDir = "PATH_TO_YOUR_DOCUMENT_DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## 2. Adım: Belgeyi Yükleyin
 
-تتمثل الخطوة الأولى في تحميل المستند في كائن من نوع Document. سيسمح لك ذلك بالوصول إلى محتويات المستند ومعالجتها.
+İlk adım, belgeyi Belge türündeki bir nesneye yüklemektir. Bu, belgenin içeriğine erişmenizi ve bunları değiştirmenizi sağlar.
 
 ```csharp
 Document doc = new Document(dataDir + "Name_of_document.docx");
 ```
 
-تأكد من استبدال "Name_of_document.docx" بالاسم الفعلي للمستند الخاص بك.
+"Belge_of_document.docx" ifadesini belgenizin gerçek adıyla değiştirdiğinizden emin olun.
 
-## الخطوة 3: كرر من خلال الأقسام
+## 3. Adım: Bölümleri Yineleyin
 
-يمكن أن يحتوي مستند Word على أقسام متعددة ، ويمكن أن يكون لكل قسم تذييلاته الخاصة. يجب أن نذهب من خلال كل قسم من المستند للوصول إلى التذييلات.
+Bir Word belgesi birden çok bölüm içerebilir ve her bölümün kendi altbilgisi olabilir. Altbilgilere ulaşmak için belgenin her bölümünü gözden geçirmeliyiz.
 
 ```csharp
 foreach (Section section in doc)
 {
-     // رمز لإزالة التذييلات
+     // Altbilgileri kaldırmak için kod
 }
 ```
 
-## الخطوة 4: إزالة التذييلات
+## 4. Adım: Altbilgileri Kaldır
 
-الآن وقد انتقلنا إلى قسم معين ، يمكننا إزالة التذييلات من هذا القسم. في Aspose.Words ، هناك أنواع مختلفة من التذييلات المحتملة ، مثل "FooterFirst" (للصفحة الأولى) و "FooterPrimary" (للصفحات الفردية) و "FooterEven" (للصفحات الزوجية). نحتاج إلى التحقق من كل هذه الأنواع من التذييلات وإزالتها.
+Artık belirli bir bölüme gittiğimize göre, altbilgileri o bölümden kaldırabiliriz. Aspose.Words'te, "FooterFirst" (ilk sayfa için), "FooterPrimary" (tek sayfalar için) ve "FooterEven" (çift sayfalar için) gibi farklı alt bilgi türleri vardır. Tüm bu altbilgi türlerini kontrol etmemiz ve kaldırmamız gerekiyor.
 
 ```csharp
 HeaderFooter footer = section.HeadersFooters[HeaderFooterType.Footer
@@ -63,32 +63,32 @@ footer = section.HeadersFooters[HeaderFooterType.FooterEven];
 footer?.Remove();
 ```
 
-## الخطوة 5: احفظ المستند المعدل
+## 5. Adım: Değiştirilen Belgeyi Kaydedin
 
-بمجرد الانتهاء من إزالة التذييلات ، يمكننا حفظ المستند المحرر في ملف منفصل.
+Altbilgileri kaldırmayı bitirdiğimizde, düzenlenen belgeyi ayrı bir dosyaya kaydedebiliriz.
 
 ```csharp
 doc.Save(dataDir + "Name_of_modified_document.docx");
 ```
 
-لا تنس تحديد اسم وموقع الملف المعدل في "Name_of_modified_document.docx".
+Değiştirilen dosyanın adını ve konumunu "Ad_of_modified_document.docx" içinde belirtmeyi unutmayın.
 
-### نموذج التعليمات البرمجية المصدر لإزالة التذييلات باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Altbilgileri Kaldır için örnek kaynak kodu 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Header and footer types.docx");
 
 foreach (Section section in doc)
 {
-	// ما يصل إلى ثلاثة تذييلات مختلفة ممكنة في قسم (للصفحات الأولى ، الزوجية والفردية)
-	// نتحقق منها ونحذفها جميعًا.
+	// Bir bölümde en fazla üç farklı alt bilgi mümkündür (ilk, çift ve tek sayfalar için)
+	// hepsini kontrol edip siliyoruz.
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// التذييل الأساسي هو التذييل المستخدم للصفحات الفردية.
+	// Birincil altbilgi, tek sayfalar için kullanılan altbilgidir.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
         
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، اكتشفنا كيفية إزالة التذييلات من مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات المقدمة ، يمكنك بسهولة معالجة مستنداتك وإزالة التذييلات غير المرغوب فيها. يقدم Aspose.Words حلاً فعالاً وملائماً للعمل مع مستندات Word في تطبيق .NET الخاص بك.
+Bu makalede, Aspose.Words for .NET kullanarak bir Word belgesinden altbilgilerin nasıl kaldırılacağını inceledik. Sağlanan adımları izleyerek belgelerinizi kolayca değiştirebilir ve istenmeyen altbilgileri kaldırabilirsiniz. Aspose.Words, .NET uygulamanızda Word belgeleriyle çalışmak için güçlü ve kullanışlı bir çözüm sunar.
 

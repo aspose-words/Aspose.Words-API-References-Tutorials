@@ -1,44 +1,44 @@
 ---
-title: سلسلة مخطط واحد
-linktitle: سلسلة مخطط واحد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تخصيص سلسلة مخططات مفردة في مخطط باستخدام Aspose.Words for .NET.
+title: Серия одиночных диаграмм
+linktitle: Серия одиночных диаграмм
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как настроить отдельные серии диаграмм на диаграмме с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-charts/single-chart-series/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتخصيص سلسلة مخططات مفردة في مخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط والوصول إلى سلسلة معينة وتعديل خصائصها.
+В этом руководстве объясняется, как использовать Aspose.Words для .NET для настройки отдельных рядов диаграмм на диаграмме. В предоставленном исходном коде показано, как создать диаграмму, получить доступ к определенным рядам и изменить их свойства.
 
-## الخطوة 1: قم بإعداد المشروع
+## Шаг 1: Настройте проект
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Убедитесь, что у вас есть следующие предварительные условия:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Установлена библиотека Aspose.Words for .NET. Вы можете загрузить его с официального веб-сайта Aspose или использовать менеджер пакетов NuGet для его установки.
+- Путь к каталогу документа, в котором будет сохранен выходной документ.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Шаг 2. Создайте новый документ и вставьте диаграмму
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Создать новый`Document` объект и`DocumentBuilder` для построения документа.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط خطي في المستند.
+ Далее используйте`InsertChart` метод`DocumentBuilder` чтобы вставить линейную диаграмму в документ.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: الوصول إلى سلسلة المخططات وتخصيصها
+## Шаг 3. Получите доступ к серии диаграмм и настройте ее
 
- لتعديل سلسلة مخططات مفردة ، تحتاج إلى الوصول إلى ملف`ChartSeries` كائنات الرسم البياني.
+ Чтобы изменить отдельные серии диаграмм, вам необходимо получить доступ к`ChartSeries` объекты диаграммы.
 
 ```csharp
 ChartSeries series0 = chart.Series[0];
@@ -58,20 +58,20 @@ series1.Marker.Symbol = MarkerSymbol.Star;
 series1.Marker.Size = 10;
 ```
 
-## الخطوة 4: احفظ المستند
+## Шаг 4: Сохраните документ
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Наконец, сохраните документ в указанный каталог, используя`Save` метод`Document` объект.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 ```
 
-هذا يكمل تنفيذ تخصيص سلسلة مخططات واحدة باستخدام Aspose.Words for .NET.
+На этом реализация настройки одной серии диаграмм с помощью Aspose.Words for .NET завершена.
 
-### مثال على شفرة المصدر لسلسلة مخطط واحد باستخدام Aspose.Words for .NET 
+### Пример исходного кода для серии одиночных диаграмм с использованием Aspose.Words для .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -82,10 +82,10 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 	ChartSeries series1 = chart.Series[1];
 	series0.Name = "Chart Series Name 1";
 	series1.Name = "Chart Series Name 2";
-	// يمكنك أيضًا تحديد ما إذا كان الخط الذي يربط النقاط على الرسم البياني سيتم تنعيمه باستخدام خطوط Catmull-Rom.
+	// Вы также можете указать, будет ли линия, соединяющая точки на графике, сглаживаться с помощью сплайнов Катмулла-Рома.
 	series0.Smooth = true;
 	series1.Smooth = true;
-	// يحدد ما إذا كان العنصر الأصلي سيعكس ألوانه افتراضيًا إذا كانت القيمة سالبة.
+	// Указывает, должен ли родительский элемент по умолчанию инвертировать свои цвета, если значение отрицательное.
 	series0.InvertIfNegative = true;
 	series0.Marker.Symbol = MarkerSymbol.Circle;
 	series0.Marker.Size = 15;

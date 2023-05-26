@@ -1,43 +1,43 @@
 ---
-title: أدخل حقل نموذج خانة اختيار
-linktitle: أدخل حقل نموذج خانة اختيار
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج خانة الاختيار في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Onay Kutusu Form Alanı Ekle
+linktitle: Onay Kutusu Form Alanı Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerine onay kutusu form alanlarının nasıl ekleneceğini öğrenin. Adım adım rehber.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-check-box-form-field/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج حقل نموذج خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة حقول نموذج مربعات الاختيار بخصائص قابلة للتخصيص إلى مستنداتك.
+Bu kapsamlı öğreticide, Aspose.Words for .NET kullanarak bir Word belgesine nasıl onay kutusu form alanı ekleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, belgelerinize özelleştirilebilir özelliklere sahip onay kutusu form alanları ekleyebileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesi başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل حقل نموذج خانة اختيار
-بعد ذلك ، استخدم طريقة InsertCheckBox لفئة DocumentBuilder لإدراج حقل نموذج خانة اختيار. أدخل الاسم والحالة المحددة والحالة الافتراضية ومعلمات الحجم كوسائط:
+## 2. Adım: Onay Kutusu Form Alanı Ekleyin
+Ardından, bir onay kutusu form alanı eklemek için DocumentBuilder sınıfının InsertCheckBox yöntemini kullanın. Adı, kontrol edilen durumu, varsayılan durumu ve boyut parametrelerini bağımsız değişken olarak sağlayın:
 
 ```csharp
 builder.InsertCheckBox("CheckBox", true, true, 0);
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج حقل نموذج خانة الاختيار ، احفظ المستند في ملف باستخدام طريقة Save لفئة المستند:
+## 3. Adım: Belgeyi Kaydedin
+Onay kutusu form alanını ekledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx");
 ```
 
-### مثال كود المصدر لحقل نموذج خانة اختيار باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال حقل نموذج مربع الاختيار باستخدام Aspose.Words for .NET:
+### Aspose.Words for .NET kullanarak Onay Kutusu Form Alanı Eklemek için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak bir onay kutusu form alanı eklemek için eksiksiz kaynak kodu burada:
 
 ```csharp
 
@@ -50,7 +50,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Kodu özel gereksinimlerinize göre ayarlamayı ve gerektiğinde ek işlevlerle geliştirmeyi unutmayın.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج حقل نموذج خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك باستخدام حقول نموذج مربعات الاختيار التفاعلية.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine nasıl onay kutusu form alanı ekleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak, etkileşimli onay kutusu form alanlarıyla artık belgelerinizi geliştirebilirsiniz.

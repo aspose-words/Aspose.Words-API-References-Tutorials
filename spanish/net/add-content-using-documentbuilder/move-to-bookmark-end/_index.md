@@ -1,64 +1,64 @@
 ---
-title: الانتقال إلى نهاية الإشارة المرجعية
-linktitle: الانتقال إلى نهاية الإشارة المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للانتقال إلى نهاية إشارة مرجعية في مستندات Word باستخدام هذا الدليل التفصيلي خطوة بخطوة.
+title: Mover al final del marcador
+linktitle: Mover al final del marcador
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a usar Aspose.Words para .NET para moverse al final de un marcador en documentos de Word con esta guía paso a paso.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Bookmark End في Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تمكن المطورين من إنشاء وتعديل وتحويل مستندات Word برمجيًا. تسمح لنا ميزة Move To Bookmark End بالانتقال إلى نهاية إشارة مرجعية معينة داخل مستند وإضافة محتوى بعدها.
+En este ejemplo, exploraremos la función Mover al final del marcador de Aspose.Words para .NET. Aspose.Words es una poderosa biblioteca de manipulación de documentos que permite a los desarrolladores crear, modificar y convertir documentos de Word mediante programación. La función Mover al final del marcador nos permite navegar hasta el final de un marcador específico dentro de un documento y agregar contenido después.
 
-## تهيئة البيئة
+## Configuración del entorno
 
-قبل الخوض في تفاصيل التنفيذ ، دعنا نتأكد من إعداد البيئة اللازمة للعمل مع Aspose.Words for .NET. تأكد من حصولك على ما يلي:
+Antes de profundizar en los detalles de implementación, asegurémonos de tener el entorno necesario configurado para trabajar con Aspose.Words para .NET. Asegúrese de tener lo siguiente:
 
-- تثبيت عملي لـ Aspose.Words لمكتبة .NET
-- المعرفة الأساسية بلغة البرمجة C #
-- الوصول إلى بيئة تطوير .NET
+- Una instalación funcional de Aspose.Words para la biblioteca .NET
+- Conocimientos básicos del lenguaje de programación C#
+- Acceso a un entorno de desarrollo .NET
 
-## فهم ميزة Move To Bookmark End في Aspose.Words for .NET
+## Descripción de la función Mover al final del marcador de Aspose.Words para .NET
 
-تسمح لك ميزة Move To Bookmark End بالانتقال إلى نهاية إشارة مرجعية في مستند Word باستخدام Aspose.Words for .NET. هذه الميزة مفيدة عندما تريد إضافة محتوى بعد إشارة مرجعية معينة في وثيقتك برمجيًا.
+La función Mover al final del marcador le permite navegar hasta el final de un marcador dentro de un documento de Word utilizando Aspose.Words para .NET. Esta función es útil cuando desea agregar contenido después de un marcador específico en su documento mediante programación.
 
-## شرح شفرة المصدر خطوة بخطوة
+## Explicando el código fuente paso a paso
 
-دعنا نقسم كود المصدر المقدم خطوة بخطوة لفهم كيفية استخدام ميزة Move To Bookmark End في Aspose.Words for .NET.
+Desglosemos el código fuente proporcionado paso a paso para comprender cómo usar la función Mover al final del marcador en Aspose.Words para .NET.
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## Paso 1: Inicializar el documento y el generador de documentos
 
- أولاً ، نحتاج إلى تهيئة`Document` و`DocumentBuilder` أشياء:
+ Primero, necesitamos inicializar el`Document` y`DocumentBuilder` objetos:
 
 ```csharp
 Document doc = new Document(MyDir + "Bookmarks.docx");
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: الانتقال إلى نهاية الإشارة المرجعية
+## Paso 2: Ir al final del marcador
 
- للانتقال إلى نهاية إشارة مرجعية ، استخدم ملحق`MoveToBookmark` طريقة`DocumentBuilder` فصل:
+ Para ir al final de un marcador, utilice el`MoveToBookmark` metodo de la`DocumentBuilder` clase:
 
 ```csharp
 builder.MoveToBookmark("MyBookmark1", false, true);
 ```
 
- ال`MoveToBookmark` تأخذ الطريقة ثلاث معلمات:
-- اسم الإشارة المرجعية: أدخل اسم الإشارة المرجعية التي تريد الانتقال إليها.
--  IsBookmarkStart: اضبط على`false` للانتقال إلى نهاية الإشارة المرجعية.
--  IsBookmarkEnd: اضبط على`true` للإشارة إلى أنك تريد الانتقال إلى نهاية الإشارة المرجعية.
+ El`MoveToBookmark` El método toma tres parámetros:
+- Nombre del marcador: proporcione el nombre del marcador al que desea pasar.
+-  IsBookmarkStart: establecer en`false` para ir al final del marcador.
+-  IsBookmarkEnd: establecer en`true` para indicar que desea pasar al final del marcador.
 
-## الخطوة 3: إضافة محتوى في نهاية الإشارة المرجعية
+## Paso 3: agregar contenido al final del marcador
 
-بمجرد الانتقال إلى نهاية الإشارة المرجعية ، يمكنك إضافة محتوى باستخدام الطرق المختلفة التي يوفرها`DocumentBuilder` فصل. في هذا المثال ، نستخدم الامتداد`Writeln` طريقة كتابة سطر من النص:
+Una vez que se haya movido al final del marcador, puede agregar contenido utilizando los diversos métodos proporcionados por el`DocumentBuilder` clase. En este ejemplo, usamos el`Writeln` método para escribir una línea de texto:
 
 ```csharp
 builder.Writeln("This is a bookmark.");
 ```
 
- ال`Writeln` تقوم الطريقة بإلحاق النص المحدد كفقرة جديدة في الموضع الحالي لملف`DocumentBuilder`.
+ El`Writeln` agrega el texto especificado como un nuevo párrafo en la posición actual del`DocumentBuilder`.
 
-### مثال على شفرة المصدر لـ Move To Bookmark End باستخدام Aspose.Words for .NET
+### Código fuente de ejemplo para Move To Bookmark End usando Aspose.Words para .NET
 
 ```csharp
 
@@ -70,7 +70,7 @@ builder.Writeln("This is a bookmark.");
 	
 ```
 
-## خاتمة
+## Conclusión
 
-استكشفنا ميزة Move To Bookmark End في Aspose.Words for .NET. لقد تعلمنا كيفية الانتقال إلى نهاية إشارة مرجعية وإضافة محتوى برمجيًا باستخدام كود المصدر المقدم. توفر هذه الميزة المرونة في التعامل مع مستندات Word باستخدام Aspose.Words for .NET.
+exploramos la función Mover al final del marcador de Aspose.Words para .NET. Aprendimos cómo navegar hasta el final de un marcador y agregar contenido mediante programación usando el código fuente proporcionado. Esta característica brinda flexibilidad en la manipulación de documentos de Word utilizando Aspose.Words para .NET.
 

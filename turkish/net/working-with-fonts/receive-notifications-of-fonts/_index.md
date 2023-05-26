@@ -1,71 +1,71 @@
 ---
-title: تلقي إخطارات الخطوط
-linktitle: تلقي إخطارات الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تلقي إشعارات الخطوط المفقودة أو المستبدلة عند استخدام Aspose.Words for .NET.
+title: Yazı Tiplerinin Bildirimlerini Alın
+linktitle: Yazı Tiplerinin Bildirimlerini Alın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanırken eksik veya değiştirilmiş yazı tipi bildirimlerini nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تلقي إشعارات الخطوط أثناء استخدام Aspose.Words for .NET. تتيح لك إشعارات الخطوط اكتشاف وإدارة الخطوط المفقودة أو المستبدلة في مستنداتك. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu öğreticide, Aspose.Words for .NET kullanırken yazı tipi bildirimlerini nasıl alacağınız konusunda size yol göstereceğiz. Yazı tipi bildirimleri, belgelerinizdeki eksik veya değiştirilen yazı tiplerini tespit etmenize ve yönetmenize olanak tanır. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وتكوين إعدادات الخط
- بعد ذلك ، سنقوم بتحميل المستند باستخدام ملف`Document` class وتكوين إعدادات الخط باستخدام`FontSettings` فصل. سنقوم بتعيين الخط الافتراضي لاستخدامه في حالة فقدان الخطوط.
+## 2. Adım: Belgeyi yükleyin ve yazı tipi ayarlarını yapılandırın
+ Ardından, kullanarak belgeyi yükleyeceğiz`Document` kullanarak yazı tipi ayarlarını sınıflandırın ve yapılandırın.`FontSettings` sınıf. Eksik yazı tipi olması durumunda kullanılacak varsayılan yazı tipini ayarlayacağız.
 
 ```csharp
-//قم بتحميل المستند وتكوين إعدادات الخط
+//Belgeyi yükleyin ve yazı tipi ayarlarını yapılandırın
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
 ```
 
-## الخطوة 3: تعيين معالج الإشعارات
- بعد ذلك ، سنحدد معالج الإشعارات من خلال تنفيذ الامتداد`IWarningCallback` واجهه المستخدم. سيسمح لنا ذلك بجمع تحذيرات الخط عند حفظ المستند.
+## 3. Adım: Bildirim işleyiciyi ayarlayın
+ Ardından, uygulayarak bir bildirim işleyicisi tanımlayacağız.`IWarningCallback` arayüz. Bu, belgeyi kaydederken yazı tipi uyarılarını toplamamıza izin verecektir.
 
 ```csharp
-// حدد معالج الإعلام
+// Bildirim işleyicisini tanımlayın
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc. WarningCallback = callback;
 ```
 
-## الخطوة 4: تطبيق إعدادات الخط وحفظ المستند
-أخيرًا ، سنقوم بتطبيق إعدادات الخط على المستند وحفظه. سيتم التقاط أي تحذيرات تتعلق بالخط بواسطة معالج الإشعارات الذي حددناه سابقًا.
+## 4. Adım: Yazı tipi ayarlarını uygulayın ve belgeyi kaydedin
+Son olarak yazı tipi ayarlarını belgeye uygulayıp kaydedeceğiz. Yazı tipi uyarıları, daha önce tanımladığımız bildirim işleyicisi tarafından yakalanacaktır.
 
 ```csharp
-// تطبيق إعدادات الخط وحفظ المستند
+// Yazı tipi ayarlarını uygulayın ve belgeyi kaydedin
 doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لتلقي إخطارات الخطوط باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Yazı Tipi Bildirimlerini Almak için örnek kaynak kodu 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
-// يمكننا اختيار الخط الافتراضي لاستخدامه في حالة وجود أي خطوط مفقودة.
+// Eksik yazı tipi olması durumunda kullanılacak varsayılan yazı tipini seçebiliriz.
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-// للاختبار سنقوم بتعيين Aspose.Words للبحث عن الخطوط فقط في مجلد غير موجود. منذ Aspose.word لن تفعل ذلك
-// ابحث عن أي خطوط في الدليل المحدد ، ثم أثناء تقديم الخطوط في المستند سيتم دمجها مع الافتراضي
-//الخط المحدد ضمن FontSettings.DefaultFontName. يمكننا الحصول على هذا الاشتراك باستخدام رد الاتصال الخاص بنا.
+// Test için Aspose.Words'ü sadece var olmayan bir klasördeki yazı tiplerini arayacak şekilde ayarlayacağız. Aspose.Words olmadığı için
+// Belirtilen dizinde herhangi bir yazı tipi bulun, ardından oluşturma sırasında belgedeki yazı tipleri varsayılan ile alt uygun hale getirilecektir.
+//FontSettings.DefaultFontName altında belirtilen yazı tipi. Geri aramamızı kullanarak bu subsuition'ı yakalayabiliriz.
 fontSettings.SetFontsFolder(string.Empty, false);
-// قم بإنشاء فئة جديدة تنفذ IWarningCallback والتي تجمع أي تحذيرات تم إنتاجها أثناء حفظ المستند.
+// Belge kaydetme sırasında üretilen tüm uyarıları toplayan IWarningCallback'i uygulayan yeni bir sınıf oluşturun.
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
 doc.FontSettings = fontSettings;
@@ -73,5 +73,5 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تلقي إشعارات الخطوط أثناء استخدام Aspose.Words for .NET. تتيح لك إشعارات الخطوط اكتشاف وإدارة الخطوط المفقودة أو المستبدلة في مستنداتك. استخدم هذه الميزة لضمان تناسق الخط في مستنداتك واتخاذ الإجراء المناسب في حالة فقد الخطوط.
+## Çözüm
+Bu eğitimde, Aspose.Words for .NET kullanırken yazı tipi bildirimlerinin nasıl alınacağını gördük. Yazı tipi bildirimleri, belgelerinizdeki eksik veya değiştirilen yazı tiplerini tespit etmenize ve yönetmenize olanak tanır. Belgelerinizde yazı tipi tutarlılığını sağlamak ve eksik yazı tipleri olması durumunda uygun eylemi gerçekleştirmek için bu özelliği kullanın.

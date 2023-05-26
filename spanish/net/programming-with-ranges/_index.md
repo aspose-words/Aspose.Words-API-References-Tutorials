@@ -1,20 +1,20 @@
 ---
-title: البرمجة مع النطاقات
-linktitle: البرمجة مع النطاقات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على نطاقات تحذف النص وتحصل النطاقات على نص
+title: Programación con rangos
+linktitle: Programación con rangos
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales contienen rangos, eliminan texto y los rangos obtienen texto.
 type: docs
 weight: 1390
 url: /es/net/programming-with-ranges/
 ---
-تعد البرامج التعليمية لـ Aspose.Words for .NET "البرمجة مع نطاقات" مصدرًا شاملاً لتعلم كيفية التعامل مع نطاقات النص في مستندات Word والعمل معها. ستوجهك هذه البرامج التعليمية عبر أمثلة عملية ، توضح لك كيفية تحديد نطاقات النص ونسخها ونقلها وحذفها ، بالإضافة إلى كيفية تطبيق تنسيق معين على تلك النطاقات.
+Los tutoriales de "Programación con rangos" de Aspose.Words para .NET son un recurso integral para aprender a manipular y trabajar con rangos de texto en documentos de Word. Estos tutoriales lo guiarán a través de ejemplos prácticos, mostrándole cómo seleccionar, copiar, mover y eliminar rangos de texto, así como también cómo aplicar formato específico a esos rangos.
 
-في هذه البرامج التعليمية ، ستتعلم كيفية استخدام الميزات المتنوعة التي تقدمها Aspose.Words for .NET للعمل بكفاءة ودقة مع نطاقات النص. ستتعلم كيفية تحديد النطاقات باستخدام طرق تحديد مختلفة ، ومعالجة محتوياتها باستخدام عمليات النسخ والتقطيع والحذف ، وتطبيق تنسيقات مثل الخط الغامق والمائل ولون الخط. الخط للنطاقات المحددة.
+En estos tutoriales, aprenderá a usar las diversas funciones que ofrece Aspose.Words para .NET para trabajar de manera eficiente y precisa con rangos de texto. Aprenderá a identificar rangos usando diferentes métodos de selección, manipular su contenido usando operaciones de copiar, recortar y eliminar, y aplicar formatos como negrita, cursiva y color de fuente. fuente a los rangos seleccionados.
 
-سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان تقنيات معالجة نطاقات النص في مستندات Word باستخدام مكتبة Aspose.Words القوية لـ .NET. من خلال هذه المعرفة ، ستتمكن من إنشاء تطبيقات قوية وعالية الأداء تعمل على أتمتة معالجة مستندات Word بشكل فعال.
+Ya sea que sea un desarrollador principiante o experimentado, estos tutoriales lo ayudarán a dominar las técnicas de manipulación de rangos de texto en documentos de Word utilizando la poderosa biblioteca Aspose.Words para .NET. Con este conocimiento, podrá crear aplicaciones sólidas y de alto rendimiento que automaticen de manera efectiva el procesamiento de documentos de Word.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [نطاقات حذف النص](./ranges-delete-text/) | تعرف على كيفية حذف نص في نطاقات محددة في مستند Word باستخدام Aspose.Words for .NET. |
-| [نطاقات الحصول على نص](./ranges-get-text/) | تعرف على كيفية استخراج النص بسهولة من مستند Word باستخدام Aspose.Words for .NET. |
+| [Rangos Borrar Texto](./ranges-delete-text/) | Aprenda a eliminar texto en rangos específicos en un documento de Word usando Aspose.Words para .NET. |
+| [Rangos Obtener texto](./ranges-get-text/) | Aprenda cómo extraer fácilmente texto de un documento de Word usando Aspose.Words para .NET. |

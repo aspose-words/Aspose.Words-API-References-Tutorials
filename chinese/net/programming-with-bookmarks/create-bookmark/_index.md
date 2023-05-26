@@ -1,23 +1,23 @@
 ---
-title: إنشاء إشارة مرجعية
-linktitle: إنشاء إشارة مرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF باستخدام Aspose.Words for .NET.
+title: 创建书签
+linktitle: 创建书签
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在文档中创建书签并在 PDF 中指定书签预览级别。
 type: docs
 weight: 10
 url: /zh/net/programming-with-bookmarks/create-bookmark/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إنشاء إشارة مرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF ناتج.
+在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的创建书签功能。此功能允许您在文档中创建书签并在输出 PDF 文件中指定书签预览级别。
 
-## المتطلبات الأساسية
+## 先决条件
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# 语言的基础知识。
+- 安装了 Aspose.Words 库的 .NET 开发环境。
 
-## الخطوة 1: إنشاء المستند والمولد
+## 第 1 步：创建文档和生成器
 
- قبل إنشاء إشارات مرجعية ، نحتاج إلى إنشاء مستند ومنشئ مستندات باستخدام امتداد`Document` و`DocumentBuilder` أشياء:
+在创建书签之前，我们需要使用`Document`和`DocumentBuilder`对象：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -25,22 +25,22 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إنشاء الإشارة المرجعية الرئيسية
+## 第 2 步：创建主书签
 
- نحن نستخدم ال`StartBookmark` طريقة لبدء إشارة مرجعية رئيسية و`EndBookmark` طريقة لإنهائه. في ما بينهما ، يمكننا إضافة نص وإشارات مرجعية أخرى:
+我们使用`StartBookmark`启动主书签的方法和`EndBookmark`结束它的方法。在这两者之间，我们可以添加文本和其他书签：
 
 ```csharp
 builder. StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
 
-// أضف المزيد من الإشارات المرجعية أو النص هنا.
+//在此处添加更多书签或文本。
 
 builder. EndBookmark("My Bookmark");
 ```
 
-## الخطوة 3: إنشاء إشارات مرجعية متداخلة
+## 第 3 步：创建嵌套书签
 
- يمكننا أيضًا إنشاء إشارات مرجعية متداخلة داخل إشارة مرجعية رئيسية. نحن نستخدم نفس الشيء`StartBookmark` و`EndBookmark` طرق لإنشاء وإنهاء الإشارات المرجعية المتداخلة:
+我们还可以在主书签内创建嵌套书签。我们用的一样`StartBookmark`和`EndBookmark`创建和结束嵌套书签的方法：
 
 ```csharp
 builder.StartBookmark("Embedded bookmark");
@@ -48,11 +48,11 @@ builder.Writeln("Text inside nested bookmark.");
 builder.EndBookmark("Embedded bookmark");
 ```
 
-## الخطوة 4: تحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج
+## 步骤 4：在输出 PDF 文件中指定书签预览级别
 
- نحن نستخدم ال`PdfSaveOptions` لتحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج. نحن نستخدم ال`BookmarksOutlineLevels` ملكية
+我们使用`PdfSaveOptions`对象指定输出 PDF 文件中的书签预览级别。我们使用`BookmarksOutlineLevels`财产
 
-  لإضافة إشارات مرجعية رئيسية وإشارات مرجعية متداخلة بمستوياتها الخاصة:
+  添加具有各自级别的主书签和嵌套书签：
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
@@ -61,13 +61,13 @@ options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### مثال على شفرة المصدر لإنشاء إشارة مرجعية باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 创建书签的示例源代码
 
-إليك المثال الكامل لشفرة المصدر لتوضيح إنشاء إشارات مرجعية باستخدام Aspose.Words for .NET:
+以下是演示使用 Aspose.Words for .NET 创建书签的完整示例源代码：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -90,6 +90,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
   
 ```
 
-## خاتمة
+## 结论
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة إنشاء إشارة مرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارة المرجعية في ملف PDF ناتج.
+在本文中，我们探索了 C# 源代码以了解如何使用 Aspose.Words for .NET 的创建书签功能。我们已按照分步指南在文档中创建书签并在输出 PDF 文件中指定书签预览级别。

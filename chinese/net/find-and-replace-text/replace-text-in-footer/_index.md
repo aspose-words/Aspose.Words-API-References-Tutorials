@@ -1,49 +1,49 @@
 ---
-title: استبدال النص في التذييل
-linktitle: استبدال النص في التذييل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استبدال النص في تذييل مستندات Word باستخدام Aspose.Words for .NET.
+title: 替换页脚中的文本
+linktitle: 替换页脚中的文本
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 替换 Word 文档页脚中的文本。
 type: docs
 weight: 10
 url: /zh/net/find-and-replace-text/replace-text-in-footer/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة استبدال النص في التذييل في Aspose.Words لمكتبة .NET. تتيح لك هذه الميزة البحث عن نص معين واستبداله في تذييلات مستندات Word.
+在本文中，我们将探索上述 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的 Replace Text In Footer 功能。此功能允许您查找和替换 Word 文档页脚中的特定文本。
 
-## المتطلبات الأساسية
+## 先决条件
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# 语言的基础知识。
+- 安装了 Aspose.Words 库的 .NET 开发环境。
 
-## الخطوة 1: قم بتحميل المستند
+## 第 1 步：装入文档
 
-قبل أن نبدأ في استخدام استبدال النص في التذييل ، نحتاج إلى تحميل المستند إلى Aspose.Words for .NET. يمكن القيام بذلك باستخدام ملف`Document` فئة وتحديد مسار ملف المستند:
+在我们开始在页脚中使用文本替换之前，我们需要将文档加载到 Aspose.Words for .NET 中。这可以使用`Document`类并指定文档文件路径：
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Footer.docx");
 ```
 
-## الخطوة 2: الوصول إلى التذييل
+## 第 2 步：访问页脚
 
- بمجرد تحميل المستند ، نحتاج إلى الوصول إلى التذييل لإجراء استبدال النص. في مثالنا ، نستخدم الامتداد`HeadersFooters` خاصية القسم الأول من المستند للحصول على مجموعة الرؤوس / التذييلات. بعد ذلك ، نختار التذييل الرئيسي باستخدام`HeaderFooterType.FooterPrimary` فِهرِس:
+加载文档后，我们需要访问页脚以执行文本替换。在我们的示例中，我们使用`HeadersFooters`文档第一部分的属性以获取页眉/页脚的集合。接下来，我们使用`HeaderFooterType.FooterPrimary`指数：
 
 ```csharp
 HeaderFooterCollection headersFooters = doc.FirstSection.HeadersFooters;
 HeaderFooter footer = headersFooters[HeaderFooterType.FooterPrimary];
 ```
 
-## الخطوة 3: تكوين خيارات البحث والاستبدال
+## 第 3 步：配置搜索和替换选项
 
- سنقوم الآن بتكوين خيارات البحث والاستبدال باستخدام ملف`FindReplaceOptions` هدف. في مثالنا ، حددنا`MatchCase` ل`false` لتجاهل الحالة عند البحث ، و`FindWholeWordsOnly` ل`false` للسماح بالبحث عن أجزاء من الكلمات واستبدالها:
+现在我们将使用一个配置查找和替换选项`FindReplaceOptions`目的。在我们的示例中，我们设置`MatchCase`到`false`搜索时忽略大小写，以及`FindWholeWordsOnly`到`false`允许搜索和替换部分单词：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { MatchCase = false, FindWholeWordsOnly = false };
 ```
 
-## الخطوة 4: استبدال النص في التذييل
+## 第 4 步：替换页脚中的文本
 
- نحن نستخدم ال`Range.Replace` طريقة لإجراء استبدال النص في التذييل. في مثالنا ، نستبدل العبارة "(C) 2006 Aspose Pty Ltd." بواسطة "حقوق الطبع والنشر (C) 2020 لشركة Aspose Pty Ltd." :
+我们使用`Range.Replace`在页脚中执行文本替换的方法。在我们的示例中，我们替换了短语“(C) 2006 Aspose Pty Ltd”。由“Aspose Pty Ltd 版权所有 (C) 2020”。 :
 
 ```csharp
 footer
@@ -51,21 +51,21 @@ footer
 .Range.Replace("(C) 2006 Aspose Pty Ltd.", "Copyright (C) 2020 by Aspose Pty Ltd.", options);
 ```
 
-## الخطوة 5: احفظ المستند المحرر
+## 第五步：保存编辑好的文档
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+最后，我们将修改后的文档保存到指定目录，使用`Save`方法：
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
 ```
 
-### مثال على شفرة المصدر لاستبدال النص في التذييل باستخدام Aspose.Words لـ .NET
+### 使用 Aspose.Words for .NET 替换页脚中的文本的示例源代码
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام استبدال نص التذييل بـ Aspose.Words for .NET:
+下面是完整的示例源代码，用于演示如何使用 Aspose.Words for .NET 替换页脚文本：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Footer.docx");
 
@@ -81,6 +81,6 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
         
 ```
 
-## خاتمة
+## 结论
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة استبدال النص في التذييل في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لتحميل مستند ، والوصول إلى التذييل ، وتكوين خيارات البحث والاستبدال ، وإجراء استبدال النص ، وحفظ المستند المحرر.
+在本文中，我们探索了 C# 源代码以了解如何使用 Aspose.Words for .NET 的 Replace Text In Footer 功能。我们按照分步指南加载文档、访问页脚、配置搜索和替换选项、执行文本替换以及保存编辑后的文档。

@@ -1,18 +1,18 @@
 ---
-title: ملف PDF موقع رقميًا باستخدام حامل الشهادة
-linktitle: ملف PDF موقع رقميًا باستخدام حامل الشهادة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية توقيع ملف PDF رقميًا باستخدام حامل شهادة مع Aspose.Words for .NET.
+title: Pdf firmado digitalmente usando el titular del certificado
+linktitle: Pdf firmado digitalmente usando el titular del certificado
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a firmar digitalmente un PDF con un titular de certificado con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات إنشاء ملف PDF موقع رقميًا باستخدام شهادة مع Aspose.Words for .NET. يضيف التوقيع الرقمي طبقة من الأمان والتكامل إلى وثيقة PDF. اتبع الخطوات التالية:
+En este tutorial, lo guiaremos a través de los pasos para crear un PDF firmado digitalmente usando un certificado con Aspose.Words para .NET. La firma digital agrega una capa de seguridad e integridad al documento PDF. Siga los pasos a continuación:
 
-## الخطوة 1: إنشاء المستند وإضافة المحتوى
+## Paso 1: Crear el documento y agregar contenido
 
-ابدأ بإنشاء مثيل لفئة المستند:
+Comience creando una instancia de la clase Documento:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -20,19 +20,19 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أضف محتوى إلى المستند
+## Paso 2: Agregar contenido al documento
 
- ثم استخدم ملف`DocumentBuilder` لإضافة محتوى إلى المستند. على سبيل المثال ، لإضافة فقرة تحتوي على النص "Test Signed PDF" ، استخدم امتداد`Writeln` طريقة:
+ Luego usa el`DocumentBuilder` para agregar contenido al documento. Por ejemplo, para agregar un párrafo que contenga el texto "PDF firmado de prueba", use el`Writeln` método:
 
 ```csharp
 builder.Writeln("Test Signed PDF.");
 ```
 
-يمكنك إضافة عناصر محتوى أخرى حسب الحاجة.
+Puede agregar otros elementos de contenido según sea necesario.
 
-## الخطوة 3: تعيين خيارات حفظ PDF
+## Paso 3: Configure las opciones de guardado de PDF
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وحدد تفاصيل التوقيع الرقمي:
+Cree una instancia de la clase PdfSaveOptions y especifique los detalles de la firma digital:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -43,27 +43,27 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-تأكد من تحديد المسار الصحيح لشهادتك وكلمة المرور المرتبطة بها. يمكنك أيضًا تخصيص سبب التوقيع وموقعه.
+Asegúrese de especificar la ruta correcta a su certificado y la contraseña asociada. También puede personalizar el motivo y la ubicación de la firma.
 
-## الخطوة 4: احفظ المستند بتنسيق PDF موقّع رقميًا
+## Paso 4: Guarde el documento como PDF firmado digitalmente
 
- استخدم ال`Save` طريقة لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ:
+ Utilizar el`Save` para guardar el documento como PDF especificando las opciones de guardado:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF الموقع رقميًا.
+Asegúrese de especificar la ruta correcta para guardar el PDF firmado digitalmente.
 
-باتباع هذه الخطوات ، يمكنك بسهولة إنشاء ملف PDF موقّع رقميًا مع شهادة باستخدام Aspose.Words for .NET.
+Siguiendo estos pasos, puede crear fácilmente un PDF firmado digitalmente con un certificado usando Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لـ Pdf الموقّع رقميًا باستخدام حامل الشهادة باستخدام Aspose.Words for .NET
+### Código fuente de ejemplo para Pdf firmado digitalmente usando el titular del certificado usando Aspose.Words para .NET
 
-فيما يلي رمز المصدر الكامل لـ Pdf الموقّع رقميًا باستخدام حامل الشهادة من مستند باستخدام Aspose.Words for .NET:
+Aquí está el código fuente completo del PDF firmado digitalmente usando el titular del certificado de un documento usando Aspose.Words para .NET:
 
 ```csharp
 
-            // المسار إلى دليل المستندات.
+            // La ruta al directorio de documentos.
 			string dataDir = "YOUR DOCUMENT DIRECTORY";
             Document doc = new Document();
             DocumentBuilder builder = new DocumentBuilder(doc);

@@ -1,55 +1,55 @@
 ---
-title: تطبيق تنسيق الصفوف
-linktitle: تطبيق تنسيق الصفوف
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتطبيق تنسيق الصفوف على جدول باستخدام Aspose.Words for .NET.
+title: Aplicar formato de fila
+linktitle: Aplicar formato de fila
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para aplicar formato de fila a una tabla usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-table-styles-and-formatting/apply-row-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتطبيق تنسيق الصف على جدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، سيكون لديك فهم واضح لكيفية تنسيق صفوف الجدول في مستندات Word باستخدام Aspose.Words for .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para aplicar formato de fila a una tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta característica en sus propios proyectos. Al final de este tutorial, comprenderá claramente cómo formatear filas de tablas en sus documentos de Word usando Aspose.Words para .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento de Word editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## Paso 2: Cree un nuevo documento y un generador de documentos
+ A continuación, debe crear una nueva instancia de la`Document` clase y un constructor de documentos para ese documento.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ لوحة جديدة
- لتطبيق تنسيق الصفوف ، يجب أن نبدأ أولاً في جدول جديد باستخدام`StartTable()` طريقة منشئ الوثيقة.
+## Paso 3: Inicie un nuevo tablero
+ Para aplicar el formato de fila, primero debemos comenzar una nueva tabla usando el`StartTable()` método del constructor del documento.
 
 ```csharp
 Table table = builder. StartTable();
 ```
 
-## الخطوة 4: أدخل خلية وانتقل إلى تنسيق الصف
-يمكننا الآن إدراج خلية في الجدول والوصول إلى تنسيق الصف لتلك الخلية باستخدام منشئ المستندات`InsertCell()` و`RowFormat` طُرق.
+## Paso 4: inserte una celda y vaya al formato de fila
+Ahora podemos insertar una celda en la tabla y acceder al formato de fila para esa celda usando el generador de documentos.`InsertCell()` y`RowFormat` métodos.
 
 ```csharp
 builder. InsertCell();
 RowFormat rowFormat = builder.RowFormat;
 ```
 
-## الخطوة 5: ضبط ارتفاع الصف
- لتعيين ارتفاع الصف ، نستخدم`Height` و`HeightRule` خصائص تنسيق الصف. في هذا المثال ، قمنا بتعيين ارتفاع صف بمقدار 100 نقطة واستخدمنا`Exactly` قاعدة.
+## Paso 5: establecer la altura de la fila
+ Para establecer la altura de la fila, usamos el`Height` y`HeightRule` propiedades del formato de fila. En este ejemplo, establecemos una altura de fila de 100 puntos y usamos el`Exactly` regla.
 
 ```csharp
 rowFormat. Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
-## الخطوة 6: تحديد تنسيق الجدول
- يمكن تعيين بعض خصائص التنسيق في الجدول نفسه وتطبيقها على جميع صفوف الجدول. في هذا المثال ، قمنا بتعيين خصائص هامش الجدول باستخدام`LeftPadding`, `RightPadding`, `TopPadding` و`BottomPadding` ملكيات.
+## Paso 6: Definir el formato de la tabla
+ Algunas propiedades de formato se pueden establecer en la propia tabla y se aplican a todas las filas de la tabla. En este ejemplo, configuramos las propiedades del margen de la tabla usando el`LeftPadding`, `RightPadding`, `TopPadding` y`BottomPadding` propiedades.
 
 ```csharp
 table. LeftPadding = 30;
@@ -58,36 +58,36 @@ table. TopPadding = 30;
 table. BottomPadding = 30;
 ```
 
-## الخطوة 7: أضف محتوى إلى الصف
-الآن نستطيع
+## Paso 7: Agregar contenido a la fila
+Ahora podemos
 
- سنقوم بإضافة محتوى إلى السطر باستخدام طرق مُنشئ المستند. في هذا المثال ، نستخدم الامتداد`Writeln()` طريقة لإضافة نص إلى السطر.
+ Vamos a agregar contenido a la línea utilizando los métodos del constructor de documentos. En este ejemplo, usamos el`Writeln()` método para agregar texto a la línea.
 
 ```csharp
 builder.Writeln("I'm a beautifully formatted line.");
 ```
 
-## الخطوة 8: قم بإنهاء السطر والجدول
- بمجرد إضافة المحتوى إلى الصف ، يمكننا إنهاء الصف باستخدام`EndRow()` الطريقة ثم قم بإنهاء الجدول باستخدام`EndTable()` طريقة.
+## Paso 8: Terminar la línea y la mesa
+ Una vez que hemos agregado el contenido a la fila, podemos terminar la fila usando el`EndRow()` método y luego termine la tabla usando el`EndTable()` método.
 
 ```csharp
 builder. EndRow();
 builder. EndTable();
 ```
 
-## الخطوة 9: احفظ المستند المعدل
-أخيرًا ، نحفظ المستند المعدل في ملف. يمكنك اختيار اسم وموقع مناسبين للمستند الناتج.
+## Paso 9: Guarde el documento modificado
+Finalmente, guardamos el documento modificado en un archivo. Puede elegir un nombre y una ubicación apropiados para el documento de salida.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
 ```
 
-تهنئة ! لقد قمت الآن بتطبيق تنسيق الصف على جدول باستخدام Aspose.Words لـ .NET.
+¡Felicidades! Ahora ha aplicado el formato de fila a una tabla con Aspose.Words para .NET.
 
-### نموذج التعليمات البرمجية المصدر لتطبيق تنسيق الصف باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para aplicar formato de fila con Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -97,7 +97,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx"
 	RowFormat rowFormat = builder.RowFormat;
 	rowFormat.Height = 100;
 	rowFormat.HeightRule = HeightRule.Exactly;
-	// يتم تعيين خصائص التنسيق هذه في الجدول ويتم تطبيقها على جميع الصفوف في الجدول.
+	// Estas propiedades de formato se establecen en la tabla y se aplican a todas las filas de la tabla.
 	table.LeftPadding = 30;
 	table.RightPadding = 30;
 	table.TopPadding = 30;
@@ -108,5 +108,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx"
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تطبيق تنسيق الصفوف على جدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة دمج هذه الوظيفة في مشاريع C # الخاصة بك. تعد معالجة تنسيق صفوف الجدول جانبًا أساسيًا من جوانب معالجة المستندات ، وتوفر Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لتحقيق ذلك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية المتطلبات المحددة.
+## Conclusión
+En este tutorial, aprendimos cómo aplicar formato de fila a una tabla usando Aspose.Words para .NET. Al seguir esta guía paso a paso, puede integrar fácilmente esta funcionalidad en sus proyectos de C#. La manipulación del formato de las filas de las tablas es un aspecto esencial del procesamiento de documentos y Aspose.Words ofrece una API potente y flexible para lograrlo. Con este conocimiento, puede mejorar la presentación visual de sus documentos de Word y cumplir requisitos específicos.

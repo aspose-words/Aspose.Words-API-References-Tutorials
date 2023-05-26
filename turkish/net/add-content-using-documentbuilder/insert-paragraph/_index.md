@@ -1,21 +1,21 @@
 ---
-title: أدخل فقرة
-linktitle: أدخل فقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج فقرات منسقة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Paragraf Ekle
+linktitle: Paragraf Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerine biçimlendirilmiş paragraflar eklemeyi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-paragraph/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج فقرات في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة فقرات منسقة إلى مستنداتك.
+Bu kapsamlı öğreticide, Aspose.Words for .NET kullanarak bir Word belgesine nasıl paragraf ekleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda belgelerinize biçimlendirilmiş paragraflar ekleyebileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesi başlatın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,8 +23,8 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تعيين الخط والتنسيق
-بعد ذلك ، قم بإعداد خصائص الخط وتنسيق الفقرة باستخدام كائنات Font و ParagraphFormat على التوالي:
+## 2. Adım: Yazı Tipi ve Biçimlendirmeyi Ayarlayın
+Ardından, sırasıyla Font ve ParagraphFormat nesnelerini kullanarak font özelliklerini ve paragraf biçimlendirmesini ayarlayın:
 
 ```csharp
 Font font = builder.Font;
@@ -40,22 +40,22 @@ paragraphFormat.Alignment = ParagraphAlignment.Justify;
 paragraphFormat.KeepTogether = true;
 ```
 
-## الخطوة 3: أدخل فقرة
-بعد إعداد الخط والتنسيق ، استخدم طريقة Writeln لفئة DocumentBuilder لإدراج فقرة كاملة:
+## 3. Adım: Bir Paragraf Ekleyin
+Yazı tipini ve biçimlendirmeyi ayarladıktan sonra, tam bir paragraf eklemek için DocumentBuilder sınıfının Writeln yöntemini kullanın:
 
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```
 
-## الخطوة 4: احفظ المستند
-بعد إدراج الفقرة ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 4. Adım: Belgeyi Kaydedin
+Paragrafı ekledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
-## مثال على كود المصدر لإدراج فقرة باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال فقرة باستخدام Aspose.Words for .NET:
+## Aspose.Words for .NET kullanarak Paragraf Ekleme için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak bir paragraf eklemek için eksiksiz kaynak kodu burada:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -79,5 +79,5 @@ builder.Writeln("A whole paragraph.");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج فقرات منسقة في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إضافة فقرات مخصصة مع خطوط معينة وتنسيق ومحاذاة مستنداتك.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine biçimlendirilmiş paragrafların nasıl ekleneceğini başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, artık belgelerinize belirli yazı tipleri, biçimlendirme ve hizalama ile özelleştirilmiş paragraflar ekleyebilirsiniz.

@@ -1,57 +1,57 @@
 ---
-title: قم بتمكين تعطيل استبدال الخط
-linktitle: قم بتمكين تعطيل استبدال الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تمكين أو تعطيل استبدال الخط في مستند Word باستخدام Aspose.Words for .NET.
+title: Yazı Tipi Değiştirmeyi Devre Dışı Bırakmayı Etkinleştir
+linktitle: Yazı Tipi Değiştirmeyi Devre Dışı Bırakmayı Etkinleştir
+second_title: Aspose.Words for .NET API Referansı
+description: Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinde yazı tipi değiştirmeyi nasıl etkinleştireceğinizi veya devre dışı bırakacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/enable-disable-font-substitution/
 ---
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تمكين أو تعطيل استبدال الخط في مستند Word عند عرضه باستخدام مكتبة Aspose.Words لـ .NET. يتيح لك تمكين أو تعطيل استبدال الخط التحكم في ما إذا كان سيتم استبدال الخطوط المفقودة تلقائيًا بخط افتراضي. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu öğreticide, bir Word belgesini Aspose.Words .NET kitaplığı kullanarak işlerken yazı tipi değiştirmeyi nasıl etkinleştireceğiniz veya devre dışı bırakacağınız konusunda size yol göstereceğiz. Yazı tipi değiştirmeyi etkinleştirmek veya devre dışı bırakmak, eksik yazı tiplerinin otomatik olarak varsayılan bir yazı tipiyle değiştirilip değiştirilmeyeceğini kontrol etmenizi sağlar. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word الذي تريد عرضه باستبدال الخط أو بدونه
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
+- Yazı tipi değiştirmeli veya değiştirmesiz işlemek istediğiniz bir Word belgesi
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند وتكوين إعدادات الخط
- بعد ذلك ، سنقوم بتحميل مستند Word الذي تريد عرضه وإنشاء مثيل لملف`FontSettings` فئة للتعامل مع إعدادات الخط. سنقوم بتعيين تجاوز الخط الافتراضي عن طريق تحديد اسم الخط في`DefaultFontName` وتعطيل تجاوز معلومات الخط بـ`Enabled` ضبط ل`false`.
+## 2. Adım: Belgeyi yükleyin ve yazı tipi ayarlarını yapılandırın
+ Ardından, işlemek istediğiniz Word belgesini yükleyeceğiz ve örneğini oluşturacağız.`FontSettings` yazı tipi ayarlarını işlemek için sınıf. Yazı tipi adını belirterek varsayılan yazı tipi geçersiz kılmayı ayarlayacağız.`DefaultFontName` ve ile yazı tipi bilgilerini geçersiz kılmayı devre dışı bırakın`Enabled` ayarlanır`false`.
 
 ```csharp
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Rendering.docx");
 
-// تكوين إعدادات الخط
+// Yazı tipi ayarlarını yapılandırın
 FontSettings fontSettings = new FontSettings();
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
 fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
 
-// قم بتطبيق إعدادات الخط على المستند
+// Yazı tipi ayarlarını belgeye uygulama
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 3: احفظ المستند المقدم
-أخيرًا ، سنحفظ المستند الذي تم تقديمه ، والذي سيحترم إعدادات تجاوز الخط المحددة.
+## 3. Adım: Oluşturulan belgeyi kaydedin
+Son olarak, tanımlanmış yazı tipi geçersiz kılma ayarlarına uyacak şekilde işlenmiş belgeyi kaydedeceğiz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 
-### نموذج التعليمات البرمجية المصدر لـ Enable Disable Font Substitution باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Enable Disable Font Substitution için örnek kaynak kodu 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -63,5 +63,5 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تمكين أو تعطيل استبدال الخط في مستند Word عند عرضه باستخدام Aspose.Words for .NET. من خلال التحكم في استبدال الخط ، يمكنك التأثير على كيفية معالجة الخطوط المفقودة في المستندات المقدمة. لا تتردد في استخدام هذه الميزة لتخصيص إدارة الخطوط في مستندات Word الخاصة بك.
+## Çözüm
+Bu öğreticide, bir Word belgesini Aspose.Words for .NET ile işlerken yazı tipi değiştirmeyi nasıl etkinleştireceğimizi veya devre dışı bırakacağımızı gördük. Yazı tipi değiştirmeyi kontrol ederek, işlenmiş belgelerinizde eksik yazı tiplerinin nasıl işleneceğini etkileyebilirsiniz. Word belgelerinizdeki yazı tiplerinin yönetimini özelleştirmek için bu özelliği kullanmaktan çekinmeyin.

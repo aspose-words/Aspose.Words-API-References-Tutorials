@@ -1,38 +1,38 @@
 ---
-title: التحكم في محتوى مربع نص منسق
-linktitle: التحكم في محتوى مربع نص منسق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء عنصر تحكم في محتوى مربع نص منسق في مستند Word باستخدام Aspose.Words for .NET مما يتيح تنسيق النص وتصميمه.
+title: Zengin Metin Kutusu İçerik Kontrolü
+linktitle: Zengin Metin Kutusu İçerik Kontrolü
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'i kullanarak bir Word belgesinde metin biçimlendirme ve stillendirme sağlayan zengin bir metin kutusu içerik denetimi oluşturmayı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/rich-text-box-content-control/
 ---
 
-يوضح هذا البرنامج التعليمي كيفية إنشاء عنصر تحكم محتوى مربع نص منسق في مستند Word باستخدام Aspose.Words for .NET. تسمح عناصر التحكم في محتوى مربع النص المنسق للمستخدمين بإدخال نص وتنسيقه باستخدام أنماط وخيارات تنسيق متنوعة.
+Bu eğitim, Aspose.Words for .NET kullanılarak bir Word belgesinde zengin metin kutusu içerik kontrolünün nasıl oluşturulacağını gösterir. Zengin metin kutusu içerik denetimleri, kullanıcıların çeşitli stiller ve biçimlendirme seçenekleriyle metin girmesine ve biçimlendirmesine olanak tanır.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Önkoşullar
+Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words for .NET kitaplığı yüklendi.
+- Temel C# bilgisi ve Word belgeleriyle çalışma.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## 1. Adım: Belge Dizinini kurun
+ Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و StructuredDocumentTag
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`StructuredDocumentTag` لتمثيل عنصر تحكم محتوى مربع النص المنسق. حدد`SdtType.RichText` كنوع و`MarkupLevel.Block` كمستوى الترميز لإنشاء مربع نص منسق على مستوى الكتلة.
+## 2. Adım: Bir Belge ve StructuredDocumentTag Oluşturun
+ Yeni bir örneğini oluştur`Document` sınıf ve bir`StructuredDocumentTag` zengin metin kutusu içerik denetimini temsil etmek için. Belirtin`SdtType.RichText` tip olarak ve`MarkupLevel.Block` blok düzeyinde bir zengin metin kutusu oluşturmak için biçimlendirme düzeyi olarak.
 
 ```csharp
 Document doc = new Document();
 StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichText, MarkupLevel.Block);
 ```
 
-## الخطوة 3: إنشاء وتنسيق محتوى نص منسق
-قم بإنشاء فقرة وتشغيلها لتمثيل محتوى النص المنسق. اضبط النص وخيارات التنسيق مثل اللون والخط وما إلى ذلك.
+## 3. Adım: Zengin Metin İçeriğini Oluşturun ve Biçimlendirin
+Zengin metin içeriğini temsil etmek için bir paragraf oluşturun ve çalıştırın. Renk, yazı tipi vb. metin ve biçimlendirme seçeneklerini ayarlayın.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
@@ -42,31 +42,31 @@ run.Font.Color = Color.Green;
 para.Runs.Add(run);
 ```
 
-## الخطوة 4: أضف محتوى Rich Text إلى عنصر التحكم في المحتوى
-أضف الفقرة مع محتوى النص المنسق إلى ملف`ChildNodes` مجموعة من عنصر تحكم محتوى مربع نص منسق.
+## 4. Adım: Zengin Metin İçeriğini İçerik Kontrolüne Ekleyin
+Zengin metin içeriğine sahip paragrafı`ChildNodes` zengin metin kutusu içerik denetimi koleksiyonu.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);
 ```
 
-## الخطوة 5: قم بإلحاق Content Control بالمستند
- قم بإلحاق عنصر تحكم محتوى مربع النص المنسق بجسم المستند باستخدام ملف`AppendChild` طريقة نص القسم الأول من المستند.
+## 5. Adım: İçerik Denetimini Belgeye Ekleyin
+ kullanarak zengin metin kutusu içerik denetimini belgenin gövdesine ekleyin.`AppendChild` belgenin ilk bölümünün gövdesi yöntemi.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);
 ```
 
-## الخطوة 6: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.RichTextBoxContentControl.docx".
+## 6. Adım: Belgeyi Kaydedin
+ kullanarak belgeyi belirtilen dizine kaydedin.`Save` yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.RichTextBoxContentControl.docx" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ```
 
-### مثال على شفرة المصدر للتحكم في محتوى Rich Text Box باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Zengin Metin Kutusu İçerik Kontrolü için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -81,4 +81,4 @@ doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 	doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إنشاء عنصر تحكم محتوى مربع نص منسق في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenizde başarılı bir şekilde zengin metin kutusu içeriği kontrolü oluşturdunuz.

@@ -1,21 +1,21 @@
 ---
-title: تغيير مصدر ثقافة تحديث الحقل
-linktitle: تغيير مصدر ثقافة تحديث الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: تغيير مصدر ثقافة تحديث الحقل ، دليل خطوة بخطوة لتعديل مصدر الثقافة في Aspose.Words for .NET.
+title: Modifier la source de la culture de mise à jour du champ
+linktitle: Modifier la source de la culture de mise à jour du champ
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Modifier la source de culture de mise à jour du champ, guide étape par étape pour modifier la source de culture dans Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fields/change-field-update-culture-source/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال عملية تغيير مصدر ثقافة التحديث الميداني في مستندات Word باستخدام Aspose.Words for .NET. من خلال تعديل مصدر الثقافة ، يمكنك التحكم في تنسيق التاريخ أثناء تحديث الحقل وعمليات دمج البريد. سنزودك بشفرة المصدر C # الضرورية والتعليمات خطوة بخطوة لتحقيق ذلك.
+Dans ce didacticiel, nous vous guiderons tout au long du processus de modification de la source de culture de mise à jour de champ dans les documents Word à l'aide d'Aspose.Words pour .NET. En modifiant la source de culture, vous pouvez contrôler la mise en forme de la date lors des opérations de mise à jour des champs et de fusion et publipostage. Nous vous fournirons le code source C# nécessaire et des instructions étape par étape pour y parvenir.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Conditions préalables
+Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
+- Bibliothèque Aspose.Words pour .NET installée sur votre système.
 
-## الخطوة 1: إنشاء مستند و DocumentBuilder
-للبدء ، قم بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+## Étape 1 : Créer un document et DocumentBuilder
+Pour commencer, créez une instance de la classe Document et un objet DocumentBuilder :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,8 +23,8 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل محتوى بلغة محددة
-بعد ذلك ، قم بتعيين الإعدادات المحلية على اللغة الألمانية وأدخل الحقول بتنسيق التاريخ:
+## Étape 2 : Insérer du contenu avec des paramètres régionaux spécifiques
+Ensuite, définissez les paramètres régionaux sur l'allemand et insérez des champs avec un format de date :
 
 ```csharp
 builder.Font.LocaleId = 1031;
@@ -33,35 +33,35 @@ builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 ```
 
-في الكود أعلاه ، قمنا بتعيين لغة الخط إلى الألمانية (معرف اللغة 1031) وقمنا بإدخال حقلين بتنسيق تاريخ محدد.
+Dans le code ci-dessus, nous définissons les paramètres régionaux de la police sur l'allemand (ID de paramètres régionaux 1031) et insérons deux champs avec un formatage de date spécifique.
 
-## الخطوة 3: تغيير مصدر ثقافة تحديث الحقل
-لتغيير مصدر ثقافة تحديث الحقل ، استخدم فئة FieldOptions:
+## Étape 3 : Modifier la source de la culture de mise à jour du champ
+Pour modifier la source de la culture de mise à jour du champ, utilisez la classe FieldOptions :
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 ```
 
-في هذا المثال ، قمنا بتعيين الثقافة المستخدمة أثناء التحديث الميداني ليتم اختيارها من الثقافة المستخدمة في الحقل.
+Dans cet exemple, nous définissons la culture utilisée lors de la mise à jour du champ à choisir parmi la culture utilisée par le champ.
 
-## الخطوة 4: قم بإجراء دمج المراسلات
-نفذ عملية دمج المراسلات وحدد قيمة التاريخ للحقل "Date2":
+## Étape 4 : effectuer un publipostage
+Effectuez une opération de fusion et publipostage et spécifiez la valeur de date pour le champ "Date2" :
 
 ```csharp
 doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
 ```
 
-في مقتطف الشفرة هذا ، نقوم بتنفيذ عملية دمج البريد وتوفير قيمة DateTime للحقل "Date2".
+Dans cet extrait de code, nous exécutons l'opération de fusion et publipostage et fournissons une valeur DateTime pour le champ "Date2".
 
-## الخطوة 5: احفظ المستند
-احفظ المستند المعدل في ملف باستخدام طريقة Save لفئة Document:
+## Étape 5 : Enregistrer le document
+Enregistrez le document modifié dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
-### مثال رمز المصدر لتغيير مصدر ثقافة تحديث الحقل باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لتغيير مصدر ثقافة تحديث الحقل في مستندات Word باستخدام Aspose.Words for .NET:
+### Exemple de code source pour modifier la source de culture de mise à jour de champ à l'aide d'Aspose.Words pour .NET
+Voici le code source complet pour modifier la source de culture de mise à jour de champ dans les documents Word à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -80,5 +80,5 @@ doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تغيير مصدر ثقافة التحديث الميداني في مستندات Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن التحكم في الثقافة المستخدمة لتنسيق التاريخ أثناء عمليات تحديث الحقل ودمج البريد. قم بتخصيص مصدر الثقافة وفقًا لمتطلباتك لضمان تاريخ دقيق ومتسق.
+## Conclusion
+Toutes nos félicitations! Vous avez appris avec succès comment modifier la source de culture de mise à jour de champ dans les documents Word à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais contrôler la culture utilisée pour le formatage de la date lors des opérations de mise à jour des champs et de fusion et publipostage. Personnalisez la source de culture en fonction de vos besoins pour garantir une date précise et cohérente.

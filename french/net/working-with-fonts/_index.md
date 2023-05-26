@@ -1,42 +1,42 @@
 ---
-title: العمل مع الخطوط
-linktitle: العمل مع الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: توضح البرامج التعليمية كيفية تطبيق تنسيق الخط ، وتباعد أسطر الخطوط ، وتأثير DMLText ، وتمكين / تعطيل بديل الخط ، وإعدادات الخط الاحتياطي ، والحصول على قائمة بالخط المتاح في مستند Word باستخدام Aspose.Words for .NET
+title: Travailler avec des polices
+linktitle: Travailler avec des polices
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels montrent comment appliquer le formatage de la police, l'espacement des lignes de police, l'effet DMLText, activer/désactiver le remplacement de la police, les paramètres de remplacement des polices, obtenir la liste des polices disponibles dans le document Word à l'aide d'Aspose.Words pour .NET
 type: docs
 weight: 420
 url: /fr/net/working-with-fonts/
 ---
 
-ترشدك دروس العمل باستخدام الخطوط إلى جوانب مختلفة من العمل مع الخطوط ، مما يسمح لك بإجراء عمليات مثل تغيير تنسيق الخط ، وتحميل الخطوط من أدلة معينة ، وإدارة الخطوط البديلة والمزيد.
+Les didacticiels sur l'utilisation des polices vous guident à travers divers aspects de l'utilisation des polices, vous permettant d'effectuer des opérations telles que la modification du formatage des polices, le chargement des polices à partir de répertoires spécifiques, la gestion des polices de substitution, etc.
 
-توفر لك البرامج التعليمية شرحًا تفصيليًا خطوة بخطوة لكل ميزة ، جنبًا إلى جنب مع كود مصدر لغة C # لتوضيح المفاهيم. ستتعلم كيفية استخدام الفئات والطرق من Aspose.Words Library for .NET لأداء مهام محددة متعلقة بالخط في مستندات Word الخاصة بك.
+Les didacticiels vous fournissent des explications détaillées étape par étape pour chaque fonctionnalité, ainsi que le code source du langage C # pour illustrer les concepts. Vous apprendrez à utiliser les classes et les méthodes de la bibliothèque Aspose.Words pour .NET pour effectuer des tâches spécifiques liées aux polices dans vos documents Word.
 
-سواء كنت ترغب في تنسيق النص باستخدام خطوط مختلفة ، أو تعيين قواعد استبدال الخطوط ، أو تحميل الخطوط من أدلة معينة ، أو تلقي إشعارات الخطوط ، فإن البرامج التعليمية "العمل مع الخطوط" ستزودك بالمعرفة اللازمة لإنجاز هذه المهام. بسهولة.
+Que vous souhaitiez formater du texte avec différentes polices, définir des règles de substitution de polices, charger des polices à partir de répertoires spécifiques ou recevoir des notifications de polices, les didacticiels "Travailler avec les polices" vous fourniront les connaissances nécessaires pour accomplir ces tâches. avec facilité.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [تنسيق الخط](./font-formatting/) | في هذا البرنامج التعليمي ، تعرف على كيفية تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET. |
-| [احصل على تباعد أسطر الخط](./get-font-line-spacing/) | في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تباعد بين الخطوط في مستند Word باستخدام Aspose.Words for .NET. |
-| [تحقق من تأثير النص DrawingML](./check-drawingml-text-effect/) | في هذا البرنامج التعليمي ، تعرف على كيفية التحقق من تأثيرات نص DrawingML في مستند Word باستخدام Aspose.Words for .NET. |
-| [قم بتعيين تنسيق الخط](./set-font-formatting/) | تعرف على كيفية تعيين تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET وإنشاء مستندات جذابة. |
-| [قم بتعيين علامة توكيد الخط](./set-font-emphasis-mark/) | تعرف على كيفية تعيين نمط تأكيد الخط في مستند Word باستخدام Aspose.Words for .NET. |
-| [تعيين مجلدات الخطوط](./set-fonts-folders/) | دليل خطوة بخطوة لإعداد مجلدات الخطوط عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [قم بتمكين تعطيل استبدال الخط](./enable-disable-font-substitution/) | في هذا البرنامج التعليمي ، تعرف على كيفية تمكين أو تعطيل استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. |
-| [تعيين إعدادات الخط الاحتياطي](./set-font-fallback-settings/) | تعرف على كيفية تعيين إعدادات استبدال الخطوط في Aspose.Words for .NET وتخصيص استبدال الخط في مستندات Word. |
-| [قم بتحميل إعدادات Noto Fallback](./load-noto-fallback-settings/) | في هذا البرنامج التعليمي ، تعرف على كيفية تحميل Noto override parameters في مستند Word باستخدام Aspose.Words for .NET. |
-| [تعيين المثيل الافتراضي مجلدات الخطوط](./set-fonts-folders-default-instance/) | دليل خطوة بخطوة لتعيين مجلد الخط الافتراضي عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [تعيين مجلدات الخطوط متعددة المجلدات](./set-fonts-folders-multiple-folders/) | دليل خطوة بخطوة لتعيين مجلدات خطوط متعددة عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [تعيين نظام مجلدات الخطوط والمجلد المخصص](./set-fonts-folders-system-and-custom-folder/) | دليل خطوة بخطوة لإعداد النظام ومجلدات الخطوط المخصصة عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [تعيين مجلدات الخطوط ذات الأولوية](./set-fonts-folders-with-priority/) | دليل خطوة بخطوة لإعداد مجلدات الخطوط ذات الأولوية عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [تعيين مجلد خطوط النوع الحقيقي](./set-true-type-fonts-folder/) | دليل تفصيلي خطوة بخطوة لإعداد مجلد خطوط الكتابة الصحيحة عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [حدد الخط الافتراضي عند التقديم](./specify-default-font-when-rendering/) | دليل تفصيلي خطوة بخطوة لتحديد الخط الافتراضي عند تقديم مستند باستخدام Aspose.Words for .NET. |
-| [إعدادات الخط مع خيارات التحميل](./font-settings-with-load-options/) | في هذا البرنامج التعليمي ، تعرف على كيفية تحميل مستند Word بخيارات تحميل مخصصة وإعدادات الخط المقابلة.|
-| [تعيين مجلد الخطوط](./set-fonts-folder/) | تعرف على كيفية تعيين دليل الخطوط في Aspose.Words for .NET وتأكد من توفر الخطوط المستخدمة في مستنداتك. |
-| [المثيل الافتراضي لإعدادات الخط](./font-settings-default-instance/) | في هذا البرنامج التعليمي ، تعرف على كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET. |
-| [الحصول على قائمة الخطوط المتاحة](./get-list-of-available-fonts/) | في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words for .NET. |
-| [تلقي إخطارات الخطوط](./receive-notifications-of-fonts/) | تعرف على كيفية تلقي إشعارات الخطوط المفقودة أو المستبدلة عند استخدام Aspose.Words for .NET. |
-| [تلقي إشعار تحذير](./receive-warning-notification/) | تعرف على كيفية تلقي إشعار تحذير عند استخدام Aspose.Words for .NET وإدارة أية مشكلات أو تحذيرات في مستنداتك. |
-| [مثال مصدر خط Steam](./resource-steam-font-source-example/) | تعرف على كيفية استخدام مصدر خط تدفق الموارد لتحميل الخطوط المخصصة في Aspose.Words for .NET. |
-| [احصل على استبدال بدون لاحقات](./get-substitution-without-suffixes/) | في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تجاوزات غير لاحقة في مستند Word باستخدام Aspose.Words for .NET. |
+| [Formatage des polices](./font-formatting/) | Dans ce didacticiel, apprenez à formater la police dans un document Word avec Aspose.Words pour .NET. |
+| [Obtenir l'espacement des lignes de police](./get-font-line-spacing/) | Dans ce didacticiel, découvrez comment obtenir l'espacement des lignes de police dans un document Word avec Aspose.Words pour .NET. |
+| [Vérifier l'effet de texte DrawingML](./check-drawingml-text-effect/) | Dans ce didacticiel, découvrez comment vérifier les effets de texte DrawingML dans un document Word avec Aspose.Words pour .NET. |
+| [Définir la mise en forme de la police](./set-font-formatting/) | Apprenez à définir la mise en forme des polices dans un document Word à l'aide d'Aspose.Words pour .NET et créez des documents attrayants. |
+| [Définir la marque d'accentuation de la police](./set-font-emphasis-mark/) | Apprenez à définir le style d'accentuation de la police dans un document Word à l'aide de Aspose.Words pour .NET. |
+| [Définir les dossiers de polices](./set-fonts-folders/) | Guide étape par étape pour définir les dossiers de polices lors du rendu d'un document à l'aide de Aspose.Words pour .NET. |
+| [Activer Désactiver la substitution de police](./enable-disable-font-substitution/) | Dans ce didacticiel, découvrez comment activer ou désactiver la substitution de polices dans un document Word avec Aspose.Words pour .NET. |
+| [Définir les paramètres de remplacement des polices](./set-font-fallback-settings/) | Découvrez comment définir les paramètres de substitution de police dans Aspose.Words pour .NET et personnaliser la substitution de police dans vos documents Word. |
+| [Charger les paramètres de secours de Noto](./load-noto-fallback-settings/) | Dans ce didacticiel, découvrez comment charger les paramètres de remplacement Noto dans un document Word avec Aspose.Words pour .NET. |
+| [Définir l'instance par défaut des dossiers de polices](./set-fonts-folders-default-instance/) | Guide étape par étape pour définir le dossier de polices par défaut lors du rendu d'un document à l'aide de Aspose.Words pour .NET. |
+| [Définir les dossiers de polices Dossiers multiples](./set-fonts-folders-multiple-folders/) | Guide étape par étape pour définir plusieurs dossiers de polices lors du rendu d'un document à l'aide de Aspose.Words pour .NET. |
+| [Définir le système de dossiers de polices et le dossier personnalisé](./set-fonts-folders-system-and-custom-folder/) | Guide étape par étape pour la configuration des dossiers de polices système et personnalisées lors du rendu d'un document à l'aide d'Aspose.Words pour .NET. |
+| [Définir les dossiers de polices avec priorité](./set-fonts-folders-with-priority/) | Guide étape par étape pour définir les dossiers de polices avec priorité lors du rendu d'un document à l'aide d'Aspose.Words pour .NET. |
+| [Définir le dossier des polices True Type](./set-true-type-fonts-folder/) | Guide étape par étape pour définir le dossier des polices True Type lors du rendu d'un document à l'aide d'Aspose.Words pour .NET. |
+| [Spécifier la police par défaut lors du rendu](./specify-default-font-when-rendering/) | Guide étape par étape pour spécifier la police par défaut lors du rendu d'un document à l'aide de Aspose.Words pour .NET. |
+| [Paramètres de police avec options de chargement](./font-settings-with-load-options/) | Dans ce didacticiel, découvrez comment charger un document Word avec des options de chargement personnalisées et les paramètres de police correspondants.|
+| [Définir le dossier des polices](./set-fonts-folder/) | Apprenez à définir le répertoire des polices dans Aspose.Words pour .NET et assurez-vous de la disponibilité des polices utilisées dans vos documents. |
+| [Instance par défaut des paramètres de police](./font-settings-default-instance/) | Dans ce didacticiel, découvrez comment configurer les paramètres de police par défaut dans un document Word avec Aspose.Words pour .NET. |
+| [Obtenir la liste des polices disponibles](./get-list-of-available-fonts/) | Dans ce didacticiel, découvrez comment obtenir la liste des polices disponibles dans Aspose.Words pour .NET. |
+| [Recevoir des notifications de polices](./receive-notifications-of-fonts/) | Découvrez comment recevoir des notifications de polices manquantes ou remplacées lors de l'utilisation d'Aspose.Words pour .NET. |
+| [Recevoir une notification d'avertissement](./receive-warning-notification/) | Découvrez comment recevoir une notification d'avertissement lors de l'utilisation d'Aspose.Words pour .NET et gérer les problèmes ou les avertissements dans vos documents. |
+| [Ressource Exemple de source de police Steam](./resource-steam-font-source-example/) | Apprenez à utiliser Resource Stream Font Source pour charger des polices personnalisées dans Aspose.Words pour .NET. |
+| [Obtenir une substitution sans suffixes](./get-substitution-without-suffixes/) | Dans ce didacticiel, découvrez comment obtenir des remplacements sans suffixe dans un document Word avec Aspose.Words pour .NET. |

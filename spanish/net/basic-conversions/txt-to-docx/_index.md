@@ -1,47 +1,47 @@
 ---
-title: TXT إلى Docx
-linktitle: TXT إلى Docx
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل ملفات النص العادي (Txt) إلى مستندات Word (Docx) باستخدام Aspose.Words for .NET. البرنامج التعليمي خطوة بخطوة مع رمز المثال.
+title: Texto a docx
+linktitle: Texto a docx
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a convertir archivos de texto sin formato (Txt) a documentos de Word (Docx) usando Aspose.Words para .NET. Tutorial paso a paso con código de ejemplo.
 type: docs
 weight: 10
 url: /es/net/basic-conversions/txt-to-docx/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل ملف نصي عادي (Txt) إلى مستند Word بتنسيق Docx. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+En este tutorial paso a paso, lo guiaremos sobre cómo usar Aspose.Words para .NET para convertir un archivo de texto sin formato (Txt) a un documento de Word en formato Docx. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde el sitio web oficial.
 
-## الخطوة 1: تهيئة كائن المستند
+## Paso 1: inicialización del objeto de documento
 
- أولاً ، قم بتهيئة ملف`Document` كائن من خلال توفير المسار إلى ملف النص العادي الخاص بك:
+ Primero, inicialice el`Document` objeto proporcionando la ruta a su archivo de texto sin formato:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "English text.txt");
 ```
 
-## الخطوة 2: حفظ المستند بتنسيق Docx
+## Paso 2: guardar el documento en formato Docx
 
- بعد ذلك ، احفظ المستند بتنسيق Docx عن طريق استدعاء ملف`Save` طريقة على`Document`كائن وتوفير المسار واسم الملف لمستند Docx الناتج:
+ A continuación, guarde el documento en formato Docx llamando al`Save` método en el`Document` proporcionando la ruta y el nombre de archivo para el documento Docx de salida:
 
 ```csharp
 doc.Save(dataDir + "BaseConversions.TxtToDocx.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تحويل ملف نص عادي (Txt) إلى مستند Word بتنسيق Docx باستخدام Aspose.Words for .NET.
+¡Eso es todo! Ha convertido con éxito un archivo de texto sin formato (Txt) en un documento de Word en formato Docx utilizando Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لـ Txt To Docx باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Txt To Docx usando Aspose.Words para .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// يتم الكشف عن ترميز الملف النصي تلقائيًا.
+	// La codificación del archivo de texto se detecta automáticamente.
 	Document doc = new Document(MyDir + "English text.txt");
 
 	doc.Save(dataDir + "BaseConversions.TxtToDocx.docx");
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Siéntase libre de usar este código en sus propios proyectos y modifíquelo de acuerdo con sus requisitos específicos.

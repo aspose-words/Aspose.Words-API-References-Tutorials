@@ -1,68 +1,68 @@
 ---
-title: دقة المقارنة
-linktitle: دقة المقارنة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على ميزة مقارنة التفاصيل في Aspose.Words for .NET التي تسمح بمقارنة المستندات حرفًا بحرف ، والإبلاغ عن التغييرات التي تم إجراؤها.
+title: 比较粒度
+linktitle: 比较粒度
+second_title: Aspose.Words for .NET API 参考
+description: 了解 Aspose.Words for .NET 的比较粒度功能，它允许逐个字符地比较文档，报告所做的更改。
 type: docs
 weight: 10
 url: /zh/net/compare-documents/comparison-granularity/
 ---
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة مقارنة التفاصيل في Aspose.Words for .NET.
+这是一个分步指南，用于解释下面的 C# 源代码，它使用 Aspose.Words for .NET 的比较粒度功能。
 
-## الخطوة 1: مقدمة
+## 第 1 步：介绍
 
-تتيح لك ميزة مقارنة التفاصيل في Aspose.Words for .NET مقارنة المستندات على مستوى الأحرف. هذا يعني أنه سيتم مقارنة كل حرف وسيتم الإبلاغ عن التغييرات وفقًا لذلك.
+Aspose.Words for .NET 的比较粒度功能允许您在字符级别比较文档。这意味着将比较每个字符并相应地报告更改。
 
-## الخطوة الثانية: تهيئة البيئة
+## 第 2 步：设置环境
 
-قبل أن تبدأ ، تحتاج إلى إعداد بيئة التطوير الخاصة بك للعمل مع Aspose.Words for .NET. تأكد من تثبيت مكتبة Aspose.Words وأن لديك مشروع C # مناسب لتضمين الكود.
+在开始之前，您需要设置您的开发环境以使用 Aspose.Words for .NET。确保你已经安装了 Aspose.Words 库并且有一个合适的 C# 项目来嵌入代码。
 
-## الخطوة 3: إضافة التجميعات المطلوبة
+## 第 3 步：添加所需的程序集
 
-لاستخدام ميزة مقارنة التفاصيل في Aspose.Words for .NET ، تحتاج إلى إضافة التجميعات الضرورية إلى مشروعك. تأكد من أن لديك المراجع المناسبة لـ Aspose. Words في مشروعك.
+要使用 Aspose.Words for .NET 的比较粒度功能，您需要将必要的程序集添加到您的项目中。确保您在项目中正确引用了 Aspose.Words。
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.DocumentBuilder;
 ```
 
-## الخطوة 4: إنشاء المستندات
+## 第 4 步：创建文档
 
-في هذه الخطوة ، سننشئ وثيقتين باستخدام فئة DocumentBuilder. سيتم استخدام هذه الوثائق للمقارنة.
+在此步骤中，我们将使用 DocumentBuilder 类创建两个文档。这些文件将用于比较。
 
 ```csharp
-// قم بإنشاء مستند أ.
+//创建文档 A。
 DocumentBuilder builderA = new DocumentBuilder(new Document());
 builderA.Writeln("This is a simple A word.");
 
-// إنشاء مستند B.
+//创建文档 B。
 DocumentBuilder builderB = new DocumentBuilder(new Document());
 builderB.Writeln("This is simple B words.");
 ```
 
-## الخطوة 5: تكوين خيارات المقارنة
+## 第 5 步：配置比较选项
 
-في هذه الخطوة ، سنقوم بتكوين خيارات المقارنة لتحديد دقة المقارنة. هنا سوف نستخدم دقة على مستوى الحرف.
+在此步骤中，我们将配置比较选项以指定比较粒度。这里我们将使用字符级粒度。
 
 ```csharp
 CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.CharLevel };
 ```
 
-## الخطوة 6: مقارنة المستندات
+## 第 6 步：文件比较
 
-دعنا الآن نقارن المستندات باستخدام طريقة المقارنة لفئة المستند. سيتم حفظ التغييرات في المستند أ.
+现在让我们使用 Document 类的 Compare 方法比较文档。更改将保存在文档 A 中。
 
 ```csharp
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- ال`Compare` يقارن الأسلوب المستند A بالمستند B ويحفظ التغييرات في المستند A. يمكنك تحديد اسم المؤلف وتاريخ المقارنة كمرجع.
+这`Compare`方法将文档A与文档B进行比较，并将更改保存到文档A中。您可以指定作者姓名和比较日期以供参考。
 
-## خاتمة
+## 结论
 
-في هذه المقالة ، استكشفنا ميزة مقارنة التفاصيل في Aspose.Words for .NET. تتيح لك هذه الميزة مقارنة المستندات على مستوى الأحرف وتقرير التغييرات. يمكنك استخدام هذه المعرفة لإجراء مقارنات تفصيلية بين المستندات في مشاريعك.
+在本文中，我们探索了 Aspose.Words for .NET 的比较粒度特性。此功能允许您在字符级别比较文档并报告更改。您可以使用这些知识在您的项目中执行详细的文档比较。
 
-### نموذج لشفرة مصدر للمقارنة باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的比较粒度示例源代码
 
 ```csharp
             

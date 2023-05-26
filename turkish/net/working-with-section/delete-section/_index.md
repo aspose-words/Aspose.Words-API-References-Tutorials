@@ -1,30 +1,30 @@
 ---
-title: حذف القسم
-linktitle: حذف القسم
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية إزالة قسم معين من مستند Word باستخدام Aspose.Words for .NET.
+title: Bölümü Sil
+linktitle: Bölümü Sil
+second_title: Aspose.Words for .NET API Referansı
+description: Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinden belirli bir bölümün nasıl kaldırılacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-section/delete-section/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية حذف قسم معين من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يمكن أن يكون حذف قسم مفيدًا لإعادة ترتيب أو حذف أجزاء معينة من المستند. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu öğreticide, size Aspose.Words .NET kitaplığını kullanarak bir Word belgesinin belirli bir bölümünü nasıl sileceğinizi göstereceğiz. Bir bölümü silmek, belgenizin belirli bölümlerini yeniden düzenlemek veya silmek için yararlı olabilir. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: قم بإنشاء مستند ومنشئ
- أولاً ، سننشئ مثيلاً لملف`Document` فئة وما يرتبط بها`DocumentBuilder` المُنشئ لبناء المستند.
+## 1. Adım: Bir belge ve oluşturucu oluşturun
+ İlk olarak, bir örneğini oluşturacağız`Document` sınıf ve ilgili`DocumentBuilder` belgeyi oluşturmak için yapıcı.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: إضافة محتوى وأقسام
- بعد ذلك ، سنستخدم ملف`DocumentBuilder` المُنشئ لإضافة محتوى وأقسام إلى المستند. في هذا المثال ، نضيف سطرين من النص وقسمين.
+## 2. Adım: İçerik ve bölümler ekleyin
+ Sonra, kullanacağız`DocumentBuilder` Belgeye içerik ve bölümler eklemek için yapıcı. Bu örnekte, iki satır metin ve iki bölüm ekliyoruz.
 
 ```csharp
 builder.Writeln("Hello1");
@@ -33,14 +33,14 @@ builder.Writeln("Hello2");
 doc.AppendChild(new Section(doc));
 ```
 
-## الخطوة 3: حذف قسم معين
- لإزالة قسم معين من المستند ، سنستخدم ملف`RemoveAt` طريقة المستند`Sections` المجموعة ، مع تحديد فهرس القسم المراد إزالته.
+## 3. Adım: Belirli bir bölümü silin
+ Belgenin belirli bir bölümünü kaldırmak için`RemoveAt` belgenin yöntemi`Sections` koleksiyon, kaldırılacak bölümün dizinini belirterek.
 
 ```csharp
 doc.Sections.RemoveAt(0);
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Delete Section باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Bölüm Sil için örnek kaynak kodu 
 
 ```csharp
 
@@ -54,6 +54,6 @@ doc.Sections.RemoveAt(0);
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية إزالة قسم معين من مستند Word باستخدام Aspose.Words for .NET. يتيح لك حذف الأقسام إعادة ترتيب أجزاء معينة من المستند أو حذفها. لا تتردد في تخصيص هذه الميزة واستخدامها وفقًا لاحتياجاتك الخاصة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinden belirli bir bölümün nasıl kaldırılacağını gördük. Bölümleri silmek, belgenizin belirli bölümlerini yeniden düzenlemenizi veya silmenizi sağlar. Özel ihtiyaçlarınıza göre bu özelliği özelleştirmekten ve kullanmaktan çekinmeyin.
 

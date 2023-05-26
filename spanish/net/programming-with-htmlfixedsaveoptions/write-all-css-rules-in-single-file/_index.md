@@ -1,65 +1,65 @@
 ---
-title: اكتب جميع قواعد Css في ملف واحد
-linktitle: اكتب جميع قواعد Css في ملف واحد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستند Word إلى HTML ثابت عن طريق كتابة جميع قواعد CSS في ملف واحد باستخدام Aspose.Words for .NET.
+title: Escribir todas las reglas de CSS en un solo archivo
+linktitle: Escribir todas las reglas de CSS en un solo archivo
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a convertir un documento de Word a HTML fijo escribiendo todas las reglas de CSS en un solo archivo con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single-file/
 ---
 
-عند تحويل مستند Word إلى مستند HTML ثابت في تطبيق C # ، قد ترغب في دمج جميع قواعد CSS في ملف واحد لتحسين التنظيم وقابلية النقل. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحديد هذه الوظيفة باستخدام خيارات حفظ HtmlFixedSaveOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحويل مستند Word إلى HTML ثابت عن طريق كتابة جميع قواعد CSS في ملف واحد باستخدام خيارات الحفظ HtmlFixedSaveOptions.
+Al convertir un documento de Word a HTML fijo en una aplicación de C#, es posible que desee consolidar todas las reglas de CSS en un solo archivo para una mejor organización y portabilidad. Con la biblioteca Aspose.Words para .NET, puede especificar fácilmente esta funcionalidad mediante las opciones de guardado de HtmlFixedSaveOptions. En esta guía paso a paso, lo guiaremos a través de cómo usar Aspose.Words para el código fuente de .NET C# para convertir un documento de Word a HTML fijo al escribir todas las reglas de CSS en un solo archivo usando las opciones de guardado HtmlFixedSaveOptions.
 
-## فهم مكتبة Aspose.Words
+## Comprender la biblioteca Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Antes de sumergirse en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una poderosa biblioteca para crear, editar, convertir y proteger documentos de Word en diferentes plataformas, incluida .NET. Ofrece muchas funciones para manipular documentos, como insertar texto, cambiar el formato, agregar secciones y mucho más.
 
-## تحميل مستند Word
+## Cargando el documento de Word
 
-الخطوة الأولى هي تحميل مستند Word الذي تريد تحويله إلى HTML ثابت. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+El primer paso es cargar el documento de Word que desea convertir a HTML fijo. Utilice la clase Document para cargar el documento desde el archivo de origen. Aquí hay un ejemplo :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Document.docx" الموجود في دليل المستندات.
+En este ejemplo, cargamos el documento "Documento.docx" ubicado en el directorio de documentos.
 
-## تكوين خيارات النسخ الاحتياطي
+## Configuración de opciones de copia de seguridad
 
-الخطوة التالية هي تكوين خيارات الحفظ للتحويل إلى HTML ثابت. استخدم فئة HtmlFixedSaveOptions وقم بتعيين الخاصية SaveFontFaceCssSeparately على false لكتابة جميع قواعد CSS في ملف واحد. هيريس كيفية القيام بذلك:
+El siguiente paso es configurar las opciones de guardado para convertir a HTML fijo. Use la clase HtmlFixedSaveOptions y establezca la propiedad SaveFontFaceCssSeparately en false para escribir todas las reglas de CSS en un solo archivo. Aquí está cómo hacerlo:
 
 ```csharp
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { SaveFontFaceCssSeparately = false };
 ```
 
-قمنا بإنشاء كائن HtmlFixedSaveOptions جديد وقمنا بتعيين الخاصية SaveFontFaceCssSeparately إلى false لكتابة جميع قواعد CSS في ملف واحد.
+Creamos un nuevo objeto HtmlFixedSaveOptions y establecemos la propiedad SaveFontFaceCssSeparately en falso para escribir todas las reglas CSS en un solo archivo.
 
-## ثابت تحويل مستند HTML
+## Conversión de documentos HTML fijos
 
-الآن بعد أن قمنا بتكوين خيارات الحفظ ، يمكننا المتابعة لتحويل المستند إلى HTML ثابت. استخدم طريقة Save لفئة Document لحفظ المستند المحول بتنسيق HTML ثابت عن طريق تحديد خيارات الحفظ. هنا مثال :
+Ahora que hemos configurado las opciones de guardado, podemos proceder a convertir el documento a HTML fijo. Utilice el método Guardar de la clase Documento para guardar el documento convertido en formato HTML fijo especificando las opciones de guardado. Aquí hay un ejemplo :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
 ```
 
-في هذا المثال ، نحفظ المستند المحول باسم "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html" باستخدام خيارات الحفظ المحددة.
+En este ejemplo, guardamos el documento convertido como "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html" usando las opciones de guardado especificadas.
 
-### مثال على شفرة المصدر لـ HtmlFixedSaveOptions مع ميزة "كتابة جميع قواعد CSS في ملف واحد" باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para HtmlFixedSaveOptions con la característica "Escribir todas las reglas CSS en un archivo" usando Aspose.Words para .NET
 
 ```csharp
-// مسار الوصول إلى دليل المستند الخاص بك
+// Ruta de acceso a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+//Cargue el documento de Word
 Document doc = new Document(dataDir + "Document.docx");
 
-// تكوين خيارات النسخ الاحتياطي باستخدام ميزة "كتابة جميع قواعد CSS في ملف واحد"
+// Configure las opciones de copia de seguridad con la función "Escribir todas las reglas CSS en un archivo"
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { SaveFontFaceCssSeparately = false };
 
-// تحويل المستند إلى HTML ثابت
+// Convertir documento a HTML fijo
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا الدليل ، قمنا بتغطية كيفية تحويل مستند Word إلى HTML ثابت عن طريق كتابة جميع قواعد CSS في ملف واحد باستخدام HtmlFixedSaveOptions مع مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. تؤدي كتابة جميع قواعد CSS في ملف واحد إلى تسهيل تنظيم وإدارة كود HTML الذي تم إنشاؤه أثناء تحويل المستند.
+En esta guía, hemos cubierto cómo convertir un documento de Word a HTML fijo escribiendo todas las reglas CSS en un solo archivo usando HtmlFixedSaveOptions con la biblioteca Aspose.Words para .NET. Si sigue los pasos proporcionados y usa el código fuente de C# provisto, puede aplicar fácilmente esta funcionalidad en su aplicación de C#. Escribir todas las reglas CSS en un solo archivo facilita la organización y administración del código HTML generado durante la conversión del documento.

@@ -1,51 +1,51 @@
 ---
-title: تعيين إعدادات الخط الاحتياطي
-linktitle: تعيين إعدادات الخط الاحتياطي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين إعدادات استبدال الخطوط في Aspose.Words for .NET وتخصيص استبدال الخط في مستندات Word.
+title: Establecer la configuración de reserva de fuentes
+linktitle: Establecer la configuración de reserva de fuentes
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a establecer la configuración de sustitución de fuentes en Aspose.Words para .NET y personalizar la sustitución de fuentes en sus documentos de Word.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/set-font-fallback-settings/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين إعدادات استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. تسمح لك إعدادات استبدال الخط بتحديد الخطوط البديلة لاستخدامها عندما لا تكون الخطوط المحددة متاحة.
+En este tutorial, le mostraremos cómo establecer la configuración de sustitución de fuentes en un documento de Word utilizando Aspose.Words para .NET. La configuración de sustitución de fuentes le permite especificar fuentes de reemplazo para usar cuando las fuentes especificadas no están disponibles.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes elementos:
+- Un conocimiento práctico del lenguaje de programación C#
+- La biblioteca Aspose.Words para .NET instalada en su proyecto
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+Comience configurando la ruta del directorio a la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta adecuada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل إعدادات استبدال الخط
- قم بإنشاء مثيل لـ`FontSettings` فئة واستخدام`Load`طريقة لتحميل إعدادات تجاوز الخط من ملف XML. يجب أن يحتوي ملف XML المحدد على قواعد استبدال الخط المراد استخدامها.
+## Paso 2: Cargue la configuración de sustitución de fuentes
+ Crear una instancia de la`FontSettings` clase y usa el`Load`método para cargar la configuración de sustitución de fuentes desde un archivo XML. El archivo XML especificado debe contener las reglas de sustitución de fuentes que se utilizarán.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
 ```
 
-## الخطوة 3: تطبيق إعدادات استبدال الخط
- إقران إعدادات استبدال الخط بالمستند من خلال تخصيصها للمستند`FontSettings` ملكية.
+## Paso 3: Aplicar la configuración de sustitución de fuentes
+ Asocie la configuración de sustitución de fuentes con el documento asignándolas a la configuración del documento.`FontSettings` propiedad.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند باستخدام ملف`Save` طريقة`Document` بالمسار واسم الملف المناسبين.
+## Paso 4: Guarde el documento
+ Guarde el documento usando el`Save` metodo de la`Document` con la ruta y el nombre de archivo adecuados.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Font Fallback Settings باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para establecer la configuración de reserva de fuentes mediante Aspose.Words para .NET 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -55,5 +55,5 @@ doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تعيين إعدادات استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. جرب قواعد مختلفة لاستبدال الخطوط للتأكد من تناسق وثيقتك ، حتى عندما لا تكون الخطوط المحددة متاحة.
+## Conclusión
+En este tutorial, aprendió cómo establecer la configuración de sustitución de fuentes en un documento de Word usando Aspose.Words para .NET. Experimente con diferentes reglas de sustitución de fuentes para asegurarse de que su documento se vea consistente, incluso cuando las fuentes especificadas no estén disponibles.

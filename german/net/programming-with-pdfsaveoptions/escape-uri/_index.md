@@ -1,71 +1,71 @@
 ---
-title: الهروب أوري
-linktitle: الهروب أوري
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة للهروب من Uri باستخدام Aspose.Words for .NET.
+title: Entkomme Uri
+linktitle: Entkomme Uri
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Entkommen von Uri mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/escape-uri/
 ---
 
-تقدم هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام ميزة Uri escape مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية إدراج الارتباطات التشعبية باستخدام Uri الهارب في مستند.
+Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zur Verwendung der Uri-Escape-Funktion mit Aspose.Words für .NET. Wir werden jeden Teil des Codes im Detail erklären. Am Ende dieses Tutorials werden Sie verstehen, wie Sie Hyperlinks mit maskierten URI in ein Dokument einfügen.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert und konfiguriert haben. Die Bibliothek und Installationsanweisungen finden Sie auf der Aspose-Website.
 
-## الخطوة 1: تحديد دليل المستند
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Zunächst müssen Sie den Pfad zu dem Verzeichnis definieren, in dem sich Ihre Dokumente befinden. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بإنشاء مستند و DocumentBuilder
+## Schritt 2: Erstellen Sie ein Dokument und einen DocumentBuilder
 
- بعد ذلك ، نحتاج إلى إنشاء ملف`Document` كائن و`DocumentBuilder` كائن لبناء الوثيقة.
+ Als nächstes müssen wir ein neues erstellen`Document` Objekt und a`DocumentBuilder` Objekt zum Erstellen des Dokuments.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: أدخل الارتباطات التشعبية باستخدام مهرب Uri
+## Schritt 3: Fügen Sie Hyperlinks mit maskiertem Uri ein
 
- استخدم ال`InsertHyperlink` طريقة`DocumentBuilder`كائن لإدراج ارتباطات تشعبية في المستند. يجب أن يتم الهروب من Uri باستخدام امتداد`Uri.EscapeUriString` وظيفة لتجنب أخطاء التنسيق.
+ Benutzen Sie die`InsertHyperlink` Methode der`DocumentBuilder`Objekt zum Einfügen von Hyperlinks in das Dokument. Uri muss mit dem maskiert werden`Uri.EscapeUriString` Funktion zur Vermeidung von Formatfehlern.
 
 ```csharp
 builder.InsertHyperlink("Testlink",
-     Uri.EscapeUriString("https://www.google.com/search؟q=٪2Fthe٪20test ") ، false) ؛
+     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), false);
 builder. Writen();
-builder.InsertHyperlink(Uri.EscapeUriString("https://www.google.com/search؟q=٪2Fthe٪20test ") ،
-     Uri.EscapeUriString("https://www.google.com/search؟q=٪2Fthe٪20test ") ، false) ؛
+builder.InsertHyperlink(Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"),
+     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), false);
 ```
 
-## الخطوة 4: احفظ المستند كملف PDF
+## Schritt 4: Speichern Sie das Dokument als PDF
 
- أخيرًا ، يمكننا حفظ المستند كملف PDF باستخدام امتداد`Save` طريقة`Document` هدف. حدد اسم ملف الإخراج.
+ Schließlich können wir das Dokument mit dem als PDF speichern`Save` Methode der`Document` Objekt. Geben Sie den Namen der Ausgabedatei an.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 ```
 
-هذا كل شئ ! لقد نجحت في إدراج الارتباطات التشعبية مع Uri's المهرب في مستند باستخدام Aspose.Words for .NET.
+Das ist alles ! Sie haben mit Aspose.Words für .NET erfolgreich Hyperlinks mit maskierten URIs in ein Dokument eingefügt.
 
-### عينة من التعليمات البرمجية المصدر لـ Uri escaping مع Aspose.Words for .NET
+### Beispielquellcode für Uri-Escape mit Aspose.Words für .NET
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	
 	builder.InsertHyperlink("Testlink", 
-		"https://www.google.com/search؟q=٪2Fthe٪20test "، false)؛
+		"https://www.google.com/search?q=%2Fthe%20test", false);
 	builder.Writeln();
-	builder.InsertHyperlink("https:// www.google.com/search؟q=٪2Fthe٪20test "،
-		"https://www.google.com/search؟q=٪2Fthe٪20test "، false)؛
+	builder.InsertHyperlink("https:// www.google.com/search?q=%2Fthe%20test",
+		"https://www.google.com/search?q=%2Fthe%20test", false);
 
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");    
   

@@ -1,33 +1,33 @@
 ---
-title: المثيل الافتراضي لإعدادات الخط
-linktitle: المثيل الافتراضي لإعدادات الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET.
+title: Teckensnittsinställningar Standardinstans
+linktitle: Teckensnittsinställningar Standardinstans
+second_title: Aspose.Words för .NET API Referens
+description: I den här handledningen lär du dig hur du konfigurerar standardteckensnittsinställningar i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/font-settings-default-instance/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تسمح لك إعدادات الخط الافتراضية بتحديد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+I den här handledningen går vi igenom hur du konfigurerar standardteckensnittsinställningar i ett Word-dokument med Aspose.Words-biblioteket för .NET. Med standardteckensnittsinställningarna kan du ange de teckensnittskällor som används när du laddar och renderar dokument. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+ Först måste du ställa in katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تكوين إعدادات الخط الافتراضية
- بعد ذلك ، سننشئ مثيلًا لـ`FontSettings` استخدام`FontSettings.DefaultInstance`، ثم سنحدد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها. في هذا المثال ، نستخدم مصدر خط نظام ومصدر خط مجلد.
+## Steg 2: Konfigurera standardteckensnittsinställningar
+ Därefter skapar vi en instans av`FontSettings` använder sig av`FontSettings.DefaultInstance`och sedan specificerar vi de teckensnittskällor som används när du laddar och renderar dokument. I det här exemplet använder vi en systemfontkälla och en mappteckensnittskälla.
 
 ```csharp
-// تكوين إعدادات الخط الافتراضية
+// Konfigurera standardteckensnittsinställningar
 FontSettings fontSettings = FontSettings.DefaultInstance;
 fontSettings.SetFontsSources(new FontSourceBase[]
 {
@@ -36,21 +36,21 @@ new FolderFontSource("C:\\MyFonts\\", true)
 });
 ```
 
-## الخطوة 3: تحميل المستند مع إعدادات الخط
- الآن سنقوم بتحميل المستند باستخدام`LoadOptions` وتحديد إعدادات الخط المراد استخدامها.
+## Steg 3: Ladda upp dokument med teckensnittsinställningar
+ Nu ska vi ladda dokumentet med`LoadOptions` och ange de teckensnittsinställningar som ska användas.
 
 ```csharp
-// قم بتحميل المستند بإعدادات الخط
+// Ladda dokumentet med teckensnittsinställningarna
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.FontSettings = fontSettings;
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
 
-### نموذج كود مصدر لإعدادات الخط الافتراضي باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Font Settings Default Instance med Aspose.Words för .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;
@@ -65,5 +65,5 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET. من خلال تحديد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها ، يمكنك التحكم في مظهر الخطوط في مستنداتك. لا تتردد في استخدام هذه الميزة لتخصيص إعدادات الخط في مشاريعك.
+## Slutsats
+I den här handledningen såg vi hur man konfigurerar standardteckensnittsinställningar i ett Word-dokument med Aspose.Words för .NET. Genom att ange de teckensnittskällor som används när du laddar och renderar dokument kan du styra hur teckensnitten ska se ut i dina dokument. Använd gärna den här funktionen för att anpassa teckensnittsinställningar i dina projekt.

@@ -1,42 +1,42 @@
 ---
-title: إزالة تذييلات رؤوس المصدر
-linktitle: إزالة تذييلات رؤوس المصدر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة الرؤوس والتذييلات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Rimuovi i piè di pagina delle intestazioni di origine
+linktitle: Rimuovi i piè di pagina delle intestazioni di origine
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come rimuovere intestazioni e piè di pagina durante l'unione e l'aggiunta di documenti Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/join-and-append-documents/remove-source-headers-footers/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Remove Source Headers Footers في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء إزالة الرؤوس والتذييلات من المستند المصدر.
+Questo tutorial ti guiderà attraverso il processo di utilizzo della funzione Remove Source Headers Footers di Aspose.Words per .NET. Questa funzione consente di unire e aggiungere documenti di Word rimuovendo intestazioni e piè di pagina dal documento di origine.
 
-## المتطلبات الأساسية
+## Prerequisiti
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Prima di iniziare, assicurati di avere quanto segue:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words per .NET installato. Puoi scaricarlo dal sito Web di Aspose o installarlo tramite NuGet.
+2. Visual Studio o qualsiasi altro ambiente di sviluppo C#.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Passaggio 1: inizializzare le directory dei documenti
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir` variabile al percorso in cui si trovano i documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Passaggio 2: caricare i documenti di origine e di destinazione
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Successivamente, è necessario caricare i documenti di origine e destinazione utilizzando Aspose.Words`Document` classe. Aggiorna i nomi dei file nel file`Document` costruttore in base ai nomi dei documenti.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إزالة الرؤوس والتذييلات من أقسام المستند المصدر
+## Passaggio 3: rimuovere intestazioni e piè di pagina dalle sezioni del documento di origine
 
- لإزالة الرؤوس والتذييلات من كل قسم في المستند المصدر ، يمكنك التكرار خلال الأقسام باستخدام ملف`foreach` حلقة واستدعاء`ClearHeadersFooters` طريقة.
+ Per rimuovere le intestazioni e i piè di pagina da ciascuna sezione del documento di origine, puoi scorrere le sezioni utilizzando a`foreach` loop e chiama il`ClearHeadersFooters` metodo.
 
 ```csharp
 foreach (Section section in srcDoc.Sections)
@@ -45,51 +45,51 @@ foreach (Section section in srcDoc.Sections)
 }
 ```
 
-## الخطوة 4: تعطيل إعداد "LinkToPrevious" لـ HeadersFooters
+## Passaggio 4: disabilitare l'impostazione "LinkToPrevious" per HeadersFooters
 
-حتى بعد مسح الرؤوس والتذييلات من المستند المصدر ، هناك احتمال أن يكون إعداد "LinkToPrevious"`HeadersFooters` لا يزال من الممكن تعيينها. لتجنب هذا السلوك ، تحتاج إلى تعيينه صراحةً على`false` للقسم الأول`HeadersFooters` ملكية.
+Anche dopo aver cancellato le intestazioni e i piè di pagina dal documento di origine, è possibile che l'impostazione "LinkToPrevious" per`HeadersFooters` può ancora essere impostato. Per evitare questo comportamento, è necessario impostarlo esplicitamente su`false` per la prima sezione`HeadersFooters` proprietà.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## Passaggio 5: aggiungere il documento di origine al documento di destinazione
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Ora puoi aggiungere il documento di origine al documento di destinazione utilizzando il file`AppendDocument` metodo del`Document` classe. IL`ImportFormatMode.KeepSourceFormatting` Il parametro garantisce che la formattazione dell'origine venga preservata durante l'operazione di accodamento.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## Passaggio 6: salvare il documento finale
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة Remove Source Headers Footers باستخدام ملحق`Save` طريقة`Document` فصل.
+ Infine, salva il documento unito con la funzione Rimuovi intestazioni piè di pagina abilitata utilizzando il file`Save` metodo del`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 ```
 
-### مثال على شفرة المصدر لإزالة تذييلات رؤوس المصدر باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per rimuovere i piè di pagina delle intestazioni di origine utilizzando Aspose.Words per .NET 
 
-إليك شفرة المصدر الكاملة لميزة "إزالة تذييلات رؤوس المصدر" في C # باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente completo per la funzione "Rimuovi i piè di pagina delle intestazioni di origine" in C# utilizzando Aspose.Words per .NET:
 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بإزالة الرؤوس والتذييلات من كل قسم في المستند المصدر.
+	// Rimuovi le intestazioni e i piè di pagina da ciascuna delle sezioni nel documento di origine.
 	foreach (Section section in srcDoc.Sections)
 	{
 		section.ClearHeadersFooters();
 	}
-	// حتى بعد مسح الرؤوس والتذييلات من المستند المصدر ، فإن الإعداد "LinkToPrevious"
-	// لا يزال من الممكن تعيين HeadersFooters. سيؤدي هذا إلى استمرار الرؤوس والتذييلات من الوجهة
-	// وثيقة. يجب تعيين هذا على خطأ لتجنب هذا السلوك.
+	// Anche dopo che le intestazioni e i piè di pagina sono stati cancellati dal documento di origine, l'impostazione "LinkToPrevious".
+	// per HeadersFooters può ancora essere impostato. Ciò farà sì che le intestazioni ei piè di pagina continuino dalla destinazione
+	// documento. Questo dovrebbe essere impostato su false per evitare questo comportamento.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 ```
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Remove Source Headers Footers باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع إزالة الرؤوس والتذييلات من المستند المصدر.
+Questo è tutto! Hai implementato correttamente la funzione Rimuovi piè di pagina intestazioni sorgente utilizzando Aspose.Words per .NET. Il documento finale conterrà il contenuto unito con le intestazioni e i piè di pagina rimossi dal documento di origine.

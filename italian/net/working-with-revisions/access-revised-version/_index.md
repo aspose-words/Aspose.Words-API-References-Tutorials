@@ -1,35 +1,35 @@
 ---
-title: الوصول إلى النسخة المنقحة
-linktitle: الوصول إلى النسخة المنقحة
-second_title: Aspose.Words لمراجع .NET API
-description: قم بالوصول إلى نسخة منقحة من مستند Word باستخدام Aspose.Words for .NET.
+title: Accedi alla versione rivista
+linktitle: Accedi alla versione rivista
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Accedi a una versione rivista di un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-revisions/access-revised-version/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سوف نوضح لك كيفية الوصول إلى النسخة المنقحة من مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+In questa guida dettagliata, ti mostreremo come accedere alla versione rivista di un documento Word utilizzando Aspose.Words per .NET. Ti forniremo il codice sorgente completo e ti mostreremo come formattare l'output del markdown.
 
-## الخطوة 1: تحميل المستند
+## Passaggio 1: caricamento del documento
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+Il primo passo è caricare il documento contenente le revisioni.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 doc.UpdateListLabels();
 ```
 
-## الخطوة 2: الوصول إلى النسخة المعدلة
+## Passaggio 2: accedere alla versione rivista
 
-ننتقل الآن إلى النسخة المنقحة من الوثيقة.
+Passiamo ora alla versione riveduta del documento.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
 ```
 
-## الخطوة 3: تصفح المراجعات
+## Passaggio 3: sfoglia le revisioni
 
-بعد ذلك ، سنقوم بتكرار المراجعات الموجودة في المستند ونعرض معلومات محددة للفقرات التي هي عناصر قائمة.
+Successivamente, passeremo in rassegna le revisioni presenti nel documento e visualizzeremo informazioni specifiche per i paragrafi che sono voci di elenco.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -46,16 +46,16 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
-### مثال على شفرة المصدر لـ Access Revised Version باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Access Revised Version utilizzando Aspose.Words per .NET
 
-فيما يلي رمز المصدر الكامل للوصول إلى النسخة المعدلة من المستند باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente completo per accedere alla versione rivista di un documento utilizzando Aspose.Words per .NET:
 
 ```csharp
 
 	Document doc = new Document(MyDir + "Revisions.docx");
 	doc.UpdateListLabels();
 
-	// قم بالتبديل إلى النسخة المنقحة من المستند.
+	// Passa alla versione rivista del documento.
 	doc.RevisionsView = RevisionsView.Final;
 
 	foreach (Revision revision in doc.Revisions)

@@ -1,61 +1,61 @@
 ---
-title: استبدل بسلسلة
-linktitle: استبدل بسلسلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استبدال النص بسلسلة في مستند Word بـ Aspose.Words for .NET.
+title: 替换为字符串
+linktitle: 替换为字符串
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将 Word 文档中的文本替换为字符串。
 type: docs
 weight: 10
 url: /zh/net/find-and-replace-text/replace-with-string/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة "استبدال السلسلة" في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إجراء استبدال النص بناءً على سلسلة أحرف معينة في مستند Word.
+在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的 Replace With String 函数。此功能允许您根据 Word 文档中的特定字符串执行文本替换。
 
-## المتطلبات الأساسية
+## 先决条件
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# 语言的基础知识。
+- 安装了 Aspose.Words 库的 .NET 开发环境。
 
-## الخطوة الأولى: إنشاء مستند جديد
+## 第 1 步：创建新文档
 
-قبل أن نبدأ في استخدام استبدال السلسلة ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+在开始使用字符串替换之前，我们需要使用 Aspose.Words for .NET 创建一个新文档。这可以通过实例化一个`Document`目的：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل النص في المستند
+## 第 2 步：在文档中插入文本
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نستخدم الامتداد`Writeln` طريقة ادخال عبارة "sad crazy bad":
+一旦我们有了文档，我们就可以使用`DocumentBuilder`目的。在我们的示例中，我们使用`Writeln`插入短语“sad crazy bad”的方法：
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("sad mad bad");
 ```
 
-## الخطوة 3: استبدل بسلسلة
+## 第 3 步：替换为字符串
 
- نحن نستخدم ال`Range.Replace` طريقة لاستبدال النص بسلسلة. في مثالنا ، نستبدل كل تكرارات كلمة "sad" بكلمة "bad" باستخدام الامتداد`FindReplaceOptions` الخيار مع`FindReplaceDirection.Forward` اتجاه البحث:
+我们使用`Range.Replace`用字符串替换文本的方法。在我们的示例中，我们将所有出现的单词“sad”替换为“bad”，使用`FindReplaceOptions`选项与`FindReplaceDirection.Forward`搜索方向：
 
 ```csharp
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-## الخطوة 4: حفظ المستند المحرر
+## 第四步：保存编辑好的文档
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+最后，我们将修改后的文档保存到指定目录，使用`Save`方法：
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 ```
 
-### مثال على شفرة المصدر لـ Replace With String باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 替换为字符串的示例源代码
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام الاستبدال بسلسلة أحرف بـ Aspose.Words for .NET:
+下面是完整的示例源代码，用于说明使用 Aspose.Words for .NET 替换字符串的用法：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -68,6 +68,6 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
   
 ```
 
-## خاتمة
+## 结论
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة Replace With String في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص واستبداله بسلسلة وحفظ المستند المعدل.
+在本文中，我们探索了 C# 源代码以了解如何使用 Aspose.Words for .NET 的 Replace With String 功能。我们按照分步指南创建文档、插入文本、替换为字符串并保存修改后的文档。

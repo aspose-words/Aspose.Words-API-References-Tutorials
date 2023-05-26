@@ -1,37 +1,37 @@
 ---
-title: تطبيق الترخيص من الدفق
-linktitle: تطبيق الترخيص من الدفق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق ترخيص من تدفق باستخدام Aspose.Words for .NET. دليل خطوة بخطوة
+title: Lizenz aus Stream anwenden
+linktitle: Lizenz aus Stream anwenden
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Lizenz aus einem Stream anwenden. Schritt für Schritt Anleitung
 type: docs
 weight: 10
 url: /de/net/apply-license/apply-license-from-stream/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، ستتعلم كيفية تطبيق ترخيص من دفق باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات الشفرة اللازمة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تطبيق ترخيص لفتح الوظائف الكاملة لـ Aspose.Words.
+In diesem Schritt-für-Schritt-Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET eine Lizenz aus einem Stream anwenden. Wir begleiten Sie durch den Prozess und stellen Ihnen die notwendigen Code-Schnipsel zur Verfügung. Am Ende dieses Tutorials können Sie eine Lizenz anwenden, um die volle Funktionalität von Aspose.Words freizuschalten.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
-- ملف ترخيص صالح لـ Aspose.Words.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
+- Eine gültige Lizenzdatei für Aspose.Words.
 
-## الخطوة 1: استيراد مساحات الأسماء المطلوبة
-للبدء ، قم باستيراد مساحات الأسماء الضرورية في كود C # الخاص بك. تحتوي مساحات الأسماء هذه على الفئات والطرق اللازمة للعمل مع Aspose.Words.
+## Schritt 1: Importieren Sie die erforderlichen Namespaces
+Importieren Sie zunächst die erforderlichen Namespaces in Ihren C#-Code. Diese Namespaces enthalten die Klassen und Methoden, die für die Arbeit mit Aspose.Words erforderlich sind.
 
 ```csharp
 using Aspose.Words;
 using System.IO;
 ```
 
-## الخطوة 2: تهيئة كائن الترخيص
-بعد ذلك ، قم بتهيئة كائن الترخيص ، والذي سيتم استخدامه لتعيين ترخيص Aspose.Words. أضف الكود التالي:
+## Schritt 2: Initialisieren Sie das Lizenzobjekt
+Als nächstes initialisieren Sie das Lizenzobjekt, das zum Festlegen der Lizenz für Aspose.Words verwendet wird. Fügen Sie den folgenden Code hinzu:
 
 ```csharp
 License license = new License();
 ```
 
-## الخطوة 3: تعيين الترخيص من الدفق
-لتعيين الترخيص من دفق ، استخدم الأسلوب SetLicense لكائن الترخيص. قم بإنشاء MemoryStream من ملف الترخيص وتمريره كمعامل لطريقة SetLicense.
+## Schritt 3: Legen Sie die Lizenz vom Stream fest
+Um die Lizenz aus einem Stream festzulegen, verwenden Sie die SetLicense-Methode des License-Objekts. Erstellen Sie einen MemoryStream aus der Lizenzdatei und übergeben Sie ihn als Parameter an die SetLicense-Methode.
 
 ```csharp
 try
@@ -48,8 +48,8 @@ catch (Exception e)
 }
 ```
 
-### مثال على كود المصدر لتطبيق الترخيص من Stream باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لتطبيق ترخيص من دفق باستخدام Aspose.Words for .NET:
+### Beispielquellcode für „Lizenz aus Stream anwenden“ mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode zum Anwenden einer Lizenz aus einem Stream mit Aspose.Words für .NET:
 
 ```csharp
 License license = new License();
@@ -68,7 +68,7 @@ catch (Exception e)
 }
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تطبيق ترخيص من تدفق باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك بسهولة تعيين الترخيص وإطلاق العنان للإمكانات الكاملة لـ Aspose.Words لمهام معالجة المستندات الخاصة بك.
+## Abschluss
+In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET eine Lizenz aus einem Stream anwenden. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie die Lizenz einfach festlegen und das volle Potenzial von Aspose.Words für Ihre Dokumentenverarbeitungsaufgaben freischalten.
 
-يمكنك الآن بثقة تطبيق ترخيص من دفق والاستفادة من الميزات القوية لـ Aspose.Words لإنشاء مستندات Word وتعديلها وتحويلها برمجيًا.
+Jetzt können Sie sicher eine Lizenz aus einem Stream anwenden und die leistungsstarken Funktionen von Aspose.Words nutzen, um Word-Dokumente programmgesteuert zu erstellen, zu ändern und zu konvertieren.

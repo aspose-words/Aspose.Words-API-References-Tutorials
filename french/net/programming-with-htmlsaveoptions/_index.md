@@ -1,27 +1,27 @@
 ---
-title: البرمجة باستخدام Htmlsaveoptions
-linktitle: البرمجة باستخدام Htmlsaveoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على معلومات حول التصدير ذهابًا وإيابًا ، وتصدير الخطوط كقاعدة 64 ، وتصدير الموارد ، وتحويل ملفات التعريف إلى emf أو wmf ، وتحويل ملفات التعريف إلى svg ، وإضافة css cla
+title: Programmation avec Htmlsaveoptions
+linktitle: Programmation avec Htmlsaveoptions
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent des informations d'exportation aller-retour, exportent des polices en base 64, exportent des ressources, convertissent des métafichiers en emf ou wmf, convertissent des métafichiers en svg, ajoutent css cla
 type: docs
 weight: 1620
 url: /fr/net/programming-with-htmlsaveoptions/
 ---
-Aspose.Words for .NET مكتبة قوية لمعالجة وإنشاء مستندات Word في تطبيقات .NET. توفر البرامج التعليمية الموجودة على الموقع المرجعي Aspose.Words for .NET مورداً قيماً للمطورين الذين يتطلعون إلى إتقان هذه المكتبة واستغلال وظائفها بالكامل.
+Aspose.Words pour .NET est une bibliothèque puissante pour manipuler et générer des documents Word dans des applications .NET. Les tutoriels sur le site de référence Aspose.Words for .NET fournissent une ressource précieuse pour les développeurs qui cherchent à maîtriser cette bibliothèque et à exploiter pleinement ses fonctionnalités.
 
-يركز البرنامج التعليمي "البرمجة باستخدام HtmlSaveOptions" على استخدام خيارات حفظ HTML في Aspose.Words for .NET. يوجه هذا البرنامج التعليمي المطورين من خلال الخيارات المتنوعة المتاحة لتخصيص تحويل مستندات Word إلى HTML. يتم توفير أمثلة التعليمات البرمجية التفصيلية لتوضيح استخدام هذه الخيارات وتحقيق نتائج التحويل المطلوبة.
+Le didacticiel "Programmation avec HtmlSaveOptions" se concentre sur l'utilisation des options d'enregistrement HTML dans Aspose.Words pour .NET. Ce didacticiel guide les développeurs à travers les différentes options disponibles pour personnaliser la conversion des documents Word en HTML. Des exemples de code détaillés sont fournis pour démontrer l'utilisation de ces options et obtenir les résultats de conversion souhaités.
 
-سواء كنت ترغب في تحويل مستندات Word إلى HTML للعرض على الويب ، أو تضمين محتوى HTML في مستندات Word الخاصة بك ، أو تخصيص عرض HTML ، يمنحك هذا البرنامج التعليمي المعرفة والمهارات اللازمة للقيام بذلك. بفضل التفسيرات التفصيلية والأمثلة العملية ، ستتمكن من الاستفادة الكاملة من وظائف تحويل HTML الخاصة بـ Aspose.Words for .NET في مشروعات التطوير الخاصة بك.
+Que vous souhaitiez convertir des documents Word en HTML pour les afficher sur le Web, incorporer du contenu HTML dans vos documents Word ou personnaliser le rendu HTML, ce didacticiel vous donne les connaissances et les compétences nécessaires pour le faire. Grâce à des explications détaillées et des exemples pratiques, vous pourrez pleinement exploiter les fonctionnalités de conversion HTML d'Aspose.Words pour .NET dans vos projets de développement.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [تصدير معلومات رحلة الذهاب والإياب](./export-roundtrip-information/) | دليل تفصيلي خطوة بخطوة لتصدير معلومات الرحلة ذهابًا وإيابًا عند حفظ مستند بتنسيق HTML باستخدام Aspose.Words for .NET. |
-| [تصدير الخطوط كقاعدة 64](./export-fonts-as-base-64/) | دليل خطوة بخطوة لتصدير خطوط 64 أساسية عند حفظ مستند باستخدام Aspose.Words for .NET. |
-| [تصدير الموارد](./export-resources/) | دليل تفصيلي خطوة بخطوة لتصدير موارد المستندات عند الحفظ بتنسيق HTML باستخدام Aspose.Words for .NET. |
-| [تحويل ملفات التعريف إلى Emf أو Wmf](./convert-metafiles-to-emf-or-wmf/) | دليل تفصيلي خطوة بخطوة لتحويل ملفات التعريف إلى تنسيقات EMF أو WMF عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET. |
-| [تحويل ملفات التعريف إلى Svg](./convert-metafiles-to-svg/) | دليل تفصيلي خطوة بخطوة لتحويل ملفات التعريف إلى تنسيق SVG عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET. |
-| [أضف بادئة اسم فئة Css](./add-css-class-name-prefix/) | دليل خطوة بخطوة لإضافة بادئة اسم فئة CSS عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET. |
-| [تصدير عناوين Cid لموارد Mhtml](./export-cid-urls-for-mhtml-resources/) | دليل تفصيلي خطوة بخطوة لتصدير عناوين URL لـ CID لموارد MHTML عند حفظ مستند باستخدام Aspose.Words for .NET. |
-| [حل أسماء الخطوط](./resolve-font-names/) | دليل تفصيلي خطوة بخطوة لحل أسماء الخطوط المفقودة عند التحويل إلى HTML باستخدام Aspose.Words for .NET. |
-| [تصدير حقل نموذج إدخال النص كنص](./export-text-input-form-field-as-text/) | دليل خطوة بخطوة لتصدير حقول نموذج إدخال النص كنص عادي باستخدام Aspose.Words for .NET. |
+| [Exporter les informations aller-retour](./export-roundtrip-information/) | Guide étape par étape pour exporter des informations aller-retour lors de l'enregistrement d'un document au format HTML avec Aspose.Words pour .NET. |
+| [Exporter les polices en base 64](./export-fonts-as-base-64/) | Guide étape par étape pour exporter les polices de base 64 lors de l'enregistrement d'un document avec Aspose.Words pour .NET. |
+| [Exporter des ressources](./export-resources/) | Guide étape par étape pour exporter des ressources de document lors de l'enregistrement au format HTML avec Aspose.Words pour .NET. |
+| [Convertir les métafichiers en Emf ou Wmf](./convert-metafiles-to-emf-or-wmf/) | Guide étape par étape pour convertir des métafichiers aux formats EMF ou WMF lors de la conversion d'un document au format HTML avec Aspose.Words pour .NET. |
+| [Convertir les métafichiers en Svg](./convert-metafiles-to-svg/) | Guide étape par étape pour convertir les métafichiers au format SVG lors de la conversion d'un document au format HTML avec Aspose.Words pour .NET. |
+| [Ajouter un préfixe de nom de classe CSS](./add-css-class-name-prefix/) | Guide étape par étape pour ajouter un préfixe de nom de classe CSS lors de la conversion d'un document en HTML avec Aspose.Words pour .NET. |
+| [Exporter les URL Cid pour les ressources Mhtml](./export-cid-urls-for-mhtml-resources/) | Guide étape par étape pour exporter les URL CID des ressources MHTML lors de l'enregistrement d'un document avec Aspose.Words pour .NET. |
+| [Résoudre les noms de police](./resolve-font-names/) | Guide étape par étape pour résoudre les noms de police manquants lors de la conversion en HTML avec Aspose.Words pour .NET. |
+| [Exporter le champ du formulaire de saisie de texte sous forme de texte](./export-text-input-form-field-as-text/) | Guide étape par étape pour exporter les champs de formulaire de saisie de texte en texte brut avec Aspose.Words pour .NET. |

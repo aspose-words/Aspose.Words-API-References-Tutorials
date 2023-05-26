@@ -1,42 +1,42 @@
 ---
-title: سلوك الأسلوب الذكي
-linktitle: سلوك الأسلوب الذكي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحفاظ على سلوك النمط الذكي عند الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Comportement de style intelligent
+linktitle: Comportement de style intelligent
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à conserver un comportement de style intelligent lors de la jointure et de l'ajout de documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/join-and-append-documents/smart-style-behavior/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Smart Style Behavior في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها مع الحفاظ على سلوك النمط الذكي.
+Ce didacticiel vous guidera tout au long du processus d'utilisation de la fonctionnalité Smart Style Behavior d'Aspose.Words pour .NET. Cette fonctionnalité vous permet de joindre et d'ajouter des documents Word tout en conservant un comportement de style intelligent.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words pour .NET installé. Vous pouvez le télécharger depuis le site Web d'Aspose ou l'installer via NuGet.
+2. Visual Studio ou tout autre environnement de développement C#.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Étape 1 : Initialiser les répertoires de documents
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir` variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Étape 2 : Chargez les documents source et de destination
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Ensuite, vous devez charger les documents source et de destination à l'aide de Aspose.Words`Document` classe. Mettez à jour les noms de fichiers dans le`Document` constructeur en fonction des noms de vos documents.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: أدخل فاصل صفحة في مستند الوجهة
+## Étape 3 : Insérer un saut de page dans le document de destination
 
- للتأكد من ظهور المحتوى المُلحق على صفحة جديدة في المستند الوجهة ، يمكنك إدراج فاصل صفحة باستخدام ملف`DocumentBuilder`.
+ Pour vous assurer que le contenu ajouté apparaît sur une nouvelle page du document de destination, vous pouvez insérer un saut de page à l'aide d'un`DocumentBuilder`.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
@@ -44,36 +44,36 @@ builder.MoveToDocumentEnd();
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## الخطوة 4: تعيين خيارات سلوك النمط الذكي
+## Étape 4 : Définir les options de comportement du style intelligent
 
-لتمكين سلوك النمط الذكي أثناء عملية الإلحاق ، تحتاج إلى إنشاء مثيل لـ`ImportFormatOptions` وضبط`SmartStyleBehavior` ملكية ل`true`.
+Pour activer le comportement de style intelligent lors de l'opération d'ajout, vous devez créer une instance de`ImportFormatOptions` et réglez le`SmartStyleBehavior` propriété à`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## Étape 5 : Ajouter le document source au document de destination
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`InsertDocument` طريقة`DocumentBuilder` فصل. استخدم ال`ImportFormatMode.UseDestinationStyles` المعلمة وتمرير`ImportFormatOptions` كائن للحفاظ على أسلوب السلوك الذكي.
+ Maintenant, vous pouvez ajouter le document source au document de destination en utilisant le`InsertDocument` méthode de la`DocumentBuilder` classe. Utilisez le`ImportFormatMode.UseDestinationStyles` paramètre et passez le`ImportFormatOptions` objet pour conserver un comportement de style intelligent.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## Étape 6 : Enregistrez le document final
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة Smart Style Behavior باستخدام ملف`Save` طريقة`Document` فصل.
+ Enfin, enregistrez le document fusionné avec la fonction Smart Style Behavior activée à l'aide de la`Save` méthode de la`Document` classe.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx");
 ```
 
-### مثال على شفرة المصدر لسلوك النمط الذكي باستخدام Aspose.Words for .NET
+### Exemple de code source pour Smart Style Behavior utilisant Aspose.Words pour .NET
 
-إليك شفرة المصدر الكاملة لميزة "سلوك النمط الذكي" في C # باستخدام Aspose.Words for .NET:
+Voici le code source complet de la fonctionnalité "Smart Style Behavior" en C# utilisant Aspose.Words pour .NET :
  
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -86,4 +86,4 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 	builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Smart Style Behavior باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الحفاظ على سلوك النمط الذكي.
+C'est ça! Vous avez implémenté avec succès la fonctionnalité Smart Style Behavior à l'aide de Aspose.Words pour .NET. Le document final contiendra le contenu fusionné avec un comportement de style intelligent conservé.

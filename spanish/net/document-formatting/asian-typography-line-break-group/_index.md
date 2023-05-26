@@ -1,28 +1,28 @@
 ---
-title: مجموعة فواصل أسطر الطباعة الآسيوية
-linktitle: مجموعة فواصل أسطر الطباعة الآسيوية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام مجموعة فواصل أسطر الطباعة الآسيوية مع Aspose.Words for .NET.
+title: Grupo de salto de línea de tipografía asiática
+linktitle: Grupo de salto de línea de tipografía asiática
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a usar el grupo de salto de línea de tipografía asiática con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/document-formatting/asian-typography-line-break-group/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية استخدام ميزة مجموعة فواصل أسطر الطباعة الآسيوية مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر وتطبيق تغييرات التنسيق.
+En este tutorial, le mostraremos cómo usar la función de grupo de salto de línea de tipografía asiática con Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios de formato.
 
-## الخطوة 1: تحميل المستند
+## Paso 1: Cargar el documento
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند الذي يحتوي على الطباعة الآسيوية في كائن المستند. إليك الطريقة:
+Para comenzar, especifique el directorio para sus documentos y cargue el documento que contiene la tipografía asiática en un objeto Documento. Así es cómo:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Asian typography.docx");
 ```
 
-## الخطوة 2: إعداد الطباعة الآسيوية
+## Paso 2: configuración de tipografía asiática
 
-سنقوم الآن بتكوين إعدادات الطباعة الآسيوية للفقرة الأولى من المستند. إليك الطريقة:
+Ahora configuraremos los ajustes de tipografía asiática para el primer párrafo del documento. Así es cómo:
 
 ```csharp
 ParagraphFormat format = doc.FirstSection.Body.Paragraphs[0].ParagraphFormat;
@@ -31,21 +31,21 @@ format. WordWrap = true;
 format. HangingPunctuation = false;
 ```
 
-## الخطوة 3: حفظ المستند
+## Paso 3: Guardar el documento
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Después de insertar el campo de formulario de entrada de texto, guarde el documento en la ubicación deseada usando el`Save` método. Asegúrese de proporcionar la ruta de archivo adecuada:
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 ```
 
-### مثال على شفرة المصدر لمجموعة خطوط الطباعة الآسيوية باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Asian Typography Line Break Group usando Aspose.Words para .NET
 
-فيما يلي شفرة المصدر الكاملة لميزة Asian Typography Line Break Group مع Aspose.Words for .NET:
+Aquí está el código fuente completo para la función Grupo de salto de línea de tipografía asiática con Aspose.Words para .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
@@ -57,5 +57,5 @@ doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 	doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 	
 ```
-باستخدام هذا الرمز ، ستتمكن من تطبيق مجموعة فواصل أسطر الطباعة الآسيوية باستخدام Aspose.Words for .NET.
+Con este código, podrá aplicar el grupo de salto de línea de tipografía asiática usando Aspose.Words para .NET.
 

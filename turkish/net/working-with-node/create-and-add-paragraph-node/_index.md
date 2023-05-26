@@ -1,58 +1,58 @@
 ---
-title: إنشاء وإضافة فقرة العقدة
-linktitle: إنشاء وإضافة فقرة العقدة
-second_title: Aspose.Words لمراجع .NET API
-description: قم بإنشاء وإضافة عقدة فقرة إلى مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+title: Paragraf Düğümü Oluşturma ve Ekleme
+linktitle: Paragraf Düğümü Oluşturma ve Ekleme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir paragraf düğümü oluşturun ve Word belgelerinize ekleyin.
 type: docs
 weight: 10
 url: /tr/net/working-with-node/create-and-add-paragraph-node/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية إنشاء وإضافة عقدة فقرة باستخدام Aspose.Words for .NET.
+Aspose.Words for .NET kullanarak bir paragraf düğümünün nasıl oluşturulacağını ve ekleneceğini gösteren aşağıdaki C# kaynak kodunu adım adım açıklayan bir kılavuz.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## 1. Adım: Gerekli referansları içe aktarın
+Başlamadan önce, Aspose.Words for .NET'i kullanmak için gerekli referansları projenize aktardığınızdan emin olun. Bu, Aspose.Words kitaplığının içe aktarılmasını ve gerekli ad alanlarının kaynak dosyanıza eklenmesini içerir.
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## 2. Adım: Yeni bir belge oluşturun
+ Bu adımda, kullanarak yeni bir belge oluşturacağız.`Document` sınıf.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: قم بإنشاء عقدة فقرة
- الآن سنقوم بإنشاء عقدة فقرة باستخدام امتداد`Paragraph` فئة وتمرير الوثيقة كمعامل.
+## 3. Adım: Bir paragraf düğümü oluşturun
+ Şimdi kullanarak bir paragraf düğümü oluşturacağız.`Paragraph` class ve belgeyi parametre olarak geçirme.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 4: الوصول إلى قسم المستند
- لإضافة فقرة إلى المستند ، نحتاج إلى الوصول إلى القسم الأخير من المستند باستخدام ملف`LastSection` ملكية.
+## 4. Adım: Belge bölümüne erişin
+ Belgeye paragraf eklemek için, belgenin son bölümüne aşağıdakileri kullanarak erişmemiz gerekir:`LastSection` mülk.
 
 ```csharp
 Section section = doc.LastSection;
 ```
 
-## الخطوة 5: أضف عقدة الفقرة إلى المستند
- الآن بعد أن أصبح لدينا قسم المستند ، يمكننا إضافة عقدة الفقرة إلى القسم باستخدام ملف`AppendChild` طريقة على القسم`Body` ملكية.
+## Adım 5: Paragraf düğümünü belgeye ekleyin
+ Artık belge bölümüne sahip olduğumuza göre, paragraf düğümünü kullanarak bölüme ekleyebiliriz.`AppendChild` bölümündeki yöntem`Body` mülk.
 
 ```csharp
 section.Body.AppendChild(para);
 ```
 
-## الخطوة 6: احفظ المستند
- أخيرًا ، لحفظ المستند ، يمكنك استخدام ملف`Save` عن طريق تحديد تنسيق الإخراج المطلوب ، مثل تنسيق DOCX.
+## 6. Adım: Belgeyi kaydedin
+ Son olarak, belgeyi kaydetmek için`Save` DOCX formatı gibi istenen çıktı formatını belirterek yöntemi.
 
 ```csharp
 doc.Save("output.docx", SaveFormat.Docx);
 ```
 
-### نموذج التعليمات البرمجية المصدر لإنشاء وإضافة فقرة عقدة باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile Paragraf Düğümü Oluşturma ve Ekleme için Örnek Kaynak Kodu
 
 ```csharp
 Document doc = new Document();
@@ -64,4 +64,4 @@ section.Body.AppendChild(para);
 
 ```
 
-هذا مثال رمز كامل لإنشاء وإضافة فقرة باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Bu, Aspose.Words for .NET kullanarak bir paragraf düğümü oluşturmak ve eklemek için eksiksiz bir kod örneğidir. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları uyguladığınızdan emin olun.

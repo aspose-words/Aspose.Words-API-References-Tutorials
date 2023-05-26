@@ -1,32 +1,32 @@
 ---
-title: تنقيط العناصر المحولة
-linktitle: تنقيط العناصر المحولة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل التحويل النقطي للعناصر المحولة عند التحويل إلى تنسيق PCL باستخدام Aspose.Words for .NET.
+title: Rasterizar elementos transformados
+linktitle: Rasterizar elementos transformados
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a deshabilitar la rasterización de elementos transformados al convertir a formato PCL con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word ومعالجتها وتحويلها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words القدرة على تحويل العناصر المحوّلة إلى نقطية عند تحويل المستندات إلى تنسيقات مختلفة. في هذا الدليل ، سنوضح لك كيفية استخدام الكود المصدري C # لـ Aspose.Words for .NET لتعطيل تنقيط العناصر المحولة عند تحويل مستند إلى تنسيق PCL.
+Aspose.Words para .NET es una poderosa biblioteca para crear, manipular y convertir documentos de Word en una aplicación C#. Entre las características que ofrece Aspose.Words está la capacidad de rasterizar elementos transformados al convertir documentos a diferentes formatos. En esta guía, le mostraremos cómo usar el código fuente C# de Aspose.Words para .NET para deshabilitar la rasterización de elementos transformados al convertir un documento a formato PCL.
 
-## فهم مكتبة Aspose.Words
+## Comprender la biblioteca Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها وتحويلها ، بما في ذلك دعم تنقيط العناصر المحولة أثناء التحويل.
+Antes de sumergirse en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una biblioteca popular que hace que trabajar con documentos de Word sea fácil y eficiente. Ofrece una amplia gama de funciones para crear, editar y convertir documentos de Word, incluido el soporte para rasterizar elementos transformados durante la conversión.
 
-## تحميل مستند Word
+## Cargando el documento de Word
 
-الخطوة الأولى هي تحميل مستند Word الذي تريد تحويله إلى تنسيق PCL. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+El primer paso es cargar el documento de Word que desea convertir a formato PCL. Utilice la clase Document para cargar el documento desde el archivo de origen. Aquí hay un ejemplo :
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل مستند "Rendering.docx" الموجود في دليل المستندات.
+En este ejemplo, estamos cargando el documento "Rendering.docx" ubicado en el directorio de documentos.
 
-## تكوين خيارات النسخ الاحتياطي
+## Configuración de opciones de copia de seguridad
 
-الخطوة التالية هي تكوين خيارات الحفظ للتحويل إلى تنسيق PCL. استخدم فئة PclSaveOptions وقم بتعيين الخاصية RasterizeTransformedElements على false. هيريس كيفية القيام بذلك:
+El siguiente paso es configurar las opciones de guardado para convertir a formato PCL. Utilice la clase PclSaveOptions y establezca la propiedad RasterizeTransformedElements en falso. Aquí está cómo hacerlo:
 
 ```csharp
 PclSaveOptions saveOptions = new PclSaveOptions
@@ -36,40 +36,40 @@ PclSaveOptions saveOptions = new PclSaveOptions
 };
 ```
 
-قمنا بإنشاء كائن PclSaveOptions جديد وقمنا بتعيين خاصية SaveFormat على SaveFormat.Pcl لتحديد أننا نريد حفظ المستند بتنسيق PCL. بعد ذلك ، قمنا بتعيين الخاصية RasterizeTransformedElements على false لتعطيل تنقيط العناصر المحولة.
+Creamos un nuevo objeto PclSaveOptions y establecemos la propiedad SaveFormat en SaveFormat.Pcl para especificar que queremos guardar el documento en formato PCL. A continuación, establecemos la propiedad RasterizeTransformedElements en falso para deshabilitar la rasterización de los elementos transformados.
 
-## تحويل المستند إلى تنسيق PCL
+## Convertir el documento a formato PCL
 
-الآن بعد أن قمنا بتكوين خيارات الحفظ ، يمكننا المتابعة لتحويل المستند إلى تنسيق PCL. استخدم طريقة Save لفئة Document لحفظ المستند المحول بتنسيق PCL عن طريق تحديد خيارات الحفظ. هنا مثال :
+Ahora que hemos configurado las opciones de guardado, podemos proceder a convertir el documento a formato PCL. Utilice el método Guardar de la clase Documento para guardar el documento convertido en formato PCL especificando las opciones de guardado. Aquí hay un ejemplo :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```
 
-في هذا المثال ، نحفظ المستند المحول باسم "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl" باستخدام خيارات الحفظ المحددة.
+En este ejemplo, guardamos el documento convertido como "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl" usando las opciones de guardado especificadas.
 
-### مثال على شفرة المصدر لميزة "Rasterize Transformed Elements" مع Aspose.Words for .NET
+### Ejemplo de código fuente para la función "Rasterizar elementos transformados" con Aspose.Words para .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+//Cargue el documento de Word
 
 
 Document doc = new Document(dataDir + "Rendering.docx");
 
-// تكوين خيارات النسخ الاحتياطي للتحويل إلى تنسيق PCL
+// Configure las opciones de copia de seguridad para la conversión a formato PCL
 PclSaveOptions saveOptions = new PclSaveOptions
 {
      SaveFormat = SaveFormat.Pcl,
      RasterizeTransformedElements = false
 };
 
-// قم بتحويل المستند إلى تنسيق PCL
+// Convertir el documento a formato PCL
 doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا الدليل ، تناولنا كيفية استخدام Aspose.Words for .NET لتعطيل تنقيط العناصر المحولة عند تحويل مستند إلى تنسيق PCL باستخدام كود المصدر C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة التحكم في سلوك التنقيط للعناصر المحولة عند تحويل مستندات Word إلى تنسيقات مختلفة. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع العناصر المحولة ، مما يسمح لك بإنشاء مستندات محولة بدقة لاحتياجاتك الخاصة.
+En esta guía, cubrimos cómo usar Aspose.Words para .NET para deshabilitar la rasterización de elementos transformados al convertir un documento a formato PCL usando el código fuente de C# proporcionado. Siguiendo los pasos proporcionados, puede controlar fácilmente el comportamiento de rasterización de los elementos transformados al convertir sus documentos de Word a diferentes formatos. Aspose.Words ofrece una gran flexibilidad y potencia para trabajar con los elementos transformados, lo que le permite crear documentos convertidos precisamente para sus necesidades específicas.

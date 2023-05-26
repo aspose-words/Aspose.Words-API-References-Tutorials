@@ -1,48 +1,48 @@
 ---
-title: فك الإشارات المرجعية في الصف
-linktitle: فك الإشارات المرجعية في الصف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية فك تشابك الإشارات المرجعية للصفوف المتداخلة لإزالة صفوف معينة دون التأثير على الإشارات المرجعية الأخرى.
+title: Satır Yer İşaretlerini Çöz
+linktitle: Satır Yer İşaretlerini Çöz
+second_title: Aspose.Words for .NET API Referansı
+description: Diğer yer işaretlerini etkilemeden belirli satırları kaldırmak için iç içe satır yer işaretlerini nasıl çözeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Untangle Row Bookmarks في Aspose.Words for .NET library. تتيح هذه الوظيفة إمكانية وضع نهايات الإشارات المرجعية للسطر في نفس السطر مثل بدايات الإشارات المرجعية.
+Bu makalede, Aspose.Words for .NET kitaplığında Untangle Row Bookmarks işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu işlev, satırların yer imlerinin sonlarını yer imlerinin başlangıçlarıyla aynı satıra koymayı mümkün kılar.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# dili hakkında temel bilgi.
+- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## الخطوة 1: تحميل المستند
+## 1. Adım: Belgeyi yükleme
 
- نحن نستخدم ال`Document` فئة لتحميل المستند الحالي من ملف:
+ biz kullanıyoruz`Document` varolan belgeyi bir dosyadan yüklemek için sınıf:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## الخطوة 2: كشف خط الإشارات المرجعية
+## 2. Adım: Satır Yer İşaretlerini Çözün
 
- نحن نستخدم ال`Untangle` وظيفة لفك تشابك الإشارات المرجعية من الصفوف. تؤدي هذه الوظيفة المهمة المخصصة لوضع نهايات الأسطر المرجعية في نفس السطر الذي تبدأ فيه الإشارة المرجعية:
+ biz kullanıyoruz`Untangle` yer imlerini satırlardan çözme işlevi. Bu işlev, satırların yer imi sonlarını yer imi başladığında aynı satıra koyma özel görevini gerçekleştirir:
 
 ```csharp
 Untangle(doc);
 ```
 
-## الخطوة 3: حذف سطر بإشارة مرجعية
+## 3. Adım: Yer imine göre satırı silin
 
- نحن نستخدم ال`DeleteRowByBookmark` وظيفة لحذف صف معين من خلال الإشارة المرجعية الخاصة به:
+ biz kullanıyoruz`DeleteRowByBookmark` belirli bir satırı yer işaretine göre silme işlevi:
 
 ```csharp
 DeleteRowByBookmark(doc, "ROW2");
 ```
 
-## الخطوة 4: التحقق من سلامة الإشارات المرجعية الأخرى
+## 4. Adım: Diğer yer imlerinin bütünlüğünü kontrol edin
 
-نتحقق من عدم تلف الإشارات المرجعية الأخرى عن طريق التحقق مما إذا كانت نهاية الإشارة المرجعية لا تزال موجودة:
+Yer iminin sonunun hala mevcut olup olmadığını kontrol ederek diğer yer imlerinin zarar görmediğini doğrularız:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -51,24 +51,24 @@ throw new Exception("Wrong, the end of the bookmark was deleted.");
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### مثال على شفرة المصدر لـ Untangle Row Bookmarks باستخدام Aspose.Words for .NET**
+### Aspose.Words for .NET kullanan Untangle Row Bookmarks için örnek kaynak kodu**
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لفك تشابك الإشارات المرجعية من الأسطر باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanarak yer imlerini satırlardan çözmek için tam örnek kaynak kodunu burada bulabilirsiniz:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
-	//يؤدي ذلك إلى تنفيذ المهمة المخصصة لوضع إشارة مرجعية للصف في نفس الصف مع بدء الإشارة المرجعية.
+	//Bu, satır yer imi uçlarını yer imi başlangıçlarıyla aynı satıra yerleştirme özel görevini gerçekleştirir.
 	Untangle(doc);
 
-	// يمكننا الآن حذف الصفوف بسهولة بواسطة إشارة مرجعية دون الإضرار بأي إشارات مرجعية للصفوف الأخرى.
+	// Artık diğer satırların yer imlerine zarar vermeden bir yer imi ile satırları kolayca silebiliriz.
 	DeleteRowByBookmark(doc, "ROW2");
 
-	// هذا فقط للتحقق من عدم تلف الإشارة المرجعية الأخرى.
+	// Bu sadece diğer yer iminin hasar görüp görmediğini kontrol etmek içindir.
 	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
 		throw new Exception("Wrong, the end of the bookmark was deleted.");
 
@@ -76,6 +76,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة Untangle Row Bookmarks في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لفك تشابك الإشارات المرجعية للصفوف وحذف صف معين دون الإضرار بالإشارات المرجعية الأخرى.
+Bu makalede, Aspose.Words for .NET'in Untangle Row Bookmarks özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Satır yer imlerini çözmek ve diğer yer imlerine zarar vermeden belirli bir satırı silmek için adım adım bir kılavuz izledik.

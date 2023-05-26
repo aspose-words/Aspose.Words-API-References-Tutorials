@@ -1,36 +1,36 @@
 ---
-title: استخدم مصدر التحذير
-linktitle: استخدم مصدر التحذير
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام مصدر التحذير مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Usa la fonte di avviso
+linktitle: Usa la fonte di avviso
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come utilizzare la fonte di avviso con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/use-warning-source/
 ---
 
-في هذا المثال ، سوف نوضح لك كيفية استخدام مصدر التحذير مع Aspose.Words for .NET. يشير مصدر التحذير إلى أصل التحذير عند استخدام وظيفة رد الاتصال.
+In questo esempio, ti mostreremo come utilizzare la sorgente di avviso con Aspose.Words per .NET. L'origine dell'avviso indica l'origine dell'avviso quando si utilizza la funzione di richiamata.
 
-## الخطوة 1: تحميل المستند
+## Passaggio 1: caricamento del documento
 
- سنقوم بتحميل مستند موجود يحتوي على تحذيرات باستخدام امتداد`Load` طريقة`Document` فصل.
+ Caricheremo un documento esistente che contiene avvisi utilizzando l'estensione`Load` metodo del`Document` classe.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Emphases markdown warning.docx");
 ```
 
-## الخطوة 3: استخدام مصدر التحذير
+## Passaggio 3: utilizzo della sorgente di avviso
 
- سنستخدم مصدر التحذير من خلال تعيين المستند`WarningCallback` ملكية لمجموعة من`WarningInfo` أشياء.
+ Useremo la sorgente di avviso impostando il documento`WarningCallback` proprietà a una raccolta di`WarningInfo` oggetti.
 
 ```csharp
 WarningInfoCollection warnings = new WarningInfoCollection();
 doc.WarningCallback = warnings;
 ```
 
-## الخطوة 4: حفظ المستند
+## Passaggio 4: salvare il documento
 
-أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب.
+Infine, possiamo salvare il documento nel formato desiderato.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
@@ -41,10 +41,10 @@ if (warningInfo.Source == WarningSource.Markdown)
 }
 ```
 
-### مثال التعليمات البرمجية المصدر لاستخدام مصدر التحذير مع Aspose.Words for .NET
+### Esempio di codice sorgente per l'utilizzo di Warning Source con Aspose.Words per .NET
 
 ```csharp
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Emphases markdown warning.docx");
 
@@ -61,4 +61,4 @@ if (warningInfo.Source == WarningSource.Markdown)
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام مصدر التحذير مع Aspose.Words for .NET.
+Congratulazioni! Ora hai imparato come utilizzare la fonte di avviso con Aspose.Words per .NET.

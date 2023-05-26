@@ -1,56 +1,56 @@
 ---
-title: تعمل حقول النموذج مع الخصائص
-linktitle: تعمل حقول النموذج مع الخصائص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التعامل مع خصائص حقل النموذج في مستندات Word باستخدام Aspose.Words for .NET.
+title: Form Alanları Özelliklerle Çalışır
+linktitle: Form Alanları Özelliklerle Çalışır
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerinde form alanı özellikleriyle nasıl çalışacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-formfields/form-fields-work-with-properties/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية التعامل مع خصائص حقل النموذج في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Bu adım adım öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki form alanı özellikleriyle nasıl çalışacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve ayarlanmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı resmi web sitesinden indirip yükleyin.
 
-## الخطوة 1: تهيئة كائن المستند
+## 1. Adım: Belge Nesnesini Başlatma
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق توفير المسار إلى المستند المصدر الذي يحتوي على حقول النموذج:
+ İlk olarak,`Document` form alanlarını içeren kaynak belgenizin yolunu sağlayarak itiraz edin:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## الخطوة 2: الوصول إلى حقل النموذج
+## 2. Adım: Bir Form Alanına Erişme
 
-بعد ذلك ، قم باسترداد حقل نموذج معين من مجموعة حقول نموذج المستند. في هذا المثال ، نصل إلى حقل النموذج في الفهرس 3:
+Ardından, belgenin form alanı koleksiyonundan belirli bir form alanını alın. Bu örnekte, dizin 3'teki form alanına erişiyoruz:
 
 ```csharp
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## الخطوة 3: العمل مع خصائص حقل النموذج
+## 3. Adım: Form Alanı Özellikleriyle Çalışma
 
- يمكنك معالجة الخصائص المختلفة لحقل النموذج بناءً على نوعه. في هذا المثال ، نتحقق مما إذا كان حقل النموذج من النوع`FieldType.FieldFormTextInput` وضبطها`Result` بناء على ذلك:
+ Türüne göre form alanının çeşitli özelliklerini değiştirebilirsiniz. Bu örnekte, form alanının türünde olup olmadığını kontrol ediyoruz.`FieldType.FieldFormTextInput` ve ayarla`Result` buna göre mülk:
 
 ```csharp
 if (formField.Type == FieldType.FieldFormTextInput)
     formField.Result = "My name is " + formField.Name;
 ```
 
-لا تتردد في استكشاف خصائص أخرى وإجراء عمليات مختلفة بناءً على متطلباتك المحددة.
+Diğer mülkleri keşfetmekten ve özel gereksinimlerinize göre farklı işlemler yapmaktan çekinmeyin.
 
-## الخطوة 4: حفظ المستند
+## 4. Adım: Belgeyi Kaydetme
 
-أخيرًا ، احفظ المستند المعدل:
+Son olarak, değiştirilen belgeyi kaydedin:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-هذا كل شيء! لقد نجحت في العمل مع خصائص حقل النموذج في مستند Word باستخدام Aspose.Words for .NET.
+Bu kadar! Aspose.Words for .NET kullanarak bir Word belgesinde form alanı özellikleriyle başarılı bir şekilde çalıştınız.
 
-### مثال على كود المصدر لحقول النموذج العمل مع الخصائص باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Form Fields Work With Properties için örnek kaynak kodu
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -63,4 +63,4 @@ if (formField.Type == FieldType.FieldFormTextInput)
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimlerinize göre değiştirin.

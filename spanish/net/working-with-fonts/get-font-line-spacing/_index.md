@@ -1,56 +1,56 @@
 ---
-title: احصل على تباعد أسطر الخط
-linktitle: احصل على تباعد أسطر الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تباعد بين الخطوط في مستند Word باستخدام Aspose.Words for .NET.
+title: Obtener espaciado de línea de fuente
+linktitle: Obtener espaciado de línea de fuente
+second_title: Referencia de API de Aspose.Words para .NET
+description: En este tutorial, aprenda cómo obtener el espacio entre líneas de fuente en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/get-font-line-spacing/
 ---
-في هذا البرنامج التعليمي ، سنخبرك بكيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يحدد تباعد أسطر الخط المسافة العمودية بين سطور النص. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+En este tutorial, le diremos cómo obtener el espacio entre líneas de fuente en un documento de Word utilizando la biblioteca Aspose.Words para .NET. El interlineado de la fuente define el espacio vertical entre líneas de texto. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes elementos:
+- Un conocimiento práctico del lenguaje de programación C#
+- La biblioteca Aspose.Words para .NET instalada en su proyecto
 
-## الخطوة 1: إنشاء مستند جديد ومولد مستندات
- أولاً ، سننشئ مستندًا جديدًا عن طريق إنشاء مثيل لملف`Document` class ومنشئ المستندات عن طريق إنشاء مثيل لملف`DocumentBuilder` فصل.
+## Paso 1: Crear un nuevo documento y generador de documentos
+ Primero, crearemos un nuevo documento instanciando el`Document` class y un generador de documentos instanciando el`DocumentBuilder` clase.
 
 ```csharp
-// قم بإنشاء مستند جديد
+// Crear un nuevo documento
 Document doc = new Document();
 
-// قم بإنشاء منشئ المستندات
+// Crear un generador de documentos
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الخط
- بعد ذلك ، سنقوم بتكوين الخط عن طريق تعيين ملف`Name` خاصية منشئ الوثيقة.
+## Paso 2: Configurar la fuente
+ A continuación, configuraremos la fuente configurando el`Name` propiedad del generador de documentos.
 
 ```csharp
-//تكوين الخط
+//Configurar la fuente
 builder.Font.Name = "Calibri";
 ```
 
-## الخطوة 3: أضف نصًا إلى المستند
-سنستخدم الآن منشئ المستندات لإضافة نص منسق إلى المستند.
+## Paso 3: Agregar texto al documento
+Ahora usaremos el generador de documentos para agregar texto formateado al documento.
 
 ```csharp
-// أضف نصًا إلى المستند
+// Agregar texto al documento
 builder. Writen("qText");
 ```
 
-## الخطوة 4: احصل على تباعد أسطر الخطوط
- الآن سوف نصل إلى`Font` كائن من الفقرة الأولى من المستند واسترداد قيمة`LineSpacing` ملكية.
+## Paso 4: obtenga el espaciado de línea de fuente
+ Ahora accederemos a la`Font` objeto del primer párrafo del documento y recuperar el valor del`LineSpacing` propiedad.
 
 ```csharp
-// احصل على تباعد الأسطر للخط
+// Obtener el espacio entre líneas de la fuente
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### نموذج لشفرة مصدر للحصول على تباعد أسطر الخطوط باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Obtener espaciado entre líneas de fuentes usando Aspose.Words para .NET 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -60,5 +60,5 @@ Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الحصول على تباعد أسطر الخط في مستند Word باستخدام Aspose.Words for .NET. يعد تباعد أسطر الخطوط أمرًا مهمًا للتحكم في التباعد الرأسي بين سطور النص. لا تتردد في استخدام هذه الميزة لتخصيص مظهر النص في مستنداتك.
+## Conclusión
+En este tutorial, vimos cómo obtener el espacio entre líneas de fuente en un documento de Word con Aspose.Words para .NET. El espacio entre líneas de fuente es importante para controlar el espacio vertical entre líneas de texto. No dude en utilizar esta función para personalizar la apariencia de su texto en sus documentos.

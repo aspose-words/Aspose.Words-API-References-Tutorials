@@ -1,65 +1,65 @@
 ---
-title: نطاقات حذف النص
-linktitle: نطاقات حذف النص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حذف نص في نطاقات محددة في مستند Word باستخدام Aspose.Words for .NET.
+title: Aralıklar Metni Sil
+linktitle: Aralıklar Metni Sil
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki belirli aralıklardaki metinleri nasıl sileceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-ranges/ranges-delete-text/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words القدرة على حذف نص معين ضمن نطاقات محددة من المستند. في هذا الدليل ، سنرشدك إلى كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لحذف نص في نطاقات محددة في مستند Word.
+Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, düzenlemek ve değiştirmek için güçlü bir kitaplıktır. Aspose.Words'ün sunduğu özellikler arasında, bir belgenin tanımlanmış aralıkları içindeki belirli metinleri silme yeteneği yer alır. Bu kılavuzda, bir Word belgesindeki belirli aralıklardaki metni silmek için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك حذف النص في نطاقات محددة.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle çalışmayı kolay ve verimli hale getiren popüler bir kitaplıktır. Belirli aralıklardaki metinleri silmek de dahil olmak üzere Word belgeleri oluşturmak, düzenlemek ve değiştirmek için çok çeşitli özellikler sunar.
 
-## تحميل مستند Word
+## Word belgesini yükleme
 
-تتمثل الخطوة الأولى في تحميل مستند Word حيث تريد حذف النص. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+İlk adım, metni silmek istediğiniz Word belgesini yüklemektir. Belgeyi kaynak dosyadan yüklemek için Document sınıfını kullanın. İşte bir örnek :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Document.docx" الموجود في دليل المستندات.
+Bu örnekte, belgeler dizininde bulunan "Document.docx" belgesini yüklüyoruz.
 
-## حذف النص في نطاقات محددة
+## Belirli aralıklardaki metni silme
 
-بمجرد تحميل المستند ، يمكنك التنقل إلى أقسام المستند وتحديد النطاقات حيث تريد حذف النص. في هذا المثال ، سنزيل كل النص من القسم الأول من المستند. إليك الطريقة:
+Belge yüklendikten sonra, belgenin bölümlerine gidebilir ve metni silmek istediğiniz aralıkları belirtebilirsiniz. Bu örnekte, belgenin ilk bölümündeki tüm metni kaldıracağız. İşte nasıl:
 
 ```csharp
 doc.Sections[0].Range.Delete();
 ```
 
-في هذا المثال ، نقوم بالوصول إلى القسم الأول من المستند باستخدام الفهرس 0 (الأقسام مفهرسة من 0). بعد ذلك ، نسمي طريقة الحذف في نطاق القسم لحذف كل النص من هذا النطاق.
+Bu örnekte, 0 indeksini kullanarak belgenin ilk bölümüne erişiyoruz (bölümler 0'dan indekslenmiştir). Ardından, o aralıktaki tüm metni silmek için bölüm aralığındaki Sil yöntemini çağırıyoruz.
 
-## احفظ المستند المعدل
+## Değiştirilen belgeyi kaydet
 
-بمجرد حذف النص في النطاقات المحددة ، يمكنك حفظ المستند المعدل باستخدام طريقة Save لفئة Document. هنا مثال :
+Belirtilen aralıklardaki metni sildikten sonra, değiştirilen belgeyi Document sınıfının Save yöntemini kullanarak kaydedebilirsiniz. İşte bir örnek :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 ```
 
-في هذا المثال ، نحفظ المستند المعدل باسم "WorkingWithRangesDeleteText.ModifiedDocument.docx".
+Bu örnekte değiştirilen belgeyi "WorkingWithRangesDeleteText.ModifiedDocument.docx" olarak kaydediyoruz.
 
-### مثال على شفرة المصدر لوظيفة "حذف النص في النطاقات" باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile "Aralıklardaki metni sil" işlevi için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+//Word belgesini yükleyin
 Document doc = new Document(dataDir + "Document.docx");
 
-// احذف النص في القسم الأول من المستند
+// Belgenin ilk bölümündeki metni silin
 doc.Sections[0].Range.Delete();
 
-// احفظ المستند المعدل
+// Değiştirilen belgeyi kaydet
 doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، قمنا بتغطية كيفية استخدام Aspose.Words for .NET لحذف نص في نطاقات محددة من مستند Word باستخدام كود المصدر C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة حذف النص في نطاقات محددة في مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose. Words مرونة هائلة وقوة للعمل مع نطاقات من النصوص ، مما يسمح لك بإنشاء وتحرير مستندات Word بدقة وبشكل هادف.
+Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesinin belirli aralıklarındaki metni silmek için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Verilen adımları izleyerek, C# uygulamanızdaki Word belgelerinizdeki tanımlı aralıklardaki metni kolayca silebilirsiniz. Aspose.Words, metin aralıklarıyla çalışmak için muazzam bir esneklik ve güç sunarak, Word belgelerini hassas ve amaçlı bir şekilde oluşturmanıza ve düzenlemenize olanak tanır.

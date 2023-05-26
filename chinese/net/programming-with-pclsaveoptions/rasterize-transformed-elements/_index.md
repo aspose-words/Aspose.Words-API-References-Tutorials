@@ -1,32 +1,32 @@
 ---
-title: تنقيط العناصر المحولة
-linktitle: تنقيط العناصر المحولة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل التحويل النقطي للعناصر المحولة عند التحويل إلى تنسيق PCL باستخدام Aspose.Words for .NET.
+title: 栅格化变换后的元素
+linktitle: 栅格化变换后的元素
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何在使用 Aspose.Words for .NET 转换为 PCL 格式时禁用已转换元素的光栅化。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word ومعالجتها وتحويلها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words القدرة على تحويل العناصر المحوّلة إلى نقطية عند تحويل المستندات إلى تنسيقات مختلفة. في هذا الدليل ، سنوضح لك كيفية استخدام الكود المصدري C # لـ Aspose.Words for .NET لتعطيل تنقيط العناصر المحولة عند تحويل مستند إلى تنسيق PCL.
+Aspose.Words for .NET 是一个强大的库，用于在 C# 应用程序中创建、操作和转换 Word 文档。 Aspose.Words 提供的功能之一是能够在将文档转换为不同格式时对转换后的元素进行栅格化。在本指南中，我们将向您展示如何使用 Aspose.Words for .NET 的 C# 源代码在将文档转换为 PCL 格式时禁用已转换元素的光栅化。
 
-## فهم مكتبة Aspose.Words
+## 理解 Aspose.Words 库
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها وتحويلها ، بما في ذلك دعم تنقيط العناصر المحولة أثناء التحويل.
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库很重要。 Aspose.Words 是一个流行的库，它使处理 Word 文档变得简单而高效。它提供了用于创建、编辑和转换 Word 文档的广泛功能，包括支持在转换过程中栅格化转换后的元素。
 
-## تحميل مستند Word
+## 载入Word文档
 
-الخطوة الأولى هي تحميل مستند Word الذي تريد تحويله إلى تنسيق PCL. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+第一步是加载要转换为 PCL 格式的 Word 文档。使用 Document 类从源文件加载文档。这是一个例子：
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل مستند "Rendering.docx" الموجود في دليل المستندات.
+在此示例中，我们正在加载位于文档目录中的“Rendering.docx”文档。
 
-## تكوين خيارات النسخ الاحتياطي
+## 配置备份选项
 
-الخطوة التالية هي تكوين خيارات الحفظ للتحويل إلى تنسيق PCL. استخدم فئة PclSaveOptions وقم بتعيين الخاصية RasterizeTransformedElements على false. هيريس كيفية القيام بذلك:
+下一步是配置转换为 PCL 格式的保存选项。使用 PclSaveOptions 类并将 RasterizeTransformedElements 属性设置为 false。方法如下：
 
 ```csharp
 PclSaveOptions saveOptions = new PclSaveOptions
@@ -36,40 +36,40 @@ PclSaveOptions saveOptions = new PclSaveOptions
 };
 ```
 
-قمنا بإنشاء كائن PclSaveOptions جديد وقمنا بتعيين خاصية SaveFormat على SaveFormat.Pcl لتحديد أننا نريد حفظ المستند بتنسيق PCL. بعد ذلك ، قمنا بتعيين الخاصية RasterizeTransformedElements على false لتعطيل تنقيط العناصر المحولة.
+我们创建一个新的 PclSaveOptions 对象并将 SaveFormat 属性设置为 SaveFormat.Pcl 以指定我们要以 PCL 格式保存文档。接下来，我们将 RasterizeTransformedElements 属性设置为 false 以禁用转换元素的光栅化。
 
-## تحويل المستند إلى تنسيق PCL
+## 将文档转换为 PCL 格式
 
-الآن بعد أن قمنا بتكوين خيارات الحفظ ، يمكننا المتابعة لتحويل المستند إلى تنسيق PCL. استخدم طريقة Save لفئة Document لحفظ المستند المحول بتنسيق PCL عن طريق تحديد خيارات الحفظ. هنا مثال :
+现在我们已经配置了保存选项，我们可以继续将文档转换为 PCL 格式。使用 Document 类的 Save 方法通过指定保存选项以 PCL 格式保存转换后的文档。这是一个例子：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```
 
-في هذا المثال ، نحفظ المستند المحول باسم "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl" باستخدام خيارات الحفظ المحددة.
+在此示例中，我们使用指定的保存选项将转换后的文档保存为“WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl”。
 
-### مثال على شفرة المصدر لميزة "Rasterize Transformed Elements" مع Aspose.Words for .NET
+### Aspose.Words for .NET 的“栅格化转换元素”功能示例源代码
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+//载入Word文档
 
 
 Document doc = new Document(dataDir + "Rendering.docx");
 
-// تكوين خيارات النسخ الاحتياطي للتحويل إلى تنسيق PCL
+//配置转换为 PCL 格式的备份选项
 PclSaveOptions saveOptions = new PclSaveOptions
 {
      SaveFormat = SaveFormat.Pcl,
      RasterizeTransformedElements = false
 };
 
-// قم بتحويل المستند إلى تنسيق PCL
+//将文档转换为 PCL 格式
 doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```
 
-## خاتمة
+## 结论
 
-في هذا الدليل ، تناولنا كيفية استخدام Aspose.Words for .NET لتعطيل تنقيط العناصر المحولة عند تحويل مستند إلى تنسيق PCL باستخدام كود المصدر C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة التحكم في سلوك التنقيط للعناصر المحولة عند تحويل مستندات Word إلى تنسيقات مختلفة. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع العناصر المحولة ، مما يسمح لك بإنشاء مستندات محولة بدقة لاحتياجاتك الخاصة.
+在本指南中，我们介绍了如何使用 Aspose.Words for .NET 在使用提供的 C# 源代码将文档转换为 PCL 格式时禁用转换元素的光栅化。按照提供的步骤操作，您可以在将 Word 文档转换为不同格式时轻松控制转换元素的光栅化行为。 Aspose.Words 提供了巨大的灵活性和强大的功能来处理转换后的元素，允许您根据您的特定需求精确地创建转换后的文档。

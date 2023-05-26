@@ -1,20 +1,20 @@
 ---
-title: العمل مع Node
-linktitle: العمل مع Node
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية استخدام نوع العقدة ، والحصول على العقدة الأصلية ، ووثيقة المالك ، وتكرار جميع العقد ، واجتياز جميع العقد ، وتعداد العقد الفرعية ، وإنشاء عقد فقرة في مستند Word باستخدام Aspose.Words for .NET.
+title: Trabajando con Nodo
+linktitle: Trabajando con Nodo
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales contienen cómo usar el tipo de nodo, obtener el nodo principal, el documento propietario, todos los nodos recursivos, recorrer todos los nodos, enumerar los nodos secundarios y crear nodos de párrafo en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 1000
 url: /es/net/working-with-node/
 ---
-يعد العمل مع المراجعات موردًا شاملاً يرشدك خلال العمل مع المراجعات في مستندات Word باستخدام مكتبة Aspose.Words for .NET. توضح لك البرامج التعليمية خطوة بخطوة كيفية إضافة المراجعات وحذفها وقبولها ورفضها وكيفية عرض المراجعات في المستند وكيفية مقارنة الإصدارات المختلفة وغير ذلك الكثير. سوف تتعلم كيفية العمل بفعالية مع المراجعات للتعاون وإدارة التغيير في مستندات Word الخاصة بك. هذا المورد ضروري للمطورين الذين يرغبون في أتمتة إدارة المراجعة في Aspose.Words للتطبيقات المستندة إلى .NET.
+Trabajar con revisiones es un recurso integral que lo guía a través del trabajo con revisiones en documentos de Word utilizando la biblioteca Aspose.Words para .NET. Los tutoriales le muestran paso a paso cómo agregar, eliminar, aceptar y rechazar revisiones, cómo mostrar revisiones en el documento, cómo comparar diferentes versiones y mucho más. Aprenderá a trabajar de forma eficaz con revisiones para la colaboración y la gestión de cambios en sus documentos de Word. Este recurso es esencial para los desarrolladores que desean automatizar la gestión de revisiones en sus aplicaciones basadas en Aspose.Words para .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [استخدم نوع العقدة](./use-node-type/) | تعرف على كيفية استخدام نوع العقدة للوصول إلى المعلومات الخاصة بالمستند باستخدام Aspose.Words for .NET. |
-| [احصل على العقدة الأصلية](./get-parent-node/) | تعرف على كيفية الحصول على العقدة الأصلية لعنصر معين باستخدام Aspose.Words for .NET. |
-| [وثيقة المالك](./owner-document/) | تعرف على كيفية استخدام مستند المالك في Aspose.Words for .NET. |
-| [تعداد العقد الفرعية](./enumerate-child-nodes/) | تعرف على كيفية تعداد العقد الفرعية في فقرة باستخدام Aspose.Words for .NET. |
-| [الوصول المكتوب](./typed-access/) | تعرف على كيفية استخدام الوصول المكتوب لمعالجة الجداول في Aspose.Words for .NET. |
-| [إنشاء وإضافة فقرة العقدة](./create-and-add-paragraph-node/) | قم بإنشاء وإضافة عقدة فقرة إلى مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. |
+| [Usar tipo de nodo](./use-node-type/) | Aprenda a usar el tipo de nodo para acceder a información específica del documento con Aspose.Words para .NET. |
+| [Obtener nodo principal](./get-parent-node/) | Aprenda a obtener el nodo principal de un elemento específico con Aspose.Words para .NET. |
+| [Documento de propietario](./owner-document/) | Aprenda a usar el documento de propietario en Aspose.Words para .NET. |
+| [Enumerar nodos secundarios](./enumerate-child-nodes/) | Aprenda a enumerar nodos secundarios en un párrafo con Aspose.Words para .NET. |
+| [Acceso escrito](./typed-access/) | Aprenda a usar el acceso escrito para manipular tablas en Aspose.Words para .NET. |
+| [Crear y agregar nodo de párrafo](./create-and-add-paragraph-node/) | Cree y agregue un nodo de párrafo a sus documentos de Word con Aspose.Words para .NET. |

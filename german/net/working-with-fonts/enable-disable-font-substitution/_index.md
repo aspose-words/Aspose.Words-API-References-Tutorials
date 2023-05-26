@@ -1,57 +1,57 @@
 ---
-title: قم بتمكين تعطيل استبدال الخط
-linktitle: قم بتمكين تعطيل استبدال الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تمكين أو تعطيل استبدال الخط في مستند Word باستخدام Aspose.Words for .NET.
+title: Aktivieren Sie „Schriftartersetzung deaktivieren“.
+linktitle: Aktivieren Sie „Schriftartersetzung deaktivieren“.
+second_title: Aspose.Words für .NET API-Referenz
+description: In diesem Tutorial erfahren Sie, wie Sie die Schriftartersetzung in einem Word-Dokument mit Aspose.Words für .NET aktivieren oder deaktivieren.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/enable-disable-font-substitution/
 ---
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تمكين أو تعطيل استبدال الخط في مستند Word عند عرضه باستخدام مكتبة Aspose.Words لـ .NET. يتيح لك تمكين أو تعطيل استبدال الخط التحكم في ما إذا كان سيتم استبدال الخطوط المفقودة تلقائيًا بخط افتراضي. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In diesem Tutorial zeigen wir Ihnen, wie Sie die Schriftartersetzung in einem Word-Dokument aktivieren oder deaktivieren, wenn Sie es mit der Aspose.Words-Bibliothek für .NET rendern. Durch Aktivieren oder Deaktivieren der Schriftartenersetzung können Sie steuern, ob fehlende Schriftarten automatisch durch eine Standardschriftart ersetzt werden. Wir begleiten Sie Schritt für Schritt, um Ihnen zu helfen, den Code in Ihrem .NET-Projekt zu verstehen und zu implementieren.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word الذي تريد عرضه باستبدال الخط أو بدونه
+## Voraussetzungen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
+- Grundkenntnisse der Programmiersprache C#
+- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
+- Ein Word-Dokument, das Sie mit oder ohne Schriftartersetzung rendern möchten
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+ Zuerst müssen Sie den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments festlegen. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند وتكوين إعدادات الخط
- بعد ذلك ، سنقوم بتحميل مستند Word الذي تريد عرضه وإنشاء مثيل لملف`FontSettings` فئة للتعامل مع إعدادات الخط. سنقوم بتعيين تجاوز الخط الافتراضي عن طريق تحديد اسم الخط في`DefaultFontName` وتعطيل تجاوز معلومات الخط بـ`Enabled` ضبط ل`false`.
+## Schritt 2: Laden Sie das Dokument hoch und konfigurieren Sie die Schriftarteinstellungen
+ Als Nächstes laden wir das Word-Dokument, das Sie rendern möchten, und erstellen eine Instanz davon`FontSettings` Klasse, um die Schriftarteinstellungen zu verwalten. Wir legen die Standardschriftartüberschreibung fest, indem wir den Schriftartnamen in angeben`DefaultFontName` und deaktivieren Sie das Überschreiben von Schriftartinformationen mit`Enabled` einstellen`false`.
 
 ```csharp
-//قم بتحميل المستند
+//Laden Sie das Dokument
 Document doc = new Document(dataDir + "Rendering.docx");
 
-// تكوين إعدادات الخط
+// Konfigurieren Sie die Schriftarteinstellungen
 FontSettings fontSettings = new FontSettings();
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
 fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
 
-// قم بتطبيق إعدادات الخط على المستند
+// Wenden Sie die Schriftarteinstellungen auf das Dokument an
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 3: احفظ المستند المقدم
-أخيرًا ، سنحفظ المستند الذي تم تقديمه ، والذي سيحترم إعدادات تجاوز الخط المحددة.
+## Schritt 3: Speichern Sie das gerenderte Dokument
+Abschließend speichern wir das gerenderte Dokument, wobei die definierten Einstellungen zum Überschreiben von Schriftarten berücksichtigt werden.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 
-### نموذج التعليمات البرمجية المصدر لـ Enable Disable Font Substitution باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Enable Disable Font Substitution“ mit Aspose.Words für .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -63,5 +63,5 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تمكين أو تعطيل استبدال الخط في مستند Word عند عرضه باستخدام Aspose.Words for .NET. من خلال التحكم في استبدال الخط ، يمكنك التأثير على كيفية معالجة الخطوط المفقودة في المستندات المقدمة. لا تتردد في استخدام هذه الميزة لتخصيص إدارة الخطوط في مستندات Word الخاصة بك.
+## Abschluss
+In diesem Tutorial haben wir gesehen, wie man die Schriftartersetzung in einem Word-Dokument beim Rendern mit Aspose.Words für .NET aktiviert oder deaktiviert. Durch die Steuerung der Schriftartersetzung können Sie beeinflussen, wie fehlende Schriftarten in Ihren gerenderten Dokumenten behandelt werden. Zögern Sie nicht, diese Funktion zu nutzen, um die Verwaltung von Schriftarten in Ihren Word-Dokumenten anzupassen.

@@ -1,45 +1,45 @@
 ---
-title: عنوان Setext
-linktitle: عنوان Setext
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام عناوين Setext لتنسيق مستنداتك باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: En-tête de texte
+linktitle: En-tête de texte
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à utiliser les en-têtes Setext pour formater vos documents avec le guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-markdown/setext-heading/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة Setext Heading مع Aspose.Words for .NET. Setext Heading هي طريقة بديلة لتنسيق العناوين في مستندات Markdown.
+Dans ce didacticiel, nous vous expliquerons comment utiliser la fonctionnalité Setext Heading avec Aspose.Words pour .NET. Setext Heading est une méthode alternative de formatage des titres dans les documents Markdown.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Étape 1 : Utiliser un générateur de documents
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Tout d'abord, nous allons utiliser un générateur de document pour ajouter du contenu à notre document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: استخدام نمط عنوان Setext
+## Étape 2 : Utiliser le style de titre Setext
 
-سنستخدم نمط الفقرة الافتراضي "العنوان 1" لإنشاء عنوان من المستوى 1 في وثيقتنا.
+Nous allons utiliser le style de paragraphe par défaut "Titre 1" pour créer un titre de niveau 1 dans notre document.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";
 builder.Writeln("This is an H1 tag");
 ```
 
-## الخطوة 3: إعادة ضبط الأنماط
+## Étape 3 : Réinitialiser les styles
 
-نقوم بإعادة تعيين أنماط الخطوط المطبقة مسبقًا لتجنب أي مجموعة غير مرغوب فيها من الأنماط بين الفقرات.
+Nous réinitialisons les styles de police précédemment appliqués pour éviter toute combinaison indésirable de styles entre les paragraphes.
 
 ```csharp
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
 
-## الخطوة 4: تخصيص مستويات عناوين Setext
+## Étape 4 : Personnalisation des niveaux d'en-tête Setext
 
-يمكننا تخصيص مستويات عناوين Setext عن طريق إضافة أنماط فقرة جديدة بناءً على أنماط العناوين الحالية. في هذا المثال ، نقوم بإنشاء نمط "SetextHeading1" استنادًا إلى نمط "العنوان 1" لتمثيل عنوان المستوى 1 بتنسيق Setext.
+Nous pouvons personnaliser les niveaux de titre Setext en ajoutant de nouveaux styles de paragraphe basés sur les styles de titre existants. Dans cet exemple, nous créons un style "SetextHeading1" basé sur le style "Heading 1" pour représenter un titre de niveau 1 au format Setext.
 
 ```csharp
 Style setexHeading1 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading1");
@@ -48,26 +48,26 @@ builder.Document.Styles["SetextHeading1"].BaseStyleName = "Heading 1";
 builder.Writeln("Title Setext level 1");
 ```
 
-## الخطوة 5: حفظ المستند
+## Étape 5 : Enregistrer le document
 
-أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب.
+Enfin, nous pouvons enregistrer le document dans le format souhaité.
 
 ```csharp
 builder.Document.Save(dataDir + "Test.md");
 ```
 
-### مثال على شفرة المصدر لعناوين Setext مع Aspose.Words for .NET
+### Exemple de code source pour les titres Setext avec Aspose.Words pour .NET
 
 ```csharp
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilisez un générateur de document pour ajouter du contenu au document.
 	DocumentBuilder builder = new DocumentBuilder();
 
 	builder.ParagraphFormat.StyleName = "Heading 1";
 	builder.Writeln("This is an H1 tag");
 
-	// إعادة تعيين الأنماط من الفقرة السابقة لعدم دمج الأنماط بين الفقرات.
+	// Réinitialisez les styles du paragraphe précédent pour ne pas combiner les styles entre les paragraphes.
 	builder.Font.Bold = false;
 	builder.Font.Italic = false;
 
@@ -79,7 +79,7 @@ builder.Document.Save(dataDir + "Test.md");
 	builder.ParagraphFormat.Style = builder.Document.Styles["Heading 3"];
 	builder.Writeln("This is an H3 tag");
 
-	// إعادة تعيين الأنماط من الفقرة السابقة لعدم دمج الأنماط بين الفقرات.
+	// Réinitialisez les styles du paragraphe précédent pour ne pas combiner les styles entre les paragraphes.
 	builder.Font.Bold = false;
 	builder.Font.Italic = false;
 
@@ -87,7 +87,7 @@ builder.Document.Save(dataDir + "Test.md");
 	builder.ParagraphFormat.Style = setexHeading2;
 	builder.Document.Styles["SetextHeading2"].BaseStyleName = "Heading 3";
 
-	// ستتم إعادة تعيين مستوى عنوان Setex إلى 2 إذا كانت الفقرة الأساسية بها مستوى عنوان أكبر من 2.
+	// Le niveau de titre Setex sera réinitialisé à 2 si le paragraphe de base a un niveau de titre supérieur à 2.
 	builder.Writeln("Setext Heading level 2");
 	
 

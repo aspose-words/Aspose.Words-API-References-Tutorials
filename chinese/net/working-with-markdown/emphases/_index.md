@@ -1,35 +1,35 @@
 ---
-title: تأكيدات
-linktitle: تأكيدات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام التأكيدات (بالخط العريض والمائل) باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: 重点
+linktitle: 重点
+second_title: Aspose.Words for .NET API 参考
+description: 通过 Aspose.Words for .NET 分步指南了解如何使用强调（粗体和斜体）。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/emphases/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام التأكيدات مع Aspose.Words for .NET. يتم استخدام التأكيدات للتأكيد على أجزاء معينة من النص ، مثل الخط الغامق والمائل.
+在这个例子中，我们将解释如何在 Aspose.Words for .NET 中使用强调。强调用于强调文本的某些部分，例如粗体和斜体。
 
-## الخطوة 1: تهيئة المستند
+## 第一步：文档初始化
 
- أولاً ، سنهيئ المستند عن طريق إنشاء مثيل لـ`Document` فصل.
+首先，我们将通过创建一个实例来初始化文档`Document`班级。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: استخدام منشئ المستندات
+## 第 2 步：使用文档生成器
 
-بعد ذلك ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+接下来，我们将使用文档生成器将内容添加到我们的文档中。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إضافة نص مع التوكيدات
+## 第 3 步：添加带有重点的文本
 
-يمكننا إضافة نص تأكيدات عن طريق تغيير خصائص خط منشئ المستند. في هذا المثال ، نستخدم الخط الغامق والمائل للتأكيد على أجزاء مختلفة من النص.
+我们可以通过更改文档生成器的字体属性来添加强调文本。在这个例子中，我们使用粗体和斜体来强调文本的不同部分。
 
 ```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as emphases indicators.");
@@ -59,17 +59,17 @@ builder. Write(".");
 
 ```
 
-## الخطوة 4: حفظ المستند
+## 第 4 步：保存文档
 
- أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب. في هذا المثال ، نستخدم الامتداد`.md` التمديد لتنسيق Markdown.
+最后，我们可以将文档保存为所需的格式。在这个例子中，我们使用`.md`Markdown 格式的扩展。
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام التأكيدات مع Aspose.Words for .NET.
+恭喜！您现在已经了解了如何在 Aspose.Words for .NET 中使用强调。
 
-### مثال على شفرة المصدر للتأكيد باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的 Emphases 示例源代码
 
 
 ```csharp

@@ -1,39 +1,39 @@
 ---
-title: الحصول على موقف الجدول العائم
-linktitle: الحصول على موقف الجدول العائم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على موضع الجداول العائمة في مستند Word باستخدام Aspose.Words for .NET.
+title: Obtener posición de mesa flotante
+linktitle: Obtener posición de mesa flotante
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a obtener la posición de las tablas flotantes en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/get-floating-table-position/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية الحصول على موضع الجدول العائم في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من الحصول على خصائص تحديد الموضع للجدول العائم في مستندات Word الخاصة بك برمجيًا.
+En este tutorial, aprenderemos cómo obtener la posición de una tabla flotante en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá obtener las propiedades de posicionamiento de una tabla flotante en sus documentos de Word mediante programación.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Paso 1: Configuración del proyecto
+1. Inicie Visual Studio y cree un nuevo proyecto de C#.
+2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
-## الخطوة الثانية: تحميل المستند والوصول إلى الجداول
-لبدء العمل مع الجداول ، نحتاج إلى تحميل المستند الذي يحتوي عليها والوصول إليها. اتبع هذه الخطوات:
+## Paso 2: Cargar el documento y acceder a las tablas
+Para empezar a trabajar con tablas, necesitamos cargar el documento que las contiene y acceder a ellas. Sigue estos pasos:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Cargue el documento
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات. تأكد أيضًا من أن المستند يحتوي على جداول عائمة.
+Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos. Además, asegúrese de que el documento contenga tablas flotantes.
 
-## الخطوة 3: الحصول على خصائص تحديد موضع الجدول العائم
-بعد ذلك ، سنقوم بتكرار جميع الجداول الموجودة في المستند والحصول على خصائص تحديد موضع الجدول العائم. استخدم الكود التالي:
+## Paso 3: obtener las propiedades de posicionamiento de la tabla flotante
+A continuación, recorreremos todas las tablas del documento y obtendremos las propiedades de posicionamiento de la tabla flotante. Usa el siguiente código:
 
 ```csharp
 foreach(Table table in doc.FirstSection.Body.Tables)
 {
-// إذا كانت المصفوفة من النوع العائم ، فقم بطباعة خصائص تحديد الموضع الخاصة بها.
+// Si la matriz es de tipo flotante, imprima sus propiedades de posicionamiento.
 if (table.TextWrapping == TextWrapping.Around)
 {
 Console.WriteLine(table.HorizontalAnchor);
@@ -48,18 +48,18 @@ Console.WriteLine("...............................");
 }
 ```
 
- نحن هنا نستخدم ملف`foreach` حلقة للتكرار خلال جميع المصفوفات في المستند. نتحقق مما إذا كانت المصفوفة من النوع العائم عن طريق التحقق من`TextWrapping` ملكية. إذا كان الأمر كذلك ، فإننا نطبع خصائص تحديد موضع الجدول ، مثل المرساة الأفقية ، والمثبت الرأسي ، والمسافات الأفقية والرأسية المطلقة ، والإذن المتداخل ، والمسافة الأفقية المطلقة ، والمحاذاة الرأسية النسبية.
+ Aquí estamos usando un`foreach` bucle para recorrer todas las matrices del documento. Comprobamos si la matriz es de tipo flotante comprobando el`TextWrapping` propiedad. Si es así, imprimimos las propiedades de posicionamiento de la tabla, como el anclaje horizontal, el anclaje vertical, las distancias absolutas horizontal y vertical, el permiso de superposición, la distancia absoluta horizontal y la alineación vertical relativa.
  
-### نموذج التعليمات البرمجية المصدر للحصول على موقع الجدول العائم باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para obtener la posición de la tabla flotante mediante Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");
 	foreach (Table table in doc.FirstSection.Body.Tables)
 	{
-		// إذا كان الجدول من النوع العائم ، فقم بطباعة خصائص تحديد الموضع الخاصة به.
+		// Si la tabla es de tipo flotante, imprima sus propiedades de posicionamiento.
 		if (table.TextWrapping == TextWrapping.Around)
 		{
 			Console.WriteLine(table.HorizontalAnchor);
@@ -74,5 +74,5 @@ Console.WriteLine("...............................");
 	}
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية الحصول على موضع الجدول العائم في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك الحصول على خصائص تحديد موضع الجداول العائمة في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة تحليل الجداول العائمة ومعالجتها وفقًا لاحتياجاتك الخاصة.
+## Conclusión
+En este tutorial, aprendimos cómo obtener la posición de una tabla flotante en un documento de Word usando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# provisto, puede obtener las propiedades de posicionamiento de las tablas flotantes en sus documentos de Word mediante programación. Esta función le permite analizar y manipular tablas flotantes según sus necesidades específicas.

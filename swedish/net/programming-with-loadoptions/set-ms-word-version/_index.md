@@ -1,55 +1,55 @@
 ---
-title: تعيين إصدار MS Word
-linktitle: تعيين إصدار MS Word
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل مستند بإصدار محدد من MS Word باستخدام Aspose.Words for .NET.
+title: Ställ in Ms Word-version
+linktitle: Ställ in Ms Word-version
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du laddar ett dokument med en specificerad version av MS Word med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-loadoptions/set-ms-word-version/
 ---
 
-عند العمل مع مستندات Word في تطبيق C # ، قد يكون من الضروري تحديد إصدار Microsoft Word لاستخدامه عند تحميل المستند. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تعيين إصدار MS Word الذي تريد استخدامه باستخدام LoadOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند بإصدار محدد من MS Word باستخدام خيارات تحميل LoadOptions.
+När du arbetar med Word-dokument i en C#-applikation kan det vara nödvändigt att ange vilken version av Microsoft Word som ska användas när dokumentet laddas. Med Aspose.Words-biblioteket för .NET kan du enkelt ställa in vilken version av MS Word som ska användas med LoadOptions. I denna steg-för-steg-guide kommer vi att gå igenom hur du använder Aspose.Words för .NET C#-källkod för att ladda ett dokument med en specificerad version av MS Word med hjälp av LoadOptions laddningsalternativ.
 
-## فهم مكتبة Aspose.Words
+## Förstå Aspose.Words-biblioteket
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Innan du dyker in i koden är det viktigt att förstå Aspose.Words-biblioteket för .NET. Aspose.Words är ett kraftfullt bibliotek för att skapa, redigera, konvertera och skydda Word-dokument på olika plattformar inklusive .NET. Den erbjuder många funktioner för att manipulera dokument, som att infoga text, ändra formatering, lägga till avsnitt och mycket mer.
 
-## تكوين خيارات التحميل
+## Konfigurera laddningsalternativ
 
-الخطوة الأولى هي تكوين خيارات التحميل لوثيقتنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى ضبط خاصية MswVersion على الإصدار المطلوب من MS Word. على سبيل المثال ، نحن نستخدم إصدار Microsoft Word 2010. إليك كيفية القيام بذلك:
+Det första steget är att konfigurera laddningsalternativen för vårt dokument. Använd klassen LoadOptions för att ange laddningsparametrar. I vårt fall måste vi ställa in MswVersion-egenskapen till den önskade versionen av MS Word. Till exempel använder vi Microsoft Word 2010 version. Så här gör du:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { MswVersion = MsWordVersion.Word2010 };
 ```
 
-قمنا بإنشاء كائن LoadOptions جديد وقمنا بتعيين خاصية MswVersion على MsWordVersion.Word2010 لتحديد إصدار MS Word 2010.
+Vi skapar ett nytt LoadOptions-objekt och ställer in MswVersion-egenskapen till MsWordVersion.Word2010 för att ange versionen av MS Word 2010.
 
-## تحميل المستند بإصدار محدد من MS Word
+## Dokument laddas med specificerad version av MS Word
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل المستند باستخدام فئة Document وتحديد خيارات التحميل. هنا مثال :
+Nu när vi har konfigurerat laddningsalternativen kan vi ladda dokumentet med klassen Document och ange laddningsalternativen. Här är ett exempel :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Document.docx" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+I det här exemplet laddar vi dokumentet "Document.docx" som finns i dokumentkatalogen med de angivna laddningsalternativen.
 
-### مثال على شفرة المصدر لـ LoadOptions مع وظيفة "Set MS Word Version" باستخدام Aspose.Words for .NET
+### Exempel på källkod för LoadOptions med "Set MS Word Version"-funktionalitet med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل باستخدام ميزة "تعيين إصدار MS Word"
+// Konfigurera laddningsalternativ med funktionen "Set MS Word Version".
 LoadOptions loadOptions = new LoadOptions { MswVersion = MsWordVersion.Word2010 };
 
-// قم بتحميل المستند بالإصدار المحدد من MS Word
+// Ladda dokumentet med den angivna versionen av MS Word
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
-// احفظ المستند
+// Spara dokumentet
 doc.Save(dataDir + "WorkingWithLoadOptions.SetMsWordVersion.docx");
 ```
 
-## خاتمة
+## Slutsats
 
-في هذا الدليل ، أوضحنا كيفية تحميل مستند يحدد إصدارًا معينًا من MS Word باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام مصدر الكود C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يتيح لك تحميل مستند بإصدار محدد من MS Word ضمان التوافق السليم ومعالجة المستند في التطبيق الخاص بك.
+den här guiden har vi förklarat hur man laddar upp ett dokument som anger en specifik version av MS Word med hjälp av Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda koden C#-källa som tillhandahålls kan du enkelt tillämpa denna funktionalitet i din C#-applikation. Genom att ladda ett dokument med en specificerad version av MS Word kan du säkerställa korrekt kompatibilitet och bearbetning av dokumentet i din applikation.

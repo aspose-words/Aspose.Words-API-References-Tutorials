@@ -1,42 +1,42 @@
 ---
-title: دمج المستندات
-linktitle: دمج المستندات
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح كود مصدر C # لميزة دمج المستندات في Aspose.Words for .NET
+title: Unisci documenti
+linktitle: Unisci documenti
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida passo passo per spiegare il codice sorgente C# della funzionalità Unisci documenti di Aspose.Words per .NET
 type: docs
 weight: 10
 url: /it/net/split-document/merge-documents/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية دمج مستندات Word متعددة باستخدام ميزة دمج المستندات في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر والحصول على مستند مدمج يحتوي على كافة المستندات المصدر.
+In questo tutorial, ti illustreremo come unire più documenti di Word utilizzando la funzione Unisci documenti di Aspose.Words per .NET. Segui i passaggi seguenti per comprendere il codice sorgente e ottenere un documento unito contenente tutti i documenti di origine.
 
-## الخطوة 1: ابحث عن المستندات المراد دمجها
+## Passaggio 1: cerca i documenti da unire
 
-قبل دمج المستندات ، نحتاج إلى تحديد موقع المستندات المصدر المراد دمجها. إليك الطريقة:
+Prima di unire i documenti, dobbiamo individuare i documenti di origine da unire. Ecco come:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
-// ابحث عن المستندات المراد دمجها.
+// Cerca i documenti da unire.
 FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
 .GetFileSystemInfos("SplitDocument.PageParPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
 string sourceDocumentPath =
 Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.TopDirectoryOnly)[0];
 ```
 
-## الخطوة 2: دمج المستندات
+## Passaggio 2: unisci i documenti
 
-سنقوم الآن بدمج المستندات واحدة تلو الأخرى لإنشاء مستند مدمج نهائي. إليك الطريقة:
+Ora uniremo i documenti uno per uno per creare un documento unito finale. Ecco come:
 
 ```csharp
-// افتح الجزء الأول من المستند الناتج.
+// Apri la prima parte del documento risultante.
 Document sourceDoc = new Document(sourceDocumentPath);
 
-// قم بإنشاء مستند ناتج جديد.
+// Crea un nuovo documento risultante.
 Document mergedDoc = new Document();
 DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-// دمج المستندات واحدة تلو الأخرى.
+// Unire i documenti uno per uno.
 foreach(FileSystemInfo documentPath in documentPaths)
 {
 if (documentPath.FullName == sourceDocumentPath)
@@ -50,28 +50,28 @@ sourceDoc = new Document(documentPath.FullName);
 mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
 
-### مثال على شفرة المصدر لدمج المستندات باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Merge Documents utilizzando Aspose.Words per .NET
 
-فيما يلي رمز المصدر الكامل لميزة دمج المستندات في Aspose.Words for .NET:
+Ecco il codice sorgente completo per la funzione Merge Documents di Aspose.Words per .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// البحث عن المستندات باستخدام الدمج.
+	// Trova i documenti usando per unire.
 	FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
 		.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
 	string sourceDocumentPath =
 		Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
 
-	// افتح الجزء الأول من المستند الناتج.
+	// Apri la prima parte del documento risultante.
 	Document sourceDoc = new Document(sourceDocumentPath);
 
-	// قم بإنشاء مستند ناتج جديد.
+	// Crea un nuovo documento risultante.
 	Document mergedDoc = new Document();
 	DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-	// دمج أجزاء المستند واحدًا تلو الآخر.
+	// Unisci le parti del documento una per una.
 	foreach (FileSystemInfo documentPath in documentPaths)
 	{
 		if (documentPath.FullName == sourceDocumentPath)

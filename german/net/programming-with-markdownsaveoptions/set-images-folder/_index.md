@@ -1,53 +1,53 @@
 ---
-title: تعيين مجلد الصور
-linktitle: تعيين مجلد الصور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين مجلد الصور عند التصدير إلى Markdown باستخدام Aspose.Words for .NET. تخصيص موضع الصور من أجل تنظيم وتكامل أفضل.
+title: Legen Sie den Bilderordner fest
+linktitle: Legen Sie den Bilderordner fest
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie den Bilderordner beim Exportieren nach Markdown mit Aspose.Words für .NET festlegen. Passen Sie die Platzierung von Bildern für eine bessere Organisation und Integration an.
 type: docs
 weight: 10
 url: /de/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
 
-فيما يلي دليل خطوة بخطوة لشرح الكود المصدري C # التالي والذي يساعد على تعيين مجلد الصور لخيارات تصدير Markdown باستخدام مكتبة Aspose.Words لـ .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der dabei hilft, den Bildordner für Markdown-Exportoptionen mithilfe der Aspose.Words-Bibliothek für .NET festzulegen. Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek in Ihr Projekt eingebunden haben, bevor Sie diesen Code verwenden.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## Schritt 1: Legen Sie den Pfad zum Dokumentverzeichnis fest
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Der Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث يوجد المستند الذي يحتوي على الصور.
+Stellen Sie sicher, dass Sie den korrekten Pfad zu Ihrem Dokumentenverzeichnis angeben, in dem sich das Dokument mit den Bildern befindet.
 
-## الخطوة 2: قم بتحميل المستند الذي يحتوي على الصور
+## Schritt 2: Laden Sie das Dokument mit den Bildern
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-نقوم بتحميل المستند المحدد الذي يحتوي على الصور التي نريد تصديرها باستخدام خيارات Markdown.
+Wir laden das angegebene Dokument, das die Bilder enthält, die wir exportieren möchten, mit Markdown-Optionen.
 
-## الخطوة 3: قم بتعيين مجلد الصور لخيارات تصدير Markdown
+## Schritt 3: Legen Sie den Bilderordner für Markdown-Exportoptionen fest
 
 ```csharp
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
 ```
 
- نقوم بإنشاء مثيل`MarkdownSaveOptions` وقم بتعيين المسار إلى مجلد الصور باستخدام ملف`ImagesFolder` ملكية. تأكد من تحديد المسار الصحيح للمجلد حيث تريد حفظ الصور المصدرة.
+ Wir erstellen eine Instanz von`MarkdownSaveOptions` und legen Sie den Pfad zum Bilderordner mit fest`ImagesFolder` Eigentum. Stellen Sie sicher, dass Sie den richtigen Pfad zu dem Ordner angeben, in dem Sie die exportierten Bilder speichern möchten.
 
-## الخطوة 4: احفظ المستند باستخدام خيارات تصدير Markdown
+## Schritt 4: Speichern Sie das Dokument mit den Markdown-Exportoptionen
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())
      doc. Save(stream, saveOptions);
 ```
 
-نقوم بحفظ المستند في تدفق الذاكرة باستخدام خيارات تصدير Markdown المحددة. يمكنك بعد ذلك استخدام التدفق لإجراء عمليات أخرى ، مثل حفظ محتوى Markdown في ملف.
+Wir speichern das Dokument mithilfe der angegebenen Markdown-Exportoptionen in einem Speicherstream. Anschließend können Sie den Flow verwenden, um andere Vorgänge auszuführen, beispielsweise das Speichern von Markdown-Inhalten in einer Datei.
 
-### مثال على كود المصدر لتعيين مجلد الصور لـ MarkdownSaveOptions مع Aspose.Words for .NET
+### Beispielquellcode zum Festlegen des Bildordners für MarkdownSaveOptions mit Aspose.Words für .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Der Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 Document doc = new Document(dataDir + "Image bullet points.docx");
@@ -58,4 +58,4 @@ using (MemoryStream stream = new MemoryStream())
      doc. Save(stream, saveOptions);
 ```
 
-يوضح رمز المصدر هذا كيفية تحميل مستند يحتوي على صور ثم تعيين مجلد الصور لخيارات تصدير Markdown. باستخدام الخيارات المحددة ، يتم حفظ المستند بعد ذلك في تدفق الذاكرة. يتيح لك هذا تخصيص موقع مجلد الصور عند تصدير محتوى Markdown.
+Dieser Quellcode zeigt, wie Sie ein Dokument laden, das Bilder enthält, und dann den Bilderordner für Markdown-Exportoptionen festlegen. Unter Verwendung der angegebenen Optionen wird das Dokument dann in einem Speicherstream gespeichert. Dadurch können Sie den Speicherort des Bilderordners beim Exportieren von Markdown-Inhalten anpassen.

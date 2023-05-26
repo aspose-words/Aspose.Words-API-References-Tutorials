@@ -1,59 +1,59 @@
 ---
-title: احصل على أسماء حقول دمج المراسلات
-linktitle: احصل على أسماء حقول دمج المراسلات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على أسماء حقول دمج البريد في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+title: Ottieni i nomi dei campi di stampa unione
+linktitle: Ottieni i nomi dei campi di stampa unione
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come ottenere i nomi dei campi di stampa unione nei documenti di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/get-mail-merge-field-names/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "Get Merge Field Names" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Ecco una guida passo-passo per spiegare il codice sorgente C# di seguito, che utilizza la funzione "Ottieni nomi dei campi di unione" di Aspose.Words per .NET. Assicurati di seguire attentamente ogni passaggio per ottenere i risultati desiderati.
 
-## الخطوة 1: إعداد دليل المستند
+## Passaggio 1: impostazione della directory dei documenti
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "YOUR DOCUMENT DIRECTORY" con il percorso appropriato alla directory dei tuoi documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## Passaggio 2: caricamento del documento
 
-تتمثل الخطوة الأولى في تحميل المستند حيث تريد الحصول على أسماء حقول الدمج.
+Il primo passaggio consiste nel caricare il documento in cui si desidera ottenere i nomi dei campi di unione.
 
 ```csharp
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
 ```
 
-تأكد من استبدال "ملف المستند" باسم ملفك الخاص.
+Assicurati di sostituire "IL TUO FILE DOCUMENTO" con il nome del tuo file.
 
-## الخطوة 3: احصل على أسماء حقول الدمج
+## Passaggio 3: ottieni i nomi dei campi di unione
 
- نحن نستخدم ال`GetFieldNames()` طريقة للحصول على مصفوفة تحتوي على أسماء حقول الدمج الموجودة في المستند.
+ Noi usiamo il`GetFieldNames()` metodo per ottenere un array contenente i nomi dei campi di unione presenti nel documento.
 
 ```csharp
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
- ال`fieldNames` متغير يحتوي الآن على أسماء حقول الدمج.
+ IL`fieldNames` La variabile ora contiene i nomi dei campi di unione.
 
-### مثال رمز المصدر للحصول على دمج أسماء الحقول مع Aspose.Words for .NET
+### Esempio di codice sorgente per ottenere i nomi dei campi di unione con Aspose.Words per .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+// Carica il documento.
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
 
-// احصل على أسماء حقول الدمج.
+// Ottieni i nomi dei campi di unione.
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 
-// عرض عدد حقول الدمج.
+// Visualizza il numero di campi di unione.
 Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.");
 ```
 
- في هذا المثال ، قمنا بتحميل مستند ، وحصلنا على أسماء حقول الدمج باستخدام امتداد`GetFieldNames()` الطريقة ، وعرض عدد حقول الدمج الموجودة في المستند.
+ In questo esempio, abbiamo caricato un documento, ottenuto i nomi dei campi di unione utilizzando l'estensione`GetFieldNames()` metodo e visualizzato il numero di campi di unione presenti nel documento.
 
-هذا يختتم دليلنا حول استخدام ميزة "الحصول على أسماء الحقول المدمجة" مع Aspose.Words for .NET.
+Questo conclude la nostra guida sull'utilizzo della funzione "Ottieni nomi dei campi di unione" con Aspose.Words per .NET.

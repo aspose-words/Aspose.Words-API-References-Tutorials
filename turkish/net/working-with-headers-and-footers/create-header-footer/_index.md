@@ -1,42 +1,42 @@
 ---
-title: إنشاء تذييل الرأس
-linktitle: إنشاء تذييل الرأس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء رؤوس الصفحات وتذييلاتها في مستندات Word باستخدام Aspose.Words for .NET. تخصيص الرؤوس والتذييلات لكل صفحة.
+title: Üst Bilgi Alt Bilgi Oluştur
+linktitle: Üst Bilgi Alt Bilgi Oluştur
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile Word belgelerinizde üst bilgileri ve alt bilgileri nasıl oluşturacağınızı öğrenin. Her sayfa için üst bilgileri ve alt bilgileri özelleştirin.
 type: docs
 weight: 10
 url: /tr/net/working-with-headers-and-footers/create-header-footer/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية لإنشاء رؤوس وتذييلات باستخدام Aspose.Words لوظائف .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Aspose.Words for .NET işlevselliğini kullanarak üst bilgiler ve alt bilgiler oluşturmak için aşağıdaki C# kaynak kodunu açıklayan adım adım bir kılavuz. Bu kodu kullanmadan önce Aspose.Words kütüphanesini projenize dahil ettiğinizden emin olun.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## 1. Adım: Belge dizini yolunu ayarlayın
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
+Düzenlenen belgenin kaydedileceği belgeler dizininizin doğru yolunu belirttiğinizden emin olun.
 
-## الخطوة 2: قم بإنشاء مستند ومولد مستندات
+## 2. Adım: Bir belge ve bir belge oluşturucu oluşturun
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- هنا نقوم بإنشاء مثيل لـ`Document` فئة ومثيل`DocumentBuilder` فئة تسمح لنا بمعالجة المستند وإضافة عناصر.
+ Burada bir örneğini oluşturuyoruz`Document` sınıf ve örneğinin bir örneği`DocumentBuilder` belgeyi manipüle etmemize ve öğeler eklememize izin verecek sınıf.
 
-## الخطوة 3: تعيين معلمات الصفحة والعنوان الأول
+## 3. Adım: Sayfa parametrelerini ve ilk başlığı ayarlayın
 
 ```csharp
 Section currentSection = builder.CurrentSection;
 PageSetup pageSetup = currentSection.PageSetup;
 
-// حدد ما إذا كنا نريد أن تختلف رؤوس / تذييلات الصفحة الأولى عن الصفحات الأخرى.
-// يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter لتحديدها
-// رؤوس / تذييلات مختلفة للصفحات الفردية والزوجية.
+// İlk sayfanın üstbilgilerinin/altbilgilerinin diğer sayfalardan farklı olmasını isteyip istemediğimizi belirtin.
+// Belirtmek için PageSetup.OddAndEvenPagesHeaderFooter özelliğini de kullanabilirsiniz.
+// tek ve çift sayfalar için farklı üst bilgiler/alt bilgiler.
 pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
 
@@ -53,9 +53,9 @@ pageSetup.HeaderDistance = 20;
 builder. MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 ```
 
-نقوم بتعيين معلمات الصفحة ، بما في ذلك مسافة الرأس ، ثم ننتقل إلى العنوان الرئيسي (`HeaderPrimary`). نستخدم منشئ المستندات لإضافة نص وتنسيق العنوان.
+Başlık mesafesi dahil sayfa parametrelerini ayarlıyoruz ve ardından ana başlığa geçiyoruz (`HeaderPrimary`). Metin eklemek ve başlığı biçimlendirmek için belge oluşturucuyu kullanıyoruz.
 
-## الخطوة 4: أدخل صورة ونصًا في العنوان الرئيسي
+## 4. Adım: Ana başlığa bir resim ve metin ekleyin
 
 ```csharp
 builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
@@ -68,9 +68,9 @@ builder.Write("Aspose.Words - Building headers/footers.");
 builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 ```
 
-نستخدم منشئ المستندات لإدراج صورة في الزاوية اليسرى العلوية من الرأس الرئيسي ، ثم نضيف بعض النص المحاذي لليمين.
+Ana başlığın sol üst köşesine bir resim eklemek için belge oluşturucuyu kullanıyoruz, ardından sağa hizalanmış bir metin ekliyoruz.
 
-## الخطوة 5: قم بإدراج جدول في التذييل الرئيسي
+## 5. Adım: Ana altbilgiye bir tablo ekleyin
 
 ```csharp
 builder.StartTable();
@@ -102,7 +102,7 @@ builder.EndTable();
 builder.MoveToDocumentEnd();
 ```
 
-## الخطوة 6: إضافة صفحة جديدة وتعيين الرؤوس / التذييلات
+## 6. Adım: Yeni bir sayfa ekleyin ve üst bilgileri/alt bilgileri ayarlayın
 
 ```csharp
 builder. InsertBreak(BreakType.PageBreak);
@@ -111,17 +111,17 @@ builder.InsertBreak(BreakType.SectionBreakNewPage);
 currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-//لا يحتاج هذا القسم إلى رأس / تذييل مختلف للصفحة الأولى ، نحتاج فقط إلى صفحة عنوان واحدة في المستند ،
-// وقد تم بالفعل تحديد رأس / تذييل الصفحة في القسم السابق.
+//Bu bölüm, ilk sayfa için farklı bir üstbilgi/altbilgiye ihtiyaç duymaz, belgede yalnızca bir başlık sayfasına ihtiyacımız vardır,
+// ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde tanımlanmıştır.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// يعرض هذا القسم رؤوس / تذييلات القسم السابق افتراضيًا ، استدعاء currentSection.HeadersFooters.LinkToPrevious (خطأ) لكسر هذا الرابط ،
-// يختلف عرض الصفحة بالنسبة للقسم الجديد ، لذلك نحتاج إلى تعيين عروض خلايا مختلفة لجدول تذييل الصفحة.
+// Bu bölüm, önceki bölümün üstbilgilerini/altbilgilerini varsayılan olarak görüntüler, bu bağlantıyı kesmek için currentSection.HeadersFooters.LinkToPrevious(false) öğesini çağırın,
+// yeni bölüm için sayfa genişliği farklıdır, bu nedenle alt bilgi tablosu için farklı hücre genişlikleri ayarlamamız gerekir.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-// إذا أردنا استخدام الرؤوس / التذييلات الموجودة بالفعل لهذا القسم ،
-// ولكن مع بعض التغييرات الطفيفة ، قد يكون من المنطقي نسخ الرؤوس / التذييلات
-// من القسم السابق وتطبيق التغييرات اللازمة حيث نريدها.
+// Bu bölüm için zaten var olan üst bilgileri/alt bilgileri kullanmak istiyorsak,
+// ancak birkaç küçük değişiklikle üstbilgileri/altbilgileri kopyalamak mantıklı olabilir
+// önceki bölümden ve gerekli değişiklikleri istediğimiz yere uygulayın.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -130,16 +130,16 @@ Row row = primaryFooter.Tables[0].FirstRow;
 row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-// احفظ المستند
+// belgeyi kaydet
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
- نضيف فاصل صفحة وفاصل مقطعي لإنشاء صفحة جديدة حيث ستكون الرؤوس / التذييلات الأولية مرئية. قمنا بتعيين معلمات القسم الجديد ، ثم نستخدم الامتداد`CopyHeadersFootersFromPreviousSection`طريقة لنسخ الرؤوس / التذييلات من القسم السابق. أخيرًا ، قمنا بتعيين عرض الخلية المناسب لجدول التذييل الرئيسي وحفظنا المستند.
+ Birincil üstbilgilerin/altbilgilerin görüneceği yeni bir sayfa oluşturmak için bir sayfa sonu ve bir bölüm sonu ekliyoruz. Yeni bölüm için parametreleri ayarlıyoruz, ardından`CopyHeadersFootersFromPreviousSection`Önceki bölümden üstbilgileri/altbilgileri kopyalama yöntemi. Son olarak ana altbilgi tablosu için uygun hücre genişliklerini ayarlayıp belgeyi kaydediyoruz.
 
-### مثال على كود المصدر لإنشاء الرؤوس والتذييلات باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile üst bilgiler ve alt bilgiler oluşturmak için örnek kaynak kodu
 
 ```csharp
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 	
 	Document doc = new Document();
@@ -147,9 +147,9 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	Section currentSection = builder.CurrentSection;
 	PageSetup pageSetup = currentSection.PageSetup;
-	// حدد ما إذا كنا نريد أن تختلف رؤوس / تذييلات الصفحة الأولى عن الصفحات الأخرى.
-	// يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter لتحديدها
-	// رؤوس / تذييلات مختلفة للصفحات الفردية والزوجية.
+	// İlk sayfanın üstbilgilerinin/altbilgilerinin diğer sayfalardan farklı olmasını isteyip istemediğimizi belirtin.
+	// Belirtmek için PageSetup.OddAndEvenPagesHeaderFooter özelliğini de kullanabilirsiniz.
+	// tek ve çift sayfalar için farklı üst bilgiler/alt bilgiler.
 	pageSetup.DifferentFirstPageHeaderFooter = true;
 	pageSetup.HeaderDistance = 20;
 
@@ -165,8 +165,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 	pageSetup.HeaderDistance = 20;
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	// أدخل صورة موضوعة في الزاوية العلوية / اليسرى من الرأس.
-	// تم ضبط المسافة من الحواف العلوية / اليسرى للصفحة على 10 نقاط.
+	// Başlığın üst/sol köşesine konumlandırılmış bir görüntü ekleyin.
+	// Sayfanın üst/sol kenarlarından uzaklık 10 punto olarak ayarlanmıştır.
 	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
 		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
@@ -176,8 +176,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	// نستخدم جدولاً يحتوي على خليتين لعمل جزء واحد من النص على السطر (مع ترقيم الصفحات).
-	// تتم محاذاة إلى اليسار ، ويتم محاذاة الجزء الآخر من النص (مع حقوق النشر) إلى اليمين.
+	// Satırdaki metnin bir bölümünü (sayfa numaralandırmalı) yapmak için iki hücreli bir tablo kullanıyoruz.
+	// Sola hizalanacak ve metnin diğer kısmı (telif hakkı ile) sağa hizalanacak.
 	builder.StartTable();
 
 	builder.CellFormat.ClearFormatting();
@@ -186,7 +186,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	// يستخدم حقلي PAGE و NUMPAGES لحساب تلقائي لرقم الصفحة الحالية والعديد من الصفحات.
+	// Geçerli sayfa numarasını ve birçok sayfayı otomatik olarak hesaplamak için PAGE ve NUMPAGES alanlarını kullanır.
 	builder.Write("Page ");
 	builder.InsertField("PAGE", "");
 	builder.Write(" of ");
@@ -207,25 +207,25 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.MoveToDocumentEnd();
 
-	// قم بعمل فاصل صفحة لإنشاء صفحة ثانية تظهر عليها الرؤوس / التذييلات الأساسية.
+	// Birincil üstbilgilerin/altbilgilerin görüleceği ikinci bir sayfa oluşturmak için bir sayfa sonu yapın.
 	builder.InsertBreak(BreakType.PageBreak);
 	builder.InsertBreak(BreakType.SectionBreakNewPage);
 
 	currentSection = builder.CurrentSection;
 	pageSetup = currentSection.PageSetup;
 	pageSetup.Orientation = Orientation.Landscape;
-	//لا يحتاج هذا القسم إلى رأس / تذييل مختلف للصفحة الأولى ، فنحن نحتاج فقط إلى صفحة عنوان واحدة في المستند ،
-	// وقد تم بالفعل تحديد رأس / تذييل الصفحة في القسم السابق.
+	//Bu bölüm farklı bir ilk sayfa üstbilgisine/altbilgisine ihtiyaç duymaz, belgede yalnızca bir başlık sayfasına ihtiyacımız vardır,
+	// ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde tanımlanmıştır.
 	pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// يعرض هذا القسم الرؤوس / التذييلات من القسم السابق
-	// بشكل افتراضي ، قم باستدعاء currentSection.HeadersFooters.LinkToPrevious (false) لإلغاء عرض هذه الصفحة
-	// يختلف عن القسم الجديد ، وبالتالي نحتاج إلى تعيين عروض خلايا مختلفة لجدول تذييل.
+	// Bu bölüm, önceki bölümden üstbilgileri/altbilgileri görüntüler
+	// varsayılan olarak bu sayfa genişliğini iptal etmek için currentSection.HeadersFooters.LinkToPrevious(false) öğesini çağırın
+	// yeni bölüm için farklıdır ve bu nedenle altbilgi tablosu için farklı hücre genişlikleri ayarlamamız gerekir.
 	currentSection.HeadersFooters.LinkToPrevious(false);
 
-	// إذا أردنا استخدام مجموعة الرأس / التذييل الموجودة بالفعل لهذا القسم.
-	// ولكن مع بعض التعديلات الطفيفة ، قد يكون من المناسب نسخ الرؤوس / التذييلات
-	// من القسم السابق وتطبيق التعديلات اللازمة حيث نريدها.
+	// Bu bölüm için zaten var olan üst bilgi/alt bilgi setini kullanmak istiyorsak.
+	// Ancak bazı küçük değişikliklerle, üstbilgileri/altbilgileri kopyalamak uygun olabilir.
+	// önceki bölümden ve istediğimiz yerde gerekli değişiklikleri uygulayın.
 	CopyHeadersFootersFromPreviousSection(currentSection);
 
 	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];

@@ -1,26 +1,26 @@
 ---
-title: قراءة خصائص Active XControl
-linktitle: قراءة خصائص Active XControl
-second_title: Aspose.Words لمراجع .NET API
-description: اقرأ خصائص عناصر تحكم ActiveX في مستند Word باستخدام Aspose.Words for .NET.
+title: 读取活动 XControl 属性
+linktitle: 读取活动 XControl 属性
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 读取 Word 文档中 ActiveX 控件的属性。
 type: docs
 weight: 10
 url: /zh/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
 
-في هذا الدليل التفصيلي ، سنوضح لك كيفية قراءة خصائص عناصر تحكم ActiveX في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 读取 Word 文档中 ActiveX 控件的属性。我们将为您提供完整的源代码，并向您展示如何格式化降价输出。
 
-## الخطوة 1: تهيئة المستند
+## 第一步：文档初始化
 
- الخطوة الأولى هي تهيئة ملف`Document` الكائن عن طريق تحميل مستند Word الذي يحتوي على عناصر تحكم ActiveX. تأكد من استبدال`MyDir` بالمسار الفعلي للدليل الذي يحتوي على المستند.
+第一步是初始化`Document`通过加载包含 ActiveX 控件的 Word 文档来创建对象。务必更换`MyDir`包含文档的目录的实际路径。
 
 ```csharp
 Document doc = new Document(MyDir + "ActiveX controls.docx");
 ```
 
-## الخطوة 2: استرداد عناصر تحكم ActiveX
+## 步骤 2：恢复 ActiveX 控件
 
- في هذه الخطوة ، سوف نكرر كل منها`Shape` من المستند لاسترداد عناصر تحكم ActiveX وقراءة خصائصها.
+在这一步中，我们将遍历每个`Shape`检索 ActiveX 控件并读取它们的属性。
 
 ```csharp
 string properties = "";
@@ -49,9 +49,9 @@ properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes
 Console.WriteLine("\n" + properties);
 ```
 
-### مثال على شفرة المصدر لـ Read Active XControl Properties باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 读取活动 XControl 属性的示例源代码
 
-فيما يلي التعليمات البرمجية المصدر الكاملة لقراءة خصائص عناصر تحكم ActiveX باستخدام Aspose.Words for .NET:
+下面是使用 Aspose.Words for .NET 读取 ActiveX 控件属性的完整源代码：
 
 ```csharp
 	Document doc = new Document(MyDir + "ActiveX controls.docx");

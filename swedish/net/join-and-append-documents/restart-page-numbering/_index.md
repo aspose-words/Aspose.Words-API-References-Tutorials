@@ -1,71 +1,71 @@
 ---
-title: أعد تشغيل ترقيم الصفحات
-linktitle: أعد تشغيل ترقيم الصفحات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إعادة تشغيل ترقيم الصفحات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Starta om sidnumrering
+linktitle: Starta om sidnumrering
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du startar om sidnumrering medan du ansluter och lägger till Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/restart-page-numbering/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة إعادة تشغيل ترقيم الصفحات في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء إعادة تشغيل ترقيم الصفحات في المستند المصدر.
+Denna handledning guidar dig genom processen för att använda funktionen Starta om sidnumrering i Aspose.Words för .NET. Med den här funktionen kan du ansluta och lägga till Word-dokument samtidigt som du startar om sidnumreringen i källdokumentet.
 
-## المتطلبات الأساسية
+## Förutsättningar
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Innan du börjar, se till att du har följande:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words för .NET installerat. Du kan ladda ner den från Asposes webbplats eller installera den via NuGet.
+2. Visual Studio eller någon annan C#-utvecklingsmiljö.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Steg 1: Initiera dokumentkatalogerna
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir` variabel till sökvägen där dina dokument finns.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Steg 2: Ladda käll- och måldokumenten
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: اضبط المستند المصدر على إعادة تشغيل ترقيم الصفحات
+## Steg 3: Ställ in källdokumentet på att starta om sidnumrering
 
- لإعادة تشغيل ترقيم الصفحات في المستند المصدر ، تحتاج إلى ضبط`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.NewPage` وضبط`RestartPageNumbering` ملكية ل`true`.
+ För att starta om sidnumreringen i källdokumentet måste du ställa in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.NewPage` och ställ in`RestartPageNumbering` egendom till`true`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بمستند الوجهة
+## Steg 4: Bifoga källdokumentet till destinationsdokumentet
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Nu kan du lägga till källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. De`ImportFormatMode.KeepSourceFormatting` parametern säkerställer att källformateringen bevaras under tilläggsåtgärden.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند النهائي
+## Steg 5: Spara det slutliga dokumentet
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة إعادة تشغيل ترقيم الصفحات باستخدام ملحق`Save` طريقة`Document` فصل.
+ Slutligen, spara det sammanslagna dokumentet med funktionen Starta om sidnumrering aktiverad med hjälp av`Save` metod för`Document` klass.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RestartPageNumbering.docx");
 ```
 
-### مثال على شفرة المصدر لإعادة تشغيل ترقيم الصفحات باستخدام Aspose.Words for .NET
+### Exempel på källkod för Starta om sidnumrering med Aspose.Words för .NET
 
-إليك شفرة المصدر الكاملة لميزة "إعادة تشغيل ترقيم الصفحات" في C # باستخدام Aspose.Words for .NET:
+Här är den fullständiga källkoden för funktionen "Starta om sidnumrering" i C# med Aspose.Words för .NET:
  
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -76,4 +76,4 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.RestartPageNumbering.docx");
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.RestartPageNumbering.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة إعادة تشغيل ترقيم الصفحات باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع إعادة تشغيل ترقيم الصفحات في المستند المصدر.
+Det är allt! Du har framgångsrikt implementerat funktionen Starta om sidnumrering med Aspose.Words för .NET. Det slutliga dokumentet kommer att innehålla det sammanslagna innehållet med sidnumreringen omstartad i källdokumentet.

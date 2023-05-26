@@ -1,18 +1,18 @@
 ---
-title: ملف PDF موقع رقميًا باستخدام حامل الشهادة
-linktitle: ملف PDF موقع رقميًا باستخدام حامل الشهادة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية توقيع ملف PDF رقميًا باستخدام حامل شهادة مع Aspose.Words for .NET.
+title: Pdf signé numériquement à l'aide du titulaire du certificat
+linktitle: Pdf signé numériquement à l'aide du titulaire du certificat
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à signer numériquement un PDF à l'aide d'un détenteur de certificat avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات إنشاء ملف PDF موقع رقميًا باستخدام شهادة مع Aspose.Words for .NET. يضيف التوقيع الرقمي طبقة من الأمان والتكامل إلى وثيقة PDF. اتبع الخطوات التالية:
+Dans ce tutoriel, nous vous guiderons à travers les étapes pour créer un PDF signé numériquement à l'aide d'un certificat avec Aspose.Words pour .NET. La signature numérique ajoute une couche de sécurité et d'intégrité au document PDF. Suivez les étapes ci-dessous :
 
-## الخطوة 1: إنشاء المستند وإضافة المحتوى
+## Étape 1 : création du document et ajout de contenu
 
-ابدأ بإنشاء مثيل لفئة المستند:
+Commencez par créer une instance de la classe Document :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -20,19 +20,19 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أضف محتوى إلى المستند
+## Étape 2 : Ajouter du contenu au document
 
- ثم استخدم ملف`DocumentBuilder` لإضافة محتوى إلى المستند. على سبيل المثال ، لإضافة فقرة تحتوي على النص "Test Signed PDF" ، استخدم امتداد`Writeln` طريقة:
+ Utilisez ensuite le`DocumentBuilder` pour ajouter du contenu au document. Par exemple, pour ajouter un paragraphe contenant le texte "Tester le PDF signé", utilisez la`Writeln` méthode:
 
 ```csharp
 builder.Writeln("Test Signed PDF.");
 ```
 
-يمكنك إضافة عناصر محتوى أخرى حسب الحاجة.
+Vous pouvez ajouter d'autres éléments de contenu si nécessaire.
 
-## الخطوة 3: تعيين خيارات حفظ PDF
+## Étape 3 : Définir les options d'enregistrement PDF
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وحدد تفاصيل التوقيع الرقمي:
+Créez une instance de la classe PdfSaveOptions et spécifiez les détails de la signature numérique :
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -43,27 +43,27 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-تأكد من تحديد المسار الصحيح لشهادتك وكلمة المرور المرتبطة بها. يمكنك أيضًا تخصيص سبب التوقيع وموقعه.
+Assurez-vous de spécifier le chemin correct vers votre certificat et le mot de passe associé. Vous pouvez également personnaliser la raison et l'emplacement de la signature.
 
-## الخطوة 4: احفظ المستند بتنسيق PDF موقّع رقميًا
+## Étape 4 : Enregistrer le document en tant que PDF signé numériquement
 
- استخدم ال`Save` طريقة لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ:
+ Utilisez le`Save` méthode pour enregistrer le document au format PDF en spécifiant les options d'enregistrement :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF الموقع رقميًا.
+Assurez-vous de spécifier le chemin d'accès correct pour enregistrer le PDF signé numériquement.
 
-باتباع هذه الخطوات ، يمكنك بسهولة إنشاء ملف PDF موقّع رقميًا مع شهادة باستخدام Aspose.Words for .NET.
+En suivant ces étapes, vous pouvez facilement créer un PDF signé numériquement avec un certificat en utilisant Aspose.Words pour .NET.
 
-### مثال على شفرة المصدر لـ Pdf الموقّع رقميًا باستخدام حامل الشهادة باستخدام Aspose.Words for .NET
+### Exemple de code source pour un PDF signé numériquement à l'aide d'un détenteur de certificat à l'aide d'Aspose.Words pour .NET
 
-فيما يلي رمز المصدر الكامل لـ Pdf الموقّع رقميًا باستخدام حامل الشهادة من مستند باستخدام Aspose.Words for .NET:
+Voici le code source complet du Pdf signé numériquement à l'aide du titulaire du certificat d'un document utilisant Aspose.Words pour .NET :
 
 ```csharp
 
-            // المسار إلى دليل المستندات.
+            // Chemin d'accès au répertoire des documents.
 			string dataDir = "YOUR DOCUMENT DIRECTORY";
             Document doc = new Document();
             DocumentBuilder builder = new DocumentBuilder(doc);

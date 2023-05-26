@@ -1,29 +1,29 @@
 ---
-title: اختزال الصور
-linktitle: اختزال الصور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تقليل دقة الصورة عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+title: Görüntüleri Alt Örnekleme
+linktitle: Görüntüleri Alt Örnekleme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile PDF'ye dönüştürürken görüntü çözünürlüğünü nasıl azaltacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/downsampling-images/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الخطوات لتقليل دقة الصورة عند التحويل إلى PDF باستخدام Aspose.Words for .NET. هذا يقلل من حجم ملف PDF الذي تم إنشاؤه. اتبع الخطوات التالية:
+Bu eğitimde, Aspose.Words for .NET ile PDF'ye dönüştürürken görüntü çözünürlüğünü düşürme adımlarında size yol göstereceğiz. Bu, oluşturulan PDF dosyasının boyutunu azaltır. Aşağıdaki adımları takip et:
 
-## الخطوة 1: تحميل المستند
+## 1. Adım: Belgeyi yükleme
 
-ابدأ بتحميل المستند الذي تريد تحويله إلى PDF:
+PDF'ye dönüştürmek istediğiniz belgeyi yükleyerek başlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح للمستند الخاص بك.
+Belgenize giden doğru yolu belirttiğinizden emin olun.
 
-## الخطوة 2: تكوين خيارات حفظ PDF
+## 2. Adım: PDF kaydetme seçeneklerini yapılandırın
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وقم بتعيين خيارات تصغير حجم الصورة:
+PdfSaveOptions sınıfının bir örneğini oluşturun ve görüntü küçültme seçeneklerini ayarlayın:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -32,28 +32,28 @@ DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- ال`Resolution` تحدد الخاصية الدقة المستهدفة للصور و`ResolutionThreshold` تحدد الخاصية الحد الأدنى من الدقة التي لن يتم تصغير الصور دونها.
+ bu`Resolution` özelliği, görüntülerin hedef çözünürlüğünü belirtir ve`ResolutionThreshold` özelliği, altındaki görüntülerin küçültülmeyeceği minimum çözünürlüğü belirtir.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## 3. Adım: Belgeyi PDF'ye Dönüştürün
 
- استخدم ال`Save` طريقة لتحويل المستند إلى PDF مع تحديد خيارات الحفظ:
+ Kullan`Save` kaydetme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemi:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Dönüştürülen PDF'yi kaydetmek için doğru yolu belirttiğinizden emin olun.
 
-### مثال على شفرة المصدر لاختزال الصور باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Görüntüleri Alt Örnekleme için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	//يمكننا تعيين حد أدنى للاختزال.
-	// ستمنع هذه القيمة الصورة الثانية في مستند الإدخال من الاختزال.
+	//Aşağı örnekleme için minimum bir eşik belirleyebiliriz.
+	// Bu değer, girdi belgesindeki ikinci görüntünün altörneklenmesini önleyecektir.
 	PdfSaveOptions saveOptions = new PdfSaveOptions
 	{
 		DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
@@ -63,6 +63,6 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptio
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة تقليل دقة الصورة عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+Bu adımları izleyerek, Aspose.Words for .NET ile PDF'ye dönüştürürken görüntü çözünürlüğünü kolayca azaltabilirsiniz.
 
 

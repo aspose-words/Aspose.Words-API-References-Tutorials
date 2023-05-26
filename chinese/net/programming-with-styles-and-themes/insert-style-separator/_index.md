@@ -1,28 +1,28 @@
 ---
-title: إدراج فاصل النمط
-linktitle: إدراج فاصل النمط
-second_title: Aspose.Words لمراجع .NET API
-description: تعلم كيفية إنشاء مستندات بأنماط مخصصة وإدراج فواصل الأنماط لتنسيق دقيق واحترافي.
+title: 插入样式分隔符
+linktitle: 插入样式分隔符
+second_title: Aspose.Words for .NET API 参考
+description: 学习使用自定义样式创建文档并插入样式分隔符以实现精确、专业的格式设置。
 type: docs
 weight: 10
 url: /zh/net/programming-with-styles-and-themes/insert-style-separator/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لإدخال فاصل نمط في مستند باستخدام Aspose.Words for .NET. سنقوم بإنشاء مستند جديد وتحديد الأنماط المخصصة وإدراج فاصل النمط.
+在本教程中，我们将探索提供的 C# 源代码，以使用 Aspose.Words for .NET 在文档中插入样式分隔符。我们将创建一个新文档，定义自定义样式并插入样式分隔符。
 
-## الخطوة الأولى: تهيئة البيئة
+## 第 1 步：设置环境
 
-تأكد من قيامك بإعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+确保您已经使用 Aspose.Words for .NET 设置了您的开发环境。确保您已经添加了必要的引用并导入了适当的命名空间。
 
-## الخطوة 2: إنشاء كائن مستند جديد
+## 第 2 步：创建一个新的 Document 对象
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- في هذه الخطوة ، نقوم بإنشاء ملف`Document` كائن وما يرتبط بها`DocumentBuilder` هدف.
+在这一步中，我们创建一个新的`Document`对象和关联的`DocumentBuilder`目的。
 
-## الخطوة 3: إنشاء وتكوين النمط المخصص
+## 第 3 步：创建和配置自定义样式
 
 ```csharp
 Style paraStyle = builder.Document.Styles.Add(StyleType.Paragraph, "MyParaStyle");
@@ -31,9 +31,9 @@ paraStyle.Font.Size = 8;
 paraStyle.Font.Name = "Arial";
 ```
 
-في هذه الخطوة ، نقوم بإنشاء نمط فقرة مخصص باسم "MyParaStyle" وقمنا بتعيين خصائص الخط الخاصة به.
+在这一步中，我们创建一个名为“MyParaStyle”的自定义段落样式并设置其字体属性。
 
-## الخطوة 4: إدخال فاصل الأنماط
+## 第 4 步：插入样式分隔符
 
 ```csharp
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
@@ -43,19 +43,19 @@ builder.ParagraphFormat.StyleName = paraStyle.Name;
 builder.Write("This is text with some other formatting");
 ```
 
-في هذه الخطوة ، قمنا بتعيين نمط الفقرة على "العنوان 1" ، وكتابة بعض النص بهذا النمط ، ثم نقوم بإدراج فاصل نمط. ثم قمنا بتعيين نمط الفقرة على نمطنا المخصص "MyParaStyle" وكتابة بعض النص بهذا النمط.
+在这一步中，我们将段落样式设置为“标题 1”，用这种样式写一些文字，然后插入一个样式分隔符。然后我们将段落样式设置为我们的自定义样式“MyParaStyle”，并使用这种样式编写一些文本。
 
-## الخطوة 5: احفظ المستند
+## 第 5 步：保存文档
 
-في هذه الخطوة الأخيرة ، يمكنك حفظ المستند الذي تم إنشاؤه وفقًا لاحتياجاتك.
+在这最后一步中，您可以根据需要保存创建的文档。
 
-يمكنك تشغيل التعليمات البرمجية المصدر لإدراج فاصل نمط في المستند. يتيح لك ذلك إنشاء أقسام نصية بأنماط مختلفة وتخصيص مظهر المستند.
+您可以运行源代码以将样式分隔符插入到文档中。这使您可以创建具有不同样式的文本部分并自定义文档的外观。
 
-### نموذج التعليمات البرمجية المصدر لـ Insert Style Separator باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 插入样式分隔符的示例源代码 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document();
@@ -66,12 +66,12 @@ paraStyle.Font.Bold = false;
 paraStyle.Font.Size = 8;
 paraStyle.Font.Name = "Arial";
 
-// إلحاق نص بنمط "العنوان 1".
+//附加带有“标题 1”样式的文本。
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 builder.Write("Heading 1");
 builder.InsertStyleSeparator();
 
-// إلحاق نص بنمط آخر.
+//使用另一种样式附加文本。
 builder.ParagraphFormat.StyleName = paraStyle.Name;
 builder.Write("This is text with some other formatting ");
 
@@ -80,12 +80,12 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
         
 ```
 
-## خاتمة
+## 结论
 
-في هذا البرنامج التعليمي ، تعلمنا كيفية إدراج فاصل نمط في مستند باستخدام Aspose.Words for .NET. أنشأنا مستندًا جديدًا ، وحددنا نمطًا مخصصًا ، واستخدمنا فاصل النمط لتمييز أقسام النص بأنماط مختلفة.
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 在文档中插入样式分隔符。我们创建了一个新文档，定义了自定义样式，并使用样式分隔符来区分具有不同样式的文本部分。
 
-يوفر استخدام فواصل الأنماط مرونة إضافية عند تنسيق مستنداتك. يساعد هذا في الحفاظ على التناسق البصري مع السماح بالتنوع الأسلوبي.
+在格式化文档时使用样式分隔符提供了额外的灵活性。这有助于保持视觉一致性，同时允许风格变化。
 
-يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية لإدارة الأنماط في مستنداتك. يمكنك استكشاف هذه المكتبة بشكل أكبر لتخصيص مظهر مستنداتك وإنشاء نتائج احترافية.
+Aspose.Words for .NET 提供了一个强大的 API 来管理文档中的样式。您可以进一步探索此库以自定义文档的外观并创建专业的结果。
 
-تذكر أن تحفظ المستند الخاص بك بعد إدراج فاصل الأنماط.
+请记住在插入样式分隔符后保存文档。

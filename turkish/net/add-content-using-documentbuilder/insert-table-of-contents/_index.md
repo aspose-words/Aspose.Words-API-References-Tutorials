@@ -1,21 +1,21 @@
 ---
-title: أدخل جدول المحتويات
-linktitle: أدخل جدول المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج جدول محتويات في مستندات Word باستخدام Aspose.Words for .NET.
+title: İçindekiler Tablosu Ekle
+linktitle: İçindekiler Tablosu Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerine içindekiler tablosunu nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج جدول محتويات في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إنشاء جدول محتويات بالعناوين المناسبة وأرقام الصفحات.
+Bu kapsamlı öğreticide, Aspose.Words for .NET kullanarak bir Word belgesine içindekiler tablosunu nasıl ekleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, uygun başlıklara ve sayfa numaralarına sahip bir içindekiler tablosu oluşturabileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesi başlatın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,15 +23,15 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل جدول المحتويات
-بعد ذلك ، استخدم الأسلوب InsertTableOfContents لفئة DocumentBuilder لإدراج جدول محتويات. حدد خيارات التنسيق المطلوبة في الطريقة:
+## 2. Adım: Bir İçindekiler Tablosu Ekleyin
+Ardından, bir içindekiler tablosu eklemek için DocumentBuilder sınıfının InsertTableOfContents yöntemini kullanın. Yöntem içinde gerekli biçimlendirme seçeneklerini belirtin:
 
 ```csharp
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## الخطوة 3: إضافة محتوى المستند
-بعد إدراج جدول المحتويات ، أضف محتوى المستند الفعلي. قم بتعيين أنماط العناوين المناسبة باستخدام StyleIdentifier:
+## 3. Adım: Belge İçeriği Ekleyin
+İçindekiler tablosunu ekledikten sonra asıl belge içeriğini ekleyin. StyleIdentifier'ı kullanarak uygun başlık stillerini ayarlayın:
 
 ```csharp
 builder.InsertBreak(BreakType.PageBreak);
@@ -60,35 +60,35 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## الخطوة 4: تحديث جدول المحتويات
-سيكون جدول المحتويات المُدرج حديثًا فارغًا في البداية. لتعبئتها ، قم بتحديث الحقول في المستند:
+## 4. Adım: İçindekiler Tablosunu Güncelleyin
+Yeni eklenen içindekiler tablosu başlangıçta boş olacaktır. Doldurmak için belgedeki alanları güncelleyin:
 
 ```csharp
 doc.UpdateFields();
 ```
 
-## الخطوة 5: احفظ المستند
-بعد إدراج جدول المحتويات وتحديث الحقول ، احفظ المستند في ملف باستخدام طريقة Save من فئة Document:
+## 5. Adım: Belgeyi Kaydedin
+İçindekiler tablosunu ekledikten ve alanları güncelledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
 
-### مثال كود المصدر لإدراج جدول المحتويات باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال جدول محتويات باستخدام Aspose.Words for .NET:
+### Aspose.Words for .NET kullanarak İçindekiler Tablosu Ekleme için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak bir içindekiler tablosu eklemek için eksiksiz kaynak kodu burada:
 
 ```csharp
 
             string dataDir = "YOUR DOCUMENT DIRECTORY";
 			
-            // تهيئة DocumentBuilder بكائن المستند
+            // DocumentBuilder'ı Document nesnesiyle başlat
             Document doc = new Document();
             DocumentBuilder builder = new DocumentBuilder(doc);
             
-            // إدراج جدول المحتويات
+            // İçindekiler tablosu eklea
 			builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
             
-            // ابدأ محتوى المستند الفعلي في الصفحة الثانية.
+            // Asıl belge içeriğini ikinci sayfada başlatın.
             builder.InsertBreak(BreakType.PageBreak);
 
             builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
@@ -121,8 +121,8 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
             builder.Writeln("Heading 3.3");
 
             
-            // سيكون جدول المحتويات المُدرج حديثًا فارغًا في البداية.
-            // يجب أن يتم ملؤها عن طريق تحديث الحقول في المستند.
+            // Yeni eklenen içindekiler tablosu başlangıçta boş olacaktır.
+            // Belgedeki alanlar güncellenerek doldurulması gerekir.
             doc.UpdateFields();
             
 

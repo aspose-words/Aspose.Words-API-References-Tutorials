@@ -1,52 +1,52 @@
 ---
-title: أدخل ارتباط تشعبي
-linktitle: أدخل ارتباط تشعبي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الارتباطات التشعبية في مستندات Word باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Köprü Ekle
+linktitle: Köprü Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET Adım adım kılavuzunu kullanarak Word belgelerine köprüleri nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-hyperlink/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج الارتباطات التشعبية في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة ارتباطات تشعبية قابلة للنقر إلى مستنداتك.
+Bu kapsamlı eğitimde, Aspose.Words for .NET kullanarak bir Word belgesine nasıl köprü ekleneceğini öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda belgelerinize tıklanabilir köprüler ekleyebileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesi başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل ارتباط تشعبي
-بعد ذلك ، استخدم طريقة الكتابة الخاصة بفئة DocumentBuilder لإضافة نص وتنسيق الارتباط التشعبي عن طريق تعيين خصائص اللون والتسطير:
+## 2. Adım: Köprü Ekleme
+Ardından, metin eklemek için DocumentBuilder sınıfının Yazma yöntemini kullanın ve color ve underline özelliklerini ayarlayarak köprüyü biçimlendirin:
 
 ```csharp
 builder.Write("Please make sure to visit ");
 builder.Font.Color = Color.Blue;
 builder.Font.Underline = Underline.Single;
 
-builder.InsertHyperlink("Aspose Website", "http://www.aspose.com "، خطأ) ؛
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", yanlış);
 
 builder.Font.ClearFormatting();
 builder.Write(" for more information.");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الارتباط التشعبي ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 3. Adım: Belgeyi Kaydedin
+Köprüyü ekledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
-## مثال رمز مصدر لإدراج ارتباط تشعبي باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لإدخال ارتباط تشعبي باستخدام Aspose.Words for .NET:
+## Aspose.Words for .NET kullanarak Köprü Ekleme için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak köprü eklemek için eksiksiz kaynak kodu burada:
 
-تعتبر الارتباطات التشعبية طريقة فعالة لتحسين تفاعل وفائدة مستندات Word الخاصة بك. يمكن استخدامها للإشارة إلى موارد خارجية أو توفير معلومات إضافية أو إنشاء عناصر تنقل داخل المستند.
+Köprüler, Word belgelerinizin etkileşimini ve kullanışlılığını geliştirmenin güçlü bir yoludur. Dış kaynaklara başvurmak, ek bilgi sağlamak veya belge içinde gezinme öğeleri oluşturmak için kullanılabilirler.
 
 ```csharp
 	Document doc = new Document();
@@ -56,7 +56,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 	builder.Font.Color = Color.Blue;
 	builder.Font.Underline = Underline.Single;
 	
-	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com "، خطأ) ؛
+	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", yanlış);
 	
 	builder.Font.ClearFormatting();
 	builder.Write(" for more information.");
@@ -64,8 +64,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك المحددة ، بما في ذلك نص الارتباط التشعبي وعنوان URL. قم بتحسينه بالتنسيق أو الوظائف الإضافية حسب الحاجة.
+Kodu, köprü metni ve URL dahil olmak üzere özel gereksinimlerinize göre ayarlamayı unutmayın. Gerektiğinde ek biçimlendirme veya işlevsellik ile geliştirin.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج الارتباطات التشعبية في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إضافة ارتباطات تشعبية قابلة للنقر إلى مستنداتك ، وتوجيه القراء إلى مواقع ويب خارجية أو عناوين URL محددة.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine köprüleri nasıl ekleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak, artık belgelerinize tıklanabilir köprüler ekleyerek okuyucuları harici web sitelerine veya belirli URL'lere yönlendirebilirsiniz.
 

@@ -1,34 +1,34 @@
 ---
-title: العمل مع Markdown
-linktitle: العمل مع Markdown
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية كتابة النص الغامق والنص المائل والنص الخطي والشفرة المضمنة والربط التلقائي وإضافة صورة والقائمة المرتبة والعنوان والجدول وقراءة مستند تخفيض السعر باستخدام Aspose.Words for .NET.
+title: 使用降价
+linktitle: 使用降价
+second_title: Aspose.Words for .NET API 参考
+description: 教程包含如何使用 Aspose.Words for .NET 加粗文本、斜体文本、删除线、内联代码、自动链接、添加图像、有序列表、标题、表格和阅读降价文档。
 type: docs
 weight: 810
 url: /zh/net/working-with-markdown/
 ---
 
-يوفر العمل مع Markdown مصدرًا شاملاً لتعلم كيفية التعامل مع تنسيق Markdown باستخدام مكتبة Aspose.Words for .NET. تقدم البرامج التعليمية تفسيرات مفصلة ، وكود مصدر كامل وأمثلة عملية لمعالجة وإنشاء مستندات Markdown ، بما في ذلك استيراد ملفات Markdown ، وتحويل مستندات Word إلى Markdown ، وتخصيص تصميم Markdown ، والتصدير إلى PDF ، وما إلى ذلك من التنسيقات الأخرى وغير ذلك الكثير. هذا المورد ضروري للمطورين الذين يرغبون في إتقان استخدام Markdown مع Aspose.Words for .NET والاستفادة الكاملة من ميزاته المتقدمة لإنشاء المحتوى المستند إلى النص.
+使用 Markdown 提供了一个全面的资源，用于学习如何使用 Aspose.Words for .NET 库处理 Markdown 格式。教程提供了操作和生成 Markdown 文档的详细解释、完整的源代码和实例，包括导入 Markdown 文件、将 Word 文档转换为 Markdown、自定义 Markdown 样式、导出为 PDF 等其他格式等等。此资源对于想要掌握将 Markdown 与 Aspose.Words for .NET 结合使用并充分利用其高级功能生成基于文本的内容的开发人员来说是必不可少的。
 
- ## دروس
-| عنوان | وصف |
+ ## 教程
+| 标题 | 描述 |
 | --- | --- |
-| [نص عريض](./bold-text/) | تعرف على كيفية كتابة نص غامق باستخدام Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET. |
-| [نص مائل](./italic-text/) | تعرف على كيفية كتابة نص مائل باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [يتوسطه خط](./strikethrough/) | تعرف على كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [رمز مضمّن](./inline-code/) | تعرف على كيفية تضمين التعليمات البرمجية باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [ربط تلقائي](./autolink/) | تعرف على كيفية إدراج الارتباط التلقائي مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET. |
-| [وصلة](./link/) | تعرف على كيفية إدراج الروابط مع Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [صورة](./image/) | تعرف على كيفية إدراج الصورة وتخصيصها باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [قاعدة افقية](./horizontal-rule/) | تعرف على كيفية إدراج قاعدة أفقية باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [عنوان](./heading/) | تعرف على كيفية استخدام العنوان مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET. |
-| [عنوان Setext](./setext-heading/) | تعرف على كيفية استخدام عناوين Setext لتنسيق مستنداتك باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [رمز مسافة بادئة](./indented-code/) | تعرف على كيفية استخدام التعليمات البرمجية ذات المسافات البادئة مع دليل Aspose.Words for .NET خطوة بخطوة. |
-| [كود مسيّج](./fenced-code/) | تعرف على كيفية استخدام ميزة الشفرة المسيجة مع دليل Aspose.Words for .NET خطوة بخطوة. |
-| [يقتبس](./quote/) | تعرف على كيفية استخدام الاقتباس مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET. |
-| [قائمة نقطية](./bulleted-list/) | تعرف على كيفية إنشاء قائمة نقطية باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [قائمة مرتبة](./ordered-list/) | تعرف على كيفية إنشاء قائمة مرتبة باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [طاولة](./table/) | تعرف على كيفية إنشاء جدول باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [اقرأ مستند Markdown](./read-markdown-document/) | تعرف على كيفية قراءة مستند تخفيض السعر باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [تأكيدات](./emphases/) | تعرف على كيفية استخدام التأكيدات (بالخط العريض والمائل) باستخدام دليل Aspose.Words for .NET خطوة بخطوة. |
-| [استخدم مصدر التحذير](./use-warning-source/) | تعرف على كيفية استخدام مصدر التحذير مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET. |
+| [加粗字体](./bold-text/) | 了解如何使用 Aspose.Words for .NET 分步指南将文本加粗。 |
+| [斜体文字](./italic-text/) | 了解如何使用 Aspose.Words for .NET 分步指南将文本设置为斜体。 |
+| [删除线](./strikethrough/) | 通过 Aspose.Words for .NET 分步指南了解如何应用删除线文本样式。 |
+| [行内代码](./inline-code/) | 了解如何使用 Aspose.Words for .NET 分步指南内联代码。 |
+| [自动链接](./autolink/) | 了解如何使用 Aspose.Words for .NET 分步指南插入自动链接。 |
+| [关联](./link/) | 了解如何使用 Aspose.Words for .NET 插入链接。分步指南。 |
+| [图像](./image/) | 了解如何使用 Aspose.Words for .NET 分步指南插入和自定义图像。 |
+| [横尺](./horizontal-rule/) | 通过 Aspose.Words for .NET 分步指南了解如何插入水平线。 |
+| [标题](./heading/) | 通过 Aspose.Words for .NET 分步指南了解如何使用标题。 |
+| [文本标题](./setext-heading/) | 通过 Aspose.Words for .NET 分步指南了解如何使用 Setext 标题格式化您的文档。 |
+| [缩进代码](./indented-code/) | 通过 Aspose.Words for .NET 分步指南了解如何使用缩进代码。 |
+| [围栏代码](./fenced-code/) | 通过 Aspose.Words for .NET 分步指南了解如何使用隔离代码功能。 |
+| [引用](./quote/) | 了解如何通过 Aspose.Words for .NET 分步指南使用引号。 |
+| [项目符号列表](./bulleted-list/) | 了解如何使用 Aspose.Words for .NET 分步指南创建项目符号列表。 |
+| [有序列表](./ordered-list/) | 了解如何使用 Aspose.Words for .NET 分步指南创建有序列表。 |
+| [桌子](./table/) | 了解如何使用 Aspose.Words for .NET 分步指南创建表格。 |
+| [阅读 Markdown 文档](./read-markdown-document/) | 了解如何使用 Aspose.Words for .NET 分步指南阅读 markdown 文档。 |
+| [重点](./emphases/) | 通过 Aspose.Words for .NET 分步指南了解如何使用强调（粗体和斜体）。 |
+| [使用警告源](./use-warning-source/) | 通过 Aspose.Words for .NET 分步指南了解如何使用警告源。 |

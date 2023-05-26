@@ -1,17 +1,17 @@
 ---
-title: تعداد العقد الفرعية
-linktitle: تعداد العقد الفرعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعداد العقد الفرعية في فقرة باستخدام Aspose.Words for .NET.
+title: Untergeordnete Knoten aufzählen
+linktitle: Untergeordnete Knoten aufzählen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET untergeordnete Knoten in einem Absatz aufzählen.
 type: docs
 weight: 10
 url: /de/net/working-with-node/enumerate-child-nodes/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية تعداد العقد الفرعية باستخدام Aspose.Words for .NET.
+Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der veranschaulicht, wie untergeordnete Knoten mithilfe von Aspose.Words für .NET aufgezählt werden.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Schritt 1: Importieren Sie die erforderlichen Referenzen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die erforderlichen Referenzen zur Verwendung von Aspose.Words für .NET in Ihr Projekt importiert haben. Dazu gehört das Importieren der Aspose.Words-Bibliothek und das Hinzufügen der erforderlichen Namespaces zu Ihrer Quelldatei.
 
 ```csharp
 using Aspose.Words;
@@ -19,33 +19,33 @@ using Aspose.Words.Nodes;
 using Aspose.Words.NodeTypes;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## Schritt 2: Erstellen Sie ein neues Dokument
+ In diesem Schritt erstellen wir ein neues Dokument mit`Document` Klasse.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: الوصول إلى الفقرة والعقد التابعة لها
- لتعداد العقد الفرعية للفقرة ، نحتاج أولاً إلى الوصول إلى الفقرة نفسها. استخدم ال`GetChild` الطريقة مع`Paragraph` نوع العقدة للحصول على الفقرة الأولى من المستند.
+## Schritt 3: Greifen Sie auf den Absatz und seine untergeordneten Knoten zu
+ Um die untergeordneten Knoten eines Absatzes aufzuzählen, müssen wir zunächst auf den Absatz selbst zugreifen. Benutzen Sie die`GetChild` Methode mit der`Paragraph` Knotentyp, um den ersten Absatz des Dokuments abzurufen.
 
 ```csharp
 Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
-بعد ذلك ، نسترجع مجموعة العقد الفرعية للفقرة باستخدام الامتداد`ChildNodes` ملكية.
+Als nächstes rufen wir die Sammlung der untergeordneten Knoten des Absatzes mithilfe von ab`ChildNodes` Eigentum.
 
 ```csharp
 NodeCollection children = paragraph. ChildNodes;
 ```
 
-## الخطوة 4: تصفح العقد الفرعية
- الآن بعد أن أصبح لدينا مجموعة العقد الفرعية ، يمكننا المرور عبرها باستخدام ملف`foreach` حلقة. نتحقق من نوع كل عقدة فرعية ونجري عمليات محددة بناءً على النوع.
+## Schritt 4: Untergeordnete Knoten durchsuchen
+ Da wir nun die Sammlung untergeordneter Knoten haben, können wir sie mithilfe von a durchlaufen`foreach` Schleife. Wir überprüfen den Typ jedes untergeordneten Knotens und führen basierend auf dem Typ spezifische Operationen durch.
 
 ```csharp
 foreach (Node child in children)
 {
-     // يمكن أن تحتوي الفقرة على توابع من أنواع مختلفة مثل المسارات والأشكال وغيرها.
+     // Ein Absatz kann untergeordnete Elemente verschiedener Typen enthalten, z. B. Läufe, Formen und andere.
      if (child. NodeType == NodeType.Run)
      {
          Run run = (Run)child;
@@ -54,9 +54,9 @@ foreach (Node child in children)
 }
 ```
 
- في هذا المثال ، نتحقق مما إذا كانت العقدة الفرعية من النوع`Run` (على سبيل المثال جزء من النص). إذا كان الأمر كذلك ، نقوم بتحويل العقدة إلى`Run` وعرض النص باستخدام`run.Text`.
+ In diesem Beispiel prüfen wir, ob der untergeordnete Knoten vom Typ ist`Run` (zB ein Textfragment). Wenn ja, konvertieren wir den Knoten in`Run` und zeigen Sie den Text mit an`run.Text`.
 
-## مثال على شفرة المصدر لتعداد العقد الفرعية باستخدام Aspose.Words for .NET
+## Beispielquellcode zum Aufzählen untergeordneter Knoten mit Aspose.Words für .NET
 
 
 ```csharp
@@ -66,7 +66,7 @@ foreach (Node child in children)
 	NodeCollection children = paragraph.ChildNodes;
 	foreach (Node child in children)
 	{
-		// قد تحتوي الفقرة على أطفال من أنواع مختلفة مثل الأشواط والأشكال وغيرها.
+		// Ein Absatz kann untergeordnete Elemente verschiedener Art enthalten, z. B. Läufe, Formen und andere.
 		if (child.NodeType == NodeType.Run)
 		{
 			Run run = (Run) child;
@@ -76,5 +76,5 @@ foreach (Node child in children)
             
 ```
 
-هذا مثال رمز كامل لتعداد العقد الفرعية للفقرة باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع
+Dies ist ein vollständiges Codebeispiel zum Aufzählen der untergeordneten Knoten eines Absatzes mit Aspose.Words für .NET. Stellen Sie sicher, dass Sie die Referenzen importieren
 

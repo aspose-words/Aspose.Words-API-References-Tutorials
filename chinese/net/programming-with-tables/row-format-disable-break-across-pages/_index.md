@@ -1,68 +1,68 @@
 ---
-title: تنسيق الصف تعطيل الفاصل عبر الصفحات
-linktitle: تنسيق الصف تعطيل الفاصل عبر الصفحات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل فاصل الأسطر لجدول عبر صفحات متعددة في مستند Word باستخدام Aspose.Words for .NET.
+title: 行格式禁用跨页拆分
+linktitle: 行格式禁用跨页拆分
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 为 Word 文档中的多页表格禁用换行符。
 type: docs
 weight: 10
 url: /zh/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تعطيل فاصل الأسطر لجدول متعدد الصفحات في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تعطيل فصل الأسطر لجميع الصفوف في الجدول الخاص بك في مستندات Word الخاصة بك.
+在本教程中，我们将学习如何使用 Aspose.Words for .NET 禁用 Word 文档中多页表格的换行符。我们将按照逐步指南来理解代码并实现此功能。在本教程结束时，您将能够为 Word 文档中表格中的所有行禁用换行。
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## 第 1 步：项目设置
+1. 启动 Visual Studio 并创建一个新的 C# 项目。
+2. 添加对 Aspose.Words for .NET 库的引用。
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## 第 2 步：装入文档
+要开始使用该文档，请执行以下步骤：
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//装入文档
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
-تأكد من استبدال "دليل المستندات الخاص بك" بالمسار الفعلي إلى دليل المستندات الخاص بك وقم بتوفير اسم الملف الصحيح.
+请务必将“您的文档目录”替换为文档目录的实际路径并提供正确的文件名。
 
-## الخطوة 3: تعطيل فاصل صفوف الجدول
-بعد ذلك ، سنقوم بتعطيل فصل الصفوف لجميع الصفوف في الجدول. استخدم الكود التالي:
+## 第 3 步：禁用表格换行符
+接下来，我们将禁用表中所有行的换行。使用以下代码：
 
 ```csharp
-// استرجع الجدول
+//检索表
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 
-// تعطيل فاصل الصف لجميع الصفوف في الجدول
+//禁用表中所有行的换行符
 foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```
 
- هنا نستخدم المستند لجلب الجدول الأول ثم نكرره عبر جميع الصفوف في الجدول باستخدام حلقة foreach. داخل الحلقة ، نقوم بتعطيل فصل الصفوف لكل صف عن طريق ضبط`RowFormat.AllowBreakAcrossPages` ملكية ل`false`.
+这里我们使用文档来获取第一个表，然后使用 foreach 循环遍历表中的所有行。在循环内部，我们通过设置`RowFormat.AllowBreakAcrossPages`财产给`false`.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تعطيل فاصل أسطر الجدول. استخدم الكود التالي:
+## 第 4 步：保存修改后的文档
+最后，我们需要在禁用表格换行符的情况下保存修改后的文档。使用以下代码：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+请务必为输出文档指定正确的路径和文件名。
 
-### نموذج التعليمات البرمجية المصدر لتنسيق الصف تعطيل الفاصل عبر الصفحات باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的行格式禁用跨页分隔的示例源代码 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-// تعطيل التقسيم عبر الصفحات لجميع الصفوف في الجدول.
+//禁用表格中所有行的分页。
 foreach (Row row in table.Rows)
 	row.RowFormat.AllowBreakAcrossPages = false;
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعطيل فاصل الأسطر لجدول متعدد الصفحات في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تطبيق هذا التعطيل على جداولك في مستندات Word الخاصة بك.
+## 结论
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 禁用 Word 文档中多页表格的换行符。通过遵循此分步指南并实施提供的 C# 代码，您可以将此禁用应用于 Word 文档中的表格。

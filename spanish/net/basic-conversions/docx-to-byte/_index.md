@@ -1,64 +1,64 @@
 ---
-title: Docx إلى بايت
-linktitle: Docx إلى بايت
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات Word من Docx إلى مصفوفة بايت باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: docx a byte
+linktitle: docx a byte
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a convertir documentos de Word de Docx a una matriz de bytes usando Aspose.Words para .NET. Tutorial paso a paso con código fuente de ejemplo.
 type: docs
 weight: 10
 url: /es/net/basic-conversions/docx-to-byte/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى مصفوفة بايت. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+En este tutorial paso a paso, lo guiaremos sobre cómo usar Aspose.Words para .NET para convertir un documento de Word en formato Docx a una matriz de bytes. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde el sitio web oficial.
 
-## الخطوة 1: تهيئة MemoryStream
+## Paso 1: inicialización de MemoryStream
 
- أولاً ، قم بإنشاء مثيل لملف`MemoryStream` فئة لتخزين المستند المحول كمصفوفة بايت:
+ En primer lugar, cree una instancia de la`MemoryStream` clase para almacenar el documento convertido como una matriz de bytes:
 
 ```csharp
 MemoryStream outStream = new MemoryStream();
 ```
 
-## الخطوة 2: حفظ المستند في MemoryStream
+## Paso 2: guardar el documento en MemoryStream
 
- بعد ذلك ، استخدم ملف`Save` طريقة`Document` فئة لحفظ المستند في ملف`MemoryStream` بتنسيق Docx:
+ A continuación, utilice el`Save` metodo de la`Document` clase para guardar el documento en el`MemoryStream` en formato docx:
 
 ```csharp
 doc.Save(outStream, SaveFormat.Docx);
 ```
 
-## الخطوة 3: تحويل MemoryStream إلى صفيف بايت
+## Paso 3: Convertir MemoryStream a Byte Array
 
- لتحويل ملف`MemoryStream` الذي يحتوي على مستند Docx إلى مصفوفة بايت ، استخدم الامتداد`ToArray` طريقة:
+ para convertir el`MemoryStream` que contiene el documento Docx a una matriz de bytes, use el`ToArray` método:
 
 ```csharp
 byte[] docBytes = outStream.ToArray();
 ```
 
-## الخطوة 4: تهيئة MemoryStream من صفيف بايت
+## Paso 4: inicialización de MemoryStream desde Byte Array
 
- الآن ، قم بتهيئة مثيل جديد من`MemoryStream`باستخدام مصفوفة البايت التي تم الحصول عليها في الخطوة السابقة:
+ Ahora, inicialice una nueva instancia de`MemoryStream`usando la matriz de bytes obtenida en el paso anterior:
 
 ```csharp
 MemoryStream inStream = new MemoryStream(docBytes);
 ```
 
-## الخطوة 5: إنشاء مستند من MemoryStream
+## Paso 5: Crear un documento desde MemoryStream
 
- أخيرًا ، قم بإنشاء ملف`Document` كائن من`MemoryStream`:
+ Finalmente, crea una nueva`Document` objeto de la`MemoryStream`:
 
 ```csharp
 Document docFromBytes = new Document(inStream);
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند Word بتنسيق Docx إلى مصفوفة بايت باستخدام Aspose.Words for .NET.
+¡Eso es todo! Ha convertido con éxito un documento de Word en formato Docx a una matriz de bytes usando Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لـ Docx To Byte باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Docx To Byte usando Aspose.Words para .NET
 
 ```csharp
 
-	// MemoryStream outStream = new MemoryStream () ؛
+	// MemoryStream outStream = new MemoryStream();
 	doc.Save(outStream, SaveFormat.Docx);
 
 	byte[] docBytes = outStream.ToArray();
@@ -68,4 +68,4 @@ Document docFromBytes = new Document(inStream);
 	
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Siéntase libre de usar este código en sus propios proyectos y modifíquelo de acuerdo con sus requisitos específicos.

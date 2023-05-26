@@ -1,28 +1,28 @@
 ---
-title: قم بتعيين تنسيق الخط
-linktitle: قم بتعيين تنسيق الخط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET وإنشاء مستندات جذابة.
+title: Ställ in teckensnittsformatering
+linktitle: Ställ in teckensnittsformatering
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ställer in teckensnittsformatering i Word-dokument med Aspose.Words för .NET och skapar attraktiva dokument.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/set-font-formatting/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET. سوف تتعلم كيفية تطبيق أنماط مثل الغامق واللون والمائل والخط والحجم والتباعد والتسطير.
+I den här handledningen kommer vi att visa dig hur du ställer in teckensnittsformatering i ett Word-dokument med Aspose.Words för .NET. Du kommer att lära dig hur du använder stilar som fetstil, färg, kursiv stil, teckensnitt, storlek, mellanrum och understrykning.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+Börja med att ange katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بإنشاء وتنسيق المستند
- قم بإنشاء مثيل لـ`Document` الطبقة و`DocumentBuilder` فئة لبناء الوثيقة. استخدم ال`Font` ممتلكات`DocumentBuilder` للوصول إلى خصائص تنسيق الخط.
+## Steg 2: Skapa och formatera dokumentet
+ Skapa en instans av`Document` klass och`DocumentBuilder` klass för att bygga dokumentet. Använd`Font` egendom av`DocumentBuilder` för att komma åt egenskaper för teckensnittsformatering.
 
 ```csharp
 Document doc = new Document();
@@ -38,17 +38,17 @@ font.Underline = Underline.Double;
 builder.Writeln("I'm a very nicely formatted string.");
 ```
 
-## الخطوة 3: احفظ المستند
- استخدم ال`Save` طريقة لحفظ المستند مع تنسيق الخط المطبق. يستبدل`"WorkingWithFonts.SetFontFormatting.docx"` مع اسم الملف المطلوب.
+## Steg 3: Spara dokumentet
+ Använd`Save` metod för att spara dokumentet med typsnittsformateringen tillämpad. Byta ut`"WorkingWithFonts.SetFontFormatting.docx"` med önskat filnamn.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Font Formatting باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Set Font Formatting med Aspose.Words för .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -66,5 +66,5 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 
 ```
 
-## خاتمة
-تهنئة ! أنت تعرف الآن كيفية تعيين تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET. يمكنك استكشاف المزيد من خيارات تنسيق الخط وإنشاء مستندات Word مخصصة وجذابة.
+## Slutsats
+Grattis! Du vet nu hur du ställer in teckensnittsformatering i ett Word-dokument med Aspose.Words för .NET. Du kan utforska fler teckensnittsformateringsalternativ och skapa personliga och attraktiva Word-dokument.

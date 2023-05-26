@@ -1,35 +1,35 @@
 ---
-title: الوصول إلى النسخة المنقحة
-linktitle: الوصول إلى النسخة المنقحة
-second_title: Aspose.Words لمراجع .NET API
-description: قم بالوصول إلى نسخة منقحة من مستند Word باستخدام Aspose.Words for .NET.
+title: Gözden Geçirilmiş Sürüme Erişim
+linktitle: Gözden Geçirilmiş Sürüme Erişim
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinin gözden geçirilmiş versiyonuna erişin.
 type: docs
 weight: 10
 url: /tr/net/working-with-revisions/access-revised-version/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سوف نوضح لك كيفية الوصول إلى النسخة المنقحة من مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+Bu adım adım kılavuzda, size Aspose.Words for .NET kullanarak bir Word belgesinin revize edilmiş versiyonuna nasıl erişeceğinizi göstereceğiz. Size tam kaynak kodunu sağlayacağız ve işaretleme çıktısını nasıl biçimlendireceğinizi göstereceğiz.
 
-## الخطوة 1: تحميل المستند
+## 1. Adım: Belgeyi yükleme
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+İlk adım, revizyonları içeren belgeyi yüklemektir.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 doc.UpdateListLabels();
 ```
 
-## الخطوة 2: الوصول إلى النسخة المعدلة
+## 2. Adım: Gözden geçirilmiş sürüme erişin
 
-ننتقل الآن إلى النسخة المنقحة من الوثيقة.
+Şimdi belgenin revize edilmiş versiyonuna geçeceğiz.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
 ```
 
-## الخطوة 3: تصفح المراجعات
+## 3. Adım: Düzeltmelere göz atın
 
-بعد ذلك ، سنقوم بتكرار المراجعات الموجودة في المستند ونعرض معلومات محددة للفقرات التي هي عناصر قائمة.
+Ardından, belgede bulunan revizyonları gözden geçireceğiz ve liste öğeleri olan paragraflar için belirli bilgileri göstereceğiz.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -46,16 +46,16 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
-### مثال على شفرة المصدر لـ Access Revised Version باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Revize Edilmiş Sürüme Erişim için örnek kaynak kodu
 
-فيما يلي رمز المصدر الكامل للوصول إلى النسخة المعدلة من المستند باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanan bir belgenin gözden geçirilmiş versiyonuna erişmek için eksiksiz kaynak kodu burada:
 
 ```csharp
 
 	Document doc = new Document(MyDir + "Revisions.docx");
 	doc.UpdateListLabels();
 
-	// قم بالتبديل إلى النسخة المنقحة من المستند.
+	// Belgenin gözden geçirilmiş sürümüne geçin.
 	doc.RevisionsView = RevisionsView.Final;
 
 	foreach (Revision revision in doc.Revisions)

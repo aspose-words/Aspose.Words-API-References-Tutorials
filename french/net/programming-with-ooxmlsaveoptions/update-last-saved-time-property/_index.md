@@ -1,52 +1,52 @@
 ---
-title: تحديث خاصية الوقت المحفوظ الأخير
-linktitle: تحديث خاصية الوقت المحفوظ الأخير
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديث خاصية Last Saved Time تلقائيًا عند حفظ مستند باستخدام Aspose.Words for .NET.
+title: Mettre à jour la propriété de l'heure du dernier enregistrement
+linktitle: Mettre à jour la propriété de l'heure du dernier enregistrement
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Découvrez comment mettre à jour automatiquement la propriété Last Saved Time lors de l'enregistrement d'un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف كود المصدر C # المقدم لتحديث خاصية وقت الحفظ الأخيرة عند حفظ مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تحديث خاصية وقت الحفظ الأخيرة للمستند الذي تم إنشاؤه تلقائيًا.
+Dans ce didacticiel, nous allons explorer le code source C # fourni pour mettre à jour la dernière propriété de temps d'enregistrement lors de l'enregistrement d'un document à l'aide de Aspose.Words pour .NET. Cette fonctionnalité vous permet de mettre à jour automatiquement la dernière propriété d'heure de sauvegarde du document généré.
 
-## الخطوة الأولى: تهيئة البيئة
+## Étape 1 : Configurer l'environnement
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Avant de commencer, assurez-vous d'avoir configuré votre environnement de développement avec Aspose.Words pour .NET. Assurez-vous d'avoir ajouté les références nécessaires et importé les espaces de noms appropriés.
 
-## الخطوة الثانية: تحميل المستند
+## Étape 2 : Chargement du document
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+ Dans cette étape, nous chargeons le document en utilisant le`Document` méthode et en passant le chemin vers le fichier DOCX à charger.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي لـ OOXML
+## Étape 3 : Configuration des options de sauvegarde OOXML
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { UpdateLastSavedTimeProperty = true };
 ```
 
- في هذه الخطوة ، نقوم بتهيئة خيارات حفظ OOXML باستخدام امتداد`OoxmlSaveOptions` فصل. نقوم بتمكين التحديث التلقائي لآخر خاصية توفير الوقت من خلال الإعداد`UpdateLastSavedTimeProperty` ل`true`.
+ Dans cette étape, nous configurons les options de sauvegarde OOXML à l'aide de`OoxmlSaveOptions` classe. Nous activons la mise à jour automatique de la dernière propriété d'heure de sauvegarde en définissant`UpdateLastSavedTimeProperty` pour`true`.
 
-## الخطوة 4: احفظ المستند بخاصية محدثة
+## Étape 4 : Enregistrer le document avec la propriété mise à jour
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ المستند باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج بامتداد`.docx` بالإضافة إلى خيارات الحفظ المحددة.
+ Dans cette dernière étape, nous enregistrons le document en utilisant le`Save` méthode et en passant le chemin vers le fichier de sortie avec la`.docx` extension, ainsi que les options d'enregistrement spécifiées.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لتحديث خاصية وقت الحفظ الأخيرة تلقائيًا عند حفظ مستند. سيتم حفظ الملف الناتج في الدليل المحدد بالاسم "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx".
+Vous pouvez maintenant exécuter le code source pour mettre à jour automatiquement la dernière propriété d'heure d'enregistrement lors de l'enregistrement d'un document. Le fichier résultant sera enregistré dans le répertoire spécifié avec le nom "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx".
 
-### نموذج شفرة مصدر لتحديث خاصية آخر وقت تم توفيره باستخدام Aspose.Words for .NET 
+### Exemple de code source pour la propriété Update Last Saved Time à l'aide de Aspose.Words pour .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -58,10 +58,10 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx
         
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا البرنامج التعليمي ، استكشفنا ميزة التحديث التلقائي لخاصية توفير الوقت الأخيرة عند حفظ مستند باستخدام Aspose.Words for .NET. من خلال تمكين هذه الميزة مع خيارات حفظ OOXML ، يمكنك التأكد من تحديث خاصية وقت الحفظ الأخيرة تلقائيًا في المستند الذي تم إنشاؤه.
+Dans ce didacticiel, nous avons exploré la fonctionnalité de mise à jour automatique de la propriété de l'heure du dernier enregistrement lors de l'enregistrement d'un document à l'aide de Aspose.Words pour .NET. En activant cette fonctionnalité avec les options d'enregistrement OOXML, vous pouvez vous assurer que la dernière propriété d'heure d'enregistrement est mise à jour automatiquement dans le document généré.
 
-يمكن أن يكون تحديث خاصية وقت الحفظ الأخير مفيدًا لتعقب التغييرات وإصدارات المستند. كما أنه يتتبع آخر مرة تم فيها حفظ المستند ، مما قد يكون مفيدًا في سيناريوهات مختلفة.
+La mise à jour de la propriété de l'heure du dernier enregistrement peut être utile pour suivre les modifications et les versions d'un document. Il garde également une trace du dernier enregistrement du document, ce qui peut être utile dans divers scénarios.
 
-يجعل Aspose.Words for .NET من السهل تحديث خاصية Last Backup Time تلقائيًا من خلال توفير خيارات نسخ احتياطي مرنة وفعالة. يمكنك دمج هذه الميزة في مشاريعك لضمان احتواء المستندات التي تم إنشاؤها على معلومات نسخ احتياطي دقيقة.
+Aspose.Words pour .NET facilite la mise à jour automatique de la propriété Heure de la dernière sauvegarde en fournissant des options de sauvegarde flexibles et puissantes. Vous pouvez intégrer cette fonctionnalité dans vos projets pour vous assurer que les documents générés contiennent des informations de sauvegarde précises.

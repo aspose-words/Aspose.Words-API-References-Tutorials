@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل الدمج باستخدام DOM
-linktitle: أدخل حقل الدمج باستخدام DOM
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول دمج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Inserisci campo di unione utilizzando DOM
+linktitle: Inserisci campo di unione utilizzando DOM
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire campi di unione di campi personalizzati nei tuoi documenti Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-merge-field-using-dom/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي تستخدم ميزة "إدراج حقل دمج الحقول" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Ecco una guida passo passo per spiegare il codice sorgente C # di seguito che utilizza la funzione "Inserisci campo unione campo" di Aspose.Words per .NET. Assicurati di seguire attentamente ogni passaggio per ottenere i risultati desiderati.
 
-## الخطوة 1: إعداد دليل المستند
+## Passaggio 1: impostazione della directory dei documenti
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "YOUR DOCUMENT DIRECTORY" con il percorso appropriato alla directory dei tuoi documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## Passaggio 2: creazione del documento e di DocumentBuilder
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Iniziamo creando un nuovo documento e inizializzando un DocumentBuilder.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تحريك المؤشر إلى الفقرة
+## Passaggio 3: spostare il cursore sul paragrafo
 
- نحن نستخدم ال`MoveTo()` طريقة DocumentBuilder لتحريك المؤشر إلى الفقرة حيث نريد إدراج حقل دمج الحقل.
+ Noi usiamo il`MoveTo()` metodo del DocumentBuilder per spostare il cursore sul paragrafo dove vogliamo inserire il campo merge field.
 
 ```csharp
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 builder. MoveTo(para);
 ```
 
-## الخطوة 4: إدخال حقل دمج الحقول
+## Passaggio 4: Inserimento del campo di unione del campo
 
- نحن نستخدم برنامج DocumentBuilder`InsertField()` طريقة لإدراج حقل دمج حقل في الفقرة.
+ Usiamo il DocumentBuilder`InsertField()` metodo per inserire un campo di unione di campi nel paragrafo.
 
 ```csharp
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
 ```
 
-نقوم بعد ذلك بتكوين خصائص حقل دمج الحقول عن طريق تحديد الخيارات المناسبة ، مثل اسم الحقل والنص قبل الحقل وبعده وخيارات التنسيق الرأسي.
+Quindi configuriamo le proprietà del campo di unione del campo specificando le opzioni appropriate, come il nome del campo, il testo prima e dopo il campo e le opzioni di formattazione verticale.
 
 ```csharp
 field.FieldName = "Test1";
@@ -54,27 +54,27 @@ field. IsMapped = true;
 field. IsVerticalFormatting = true;
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Infine, chiamiamo il`Update()` metodo per aggiornare il campo.
 
 ```csharp
 field. Update();
 ```
 
-### نموذج التعليمات البرمجية المصدر لإدخال حقل دمج الحقول مع Aspose.Words for .NET
+### Esempio di codice sorgente per l'inserimento di un campo di unione di campi con Aspose.Words per .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند و DocumentBuilder.
+// Creare il documento e il DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// حرك المؤشر إلى الفقرة.
+// Sposta il cursore sul paragrafo.
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 builder. MoveTo(para);
 
-// أدخل حقل دمج الحقول.
+// Inserisci campo unione campo.
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
 
 field.FieldName = "Test1";
@@ -83,10 +83,10 @@ field. TextAfter = "Test3";
 field. IsMapped = true;
 field. IsVerticalFormatting = true;
 
-// قم بتحديث الحقل.
+// Aggiorna il campo.
 field. Update();
 
 doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، ونقلنا المؤشر إلى الفقرة المطلوبة ، ثم أدخلنا حقل دمج الحقول في المستند.
+In questo esempio, abbiamo creato un nuovo documento, spostato il cursore sul paragrafo desiderato e quindi inserito un campo di unione di campi nel documento.

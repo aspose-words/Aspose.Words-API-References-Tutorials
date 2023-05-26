@@ -1,62 +1,62 @@
 ---
-title: إزالة الحقل
-linktitle: إزالة الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا الدليل ، ستتعلم كيفية حذف حقل معين في مستند باستخدام Aspose.Words for .NET.
+title: Alanı Kaldır
+linktitle: Alanı Kaldır
+second_title: Aspose.Words for .NET API Referansı
+description: Bu kılavuzda, Aspose.Words for .NET kullanarak bir belgedeki belirli bir alanı nasıl sileceğinizi öğreneceksiniz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/remove-field/
 ---
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم وظيفة "إزالة الحقل" في Aspose.Words for .NET. اتبع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aşağıda, Aspose.Words for .NET'in "Alan Kaldırma" işlevini kullanan C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır. İstenen sonuçları elde etmek için her adımı dikkatlice izleyin.
 
-## الخطوة 1: إعداد دليل المستند
+## 1. Adım: Belge Dizini Kurulumu
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-نبدأ بتحميل المستند الحالي من الملف المحدد.
+Mevcut belgeyi belirtilen dosyadan yükleyerek başlıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Various fields.docx");
 ```
 
-## الخطوة 3: حذف الحقل
+## 3. Adım: Alanın silinmesi
 
- نختار الحقل الأول في نطاق المستندات ونستخدم ملف`Remove()` طريقة إزالته.
+ Belge aralığındaki ilk alanı seçip`Remove()` kaldırmak için bir yöntem.
 
 ```csharp
 Field field = doc.Range.Fields[0];
 field. Remove();
 ```
 
-## الخطوة 4: حفظ المستند
+## 4. Adım: Belgeyi kaydetme
 
- أخيرًا ، نسمي`Save()` طريقة لحفظ المستند المعدل.
+ Son olarak, diyoruz`Save()` değiştirilen belgeyi kaydetme yöntemi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 ```
 
-### مثال على شفرة المصدر لحذف الحقل باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile alan silme için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+// Belgeyi yükleyin.
 Document doc = new Document(dataDir + "Various fields.docx");
 
-// اختيار الحقل المراد حذفه.
+// Silinecek alanın seçimi.
 Field field = doc.Range.Fields[0];
 field. Remove();
 
-// احفظ المستند.
+// Belgeyi kaydedin.
 doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 ```
 
-اتبع هذه الخطوات لحذف حقل معين في وثيقتك باستخدام Aspose.Words for .NET.
+Aspose.Words for .NET'i kullanarak belgenizdeki belirli bir alanı silmek için bu adımları izleyin.

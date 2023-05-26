@@ -1,50 +1,50 @@
 ---
-title: عنوان
-linktitle: عنوان
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام العنوان مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Überschrift
+linktitle: Überschrift
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Überschriften mit Aspose.Words für .NET verwenden.
 type: docs
 weight: 10
 url: /de/net/working-with-markdown/heading/
 ---
 
-في هذا المثال ، سوف نوضح لك كيفية استخدام ميزة العناوين مع Aspose.Words for .NET. تُستخدم العناوين لبناء محتوى المستند وتحديد أولوياته.
+In diesem Beispiel zeigen wir Ihnen, wie Sie die Überschriftenfunktion mit Aspose.Words für .NET verwenden. Überschriften dienen der Strukturierung und Priorisierung des Inhalts eines Dokuments.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Schritt 1: Verwendung eines Dokumentengenerators
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Zuerst verwenden wir einen Dokumentgenerator, um Inhalte zu unserem Dokument hinzuzufügen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تخصيص أنماط العناوين
+## Schritt 2: Überschriftenstile anpassen
 
-بشكل افتراضي ، يمكن أن تحتوي أنماط العناوين في Word على تنسيق غامق ومائل. إذا لم نرغب في فرض هذه الخصائص ، فنحن بحاجة إلى تعيينها صراحة على "خطأ".
+Überschriftenformate in Word können standardmäßig fett und kursiv formatiert sein. Wenn wir nicht möchten, dass diese Eigenschaften erzwungen werden, müssen wir sie explizit auf „false“ setzen.
 
 ```csharp
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
 
-## الخطوة 3: إضافة عنوان من المستوى 1
+## Schritt 3: Hinzufügen eines Level-1-Titels
 
- يمكننا إضافة عنوان من المستوى 1 عن طريق تحديد اسم نمط الفقرة المناسب واستخدام امتداد`Writeln` طريقة كتابة محتوى العنوان.
+ Wir können einen Titel der Ebene 1 hinzufügen, indem wir den entsprechenden Absatzstilnamen angeben und verwenden`Writeln` Methode zum Schreiben des Inhalts des Titels.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";
 builder.Writeln("This is an H1 tag");
 ```
 
-### مثال على شفرة المصدر للعنوان مع Aspose.Words for .NET
+### Beispielquellcode für Überschrift mit Aspose.Words für .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// بشكل افتراضي ، قد تحتوي أنماط العناوين في Word على تنسيق غامق ومائل.
-	//إذا كنا لا نريد التأكيد ، فاضبط هذه الخصائص صراحةً على false.
+	// Standardmäßig können Überschriftenstile in Word die Formatierung Fett und Kursiv haben.
+	//Wenn wir nicht hervorgehoben werden möchten, setzen Sie diese Eigenschaften explizit auf „false“.
 	builder.Font.Bold = false;
 	builder.Font.Italic = false;
 
@@ -53,6 +53,6 @@ builder.Writeln("This is an H1 tag");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة العناوين مع Aspose.Words for .NET.
+Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Überschriftenfunktion mit Aspose.Words für .NET verwenden.
 
 

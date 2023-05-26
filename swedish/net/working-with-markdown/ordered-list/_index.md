@@ -1,27 +1,27 @@
 ---
-title: قائمة مرتبة
-linktitle: قائمة مرتبة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء قائمة مرتبة باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Beställd lista
+linktitle: Beställd lista
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du skapar en ordnad lista med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/working-with-markdown/ordered-list/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام وظيفة القائمة المرتبة مع Aspose.Words for .NET. تتيح لك القائمة المرتبة تنظيم العناصر بالتسلسل باستخدام الأرقام.
+I det här exemplet kommer vi att förklara hur man använder den ordnade listfunktionen med Aspose.Words för .NET. Ordnad lista låter dig organisera objekt sekventiellt med siffror.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Steg 1: Använda en dokumentgenerator
 
-أولاً ، سنستخدم منشئ المستندات لإنشاء مستند جديد.
+Först använder vi en dokumentgenerator för att skapa ett nytt dokument.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تطبيق تنسيق القائمة المرتبة
+## Steg 2: Tillämpa det beställda listformatet
 
-سنقوم بتطبيق تنسيق القائمة المرتبة باستخدام منشئ المستندات`ApplyBulletDefault` طريقة. يمكننا أيضًا تخصيص تنسيق الترقيم بالانتقال إلى مستويات القائمة وتعيين التنسيق الذي نريده.
+Vi kommer att tillämpa det beställda listformatet med hjälp av dokumentbyggarens`ApplyBulletDefault` metod. Vi kan också anpassa numreringsformatet genom att gå till listnivåerna och ställa in det format vi vill ha.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
@@ -29,18 +29,18 @@ builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
 builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
 ```
 
-## الخطوة 3: إضافة عناصر إلى القائمة
+## Steg 3: Lägga till objekt i listan
 
- يمكننا إضافة عناصر إلى القائمة باستخدام منشئ المستندات`Writeln` طريقة.
+ Vi kan lägga till objekt till listan med hjälp av dokumentgeneratorns`Writeln` metod.
 
 ```csharp
 builder. Writen("Element 1");
 builder. Writen("Element 2");
 ```
 
-## الخطوة 4: مسافة بادئة للقائمة
+## Steg 4: Gör indrag i listan
 
- يمكننا وضع مسافة بادئة للقائمة باستخدام منشئ المستندات`ListIndent` طريقة.
+ Vi kan dra in listan med hjälp av dokumentgeneratorns`ListIndent` metod.
 
 ```csharp
 builder.ListFormat.ListIndent();
@@ -48,11 +48,11 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-## الخطوة 5: حفظ المستند
+## Steg 5: Spara dokumentet
 
-أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب.
+Slutligen kan vi spara dokumentet i önskat format.
 
-### مثال على شفرة المصدر لقائمة مرتبة مع Aspose.Words for .NET
+### Exempel på källkod för beställd lista med Aspose.Words för .NET
 
 ```csharp
 	Document doc = new Document();
@@ -72,5 +72,5 @@ builder.Writeln("Item 2b");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة القائمة المرتبة مع Aspose.Words for .NET.
+Grattis! Du har nu lärt dig hur du använder den beställda listfunktionen med Aspose.Words för .NET.
 

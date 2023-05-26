@@ -1,29 +1,29 @@
 ---
-title: تنسيق الفقرة
-linktitle: تنسيق الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق التنسيق المخصص على فقراتك باستخدام Aspose.Words for .NET.
+title: Paragraf Biçimlendirme
+linktitle: Paragraf Biçimlendirme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile paragraflarınıza nasıl özel biçimlendirme uygulayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/document-formatting/paragraph-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة تنسيق الفقرة مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+Bu öğreticide, Aspose.Words for .NET ile paragraf biçimlendirme özelliğini nasıl kullanacağınız konusunda size yol göstereceğiz. Kaynak kodunu anlamak ve değişiklikleri uygulamak için aşağıdaki adımları izleyin.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## 1. Adım: Belgeyi oluşturma ve yapılandırma
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Başlamak için yeni bir belge ve ilişkili bir DocumentBuilder nesnesi oluşturun. İşte nasıl:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تنسيق الفقرة
+## 2. Adım: Paragrafı biçimlendirme
 
-سنقوم الآن بتطبيق التنسيق على الفقرة باستخدام الخصائص المتاحة في كائن ParagraphFormat من كائن DocumentBuilder. إليك الطريقة:
+Şimdi, DocumentBuilder nesnesinin ParagraphFormat nesnesinde bulunan özellikleri kullanarak paragrafa biçimlendirmeyi uygulayacağız. İşte nasıl:
 
 ```csharp
 ParagraphFormat paragraphFormat = builder.ParagraphFormat;
@@ -33,9 +33,9 @@ paragraphFormat. RightIndent = 50;
 paragraphFormat. SpaceAfter = 25;
 ```
 
-## الخطوة 3: حفظ المستند
+## 3. Adım: Belgeyi kaydetme
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Metin giriş formu alanını ekledikten sonra, belgeyi istenen konuma kaydedin.`Save` yöntem. Uygun dosya yolunu sağladığınızdan emin olun:
 
 ```csharp
 builder.Writeln(
@@ -46,14 +46,14 @@ builder.Writeln(
 doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
 ```
 
-### مثال على شفرة المصدر لتنسيق الفقرة باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Paragraf Biçimlendirme için örnek kaynak kodu
 
-فيما يلي رمز المصدر الكامل لميزة تنسيق الفقرة باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET ile paragraf biçimlendirme özelliğinin tam kaynak kodu burada:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -73,5 +73,5 @@ doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
 	
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تطبيق تنسيقات مختلفة على فقراتك باستخدام Aspose.Words for .NET.
+Bu kodla, Aspose.Words for .NET kullanarak paragraflarınıza farklı biçimlendirmeler uygulayabileceksiniz.
 

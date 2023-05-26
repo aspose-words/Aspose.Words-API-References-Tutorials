@@ -1,52 +1,52 @@
 ---
-title: أدخل الحقول المتداخلة
-linktitle: أدخل الحقول المتداخلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الحقول المتداخلة بسهولة في مستندات Word باستخدام Aspose.Words for .NET.
+title: İç İçe Alanlar Ekle
+linktitle: İç İçe Alanlar Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile iç içe geçmiş alanları Word belgelerinize kolayca nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/insert-nested-fields/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج الحقول المتداخلة" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aşağıda, Aspose.Words for .NET'in "İç İçe Alanları Ekle" özelliğini kullanan C# kaynak kodunu adım adım açıklayan bir kılavuz bulunmaktadır. İstenen sonuçları elde etmek için her adımı dikkatlice uyguladığınızdan emin olun.
 
-## الخطوة 1: إعداد دليل المستند
+## 1. Adım: Belge Dizini Kurulumu
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Sağlanan kodda, belgelerinizin dizinini belirtmeniz gerekir. "BELGE DİZİNİNİZ" değerini belgeler dizininizin uygun yolu ile değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## 2. Adım: Document ve DocumentBuilder'ı Oluşturma
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Yeni bir belge oluşturarak ve bir DocumentBuilder başlatarak başlıyoruz.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدراج فواصل الصفحات
+## 3. Adım: Sayfa sonları ekleme
 
-نستخدم حلقة لإدراج عدة فواصل صفحات في المستند.
+Belgeye birden fazla sayfa sonu eklemek için bir döngü kullanıyoruz.
 
 ```csharp
 for (int i = 0; i < 5; i++)
      builder. InsertBreak(BreakType.PageBreak);
 ```
 
-## الخطوة 4: الانتقال إلى التذييل
+## 4. Adım: Altbilgiye Taşıyın
 
- نحن نستخدم ال`MoveToHeaderFooter()` أسلوب DocumentBuilder لتحريك المؤشر إلى التذييل الرئيسي.
+ biz kullanıyoruz`MoveToHeaderFooter()` İmleci ana altbilgiye taşımak için DocumentBuilder yöntemi.
 
 ```csharp
 builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 ```
 
-## الخطوة 5: إدخال الحقل المتداخل
+## Adım 5: İç içe alan ekleme
 
- نحن نستخدم برنامج DocumentBuilder`InsertField()` طريقة لإدراج حقل متداخل في التذييل.
+ DocumentBuilder'ı kullanıyoruz`InsertField()` altbilgiye iç içe geçmiş bir alan ekleme yöntemi.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");
@@ -57,30 +57,30 @@ builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Son olarak, diyoruz`Update()` alanı güncelleme yöntemi.
 
 ```csharp
 field. Update();
 ```
 
-### نموذج التعليمات البرمجية المصدر لإدخال الحقول المتداخلة مع Aspose.Words for .NET
+### Aspose.Words for .NET ile iç içe alanlar eklemek için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند و DocumentBuilder.
+// Belgeyi ve DocumentBuilder'ı oluşturun.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// أدخل فواصل الصفحات.
+// Sayfa sonları ekleyin.
 for (int i = 0; i < 5; i++)
      builder. InsertBreak(BreakType.PageBreak);
 
-// الانتقال إلى التذييل.
+// Altbilgiye git.
 builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-// أدخل الحقل المتداخل.
+// İç içe alan ekleyin.
 Field field = builder. InsertField(@"IF ");
 builder.MoveTo(field.Separator);
 builder. InsertField("PAGE");
@@ -88,10 +88,10 @@ builder. Write(" <> ");
 builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
 
-// قم بتحديث الحقل.
+// Alanı güncelleyin.
 field. Update();
 
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأدرجنا فواصل الصفحات ، وحركنا المؤشر إلى التذييل ، ثم أدرجنا حقلاً متداخلًا في التذييل.
+Bu örnekte, yeni bir belge oluşturduk, sayfa sonları ekledik, imleci alt bilgiye taşıdık ve ardından alt bilgiye iç içe bir alan ekledik.

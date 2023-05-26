@@ -1,37 +1,37 @@
 ---
-title: إعداد صفحة مختلفة
-linktitle: إعداد صفحة مختلفة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند بإعدادات إعداد صفحة مختلفة باستخدام Aspose.Words for .NET.
+title: Configuración de página diferente
+linktitle: Configuración de página diferente
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a agregar un documento con diferentes configuraciones de configuración de página usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/join-and-append-documents/different-page-setup/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق مستند بإعدادات صفحة مختلفة بمستند آخر. يوضح كود المصدر المقدم كيفية إعداد إعدادات صفحة مختلفة لمستندات المصدر والوجهة والتأكد من المتابعة والترقيم المناسبين.
+Este tutorial explica cómo usar Aspose.Words para .NET para agregar un documento con diferentes configuraciones de configuración de página a otro documento. El código fuente proporcionado demuestra cómo configurar diferentes configuraciones de página para los documentos de origen y de destino y garantizar una continuación y numeración adecuadas.
 
-## الخطوة 1: قم بإعداد المشروع
+## Paso 1: configurar el proyecto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Asegúrese de tener los siguientes requisitos previos:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words para la biblioteca .NET instalada. Puede descargarlo del sitio web oficial de Aspose o usar el administrador de paquetes NuGet para instalarlo.
+- Una ruta de directorio de documentos donde se encuentran los documentos de origen y de destino.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Paso 2: Abra los documentos de origen y destino
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Abra los documentos de origen y de destino con el`Document` constructor de clases. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: قم بإعداد إعدادات الصفحة للمستند المصدر
+## Paso 3: configure los ajustes de página para el documento de origen
 
- اضبط إعدادات إعداد الصفحة للمستند المصدر لضمان المتابعة والترقيم المناسبين. في هذا المثال ، قمنا بتعيين بداية القسم إلى`SectionStart.Continuous` وأعد ترقيم الصفحات. نتأكد أيضًا من تطابق عرض الصفحة وارتفاعها واتجاهها مع القسم الأخير من المستند الوجهة.
+ Ajuste la configuración de la página del documento de origen para garantizar una continuación y una numeración adecuadas. En este ejemplo, configuramos el inicio de la sección en`SectionStart.Continuous` y reinicie la numeración de páginas. También nos aseguramos de que el ancho, la altura y la orientación de la página coincidan con la última sección del documento de destino.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -42,9 +42,9 @@ srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeig
 srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;
 ```
 
-## الخطوة 4: تعديل تنسيق الفقرة
+## Paso 4: modificar el formato de párrafo
 
-للحفاظ على التنسيق الصحيح ، كرر عبر جميع الفقرات في المستند المصدر وقم بتعيين ملف`KeepWithNext` ملكية ل`true`. هذا يضمن بقاء الفقرات معًا أثناء عملية الإلحاق.
+Para mantener el formato adecuado, repita todos los párrafos del documento de origen y establezca el`KeepWithNext` propiedad a`true`. Esto asegura que los párrafos permanezcan juntos durante el proceso de adición.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,45 +53,45 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بالمستند الوجهة
+## Paso 5: agregue el documento de origen al documento de destino
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر المعدل بالمستند الوجهة ، مع الحفاظ على تنسيق المصدر.
+ Utilizar el`AppendDocument` del documento de destino para agregar el documento de origen modificado al documento de destino, conservando el formato de origen.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند الوجهة
+## Paso 6: Guarde el documento de destino
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Finalmente, guarde el documento de destino modificado usando el`Save` metodo de la`Document` objeto.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند بإعدادات إعداد صفحة مختلفة باستخدام Aspose.Words for .NET.
+Esto completa la implementación de agregar un documento con diferentes configuraciones de configuración de página usando Aspose.Words para .NET.
 
-### مثال على شفرة المصدر لإعداد صفحة مختلفة باستخدام Aspose.Words for .NET 
+### Código fuente de ejemplo para configuración de página diferente usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بتعيين المستند المصدر للمتابعة مباشرة بعد نهاية المستند الوجهة.
+	// Configure el documento de origen para que continúe inmediatamente después del final del documento de destino.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// أعد تشغيل ترقيم الصفحات في بداية المستند المصدر.
+	// Reinicie la numeración de páginas al principio del documento de origen.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// لضمان عدم حدوث ذلك عندما يحتوي المستند المصدر على إعدادات إعداد صفحة مختلفة ، تأكد من أن
-	// الإعدادات متطابقة بين القسم الأخير من المستند الوجهة.
-	//إذا كانت هناك أقسام أخرى مستمرة تتبع في المستند المصدر ،
-	// هذا سوف يحتاج إلى أن يتكرر لتلك الأقسام.
+	// Para asegurarse de que esto no suceda cuando el documento de origen tiene una configuración de página diferente, asegúrese de que el
+	// la configuración es idéntica entre la última sección del documento de destino.
+	//Si hay más secciones continuas que siguen en el documento fuente,
+	// esto deberá repetirse para esas secciones.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;
-	// كرر خلال جميع الأقسام في المستند المصدر.
+	// Iterar a través de todas las secciones en el documento de origen.
 	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 	{
 		para.ParagraphFormat.KeepWithNext = true;

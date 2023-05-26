@@ -1,71 +1,71 @@
 ---
-title: الوصول إلى الأقسام حسب الفهرس
-linktitle: الوصول إلى الأقسام حسب الفهرس
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس وتغيير إعداداتها باستخدام Aspose.Words for .NET.
+title: Accès aux sections par index
+linktitle: Accès aux sections par index
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Dans ce didacticiel, découvrez comment accéder aux sections d'un document Word par index et modifier leurs paramètres avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-section/sections-access-by-index/
 ---
 
-في هذا البرنامج التعليمي ، سنوضح لك كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس باستخدام مكتبة Aspose.Words لـ .NET. يتيح لك الوصول إلى الأقسام حسب الفهرس استهداف قسم معين في المستند وتغيير إعداداته. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Dans ce didacticiel, nous allons vous montrer comment accéder aux sections d'un document Word par index à l'aide de la bibliothèque Aspose.Words pour .NET. L'accès aux sections par index vous permet de cibler une section spécifique de votre document et de modifier ses paramètres. Nous vous guiderons étape par étape pour vous aider à comprendre et à implémenter le code dans votre projet .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على الأقسام التي ترغب في تعديلها
+## Conditions préalables
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+- Une connaissance pratique du langage de programmation C#
+- La bibliothèque Aspose.Words pour .NET installée dans votre projet
+- Un document Word contenant les sections que vous souhaitez modifier
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+ Tout d'abord, vous devez définir le chemin du répertoire vers l'emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وانتقل إلى قسم بفهرس
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document`فصل. للوصول إلى قسم معين ، نستخدم فهرس القسم. في هذا المثال ، نصل إلى القسم الأول باستخدام الفهرس 0.
+## Étape 2 : Charger le document et accéder à une section par index
+ Ensuite, nous allons charger le document Word dans une instance du`Document`classe. Pour accéder à une section spécifique, nous utilisons l'index de la section. Dans cet exemple, nous accédons à la première section en utilisant l'index 0.
 
 ```csharp
-//قم بتحميل المستند
+//Charger le document
 Document doc = new Document(dataDir + "Document.docx");
 
-// الوصول إلى قسم بالفهرس
+// Accéder à une rubrique par index
 Section section = doc.Sections[0];
 ```
 
-## الخطوة 3: تحرير إعدادات القسم
- لتعديل إعدادات القسم ، نستخدم خصائص القسم`PageSetup` هدف. في هذا المثال ، نقوم بتغيير الهوامش ، ومسافة الرأس والتذييل ، وتباعد أعمدة النص.
+## Étape 3 : Modifier les paramètres de la section
+ Pour modifier les paramètres de la section, nous utilisons les propriétés de la section`PageSetup` objet. Dans cet exemple, nous modifions les marges, la distance de l'en-tête et du pied de page et l'espacement des colonnes de texte.
 
 ```csharp
-section.PageSetup.LeftMargin = 90; // 3.17 سم
-section.PageSetup.RightMargin = 90; // 3.17 سم
-section.PageSetup.TopMargin = 72; // 2.54 سم
-section.PageSetup.BottomMargin = 72; // 2.54 سم
-section.PageSetup.HeaderDistance = 35.4; // 1.25 سم
-section.PageSetup.FooterDistance = 35.4; // 1.25 سم
-section.PageSetup.TextColumns.Spacing = 35.4; // 1.25 سم
+section.PageSetup.LeftMargin = 90; // 3,17 cm
+section.PageSetup.RightMargin = 90; // 3,17 cm
+section.PageSetup.TopMargin = 72; // 2,54 cm
+section.PageSetup.BottomMargin = 72; // 2,54 cm
+section.PageSetup.HeaderDistance = 35.4; // 1,25 cm
+section.PageSetup.FooterDistance = 35.4; // 1,25 cm
+section.PageSetup.TextColumns.Spacing = 35.4; // 1,25 cm
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Sections Access By Index باستخدام Aspose.Words for .NET 
+### Exemple de code source pour l'accès aux sections par index à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
 Section section = doc.Sections[0];
-section.PageSetup.LeftMargin = 90; // 3.17 سم
-section.PageSetup.RightMargin = 90; // 3.17 سم
-section.PageSetup.TopMargin = 72; // 2.54 سم
-section.PageSetup.BottomMargin = 72; // 2.54 سم
-section.PageSetup.HeaderDistance = 35.4; // 1.25 سم
-section.PageSetup.FooterDistance = 35.4; // 1.25 سم
-section.PageSetup.TextColumns.Spacing = 35.4; // 1.25 سم
+section.PageSetup.LeftMargin = 90; // 3,17 cm
+section.PageSetup.RightMargin = 90; // 3,17 cm
+section.PageSetup.TopMargin = 72; // 2,54 cm
+section.PageSetup.BottomMargin = 72; // 2,54 cm
+section.PageSetup.HeaderDistance = 35.4; // 1,25cm
+section.PageSetup.FooterDistance = 35.4; // 1,25cm
+section.PageSetup.TextColumns.Spacing = 35.4; // 1,25cm
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس وتغيير إعداداتها باستخدام Aspose.Words for .NET. يتيح لك الوصول إلى الأقسام حسب الفهرس استهداف أقسام معينة في المستند وتخصيصها. لا تتردد في استخدام هذه الميزة لتلبية احتياجاتك الخاصة.
+## Conclusion
+Dans ce didacticiel, nous avons vu comment accéder aux sections d'un document Word par index et modifier leurs paramètres à l'aide de Aspose.Words pour .NET. L'accès aux sections par index vous permet de cibler et de personnaliser des sections spécifiques de votre document. N'hésitez pas à utiliser cette fonctionnalité pour répondre à vos besoins spécifiques.

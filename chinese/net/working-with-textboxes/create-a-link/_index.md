@@ -1,16 +1,16 @@
 ---
-title: إنشاء ارتباط
-linktitle: إنشاء ارتباط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء رابط بين TextBoxes في مستند Word باستخدام Aspose.Words for .NET.
+title: 创建链接
+linktitle: 创建链接
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中的文本框之间创建链接。
 type: docs
 weight: 10
 url: /zh/net/working-with-textboxes/create-a-link/
 ---
 
-## الخطوة 1: إعداد المستند وإنشاء أشكال TextBox
+## 第 1 步：设置文档并创建文本框形状
 
- للبدء ، نحتاج إلى إعداد المستند وإنشاء شكلين مربع نص. يقوم الكود التالي بتهيئة مثيل جديد لملف`Document` فئة وإنشاء شكلين لمربع النص:
+首先，我们需要设置文档并创建两个文本框形状。下面的代码初始化了一个新的实例`Document`类并创建两个文本框形状：
 
 ```csharp
 Document doc = new Document();
@@ -21,18 +21,18 @@ TextBox textBox1 = shape1.TextBox;
 TextBox textBox2 = shape2.TextBox;
 ```
 
-## الخطوة 2: إنشاء ارتباط بين مربعات النص
+## 第 2 步：在文本框之间创建链接
 
- سنقوم الآن بإنشاء رابط بين مربعي النص باستخدام امتداد`IsValidLinkTarget()` الطريقة و`Next` خاصية TextBox الأول.
+我们现在将使用`IsValidLinkTarget()`方法和`Next`第一个文本框的属性。
 
 ```csharp
 if (textBox1.IsValidLinkTarget(textBox2))
      textBox1. Next = textBox2;
 ```
 
- ال`IsValidLinkTarget()` يتحقق الأسلوب مما إذا كان يمكن أن يكون TextBox الثاني هدفًا صالحًا للارتباط الخاص بـ TextBox الأول. إذا نجح التحقق من الصحة ، فإن`Next` تم تعيين خاصية TextBox الأول على TextBox الثاني ، مما يؤدي إلى إنشاء ارتباط بين الاثنين.
+这`IsValidLinkTarget()`方法检查第二个 TextBox 是否可以成为第一个 TextBox 链接的有效目标。如果验证成功，则`Next`第一个 TextBox 的属性设置为第二个 TextBox，从而在两者之间创建链接。
 
-### مثال على شفرة المصدر للارتباط بـ Aspose.Words for .NET
+### 与 Aspose.Words for .NET 链接的示例源代码
 
 ```csharp
 Document doc = new Document();

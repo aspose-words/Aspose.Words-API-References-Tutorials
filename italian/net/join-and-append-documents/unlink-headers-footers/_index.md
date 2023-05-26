@@ -1,78 +1,78 @@
 ---
-title: فك ارتباط تذييلات الرؤوس
-linktitle: فك ارتباط تذييلات الرؤوس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الانضمام إلى مستندات Word وإلحاقها أثناء إلغاء ربط الرؤوس والتذييلات باستخدام Aspose.Words for .NET.
+title: Scollega intestazioni piè di pagina
+linktitle: Scollega intestazioni piè di pagina
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come unire e aggiungere documenti Word mentre scolleghi intestazioni e piè di pagina utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/join-and-append-documents/unlink-headers-footers/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Unlink Headers Footers في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء إلغاء ربط الرؤوس والتذييلات من المستند المصدر.
+Questo tutorial ti guiderà attraverso il processo di utilizzo della funzione Unlink Headers Footers di Aspose.Words per .NET. Questa funzione consente di unire e aggiungere documenti di Word scollegando intestazioni e piè di pagina dal documento di origine.
 
-## المتطلبات الأساسية
+## Prerequisiti
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Prima di iniziare, assicurati di avere quanto segue:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words per .NET installato. Puoi scaricarlo dal sito Web di Aspose o installarlo tramite NuGet.
+2. Visual Studio o qualsiasi altro ambiente di sviluppo C#.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Passaggio 1: inizializzare le directory dei documenti
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir` variabile al percorso in cui si trovano i documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Passaggio 2: caricare i documenti di origine e di destinazione
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Successivamente, è necessario caricare i documenti di origine e destinazione utilizzando Aspose.Words`Document` classe. Aggiorna i nomi dei file nel file`Document` costruttore in base ai nomi dei documenti.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إلغاء ربط الرؤوس والتذييلات في المستند المصدر
+## Passaggio 3: scollegare intestazioni e piè di pagina nel documento di origine
 
- لإلغاء ارتباط الرؤوس والتذييلات في المستند المصدر من متابعة رؤوس وتذييلات المستند الوجهة ، تحتاج إلى تعيين`LinkToPrevious` ممتلكات`HeadersFooters` المجموعة في القسم الأول من المستند المصدر إلى`false`.
+ Per scollegare le intestazioni e i piè di pagina nel documento di origine dalla continuazione delle intestazioni e dei piè di pagina del documento di destinazione, è necessario impostare il`LinkToPrevious` proprietà del`HeadersFooters` raccolta nella prima sezione del documento di origine a`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بمستند الوجهة
+## Passaggio 4: aggiungere il documento di origine al documento di destinazione
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Ora puoi aggiungere il documento di origine al documento di destinazione utilizzando il file`AppendDocument` metodo del`Document` classe. IL`ImportFormatMode.KeepSourceFormatting` Il parametro garantisce che la formattazione dell'origine venga preservata durante l'operazione di accodamento.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند النهائي
+## Passaggio 5: salvare il documento finale
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة Unlink Headers Footers باستخدام ملحق`Save` طريقة`Document` فصل.
+ Infine, salva il documento unito con la funzione Scollega intestazioni piè di pagina abilitata utilizzando il file`Save` metodo del`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 ```
 
-### مثال على شفرة المصدر لإلغاء ربط تذييلات الرؤوس باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Unlink Headers Footers utilizzando Aspose.Words per .NET
 
-إليك شفرة المصدر الكاملة لميزة "Unlink Headers Footers" في C # باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente completo per la funzionalità "Unlink Headers Footers" in C# utilizzando Aspose.Words per .NET:
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بفك ارتباط الرؤوس والتذييلات في المستند المصدر لإيقاف ذلك
-	// من متابعة رؤوس وتذييلات المستند الوجهة.
+	// Scollega le intestazioni e i piè di pagina nel documento di origine per interrompere questa operazione
+	// dal continuare le intestazioni e i piè di pagina del documento di destinazione.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Unlink Headers Footers باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الرؤوس والتذييلات من المستند المصدر غير المرتبط بالمستند الوجهة.
+Questo è tutto! Hai implementato con successo la funzione Unlink Headers Footers utilizzando Aspose.Words per .NET. Il documento finale conterrà il contenuto unito con le intestazioni e i piè di pagina del documento di origine scollegato dal documento di destinazione.

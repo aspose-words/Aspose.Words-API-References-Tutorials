@@ -1,36 +1,36 @@
 ---
-title: البرمجة مع الرسوم البيانية
-linktitle: البرمجة مع الرسوم البيانية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على رقم تنسيق تسمية البيانات ، وإنشاء مخطط باستخدام الشكل ، وإدراج مخطط عمودي بسيط ، وإدراج مخطط عمودي ، وإدراج مخطط منطقة ، وإدراج مخطط فقاعي ،
+title: Programmazione con i grafici
+linktitle: Programmazione con i grafici
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Le esercitazioni contengono il numero di formato dell'etichetta dei dati, creare un grafico utilizzando la forma, inserire un istogramma semplice, inserire un istogramma, inserire un grafico ad area, inserire un grafico a bolle,
 type: docs
 weight: 1540
 url: /it/net/programming-with-charts/
 ---
-تقدم Aspose.Words for .NET Graphics Programming Tutorials مصدرًا شاملاً لتعلم كيفية إنشاء الرسوميات ومعالجتها في مستندات Word الخاصة بك. توجهك البرامج التعليمية عبر خطوات إضافة المخططات وتخصيص مظهرها وتحرير البيانات والمزيد. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان ميزات الرسومات في Aspose.Words.
+Aspose.Words per i tutorial di programmazione grafica .NET offre una risorsa completa per imparare a creare e manipolare la grafica nei documenti di Word. I tutorial ti guidano attraverso i passaggi per aggiungere grafici, personalizzarne l'aspetto, modificare i dati e altro ancora. Che tu sia un principiante o uno sviluppatore esperto, questi tutorial ti aiuteranno a padroneggiare le funzionalità grafiche di Aspose.Words.
 
-في هذه البرامج التعليمية ، ستتعلم كيفية إنشاء أنواع مختلفة من المخططات مثل المخططات الشريطية ، والمخططات الدائرية ، ومخططات المنطقة ، والمخططات الخطية ، وما إلى ذلك. ستتعلم أيضًا كيفية تخصيص عناصر المخطط مثل العناوين ، ومفاتيح الرسم البياني ، وتسميات البيانات ، و المحاور. ستوضح لك البرامج التعليمية كيفية التعامل مع بيانات المخطط عن طريق إضافة سلسلة البيانات أو تعديلها أو حذفها.
+In questi tutorial imparerai come creare diversi tipi di grafici come grafici a barre, grafici a torta, grafici ad area, grafici a linee, ecc. Imparerai anche a personalizzare gli elementi del grafico come titoli, legende, etichette dati e assi. I tutorial ti mostreranno come manipolare i dati del grafico aggiungendo, modificando o eliminando serie di dati.
 
-باستخدام هذه البرامج التعليمية ، ستتمكن من تحسين مستندات Word الخاصة بك عن طريق إضافة رسومات جذابة وغنية بالمعلومات. ستتعلم كيفية الاستفادة من ميزات الرسومات المتقدمة في Aspose.Words for .NET ودمجها بشكل فعال في تطبيقاتك. استكشف هذه الدروس لتوسيع مهاراتك الرسومية في Aspose.Words.
+Con questi tutorial, sarai in grado di migliorare i tuoi documenti Word aggiungendo grafica visivamente accattivante e informativa. Imparerai come sfruttare le funzionalità grafiche avanzate di Aspose.Words per .NET e integrarle efficacemente nelle tue applicazioni. Esplora questi tutorial per espandere le tue abilità grafiche in Aspose.Words.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [تنسيق رقم تسمية البيانات](./format-number-of-data-label/) | تعرف على كيفية تنسيق عدد تسميات البيانات في مخطط باستخدام Aspose.Words for .NET. تخصيص تنسيقات الأرقام لتسميات البيانات بسهولة. |
-| [إنشاء مخطط باستخدام الشكل](./create-chart-using-shape/) | تعرف على كيفية إنشاء مخطط وتخصيصه باستخدام شكل في مستند Word باستخدام Aspose.Words for .NET. |
-| [إدراج مخطط عمودي بسيط](./insert-simple-column-chart/) | تعرف على كيفية إدراج مخطط عمودي بسيط في مستند باستخدام Aspose.Words for .NET. |
-| [إدراج مخطط عمودي](./insert-column-chart/) | تعرف على كيفية إدراج مخطط عمودي في مستند باستخدام Aspose.Words for .NET. |
-| [إدراج مخطط مساحي](./insert-area-chart/) | تعرف على كيفية إدراج مخطط مساحي في مستند باستخدام Aspose.Words for .NET. أضف بيانات السلسلة واحفظ المستند مع الرسم البياني. |
-| [إدراج مخطط فقاعي](./insert-bubble-chart/) | تعرف على كيفية إدراج مخطط فقاعي في مستند باستخدام Aspose.Words for .NET. أضف بيانات متسلسلة بقيم X و Y وقيم حجم الفقاعة. |
-| [إدراج مخطط مبعثر](./insert-scatter-chart/) | تعرف على كيفية إدراج مخطط مبعثر في مستند باستخدام Aspose.Words for .NET. أضف بيانات السلاسل بإحداثيات X و Y. |
-| [حدد خصائص XYAxis](./define-xyaxis-properties/) | تعرف على كيفية تحديد خصائص المحور XY في مخطط باستخدام Aspose.Words for .NET. يتم عرض خيارات التخصيص للمحاور X و Y. |
-| [قيم التاريخ والوقت إلى المحور](./date-time-values-to-axis/) | تعرف على كيفية إضافة قيم التاريخ والوقت إلى محور الرسم البياني باستخدام Aspose.Words for .NET. |
-| [تنسيق الأرقام للمحور](./number-format-for-axis/) | تعرف على كيفية تعيين تنسيق الأرقام لمحور في مخطط باستخدام Aspose.Words for .NET. |
-| [حدود المحور](./bounds-of-axis/) | تعرف على كيفية تعيين حدود المحور في مخطط باستخدام Aspose.Words for .NET للتحكم في نطاق القيم المعروضة على المحور. |
-| [وحدة الفاصل الزمني بين التسميات على المحور](./interval-unit-between-labels-on-axis/) | تعرف على كيفية تعيين وحدة الفاصل الزمني بين التسميات على محور الرسم البياني باستخدام Aspose.Words for .NET. |
-| [إخفاء محور التخطيط](./hide-chart-axis/) | تعرف على كيفية إخفاء محور الرسم البياني في مستند باستخدام Aspose.Words for .NET. إخفاء المحور لعرض مخطط أوضح وأكثر تركيزًا. |
-| [ضع علامة على محاذاة تسمية متعددة الأسطر](./tick-multi-line-label-alignment/) | تعرف على كيفية محاذاة تسميات التجزئة متعددة الأسطر في محور الرسم البياني باستخدام Aspose.Words for .NET. |
-| [تسمية بيانات المخطط](./chart-data-label/) | تعرف على كيفية إضافة تسميات البيانات وتخصيصها في مخطط باستخدام Aspose.Words for .NET لتوفير معلومات إضافية حول نقاط البيانات. |
-| [الخيارات الافتراضية لتسميات البيانات](./default-options-for-data-labels/) | تعرف على كيفية تعيين الخيارات الافتراضية لتسميات البيانات في مخطط باستخدام Aspose.Words for .NET. |
-| [نقطة بيانات مخطط واحد](./single-chart-data-point/) | تعرف على كيفية تخصيص نقطة بيانات واحدة في مخطط باستخدام Aspose.Words for .NET. |
-| [سلسلة مخطط واحد](./single-chart-series/) | تعرف على كيفية تخصيص سلسلة مخططات مفردة في مخطط باستخدام Aspose.Words for .NET. |
+| [Formato numero di etichetta dati](./format-number-of-data-label/) | Scopri come formattare il numero di etichette dati in un grafico utilizzando Aspose.Words per .NET. Personalizza facilmente i formati numerici per le etichette dei dati. |
+| [Crea grafico usando la forma](./create-chart-using-shape/) | Scopri come creare e personalizzare un grafico utilizzando una forma in un documento di Word utilizzando Aspose.Words per .NET. |
+| [Inserisci grafico a colonne semplice](./insert-simple-column-chart/) | Scopri come inserire un semplice istogramma in un documento utilizzando Aspose.Words per .NET. |
+| [Inserisci istogramma](./insert-column-chart/) | Scopri come inserire un istogramma in un documento utilizzando Aspose.Words per .NET. |
+| [Inserisci grafico ad area](./insert-area-chart/) | Scopri come inserire un grafico ad area in un documento utilizzando Aspose.Words per .NET. Aggiungi i dati della serie e salva il documento con il grafico. |
+| [Inserisci grafico a bolle](./insert-bubble-chart/) | Scopri come inserire un grafico a bolle in un documento utilizzando Aspose.Words per .NET. Aggiungi i dati della serie con i valori X, Y e delle dimensioni delle bolle. |
+| [Inserisci grafico a dispersione](./insert-scatter-chart/) | Scopri come inserire un grafico a dispersione in un documento utilizzando Aspose.Words per .NET. Aggiungi i dati della serie con le coordinate X e Y. |
+| [Definire le proprietà dell'asse XYA](./define-xyaxis-properties/) | Scopri come definire le proprietà dell'asse XY in un grafico utilizzando Aspose.Words per .NET. Vengono mostrate le opzioni di personalizzazione per gli assi X e Y. |
+| [Data Ora Valori all'asse](./date-time-values-to-axis/) | Scopri come aggiungere valori di data e ora all'asse di un grafico utilizzando Aspose.Words per .NET. |
+| [Formato numerico per asse](./number-format-for-axis/) | Scopri come impostare il formato numerico per un asse in un grafico utilizzando Aspose.Words per .NET. |
+| [Limiti dell'asse](./bounds-of-axis/) | Scopri come impostare i limiti di un asse in un grafico utilizzando Aspose.Words per .NET controllando l'intervallo di valori visualizzati sull'asse. |
+| [Unità di intervallo tra etichette sull'asse](./interval-unit-between-labels-on-axis/) | Scopri come impostare l'unità di intervallo tra le etichette sull'asse di un grafico utilizzando Aspose.Words per .NET. |
+| [Nascondi asse grafico](./hide-chart-axis/) | Scopri come nascondere l'asse del grafico in un documento utilizzando Aspose.Words per .NET. Nascondi l'asse per una visualizzazione del grafico più chiara e mirata. |
+| [Selezionare Allineamento etichetta multilinea](./tick-multi-line-label-alignment/) | Scopri come allineare le etichette multilinea del segno di spunta in un asse del grafico utilizzando Aspose.Words per .NET. |
+| [Etichetta dati grafico](./chart-data-label/) | Scopri come aggiungere e personalizzare le etichette dei dati in un grafico utilizzando Aspose.Words per .NET per fornire ulteriori informazioni sui punti dati. |
+| [Opzioni predefinite per le etichette dati](./default-options-for-data-labels/) | Scopri come impostare le opzioni predefinite per le etichette dei dati in un grafico utilizzando Aspose.Words per .NET. |
+| [Punto dati grafico singolo](./single-chart-data-point/) | Scopri come personalizzare un singolo punto dati in un grafico utilizzando Aspose.Words per .NET. |
+| [Serie di grafici singoli](./single-chart-series/) | Scopri come personalizzare una singola serie di grafici in un grafico utilizzando Aspose.Words per .NET. |

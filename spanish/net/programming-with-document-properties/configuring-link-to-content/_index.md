@@ -1,31 +1,31 @@
 ---
-title: تكوين ارتباط إلى المحتوى
-linktitle: تكوين ارتباط إلى المحتوى
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لإعداد الارتباط بالمحتوى في مستند باستخدام Aspose.Words for .NET.
+title: Configuración de enlace a contenido
+linktitle: Configuración de enlace a contenido
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para configurar enlaces a contenido en un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-document-properties/configuring-link-to-content/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإعداد الارتباط بالمحتوى باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة الارتباط بمحتوى معين في مستند.
+En este tutorial, lo guiaremos a través del código fuente de C# para configurar la vinculación al contenido con Aspose.Words para .NET. Esta característica le permite vincular contenido específico en un documento.
 
-## الخطوة 1: إعداد المشروع
+## Paso 1: Configuración del proyecto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
 
-## الخطوة الثانية: إنشاء المستند والمنشئ
+## Paso 2: Creando el Documento y el Constructor
 
-في هذه الخطوة ، سننشئ مستندًا جديدًا ونهيئ المُنشئ. استخدم الكود التالي:
+En este paso crearemos un nuevo documento e inicializaremos el constructor. Usa el siguiente código:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إنشاء إشارة مرجعية
+## Paso 3: crea un marcador
 
-الآن سنقوم بإنشاء إشارة مرجعية في المستند. استخدم الكود التالي لإنشاء إشارة مرجعية بنص بداخلها:
+Ahora vamos a crear un marcador en el documento. Use el siguiente código para crear un marcador con texto dentro:
 
 ```csharp
 builder. StartBookmark("MyBookmark");
@@ -33,16 +33,16 @@ builder.Writeln("Text inside a bookmark.");
 builder. EndBookmark("MyBookmark");
 ```
 
-ينشئ هذا الرمز إشارة مرجعية تسمى "MyBookmark" ويضيف بعض النص بداخله.
+Este código crea un marcador llamado "MyBookmark" y agrega algo de texto dentro.
 
-## الخطوة 4: إعداد ارتباط المحتوى
+## Paso 4: configurar el enlace de contenido
 
-الآن سنقوم بتكوين رابط المحتوى باستخدام خصائص المستند. استخدم الكود التالي لإضافة واسترداد ارتباط المحتوى:
+Ahora configuraremos el enlace al contenido usando las propiedades del documento. Use el siguiente código para agregar y recuperar el enlace al contenido:
 
 ```csharp
-// احصل على قائمة بجميع الخصائص المخصصة في المستند.
+// Obtenga la lista de todas las propiedades personalizadas en el documento.
 CustomDocumentProperties customProperties = doc.CustomDocumentProperties;
-// أضف خاصية مرتبطة بالمحتوى.
+// Agregue una propiedad vinculada al contenido.
 DocumentProperty customProperty = customProperties.AddLinkToContent("Bookmark", "MyBookmark");
 customProperty = customProperties["Bookmark"];
 
@@ -53,9 +53,9 @@ string linkSource = customProperty.LinkSource;
 string customPropertyValue = customProperty.Value.ToString();
 ```
 
-يضيف هذا الرمز خاصية متعلقة بالمحتوى تسمى "Bookmark" مع الإشارة المرجعية "MyBookmark". بعد ذلك ، يقوم باسترداد معلومات الخاصية المتعلقة بالمحتوى مثل حالة الارتباط ومصدر الارتباط وقيمة الخاصية.
+Este código agrega una propiedad relacionada con el contenido denominada "Marcador" con el marcador "MiMarcador". Luego, recupera información de propiedad relacionada con el contenido, como el estado del enlace, la fuente del enlace y el valor de la propiedad.
 
-### مثال على شفرة المصدر لتكوين ارتباط إلى المحتوى باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para configurar el enlace al contenido usando Aspose.Words para .NET
 
 ```csharp
 
@@ -66,9 +66,9 @@ string customPropertyValue = customProperty.Value.ToString();
 	builder.Writeln("Text inside a bookmark.");
 	builder.EndBookmark("MyBookmark");
 
-	// استرجع قائمة بكل خصائص المستند المخصصة من الملف.
+	// Recupere una lista de todas las propiedades de documentos personalizados del archivo.
 	CustomDocumentProperties customProperties = doc.CustomDocumentProperties;
-	// إضافة مرتبطة بخاصية المحتوى.
+	// Añadir vinculado a la propiedad de contenido.
 	DocumentProperty customProperty = customProperties.AddLinkToContent("Bookmark", "MyBookmark");
 	customProperty = customProperties["Bookmark"];
 
@@ -80,4 +80,4 @@ string customPropertyValue = customProperty.Value.ToString();
 
 ```
 
-لقد تعلمت الآن كيفية تكوين رابط المحتوى في مستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إنشاء وتكوين روابط لمحتوى معين في مستنداتك الخاصة.
+Ahora aprendió cómo configurar el enlace al contenido en un documento usando Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede crear y configurar fácilmente enlaces a contenido específico en sus propios documentos.

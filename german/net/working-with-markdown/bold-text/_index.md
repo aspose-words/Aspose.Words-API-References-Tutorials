@@ -1,51 +1,51 @@
 ---
-title: نص عريض
-linktitle: نص عريض
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية كتابة نص غامق باستخدام Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Fetter Text
+linktitle: Fetter Text
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Text mit Aspose.Words für .NET fett formatieren.
 type: docs
 weight: 10
 url: /de/net/working-with-markdown/bold-text/
 ---
 
-في هذا المثال ، سنخبرك بكيفية كتابة نص غامق باستخدام Aspose.Words for .NET. النص الغامق يجعله أكثر وضوحًا ويعطيه أهمية أكبر.
+In diesem Beispiel erklären wir Ihnen, wie Sie Text mit Aspose.Words für .NET fett formatieren. Durch die Fettschrift wird der Text besser sichtbar und hervorgehoben.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Schritt 1: Verwendung eines Dokumentengenerators
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Zuerst verwenden wir einen Dokumentgenerator, um Inhalte zu unserem Dokument hinzuzufügen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: نص عريض
+## Schritt 2: Fetter Text
 
- يمكننا جعل النص غامقًا عن طريق تعيين منشئ المستندات`Font.Bold` ملكية ل`true`.
+ Wir können den Text fett formatieren, indem wir ihn im Document Builder festlegen`Font.Bold` Eigentum zu`true`.
 
 ```csharp
 builder.Font.Bold = true;
 ```
 
-## الخطوة 3: أضف محتوى إلى المستند
+## Schritt 3: Fügen Sie dem Dokument Inhalte hinzu
 
- يمكننا الآن إضافة محتوى إلى المستند باستخدام طرق إنشاء المستندات ، مثل`Writeln`، مما يضيف سطرًا من النص.
+ Jetzt können wir mithilfe der Document Builder-Methoden Inhalte zum Dokument hinzufügen, z`Writeln`, wodurch eine Textzeile hinzugefügt wird.
 
 ```csharp
 builder.Writeln("This text will be bold");
 ```
 
-## مثال على كود المصدر للنص الغامق باستخدام Aspose.Words for .NET
+## Beispielquellcode für fetten Text mit Aspose.Words für .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص غامقًا.
+	// Machen Sie den Text fett.
 	builder.Font.Bold = true;
 	builder.Writeln("This text will be Bold");  
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية كتابة نص غامق باستخدام Aspose.Words for .NET.
+Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie mit Aspose.Words für .NET Text fett formatieren.
 
 

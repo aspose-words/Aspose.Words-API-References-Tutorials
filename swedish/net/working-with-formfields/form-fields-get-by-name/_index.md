@@ -1,61 +1,61 @@
 ---
-title: الحصول على حقول النموذج بالاسم
-linktitle: الحصول على حقول النموذج بالاسم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد وتعديل حقول النموذج بالاسم في مستندات Word باستخدام Aspose.Words for .NET.
+title: Formulärfält får efter namn
+linktitle: Formulärfält får efter namn
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du hämtar och ändrar formulärfält efter namn i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-formfields/form-fields-get-by-name/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لاسترداد حقول النماذج بالاسم من مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+I denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att hämta formulärfält efter namn från ett Word-dokument. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
-## الخطوة 1: تهيئة كائن المستند
+## Steg 1: Initiera dokumentobjektet
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق توفير المسار إلى المستند المصدر الذي يحتوي على حقول النموذج:
+ Initiera först`Document` objekt genom att ange sökvägen till ditt källdokument som innehåller formulärfält:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## الخطوة 2: استرجاع حقول النموذج
+## Steg 2: Hämta formulärfält
 
- بعد ذلك ، قم بالوصول إلى`FormFields` ممتلكات`Range` كائن في المستند لاسترداد جميع حقول النموذج:
+ Gå sedan till`FormFields` egendom av`Range` objekt i dokumentet för att hämta alla formulärfält:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;
 ```
 
-يمكنك استرداد حقول النموذج إما بالفهرس أو بالاسم. في هذا المثال ، نسترجع حقل نموذج باستخدام كلتا الطريقتين:
+Du kan hämta formulärfält antingen med index eller namn. I det här exemplet hämtar vi ett formulärfält med båda metoderna:
 
 ```csharp
-FormField formField1 = documentFormFields[3]; // استرجاع الفهرس
-FormField formField2 = documentFormFields["Text2"]; // استرجاع بالاسم
+FormField formField1 = documentFormFields[3]; // Hämtar efter index
+FormField formField2 = documentFormFields["Text2"]; // Hämtar med namn
 ```
 
-## الخطوة 3: تعديل خصائص حقل النموذج
+## Steg 3: Ändra formulärfältegenskaper
 
- بمجرد استرداد حقول النموذج ، يمكنك تعديل خصائصها حسب الحاجة. في هذا المثال ، نقوم بتغيير حجم الخط من`formField1` إلى 20 ولون خط`formField2` إلى الأحمر:
+ När du har hämtat formulärfälten kan du ändra deras egenskaper efter behov. I det här exemplet ändrar vi teckensnittsstorleken på`formField1` till 20 och teckensnittsfärgen på`formField2` till rött:
 
 ```csharp
 formField1.Font.Size = 20;
 formField2.Font.Color = Color.Red;
 ```
 
-## الخطوة 4: حفظ المستند
+## Steg 4: Spara dokumentet
 
-أخيرًا ، احفظ المستند المعدل:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-هذا كل شيء! لقد نجحت في استرداد حقول النموذج بالاسم وتعديل خصائصها في مستند Word باستخدام Aspose.Words for .NET.
+Det är allt! Du har framgångsrikt hämtat formulärfält efter namn och ändrat deras egenskaper i ett Word-dokument med Aspose.Words för .NET.
 
-### مثال على كود المصدر لحقول النموذج الحصول على حسب الاسم باستخدام Aspose.Words for .NET
+### Exempel på källkod för formulärfält Get By Name med Aspose.Words för .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
@@ -72,4 +72,4 @@ formField2.Font.Color = Color.Red;
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Använd gärna den här koden i dina egna projekt och modifiera den efter dina specifika krav.

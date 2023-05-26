@@ -1,57 +1,57 @@
 ---
-title: تحديث آخر خاصية مطبوعة
-linktitle: تحديث آخر خاصية مطبوعة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحديث خاصية "آخر طباعة" عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+title: Uppdatera senast utskrivna egenskap
+linktitle: Uppdatera senast utskrivna egenskap
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att uppdatera egenskapen "Senast utskriven" vid konvertering till PDF med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة تحديث خاصية "الطباعة الأخيرة" مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، سوف تكون قادرًا على فهم كيفية تكوين خيار تحديث خاصية "آخر طباعة" عند التحويل إلى PDF.
+Den här artikeln ger en steg-för-steg-guide om hur du använder egenskapsuppdateringsfunktionen "Sista utskrift" med Aspose.Words för .NET. Vi kommer att förklara varje del av koden i detalj. I slutet av den här handledningen kommer du att kunna förstå hur du konfigurerar alternativet att uppdatera egenskapen "Senast utskrivet" när du konverterar till PDF.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Innan du börjar, se till att du har installerat och konfigurerat Aspose.Words for .NET-biblioteket i ditt projekt. Du hittar biblioteket och installationsinstruktioner på Asposes webbplats.
 
-## الخطوة 1: تحديد دليل المستند
+## Steg 1: Definiera dokumentkatalogen
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ För att börja måste du definiera sökvägen till katalogen där dina dokument finns. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Steg 2: Ladda upp dokumentet
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Därefter måste vi ladda dokumentet vi vill bearbeta. I det här exemplet antar vi att dokumentet heter "Rendering.docx" och finns i den angivna dokumentkatalogen.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات حفظ كملف PDF مع خاصية "آخر طباعة" محدثة
+## Steg 3: Konfigurera Spara som PDF-alternativ med den uppdaterade egenskapen "Senast utskriven".
 
- لتمكين تحديث خاصية "Last Printed" عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن وتعيين`UpdateLastPrintedProperty` ملكية ل`true`.
+ För att möjliggöra uppdatering av egenskapen "Senast utskriven" vid konvertering till PDF, måste vi konfigurera`PdfSaveOptions` objekt och ställ in`UpdateLastPrintedProperty` egendom till`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
 ```
 
-## الخطوة 4: احفظ المستند بتنسيق PDF مع تحديث خاصية "آخر طباعة"
+## Steg 4: Spara dokumentet som en PDF med uppdateringen av egenskapen "Senast utskriven".
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Slutligen kan vi spara dokumentet i PDF-format med hjälp av de sparade alternativen som konfigurerats tidigare.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تمكين تحديث خاصية "آخر طباعة" عند تحويل مستند إلى PDF باستخدام Aspose.Words for .NET.
+Det är allt ! Du har framgångsrikt aktiverat uppdatering av egenskapen "Senast utskriven" när du konverterade ett dokument till PDF med Aspose.Words för .NET.
 
-### مثال على كود المصدر لتحديث خاصية "الطباعة الأخيرة" باستخدام Aspose.Words for .NET
+### Exempel på källkod för uppdatering av egenskapen "Senast utskriven" med Aspose.Words för .NET
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 

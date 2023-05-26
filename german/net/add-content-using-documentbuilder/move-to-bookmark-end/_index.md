@@ -1,64 +1,64 @@
 ---
-title: الانتقال إلى نهاية الإشارة المرجعية
-linktitle: الانتقال إلى نهاية الإشارة المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للانتقال إلى نهاية إشارة مرجعية في مستندات Word باستخدام هذا الدليل التفصيلي خطوة بخطوة.
+title: Zum Ende des Lesezeichens verschieben
+linktitle: Zum Ende des Lesezeichens verschieben
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET zum Ende eines Lesezeichens in Word-Dokumenten wechseln.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Bookmark End في Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تمكن المطورين من إنشاء وتعديل وتحويل مستندات Word برمجيًا. تسمح لنا ميزة Move To Bookmark End بالانتقال إلى نهاية إشارة مرجعية معينة داخل مستند وإضافة محتوى بعدها.
+In diesem Beispiel untersuchen wir die Funktion „Zum Ende des Lesezeichens verschieben“ von Aspose.Words für .NET. Aspose.Words ist eine leistungsstarke Dokumentbearbeitungsbibliothek, die es Entwicklern ermöglicht, Word-Dokumente programmgesteuert zu erstellen, zu ändern und zu konvertieren. Mit der Funktion „Zum Ende des Lesezeichens verschieben“ können wir zum Ende eines bestimmten Lesezeichens in einem Dokument navigieren und danach Inhalte hinzufügen.
 
-## تهيئة البيئة
+## Einrichten der Umgebung
 
-قبل الخوض في تفاصيل التنفيذ ، دعنا نتأكد من إعداد البيئة اللازمة للعمل مع Aspose.Words for .NET. تأكد من حصولك على ما يلي:
+Bevor wir uns mit den Implementierungsdetails befassen, stellen wir sicher, dass wir die erforderliche Umgebung für die Arbeit mit Aspose.Words für .NET eingerichtet haben. Stellen Sie sicher, dass Sie Folgendes haben:
 
-- تثبيت عملي لـ Aspose.Words لمكتبة .NET
-- المعرفة الأساسية بلغة البرمجة C #
-- الوصول إلى بيئة تطوير .NET
+- Eine funktionierende Installation der Aspose.Words für .NET-Bibliothek
+- Grundkenntnisse der Programmiersprache C#
+- Zugriff auf eine .NET-Entwicklungsumgebung
 
-## فهم ميزة Move To Bookmark End في Aspose.Words for .NET
+## Grundlegendes zur Funktion „An Lesezeichenende verschieben“ von Aspose.Words für .NET
 
-تسمح لك ميزة Move To Bookmark End بالانتقال إلى نهاية إشارة مرجعية في مستند Word باستخدام Aspose.Words for .NET. هذه الميزة مفيدة عندما تريد إضافة محتوى بعد إشارة مرجعية معينة في وثيقتك برمجيًا.
+Mit der Funktion „Zum Ende des Lesezeichens verschieben“ können Sie mit Aspose.Words für .NET zum Ende eines Lesezeichens in einem Word-Dokument navigieren. Diese Funktion ist nützlich, wenn Sie Inhalte nach einem bestimmten Lesezeichen in Ihrem Dokument programmgesteuert hinzufügen möchten.
 
-## شرح شفرة المصدر خطوة بخطوة
+## Den Quellcode Schritt für Schritt erklären
 
-دعنا نقسم كود المصدر المقدم خطوة بخطوة لفهم كيفية استخدام ميزة Move To Bookmark End في Aspose.Words for .NET.
+Lassen Sie uns den bereitgestellten Quellcode Schritt für Schritt aufschlüsseln, um zu verstehen, wie Sie die Funktion „An Lesezeichenende verschieben“ in Aspose.Words für .NET verwenden.
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## Schritt 1: Initialisieren des Dokuments und des Dokument-Builders
 
- أولاً ، نحتاج إلى تهيئة`Document` و`DocumentBuilder` أشياء:
+ Zuerst müssen wir das initialisieren`Document` Und`DocumentBuilder` Objekte:
 
 ```csharp
 Document doc = new Document(MyDir + "Bookmarks.docx");
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: الانتقال إلى نهاية الإشارة المرجعية
+## Schritt 2: Zum Ende des Lesezeichens wechseln
 
- للانتقال إلى نهاية إشارة مرجعية ، استخدم ملحق`MoveToBookmark` طريقة`DocumentBuilder` فصل:
+ Um zum Ende eines Lesezeichens zu gelangen, verwenden Sie die`MoveToBookmark` Methode der`DocumentBuilder` Klasse:
 
 ```csharp
 builder.MoveToBookmark("MyBookmark1", false, true);
 ```
 
- ال`MoveToBookmark` تأخذ الطريقة ثلاث معلمات:
-- اسم الإشارة المرجعية: أدخل اسم الإشارة المرجعية التي تريد الانتقال إليها.
--  IsBookmarkStart: اضبط على`false` للانتقال إلى نهاية الإشارة المرجعية.
--  IsBookmarkEnd: اضبط على`true` للإشارة إلى أنك تريد الانتقال إلى نهاية الإشارة المرجعية.
+ Der`MoveToBookmark` Die Methode benötigt drei Parameter:
+- Lesezeichenname: Geben Sie den Namen des Lesezeichens an, zu dem Sie verschieben möchten.
+-  IsBookmarkStart: Auf gesetzt`false` um zum Ende des Lesezeichens zu gelangen.
+-  IsBookmarkEnd: Auf gesetzt`true` um anzuzeigen, dass Sie zum Ende des Lesezeichens wechseln möchten.
 
-## الخطوة 3: إضافة محتوى في نهاية الإشارة المرجعية
+## Schritt 3: Inhalte am Ende des Lesezeichens hinzufügen
 
-بمجرد الانتقال إلى نهاية الإشارة المرجعية ، يمكنك إضافة محتوى باستخدام الطرق المختلفة التي يوفرها`DocumentBuilder` فصل. في هذا المثال ، نستخدم الامتداد`Writeln` طريقة كتابة سطر من النص:
+Sobald Sie zum Ende des Lesezeichens gelangt sind, können Sie mithilfe der verschiedenen von bereitgestellten Methoden Inhalte hinzufügen`DocumentBuilder` Klasse. In diesem Beispiel verwenden wir die`Writeln` Methode zum Schreiben einer Textzeile:
 
 ```csharp
 builder.Writeln("This is a bookmark.");
 ```
 
- ال`Writeln` تقوم الطريقة بإلحاق النص المحدد كفقرة جديدة في الموضع الحالي لملف`DocumentBuilder`.
+ Der`Writeln` Die Methode hängt den angegebenen Text als neuen Absatz an der aktuellen Position an`DocumentBuilder`.
 
-### مثال على شفرة المصدر لـ Move To Bookmark End باستخدام Aspose.Words for .NET
+### Beispielquellcode für „Move To Bookmark End“ mit Aspose.Words für .NET
 
 ```csharp
 
@@ -70,7 +70,7 @@ builder.Writeln("This is a bookmark.");
 	
 ```
 
-## خاتمة
+## Abschluss
 
-استكشفنا ميزة Move To Bookmark End في Aspose.Words for .NET. لقد تعلمنا كيفية الانتقال إلى نهاية إشارة مرجعية وإضافة محتوى برمجيًا باستخدام كود المصدر المقدم. توفر هذه الميزة المرونة في التعامل مع مستندات Word باستخدام Aspose.Words for .NET.
+Wir haben die Funktion „An Lesezeichenende verschieben“ von Aspose.Words für .NET untersucht. Wir haben gelernt, wie man mithilfe des bereitgestellten Quellcodes zum Ende eines Lesezeichens navigiert und Inhalte programmgesteuert hinzufügt. Diese Funktion bietet Flexibilität bei der Bearbeitung von Word-Dokumenten mit Aspose.Words für .NET.
 

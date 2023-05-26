@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM
-linktitle: أدخل حقل كتلة عنوان دمج المراسلات باستخدام DOM
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل كتلة عنوان دمج المراسلات في مستندات Word باستخدام Aspose.Words for .NET.
+title: Insérer un champ de bloc d'adresse de fusion et publipostage à l'aide de DOM
+linktitle: Insérer un champ de bloc d'adresse de fusion et publipostage à l'aide de DOM
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer un champ de bloc d'adresse de fusion et publipostage dans vos documents Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fields/insert-mail-merge-address-block-field-using-dom/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج حقل كتلة عنوان دمج المراسلات" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la fonctionnalité "Insert Mail Merge Address Block Field" d'Aspose.Words pour .NET. Assurez-vous de suivre attentivement chaque étape pour obtenir les résultats souhaités.
 
-## الخطوة 1: إعداد دليل المستند
+## Étape 1 : configuration du répertoire de documents
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Dans le code fourni, vous devez spécifier le répertoire de vos documents. Remplacez la valeur "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin approprié vers votre répertoire de documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## Étape 2 : Création du document et de DocumentBuilder
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Nous commençons par créer un nouveau document et initialiser un DocumentBuilder.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تحريك المؤشر إلى الفقرة
+## Étape 3 : Déplacer le curseur vers le paragraphe
 
- نحن نستخدم برنامج DocumentBuilder`MoveTo()` طريقة لتحريك المؤشر إلى الفقرة حيث نريد إدراج حقل كتلة عنوان دمج المراسلات.
+ Nous utilisons le DocumentBuilder`MoveTo()` méthode pour déplacer le curseur vers le paragraphe où nous voulons insérer le champ de bloc d'adresse de fusion et publipostage.
 
 ```csharp
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 builder. MoveTo(para);
 ```
 
-## الخطوة 4: إدراج حقل كتلة عنوان دمج المراسلات
+## Étape 4 : Insertion du champ de bloc d'adresse de publipostage
 
- نحن نستخدم برنامج DocumentBuilder`InsertField()` طريقة لإدراج حقل كتلة عنوان دمج المراسلات في الفقرة.
+ Nous utilisons le DocumentBuilder`InsertField()` méthode pour insérer un champ de bloc d'adresse de fusion et publipostage dans le paragraphe.
 
 ```csharp
 FieldAddressBlock field = (FieldAddressBlock)builder.InsertField(FieldType.FieldAddressBlock, false);
 ```
 
-نقوم بعد ذلك بتكوين خصائص حقل كتلة العنوان لتحديد الخيارات المناسبة ، مثل تضمين اسم البلد / المنطقة ، وتنسيق العنوان وفقًا للبلد / المنطقة ، وأسماء البلد / المنطقة المستبعدة ، وتنسيق الاسم والعنوان ، ومعرف اللغة.
+Nous configurons ensuite les propriétés du champ de bloc d'adresse en spécifiant les options appropriées, telles que l'inclusion du nom du pays/de la région, le formatage de l'adresse en fonction du pays/de la région, les noms de pays/de la région exclus, le format du nom et de l'adresse et l'identifiant de la langue.
 
 ```csharp
 field.IncludeCountryOrRegionName = "1";
@@ -54,13 +54,13 @@ field.NameAndAddressFormat = "Test3";
 field.LanguageId = "Test 4";
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Enfin, nous appelons le`Update()` méthode pour mettre à jour le champ.
 
 ```csharp
 field. Update();
 ```
 
-### نموذج لشفرة المصدر لإدخال حقل كتلة عنوان دمج المراسلات مع Aspose.Words for .NET
+### Exemple de code source pour insérer un champ de bloc d'adresse de fusion et publipostage avec Aspose.Words pour .NET
 
 ```csharp
 Document doc = new Document();
@@ -70,24 +70,24 @@ Paragraph para = (Paragraph) doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
 builder. MoveTo(para);
 
-// نريد إدراج كتلة عنوان لدمج البريد مثل هذا:
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3 \\ l \ "Test 4 \"}
+// Nous voulons insérer un bloc d'adresse de fusion et publipostage comme celui-ci :
+// { BLOC D'ADRESSES \\c 1 \\d \\e Test2 \\f Test3 \\l \"Test 4\" }
 
 FieldAddressBlock field = (FieldAddressBlock) builder.InsertField(FieldType.FieldAddressBlock, false);
 
-// {ADDRESSBLOCK \\ c 1 "}
+// { BLOC D'ADRESSES \\c 1" }
 field.IncludeCountryOrRegionName = "1";
 
-// {ADDRESSBLOCK \\ c 1 \\ d "}
+// { BLOC D'ADRESSES \\c 1 \\d" }
 field.FormatAddressOnCountryOrRegion = true;
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2}
+// { BLOC D'ADRESSES \\c 1 \\d \\e Test2 }
 field.ExcludedCountryOrRegionName = "Test2";
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3}
+// { BLOC D'ADRESSES \\c 1 \\d \\e Test2 \\f Test3 }
 field.NameAndAddressFormat = "Test3";
 
-// {ADDRESSBLOCK \\ c 1 \\ d \\ e Test2 \\ f Test3 \\ l \ "Test 4 \"}
+// { BLOC D'ADRESSES \\c 1 \\d \\e Test2 \\f Test3 \\l \"Test 4\" }
 field.LanguageId = "Test 4";
 
 field. Update();

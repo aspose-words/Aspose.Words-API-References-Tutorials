@@ -1,40 +1,40 @@
 ---
-title: استخدم أحرف التحكم
-linktitle: استخدم أحرف التحكم
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لاستخدام أحرف التحكم مع Aspose.Words for .NET.
+title: Använd kontrolltecken
+linktitle: Använd kontrolltecken
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att använda kontrolltecken med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-document-properties/use-control-characters/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لاستخدام أحرف التحكم مع Aspose.Words for .NET. تسمح لك هذه الميزة بمعالجة أحرف التحكم في النص.
+I den här handledningen går vi igenom C#-källkoden för att använda kontrolltecken med Aspose.Words för .NET. Denna funktion låter dig manipulera kontrolltecken i text.
 
-## الخطوة 1: إعداد المشروع
+## Steg 1: Projektinställning
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
 
-## الخطوة الثانية: استخدام أحرف التحكم
+## Steg 2: Använda kontrolltecken
 
-في هذه الخطوة ، سنستخدم أحرف التحكم في النص. استخدم الكود التالي:
+I det här steget kommer vi att använda kontrolltecken i en text. Använd följande kod:
 
 ```csharp
 const string text = "test\r";
-// استبدل حرف التحكم "\ r" بـ "\ r \ n".
+// Byt ut kontrolltecknet "\r" med "\r\n".
 string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 ```
 
- يحدد هذا الرمز أ`text` سلسلة تحتوي على حرف التحكم "\ r" (سطر جديد) وتستخدم الامتداد`Replace` طريقة استبداله بحرف التحكم "\ r \ n" (سطر جديد). خط متبوعًا بفاصل أسطر).
+ Denna kod definierar en`text` sträng som innehåller kontrolltecknet "\r" (nyrad) och använder`Replace` metod för att ersätta det med kontrolltecknet "\r\n" (ny rad). rad följt av en radbrytning).
 
-### مثال على شفرة المصدر لـ Use Control Characters باستخدام Aspose.Words for .NET
+### Exempel på källkod för Använd kontrolltecken med Aspose.Words för .NET
 
 ```csharp
 
 	const string text = "test\r";
-	// استبدل "\ r" حرف التحكم بـ "\ r \ n".
+	// Byt ut "\r" kontrolltecken med "\r\n".
 	string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 
 ```
- يمكنك استخدام الكود أعلاه في مشروعك الخاص عن طريق استبدال`text` سلسلة تحتوي على نص خاص بك يحتوي على أحرف تحكم.
+ Du kan använda ovanstående kod i ditt eget projekt genom att ersätta`text` sträng med din egen text som innehåller kontrolltecken.
 
-لقد تعلمت الآن كيفية استخدام أحرف التحكم مع Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة التعامل مع أحرف التحكم في تطبيقاتك الخاصة.
+Du har nu lärt dig hur du använder kontrolltecken med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide som finns i denna handledning kan du enkelt manipulera kontrolltecken i dina egna applikationer.

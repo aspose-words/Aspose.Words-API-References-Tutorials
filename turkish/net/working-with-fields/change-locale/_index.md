@@ -1,21 +1,21 @@
 ---
-title: تغيير اللغة
-linktitle: تغيير اللغة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير الإعدادات المحلية لتنسيق التاريخ والأرقام في مستندات Word باستخدام Aspose.Words for .NET.
+title: Yerel Ayarı Değiştir
+linktitle: Yerel Ayarı Değiştir
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerinde tarih ve sayı biçimlendirmesi için yerel ayarı nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/change-locale/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال عملية تغيير الإعدادات المحلية في مستندات Word باستخدام Aspose.Words for .NET. من خلال تعديل الإعدادات المحلية ، يمكنك التحكم في تنسيق التواريخ والأرقام أثناء عمليات دمج البريد. سنزودك بشفرة المصدر C # الضرورية والتعليمات خطوة بخطوة لتحقيق ذلك.
+Bu öğreticide, Aspose.Words for .NET kullanarak Word belgelerinde yerel ayarı değiştirme sürecinde size rehberlik edeceğiz. Yerel ayarı değiştirerek, adres mektup birleştirme işlemleri sırasında tarih ve sayıların biçimlendirmesini kontrol edebilirsiniz. Bunu başarmak için size gerekli C# kaynak kodunu ve adım adım yönergeleri sağlayacağız.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند و DocumentBuilder
-للبدء ، قم بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+## 1. Adım: Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfının bir örneğini ve DocumentBuilder nesnesini oluşturun:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,52 +23,52 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل حقل
-بعد ذلك ، أدخل حقل دمج في المستند باستخدام طريقة InsertField:
+## 2. Adım: Bir Alan Ekleyin
+Ardından, InsertField yöntemini kullanarak belgeye bir birleştirme alanı ekleyin:
 
 ```csharp
 builder.InsertField("MERGEFIELD Date");
 ```
 
-في الكود أعلاه ، نقوم بإدراج حقل دمج يسمى "التاريخ" في المستند.
+Yukarıdaki kodda, belgeye "Tarih" adlı bir birleştirme alanı ekliyoruz.
 
-## الخطوة 3: قم بتغيير اللغة
-لتغيير لغة تنسيق التاريخ والأرقام ، يمكنك تعديل الثقافة الحالية لمؤشر الترابط. في هذا المثال ، سنقوم بتعيين اللغة إلى الألمانية ("de-DE"):
+## 3. Adım: Yerel Ayarı Değiştirin
+Tarih ve sayı biçimlendirmesi için yerel ayarı değiştirmek için, iş parçacığının geçerli kültürünü değiştirebilirsiniz. Bu örnekte, yerel ayarı Almanca ("de-DE") olarak ayarlayacağız:
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-في الكود أعلاه ، نقوم بتخزين الثقافة الحالية ثم نقوم بتعيين ثقافة الخيط الحالي على اللغة الألمانية.
+Yukarıdaki kodda, mevcut kültürü saklıyoruz ve ardından mevcut iş parçacığının kültürünü Almanca olarak ayarlıyoruz.
 
-## الخطوة 4: قم بإجراء دمج المراسلات
-نفّذ عملية دمج المراسلات وقدم قيمة التاريخ لحقل "التاريخ":
+## Adım 4: Adres Mektup Birleştirme Gerçekleştirin
+Bir adres-mektup birleştirme işlemi gerçekleştirin ve "Tarih" alanı için tarih değerini girin:
 
 ```csharp
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-في مقتطف الشفرة هذا ، ننفذ عملية دمج المراسلات ونقدم التاريخ الحالي كقيمة لحقل "التاريخ".
+Bu kod parçasında adres-mektup birleştirme işlemini yürütüyoruz ve "Tarih" alanı için geçerli tarihi değer olarak giriyoruz.
 
-## الخطوة 5: استعادة الإعدادات المحلية الأصلية
-بعد اكتمال دمج المراسلات ، قم باستعادة البيانات الموروثة الأصلية لمؤشر الترابط:
+## 5. Adım: Orijinal Yerel Ayarı Geri Yükleyin
+Adres mektup birleştirme tamamlandıktan sonra, ileti dizisi için özgün kültürü geri yükleyin:
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = currentCulture;
 ```
 
-في الكود أعلاه ، نقوم باستعادة الثقافة الأصلية للخيط.
+Yukarıdaki kodda, iş parçacığının orijinal kültürünü geri yüklüyoruz.
 
-## الخطوة 6: احفظ المستند
-احفظ المستند المعدل في ملف باستخدام طريقة Save لفئة Document:
+## 6. Adım: Belgeyi Kaydedin
+Değiştirilen belgeyi Document sınıfının Save yöntemini kullanarak bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-### مثال على كود المصدر لتغيير اللغة باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لتغيير اللغة في مستندات Word باستخدام Aspose.Words for .NET:
+### Aspose.Words for .NET kullanarak Yerel Ayarı Değiştirmek için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak Word belgelerinde yerel ayarı değiştirmek için eksiksiz kaynak kodu burada:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -87,5 +87,5 @@ Thread.CurrentThread.CurrentCulture = currentCulture;
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تغيير اللغة في مستندات Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن التحكم في تنسيق التواريخ والأرقام أثناء عمليات دمج المراسلات. قم بتخصيص الإعدادات المحلية وفقًا لمتطلباتك لضمان التنسيق الدقيق والمتسق في مستنداتك.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak Word belgelerinde yerel ayarı nasıl değiştireceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, adres mektup birleştirme işlemleri sırasında tarihlerin ve sayıların biçimlendirmesini artık kontrol edebilirsiniz. Belgelerinizde doğru ve tutarlı biçimlendirme sağlamak için yerel ayarı gereksinimlerinize göre özelleştirin.

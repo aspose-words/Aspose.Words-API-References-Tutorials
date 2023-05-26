@@ -1,29 +1,29 @@
 ---
-title: قم بتعيين علامة توكيد الخط
-linktitle: قم بتعيين علامة توكيد الخط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين نمط تأكيد الخط في مستند Word باستخدام Aspose.Words for .NET.
+title: Définir la marque d'accentuation de la police
+linktitle: Définir la marque d'accentuation de la police
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à définir le style d'accentuation de la police dans un document Word à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/set-font-emphasis-mark/
 ---
 
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين نمط تأكيد الخط في مستند Word باستخدام Aspose.Words for .NET. يستخدم التركيز على الخط لتمييز بعض الكلمات أو العبارات في النص.
+Dans ce didacticiel, nous allons vous montrer comment définir le style d'accentuation de la police dans un document Word à l'aide de Aspose.Words pour .NET. L'accentuation de la police est utilisée pour mettre en évidence certains mots ou expressions dans le texte.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Conditions préalables
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+- Une connaissance pratique du langage de programmation C#
+- La bibliothèque Aspose.Words pour .NET installée dans votre projet
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+Commencez par définir le chemin du répertoire vers l'emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء وتخصيص المستند
- قم بإنشاء مثيل لـ`Document` فئة وما يرتبط بها`DocumentBuilder` لبناء محتوى الوثيقة. استخدم ال`Font.EmphasisMark`لتعيين نمط تأكيد الخط إلى`EmphasisMark.UnderSolidCircle` . ثم استخدم ملف`Write` و`Writeln` طرق`DocumentBuilder` لإضافة نص مع التركيز على الخط المحدد.
+## Étape 2 : Créez et personnalisez le document
+ Créer une instance de`Document` classe et un associé`DocumentBuilder` pour construire le contenu du document. Utilisez le`Font.EmphasisMark`propriété pour définir le style d'accentuation de la police sur`EmphasisMark.UnderSolidCircle` . Utilisez ensuite le`Write` et`Writeln` méthodes de la`DocumentBuilder` pour ajouter du texte avec l'emphase de police spécifiée.
 
 ```csharp
 Document document = new Document();
@@ -35,17 +35,17 @@ builder.Font.ClearFormatting();
 builder.Write("Simple text");
 ```
 
-## الخطوة 3: احفظ المستند
- احفظ المستند باستخدام ملف`Save` طريقة`Document` بالمسار واسم الملف المناسبين.
+## Étape 3 : Enregistrez le document
+ Enregistrez le document à l'aide de la`Save` méthode de la`Document` avec le chemin et le nom de fichier appropriés.
 
 ```csharp
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Font Emphasis Mark باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Set Font Emphasis Mark à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document document = new Document();
@@ -58,5 +58,5 @@ builder.Write("Simple text");
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تعيين نمط تأكيد الخط في مستند Word باستخدام Aspose.Words for .NET. جرب أنماطًا مختلفة من التركيز واستخدم هذه الميزة لتمييز الكلمات أو العبارات في مستنداتك.
+## Conclusion
+Dans ce didacticiel, vous avez appris à définir le style d'accentuation de la police dans un document Word à l'aide de Aspose.Words pour .NET. Expérimentez avec différents styles d'emphase et utilisez cette fonctionnalité pour mettre en évidence des mots ou des phrases dans vos documents.

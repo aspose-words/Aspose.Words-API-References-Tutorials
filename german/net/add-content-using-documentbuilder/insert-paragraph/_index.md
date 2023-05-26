@@ -1,21 +1,21 @@
 ---
-title: أدخل فقرة
-linktitle: أدخل فقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج فقرات منسقة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Absatz einfügen
+linktitle: Absatz einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET formatierte Absätze in Word-Dokumente einfügen.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/insert-paragraph/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج فقرات في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة فقرات منسقة إلى مستنداتك.
+In diesem umfassenden Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Absätze in ein Word-Dokument einfügen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieses Leitfadens werden Sie in der Lage sein, Ihren Dokumenten formatierte Absätze hinzuzufügen.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Schritt 1: Erstellen Sie ein neues Dokument und einen neuen DocumentBuilder
+Erstellen Sie zunächst ein neues Dokument mit der Document-Klasse und initialisieren Sie ein DocumentBuilder-Objekt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,8 +23,8 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تعيين الخط والتنسيق
-بعد ذلك ، قم بإعداد خصائص الخط وتنسيق الفقرة باستخدام كائنات Font و ParagraphFormat على التوالي:
+## Schritt 2: Schriftart und Formatierung festlegen
+Als Nächstes richten Sie die Schriftarteigenschaften und die Absatzformatierung mithilfe der Objekte „Font“ bzw. „ParagraphFormat“ ein:
 
 ```csharp
 Font font = builder.Font;
@@ -40,22 +40,22 @@ paragraphFormat.Alignment = ParagraphAlignment.Justify;
 paragraphFormat.KeepTogether = true;
 ```
 
-## الخطوة 3: أدخل فقرة
-بعد إعداد الخط والتنسيق ، استخدم طريقة Writeln لفئة DocumentBuilder لإدراج فقرة كاملة:
+## Schritt 3: Fügen Sie einen Absatz ein
+Nachdem Sie die Schriftart und Formatierung eingerichtet haben, verwenden Sie die Writeln-Methode der DocumentBuilder-Klasse, um einen ganzen Absatz einzufügen:
 
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```
 
-## الخطوة 4: احفظ المستند
-بعد إدراج الفقرة ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Schritt 4: Speichern Sie das Dokument
+Speichern Sie das Dokument nach dem Einfügen des Absatzes mit der Save-Methode der Document-Klasse in einer Datei:
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
-## مثال على كود المصدر لإدراج فقرة باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال فقرة باستخدام Aspose.Words for .NET:
+## Beispielquellcode zum Einfügen eines Absatzes mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode zum Einfügen eines Absatzes mit Aspose.Words für .NET:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -79,5 +79,5 @@ builder.Writeln("A whole paragraph.");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج فقرات منسقة في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إضافة فقرات مخصصة مع خطوط معينة وتنسيق ومحاذاة مستنداتك.
+## Abschluss
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET formatierte Absätze in ein Word-Dokument einfügen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie Ihren Dokumenten jetzt benutzerdefinierte Absätze mit bestimmten Schriftarten, Formatierungen und Ausrichtungen hinzufügen.

@@ -1,31 +1,31 @@
 ---
-title: إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه
-linktitle: إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إظهار أو إخفاء محتوى الإشارات المرجعية باستخدام Aspose.Words for .NET.
+title: Mostra Nascondi contenuto aggiunto ai segnalibri
+linktitle: Mostra Nascondi contenuto aggiunto ai segnalibri
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come mostrare o nascondere il contenuto dei segnalibri utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إظهار إخفاء المحتوى المرتبط بإشارة مرجعية في Aspose.Words for .NET library. تتيح لك هذه الميزة إظهار أو إخفاء محتويات إشارة مرجعية بناءً على شرط معين عند دمج البيانات.
+In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Mostra Nascondi contenuto con segnalibro nella libreria Aspose.Words per .NET. Questa funzione consente di mostrare o nascondere il contenuto di un segnalibro in base a una condizione specifica durante l'unione dei dati.
 
-## المتطلبات الأساسية
+## Prerequisiti
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conoscenza base del linguaggio C#.
+- Ambiente di sviluppo .NET con libreria Aspose.Words installata.
 
-## الخطوة 1: الحصول على الإشارة المرجعية
+## Passaggio 1: ottenere il segnalibro
 
- نحن نستخدم ال`Bookmarks` خاصية نطاق المستند للحصول على الإشارة المرجعية المحددة التي نريد إظهار المحتوى أو إخفائه:
+ Noi usiamo il`Bookmarks` proprietà dell'intervallo di documenti per ottenere il segnalibro specifico su cui vogliamo mostrare o nascondere il contenuto:
 
 ```csharp
 Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 ```
 
-## الخطوة 2: إدراج حقول الدمج
+## Passaggio 2: Inserimento dei campi di unione
 
- نحن نستخدم منشئ المستندات`DocumentBuilder` لإدراج حقول الدمج الضرورية. ستعمل حقول الدمج هذه على تعيين شرط لإظهار أو إخفاء محتوى الإشارة المرجعية بناءً على قيمة`showHide` عامل:
+ Usiamo un generatore di documenti`DocumentBuilder` per inserire i campi di unione necessari. Questi campi di unione imposteranno una condizione per mostrare o nascondere il contenuto del segnalibro a seconda del valore di`showHide` variabile:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -40,11 +40,11 @@ builder. Write("\"");
 builder. Write(" \"\"");
 ```
 
-## الخطوة 3: نقل محتوى الإشارة المرجعية
+## Passaggio 3: spostamento del contenuto dei segnalibri
 
-ندور محتويات الإشارة المرجعية وننقلها حتى تظهر
+Esaminiamo il contenuto del segnalibro e lo spostiamo in modo che appaia
 
-ISSE قبل الإشارة المرجعية. سيتحكم هذا في إظهار المحتوى أو إخفائه بناءً على الشرط المحدد:
+isse prima del segnalibro. Questo controllerà la visualizzazione o l'occultamento del contenuto in base alla condizione specificata:
 
 ```csharp
 Node currentNode = field. Start;
@@ -62,9 +62,9 @@ while (currentNode != null && flag)
 }
 ```
 
-## الخطوة 4: نقل باقي محتوى الإشارة المرجعية
+## Passaggio 4: spostare il resto del contenuto del segnalibro
 
-نقوم بنقل باقي محتوى الإشارة المرجعية بعد الإشارة المرجعية ، باستخدام عقدة نهاية الإشارة المرجعية كنقطة إدخال:
+Spostiamo il resto del contenuto del segnalibro dopo il segnalibro, utilizzando il nodo finale del segnalibro come punto di inserimento:
 
 ```csharp
 Node endNode = bm.BookmarkEnd;
@@ -82,17 +82,17 @@ while (currentNode != null && flag)
 }
 ```
 
-## الخطوة 5: تنفيذ الدمج
+## Passaggio 5: eseguire l'unione
 
- نحن نستخدم ال`Execute` طريقة الوثيقة`s `دمج المراسلات` object to execute the merge using the bookmark name and the value of the `متغير showHide`:
+ Noi usiamo il`Execute` metodo del documento`s `Stampa unione` object to execute the merge using the bookmark name and the value of the `mostraNascondi` variabile:
 
 ```csharp
 doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 ```
 
-### مثال على شفرة المصدر لـ Show Hide Bookmarked Content باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per Mostra Nascondi contenuto con segnalibro utilizzando Aspose.Words per .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح إظهار أو إخفاء محتوى الإشارة المرجعية باستخدام Aspose.Words for .NET:
+Ecco l'esempio completo del codice sorgente per mostrare o nascondere il contenuto dei segnalibri utilizzando Aspose.Words per .NET:
 
 ```csharp
 
@@ -101,7 +101,7 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.MoveToDocumentEnd();
 
-	// {إذا كان "{MERGEFIELD إشارة مرجعية}" = "صحيح" "" ""}
+	// {IF "{MERGEFIELD segnalibro}" = "vero" "" ""}
 	Field field = builder.InsertField("IF \"", null);
 	builder.MoveTo(field.Start.NextSibling);
 	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
@@ -142,6 +142,6 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 
 ```
 
-## خاتمة
+## Conclusione
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة إظهار إخفاء المحتوى المرتبط بإشارة مرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإظهار أو إخفاء محتويات إشارة مرجعية بناءً على شرط معين عند دمج البيانات.
+In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzionalità Mostra Nascondi contenuto con segnalibro di Aspose.Words per .NET. Abbiamo seguito una guida dettagliata per mostrare o nascondere il contenuto di un segnalibro in base a una condizione specifica durante l'unione dei dati.

@@ -1,36 +1,36 @@
 ---
-title: تحذيرات تقديم ملف PDF
-linktitle: تحذيرات تقديم ملف PDF
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة للتعامل مع تحذيرات عرض PDF باستخدام Aspose.Words for .NET.
+title: Pdf Oluşturma Uyarıları
+linktitle: Pdf Oluşturma Uyarıları
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile PDF oluşturma uyarılarını ele almak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة تحذيرات عرض PDF مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، سوف تكون قادرًا على فهم كيفية التعامل مع تحذيرات العرض عند التحويل إلى PDF.
+Bu makale, PDF oluşturma uyarıları özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, PDF'ye dönüştürürken görüntü oluşturma uyarılarıyla nasıl başa çıkacağınızı öğrenebileceksiniz.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
-## الخطوة 1: تحديد دليل المستند
+## 1. Adım: Belge dizinini tanımlayın
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Başlamak için, belgelerinizin bulunduğu dizine giden yolu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## 2. Adım: Belgeyi yükleyin
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "WMF with image.docx" ويقع في دليل المستندات المحدد.
+Ardından, işlemek istediğimiz belgeyi yüklememiz gerekiyor. Bu örnekte, belgenin "image.docx ile WMF" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "WMF with image.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ كملف PDF مع تحذيرات التقديم
+## 3. Adım: Oluşturma uyarılarıyla PDF olarak kaydetme seçeneklerini yapılandırın
 
-للتعامل مع تحذيرات التجسيد عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`MetafileRenderingOptions` لتحديد كيفية عرض ملفات التعريف. نستخدم أيضًا ملف`HandleDocumentWarnings` خيار للتعامل مع التحذيرات التي تم إنشاؤها عند حفظ المستند.
+PDF'ye dönüştürürken işleme uyarılarını işlemek için,`MetafileRenderingOptions` meta dosyalarının nasıl işlendiğini belirtmek için nesne. biz de kullanıyoruz`HandleDocumentWarnings` Belgeyi kaydederken oluşturulan uyarıları işleme seçeneği.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -45,17 +45,17 @@ HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع تحذيرات التقديم
+## 4. Adım: Belgeyi oluşturma uyarılarıyla PDF olarak kaydedin
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Son olarak, daha önce yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedebiliriz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfRenderWarnings.pdf", saveOptions);
 ```
 
-## الخطوة 5: التعامل مع تحذيرات العرض
+## 5. Adım: Oluşturma uyarılarını işleyin
 
-يمكن استرجاع تحذيرات التجسيد التي تم إنشاؤها عند حفظ المستند باستخدام معالج التحذير المخصص. في هذا المثال ، نقوم ببساطة بطباعة وصف كل تحذير.
+Belgeyi kaydederken oluşturulan oluşturma uyarıları, özel uyarı işleyici kullanılarak alınabilir. Bu örnekte, her uyarının açıklamasını basıyoruz.
 
 ```csharp
 foreach(WarningInfo warningInfo in callback.mWarnings)
@@ -64,15 +64,15 @@ foreach(WarningInfo warningInfo in callback.mWarnings)
 }
 ```
 
-هذا كل شئ ! لقد نجحت في معالجة تحذيرات العرض عند تحويل مستند
+Bu kadar ! Bir belgeyi dönüştürürken işleme uyarılarını başarıyla ele aldınız
 
-  إلى PDF باستخدام Aspose.Words for .NET.
+  Aspose.Words for .NET kullanarak PDF'ye.
 
-### نموذج التعليمات البرمجية المصدر لتحذيرات عرض PDF باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile PDF oluşturma uyarıları için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "WMF with image.docx");
 
@@ -83,14 +83,14 @@ foreach(WarningInfo warningInfo in callback.mWarnings)
 
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 
-	// إذا تعذر على Aspose.Words عرض بعض سجلات ملف التعريف بشكل صحيح
-	// إلى الرسومات المتجهة ، ثم يقوم Aspose.Words بجعل ملف التعريف هذا إلى صورة نقطية.
+	// Aspose.Words bazı meta dosyası kayıtlarını doğru şekilde oluşturamıyorsa
+	// sonra Aspose.Words bu meta dosyasını bir bitmap'e dönüştürür.
 	HandleDocumentWarnings callback = new HandleDocumentWarnings();
 	doc.WarningCallback = callback;
 
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfRenderWarnings.pdf", saveOptions);
 
-	// أثناء حفظ الملف بنجاح ، يتم هنا تجميع تحذيرات العرض التي حدثت أثناء الحفظ.
+	// Dosya başarıyla kaydedilirken, kaydetme sırasında oluşan render uyarıları burada toplanır.
 	foreach (WarningInfo warningInfo in callback.mWarnings)
 	{
 		Console.WriteLine(warningInfo.Description);

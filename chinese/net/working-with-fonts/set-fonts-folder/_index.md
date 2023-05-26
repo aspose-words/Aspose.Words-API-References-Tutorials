@@ -1,36 +1,36 @@
 ---
-title: تعيين مجلد الخطوط
-linktitle: تعيين مجلد الخطوط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين دليل الخطوط في Aspose.Words for .NET وتأكد من توفر الخطوط المستخدمة في مستنداتك.
+title: 设置字体文件夹
+linktitle: 设置字体文件夹
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何在 Aspose.Words for .NET 中设置字体目录并确保文档中使用的字体的可用性。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/set-fonts-folder/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين دليل الخطوط في Aspose.Words for .NET. ستتعلم كيفية تحديد الدليل الذي يحتوي على الخطوط المستخدمة في مستند Word الخاص بك.
+在本教程中，我们将向您展示如何在 Aspose.Words for .NET 中设置字体目录。您将学习如何指定包含 Word 文档中使用的字体的目录。
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## 先决条件
+在开始之前，请确保您拥有以下物品：
+- C# 编程语言的应用知识
+- 项目中安装的 .NET 的 Aspose.Words 库
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 第一步：定义文档目录
+首先将目录路径设置为 Word 文档的位置。代替`"YOUR DOCUMENT DIRECTORY"`在具有适当路径的代码中。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تعيين دليل الخطوط
- قم بإنشاء مثيل لـ`FontSettings` فئة واستخدام`SetFontsFolder` طريقة لتحديد الدليل الذي يحتوي على الخطوط. يستبدل`"Fonts"` باسم دليل الخطوط الفعلي.
+## 第二步：设置字体目录
+创建一个实例`FontSettings`上课并使用`SetFontsFolder`方法来指定包含字体的目录。代替`"Fonts"`使用实际字体目录的名称。
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.SetFontsFolder(dataDir + "Fonts", false);
 ```
 
-## الخطوة 3: قم بتحميل المستند بإعدادات الخط
- استخدم ال`LoadOptions` فئة لتحديد إعدادات الخط في ملف`FontSettings` خيار. ثم استخدم ملف`Document` فئة لتحميل المستند باستخدام هذه الخيارات.
+## 第 3 步：加载带有字体设置的文档
+使用`LoadOptions`类来指定字体设置`FontSettings`选项。然后使用`Document`使用这些选项加载文档的类。
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
@@ -39,11 +39,11 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Fonts Folder باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 设置字体文件夹的示例源代码 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();
@@ -54,5 +54,5 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-## خاتمة
-تهنئة ! أنت تعرف الآن كيفية تعيين دليل الخطوط في Aspose.Words for .NET. يمكنك استخدام هذه الميزة لضمان توفر الخطوط المستخدمة في وثيقتك ولضمان التناسق في عرض الخطوط.
+## 结论
+恭喜！您现在知道如何在 Aspose.Words for .NET 中设置字体目录了。您可以使用此功能来确保文档中使用的字体的可用性，并确保字体显示的一致性。

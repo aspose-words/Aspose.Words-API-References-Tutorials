@@ -1,56 +1,56 @@
 ---
-title: تحويل إلى خلايا مدمجة أفقيًا
-linktitle: تحويل إلى خلايا مدمجة أفقيًا
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word باستخدام Aspose.Words for .NET.
+title: Converti in celle unite orizzontalmente
+linktitle: Converti in celle unite orizzontalmente
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come convertire le celle della tabella in celle unite orizzontalmente in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words for .NET لتحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من معالجة خلايا الجدول في مستندات Word الخاصة بك برمجيًا.
+In questo tutorial impareremo come utilizzare Aspose.Words per .NET per convertire le celle della tabella in celle unite orizzontalmente in un documento di Word. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di manipolare le celle della tabella nei tuoi documenti Word a livello di codice.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Passaggio 1: impostazione del progetto
+1. Avvia Visual Studio e crea un nuovo progetto C#.
+2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+## Passaggio 2: caricamento del documento e accesso alla tabella
+Per iniziare a lavorare con la tabella, dobbiamo caricare il documento che la contiene e accedervi. Segui questi passi:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Carica il documento
 Document doc = new Document(dataDir + "Table with merged cells.docx");
 
-// الوصول إلى المصفوفة
+// Accesso all'array
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات. تأكد أيضًا من أن المستند يحتوي على جدول به خلايا مدمجة أفقيًا.
+Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti. Inoltre, assicurati che il documento contenga una tabella con celle unite orizzontalmente.
 
-## الخطوة 3: التحويل إلى خلايا مدمجة أفقيًا
- بعد ذلك ، سنقوم بتحويل خلايا الجدول إلى خلايا مدمجة أفقيًا باستخدام الامتداد`ConvertToHorizontallyMergedCells()` طريقة. استخدم الكود التالي:
+## Passaggio 3: converti in celle unite orizzontalmente
+ Successivamente, convertiremo le celle della tabella in celle unite orizzontalmente utilizzando il file`ConvertToHorizontallyMergedCells()` metodo. Usa il seguente codice:
 
 ```csharp
-// التحويل إلى خلايا مدمجة أفقيًا
+// Converti in celle unite orizzontalmente
 table. ConvertToHorizontallyMergedCells();
 ```
 
- هنا فقط نسمي`ConvertToHorizontallyMergedCells()` الطريقة على المصفوفة لإجراء التحويل.
+ Qui chiamiamo semplicemente il`ConvertToHorizontallyMergedCells()` metodo sull'array per eseguire la conversione.
 
-### عينة من التعليمات البرمجية المصدر للتحويل إلى خلايا مدمجة أفقيًا باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Converti in celle unite orizzontalmente utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table with merged cells.docx");
 	Table table = doc.FirstSection.Body.Tables[0];
-	// تحتوي الخلايا المدمجة الآن على أعلام دمج مناسبة.
+	// Ora le celle unite hanno flag di unione appropriati.
 	table.ConvertToHorizontallyMergedCells();
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تحويل خلايا الجدول إلى خلايا مدمجة أفقيًا في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك معالجة خلايا الجدول في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة إدارة وتنظيم بياناتك بطريقة مرنة ومخصصة في جدول.
+## Conclusione
+In questo tutorial, abbiamo imparato come convertire le celle della tabella in celle unite orizzontalmente in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi manipolare le celle della tabella nei documenti di Word a livello di codice. Questa funzionalità ti consente di gestire e organizzare i tuoi dati in modo flessibile e personalizzato in una tabella.

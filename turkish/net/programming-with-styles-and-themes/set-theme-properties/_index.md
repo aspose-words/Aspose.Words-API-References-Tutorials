@@ -1,27 +1,27 @@
 ---
-title: تعيين خصائص الموضوع
-linktitle: تعيين خصائص الموضوع
-second_title: Aspose.Words لمراجع .NET API
-description: تعلم كيفية تخصيص مظهر مستنداتك عن طريق تغيير خصائص النسق باستخدام Aspose.Words for .NET. احصل على نتائج احترافية وجذابة.
+title: Tema Özelliklerini Ayarla
+linktitle: Tema Özelliklerini Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile tema özelliklerini değiştirerek belgelerinizin görünümünü özelleştirmeyi öğrenin. Profesyonel ve çekici sonuçlar elde edin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-styles-and-themes/set-theme-properties/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لتعيين خصائص السمات للمستند باستخدام Aspose.Words for .NET. سنقوم بتغيير الخطوط الثانوية وألوان السمات.
+Bu öğreticide, Aspose.Words for .NET kullanan bir belgenin tema özelliklerini ayarlamak için sağlanan C# kaynak kodunu inceleyeceğiz. İkincil yazı tiplerini ve tema renklerini değiştireceğiz.
 
-## الخطوة الأولى: تهيئة البيئة
+## 1. Adım: Ortamı ayarlama
 
-تأكد من قيامك بإعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Aspose.Words for .NET ile geliştirme ortamınızı kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
-## الخطوة 2: إنشاء كائن مستند
+## 2. Adım: Belge Nesnesi Oluşturma
 
 ```csharp
 Document doc = new Document();
 ```
 
- في هذه الخطوة ، نقوم بإنشاء ملف`Document` هدف.
+ Bu adımda yeni bir tane oluşturuyoruz.`Document` nesne.
 
-## الخطوة 3: تحرير خصائص النسق
+## 3. Adım: Tema özelliklerini düzenleyin
 
 ```csharp
 Aspose.Words.Themes.Theme theme = doc.Theme;
@@ -29,15 +29,15 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- في هذه الخطوة ، نصل إلى ملف`Theme` كائن`Document` كائن للحصول على سمة المستند. بعد ذلك ، يمكننا تعديل خصائص النسق مثل الخطوط الثانوية (`MinorFonts.Latin`) والألوان (`Colors.Hyperlink`).
+ Bu adımda, eriştiğimiz`Theme` nesnesi`Document` belge temasını almak için nesne. Ardından, ikincil yazı tipleri gibi tema özelliklerini değiştirebiliriz (`MinorFonts.Latin`) ve renkler (`Colors.Hyperlink`).
 
-## الخطوة 4: احفظ المستند
+## 4. Adım: Belgeyi kaydedin
 
-في هذه الخطوة الأخيرة ، يمكنك حفظ المستند المعدل حسب الحاجة.
+Bu son adımda, değiştirilen belgeyi gerektiği gibi kaydedebilirsiniz.
 
-يمكنك تشغيل التعليمات البرمجية المصدر لتعيين خصائص النسق لمستند. يتيح لك هذا تخصيص الخطوط والألوان المستخدمة في السمة لتحقيق مظهر متناسق عبر مستنداتك.
+Bir belge için tema özelliklerini ayarlamak üzere kaynak kodu çalıştırabilirsiniz. Bu, belgelerinizde tutarlı bir görünüm elde etmek için temada kullanılan yazı tiplerini ve renkleri özelleştirmenizi sağlar.
 
-### نموذج التعليمات البرمجية المصدر لـ Set Theme Properties باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Set Theme Properties için örnek kaynak kodu 
 ```csharp
             
 Document doc = new Document();
@@ -49,12 +49,12 @@ theme.Colors.Hyperlink = Color.Gold;
         
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة تعيين خصائص سمة المستند باستخدام Aspose.Words for .NET. من خلال تغيير الخطوط الثانوية وألوان النسق ، يمكنك تخصيص مظهر مستنداتك والحفاظ على التناسق البصري.
+Bu eğitimde, Aspose.Words for .NET ile bir belgenin tema özelliklerini ayarlama işlevini inceledik. İkincil yazı tiplerini ve tema renklerini değiştirerek belgelerinizin görünümünü özelleştirebilir ve görsel tutarlılığı koruyabilirsiniz.
 
-يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية لمعالجة أنماط المستندات والسمات. من خلال تعديل خصائص النسق ، يمكنك تكييف مظهر مستنداتك مع الاحتياجات المحددة لمشروعك أو علامتك التجارية.
+Aspose.Words for .NET, belge stillerinizi ve temalarınızı değiştirmek için güçlü bir API sunar. Temanın özelliklerini değiştirerek, belgelerinizin görünümünü projenizin veya markanızın özel ihtiyaçlarına göre uyarlayabilirsiniz.
 
-لا تنس حفظ المستند الذي تم تحريره بمجرد تعيين خصائص السمة.
+Tema özellikleri ayarlandıktan sonra düzenlenen belgenizi kaydetmeyi unutmayın.
 
-اكتشف المزيد من الميزات التي تقدمها Aspose.Words for .NET لتحسين سير عملك وتحقيق مستندات احترافية وجذابة.
+İş akışınızı optimize etmek ve profesyonel ve çekici belgeler elde etmek için Aspose.Words for .NET tarafından sunulan diğer özellikleri keşfedin.

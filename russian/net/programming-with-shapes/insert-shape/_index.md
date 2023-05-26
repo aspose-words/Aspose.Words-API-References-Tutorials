@@ -1,38 +1,38 @@
 ---
-title: أدخل الشكل
-linktitle: أدخل الشكل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الأشكال في مستند Word باستخدام Aspose.Words for .NET.
+title: Вставить фигуру
+linktitle: Вставить фигуру
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как вставлять фигуры в документ Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-shapes/insert-shape/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إدراج الأشكال في مستند Word باستخدام Aspose.Words for .NET. يمكن استخدام الأشكال لتحسين المظهر المرئي وتخطيط المستندات الخاصة بك.
+В этом руководстве объясняется, как вставлять фигуры в документ Word с помощью Aspose.Words для .NET. Фигуры можно использовать для улучшения внешнего вида и макета ваших документов.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Предпосылки
+Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Установлена библиотека Aspose.Words for .NET.
+- Базовые знания C# и работы с документами Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Шаг 1. Настройте каталог документов
+ Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Шаг 2: Создайте новый документ и DocumentBuilder
+ Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для работы с документом.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: أدخل الأشكال
- استخدم ال`InsertShape` طريقة`DocumentBuilder` كائن لإدراج الأشكال في المستند. حدد نوع الشكل والمواضع النسبية الأفقية والعمودية وأبعاد الصفحة وحجمها ونوع الالتفاف. يمكنك أيضًا ضبط زاوية دوران الأشكال إذا رغبت في ذلك.
+## Шаг 3: Вставьте фигуры
+ Использовать`InsertShape` метод`DocumentBuilder` объект для вставки фигур в документ. Укажите тип фигуры, относительное положение по горизонтали и вертикали, размеры страницы, размер и тип обтекания. Вы также можете установить угол поворота фигур, если хотите.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,
@@ -43,8 +43,8 @@ shape = builder.InsertShape(ShapeType.TextBox, 50, 50);
 shape.Rotation = 30.0;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithShapes.InsertShape.docx".
+## Шаг 4: Сохраните документ
+ Сохраните документ в указанную директорию с помощью`Save` метод. Укажите желаемое имя файла с соответствующим расширением файла. В этом примере мы сохраняем документ как «WorkingWithShapes.InsertShape.docx».
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
@@ -54,10 +54,10 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-### مثال على التعليمات البرمجية المصدر لـ Insert Shape باستخدام Aspose.Words for .NET 
+### Пример исходного кода для вставки фигуры с использованием Aspose.Words для .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -75,4 +75,4 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 	doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-هذا كل شيء! لقد نجحت في إدراج الأشكال في مستند Word باستخدام Aspose.Words for .NET.
+Вот и все! Вы успешно вставили фигуры в документ Word с помощью Aspose.Words для .NET.

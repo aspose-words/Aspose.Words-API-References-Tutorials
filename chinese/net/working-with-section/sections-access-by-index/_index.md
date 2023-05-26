@@ -1,71 +1,71 @@
 ---
-title: الوصول إلى الأقسام حسب الفهرس
-linktitle: الوصول إلى الأقسام حسب الفهرس
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس وتغيير إعداداتها باستخدام Aspose.Words for .NET.
+title: 按索引访问的部分
+linktitle: 按索引访问的部分
+second_title: Aspose.Words for .NET API 参考
+description: 在本教程中，学习如何通过索引访问 Word 文档的部分并使用 Aspose.Words for .NET 更改它们的设置。
 type: docs
 weight: 10
 url: /zh/net/working-with-section/sections-access-by-index/
 ---
 
-في هذا البرنامج التعليمي ، سنوضح لك كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس باستخدام مكتبة Aspose.Words لـ .NET. يتيح لك الوصول إلى الأقسام حسب الفهرس استهداف قسم معين في المستند وتغيير إعداداته. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+在本教程中，我们将向您展示如何使用 .NET 的 Aspose.Words 库通过索引访问 Word 文档的各个部分。按索引访问部分允许您定位文档中的特定部分并更改其设置。我们将带您一步一步地帮助您理解和实现您的 .NET 项目中的代码。
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على الأقسام التي ترغب في تعديلها
+## 先决条件
+在开始之前，请确保您拥有以下物品：
+- C# 编程语言的应用知识
+- 项目中安装的 .NET 的 Aspose.Words 库
+- 包含您要修改的部分的 Word 文档
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 第一步：定义文档目录
+首先，您需要将目录路径设置为您的 Word 文档所在的位置。代替`"YOUR DOCUMENT DIRECTORY"`在具有适当路径的代码中。
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وانتقل إلى قسم بفهرس
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document`فصل. للوصول إلى قسم معين ، نستخدم فهرس القسم. في هذا المثال ، نصل إلى القسم الأول باستخدام الفهرس 0.
+## 第 2 步：加载文档并按索引跳转到某个部分
+接下来，我们将把 Word 文档加载到`Document`班级。要访问特定部分，我们使用部分索引。在此示例中，我们使用索引 0 访问第一部分。
 
 ```csharp
-//قم بتحميل المستند
+//装入文档
 Document doc = new Document(dataDir + "Document.docx");
 
-// الوصول إلى قسم بالفهرس
+//按索引访问部分
 Section section = doc.Sections[0];
 ```
 
-## الخطوة 3: تحرير إعدادات القسم
- لتعديل إعدادات القسم ، نستخدم خصائص القسم`PageSetup` هدف. في هذا المثال ، نقوم بتغيير الهوامش ، ومسافة الرأس والتذييل ، وتباعد أعمدة النص.
+## 第 3 步：编辑部分设置
+要修改部分设置，我们使用部分的属性`PageSetup`目的。在此示例中，我们正在更改页边距、页眉和页脚距离以及文本列间距。
 
 ```csharp
-section.PageSetup.LeftMargin = 90; // 3.17 سم
-section.PageSetup.RightMargin = 90; // 3.17 سم
-section.PageSetup.TopMargin = 72; // 2.54 سم
-section.PageSetup.BottomMargin = 72; // 2.54 سم
-section.PageSetup.HeaderDistance = 35.4; // 1.25 سم
-section.PageSetup.FooterDistance = 35.4; // 1.25 سم
-section.PageSetup.TextColumns.Spacing = 35.4; // 1.25 سم
+section.PageSetup.LeftMargin = 90; // 3.17cm
+section.PageSetup.RightMargin = 90; // 3.17cm
+section.PageSetup.TopMargin = 72; // 2.54cm
+section.PageSetup.BottomMargin = 72; // 2.54cm
+section.PageSetup.HeaderDistance = 35.4; // 1.25cm
+section.PageSetup.FooterDistance = 35.4; // 1.25cm
+section.PageSetup.TextColumns.Spacing = 35.4; // 1.25cm
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Sections Access By Index باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的 Sections Access By Index 的示例源代码 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
 Section section = doc.Sections[0];
-section.PageSetup.LeftMargin = 90; // 3.17 سم
-section.PageSetup.RightMargin = 90; // 3.17 سم
-section.PageSetup.TopMargin = 72; // 2.54 سم
-section.PageSetup.BottomMargin = 72; // 2.54 سم
-section.PageSetup.HeaderDistance = 35.4; // 1.25 سم
-section.PageSetup.FooterDistance = 35.4; // 1.25 سم
-section.PageSetup.TextColumns.Spacing = 35.4; // 1.25 سم
+section.PageSetup.LeftMargin = 90; //3.17 厘米
+section.PageSetup.RightMargin = 90; //3.17 厘米
+section.PageSetup.TopMargin = 72; //2.54 厘米
+section.PageSetup.BottomMargin = 72; //2.54 厘米
+section.PageSetup.HeaderDistance = 35.4; //1.25 厘米
+section.PageSetup.FooterDistance = 35.4; //1.25 厘米
+section.PageSetup.TextColumns.Spacing = 35.4; //1.25 厘米
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس وتغيير إعداداتها باستخدام Aspose.Words for .NET. يتيح لك الوصول إلى الأقسام حسب الفهرس استهداف أقسام معينة في المستند وتخصيصها. لا تتردد في استخدام هذه الميزة لتلبية احتياجاتك الخاصة.
+## 结论
+在本教程中，我们了解了如何使用 Aspose.Words for .NET 通过索引访问 Word 文档的各个部分并更改其设置。按索引访问部分允许您定位和自定义文档中的特定部分。请随意使用此功能来满足您的特定需求。

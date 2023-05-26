@@ -1,31 +1,31 @@
 ---
-title: تغيير Toc Tab Stops
-linktitle: تغيير Toc Tab Stops
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير علامات تبويب جدول المحتويات في مستند Word باستخدام Aspose.Words for .NET.
+title: Cambia le tabulazioni Toc
+linktitle: Cambia le tabulazioni Toc
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come modificare le schede del sommario in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الوظائف التي تقدمها Aspose.Words ، هناك إمكانية تعديل علامات التبويب المستخدمة في جدول محتويات مستند Word. في هذا الدليل ، سنوضح لك كيفية استخدام شفرة المصدر C # الخاصة بـ Aspose.Words for .NET لتغيير علامات التبويب في جدول محتويات المستند.
+Aspose.Words per .NET è una potente libreria per creare, modificare e manipolare documenti Word in un'applicazione C#. Tra le funzionalità offerte da Aspose.Words c'è la possibilità di modificare le schede utilizzate in un sommario di un documento Word. In questa guida, ti mostreremo come utilizzare il codice sorgente C# di Aspose.Words per .NET per modificare le schede nel sommario di un documento.
 
-## فهم مكتبة Aspose.Words
+## Comprensione della libreria Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك علامات تبويب جدول المحتويات المتغيرة.
+Prima di immergersi nel codice, è importante comprendere la libreria Aspose.Words per .NET. Aspose.Words è una libreria popolare che rende il lavoro con i documenti di Word facile ed efficiente. Offre una vasta gamma di funzionalità per la creazione, la modifica e la manipolazione di documenti Word, inclusa la modifica delle schede del sommario.
 
-## تحميل المستند الذي يحتوي على جدول المحتويات
+## Caricamento del documento contenente il sommario
 
-الخطوة الأولى هي تحميل مستند Word الذي يحتوي على جدول المحتويات الذي تريد تعديله. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+Il primo passo è caricare il documento Word contenente il sommario che desideri modificare. Utilizzare la classe Document per caricare il documento dal file di origine. Ecco un esempio:
 
 ```csharp
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Table of content.docx" الموجود في دليل documents.
+In questo esempio, carichiamo il documento "Tabella dei contenuti.docx" che si trova nella directory dei documenti.
 
-## تغيير علامات التبويب في جدول المحتويات
+## Modifica delle schede nel sommario
 
-بمجرد تحميل المستند ، ننتقل إلى كل فقرة في المستند ونتحقق مما إذا كان قد تم تنسيقها باستخدام أنماط نتائج جدول المحتويات (TOC). إذا كان الأمر كذلك ، نقوم بتعديل علامات التبويب المستخدمة لمحاذاة أرقام الصفحات. إليك الطريقة:
+Una volta caricato il documento, esaminiamo ogni paragrafo del documento e controlliamo se è formattato utilizzando gli stili di risultato del sommario (TOC). In tal caso, modifichiamo le schede utilizzate per allineare i numeri di pagina. Ecco come:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -40,28 +40,28 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-في هذا المثال ، نستخدم حلقة للتكرار خلال كل فقرة في المستند. نتحقق بعد ذلك من تنسيق الفقرة باستخدام أنماط نتيجة جدول المحتويات (TOC). إذا كان الأمر كذلك ، فإننا نصل إلى علامة التبويب الأولى المستخدمة في هذه الفقرة ونقوم بتعديلها عن طريق إزالة علامة التبويب القديمة وإضافة علامة تبويب جديدة بموضع معدل.
+In questo esempio, stiamo usando un ciclo per scorrere ogni paragrafo nel documento. Verifichiamo quindi se il paragrafo è formattato utilizzando gli stili Risultato sommario (TOC). In tal caso, accediamo alla prima scheda utilizzata in questo paragrafo e la modifichiamo rimuovendo la vecchia scheda e aggiungendo una nuova scheda con una posizione modificata.
 
-## احفظ المستند المعدل
+## Salva documento modificato
 
-بمجرد إجراء التغييرات اللازمة على علامات التبويب في جدول المحتويات ، يمكنك حفظ المستند المعدل باستخدام طريقة Save لفئة Document. هنا مثال :
+Una volta apportate le modifiche necessarie alle schede dell'indice, è possibile salvare il documento modificato utilizzando il metodo Save della classe Document. Ecco un esempio:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-في هذا المثال ، نحفظ المستند المعدل باسم "WorkingWithTableOfContent.ChangeTocTabStops.docx".
+In questo esempio, salviamo il documento modificato come "WorkingWithTableOfContent.ChangeTocTabStops.docx".
 
-### نموذج شفرة مصدر لميزة "تحرير جدول المحتويات" باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per la funzione "Modifica schede sommario" con Aspose.Words per .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند الذي يحتوي على جدول المحتويات
+// Carica il documento contenente il sommario
 Document doc = new Document(dataDir + "Table of contents.docx");
 
-// قم بتعديل علامات تبويب جدول المحتويات
+// Modifica le schede del sommario
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 {
      if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
@@ -73,10 +73,10 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
      }
 }
 
-// احفظ المستند المعدل
+// Salva il documento modificato
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-## خاتمة
+## Conclusione
 
-في هذا الدليل ، قمنا بتغطية كيفية استخدام Aspose.Words for .NET لتغيير علامات التبويب في جدول محتويات مستند Word باستخدام الكود المصدري C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة تخصيص علامات تبويب جدول المحتويات في مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع أنماط وتنسيقات مستنداتك ، مما يسمح لك بإنشاء مستندات Word جذابة واحترافية.
+In questa guida, abbiamo spiegato come utilizzare Aspose.Words per .NET per modificare le schede nel sommario di un documento Word utilizzando il codice sorgente C# fornito. Seguendo i passaggi forniti, puoi personalizzare facilmente le schede del sommario nei tuoi documenti Word nell'applicazione C#. Aspose.Words offre un'enorme flessibilità e potenza per lavorare con gli stili e la formattazione dei tuoi documenti, permettendoti di creare documenti Word attraenti e professionali.

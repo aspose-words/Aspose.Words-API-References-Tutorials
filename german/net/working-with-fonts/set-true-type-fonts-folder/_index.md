@@ -1,31 +1,31 @@
 ---
-title: تعيين مجلد خطوط النوع الحقيقي
-linktitle: تعيين مجلد خطوط النوع الحقيقي
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لإعداد مجلد خطوط الكتابة الصحيحة عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Legen Sie den Ordner für True-Type-Schriftarten fest
+linktitle: Legen Sie den Ordner für True-Type-Schriftarten fest
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Festlegen des Ordners für True-Type-Schriftarten beim Rendern eines Dokuments mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/set-true-type-fonts-folder/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلد خطوط الكتابة الحقيقية عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلد مخصص يحتوي على خطوط True Type لاستخدامه عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess zum Festlegen des Ordners für True-Type-Schriftarten beim Rendern eines Dokuments mit Aspose.Words für .NET. Wir erklären Ihnen den gebündelten C#-Quellcode und stellen Ihnen eine umfassende Anleitung zur Verfügung, die Ihnen hilft, diese Funktion zu verstehen und in Ihren eigenen Projekten zu implementieren. Am Ende dieses Tutorials erfahren Sie, wie Sie einen benutzerdefinierten Ordner mit True Type-Schriftarten angeben, der beim Rendern Ihrer Dokumente mit Aspose.Words für .NET verwendet werden soll.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+Zuerst müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis festlegen. Dies ist der Ort, an dem Sie Ihr bearbeitetes gerendertes Dokument speichern möchten. Ersetzen Sie „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند للعرض
- بعد ذلك ، تحتاج إلى تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Schritt 2: Laden Sie das zu rendernde Dokument
+ Als Nächstes müssen Sie das zu rendernde Dokument mit laden`Document` Klasse. Stellen Sie sicher, dass Sie den richtigen Dokumentpfad angeben.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تعيين مجلد خطوط النوع الحقيقي
- يمكنك الآن تحديد مجلد خطوط الكتابة الحقيقية لاستخدامها عند التقديم عن طريق إنشاء مثيل لملف`FontSettings` الطبقة واستخدام`SetFontsFolder()` طريقة لتعيين مجلد الخطوط. يمكنك تحديد مجلد مخصص يحتوي على خطوط True Type الخاصة بك. المعلمة الثانية ل`SetFontsFolder()` يشير إلى ما إذا كنت تريد البحث في المجلدات الفرعية للمجلد المحدد أيضًا.
+## Schritt 3: Legen Sie den Ordner für True-Type-Schriftarten fest
+ Jetzt können Sie den Ordner der True-Type-Schriftarten angeben, die beim Rendern verwendet werden sollen, indem Sie eine Instanz davon erstellen`FontSettings` Klasse und Verwendung der`SetFontsFolder()` Methode zum Festlegen des Schriftartenordners. Sie können einen benutzerdefinierten Ordner angeben, der Ihre True Type-Schriftarten enthält. Der zweite Parameter für`SetFontsFolder()` Gibt an, ob Sie auch Unterordner des angegebenen Ordners durchsuchen möchten.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -33,29 +33,29 @@ fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 4: احفظ المستند المقدم
- أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## Schritt 4: Speichern Sie das gerenderte Dokument
+ Schließlich können Sie das gerenderte Dokument mithilfe von in einer Datei speichern`Save()` Methode der`Document` Klasse. Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen angeben.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set True Type Fonts Folder باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Ordner für True Type-Schriftarten festlegen“ mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Rendering.docx");
 	FontSettings fontSettings = new FontSettings();
-	// لاحظ أن هذا الإعداد سيتجاوز أي مصادر افتراضية للخطوط يتم البحث عنها افتراضيًا. الآن سيتم البحث عن هذه المجلدات فقط
-	// الخطوط عند تقديم الخطوط أو دمجها. لإضافة مصدر خط إضافي مع الاحتفاظ بمصادر خطوط النظام ، استخدم كلاً من FontSettings.GetFontSources و
-	// FontSettings.SetFontSources بدلاً من ذلك
+	// Beachten Sie, dass diese Einstellung alle Standardschriftquellen überschreibt, die standardmäßig durchsucht werden. Jetzt wird nur noch nach diesen Ordnern gesucht
+	// Schriftarten beim Rendern oder Einbetten von Schriftarten. Um eine zusätzliche Schriftartquelle hinzuzufügen und gleichzeitig die Schriftartquellen des Systems beizubehalten, verwenden Sie sowohl FontSettings.GetFontSources als auch
+	// Stattdessen FontSettings.SetFontSources
 	fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-	// ضبط إعدادات الخط
+	// Legen Sie die Schriftarteinstellungen fest
 	doc.FontSettings = fontSettings;
 	doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلد خطوط الكتابة الحقيقية عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلد مخصص يحتوي على خطوط True Type لاستخدامها عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في الخطوط المستخدمة وتخصيصها عند تقديم مستنداتك وفقًا لاحتياجاتك الخاصة.
+## Abschluss
+In diesem Tutorial haben wir gelernt, wie man beim Rendern eines Dokuments mit Aspose.Words für .NET den Ordner für True-Type-Schriftarten festlegt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie ganz einfach einen benutzerdefinierten Ordner mit True Type-Schriftarten angeben, die Sie beim Rendern Ihrer Dokumente verwenden möchten. Aspose.Words bietet eine leistungsstarke und flexible API für die Arbeit mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die beim Rendern Ihrer Dokumente verwendeten Schriftarten steuern und an Ihre spezifischen Anforderungen anpassen.

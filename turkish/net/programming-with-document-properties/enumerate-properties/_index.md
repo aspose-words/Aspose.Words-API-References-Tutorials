@@ -1,34 +1,34 @@
 ---
-title: تعداد الخصائص
-linktitle: تعداد الخصائص
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتعداد خصائص المستند باستخدام Aspose.Words for .NET.
+title: Özellikleri Numaralandır
+linktitle: Özellikleri Numaralandır
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile belge özelliklerini numaralandırmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-document-properties/enumerate-properties/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتعداد خصائص المستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة الوصول إلى الخصائص المضمنة والمخصصة للمستند.
+Bu eğitimde, Aspose.Words for .NET ile belge özelliklerini numaralandırmak için C# kaynak kodunda size yol göstereceğiz. Bu özellik, bir belgenin yerleşik ve özel özelliklerine erişmenizi sağlar.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد سرد خصائصه. استخدم الكود التالي لتحميل المستند:
+Bu adımda özelliklerini listelemek istediğimiz Word belgesini yükleyeceğiz. Belgeyi yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
 
-## الخطوة الثالثة: تعداد الخصائص
+## 3. Adım: Özellikleri numaralandırma
 
-الآن دعنا ندرج خصائص المستند ، الخصائص المضمنة والمخصصة. استخدم الكود التالي:
+Şimdi hem yerleşik hem de özel özellikler olan belge özelliklerini listeleyelim. Aşağıdaki kodu kullanın:
 
 ```csharp
 Console.WriteLine("1. Document name: {0}", doc.OriginalFileName);
@@ -43,13 +43,13 @@ foreach(DocumentProperty prop in doc.CustomDocumentProperties)
 Console.WriteLine("{0}:{1}", prop.Name, prop.Value);
 ```
 
-يعرض هذا الرمز اسم المستند ثم يسرد الخصائص المضمنة والمخصصة التي تعرض اسمها وقيمتها.
+Bu kod, belge adını görüntüler ve ardından adlarını ve değerlerini görüntüleyen yerleşik ve özel özellikleri listeler.
 
-### مثال على شفرة المصدر لـ Enumerate Properties باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Enumerate Properties için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx");
 	
@@ -66,7 +66,7 @@ Console.WriteLine("{0}:{1}", prop.Name, prop.Value);
 		
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ bölümünde doğru belge yolunu belirttiğinizden emin olun.`dataDir` değişken.
 
-لقد تعلمت الآن كيفية تعداد خصائص المستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك الوصول بسهولة إلى خصائص المستندات الخاصة بك وعرضها.
+Artık Aspose.Words for .NET kullanarak belge özelliklerini nasıl numaralandıracağınızı öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek, kendi belgelerinizin özelliklerine kolayca erişebilir ve bunları görüntüleyebilirsiniz.
 

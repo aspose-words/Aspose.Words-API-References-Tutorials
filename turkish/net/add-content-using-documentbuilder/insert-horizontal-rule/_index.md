@@ -1,45 +1,45 @@
 ---
-title: أدخل مسطرة أفقية
-linktitle: أدخل مسطرة أفقية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج القواعد الأفقية في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Yatay Kural Ekle
+linktitle: Yatay Kural Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerine yatay kuralları nasıl ekleyeceğinizi öğrenin. Adım adım rehber.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج قاعدة أفقية في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إضافة قواعد أفقية إلى مستنداتك للفصل البصري والتنظيم.
+Bu kapsamlı örnekte, Aspose.Words for .NET kullanarak bir Word belgesine nasıl yatay bir kural ekleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, görsel ayırma ve düzenleme için belgelerinize yatay kurallar ekleyebileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesi başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل قاعدة أفقية
-بعد ذلك ، استخدم طريقة Writeln لفئة DocumentBuilder لإضافة نص وصفي ثم أدخل قاعدة أفقية:
+## 2. Adım: Bir Yatay Kural Ekleyin
+Ardından, açıklayıcı bir metin eklemek için DocumentBuilder sınıfının Writeln yöntemini kullanın ve ardından yatay bir kural ekleyin:
 
 ```csharp
 builder.Writeln("Insert a horizontal rule shape into the document.");
 builder.InsertHorizontalRule();
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج القاعدة الأفقية ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 3. Adım: Belgeyi Kaydedin
+Yatay kuralı ekledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
-### مثال رمز مصدر لإدراج قاعدة أفقية باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لإدخال قاعدة أفقية باستخدام Aspose.Words for .NET:
-تعتبر القواعد الأفقية مفيدة لسيناريوهات مختلفة ، مثل تقسيم الأقسام أو إنشاء فواصل مرئية أو تمييز المعلومات المهمة.
+### Aspose.Words for .NET kullanarak Yatay Kural Ekleme için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak yatay bir kural eklemek için eksiksiz kaynak kodu burada:
+Yatay kurallar, bölümleri bölmek, görsel aralar oluşturmak veya önemli bilgileri vurgulamak gibi çeşitli senaryolar için kullanışlıdır.
 
 ```csharp
 
@@ -53,8 +53,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.doc
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Kodu özel gereksinimlerinize göre ayarlamayı ve gerektiğinde ek işlevlerle geliştirmeyi unutmayın.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج قاعدة أفقية في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن فصل المستندات وتنظيمها بصريًا باستخدام القواعد الأفقية.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine yatay bir kuralın nasıl ekleneceğini başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, artık belgelerinizi yatay kurallar kullanarak görsel olarak ayırabilir ve düzenleyebilirsiniz.
 

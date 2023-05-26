@@ -1,28 +1,28 @@
 ---
-title: حسب أقسام Html
-linktitle: حسب أقسام Html
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تقسيم مستند Word إلى أقسام Html باستخدام Aspose.Words for .NET مع مثال رمز كامل.
+title: Por Secciones Html
+linktitle: Por Secciones Html
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a dividir un documento de Word en secciones Html usando Aspose.Words para .NET con un ejemplo de código completo.
 type: docs
 weight: 10
 url: /es/net/split-document/by-sections-html/
 ---
 
-في هذا المثال ، سنوضح لك كيفية تقسيم مستند Word إلى أقسام منفصلة بتنسيق HTML باستخدام ميزة By HTML Sections في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم كود المصدر وإنشاء مستندات HTML منفصلة لكل قسم.
+En este ejemplo, le mostraremos cómo dividir un documento de Word en secciones separadas en formato HTML utilizando la función Por secciones HTML de Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y generar documentos HTML separados para cada sección.
 
-## الخطوة 1: تحميل المستند
+## Paso 1: Cargar el documento
 
-للبدء ، حدد الدليل للمستند الخاص بك وقم بتحميل المستند في كائن المستند. إليك الطريقة:
+Para comenzar, especifique el directorio de su documento y cárguelo en un objeto Documento. Así es cómo:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```
 
-## الخطوة الثانية: تقسيم المستند إلى أقسام بتنسيق HTML
+## Paso 2: Dividir el documento en secciones en formato HTML
 
-سنقوم الآن بتعيين خيارات الحفظ لتقسيم المستند إلى أقسام بتنسيق HTML. هيريس كيفية القيام بذلك:
+Ahora configuraremos las opciones de guardado para dividir el documento en secciones en formato HTML. Aquí está cómo hacerlo:
 
 ```csharp
 HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
@@ -30,13 +30,13 @@ HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = Document
 doc.Save(dataDir + "SplitDocument.ParSectionsHtml.html", options);
 ```
 
-### مثال على شفرة المصدر لـ By Sections HTML باستخدام Aspose.Words for .NET
+### Código fuente de ejemplo para HTML por secciones usando Aspose.Words para .NET
 
-فيما يلي شفرة المصدر الكاملة لميزة By HTML Sections في Aspose.Words for .NET:
+Aquí está el código fuente completo de la función Por secciones HTML de Aspose.Words para .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Rendering.docx");
 
@@ -48,9 +48,9 @@ doc.Save(dataDir + "SplitDocument.ParSectionsHtml.html", options);
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تقسيم مستند Word إلى أقسام منفصلة بتنسيق HTML باستخدام Aspose.Words for .NET.
+Con este código podrá dividir un documento de Word en secciones separadas en formato HTML utilizando Aspose.Words para .NET.
 
-يمكنك الآن إنشاء مستندات HTML منفصلة لكل قسم من المستند الأولي.
+Ahora puede generar documentos HTML separados para cada sección del documento inicial.
 
 
 

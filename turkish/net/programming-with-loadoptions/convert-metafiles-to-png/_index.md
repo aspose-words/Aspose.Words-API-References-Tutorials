@@ -1,61 +1,61 @@
 ---
-title: تحويل ملفات التعريف إلى Png
-linktitle: تحويل ملفات التعريف إلى Png
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل ملفات التعريف إلى صور PNG عند تحميل المستندات باستخدام Aspose.Words for .NET.
+title: Meta Dosyalarını Png'ye Dönüştür
+linktitle: Meta Dosyalarını Png'ye Dönüştür
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile belgeleri yüklerken meta dosyalarını PNG resimlerine nasıl dönüştüreceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/convert-metafiles-to-png/
 ---
-عند العمل مع المستندات في تطبيق C # ، قد يكون من الضروري تحويل ملفات التعريف إلى صور PNG من أجل توافق أفضل وعرض دقيق. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحويل ملفات التعريف إلى PNG أثناء تحميل مستند. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند بتحويل ملفات التعريف إلى PNG باستخدام خيارات تحميل LoadOptions.
+Bir C# uygulamasındaki belgelerle çalışırken, daha iyi uyumluluk ve doğru işleme için meta dosyalarını PNG resimlerine dönüştürmek gerekebilir. .NET için Aspose.Words kitaplığıyla, bir belge yüklerken meta dosyalarını kolayca PNG'ye dönüştürebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak meta dosyalarını PNG'ye dönüştüren bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, .NET dahil olmak üzere farklı platformlarda Word belgeleri oluşturmak, düzenlemek, dönüştürmek ve korumak için güçlü bir kitaplıktır. Belgeleri işlemek için metin ekleme, biçimlendirmeyi değiştirme, bölümler ekleme ve çok daha fazlası gibi birçok özellik sunar.
 
-## الخطوة 1: تحديد دليل المستند
+## Adım 1: Belge dizinini tanımlama
 
-الخطوة الأولى هي تحديد الدليل حيث توجد المستندات الخاصة بك. يجب عليك تحديد مسار الدليل الكامل. على سبيل المثال :
+İlk adım, belgelerinizin bulunduğu dizini tanımlamaktır. Tam dizin yolunu belirtmelisiniz. Örneğin :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة 2: تكوين خيارات التحميل
+## 2. Adım: Yükleme Seçeneklerini Yapılandırma
 
-لنقم الآن بتهيئة خيارات التحميل لوثيقتنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. على سبيل المثال :
+Şimdi belgemiz için yükleme seçeneklerini yapılandıralım. Yükleme parametrelerini belirtmek için LoadOptions sınıfını kullanın. Örneğin :
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { ConvertMetafilesToPng = true };
 ```
 
-في هذا المثال ، قمنا بإنشاء كائن LoadOptions جديد وقمنا بتعيين الخاصية ConvertMetafilesToPng إلى true لتمكين تحويل ملفات التعريف إلى PNG عند تحميل المستند.
+Bu örnekte, yeni bir LoadOptions nesnesi oluşturuyoruz ve belgeyi yüklerken meta dosyalarının PNG'ye dönüştürülmesini etkinleştirmek için ConvertMetafilesToPng özelliğini true olarak ayarlıyoruz.
 
-## الخطوة 3: تحميل المستند بتحويل ملفات التعريف إلى PNG
+## 3. Adım: Meta dosyalarını PNG'ye dönüştürerek belgeyi yükleme
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل المستند باستخدام فئة Document وتحديد خيارات التحميل. على سبيل المثال :
+Yükleme seçeneklerini yapılandırdığımıza göre, Document sınıfını kullanarak belgeyi yükleyebilir ve yükleme seçeneklerini belirtebiliriz. Örneğin :
 
 ```csharp
 Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "WMF with image.docx" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+Bu örnekte, belirtilen yükleme seçeneklerini kullanarak belgeler dizininde bulunan "WMF with image.docx" belgesini yüklüyoruz.
 
-## مثال على شفرة المصدر لميزة LoadOptions مع تحويل ملفات التعريف إلى Png باستخدام Aspose.Words for .NET
+## Aspose.Words for .NET kullanan LoadOptions with Metafiles To Png özelliği için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "تحويل ملفات التعريف إلى بابوا نيو غينيا"
+// "Meta Dosyalarını Png'ye Dönüştür" özelliği ile yükleme seçeneklerini yapılandırın
 LoadOptions loadOptions = new LoadOptions { ConvertMetafilesToPng = true };
 
-// قم بتحميل المستند بالخيارات المحددة
+// Belgeyi belirtilen seçeneklerle yükleyin
 Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند بتحويل ملفات التعريف إلى صور PNG باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يضمن تحويل ملفات التعريف إلى PNG توافقًا أفضل وعرضًا دقيقًا للمستندات.
+Bu kılavuzda, .NET için Aspose.Words kitaplığını kullanarak meta dosyalarını PNG görüntülerine dönüştüren bir belgenin nasıl yükleneceğini açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. Meta dosyalarının PNG'ye dönüştürülmesi, belgelerin daha iyi uyumluluğunu ve doğru şekilde oluşturulmasını sağlar.

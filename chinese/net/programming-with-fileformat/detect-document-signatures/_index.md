@@ -1,36 +1,36 @@
 ---
-title: كشف توقيعات الوثيقة
-linktitle: كشف توقيعات الوثيقة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لاكتشاف التوقيعات الرقمية في مستند باستخدام Aspose.Words for .NET.
+title: 检测文档签名
+linktitle: 检测文档签名
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 检测文档中数字签名的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-fileformat/detect-document-signatures/
 ---
 
-تقدم هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام ميزة الكشف عن توقيع المستند مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية اكتشاف التوقيعات الرقمية في مستند.
+本文提供了有关如何使用 Aspose.Words for .NET 的文档签名检测功能的分步指南。我们将详细解释代码的每一部分。在本教程结束时，您将能够了解如何检测文档中的数字签名。
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+在开始之前，请确保您已经在项目中安装并配置了 Aspose.Words for .NET 库。您可以在 Aspose 网站上找到库和安装说明。
 
-## الخطوة 1: تحديد دليل المستند
+## 第一步：定义文档目录
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+首先，您需要定义文档所在目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`使用文档目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: كشف التوقيعات الرقمية
+## 第 2 步：检测数字签名
 
- بعد ذلك ، نستخدم ملف`DetectFileFormat` طريقة`FileFormatUtil` فئة للكشف عن معلومات تنسيق الملف. في هذا المثال ، نفترض أن المستند يسمى "Digitallyigned.docx" وموجود في دليل المستندات المحدد.
+接下来，我们使用`DetectFileFormat`的方法`FileFormatUtil`检测文件格式信息的类。在此示例中，我们假设文档名为“Digitally signed.docx”并且位于指定的文档目录中。
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
 ```
 
-## الخطوة 3: تحقق من وجود توقيعات رقمية
+## 第 3 步：检查数字签名
 
- نتحقق مما إذا كان المستند يحتوي على توقيعات رقمية باستخدام امتداد`HasDigitalSignature` ممتلكات`FileFormatInfo` هدف. إذا تم الكشف عن التوقيعات الرقمية ، فإننا نعرض رسالة تشير إلى أن التوقيعات ستفقد إذا تم فتح / حفظ المستند باستخدام Aspose.Words.
+我们检查文档是否包含数字签名使用`HasDigitalSignature`的财产`FileFormatInfo`目的。如果检测到数字签名，我们会显示一条消息，表明如果使用 Aspose.Words 打开/保存文档，签名将会丢失。
 
 ```csharp
 if (info.HasDigitalSignature)
@@ -41,13 +41,13 @@ if (info.HasDigitalSignature)
 }
 ```
 
-هذا كل شئ ! لقد نجحت في اكتشاف توقيعات رقمية في مستند باستخدام Aspose.Words for .NET.
+就这样 ！您已经使用 Aspose.Words for .NET 成功检测到文档中的数字签名。
 
-### مثال على شفرة المصدر لاكتشاف توقيعات المستندات باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 检测文档签名的示例源代码
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
 

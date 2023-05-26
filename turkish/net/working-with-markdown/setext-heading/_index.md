@@ -1,45 +1,45 @@
 ---
-title: عنوان Setext
-linktitle: عنوان Setext
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام عناوين Setext لتنسيق مستنداتك باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Metin Başlığı
+linktitle: Metin Başlığı
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET Adım adım kılavuz ile belgelerinizi biçimlendirmek için Setext başlıklarını nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/setext-heading/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة Setext Heading مع Aspose.Words for .NET. Setext Heading هي طريقة بديلة لتنسيق العناوين في مستندات Markdown.
+Bu öğreticide, Setex Heading özelliğini Aspose.Words for .NET ile nasıl kullanacağınız konusunda size yol göstereceğiz. Setex Heading, Markdown belgelerinde başlıkları biçimlendirmenin alternatif bir yöntemidir.
 
-## الخطوة 1: استخدام منشئ المستندات
+## 1. Adım: Bir belge oluşturucu kullanma
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+İlk olarak, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: استخدام نمط عنوان Setext
+## 2. Adım: Setex başlık stilini kullanma
 
-سنستخدم نمط الفقرة الافتراضي "العنوان 1" لإنشاء عنوان من المستوى 1 في وثيقتنا.
+Belgemizde 1. düzey bir başlık oluşturmak için varsayılan "Başlık 1" paragraf stilini kullanacağız.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";
 builder.Writeln("This is an H1 tag");
 ```
 
-## الخطوة 3: إعادة ضبط الأنماط
+## 3. Adım: Stilleri Sıfırlama
 
-نقوم بإعادة تعيين أنماط الخطوط المطبقة مسبقًا لتجنب أي مجموعة غير مرغوب فيها من الأنماط بين الفقرات.
+Paragraflar arasında istenmeyen stil kombinasyonlarını önlemek için önceden uygulanan yazı tipi stillerini sıfırladık.
 
 ```csharp
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
 
-## الخطوة 4: تخصيص مستويات عناوين Setext
+## Adım 4: Settext Başlık Düzeylerini Özelleştirme
 
-يمكننا تخصيص مستويات عناوين Setext عن طريق إضافة أنماط فقرة جديدة بناءً على أنماط العناوين الحالية. في هذا المثال ، نقوم بإنشاء نمط "SetextHeading1" استنادًا إلى نمط "العنوان 1" لتمثيل عنوان المستوى 1 بتنسيق Setext.
+Mevcut başlık stillerine dayalı olarak yeni paragraf stilleri ekleyerek Setex başlık düzeylerini özelleştirebiliriz. Bu örnekte, Setext formatında 1. seviye bir başlığı temsil etmek için "Başlık 1" stilini temel alan bir "SetextHeading1" stili oluşturuyoruz.
 
 ```csharp
 Style setexHeading1 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading1");
@@ -48,26 +48,26 @@ builder.Document.Styles["SetextHeading1"].BaseStyleName = "Heading 1";
 builder.Writeln("Title Setext level 1");
 ```
 
-## الخطوة 5: حفظ المستند
+## 5. Adım: Belgeyi kaydetme
 
-أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب.
+Son olarak belgeyi istediğimiz formatta kaydedebiliriz.
 
 ```csharp
 builder.Document.Save(dataDir + "Test.md");
 ```
 
-### مثال على شفرة المصدر لعناوين Setext مع Aspose.Words for .NET
+### Aspose.Words for .NET ile Setext başlıkları için örnek kaynak kodu
 
 ```csharp
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
 	DocumentBuilder builder = new DocumentBuilder();
 
 	builder.ParagraphFormat.StyleName = "Heading 1";
 	builder.Writeln("This is an H1 tag");
 
-	// إعادة تعيين الأنماط من الفقرة السابقة لعدم دمج الأنماط بين الفقرات.
+	// Paragraflar arasında stilleri birleştirmemek için önceki paragraftaki stilleri sıfırlayın.
 	builder.Font.Bold = false;
 	builder.Font.Italic = false;
 
@@ -79,7 +79,7 @@ builder.Document.Save(dataDir + "Test.md");
 	builder.ParagraphFormat.Style = builder.Document.Styles["Heading 3"];
 	builder.Writeln("This is an H3 tag");
 
-	// إعادة تعيين الأنماط من الفقرة السابقة لعدم دمج الأنماط بين الفقرات.
+	// Paragraflar arasında stilleri birleştirmemek için önceki paragraftaki stilleri sıfırlayın.
 	builder.Font.Bold = false;
 	builder.Font.Italic = false;
 
@@ -87,7 +87,7 @@ builder.Document.Save(dataDir + "Test.md");
 	builder.ParagraphFormat.Style = setexHeading2;
 	builder.Document.Styles["SetextHeading2"].BaseStyleName = "Heading 3";
 
-	// ستتم إعادة تعيين مستوى عنوان Setex إلى 2 إذا كانت الفقرة الأساسية بها مستوى عنوان أكبر من 2.
+	// Temel paragrafın Başlık düzeyi 2'den büyükse Setex başlık düzeyi 2'ye sıfırlanacaktır.
 	builder.Writeln("Setext Heading level 2");
 	
 

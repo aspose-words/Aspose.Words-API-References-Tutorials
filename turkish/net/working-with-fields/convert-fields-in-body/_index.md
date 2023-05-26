@@ -1,59 +1,59 @@
 ---
-title: تحويل الحقول في الجسم
-linktitle: تحويل الحقول في الجسم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET لتحويل حقول الصفحة إلى نص في نص مستند Word.
+title: Gövdedeki Alanları Dönüştür
+linktitle: Gövdedeki Alanları Dönüştür
+second_title: Aspose.Words for .NET API Referansı
+description: Sayfa alanlarını bir Word belgesinin gövdesindeki metne dönüştürmek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/convert-fields-in-body/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنرشدك إلى كيفية استخدام ميزة ConvertFieldsInBody في Aspose.Words for .NET باستخدام كود المصدر C # المقدم. تتيح لك هذه الميزة تحويل حقول معينة في نص المستند إلى نص عادي ، مما يسهل معالجة المستندات الخاصة بك. اتبع الخطوات أدناه لاستخدام هذه الميزة بشكل فعال.
+Bu adım adım öğreticide, sağlanan C# kaynak kodunu kullanarak Aspose.Words for .NET'in ConvertFieldsInBody özelliğini nasıl kullanacağınız konusunda size yol göstereceğiz. Bu özellik, belgenizin gövdesindeki belirli alanları düz metne dönüştürmenizi sağlayarak belgelerinizin işlenmesini kolaylaştırır. Bu özelliği etkin bir şekilde kullanmak için aşağıdaki adımları izleyin.
 
-## الخطوة 1: المتطلبات الأساسية
+## 1. Adım: Önkoşullar
 
-قبل أن تبدأ ، تأكد من تثبيت Aspose.Words for .NET وأن لديك مستندًا جاهزًا للمعالجة. تأكد أيضًا من أن لديك مسار الدليل إلى مستنداتك.
+Başlamadan önce, Aspose.Words for .NET'i kurduğunuzdan ve işlenmeye hazır bir belgeniz olduğundan emin olun. Ayrıca belgelerinize giden dizin yoluna sahip olduğunuzdan emin olun.
 
-## الخطوة 2: قم بتحميل المستند
+## 2. Adım: Belgeyi yükleyin
 
-ابدأ بالتصريح عن متغير للمسار إلى دليل المستندات ، ثم استخدم هذا المتغير لتهيئة كائن المستند من المستند المحدد. في مثالنا ، يُطلق على المستند اسم "Linked Field.docx".
+Belgeler dizininizin yolu için bir değişken bildirerek başlayın, ardından belirtilen belgeden bir Belge nesnesi başlatmak için bu değişkeni kullanın. Örneğimizde belgenin adı "Bağlantılı alanlar.docx".
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك.
+// Belgeler dizininizin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-## الخطوة 3: تحويل حقول الصفحة إلى نص عادي
+## 3. Adım: Sayfa Alanlarını Düz Metne Dönüştürün
 
-الآن بعد أن تم تحميل المستند ، يمكننا الانتقال إلى خطوات التحويل. لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول ، يمكنك استخدام ملحق`Range.Fields` طريقة للحصول على جميع الحقول في النطاق المحدد ، ثم تصفية الحقول من النوع`FieldType.FieldPage` . ثم يمكنك استخدام ملف`ForEach` طريقة للتكرار عبر كل حقل واستدعاء`Unlink()` طريقة لتحويله إلى نص عادي.
+Belge yüklendiğine göre artık dönüştürme adımlarına geçebiliriz. İlk bölümün gövdesindeki sayfa alanlarını düz metne dönüştürmek için`Range.Fields` belirtilen aralıktaki tüm alanları alma ve ardından tür alanlarını filtreleme yöntemi`FieldType.FieldPage` . Sonra kullanabilirsiniz`ForEach` her alanda döngü yapmak ve çağırmak için yöntem`Unlink()` düz metne dönüştürme yöntemi.
 
 ```csharp
-// قم بتمرير المعلمات المناسبة لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول.
+// Sayfa alanlarını ilk bölümün gövdesinde düz metne dönüştürmek için uygun parametreleri iletin.
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.Unlink());
 ```
 
-## الخطوة 4: احفظ المستند المعدل
+## 4. Adım: Değiştirilen belgeyi kaydedin
 
- بمجرد تحويل حقول الصفحة إلى نص عادي ، يمكنك حفظ المستند المعدل باستخدام امتداد`Save()` طريقة وتحديد مسار واسم ملف الإخراج. في مثالنا ، نحفظها كـ "WorkingWithFields.ConvertFieldsInBody.docx".
+ Sayfa alanlarını düz metne dönüştürdükten sonra, değiştirilmiş belgeyi kullanarak kaydedebilirsiniz.`Save()` yöntemi ve çıktı dosyasının yolunu ve adını belirtme. Örneğimizde "WorkingWithFields.ConvertFieldsInBody.docx" olarak kaydediyoruz.
 
 ```csharp
-// احفظ المستند المعدل
+// Değiştirilen belgeyi kaydet
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
 
-### مثال على شفرة المصدر لتحويل الحقول في النص باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile gövdedeki alanları dönüştürmek için örnek kaynak kodu
 
-إليك مثال شفرة المصدر الكاملة لتحويل الحقول إلى نص باستخدام Aspose.Words for .NET:
+İşte Aspose.Words for .NET kullanarak alanları gövdeye dönüştürmek için tam kaynak kodu örneği:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك.
+// Belgeler dizininizin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Linked fields.docx");
 
-// قم بتمرير المعلمات المناسبة لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول.
+// Sayfa alanlarını ilk bölümün gövdesinde düz metne dönüştürmek için uygun parametreleri iletin.
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A

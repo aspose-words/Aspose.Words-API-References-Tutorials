@@ -1,44 +1,44 @@
 ---
-title: موضع المؤشر
-linktitle: موضع المؤشر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد موضع المؤشر في مستند Word باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Position du curseur
+linktitle: Position du curseur
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à récupérer la position du curseur dans un document Word à l'aide du guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/cursor-position/
 ---
 
-في هذا المثال خطوة بخطوة ، ستتعرف على موضع المؤشر في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من استرداد العقدة والفقرة الحالية حيث يتم وضع المؤشر في المستند.
+Dans cet exemple étape par étape, vous découvrirez la position du curseur dans un document Word à l'aide de Aspose.Words pour .NET. Nous vous guiderons tout au long du processus et vous fournirons les extraits de code C# nécessaires. À la fin de ce guide, vous serez en mesure de récupérer le nœud et le paragraphe actuels où le curseur est positionné dans le document.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Conditions préalables
+Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
+- Bibliothèque Aspose.Words pour .NET installée sur votre système.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Étape 1 : créer un nouveau document et DocumentBuilder
+Pour commencer, créez un nouveau document à l'aide de la classe Document et initialisez un objet DocumentBuilder :
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: الوصول إلى العقدة الحالية والفقرة
-بعد ذلك ، استرجع العقدة والفقرة الحالية حيث تم وضع المؤشر. يمكن تحقيق ذلك باستخدام خصائص CurrentNode و CurrentParagraph لفئة DocumentBuilder:
+## Étape 2 : Accéder au nœud et au paragraphe actuels
+Ensuite, récupérez le nœud et le paragraphe actuels où le curseur est positionné. Ceci peut être réalisé en utilisant les propriétés CurrentNode et CurrentParagraph de la classe DocumentBuilder :
 
 ```csharp
 Node curNode = builder.CurrentNode;
 Paragraph curParagraph = builder.CurrentParagraph;
 ```
 
-## الخطوة 3: استرداد معلومات موضع المؤشر
-الآن ، يمكنك استرداد المعلومات حول موضع المؤشر. في مقتطف الكود التالي ، نطبع نص الفقرة الحالية:
+## Étape 3 : Récupérer les informations sur la position du curseur
+Maintenant, vous pouvez récupérer des informations sur la position du curseur. Dans l'extrait de code suivant, nous imprimons le texte du paragraphe actuel :
 
 ```csharp
 Console.WriteLine("\nCursor move to paragraph: " + curParagraph.GetText());
 ```
 
-### مثال رمز مصدر لموقع المؤشر باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لفهم موضع المؤشر باستخدام Aspose.Words for .NET:
+### Exemple de code source pour la position du curseur à l'aide de Aspose.Words pour .NET
+Voici le code source complet pour comprendre la position du curseur en utilisant Aspose.Words pour .NET :
 
 ```csharp
 Document doc = new Document();
@@ -50,8 +50,8 @@ Paragraph curParagraph = builder.CurrentParagraph;
 Console.WriteLine("\nCursor move to paragraph: " + curParagraph.GetText());
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية التعامل مع موضع المؤشر في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن استرداد العقدة والفقرة الحالية حيث يتم وضع المؤشر في المستند.
+## Conclusion
+Toutes nos félicitations! Vous avez appris avec succès comment travailler avec la position du curseur dans un document Word en utilisant Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez maintenant récupérer le nœud et le paragraphe actuels où le curseur est positionné dans le document.
 
-يعد فهم موضع المؤشر مفيدًا للعديد من السيناريوهات ، مثل معالجة محتوى المستند استنادًا إلى موقع المؤشر أو تنفيذ ميزات التحرير المخصصة.
+Comprendre la position du curseur est utile pour divers scénarios, tels que la manipulation du contenu du document en fonction de l'emplacement du curseur ou la mise en œuvre de fonctionnalités d'édition personnalisées.
 

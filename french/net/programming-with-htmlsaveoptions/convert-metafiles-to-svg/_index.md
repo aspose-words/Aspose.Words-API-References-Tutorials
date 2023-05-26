@@ -1,22 +1,22 @@
 ---
-title: تحويل ملفات التعريف إلى Svg
-linktitle: تحويل ملفات التعريف إلى Svg
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحويل ملفات التعريف إلى تنسيق SVG عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET.
+title: Convertir les métafichiers en Svg
+linktitle: Convertir les métafichiers en Svg
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour convertir les métafichiers au format SVG lors de la conversion d'un document au format HTML avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-htmlsaveoptions/convert-metafiles-to-svg/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتحويل ملفات التعريف إلى تنسيق SVG باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تحويل ملفات التعريف إلى تنسيق SVG عند تحويل مستند إلى HTML.
+Dans ce didacticiel, nous vous guiderons à travers le code source C# pour convertir les métafichiers au format SVG avec Aspose.Words pour .NET. Cette fonctionnalité vous permet de convertir des métafichiers au format SVG lors de la conversion d'un document au format HTML.
 
-## الخطوة 1: إعداد المشروع
+## Étape 1 : configuration du projet
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Pour commencer, créez un nouveau projet C# dans votre IDE préféré. Assurez-vous que la bibliothèque Aspose.Words pour .NET est référencée dans votre projet.
 
-## الخطوة 2: إدراج صورة SVG في المستند
+## Étape 2 : Insertion d'une image SVG dans le document
 
-في هذه الخطوة ، سنقوم بإدراج صورة SVG في المستند المراد تحويله. استخدم الكود التالي لإدراج صورة SVG باستخدام علامة HTML:
+Dans cette étape, nous allons insérer une image SVG dans le document à convertir. Utilisez le code suivant pour insérer une image SVG à l'aide d'une balise HTML :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -31,33 +31,33 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- هذا الرمز ينشئ مثيل`Document` و`DocumentBuilder` لبناء الوثيقة. يقوم بإدراج ملف`<svg>` علامة تحتوي على أ`<polygon>` عنصر بسمات لتحديد شكل ونمط صورة SVG.
+ Ce code crée une instance de`Document` et`DocumentBuilder` pour construire le document. Il insère un`<svg>` balise contenant un`<polygon>` élément avec des attributs pour définir la forme et le style de l'image SVG.
 
-## الخطوة 3: تعيين خيارات حفظ HTML
+## Étape 3 : Définir les options d'enregistrement HTML
 
-سنقوم الآن بتعيين خيارات حفظ HTML ، وتحديد أنه يجب تحويل ملفات التعريف إلى تنسيق SVG. استخدم الكود التالي:
+Nous allons maintenant définir les options d'enregistrement HTML, en spécifiant que les métafichiers doivent être convertis au format SVG. Utilisez le code suivant :
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Svg };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions` ومجموعات`MetafileFormat` ل`HtmlMetafileFormat.Svg` لتحديد أن ملفات التعريف يجب أن يتم تحويلها إلى تنسيق SVG عند التحويل إلى HTML.
+ Ce code crée une instance de`HtmlSaveOptions` et ensembles`MetafileFormat` pour`HtmlMetafileFormat.Svg` pour spécifier que les métafichiers doivent être convertis au format SVG lors de la conversion au format HTML.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## Étape 4 : Conversion et enregistrement du document au format HTML
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML المحددة مسبقًا. استخدم الكود التالي:
+Enfin, nous convertirons le document en HTML en utilisant les options d'enregistrement HTML définies précédemment. Utilisez le code suivant :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML ويحفظه في ملف مع ملفات التعريف المحولة إلى SVG.
+Ce code convertit le document en HTML et l'enregistre dans un fichier avec les métafichiers convertis en SVG.
 
-### مثال على شفرة المصدر لتحويل ملفات التعريف إلى Svg باستخدام Aspose.Words for .NET
+### Exemple de code source pour convertir des métafichiers en Svg à l'aide d'Aspose.Words pour .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);

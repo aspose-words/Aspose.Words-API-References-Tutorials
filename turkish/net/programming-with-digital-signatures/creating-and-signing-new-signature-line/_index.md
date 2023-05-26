@@ -1,18 +1,18 @@
 ---
-title: إنشاء وتوقيع خط توقيع جديد
-linktitle: إنشاء وتوقيع خط توقيع جديد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء سطر توقيع جديد والتوقيع عليه في مستند Word باستخدام Aspose.Words for .NET.
+title: Yeni İmza Hattı Oluşturma ve İmzalama
+linktitle: Yeni İmza Hattı Oluşturma ve İmzalama
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde yeni bir imza satırı oluşturmayı ve imzalamayı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لاستخدام ميزة إنشاء سطر توقيع جديد وتوقيعه باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إدراج سطر توقيع في مستند Word ، وتعيين الخيارات المخصصة وتوقيع المستند. اتبع الخطوات التالية:
+Bu öğreticide, Aspose.Words for .NET ile yeni bir imza satırı oluştur ve imzala özelliğini kullanma adımlarında size yol göstereceğiz. Bu özellik, bir Word belgesine imza satırı eklemenize, özel seçenekler ayarlamanıza ve belgeyi imzalamanıza olanak tanır. Aşağıdaki adımları takip et:
 
-## الخطوة 1: إنشاء المستند والمولد
+## 1. Adım: Belgeyi ve Oluşturucuyu Oluşturma
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+Document sınıfının bir örneğini ve DocumentBuilder nesnesini oluşturarak başlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -20,27 +20,27 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إدخال سطر التوقيع
+## 2. Adım: İmza satırının eklenmesi
 
-استخدم طريقة InsertSignatureLine () لكائن DocumentBuilder لإدراج سطر توقيع جديد في المستند:
+Belgeye yeni bir imza satırı eklemek için DocumentBuilder nesnesinin InsertSignatureLine() yöntemini kullanın:
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
 ```
 
-## الخطوة 3: احفظ المستند
+## 3. Adım: Belgeyi kaydedin
 
-احفظ المستند المعدل:
+Değiştirilen belgeyi kaydedin:
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند.
+Belgeyi kaydetmek için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-## الخطوة 4: توقيع الوثيقة
+## 4. Adım: Belgeyi imzalama
 
-لتوقيع الوثيقة ، تحتاج إلى تعيين خيارات التوقيع واستخدام فئة DigitalSignatureUtil:
+Belgeyi imzalamak için imza seçeneklerini ayarlamanız ve DigitalSignatureUtil sınıfını kullanmanız gerekir:
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -55,15 +55,15 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 	dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند وصورة خط التوقيع والمستند الموقع.
+Belge, imza satırı resmi ve imzalı belge için doğru yolları belirttiğinizden emin olun.
 
-### مثال على شفرة المصدر لإنشاء وتوقيع سطر توقيع جديد باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Yeni İmza Satırı Oluşturmak ve İmzalamak için örnek kaynak kodu
 
-إليك شفرة المصدر الكاملة لإنشاء وتوقيع سطر توقيع جديد باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET ile yeni bir imza satırı oluşturmak ve imzalamak için eksiksiz kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -85,5 +85,5 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ```
 
-باتباع هذه الخطوات ، ستتمكن بسهولة من إنشاء وتوقيع سطر توقيع جديد في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Bu adımları izleyerek, Aspose.Words for .NET ile Word belgenizde kolayca yeni bir imza satırı oluşturabilecek ve imzalayabileceksiniz.
 

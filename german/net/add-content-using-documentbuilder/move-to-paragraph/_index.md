@@ -1,54 +1,54 @@
 ---
-title: الانتقال إلى الفقرة
-linktitle: الانتقال إلى الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة Aspose.Words for .NET's Move To Paragraph للتنقل ومعالجة الفقرات في مستندات Word برمجيًا.
+title: Zum Absatz wechseln
+linktitle: Zum Absatz wechseln
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie die Funktion „In Absatz verschieben“ von Aspose.Words für .NET verwenden, um programmgesteuert in Absätzen in Word-Dokumenten zu navigieren und diese zu bearbeiten.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/move-to-paragraph/
 ---
 
-في هذا المثال خطوة بخطوة ، سوف نستكشف ميزة Move To Paragraph في Aspose.Words for .NET. تسمح هذه الميزة للمطورين بالتنقل ومعالجة الفقرات داخل مستند Word برمجيًا. باتباع هذا الدليل ، ستتعلم كيفية تنفيذ ميزة الانتقال إلى الفقرة واستخدامها بشكل فعال.
+In diesem Schritt-für-Schritt-Beispiel erkunden wir die Funktion „In Absatz verschieben“ von Aspose.Words für .NET. Mit dieser Funktion können Entwickler programmgesteuert durch Absätze in einem Word-Dokument navigieren und diese bearbeiten. Wenn Sie dieser Anleitung folgen, erfahren Sie, wie Sie die Funktion „In Absatz verschieben“ effektiv implementieren und nutzen.
 
-يوضح الكود أعلاه استخدام ميزة Move To Paragraph. دعونا نفهم كل خطوة بالتفصيل:
+Der obige Code demonstriert die Verwendung der Funktion „In Absatz verschieben“. Lassen Sie uns jeden Schritt im Detail verstehen:
 
-## الخطوة 1: تحميل المستند
+## Schritt 1: Laden des Dokuments
 
- نبدأ بتحميل مستند Word في مثيل`Document` فصل. ال`MyDir`متغير يمثل مسار الدليل حيث يوجد المستند. يجب استبداله بمسار الدليل الفعلي أو تعديل الكود وفقًا لذلك.
+ Wir beginnen mit dem Laden des Word-Dokuments in eine Instanz von`Document` Klasse. Der`MyDir`Die Variable stellt den Verzeichnispfad dar, in dem sich das Dokument befindet. Sie sollten es durch den tatsächlichen Verzeichnispfad ersetzen oder den Code entsprechend ändern.
 
 ```csharp
 Document doc = new Document(MyDir + "Paragraphs.docx");
 ```
 
-## الخطوة 2: تهيئة DocumentBuilder
+## Schritt 2: Initialisieren des DocumentBuilder
 
- بعد ذلك ، نقوم بإنشاء ملف`DocumentBuilder` الكائن وربطه بالمستند الذي تم تحميله. ال`DocumentBuilder` توفر class طرقًا وخصائص مختلفة لمعالجة محتوى المستند.
+ Als nächstes erstellen wir eine`DocumentBuilder` Objekt und verknüpfen es mit dem geladenen Dokument. Der`DocumentBuilder` Die Klasse stellt verschiedene Methoden und Eigenschaften zur Bearbeitung des Dokumentinhalts bereit.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: الانتقال إلى فقرة محددة
+## Schritt 3: Zu einem bestimmten Absatz wechseln
 
- ال`MoveToParagraph` يتم استخدام الطريقة لوضع منشئ المستند في فقرة معينة داخل المستند. يأخذ معلمتين: فهرس الفقرة الهدف وموضع الحرف داخل تلك الفقرة (يمثل 0 بداية الفقرة).
+ Der`MoveToParagraph` Die Methode wird verwendet, um den Dokumentgenerator an einem bestimmten Absatz im Dokument zu positionieren. Es benötigt zwei Parameter: den Index des Zielabsatzes und die Zeichenposition innerhalb dieses Absatzes (0 steht für den Anfang des Absatzes).
 
-في المثال المقدم ، ننتقل إلى الفقرة الثالثة (الفهرس 2) من المستند:
+Im bereitgestellten Beispiel bewegen wir uns zum dritten Absatz (Index 2) des Dokuments:
 
 ```csharp
 builder.MoveToParagraph(2, 0);
 ```
 
-## الخطوة 4: تعديل محتوى الفقرة
+## Schritt 4: Ändern des Absatzinhalts
 
- بمجرد وضع المنشئ في الفقرة المطلوبة ، يمكننا استخدام الامتداد`Writeln`طريقة لإضافة أو تعديل محتوى تلك الفقرة. في هذه الحالة ، نضيف النص "هذه هي الفقرة الثالثة".
+ Sobald der Builder am gewünschten Absatz positioniert ist, können wir den verwenden`Writeln`Methode zum Hinzufügen oder Ändern des Inhalts dieses Absatzes. In diesem Fall fügen wir den Text „Dies ist der 3. Absatz“ hinzu.
 
 ```csharp
 builder.Writeln("This is the 3rd paragraph.");
 ```
 
-### مثال كود المصدر للانتقال إلى الفقرة باستخدام Aspose.Words for .NET
+### Beispielquellcode für „In Absatz verschieben“ mit Aspose.Words für .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتنفيذ ميزة Move To Paragraph باستخدام Aspose.Words for .NET:
+Nachfolgend finden Sie den vollständigen Beispielquellcode für die Implementierung der Funktion „In Absatz verschieben“ mit Aspose.Words für .NET:
 
 ```csharp
 
@@ -60,5 +60,5 @@ builder.Writeln("This is the 3rd paragraph.");
 	
 ```
 
-باتباع هذا الدليل واستخدام ميزة النقل إلى الفقرة ، يمكنك معالجة الفقرات برمجيًا في مستندات Word باستخدام Aspose.Words for .NET.
+Wenn Sie dieser Anleitung folgen und die Funktion „In Absatz verschieben“ verwenden, können Sie Absätze in Word-Dokumenten mit Aspose.Words für .NET programmgesteuert bearbeiten.
 

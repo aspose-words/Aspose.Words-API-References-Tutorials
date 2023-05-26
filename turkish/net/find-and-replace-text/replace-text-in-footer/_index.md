@@ -1,49 +1,49 @@
 ---
-title: استبدال النص في التذييل
-linktitle: استبدال النص في التذييل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استبدال النص في تذييل مستندات Word باستخدام Aspose.Words for .NET.
+title: Altbilgideki Metni Değiştir
+linktitle: Altbilgideki Metni Değiştir
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerinin alt bilgisindeki metni nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/replace-text-in-footer/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة استبدال النص في التذييل في Aspose.Words لمكتبة .NET. تتيح لك هذه الميزة البحث عن نص معين واستبداله في تذييلات مستندات Word.
+Bu makalede, Aspose.Words for .NET kitaplığında Alt Bilgide Metin Değiştir işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, Word belgelerinin altbilgilerindeki belirli metni bulmanızı ve değiştirmenizi sağlar.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# dili hakkında temel bilgi.
+- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## الخطوة 1: قم بتحميل المستند
+## 1. Adım: Belgeyi yükleyin
 
-قبل أن نبدأ في استخدام استبدال النص في التذييل ، نحتاج إلى تحميل المستند إلى Aspose.Words for .NET. يمكن القيام بذلك باستخدام ملف`Document` فئة وتحديد مسار ملف المستند:
+Alt bilgide metin değiştirmeyi kullanmaya başlamadan önce, belgeyi Aspose.Words for .NET'e yüklememiz gerekiyor. Bu, kullanılarak yapılabilir`Document` sınıf ve belge dosyası yolunu belirterek:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Footer.docx");
 ```
 
-## الخطوة 2: الوصول إلى التذييل
+## 2. Adım: Altbilgiye erişin
 
- بمجرد تحميل المستند ، نحتاج إلى الوصول إلى التذييل لإجراء استبدال النص. في مثالنا ، نستخدم الامتداد`HeadersFooters` خاصية القسم الأول من المستند للحصول على مجموعة الرؤوس / التذييلات. بعد ذلك ، نختار التذييل الرئيسي باستخدام`HeaderFooterType.FooterPrimary` فِهرِس:
+ Belge yüklendikten sonra, metin değiştirmeyi gerçekleştirmek için alt bilgiye erişmemiz gerekir. Örneğimizde,`HeadersFooters` üstbilgi/altbilgi koleksiyonunu almak için belgenin ilk bölümünün özelliği. Ardından, kullanarak ana altbilgiyi seçiyoruz.`HeaderFooterType.FooterPrimary` dizin:
 
 ```csharp
 HeaderFooterCollection headersFooters = doc.FirstSection.HeadersFooters;
 HeaderFooter footer = headersFooters[HeaderFooterType.FooterPrimary];
 ```
 
-## الخطوة 3: تكوين خيارات البحث والاستبدال
+## 3. Adım: Arama ve değiştirme seçeneklerini yapılandırın
 
- سنقوم الآن بتكوين خيارات البحث والاستبدال باستخدام ملف`FindReplaceOptions` هدف. في مثالنا ، حددنا`MatchCase` ل`false` لتجاهل الحالة عند البحث ، و`FindWholeWordsOnly` ل`false` للسماح بالبحث عن أجزاء من الكلمات واستبدالها:
+ Şimdi bul ve değiştir seçeneklerini bir a kullanarak yapılandıracağız.`FindReplaceOptions` nesne. Örneğimizde, ayarladık`MatchCase` ile`false` arama yaparken büyük/küçük harf durumunu yok saymak ve`FindWholeWordsOnly` ile`false` kelime parçalarının aranmasına ve değiştirilmesine izin vermek için:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { MatchCase = false, FindWholeWordsOnly = false };
 ```
 
-## الخطوة 4: استبدال النص في التذييل
+## 4. Adım: Altbilgideki metni değiştirin
 
- نحن نستخدم ال`Range.Replace` طريقة لإجراء استبدال النص في التذييل. في مثالنا ، نستبدل العبارة "(C) 2006 Aspose Pty Ltd." بواسطة "حقوق الطبع والنشر (C) 2020 لشركة Aspose Pty Ltd." :
+ biz kullanıyoruz`Range.Replace` alt bilgide metin değiştirme gerçekleştirme yöntemi. Örneğimizde "(C) 2006 Aspose Pty Ltd." ifadesini değiştiriyoruz. "Copyright (C) 2020 by Aspose Pty Ltd." :
 
 ```csharp
 footer
@@ -51,21 +51,21 @@ footer
 .Range.Replace("(C) 2006 Aspose Pty Ltd.", "Copyright (C) 2020 by Aspose Pty Ltd.", options);
 ```
 
-## الخطوة 5: احفظ المستند المحرر
+## 5. Adım: Düzenlenen belgeyi kaydedin
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+ Son olarak, değiştirilmiş belgeyi kullanarak belirtilen bir dizine kaydediyoruz.`Save` yöntem:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
 ```
 
-### مثال على شفرة المصدر لاستبدال النص في التذييل باستخدام Aspose.Words لـ .NET
+### Aspose.Words for .NET kullanarak Altbilgideki Metni Değiştirmek için örnek kaynak kodu
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام استبدال نص التذييل بـ Aspose.Words for .NET:
+Aspose.Words for .NET ile altbilgi metni değiştirmenin kullanımını gösteren tam örnek kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Footer.docx");
 
@@ -81,6 +81,6 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
         
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة استبدال النص في التذييل في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لتحميل مستند ، والوصول إلى التذييل ، وتكوين خيارات البحث والاستبدال ، وإجراء استبدال النص ، وحفظ المستند المحرر.
+Bu makalede, Aspose.Words for .NET'in Altbilgideki Metni Değiştir işlevinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belgeyi yüklemek, alt bilgiye erişmek, arama ve değiştirme seçeneklerini yapılandırmak, metin değiştirmeyi gerçekleştirmek ve düzenlenen belgeyi kaydetmek için adım adım bir kılavuz izledik.

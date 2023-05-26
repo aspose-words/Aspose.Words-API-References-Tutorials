@@ -1,43 +1,43 @@
 ---
-title: إدراج صورة مضمنة
-linktitle: إدراج صورة مضمنة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الصور المضمنة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Insertar imagen en línea
+linktitle: Insertar imagen en línea
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a insertar imágenes en línea en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/insert-inline-image/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج الصور المضمنة في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة الصور مباشرة إلى نص مستنداتك.
+En este completo tutorial, aprenderá a insertar imágenes en línea en un documento de Word utilizando Aspose.Words para .NET. Lo guiaremos a través del proceso y le proporcionaremos los fragmentos de código C# necesarios. Al final de esta guía, podrá agregar imágenes directamente al texto de sus documentos.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
+- Aspose.Words para la biblioteca .NET instalada en su sistema.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Paso 1: Cree un nuevo documento y DocumentBuilder
+Para comenzar, cree un nuevo documento usando la clase Document e inicialice un objeto DocumentBuilder:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل صورة مضمنة
-بعد ذلك ، استخدم طريقة InsertImage لفئة DocumentBuilder لإدراج صورة مضمنة في المستند. قم بتوفير مسار ملف الصورة كمعامل:
+## Paso 2: inserte una imagen en línea
+A continuación, utilice el método InsertImage de la clase DocumentBuilder para insertar una imagen en línea en el documento. Proporcione la ruta del archivo de imagen como parámetro:
 
 ```csharp
 builder.InsertImage(ImagesDir + "Transparent background logo.png");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الصورة المضمنة ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Paso 3: Guarde el documento
+Después de insertar la imagen en línea, guarde el documento en un archivo usando el método Guardar de la clase Documento:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx");
 ```
 
-### مثال على كود المصدر لإدراج صورة مضمنة باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال صورة مضمنة باستخدام Aspose.Words for .NET:
+### Ejemplo de código fuente para insertar imagen en línea usando Aspose.Words para .NET
+Aquí está el código fuente completo para insertar una imagen en línea usando Aspose.Words para .NET:
 
 ```csharp
 Document doc = new Document();
@@ -48,7 +48,7 @@ builder.InsertImage(ImagesDir + "Transparent background logo.png");
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج الصور المضمنة في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إضافة الصور بسلاسة داخل نص المستندات الخاصة بك.
+## Conclusión
+¡Felicidades! Ha aprendido con éxito cómo insertar imágenes en línea en un documento de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente provisto, ahora puede agregar imágenes sin problemas dentro del texto de sus documentos.
 
-تعد الصور المضمنة مفيدة للعديد من السيناريوهات ، مثل إضافة الرسوم التوضيحية أو الشعارات أو العناصر المرئية الأخرى مباشرةً في تدفق المستند.
+Las imágenes en línea son útiles para varios escenarios, como agregar ilustraciones, logotipos u otros elementos visuales directamente en el flujo del documento.

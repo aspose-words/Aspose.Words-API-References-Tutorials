@@ -1,25 +1,25 @@
 ---
-title: البرمجة مع خيارات وإعدادات المستند
-linktitle: البرمجة مع خيارات وإعدادات المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تحسين لـ ms word ، وإظهار الأخطاء النحوية والإملائية ، وتنظيف الأنماط والقوائم غير المستخدمة ، وتنظيف النمط المكرر ، وخيارات العرض ، ووثيقة pa
+title: Belge Seçenekleri ve Ayarlarla Programlama
+linktitle: Belge Seçenekleri ve Ayarlarla Programlama
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, ms word için optimize etme, dilbilgisi ve yazım hatalarını gösterme, kullanılmayan stilleri ve listeleri temizleme, yinelenen stili temizleme, görünüm seçeneklerini, belge paketini içerir.
 type: docs
 weight: 1510
 url: /tr/net/programming-with-document-options-and-settings/
 ---
-ترشدك برامج Aspose.Words for .NET التعليمية حول "البرمجة مع خيارات وإعدادات المستند" عبر الميزات والتقنيات المتنوعة لمعالجة خيارات وإعدادات المستندات في Aspose.Words for .NET. تساعدك هذه البرامج التعليمية على فهم كيفية تخصيص إعدادات التحميل وإدارة الخطوط وتنسيقات المستندات والقوالب والمزيد.
+Aspose.Words for .NET "Belge Seçenekleri ve Ayarları ile Programlama" öğreticileri, Aspose.Words for .NET'te belge seçeneklerini ve ayarlarını değiştirmek için çeşitli özellikler ve teknikler konusunda size yol gösterir. Bu eğitimler, yükleme ayarlarını nasıl özelleştireceğinizi, yazı tiplerini, belge biçimlerini, şablonları ve daha fazlasını nasıl yöneteceğinizi anlamanıza yardımcı olur.
 
-توضح البرامج التعليمية كيفية تخصيص خيارات تحميل المستند. ستتعلم كيفية تحديد معلمات التحميل مثل إدارة الخطوط ودقة الارتباط وتحسين الأداء وما إلى ذلك. تتيح لك هذه الخيارات التحكم بدقة في سلوك تحميل المستندات وتحسين أداء تطبيقك.
+Öğreticiler, belge yükleme seçeneklerinin nasıl özelleştirileceğini açıklar. Yazı tipi yönetimi, bağlantı çözünürlüğü, performans optimizasyonu vb. gibi yükleme parametrelerini nasıl belirleyeceğinizi öğreneceksiniz. Bu seçenekler, belge yükleme davranışını tam olarak kontrol etmenize ve uygulamanızın performansını optimize etmenize olanak tanır.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [تحسين لبرنامج MS Word](./optimize-for-ms-word/) | دليل تفصيلي خطوة بخطوة لتحسين مستند لبرنامج MS Word باستخدام Aspose.Words for .NET. |
-| [إظهار الأخطاء النحوية والإملائية](./show-grammatical-and-spelling-errors/) | دليل تفصيلي خطوة بخطوة لتمكين عرض الأخطاء النحوية والإملائية في مستند باستخدام Aspose.Words for .NET. |
-| [تنظيف الأنماط والقوائم غير المستخدمة](./cleanup-unused-styles-and-lists/) | دليل خطوة بخطوة لتنظيف الأنماط والقوائم غير المستخدمة في مستند باستخدام Aspose.Words for .NET. |
-| [تنظيف النمط المكرر](./cleanup-duplicate-style/) | دليل خطوة بخطوة لتنظيف الأنماط المكررة في مستند باستخدام Aspose.Words for .NET. تم تضمين كود المصدر الكامل. |
-| [عرض الخيارات](./view-options/) | دليل تفصيلي خطوة بخطوة لتكوين خيارات عرض المستند باستخدام Aspose.Words for .NET. |
-| [وثيقة إعداد الصفحة](./document-page-setup/) | دليل خطوة بخطوة لإعداد تخطيط مستند باستخدام Aspose.Words for .NET. |
-| [أضف اليابانية كلغات تحرير](./add-japanese-as-editing-languages/) | دليل خطوة بخطوة لإضافة اليابانية كلغة تحرير باستخدام Aspose.Words for .NET. |
-| [تعيين اللغة الروسية كلغة تحرير افتراضية](./set-russian-as-default-editing-language/) | دليل خطوة بخطوة لتعيين اللغة الروسية كلغة تحرير افتراضية لمستند باستخدام Aspose.Words for .NET. |
-| [تعيين إعداد الصفحة وتنسيق القسم](./set-page-setup-and-section-formatting/) | دليل خطوة بخطوة لإعداد تخطيط المستند وتنسيق القسم باستخدام Aspose.Words for .NET. |
+| [Ms Word İçin En İyileştir](./optimize-for-ms-word/) | Aspose.Words for .NET ile MS Word için bir belgeyi optimize etmek için adım adım kılavuz. |
+| [Dilbilgisi ve Yazım Hatalarını Göster](./show-grammatical-and-spelling-errors/) | Aspose.Words for .NET ile bir belgedeki dilbilgisi ve imla hatalarının görüntülenmesini sağlamak için adım adım kılavuz. |
+| [Kullanılmayan Stilleri ve Listeleri Temizleme](./cleanup-unused-styles-and-lists/) | Aspose.Words for .NET ile bir belgedeki kullanılmayan stilleri ve listeleri temizlemek için adım adım kılavuz. |
+| [Yinelenen Stili Temizleme](./cleanup-duplicate-style/) | Aspose.Words for .NET kullanarak bir belgedeki yinelenen stilleri temizlemek için adım adım kılavuz. Tam kaynak kodu dahildir. |
+| [Seçenekleri gör](./view-options/) | Aspose.Words for .NET ile belge görüntüleme seçeneklerini yapılandırmak için adım adım kılavuz. |
+| [Belge Sayfası Yapısı](./document-page-setup/) | Aspose.Words for .NET ile bir belge mizanpajı oluşturmak için adım adım kılavuz. |
+| [Japoncayı Düzenleme Dilleri Olarak Ekleyin](./add-japanese-as-editing-languages/) | Aspose.Words for .NET ile Japonca'yı düzenleme dili olarak eklemek için adım adım kılavuz. |
+| [Rusçayı Varsayılan Düzenleme Dili Olarak Ayarla](./set-russian-as-default-editing-language/) | Aspose.Words for .NET ile bir belgenin varsayılan düzenleme dili olarak Rusça'yı ayarlamak için adım adım kılavuz. |
+| [Sayfa Yapısını ve Bölüm Biçimlendirmesini Ayarlayın](./set-page-setup-and-section-formatting/) | Aspose.Words for .NET ile bir belgenin düzenini ve bölüm biçimlendirmesini ayarlamak için adım adım kılavuz. |

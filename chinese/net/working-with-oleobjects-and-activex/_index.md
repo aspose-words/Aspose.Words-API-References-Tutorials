@@ -1,22 +1,22 @@
 ---
-title: العمل مع OleObjects و ActiveX
-linktitle: العمل مع OleObjects و ActiveX
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية إدراج كائن Ole مع حزمة Ole وبدونها ، وكائن Ole كرمز ، وقراءة خصائص Active XControl باستخدام Aspose.Words for .NET.
+title: 使用 OleObjects 和 ActiveX
+linktitle: 使用 OleObjects 和 ActiveX
+second_title: Aspose.Words for .NET API 参考
+description: 教程包含如何使用和不使用 Ole 包插入 Ole 对象、Ole 对象作为图标，以及使用 Aspose.Words for .NET 读取 Active XControl 属性。
 type: docs
 weight: 1080
 url: /zh/net/working-with-oleobjects-and-activex/
 ---
 
-ترشدك برامج Aspose.Words for .NET التعليمية حول العمل مع كائنات OLE و ActiveX إلى العديد من الميزات والتقنيات لمعالجة كائنات OLE و ActiveX بشكل فعال في مستندات Word الخاصة بك. في هذه البرامج التعليمية ، ستتعلم كيفية إدراج كائنات OLE و ActiveX وسحبها وتحديثها وحذفها ، مثل المخططات وجداول البيانات وعناصر تحكم ActiveX ، في مستندات Word الخاصة بك. ستتعلم أيضًا كيفية تخصيص مظهر وسلوك هذه الكائنات ، وكذلك كيفية التعامل مع الأخطاء والاستثناءات المتعلقة بكائنات OLE و ActiveX.
+有关使用 OLE 和 ActiveX 对象的 Aspose.Words for .NET 教程将带您了解在 Word 文档中有效操作 OLE 和 ActiveX 对象的各种功能和技术。在这些教程中，您将了解如何在 Word 文档中插入、签出、更新和删除 OLE 和 ActiveX 对象，例如图表、电子表格和 ActiveX 控件。您还将学习如何自定义这些对象的外观和行为，以及如何处理与 OLE 和 ActiveX 对象相关的错误和异常。
 
-تمنحك هذه البرامج التعليمية أسلوبًا عمليًا تدريجيًا للعمل مع كائنات OLE و ActiveX في Aspose.Words for .NET. سوف تتعلم كيفية التعامل مع هذه الكائنات باستخدام الفئات والطرق المختلفة التي توفرها مكتبة Aspose.Words. ستساعدك أمثلة الكود الواضحة والمعلقة على فهم المفاهيم المقدمة وممارستها. مع هذه المعرفة ، ستتمكن من استغلال وظائف كائنات OLE و ActiveX بشكل كامل في مستندات Word الخاصة بك ، وإضافة التفاعل والثراء البصري إليها.
+这些教程为您提供了在 Aspose.Words for .NET 中使用 OLE 和 ActiveX 对象的实际操作、循序渐进的方法。您将学习如何使用 Aspose.Words 库提供的不同类和方法来操作这些对象。清晰且带注释的代码示例将帮助您理解和实践所提供的概念。有了这些知识，您将能够在 Word 文档中充分利用 OLE 和 ActiveX 对象的功能，为它们添加交互性和视觉丰富性。
 
- ## دروس
-| عنوان | وصف |
+ ## 教程
+| 标题 | 描述 |
 | --- | --- |
-| [إدراج كائن Ole](./insert-ole-object/) | تعرف على كيفية إدراج كائن OLE في مستند باستخدام Aspose.Words for .NET. |
-| [قم بإدراج كائن Ole مع حزمة Ole](./insert-ole-object-with-ole-package/) | تعرف على كيفية إدراج كائن OLE مع حزمة OLE في مستند باستخدام Aspose.Words for .NET. |
-| [إدراج كائن Ole كرمز](./insert-ole-object-as-icon/) | تعرف على كيفية إدراج كائن OLE كرمز باستخدام Aspose.Words for .NET. |
-| [قم بإدراج كائن Ole كرمز باستخدام الدفق](./insert-ole-object-as-icon-using-stream/) | تعرف على كيفية إدراج كائن OLE كرمز باستخدام دفق باستخدام Aspose.Words for .NET. |
-| [قراءة خصائص Active XControl](./read-active-xcontrol-properties/) | اقرأ خصائص عناصر تحكم ActiveX في مستند Word باستخدام Aspose.Words for .NET. |
+| [插入 Ole 对象](./insert-ole-object/) | 了解如何使用 Aspose.Words for .NET 将 OLE 对象插入到文档中。 |
+| [使用 Ole 包插入 Ole 对象](./insert-ole-object-with-ole-package/) | 了解如何使用 Aspose.Words for .NET 将带有 OLE 包的 OLE 对象插入到文档中。 |
+| [将 Ole 对象插入为图标](./insert-ole-object-as-icon/) | 了解如何使用 Aspose.Words for .NET 将 OLE 对象作为图标插入。 |
+| [使用流将 Ole 对象插入为图标](./insert-ole-object-as-icon-using-stream/) | 了解如何通过 Aspose.Words for .NET 使用流将 OLE 对象作为图标插入。 |
+| [读取活动 XControl 属性](./read-active-xcontrol-properties/) | 使用 Aspose.Words for .NET 读取 Word 文档中 ActiveX 控件的属性。 |

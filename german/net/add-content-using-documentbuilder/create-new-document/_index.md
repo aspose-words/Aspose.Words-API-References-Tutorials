@@ -1,71 +1,71 @@
 ---
-title: قم بإنشاء مستند جديد
-linktitle: قم بإنشاء مستند جديد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء مستند Word جديد وإضافة محتوى باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Neues Dokument erstellen
+linktitle: Neues Dokument erstellen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein neues Word-Dokument erstellen und Inhalte hinzufügen. Schritt für Schritt Anleitung.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/create-new-document/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، ستتعلم كيفية إنشاء مستند Word جديد من البداية باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إنشاء مستند جديد وإضافة محتوى إليه باستخدام فئة DocumentBuilder.
+In diesem Schritt-für-Schritt-Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET ein neues Word-Dokument von Grund auf erstellen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieses Handbuchs werden Sie in der Lage sein, mithilfe der DocumentBuilder-Klasse ein neues Dokument zu generieren und diesem Inhalte hinzuzufügen.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## الخطوة 1: قم بإنشاء مستند جديد
-للبدء ، أنشئ مستندًا جديدًا باستخدام فئة المستند:
+## Schritt 1: Erstellen Sie ein neues Dokument
+Erstellen Sie zunächst ein neues Dokument mit der Document-Klasse:
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة الثانية: إضافة محتوى إلى المستند
-بعد ذلك ، استخدم كائن DocumentBuilder لإضافة محتوى إلى المستند. قم بتهيئة DocumentBuilder بالمستند الذي تم إنشاؤه حديثًا:
+## Schritt 2: Inhalte zum Dokument hinzufügen
+Als nächstes verwenden Sie ein DocumentBuilder-Objekt, um dem Dokument Inhalte hinzuzufügen. Initialisieren Sie den DocumentBuilder mit dem neu erstellten Dokument:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Hello World!");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إضافة المحتوى المطلوب ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Schritt 3: Speichern Sie das Dokument
+Nachdem Sie den gewünschten Inhalt hinzugefügt haben, speichern Sie das Dokument mit der Save-Methode der Document-Klasse in einer Datei:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 ```
 
-## مثال كود المصدر لإنشاء مستند جديد باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لإنشاء مستند جديد باستخدام Aspose.Words for .NET:
+## Beispielquellcode zum Erstellen eines neuen Dokuments mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode zum Erstellen eines neuen Dokuments mit Aspose.Words für .NET:
 
 ```csharp
 Document doc = new Document();
 
-// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Hello World!");
 
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 ```
 
-## خاتمة
+## Abschluss
 
-تهانينا! لقد تعلمت بنجاح كيفية إنشاء مستند Word جديد باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إنشاء مستندات جديدة برمجيًا وإضافة محتوى إليها باستخدام فئة DocumentBuilder.
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET ein neues Word-Dokument erstellen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie jetzt programmgesteuert neue Dokumente generieren und ihnen mithilfe der DocumentBuilder-Klasse Inhalte hinzufügen.
 
-يمكنك الآن إنشاء مستندات Word وتخصيصها بثقة وفقًا لمتطلباتك المحددة.
+Jetzt können Sie Word-Dokumente sicher erstellen und entsprechend Ihren spezifischen Anforderungen anpassen.
 
-### مثال على شفرة المصدر لإنشاء مستند جديد باستخدام Aspose.Words for .NET:
+### Beispielquellcode zum Erstellen eines neuen Dokuments mit Aspose.Words für .NET:
 
 ```csharp
 Document doc = new Document();
 
-// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Hello World!");
 
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 ```
 
-تذكر أن تقوم بضبط مسار الملف واسمه في الكود لحفظ المستند في الموقع المطلوب على نظامك.
+Denken Sie daran, den Dateipfad und -namen im Code anzupassen, um das Dokument am gewünschten Speicherort auf Ihrem System zu speichern.
 

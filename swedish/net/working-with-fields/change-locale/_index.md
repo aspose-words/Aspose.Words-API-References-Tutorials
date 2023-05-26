@@ -1,21 +1,21 @@
 ---
-title: تغيير اللغة
-linktitle: تغيير اللغة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير الإعدادات المحلية لتنسيق التاريخ والأرقام في مستندات Word باستخدام Aspose.Words for .NET.
+title: Ändra språk
+linktitle: Ändra språk
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ändrar språk för datum- och nummerformatering i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/change-locale/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال عملية تغيير الإعدادات المحلية في مستندات Word باستخدام Aspose.Words for .NET. من خلال تعديل الإعدادات المحلية ، يمكنك التحكم في تنسيق التواريخ والأرقام أثناء عمليات دمج البريد. سنزودك بشفرة المصدر C # الضرورية والتعليمات خطوة بخطوة لتحقيق ذلك.
+I den här handledningen kommer vi att guida dig genom processen att ändra språket i Word-dokument med Aspose.Words för .NET. Genom att ändra språket kan du styra formateringen av datum och siffror under kopplingsoperationer. Vi kommer att förse dig med den nödvändiga C#-källkoden och steg-för-steg-instruktioner för att uppnå detta.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Förutsättningar
+Innan vi börjar, se till att du har följande förutsättningar:
+- Aspose.Words för .NET-biblioteket installerat på ditt system.
 
-## الخطوة 1: إنشاء مستند و DocumentBuilder
-للبدء ، قم بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+## Steg 1: Skapa en Document and DocumentBuilder
+För att börja skapa en instans av klassen Document och ett DocumentBuilder-objekt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,52 +23,52 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل حقل
-بعد ذلك ، أدخل حقل دمج في المستند باستخدام طريقة InsertField:
+## Steg 2: Infoga ett fält
+Infoga sedan ett sammanfogningsfält i dokumentet med metoden InsertField:
 
 ```csharp
 builder.InsertField("MERGEFIELD Date");
 ```
 
-في الكود أعلاه ، نقوم بإدراج حقل دمج يسمى "التاريخ" في المستند.
+I ovanstående kod infogar vi ett sammanslagningsfält med namnet "Datum" i dokumentet.
 
-## الخطوة 3: قم بتغيير اللغة
-لتغيير لغة تنسيق التاريخ والأرقام ، يمكنك تعديل الثقافة الحالية لمؤشر الترابط. في هذا المثال ، سنقوم بتعيين اللغة إلى الألمانية ("de-DE"):
+## Steg 3: Ändra språk
+För att ändra språk för datum- och nummerformatering kan du ändra trådens nuvarande kultur. I det här exemplet kommer vi att ställa in språket till tyska ("de-DE"):
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-في الكود أعلاه ، نقوم بتخزين الثقافة الحالية ثم نقوم بتعيين ثقافة الخيط الحالي على اللغة الألمانية.
+I ovanstående kod lagrar vi den aktuella kulturen och ställer sedan in den aktuella trådens kultur till tyska.
 
-## الخطوة 4: قم بإجراء دمج المراسلات
-نفّذ عملية دمج المراسلات وقدم قيمة التاريخ لحقل "التاريخ":
+## Steg 4: Utför Mail Merge
+Utför en kopplingsoperation och ange datumvärdet för fältet "Datum":
 
 ```csharp
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-في مقتطف الشفرة هذا ، ننفذ عملية دمج المراسلات ونقدم التاريخ الحالي كقيمة لحقل "التاريخ".
+I det här kodavsnittet kör vi sammankopplingsoperationen och anger det aktuella datumet som värde för fältet "Datum".
 
-## الخطوة 5: استعادة الإعدادات المحلية الأصلية
-بعد اكتمال دمج المراسلات ، قم باستعادة البيانات الموروثة الأصلية لمؤشر الترابط:
+## Steg 5: Återställ den ursprungliga lokalen
+När sammanslagningen är klar återställer du den ursprungliga kulturen för tråden:
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = currentCulture;
 ```
 
-في الكود أعلاه ، نقوم باستعادة الثقافة الأصلية للخيط.
+I ovanstående kod återställer vi trådens ursprungliga kultur.
 
-## الخطوة 6: احفظ المستند
-احفظ المستند المعدل في ملف باستخدام طريقة Save لفئة Document:
+## Steg 6: Spara dokumentet
+Spara det ändrade dokumentet till en fil med hjälp av Spara-metoden för klassen Document:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-### مثال على كود المصدر لتغيير اللغة باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لتغيير اللغة في مستندات Word باستخدام Aspose.Words for .NET:
+### Exempel på källkod för att ändra språk med Aspose.Words för .NET
+Här är den fullständiga källkoden för att ändra språket i Word-dokument med Aspose.Words för .NET:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -87,5 +87,5 @@ Thread.CurrentThread.CurrentCulture = currentCulture;
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تغيير اللغة في مستندات Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن التحكم في تنسيق التواريخ والأرقام أثناء عمليات دمج المراسلات. قم بتخصيص الإعدادات المحلية وفقًا لمتطلباتك لضمان التنسيق الدقيق والمتسق في مستنداتك.
+## Slutsats
+Grattis! Du har framgångsrikt lärt dig hur du ändrar språket i Word-dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide och använda den medföljande källkoden kan du nu styra formateringen av datum och siffror under kopplingsoperationer. Anpassa språket efter dina krav för att säkerställa korrekt och konsekvent formatering i dina dokument.

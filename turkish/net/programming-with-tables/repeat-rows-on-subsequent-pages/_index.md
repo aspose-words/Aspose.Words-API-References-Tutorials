@@ -1,62 +1,62 @@
 ---
-title: كرر الصفوف في الصفحات اللاحقة
-linktitle: كرر الصفوف في الصفحات اللاحقة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تكرار صفوف الجدول في الصفحات اللاحقة في مستند Word باستخدام Aspose.Words for .NET.
+title: Sonraki Sayfalarda Satırları Tekrarla
+linktitle: Sonraki Sayfalarda Satırları Tekrarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesindeki sonraki sayfalarda tablo satırlarının nasıl tekrarlanacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تكرار صفوف الجدول في الصفحات اللاحقة من مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تحديد صفوف لتكرارها في الصفحات اللاحقة من الجدول في مستندات Word الخاصة بك.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinin sonraki sayfalarında bir tablonun satırlarını nasıl tekrarlayacağımızı öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki tablonuzun sonraki sayfalarında tekrarlanacak satırları belirtebileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Adım 2: Belgeyi oluşturma ve belge oluşturucuyu başlatma
+Belge ve belge oluşturucuyla çalışmaya başlamak için şu adımları izleyin:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Belge oluşturma
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Belge oluşturucuyu başlat
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة الثالثة: بناء الجدول بالصفوف المتكررة
-بعد ذلك ، سننشئ جدولًا به صفوف متكررة في الصفحات اللاحقة. استخدم الكود التالي:
+## 3. Adım: Tabloyu tekrarlanan satırlarla oluşturma
+Ardından, sonraki sayfalarda yinelenen satırlar içeren bir tablo oluşturacağız. Aşağıdaki kodu kullanın:
 
 ```csharp
-// بداية الجدول
+// tablonun başlangıcı
 builder. StartTable();
 
-// تكوين معلمات السطر الأول (خطوط الرأس)
+// İlk satır parametrelerinin konfigürasyonu (başlık satırları)
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// أدخل الخلية الأولى في الصف الأول
+// İlk satırın ilk hücresini ekle
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
 
-// أدخل الخلية الثانية من الصف الأول
+// İlk satırın ikinci hücresini ekle
 builder. InsertCell();
 builder.Writeln("Header line 2");
 builder. EndRow();
 
-// قم بتكوين معلمات الأسطر التالية
+// Aşağıdaki satırların parametrelerini yapılandırın
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 
-// تكرار لإدراج الخلايا في الصفوف التالية
+// Hücreleri aşağıdaki satırlara eklemek için döngü yapın
 for (int i = 0; i < 50; i++)
 {
 builder. InsertCell();
@@ -67,27 +67,27 @@ builder.Write("Text column 2");
 builder. EndRow();
 }
 
-// نهاية الجدول
+// tablonun sonu
 builder. EndTable();
 ```
 
- هنا نستخدم أداة إنشاء المستندات لبناء جدول يحتوي على صفين رأسيين وصفوف بيانات متعددة. ال`RowFormat.HeadingFormat`تُستخدم المعلمات لتحديد صفوف الرأس التي يجب تكرارها في الصفحات اللاحقة.
+ Burada, iki başlık satırı ve birden çok veri satırı içeren bir tablo oluşturmak için belge oluşturucuyu kullanıyoruz. bu`RowFormat.HeadingFormat`parametreler, sonraki sayfalarda tekrarlanması gereken başlık satırlarını işaretlemek için kullanılır.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرا الولايات المتحدة
+## 4. Adım: Değiştirilen belgeyi kaydetme
+Sonunda ABD
 
-  تحتاج إلى حفظ المستند المعدل مع تكرار صفوف الرؤوس في الصفحات اللاحقة من الجدول. استخدم الكود التالي:
+  değiştirilen belgeyi, tablonun sonraki sayfalarında tekrarlanan başlık satırları ile kaydetmeniz gerekir. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### نموذج لشفرة مصدر لصفوف التكرار في الصفحات اللاحقة باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Sonraki Sayfalarda Satırları Tekrarlamak için örnek kaynak kodu 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -116,5 +116,5 @@ for (int i = 0; i < 50; i++)
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تكرار صفوف الجدول في الصفحات اللاحقة من مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تحديد الأسطر التي يجب تكرارها وفقًا لاحتياجاتك الخاصة في مستندات Word الخاصة بك.
+## Çözüm
+Bu eğitimde, Aspose.Words for .NET kullanarak bir tablonun satırlarını bir Word belgesinin sonraki sayfalarında nasıl tekrarlayacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizde özel ihtiyaçlarınıza göre hangi satırların tekrarlanacağını belirleyebilirsiniz.

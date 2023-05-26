@@ -1,55 +1,55 @@
 ---
-title: تصدير الخطوط كقاعدة 64
-linktitle: تصدير الخطوط كقاعدة 64
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتصدير خطوط 64 أساسية عند حفظ مستند باستخدام Aspose.Words for .NET.
+title: Exportar fuentes como base 64
+linktitle: Exportar fuentes como base 64
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para exportar fuentes base 64 al guardar un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتصدير 64 خطًا أساسيًا باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تصدير الخطوط كبيانات أساسية 64 عند حفظ مستند بتنسيق HTML.
+En este tutorial, lo guiaremos a través del código fuente de C# para exportar fuentes base 64 con Aspose.Words para .NET. Esta función le permite exportar fuentes como datos base 64 al guardar un documento en formato HTML.
 
-## الخطوة 1: إعداد المشروع
+## Paso 1: Configuración del proyecto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
-في هذه الخطوة ، سنقوم بتحميل المستند للتصدير. استخدم الكود التالي لتحميل المستند من دليل محدد:
+En este paso cargaremos el documento a exportar. Use el siguiente código para cargar el documento desde un directorio específico:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- هذا الرمز ينشئ مثيل`Document` عن طريق تحميل المستند من الدليل المحدد.
+ Este código crea una instancia de`Document` cargando el documento desde el directorio especificado.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي بتنسيق HTML
+## Paso 3: Configuración de las opciones de copia de seguridad de HTML
 
-سنقوم الآن بتكوين خيارات حفظ HTML لتصدير 64 خطًا أساسيًا. استخدم الكود التالي:
+Ahora configuraremos las opciones de guardado de HTML para exportar fuentes base 64. Usa el siguiente código:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions` ومجموعات`ExportFontsAsBase64` ل`true` لتحديد أن الخطوط يجب أن يتم تصديرها كبيانات أساسية 64 عند الحفظ بتنسيق HTML.
+ Este código crea una instancia de`HtmlSaveOptions` y conjuntos`ExportFontsAsBase64` a`true` para especificar que las fuentes deben exportarse como datos base 64 cuando se guardan como HTML.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## Paso 4: Convertir y guardar el documento a HTML
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+Finalmente, convertiremos el documento a HTML utilizando las opciones de guardado de HTML configuradas anteriormente. Usa el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML ويحفظه في ملف بالخطوط المصدرة كبيانات أساسية 64.
+Este código convierte el documento a HTML y lo guarda en un archivo con las fuentes exportadas como datos base 64.
 
-### مثال على شفرة المصدر لـ Export Fonts As Base 64 باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para exportar fuentes como base 64 usando Aspose.Words para .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -59,6 +59,6 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOp
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+ Asegúrese de especificar la ruta correcta al directorio de documentos en el`dataDir` variable.
 
-لقد تعلمت الآن كيفية تصدير خطوط أساسية 64 عند حفظ مستند بتنسيق HTML باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تصدير الخطوط بأمان ودمجها في مستندات HTML الخاصة بك.
+Ahora ha aprendido cómo exportar fuentes base 64 al guardar un documento como HTML usando Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede exportar fácilmente fuentes de forma segura e incrustadas en sus documentos HTML.

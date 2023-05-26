@@ -1,29 +1,29 @@
 ---
-title: تنسيق الفقرة
-linktitle: تنسيق الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق التنسيق المخصص على فقراتك باستخدام Aspose.Words for .NET.
+title: Formato de párrafo
+linktitle: Formato de párrafo
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a aplicar formato personalizado a sus párrafos con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/document-formatting/paragraph-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة تنسيق الفقرة مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+En este tutorial, lo guiaremos a través de cómo usar la función de formato de párrafo con Aspose.Words para .NET. Siga los pasos a continuación para comprender el código fuente y aplicar los cambios.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Paso 1: Crear y configurar el documento
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Para comenzar, cree un nuevo documento y un objeto DocumentBuilder asociado. Así es cómo:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تنسيق الفقرة
+## Paso 2: Dar formato al párrafo
 
-سنقوم الآن بتطبيق التنسيق على الفقرة باستخدام الخصائص المتاحة في كائن ParagraphFormat من كائن DocumentBuilder. إليك الطريقة:
+Ahora aplicaremos el formato al párrafo usando las propiedades disponibles en el objeto ParagraphFormat del objeto DocumentBuilder. Así es cómo:
 
 ```csharp
 ParagraphFormat paragraphFormat = builder.ParagraphFormat;
@@ -33,9 +33,9 @@ paragraphFormat. RightIndent = 50;
 paragraphFormat. SpaceAfter = 25;
 ```
 
-## الخطوة 3: حفظ المستند
+## Paso 3: Guardar el documento
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Después de insertar el campo de formulario de entrada de texto, guarde el documento en la ubicación deseada usando el`Save` método. Asegúrese de proporcionar la ruta de archivo adecuada:
 
 ```csharp
 builder.Writeln(
@@ -46,14 +46,14 @@ builder.Writeln(
 doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
 ```
 
-### مثال على شفرة المصدر لتنسيق الفقرة باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para formato de párrafo usando Aspose.Words para .NET
 
-فيما يلي رمز المصدر الكامل لميزة تنسيق الفقرة باستخدام Aspose.Words for .NET:
+Aquí está el código fuente completo para la función de formato de párrafo con Aspose.Words para .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -73,5 +73,5 @@ doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
 	
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تطبيق تنسيقات مختلفة على فقراتك باستخدام Aspose.Words for .NET.
+Con este código podrá aplicar diferentes formatos a sus párrafos usando Aspose.Words para .NET.
 

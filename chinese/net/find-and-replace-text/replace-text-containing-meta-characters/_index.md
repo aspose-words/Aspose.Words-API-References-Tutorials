@@ -1,32 +1,32 @@
 ---
-title: استبدل النص الذي يحتوي على أحرف وصفية
-linktitle: استبدل النص الذي يحتوي على أحرف وصفية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استبدال النص الذي يحتوي على أحرف أولية في مستندات Word باستخدام Aspose.Words for .NET.
+title: 替换包含元字符的文本
+linktitle: 替换包含元字符的文本
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 替换 Word 文档中包含元字符的文本。
 type: docs
 weight: 10
 url: /zh/net/find-and-replace-text/replace-text-containing-meta-characters/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة استبدال النص الذي يحتوي على أحرف وصفية في Aspose.Words مكتبة .NET. تتيح لك هذه الميزة استبدال أجزاء من النص في مستند يحتوي على أحرف وصفية محددة.
+在本文中，我们将探索上述 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的替换包含元字符的文本功能。此功能允许您替换文档中包含特定元字符的部分文本。
 
-## المتطلبات الأساسية
+## 先决条件
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# 语言的基础知识。
+- 安装了 Aspose.Words 库的 .NET 开发环境。
 
-## الخطوة الأولى: إنشاء مستند جديد
+## 第 1 步：创建新文档
 
- قبل أن نبدأ في استخدام استبدال النص بأحرف أولية ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+在开始使用元字符文本替换之前，我们需要使用 Aspose.Words for .NET 创建一个新文档。这可以通过实例化一个`Document`目的：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل النص في المستند
+## 第 2 步：在文档中插入文本
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نستخدم الامتداد`Writeln`طريقة لإدراج فقرات نصية متعددة في أقسام مختلفة:
+一旦我们有了文档，我们就可以使用`DocumentBuilder`目的。在我们的示例中，我们使用`Writeln`将多段文本插入不同部分的方法：
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -39,9 +39,9 @@ builder.Writeln("Second section");
 builder.Writeln("1st paragraph");
 ```
 
-## الخطوة 3: تكوين خيارات البحث والاستبدال
+## 第 3 步：配置查找和替换选项
 
- سنقوم الآن بتكوين خيارات البحث والاستبدال باستخدام ملف`FindReplaceOptions` هدف. في مثالنا ، قمنا بتعيين محاذاة الفقرات المستبدلة إلى "توسيط":
+现在我们将使用一个配置查找和替换选项`FindReplaceOptions`目的。在我们的示例中，我们将替换段落的对齐方式设置为“居中”：
 
 ```csharp
 FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
@@ -50,37 +50,37 @@ findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment
 .Center;
 ```
 
-## الخطوة 4: استبدال النص الذي يحتوي على أحرف أولية
+## 第 4 步：替换包含元字符的文本
 
- نحن نستخدم ال`Range.Replace` طريقة لإجراء استبدال النص الذي يحتوي على أحرف أولية. في مثالنا ، نستبدل كل تكرار لكلمة "قسم" متبوعًا بفاصل فقرة بالكلمة نفسها متبوعة بعدة شرطات وفاصل فقرة جديد:
+我们使用`Range.Replace`方法来执行包含元字符的文本的替换。在我们的示例中，我们用相同的词后跟几个破折号和一个新的段落分隔符替换每个出现的单词“section”后跟一个段落分隔符：
 
 ```csharp
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 
-## الخطوة 5: استبدال علامة نصية مخصصة
+## 第 5 步：替换自定义文本标签
 
- نستخدم أيضًا ملف`Range.Replace` طريقة لاستبدال العرف "{insert-section}"علامة نصية مع فاصل مقطعي. في مثالنا ، نستبدل"{insert-section}"مع & ب" لإدراج فاصل مقطعي:
+我们还使用`Range.Replace`替换自定义的方法“{insert-section}" 带有分节符的文本标签。在我们的示例中，我们替换了 "{insert-section}" 用 "&b" 插入分节符：
 
 ```csharp
 count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 ```
 
-## الخطوة 6: حفظ المستند المحرر
+## 第六步：保存编辑好的文档
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+最后，我们将修改后的文档保存到指定目录，使用`Save`方法：
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 ```
 
-### مثال على شفرة المصدر لاستبدال النص الذي يحتوي على أحرف وصفية باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 替换包含元字符的文本的示例源代码
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح استخدام استبدال النص الذي يحتوي على أحرف أولية مع Aspose.Words for .NET:
+下面是完整的示例源代码，用于演示使用 Aspose.Words for .NET 替换包含元字符的文本：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -96,17 +96,17 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 	FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 	findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 
-	// ضاعف كل فاصل فقرة بعد كلمة "قسم" ، أضف نوعًا من التسطير واجعله في المنتصف.
+	//在单词“section”后加倍每个段落，添加下划线并使其居中。
 	int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 
-	// إدراج فاصل مقطعي بدلاً من علامة نصية مخصصة.
+	//插入分节符而不是自定义文本标记。
 	count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 
 	doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
   
 ```
 
-## خاتمة
+## 结论
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة استبدال النص الذي يحتوي على أحرف وصفية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص واستبدال نص يحتوي على أحرف أولية وحفظ المستند المعدل.
+在本文中，我们探索了 C# 源代码以了解如何使用 Aspose.Words for .NET 的替换包含元字符的文本功能。我们按照分步指南创建文档、插入文本、替换包含元字符的文本以及保存修改后的文档。
 

@@ -1,29 +1,29 @@
 ---
-title: إلحاق محتوى القسم
-linktitle: إلحاق محتوى القسم
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية إضافة محتوى إلى أقسام معينة من مستند Word باستخدام Aspose.Words for .NET.
+title: Ajouter le contenu de la section
+linktitle: Ajouter le contenu de la section
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Dans ce didacticiel, découvrez comment ajouter du contenu à des sections spécifiques d'un document Word à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-section/append-section-content/
 ---
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية إضافة محتوى إلى قسم معين من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يمكن أن تكون إضافة محتوى إلى قسم موجود مفيدة في تنظيم وتنظيم المستند بدقة. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Dans ce didacticiel, nous allons vous montrer comment ajouter du contenu à une section spécifique d'un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. L'ajout de contenu à une section existante peut être utile pour organiser et structurer votre document avec précision. Nous vous guiderons étape par étape pour vous aider à comprendre et à implémenter le code dans votre projet .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Conditions préalables
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+- Une connaissance pratique du langage de programmation C#
+- La bibliothèque Aspose.Words pour .NET installée dans votre projet
 
-## الخطوة 1: قم بإنشاء مستند ومنشئ
- أولاً ، سننشئ مثيلاً لملف`Document` فئة وما يرتبط بها`DocumentBuilder` المُنشئ لبناء المستند.
+## Étape 1 : Créer un document et un constructeur
+ Tout d'abord, nous allons créer une instance de`Document` classe et un associé`DocumentBuilder` constructeur pour construire le document.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أضف محتوى إلى الأقسام
- بعد ذلك ، سنستخدم ملف`DocumentBuilder` منشئ لإضافة محتوى إلى أقسام مختلفة من المستند. في هذا المثال ، نضيف محتوى إلى أربعة أقسام مختلفة.
+## Étape 2 : Ajouter du contenu aux sections
+ Ensuite, nous utiliserons le`DocumentBuilder` constructeur pour ajouter du contenu aux différentes sections du document. Dans cet exemple, nous ajoutons du contenu à quatre sections différentes.
 
 ```csharp
 builder.Writeln("Hello1");
@@ -35,8 +35,8 @@ doc.AppendChild(new Section(doc));
 builder.Writeln("Hello45");
 ```
 
-## الخطوة 3: إضافة وإدراج المحتوى بين الأقسام
-لإضافة محتوى وإدراجه بين الأقسام ، سنختار قسمًا معينًا نريد إضافة محتوى إليه. في هذا المثال ، سنضيف محتويات القسم الأول إلى بداية القسم الثالث ، ثم نضيف محتويات القسم الثاني إلى نهاية القسم الثالث.
+## Étape 3 : Ajouter et insérer du contenu entre les sections
+Pour ajouter et insérer du contenu entre les sections, nous sélectionnerons une section spécifique à laquelle nous voulons ajouter du contenu. Dans cet exemple, nous allons ajouter le contenu de la première section au début de la troisième section, puis ajouter le contenu de la deuxième section à la fin de la troisième section.
 
 ```csharp
 Section section = doc.Sections[2];
@@ -48,7 +48,7 @@ Section sectionToAppend = doc.Sections[1];
 section.AppendContent(sectionToAppend);
 ```
 
-### نموذج التعليمات البرمجية المصدر لإلحاق محتوى القسم باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Append Section Content à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
 
@@ -63,18 +63,18 @@ builder.Writeln("Hello3");
 doc.AppendChild(new Section(doc));
 builder.Writeln("Hello45");
 
-//هذا هو القسم الذي سنلحق به ونستند إليه.
+//C'est la section que nous allons ajouter et ajouter au début.
 Section section = doc.Sections[2];
 
-// يؤدي هذا إلى نسخ محتوى القسم الأول وإدراجه في بداية القسم المحدد.
+// Cela copie le contenu de la 1ère section et l'insère au début de la section spécifiée.
 Section sectionToPrepend = doc.Sections[0];
 section.PrependContent(sectionToPrepend);
 
-// يؤدي هذا إلى نسخ محتوى القسم الثاني وإدراجه في نهاية القسم المحدد.
+// Ceci copie le contenu de la 2ème section et l'insère à la fin de la section spécifiée.
 Section sectionToAppend = doc.Sections[1];
 section.AppendContent(sectionToAppend);
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية إضافة محتوى إلى أقسام معينة من مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات الموضحة ، يمكنك بسهولة تنظيم وبناء المستند الخاص بك عن طريق إضافة المحتوى وإدراجه بين الأقسام. لا تتردد في تخصيص محتوى القسم وخصائصه لاحتياجاتك الخاصة.
+## Conclusion
+Dans ce didacticiel, nous avons vu comment ajouter du contenu à des sections spécifiques d'un document Word à l'aide de Aspose.Words pour .NET. En suivant les étapes décrites, vous pouvez facilement organiser et structurer votre document en ajoutant et en insérant du contenu entre les sections. N'hésitez pas à personnaliser le contenu et les propriétés de la section en fonction de vos besoins spécifiques.

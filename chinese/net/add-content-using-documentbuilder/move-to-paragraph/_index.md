@@ -1,54 +1,54 @@
 ---
-title: الانتقال إلى الفقرة
-linktitle: الانتقال إلى الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة Aspose.Words for .NET's Move To Paragraph للتنقل ومعالجة الفقرات في مستندات Word برمجيًا.
+title: 移至段落
+linktitle: 移至段落
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 的移动到段落功能以编程方式导航和操作 Word 文档中的段落。
 type: docs
 weight: 10
 url: /zh/net/add-content-using-documentbuilder/move-to-paragraph/
 ---
 
-في هذا المثال خطوة بخطوة ، سوف نستكشف ميزة Move To Paragraph في Aspose.Words for .NET. تسمح هذه الميزة للمطورين بالتنقل ومعالجة الفقرات داخل مستند Word برمجيًا. باتباع هذا الدليل ، ستتعلم كيفية تنفيذ ميزة الانتقال إلى الفقرة واستخدامها بشكل فعال.
+在这个循序渐进的示例中，我们将探索 Aspose.Words for .NET 的移动到段落功能。此功能允许开发人员以编程方式导航和操作 Word 文档中的段落。通过遵循本指南，您将学习如何有效地实施和利用“移至段落”功能。
 
-يوضح الكود أعلاه استخدام ميزة Move To Paragraph. دعونا نفهم كل خطوة بالتفصيل:
+上面的代码演示了移动到段落功能的用法。让我们详细了解每个步骤：
 
-## الخطوة 1: تحميل المستند
+## 第 1 步：装入文档
 
- نبدأ بتحميل مستند Word في مثيل`Document` فصل. ال`MyDir`متغير يمثل مسار الدليل حيث يوجد المستند. يجب استبداله بمسار الدليل الفعلي أو تعديل الكود وفقًا لذلك.
+我们首先将 Word 文档加载到`Document`班级。这`MyDir`变量表示文档所在的目录路径。您应该将其替换为实际目录路径或相应地修改代码。
 
 ```csharp
 Document doc = new Document(MyDir + "Paragraphs.docx");
 ```
 
-## الخطوة 2: تهيئة DocumentBuilder
+## 第 2 步：初始化 DocumentBuilder
 
- بعد ذلك ، نقوم بإنشاء ملف`DocumentBuilder` الكائن وربطه بالمستند الذي تم تحميله. ال`DocumentBuilder` توفر class طرقًا وخصائص مختلفة لمعالجة محتوى المستند.
+接下来，我们创建一个`DocumentBuilder`对象并将其与加载的文档相关联。这`DocumentBuilder`类提供各种方法和属性来操作文档的内容。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: الانتقال إلى فقرة محددة
+## 第 3 步：移至特定段落
 
- ال`MoveToParagraph` يتم استخدام الطريقة لوضع منشئ المستند في فقرة معينة داخل المستند. يأخذ معلمتين: فهرس الفقرة الهدف وموضع الحرف داخل تلك الفقرة (يمثل 0 بداية الفقرة).
+这`MoveToParagraph`方法用于将文档构建器定位在文档中的特定段落。它有两个参数：目标段落的索引和该段落中的字符位置（0 表示段落的开头）。
 
-في المثال المقدم ، ننتقل إلى الفقرة الثالثة (الفهرس 2) من المستند:
+在提供的示例中，我们将转到文档的第三段（索引 2）：
 
 ```csharp
 builder.MoveToParagraph(2, 0);
 ```
 
-## الخطوة 4: تعديل محتوى الفقرة
+## 第四步：修改段落内容
 
- بمجرد وضع المنشئ في الفقرة المطلوبة ، يمكننا استخدام الامتداد`Writeln`طريقة لإضافة أو تعديل محتوى تلك الفقرة. في هذه الحالة ، نضيف النص "هذه هي الفقرة الثالثة".
+一旦构建器位于所需的段落，我们就可以使用`Writeln`添加或修改该段落内容的方法。在本例中，我们添加了文本“This is the 3rd paragraph”。
 
 ```csharp
 builder.Writeln("This is the 3rd paragraph.");
 ```
 
-### مثال كود المصدر للانتقال إلى الفقرة باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的移动到段落的示例源代码
 
-فيما يلي المثال الكامل لشفرة المصدر لتنفيذ ميزة Move To Paragraph باستخدام Aspose.Words for .NET:
+下面是使用 Aspose.Words for .NET 实现移动到段落功能的完整示例源代码：
 
 ```csharp
 
@@ -60,5 +60,5 @@ builder.Writeln("This is the 3rd paragraph.");
 	
 ```
 
-باتباع هذا الدليل واستخدام ميزة النقل إلى الفقرة ، يمكنك معالجة الفقرات برمجيًا في مستندات Word باستخدام Aspose.Words for .NET.
+通过遵循本指南并利用移动到段落功能，您可以使用 Aspose.Words for .NET 以编程方式操作 Word 文档中的段落。
 

@@ -1,42 +1,42 @@
 ---
-title: دمج المستندات
-linktitle: دمج المستندات
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح كود مصدر C # لميزة دمج المستندات في Aspose.Words for .NET
+title: Fusionner des documents
+linktitle: Fusionner des documents
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour expliquer le code source C # de la fonctionnalité de fusion de documents d'Aspose.Words pour .NET
 type: docs
 weight: 10
 url: /fr/net/split-document/merge-documents/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية دمج مستندات Word متعددة باستخدام ميزة دمج المستندات في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر والحصول على مستند مدمج يحتوي على كافة المستندات المصدر.
+Dans ce didacticiel, nous vous expliquerons comment fusionner plusieurs documents Word à l'aide de la fonctionnalité de fusion de documents d'Aspose.Words pour .NET. Suivez les étapes ci-dessous pour comprendre le code source et obtenir un document fusionné contenant tous les documents source.
 
-## الخطوة 1: ابحث عن المستندات المراد دمجها
+## Étape 1 : Rechercher des documents à fusionner
 
-قبل دمج المستندات ، نحتاج إلى تحديد موقع المستندات المصدر المراد دمجها. إليك الطريقة:
+Avant de fusionner les documents, nous devons localiser les documents source à fusionner. Voici comment:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
-// ابحث عن المستندات المراد دمجها.
+// Rechercher des documents à fusionner.
 FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
 .GetFileSystemInfos("SplitDocument.PageParPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
 string sourceDocumentPath =
 Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.TopDirectoryOnly)[0];
 ```
 
-## الخطوة 2: دمج المستندات
+## Étape 2 : fusionner des documents
 
-سنقوم الآن بدمج المستندات واحدة تلو الأخرى لإنشاء مستند مدمج نهائي. إليك الطريقة:
+Nous allons maintenant fusionner les documents un par un pour créer un document fusionné final. Voici comment:
 
 ```csharp
-// افتح الجزء الأول من المستند الناتج.
+// Ouvrez la première partie du document résultant.
 Document sourceDoc = new Document(sourceDocumentPath);
 
-// قم بإنشاء مستند ناتج جديد.
+// Créez un nouveau document résultant.
 Document mergedDoc = new Document();
 DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-// دمج المستندات واحدة تلو الأخرى.
+// Fusionner les documents un par un.
 foreach(FileSystemInfo documentPath in documentPaths)
 {
 if (documentPath.FullName == sourceDocumentPath)
@@ -50,28 +50,28 @@ sourceDoc = new Document(documentPath.FullName);
 mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
 
-### مثال على شفرة المصدر لدمج المستندات باستخدام Aspose.Words for .NET
+### Exemple de code source pour fusionner des documents à l'aide d'Aspose.Words pour .NET
 
-فيما يلي رمز المصدر الكامل لميزة دمج المستندات في Aspose.Words for .NET:
+Voici le code source complet de la fonctionnalité de fusion de documents d'Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// البحث عن المستندات باستخدام الدمج.
+	// Rechercher des documents à l'aide de la fusion.
 	FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
 		.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
 	string sourceDocumentPath =
 		Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
 
-	// افتح الجزء الأول من المستند الناتج.
+	// Ouvrez la première partie du document résultant.
 	Document sourceDoc = new Document(sourceDocumentPath);
 
-	// قم بإنشاء مستند ناتج جديد.
+	// Créez un nouveau document résultant.
 	Document mergedDoc = new Document();
 	DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-	// دمج أجزاء المستند واحدًا تلو الآخر.
+	// Fusionnez les parties du document une par une.
 	foreach (FileSystemInfo documentPath in documentPaths)
 	{
 		if (documentPath.FullName == sourceDocumentPath)

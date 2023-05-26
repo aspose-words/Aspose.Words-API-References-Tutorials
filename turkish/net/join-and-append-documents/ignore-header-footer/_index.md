@@ -1,64 +1,64 @@
 ---
-title: تجاهل رأس تذييل الصفحة
-linktitle: تجاهل رأس تذييل الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند مع تجاهل محتوى الرأس والتذييل باستخدام Aspose.Words for .NET.
+title: Üstbilgi Altbilgiyi Yoksay
+linktitle: Üstbilgi Altbilgiyi Yoksay
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak üstbilgi ve altbilgi içeriğini yok sayarken bir belgeyi nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/ignore-header-footer/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق مستند مع تجاهل محتوى الرأس والتذييل. يوضح كود المصدر المقدم كيفية إعداد خيارات تنسيق الاستيراد لاستبعاد الرأس والتذييل أثناء عملية الإلحاق.
+Bu öğretici, üstbilgi ve altbilgi içeriğini yok sayarak bir belgeyi eklemek için Aspose.Words for .NET'in nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, ekleme işlemi sırasında üstbilgi ve altbilgiyi hariç tutmak için içe aktarma biçimi seçeneklerinin nasıl ayarlanacağını gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Kaynak ve hedef belgelerin bulunduğu bir belge dizini yolu.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## 2. Adım: Kaynak ve hedef belgeleri açın
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ kullanarak kaynak ve hedef belgeleri açın.`Document` sınıf oluşturucu Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDocument = new Document(dataDir + "Document source.docx");
 Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إعداد خيارات تنسيق الاستيراد
+## 3. Adım: İçe aktarma biçimi seçeneklerini ayarlayın
 
- قم بإنشاء مثيل لـ`ImportFormatOptions` فئة وضبط`IgnoreHeaderFooter` ملكية ل`false`. يضمن ذلك تضمين محتوى الرأس والتذييل أثناء عملية الإلحاق.
+ örneğini oluşturun`ImportFormatOptions` sınıflandırın ve ayarlayın`IgnoreHeaderFooter` mülkiyet`false`. Bu, üstbilgi ve altbilgi içeriğinin ekleme işlemi sırasında dahil edilmesini sağlar.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بالمستند الوجهة
+## 4. Adım: Kaynak belgeyi hedef belgeye ekleyin
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.KeepSourceFormatting` كمعامل ثاني وخيارات تنسيق الاستيراد كمعامل ثالث.
+ Kullan`AppendDocument` kaynak belgeyi eklemek için hedef belgenin yöntemi. Geçmek`ImportFormatMode.KeepSourceFormatting` ikinci parametre olarak ve içe aktarma biçimi seçeneklerini üçüncü parametre olarak.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
 ```
 
-## الخطوة 5: احفظ المستند الوجهة
+## 5. Adım: Hedef belgeyi kaydedin
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند مع تجاهل محتوى الرأس والتذييل باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanarak üst bilgi ve alt bilgi içeriğini yok sayarak belge ekleme uygulamasını tamamlar.
 
-### مثال على شفرة المصدر لـ Ignore Header Footer باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Üstbilgi Altbilgiyi Yoksay için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

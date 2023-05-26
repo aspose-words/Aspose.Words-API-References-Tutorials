@@ -1,39 +1,39 @@
 ---
-title: الحصول على موقف الجدول العائم
-linktitle: الحصول على موقف الجدول العائم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على موضع الجداول العائمة في مستند Word باستخدام Aspose.Words for .NET.
+title: Kayan Tablo Konumunu Alın
+linktitle: Kayan Tablo Konumunu Alın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde kayan tabloların konumunu nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/get-floating-table-position/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية الحصول على موضع الجدول العائم في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من الحصول على خصائص تحديد الموضع للجدول العائم في مستندات Word الخاصة بك برمجيًا.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde kayan bir tablonun konumunun nasıl alınacağını öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki kayan bir tablonun konumlandırma özelliklerini programlı olarak elde edebileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة الثانية: تحميل المستند والوصول إلى الجداول
-لبدء العمل مع الجداول ، نحتاج إلى تحميل المستند الذي يحتوي عليها والوصول إليها. اتبع هذه الخطوات:
+## Adım 2: Belgeyi yükleme ve tablolara erişme
+Tablolarla çalışmaya başlamak için onları içeren belgeyi yüklememiz ve onlara erişmemiz gerekiyor. Bu adımları takip et:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات. تأكد أيضًا من أن المستند يحتوي على جداول عائمة.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun. Ayrıca, belgenin kayan tablolar içerdiğinden emin olun.
 
-## الخطوة 3: الحصول على خصائص تحديد موضع الجدول العائم
-بعد ذلك ، سنقوم بتكرار جميع الجداول الموجودة في المستند والحصول على خصائص تحديد موضع الجدول العائم. استخدم الكود التالي:
+## 3. Adım: Kayan Tablo Konumlandırma Özelliklerini Alma
+Ardından, belgedeki tüm tabloları dolaşacağız ve kayan tablo konumlandırma özelliklerini elde edeceğiz. Aşağıdaki kodu kullanın:
 
 ```csharp
 foreach(Table table in doc.FirstSection.Body.Tables)
 {
-// إذا كانت المصفوفة من النوع العائم ، فقم بطباعة خصائص تحديد الموضع الخاصة بها.
+// Dizi kayan bir türse, konumlandırma özelliklerini yazdırın.
 if (table.TextWrapping == TextWrapping.Around)
 {
 Console.WriteLine(table.HorizontalAnchor);
@@ -48,18 +48,18 @@ Console.WriteLine("...............................");
 }
 ```
 
- نحن هنا نستخدم ملف`foreach` حلقة للتكرار خلال جميع المصفوفات في المستند. نتحقق مما إذا كانت المصفوفة من النوع العائم عن طريق التحقق من`TextWrapping` ملكية. إذا كان الأمر كذلك ، فإننا نطبع خصائص تحديد موضع الجدول ، مثل المرساة الأفقية ، والمثبت الرأسي ، والمسافات الأفقية والرأسية المطلقة ، والإذن المتداخل ، والمسافة الأفقية المطلقة ، والمحاذاة الرأسية النسبية.
+ Burada bir kullanıyoruz`foreach` belgedeki tüm diziler arasında döngü yapmak için döngü. Kontrol ederek dizinin kayan tip olup olmadığını kontrol ederiz.`TextWrapping` mülk. Öyleyse, tablonun yatay bağlantı, dikey bağlantı, mutlak yatay ve dikey mesafeler, örtüşme izni, mutlak yatay mesafe ve göreli dikey hizalama gibi konumlandırma özelliklerini yazdırırız.
  
-### نموذج التعليمات البرمجية المصدر للحصول على موقع الجدول العائم باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Kayan Tablo Konumunu Getir için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");
 	foreach (Table table in doc.FirstSection.Body.Tables)
 	{
-		// إذا كان الجدول من النوع العائم ، فقم بطباعة خصائص تحديد الموضع الخاصة به.
+		// Tablo kayan türdeyse, konumlandırma özelliklerini yazdırın.
 		if (table.TextWrapping == TextWrapping.Around)
 		{
 			Console.WriteLine(table.HorizontalAnchor);
@@ -74,5 +74,5 @@ Console.WriteLine("...............................");
 	}
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية الحصول على موضع الجدول العائم في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك الحصول على خصائص تحديد موضع الجداول العائمة في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة تحليل الجداول العائمة ومعالجتها وفقًا لاحتياجاتك الخاصة.
+## Çözüm
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde kayan bir tablonun konumunun nasıl alınacağını öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizdeki kayan tabloların konumlandırma özelliklerini programlı olarak elde edebilirsiniz. Bu özellik, kayan tabloları özel ihtiyaçlarınıza göre analiz etmenizi ve değiştirmenizi sağlar.

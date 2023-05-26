@@ -1,18 +1,18 @@
 ---
-title: تطبيق الترخيص
-linktitle: تطبيق الترخيص
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على إرشادات خطوة بخطوة لتطبيق ترخيص Aspose.Words في مشاريع .NET الخاصة بك. اتبع الخطوات لتمكين الوظائف الكاملة لمكتبة Aspose.Words.
+title: Applica licenza
+linktitle: Applica licenza
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Ottieni istruzioni dettagliate per l'applicazione di una licenza Aspose.Words nei tuoi progetti .NET. Segui i passaggi per abilitare la piena funzionalità della libreria Aspose.Words.
 type: docs
 weight: 10
 url: /it/net/apply-license/
 ---
 
-توفر هذه الصفحة دليلاً مفصلاً حول كيفية تطبيق ترخيص في مشاريع تستخدم Aspose.Words for .NET. يشرح هذا البرنامج التعليمي خطوة بخطوة كيفية استخدام ترخيص لتفعيل جميع ميزات Aspose.Words. كما يوفر نموذج التعليمات البرمجية لتوضيح عملية الترخيص. اتبع هذا الدليل لتطبيق الترخيص والحصول على أقصى استفادة من مكتبة Aspose.Words القوية في تطبيقات .NET.
+Questa pagina fornisce una guida dettagliata su come applicare una licenza nei progetti utilizzando Aspose.Words per .NET. Questo tutorial spiega passo dopo passo come utilizzare una licenza per attivare tutte le funzionalità di Aspose.Words. Fornisce inoltre un codice di esempio per illustrare il processo di licenza. Segui questa guida per applicare la licenza e ottenere il massimo dalla potente libreria Aspose.Words nelle tue applicazioni .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [تطبيق الترخيص من ملف](./apply-license-from-file/) | تعرف على كيفية تطبيق ترخيص من ملف باستخدام Aspose.Words for .NET.|
-| [تطبيق الترخيص من الدفق](./apply-license-from-stream/) | تعرف على كيفية تطبيق ترخيص من تدفق باستخدام Aspose.Words for .NET.|
-| [تطبيق الترخيص المقنن](./apply-metered-license/) | تعرف على كيفية تطبيق ترخيص محدود باستخدام Aspose.Words for .NET. |
+| [Applica licenza da file](./apply-license-from-file/) | Scopri come applicare una licenza da un file utilizzando Aspose.Words per .NET.|
+| [Applica licenza dal flusso](./apply-license-from-stream/) | Scopri come applicare una licenza da un flusso utilizzando Aspose.Words per .NET.|
+| [Applicare la licenza misurata](./apply-metered-license/) | Scopri come applicare una licenza a consumo utilizzando Aspose.Words per .NET. |

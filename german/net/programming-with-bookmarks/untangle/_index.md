@@ -1,69 +1,69 @@
 ---
-title: فك
-linktitle: فك
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية فك تشابك الإشارات المرجعية المتداخلة في صفوف الجدول المجاورة باستخدام Aspose.Words for .NET.
+title: Entwirren
+linktitle: Entwirren
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET verschachtelte Lesezeichen in benachbarten Tabellenzeilen entwirren.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/untangle/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Untangle في مكتبة Aspose.Words for .NET. تكشف هذه الوظيفة عن الإشارات المرجعية المتداخلة الموجودة في صفوف الجدول المجاورة.
+In diesem Artikel werden wir den obigen C#-Quellcode untersuchen, um zu verstehen, wie die Untangle-Funktion in der Aspose.Words für .NET-Bibliothek verwendet wird. Diese Funktion entwirrt verschachtelte Lesezeichen, die sich in benachbarten Tabellenzeilen befinden.
 
-## المتطلبات الأساسية
+## Voraussetzungen
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundkenntnisse der C#-Sprache.
+- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
 
-## الخطوة 1: تصفح المستندات المرجعية
+## Schritt 1: Dokumentlesezeichen durchsuchen
 
-نستخدم حلقة foreach للتكرار خلال جميع الإشارات المرجعية الموجودة في المستند:
+Wir verwenden eine foreach-Schleife, um alle im Dokument vorhandenen Lesezeichen zu durchlaufen:
 
 ```csharp
 foreach(Bookmark bookmark in doc.Range.Bookmarks)
 {
-     // رمز للتعامل مع الإشارات المرجعية هنا
+     // Code zum Umgang mit Lesezeichen finden Sie hier
 }
 ```
 
-## الخطوة 2: احصل على الصفوف الأصلية من الإشارات المرجعية
+## Schritt 2: Übergeordnete Zeilen aus Lesezeichen abrufen
 
- نحن نستخدم ال`GetAncestor` طرق لاسترداد الصفوف الرئيسية لعقدتي البداية والنهاية للإشارة المرجعية:
+ Wir benutzen das`GetAncestor` Methoden zum Abrufen der übergeordneten Zeilen der Start- und Endknoten des Lesezeichens:
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-## الخطوة 3: فك الإشارات المرجعية المتداخلة
+## Schritt 3: Verschachtelte Lesezeichen entwirren
 
-إذا تم العثور على كلا السطرين الأصليين وبدأت الإشارة المرجعية وتنتهي في أسطر متجاورة ، فإننا ننقل عقدة نهاية الإشارة المرجعية إلى نهاية الفقرة الأخيرة من الخلية الأخيرة في الصف العلوي:
+Wenn beide übergeordneten Zeilen gefunden werden und das Lesezeichen in benachbarten Zeilen beginnt und endet, verschieben wir den Endknoten des Lesezeichens an das Ende des letzten Absatzes der letzten Zelle in der oberen Zeile:
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
      row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-### مثال على شفرة المصدر لـ Untangle باستخدام Aspose.Words for .NET
+### Beispielquellcode für Untangle mit Aspose.Words für .NET
 
-إليك مثال شفرة المصدر الكاملة لفك تشابك الإشارات المرجعية المتداخلة باستخدام Aspose.Words for .NET:
+Hier ist das vollständige Quellcodebeispiel zum Entwirren verschachtelter Lesezeichen mit Aspose.Words für .NET:
 
 ```csharp
 
 	foreach (Bookmark bookmark in doc.Range.Bookmarks)
 	{
-		// احصل على الصف الأصل لكل من الإشارة المرجعية وعقدة نهاية الإشارة المرجعية.
+		// Rufen Sie die übergeordnete Zeile sowohl des Lesezeichens als auch des Lesezeichen-Endknotens ab.
 		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
-		// إذا تم العثور على كلا الصفين على ما يرام ، وتم تضمين بداية الإشارة المرجعية ونهايتها في صفوف متجاورة ،
-		// انقل عقدة نهاية الإشارة المرجعية إلى نهاية الفقرة الأخيرة في الخلية الأخيرة في الصف العلوي.
+		// Wenn beide Zeilen in Ordnung sind und der Anfang und das Ende des Lesezeichens in benachbarten Zeilen enthalten sind,
+		// Verschieben Sie den Endknoten des Lesezeichens an das Ende des letzten Absatzes in der letzten Zelle der oberen Zeile.
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 	}
 
 ```
 
-## خاتمة
+## Abschluss
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام وظيفة Untangle في Aspose.Words لـ .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لفك تشابك الإشارات المرجعية المتداخلة في صفوف الجدول المجاورة.
+In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Untangle-Funktion von Aspose.Words für .NET verwendet wird. Wir haben eine Schritt-für-Schritt-Anleitung befolgt, um verschachtelte Lesezeichen in benachbarten Tabellenzeilen zu entwirren.

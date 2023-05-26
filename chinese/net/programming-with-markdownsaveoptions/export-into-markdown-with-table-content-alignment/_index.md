@@ -1,33 +1,33 @@
 ---
-title: تصدير إلى Markdown مع محاذاة محتوى الجدول
-linktitle: تصدير إلى Markdown مع محاذاة محتوى الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تصدير محتوى الجدول بمحاذاة مختلفة لملفات Markdown باستخدام Aspose.Words for .NET.
+title: 使用表格内容对齐导出到 Markdown
+linktitle: 使用表格内容对齐导出到 Markdown
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将具有不同对齐方式的表格内容导出到 Markdown 文件。
 type: docs
 weight: 10
 url: /zh/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية التي تساعد في تصدير المحتوى إلى ملف Markdown مع محاذاة محتوى الجدول باستخدام مكتبة Aspose.Words لـ .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+这是一个分步指南，用于解释以下 C# 源代码，这些代码有助于使用适用于 .NET 的 Aspose.Words 库将内容导出到具有表内容对齐的 Markdown 文件。在使用此代码之前，请确保您已将 Aspose.Words 库包含在您的项目中。
 
-## الخطوة 1: تعيين مسار دليل المستند
+## 第一步：设置文档目录路径
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
+请务必指定保存已编辑文档的文档目录的正确路径。
 
-## الخطوة 2: قم بإنشاء مستند ومولد مستندات
+## 第 2 步：创建文档和文档生成器
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- هنا نقوم بإنشاء مثيل لـ`Document` فئة ومثيل`DocumentBuilder` فئة تسمح لنا بمعالجة المستند وإضافة عناصر.
+这里我们创建一个实例`Document`类和一个实例`DocumentBuilder`允许我们操作文档和添加元素的类。
 
-## الخطوة 3: أدخل خلايا في الجدول بمحاذاة فقرات مختلفة
+## 第 3 步：在表格中插入具有不同段落对齐方式的单元格
 
 ```csharp
 builder. InsertCell();
@@ -38,9 +38,9 @@ builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.Write("Cell2");
 ```
 
-نستخدم Document Builder لإدراج خلايا في الجدول وتعيين محاذاة فقرة مختلفة لكل خلية.
+我们使用文档生成器将单元格插入表格并为每个单元格设置不同的段落对齐方式。
 
-## الخطوة 4: قم بتعيين خيارات تصدير Markdown وحفظ المستند المعدل
+## 第 4 步：设置 Markdown 导出选项并保存修改后的文档
 
 ```csharp
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
@@ -59,14 +59,14 @@ saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 ```
 
-قمنا بتعيين خيارات تصدير Markdown بمحاذاة محتوى جدول مختلفة ، ثم احفظنا المستند المعدل باستخدام كل خيار محاذاة.
+我们使用不同的表格内容对齐设置 Markdown 导出选项，然后使用每个对齐选项保存修改后的文档。
 
-### مثال على شفرة المصدر للتصدير إلى Markdown مع محاذاة محتوى الجدول باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 使用表格内容对齐导出到 Markdown 的示例源代码
 
 ```csharp
 
             
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
     string dataDir = "YOUR DOCUMENT DIRECTORY";
 	
 	Document doc = new Document();
@@ -79,7 +79,7 @@ doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 	builder.Write("Cell2");
 
-	// يجعل كل الفقرات الموجودة داخل الجدول محاذاة.
+	//使表格内的所有段落对齐。
 	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 	{
 		TableContentAlignment = TableContentAlignment.Left
@@ -92,10 +92,10 @@ doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 	saveOptions.TableContentAlignment = TableContentAlignment.Center;
 	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.CenterTableContentAlignment.md", saveOptions);
 
-	// سيتم أخذ المحاذاة في هذه الحالة من الفقرة الأولى في عمود الجدول المقابل.
+	//这种情况下的对齐将从相应表格列中的第一段获取。
 	saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 	
-	// احفظ المستند المعدل
+	//保存修改后的文件
 	doc.Save(dataDir + "WorkingWithMarkdownSaveOptions.AutoTableContentAlignment.md", saveOptions);
             
         

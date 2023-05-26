@@ -1,20 +1,20 @@
 ---
-title: انقسام المستند
-linktitle: انقسام المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على العناوين html ، والأقسام html ، والأقسام ، والصفحة بصفحة ، ودمج المستندات ، وبحسب نطاق الصفحات
+title: 拆分文件
+linktitle: 拆分文件
+second_title: Aspose.Words for .NET API 参考
+description: 教程包含按标题 html、按部分 html、按部分、逐页、合并文档和按页面范围
 type: docs
 weight: 1450
 url: /zh/net/split-document/
 ---
-يُعد Split Document مصدرًا شاملاً يشرح كيفية تقسيم المستند إلى أجزاء منفصلة باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية شرحًا تفصيليًا خطوة بخطوة ، وأمثلة كاملة لشفرة المصدر ، ونصائح عملية لتقسيم مستند وفقًا لشروط مختلفة ، مثل عدد الصفحات والأقسام والفقرات وما إلى ذلك. هذا المورد ضروري للمطورين الذين يرغبون في أتمتة عملية تقسيم المستندات الكبيرة وتبسيط إدارة الأجزاء الفردية. باستخدام Aspose.Words for .NET ، يمكنك بسهولة استخراج أجزاء مختلفة من المستند وحفظها ومعالجتها ، مما يؤدي إلى تحسين كفاءة ومرونة سير عمل معالجة المستندات بشكل كبير.
+Split Document 是一个全面的资源，解释了如何使用 Aspose.Words for .NET 库将文档拆分为单独的部分。教程提供了详细的分步说明、完整的源代码示例以及根据不同条件拆分文档的实用技巧，例如页数、节数、段落数等。此资源对于想要自动化的开发人员来说必不可少拆分大型文档并简化各个部分的管理的过程。使用Aspose.Words for .NET，您可以轻松提取、保存和操作文档的不同部分，大大提高文档处理工作流程的效率和灵活性。
 
- ## دروس
-| عنوان | وصف |
+ ## 教程
+| 标题 | 描述 |
 | --- | --- |
-| [حسب العناوين Html](./by-headings-html/) | دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # لميزة By Heading HTML في Aspose.Words for .NET |
-| [حسب أقسام Html](./by-sections-html/) | تعرف على كيفية تقسيم مستند Word إلى أقسام Html باستخدام Aspose.Words for .NET مع مثال رمز كامل. |
-| [حسب الأقسام](./by-sections/) | تعرف على كيفية تقسيم مستند Word إلى أقسام منفصلة باستخدام Aspose.Words for .NET مع مثال رمز كامل. |
-| [صفحة بالصفحة](./page-by-page/) | دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # لميزة Aspose.Words صفحة بصفحة لـ .NET |
-| [دمج المستندات](./merge-documents/) | دليل خطوة بخطوة لشرح كود مصدر C # لميزة دمج المستندات في Aspose.Words for .NET |
-| [حسب نطاق الصفحة](./by-page-range/) | استخرج بسهولة حسب نطاق الصفحات من مستند Word باستخدام Aspose.Words for .NET دليل خطوة بخطوة. |
+| [按标题 Html](./by-headings-html/) | 分步指南解释 Aspose.Words for .NET 的按标题 HTML 功能的 C# 源代码 |
+| [按部分 Html](./by-sections-html/) | 通过完整的代码示例，了解如何使用 Aspose.Words for .NET 将 Word 文档拆分为 Html 部分。 |
+| [按章节](./by-sections/) | 通过完整的代码示例了解如何使用 Aspose.Words for .NET 将 Word 文档拆分为单独的部分。 |
+| [一页一页](./page-by-page/) | 分步指南解释 Aspose.Words .NET 逐页功能的 C# 源代码 |
+| [合并文件](./merge-documents/) | 分步指南解释 Aspose.Words for .NET 的合并文档功能的 C# 源代码 |
+| [按页面范围](./by-page-range/) | 使用 Aspose.Words for .NET 分步指南轻松按页面范围从 Word 文档中提取。 |

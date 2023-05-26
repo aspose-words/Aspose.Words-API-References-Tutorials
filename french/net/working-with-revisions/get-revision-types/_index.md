@@ -1,26 +1,26 @@
 ---
-title: احصل على أنواع المراجعة
-linktitle: احصل على أنواع المراجعة
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على أنواع المراجعات في مستند Word باستخدام Aspose.Words for .NET.
+title: Obtenir les types de révision
+linktitle: Obtenir les types de révision
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Obtenez des types de révision dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-revisions/get-revision-types/
 ---
 
-في هذا الدليل التدريجي ، سنخبرك بكيفية الحصول على أنواع المراجعات في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+Dans ce guide étape par étape, nous allons vous expliquer comment obtenir les types de révisions dans un document Word à l'aide de Aspose.Words pour .NET. Nous vous fournirons le code source complet et vous montrerons comment formater la sortie Markdown.
 
-## الخطوة 1: تحميل المستند
+## Étape 1 : Chargement du document
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+La première étape consiste à télécharger le document contenant les révisions.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة الثانية: تصفح الفقرات
+## Étape 2 : Parcourir les paragraphes
 
-بعد ذلك ، سنتصفح فقرات المستند ونتحقق من أنواع المراجعات المرتبطة بكل فقرة.
+Ensuite, nous allons parcourir les paragraphes du document et vérifier les types de révisions associées à chaque paragraphe.
 
 ```csharp
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
@@ -33,9 +33,9 @@ for (int i = 0; i < paragraphs.Count; i++)
 }
 ```
 
-### مثال على شفرة المصدر للحصول على أنواع المراجعة باستخدام Aspose.Words for .NET
+### Exemple de code source pour obtenir les types de révision à l'aide d'Aspose.Words pour .NET
 
-فيما يلي رمز المصدر الكامل للحصول على أنواع المراجعة في مستند باستخدام Aspose.Words for .NET:
+Voici le code source complet permettant d'obtenir les types de révision dans un document à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
 

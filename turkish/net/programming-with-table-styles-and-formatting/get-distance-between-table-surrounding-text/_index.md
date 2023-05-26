@@ -1,31 +1,31 @@
 ---
-title: الحصول على مسافة بين النص المحيط بالجدول
-linktitle: الحصول على مسافة بين النص المحيط بالجدول
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لمعرفة المسافة بين النص والجدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Metni Çevreleyen Tablo Arasındaki Mesafeyi Alın
+linktitle: Metni Çevreleyen Tablo Arasındaki Mesafeyi Alın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki metin ve tablo arasındaki mesafeyi bulmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة للحصول على المسافة بين النص المحيط في جدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية الوصول إلى المسافات المختلفة بين الجدول والنص المحيط في مستندات Word باستخدام Aspose.Words for .NET.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir tablodaki çevreleyen metin arasındaki mesafeyi elde etmek için size adım adım yol göstereceğiz. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sağlayacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak Word belgelerinizdeki bir tablo ile onu çevreleyen metin arasındaki çeşitli mesafelere nasıl erişeceğinizi öğreneceksiniz.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يوجد فيه مستند Word الخاص بك. استبدل "دليل المستندات" بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+Öncelikle, belgeler dizininize giden yolu ayarlamanız gerekir. Word belgenizin bulunduğu yer burasıdır. "BELGELER DİZİNİNİZİ" uygun yolla değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند الحالي
- بعد ذلك ، تحتاج إلى تحميل مستند Word الموجود في مثيل`Document` فصل.
+## 2. Adım: Mevcut belgeyi yükleyin
+ Ardından, mevcut Word belgesini bir örneğine yüklemeniz gerekir.`Document` sınıf.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: احصل على المسافة بين الجدول والنص المحيط
- للحصول على المسافة بين الجدول والنص المحيط ، نحتاج إلى الوصول إلى الجدول في المستند باستخدام تنسيق`GetChild()` الطريقة و`NodeType.Table` ملكية. يمكننا بعد ذلك عرض المسافات المختلفة باستخدام خصائص المصفوفة`DistanceTop`, `DistanceBottom`, `DistanceRight` و`DistanceLeft`.
+## 3. Adım: Tablo ile çevresindeki metin arasındaki mesafeyi bulun
+ Tablo ile çevreleyen metin arasındaki mesafeyi elde etmek için, tabloyu kullanarak belgedeki tabloya erişmemiz gerekir.`GetChild()` yöntem ve`NodeType.Table` mülk. Dizi özelliklerini kullanarak farklı mesafeleri görüntüleyebiliriz.`DistanceTop`, `DistanceBottom`, `DistanceRight` Ve`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -35,10 +35,10 @@ Console.WriteLine("Distance between the table and the text on the right: " + tab
 Console.WriteLine("Distance between the table and the text on the left: " + table.DistanceLeft);
 ```
 
-### عينة من التعليمات البرمجية المصدر للحصول على المسافة بين النص المحيط بالجدول باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Tablo Çevreleyen Metin Arasındaki Mesafeyi Al için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -50,5 +50,5 @@ Console.WriteLine("Distance between the table and the text on the left: " + tabl
 	Console.WriteLine(table.DistanceLeft);
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية الحصول على المسافة بين النص المحيط في جدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك الوصول بسهولة إلى المسافات المختلفة بين الجدول والنص المحيط في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تحليل تخطيط الجداول الخاصة بك فيما يتعلق بالنص وتلبية الاحتياجات المحددة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir tablodaki çevreleyen metin arasındaki mesafeyi nasıl bulacağımızı öğrendik. Bu adım adım kılavuzu izleyerek, Word belgelerinizdeki bir tablo ile çevresindeki metin arasındaki çeşitli mesafelere kolayca erişebilirsiniz. Aspose.Words, belgelerinizdeki tabloları değiştirmek ve biçimlendirmek için güçlü ve esnek bir API sunar. Bu bilgiyle, tablolarınızın düzenini metne göre analiz edebilir ve belirli ihtiyaçları karşılayabilirsiniz.

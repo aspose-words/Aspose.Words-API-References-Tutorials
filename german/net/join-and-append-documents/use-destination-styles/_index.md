@@ -1,68 +1,68 @@
 ---
-title: استخدم أنماط الوجهة
-linktitle: استخدم أنماط الوجهة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الانضمام إلى مستندات Word وإلحاقها أثناء تطبيق أنماط المستندات الوجهة باستخدام Aspose.Words for .NET.
+title: Verwenden Sie Zielstile
+linktitle: Verwenden Sie Zielstile
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie Word-Dokumente zusammenfügen und anhängen und dabei Zieldokumentstile mit Aspose.Words für .NET anwenden.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/use-destination-styles/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة استخدام أنماط الوجهة في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء تطبيق أنماط المستند الوجهة.
+Dieses Tutorial führt Sie durch den Prozess der Verwendung der Funktion „Zielstile verwenden“ von Aspose.Words für .NET. Mit dieser Funktion können Sie Word-Dokumente verbinden und anhängen und dabei die Stile des Zieldokuments anwenden.
 
-## المتطلبات الأساسية
+## Voraussetzungen
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words für .NET installiert. Sie können es von der Aspose-Website herunterladen oder über NuGet installieren.
+2. Visual Studio oder eine andere C#-Entwicklungsumgebung.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Schritt 1: Initialisieren Sie die Dokumentverzeichnisse
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir` Variable für den Pfad, in dem sich Ihre Dokumente befinden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Schritt 2: Laden Sie die Quell- und Zieldokumente
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Als nächstes müssen Sie die Quell- und Zieldokumente mit Aspose.Words laden`Document` Klasse. Aktualisieren Sie die Dateinamen im`Document` Konstruktor entsprechend Ihren Dokumentnamen.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: قم بإلحاق المستند المصدر بأنماط الوجهة
+## Schritt 3: Hängen Sie das Quelldokument mit Zielstilen an
 
- لإلحاق المستند المصدر بالمستند الوجهة أثناء تطبيق أنماط المستند الوجهة ، يمكنك استخدام ملحق`AppendDocument` طريقة`Document` فئة مع`ImportFormatMode.UseDestinationStyles` معامل.
+ Um das Quelldokument an das Zieldokument anzuhängen und gleichzeitig die Stile des Zieldokuments anzuwenden, können Sie die verwenden`AppendDocument` Methode der`Document` Klasse mit dem`ImportFormatMode.UseDestinationStyles` Parameter.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 ```
 
-## الخطوة 4: احفظ المستند النهائي
+## Schritt 4: Speichern Sie das endgültige Dokument
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة استخدام أنماط الوجهة باستخدام ملحق`Save` طريقة`Document` فصل.
+ Speichern Sie abschließend das zusammengeführte Dokument mit aktivierter Funktion „Zielstile verwenden“ mithilfe von`Save` Methode der`Document` Klasse.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");
 ```
 
-### مثال على شفرة المصدر لاستخدام أنماط الوجهة باستخدام Aspose.Words for .NET
+### Beispielquellcode für die Verwendung von Zielstilen mit Aspose.Words für .NET
 
-إليك شفرة المصدر الكاملة لميزة "استخدام أنماط الوجهة" في C # باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Quellcode für die Funktion „Zielstile verwenden“ in C# mit Aspose.Words für .NET:
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بإلحاق المستند المصدر باستخدام أنماط المستند الوجهة.
+	// Hängen Sie das Quelldokument mit den Stilen des Zieldokuments an.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة استخدام أنماط الوجهة باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع أنماط المستند الوجهة المطبقة.
+Das ist es! Sie haben die Funktion „Zielstile verwenden“ mit Aspose.Words für .NET erfolgreich implementiert. Das endgültige Dokument enthält den zusammengeführten Inhalt mit den angewendeten Stilen des Zieldokuments.

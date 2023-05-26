@@ -1,54 +1,54 @@
 ---
-title: إزالة فواصل الصفحات
-linktitle: إزالة فواصل الصفحات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة فواصل الصفحات في مستند باستخدام Aspose.Words Library for .NET. اتبع دليلنا المفصل خطوة بخطوة للحصول على تخطيط سلس.
+title: Seitenumbrüche entfernen
+linktitle: Seitenumbrüche entfernen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie Seitenumbrüche in einem Dokument mithilfe der Aspose.Words-Bibliothek für .NET entfernen. Befolgen Sie unsere Schritt-für-Schritt-Anleitung für ein nahtloses Layout.
 type: docs
 weight: 10
 url: /de/net/remove-content/remove-page-breaks/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف كيفية إزالة فواصل الصفحات من مستند باستخدام مكتبة Aspose.Words for .NET. يمكن أن تتداخل فواصل الصفحات أحيانًا مع تنسيق المستند وتخطيطه ، وقد يكون من الضروري إزالتهما برمجيًا. سنقدم دليلاً خطوة بخطوة لمساعدتك على فهم العملية وتنفيذها في مشاريع C # الخاصة بك.
+In diesem Tutorial erfahren Sie, wie Sie mithilfe der Bibliothek Aspose.Words für .NET Seitenumbrüche aus einem Dokument entfernen. Seitenumbrüche können manchmal die Formatierung und das Layout eines Dokuments beeinträchtigen und müssen möglicherweise programmgesteuert entfernt werden. Wir stellen Ihnen eine Schritt-für-Schritt-Anleitung zur Verfügung, die Ihnen hilft, den Prozess zu verstehen und ihn in Ihren eigenen C#-Projekten zu implementieren.
 
-## متطلبات
+## Anforderungen
 
-قبل أن نبدأ ، تأكد من توفر لديك ما يلي:
+Bevor wir beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-- المعرفة الأساسية بلغة البرمجة C #
-- تثبيت Aspose.Words لمكتبة .NET
-- Visual Studio أو أي بيئة تطوير أخرى لـ C # تم إعدادها
+- Grundkenntnisse der Programmiersprache C#
+- Aspose.Words für .NET-Bibliothek installiert
+- Visual Studio oder eine andere C#-Entwicklungsumgebung eingerichtet
 
-## الخطوة الأولى: تهيئة البيئة
+## Schritt 1: Einrichten der Umgebung
 
-للبدء ، قم بإنشاء مشروع C # جديد في بيئة التطوير المفضلة لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET بشكل صحيح في مشروعك.
+Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten Entwicklungsumgebung. Stellen Sie sicher, dass in Ihrem Projekt ordnungsgemäß auf die Aspose.Words for .NET-Bibliothek verwiesen wird.
 
-## الخطوة الثانية: تحميل المستند
+## Schritt 2: Laden des Dokuments
 
-لإزالة فواصل الصفحات من المستند ، نحتاج أولاً إلى تحميل المستند في الذاكرة. يوضح الكود التالي كيفية تحميل مستند من دليل معين:
+Um Seitenumbrüche aus einem Dokument zu entfernen, müssen wir das Dokument zunächst in den Speicher laden. Der folgende Code zeigt, wie ein Dokument aus einem bestimmten Verzeichnis geladen wird:
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//قم بتحميل المستند
+//Laden Sie das Dokument
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى المستند الخاص بك.
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokument.
 
-## الخطوة 3: إزالة فواصل الصفحات
+## Schritt 3: Seitenumbrüche entfernen
 
-بمجرد تحميل المستند ، يمكننا البدء في إزالة فواصل الصفحات. يوضح مقتطف الشفرة أدناه كيفية تكرار جميع الفقرات في المستند والتحقق من فواصل الصفحات وإزالتها:
+Sobald das Dokument geladen ist, können wir mit dem Entfernen der Seitenumbrüche beginnen. Der folgende Codeausschnitt zeigt, wie Sie alle Absätze im Dokument durchlaufen, auf Seitenumbrüche prüfen und diese entfernen:
 
 ```csharp
 NodeCollection paragraphs = doc.GetChildNodes(NodeType.Paragraph, true);
 
 foreach (Paragraph para in paragraphs)
 {
-     // إذا كانت الفقرة تحتوي على فاصل صفحات من قبل ، فقم بمسحها
+     // Wenn der Absatz zuvor einen Seitenumbruch hat, löschen Sie ihn
      if (para.ParagraphFormat.PageBreakBefore)
          para.ParagraphFormat.PageBreakBefore = false;
 
-     // تحقق من كل عمليات التشغيل في الفقرة بحثًا عن فواصل الصفحات وقم بإزالتها
+     // Überprüfen Sie alle Läufe im Absatz auf Seitenumbrüche und entfernen Sie diese
      foreach(Run run in para.Runs)
      {
          if (run.Text.Contains(ControlChar.PageBreak))
@@ -57,36 +57,36 @@ foreach (Paragraph para in paragraphs)
 }
 ```
 
-يتكرر مقتطف الشفرة أعلاه عبر جميع الفقرات في المستند ويتحقق مما إذا كانت كل فقرة بها فاصل صفحات قبلها. إذا تم الكشف عن فاصل صفحة ، يتم مسحه. بعد ذلك ، يتحقق من كل تشغيل داخل الفقرة بحثًا عن فواصل الصفحات ويزيلها.
+Der obige Codeausschnitt durchläuft alle Absätze im Dokument und prüft, ob vor jedem Absatz ein Seitenumbruch steht. Wenn ein Seitenumbruch erkannt wird, wird dieser gelöscht. Anschließend prüft es jede Zeile innerhalb des Absatzes auf Seitenumbrüche und entfernt diese.
 
-## الخطوة 4: حفظ المستند المعدل
+## Schritt 4: Speichern des geänderten Dokuments
 
-بعد إزالة فواصل الصفحات ، نحتاج إلى حفظ المستند المعدل. يوضح الكود التالي كيفية حفظ المستند المعدل في موقع معين:
+Nachdem wir die Seitenumbrüche entfernt haben, müssen wir das geänderte Dokument speichern. Der folgende Code zeigt, wie das geänderte Dokument an einem bestimmten Speicherort gespeichert wird:
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- يستبدل`"modified-document.docx"` بالاسم الذي تريده للمستند المعدل.
+ Ersetzen`"modified-document.docx"` mit dem gewünschten Namen für Ihr geändertes Dokument.
 
-### نموذج شفرة مصدر لإزالة فواصل الصفحات باستخدام Aspose.Words for .NET 
+### Beispielquellcode zum Entfernen von Seitenumbrüchen mit Aspose.Words für .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//قم بتحميل المستند
+//Laden Sie das Dokument
 Document doc = new Document(dataDir + "your-document.docx");
 
 NodeCollection paragraphs = doc.GetChildNodes(NodeType.Paragraph, true);
 
 foreach (Paragraph para in paragraphs)
 {
-	// إذا كانت الفقرة تحتوي على فاصل صفحات قبل المجموعة ، فقم بمسحها.
+	// Wenn der Absatz vor dem Satz einen Seitenumbruch hat, löschen Sie ihn.
 	if (para.ParagraphFormat.PageBreakBefore)
 		para.ParagraphFormat.PageBreakBefore = false;
 
-	//تحقق من كل عمليات التشغيل في الفقرة بحثًا عن فواصل الصفحات وقم بإزالتها.
+	//Überprüfen Sie alle Läufe im Absatz auf Seitenumbrüche und entfernen Sie diese.
 	foreach (Run run in para.Runs)
 	{
 		if (run.Text.Contains(ControlChar.PageBreak))
@@ -98,6 +98,6 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا البرنامج التعليمي ، تعلمنا كيفية إزالة فواصل الصفحات من مستند باستخدام مكتبة Aspose.Words for .NET. باتباع الدليل خطوة بخطوة ، يجب أن تكون قادرًا الآن على تنفيذ هذه الوظيفة في مشاريع C # الخاصة بك. يمكن أن تساعدك إزالة فواصل الصفحات في الحفاظ على تخطيط وتنسيق متسقين في مستنداتك.
+In diesem Tutorial haben wir gelernt, wie man mithilfe der Aspose.Words for .NET-Bibliothek Seitenumbrüche aus einem Dokument entfernt. Wenn Sie der Schritt-für-Schritt-Anleitung folgen, sollten Sie nun in der Lage sein, diese Funktionalität in Ihren eigenen C#-Projekten zu implementieren. Das Entfernen von Seitenumbrüchen kann Ihnen helfen, ein einheitliches Layout und eine einheitliche Formatierung in Ihren Dokumenten beizubehalten.

@@ -1,38 +1,38 @@
 ---
-title: قيم التاريخ والوقت إلى المحور
-linktitle: قيم التاريخ والوقت إلى المحور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة قيم التاريخ والوقت إلى محور الرسم البياني باستخدام Aspose.Words for .NET.
+title: Значения даты и времени по оси
+linktitle: Значения даты и времени по оси
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как добавить значения даты и времени на ось диаграммы с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-charts/date-time-values-to-axis/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إضافة قيم التاريخ والوقت إلى محور الرسم البياني باستخدام Aspose.Words for .NET.
+В этом руководстве объясняется, как добавить значения даты и времени на ось диаграммы с помощью Aspose.Words для .NET.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Предпосылки
+Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Установлена библиотека Aspose.Words for .NET.
+- Базовые знания C# и работы с документами Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Шаг 1. Настройте каталог документов
+ Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Шаг 2: Создайте новый документ и DocumentBuilder
+ Создайте новый экземпляр`Document` класс и`DocumentBuilder` объект для работы с документом.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدراج وتكوين شكل مخطط
- قم بإدراج شكل مخطط في المستند باستخدام امتداد`InsertChart` طريقة`DocumentBuilder` هدف. قم بتعيين نوع الرسم البياني والأبعاد المطلوبة.
+## Шаг 3. Вставьте и настройте фигуру диаграммы
+ Вставьте фигуру диаграммы в документ, используя`InsertChart` метод`DocumentBuilder` объект. Установите желаемый тип диаграммы и размеры.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
@@ -40,8 +40,8 @@ Chart chart = shape.Chart;
 chart.Series.Clear();
 ```
 
-## الخطوة 4: أضف البيانات إلى الرسم البياني
-أضف البيانات إلى سلسلة المخطط ، بما في ذلك قيم التاريخ والوقت.
+## Шаг 4: Добавьте данные на диаграмму
+Добавьте данные в серию диаграмм, включая значения даты и времени.
 
 ```csharp
 chart.Series.Add("Aspose Series 1",
@@ -53,8 +53,8 @@ chart.Series.Add("Aspose Series 1",
 	new double[] { 1.2, 0.3, 2.1, 2.9, 4.2, 5.3 });
 ```
 
-## الخطوة 5: تكوين المحور
-قم بتكوين المحور X للمخطط لعرض قيم التاريخ والوقت.
+## Шаг 5: Настройте ось
+Настройте ось X диаграммы для отображения значений даты и времени.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
@@ -66,17 +66,17 @@ xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
 ```
 
-## الخطوة 6: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save`طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithCharts.DateTimeValuesToAxis.docx".
+## Шаг 6: Сохраните документ
+ Сохраните документ в указанную директорию с помощью`Save`метод. Укажите желаемое имя файла с соответствующим расширением файла. В этом примере мы сохраняем документ как «WorkingWithCharts.DateTimeValuesToAxis.docx».
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-### مثال على شفرة المصدر لـ Date Time Values To Axis باستخدام Aspose.Words for .NET 
+### Пример исходного кода для значений даты и времени по оси с использованием Aspose.Words для .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 	ChartAxis xAxis = chart.AxisX;
 	xAxis.Scaling.Minimum = new AxisBound(new DateTime(2017, 11, 05).ToOADate());
 	xAxis.Scaling.Maximum = new AxisBound(new DateTime(2017, 12, 03).ToOADate());
-	// اضبط الوحدات الرئيسية على أسبوع والوحدات الثانوية ليوم واحد.
+	// Установите основные единицы на неделю и второстепенные единицы на день.
 	xAxis.MajorUnit = 7;
 	xAxis.MinorUnit = 1;
 	xAxis.MajorTickMark = AxisTickMark.Cross;
@@ -102,4 +102,4 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 	doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-ينشئ رمز المثال هذا مستند Word جديدًا ، ويدرج مخططًا عموديًا بقيم وقت التاريخ على المحور X ، ويحفظ المستند في الدليل المحدد.
+Этот пример кода создает новый документ Word, вставляет столбчатую диаграмму со значениями даты и времени по оси X и сохраняет документ в указанном каталоге.

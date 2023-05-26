@@ -1,40 +1,40 @@
 ---
-title: تعيين تنسيق خلايا الجدول
-linktitle: تعيين تنسيق خلايا الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد تنسيق خلايا الجدول باستخدام Aspose.Words for .NET.
+title: Imposta la formattazione delle celle della tabella
+linktitle: Imposta la formattazione delle celle della tabella
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata all'impostazione della formattazione delle celle della tabella utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/set-table-cell-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتحديد تنسيق خلية الجدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية ضبط العرض والهوامش (الحشوات) لخلية في جداول مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+In questo tutorial, ti guideremo attraverso il processo passo passo per definire la formattazione di una cella di tabella utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come regolare la larghezza e i margini (imbottiture) di una cella nelle tabelle dei tuoi documenti Word utilizzando Aspose.Words per .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+Innanzitutto, devi impostare il percorso della directory dei documenti. Questa è la posizione in cui desideri salvare il documento Word modificato. Sostituisci "LA TUA CARTELLA DEI DOCUMENTI" con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## Passaggio 2: creare un nuovo documento e un generatore di documenti
+ Successivamente, è necessario creare una nuova istanza del file`Document` class e un costruttore di documenti per quel documento.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدول جديد وأضف خلية
-لبدء إنشاء الجدول ، نستخدم ملف`StartTable()` طريقة منشئ المستند ، ثم نضيف خلية إلى الجدول باستخدام الامتداد`InsertCell()` طريقة.
+## Passaggio 3: inizia una nuova tabella e aggiungi una cella
+Per iniziare a creare la tabella, usiamo il file`StartTable()` metodo del costruttore del documento, quindi aggiungiamo una cella alla tabella utilizzando il`InsertCell()` metodo.
 
 ```csharp
 builder. StartTable();
 builder. InsertCell();
 ```
 
-## الخطوة 4: تعيين تنسيق الخلية
- الآن يمكننا ضبط تنسيق الخلية عن طريق الوصول إلى ملف`CellFormat` كائن`DocumentBuilder` هدف. يمكننا ضبط عرض الخلية والهوامش (الحشوات) باستخدام الخصائص المقابلة.
+## Passaggio 4: imposta la formattazione della cella
+ Ora possiamo impostare la formattazione della cella accedendo al file`CellFormat` oggetto del`DocumentBuilder` oggetto. Possiamo impostare la larghezza della cella ei margini (padding) utilizzando le proprietà corrispondenti.
 
 ```csharp
 CellFormat cellFormat = builder. CellFormat;
@@ -45,15 +45,15 @@ cellFormat. TopPadding = 30;
 cellFormat.BottomPadding = 30;
 ```
 
-## الخطوة 5: أضف محتوى إلى الخلية
- ثم يمكننا إضافة محتوى إلى الخلية باستخدام منشئ المستندات`Writeln()` طريقة.
+## Passaggio 5: aggiungere contenuto alla cella
+ Quindi possiamo aggiungere contenuto alla cella utilizzando il generatore di documenti`Writeln()` metodo.
 
 ```csharp
 builder.Writeln("I'm a beautifully formatted cell.");
 ```
 
-## الخطوة السادسة: قم بإنهاء الجدول وحفظ المستند
- أخيرًا ، ننتهي من إنشاء الجدول باستخدام`EndRow()` طريقة و`EndTable()`، ثم نقوم بحفظ المستند المعدل في ملف.
+## Passaggio 6: completa la tabella e salva il documento
+ Infine, finiamo di creare la tabella utilizzando il file`EndRow()` metodo e`EndTable()`, quindi salviamo il documento modificato in un file.
 
 ```csharp
 builder. EndRow();
@@ -61,10 +61,10 @@ builder. EndTable();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableCellFormatting.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Table Cell Formatting باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per impostare la formattazione delle celle della tabella utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -83,5 +83,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableC
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableCellFormatting.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين تنسيق خلية جدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة ضبط عرض وهوامش خلية في الجداول الخاصة بك في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تخصيص التخطيط المرئي لجداولك وفقًا لاحتياجاتك الخاصة.
+## Conclusione
+In questo tutorial, abbiamo imparato come impostare la formattazione di una cella di tabella utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata, puoi facilmente regolare la larghezza e i margini di una cella nelle tue tabelle nei tuoi documenti Word. Aspose.Words offre un'API potente e flessibile per la manipolazione e la formattazione delle tabelle nei tuoi documenti. Con questa conoscenza, puoi personalizzare il layout visivo dei tuoi tavoli in base alle tue esigenze specifiche.

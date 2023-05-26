@@ -1,26 +1,26 @@
 ---
-title: احصل على أنواع المراجعة
-linktitle: احصل على أنواع المراجعة
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على أنواع المراجعات في مستند Word باستخدام Aspose.Words for .NET.
+title: Ottieni tipi di revisione
+linktitle: Ottieni tipi di revisione
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Ottieni i tipi di revisione in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-revisions/get-revision-types/
 ---
 
-في هذا الدليل التدريجي ، سنخبرك بكيفية الحصول على أنواع المراجعات في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+In questa guida passo passo, ti spiegheremo come ottenere i tipi di revisioni in un documento di Word utilizzando Aspose.Words per .NET. Ti forniremo il codice sorgente completo e ti mostreremo come formattare l'output del markdown.
 
-## الخطوة 1: تحميل المستند
+## Passaggio 1: caricamento del documento
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+Il primo passo è caricare il documento contenente le revisioni.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة الثانية: تصفح الفقرات
+## Passaggio 2: scorrere i paragrafi
 
-بعد ذلك ، سنتصفح فقرات المستند ونتحقق من أنواع المراجعات المرتبطة بكل فقرة.
+Successivamente, esamineremo i paragrafi del documento e verificheremo i tipi di revisioni associati a ciascun paragrafo.
 
 ```csharp
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
@@ -33,9 +33,9 @@ for (int i = 0; i < paragraphs.Count; i++)
 }
 ```
 
-### مثال على شفرة المصدر للحصول على أنواع المراجعة باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per ottenere tipi di revisione utilizzando Aspose.Words per .NET
 
-فيما يلي رمز المصدر الكامل للحصول على أنواع المراجعة في مستند باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente completo per ottenere i tipi di revisione in un documento utilizzando Aspose.Words per .NET:
 
 ```csharp
 

@@ -1,34 +1,34 @@
 ---
-title: أضف علامة مائية نصية مع خيارات محددة
-linktitle: أضف علامة مائية نصية مع خيارات محددة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Ajouter un filigrane de texte avec des options spécifiques
+linktitle: Ajouter un filigrane de texte avec des options spécifiques
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à ajouter un filigrane de texte avec des options spécifiques à l'aide d'Aspose.Words pour .NET. Guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/programming-with-watermark/add-text-watermark-with-specific-options/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. العلامة المائية النصية هي نص متراكب على مستند للإشارة إلى أنه مسودة وسري وما إلى ذلك.
+Dans ce didacticiel, nous vous expliquerons comment ajouter un filigrane de texte avec des options spécifiques à l'aide de Aspose.Words pour .NET. Un filigrane de texte est un texte superposé sur un document pour indiquer qu'il s'agit d'un brouillon, confidentiel, etc.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Étape 1 : Utiliser un générateur de documents
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Tout d'abord, nous allons utiliser un générateur de document pour ajouter du contenu à notre document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## Étape 2 : Chargement du document
 
-سنقوم بتحميل مستند موجود باستخدام مسار المستند.
+Nous allons charger un document existant en utilisant le chemin du document.
 
 ```csharp
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## الخطوة 3: أضف علامة مائية نصية بخيارات محددة
+## Étape 3 : Ajouter un filigrane de texte avec des options spécifiques
 
- سنقوم بإنشاء مثيل لـ`TextWatermarkOptions` فئة وتعيين الخيارات المطلوبة للعلامة المائية النصية.
+ Nous allons créer une instance de`TextWatermarkOptions` classe et définissez les options souhaitées pour le filigrane de texte.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()
@@ -43,19 +43,19 @@ IsSemitrasparent = false
 doc.Watermark.SetText("Test", options);
 ```
 
-## الخطوة 4: احفظ المستند
+## Étape 4 : Enregistrez le document
 
-أخيرًا ، يمكننا حفظ المستند بعلامة مائية نصية مضافة.
+Enfin, nous pouvons enregistrer le document avec le filigrane de texte ajouté.
 
 ```csharp
 	doc.Save(dataDir + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx");
 ```
 
-### مثال على شفرة المصدر لإضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET
+### Exemple de code source pour ajouter un filigrane de texte avec des options spécifiques avec Aspose.Words pour .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Document.docx");
 
@@ -74,5 +74,5 @@ doc.Watermark.SetText("Test", options);
 	
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET.
+Félicitation ! Vous avez maintenant appris à ajouter un filigrane de texte avec des options spécifiques à l'aide d'Aspose.Words pour .NET.
 

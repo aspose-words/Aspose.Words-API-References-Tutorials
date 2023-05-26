@@ -1,50 +1,50 @@
 ---
-title: تطبيق نمط الفقرة
-linktitle: تطبيق نمط الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق نمط فقرة باستخدام Aspose.Words for .NET.
+title: Paragraf Stili Uygula
+linktitle: Paragraf Stili Uygula
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir paragraf stilini nasıl uygulayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/document-formatting/apply-paragraph-style/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تطبيق نمط فقرة باستخدام Aspose.Words for .NET. اتبع الخطوات أدناه لفهم الكود المصدري وتطبيق نمط الفقرة.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir paragraf stilini nasıl uygulayacağınızı size göstereceğiz. Kaynak kodunu anlamak ve paragraf stilini uygulamak için aşağıdaki adımları izleyin.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## 1. Adım: Belgeyi oluşturma ve yapılandırma
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Başlamak için yeni bir belge ve ilişkili bir DocumentBuilder nesnesi oluşturun. İşte nasıl:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين نمط الفقرة
+## 2. Adım: Paragraf stilini yapılandırma
 
-سنقوم الآن بتكوين نمط الفقرة باستخدام معرف النمط المدمج. إليك الطريقة:
+Şimdi yerleşik stil tanımlayıcıyı kullanarak paragraf stilini yapılandıracağız. İşte nasıl:
 
 ```csharp
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;
 ```
 
-## الخطوة 3: أضف محتوى
+## 3. Adım: İçerik ekleyin
 
-سنقوم بإضافة محتوى إلى الفقرة. إليك الطريقة:
+Paragrafa içerik ekleyeceğiz. İşte nasıl:
 
 ```csharp
 builder.Write("Hello");
 doc.Save(dataDir + "DocumentFormatting.ApplyParagraphStyle.docx");
 ```
 
-### مثال على شفرة المصدر لتطبيق Paragraph Style باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Paragraf Stili Uygula için örnek kaynak kodu
 
-فيما يلي رمز المصدر الكامل لميزة "تطبيق نمط الفقرة" مع Aspose.Words for .NET:
+Aspose.Words for .NET ile Paragraf Stili Uygula özelliğinin tam kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -56,5 +56,5 @@ doc.Save(dataDir + "DocumentFormatting.ApplyParagraphStyle.docx");
 	
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تطبيق نمط فقرة باستخدام Aspose.Words for .NET.
+Bu kodla, Aspose.Words for .NET kullanarak bir paragraf stili uygulayabileceksiniz.
 

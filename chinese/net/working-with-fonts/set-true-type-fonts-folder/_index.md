@@ -1,31 +1,31 @@
 ---
-title: تعيين مجلد خطوط النوع الحقيقي
-linktitle: تعيين مجلد خطوط النوع الحقيقي
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لإعداد مجلد خطوط الكتابة الصحيحة عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: 设置 True Type 字体文件夹
+linktitle: 设置 True Type 字体文件夹
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 呈现文档时设置真实字体文件夹的分步指南。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/set-true-type-fonts-folder/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلد خطوط الكتابة الحقيقية عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلد مخصص يحتوي على خطوط True Type لاستخدامه عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+在本教程中，我们将逐步指导您在使用 Aspose.Words for .NET 渲染文档时设置 True Type 字体文件夹。我们将解释捆绑的 C# 源代码，并为您提供全面的指南，以帮助您了解并在您自己的项目中实现此功能。在本教程结束时，您将了解如何指定包含 True Type 字体的自定义文件夹，以便在使用 Aspose.Words for .NET 呈现文档时使用。
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## 第一步：定义文档目录
+首先，您需要设置文档目录的路径。这是您要保存编辑后的渲染文档的位置。用适当的路径替换“您的文档目录”。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند للعرض
- بعد ذلك ، تحتاج إلى تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## 第 2 步：加载要呈现的文档
+接下来，您需要使用`Document`班级。请务必指定正确的文档路径。
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تعيين مجلد خطوط النوع الحقيقي
- يمكنك الآن تحديد مجلد خطوط الكتابة الحقيقية لاستخدامها عند التقديم عن طريق إنشاء مثيل لملف`FontSettings` الطبقة واستخدام`SetFontsFolder()` طريقة لتعيين مجلد الخطوط. يمكنك تحديد مجلد مخصص يحتوي على خطوط True Type الخاصة بك. المعلمة الثانية ل`SetFontsFolder()` يشير إلى ما إذا كنت تريد البحث في المجلدات الفرعية للمجلد المحدد أيضًا.
+## 第 3 步：设置 True Type 字体文件夹
+现在您可以通过创建一个实例来指定渲染时要使用的真实字体文件夹`FontSettings`类和使用`SetFontsFolder()`设置字体文件夹的方法。您可以指定包含 True Type 字体的自定义文件夹。第二个参数为`SetFontsFolder()`指示您是否也想搜索指定文件夹的子文件夹。
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -33,29 +33,29 @@ fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 4: احفظ المستند المقدم
- أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## 第 4 步：保存呈现的文档
+最后，您可以使用`Save()`的方法`Document`班级。请务必指定正确的路径和文件名。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set True Type Fonts Folder باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 设置 True Type 字体文件夹的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Rendering.docx");
 	FontSettings fontSettings = new FontSettings();
-	// لاحظ أن هذا الإعداد سيتجاوز أي مصادر افتراضية للخطوط يتم البحث عنها افتراضيًا. الآن سيتم البحث عن هذه المجلدات فقط
-	// الخطوط عند تقديم الخطوط أو دمجها. لإضافة مصدر خط إضافي مع الاحتفاظ بمصادر خطوط النظام ، استخدم كلاً من FontSettings.GetFontSources و
-	// FontSettings.SetFontSources بدلاً من ذلك
+	//请注意，此设置将覆盖默认搜索的任何默认字体源。现在只会搜索这些文件夹
+	//呈现或嵌入字体时的字体。要在保留系统字体源的同时添加额外的字体源，请同时使用 FontSettings.GetFontSources 和
+	//改为使用 FontSettings.SetFontSources
 	fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-	// ضبط إعدادات الخط
+	//设置字体设置
 	doc.FontSettings = fontSettings;
 	doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلد خطوط الكتابة الحقيقية عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلد مخصص يحتوي على خطوط True Type لاستخدامها عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في الخطوط المستخدمة وتخصيصها عند تقديم مستنداتك وفقًا لاحتياجاتك الخاصة.
+## 结论
+在本教程中，我们学习了如何在使用 Aspose.Words for .NET 渲染文档时设置 True Type 字体文件夹。按照此分步指南，您可以轻松指定包含 True Type 字体的自定义文件夹，以便在呈现文档时使用。 Aspose.Words 提供了强大而灵活的 API 来处理文档中的字体。有了这些知识，您就可以控制和自定义在根据您的特定需求呈现文档时使用的字体。

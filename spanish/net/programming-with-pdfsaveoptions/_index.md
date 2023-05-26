@@ -1,39 +1,39 @@
 ---
-title: البرمجة مع خيارات Pdfsave
-linktitle: البرمجة مع خيارات Pdfsave
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على عنوان مستند العرض في شريط عنوان النافذة ، وتحذيرات تقديم pdf ، وموقع pdf رقميًا باستخدام حامل الشهادة ، وجميع الخطوط المضمنة ، ومجموعة فرعية مضمنة
+title: Programación con Pdfsaveoptions
+linktitle: Programación con Pdfsaveoptions
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales contienen el título del documento de visualización en la barra de título de la ventana, advertencias de procesamiento de pdf, pdf firmado digitalmente con el titular del certificado, todas las fuentes incrustadas, subconjunto incrustado f
 type: docs
 weight: 1680
 url: /es/net/programming-with-pdfsaveoptions/
 ---
-ترشدك البرامج التعليمية لـ Aspose.Words for .NET حول البرمجة باستخدام PdfSaveOptions إلى مختلف الميزات والتقنيات للعمل مع خيارات حفظ PDF. تساعدك هذه البرامج التعليمية على فهم كيفية تخصيص تحويل Word إلى PDF عن طريق تغيير إعدادات التخطيط والخطوط والصور والبيانات الوصفية والمزيد.
+Los tutoriales de Aspose.Words para .NET sobre programación con PdfSaveOptions lo guiarán a través de las diversas funciones y técnicas para trabajar con las opciones de guardado de PDF. Estos tutoriales lo ayudan a comprender cómo personalizar la conversión de Word a PDF cambiando la configuración de diseño, las fuentes, las imágenes, los metadatos y más.
 
-ستتعلم كيفية ضبط خيارات جودة الصورة ، واختيار مستوى الضغط للصور ، وتعيين إعدادات أمان PDF مثل التشفير والأذونات ، وحتى إدراج العلامات المائية في ملفات PDF التي تم إنشاؤها. تتضمن البرامج التعليمية أيضًا نماذج تعليمات برمجية مفصلة لمساعدتك في ممارسة هذه الميزات في مشروعاتك.
+Aprenderá a ajustar las opciones de calidad de la imagen, elegir el nivel de compresión de las imágenes, establecer la configuración de seguridad de PDF, como el cifrado y los permisos, e incluso insertar marcas de agua en los archivos PDF generados. Los tutoriales también incluyen ejemplos de código detallados para ayudarlo a practicar estas funciones en sus proyectos.
 
-سواء كنت ترغب في تحويل مستندات Word إلى PDF للتوزيع أو الأرشفة أو الطباعة عبر الإنترنت ، فإن هذه البرامج التعليمية تزودك بالمعرفة اللازمة لتحقيق نتائج دقيقة وعالية الجودة. باستخدام Aspose.Words for .NET و PdfSaveOptions ، يمكنك تحسين عملية تحويل الملفات والحصول على ملفات PDF التي تلبي احتياجاتك الخاصة.
+Ya sea que desee convertir documentos de Word a PDF para distribuirlos en línea, archivarlos o imprimirlos, estos tutoriales le brindan los conocimientos necesarios para lograr resultados precisos y de alta calidad. Con Aspose.Words para .NET y PdfSaveOptions, puede optimizar el proceso de conversión de archivos y obtener archivos PDF que satisfagan sus necesidades específicas.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [عرض عنوان المستند في شريط عنوان النافذة](./display-doc-title-in-window-titlebar/) | تعرف على كيفية عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF باستخدام Aspose.Words for .NET. |
-| [تحذيرات تقديم ملف PDF](./pdf-render-warnings/) | دليل خطوة بخطوة للتعامل مع تحذيرات عرض PDF باستخدام Aspose.Words for .NET. |
-| [ملف PDF موقع رقميًا باستخدام حامل الشهادة](./digitally-signed-pdf-using-certificate-holder/) | تعرف على كيفية توقيع ملف PDF رقميًا باستخدام حامل شهادة مع Aspose.Words for .NET. |
-| [جميع الخطوط المضمنة](./embedded-all-fonts/) | دليل خطوة بخطوة لتضمين كل الخطوط في ملف PDF باستخدام Aspose.Words for .NET. |
-| [خطوط المجموعة الفرعية المضمنة](./embedded-subset-fonts/) | دليل تفصيلي خطوة بخطوة لتضمين مجموعات الخطوط الفرعية في ملف PDF باستخدام Aspose.Words for .NET. |
-| [تعطيل تضمين خطوط Windows](./disable-embed-windows-fonts/) | تعرف على كيفية تعطيل تضمين خطوط Windows عند تحويل المستندات إلى PDF باستخدام Aspose.Words for .NET. |
-| [تخطي الخطوط المضمنة Arial و Times Roman Fonts](./skip-embedded-arial-and-times-roman-fonts/) | دليل تفصيلي لإنشاء ملف PDF بدون تضمين خطوط Arial و Times Roman باستخدام Aspose.Words for .NET. |
-| [تجنب تضمين الخطوط الأساسية](./avoid-embedding-core-fonts/) | تعرف على كيفية تجنب تضمين الخط الأساسي عند تحويل مستندات Word إلى PDF باستخدام Aspose.Words for .NET. |
-| [الهروب أوري](./escape-uri/) | دليل خطوة بخطوة للهروب من Uri باستخدام Aspose.Words for .NET. |
-| [تصدير الإشارات المرجعية في رأس تذييل الصفحة](./export-header-footer-bookmarks/) | دليل خطوة بخطوة لتصدير الإشارات المرجعية في الرأس والتذييل باستخدام Aspose.Words for .NET. |
-| [تغيير حجم خطوط Wmf إلى حجم ملف التعريف](./scale-wmf-fonts-to-metafile-size/) | دليل خطوة بخطوة لضبط حجم خط WMF عند التحويل إلى PDF باستخدام Aspose.Words for .NET. |
-| [نص إضافي المواقع](./additional-text-positioning/) | تعرف على كيفية التحكم في موضع النص الإضافي عند تحويل مستندات Word إلى PDF باستخدام Aspose.Words for .NET. |
-| [التحويل إلى PDF 17](./conversion-to-pdf-17/) | تعرف على كيفية تحويل المستندات إلى PDF 1.7 باستخدام Aspose.Words for .NET. |
-| [اختزال الصور](./downsampling-images/) | تعرف على كيفية تقليل دقة الصورة عند التحويل إلى PDF باستخدام Aspose.Words for .NET. |
-| [تعيين خيارات المخطط التفصيلي](./set-outline-options/) | دليل تفصيلي خطوة بخطوة لتعيين خيارات المخطط التفصيلي في مستند PDF باستخدام Aspose.Words for .NET. |
-| [تصدير خصائص مخصصة](./custom-properties-export/) | تعرف على كيفية تصدير الخصائص المخصصة عند تحويل المستندات إلى PDF باستخدام Aspose.Words for .NET. |
-| [تصدير هيكل الوثيقة](./export-document-structure/) | دليل خطوة بخطوة لتصدير بنية المستند باستخدام Aspose.Words for .NET. |
-| [ضغط الصورة](./image-compression/) | دليل خطوة بخطوة لضغط الصور باستخدام Aspose.Words for .NET. |
-| [تحديث آخر خاصية مطبوعة](./update-last-printed-property/) | دليل تفصيلي خطوة بخطوة لتحديث خاصية "آخر طباعة" عند التحويل إلى PDF باستخدام Aspose.Words for .NET. |
-| [Dml 3DEffects التقديم](./dml-3deffects-rendering/) | تعرف على كيفية تمكين عرض تأثيرات DML ثلاثية الأبعاد عند التحويل إلى PDF باستخدام Aspose.Words for .NET. |
-| [أقحم الصور](./interpolate-images/) | دليل مفصّل خطوة بخطوة لتمكين استيفاء الصور باستخدام Aspose.Words for .NET. |
+| [Mostrar el título del documento en la barra de título de la ventana](./display-doc-title-in-window-titlebar/) | Aprenda a mostrar el título del documento en la barra de título de la ventana al convertir a PDF con Aspose.Words para .NET. |
+| [Advertencias de procesamiento de PDF](./pdf-render-warnings/) | Guía paso a paso para lidiar con las advertencias de procesamiento de PDF con Aspose.Words para .NET. |
+| [Pdf firmado digitalmente usando el titular del certificado](./digitally-signed-pdf-using-certificate-holder/) | Aprenda a firmar digitalmente un PDF con un titular de certificado con Aspose.Words para .NET. |
+| [Todas las fuentes incrustadas](./embedded-all-fonts/) | Guía paso a paso para incrustar todas las fuentes en un PDF usando Aspose.Words para .NET. |
+| [Subconjunto de fuentes incrustadas](./embedded-subset-fonts/) | Guía paso a paso para incrustar subconjuntos de fuentes en un PDF usando Aspose.Words para .NET. |
+| [Deshabilitar incrustar fuentes de Windows](./disable-embed-windows-fonts/) | Aprenda a deshabilitar la incrustación de fuentes de Windows al convertir documentos a PDF con Aspose.Words para .NET. |
+| [Saltar fuentes incrustadas Arial y Times Roman](./skip-embedded-arial-and-times-roman-fonts/) | Guía paso a paso para generar PDF sin incrustar fuentes Arial y Times Roman con Aspose.Words para .NET. |
+| [Evite incrustar fuentes principales](./avoid-embedding-core-fonts/) | Aprenda a evitar la incrustación básica de fuentes al convertir documentos de Word a PDF con Aspose.Words para .NET. |
+| [Escapar Uri](./escape-uri/) | Guía paso a paso para escapar de Uri con Aspose.Words para .NET. |
+| [Exportar marcadores de encabezado y pie de página](./export-header-footer-bookmarks/) | Guía paso a paso para exportar marcadores de encabezado y pie de página con Aspose.Words para .NET. |
+| [Escalar fuentes Wmf al tamaño de metarchivo](./scale-wmf-fonts-to-metafile-size/) | Guía paso a paso para ajustar el tamaño de fuente WMF al convertir a PDF con Aspose.Words para .NET. |
+| [Posicionamiento de texto adicional](./additional-text-positioning/) | Aprenda a controlar la ubicación de texto adicional al convertir documentos de Word a PDF con Aspose.Words para .NET. |
+| [Conversión a PDF 17](./conversion-to-pdf-17/) | Aprenda a convertir documentos a PDF 1.7 con Aspose.Words para .NET. |
+| [Reducción de resolución de imágenes](./downsampling-images/) | Aprenda a reducir la resolución de la imagen al convertir a PDF con Aspose.Words para .NET. |
+| [Establecer opciones de contorno](./set-outline-options/) | Guía paso a paso para establecer opciones de esquema en un documento PDF con Aspose.Words para .NET. |
+| [Exportación de propiedades personalizadas](./custom-properties-export/) | Aprenda a exportar propiedades personalizadas al convertir documentos a PDF con Aspose.Words para .NET. |
+| [Estructura del documento de exportación](./export-document-structure/) | Guía paso a paso para exportar la estructura de un documento con Aspose.Words para .NET. |
+| [Compresión de imagen](./image-compression/) | Guía paso a paso para comprimir imágenes con Aspose.Words para .NET. |
+| [Actualizar última propiedad impresa](./update-last-printed-property/) | Guía paso a paso para actualizar la propiedad "Última impresión" al convertir a PDF con Aspose.Words para .NET. |
+| [Representación Dml 3DEffects](./dml-3deffects-rendering/) | Aprenda a habilitar la representación de efectos DML 3D al convertir a PDF con Aspose.Words para .NET. |
+| [Interpolar imágenes](./interpolate-images/) | Guía paso a paso para habilitar la interpolación de imágenes con Aspose.Words para .NET. |

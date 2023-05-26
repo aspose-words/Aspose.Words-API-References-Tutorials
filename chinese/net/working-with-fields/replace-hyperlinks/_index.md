@@ -1,33 +1,33 @@
 ---
-title: استبدل الارتباطات التشعبية
-linktitle: استبدل الارتباطات التشعبية
-second_title: Aspose.Words لمراجع .NET API
-description: استبدل الارتباطات التشعبية في مستندات Word باستخدام Aspose.Words for .NET. إرشادات خطوة بخطوة لاستبدال الارتباطات التشعبية.
+title: 替换超链接
+linktitle: 替换超链接
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 替换 Word 文档中的超链接。替换超链接的分步说明。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/replace-hyperlinks/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية لاستبدال الارتباطات التشعبية باستخدام Aspose.Words لوظائف .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+这是一个分步指南，用于解释以下 C# 源代码以使用 Aspose.Words for .NET 功能替换超链接。在使用此代码之前，请确保您已将 Aspose.Words 库包含在您的项目中。
 
-## الخطوة 1: تعيين مسار دليل المستند
+## 第一步：设置文档目录路径
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات الذي يحتوي على ملحق`Hyperlinks.docx` ملف.
+请务必指定包含以下内容的文档目录的正确路径`Hyperlinks.docx`文件。
 
-## الخطوة 2: قم بتحميل المستند الذي يحتوي على الارتباطات التشعبية
+## 第 2 步：加载包含超链接的文档
 
 ```csharp
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- نحن هنا بصدد إنشاء مثيل لـ`Document` فئة من الملف المحدد.
+在这里，我们正在创建一个实例`Document`来自指定文件的类。
 
-## الخطوة 3: تصفح الحقول للعثور على الارتباطات التشعبية
+## 第 3 步：浏览字段以查找超链接
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -36,30 +36,30 @@ foreach(Field field in doc.Range.Fields)
      {
          FieldHyperlink hyperlink = (FieldHyperlink)field;
 
-         // قد تكون بعض الارتباطات التشعبية محلية (روابط للإشارات المرجعية داخل المستند) ، ونحن نتجاهلها.
+         //一些超链接可能是本地的（链接到文档内部的书签），我们忽略它们。
          if (hyperlink.SubAddress != null)
              keep on going;
 
-         hyperlink.Address = "http://www.aspose.com "؛
+         hyperlink.Address = "http://www.aspose.com";
          hyperlink.Result = "Aspose - The .NET & Java component editor";
      }
 }
 ```
 
- تمر هذه الحلقة عبر جميع الحقول في المستند بحثًا عن حقول النوع`FieldType.FieldHyperlink` . بمجرد العثور على حقل من هذا النوع ، نتحقق مما إذا كان رابطًا محليًا عن طريق التحقق من`SubAddress` ملكية. إذا لم يكن كذلك ، فإننا نستبدل عنوان الارتباط بـ`"http://www.aspose.com"`والنتيجة مع`"Aspose - The .NET & Java Component Editor"`.
+此循环遍历文档中的所有字段以查找类型的字段`FieldType.FieldHyperlink`.一旦找到这种类型的字段，我们通过检查`SubAddress`财产。如果不是，我们将链接地址替换为`"http://www.aspose.com"`结果是`"Aspose - The .NET & Java Component Editor"`.
 
-## الخطوة 4: احفظ المستند المعدل
+## 第 4 步：保存修改后的文档
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
-أخيرًا ، نحفظ المستند المعدل بالارتباطات التشعبية المستبدلة في ملف محدد.
+最后，我们将修改后的文档和替换后的超链接保存到指定的文件中。
 
-### مثال على شفرة المصدر لاستبدال الارتباطات التشعبية بـ Aspose.Words for .NET
+### 用 Aspose.Words for .NET 替换超链接的示例源代码
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 Document doc = new Document(dataDir + "Hyperlinks.docx");
@@ -70,11 +70,11 @@ foreach(Field field in doc.Range.Fields)
      {
          FieldHyperlink hyperlink = (FieldHyperlink)field;
 
-         // قد تكون بعض الارتباطات التشعبية محلية (روابط للإشارات المرجعية داخل المستند) ، ونحن نتجاهلها.
+         //一些超链接可能是本地的（链接到文档内部的书签），我们忽略它们。
          if (hyperlink.SubAddress != null)
              keep on going;
 
-         hyperlink.Address = "http://www.aspose.com "؛
+         hyperlink.Address = "http://www.aspose.com";
          hyperlink.Result = "Aspose - The .NET & Java component editor";
      }
 }
@@ -82,4 +82,4 @@ foreach(Field field in doc.Range.Fields)
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
-هذا نموذج لشفرة مصدر لاستبدال الارتباطات التشعبية في مستند باستخدام Aspose.Words for .NET.
+这是使用 Aspose.Words for .NET 替换文档中超链接的示例源代码。

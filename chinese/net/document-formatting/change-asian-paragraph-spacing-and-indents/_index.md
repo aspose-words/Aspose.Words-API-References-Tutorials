@@ -1,66 +1,66 @@
 ---
-title: تغيير تباعد الفقرات الآسيوية والمسافات البادئة
-linktitle: تغيير تباعد الفقرات الآسيوية والمسافات البادئة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير تباعد الفقرات الآسيوية والمسافات البادئة باستخدام Aspose.Words for .NET.
+title: 更改亚洲段落间距和缩进
+linktitle: 更改亚洲段落间距和缩进
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 更改亚洲段落间距和缩进。
 type: docs
 weight: 10
 url: /zh/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تغيير المسافات والمسافات البادئة لفقرة آسيوية باستخدام Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+在本教程中，我们将带您了解如何使用 Aspose.Words for .NET 更改亚洲段落的间距和缩进。按照以下步骤了解源代码并应用更改。
 
-## الخطوة 1: تحميل المستند
+## 第 1 步：装入文档
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند الذي يحتوي على الطباعة الآسيوية في كائن المستند. إليك الطريقة:
+首先，指定文档的目录并将包含亚洲版式的文档加载到 Document 对象中。就是这样：
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Asian typography.docx");
 ```
 
-## الخطوة 2: تغيير تباعد الفقرات والمسافات البادئة
+## 第 2 步：更改段落间距和缩进
 
-سنقوم الآن بتعديل المسافات والمسافات البادئة للفقرة الأولى من الوثيقة الآسيوية. إليك الطريقة:
+我们现在将修改亚洲文档第一段的间距和缩进。就是这样：
 
 ```csharp
 ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-format.CharacterUnitLeftIndent = 10; // تحديث ParagraphFormat.LeftIndent
-format.CharacterUnitRightIndent = 10; // تحديث ParagraphFormat.RightIndent
-format.CharacterUnitFirstLineIndent = 20; // تحديث ParagraphFormat.FirstLineIndent
-format.LineUnitBefore = 5; // قم بتحديث ParagraphFormat.SpaceBefore
-format.LineUnitAfter = 10; // تحديث ParagraphFormat.SpaceAfter
+format.CharacterUnitLeftIndent = 10; //更新 ParagraphFormat.LeftIndent
+format.CharacterUnitRightIndent = 10; //更新 ParagraphFormat.RightIndent
+format.CharacterUnitFirstLineIndent = 20; //更新 ParagraphFormat.FirstLineIndent
+format.LineUnitBefore = 5; //更新 ParagraphFormat.SpaceBefore
+format.LineUnitAfter = 10; //更新 ParagraphFormat.SpaceAfter
 ```
 
-## الخطوة 3: حفظ المستند
+## 第 3 步：保存文档
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+插入文本输入表单域后，使用`Save`方法。确保提供适当的文件路径：
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc");
 ```
 
-### مثال على شفرة المصدر لتغيير المسافات والمسافات البادئة للفقرات الآسيوية باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 更改亚洲段落间距和缩进的示例源代码
 
-فيما يلي رمز المصدر الكامل لميزة تحرير تباعد الفقرات والمسافات البادئة الآسيوية باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 编辑亚洲段落间距和缩进功能的完整源代码：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Asian typography.docx");
 
 	ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
-	format.CharacterUnitLeftIndent = 10;       // سيتم تحديث ParagraphFormat.LeftIndent
-	format.CharacterUnitRightIndent = 10;      // سيتم تحديث تنسيق الفقرة
-	format.CharacterUnitFirstLineIndent = 20;  //سيتم تحديث ParagraphFormat.FirstLineIndent
-	format.LineUnitBefore = 5;                 // سيتم تحديث ParagraphFormat.SpaceBefore
-	format.LineUnitAfter = 10;                 // سيتم تحديث ParagraphFormat.SpaceAfter
+	format.CharacterUnitLeftIndent = 10;       // ParagraphFormat.LeftIndent 将被更新
+	format.CharacterUnitRightIndent = 10;      //ParagraphFormat.RightIndent 将被更新
+	format.CharacterUnitFirstLineIndent = 20;  //ParagraphFormat.FirstLineIndent 将被更新
+	format.LineUnitBefore = 5;                 //ParagraphFormat.SpaceBefore 将被更新
+	format.LineUnitAfter = 10;                 //ParagraphFormat.SpaceAfter 将被更新
 
 	doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تغيير المسافات والمسافات البادئة لفقرة آسيوية باستخدام Aspose.Words for .NET.
+使用此代码，您将能够使用 Aspose.Words for .NET 更改亚洲段落的间距和缩进。
 

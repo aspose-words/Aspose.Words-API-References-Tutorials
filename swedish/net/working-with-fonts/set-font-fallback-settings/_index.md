@@ -1,51 +1,51 @@
 ---
-title: تعيين إعدادات الخط الاحتياطي
-linktitle: تعيين إعدادات الخط الاحتياطي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين إعدادات استبدال الخطوط في Aspose.Words for .NET وتخصيص استبدال الخط في مستندات Word.
+title: Ställ in alternativa teckensnittsinställningar
+linktitle: Ställ in alternativa teckensnittsinställningar
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ställer in inställningar för teckensnittsersättning i Aspose.Words för .NET och anpassa teckensnittsersättning i dina Word-dokument.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/set-font-fallback-settings/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين إعدادات استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. تسمح لك إعدادات استبدال الخط بتحديد الخطوط البديلة لاستخدامها عندما لا تكون الخطوط المحددة متاحة.
+I den här handledningen kommer vi att visa dig hur du ställer in inställningar för teckensnittsersättning i ett Word-dokument med Aspose.Words för .NET. Inställningar för teckensnittsersättning låter dig ange ersättningsteckensnitt som ska användas när de angivna teckensnitten inte är tillgängliga.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+Börja med att ange katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل إعدادات استبدال الخط
- قم بإنشاء مثيل لـ`FontSettings` فئة واستخدام`Load`طريقة لتحميل إعدادات تجاوز الخط من ملف XML. يجب أن يحتوي ملف XML المحدد على قواعد استبدال الخط المراد استخدامها.
+## Steg 2: Ladda inställningar för teckensnittsersättning
+ Skapa en instans av`FontSettings` klass och använd`Load`metod för att läsa in inställningar för teckensnittsåsidosättning från en XML-fil. Den angivna XML-filen måste innehålla reglerna för teckensnittsersättning som ska användas.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
 ```
 
-## الخطوة 3: تطبيق إعدادات استبدال الخط
- إقران إعدادات استبدال الخط بالمستند من خلال تخصيصها للمستند`FontSettings` ملكية.
+## Steg 3: Använd inställningar för teckensnittsersättning
+ Koppla inställningar för teckensnittsersättning till dokumentet genom att tilldela dem till dokumentets`FontSettings` fast egendom.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند باستخدام ملف`Save` طريقة`Document` بالمسار واسم الملف المناسبين.
+## Steg 4: Spara dokumentet
+ Spara dokumentet med hjälp av`Save` metod för`Document` med lämplig sökväg och filnamn.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Font Fallback Settings باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Set Font Fallback Settings med Aspose.Words för .NET 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -55,5 +55,5 @@ doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تعيين إعدادات استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. جرب قواعد مختلفة لاستبدال الخطوط للتأكد من تناسق وثيقتك ، حتى عندما لا تكون الخطوط المحددة متاحة.
+## Slutsats
+I den här handledningen lärde du dig hur du ställer in inställningar för teckensnittsersättning i ett Word-dokument med Aspose.Words för .NET. Experimentera med olika regler för teckensnittsersättning för att säkerställa att ditt dokument ser konsekvent ut, även när de angivna teckensnitten inte är tillgängliga.

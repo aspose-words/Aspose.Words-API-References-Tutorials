@@ -1,29 +1,29 @@
 ---
-title: إلحاق محتوى القسم
-linktitle: إلحاق محتوى القسم
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية إضافة محتوى إلى أقسام معينة من مستند Word باستخدام Aspose.Words for .NET.
+title: Bölüm İçeriğini Ekle
+linktitle: Bölüm İçeriğini Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinin belirli bölümlerine nasıl içerik ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-section/append-section-content/
 ---
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية إضافة محتوى إلى قسم معين من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يمكن أن تكون إضافة محتوى إلى قسم موجود مفيدة في تنظيم وتنظيم المستند بدقة. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu öğreticide, size Aspose.Words .NET kitaplığını kullanarak bir Word belgesinin belirli bir bölümüne nasıl içerik ekleyeceğinizi göstereceğiz. Mevcut bir bölüme içerik eklemek, belgenizi tam olarak düzenlemenize ve yapılandırmanıza yardımcı olabilir. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: قم بإنشاء مستند ومنشئ
- أولاً ، سننشئ مثيلاً لملف`Document` فئة وما يرتبط بها`DocumentBuilder` المُنشئ لبناء المستند.
+## 1. Adım: Bir belge ve oluşturucu oluşturun
+ İlk olarak, bir örneğini oluşturacağız`Document` sınıf ve ilgili`DocumentBuilder` belgeyi oluşturmak için yapıcı.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أضف محتوى إلى الأقسام
- بعد ذلك ، سنستخدم ملف`DocumentBuilder` منشئ لإضافة محتوى إلى أقسام مختلفة من المستند. في هذا المثال ، نضيف محتوى إلى أربعة أقسام مختلفة.
+## 2. Adım: Bölümlere içerik ekleyin
+ Sonra, kullanacağız`DocumentBuilder` Belgenin farklı bölümlerine içerik eklemek için yapıcı. Bu örnekte, dört farklı bölüme içerik ekliyoruz.
 
 ```csharp
 builder.Writeln("Hello1");
@@ -35,8 +35,8 @@ doc.AppendChild(new Section(doc));
 builder.Writeln("Hello45");
 ```
 
-## الخطوة 3: إضافة وإدراج المحتوى بين الأقسام
-لإضافة محتوى وإدراجه بين الأقسام ، سنختار قسمًا معينًا نريد إضافة محتوى إليه. في هذا المثال ، سنضيف محتويات القسم الأول إلى بداية القسم الثالث ، ثم نضيف محتويات القسم الثاني إلى نهاية القسم الثالث.
+## 3. Adım: Bölümler arasına içerik ekleyin ve ekleyin
+Bölümler arasına içerik eklemek ve eklemek için içerik eklemek istediğimiz belirli bir bölümü seçeceğiz. Bu örnekte, birinci bölümün içeriğini üçüncü bölümün başına, ardından ikinci bölümün içeriğini üçüncü bölümün sonuna ekleyeceğiz.
 
 ```csharp
 Section section = doc.Sections[2];
@@ -48,7 +48,7 @@ Section sectionToAppend = doc.Sections[1];
 section.AppendContent(sectionToAppend);
 ```
 
-### نموذج التعليمات البرمجية المصدر لإلحاق محتوى القسم باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Bölüm İçeriğini Eklemek için örnek kaynak kodu 
 
 ```csharp
 
@@ -63,18 +63,18 @@ builder.Writeln("Hello3");
 doc.AppendChild(new Section(doc));
 builder.Writeln("Hello45");
 
-//هذا هو القسم الذي سنلحق به ونستند إليه.
+//Bu, ekleyeceğimiz ve başa ekleyeceğimiz bölümdür.
 Section section = doc.Sections[2];
 
-// يؤدي هذا إلى نسخ محتوى القسم الأول وإدراجه في بداية القسم المحدد.
+// Bu, 1. bölümün içeriğini kopyalar ve belirtilen bölümün başına ekler.
 Section sectionToPrepend = doc.Sections[0];
 section.PrependContent(sectionToPrepend);
 
-// يؤدي هذا إلى نسخ محتوى القسم الثاني وإدراجه في نهاية القسم المحدد.
+// Bu, 2. bölümün içeriğini kopyalar ve belirtilen bölümün sonuna ekler.
 Section sectionToAppend = doc.Sections[1];
 section.AppendContent(sectionToAppend);
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية إضافة محتوى إلى أقسام معينة من مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات الموضحة ، يمكنك بسهولة تنظيم وبناء المستند الخاص بك عن طريق إضافة المحتوى وإدراجه بين الأقسام. لا تتردد في تخصيص محتوى القسم وخصائصه لاحتياجاتك الخاصة.
+## Çözüm
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinin belirli bölümlerine nasıl içerik ekleneceğini gördük. Ana hatları verilen adımları izleyerek, bölümler arasına içerik ekleyerek ve ekleyerek belgenizi kolayca düzenleyebilir ve yapılandırabilirsiniz. Bölüm içeriğini ve özelliklerini özel ihtiyaçlarınıza göre özelleştirmekten çekinmeyin.

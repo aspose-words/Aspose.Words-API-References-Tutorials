@@ -1,31 +1,31 @@
 ---
-title: التحويل بين وحدات القياس
-linktitle: التحويل بين وحدات القياس
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة للتحويل بين وحدات القياس في مستند باستخدام Aspose.Words for .NET.
+title: Zwischen Maßeinheiten umrechnen
+linktitle: Zwischen Maßeinheiten umrechnen
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Konvertieren zwischen Maßeinheiten in einem Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-document-properties/convert-between-measurement-units/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # للتحويل بين وحدات القياس باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تحديد الهوامش ومسافات الرأس والتذييل وما إلى ذلك في وحدات قياس مختلفة.
+In diesem Tutorial führen wir Sie durch den C#-Quellcode zur Konvertierung zwischen Maßeinheiten mit Aspose.Words für .NET. Mit dieser Funktion können Sie Ränder, Kopf- und Fußzeilenabstände usw. in verschiedenen Maßeinheiten angeben.
 
-## الخطوة 1: إعداد المشروع
+## Schritt 1: Projekteinrichtung
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Aspose.Words for .NET-Bibliothek verwiesen wird.
 
-## الخطوة الثانية: إنشاء المستند والمنشئ
+## Schritt 2: Dokument und Konstruktor erstellen
 
-في هذه الخطوة ، سننشئ مستندًا جديدًا ونهيئ المُنشئ. استخدم الكود التالي:
+In diesem Schritt erstellen wir ein neues Dokument und initialisieren den Konstruktor. Verwenden Sie den folgenden Code:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تكوين وحدات القياس
+## Schritt 3: Maßeinheiten konfigurieren
 
-سنقوم الآن بتحويل قيم الهوامش ومسافات الرأس والتذييل وما إلى ذلك في وحدات قياس مختلفة. استخدم الكود التالي لتحديد القيم في وحدات قياس معينة:
+Jetzt werden wir die Werte für Ränder, Kopf- und Fußzeilenabstände usw. in verschiedene Maßeinheiten umrechnen. Verwenden Sie den folgenden Code, um Werte in bestimmten Maßeinheiten anzugeben:
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -37,9 +37,9 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- يستخدم هذا الرمز الامتداد`ConvertUtil` فئة Aspose. Words لتحويل القيم المحددة إلى بوصة (`InchToPoint` ). يمكنك أيضًا استخدام طرق التحويل الأخرى المتوفرة في ملف`ConvertUtil` فئة لتحويل القيم إلى وحدات قياس أخرى.
+ Dieser Code verwendet die`ConvertUtil` Klasse von Aspose.Words zum Konvertieren der angegebenen Werte in Zoll (`InchToPoint` ). Sie können auch andere im verfügbare Konvertierungsmethoden verwenden`ConvertUtil` Klasse, um Werte in andere Maßeinheiten umzuwandeln.
 
-### مثال على شفرة المصدر للتحويل بين وحدات القياس باستخدام Aspose.Words for .NET
+### Beispielquellcode für die Konvertierung zwischen Maßeinheiten mit Aspose.Words für .NET
 
 ```csharp
 
@@ -56,4 +56,4 @@ pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
   
 ```
 
-لقد تعلمت الآن كيفية التحويل بين وحدات القياس عند تحديد الهوامش ومسافات الرأس والتذييل وما إلى ذلك في مستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تحديد القيم في وحدات القياس المطلوبة في مستنداتك الخاصة.
+Sie haben jetzt gelernt, wie Sie zwischen Maßeinheiten konvertieren, wenn Sie Ränder, Kopf- und Fußzeilenabstände usw. in einem Dokument mit Aspose.Words für .NET angeben. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie die Werte in den gewünschten Maßeinheiten ganz einfach in Ihren eigenen Dokumenten angeben.

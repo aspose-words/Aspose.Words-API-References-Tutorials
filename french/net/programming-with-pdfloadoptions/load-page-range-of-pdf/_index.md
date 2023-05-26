@@ -1,21 +1,21 @@
 ---
-title: تحميل نطاق الصفحات من ملف PDF
-linktitle: تحميل نطاق الصفحات من ملف PDF
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحميل نطاق معين من صفحات PDF باستخدام Aspose.Words for .NET.
+title: Charger la plage de pages du pdf
+linktitle: Charger la plage de pages du pdf
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour charger une plage de pages PDF spécifique avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تحميل نطاق صفحات معين من مستند PDF باستخدام Aspose.Words for .NET. اتبع الخطوات التالية:
+Dans ce didacticiel, nous vous expliquerons comment charger une plage de pages spécifique à partir d'un document PDF à l'aide de Aspose.Words pour .NET. Suivez les étapes ci-dessous :
 
-## الخطوة 1: تحميل مجموعة من صفحات PDF
+## Étape 1 : Charger une série de pages PDF
 
-استخدم الكود التالي لتحميل نطاق صفحات معين من مستند PDF:
+Utilisez le code suivant pour charger une plage de pages spécifique à partir d'un document PDF :
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -23,25 +23,25 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- في هذا المثال ، نقوم بتحميل الصفحة الأولى من مستند PDF. يمكنك تغيير قيم`PageIndex` و`PageCount` إلى نطاق الصفحات المطلوب.
+ Dans cet exemple, nous chargeons la première page du document PDF. Vous pouvez modifier les valeurs de`PageIndex` et`PageCount` à la plage de pages souhaitée.
 
-## الخطوة 2: حفظ المستند
+## Étape 2 : Enregistrer le document
 
- أخيرًا ، يمكنك حفظ المستند الذي يحتوي على نطاق الصفحات المحدد باستخدام امتداد`Save` طريقة:
+ Enfin, vous pouvez enregistrer le document contenant la plage de pages spécifique à l'aide de la`Save` méthode:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ المستند المحرر.
+Assurez-vous de spécifier le chemin d'accès correct pour enregistrer le document modifié.
 
-هذا كل شئ ! لقد قمت الآن بتحميل نطاق صفحات معين من مستند PDF باستخدام Aspose.Words for .NET.
+C'est tout ! Vous avez maintenant chargé une plage de pages spécifique à partir d'un document PDF à l'aide d'Aspose.Words pour .NET.
 
-### مثال على شفرة المصدر لتحميل نطاق الصفحات من ملف PDF باستخدام Aspose.Words for .NET
+### Exemple de code source pour Load Page Range Of Pdf en utilisant Aspose.Words pour .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
 
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 	doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
    
 ```
-تذكر تحديد المسار الصحيح إلى دليل مستندات PDF الخاصة بك.
+N'oubliez pas de spécifier le chemin d'accès correct au répertoire de vos documents PDF.
 
 
 

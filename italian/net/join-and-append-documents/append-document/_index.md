@@ -1,37 +1,37 @@
 ---
-title: إلحاق مستند
-linktitle: إلحاق مستند
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق محتويات مستند بآخر باستخدام Aspose.Words for .NET.
+title: Aggiungi documento
+linktitle: Aggiungi documento
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come aggiungere il contenuto di un documento a un altro utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/join-and-append-documents/append-document/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق محتويات مستند بآخر. يوضح كود المصدر المقدم كيفية فتح مستندات المصدر والوجهة واستيراد وإلحاق أقسام من المستند المصدر إلى المستند الوجهة.
+Questo tutorial spiega come utilizzare Aspose.Words per .NET per aggiungere il contenuto di un documento a un altro. Il codice sorgente fornito mostra come aprire i documenti di origine e di destinazione, importare e aggiungere sezioni dal documento di origine al documento di destinazione.
 
-## الخطوة 1: قم بإعداد المشروع
+## Passaggio 1: impostare il progetto
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Assicurati di avere i seguenti prerequisiti:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words per la libreria .NET installata. Puoi scaricarlo dal sito Web ufficiale di Aspose o utilizzare il gestore di pacchetti NuGet per installarlo.
+- Un percorso di directory del documento in cui si trovano i documenti di origine e di destinazione.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Passaggio 2: apri i documenti di origine e di destinazione
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Apri i documenti di origine e di destinazione utilizzando il file`Document` costruttore di classe. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إلحاق أقسام من المستند المصدر بالمستند الوجهة
+## Passaggio 3: aggiungi sezioni dal documento di origine al documento di destinazione
 
- قم بالتكرار خلال جميع الأقسام في المستند المصدر واستورد كل قسم في المستند الوجهة باستخدام ملف`ImportNode` طريقة. ثم قم بإلحاق القسم الذي تم استيراده بالمستند الوجهة.
+ Passa attraverso tutte le sezioni nel documento di origine e importa ogni sezione nel documento di destinazione utilizzando il file`ImportNode` metodo. Quindi, aggiungi la sezione importata al documento di destinazione.
 
 ```csharp
 foreach (Section srcSection in srcDoc)
@@ -41,36 +41,36 @@ foreach (Section srcSection in srcDoc)
 }
 ```
 
-## الخطوة 4: احفظ المستند الوجهة
+## Passaggio 4: salvare il documento di destinazione
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Infine, salva il documento di destinazione modificato utilizzando il file`Save` metodo del`Document` oggetto.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند باستخدام Aspose.Words لـ .NET.
+Questo completa l'implementazione dell'aggiunta di un documento utilizzando Aspose.Words per .NET.
 
-### مثال على الكود المصدري لإلحاق المستند باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Accoda documento utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// تكرار خلال جميع الأقسام في المستند المصدر.
-	// عُقد الأقسام هي عناصر فرعية مباشرة لعقدة المستند حتى نتمكن من تعداد المستند.
+	// Passa in rassegna tutte le sezioni del documento di origine.
+	// I nodi di sezione sono figli immediati del nodo Documento, quindi possiamo semplicemente enumerare il Documento.
 	foreach (Section srcSection in srcDoc)
 	{
-		//لأننا نقوم بنسخ قسم من مستند إلى آخر ،
-		// مطلوب لاستيراد عقدة القسم في المستند الوجهة.
-		// يعمل هذا على ضبط أي مراجع خاصة بالمستند للأنماط والقوائم وما إلى ذلك.
+		//Poiché stiamo copiando una sezione da un documento a un altro,
+		// è necessario importare il nodo Sezione nel documento di destinazione.
+		// Questo regola eventuali riferimenti specifici del documento a stili, elenchi, ecc.
 		//
-		// يؤدي استيراد عقدة إلى إنشاء نسخة من العقدة الأصلية ، ولكن النسخة
-		// ss جاهزة لإدراجها في المستند الوجهة.
+		// L'importazione di un nodo crea una copia del nodo originale, ma la copia
+		// è pronto per essere inserito nel documento di destinazione.
 		Node dstSection = dstDoc.ImportNode(srcSection, true, ImportFormatMode.KeepSourceFormatting);
-		// يمكن الآن إلحاق عقدة القسم الجديدة بالمستند الوجهة.
+		// Ora il nuovo nodo di sezione può essere aggiunto al documento di destinazione.
 		dstDoc.AppendChild(dstSection);
 	}
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");

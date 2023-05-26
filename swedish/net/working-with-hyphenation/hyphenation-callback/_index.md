@@ -1,30 +1,30 @@
 ---
-title: رد اتصال الواصلة
-linktitle: رد اتصال الواصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام رد نداء الواصلة في Aspose.Words for .NET للتعامل مع الواصلة في الكلمات.
+title: Återuppringning med avstavning
+linktitle: Återuppringning med avstavning
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder återuppringning av avstavning i Aspose.Words för .NET för att hantera ordavstavning.
 type: docs
 weight: 10
 url: /sv/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية استخدام ميزة رد الاتصال في Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+I denna steg-för-steg handledning kommer vi att visa dig hur du använder avstavningsåteruppringningsfunktionen i Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
-## الخطوة 1: حفظ تذكير الواصلة
+## Steg 1: Spara avstavningspåminnelse
 
- أولاً ، سنقوم بتسجيل رد نداء الواصلة باستخدام مخصص`CustomHyphenationCallback` فصل. سيسمح لنا ذلك بالتعامل مع الواصلة وفقًا لقواعدنا الخاصة:
+ Först registrerar vi avstavningsåteruppringningen med en anpassad`CustomHyphenationCallback` klass. Detta gör att vi kan hantera ordavstavning enligt våra egna regler:
 
 ```csharp
 Hyphenation.Callback = new CustomHyphenationCallback();
 ```
 
- تأكد من أنك قمت بتنفيذ`CustomHyphenationCallback`فئة وفقًا لاحتياجاتك الخاصة.
+ Se till att du har implementerat`CustomHyphenationCallback`klass efter dina specifika behov.
 
-## الخطوة 2: تحميل المستند وتطبيق الواصلة
+## Steg 2: Ladda dokumentet och tillämpa avstavning
 
-بعد ذلك ، قم بتحميل المستند الخاص بك من الدليل المحدد وقم بوصل الكلمات باستخدام Aspose.Words:
+Ladda sedan ditt dokument från den angivna katalogen och avstava orden med Aspose.Words:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,9 +32,9 @@ Document document = new Document(dataDir + "German text.docx");
 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
 ```
 
-## الخطوة 3: معالجة أخطاء القاموس المفقودة
+## Steg 3: Hantera saknade ordboksfel
 
-في حالة فقد قاموس الواصلة ، سنكتشف الاستثناء المقابل ونعرض رسالة خطأ:
+Om en avstavningsordbok saknas kommer vi att fånga motsvarande undantag och visa ett felmeddelande:
 
 ```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
@@ -43,9 +43,9 @@ catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary")
 }
 ```
 
-## الخطوة 4: تنظيف وتعطيل تذكير الواصلة
+## Steg 4: Rensa och inaktivera avstavningspåminnelse
 
-أخيرًا ، للتنظيف وإيقاف تشغيل تذكير الواصلة ، قم بتنفيذ الخطوات التالية:
+Slutligen, för renlighet och för att stänga av avstavningspåminnelsen, utför följande steg:
 
 ```csharp
 finally
@@ -54,16 +54,16 @@ finally
 }
 ```
 
-يؤدي هذا إلى تنظيف وتعطيل تذكير الواصلة بعد الانتهاء من المعالجة.
+Detta rensar upp och inaktiverar avstavningspåminnelsen efter avslutad bearbetning.
 
-لذا ! لقد نجحت في استخدام رد نداء الواصلة في Aspose.Words for .NET.
+Så ! Du har framgångsrikt använt avstavningsuppringning i Aspose.Words för .NET.
 
-### نموذج التعليمات البرمجية المصدر لرد الاتصال الواصلة مع Aspose.Words for .NET
+### Exempel på källkod för återuppringning av avstavning med Aspose.Words för .NET
 
 ```csharp
 try
 {
-	 // تسجيل رد الاتصال الواصلة.
+	 // Registrera avstavningsuppringning.
 	 Hyphenation.Callback = new CustomHyphenationCallback();
 	 string dataDir = "YOUR DOCUMENT DIRECTORY";
 	 Document document = new Document(dataDir + "German text.docx");
@@ -80,4 +80,4 @@ finally
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
+Använd gärna den här koden i dina egna projekt och modifiera den för att passa dina specifika behov.

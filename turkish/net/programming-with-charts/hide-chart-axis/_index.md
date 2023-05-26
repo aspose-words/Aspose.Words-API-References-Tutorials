@@ -1,44 +1,44 @@
 ---
-title: إخفاء محور التخطيط
-linktitle: إخفاء محور التخطيط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إخفاء محور الرسم البياني في مستند باستخدام Aspose.Words for .NET. إخفاء المحور لعرض مخطط أوضح وأكثر تركيزًا.
+title: Grafik Eksenini Gizle
+linktitle: Grafik Eksenini Gizle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir belgede grafik eksenini nasıl gizleyeceğinizi öğrenin. Daha temiz ve daha odaklı bir grafik görüntüsü için ekseni gizleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/hide-chart-axis/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإخفاء محور المخطط في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات سلسلة وإخفاء محور المخطط.
+Bu eğitim, bir belgede grafik eksenini gizlemek için Aspose.Words for .NET'in nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve grafik ekseninin nasıl gizleneceğini gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Çıktı belgesinin kaydedileceği bir belge dizini yolu.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 2. Adım: Yeni bir belge oluşturun ve bir grafik ekleyin
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، أدخل مخططًا في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder`. في هذا المثال ، سنقوم بإدراج مخطط عمودي.
+ Ardından, kullanarak belgeye bir grafik ekleyin.`InsertChart` yöntemi`DocumentBuilder`. Bu örnekte, bir sütun grafiği ekleyeceğiz.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## 3. Adım: Seri verilerini grafiğe ekleyin
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف خمسة عناصر والقيم المقابلة لها.
+Grafiğe seri verileri ekleyin. Bu örnekte, beş öğe ve bunlara karşılık gelen değerleri ekleyeceğiz.
 
 ```csharp
 chart.Series.Clear();
@@ -47,30 +47,30 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## الخطوة 4: إخفاء محور المخطط
+## 4. Adım: Grafik eksenini gizleyin
 
- لإخفاء محور المخطط ، قم بالوصول إلى ملف`AxisY` خاصية الرسم البياني وتعيين`Hidden` ملكية ل`true`.
+ Grafik eksenini gizlemek için şuraya erişin:`AxisY` grafiğin özelliğini ayarlayın ve`Hidden` mülkiyet`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-في هذا المثال ، نقوم بإخفاء المحور ص في الرسم البياني.
+Bu örnekte, grafiğin Y eksenini gizleriz.
 
-## الخطوة 5: احفظ المستند
+## 5. Adım: Belgeyi kaydedin
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Son olarak, belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 ```
 
-هذا يكمل تنفيذ إخفاء محور الرسم البياني باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanarak grafik eksenini gizleme uygulamasını tamamlar.
 
-### مثال على شفرة المصدر لإخفاء محور الرسم البياني باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Hide Chart Axis için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

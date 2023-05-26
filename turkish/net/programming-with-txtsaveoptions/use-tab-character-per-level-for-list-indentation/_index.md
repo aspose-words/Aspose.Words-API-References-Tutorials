@@ -1,32 +1,32 @@
 ---
-title: استخدم حرف الجدولة لكل مستوى للمسافة البادئة للقائمة
-linktitle: استخدم حرف الجدولة لكل مستوى للمسافة البادئة للقائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام قوائم المسافات البادئة مع ميزة حروف الجدولة في Aspose.Words for .NET. وفر الوقت وحسّن سير عملك باستخدام هذه الميزة القوية.
+title: Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan
+linktitle: Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'te sekme karakterleriyle girinti listelerini nasıl kullanacağınızı öğrenin. Bu güçlü özellikle zaman kazanın ve iş akışınızı iyileştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لميزة "استخدام حرف جدولة واحد لكل مستوى من أجل المسافة البادئة للقائمة" مع Aspose.Words for .NET. تتيح لك هذه الميزة تطبيق أحرف الجدولة لوضع مسافة بادئة للقوائم في كل مستوى ، مما يوفر قدرًا أكبر من المرونة والتحكم في مظهر المستندات الخاصة بك.
+Bu eğitimde, Aspose.Words for .NET ile "Liste girintisi için seviye başına bir sekme karakteri kullan" özelliği için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, her düzeyde girintili listeler için sekme karakterleri uygulamanıza izin vererek belgelerinizin görünümü üzerinde daha fazla esneklik ve kontrol sağlar.
 
-## الخطوة الأولى: تهيئة البيئة
+## 1. Adım: Ortamı ayarlama
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
-## الخطوة 2: إنشاء المستند والمولد
+## 2. Adım: Belgeyi ve oluşturucuyu oluşturma
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- في هذه الخطوة ، نقوم بإنشاء ملف`Document` كائن وما يرتبط بها`DocumentBuilder` هدف. ستسمح لنا هذه الكائنات بمعالجة وإنشاء وثيقتنا.
+ Bu adımda yeni bir tane oluşturuyoruz.`Document` nesne ve ilişkili`DocumentBuilder` nesne. Bu nesneler, belgemizi manipüle etmemize ve oluşturmamıza izin verecektir.
 
-## الخطوة 3: إنشاء قائمة بثلاثة مستويات من المسافة البادئة
+## 3. Adım: Üç girinti düzeyine sahip bir liste oluşturma
 
 ```csharp
 builder.ListFormat.ApplyNumberDefault();
@@ -37,9 +37,9 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
- في هذه الخطوة ، نطبق التنسيق الافتراضي لأرقام القائمة باستخدام امتداد`ApplyNumberDefault()` طريقة منسق القائمة. بعد ذلك ، نضيف ثلاثة عناصر إلى قائمتنا باستخدام أداة إنشاء المستندات`Writeln()` و`Write()` طُرق. نحن نستخدم ال`ListIndent()` طريقة لزيادة المسافة البادئة في كل مستوى.
+ Bu adımda, liste numaralarının varsayılan biçimini kullanarak uygularız.`ApplyNumberDefault()` liste biçimlendirici yöntemi. Ardından, belge oluşturucuyu kullanarak listemize üç öğe ekliyoruz.`Writeln()` Ve`Write()` yöntemler. biz kullanıyoruz`ListIndent()` girintiyi her düzeyde artırma yöntemi.
 
-## الخطوة 4: تكوين خيارات التسجيل
+## 4. Adım: Kayıt seçeneklerini yapılandırın
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -47,30 +47,30 @@ saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- في هذه الخطوة ، نقوم بتهيئة الخيارات لحفظ المستند. نخلق ملف`TxtSaveOptions` كائن وتعيين`ListIndentation.Count`الخاصية إلى 1 لتحديد عدد أحرف الجدولة لكل مستوى مسافة بادئة. قمنا أيضًا بتعيين ملف`ListIndentation.Character` إلى "\ t" لتحديد أننا نريد استخدام أحرف الجدولة.
+ Bu adımda, belgeyi kaydetme seçeneklerini yapılandırıyoruz. yeni bir tane yaratıyoruz`TxtSaveOptions` nesne ve ayarlayın`ListIndentation.Count`girinti düzeyi başına sekme karakteri sayısını belirtmek için özelliği 1 olarak değiştirin. biz de ayarlıyoruz`ListIndentation.Character` sekme karakterlerini kullanmak istediğimizi belirtmek için özelliği '\t' olarak değiştirin.
 
-## الخطوة 5: احفظ المستند
+## 5. Adım: Belgeyi kaydedin
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نقوم بحفظ المستند بخيارات الحفظ المحددة. نحن نستخدم ال`Save()` طريقة المستند التي تمر بالمسار الكامل لملف الإخراج وخيارات الحفظ.
+ Bu son adımda, belirtilen kaydetme seçenekleriyle belgeyi kaydediyoruz. biz kullanıyoruz`Save()` çıktı dosyasının tam yolunu geçiren belgenin yöntemi ve kaydetme seçenekleri.
 
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لإنشاء مستند به مسافة بادئة للقائمة باستخدام أحرف الجدولة. سيتم حفظ ملف الإخراج في الدليل المحدد باسم "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt".
+Artık sekme karakterlerini kullanarak liste girintili bir belge oluşturmak için kaynak kodunu çalıştırabilirsiniz. Çıktı dosyası "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt" adıyla belirtilen dizine kaydedilecektir.
 
-### مثال على مصدر التعليمات البرمجية لميزة استخدام حرف جدولة واحد لكل مستوى لميزة المسافة البادئة للقائمة مع Aspose.Words for .NET:
+### Aspose.Words for .NET ile Liste girintisi için seviye başına bir sekme karakteri kullan özelliği için örnek kod kaynağı:
 
 ```csharp
 
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+// Üç girinti düzeyi içeren bir liste oluşturun
 builder.ListFormat.ApplyNumberDefault();
 builder. Writen("Element 1");
 builder.ListFormat.ListIndent();
@@ -86,4 +86,4 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListInde
 
 ```
 
-الآن بعد أن انتهيت من إنشاء المستند مع المسافة البادئة للقائمة باستخدام أحرف الجدولة ، يمكنك استخدام Markdown لتنسيق محتوى مقالتك. تأكد من استخدام علامات التنسيق المناسبة لتمييز العناوين والعناوين الفرعية وشفرة المصدر المضمنة.
+Sekme karakterlerini kullanarak liste girintili belgenizi oluşturmayı bitirdiğinize göre, makale içeriğinizi biçimlendirmek için Markdown'u kullanabilirsiniz. Başlıkları, altyazıları ve dahil edilen kaynak kodunu vurgulamak için uygun biçimlendirme etiketlerini kullandığınızdan emin olun.

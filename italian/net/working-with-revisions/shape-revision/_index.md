@@ -1,18 +1,18 @@
 ---
-title: مراجعة الشكل
-linktitle: مراجعة الشكل
-second_title: Aspose.Words لمراجع .NET API
-description: راجع الأشكال في مستند Word باستخدام Aspose.Words for .NET.
+title: Revisione della forma
+linktitle: Revisione della forma
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Rivedi le forme in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-revisions/shape-revision/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية إجراء مراجعات للأشكال في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+In questa guida dettagliata, ti illustreremo come apportare revisioni alle forme in un documento di Word utilizzando Aspose.Words per .NET. Ti forniremo il codice sorgente completo e ti mostreremo come formattare l'output del markdown.
 
-## الخطوة 1: إنشاء المستند وإضافة الأشكال
+## Passaggio 1: creazione del documento e aggiunta di forme
 
-تتمثل الخطوة الأولى في إنشاء مستند جديد وإضافة أشكال.
+Il primo passo è creare un nuovo documento e aggiungere forme.
 
 ```csharp
 Document doc = new Document();
@@ -25,9 +25,9 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## الخطوة 2: تتبع المراجعات وإضافة شكل آخر
+## Passaggio 2: tenere traccia delle revisioni e aggiungere un'altra forma
 
-سنقوم بتشغيل تتبع المراجعة وإضافة شكل آخر.
+Attiveremo il monitoraggio delle revisioni e aggiungeremo un'altra forma.
 
 ```csharp
 doc.StartTrackRevisions("John Doe");
@@ -39,9 +39,9 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## الخطوة 3: احصل على مجموعة الأشكال وتحقق من المراجعات
+## Passaggio 3: ottieni la raccolta di forme e controlla le revisioni
 
-سنحصل على مجموعة الأشكال من المستند ونتحقق من المراجعات المرتبطة بكل شكل.
+Otterremo la raccolta di forme dal documento e controlleremo le revisioni associate a ciascuna forma.
 
 ```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
@@ -54,9 +54,9 @@ Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
 Assert.True(shapes[1].IsInsertRevision);
 ```
 
-## الخطوة 4: التحقق من تنقيحات نقل الشكل
+## Passaggio 4: controllo delle revisioni dello spostamento della forma
 
-سنقوم بتحميل مستند موجود يحتوي على مراجعات إزاحة الشكل والتحقق من المراجعات المرتبطة.
+Stiamo per caricare un documento esistente contenente revisioni di spostamento della forma e controllare le revisioni associate.
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");
@@ -71,15 +71,15 @@ Assert.True(shapes[1].IsMoveFromRevision);
 Assert. False(shapes[1].IsMoveToRevision);
 ```
 
-### مثال على شفرة المصدر لـ Shape Revision باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Shape Revision utilizzando Aspose.Words per .NET
 
-فيما يلي رمز المصدر الكامل لإجراء مراجعات على الأشكال في مستند باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente completo per apportare modifiche alle forme in un documento utilizzando Aspose.Words per .NET:
 
 ```csharp
 
 	Document doc = new Document();
 
-	// قم بإدراج شكل مضمن بدون تعقب المراجعات.
+	// Inserisci una forma in linea senza tenere traccia delle revisioni.
 	Assert.False(doc.TrackRevisions);
 	Shape shape = new Shape(doc, ShapeType.Cube);
 	shape.WrapType = WrapType.Inline;
@@ -87,7 +87,7 @@ Assert. False(shapes[1].IsMoveToRevision);
 	shape.Height = 100.0;
 	doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-	// بدء تعقب المراجعات ثم قم بإدراج شكل آخر.
+	// Inizia a tenere traccia delle revisioni e quindi inserisci un'altra forma.
 	doc.StartTrackRevisions("John Doe");
 	shape = new Shape(doc, ShapeType.Sun);
 	shape.WrapType = WrapType.Inline;
@@ -95,33 +95,33 @@ Assert. False(shapes[1].IsMoveToRevision);
 	shape.Height = 100.0;
 	doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-	// احصل على مجموعة أشكال المستند التي تتضمن الشكلين اللذين أضفناهما فقط.
+	// Ottieni la raccolta di forme del documento che include solo le due forme che abbiamo aggiunto.
 	List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
 	Assert.AreEqual(2, shapes.Count);
 
-	// قم بإزالة الشكل الأول.
+	// Rimuovi la prima forma.
 	shapes[0].Remove();
 
-	// نظرًا لأننا أزلنا هذا الشكل أثناء تعقب التغييرات ، فإن الشكل يعد بمثابة مراجعة حذف.
+	// Poiché abbiamo rimosso quella forma durante il rilevamento delle modifiche, la forma conta come una revisione di eliminazione.
 	Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
 	Assert.True(shapes[0].IsDeleteRevision);
 
-	// وقمنا بإدخال شكل آخر أثناء تتبع التغييرات ، بحيث يتم احتساب هذا الشكل كمراجعة إدراج.
+	// E abbiamo inserito un'altra forma durante il monitoraggio delle modifiche, in modo che la forma venga conteggiata come una revisione dell'inserimento.
 	Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
 	Assert.True(shapes[1].IsInsertRevision);
 
-	//يحتوي المستند على شكل واحد تم نقله ، لكن مراجعات نقل الشكل سيكون لها مثيلين لهذا الشكل.
-	// سيكون أحدهما الشكل في وجهة وصوله والآخر سيكون الشكل في موقعه الأصلي.
+	//Il documento ha una forma che è stata spostata, ma le revisioni di spostamento forma avranno due istanze di quella forma.
+	// Uno sarà la forma nella sua destinazione di arrivo e l'altro sarà la forma nella sua posizione originale.
 	doc = new Document(MyDir + "Revision shape.docx");
 	
 	shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
 	Assert.AreEqual(2, shapes.Count);
 
-	// هذه هي الخطوة إلى المراجعة ، وكذلك الشكل في وجهة وصولها.
+	// Questo è il passaggio alla revisione, anche la forma al suo arrivo a destinazione.
 	Assert.False(shapes[0].IsMoveFromRevision);
 	Assert.True(shapes[0].IsMoveToRevision);
 
-	// هذا هو الانتقال من المراجعة ، وهو الشكل الموجود في موقعه الأصلي.
+	// Questo è lo spostamento dalla revisione, che è la forma nella sua posizione originale.
 	Assert.True(shapes[1].IsMoveFromRevision);
 	Assert.False(shapes[1].IsMoveToRevision);
             

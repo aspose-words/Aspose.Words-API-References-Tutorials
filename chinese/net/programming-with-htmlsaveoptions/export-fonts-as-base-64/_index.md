@@ -1,55 +1,55 @@
 ---
-title: تصدير الخطوط كقاعدة 64
-linktitle: تصدير الخطوط كقاعدة 64
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتصدير خطوط 64 أساسية عند حفظ مستند باستخدام Aspose.Words for .NET.
+title: 将字体导出为 Base 64
+linktitle: 将字体导出为 Base 64
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 保存文档时导出 base 64 字体的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتصدير 64 خطًا أساسيًا باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تصدير الخطوط كبيانات أساسية 64 عند حفظ مستند بتنسيق HTML.
+在本教程中，我们将引导您通过 C# 源代码使用 Aspose.Words for .NET 导出 base 64 字体。此功能允许您在以 HTML 格式保存文档时将字体导出为 base 64 数据。
 
-## الخطوة 1: إعداد المشروع
+## 第 1 步：项目设置
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+首先，在您喜欢的 IDE 中创建一个新的 C# 项目。确保在您的项目中引用了 Aspose.Words for .NET 库。
 
-## الخطوة الثانية: تحميل المستند
+## 第 2 步：装入文档
 
-في هذه الخطوة ، سنقوم بتحميل المستند للتصدير. استخدم الكود التالي لتحميل المستند من دليل محدد:
+在此步骤中，我们将加载要导出的文档。使用以下代码从指定目录加载文档：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- هذا الرمز ينشئ مثيل`Document` عن طريق تحميل المستند من الدليل المحدد.
+此代码创建一个实例`Document`通过从指定目录加载文档。
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي بتنسيق HTML
+## 第 3 步：配置 HTML 备份选项
 
-سنقوم الآن بتكوين خيارات حفظ HTML لتصدير 64 خطًا أساسيًا. استخدم الكود التالي:
+现在我们将配置 HTML 保存选项以导出 base 64 字体。使用以下代码：
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions` ومجموعات`ExportFontsAsBase64` ل`true` لتحديد أن الخطوط يجب أن يتم تصديرها كبيانات أساسية 64 عند الحفظ بتنسيق HTML.
+此代码创建一个实例`HtmlSaveOptions`并设置`ExportFontsAsBase64`到`true`指定在另存为 HTML 时应将字体导出为 base 64 数据。
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## 第 4 步：将文档转换并保存为 HTML
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+最后，我们将使用之前配置的 HTML 保存选项将文档转换为 HTML。使用以下代码：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML ويحفظه في ملف بالخطوط المصدرة كبيانات أساسية 64.
+此代码将文档转换为 HTML 并将其保存到一个文件，其中字体导出为 base 64 数据。
 
-### مثال على شفرة المصدر لـ Export Fonts As Base 64 باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 将字体导出为 Base 64 的示例源代码
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -59,6 +59,6 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOp
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+请务必在`dataDir`多变的。
 
-لقد تعلمت الآن كيفية تصدير خطوط أساسية 64 عند حفظ مستند بتنسيق HTML باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تصدير الخطوط بأمان ودمجها في مستندات HTML الخاصة بك.
+您现在已经了解了如何在使用 Aspose.Words for .NET 将文档保存为 HTML 时导出 base 64 字体。按照本教程中提供的分步指南，您可以轻松安全地导出字体并将其嵌入到 HTML 文档中。

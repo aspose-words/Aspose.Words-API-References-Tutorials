@@ -1,33 +1,33 @@
 ---
-title: المثيل الافتراضي لإعدادات الخط
-linktitle: المثيل الافتراضي لإعدادات الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET.
+title: Instance par défaut des paramètres de police
+linktitle: Instance par défaut des paramètres de police
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Dans ce didacticiel, découvrez comment configurer les paramètres de police par défaut dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/font-settings-default-instance/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تسمح لك إعدادات الخط الافتراضية بتحديد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Dans ce didacticiel, nous vous expliquerons comment configurer les paramètres de police par défaut dans un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. Les paramètres de police par défaut vous permettent de spécifier les sources de police utilisées lors du chargement et du rendu des documents. Nous vous guiderons étape par étape pour vous aider à comprendre et à implémenter le code dans votre projet .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Conditions préalables
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+- Une connaissance pratique du langage de programmation C#
+- La bibliothèque Aspose.Words pour .NET installée dans votre projet
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+ Tout d'abord, vous devez définir le chemin du répertoire vers l'emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تكوين إعدادات الخط الافتراضية
- بعد ذلك ، سننشئ مثيلًا لـ`FontSettings` استخدام`FontSettings.DefaultInstance`، ثم سنحدد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها. في هذا المثال ، نستخدم مصدر خط نظام ومصدر خط مجلد.
+## Étape 2 : Configurer les paramètres de police par défaut
+ Ensuite, nous allons créer une instance de`FontSettings` en utilisant`FontSettings.DefaultInstance`puis nous spécifierons les sources de polices utilisées lors du chargement et du rendu des documents. Dans cet exemple, nous utilisons une source de police système et une source de police de dossier.
 
 ```csharp
-// تكوين إعدادات الخط الافتراضية
+// Configurer les paramètres de police par défaut
 FontSettings fontSettings = FontSettings.DefaultInstance;
 fontSettings.SetFontsSources(new FontSourceBase[]
 {
@@ -36,21 +36,21 @@ new FolderFontSource("C:\\MyFonts\\", true)
 });
 ```
 
-## الخطوة 3: تحميل المستند مع إعدادات الخط
- الآن سنقوم بتحميل المستند باستخدام`LoadOptions` وتحديد إعدادات الخط المراد استخدامها.
+## Étape 3 : Téléchargez le document avec les paramètres de police
+ Nous allons maintenant charger le document en utilisant`LoadOptions` et en spécifiant les paramètres de police à utiliser.
 
 ```csharp
-// قم بتحميل المستند بإعدادات الخط
+// Charger le document avec les paramètres de police
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.FontSettings = fontSettings;
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
 
-### نموذج كود مصدر لإعدادات الخط الافتراضي باستخدام Aspose.Words for .NET 
+### Exemple de code source pour l'instance par défaut des paramètres de police à l'aide d'Aspose.Words pour .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;
@@ -65,5 +65,5 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET. من خلال تحديد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها ، يمكنك التحكم في مظهر الخطوط في مستنداتك. لا تتردد في استخدام هذه الميزة لتخصيص إعدادات الخط في مشاريعك.
+## Conclusion
+Dans ce didacticiel, nous avons vu comment configurer les paramètres de police par défaut dans un document Word avec Aspose.Words pour .NET. En spécifiant les sources de polices utilisées lors du chargement et du rendu des documents, vous pouvez contrôler l'apparence des polices dans vos documents. N'hésitez pas à utiliser cette fonctionnalité pour personnaliser les paramètres de police dans vos projets.

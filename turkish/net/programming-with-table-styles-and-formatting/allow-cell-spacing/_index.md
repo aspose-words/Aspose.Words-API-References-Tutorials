@@ -1,63 +1,63 @@
 ---
-title: السماح بتباعد الخلايا
-linktitle: السماح بتباعد الخلايا
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة للسماح بتباعد الخلايا باستخدام Aspose.Words for .NET.
+title: Hücre Aralığına İzin Ver
+linktitle: Hücre Aralığına İzin Ver
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak hücre aralığına izin vermek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-styles-and-formatting/allow-cell-spacing/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة للسماح بتباعد الخلايا في الجداول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # الذي ينجز هذه المهمة ونقدم دليلاً شاملاً لمساعدتك على فهمها وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، سيكون لديك فهم واضح لكيفية التعامل مع تنسيق الجدول في مستندات Word باستخدام Aspose.Words for .NET.
+Bu eğitimde, Aspose.Words for .NET kullanarak tablolarda hücre aralığına izin verme sürecini adım adım anlatacağız. Bu görevi yerine getiren C# kaynak kodunu açıklayacağız ve onu anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sağlayacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak Word belgelerinizdeki tablo biçimlendirmesini nasıl değiştireceğinizi net bir şekilde anlayacaksınız.
 
-## الخطوة 1: قم بتعيين دليل المستندات
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. هذا هو الموقع حيث يتم تخزين مستند Word الخاص بك. استبدل "دليل المستندات" بالمسار المناسب.
+## 1. Adım: Belge Dizinini Ayarlayın
+Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. Bu, Word belgenizin depolandığı konumdur. "BELGE DİZİNİNİZİ" uygun yolla değiştirin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- بعد ذلك ، تحتاج إلى تحميل مستند Word في مثيل لـ`Document` فصل.
+## 2. Adım: Belgeyi Yükleyin
+ Ardından, Word belgesini bir örneğine yüklemeniz gerekir.`Document` sınıf.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: الوصول إلى الجدول
- للسماح بتباعد الخلايا ، نحتاج إلى الوصول إلى الجدول داخل المستند. ال`Table` يمثل class جدولًا في Aspose.Words.
+## 3. Adım: Tabloya Erişin
+ Hücre aralığına izin vermek için, belge içindeki tabloya erişmemiz gerekir. bu`Table` class, Aspose.Words'te bir tabloyu temsil eder.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## الخطوة 4: تفعيل تباعد الخلايا
- الآن ، يمكننا تمكين تباعد الخلايا عن طريق تعيين`AllowCellSpacing`ممتلكات الجدول ل`true`. تحدد هذه الخاصية ما إذا كان يمكن أن يحتوي الجدول على تباعد خلايا.
+## 4. Adım: Hücre Aralığını Etkinleştirin
+ Şimdi, ayarlayarak hücre aralığını etkinleştirebiliriz.`AllowCellSpacing`tablonun özelliği`true`. Bu özellik, tablonun hücre aralığına sahip olup olmayacağını belirler.
 
 ```csharp
 table.AllowCellSpacing = true;
 ```
 
-## الخطوة 5: تعيين تباعد الخلايا
- لتحديد مقدار المسافة بين الخلايا ، نستخدم الامتداد`CellSpacing` خاصية الجدول. في هذا المثال ، قمنا بتعيين تباعد الخلايا على نقطتين.
+## Adım 5: Hücre Aralığını Ayarlayın
+ Hücreler arasındaki boşluk miktarını belirtmek için,`CellSpacing` tablonun özelliği. Bu örnekte, hücre aralığını 2 nokta olarak ayarladık.
 
 ```csharp
 table. CellSpacing = 2;
 ```
 
-## الخطوة 6: احفظ المستند المعدل
-أخيرًا ، نحفظ المستند المعدل في ملف. يمكنك اختيار اسم وموقع مناسبين للمستند الناتج.
+## 6. Adım: Değiştirilen Belgeyi Kaydedin
+Son olarak, değiştirilen belgeyi bir dosyaya kaydediyoruz. Çıktı belgesi için uygun bir ad ve konum seçebilirsiniz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 ```
 
-تهانينا! لقد نجحت في السماح بتباعد الخلايا في الجداول باستخدام Aspose.Words for .NET.
+Tebrikler! Aspose.Words for .NET kullanarak tablolarda hücre aralığına başarıyla izin verdiniz.
 
-### عينة من التعليمات البرمجية المصدر لـ Allow Cell Spacing باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Hücre Boşluğuna İzin Ver için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -67,5 +67,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تمكين تباعد الخلايا في الجداول باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة دمج هذه الوظيفة في مشاريع C # الخاصة بك. تعد معالجة تنسيق الجدول جانبًا أساسيًا من جوانب معالجة المستندات و Aspose. توفر الكلمات واجهة برمجة تطبيقات قوية ومرنة لتحقيق ذلك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية متطلبات التنسيق المحددة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak tablolarda hücre aralığını nasıl etkinleştireceğimizi öğrendik. Adım adım kılavuzu izleyerek bu işlevi C# projelerinize kolayca dahil edebilirsiniz. Tablo formatını değiştirmek, belge işlemenin ve Aspose'un önemli bir yönüdür. Words, bunu başarmak için güçlü ve esnek bir API sağlar. Bu bilgiyle, Word belgelerinizin görsel sunumunu geliştirebilir ve belirli biçimlendirme gereksinimlerini karşılayabilirsiniz.

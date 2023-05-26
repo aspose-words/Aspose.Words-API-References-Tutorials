@@ -1,23 +1,23 @@
 ---
-title: أعمدة الجدول المرجعية
-linktitle: أعمدة الجدول المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية وضع إشارة مرجعية على عمود جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Colonnes du tableau des signets
+linktitle: Colonnes du tableau des signets
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à ajouter un signet à une colonne de tableau dans un document Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة أعمدة جدول الإشارات المرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة وضع إشارة مرجعية على عمود معين من الجدول في مستند Word والوصول إلى محتوى هذا العمود.
+Dans cet article, nous allons explorer le code source C# ci-dessus pour comprendre comment utiliser la fonction Bookmark Table Columns dans la bibliothèque Aspose.Words pour .NET. Cette fonctionnalité vous permet de mettre en signet une colonne spécifique d'un tableau dans un document Word et d'accéder au contenu de cette colonne.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Connaissance de base du langage C#.
+- Environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
-## الخطوة الأولى: إنشاء الجدول
+## Etape 1 : Création du tableau
 
- قبل إنشاء إشارة مرجعية على عمود جدول ، يجب علينا أولاً إنشاء الجدول باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نقوم بإنشاء جدول من صفين وعمودين:
+ Avant de créer un signet sur une colonne de tableau, il faut d'abord créer le tableau à l'aide d'un`DocumentBuilder` objet. Dans notre exemple, nous créons un tableau avec deux lignes et deux colonnes :
 
 ```csharp
 builder. StartTable();
@@ -43,17 +43,17 @@ builder. EndRow();
 builder. EndTable();
 ```
 
-## الخطوة 2: إنشاء إشارة مرجعية للعمود
+## Étape 2 : Création du signet de la colonne
 
- نحن نستخدم ال`StartBookmark`طريقة لإنشاء إشارة مرجعية على عمود معين من الجدول. في مثالنا ، نستخدم اسم "MyBookmark" للإشارة المرجعية:
+ Nous utilisons le`StartBookmark`méthode pour créer un signet sur une colonne spécifique de la table. Dans notre exemple, nous utilisons le nom "MyBookmark" pour le signet :
 
 ```csharp
 builder. StartBookmark("MyBookmark");
 ```
 
-## الخطوة 3: الوصول إلى محتوى العمود
+## Étape 3 : Accéder au contenu de la colonne
 
- نتصفح جميع الإشارات المرجعية في المستند ونعرض أسمائها. إذا كانت الإشارة المرجعية عبارة عن عمود ، فإننا نصل إلى محتويات ذلك العمود باستخدام فهرس العمود وملف`GetText` طريقة:
+ Nous parcourons tous les signets du document et affichons leurs noms. Si un signet est une colonne, nous accédons au contenu de cette colonne en utilisant l'index de colonne et le`GetText` méthode:
 
 ```csharp
 foreach (Bookmark
@@ -70,9 +70,9 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
 }
 ```
 
-### مثال على شفرة المصدر لأعمدة جدول الإشارات باستخدام Aspose.Words for .NET
+### Exemple de code source pour les colonnes de table de signets à l'aide de Aspose.Words pour .NET
 
-إليك نموذج شفرة المصدر الكامل لتوضيح إنشاء إشارة مرجعية في عمود الجدول باستخدام Aspose.Words for .NET:
+Voici l'exemple de code source complet pour illustrer la création d'un signet sur une colonne de table à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
 
@@ -120,6 +120,6 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
         
 ```
 
-## خاتمة
+## Conclusion
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة أعمدة جدول الإشارات المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لوضع إشارة مرجعية على عمود معين من الجدول في مستند Word والانتقال إلى محتويات هذا العمود.
+Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonction Bookmark Table Columns d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour mettre en signet une colonne spécifique d'un tableau dans un document Word et accéder au contenu de cette colonne.

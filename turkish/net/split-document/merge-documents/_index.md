@@ -1,42 +1,42 @@
 ---
-title: دمج المستندات
-linktitle: دمج المستندات
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح كود مصدر C # لميزة دمج المستندات في Aspose.Words for .NET
+title: Belgeleri Birleştir
+linktitle: Belgeleri Birleştir
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'in Belgeleri Birleştir özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz
 type: docs
 weight: 10
 url: /tr/net/split-document/merge-documents/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية دمج مستندات Word متعددة باستخدام ميزة دمج المستندات في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم التعليمات البرمجية المصدر والحصول على مستند مدمج يحتوي على كافة المستندات المصدر.
+Bu öğreticide, Aspose.Words for .NET'in Belgeleri Birleştir özelliğini kullanarak birden çok Word belgesini nasıl birleştireceğinizi size göstereceğiz. Kaynak kodunu anlamak ve tüm kaynak belgeleri içeren birleştirilmiş bir belge elde etmek için aşağıdaki adımları izleyin.
 
-## الخطوة 1: ابحث عن المستندات المراد دمجها
+## 1. Adım: Birleştirilecek belgeleri arayın
 
-قبل دمج المستندات ، نحتاج إلى تحديد موقع المستندات المصدر المراد دمجها. إليك الطريقة:
+Belgeleri birleştirmeden önce, birleştirilecek kaynak belgeleri bulmamız gerekiyor. İşte nasıl:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
-// ابحث عن المستندات المراد دمجها.
+// Birleştirilecek belgeleri arayın.
 FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
 .GetFileSystemInfos("SplitDocument.PageParPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
 string sourceDocumentPath =
 Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.TopDirectoryOnly)[0];
 ```
 
-## الخطوة 2: دمج المستندات
+## 2. Adım: Belgeleri birleştirin
 
-سنقوم الآن بدمج المستندات واحدة تلو الأخرى لإنشاء مستند مدمج نهائي. إليك الطريقة:
+Şimdi son birleştirilmiş belgeyi oluşturmak için belgeleri tek tek birleştireceğiz. İşte nasıl:
 
 ```csharp
-// افتح الجزء الأول من المستند الناتج.
+// Ortaya çıkan belgenin ilk bölümünü açın.
 Document sourceDoc = new Document(sourceDocumentPath);
 
-// قم بإنشاء مستند ناتج جديد.
+// Sonuç olarak yeni bir belge oluşturun.
 Document mergedDoc = new Document();
 DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-// دمج المستندات واحدة تلو الأخرى.
+// Belgeleri tek tek birleştirin.
 foreach(FileSystemInfo documentPath in documentPaths)
 {
 if (documentPath.FullName == sourceDocumentPath)
@@ -50,28 +50,28 @@ sourceDoc = new Document(documentPath.FullName);
 mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
 
-### مثال على شفرة المصدر لدمج المستندات باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Belgeleri Birleştirme için örnek kaynak kodu
 
-فيما يلي رمز المصدر الكامل لميزة دمج المستندات في Aspose.Words for .NET:
+Aspose.Words for .NET'in Belgeleri Birleştir özelliğinin tam kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// البحث عن المستندات باستخدام الدمج.
+	// Birleştirme için kullanarak belgeleri bulun.
 	FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
 		.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
 	string sourceDocumentPath =
 		Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
 
-	// افتح الجزء الأول من المستند الناتج.
+	// Ortaya çıkan belgenin ilk bölümünü açın.
 	Document sourceDoc = new Document(sourceDocumentPath);
 
-	// قم بإنشاء مستند ناتج جديد.
+	// Sonuç olarak yeni bir belge oluşturun.
 	Document mergedDoc = new Document();
 	DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-	// دمج أجزاء المستند واحدًا تلو الآخر.
+	// Belge parçalarını birer birer birleştirin.
 	foreach (FileSystemInfo documentPath in documentPaths)
 	{
 		if (documentPath.FullName == sourceDocumentPath)

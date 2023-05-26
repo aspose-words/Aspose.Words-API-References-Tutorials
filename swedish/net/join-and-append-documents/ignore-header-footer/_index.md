@@ -1,64 +1,64 @@
 ---
-title: تجاهل رأس تذييل الصفحة
-linktitle: تجاهل رأس تذييل الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند مع تجاهل محتوى الرأس والتذييل باستخدام Aspose.Words for .NET.
+title: Ignorera sidhuvud
+linktitle: Ignorera sidhuvud
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du lägger till ett dokument samtidigt som du ignorerar sidhuvud och sidfotsinnehåll med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/ignore-header-footer/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق مستند مع تجاهل محتوى الرأس والتذييل. يوضح كود المصدر المقدم كيفية إعداد خيارات تنسيق الاستيراد لاستبعاد الرأس والتذييل أثناء عملية الإلحاق.
+Den här handledningen förklarar hur du använder Aspose.Words för .NET för att lägga till ett dokument samtidigt som du ignorerar sidhuvudet och sidfotens innehåll. Den medföljande källkoden visar hur du ställer in importformatalternativen för att utesluta sidhuvudet och sidfoten under tilläggsprocessen.
 
-## الخطوة 1: قم بإعداد المشروع
+## Steg 1: Konfigurera projektet
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Se till att du har följande förutsättningar:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den från den officiella Aspose-webbplatsen eller använda NuGet-pakethanteraren för att installera den.
+- En dokumentkatalogsökväg där käll- och måldokumenten finns.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Steg 2: Öppna käll- och måldokumenten
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Öppna käll- och måldokumenten med hjälp av`Document` klass konstruktör. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDocument = new Document(dataDir + "Document source.docx");
 Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إعداد خيارات تنسيق الاستيراد
+## Steg 3: Ställ in alternativ för importformat
 
- قم بإنشاء مثيل لـ`ImportFormatOptions` فئة وضبط`IgnoreHeaderFooter` ملكية ل`false`. يضمن ذلك تضمين محتوى الرأس والتذييل أثناء عملية الإلحاق.
+ Skapa en instans av`ImportFormatOptions` klass och ställ in`IgnoreHeaderFooter` egendom till`false`. Detta säkerställer att sidhuvudet och sidfotens innehåll ingår under tilläggsprocessen.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بالمستند الوجهة
+## Steg 4: Lägg till källdokumentet till måldokumentet
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.KeepSourceFormatting` كمعامل ثاني وخيارات تنسيق الاستيراد كمعامل ثالث.
+ Använd`AppendDocument` metod för måldokumentet för att lägga till källdokumentet. Passera`ImportFormatMode.KeepSourceFormatting` som den andra parametern och importformatalternativen som den tredje parametern.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
 ```
 
-## الخطوة 5: احفظ المستند الوجهة
+## Steg 5: Spara måldokumentet
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Slutligen sparar du det ändrade måldokumentet med hjälp av`Save` metod för`Document` objekt.
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند مع تجاهل محتوى الرأس والتذييل باستخدام Aspose.Words for .NET.
+Detta slutför implementeringen av att lägga till ett dokument samtidigt som innehållet i sidhuvudet och sidfoten ignoreras med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لـ Ignore Header Footer باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Ignorera sidfot med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

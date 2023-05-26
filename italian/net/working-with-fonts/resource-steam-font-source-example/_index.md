@@ -1,50 +1,50 @@
 ---
-title: مثال مصدر خط Steam
-linktitle: مثال مصدر خط Steam
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام مصدر خط تدفق الموارد لتحميل الخطوط المخصصة في Aspose.Words for .NET.
+title: Risorsa Fonte di font Steam Esempio
+linktitle: Risorsa Fonte di font Steam Esempio
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come utilizzare Resource Stream Font Source per caricare font personalizzati in Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/resource-steam-font-source-example/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام مصدر خط تدفق الموارد مع Aspose.Words for .NET. يتيح لك مصدر الخط هذا تحميل الخطوط من تدفق الموارد ، والذي يمكن أن يكون مفيدًا عندما تريد دمج الخطوط المخصصة في تطبيقك.
+In questo tutorial, ti illustreremo come utilizzare Resource Flow Font Source con Aspose.Words per .NET. Questa fonte di font ti consente di caricare font da un flusso di risorse, che può essere utile quando vuoi incorporare font personalizzati nella tua applicazione.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti elementi:
+- Conoscenza operativa del linguaggio di programmazione C#
+- La libreria Aspose.Words per .NET installata nel tuo progetto
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+ Innanzitutto, devi impostare il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند وتعيين مصدر خط تدفق الموارد
- بعد ذلك ، سنقوم بتحميل المستند باستخدام ملف`Document` فئة وتعيين مصدر خط تدفق الموارد باستخدام`FontSettings.DefaultInstance.SetFontsSources()` فصل. سيسمح هذا لـ Aspose.Words بالعثور على الخطوط في تدفق الموارد.
+## Passaggio 2: caricare il documento e impostare l'origine del carattere del flusso di risorse
+ Successivamente, caricheremo il documento utilizzando il file`Document` class e impostare l'origine del font del flusso di risorse utilizzando il file`FontSettings.DefaultInstance.SetFontsSources()` classe. Ciò consentirà ad Aspose.Words di trovare i caratteri nel flusso di risorse.
 
 ```csharp
-// تحميل المستند وتعيين مصدر خط تدفق الموارد
+// Carica il documento e imposta l'origine del font del flusso di risorse
 Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 { new SystemFontSource(), new ResourceSteamFontSource() });
 ```
 
-## الخطوة 3: احفظ المستند
-أخيرًا ، سنحفظ المستند. سيتم تحميل الخطوط من تدفق الموارد المحدد وتضمينها في المستند.
+## Passaggio 3: salvare il documento
+Infine, salveremo il documento. I caratteri verranno caricati dal flusso di risorse specificato e incorporati nel documento.
 
 ```csharp
-// احفظ المستند
+// Salva il documento
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
-### نموذج رمز مصدر لمثال مصدر خط Resource Steam باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Resource Steam Font Source Esempio con Aspose.Words per .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -53,5 +53,5 @@ FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية استخدام Resource Flow Font Source مع Aspose.Words for .NET. تتيح لك هذه الميزة تحميل الخطوط من موجز الموارد ، وهو أمر مفيد عندما تريد تضمين الخطوط المخصصة في مستنداتك. جرب خطوطًا مختلفة واستكشف الإمكانيات التي توفرها Aspose.Words لإدارة الخطوط.
+## Conclusione
+In questo tutorial, hai imparato come utilizzare Resource Flow Font Source con Aspose.Words per .NET. Questa funzione ti consente di caricare i caratteri da un feed di risorse, utile quando desideri incorporare caratteri personalizzati nei tuoi documenti. Sperimenta con diversi font ed esplora le possibilità offerte da Aspose.Words per la gestione dei font.

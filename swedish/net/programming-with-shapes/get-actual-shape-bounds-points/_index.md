@@ -1,39 +1,39 @@
 ---
-title: احصل على نقاط حدود الشكل الفعلي
-linktitle: احصل على نقاط حدود الشكل الفعلي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد الحدود الفعلية للشكل بالنقاط (وحدة القياس) في مستند Word باستخدام Aspose.Words for .NET.
+title: Få faktiska Shape Bounds-poäng
+linktitle: Få faktiska Shape Bounds-poäng
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du hämtar de faktiska gränserna för en form i punkter (måttenhet) i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استرداد الحدود الفعلية للشكل بالنقاط (وحدة القياس) في مستند Word باستخدام Aspose.Words for .NET. تمثل الحدود حجم وموضع الشكل داخل المستند.
+Denna handledning förklarar hur man hämtar de faktiska gränserna för en form i punkter (måttenhet) i ett Word-dokument med Aspose.Words för .NET. Gränserna representerar storleken och positionen för formen i dokumentet.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Förutsättningar
+För att följa denna handledning måste du ha följande:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words för .NET-biblioteket installerat.
+- Grundläggande kunskaper i C# och att arbeta med Word-dokument.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Steg 1: Skapa ett nytt dokument och DocumentBuilder
+ Skapa en ny instans av`Document` klass och a`DocumentBuilder` objekt för att arbeta med dokumentet.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل شكل صورة
- استخدم ال`InsertImage` طريقة`DocumentBuilder` كائن لإدراج شكل صورة في المستند. قم بتوفير المسار لملف الصورة كمعامل.
+## Steg 2: Infoga en bildform
+ Använd`InsertImage` metod för`DocumentBuilder` objekt för att infoga en bildform i dokumentet. Ange sökvägen till bildfilen som en parameter.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
 shape.AspectRatioLocked = false;
 ```
 
-## الخطوة 3: استرجع نقاط حدود الشكل الفعلية
- الوصول إلى الأشكال`ShapeRenderer` باستخدام`GetShapeRenderer`طريقة. ثم استرجع الحدود الفعلية للشكل بالنقاط باستخدام`BoundsInPoints` ملكية.
+## Steg 3: Hämta faktiska Shape Bounds Points
+ Få tillgång till formens`ShapeRenderer` använda`GetShapeRenderer`metod. Hämta sedan formens faktiska gränser i punkter med hjälp av`BoundsInPoints` fast egendom.
 
 ```csharp
 Console.Write("\nGets the actual bounds of the shape in points: ");
@@ -41,7 +41,7 @@ Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
 
-### مثال على شفرة المصدر للحصول على نقاط حدود الشكل الفعلية باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Get Actual Shape Bounds Points med Aspose.Words för .NET 
 
 ```csharp
 	Document doc = new Document();
@@ -52,4 +52,4 @@ Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 	Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
-هذا كل شيء! لقد نجحت في استرداد الحدود الفعلية للشكل بالنقاط في مستند Word باستخدام Aspose.Words for .NET.
+Det är allt! Du har framgångsrikt hämtat de faktiska gränserna för en form i punkter i ditt Word-dokument med Aspose.Words för .NET.

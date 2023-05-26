@@ -1,33 +1,33 @@
 ---
-title: احصل على استبدال بدون لاحقات
-linktitle: احصل على استبدال بدون لاحقات
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على تجاوزات غير لاحقة في مستند Word باستخدام Aspose.Words for .NET.
+title: Sonekler Olmadan Değiştirme Alın
+linktitle: Sonekler Olmadan Değiştirme Alın
+second_title: Aspose.Words for .NET API Referansı
+description: Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinde soneksiz geçersiz kılmaların nasıl elde edileceğini öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية الحصول على التجاوزات بدون اللواحق في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تُستخدم البدائل بدون لاحقات لحل مشاكل استبدال الخط عند عرض المستندات أو طباعتها. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu öğreticide, .NET için Aspose.Words kitaplığını kullanarak bir Word belgesinde sonekler olmadan geçersiz kılmaları nasıl alacağınızı göstereceğiz. Belgeleri görüntülerken veya yazdırırken yazı tipi değiştirme sorunlarını çözmek için son eksiz değiştirmeler kullanılır. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وتكوين الاستبدالات بدون لاحقات
- بعد ذلك ، سنقوم بتحميل المستند باستخدام ملف`Document` فئة وتكوين بدائل غير لاحقة باستخدام`DocumentSubstitutionWarnings` فصل. سنضيف أيضًا مصدر خط عن طريق تحديد مجلد يحتوي على الخطوط.
+## 2. Adım: Belgeyi yükleyin ve sonekler olmadan değiştirmeleri yapılandırın
+ Ardından, kullanarak belgeyi yükleyeceğiz`Document` kullanarak soneksiz ikameleri sınıflandırın ve yapılandırın.`DocumentSubstitutionWarnings` sınıf. Yazı tiplerini içeren bir klasör belirterek bir yazı tipi kaynağı da ekleyeceğiz.
 
 ```csharp
-//قم بتحميل المستند وتكوين الاستبدالات بدون لاحقات
+//Belgeyi yükleyin ve sonekler olmadan değiştirmeleri yapılandırın
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
 DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
 doc.WarningCallback = substitutionWarningHandler;
@@ -39,18 +39,18 @@ FontSourceBase[] updatedFontSources = fontSources.ToArray();
 FontSettings.DefaultInstance.SetFontsSources(updatedFontSources);
 ```
 
-## الخطوة 3: احفظ المستند
-أخيرًا ، سنحفظ المستند مع تطبيق التجاوزات بدون لاحقة.
+## 3. Adım: Belgeyi kaydedin
+Son olarak, belgeyi soneksiz geçersiz kılmalar uygulanmış olarak kaydedeceğiz.
 
 ```csharp
-// احفظ المستند
+// belgeyi kaydet
 doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر للحصول على استبدال بدون لاحقات باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Get Substitution Without Suffixes için örnek kaynak kodu 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
@@ -65,5 +65,5 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الحصول على الإلغاءات بدون اللواحق في مستند Word باستخدام Aspose.Words for .NET. الاستبدالات بدون لاحقات مفيدة لحل مشاكل استبدال الخط. لا تتردد في استخدام هذه الميزة لتحسين عرض وطباعة مستنداتك.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinde sonekler olmadan geçersiz kılmaların nasıl alınacağını gördük. Son eksiz ikameler, yazı tipi değiştirme problemlerini çözmek için kullanışlıdır. Belgelerinizin görüntülenmesini ve yazdırılmasını iyileştirmek için bu özelliği kullanmaktan çekinmeyin.

@@ -1,20 +1,20 @@
 ---
-title: نوع التحكم المفضل
-linktitle: نوع التحكم المفضل
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحديد نوع عنصر التحكم المفضل عند تحميل مستند HTML باستخدام Aspose.Words for .NET.
+title: Tipo de control preferido
+linktitle: Tipo de control preferido
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para especificar el tipo de control preferido al cargar un documento HTML con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة نوع عنصر التحكم المفضل مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، ستتمكن من فهم كيفية تحديد نوع عنصر التحكم المفضل عند تحميل مستند HTML.
+Este artículo proporciona una guía paso a paso sobre cómo usar la función de tipo de control preferido con Aspose.Words para .NET. Explicaremos cada parte del código en detalle. Al final de este tutorial, podrá comprender cómo especificar el tipo de control preferido al cargar un documento HTML.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Antes de comenzar, asegúrese de haber instalado y configurado la biblioteca Aspose.Words para .NET en su proyecto. Puede encontrar la biblioteca y las instrucciones de instalación en el sitio web de Aspose.
 
-## الخطوة 1: تحديد كود HTML
+## Paso 1: Definir el código HTML
 
- للبدء ، تحتاج إلى تحديد كود HTML الذي تريد تحميله كمستند. في هذا المثال ، قمنا بتعريف ملف`html` متغير يحتوي على كود HTML لمحدد مع خيارات.
+ Para comenzar, debe definir el código HTML que desea cargar como documento. En este ejemplo, hemos definido un`html` variable que contiene el código HTML de un selector con opciones.
 
 ```csharp
 const string html=@"
@@ -27,24 +27,24 @@ const string html=@"
 ";
 ```
 
-## الخطوة 2: تعيين خيارات تحميل HTML
+## Paso 2: establece las opciones de carga de HTML
 
- بعد ذلك ، نقوم بإنشاء ملف`HtmlLoadOptions` كائن وتعيين`PreferredControlType` ملكية ل`HtmlControlType.StructuredDocumentTag`. هذا يخبر Aspose.Words باستخدام StructuredDocumentTags لتمثيل HTML عند التحميل.
+ A continuación, creamos un`HtmlLoadOptions` objeto y establecer el`PreferredControlType` propiedad a`HtmlControlType.StructuredDocumentTag`. Esto le dice a Aspose.Words que use etiquetas de documentos estructurados para representar HTML al cargar.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
-## الخطوة 3: تحميل وحفظ المستند
+## Paso 3: Cargue y guarde el documento
 
- نحن نستخدم ال`Document` فئة لتحميل كود HTML من تدفق الذاكرة مع خيارات التحميل المحددة مسبقًا. ثم نقوم بحفظ المستند في الدليل المحدد بامتداد`.docx` تنسيق الملف.
+ usamos el`Document` class para cargar código HTML desde un flujo de memoria con las opciones de carga definidas anteriormente. Luego guardamos el documento en el directorio especificado con el`.docx` formato de archivo.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### مثال على شفرة المصدر لنوع التحكم المفضل مع Aspose.Words for .NET
+### Ejemplo de código fuente para el tipo de control preferido con Aspose.Words para .NET
 
 ```csharp
 	
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 			</select>
 		</html>
 	";
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 
@@ -66,4 +66,4 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 ```
 
-هذا كل شئ ! لقد نجحت في تحديد نوع عنصر التحكم المفضل عند تحميل مستند HTML باستخدام Aspose.Words for .NET.
+Eso es todo ! Ha especificado correctamente el tipo de control preferido al cargar un documento HTML con Aspose.Words para .NET.

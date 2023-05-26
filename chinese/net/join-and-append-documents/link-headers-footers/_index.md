@@ -1,89 +1,89 @@
 ---
-title: ربط تذييلات الرؤوس
-linktitle: ربط تذييلات الرؤوس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ربط الرؤوس والتذييلات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: 链接页眉页脚
+linktitle: 链接页眉页脚
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何在使用 Aspose.Words for .NET 加入和附加 Word 文档时链接页眉和页脚。
 type: docs
 weight: 10
 url: /zh/net/join-and-append-documents/link-headers-footers/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Link Headers Footers في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام وإلحاق مستندات Word متعددة أثناء ربط رؤوس وتذييلات المستند المصدر بالقسم السابق في المستند الوجهة.
+本教程将指导您完成使用 Aspose.Words for .NET 的链接页眉页脚功能的过程。此功能允许您加入和附加多个 Word 文档，同时将源文档的页眉和页脚链接到目标文档中的上一节。
 
-## المتطلبات الأساسية
+## 先决条件
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+在开始之前，请确保您具备以下条件：
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. 安装了 Aspose.Words for .NET。您可以从 Aspose 网站下载它或通过 NuGet 安装它。
+2. Visual Studio 或任何其他 C# 开发环境。
 
-## الخطوة 1: تهيئة دلائل المستندات
+## 第 1 步：初始化文档目录
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+首先，您需要设置文档目录的路径。修改值`dataDir`变量到您的文档所在的路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## 第 2 步：加载源文档和目标文档
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+接下来，您需要使用 Aspose.Words 加载源文档和目标文档`Document`班级。更新文件名在`Document`根据您的文档名称构造函数。
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: اضبط المستند المُلحق على الظهور في صفحة جديدة
+## 第 3 步：将附加文档设置为出现在新页面上
 
-للتأكد من ظهور المحتوى من المستند المصدر على صفحة جديدة في المستند الوجهة ، تحتاج إلى تعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.NewPage`.
+要确保源文档中的内容出现在目标文档的新页面上，您需要设置`SectionStart`源文档中第一节的属性`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## الخطوة 4: ربط الرؤوس والتذييلات بالقسم السابق
+## 第 4 步：将页眉和页脚链接到上一节
 
- لربط رؤوس وتذييلات المستند المصدر بالمقطع السابق في المستند الوجهة ، يمكنك استخدام ملف`LinkToPrevious` طريقة`HeadersFooters` مجموعة. بالمرور`true` كمعلمة ، يمكنك تجاوز أي رؤوس أو تذييلات موجودة في المستند المصدر.
+要将源文档的页眉和页脚链接到目标文档的上一节，您可以使用`LinkToPrevious`的方法`HeadersFooters`收藏。通过传递`true`作为参数，您可以覆盖源文档中任何现有的页眉或页脚。
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## 第 5 步：将源文档附加到目标文档
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+现在，您可以使用`AppendDocument`的方法`Document`班级。这`ImportFormatMode.KeepSourceFormatting`参数确保在追加操作期间保留源格式。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## 第 6 步：保存最终文档
 
- أخيرًا ، احفظ المستند المدمج مع الرؤوس والتذييلات المرتبطة باستخدام ملف`Save` طريقة`Document` فصل.
+最后，使用链接的页眉和页脚保存合并的文档`Save`的方法`Document`班级。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 ```
 
-### مثال على شفرة المصدر لتذييلات رؤوس الروابط باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的链接页眉页脚示例源代码 
 
-إليك شفرة المصدر الكاملة لميزة "Link Headers Footers" في C # باستخدام Aspose.Words for .NET:
+下面是使用 Aspose.Words for .NET 的 C# 中“链接页眉页脚”功能的完整源代码：
 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بتعيين المستند المُلحق ليظهر في صفحة جديدة.
+	//将附加文档设置为出现在新页面上。
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
-	// اربط الرؤوس والتذييلات في المستند المصدر بالمقطع السابق.
-	// سيؤدي هذا إلى تجاوز أي رؤوس أو تذييلات موجودة بالفعل في المستند المصدر.
+	//将源文档中的页眉和页脚链接到上一节。
+	//这将覆盖源文档中已找到的任何页眉或页脚。
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Link Headers Footers باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الرؤوس والتذييلات من المستند المصدر المرتبط بالقسم السابق في المستند الوجهة.
+就是这样！您已经使用 Aspose.Words for .NET 成功实现了链接页眉页脚功能。最终文档将包含合并后的内容，其中源文档的页眉和页脚链接到目标文档中的上一节。

@@ -1,17 +1,17 @@
 ---
-title: إزالة قيود القراءة فقط
-linktitle: إزالة قيود القراءة فقط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET.
+title: Rimuovi la restrizione di sola lettura
+linktitle: Rimuovi la restrizione di sola lettura
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come rimuovere la restrizione di sola lettura da un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/document-protection/remove-read-only-restriction/
 ---
-في هذا البرنامج التعليمي ، سنرشدك عبر خطوات استخدام ميزة إزالة قيود القراءة فقط Aspose.Words for .NET. تتيح لك هذه الميزة إزالة قيود القراءة فقط من مستند Word لجعله قابلاً للتحرير. اتبع الخطوات التالية:
+In questo tutorial, ti guideremo attraverso i passaggi per utilizzare Aspose.Words per la funzionalità di rimozione delle restrizioni di sola lettura .NET. Questa funzione consente di rimuovere la restrizione di sola lettura da un documento di Word per renderlo modificabile. Segui i passaggi seguenti:
 
-## الخطوة 1: إنشاء المستند وإعداد الحماية
+## Passaggio 1: creazione del documento e impostazione della protezione
 
-ابدأ بإنشاء مثيل لفئة المستند:
+Inizia creando un'istanza della classe Document:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -19,50 +19,50 @@ Document doc = new Document();
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
-قم بتعيين كلمة مرور للمستند باستخدام خاصية SetPassword () للكائن WriteProtection:
+Impostare una password per il documento utilizzando la proprietà SetPassword() dell'oggetto WriteProtection:
 
-تأكد من استبدال "MyPassword" بكلمة المرور الفعلية التي استخدمتها لحماية المستند.
+Assicurati di sostituire "MyPassword" con la password effettiva che hai utilizzato per proteggere il documento.
 
-## الخطوة 2: إزالة قيود القراءة فقط
+## Passaggio 2: rimuovere la restrizione di sola lettura
 
-لإزالة تقييد القراءة فقط ، قم بتعيين الخاصية ReadOnlyRecommended إلى false:
+Per rimuovere la restrizione di sola lettura, imposta la proprietà ReadOnlyRecommended su false:
 
 ```csharp
 doc.WriteProtection.ReadOnlyRecommended = false;
 ```
 
-## الخطوة 3: تطبيق حماية غير مقيدة
+## Passaggio 3: applica la protezione illimitata
 
-أخيرًا ، قم بتطبيق حماية غير مقيدة باستخدام طريقة حماية كائن المستند:
+Infine, applica la protezione illimitata utilizzando il metodo Protect() dell'oggetto Document:
 
 ```csharp
 doc.Protect(ProtectionType.NoProtection);
 doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند بدون قيود القراءة فقط.
+Assicurati di specificare il percorso e il nome file corretti per salvare il documento senza la restrizione di sola lettura.
 
-### مثال على شفرة المصدر الخاصة بإزالة القيود للقراءة فقط باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per rimuovere la restrizione di sola lettura utilizzando Aspose.Words per .NET
 
-فيما يلي شفرة المصدر الكاملة لإزالة قيود القراءة فقط باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente completo per rimuovere la restrizione di sola lettura utilizzando Aspose.Words per .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	
-	// أدخل كلمة مرور يصل طولها إلى 15 حرفًا.
+	// Inserisci una password di massimo 15 caratteri.
 	doc.WriteProtection.SetPassword("MyPassword");
 
-	// قم بإزالة خيار القراءة فقط.
+	// Rimuovi l'opzione di sola lettura.
 	doc.WriteProtection.ReadOnlyRecommended = false;
 
-	// تطبيق الحماية ضد الكتابة دون أي حماية.
+	// Applicare la protezione da scrittura senza alcuna protezione.
 	doc.Protect(ProtectionType.NoProtection);
 	doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة إزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET.
+Seguendo questi passaggi, puoi rimuovere facilmente la restrizione di sola lettura da un documento di Word con Aspose.Words per .NET.
 

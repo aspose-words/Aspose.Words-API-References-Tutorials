@@ -1,52 +1,52 @@
 ---
-title: قم بإزالة خصائص المستند المخصصة
-linktitle: قم بإزالة خصائص المستند المخصصة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لإزالة الخصائص المخصصة من مستند باستخدام Aspose.Words for .NET.
+title: Özel Belge Özelliklerini Kaldırma
+linktitle: Özel Belge Özelliklerini Kaldırma
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir belgeden özel özellikleri kaldırmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-document-properties/remove-custom-document-properties/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال التعليمات البرمجية المصدر C # لإزالة الخصائص المخصصة من مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إزالة خاصية مخصصة معينة من المستند.
+Bu eğitimde, Aspose.Words for .NET ile bir belgeden özel özellikleri kaldırmak için C# kaynak kodunda size yol göstereceğiz. Bu özellik, bir belgeden belirli bir özel özelliği kaldırmanıza olanak tanır.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد إزالة الخصائص المخصصة منه. استخدم الكود التالي لتحميل المستند:
+Bu adımda, özel özellikleri kaldırmak istediğimiz Word belgesini yükleyeceğiz. Belgeyi yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
 
-## الخطوة 3: حذف الخصائص المخصصة
+## 3. Adım: Özel özelliklerin silinmesi
 
-الآن دعنا نزيل خاصية مخصصة محددة من المستند. استخدم الكود التالي:
+Şimdi belirli bir özel özelliği belgeden kaldıralım. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.CustomDocumentProperties.Remove("Authorized Date");
 ```
 
-يزيل هذا الرمز الخاصية المخصصة "تاريخ التخويل" من المستند. يمكنك استبدال "التاريخ المعتمد" باسم الخاصية المخصصة التي تريد إزالتها.
+Bu kod, "Yetki Tarihi" özel özelliğini belgeden kaldırır. "Yetki Tarihi"ni, kaldırmak istediğiniz özel özelliğin adıyla değiştirebilirsiniz.
 
-### مثال على شفرة المصدر لإزالة خصائص المستند المخصصة باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Özel Belge Özelliklerini Kaldır için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx");
 	doc.CustomDocumentProperties.Remove("Authorized Date");
 	
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ bölümünde doğru belge yolunu belirttiğinizden emin olun.`dataDir` değişken.
 
-لقد تعلمت الآن كيفية إزالة الخصائص المخصصة من مستند باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إزالة الخصائص المخصصة من المستندات الخاصة بك.
+Artık Aspose.Words for .NET kullanarak bir belgeden özel özelliklerin nasıl kaldırılacağını öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek özel özellikleri kendi belgelerinizden kolayca kaldırabilirsiniz.

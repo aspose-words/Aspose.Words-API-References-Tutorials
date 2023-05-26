@@ -1,64 +1,64 @@
 ---
-title: إدراج مخطط فقاعي
-linktitle: إدراج مخطط فقاعي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مخطط فقاعي في مستند باستخدام Aspose.Words for .NET. أضف بيانات متسلسلة بقيم X و Y وقيم حجم الفقاعة.
+title: Kabarcık Grafiği Ekle
+linktitle: Kabarcık Grafiği Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir belgeye kabarcık grafiği eklemeyi öğrenin. Seri verilerini X, Y ve kabarcık boyutu değerleri ile ekleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/insert-bubble-chart/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مخطط فقاعي في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وحفظ المستند.
+Bu öğretici, Aspose.Words for .NET'in bir belgeye balon grafiği eklemek için nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve belgenin nasıl kaydedileceğini gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Çıktı belgesinin kaydedileceği bir belge dizini yolu.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 2. Adım: Yeni bir belge oluşturun ve bir grafik ekleyin
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط فقاعي في المستند.
+ Ardından,`InsertChart` yöntemi`DocumentBuilder` belgeye balon grafiği eklemek için.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bubble, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## 3. Adım: Seri verilerini grafiğe ekleyin
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف ثلاث نقاط بيانات مع قيم X و Y وقيم حجم الفقاعة.
+Grafiğe seri verileri ekleyin. Bu örnekte, karşılık gelen X, Y ve kabarcık boyutu değerlerine sahip üç veri noktası ekleyeceğiz.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 },
     new double[] { 10, 4, 8 });
 ```
 
-## الخطوة 4: احفظ المستند
+## 4. Adım: Belgeyi kaydedin
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Son olarak, belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مخطط فقاعي باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanarak bir balon grafiği ekleme uygulamasını tamamlar.
 
-### مثال على شفرة المصدر لإدراج مخطط فقاعي باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Balon Grafiği Ekleme için örnek kaynak kodu 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

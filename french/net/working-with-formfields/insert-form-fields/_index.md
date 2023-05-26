@@ -1,46 +1,46 @@
 ---
-title: أدخل حقول النموذج
-linktitle: أدخل حقول النموذج
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج القائمة المنسدلة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Insérer des champs de formulaire
+linktitle: Insérer des champs de formulaire
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer des champs de formulaire déroulants dans des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-formfields/insert-form-fields/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية إدراج حقول النموذج ، وتحديداً حقل نموذج القائمة المنسدلة ، في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Dans ce didacticiel étape par étape, nous vous expliquerons comment insérer des champs de formulaire, en particulier un champ de formulaire déroulant, dans un document Word à l'aide de Aspose.Words pour .NET. Nous vous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque depuis le site officiel.
 
-## الخطوة 1: تهيئة المستند وكائنات DocumentBuilder
+## Étape 1 : Initialisation des objets Document et DocumentBuilder
 
- أولاً ، قم بتهيئة ملف`Document` و`DocumentBuilder` أشياء:
+ Tout d'abord, initialisez le`Document` et`DocumentBuilder` objets:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إدراج حقل نموذج منسدل
+## Étape 2 : Insertion d'un champ de formulaire déroulant
 
- بعد ذلك ، حدد خيارات حقل نموذج القائمة المنسدلة وأدخله في المستند باستخدام ملف`InsertComboBox` طريقة`DocumentBuilder`هدف. في هذا المثال ، نقوم بإدراج حقل نموذج منسدلة باسم "DropDown" مع ثلاثة خيارات: "واحد" و "اثنان" و "ثلاثة":
+ Ensuite, spécifiez les options du champ de formulaire déroulant et insérez-le dans le document à l'aide de la`InsertComboBox` méthode de la`DocumentBuilder`objet. Dans cet exemple, nous insérons un champ de formulaire déroulant nommé "DropDown" avec trois options : "Un", "Deux" et "Trois" :
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## الخطوة 3: حفظ المستند
+## Étape 3 : Enregistrer le document
 
-أخيرًا ، احفظ المستند:
+Enfin, enregistrez le document :
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إدراج حقل نموذج منسدل في مستند Word باستخدام Aspose.Words for .NET.
+C'est ça! Vous avez inséré avec succès un champ de formulaire déroulant dans un document Word à l'aide de Aspose.Words pour .NET.
 
-### مثال على شفرة المصدر لإدراج حقول النموذج باستخدام Aspose.Words for .NET
+### Exemple de code source pour Insérer des champs de formulaire à l'aide de Aspose.Words pour .NET
 
 ```csharp
 Document doc = new Document();
@@ -52,4 +52,4 @@ builder.InsertComboBox("DropDown", items, 0);
 doc.Save("OutputDocument.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.

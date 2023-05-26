@@ -1,52 +1,52 @@
 ---
-title: تحميل Chm
-linktitle: تحميل Chm
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل ملفات CHM باستخدام Aspose.Words for .NET.
+title: Cargar Chm
+linktitle: Cargar Chm
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a cargar archivos CHM con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-loadoptions/load-chm/
 ---
 
-عند العمل باستخدام ملفات تعليمات HTML (CHM) في تطبيق C # ، من المهم أن تكون قادرًا على تحميلها بشكل صحيح. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحميل ملفات CHM باستخدام خيارات التحميل المناسبة. في هذا الدليل التفصيلي ، سنوضح لك كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل ملف CHM باستخدام خيارات تحميل LoadOptions.
+Cuando se trabaja con archivos de ayuda HTML (CHM) en una aplicación de C#, es importante poder cargarlos correctamente. Con la biblioteca Aspose.Words para .NET, puede cargar fácilmente archivos CHM utilizando las opciones de carga adecuadas. En esta guía paso a paso, le mostraremos cómo usar Aspose.Words para el código fuente de .NET C# para cargar un archivo CHM usando las opciones de carga de LoadOptions.
 
-## فهم مكتبة Aspose.Words
+## Comprender la biblioteca Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Antes de sumergirse en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una poderosa biblioteca para crear, editar, convertir y proteger documentos de Word en diferentes plataformas, incluida .NET. Ofrece muchas funciones para manipular documentos, como insertar texto, cambiar el formato, agregar secciones y mucho más.
 
-## تكوين خيارات التحميل
+## Configuración de las opciones de carga
 
-الخطوة الأولى هي تكوين خيارات التحميل لملف CHM الخاص بنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى ضبط خاصية التشفير على الترميز المناسب لملفات CHM ، عادةً "windows-1251". هيريس كيفية القيام بذلك:
+El primer paso es configurar las opciones de carga de nuestro archivo CHM. Utilice la clase LoadOptions para especificar los parámetros de carga. En nuestro caso, debemos establecer la propiedad Codificación en la codificación adecuada para los archivos CHM, normalmente "windows-1251". Aquí está cómo hacerlo:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding. GetEncoding("windows-1251") };
 ```
 
-قمنا بإنشاء كائن LoadOptions جديد وقمنا بتعيين خاصية التشفير على ترميز "windows-1251" لملفات CHM.
+Creamos un nuevo objeto LoadOptions y establecemos la propiedad Encoding en la codificación "windows-1251" para archivos CHM.
 
-## تحميل ملف CHM
+## Cargando archivo CHM
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل ملف CHM باستخدام فئة المستند وتحديد خيارات التحميل. هنا مثال :
+Ahora que hemos configurado las opciones de carga, podemos cargar el archivo CHM utilizando la clase Document y especificar las opciones de carga. Aquí hay un ejemplo :
 
 ```csharp
 Document doc = new Document(dataDir + "HTML help.chm", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل ملف CHM "HTML help.chm" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+En este ejemplo, cargamos el archivo CHM "HTML help.chm" ubicado en el directorio de documentos utilizando las opciones de carga especificadas.
 
-### مثال على شفرة المصدر لـ LoadOptions مع وظيفة "Load Chm" باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para LoadOptions con la funcionalidad "Load Chm" usando Aspose.Words para .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "تحميل Chm"
+// Configuración de las opciones de carga con la función "Load Chm"
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding. GetEncoding("windows-1251") };
 
-// قم بتحميل ملف CHM بالخيارات المحددة
+// Cargue el archivo CHM con las opciones especificadas
 Document doc = new Document(dataDir + "HTML help.chm", loadOptions);
 ```
 
-## خاتمة
+## Conclusión
 
-في هذا الدليل ، شرحنا كيفية تحميل ملف CHM باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يعد تحميل ملفات CHM بشكل صحيح أمرًا ضروريًا لتتمكن من معالجتها وتحويلها بكفاءة باستخدام Aspose.Words.
+En esta guía, explicamos cómo cargar un archivo CHM usando la biblioteca Aspose.Words para .NET. Si sigue los pasos proporcionados y usa el código fuente de C# provisto, puede aplicar fácilmente esta funcionalidad en su aplicación de C#. Cargar correctamente los archivos CHM es fundamental para poder manipularlos y convertirlos de manera eficiente con Aspose.Words.

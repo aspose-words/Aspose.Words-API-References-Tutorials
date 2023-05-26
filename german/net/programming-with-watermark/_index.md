@@ -1,15 +1,15 @@
 ---
-title: البرمجة بالعلامة المائية
-linktitle: البرمجة بالعلامة المائية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إضافة نص العلامة المائية مع خيارات محددة
+title: Programmieren mit Wasserzeichen
+linktitle: Programmieren mit Wasserzeichen
+second_title: Aspose.Words für .NET API-Referenz
+description: Tutorials enthalten das Hinzufügen von Textwasserzeichen mit spezifischen Optionen
 type: docs
 weight: 1570
 url: /de/net/programming-with-watermark/
 ---
-تعد البرمجة باستخدام العلامة المائية موردًا شاملاً يرشدك خلال عملية البرمجة باستخدام العلامات المائية في مستندات Word باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية توضيحات خطوة بخطوة ورمز مصدر مفصل وأمثلة عملية لإضافة العلامات المائية وتخصيصها وإدارتها في مستندات Word الخاصة بك. ستتعلم كيفية إضافة نص أو صور أو أشكال أو رسومات كعلامات مائية ، وضبط موضعها ومظهرها ، وخيارات متقدمة مثل إضافة علامات مائية مخصصة باستخدام الحقول. هذا المورد ضروري للمطورين الذين يرغبون في أتمتة إدارة العلامات المائية في مستندات Word الخاصة بهم باستخدام Aspose.Words for .NET.
+„Programmieren mit Wasserzeichen“ ist eine umfassende Ressource, die Sie durch den Prozess der Programmierung mit Wasserzeichen in Word-Dokumenten mithilfe der Aspose.Words für .NET-Bibliothek führt. Die Tutorials bieten Schritt-für-Schritt-Erklärungen, detaillierten Quellcode und praktische Beispiele zum Hinzufügen, Anpassen und Verwalten von Wasserzeichen in Ihren Word-Dokumenten. Sie erfahren, wie Sie Text, Bilder, Formen oder Grafiken als Wasserzeichen hinzufügen, deren Position und Aussehen anpassen und erweiterte Optionen wie das Hinzufügen benutzerdefinierter Wasserzeichen mithilfe von Feldern nutzen. Diese Ressource ist unerlässlich für Entwickler, die die Wasserzeichenverwaltung in ihren Word-Dokumenten mithilfe von Aspose.Words für .NET automatisieren möchten.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [أضف علامة مائية نصية مع خيارات محددة](./add-text-watermark-with-specific-options/) | تعرف على كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
+| [Fügen Sie Textwasserzeichen mit spezifischen Optionen hinzu](./add-text-watermark-with-specific-options/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Textwasserzeichen mit bestimmten Optionen hinzufügen. Schritt für Schritt Anleitung. |

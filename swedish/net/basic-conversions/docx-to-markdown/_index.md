@@ -1,20 +1,20 @@
 ---
-title: Docx إلى Markdown
-linktitle: Docx إلى Markdown
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات Word من Docx إلى تنسيق Markdown باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Docx till Markdown
+linktitle: Docx till Markdown
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du konverterar Word-dokument från Docx till Markdown-format med Aspose.Words för .NET. Steg-för-steg handledning med exempel på källkod.
 type: docs
 weight: 10
 url: /sv/net/basic-conversions/docx-to-markdown/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى Markdown. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+I denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att konvertera ett Word-dokument i Docx-format till Markdown. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
-## الخطوة 1: تهيئة المستند وكائنات DocumentBuilder
+## Steg 1: Initiera Document- och DocumentBuilder-objekten
 
- أولاً ، قم بتهيئة ملف`Document` الكائن و`DocumentBuilder` هدف:
+ Initiera först`Document` objekt och`DocumentBuilder` objekt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -22,31 +22,31 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: إضافة محتوى إلى المستند
+## Steg 2: Lägga till innehåll i dokumentet
 
- بعد ذلك ، استخدم ملف`DocumentBuilder` كائن لإضافة محتوى إلى المستند. في هذا المثال ، سنضيف فقرة نصية بسيطة باستخدام امتداد`Writeln` طريقة:
+ Använd sedan`DocumentBuilder` objekt för att lägga till innehåll i dokumentet. I det här exemplet kommer vi att lägga till ett enkelt textstycke med hjälp av`Writeln` metod:
 
 ```csharp
 builder.Writeln("Some text!");
 ```
 
-لا تتردد في إضافة محتوى أكثر تعقيدًا مثل العناوين أو الجداول أو القوائم أو التنسيق حسب الحاجة.
+Lägg gärna till mer komplext innehåll som rubriker, tabeller, listor eller formatering efter behov.
 
-## الخطوة 3: حفظ المستند بتنسيق Markdown
+## Steg 3: Spara dokumentet i Markdown-format
 
- لحفظ المستند بتنسيق Markdown ، استخدم ملف`Save` طريقة على`Document` كائن وتوفير المسار واسم الملف للمستند الناتج. في هذا المثال ، سنحفظه باسم`"BaseConversions.DocxToMarkdown.md"`:
+ För att spara dokumentet i Markdown-format, använd`Save` metod på`Document` objekt och ange sökvägen och filnamnet för utdatadokumentet. I det här exemplet kommer vi att spara det som`"BaseConversions.DocxToMarkdown.md"`:
 
 ```csharp
 doc.Save(dataDir + "BaseConversions.DocxToMarkdown.md");
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند Word بتنسيق Docx إلى Markdown باستخدام Aspose.Words for .NET.
+Det är allt! Du har framgångsrikt konverterat ett Word-dokument i Docx-format till Markdown med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لـ Docx To Markdown باستخدام Aspose.Words for .NET
+### Exempel på källkod för Docx To Markdown med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -57,4 +57,4 @@ doc.Save(dataDir + "BaseConversions.DocxToMarkdown.md");
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Använd gärna den här koden i dina egna projekt och modifiera den efter dina specifika krav.

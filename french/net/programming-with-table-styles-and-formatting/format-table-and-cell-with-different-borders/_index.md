@@ -1,51 +1,51 @@
 ---
-title: تنسيق الجدول والخلية بحدود مختلفة
-linktitle: تنسيق الجدول والخلية بحدود مختلفة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتنسيق الجدول والخلية بحدود مختلفة باستخدام Aspose.Words for .NET.
+title: Tableau de format et cellule avec différentes bordures
+linktitle: Tableau de format et cellule avec différentes bordures
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour formater un tableau et une cellule avec des bordures différentes à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-table-styles-and-formatting/format-table-and-cell-with-different-borders/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتنسيق جدول وخلية ذات حدود مختلفة باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تطبيق حدود مخصصة على جدول وخلايا معينة في مستندات Word باستخدام Aspose.Words for .NET.
+Dans ce didacticiel, nous vous expliquerons étape par étape le processus de mise en forme d'un tableau et d'une cellule avec des bordures différentes à l'aide de Aspose.Words pour .NET. Nous expliquerons le code source C# fourni et vous fournirons un guide complet pour vous aider à comprendre et à implémenter cette fonctionnalité dans vos propres projets. À la fin de ce didacticiel, vous saurez comment appliquer des bordures personnalisées à des tableaux et des cellules spécifiques dans vos documents Word à l'aide de Aspose.Words pour .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Il s'agit de l'emplacement où vous souhaitez enregistrer votre document Word modifié. Remplacez "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin approprié.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## Étape 2 : Créer un nouveau document et un générateur de documents
+ Ensuite, vous devez créer une nouvelle instance de`Document` classe et un constructeur de document pour ce document.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدول جديد وأضف خلايا
-لبدء إنشاء الجدول ، نستخدم ملف`StartTable()` طريقة منشئ المستندات ، ثم نضيف خلايا إلى الجدول باستخدام الامتداد`InsertCell()` الطريقة ونكتب محتويات الخلايا إلى ملف`Writeln()` طريقة.
+## Étape 3 : Commencez un nouveau tableau et ajoutez des cellules
+Pour commencer à créer le tableau, nous utilisons le`StartTable()` méthode du générateur de documents, puis nous ajoutons des cellules au tableau à l'aide de la`InsertCell()` méthode et nous écrivons le contenu des cellules à l'aide de la`Writeln()` méthode.
 
 ```csharp
 Table table = builder. StartTable();
 builder. InsertCell();
-// تعيين الحدود للجدول بأكمله.
+// Définissez des bordures pour l'ensemble du tableau.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-// تعيين المساحة المتروكة لهذه الخلية.
+// Définissez le rembourrage pour cette cellule.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
 builder. InsertCell();
-// حدد مساحة خلية مختلفة للخلية الثانية.
+// Spécifiez un remplissage de cellule différent pour la deuxième cellule.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
 builder. EndRow();
-// امسح تنسيق الخلية من العمليات السابقة.
+// Effacer le formatage des cellules des opérations précédentes.
 builder.CellFormat.ClearFormatting();
 builder. InsertCell();
-// قم بإنشاء حدود أكثر سمكًا للخلية الأولى في هذا الصف. سيكون الأمر مختلفا
-// بالنسبة للحدود المحددة للجدول.
+// Créez des bordures plus épaisses pour la première cellule de cette ligne. Ce sera différent
+// par rapport aux bordures définies pour le tableau.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
 builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
@@ -56,42 +56,42 @@ builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
 
-## الخطوة 4: احفظ المستند
+## Étape 4 : Enregistrez le document
 
-  معدل
-أخيرًا احفظ المستند المعدل في ملف. يمكنك اختيار اسم وموقع مناسبين للمستند الناتج.
+  modifié
+Enfin, enregistrez le document modifié dans un fichier. Vous pouvez choisir un nom et un emplacement appropriés pour le document de sortie.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
-تهنئة ! لقد قمت الآن بتنسيق جدول وخلية ذات حدود مختلفة باستخدام Aspose.Words لـ .NET.
+Félicitation ! Vous avez maintenant formaté un tableau et une cellule avec des bordures différentes en utilisant Aspose.Words pour .NET.
 
-### عينة من التعليمات البرمجية المصدر لتنسيق الجدول والخلية ذات الحدود المختلفة باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Format Table And Cell With Different Borders à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Table table = builder.StartTable();
 	builder.InsertCell();
-	//عيّن حدود الجدول بأكمله.
+	//Définissez les bordures de l'ensemble du tableau.
 	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// عيّن تظليل الخلية لهذه الخلية.
+	// Définissez l'ombrage de cellule pour cette cellule.
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 	builder.Writeln("Cell #1");
 	builder.InsertCell();
-	// حدد تظليل خلية مختلف للخلية الثانية.
+	// Spécifiez un ombrage de cellule différent pour la deuxième cellule.
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 	builder.Writeln("Cell #2");
 	builder.EndRow();
-	// امسح تنسيق الخلية من العمليات السابقة.
+	// Effacez la mise en forme des cellules des opérations précédentes.
 	builder.CellFormat.ClearFormatting();
 	builder.InsertCell();
-	// أنشئ حدودًا أكبر للخلية الأولى من هذا الصف. سيكون هذا مختلفا
-	// مقارنة بالحدود الموضوعة للجدول.
+	// Créez des bordures plus grandes pour la première cellule de cette ligne. Ce sera différent
+	// par rapport aux bordures définies pour le tableau.
 	builder.CellFormat.Borders.Left.LineWidth = 4.0;
 	builder.CellFormat.Borders.Right.LineWidth = 4.0;
 	builder.CellFormat.Borders.Top.LineWidth = 4.0;
@@ -103,5 +103,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تنسيق جدول وخلية ذات حدود مختلفة باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تخصيص الجدول وحدود الخلية في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية الاحتياجات الخاصة.
+## Conclusion
+Dans ce didacticiel, nous avons appris à formater un tableau et une cellule avec des bordures différentes à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape, vous pouvez facilement personnaliser les bordures de votre tableau et de vos cellules dans vos documents Word. Aspose.Words offre une API puissante et flexible pour manipuler et formater des tableaux dans vos documents. Grâce à ces connaissances, vous pouvez améliorer la présentation visuelle de vos documents Word et répondre à des besoins spécifiques.

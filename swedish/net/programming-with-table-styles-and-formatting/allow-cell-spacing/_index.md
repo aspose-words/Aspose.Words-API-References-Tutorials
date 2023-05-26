@@ -1,63 +1,63 @@
 ---
-title: السماح بتباعد الخلايا
-linktitle: السماح بتباعد الخلايا
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة للسماح بتباعد الخلايا باستخدام Aspose.Words for .NET.
+title: Tillåt cellavstånd
+linktitle: Tillåt cellavstånd
+second_title: Aspose.Words för .NET API Referens
+description: Steg för steg guide för att tillåta cellavstånd med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-table-styles-and-formatting/allow-cell-spacing/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة للسماح بتباعد الخلايا في الجداول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # الذي ينجز هذه المهمة ونقدم دليلاً شاملاً لمساعدتك على فهمها وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، سيكون لديك فهم واضح لكيفية التعامل مع تنسيق الجدول في مستندات Word باستخدام Aspose.Words for .NET.
+den här handledningen går vi igenom processen steg-för-steg för att tillåta cellavstånd i tabeller med Aspose.Words för .NET. Vi kommer att förklara C#-källkoden som utför denna uppgift och tillhandahålla en omfattande guide som hjälper dig att förstå och implementera den i dina egna projekt. I slutet av denna handledning kommer du att ha en klar förståelse för hur du manipulerar tabellformatering i dina Word-dokument med Aspose.Words för .NET.
 
-## الخطوة 1: قم بتعيين دليل المستندات
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. هذا هو الموقع حيث يتم تخزين مستند Word الخاص بك. استبدل "دليل المستندات" بالمسار المناسب.
+## Steg 1: Ställ in dokumentkatalogen
+Först måste du ställa in sökvägen till din dokumentkatalog. Det här är platsen där ditt Word-dokument lagras. Ersätt "DIN DOKUMENTKATOLOG" med lämplig sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- بعد ذلك ، تحتاج إلى تحميل مستند Word في مثيل لـ`Document` فصل.
+## Steg 2: Ladda dokumentet
+ Därefter måste du ladda Word-dokumentet i en instans av`Document` klass.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: الوصول إلى الجدول
- للسماح بتباعد الخلايا ، نحتاج إلى الوصول إلى الجدول داخل المستند. ال`Table` يمثل class جدولًا في Aspose.Words.
+## Steg 3: Gå till tabellen
+ För att tillåta cellavstånd måste vi komma åt tabellen i dokumentet. De`Table` klass representerar en tabell i Aspose.Words.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## الخطوة 4: تفعيل تباعد الخلايا
- الآن ، يمكننا تمكين تباعد الخلايا عن طريق تعيين`AllowCellSpacing`ممتلكات الجدول ل`true`. تحدد هذه الخاصية ما إذا كان يمكن أن يحتوي الجدول على تباعد خلايا.
+## Steg 4: Aktivera cellavstånd
+ Nu kan vi aktivera cellavstånd genom att ställa in`AllowCellSpacing`egenskap av tabellen till`true`. Den här egenskapen avgör om tabellen kan ha cellavstånd.
 
 ```csharp
 table.AllowCellSpacing = true;
 ```
 
-## الخطوة 5: تعيين تباعد الخلايا
- لتحديد مقدار المسافة بين الخلايا ، نستخدم الامتداد`CellSpacing` خاصية الجدول. في هذا المثال ، قمنا بتعيين تباعد الخلايا على نقطتين.
+## Steg 5: Ställ in cellavstånd
+ För att ange mängden utrymme mellan celler använder vi`CellSpacing` tabellens egendom. I det här exemplet sätter vi cellavståndet till 2 punkter.
 
 ```csharp
 table. CellSpacing = 2;
 ```
 
-## الخطوة 6: احفظ المستند المعدل
-أخيرًا ، نحفظ المستند المعدل في ملف. يمكنك اختيار اسم وموقع مناسبين للمستند الناتج.
+## Steg 6: Spara det ändrade dokumentet
+Slutligen sparar vi det ändrade dokumentet till en fil. Du kan välja ett lämpligt namn och plats för utdatadokumentet.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 ```
 
-تهانينا! لقد نجحت في السماح بتباعد الخلايا في الجداول باستخدام Aspose.Words for .NET.
+Grattis! Du har framgångsrikt tillåtit cellavstånd i tabeller med Aspose.Words för .NET.
 
-### عينة من التعليمات البرمجية المصدر لـ Allow Cell Spacing باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Tillåt cellavstånd med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -67,5 +67,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تمكين تباعد الخلايا في الجداول باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة دمج هذه الوظيفة في مشاريع C # الخاصة بك. تعد معالجة تنسيق الجدول جانبًا أساسيًا من جوانب معالجة المستندات و Aspose. توفر الكلمات واجهة برمجة تطبيقات قوية ومرنة لتحقيق ذلك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية متطلبات التنسيق المحددة.
+## Slutsats
+den här handledningen lärde vi oss hur man aktiverar cellavstånd i tabeller med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden kan du enkelt införliva denna funktion i dina C#-projekt. Att manipulera tabellformatering är en viktig aspekt av dokumentbehandling, och Aspose. Words tillhandahåller ett kraftfullt och flexibelt API för att uppnå detta. Med denna kunskap kan du förbättra den visuella presentationen av dina Word-dokument och uppfylla specifika formateringskrav.

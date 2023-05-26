@@ -1,30 +1,30 @@
 ---
-title: البرمجة باستخدام Sdt
-linktitle: البرمجة باستخدام Sdt
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على عنصر تحكم في محتوى نوع مربع الاختيار ، والحالة الحالية لمربع الاختيار ، وتعديل عناصر التحكم في المحتوى ، والتحكم في محتوى مربع التحرير والسرد ، والتحكم في محتوى مربع النص الغني ،
+title: Programmering med Sdt
+linktitle: Programmering med Sdt
+second_title: Aspose.Words för .NET API Referens
+description: Självstudierna innehåller innehållskontroll av kryssrutatyp, aktuell status för kryssruta, modifiera innehållskontroller, kontroll av kombinationsrutainnehåll, kontroll av innehåll i rich textbox,
 type: docs
 weight: 1400
 url: /sv/net/programming-with-sdt/
 ---
-تتيح لك برامج Aspose.Words for .NET التعليمية استكشاف ميزات المكتبة بعمق وتعلم كيفية البرمجة باستخدام محتوى منظم في Word باستخدام عناصر التحكم في المحتوى المهيكل (SDTs). ترشدك هذه البرامج التعليمية خطوة بخطوة عبر الخطوات اللازمة لإنشاء البيانات ومعالجتها واستخراجها من عناصر تحكم SDT في مستندات Word الخاصة بك.
+Aspose.Words för .NET tutorials låter dig utforska bibliotekets funktioner på djupet och lära dig hur du programmerar med strukturerat innehåll i Word med hjälp av Structured Content Controls (SDTs). Dessa steg-för-steg handledningar leder dig genom stegen som krävs för att skapa, manipulera och extrahera data från SDT-kontroller i dina Word-dokument.
 
-في هذه البرامج التعليمية ، ستتعلم كيفية إضافة عناصر تحكم المعاملة الخاصة والتفضيلية وإزالتها ، وكيفية تخصيصها بخصائص محددة ، وكيفية الوصول إلى بياناتها وتعديلها. ستتعلم أيضًا كيفية استخدام الأحداث المتعلقة بعناصر تحكم المعاملة الخاصة والتفاضلية لتنفيذ إجراءات مخصصة عند تعديل البيانات أو التحقق من صحتها.
+I dessa handledningar får du lära dig hur du lägger till och tar bort SDT-kontroller, hur du anpassar dem med specifika egenskaper och hur du får åtkomst till och ändrar deras data. Du kommer också att lära dig hur du använder händelser relaterade till SDT-kontroller för att utföra anpassade åtgärder när du ändrar eller validerar data.
 
-ستساعدك نماذج التعليمات البرمجية المتوفرة في البرامج التعليمية على فهم المفاهيم وممارسة وظائف عناصر تحكم المعاملة الخاصة والتفضيلية في مشروعاتك الخاصة. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان استخدام عناصر تحكم SDT في Aspose.Words for .NET وتحسين مهارات تطوير مستندات Word.
+Kodexemplen i handledningarna hjälper dig att förstå begreppen och öva på funktionaliteten hos SDT-kontroller i dina egna projekt. Oavsett om du är nybörjare eller en erfaren utvecklare, kommer dessa handledningar hjälpa dig att bemästra användningen av SDT-kontroller i Aspose.Words för .NET och förbättra dina färdigheter i Word-dokumentutveckling.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [خانة اختيار اكتب Content Control](./check-box-type-content-control/) | تعرف على كيفية إنشاء عنصر تحكم في المحتوى من نوع خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. |
-| [خانة الاختيار الحالية](./current-state-of-check-box/) | تعرف على كيفية استرداد الحالة الحالية لعنصر تحكم محتوى خانة الاختيار وتعيينه في مستند Word باستخدام Aspose.Words for .NET. |
-| [تعديل عناصر التحكم في المحتوى](./modify-content-controls/) | تعرف على كيفية تعديل النص والقوائم المنسدلة والصور ضمن عناصر التحكم في المحتوى في مستند Word باستخدام Aspose.Words for .NET. |
-| [التحكم في محتوى صندوق التحرير والسرد](./combo-box-content-control/) | تعرف على كيفية إنشاء عنصر تحكم محتوى Combo Box في مستند Word باستخدام Aspose.Words for .NET. |
-| [التحكم في محتوى مربع نص منسق](./rich-text-box-content-control/) | تعرف على كيفية إنشاء عنصر تحكم في محتوى مربع نص منسق في مستند Word باستخدام Aspose.Words for .NET مما يتيح تنسيق النص وتصميمه. |
-| [تعيين لون التحكم في المحتوى](./set-content-control-color/) | تعرف على كيفية تعيين لون عنصر تحكم المحتوى في مستند Word باستخدام Aspose.Words for .NET ، مع تخصيص مظهره. |
-| [مسح التحكم في المحتويات](./clear-contents-control/) | تعرف على كيفية مسح محتويات عنصر تحكم في مستند Word باستخدام Aspose.Words for .NET. |
-| [ربط SDT بجزء Xml المخصص](./bind-sdt-to-custom-xml-part/) | تعرف على كيفية ربط SDT بجزء Xml مخصص باستخدام Aspose.Words for .NET. |
-| [تعيين نمط التحكم في المحتوى](./set-content-control-style/) | تعرف على كيفية تعيين نمط عنصر تحكم المحتوى في مستند Word باستخدام Aspose.Words for .NET ، مع تطبيق تنسيق متسق. |
-| [إنشاء مقطع مكرر للجدول معين إلى جزء Xml مخصص](./creating-table-repeating-section-mapped-to-custom-xml-part/) | تعرف على كيفية إنشاء جدول مع قسم مكرر معين إلى CustomXmlPart في مستند Word باستخدام Aspose.Words for .NET. |
-| [قسم متعدد](./multi-section/) | تعرف على كيفية استرداد علامات المستندات المنظمة متعددة الأقسام ومعالجتها في مستند Word باستخدام Aspose.Words for .NET. |
-| [نطاق علامة المستند المهيكلة بدء تعيين Xml](./structured-document-tag-range-start-xml-mapping/) | تعرف على كيفية إعداد تعيين XML لنطاق علامة مستند منظم يبدأ في مستند Word باستخدام Aspose.Words for .NET. |
+| [Kryssruta Typ Innehållskontroll](./check-box-type-content-control/) | Lär dig hur du skapar en innehållskontroll av kryssrutatyp i ett Word-dokument med Aspose.Words för .NET. |
+| [Aktuellt tillstånd för kryssrutan](./current-state-of-check-box/) | Lär dig hur du hämtar och ställer in det aktuella tillståndet för en innehållskontroll i en kryssruta i ett Word-dokument med Aspose.Words för .NET. |
+| [Ändra innehållskontroller](./modify-content-controls/) | Lär dig hur du ändrar text, rullgardinslistor och bilder i innehållskontroller i ett Word-dokument med Aspose.Words för .NET. |
+| [Combo Box Innehållskontroll](./combo-box-content-control/) | Lär dig hur du skapar en Combo Box Innehållskontroll i ett Word-dokument med Aspose.Words för .NET. |
+| [Innehållskontroll för Rich Text Box](./rich-text-box-content-control/) | Lär dig hur du skapar en innehållskontroll för rik textruta i ett Word-dokument med Aspose.Words för .NET som möjliggör textformatering och stil. |
+| [Ställ in innehållskontrollfärg](./set-content-control-color/) | Lär dig hur du ställer in färgen på en innehållskontroll i ett Word-dokument med Aspose.Words för .NET och anpassar dess utseende. |
+| [Rensa innehållskontroll](./clear-contents-control/) | Lär dig hur du rensar innehållet i en kontroll i ett Word-dokument med Aspose.Words för .NET. |
+| [Bind SDT till anpassad XML-del](./bind-sdt-to-custom-xml-part/) | Lär dig hur du binder en SDT till en anpassad XML-del med Aspose.Words för .NET. |
+| [Ställ in stil för innehållskontroll](./set-content-control-style/) | Lär dig hur du ställer in stilen för en innehållskontroll i ett Word-dokument med Aspose.Words för .NET, med konsekvent formatering. |
+| [Skapa tabellupprepande avsnitt mappas till anpassad XML-del](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Lär dig hur du skapar en tabell med ett upprepande avsnitt mappat till en CustomXmlPart i ett Word-dokument med Aspose.Words för .NET. |
+| [Flersektion](./multi-section/) | Lär dig hur du hämtar och bearbetar strukturerade dokumenttaggar i flera sektioner i ett Word-dokument med Aspose.Words för .NET. |
+| [Structured Document Tag Range Starta XML-mappning](./structured-document-tag-range-start-xml-mapping/) | Lär dig hur du ställer in XML-mappning för ett strukturerat dokumenttaggintervall med start i ett Word-dokument med Aspose.Words för .NET. |

@@ -1,26 +1,26 @@
 ---
-title: احصل على مجموعات المراجعة
-linktitle: احصل على مجموعات المراجعة
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على مجموعات المراجعة في مستند Word باستخدام Aspose.Words for .NET.
+title: 获取修订组
+linktitle: 获取修订组
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 在 Word 文档中获取修订组。
 type: docs
 weight: 10
 url: /zh/net/working-with-revisions/get-revision-groups/
 ---
 
-في هذا الدليل التدريجي ، سنخبرك بكيفية الحصول على مجموعات المراجعة في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+在这个循序渐进的指南中，我们将告诉您如何使用 Aspose.Words for .NET 在 Word 文档中获取修订组。我们将为您提供完整的源代码，并向您展示如何格式化降价输出。
 
-## الخطوة 1: تحميل المستند
+## 第 1 步：装入文档
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+第一步是上传包含修订的文档。
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة 2: تصفح مجموعات المراجعة
+## 第 2 步：浏览修订组
 
-بعد ذلك ، سنقوم بعمل حلقة عبر مجموعات المراجعة الموجودة في المستند ونعرض تفاصيلها ، مثل المؤلف ونوع المراجعة والنص المنقح.
+接下来，我们将遍历文档中的修订组并显示其详细信息，例如作者、修订类型和修订文本。
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -31,9 +31,9 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 ```
 
 
-### مثال على شفرة المصدر للحصول على مجموعات المراجعة باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 获取修订组的示例源代码
 
-إليك التعليمات البرمجية المصدر الكاملة للحصول على مجموعات المراجعة في مستند باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 获取文档中修订组的完整源代码：
 
 ```csharp
 

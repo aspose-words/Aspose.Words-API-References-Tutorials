@@ -1,50 +1,50 @@
 ---
-title: قائمة استخدام أنماط الوجهة
-linktitle: قائمة استخدام أنماط الوجهة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الانضمام إلى مستندات Word وإلحاقها مع الاحتفاظ بأنماط قائمة المستندات الوجهة باستخدام Aspose.Words for .NET.
+title: Elenco Usa stili di destinazione
+linktitle: Elenco Usa stili di destinazione
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come unire e aggiungere documenti di Word preservando gli stili di elenco del documento di destinazione utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/join-and-append-documents/list-use-destination-styles/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة قائمة استخدام أنماط الوجهة في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء استخدام أنماط القائمة الخاصة بالمستند الوجهة.
+Questo tutorial ti guiderà attraverso il processo di utilizzo della funzione List Use Destination Styles di Aspose.Words per .NET. Questa funzione consente di unire e aggiungere documenti di Word mentre si utilizzano gli stili di elenco del documento di destinazione.
 
-## المتطلبات الأساسية
+## Prerequisiti
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Prima di iniziare, assicurati di avere quanto segue:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words per .NET installato. Puoi scaricarlo dal sito Web di Aspose o installarlo tramite NuGet.
+2. Visual Studio o qualsiasi altro ambiente di sviluppo C#.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Passaggio 1: inizializzare le directory dei documenti
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir` variabile al percorso in cui si trovano i documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Passaggio 2: caricare i documenti di origine e di destinazione
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Successivamente, è necessario caricare i documenti di origine e destinazione utilizzando Aspose.Words`Document` classe. Aggiorna i nomi dei file nel file`Document` costruttore in base ai nomi dei documenti.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## الخطوة 3: قم بتعيين المستند المصدر للمتابعة بعد مستند الوجهة
+## Passaggio 3: imposta il documento di origine su Continua dopo il documento di destinazione
 
- للتأكد من استمرار المحتوى من المستند المصدر بعد نهاية المستند الوجهة ، تحتاج إلى تعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.Continuous`.
+ Per garantire che il contenuto del documento di origine continui dopo la fine del documento di destinazione, è necessario impostare il file`SectionStart` proprietà della prima sezione nel documento di origine to`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## الخطوة 4: معالجة تنسيق القائمة
+## Passaggio 4: gestire la formattazione dell'elenco
 
-للتعامل مع تنسيق القائمة ، ستقوم بالتكرار خلال كل فقرة في المستند المصدر والتحقق مما إذا كانت عنصر قائمة. إذا كان الأمر كذلك ، فستقارن معرف القائمة بالقوائم الموجودة في مستند الوجهة. في حالة وجود قائمة بنفس المعرف ، ستقوم بإنشاء نسخة من القائمة في المستند المصدر وتحديث تنسيق قائمة الفقرة لاستخدام القائمة المنسوخة.
+Per gestire la formattazione dell'elenco, ripeterai ogni paragrafo nel documento di origine e controllerai se si tratta di un elemento dell'elenco. Se lo è, confronterai l'ID elenco con gli elenchi esistenti nel documento di destinazione. Se esiste un elenco con lo stesso ID, creerai una copia dell'elenco nel documento di origine e aggiornerai il formato dell'elenco del paragrafo per utilizzare l'elenco copiato.
 
 ```csharp
 Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
@@ -72,67 +72,67 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## Passaggio 5: aggiungere il documento di origine al documento di destinazione
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.UseDestinationStyles` تضمن المعلمة استخدام أنماط قائمة المستند الوجهة أثناء عملية الإلحاق.
+ Ora puoi aggiungere il documento di origine al documento di destinazione utilizzando il file`AppendDocument` metodo del`Document` classe. IL`ImportFormatMode.UseDestinationStyles` Il parametro assicura che gli stili di elenco del documento di destinazione vengano utilizzati durante l'operazione di accodamento.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## Passaggio 6: salvare il documento finale
 
-أخيرًا ، احفظ المستند المدمج مع تمكين ميزة List Use Destination Styles باستخدام ملحق`Save` طريقة`Document` فصل.
+Infine, salva il documento unito con la funzione Elenco Usa stili di destinazione abilitata utilizzando il file`Save` metodo del`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
 ```
 
-### مثال على شفرة المصدر لقائمة استخدم أنماط الوجهة باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per List Usa stili di destinazione utilizzando Aspose.Words per .NET 
 
-إليك شفرة المصدر الكاملة لميزة "List Use Destination Styles" في C # باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente completo per la funzionalità "Elenco stili destinazione uso" in C# utilizzando Aspose.Words per .NET:
 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// قم بتعيين المستند المصدر للمتابعة مباشرة بعد نهاية المستند الوجهة.
+	// Impostare il documento di origine in modo che continui subito dopo la fine del documento di destinazione.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// تتبع القوائم التي تم إنشاؤها.
+	// Tieni traccia degli elenchi che vengono creati.
 	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
 	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 	{
 		if (para.IsListItem)
 		{
 			int listId = para.ListFormat.List.ListId;
-			// تحقق مما إذا كان المستند الوجهة يحتوي على قائمة بهذا المعرف بالفعل. إذا كان الأمر كذلك ، فقد يكون هذا
-			// يتسبب في تشغيل القائمتين معًا. قم بإنشاء نسخة من القائمة في المستند المصدر بدلاً من ذلك.
+			// Controlla se il documento di destinazione contiene già un elenco con questo ID. Se lo fa, allora questo potrebbe
+			// fare in modo che i due elenchi vengano eseguiti insieme. Crea invece una copia dell'elenco nel documento di origine.
 			if (dstDoc.Lists.GetListByListId(listId) != null)
 			{
 				Aspose.Words.Lists.List currentList;
-				// توجد بالفعل قائمة تم نسخها حديثًا لهذا المعرف ، واسترجع القائمة المخزنة ،
-				// واستخدامها في الفقرة الحالية.
+				// Esiste già un elenco appena copiato per questo ID, recuperare l'elenco memorizzato,
+				// e usalo sul paragrafo corrente.
 				if (newLists.ContainsKey(listId))
 				{
 					currentList = newLists[listId];
 				}
 				else
 				{
-					// أضف نسخة من هذه القائمة إلى المستند وقم بتخزينها للرجوع إليها لاحقًا.
+					// Aggiungi una copia di questo elenco al documento e conservalo per riferimento futuro.
 					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
 					newLists.Add(listId, currentList);
 				}
-				// اضبط قائمة هذه الفقرة على القائمة المنسوخة.
+				// Imposta l'elenco di questo paragrafo sull'elenco copiato.
 				para.ListFormat.List = currentList;
 			}
 		}
 	}
-	// قم بإلحاق المستند المصدر بنهاية المستند الوجهة.
+	// Aggiungi il documento di origine alla fine del documento di destinazione.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة قائمة استخدام أنماط الوجهة باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع أنماط القائمة من المستند الوجهة.
+Questo è tutto! Hai implementato correttamente la funzione List Use Destination Styles utilizzando Aspose.Words per .NET. Il documento finale conterrà il contenuto unito con gli stili di elenco del documento di destinazione.

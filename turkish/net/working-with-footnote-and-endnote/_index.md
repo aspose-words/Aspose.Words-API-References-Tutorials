@@ -1,17 +1,17 @@
 ---
-title: العمل مع الحاشية السفلية والتعليق الختامي
-linktitle: العمل مع الحاشية السفلية والتعليق الختامي
-second_title: Aspose.Words لمراجع .NET API
-description: تشرح البرامج التعليمية كيفية تعيين الحاشية السفلية والتعليقات الختامية في مستند Word باستخدام Aspose.Words for .NET
+title: Dipnot ve Sonnot ile Çalışma
+linktitle: Dipnot ve Sonnot ile Çalışma
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, Aspose.Words for .NET kullanarak Word Belgesinde Dipnot ve son notun nasıl ayarlanacağını açıklar.
 type: docs
 weight: 660
 url: /tr/net/working-with-footnote-and-endnote/
 ---
-يعد العمل باستخدام الحواشي السفلية والتعليقات الختامية مصدرًا شاملاً يرشدك خلال العمل مع الحواشي السفلية والتعليقات الختامية في مستندات Word باستخدام مكتبة Aspose.Words لـ .NET. توفر البرامج التعليمية شرحًا تفصيليًا خطوة بخطوة ، وشفرة مصدر كاملة ، وأمثلة عملية لإضافة الحواشي السفلية والتعليقات الختامية وتعديلها وإزالتها. ستتعلم أيضًا كيفية تخصيص تنسيق وأسلوب الملاحظات ، والتنقل بين الملاحظات ، وتحويلها إلى تنسيقات مختلفة ، مثل PDF أو HTML. هذا المورد ضروري للمطورين الراغبين في إدارة المراجع والتعليقات التوضيحية في مستندات Word الخاصة بهم باستخدام Aspose.Words for .NET.
+Dipnotlar ve Sonnotlarla Çalışmak, .NET için Aspose.Words kitaplığını kullanarak Word belgelerinizdeki dipnotlar ve sonnotlarla çalışırken size yol gösteren kapsamlı bir kaynaktır. Öğreticiler, ayrıntılı adım adım açıklamalar, eksiksiz kaynak kodu ve dipnotları ve son notları eklemek, değiştirmek ve kaldırmak için pratik örnekler sağlar. Ayrıca notların biçimini ve stilini özelleştirmeyi, notlar arasında gezinmeyi ve bunları PDF veya HTML gibi farklı biçimlere dönüştürmeyi de öğreneceksiniz. Bu kaynak, Aspose.Words for .NET kullanarak Word belgelerindeki referansları ve açıklamaları yönetmek isteyen geliştiriciler için gereklidir.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [تعيين أعمدة الملاحظات القدم](./set-foot-note-columns/) | تعرف على كيفية تعيين عدد الأعمدة للحواشي السفلية في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تعيين موضع الحاشية السفلية وملاحظة النهاية](./set-footnote-and-end-note-position/) | تعرف على كيفية تعيين موضع الحواشي السفلية والتعليقات الختامية في مستندات Word باستخدام Aspose.Words for .NET. |
-| [قم بتعيين خيارات التعليق الختامي](./set-endnote-options/) | تعرف على كيفية تعيين خيارات التعليقات الختامية في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Dip Not Sütunlarını Ayarla](./set-foot-note-columns/) | Aspose.Words for .NET kullanarak Word belgelerindeki dipnotlar için sütun sayısını nasıl ayarlayacağınızı öğrenin. |
+| [Dipnot ve Son Not Konumunu Ayarla](./set-footnote-and-end-note-position/) | Aspose.Words for .NET kullanarak Word belgelerinde dipnotların ve son notların konumunu nasıl ayarlayacağınızı öğrenin. |
+| [Son Not Seçeneklerini Ayarla](./set-endnote-options/) | Aspose.Words for .NET kullanarak Word belgelerinde son not seçeneklerini nasıl ayarlayacağınızı öğrenin. |

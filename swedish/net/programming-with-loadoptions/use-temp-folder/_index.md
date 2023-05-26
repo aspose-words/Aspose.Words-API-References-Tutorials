@@ -1,52 +1,52 @@
 ---
-title: استخدم مجلد Temp
-linktitle: استخدم مجلد Temp
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام مجلد مؤقت عند تحميل المستندات باستخدام Aspose.Words for .NET.
+title: Använd Temp-mappen
+linktitle: Använd Temp-mappen
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder en tillfällig mapp när du laddar upp dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-loadoptions/use-temp-folder/
 ---
 
-عند العمل مع مستندات Word في تطبيق C # ، قد يكون من الضروري استخدام مجلد مؤقت لتخزين الملفات المؤقتة التي تم إنشاؤها أثناء معالجة المستند. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحديد مجلد مؤقت باستخدام خيارات تحميل LoadOptions. في هذا الدليل المفصل خطوة بخطوة ، سنوضح لك كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند باستخدام مجلد مؤقت محدد باستخدام خيارات تحميل LoadOptions.
+När du arbetar med Word-dokument i en C#-applikation kan det vara nödvändigt att använda en temporär mapp för att lagra temporära filer som genererats under dokumentbehandlingen. Med Aspose.Words-biblioteket för .NET kan du enkelt ange en tillfällig mapp med laddningsalternativen LoadOptions. I den här steg-för-steg-guiden kommer vi att visa dig hur du använder Aspose.Words för .NET C#-källkod för att ladda ett dokument med hjälp av en temporär mapp som anges med laddningsalternativen LoadOptions.
 
-## فهم مكتبة Aspose.Words
+## Förstå Aspose.Words-biblioteket
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Innan du dyker in i koden är det viktigt att förstå Aspose.Words-biblioteket för .NET. Aspose.Words är ett kraftfullt bibliotek för att skapa, redigera, konvertera och skydda Word-dokument på olika plattformar inklusive .NET. Den erbjuder många funktioner för att manipulera dokument, som att infoga text, ändra formatering, lägga till avsnitt och mycket mer.
 
-## تكوين خيارات التحميل
+## Konfigurera laddningsalternativ
 
-الخطوة الأولى هي تكوين خيارات التحميل لوثيقتنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى ضبط خاصية TempFolder على مسار المجلد المؤقت المطلوب. هيريس كيفية القيام بذلك:
+Det första steget är att konfigurera laddningsalternativen för vårt dokument. Använd klassen LoadOptions för att ange laddningsparametrar. I vårt fall måste vi ställa in TempFolder-egenskapen till sökvägen till den önskade temporära mappen. Så här gör du:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { TempFolder = ArtifactsDir };
 ```
 
-نقوم بإنشاء كائن LoadOptions جديد وتعيين خاصية TempFolder إلى مسار المجلد المؤقت المطلوب.
+Vi skapar ett nytt LoadOptions-objekt och ställer in TempFolder-egenskapen till sökvägen till den önskade temporära mappen.
 
-## تحميل المستند باستخدام مجلد مؤقت محدد
+## Ladda upp dokument med den angivna temporära mappen
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل المستند باستخدام فئة Document وتحديد خيارات التحميل. هنا مثال :
+Nu när vi har konfigurerat laddningsalternativen kan vi ladda dokumentet med klassen Document och ange laddningsalternativen. Här är ett exempel :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Document.docx" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+I det här exemplet laddar vi dokumentet "Document.docx" som finns i dokumentkatalogen med de angivna laddningsalternativen.
 
-### مثال على شفرة المصدر لـ LoadOptions مع وظيفة "Use Temp Folder" باستخدام Aspose.Words for .NET
+### Exempel på källkod för LoadOptions med funktionen "Use Temp Folder" med Aspose.Words för .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "استخدام مجلد مؤقت"
+// Konfigurera laddningsalternativ med funktionen "Använd temporär mapp".
 LoadOptions loadOptions = new LoadOptions { TempFolder = ArtifactsDir };
 
-// قم بتحميل المستند باستخدام مجلد مؤقت محدد
+// Ladda dokumentet med en angiven tillfällig mapp
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 ```
 
-## خاتمة
+## Slutsats
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند باستخدام مجلد مؤقت محدد باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يسمح استخدام مجلد مؤقت بتخزين الملفات المؤقتة التي تم إنشاؤها أثناء معالجة المستندات بطريقة منظمة وفعالة.
+den här guiden förklarade vi hur man laddar upp ett dokument med en viss temporär mapp med Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Genom att använda en temporär mapp kan temporära filer som genereras under dokumentbehandlingen lagras på ett organiserat och effektivt sätt.

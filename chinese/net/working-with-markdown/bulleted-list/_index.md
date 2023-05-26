@@ -1,62 +1,62 @@
 ---
-title: قائمة نقطية
-linktitle: قائمة نقطية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء قائمة نقطية باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: 项目符号列表
+linktitle: 项目符号列表
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 分步指南创建项目符号列表。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/bulleted-list/
 ---
 
-في هذا البرنامج التعليمي ، سنخبرك بكيفية إنشاء قائمة نقطية باستخدام Aspose.Words for .NET. يتم استخدام قائمة نقطية لسرد العناصر بدون استخدام الترقيم.
+在本教程中，我们将告诉您如何使用 Aspose.Words for .NET 创建项目符号列表。项目符号列表用于在不使用编号的情况下列出项目。
 
-## الخطوة 1: استخدام منشئ المستندات
+## 第 1 步：使用文档生成器
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+首先，我们将使用文档生成器将内容添加到我们的文档中。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تطبيق قائمة نقطية افتراضية
+## 第 2 步：应用默认项目符号列表
 
- يمكننا تطبيق قائمة افتراضية ذات تعداد نقطي باستخدام قائمة منشئ المستندات`ApplyBulletDefault` طريقة.
+我们可以使用文档生成器的应用默认项目符号列表`ApplyBulletDefault`方法。
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## الخطوة 3: تخصيص تنسيق الرمز النقطي
+## 第 3 步：自定义项目符号格式
 
- يمكننا تخصيص تنسيق الرمز النقطي من خلال الوصول إلى خصائص`ListFormat.List.ListLevels[0]`. في هذا المثال ، نستخدم الشرطة "-" كرمز نقطي.
+我们可以通过访问的属性来自定义项目符号格式`ListFormat.List.ListLevels[0]`.在本例中，我们使用破折号“-”作为项目符号。
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## الخطوة 4: إضافة عناصر إلى القائمة
+## 第 4 步：将项目添加到列表
 
- يمكننا الآن إضافة عناصر إلى القائمة النقطية باستخدام أداة إنشاء المستندات`Writeln` طريقة.
+现在我们可以使用文档生成器的将项目添加到项目符号列表`Writeln`方法。
 
 ```csharp
 builder. Writen("Element 1");
 builder. Writen("Element 2");
 ```
 
-## الخطوة 5: إزالة المسافة البادئة من القائمة
+## 第 5 步：从列表中删除缩进
 
- إذا أردنا إنشاء قائمة فرعية ، فيمكننا زيادة المسافة البادئة باستخدام`ListFormat.ListIndent()` طريقة. في هذا المثال ، نضيف قائمة فرعية إلى البندين 2 أ و 2 ب.
+如果我们想创建一个子列表，我们可以使用`ListFormat.ListIndent()`方法。在此示例中，我们向项目 2a 和 2b 添加了一个子列表。
 
 ```csharp
 builder.ListFormat.ListIndent();
 builder. Writeln("Element 2a");
 builder.Writeln("Element 2b");
 ```
-### مثال على شفرة المصدر لقائمة التعداد النقطي باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的项目符号列表示例源代码
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	//使用文档生成器向文档添加内容。
 	DocumentBuilder builder = new DocumentBuilder();
 
 	builder.ListFormat.ApplyBulletDefault();
@@ -72,5 +72,5 @@ builder.Writeln("Element 2b");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية إنشاء قائمة نقطية باستخدام Aspose.Words for .NET.
+恭喜！您现在已经学习了如何使用 Aspose.Words for .NET 创建项目符号列表。
 

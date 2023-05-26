@@ -1,54 +1,54 @@
 ---
-title: تعيين أعمدة الملاحظات القدم
-linktitle: تعيين أعمدة الملاحظات القدم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين عدد الأعمدة للحواشي السفلية في مستندات Word باستخدام Aspose.Words for .NET.
+title: Fußnotenspalten festlegen
+linktitle: Fußnotenspalten festlegen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Anzahl der Spalten für Fußnoten in Word-Dokumenten festlegen.
 type: docs
 weight: 10
 url: /de/net/working-with-footnote-and-endnote/set-foot-note-columns/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتعيين عدد الأعمدة للحواشي السفلية في مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET die Anzahl der Spalten für Fußnoten in einem Word-Dokument festlegen. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek von der offiziellen Website herunter und installieren Sie sie.
 
-## الخطوة 1: تهيئة كائن المستند
+## Schritt 1: Initialisieren des Dokumentobjekts
 
- أولاً ، قم بتهيئة ملف`Document` من خلال توفير المسار إلى المستند المصدر:
+ Initialisieren Sie zunächst die`Document` Objekt, indem Sie den Pfad zu Ihrem Quelldokument angeben:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## الخطوة 2: إعداد أعمدة الحواشي السفلية
+## Schritt 2: Fußnotenspalten festlegen
 
- بعد ذلك ، قم بالوصول إلى`FootnoteOptions`خاصية المستند وتعيين`Columns` الخاصية لتحديد عدد أعمدة الحواشي السفلية. في هذا المثال ، قمنا بتعيينه على 3 أعمدة:
+ Als nächstes greifen Sie auf zu`FootnoteOptions`Eigenschaft des Dokuments und legen Sie die fest`Columns` Eigenschaft, um die Anzahl der Spalten für Fußnoten anzugeben. In diesem Beispiel legen wir es auf 3 Spalten fest:
 
 ```csharp
 doc.FootnoteOptions.Columns = 3;
 ```
 
-## الخطوة 3: حفظ المستند
+## Schritt 3: Speichern des Dokuments
 
-أخيرًا ، احفظ المستند المعدل:
+Speichern Sie abschließend das geänderte Dokument:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootNoteColumns.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تعيين عدد الأعمدة للحواشي السفلية في مستند Word باستخدام Aspose.Words for .NET.
+Das ist es! Sie haben die Anzahl der Spalten für Fußnoten in einem Word-Dokument mit Aspose.Words für .NET erfolgreich festgelegt.
 
-### مثال على شفرة المصدر لـ Set Footnote Columns باستخدام Aspose.Words for .NET
+### Beispielquellcode für „Fußnotenspalten festlegen“ mit Aspose.Words für .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 Document doc = new Document(dataDir + "Document.docx");
 
-// حدد عدد الأعمدة التي يتم بها تنسيق منطقة الحواشي السفلية.
+// Geben Sie die Anzahl der Spalten an, mit denen der Fußnotenbereich formatiert wird.
 doc.FootnoteOptions.Columns = 3;
 
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootNoteColumns.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprechend Ihren spezifischen Anforderungen modifizieren.

@@ -1,33 +1,33 @@
 ---
-title: المثيل الافتراضي لإعدادات الخط
-linktitle: المثيل الافتراضي لإعدادات الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET.
+title: Yazı Tipi Ayarları Varsayılan Örneği
+linktitle: Yazı Tipi Ayarları Varsayılan Örneği
+second_title: Aspose.Words for .NET API Referansı
+description: Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde varsayılan yazı tipi ayarlarının nasıl yapılandırılacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/font-settings-default-instance/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تسمح لك إعدادات الخط الافتراضية بتحديد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu öğreticide, .NET için Aspose.Words kitaplığı kullanılarak bir Word belgesinde varsayılan yazı tipi ayarlarının nasıl yapılandırılacağı konusunda size yol göstereceğiz. Varsayılan yazı tipi ayarları, belgeleri yüklerken ve işlerken kullanılan yazı tipi kaynaklarını belirtmenize olanak tanır. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تكوين إعدادات الخط الافتراضية
- بعد ذلك ، سننشئ مثيلًا لـ`FontSettings` استخدام`FontSettings.DefaultInstance`، ثم سنحدد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها. في هذا المثال ، نستخدم مصدر خط نظام ومصدر خط مجلد.
+## 2. Adım: Varsayılan Yazı Tipi Ayarlarını Yapılandırın
+ Ardından, bir örneğini oluşturacağız`FontSettings` kullanarak`FontSettings.DefaultInstance`ve ardından belgeleri yüklerken ve işlerken kullanılan yazı tipi kaynaklarını belirteceğiz. Bu örnekte, bir sistem yazı tipi kaynağı ve bir klasör yazı tipi kaynağı kullanıyoruz.
 
 ```csharp
-// تكوين إعدادات الخط الافتراضية
+// Varsayılan yazı tipi ayarlarını yapılandırın
 FontSettings fontSettings = FontSettings.DefaultInstance;
 fontSettings.SetFontsSources(new FontSourceBase[]
 {
@@ -36,21 +36,21 @@ new FolderFontSource("C:\\MyFonts\\", true)
 });
 ```
 
-## الخطوة 3: تحميل المستند مع إعدادات الخط
- الآن سنقوم بتحميل المستند باستخدام`LoadOptions` وتحديد إعدادات الخط المراد استخدامها.
+## 3. Adım: Belgeyi yazı tipi ayarlarıyla yükleyin
+ Şimdi kullanarak belgeyi yükleyeceğiz`LoadOptions` ve kullanılacak yazı tipi ayarlarını belirleme.
 
 ```csharp
-// قم بتحميل المستند بإعدادات الخط
+// Belgeyi yazı tipi ayarlarıyla yükleyin
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.FontSettings = fontSettings;
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
 
-### نموذج كود مصدر لإعدادات الخط الافتراضي باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Yazı Tipi Ayarları Varsayılan Örneği için örnek kaynak kodu 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;
@@ -65,5 +65,5 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET. من خلال تحديد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها ، يمكنك التحكم في مظهر الخطوط في مستنداتك. لا تتردد في استخدام هذه الميزة لتخصيص إعدادات الخط في مشاريعك.
+## Çözüm
+Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde varsayılan yazı tipi ayarlarının nasıl yapılandırılacağını gördük. Belgeleri yüklerken ve görüntülerken kullanılan yazı tipi kaynaklarını belirterek, belgelerinizdeki yazı tiplerinin görünümünü kontrol edebilirsiniz. Projelerinizde yazı tipi ayarlarını özelleştirmek için bu özelliği kullanmaktan çekinmeyin.

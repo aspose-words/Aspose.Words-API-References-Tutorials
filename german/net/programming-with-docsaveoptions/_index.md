@@ -1,21 +1,21 @@
 ---
-title: البرمجة باستخدام Docsaveoptions
-linktitle: البرمجة باستخدام Docsaveoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على مستند مشفر بكلمة مرور ، ولا تقم بضغط ملفات تعريف صغيرة ولا تقم بحفظ تعداد نقطي للصورة
+title: Programmieren mit Docsaveoptions
+linktitle: Programmieren mit Docsaveoptions
+second_title: Aspose.Words für .NET API-Referenz
+description: Tutorials enthalten verschlüsselte Dokumente mit Passwort, komprimieren keine kleinen Metadateien und speichern keine Bildaufzählungszeichen
 type: docs
 weight: 1600
 url: /de/net/programming-with-docsaveoptions/
 ---
-توفر البرامج التعليمية Aspose.Words for .NET حول البرمجة باستخدام DocSaveOptions دليلاً شاملاً للعمل مع خيارات حفظ المستندات في Aspose.Words. توجهك هذه البرامج التعليمية عبر ميزات مختلفة ، بما في ذلك حفظ المستندات بتنسيق PDF و XPS و HTML والمزيد. ستتعلم أيضًا كيفية إدارة خيارات الضغط وأمان المستندات والبيانات الوصفية والخطوط المضمنة والمزيد.
+Die Aspose.Words für .NET-Tutorials zum Programmieren mit DocSaveOptions bieten eine umfassende Anleitung zum Arbeiten mit Optionen zum Speichern von Dokumenten in Aspose.Words. Diese Tutorials führen Sie durch verschiedene Funktionen, einschließlich des Speicherns von Dokumenten in PDF, XPS, HTML und mehr. Außerdem erfahren Sie, wie Sie Komprimierungsoptionen, Dokumentsicherheit, Metadaten, eingebettete Schriftarten und mehr verwalten.
 
-كل برنامج تعليمي مصحوب بشفرة مصدر مفصلة وأمثلة عملية تسمح لك بسهولة فهم وتطبيق المفاهيم المقدمة. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان خيارات حفظ المستندات في Aspose.Words for .NET وإنشاء مستندات عالية الجودة تلبي احتياجاتك الخاصة.
+Jedes Tutorial wird von detailliertem Quellcode und praktischen Beispielen begleitet, die es Ihnen ermöglichen, die vorgestellten Konzepte leicht zu verstehen und anzuwenden. Unabhängig davon, ob Sie Anfänger oder erfahrener Entwickler sind, helfen Ihnen diese Tutorials dabei, die Optionen zum Speichern von Dokumenten in Aspose.Words für .NET zu beherrschen und hochwertige Dokumente zu erstellen, die Ihren spezifischen Anforderungen entsprechen.
 
-باتباع هذه البرامج التعليمية ، ستتعلم أفضل الممارسات لحفظ المستندات بتنسيقات مختلفة ، وتخصيص خيارات الحفظ وفقًا لتفضيلاتك. ستمنحك الأمثلة العملية خبرة عملية لتطبيق هذه المعرفة في مشاريعك الخاصة. باستخدام Aspose.Words for .NET ، لديك أداة قوية لمعالجة مستندات Word وستساعدك هذه البرامج التعليمية على تحقيق أقصى استفادة من هذه المكتبة.
+Wenn Sie diesen Tutorials folgen, lernen Sie die Best Practices zum Speichern Ihrer Dokumente in verschiedenen Formaten kennen und können die Speicheroptionen nach Ihren Wünschen anpassen. Durch die Praxisbeispiele erhalten Sie praktische Erfahrungen, um dieses Wissen in Ihren eigenen Projekten anzuwenden. Mit Aspose.Words für .NET verfügen Sie über ein leistungsstarkes Tool zum Bearbeiten von Word-Dokumenten und diese Tutorials helfen Ihnen, das Beste aus dieser Bibliothek herauszuholen.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [تشفير الوثيقة بكلمة مرور](./encrypt-document-with-password/) | تعرف على كيفية تشفير المستندات بكلمة مرور باستخدام Aspose.Words for .NET.  |
-| [لا تقم بضغط ملفات التعريف الصغيرة](./do-not-compress-small-metafiles/) | تعرف على كيفية استخدام Aspose.Words for .NET لتمكين ميزة لا تقم بضغط ملفات التعريف الصغيرة عند حفظ المستندات. |
-| [لا تقم بحفظ صورة نقطية](./do-not-save-picture-bullet/) | تعرف على كيفية تعطيل حفظ الرموز النقطية للصور في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Dokument mit Passwort verschlüsseln](./encrypt-document-with-password/) | Erfahren Sie, wie Sie Dokumente mit Aspose.Words für .NET mit einem Passwort verschlüsseln.  |
+| [Komprimieren Sie keine kleinen Metadateien](./do-not-compress-small-metafiles/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Funktion „Kleine Metadateien nicht komprimieren“ beim Speichern von Dokumenten aktivieren. |
+| [Bildaufzählung nicht speichern](./do-not-save-picture-bullet/) | Erfahren Sie, wie Sie das Speichern von Bildaufzählungszeichen in Word-Dokumenten mit Aspose.Words für .NET deaktivieren. |

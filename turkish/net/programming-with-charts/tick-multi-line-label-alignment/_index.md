@@ -1,70 +1,70 @@
 ---
-title: ضع علامة على محاذاة تسمية متعددة الأسطر
-linktitle: ضع علامة على محاذاة تسمية متعددة الأسطر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية محاذاة تسميات التجزئة متعددة الأسطر في محور الرسم البياني باستخدام Aspose.Words for .NET.
+title: Çok Satırlı Etiket Hizalamasını işaretleyin
+linktitle: Çok Satırlı Etiket Hizalamasını işaretleyin
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'i kullanarak çok satırlı etiketleri bir grafik ekseninde nasıl hizalayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/tick-multi-line-label-alignment/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتعيين محاذاة تسميات التجزئة متعددة الأسطر في محور المخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط والوصول إلى المحور وتعديل محاذاة تسمية التجزئة.
+Bu öğretici, Aspose.Words for .NET'in grafik eksenindeki çok satırlı etiketlerin hizalamasını ayarlamak için nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, eksene nasıl erişileceğini ve onay etiketi hizalamasının nasıl değiştirileceğini gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Çıktı belgesinin kaydedileceği bir belge dizini yolu.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 2. Adım: Yeni bir belge oluşturun ve bir grafik ekleyin
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط مبعثر في المستند.
+ Ardından,`InsertChart` yöntemi`DocumentBuilder` belgeye bir dağılım grafiği eklemek için.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
 ChartAxis axis = shape.Chart.AxisX;
 ```
 
-## الخطوة 3: ضبط محاذاة تسمية التجزئة
+## 3. Adım: Onay etiketi hizalamasını ayarlayın
 
- لتعيين محاذاة تسميات التجزئة متعددة الأسطر ، قم بالوصول إلى`AxisX` خاصية الرسم البياني وتعيين`TickLabelAlignment` الخاصية للمحاذاة المطلوبة. في هذا المثال ، قمنا بتعيين المحاذاة إلى`ParagraphAlignment.Right`.
+ Çok satırlı etiketlerin hizalamasını ayarlamak için şuraya erişin:`AxisX` grafiğin özelliğini ayarlayın ve`TickLabelAlignment` özelliğini istediğiniz hizaya getirin. Bu örnekte, hizalamayı şu şekilde ayarladık:`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
 ```
 
-## الخطوة 4: احفظ المستند
+## 4. Adım: Belgeyi kaydedin
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Son olarak, belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 ```
 
-هذا يكمل تنفيذ إعداد محاذاة تسمية العلامات متعددة الأسطر باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanarak çok satırlı etiket hizalamasını ayarlama uygulamasını tamamlar.
 
-### مثال على شفرة المصدر لـ Tick Multi Line Label Alignment باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Çok Satırlı Etiket Hizalama İşareti için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
 	ChartAxis axis = shape.Chart.AxisX;
-	// هذه الخاصية لها تأثير فقط للتسميات متعددة الخطوط.
+	// Bu özelliğin yalnızca çok satırlı etiketler için etkisi vardır.
 	axis.TickLabelAlignment = ParagraphAlignment.Right;
 	doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 ```

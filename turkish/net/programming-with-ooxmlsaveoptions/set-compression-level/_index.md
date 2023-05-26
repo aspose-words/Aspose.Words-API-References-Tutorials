@@ -1,52 +1,52 @@
 ---
-title: اضبط مستوى الضغط
-linktitle: اضبط مستوى الضغط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين مستوى الضغط عند حفظ مستند باستخدام Aspose.Words for .NET.
+title: Sıkıştırma Düzeyini Ayarla
+linktitle: Sıkıştırma Düzeyini Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir belgeyi kaydederken sıkıştırma düzeyini nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-ooxmlsaveoptions/set-compression-level/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف كود المصدر C # المقدم لضبط مستوى الضغط عند حفظ مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة التحكم في مستوى ضغط المستند الذي تم إنشاؤه.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir belgeyi kaydederken sıkıştırma seviyesini ayarlamak için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, oluşturulan belgenin sıkıştırma düzeyini kontrol etmenizi sağlar.
 
-## الخطوة الأولى: تهيئة البيئة
+## 1. Adım: Ortamı ayarlama
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+ Bu adımda, kullanarak belgeyi yüklüyoruz`Document` yöntemi ve yolu yüklenecek DOCX dosyasına geçirme.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي لـ OOXML
+## 3. Adım: OOXML yedekleme seçeneklerini yapılandırma
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { CompressionLevel = CompressionLevel.SuperFast };
 ```
 
- في هذه الخطوة ، نقوم بتهيئة خيارات حفظ OOXML باستخدام امتداد`OoxmlSaveOptions` فصل. قمنا بتعيين مستوى الضغط على`SuperFast` للحصول على ضغط أسرع.
+ Bu adımda, OOXML kaydetme seçeneklerini kullanarak yapılandırıyoruz.`OoxmlSaveOptions` sınıf. Sıkıştırma seviyesini şu şekilde ayarladık:`SuperFast` Daha hızlı sıkıştırma elde etmek için.
 
-## الخطوة 4: احفظ المستند بمستوى الضغط المحدد
+## Adım 4: Belgeyi belirtilen sıkıştırma düzeyiyle kaydedin
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ المستند باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج بامتداد`.docx` بالإضافة إلى خيارات الحفظ المحددة.
+ Bu son adımda, belgeyi kullanarak kaydediyoruz.`Save` yöntemi ve yolu çıkış dosyasına iletmek`.docx` uzantı, belirtilen kaydetme seçenekleriyle birlikte.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لضبط مستوى الضغط عند حفظ مستند. سيتم حفظ الملف الناتج في الدليل المحدد باسم "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx".
+Artık bir belgeyi kaydederken sıkıştırma düzeyini ayarlamak için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan dosya, "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx" adıyla belirtilen dizine kaydedilecektir.
 
-### نموذج التعليمات البرمجية المصدر لـ Set Compression Level باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Sıkıştırma Düzeyini Ayarlamak için örnek kaynak kodu 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Document.docx");
@@ -58,14 +58,14 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveO
         
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة تعيين مستوى الضغط عند حفظ مستند باستخدام Aspose.Words for .NET. من خلال تحديد المستوى المناسب للضغط ، يمكنك تحسين حجم المستند وسرعة الإنشاء.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi kaydederken sıkıştırma seviyesini ayarlamanın işlevselliğini inceledik. Uygun sıkıştırma düzeyini belirleyerek belge boyutunu ve oluşturma hızını optimize edebilirsiniz.
 
- ال`OoxmlSaveOptions`يوفر class المرونة للتحكم في مستوى الضغط عن طريق تعيين`CompressionLevel` إلى قيمة مناسبة ، مثل`SuperFast`. يتيح لك ذلك تحقيق التوازن الصحيح بين حجم الملف وسرعة النسخ الاحتياطي بناءً على احتياجاتك الخاصة.
+ bu`OoxmlSaveOptions`ayarlayarak sıkıştırma düzeyini kontrol etme esnekliği sağlar.`CompressionLevel` gibi uygun bir değere ayarlayın.`SuperFast`. Bu, özel ihtiyaçlarınıza göre dosya boyutu ve yedekleme hızı arasında doğru dengeyi kurmanıza olanak tanır.
 
-يمكن أن يكون استخدام الضغط مفيدًا عندما تحتاج إلى تقليل حجم الملفات التي تم إنشاؤها ، خاصةً للمستندات الكبيرة. يمكن أن يؤدي ذلك إلى تسهيل تخزين المستندات ومشاركتها ونقلها.
+Özellikle büyük belgeler için, oluşturulan dosyaların boyutunu küçültmeniz gerektiğinde sıkıştırma kullanmak faydalı olabilir. Bu, belgeleri saklamayı, paylaşmayı ve iletmeyi kolaylaştırabilir.
 
-يوفر Aspose.Words for .NET مجموعة من الخيارات والميزات القوية لمعالجة المستندات. باستخدام خيارات النسخ الاحتياطي المناسبة ، يمكنك تخصيص عملية إنشاء المستندات وتحسين أداء تطبيقك.
+Aspose.Words for .NET, belge işleme için bir dizi güçlü seçenek ve özellik sunar. Uygun yedekleme seçeneklerini kullanarak belge oluşturma sürecini özelleştirebilir ve uygulamanızın performansını optimize edebilirsiniz.
 
-لا تتردد في استكشاف المزيد من ميزات Aspose.Words for .NET لتحسين سير عمل إنشاء المستندات.
+Belge oluşturma iş akışınızı geliştirmek için Aspose.Words for .NET'in diğer özelliklerini keşfetmekten çekinmeyin.

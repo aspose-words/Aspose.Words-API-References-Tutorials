@@ -1,56 +1,56 @@
 ---
-title: إدراج حقل بلا
-linktitle: إدراج حقل بلا
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية برنامج Insérez un Champ AUCUN dans vos documents Word avec Aspose.Words pour .NET.
+title: Inserisci campo Nessuno
+linktitle: Inserisci campo Nessuno
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come inserire un campione AUCUN nei tuoi documenti Word con Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-field-none/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "Insert NONE Field" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Ecco una guida dettagliata per spiegare il codice sorgente C# di seguito, che utilizza la funzione "Inserisci campo NONE" di Aspose.Words per .NET. Assicurati di seguire attentamente ogni passaggio per ottenere i risultati desiderati.
 
-## الخطوة 1: إعداد دليل المستند
+## Passaggio 1: impostazione della directory dei documenti
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "YOUR DOCUMENT DIRECTORY" con il percorso appropriato alla directory dei tuoi documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## Passaggio 2: creazione del documento e di DocumentBuilder
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Iniziamo creando un nuovo documento e inizializzando un DocumentBuilder.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدخال حقل NONE
+## Passo 3: Inserimento del campo NONE
 
- نحن نستخدم ال`InsertField()` طريقة DocumentBuilder لإدراج حقل NONE في المستند.
+ Noi usiamo il`InsertField()` metodo di DocumentBuilder per inserire un campo NONE nel documento.
 
 ```csharp
 FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, false);
 ```
 
-### مثال على الكود المصدري لإدخال حقل NONE مع Aspose.Words for .NET
+### Esempio di codice sorgente per l'inserimento di un campo NONE con Aspose.Words per .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند و DocumentBuilder.
+// Creare il documento e il DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// أدخل الحقل NONE.
+// Inserisci il campo NESSUNO.
 FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, false);
 
 doc.Save(dataDir + "InsertionFieldNone.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأعدنا تهيئة DocumentBuilder ، ثم قمنا بإدراج حقل NONE. ثم يتم حفظ المستند باسم ملف محدد.
+In questo esempio, abbiamo creato un nuovo documento, inizializzato un DocumentBuilder e quindi inserito un campo NONE. Il documento viene quindi salvato con un nome file specificato.
 
-بهذا نختتم دليلنا حول استخدام ميزة "إدراج NONE Field" مع Aspose.Words for .NET.
+Questo conclude la nostra guida sull'utilizzo della funzione "Inserisci campo NONE" con Aspose.Words per .NET.

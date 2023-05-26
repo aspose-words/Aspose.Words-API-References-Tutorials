@@ -1,56 +1,56 @@
 ---
-title: تعمل حقول النموذج مع الخصائص
-linktitle: تعمل حقول النموذج مع الخصائص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التعامل مع خصائص حقل النموذج في مستندات Word باستخدام Aspose.Words for .NET.
+title: Campos de formulario Trabajar con propiedades
+linktitle: Campos de formulario Trabajar con propiedades
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a trabajar con propiedades de campo de formulario en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-formfields/form-fields-work-with-properties/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية التعامل مع خصائص حقل النموذج في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+En este tutorial paso a paso, lo guiaremos sobre cómo trabajar con propiedades de campos de formulario en un documento de Word utilizando Aspose.Words para .NET. Explicaremos el código fuente de C# provisto y le mostraremos cómo implementarlo en sus propios proyectos.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Para comenzar, asegúrese de tener Aspose.Words para .NET instalado y configurado en su entorno de desarrollo. Si no lo ha hecho, descargue e instale la biblioteca desde el sitio web oficial.
 
-## الخطوة 1: تهيئة كائن المستند
+## Paso 1: inicialización del objeto de documento
 
- أولاً ، قم بتهيئة ملف`Document` عن طريق توفير المسار إلى المستند المصدر الذي يحتوي على حقول النموذج:
+ Primero, inicialice el`Document` objeto proporcionando la ruta a su documento de origen que contiene campos de formulario:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## الخطوة 2: الوصول إلى حقل النموذج
+## Paso 2: acceder a un campo de formulario
 
-بعد ذلك ، قم باسترداد حقل نموذج معين من مجموعة حقول نموذج المستند. في هذا المثال ، نصل إلى حقل النموذج في الفهرس 3:
+A continuación, recupere un campo de formulario específico de la colección de campos de formulario del documento. En este ejemplo, accedemos al campo de formulario en el índice 3:
 
 ```csharp
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## الخطوة 3: العمل مع خصائص حقل النموذج
+## Paso 3: trabajar con propiedades de campo de formulario
 
- يمكنك معالجة الخصائص المختلفة لحقل النموذج بناءً على نوعه. في هذا المثال ، نتحقق مما إذا كان حقل النموذج من النوع`FieldType.FieldFormTextInput` وضبطها`Result` بناء على ذلك:
+ Puede manipular varias propiedades del campo de formulario según su tipo. En este ejemplo, comprobamos si el campo del formulario es del tipo`FieldType.FieldFormTextInput` y establecer su`Result` propiedad en consecuencia:
 
 ```csharp
 if (formField.Type == FieldType.FieldFormTextInput)
     formField.Result = "My name is " + formField.Name;
 ```
 
-لا تتردد في استكشاف خصائص أخرى وإجراء عمليات مختلفة بناءً على متطلباتك المحددة.
+Siéntase libre de explorar otras propiedades y realizar diferentes operaciones en función de sus requisitos específicos.
 
-## الخطوة 4: حفظ المستند
+## Paso 4: Guardar el documento
 
-أخيرًا ، احفظ المستند المعدل:
+Finalmente, guarde el documento modificado:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-هذا كل شيء! لقد نجحت في العمل مع خصائص حقل النموذج في مستند Word باستخدام Aspose.Words for .NET.
+¡Eso es todo! Ha trabajado con éxito con propiedades de campo de formulario en un documento de Word usando Aspose.Words para .NET.
 
-### مثال على كود المصدر لحقول النموذج العمل مع الخصائص باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Campos de formulario Trabajar con propiedades usando Aspose.Words para .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -63,4 +63,4 @@ if (formField.Type == FieldType.FieldFormTextInput)
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Siéntase libre de usar este código en sus propios proyectos y modifíquelo de acuerdo con sus requisitos específicos.

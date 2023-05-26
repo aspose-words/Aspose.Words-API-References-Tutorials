@@ -1,47 +1,47 @@
 ---
-title: الحصول على قائمة الخطوط المتاحة
-linktitle: الحصول على قائمة الخطوط المتاحة
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words for .NET.
+title: Получить список доступных шрифтов
+linktitle: Получить список доступных шрифтов
+second_title: Справочник по API Aspose.Words для .NET
+description: Из этого руководства вы узнаете, как получить список шрифтов, доступных в Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/working-with-fonts/get-list-of-available-fonts/
 ---
-في هذا البرنامج التعليمي ، سنشرح كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words for .NET. تتيح لك قائمة الخطوط المتوفرة معرفة الخطوط التي يمكنك استخدامها في مستنداتك. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+В этом руководстве мы объясним, как получить список шрифтов, доступных в Aspose.Words для .NET. Список доступных шрифтов позволяет узнать, какие шрифты вы можете использовать в своих документах. Мы проведем вас шаг за шагом, чтобы помочь вам понять и реализовать код в вашем проекте .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Предпосылки
+Прежде чем начать, убедитесь, что у вас есть следующие предметы:
+- Знание языка программирования C# на рабочем уровне
+- Библиотека Aspose.Words для .NET, установленная в вашем проекте
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Шаг 1: Определите каталог документов
+ Во-первых, вам нужно указать путь к каталогу, где находится ваш документ Word. Заменять`"YOUR DOCUMENT DIRECTORY"` в коде с соответствующим путем.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تكوين مصادر الخطوط
- بعد ذلك ، سننشئ مثيلًا لـ`FontSettings` واحصل على مصادر الخطوط الحالية باستخدام امتداد`GetFontsSources()` طريقة. سنضيف أيضًا مصدر خط جديدًا عن طريق تحديد مجلد يحتوي على الخطوط.
+## Шаг 2. Настройте источники шрифтов
+ Далее мы создадим экземпляр`FontSettings` и получить существующие источники шрифтов, используя`GetFontsSources()` метод. Мы также добавим новый источник шрифта, указав папку, содержащую шрифты.
 
 ```csharp
-// تكوين مصادر الخط
+// Настройка источников шрифтов
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 
-// أضف مصدر خط جديد
+// Добавить новый источник шрифта
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
 fontSources.Add(folderFontSource);
 
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## الخطوة 3: احصل على قائمة الخطوط المتاحة
- الآن سوف نتصفح الخطوط المتاحة باستخدام امتداد`GetAvailableFonts()` الطريقة على مصدر الخط الأول المحدث.
+## Шаг 3: Получите список доступных шрифтов
+ Теперь мы просмотрим доступные шрифты с помощью`GetAvailableFonts()` метод для первого обновленного источника шрифта.
 
 ```csharp
-// الحصول على قائمة الخطوط المتاحة
+// Получить список доступных шрифтов
 foreach(PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 {
 Console.WriteLine("Font Family Name: " + fontInfo.FontFamilyName);
@@ -52,18 +52,18 @@ Console.WriteLine("Path: " + fontInfo.FilePath);
 ```
 
 
-### عينة من التعليمات البرمجية المصدر للحصول على قائمة الخطوط المتاحة باستخدام Aspose.Words for .NET 
+### Пример исходного кода для получения списка доступных шрифтов с использованием Aspose.Words для .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// أضف مصدر مجلد جديد والذي سيوجه Aspose.Words للبحث في المجلد التالي عن الخطوط.
+// Добавьте новый источник папки, который даст указание Aspose.Words искать шрифты в следующей папке.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// أضف المجلد المخصص الذي يحتوي على خطوطنا إلى قائمة مصادر الخطوط الموجودة.
+// Добавьте пользовательскую папку, содержащую наши шрифты, в список существующих источников шрифтов.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -76,5 +76,5 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words for .NET. يتيح لك هذا معرفة الخطوط التي يمكنك استخدامها في مستنداتك. لا تتردد في استخدام هذه الميزة لاختيار الخطوط المناسبة لاحتياجاتك.
+## Заключение
+В этом руководстве мы увидели, как получить список шрифтов, доступных в Aspose.Words для .NET. Это позволит вам узнать, какие шрифты вы можете использовать в своих документах. Не стесняйтесь использовать эту функцию, чтобы выбрать подходящие шрифты для ваших нужд.

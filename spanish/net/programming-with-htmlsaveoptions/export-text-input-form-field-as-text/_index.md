@@ -1,38 +1,38 @@
 ---
-title: تصدير حقل نموذج إدخال النص كنص
-linktitle: تصدير حقل نموذج إدخال النص كنص
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتصدير حقول نموذج إدخال النص كنص عادي باستخدام Aspose.Words for .NET.
+title: Exportar campo de formulario de entrada de texto como texto
+linktitle: Exportar campo de formulario de entrada de texto como texto
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para exportar campos de formulario de entrada de texto como texto sin formato con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-htmlsaveoptions/export-text-input-form-field-as-text/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتصدير حقول نموذج إدخال النص كنص عادي باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تصدير حقول نموذج إدخال النص كنص مقروء ، بدلاً من تصديرها كعناصر إدخال HTML.
+En este tutorial, lo guiaremos a través del código fuente de C# para exportar campos de formulario de entrada de texto como texto sin formato con Aspose.Words para .NET. Esta función le permite exportar campos de formulario de entrada de texto como texto legible, en lugar de exportarlos como elementos de entrada HTML.
 
-## الخطوة 1: إعداد المشروع
+## Paso 1: Configuración del proyecto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
-في هذه الخطوة ، سنقوم بتحميل المستند للتصدير. استخدم الكود التالي لتحميل المستند من دليل محدد:
+En este paso cargaremos el documento a exportar. Use el siguiente código para cargar el documento desde un directorio específico:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- هذا الرمز ينشئ مثيل`Document` عن طريق تحميل المستند من الدليل المحدد.
+ Este código crea una instancia de`Document` cargando el documento desde el directorio especificado.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي بتنسيق HTML
+## Paso 3: Configuración de las opciones de copia de seguridad de HTML
 
-سنقوم الآن بتكوين خيارات حفظ HTML لتصدير حقول نموذج إدخال النص كنص عادي. استخدم الكود التالي:
+Ahora configuraremos las opciones de guardado de HTML para exportar campos de formulario de entrada de texto como texto sin formato. Usa el siguiente código:
 
 ```csharp
 string imagesDir = Path. Combine(ArtifactsDir, "Images");
 
-// يجب أن يكون المجلد المحدد موجودًا وأن يكون فارغًا.
+// La carpeta especificada debe existir y estar vacía.
 if (Directory.Exists(imagesDir))
 Directory. Delete(imagesDir, true);
 
@@ -45,36 +45,36 @@ ImagesFolder = imagesDir
 };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions`وتعيين`ExportTextInputFormFieldAsText` الخيار ل`true`لتصدير حقول نموذج إدخال النص كنص عادي. علاوة على ذلك ، فإنه يحدد المجلد حيث سيتم حفظ الصور المستخرجة.
+ Este código crea una instancia de`HtmlSaveOptions` establece el`ExportTextInputFormFieldAsText` opción a`true`para exportar campos de formulario de entrada de texto como texto sin formato. Además, especifica la carpeta donde se guardarán las imágenes extraídas.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## Paso 4: Convertir y guardar el documento a HTML
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+Finalmente, convertiremos el documento a HTML utilizando las opciones de guardado de HTML configuradas anteriormente. Usa el siguiente código:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML عن طريق تصدير حقول نموذج إدخال النص كنص عادي ، ويحفظ ملف HTML الذي تم تصديره إلى الدليل المحدد.
+Este código convierte el documento a HTML mediante la exportación de campos de formulario de entrada de texto como texto sin formato y guarda el archivo HTML exportado en el directorio especificado.
 
-### مثال على شفرة المصدر لحقل نموذج إدخال النص على هيئة نص باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Exportar campo de formulario de entrada de texto como texto usando Aspose.Words para .NET
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
 	string imagesDir = Path.Combine(ArtifactsDir, "Images");
 
-	// يجب أن يكون المجلد المحدد موجودًا ويجب أن يكون فارغًا.
+	// La carpeta especificada debe existir y debe estar vacía.
 	if (Directory.Exists(imagesDir))
 		Directory.Delete(imagesDir, true);
 
 	Directory.CreateDirectory(imagesDir);
 
-	// قم بتعيين خيار لتصدير حقول النموذج كنص عادي ، وليس كعناصر إدخال HTML.
+	// Establezca una opción para exportar campos de formulario como texto sin formato, no como elementos de entrada HTML.
 	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 	{
 		ExportTextInputFormFieldAsText = true, ImagesFolder = imagesDir
@@ -84,4 +84,4 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.ht
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+ Asegúrese de especificar la ruta correcta al directorio de documentos en el`dataDir` variable.

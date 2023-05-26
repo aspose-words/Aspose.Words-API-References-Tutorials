@@ -1,64 +1,64 @@
 ---
-title: الانتقال إلى نهاية الإشارة المرجعية
-linktitle: الانتقال إلى نهاية الإشارة المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للانتقال إلى نهاية إشارة مرجعية في مستندات Word باستخدام هذا الدليل التفصيلي خطوة بخطوة.
+title: Déplacer vers la fin du signet
+linktitle: Déplacer vers la fin du signet
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à utiliser Aspose.Words pour .NET pour passer à la fin d'un signet dans des documents Word avec ce guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Bookmark End في Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تمكن المطورين من إنشاء وتعديل وتحويل مستندات Word برمجيًا. تسمح لنا ميزة Move To Bookmark End بالانتقال إلى نهاية إشارة مرجعية معينة داخل مستند وإضافة محتوى بعدها.
+Dans cet exemple, nous allons explorer la fonctionnalité Move To Bookmark End de Aspose.Words pour .NET. Aspose.Words est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programmation. La fonctionnalité Déplacer vers la fin du signet nous permet de naviguer jusqu'à la fin d'un signet spécifique dans un document et d'ajouter du contenu après celui-ci.
 
-## تهيئة البيئة
+## Mise en place de l'environnement
 
-قبل الخوض في تفاصيل التنفيذ ، دعنا نتأكد من إعداد البيئة اللازمة للعمل مع Aspose.Words for .NET. تأكد من حصولك على ما يلي:
+Avant de nous plonger dans les détails de l'implémentation, assurons-nous que l'environnement nécessaire est configuré pour fonctionner avec Aspose.Words pour .NET. Assurez-vous d'avoir les éléments suivants :
 
-- تثبيت عملي لـ Aspose.Words لمكتبة .NET
-- المعرفة الأساسية بلغة البرمجة C #
-- الوصول إلى بيئة تطوير .NET
+- Une installation fonctionnelle de la bibliothèque Aspose.Words pour .NET
+- Connaissance de base du langage de programmation C#
+- Accès à un environnement de développement .NET
 
-## فهم ميزة Move To Bookmark End في Aspose.Words for .NET
+## Comprendre la fonctionnalité Déplacer vers la fin du signet d'Aspose.Words pour .NET
 
-تسمح لك ميزة Move To Bookmark End بالانتقال إلى نهاية إشارة مرجعية في مستند Word باستخدام Aspose.Words for .NET. هذه الميزة مفيدة عندما تريد إضافة محتوى بعد إشارة مرجعية معينة في وثيقتك برمجيًا.
+La fonctionnalité Déplacer vers la fin du signet vous permet de naviguer jusqu'à la fin d'un signet dans un document Word à l'aide de Aspose.Words pour .NET. Cette fonctionnalité est utile lorsque vous souhaitez ajouter du contenu après un signet spécifique dans votre document par programmation.
 
-## شرح شفرة المصدر خطوة بخطوة
+## Expliquer le code source étape par étape
 
-دعنا نقسم كود المصدر المقدم خطوة بخطوة لفهم كيفية استخدام ميزة Move To Bookmark End في Aspose.Words for .NET.
+Décomposons étape par étape le code source fourni pour comprendre comment utiliser la fonctionnalité Déplacer vers la fin du signet dans Aspose.Words pour .NET.
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## Étape 1 : Initialisation du document et du générateur de documents
 
- أولاً ، نحتاج إلى تهيئة`Document` و`DocumentBuilder` أشياء:
+ Tout d'abord, nous devons initialiser le`Document` et`DocumentBuilder` objets:
 
 ```csharp
 Document doc = new Document(MyDir + "Bookmarks.docx");
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: الانتقال إلى نهاية الإشارة المرجعية
+## Étape 2 : Déplacement vers la fin du signet
 
- للانتقال إلى نهاية إشارة مرجعية ، استخدم ملحق`MoveToBookmark` طريقة`DocumentBuilder` فصل:
+ Pour vous déplacer jusqu'à la fin d'un signet, utilisez les`MoveToBookmark` méthode de la`DocumentBuilder` classe:
 
 ```csharp
 builder.MoveToBookmark("MyBookmark1", false, true);
 ```
 
- ال`MoveToBookmark` تأخذ الطريقة ثلاث معلمات:
-- اسم الإشارة المرجعية: أدخل اسم الإشارة المرجعية التي تريد الانتقال إليها.
--  IsBookmarkStart: اضبط على`false` للانتقال إلى نهاية الإشارة المرجعية.
--  IsBookmarkEnd: اضبط على`true` للإشارة إلى أنك تريد الانتقال إلى نهاية الإشارة المرجعية.
+ Le`MoveToBookmark` La méthode prend trois paramètres :
+- Nom du signet : indiquez le nom du signet vers lequel vous souhaitez vous déplacer.
+-  IsBookmarkStart : défini sur`false` pour aller à la fin du signet.
+-  IsBookmarkEnd : défini sur`true` pour indiquer que vous souhaitez vous déplacer jusqu'à la fin du signet.
 
-## الخطوة 3: إضافة محتوى في نهاية الإشارة المرجعية
+## Étape 3 : Ajouter du contenu à la fin du signet
 
-بمجرد الانتقال إلى نهاية الإشارة المرجعية ، يمكنك إضافة محتوى باستخدام الطرق المختلفة التي يوفرها`DocumentBuilder` فصل. في هذا المثال ، نستخدم الامتداد`Writeln` طريقة كتابة سطر من النص:
+Une fois que vous êtes passé à la fin du signet, vous pouvez ajouter du contenu en utilisant les différentes méthodes fournies par le`DocumentBuilder` classe. Dans cet exemple, nous utilisons le`Writeln` méthode pour écrire une ligne de texte :
 
 ```csharp
 builder.Writeln("This is a bookmark.");
 ```
 
- ال`Writeln` تقوم الطريقة بإلحاق النص المحدد كفقرة جديدة في الموضع الحالي لملف`DocumentBuilder`.
+ Le`Writeln` ajoute le texte spécifié en tant que nouveau paragraphe à la position actuelle de la`DocumentBuilder`.
 
-### مثال على شفرة المصدر لـ Move To Bookmark End باستخدام Aspose.Words for .NET
+### Exemple de code source pour Move To Bookmark End en utilisant Aspose.Words pour .NET
 
 ```csharp
 
@@ -70,7 +70,7 @@ builder.Writeln("This is a bookmark.");
 	
 ```
 
-## خاتمة
+## Conclusion
 
-استكشفنا ميزة Move To Bookmark End في Aspose.Words for .NET. لقد تعلمنا كيفية الانتقال إلى نهاية إشارة مرجعية وإضافة محتوى برمجيًا باستخدام كود المصدر المقدم. توفر هذه الميزة المرونة في التعامل مع مستندات Word باستخدام Aspose.Words for .NET.
+nous avons exploré la fonctionnalité Move To Bookmark End de Aspose.Words pour .NET. Nous avons appris à naviguer jusqu'à la fin d'un signet et à ajouter du contenu par programmation à l'aide du code source fourni. Cette fonctionnalité offre une flexibilité dans la manipulation de documents Word à l'aide d'Aspose.Words pour .NET.
 

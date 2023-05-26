@@ -1,31 +1,31 @@
 ---
-title: تكوين ارتباط إلى المحتوى
-linktitle: تكوين ارتباط إلى المحتوى
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لإعداد الارتباط بالمحتوى في مستند باستخدام Aspose.Words for .NET.
+title: 配置内容链接
+linktitle: 配置内容链接
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 设置文档内容链接的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-document-properties/configuring-link-to-content/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإعداد الارتباط بالمحتوى باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة الارتباط بمحتوى معين في مستند.
+在本教程中，我们将引导您通过 C# 源代码设置与 Aspose.Words for .NET 内容的链接。此功能允许您链接到文档中的特定内容。
 
-## الخطوة 1: إعداد المشروع
+## 第 1 步：项目设置
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+首先，在您喜欢的 IDE 中创建一个新的 C# 项目。确保在您的项目中引用了 Aspose.Words for .NET 库。
 
-## الخطوة الثانية: إنشاء المستند والمنشئ
+## 第 2 步：创建文档和构造函数
 
-في هذه الخطوة ، سننشئ مستندًا جديدًا ونهيئ المُنشئ. استخدم الكود التالي:
+在这一步中，我们将创建一个新文档并初始化构造函数。使用以下代码：
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إنشاء إشارة مرجعية
+## 第 3 步：创建书签
 
-الآن سنقوم بإنشاء إشارة مرجعية في المستند. استخدم الكود التالي لإنشاء إشارة مرجعية بنص بداخلها:
+现在我们将在文档中创建一个书签。使用以下代码创建一个包含文本的书签：
 
 ```csharp
 builder. StartBookmark("MyBookmark");
@@ -33,16 +33,16 @@ builder.Writeln("Text inside a bookmark.");
 builder. EndBookmark("MyBookmark");
 ```
 
-ينشئ هذا الرمز إشارة مرجعية تسمى "MyBookmark" ويضيف بعض النص بداخله.
+此代码创建一个名为“MyBookmark”的书签并在其中添加一些文本。
 
-## الخطوة 4: إعداد ارتباط المحتوى
+## 第 4 步：设置内容链接
 
-الآن سنقوم بتكوين رابط المحتوى باستخدام خصائص المستند. استخدم الكود التالي لإضافة واسترداد ارتباط المحتوى:
+现在我们将使用文档属性配置指向内容的链接。使用以下代码添加和检索内容链接：
 
 ```csharp
-// احصل على قائمة بجميع الخصائص المخصصة في المستند.
+//获取文档中所有自定义属性的列表。
 CustomDocumentProperties customProperties = doc.CustomDocumentProperties;
-// أضف خاصية مرتبطة بالمحتوى.
+//添加内容绑定属性。
 DocumentProperty customProperty = customProperties.AddLinkToContent("Bookmark", "MyBookmark");
 customProperty = customProperties["Bookmark"];
 
@@ -53,9 +53,9 @@ string linkSource = customProperty.LinkSource;
 string customPropertyValue = customProperty.Value.ToString();
 ```
 
-يضيف هذا الرمز خاصية متعلقة بالمحتوى تسمى "Bookmark" مع الإشارة المرجعية "MyBookmark". بعد ذلك ، يقوم باسترداد معلومات الخاصية المتعلقة بالمحتوى مثل حالة الارتباط ومصدر الارتباط وقيمة الخاصية.
+此代码添加名为“Bookmark”的内容相关属性，书签为“MyBookmark”。然后，它检索与内容相关的属性信息，例如链接状态、链接源和属性值。
 
-### مثال على شفرة المصدر لتكوين ارتباط إلى المحتوى باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 配置内容链接的示例源代码
 
 ```csharp
 
@@ -66,9 +66,9 @@ string customPropertyValue = customProperty.Value.ToString();
 	builder.Writeln("Text inside a bookmark.");
 	builder.EndBookmark("MyBookmark");
 
-	// استرجع قائمة بكل خصائص المستند المخصصة من الملف.
+	//从文件中检索所有自定义文档属性的列表。
 	CustomDocumentProperties customProperties = doc.CustomDocumentProperties;
-	// إضافة مرتبطة بخاصية المحتوى.
+	//添加链接到内容属性。
 	DocumentProperty customProperty = customProperties.AddLinkToContent("Bookmark", "MyBookmark");
 	customProperty = customProperties["Bookmark"];
 
@@ -80,4 +80,4 @@ string customPropertyValue = customProperty.Value.ToString();
 
 ```
 
-لقد تعلمت الآن كيفية تكوين رابط المحتوى في مستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إنشاء وتكوين روابط لمحتوى معين في مستنداتك الخاصة.
+您现在已经学习了如何使用 Aspose.Words for .NET 配置指向文档内容的链接。按照本教程中提供的分步指南，您可以轻松地创建和配置指向您自己文档中特定内容的链接。

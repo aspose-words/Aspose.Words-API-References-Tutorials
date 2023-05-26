@@ -1,17 +1,17 @@
 ---
-title: قم بإدراج كائن Ole مع حزمة Ole
-linktitle: قم بإدراج كائن Ole مع حزمة Ole
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج كائن OLE مع حزمة OLE في مستند باستخدام Aspose.Words for .NET.
+title: Вставить объект Ole с пакетом Ole
+linktitle: Вставить объект Ole с пакетом Ole
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как вставить объект OLE с пакетом OLE в документ с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود مصدر C # أدناه والذي يوضح كيفية إدراج كائن OLE مع حزمة OLE باستخدام Aspose.Words for .NET.
+Ниже приведено пошаговое руководство по объяснению приведенного ниже исходного кода C#, в котором показано, как вставить объект OLE в пакет OLE с помощью Aspose.Words для .NET.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Шаг 1. Импортируйте необходимые ссылки
+Прежде чем начать, убедитесь, что вы импортировали в свой проект необходимые ссылки для использования Aspose.Words for .NET. Сюда входит импорт библиотеки Aspose.Words и добавление необходимых пространств имен в исходный файл.
 
 ```csharp
 using Aspose.Words;
@@ -19,16 +19,16 @@ using Aspose.Words.Drawing;
 using System.IO;
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومولد مستندات
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` class ومُنشئ المستندات باستخدام امتداد`DocumentBuilder` فصل.
+## Шаг 2: Создайте новый документ и генератор документов
+ На этом шаге мы создадим новый документ, используя`Document` класс и конструктор документов, использующий`DocumentBuilder` сорт.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدراج كائن OLE مع حزمة OLE
- استخدم أداة إنشاء المستندات`InsertOleObject` أسلوب لإدراج كائن OLE مع حزمة OLE في المستند. حدد دفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى.
+## Шаг 3. Вставьте объект OLE с пакетом OLE.
+ Используйте генератор документов`InsertOleObject` метод для вставки объекта OLE с пакетом OLE в документ. Укажите поток данных, тип объекта, параметры отображения и другие необходимые настройки.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -41,14 +41,14 @@ using (Stream stream = new MemoryStream(bs))
 }
 ```
 
-## الخطوة 4: احفظ المستند
- استخدم ملف`Save` طريقة لحفظ المستند في ملف.
+## Шаг 4: Сохраните документ
+ Используйте документ`Save` метод сохранения документа в файл.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لإدراج كائن OLE مع حزمة OLE مع Aspose.Words for .NET
+### Пример исходного кода для вставки объекта OLE в пакет OLE с Aspose.Words для .NET
 
 ```csharp
 Document doc = new Document();
@@ -66,4 +66,4 @@ using (Stream stream = new MemoryStream(bs))
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-هذا نموذج رمز كامل لإدخال كائن OLE مع حزمة OLE مع Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Это полный пример кода для вставки объекта OLE в пакет OLE с помощью Aspose.Words для .NET. Обязательно импортируйте необходимые ссылки и выполните шаги, описанные ранее, чтобы интегрировать этот код в свой проект.

@@ -1,29 +1,29 @@
 ---
-title: المسافة بين النص الآسيوي واللاتيني
-linktitle: المسافة بين النص الآسيوي واللاتيني
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ضبط المسافة تلقائيًا بين النص الآسيوي واللاتيني في مستندك باستخدام Aspose.Words for .NET.
+title: Spazio tra testo asiatico e latino
+linktitle: Spazio tra testo asiatico e latino
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come regolare automaticamente lo spazio tra testo asiatico e latino nel tuo documento con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/document-formatting/space-between-asian-and-latin-text/
 ---
 
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية استخدام ميزة المسافة بين النص الآسيوي واللاتيني باستخدام Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+In questo tutorial, ti mostreremo come utilizzare la funzione Spazio tra testo asiatico e latino con Aspose.Words per .NET. Segui i passaggi seguenti per comprendere il codice sorgente e applicare le modifiche.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Passaggio 1: creazione e configurazione del documento
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Per iniziare, crea un nuovo documento e un oggetto DocumentBuilder associato. Ecco come:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إعداد المسافة بين النص الآسيوي واللاتيني
+## Passaggio 2: impostare lo spazio tra il testo asiatico e quello latino
 
-سنقوم الآن بتكوين المسافة بين النص الآسيوي واللاتيني باستخدام خصائص الكائن ParagraphFormat. إليك الطريقة:
+Ora configureremo lo spazio tra testo asiatico e latino utilizzando le proprietà dell'oggetto ParagraphFormat. Ecco come:
 
 ```csharp
 ParagraphFormat paragraphFormat = builder.ParagraphFormat;
@@ -34,22 +34,22 @@ builder.Writeln("Auto adjust space between Asian and Latin text");
 builder.Writeln("Auto adjust space between Asian text and numbers");
 ```
 
-## الخطوة 3: حفظ المستند
+## Passaggio 3: salvare il documento
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Dopo aver inserito il campo del modulo di immissione del testo, salvare il documento nella posizione desiderata utilizzando il file`Save` metodo. Assicurati di fornire il percorso file appropriato:
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.SpaceBetweenAsianAndLatinText.docx");
 ```
 
-### مثال على شفرة المصدر للمسافة بين النص الآسيوي واللاتيني باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per spazio tra testo asiatico e latino utilizzando Aspose.Words per .NET
 
-فيما يلي شفرة المصدر الكاملة لميزة المسافة بين النص الآسيوي واللاتيني مع Aspose.Words for .NET:
+Ecco il codice sorgente completo per la funzione Space Between Asian and Latin Text con Aspose.Words per .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -65,7 +65,7 @@ doc.Save(dataDir + "DocumentFormatting.SpaceBetweenAsianAndLatinText.docx");
         
 ```
 
-باستخدام هذا الرمز ، ستتمكن من ضبط المسافة تلقائيًا بين النص الآسيوي واللاتيني في المستند باستخدام Aspose.Words for .NET.
+Con questo codice sarai in grado di regolare automaticamente lo spazio tra testo asiatico e latino nel tuo documento usando Aspose.Words per .NET.
 
 
 

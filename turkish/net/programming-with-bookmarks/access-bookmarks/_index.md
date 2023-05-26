@@ -1,62 +1,62 @@
 ---
-title: الوصول إلى الإشارات المرجعية
-linktitle: الوصول إلى الإشارات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الوصول إلى الإشارات المرجعية في مستند Word باستخدام Aspose.Words for .NET.
+title: Yer İmlerine Erişim
+linktitle: Yer İmlerine Erişim
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki yer imlerine nasıl erişeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/access-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إشارات مرجعية في Aspose.Words for .NET library. توفر هذه الميزة الوصول إلى إشارات مرجعية محددة في مستند Word.
+Bu makalede, Aspose.Words for .NET kitaplığında Access Bookmarks işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, bir Word belgesindeki belirli yer imlerine erişim sağlar.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# dili hakkında temel bilgi.
+- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## الخطوة 1: تحميل المستند
+## 1. Adım: Belgeyi yükleme
 
- قبل أن نبدأ في الوصول إلى الإشارات المرجعية ، نحتاج إلى تحميل مستند Word باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` كائن يحدد مسار ملف المستند:
+ Yer imlerine erişmeye başlamadan önce Aspose.Words for .NET kullanarak bir Word belgesi yüklememiz gerekiyor. Bu, bir örneği başlatarak yapılabilir.`Document` belge dosyası yolunu belirten nesne:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## الخطوة 2: الوصول إلى الإشارات المرجعية
+## 2. Adım: Yer imlerine erişim
 
-بمجرد تحميل المستند ، يمكننا الوصول إلى الإشارات المرجعية في المستند. هناك طريقتان للوصول إلى الإشارات المرجعية: عن طريق الفهرس والاسم.
+Belge yüklendikten sonra, belgedeki yer imlerine erişebiliriz. Yer imlerine erişmenin iki yolu vardır: dizine göre ve ada göre.
 
-- الوصول عن طريق الفهرس: في مثالنا ، نستخدم الفهرس 0 للوصول إلى الإشارة المرجعية الأولى للمستند:
+- Dizine göre erişim: Örneğimizde, belgenin ilk yer imine erişmek için 0 dizinini kullanıyoruz:
 
 ```csharp
 Bookmark bookmark1 = doc.Range.Bookmarks[0];
 ```
 
-- الوصول بالاسم: في مثالنا ، نستخدم الاسم "MyBookmark3" للوصول إلى إشارة مرجعية معينة في المستند:
+- Ada göre erişim: Örneğimizde, belgedeki belirli bir yer imine erişmek için "MyBookmark3" adını kullanıyoruz:
 
 ```csharp
 Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
 ```
 
-### مثال على شفرة المصدر للوصول إلى الإشارات المرجعية باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Access Bookmarks için örnek kaynak kodu
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح الوصول إلى الإشارات المرجعية باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanarak yer imlerine erişimi gösteren tam örnek kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 	
-	// حسب الفهرس:
+	// Dizine göre:
 	Bookmark bookmark1 = doc.Range.Bookmarks[0];
-	// بالاسم:
+	// İsimle:
 	Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
    
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة Access Bookmarks في Aspose.Words for .NET. اتبعنا دليلًا تفصيليًا لتحميل مستند والوصول إلى الإشارات المرجعية باستخدام الفهرس والاسم.
+Bu makalede, Aspose.Words for .NET'in Access Bookmarks özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Dizin ve ad kullanarak bir belge yüklemek ve yer imlerine erişmek için adım adım bir kılavuz izledik.

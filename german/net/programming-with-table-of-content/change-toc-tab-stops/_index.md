@@ -1,31 +1,31 @@
 ---
-title: تغيير Toc Tab Stops
-linktitle: تغيير Toc Tab Stops
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير علامات تبويب جدول المحتويات في مستند Word باستخدام Aspose.Words for .NET.
+title: Inhaltsverzeichnis-Tabstopps ändern
+linktitle: Inhaltsverzeichnis-Tabstopps ändern
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Registerkarten des Inhaltsverzeichnisses in einem Word-Dokument ändern.
 type: docs
 weight: 10
 url: /de/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الوظائف التي تقدمها Aspose.Words ، هناك إمكانية تعديل علامات التبويب المستخدمة في جدول محتويات مستند Word. في هذا الدليل ، سنوضح لك كيفية استخدام شفرة المصدر C # الخاصة بـ Aspose.Words for .NET لتغيير علامات التبويب في جدول محتويات المستند.
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten in einer C#-Anwendung. Zu den von Aspose.Words angebotenen Funktionen gehört die Möglichkeit, die in einem Inhaltsverzeichnis eines Word-Dokuments verwendeten Tabs zu ändern. In dieser Anleitung zeigen wir Ihnen, wie Sie den C#-Quellcode von Aspose.Words für .NET verwenden, um Tabulatoren im Inhaltsverzeichnis eines Dokuments zu ändern.
 
-## فهم مكتبة Aspose.Words
+## Grundlegendes zur Aspose.Words-Bibliothek
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك علامات تبويب جدول المحتويات المتغيرة.
+Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Arbeit mit Word-Dokumenten einfach und effizient macht. Es bietet zahlreiche Funktionen zum Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten, einschließlich der Änderung von Inhaltsverzeichnis-Registerkarten.
 
-## تحميل المستند الذي يحتوي على جدول المحتويات
+## Laden des Dokuments mit dem Inhaltsverzeichnis
 
-الخطوة الأولى هي تحميل مستند Word الذي يحتوي على جدول المحتويات الذي تريد تعديله. استخدم فئة المستند لتحميل المستند من الملف المصدر. هنا مثال :
+Der erste Schritt besteht darin, das Word-Dokument zu laden, das das Inhaltsverzeichnis enthält, das Sie ändern möchten. Verwenden Sie die Document-Klasse, um das Dokument aus der Quelldatei zu laden. Hier ist ein Beispiel :
 
 ```csharp
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Table of content.docx" الموجود في دليل documents.
+In diesem Beispiel laden wir das Dokument „Inhaltsverzeichnis.docx“, das sich im Dokumentenverzeichnis befindet.
 
-## تغيير علامات التبويب في جدول المحتويات
+## Tabs im Inhaltsverzeichnis wechseln
 
-بمجرد تحميل المستند ، ننتقل إلى كل فقرة في المستند ونتحقق مما إذا كان قد تم تنسيقها باستخدام أنماط نتائج جدول المحتويات (TOC). إذا كان الأمر كذلك ، نقوم بتعديل علامات التبويب المستخدمة لمحاذاة أرقام الصفحات. إليك الطريقة:
+Sobald das Dokument geladen ist, gehen wir jeden Absatz des Dokuments durch und prüfen, ob er mit den Ergebnisstilen des Inhaltsverzeichnisses (TOC) formatiert ist. Wenn ja, ändern wir die Tabulatoren, die zum Ausrichten der Seitenzahlen verwendet werden. Hier ist wie:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -40,28 +40,28 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-في هذا المثال ، نستخدم حلقة للتكرار خلال كل فقرة في المستند. نتحقق بعد ذلك من تنسيق الفقرة باستخدام أنماط نتيجة جدول المحتويات (TOC). إذا كان الأمر كذلك ، فإننا نصل إلى علامة التبويب الأولى المستخدمة في هذه الفقرة ونقوم بتعديلها عن طريق إزالة علامة التبويب القديمة وإضافة علامة تبويب جديدة بموضع معدل.
+In diesem Beispiel verwenden wir eine Schleife, um jeden Absatz im Dokument zu durchlaufen. Anschließend prüfen wir, ob der Absatz mit den TOC-Stilen (Table of Contents Result) formatiert ist. Wenn ja, greifen wir auf den ersten Tab zu, der in diesem Absatz verwendet wird, und ändern ihn, indem wir den alten Tab entfernen und einen neuen Tab mit einer geänderten Position hinzufügen.
 
-## احفظ المستند المعدل
+## Geändertes Dokument speichern
 
-بمجرد إجراء التغييرات اللازمة على علامات التبويب في جدول المحتويات ، يمكنك حفظ المستند المعدل باستخدام طريقة Save لفئة Document. هنا مثال :
+Nachdem Sie die erforderlichen Änderungen an den Registerkarten im Inhaltsverzeichnis vorgenommen haben, können Sie das geänderte Dokument mit der Save-Methode der Document-Klasse speichern. Hier ist ein Beispiel :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-في هذا المثال ، نحفظ المستند المعدل باسم "WorkingWithTableOfContent.ChangeTocTabStops.docx".
+In diesem Beispiel speichern wir das geänderte Dokument als „WorkingWithTableOfContent.ChangeTocTabStops.docx“.
 
-### نموذج شفرة مصدر لميزة "تحرير جدول المحتويات" باستخدام Aspose.Words for .NET
+### Beispielquellcode für die Funktion „Registerkarten für Inhaltsverzeichnis bearbeiten“ mit Aspose.Words für .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند الذي يحتوي على جدول المحتويات
+// Laden Sie das Dokument mit dem Inhaltsverzeichnis
 Document doc = new Document(dataDir + "Table of contents.docx");
 
-// قم بتعديل علامات تبويب جدول المحتويات
+// Ändern Sie die Registerkarten des Inhaltsverzeichnisses
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 {
      if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
@@ -73,10 +73,10 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
      }
 }
 
-// احفظ المستند المعدل
+// Speichern Sie das geänderte Dokument
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا الدليل ، قمنا بتغطية كيفية استخدام Aspose.Words for .NET لتغيير علامات التبويب في جدول محتويات مستند Word باستخدام الكود المصدري C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة تخصيص علامات تبويب جدول المحتويات في مستندات Word الخاصة بك في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع أنماط وتنسيقات مستنداتك ، مما يسمح لك بإنشاء مستندات Word جذابة واحترافية.
+In diesem Handbuch haben wir erläutert, wie Sie Aspose.Words für .NET verwenden, um die Tabulatoren im Inhaltsverzeichnis eines Word-Dokuments mithilfe des bereitgestellten C#-Quellcodes zu ändern. Indem Sie die bereitgestellten Schritte befolgen, können Sie die Inhaltsverzeichnisregisterkarten in Ihren Word-Dokumenten in Ihrer C#-Anwendung ganz einfach anpassen. Aspose.Words bietet enorme Flexibilität und Möglichkeiten, mit den Stilen und Formatierungen Ihrer Dokumente zu arbeiten, sodass Sie attraktive und professionelle Word-Dokumente erstellen können.

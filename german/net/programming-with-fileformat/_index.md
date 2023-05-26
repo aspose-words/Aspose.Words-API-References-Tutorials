@@ -1,21 +1,21 @@
 ---
-title: البرمجة باستخدام تنسيق الملف
-linktitle: البرمجة باستخدام تنسيق الملف
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على اكتشاف تنسيق الملف واكتشاف توقيعات المستندات والتحقق من المستند المشفر
+title: Programmieren mit Dateiformat
+linktitle: Programmieren mit Dateiformat
+second_title: Aspose.Words für .NET API-Referenz
+description: Die Tutorials umfassen die Erkennung des Dateiformats, die Erkennung von Dokumentsignaturen und die Überprüfung verschlüsselter Dokumente
 type: docs
 weight: 1610
 url: /de/net/programming-with-fileformat/
 ---
-تقدم دروس Aspose.Words for .NET التعليمية حول البرمجة بتنسيق ملف موردًا شاملاً للمطورين الراغبين في التعامل مع تنسيقات الملفات المختلفة والعمل معها في تطبيقاتهم. تغطي البرامج التعليمية جوانب مختلفة من البرمجة بتنسيقات ملفات ، بما في ذلك قراءة مستندات Word وكتابتها وتحويلها ومعالجتها.
+Die Aspose.Words für .NET-Tutorials zum Programmieren mit dem Dateiformat bieten eine umfassende Ressource für Entwickler, die verschiedene Dateiformate in ihren Anwendungen bearbeiten und damit arbeiten möchten. Die Tutorials behandeln verschiedene Aspekte der Programmierung mit Dateiformaten, einschließlich Lesen, Schreiben, Konvertieren und Bearbeiten von Word-Dokumenten.
 
-ستتعلم في هذه البرامج التعليمية كيفية استخدام الميزات القوية لـ Aspose.Words for .NET لاستخراج البيانات من مستندات Word وإضافة عناصر مثل النص والصور والجداول وتنفيذ عمليات التخطيط. شكل وتخطيط متقدمان. ستتعلم أيضًا كيفية إدارة خصائص المستند ، مثل البيانات التعريفية والرؤوس والتذييلات والتعليقات.
+In diesen Tutorials erfahren Sie, wie Sie die leistungsstarken Funktionen von Aspose.Words für .NET nutzen, um Daten aus Word-Dokumenten zu extrahieren, Elemente wie Text, Bilder und Tabellen hinzuzufügen und Layoutvorgänge durchzuführen. Erweiterte Form und Layout. Außerdem erfahren Sie, wie Sie Dokumenteigenschaften wie Metadaten, Kopf- und Fußzeilen sowie Kommentare verwalten.
 
-سواء أكنت بحاجة إلى إنشاء تقارير أو إنشاء مستندات مخصصة أو أتمتة مهام مستندات Word أو تحويل المستندات بين تنسيقات مختلفة ، فإن برامج Aspose.Words for .NET التعليمية ستزودك بالمعرفة والمهارات اللازمة لتحقيق أهدافك التنموية.
+Unabhängig davon, ob Sie Berichte generieren, benutzerdefinierte Dokumente erstellen, Word-Dokumentaufgaben automatisieren oder Dokumente zwischen verschiedenen Formaten konvertieren müssen, vermitteln Ihnen Aspose.Words für .NET-Tutorials das Wissen und die Fähigkeiten, um Ihre Entwicklungsziele zu erreichen.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [كشف تنسيق الملف](./detect-file-format/) | دليل خطوة بخطوة لاكتشاف تنسيق ملف المستند باستخدام Aspose.Words for .NET. |
-| [كشف توقيعات الوثيقة](./detect-document-signatures/) | دليل تفصيلي خطوة بخطوة لاكتشاف التوقيعات الرقمية في مستند باستخدام Aspose.Words for .NET. |
-| [تحقق من المستند المشفر](./verify-encrypted-document/) | دليل تفصيلي خطوة بخطوة للتحقق من أن المستند مشفر باستخدام Aspose.Words for .NET. |
+| [Dateiformat erkennen](./detect-file-format/) | Schritt-für-Schritt-Anleitung zum Erkennen des Dokumentdateiformats mit Aspose.Words für .NET. |
+| [Dokumentsignaturen erkennen](./detect-document-signatures/) | Schritt-für-Schritt-Anleitung zum Erkennen digitaler Signaturen in einem Dokument mit Aspose.Words für .NET. |
+| [Verschlüsseltes Dokument überprüfen](./verify-encrypted-document/) | Schritt-für-Schritt-Anleitung zur Überprüfung, ob ein Dokument mit Aspose.Words für .NET verschlüsselt ist. |

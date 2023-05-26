@@ -1,52 +1,52 @@
 ---
-title: تطبيق حدود المخطط التفصيلي
-linktitle: تطبيق حدود المخطط التفصيلي
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتطبيق حدود المخطط على جدول باستخدام Aspose.Words for .NET.
+title: Applica bordo contorno
+linktitle: Applica bordo contorno
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata all'applicazione di un bordo di contorno a una tabella utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/apply-outline-border/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتطبيق حد مخطط على جدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، سيكون لديك فهم واضح لكيفية التعامل مع حدود الجدول في مستندات Word باستخدام Aspose.Words for .NET.
+In questo tutorial, ti guideremo attraverso il processo passo dopo passo per applicare un bordo di contorno a una tabella utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, avrai una chiara comprensione di come manipolare i bordi delle tabelle nei tuoi documenti Word usando Aspose.Words per .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يتم فيه تخزين مستند Word الخاص بك. استبدل "دليل المستندات" بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+Innanzitutto, devi impostare il percorso della directory dei documenti. Qui è dove è memorizzato il tuo documento Word. Sostituisci "LA TUA CARTELLA DEI DOCUMENTI" con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- بعد ذلك ، تحتاج إلى تحميل مستند Word في مثيل لـ`Document` فصل.
+## Passaggio 2: caricare il documento
+ Successivamente, è necessario caricare il documento di Word in un'istanza del file`Document` classe.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: الوصول إلى الجدول
- لتطبيق حدود المخطط ، نحتاج إلى الوصول إلى الجدول في المستند. ال`Table` يمثل class جدولًا في Aspose.Words.
+## Passaggio 3: accedi alla tabella
+ Per applicare un bordo contorno, dobbiamo accedere alla tabella nel documento. IL`Table` class rappresenta una tabella in Aspose.Words.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## الخطوة 4: قم بمحاذاة الجدول إلى وسط الصفحة
- الآن يمكننا محاذاة الجدول إلى وسط الصفحة باستخدام`Alignment` خاصية الجدول.
+## Passaggio 4: allinea la tabella al centro della pagina
+ Ora possiamo allineare la tabella al centro della pagina usando il`Alignment` proprietà della tavola.
 
 ```csharp
 table. Alignment = Table Alignment. Center;
 ```
 
-## الخطوة 5: محو حدود الجدول الموجودة
-للبدء بحدود خارجية جديدة ، نحتاج أولاً إلى محو كل الحدود الموجودة من الجدول. يمكن القيام بذلك باستخدام ملف`ClearBorders()` طريقة.
+## Passaggio 5: cancella i bordi della tabella esistente
+Per iniziare con un nuovo bordo del contorno, dobbiamo prima cancellare tutti i bordi esistenti dalla tabella. Questo può essere fatto usando il`ClearBorders()` metodo.
 
 ```csharp
 table. ClearBorders();
 ```
 
-## الخطوة 6: تحديد حد أخضر حول الجدول
- يمكننا الآن تعيين حد أخضر حول الجدول باستخدام`SetBorder()` طريقة لكل جانب من الجدول. في هذا المثال ، نستخدم حدًا من النوع "مفرد" بسمك 1.5 نقطة ولون أخضر.
+## Passaggio 6: definisci un bordo verde attorno al tavolo
+ Ora possiamo impostare un bordo verde attorno al tavolo usando il`SetBorder()` metodo per ogni lato del tavolo. In questo esempio, stiamo usando un bordo di tipo "Singolo" con uno spessore di 1,5 punti e un colore verde.
 
 ```csharp
 table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
@@ -55,45 +55,45 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## الخطوة 7: املأ الخلايا بلون الخلفية
-لتحسين العرض المرئي للجدول ، يمكننا ملء الخلايا بلون خلفية الأرض
+## Passaggio 7: riempi le celle con un colore di sfondo
+Per migliorare la presentazione visiva della tabella, possiamo riempire le celle con un colore di sfondo a terra
 
-فكرة. في هذا المثال ، نستخدم اللون الأخضر الفاتح.
+idea. In questo esempio, stiamo usando un colore verde chiaro.
 
 ```csharp
 table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 ```
 
-## الخطوة 8: احفظ المستند المعدل
-أخيرًا ، نحفظ المستند المعدل في ملف. يمكنك اختيار اسم وموقع مناسبين للمستند الناتج.
+## Passaggio 8: salvare il documento modificato
+Infine, salviamo il documento modificato in un file. È possibile scegliere un nome e una posizione appropriati per il documento di output.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-تهنئة ! لقد قمت الآن بتطبيق حد مخطط على جدول باستخدام Aspose.Words لـ .NET.
+Congratulazioni! Ora hai applicato un bordo di contorno a una tabella utilizzando Aspose.Words per .NET.
 
-### نموذج التعليمات البرمجية المصدر لـ Apply Outline Border باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Applica bordo contorno utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// قم بمحاذاة الجدول إلى وسط الصفحة.
+	// Allinea la tabella al centro della pagina.
 	table.Alignment = TableAlignment.Center;
-	//امسح أي حدود موجودة من الجدول.
+	//Cancella eventuali bordi esistenti dalla tabella.
 	table.ClearBorders();
-	// ضع حدًا أخضر حول الطاولة وليس بالداخل.
+	// Imposta un bordo verde attorno al tavolo ma non all'interno.
 	table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
 	table.SetBorder(BorderType.Right, LineStyle.Single, 1.5, Color.Green, true);
 	table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 	table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
-	// املأ الخلايا بلون أخضر فاتح.
+	// Riempi le celle con un colore solido verde chiaro.
 	table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تطبيق حد مخطط على جدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة دمج هذه الوظيفة في مشاريع C # الخاصة بك. يعد التلاعب بتنسيق الجدول جانبًا أساسيًا من معالجة المستندات ، ويقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لتحقيق ذلك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية المتطلبات المحددة.
+## Conclusione
+In questo tutorial, abbiamo imparato come applicare un bordo di contorno a una tabella utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata, puoi facilmente integrare questa funzionalità nei tuoi progetti C#. La manipolazione della formattazione delle tabelle è un aspetto essenziale dell'elaborazione dei documenti e Aspose.Words offre un'API potente e flessibile per raggiungere questo obiettivo. Con questa conoscenza, puoi migliorare la presentazione visiva dei tuoi documenti Word e soddisfare requisiti specifici.

@@ -1,59 +1,59 @@
 ---
-title: تحويل الحقول في الجسم
-linktitle: تحويل الحقول في الجسم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET لتحويل حقول الصفحة إلى نص في نص مستند Word.
+title: Konvertera fält i kroppen
+linktitle: Konvertera fält i kroppen
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder Aspose.Words för .NET för att konvertera sidfält till text i brödtexten i ett Word-dokument.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/convert-fields-in-body/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنرشدك إلى كيفية استخدام ميزة ConvertFieldsInBody في Aspose.Words for .NET باستخدام كود المصدر C # المقدم. تتيح لك هذه الميزة تحويل حقول معينة في نص المستند إلى نص عادي ، مما يسهل معالجة المستندات الخاصة بك. اتبع الخطوات أدناه لاستخدام هذه الميزة بشكل فعال.
+I denna steg-för-steg handledning kommer vi att gå igenom hur du använder funktionen ConvertFieldsInBody i Aspose.Words för .NET med den medföljande C#-källkoden. Med den här funktionen kan du konvertera specifika fält i dokumentets brödtext till vanlig text, vilket gör dina dokument lättare att bearbeta. Följ stegen nedan för att använda den här funktionen effektivt.
 
-## الخطوة 1: المتطلبات الأساسية
+## Steg 1: Förutsättningar
 
-قبل أن تبدأ ، تأكد من تثبيت Aspose.Words for .NET وأن لديك مستندًا جاهزًا للمعالجة. تأكد أيضًا من أن لديك مسار الدليل إلى مستنداتك.
+Innan du börjar, se till att du har installerat Aspose.Words för .NET och har ett dokument redo att bearbetas. Se också till att du har katalogsökvägen till dina dokument.
 
-## الخطوة 2: قم بتحميل المستند
+## Steg 2: Ladda dokumentet
 
-ابدأ بالتصريح عن متغير للمسار إلى دليل المستندات ، ثم استخدم هذا المتغير لتهيئة كائن المستند من المستند المحدد. في مثالنا ، يُطلق على المستند اسم "Linked Field.docx".
+Börja med att deklarera en variabel för sökvägen till din dokumentkatalog, använd sedan den variabeln för att initiera ett dokumentobjekt från det angivna dokumentet. I vårt exempel heter dokumentet "Linked fields.docx".
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك.
+// Sökvägen till din dokumentkatalog.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-## الخطوة 3: تحويل حقول الصفحة إلى نص عادي
+## Steg 3: Konvertera sidfält till vanlig text
 
-الآن بعد أن تم تحميل المستند ، يمكننا الانتقال إلى خطوات التحويل. لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول ، يمكنك استخدام ملحق`Range.Fields` طريقة للحصول على جميع الحقول في النطاق المحدد ، ثم تصفية الحقول من النوع`FieldType.FieldPage` . ثم يمكنك استخدام ملف`ForEach` طريقة للتكرار عبر كل حقل واستدعاء`Unlink()` طريقة لتحويله إلى نص عادي.
+Nu när dokumentet är laddat kan vi gå vidare till konverteringsstegen. För att konvertera sidfälten till vanlig text i brödtexten i det första avsnittet kan du använda`Range.Fields` metod för att få alla fält i det angivna intervallet och filtrera sedan bort typfält`FieldType.FieldPage` . Då kan du använda`ForEach` metod för att gå igenom varje fält och anropa`Unlink()` metod för att konvertera den till vanlig text.
 
 ```csharp
-// قم بتمرير المعلمات المناسبة لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول.
+// Skicka lämpliga parametrar för att konvertera sidfälten till vanlig text i brödtexten i det första avsnittet.
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.Unlink());
 ```
 
-## الخطوة 4: احفظ المستند المعدل
+## Steg 4: Spara det ändrade dokumentet
 
- بمجرد تحويل حقول الصفحة إلى نص عادي ، يمكنك حفظ المستند المعدل باستخدام امتداد`Save()` طريقة وتحديد مسار واسم ملف الإخراج. في مثالنا ، نحفظها كـ "WorkingWithFields.ConvertFieldsInBody.docx".
+ När du har konverterat sidfälten till vanlig text kan du spara det ändrade dokumentet med hjälp av`Save()` metod och ange sökvägen och namnet på utdatafilen. I vårt exempel sparar vi det som "WorkingWithFields.ConvertFieldsInBody.docx".
 
 ```csharp
-// احفظ المستند المعدل
+// Spara det ändrade dokumentet
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
 
-### مثال على شفرة المصدر لتحويل الحقول في النص باستخدام Aspose.Words for .NET
+### Exempel på källkod för att konvertera fält i body med Aspose.Words för .NET
 
-إليك مثال شفرة المصدر الكاملة لتحويل الحقول إلى نص باستخدام Aspose.Words for .NET:
+Här är det fullständiga källkodsexemplet för att konvertera fält till kroppen med Aspose.Words för .NET:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك.
+// Sökvägen till din dokumentkatalog.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "Linked fields.docx");
 
-// قم بتمرير المعلمات المناسبة لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول.
+// Skicka lämpliga parametrar för att konvertera sidfälten till vanlig text i brödtexten i det första avsnittet.
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A

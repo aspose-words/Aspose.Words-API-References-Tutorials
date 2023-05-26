@@ -1,27 +1,27 @@
 ---
-title: قارن الخيارات
-linktitle: قارن الخيارات
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح كود مصدر C # لميزة مقارنة الخيارات مع Aspose.Words for .NET.
+title: 比较选项
+linktitle: 比较选项
+second_title: Aspose.Words for .NET API 参考
+description: 分步指南解释比较选项功能的 C# 源代码与 Aspose.Words for .NET。
 type: docs
 weight: 10
 url: /zh/net/compare-documents/compare-options/
 ---
 
-في هذا البرنامج التعليمي ، سنشرح كيفية استخدام ميزة مقارنة الخيارات مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+在本教程中，我们将解释如何使用 Aspose.Words for .NET 的比较选项功能。按照以下步骤了解源代码并应用更改。
 
-## الخطوة 1: مقارنة المستندات بالخيارات المخصصة
+## 第 1 步：将文档与自定义选项进行比较
 
- للبدء ، قم بتحميل وثيقتين للمقارنة. في هذا المثال ، سوف نستخدم الامتداد`Clone()` طريقة لإنشاء نسخة من المستند الأصلي. إليك الطريقة:
+首先，加载两个文档进行比较。在这个例子中，我们将使用`Clone()`方法来创建原始文档的副本。就是这样：
 
 ```csharp
 Document docA = new Document(MyDir + "Document.docx");
 Document docB = docA.Clone();
 ```
 
-## الخطوة 2: تكوين خيارات المقارنة
+## 第 2 步：配置比较选项
 
-سنقوم الآن بتكوين خيارات المقارنة من خلال إنشاء ملف`CompareOptions` الكائن وتعيين الخصائص المختلفة حسب الحاجة. إليك الطريقة:
+我们现在将通过创建一个配置比较选项`CompareOptions`对象并根据需要设置各种属性。就是这样：
 
 ```csharp
 CompareOptions options = new CompareOptions
@@ -37,21 +37,21 @@ IgnoreFootnotes=true
 };
 ```
 
-## الخطوة 3: مقارنة المستندات بالخيارات المخصصة
+## 第 3 步：将文档与自定义选项进行比较
 
- سنستخدم الآن ملف`Compare()` طريقة تمرير الخيارات المخصصة لمقارنة الوثيقتين. ستحدد هذه الطريقة التغييرات في المستند الأصلي. إليك الطريقة:
+我们现在将使用`Compare()`传递自定义选项的方法来比较两个文档。此方法将标记原始文档中的更改。就是这样：
 
 ```csharp
-// قارن المستندات بالخيارات المخصصة
+//将文档与自定义选项进行比较
 docA.Compare(docB, "user", DateTime.Now, options);
 
-// تحقق مما إذا كانت المستندات متساوية
+//检查文件是否相等
 Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal": "Documents are not equal");
 ```
 
-### مثال على كود المصدر لمقارنة الخيارات باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 比较选项的示例源代码
 
-فيما يلي رمز المصدر الكامل لميزة مقارنة الخيارات مع Aspose.Words for .NET:
+以下是 Aspose.Words for .NET 的比较选项功能的完整源代码：
 
 ```csharp
 
@@ -76,5 +76,5 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal": "Documents 
 
 ```
 
-باستخدام هذا الرمز ، يمكنك مقارنة مستندين باستخدام خيارات مخصصة لتجاهل عناصر محددة عند المقارنة مع Aspose.Words for .NET.
+使用此代码，您可以使用自定义选项来比较两个文档，以便在与 Aspose.Words for .NET 进行比较时忽略特定元素。
 

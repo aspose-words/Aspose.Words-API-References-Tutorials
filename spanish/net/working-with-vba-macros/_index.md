@@ -1,23 +1,23 @@
 ---
-title: العمل مع وحدات ماكرو VBA
-linktitle: العمل مع وحدات ماكرو VBA
-second_title: Aspose.Words لمراجع .NET API
-description: تتضمن البرامج التعليمية إنشاء مشروع vba ، وقراءة وحدات ماكرو vba ، وتعديل وحدات ماكرو vba ، ومشروع clone vba ، ووحدة clone vba ، وإزالة المرجع المعطل باستخدام Aspose.Words for .NET
+title: Trabajar con macros de VBA
+linktitle: Trabajar con macros de VBA
+second_title: Referencia de API de Aspose.Words para .NET
+description: Tutoriales que contienen crear proyecto vba, leer macros vba, modificar macros vba, clonar proyecto vba, clonar módulo vba y eliminar referencia rota usando Aspose.Words para .NET
 type: docs
 weight: 1350
 url: /es/net/working-with-vba-macros/
 ---
-يعد العمل مع وحدات ماكرو VBA مورداً قيماً للمطورين. ستوجهك هذه البرامج التعليمية عبر الخطوات للتعامل مع وحدات ماكرو VBA وإدارتها في مستندات Word الخاصة بك. ستتعلم كيفية إضافة وحدات VBA النمطية وإزالتها واستنساخها وتعديلها ، وكذلك كيفية تحميل وحفظ المستندات التي تحتوي على وحدات ماكرو. ستسمح لك أمثلة التعليمات البرمجية الواضحة والشروحات التفصيلية بإتقان تقنيات معالجة الماكرو VBA بشكل فعال في Aspose.Words for .NET.
+Trabajar con macros de VBA es un recurso valioso para los desarrolladores. Estos tutoriales lo guiarán a través de los pasos para manipular y administrar macros de VBA en sus documentos de Word. Aprenderá a agregar, eliminar, clonar y modificar módulos de VBA, así como a cargar y guardar documentos que contengan macros. Los claros ejemplos de código y las explicaciones detalladas le permitirán dominar eficazmente las técnicas de manipulación de macros de VBA en Aspose.Words para .NET.
 
-توفر هذه البرامج التعليمية نهجًا عمليًا لفهم واستخدام ميزات معالجة الماكرو VBA في Aspose.Words for .NET. سواء كنت مطورًا متمرسًا أو بدأت للتو ، ستساعدك هذه الموارد على تطوير مهارات قوية للعمل مع وحدات ماكرو VBA. ستتعلم كيفية تخصيص مستندات Word وأتمتتها باستخدام وحدات الماكرو لأداء مهام محددة. بفضل هذه البرامج التعليمية ، ستتمكن من استغلال إمكانات وحدات ماكرو VBA بالكامل في مشاريع معالجة النصوص الخاصة بك.
+Estos tutoriales brindan un enfoque práctico para comprender y usar las funciones de manipulación de macros de VBA en Aspose.Words para .NET. Tanto si es un desarrollador experimentado como si acaba de empezar, estos recursos le ayudarán a desarrollar habilidades sólidas para trabajar con macros de VBA. Aprenderá a personalizar y automatizar sus documentos de Word mediante el uso de macros para realizar tareas específicas. Gracias a estos tutoriales, podrás explotar al máximo el potencial de las macros de VBA en tus proyectos de procesamiento de texto.
 
-باتباع هذه البرامج التعليمية ، ستتعلم كيفية استخدام Aspose.Words for .NET بشكل فعال لإدارة وحدات ماكرو VBA في مستندات Word الخاصة بك. ستجعلك الإرشادات خطوة بخطوة ، وعينات التعليمات البرمجية ، والنصائح الإرشادية تجعلك تتنقل بثقة في ميزات معالجة الماكرو لـ VBA. سواء أكنت بحاجة إلى إضافة وحدات ماكرو جديدة أو تعديل وحدات ماكرو موجودة أو إدارة وحدات VBA النمطية ، ستزودك هذه البرامج التعليمية بالمعرفة اللازمة للنجاح.
+Al seguir estos tutoriales, aprenderá a usar Aspose.Words para .NET de manera efectiva para administrar macros de VBA en sus documentos de Word. Las instrucciones paso a paso, los ejemplos de código y los consejos prácticos le permitirán navegar con confianza por las funciones de manipulación de macros de VBA. Ya sea que necesite agregar nuevas macros, modificar macros existentes o administrar módulos de VBA, estos tutoriales le brindarán los conocimientos necesarios para tener éxito.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [قم بإنشاء مشروع Vba](./create-vba-project/) | في هذا البرنامج التعليمي ، تعرف على كيفية إنشاء مشروع VBA في مستند Word باستخدام Aspose.Words for .NET. |
-| [قراءة Vba Macros](./read-vba-macros/) | في هذا البرنامج التعليمي ، تعرف على كيفية قراءة وحدات ماكرو VBA من مستند Word باستخدام Aspose.Words for .NET. |
-| [تعديل وحدات ماكرو Vba](./modify-vba-macros/) | في هذا البرنامج التعليمي ، تعرف على كيفية تحرير وحدات ماكرو VBA لمستند Word باستخدام Aspose.Words for .NET. |
-| [مشروع استنساخ Vba](./clone-vba-project/) | في هذا البرنامج التعليمي ، تعرف على كيفية استنساخ مشروع VBA من مستند Word باستخدام Aspose.Words for .NET.|
-| [وحدة استنساخ Vba](./clone-vba-module/) | في هذا البرنامج التعليمي ، تعرف على كيفية استنساخ وحدة VBA من مستند Word باستخدام Aspose.Words for .NET. |
+| [Crear proyecto Vba](./create-vba-project/) | En este tutorial, aprenda a crear un proyecto de VBA en un documento de Word con Aspose.Words para .NET. |
+| [Leer macros de Vba](./read-vba-macros/) | En este tutorial, aprenda a leer macros de VBA desde un documento de Word con Aspose.Words para .NET. |
+| [Modificar macros de Vba](./modify-vba-macros/) | En este tutorial, aprenda a editar macros VBA de un documento de Word con Aspose.Words para .NET. |
+| [Clonar Proyecto Vba](./clone-vba-project/) | En este tutorial, aprenda a clonar un proyecto de VBA desde un documento de Word con Aspose.Words para .NET.|
+| [Clonar Módulo Vba](./clone-vba-module/) | En este tutorial, aprenda a clonar un módulo de VBA desde un documento de Word con Aspose.Words para .NET. |

@@ -1,54 +1,54 @@
 ---
-title: تعيين مساحة الخلية
-linktitle: تعيين مساحة الخلية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتحديد هوامش خلايا الجدول باستخدام Aspose.Words for .NET.
+title: Zellauffüllung festlegen
+linktitle: Zellauffüllung festlegen
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Festlegen von Tabellenzellenrändern mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-table-styles-and-formatting/set-cell-padding/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين هوامش خلايا الجدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية ضبط الهوامش اليسرى والعلوية واليمنى والسفلية (مساحة) لمحتوى الخلية في جداولك في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess zum Festlegen von Tabellenzellenrändern mit Aspose.Words für .NET. Wir erklären Ihnen den gebündelten C#-Quellcode und stellen Ihnen eine umfassende Anleitung zur Verfügung, die Ihnen hilft, diese Funktion zu verstehen und in Ihren eigenen Projekten zu implementieren. Am Ende dieses Tutorials erfahren Sie, wie Sie mit Aspose.Words für .NET den linken, oberen, rechten und unteren Rand (Abstand) des Zellinhalts in Ihren Tabellen in Ihren Word-Dokumenten anpassen.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+Zuerst müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis festlegen. Dies ist der Ort, an dem Sie Ihr bearbeitetes Word-Dokument speichern möchten. Ersetzen Sie „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## Schritt 2: Erstellen Sie ein neues Dokument und einen Dokument-Builder
+ Als nächstes müssen Sie eine neue Instanz von erstellen`Document` Klasse und einen Dokumentkonstruktor für dieses Dokument.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدول جديد وأضف خلية
-لبدء إنشاء الجدول ، نستخدم ملف`StartTable()` طريقة منشئ المستند ، ثم نضيف خلية إلى الجدول باستخدام الامتداد`InsertCell()` طريقة.
+## Schritt 3: Erstellen Sie eine neue Tabelle und fügen Sie eine Zelle hinzu
+Um mit der Erstellung der Tabelle zu beginnen, verwenden wir die`StartTable()` Methode des Dokumentkonstruktors, dann fügen wir der Tabelle eine Zelle hinzu, indem wir die verwenden`InsertCell()` Methode.
 
 ```csharp
 builder. StartTable();
 builder. InsertCell();
 ```
 
-## الخطوة 4: تعيين هوامش الخلية
- الآن يمكننا تعيين هوامش الخلية باستخدام`SetPaddings()` طريقة`CellFormat` هدف. يتم تعريف الهوامش بالنقاط ومحددة بالترتيب الأيسر والأعلى واليمين والأسفل.
+## Schritt 4: Zellränder festlegen
+ Jetzt können wir die Zellränder mit festlegen`SetPaddings()` Methode der`CellFormat` Objekt. Ränder werden in Punkten definiert und in der Reihenfolge links, oben, rechts und unten angegeben.
 
 ```csharp
 builder.CellFormat.SetPaddings(30, 50, 30, 50);
 ```
 
-## الخطوة 5: أضف محتوى إلى الخلية
- ثم يمكننا إضافة محتوى إلى الخلية باستخدام منشئ المستندات`Writeln()` طريقة.
+## Schritt 5: Fügen Sie der Zelle Inhalte hinzu
+ Anschließend können wir mit dem Document Builder Inhalte zur Zelle hinzufügen`Writeln()` Methode.
 
 ```csharp
 builder.Writeln("I'm a beautifully formatted cell.");
 ```
 
-## الخطوة السادسة: قم بإنهاء الجدول وحفظ المستند
- أخيرًا ، ننتهي من إنشاء الجدول باستخدام`EndRow()` طريقة و`EndTable()`، ثم نقوم بحفظ المستند المعدل في ملف.
+## Schritt 6: Beenden Sie die Tabelle und speichern Sie das Dokument
+ Schließlich beenden wir die Erstellung der Tabelle mithilfe von`EndRow()` Methode und`EndTable()`, dann speichern wir das geänderte Dokument in einer Datei.
 
 ```csharp
 builder. EndRow();
@@ -56,17 +56,17 @@ builder. EndTable();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 ```
  
-### عينة من التعليمات البرمجية المصدر لـ Set Cell Padding باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Set Cell Padding“ mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.StartTable();
 	builder.InsertCell();
-	// يضبط مقدار المسافة (بالنقاط) لإضافتها إلى اليسار / أعلى / يمين / أسفل محتويات الخلية.
+	// Legt die Menge an Platz (in Punkten) fest, die links/oben/rechts/unten zum Inhalt der Zelle hinzugefügt werden soll.
 	builder.CellFormat.SetPaddings(30, 50, 30, 50);
 	builder.Writeln("I'm a wonderful formatted cell.");
 	builder.EndRow();
@@ -74,5 +74,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين هوامش خلية جدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة ضبط هوامش الخلية لإنشاء مسافات إلى اليسار ، وأعلى ، ويمين ، وأسفل المحتوى في جداولك في مستندات Word. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تخصيص تنسيق الجداول حسب احتياجاتك الخاصة.
+## Abschluss
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET die Ränder einer Tabellenzelle festlegt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie die Zellränder ganz einfach anpassen, um in Ihren Tabellen in Ihren Word-Dokumenten Leerzeichen links, oben, rechts und unten am Inhalt zu schaffen. Aspose.Words bietet eine leistungsstarke und flexible API zum Bearbeiten und Formatieren von Tabellen in Ihren Dokumenten. Mit diesem Wissen können Sie die Formatierung Ihrer Tabellen an Ihre spezifischen Bedürfnisse anpassen.

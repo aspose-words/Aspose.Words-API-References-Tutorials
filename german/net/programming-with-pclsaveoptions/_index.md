@@ -1,17 +1,17 @@
 ---
-title: البرمجة مع Pclsaveoptions
-linktitle: البرمجة مع Pclsaveoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على عناصر تم تحويلها إلى نقطية
+title: Programmieren mit PClsaveoptions
+linktitle: Programmieren mit PClsaveoptions
+second_title: Aspose.Words für .NET API-Referenz
+description: Tutorials enthalten rastern transformierte Elemente
 type: docs
 weight: 1670
 url: /de/net/programming-with-pclsaveoptions/
 ---
-ترشدك البرامج التعليمية لـ Aspose.Words for .NET إلى الميزات والتقنيات الأساسية للعمل مع Aspose.Words في بيئة .NET. يركز أحد هذه الدروس على البرمجة باستخدام PclSaveOptions. يوضح لك هذا البرنامج التعليمي كيفية استخدام PclSaveOptions لتحويل مستندات Word إلى PCL (لغة أوامر الطابعة) مع الحفاظ على تنسيق المستند وعناصره. ستتعلم كيفية تكوين خيارات الحفظ وتحديد تنسيق الإخراج وإدارة الإعدادات المتقدمة للحصول على أفضل النتائج.
+Die Aspose.Words für .NET-Tutorials führen Sie durch die wesentlichen Funktionen und Techniken für die Arbeit mit Aspose.Words in einer .NET-Umgebung. Eines dieser Tutorials konzentriert sich auf die Programmierung mit PclSaveOptions. In diesem Tutorial erfahren Sie, wie Sie mit PclSaveOptions Word-Dokumente in PCL (Printer Command Language) konvertieren und dabei die Formatierung und Elemente des Dokuments beibehalten. Sie erfahren, wie Sie Speicheroptionen konfigurieren, das Ausgabeformat festlegen und erweiterte Einstellungen verwalten, um optimale Ergebnisse zu erzielen.
 
-تزودك برامج Aspose.Words for .NET التعليمية بمورد قيم لإتقان الإمكانات القوية لهذه المكتبة في تطبيقات .NET الخاصة بك. سواء كنت ترغب في إنشاء مستندات Word أو استخراج البيانات أو إجراء عمليات دمج أو مهام أخرى ، ستأخذك هذه البرامج التعليمية خطوة بخطوة عبر الخطوات اللازمة لتحقيق أهدافك. يرافق كل برنامج تعليمي أمثلة تعليمات برمجية واضحة وأوصاف تفصيلية لتسهيل فهمك ومساعدتك على تطبيق المفاهيم في مشروعك الخاص.
+Die Aspose.Words for .NET-Tutorials bieten Ihnen eine wertvolle Ressource, um die leistungsstarken Funktionen dieser Bibliothek in Ihren .NET-Anwendungen zu beherrschen. Unabhängig davon, ob Sie Word-Dokumente generieren, Daten extrahieren, Zusammenführungsvorgänge durchführen oder andere Aufgaben ausführen möchten, führen Sie diese Tutorials Schritt für Schritt durch die Schritte, die zum Erreichen Ihrer Ziele erforderlich sind. Jedes Tutorial wird von klaren Codebeispielen und detaillierten Beschreibungen begleitet, um Ihr Verständnis zu erleichtern und Ihnen bei der Anwendung der Konzepte in Ihrem eigenen Projekt zu helfen.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [تنقيط العناصر المحولة](./rasterize-transformed-elements/) | تعرف على كيفية تعطيل التحويل النقطي للعناصر المحولة عند التحويل إلى تنسيق PCL باستخدام Aspose.Words for .NET. |
+| [Transformierte Elemente rastern](./rasterize-transformed-elements/) | Erfahren Sie, wie Sie die Rasterung transformierter Elemente bei der Konvertierung in das PCL-Format mit Aspose.Words für .NET deaktivieren. |

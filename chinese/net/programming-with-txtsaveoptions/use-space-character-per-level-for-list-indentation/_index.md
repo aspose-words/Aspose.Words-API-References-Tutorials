@@ -1,27 +1,27 @@
 ---
-title: استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة
-linktitle: استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لاستخدام حرف مسافة لكل مستوى في قائمة المسافة البادئة في Aspose.Words for .NET. قم بإنشاء مستندات Word جيدة التنظيم بسهولة.
+title: 每级使用空格字符进行列表缩进
+linktitle: 每级使用空格字符进行列表缩进
+second_title: Aspose.Words for .NET API 参考
+description: 在 Aspose.Words for .NET 中使用每个级别的空格字符进行列表缩进的分步指南。轻松创建结构良好的 Word 文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words إمكانية استخدام حرف مسافة واحد لكل مستوى لعمل مسافة بادئة للقوائم. في هذا الدليل ، سنوضح لك كيفية استخدام كود المصدر C # الخاص بـ Aspose.Words for .NET لتنفيذ هذه الوظيفة.
+Aspose.Words for .NET 是一个强大的库，用于在 C# 应用程序中创建、编辑和操作 Word 文档。 Aspose.Words 提供的功能之一是可以在每一层使用一个空格字符来缩进列表。在本指南中，我们将向您展示如何使用 Aspose.Words for .NET 的 C# 源代码来实现此功能。
 
-## فهم مكتبة Aspose.Words
+## 理解 Aspose.Words 库
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الوظائف لإنشاء وتعديل ومعالجة مستندات Word ، بما في ذلك إدارة القوائم والمسافة البادئة.
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库很重要。 Aspose.Words 是一个流行的库，它使处理 Word 文档变得简单而高效。它为创建、修改和操作 Word 文档提供了广泛的功能，包括列表和缩进的管理。
 
-## إنشاء الوثيقة وإضافة المحتوى
+## 创建文档并添加内容
 
-تتمثل الخطوة الأولى في إنشاء مستند جديد وإضافة محتوى إليه. استخدم فئة المستند لإنشاء مثيل مستند جديد. ثم استخدم فئة DocumentBuilder لإضافة نص وإنشاء قائمة بمستويات متعددة من المسافة البادئة. هنا مثال :
+第一步是创建一个新文档并向其中添加内容。使用 Document 类创建一个新的文档实例。然后使用 DocumentBuilder 类添加文本并创建具有多级缩进的列表。这是一个例子：
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+//创建具有三级缩进的列表
 builder.ListFormat.ApplyNumberDefault();
 builder. Writen("Element 1");
 builder.ListFormat.ListIndent();
@@ -30,11 +30,11 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند جديد واستخدام DocumentBuilder لإضافة نص وإنشاء قائمة بثلاثة مستويات من المسافة البادئة. لقد أضفنا ثلاثة عناصر إلى القائمة ، مع وضع مسافة بادئة لكل عنصر في مستوى إضافي.
+在此示例中，我们创建一个新文档并使用 DocumentBuilder 添加文本并创建一个具有三级缩进的列表。我们向列表中添加了三个项目，每个项目都缩进了一个额外的级别。
 
-## استخدام مسافة واحدة لكل مستوى للمسافة البادئة للقائمة
+## 每个级别使用一个空格字符进行列表缩进
 
-بمجرد إضافة المحتوى ، يمكننا الآن تكوين المسافة البادئة للقوائم باستخدام حرف مسافة واحد لكل مستوى. لهذا نستخدم فئة TxtSaveOptions وقمنا بتعيين خاصية ListIndentation.Count على عدد مستويات المسافة البادئة وخاصية ListIndentation.Character إلى حرف المسافة المراد استخدامه. إليك الطريقة:
+添加内容后，我们现在可以使用每个级别一个空格字符来配置列表的缩进。为此，我们使用 TxtSaveOptions 类，并将 ListIndentation.Count 属性设置为缩进级别数，并将 ListIndentation.Character 属性设置为要使用的空格字符。就是这样：
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -44,11 +44,11 @@ saveOptions.ListIndentation.Character = ' ';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-في هذا المثال ، أنشأنا مثيلًا لـ TxtSaveOptions وقمنا بتعيين خاصية ListIndentation.Count على 3 للإشارة إلى وجود ثلاثة مستويات من المسافة البادئة في القائمة. قمنا أيضًا بتعيين خاصية ListIndentation.Character إلى حرف المسافة ('') الذي نريد استخدامه للمسافة البادئة.
+在此示例中，我们创建了一个 TxtSaveOptions 实例，并将 ListIndentation.Count 属性设置为 3，以指示列表中有三级缩进。我们还将 ListIndentation.Character 属性设置为要用于缩进的空格字符 (' ')。
 
-### مثال على شفرة المصدر لميزة "استخدام حرف مسافة واحد لكل مستوى للمسافة البادئة للقائمة" مع Aspose.Words for .NET
+### Aspose.Words for .NET 的“每级使用一个空格字符进行列表缩进”功能的示例源代码
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لميزة "استخدام حرف مسافة واحد لكل مستوى للمسافة البادئة للقائمة" مع Aspose.Words for .NET:
+以下是 Aspose.Words for .NET 的“每级使用一个空格字符进行列表缩进”功能的完整示例源代码：
 
 ```csharp
 
@@ -61,14 +61,14 @@ namespace Example
      {
          static void Main(string[] args)
          {
-             // المسار إلى دليل المستند الخاص بك
+             //文档目录的路径
              string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-             // قم بإنشاء المستند وإضافة محتوى
+             //创建文档并添加内容
              Document doc = new Document();
              DocumentBuilder builder = new DocumentBuilder(doc);
 
-             // قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+             //创建具有三级缩进的列表
              builder.ListFormat.ApplyNumberDefault();
              builder. Writen("Element 1");
              builder.ListFormat.ListIndent();
@@ -76,12 +76,12 @@ namespace Example
              builder.ListFormat.ListIndent();
              builder.Write("Element 3");
 
-             // استخدم مسافة واحدة لكل مستوى للمسافة البادئة للقائمة
+             //每个级别使用一个空格字符进行列表缩进
              TxtSaveOptions saveOptions = new TxtSaveOptions();
              saveOptions.ListIndentation.Count = 3;
              saveOptions.ListIndentation.Character = ' ';
 
-             // احفظ المستند بالخيارات المحددة
+             //使用指定选项保存文档
              doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
          }
      }
@@ -89,6 +89,6 @@ namespace Example
 
 ```
 
-## خاتمة
+## 结论
 
-في هذا الدليل ، أوضحنا كيفية استخدام Aspose.Words for .NET لتطبيق وظيفة "استخدام حرف مسافة واحد لكل مستوى من أجل المسافة البادئة للقائمة". باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تكوين المسافة البادئة للقوائم في مستندات Word الخاصة بك باستخدام حرف مسافة واحد لكل مستوى. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع تنسيق النص وإدارة القوائم ، مما يسمح لك بإنشاء مستندات جيدة التنظيم في تطبيق C # الخاص بك.
+在本指南中，我们解释了如何使用 Aspose.Words for .NET 应用“每级使用一个空格字符进行列表缩进”功能。按照提供的步骤并使用提供的 C# 源代码，您可以轻松地配置 Word 文档中列表的缩进，每个级别使用一个空格字符。 Aspose.Words 为处理文本格式和列表管理提供了巨大的灵活性和强大的功能，允许您在 C# 应用程序中创建结构良好的文档。

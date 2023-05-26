@@ -1,40 +1,40 @@
 ---
-title: التعرف والبدائل ضمن أنماط الاستبدال
-linktitle: التعرف والبدائل ضمن أنماط الاستبدال
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام أنماط الاستبدال مع عمليات التعرف والاستبدال في Aspose.Words for .NET لمعالجة مستندات Word.
+title: Riconoscere e sostituzioni all'interno di modelli di sostituzione
+linktitle: Riconoscere e sostituzioni all'interno di modelli di sostituzione
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come utilizzare i modelli di sostituzione con riconoscimenti e sostituzioni in Aspose.Words per .NET per manipolare i documenti di Word.
 type: docs
 weight: 10
 url: /it/net/find-and-replace-text/recognize-and-substitutions-within-replacement-patterns/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة التعرف والبدائل ضمن أنماط الاستبدال في Aspose.Words مكتبة .NET. تساعد هذه الميزة في التعرف على أنماط البحث المعقدة وإجراء عمليات الاستبدال بناءً على المجموعات التي تم التقاطها أثناء معالجة المستند.
+In questo articolo, esploreremo il codice sorgente C# precedente per comprendere come utilizzare la funzione Riconosci e sostituzioni all'interno dei modelli di sostituzione nella libreria Aspose.Words per .NET. Questa funzione aiuta a riconoscere schemi di ricerca complessi ed eseguire sostituzioni basate su gruppi acquisiti durante la manipolazione del documento.
 
-## المتطلبات الأساسية
+## Prerequisiti
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conoscenza base del linguaggio C#.
+- Ambiente di sviluppo .NET con libreria Aspose.Words installata.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## Passaggio 1: creazione di un nuovo documento
 
- قبل أن نبدأ في استخدام التطابقات والاستبدالات في أنماط الاستبدال ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Prima di iniziare a utilizzare corrispondenze e sostituzioni nei modelli di sostituzione, è necessario creare un nuovo documento utilizzando Aspose.Words per .NET. Questo può essere fatto istanziando a`Document` oggetto:
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل النص في المستند
+## Passaggio 2: inserire il testo nel documento
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص باستخدام ملف`DocumentBuilder`هدف. في مثالنا ، نستخدم الامتداد`Write` طريقة لإدخال عبارة "جيسون يعطي بول بعض المال." :
+ Una volta che abbiamo un documento, possiamo inserire il testo usando a`DocumentBuilder`oggetto. Nel nostro esempio, stiamo usando il`Write` metodo per inserire la frase "Jason dà a Paul dei soldi". :
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Write("Jason gives money to Paul.");
 ```
 
-## الخطوة 3: الاعترافات والبدائل في أنماط الاستبدال
+## Passaggio 3: Riconoscimenti e sostituzioni nei modelli di sostituzione
 
- الآن سوف نستخدم ملف`Range.Replace` وظيفة لإجراء بحث عن نص واستبداله باستخدام تعبير عادي للتعرف على أنماط معينة. في مثالنا ، نستخدم التعبير النمطي`([A-z]+) gives money to ([A-z]+)` للتعرف على الجمل التي يعطي فيها شخص ما المال لشخص آخر. نحن نستخدم نمط الاستبدال`$2 takes money from $1` لإجراء الاستبدال عن طريق عكس الأدوار. استخدام`$1` و`$2` يشير إلى المجموعات التي تم التقاطها بواسطة التعبير العادي:
+ Ora useremo il`Range.Replace` funzione per eseguire la ricerca e la sostituzione del testo utilizzando un'espressione regolare per riconoscere modelli specifici. Nel nostro esempio, usiamo l'espressione regolare`([A-z]+) gives money to ([A-z]+)` riconoscere frasi in cui qualcuno dà soldi a qualcun altro. Usiamo il modello di sostituzione`$2 takes money from $1` effettuare la sostituzione invertendo i ruoli. L'impiego di`$1` E`$2` si riferisce ai gruppi catturati dall'espressione regolare:
 
 ```csharp
 Regex regex = new Regex(@"([A-z]+) gives money to ([A-z]+)");
@@ -44,9 +44,9 @@ FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 doc.Range.Replace(regex, @"$2 takes money from $1", options);
 ```
 
-### مثال على شفرة المصدر للتعرف على البدائل ضمن أنماط الاستبدال باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Riconosci e sostituzioni all'interno di modelli di sostituzione utilizzando Aspose.Words per .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح استخدام التطابقات والاستبدالات في أنماط الاستبدال باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente di esempio completo per illustrare l'uso di corrispondenze e sostituzioni nei modelli di sostituzione con Aspose.Words per .NET:
 
 ```csharp
 
@@ -63,6 +63,6 @@ doc.Range.Replace(regex, @"$2 takes money from $1", options);
 
 ```
 
-## خاتمة
+## Conclusione
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة التعرف والاستبدال ضمن أنماط الاستبدال في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص وإجراء بحث واستبدال باستخدام التعبيرات العادية وأنماط الاستبدال استنادًا إلى المجموعات الملتقطة ومعالجة المستند.
+In questo articolo, abbiamo esplorato il codice sorgente C# per comprendere come utilizzare la funzionalità Riconosci e sostituzioni all'interno dei modelli di sostituzione di Aspose.Words per .NET. Abbiamo seguito una guida dettagliata per creare un documento, inserire testo, eseguire ricerca e sostituzione utilizzando espressioni regolari e modelli di sostituzione basati su gruppi acquisiti e manipolare il documento.

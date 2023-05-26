@@ -1,67 +1,67 @@
 ---
-title: تحويل الحقول في المستند
-linktitle: تحويل الحقول في المستند
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحويل حقول المستند إلى نص باستخدام Aspose.Words for .NET.
+title: Convertir les champs dans le document
+linktitle: Convertir les champs dans le document
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour convertir les champs de document en texte à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fields/convert-fields-in-document/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك دليلًا خطوة بخطوة باستخدام وظيفة ConvertFieldsInDocument في Aspose.Words لبرنامج .NET. سنشرح بالتفصيل الكود المصدري C # اللازم لهذه الميزة ونقدم عينة من تنسيقات إخراج تخفيض السعر.
+Dans ce didacticiel, nous vous guiderons étape par étape à l'aide de la fonction ConvertFieldsInDocument du logiciel Aspose.Words pour .NET. Nous expliquerons en détail le code source C# nécessaire pour cette fonctionnalité et fournirons des exemples de formats de sortie Markdown.
 
-## الخطوة 1: المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+## Étape 1 : Prérequis
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-- Aspose.Words for .NET مثبتة على جهاز التطوير الخاص بك.
-- مستند Word يحتوي على حقول مرتبطة تريد تحويلها إلى نص.
-- دليل مستند حيث يمكنك حفظ المستند المحول.
+- Aspose.Words pour .NET installé sur votre machine de développement.
+- Un document Word contenant des champs liés que vous souhaitez convertir en texte.
+- Un répertoire de documents dans lequel vous pouvez enregistrer le document transformé.
 
-## الخطوة الثانية: تهيئة البيئة
-تأكد من تكوين بيئة التطوير الخاصة بك بشكل صحيح لاستخدام Aspose.Words لـ .NET. قم باستيراد مساحات الأسماء الضرورية وقم بتعيين المسار إلى دليل المستندات.
+## Étape 2 : Configurer l'environnement
+Assurez-vous d'avoir correctement configuré votre environnement de développement pour utiliser Aspose.Words pour .NET. Importez les espaces de noms nécessaires et définissez le chemin d'accès à votre répertoire de documents.
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 3: قم بتحميل المستند
- استخدم ال`Document` class of Aspose.Words لتحميل مستند Word الذي يحتوي على الحقول المرتبطة التي تريد تحويلها.
+## Étape 3 : Chargez le document
+ Utilisez le`Document` classe de Aspose.Words pour charger le document Word contenant les champs liés que vous souhaitez convertir.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");
 ```
 
-## الخطوة 4: تحويل الحقول المرتبطة إلى نص
- استخدم ال`Unlink()` طريقة لتحويل جميع حقول النوع "IF" التي تمت مواجهتها في المستند إلى نص. تُستخدم هذه الطريقة لتحويل الحقول المرتبطة إلى محتوى نصي.
+## Étape 4 : convertir les champs liés en texte
+ Utilisez le`Unlink()` pour convertir tous les champs de type "IF" rencontrés dans le document en texte. Cette méthode est utilisée pour transformer les champs liés en leur contenu textuel.
 
 ```csharp
 doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f.Unlink());
 ```
 
-## الخطوة 5: احفظ المستند المحول
- استخدم ال`Save()` طريقة لحفظ المستند مع الحقول المحولة إلى نص في دليل المستند المحدد.
+## Étape 5 : Enregistrez le document transformé
+ Utilisez le`Save()` méthode pour enregistrer le document avec les champs convertis en texte dans le répertoire de documents spécifié.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 ```
 
-## نموذج التعليمات البرمجية المصدر لـ ConvertFieldsInDocument باستخدام Aspose.Words for .NET
+## Exemple de code source pour ConvertFieldsInDocument en utilisant Aspose.Words pour .NET
 
-فيما يلي رمز المصدر الكامل لوظيفة ConvertFieldsInDocument:
+Voici le code source complet de la fonction ConvertFieldsInDocument :
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(MyDir + "Linked fields.docx");
 
-// قم بتمرير المعلمات المناسبة لتحويل جميع حقول IF التي تمت مواجهتها في المستند (بما في ذلك الرؤوس والتذييلات) إلى نص.
+// Transmettez les paramètres appropriés pour convertir tous les champs IF rencontrés dans le document (y compris les en-têtes et les pieds de page) en texte.
 doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f.Unlink());
 
-// احفظ المستند مع الحقول التي تم تحويلها إلى قرص
+// Enregistrez le document avec les champs transformés sur le disque
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 ```
 
-## خاتمة
-تعد وظيفة Aspose.Words for .NET's ConvertFieldsInDocument وظيفة أداة قوية لتحويل الحقول المرتبطة في مستند Word إلى نص. 
+## Conclusion
+La fonction ConvertFieldsInDocument d'Aspose.Words pour .NET est un outil puissant pour convertir les champs liés d'un document Word en texte. 

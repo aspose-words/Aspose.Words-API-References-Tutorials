@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل الدمج باستخدام DOM
-linktitle: أدخل حقل الدمج باستخدام DOM
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول دمج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Вставьте поле слияния с помощью DOM
+linktitle: Вставьте поле слияния с помощью DOM
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как вставлять поля слияния настраиваемых полей в документы Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/working-with-fields/insert-merge-field-using-dom/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي تستخدم ميزة "إدراج حقل دمج الحقول" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Вот пошаговое руководство, объясняющее приведенный ниже исходный код C#, в котором используется функция «Вставить поле слияния» в Aspose.Words для .NET. Обязательно внимательно следуйте каждому шагу, чтобы получить желаемые результаты.
 
-## الخطوة 1: إعداد دليل المستند
+## Шаг 1: Настройка каталога документов
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+В предоставленном коде необходимо указать директорию ваших документов. Замените значение «КАТАЛОГ ВАШИХ ДОКУМЕНТОВ» на соответствующий путь к каталогу ваших документов.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
+## Шаг 2: Создание документа и DocumentBuilder
 
-نبدأ بإنشاء مستند جديد وتهيئة DocumentBuilder.
+Начнем с создания нового документа и инициализации DocumentBuilder.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: تحريك المؤشر إلى الفقرة
+## Шаг 3: Перемещение курсора к абзацу
 
- نحن نستخدم ال`MoveTo()` طريقة DocumentBuilder لتحريك المؤشر إلى الفقرة حيث نريد إدراج حقل دمج الحقل.
+ Мы используем`MoveTo()` метод DocumentBuilder, чтобы переместить курсор в абзац, куда мы хотим вставить поле слияния полей.
 
 ```csharp
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 builder. MoveTo(para);
 ```
 
-## الخطوة 4: إدخال حقل دمج الحقول
+## Шаг 4: Вставка поля слияния полей
 
- نحن نستخدم برنامج DocumentBuilder`InsertField()` طريقة لإدراج حقل دمج حقل في الفقرة.
+ Мы используем DocumentBuilder`InsertField()` метод вставки поля слияния полей в абзац.
 
 ```csharp
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
 ```
 
-نقوم بعد ذلك بتكوين خصائص حقل دمج الحقول عن طريق تحديد الخيارات المناسبة ، مثل اسم الحقل والنص قبل الحقل وبعده وخيارات التنسيق الرأسي.
+Затем мы настраиваем свойства поля слияния полей, указав соответствующие параметры, такие как имя поля, текст до и после поля и параметры вертикального форматирования.
 
 ```csharp
 field.FieldName = "Test1";
@@ -54,27 +54,27 @@ field. IsMapped = true;
 field. IsVerticalFormatting = true;
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Наконец, мы вызываем`Update()` способ обновления поля.
 
 ```csharp
 field. Update();
 ```
 
-### نموذج التعليمات البرمجية المصدر لإدخال حقل دمج الحقول مع Aspose.Words for .NET
+### Пример исходного кода для вставки поля слияния полей с помощью Aspose.Words для .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند و DocumentBuilder.
+// Создайте документ и DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// حرك المؤشر إلى الفقرة.
+// Подведите курсор к абзацу.
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 builder. MoveTo(para);
 
-// أدخل حقل دمج الحقول.
+// Вставить поле слияния полей.
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
 
 field.FieldName = "Test1";
@@ -83,10 +83,10 @@ field. TextAfter = "Test3";
 field. IsMapped = true;
 field. IsVerticalFormatting = true;
 
-// قم بتحديث الحقل.
+// Обновите поле.
 field. Update();
 
 doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، ونقلنا المؤشر إلى الفقرة المطلوبة ، ثم أدخلنا حقل دمج الحقول في المستند.
+В этом примере мы создали новый документ, переместили курсор в нужный абзац, а затем вставили в документ поле слияния полей.

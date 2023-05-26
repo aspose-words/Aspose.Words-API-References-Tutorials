@@ -1,34 +1,34 @@
 ---
-title: أدخل الحقل باستخدام Field Builder
-linktitle: أدخل الحقل باستخدام Field Builder
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Insérer un champ à l'aide du générateur de champs
+linktitle: Insérer un champ à l'aide du générateur de champs
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer des champs personnalisés dans vos documents Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fields/insert-field-using-field-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج حقل باستخدام FieldBuilder" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la fonctionnalité "Insérer un champ à l'aide de FieldBuilder" d'Aspose.Words pour .NET. Assurez-vous de suivre attentivement chaque étape pour obtenir les résultats souhaités.
 
-## الخطوة 1: إعداد دليل المستند
+## Étape 1 : configuration du répertoire de documents
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Dans le code fourni, vous devez spécifier le répertoire de vos documents. Remplacez la valeur "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin approprié vers votre répertoire de documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند
+## Étape 2 : Création du document
 
-نبدأ بإنشاء مستند جديد.
+Nous commençons par créer un nouveau document.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: بناء حقل IF باستخدام FieldBuilder
+## Étape 3 : Création du champ IF à l'aide de FieldBuilder
 
-نستخدم فئة FieldBuilder لإنشاء حقل IF مع حقلي MERGEFIELD متداخلين. في هذا المثال ، يعرض الحقل IF الاسم الأول والأخير بناءً على شرط.
+Nous utilisons la classe FieldBuilder pour construire un champ IF avec deux champs MERGEFIELD imbriqués. Dans cet exemple, le champ SI affiche le prénom et le nom en fonction d'une condition.
 
 ```csharp
 FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
@@ -45,25 +45,25 @@ FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
              .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
 ```
 
-## الخطوة 4: إدخال حقل IF في المستند
+## Étape 4 : Insertion du champ IF dans le document
 
- نحن نستخدم ال`BuildAndInsert()` طريقة لإنشاء وإدراج حقل IF في موقع محدد في المستند.
+ Nous utilisons le`BuildAndInsert()` méthode pour construire et insérer le champ IF à un emplacement spécifique dans le document.
 
 ```csharp
 Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
 field. Update();
 ```
 
-### مثال على شفرة المصدر لإدخال حقل باستخدام FieldBuilder مع Aspose.Words for .NET
+### Exemple de code source pour insérer un champ à l'aide de FieldBuilder avec Aspose.Words pour .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة.
+// Création de documents.
 Document doc = new Document();
 
-// إنشاء حقل IF باستخدام FieldBuilder.
+// Construction du champ IF à l'aide de FieldBuilder.
 FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
      .AddArgument("left expression")
      .AddArgument("=")
@@ -77,11 +77,11 @@ FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
              .AddText("Lastname: ")
              .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
 
-// أدخل حقل IF في المستند.
+// Insérez le champ SI dans le document.
 Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
 field. Update();
 
 doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأنشأنا حقل IF مع حقول MERGEFIELD المتداخلة ، ثم قمنا بإدراج هذا الحقل في المستند في موقع محدد. ثم يتم حفظ المستند باسم ملف محدد.
+Dans cet exemple, nous avons créé un nouveau document, construit un champ IF avec des champs MERGEFIELD imbriqués, puis inséré ce champ dans le document à un emplacement spécifié. Le document est alors enregistré avec un nom de fichier spécifique.

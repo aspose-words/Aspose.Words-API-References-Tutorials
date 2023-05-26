@@ -1,37 +1,37 @@
 ---
-title: إدراج جدول من Html
-linktitle: إدراج جدول من Html
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج جدول من HTML في مستند Word باستخدام Aspose.Words for .NET.
+title: Infoga tabell från HTML
+linktitle: Infoga tabell från HTML
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du infogar en tabell från HTML i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-tables/insert-table-from-html/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إدراج جدول في مستند Word من HTML باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من إدراج جداول من HTML في مستندات Word برمجيًا.
+I den här handledningen kommer vi att lära oss hur man infogar en tabell i ett Word-dokument från HTML med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna infoga tabeller från HTML i dina Word-dokument programmatiskt.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Steg 1: Projektinställning
+1. Starta Visual Studio och skapa ett nytt C#-projekt.
+2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Steg 2: Skapa dokumentet och initialisera dokumentgeneratorn
+För att börja arbeta med dokument- och dokumentgeneratorn, följ dessa steg:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Skapande av dokument
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Initiera dokumentgeneratorn
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog.
 
-## الخطوة 3: إدراج الجدول من HTML
-بعد ذلك ، سنقوم بإدخال الجدول في المستند باستخدام كود HTML. استخدم الكود التالي:
+## Steg 3: Infoga tabellen från HTML
+Därefter kommer vi att infoga tabellen i dokumentet med HTML-kod. Använd följande kod:
 
 ```csharp
 builder.InsertHtml("<table>" +
@@ -46,26 +46,26 @@ builder.InsertHtml("<table>" +
 "</table>");
 ```
 
- هنا نستخدم ملف`InsertHtml` طريقة منشئ المستند لإدراج HTML الذي يحتوي على الجدول. ينشئ HTML المحدد جدولًا من صفين وخليتين في كل صف. يمكنك تخصيص محتوى الجدول عن طريق تعديل كود HTML وفقًا لاحتياجاتك.
+ Här använder vi`InsertHtml` dokumentbyggarens metod för att infoga HTML-koden som innehåller tabellen. Den angivna HTML-koden skapar en tabell med två rader och två celler i varje rad. Du kan anpassa innehållet i tabellen genom att ändra HTML-koden efter dina behov.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع إدراج الجدول من HTML. استخدم الكود التالي:
+## Steg 4: Spara det ändrade dokumentet
+Slutligen måste vi spara det modifierade dokumentet med tabellen infogat från HTML. Använd följande kod:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 
-### نموذج التعليمات البرمجية المصدر لـ Insert Table From Html باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Infoga tabell från HTML med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// لاحظ أن AutoFitSettings لا ينطبق على الجداول المدرجة من HTML.
+	// Observera att AutoFitSettings inte gäller för tabeller som infogas från HTML.
 	builder.InsertHtml("<table>" +
 					   "<tr>" +
 					   "<td>Row 1, Cell 1</td>" +
@@ -79,5 +79,5 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 	doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إدراج جدول في مستند Word من HTML باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك إدراج جداول من HTML في مستندات Word برمجيًا. تتيح لك هذه الميزة تحويل واستيراد البيانات الجدولية من مصادر HTML إلى مستندات Word الخاصة بك.
+## Slutsats
+I den här handledningen lärde vi oss hur man infogar en tabell i ett Word-dokument från HTML med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide och implementera den medföljande C#-koden kan du infoga tabeller från HTML i dina Word-dokument programmatiskt. Den här funktionen låter dig konvertera och importera tabelldata från HTML-källor till dina Word-dokument.

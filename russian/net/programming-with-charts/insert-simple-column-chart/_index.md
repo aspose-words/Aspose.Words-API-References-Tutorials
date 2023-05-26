@@ -1,44 +1,44 @@
 ---
-title: إدراج مخطط عمودي بسيط
-linktitle: إدراج مخطط عمودي بسيط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مخطط عمودي بسيط في مستند باستخدام Aspose.Words for .NET.
+title: Вставить простую столбчатую диаграмму
+linktitle: Вставить простую столбчатую диаграмму
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как вставить простую столбчатую диаграмму в документ с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-charts/insert-simple-column-chart/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مخطط عمودي بسيط في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وحفظ المستند.
+В этом руководстве объясняется, как использовать Aspose.Words для .NET для вставки простой гистограммы в документ. В предоставленном исходном коде показано, как создать диаграмму, добавить ряд данных и сохранить документ.
 
-## الخطوة 1: قم بإعداد المشروع
+## Шаг 1: Настройте проект
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Убедитесь, что у вас есть следующие предварительные условия:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Установлена библиотека Aspose.Words for .NET. Вы можете загрузить его с официального веб-сайта Aspose или использовать менеджер пакетов NuGet для его установки.
+- Путь к каталогу документа, в котором будет сохранен выходной документ.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Шаг 2. Создайте новый документ и вставьте диаграмму
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Создать новый`Document` объект и`DocumentBuilder` для построения документа.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط عمودي في المستند. يمكنك تحديد أنواع وأحجام مخططات مختلفة حسب متطلباتك.
+ Далее используйте`InsertChart` метод`DocumentBuilder` чтобы вставить столбчатую диаграмму в документ. Вы можете указать различные типы и размеры диаграмм в соответствии с вашими требованиями.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Шаг 3. Добавьте ряд данных на диаграмму.
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف سلاسل متعددة بفئتين لكل منهما.
+Добавьте ряд данных на диаграмму. В этом примере мы добавим несколько серий по две категории в каждой.
 
 ```csharp
 ChartSeriesCollection seriesColl = chart.Series;
@@ -53,34 +53,34 @@ seriesColl.Add("Aspose Series 4", categories, new double[] { 7, 8 });
 seriesColl.Add("Aspose Series 5", categories, new double[] { 9, 10 });
 ```
 
-## الخطوة 4: احفظ المستند
+## Шаг 4: Сохраните документ
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Наконец, сохраните документ в указанный каталог, используя`Save` метод`Document` объект.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مخطط عمودي بسيط باستخدام Aspose.Words for .NET.
+На этом реализация вставки простой гистограммы с использованием Aspose.Words for .NET завершена.
 
-### مثال على شفرة المصدر لإدراج مخطط عمودي بسيط باستخدام Aspose.Words for .NET 
+### Пример исходного кода для вставки простой гистограммы с использованием Aspose.Words для .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// يمكنك تحديد أنواع وأحجام مختلفة من المخططات.
+	// Вы можете указать различные типы и размеры диаграмм.
 	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 	Chart chart = shape.Chart;
 	ChartSeriesCollection seriesColl = chart.Series;
 	Console.WriteLine(seriesColl.Count);
-	// حذف السلاسل التي تم إنشاؤها بشكل افتراضي.
+	// Удалить серию, сгенерированную по умолчанию.
 	seriesColl.Clear();
-	// قم بإنشاء مصفوفة أسماء الفئات ، في هذا البرنامج التعليمي لدينا فئتان.
+	// Создайте массив имен категорий, в этом уроке у нас есть две категории.
 	string[] categories = new string[] { "Category 1", "Category 2" };
-	// الرجاء ملاحظة أنه يجب ألا تكون صفائف البيانات فارغة ويجب أن تكون المصفوفات بنفس الحجم.
+	// Обратите внимание, что массивы данных не должны быть пустыми, а массивы должны быть одного размера.
 	seriesColl.Add("Aspose Series 1", categories, new double[] { 1, 2 });
 	seriesColl.Add("Aspose Series 2", categories, new double[] { 3, 4 });
 	seriesColl.Add("Aspose Series 3", categories, new double[] { 5, 6 });

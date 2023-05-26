@@ -1,63 +1,63 @@
 ---
-title: إدراج مستند في دمج المراسلات
-linktitle: إدراج مستند في دمج المراسلات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words for .NET.
+title: 在邮件合并时插入文档
+linktitle: 在邮件合并时插入文档
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在邮件合并期间将文档插入另一个文档。
 type: docs
 weight: 10
 url: /zh/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام ميزة "إدراج مستند أثناء دمج المراسلات" في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم كود المصدر وإجراء عملية إدراج المستند.
+在本教程中，我们将向您介绍如何在邮件合并期间使用 Aspose.Words for .NET 的 Insert Document During Mail Merge 功能将文档插入另一个文档。按照以下步骤了解源代码并执行文档插入。
 
-## الخطوة 1: تحميل المستند الرئيسي
+## 第 1 步：加载主文档
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند الرئيسي في كائن المستند. إليك الطريقة:
+首先，指定文档的目录并将主文档加载到 Document 对象中。就是这样：
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 ```
 
-## الخطوة 2: تكوين دمج المراسلات
+## 步骤 2：配置邮件合并
 
-لنقم الآن بتكوين دمج المراسلات وتحديد رد نداء دمج الحقول لإدراج مستند في مستند آخر. إليك الطريقة:
+现在让我们配置邮件合并并指定字段合并回调以将文档插入另一个文档。就是这样：
 
 ```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
 ```
 
-## الخطوة 3: تشغيل دمج المراسلات
+## 第 3 步：运行邮件合并
 
-سنقوم بتشغيل دمج البريد من خلال توفير أسماء حقول الدمج والبيانات المقابلة. إليك الطريقة:
+我们将通过提供合并字段的名称和相应的数据来运行邮件合并。就是这样：
 
 ```csharp
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-### مثال على شفرة المصدر لـ Insert Document At Mail Merge باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 在邮件合并时插入文档的示例源代码
 
-فيما يلي رمز المصدر الكامل لميزة "إدراج مستند في دمج المراسلات" في Aspose.Words for .NET:
+以下是 Aspose.Words for .NET 的“在邮件合并中插入文档”功能的完整源代码：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
 	mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-	//يحتوي المستند الرئيسي على حقل دمج يسمى "Document_1".
-	// تحتوي البيانات المقابلة لهذا الحقل على مسار مؤهل بالكامل إلى المستند.
-	// يجب إدراج ذلك في هذا المجال.
+	//主文档中有一个名为“Document_1”的合并字段。
+	//该字段的相应数据包含文档的完全限定路径。
+	//应该将其插入到该字段中。
 	mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 
 	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words for .NET. سيتم حفظ المستند الناتج تحت اسم جديد
+使用此代码，您将能够使用 Aspose.Words for .NET 在邮件合并期间将一个文档插入另一个文档。生成的文档将以新名称保存
 
 
 

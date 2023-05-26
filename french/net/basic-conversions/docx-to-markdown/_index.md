@@ -1,20 +1,20 @@
 ---
-title: Docx إلى Markdown
-linktitle: Docx إلى Markdown
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل مستندات Word من Docx إلى تنسيق Markdown باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
+title: Docx à Markdown
+linktitle: Docx à Markdown
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à convertir des documents Word du format Docx au format Markdown en utilisant Aspose.Words pour .NET. Tutoriel étape par étape avec un exemple de code source.
 type: docs
 weight: 10
 url: /fr/net/basic-conversions/docx-to-markdown/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتحويل مستند Word بتنسيق Docx إلى Markdown. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Dans ce didacticiel étape par étape, nous vous expliquerons comment utiliser Aspose.Words pour .NET pour convertir un document Word au format Docx en Markdown. Nous vous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque depuis le site officiel.
 
-## الخطوة 1: تهيئة المستند وكائنات DocumentBuilder
+## Étape 1 : Initialisation des objets Document et DocumentBuilder
 
- أولاً ، قم بتهيئة ملف`Document` الكائن و`DocumentBuilder` هدف:
+ Tout d'abord, initialisez le`Document` objet et le`DocumentBuilder` objet:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -22,31 +22,31 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: إضافة محتوى إلى المستند
+## Étape 2 : Ajouter du contenu au document
 
- بعد ذلك ، استخدم ملف`DocumentBuilder` كائن لإضافة محتوى إلى المستند. في هذا المثال ، سنضيف فقرة نصية بسيطة باستخدام امتداد`Writeln` طريقة:
+ Ensuite, utilisez le`DocumentBuilder` objet pour ajouter du contenu au document. Dans cet exemple, nous allons ajouter un simple paragraphe de texte en utilisant la`Writeln` méthode:
 
 ```csharp
 builder.Writeln("Some text!");
 ```
 
-لا تتردد في إضافة محتوى أكثر تعقيدًا مثل العناوين أو الجداول أو القوائم أو التنسيق حسب الحاجة.
+N'hésitez pas à ajouter du contenu plus complexe tel que des titres, des tableaux, des listes ou une mise en forme selon vos besoins.
 
-## الخطوة 3: حفظ المستند بتنسيق Markdown
+## Étape 3 : Enregistrer le document au format Markdown
 
- لحفظ المستند بتنسيق Markdown ، استخدم ملف`Save` طريقة على`Document` كائن وتوفير المسار واسم الملف للمستند الناتج. في هذا المثال ، سنحفظه باسم`"BaseConversions.DocxToMarkdown.md"`:
+ Pour enregistrer le document au format Markdown, utilisez le`Save` méthode sur la`Document` objet et indiquez le chemin et le nom de fichier du document de sortie. Dans cet exemple, nous allons l'enregistrer sous`"BaseConversions.DocxToMarkdown.md"`:
 
 ```csharp
 doc.Save(dataDir + "BaseConversions.DocxToMarkdown.md");
 ```
 
-هذا كل شيء! لقد نجحت في تحويل مستند Word بتنسيق Docx إلى Markdown باستخدام Aspose.Words for .NET.
+C'est ça! Vous avez converti avec succès un document Word au format Docx en Markdown à l'aide de Aspose.Words pour .NET.
 
-### مثال على شفرة المصدر لـ Docx To Markdown باستخدام Aspose.Words for .NET
+### Exemple de code source pour Docx To Markdown en utilisant Aspose.Words pour .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -57,4 +57,4 @@ doc.Save(dataDir + "BaseConversions.DocxToMarkdown.md");
 
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.

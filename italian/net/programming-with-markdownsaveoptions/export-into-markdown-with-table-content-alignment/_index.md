@@ -1,33 +1,33 @@
 ---
-title: تصدير إلى Markdown مع محاذاة محتوى الجدول
-linktitle: تصدير إلى Markdown مع محاذاة محتوى الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تصدير محتوى الجدول بمحاذاة مختلفة لملفات Markdown باستخدام Aspose.Words for .NET.
+title: Esporta in markdown con allineamento del contenuto della tabella
+linktitle: Esporta in markdown con allineamento del contenuto della tabella
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come esportare il contenuto della tabella con diversi allineamenti in file Markdown utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية التي تساعد في تصدير المحتوى إلى ملف Markdown مع محاذاة محتوى الجدول باستخدام مكتبة Aspose.Words لـ .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Ecco una guida dettagliata per spiegare il seguente codice sorgente C# che consente di esportare il contenuto in un file Markdown con l'allineamento del contenuto della tabella utilizzando la libreria Aspose.Words per .NET. Assicurati di aver incluso la libreria Aspose.Words nel tuo progetto prima di utilizzare questo codice.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## Passaggio 1: impostare il percorso della directory del documento
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Il percorso della directory dei documenti.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
+Assicurati di specificare il percorso corretto della directory dei documenti in cui verrà salvato il documento modificato.
 
-## الخطوة 2: قم بإنشاء مستند ومولد مستندات
+## Passaggio 2: creare un documento e un generatore di documenti
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- هنا نقوم بإنشاء مثيل لـ`Document` فئة ومثيل`DocumentBuilder` فئة تسمح لنا بمعالجة المستند وإضافة عناصر.
+ Qui creiamo un'istanza di`Document` class e un'istanza di`DocumentBuilder` class che ci permetterà di manipolare il documento e aggiungere elementi.
 
-## الخطوة 3: أدخل خلايا في الجدول بمحاذاة فقرات مختلفة
+## Passaggio 3: inserisci le celle nella tabella con diversi allineamenti di paragrafo
 
 ```csharp
 builder. InsertCell();
@@ -38,9 +38,9 @@ builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.Write("Cell2");
 ```
 
-نستخدم Document Builder لإدراج خلايا في الجدول وتعيين محاذاة فقرة مختلفة لكل خلية.
+Usiamo il Document Builder per inserire celle nella tabella e impostare diversi allineamenti di paragrafo per ogni cella.
 
-## الخطوة 4: قم بتعيين خيارات تصدير Markdown وحفظ المستند المعدل
+## Passaggio 4: imposta le opzioni di esportazione Markdown e salva il documento modificato
 
 ```csharp
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
@@ -59,14 +59,14 @@ saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 ```
 
-قمنا بتعيين خيارات تصدير Markdown بمحاذاة محتوى جدول مختلفة ، ثم احفظنا المستند المعدل باستخدام كل خيار محاذاة.
+Impostiamo le opzioni di esportazione Markdown con diversi allineamenti del contenuto della tabella, quindi salviamo il documento modificato utilizzando ciascuna opzione di allineamento.
 
-### مثال على شفرة المصدر للتصدير إلى Markdown مع محاذاة محتوى الجدول باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente da esportare in Markdown con l'allineamento del contenuto della tabella utilizzando Aspose.Words per .NET
 
 ```csharp
 
             
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
     string dataDir = "YOUR DOCUMENT DIRECTORY";
 	
 	Document doc = new Document();
@@ -79,7 +79,7 @@ doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 	builder.Write("Cell2");
 
-	// يجعل كل الفقرات الموجودة داخل الجدول محاذاة.
+	// Rende allineati tutti i paragrafi all'interno della tabella.
 	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 	{
 		TableContentAlignment = TableContentAlignment.Left
@@ -92,10 +92,10 @@ doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 	saveOptions.TableContentAlignment = TableContentAlignment.Center;
 	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.CenterTableContentAlignment.md", saveOptions);
 
-	// سيتم أخذ المحاذاة في هذه الحالة من الفقرة الأولى في عمود الجدول المقابل.
+	// L'allineamento in questo caso verrà preso dal primo paragrafo nella corrispondente colonna della tabella.
 	saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 	
-	// احفظ المستند المعدل
+	// Salva il documento modificato
 	doc.Save(dataDir + "WorkingWithMarkdownSaveOptions.AutoTableContentAlignment.md", saveOptions);
             
         

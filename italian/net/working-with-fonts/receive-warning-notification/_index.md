@@ -1,29 +1,29 @@
 ---
-title: تلقي إشعار تحذير
-linktitle: تلقي إشعار تحذير
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تلقي إشعار تحذير عند استخدام Aspose.Words for .NET وإدارة أية مشكلات أو تحذيرات في مستنداتك.
+title: Ricevi una notifica di avviso
+linktitle: Ricevi una notifica di avviso
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come ricevere una notifica di avviso quando utilizzi Aspose.Words per .NET e gestisci eventuali problemi o avvisi nei tuoi documenti.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/receive-warning-notification/
 ---
 
-في هذا البرنامج التعليمي ، سنوضح لك كيفية الحصول على إشعار تحذير أثناء استخدام Aspose.Words for .NET. يمكن إصدار تحذيرات عند إعداد أو حفظ مستند. سنوجهك خطوة بخطوة لفهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In questo tutorial, ti mostreremo come ricevere una notifica di avviso durante l'utilizzo di Aspose.Words per .NET. Gli avvisi possono essere emessi durante l'impostazione o il salvataggio di un documento. Ti guideremo passo dopo passo per comprendere e implementare il codice nel tuo progetto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti elementi:
+- Conoscenza operativa del linguaggio di programmazione C#
+- La libreria Aspose.Words per .NET installata nel tuo progetto
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+Inizia impostando il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند وتكوين معالج التحذير
- قم بتحميل المستند باستخدام ملف`Document` فصل. بعد ذلك ، قم بإنشاء مثيل لملف`HandleDocumentWarnings` فئة للتعامل مع التحذيرات.
+## Passaggio 2: caricare il documento e configurare il gestore degli avvisi
+ Caricare il documento utilizzando il`Document` classe. Quindi, crea un'istanza di`HandleDocumentWarnings` class per gestire gli avvisi.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -31,31 +31,31 @@ HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc. WarningCallback = callback;
 ```
 
-## الخطوة 3: قم بتحديث التخطيط وحفظ المستند
- قم بتحديث تخطيط المستند عن طريق استدعاء`UpdatePageLayout()` طريقة. سيؤدي ذلك إلى تشغيل التحذيرات ، إن وجدت. ثم احفظ المستند.
+## Passaggio 3: aggiorna il layout e salva il documento
+ Aggiorna il layout del documento chiamando il metodo`UpdatePageLayout()` metodo. Ciò attiverà gli avvisi, se presenti. Quindi salva il documento.
 
 ```csharp
 doc.UpdatePageLayout();
 doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 ```
 
-### نموذج التعليمات البرمجية المصدر لتلقي إشعار تحذير باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Ricevi notifica di avviso utilizzando Aspose.Words per .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
-// عند استدعاء UpdatePageLayout يتم تقديم المستند في الذاكرة. أي تحذيرات حدثت أثناء العرض
-// يتم تخزينها حتى يتم حفظ المستند ثم إرسالها إلى التحذير المناسب.
+// Quando chiami UpdatePageLayout, il documento viene visualizzato in memoria. Eventuali avvisi che si sono verificati durante il rendering
+// vengono memorizzati fino al salvataggio del documento e quindi inviati all'appropriato WarningCallback.
 doc.UpdatePageLayout();
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
-// على الرغم من تقديم المستند مسبقًا ، يتم إخطار المستخدم بأي تحذيرات حفظ أثناء حفظ المستند.
+// Anche se il documento è stato sottoposto a rendering in precedenza, eventuali avvisi di salvataggio vengono notificati all'utente durante il salvataggio del documento.
 doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تلقي إشعار تحذير أثناء استخدام Aspose.Words for .NET. يمكن إصدار تحذيرات عند إعداد أو حفظ مستند. استخدم هذه الميزة ليتم إعلامك بأي مشكلات أو تحذيرات تتعلق بمستنداتك.
+## Conclusione
+In questo tutorial, hai imparato come ricevere una notifica di avviso durante l'utilizzo di Aspose.Words per .NET. Gli avvisi possono essere emessi durante l'impostazione o il salvataggio di un documento. Utilizza questa funzione per essere avvisato di eventuali problemi o avvisi relativi ai tuoi documenti.

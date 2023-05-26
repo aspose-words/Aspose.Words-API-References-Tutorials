@@ -1,56 +1,56 @@
 ---
-title: نسخ النص الذي تم وضع إشارة مرجعية عليه
-linktitle: نسخ النص الذي تم وضع إشارة مرجعية عليه
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية نسخ نص إشارة مرجعية من مستند مصدر إلى مستند آخر باستخدام Aspose.Words for .NET.
+title: Kopiera bokmärkt text
+linktitle: Kopiera bokmärkt text
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du kopierar bokmärkestext från ett källdokument till ett annat dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Copy Bookmarked Text في Aspose.Words for .NET library. تتيح لك هذه الميزة نسخ محتويات إشارة مرجعية معينة من مستند مصدر إلى مستند آخر.
+den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder funktionen Kopiera bokmärkt text i Aspose.Words för .NET-biblioteket. Med den här funktionen kan du kopiera innehållet i ett specifikt bokmärke från ett källdokument till ett annat dokument.
 
-## المتطلبات الأساسية
+## Förutsättningar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundläggande kunskaper i C#-språket.
+- .NET-utvecklingsmiljö med Aspose.Words-biblioteket installerat.
 
-## الخطوة 1: تحميل المستند المصدر
+## Steg 1: Laddar källdokument
 
- قبل نسخ نص الإشارة المرجعية ، نحتاج إلى تحميل المستند المصدر في ملف`Document` كائن باستخدام مسار الملف:
+ Innan vi kopierar bokmärkestexten måste vi ladda källdokumentet i en`Document` objekt som använder filsökvägen:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## الخطوة 2: الحصول على إشارة مرجعية المصدر
+## Steg 2: Hämta källbokmärke
 
- نحن نستخدم ال`Bookmarks` خاصية نطاق المستند المصدر للحصول على الإشارة المرجعية المحددة التي نريد نسخها:
+ Vi använder`Bookmarks` egenskapen för källdokumentintervallet för att få det specifika bokmärke vi vill kopiera:
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
-## الخطوة 3: إنشاء وثيقة الوجهة
+## Steg 3: Skapa måldokumentet
 
-نقوم بإنشاء مستند جديد سيكون بمثابة المستند الوجهة لنسخ محتوى الإشارة المرجعية:
+Vi skapar ett nytt dokument som kommer att fungera som måldokument för att kopiera bokmärkesinnehållet:
 
 ```csharp
 Document dstDoc = new Document();
 ```
 
-## الخطوة 4: تحديد موقع النسخ
+## Steg 4: Ange kopieringsplatsen
 
-نحدد الموقع حيث نريد إضافة النص المنسوخ. في مثالنا ، نضيف النص إلى نهاية نص القسم الأخير من المستند الوجهة:
+Vi anger platsen där vi vill lägga till den kopierade texten. I vårt exempel lägger vi till texten i slutet av brödtexten i den sista delen av måldokumentet:
 
 ```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## الخطوة 5: استيراد نص الإشارة المرجعية ونسخه
+## Steg 5: Importera och kopiera bokmärkestext
 
- نحن نستخدم`NodeImporter`كائن لاستيراد نص إشارة مرجعية ونسخه من مستند مصدر إلى المستند الوجهة:
+ Vi använder a`NodeImporter`objekt för att importera och kopiera bokmärkestext från ett källdokument till måldokumentet:
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -60,26 +60,26 @@ AppendBookmarkedText(import, srcBookmark, dstNode);
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 ```
 
-### مثال على شفرة المصدر لـ Copy Bookmarked Text باستخدام Aspose.Words for .NET
+### Exempel på källkod för Kopiera bokmärkt text med Aspose.Words för .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح نسخ النص من إشارة مرجعية باستخدام Aspose.Words for .NET:
+Här är det fullständiga exemplet på källkoden för att demonstrera kopiering av text från ett bokmärke med Aspose.Words för .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 
-	// هذه هي الإشارة المرجعية التي نريد نسخ محتواها.
+	// Det här är bokmärket vars innehåll vi vill kopiera.
 	Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 
-	// سنضيف إلى هذه الوثيقة.
+	// Vi kommer att lägga till detta dokument.
 	Document dstDoc = new Document();
 
-	// لنفترض أننا سنلحق بنهاية نص القسم الأخير.
+	// Låt oss säga att vi kommer att läggas till i slutet av brödtexten i det sista avsnittet.
 	CompositeNode dstNode = dstDoc.LastSection.Body;
 
-	// إذا قمت بالاستيراد عدة مرات بدون سياق واحد ، فسيؤدي ذلك إلى إنشاء العديد من الأنماط.
+	// Om du importerar flera gånger utan ett enda sammanhang kommer det att resultera i många stilar som skapas.
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
 
 	AppendBookmarkedText(importer, srcBookmark, dstNode);
@@ -88,6 +88,6 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ```
 
-## خاتمة
+## Slutsats
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام الوظيفة Copy Bookmarked Text من Aspose.Words for .NET. اتبعنا دليلًا تفصيليًا لنسخ محتويات إشارة مرجعية من مستند مصدر إلى مستند آخر.
+I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Kopiera bokmärkt text från Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att kopiera innehållet i ett bokmärke från ett källdokument till ett annat dokument.

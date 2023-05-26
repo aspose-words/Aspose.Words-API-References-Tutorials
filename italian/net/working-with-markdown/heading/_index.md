@@ -1,50 +1,50 @@
 ---
-title: عنوان
-linktitle: عنوان
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام العنوان مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Intestazione
+linktitle: Intestazione
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come utilizzare l'intestazione con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/heading/
 ---
 
-في هذا المثال ، سوف نوضح لك كيفية استخدام ميزة العناوين مع Aspose.Words for .NET. تُستخدم العناوين لبناء محتوى المستند وتحديد أولوياته.
+In questo esempio, ti mostreremo come utilizzare la funzionalità delle intestazioni con Aspose.Words per .NET. Le intestazioni vengono utilizzate per strutturare e dare priorità al contenuto di un documento.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Passaggio 1: utilizzo di un generatore di documenti
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Innanzitutto, utilizzeremo un generatore di documenti per aggiungere contenuto al nostro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تخصيص أنماط العناوين
+## Passaggio 2: personalizzazione degli stili di intestazione
 
-بشكل افتراضي ، يمكن أن تحتوي أنماط العناوين في Word على تنسيق غامق ومائل. إذا لم نرغب في فرض هذه الخصائص ، فنحن بحاجة إلى تعيينها صراحة على "خطأ".
+Per impostazione predefinita, gli stili di intestazione in Word possono avere la formattazione in grassetto e corsivo. Se non vogliamo che queste proprietà vengano applicate, dobbiamo impostarle esplicitamente su "false".
 
 ```csharp
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
 
-## الخطوة 3: إضافة عنوان من المستوى 1
+## Passaggio 3: aggiunta di un titolo di livello 1
 
- يمكننا إضافة عنوان من المستوى 1 عن طريق تحديد اسم نمط الفقرة المناسب واستخدام امتداد`Writeln` طريقة كتابة محتوى العنوان.
+ Possiamo aggiungere un titolo di livello 1 specificando il nome dello stile di paragrafo appropriato e utilizzando il`Writeln` metodo per scrivere il contenuto del titolo.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";
 builder.Writeln("This is an H1 tag");
 ```
 
-### مثال على شفرة المصدر للعنوان مع Aspose.Words for .NET
+### Codice sorgente di esempio per l'intestazione con Aspose.Words per .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// بشكل افتراضي ، قد تحتوي أنماط العناوين في Word على تنسيق غامق ومائل.
-	//إذا كنا لا نريد التأكيد ، فاضبط هذه الخصائص صراحةً على false.
+	// Per impostazione predefinita, gli stili di intestazione in Word possono avere la formattazione grassetto e corsivo.
+	//Se non vogliamo essere enfatizzati, imposta queste proprietà esplicitamente su false.
 	builder.Font.Bold = false;
 	builder.Font.Italic = false;
 
@@ -53,6 +53,6 @@ builder.Writeln("This is an H1 tag");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة العناوين مع Aspose.Words for .NET.
+Congratulazioni! Ora hai imparato come utilizzare la funzionalità delle intestazioni con Aspose.Words per .NET.
 
 

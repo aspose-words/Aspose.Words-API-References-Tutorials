@@ -1,46 +1,46 @@
 ---
-title: حافظ على ترقيم المصدر
-linktitle: حافظ على ترقيم المصدر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند مع الاحتفاظ بتنسيق ترقيم المصدر في Aspose.Words for .NET.
+title: Behalten Sie die Quellennummerierung bei
+linktitle: Behalten Sie die Quellennummerierung bei
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie ein Dokument anhängen und dabei die Nummerierungsformatierung der Quelle in Aspose.Words für .NET beibehalten.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/keep-source-numbering/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إلحاق مستند مصدر بمستند وجهة مع الحفاظ على تنسيق الترقيم الأصلي للفقرات المرقمة باستخدام Aspose.Words for .NET.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET ein Quelldokument an ein Zieldokument anhängen und dabei die ursprüngliche Nummerierungsformatierung nummerierter Absätze beibehalten.
 
-## الخطوة 1: قم بإعداد المشروع
+## Schritt 1: Richten Sie das Projekt ein
 
-تأكد من توفر لديك المتطلبات الأساسية التالية:
+Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ مستندات المصدر والوجهة.
+- Aspose.Words für .NET-Bibliothek installiert. Sie können es von der offiziellen Aspose-Website herunterladen oder den NuGet-Paketmanager verwenden, um es zu installieren.
+- Ein Dokumentverzeichnispfad, in dem die Quell- und Zieldokumente gespeichert werden.
 
-## الخطوة 2: قم بإنشاء الوجهة والمستندات المصدر
+## Schritt 2: Erstellen Sie die Ziel- und Quelldokumente
 
- إنشاء مثيلات من`Document` للوجهة والمستندات المصدر.
+ Erstellen Sie Instanzen von`Document` für die Ziel- und Quelldokumente.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: احتفظ بترقيم المصدر عند الاستيراد
+## Schritt 3: Behalten Sie beim Import die Quellennummerierung bei
 
- للاحتفاظ بتنسيق ترقيم الفقرات المرقمة من المستند المصدر ، قم بإنشاء مثيل لـ`ImportFormatOptions` وحدد`KeepSourceNumbering` ل`true` إستخدم`NodeImporter` لاستيراد العقد من المستند المصدر إلى المستند الوجهة ، مع تحديد`ImportFormatMode.KeepSourceFormatting` و ال`importFormatOptions`.
+ Um die Nummerierungsformatierung nummerierter Absätze aus dem Quelldokument beizubehalten, erstellen Sie eine Instanz von`ImportFormatOptions` und eingestellt`KeepSourceNumbering` Zu`true` Benutze einen`NodeImporter` um Knoten aus dem Quelldokument in das Zieldokument zu importieren, unter Angabe`ImportFormatMode.KeepSourceFormatting` und das`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
 ```
 
-## الخطوة 4: استيراد وإلحاق الفقرات
+## Schritt 4: Absätze importieren und anhängen
 
- كرر خلال الفقرات في المستند المصدر واستورد كل فقرة في المستند الوجهة باستخدام ملف`importer`. قم بإلحاق العقد التي تم استيرادها بجسم المستند الوجهة.
+ Durchlaufen Sie die Absätze im Quelldokument und importieren Sie jeden Absatz mithilfe von in das Zieldokument`importer`. Hängen Sie die importierten Knoten an den Hauptteil des Zieldokuments an.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -51,25 +51,25 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## الخطوة 5: احفظ المستند المعدل
+## Schritt 5: Speichern Sie das geänderte Dokument
 
-احفظ المستند المعدل باستخدام ملف`Save` طريقة`Document` هدف.
+Speichern Sie das geänderte Dokument mit`Save` Methode der`Document` Objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند مصدر بمستند الوجهة مع الاحتفاظ بتنسيق الترقيم الأصلي باستخدام Aspose.Words for .NET.
+Damit ist die Implementierung des Anhängens eines Quelldokuments an ein Zieldokument unter Beibehaltung der ursprünglichen Nummerierungsformatierung mithilfe von Aspose.Words für .NET abgeschlossen.
 
-### مثال على شفرة المصدر لـ Keep Source Numbering باستخدام Aspose.Words for .NET 
+### Beispielquellcode für Keep Source Numbering mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// احتفظ بتنسيق قائمة المصادر عند استيراد فقرات مرقمة.
+	// Behalten Sie beim Importieren nummerierter Absätze die Formatierung der Quellenliste bei.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

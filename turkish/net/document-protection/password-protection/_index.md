@@ -1,60 +1,60 @@
 ---
-title: حماية كلمة المرور
-linktitle: حماية كلمة المرور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حماية مستندات Word الخاصة بك بكلمة مرور باستخدام Aspose.Words for .NET.
+title: Şifre Koruması
+linktitle: Şifre Koruması
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerinizi nasıl parola ile koruyacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/document-protection/password-protection/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات استخدام ميزة الحماية بكلمة مرور في Aspose.Words for .NET. تتيح لك هذه الميزة حماية مستند Word بكلمة مرور لضمان سريته. اتبع الخطوات التالية:
+Bu öğreticide, Aspose.Words for .NET'in parola koruma özelliğini kullanma adımlarında size rehberlik edeceğiz. Bu özellik, gizliliğini sağlamak için bir Word belgesini bir parola ile korumanıza olanak tanır. Aşağıdaki adımları takip et:
 
-## الخطوة 1: إنشاء المستند وتطبيق الحماية
+## 1. Adım: Belge Oluşturma ve Koruma Uygulama
 
-ابدأ بإنشاء مثيل لفئة المستند:
+Document sınıfının bir örneğini oluşturarak başlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة الثانية: تطبيق الحماية بكلمة مرور
+## 2. Adım: Parola koruması uygulayın
 
-ثم يمكنك تطبيق الحماية بكلمة مرور باستخدام طريقة حماية () كائن المستند:
+Ardından, Document nesnesinin Protect() yöntemini kullanarak parola koruması uygulayabilirsiniz:
 
 ```csharp
 doc.Protect(ProtectionType.NoProtection, "password");
 ```
 
-تأكد من استبدال كلمة المرور بكلمة المرور الفعلية التي تريد استخدامها لحماية المستند.
+Belgeyi korumak için kullanmak istediğiniz asıl parolayı "parola" ile değiştirdiğinizden emin olun.
 
-## الخطوة 3: حفظ المستند المحمي
+## 3. Adım: Korunan Belgeyi Kaydetme
 
-أخيرًا ، يمكنك حفظ المستند المحمي باستخدام طريقة Save () لكائن Document:
+Son olarak, Document nesnesinin Save() yöntemini kullanarak korunan belgeyi kaydedebilirsiniz:
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند المحمي.
+Korunan belgeyi kaydetmek için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### مثال على شفرة المصدر لحماية كلمة المرور باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Parola Koruması için örnek kaynak kodu
 
-فيما يلي رمز المصدر الكامل لحماية كلمة المرور باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanarak parola koruması için eksiksiz kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 
-	//تطبيق حماية المستندات.
+	//Belge korumasını uygulayın.
 	doc.Protect(ProtectionType.NoProtection, "password");
 
 	doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ```
 
-تذكر استبدال "دليل المستندات" بدليل المستندات و "كلمة المرور" بكلمة المرور الفعلية التي تريد استخدامها.
+"BELGELER DİZİNİNİZİ" belgelerinizin dizini ile ve "parola"yı kullanmak istediğiniz gerçek parolayla değiştirmeyi unutmayın.
 

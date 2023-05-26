@@ -1,31 +1,31 @@
 ---
-title: تشفير الوثيقة بكلمة مرور
-linktitle: تشفير الوثيقة بكلمة مرور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تشفير المستندات بكلمة مرور باستخدام Aspose.Words for .NET.
+title: 使用密码加密文档
+linktitle: 使用密码加密文档
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 使用密码加密文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
-يعد أمان المستند ضروريًا عند العمل مع الملفات في تطبيق C #. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك حماية مستنداتك بسهولة عن طريق تشفيرها بكلمة مرور. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتشفير مستند باستخدام خيارات حفظ DocSaveOptions.
+在 C# 应用程序中处理文件时，文档安全性至关重要。借助 .NET 的 Aspose.Words 库，您可以通过使用密码加密来轻松保护您的文档。在本分步指南中，我们将带您了解如何使用 Aspose.Words for .NET C# 源代码使用 DocSaveOptions 保存选项加密文档。
 
-## فهم مكتبة Aspose.Words
+## 理解 Aspose.Words 库
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库很重要。 Aspose.Words 是一个强大的库，可以在包括.NET 在内的不同平台上创建、编辑、转换和保护 Word 文档。它提供了许多用于操作文档的功能，例如插入文本、更改格式、添加部分等等。
 
-## الخطوة 1: تحديد دليل المستند
+## 第 1 步：定义文档目录
 
-الخطوة الأولى هي تعيين الدليل حيث تريد حفظ المستند المشفر. يجب عليك تحديد مسار الدليل الكامل. على سبيل المثال :
+第一步是设置要保存加密文档的目录。您必须指定完整的目录路径。例如 ：
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+请务必将“您的文档目录”替换为您的文档目录的实际路径。
 
-## الخطوة 2: إنشاء وتحرير وثيقة
+## 第 2 步：创建和编辑文档
 
-ثم يمكنك إنشاء مستند وإضافة محتوى إليه. استخدم فئة DocumentBuilder المقدمة من Aspose.Words لبناء محتوى وثيقتك. على سبيل المثال :
+然后您可以创建文档并向其中添加内容。使用 Aspose.Words 提供的 DocumentBuilder 类来构建文档的内容。例如 ：
 
 ```csharp
 Document doc = new Document();
@@ -34,53 +34,53 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Write("Hello world!");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند فارغ جديد ثم استخدام DocumentBuilder لكتابة النص "Hello World!".
+在此示例中，我们创建一个新的空白文档，然后使用 DocumentBuilder 编写文本“Hello World!”。
 
-## الخطوة 3: تكوين خيارات التسجيل
+## 第 3 步：配置录制选项
 
-لنقم الآن بتهيئة خيارات الحفظ لمستندنا. استخدم فئة DocSaveOptions لتحديد إعدادات الحفظ. على سبيل المثال :
+现在让我们为文档配置保存选项。使用 DocSaveOptions 类指定保存设置。例如 ：
 
 ```csharp
 DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };
 ```
 
-في هذا المثال ، قمنا بإنشاء كائن DocSaveOptions جديد وقمنا بتعيين خاصية Password على "password" لتشفير المستند باستخدام كلمة المرور هذه.
+在此示例中，我们创建一个新的 DocSaveOptions 对象并将密码属性设置为“密码”以使用此密码加密文档。
 
-## الخطوة 4: تمكين ميزة "تشفير المستند بكلمة مرور"
+## 第 4 步：启用“使用密码加密文档”功能
 
-لقد قمنا بالفعل بتكوين الخيارات لـ
+我们已经配置了选项
 
-التسجيل بكلمة المرور المحددة ، والتي تقوم تلقائيًا بتنشيط ميزة "تشفير المستند بكلمة مرور". هذا يضمن أن الوثيقة مشفرة بكلمة المرور المحددة عندما تم حفظها.
+使用指定的密码注册，这将自动激活“使用密码加密文档”功能。这可确保文档使用保存时指定的密码进行加密。
 
-## الخطوة 5: حفظ المستند
+## 第 5 步：保存文档
 
-أخيرًا ، يمكنك حفظ المستند باستخدام طريقة Save لفئة Document. حدد المسار الكامل للملف واسم الملف المطلوب. على سبيل المثال :
+最后，您可以使用 Document 类的 Save 方法保存文档。指定文件的完整路径和所需的文件名。例如 ：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx", saveOptions);
 ```
 
-تأكد من استبدال "dataDir" بمسار الدليل إلى مستنداتك.
+请务必将“dataDir”替换为文档的目录路径。
 
-### مثال على التعليمات البرمجية المصدر لـ DocSaveOptions حفظ الخيارات باستخدام وظيفة "تشفير المستند بكلمة مرور" باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的具有“使用密码加密文档”功能的 DocSaveOptions 保存选项的示例源代码
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء وتحرير وثيقة
+//创建和编辑文档
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
             
 builder.Write("Hello world!");
 
-// قم بتكوين خيارات الحفظ باستخدام ميزة "تشفير المستند بكلمة مرور"
+//使用“使用密码加密文档”功能配置保存选项
 DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };
 
-// احفظ المستند بالخيارات المحددة
+//使用指定选项保存文档
 doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx", saveOptions);
 ```
 
-## خاتمة
+## 结论
 
-في هذا الدليل ، شرحنا كيفية استخدام مكتبة Aspose.Words لـ .NET لتشفير مستند بكلمة مرور باستخدام خيارات حفظ DocSaveOptions. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يضمن تشفير المستند بكلمة مرور سريته وأمانه عند التعامل معه.
+在本指南中，我们解释了如何使用适用于 .NET 的 Aspose.Words 库使用 DocSaveOptions 保存选项使用密码加密文档。按照提供的步骤并使用提供的 C# 源代码，您可以轻松地将此功能应用到您的 C# 应用程序中。使用密码对文档进行加密可确保处理文档时的机密性和安全性。

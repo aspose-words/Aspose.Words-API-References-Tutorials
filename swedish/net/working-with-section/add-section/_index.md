@@ -1,45 +1,45 @@
 ---
-title: إضافة قسم
-linktitle: إضافة قسم
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية إضافة قسم إلى مستند Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة لهيكلة المستند الخاص بك.
+title: Lägg till avsnitt
+linktitle: Lägg till avsnitt
+second_title: Aspose.Words för .NET API Referens
+description: I den här självstudien lär du dig hur du lägger till ett avsnitt i ett Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide för att strukturera ditt dokument.
 type: docs
 weight: 10
 url: /sv/net/working-with-section/add-section/
 ---
 
-في هذا البرنامج التعليمي ، سنخبرك بكيفية إضافة قسم جديد إلى مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تساعد إضافة أقسام في تنظيم المستند وبنيته بشكل أكثر كفاءة. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+I den här handledningen kommer vi att berätta för dig hur du lägger till ett nytt avsnitt i ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Att lägga till avsnitt hjälper till att organisera och strukturera ditt dokument mer effektivt. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
-## الخطوة 1: قم بإنشاء مستند ومنشئ
- أولاً ، سننشئ مثيلاً لملف`Document` فئة وما يرتبط بها`DocumentBuilder` المُنشئ لبناء المستند.
+## Steg 1: Skapa ett dokument och konstruktör
+ Först skapar vi en instans av`Document` klass och en tillhörande`DocumentBuilder` konstruktör för att bygga dokumentet.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أضف محتوى إلى المستند
- بعد ذلك ، سنستخدم ملف`DocumentBuilder`المُنشئ لإضافة محتوى إلى المستند. في هذا المثال ، نضيف سطرين من النص.
+## Steg 2: Lägg till innehåll i dokumentet
+ Därefter kommer vi att använda`DocumentBuilder`konstruktor för att lägga till innehåll i dokumentet. I det här exemplet lägger vi till två rader text.
 
 ```csharp
 builder.Writeln("Hello1");
 builder.Writeln("Hello2");
 ```
 
-## الخطوة 3: أضف قسمًا جديدًا
- لإضافة قسم جديد إلى المستند ، سننشئ مثيلًا لملف`Section` فئة وإضافتها إلى`Sections` جمع الوثيقة.
+## Steg 3: Lägg till ett nytt avsnitt
+ För att lägga till ett nytt avsnitt i dokumentet skapar vi en instans av`Section` klass och lägg till den i`Sections` insamling av dokumentet.
 
 ```csharp
 Section sectionToAdd = new Section(doc);
 doc.Sections.Add(sectionToAdd);
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Add Section باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Add Section med Aspose.Words för .NET 
 
 ```csharp
 
@@ -51,5 +51,5 @@ doc.Sections.Add(sectionToAdd);
 	doc.Sections.Add(sectionToAdd);
 
 ```
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية إضافة قسم جديد إلى مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات الموضحة ، يمكنك بسهولة تنظيم وبناء المستند الخاص بك عن طريق إضافة أقسام. لا تتردد في تخصيص محتوى القسم وخصائصه لاحتياجاتك الخاصة.
+## Slutsats
+I den här handledningen såg vi hur man lägger till ett nytt avsnitt i ett Word-dokument med Aspose.Words för .NET. Genom att följa stegen som beskrivs kan du enkelt organisera och strukturera ditt dokument genom att lägga till avsnitt. Skräddarsy gärna avsnittets innehåll och egenskaper efter dina specifika behov.

@@ -1,54 +1,54 @@
 ---
-title: إزالة التذييلات
-linktitle: إزالة التذييلات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة التذييلات بسهولة من مستندات Word باستخدام Aspose.Words for .NET. اتبع دليلنا المفصل خطوة بخطوة للتعامل الفعال مع ملفات DOCX.
+title: Supprimer les pieds de page
+linktitle: Supprimer les pieds de page
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à supprimer facilement les pieds de page des documents Word avec Aspose.Words pour .NET. Suivez notre guide étape par étape pour une gestion efficace des fichiers DOCX.
 type: docs
 weight: 10
 url: /fr/net/remove-content/remove-footers/
 ---
-عندما يتعلق الأمر بالعمل مع مستندات Word في تطبيق .NET الخاص بك ، فإن Aspose.Words أداة قوية ومتعددة الاستخدامات يمكنها مساعدتك في معالجة ملفات DOCX بسهولة. في هذه المقالة ، سوف نستكشف ميزة معينة في Aspose.Words: إزالة التذييلات.
+Lorsqu'il s'agit de travailler avec des documents Word dans votre application .NET, Aspose.Words est un outil puissant et polyvalent qui peut vous aider à manipuler facilement les fichiers DOCX. Dans cet article, nous allons explorer une fonctionnalité spécifique d'Aspose.Words : la suppression des pieds de page.
 
-## فهم Aspose.Words for .NET
+## Comprendre Aspose.Words pour .NET
 
-Aspose.Words for .NET مكتبة فصول قوية لإنشاء وتعديل وتحويل ومعالجة مستندات Word في تطبيقات .NET. يقدم مجموعة واسعة من الميزات بما في ذلك إدارة الرؤوس والتذييلات والصور وتنسيق النص والمزيد.
+Aspose.Words pour .NET est une puissante bibliothèque de classes pour créer, modifier, convertir et manipuler des documents Word dans des applications .NET. Il offre un large éventail de fonctionnalités, notamment la gestion des en-têtes, des pieds de page, des images, du formatage du texte, etc.
 
-## الغرض من إزالة التذييلات في Aspose. Words
+## But de la suppression des pieds de page dans Aspose.Words
 
-قد تكون هناك حالات تريد فيها إزالة التذييلات من مستند Word. قد يرجع ذلك إلى أسباب مختلفة ، مثل الحاجة إلى حذف المعلومات الحساسة ، أو لتكييف المستند لاستخدام آخر أو ببساطة لإزالة العناصر غير المرغوب فيها. يجعل Aspose.Words هذه المهمة أسهل بكثير من خلال إعطائك طريقة سهلة وفعالة لإزالة التذييلات من مستنداتك.
+Il peut arriver que vous souhaitiez supprimer les pieds de page d'un document Word. Cela peut être dû à diverses raisons, comme la nécessité de supprimer des informations sensibles, d'adapter le document à un autre usage ou simplement d'éliminer des éléments indésirables. Aspose.Words rend cette tâche beaucoup plus facile en vous offrant un moyen simple et efficace de supprimer les pieds de page de vos documents.
 
-## الخطوة 1: قم بتعيين مسار دليل المستند
+## Étape 1 : Définir le chemin d'accès au répertoire de documents
 
-قبل أن تبدأ ، تأكد من تعيين دليل المستند الخاص بك في متغير "dataDir". سيسمح لك هذا بتحديد الموقع الدقيق حيث يوجد ملف DOCX الخاص بك.
+Avant de commencer, assurez-vous d'avoir défini votre répertoire de documents dans la variable "dataDir". Cela vous permettra de spécifier l'emplacement exact où se trouve votre fichier DOCX.
 
 ```csharp
 string dataDir = "PATH_TO_YOUR_DOCUMENT_DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Étape 2 : Charger le document
 
-تتمثل الخطوة الأولى في تحميل المستند في كائن من نوع Document. سيسمح لك ذلك بالوصول إلى محتويات المستند ومعالجتها.
+La première étape consiste à charger le document dans un objet de type Document. Cela vous permettra d'accéder et de manipuler le contenu du document.
 
 ```csharp
 Document doc = new Document(dataDir + "Name_of_document.docx");
 ```
 
-تأكد من استبدال "Name_of_document.docx" بالاسم الفعلي للمستند الخاص بك.
+Assurez-vous de remplacer "Nom_du_document.docx" par le nom réel de votre document.
 
-## الخطوة 3: كرر من خلال الأقسام
+## Étape 3 : parcourir les sections
 
-يمكن أن يحتوي مستند Word على أقسام متعددة ، ويمكن أن يكون لكل قسم تذييلاته الخاصة. يجب أن نذهب من خلال كل قسم من المستند للوصول إلى التذييلات.
+Un document Word peut contenir plusieurs sections et chaque section peut avoir ses propres pieds de page. Nous devons parcourir chaque section du document pour accéder aux pieds de page.
 
 ```csharp
 foreach (Section section in doc)
 {
-     // رمز لإزالة التذييلات
+     // Code pour supprimer les pieds de page
 }
 ```
 
-## الخطوة 4: إزالة التذييلات
+## Étape 4 : Supprimer les pieds de page
 
-الآن وقد انتقلنا إلى قسم معين ، يمكننا إزالة التذييلات من هذا القسم. في Aspose.Words ، هناك أنواع مختلفة من التذييلات المحتملة ، مثل "FooterFirst" (للصفحة الأولى) و "FooterPrimary" (للصفحات الفردية) و "FooterEven" (للصفحات الزوجية). نحتاج إلى التحقق من كل هذه الأنواع من التذييلات وإزالتها.
+Maintenant que nous avons navigué vers une section spécifique, nous pouvons supprimer les pieds de page de cette section. Dans Aspose.Words, il existe différents types de pieds de page possibles, tels que "FooterFirst" (pour la première page), "FooterPrimary" (pour les pages impaires) et "FooterEven" (pour les pages paires). Nous devons vérifier et supprimer tous ces types de pieds de page.
 
 ```csharp
 HeaderFooter footer = section.HeadersFooters[HeaderFooterType.Footer
@@ -63,32 +63,32 @@ footer = section.HeadersFooters[HeaderFooterType.FooterEven];
 footer?.Remove();
 ```
 
-## الخطوة 5: احفظ المستند المعدل
+## Étape 5 : Enregistrer le document modifié
 
-بمجرد الانتهاء من إزالة التذييلات ، يمكننا حفظ المستند المحرر في ملف منفصل.
+Une fois que nous avons fini de supprimer les pieds de page, nous pouvons enregistrer le document modifié dans un fichier séparé.
 
 ```csharp
 doc.Save(dataDir + "Name_of_modified_document.docx");
 ```
 
-لا تنس تحديد اسم وموقع الملف المعدل في "Name_of_modified_document.docx".
+N'oubliez pas de préciser le nom et l'emplacement du fichier modifié dans "Nom_du_document_modifié.docx".
 
-### نموذج التعليمات البرمجية المصدر لإزالة التذييلات باستخدام Aspose.Words for .NET 
+### Exemple de code source pour supprimer les pieds de page à l'aide d'Aspose.Words pour .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Header and footer types.docx");
 
 foreach (Section section in doc)
 {
-	// ما يصل إلى ثلاثة تذييلات مختلفة ممكنة في قسم (للصفحات الأولى ، الزوجية والفردية)
-	// نتحقق منها ونحذفها جميعًا.
+	// Jusqu'à trois pieds de page différents sont possibles dans une section (pour les premières pages, paires et impaires)
+	// nous les vérifions et les supprimons tous.
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// التذييل الأساسي هو التذييل المستخدم للصفحات الفردية.
+	// Le pied de page principal est le pied de page utilisé pour les pages impaires.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
         
 ```
 
-## خاتمة
+## Conclusion
 
-في هذه المقالة ، اكتشفنا كيفية إزالة التذييلات من مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات المقدمة ، يمكنك بسهولة معالجة مستنداتك وإزالة التذييلات غير المرغوب فيها. يقدم Aspose.Words حلاً فعالاً وملائماً للعمل مع مستندات Word في تطبيق .NET الخاص بك.
+Dans cet article, nous avons exploré comment supprimer les pieds de page d'un document Word à l'aide de Aspose.Words pour .NET. En suivant les étapes fournies, vous pouvez facilement manipuler vos documents et supprimer les pieds de page indésirables. Aspose.Words offre une solution puissante et pratique pour travailler avec des documents Word dans votre application .NET.
 

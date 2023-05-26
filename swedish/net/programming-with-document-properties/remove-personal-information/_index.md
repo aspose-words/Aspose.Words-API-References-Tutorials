@@ -1,56 +1,56 @@
 ---
-title: إزالة المعلومات الشخصية
-linktitle: إزالة المعلومات الشخصية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لإزالة المعلومات الشخصية من مستند باستخدام Aspose.Words for .NET.
+title: Ta bort personlig information
+linktitle: Ta bort personlig information
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att ta bort personlig information från ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-document-properties/remove-personal-information/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإزالة المعلومات الشخصية من مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إزالة المعلومات الشخصية الحساسة من مستند ، مثل بيانات تعريف المؤلف.
+den här handledningen går vi igenom C#-källkoden för att ta bort personlig information från ett dokument med Aspose.Words för .NET. Den här funktionen låter dig ta bort känslig personlig information från ett dokument, till exempel författaridentifieringsdata.
 
-## الخطوة 1: إعداد المشروع
+## Steg 1: Projektinställning
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
 
-## الخطوة الثانية: تحميل المستند
+## Steg 2: Ladda dokumentet
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد إزالة المعلومات الشخصية منه. استخدم الكود التالي لتحميل المستند:
+I det här steget laddar vi upp Word-dokumentet från vilket vi vill ta bort personuppgifterna. Använd följande kod för att ladda dokumentet:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInformation = true };
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till katalogen där ditt dokument finns.
 
-## الخطوة 3: حذف المعلومات الشخصية
+## Steg 3: Radera personlig information
 
- الآن سنعمل على تمكين إزالة المعلومات الشخصية عن طريق تعيين`RemovePersonalInformation` ملكية ل`true`. استخدم الكود التالي:
+ Nu kommer vi att möjliggöra borttagning av personlig information genom att ställa in`RemovePersonalInformation` egendom till`true`. Använd följande kod:
 
 ```csharp
 doc.RemovePersonalInformation = true;
 ```
 
-ينشط هذا الرمز حذف المعلومات الشخصية في المستند.
+Denna kod aktiverar radering av personlig information i dokumentet.
 
-## الخطوة 4: حفظ المستند
+## Steg 4: Spara dokumentet
 
-أخيرًا ، سنحفظ المستند مع إزالة المعلومات الشخصية. استخدم الكود التالي:
+Slutligen kommer vi att spara dokumentet med personuppgifterna borttagna. Använd följande kod:
 
 ```csharp
 doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.docx");
 ```
 
-يحفظ هذا الرمز المستند مع إزالة المعلومات الشخصية إلى ملف جديد.
+Denna kod sparar dokumentet med den personliga informationen borttagen till en ny fil.
 
-### مثال على شفرة المصدر لإزالة المعلومات الشخصية باستخدام Aspose.Words for .NET
+### Exempel på källkod för Ta bort personlig information med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx") { RemovePersonalInformation = true };
 
@@ -58,6 +58,6 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 	
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Var noga med att ange rätt dokumentsökväg i`dataDir` variabel.
 
-لقد تعلمت الآن كيفية إزالة المعلومات الشخصية من مستند باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إزالة المعلومات الحساسة من المستندات الخاصة بك.
+Du har nu lärt dig hur du tar bort personlig information från ett dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide som finns i denna handledning kan du enkelt ta bort känslig information från dina egna dokument.

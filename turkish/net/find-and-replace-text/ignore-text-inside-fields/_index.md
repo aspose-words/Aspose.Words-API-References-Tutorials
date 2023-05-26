@@ -1,88 +1,88 @@
 ---
-title: تجاهل النص داخل الحقول
-linktitle: تجاهل النص داخل الحقول
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة "تجاهل النص داخل الحقول" في Aspose.Words for .NET.
+title: Alanların İçindeki Metni Yoksay
+linktitle: Alanların İçindeki Metni Yoksay
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'in "Alanların İçindeki Metni Yoksay" özelliğini nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/ignore-text-inside-fields/
 ---
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Ignore Text Inside Fields في مكتبة Aspose.Words for .NET. هذه الميزة مفيدة عندما نريد تجاهل النص داخل الحقول عند معالجة المستندات.
+Bu makalede, Aspose.Words for .NET kitaplığındaki Alanların İçindeki Metni Yoksay işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, belgeleri işlerken alanların içindeki metni yok saymak istediğimizde kullanışlıdır.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# dili hakkında temel bilgi.
+- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## 1. Adım: Yeni Belge Oluşturma
 
- قبل أن نبدأ في معالجة النص داخل الحقول ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Alanların içindeki metni manipüle etmeye başlamadan önce, Aspose.Words for .NET kullanarak yeni bir belge oluşturmamız gerekiyor. Bu, bir örneği başlatarak yapılabilir.`Document` nesne:
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: إدخال حقل يحتوي على نص بداخله
+## 2. Adım: İçinde metin bulunan bir alan ekleme
 
- بمجرد أن نحصل على مستند ، يمكننا إدخال حقل يحتوي على نص بداخله باستخدام ملف`DocumentBuilder` هدف. على سبيل المثال ، لإدراج حقل "INCLUDETEXT" مع النص "Text in field" ، يمكننا استخدام`InsertField` طريقة:
+ Bir belgemiz olduğunda, içine metin içeren bir alan ekleyebiliriz.`DocumentBuilder` nesne. Örneğin, "Text in field" metnini içeren bir "INCLUDETEXT" alanı eklemek için şunu kullanabiliriz:`InsertField` yöntem:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
-## الخطوة 3: استخدام وظيفة Ignore Text Inside Fields
+## 3. Adım: Alanların İçindeki Metni Yoksay işlevini kullanma
 
- لتجاهل النص داخل الحقول في العمليات اللاحقة ، يمكننا استخدام`FindReplaceOptions` كائن وتعيين`IgnoreFields` ملكية ل`true`:
+ Sonraki işlemlerde alanların içindeki metni yoksaymak için bir`FindReplaceOptions` nesne ve ayarlayın`IgnoreFields` mülkiyet`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
 
-## الخطوة 4: استخدام التعبيرات النمطية للبحث والاستبدال
+## 4. Adım: Arama ve değiştirme için normal ifadeleri kullanma
 
-لإجراء عمليات البحث والاستبدال على نص المستند ، سنستخدم التعبيرات العادية. في مثالنا ، سنبحث عن جميع تكرارات الحرف "e" ونستبدلها بعلامة النجمة "* ". سنستخدم .NET`Regex` فئة لهذا:
+Belge metni üzerinde arama ve değiştirme işlemlerini gerçekleştirmek için normal ifadeler kullanacağız. Örneğimizde, "e" harfinin geçtiği tüm yerleri arayacağız ve bunları bir yıldız işaretiyle değiştireceğiz "* ".NET'leri kullanacağız`Regex` Bunun için sınıf:
 
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## الخطوة 5: عرض إخراج المستند المعدل
+## Adım 5: Değiştirilmiş Belge Çıktısını Görüntüleme
 
-بعد تطبيق البحث والاستبدال ، يمكننا عرض المحتوى الذي تم تغييره في المستند باستخدام`GetText` طريقة:
+Ara ve değiştir işlemini uyguladıktan sonra, belgenin değişen içeriğini kullanarak görüntüleyebiliriz.`GetText` yöntem:
 
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## الخطوة 6: تغيير الخيارات لتضمين الحقول
+## 6. Adım: Alanları dahil etmek için seçenekleri değiştirme
 
- نقوم بتضمين النص داخل الحقول في نتيجة الإخراج ، يمكننا تغيير الخيارات لعدم تجاهل الحقول. لهذا سنقوم بتعيين`IgnoreFields` ملكية ل`false`:
+ çıktı sonucuna alanların içindeki metni dahil ediyoruz, alanları yok saymamak için seçenekleri değiştirebiliyoruz. Bunun için ayarlayacağımız`IgnoreFields` mülkiyet`false`:
 
 ```csharp
 options.IgnoreFields = false;
 ```
 
-## الخطوة 7: عرض الوثيقة المعدلة مع الحقول
+## Adım 7: Değiştirilen belgeyi alanlarla birlikte görüntüleme
 
-بعد تغيير الخيارات ، يمكننا إجراء البحث والاستبدال مرة أخرى للحصول على النتيجة بالنص الموجود داخل الحقول المضمنة:
+Seçenekleri değiştirdikten sonra, içerilen alanların içindeki metinle sonucu almak için aramayı tekrar yapabilir ve değiştirebiliriz:
 
 ```csharp
 doc.Range.Replace(regex, "*", options);
 Console.WriteLine(doc.GetText());
 ```
 
-### مثال على شفرة المصدر لـ Ignore Text Inside Fields باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Alanların İçindeki Metni Yoksay için örnek kaynak kodu
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام وظيفة Ignore Text Inside Fields مع Aspose.Words for .NET:
+Aspose.Words for .NET ile Alanların İçindeki Metni Yoksay işlevinin kullanımını gösteren tam örnek kaynak kodu burada:
 
 ```csharp
     
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// أدخل الحقل مع النص بداخله.
+	// İçinde metin bulunan alan ekleyin.
 	builder.InsertField("INCLUDETEXT", "Text in field");
 	
 	FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -99,6 +99,6 @@ Console.WriteLine(doc.GetText());
   
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة Ignore Text Inside Fields في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند ، وإدخال حقل به نص بداخله ، واستخدام وظيفة Ignore Text Inside Fields ، وإجراء البحث واستبدال العمليات بالتعبيرات العادية ، وعرض المستند المعدل.
+Bu makalede, Aspose.Words for .NET'te Alanların İçindeki Metni Yoksay işlevinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belge oluşturmak, içinde metin bulunan bir alan eklemek, Alanların İçindeki Metni Yoksay işlevini kullanmak, normal ifadelerle arama ve değiştirme işlemlerini gerçekleştirmek ve değiştirilen belgeyi görüntülemek için adım adım bir kılavuz izledik.

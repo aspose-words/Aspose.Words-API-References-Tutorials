@@ -1,20 +1,20 @@
 ---
-title: البرمجة مع النطاقات
-linktitle: البرمجة مع النطاقات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على نطاقات تحذف النص وتحصل النطاقات على نص
+title: Programmation avec plages
+linktitle: Programmation avec plages
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent des plages suppriment du texte et les plages obtiennent du texte
 type: docs
 weight: 1390
 url: /fr/net/programming-with-ranges/
 ---
-تعد البرامج التعليمية لـ Aspose.Words for .NET "البرمجة مع نطاقات" مصدرًا شاملاً لتعلم كيفية التعامل مع نطاقات النص في مستندات Word والعمل معها. ستوجهك هذه البرامج التعليمية عبر أمثلة عملية ، توضح لك كيفية تحديد نطاقات النص ونسخها ونقلها وحذفها ، بالإضافة إلى كيفية تطبيق تنسيق معين على تلك النطاقات.
+Les didacticiels Aspose.Words pour .NET "Programmation avec plages" sont une ressource complète pour apprendre à manipuler et à travailler avec des plages de texte dans des documents Word. Ces didacticiels vous guideront à travers des exemples pratiques, vous montrant comment sélectionner, copier, déplacer et supprimer des plages de texte, ainsi que comment appliquer une mise en forme spécifique à ces plages.
 
-في هذه البرامج التعليمية ، ستتعلم كيفية استخدام الميزات المتنوعة التي تقدمها Aspose.Words for .NET للعمل بكفاءة ودقة مع نطاقات النص. ستتعلم كيفية تحديد النطاقات باستخدام طرق تحديد مختلفة ، ومعالجة محتوياتها باستخدام عمليات النسخ والتقطيع والحذف ، وتطبيق تنسيقات مثل الخط الغامق والمائل ولون الخط. الخط للنطاقات المحددة.
+Dans ces didacticiels, vous apprendrez à utiliser les différentes fonctionnalités offertes par Aspose.Words pour .NET pour travailler efficacement et avec précision avec des plages de texte. Vous apprendrez à identifier des plages à l'aide de différentes méthodes de sélection, à manipuler leur contenu à l'aide d'opérations de copie, de rognage et de suppression, et à appliquer des formats tels que le gras, l'italique et la couleur de la police. police aux plages sélectionnées.
 
-سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان تقنيات معالجة نطاقات النص في مستندات Word باستخدام مكتبة Aspose.Words القوية لـ .NET. من خلال هذه المعرفة ، ستتمكن من إنشاء تطبيقات قوية وعالية الأداء تعمل على أتمتة معالجة مستندات Word بشكل فعال.
+Que vous soyez un développeur débutant ou expérimenté, ces didacticiels vous aideront à maîtriser les techniques de manipulation de plages de texte dans des documents Word à l'aide de la puissante bibliothèque Aspose.Words pour .NET. Grâce à ces connaissances, vous serez en mesure de créer des applications robustes et performantes qui automatisent efficacement le traitement des documents Word.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [نطاقات حذف النص](./ranges-delete-text/) | تعرف على كيفية حذف نص في نطاقات محددة في مستند Word باستخدام Aspose.Words for .NET. |
-| [نطاقات الحصول على نص](./ranges-get-text/) | تعرف على كيفية استخراج النص بسهولة من مستند Word باستخدام Aspose.Words for .NET. |
+| [Plages Supprimer le texte](./ranges-delete-text/) | Apprenez à supprimer du texte dans des plages spécifiques dans un document Word à l'aide de Aspose.Words pour .NET. |
+| [Plages Obtenir du texte](./ranges-get-text/) | Apprenez à extraire facilement du texte d'un document Word à l'aide d'Aspose.Words pour .NET. |

@@ -1,59 +1,59 @@
 ---
-title: احصل على أسماء حقول دمج المراسلات
-linktitle: احصل على أسماء حقول دمج المراسلات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحصول على أسماء حقول دمج البريد في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+title: 获取邮件合并字段名称
+linktitle: 获取邮件合并字段名称
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在您的 Word 文档中获取邮件合并字段名称。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/get-mail-merge-field-names/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "Get Merge Field Names" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+这是一个分步指南，用于解释下面的 C# 源代码，它使用 Aspose.Words for .NET 的“获取合并字段名称”功能。确保仔细执行每个步骤以获得所需的结果。
 
-## الخطوة 1: إعداد دليل المستند
+## 第 1 步：文档目录设置
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+在提供的代码中，您必须指定文档的目录。将值“YOUR DOCUMENT DIRECTORY”替换为您的文档目录的适当路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## 第 2 步：装入文档
 
-تتمثل الخطوة الأولى في تحميل المستند حيث تريد الحصول على أسماء حقول الدمج.
+第一步是加载要获取合并字段名称的文档。
 
 ```csharp
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
 ```
 
-تأكد من استبدال "ملف المستند" باسم ملفك الخاص.
+请务必将“您的文档文件”替换为您自己的文件名。
 
-## الخطوة 3: احصل على أسماء حقول الدمج
+## 第 3 步：获取合并字段名称
 
- نحن نستخدم ال`GetFieldNames()` طريقة للحصول على مصفوفة تحتوي على أسماء حقول الدمج الموجودة في المستند.
+我们使用`GetFieldNames()`方法获取包含文档中存在的合并字段名称的数组。
 
 ```csharp
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
- ال`fieldNames` متغير يحتوي الآن على أسماء حقول الدمج.
+这`fieldNames`变量现在包含合并字段的名称。
 
-### مثال رمز المصدر للحصول على دمج أسماء الحقول مع Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 获取合并字段名称的源代码示例
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+//装入文档。
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
 
-// احصل على أسماء حقول الدمج.
+//获取合并字段名称。
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 
-// عرض عدد حقول الدمج.
+//显示合并字段的数量。
 Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.");
 ```
 
- في هذا المثال ، قمنا بتحميل مستند ، وحصلنا على أسماء حقول الدمج باستخدام امتداد`GetFieldNames()` الطريقة ، وعرض عدد حقول الدمج الموجودة في المستند.
+在这个例子中，我们加载了一个文档，使用`GetFieldNames()`方法，并显示文档中存在的合并字段数。
 
-هذا يختتم دليلنا حول استخدام ميزة "الحصول على أسماء الحقول المدمجة" مع Aspose.Words for .NET.
+我们关于使用 Aspose.Words for .NET 的“获取合并字段名称”功能的指南到此结束。

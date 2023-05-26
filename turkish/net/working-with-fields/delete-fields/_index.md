@@ -1,51 +1,51 @@
 ---
-title: حذف الحقول
-linktitle: حذف الحقول
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لحذف حقول الدمج في مستندات Word باستخدام Aspose.Words for .NET.
+title: Alanları Sil
+linktitle: Alanları Sil
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerinizdeki birleştirme alanlarını silmek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/delete-fields/
 ---
 
-لشرح كيفية استخدام ميزة "حذف الحقول" في Aspose. كلمات لـ .NET قمنا بإنشاء دليل خطوة بخطوة أدناه. 
+Aspose'da "Alanları Sil" özelliğinin nasıl kullanılacağını açıklamak. .NET için kelimeler, aşağıda adım adım bir kılavuz oluşturduk. 
 
-من المهم متابعة كل خطوة عن كثب من أجل تحقيق النتائج المرجوة. 
+İstenen sonuçları elde etmek için her adımı yakından takip etmek önemlidir. 
 
-## الخطوة الأولى: إنشاء مستند جديد
+## 1. Adım: Yeni Belge Oluşturma
 
-في مقتطف الشفرة هذا ، نبدأ بإنشاء مستند فارغ جديد باستخدام السطر التالي: 
+Bu kod parçacığında, aşağıdaki satırı kullanarak yeni bir boş belge oluşturarak başlıyoruz: 
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: إزالة دمج الحقول
+## 2. Adım: Birleştirme Alanlarını Kaldırın
 
- لإزالة جميع حقول الدمج الموجودة في المستند ، نستخدم ملحق`DeleteFields()` وظيفة. 
+ Belgede bulunan tüm birleştirme alanlarını kaldırmak için`DeleteFields()` işlev. 
 
-هذا مفيد بشكل خاص إذا كنت ترغب في الاحتفاظ فقط بالمحتوى الثابت وإزالة أي معلومات دمج. 
+Bu, özellikle yalnızca statik içeriği tutmak ve herhangi bir birleştirme bilgisini kaldırmak istiyorsanız kullanışlıdır. 
 
-### مثال رمز المصدر لحذف الحقول باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET ile Alanları Silme Kaynak Kodu Örneği
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تحميل المستند الحالي.
+// Mevcut belgeyi yükleyin.
 Document doc = new Document(dataDir + "YourDocument.docx");
 
-// قم بإزالة حقول الدمج.
+// Birleştirme alanlarını kaldırın.
 doc.MailMerge.DeleteFields();
 
-// احفظ المستند المعدل.
+// Değiştirilen belgeyi kaydedin.
 doc.Save(dataDir + "YourDocument_WithoutFields.docx");
 ```
 
- في مثالنا ، نقوم أولاً بتحميل مستند موجود قبل الاتصال`DeleteFields()`. أخيرًا نحفظ المستند المعدل باسم ملف جديد. 
+ Örneğimizde, çağırmadan önce mevcut bir belgeyi yüklüyoruz.`DeleteFields()`. Son olarak değiştirilen belgeyi yeni bir dosya adıyla kaydediyoruz. 
 
-من أجل إزالة حقول الدمج بشكل فعال من مستند باستخدام Aspose.Words ميزة "إزالة الحقول" في .NET ، خذ إشارة من هذا المثال. 
+Aspose.Words for .NET'in "Alanları Kaldır" özelliğini kullanarak birleştirme alanlarını bir belgeden etkili bir şekilde kaldırmak için bu örnekten bir ipucu alın. 
 
-تذكر دائمًا استبدال "دليل المستندات" بمسار الدليل المحدد. 
+"BELGELER DİZİNİNİZİ" kendi dizin yolunuzla değiştirmeyi her zaman unutmayın. 
 
-وبذلك تم الانتهاء من دليلنا حول تنفيذ وظيفة "حذف الحقول" من خلال Aspose.Words for .NET.
+Aspose.Words for .NET aracılığıyla "Alanları Sil" işlevselliğini uygulamaya yönelik rehberimiz böylece tamamlanmış oldu.

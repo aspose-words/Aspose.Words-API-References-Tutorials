@@ -1,20 +1,20 @@
 ---
-title: البرمجة مع النطاقات
-linktitle: البرمجة مع النطاقات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على نطاقات تحذف النص وتحصل النطاقات على نص
+title: Aralıklarla Programlama
+linktitle: Aralıklarla Programlama
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler aralıklar içerir, metni silin ve aralıklar metni alın
 type: docs
 weight: 1390
 url: /tr/net/programming-with-ranges/
 ---
-تعد البرامج التعليمية لـ Aspose.Words for .NET "البرمجة مع نطاقات" مصدرًا شاملاً لتعلم كيفية التعامل مع نطاقات النص في مستندات Word والعمل معها. ستوجهك هذه البرامج التعليمية عبر أمثلة عملية ، توضح لك كيفية تحديد نطاقات النص ونسخها ونقلها وحذفها ، بالإضافة إلى كيفية تطبيق تنسيق معين على تلك النطاقات.
+Aspose.Words for .NET "Aralıklarla Programlama" öğreticileri, Word belgelerindeki metin aralıklarıyla nasıl çalışılacağını ve değiştirileceğini öğrenmek için kapsamlı bir kaynaktır. Bu öğreticiler, metin aralıklarını nasıl seçeceğinizi, kopyalayacağınızı, taşıyacağınızı ve sileceğinizi ve ayrıca bu aralıklara belirli biçimlendirmeyi nasıl uygulayacağınızı gösteren pratik örneklerde size yol gösterecektir.
 
-في هذه البرامج التعليمية ، ستتعلم كيفية استخدام الميزات المتنوعة التي تقدمها Aspose.Words for .NET للعمل بكفاءة ودقة مع نطاقات النص. ستتعلم كيفية تحديد النطاقات باستخدام طرق تحديد مختلفة ، ومعالجة محتوياتها باستخدام عمليات النسخ والتقطيع والحذف ، وتطبيق تنسيقات مثل الخط الغامق والمائل ولون الخط. الخط للنطاقات المحددة.
+Bu eğitimlerde, Aspose.Words for .NET tarafından metin aralıklarıyla verimli ve doğru bir şekilde çalışmak için sunulan çeşitli özellikleri nasıl kullanacağınızı öğreneceksiniz. Aralıkları farklı seçim yöntemlerini kullanarak tanımlamayı, kopyalama, kırpma ve silme işlemlerini kullanarak içeriklerini değiştirmeyi ve kalın, italik ve yazı tipi rengi gibi biçimleri uygulamayı öğreneceksiniz. seçili aralıklara yazı tipi.
 
-سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان تقنيات معالجة نطاقات النص في مستندات Word باستخدام مكتبة Aspose.Words القوية لـ .NET. من خلال هذه المعرفة ، ستتمكن من إنشاء تطبيقات قوية وعالية الأداء تعمل على أتمتة معالجة مستندات Word بشكل فعال.
+İster yeni başlayan ister deneyimli bir geliştirici olun, bu öğreticiler, .NET için güçlü Aspose.Words kitaplığını kullanarak Word belgelerindeki metin aralıklarını değiştirme tekniklerinde uzmanlaşmanıza yardımcı olacaktır. Bu bilgiyle, Word belgelerinin işlenmesini etkili bir şekilde otomatikleştiren sağlam, yüksek performanslı uygulamalar oluşturabileceksiniz.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [نطاقات حذف النص](./ranges-delete-text/) | تعرف على كيفية حذف نص في نطاقات محددة في مستند Word باستخدام Aspose.Words for .NET. |
-| [نطاقات الحصول على نص](./ranges-get-text/) | تعرف على كيفية استخراج النص بسهولة من مستند Word باستخدام Aspose.Words for .NET. |
+| [Aralıklar Metni Sil](./ranges-delete-text/) | Aspose.Words for .NET kullanarak bir Word belgesindeki belirli aralıklardaki metinleri nasıl sileceğinizi öğrenin. |
+| [Aralıklar Metin Al](./ranges-get-text/) | Aspose.Words for .NET kullanarak bir Word belgesinden kolayca nasıl metin çıkaracağınızı öğrenin. |

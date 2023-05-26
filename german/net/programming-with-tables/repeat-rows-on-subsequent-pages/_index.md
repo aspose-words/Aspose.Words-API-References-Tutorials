@@ -1,62 +1,62 @@
 ---
-title: كرر الصفوف في الصفحات اللاحقة
-linktitle: كرر الصفوف في الصفحات اللاحقة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تكرار صفوف الجدول في الصفحات اللاحقة في مستند Word باستخدام Aspose.Words for .NET.
+title: Wiederholen Sie Zeilen auf nachfolgenden Seiten
+linktitle: Wiederholen Sie Zeilen auf nachfolgenden Seiten
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Tabellenzeilen auf nachfolgenden Seiten in einem Word-Dokument wiederholen.
 type: docs
 weight: 10
 url: /de/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تكرار صفوف الجدول في الصفحات اللاحقة من مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تحديد صفوف لتكرارها في الصفحات اللاحقة من الجدول في مستندات Word الخاصة بك.
+In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET die Zeilen einer Tabelle auf nachfolgenden Seiten eines Word-Dokuments wiederholen. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials werden Sie in der Lage sein, Zeilen anzugeben, die auf nachfolgenden Seiten Ihrer Tabelle in Ihren Word-Dokumenten wiederholt werden sollen.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Schritt 1: Projekteinrichtung
+1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
+2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Schritt 2: Erstellen des Dokuments und Initialisieren des Dokumentengenerators
+Um mit dem Dokument und dem Dokumentengenerator zu arbeiten, gehen Sie folgendermaßen vor:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Dokumentenerstellung
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Initialisieren Sie den Dokumentgenerator
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Stellen Sie sicher, dass Sie „IHR DOKUMENTENVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis ersetzen.
 
-## الخطوة الثالثة: بناء الجدول بالصفوف المتكررة
-بعد ذلك ، سننشئ جدولًا به صفوف متكررة في الصفحات اللاحقة. استخدم الكود التالي:
+## Schritt 3: Erstellen Sie die Tabelle mit wiederholten Zeilen
+Als Nächstes erstellen wir eine Tabelle mit wiederholten Zeilen auf den folgenden Seiten. Verwenden Sie den folgenden Code:
 
 ```csharp
-// بداية الجدول
+// Anfang der Tabelle
 builder. StartTable();
 
-// تكوين معلمات السطر الأول (خطوط الرأس)
+// Konfiguration der ersten Zeilenparameter (Kopfzeilen)
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-// أدخل الخلية الأولى في الصف الأول
+// Fügen Sie die erste Zelle der ersten Zeile ein
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
 
-// أدخل الخلية الثانية من الصف الأول
+// Fügen Sie die zweite Zelle der ersten Zeile ein
 builder. InsertCell();
 builder.Writeln("Header line 2");
 builder. EndRow();
 
-// قم بتكوين معلمات الأسطر التالية
+// Konfigurieren Sie die Parameter der folgenden Zeilen
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 
-// تكرار لإدراج الخلايا في الصفوف التالية
+// Führen Sie eine Schleife aus, um die Zellen in die folgenden Zeilen einzufügen
 for (int i = 0; i < 50; i++)
 {
 builder. InsertCell();
@@ -67,27 +67,27 @@ builder.Write("Text column 2");
 builder. EndRow();
 }
 
-// نهاية الجدول
+// Ende des Tisches
 builder. EndTable();
 ```
 
- هنا نستخدم أداة إنشاء المستندات لبناء جدول يحتوي على صفين رأسيين وصفوف بيانات متعددة. ال`RowFormat.HeadingFormat`تُستخدم المعلمات لتحديد صفوف الرأس التي يجب تكرارها في الصفحات اللاحقة.
+ Hier verwenden wir den Document Builder, um eine Tabelle mit zwei Kopfzeilen und mehreren Datenzeilen zu erstellen. Der`RowFormat.HeadingFormat`Parameter werden verwendet, um Kopfzeilen zu markieren, die auf nachfolgenden Seiten wiederholt werden sollen.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرا الولايات المتحدة
+## Schritt 4: Speichern des geänderten Dokuments
+Endlich USA
 
-  تحتاج إلى حفظ المستند المعدل مع تكرار صفوف الرؤوس في الصفحات اللاحقة من الجدول. استخدم الكود التالي:
+  Sie müssen das geänderte Dokument speichern, wobei die Kopfzeilen auf den folgenden Seiten der Tabelle wiederholt werden. Verwenden Sie den folgenden Code:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabedokument angeben.
 
-### نموذج لشفرة مصدر لصفوف التكرار في الصفحات اللاحقة باستخدام Aspose.Words for .NET 
+### Beispielquellcode für Wiederholungszeilen auf nachfolgenden Seiten mit Aspose.Words für .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -116,5 +116,5 @@ for (int i = 0; i < 50; i++)
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تكرار صفوف الجدول في الصفحات اللاحقة من مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تحديد الأسطر التي يجب تكرارها وفقًا لاحتياجاتك الخاصة في مستندات Word الخاصة بك.
+## Abschluss
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET die Zeilen einer Tabelle auf nachfolgenden Seiten eines Word-Dokuments wiederholt. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie angeben, welche Zeilen entsprechend Ihren spezifischen Anforderungen in Ihren Word-Dokumenten wiederholt werden sollen.

@@ -1,43 +1,43 @@
 ---
-title: إدراج صورة مضمنة
-linktitle: إدراج صورة مضمنة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الصور المضمنة في مستندات Word باستخدام Aspose.Words for .NET.
+title: Satır İçi Görüntü Ekle
+linktitle: Satır İçi Görüntü Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerine satır içi görüntüleri nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-inline-image/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج الصور المضمنة في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة الصور مباشرة إلى نص مستنداتك.
+Bu kapsamlı öğreticide, Aspose.Words for .NET kullanarak bir Word belgesine satır içi görüntülerin nasıl ekleneceğini öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, belgelerinizin metnine doğrudan resim ekleyebileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesi başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل صورة مضمنة
-بعد ذلك ، استخدم طريقة InsertImage لفئة DocumentBuilder لإدراج صورة مضمنة في المستند. قم بتوفير مسار ملف الصورة كمعامل:
+## 2. Adım: Bir Satır İçi Görüntü Ekleyin
+Ardından, belgeye bir satır içi görüntü eklemek için DocumentBuilder sınıfının InsertImage yöntemini kullanın. Görüntü dosyası yolunu bir parametre olarak sağlayın:
 
 ```csharp
 builder.InsertImage(ImagesDir + "Transparent background logo.png");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الصورة المضمنة ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 3. Adım: Belgeyi Kaydedin
+Satır içi görüntüyü ekledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx");
 ```
 
-### مثال على كود المصدر لإدراج صورة مضمنة باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال صورة مضمنة باستخدام Aspose.Words for .NET:
+### Aspose.Words for .NET kullanarak Satır İçi Görüntü Ekleme için Örnek Kaynak Kodu
+Aspose.Words for .NET kullanarak bir satır içi görüntü eklemek için eksiksiz kaynak kodu burada:
 
 ```csharp
 Document doc = new Document();
@@ -48,7 +48,7 @@ builder.InsertImage(ImagesDir + "Transparent background logo.png");
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertInlineImage.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج الصور المضمنة في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إضافة الصور بسلاسة داخل نص المستندات الخاصة بك.
+## Çözüm
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine satır içi görüntülerin nasıl ekleneceğini başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, artık belgelerinizin metnine sorunsuz bir şekilde resim ekleyebilirsiniz.
 
-تعد الصور المضمنة مفيدة للعديد من السيناريوهات ، مثل إضافة الرسوم التوضيحية أو الشعارات أو العناصر المرئية الأخرى مباشرةً في تدفق المستند.
+Satır içi görüntüler, doğrudan belgenin akışına çizimler, logolar veya diğer görsel öğeler eklemek gibi çeşitli senaryolar için kullanışlıdır.

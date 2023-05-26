@@ -1,69 +1,69 @@
 ---
-title: استبدل بـ Regex
-linktitle: استبدل بـ Regex
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إجراء استبدال النص المستند إلى التعبير العادي في مستند Word باستخدام Aspose.Words for .NET.
+title: 替换为正则表达式
+linktitle: 替换为正则表达式
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中执行基于正则表达式的文本替换。
 type: docs
 weight: 10
 url: /zh/net/find-and-replace-text/replace-with-regex/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة "استبدال بـ Regex" في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إجراء استبدال النص بناءً على أنماط معينة محددة بواسطة تعبير عادي.
+在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的 Replace With Regex 函数。此功能允许您根据正则表达式定义的特定模式执行文本替换。
 
-## المتطلبات الأساسية
+## 先决条件
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# 语言的基础知识。
+- 安装了 Aspose.Words 库的 .NET 开发环境。
 
-## الخطوة الأولى: إنشاء مستند جديد
+## 第 1 步：创建新文档
 
- قبل أن نبدأ في استخدام استبدال التعبير العادي ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+在开始使用正则表达式替换之前，我们需要使用 Aspose.Words for .NET 创建一个新文档。这可以通过实例化一个`Document`目的：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل النص في المستند
+## 第 2 步：在文档中插入文本
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نستخدم الامتداد`Writeln` طريقة ادخال عبارة "sad crazy bad":
+一旦我们有了文档，我们就可以使用`DocumentBuilder`目的。在我们的示例中，我们使用`Writeln`插入短语“sad crazy bad”的方法：
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("sad mad bad");
 ```
 
-## الخطوة 3: تكوين خيارات البحث والاستبدال
+## 第 3 步：配置查找和替换选项
 
- سنقوم الآن بتكوين خيارات البحث والاستبدال باستخدام ملف`FindReplaceOptions` هدف. في مثالنا ، نستخدم الخيارات الافتراضية:
+现在我们将使用一个配置查找和替换选项`FindReplaceOptions`目的。在我们的示例中，我们使用默认选项：
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions();
 ```
 
-## الخطوة 4: استبدل بالتعبير العادي
+## 第四步：用正则表达式替换
 
- نحن نستخدم ال`Range.Replace` طريقة لإجراء استبدال النص باستخدام تعبير عادي. في مثالنا ، نستخدم التعبير النمطي "[س|m]ad" to find the word秒 "sad" and "mad" and replace them with the word "bad":
+我们使用`Range.Replace`使用正则表达式执行文本替换的方法。在我们的示例中，我们使用正则表达式“[秒|m]ad" to find the words "sad" and "mad" and replace them with the word "bad":
 
 ```csharp
 doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
 ```
 
-## الخطوة 5: حفظ المستند المعدل
+## 第五步：保存修改后的文件
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+最后，我们将修改后的文档保存到指定目录，使用`Save`方法：
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 ```
 
-### مثال على شفرة المصدر لـ Replace With Regex باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 替换为正则表达式的示例源代码
 
-في ما يلي نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام استبدال التعبير العادي بـ Aspose.Words for .NET:
+下面是完整的示例源代码，用于演示使用 Aspose.Words for .NET 进行正则表达式替换：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -78,6 +78,6 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
   
 ```
 
-## خاتمة
+## 结论
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام وظيفة "استبدال بـ Regex" في Aspose.Words لـ .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص وإجراء الاستبدال بتعبير عادي وحفظ المستند المعدل.
+在本文中，我们探索了 C# 源代码以了解如何使用 Aspose.Words for .NET 的 Replace With Regex 功能。我们按照分步指南创建文档、插入文本、使用正则表达式执行替换并保存修改后的文档。

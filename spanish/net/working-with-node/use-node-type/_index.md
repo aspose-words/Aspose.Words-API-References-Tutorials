@@ -1,37 +1,37 @@
 ---
-title: استخدم نوع العقدة
-linktitle: استخدم نوع العقدة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام نوع العقدة للوصول إلى المعلومات الخاصة بالمستند باستخدام Aspose.Words for .NET.
+title: Usar tipo de nodo
+linktitle: Usar tipo de nodo
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a usar el tipo de nodo para acceder a información específica del documento con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-node/use-node-type/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح شفرة المصدر C # أدناه والتي توضح كيفية استخدام وظيفة نوع العقدة مع Aspose.Words for .NET.
+Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación que ilustra cómo usar la funcionalidad de tipo de nodo con Aspose.Words para .NET.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## Paso 1: Importa las referencias necesarias
+Antes de comenzar, asegúrese de haber importado las referencias necesarias para usar Aspose.Words para .NET en su proyecto. Esto incluye importar la biblioteca Aspose.Words y agregar los espacios de nombres requeridos a su archivo fuente.
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## Paso 2: Crear un nuevo documento
+ En este paso, crearemos un nuevo documento usando el`Document` clase.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: الحصول على نوع عقدة المستند
- للحصول على نوع عقدة المستند ، نستخدم امتداد`NodeType` ملكية.
+## Paso 3: obtener el tipo de nodo del documento
+ Para obtener el tipo de nodo de un documento, usamos el`NodeType` propiedad.
 
 ```csharp
 NodeType type = doc.NodeType;
 ```
 
-### نموذج التعليمات البرمجية المصدر لاستخدام نوع العقدة مع Aspose.Words for .NET
+### Ejemplo de código fuente para usar el tipo de nodo con Aspose.Words para .NET
 
 ```csharp
 Document doc = new Document();
@@ -39,5 +39,5 @@ Document doc = new Document();
 NodeType type = doc.NodeType;
 ```
 
-هذا مثال رمز كامل لاستخدام نوع العقدة مع Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+Este es un ejemplo de código completo para usar el tipo de nodo con Aspose.Words para .NET. Asegúrese de importar las referencias necesarias y siga los pasos descritos anteriormente para integrar este código en su proyecto.
 

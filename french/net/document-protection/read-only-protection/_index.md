@@ -1,17 +1,17 @@
 ---
-title: قراءة الحماية فقط
-linktitle: قراءة الحماية فقط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حماية مستندات Word للقراءة فقط باستخدام Aspose.Words for .NET.
+title: Protection en lecture seule
+linktitle: Protection en lecture seule
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à protéger vos documents Word en lecture seule avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/document-protection/read-only-protection/
 ---
-في هذا البرنامج التعليمي ، سنوجهك خلال الخطوات لاستخدام ميزة الحماية للقراءة فقط في Aspose.Words for .NET. تتيح لك هذه الميزة جعل مستند Word للقراءة فقط لمنع التعديل غير المصرح به. اتبع الخطوات التالية:
+Dans ce didacticiel, nous vous guiderons à travers les étapes d'utilisation de la fonction de protection en lecture seule d'Aspose.Words pour .NET. Cette fonctionnalité vous permet de rendre un document Word en lecture seule pour empêcher toute modification non autorisée. Suivez les étapes ci-dessous :
 
-## الخطوة 1: إنشاء المستند وتطبيق الحماية
+## Étape 1 : création du document et application de la protection
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+Commencez par créer une instance de la classe Document et un objet DocumentBuilder :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -19,66 +19,66 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: اكتب المحتوى إلى المستند
-استخدم كائن DocumentBuilder لكتابة محتوى إلى المستند:
+## Étape 2 : Écrivez du contenu dans le document
+Utilisez l'objet DocumentBuilder pour écrire du contenu dans le document :
 
 ```csharp
 builder.Write("Open document as read-only");
 ```
 
-## الخطوة 3: تعيين كلمة المرور وجعل المستند للقراءة فقط
+## Étape 3 : Définir le mot de passe et rendre le document en lecture seule
 
-قم بتعيين كلمة مرور للمستند باستخدام خاصية SetPassword () للكائن WriteProtection:
+Définissez un mot de passe pour le document à l'aide de la propriété SetPassword() de l'objet WriteProtection :
 
 ```csharp
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
-تأكد من استبدال "MyPassword" بكلمة المرور الفعلية التي تريد استخدامها.
+Assurez-vous de remplacer "MyPassword" par le mot de passe réel que vous souhaitez utiliser.
 
-## الخطوة 4: تطبيق وثيقة للقراءة فقط
+## Étape 4 : Appliquer le document en lecture seule
 
-اجعل المستند للقراءة فقط عن طريق تعيين الخاصية ReadOnlyRecommended على true:
+Rendez le document en lecture seule en définissant la propriété ReadOnlyRecommended sur true :
 
 ```csharp
 doc.WriteProtection.ReadOnlyRecommended = true;
 ```
 
-## الخطوة 5: تطبيق الحماية للقراءة فقط وحفظ المستند
+## Étape 5 : Appliquez la protection en lecture seule et enregistrez le document
 
-أخيرًا ، قم بتطبيق الحماية للقراءة فقط باستخدام طريقة Protect () لكائن المستند:
+Enfin, appliquez la protection en lecture seule à l'aide de la méthode Protect() de l'objet Document :
 
 ```csharp
 doc.Protect(ProtectionType.ReadOnly);
 doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند المحمي.
+Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour enregistrer le document protégé.
 
-### مثال على شفرة المصدر للحماية للقراءة فقط باستخدام Aspose.Words for .NET
+### Exemple de code source pour la protection en lecture seule avec Aspose.Words pour .NET
 
-فيما يلي رمز المصدر الكامل للحماية للقراءة فقط باستخدام Aspose.Words for .NET:
+Voici le code source complet pour la protection en lecture seule à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
 	builder.Write("Open document as read-only");
 
-	// أدخل كلمة مرور يصل طولها إلى 15 حرفًا.
+	// Saisissez un mot de passe comportant jusqu'à 15 caractères.
 	doc.WriteProtection.SetPassword("MyPassword");
 
-	// اجعل المستند للقراءة فقط.
+	// Rendez le document en lecture seule.
 	doc.WriteProtection.ReadOnlyRecommended = true;
 
-	// تطبيق الحماية ضد الكتابة للقراءة فقط.
+	// Appliquez la protection en écriture en lecture seule.
 	doc.Protect(ProtectionType.ReadOnly);
 	doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 ```
 
-باتباع هذه الخطوات ، يمكنك حماية مستنداتك بسهولة
+En suivant ces étapes, vous pouvez facilement protéger vos documents
 

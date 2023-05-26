@@ -1,28 +1,28 @@
 ---
-title: أنماط الوصول
-linktitle: أنماط الوصول
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الوصول إلى أنماط المستندات باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل للتعامل مع أنماط المستندات الخاصة بك.
+title: Erişim Stilleri
+linktitle: Erişim Stilleri
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile belge stillerine nasıl erişeceğinizi öğrenin. Belgelerinizin stillerini değiştirmek için öğreticiyi tamamlayın.
 type: docs
 weight: 10
 url: /tr/net/programming-with-styles-and-themes/access-styles/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم للوصول إلى أنماط المستندات باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة الحصول على المجموعة الكاملة من الأنماط الموجودة في المستند.
+Bu öğreticide, Aspose.Words for .NET kullanarak belge stillerine erişmek için sağlanan C# kaynak kodunu keşfedeceğiz. Bu özellik, belgede bulunan tüm stil koleksiyonunu elde etmenizi sağlar.
 
-## الخطوة الأولى: تهيئة البيئة
+## 1. Adım: Ortamı ayarlama
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
 
-## الخطوة 2: إنشاء المستند
+## 2. Adım: Belgeyi oluşturma
 
 ```csharp
 Document doc = new Document();
 ```
 
- في هذه الخطوة نقوم بإنشاء ملف`Document` هدف.
+ Bu adımda yeni bir boş oluşturuyoruz`Document` nesne.
 
-## الخطوة 3: الوصول إلى مجموعة الأنماط
+## 3. Adım: Stil koleksiyonuna erişme
 
 ```csharp
 string styleName = "";
@@ -30,9 +30,9 @@ string styleName = "";
 StyleCollection styles = doc.Styles;
 ```
 
- في هذه الخطوة ، نصل إلى مجموعة أنماط المستند باستخدام امتداد`Styles` ملكية. تحتوي هذه المجموعة على جميع الأنماط الموجودة في المستند.
+ Bu adımda, kullanarak belgenin stil koleksiyonuna erişiyoruz.`Styles` mülk. Bu koleksiyon, belgede bulunan tüm stilleri içerir.
 
-## الخطوة 4: تصفح الأنماط
+## 4. Adım: Stillere Göz Atın
 
 ```csharp
 foreach(Style style in styles)
@@ -50,18 +50,18 @@ foreach(Style style in styles)
 }
 ```
 
- في هذه الخطوة الأخيرة ، نقوم بالتكرار خلال كل نمط في المجموعة باستخدام ملف`foreach`حلقة. نعرض اسم كل نمط على وحدة التحكم ، وربطها بفواصل لتسهيل القراءة.
+ Bu son adımda, koleksiyondaki her bir stili bir`foreach`döngü. Her stilin adını daha iyi okunabilirlik için virgüllerle birleştirerek konsola gösteriyoruz.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر للوصول إلى الأنماط في مستند وعرض أسمائها على وحدة التحكم. يمكن أن تكون هذه الميزة مفيدة لتحليل الأنماط في مستند ، أو إجراء عمليات محددة على أنماط معينة ، أو ببساطة الحصول على معلومات حول الأنماط المتاحة.
+Artık bir belgedeki stillere erişmek ve adlarını konsolda görüntülemek için kaynak kodunu çalıştırabilirsiniz. Bu özellik, bir belgedeki stilleri analiz etmek, belirli stiller üzerinde belirli işlemler gerçekleştirmek veya sadece mevcut stiller hakkında bilgi almak için yararlı olabilir.
 
-### نموذج التعليمات البرمجية المصدر لأنماط الوصول باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Access Styles için örnek kaynak kodu 
 ```csharp
 
 Document doc = new Document();
 
 string styleName = "";
 
-// احصل على مجموعة الأنماط من المستند.
+// Belgeden stil koleksiyonunu alın.
 StyleCollection styles = doc.Styles;
 foreach (Style style in styles)
 {
@@ -80,10 +80,10 @@ foreach (Style style in styles)
         
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة الوصول إلى أنماط المستندات باستخدام Aspose.Words for .NET. من خلال الوصول إلى مجموعة الأنماط ، تمكنا من الحصول على القائمة الكاملة للأنماط الموجودة في المستند.
+Bu öğreticide, Aspose.Words for .NET kullanarak belge stillerine erişmenin işlevselliğini inceledik. Stiller koleksiyonuna erişerek, belgede bulunan stillerin tam listesini elde edebildik.
 
-يمكن أن يكون الوصول إلى أنماط المستندات مفيدًا في العديد من السيناريوهات ، مثل المعالجة المحددة لأنماط معينة ، أو تحليل أنماط الإحصائيات أو المعالجة الإضافية ، أو ببساطة للحصول على معلومات حول الأنماط المستخدمة.
+Belge stillerine erişim, belirli stillerin özel olarak işlenmesi, istatistikler veya daha ileri işlemler için stillerin analizi veya sadece kullanılan stiller hakkında bilgi edinmek gibi birçok senaryoda yararlı olabilir.
 
-يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية للوصول إلى عناصر مختلفة من المستند ، بما في ذلك الأنماط. يمكنك دمج هذه الوظيفة في مشاريعك لإدارة أنماط المستندات الخاصة بك بكفاءة.
+Aspose.Words for .NET, stiller dahil bir belgenin farklı öğelerine erişim için güçlü bir API sağlar. Belgelerinizin stillerini verimli bir şekilde yönetmek için bu işlevi projelerinize entegre edebilirsiniz.

@@ -1,17 +1,17 @@
 ---
-title: إزالة قيود القراءة فقط
-linktitle: إزالة قيود القراءة فقط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET.
+title: Salt Okunur Kısıtlamasını Kaldır
+linktitle: Salt Okunur Kısıtlamasını Kaldır
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinden salt okunur kısıtlamasını nasıl kaldıracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/document-protection/remove-read-only-restriction/
 ---
-في هذا البرنامج التعليمي ، سنرشدك عبر خطوات استخدام ميزة إزالة قيود القراءة فقط Aspose.Words for .NET. تتيح لك هذه الميزة إزالة قيود القراءة فقط من مستند Word لجعله قابلاً للتحرير. اتبع الخطوات التالية:
+Bu öğreticide, Aspose.Words for .NET salt okunur kısıtlama kaldırma özelliğini kullanma adımlarında size yol göstereceğiz. Bu özellik, bir Word belgesini düzenlenebilir hale getirmek için salt okunur kısıtlamasını kaldırmanıza olanak tanır. Aşağıdaki adımları takip et:
 
-## الخطوة 1: إنشاء المستند وإعداد الحماية
+## 1. Adım: Belgeyi Oluşturma ve Korumayı Ayarlama
 
-ابدأ بإنشاء مثيل لفئة المستند:
+Document sınıfının bir örneğini oluşturarak başlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -19,50 +19,50 @@ Document doc = new Document();
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
-قم بتعيين كلمة مرور للمستند باستخدام خاصية SetPassword () للكائن WriteProtection:
+WriteProtection nesnesinin SetPassword() özelliğini kullanarak belge için bir parola belirleyin:
 
-تأكد من استبدال "MyPassword" بكلمة المرور الفعلية التي استخدمتها لحماية المستند.
+Belgeyi korumak için kullandığınız gerçek parola ile "Parolam"ı değiştirdiğinizden emin olun.
 
-## الخطوة 2: إزالة قيود القراءة فقط
+## 2. Adım: Salt okunur kısıtlamasını kaldırın
 
-لإزالة تقييد القراءة فقط ، قم بتعيين الخاصية ReadOnlyRecommended إلى false:
+Salt okunur kısıtlamasını kaldırmak için ReadOnlyRecommended özelliğini false olarak ayarlayın:
 
 ```csharp
 doc.WriteProtection.ReadOnlyRecommended = false;
 ```
 
-## الخطوة 3: تطبيق حماية غير مقيدة
+## 3. Adım: Sınırsız Koruma Uygulayın
 
-أخيرًا ، قم بتطبيق حماية غير مقيدة باستخدام طريقة حماية كائن المستند:
+Son olarak, Document nesnesinin Protect() yöntemini kullanarak sınırsız koruma uygulayın:
 
 ```csharp
 doc.Protect(ProtectionType.NoProtection);
 doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند بدون قيود القراءة فقط.
+Belgeyi salt okunur kısıtlaması olmadan kaydetmek için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### مثال على شفرة المصدر الخاصة بإزالة القيود للقراءة فقط باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Salt Okunur Kısıtlamayı Kaldır için örnek kaynak kodu
 
-فيما يلي شفرة المصدر الكاملة لإزالة قيود القراءة فقط باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanarak salt okunur kısıtlamasını kaldırmak için eksiksiz kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	
-	// أدخل كلمة مرور يصل طولها إلى 15 حرفًا.
+	// En fazla 15 karakter uzunluğunda bir parola girin.
 	doc.WriteProtection.SetPassword("MyPassword");
 
-	// قم بإزالة خيار القراءة فقط.
+	// Salt okunur seçeneğini kaldırın.
 	doc.WriteProtection.ReadOnlyRecommended = false;
 
-	// تطبيق الحماية ضد الكتابة دون أي حماية.
+	// Herhangi bir koruma olmadan yazma koruması uygulayın.
 	doc.Protect(ProtectionType.NoProtection);
 	doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة إزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET.
+Bu adımları izleyerek bir Word belgesindeki salt okunur kısıtlamasını Aspose.Words for .NET ile kolayca kaldırabilirsiniz.
 

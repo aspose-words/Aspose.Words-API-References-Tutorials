@@ -1,25 +1,25 @@
 ---
-title: البرمجة مع خيارات وإعدادات المستند
-linktitle: البرمجة مع خيارات وإعدادات المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تحسين لـ ms word ، وإظهار الأخطاء النحوية والإملائية ، وتنظيف الأنماط والقوائم غير المستخدمة ، وتنظيف النمط المكرر ، وخيارات العرض ، ووثيقة pa
+title: Programación con opciones y configuraciones de documentos
+linktitle: Programación con opciones y configuraciones de documentos
+second_title: Referencia de API de Aspose.Words para .NET
+description: Los tutoriales contienen optimizar para ms word, mostrar errores gramaticales y ortográficos, limpiar estilos y listas no utilizados, limpiar estilos duplicados, ver opciones, pa
 type: docs
 weight: 1510
 url: /es/net/programming-with-document-options-and-settings/
 ---
-ترشدك برامج Aspose.Words for .NET التعليمية حول "البرمجة مع خيارات وإعدادات المستند" عبر الميزات والتقنيات المتنوعة لمعالجة خيارات وإعدادات المستندات في Aspose.Words for .NET. تساعدك هذه البرامج التعليمية على فهم كيفية تخصيص إعدادات التحميل وإدارة الخطوط وتنسيقات المستندات والقوالب والمزيد.
+Los tutoriales de "Programación con opciones y configuraciones de documentos" de Aspose.Words para .NET lo guiarán a través de las diversas funciones y técnicas para manipular las opciones y configuraciones de documentos en Aspose.Words para .NET. Estos tutoriales lo ayudan a comprender cómo personalizar la configuración de carga, administrar fuentes, formatos de documentos, plantillas y más.
 
-توضح البرامج التعليمية كيفية تخصيص خيارات تحميل المستند. ستتعلم كيفية تحديد معلمات التحميل مثل إدارة الخطوط ودقة الارتباط وتحسين الأداء وما إلى ذلك. تتيح لك هذه الخيارات التحكم بدقة في سلوك تحميل المستندات وتحسين أداء تطبيقك.
+Los tutoriales explican cómo personalizar las opciones de carga de documentos. Aprenderá a especificar parámetros de carga, como administración de fuentes, resolución de enlaces, optimización del rendimiento, etc. Estas opciones le permiten controlar con precisión el comportamiento de carga de documentos y optimizar el rendimiento de su aplicación.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriales
+| Título | Descripción |
 | --- | --- |
-| [تحسين لبرنامج MS Word](./optimize-for-ms-word/) | دليل تفصيلي خطوة بخطوة لتحسين مستند لبرنامج MS Word باستخدام Aspose.Words for .NET. |
-| [إظهار الأخطاء النحوية والإملائية](./show-grammatical-and-spelling-errors/) | دليل تفصيلي خطوة بخطوة لتمكين عرض الأخطاء النحوية والإملائية في مستند باستخدام Aspose.Words for .NET. |
-| [تنظيف الأنماط والقوائم غير المستخدمة](./cleanup-unused-styles-and-lists/) | دليل خطوة بخطوة لتنظيف الأنماط والقوائم غير المستخدمة في مستند باستخدام Aspose.Words for .NET. |
-| [تنظيف النمط المكرر](./cleanup-duplicate-style/) | دليل خطوة بخطوة لتنظيف الأنماط المكررة في مستند باستخدام Aspose.Words for .NET. تم تضمين كود المصدر الكامل. |
-| [عرض الخيارات](./view-options/) | دليل تفصيلي خطوة بخطوة لتكوين خيارات عرض المستند باستخدام Aspose.Words for .NET. |
-| [وثيقة إعداد الصفحة](./document-page-setup/) | دليل خطوة بخطوة لإعداد تخطيط مستند باستخدام Aspose.Words for .NET. |
-| [أضف اليابانية كلغات تحرير](./add-japanese-as-editing-languages/) | دليل خطوة بخطوة لإضافة اليابانية كلغة تحرير باستخدام Aspose.Words for .NET. |
-| [تعيين اللغة الروسية كلغة تحرير افتراضية](./set-russian-as-default-editing-language/) | دليل خطوة بخطوة لتعيين اللغة الروسية كلغة تحرير افتراضية لمستند باستخدام Aspose.Words for .NET. |
-| [تعيين إعداد الصفحة وتنسيق القسم](./set-page-setup-and-section-formatting/) | دليل خطوة بخطوة لإعداد تخطيط المستند وتنسيق القسم باستخدام Aspose.Words for .NET. |
+| [Optimizar para MS Word](./optimize-for-ms-word/) | Guía paso a paso para optimizar un documento para MS Word con Aspose.Words para .NET. |
+| [Mostrar errores gramaticales y ortográficos](./show-grammatical-and-spelling-errors/) | Guía paso a paso para habilitar la visualización de errores gramaticales y ortográficos en un documento con Aspose.Words para .NET. |
+| [Limpiar estilos y listas no utilizados](./cleanup-unused-styles-and-lists/) | Guía paso a paso para limpiar estilos y listas no utilizados en un documento con Aspose.Words para .NET. |
+| [Limpiar estilo duplicado](./cleanup-duplicate-style/) | Guía paso a paso para limpiar estilos duplicados en un documento usando Aspose.Words para .NET. Código fuente completo incluido. |
+| [Ver opciones](./view-options/) | Guía paso a paso para configurar las opciones de visualización de documentos con Aspose.Words para .NET. |
+| [Configuración de la página del documento](./document-page-setup/) | Guía paso a paso para configurar un diseño de documento con Aspose.Words para .NET. |
+| [Agregar japonés como idiomas de edición](./add-japanese-as-editing-languages/) | Guía paso a paso para agregar japonés como idioma de edición con Aspose.Words para .NET. |
+| [Establecer el ruso como idioma de edición predeterminado](./set-russian-as-default-editing-language/) | Guía paso a paso para establecer el ruso como idioma de edición predeterminado de un documento con Aspose.Words para .NET. |
+| [Establecer configuración de página y formato de sección](./set-page-setup-and-section-formatting/) | Guía paso a paso para configurar el formato de la sección y el diseño de un documento con Aspose.Words para .NET. |

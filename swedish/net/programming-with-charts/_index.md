@@ -1,36 +1,36 @@
 ---
-title: البرمجة مع الرسوم البيانية
-linktitle: البرمجة مع الرسوم البيانية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على رقم تنسيق تسمية البيانات ، وإنشاء مخطط باستخدام الشكل ، وإدراج مخطط عمودي بسيط ، وإدراج مخطط عمودي ، وإدراج مخطط منطقة ، وإدراج مخطط فقاعي ،
+title: Programmering med diagram
+linktitle: Programmering med diagram
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar innehåller formatnummer för dataetikett, skapa diagram med form, infoga enkelt kolumndiagram, infoga kolumndiagram, infoga ytdiagram, infoga bubbeldiagram,
 type: docs
 weight: 1540
 url: /sv/net/programming-with-charts/
 ---
-تقدم Aspose.Words for .NET Graphics Programming Tutorials مصدرًا شاملاً لتعلم كيفية إنشاء الرسوميات ومعالجتها في مستندات Word الخاصة بك. توجهك البرامج التعليمية عبر خطوات إضافة المخططات وتخصيص مظهرها وتحرير البيانات والمزيد. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان ميزات الرسومات في Aspose.Words.
+Aspose.Words för .NET Graphics Programmering Tutorials erbjuder en omfattande resurs för att lära dig hur du skapar och manipulerar grafik i dina Word-dokument. Handledningar leder dig genom stegen för att lägga till diagram, anpassa deras utseende, redigera data och mer. Oavsett om du är nybörjare eller en erfaren utvecklare, kommer dessa tutorials hjälpa dig att bemästra grafikfunktionerna i Aspose.Words.
 
-في هذه البرامج التعليمية ، ستتعلم كيفية إنشاء أنواع مختلفة من المخططات مثل المخططات الشريطية ، والمخططات الدائرية ، ومخططات المنطقة ، والمخططات الخطية ، وما إلى ذلك. ستتعلم أيضًا كيفية تخصيص عناصر المخطط مثل العناوين ، ومفاتيح الرسم البياني ، وتسميات البيانات ، و المحاور. ستوضح لك البرامج التعليمية كيفية التعامل مع بيانات المخطط عن طريق إضافة سلسلة البيانات أو تعديلها أو حذفها.
+I dessa handledningar kommer du att lära dig hur du skapar olika typer av diagram som stapeldiagram, cirkeldiagram, områdesdiagram, linjediagram, etc. Du kommer också att lära dig hur du anpassar diagramelement som titlar, legender, dataetiketter och yxor. Handledningarna visar dig hur du manipulerar diagramdata genom att lägga till, ändra eller ta bort dataserier.
 
-باستخدام هذه البرامج التعليمية ، ستتمكن من تحسين مستندات Word الخاصة بك عن طريق إضافة رسومات جذابة وغنية بالمعلومات. ستتعلم كيفية الاستفادة من ميزات الرسومات المتقدمة في Aspose.Words for .NET ودمجها بشكل فعال في تطبيقاتك. استكشف هذه الدروس لتوسيع مهاراتك الرسومية في Aspose.Words.
+Med dessa handledningar kommer du att kunna förbättra dina Word-dokument genom att lägga till visuellt tilltalande och informativ grafik. Du kommer att lära dig hur du drar fördel av de avancerade grafikfunktionerna i Aspose.Words för .NET och integrerar dem effektivt i dina applikationer. Utforska dessa handledningar för att utöka dina grafikkunskaper i Aspose.Words.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [تنسيق رقم تسمية البيانات](./format-number-of-data-label/) | تعرف على كيفية تنسيق عدد تسميات البيانات في مخطط باستخدام Aspose.Words for .NET. تخصيص تنسيقات الأرقام لتسميات البيانات بسهولة. |
-| [إنشاء مخطط باستخدام الشكل](./create-chart-using-shape/) | تعرف على كيفية إنشاء مخطط وتخصيصه باستخدام شكل في مستند Word باستخدام Aspose.Words for .NET. |
-| [إدراج مخطط عمودي بسيط](./insert-simple-column-chart/) | تعرف على كيفية إدراج مخطط عمودي بسيط في مستند باستخدام Aspose.Words for .NET. |
-| [إدراج مخطط عمودي](./insert-column-chart/) | تعرف على كيفية إدراج مخطط عمودي في مستند باستخدام Aspose.Words for .NET. |
-| [إدراج مخطط مساحي](./insert-area-chart/) | تعرف على كيفية إدراج مخطط مساحي في مستند باستخدام Aspose.Words for .NET. أضف بيانات السلسلة واحفظ المستند مع الرسم البياني. |
-| [إدراج مخطط فقاعي](./insert-bubble-chart/) | تعرف على كيفية إدراج مخطط فقاعي في مستند باستخدام Aspose.Words for .NET. أضف بيانات متسلسلة بقيم X و Y وقيم حجم الفقاعة. |
-| [إدراج مخطط مبعثر](./insert-scatter-chart/) | تعرف على كيفية إدراج مخطط مبعثر في مستند باستخدام Aspose.Words for .NET. أضف بيانات السلاسل بإحداثيات X و Y. |
-| [حدد خصائص XYAxis](./define-xyaxis-properties/) | تعرف على كيفية تحديد خصائص المحور XY في مخطط باستخدام Aspose.Words for .NET. يتم عرض خيارات التخصيص للمحاور X و Y. |
-| [قيم التاريخ والوقت إلى المحور](./date-time-values-to-axis/) | تعرف على كيفية إضافة قيم التاريخ والوقت إلى محور الرسم البياني باستخدام Aspose.Words for .NET. |
-| [تنسيق الأرقام للمحور](./number-format-for-axis/) | تعرف على كيفية تعيين تنسيق الأرقام لمحور في مخطط باستخدام Aspose.Words for .NET. |
-| [حدود المحور](./bounds-of-axis/) | تعرف على كيفية تعيين حدود المحور في مخطط باستخدام Aspose.Words for .NET للتحكم في نطاق القيم المعروضة على المحور. |
-| [وحدة الفاصل الزمني بين التسميات على المحور](./interval-unit-between-labels-on-axis/) | تعرف على كيفية تعيين وحدة الفاصل الزمني بين التسميات على محور الرسم البياني باستخدام Aspose.Words for .NET. |
-| [إخفاء محور التخطيط](./hide-chart-axis/) | تعرف على كيفية إخفاء محور الرسم البياني في مستند باستخدام Aspose.Words for .NET. إخفاء المحور لعرض مخطط أوضح وأكثر تركيزًا. |
-| [ضع علامة على محاذاة تسمية متعددة الأسطر](./tick-multi-line-label-alignment/) | تعرف على كيفية محاذاة تسميات التجزئة متعددة الأسطر في محور الرسم البياني باستخدام Aspose.Words for .NET. |
-| [تسمية بيانات المخطط](./chart-data-label/) | تعرف على كيفية إضافة تسميات البيانات وتخصيصها في مخطط باستخدام Aspose.Words for .NET لتوفير معلومات إضافية حول نقاط البيانات. |
-| [الخيارات الافتراضية لتسميات البيانات](./default-options-for-data-labels/) | تعرف على كيفية تعيين الخيارات الافتراضية لتسميات البيانات في مخطط باستخدام Aspose.Words for .NET. |
-| [نقطة بيانات مخطط واحد](./single-chart-data-point/) | تعرف على كيفية تخصيص نقطة بيانات واحدة في مخطط باستخدام Aspose.Words for .NET. |
-| [سلسلة مخطط واحد](./single-chart-series/) | تعرف على كيفية تخصيص سلسلة مخططات مفردة في مخطط باستخدام Aspose.Words for .NET. |
+| [Format Antal dataetikett](./format-number-of-data-label/) | Lär dig hur du formaterar antalet dataetiketter i ett diagram med Aspose.Words för .NET. Anpassa enkelt talformat för dataetiketter. |
+| [Skapa diagram med hjälp av Shape](./create-chart-using-shape/) | Lär dig hur du skapar och anpassar ett diagram med hjälp av en form i ett Word-dokument med Aspose.Words för .NET. |
+| [Infoga enkelt kolumndiagram](./insert-simple-column-chart/) | Lär dig hur du infogar ett enkelt kolumndiagram i ett dokument med Aspose.Words för .NET. |
+| [Infoga kolumndiagram](./insert-column-chart/) | Lär dig hur du infogar ett kolumndiagram i ett dokument med Aspose.Words för .NET. |
+| [Infoga områdesdiagram](./insert-area-chart/) | Lär dig hur du infogar ett områdesdiagram i ett dokument med Aspose.Words för .NET. Lägg till seriedata och spara dokumentet med diagrammet. |
+| [Infoga bubbeldiagram](./insert-bubble-chart/) | Lär dig hur du infogar ett bubbeldiagram i ett dokument med Aspose.Words för .NET. Lägg till seriedata med värden för X, Y och bubbelstorlek. |
+| [Infoga spridningsdiagram](./insert-scatter-chart/) | Lär dig hur du infogar ett punktdiagram i ett dokument med Aspose.Words för .NET. Lägg till seriedata med X- och Y-koordinater. |
+| [Definiera XYAxis-egenskaper](./define-xyaxis-properties/) | Lär dig hur du definierar XY-axelegenskaper i ett diagram med Aspose.Words för .NET. Anpassningsalternativ för X- och Y-axlarna visas. |
+| [Datum Tidsvärden till axel](./date-time-values-to-axis/) | Lär dig hur du lägger till datum och tid värden till axeln i ett diagram med Aspose.Words för .NET. |
+| [Nummerformat för axel](./number-format-for-axis/) | Lär dig hur du ställer in talformatet för en axel i ett diagram med Aspose.Words för .NET. |
+| [Axelgränser](./bounds-of-axis/) | Lär dig hur du ställer in gränserna för en axel i ett diagram med Aspose.Words för .NET som kontrollerar intervallet av värden som visas på axeln. |
+| [Intervallenhet mellan etiketter på axeln](./interval-unit-between-labels-on-axis/) | Lär dig hur du ställer in intervallenheten mellan etiketter på axeln i ett diagram med Aspose.Words för .NET. |
+| [Dölj diagramaxel](./hide-chart-axis/) | Lär dig hur du döljer diagramaxeln i ett dokument med Aspose.Words för .NET. Dölj axeln för en renare och mer fokuserad sjökortsvisning. |
+| [Markera Multi Line Label Alignment](./tick-multi-line-label-alignment/) | Lär dig hur du justerar etiketter med flera rader i en diagramaxel med Aspose.Words för .NET. |
+| [Diagramdataetikett](./chart-data-label/) | Lär dig hur du lägger till och anpassar dataetiketter i ett diagram med Aspose.Words för .NET för att ge ytterligare information om datapunkter. |
+| [Standardalternativ för dataetiketter](./default-options-for-data-labels/) | Lär dig hur du ställer in standardalternativ för dataetiketter i ett diagram med Aspose.Words för .NET. |
+| [Enstaka diagramdatapunkt](./single-chart-data-point/) | Lär dig hur du anpassar en enskild datapunkt i ett diagram med Aspose.Words för .NET. |
+| [Single Chart Series](./single-chart-series/) | Lär dig hur du anpassar enstaka diagramserier i ett diagram med Aspose.Words för .NET. |

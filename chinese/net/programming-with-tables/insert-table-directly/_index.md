@@ -1,46 +1,46 @@
 ---
-title: أدخل الجدول مباشرة
-linktitle: أدخل الجدول مباشرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET.
+title: 直接插入表格
+linktitle: 直接插入表格
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将表格直接插入到 Word 文档中。
 type: docs
 weight: 10
 url: /zh/net/programming-with-tables/insert-table-directly/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من إدراج الجداول مباشرةً في مستندات Word برمجيًا.
+在本教程中，我们将学习如何使用 Aspose.Words for .NET 将表格直接插入到 Word 文档中。我们将按照逐步指南来理解代码并实现此功能。在本教程结束时，您将能够以编程方式将表格直接插入到 Word 文档中。
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## 第 1 步：项目设置
+1. 启动 Visual Studio 并创建一个新的 C# 项目。
+2. 添加对 Aspose.Words for .NET 库的引用。
 
-## الخطوة 2: إنشاء المستند والجدول
-لبدء العمل مع المصفوفة ، نحتاج إلى إنشاء مستند جديد وتهيئة المصفوفة. اتبع هذه الخطوات:
+## 第 2 步：创建文档和表格
+要开始使用数组，我们需要创建一个新文档并初始化数组。按着这些次序：
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+//文档创建
 Document doc = new Document();
 
-// قم بإنشاء المصفوفة
+//创建数组
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+请务必将“您的文档目录”替换为您的文档目录的实际路径。
 
-## الخطوة 3: بناء المصفوفة
-بعد ذلك ، سنبني الجدول بإضافة صفوف وخلايا. استخدم الكود التالي كمثال:
+## 第 3 步：构建数组
+接下来，我们将通过添加行和单元格来构建表格。使用以下代码作为示例：
 
 ```csharp
-// قم بإنشاء الصف الأول
+//创建第一行
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);
 
-// قم بإنشاء الخلية الأولى
+//创建第一个单元格
 Cell cell = new Cell(doc);
 cell.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 cell.CellFormat.Width = 80;
@@ -48,54 +48,54 @@ cell.AppendChild(new Paragraph(doc));
 cell.FirstParagraph.AppendChild(new Run(doc, "Text in row 1, cell 1"));
 row.AppendChild(cell);
 
-// قم بتكرار الخلية للخلية الثانية في الصف
+//复制行中第二个单元格的单元格
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Text in row 1, cell 2"));
 ```
 
- هنا ننشئ صفًا بامتداد`AllowBreakAcrossPages` تعيين الخاصية على`true` للسماح بفصل الصفحات بين الصفوف. نقوم بعد ذلك بإنشاء خلية ذات خلفية ملونة وعرض ثابت ومحتوى نصي محدد. ثم نكرر هذه الخلية لإنشاء الخلية الثانية في الصف.
+在这里，我们创建一行`AllowBreakAcrossPages`属性设置为`true`允许行间分页。然后我们创建一个具有彩色背景、固定宽度和指定文本内容的单元格。然后我们复制这个单元格以创建行中的第二个单元格。
 
-## الخطوة 4: جدول ملاءمة تلقائي
-يمكننا تطبيق تعديلات تلقائية على الجدول لتنسيقه بشكل صحيح. استخدم الكود التالي:
+## 第 4 步：自动调整表格
+我们可以对表格应用自动调整以正确设置格式。使用以下代码：
 
 ```csharp
 table. AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
-يطبق سطر التعليمات البرمجية هذا احتواءًا تلقائيًا استنادًا إلى عرض العمود الثابت.
+这行代码应用基于固定列宽的自动调整。
 
-## الخطوة 5: تسجيل ملف
+## 第 5 步：注册
 
-  وثيقة معدلة
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع إدراج الجدول مباشرةً. استخدم الكود التالي:
+  修改文件
+最后，我们需要将修改后的文档与直接插入的表格一起保存。使用以下代码：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+请务必为输出文档指定正确的路径和文件名。
 
-### نموذج التعليمات البرمجية المصدر لـ Insert Table مباشرة باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 直接插入表格的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
-	// نبدأ بإنشاء كائن الجدول. لاحظ أنه يجب علينا تمرير كائن المستند
-	//منشئ كل عقدة. هذا لأن كل عقدة نقوم بإنشائها يجب أن تنتمي
-	// لبعض الوثائق.
+	//我们从创建表对象开始。请注意，我们必须传递文档对象
+	//到每个节点的构造函数。这是因为我们创建的每个节点都必须属于
+	//一些文件。
 	Table table = new Table(doc);
 	doc.FirstSection.Body.AppendChild(table);
-	// هنا يمكننا أن نطلق على "ضمان الحد الأدنى" لإنشاء الصفوف والخلايا لنا. تستخدم هذه الطريقة
-	// للتأكد من أن العقدة المحددة صالحة. في هذه الحالة ، يجب أن يحتوي الجدول الصالح على صف واحد وخلية واحدة على الأقل.
-	// بدلاً من ذلك ، سنتعامل مع إنشاء الصف والجدول بأنفسنا.
-	// ستكون هذه أفضل طريقة للقيام بذلك إذا كنا ننشئ جدولًا داخل خوارزمية.
+	//在这里我们可以调用 EnsureMinimum 来为我们创建行和单元格。这个方法是用
+	//以确保指定的节点有效。在这种情况下，一个有效的表格应该至少有一个行和一个单元格。
+	//相反，我们将自己处理创建行和表。
+	//如果我们在算法中创建一个表，这将是最好的方法。
 	Row row = new Row(doc);
 	row.RowFormat.AllowBreakAcrossPages = true;
 	table.AppendChild(row);
-	// يمكننا الآن تطبيق أي إعدادات احتواء تلقائي.
+	//我们现在可以应用任何自动调整设置。
 	table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 	Cell cell = new Cell(doc);
 	cell.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
@@ -103,13 +103,13 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 	cell.AppendChild(new Paragraph(doc));
 	cell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 1 Text"));
 	row.AppendChild(cell);
-	// ثم نكرر العملية للخلايا والصفوف الأخرى في الجدول.
-	// يمكننا أيضًا تسريع الأمور عن طريق استنساخ الخلايا والصفوف الموجودة.
+	//然后我们将对表格中的其他单元格和行重复该过程。
+	//我们还可以通过克隆现有的单元格和行来加快速度。
 	row.AppendChild(cell.Clone(false));
 	row.LastCell.AppendChild(new Paragraph(doc));
 	row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
 	doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إدراج جدول مباشرة في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ رمز C # المقدم ، يمكنك إدراج الجداول مباشرةً في مستندات Word برمجيًا. تتيح لك هذه الميزة إنشاء الجداول وتخصيصها وفقًا لاحتياجاتك الخاصة.
+## 结论
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 将表格直接插入到 Word 文档中。通过遵循此分步指南并实施提供的 C# 代码，您可以以编程方式将表格直接插入到 Word 文档中。此功能允许您根据您的特定需要创建和自定义表格。

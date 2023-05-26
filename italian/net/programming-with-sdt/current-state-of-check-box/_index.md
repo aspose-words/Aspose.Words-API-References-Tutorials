@@ -1,30 +1,30 @@
 ---
-title: خانة الاختيار الحالية
-linktitle: خانة الاختيار الحالية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استرداد الحالة الحالية لعنصر تحكم محتوى خانة الاختيار وتعيينه في مستند Word باستخدام Aspose.Words for .NET.
+title: Stato corrente della casella di controllo
+linktitle: Stato corrente della casella di controllo
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Informazioni su come recuperare e impostare lo stato corrente di un controllo del contenuto di una casella di controllo in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-sdt/current-state-of-check-box/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استرداد الحالة الحالية لعنصر تحكم محتوى مربع الاختيار وتعيينه في مستند Word باستخدام Aspose.Words for .NET. يمكنك تحديد أو إلغاء تحديد خانة الاختيار بناءً على حالتها الحالية.
+Questo tutorial spiega come recuperare e impostare lo stato corrente di un controllo del contenuto di una casella di controllo in un documento di Word utilizzando Aspose.Words per .NET. Puoi selezionare o deselezionare la casella di controllo in base al suo stato attuale.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## Prerequisiti
+Per seguire questo tutorial, è necessario disporre di quanto segue:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words per la libreria .NET installata.
+- Conoscenza di base di C# e lavoro con documenti Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+## Passaggio 1: impostare la directory dei documenti
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند واسترجع عنصر التحكم في محتوى خانة الاختيار
- قم بتحميل مستند Word باستخدام ملف`Document` مُنشئ ، تمرير المسار إلى المستند كمعامل. ثم قم باسترداد عنصر التحكم في محتوى خانة الاختيار المطلوب من المستند. في هذا المثال ، نفترض أن خانة الاختيار هي علامة المستند المهيكلة الأولى في المستند.
+## Passaggio 2: caricare il documento e recuperare il controllo del contenuto della casella di controllo
+ Carica il documento Word usando il file`Document` costruttore, passando il percorso al documento come parametro. Quindi, recuperare il controllo del contenuto della casella di controllo desiderato dal documento. In questo esempio, assumiamo che la casella di controllo sia il primo tag di documento strutturato nel documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -32,29 +32,29 @@ StructuredDocumentTag sdtCheckBox =
 	(StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
-## الخطوة 3: حدد أو ألغِ تحديد خانة الاختيار بناءً على حالتها الحالية
- تحقق مما إذا كانت علامة المستند المهيكلة المستردة من النوع`SdtType.Checkbox` . إذا كان الأمر كذلك ، فاضبط ملف`Checked` ملكية التحكم في المحتوى إلى`true` لتحديد المربع. خلاف ذلك ، يمكنك تركه دون رادع.
+## Passaggio 3: selezionare o deselezionare la casella di controllo in base al suo stato attuale
+ Controlla se il tag del documento strutturato recuperato è di tipo`SdtType.Checkbox` . Se lo è, impostare il`Checked` proprietà del controllo contenuto a`true` per selezionare la casella. Altrimenti, puoi lasciarlo deselezionato.
 
 ```csharp
 if (sdtCheckBox.SdtType == SdtType.Checkbox)
 	sdtCheckBox.Checked = true;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند المعدل إلى الدليل المحدد باستخدام امتداد`Save`طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithSdt.CurrentStateOfCheckBox.docx".
+## Passaggio 4: salvare il documento
+ Salvare il documento modificato nella directory specificata utilizzando il file`Save`metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithSdt.CurrentStateOfCheckBox.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 ```
 
-### مثال على شفرة المصدر لـ Current State Of Check Box باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per Current State Of Check Box utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");
-	// احصل على أول عنصر تحكم في المحتوى من المستند.
+	// Ottenere il primo controllo del contenuto dal documento.
 	StructuredDocumentTag sdtCheckBox =
 		(StructuredDocumentTag) doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 	if (sdtCheckBox.SdtType == SdtType.Checkbox)
@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 	doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 ```
 
-هذا كل شيء! لقد نجحت في استرداد الحالة الحالية لعنصر تحكم محتوى مربع الاختيار في مستند Word الخاص بك وتعيينه باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai recuperato e impostato correttamente lo stato corrente di un controllo del contenuto della casella di controllo nel documento di Word utilizzando Aspose.Words per .NET.

@@ -1,17 +1,17 @@
 ---
-title: العمل مع الحاشية السفلية والتعليق الختامي
-linktitle: العمل مع الحاشية السفلية والتعليق الختامي
-second_title: Aspose.Words لمراجع .NET API
-description: تشرح البرامج التعليمية كيفية تعيين الحاشية السفلية والتعليقات الختامية في مستند Word باستخدام Aspose.Words for .NET
+title: Arbeta med fotnot och slutnot
+linktitle: Arbeta med fotnot och slutnot
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar förklarar hur du ställer in fotnot och slutnot i Word-dokument med Aspose.Words för .NET
 type: docs
 weight: 660
 url: /sv/net/working-with-footnote-and-endnote/
 ---
-يعد العمل باستخدام الحواشي السفلية والتعليقات الختامية مصدرًا شاملاً يرشدك خلال العمل مع الحواشي السفلية والتعليقات الختامية في مستندات Word باستخدام مكتبة Aspose.Words لـ .NET. توفر البرامج التعليمية شرحًا تفصيليًا خطوة بخطوة ، وشفرة مصدر كاملة ، وأمثلة عملية لإضافة الحواشي السفلية والتعليقات الختامية وتعديلها وإزالتها. ستتعلم أيضًا كيفية تخصيص تنسيق وأسلوب الملاحظات ، والتنقل بين الملاحظات ، وتحويلها إلى تنسيقات مختلفة ، مثل PDF أو HTML. هذا المورد ضروري للمطورين الراغبين في إدارة المراجع والتعليقات التوضيحية في مستندات Word الخاصة بهم باستخدام Aspose.Words for .NET.
+Arbeta med fotnoter och slutnoter är en omfattande resurs som leder dig genom att arbeta med fotnoter och slutnoter i dina Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Handledningarna ger detaljerade steg-för-steg-förklaringar, fullständig källkod och praktiska exempel för att lägga till, ändra och ta bort fotnoter och slutnoter. Du kommer också att lära dig hur du anpassar anteckningarnas format och stil, navigerar mellan anteckningar och konverterar dem till olika format, som PDF eller HTML. Denna resurs är viktig för utvecklare som vill hantera referenser och kommentarer i sina Word-dokument med Aspose.Words för .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [تعيين أعمدة الملاحظات القدم](./set-foot-note-columns/) | تعرف على كيفية تعيين عدد الأعمدة للحواشي السفلية في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تعيين موضع الحاشية السفلية وملاحظة النهاية](./set-footnote-and-end-note-position/) | تعرف على كيفية تعيين موضع الحواشي السفلية والتعليقات الختامية في مستندات Word باستخدام Aspose.Words for .NET. |
-| [قم بتعيين خيارات التعليق الختامي](./set-endnote-options/) | تعرف على كيفية تعيين خيارات التعليقات الختامية في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Ställ in fotnotskolumner](./set-foot-note-columns/) | Lär dig hur du ställer in antalet kolumner för fotnoter i Word-dokument med Aspose.Words för .NET. |
+| [Ställ in fotnots- och slutnotposition](./set-footnote-and-end-note-position/) | Lär dig hur du ställer in positionen för fotnoter och slutnoter i Word-dokument med Aspose.Words för .NET. |
+| [Ställ in slutnotsalternativ](./set-endnote-options/) | Lär dig hur du ställer in slutnotalternativ i Word-dokument med Aspose.Words för .NET. |

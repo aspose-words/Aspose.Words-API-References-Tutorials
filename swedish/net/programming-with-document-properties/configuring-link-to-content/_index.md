@@ -1,31 +1,31 @@
 ---
-title: تكوين ارتباط إلى المحتوى
-linktitle: تكوين ارتباط إلى المحتوى
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لإعداد الارتباط بالمحتوى في مستند باستخدام Aspose.Words for .NET.
+title: Konfigurera länk till innehåll
+linktitle: Konfigurera länk till innehåll
+second_title: Aspose.Words för .NET API Referens
+description: Steg-för-steg-guide för att ställa in länkning till innehåll i ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-document-properties/configuring-link-to-content/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لإعداد الارتباط بالمحتوى باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة الارتباط بمحتوى معين في مستند.
+I den här handledningen går vi igenom C#-källkoden för att ställa in länkning till innehåll med Aspose.Words för .NET. Den här funktionen låter dig länka till specifikt innehåll i ett dokument.
 
-## الخطوة 1: إعداد المشروع
+## Steg 1: Projektinställning
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
 
-## الخطوة الثانية: إنشاء المستند والمنشئ
+## Steg 2: Skapa dokumentet och konstruktören
 
-في هذه الخطوة ، سننشئ مستندًا جديدًا ونهيئ المُنشئ. استخدم الكود التالي:
+I det här steget kommer vi att skapa ett nytt dokument och initiera konstruktorn. Använd följande kod:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إنشاء إشارة مرجعية
+## Steg 3: Skapa ett bokmärke
 
-الآن سنقوم بإنشاء إشارة مرجعية في المستند. استخدم الكود التالي لإنشاء إشارة مرجعية بنص بداخلها:
+Nu ska vi skapa ett bokmärke i dokumentet. Använd följande kod för att skapa ett bokmärke med text inuti:
 
 ```csharp
 builder. StartBookmark("MyBookmark");
@@ -33,16 +33,16 @@ builder.Writeln("Text inside a bookmark.");
 builder. EndBookmark("MyBookmark");
 ```
 
-ينشئ هذا الرمز إشارة مرجعية تسمى "MyBookmark" ويضيف بعض النص بداخله.
+Denna kod skapar ett bokmärke som heter "Mitt bokmärke" och lägger till lite text inuti.
 
-## الخطوة 4: إعداد ارتباط المحتوى
+## Steg 4: Konfigurera innehållslänken
 
-الآن سنقوم بتكوين رابط المحتوى باستخدام خصائص المستند. استخدم الكود التالي لإضافة واسترداد ارتباط المحتوى:
+Nu kommer vi att konfigurera länken till innehållet med hjälp av dokumentegenskaperna. Använd följande kod för att lägga till och hämta länken till innehållet:
 
 ```csharp
-// احصل على قائمة بجميع الخصائص المخصصة في المستند.
+// Hämta listan över alla anpassade egenskaper i dokumentet.
 CustomDocumentProperties customProperties = doc.CustomDocumentProperties;
-// أضف خاصية مرتبطة بالمحتوى.
+// Lägg till en innehållsbunden egenskap.
 DocumentProperty customProperty = customProperties.AddLinkToContent("Bookmark", "MyBookmark");
 customProperty = customProperties["Bookmark"];
 
@@ -53,9 +53,9 @@ string linkSource = customProperty.LinkSource;
 string customPropertyValue = customProperty.Value.ToString();
 ```
 
-يضيف هذا الرمز خاصية متعلقة بالمحتوى تسمى "Bookmark" مع الإشارة المرجعية "MyBookmark". بعد ذلك ، يقوم باسترداد معلومات الخاصية المتعلقة بالمحتوى مثل حالة الارتباط ومصدر الارتباط وقيمة الخاصية.
+Denna kod lägger till en innehållsrelaterad egenskap som kallas "Bokmärke" med bokmärket "Mitt bokmärke". Sedan hämtar den innehållsrelaterad egenskapsinformation som länkstatus, länkkälla och egenskapsvärde.
 
-### مثال على شفرة المصدر لتكوين ارتباط إلى المحتوى باستخدام Aspose.Words for .NET
+### Exempel på källkod för att konfigurera länk till innehåll med Aspose.Words för .NET
 
 ```csharp
 
@@ -66,9 +66,9 @@ string customPropertyValue = customProperty.Value.ToString();
 	builder.Writeln("Text inside a bookmark.");
 	builder.EndBookmark("MyBookmark");
 
-	// استرجع قائمة بكل خصائص المستند المخصصة من الملف.
+	// Hämta en lista över alla anpassade dokumentegenskaper från filen.
 	CustomDocumentProperties customProperties = doc.CustomDocumentProperties;
-	// إضافة مرتبطة بخاصية المحتوى.
+	// Lägg till länkad till innehållsegenskap.
 	DocumentProperty customProperty = customProperties.AddLinkToContent("Bookmark", "MyBookmark");
 	customProperty = customProperties["Bookmark"];
 
@@ -80,4 +80,4 @@ string customPropertyValue = customProperty.Value.ToString();
 
 ```
 
-لقد تعلمت الآن كيفية تكوين رابط المحتوى في مستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إنشاء وتكوين روابط لمحتوى معين في مستنداتك الخاصة.
+Du har nu lärt dig hur du konfigurerar länken till innehåll i ett dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide som finns i denna handledning kan du enkelt skapa och konfigurera länkar till specifikt innehåll i dina egna dokument.

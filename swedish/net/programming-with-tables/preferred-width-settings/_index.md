@@ -1,98 +1,98 @@
 ---
-title: إعدادات العرض المفضلة
-linktitle: إعدادات العرض المفضلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين عروض خلية الجدول المفضلة في مستند Word باستخدام Aspose.Words for .NET.
+title: Önskad breddinställningar
+linktitle: Önskad breddinställningar
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ställer in föredragna tabellcellbredder i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-tables/preferred-width-settings/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تعيين إعدادات العرض المفضلة لخلايا الجدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من تحديد عروض مختلفة مفضلة لخلايا الجدول في مستندات Word الخاصة بك.
+I den här handledningen kommer vi att lära oss hur du ställer in föredragna breddinställningar för tabellceller i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna ange olika föredragna bredder för dina tabellceller i dina Word-dokument.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Steg 1: Projektinställning
+1. Starta Visual Studio och skapa ett nytt C#-projekt.
+2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Steg 2: Skapa dokumentet och initialisera dokumentgeneratorn
+För att börja arbeta med dokument- och dokumentgeneratorn, följ dessa steg:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// Skapande av dokument
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Initiera dokumentgeneratorn
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog.
 
-## الخطوة 3: بناء الجدول بالعروض المفضلة
-بعد ذلك ، سنقوم ببناء جدول بثلاث خلايا لها عروض مختلفة مفضلة. استخدم الكود التالي:
+## Steg 3: Bygg bordet med önskade bredder
+Därefter bygger vi en tabell med tre celler som har olika föredragna bredder. Använd följande kod:
 
 ```csharp
-// بداية الجدول
+// Början av bordet
 builder. StartTable();
 
-// أدخل خلية ذات حجم مطلق
+// Infoga en cell av absolut storlek
 builder. InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
 builder.Writeln("Cell with a width of 40 points");
 
-// أدخل خلية ذات حجم نسبي (بالنسبة المئوية)
+// Infoga en cell av relativ storlek (i procent)
 builder. InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 builder.Writeln("Cell with 20% width");
 
-// أدخل خلية ذات حجم تلقائي
+// Infoga en cell med automatisk storlek
 builder. InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
 builder.Writeln("Auto-size cell. The size of this cell is calculated from the preferred width of the table. In this case, the cell will fill the rest of the available space.");
 
-// نهاية الجدول
+// Slut på bordet
 builder. EndTable();
 ```
 
-هنا نستخدم منشئ المستندات لبناء جدول بثلاث خلايا. للخلية الأولى عرض مفضل يبلغ 40 نقطة ، والخلية الثانية لها عرض مفضل بنسبة 20٪ من عرض الجدول ، والخلية الثالثة لها عرض مفضل تلقائي يتم ضبطه
+Här använder vi dokumentbyggaren för att bygga en tabell med tre celler. Den första cellen har en föredragen bredd på 40 punkter, den andra cellen har en föredragen bredd på 20 % av tabellbredden och den tredje cellen har en automatisk föredragen bredd som justeras
 
-  حسب المساحة المتوفرة.
+  beroende på tillgängligt utrymme.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل بإعدادات العرض المفضلة المحددة لخلايا الجدول. استخدم الكود التالي:
+## Steg 4: Spara det ändrade dokumentet
+Slutligen måste vi spara det modifierade dokumentet med de önskade breddinställningarna definierade för tabellcellerna. Använd följande kod:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 
-### نموذج رمز مصدر لإعدادات العرض المفضلة باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Preferred Width Settings med Aspose.Words för .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// أدخل صف جدول مكون من ثلاث خلايا لها عروض مختلفة مفضلة.
+	// Infoga en tabellrad som består av tre celler som har olika föredragna bredder.
 	builder.StartTable();
-	// أدخل خلية ذات حجم مطلق.
+	// Infoga en cell i absolut storlek.
 	builder.InsertCell();
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
 	builder.Writeln("Cell at 40 points width");
-	// أدخل خلية ذات حجم نسبي (نسبة مئوية).
+	// Infoga en cell i relativ (procent) storlek.
 	builder.InsertCell();
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 	builder.Writeln("Cell at 20% width");
-	// أدخل خلية بحجم تلقائي.
+	// Infoga en cell i automatisk storlek.
 	builder.InsertCell();
 	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
 	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
@@ -102,5 +102,5 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 	doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين إعدادات العرض المفضلة لخلايا الجدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك تخصيص عرض خلايا الجدول وفقًا لاحتياجاتك المحددة في مستندات Word الخاصة بك.
+## Slutsats
+I den här handledningen lärde vi oss hur man ställer in föredragna breddinställningar för tabellceller i ett Word-dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden och implementera den medföljande C#-koden kan du anpassa dina tabellcellbredder till dina specifika behov i dina Word-dokument.

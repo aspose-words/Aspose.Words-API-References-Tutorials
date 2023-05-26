@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل نموذج مربع التحرير والسرد
-linktitle: أدخل حقل نموذج مربع التحرير والسرد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج مربع التحرير والسرد في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Insertar campo de formulario de cuadro combinado
+linktitle: Insertar campo de formulario de cuadro combinado
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a insertar campos de formulario de cuadro combinado en documentos de Word usando Aspose.Words para .NET. Guía paso por paso.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج حقل نموذج مربع تحرير وسرد في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة حقول نموذج مربع التحرير والسرد بخصائص قابلة للتخصيص إلى مستنداتك.
+En este ejemplo completo, aprenderá cómo insertar un campo de formulario de cuadro combinado en un documento de Word usando Aspose.Words para .NET. Lo guiaremos a través del proceso y le proporcionaremos los fragmentos de código C# necesarios. Al final de esta guía, podrá agregar campos de formulario de cuadro combinado con propiedades personalizables a sus documentos.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
+- Aspose.Words para la biblioteca .NET instalada en su sistema.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Paso 1: Cree un nuevo documento y DocumentBuilder
+Para comenzar, cree un nuevo documento usando la clase Document e inicialice un objeto DocumentBuilder:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: تحديد عناصر صندوق الكومبو
-بعد ذلك ، حدد مصفوفة من العناصر لحقل نموذج مربع التحرير والسرد:
+## Paso 2: definir los elementos del cuadro combinado
+A continuación, defina una matriz de elementos para el campo de formulario de cuadro combinado:
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
 ```
 
-## الخطوة 3: أدخل حقل نموذج مربع تحرير وسرد
-استخدم الأسلوب InsertComboBox لفئة DocumentBuilder لإدراج حقل نموذج مربع تحرير وسرد. أدخل الاسم ومجموعة العناصر والفهرس المحدد كمعلمات:
+## Paso 3: inserte un campo de formulario de cuadro combinado
+Utilice el método InsertComboBox de la clase DocumentBuilder para insertar un campo de formulario de cuadro combinado. Proporcione el nombre, la matriz de elementos y el índice seleccionado como parámetros:
 
 ```csharp
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## الخطوة 4: احفظ المستند
-بعد إدراج حقل نموذج مربع التحرير والسرد ، احفظ المستند في ملف باستخدام طريقة Save لفئة المستند:
+## Paso 4: Guarde el documento
+Después de insertar el campo de formulario del cuadro combinado, guarde el documento en un archivo utilizando el método Guardar de la clase Documento:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
 ```
 
-### مثال رمز مصدر لإدراج حقل نموذج مربع تحرير وسرد باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لإدخال حقل نموذج مربع التحرير والسرد باستخدام Aspose.Words for .NET:
+### Ejemplo de código fuente para insertar campo de formulario de cuadro combinado usando Aspose.Words para .NET
+Aquí está el código fuente completo para insertar un campo de formulario de cuadro combinado usando Aspose.Words para .NET:
 
 ```csharp
 
@@ -59,7 +59,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Recuerde ajustar el código de acuerdo con sus requisitos específicos y mejorarlo con funciones adicionales según sea necesario.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج حقل نموذج مربع تحرير وسرد في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك باستخدام حقول نموذج مربع التحرير والسرد التفاعلي.
+## Conclusión
+¡Felicidades! Ha aprendido con éxito cómo insertar un campo de formulario de cuadro combinado en un documento de Word usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, ahora puede mejorar sus documentos con campos de formulario de cuadro combinado interactivo.

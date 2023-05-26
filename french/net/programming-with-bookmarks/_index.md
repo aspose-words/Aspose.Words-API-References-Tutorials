@@ -1,30 +1,30 @@
 ---
-title: البرمجة مع الإشارات المرجعية
-linktitle: البرمجة مع الإشارات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إشارات مرجعية للوصول ، وتحديث بيانات الإشارة المرجعية ، وأعمدة جدول الإشارات المرجعية ، ونسخ نص تم وضع إشارة مرجعية عليه ، وإلحاق نص تم وضع إشارة مرجعية عليه ، وإنشاء إشارة مرجعية ، وإظهار إخفاء الإشارات المرجعية
+title: Programmation avec signets
+linktitle: Programmation avec signets
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent des signets d'accès, mettent à jour les données des signets, les colonnes de la table des signets, copient le texte marqué d'un signet, ajoutent du texte marqué d'un signet, créent un signet, masquent le signet
 type: docs
 weight: 1380
 url: /fr/net/programming-with-bookmarks/
 ---
 
-ترشدك برامج Aspose.Words for .NET التعليمية إلى العديد من الميزات وتقنيات البرمجة للعمل مع الإشارات المرجعية في مستندات Word الخاصة بك. ستتعلم في هذه البرامج التعليمية كيفية إنشاء الإشارات المرجعية وإعادة تسميتها وحذفها والتنقل بينها. ستتعلم أيضًا كيفية استخراج محتوى الإشارات المرجعية واستبداله ، وكذلك كيفية إضافة إشارات مرجعية ديناميكية واستخدامها لإنشاء تقارير مخصصة.
+Les didacticiels Aspose.Words pour .NET vous guident à travers diverses fonctionnalités et techniques de programmation pour travailler avec des signets dans vos documents Word. Dans ces didacticiels, vous apprendrez à créer, renommer, supprimer et naviguer entre les signets. Vous apprendrez également à extraire et à remplacer le contenu des signets, ainsi qu'à ajouter des signets dynamiques et à les utiliser pour générer des rapports personnalisés.
 
-تزودك البرامج التعليمية بأمثلة تفصيلية للتعليمات البرمجية وشروحات تفصيلية لمساعدتك على فهم المفاهيم وتنفيذها. سواء كنت جديدًا أو خبيرًا في برمجة .NET ، ستساعدك هذه البرامج التعليمية على تحقيق أقصى استفادة من ميزات الإشارات المرجعية في Aspose.Words.
+Les didacticiels vous fournissent des exemples de code détaillés et des explications étape par étape pour vous aider à comprendre et à implémenter les concepts. Que vous soyez novice ou expérimenté en programmation .NET, ces didacticiels vous aideront à tirer le meilleur parti des fonctionnalités de signets dans Aspose.Words.
 
-باتباع هذه البرامج التعليمية ، ستتمكن من معالجة الإشارات المرجعية بشكل فعال في مستندات Word الخاصة بك ، وبالتالي أتمتة المهام المختلفة مثل إنشاء التقارير وإنشاء جدول المحتويات الديناميكي وغير ذلك الكثير. استكشف Aspose.Words دروس تعليم مرجعية لـ .NET وحسّن إنتاجيتك في العمل مع مستندات Word.
+En suivant ces tutoriels, vous serez en mesure de manipuler efficacement les signets dans vos documents Word, automatisant ainsi diverses tâches telles que la génération de rapports, la création de tables des matières dynamiques et bien plus encore. Explorez Aspose.Words pour les didacticiels de création de signets .NET et améliorez votre productivité lorsque vous travaillez avec des documents Word.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [الوصول إلى الإشارات المرجعية](./access-bookmarks/) | تعرف على كيفية الوصول إلى الإشارات المرجعية في مستند Word باستخدام Aspose.Words for .NET. |
-| [تحديث البيانات المرجعية](./update-bookmark-data/) | دليل خطوة بخطوة لشرح شفرة المصدر C # لميزة تحديث بيانات الإشارة المرجعية Aspose.Words لـ .NET. |
-| [أعمدة الجدول المرجعية](./bookmark-table-columns/) | تعرف على كيفية وضع إشارة مرجعية على عمود جدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [نسخ النص الذي تم وضع إشارة مرجعية عليه](./copy-bookmarked-text/) | تعرف على كيفية نسخ نص إشارة مرجعية من مستند مصدر إلى مستند آخر باستخدام Aspose.Words for .NET. |
-| [إلحاق نص تم وضع إشارة مرجعية عليه](./append-bookmarked-text/) | تعرف على كيفية إضافة نص من إشارة مرجعية في مستند Word باستخدام Aspose.Words for .NET. |
-| [إنشاء إشارة مرجعية](./create-bookmark/) | تعرف على كيفية إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF باستخدام Aspose.Words for .NET. |
-| [إظهار إخفاء الإشارات المرجعية](./show-hide-bookmarks/) | تعرف على كيفية إظهار أو إخفاء إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET. |
-| [إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه](./show-hide-bookmarked-content/) | تعرف على كيفية إظهار أو إخفاء محتوى الإشارات المرجعية باستخدام Aspose.Words for .NET. |
-| [فك الإشارات المرجعية في الصف](./untangle-row-bookmarks/) | تعرف على كيفية فك تشابك الإشارات المرجعية للصفوف المتداخلة لإزالة صفوف معينة دون التأثير على الإشارات المرجعية الأخرى. |
-| [فك](./untangle/) | تعرف على كيفية فك تشابك الإشارات المرجعية المتداخلة في صفوف الجدول المجاورة باستخدام Aspose.Words for .NET. |
-| [حذف الصف حسب الإشارة المرجعية](./delete-row-by-bookmark/) | تعرف على كيفية حذف صف جدول بناءً على إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET. |
+| [Accéder aux signets](./access-bookmarks/) | Découvrez comment accéder aux signets dans un document Word à l'aide d'Aspose.Words pour .NET. |
+| [Mettre à jour les données des signets](./update-bookmark-data/) | Guide étape par étape pour expliquer le code source C # de la fonctionnalité de mise à jour des données de signet Aspose.Words pour .NET. |
+| [Colonnes du tableau des signets](./bookmark-table-columns/) | Apprenez à ajouter un signet à une colonne de tableau dans un document Word à l'aide d'Aspose.Words pour .NET. |
+| [Copier le texte marqué d'un signet](./copy-bookmarked-text/) | Apprenez à copier le texte d'un signet d'un document source vers un autre document à l'aide d'Aspose.Words pour .NET. |
+| [Ajouter le texte marqué d'un signet](./append-bookmarked-text/) | Apprenez à ajouter du texte à partir d'un signet dans un document Word à l'aide d'Aspose.Words pour .NET. |
+| [Créer un signet](./create-bookmark/) | Apprenez à créer des signets dans un document et à spécifier les niveaux d'aperçu des signets dans un PDF à l'aide d'Aspose.Words pour .NET. |
+| [Afficher Masquer les signets](./show-hide-bookmarks/) | Découvrez comment afficher ou masquer un signet spécifique dans un document à l'aide d'Aspose.Words pour .NET. |
+| [Afficher Masquer le contenu marqué d'un signet](./show-hide-bookmarked-content/) | Découvrez comment afficher ou masquer le contenu des signets à l'aide d'Aspose.Words pour .NET. |
+| [Démêler les signets de ligne](./untangle-row-bookmarks/) | Découvrez comment démêler les signets de ligne imbriqués pour supprimer des lignes spécifiques sans affecter les autres signets. |
+| [Démêler](./untangle/) | Apprenez à démêler les signets imbriqués dans les lignes de tableau adjacentes à l'aide d'Aspose.Words pour .NET. |
+| [Supprimer la ligne par signet](./delete-row-by-bookmark/) | Découvrez comment supprimer une ligne de tableau en fonction d'un signet spécifique dans un document à l'aide d'Aspose.Words pour .NET. |

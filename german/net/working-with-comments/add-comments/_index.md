@@ -1,21 +1,21 @@
 ---
-title: أضف التعليقات
-linktitle: أضف التعليقات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة تعليقات إلى مستندات Word باستخدام Aspose.Words for .NET.
+title: Füge Kommentare hinzu
+linktitle: Füge Kommentare hinzu
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Kommentare zu Word-Dokumenten hinzufügen.
 type: docs
 weight: 10
 url: /de/net/working-with-comments/add-comments/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إضافة تعليقات إلى مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إدراج التعليقات وتخصيص محتواها في مستنداتك.
+In diesem umfassenden Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Kommentare zu einem Word-Dokument hinzufügen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieses Leitfadens werden Sie in der Lage sein, Kommentare einzufügen und deren Inhalt in Ihren Dokumenten anzupassen.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Schritt 1: Erstellen Sie ein neues Dokument und einen neuen DocumentBuilder
+Erstellen Sie zunächst ein neues Dokument mit der Document-Klasse und initialisieren Sie ein DocumentBuilder-Objekt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,42 +23,42 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: إضافة محتوى إلى المستند
-بعد ذلك ، أضف المحتوى المطلوب إلى المستند باستخدام كائن DocumentBuilder. في هذا المثال ، نضيف بعض النصوص:
+## Schritt 2: Inhalte zum Dokument hinzufügen
+Fügen Sie als Nächstes mithilfe des DocumentBuilder-Objekts den gewünschten Inhalt zum Dokument hinzu. In diesem Beispiel fügen wir etwas Text hinzu:
 
 ```csharp
 builder.Write("Some text is added.");
 ```
 
-## الخطوة 3: قم بإنشاء تعليق وإضافة محتويات
-لإضافة تعليق ، قم بإنشاء مثيل للفئة Comment ، وتمرير كائن Document ، واسم المؤلف ، والأحرف الأولى للمؤلف ، والتاريخ الحالي:
+## Schritt 3: Erstellen Sie einen Kommentar und fügen Sie Inhalte hinzu
+Um einen Kommentar hinzuzufügen, erstellen Sie eine Instanz der Comment-Klasse und übergeben Sie das Document-Objekt, den Namen des Autors, die Initialen des Autors und das aktuelle Datum:
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-بعد ذلك ، قم بإلحاق التعليق بالفقرة الحالية:
+Als nächstes hängen Sie den Kommentar an den aktuellen Absatz an:
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
 ```
 
-أضف محتويات إلى التعليق ، مثل فقرة ونص:
+Fügen Sie dem Kommentar Inhalte hinzu, z. B. einen Absatz und Text:
 
 ```csharp
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
-## الخطوة 4: احفظ المستند
-بعد إضافة التعليق ومحتوياته ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Schritt 4: Speichern Sie das Dokument
+Nachdem Sie den Kommentar und seinen Inhalt hinzugefügt haben, speichern Sie das Dokument mit der Save-Methode der Document-Klasse in einer Datei:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 ```
 
-## مثال كود المصدر لإضافة تعليقات باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإضافة التعليقات باستخدام Aspose.Words for .NET:
+## Beispielquellcode für das Hinzufügen von Kommentaren mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode zum Hinzufügen von Kommentaren mit Aspose.Words für .NET:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -76,7 +76,7 @@ comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إضافة تعليقات إلى مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إدراج التعليقات وتخصيص محتواها في مستنداتك.
+## Abschluss
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET Kommentare zu einem Word-Dokument hinzufügen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie jetzt Kommentare einfügen und deren Inhalt in Ihren Dokumenten anpassen.
 
-التعليقات مفيدة للتعاون أو توفير معلومات إضافية أو تدوين الملاحظات داخل المستند. جرب أسماء مؤلفين مختلفة وأحرف أولى ومحتويات تعليق لتلبية متطلباتك المحددة.
+Kommentare sind nützlich für die Zusammenarbeit, für die Bereitstellung zusätzlicher Informationen oder für Notizen innerhalb eines Dokuments. Experimentieren Sie mit verschiedenen Autorennamen, Initialen und Kommentarinhalten, um Ihren spezifischen Anforderungen gerecht zu werden.

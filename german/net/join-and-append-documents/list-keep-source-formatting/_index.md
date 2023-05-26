@@ -1,77 +1,77 @@
 ---
-title: قائمة الاحتفاظ بتنسيق المصدر
-linktitle: قائمة الاحتفاظ بتنسيق المصدر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الحفاظ على تنسيق القائمة أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Liste Quellformatierung beibehalten
+linktitle: Liste Quellformatierung beibehalten
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie die Listenformatierung beim Zusammenfügen und Anhängen von Word-Dokumenten mit Aspose.Words für .NET beibehalten.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/list-keep-source-formatting/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة قائمة الاحتفاظ بتنسيق المصدر في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها مع الاحتفاظ بتنسيق المصدر للقوائم.
+Dieses Tutorial führt Sie durch den Prozess der Verwendung der Funktion „List Keep Source Formatting“ von Aspose.Words für .NET. Mit dieser Funktion können Sie Word-Dokumente zusammenfügen und anhängen und dabei die Quellformatierung der Listen beibehalten.
 
-## المتطلبات الأساسية
+## Voraussetzungen
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words für .NET installiert. Sie können es von der Aspose-Website herunterladen oder über NuGet installieren.
+2. Visual Studio oder eine andere C#-Entwicklungsumgebung.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Schritt 1: Initialisieren Sie die Dokumentverzeichnisse
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir` Variable für den Pfad, in dem sich Ihre Dokumente befinden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Schritt 2: Laden Sie die Quell- und Zieldokumente
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Als nächstes müssen Sie die Quell- und Zieldokumente mit Aspose.Words laden`Document` Klasse. Aktualisieren Sie die Dateinamen im`Document` Konstruktor entsprechend Ihren Dokumentnamen.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## الخطوة 3: اضبط المستند المصدر على التدفق المستمر
+## Schritt 3: Stellen Sie das Quelldokument auf „Kontinuierlicher Fluss“ ein
 
- للتأكد من أن المحتوى من المستند المصدر يتدفق باستمرار عند إلحاقه بالمستند الوجهة ، تحتاج إلى تعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.Continuous`.
+ Um sicherzustellen, dass der Inhalt des Quelldokuments kontinuierlich fließt, wenn er an das Zieldokument angehängt wird, müssen Sie Folgendes festlegen`SectionStart` Eigenschaft des ersten Abschnitts im Quelldokument`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بمستند الوجهة
+## Schritt 4: Hängen Sie das Quelldokument an das Zieldokument an
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting`تضمن المعلمة الحفاظ على تنسيق المصدر ، بما في ذلك تنسيق القوائم ، أثناء عملية الإلحاق.
+ Jetzt können Sie das Quelldokument mit an das Zieldokument anhängen`AppendDocument` Methode der`Document` Klasse. Der`ImportFormatMode.KeepSourceFormatting`Der Parameter stellt sicher, dass die Quellformatierung, einschließlich der Formatierung von Listen, während des Anhängevorgangs erhalten bleibt.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند النهائي
+## Schritt 5: Speichern Sie das endgültige Dokument
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة قائمة الاحتفاظ بتنسيق المصدر باستخدام ملحق`Save` طريقة`Document` فصل.
+ Speichern Sie abschließend das zusammengeführte Dokument mit aktivierter Funktion „Quellenformatierung beibehalten“ mithilfe von`Save` Methode der`Document` Klasse.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### مثال على شفرة المصدر لـ List Keep Source Formatting باستخدام Aspose.Words for .NET 
+### Beispielquellcode für List Keep Source Formatting mit Aspose.Words für .NET 
 
-إليك شفرة المصدر الكاملة لميزة "الاحتفاظ بتنسيق المصدر" في قائمة C # باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Quellcode für die Funktion „List Keep Source Formatting“ in C# mit Aspose.Words für .NET:
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// قم بإلحاق محتوى المستند بحيث يتدفق باستمرار.
+	// Hängen Sie den Inhalt des Dokuments an, damit es kontinuierlich fließt.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة قائمة الاحتفاظ بتنسيق المصدر باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الاحتفاظ بتنسيق قائمة المستند المصدر.
+Das ist es! Sie haben die Funktion „List Keep Source Formatting“ mit Aspose.Words für .NET erfolgreich implementiert. Das endgültige Dokument enthält den zusammengeführten Inhalt, wobei die Listenformatierung des Quelldokuments erhalten bleibt.

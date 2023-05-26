@@ -1,46 +1,46 @@
 ---
-title: تسمية بيانات المخطط
-linktitle: تسمية بيانات المخطط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة تسميات البيانات وتخصيصها في مخطط باستخدام Aspose.Words for .NET لتوفير معلومات إضافية حول نقاط البيانات.
+title: Etiqueta de datos del gráfico
+linktitle: Etiqueta de datos del gráfico
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a agregar y personalizar etiquetas de datos en un gráfico usando Aspose.Words para .NET para proporcionar información adicional sobre puntos de datos.
 type: docs
 weight: 10
 url: /es/net/programming-with-charts/chart-data-label/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية إضافة تسميات البيانات وتخصيصها في مخطط باستخدام Aspose.Words for .NET. توفر تسميات البيانات معلومات إضافية حول نقاط البيانات في مخطط.
+Este tutorial explica cómo agregar y personalizar etiquetas de datos en un gráfico usando Aspose.Words para .NET. Las etiquetas de datos proporcionan información adicional sobre los puntos de datos en un gráfico.
 
-## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
+## requisitos previos
+Para seguir este tutorial, necesita tener lo siguiente:
 
-- تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- Aspose.Words para la biblioteca .NET instalada.
+- Conocimientos básicos de C# y trabajo con documentos de Word.
 
-## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+## Paso 1: configurar el directorio de documentos
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد و DocumentBuilder
- قم بإنشاء مثيل جديد لملف`Document` فئة وأ`DocumentBuilder` كائن للعمل مع المستند.
+## Paso 2: Cree un nuevo documento y DocumentBuilder
+ Crear una nueva instancia de la`Document` clase y un`DocumentBuilder` objeto de trabajar con el documento.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدراج وتكوين مخطط
- أدخل مخططًا في المستند باستخدام ملف`InsertChart` طريقة`DocumentBuilder` هدف. قم بتعيين نوع الرسم البياني والأبعاد المطلوبة.
+## Paso 3: Insertar y configurar un gráfico
+ Inserte un gráfico en el documento usando el`InsertChart` metodo de la`DocumentBuilder` objeto. Establezca el tipo de gráfico y las dimensiones deseadas.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 4: تخصيص تسميات البيانات
-قم بالوصول إلى مجموعة تسميات البيانات لسلسلة المخطط وتعديل الخصائص المختلفة لتخصيص مظهر تسميات البيانات.
+## Paso 4: personalizar las etiquetas de datos
+Acceda a la colección de etiquetas de datos de la serie de gráficos y modifique varias propiedades para personalizar la apariencia de las etiquetas de datos.
 
 ```csharp
 ChartSeries series0 = shape.Chart.Series[0];
@@ -54,17 +54,17 @@ labels.ShowValue = true;
 labels.Separator = "/";
 ```
 
-## الخطوة 5: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة. قم بتوفير اسم الملف المطلوب بامتداد الملف المناسب. في هذا المثال ، نحفظ المستند باسم "WorkingWithCharts.ChartDataLabel.docx".
+## Paso 5: Guarde el documento
+ Guarde el documento en el directorio especificado usando el`Save` método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithCharts.ChartDataLabel.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ```
 
-### مثال على شفرة المصدر لتسمية بيانات المخطط باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Chart Data Label usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -74,9 +74,9 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 	ChartSeries series0 = shape.Chart.Series[0];
 	ChartDataLabelCollection labels = series0.DataLabels;
 	labels.ShowLegendKey = true;
-	//بشكل افتراضي ، عند إضافة تسميات البيانات إلى نقاط البيانات في مخطط دائري ، يتم عرض الخطوط السابقة لتسميات البيانات
-	// تم وضعه بعيدًا عن نهاية نقاط البيانات. تنشئ خطوط القائد اتصالاً مرئيًا بين تسمية البيانات و
-	// نقطة البيانات المقابلة.
+	//De manera predeterminada, cuando agrega etiquetas de datos a los puntos de datos en un gráfico circular, se muestran líneas guía para las etiquetas de datos que son
+	// posicionado lejos del final de los puntos de datos. Las líneas directrices crean una conexión visual entre una etiqueta de datos y su
+	// punto de datos correspondiente.
 	labels.ShowLeaderLines = true;
 	labels.ShowCategoryName = false;
 	labels.ShowPercentage = false;
@@ -87,4 +87,4 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 	doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إضافة تسميات البيانات وتخصيصها في مخطط باستخدام Aspose.Words for .NET.
+¡Eso es todo! Ha agregado y personalizado con éxito etiquetas de datos en un gráfico utilizando Aspose.Words para .NET.

@@ -1,29 +1,29 @@
 ---
-title: الانتقال إلى القسم
-linktitle: الانتقال إلى القسم
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لاستخدام Move To Section في Aspose.Words for .NET يعالج الأقسام والفقرات في مستندات Word.
+title: 移动到部分
+linktitle: 移动到部分
+second_title: Aspose.Words for .NET API 参考
+description: 在 Aspose.Words for .NET 中使用移动到部分的分步指南操作 Word 文档中的部分和段落。
 type: docs
 weight: 10
 url: /zh/net/add-content-using-documentbuilder/move-to-section/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة Move To Section في Aspose.Words for .NET خطوة بخطوة باستخدام كود المصدر C # المقدم. تتيح لك هذه الميزة التنقل والتعامل مع الأقسام المختلفة داخل مستند Word. اتبع الخطوات أدناه لدمج هذه الوظيفة في تطبيقك.
+在本示例中，我们将使用提供的 C# 源代码逐步指导您如何使用 Aspose.Words for .NET 的移动到部分功能。此功能允许您在 Word 文档中导航和操作不同的部分。按照以下步骤将此功能集成到您的应用程序中。
 
-## الخطوة 1: قم بإنشاء مستند جديد وإضافة قسم
+## 第 1 步：创建一个新文档并添加一个部分
 
-أولاً ، نحتاج إلى إنشاء مستند جديد وإضافة قسم إليه. استخدم الكود التالي لإنجاز هذه الخطوة:
+首先，我们需要创建一个新文档并向其中添加一个部分。使用以下代码完成此步骤：
 
 ```csharp
 Document doc = new Document();
 doc.AppendChild(new Section(doc));
 ```
 
-ينشئ هذا الرمز مستندًا فارغًا جديدًا ويضيف قسمًا إلى هذا المستند.
+此代码创建一个新的空文档并向该文档添加一个部分。
 
-## الخطوة 2: انقل DocumentBuilder إلى القسم الثاني وأضف نصًا
+## 第 2 步：将 DocumentBuilder 移至第二部分并添加文本
 
-بعد ذلك ، نحتاج إلى نقل DocumentBuilder إلى القسم الثاني من المستند وإضافة بعض النص هناك. استخدم الكود التالي لإجراء هذه الخطوة:
+接下来，我们需要将 DocumentBuilder 移动到文档的第二部分并在那里添加一些文本。使用以下代码执行此步骤：
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -31,11 +31,11 @@ builder. MoveToSection(1);
 builder.Writeln("Text added to the 2nd section.");
 ```
 
-ينشئ هذا الرمز DocumentBuilder من المستند الموجود ، ثم ينقل المؤشر من DocumentBuilder إلى القسم الثاني من المستند. أخيرًا ، يضيف النص المحدد إلى هذا القسم.
+此代码从现有文档创建一个 DocumentBuilder，然后将光标从 DocumentBuilder 移动到文档的第二部分。最后，它将指定的文本添加到此部分。
 
-## الخطوة 3: تحميل مستند بالفقرات الموجودة
+## 第 3 步：加载包含现有段落的文档
 
-إذا كنت تريد العمل مع مستند موجود يحتوي على فقرات ، فيمكنك تحميل هذا المستند باستخدام الكود التالي:
+如果要使用包含段落的现有文档，可以使用以下代码加载该文档：
 
 ```csharp
 doc = new Document(MyDir + "Paragraphs.docx");
@@ -43,21 +43,21 @@ ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 Assert.AreEqual(22, paragraphs.Count);
 ```
 
-يقوم هذا الرمز بتحميل المستند المحدد (استبدل "MyDir +" Paragraphs.docx“”بالمسار الفعلي إلى المستند الخاص بك) والوصول إلى مجموعة الفقرات من القسم الأول من المستند. الخط`Assert.AreEqual(22, paragraphs.Count);` يتحقق من أن المستند يحتوي على 22 فقرة.
+此代码加载指定文档（替换“MyDir +”Paragraphs.docx“”使用文档的实际路径）并访问文档第一部分的段落集合。线`Assert.AreEqual(22, paragraphs.Count);`检查文档是否包含 22 个段落。
 
-## الخطوة 4: إنشاء DocumentBuilder لمستند
+## 第 4 步：为文档创建一个 DocumentBuilder
 
-يمكنك إنشاء مؤشر DocumentBuilder على فقرة معينة باستخدام المؤشرات الموضعية.
+您可以使用位置索引将 DocumentBuilder 光标创建到特定段落。
 
 ```csharp
 builder = new DocumentBuilder(doc);
 Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
-## الخطوة 5: حرك المؤشر إلى فقرة معينة
+## 第 5 步：将光标移动到特定段落
 
 
-يمكنك تحريك مؤشر DocumentBuilder إلى فقرة معينة باستخدام المؤشرات الموضعية. هيريس كيفية القيام بذلك:
+您可以使用位置索引将 DocumentBuilder 光标移动到特定段落。方法如下：
 
 ```csharp
 builder. MoveToParagraph(2, 10);
@@ -66,9 +66,9 @@ builder.Writeln("This is a new third paragraph.");
 Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
-يقوم هذا الرمز بنقل مؤشر DocumentBuilder إلى الفقرة الثالثة من القسم الثاني (الفقرة في الفهرس 2) وإلى الموضع 10. ثم يضيف فقرة جديدة مع بعض النص ويتحقق من وضع المؤشر بشكل جيد على هذه الفقرة الجديدة.
+此代码将 DocumentBuilder 的光标移动到第二部分的第三段（索引为 2 的段落）和位置 10。然后它添加一个包含一些文本的新段落并检查光标是否正确定位在这个新段落上。
 
-### مثال على شفرة المصدر لـ Move To Move To Section باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 的 Move To Move To Section 示例源代码
 
 ```csharp
 
@@ -76,22 +76,22 @@ Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 	Document doc = new Document();
 	doc.AppendChild(new Section(doc));
 
-	// انقل DocumentBuilder إلى القسم الثاني وأضف نصًا.
+	//将 DocumentBuilder 移动到第二部分并添加文本。
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.MoveToSection(1);
 	builder.Writeln("Text added to the 2nd section.");
 
-	// إنشاء وثيقة مع فقرات.
+	//创建带段落的文档。
 	doc = new Document(MyDir + "Paragraphs.docx");
 	ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 	Assert.AreEqual(22, paragraphs.Count);
 
-	//عندما نقوم بإنشاء DocumentBuilder لمستند ، يكون المؤشر في بداية المستند افتراضيًا ،
-	// وسيتم إضافة أي محتوى مضاف بواسطة DocumentBuilder إلى المستند.
+	//当我们为文档创建一个 DocumentBuilder 时，它的光标默认位于文档的最开头，
+	// DocumentBuilder 添加的任何内容都将添加到文档中。
 	builder = new DocumentBuilder(doc);
 	Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 
-	// يمكنك تحريك المؤشر إلى أي موضع في الفقرة.
+	//您可以将光标移动到段落中的任何位置。
 	builder.MoveToParagraph(2, 10);
 	Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
 	builder.Writeln("This is a new third paragraph. ");
@@ -100,5 +100,5 @@ Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
         
 ```
 
-هذا كل شئ ! لقد فهمت الآن كيفية استخدام وظيفة الانتقال إلى قسم Aspose.Words for .NET باستخدام كود المصدر المقدم. يمكنك الآن دمج هذه الوظيفة في التطبيق الخاص بك ومعالجة أقسام وفقرات مستندات Word بشكل ديناميكي.
+就这样 ！您现在已经了解了如何使用提供的源代码使用 Aspose.Words for .NET 的移动到部分功能。您现在可以将此功能集成到您自己的应用程序中，并动态地操作 Word 文档的部分和段落。
 

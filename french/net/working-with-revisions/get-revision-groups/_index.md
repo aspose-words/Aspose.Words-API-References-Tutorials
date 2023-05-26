@@ -1,26 +1,26 @@
 ---
-title: احصل على مجموعات المراجعة
-linktitle: احصل على مجموعات المراجعة
-second_title: Aspose.Words لمراجع .NET API
-description: احصل على مجموعات المراجعة في مستند Word باستخدام Aspose.Words for .NET.
+title: Obtenir des groupes de révision
+linktitle: Obtenir des groupes de révision
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Obtenez des groupes de révision dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-revisions/get-revision-groups/
 ---
 
-في هذا الدليل التدريجي ، سنخبرك بكيفية الحصول على مجموعات المراجعة في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+Dans ce guide étape par étape, nous allons vous expliquer comment obtenir les groupes de révision dans un document Word à l'aide d'Aspose.Words pour .NET. Nous vous fournirons le code source complet et vous montrerons comment formater la sortie Markdown.
 
-## الخطوة 1: تحميل المستند
+## Étape 1 : Chargement du document
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+La première étape consiste à télécharger le document contenant les révisions.
 
 ```csharp
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة 2: تصفح مجموعات المراجعة
+## Étape 2 : Parcourir les groupes de révision
 
-بعد ذلك ، سنقوم بعمل حلقة عبر مجموعات المراجعة الموجودة في المستند ونعرض تفاصيلها ، مثل المؤلف ونوع المراجعة والنص المنقح.
+Ensuite, nous allons parcourir les groupes de révision présents dans le document et afficher leurs détails, tels que l'auteur, le type de révision et le texte révisé.
 
 ```csharp
 foreach(RevisionGroup group in doc.Revisions.Groups)
@@ -31,9 +31,9 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 ```
 
 
-### مثال على شفرة المصدر للحصول على مجموعات المراجعة باستخدام Aspose.Words for .NET
+### Exemple de code source pour Get Revision Groups en utilisant Aspose.Words pour .NET
 
-إليك التعليمات البرمجية المصدر الكاملة للحصول على مجموعات المراجعة في مستند باستخدام Aspose.Words for .NET:
+Voici le code source complet pour obtenir les groupes de révision dans un document utilisant Aspose.Words pour .NET :
 
 ```csharp
 

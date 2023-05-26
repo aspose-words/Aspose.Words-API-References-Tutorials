@@ -1,77 +1,77 @@
 ---
-title: إزالة فواصل المقاطع
-linktitle: إزالة فواصل المقاطع
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة فواصل الأقسام في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تخلص بشكل فعال من فواصل المقاطع التي يمكن أن تعطل تنسيق المستند.
+title: Supprimer les sauts de section
+linktitle: Supprimer les sauts de section
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Découvrez comment supprimer des sauts de section dans un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. Éliminez efficacement les sauts de section qui peuvent perturber la mise en forme de votre document.
 type: docs
 weight: 10
 url: /fr/net/remove-content/remove-section-breaks/
 ---
 
-# اكتب دليل خطوة بخطوة لإزالة فواصل الأقسام في Aspose.Words for .NET
+# Écrire un guide étape par étape pour supprimer les sauts de section dans Aspose.Words pour .NET
 
-## مقدمة
-في هذا البرنامج التعليمي ، سنرشدك خلال عملية إزالة فواصل الأقسام من مستند Word باستخدام مكتبة Aspose.Words for .NET. يمكن أن تتسبب فواصل الأقسام أحيانًا في حدوث مشكلات في التنسيق أو تعطيل تدفق المستند ، وسيساعدك مقتطف الشفرة هذا في التخلص منها بشكل فعال. سنقدم لك دليلًا تفصيليًا لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+## Introduction
+Dans ce didacticiel, nous vous guiderons tout au long du processus de suppression des sauts de section d'un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. Les sauts de section peuvent parfois causer des problèmes de formatage ou perturber le flux de votre document, et cet extrait de code vous aidera à les éliminer efficacement. Nous vous fournirons un guide étape par étape pour vous aider à comprendre et à implémenter le code dans votre propre projet .NET.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت Aspose.Words for .NET library في مشروعك
-- مستند Word يحتوي على فواصل مقطعية تريد إزالتها
+## Conditions préalables
+Avant de commencer, assurez-vous que les conditions préalables suivantes sont en place :
+- Une connaissance pratique du langage de programmation C#
+- Bibliothèque Aspose.Words pour .NET installée dans votre projet
+- Un document Word contenant des sauts de section que vous souhaitez supprimer
 
-## الخطوة 1: قم بتعيين دليل المستندات
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في مقتطف التعليمات البرمجية مع مسار الدليل المناسب.
+## Étape 1 : Définir le répertoire de documents
+ Tout d'abord, vous devez définir le chemin du répertoire vers l'emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans l'extrait de code avec le chemin de répertoire approprié.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فئة باستخدام`Load` طريقة.
+## Étape 2 : Charger le document
+ Ensuite, nous allons charger le document Word dans une instance du`Document` classe à l'aide de`Load` méthode.
 
 ```csharp
-//قم بتحميل المستند
+//Charger le document
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## الخطوة 3: إزالة فواصل الأقسام
-لإزالة الفواصل المقطعية ، سنقوم بالمرور عبر جميع الأقسام بدءًا من القسم الذي يسبق القسم الأخير وانتقل إلى القسم الأول. داخل الحلقة ، سنقوم بربط محتوى كل قسم ببداية القسم الأخير ، ثم نقوم بإزالة المقطع المنسوخ.
+## Étape 3 : Supprimer les sauts de section
+Pour supprimer les sauts de section, nous allons parcourir toutes les sections en commençant par la section qui précède la dernière et en passant à la première section. Dans la boucle, nous allons ajouter le contenu de chaque section au début de la dernière section, puis supprimer la section copiée.
 
 ```csharp
-// قم بالتكرار خلال جميع الأقسام بدءًا من القسم الذي يسبق القسم الأخير وانتقل إلى القسم الأول.
+// Parcourez toutes les sections en commençant par la section qui précède la dernière et en passant à la première section.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-    // انسخ محتوى القسم الحالي إلى بداية القسم الأخير.
+    // Copiez le contenu de la section actuelle au début de la dernière section.
     doc.LastSection.PrependContent(doc.Sections[i]);
-    // قم بإزالة المقطع المنسوخ.
+    // Supprimez la section copiée.
     doc.Sections[i].Remove();
 }
 ```
 
-## الخطوة 4: احفظ المستند المعدل
- أخيرًا ، سنقوم بحفظ المستند المعدل باستخدام امتداد`Save` طريقة. حدد مسار ملف الإخراج المطلوب والتنسيق (على سبيل المثال ، DOCX) للمستند المعدل.
+## Étape 4 : Enregistrer le document modifié
+ Enfin, nous enregistrerons le document modifié à l'aide de la`Save` méthode. Spécifiez le chemin et le format du fichier de sortie souhaité (par exemple, DOCX) pour le document modifié.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-### نموذج التعليمات البرمجية المصدر لإزالة فواصل الأقسام باستخدام Aspose.Words for .NET
+### Exemple de code source pour supprimer les sauts de section à l'aide de Aspose.Words pour .NET
  
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//قم بتحميل المستند
+//Charger le document
 Document doc = new Document(dataDir + "your-document.docx");
 
-// قم بالتكرار خلال جميع الأقسام بدءًا من القسم الذي يسبق القسم الأخير وانتقل إلى القسم الأول.
+// Parcourez toutes les sections en commençant par la section qui précède la dernière et en passant à la première section.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-	// انسخ محتوى القسم الحالي إلى بداية القسم الأخير.
+	// Copiez le contenu de la section actuelle au début de la dernière section.
 	doc.LastSection.PrependContent(doc.Sections[i]);
-	// قم بإزالة المقطع المنسوخ.
+	// Supprimez la section copiée.
 	doc.Sections[i].Remove();
 }
 
@@ -79,6 +79,6 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
         
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، قمنا بعرض دليل تفصيلي خطوة بخطوة لإزالة فواصل الأقسام من مستند Word باستخدام Aspose.Words مكتبة .NET. باتباع مقتطف الشفرة والإرشادات المقدمة ، يمكنك بسهولة التخلص من فواصل المقاطع وضمان تخطيط سلس للمستند. تذكر أن تقوم بتعديل مسار الدليل وأسماء الملفات وفقًا لمتطلباتك الخاصة.
+## Conclusion
+Dans ce didacticiel, nous avons présenté un guide étape par étape pour supprimer les sauts de section d'un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. En suivant l'extrait de code et les instructions fournis, vous pouvez facilement éliminer les sauts de section et assurer une mise en page transparente du document. N'oubliez pas d'ajuster le chemin du répertoire et les noms de fichiers en fonction de vos besoins spécifiques.
 

@@ -1,59 +1,59 @@
 ---
-title: إزالة التعليقات في ملف PDF
-linktitle: إزالة التعليقات في ملف PDF
-second_title: Aspose.Words لمراجع .NET API
-description: قم بإزالة التعليقات في ملف PDF باستخدام Aspose.Words for .NET.
+title: 删除 PDF 中的注释
+linktitle: 删除 PDF 中的注释
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 删除 PDF 文件中的注释。
 type: docs
 weight: 10
 url: /zh/net/working-with-revisions/remove-comments-in-pdf/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سنخبرك بكيفية إزالة التعليقات في ملف PDF باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق إخراج تخفيض السعر.
+在本分步指南中，我们将告诉您如何使用 Aspose.Words for .NET 删除 PDF 文件中的注释。我们将为您提供完整的源代码，并向您展示如何格式化降价输出。
 
-## الخطوة 1: تحميل المستند
+## 第 1 步：装入文档
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على التعليقات.
+第一步是加载包含评论的文档。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## الخطوة الثانية: إخفاء التعليقات في ملف PDF
+## 第 2 步：隐藏 PDF 中的评论
 
-سنقوم بتكوين خيار التخطيط لإخفاء التعليقات عند إنشاء ملف PDF.
+我们将配置布局选项以在生成 PDF 时隐藏评论。
 
 ```csharp
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 ```
 
-## الخطوة 3: احفظ المستند كملف PDF
+## 第 3 步：将文档另存为 PDF
 
-أخيرًا ، سنحفظ المستند بتنسيق PDF عن طريق حذف التعليقات.
+最后，我们将通过删除注释将文档保存为 PDF 格式。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 ```
 
-## تنسيقات إخراج Markdown
+## 降价输出格式
 
-يمكن تنسيق الإخراج في تخفيض السعر لتحسين إمكانية القراءة. على سبيل المثال :
+可以将输出格式化为 markdown 以提高可读性。例如 ：
 
 ```markdown
 - Comments are hidden in the generated PDF.
 ```
 
-### مثال على شفرة المصدر لـ Remove Comments In Pdf باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 删除 Pdf 中的注释的示例源代码
 
-إليك التعليمات البرمجية المصدر الكاملة لإزالة التعليقات في ملف PDF باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 删除 PDF 文件中注释的完整源代码：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Revisions.docx");
 
-	// إخفاء التعليقات في PDF.
+	//隐藏 PDF 中的注释。
 	doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 
 	doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");

@@ -1,71 +1,71 @@
 ---
-title: الانضمام المستمر
-linktitle: الانضمام المستمر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ربط وثيقتين بشكل مستمر مع الحفاظ على التنسيق باستخدام Aspose.Words for .NET.
+title: Присоединяйтесь к непрерывному
+linktitle: Присоединяйтесь к непрерывному
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как непрерывно соединять два документа с сохранением форматирования с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/join-and-append-documents/join-continuous/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية الانضمام إلى وثيقتين بشكل مستمر باستخدام Aspose.Words for .NET. يوضح كود المصدر المقدم كيفية إلحاق مستند بنهاية مستند آخر مع الحفاظ على التنسيق الأصلي.
+В этом руководстве объясняется, как непрерывно соединять два документа с помощью Aspose.Words для .NET. Предоставленный исходный код демонстрирует, как добавить документ в конец другого документа, сохранив при этом исходное форматирование.
 
-## الخطوة 1: قم بإعداد المشروع
+## Шаг 1: Настройте проект
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Убедитесь, что у вас есть следующие предварительные условия:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Установлена библиотека Aspose.Words for .NET. Вы можете загрузить его с официального веб-сайта Aspose или использовать менеджер пакетов NuGet для его установки.
+- Путь к каталогу документов, в котором находятся исходный и конечный документы.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Шаг 2. Откройте исходный и конечный документы
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Откройте исходный и конечный документы с помощью`Document` конструктор класса. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к вашему каталогу документов.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إعداد بداية القسم المستمر
+## Шаг 3. Настройте начало непрерывного участка
 
- لجعل المستند المصدر يظهر مباشرة بعد محتوى المستند الوجهة ، قم بتعيين`SectionStart` من القسم الأول في المستند المصدر إلى`SectionStart.Continuous`.
+ Чтобы исходный документ отображался сразу после содержимого целевого документа, установите`SectionStart` свойство первого раздела в исходном документе на`SectionStart.Continuous`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر
+## Шаг 4: Добавьте исходный документ
 
- قم بإلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. اضبط وضع تنسيق الاستيراد على`ImportFormatMode.KeepSourceFormatting`للاحتفاظ بالأنماط الأصلية من المستند المصدر.
+ Добавьте исходный документ к целевому документу, используя`AppendDocument` метод`Document` сорт. Установите режим формата импорта на`ImportFormatMode.KeepSourceFormatting`чтобы сохранить исходные стили из исходного документа.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند المعدل
+## Шаг 5: Сохраните измененный документ
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Наконец, сохраните измененный целевой документ, используя`Save` метод`Document` объект.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ```
 
-هذا يكمل تنفيذ الانضمام إلى وثيقتين بشكل مستمر باستخدام Aspose.Words لـ .NET.
+На этом реализация непрерывного объединения двух документов с использованием Aspose.Words для .NET завершена.
 
-### مثال على شفرة المصدر لـ Join Continuous using Aspose.Words for .NET 
+### Пример исходного кода для непрерывного соединения с использованием Aspose.Words для .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// اجعل المستند يظهر مباشرة بعد محتوى المستندات الوجهة.
+	// Сделайте так, чтобы документ отображался сразу после содержимого целевого документа.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// قم بإلحاق المستند المصدر باستخدام الأنماط الأصلية الموجودة في المستند المصدر.
+	// Добавьте исходный документ, используя оригинальные стили, найденные в исходном документе.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ```

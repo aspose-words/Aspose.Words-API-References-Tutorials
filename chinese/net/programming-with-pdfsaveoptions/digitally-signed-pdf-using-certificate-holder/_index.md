@@ -1,18 +1,18 @@
 ---
-title: ملف PDF موقع رقميًا باستخدام حامل الشهادة
-linktitle: ملف PDF موقع رقميًا باستخدام حامل الشهادة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية توقيع ملف PDF رقميًا باستخدام حامل شهادة مع Aspose.Words for .NET.
+title: 使用证书持有者对 PDF 进行数字签名
+linktitle: 使用证书持有者对 PDF 进行数字签名
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用带有 Aspose.Words for .NET 的证书持有者对 PDF 进行数字签名。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات إنشاء ملف PDF موقع رقميًا باستخدام شهادة مع Aspose.Words for .NET. يضيف التوقيع الرقمي طبقة من الأمان والتكامل إلى وثيقة PDF. اتبع الخطوات التالية:
+在本教程中，我们将引导您完成使用 Aspose.Words for .NET 证书创建数字签名 PDF 的步骤。数字签名为 PDF 文档增加了一层安全性和完整性。请按照以下步骤操作：
 
-## الخطوة 1: إنشاء المستند وإضافة المحتوى
+## 第 1 步：创建文档并添加内容
 
-ابدأ بإنشاء مثيل لفئة المستند:
+首先创建 Document 类的实例：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -20,19 +20,19 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أضف محتوى إلى المستند
+## 第 2 步：向文档添加内容
 
- ثم استخدم ملف`DocumentBuilder` لإضافة محتوى إلى المستند. على سبيل المثال ، لإضافة فقرة تحتوي على النص "Test Signed PDF" ، استخدم امتداد`Writeln` طريقة:
+然后使用`DocumentBuilder`向文档添加内容。例如，要添加包含文本“Test Signed PDF”的段落，请使用`Writeln`方法：
 
 ```csharp
 builder.Writeln("Test Signed PDF.");
 ```
 
-يمكنك إضافة عناصر محتوى أخرى حسب الحاجة.
+您可以根据需要添加其他内容项。
 
-## الخطوة 3: تعيين خيارات حفظ PDF
+## 第 3 步：设置 PDF 保存选项
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وحدد تفاصيل التوقيع الرقمي:
+创建 PdfSaveOptions 类的实例并指定数字签名详细信息：
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -43,27 +43,27 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-تأكد من تحديد المسار الصحيح لشهادتك وكلمة المرور المرتبطة بها. يمكنك أيضًا تخصيص سبب التوقيع وموقعه.
+请务必指定证书和关联密码的正确路径。您还可以自定义签名原因和位置。
 
-## الخطوة 4: احفظ المستند بتنسيق PDF موقّع رقميًا
+## 第 4 步：将文档另存为数字签名的 PDF
 
- استخدم ال`Save` طريقة لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ:
+使用`Save`通过指定保存选项将文档保存为 PDF 的方法：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF الموقع رقميًا.
+确保指定正确的路径以保存数字签名的 PDF。
 
-باتباع هذه الخطوات ، يمكنك بسهولة إنشاء ملف PDF موقّع رقميًا مع شهادة باستخدام Aspose.Words for .NET.
+按照这些步骤，您可以使用 Aspose.Words for .NET 轻松创建带有证书的数字签名 PDF。
 
-### مثال على شفرة المصدر لـ Pdf الموقّع رقميًا باستخدام حامل الشهادة باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 使用证书持有者对 Pdf 进行数字签名的示例源代码
 
-فيما يلي رمز المصدر الكامل لـ Pdf الموقّع رقميًا باستخدام حامل الشهادة من مستند باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 使用文档中的证书持有者对 Pdf 进行数字签名的完整源代码：
 
 ```csharp
 
-            // المسار إلى دليل المستندات.
+            //文档目录的路径。
 			string dataDir = "YOUR DOCUMENT DIRECTORY";
             Document doc = new Document();
             DocumentBuilder builder = new DocumentBuilder(doc);

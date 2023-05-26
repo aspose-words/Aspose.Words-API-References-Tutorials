@@ -1,55 +1,55 @@
 ---
-title: تحديث الحقول القذرة
-linktitle: تحديث الحقول القذرة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحميل مستند Word عن طريق تحديث الحقول غير النظيفة باستخدام Aspose.Words for .NET.
+title: Aggiorna campi sporchi
+linktitle: Aggiorna campi sporchi
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come caricare un documento Word aggiornando i campi sporchi con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/update-dirty-fields/
 ---
 
-عند العمل مع مستندات Word في تطبيق C # ، قد يكون من الضروري تحديث الحقول المتسخة لإظهار أحدث القيم. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحديث الحقول المتسخة عند تحميل المستندات باستخدام LoadOptions. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند عن طريق تحديث الحقول المتسخة باستخدام LoadOptions.
+Quando si lavora con documenti Word in un'applicazione C#, potrebbe essere necessario aggiornare i campi dirty per visualizzare i valori più recenti. Con la libreria Aspose.Words per .NET, puoi aggiornare facilmente i campi dirty al caricamento del documento utilizzando LoadOptions. In questa guida dettagliata, ti illustreremo come utilizzare Aspose.Words per il codice sorgente .NET C# per caricare un documento aggiornando i campi sporchi utilizzando LoadOptions.
 
-## فهم مكتبة Aspose.Words
+## Comprensione della libreria Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Prima di immergersi nel codice, è importante comprendere la libreria Aspose.Words per .NET. Aspose.Words è una potente libreria per creare, modificare, convertire e proteggere documenti Word in diverse piattaforme, incluso .NET. Offre molte funzionalità per la manipolazione dei documenti, come l'inserimento di testo, la modifica della formattazione, l'aggiunta di sezioni e molto altro.
 
-## تكوين خيارات التحميل
+## Configurazione delle opzioni di caricamento
 
-الخطوة الأولى هي تكوين خيارات التحميل لوثيقتنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. في حالتنا ، نحتاج إلى ضبط خاصية UpdateDirtyFields على "true" لتحديث الحقول المتسخة. هيريس كيفية القيام بذلك:
+Il primo passo è configurare le opzioni di caricamento per il nostro documento. Utilizzare la classe LoadOptions per specificare i parametri di caricamento. Nel nostro caso, dobbiamo impostare la proprietà UpdateDirtyFields su true per aggiornare i campi dirty. Ecco come farlo:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { UpdateDirtyFields = true };
 ```
 
-قمنا بإنشاء كائن LoadOptions جديد وقمنا بتعيين خاصية UpdateDirtyFields على "true" لتحديث الحقول المتسخة عند تحميل المستند.
+Creiamo un nuovo oggetto LoadOptions e impostiamo la proprietà UpdateDirtyFields su true per aggiornare i campi dirty durante il caricamento del documento.
 
-## تحميل وثيقة تحديث الحقول القذرة
+## Caricamento del documento che aggiorna i campi sporchi
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل المستند باستخدام فئة Document وتحديد خيارات التحميل. هنا مثال :
+Ora che abbiamo configurato le opzioni di caricamento, possiamo caricare il documento utilizzando la classe Document e specificare le opzioni di caricamento. Ecco un esempio:
 
 ```csharp
 Document doc = new Document(dataDir + "Dirty field.docx", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Dirty field.docx" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+In questo esempio, carichiamo il documento "Dirty field.docx" che si trova nella directory dei documenti utilizzando le opzioni di caricamento specificate.
 
-## مثال على شفرة المصدر لـ LoadOptions مع وظيفة "Update Dirty Fields" باستخدام Aspose.Words for .NET
+## Esempio di codice sorgente per LoadOptions con la funzionalità "Aggiorna campi sporchi" utilizzando Aspose.Words per .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل مع ميزة "تحديث الحقول القذرة"
+// Configura le opzioni di caricamento con la funzione "Aggiorna campi sporchi".
 LoadOptions loadOptions = new LoadOptions { UpdateDirtyFields = true };
 
-// قم بتحميل المستند عن طريق تحديث الحقول المتسخة
+// Carica il documento aggiornando i campi sporchi
 Document doc = new Document(dataDir + "Dirty field.docx", loadOptions);
 
-// احفظ المستند
+// Salva il documento
 doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 ```
 
-## خاتمة
+## Conclusione
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند عن طريق تحديث الحقول المتسخة باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. ستعرض الحقول القذرة الخاصة بالتحديث عند تحميل المستند أحدث القيم في مستند Word الخاص بك.
+In questa guida abbiamo spiegato come caricare un documento aggiornando i campi dirty utilizzando la libreria Aspose.Words per .NET. Seguendo i passaggi forniti e usando il codice sorgente C# fornito, puoi facilmente applicare questa funzionalità nella tua applicazione C#. L'aggiornamento dei campi sporchi al caricamento del documento visualizzerà i valori più recenti nel documento di Word.

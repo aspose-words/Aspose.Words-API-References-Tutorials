@@ -1,77 +1,77 @@
 ---
-title: إزالة فواصل المقاطع
-linktitle: إزالة فواصل المقاطع
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة فواصل الأقسام في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تخلص بشكل فعال من فواصل المقاطع التي يمكن أن تعطل تنسيق المستند.
+title: Ta bort avsnittsavbrott
+linktitle: Ta bort avsnittsavbrott
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du tar bort avsnittsbrytningar i ett Word-dokument med Aspose.Words-biblioteket för .NET. Eliminera effektivt avsnittsavbrott som kan störa din dokumentformatering.
 type: docs
 weight: 10
 url: /sv/net/remove-content/remove-section-breaks/
 ---
 
-# اكتب دليل خطوة بخطوة لإزالة فواصل الأقسام في Aspose.Words for .NET
+# Skriv en steg-för-steg-guide för att ta bort avsnittsavbrott i Aspose.Words för .NET
 
-## مقدمة
-في هذا البرنامج التعليمي ، سنرشدك خلال عملية إزالة فواصل الأقسام من مستند Word باستخدام مكتبة Aspose.Words for .NET. يمكن أن تتسبب فواصل الأقسام أحيانًا في حدوث مشكلات في التنسيق أو تعطيل تدفق المستند ، وسيساعدك مقتطف الشفرة هذا في التخلص منها بشكل فعال. سنقدم لك دليلًا تفصيليًا لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+## Introduktion
+den här handledningen kommer vi att leda dig genom processen att ta bort avsnittsbrytningar från ett Word-dokument med hjälp av Aspose.Words for .NET-biblioteket. Avsnittsbrytningar kan ibland orsaka formateringsproblem eller störa dokumentflödet, och det här kodavsnittet hjälper dig att eliminera dem effektivt. Vi kommer att tillhandahålla en steg-för-steg-guide som hjälper dig att förstå och implementera koden i ditt eget .NET-projekt.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت Aspose.Words for .NET library في مشروعك
-- مستند Word يحتوي على فواصل مقطعية تريد إزالتها
+## Förutsättningar
+Innan vi börjar, se till att du har följande förutsättningar på plats:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words för .NET-biblioteket installerat i ditt projekt
+- Ett Word-dokument som innehåller avsnittsbrytningar som du vill ta bort
 
-## الخطوة 1: قم بتعيين دليل المستندات
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في مقتطف التعليمات البرمجية مع مسار الدليل المناسب.
+## Steg 1: Ställ in dokumentkatalogen
+ Först måste du ställa in katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i kodavsnittet med lämplig katalogsökväg.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فئة باستخدام`Load` طريقة.
+## Steg 2: Ladda dokumentet
+ Därefter kommer vi att ladda Word-dokumentet i en instans av`Document` klass med hjälp av`Load` metod.
 
 ```csharp
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## الخطوة 3: إزالة فواصل الأقسام
-لإزالة الفواصل المقطعية ، سنقوم بالمرور عبر جميع الأقسام بدءًا من القسم الذي يسبق القسم الأخير وانتقل إلى القسم الأول. داخل الحلقة ، سنقوم بربط محتوى كل قسم ببداية القسم الأخير ، ثم نقوم بإزالة المقطع المنسوخ.
+## Steg 3: Ta bort avsnittsbrytningar
+För att ta bort avsnittsbrytningar kommer vi att gå igenom alla avsnitt med början från avsnittet som föregår det sista och flyttar till det första avsnittet. Inom slingan kommer vi att lägga till innehållet i varje avsnitt till början av det sista avsnittet och sedan ta bort det kopierade avsnittet.
 
 ```csharp
-// قم بالتكرار خلال جميع الأقسام بدءًا من القسم الذي يسبق القسم الأخير وانتقل إلى القسم الأول.
+// Gå igenom alla sektioner med början från sektionen som föregår den sista och flytta till den första sektionen.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-    // انسخ محتوى القسم الحالي إلى بداية القسم الأخير.
+    // Kopiera innehållet i det aktuella avsnittet till början av det sista avsnittet.
     doc.LastSection.PrependContent(doc.Sections[i]);
-    // قم بإزالة المقطع المنسوخ.
+    // Ta bort det kopierade avsnittet.
     doc.Sections[i].Remove();
 }
 ```
 
-## الخطوة 4: احفظ المستند المعدل
- أخيرًا ، سنقوم بحفظ المستند المعدل باستخدام امتداد`Save` طريقة. حدد مسار ملف الإخراج المطلوب والتنسيق (على سبيل المثال ، DOCX) للمستند المعدل.
+## Steg 4: Spara det ändrade dokumentet
+ Slutligen kommer vi att spara det ändrade dokumentet med hjälp av`Save` metod. Ange önskad sökväg och format för utdatafilen (t.ex. DOCX) för det ändrade dokumentet.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-### نموذج التعليمات البرمجية المصدر لإزالة فواصل الأقسام باستخدام Aspose.Words for .NET
+### Exempel på källkod för Ta bort avsnittsbrytningar med Aspose.Words för .NET
  
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "your-document.docx");
 
-// قم بالتكرار خلال جميع الأقسام بدءًا من القسم الذي يسبق القسم الأخير وانتقل إلى القسم الأول.
+// Gå igenom alla sektioner med början från sektionen som föregår den sista och flytta till den första sektionen.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-	// انسخ محتوى القسم الحالي إلى بداية القسم الأخير.
+	// Kopiera innehållet i det aktuella avsnittet till början av det sista avsnittet.
 	doc.LastSection.PrependContent(doc.Sections[i]);
-	// قم بإزالة المقطع المنسوخ.
+	// Ta bort det kopierade avsnittet.
 	doc.Sections[i].Remove();
 }
 
@@ -79,6 +79,6 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
         
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، قمنا بعرض دليل تفصيلي خطوة بخطوة لإزالة فواصل الأقسام من مستند Word باستخدام Aspose.Words مكتبة .NET. باتباع مقتطف الشفرة والإرشادات المقدمة ، يمكنك بسهولة التخلص من فواصل المقاطع وضمان تخطيط سلس للمستند. تذكر أن تقوم بتعديل مسار الدليل وأسماء الملفات وفقًا لمتطلباتك الخاصة.
+## Slutsats
+den här handledningen har vi demonstrerat en steg-för-steg-guide för att ta bort avsnittsbrytningar från ett Word-dokument med hjälp av Aspose.Words för .NET-biblioteket. Genom att följa det medföljande kodavsnittet och instruktionerna kan du enkelt eliminera avsnittsbrytningar och säkerställa en sömlös dokumentlayout. Kom ihåg att justera katalogsökvägen och filnamnen enligt dina specifika krav.
 

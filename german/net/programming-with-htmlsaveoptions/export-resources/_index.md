@@ -1,33 +1,33 @@
 ---
-title: تصدير الموارد
-linktitle: تصدير الموارد
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتصدير موارد المستندات عند الحفظ بتنسيق HTML باستخدام Aspose.Words for .NET.
+title: Ressourcen exportieren
+linktitle: Ressourcen exportieren
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Exportieren von Dokumentressourcen beim Speichern als HTML mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-htmlsaveoptions/export-resources/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال التعليمات البرمجية المصدر C # لتصدير موارد المستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تصدير الموارد ، مثل الخطوط ، كملفات خارجية عند حفظ مستند بتنسيق HTML.
+In diesem Tutorial führen wir Sie durch den C#-Quellcode zum Exportieren von Dokumentressourcen mit Aspose.Words für .NET. Mit dieser Funktion können Sie Ressourcen wie Schriftarten als externe Dateien exportieren, wenn Sie ein Dokument im HTML-Format speichern.
 
-## الخطوة 1: إعداد المشروع
+## Schritt 1: Projekteinrichtung
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Aspose.Words for .NET-Bibliothek verwiesen wird.
 
-## الخطوة الثانية: تحميل المستند
+## Schritt 2: Laden des Dokuments
 
-في هذه الخطوة ، سنقوم بتحميل المستند للتصدير. استخدم الكود التالي لتحميل المستند من دليل محدد:
+In diesem Schritt laden wir das zu exportierende Dokument. Verwenden Sie den folgenden Code, um das Dokument aus einem angegebenen Verzeichnis zu laden:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- هذا الرمز ينشئ مثيل`Document` عن طريق تحميل المستند من الدليل المحدد.
+ Dieser Code erstellt eine Instanz von`Document` durch Laden des Dokuments aus dem angegebenen Verzeichnis.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي بتنسيق HTML
+## Schritt 3: Konfigurieren der HTML-Backup-Optionen
 
-سنقوم الآن بتكوين خيارات حفظ HTML لتصدير موارد المستند. استخدم الكود التالي:
+Jetzt konfigurieren wir die HTML-Speicheroptionen, um die Dokumentressourcen zu exportieren. Verwenden Sie den folgenden Code:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
@@ -35,32 +35,32 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 CssStyleSheetType = CssStyleSheetType.External,
 ExportFontResources=true,
 ResourceFolder = ArtifactsDir + "Resources",
-ResourceFolderAlias = "http://example.com/resources "
+ResourceFolderAlias = "http://example.com/resources"
 };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions` وتعيين الخيارات التالية:
+ Dieser Code erstellt eine Instanz von`HtmlSaveOptions` und legt die folgenden Optionen fest:
 
-- `CssStyleSheetType` تم تعيينه على`CssStyleSheetType.External`لتصدير ورقة أنماط CSS إلى ملف خارجي.
-- `ExportFontResources` تم تعيينه على`true` لتصدير موارد الخط.
-- `ResourceFolder` يحدد الدليل الوجهة حيث سيتم حفظ الموارد.
-- `ResourceFolderAlias` يحدد عنوان URL المستعار الذي سيتم استخدامه للوصول إلى الموارد.
+- `CssStyleSheetType` ist eingestellt auf`CssStyleSheetType.External`um das CSS-Stylesheet in eine externe Datei zu exportieren.
+- `ExportFontResources` ist eingestellt auf`true` um Schriftartressourcen zu exportieren.
+- `ResourceFolder` Gibt das Zielverzeichnis an, in dem die Ressourcen gespeichert werden.
+- `ResourceFolderAlias` Gibt den URL-Alias an, der für den Zugriff auf Ressourcen verwendet wird.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## Schritt 4: Konvertieren und Speichern des Dokuments in HTML
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+Abschließend konvertieren wir das Dokument mithilfe der zuvor konfigurierten HTML-Speicheroptionen in HTML. Verwenden Sie den folgenden Code:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML ويحفظ الموارد في الدليل المحدد ، باستخدام الاسم المستعار لعنوان URL المحدد.
+Dieser Code konvertiert das Dokument in HTML und speichert die Ressourcen unter Verwendung des angegebenen URL-Alias im angegebenen Verzeichnis.
 
-### مثال على شفرة المصدر لتصدير الموارد باستخدام Aspose.Words for .NET
+### Beispielquellcode für den Export von Ressourcen mit Aspose.Words für .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -69,11 +69,11 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOption
 		CssStyleSheetType = CssStyleSheetType.External,
 		ExportFontResources = true,
 		ResourceFolder = ArtifactsDir + "Resources",
-		ResourceFolderAlias = "http://example.com/resources "
+		ResourceFolderAlias = "http://example.com/resources"
 	};
 
 	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOptions);
   
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+ Stellen Sie sicher, dass Sie den richtigen Pfad zum Dokumentenverzeichnis im angeben`dataDir` Variable.

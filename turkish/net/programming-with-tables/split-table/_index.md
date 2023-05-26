@@ -1,52 +1,52 @@
 ---
-title: انقسام الجدول
-linktitle: انقسام الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تقسيم جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Bölünmüş Tablo
+linktitle: Bölünmüş Tablo
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki tabloyu nasıl böleceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/split-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية تقسيم جدول في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من تقسيم جدول من صف معين في مستندات Word الخاصة بك.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun nasıl bölüneceğini öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım bir kılavuz izleyeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki bir tabloyu belirli bir satırdan ayırabileceksiniz.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Adım 1: Proje Kurulumu
+1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
+2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+## 2. Adım: Belgeyi yükleme
+Belgeyle çalışmaya başlamak için şu adımları izleyin:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-تأكد من استبدال "دليل المستندات الخاص بك" بالمسار الفعلي إلى دليل المستندات الخاص بك وقم بتوفير اسم الملف الصحيح.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden ve doğru dosya adını girdiğinizden emin olun.
 
-## الخطوة 3: قسمة الجدول
-بعد ذلك سنقوم بتقسيم الجدول من صف معين. استخدم الكود التالي:
+## 3. Adım: Masayı bölme
+Daha sonra tabloyu belirli bir satırdan ayıracağız. Aşağıdaki kodu kullanın:
 
 ```csharp
-// استرجع الجدول الأول
+// İlk tabloyu al
 Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
 
-// تحديد الخط الذي سيتم تقسيم الجدول منه
+// Tablonun bölüneceği satırın belirlenmesi
 Row row = firstTable.Rows[2];
 
-// قم بإنشاء حاوية جديدة للجدول المقسم
+// Bölünmüş tablo için yeni bir kapsayıcı oluşturun
 Table table = (Table)firstTable.Clone(false);
 
-// أدخل الحاوية بعد الجدول الأصلي
+// Orijinal tablodan sonra kapsayıcıyı yerleştirin
 firstTable.ParentNode.InsertAfter(table, firstTable);
 
-// أضف فقرة عازلة للحفاظ على مسافة بين الجداول
+// Tablolar arasındaki mesafeyi korumak için bir tampon paragraf ekleyin
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
 
-// انقل الصفوف من الجدول الأصلي إلى جدول الانقسام
+// Satırları orijinal tablodan bölünmüş tabloya taşıma
 Row currentRow;
 do
 {
@@ -55,34 +55,34 @@ table. PrependChild(currentRow);
 } while (currentRow != row);
 ```
 
-هنا نستخدم المستند لاسترداد الجدول الأول من عقدة المستند. ثم نحدد الصف الذي نريد تقسيم الجدول منه ، في هذا المثال هو الصف الثالث (الفهرس 2). نقوم بعد ذلك بإنشاء حاوية جديدة عن طريق استنساخ الجدول الأصلي ثم إدخاله بعد الجدول الأصلي. نضيف أيضًا فقرة عازلة للحفاظ على مسافة بين الجدولين. ثم ننقل الصفوف من الجدول الأصلي إلى الجدول المنفصل باستخدام حلقة do-while حتى نصل إلى الصف المحدد.
+Burada, belge düğümünden ilk tabloyu almak için belgeyi kullanıyoruz. Daha sonra tabloyu bölmek istediğimiz satırı belirliyoruz, bu örnekte üçüncü satırdır (dizin 2). Daha sonra orijinal tabloyu klonlayarak yeni bir kapsayıcı oluşturuyoruz ve ardından bunu orijinal tablonun arkasına yerleştiriyoruz. İki tablo arasındaki mesafeyi korumak için bir tampon paragraf da ekliyoruz. Ardından, belirtilen satıra ulaşana kadar bir do-while döngüsü kullanarak satırları orijinal tablodan bölünmüş tabloya taşırız.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ ملف
+## 4. Adım: Değiştirilen belgeyi kaydetme
+Son olarak, kaydetmemiz gerekiyor
 
-  تم تعديل المستند باستخدام الجدول المقسم. استخدم الكود التالي:
+  bölünmüş tablo ile değiştirilen belge. Aşağıdaki kodu kullanın:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### نموذج التعليمات البرمجية المصدر لـ Split Table باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Bölünmüş Tablo için örnek kaynak kodu 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");
 Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
-// سنقوم بتقسيم الجدول في الصف الثالث (ضمناً).
+// Üçüncü sıradaki (dahil) tabloyu böleceğiz.
 Row row = firstTable.Rows[2];
-// قم بإنشاء حاوية جديدة للجدول المقسم.
+// Bölünmüş tablo için yeni bir kapsayıcı oluşturun.
 Table table = (Table) firstTable.Clone(false);
-// أدخل الحاوية بعد الأصل.
+// Kabı orijinalden sonra yerleştirin.
 firstTable.ParentNode.InsertAfter(table, firstTable);
-// أضف فقرة عازلة لضمان بقاء الجداول منفصلة.
+// Tabloların ayrı kalmasını sağlamak için bir tampon paragraf ekleyin.
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
 Row currentRow;
 do
@@ -93,5 +93,5 @@ do
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تقسيم جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك بسهولة تقسيم الجداول من سطر معين في مستندات Word الخاصة بك.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki tabloyu nasıl böleceğimizi öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizdeki belirli bir satırdan tabloları kolayca ayırabilirsiniz.

@@ -1,54 +1,54 @@
 ---
-title: تعيين أعمدة الملاحظات القدم
-linktitle: تعيين أعمدة الملاحظات القدم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين عدد الأعمدة للحواشي السفلية في مستندات Word باستخدام Aspose.Words for .NET.
+title: Imposta le colonne delle note a piè di pagina
+linktitle: Imposta le colonne delle note a piè di pagina
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come impostare il numero di colonne per le note a piè di pagina nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-footnote-and-endnote/set-foot-note-columns/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية استخدام Aspose.Words for .NET لتعيين عدد الأعمدة للحواشي السفلية في مستند Word. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In questo tutorial passo-passo, ti guideremo su come utilizzare Aspose.Words per .NET per impostare il numero di colonne per le note a piè di pagina in un documento di Word. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria dal sito ufficiale.
 
-## الخطوة 1: تهيئة كائن المستند
+## Passaggio 1: inizializzazione dell'oggetto documento
 
- أولاً ، قم بتهيئة ملف`Document` من خلال توفير المسار إلى المستند المصدر:
+ Per prima cosa, inizializza il file`Document` oggetto fornendo il percorso del documento di origine:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## الخطوة 2: إعداد أعمدة الحواشي السفلية
+## Passaggio 2: impostazione delle colonne delle note a piè di pagina
 
- بعد ذلك ، قم بالوصول إلى`FootnoteOptions`خاصية المستند وتعيين`Columns` الخاصية لتحديد عدد أعمدة الحواشي السفلية. في هذا المثال ، قمنا بتعيينه على 3 أعمدة:
+ Successivamente, accedi al file`FootnoteOptions`proprietà del documento e impostare il file`Columns` proprietà per specificare il numero di colonne per le note a piè di pagina. In questo esempio, lo impostiamo su 3 colonne:
 
 ```csharp
 doc.FootnoteOptions.Columns = 3;
 ```
 
-## الخطوة 3: حفظ المستند
+## Passaggio 3: salvare il documento
 
-أخيرًا ، احفظ المستند المعدل:
+Infine, salva il documento modificato:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootNoteColumns.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تعيين عدد الأعمدة للحواشي السفلية في مستند Word باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai impostato correttamente il numero di colonne per le note a piè di pagina in un documento di Word utilizzando Aspose.Words per .NET.
 
-### مثال على شفرة المصدر لـ Set Footnote Columns باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per impostare le colonne delle note a piè di pagina utilizzando Aspose.Words per .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 Document doc = new Document(dataDir + "Document.docx");
 
-// حدد عدد الأعمدة التي يتم بها تنسيق منطقة الحواشي السفلية.
+// Specificare il numero di colonne con cui viene formattata l'area delle note a piè di pagina.
 doc.FootnoteOptions.Columns = 3;
 
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootNoteColumns.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.

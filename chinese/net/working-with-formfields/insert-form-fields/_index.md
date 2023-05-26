@@ -1,46 +1,46 @@
 ---
-title: أدخل حقول النموذج
-linktitle: أدخل حقول النموذج
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج القائمة المنسدلة في مستندات Word باستخدام Aspose.Words for .NET.
+title: 插入表单域
+linktitle: 插入表单域
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 将下拉表单字段插入到 Word 文档中。
 type: docs
 weight: 10
 url: /zh/net/working-with-formfields/insert-form-fields/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية إدراج حقول النموذج ، وتحديداً حقل نموذج القائمة المنسدلة ، في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+在这个循序渐进的教程中，我们将指导您如何使用 Aspose.Words for .NET 将表单字段（特别是下拉表单字段）插入到 Word 文档中。我们将解释提供的 C# 源代码，并向您展示如何在您自己的项目中实现它。
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+要开始，请确保您已在开发环境中安装和设置 Aspose.Words for .NET。如果您还没有这样做，请从官方网站下载并安装该库。
 
-## الخطوة 1: تهيئة المستند وكائنات DocumentBuilder
+## 步骤 1：初始化 Document 和 DocumentBuilder 对象
 
- أولاً ، قم بتهيئة ملف`Document` و`DocumentBuilder` أشياء:
+首先，初始化`Document`和`DocumentBuilder`对象：
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إدراج حقل نموذج منسدل
+## 第 2 步：插入下拉表单域
 
- بعد ذلك ، حدد خيارات حقل نموذج القائمة المنسدلة وأدخله في المستند باستخدام ملف`InsertComboBox` طريقة`DocumentBuilder`هدف. في هذا المثال ، نقوم بإدراج حقل نموذج منسدلة باسم "DropDown" مع ثلاثة خيارات: "واحد" و "اثنان" و "ثلاثة":
+接下来，指定下拉表单字段的选项并使用`InsertComboBox`的方法`DocumentBuilder`目的。在此示例中，我们插入一个名为“DropDown”的下拉表单字段，其中包含三个选项：“一”、“二”和“三”：
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## الخطوة 3: حفظ المستند
+## 第 3 步：保存文档
 
-أخيرًا ، احفظ المستند:
+最后，保存文件：
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-هذا كل شيء! لقد نجحت في إدراج حقل نموذج منسدل في مستند Word باستخدام Aspose.Words for .NET.
+就是这样！您已经使用 Aspose.Words for .NET 成功地将下拉表单字段插入到 Word 文档中。
 
-### مثال على شفرة المصدر لإدراج حقول النموذج باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 插入表单字段的示例源代码
 
 ```csharp
 Document doc = new Document();
@@ -52,4 +52,4 @@ builder.InsertComboBox("DropDown", items, 0);
 doc.Save("OutputDocument.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+随意在您自己的项目中使用此代码，并根据您的特定要求对其进行修改。

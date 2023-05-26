@@ -1,17 +1,17 @@
 ---
-title: العمل مع الواصلة
-linktitle: العمل مع الواصلة
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على الواصلة كلمات اللغات ، وتحميل قاموس الواصلة للغة واستدعاء الواصلة باستخدام Aspose.Words for .NET.
+title: Lavorare con la sillabazione
+linktitle: Lavorare con la sillabazione
+second_title: Riferimento all'API Aspose.Words per .NET
+description: tutorial contengono Words of Languages con sillabazione, caricano il dizionario di sillabazione per la richiamata di lingua e sillabazione usando Aspose.Words per .NET.
 type: docs
 weight: 750
 url: /it/net/working-with-hyphenation/
 ---
-يعد العمل باستخدام Hyphenation موردًا شاملاً يرشدك خلال استخدام الواصلة في مستندات Word باستخدام مكتبة Aspose.Words for .NET. . توفر البرامج التعليمية توضيحات خطوة بخطوة ، وكود مصدر كامل ، وأمثلة عملية لفهم الواصلة وإدارتها بشكل فعال في مستنداتك. ستتعلم كيفية تمكين الواصلة التلقائية ، وتخصيص قواميس الواصلة ، وتطبيق الواصلة على فقرات معينة ، والتعامل مع استثناءات الواصلة ، والمزيد. يعد هذا المورد ضروريًا للمطورين الذين يرغبون في تحسين قابلية قراءة مستندات Word وتخطيطها باستخدام الواصلة مع Aspose.Words for .NET.
+Lavorare con la sillabazione è una risorsa completa che ti guida attraverso l'uso della sillabazione nei documenti di Word utilizzando la libreria Aspose.Words per .NET. . I tutorial forniscono spiegazioni dettagliate, codice sorgente completo ed esempi pratici per comprendere e gestire efficacemente la sillabazione nei documenti. Imparerai come abilitare la sillabazione automatica, personalizzare i dizionari di sillabazione, applicare la sillabazione a paragrafi specifici, gestire le eccezioni di sillabazione e altro ancora. Questa risorsa è essenziale per gli sviluppatori che desiderano migliorare la leggibilità e il layout dei propri documenti Word utilizzando la sillabazione con Aspose.Words per .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [وصل كلمات اللغات](./hyphenate-words-of-languages/) | تعرف على كيفية وصل الكلمات بلغات مختلفة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تحميل قاموس الواصلة للغة](./load-hyphenation-dictionary-for-language/) |تعرف على كيفية تحميل قاموس الواصلة للغة معينة في Aspose.Words for .NET. |
-| [رد اتصال الواصلة](./hyphenation-callback/) | تعرف على كيفية استخدام رد نداء الواصلة في Aspose.Words for .NET للتعامل مع الواصلة في الكلمات. |
+| [Parole sillabate delle lingue](./hyphenate-words-of-languages/) | Scopri come sillabare le parole in diverse lingue nei documenti di Word utilizzando Aspose.Words per .NET. |
+| [Carica il dizionario di sillabazione per la lingua](./load-hyphenation-dictionary-for-language/) |Scopri come caricare un dizionario di sillabazione per una lingua specifica in Aspose.Words per .NET. |
+| [Richiamata di sillabazione](./hyphenation-callback/) | Scopri come utilizzare il callback della sillabazione in Aspose.Words per .NET per gestire la sillabazione delle parole. |

@@ -1,51 +1,51 @@
 ---
-title: Dml 3DEffects التقديم
-linktitle: Dml 3DEffects التقديم
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تمكين عرض تأثيرات DML ثلاثية الأبعاد عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+title: Dml 3DEffects Oluşturma
+linktitle: Dml 3DEffects Oluşturma
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin işlenmesini nasıl etkinleştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/dml-3deffects-rendering/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لتمكين عرض تأثير 3D DML عند التحويل إلى PDF باستخدام Aspose.Words for .NET. هذا يحافظ على التأثيرات ثلاثية الأبعاد في مستند PDF الذي تم إنشاؤه. اتبع الخطوات التالية:
+Bu öğreticide, Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efekti oluşturmayı etkinleştirme adımlarında size yol göstereceğiz. Bu, oluşturulan PDF belgesindeki 3B efektleri korur. Aşağıdaki adımları takip et:
 
-## الخطوة 1: تحميل المستند
+## 1. Adım: Belgeyi yükleme
 
-ابدأ بتحميل المستند الذي تريد تحويله إلى PDF:
+PDF'ye dönüştürmek istediğiniz belgeyi yükleyerek başlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح للمستند الخاص بك.
+Belgenize giden doğru yolu belirttiğinizden emin olun.
 
-## الخطوة 2: تكوين خيارات حفظ PDF
+## 2. Adım: PDF kaydetme seçeneklerini yapılandırın
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وقم بتمكين العرض المتقدم لتأثيرات 3D DML:
+PdfSaveOptions sınıfının bir örneğini oluşturun ve 3B DML efektlerinin gelişmiş işlemesini etkinleştirin:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { Dml3DEffectsRenderingMode = Dml3DEffectsRenderingMode.Advanced };
 ```
 
-يحافظ هذا الخيار على التأثيرات ثلاثية الأبعاد في مستند PDF الذي تم إنشاؤه.
+Bu seçenek, oluşturulan PDF belgesindeki 3B efektleri korur.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## 3. Adım: Belgeyi PDF'ye Dönüştürün
 
- استخدم ال`Save` طريقة لتحويل المستند إلى PDF مع تحديد خيارات الحفظ:
+ Kullan`Save` kaydetme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemi:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Dönüştürülen PDF'yi kaydetmek için doğru yolu belirttiğinizden emin olun.
 
-### مثال على شفرة المصدر لـ Dml 3DEffects Rendering باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Dml 3DEffects Rendering için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOp
 	 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة تمكين عرض تأثيرات DML ثلاثية الأبعاد عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+Bu adımları izleyerek, Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin işlenmesini kolayca etkinleştirebilirsiniz.
 
 
 

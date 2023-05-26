@@ -1,35 +1,35 @@
 ---
-title: تأكيدات
-linktitle: تأكيدات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام التأكيدات (بالخط العريض والمائل) باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Schwerpunkte
+linktitle: Schwerpunkte
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Hervorhebungen (fett und kursiv) mit Aspose.Words für .NET verwenden.
 type: docs
 weight: 10
 url: /de/net/working-with-markdown/emphases/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام التأكيدات مع Aspose.Words for .NET. يتم استخدام التأكيدات للتأكيد على أجزاء معينة من النص ، مثل الخط الغامق والمائل.
+In diesem Beispiel erklären wir, wie Hervorhebungen mit Aspose.Words für .NET verwendet werden. Hervorhebungen werden verwendet, um bestimmte Teile des Textes hervorzuheben, z. B. Fett- und Kursivschrift.
 
-## الخطوة 1: تهيئة المستند
+## Schritt 1: Dokumentinitialisierung
 
- أولاً ، سنهيئ المستند عن طريق إنشاء مثيل لـ`Document` فصل.
+ Zuerst initialisieren wir das Dokument, indem wir eine Instanz davon erstellen`Document` Klasse.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: استخدام منشئ المستندات
+## Schritt 2: Verwendung eines Dokumentengenerators
 
-بعد ذلك ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Als Nächstes verwenden wir einen Dokumentgenerator, um Inhalte zu unserem Dokument hinzuzufügen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إضافة نص مع التوكيدات
+## Schritt 3: Fügen Sie Text mit Hervorhebungen hinzu
 
-يمكننا إضافة نص تأكيدات عن طريق تغيير خصائص خط منشئ المستند. في هذا المثال ، نستخدم الخط الغامق والمائل للتأكيد على أجزاء مختلفة من النص.
+Wir können Text hervorheben, indem wir die Schriftarteigenschaften des Dokumentgenerators ändern. In diesem Beispiel verwenden wir Fett- und Kursivschrift, um verschiedene Textteile hervorzuheben.
 
 ```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as emphases indicators.");
@@ -59,17 +59,17 @@ builder. Write(".");
 
 ```
 
-## الخطوة 4: حفظ المستند
+## Schritt 4: Speichern des Dokuments
 
- أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب. في هذا المثال ، نستخدم الامتداد`.md` التمديد لتنسيق Markdown.
+ Abschließend können wir das Dokument im gewünschten Format speichern. In diesem Beispiel verwenden wir die`.md` Erweiterung für ein Markdown-Format.
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام التأكيدات مع Aspose.Words for .NET.
+Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie Hervorhebungen mit Aspose.Words für .NET verwenden.
 
-### مثال على شفرة المصدر للتأكيد باستخدام Aspose.Words for .NET
+### Beispielquellcode für Emphases mit Aspose.Words für .NET
 
 
 ```csharp

@@ -1,44 +1,44 @@
 ---
-title: قم بإزالة جدول المحتويات
-linktitle: قم بإزالة جدول المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة جدول المحتويات من مستند Word باستخدام Aspose.Words for .NET.
+title: Rimuovi sommario
+linktitle: Rimuovi sommario
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come rimuovere il sommario da un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/remove-content/remove-table-of-contents/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إزالة جدول المحتويات من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. قد يكون جدول المحتويات أحيانًا زائدًا عن الحاجة أو غير ضروري ، وسيساعدك هذا الرمز في إزالته بشكل فعال. سنقدم لك دليلًا تفصيليًا لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+In questo tutorial, ti illustreremo come rimuovere il sommario da un documento Word utilizzando la libreria Aspose.Words per .NET. Il sommario a volte può essere ridondante o non necessario e questo codice ti aiuterà a rimuoverlo in modo efficace. Forniremo una guida dettagliata per aiutarti a comprendere e implementare il codice nel tuo progetto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على جدول محتويات تريد حذفه
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti elementi:
+- Conoscenza operativa del linguaggio di programmazione C#
+- La libreria Aspose.Words per .NET installata nel tuo progetto
+- Un documento di Word contenente un sommario che desideri eliminare
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+ Innanzitutto, devi impostare il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فئة باستخدام`Load` طريقة.
+## Passaggio 2: caricare il documento
+ Successivamente, caricheremo il documento di Word in un'istanza del file`Document` classe utilizzando il`Load` metodo.
 
 ```csharp
-//قم بتحميل المستند
+//Carica il documento
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## الخطوة 3: احذف جدول المحتويات
- لإزالة جدول المحتويات ، سنقوم بالمرور عبر نوع TOC (جدول المحتويات)`FieldStart` العقد في المستند. سنخزن هذه العقد حتى نتمكن من الوصول إليها بسرعة وإنشاء قائمة بالعقد لحذفها.
+## Passaggio 3: elimina il sommario
+ Per rimuovere il sommario, eseguiremo un ciclo del tipo TOC (tabella dei contenuti).`FieldStart` nodi nel documento. Archivieremo questi nodi in modo da potervi accedere rapidamente e creare un elenco di nodi da eliminare.
 
 ```csharp
-// تخزين عقد FieldStart لحقول جدول المحتويات في المستند للوصول السريع.
+// Memorizza i nodi FieldStart dei campi TOC nel documento per un rapido accesso.
 List<FieldStart> fieldStarts = new List<FieldStart>();
-// هذه قائمة لتخزين العقد الموجودة داخل جدول المحتويات المحدد. سيتم حذفها في نهاية هذه الطريقة.
+// Questo è un elenco per memorizzare i nodi trovati all'interno del TOC specificato. Saranno cancellati alla fine di questo metodo.
 List<Node> nodeList = new List<Node>();
 
 foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
@@ -49,7 +49,7 @@ foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
      }
 }
 
-// تحقق من وجود فهرس جدول المحتويات المحدد.
+// Controlla se esiste l'indice TOC specificato.
 if (index > fieldStarts.Count - 1)
      throw new ArgumentOutOfRangeException("TOC index is out of range");
 
@@ -58,12 +58,12 @@ bool isRemoving = true;
 Node currentNode = fieldStarts[index];
 while (isRemoving)
 {
-     // من الآمن تخزين هذه العقد وحذفها جميعًا في النهاية.
+     // È più sicuro archiviare questi nodi ed eliminarli tutti alla fine.
      nodeList.Add(currentNode);
      currentNode = currentNode.NextPreOrder(doc);
 
-     // عندما نواجه عقدة FieldEnd من النوع FieldTOC ،
-     // نعلم أننا وصلنا إلى نهاية جدول المحتويات الحالي ونتوقف هنا.
+     // Quando incontriamo un nodo FieldEnd di tipo FieldTOC,
+     // sappiamo di essere alla fine dell'attuale TOC e ci fermiamo qui.
      if (currentNode.NodeType == NodeType.FieldEnd)
      {
          FieldEnd fieldEnd = (FieldEnd)currentNode;
@@ -83,18 +83,18 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
 
-### عينة من التعليمات البرمجية المصدر لـ Remove Table Of Contents باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Rimuovi sommario utilizzando Aspose.Words per .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//قم بتحميل المستند
+//Carica il documento
 Document doc = new Document(dataDir + "your-document.docx");
 
-// قم بتخزين عقد FieldStart لحقول جدول المحتويات في المستند للوصول السريع.
+// Memorizza i nodi FieldStart dei campi TOC nel documento per un rapido accesso.
 List<FieldStart> fieldStarts = new List<FieldStart>();
-// هذه قائمة لتخزين العقد الموجودة داخل جدول المحتويات المحدد. ستتم إزالتها في نهاية هذه الطريقة.
+// Questo è un elenco per memorizzare i nodi trovati all'interno del TOC specificato. Saranno rimossi alla fine di questo metodo.
 List<Node> nodeList = new List<Node>();
 
 foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
@@ -105,7 +105,7 @@ foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
 	}
 }
 
-// تأكد من وجود جدول المحتويات المحدد بواسطة الفهرس الذي تم تمريره.
+// Assicurarsi che il TOC specificato dall'indice passato esista.
 if (index > fieldStarts.Count - 1)
 	throw new ArgumentOutOfRangeException("TOC index is out of range");
 
@@ -114,12 +114,12 @@ bool isRemoving = true;
 Node currentNode = fieldStarts[index];
 while (isRemoving)
 {
-	// من الآمن تخزين هذه العقد وحذفها جميعًا مرة واحدة لاحقًا.
+	// È più sicuro archiviare questi nodi ed eliminarli tutti in una volta in un secondo momento.
 	nodeList.Add(currentNode);
 	currentNode = currentNode.NextPreOrder(doc);
 
-	// بمجرد أن نواجه عقدة FieldEnd من النوع FieldTOC ،
-	// نعلم أننا وصلنا إلى نهاية جدول المحتويات الحالي ونتوقف هنا.
+	// Quando incontriamo un nodo FieldEnd di tipo FieldTOC,
+	// sappiamo di essere alla fine dell'attuale TOC e ci fermiamo qui.
 	if (currentNode.NodeType == NodeType.FieldEnd)
 	{
 		FieldEnd fieldEnd = (FieldEnd) currentNode;
@@ -137,5 +137,5 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
         
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، قدمنا دليلًا تفصيليًا لإزالة جدول المحتويات من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. باتباع التعليمات البرمجية والإرشادات المتوفرة ، يمكنك بسهولة التخلص من جدول المحتويات وتحسين تخطيط المستند. تذكر تعديل مسار الدليل وأسماء الملفات لتناسب احتياجاتك الخاصة.
+## Conclusione
+In questo tutorial, abbiamo presentato una guida passo passo per rimuovere il sommario da un documento Word utilizzando la libreria Aspose.Words per .NET. Seguendo il codice e le istruzioni fornite, puoi facilmente eliminare il sommario e migliorare il layout del tuo documento. Ricordarsi di adattare il percorso della directory ei nomi dei file in base alle proprie esigenze specifiche.

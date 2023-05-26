@@ -1,42 +1,42 @@
 ---
-title: إنشاء تذييل الرأس
-linktitle: إنشاء تذييل الرأس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء رؤوس الصفحات وتذييلاتها في مستندات Word باستخدام Aspose.Words for .NET. تخصيص الرؤوس والتذييلات لكل صفحة.
+title: Создать нижний колонтитул
+linktitle: Создать нижний колонтитул
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как создавать верхние и нижние колонтитулы в документах Word с помощью Aspose.Words для .NET. Настройте верхние и нижние колонтитулы для каждой страницы.
 type: docs
 weight: 10
 url: /ru/net/working-with-headers-and-footers/create-header-footer/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح التعليمات البرمجية المصدر C # التالية لإنشاء رؤوس وتذييلات باستخدام Aspose.Words لوظائف .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+Вот пошаговое руководство, объясняющее следующий исходный код C# для создания верхних и нижних колонтитулов с использованием функций Aspose.Words for .NET. Перед использованием этого кода убедитесь, что вы включили библиотеку Aspose.Words в свой проект.
 
-## الخطوة 1: تعيين مسار دليل المستند
+## Шаг 1. Установите путь к каталогу документов
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Путь к каталогу документов.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
+Обязательно укажите правильный путь к папке с документами, в которой будет сохранен отредактированный документ.
 
-## الخطوة 2: قم بإنشاء مستند ومولد مستندات
+## Шаг 2: Создайте документ и генератор документов
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- هنا نقوم بإنشاء مثيل لـ`Document` فئة ومثيل`DocumentBuilder` فئة تسمح لنا بمعالجة المستند وإضافة عناصر.
+ Здесь мы создаем экземпляр`Document` класс и экземпляр`DocumentBuilder` class, который позволит нам управлять документом и добавлять элементы.
 
-## الخطوة 3: تعيين معلمات الصفحة والعنوان الأول
+## Шаг 3: Установите параметры страницы и первый заголовок
 
 ```csharp
 Section currentSection = builder.CurrentSection;
 PageSetup pageSetup = currentSection.PageSetup;
 
-// حدد ما إذا كنا نريد أن تختلف رؤوس / تذييلات الصفحة الأولى عن الصفحات الأخرى.
-// يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter لتحديدها
-// رؤوس / تذييلات مختلفة للصفحات الفردية والزوجية.
+// Укажите, хотим ли мы, чтобы верхние/нижние колонтитулы первой страницы отличались от других страниц.
+// Вы также можете использовать свойство PageSetup.OddAndEvenPagesHeaderFooter, чтобы указать
+// разные верхние/нижние колонтитулы для нечетных и четных страниц.
 pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
 
@@ -53,9 +53,9 @@ pageSetup.HeaderDistance = 20;
 builder. MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 ```
 
-نقوم بتعيين معلمات الصفحة ، بما في ذلك مسافة الرأس ، ثم ننتقل إلى العنوان الرئيسي (`HeaderPrimary`). نستخدم منشئ المستندات لإضافة نص وتنسيق العنوان.
+Задаем параметры страницы, в том числе расстояние шапки, а затем переходим к основному шапке (`HeaderPrimary`). Мы используем генератор документов, чтобы добавить текст и отформатировать заголовок.
 
-## الخطوة 4: أدخل صورة ونصًا في العنوان الرئيسي
+## Шаг 4: Вставьте изображение и текст в основной заголовок
 
 ```csharp
 builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
@@ -68,9 +68,9 @@ builder.Write("Aspose.Words - Building headers/footers.");
 builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 ```
 
-نستخدم منشئ المستندات لإدراج صورة في الزاوية اليسرى العلوية من الرأس الرئيسي ، ثم نضيف بعض النص المحاذي لليمين.
+Мы используем генератор документов, чтобы вставить изображение в верхний левый угол основного заголовка, затем добавляем текст, выровненный по правому краю.
 
-## الخطوة 5: قم بإدراج جدول في التذييل الرئيسي
+## Шаг 5: Вставьте таблицу в основной нижний колонтитул
 
 ```csharp
 builder.StartTable();
@@ -102,7 +102,7 @@ builder.EndTable();
 builder.MoveToDocumentEnd();
 ```
 
-## الخطوة 6: إضافة صفحة جديدة وتعيين الرؤوس / التذييلات
+## Шаг 6: Добавьте новую страницу и установите верхние/нижние колонтитулы
 
 ```csharp
 builder. InsertBreak(BreakType.PageBreak);
@@ -111,17 +111,17 @@ builder.InsertBreak(BreakType.SectionBreakNewPage);
 currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-//لا يحتاج هذا القسم إلى رأس / تذييل مختلف للصفحة الأولى ، نحتاج فقط إلى صفحة عنوان واحدة في المستند ،
-// وقد تم بالفعل تحديد رأس / تذييل الصفحة في القسم السابق.
+//В этом разделе не нужен другой верхний/нижний колонтитул для первой страницы, нам нужна только одна титульная страница в документе,
+// и верхний/нижний колонтитул для этой страницы уже был определен в предыдущем разделе.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// يعرض هذا القسم رؤوس / تذييلات القسم السابق افتراضيًا ، استدعاء currentSection.HeadersFooters.LinkToPrevious (خطأ) لكسر هذا الرابط ،
-// يختلف عرض الصفحة بالنسبة للقسم الجديد ، لذلك نحتاج إلى تعيين عروض خلايا مختلفة لجدول تذييل الصفحة.
+// В этом разделе по умолчанию отображаются верхние и нижние колонтитулы предыдущего раздела, вызовите currentSection.HeadersFooters.LinkToPrevious(false), чтобы разорвать эту ссылку,
+// ширина страницы отличается для нового раздела, поэтому нам нужно установить другую ширину ячеек для таблицы нижнего колонтитула.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-// إذا أردنا استخدام الرؤوس / التذييلات الموجودة بالفعل لهذا القسم ،
-// ولكن مع بعض التغييرات الطفيفة ، قد يكون من المنطقي نسخ الرؤوس / التذييلات
-// من القسم السابق وتطبيق التغييرات اللازمة حيث نريدها.
+// Если мы хотим использовать уже существующие верхние/нижние колонтитулы для этого раздела,
+// но с небольшими изменениями может иметь смысл скопировать верхние/нижние колонтитулы
+// из предыдущего раздела и примените необходимые изменения там, где мы этого хотим.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -130,16 +130,16 @@ Row row = primaryFooter.Tables[0].FirstRow;
 row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-// احفظ المستند
+// Сохраните документ
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
- نضيف فاصل صفحة وفاصل مقطعي لإنشاء صفحة جديدة حيث ستكون الرؤوس / التذييلات الأولية مرئية. قمنا بتعيين معلمات القسم الجديد ، ثم نستخدم الامتداد`CopyHeadersFootersFromPreviousSection`طريقة لنسخ الرؤوس / التذييلات من القسم السابق. أخيرًا ، قمنا بتعيين عرض الخلية المناسب لجدول التذييل الرئيسي وحفظنا المستند.
+ Мы добавляем разрыв страницы и разрыв раздела, чтобы создать новую страницу, на которой будут видны основные верхние/нижние колонтитулы. Мы устанавливаем параметры для нового раздела, затем мы используем`CopyHeadersFootersFromPreviousSection`метод для копирования верхних/нижних колонтитулов из предыдущего раздела. Наконец, мы устанавливаем соответствующую ширину ячеек для основной таблицы нижнего колонтитула и сохраняем документ.
 
-### مثال على كود المصدر لإنشاء الرؤوس والتذييلات باستخدام Aspose.Words for .NET
+### Пример исходного кода для создания верхних и нижних колонтитулов с помощью Aspose.Words для .NET
 
 ```csharp
-	// المسار إلى دليل المستندات.
+	// Путь к каталогу документов.
 	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 	
 	Document doc = new Document();
@@ -147,9 +147,9 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	Section currentSection = builder.CurrentSection;
 	PageSetup pageSetup = currentSection.PageSetup;
-	// حدد ما إذا كنا نريد أن تختلف رؤوس / تذييلات الصفحة الأولى عن الصفحات الأخرى.
-	// يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter لتحديدها
-	// رؤوس / تذييلات مختلفة للصفحات الفردية والزوجية.
+	// Укажите, хотим ли мы, чтобы верхние/нижние колонтитулы первой страницы отличались от других страниц.
+	// Вы также можете использовать свойство PageSetup.OddAndEvenPagesHeaderFooter, чтобы указать
+	// разные верхние/нижние колонтитулы для нечетных и четных страниц.
 	pageSetup.DifferentFirstPageHeaderFooter = true;
 	pageSetup.HeaderDistance = 20;
 
@@ -165,8 +165,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 	pageSetup.HeaderDistance = 20;
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	// أدخل صورة موضوعة في الزاوية العلوية / اليسرى من الرأس.
-	// تم ضبط المسافة من الحواف العلوية / اليسرى للصفحة على 10 نقاط.
+	// Вставьте позиционированное изображение в верхний/левый угол заголовка.
+	// Расстояние от верхнего/левого края страницы устанавливается равным 10 точкам.
 	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
 		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
@@ -176,8 +176,8 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	// نستخدم جدولاً يحتوي على خليتين لعمل جزء واحد من النص على السطر (مع ترقيم الصفحات).
-	// تتم محاذاة إلى اليسار ، ويتم محاذاة الجزء الآخر من النص (مع حقوق النشر) إلى اليمين.
+	// Мы используем таблицу с двумя ячейками, чтобы сделать одну часть текста на строке (с нумерацией страниц).
+	// Выровнять по левому краю, а остальную часть текста (с копирайтом) по правому краю.
 	builder.StartTable();
 
 	builder.CellFormat.ClearFormatting();
@@ -186,7 +186,7 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	// يستخدم حقلي PAGE و NUMPAGES لحساب تلقائي لرقم الصفحة الحالية والعديد من الصفحات.
+	// Он использует поля PAGE и NUMPAGES для автоматического вычисления текущего номера страницы и количества страниц.
 	builder.Write("Page ");
 	builder.InsertField("PAGE", "");
 	builder.Write(" of ");
@@ -207,25 +207,25 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 
 	builder.MoveToDocumentEnd();
 
-	// قم بعمل فاصل صفحة لإنشاء صفحة ثانية تظهر عليها الرؤوس / التذييلات الأساسية.
+	// Сделайте разрыв страницы, чтобы создать вторую страницу, на которой будут видны основные верхние/нижние колонтитулы.
 	builder.InsertBreak(BreakType.PageBreak);
 	builder.InsertBreak(BreakType.SectionBreakNewPage);
 
 	currentSection = builder.CurrentSection;
 	pageSetup = currentSection.PageSetup;
 	pageSetup.Orientation = Orientation.Landscape;
-	//لا يحتاج هذا القسم إلى رأس / تذييل مختلف للصفحة الأولى ، فنحن نحتاج فقط إلى صفحة عنوان واحدة في المستند ،
-	// وقد تم بالفعل تحديد رأس / تذييل الصفحة في القسم السابق.
+	//Для этого раздела не нужен другой верхний/нижний колонтитул первой страницы, нам нужна только одна титульная страница в документе,
+	// и верхний/нижний колонтитул для этой страницы уже был определен в предыдущем разделе.
 	pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// يعرض هذا القسم الرؤوس / التذييلات من القسم السابق
-	// بشكل افتراضي ، قم باستدعاء currentSection.HeadersFooters.LinkToPrevious (false) لإلغاء عرض هذه الصفحة
-	// يختلف عن القسم الجديد ، وبالتالي نحتاج إلى تعيين عروض خلايا مختلفة لجدول تذييل.
+	// В этом разделе отображаются верхние/нижние колонтитулы из предыдущего раздела.
+	// по умолчанию вызовите currentSection.HeadersFooters.LinkToPrevious(false), чтобы отменить эту ширину страницы
+	// отличается для нового раздела, и поэтому нам нужно установить разные ширины ячеек для таблицы нижнего колонтитула.
 	currentSection.HeadersFooters.LinkToPrevious(false);
 
-	// إذا أردنا استخدام مجموعة الرأس / التذييل الموجودة بالفعل لهذا القسم.
-	// ولكن مع بعض التعديلات الطفيفة ، قد يكون من المناسب نسخ الرؤوس / التذييلات
-	// من القسم السابق وتطبيق التعديلات اللازمة حيث نريدها.
+	// Если мы хотим использовать уже существующий верхний/нижний колонтитул для этого раздела.
+	// Но с небольшими изменениями может быть целесообразно скопировать верхние/нижние колонтитулы
+	// из предыдущего раздела и примените необходимые изменения там, где мы этого хотим.
 	CopyHeadersFootersFromPreviousSection(currentSection);
 
 	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];

@@ -1,41 +1,41 @@
 ---
-title: أدخل ASKField بدون Document Builder
-linktitle: أدخل ASKField بدون Document Builder
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل ASK في مستندات Word باستخدام Aspose.Words for .NET.
+title: Insertar ASKField sin Document Builder
+linktitle: Insertar ASKField sin Document Builder
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a insertar un campo ASK en sus documentos de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج حقل ASK بدون DocumentBuilder" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación, que usa la función "Insertar un campo ASK sin DocumentBuilder" de Aspose.Words para .NET. Asegúrese de seguir cada paso cuidadosamente para obtener los resultados deseados.
 
-## الخطوة 1: إعداد دليل المستند
+## Paso 1: Configuración del directorio de documentos
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+En el código provisto, debe especificar el directorio de sus documentos. Reemplace el valor "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## Paso 2: Creando el Documento y el Párrafo
 
-نبدأ بإنشاء مستند جديد وجلب الفقرة الأولى.
+Comenzamos creando un nuevo documento y recuperando el primer párrafo.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## الخطوة 3: إدخال حقل ASK
+## Paso 3: Inserción del campo ASK
 
- نحن نستخدم ال`AppendField()` طريقة لإدراج حقل ASK في الفقرة.
+ usamos el`AppendField()` para insertar un campo ASK en el párrafo.
 
 ```csharp
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
 ```
 
-ثم نقوم بتكوين الخصائص المختلفة لحقل ASK عن طريق تحديد القيم المطلوبة.
+Luego configuramos las diversas propiedades del campo ASK especificando los valores deseados.
 
 ```csharp
 field.BookmarkName = "Test 1";
@@ -44,23 +44,23 @@ field. DefaultResponse = "Test3";
 field. PromptOnceOnMailMerge = true;
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Finalmente, llamamos a la`Update()` método para actualizar el campo.
 
 ```csharp
 field. Update();
 ```
 
-### مثال على الكود المصدري لإدخال حقل ASK بدون DocumentBuilder مع Aspose.Words for .NET
+### Ejemplo del código fuente para insertar un campo ASK sin DocumentBuilder con Aspose.Words para .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة.
+// Creación de documentos.
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-// أدخل حقل ASK.
+// Inserte el campo ASK.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
 
 field.BookmarkName = "Test 1";
@@ -73,6 +73,6 @@ field. Update();
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأدخلنا حقل ASK دون استخدام DocumentBuilder ، وقمنا بتكوين الخصائص المختلفة للحقل ، وحفظنا المستند باسم ملف محدد.
+En este ejemplo, creamos un nuevo documento, insertamos un campo ASK sin usar DocumentBuilder, configuramos las diversas propiedades del campo y guardamos el documento con un nombre de archivo específico.
 
-هذا يختتم دليلنا حول استخدام ميزة "إدراج حقل ASK بدون DocumentBuilder" مع Aspose.Words for .NET.
+Esto concluye nuestra guía sobre el uso de la función "Insertar campo ASK sin DocumentBuilder" con Aspose.Words para .NET.

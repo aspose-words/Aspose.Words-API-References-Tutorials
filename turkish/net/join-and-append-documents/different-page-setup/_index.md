@@ -1,37 +1,37 @@
 ---
-title: إعداد صفحة مختلفة
-linktitle: إعداد صفحة مختلفة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند بإعدادات إعداد صفحة مختلفة باستخدام Aspose.Words for .NET.
+title: Farklı Sayfa Düzeni
+linktitle: Farklı Sayfa Düzeni
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak farklı sayfa düzeni ayarlarına sahip bir belgeyi nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/different-page-setup/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق مستند بإعدادات صفحة مختلفة بمستند آخر. يوضح كود المصدر المقدم كيفية إعداد إعدادات صفحة مختلفة لمستندات المصدر والوجهة والتأكد من المتابعة والترقيم المناسبين.
+Bu öğretici, farklı sayfa düzeni ayarlarına sahip bir belgeyi başka bir belgeye eklemek için Aspose.Words for .NET'in nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, kaynak ve hedef belgeler için farklı sayfa ayarlarının nasıl ayarlanacağını ve düzgün devam ve numaralandırmanın nasıl sağlanacağını gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Kaynak ve hedef belgelerin bulunduğu bir belge dizini yolu.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## 2. Adım: Kaynak ve hedef belgeleri açın
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ kullanarak kaynak ve hedef belgeleri açın.`Document` sınıf oluşturucu Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: قم بإعداد إعدادات الصفحة للمستند المصدر
+## 3. Adım: Kaynak belge için sayfa ayarlarını yapın
 
- اضبط إعدادات إعداد الصفحة للمستند المصدر لضمان المتابعة والترقيم المناسبين. في هذا المثال ، قمنا بتعيين بداية القسم إلى`SectionStart.Continuous` وأعد ترقيم الصفحات. نتأكد أيضًا من تطابق عرض الصفحة وارتفاعها واتجاهها مع القسم الأخير من المستند الوجهة.
+ Düzgün devam ve numaralandırmayı sağlamak için kaynak belgenin sayfa düzeni ayarlarını düzenleyin. Bu örnekte, bölümün başlangıcını şu şekilde ayarladık:`SectionStart.Continuous` ve sayfa numaralandırmayı yeniden başlatın. Ayrıca sayfa genişliğinin, yüksekliğinin ve yönünün hedef belgenin son bölümüyle eşleştiğinden emin oluruz.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -42,9 +42,9 @@ srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeig
 srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;
 ```
 
-## الخطوة 4: تعديل تنسيق الفقرة
+## 4. Adım: Paragraf biçimlendirmesini değiştirin
 
-للحفاظ على التنسيق الصحيح ، كرر عبر جميع الفقرات في المستند المصدر وقم بتعيين ملف`KeepWithNext` ملكية ل`true`. هذا يضمن بقاء الفقرات معًا أثناء عملية الإلحاق.
+Doğru biçimlendirmeyi sürdürmek için, kaynak belgedeki tüm paragrafları yineleyin ve`KeepWithNext` mülkiyet`true`. Bu, ekleme işlemi sırasında paragrafların bir arada kalmasını sağlar.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,45 +53,45 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بالمستند الوجهة
+## Adım 5: Kaynak belgeyi hedef belgeye ekleyin
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر المعدل بالمستند الوجهة ، مع الحفاظ على تنسيق المصدر.
+ Kullan`AppendDocument` kaynak biçimlendirmesini koruyarak, değiştirilen kaynak belgeyi hedef belgeye eklemek için hedef belgenin yöntemi.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند الوجهة
+## 6. Adım: Hedef belgeyi kaydedin
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند بإعدادات إعداد صفحة مختلفة باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanılarak farklı sayfa düzeni ayarlarına sahip bir belgenin eklenmesi uygulamasını tamamlar.
 
-### مثال على شفرة المصدر لإعداد صفحة مختلفة باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Farklı Sayfa Düzeni için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بتعيين المستند المصدر للمتابعة مباشرة بعد نهاية المستند الوجهة.
+	// Kaynak belgeyi, hedef belgenin bitiminden hemen sonra devam edecek şekilde ayarlayın.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// أعد تشغيل ترقيم الصفحات في بداية المستند المصدر.
+	// Kaynak belgenin başlangıcında sayfa numaralandırmayı yeniden başlatın.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
-	// لضمان عدم حدوث ذلك عندما يحتوي المستند المصدر على إعدادات إعداد صفحة مختلفة ، تأكد من أن
-	// الإعدادات متطابقة بين القسم الأخير من المستند الوجهة.
-	//إذا كانت هناك أقسام أخرى مستمرة تتبع في المستند المصدر ،
-	// هذا سوف يحتاج إلى أن يتكرر لتلك الأقسام.
+	// Kaynak belgede farklı sayfa düzeni ayarları olduğunda bunun olmamasını sağlamak için,
+	// ayarlar, hedef belgenin son bölümü arasında aynıdır.
+	//Kaynak belgede devam eden başka sürekli bölümler varsa,
+	// bunun o bölümler için tekrarlanması gerekecektir.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;
 	srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orientation;
-	// كرر خلال جميع الأقسام في المستند المصدر.
+	// Kaynak belgedeki tüm bölümleri yineleyin.
 	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 	{
 		para.ParagraphFormat.KeepWithNext = true;

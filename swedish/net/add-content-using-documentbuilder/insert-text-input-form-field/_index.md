@@ -1,36 +1,36 @@
 ---
-title: أدخل حقل نموذج إدخال النص
-linktitle: أدخل حقل نموذج إدخال النص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET لإدراج حقل نموذج إدخال النص في مستندات Word باستخدام هذا الدليل المفصل خطوة بخطوة.
+title: Infoga textinmatningsformulärfält
+linktitle: Infoga textinmatningsformulärfält
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder Aspose.Words för .NET för att infoga formulärfält för textinmatning i Word-dokument med denna steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/insert-text-input-form-field/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سنستكشف كيفية استخدام ميزة إدراج حقل نموذج إدخال نص في Aspose.Words for .NET لإضافة حقول نموذج إدخال النص ومعالجتها في مستندات Word باستخدام كود مصدر C #. تسمح حقول نموذج إدخال النص للمستخدمين بإدخال نص مخصص داخل المستند ، مما يجعلها مثالية لإنشاء نماذج واستبيانات تفاعلية. باتباع الإرشادات أدناه ، ستتمكن من إدراج حقول نموذج إدخال النص وتخصيصها بسهولة في مستنداتك. هيا بنا نبدأ!
+denna steg-för-steg-guide kommer vi att utforska hur du använder funktionen Infoga textinmatningsformulär i Aspose.Words för .NET för att lägga till och manipulera textinmatningsformulär i dina Word-dokument med hjälp av C#-källkoden. Fält för textinmatningsformulär låter användare skriva in anpassad text i ett dokument, vilket gör dem idealiska för att skapa interaktiva formulär och frågeformulär. Genom att följa instruktionerna nedan kommer du enkelt att kunna infoga och anpassa textinmatningsformulär i dina dokument. Låt oss börja!
 
-## مقدمة عن ميزة "إدراج حقل نموذج إدخال النص" في Aspose.Words for .NET
+## Introduktion till funktionen Infoga textinmatningsformulärfält i Aspose.Words för .NET
 
-تتيح لك ميزة "إدراج حقل نموذج إدخال النص" في Aspose.Words for .NET إضافة حقول نموذج إدخال نص برمجيًا إلى مستندات Word الخاصة بك. توفر حقول النموذج هذه عنصرًا تفاعليًا حيث يمكن للمستخدمين إدخال نص أو بيانات مخصصة.
+Funktionen Infoga formulärfält för textinmatning i Aspose.Words för .NET låter dig lägga till formulärfält för textinmatning programmatiskt till dina Word-dokument. Dessa formulärfält tillhandahåller ett interaktivt element där användare kan ange anpassad text eller data.
 
-## فهم متطلبات استخدام الميزة
+## Förstå kraven för att använda funktionen
 
-قبل متابعة التنفيذ ، تأكد من استيفاء المتطلبات التالية:
+Innan du fortsätter med implementeringen, se till att du uppfyller följande krav:
 
-1. تم تثبيت Aspose.Words for .NET library في مشروعك.
-2. المعرفة الأساسية بلغة البرمجة C #.
-3. مستند Word موجود أو مستند جديد لإدراج حقل نموذج إدخال النص.
+1. Aspose.Words för .NET-biblioteket installerat i ditt projekt.
+2. Grundläggande kunskaper i programmeringsspråket C#.
+3. Ett befintligt Word-dokument eller ett nytt dokument för att infoga textinmatningsformulärfältet.
 
-تأكد من توفر هذه المتطلبات الأساسية للمضي قدمًا بسلاسة.
+Se till att du har dessa förutsättningar på plats för att fortsätta smidigt.
 
-## دليل تفصيلي خطوة بخطوة لتنفيذ إدراج حقل نموذج إدخال نص باستخدام كود مصدر C #
+## Steg-för-steg-guide för att implementera Infoga textinmatningsformulärfält med C#-källkod
 
-اتبع الخطوات أدناه لتنفيذ ميزة إدراج حقل نموذج إدخال النص باستخدام كود مصدر C # المقدم:
+Följ stegen nedan för att implementera funktionen Infoga textinmatningsformulärfält med den medföljande C#-källkoden:
 
-### الخطوة 1: تهيئة مستند إنشاء المستندات
+### Steg 1: Initiera dokument- och dokumentbyggaren
 
-للبدء ، قم بتهيئة المستند ومنشئ المستندات. يُعد منشئ المستندات أداة قوية توفرها Aspose.Words for .NET والتي تتيح لنا إنشاء مستندات Word ومعالجتها برمجيًا. استخدم مقتطف الشفرة التالي:
+För att börja, initiera dokumentet och dokumentbyggaren. Dokumentbyggaren är ett kraftfullt verktyg från Aspose.Words för .NET som låter oss konstruera och manipulera Word-dokument programmatiskt. Använd följande kodavsnitt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,31 +39,31 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-### الخطوة 2: إدخال حقل نموذج إدخال النص
+### Steg 2: Infoga fältet för textinmatningsformulär
 
- بعد ذلك ، سنقوم بإدخال حقل نموذج إدخال النص في المستند باستخدام الامتداد`InsertTextInput` طريقة. تقبل هذه الطريقة معلمات مختلفة ، بما في ذلك اسم حقل النموذج ونوع حقل النموذج (في هذه الحالة ،`TextFormFieldType.Regular`والقيمة الافتراضية والحد الأقصى للطول. هذا مثال:
+ Därefter kommer vi att infoga formulärfältet för textinmatning i dokumentet med hjälp av`InsertTextInput` metod. Denna metod accepterar olika parametrar, inklusive namnet på formulärfältet, typen av formulärfält (i det här fallet,`TextFormFieldType.Regular`), standardvärdet och maximal längd. Här är ett exempel:
 
 ```csharp
 builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
 ```
 
-سوف يقوم الكود أعلاه بإدراج حقل نموذج إدخال نص بالاسم "TextInput" ، والقيمة الافتراضية "Hello" ، ولا يوجد حد أقصى للطول.
+Ovanstående kod kommer att infoga ett textinmatningsformulär med namnet "TextInput", ett standardvärde på "Hej" och ingen begränsning av maximal längd.
 
-### الخطوة 3: حفظ المستند
+### Steg 3: Spara dokumentet
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ När du har infogat formulärfältet för textinmatning sparar du dokumentet på önskad plats med hjälp av`Save` metod. Se till att ange rätt sökväg:
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```
 
-سيحفظ هذا الرمز المستند مع حقل نموذج إدخال النص المدرج في الموقع المحدد.
+Denna kod kommer att spara dokumentet med det infogade textinmatningsformuläret på den angivna platsen.
 
-### مثال على شفرة المصدر لإدراج حقل نموذج إدخال نص باستخدام Aspose.Words for .NET
+### Exempel på källkod för Insert Text Input Form Field med Aspose.Words för .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	
 	Document doc = new Document();

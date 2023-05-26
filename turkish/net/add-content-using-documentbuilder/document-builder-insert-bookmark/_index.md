@@ -1,29 +1,29 @@
 ---
-title: منشئ المستند إدراج إشارة مرجعية
-linktitle: منشئ المستند إدراج إشارة مرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الإشارات المرجعية في مستندات Word باستخدام DocumentBuilder في Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Belge Oluşturucu Yer İşareti Ekle
+linktitle: Belge Oluşturucu Yer İşareti Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'te DocumentBuilder'ı kullanarak Word belgelerine nasıl yer imleri ekleyeceğinizi öğrenin. Adım adım rehber.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/document-builder-insert-bookmark/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج الإشارات المرجعية في مستند Word باستخدام فئة DocumentBuilder في Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إنشاء وإدارة الإشارات المرجعية داخل مستنداتك.
+Bu kapsamlı örnekte, Aspose.Words for .NET'te DocumentBuilder sınıfını kullanarak bir Word belgesine nasıl yer imleri ekleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve size gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda, belgelerinizde yer imleri oluşturabilecek ve yönetebileceksiniz.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kitaplığı sisteminizde yüklü.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
+Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesi başlatın:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل إشارة مرجعية
-بعد ذلك ، استخدم أساليب StartBookmark و EndBookmark لفئة DocumentBuilder لإدراج إشارة مرجعية في المستند. أدخل اسمًا فريدًا للإشارة المرجعية كمعامل:
+## 2. Adım: Bir Yer İşareti Ekleyin
+Ardından, belgeye bir yer işareti eklemek için DocumentBuilder sınıfının StartBookmark ve EndBookmark yöntemlerini kullanın. Yer imi için parametre olarak benzersiz bir ad girin:
 
 ```csharp
 builder.StartBookmark("FineBookmark");
@@ -31,15 +31,15 @@ builder.Writeln("This is just a fine bookmark.");
 builder.EndBookmark("FineBookmark");
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الإشارة المرجعية ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## 3. Adım: Belgeyi Kaydedin
+Yer imini ekledikten sonra, Document sınıfının Save yöntemini kullanarak belgeyi bir dosyaya kaydedin:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
 ```
 
-### مثال رمز مصدر لـ DocumentBuilder إدراج إشارة مرجعية باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لإدخال إشارة مرجعية باستخدام فئة DocumentBuilder في Aspose.Words for .NET:
+### Aspose.Words for .NET kullanarak DocumentBuilder Insert Bookmark için Örnek Kaynak Kodu
+Aspose.Words for .NET'te DocumentBuilder sınıfını kullanarak bir yer imi eklemek için eksiksiz kaynak kodu burada:
 
 ```csharp
    
@@ -54,10 +54,10 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBoo
 	 
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج الإشارات المرجعية في مستند Word باستخدام فئة DocumentBuilder في Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إنشاء وإدارة الإشارات المرجعية داخل مستنداتك.
+## Çözüm
+Tebrikler! Aspose.Words for .NET'te DocumentBuilder sınıfını kullanarak bir Word belgesine nasıl yer imleri ekleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak artık belgelerinizde yer imleri oluşturabilir ve yönetebilirsiniz.
 
-تعد الإشارات المرجعية مفيدة لسيناريوهات متنوعة ، مثل التنقل عبر مستندات كبيرة ، أو الرجوع إلى أقسام معينة ، أو معالجة المحتوى برمجيًا داخل المناطق التي تم وضع إشارة مرجعية عليها.
+Yer imleri, büyük belgelerde gezinmek, belirli bölümlere başvurmak veya yer imi eklenmiş alanlardaki içeriği programlı olarak değiştirmek gibi çeşitli senaryolar için kullanışlıdır.
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Kodu özel gereksinimlerinize göre ayarlamayı ve gerektiğinde ek işlevlerle geliştirmeyi unutmayın.
 

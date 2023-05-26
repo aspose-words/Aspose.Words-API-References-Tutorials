@@ -1,31 +1,31 @@
 ---
-title: تعيين عنوان الجدول ووصفه
-linktitle: تعيين عنوان الجدول ووصفه
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتعيين عنوان ووصف للجدول باستخدام Aspose.Words for .NET.
+title: 设置表格标题和说明
+linktitle: 设置表格标题和说明
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 设置表格标题和描述的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-table-styles-and-formatting/set-table-title-and-description/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين عنوان الجدول ووصفه باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية إضافة عنوان ووصف إلى جدول في مستندات Word باستخدام Aspose.Words for .NET.
+在本教程中，我们将逐步引导您使用 Aspose.Words for .NET 设置表格的标题和描述。我们将解释捆绑的 C# 源代码，并为您提供全面的指南，以帮助您了解并在您自己的项目中实现此功能。在本教程结束时，您将了解如何使用 Aspose.Words for .NET 向 Word 文档中的表格添加标题和说明。
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## 第一步：定义文档目录
+首先，您需要设置文档目录的路径。这是您要保存编辑后的 Word 文档的位置。用适当的路径替换“您的文档目录”。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند الذي يحتوي على الجدول
- بعد ذلك ، تحتاج إلى تحميل المستند الذي يحتوي على الجدول باستخدام ملف`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## 第 2 步：加载包含表格的文档
+接下来，您需要使用`Document`班级。请务必指定正确的文档路径。
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 3: قم بالوصول إلى الجدول وقم بتعيين العنوان والوصف
- يمكنك الآن الوصول إلى الجدول الموجود في المستند باستخدام ملف`GetChild()` الطريقة و`Table` فصل. بعد ذلك ، قم بتعيين عنوان الجدول ووصفه باستخدام ملف`Title` و`Description` ملكيات.
+## 第 3 步：访问表格并设置标题和描述
+现在您可以使用`GetChild()`方法和`Table`班级。接下来，使用`Title`和`Description`特性。
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -33,22 +33,22 @@ table.Title = "Test Title";
 table.Description = "Test Description";
 ```
 
-## الخطوة 4: تعيين خيارات النسخ الاحتياطي
- إذا كنت تريد تحديد خيارات الحفظ ، فيمكنك تهيئتها باستخدام ملف`OoxmlSaveOptions` فصل. في هذا المثال ، استخدمنا الامتداد`Compliance` الخيار لتحديد التوافق مع تنسيق ISO 29500: 2008 الصارم.
+## 第 4 步：设置备份选项
+如果要指定保存选项，可以使用`OoxmlSaveOptions`班级。在这个例子中，我们使用了`Compliance`指定符合 ISO 29500:2008 严格格式的选项。
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
-## الخطوة 5: تحسين توافق المستندات
- يمكنك أيضًا تحسين توافق المستندات باستخدام تنسيق`OptimizeFor()` طريقة`CompatibilityOptions` فصل. في هذا المثال ، قمنا بتحسين المستند لـ Word 2016.
+## 第五步：优化文档兼容性
+您还可以使用`OptimizeFor()`的方法`CompatibilityOptions`班级。在此示例中，我们针对 Word 2016 优化了文档。
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(Aspose.Words.Settings.MsWordVersion.Word2016);
 ```
 
-## الخطوة 6: احفظ المستند المعدل
- أخيرًا ، يمكنك حفظ المستند المعدل في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## 第 6 步：保存修改后的文件
+最后，您可以使用`Save()`的方法`Document`班级。请务必指定正确的路径和文件名。
 
 
 
@@ -56,10 +56,10 @@ doc.CompatibilityOptions.OptimizeFor(Aspose.Words.Settings.MsWordVersion.Word201
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescription.docx", options);
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Table Title and Description باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 设置表格标题和描述的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -71,5 +71,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescription.docx", options);
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين عنوان الجدول ووصفه باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة إضافة عنوان ووصف إلى جدول في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تخصيص البنية والمعلومات المرتبطة بجداولك وفقًا لاحتياجاتك الخاصة.
+## 结论
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 设置表格的标题和描述。按照此分步指南，您可以轻松地向 Word 文档中的表格添加标题和说明。 Aspose.Words 提供了一个强大而灵活的 API，用于操作和格式化文档中的表格。有了这些知识，您就可以根据自己的特定需要自定义与表关联的结构和信息。

@@ -1,32 +1,32 @@
 ---
-title: استخدم حرف الجدولة لكل مستوى للمسافة البادئة للقائمة
-linktitle: استخدم حرف الجدولة لكل مستوى للمسافة البادئة للقائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام قوائم المسافات البادئة مع ميزة حروف الجدولة في Aspose.Words for .NET. وفر الوقت وحسّن سير عملك باستخدام هذه الميزة القوية.
+title: Använd fliktecken per nivå för listindrag
+linktitle: Använd fliktecken per nivå för listindrag
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder funktionen för indragslistor med tabbtecken i Aspose.Words för .NET. Spara tid och förbättra ditt arbetsflöde med denna kraftfulla funktion.
 type: docs
 weight: 10
 url: /sv/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لميزة "استخدام حرف جدولة واحد لكل مستوى من أجل المسافة البادئة للقائمة" مع Aspose.Words for .NET. تتيح لك هذه الميزة تطبيق أحرف الجدولة لوضع مسافة بادئة للقوائم في كل مستوى ، مما يوفر قدرًا أكبر من المرونة والتحكم في مظهر المستندات الخاصة بك.
+den här handledningen kommer vi att utforska C#-källkoden som tillhandahålls för funktionen "Använd ett tabbtecken per nivå för listindrag" med Aspose.Words för .NET. Den här funktionen låter dig använda tabbtecken för indragningslistor på varje nivå, vilket ger större flexibilitet och kontroll över utseendet på dina dokument.
 
-## الخطوة الأولى: تهيئة البيئة
+## Steg 1: Sätta upp miljön
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Innan du börjar, se till att du har ställt in din utvecklingsmiljö med Aspose.Words för .NET. Se till att du har lagt till nödvändiga referenser och importerat lämpliga namnområden.
 
-## الخطوة 2: إنشاء المستند والمولد
+## Steg 2: Skapa dokumentet och generatorn
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- في هذه الخطوة ، نقوم بإنشاء ملف`Document` كائن وما يرتبط بها`DocumentBuilder` هدف. ستسمح لنا هذه الكائنات بمعالجة وإنشاء وثيقتنا.
+ I det här steget skapar vi en ny`Document` objekt och en tillhörande`DocumentBuilder` objekt. Dessa objekt kommer att tillåta oss att manipulera och generera vårt dokument.
 
-## الخطوة 3: إنشاء قائمة بثلاثة مستويات من المسافة البادئة
+## Steg 3: Skapa en lista med tre nivåer av indrag
 
 ```csharp
 builder.ListFormat.ApplyNumberDefault();
@@ -37,9 +37,9 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
- في هذه الخطوة ، نطبق التنسيق الافتراضي لأرقام القائمة باستخدام امتداد`ApplyNumberDefault()` طريقة منسق القائمة. بعد ذلك ، نضيف ثلاثة عناصر إلى قائمتنا باستخدام أداة إنشاء المستندات`Writeln()` و`Write()` طُرق. نحن نستخدم ال`ListIndent()` طريقة لزيادة المسافة البادئة في كل مستوى.
+ I det här steget tillämpar vi standardformatet för listnummer med hjälp av`ApplyNumberDefault()` metod för listformateraren. Därefter lägger vi till tre objekt till vår lista med hjälp av dokumentbyggarens`Writeln()` och`Write()` metoder. Vi använder`ListIndent()` metod för att öka indraget på varje nivå.
 
-## الخطوة 4: تكوين خيارات التسجيل
+## Steg 4: Konfigurera inspelningsalternativ
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -47,30 +47,30 @@ saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- في هذه الخطوة ، نقوم بتهيئة الخيارات لحفظ المستند. نخلق ملف`TxtSaveOptions` كائن وتعيين`ListIndentation.Count`الخاصية إلى 1 لتحديد عدد أحرف الجدولة لكل مستوى مسافة بادئة. قمنا أيضًا بتعيين ملف`ListIndentation.Character` إلى "\ t" لتحديد أننا نريد استخدام أحرف الجدولة.
+ I det här steget konfigurerar vi alternativen för att spara dokumentet. Vi skapar en ny`TxtSaveOptions` objekt och ställ in`ListIndentation.Count`egenskapen till 1 för att ange antalet tabbtecken per indragsnivå. Vi ställer också in`ListIndentation.Character` egenskapen till '\t' för att ange att vi vill använda tabbtecken.
 
-## الخطوة 5: احفظ المستند
+## Steg 5: Spara dokumentet
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نقوم بحفظ المستند بخيارات الحفظ المحددة. نحن نستخدم ال`Save()` طريقة المستند التي تمر بالمسار الكامل لملف الإخراج وخيارات الحفظ.
+ I detta sista steg sparar vi dokumentet med de angivna sparalternativen. Vi använder`Save()` metod för att dokumentet skickar hela sökvägen till utdatafilen och alternativen för att spara.
 
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لإنشاء مستند به مسافة بادئة للقائمة باستخدام أحرف الجدولة. سيتم حفظ ملف الإخراج في الدليل المحدد باسم "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt".
+Nu kan du köra källkoden för att generera ett dokument med listindrag med tabbtecken. Utdatafilen kommer att sparas i den angivna katalogen med namnet "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt".
 
-### مثال على مصدر التعليمات البرمجية لميزة استخدام حرف جدولة واحد لكل مستوى لميزة المسافة البادئة للقائمة مع Aspose.Words for .NET:
+### Exempel på kodkälla för funktionen Använd ett tabbtecken per nivå för listindrag med Aspose.Words för .NET:
 
 ```csharp
 
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+// Skapa en lista med tre nivåer av indrag
 builder.ListFormat.ApplyNumberDefault();
 builder. Writen("Element 1");
 builder.ListFormat.ListIndent();
@@ -86,4 +86,4 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListInde
 
 ```
 
-الآن بعد أن انتهيت من إنشاء المستند مع المسافة البادئة للقائمة باستخدام أحرف الجدولة ، يمكنك استخدام Markdown لتنسيق محتوى مقالتك. تأكد من استخدام علامات التنسيق المناسبة لتمييز العناوين والعناوين الفرعية وشفرة المصدر المضمنة.
+Nu när du har skapat ditt dokument med listindrag med tabbtecken kan du använda Markdown för att formatera ditt artikelinnehåll. Se till att använda lämpliga formateringstaggar för att markera titlar, undertexter och medföljande källkod.

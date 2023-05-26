@@ -1,61 +1,61 @@
 ---
-title: استبدل بسلسلة
-linktitle: استبدل بسلسلة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استبدال النص بسلسلة في مستند Word بـ Aspose.Words for .NET.
+title: Remplacer par une chaîne
+linktitle: Remplacer par une chaîne
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à remplacer du texte par une chaîne dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/find-and-replace-text/replace-with-string/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة "استبدال السلسلة" في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إجراء استبدال النص بناءً على سلسلة أحرف معينة في مستند Word.
+Dans cet article, nous allons explorer le code source C# ci-dessus pour comprendre comment utiliser la fonction Remplacer par une chaîne dans la bibliothèque Aspose.Words pour .NET. Cette fonctionnalité vous permet d'effectuer un remplacement de texte en fonction d'une chaîne de caractères spécifique dans un document Word.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Connaissance de base du langage C#.
+- Environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
-## الخطوة الأولى: إنشاء مستند جديد
+## Étape 1 : Création d'un nouveau document
 
-قبل أن نبدأ في استخدام استبدال السلسلة ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+Avant de commencer à utiliser le remplacement de chaîne, nous devons créer un nouveau document en utilisant Aspose.Words pour .NET. Cela peut être fait en instanciant un`Document` objet:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: أدخل النص في المستند
+## Étape 2 : Insérer du texte dans le document
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص باستخدام ملف`DocumentBuilder` هدف. في مثالنا ، نستخدم الامتداد`Writeln` طريقة ادخال عبارة "sad crazy bad":
+ Une fois que nous avons un document, nous pouvons insérer du texte à l'aide d'un`DocumentBuilder` objet. Dans notre exemple, nous utilisons le`Writeln` méthode pour insérer la phrase "sad crazy bad":
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("sad mad bad");
 ```
 
-## الخطوة 3: استبدل بسلسلة
+## Étape 3 : Remplacer par une chaîne
 
- نحن نستخدم ال`Range.Replace` طريقة لاستبدال النص بسلسلة. في مثالنا ، نستبدل كل تكرارات كلمة "sad" بكلمة "bad" باستخدام الامتداد`FindReplaceOptions` الخيار مع`FindReplaceDirection.Forward` اتجاه البحث:
+ Nous utilisons le`Range.Replace` méthode pour remplacer le texte par une chaîne. Dans notre exemple, nous remplaçons toutes les occurrences du mot "sad" par "bad" en utilisant le`FindReplaceOptions` possibilité avec le`FindReplaceDirection.Forward` sens de recherche :
 
 ```csharp
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-## الخطوة 4: حفظ المستند المحرر
+## Étape 4 : Enregistrer le document modifié
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+ Enfin, nous enregistrons le document modifié dans un répertoire spécifié à l'aide de la`Save` méthode:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 ```
 
-### مثال على شفرة المصدر لـ Replace With String باستخدام Aspose.Words for .NET
+### Exemple de code source pour Remplacer par une chaîne en utilisant Aspose.Words pour .NET
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام الاستبدال بسلسلة أحرف بـ Aspose.Words for .NET:
+Voici l'exemple de code source complet pour illustrer l'utilisation du remplacement par une chaîne de caractères avec Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
@@ -68,6 +68,6 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
   
 ```
 
-## خاتمة
+## Conclusion
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة Replace With String في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص واستبداله بسلسلة وحفظ المستند المعدل.
+Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonction Remplacer par une chaîne de Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour créer un document, insérer du texte, remplacer par une chaîne et enregistrer le document modifié.

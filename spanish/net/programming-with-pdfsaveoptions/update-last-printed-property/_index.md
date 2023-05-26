@@ -1,57 +1,57 @@
 ---
-title: تحديث آخر خاصية مطبوعة
-linktitle: تحديث آخر خاصية مطبوعة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحديث خاصية "آخر طباعة" عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+title: Actualizar última propiedad impresa
+linktitle: Actualizar última propiedad impresa
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para actualizar la propiedad "Última impresión" al convertir a PDF con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة تحديث خاصية "الطباعة الأخيرة" مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، سوف تكون قادرًا على فهم كيفية تكوين خيار تحديث خاصية "آخر طباعة" عند التحويل إلى PDF.
+Este artículo proporciona una guía paso a paso sobre cómo usar la función de actualización de propiedades "Última impresión" con Aspose.Words para .NET. Explicaremos cada parte del código en detalle. Al final de este tutorial, podrá comprender cómo configurar la opción para actualizar la propiedad "Última impresión" al convertir a PDF.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Antes de comenzar, asegúrese de haber instalado y configurado la biblioteca Aspose.Words para .NET en su proyecto. Puede encontrar la biblioteca y las instrucciones de instalación en el sitio web de Aspose.
 
-## الخطوة 1: تحديد دليل المستند
+## Paso 1: Definir el directorio de documentos
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Para comenzar, debe definir la ruta al directorio donde se encuentran sus documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Paso 2: Sube el documento
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+A continuación, debemos cargar el documento que queremos procesar. En este ejemplo, asumimos que el documento se llama "Rendering.docx" y se encuentra en el directorio de documentos especificado.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات حفظ كملف PDF مع خاصية "آخر طباعة" محدثة
+## Paso 3: configure las opciones Guardar como PDF con la propiedad "Última impresión" actualizada
 
- لتمكين تحديث خاصية "Last Printed" عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن وتعيين`UpdateLastPrintedProperty` ملكية ل`true`.
+ Para habilitar la actualización de la propiedad "Última impresión" al convertir a PDF, debemos configurar el`PdfSaveOptions` objeto y establecer el`UpdateLastPrintedProperty` propiedad a`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
 ```
 
-## الخطوة 4: احفظ المستند بتنسيق PDF مع تحديث خاصية "آخر طباعة"
+## Paso 4: Guarde el documento como PDF con la actualización de la propiedad "Última impresión"
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Finalmente, podemos guardar el documento en formato PDF utilizando las opciones de guardado configuradas previamente.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تمكين تحديث خاصية "آخر طباعة" عند تحويل مستند إلى PDF باستخدام Aspose.Words for .NET.
+Eso es todo ! Ha habilitado correctamente la actualización de la propiedad "Última impresión" al convertir un documento a PDF usando Aspose.Words para .NET.
 
-### مثال على كود المصدر لتحديث خاصية "الطباعة الأخيرة" باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para actualizar la propiedad "Última impresión" con Aspose.Words para .NET
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 

@@ -1,44 +1,44 @@
 ---
-title: نص مائل
-linktitle: نص مائل
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية كتابة نص مائل باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Texte en italique
+linktitle: Texte en italique
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à mettre du texte en italique avec le guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-markdown/italic-text/
 ---
 
-في هذا المثال ، سنرشدك إلى كيفية استخدام ميزة النص المائل مع Aspose.Words for .NET. يستخدم النص المائل للتأكيد على أجزاء معينة من المستند.
+Dans cet exemple, nous vous expliquerons comment utiliser la fonctionnalité de texte en italique avec Aspose.Words pour .NET. Le texte en italique est utilisé pour souligner certaines parties d'un document.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Étape 1 : Utiliser un générateur de documents
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Tout d'abord, nous allons utiliser un générateur de document pour ajouter du contenu à notre document.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: اجعل النص مائلًا
+## Étape 2 : Mettre le texte en italique
 
- يمكننا جعل النص مائلاً عن طريق تعيين الخط`Italic` ملكية ل`true`.
+ Nous pouvons mettre le texte en italique en définissant la police`Italic` propriété à`true`.
 
 ```csharp
 builder.Font.Italic = true;
 builder.Writeln("This text will be in italics");
 ```
 
-### مثال على شفرة المصدر للنص المائل باستخدام Aspose.Words for .NET
+### Exemple de code source pour le texte en italique avec Aspose.Words pour .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Utilisez un générateur de document pour ajouter du contenu au document.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص مائلًا.
+	// Mettez le texte en italique.
 	builder.Font.Italic = true;
 	builder.Writeln("This text will be Italic");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة النص المائل مع Aspose.Words for .NET.
+Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité de texte en italique avec Aspose.Words pour .NET.
 

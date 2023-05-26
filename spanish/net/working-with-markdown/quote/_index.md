@@ -1,35 +1,35 @@
 ---
-title: يقتبس
-linktitle: يقتبس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام الاقتباس مع Aspose.Words دليل تفصيلي خطوة بخطوة لـ .NET.
+title: Cita
+linktitle: Cita
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a usar las comillas con Aspose.Words para la guía paso a paso de .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-markdown/quote/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام ميزة الاقتباس مع Aspose.Words for .NET Quote تُستخدم لإبراز أقسام النص من خلال إحاطةهم بحد خاص.
+En este ejemplo, explicaremos cómo utilizar la función de comillas con Aspose. Words for .NET Quote se utiliza para resaltar secciones de texto rodeándolas con un borde especial.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Paso 1: usar un generador de documentos
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Primero, usaremos un generador de documentos para agregar contenido a nuestro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة الثانية: استخدام أسلوب الاقتباس الافتراضي
+## Paso 2: usar el estilo de cita predeterminado
 
-سنستخدم نمط الفقرة الافتراضي المسمى "اقتباس" لتطبيق تنسيق الاقتباس على النص.
+Usaremos el estilo de párrafo predeterminado llamado "Cita" para aplicar el formato de cita al texto.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Quote";
 builder.Writeln("Blockquote");
 ```
 
-## الخطوة 3: إنشاء أنماط للمستويات المتداخلة
+## Paso 3: Crear estilos para niveles anidados
 
- يمكننا إنشاء أنماط للمستويات المتداخلة باستخدام امتداد`Styles.Add` طريقة`Document` هدف. في هذا المثال ، نقوم بإنشاء نمط يسمى "Quote1" لتمثيل مستوى اقتباس متداخل.
+ Podemos crear estilos para niveles anidados usando el`Styles.Add` metodo de la`Document` objeto. En este ejemplo, estamos creando un estilo llamado "Quote1" para representar un nivel de cotización anidado.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
@@ -38,18 +38,18 @@ builder.Document.Styles["Quote1"].BaseStyleName = "Quote";
 builder.Writeln("1. Nested blockquote");
 ```
 
-### مثال على شفرة المصدر للاقتباسات باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para citas con Aspose.Words para .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Use un generador de documentos para agregar contenido al documento.
 	DocumentBuilder builder = new DocumentBuilder();
 
-	// بشكل افتراضي ، يخزن المستند نمط blockquote للمستوى الأول.
+	// De forma predeterminada, un documento almacena el estilo de comillas en bloque para el primer nivel.
 	builder.ParagraphFormat.StyleName = "Quote";
 	builder.Writeln("Blockquote");
 
-	// إنشاء أنماط للمستويات المتداخلة من خلال وراثة النمط.
+	// Cree estilos para niveles anidados a través de la herencia de estilos.
 	Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
 	builder.ParagraphFormat.Style = quoteLevel2;
 	builder.Document.Styles["Quote1"].BaseStyleName = "Quote";
@@ -57,5 +57,5 @@ builder.Writeln("1. Nested blockquote");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الاقتباسات مع Aspose.Words for .NET.
+¡Felicidades! Ahora ha aprendido a usar la función de citas con Aspose.Words para .NET.
 

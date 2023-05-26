@@ -1,37 +1,37 @@
 ---
-title: نسخ تذييلات الرؤوس من القسم السابق
-linktitle: نسخ تذييلات الرؤوس من القسم السابق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية نسخ الرؤوس والتذييلات من القسم السابق في مستندات Word باستخدام Aspose.Words for .NET.
+title: Copia i piè di pagina delle intestazioni dalla sezione precedente
+linktitle: Copia i piè di pagina delle intestazioni dalla sezione precedente
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come copiare intestazioni e piè di pagina dalla sezione precedente nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-headers-and-footers/copy-headers-footers-from-previous-section/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية نسخ الرؤوس والتذييلات من القسم السابق في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In questo tutorial passo-passo, ti guideremo su come copiare intestazioni e piè di pagina dalla sezione precedente in un documento Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non lo hai fatto, scarica e installa la libreria dal sito ufficiale.
 
-## الخطوة 1: الوصول إلى القسم السابق
+## Passaggio 1: accesso alla sezione precedente
 
- أولاً ، قم باسترداد القسم السابق من خلال الوصول إلى ملف`PreviousSibling` خاصية القسم الحالي:
+ Per prima cosa, recupera la sezione precedente accedendo al file`PreviousSibling` proprietà della sezione corrente:
 
 ```csharp
 Section previousSection = (Section)section.PreviousSibling;
 ```
 
-## الخطوة 2: التحقق من القسم السابق
+## Passaggio 2: verifica della sezione precedente
 
-بعد ذلك ، تحقق من وجود قسم سابق. إذا لم يكن هناك قسم سابق ، فنعود ببساطة:
+Successivamente, controlla se esiste una sezione precedente. Se non c'è una sezione precedente, restituiamo semplicemente:
 
 ```csharp
 if (previousSection == null)
     return;
 ```
 
-## الخطوة 3: مسح ونسخ الرؤوس والتذييلات
+## Passaggio 3: cancellazione e copia di intestazioni e piè di pagina
 
-لنسخ الرؤوس والتذييلات من القسم السابق إلى القسم الحالي ، نقوم بمسح الرؤوس والتذييلات الموجودة في القسم الحالي ثم نكررها من خلال الرؤوس والتذييلات في القسم السابق لإضافة نسخ مستنسخة إلى القسم الحالي:
+Per copiare le intestazioni e i piè di pagina dalla sezione precedente alla sezione corrente, cancelliamo le intestazioni e i piè di pagina esistenti nella sezione corrente e quindi iteriamo attraverso le intestazioni e i piè di pagina della sezione precedente per aggiungere copie clonate alla sezione corrente:
 
 ```csharp
 section.HeadersFooters.Clear();
@@ -40,17 +40,17 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
     section.HeadersFooters.Add(headerFooter.Clone(true));
 ```
 
-## الخطوة 4: حفظ المستند
+## Passaggio 4: salvare il documento
 
-أخيرًا ، احفظ المستند المعدل:
+Infine, salva il documento modificato:
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-هذا كل شيء! لقد نجحت في نسخ الرؤوس والتذييلات من القسم السابق إلى القسم الحالي في مستند Word باستخدام Aspose.Words for .NET.
+Questo è tutto! Hai copiato correttamente intestazioni e piè di pagina dalla sezione precedente alla sezione corrente in un documento di Word utilizzando Aspose.Words per .NET.
 
-### مثال على شفرة المصدر لنسخ تذييلات الرؤوس من القسم السابق باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Copia intestazioni piè di pagina dalla sezione precedente utilizzando Aspose.Words per .NET
 
 ```csharp
 Section previousSection = (Section)section.PreviousSibling;
@@ -66,4 +66,4 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
 doc.Save("OutputDocument.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.

@@ -1,47 +1,47 @@
 ---
-title: تحسين لبرنامج MS Word
-linktitle: تحسين لبرنامج MS Word
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحسين مستند لبرنامج MS Word باستخدام Aspose.Words for .NET.
+title: Optimizar para MS Word
+linktitle: Optimizar para MS Word
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para optimizar un documento para MS Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-document-options-and-settings/optimize-for-ms-word/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتحسين مستند لبرنامج MS Word باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تحسين مستند لإصدار معين من MS Word.
+En este tutorial, lo guiaremos a través del código fuente de C# para optimizar un documento para MS Word con Aspose.Words para .NET. Esta característica le permite optimizar un documento para una versión específica de MS Word.
 
-## الخطوة 1: إعداد المشروع
+## Paso 1: Configuración del proyecto
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Para comenzar, cree un nuevo proyecto de C# en su IDE favorito. Asegúrese de que se haga referencia a la biblioteca Aspose.Words para .NET en su proyecto.
 
-## الخطوة الثانية: تحميل المستند
+## Paso 2: Cargar el documento
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد تحسينه. استخدم الكود التالي لتحميل المستند:
+En este paso cargaremos el documento de Word que queremos optimizar. Use el siguiente código para cargar el documento:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Reemplazar`"YOUR DOCUMENTS DIRECTORY"` con la ruta real del directorio donde se encuentra su documento.
 
-## الخطوة 3: التحسين لبرنامج MS Word
+## Paso 3: Optimización para MS Word
 
-لنقم الآن بتحسين المستند من أجل إصدار معين من MS Word. استخدم الكود التالي لإجراء التحسين:
+Ahora vamos a optimizar el documento para una versión específica de MS Word. Use el siguiente código para realizar la optimización:
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx");
 ```
 
- يخبر هذا الرمز Aspose.Words بتحسين مستند MS Word 2016. يمكنك استبداله`MsWordVersion.Word2016` مع الإصدار المحدد من MS Word الذي تريد تحسينه.
+ Este código le dice a Aspose.Words que optimice el documento para MS Word 2016. Puede reemplazar`MsWordVersion.Word2016` con la versión específica de MS Word que desea optimizar.
 
-### مثال على التعليمات البرمجية المصدر لـ Optimize For Ms Word باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Optimize For Ms Word usando Aspose.Words para .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Document.docx");
 
@@ -51,6 +51,6 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx
    
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Asegúrese de especificar la ruta correcta del documento en el`dataDir` variable.
 
-لقد تعلمت الآن كيفية تحسين مستند لإصدار معين من MS Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تحسين مستنداتك الخاصة لإصدارات مختلفة من MS Word.
+Ahora ha aprendido cómo optimizar un documento para una versión específica de MS Word usando Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede optimizar fácilmente sus propios documentos para diferentes versiones de MS Word.

@@ -1,15 +1,15 @@
 ---
-title: البرمجة باستخدام Htmlloadoptions
-linktitle: البرمجة باستخدام Htmlloadoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على نوع التحكم المفضل
+title: Programmieren mit Htmlloadoptions
+linktitle: Programmieren mit Htmlloadoptions
+second_title: Aspose.Words für .NET API-Referenz
+description: Tutorials enthalten den bevorzugten Steuerelementtyp
 type: docs
 weight: 1600
 url: /de/net/programming-with-htmlloadoptions/
 ---
-تعتبر البرامج التعليمية لـ Aspose.Words for .NET حول البرمجة باستخدام HTMLLoadOptions مصدرًا قيمًا للمطورين الذين يعملون مع مستندات HTML في تطبيقاتهم. توفر هذه البرامج التعليمية إرشادات مفصلة خطوة بخطوة لتحميل مستندات HTML وتحويلها ومعالجتها باستخدام مكتبة Aspose.Words. سيتعلم المطورون كيفية تكوين خيارات التحميل ، واستخراج محتوى HTML ، وتحويل مستندات HTML إلى تنسيقات أخرى مثل PDF أو DOCX ، وتطبيق تحويلات ومعالجات محددة على مستندات HTML. توفر هذه البرامج التعليمية فهماً عميقاً للعمل مع مستندات HTML باستخدام Aspose.Words ، مما يمكّن المطورين من إنشاء تطبيقات قوية ومتعددة الاستخدامات.
+Die Aspose.Words für .NET-Tutorials zum Programmieren mit HTMLLoadOptions sind eine wertvolle Ressource für Entwickler, die in ihren Anwendungen mit HTML-Dokumenten arbeiten. Diese Tutorials bieten detaillierte Schritt-für-Schritt-Anleitungen zum Laden, Konvertieren und Bearbeiten von HTML-Dokumenten mithilfe der Aspose.Words-Bibliothek. Entwickler erfahren, wie sie Ladeoptionen konfigurieren, HTML-Inhalte extrahieren, HTML-Dokumente in andere Formate wie PDF oder DOCX konvertieren und spezifische Transformationen und Manipulationen auf HTML-Dokumente anwenden. Diese Tutorials vermitteln ein tiefgreifendes Verständnis der Arbeit mit HTML-Dokumenten mit Aspose.Words und ermöglichen Entwicklern die Erstellung leistungsstarker und vielseitiger Anwendungen.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [نوع التحكم المفضل](./preferred-control-type/) | دليل تفصيلي خطوة بخطوة لتحديد نوع عنصر التحكم المفضل عند تحميل مستند HTML باستخدام Aspose.Words for .NET. |
+| [Bevorzugter Steuerungstyp](./preferred-control-type/) | Schritt-für-Schritt-Anleitung zum Festlegen des bevorzugten Steuerelementtyps beim Laden eines HTML-Dokuments mit Aspose.Words für .NET. |

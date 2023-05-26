@@ -1,42 +1,42 @@
 ---
-title: إزالة تذييلات رؤوس المصدر
-linktitle: إزالة تذييلات رؤوس المصدر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة الرؤوس والتذييلات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Kaynak Başlıklarını Alt Bilgilerini Kaldır
+linktitle: Kaynak Başlıklarını Alt Bilgilerini Kaldır
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerini birleştirirken ve eklerken üst bilgileri ve alt bilgileri nasıl kaldıracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/remove-source-headers-footers/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Remove Source Headers Footers في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء إزالة الرؤوس والتذييلات من المستند المصدر.
+Bu eğitim, Aspose.Words for .NET'in Kaynak Başlıklarını Alt Bilgilerini Kaldır özelliğini kullanma sürecinde size rehberlik edecektir. Bu özellik, kaynak belgeden üst bilgileri ve alt bilgileri kaldırırken Word belgelerini birleştirip eklemenize olanak tanır.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words for .NET kurulu. Aspose web sitesinden indirebilir veya NuGet aracılığıyla kurabilirsiniz.
+2. Visual Studio veya başka herhangi bir C# geliştirme ortamı.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## 1. Adım: Belge Dizinlerini Başlatın
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir` belgelerinizin bulunduğu yola değişken.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## 2. Adım: Kaynak ve Hedef Belgeleri Yükleyin
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Ardından, Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. içindeki dosya adlarını güncelleyin.`Document` belge adlarınıza göre yapıcı.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إزالة الرؤوس والتذييلات من أقسام المستند المصدر
+## 3. Adım: Kaynak Belge Bölümlerinden Üstbilgileri ve Altbilgileri Kaldırma
 
- لإزالة الرؤوس والتذييلات من كل قسم في المستند المصدر ، يمكنك التكرار خلال الأقسام باستخدام ملف`foreach` حلقة واستدعاء`ClearHeadersFooters` طريقة.
+ Kaynak belgedeki her bölümden üstbilgileri ve altbilgileri kaldırmak için bölümler arasında yineleme yapabilirsiniz.`foreach` döngü ve çağrı`ClearHeadersFooters` yöntem.
 
 ```csharp
 foreach (Section section in srcDoc.Sections)
@@ -45,51 +45,51 @@ foreach (Section section in srcDoc.Sections)
 }
 ```
 
-## الخطوة 4: تعطيل إعداد "LinkToPrevious" لـ HeadersFooters
+## 4. Adım: HeadersFooters için "LinkToPrevious" Ayarını Devre Dışı Bırakın
 
-حتى بعد مسح الرؤوس والتذييلات من المستند المصدر ، هناك احتمال أن يكون إعداد "LinkToPrevious"`HeadersFooters` لا يزال من الممكن تعيينها. لتجنب هذا السلوك ، تحتاج إلى تعيينه صراحةً على`false` للقسم الأول`HeadersFooters` ملكية.
+Kaynak belgeden üst bilgileri ve alt bilgileri temizledikten sonra bile, "LinkToPrevious" ayarının`HeadersFooters` hala ayarlanabilir. Bu davranıştan kaçınmak için, açıkça olarak ayarlamanız gerekir.`false` ilk bölüm için`HeadersFooters` mülk.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## Adım 5: Kaynak Belgeyi Hedef Belgeye Ekleyin
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Artık, kaynak belgeyi hedef belgeye aşağıdakileri kullanarak ekleyebilirsiniz:`AppendDocument` yöntemi`Document` sınıf. bu`ImportFormatMode.KeepSourceFormatting` parametresi, ekleme işlemi sırasında kaynak formatının korunmasını sağlar.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## 6. Adım: Nihai Belgeyi Kaydedin
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة Remove Source Headers Footers باستخدام ملحق`Save` طريقة`Document` فصل.
+ Son olarak, birleştirilmiş belgeyi Kaynak Üstbilgileri Altbilgileri Kaldır özelliği etkinleştirilerek kaydedin.`Save` yöntemi`Document` sınıf.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 ```
 
-### مثال على شفرة المصدر لإزالة تذييلات رؤوس المصدر باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Kaynak Başlıklarını Alt Bilgilerini Kaldırmak için örnek kaynak kodu 
 
-إليك شفرة المصدر الكاملة لميزة "إزالة تذييلات رؤوس المصدر" في C # باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanan C# dilindeki "Kaynak Başlıklarını Alt Bilgilerini Kaldır" özelliğinin tam kaynak kodu burada:
 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بإزالة الرؤوس والتذييلات من كل قسم في المستند المصدر.
+	// Kaynak belgedeki bölümlerin her birindeki üstbilgileri ve altbilgileri kaldırın.
 	foreach (Section section in srcDoc.Sections)
 	{
 		section.ClearHeadersFooters();
 	}
-	// حتى بعد مسح الرؤوس والتذييلات من المستند المصدر ، فإن الإعداد "LinkToPrevious"
-	// لا يزال من الممكن تعيين HeadersFooters. سيؤدي هذا إلى استمرار الرؤوس والتذييلات من الوجهة
-	// وثيقة. يجب تعيين هذا على خطأ لتجنب هذا السلوك.
+	// Üstbilgiler ve altbilgiler kaynak belgeden temizlendikten sonra bile "LinkToPrevious" ayarı
+	// HeadersFooters için hala ayarlanabilir. Bu, üstbilgilerin ve altbilgilerin hedeften devam etmesine neden olur
+	// belge. Bu davranıştan kaçınmak için bu değer false olarak ayarlanmalıdır.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 ```
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Remove Source Headers Footers باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع إزالة الرؤوس والتذييلات من المستند المصدر.
+Bu kadar! Aspose.Words for .NET'i kullanarak Kaynak Başlıklarını Alt Bilgilerini Kaldır özelliğini başarıyla uyguladınız. Nihai belge, kaynak belgeden kaldırılan üstbilgiler ve altbilgiler ile birleştirilmiş içeriği içerecektir.

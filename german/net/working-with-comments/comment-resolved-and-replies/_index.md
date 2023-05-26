@@ -1,21 +1,21 @@
 ---
-title: حل التعليق والردود
-linktitle: حل التعليق والردود
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حل التعليقات والردود عليها في مستندات Word باستخدام Aspose.Words for .NET.
+title: Kommentar gelöst und Antworten
+linktitle: Kommentar gelöst und Antworten
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie Kommentare und deren Antworten in Word-Dokumenten mit Aspose.Words für .NET auflösen.
 type: docs
 weight: 10
 url: /de/net/working-with-comments/comment-resolved-and-replies/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية حل التعليقات والردود عليها في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إدارة حل التعليقات وتحديث حالة التعليقات والردود عليها.
+In diesem umfassenden Tutorial erfahren Sie, wie Sie Kommentare und deren Antworten in einem Word-Dokument mit Aspose.Words für .NET auflösen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieses Leitfadens werden Sie in der Lage sein, die Kommentarauflösung zu verwalten und den Status von Kommentaren und deren Antworten zu aktualisieren.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## الخطوة 1: قم بتحميل المستند والوصول إلى التعليقات
-للبدء ، قم بتحميل المستند الذي يحتوي على التعليقات باستخدام فئة المستند والوصول إلى مجموعة التعليقات:
+## Schritt 1: Laden Sie das Dokument und greifen Sie auf Kommentare zu
+Laden Sie zunächst das Dokument, das die Kommentare enthält, mithilfe der Document-Klasse und greifen Sie auf die Kommentarsammlung zu:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -24,8 +24,8 @@ Document doc = new Document(dataDir + "Comments.docx");
 NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
 ```
 
-## الخطوة 2: حل التعليقات والردود عليها
-بعد ذلك ، كرر التعليقات والردود عليها لتمييزها على أنها تم الحل:
+## Schritt 2: Kommentare und deren Antworten auflösen
+Gehen Sie als Nächstes die Kommentare und ihre Antworten durch, um sie als gelöst zu markieren:
 
 ```csharp
 Comment parentComment = (Comment)comments[0];
@@ -39,17 +39,17 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-في الكود أعلاه ، نصل إلى تعليق الوالدين ونكرره من خلال ردوده. يمكننا استرداد معرف التعليق الأصلي وحالة حلها. بعد ذلك ، نقوم بتحديث علامة "تم" لكل رد على التعليق للإشارة إلى الحل.
+Im obigen Code greifen wir auf den übergeordneten Kommentar zu und durchlaufen seine Antworten. Wir können die ID des übergeordneten Kommentars und seinen Lösungsstatus abrufen. Anschließend aktualisieren wir die „Fertig“-Markierung jeder Kommentarantwort, um die Lösung anzuzeigen.
 
-## الخطوة 3: احفظ المستند
-بعد حل التعليقات وتحديث حالتها ، احفظ المستند المعدل في ملف باستخدام طريقة Save من فئة Document:
+## Schritt 3: Speichern Sie das Dokument
+Nachdem Sie die Kommentare aufgelöst und ihren Status aktualisiert haben, speichern Sie das geänderte Dokument mit der Save-Methode der Document-Klasse in einer Datei:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 ```
 
-### مثال على كود المصدر لحل التعليقات والردود عليها باستخدام Aspose.Words for .NET
-إليك التعليمات البرمجية المصدر الكاملة لحل التعليقات والردود عليها باستخدام Aspose.Words for .NET:
+### Beispielquellcode zum Auflösen von Kommentaren und deren Antworten mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode zum Auflösen von Kommentaren und deren Antworten mit Aspose.Words für .NET:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -69,9 +69,9 @@ foreach (Comment childComment in parentComment.Replies)
 
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 ```
-تذكر أن تقوم بضبط الكود وفقًا لمتطلباتك المحددة ، بما في ذلك مسار ملف المستند والتخصيص الإضافي
+Denken Sie daran, den Code entsprechend Ihren spezifischen Anforderungen anzupassen, einschließlich des Dokumentdateipfads und zusätzlicher Anpassungen
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية حل التعليقات والردود عليها في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن إدارة حل التعليقات وتحديث حالة التعليقات وردودها وفقًا لمتطلباتك.
+## Abschluss
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET Kommentare und deren Antworten in einem Word-Dokument auflösen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie nun die Kommentarauflösung verwalten und den Status von Kommentaren und deren Antworten entsprechend Ihren Anforderungen aktualisieren.
 
-يساعد حل التعليق في تعقب الملاحظات وإدارتها داخل المستند. جرب حالات تعليق مختلفة وقم بتخصيصها لتحسين التعاون وعمليات المراجعة في مستنداتك.
+Die Kommentarauflösung hilft bei der Verfolgung und Verwaltung von Feedback innerhalb eines Dokuments. Experimentieren Sie mit verschiedenen Kommentarstatus und passen Sie diese an, um die Zusammenarbeit und Überprüfungsprozesse in Ihren Dokumenten zu verbessern.

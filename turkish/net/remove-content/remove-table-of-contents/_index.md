@@ -1,44 +1,44 @@
 ---
-title: قم بإزالة جدول المحتويات
-linktitle: قم بإزالة جدول المحتويات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة جدول المحتويات من مستند Word باستخدام Aspose.Words for .NET.
+title: İçindekiler Tablosunu Kaldır
+linktitle: İçindekiler Tablosunu Kaldır
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesinden içindekileri nasıl kaldıracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/remove-content/remove-table-of-contents/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إزالة جدول المحتويات من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. قد يكون جدول المحتويات أحيانًا زائدًا عن الحاجة أو غير ضروري ، وسيساعدك هذا الرمز في إزالته بشكل فعال. سنقدم لك دليلًا تفصيليًا لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu öğreticide, .NET için Aspose.Words kitaplığını kullanarak bir Word belgesinden içindekiler tablosunu nasıl kaldıracağınızı anlatacağız. İçindekiler tablosu bazen gereksiz veya gereksiz olabilir ve bu kod, onu etkili bir şekilde kaldırmanıza yardımcı olacaktır. Kodu anlamanıza ve kendi .NET projenizde uygulamanıza yardımcı olacak adım adım bir kılavuz sağlayacağız.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على جدول محتويات تريد حذفه
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
+- Silmek istediğiniz içindekiler tablosunu içeren bir Word belgesi
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فئة باستخدام`Load` طريقة.
+## 2. Adım: Belgeyi yükleyin
+ Ardından, Word belgesini bir örneğine yükleyeceğiz.`Document` kullanarak sınıf`Load` yöntem.
 
 ```csharp
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## الخطوة 3: احذف جدول المحتويات
- لإزالة جدول المحتويات ، سنقوم بالمرور عبر نوع TOC (جدول المحتويات)`FieldStart` العقد في المستند. سنخزن هذه العقد حتى نتمكن من الوصول إليها بسرعة وإنشاء قائمة بالعقد لحذفها.
+## 3. Adım: İçindekiler tablosunu silin
+ İçindekiler tablosunu kaldırmak için, içindekiler (içindekiler tablosu) türünden geçeceğiz`FieldStart` belgedeki düğümler. Bu düğümleri hızlı bir şekilde erişebilmemiz ve silinecek düğümlerin bir listesini oluşturabilmemiz için saklayacağız.
 
 ```csharp
-// تخزين عقد FieldStart لحقول جدول المحتويات في المستند للوصول السريع.
+// Hızlı erişim için içindekiler alanlarının FieldStart düğümlerini belgede saklayın.
 List<FieldStart> fieldStarts = new List<FieldStart>();
-// هذه قائمة لتخزين العقد الموجودة داخل جدول المحتويات المحدد. سيتم حذفها في نهاية هذه الطريقة.
+// Bu, belirtilen TOC içinde bulunan düğümleri depolamak için bir listedir. Bu yöntemin sonunda silinecekler.
 List<Node> nodeList = new List<Node>();
 
 foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
@@ -49,7 +49,7 @@ foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
      }
 }
 
-// تحقق من وجود فهرس جدول المحتويات المحدد.
+// Belirtilen TOC indeksinin mevcut olup olmadığını kontrol edin.
 if (index > fieldStarts.Count - 1)
      throw new ArgumentOutOfRangeException("TOC index is out of range");
 
@@ -58,12 +58,12 @@ bool isRemoving = true;
 Node currentNode = fieldStarts[index];
 while (isRemoving)
 {
-     // من الآمن تخزين هذه العقد وحذفها جميعًا في النهاية.
+     // Bu düğümleri depolamak ve sonunda hepsini silmek daha güvenlidir.
      nodeList.Add(currentNode);
      currentNode = currentNode.NextPreOrder(doc);
 
-     // عندما نواجه عقدة FieldEnd من النوع FieldTOC ،
-     // نعلم أننا وصلنا إلى نهاية جدول المحتويات الحالي ونتوقف هنا.
+     // FieldTOC türünde bir FieldEnd düğümüyle karşılaştığımızda,
+     // mevcut TOK'un sonunda olduğumuzu biliyoruz ve burada duruyoruz.
      if (currentNode.NodeType == NodeType.FieldEnd)
      {
          FieldEnd fieldEnd = (FieldEnd)currentNode;
@@ -83,18 +83,18 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
 
-### عينة من التعليمات البرمجية المصدر لـ Remove Table Of Contents باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak İçindekiler Tablosunu Kaldırmak için örnek kaynak kodu 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "your-document.docx");
 
-// قم بتخزين عقد FieldStart لحقول جدول المحتويات في المستند للوصول السريع.
+// Hızlı erişim için içindekiler alanlarının FieldStart düğümlerini belgede saklayın.
 List<FieldStart> fieldStarts = new List<FieldStart>();
-// هذه قائمة لتخزين العقد الموجودة داخل جدول المحتويات المحدد. ستتم إزالتها في نهاية هذه الطريقة.
+// Bu, belirtilen TOC içinde bulunan düğümleri depolamak için bir listedir. Bu yöntemin sonunda kaldırılacaklar.
 List<Node> nodeList = new List<Node>();
 
 foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
@@ -105,7 +105,7 @@ foreach (FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
 	}
 }
 
-// تأكد من وجود جدول المحتويات المحدد بواسطة الفهرس الذي تم تمريره.
+// Geçirilen dizin tarafından belirtilen TOC'nin var olduğundan emin olun.
 if (index > fieldStarts.Count - 1)
 	throw new ArgumentOutOfRangeException("TOC index is out of range");
 
@@ -114,12 +114,12 @@ bool isRemoving = true;
 Node currentNode = fieldStarts[index];
 while (isRemoving)
 {
-	// من الآمن تخزين هذه العقد وحذفها جميعًا مرة واحدة لاحقًا.
+	// Bu düğümleri saklamak ve daha sonra hepsini birden silmek daha güvenlidir.
 	nodeList.Add(currentNode);
 	currentNode = currentNode.NextPreOrder(doc);
 
-	// بمجرد أن نواجه عقدة FieldEnd من النوع FieldTOC ،
-	// نعلم أننا وصلنا إلى نهاية جدول المحتويات الحالي ونتوقف هنا.
+	// FieldTOC türünde bir FieldEnd düğümüyle karşılaştığımızda,
+	// mevcut TOK'un sonunda olduğumuzu biliyoruz ve burada duruyoruz.
 	if (currentNode.NodeType == NodeType.FieldEnd)
 	{
 		FieldEnd fieldEnd = (FieldEnd) currentNode;
@@ -137,5 +137,5 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
         
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، قدمنا دليلًا تفصيليًا لإزالة جدول المحتويات من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. باتباع التعليمات البرمجية والإرشادات المتوفرة ، يمكنك بسهولة التخلص من جدول المحتويات وتحسين تخطيط المستند. تذكر تعديل مسار الدليل وأسماء الملفات لتناسب احتياجاتك الخاصة.
+## Çözüm
+Bu öğreticide, .NET için Aspose.Words kitaplığını kullanarak bir Word belgesinden içindekiler tablosunu kaldırmak için adım adım bir kılavuz sunduk. Sağlanan kodu ve yönergeleri izleyerek içindekiler tablosunu kolayca ortadan kaldırabilir ve belgenizin düzenini iyileştirebilirsiniz. Dizin yolunu ve dosya adlarını özel ihtiyaçlarınıza göre uyarlamayı unutmayın.

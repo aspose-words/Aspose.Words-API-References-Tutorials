@@ -1,51 +1,51 @@
 ---
-title: حذف محتوى القسم
-linktitle: حذف محتوى القسم
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية حذف المحتوى من قسم معين من مستند Word باستخدام Aspose.Words for .NET.
+title: Bölüm İçeriğini Sil
+linktitle: Bölüm İçeriğini Sil
+second_title: Aspose.Words for .NET API Referansı
+description: Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinin belirli bir bölümündeki içeriğin nasıl silineceğini öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-section/delete-section-content/
 ---
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية حذف المحتوى من قسم معين من مستند Word باستخدام مكتبة Aspose.Words لـ .NET. يمكن أن تكون إزالة المحتوى من أحد الأقسام مفيدة عندما تريد إعادة تعيين محتوى معين أو إزالته من هذا القسم. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu öğreticide, .NET için Aspose.Words kitaplığını kullanarak bir Word belgesinin belirli bir bölümündeki içeriği nasıl sileceğinizi göstereceğiz. Bir bölümden içeriği kaldırmak, o bölümden belirli bir içeriği sıfırlamak veya kaldırmak istediğinizde yararlı olabilir. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على القسم الذي تريد حذف محتواه
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
+- İçeriğini silmek istediğiniz bölümü içeren bir Word belgesi
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وانتقل إلى القسم
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فصل. سنصل إلى القسم الأول من المستند باستخدام الفهرس 0.
+## 2. Adım: Belgeyi yükleyin ve bölüme gidin
+ Ardından, Word belgesini bir örneğine yükleyeceğiz.`Document` sınıf. 0 indeksini kullanarak belgenin ilk bölümüne erişeceğiz.
 
 ```csharp
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "Document.docx");
 
-// قم بالوصول إلى القسم
+// Bölüme erişin
 Section section = doc.Sections[0];
 ```
 
-## الخطوة 3: حذف محتوى القسم
-لمسح محتوى القسم ، سنستخدم القسم`ClearContent` طريقة.
+## 3. Adım: Bölüm İçeriğini Silin
+Bölümün içeriğini temizlemek için bölümün içeriğini kullanacağız.`ClearContent` yöntem.
 
 ```csharp
 section.ClearContent();
 ```
 
-### نموذج التعليمات البرمجية المصدر لحذف محتوى القسم باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Bölüm İçeriğini Sil için örnek kaynak kodu 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -54,5 +54,5 @@ section.ClearContent();
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية حذف المحتوى من قسم معين من مستند Word باستخدام Aspose.Words for .NET. تسمح لك إزالة المحتوى من القسم بإعادة تعيين محتوى معين أو إزالته من هذا القسم. لا تتردد في تخصيص هذه الميزة واستخدامها وفقًا لاحتياجاتك الخاصة.
+## Çözüm
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinin belirli bir bölümündeki içeriğin nasıl silineceğini gördük. Bir bölümden içeriği kaldırmak, o bölümden belirli içeriği sıfırlamanıza veya kaldırmanıza olanak tanır. Özel ihtiyaçlarınıza göre bu özelliği özelleştirmekten ve kullanmaktan çekinmeyin.

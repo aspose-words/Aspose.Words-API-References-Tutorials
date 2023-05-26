@@ -1,62 +1,62 @@
 ---
-title: قائمة نقطية
-linktitle: قائمة نقطية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء قائمة نقطية باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Punktlista
+linktitle: Punktlista
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du skapar en punktlista med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/working-with-markdown/bulleted-list/
 ---
 
-في هذا البرنامج التعليمي ، سنخبرك بكيفية إنشاء قائمة نقطية باستخدام Aspose.Words for .NET. يتم استخدام قائمة نقطية لسرد العناصر بدون استخدام الترقيم.
+den här handledningen kommer vi att berätta för dig hur du skapar en punktlista med Aspose.Words för .NET. En punktlista används för att lista objekt utan att använda numrering.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Steg 1: Använda en dokumentgenerator
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Först använder vi en dokumentgenerator för att lägga till innehåll i vårt dokument.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تطبيق قائمة نقطية افتراضية
+## Steg 2: Tillämpa en standard punktlista
 
- يمكننا تطبيق قائمة افتراضية ذات تعداد نقطي باستخدام قائمة منشئ المستندات`ApplyBulletDefault` طريقة.
+ Vi kan använda en standard punktlista med hjälp av dokumentbyggarens`ApplyBulletDefault` metod.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## الخطوة 3: تخصيص تنسيق الرمز النقطي
+## Steg 3: Anpassa Bullet Format
 
- يمكننا تخصيص تنسيق الرمز النقطي من خلال الوصول إلى خصائص`ListFormat.List.ListLevels[0]`. في هذا المثال ، نستخدم الشرطة "-" كرمز نقطي.
+ Vi kan anpassa punktformatet genom att komma åt egenskaperna för`ListFormat.List.ListLevels[0]`. I det här exemplet använder vi bindestrecket "-" som en punkt.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## الخطوة 4: إضافة عناصر إلى القائمة
+## Steg 4: Lägga till objekt i listan
 
- يمكننا الآن إضافة عناصر إلى القائمة النقطية باستخدام أداة إنشاء المستندات`Writeln` طريقة.
+ Nu kan vi lägga till objekt till punktlistan med hjälp av dokumentbyggarens`Writeln` metod.
 
 ```csharp
 builder. Writen("Element 1");
 builder. Writen("Element 2");
 ```
 
-## الخطوة 5: إزالة المسافة البادئة من القائمة
+## Steg 5: Ta bort indrag från listan
 
- إذا أردنا إنشاء قائمة فرعية ، فيمكننا زيادة المسافة البادئة باستخدام`ListFormat.ListIndent()` طريقة. في هذا المثال ، نضيف قائمة فرعية إلى البندين 2 أ و 2 ب.
+ Om vi vill skapa en underlista kan vi öka indraget med hjälp av`ListFormat.ListIndent()` metod. I det här exemplet lägger vi till en underlista till punkterna 2a och 2b.
 
 ```csharp
 builder.ListFormat.ListIndent();
 builder. Writeln("Element 2a");
 builder.Writeln("Element 2b");
 ```
-### مثال على شفرة المصدر لقائمة التعداد النقطي باستخدام Aspose.Words for .NET
+### Exempel på källkod för punktlista med Aspose.Words för .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
 	DocumentBuilder builder = new DocumentBuilder();
 
 	builder.ListFormat.ApplyBulletDefault();
@@ -72,5 +72,5 @@ builder.Writeln("Element 2b");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية إنشاء قائمة نقطية باستخدام Aspose.Words for .NET.
+Grattis! Du har nu lärt dig hur du skapar en punktlista med Aspose.Words för .NET.
 

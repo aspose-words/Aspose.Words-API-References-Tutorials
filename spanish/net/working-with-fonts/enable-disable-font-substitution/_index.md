@@ -1,57 +1,57 @@
 ---
-title: قم بتمكين تعطيل استبدال الخط
-linktitle: قم بتمكين تعطيل استبدال الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تمكين أو تعطيل استبدال الخط في مستند Word باستخدام Aspose.Words for .NET.
+title: Habilitar Deshabilitar sustitución de fuentes
+linktitle: Habilitar Deshabilitar sustitución de fuentes
+second_title: Referencia de API de Aspose.Words para .NET
+description: En este tutorial, aprenda cómo habilitar o deshabilitar la sustitución de fuentes en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/enable-disable-font-substitution/
 ---
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تمكين أو تعطيل استبدال الخط في مستند Word عند عرضه باستخدام مكتبة Aspose.Words لـ .NET. يتيح لك تمكين أو تعطيل استبدال الخط التحكم في ما إذا كان سيتم استبدال الخطوط المفقودة تلقائيًا بخط افتراضي. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+En este tutorial, lo guiaremos a través de cómo habilitar o deshabilitar la sustitución de fuentes en un documento de Word al procesarlo usando la biblioteca Aspose.Words para .NET. Habilitar o deshabilitar la sustitución de fuentes le permite controlar si las fuentes que faltan se reemplazan automáticamente con una fuente predeterminada. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word الذي تريد عرضه باستبدال الخط أو بدونه
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes elementos:
+- Un conocimiento práctico del lenguaje de programación C#
+- La biblioteca Aspose.Words para .NET instalada en su proyecto
+- Un documento de Word que desea representar con o sin sustitución de fuente
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+ Primero, debe establecer la ruta del directorio en la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta adecuada.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند وتكوين إعدادات الخط
- بعد ذلك ، سنقوم بتحميل مستند Word الذي تريد عرضه وإنشاء مثيل لملف`FontSettings` فئة للتعامل مع إعدادات الخط. سنقوم بتعيين تجاوز الخط الافتراضي عن طريق تحديد اسم الخط في`DefaultFontName` وتعطيل تجاوز معلومات الخط بـ`Enabled` ضبط ل`false`.
+## Paso 2: Cargue el documento y configure los ajustes de fuente
+ A continuación, cargaremos el documento de Word que desea representar y crearemos una instancia del`FontSettings` clase para manejar la configuración de la fuente. Estableceremos la anulación de la fuente predeterminada especificando el nombre de la fuente en`DefaultFontName` y deshabilite la anulación de información de fuente con`Enabled` ajustado a`false`.
 
 ```csharp
-//قم بتحميل المستند
+//Cargue el documento
 Document doc = new Document(dataDir + "Rendering.docx");
 
-// تكوين إعدادات الخط
+// Configurar ajustes de fuente
 FontSettings fontSettings = new FontSettings();
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
 fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
 
-// قم بتطبيق إعدادات الخط على المستند
+// Aplicar la configuración de fuente al documento
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 3: احفظ المستند المقدم
-أخيرًا ، سنحفظ المستند الذي تم تقديمه ، والذي سيحترم إعدادات تجاوز الخط المحددة.
+## Paso 3: Guarde el documento renderizado
+Finalmente, guardaremos el documento renderizado, que respetará la configuración de anulación de fuente definida.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 
-### نموذج التعليمات البرمجية المصدر لـ Enable Disable Font Substitution باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Habilitar Deshabilitar sustitución de fuentes usando Aspose.Words para .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -63,5 +63,5 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تمكين أو تعطيل استبدال الخط في مستند Word عند عرضه باستخدام Aspose.Words for .NET. من خلال التحكم في استبدال الخط ، يمكنك التأثير على كيفية معالجة الخطوط المفقودة في المستندات المقدمة. لا تتردد في استخدام هذه الميزة لتخصيص إدارة الخطوط في مستندات Word الخاصة بك.
+## Conclusión
+En este tutorial, vimos cómo habilitar o deshabilitar la sustitución de fuentes en un documento de Word al representarlo con Aspose.Words para .NET. Al controlar la sustitución de fuentes, puede influir en cómo se manejan las fuentes que faltan en sus documentos renderizados. No dudes en utilizar esta función para personalizar la gestión de fuentes en tus documentos de Word.

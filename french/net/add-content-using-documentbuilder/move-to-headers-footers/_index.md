@@ -1,40 +1,40 @@
 ---
-title: الانتقال إلى تذييلات الرؤوس
-linktitle: الانتقال إلى تذييلات الرؤوس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للتنقل وتعديل الرؤوس والتذييلات في مستندات Word باستخدام هذا الدليل التفصيلي.
+title: Déplacer vers les en-têtes
+linktitle: Déplacer vers les en-têtes
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à utiliser Aspose.Words pour .NET pour naviguer et modifier les en-têtes et les pieds de page dans les documents Word avec ce guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Headers Footers في Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تتيح للمطورين إنشاء مستندات Word وتعديلها وتحويلها برمجيًا. تتيح لنا ميزة Move To Headers / Footers التنقل إلى رؤوس وتذييلات مختلفة داخل المستند وإضافة محتوى إليها.
+Dans cet exemple, nous allons explorer la fonctionnalité Move To Headers Footers de Aspose.Words pour .NET. Aspose.Words est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programmation. La fonction Déplacer vers les en-têtes/pieds de page nous permet de naviguer vers différents en-têtes et pieds de page dans un document et d'y ajouter du contenu.
 
-دعنا ننتقل إلى الكود المصدري خطوة بخطوة لفهم كيفية استخدام ميزة Move To Headers / Footers باستخدام Aspose.Words for .NET.
+Passons en revue le code source étape par étape pour comprendre comment utiliser la fonctionnalité Déplacer vers les en-têtes/pieds de page à l'aide de Aspose.Words pour .NET.
 
 
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## Étape 1 : Initialisation du document et du générateur de documents
 
-أولاً ، قم بتهيئة كائنات Document و DocumentBuilder:
+Tout d'abord, initialisez les objets Document et DocumentBuilder :
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الرؤوس والتذييلات
+## Étape 2 : Configurer les en-têtes et les pieds de page
 
-حدد إعدادات الرأس / التذييل للمستند. في هذا المثال ، قمنا بتعيين الرؤوس والتذييلات لتكون مختلفة للصفحة الأولى وللصفحات الفردية / الزوجية:
+Spécifiez les paramètres d'en-tête/pied de page du document. Dans cet exemple, nous définissons les en-têtes et les pieds de page pour qu'ils soient différents pour la première page et pour les pages paires/impaires :
 
 ```csharp
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 ```
 
-## الخطوة 3: إنشاء رؤوس الصفحات المختلفة
+## Étape 3 : Créer des en-têtes pour différentes pages
 
-انتقل إلى كل نوع من أنواع العناوين وأضف محتوى إليها. في هذا المثال ، نقوم بإنشاء رؤوس للصفحة الأولى وحتى الصفحات وجميع الصفحات الأخرى:
+Accédez à chaque type d'en-tête et ajoutez-y du contenu. Dans cet exemple, nous créons des en-têtes pour la première page, les pages paires et toutes les autres pages :
 
 ```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
@@ -47,38 +47,38 @@ builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 builder.Write("Header for all other pages");
 ```
 
-## الخطوة 4: إنشاء صفحات في المستند
-أضف محتوى إلى المستند لإنشاء صفحات متعددة. على سبيل المثال:
+## Étape 4 : Créer des pages dans le document
+Ajoutez du contenu au document pour créer plusieurs pages. Par exemple:
 
 ```csharp
-// قم بإنشاء صفحتين في المستند.
+// Créez deux pages dans le document.
 builder.MoveToSection(0);
 builder.Writeln("Page1");
 builder.InsertBreak(BreakType.PageBreak);
 builder.Writeln("Page2");
 ```
-## الخطوة 5: حفظ المستند
+## Étape 5 : Enregistrer le document
 
-احفظ المستند المعدل في المكان المطلوب:
+Enregistrez le document modifié à l'emplacement souhaité :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```
 
-تأكد من تحديد مسار الملف المناسب وتنسيقه (على سبيل المثال ، DOCX).
+Assurez-vous de spécifier le chemin et le format de fichier appropriés (par exemple, DOCX).
 
-### مثال على شفرة المصدر لـ Move To Headers / Footers باستخدام Aspose.Words for .NET
+### Exemple de code source pour déplacer vers les en-têtes/pieds de page à l'aide de Aspose.Words pour .NET
 
 ```csharp
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// حدد أننا نريد اختلاف الرؤوس والتذييلات للصفحات الأولى والزوجية والفردية.
+	// Spécifiez que nous voulons des en-têtes et des pieds de page différents pour les premières pages, paires et impaires.
 	builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 	builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
-	// قم بإنشاء الرؤوس.
+	// Créez les en-têtes.
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
 	builder.Write("Header for the first page");
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
@@ -86,7 +86,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.doc
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 	builder.Write("Header for all other pages");
 
-	// قم بإنشاء صفحتين في المستند.
+	// Créez deux pages dans le document.
 	builder.MoveToSection(0);
 	builder.Writeln("Page1");
 	builder.InsertBreak(BreakType.PageBreak);

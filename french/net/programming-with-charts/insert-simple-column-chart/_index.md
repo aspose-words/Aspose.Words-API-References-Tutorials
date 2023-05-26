@@ -1,44 +1,44 @@
 ---
-title: إدراج مخطط عمودي بسيط
-linktitle: إدراج مخطط عمودي بسيط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مخطط عمودي بسيط في مستند باستخدام Aspose.Words for .NET.
+title: Insérer un histogramme simple
+linktitle: Insérer un histogramme simple
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer un histogramme simple dans un document à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-charts/insert-simple-column-chart/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإدراج مخطط عمودي بسيط في مستند. يوضح كود المصدر المقدم كيفية إنشاء مخطط وإضافة بيانات متسلسلة وحفظ المستند.
+Ce tutoriel explique comment utiliser Aspose.Words pour .NET pour insérer un histogramme simple dans un document. Le code source fourni montre comment créer un graphique, ajouter des données de série et enregistrer le document.
 
-## الخطوة 1: قم بإعداد المشروع
+## Étape 1 : Configurer le projet
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Assurez-vous que vous disposez des prérequis suivants :
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger à partir du site Web officiel d'Aspose ou utiliser le gestionnaire de packages NuGet pour l'installer.
+- Un chemin d'accès au répertoire de documents où le document de sortie sera enregistré.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## Étape 2 : Créer un nouveau document et insérer un graphique
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط عمودي في المستند. يمكنك تحديد أنواع وأحجام مخططات مختلفة حسب متطلباتك.
+ Ensuite, utilisez le`InsertChart` méthode de la`DocumentBuilder` pour insérer un histogramme dans le document. Vous pouvez spécifier différents types et tailles de graphique selon vos besoins.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: أضف بيانات السلسلة إلى الرسم البياني
+## Étape 3 : Ajouter des données de série au graphique
 
-أضف بيانات السلاسل إلى المخطط. في هذا المثال ، سنضيف سلاسل متعددة بفئتين لكل منهما.
+Ajoutez des données de série au graphique. Dans cet exemple, nous allons ajouter plusieurs séries avec deux catégories chacune.
 
 ```csharp
 ChartSeriesCollection seriesColl = chart.Series;
@@ -53,34 +53,34 @@ seriesColl.Add("Aspose Series 4", categories, new double[] { 7, 8 });
 seriesColl.Add("Aspose Series 5", categories, new double[] { 9, 10 });
 ```
 
-## الخطوة 4: احفظ المستند
+## Étape 4 : Enregistrez le document
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Enfin, enregistrez le document dans le répertoire spécifié à l'aide de la`Save` méthode de la`Document` objet.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 ```
 
-هذا يكمل تنفيذ إدراج مخطط عمودي بسيط باستخدام Aspose.Words for .NET.
+Ceci termine l'implémentation de l'insertion d'un histogramme simple à l'aide de Aspose.Words pour .NET.
 
-### مثال على شفرة المصدر لإدراج مخطط عمودي بسيط باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Insérer un histogramme simple à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// يمكنك تحديد أنواع وأحجام مختلفة من المخططات.
+	// Vous pouvez spécifier différents types et tailles de graphique.
 	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 	Chart chart = shape.Chart;
 	ChartSeriesCollection seriesColl = chart.Series;
 	Console.WriteLine(seriesColl.Count);
-	// حذف السلاسل التي تم إنشاؤها بشكل افتراضي.
+	// Supprimer la série générée par défaut.
 	seriesColl.Clear();
-	// قم بإنشاء مصفوفة أسماء الفئات ، في هذا البرنامج التعليمي لدينا فئتان.
+	// Créer un tableau de noms de catégories, dans ce tutoriel, nous avons deux catégories.
 	string[] categories = new string[] { "Category 1", "Category 2" };
-	// الرجاء ملاحظة أنه يجب ألا تكون صفائف البيانات فارغة ويجب أن تكون المصفوفات بنفس الحجم.
+	// Veuillez noter que les tableaux de données ne doivent pas être vides et que les tableaux doivent avoir la même taille.
 	seriesColl.Add("Aspose Series 1", categories, new double[] { 1, 2 });
 	seriesColl.Add("Aspose Series 2", categories, new double[] { 3, 4 });
 	seriesColl.Add("Aspose Series 3", categories, new double[] { 5, 6 });

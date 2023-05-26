@@ -1,15 +1,15 @@
 ---
-title: تمكين ميزات OpenType
-linktitle: تمكين ميزات OpenType
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تمكين ميزات OpenType لتحسين أسلوب الطباعة ومظهر مستندات Word الخاصة بك.
+title: OpenType özelliklerini etkinleştir
+linktitle: OpenType özelliklerini etkinleştir
+second_title: Aspose.Words for .NET API Referansı
+description: Word belgelerinizin tipografisini ve görünümünü iyileştirmek için openType özelliklerini nasıl etkinleştireceğinizi öğrenin.
 type: docs
 weight: 40
 url: /tr/net/enable-opentype-features/
 ---
-تعرف على كيفية تمكين ميزات OpenType في مستندات Word باستخدام Aspose.Words for .NET. يأخذك هذا البرنامج التعليمي المفصل خطوة بخطوة خلال استخدام ميزات OpenType مثل الأحرف المركبة والبدائل الأسلوبية والبدائل السياقية والمزيد. تعرف على كيفية تمكين هذه الميزات لتحسين أسلوب الطباعة ومظهر مستندات Word الخاصة بك.
+Aspose.Words for .NET ile Word belgelerinizde OpenType özelliklerini nasıl etkinleştireceğinizi öğrenin. Bu ayrıntılı öğretici, bitişik harfler, biçimsel alternatifler, bağlamsal ikameler ve daha fazlası gibi OpenType özelliklerini kullanarak adım adım yol gösterir. Word belgelerinizin tipografisini ve görünümünü iyileştirmek için bu özellikleri nasıl etkinleştireceğinizi öğrenin.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [فتح ميزات النوع](./open-type-features/) | تعرف على كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words for .NET |
+| [Açık Tip Özellikler](./open-type-features/) | Aspose.Words for .NET'te Open Type özelliklerini nasıl etkinleştireceğinizi ve kullanacağınızı öğrenin |

@@ -1,21 +1,21 @@
 ---
-title: تحميل نطاق الصفحات من ملف PDF
-linktitle: تحميل نطاق الصفحات من ملف PDF
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحميل نطاق معين من صفحات PDF باستخدام Aspose.Words for .NET.
+title: Pdf Sayfa Aralığını Yükle
+linktitle: Pdf Sayfa Aralığını Yükle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile belirli bir PDF sayfa aralığını yüklemek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تحميل نطاق صفحات معين من مستند PDF باستخدام Aspose.Words for .NET. اتبع الخطوات التالية:
+Bu öğreticide, Aspose.Words for .NET kullanarak bir PDF belgesinden belirli bir sayfa aralığını nasıl yükleyeceğinizi size göstereceğiz. Aşağıdaki adımları takip et:
 
-## الخطوة 1: تحميل مجموعة من صفحات PDF
+## 1. Adım: Çeşitli PDF Sayfalarını Yükleme
 
-استخدم الكود التالي لتحميل نطاق صفحات معين من مستند PDF:
+Bir PDF belgesinden belirli bir sayfa aralığını yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -23,25 +23,25 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- في هذا المثال ، نقوم بتحميل الصفحة الأولى من مستند PDF. يمكنك تغيير قيم`PageIndex` و`PageCount` إلى نطاق الصفحات المطلوب.
+ Bu örnekte, PDF belgesinin ilk sayfasını yüklüyoruz. değerlerini değiştirebilirsiniz`PageIndex` Ve`PageCount` istediğiniz sayfa aralığına
 
-## الخطوة 2: حفظ المستند
+## 2. Adım: Belgeyi kaydetme
 
- أخيرًا ، يمكنك حفظ المستند الذي يحتوي على نطاق الصفحات المحدد باستخدام امتداد`Save` طريقة:
+ Son olarak, kullanarak belirli sayfa aralığını içeren belgeyi kaydedebilirsiniz.`Save` yöntem:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ المستند المحرر.
+Düzenlenen belgeyi kaydetmek için doğru yolu belirttiğinizden emin olun.
 
-هذا كل شئ ! لقد قمت الآن بتحميل نطاق صفحات معين من مستند PDF باستخدام Aspose.Words for .NET.
+Bu kadar ! Artık Aspose.Words for .NET kullanarak bir PDF belgesinden belirli bir sayfa aralığı yüklediniz.
 
-### مثال على شفرة المصدر لتحميل نطاق الصفحات من ملف PDF باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Load Page Range Of Pdf için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
 
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 	doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
    
 ```
-تذكر تحديد المسار الصحيح إلى دليل مستندات PDF الخاصة بك.
+PDF belgelerinizin dizinine giden doğru yolu belirtmeyi unutmayın.
 
 
 

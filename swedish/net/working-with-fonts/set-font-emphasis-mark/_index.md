@@ -1,29 +1,29 @@
 ---
-title: قم بتعيين علامة توكيد الخط
-linktitle: قم بتعيين علامة توكيد الخط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين نمط تأكيد الخط في مستند Word باستخدام Aspose.Words for .NET.
+title: Ställ in teckensnittsbetoning
+linktitle: Ställ in teckensnittsbetoning
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du ställer in teckensnittets betoningstil i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/set-font-emphasis-mark/
 ---
 
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين نمط تأكيد الخط في مستند Word باستخدام Aspose.Words for .NET. يستخدم التركيز على الخط لتمييز بعض الكلمات أو العبارات في النص.
+I den här handledningen kommer vi att visa dig hur du ställer in teckensnittets betoningstil i ett Word-dokument med Aspose.Words för .NET. Typsnittsbetoning används för att markera vissa ord eller fraser i text.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+Börja med att ange katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء وتخصيص المستند
- قم بإنشاء مثيل لـ`Document` فئة وما يرتبط بها`DocumentBuilder` لبناء محتوى الوثيقة. استخدم ال`Font.EmphasisMark`لتعيين نمط تأكيد الخط إلى`EmphasisMark.UnderSolidCircle` . ثم استخدم ملف`Write` و`Writeln` طرق`DocumentBuilder` لإضافة نص مع التركيز على الخط المحدد.
+## Steg 2: Skapa och anpassa dokumentet
+ Skapa en instans av`Document` klass och en tillhörande`DocumentBuilder` att bygga dokumentinnehållet. Använd`Font.EmphasisMark`egenskap för att ställa in teckensnittets betoningstil till`EmphasisMark.UnderSolidCircle` . Använd sedan`Write` och`Writeln` metoder för`DocumentBuilder` för att lägga till text med den angivna teckensnittets betoning.
 
 ```csharp
 Document document = new Document();
@@ -35,17 +35,17 @@ builder.Font.ClearFormatting();
 builder.Write("Simple text");
 ```
 
-## الخطوة 3: احفظ المستند
- احفظ المستند باستخدام ملف`Save` طريقة`Document` بالمسار واسم الملف المناسبين.
+## Steg 3: Spara dokumentet
+ Spara dokumentet med hjälp av`Save` metod för`Document` med lämplig sökväg och filnamn.
 
 ```csharp
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Font Emphasis Mark باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Set Font Emhasis Mark med Aspose.Words för .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document document = new Document();
@@ -58,5 +58,5 @@ builder.Write("Simple text");
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تعيين نمط تأكيد الخط في مستند Word باستخدام Aspose.Words for .NET. جرب أنماطًا مختلفة من التركيز واستخدم هذه الميزة لتمييز الكلمات أو العبارات في مستنداتك.
+## Slutsats
+I den här handledningen lärde du dig hur du ställer in teckensnittets betoningstil i ett Word-dokument med Aspose.Words för .NET. Experimentera med olika stilar av betoning och använd den här funktionen för att markera ord eller fraser i dina dokument.

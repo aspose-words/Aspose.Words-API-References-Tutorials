@@ -1,17 +1,17 @@
 ---
-title: وثيقة المالك
-linktitle: وثيقة المالك
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام مستند المالك في Aspose.Words for .NET.
+title: Sahip Belgesi
+linktitle: Sahip Belgesi
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'te sahip belgesini nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-node/owner-document/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح كود مصدر C # أدناه والذي يوضح كيفية استخدام وظائف المستندات الاحتكارية مع Aspose.Words for .NET.
+Aspose.Words for .NET ile tescilli belge işlevselliğinin nasıl kullanılacağını gösteren aşağıdaki C# kaynak kodunu açıklayan adım adım bir kılavuz.
 
-## الخطوة 1: استيراد المراجع الضرورية
-قبل أن تبدأ ، تأكد من استيراد المراجع الضرورية لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملف المصدر الخاص بك.
+## 1. Adım: Gerekli referansları içe aktarın
+Başlamadan önce, Aspose.Words for .NET'i kullanmak için gerekli referansları projenize aktardığınızdan emin olun. Bu, Aspose.Words kitaplığının içe aktarılmasını ve gerekli ad alanlarının kaynak dosyanıza eklenmesini içerir.
 
 ```csharp
 using Aspose.Words;
@@ -19,71 +19,71 @@ using Aspose.Words.Nodes;
 using Aspose.Words.Paragraphs;
 ```
 
-## الخطوة 2: قم بإنشاء مستند جديد
- في هذه الخطوة ، سننشئ مستندًا جديدًا باستخدام امتداد`Document` فصل.
+## 2. Adım: Yeni bir belge oluşturun
+ Bu adımda, kullanarak yeni bir belge oluşturacağız.`Document` sınıf.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 3: قم بإنشاء عقدة بمستند المالك
- عند إنشاء عقدة جديدة من أي نوع ، يجب عليك تمرير المستند إلى المنشئ. في هذا المثال ، نقوم بإنشاء عقدة فقرة جديدة باستخدام المستند`doc`.
+## 3. Adım: Sahip belgesiyle bir düğüm oluşturun
+ Herhangi bir türde yeni bir düğüm oluşturduğunuzda, belgeyi oluşturucuya iletmeniz gerekir. Bu örnekte, belgeyi kullanarak yeni bir paragraf düğümü oluşturuyoruz.`doc`.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 4: تحقق من العقدة الأصلية ومستند المالك
- الآن وقد أنشأنا عقدة الفقرة ، يمكننا التحقق مما إذا كانت تحتوي على عقدة أصلية وما إذا كان المستند المالك هو نفسه`doc`.
+## 4. Adım: Üst düğümü ve sahip belgesini kontrol edin
+ Artık paragraf düğümünü oluşturduğumuza göre, onun bir üst düğümü olup olmadığını ve sahibi olan belgenin aynı olup olmadığını kontrol edebiliriz.`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
 Console.WriteLine("The documents of the two nodes are identical: " + (para.Document == doc));
 ```
 
-## الخطوة 5: تعديل خصائص العقدة ببيانات المستند
-تسمح العلاقة بين العقدة والمستند بالوصول إلى الخصائص التي تشير إلى البيانات الخاصة بالمستند وتعديلها ، مثل الأنماط أو القوائم. في هذا المثال ، نقوم بتعيين اسم نمط الفقرة على أنه "العنوان 1".
+## Adım 5: Düğüm özelliklerini belge verileriyle değiştirin
+Bir düğüm ile bir belge arasındaki ilişki, stiller veya listeler gibi belgeye özgü verilere atıfta bulunan özelliklere erişim ve bu özelliklerin değiştirilmesine izin verir. Bu örnekte paragraf stili adını "Heading 1" olarak ayarlıyoruz.
 
 ```csharp
 para.ParagraphFormat.StyleName = "Heading 1";
 ```
 
-## الخطوة 6: أضف الفقرة إلى المستند
-الآن يمكننا إضافة عقدة الفقرة إلى القسم الرئيسي من المستند.
+## 6. Adım: Paragrafı belgeye ekleyin
+Artık paragraf düğümünü belgenin ana bölümüne ekleyebiliriz.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## الخطوة 7: تحقق من العقدة الأصلية بعد الإضافة
-بعد إضافة الفقرة إلى المستند ، نتحقق مرة أخرى مما إذا كانت تحتوي الآن على عقدة أصلية.
+## 7. Adım: Ekledikten sonra üst düğümü doğrulayın
+Belgeye paragrafı ekledikten sonra, artık bir üst düğüme sahip olup olmadığını tekrar kontrol ediyoruz.
 
 ```csharp
 Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
-### نموذج كود مصدر لمستند المالك مع Aspose.Words for .NET
+### Aspose.Words for .NET ile sahip belgesi için örnek kaynak kodu
 
 ```csharp
 	Document doc = new Document();
 
-	// يتطلب إنشاء عقدة جديدة من أي نوع تمرير مستند إلى المنشئ.
+	// Herhangi bir türde yeni bir düğüm oluşturmak, yapıcıya iletilen bir belge gerektirir.
 	Paragraph para = new Paragraph(doc);
 
-	// عقدة الفقرة الجديدة ليس لها أصل حتى الآن.
+	// Yeni paragraf düğümünün henüz bir üst öğesi yok.
 	Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 
-	// لكن عقدة الفقرة تعرف وثيقتها.
+	// Ancak paragraf düğümü belgesini bilir.
 	Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-	// تسمح لنا حقيقة أن العقدة تنتمي دائمًا إلى المستند بالوصول والتعديل
-	// الخصائص التي تشير إلى البيانات على مستوى المستند ، مثل الأنماط أو القوائم.
+	// Bir düğümün her zaman bir belgeye ait olması, erişmemize ve değiştirmemize izin verir.
+	// stiller veya listeler gibi belge genelindeki verilere başvuran özellikler.
 	para.ParagraphFormat.StyleName = "Heading 1";
 
-	// أضف الآن الفقرة إلى النص الرئيسي للقسم الأول.
+	// Şimdi paragrafı ilk bölümün ana metnine ekleyin.
 	doc.FirstSection.Body.AppendChild(para);
 
-	//أصبحت عقدة الفقرة الآن تابعة لعقدة النص الأساسي.
+	//Paragraf düğümü artık Gövde düğümünün alt öğesidir.
 	Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
             
 ```

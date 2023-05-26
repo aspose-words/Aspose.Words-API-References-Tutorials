@@ -1,30 +1,30 @@
 ---
-title: البرمجة مع الإشارات المرجعية
-linktitle: البرمجة مع الإشارات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إشارات مرجعية للوصول ، وتحديث بيانات الإشارة المرجعية ، وأعمدة جدول الإشارات المرجعية ، ونسخ نص تم وضع إشارة مرجعية عليه ، وإلحاق نص تم وضع إشارة مرجعية عليه ، وإنشاء إشارة مرجعية ، وإظهار إخفاء الإشارات المرجعية
+title: Programmering med bokmärken
+linktitle: Programmering med bokmärken
+second_title: Aspose.Words för .NET API Referens
+description: Handledningar innehåller åtkomstbokmärken, uppdatera bokmärkesdata, bokmärke tabellkolumner, kopiera bokmärkt text, lägga till bokmärkt text, skapa bokmärke, visa dölj bokma
 type: docs
 weight: 1380
 url: /sv/net/programming-with-bookmarks/
 ---
 
-ترشدك برامج Aspose.Words for .NET التعليمية إلى العديد من الميزات وتقنيات البرمجة للعمل مع الإشارات المرجعية في مستندات Word الخاصة بك. ستتعلم في هذه البرامج التعليمية كيفية إنشاء الإشارات المرجعية وإعادة تسميتها وحذفها والتنقل بينها. ستتعلم أيضًا كيفية استخراج محتوى الإشارات المرجعية واستبداله ، وكذلك كيفية إضافة إشارات مرجعية ديناميكية واستخدامها لإنشاء تقارير مخصصة.
+Aspose.Words för .NET tutorials leder dig genom olika funktioner och programmeringstekniker för att arbeta med bokmärken i dina Word-dokument. I dessa handledningar kommer du att lära dig hur du skapar, byter namn på, tar bort och navigerar mellan bokmärken. Du kommer också att lära dig hur du extraherar och ersätter bokmärkesinnehåll, samt hur du lägger till dynamiska bokmärken och använder dem för att skapa anpassade rapporter.
 
-تزودك البرامج التعليمية بأمثلة تفصيلية للتعليمات البرمجية وشروحات تفصيلية لمساعدتك على فهم المفاهيم وتنفيذها. سواء كنت جديدًا أو خبيرًا في برمجة .NET ، ستساعدك هذه البرامج التعليمية على تحقيق أقصى استفادة من ميزات الإشارات المرجعية في Aspose.Words.
+Handledningarna ger dig detaljerade kodexempel och steg-för-steg-förklaringar som hjälper dig att förstå och implementera begreppen. Oavsett om du är ny på eller har erfarenhet av .NET-programmering, kommer dessa tutorials hjälpa dig att få ut det mesta av bokmärkesfunktionerna i Aspose.Words.
 
-باتباع هذه البرامج التعليمية ، ستتمكن من معالجة الإشارات المرجعية بشكل فعال في مستندات Word الخاصة بك ، وبالتالي أتمتة المهام المختلفة مثل إنشاء التقارير وإنشاء جدول المحتويات الديناميكي وغير ذلك الكثير. استكشف Aspose.Words دروس تعليم مرجعية لـ .NET وحسّن إنتاجيتك في العمل مع مستندات Word.
+Genom att följa dessa tutorials kommer du att effektivt kunna manipulera bokmärken i dina Word-dokument och därigenom automatisera olika uppgifter som rapportgenerering, dynamisk innehållsförteckning och mycket mer. Utforska Aspose.Words för .NET bokmärkesstudier och förbättra din produktivitet när du arbetar med Word-dokument.
 
- ## دروس
-| عنوان | وصف |
+ ## Handledningar
+| Titel | Beskrivning |
 | --- | --- |
-| [الوصول إلى الإشارات المرجعية](./access-bookmarks/) | تعرف على كيفية الوصول إلى الإشارات المرجعية في مستند Word باستخدام Aspose.Words for .NET. |
-| [تحديث البيانات المرجعية](./update-bookmark-data/) | دليل خطوة بخطوة لشرح شفرة المصدر C # لميزة تحديث بيانات الإشارة المرجعية Aspose.Words لـ .NET. |
-| [أعمدة الجدول المرجعية](./bookmark-table-columns/) | تعرف على كيفية وضع إشارة مرجعية على عمود جدول في مستند Word باستخدام Aspose.Words for .NET. |
-| [نسخ النص الذي تم وضع إشارة مرجعية عليه](./copy-bookmarked-text/) | تعرف على كيفية نسخ نص إشارة مرجعية من مستند مصدر إلى مستند آخر باستخدام Aspose.Words for .NET. |
-| [إلحاق نص تم وضع إشارة مرجعية عليه](./append-bookmarked-text/) | تعرف على كيفية إضافة نص من إشارة مرجعية في مستند Word باستخدام Aspose.Words for .NET. |
-| [إنشاء إشارة مرجعية](./create-bookmark/) | تعرف على كيفية إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF باستخدام Aspose.Words for .NET. |
-| [إظهار إخفاء الإشارات المرجعية](./show-hide-bookmarks/) | تعرف على كيفية إظهار أو إخفاء إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET. |
-| [إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه](./show-hide-bookmarked-content/) | تعرف على كيفية إظهار أو إخفاء محتوى الإشارات المرجعية باستخدام Aspose.Words for .NET. |
-| [فك الإشارات المرجعية في الصف](./untangle-row-bookmarks/) | تعرف على كيفية فك تشابك الإشارات المرجعية للصفوف المتداخلة لإزالة صفوف معينة دون التأثير على الإشارات المرجعية الأخرى. |
-| [فك](./untangle/) | تعرف على كيفية فك تشابك الإشارات المرجعية المتداخلة في صفوف الجدول المجاورة باستخدام Aspose.Words for .NET. |
-| [حذف الصف حسب الإشارة المرجعية](./delete-row-by-bookmark/) | تعرف على كيفية حذف صف جدول بناءً على إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET. |
+| [Få tillgång till bokmärken](./access-bookmarks/) | Lär dig hur du kommer åt bokmärken i ett Word-dokument med Aspose.Words för .NET. |
+| [Uppdatera bokmärkesdata](./update-bookmark-data/) | Steg-för-steg-guide för att förklara C#-källkoden för Aspose.Words-funktionen för uppdatering av bokmärkesdata för .NET. |
+| [Bokmärk tabellkolumner](./bookmark-table-columns/) | Lär dig hur du bokmärker en tabellkolumn i ett Word-dokument med Aspose.Words för .NET. |
+| [Kopiera bokmärkt text](./copy-bookmarked-text/) | Lär dig hur du kopierar bokmärkestext från ett källdokument till ett annat dokument med Aspose.Words för .NET. |
+| [Lägg till bokmärkt text](./append-bookmarked-text/) | Lär dig hur du lägger till text från ett bokmärke i ett Word-dokument med Aspose.Words för .NET. |
+| [Skapa bokmärke](./create-bookmark/) | Lär dig hur du skapar bokmärken i ett dokument och anger förhandsgranskningsnivåer för bokmärken i en PDF med Aspose.Words för .NET. |
+| [Visa Göm bokmärken](./show-hide-bookmarks/) | Lär dig hur du visar eller döljer ett specifikt bokmärke i ett dokument med Aspose.Words för .NET. |
+| [Visa Dölj bokmärkt innehåll](./show-hide-bookmarked-content/) | Lär dig hur du visar eller döljer bokmärkesinnehåll med Aspose.Words för .NET. |
+| [Untangle radbokmärken](./untangle-row-bookmarks/) | Lär dig hur du reder ut kapslade radbokmärken för att ta bort specifika rader utan att påverka andra bokmärken. |
+| [Reda ut](./untangle/) | Lär dig hur du reder ut kapslade bokmärken i intilliggande tabellrader med Aspose.Words för .NET. |
+| [Ta bort rad efter bokmärke](./delete-row-by-bookmark/) | Lär dig hur du tar bort en tabellrad baserat på ett specifikt bokmärke i ett dokument med Aspose.Words för .NET. |

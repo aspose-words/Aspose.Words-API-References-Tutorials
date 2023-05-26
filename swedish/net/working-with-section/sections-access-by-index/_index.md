@@ -1,71 +1,71 @@
 ---
-title: الوصول إلى الأقسام حسب الفهرس
-linktitle: الوصول إلى الأقسام حسب الفهرس
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس وتغيير إعداداتها باستخدام Aspose.Words for .NET.
+title: Avsnitt Åtkomst via index
+linktitle: Avsnitt Åtkomst via index
+second_title: Aspose.Words för .NET API Referens
+description: I den här handledningen lär du dig hur du kommer åt delar av ett Word-dokument genom att indexera och ändrar deras inställningar med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-section/sections-access-by-index/
 ---
 
-في هذا البرنامج التعليمي ، سنوضح لك كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس باستخدام مكتبة Aspose.Words لـ .NET. يتيح لك الوصول إلى الأقسام حسب الفهرس استهداف قسم معين في المستند وتغيير إعداداته. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+I den här handledningen kommer vi att visa dig hur du kommer åt delar av ett Word-dokument genom att indexera med Aspose.Words-biblioteket för .NET. Genom att komma åt avsnitt efter index kan du rikta in dig på ett specifikt avsnitt i ditt dokument och ändra dess inställningar. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على الأقسام التي ترغب في تعديلها
+## Förutsättningar
+Innan du börjar, se till att du har följande saker:
+- Har praktiska kunskaper i programmeringsspråket C#
+- Aspose.Words-biblioteket för .NET installerat i ditt projekt
+- Ett Word-dokument som innehåller de avsnitt du vill ändra
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Steg 1: Definiera dokumentkatalogen
+ Först måste du ställa in katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وانتقل إلى قسم بفهرس
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document`فصل. للوصول إلى قسم معين ، نستخدم فهرس القسم. في هذا المثال ، نصل إلى القسم الأول باستخدام الفهرس 0.
+## Steg 2: Ladda dokumentet och hoppa till ett avsnitt för index
+ Därefter laddar vi Word-dokumentet i en instans av`Document`klass. För att komma åt en specifik sektion använder vi sektionsindexet. I det här exemplet kommer vi åt den första sektionen med index 0.
 
 ```csharp
-//قم بتحميل المستند
+//Ladda dokumentet
 Document doc = new Document(dataDir + "Document.docx");
 
-// الوصول إلى قسم بالفهرس
+// Få tillgång till ett avsnitt efter index
 Section section = doc.Sections[0];
 ```
 
-## الخطوة 3: تحرير إعدادات القسم
- لتعديل إعدادات القسم ، نستخدم خصائص القسم`PageSetup` هدف. في هذا المثال ، نقوم بتغيير الهوامش ، ومسافة الرأس والتذييل ، وتباعد أعمدة النص.
+## Steg 3: Redigera avsnittsinställningar
+ För att ändra sektionsinställningarna använder vi egenskaperna för sektionens`PageSetup` objekt. I det här exemplet ändrar vi marginalerna, sidhuvudet och sidfotens avstånd och avståndet mellan textkolumner.
 
 ```csharp
-section.PageSetup.LeftMargin = 90; // 3.17 سم
-section.PageSetup.RightMargin = 90; // 3.17 سم
-section.PageSetup.TopMargin = 72; // 2.54 سم
-section.PageSetup.BottomMargin = 72; // 2.54 سم
-section.PageSetup.HeaderDistance = 35.4; // 1.25 سم
-section.PageSetup.FooterDistance = 35.4; // 1.25 سم
-section.PageSetup.TextColumns.Spacing = 35.4; // 1.25 سم
+section.PageSetup.LeftMargin = 90; // 3,17 cm
+section.PageSetup.RightMargin = 90; // 3,17 cm
+section.PageSetup.TopMargin = 72; // 2,54 cm
+section.PageSetup.BottomMargin = 72; // 2,54 cm
+section.PageSetup.HeaderDistance = 35.4; // 1,25 cm
+section.PageSetup.FooterDistance = 35.4; // 1,25 cm
+section.PageSetup.TextColumns.Spacing = 35.4; // 1,25 cm
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Sections Access By Index باستخدام Aspose.Words for .NET 
+### Exempel på källkod för sektionsåtkomst via index med Aspose.Words för .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
 Section section = doc.Sections[0];
-section.PageSetup.LeftMargin = 90; // 3.17 سم
-section.PageSetup.RightMargin = 90; // 3.17 سم
-section.PageSetup.TopMargin = 72; // 2.54 سم
-section.PageSetup.BottomMargin = 72; // 2.54 سم
-section.PageSetup.HeaderDistance = 35.4; // 1.25 سم
-section.PageSetup.FooterDistance = 35.4; // 1.25 سم
-section.PageSetup.TextColumns.Spacing = 35.4; // 1.25 سم
+section.PageSetup.LeftMargin = 90; // 3,17 cm
+section.PageSetup.RightMargin = 90; // 3,17 cm
+section.PageSetup.TopMargin = 72; // 2,54 cm
+section.PageSetup.BottomMargin = 72; // 2,54 cm
+section.PageSetup.HeaderDistance = 35.4; // 1,25 cm
+section.PageSetup.FooterDistance = 35.4; // 1,25 cm
+section.PageSetup.TextColumns.Spacing = 35.4; // 1,25 cm
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس وتغيير إعداداتها باستخدام Aspose.Words for .NET. يتيح لك الوصول إلى الأقسام حسب الفهرس استهداف أقسام معينة في المستند وتخصيصها. لا تتردد في استخدام هذه الميزة لتلبية احتياجاتك الخاصة.
+## Slutsats
+I den här handledningen såg vi hur man kommer åt delar av ett Word-dokument genom att indexera och ändrar deras inställningar med Aspose.Words för .NET. Genom att komma åt avsnitt efter index kan du rikta in dig på och anpassa specifika avsnitt i ditt dokument. Använd gärna den här funktionen för att möta dina specifika behov.

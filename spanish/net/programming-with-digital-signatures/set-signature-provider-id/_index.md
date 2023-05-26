@@ -1,18 +1,18 @@
 ---
-title: قم بتعيين معرف موفر التوقيع
-linktitle: قم بتعيين معرف موفر التوقيع
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين معرف موفر التوقيع في مستند Word باستخدام Aspose.Words for .NET.
+title: Establecer ID de proveedor de firma
+linktitle: Establecer ID de proveedor de firma
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a configurar la ID del proveedor de firmas en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-digital-signatures/set-signature-provider-id/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات استخدام ميزة Set Signature Provider ID مع Aspose.Words for .NET. تتيح لك هذه الميزة تحديد معرف موفر التوقيع لسطر التوقيع في مستند Word. اتبع الخطوات التالية:
+En este tutorial, lo guiaremos a través de los pasos para usar la función Establecer ID de proveedor de firma con Aspose.Words para .NET. Esta función le permite especificar el ID del proveedor de firmas para una línea de firma en un documento de Word. Siga los pasos a continuación:
 
-## الخطوة 1: تحميل المستند والوصول إلى سطر التوقيع
+## Paso 1: Cargar el documento y acceder a la línea de firma
 
-ابدأ بتحميل المستند الذي يحتوي على سطر التوقيع:
+Comience cargando el documento que contiene la línea de firma:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +21,9 @@ Document doc = new Document(dataDir + "Signature line.docx");
 SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## الخطوة 2: تعيين خيارات التوقيع
+## Paso 2: Configuración de las opciones de firma
 
-قم بإنشاء مثيل لفئة SignOptions وقم بتعيين خيارات التوقيع ، بما في ذلك معرف الموفر:
+Cree una instancia de la clase SignOptions y configure las opciones de firma, incluido el ID del proveedor:
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -33,9 +33,9 @@ ProviderId = signatureLine.ProviderId,
 };
 ```
 
-## الخطوة الثالثة: توقيع الوثيقة
+## Paso 3: Firma del documento
 
-لتوقيع الوثيقة ، يجب عليك استخدام فئة DigitalSignatureUtil وتحديد شهادة التوقيع:
+Para firmar el documento, debe usar la clase DigitalSignatureUtil y especificar el certificado de firma:
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
@@ -44,15 +44,15 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 	dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند والشهادة والمستند الموقع.
+Asegúrese de especificar las rutas correctas para el documento, el certificado y el documento firmado.
 
-### مثال على شفرة المصدر لـ Set Signature Provider ID باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para establecer la identificación del proveedor de firmas usando Aspose.Words para .NET
 
-إليك كود المصدر الكامل لتعيين معرف موفر التوقيع باستخدام Aspose.Words for .NET:
+Aquí está el código fuente completo para establecer la ID del proveedor de firmas con Aspose.Words para .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// La ruta al directorio de documentos.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Signature line.docx");
 
@@ -71,5 +71,5 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 
 ```
 
-قم بإنهاء "معرف موفر التوقيع" في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Finalice el ID del proveedor de firmas en su documento de Word con Aspose.Words para .NET.
 

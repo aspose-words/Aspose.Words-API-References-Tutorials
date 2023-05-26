@@ -1,27 +1,27 @@
 ---
-title: استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة
-linktitle: استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لاستخدام حرف مسافة لكل مستوى في قائمة المسافة البادئة في Aspose.Words for .NET. قم بإنشاء مستندات Word جيدة التنظيم بسهولة.
+title: Liste Girintisi İçin Düzey Başına Boşluk Karakteri Kullanın
+linktitle: Liste Girintisi İçin Düzey Başına Boşluk Karakteri Kullanın
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'te liste girintisi için seviye başına bir boşluk karakteri kullanmaya yönelik adım adım kılavuz. İyi yapılandırılmış Word belgelerini kolaylıkla oluşturun.
 type: docs
 weight: 10
 url: /tr/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words إمكانية استخدام حرف مسافة واحد لكل مستوى لعمل مسافة بادئة للقوائم. في هذا الدليل ، سنوضح لك كيفية استخدام كود المصدر C # الخاص بـ Aspose.Words for .NET لتنفيذ هذه الوظيفة.
+Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, düzenlemek ve değiştirmek için güçlü bir kitaplıktır. Aspose.Words'ün sunduğu özellikler arasında, liste girintileri için seviye başına bir boşluk karakteri kullanma olasılığı yer alır. Bu kılavuzda, bu işlevi uygulamak için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الوظائف لإنشاء وتعديل ومعالجة مستندات Word ، بما في ذلك إدارة القوائم والمسافة البادئة.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle çalışmayı kolay ve verimli hale getiren popüler bir kitaplıktır. Listelerin ve girintilerin yönetimi de dahil olmak üzere Word belgelerini oluşturmak, değiştirmek ve işlemek için çok çeşitli işlevler sunar.
 
-## إنشاء الوثيقة وإضافة المحتوى
+## Belge oluşturma ve içerik ekleme
 
-تتمثل الخطوة الأولى في إنشاء مستند جديد وإضافة محتوى إليه. استخدم فئة المستند لإنشاء مثيل مستند جديد. ثم استخدم فئة DocumentBuilder لإضافة نص وإنشاء قائمة بمستويات متعددة من المسافة البادئة. هنا مثال :
+İlk adım, yeni bir belge oluşturmak ve ona içerik eklemektir. Yeni bir belge örneği oluşturmak için Document sınıfını kullanın. Ardından, metin eklemek ve birden çok girinti düzeyine sahip bir liste oluşturmak için DocumentBuilder sınıfını kullanın. İşte bir örnek :
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+// Üç girinti düzeyi içeren bir liste oluşturun
 builder.ListFormat.ApplyNumberDefault();
 builder. Writen("Element 1");
 builder.ListFormat.ListIndent();
@@ -30,11 +30,11 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند جديد واستخدام DocumentBuilder لإضافة نص وإنشاء قائمة بثلاثة مستويات من المسافة البادئة. لقد أضفنا ثلاثة عناصر إلى القائمة ، مع وضع مسافة بادئة لكل عنصر في مستوى إضافي.
+Bu örnekte, yeni bir belge oluşturuyoruz ve DocumentBuilder'ı metin eklemek ve üç girinti düzeyine sahip bir liste oluşturmak için kullanıyoruz. Listeye üç öğe ekledik, her öğe ek bir düzey girintili.
 
-## استخدام مسافة واحدة لكل مستوى للمسافة البادئة للقائمة
+## Liste girintisi için seviye başına bir boşluk karakteri kullanma
 
-بمجرد إضافة المحتوى ، يمكننا الآن تكوين المسافة البادئة للقوائم باستخدام حرف مسافة واحد لكل مستوى. لهذا نستخدم فئة TxtSaveOptions وقمنا بتعيين خاصية ListIndentation.Count على عدد مستويات المسافة البادئة وخاصية ListIndentation.Character إلى حرف المسافة المراد استخدامه. إليك الطريقة:
+İçerik eklendikten sonra artık listelerin girintisini seviye başına bir boşluk karakteri kullanarak yapılandırabiliriz. Bunun için TxtSaveOptions sınıfını kullanıyoruz ve ListIndentation.Count özelliğini girinti seviyeleri sayısına ve ListIndentation.Character özelliğini kullanılacak boşluk karakterine ayarlıyoruz. İşte nasıl:
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -44,11 +44,11 @@ saveOptions.ListIndentation.Character = ' ';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-في هذا المثال ، أنشأنا مثيلًا لـ TxtSaveOptions وقمنا بتعيين خاصية ListIndentation.Count على 3 للإشارة إلى وجود ثلاثة مستويات من المسافة البادئة في القائمة. قمنا أيضًا بتعيين خاصية ListIndentation.Character إلى حرف المسافة ('') الذي نريد استخدامه للمسافة البادئة.
+Bu örnekte, bir TxtSaveOptions örneği oluşturuyoruz ve listede üç girinti düzeyi olduğunu belirtmek için ListIndentation.Count özelliğini 3 olarak ayarlıyoruz. Ayrıca ListIndentation.Character özelliğini girinti için kullanmak istediğimiz boşluk karakterine (' ') ayarlıyoruz.
 
-### مثال على شفرة المصدر لميزة "استخدام حرف مسافة واحد لكل مستوى للمسافة البادئة للقائمة" مع Aspose.Words for .NET
+### Aspose.Words for .NET ile "Liste girintisi için seviye başına bir boşluk karakteri kullan" özelliği için örnek kaynak kodu
 
-فيما يلي نموذج التعليمات البرمجية المصدر الكامل لميزة "استخدام حرف مسافة واحد لكل مستوى للمسافة البادئة للقائمة" مع Aspose.Words for .NET:
+Aspose.Words for .NET ile "Liste girintisi için seviye başına bir boşluk karakteri kullan" özelliği için tam örnek kaynak kodunu burada bulabilirsiniz:
 
 ```csharp
 
@@ -61,14 +61,14 @@ namespace Example
      {
          static void Main(string[] args)
          {
-             // المسار إلى دليل المستند الخاص بك
+             // Belge dizininizin yolu
              string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-             // قم بإنشاء المستند وإضافة محتوى
+             // Belgeyi oluşturun ve içerik ekleyin
              Document doc = new Document();
              DocumentBuilder builder = new DocumentBuilder(doc);
 
-             // قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة
+             // Üç girinti düzeyi içeren bir liste oluşturun
              builder.ListFormat.ApplyNumberDefault();
              builder. Writen("Element 1");
              builder.ListFormat.ListIndent();
@@ -76,12 +76,12 @@ namespace Example
              builder.ListFormat.ListIndent();
              builder.Write("Element 3");
 
-             // استخدم مسافة واحدة لكل مستوى للمسافة البادئة للقائمة
+             // Liste girintisi için düzey başına bir boşluk karakteri kullanın
              TxtSaveOptions saveOptions = new TxtSaveOptions();
              saveOptions.ListIndentation.Count = 3;
              saveOptions.ListIndentation.Character = ' ';
 
-             // احفظ المستند بالخيارات المحددة
+             // Belgeyi belirtilen seçeneklerle kaydedin
              doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
          }
      }
@@ -89,6 +89,6 @@ namespace Example
 
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، أوضحنا كيفية استخدام Aspose.Words for .NET لتطبيق وظيفة "استخدام حرف مسافة واحد لكل مستوى من أجل المسافة البادئة للقائمة". باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تكوين المسافة البادئة للقوائم في مستندات Word الخاصة بك باستخدام حرف مسافة واحد لكل مستوى. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع تنسيق النص وإدارة القوائم ، مما يسمح لك بإنشاء مستندات جيدة التنظيم في تطبيق C # الخاص بك.
+Bu kılavuzda, "Liste girintisi için düzey başına bir boşluk karakteri kullan" işlevini uygulamak için Aspose.Words for .NET'in nasıl kullanılacağını açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak, Word belgelerinizdeki listelerin girintisini düzey başına bir boşluk karakteri kullanarak kolayca yapılandırabilirsiniz. Aspose.Words, C# uygulamanızda iyi yapılandırılmış belgeler oluşturmanıza izin vererek, metin formatlama ve liste yönetimi ile çalışmak için muazzam bir esneklik ve güç sunar.

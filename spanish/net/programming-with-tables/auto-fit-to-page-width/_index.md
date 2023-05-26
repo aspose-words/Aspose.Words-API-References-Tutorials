@@ -1,38 +1,38 @@
 ---
-title: احتواء تلقائي لعرض الصفحة
-linktitle: احتواء تلقائي لعرض الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية ملاءمة جدول تلقائيًا لعرض الصفحة في مستند Word باستخدام Aspose.Words for .NET.
+title: Ajuste automático al ancho de la página
+linktitle: Ajuste automático al ancho de la página
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a ajustar automáticamente una tabla al ancho de página en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/auto-fit-to-page-width/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words لـ .NET لملاءمة جدول تلقائيًا لعرض الصفحة في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من معالجة الجداول في مستندات Word برمجيًا.
+En este tutorial, aprenderemos a usar Aspose.Words para .NET para ajustar automáticamente una tabla al ancho de página en un documento de Word. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá manipular tablas en documentos de Word mediante programación.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Paso 1: Configuración del proyecto
+1. Inicie Visual Studio y cree un nuevo proyecto de C#.
+2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
-## الخطوة 2: إنشاء وتكوين المستند
-لبدء العمل مع الجدول ، نحتاج إلى إنشاء مستند وتكوين منشئ المستندات. اتبع هذه الخطوات:
+## Paso 2: Creación y configuración del documento
+Para comenzar a trabajar con la tabla, necesitamos crear un documento y configurar el generador de documentos. Sigue estos pasos:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بإنشاء المستند ومُنشئ المستند
+//Crear el documento y el generador de documentos
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
-## الخطوة 3: إدخال الجدول وتكوينه
-بعد ذلك ، سنقوم بإدراج جدول في المستند بعرض يشغل نصف عرض الصفحة. استخدم الكود التالي:
+## Paso 3: Inserción y configuración de la mesa
+A continuación, insertaremos una tabla en el documento con un ancho que ocupe la mitad del ancho de la página. Usa el siguiente código:
 
 ```csharp
-// أدخل الجدول وقم بتكوين عرضه
+// Inserta la tabla y configura su ancho
 Table table = builder. StartTable();
 builder. InsertCell();
 table. PreferredWidth = PreferredWidth. FromPercent(50);
@@ -43,27 +43,27 @@ builder. InsertCell();
 builder.Writeln("Cell #3");
 ```
 
-هنا نستخدم أداة إنشاء المستندات لبدء إنشاء الجدول وإدراج الخلايا وتعيين العرض المفضل للجدول على 50٪ من عرض الصفحة. ثم نضيف نصًا في كل خلية.
+Aquí usamos el generador de documentos para comenzar a crear la tabla, insertar celdas y establecer el ancho preferido de la tabla al 50% del ancho de la página. Luego agregamos texto en cada celda.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تعديل الجدول حسب عرض الصفحة. استخدم الكود التالي:
+## Paso 4: Guardar el documento modificado
+Finalmente, debemos guardar el documento modificado con la tabla ajustada al ancho de la página. Usa el siguiente código:
 
 ```csharp
-// احفظ المستند المعدل
+// Guardar el documento modificado
 doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Asegúrese de especificar la ruta y el nombre de archivo correctos para el documento de salida.
   
-### عينة من التعليمات البرمجية المصدر لـ Auto Fit To Page Width باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Ajuste automático al ancho de la página usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// قم بإدراج جدول بعرض يشغل نصف عرض الصفحة.
+	// Inserte una tabla con un ancho que ocupe la mitad del ancho de la página.
 	Table table = builder.StartTable();
 	builder.InsertCell();
 	table.PreferredWidth = PreferredWidth.FromPercent(50);
@@ -75,5 +75,5 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 	doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية ملاءمة جدول لعرض الصفحة تلقائيًا في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك معالجة الجداول في مستندات Word برمجيًا. تتيح لك هذه الميزة تكييف عرض الجدول ديناميكيًا وفقًا للصفحة ، وبالتالي تقديم مستند احترافي وجذاب بصريًا.
+## Conclusión
+En este tutorial, aprendimos cómo ajustar automáticamente una tabla al ancho de página en un documento de Word usando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# proporcionado, puede manipular tablas en sus documentos de Word mediante programación. Esta función le permite adaptar dinámicamente el ancho de la tabla según la página, ofreciendo así un documento profesional y visualmente atractivo.

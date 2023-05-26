@@ -1,37 +1,37 @@
 ---
-title: نسخ تذييلات الرؤوس من القسم السابق
-linktitle: نسخ تذييلات الرؤوس من القسم السابق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية نسخ الرؤوس والتذييلات من القسم السابق في مستندات Word باستخدام Aspose.Words for .NET.
+title: Kopiera sidhuvuden sidfötter från föregående avsnitt
+linktitle: Kopiera sidhuvuden sidfötter från föregående avsnitt
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du kopierar sidhuvuden och sidfötter från föregående avsnitt i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-headers-and-footers/copy-headers-footers-from-previous-section/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية نسخ الرؤوس والتذييلات من القسم السابق في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+I denna steg-för-steg handledning kommer vi att guida dig om hur du kopierar sidhuvuden och sidfötter från föregående avsnitt i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
-## الخطوة 1: الوصول إلى القسم السابق
+## Steg 1: Åtkomst till föregående avsnitt
 
- أولاً ، قم باسترداد القسم السابق من خلال الوصول إلى ملف`PreviousSibling` خاصية القسم الحالي:
+ Hämta först föregående avsnitt genom att gå till`PreviousSibling` egenskapen för den aktuella sektionen:
 
 ```csharp
 Section previousSection = (Section)section.PreviousSibling;
 ```
 
-## الخطوة 2: التحقق من القسم السابق
+## Steg 2: Sök efter föregående avsnitt
 
-بعد ذلك ، تحقق من وجود قسم سابق. إذا لم يكن هناك قسم سابق ، فنعود ببساطة:
+Kontrollera sedan om ett tidigare avsnitt finns. Om det inte finns något tidigare avsnitt returnerar vi helt enkelt:
 
 ```csharp
 if (previousSection == null)
     return;
 ```
 
-## الخطوة 3: مسح ونسخ الرؤوس والتذييلات
+## Steg 3: Rensa och kopiera sidhuvuden och sidfötter
 
-لنسخ الرؤوس والتذييلات من القسم السابق إلى القسم الحالي ، نقوم بمسح الرؤوس والتذييلات الموجودة في القسم الحالي ثم نكررها من خلال الرؤوس والتذييلات في القسم السابق لإضافة نسخ مستنسخة إلى القسم الحالي:
+För att kopiera sidhuvuden och sidfötter från föregående avsnitt till det aktuella avsnittet rensar vi befintliga sidhuvuden och sidfötter i det aktuella avsnittet och går sedan igenom sidhuvuden och sidfötter i föregående avsnitt för att lägga till klonade kopior till det aktuella avsnittet:
 
 ```csharp
 section.HeadersFooters.Clear();
@@ -40,17 +40,17 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
     section.HeadersFooters.Add(headerFooter.Clone(true));
 ```
 
-## الخطوة 4: حفظ المستند
+## Steg 4: Spara dokumentet
 
-أخيرًا ، احفظ المستند المعدل:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-هذا كل شيء! لقد نجحت في نسخ الرؤوس والتذييلات من القسم السابق إلى القسم الحالي في مستند Word باستخدام Aspose.Words for .NET.
+Det är allt! Du har framgångsrikt kopierat sidhuvuden och sidfötter från föregående avsnitt till det aktuella avsnittet i ett Word-dokument med Aspose.Words för .NET.
 
-### مثال على شفرة المصدر لنسخ تذييلات الرؤوس من القسم السابق باستخدام Aspose.Words for .NET
+### Exempel på källkod för kopiera sidhuvuden sidfötter från föregående avsnitt med Aspose.Words för .NET
 
 ```csharp
 Section previousSection = (Section)section.PreviousSibling;
@@ -66,4 +66,4 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
 doc.Save("OutputDocument.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+Använd gärna den här koden i dina egna projekt och modifiera den efter dina specifika krav.

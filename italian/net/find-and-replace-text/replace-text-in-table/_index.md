@@ -1,63 +1,63 @@
 ---
-title: استبدال النص في الجدول
-linktitle: استبدال النص في الجدول
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استبدال نص في جدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Sostituisci il testo nella tabella
+linktitle: Sostituisci il testo nella tabella
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come sostituire il testo in una tabella in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/find-and-replace-text/replace-text-in-table/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة "استبدال النص في الجدول" في Aspose.Words لمكتبة .NET. تتيح لك هذه الميزة البحث عن نص معين واستبداله داخل جدول في مستند Word.
+In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Sostituisci testo nella tabella nella libreria Aspose.Words per .NET. Questa funzione consente di trovare e sostituire testo specifico all'interno di una tabella in un documento di Word.
 
-## المتطلبات الأساسية
+## Prerequisiti
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conoscenza base del linguaggio C#.
+- Ambiente di sviluppo .NET con libreria Aspose.Words installata.
 
-## الخطوة 1: قم بتحميل المستند
+## Passaggio 1: caricare il documento
 
- قبل أن نبدأ في استخدام استبدال النص في جدول ، نحتاج إلى تحميل المستند إلى Aspose.Words for .NET. يمكن القيام بذلك باستخدام ملف`Document` فئة وتحديد مسار ملف المستند:
+ Prima di iniziare a utilizzare la sostituzione del testo in una tabella, dobbiamo caricare il documento in Aspose.Words per .NET. Questo può essere fatto usando il`Document` class e specificando il percorso del file del documento:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## الخطوة 2: الوصول إلى اللوحة
+## Passaggio 2: accedi alla scheda
 
- بمجرد تحميل المستند ، نحتاج إلى الانتقال إلى الجدول حيث نريد إجراء استبدال النص. في مثالنا ، نستخدم الامتداد`GetChild` الطريقة مع`NodeType.Table` المعلمة للحصول على الجدول الأول في المستند:
+ Una volta caricato il documento, dobbiamo navigare fino alla tabella in cui vogliamo eseguire la sostituzione del testo. Nel nostro esempio, usiamo il`GetChild` metodo con il`NodeType.Table` parametro per ottenere la prima tabella nel documento:
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## الخطوة 3: إجراء استبدال النص
+## Passaggio 3: eseguire la sostituzione del testo
 
- الآن نستخدم ملف`Range.Replace` طريقة لإجراء استبدال النص في المصفوفة. في مثالنا ، نستبدل كل تكرارات كلمة "Carrots" بكلمة "Eggs" باستخدام امتداد`FindReplaceOptions` الخيار مع`FindReplaceDirection.Forward` اتجاه البحث. بالإضافة إلى ذلك ، نستبدل القيمة "50" بـ "20" في الخلية الأخيرة من الصف الأخير من الجدول:
+ Ora usiamo il`Range.Replace` metodo per eseguire la sostituzione del testo nell'array. Nel nostro esempio, sostituiamo tutte le occorrenze della parola "Carote" con "Uova" utilizzando l'`FindReplaceOptions` opzione con il`FindReplaceDirection.Forward` direzione di ricerca. Inoltre, sostituiamo il valore "50" con "20" nell'ultima cella dell'ultima riga della tabella:
 
 ```csharp
 table.Range.Replace("Carrots", "Eggs", new FindReplaceOptions(FindReplaceDirection.Forward));
 table.LastRow.LastCell.Range.Replace("50", "20", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-## الخطوة 4: احفظ المستند المحرر
+## Passaggio 4: salvare il documento modificato
 
- أخيرًا ، نحفظ المستند المعدل في دليل محدد باستخدام امتداد`Save` طريقة:
+ Infine, salviamo il documento modificato in una directory specificata utilizzando il file`Save` metodo:
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextInTable.docx");
 ```
 
-Aspose.Words for .NET اتبعنا دليلًا تفصيليًا لتحميل مستند والوصول إلى الجدول وإجراء استبدال النص وحفظ المستند المعدل.
+Aspose.Words per .NET Abbiamo seguito una guida passo passo per caricare un documento, accedere alla tabella, eseguire la sostituzione del testo e salvare il documento modificato.
 
-### مثال على شفرة المصدر لـ Replace Text In Table باستخدام Aspose.Words لـ .NET
+### Esempio di codice sorgente per Sostituisci testo nella tabella utilizzando Aspose.Words per .NET
 
-في ما يلي نموذج التعليمات البرمجية المصدر الكامل لإثبات استخدام استبدال النص في جدول مع Aspose.Words for .NET:
+Ecco il codice sorgente di esempio completo per dimostrare l'utilizzo della sostituzione del testo in una tabella con Aspose.Words per .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Tables.docx");
 
@@ -70,6 +70,6 @@ Aspose.Words for .NET اتبعنا دليلًا تفصيليًا لتحميل م
     
 ```
 
-## خاتمة
+## Conclusione
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة Aspose's Replace Text In Table.
+In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzione Sostituisci testo nella tabella di Aspose.

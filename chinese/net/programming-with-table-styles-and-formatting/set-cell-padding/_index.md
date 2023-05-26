@@ -1,54 +1,54 @@
 ---
-title: تعيين مساحة الخلية
-linktitle: تعيين مساحة الخلية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتحديد هوامش خلايا الجدول باستخدام Aspose.Words for .NET.
+title: 设置单元格填充
+linktitle: 设置单元格填充
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 设置表格单元格边距的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-table-styles-and-formatting/set-cell-padding/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين هوامش خلايا الجدول باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية ضبط الهوامش اليسرى والعلوية واليمنى والسفلية (مساحة) لمحتوى الخلية في جداولك في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+在本教程中，我们将逐步引导您使用 Aspose.Words for .NET 设置表格单元格边距。我们将解释捆绑的 C# 源代码，并为您提供全面的指南，以帮助您了解并在您自己的项目中实现此功能。在本教程结束时，您将了解如何使用 Aspose.Words for .NET 调整 Word 文档中表格中单元格内容的左、上、右和下边距（空间）。
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## 第一步：定义文档目录
+首先，您需要设置文档目录的路径。这是您要保存编辑后的 Word 文档的位置。用适当的路径替换“您的文档目录”。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## 第 2 步：创建新文档和文档生成器
+接下来，您需要创建一个新的实例`Document`类和该文档的文档构造函数。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدول جديد وأضف خلية
-لبدء إنشاء الجدول ، نستخدم ملف`StartTable()` طريقة منشئ المستند ، ثم نضيف خلية إلى الجدول باستخدام الامتداد`InsertCell()` طريقة.
+## 第 3 步：开始一个新表并添加一个单元格
+要开始创建表，我们使用`StartTable()`文档构造函数的方法，然后我们使用`InsertCell()`方法。
 
 ```csharp
 builder. StartTable();
 builder. InsertCell();
 ```
 
-## الخطوة 4: تعيين هوامش الخلية
- الآن يمكننا تعيين هوامش الخلية باستخدام`SetPaddings()` طريقة`CellFormat` هدف. يتم تعريف الهوامش بالنقاط ومحددة بالترتيب الأيسر والأعلى واليمين والأسفل.
+## 第 4 步：设置单元格边距
+现在我们可以使用`SetPaddings()`的方法`CellFormat`目的。边距以磅为单位定义，并按左、上、右和下的顺序指定。
 
 ```csharp
 builder.CellFormat.SetPaddings(30, 50, 30, 50);
 ```
 
-## الخطوة 5: أضف محتوى إلى الخلية
- ثم يمكننا إضافة محتوى إلى الخلية باستخدام منشئ المستندات`Writeln()` طريقة.
+## 第 5 步：向单元格添加内容
+然后我们可以使用文档生成器的将内容添加到单元格`Writeln()`方法。
 
 ```csharp
 builder.Writeln("I'm a beautifully formatted cell.");
 ```
 
-## الخطوة السادسة: قم بإنهاء الجدول وحفظ المستند
- أخيرًا ، ننتهي من إنشاء الجدول باستخدام`EndRow()` طريقة و`EndTable()`، ثم نقوم بحفظ المستند المعدل في ملف.
+## 第 6 步：完成表格并保存文档
+最后，我们使用`EndRow()`方法和`EndTable()`，然后我们将修改后的文档保存到一个文件中。
 
 ```csharp
 builder. EndRow();
@@ -56,17 +56,17 @@ builder. EndTable();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 ```
  
-### عينة من التعليمات البرمجية المصدر لـ Set Cell Padding باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 设置单元格填充的示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.StartTable();
 	builder.InsertCell();
-	// يضبط مقدار المسافة (بالنقاط) لإضافتها إلى اليسار / أعلى / يمين / أسفل محتويات الخلية.
+	//设置要添加到单元格内容的左侧/顶部/右侧/底部的空间量（以磅为单位）。
 	builder.CellFormat.SetPaddings(30, 50, 30, 50);
 	builder.Writeln("I'm a wonderful formatted cell.");
 	builder.EndRow();
@@ -74,5 +74,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين هوامش خلية جدول باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة ضبط هوامش الخلية لإنشاء مسافات إلى اليسار ، وأعلى ، ويمين ، وأسفل المحتوى في جداولك في مستندات Word. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تخصيص تنسيق الجداول حسب احتياجاتك الخاصة.
+## 结论
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 设置表格单元格的边距。按照此分步指南，您可以轻松调整单元格边距，以便在 Word 文档的表格内容的左侧、顶部、右侧和底部创建空间。 Aspose.Words 提供了一个强大而灵活的 API，用于操作和格式化文档中的表格。有了这些知识，您就可以根据自己的特定需要自定义表格的格式。

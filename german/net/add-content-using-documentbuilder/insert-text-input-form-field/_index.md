@@ -1,36 +1,36 @@
 ---
-title: أدخل حقل نموذج إدخال النص
-linktitle: أدخل حقل نموذج إدخال النص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET لإدراج حقل نموذج إدخال النص في مستندات Word باستخدام هذا الدليل المفصل خطوة بخطوة.
+title: Texteingabeformularfeld einfügen
+linktitle: Texteingabeformularfeld einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Texteingabeformularfelder in Word-Dokumente einfügen.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/insert-text-input-form-field/
 ---
 
-في هذا الدليل المفصل خطوة بخطوة ، سنستكشف كيفية استخدام ميزة إدراج حقل نموذج إدخال نص في Aspose.Words for .NET لإضافة حقول نموذج إدخال النص ومعالجتها في مستندات Word باستخدام كود مصدر C #. تسمح حقول نموذج إدخال النص للمستخدمين بإدخال نص مخصص داخل المستند ، مما يجعلها مثالية لإنشاء نماذج واستبيانات تفاعلية. باتباع الإرشادات أدناه ، ستتمكن من إدراج حقول نموذج إدخال النص وتخصيصها بسهولة في مستنداتك. هيا بنا نبدأ!
+In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie die Funktion „Texteingabeformularfeld einfügen“ in Aspose.Words für .NET verwenden, um Texteingabeformularfelder in Ihren Word-Dokumenten mithilfe von C#-Quellcode hinzuzufügen und zu bearbeiten. Texteingabeformularfelder ermöglichen Benutzern die Eingabe von benutzerdefiniertem Text in ein Dokument und eignen sich daher ideal für die Erstellung interaktiver Formulare und Fragebögen. Wenn Sie die folgenden Anweisungen befolgen, können Sie mühelos Texteingabeformularfelder in Ihre Dokumente einfügen und anpassen. Lass uns anfangen!
 
-## مقدمة عن ميزة "إدراج حقل نموذج إدخال النص" في Aspose.Words for .NET
+## Einführung in die Funktion „Texteingabeformularfeld einfügen“ in Aspose.Words für .NET
 
-تتيح لك ميزة "إدراج حقل نموذج إدخال النص" في Aspose.Words for .NET إضافة حقول نموذج إدخال نص برمجيًا إلى مستندات Word الخاصة بك. توفر حقول النموذج هذه عنصرًا تفاعليًا حيث يمكن للمستخدمين إدخال نص أو بيانات مخصصة.
+Mit der Funktion „Texteingabeformularfeld einfügen“ in Aspose.Words für .NET können Sie Texteingabeformularfelder programmgesteuert zu Ihren Word-Dokumenten hinzufügen. Diese Formularfelder stellen ein interaktives Element dar, in das Benutzer benutzerdefinierten Text oder Daten eingeben können.
 
-## فهم متطلبات استخدام الميزة
+## Verständnis der Anforderungen für die Nutzung der Funktion
 
-قبل متابعة التنفيذ ، تأكد من استيفاء المتطلبات التالية:
+Bevor Sie mit der Implementierung fortfahren, stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen:
 
-1. تم تثبيت Aspose.Words for .NET library في مشروعك.
-2. المعرفة الأساسية بلغة البرمجة C #.
-3. مستند Word موجود أو مستند جديد لإدراج حقل نموذج إدخال النص.
+1. Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert.
+2. Grundkenntnisse der Programmiersprache C#.
+3. Ein vorhandenes Word-Dokument oder ein neues Dokument zum Einfügen des Texteingabeformularfelds.
 
-تأكد من توفر هذه المتطلبات الأساسية للمضي قدمًا بسلاسة.
+Stellen Sie sicher, dass Sie über diese Voraussetzungen verfügen, um reibungslos vorgehen zu können.
 
-## دليل تفصيلي خطوة بخطوة لتنفيذ إدراج حقل نموذج إدخال نص باستخدام كود مصدر C #
+## Schritt-für-Schritt-Anleitung zur Implementierung des Felds „Texteingabeformular einfügen“ mithilfe von C#-Quellcode
 
-اتبع الخطوات أدناه لتنفيذ ميزة إدراج حقل نموذج إدخال النص باستخدام كود مصدر C # المقدم:
+Führen Sie die folgenden Schritte aus, um die Funktion „Texteingabeformularfeld einfügen“ mithilfe des bereitgestellten C#-Quellcodes zu implementieren:
 
-### الخطوة 1: تهيئة مستند إنشاء المستندات
+### Schritt 1: Initialisieren des Dokuments und des Dokument-Builders
 
-للبدء ، قم بتهيئة المستند ومنشئ المستندات. يُعد منشئ المستندات أداة قوية توفرها Aspose.Words for .NET والتي تتيح لنا إنشاء مستندات Word ومعالجتها برمجيًا. استخدم مقتطف الشفرة التالي:
+Initialisieren Sie zunächst das Dokument und den Document Builder. Der Document Builder ist ein leistungsstarkes Tool von Aspose.Words für .NET, mit dem wir Word-Dokumente programmgesteuert erstellen und bearbeiten können. Verwenden Sie den folgenden Codeausschnitt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,31 +39,31 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-### الخطوة 2: إدخال حقل نموذج إدخال النص
+### Schritt 2: Einfügen des Texteingabeformularfelds
 
- بعد ذلك ، سنقوم بإدخال حقل نموذج إدخال النص في المستند باستخدام الامتداد`InsertTextInput` طريقة. تقبل هذه الطريقة معلمات مختلفة ، بما في ذلك اسم حقل النموذج ونوع حقل النموذج (في هذه الحالة ،`TextFormFieldType.Regular`والقيمة الافتراضية والحد الأقصى للطول. هذا مثال:
+ Als nächstes fügen wir das Texteingabeformularfeld mithilfe von in das Dokument ein`InsertTextInput` Methode. Diese Methode akzeptiert verschiedene Parameter, darunter den Namen des Formularfelds, den Typ des Formularfelds (in diesem Fall`TextFormFieldType.Regular`), den Standardwert und die maximale Länge. Hier ist ein Beispiel:
 
 ```csharp
 builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
 ```
 
-سوف يقوم الكود أعلاه بإدراج حقل نموذج إدخال نص بالاسم "TextInput" ، والقيمة الافتراضية "Hello" ، ولا يوجد حد أقصى للطول.
+Der obige Code fügt ein Texteingabeformularfeld mit dem Namen „TextInput“, dem Standardwert „Hello“ und keiner maximalen Längenbeschränkung ein.
 
-### الخطوة 3: حفظ المستند
+### Schritt 3: Speichern des Dokuments
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Nachdem Sie das Texteingabeformularfeld eingefügt haben, speichern Sie das Dokument mithilfe von am gewünschten Ort`Save` Methode. Stellen Sie sicher, dass Sie den richtigen Dateipfad angeben:
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```
 
-سيحفظ هذا الرمز المستند مع حقل نموذج إدخال النص المدرج في الموقع المحدد.
+Dieser Code speichert das Dokument mit dem eingefügten Texteingabeformularfeld am angegebenen Ort.
 
-### مثال على شفرة المصدر لإدراج حقل نموذج إدخال نص باستخدام Aspose.Words for .NET
+### Beispielquellcode für „Texteingabeformularfeld einfügen“ mit Aspose.Words für .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	
 	Document doc = new Document();

@@ -1,90 +1,90 @@
 ---
-title: تحديث تخطيط الصفحة
-linktitle: تحديث تخطيط الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديث تخطيط الصفحة عند الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: Sayfa Düzenini Güncelle
+linktitle: Sayfa Düzenini Güncelle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word belgelerini birleştirirken ve eklerken sayfa düzenini nasıl güncelleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/update-page-layout/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة تحديث تخطيط الصفحة في Aspose.Words for .NET. تضمن هذه الميزة تحديث تخطيط الصفحة بشكل صحيح عند الانضمام إلى مستندات Word وإلحاقها.
+Bu eğitim, Aspose.Words for .NET'in Sayfa Düzenini Güncelle özelliğini kullanma sürecinde size rehberlik edecektir. Bu özellik, Word belgelerini birleştirirken ve eklerken sayfa düzeninin doğru şekilde güncellenmesini sağlar.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words for .NET kurulu. Aspose web sitesinden indirebilir veya NuGet aracılığıyla kurabilirsiniz.
+2. Visual Studio veya başka herhangi bir C# geliştirme ortamı.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## 1. Adım: Belge Dizinlerini Başlatın
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir` belgelerinizin bulunduğu yola değişken.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## 2. Adım: Kaynak ve Hedef Belgeleri Yükleyin
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Ardından, Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. içindeki dosya adlarını güncelleyin.`Document` belge adlarınıza göre yapıcı.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: تحديث تخطيط الصفحة لمستند الوجهة
+## 3. Adım: Hedef Belge için Sayfa Düzenini Güncelleyin
 
- للتأكد من تحديث تخطيط الصفحة بشكل صحيح قبل إلحاق المستند المصدر ، يمكنك استدعاء`UpdatePageLayout` الطريقة في المستند الوجهة.
+ Kaynak belgeyi eklemeden önce sayfa düzeninin doğru şekilde güncellendiğinden emin olmak için`UpdatePageLayout` Hedef belgedeki yöntem.
 
 ```csharp
 dstDoc.UpdatePageLayout();
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بمستند الوجهة
+## Adım 4: Kaynak Belgeyi Hedef Belgeye Ekleyin
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Artık, kaynak belgeyi hedef belgeye aşağıdakileri kullanarak ekleyebilirsiniz:`AppendDocument` yöntemi`Document` sınıf. bu`ImportFormatMode.KeepSourceFormatting` parametresi, ekleme işlemi sırasında kaynak formatının korunmasını sağlar.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: تحديث تخطيط الصفحة مرة أخرى
+## 5. Adım: Sayfa Düzenini Tekrar Güncelleyin
 
- بعد إلحاق المستند المصدر ، تحتاج إلى استدعاء`UpdatePageLayout`على المستند الوجهة مرة أخرى للتأكد من أن أي تغييرات يتم إجراؤها بعد عملية الإلحاق تنعكس في الإخراج المقدم.
+ Kaynak belgeyi ekledikten sonra aramanız gerekir.`UpdatePageLayout`ekleme işleminden sonra yapılan herhangi bir değişikliğin işlenen çıktıya yansıtıldığından emin olmak için yöntemi hedef belgede tekrar kullanın.
 
 ```csharp
 dstDoc.UpdatePageLayout();
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## 6. Adım: Nihai Belgeyi Kaydedin
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة تحديث تخطيط الصفحة باستخدام ملحق`Save` طريقة`Document` فصل.
+ Son olarak, birleştirilmiş belgeyi Sayfa Düzenini Güncelle özelliği etkinleştirilerek kaydedin.`Save` yöntemi`Document` sınıf.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 ```
 
-### مثال على شفرة المصدر لتحديث تخطيط الصفحة باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Sayfa Düzenini Güncellemek için örnek kaynak kodu
 
-إليك شفرة المصدر الكاملة لميزة "تحديث تخطيط الصفحة" في C # باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanarak C# dilinde "Sayfa Düzenini Güncelle" özelliğinin tam kaynak kodu burada:
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// إذا تم تحويل المستند الوجهة إلى PDF ، أو صورة ، إلخ.
-	// أو يتم استدعاء UpdatePageLayout قبل المستند المصدر. مُلحق ،
-	// ثم أي تغييرات يتم إجراؤها بعد ذلك لن تنعكس في الإخراج المقدم
+	// Hedef belge PDF'ye dönüştürülürse, görüntü vb.
+	// veya UpdatePageLayout, kaynak belgeden önce çağrılır. ekli,
+	// daha sonra yapılan herhangi bir değişiklik, işlenen çıktıya yansıtılmayacaktır.
 	dstDoc.UpdatePageLayout();
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	// لكي يتم تحديث التغييرات لتقديم الإخراج ، يجب استدعاء UpdatePageLayout مرة أخرى.
-	// إذا لم يتم الاتصال به مرة أخرى ، فلن يظهر المستند المُلحق في إخراج العرض التالي.
+	// Değişikliklerin işlenen çıktıya güncellenmesi için UpdatePageLayout'un yeniden çağrılması gerekir.
+	// Tekrar çağrılmazsa, eklenen belge bir sonraki işlemenin çıktısında görünmez.
 	dstDoc.UpdatePageLayout();
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة تحديث تخطيط الصفحة باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع تحديث تخطيط الصفحة بشكل صحيح.
+Bu kadar! Aspose.Words for .NET'i kullanarak Sayfa Düzenini Güncelle özelliğini başarıyla uyguladınız. Nihai belge, doğru şekilde güncellenen sayfa düzeniyle birleştirilmiş içeriği içerecektir.

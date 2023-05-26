@@ -1,77 +1,77 @@
 ---
-title: إزالة فواصل المقاطع
-linktitle: إزالة فواصل المقاطع
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة فواصل الأقسام في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تخلص بشكل فعال من فواصل المقاطع التي يمكن أن تعطل تنسيق المستند.
+title: Bölüm Sonlarını Kaldır
+linktitle: Bölüm Sonlarını Kaldır
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words library for .NET kullanarak bir Word belgesindeki bölüm sonlarını nasıl kaldıracağınızı öğrenin. Belge biçimlendirmenizi bozabilecek bölüm sonlarını etkili bir şekilde ortadan kaldırın.
 type: docs
 weight: 10
 url: /tr/net/remove-content/remove-section-breaks/
 ---
 
-# اكتب دليل خطوة بخطوة لإزالة فواصل الأقسام في Aspose.Words for .NET
+# Aspose.Words for .NET'te Bölüm Sonlarını Kaldırmak İçin Adım Adım Kılavuz Yazın
 
-## مقدمة
-في هذا البرنامج التعليمي ، سنرشدك خلال عملية إزالة فواصل الأقسام من مستند Word باستخدام مكتبة Aspose.Words for .NET. يمكن أن تتسبب فواصل الأقسام أحيانًا في حدوث مشكلات في التنسيق أو تعطيل تدفق المستند ، وسيساعدك مقتطف الشفرة هذا في التخلص منها بشكل فعال. سنقدم لك دليلًا تفصيليًا لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+## giriiş
+Bu öğreticide, Aspose.Words for .NET kitaplığını kullanarak bir Word belgesinden bölüm sonlarını kaldırma sürecinde size yol göstereceğiz. Bölüm sonları bazen biçimlendirme sorunlarına neden olabilir veya belgenizin akışını bozabilir ve bu kod parçacığı, bunları etkili bir şekilde ortadan kaldırmanıza yardımcı olur. Kodu anlamanıza ve kendi .NET projenizde uygulamanıza yardımcı olacak adım adım bir kılavuz sağlayacağız.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت Aspose.Words for .NET library في مشروعك
-- مستند Word يحتوي على فواصل مقطعية تريد إزالتها
+## Önkoşullar
+Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
+- C# programlama dilinin çalışma bilgisi
+- Aspose.Words for .NET kitaplığı projenizde yüklü
+- Kaldırmak istediğiniz bölüm sonlarını içeren bir Word belgesi
 
-## الخطوة 1: قم بتعيين دليل المستندات
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في مقتطف التعليمات البرمجية مع مسار الدليل المناسب.
+## 1. Adım: Belge Dizinini Ayarlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun dizin yolu ile kod parçacığında.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
- بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فئة باستخدام`Load` طريقة.
+## 2. Adım: Belgeyi Yükleyin
+ Ardından, Word belgesini bir örneğine yükleyeceğiz.`Document` kullanarak sınıf`Load` yöntem.
 
 ```csharp
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## الخطوة 3: إزالة فواصل الأقسام
-لإزالة الفواصل المقطعية ، سنقوم بالمرور عبر جميع الأقسام بدءًا من القسم الذي يسبق القسم الأخير وانتقل إلى القسم الأول. داخل الحلقة ، سنقوم بربط محتوى كل قسم ببداية القسم الأخير ، ثم نقوم بإزالة المقطع المنسوخ.
+## 3. Adım: Bölüm Sonlarını Kaldırın
+Bölüm sonlarını kaldırmak için, son bölümden önceki bölümden başlayarak ve ilk bölüme geçerek tüm bölümler arasında dolaşacağız. Döngü içinde, her bölümün içeriğini son bölümün başına ekleyeceğiz ve ardından kopyalanan bölümü kaldıracağız.
 
 ```csharp
-// قم بالتكرار خلال جميع الأقسام بدءًا من القسم الذي يسبق القسم الأخير وانتقل إلى القسم الأول.
+// Son bölümden önceki bölümden başlayarak ve ilk bölüme geçerek tüm bölümler arasında döngü yapın.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-    // انسخ محتوى القسم الحالي إلى بداية القسم الأخير.
+    // Geçerli bölümün içeriğini son bölümün başına kopyalayın.
     doc.LastSection.PrependContent(doc.Sections[i]);
-    // قم بإزالة المقطع المنسوخ.
+    // Kopyalanan bölümü kaldırın.
     doc.Sections[i].Remove();
 }
 ```
 
-## الخطوة 4: احفظ المستند المعدل
- أخيرًا ، سنقوم بحفظ المستند المعدل باستخدام امتداد`Save` طريقة. حدد مسار ملف الإخراج المطلوب والتنسيق (على سبيل المثال ، DOCX) للمستند المعدل.
+## 4. Adım: Değiştirilen Belgeyi Kaydedin
+ Son olarak, değiştirilen belgeyi kullanarak kaydedeceğiz.`Save` yöntem. Değiştirilen belge için istenen çıktı dosyası yolunu ve biçimini (örn. DOCX) belirtin.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-### نموذج التعليمات البرمجية المصدر لإزالة فواصل الأقسام باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Bölüm Sonlarını Kaldır için örnek kaynak kodu
  
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//قم بتحميل المستند
+//belgeyi yükle
 Document doc = new Document(dataDir + "your-document.docx");
 
-// قم بالتكرار خلال جميع الأقسام بدءًا من القسم الذي يسبق القسم الأخير وانتقل إلى القسم الأول.
+// Son bölümden önceki bölümden başlayarak ve ilk bölüme geçerek tüm bölümler arasında döngü yapın.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
-	// انسخ محتوى القسم الحالي إلى بداية القسم الأخير.
+	// Geçerli bölümün içeriğini son bölümün başına kopyalayın.
 	doc.LastSection.PrependContent(doc.Sections[i]);
-	// قم بإزالة المقطع المنسوخ.
+	// Kopyalanan bölümü kaldırın.
 	doc.Sections[i].Remove();
 }
 
@@ -79,6 +79,6 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
         
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، قمنا بعرض دليل تفصيلي خطوة بخطوة لإزالة فواصل الأقسام من مستند Word باستخدام Aspose.Words مكتبة .NET. باتباع مقتطف الشفرة والإرشادات المقدمة ، يمكنك بسهولة التخلص من فواصل المقاطع وضمان تخطيط سلس للمستند. تذكر أن تقوم بتعديل مسار الدليل وأسماء الملفات وفقًا لمتطلباتك الخاصة.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET kitaplığını kullanarak bir Word belgesinden bölüm sonlarını kaldırmak için adım adım bir kılavuz gösterdik. Sağlanan kod parçacığını ve talimatları izleyerek bölüm sonlarını kolayca ortadan kaldırabilir ve kusursuz bir belge düzeni sağlayabilirsiniz. Dizin yolunu ve dosya adlarını özel gereksinimlerinize göre ayarlamayı unutmayın.
 

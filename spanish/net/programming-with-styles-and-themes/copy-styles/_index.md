@@ -1,51 +1,51 @@
 ---
-title: نسخ الأنماط
-linktitle: نسخ الأنماط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية نسخ الأنماط بين المستندات باستخدام Aspose.Words for .NET.
+title: Copiar estilos
+linktitle: Copiar estilos
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a copiar estilos entre documentos con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-styles-and-themes/copy-styles/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لنسخ الأنماط من مستند المصدر إلى المستند الهدف باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة نقل الأنماط من مستند إلى آخر ، وهو ما يمكن أن يكون مفيدًا عندما تريد تطبيق أنماط متناسقة على مستندات متعددة.
+En este tutorial, exploraremos el código fuente de C# proporcionado para copiar estilos de un documento de origen a un documento de destino mediante Aspose.Words para .NET. Esta función le permite transferir estilos de un documento a otro, lo que puede ser útil cuando desea aplicar estilos coherentes a varios documentos.
 
-## الخطوة الأولى: تهيئة البيئة
+## Paso 1: Configuración del entorno
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Antes de comenzar, asegúrese de haber configurado su entorno de desarrollo con Aspose.Words para .NET. Asegúrese de haber agregado las referencias necesarias e importado los espacios de nombres apropiados.
 
-## الخطوة 2: إنشاء كائنات المستند
+## Paso 2: Creación de objetos de documento
 
 ```csharp
 Document doc = new Document();
 Document target = new Document(dataDir + "Rendering.docx");
 ```
 
- في هذه الخطوة ، نقوم بإنشاء اثنين`Document` أشياء:`doc` الذي يمثل مستند المصدر الفارغ و`target` الذي يمثل المستند الهدف الذي سننسخ الأنماط منه.
+ En este paso, creamos dos`Document` objetos:`doc` que representa el documento fuente vacío y`target` que representa el documento de destino del que copiaremos los estilos.
 
-## الخطوة 3: نسخ الأنماط
+## Paso 3: copiar estilos
 
 ```csharp
 target. CopyStylesFromTemplate(doc);
 ```
 
- في هذه الخطوة ، نستخدم الامتداد`CopyStylesFromTemplate` طريقة لنسخ الأنماط من المستند المصدر (`doc`) إلى المستند الهدف (`target`).
+ En este paso, usamos el`CopyStylesFromTemplate` método para copiar estilos del documento de origen (`doc`) al documento de destino (`target`).
 
-## الخطوة 4: حفظ المستند
+## Paso 4: Guardar el documento
 
 ```csharp
 doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 ```
 
-في هذه الخطوة الأخيرة ، نحفظ المستند المصدر بالأنماط المنسوخة إلى ملف.
+En este último paso, guardamos el documento de origen con los estilos copiados en un archivo.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لنسخ الأنماط من مستند مصدر إلى مستند مستهدف. تتيح لك هذه الميزة الحفاظ على تناسق النمط عبر مستندات متعددة ، مما يسهل إدارة مظهر وتنسيق مستنداتك.
+Ahora puede ejecutar el código fuente para copiar estilos de un documento de origen a un documento de destino. Esta función le permite mantener la consistencia del estilo en varios documentos, lo que facilita la administración de la apariencia y el formato de sus documentos.
 
-### نموذج التعليمات البرمجية المصدر لـ Copy Styles باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Copiar estilos usando Aspose.Words para .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document();
@@ -58,12 +58,12 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
         
 ```
 
-## خاتمة
+## Conclusión
 
- في هذا البرنامج التعليمي ، استكشفنا ميزة أنماط النسخ باستخدام Aspose.Words for .NET. باستخدام ملف`CopyStylesFromTemplate` الطريقة ، تمكنا من نسخ الأنماط من مستند مصدر إلى مستند مستهدف ، مما يسهل الحفاظ على اتساق الأنماط عبر مستندات متعددة.
+ En este tutorial, exploramos la característica de estilos de copia con Aspose.Words para .NET. Al usar el`CopyStylesFromTemplate` método, pudimos copiar estilos de un documento de origen a un documento de destino, lo que facilita mantener la coherencia de los estilos en varios documentos.
 
-تعد أنماط النسخ مفيدة بشكل خاص عندما تريد تطبيق أنماط مكونة مسبقًا على مستندات متعددة ، مما يضمن مظهرًا وتنسيقًا متسقين. يوفر لك هذا الوقت والجهد من خلال عدم الاضطرار إلى إعادة إنشاء نفس الأنماط لكل مستند.
+La copia de estilos es particularmente útil cuando desea aplicar estilos preconfigurados a varios documentos, lo que garantiza una apariencia y un formato uniformes. Esto le ahorra tiempo y esfuerzo al no tener que volver a crear los mismos estilos para cada documento.
 
-يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية لمعالجة الأنماط في مستنداتك. يمكنك استخدام هذه الميزة لتخصيص الأنماط أو تطبيق السمات أو ببساطة نقل الأنماط بين المستندات المختلفة.
+Aspose.Words para .NET proporciona una potente API para manipular estilos en sus documentos. Puede usar esta función para personalizar estilos, aplicar temas o simplemente transferir estilos entre diferentes documentos.
 
-لا تتردد في استكشاف الميزات الأخرى التي تقدمها Aspose.Words for .NET لتحسين إدارة النمط وتحسين سير عملك.
+Siéntase libre de explorar otras características que ofrece Aspose.Words para .NET para mejorar la gestión de estilo y optimizar su flujo de trabajo.

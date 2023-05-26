@@ -1,31 +1,31 @@
 ---
-title: إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه
-linktitle: إظهار إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إظهار أو إخفاء محتوى الإشارات المرجعية باستخدام Aspose.Words for .NET.
+title: Visa Dölj bokmärkt innehåll
+linktitle: Visa Dölj bokmärkt innehåll
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du visar eller döljer bokmärkesinnehåll med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إظهار إخفاء المحتوى المرتبط بإشارة مرجعية في Aspose.Words for .NET library. تتيح لك هذه الميزة إظهار أو إخفاء محتويات إشارة مرجعية بناءً على شرط معين عند دمج البيانات.
+den här artikeln kommer vi att utforska ovanstående C#-källkod för att förstå hur man använder funktionen Visa Dölj bokmärkt innehåll i Aspose.Words för .NET-biblioteket. Den här funktionen låter dig visa eller dölja innehållet i ett bokmärke baserat på ett specifikt tillstånd när du slår samman data.
 
-## المتطلبات الأساسية
+## Förutsättningar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundläggande kunskaper i C#-språket.
+- .NET-utvecklingsmiljö med Aspose.Words-biblioteket installerat.
 
-## الخطوة 1: الحصول على الإشارة المرجعية
+## Steg 1: Skaffa bokmärket
 
- نحن نستخدم ال`Bookmarks` خاصية نطاق المستند للحصول على الإشارة المرجعية المحددة التي نريد إظهار المحتوى أو إخفائه:
+ Vi använder`Bookmarks` egenskapen för dokumentintervallet för att få det specifika bokmärke som vi vill visa eller dölja innehållet på:
 
 ```csharp
 Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 ```
 
-## الخطوة 2: إدراج حقول الدمج
+## Steg 2: Infoga sammanslagningsfälten
 
- نحن نستخدم منشئ المستندات`DocumentBuilder` لإدراج حقول الدمج الضرورية. ستعمل حقول الدمج هذه على تعيين شرط لإظهار أو إخفاء محتوى الإشارة المرجعية بناءً على قيمة`showHide` عامل:
+ Vi använder en dokumentbyggare`DocumentBuilder` för att infoga de nödvändiga sammanslagningsfälten. Dessa sammanslagningsfält kommer att ställa in ett villkor för att visa eller dölja bokmärkesinnehållet beroende på värdet på`showHide` variabel:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -40,11 +40,11 @@ builder. Write("\"");
 builder. Write(" \"\"");
 ```
 
-## الخطوة 3: نقل محتوى الإشارة المرجعية
+## Steg 3: Flytta bokmärkesinnehåll
 
-ندور محتويات الإشارة المرجعية وننقلها حتى تظهر
+Vi går igenom innehållet i bokmärket och flyttar det så att det visas
 
-ISSE قبل الإشارة المرجعية. سيتحكم هذا في إظهار المحتوى أو إخفائه بناءً على الشرط المحدد:
+isse före bokmärket. Detta kommer att styra att visa eller dölja innehåll baserat på det angivna villkoret:
 
 ```csharp
 Node currentNode = field. Start;
@@ -62,9 +62,9 @@ while (currentNode != null && flag)
 }
 ```
 
-## الخطوة 4: نقل باقي محتوى الإشارة المرجعية
+## Steg 4: Flytta resten av bokmärkesinnehållet
 
-نقوم بنقل باقي محتوى الإشارة المرجعية بعد الإشارة المرجعية ، باستخدام عقدة نهاية الإشارة المرجعية كنقطة إدخال:
+Vi flyttar resten av bokmärkesinnehållet efter bokmärket och använder bokmärkets slutnod som insättningspunkt:
 
 ```csharp
 Node endNode = bm.BookmarkEnd;
@@ -82,17 +82,17 @@ while (currentNode != null && flag)
 }
 ```
 
-## الخطوة 5: تنفيذ الدمج
+## Steg 5: Utför sammanslagning
 
- نحن نستخدم ال`Execute` طريقة الوثيقة`s `دمج المراسلات` object to execute the merge using the bookmark name and the value of the `متغير showHide`:
+ Vi använder`Execute` dokumentets metod`s `MailMerge` object to execute the merge using the bookmark name and the value of the `showHide` variabel:
 
 ```csharp
 doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 ```
 
-### مثال على شفرة المصدر لـ Show Hide Bookmarked Content باستخدام Aspose.Words for .NET
+### Exempel på källkod för Visa Dölj bokmärkt innehåll med Aspose.Words för .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح إظهار أو إخفاء محتوى الإشارة المرجعية باستخدام Aspose.Words for .NET:
+Här är det fullständiga exemplet på källkod för att visa eller dölja bokmärkesinnehåll med Aspose.Words för .NET:
 
 ```csharp
 
@@ -101,7 +101,7 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 	DocumentBuilder builder = new DocumentBuilder(doc);
 	builder.MoveToDocumentEnd();
 
-	// {إذا كان "{MERGEFIELD إشارة مرجعية}" = "صحيح" "" ""}
+	// {IF "{MERGEFIELD bookmark}" = "sant" "" ""}
 	Field field = builder.InsertField("IF \"", null);
 	builder.MoveTo(field.Start.NextSibling);
 	builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
@@ -142,6 +142,6 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 
 ```
 
-## خاتمة
+## Slutsats
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة إظهار إخفاء المحتوى المرتبط بإشارة مرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإظهار أو إخفاء محتويات إشارة مرجعية بناءً على شرط معين عند دمج البيانات.
+I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Visa göm bokmärkt innehåll i Aspose.Words för .NET. Vi har följt en steg-för-steg-guide för att visa eller dölja innehållet i ett bokmärke baserat på ett specifikt villkor vid sammanslagning av data.

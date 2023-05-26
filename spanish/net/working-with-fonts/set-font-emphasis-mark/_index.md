@@ -1,29 +1,29 @@
 ---
-title: قم بتعيين علامة توكيد الخط
-linktitle: قم بتعيين علامة توكيد الخط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين نمط تأكيد الخط في مستند Word باستخدام Aspose.Words for .NET.
+title: Establecer marca de énfasis de fuente
+linktitle: Establecer marca de énfasis de fuente
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a configurar el estilo de énfasis de fuente en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/set-font-emphasis-mark/
 ---
 
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين نمط تأكيد الخط في مستند Word باستخدام Aspose.Words for .NET. يستخدم التركيز على الخط لتمييز بعض الكلمات أو العبارات في النص.
+En este tutorial, le mostraremos cómo configurar el estilo de énfasis de fuente en un documento de Word usando Aspose.Words para .NET. El énfasis de fuente se utiliza para resaltar ciertas palabras o frases en el texto.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes elementos:
+- Un conocimiento práctico del lenguaje de programación C#
+- La biblioteca Aspose.Words para .NET instalada en su proyecto
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+Comience configurando la ruta del directorio a la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta adecuada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء وتخصيص المستند
- قم بإنشاء مثيل لـ`Document` فئة وما يرتبط بها`DocumentBuilder` لبناء محتوى الوثيقة. استخدم ال`Font.EmphasisMark`لتعيين نمط تأكيد الخط إلى`EmphasisMark.UnderSolidCircle` . ثم استخدم ملف`Write` و`Writeln` طرق`DocumentBuilder` لإضافة نص مع التركيز على الخط المحدد.
+## Paso 2: Crea y personaliza el documento
+ Crear una instancia de la`Document` clase y un asociado`DocumentBuilder` para construir el contenido del documento. Utilizar el`Font.EmphasisMark`propiedad para establecer el estilo de énfasis de fuente en`EmphasisMark.UnderSolidCircle` . Luego usa el`Write` y`Writeln` métodos de la`DocumentBuilder` para agregar texto con el énfasis de fuente especificado.
 
 ```csharp
 Document document = new Document();
@@ -35,17 +35,17 @@ builder.Font.ClearFormatting();
 builder.Write("Simple text");
 ```
 
-## الخطوة 3: احفظ المستند
- احفظ المستند باستخدام ملف`Save` طريقة`Document` بالمسار واسم الملف المناسبين.
+## Paso 3: Guarde el documento
+ Guarde el documento usando el`Save` metodo de la`Document` con la ruta y el nombre de archivo adecuados.
 
 ```csharp
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Font Emphasis Mark باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Establecer marca de énfasis de fuente usando Aspose.Words para .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document document = new Document();
@@ -58,5 +58,5 @@ builder.Write("Simple text");
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تعيين نمط تأكيد الخط في مستند Word باستخدام Aspose.Words for .NET. جرب أنماطًا مختلفة من التركيز واستخدم هذه الميزة لتمييز الكلمات أو العبارات في مستنداتك.
+## Conclusión
+En este tutorial, aprendió cómo configurar el estilo de énfasis de fuente en un documento de Word usando Aspose.Words para .NET. Experimente con diferentes estilos de énfasis y use esta función para resaltar palabras o frases en sus documentos.

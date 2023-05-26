@@ -1,31 +1,31 @@
 ---
-title: تشفير الوثيقة بكلمة مرور
-linktitle: تشفير الوثيقة بكلمة مرور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تشفير المستندات بكلمة مرور باستخدام Aspose.Words for .NET.
+title: Belgeyi Şifreyle Şifrele
+linktitle: Belgeyi Şifreyle Şifrele
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak belgeleri bir parolayla nasıl şifreleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
-يعد أمان المستند ضروريًا عند العمل مع الملفات في تطبيق C #. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك حماية مستنداتك بسهولة عن طريق تشفيرها بكلمة مرور. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتشفير مستند باستخدام خيارات حفظ DocSaveOptions.
+Bir C# uygulamasındaki dosyalarla çalışırken belge güvenliği çok önemlidir. .NET için Aspose.Words kitaplığı ile belgelerinizi bir parola ile şifreleyerek kolayca koruyabilirsiniz. Bu adım adım kılavuzda, DocSaveOptions kaydetme seçeneklerini kullanarak bir belgeyi şifrelemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
-## فهم مكتبة Aspose.Words
+## Aspose.Words kitaplığını anlama
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, .NET dahil olmak üzere farklı platformlarda Word belgeleri oluşturmak, düzenlemek, dönüştürmek ve korumak için güçlü bir kitaplıktır. Belgeleri işlemek için metin ekleme, biçimlendirmeyi değiştirme, bölümler ekleme ve çok daha fazlası gibi birçok özellik sunar.
 
-## الخطوة 1: تحديد دليل المستند
+## Adım 1: Belge dizinini tanımlama
 
-الخطوة الأولى هي تعيين الدليل حيث تريد حفظ المستند المشفر. يجب عليك تحديد مسار الدليل الكامل. على سبيل المثال :
+İlk adım, şifrelenmiş belgeyi kaydetmek istediğiniz dizini ayarlamaktır. Tam dizin yolunu belirtmelisiniz. Örneğin :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+"BELGELER DİZİNİNİZİ", belgeler dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
 
-## الخطوة 2: إنشاء وتحرير وثيقة
+## 2. Adım: Belge oluşturma ve düzenleme
 
-ثم يمكنك إنشاء مستند وإضافة محتوى إليه. استخدم فئة DocumentBuilder المقدمة من Aspose.Words لبناء محتوى وثيقتك. على سبيل المثال :
+Ardından bir belge oluşturabilir ve ona içerik ekleyebilirsiniz. Belgenizin içeriğini oluşturmak için Aspose.Words tarafından sağlanan DocumentBuilder sınıfını kullanın. Örneğin :
 
 ```csharp
 Document doc = new Document();
@@ -34,53 +34,53 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Write("Hello world!");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند فارغ جديد ثم استخدام DocumentBuilder لكتابة النص "Hello World!".
+Bu örnekte, yeni bir boş belge oluşturuyoruz ve ardından "Merhaba Dünya!" metnini yazmak için DocumentBuilder'ı kullanıyoruz.
 
-## الخطوة 3: تكوين خيارات التسجيل
+## 3. Adım: Kayıt seçeneklerini yapılandırın
 
-لنقم الآن بتهيئة خيارات الحفظ لمستندنا. استخدم فئة DocSaveOptions لتحديد إعدادات الحفظ. على سبيل المثال :
+Şimdi belgemiz için kaydetme seçeneklerini yapılandıralım. Kaydetme ayarlarını belirtmek için DocSaveOptions sınıfını kullanın. Örneğin :
 
 ```csharp
 DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };
 ```
 
-في هذا المثال ، قمنا بإنشاء كائن DocSaveOptions جديد وقمنا بتعيين خاصية Password على "password" لتشفير المستند باستخدام كلمة المرور هذه.
+Bu örnekte, yeni bir DocSaveOptions nesnesi oluşturuyoruz ve bu parola ile belgeyi şifrelemek için Password özelliğini "password" olarak ayarlıyoruz.
 
-## الخطوة 4: تمكين ميزة "تشفير المستند بكلمة مرور"
+## 4. Adım: "Belgeyi Parolayla Şifrele" Özelliğini Etkinleştirme
 
-لقد قمنا بالفعل بتكوين الخيارات لـ
+Seçenekleri zaten yapılandırdık
 
-التسجيل بكلمة المرور المحددة ، والتي تقوم تلقائيًا بتنشيط ميزة "تشفير المستند بكلمة مرور". هذا يضمن أن الوثيقة مشفرة بكلمة المرور المحددة عندما تم حفظها.
+"Belgeyi Parolayla Şifrele" özelliğini otomatik olarak etkinleştiren belirtilen parola ile kayıt. Bu, belgenin kaydedildiğinde belirtilen parola ile şifrelenmesini sağlar.
 
-## الخطوة 5: حفظ المستند
+## 5. Adım: Belgeyi kaydetme
 
-أخيرًا ، يمكنك حفظ المستند باستخدام طريقة Save لفئة Document. حدد المسار الكامل للملف واسم الملف المطلوب. على سبيل المثال :
+Son olarak, Document sınıfının Save yöntemini kullanarak belgeyi kaydedebilirsiniz. Dosyanın tam yolunu ve istenen dosya adını belirtin. Örneğin :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx", saveOptions);
 ```
 
-تأكد من استبدال "dataDir" بمسار الدليل إلى مستنداتك.
+Belgelerinizin dizin yolu ile "dataDir" değiştirdiğinizden emin olun.
 
-### مثال على التعليمات البرمجية المصدر لـ DocSaveOptions حفظ الخيارات باستخدام وظيفة "تشفير المستند بكلمة مرور" باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan "Dokümanı Parolayla Şifrele" işlevine sahip DocSaveOptions kaydetme seçenekleri için örnek kaynak kodu
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء وتحرير وثيقة
+// Belge oluşturma ve düzenleme
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
             
 builder.Write("Hello world!");
 
-// قم بتكوين خيارات الحفظ باستخدام ميزة "تشفير المستند بكلمة مرور"
+// "Belgeyi Parolayla Şifrele" özelliğiyle kaydetme seçeneklerini yapılandırın
 DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };
 
-// احفظ المستند بالخيارات المحددة
+// Belgeyi belirtilen seçeneklerle kaydedin
 doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx", saveOptions);
 ```
 
-## خاتمة
+## Çözüm
 
-في هذا الدليل ، شرحنا كيفية استخدام مكتبة Aspose.Words لـ .NET لتشفير مستند بكلمة مرور باستخدام خيارات حفظ DocSaveOptions. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يضمن تشفير المستند بكلمة مرور سريته وأمانه عند التعامل معه.
+Bu kılavuzda, DocSaveOptions kaydetme seçeneklerini kullanarak bir belgeyi parolayla şifrelemek için Aspose.Words kitaplığının .NET için nasıl kullanılacağını açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. Belgeyi bir parolayla şifrelemek, belgeyi işlerken gizliliğini ve güvenliğini garanti eder.

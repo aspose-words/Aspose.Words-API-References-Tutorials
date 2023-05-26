@@ -1,50 +1,50 @@
 ---
-title: أدخل حقل نموذج مربع التحرير والسرد
-linktitle: أدخل حقل نموذج مربع التحرير والسرد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج مربع التحرير والسرد في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Kombinationsfeld-Formularfeld einfügen
+linktitle: Kombinationsfeld-Formularfeld einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Kombinationsfeld-Formularfelder in Word-Dokumente einfügen. Schritt für Schritt Anleitung.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج حقل نموذج مربع تحرير وسرد في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة حقول نموذج مربع التحرير والسرد بخصائص قابلة للتخصيص إلى مستنداتك.
+In diesem umfassenden Beispiel erfahren Sie, wie Sie mit Aspose.Words für .NET ein Kombinationsfeld-Formularfeld in ein Word-Dokument einfügen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieser Anleitung werden Sie in der Lage sein, Ihren Dokumenten Kombinationsfeld-Formularfelder mit anpassbaren Eigenschaften hinzuzufügen.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Schritt 1: Erstellen Sie ein neues Dokument und einen neuen DocumentBuilder
+Erstellen Sie zunächst ein neues Dokument mit der Document-Klasse und initialisieren Sie ein DocumentBuilder-Objekt:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة الثانية: تحديد عناصر صندوق الكومبو
-بعد ذلك ، حدد مصفوفة من العناصر لحقل نموذج مربع التحرير والسرد:
+## Schritt 2: Kombinationsfeldelemente definieren
+Als nächstes definieren Sie ein Array von Elementen für das Kombinationsfeld-Formularfeld:
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
 ```
 
-## الخطوة 3: أدخل حقل نموذج مربع تحرير وسرد
-استخدم الأسلوب InsertComboBox لفئة DocumentBuilder لإدراج حقل نموذج مربع تحرير وسرد. أدخل الاسم ومجموعة العناصر والفهرس المحدد كمعلمات:
+## Schritt 3: Fügen Sie ein Kombinationsfeld-Formularfeld ein
+Verwenden Sie die InsertComboBox-Methode der DocumentBuilder-Klasse, um ein Kombinationsfeld-Formularfeld einzufügen. Geben Sie den Namen, das Elementarray und den ausgewählten Index als Parameter an:
 
 ```csharp
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## الخطوة 4: احفظ المستند
-بعد إدراج حقل نموذج مربع التحرير والسرد ، احفظ المستند في ملف باستخدام طريقة Save لفئة المستند:
+## Schritt 4: Speichern Sie das Dokument
+Nachdem Sie das Kombinationsfeld-Formularfeld eingefügt haben, speichern Sie das Dokument mit der Save-Methode der Document-Klasse in einer Datei:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
 ```
 
-### مثال رمز مصدر لإدراج حقل نموذج مربع تحرير وسرد باستخدام Aspose.Words لـ .NET
-فيما يلي الكود المصدري الكامل لإدخال حقل نموذج مربع التحرير والسرد باستخدام Aspose.Words for .NET:
+### Beispielquellcode für das Formularfeld „Kombinationsfeld einfügen“ mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode zum Einfügen eines Kombinationsfeld-Formularfelds mit Aspose.Words für .NET:
 
 ```csharp
 
@@ -59,7 +59,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Denken Sie daran, den Code an Ihre spezifischen Anforderungen anzupassen und ihn bei Bedarf um zusätzliche Funktionen zu erweitern.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج حقل نموذج مربع تحرير وسرد في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك باستخدام حقول نموذج مربع التحرير والسرد التفاعلي.
+## Abschluss
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET ein Kombinationsfeld-Formularfeld in ein Word-Dokument einfügen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie Ihre Dokumente jetzt mit interaktiven Kombinationsfeld-Formularfeldern erweitern.

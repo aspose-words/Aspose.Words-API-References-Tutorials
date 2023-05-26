@@ -1,69 +1,69 @@
 ---
-title: فك
-linktitle: فك
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية فك تشابك الإشارات المرجعية المتداخلة في صفوف الجدول المجاورة باستخدام Aspose.Words for .NET.
+title: Démêler
+linktitle: Démêler
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à démêler les signets imbriqués dans les lignes de tableau adjacentes à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/untangle/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Untangle في مكتبة Aspose.Words for .NET. تكشف هذه الوظيفة عن الإشارات المرجعية المتداخلة الموجودة في صفوف الجدول المجاورة.
+Dans cet article, nous allons explorer le code source C# ci-dessus pour comprendre comment utiliser la fonction Untangle dans la bibliothèque Aspose.Words pour .NET. Cette fonction dénoue les signets imbriqués qui se trouvent dans les lignes de tableau adjacentes.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Connaissance de base du langage C#.
+- Environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
-## الخطوة 1: تصفح المستندات المرجعية
+## Étape 1 : Parcourir les signets du document
 
-نستخدم حلقة foreach للتكرار خلال جميع الإشارات المرجعية الموجودة في المستند:
+Nous utilisons une boucle foreach pour parcourir tous les signets présents dans le document :
 
 ```csharp
 foreach(Bookmark bookmark in doc.Range.Bookmarks)
 {
-     // رمز للتعامل مع الإشارات المرجعية هنا
+     // Code de gestion des signets ici
 }
 ```
 
-## الخطوة 2: احصل على الصفوف الأصلية من الإشارات المرجعية
+## Étape 2 : Obtenir les lignes parentes des signets
 
- نحن نستخدم ال`GetAncestor` طرق لاسترداد الصفوف الرئيسية لعقدتي البداية والنهاية للإشارة المرجعية:
+ Nous utilisons le`GetAncestor` méthodes pour récupérer les lignes parentes des nœuds de début et de fin du signet :
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-## الخطوة 3: فك الإشارات المرجعية المتداخلة
+## Étape 3 : démêler les signets imbriqués
 
-إذا تم العثور على كلا السطرين الأصليين وبدأت الإشارة المرجعية وتنتهي في أسطر متجاورة ، فإننا ننقل عقدة نهاية الإشارة المرجعية إلى نهاية الفقرة الأخيرة من الخلية الأخيرة في الصف العلوي:
+Si les deux lignes parentes sont trouvées et que le signet commence et se termine dans des lignes adjacentes, nous déplaçons le nœud de fin du signet à la fin du dernier paragraphe de la dernière cellule de la rangée supérieure :
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
      row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-### مثال على شفرة المصدر لـ Untangle باستخدام Aspose.Words for .NET
+### Exemple de code source pour Untangle utilisant Aspose.Words pour .NET
 
-إليك مثال شفرة المصدر الكاملة لفك تشابك الإشارات المرجعية المتداخلة باستخدام Aspose.Words for .NET:
+Voici l'exemple de code source complet pour démêler les signets imbriqués à l'aide de Aspose.Words pour .NET :
 
 ```csharp
 
 	foreach (Bookmark bookmark in doc.Range.Bookmarks)
 	{
-		// احصل على الصف الأصل لكل من الإشارة المرجعية وعقدة نهاية الإشارة المرجعية.
+		// Obtenez la ligne parent du signet et du nœud de fin de signet.
 		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
 		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
-		// إذا تم العثور على كلا الصفين على ما يرام ، وتم تضمين بداية الإشارة المرجعية ونهايتها في صفوف متجاورة ،
-		// انقل عقدة نهاية الإشارة المرجعية إلى نهاية الفقرة الأخيرة في الخلية الأخيرة في الصف العلوي.
+		// Si les deux lignes sont correctes et que le début et la fin du signet sont contenus dans des lignes adjacentes,
+		// déplacer le nœud de fin de signet à la fin du dernier paragraphe de la dernière cellule de la ligne supérieure.
 		if (row1 != null && row2 != null && row1.NextSibling == row2)
 			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 	}
 
 ```
 
-## خاتمة
+## Conclusion
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام وظيفة Untangle في Aspose.Words لـ .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لفك تشابك الإشارات المرجعية المتداخلة في صفوف الجدول المجاورة.
+Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonction Untangle d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour démêler les signets imbriqués dans les lignes de tableau adjacentes.

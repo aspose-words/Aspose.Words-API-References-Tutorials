@@ -1,21 +1,21 @@
 ---
-title: البرمجة مع Txtsaveoptions
-linktitle: البرمجة مع Txtsaveoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إضافة علامات ثنائية الاتجاه ، واستخدام حرف جدولة لكل مستوى للمسافة البادئة للقائمة واستخدام حرف مسافة لكل مستوى للمسافة البادئة للقائمة
+title: Txtsaveoptions ile Programlama
+linktitle: Txtsaveoptions ile Programlama
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, bidi işaretleri ekleme, liste girintisi için seviye başına sekme karakteri kullanma ve liste girintisi için seviye başına boşluk karakteri kullanma içerir
 type: docs
 weight: 1700
 url: /tr/net/programming-with-txtsaveoptions/
 ---
-توجهك دروس Aspose.Words for .NET التعليمية عبر الميزات والاستخدامات المتنوعة للمكتبة في سياق معالجة مستندات Word. يركز أحد البرامج التعليمية على البرمجة باستخدام خيارات حفظ TXT ، والتي توضح لك كيفية إنشاء ملفات نصية من مستندات Word مع الحفاظ على تنسيق المحتوى وهيكله. ستتعلم كيفية استخدام الخيارات المتنوعة المتاحة لتخصيص تحويل المستندات إلى ملفات نصية ، مثل تحديد محدد العمود وإدارة المسافات البيضاء.
+Aspose.Words for .NET öğreticileri, Word belgelerinin işlenmesi bağlamında kitaplığın çeşitli özellikleri ve kullanımları konusunda size yol gösterir. Öğreticilerden biri, içerik biçimlendirmesini ve yapısını korurken Word belgelerinden metin dosyalarını nasıl oluşturacağınızı gösteren TXT kaydetme seçenekleriyle programlamaya odaklanır. Belgelerin metin dosyalarına dönüştürülmesini özelleştirmek için sütun sınırlayıcıyı belirlemek ve beyaz boşlukları yönetmek gibi mevcut çeşitli seçenekleri nasıl kullanacağınızı öğreneceksiniz.
 
-توفر هذه البرامج التعليمية إرشادات خطوة بخطوة ، جنبًا إلى جنب مع نموذج كود C # ، لمساعدتك على فهم المفاهيم المشمولة وممارستها. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستجد معلومات مفصلة حول كيفية استخدام Aspose.Words for .NET وكيفية تحقيق أقصى استفادة من مكتبة معالجة المستندات القوية هذه.
+Bu öğreticiler, kapsanan kavramları anlamanıza ve uygulamanıza yardımcı olmak için örnek C# koduyla birlikte adım adım yönergeler sağlar. İster yeni başlayan ister deneyimli bir geliştirici olun, Aspose.Words for .NET'i nasıl kullanacağınız ve bu güçlü belge işleme kitaplığından en iyi şekilde nasıl yararlanacağınız hakkında ayrıntılı bilgiler bulacaksınız.
 
-بفضل هذه البرامج التعليمية ، ستتمكن من الاستفادة الكاملة من وظائف Aspose.Words for .NET وتطوير حلول فعالة لإنشاء مستندات Word وتحويلها ومعالجتها في تطبيقاتك. اتبع الخطوات واستكشف أمثلة التعليمات البرمجية وقم ببناء مهاراتك لإنشاء تطبيقات Word قوية وعالية الأداء.
+Bu öğreticiler sayesinde, Aspose.Words for .NET'in işlevlerinden tam olarak yararlanabilecek ve uygulamalarınızda Word belgelerinin oluşturulması, dönüştürülmesi ve işlenmesi için verimli çözümler geliştirebileceksiniz. Sağlam, yüksek performanslı Word uygulamaları oluşturmak için adımları izleyin, kod örneklerini keşfedin ve becerilerinizi geliştirin.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [أضف علامات ثنائية الاتجاه](./add-bidi-marks/) | تعلم كيفية إضافة علامات ثنائية الاتجاه إلى مستند Word باستخدام Aspose.Words for .NET وإنشاء مستندات احترافية متعددة اللغات. |
-| [استخدم حرف الجدولة لكل مستوى للمسافة البادئة للقائمة](./use-tab-character-per-level-for-list-indentation/) | تعرف على كيفية استخدام قوائم المسافات البادئة مع ميزة حروف الجدولة في Aspose.Words for .NET. اتبع هذا الدليل المفصل خطوة بخطوة لإنشاء مستندات جيدة التنظيم وقابلة للقراءة. وفر الوقت وحسّن سير عملك باستخدام هذه الميزة القوية. الوصول إلى البرنامج التعليمي الكامل الآن. |
-| [استخدم حرف المسافة لكل مستوى للمسافة البادئة للقائمة](./use-space-character-per-level-for-list-indentation/) | دليل تفصيلي خطوة بخطوة لاستخدام حرف مسافة لكل مستوى في قائمة المسافة البادئة في Aspose.Words for .NET. قم بإنشاء مستندات Word جيدة التنظيم بسهولة. |
+| [Bidi İşaretleri Ekleyin](./add-bidi-marks/) | Aspose.Words for .NET kullanarak bir Word belgesine Bidi işaretleri eklemeyi öğrenin ve profesyonel çok dilli belgeler oluşturun. |
+| [Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan](./use-tab-character-per-level-for-list-indentation/) | Aspose.Words for .NET'te sekme karakterleriyle girinti listelerini nasıl kullanacağınızı öğrenin. İyi yapılandırılmış ve okunabilir belgeler oluşturmak için bu adım adım kılavuzu izleyin. Bu güçlü özellikle zaman kazanın ve iş akışınızı iyileştirin. Eğitimin tamamına şimdi erişin. |
+| [Liste Girintisi İçin Düzey Başına Boşluk Karakteri Kullanın](./use-space-character-per-level-for-list-indentation/) | Aspose.Words for .NET'te liste girintisi için seviye başına bir boşluk karakteri kullanmaya yönelik adım adım kılavuz. İyi yapılandırılmış Word belgelerini kolaylıkla oluşturun. |

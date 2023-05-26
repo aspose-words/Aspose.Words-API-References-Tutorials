@@ -1,56 +1,56 @@
 ---
-title: مشروع استنساخ Vba
-linktitle: مشروع استنساخ Vba
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية استنساخ مشروع VBA من مستند Word باستخدام Aspose.Words for .NET.
+title: Klon Vba Projesi
+linktitle: Klon Vba Projesi
+second_title: Aspose.Words for .NET API Referansı
+description: Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinden bir VBA projesinin nasıl kopyalanacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-vba-macros/clone-vba-project/
 ---
 
-في هذا البرنامج التعليمي ، سنخبرك بكيفية استنساخ مشروع VBA من مستند Word باستخدام وحدات ماكرو باستخدام مكتبة Aspose.Words لـ .NET. يسمح لك استنساخ مشروع VBA بنسخ جميع تعليمات VBA البرمجية من مستند مصدر إلى مستند آخر. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu eğitimde, size Aspose.Words .NET kitaplığını kullanarak bir Word belgesinden bir VBA projesini makrolarla nasıl klonlayacağınızı anlatacağız. Bir VBA projesini klonlamak, tüm VBA kodunu bir kaynak belgeden başka bir belgeye kopyalamanıza olanak tanır. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word يحتوي على مشروع VBA الذي تريد استنساخه
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
+- Klonlamak istediğiniz bir VBA projesini içeren bir Word belgesi
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل مستند المصدر
-بعد ذلك ، سنقوم بتحميل مستند Word المصدر ، والذي يحتوي على مشروع VBA الذي نريد استنساخه.
+## 2. Adım: Kaynak belgeyi yükleyin
+Ardından, klonlamak istediğimiz VBA projesini içeren kaynak Word belgesini yükleyeceğiz.
 
 ```csharp
-// قم بتحميل المستند المصدر
+// Kaynak belgeyi yükleyin
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## الخطوة 3: قم بإنشاء مستند جديد باستخدام مشروع VBA المستنسخ
-سننشئ مستندًا جديدًا مع مشروع VBA فارغ وننسخ مشروع VBA من المستند المصدر.
+## 3. Adım: Klonlanmış VBA projesiyle yeni bir belge oluşturun
+Boş bir VBA projesi ile yeni bir belge oluşturacağız ve kaynak belgeden VBA projesini klonlayacağız.
 
 ```csharp
-// قم بإنشاء مستند جديد بمشروع VBA فارغ
+// Boş bir VBA projesiyle yeni bir belge oluşturun
 Document destDoc = new Document { VbaProject = doc.VbaProject.Clone() };
 ```
 
-## الخطوة 4: احفظ المستند الوجهة
-أخيرًا ، سنحفظ المستند الوجهة مع مشروع VBA المستنسخ في ملف.
+## 4. Adım: Hedef belgeyi kaydedin
+Son olarak, klonlanan VBA projesiyle birlikte hedef belgeyi bir dosyaya kaydedeceğiz.
 
 ```csharp
 destDoc.Save(dataDir + "WorkingWithVba.CloneVbaProject.docm");
 ```
 
-### عينة من التعليمات البرمجية المصدر لمشروع Clone Vba باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Clone Vba Project için örnek kaynak kodu 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "VBA project.docm");
@@ -60,5 +60,5 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaProject.docm");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية استنساخ مشروع VBA من مستند Word باستخدام وحدات ماكرو باستخدام Aspose.Words for .NET. يسمح لك استنساخ مشاريع VBA بنسخ جميع تعليمات VBA البرمجية من مستند مصدر إلى مستند آخر. لا تتردد في استخدام هذه الميزة لتنظيم وإدارة وحدات الماكرو الخاصة بك في مستندات مختلفة.
+## Çözüm
+Bu eğitimde, Aspose.Words for .NET kullanarak bir VBA projesini bir Word belgesinden makrolarla nasıl klonlayacağımızı gördük. VBA projelerini klonlamak, tüm VBA kodunu bir kaynak belgeden başka bir belgeye kopyalamanıza olanak tanır. Makrolarınızı farklı belgelerde düzenlemek ve yönetmek için bu özelliği kullanmaktan çekinmeyin.

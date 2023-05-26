@@ -1,56 +1,56 @@
 ---
-title: تنظيف الأنماط والقوائم غير المستخدمة
-linktitle: تنظيف الأنماط والقوائم غير المستخدمة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتنظيف الأنماط والقوائم غير المستخدمة في مستند باستخدام Aspose.Words for .NET.
+title: Kullanılmayan Stilleri ve Listeleri Temizleme
+linktitle: Kullanılmayan Stilleri ve Listeleri Temizleme
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir belgedeki kullanılmayan stilleri ve listeleri temizlemek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-document-options-and-settings/cleanup-unused-styles-and-lists/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتنظيف الأنماط والقوائم غير المستخدمة باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إزالة الأنماط والقوائم غير المستخدمة في المستند.
+Bu eğitimde, Aspose.Words for .NET ile kullanılmayan stilleri ve listeleri temizlemek için C# kaynak kodunda size yol göstereceğiz. Bu özellik, bir belgede kullanılmayan stilleri ve listeleri kaldırmanıza olanak tanır.
 
-## الخطوة 1: إعداد المشروع
+## Adım 1: Proje Kurulumu
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Aspose.Words for .NET kitaplığına projenizde referans verildiğinden emin olun.
 
-## الخطوة الثانية: تحميل المستند
+## 2. Adım: Belgeyi yükleme
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي يحتوي على الأنماط والقوائم غير المستخدمة التي نريد تنظيفها. استخدم الكود التالي لتحميل المستند:
+Bu adımda, temizlemek istediğimiz kullanılmayan stilleri ve listeleri içeren Word belgesini yükleyeceğiz. Belgeyi yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Unused styles.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
 
-## الخطوة 3: عد الأنماط والقوائم قبل التنظيف
+## 3. Adım: Temizlemeden önce stilleri ve listeleri sayın
 
-قبل التنظيف ، سنقوم بحساب عدد الأنماط والقوائم الموجودة في المستند. استخدم الكود التالي لعرض العدادات:
+Temizlemeden önce, belgede bulunan stil ve listelerin sayısını sayacağız. Sayaçları görüntülemek için aşağıdaki kodu kullanın:
 
 ```csharp
 Console.WriteLine($"Number of styles before cleaning: {doc.Styles.Count}\n" +
 $"Number of lists before cleaning: {doc.Lists.Count}");
 ```
 
-توضح هذه التعليمات عدد الأنماط والقوائم الموجودة في المستند قبل التنظيف.
+Bu talimatlar, temizlemeden önce belgede bulunan stillerin ve listelerin sayısını gösterir.
 
-## الخطوة 4: تنظيف الأنماط والقوائم غير المستخدمة
+## 4. Adım: Kullanılmayan stilleri ve listeleri temizleyin
 
-الآن دعنا ننظف الأنماط والقوائم غير المستخدمة من المستند. استخدم الكود التالي لإجراء التنظيف:
+Şimdi kullanılmayan stilleri ve listeleri belgeden temizleyelim. Temizlemeyi gerçekleştirmek için aşağıdaki kodu kullanın:
 
 ```csharp
 CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 doc. Cleanup(cleanupOptions);
 ```
 
- يقوم هذا الرمز بتنظيف الأنماط والقوائم غير المستخدمة من المستند باستخدام الخيارات المحددة. في هذا المثال ، قمنا بتمكين`UnusedStyles` خيار لإزالة الأنماط غير المستخدمة وتعطيل`UnusedLists` خيار الاحتفاظ بالقوائم حتى لو لم يتم استخدامها.
+ Bu kod, belirtilen seçenekleri kullanarak kullanılmayan stilleri ve listeleri belgeden temizler. Bu örnekte,`UnusedStyles` kullanılmayan stilleri kaldırma ve devre dışı bırakma seçeneği`UnusedLists` listeleri kullanılmasalar bile saklama seçeneği.
 
-## الخطوة 5: عد الأنماط والقوائم بعد التنظيف
+## 5. Adım: Temizledikten sonra stilleri ve listeleri sayın
 
-بعد إجراء التنظيف ، سنعد الأنماط والقوائم مرة أخرى للتحقق مما إذا كانت مطوية أم لا. استخدم الكود التالي لعرض العدادات الجديدة:
+Temizlemeyi yaptıktan sonra, daraltılmış olup olmadıklarını kontrol etmek için stilleri ve listeleri tekrar sayacağız. Yeni sayaçları görüntülemek için aşağıdaki kodu kullanın:
 
 ```csharp
 Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
@@ -59,23 +59,23 @@ Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Cou
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
 ```
 
-توضح هذه التعليمات عدد الأنماط والقوائم المتبقية بعد التنظيف.
+Bu talimatlar, temizlikten sonra kalan stil ve liste sayısını gösterir.
 
-### مثال على شفرة المصدر لـ Cleanup Unused Styles And Lists باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Kullanılmayan Stilleri ve Listeleri Temizlemek için örnek kaynak kodu
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Unused styles.docx");
 
-	// بالاقتران مع الأنماط المضمنة ، يحتوي المستند الآن على ثمانية أنماط.
-	// يتم تمييز النمط المخصص على أنه "مستخدم" أثناء وجود أي نص داخل المستند
-	// منسق بهذا النمط. هذا يعني أن الأنماط الأربعة التي أضفناها غير مستخدمة حاليًا.
+	// Yerleşik stillerle birleştiğinde, belgenin artık sekiz stili vardır.
+	// Belgede herhangi bir metin varken özel bir stil "kullanılmış" olarak işaretlenir
+	// bu tarzda biçimlendirilmiştir. Bu, eklediğimiz 4 stilin şu anda kullanılmadığı anlamına gelir.
 	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
 					  $"Count of lists before Cleanup: {doc.Lists.Count}");
 
-	//ينظف الأنماط والقوائم غير المستخدمة من المستند بناءً على خيارات التنظيف المحددة.
+	//Verilen CleanupOptions'a bağlı olarak kullanılmayan stilleri ve listeleri belgeden temizler.
 	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 	doc.Cleanup(cleanupOptions);
 
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAnd
     
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ bölümünde doğru belge yolunu belirttiğinizden emin olun.`dataDir` değişken.
 
-لقد تعلمت الآن كيفية تنظيف الأنماط والقوائم غير المستخدمة من مستند باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تطبيق هذه الميزة على المستندات الخاصة بك.
+Artık Aspose.Words for .NET kullanarak bir belgeden kullanılmayan stilleri ve listeleri nasıl temizleyeceğinizi öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek bu özelliği kendi belgelerinize kolayca uygulayabilirsiniz.
 

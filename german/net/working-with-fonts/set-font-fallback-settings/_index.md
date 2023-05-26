@@ -1,51 +1,51 @@
 ---
-title: تعيين إعدادات الخط الاحتياطي
-linktitle: تعيين إعدادات الخط الاحتياطي
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين إعدادات استبدال الخطوط في Aspose.Words for .NET وتخصيص استبدال الخط في مستندات Word.
+title: Legen Sie die Schriftart-Fallback-Einstellungen fest
+linktitle: Legen Sie die Schriftart-Fallback-Einstellungen fest
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie die Schriftartersetzungseinstellungen in Aspose.Words für .NET festlegen und die Schriftartenersetzung in Ihren Word-Dokumenten anpassen.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/set-font-fallback-settings/
 ---
-في هذا البرنامج التعليمي ، سنوضح لك كيفية تعيين إعدادات استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. تسمح لك إعدادات استبدال الخط بتحديد الخطوط البديلة لاستخدامها عندما لا تكون الخطوط المحددة متاحة.
+In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET Schriftartersetzungseinstellungen in einem Word-Dokument festlegen. Mit den Schriftartersetzungseinstellungen können Sie Ersatzschriftarten angeben, die verwendet werden sollen, wenn die angegebenen Schriftarten nicht verfügbar sind.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Voraussetzungen
+Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel verfügen:
+- Grundkenntnisse der Programmiersprache C#
+- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
+Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل إعدادات استبدال الخط
- قم بإنشاء مثيل لـ`FontSettings` فئة واستخدام`Load`طريقة لتحميل إعدادات تجاوز الخط من ملف XML. يجب أن يحتوي ملف XML المحدد على قواعد استبدال الخط المراد استخدامها.
+## Schritt 2: Laden Sie die Einstellungen für die Schriftartersetzung
+ Erstellen Sie eine Instanz von`FontSettings` Klasse und nutzen Sie die`Load`Methode zum Laden von Einstellungen zum Überschreiben von Schriftarten aus einer XML-Datei. Die angegebene XML-Datei muss die zu verwendenden Schriftartersetzungsregeln enthalten.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font Fallback Rules.xml");
 ```
 
-## الخطوة 3: تطبيق إعدادات استبدال الخط
- إقران إعدادات استبدال الخط بالمستند من خلال تخصيصها للمستند`FontSettings` ملكية.
+## Schritt 3: Wenden Sie die Einstellungen für die Schriftartersetzung an
+ Ordnen Sie Schriftartersetzungseinstellungen dem Dokument zu, indem Sie sie dem Dokument zuweisen`FontSettings` Eigentum.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند باستخدام ملف`Save` طريقة`Document` بالمسار واسم الملف المناسبين.
+## Schritt 4: Speichern Sie das Dokument
+ Speichern Sie das Dokument mit`Save` Methode der`Document` mit dem entsprechenden Pfad und Dateinamen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-### نموذج التعليمات البرمجية المصدر لـ Set Font Fallback Settings باستخدام Aspose.Words for .NET 
+### Beispielquellcode zum Festlegen von Font-Fallback-Einstellungen mit Aspose.Words für .NET 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -55,5 +55,5 @@ doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تعيين إعدادات استبدال الخط في مستند Word باستخدام Aspose.Words for .NET. جرب قواعد مختلفة لاستبدال الخطوط للتأكد من تناسق وثيقتك ، حتى عندما لا تكون الخطوط المحددة متاحة.
+## Abschluss
+In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET Schriftartersetzungseinstellungen in einem Word-Dokument festlegen. Experimentieren Sie mit verschiedenen Schriftartersetzungsregeln, um sicherzustellen, dass Ihr Dokument konsistent aussieht, auch wenn die angegebenen Schriftarten nicht verfügbar sind.

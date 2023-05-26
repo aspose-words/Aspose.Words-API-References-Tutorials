@@ -1,29 +1,29 @@
 ---
-title: تلقي إشعار تحذير
-linktitle: تلقي إشعار تحذير
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تلقي إشعار تحذير عند استخدام Aspose.Words for .NET وإدارة أية مشكلات أو تحذيرات في مستنداتك.
+title: Uyarı Bildirimi Al
+linktitle: Uyarı Bildirimi Al
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanırken nasıl uyarı bildirimi alacağınızı ve belgelerinizdeki sorunları veya uyarıları nasıl yöneteceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/receive-warning-notification/
 ---
 
-في هذا البرنامج التعليمي ، سنوضح لك كيفية الحصول على إشعار تحذير أثناء استخدام Aspose.Words for .NET. يمكن إصدار تحذيرات عند إعداد أو حفظ مستند. سنوجهك خطوة بخطوة لفهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu eğitimde, Aspose.Words for .NET kullanırken nasıl uyarı bildirimi alacağınızı göstereceğiz. Bir belge kurulurken veya kaydedilirken uyarılar verilebilir. .NET projenizdeki kodu anlamanız ve uygulamanız için size adım adım rehberlik edeceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: تحديد دليل المستند
-ابدأ بتعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+Dizin yolunu Word belgenizin konumuna ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند وتكوين معالج التحذير
- قم بتحميل المستند باستخدام ملف`Document` فصل. بعد ذلك ، قم بإنشاء مثيل لملف`HandleDocumentWarnings` فئة للتعامل مع التحذيرات.
+## 2. Adım: Belgeyi yükleyin ve uyarı işleyiciyi yapılandırın
+ kullanarak belgeyi yükleyin.`Document` sınıf. Ardından, örneğinin bir örneğini oluşturun`HandleDocumentWarnings` uyarıları işlemek için sınıf.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -31,31 +31,31 @@ HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc. WarningCallback = callback;
 ```
 
-## الخطوة 3: قم بتحديث التخطيط وحفظ المستند
- قم بتحديث تخطيط المستند عن طريق استدعاء`UpdatePageLayout()` طريقة. سيؤدي ذلك إلى تشغيل التحذيرات ، إن وجدت. ثم احفظ المستند.
+## 3. Adım: Düzeni güncelleyin ve belgeyi kaydedin
+ öğesini çağırarak belge düzenini güncelleyin.`UpdatePageLayout()` yöntem. Bu, varsa uyarıları tetikleyecektir. Ardından belgeyi kaydedin.
 
 ```csharp
 doc.UpdatePageLayout();
 doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 ```
 
-### نموذج التعليمات البرمجية المصدر لتلقي إشعار تحذير باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Uyarı Bildirimi Al için örnek kaynak kodu 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
-// عند استدعاء UpdatePageLayout يتم تقديم المستند في الذاكرة. أي تحذيرات حدثت أثناء العرض
-// يتم تخزينها حتى يتم حفظ المستند ثم إرسالها إلى التحذير المناسب.
+// UpdatePageLayout'u çağırdığınızda, belge bellekte işlenir. İşleme sırasında oluşan tüm uyarılar
+// belge kaydedilene kadar saklanır ve ardından uygun WarningCallback'e gönderilir.
 doc.UpdatePageLayout();
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
-// على الرغم من تقديم المستند مسبقًا ، يتم إخطار المستخدم بأي تحذيرات حفظ أثناء حفظ المستند.
+// Doküman daha önce render edilmiş olsa bile, herhangi bir kaydetme uyarısı, dokümanın kaydedilmesi sırasında kullanıcıya bildirilir.
 doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمت كيفية تلقي إشعار تحذير أثناء استخدام Aspose.Words for .NET. يمكن إصدار تحذيرات عند إعداد أو حفظ مستند. استخدم هذه الميزة ليتم إعلامك بأي مشكلات أو تحذيرات تتعلق بمستنداتك.
+## Çözüm
+Bu öğreticide, Aspose.Words for .NET'i kullanırken nasıl uyarı bildirimi alacağınızı öğrendiniz. Bir belge kurulurken veya kaydedilirken uyarılar verilebilir. Belgelerinizle ilgili herhangi bir sorun veya uyarıdan haberdar olmak için bu özelliği kullanın.

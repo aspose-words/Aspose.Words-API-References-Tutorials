@@ -1,61 +1,61 @@
 ---
-title: تعطيل تضمين خطوط Windows
-linktitle: تعطيل تضمين خطوط Windows
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل تضمين خطوط Windows عند تحويل المستندات إلى PDF باستخدام Aspose.Words for .NET.
+title: Отключить встроенные шрифты Windows
+linktitle: Отключить встроенные шрифты Windows
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как отключить встраивание шрифтов Windows при преобразовании документов в PDF с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر خطوات تعطيل تضمين خطوط Windows في مستند PDF باستخدام Aspose.Words for .NET. من خلال تعطيل دمج الخط ، يمكنك تقليل حجم ملف PDF الذي تم إنشاؤه. اتبع الخطوات التالية:
+В этом руководстве мы покажем вам, как отключить встраивание шрифтов Windows в документ PDF с помощью Aspose.Words для .NET. Отключив встраивание шрифтов, вы можете уменьшить размер создаваемого PDF-файла. Выполните следующие действия:
 
-## الخطوة 1: تحميل المستند
+## Шаг 1: Загрузка документа
 
-ابدأ بتحميل المستند الذي تريد تحويله إلى PDF:
+Начните с загрузки документа, который вы хотите преобразовать в PDF:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح للمستند الخاص بك.
+Обязательно укажите правильный путь к документу.
 
-## الخطوة 2: تعيين خيارات حفظ PDF
+## Шаг 2. Установите параметры сохранения PDF
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وحدد كيفية تضمين الخطوط:
+Создайте экземпляр класса PdfSaveOptions и укажите, как встраивать шрифты:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
 ```
 
-يتيح لك هذا الخيار إلغاء تنشيط تكامل خطوط Windows في ملف PDF الذي تم إنشاؤه.
+Этот параметр позволяет отключить интеграцию шрифтов Windows в сгенерированный PDF-файл.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## Шаг 3. Конвертируйте документ в PDF
 
- استخدم ال`Save` طريقة تحويل المستند إلى PDF مع تحديد خيارات التحويل:
+ Использовать`Save` метод преобразования документа в PDF с указанием параметров преобразования:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Обязательно укажите правильный путь для сохранения конвертированного PDF-файла.
 
-### مثال على شفرة المصدر لـ Disable Embed Windows Fonts باستخدام Aspose.Words for .NET
+### Пример исходного кода для отключения встроенных шрифтов Windows с использованием Aspose.Words для .NET
 
-إليك كود المصدر الكامل لتعطيل تضمين خطوط Windows في مستند PDF باستخدام Aspose.Words for .NET:
+Вот полный исходный код для отключения встраивания шрифтов Windows в документ PDF с помощью Aspose.Words для .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Путь к каталогу документов.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// سيتم حفظ ملف PDF الناتج بدون تضمين خطوط Windows القياسية.
+	// Выходной PDF-файл будет сохранен без встраивания стандартных шрифтов Windows.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 
 ```
-باتباع هذه الخطوات ، يمكنك بسهولة تعطيل دمج خطوط Windows في مستند PDF باستخدام Aspose.Words for .NET.
+Следуя этим шагам, вы можете легко отключить встраивание шрифтов Windows в документ PDF с помощью Aspose.Words для .NET.
 

@@ -1,19 +1,19 @@
 ---
-title: قارن المستندات
-linktitle: قارن المستندات
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على مقارنة للخيارات المتساوية والمقارنة وهدف المقارنة ودقة المقارنة.
+title: Confronta documenti
+linktitle: Confronta documenti
+second_title: Riferimento all'API Aspose.Words per .NET
+description: I tutorial contengono il confronto per uguale, le opzioni di confronto, l'obiettivo di confronto e la granularità del confronto.
 type: docs
 weight: 1480
 url: /it/net/compare-documents/
 ---
 
-مقارنة المستندات عبارة عن برنامج تعليمي شامل حول مقارنة المستندات باستخدام Aspose.Words for .NET. يوفر هذا البرنامج التعليمي معلومات مفصلة حول الأساليب والميزات المختلفة المتاحة لمقارنة المستندات ، بما في ذلك تعيين خيارات المقارنة ، وتحليل النتائج ، والتعامل مع الاختلافات المكتشفة. يأتي مع الكثير من نماذج التعليمات البرمجية ولقطات الشاشة لتسهيل فهمه. سواء كنت مبتدئًا أو مطورًا متمرسًا ، سيأخذك هذا المورد خطوة بخطوة خلال عملية مقارنة المستندات باستخدام Aspose.Words for .NET.
+Confronta documenti è un tutorial completo sul confronto di documenti utilizzando Aspose.Words per .NET. Questa esercitazione fornisce informazioni dettagliate sui vari metodi e funzionalità disponibili per confrontare i documenti, inclusa l'impostazione delle opzioni di confronto, l'analisi dei risultati e la gestione delle differenze rilevate. Viene fornito con molti esempi di codice e schermate per renderlo più facile da capire. Che tu sia un principiante o uno sviluppatore esperto, questa risorsa ti guiderà passo dopo passo attraverso il processo di confronto dei documenti con Aspose.Words per .NET.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [قارن للحصول على Equal](./compare-for-equal/) | دليل تفصيلي خطوة بخطوة لشرح كود مصدر C # لميزة "المقارنة لـ Equals مع Aspose.Words for .NET. |
-| [قارن الخيارات](./compare-options/) | دليل خطوة بخطوة لشرح كود مصدر C # لميزة مقارنة الخيارات مع Aspose.Words for .NET. |
-| [هدف المقارنة](./comparison-target/) | تعرف على ميزة مقارنة الهدف في Aspose.Words for .NET التي تسمح لك بمقارنة المستندات وإنشاء مستند جديد يحتوي على التغييرات التي تم إجراؤها. |
-| [دقة المقارنة](./comparison-granularity/) | تعرف على ميزة مقارنة الدقة في Aspose.Words for .NET والتي تتيح مقارنة المستندات حرفًا بحرف ، والإبلاغ عن التغييرات التي تم إجراؤها. |
+| [Confronta per uguale](./compare-for-equal/) | Guida dettagliata per spiegare il codice sorgente C# della funzione Compare for Equals con Aspose.Words per .NET. |
+| [Confronta le opzioni](./compare-options/) | Guida dettagliata per spiegare il codice sorgente C# della funzione Confronta opzioni con Aspose.Words per .NET. |
+| [Obiettivo di confronto](./comparison-target/) | Scopri la funzionalità di confronto target di Aspose.Words per .NET che ti consente di confrontare documenti e generare un nuovo documento contenente le modifiche apportate. |
+| [Granularità di confronto](./comparison-granularity/) | Impara a confrontare la funzionalità di granularità di Aspose.Words per .NET che consente di confrontare i documenti carattere per carattere, segnalando le modifiche apportate. |

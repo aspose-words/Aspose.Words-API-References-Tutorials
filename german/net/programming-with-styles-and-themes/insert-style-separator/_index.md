@@ -1,28 +1,28 @@
 ---
-title: إدراج فاصل النمط
-linktitle: إدراج فاصل النمط
-second_title: Aspose.Words لمراجع .NET API
-description: تعلم كيفية إنشاء مستندات بأنماط مخصصة وإدراج فواصل الأنماط لتنسيق دقيق واحترافي.
+title: Stiltrennzeichen einfügen
+linktitle: Stiltrennzeichen einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie Dokumente mit benutzerdefinierten Stilen erstellen und Stiltrennzeichen für eine präzise, professionelle Formatierung einfügen.
 type: docs
 weight: 10
 url: /de/net/programming-with-styles-and-themes/insert-style-separator/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم لإدخال فاصل نمط في مستند باستخدام Aspose.Words for .NET. سنقوم بإنشاء مستند جديد وتحديد الأنماط المخصصة وإدراج فاصل النمط.
+In diesem Tutorial untersuchen wir den bereitgestellten C#-Quellcode zum Einfügen eines Stiltrennzeichens in ein Dokument mithilfe von Aspose.Words für .NET. Wir erstellen ein neues Dokument, definieren benutzerdefinierte Stile und fügen ein Stiltrennzeichen ein.
 
-## الخطوة الأولى: تهيئة البيئة
+## Schritt 1: Einrichten der Umgebung
 
-تأكد من قيامك بإعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Stellen Sie sicher, dass Sie Ihre Entwicklungsumgebung mit Aspose.Words für .NET eingerichtet haben. Stellen Sie sicher, dass Sie die erforderlichen Verweise hinzugefügt und die entsprechenden Namespaces importiert haben.
 
-## الخطوة 2: إنشاء كائن مستند جديد
+## Schritt 2: Erstellen eines neuen Dokumentobjekts
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- في هذه الخطوة ، نقوم بإنشاء ملف`Document` كائن وما يرتبط بها`DocumentBuilder` هدف.
+ In diesem Schritt erstellen wir ein neues`Document` Objekt und ein zugehöriges Objekt`DocumentBuilder` Objekt.
 
-## الخطوة 3: إنشاء وتكوين النمط المخصص
+## Schritt 3: Erstellen und Konfigurieren des benutzerdefinierten Stils
 
 ```csharp
 Style paraStyle = builder.Document.Styles.Add(StyleType.Paragraph, "MyParaStyle");
@@ -31,9 +31,9 @@ paraStyle.Font.Size = 8;
 paraStyle.Font.Name = "Arial";
 ```
 
-في هذه الخطوة ، نقوم بإنشاء نمط فقرة مخصص باسم "MyParaStyle" وقمنا بتعيين خصائص الخط الخاصة به.
+In diesem Schritt erstellen wir einen benutzerdefinierten Absatzstil mit dem Namen „MyParaStyle“ und legen dessen Schriftarteigenschaften fest.
 
-## الخطوة 4: إدخال فاصل الأنماط
+## Schritt 4: Einfügen des Stiltrennzeichens
 
 ```csharp
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
@@ -43,19 +43,19 @@ builder.ParagraphFormat.StyleName = paraStyle.Name;
 builder.Write("This is text with some other formatting");
 ```
 
-في هذه الخطوة ، قمنا بتعيين نمط الفقرة على "العنوان 1" ، وكتابة بعض النص بهذا النمط ، ثم نقوم بإدراج فاصل نمط. ثم قمنا بتعيين نمط الفقرة على نمطنا المخصص "MyParaStyle" وكتابة بعض النص بهذا النمط.
+In diesem Schritt stellen wir den Absatzstil auf „Überschrift 1“ ein, schreiben Text in diesem Stil und fügen dann ein Stiltrennzeichen ein. Dann stellen wir den Absatzstil auf unseren benutzerdefinierten Stil „MyParaStyle“ ein und schreiben Text mit diesem Stil.
 
-## الخطوة 5: احفظ المستند
+## Schritt 5: Speichern Sie das Dokument
 
-في هذه الخطوة الأخيرة ، يمكنك حفظ المستند الذي تم إنشاؤه وفقًا لاحتياجاتك.
+In diesem letzten Schritt können Sie das erstellte Dokument entsprechend Ihren Bedürfnissen speichern.
 
-يمكنك تشغيل التعليمات البرمجية المصدر لإدراج فاصل نمط في المستند. يتيح لك ذلك إنشاء أقسام نصية بأنماط مختلفة وتخصيص مظهر المستند.
+Sie können Quellcode ausführen, um ein Stiltrennzeichen in ein Dokument einzufügen. Auf diese Weise können Sie Textabschnitte mit unterschiedlichen Stilen erstellen und das Aussehen Ihres Dokuments anpassen.
 
-### نموذج التعليمات البرمجية المصدر لـ Insert Style Separator باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Style Separator einfügen“ mit Aspose.Words für .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document();
@@ -66,12 +66,12 @@ paraStyle.Font.Bold = false;
 paraStyle.Font.Size = 8;
 paraStyle.Font.Name = "Arial";
 
-// إلحاق نص بنمط "العنوان 1".
+// Fügen Sie Text im Stil „Überschrift 1“ hinzu.
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 builder.Write("Heading 1");
 builder.InsertStyleSeparator();
 
-// إلحاق نص بنمط آخر.
+// Fügen Sie Text mit einem anderen Stil hinzu.
 builder.ParagraphFormat.StyleName = paraStyle.Name;
 builder.Write("This is text with some other formatting ");
 
@@ -80,12 +80,12 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
         
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا البرنامج التعليمي ، تعلمنا كيفية إدراج فاصل نمط في مستند باستخدام Aspose.Words for .NET. أنشأنا مستندًا جديدًا ، وحددنا نمطًا مخصصًا ، واستخدمنا فاصل النمط لتمييز أقسام النص بأنماط مختلفة.
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET ein Stiltrennzeichen in ein Dokument einfügt. Wir haben ein neues Dokument erstellt, einen benutzerdefinierten Stil definiert und das Stiltrennzeichen verwendet, um Textabschnitte mit unterschiedlichen Stilen zu unterscheiden.
 
-يوفر استخدام فواصل الأنماط مرونة إضافية عند تنسيق مستنداتك. يساعد هذا في الحفاظ على التناسق البصري مع السماح بالتنوع الأسلوبي.
+Die Verwendung von Stiltrennzeichen bietet zusätzliche Flexibilität bei der Formatierung Ihrer Dokumente. Dies trägt zur Wahrung der visuellen Konsistenz bei und ermöglicht gleichzeitig stilistische Variationen.
 
-يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية لإدارة الأنماط في مستنداتك. يمكنك استكشاف هذه المكتبة بشكل أكبر لتخصيص مظهر مستنداتك وإنشاء نتائج احترافية.
+Aspose.Words für .NET bietet eine leistungsstarke API zum Verwalten von Stilen in Ihren Dokumenten. Sie können diese Bibliothek weiter erkunden, um das Aussehen Ihrer Dokumente anzupassen und professionelle Ergebnisse zu erzielen.
 
-تذكر أن تحفظ المستند الخاص بك بعد إدراج فاصل الأنماط.
+Denken Sie daran, Ihr Dokument nach dem Einfügen des Stiltrennzeichens zu speichern.

@@ -1,57 +1,57 @@
 ---
-title: أقحم الصور
-linktitle: أقحم الصور
-second_title: Aspose.Words لمراجع .NET API
-description: دليل مفصّل خطوة بخطوة لتمكين استيفاء الصور باستخدام Aspose.Words for .NET.
+title: Interpola immagini
+linktitle: Interpola immagini
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida dettagliata per abilitare l'interpolazione delle immagini con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/interpolate-images/
 ---
 
-تقدم هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام ميزة الاستيفاء للصور مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، سوف تكون قادرًا على فهم كيفية تمكين استيفاء الصور عند التحويل إلى PDF.
+Questo articolo fornisce una guida passo passo su come utilizzare la funzione di interpolazione delle immagini con Aspose.Words per .NET. Spiegheremo ogni parte del codice in dettaglio. Alla fine di questo tutorial, sarai in grado di capire come abilitare l'interpolazione delle immagini durante la conversione in PDF.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Prima di iniziare, assicurati di aver installato e configurato la libreria Aspose.Words per .NET nel tuo progetto. Puoi trovare la libreria e le istruzioni di installazione sul sito web di Aspose.
 
-## الخطوة 1: تحديد دليل المستند
+## Passaggio 1: definire la directory dei documenti
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Per iniziare, devi definire il percorso della directory in cui si trovano i tuoi documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Passaggio 2: caricare il documento
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Successivamente, dobbiamo caricare il documento che vogliamo elaborare. In questo esempio, supponiamo che il documento si chiami "Rendering.docx" e si trovi nella directory dei documenti specificata.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: قم بتكوين خيارات الحفظ بتنسيق PDF باستخدام إطار الإقحام
+## Passaggio 3: configurare le opzioni per il salvataggio come PDF con l'interpolazione dei frame
 
- لتمكين استيفاء الصور عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن عن طريق تعيين`InterpolateImages` ملكية ل`true`.
+ Per abilitare l'interpolazione delle immagini durante la conversione in PDF, dobbiamo configurare il file`PdfSaveOptions` oggetto impostando il`InterpolateImages` proprietà a`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-## الخطوة 4: احفظ المستند كملف PDF مع استيفاء الإطار
+## Passaggio 4: salva il documento come PDF con l'interpolazione dei frame
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Infine, possiamo salvare il documento in formato PDF utilizzando le opzioni di salvataggio configurate in precedenza.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تمكين استيفاء الصور أثناء تحويل مستند إلى PDF باستخدام Aspose.Words for .NET.
+È tutto ! Hai abilitato correttamente l'interpolazione delle immagini durante la conversione di un documento in PDF utilizzando Aspose.Words per .NET.
 
-### مثال على شفرة المصدر لاستيفاء الصورة باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per l'interpolazione di immagini con Aspose.Words per .NET
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 

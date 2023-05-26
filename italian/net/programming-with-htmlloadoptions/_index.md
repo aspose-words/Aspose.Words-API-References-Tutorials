@@ -1,15 +1,15 @@
 ---
-title: البرمجة باستخدام Htmlloadoptions
-linktitle: البرمجة باستخدام Htmlloadoptions
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على نوع التحكم المفضل
+title: Programmare con Htmlloadoptions
+linktitle: Programmare con Htmlloadoptions
+second_title: Riferimento all'API Aspose.Words per .NET
+description: tutorial contengono il tipo di controllo preferito
 type: docs
 weight: 1600
 url: /it/net/programming-with-htmlloadoptions/
 ---
-تعتبر البرامج التعليمية لـ Aspose.Words for .NET حول البرمجة باستخدام HTMLLoadOptions مصدرًا قيمًا للمطورين الذين يعملون مع مستندات HTML في تطبيقاتهم. توفر هذه البرامج التعليمية إرشادات مفصلة خطوة بخطوة لتحميل مستندات HTML وتحويلها ومعالجتها باستخدام مكتبة Aspose.Words. سيتعلم المطورون كيفية تكوين خيارات التحميل ، واستخراج محتوى HTML ، وتحويل مستندات HTML إلى تنسيقات أخرى مثل PDF أو DOCX ، وتطبيق تحويلات ومعالجات محددة على مستندات HTML. توفر هذه البرامج التعليمية فهماً عميقاً للعمل مع مستندات HTML باستخدام Aspose.Words ، مما يمكّن المطورين من إنشاء تطبيقات قوية ومتعددة الاستخدامات.
+I tutorial di Aspose.Words per .NET sulla programmazione con HTMLLoadOptions sono una risorsa preziosa per gli sviluppatori che lavorano con documenti HTML nelle loro applicazioni. Questi tutorial forniscono dettagliate istruzioni dettagliate per il caricamento, la conversione e la manipolazione di documenti HTML utilizzando la libreria Aspose.Words. Gli sviluppatori impareranno come configurare le opzioni di caricamento, estrarre contenuto HTML, convertire documenti HTML in altri formati come PDF o DOCX e applicare trasformazioni e manipolazioni specifiche ai documenti HTML. Questi tutorial forniscono una comprensione approfondita del lavoro con i documenti HTML con Aspose.Words, consentendo agli sviluppatori di creare applicazioni potenti e versatili.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutorial
+| Titolo | Descrizione |
 | --- | --- |
-| [نوع التحكم المفضل](./preferred-control-type/) | دليل تفصيلي خطوة بخطوة لتحديد نوع عنصر التحكم المفضل عند تحميل مستند HTML باستخدام Aspose.Words for .NET. |
+| [Tipo di controllo preferito](./preferred-control-type/) | Guida dettagliata per specificare il tipo di controllo preferito durante il caricamento di un documento HTML con Aspose.Words per .NET. |

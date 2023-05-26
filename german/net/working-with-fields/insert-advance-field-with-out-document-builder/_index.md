@@ -1,41 +1,41 @@
 ---
-title: أدخل الحقل المتقدم بدون Document Builder
-linktitle: أدخل الحقل المتقدم بدون Document Builder
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقل متقدم في مستندات Word باستخدام Aspose.Words for .NET.
+title: Erweitertes Feld ohne Document Builder einfügen
+linktitle: Erweitertes Feld ohne Document Builder einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein erweitertes Feld in Ihre Word-Dokumente einfügen.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/insert-advance-field-with-out-document-builder/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "إدراج حقل متقدم بدون DocumentBuilder" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der die Funktion „Erweiterte Feldeinfügung ohne DocumentBuilder“ von Aspose.Words für .NET verwendet. Stellen Sie sicher, dass Sie jeden Schritt sorgfältig befolgen, um die gewünschten Ergebnisse zu erzielen.
 
-## الخطوة 1: إعداد دليل المستند
+## Schritt 1: Einrichten des Dokumentenverzeichnisses
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+Im bereitgestellten Code müssen Sie das Verzeichnis Ihrer Dokumente angeben. Ersetzen Sie den Wert „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء المستند والفقرة
+## Schritt 2: Dokument und Absatz erstellen
 
-نبدأ بإنشاء مستند جديد وجلب الفقرة الأولى.
+Wir beginnen damit, ein neues Dokument zu erstellen und den ersten Absatz abzurufen.
 
 ```csharp
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## الخطوة 3: إدخال الحقل المتقدم
+## Schritt 3: Einfügen des erweiterten Feldes
 
- نحن نستخدم ال`AppendField()`طريقة لإدراج حقل متقدم في الفقرة.
+ Wir benutzen das`AppendField()`Methode zum Einfügen eines erweiterten Felds in den Absatz.
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 ```
 
-ثم نقوم بتكوين الخصائص المختلفة للحقل المتقدم من خلال تحديد القيم المطلوبة.
+Anschließend konfigurieren wir die verschiedenen Eigenschaften des erweiterten Felds, indem wir die gewünschten Werte angeben.
 
 ```csharp
 field. DownOffset = "10";
@@ -46,23 +46,23 @@ field.HorizontalPosition = "100";
 field. VerticalPosition = "100";
 ```
 
- أخيرًا ، نسمي`Update()` طريقة لتحديث المجال.
+ Abschließend nennen wir die`Update()` Methode zum Aktualisieren des Felds.
 
 ```csharp
 field. Update();
 ```
 
-### مثال على الكود المصدري لإدخال حقل متقدم بدون DocumentBuilder مع Aspose.Words for .NET
+### Beispiel des Quellcodes zum Einfügen eines erweiterten Felds ohne DocumentBuilder mit Aspose.Words für .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Der Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة.
+// Dokumentenerstellung.
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-// أدخل الحقل المتقدم.
+// Fügen Sie das erweiterte Feld ein.
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 
 field. DownOffset = "10";
@@ -77,7 +77,7 @@ field. Update();
 doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 ```
 
-في هذا المثال ، أنشأنا مستندًا جديدًا ، وأدخلنا حقلاً متقدمًا دون استخدام DocumentBuilder ، وقمنا بتكوين خصائص الحقل المختلفة ، وحفظنا المستند باسم ملف محدد.
+In diesem Beispiel haben wir ein neues Dokument erstellt, ein erweitertes Feld ohne Verwendung von DocumentBuilder eingefügt, die verschiedenen Feldeigenschaften konfiguriert und das Dokument unter einem angegebenen Dateinamen gespeichert.
 
-هذا يختتم دليلنا حول كيفية استخدام ميزة "إدراج حقل متقدم بدون DocumentBuilder" مع Aspose.Words for .NET.
+Damit ist unsere Anleitung zur Verwendung der Funktion „Erweitertes Feld ohne DocumentBuilder einfügen“ mit Aspose.Words für .NET abgeschlossen.
 

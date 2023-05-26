@@ -1,67 +1,67 @@
 ---
-title: تحويل الشكل إلى مكتب الرياضيات
-linktitle: تحويل الشكل إلى مكتب الرياضيات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل الأشكال إلى صيغ الرياضيات في Office عند تحميل المستندات باستخدام Aspose.Words for .NET.
+title: Converti forma in Office Math
+linktitle: Converti forma in Office Math
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come convertire le forme in formule matematiche di Office durante il caricamento di documenti con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/convert-shape-to-office-math/
 ---
 
-عند العمل مع المستندات التي تحتوي على أشكال رياضية في تطبيق C # ، قد تحتاج إلى تحويلها إلى صيغ الرياضيات في Office لتحسين التوافق والعرض التقديمي. باستخدام مكتبة Aspose.Words لـ .NET ، يمكنك بسهولة تحويل الأشكال إلى صيغ الرياضيات في Office أثناء تحميل مستند. في هذا الدليل المفصل خطوة بخطوة ، سنرشدك إلى كيفية استخدام Aspose.Words للكود المصدري .NET C # لتحميل مستند بتحويل الأشكال إلى صيغ الرياضيات في Office باستخدام LoadOptions.
+Quando si lavora con documenti contenenti forme matematiche in un'applicazione C#, potrebbe essere necessario convertirli in formule matematiche di Office per una migliore compatibilità e presentazione. Con la libreria Aspose.Words per .NET, puoi convertire facilmente le forme in formule matematiche di Office durante il caricamento di un documento. In questa guida dettagliata, ti illustreremo come usare Aspose.Words per il codice sorgente .NET C# per caricare un documento con la conversione di forme in formule matematiche di Office usando LoadOptions.
 
-## فهم مكتبة Aspose.Words
+## Comprensione della libreria Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Prima di immergersi nel codice, è importante comprendere la libreria Aspose.Words per .NET. Aspose.Words è una potente libreria per creare, modificare, convertire e proteggere documenti Word in diverse piattaforme, incluso .NET. Offre molte funzionalità per la manipolazione dei documenti, come l'inserimento di testo, la modifica della formattazione, l'aggiunta di sezioni e molto altro.
 
-## تكوين خيارات التحميل
+## Configurazione delle opzioni di caricamento
 
-الخطوة الأولى هي تكوين خيارات التحميل لوثيقتنا. استخدم فئة LoadOptions لتحديد معلمات التحميل. في حالتنا ، نريد تحويل الأشكال إلى صيغ الرياضيات في Office ، لذلك نحتاج إلى تعيين الخاصية ConvertShapeToOfficeMath إلى true. هيريس كيفية القيام بذلك:
+Il primo passo è configurare le opzioni di caricamento per il nostro documento. Utilizzare la classe LoadOptions per specificare i parametri di caricamento. Nel nostro caso, vogliamo convertire le forme in formule matematiche di Office, quindi dobbiamo impostare la proprietà ConvertShapeToOfficeMath su true. Ecco come farlo:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };
 ```
 
-قمنا بإنشاء كائن LoadOptions جديد وقمنا بتعيين الخاصية ConvertShapeToOfficeMath على true لتمكين تحويل الأشكال إلى صيغ الرياضيات في Office عند تحميل المستند.
+Creiamo un nuovo oggetto LoadOptions e impostiamo la proprietà ConvertShapeToOfficeMath su true per abilitare la conversione delle forme in formule matematiche di Office durante il caricamento del documento.
 
-## تحميل المستند مع تحويل الأشكال إلى صيغ الرياضيات في Office
+## Caricamento del documento con conversione delle forme in formule matematiche di Office
 
-الآن بعد أن قمنا بتكوين خيارات التحميل ، يمكننا تحميل المستند باستخدام فئة Document وتحديد خيارات التحميل. هنا مثال :
+Ora che abbiamo configurato le opzioni di caricamento, possiamo caricare il documento utilizzando la classe Document e specificare le opzioni di caricamento. Ecco un esempio:
 
 ```csharp
 Document doc = new Document(dataDir + "Office math.docx", loadOptions);
 ```
 
-في هذا المثال ، نقوم بتحميل المستند "Office math.docx" الموجود في دليل المستندات باستخدام خيارات التحميل المحددة.
+In questo esempio, carichiamo il documento "Office math.docx" situato nella directory dei documenti utilizzando le opzioni di caricamento specificate.
 
-## تسجيل الوثيقة
+## Registrazione del documento
 
-بعد تحميل المستند بتحويل الأشكال إلى صيغ الرياضيات في Office ، يمكنك حفظه بالتنسيق المطلوب باستخدام طريقة Save لفئة Document. على سبيل المثال ، لحفظ المستند بتنسيق docx.
+Dopo aver caricato il documento con la conversione delle forme in formule matematiche di Office, è possibile salvarlo nel formato desiderato utilizzando il metodo Save della classe Document. Ad esempio, per salvare il documento in formato .docx:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.Docx);
 ```
 
-تأكد من استبدال "dataDir" بمسار الدليل إلى مستنداتك.
+Assicurati di sostituire "dataDir" con il percorso della directory dei tuoi documenti.
 
-### مثال على كود المصدر لـ LoadOptions مع وظيفة "Convert Shape To Office Math" باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per LoadOptions con la funzionalità "Converti forma in Office Math" utilizzando Aspose.Words per .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تكوين خيارات التحميل بوظيفة "تحويل الشكل"
+// Configurazione delle opzioni di caricamento con la funzionalità "Converti Forma".
 
   To Office Math"
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };
 
-// قم بتحميل المستند بالخيارات المحددة
+// Carica il documento con le opzioni specificate
 Document doc = new Document(dataDir + "Office math.docx", loadOptions);
 
-//احفظ المستند بالتنسيق المطلوب
+//Salva il documento nel formato desiderato
 doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.Docx);
 ```
 
-## خاتمة
+## Conclusione
 
-في هذا الدليل ، شرحنا كيفية تحميل مستند بتحويل الأشكال إلى صيغ الرياضيات في Office باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يوفر تحويل الأشكال إلى صيغ الرياضيات في Office توافقًا وعرضًا أفضل للمستندات التي تحتوي على عناصر رياضية.
+In questa guida, abbiamo spiegato come caricare un documento con la conversione di forme in formule matematiche di Office utilizzando la libreria Aspose.Words per .NET. Seguendo i passaggi forniti e usando il codice sorgente C# fornito, puoi facilmente applicare questa funzionalità nella tua applicazione C#. La conversione di forme in formule matematiche di Office offre una migliore compatibilità e presentazione dei documenti che contengono elementi matematici.

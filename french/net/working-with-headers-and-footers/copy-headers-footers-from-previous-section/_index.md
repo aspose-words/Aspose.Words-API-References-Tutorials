@@ -1,37 +1,37 @@
 ---
-title: نسخ تذييلات الرؤوس من القسم السابق
-linktitle: نسخ تذييلات الرؤوس من القسم السابق
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية نسخ الرؤوس والتذييلات من القسم السابق في مستندات Word باستخدام Aspose.Words for .NET.
+title: Copier les en-têtes et les pieds de page de la section précédente
+linktitle: Copier les en-têtes et les pieds de page de la section précédente
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à copier les en-têtes et les pieds de page de la section précédente dans les documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-headers-and-footers/copy-headers-footers-from-previous-section/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوجهك حول كيفية نسخ الرؤوس والتذييلات من القسم السابق في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+Dans ce didacticiel étape par étape, nous vous expliquerons comment copier les en-têtes et les pieds de page de la section précédente dans un document Word à l'aide d'Aspose.Words pour .NET. Nous vous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
 
-للبدء ، تأكد من تثبيت وإعداد Aspose.Words for .NET في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque depuis le site officiel.
 
-## الخطوة 1: الوصول إلى القسم السابق
+## Étape 1 : Accéder à la section précédente
 
- أولاً ، قم باسترداد القسم السابق من خلال الوصول إلى ملف`PreviousSibling` خاصية القسم الحالي:
+ Tout d'abord, récupérez la section précédente en accédant au`PreviousSibling` propriété de la section courante :
 
 ```csharp
 Section previousSection = (Section)section.PreviousSibling;
 ```
 
-## الخطوة 2: التحقق من القسم السابق
+## Étape 2 : Vérification de la section précédente
 
-بعد ذلك ، تحقق من وجود قسم سابق. إذا لم يكن هناك قسم سابق ، فنعود ببساطة:
+Ensuite, vérifiez si une section précédente existe. S'il n'y a pas de section précédente, on retourne simplement :
 
 ```csharp
 if (previousSection == null)
     return;
 ```
 
-## الخطوة 3: مسح ونسخ الرؤوس والتذييلات
+## Étape 3 : Effacer et copier les en-têtes et les pieds de page
 
-لنسخ الرؤوس والتذييلات من القسم السابق إلى القسم الحالي ، نقوم بمسح الرؤوس والتذييلات الموجودة في القسم الحالي ثم نكررها من خلال الرؤوس والتذييلات في القسم السابق لإضافة نسخ مستنسخة إلى القسم الحالي:
+Pour copier les en-têtes et pieds de page de la section précédente vers la section actuelle, nous effaçons les en-têtes et pieds de page existants dans la section actuelle, puis parcourons les en-têtes et pieds de page de la section précédente pour ajouter des copies clonées à la section actuelle :
 
 ```csharp
 section.HeadersFooters.Clear();
@@ -40,17 +40,17 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
     section.HeadersFooters.Add(headerFooter.Clone(true));
 ```
 
-## الخطوة 4: حفظ المستند
+## Étape 4 : Enregistrer le document
 
-أخيرًا ، احفظ المستند المعدل:
+Enfin, enregistrez le document modifié :
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-هذا كل شيء! لقد نجحت في نسخ الرؤوس والتذييلات من القسم السابق إلى القسم الحالي في مستند Word باستخدام Aspose.Words for .NET.
+C'est ça! Vous avez réussi à copier les en-têtes et les pieds de page de la section précédente vers la section actuelle dans un document Word à l'aide de Aspose.Words pour .NET.
 
-### مثال على شفرة المصدر لنسخ تذييلات الرؤوس من القسم السابق باستخدام Aspose.Words for .NET
+### Exemple de code source pour Copier les en-têtes de pied de page de la section précédente à l'aide de Aspose.Words pour .NET
 
 ```csharp
 Section previousSection = (Section)section.PreviousSibling;
@@ -66,4 +66,4 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
 doc.Save("OutputDocument.docx");
 ```
 
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله وفقًا لمتطلباتك الخاصة.
+N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.

@@ -1,21 +1,21 @@
 ---
-title: البرمجة مع خيارات حفظ الصور
-linktitle: البرمجة مع خيارات حفظ الصور
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على التحكم في عتبة العرض لترتيب tiff الثنائي ، والحصول على نطاق صفحات tiff ، وفهرسة تنسيق 1bpp ، والحصول على نطاق صفحات jpeg وإعادة استدعاء حفظ الصفحة
+title: Programmation avec des images
+linktitle: Programmation avec des images
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent le contrôle du seuil d'exposition pour la binarisation tiff, l'obtention de la plage de pages tiff, le format 1bpp indexé, l'obtention de la plage de pages jpeg et le rappel d'enregistrement de page
 type: docs
 weight: 1630
 url: /fr/net/programming-with-imagesaveoptions/
 ---
-ستساعدك برامج Aspose.Words for .NET التعليمية حول البرمجة باستخدام ImageSaveOptions على إتقان ميزات معالجة الصور المتقدمة في مستندات Word الخاصة بك. ستوجهك هذه البرامج التعليمية خطوة بخطوة خلال استخدام خيارات حفظ الصور ، بما في ذلك الضغط واختيار تنسيق الصورة وضبط جودة الصورة والمزيد. ستتعلم كيفية تخصيص معالجة الصور عند إنشاء المستندات أو تحويلها ، مما يمنحك تحكمًا دقيقًا في مظهر وحجم الصور في ملفات Word الخاصة بك.
+Les didacticiels Aspose.Words pour .NET sur la programmation avec ImageSaveOptions vous aideront à maîtriser les fonctionnalités avancées de manipulation d'images dans vos documents Word. Ces didacticiels étape par étape vous guideront dans l'utilisation des options d'enregistrement d'image, y compris la compression, le choix du format d'image, le réglage de la qualité de l'image, etc. Vous apprendrez à personnaliser le traitement des images lors de la génération ou de la conversion de documents, vous donnant un contrôle précis sur l'apparence et la taille des images dans vos fichiers Word.
 
-تغطي البرامج التعليمية أيضًا المفاهيم الأساسية لمعالجة الصور ، بما في ذلك إدراج الصور وحذفها وتغيير حجمها واقتصاصها في مستند Word باستخدام Aspose.Words for .NET. ستتعلم كيفية استخراج الصور من مستندات Word واستبدالها بصور أخرى وتعديل موضعها ومحاذاةها وتغليفها. ستتيح لك هذه البرامج التعليمية إنشاء مهام سير عمل مؤتمتة وفعالة لإدارة الصور في مستندات Word الخاصة بك ، مما يمنحك المهارات اللازمة للتعامل بسهولة وكفاءة مع العناصر المرئية لملفات Word الخاصة بك.
+Les didacticiels couvrent également les concepts de base de la manipulation d'images, notamment l'insertion, la suppression, le redimensionnement et le recadrage d'images dans un document Word à l'aide d'Aspose.Words pour .NET. Vous apprendrez à extraire des images de documents Word, à les remplacer par d'autres images et à ajuster leur position, leur alignement et leur habillage. Ces didacticiels vous permettront de créer des flux de travail automatisés et efficaces pour la gestion des images dans vos documents Word, vous donnant les compétences nécessaires pour manipuler facilement et efficacement les éléments visuels de vos fichiers Word.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [كشف التحكم في العتبة ل Tiff Binarization](./expose-threshold-control-for-tiff-binarization/) | تعرف على كيفية التحكم في حد تنسيق TIFF الثنائي باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل للحصول على صور ذات جودة أفضل. |
-| [احصل على نطاق صفحات Tiff](./get-tiff-page-range/) | تعرف على كيفية استخراج مجموعة من صفحات TIFF باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل لملفات TIFF المخصصة. |
-| [تنسيق 1Bpp مفهرس](./format-1bpp-indexed/) | تعرف على كيفية تنسيق الصور في 1 bpp مفهرسة باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل للصور ذات عمق الألوان المنخفض. |
-| [احصل على نطاق صفحات Jpeg](./get-jpeg-page-range/) | تعرف على كيفية الحصول على مجموعة من صفحات JPEG باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل لاستخراج الصور المخصصة. |
-| [استدعاء حفظ الصفحة](./page-saving-callback/) | تعرف على كيفية تخصيص حفظ صفحات المستند للصور باستخدام Aspose.Words for .NET. |
+| [Contrôle du seuil d'exposition pour la binarisation Tiff](./expose-threshold-control-for-tiff-binarization/) | Apprenez à contrôler le seuil de binarisation TIFF avec Aspose.Words pour .NET. Tutoriel complet pour des images de meilleure qualité. |
+| [Obtenir la plage de pages Tiff](./get-tiff-page-range/) | Apprenez à extraire une gamme de pages TIFF avec Aspose.Words pour .NET. Tutoriel complet pour les fichiers TIFF personnalisés. |
+| [Format 1Bpp Indexé](./format-1bpp-indexed/) | Apprenez à formater des images en 1 bpp indexées avec Aspose.Words pour .NET. Tutoriel complet pour les images à faible profondeur de couleur. |
+| [Obtenir la plage de pages JPEG](./get-jpeg-page-range/) | Apprenez à obtenir une gamme de pages JPEG avec Aspose.Words pour .NET. Tutoriel complet pour extraire des images personnalisées. |
+| [Rappel d'enregistrement de page](./page-saving-callback/) | Apprenez à personnaliser l'enregistrement de pages de document en images avec Aspose.Words pour .NET. |

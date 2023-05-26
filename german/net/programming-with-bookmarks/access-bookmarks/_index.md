@@ -1,62 +1,62 @@
 ---
-title: الوصول إلى الإشارات المرجعية
-linktitle: الوصول إلى الإشارات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الوصول إلى الإشارات المرجعية في مستند Word باستخدام Aspose.Words for .NET.
+title: Greifen Sie auf Lesezeichen zu
+linktitle: Greifen Sie auf Lesezeichen zu
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET auf Lesezeichen in einem Word-Dokument zugreifen.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/access-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إشارات مرجعية في Aspose.Words for .NET library. توفر هذه الميزة الوصول إلى إشارات مرجعية محددة في مستند Word.
+In diesem Artikel werden wir den obigen C#-Quellcode untersuchen, um zu verstehen, wie die Funktion „Zugriff auf Lesezeichen“ in der Bibliothek „Aspose.Words für .NET“ verwendet wird. Diese Funktion ermöglicht den Zugriff auf bestimmte Lesezeichen in einem Word-Dokument.
 
-## المتطلبات الأساسية
+## Voraussetzungen
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Grundkenntnisse der C#-Sprache.
+- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
 
-## الخطوة 1: تحميل المستند
+## Schritt 1: Laden des Dokuments
 
- قبل أن نبدأ في الوصول إلى الإشارات المرجعية ، نحتاج إلى تحميل مستند Word باستخدام Aspose.Words for .NET. يمكن القيام بذلك عن طريق إنشاء مثيل لملف`Document` كائن يحدد مسار ملف المستند:
+ Bevor wir auf Lesezeichen zugreifen können, müssen wir ein Word-Dokument mit Aspose.Words für .NET laden. Dies kann durch Instanziieren von a erfolgen`Document` Objekt, das den Pfad der Dokumentdatei angibt:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## الخطوة 2: الوصول إلى الإشارات المرجعية
+## Schritt 2: Zugriff auf Lesezeichen
 
-بمجرد تحميل المستند ، يمكننا الوصول إلى الإشارات المرجعية في المستند. هناك طريقتان للوصول إلى الإشارات المرجعية: عن طريق الفهرس والاسم.
+Sobald das Dokument geladen ist, können wir auf die Lesezeichen im Dokument zugreifen. Es gibt zwei Möglichkeiten, auf Lesezeichen zuzugreifen: über den Index und über den Namen.
 
-- الوصول عن طريق الفهرس: في مثالنا ، نستخدم الفهرس 0 للوصول إلى الإشارة المرجعية الأولى للمستند:
+- Zugriff per Index: In unserem Beispiel verwenden wir Index 0, um auf das erste Lesezeichen des Dokuments zuzugreifen:
 
 ```csharp
 Bookmark bookmark1 = doc.Range.Bookmarks[0];
 ```
 
-- الوصول بالاسم: في مثالنا ، نستخدم الاسم "MyBookmark3" للوصول إلى إشارة مرجعية معينة في المستند:
+- Zugriff über Namen: In unserem Beispiel verwenden wir den Namen „MyBookmark3“, um auf ein bestimmtes Lesezeichen im Dokument zuzugreifen:
 
 ```csharp
 Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
 ```
 
-### مثال على شفرة المصدر للوصول إلى الإشارات المرجعية باستخدام Aspose.Words for .NET
+### Beispielquellcode für Access Bookmarks mit Aspose.Words für .NET
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح الوصول إلى الإشارات المرجعية باستخدام Aspose.Words for .NET:
+Hier ist der vollständige Beispielquellcode, um den Zugriff auf Lesezeichen mit Aspose.Words für .NET zu demonstrieren:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 	
-	// حسب الفهرس:
+	// Nach Index:
 	Bookmark bookmark1 = doc.Range.Bookmarks[0];
-	// بالاسم:
+	// Namentlich:
 	Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
    
 ```
 
-## خاتمة
+## Abschluss
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام ميزة Access Bookmarks في Aspose.Words for .NET. اتبعنا دليلًا تفصيليًا لتحميل مستند والوصول إلى الإشارات المرجعية باستخدام الفهرس والاسم.
+In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Access Bookmarks-Funktion von Aspose.Words für .NET verwendet wird. Wir folgten einer Schritt-für-Schritt-Anleitung zum Hochladen eines Dokuments und zum Zugriff auf Lesezeichen mithilfe von Index und Name.

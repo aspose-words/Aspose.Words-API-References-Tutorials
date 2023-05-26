@@ -1,62 +1,62 @@
 ---
-title: قائمة نقطية
-linktitle: قائمة نقطية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء قائمة نقطية باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Aufzählungsliste
+linktitle: Aufzählungsliste
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET eine Aufzählungsliste erstellen.
 type: docs
 weight: 10
 url: /de/net/working-with-markdown/bulleted-list/
 ---
 
-في هذا البرنامج التعليمي ، سنخبرك بكيفية إنشاء قائمة نقطية باستخدام Aspose.Words for .NET. يتم استخدام قائمة نقطية لسرد العناصر بدون استخدام الترقيم.
+In diesem Tutorial erklären wir Ihnen, wie Sie mit Aspose.Words für .NET eine Liste mit Aufzählungszeichen erstellen. Eine Liste mit Aufzählungszeichen wird verwendet, um Elemente ohne Nummerierung aufzulisten.
 
-## الخطوة 1: استخدام منشئ المستندات
+## Schritt 1: Verwendung eines Dokumentengenerators
 
-أولاً ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Zuerst verwenden wir einen Dokumentgenerator, um Inhalte zu unserem Dokument hinzuzufügen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## الخطوة 2: تطبيق قائمة نقطية افتراضية
+## Schritt 2: Anwenden einer Standardliste mit Aufzählungszeichen
 
- يمكننا تطبيق قائمة افتراضية ذات تعداد نقطي باستخدام قائمة منشئ المستندات`ApplyBulletDefault` طريقة.
+ Mit dem Document Builder können wir eine standardmäßige Aufzählungsliste anwenden`ApplyBulletDefault` Methode.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## الخطوة 3: تخصيص تنسيق الرمز النقطي
+## Schritt 3: Anpassen des Bullet-Formats
 
- يمكننا تخصيص تنسيق الرمز النقطي من خلال الوصول إلى خصائص`ListFormat.List.ListLevels[0]`. في هذا المثال ، نستخدم الشرطة "-" كرمز نقطي.
+ Wir können das Aufzählungsformat anpassen, indem wir auf die Eigenschaften von zugreifen`ListFormat.List.ListLevels[0]`. In diesem Beispiel verwenden wir den Bindestrich „-“ als Aufzählungszeichen.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## الخطوة 4: إضافة عناصر إلى القائمة
+## Schritt 4: Elemente zur Liste hinzufügen
 
- يمكننا الآن إضافة عناصر إلى القائمة النقطية باستخدام أداة إنشاء المستندات`Writeln` طريقة.
+ Jetzt können wir mit dem Document Builder Elemente zur Aufzählungsliste hinzufügen`Writeln` Methode.
 
 ```csharp
 builder. Writen("Element 1");
 builder. Writen("Element 2");
 ```
 
-## الخطوة 5: إزالة المسافة البادئة من القائمة
+## Schritt 5: Einrückung aus der Liste entfernen
 
- إذا أردنا إنشاء قائمة فرعية ، فيمكننا زيادة المسافة البادئة باستخدام`ListFormat.ListIndent()` طريقة. في هذا المثال ، نضيف قائمة فرعية إلى البندين 2 أ و 2 ب.
+ Wenn wir eine Unterliste erstellen möchten, können wir die Einrückung mithilfe von vergrößern`ListFormat.ListIndent()` Methode. In diesem Beispiel fügen wir den Elementen 2a und 2b eine Unterliste hinzu.
 
 ```csharp
 builder.ListFormat.ListIndent();
 builder. Writeln("Element 2a");
 builder.Writeln("Element 2b");
 ```
-### مثال على شفرة المصدر لقائمة التعداد النقطي باستخدام Aspose.Words for .NET
+### Beispielquellcode für eine Aufzählungsliste mit Aspose.Words für .NET
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+	// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
 	DocumentBuilder builder = new DocumentBuilder();
 
 	builder.ListFormat.ApplyBulletDefault();
@@ -72,5 +72,5 @@ builder.Writeln("Element 2b");
             
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية إنشاء قائمة نقطية باستخدام Aspose.Words for .NET.
+Herzlichen Glückwunsch! Sie haben nun gelernt, wie Sie mit Aspose.Words für .NET eine Aufzählungsliste erstellen.
 

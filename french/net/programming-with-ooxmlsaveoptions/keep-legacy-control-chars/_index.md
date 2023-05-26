@@ -1,52 +1,52 @@
 ---
-title: الحفاظ على أحرف التحكم القديمة
-linktitle: الحفاظ على أحرف التحكم القديمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الاحتفاظ بأحرف التحكم القديمة عند حفظ مستند باستخدام Aspose.Words for .NET.
+title: Conserver les anciens caractères de contrôle
+linktitle: Conserver les anciens caractères de contrôle
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Découvrez comment conserver les caractères de contrôle hérités lors de l'enregistrement d'un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم للاحتفاظ بأحرف التحكم القديمة عند حفظ مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة الاحتفاظ بأحرف تحكم خاصة عند تحويل مستند أو حفظه.
+Dans ce didacticiel, nous allons explorer le code source C # fourni pour conserver les caractères de contrôle hérités lors de l'enregistrement d'un document à l'aide de Aspose.Words pour .NET. Cette fonction vous permet de conserver les caractères de contrôle spéciaux lors de la conversion ou de l'enregistrement d'un document.
 
-## الخطوة الأولى: تهيئة البيئة
+## Étape 1 : Configurer l'environnement
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Avant de commencer, assurez-vous d'avoir configuré votre environnement de développement avec Aspose.Words pour .NET. Assurez-vous d'avoir ajouté les références nécessaires et importé les espaces de noms appropriés.
 
-## الخطوة الثانية: تحميل المستند
+## Étape 2 : Chargement du document
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Legacy control character.doc");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى الملف الذي يحتوي على أحرف التحكم الموروثة.
+ Dans cette étape, nous chargeons le document en utilisant le`Document` méthode et en transmettant le chemin d'accès au fichier contenant les caractères de contrôle hérités.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي لـ OOXML
+## Étape 3 : Configuration des options de sauvegarde OOXML
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
 ```
 
-في هذه الخطوة ، نقوم بتهيئة خيارات حفظ OOXML عن طريق إنشاء ملف`OoxmlSaveOptions`هدف. نحدد تنسيق الحفظ المطلوب (هنا ،`FlatOpc` ) وتمكين`KeepLegacyControlChars` خيار للحفاظ على شخصيات التحكم القديمة.
+Dans cette étape, nous configurons les options de sauvegarde OOXML en créant un nouveau`OoxmlSaveOptions`objet. Nous spécifions le format de sauvegarde souhaité (ici,`FlatOpc` ) et activez le`KeepLegacyControlChars` option pour conserver les caractères de contrôle hérités.
 
-## الخطوة 4: حفظ المستند بأحرف تحكم قديمة
+## Étape 4 : Enregistrer le document avec des caractères de contrôle hérités
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ المستند باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج بامتداد`.docx` بالإضافة إلى خيارات الحفظ المحددة.
+ Dans cette dernière étape, nous enregistrons le document en utilisant le`Save` méthode et en passant le chemin vers le fichier de sortie avec la`.docx` extension, ainsi que les options d'enregistrement spécifiées.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر للحفاظ على أحرف التحكم القديمة عند حفظ مستند. سيتم حفظ الملف الناتج في الدليل المحدد باسم "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx".
+Vous pouvez maintenant exécuter le code source pour conserver les caractères de contrôle hérités lors de l'enregistrement d'un document. Le fichier résultant sera enregistré dans le répertoire spécifié sous le nom "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx".
 
-### عينة من التعليمات البرمجية المصدر لـ Keep Legacy Control Chars باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Keep Legacy Control Chars en utilisant Aspose.Words pour .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Legacy control character.doc");
@@ -58,12 +58,12 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
         
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة الاحتفاظ بأحرف التحكم القديمة عند حفظ مستند باستخدام Aspose.Words for .NET. لقد تعلمنا كيفية الحفاظ على تلك الأحرف الخاصة التي قد تكون مهمة لتنسيق المستند أو عرضه بشكل صحيح.
+Dans ce didacticiel, nous avons exploré la fonctionnalité de préservation des caractères de contrôle hérités lors de l'enregistrement d'un document à l'aide de Aspose.Words pour .NET. Nous avons appris à conserver les caractères spéciaux qui peuvent être importants pour un formatage ou un affichage correct du document.
 
- يعد الاحتفاظ بأحرف التحكم القديمة مفيدًا بشكل خاص عند العمل مع المستندات التي تستخدم ميزات قديمة أو محددة ، مثل أحرف التحكم الخاصة. من خلال تمكين`KeepLegacyControlChars`الخيار عند حفظ المستند ، فإنك تضمن الحفاظ على هذه الأحرف.
+ La conservation des caractères de contrôle hérités est particulièrement utile lorsque vous travaillez avec des documents qui utilisent des fonctionnalités plus anciennes ou spécifiques, telles que des caractères de contrôle spéciaux. En activant le`KeepLegacyControlChars`lors de l'enregistrement du document, vous vous assurez que ces caractères sont conservés.
 
-يوفر Aspose.Words for .NET مجموعة من خيارات النسخ الاحتياطي المرنة والقوية لتلبية احتياجات معالجة المستندات الخاصة بك. باستخدام الخيارات المناسبة ، يمكنك تخصيص عملية النسخ الاحتياطي للحفاظ على الخصائص المحددة لمستنداتك.
+Aspose.Words pour .NET offre une gamme d'options de sauvegarde flexibles et puissantes pour répondre à vos besoins de manipulation de documents. En utilisant les options appropriées, vous pouvez personnaliser le processus de sauvegarde pour conserver les caractéristiques spécifiques de vos documents.
 
-لا تتردد في دمج هذه الوظيفة في مشاريع Aspose.Words for .NET لضمان تكامل أحرف التحكم القديمة والحفاظ عليها في مستنداتك.
+N'hésitez pas à intégrer cette fonctionnalité dans vos projets Aspose.Words pour .NET afin d'assurer l'intégrité et la préservation des caractères de contrôle hérités dans vos documents.

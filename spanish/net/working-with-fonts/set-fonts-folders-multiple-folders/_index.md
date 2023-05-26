@@ -1,66 +1,66 @@
 ---
-title: تعيين مجلدات الخطوط متعددة المجلدات
-linktitle: تعيين مجلدات الخطوط متعددة المجلدات
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتعيين مجلدات خطوط متعددة عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Establecer carpetas de fuentes Múltiples carpetas
+linktitle: Establecer carpetas de fuentes Múltiples carpetas
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para configurar varias carpetas de fuentes al renderizar un documento usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/set-fonts-folders-multiple-folders/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلدات خطوط متعددة عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. بنهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلدات خطوط متعددة لاستخدامها عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para configurar varias carpetas de fuentes al representar un documento con Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo especificar varias carpetas de fuentes para usar al renderizar sus documentos usando Aspose.Words para .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند للعرض
- ثم يمكنك تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Paso 2: Cargue el documento para renderizar
+ Luego puede cargar el documento para renderizar usando el`Document` clase. Asegúrese de especificar la ruta correcta del documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تعيين مجلدات الخطوط
- الآن يمكنك تعيين مجلدات خطوط متعددة باستخدام ملف`FontSettings` الطبقة و`SetFontsFolders()` طريقة. يمكنك تحديد مسارات مجلدات الخطوط التي تريد استخدامها في مصفوفة. في هذا المثال ، حددنا مجلدين للخط: "C: \ MyFonts\"و" D: \ Misc \ Fonts\”。
+## Paso 3: Establecer carpetas de fuentes
+ Ahora puede configurar múltiples carpetas de fuentes usando el`FontSettings` clase y el`SetFontsFolders()` método. Puede especificar las rutas a las carpetas de fuentes que desea usar en una matriz. En este ejemplo, hemos especificado dos carpetas de fuentes: "C:\MyFonts\" y "D:\Misc\Fuentes\".
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 ```
 
-## الخطوة 4: تطبيق إعدادات الخط
- بعد ذلك ، تحتاج إلى تطبيق إعدادات الخط على المستند الخاص بك باستخدام ملف`FontSettings` ممتلكات`Document` فصل.
+## Paso 4: aplicar la configuración de fuente
+ A continuación, debe aplicar la configuración de fuente a su documento utilizando el`FontSettings` propiedad de la`Document` clase.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 5: احفظ المستند المقدم
- أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## Paso 5: Guarde el documento renderizado
+ Finalmente, puede guardar el documento renderizado en un archivo usando el`Save()` metodo de la`Document` clase. Asegúrese de especificar la ruta y el nombre de archivo correctos.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders Multiple Folders باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Establecer carpetas de fuentes Múltiples carpetas usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Rendering.docx");
 	FontSettings fontSettings = new FontSettings();
-	// لاحظ أن هذا الإعداد سيتجاوز أي مصادر افتراضية للخطوط يتم البحث عنها افتراضيًا. الآن سيتم البحث عن هذه المجلدات فقط
-	// الخطوط عند تقديم أو دمج الخطوط. لإضافة مصدر خط إضافي مع الاحتفاظ بمصادر خطوط النظام ، استخدم كلاً من FontSettings.GetFontSources و
-	// FontSettings.SetFontSources بدلاً من ذلك.
+	// Tenga en cuenta que esta configuración anulará cualquier fuente de fuente predeterminada que se busque de forma predeterminada. Ahora solo se buscarán estas carpetas
+	// fuentes al renderizar o incrustar fuentes. Para agregar una fuente de fuente adicional mientras mantiene las fuentes de fuente del sistema, use FontSettings.GetFontSources y
+	// FontSettings.SetFontSources en su lugar.
 	fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 	doc.FontSettings = fontSettings;
 	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلدات خطوط متعددة عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلدات خطوط متعددة لاستخدامها عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+## Conclusión
+En este tutorial, aprendimos a configurar varias carpetas de fuentes al representar un documento con Aspose.Words para .NET. Al seguir esta guía paso a paso, puede especificar fácilmente varias carpetas de fuentes para usar al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para trabajar con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar las fuentes de fuentes utilizadas al renderizar sus documentos según sus necesidades específicas.

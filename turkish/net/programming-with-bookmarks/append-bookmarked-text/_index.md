@@ -1,32 +1,32 @@
 ---
-title: إلحاق نص تم وضع إشارة مرجعية عليه
-linktitle: إلحاق نص تم وضع إشارة مرجعية عليه
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إضافة نص من إشارة مرجعية في مستند Word باستخدام Aspose.Words for .NET.
+title: Yer İşaretli Metni Ekle
+linktitle: Yer İşaretli Metni Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki bir yer iminden nasıl metin ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/append-bookmarked-text/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة Append Bookmarked Text في Aspose.Words لمكتبة .NET. تتيح لك هذه الميزة إضافة النص الموجود في إشارة مرجعية معينة لمستند Word إلى مستند آخر.
+Bu makalede, Aspose.Words for .NET kitaplığında Append Bookmarked Text işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, bir Word belgesinin belirli bir yer iminde bulunan metni başka bir belgeye eklemenizi sağlar.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# dili hakkında temel bilgi.
+- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## الخطوة 1: الحصول على فقرات من المرجعية
+## 1. Adım: Yer İşaretinden Paragrafları Alma
 
- قبل أن نبدأ في إضافة نص الإشارة المرجعية ، نحتاج إلى الحصول على الفقرات التي تحتوي على بداية الإشارة المرجعية ونهايتها. يمكن القيام بذلك عن طريق الوصول إلى`BookmarkStart` و`BookmarkEnd` خصائص المرجعية:
+ Yer imi metnini eklemeye başlamadan önce yer imi başlangıç ve bitişini içeren paragrafları almamız gerekiyor. Bu, şu adrese erişerek yapılabilir:`BookmarkStart` Ve`BookmarkEnd` yer iminin özellikleri:
 
 ```csharp
 Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
 Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
 ```
 
-## الخطوة 2: تحقق من الفقرات الأصلية
+## 2. Adım: Ana Paragrafları Kontrol Edin
 
-نتحقق مما إذا كانت فقرات البداية والنهاية لها أبوين صالحان ، أي إذا كانت تنتمي حقًا إلى فقرة. إذا لم يكن الأمر كذلك ، فإننا ننشئ استثناءً:
+Başlangıç ve bitiş paragraflarının geçerli ebeveynleri olup olmadığını, yani gerçekten bir paragrafa ait olup olmadıklarını kontrol ederiz. Değilse, bir istisna oluştururuz:
 
 ```csharp
 if (startPara == null || endPara == null)
@@ -36,9 +36,9 @@ throw new InvalidOperationException(
 hey, this situation can't be handled yet.");
 ```
 
-## الخطوة 3: تحقق من آباء الفقرات
+## 3. Adım: Paragrafların Üst Öğelerini Kontrol Edin
 
-نتحقق مما إذا كانت فقرات البداية والنهاية لها نفس الأصل. إذا لم يكن الأمر كذلك ، فهذا يعني أن الفقرات ليست موجودة في نفس القسم أو المستند ، ونحن نطرح استثناءً:
+Başlangıç ve bitiş paragraflarının aynı ebeveyne sahip olup olmadığını kontrol ederiz. Değilse, bu, paragrafların aynı bölümde veya belgede yer almadığı anlamına gelir ve bir istisna atıyoruz:
 
 ```csharp
 if (startPara.ParentNode != endPara.ParentNode)
@@ -46,9 +46,9 @@ throw new InvalidOperationException(
 "Beginning and ending paragraphs have different parents, this situation cannot be handled yet.");
 ```
 
-## الخطوة 4: انسخ الفقرات
+## 4. Adım: Paragrafları kopyalayın
 
-نقوم بالتكرار خلال العقد (الفقرات) من فقرة البداية إلى فقرة النهاية. لكل عقدة ، نقوم بإنشاء نسخة واستيرادها في سياق المستند الوجهة:
+Başlangıç paragrafından bitiş paragrafına kadar düğümler (paragraflar) boyunca yineliyoruz. Her düğüm için bir kopya oluşturur ve bunu hedef belgenin bağlamına aktarırız:
 
 ```csharp
 Node endNode = endPara.NextSibling;
@@ -61,35 +61,35 @@ dstNode.AppendChild(newNode);
 }
 ```
 
-### مثال على شفرة المصدر لإلحاق نص مرجعي باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Bookmarked Text Append için örnek kaynak kodu
 
-فيما يلي المثال الكامل لشفرة المصدر لتوضيح إضافة نص من إشارة مرجعية باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanarak bir yer iminden metin eklemeyi gösteren tam örnek kaynak kodu burada:
 
 ```csharp
 
-	// هذه هي الفقرة التي تحتوي على بداية الإشارة المرجعية.
+	// Bu, yer iminin başlangıcını içeren paragraftır.
 	Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
 
-	// هذه هي الفقرة التي تحتوي على نهاية الإشارة المرجعية.
+	// Bu, yer iminin sonunu içeren paragraftır.
 	Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
 
 	if (startPara == null || endPara == null)
 		throw new InvalidOperationException(
 			"Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 
-	// نقصر أنفسنا على سيناريو بسيط إلى حد معقول.
+	// Kendimizi oldukça basit bir senaryo ile sınırlayın.
 	if (startPara.ParentNode != endPara.ParentNode)
 		throw new InvalidOperationException(
 			"Start and end paragraphs have different parents, cannot handle this scenario yet.");
 
-	// نريد نسخ جميع الفقرات من فقرة البداية حتى (بما في ذلك) الفقرة النهائية ،
-	// لذلك فإن العقدة التي نتوقف عندها هي واحدة بعد نهاية الفقرة.
+	// Başlangıç paragrafından bitiş paragrafına kadar (ve dahil) tüm paragrafları kopyalamak istiyoruz,
+	// bu nedenle durduğumuz düğüm, son paragraftan sonradır.
 	Node endNode = endPara.NextSibling;
 
 	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 	{
-		// يؤدي هذا إلى إنشاء نسخة من العقدة الحالية واستيرادها (يجعلها صالحة) في السياق
-		// من وثيقة الوجهة. الاستيراد يعني تعديل الأنماط ومعرفات القوائم بشكل صحيح.
+		// Bu, geçerli düğümün bir kopyasını oluşturur ve onu bağlamda içe aktarır (geçerli kılar)
+		// hedef belgenin İçe aktarma, stilleri ve liste tanımlayıcılarını doğru şekilde ayarlamak anlamına gelir.
 		Node newNode = importer.ImportNode(curNode, true);
 
 		dstNode.AppendChild(newNode);
@@ -97,6 +97,6 @@ dstNode.AppendChild(newNode);
 
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة Append Bookmarked Text في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا للحصول على فقرات من إشارة مرجعية ، والتحقق من الوالدين ، ونسخ الفقرات إلى مستند آخر.
+Bu makalede, Aspose.Words for .NET'in Append Bookmarked Text işlevinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir yer iminden paragrafları almak, ebeveynleri doğrulamak ve paragrafları başka bir belgeye kopyalamak için adım adım bir kılavuz izledik.

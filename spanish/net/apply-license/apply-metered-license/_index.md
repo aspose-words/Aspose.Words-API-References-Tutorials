@@ -1,29 +1,29 @@
 ---
-title: تطبيق الترخيص المقنن
-linktitle: تطبيق الترخيص المقنن
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تطبيق ترخيص محدود باستخدام Aspose.Words for .NET.
+title: Aplicar licencia medida
+linktitle: Aplicar licencia medida
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a aplicar una licencia medida usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/apply-license/apply-metered-license/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية تطبيق ترخيص مقنن باستخدام Aspose.Words for .NET. سنوجهك خلال العملية بإرشادات مفصلة خطوة بخطوة ونوفر مقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على تطبيق ترخيص مقنن والاستفادة من الميزات المتقدمة لـ Aspose. Words لاحتياجات معالجة المستندات الخاصة بك.
+En este completo tutorial, aprenderá cómo aplicar una licencia medida usando Aspose.Words para .NET. Lo guiaremos a través del proceso con instrucciones detalladas paso a paso y le proporcionaremos los fragmentos de código C# necesarios. Al final de esta guía, podrá aplicar una licencia medida y aprovechar las funciones avanzadas de Aspose.Words para sus necesidades de procesamiento de documentos.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
-- بيانات اعتماد صالحة للترخيص المحدود. 
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
+- Aspose.Words para la biblioteca .NET instalada en su sistema.
+- Credenciales válidas para licencias medidas. 
 
-## الخطوة 1: استيراد مساحات الأسماء المطلوبة
-للبدء ، قم باستيراد مساحات الأسماء الضرورية في كود C # الخاص بك. تحتوي مساحات الأسماء هذه على الفئات والطرق اللازمة للعمل مع Aspose.Words.
+## Paso 1: Importe los espacios de nombres requeridos
+Para comenzar, importe los espacios de nombres necesarios en su código C#. Estos espacios de nombres contienen las clases y los métodos necesarios para trabajar con Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 2: قم بتعيين مفتاح الترخيص المقنن
-بعد ذلك ، تحتاج إلى تعيين مفتاح الترخيص المقنن باستخدام طريقة SetMeteredKey للفئة Metered. قم بتوفير المفاتيح العامة والخاصة التي تم قياسها كمعلمات لهذه الطريقة.
+## Paso 2: establezca la clave de licencia medida
+A continuación, debe configurar la clave de licencia medida mediante el método SetMeteredKey de la clase Metered. Proporcione sus claves públicas y privadas medidas como parámetros para este método.
 
 ```csharp
 try
@@ -37,8 +37,8 @@ catch (Exception e)
 }
 ```
 
-## الخطوة 3: تحميل المستندات ومعالجتها
-الآن بعد أن قمت بتعيين الترخيص المقنن ، يمكنك تحميل المستندات ومعالجتها باستخدام Aspose.Words. في مقتطف الشفرة التالي ، نقوم بتحميل مستند باسم "Document.docx" ونجري عملية بسيطة لطباعة عدد الصفحات.
+## Paso 3: cargar y procesar documentos
+Ahora que ha configurado la licencia medida, puede cargar y procesar documentos usando Aspose.Words. En el siguiente fragmento de código, cargamos un documento llamado "Documento.docx" y realizamos una operación simple de impresión del recuento de páginas.
 
 ```csharp
 try
@@ -52,8 +52,8 @@ catch (Exception e)
 }
 ```
 
-### مثال كود المصدر لتطبيق الرخصة المقننة باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لتطبيق ترخيص مقنن باستخدام Aspose.Words for .NET:
+### Ejemplo de código fuente para aplicar una licencia medida usando Aspose.Words para .NET
+Aquí está el código fuente completo para aplicar una licencia medida usando Aspose.Words para .NET:
 
 ```csharp
 try
@@ -71,7 +71,7 @@ catch (Exception e)
 }
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تطبيق ترخيص مقنن باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن الاستفادة من الميزات المتقدمة لـ Aspose.Words لمهام معالجة المستندات الخاصة بك.
+## Conclusión
+¡Felicidades! Ha aprendido con éxito cómo aplicar una licencia medida usando Aspose.Words para .NET. Al seguir la guía paso a paso y utilizar el código fuente provisto, ahora puede aprovechar las funciones avanzadas de Aspose.Words para sus tareas de procesamiento de documentos.
 
-يمكنك الآن بثقة تعيين الترخيص المحسوب ، وتحميل المستندات ومعالجتها ، وتسخير الإمكانات الكاملة لـ Aspose. Words لإنشاء مستندات Word وتعديلها ومعالجتها برمجيًا.
+Ahora puede configurar con confianza la licencia medida, cargar y procesar documentos y aprovechar todo el potencial de Aspose.Words para crear, modificar y manipular documentos de Word mediante programación.

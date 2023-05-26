@@ -1,44 +1,44 @@
 ---
-title: سلسلة مخطط واحد
-linktitle: سلسلة مخطط واحد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تخصيص سلسلة مخططات مفردة في مخطط باستخدام Aspose.Words for .NET.
+title: Tek Grafik Serisi
+linktitle: Tek Grafik Serisi
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir grafikte tekli grafik serilerini nasıl özelleştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/single-chart-series/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لتخصيص سلسلة مخططات مفردة في مخطط. يوضح كود المصدر المقدم كيفية إنشاء مخطط والوصول إلى سلسلة معينة وتعديل خصائصها.
+Bu öğretici Aspose.Words for .NET'in bir grafikteki tekli grafik serilerini özelleştirmek için nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, belirli serilere nasıl erişileceğini ve bunların özelliklerinin nasıl değiştirileceğini gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث سيتم حفظ المستند الناتج.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Çıktı belgesinin kaydedileceği bir belge dizini yolu.
 
-## الخطوة 2: أنشئ مستندًا جديدًا وأدخل مخططًا
+## 2. Adım: Yeni bir belge oluşturun ve bir grafik ekleyin
 
- إنشاء ملف`Document` كائن و`DocumentBuilder` لبناء الوثيقة.
+ Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- بعد ذلك ، استخدم ملف`InsertChart` طريقة`DocumentBuilder` لإدراج مخطط خطي في المستند.
+ Ardından,`InsertChart` yöntemi`DocumentBuilder` belgeye bir çizgi grafiği eklemek için.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## الخطوة 3: الوصول إلى سلسلة المخططات وتخصيصها
+## 3. Adım: Grafik serisine erişin ve özelleştirin
 
- لتعديل سلسلة مخططات مفردة ، تحتاج إلى الوصول إلى ملف`ChartSeries` كائنات الرسم البياني.
+ Tekli grafik serisini değiştirmek için şuraya erişmeniz gerekir:`ChartSeries` grafiğin nesneleri.
 
 ```csharp
 ChartSeries series0 = chart.Series[0];
@@ -58,20 +58,20 @@ series1.Marker.Symbol = MarkerSymbol.Star;
 series1.Marker.Size = 10;
 ```
 
-## الخطوة 4: احفظ المستند
+## 4. Adım: Belgeyi kaydedin
 
- أخيرًا ، احفظ المستند في الدليل المحدد باستخدام امتداد`Save` طريقة`Document` هدف.
+ Son olarak, belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 ```
 
-هذا يكمل تنفيذ تخصيص سلسلة مخططات واحدة باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanarak tek bir grafik serisini özelleştirme uygulamasını tamamlar.
 
-### مثال على شفرة المصدر لسلسلة مخطط واحد باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Single Chart Series için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -82,10 +82,10 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 	ChartSeries series1 = chart.Series[1];
 	series0.Name = "Chart Series Name 1";
 	series1.Name = "Chart Series Name 2";
-	// يمكنك أيضًا تحديد ما إذا كان الخط الذي يربط النقاط على الرسم البياني سيتم تنعيمه باستخدام خطوط Catmull-Rom.
+	// Grafikteki noktaları birleştiren çizginin Catmull-Rom çizgileri kullanılarak yumuşatılıp yumuşatılmayacağını da belirleyebilirsiniz.
 	series0.Smooth = true;
 	series1.Smooth = true;
-	// يحدد ما إذا كان العنصر الأصلي سيعكس ألوانه افتراضيًا إذا كانت القيمة سالبة.
+	// Değer negatifse varsayılan olarak üst öğenin renklerini tersine çevirip çevirmeyeceğini belirtir.
 	series0.InvertIfNegative = true;
 	series0.Marker.Symbol = MarkerSymbol.Circle;
 	series0.Marker.Size = 15;

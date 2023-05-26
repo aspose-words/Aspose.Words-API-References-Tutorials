@@ -1,63 +1,63 @@
 ---
-title: المفاجئة إلى الشبكة
-linktitle: المفاجئة إلى الشبكة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لشرح كود مصدر C # لميزة Snap to Grid باستخدام Aspose.Words for .NET.
+title: Aggancia alla griglia
+linktitle: Aggancia alla griglia
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida passo passo per spiegare il codice sorgente C# della funzione Snap to Grid con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/document-formatting/snap-to-grid/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية استخدام ميزة Snap to Grid مع Aspose.Words for .NET. اتبع الخطوات أدناه لفهم شفرة المصدر وتطبيق التغييرات.
+In questo tutorial, ti illustreremo come utilizzare la funzione Snap to Grid con Aspose.Words per .NET. Segui i passaggi seguenti per comprendere il codice sorgente e applicare le modifiche.
 
-## الخطوة 1: إنشاء وتكوين المستند
+## Passaggio 1: creazione e configurazione del documento
 
-للبدء ، قم بإنشاء مستند جديد وكائن DocumentBuilder المرتبط به. إليك الطريقة:
+Per iniziare, crea un nuovo documento e un oggetto DocumentBuilder associato. Ecco come:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: محاذاة الشبكة
+## Passaggio 2: allineamento della griglia
 
-سنقوم الآن بتطبيق محاذاة الشبكة على فقرة محددة والخط المستخدم في الفقرة. إليك الطريقة:
+Ora applicheremo l'allineamento della griglia a un paragrafo specifico e al carattere utilizzato nel paragrafo. Ecco come:
 
 ```csharp
-// تمكين محاذاة الشبكة للفقرة
+// Abilita l'allineamento della griglia per il paragrafo
 Paragraph by = doc.FirstSection.Body.FirstParagraph;
 par.ParagraphFormat.SnapToGrid = true;
 
-// اكتب نصًا في الفقرة
+// Scrivi il testo nel paragrafo
 builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" +
                  "tempor incident ut labore et dolore magna aliqua.");
 
-// قم بتمكين محاذاة الشبكة للخط المستخدم في الفقرة
+// Abilita l'allineamento della griglia per il carattere utilizzato nel paragrafo
 par.Runs[0].Font.SnapToGrid = true;
 ```
 
-## الخطوة 3: حفظ المستند
+## Passaggio 3: salvare il documento
 
- بعد إدخال حقل نموذج إدخال النص ، احفظ المستند في الموقع المطلوب باستخدام ملف`Save` طريقة. تأكد من توفير مسار الملف المناسب:
+ Dopo aver inserito il campo del modulo di immissione del testo, salvare il documento nella posizione desiderata utilizzando il file`Save` metodo. Assicurati di fornire il percorso file appropriato:
 
 ```csharp
 doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 ```
 
-### مثال على شفرة المصدر لـ Snap To Grid باستخدام Aspose.Words for .NET
+### Codice sorgente di esempio per Snap To Grid utilizzando Aspose.Words per .NET
 
-فيما يلي رمز المصدر الكامل لميزة Snap to Grid مع Aspose.Words for .NET:
+Ecco il codice sorgente completo per la funzione Snap to Grid con Aspose.Words per .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Il percorso della directory dei documenti.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// قم بتحسين التخطيط عند الكتابة بالأحرف الآسيوية.
+	// Ottimizza il layout quando digiti i caratteri asiatici.
 	Paragraph par = doc.FirstSection.Body.FirstParagraph;
 	par.ParagraphFormat.SnapToGrid = true;
 
@@ -70,5 +70,5 @@ doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من محاذاة النص الخاص بك مع الشبكة وتحسين مظهر المستند باستخدام Aspose.Words for .NET.
+Con questo codice sarai in grado di allineare il tuo testo alla griglia e ottimizzare l'aspetto del tuo documento usando Aspose.Words per .NET.
 

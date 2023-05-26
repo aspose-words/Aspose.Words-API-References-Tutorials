@@ -1,75 +1,75 @@
 ---
-title: ضم الصفوف
-linktitle: ضم الصفوف
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية دمج صفوف الجدول في مستند Word باستخدام Aspose.Words for .NET.
+title: Combina righe
+linktitle: Combina righe
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come combinare le righe della tabella in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/combine-rows/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية استخدام Aspose.Words for .NET لدمج صفوف الجداول في مستند Word. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من معالجة ودمج صفوف الجدول في مستندات Word الخاصة بك برمجيًا.
+In questo tutorial impareremo come utilizzare Aspose.Words per .NET per combinare righe di tabelle in un documento Word. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di manipolare e unire le righe della tabella nei tuoi documenti Word in modo programmatico.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Passaggio 1: impostazione del progetto
+1. Avvia Visual Studio e crea un nuovo progetto C#.
+2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
-## الخطوة الثانية: تحميل المستند والوصول إلى الجداول
-لبدء العمل مع الجداول ، نحتاج إلى تحميل المستند الذي يحتوي عليها والوصول إليها. اتبع هذه الخطوات:
+## Passaggio 2: caricamento del documento e accesso alle tabelle
+Per iniziare a lavorare con le tabelle, dobbiamo caricare il documento che le contiene e accedervi. Segui questi passi:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+//Carica il documento
 Document doc = new Document(dataDir + "Tables.docx");
 
-// الوصول إلى الجداول
+// Accesso ai tavoli
 Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
 Table secondTable = (Table)doc.GetChild(NodeType.Table, 1, true);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Assicurati di sostituire "LA TUA DIRECTORY DEI DOCUMENTI" con il percorso effettivo della tua directory dei documenti.
 
-## الخطوة 3: دمج صفوف الجدول
-بعد ذلك ، سنجمع صفوف الجدول الثاني في نهاية الجدول الأول. استخدم الكود التالي:
+## Passaggio 3: combinazione delle righe della tabella
+Successivamente, combineremo le righe della seconda tabella alla fine della prima tabella. Usa il seguente codice:
 
 ```csharp
-// مزيج من صفوف الجدول
+// Combinazione di righe della tabella
 while (secondTable.HasChildNodes)
      firstTable.Rows.Add(secondTable.FirstRow);
 secondTable.Remove();
 ```
 
- هنا نستخدم ملف`while` loop للتكرار على جميع صفوف المصفوفة الثانية وإضافتها إلى نهاية المصفوفة الأولى باستخدام`Add` طريقة. بعد ذلك ، نقوم بإزالة الجدول الثاني من المستند باستخدام ملف`Remove` طريقة.
+ Qui usiamo a`while` loop per iterare su tutte le righe del secondo array e aggiungerle alla fine del primo array usando il`Add` metodo. Successivamente, rimuoviamo la seconda tabella dal documento utilizzando l'estensione`Remove` metodo.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع صفوف الجدول المدمجة. استخدم الكود التالي:
+## Passaggio 4: salvare il documento modificato
+Infine, dobbiamo salvare il documento modificato con le righe della tabella combinate. Usa il seguente codice:
 
 ```csharp
-// احفظ المستند المعدل
+// Salva il documento modificato
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Assicurati di specificare il percorso e il nome file corretti per il documento di output.
 
-### عينة من التعليمات البرمجية المصدر لـ Combine Rows باستخدام Aspose.Words for .NET 
+### Esempio di codice sorgente per Combina righe utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
-	// سيتم إلحاق الصفوف من الجدول الثاني بنهاية الجدول الأول.
+	// Le righe della seconda tabella verranno aggiunte alla fine della prima tabella.
 	Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
 	Table secondTable = (Table) doc.GetChild(NodeType.Table, 1, true);
-	// إلحاق كافة الصفوف من الجدول الحالي بالجداول التالية
-	// مع عدد الخلايا المختلفة والعروض يمكن ضمها في جدول واحد.
+	// Accoda tutte le righe dalla tabella corrente alle tabelle successive
+	// con numero di celle e larghezze diverse possono essere uniti in un'unica tabella.
 	while (secondTable.HasChildNodes)
 		firstTable.Rows.Add(secondTable.FirstRow);
 	secondTable.Remove();
 	doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية دمج صفوف الجداول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك معالجة صفوف الجدول في مستندات Word برمجيًا. تتيح لك هذه الميزة دمج البيانات وتنظيمها في جدول بكفاءة.
+## Conclusione
+In questo tutorial, abbiamo imparato come combinare righe di tabelle in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi manipolare le righe della tabella nei documenti di Word a livello di programmazione. Questa funzione ti consente di unire e organizzare in modo efficiente i tuoi dati in una tabella.

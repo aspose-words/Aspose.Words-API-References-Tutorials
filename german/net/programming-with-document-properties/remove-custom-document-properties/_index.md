@@ -1,52 +1,52 @@
 ---
-title: قم بإزالة خصائص المستند المخصصة
-linktitle: قم بإزالة خصائص المستند المخصصة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لإزالة الخصائص المخصصة من مستند باستخدام Aspose.Words for .NET.
+title: Benutzerdefinierte Dokumenteigenschaften entfernen
+linktitle: Benutzerdefinierte Dokumenteigenschaften entfernen
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Entfernen benutzerdefinierter Eigenschaften aus einem Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-document-properties/remove-custom-document-properties/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال التعليمات البرمجية المصدر C # لإزالة الخصائص المخصصة من مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إزالة خاصية مخصصة معينة من المستند.
+In diesem Tutorial führen wir Sie durch den C#-Quellcode, um benutzerdefinierte Eigenschaften aus einem Dokument mit Aspose.Words für .NET zu entfernen. Mit dieser Funktion können Sie eine bestimmte benutzerdefinierte Eigenschaft aus einem Dokument entfernen.
 
-## الخطوة 1: إعداد المشروع
+## Schritt 1: Projekteinrichtung
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Aspose.Words for .NET-Bibliothek verwiesen wird.
 
-## الخطوة الثانية: تحميل المستند
+## Schritt 2: Laden des Dokuments
 
-في هذه الخطوة ، سنقوم بتحميل مستند Word الذي نريد إزالة الخصائص المخصصة منه. استخدم الكود التالي لتحميل المستند:
+In diesem Schritt laden wir das Word-Dokument, aus dem wir die benutzerdefinierten Eigenschaften entfernen möchten. Verwenden Sie den folgenden Code, um das Dokument zu laden:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` مع المسار الفعلي للدليل حيث يوجد المستند الخاص بك.
+ Ersetzen`"YOUR DOCUMENTS DIRECTORY"` mit dem tatsächlichen Pfad des Verzeichnisses, in dem sich Ihr Dokument befindet.
 
-## الخطوة 3: حذف الخصائص المخصصة
+## Schritt 3: Benutzerdefinierte Eigenschaften löschen
 
-الآن دعنا نزيل خاصية مخصصة محددة من المستند. استخدم الكود التالي:
+Entfernen wir nun eine bestimmte benutzerdefinierte Eigenschaft aus dem Dokument. Verwenden Sie den folgenden Code:
 
 ```csharp
 doc.CustomDocumentProperties.Remove("Authorized Date");
 ```
 
-يزيل هذا الرمز الخاصية المخصصة "تاريخ التخويل" من المستند. يمكنك استبدال "التاريخ المعتمد" باسم الخاصية المخصصة التي تريد إزالتها.
+Dieser Code entfernt die benutzerdefinierte Eigenschaft „Autorisiertes Datum“ aus dem Dokument. Sie können „Autorisiertes Datum“ durch den Namen der benutzerdefinierten Eigenschaft ersetzen, die Sie entfernen möchten.
 
-### مثال على شفرة المصدر لإزالة خصائص المستند المخصصة باستخدام Aspose.Words for .NET
+### Beispielquellcode zum Entfernen benutzerdefinierter Dokumenteigenschaften mit Aspose.Words für .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Properties.docx");
 	doc.CustomDocumentProperties.Remove("Authorized Date");
 	
 ```
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+ Stellen Sie sicher, dass Sie den richtigen Dokumentpfad angeben`dataDir` Variable.
 
-لقد تعلمت الآن كيفية إزالة الخصائص المخصصة من مستند باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة إزالة الخصائص المخصصة من المستندات الخاصة بك.
+Sie haben jetzt erfahren, wie Sie mit Aspose.Words für .NET benutzerdefinierte Eigenschaften aus einem Dokument entfernen. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie benutzerdefinierte Eigenschaften ganz einfach aus Ihren eigenen Dokumenten entfernen.

@@ -1,38 +1,38 @@
 ---
-title: تحويل الحقول في الفقرة
-linktitle: تحويل الحقول في الفقرة
-second_title: Aspose.Words لمراجع .NET API
-description: تحويل حقول IF إلى نص عادي في فقرة باستخدام Aspose.Words for .NET.
+title: Convertir les champs en paragraphe
+linktitle: Convertir les champs en paragraphe
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Convertissez les champs IF en texte brut dans un paragraphe avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fields/convert-fields-in-paragraph/
 ---
 
-إليك برنامج تعليمي يوضح كيفية استخدام ميزة تحويل الحقول إلى فقرة مع Aspose.Words for .NET. يحول هذا الرمز جميع حقول كتابة IF التي تمت مواجهتها في الفقرة الأخيرة من المستند إلى نص عادي. اتبع الخطوات أدناه لفهم وتشغيل هذا الرمز.
+Voici un didacticiel qui montre comment utiliser la fonction Convertir les champs en paragraphe avec Aspose.Words pour .NET. Ce code convertit tous les champs de type IF rencontrés dans le dernier paragraphe d'un document en texte brut. Suivez les étapes ci-dessous pour comprendre et exécuter ce code.
 
-تأكد من تثبيت Aspose.Words for .NET وقم بإعداد بيئة التطوير الخاصة بك قبل أن تبدأ.
+Assurez-vous d'avoir installé Aspose.Words pour .NET et configuré votre environnement de développement avant de commencer.
 
-## الخطوة 1: استيراد المراجع
+## Étape 1 : Importer des références
 
-لاستخدام Aspose. Words في مشروعك ، تحتاج إلى إضافة المراجع الضرورية. تأكد من إضافة مرجع إلى مكتبة Aspose.Words في مشروعك.
+Pour utiliser Aspose.Words dans votre projet, vous devez ajouter les références nécessaires. Assurez-vous d'avoir ajouté une référence à la bibliothèque Aspose.Words dans votre projet.
 
-## الخطوة الثانية: تحميل المستند
+## Étape 2 : Chargement du document
 
-قبل أن تتمكن من تحويل الحقول ، يجب عليك تحميل المستند الذي يحتوي على الحقول المراد تحويلها. تأكد من تحديد المسار الصحيح للدليل الذي يحتوي على المستند. إليك كيفية تحميل المستند:
+Avant de pouvoir convertir des champs, vous devez charger le document contenant les champs à convertir. Assurez-vous de spécifier le chemin d'accès correct au répertoire contenant le document. Voici comment télécharger le document :
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+// Chargez le document.
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-استبدل "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Remplacez "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin d'accès réel à votre répertoire de documents.
 
-## الخطوة 3: تحويل الحقول إلى نص
+## Étape 3 : Conversion des champs en texte
 
-الآن بعد أن تم تحميل المستند ، يمكننا المضي قدمًا في تحويل حقول الكتابة إلى نص عادي. في هذا المثال ، نستهدف الحقول الموجودة في الفقرة الأخيرة من المستند فقط. هذا هو الكود الذي يقوم بهذا التحويل:
+Maintenant que le document est chargé, nous pouvons procéder à la conversion des champs de type en texte brut. Dans cet exemple, nous ciblons uniquement les champs présents dans le dernier paragraphe du document. Voici le code qui effectue cette conversion :
 
 ```csharp
 doc.FirstSection.Body.LastParagraph.Range.Fields
@@ -41,33 +41,33 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
- يستخدم هذا الرمز مجموعة من أساليب LINQ لتصفية الحقول في الفقرة الأخيرة من المستند ثم تحويلها إلى نص عادي عن طريق استدعاء`Unlink()` طريقة.
+ Ce code utilise une combinaison de méthodes LINQ pour filtrer les champs dans le dernier paragraphe du document, puis les convertit en texte brut en appelant le`Unlink()` méthode.
 
-## الخطوة 4: حفظ المستند المعدل
+## Étape 4 : Enregistrer le document modifié
 
- بمجرد تحويل الحقول ، يمكنك حفظ المستند المعدل. استخدم ال`Save()` طريقة لذلك. هنا مثال :
+ Une fois les champs convertis, vous pouvez enregistrer le document modifié. Utilisez le`Save()` méthode pour cela. Voici un exemple :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للنسخ الاحتياطي.
+Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour la sauvegarde.
 
-### مثال على رمز المصدر لـ Convert Fields In Paragraph باستخدام Aspose.Words for .NET
+### Exemple de code source pour Convertir les champs en paragraphe à l'aide de Aspose.Words pour .NET
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+// Chargez le document.
 Document doc = new Document(dataDir + "Linked fields.docx");
 
-// تحويل حقول IF إلى نص عادي في الفقرة الأخيرة من المستند.
+// Convertissez les champs IF en texte brut dans le dernier paragraphe du document.
 doc.FirstSection.Body.LastParagraph.Range.Fields
      .Where(f => f.Type == FieldType.FieldIf)
      .ToList()
      .ForEach(f => f.Unlink());
 
-// احفظ المستند المعدل.
+// Enregistrez le document modifié.
 doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ```

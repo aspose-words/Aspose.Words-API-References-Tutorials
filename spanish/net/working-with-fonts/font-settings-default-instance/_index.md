@@ -1,33 +1,33 @@
 ---
-title: المثيل الافتراضي لإعدادات الخط
-linktitle: المثيل الافتراضي لإعدادات الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET.
+title: Configuración de fuentes Instancia predeterminada
+linktitle: Configuración de fuentes Instancia predeterminada
+second_title: Referencia de API de Aspose.Words para .NET
+description: En este tutorial, aprenda a configurar los ajustes de fuente predeterminados en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/font-settings-default-instance/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تسمح لك إعدادات الخط الافتراضية بتحديد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+En este tutorial, lo guiaremos a través de cómo configurar las configuraciones de fuentes predeterminadas en un documento de Word utilizando la biblioteca Aspose.Words para .NET. La configuración de fuente predeterminada le permite especificar las fuentes de fuente utilizadas al cargar y renderizar documentos. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## requisitos previos
+Antes de comenzar, asegúrese de tener los siguientes elementos:
+- Un conocimiento práctico del lenguaje de programación C#
+- La biblioteca Aspose.Words para .NET instalada en su proyecto
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+ Primero, debe establecer la ruta del directorio en la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta adecuada.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تكوين إعدادات الخط الافتراضية
- بعد ذلك ، سننشئ مثيلًا لـ`FontSettings` استخدام`FontSettings.DefaultInstance`، ثم سنحدد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها. في هذا المثال ، نستخدم مصدر خط نظام ومصدر خط مجلد.
+## Paso 2: configure los ajustes de fuente predeterminados
+ A continuación, crearemos una instancia de`FontSettings` usando`FontSettings.DefaultInstance`y luego especificaremos las fuentes de fuentes utilizadas al cargar y renderizar documentos. En este ejemplo, estamos usando una fuente de fuente del sistema y una fuente de fuente de carpeta.
 
 ```csharp
-// تكوين إعدادات الخط الافتراضية
+// Configurar los ajustes de fuente predeterminados
 FontSettings fontSettings = FontSettings.DefaultInstance;
 fontSettings.SetFontsSources(new FontSourceBase[]
 {
@@ -36,21 +36,21 @@ new FolderFontSource("C:\\MyFonts\\", true)
 });
 ```
 
-## الخطوة 3: تحميل المستند مع إعدادات الخط
- الآن سنقوم بتحميل المستند باستخدام`LoadOptions` وتحديد إعدادات الخط المراد استخدامها.
+## Paso 3: Cargue el documento con la configuración de fuente
+ Ahora cargaremos el documento usando`LoadOptions` y especificando la configuración de fuente a utilizar.
 
 ```csharp
-// قم بتحميل المستند بإعدادات الخط
+// Cargue el documento con la configuración de fuente
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.FontSettings = fontSettings;
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
 
-### نموذج كود مصدر لإعدادات الخط الافتراضي باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para la instancia predeterminada de configuración de fuente usando Aspose.Words para .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;
@@ -65,5 +65,5 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET. من خلال تحديد مصادر الخطوط المستخدمة عند تحميل المستندات وعرضها ، يمكنك التحكم في مظهر الخطوط في مستنداتك. لا تتردد في استخدام هذه الميزة لتخصيص إعدادات الخط في مشاريعك.
+## Conclusión
+En este tutorial, vimos cómo configurar los ajustes de fuente predeterminados en un documento de Word con Aspose.Words para .NET. Al especificar las fuentes de fuentes utilizadas al cargar y renderizar documentos, puede controlar la apariencia de las fuentes en sus documentos. Siéntase libre de usar esta función para personalizar la configuración de fuentes en sus proyectos.

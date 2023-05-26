@@ -1,18 +1,18 @@
 ---
-title: قم بتعيين معرف موفر التوقيع
-linktitle: قم بتعيين معرف موفر التوقيع
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعيين معرف موفر التوقيع في مستند Word باستخدام Aspose.Words for .NET.
+title: İmza Sağlayıcı Kimliğini Ayarla
+linktitle: İmza Sağlayıcı Kimliğini Ayarla
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile bir Word belgesinde imza sağlayıcı kimliğinin nasıl ayarlanacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-digital-signatures/set-signature-provider-id/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك عبر خطوات استخدام ميزة Set Signature Provider ID مع Aspose.Words for .NET. تتيح لك هذه الميزة تحديد معرف موفر التوقيع لسطر التوقيع في مستند Word. اتبع الخطوات التالية:
+Bu eğitimde, Aspose.Words for .NET ile Signature Provider ID özelliğini kullanma adımlarında size yol göstereceğiz. Bu özellik, bir Word belgesindeki bir imza satırı için imza sağlayıcı kimliğini belirtmenize olanak tanır. Aşağıdaki adımları takip et:
 
-## الخطوة 1: تحميل المستند والوصول إلى سطر التوقيع
+## 1. Adım: Belgeyi yükleme ve imza satırına erişme
 
-ابدأ بتحميل المستند الذي يحتوي على سطر التوقيع:
+İmza satırını içeren belgeyi yükleyerek başlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +21,9 @@ Document doc = new Document(dataDir + "Signature line.docx");
 SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## الخطوة 2: تعيين خيارات التوقيع
+## 2. Adım: İmza Seçeneklerini Ayarlama
 
-قم بإنشاء مثيل لفئة SignOptions وقم بتعيين خيارات التوقيع ، بما في ذلك معرف الموفر:
+SignOptions sınıfının bir örneğini oluşturun ve sağlayıcı kimliği dahil imzalama seçeneklerini ayarlayın:
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -33,9 +33,9 @@ ProviderId = signatureLine.ProviderId,
 };
 ```
 
-## الخطوة الثالثة: توقيع الوثيقة
+## 3. Adım: Belgeyi imzalama
 
-لتوقيع الوثيقة ، يجب عليك استخدام فئة DigitalSignatureUtil وتحديد شهادة التوقيع:
+Belgeyi imzalamak için DigitalSignatureUtil sınıfını kullanmalı ve imzalama sertifikasını belirtmelisiniz:
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
@@ -44,15 +44,15 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 	dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند والشهادة والمستند الموقع.
+Belge, sertifika ve imzalı belge için doğru yolları belirttiğinizden emin olun.
 
-### مثال على شفرة المصدر لـ Set Signature Provider ID باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Signature Provider Id Ayarlamak için örnek kaynak kodu
 
-إليك كود المصدر الكامل لتعيين معرف موفر التوقيع باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET ile imza sağlayıcı kimliğini ayarlamak için eksiksiz kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Signature line.docx");
 
@@ -71,5 +71,5 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 
 ```
 
-قم بإنهاء "معرف موفر التوقيع" في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Aspose.Words for .NET ile Word belgenizdeki İmza Sağlayıcı Kimliğini tamamlayın.
 

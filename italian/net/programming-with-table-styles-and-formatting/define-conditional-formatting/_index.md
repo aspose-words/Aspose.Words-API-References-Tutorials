@@ -1,32 +1,32 @@
 ---
-title: حدد التنسيق الشرطي
-linktitle: حدد التنسيق الشرطي
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتحديد التنسيق الشرطي في جدول باستخدام Aspose.Words for .NET.
+title: Definisci la formattazione condizionale
+linktitle: Definisci la formattazione condizionale
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Guida passo passo per definire la formattazione condizionale in una tabella utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/define-conditional-formatting/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتحديد التنسيق الشرطي باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تطبيق التنسيق الشرطي على جدول في مستندات Word باستخدام Aspose.Words for .NET.
+In questo tutorial, ti guideremo attraverso il processo dettagliato per definire la formattazione condizionale utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come applicare la formattazione condizionale a una tabella nei tuoi documenti Word utilizzando Aspose.Words per .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Passaggio 1: definire la directory dei documenti
+Innanzitutto, devi impostare il percorso della directory dei documenti. Questa è la posizione in cui desideri salvare il documento Word modificato. Sostituisci "LA TUA CARTELLA DEI DOCUMENTI" con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ مستندات
- بعد ذلك ، تحتاج إلى إنشاء مثيل جديد لملف`Document` فئة ومنشئ مستند لذلك المستند.
+## Passaggio 2: creare un nuovo documento e un generatore di documenti
+ Successivamente, è necessario creare una nuova istanza del file`Document` class e un costruttore di documenti per quel documento.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدول جديد وأضف خلايا
-لبدء إنشاء الجدول ، نستخدم ملف`StartTable()` طريقة منشئ المستندات ، ثم نضيف خلايا إلى الجدول باستخدام الامتداد`InsertCell()` الطريقة ونكتب محتويات الخلايا إلى ملف`Write()` طريقة.
+## Passaggio 3: avvia una nuova tabella e aggiungi celle
+Per iniziare a creare la tabella, usiamo il file`StartTable()` metodo del generatore di documenti, quindi aggiungiamo celle alla tabella utilizzando il`InsertCell()` metodo e scriviamo il contenuto delle celle utilizzando il`Write()` metodo.
 
 ```csharp
 Table table = builder. StartTable();
@@ -40,8 +40,8 @@ builder. InsertCell();
 builder. EndTable();
 ```
 
-## الخطوة 4: إنشاء نمط جدول وتعيين التنسيق الشرطي
- الآن يمكننا إنشاء نمط جدول باستخدام امتداد`TableStyle` الطبقة و`Add()` طريقة من الوثيقة`s `الأنماط` collection. We can then set the conditional formatting for the first row of the table by accessing the `الأنماط الشرطية` property of the table style and using the `FirstRow`.
+## Passaggio 4: crea uno stile di tabella e imposta la formattazione condizionale
+ Ora possiamo creare uno stile di tabella usando il`TableStyle` classe e il`Add()` metodo dal documento`s `Stili` collection. We can then set the conditional formatting for the first row of the table by accessing the `Stili condizionali` property of the table style and using the `Proprietà FirstRow`.
 
 ```csharp
 TableStyle tableStyle = (TableStyle)doc.Styles.Add(StyleType.Table, "MyTableStyle1");
@@ -49,28 +49,28 @@ tableStyle.ConditionalStyles.FirstRow.Shading.BackgroundPatternColor = Color.Gre
 tableStyle.ConditionalStyles.FirstRow.Shading.Texture = TextureIndex.TextureNone;
 ```
 
-## الخطوة 5: قم بتطبيق نمط الجدول على الجدول
- أخيرًا ، نطبق نمط الجدول الذي أنشأناه على الجدول باستخدام`Style` خاصية الجدول.
+## Passaggio 5: applica lo stile della tabella alla tabella
+ Infine, applichiamo lo stile di tabella che abbiamo creato alla tabella utilizzando il`Style` proprietà della tavola.
 
 ```csharp
 table.Style = tableStyle;
 ```
 
-## الخطوة 6: احفظ المستند المعدل
-أخيرًا احفظ المستند المعدل في ملف. يمكنك اختيار اسم و
+## Passaggio 6: salvare il documento modificato
+Infine salvare il documento modificato in un file. Puoi scegliere un nome e
 
-  موقع مناسب لمستند الإخراج.
+  una posizione appropriata per il documento di output.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatting.docx");
 ```
 
-تهنئة ! لقد قمت الآن بتعريف التنسيق الشرطي لجدولك باستخدام Aspose.Words for .NET.
+Congratulazioni! Ora hai definito la formattazione condizionale per la tua tabella utilizzando Aspose.Words per .NET.
 
-### نموذج التعليمات البرمجية المصدر لـ Define Conditional Formatting باستخدام Aspose.Words for .NET 
+### Codice sorgente di esempio per definire la formattazione condizionale utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -91,5 +91,5 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatt
 	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatting.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين التنسيق الشرطي باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تطبيق التنسيق الشرطي على الجداول الخاصة بك في مستندات Word الخاصة بك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة ، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية الاحتياجات الخاصة.
+## Conclusione
+In questo tutorial, abbiamo imparato come impostare la formattazione condizionale utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata, puoi facilmente applicare la formattazione condizionale alle tue tabelle nei tuoi documenti Word. Aspose.Words offre un'API potente e flessibile per la manipolazione e la formattazione delle tabelle nei tuoi documenti. Con questa conoscenza, puoi migliorare la presentazione visiva dei tuoi documenti Word e soddisfare esigenze specifiche.

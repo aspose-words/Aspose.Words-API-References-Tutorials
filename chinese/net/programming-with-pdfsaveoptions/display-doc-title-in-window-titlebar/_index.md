@@ -1,53 +1,53 @@
 ---
-title: عرض عنوان المستند في شريط عنوان النافذة
-linktitle: عرض عنوان المستند في شريط عنوان النافذة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+title: 在窗口标题栏中显示文档标题
+linktitle: 在窗口标题栏中显示文档标题
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何在使用 Aspose.Words for .NET 转换为 PDF 时在窗口标题栏中显示文档标题。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titlebar/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال الخطوات لعرض عنوان المستند في شريط عنوان النافذة باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة عرض عنوان المستند في شريط عنوان النافذة عند فتح مستند PDF الذي تم إنشاؤه. اتبع الخطوات التالية:
+在本教程中，我们将指导您完成使用 Aspose.Words for .NET 在窗口标题栏中显示文档标题的步骤。此功能允许您在打开生成的 PDF 文档时在窗口标题栏中显示文档标题。请按照以下步骤操作：
 
-## الخطوة 1: تحميل المستند
+## 第 1 步：装入文档
 
-ابدأ بتحميل المستند الذي تريد تحويله إلى PDF:
+首先上传要转换为 PDF 的文档：
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح للمستند الخاص بك.
+请务必指定文档的正确路径。
 
-## الخطوة 2: تكوين خيارات حفظ PDF
+## 第 2 步：配置 PDF 保存选项
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وقم بتمكين عرض عنوان المستند في شريط عنوان النافذة:
+创建 PdfSaveOptions 类的实例并启用在窗口标题栏中显示文档标题：
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { DisplayDocTitle = true };
 ```
 
-يتيح هذا الخيار عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF.
+此选项启用在转换为 PDF 时在窗口标题栏中显示文档标题。
 
-## الخطوة 3: تحويل المستند إلى PDF
+## 第 3 步：将文档转换为 PDF
 
- استخدم ال`Save` طريقة تحويل المستند إلى PDF مع تحديد خيارات التحويل:
+使用`Save`指定转换选项将文档转换为 PDF 的方法：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+确保指定正确的路径以保存转换后的 PDF。
 
-### مثال على شفرة المصدر لعرض عنوان المستند في شريط عناوين النافذة باستخدام Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 在窗口标题栏中显示文档标题的示例源代码
 
-إليك كود المصدر الكامل لعرض عنوان المستند في شريط عنوان النافذة في مستند PDF باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 在 PDF 文档的窗口标题栏中显示文档标题的完整源代码：
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	//文档目录的路径。
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -56,5 +56,5 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pd
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
         
 ```
-باتباع هذه الخطوات ، يمكنك بسهولة عرض عنوان المستند في شريط عنوان النافذة عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+通过执行这些步骤，您可以在使用 Aspose.Words for .NET 转换为 PDF 时轻松地在窗口标题栏中显示文档标题。
 

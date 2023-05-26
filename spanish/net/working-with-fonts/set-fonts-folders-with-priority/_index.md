@@ -1,24 +1,24 @@
 ---
-title: تعيين مجلدات الخطوط ذات الأولوية
-linktitle: تعيين مجلدات الخطوط ذات الأولوية
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لإعداد مجلدات الخطوط ذات الأولوية عند تقديم مستند باستخدام Aspose.Words for .NET.
+title: Establecer carpetas de fuentes con prioridad
+linktitle: Establecer carpetas de fuentes con prioridad
+second_title: Referencia de API de Aspose.Words para .NET
+description: Guía paso a paso para configurar carpetas de fuentes con prioridad al renderizar un documento usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال العملية خطوة بخطوة لتعيين مجلدات الخطوط ذات الأولوية عند عرض مستند باستخدام Aspose.Words for .NET. سنشرح الكود المصدري C # المجمّع ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي ، ستعرف كيفية تحديد مجلدات خطوط متعددة ذات أولوية بحث مخصصة عند عرض مستنداتك باستخدام Aspose.Words for .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para establecer carpetas de fuentes con prioridad al procesar un documento usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo especificar varias carpetas de fuentes con prioridad de búsqueda personalizada al representar sus documentos con Aspose.Words para .NET.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً ، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي تريد حفظ المستند الذي تم تحريره فيه. استبدل "دليل المستندات" بالمسار المناسب.
+## Paso 1: Definir el directorio de documentos
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تعيين مجلدات الخطوط ذات الأولوية
- ثم يمكنك ضبط مجلدات الخطوط ذات الأولوية باستخدام امتداد`FontSettings` الطبقة و`SetFontsSources()` طريقة. يمكنك تحديد مصادر خطوط متعددة باستخدام مثيلات`SystemFontSource` و`FolderFontSource`. في هذا المثال ، حددنا مصدرين للخطوط: المصدر الافتراضي لخطوط النظام ومجلد الخط المخصص بأولوية 1.
+## Paso 2: Establecer carpetas de fuentes con prioridad
+ Luego puede configurar las carpetas de fuentes con prioridad usando el`FontSettings` clase y el`SetFontsSources()` método. Puede especificar varias fuentes de fuentes utilizando instancias de`SystemFontSource` y`FolderFontSource`. En este ejemplo, hemos definido dos orígenes de fuentes: el origen de fuentes del sistema predeterminado y una carpeta de fuentes personalizada con una prioridad de 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
@@ -27,23 +27,23 @@ new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true, 1)
 });
 ```
 
-## الخطوة 3: قم بتحميل المستند للعرض
- يمكنك الآن تحميل المستند لتقديمه باستخدام امتداد`Document` فصل. تأكد من تحديد مسار المستند الصحيح.
+## Paso 3: Cargue el documento para renderizar
+ Ahora puede cargar el documento para renderizar usando el`Document` clase. Asegúrese de especificar la ruta correcta del documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 4: احفظ المستند المقدم
- أخيرًا ، يمكنك حفظ المستند الذي تم تقديمه في ملف باستخدام امتداد`Save()` طريقة`Document` فصل. تأكد من تحديد المسار الصحيح واسم الملف.
+## Paso 4: Guarde el documento renderizado
+ Finalmente, puede guardar el documento renderizado en un archivo usando el`Save()` metodo de la`Document` clase. Asegúrese de especificar la ruta y el nombre de archivo correctos.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
-### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders With Priority باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Establecer carpetas de fuentes con prioridad usando Aspose.Words para .NET 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
@@ -54,5 +54,5 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلدات الخطوط ذات الأولوية عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلدات خطوط متعددة ذات أولوية بحث مخصصة عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+## Conclusión
+En este tutorial, aprendimos cómo establecer carpetas de fuentes con prioridad al renderizar un documento usando Aspose.Words para .NET. Siguiendo esta guía paso a paso, puede especificar fácilmente varias carpetas de fuentes con prioridad de búsqueda personalizada al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para trabajar con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar las fuentes de fuentes utilizadas al renderizar sus documentos según sus necesidades específicas.

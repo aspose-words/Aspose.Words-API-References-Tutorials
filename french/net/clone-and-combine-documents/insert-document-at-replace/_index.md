@@ -1,31 +1,31 @@
 ---
-title: أدخل المستند عند الاستبدال
-linktitle: أدخل المستند عند الاستبدال
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مستند عند الاستبدال باستخدام Aspose.Words for .NET.
+title: Insérer le document au remplacement
+linktitle: Insérer le document au remplacement
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer un document lors du remplacement à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إدراج مستند في مستند آخر عند الاستبدال باستخدام ميزة "إدراج مستند عند استبدال" في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم كود المصدر وإجراء عملية إدراج المستند.
+Dans ce didacticiel, nous vous expliquerons comment insérer un document dans un autre document lors du remplacement à l'aide de la fonction Insérer un document lors du remplacement d'Aspose.Words pour .NET. Suivez les étapes ci-dessous pour comprendre le code source et effectuer l'insertion du document.
 
-## الخطوة 1: تحميل المستند الرئيسي
+## Étape 1 : Chargement du document principal
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند الرئيسي في كائن المستند. إليك الطريقة:
+Pour commencer, spécifiez le répertoire de vos documents et chargez le document principal dans un objet Document. Voici comment:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 ```
 
-## الخطوة 2: تكوين خيارات البحث والاستبدال
+## Étape 2 : Configurer les options de recherche et de remplacement
 
-سنقوم الآن بتكوين خيارات البحث والاستبدال عن طريق تحديد اتجاه البحث واستبدال رد الاتصال لإدراج مستند في مستند آخر. إليك الطريقة:
+Nous allons maintenant configurer les options de recherche et de remplacement en spécifiant le sens de recherche et le rappel de remplacement pour insérer un document dans un autre document. Voici comment:
 
 ```csharp
-//تكوين خيارات البحث والاستبدال.
+//Configurez les options de recherche et de remplacement.
 FindReplaceOptions options = new FindReplaceOptions
 {
 Direction = FindReplaceDirection.Backward,
@@ -33,33 +33,33 @@ ReplacingCallback = new InsertDocumentAtReplaceHandler()
 };
 ```
 
-## الخطوة 3: استدعاء طريقة الاستبدال
+## Étape 3 : Appel de la méthode de remplacement
 
-سنقوم الآن باستدعاء طريقة الاستبدال للعثور على النص المحدد واستبداله بسلسلة فارغة ، باستخدام الخيارات التي تم تكوينها. إليك الطريقة:
+Nous allons maintenant appeler la méthode replace pour rechercher et remplacer le texte spécifié par une chaîne vide, en utilisant les options configurées. Voici comment:
 
 ```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
 
-### مثال على شفرة المصدر لـ Insert Document At Replace باستخدام Aspose.Words for .NET
+### Exemple de code source pour Insérer un document à remplacer à l'aide de Aspose.Words pour .NET
 
-فيما يلي رمز المصدر الكامل لميزة "إدراج مستند" عند استبدال Aspose.Words for .NET:
+Voici le code source complet de la fonction Insérer un document lors du remplacement d'Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
-	// تعيين خيارات البحث والاستبدال.
+	// Définissez les options de recherche et de remplacement.
 	FindReplaceOptions options = new FindReplaceOptions
 	{
 		Direction = FindReplaceDirection.Backward, 
 		ReplacingCallback = new InsertDocumentAtReplaceHandler()
 	};
 
-	// اتصل بطريقة الاستبدال.
+	// Appelez la méthode de remplacement.
 	mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 

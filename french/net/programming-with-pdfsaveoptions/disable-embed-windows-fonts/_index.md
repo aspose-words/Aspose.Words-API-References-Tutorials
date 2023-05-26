@@ -1,61 +1,61 @@
 ---
-title: تعطيل تضمين خطوط Windows
-linktitle: تعطيل تضمين خطوط Windows
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل تضمين خطوط Windows عند تحويل المستندات إلى PDF باستخدام Aspose.Words for .NET.
+title: Désactiver les polices Windows intégrées
+linktitle: Désactiver les polices Windows intégrées
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Découvrez comment désactiver l'incorporation de polices Windows lors de la conversion de documents au format PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر خطوات تعطيل تضمين خطوط Windows في مستند PDF باستخدام Aspose.Words for .NET. من خلال تعطيل دمج الخط ، يمكنك تقليل حجم ملف PDF الذي تم إنشاؤه. اتبع الخطوات التالية:
+Dans ce didacticiel, nous vous guiderons à travers les étapes pour désactiver l'incorporation de polices Windows dans un document PDF avec Aspose.Words pour .NET. En désactivant l'incorporation des polices, vous pouvez réduire la taille du fichier PDF généré. Suivez les étapes ci-dessous :
 
-## الخطوة 1: تحميل المستند
+## Étape 1 : Chargement du document
 
-ابدأ بتحميل المستند الذي تريد تحويله إلى PDF:
+Commencez par télécharger le document que vous souhaitez convertir en PDF :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح للمستند الخاص بك.
+Assurez-vous de spécifier le chemin d'accès correct à votre document.
 
-## الخطوة 2: تعيين خيارات حفظ PDF
+## Étape 2 : Définir les options d'enregistrement PDF
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وحدد كيفية تضمين الخطوط:
+Créez une instance de la classe PdfSaveOptions et spécifiez comment incorporer les polices :
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
 ```
 
-يتيح لك هذا الخيار إلغاء تنشيط تكامل خطوط Windows في ملف PDF الذي تم إنشاؤه.
+Cette option permet de désactiver l'intégration des polices Windows dans le fichier PDF généré.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## Étape 3 : Convertir le document en PDF
 
- استخدم ال`Save` طريقة تحويل المستند إلى PDF مع تحديد خيارات التحويل:
+ Utilisez le`Save` méthode pour convertir le document en PDF en spécifiant les options de conversion :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Assurez-vous de spécifier le chemin d'accès correct pour enregistrer le PDF converti.
 
-### مثال على شفرة المصدر لـ Disable Embed Windows Fonts باستخدام Aspose.Words for .NET
+### Exemple de code source pour désactiver les polices Windows intégrées à l'aide de Aspose.Words pour .NET
 
-إليك كود المصدر الكامل لتعطيل تضمين خطوط Windows في مستند PDF باستخدام Aspose.Words for .NET:
+Voici le code source complet pour désactiver l'intégration des polices Windows dans un document PDF avec Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// سيتم حفظ ملف PDF الناتج بدون تضمين خطوط Windows القياسية.
+	// Le PDF de sortie sera enregistré sans incorporer les polices Windows standard.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 
 ```
-باتباع هذه الخطوات ، يمكنك بسهولة تعطيل دمج خطوط Windows في مستند PDF باستخدام Aspose.Words for .NET.
+En suivant ces étapes, vous pouvez facilement désactiver l'incorporation des polices Windows dans un document PDF avec Aspose.Words pour .NET.
 

@@ -1,18 +1,18 @@
 ---
-title: العمل مع FormFields
-linktitle: العمل مع FormFields
-second_title: Aspose.Words لمراجع .NET API
-description: البرامج التعليمية التي تحتوي على كيفية إدراج حقول النموذج ، والعمل مع خصائص حقول النماذج ، والحصول على مجموعة حقول النموذج ، والحصول على حقول النموذج بالاسم في مستند Word باستخدام Aspose.Words for .NET.
+title: FormFields ile Çalışmak
+linktitle: FormFields ile Çalışmak
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak Word Belgesinde form alanlarını ekleme, form alanlarının özellikleriyle çalışma, form alanları koleksiyonu alma ve form alanlarını ada göre alma konularını içeren eğitimler.
 type: docs
 weight: 690
 url: /tr/net/working-with-formfields/
 ---
-يعد العمل مع Form Fields موردًا شاملاً لتعلم كيفية التعامل مع حقول النماذج في مستندات Word باستخدام مكتبة Aspose.Words for .NET. توفر البرامج التعليمية شروحات خطوة بخطوة ، وكود مصدر كامل ، وأمثلة عملية لإنشاء وتعديل وإدارة حقول النموذج مثل مربعات الاختيار ومربعات النص والقوائم المنسدلة والمزيد. ستتعلم أيضًا كيفية استخراج البيانات ونشرها من حقول النماذج ، بالإضافة إلى تخصيص تنسيقها وسلوكها. هذا المورد ضروري للمطورين الراغبين في أتمتة إنشاء النماذج وإدارتها في مستندات Word باستخدام Aspose.Words for .NET.
+Form Alanlarıyla Çalışmak, Aspose.Words for .NET kitaplığını kullanarak Word belgelerindeki form alanlarıyla nasıl çalışılacağını öğrenmek için kapsamlı bir kaynaktır. Öğreticiler, onay kutuları, metin kutuları, açılır listeler ve daha fazlası gibi form alanlarını oluşturmak, değiştirmek ve yönetmek için adım adım açıklamalar, eksiksiz kaynak kodu ve uygulamalı örnekler sağlar. Ayrıca, form alanlarından verileri nasıl çıkaracağınızı ve dolduracağınızı ve ayrıca biçimlendirmelerini ve davranışlarını özelleştirmeyi öğreneceksiniz. Bu kaynak, Aspose.Words for .NET kullanarak Word belgelerindeki formların oluşturulmasını ve yönetilmesini otomatikleştirmek isteyen geliştiriciler için gereklidir.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [أدخل حقول النموذج](./insert-form-fields/) | تعرف على كيفية إدراج حقول نموذج القائمة المنسدلة في مستندات Word باستخدام Aspose.Words for .NET. |
-| [تعمل حقول النموذج مع الخصائص](./form-fields-work-with-properties/) | تعرف على كيفية التعامل مع خصائص حقل النموذج في مستندات Word باستخدام Aspose.Words for .NET. |
-| [حقول النموذج تحصل على مجموعة حقول النموذج](./form-fields-get-form-fields-collection/) | تعرف على كيفية استرداد مجموعة حقول النموذج ومعالجتها في مستندات Word باستخدام Aspose.Words for .NET. |
-| [الحصول على حقول النموذج بالاسم](./form-fields-get-by-name/) | تعرف على كيفية استرداد وتعديل حقول النموذج بالاسم في مستندات Word باستخدام Aspose.Words for .NET. |
+| [Form Alanları Ekle](./insert-form-fields/) | Aspose.Words for .NET kullanarak açılır form alanlarını Word belgelerine nasıl ekleyeceğinizi öğrenin. |
+| [Form Alanları Özelliklerle Çalışır](./form-fields-work-with-properties/) | Aspose.Words for .NET kullanarak Word belgelerinde form alanı özellikleriyle nasıl çalışacağınızı öğrenin. |
+| [Form Alanları Form Alanları Koleksiyonunu Alın](./form-fields-get-form-fields-collection/) | Aspose.Words for .NET kullanarak Word belgelerindeki form alanları koleksiyonunu nasıl alacağınızı ve değiştireceğinizi öğrenin. |
+| [Form Alanları Ada Göre Alınır](./form-fields-get-by-name/) | Aspose.Words for .NET kullanarak Word belgelerinde form alanlarını ada göre nasıl alacağınızı ve değiştireceğinizi öğrenin. |

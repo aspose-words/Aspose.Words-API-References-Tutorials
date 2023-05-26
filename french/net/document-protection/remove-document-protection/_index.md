@@ -1,18 +1,18 @@
 ---
-title: إزالة حماية المستند
-linktitle: إزالة حماية المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة الحماية من مستند Word باستخدام Aspose.Words for .NET.
+title: Supprimer la protection des documents
+linktitle: Supprimer la protection des documents
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Découvrez comment supprimer la protection d'un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/document-protection/remove-document-protection/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال الخطوات لاستخدام ميزة المستند غير المحمي في Aspose.Words for .NET. تتيح لك هذه الميزة إزالة الحماية من مستند Word لتسهيل الوصول إليه لمزيد من التحرير. اتبع الخطوات التالية:
+Dans ce didacticiel, nous vous guiderons à travers les étapes d'utilisation de la fonction de déprotection de document d'Aspose.Words pour .NET. Cette fonctionnalité vous permet de supprimer la protection d'un document Word pour le rendre accessible pour une modification ultérieure. Suivez les étapes ci-dessous :
 
-## الخطوة الأولى: إنشاء المستند وإضافة المحتوى
+## Étape 1 : création du document et ajout de contenu
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+Commencez par créer une instance de la classe Document et un objet DocumentBuilder :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -20,17 +20,17 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أضف محتوى إلى المستند
+## Étape 2 : Ajouter du contenu au document
 
-استخدم كائن DocumentBuilder لإضافة محتوى إلى المستند:
+Utilisez l'objet DocumentBuilder pour ajouter du contenu au document :
 
 ```csharp
 builder.Writeln("Text added to a document.");
 ```
 
-## الخطوة 3: إلغاء حماية المستند
+## Étape 3 : Déprotéger le document
 
-لإلغاء حماية المستند ، يمكنك استخدام طريقة Unprotect () لكائن المستند. يمكنك اختيار إزالة الحماية بدون كلمة مرور أو بكلمة مرور صحيحة. إزالة الحماية بدون كلمة مرور:
+Pour déprotéger le document, vous pouvez utiliser la méthode Unprotect() de l'objet Document. Vous pouvez choisir de supprimer la protection sans mot de passe ou avec un mot de passe correct. Suppression de la protection sans mot de passe :
 
 ```csharp
 doc.Unprotect();
@@ -38,32 +38,32 @@ doc.Protect(ProtectionType.ReadOnly, "newPassword");
 doc.Unprotect("newPassword");
 ```
 
-تأكد من استبدال "newPassword" بكلمة مرور المستند الصحيحة.
+Assurez-vous de remplacer "newPassword" par le mot de passe correct du document.
 
-## الخطوة 4: احفظ المستند بدون حماية
+## Étape 4 : Enregistrez le document sans protection
 
-أخيرًا ، احفظ المستند بدون حماية باستخدام طريقة Save () لكائن Document:
+Enfin, enregistrez le document sans protection en utilisant la méthode Save() de l'objet Document :
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند بدون حماية.
+Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour enregistrer le document sans protection.
 
-### مثال على شفرة المصدر لإزالة حماية المستند باستخدام Aspose.Words for .NET
+### Exemple de code source pour supprimer la protection de document à l'aide d'Aspose.Words pour .NET
 
-فيما يلي رمز المصدر الكامل لإلغاء حماية المستند باستخدام Aspose.Words for .NET:
+Voici le code source complet pour déprotéger le document en utilisant Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
 	builder.Writeln("Text added to a document.");
 
-	// يمكن إزالة الحماية للمستندات إما بدون كلمة مرور أو باستخدام كلمة المرور الصحيحة.
+	// La protection des documents peut être supprimée soit sans mot de passe, soit avec le mot de passe correct.
 	doc.Unprotect();
 	doc.Protect(ProtectionType.ReadOnly, "newPassword");
 	doc.Unprotect("newPassword");
@@ -72,4 +72,4 @@ doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة إزالة الحماية من مستند Word باستخدام Aspose.Words for .NET.
+En suivant ces étapes, vous pouvez facilement supprimer la protection du document Word avec Aspose.Words pour .NET.

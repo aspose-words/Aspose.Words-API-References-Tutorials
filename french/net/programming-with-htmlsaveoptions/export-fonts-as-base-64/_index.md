@@ -1,55 +1,55 @@
 ---
-title: تصدير الخطوط كقاعدة 64
-linktitle: تصدير الخطوط كقاعدة 64
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة لتصدير خطوط 64 أساسية عند حفظ مستند باستخدام Aspose.Words for .NET.
+title: Exporter les polices en base 64
+linktitle: Exporter les polices en base 64
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Guide étape par étape pour exporter les polices de base 64 lors de l'enregistrement d'un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر الكود المصدري C # لتصدير 64 خطًا أساسيًا باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تصدير الخطوط كبيانات أساسية 64 عند حفظ مستند بتنسيق HTML.
+Dans ce didacticiel, nous vous guiderons à travers le code source C # pour exporter des polices de base 64 avec Aspose.Words pour .NET. Cette fonctionnalité vous permet d'exporter des polices en tant que données de base 64 lors de l'enregistrement d'un document au format HTML.
 
-## الخطوة 1: إعداد المشروع
+## Étape 1 : configuration du projet
 
-للبدء ، قم بإنشاء مشروع C # جديد في IDE المفضل لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+Pour commencer, créez un nouveau projet C# dans votre IDE préféré. Assurez-vous que la bibliothèque Aspose.Words pour .NET est référencée dans votre projet.
 
-## الخطوة الثانية: تحميل المستند
+## Étape 2 : Chargement du document
 
-في هذه الخطوة ، سنقوم بتحميل المستند للتصدير. استخدم الكود التالي لتحميل المستند من دليل محدد:
+Dans cette étape, nous allons charger le document à exporter. Utilisez le code suivant pour charger le document à partir d'un répertoire spécifié :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- هذا الرمز ينشئ مثيل`Document` عن طريق تحميل المستند من الدليل المحدد.
+ Ce code crée une instance de`Document` en chargeant le document depuis le répertoire spécifié.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي بتنسيق HTML
+## Étape 3 : Configuration des options de sauvegarde HTML
 
-سنقوم الآن بتكوين خيارات حفظ HTML لتصدير 64 خطًا أساسيًا. استخدم الكود التالي:
+Nous allons maintenant configurer les options d'enregistrement HTML pour exporter les polices de base 64. Utilisez le code suivant :
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true };
 ```
 
- هذا الرمز ينشئ مثيل`HtmlSaveOptions` ومجموعات`ExportFontsAsBase64` ل`true` لتحديد أن الخطوط يجب أن يتم تصديرها كبيانات أساسية 64 عند الحفظ بتنسيق HTML.
+ Ce code crée une instance de`HtmlSaveOptions` et ensembles`ExportFontsAsBase64` pour`true` pour spécifier que les polices doivent être exportées en tant que données de base 64 lors de l'enregistrement au format HTML.
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## Étape 4 : Conversion et enregistrement du document au format HTML
 
-أخيرًا ، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+Enfin, nous convertirons le document en HTML en utilisant les options d'enregistrement HTML configurées précédemment. Utilisez le code suivant :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);
 ```
 
-يحول هذا الرمز المستند إلى HTML ويحفظه في ملف بالخطوط المصدرة كبيانات أساسية 64.
+Ce code convertit le document en HTML et l'enregistre dans un fichier avec les polices exportées en tant que données de base 64.
 
-### مثال على شفرة المصدر لـ Export Fonts As Base 64 باستخدام Aspose.Words for .NET
+### Exemple de code source pour Export Fonts As Base 64 en utilisant Aspose.Words pour .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -59,6 +59,6 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOp
 
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+ Assurez-vous de spécifier le chemin d'accès correct au répertoire de documents dans le`dataDir` variable.
 
-لقد تعلمت الآن كيفية تصدير خطوط أساسية 64 عند حفظ مستند بتنسيق HTML باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المتوفر في هذا البرنامج التعليمي ، يمكنك بسهولة تصدير الخطوط بأمان ودمجها في مستندات HTML الخاصة بك.
+Vous avez maintenant appris à exporter des polices de base 64 lors de l'enregistrement d'un document au format HTML à l'aide de Aspose.Words pour .NET. En suivant le guide étape par étape fourni dans ce didacticiel, vous pouvez facilement exporter des polices en toute sécurité et les intégrer dans vos documents HTML.

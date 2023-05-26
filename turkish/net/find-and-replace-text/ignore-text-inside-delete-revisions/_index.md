@@ -1,34 +1,34 @@
 ---
-title: تجاهل النص داخل حذف المراجعات
-linktitle: تجاهل النص داخل حذف المراجعات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام ميزة "تجاهل النص داخل حذف المراجعات" في Aspose.Words for .NET.
+title: İçindeki Metni Yoksay Düzeltmeleri Sil
+linktitle: İçindeki Metni Yoksay Düzeltmeleri Sil
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'in "İçindeki Metni Yoksay Revizyonları Sil" özelliğini nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام ميزة "تجاهل النص داخل حذف المراجعات" في مكتبة Aspose.Words for .NET. هذه الميزة مفيدة عندما نريد تجاهل النص داخل مراجعات الحذف عند العمل مع المستندات.
+Bu makalede, Aspose.Words for .NET kitaplığındaki "İçerideki Metni Yoksay, Düzeltmeleri Sil" özelliğinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, belgelerle çalışırken silme revizyonlarındaki metni yok saymak istediğimizde kullanışlıdır.
 
-## نظرة عامة على مكتبة Aspose.Words for .NET
+## Aspose.Words for .NET kitaplığına genel bakış
 
-قبل الخوض في تفاصيل الكود ، دعني أقدم باختصار مكتبة Aspose.Words for .NET. إنها مكتبة قوية تسمح بإنشاء وتعديل وتحويل مستندات Word في تطبيقات .NET. يوفر العديد من الميزات المتقدمة للعمل مع المستندات ، بما في ذلك إدارة المراجعة.
+Kod detaylarına geçmeden önce Aspose.Words for .NET kütüphanesini kısaca tanıtmama izin verin. .NET uygulamalarında Word belgeleri oluşturmaya, değiştirmeye ve dönüştürmeye olanak sağlayan güçlü bir kitaplıktır. Revizyon yönetimi de dahil olmak üzere belgelerle çalışmak için birçok gelişmiş özellik sunar.
 
-## فهم ميزة "تجاهل النص داخل حذف المراجعات"
+## "İçindeki Metni Yoksay, Düzeltmeleri Sil" özelliğini anlama
 
-تتيح لك ميزة "تجاهل النص الداخلي حذف المراجعات" في Aspose.Words for .NET تحديد ما إذا كان يجب تجاهل النص الموجود داخل مراجعات الحذف أثناء عمليات معينة ، مثل البحث عن النص واستبداله. عند تمكين هذه الميزة ، لا يتم اعتبار النص المحذوف داخل المراجعات أثناء العمليات.
+Aspose.Words for .NET'teki "Revizyonların İçindeki Metni Yoksay" özelliği, metin bulma ve değiştirme gibi belirli işlemler sırasında silme revizyonlarının içindeki metnin göz ardı edilip edilmeyeceğini belirlemenizi sağlar. Bu özellik etkinleştirildiğinde, revizyonların içindeki silinen metinler işlemler sırasında dikkate alınmaz.
 
-## الخطوة 1: إنشاء مستند جديد باستخدام Aspose.Words for .NET
+## 1. Adım: Aspose.Words for .NET kullanarak yeni bir belge oluşturma
 
- قبل أن نبدأ في معالجة النص في مستند ، نحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words for .NET. يمكن أن يتم ذلك عن طريق إنشاء مثيل لملف`Document` هدف:
+ Bir belgedeki metni değiştirmeye başlamadan önce Aspose.Words for .NET kullanarak yeni bir belge oluşturmamız gerekiyor. Bir örneğini oluşturarak yapılabilir`Document` nesne:
 
 ```csharp
 Document doc = new Document();
 ```
 
-## الخطوة 2: إدخال نص غير منقح في المستند
+## 2. Adım: Düzeltilmemiş metni belgeye ekleme
 
- بمجرد أن نحصل على مستند ، يمكننا إدراج نص لم تتم مراجعته باستخدام ملف`DocumentBuilder` هدف. على سبيل المثال ، لإدراج النص "النص المحذوف" ، يمكننا استخدام الامتداد`Writeln` و`Write` طُرق:
+ Bir belgemiz olduğunda, incelenmemiş metni bir a kullanarak ekleyebiliriz.`DocumentBuilder` nesne. Örneğin, "Silinmiş Metin" metnini eklemek için şunu kullanabiliriz:`Writeln` Ve`Write` yöntemler:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -36,9 +36,9 @@ builder. Writen("Deleted");
 builder. Write("Text");
 ```
 
-## الخطوة 3: إزالة فقرة مع تتبع المراجعات
+## 3. Adım: Düzeltmeleri izleyerek bir paragrafı kaldırma
 
-لتوضيح استخدام ميزة "تجاهل النص داخل حذف المراجعات" ، سنحذف فقرة من المستند باستخدام تتبع المراجعة. سيسمح لنا ذلك بمعرفة كيف تؤثر هذه الميزة على العمليات اللاحقة.
+"Revizyonların İçindeki Metni Yoksay Sil" özelliğinin kullanımını göstermek için, revizyon izlemeyi kullanarak belgeden bir paragraf sileceğiz. Bu, bu özelliğin sonraki işlemleri nasıl etkilediğini görmemizi sağlayacaktır.
 
 ```csharp
 doc.StartTrackRevisions("author", DateTime.Now);
@@ -46,62 +46,62 @@ doc.FirstSection.Body.FirstParagraph.Remove();
 doc.StopTrackRevisions();
 ```
 
-## الخطوة 4: تطبيق ميزة "تجاهل النص داخل حذف المراجعات"
+## Adım 4: "İçindeki Metni Yoksay Düzeltmeleri Sil" özelliğini uygulama
 
- الآن وقد أعددنا وثيقتنا عن طريق حذف فقرة ، يمكننا تمكين ميزة "تجاهل النص داخل حذف المراجعات" باستخدام`FindReplaceOptions` هدف. سنقوم بتعيين`IgnoreDeleted` ملكية ل`true`:
+ Artık bir paragrafı silerek belgemizi hazırladığımıza göre, "Ignore Text Inside Delete Revizyonları" özelliğini bir paragraf silerek etkinleştirebiliriz.`FindReplaceOptions` nesne. biz ayarlayacağız`IgnoreDeleted` mülkiyet`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 ```
 
-## الخطوة 5: استخدام التعبيرات النمطية للبحث والاستبدال
+## 5. Adım: Bul ve değiştir için normal ifadeleri kullanma
 
-لإجراء عمليات البحث والاستبدال على نص المستند ، سنستخدم التعبيرات العادية. في مثالنا ، سنبحث عن جميع تكرارات الحرف "e" ونستبدلها بعلامة النجمة "* ". .شبكة`Regex` يتم استخدام فئة لهذا:
+Belge metni üzerinde arama ve değiştirme işlemlerini gerçekleştirmek için normal ifadeler kullanacağız. Örneğimizde, "e" harfinin geçtiği tüm yerleri arayacağız ve bunları bir yıldız işaretiyle değiştireceğiz "* ". .AÇIK`Regex` sınıf bunun için kullanılır:
 
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## الخطوة 6: عرض مخرجات الوثيقة المعدلة
+## Adım 6: Değiştirilen belge çıktısının görüntülenmesi
 
-بعد تطبيق البحث والاستبدال ، يمكننا عرض المحتوى الذي تم تغييره في المستند باستخدام`GetText` طريقة:
+Ara ve değiştir işlemini uyguladıktan sonra, belgenin değişen içeriğini kullanarak görüntüleyebiliriz.`GetText` yöntem:
 
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## الخطوة 7: تعديل الخيارات لتضمين النص المحذوف
+## 7. Adım: Silinmiş metni dahil etmek için seçenekleri değiştirme
 
- إذا أردنا تضمين نص محذوف في نتيجة الإخراج ، فيمكننا تغيير الخيارات لعدم تجاهل النص المحذوف. لهذا سنقوم بتعيين`IgnoreDeleted` ملكية ل`false`:
+ Çıktı sonucuna silinen metni dahil etmek istiyorsak, silinen metni yok saymamak için seçenekleri değiştirebiliriz. Bunun için ayarlayacağımız`IgnoreDeleted` mülkiyet`false`:
 
 ```csharp
 options. IgnoreDeleted = false;
 ```
 
-## الخطوة 8: إخراج المستند المعدل بالنص المحذوف
+## Adım 8: Değiştirilen belgenin silinmiş metinle çıktısını alma
 
-بعد تغيير الخيارات ، يمكننا إجراء البحث والاستبدال مرة أخرى للحصول على النتيجة مع تضمين النص المحذوف:
+Seçenekleri değiştirdikten sonra, silinen metnin dahil olduğu sonucu almak için aramayı gerçekleştirebilir ve tekrar değiştirebiliriz:
 
 ```csharp
 doc.Range.Replace(regex, "*", options);
 Console.WriteLine(doc.GetText());
 ```
 
-### مثال على شفرة المصدر لـ Ignore Text Inside Delete Revisions باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Revizyonları Sil İçerideki Metni Yoksay için örnek kaynak kodu
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح استخدام ميزة "تجاهل النص داخل حذف المراجعات" مع Aspose.Words for .NET:
+Aspose.Words for .NET ile "İçerideki Metni Yoksay, Revizyonları Sil" özelliğinin kullanımını gösteren tam örnek kaynak kodunu burada bulabilirsiniz:
 
 ```csharp
         
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// أدخل نصًا غير منقح.
+	// Düzeltilmemiş metin ekleyin.
 	builder.Writeln("Deleted");
 	builder.Write("Text");
 
-	// إزالة الفقرة الأولى مع تتبع المراجعات.
+	// İzleme revizyonları ile ilk paragrafı kaldırın.
 	doc.StartTrackRevisions("author", DateTime.Now);
 	doc.FirstSection.Body.FirstParagraph.Remove();
 	doc.StopTrackRevisions();
@@ -120,7 +120,7 @@ Console.WriteLine(doc.GetText());
     
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام ميزة "تجاهل النص داخل حذف المراجعات" في Aspose.Words for .NET. هذه الميزة مفيدة لتجاهل النص داخل مراجعات الحذف عند معالجة المستندات. اتبعنا دليلًا تفصيليًا لإنشاء مستند وإدراج نص وحذف فقرة مع تتبع المراجعة وتطبيق ميزة "تجاهل النص داخل حذف المراجعات" وإجراء عمليات البحث والاستبدال.
+Bu makalede, Aspose.Words for .NET'te "İçerideki Metni Yoksay, Düzeltmeleri Sil" özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bu özellik, belgeleri işlerken silme revizyonlarının içindeki metni yok saymak için kullanışlıdır. Belge oluşturmak, metin eklemek, revizyon izleme ile paragraf silmek, "İçerideki Metni Yoksay Revizyonları Sil" özelliğini uygulamak, bul ve değiştir işlemlerini gerçekleştirmek için adım adım bir kılavuz izledik.
 

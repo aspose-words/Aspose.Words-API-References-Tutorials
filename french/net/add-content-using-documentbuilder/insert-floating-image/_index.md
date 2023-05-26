@@ -1,29 +1,29 @@
 ---
-title: إدراج صورة عائمة
-linktitle: إدراج صورة عائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج الصور العائمة في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Insérer une image flottante
+linktitle: Insérer une image flottante
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer des images flottantes dans des documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-floating-image/
 ---
 
-في هذا المثال الشامل ، ستتعلم كيفية إدراج صورة عائمة في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستكون قادرًا على إضافة صور مع خيارات تحديد الموضع والتفاف القابلة للتخصيص إلى مستنداتك.
+Dans cet exemple complet, vous apprendrez à insérer une image flottante dans un document Word à l'aide de Aspose.Words pour .NET. Nous vous guiderons tout au long du processus et vous fournirons les extraits de code C# nécessaires. À la fin de ce guide, vous serez en mesure d'ajouter des images avec des options de positionnement et d'habillage personnalisables à vos documents.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Conditions préalables
+Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
+- Bibliothèque Aspose.Words pour .NET installée sur votre système.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Étape 1 : créer un nouveau document et DocumentBuilder
+Pour commencer, créez un nouveau document à l'aide de la classe Document et initialisez un objet DocumentBuilder :
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل صورة عائمة
-بعد ذلك ، استخدم طريقة InsertImage لفئة DocumentBuilder لإدراج صورة عائمة. قم بتوفير مسار ملف الصورة والموضع الأفقي والرأسي النسبي والعرض والارتفاع وخيارات الالتفاف كمعلمات:
+## Étape 2 : Insérer une image flottante
+Ensuite, utilisez la méthode InsertImage de la classe DocumentBuilder pour insérer une image flottante. Fournissez le chemin du fichier image, la position horizontale et verticale relative, la largeur, la hauteur et les options d'habillage en tant que paramètres :
 
 ```csharp
 builder.InsertImage(ImagesDir + "Transparent background logo.png",
@@ -36,16 +36,16 @@ builder.InsertImage(ImagesDir + "Transparent background logo.png",
 	WrapType.Square);
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج الصورة العائمة ، احفظ المستند في ملف باستخدام طريقة Save لفئة Document:
+## Étape 3 : Enregistrer le document
+Après avoir inséré l'image flottante, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
 ```
 
-## مثال على كود المصدر لإدراج صورة عائمة باستخدام Aspose.Words for .NET
-إليك الكود المصدري الكامل لإدخال صورة عائمة باستخدام Aspose.Words for .NET:
-تعد الصور العائمة مفيدة لسيناريوهات مختلفة ، مثل إضافة الشعارات أو الرسوم التوضيحية أو العناصر الزخرفية التي يمكن وضعها بشكل مستقل عن نص المستند.
+## Exemple de code source pour insérer une image flottante à l'aide de Aspose.Words pour .NET
+Voici le code source complet pour insérer une image flottante en utilisant Aspose.Words pour .NET :
+Les images flottantes sont utiles pour divers scénarios, tels que l'ajout de logos, d'illustrations ou d'éléments décoratifs pouvant être positionnés indépendamment du texte du document.
 
 ```csharp
 
@@ -65,8 +65,8 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx
 	
 ```
 
-تذكر أن تقوم بضبط الكود وفقًا لمتطلباتك المحددة ، بما في ذلك مسار ملف الصورة وخيارات الموضع والالتفاف المطلوبة.
+N'oubliez pas d'ajuster le code en fonction de vos besoins spécifiques, y compris le chemin du fichier image et les options de positionnement et d'habillage souhaitées.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج صورة عائمة في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك بصور عائمة جذابة وقابلة للتخصيص.
+## Conclusion
+Toutes nos félicitations! Vous avez appris avec succès comment insérer une image flottante dans un document Word en utilisant Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais améliorer vos documents avec des images flottantes visuellement attrayantes et personnalisables.
 

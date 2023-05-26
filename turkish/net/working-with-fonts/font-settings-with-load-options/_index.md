@@ -1,48 +1,48 @@
 ---
-title: إعدادات الخط مع خيارات التحميل
-linktitle: إعدادات الخط مع خيارات التحميل
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تحميل مستند Word بخيارات تحميل مخصصة وإعدادات الخط المقابلة.
+title: Yükleme Seçenekleriyle Yazı Tipi Ayarları
+linktitle: Yükleme Seçenekleriyle Yazı Tipi Ayarları
+second_title: Aspose.Words for .NET API Referansı
+description: Bu öğreticide, özel yükleme seçenekleri ve karşılık gelen yazı tipi ayarlarıyla bir Word belgesini nasıl yükleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/font-settings-with-load-options/
 ---
-في هذا البرنامج التعليمي ، سوف نوضح لك كيفية استخدام خيارات التحميل مع إعدادات الخط في مستند Word باستخدام مكتبة Aspose.Words لـ .NET. تتيح لك خيارات التحميل تحديد إعدادات إضافية عند تحميل مستند ، بما في ذلك إعدادات الخط. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Bu öğreticide, .NET için Aspose.Words kütüphanesini kullanarak bir Word belgesinde yazı tipi ayarlarıyla yükleme seçeneklerini nasıl kullanacağınızı göstereceğiz. Yükleme seçenekleri, bir belgeyi yüklerken yazı tipi ayarları da dahil olmak üzere ek ayarlar belirlemenizi sağlar. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
+## Önkoşullar
+Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## 1. Adım: Belge dizinini tanımlayın
+ Öncelikle, dizin yolunu Word belgenizin konumuna ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تكوين خيارات التحميل مع إعدادات الخط
- بعد ذلك ، سننشئ مثيلًا لـ`LoadOptions` وحدد إعدادات الخط عن طريق إنشاء مثيل جديد من`FontSettings` وتعيينه إلى`loadOptions.FontSettings`.
+## 2. Adım: Yükleme Seçeneklerini Yazı Tipi Ayarlarıyla Yapılandırın
+ Ardından, bir örneğini oluşturacağız`LoadOptions` ve yeni bir örnek oluşturarak yazı tipi ayarlarını belirtin.`FontSettings` ve onu atamak`loadOptions.FontSettings`.
 
 ```csharp
-// تكوين خيارات التحميل مع إعدادات الخط
+// Yazı tipi ayarlarıyla yükleme seçeneklerini yapılandırın
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.FontSettings = new FontSettings();
 ```
 
-## الخطوة 3: قم بتحميل المستند بخيارات التحميل
- الآن سنقوم بتحميل المستند باستخدام`LoadOptions` وحدد خيارات التحميل التي قمنا بتكوينها.
+## 3. Adım: Belgeyi yükleme seçenekleriyle yükleyin
+ Şimdi kullanarak belgeyi yükleyeceğiz`LoadOptions` ve yapılandırdığımız yükleme seçeneklerini belirtin.
 
 ```csharp
-// قم بتحميل المستند بخيارات التحميل
+// Belgeyi yükleme seçenekleriyle yükleyin
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
-### نموذج التعليمات البرمجية المصدر لإعدادات الخط مع خيارات التحميل باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanan Font Settings With Load Options için örnek kaynak kodu 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 LoadOptions loadOptions = new LoadOptions();
@@ -50,5 +50,5 @@ loadOptions.FontSettings = new FontSettings();
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية استخدام خيارات التحميل مع إعدادات الخط في مستند Word باستخدام Aspose.Words for .NET. تتيح لك خيارات التحميل تخصيص تحميل المستند عن طريق تحديد إعدادات إضافية ، بما في ذلك إعدادات الخط. لا تتردد في استخدام هذه الميزة لتخصيص تحميل المستندات وفقًا لاحتياجاتك الخاصة.
+## Çözüm
+Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde yazı tipi ayarlarıyla yükleme seçeneklerinin nasıl kullanılacağını gördük. Yükleme seçenekleri, yazı tipi ayarları da dahil olmak üzere ek ayarlar belirleyerek belge yüklemeyi özelleştirmenizi sağlar. Belge yüklemeyi özel ihtiyaçlarınıza göre uyarlamak için bu özelliği kullanmaktan çekinmeyin.

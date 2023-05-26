@@ -1,57 +1,57 @@
 ---
-title: تحديث آخر خاصية مطبوعة
-linktitle: تحديث آخر خاصية مطبوعة
-second_title: Aspose.Words لمراجع .NET API
-description: دليل تفصيلي خطوة بخطوة لتحديث خاصية "آخر طباعة" عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+title: Zuletzt gedruckte Eigenschaft aktualisieren
+linktitle: Zuletzt gedruckte Eigenschaft aktualisieren
+second_title: Aspose.Words für .NET API-Referenz
+description: Schritt-für-Schritt-Anleitung zum Aktualisieren der Eigenschaft „Zuletzt gedruckt“ bei der Konvertierung in PDF mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
 
-توفر هذه المقالة دليلًا تفصيليًا حول كيفية استخدام ميزة تحديث خاصية "الطباعة الأخيرة" مع Aspose.Words for .NET. سنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي ، سوف تكون قادرًا على فهم كيفية تكوين خيار تحديث خاصية "آخر طباعة" عند التحويل إلى PDF.
+Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zur Verwendung der Eigenschaftsaktualisierungsfunktion „Letzter Druck“ mit Aspose.Words für .NET. Wir werden jeden Teil des Codes im Detail erklären. Am Ende dieses Tutorials erfahren Sie, wie Sie die Option zum Aktualisieren der Eigenschaft „Zuletzt gedruckt“ beim Konvertieren in PDF konfigurieren.
 
-قبل أن تبدأ ، تأكد من تثبيت وتهيئة مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وإرشادات التثبيت على موقع Aspose.
+Bevor Sie beginnen, stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert und konfiguriert haben. Die Bibliothek und Installationsanweisungen finden Sie auf der Aspose-Website.
 
-## الخطوة 1: تحديد دليل المستند
+## Schritt 1: Definieren Sie das Dokumentenverzeichnis
 
- للبدء ، تحتاج إلى تحديد المسار إلى الدليل حيث توجد مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستندات الخاص بك.
+ Zunächst müssen Sie den Pfad zu dem Verzeichnis definieren, in dem sich Ihre Dokumente befinden. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند
+## Schritt 2: Laden Sie das Dokument hoch
 
-بعد ذلك ، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال ، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+Als nächstes müssen wir das Dokument laden, das wir verarbeiten möchten. In diesem Beispiel gehen wir davon aus, dass das Dokument „Rendering.docx“ heißt und sich im angegebenen Dokumentenverzeichnis befindet.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات حفظ كملف PDF مع خاصية "آخر طباعة" محدثة
+## Schritt 3: Konfigurieren Sie die Optionen zum Speichern als PDF mit der aktualisierten Eigenschaft „Zuletzt gedruckt“.
 
- لتمكين تحديث خاصية "Last Printed" عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن وتعيين`UpdateLastPrintedProperty` ملكية ل`true`.
+ Um die Aktualisierung der Eigenschaft „Zuletzt gedruckt“ beim Konvertieren in PDF zu ermöglichen, müssen wir die konfigurieren`PdfSaveOptions` Objekt und legen Sie das fest`UpdateLastPrintedProperty` Eigentum zu`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
 ```
 
-## الخطوة 4: احفظ المستند بتنسيق PDF مع تحديث خاصية "آخر طباعة"
+## Schritt 4: Speichern Sie das Dokument als PDF mit der Aktualisierung der Eigenschaft „Zuletzt gedruckt“.
 
-أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+Schließlich können wir das Dokument mit den zuvor konfigurierten Speicheroptionen im PDF-Format speichern.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 ```
 
-هذا كل شئ ! لقد نجحت في تمكين تحديث خاصية "آخر طباعة" عند تحويل مستند إلى PDF باستخدام Aspose.Words for .NET.
+Das ist alles ! Sie haben die Aktualisierung der Eigenschaft „Zuletzt gedruckt“ erfolgreich aktiviert, wenn Sie ein Dokument mit Aspose.Words für .NET in PDF konvertieren.
 
-### مثال على كود المصدر لتحديث خاصية "الطباعة الأخيرة" باستخدام Aspose.Words for .NET
+### Beispielquellcode zum Aktualisieren der Eigenschaft „Zuletzt gedruckt“ mit Aspose.Words für .NET
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Der Pfad zum Dokumentenverzeichnis.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 

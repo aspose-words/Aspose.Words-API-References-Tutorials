@@ -1,17 +1,17 @@
 ---
-title: قراءة الحماية فقط
-linktitle: قراءة الحماية فقط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حماية مستندات Word للقراءة فقط باستخدام Aspose.Words for .NET.
+title: Salt Okunur Koruma
+linktitle: Salt Okunur Koruma
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile salt okunur Word belgelerinizi nasıl koruyacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/document-protection/read-only-protection/
 ---
-في هذا البرنامج التعليمي ، سنوجهك خلال الخطوات لاستخدام ميزة الحماية للقراءة فقط في Aspose.Words for .NET. تتيح لك هذه الميزة جعل مستند Word للقراءة فقط لمنع التعديل غير المصرح به. اتبع الخطوات التالية:
+Bu eğitimde, Aspose.Words for .NET'in salt okunur koruma özelliğini kullanma adımlarında size rehberlik edeceğiz. Bu özellik, yetkisiz değişiklik yapılmasını önlemek için bir Word belgesini salt okunur yapmanızı sağlar. Aşağıdaki adımları takip et:
 
-## الخطوة 1: إنشاء المستند وتطبيق الحماية
+## 1. Adım: Belge Oluşturma ve Koruma Uygulama
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+Document sınıfının bir örneğini ve DocumentBuilder nesnesini oluşturarak başlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -19,66 +19,66 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: اكتب المحتوى إلى المستند
-استخدم كائن DocumentBuilder لكتابة محتوى إلى المستند:
+## 2. Adım: Belgeye içerik yazın
+Belgeye içerik yazmak için DocumentBuilder nesnesini kullanın:
 
 ```csharp
 builder.Write("Open document as read-only");
 ```
 
-## الخطوة 3: تعيين كلمة المرور وجعل المستند للقراءة فقط
+## 3. Adım: Parola belirleyin ve belgeyi salt okunur yapın
 
-قم بتعيين كلمة مرور للمستند باستخدام خاصية SetPassword () للكائن WriteProtection:
+WriteProtection nesnesinin SetPassword() özelliğini kullanarak belge için bir parola belirleyin:
 
 ```csharp
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
-تأكد من استبدال "MyPassword" بكلمة المرور الفعلية التي تريد استخدامها.
+"MyPassword" yerine kullanmak istediğiniz gerçek parolayı koyduğunuzdan emin olun.
 
-## الخطوة 4: تطبيق وثيقة للقراءة فقط
+## 4. Adım: Salt okunur belgeyi uygulayın
 
-اجعل المستند للقراءة فقط عن طريق تعيين الخاصية ReadOnlyRecommended على true:
+ReadOnlyRecommended özelliğini true olarak ayarlayarak belgeyi salt okunur yapın:
 
 ```csharp
 doc.WriteProtection.ReadOnlyRecommended = true;
 ```
 
-## الخطوة 5: تطبيق الحماية للقراءة فقط وحفظ المستند
+## 5. Adım: Salt okunur koruma uygulayın ve belgeyi kaydedin
 
-أخيرًا ، قم بتطبيق الحماية للقراءة فقط باستخدام طريقة Protect () لكائن المستند:
+Son olarak, Document nesnesinin Protect() yöntemini kullanarak salt okunur koruma uygulayın:
 
 ```csharp
 doc.Protect(ProtectionType.ReadOnly);
 doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند المحمي.
+Korunan belgeyi kaydetmek için doğru yolu ve dosya adını belirttiğinizden emin olun.
 
-### مثال على شفرة المصدر للحماية للقراءة فقط باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Salt Okunur Koruma için örnek kaynak kodu
 
-فيما يلي رمز المصدر الكامل للحماية للقراءة فقط باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanarak salt okunur koruma için eksiksiz kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
 	builder.Write("Open document as read-only");
 
-	// أدخل كلمة مرور يصل طولها إلى 15 حرفًا.
+	// En fazla 15 karakter uzunluğunda bir parola girin.
 	doc.WriteProtection.SetPassword("MyPassword");
 
-	// اجعل المستند للقراءة فقط.
+	// Belgeyi salt okunur yapın.
 	doc.WriteProtection.ReadOnlyRecommended = true;
 
-	// تطبيق الحماية ضد الكتابة للقراءة فقط.
+	// Yazma korumasını salt okunur olarak uygulayın.
 	doc.Protect(ProtectionType.ReadOnly);
 	doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 ```
 
-باتباع هذه الخطوات ، يمكنك حماية مستنداتك بسهولة
+Bu adımları izleyerek belgelerinizi kolayca koruyabilirsiniz.
 

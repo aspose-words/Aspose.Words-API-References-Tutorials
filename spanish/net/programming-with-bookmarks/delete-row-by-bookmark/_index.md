@@ -1,40 +1,40 @@
 ---
-title: حذف الصف حسب الإشارة المرجعية
-linktitle: حذف الصف حسب الإشارة المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حذف صف جدول بناءً على إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET.
+title: Eliminar fila por marcador
+linktitle: Eliminar fila por marcador
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a eliminar una fila de una tabla en función de un marcador específico en un documento mediante Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 
-في هذه المقالة ، سوف نستكشف كود المصدر C # أعلاه لفهم كيفية استخدام وظيفة حذف الصف حسب الإشارة المرجعية في Aspose.Words لمكتبة .NET. تتيح لك هذه الميزة حذف صف جدول بناءً على إشارة مرجعية معينة في المستند.
+En este artículo, exploraremos el código fuente de C# anterior para comprender cómo usar la función Eliminar fila por marcador en la biblioteca Aspose.Words para .NET. Esta función le permite eliminar una fila de la tabla en función de un marcador específico en un documento.
 
-## المتطلبات الأساسية
+## requisitos previos
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Conocimientos básicos del lenguaje C#.
+- Entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
 
-## الخطوة 1: الحصول على الإشارة المرجعية
+## Paso 1: Obtener el marcador
 
- نحن نستخدم ال`Bookmarks`خاصية نطاق المستند للحصول على الإشارة المرجعية المحددة التي نريد استخدامها لحذف صف الجدول:
+ usamos el`Bookmarks`propiedad del rango del documento para obtener el marcador específico que queremos usar para eliminar la fila de la tabla:
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
 ```
 
-## الخطوة 2: حذف صف الجدول
+## Paso 2: Eliminar la fila de la tabla
 
- نحن نستخدم ال`GetAncestor` طريقة الحصول على`Row` اكتب العنصر الأصل للإشارة المرجعية. بعد ذلك ، نستخدم ملف`Remove` طريقة إزالة صف الجدول:
+ usamos el`GetAncestor` método para obtener el`Row` escriba el elemento principal del marcador. A continuación, usamos el`Remove` método para eliminar la fila de la tabla:
 
 ```csharp
 Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
 row?.Remove();
 ```
 
-### مثال على شفرة المصدر لـ Delete Row By Bookmark باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Eliminar fila por marcador usando Aspose.Words para .NET
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح حذف صف جدول بناءً على إشارة مرجعية معينة باستخدام Aspose.Words for .NET:
+Aquí está el código fuente de muestra completo para demostrar cómo eliminar una fila de la tabla en función de un marcador específico usando Aspose.Words para .NET:
 
 ```csharp
 
@@ -45,6 +45,6 @@ row?.Remove();
         
 ```
 
-## خاتمة
+## Conclusión
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام وظيفة حذف الصف حسب الإشارة المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لحذف صف جدول بناءً على إشارة مرجعية محددة في المستند.
+En este artículo, hemos explorado el código fuente de C# para entender cómo usar la función Eliminar fila por marcador de Aspose.Words para .NET. Seguimos una guía paso a paso para eliminar una fila de la tabla en función de un marcador específico en un documento.

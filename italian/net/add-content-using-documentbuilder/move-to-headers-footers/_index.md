@@ -1,40 +1,40 @@
 ---
-title: الانتقال إلى تذييلات الرؤوس
-linktitle: الانتقال إلى تذييلات الرؤوس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للتنقل وتعديل الرؤوس والتذييلات في مستندات Word باستخدام هذا الدليل التفصيلي.
+title: Sposta in intestazioni piè di pagina
+linktitle: Sposta in intestazioni piè di pagina
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come utilizzare Aspose.Words per .NET per navigare e modificare intestazioni e piè di pagina nei documenti di Word con questa guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Headers Footers في Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تتيح للمطورين إنشاء مستندات Word وتعديلها وتحويلها برمجيًا. تتيح لنا ميزة Move To Headers / Footers التنقل إلى رؤوس وتذييلات مختلفة داخل المستند وإضافة محتوى إليها.
+In questo esempio, esploreremo la funzione Move To Headers Footers di Aspose.Words per .NET. Aspose.Words è una potente libreria di manipolazione dei documenti che consente agli sviluppatori di creare, modificare e convertire i documenti di Word a livello di programmazione. La funzione Sposta in intestazioni/piè di pagina ci consente di navigare tra diverse intestazioni e piè di pagina all'interno di un documento e di aggiungervi contenuto.
 
-دعنا ننتقل إلى الكود المصدري خطوة بخطوة لفهم كيفية استخدام ميزة Move To Headers / Footers باستخدام Aspose.Words for .NET.
+Esaminiamo il codice sorgente passo dopo passo per capire come utilizzare la funzione Sposta in intestazioni/piè di pagina utilizzando Aspose.Words per .NET.
 
 
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## Passaggio 1: inizializzazione del documento e del generatore di documenti
 
-أولاً ، قم بتهيئة كائنات Document و DocumentBuilder:
+Innanzitutto, inizializza gli oggetti Document e DocumentBuilder:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الرؤوس والتذييلات
+## Passaggio 2: configurazione di intestazioni e piè di pagina
 
-حدد إعدادات الرأس / التذييل للمستند. في هذا المثال ، قمنا بتعيين الرؤوس والتذييلات لتكون مختلفة للصفحة الأولى وللصفحات الفردية / الزوجية:
+Specificare le impostazioni di intestazione/piè di pagina per il documento. In questo esempio, impostiamo intestazioni e piè di pagina diversi per la prima pagina e per le pagine pari/dispari:
 
 ```csharp
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 ```
 
-## الخطوة 3: إنشاء رؤوس الصفحات المختلفة
+## Passaggio 3: creazione di intestazioni per pagine diverse
 
-انتقل إلى كل نوع من أنواع العناوين وأضف محتوى إليها. في هذا المثال ، نقوم بإنشاء رؤوس للصفحة الأولى وحتى الصفحات وجميع الصفحات الأخرى:
+Spostati su ciascun tipo di intestazione e aggiungi contenuto. In questo esempio, creiamo intestazioni per la prima pagina, le pagine pari e tutte le altre pagine:
 
 ```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
@@ -47,38 +47,38 @@ builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 builder.Write("Header for all other pages");
 ```
 
-## الخطوة 4: إنشاء صفحات في المستند
-أضف محتوى إلى المستند لإنشاء صفحات متعددة. على سبيل المثال:
+## Passaggio 4: creazione di pagine nel documento
+Aggiungi contenuto al documento per creare più pagine. Per esempio:
 
 ```csharp
-// قم بإنشاء صفحتين في المستند.
+// Crea due pagine nel documento.
 builder.MoveToSection(0);
 builder.Writeln("Page1");
 builder.InsertBreak(BreakType.PageBreak);
 builder.Writeln("Page2");
 ```
-## الخطوة 5: حفظ المستند
+## Passaggio 5: salvare il documento
 
-احفظ المستند المعدل في المكان المطلوب:
+Salva il documento modificato nella posizione desiderata:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```
 
-تأكد من تحديد مسار الملف المناسب وتنسيقه (على سبيل المثال ، DOCX).
+Assicurati di specificare il percorso e il formato file appropriati (ad es. DOCX).
 
-### مثال على شفرة المصدر لـ Move To Headers / Footers باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per Sposta in intestazioni/piè di pagina utilizzando Aspose.Words per .NET
 
 ```csharp
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// حدد أننا نريد اختلاف الرؤوس والتذييلات للصفحات الأولى والزوجية والفردية.
+	// Specificare che vogliamo intestazioni e piè di pagina diversi per la prima pagina, pari e dispari.
 	builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 	builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
-	// قم بإنشاء الرؤوس.
+	// Crea le intestazioni.
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
 	builder.Write("Header for the first page");
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
@@ -86,7 +86,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.doc
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 	builder.Write("Header for all other pages");
 
-	// قم بإنشاء صفحتين في المستند.
+	// Crea due pagine nel documento.
 	builder.MoveToSection(0);
 	builder.Writeln("Page1");
 	builder.InsertBreak(BreakType.PageBreak);

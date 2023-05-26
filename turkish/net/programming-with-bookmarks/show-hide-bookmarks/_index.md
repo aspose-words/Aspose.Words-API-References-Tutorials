@@ -1,52 +1,52 @@
 ---
-title: إظهار إخفاء الإشارات المرجعية
-linktitle: إظهار إخفاء الإشارات المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إظهار أو إخفاء إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET.
+title: Yer İşaretlerini Gizle'yi Göster
+linktitle: Yer İşaretlerini Gizle'yi Göster
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET kullanarak bir belgede belirli bir yer imini nasıl göstereceğinizi veya gizleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
 
-في هذه المقالة ، سوف نستكشف الكود المصدري C # أعلاه لفهم كيفية استخدام وظيفة إظهار إخفاء الإشارات المرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إظهار أو إخفاء إشارة مرجعية معينة في المستند.
+Bu makalede, Aspose.Words for .NET kitaplığında Show Hide Bookmarks işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, bir belgedeki belirli bir yer imini göstermenizi veya gizlemenizi sağlar.
 
-## المتطلبات الأساسية
+## Önkoşullar
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- C# dili hakkında temel bilgi.
+- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
 
-## الخطوة 1: تحميل المستند
+## 1. Adım: Belgeyi yükleme
 
- نحن نستخدم ال`Document` فئة لتحميل المستند الحالي من ملف:
+ biz kullanıyoruz`Document` varolan belgeyi bir dosyadan yüklemek için sınıf:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## الخطوة 2: إظهار أو إخفاء إشارة مرجعية معينة
+## 2. Adım: Belirli bir yer işaretini gösterin veya gizleyin
 
- نحن نستخدم ال`ShowHideBookmarkedContent` وظيفة لإظهار أو إخفاء إشارة مرجعية معينة في المستند. تأخذ هذه الوظيفة كمعلمات للمستند واسم الإشارة المرجعية وقيمة منطقية للإشارة إلى ما إذا كان سيتم إظهار الإشارة المرجعية أو إخفائها:
+ biz kullanıyoruz`ShowHideBookmarkedContent` belgedeki belirli bir yer imini gösterme veya gizleme işlevi. Bu işlev, yer iminin gösterilip gösterilmeyeceğini belirtmek için belgeyi, yer iminin adını ve bir boolean parametre olarak alır:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## الخطوة 3: حفظ المستند المعدل
+## 3. Adım: Değiştirilen belgeyi kaydetme
 
- نحن نستخدم ال`Save` طريقة لحفظ المستند المعدل في ملف:
+ biz kullanıyoruz`Save` değiştirilen belgeyi bir dosyaya kaydetme yöntemi:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### مثال على شفرة المصدر لـ Show Hide Bookmarks باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Show Hide Bookmarks için örnek kaynak kodu
 
-إليك المثال الكامل لشفرة المصدر لتوضيح إظهار أو إخفاء إشارة مرجعية معينة باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET kullanarak belirli bir yer işaretini göstermeyi veya gizlemeyi gösteren tam örnek kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Bookmarks.docx");
 
@@ -56,6 +56,6 @@ doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام ميزة إظهار إخفاء الإشارات المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإظهار أو إخفاء إشارة مرجعية معينة في مستند.
+Bu makalede, Aspose.Words for .NET'in Show Hide Bookmarks özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belgede belirli bir yer imini göstermek veya gizlemek için adım adım bir kılavuz izledik.

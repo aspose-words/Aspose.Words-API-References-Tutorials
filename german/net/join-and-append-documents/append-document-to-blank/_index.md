@@ -1,71 +1,71 @@
 ---
-title: إلحاق مستند فارغ
-linktitle: إلحاق مستند فارغ
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند إلى مستند وجهة فارغ في Aspose.Words for .NET.
+title: Dokument an Leerzeichen anhängen
+linktitle: Dokument an Leerzeichen anhängen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie in Aspose.Words für .NET ein Dokument an ein leeres Zieldokument anhängen.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/append-document-to-blank/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق محتويات مستند واحد بمستند وجهة فارغ. يوضح كود المصدر المقدم كيفية إنشاء مستند جديد وإزالة محتواه ثم إلحاق المستند المصدر به.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET den Inhalt eines Dokuments an ein leeres Zieldokument anhängen. Der bereitgestellte Quellcode zeigt, wie Sie ein neues Dokument erstellen, seinen Inhalt entfernen und dann das Quelldokument daran anhängen.
 
-## الخطوة 1: قم بإعداد المشروع
+## Schritt 1: Richten Sie das Projekt ein
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words für .NET-Bibliothek installiert. Sie können es von der offiziellen Aspose-Website herunterladen oder den NuGet-Paketmanager verwenden, um es zu installieren.
+- Ein Dokumentverzeichnispfad, in dem sich die Quell- und Zieldokumente befinden.
 
-## الخطوة 2: قم بإنشاء مستند وجهة جديد
+## Schritt 2: Erstellen Sie ein neues Zieldokument
 
- إنشاء ملف`Document` كائن للمستند الوجهة.
+ Erstelle eine neue`Document` Objekt für das Zieldokument.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document();
 ```
 
-## الخطوة 3: إزالة المحتوى الموجود من المستند الوجهة
+## Schritt 3: Entfernen Sie vorhandenen Inhalt aus dem Zieldokument
 
-لضمان وجود مستند وجهة نظيف ، قم بإزالة كل المحتوى الموجود من المستند باستخدام امتداد`RemoveAllChildren` طريقة.
+Um ein sauberes Zieldokument zu gewährleisten, entfernen Sie mithilfe von alle vorhandenen Inhalte aus dem Dokument`RemoveAllChildren` Methode.
 
 ```csharp
 dstDoc.RemoveAllChildren();
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بالمستند الوجهة
+## Schritt 4: Hängen Sie das Quelldokument an das Zieldokument an
 
- قم بإلحاق محتويات المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة مع`ImportFormatMode.KeepSourceFormatting` خيار.
+ Hängen Sie den Inhalt des Quelldokuments mit an das Zieldokument an`AppendDocument` Methode mit`ImportFormatMode.KeepSourceFormatting` Möglichkeit.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند الوجهة
+## Schritt 5: Speichern Sie das Zieldokument
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Speichern Sie abschließend das geänderte Zieldokument mit`Save` Methode der`Document` Objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند إلى مستند وجهة فارغ باستخدام Aspose.Words for .NET.
+Damit ist die Implementierung des Anhängens eines Dokuments an ein leeres Zieldokument mithilfe von Aspose.Words für .NET abgeschlossen.
 
-### مثال على الكود المصدري لإلحاق مستند فارغ باستخدام Aspose.Words for .NET 
+### Beispielquellcode für Append Document To Blank mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	// المستند الوجهة ليس فارغًا ، وغالبًا ما يتسبب في ظهور صفحة فارغة قبل المستند الملحق.
-	// ويرجع ذلك إلى وجود قسم فارغ في المستند الأساسي وبدء تشغيل المستند الجديد في الصفحة التالية.
-	// قم بإزالة كل المحتوى من المستند الوجهة قبل الإلحاق.
+	// Das Zieldokument ist nicht leer, was häufig dazu führt, dass vor dem angehängten Dokument eine leere Seite angezeigt wird.
+	// Dies liegt daran, dass das Basisdokument einen leeren Abschnitt hat und das neue Dokument auf der nächsten Seite begonnen wird.
+	// Entfernen Sie vor dem Anhängen sämtliche Inhalte aus dem Zieldokument.
 	dstDoc.RemoveAllChildren();
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");

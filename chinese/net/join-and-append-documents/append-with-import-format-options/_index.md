@@ -1,70 +1,70 @@
 ---
-title: إلحاق بخيارات تنسيق الاستيراد
-linktitle: إلحاق بخيارات تنسيق الاستيراد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند بخيارات تنسيق الاستيراد باستخدام Aspose.Words for .NET.
+title: 附加导入格式选项
+linktitle: 附加导入格式选项
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何使用 Aspose.Words for .NET 使用导入格式选项附加文档。
 type: docs
 weight: 10
 url: /zh/net/join-and-append-documents/append-with-import-format-options/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق محتويات مستند بآخر بخيارات تنسيق الاستيراد. يوضح كود المصدر المقدم كيفية فتح المستندات المصدر والوجهة ، وتحديد خيارات تنسيق الاستيراد ، وإلحاق المستند المصدر بالمستند الوجهة.
+本教程解释了如何使用 Aspose.Words for .NET 通过导入格式选项将一个文档的内容附加到另一个文档。提供的源代码演示了如何打开源文档和目标文档、指定导入格式选项以及将源文档附加到目标文档。
 
-## الخطوة 1: قم بإعداد المشروع
+## 第 1 步：设置项目
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+确保您具有以下先决条件：
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- 安装了 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载或使用 NuGet 包管理器安装它。
+- 源文档和目标文档所在的文档目录路径。
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## 第 2 步：打开源文档和目标文档
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+使用打开源文档和目标文档`Document`类构造函数。代替`"YOUR DOCUMENT DIRECTORY"`使用文档目录的实际路径。
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## الخطوة 3: حدد خيارات تنسيق الاستيراد
+## 第 3 步：指定导入格式选项
 
- قم بإنشاء مثيل لـ`ImportFormatOptions` فئة لتحديد خيارات تنسيق الاستيراد. في هذا المثال ، نستخدم الامتداد`KeepSourceNumbering` للتأكد من استخدام الترقيم من المستند المصدر في حالة وجود تعارضات مع المستند الوجهة.
+创建一个实例`ImportFormatOptions`类来指定导入格式选项。在这个例子中，我们使用`KeepSourceNumbering`属性以确保在与目标文档发生冲突时使用源文档中的编号。
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بالمستند الوجهة
+## 第 4 步：将源文档附加到目标文档
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.UseDestinationStyles` كمعامل ثاني لاستخدام أنماط وتنسيق المستند الوجهة.
+使用`AppendDocument`附加源文档的目标文档的方法。经过`ImportFormatMode.UseDestinationStyles`作为第二个参数使用目标文档的样式和格式。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## الخطوة 5: احفظ المستند الوجهة
+## 第 5 步：保存目标文档
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+最后，使用保存修改后的目标文档`Save`的方法`Document`目的。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند بخيارات تنسيق الاستيراد باستخدام Aspose.Words for .NET.
+这样就完成了使用 Aspose.Words for .NET 附加带有导入格式选项的文档的实现。
 
-### مثال على الكود المصدري للإلحاق بخيارات تنسيق الاستيراد باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 的 Append With Import Format Options 示例源代码 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//حدد أنه في حالة تعارض الترقيم في المستندات المصدر والوجهة ،
-	// ثم سيتم استخدام الترقيم من المستند المصدر.
+	//指定如果源文档和目标文档中的编号冲突，
+	//然后将使用源文档中的编号。
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 

@@ -1,23 +1,23 @@
 ---
-title: البرمجة بالتوقيعات الرقمية
-linktitle: البرمجة بالتوقيعات الرقمية
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على مستند التوقيع ، وتوقيع المستند المشفر ، وإنشاء خط توقيع جديد وتوقيعه ، وتوقيع سطر التوقيع الحالي ، وتعيين معرف مزود التوقيع ،
+title: Programmation avec des signatures numériques
+linktitle: Programmation avec des signatures numériques
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Les didacticiels contiennent un document signé, la signature d'un document crypté, la création et la signature d'une nouvelle ligne de signature, la signature d'une ligne de signature existante, la définition de l'identifiant du fournisseur de signature,
 type: docs
 weight: 1440
 url: /fr/net/programming-with-digital-signatures/
 ---
-يقدم Aspose.Words for .NET دروسًا تعليمية شاملة لإرشادك خلال برمجة التوقيعات الرقمية في مستندات Word الخاصة بك. توفر لك هذه البرامج التعليمية خطوات مفصلة لإضافة وإزالة والتحقق من التوقيعات الرقمية. ستتعلم كيفية إنشاء مفاتيح التوقيع وتطبيق التوقيعات الرقمية على المستندات الخاصة بك والتحقق من سلامة التوقيعات الموجودة. تمنحك البرامج التعليمية أيضًا تلميحات حول إدارة شهادات التوقيع وتخصيص إعدادات التوقيع وفقًا لاحتياجاتك الخاصة.
+Aspose.Words pour .NET propose des didacticiels complets pour vous guider dans la programmation des signatures numériques dans vos documents Word. Ces didacticiels vous fournissent des étapes détaillées pour ajouter, supprimer et vérifier des signatures numériques. Vous apprendrez à générer des clés de signature, à appliquer des signatures numériques à vos documents et à vérifier l'intégrité des signatures existantes. Les didacticiels vous donnent également des conseils sur la gestion des certificats de signature et la personnalisation des paramètres de signature en fonction de vos besoins spécifiques.
 
-باستخدام هذه البرامج التعليمية ، ستتمكن من إتقان ميزات التوقيع الرقمي لـ Aspose.Words for .NET وإضافة طبقة أمان إضافية إلى مستندات Word الخاصة بك. سواء كنت ترغب في توقيع العقود أو التقارير أو أنواع المستندات الأخرى ، ستزودك هذه البرامج التعليمية بالمعرفة اللازمة للتنفيذ الفعال للتوقيعات الرقمية في مشاريعك. اتبع الإرشادات خطوة بخطوة واستكشف الميزات المتقدمة لضمان صحة مستنداتك وسلامتها.
+Grâce à ces didacticiels, vous pourrez maîtriser les fonctionnalités de signature numérique d'Aspose.Words pour .NET et ajouter une couche de sécurité supplémentaire à vos documents Word. Que vous souhaitiez signer des contrats, des rapports ou d'autres types de documents, ces tutoriels vous fourniront les connaissances nécessaires pour implémenter efficacement les signatures numériques dans vos projets. Suivez les instructions étape par étape et explorez les fonctionnalités avancées pour garantir l'authenticité et l'intégrité de vos documents.
 
- ## دروس
-| عنوان | وصف |
+ ## Tutoriels
+| Titre | Description |
 | --- | --- |
-| [توقيع الوثيقة](./sign-document/) | تعرف على كيفية توقيع مستند Word رقميًا باستخدام Aspose.Words for .NET. |
-| [توقيع وثيقة مشفرة](./signing-encrypted-document/) | تعرف على كيفية التوقيع رقميًا على مستند مشفر باستخدام Aspose.Words for .NET. |
-| [إنشاء وتوقيع خط توقيع جديد](./creating-and-signing-new-signature-line/) | تعرف على كيفية إنشاء سطر توقيع جديد والتوقيع عليه في مستند Word باستخدام Aspose.Words for .NET. |
-| [توقيع خط التوقيع الحالي](./signing-existing-signature-line/) | تعرف على كيفية توقيع سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET. |
-| [قم بتعيين معرف موفر التوقيع](./set-signature-provider-id/) | تعرف على كيفية تعيين معرف موفر التوقيع في مستند Word باستخدام Aspose.Words for .NET. |
-| [إنشاء سطر توقيع جديد وتعيين معرف الموفر](./create-new-signature-line-and-set-provider-id/) | تعرف على كيفية إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستند Word باستخدام Aspose.Words for .NET. |
-| [الوصول والتحقق من التوقيع](./access-and-verify-signature/) | تعرف على كيفية الوصول إلى التوقيعات الرقمية والتحقق منها في مستند Word باستخدام Aspose.Words for .NET. |
+| [Signer le document](./sign-document/) | Apprenez à signer numériquement un document Word avec Aspose.Words pour .NET. |
+| [Signature d'un document crypté](./signing-encrypted-document/) | Apprenez à signer numériquement un document crypté avec Aspose.Words pour .NET. |
+| [Créer et signer une nouvelle ligne de signature](./creating-and-signing-new-signature-line/) | Apprenez à créer et à signer une nouvelle ligne de signature dans un document Word avec Aspose.Words pour .NET. |
+| [Signature de la ligne de signature existante](./signing-existing-signature-line/) | Apprenez à signer une ligne de signature existante dans un document Word avec Aspose.Words pour .NET. |
+| [Définir l'ID du fournisseur de signature](./set-signature-provider-id/) | Découvrez comment définir l'ID du fournisseur de signature dans un document Word avec Aspose.Words pour .NET. |
+| [Créer une nouvelle ligne de signature et définir l'identifiant du fournisseur](./create-new-signature-line-and-set-provider-id/) | Apprenez à créer une nouvelle ligne de signature et à définir l'ID du fournisseur dans un document Word avec Aspose.Words pour .NET. |
+| [Accéder et vérifier la signature](./access-and-verify-signature/) | Apprenez à accéder et à vérifier les signatures numériques dans un document Word avec Aspose.Words pour .NET. |

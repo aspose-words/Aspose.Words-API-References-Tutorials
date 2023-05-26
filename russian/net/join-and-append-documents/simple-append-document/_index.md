@@ -1,68 +1,68 @@
 ---
-title: مستند إلحاق بسيط
-linktitle: مستند إلحاق بسيط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الانضمام وإلحاق مستندات Word بتنسيق محفوظ باستخدام Aspose.Words for .NET.
+title: Простое добавление документа
+linktitle: Простое добавление документа
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как объединять и добавлять документы Word с сохраненным форматированием с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/join-and-append-documents/simple-append-document/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Simple Append Document في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها بدون خيارات إضافية.
+Этот учебник проведет вас через процесс использования функции простого добавления документа в Aspose.Words для .NET. Эта функция позволяет присоединять и добавлять документы Word без дополнительных параметров.
 
-## المتطلبات الأساسية
+## Предпосылки
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+Прежде чем начать, убедитесь, что у вас есть следующее:
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. Aspose.Words для .NET установлен. Вы можете загрузить его с веб-сайта Aspose или установить через NuGet.
+2. Visual Studio или любая другая среда разработки C#.
 
-## الخطوة 1: تهيئة دلائل المستندات
+## Шаг 1: Инициализируйте каталоги документов
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir` переменная на путь, где находятся ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## Шаг 2. Загрузите исходный и целевой документы
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ Далее вам нужно загрузить исходный и конечный документы с помощью Aspose.Words.`Document` сорт. Обновите имена файлов в`Document` конструктор в соответствии с именами ваших документов.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: قم بإلحاق المستند المصدر بمستند الوجهة
+## Шаг 3: добавьте исходный документ к целевому документу
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+ Теперь вы можете добавить исходный документ к целевому документу, используя`AppendDocument` метод`Document` сорт.`ImportFormatMode.KeepSourceFormatting` Параметр обеспечивает сохранение исходного форматирования во время операции добавления.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 4: احفظ المستند النهائي
+## Шаг 4: Сохраните окончательный документ
 
- أخيرًا ، احفظ المستند المدمج باستخدام ميزة Simple Append Document باستخدام ملحق`Save` طريقة`Document` فصل.
+ Наконец, сохраните объединенный документ с помощью функции простого добавления документа, используя`Save` метод`Document` сорт.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.SimpleAppendDocument.docx");
 ```
 
-### مثال على شفرة المصدر لـ Simple Append Document باستخدام Aspose.Words for .NET
+### Пример исходного кода для простого добавления документа с использованием Aspose.Words для .NET
 
-إليك شفرة المصدر الكاملة لميزة "Simple Append Document" في C # باستخدام Aspose.Words for .NET:
+Вот полный исходный код функции «Простое добавление документа» на C# с использованием Aspose.Words для .NET:
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بإلحاق المستند المصدر بالمستند الوجهة بدون استخدام خيارات إضافية.
+	// Добавьте исходный документ к целевому документу без дополнительных параметров.
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.SimpleAppendDocument.docx");
 ```
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Simple Append Document باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الحفاظ على تنسيق المصدر.
+Вот и все! Вы успешно реализовали функцию простого добавления документа с помощью Aspose.Words для .NET. Конечный документ будет содержать объединенный контент с сохранением исходного форматирования.

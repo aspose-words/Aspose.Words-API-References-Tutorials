@@ -1,42 +1,42 @@
 ---
-title: إزالة تذييلات رؤوس المصدر
-linktitle: إزالة تذييلات رؤوس المصدر
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة الرؤوس والتذييلات أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+title: 删除源页眉页脚
+linktitle: 删除源页眉页脚
+second_title: Aspose.Words for .NET API 参考
+description: 了解如何在使用 Aspose.Words for .NET 加入和附加 Word 文档时删除页眉和页脚。
 type: docs
 weight: 10
 url: /zh/net/join-and-append-documents/remove-source-headers-footers/
 ---
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة Remove Source Headers Footers في Aspose.Words for .NET. تتيح لك هذه الميزة الانضمام إلى مستندات Word وإلحاقها أثناء إزالة الرؤوس والتذييلات من المستند المصدر.
+本教程将指导您完成使用 Aspose.Words for .NET 的删除源页眉页脚功能的过程。此功能允许您加入和附加 Word 文档，同时从源文档中删除页眉和页脚。
 
-## المتطلبات الأساسية
+## 先决条件
 
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+在开始之前，请确保您具备以下条件：
 
-1. تم تثبيت Aspose.Words for .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير C # أخرى.
+1. 安装了 Aspose.Words for .NET。您可以从 Aspose 网站下载它或通过 NuGet 安装它。
+2. Visual Studio 或任何其他 C# 开发环境。
 
-## الخطوة 1: تهيئة دلائل المستندات
+## 第 1 步：初始化文档目录
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+首先，您需要设置文档目录的路径。修改值`dataDir`变量到您的文档所在的路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## 第 2 步：加载源文档和目标文档
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+接下来，您需要使用 Aspose.Words 加载源文档和目标文档`Document`班级。更新文件名在`Document`根据您的文档名称构造函数。
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إزالة الرؤوس والتذييلات من أقسام المستند المصدر
+## 第 3 步：从源文档节中删除页眉和页脚
 
- لإزالة الرؤوس والتذييلات من كل قسم في المستند المصدر ، يمكنك التكرار خلال الأقسام باستخدام ملف`foreach` حلقة واستدعاء`ClearHeadersFooters` طريقة.
+要从源文档的每个部分中删除页眉和页脚，您可以使用`foreach`循环并调用`ClearHeadersFooters`方法。
 
 ```csharp
 foreach (Section section in srcDoc.Sections)
@@ -45,51 +45,51 @@ foreach (Section section in srcDoc.Sections)
 }
 ```
 
-## الخطوة 4: تعطيل إعداد "LinkToPrevious" لـ HeadersFooters
+## 第 4 步：禁用 HeadersFooters 的“LinkToPrevious”设置
 
-حتى بعد مسح الرؤوس والتذييلات من المستند المصدر ، هناك احتمال أن يكون إعداد "LinkToPrevious"`HeadersFooters` لا يزال من الممكن تعيينها. لتجنب هذا السلوك ، تحتاج إلى تعيينه صراحةً على`false` للقسم الأول`HeadersFooters` ملكية.
+即使从源文档中清除了页眉和页脚之后，“LinkToPrevious”设置也有可能`HeadersFooters`仍然可以设置。为避免这种行为，您需要将其显式设置为`false`对于第一部分的`HeadersFooters`财产。
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
-## الخطوة 5: قم بإلحاق المستند المصدر بمستند الوجهة
+## 第 5 步：将源文档附加到目标文档
 
- الآن ، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting` تضمن المعلمة الحفاظ على تنسيق المصدر أثناء عملية الإلحاق.
+现在，您可以使用`AppendDocument`的方法`Document`班级。这`ImportFormatMode.KeepSourceFormatting`参数确保在追加操作期间保留源格式。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 6: احفظ المستند النهائي
+## 第 6 步：保存最终文档
 
- أخيرًا ، احفظ المستند المدمج مع تمكين ميزة Remove Source Headers Footers باستخدام ملحق`Save` طريقة`Document` فصل.
+最后，使用启用的删除源页眉页脚功能保存合并的文档`Save`的方法`Document`班级。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 ```
 
-### مثال على شفرة المصدر لإزالة تذييلات رؤوس المصدر باستخدام Aspose.Words for .NET 
+### 使用 Aspose.Words for .NET 删除源页眉页脚的示例源代码 
 
-إليك شفرة المصدر الكاملة لميزة "إزالة تذييلات رؤوس المصدر" في C # باستخدام Aspose.Words for .NET:
+以下是使用 Aspose.Words for .NET 在 C# 中“删除源页眉页脚”功能的完整源代码：
 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//文档目录的路径
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// قم بإزالة الرؤوس والتذييلات من كل قسم في المستند المصدر.
+	//从源文档的每个部分中删除页眉和页脚。
 	foreach (Section section in srcDoc.Sections)
 	{
 		section.ClearHeadersFooters();
 	}
-	// حتى بعد مسح الرؤوس والتذييلات من المستند المصدر ، فإن الإعداد "LinkToPrevious"
-	// لا يزال من الممكن تعيين HeadersFooters. سيؤدي هذا إلى استمرار الرؤوس والتذييلات من الوجهة
-	// وثيقة. يجب تعيين هذا على خطأ لتجنب هذا السلوك.
+	//即使在从源文档中清除了页眉和页脚之后，“LinkToPrevious”设置
+	//仍然可以设置 HeadersFooters。这将导致页眉和页脚从目的地继续
+	//文档。这应该设置为 false 以避免这种行为。
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 ```
-هذا كل شيء! لقد نجحت في تنفيذ ميزة Remove Source Headers Footers باستخدام Aspose.Words for .NET. سيحتوي المستند النهائي على المحتوى المدمج مع إزالة الرؤوس والتذييلات من المستند المصدر.
+就是这样！您已经使用 Aspose.Words for .NET 成功实现了删除源页眉页脚功能。最终文档将包含从源文档中删除页眉和页脚的合并内容。

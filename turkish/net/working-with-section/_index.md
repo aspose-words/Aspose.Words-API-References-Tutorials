@@ -1,30 +1,30 @@
 ---
-title: العمل مع القسم
-linktitle: العمل مع القسم
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على قسم إضافة ، وحذف قسم ، وحذف جميع الأقسام ، وإلحاق محتوى القسم ، وقسم استنساخ ، وقسم نسخ ، وحذف محتوى تذييل الصفحة ، وحذف محتوى القسم ، وتعديل إعداد الصفحة في جميع الأقسام والأقسام ، والوصول إلى الفهرس باستخدام Aspose.Words for .NET.
+title: Bölümle Çalışmak
+linktitle: Bölümle Çalışmak
+second_title: Aspose.Words for .NET API Referansı
+description: Öğreticiler, bölüm ekle, bölüm sil, tüm bölümleri sil, bölüm içeriğini ekle, bölümü klonla, bölümü kopyala, başlık alt bilgi içeriğini sil, bölüm içeriğini sil, tüm bölümlerde sayfa düzenini değiştir ve Aspose.Words for .NET kullanarak bölümlere dizinle erişim içerir.
 type: docs
 weight: 1220
 url: /tr/net/working-with-section/
 ---
-يوفر العمل مع الأقسام مورداً قيماً للمطورين الراغبين في إتقان العمل مع الأقسام في مستندات Word. توفر هذه البرامج التعليمية إرشادات خطوة بخطوة ، ونموذج التعليمات البرمجية ، وشروحات خطوة بخطوة لمساعدتك على فهم الميزات المتعلقة بالقسم واستخدامها بشكل فعال في Aspose.Words.
+Bölümlerle çalışmak, Word belgelerindeki bölümlerle çalışma konusunda uzmanlaşmak isteyen geliştiriciler için değerli bir kaynak sunar. Bu öğreticiler, Aspose.Words'te bölümlerle ilgili özellikleri anlamanıza ve etkili bir şekilde kullanmanıza yardımcı olmak için adım adım talimatlar, örnek kod ve adım adım açıklamalar sağlar.
 
-تغطي البرامج التعليمية أساسيات العمل مع الأقسام ، بما في ذلك إنشاء أقسام جديدة وإضافة محتوى وتغيير إعدادات التخطيط والمزيد. ستتعلم كيفية التعامل مع الأقسام لتخصيص بنية المستند وإنشاء تخطيطات احترافية.
+Öğreticiler, yeni bölümler oluşturma, içerik ekleme, düzen ayarlarını değiştirme ve daha fazlası dahil olmak üzere bölümlerle çalışmanın temellerini kapsar. Belge yapınızı özelleştirmek ve profesyonel mizanpajlar oluşturmak için bölümleri nasıl değiştireceğinizi öğreneceksiniz.
 
-تركز البرامج التعليمية أيضًا على حذف وتعديل الأقسام الموجودة. ستتعلم كيفية حذف أقسام معينة ، وإعادة ترتيب الأقسام ، وتغيير إعدادات التخطيط ، وتنفيذ عمليات متقدمة أخرى لتخصيص مستندات Word الخاصة بك وفقًا لاحتياجاتك الخاصة.
+Öğreticiler ayrıca mevcut bölümleri silmeye ve değiştirmeye odaklanır. Belirli bölümleri nasıl sileceğinizi, bölümleri yeniden düzenlemeyi, düzen ayarlarını değiştirmeyi ve Word belgelerinizi özel ihtiyaçlarınıza göre uyarlamak için diğer gelişmiş işlemleri gerçekleştirmeyi öğreneceksiniz.
 
-باتباع هذه البرامج التعليمية ، ستتمكن من إدارة الأقسام في مستندات Word بسهولة باستخدام Aspose.Words for .NET. سواء كنت ترغب في إنشاء مستندات جديدة أو تعديل مستندات موجودة أو تخصيص أقسام ، فإن هذه البرامج التعليمية ستزودك بالمعرفة والمهارات اللازمة لإنجاز هذه المهام بنجاح.
+Bu eğitimleri takip ederek, Aspose.Words for .NET'i kullanarak Word belgelerinizdeki bölümleri kolayca yönetebileceksiniz. İster yeni belgeler oluşturmak, ister var olan belgeleri değiştirmek veya bölümleri özelleştirmek isteyin, bu eğitimler size bu görevleri başarıyla gerçekleştirmeniz için gereken bilgi ve becerileri sağlayacaktır.
 
- ## دروس
-| عنوان | وصف |
+ ## Öğreticiler
+| Başlık | Tanım |
 | --- | --- |
-| [إضافة قسم](./add-section/) | في هذا البرنامج التعليمي ، تعرف على كيفية إضافة قسم إلى مستند Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة لهيكلة المستند الخاص بك. |
-| [حذف القسم](./delete-section/) | في هذا البرنامج التعليمي ، تعرف على كيفية إزالة قسم معين من مستند Word باستخدام Aspose.Words for .NET. |
-| [حذف كافة الأقسام](./delete-all-sections/) | في هذا البرنامج التعليمي ، تعرف على كيفية إزالة جميع الأقسام من مستند Word باستخدام Aspose.Words for .NET. |
-| [إلحاق محتوى القسم](./append-section-content/) | في هذا البرنامج التعليمي ، تعرف على كيفية إضافة محتوى إلى أقسام معينة من مستند Word باستخدام Aspose.Words for .NET.  |
-| [قسم الاستنساخ](./clone-section/) | في هذا البرنامج التعليمي ، تعرف على كيفية استنساخ قسم في مستند Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
-| [قسم النسخ](./copy-section/) | في هذا البرنامج التعليمي ، تعرف على كيفية نسخ قسم من مستند Word إلى مستند آخر باستخدام Aspose.Words for .NET. |
-| [حذف محتوى رأس التذييل](./delete-header-footer-content/) | في هذا البرنامج التعليمي ، تعرف على كيفية إزالة محتوى الرأس والتذييل من مستند Word باستخدام Aspose.Words for .NET.  |
-| [حذف محتوى القسم](./delete-section-content/) | في هذا البرنامج التعليمي ، تعرف على كيفية حذف المحتوى من قسم معين من مستند Word باستخدام Aspose.Words for .NET. |
-| [تعديل إعداد الصفحة في جميع الأقسام](./modify-page-setup-in-all-sections/) | في هذا البرنامج التعليمي ، تعرف على كيفية تعديل إعداد الصفحة في جميع أقسام مستند Word باستخدام Aspose.Words for .NET. |
-| [الوصول إلى الأقسام حسب الفهرس](./sections-access-by-index/) | في هذا البرنامج التعليمي ، تعرف على كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس وتغيير إعداداتها باستخدام Aspose.Words for .NET. |
+| [Bölüm Ekle](./add-section/) | Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesine nasıl bölüm ekleyeceğinizi öğrenin. Belgenizi yapılandırmak için adım adım kılavuz. |
+| [Bölümü Sil](./delete-section/) | Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinden belirli bir bölümün nasıl kaldırılacağını öğrenin. |
+| [Tüm Bölümleri Sil](./delete-all-sections/) | Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki tüm bölümleri nasıl kaldıracağınızı öğrenin. |
+| [Bölüm İçeriğini Ekle](./append-section-content/) | Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinin belirli bölümlerine nasıl içerik ekleyeceğinizi öğrenin.  |
+| [Klon Bölümü](./clone-section/) | Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir bölümün nasıl kopyalanacağını öğrenin. Adım adım rehber. |
+| [Bölümü Kopyala](./copy-section/) | Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir bölümün başka bir belgeye nasıl kopyalanacağını öğrenin. |
+| [Üstbilgi Altbilgi İçeriğini Sil](./delete-header-footer-content/) | Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinden üstbilgi ve altbilgi içeriğinin nasıl kaldırılacağını öğrenin.  |
+| [Bölüm İçeriğini Sil](./delete-section-content/) | Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinin belirli bir bölümündeki içeriğin nasıl silineceğini öğrenin. |
+| [Tüm Bölümlerde Sayfa Düzenini Değiştirin](./modify-page-setup-in-all-sections/) | Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinin tüm bölümlerindeki sayfa düzenini nasıl değiştireceğinizi öğrenin. |
+| [Dizine Göre Bölümlere Erişim](./sections-access-by-index/) | Bu öğreticide, bir Word belgesinin bölümlerine dizine göre nasıl erişileceğini ve Aspose.Words for .NET ile bunların ayarlarını nasıl değiştireceğinizi öğrenin. |

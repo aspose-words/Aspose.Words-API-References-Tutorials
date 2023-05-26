@@ -1,37 +1,37 @@
 ---
-title: إدراج جدول من Html
-linktitle: إدراج جدول من Html
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج جدول من HTML في مستند Word باستخدام Aspose.Words for .NET.
+title: Insérer un tableau à partir de HTML
+linktitle: Insérer un tableau à partir de HTML
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer un tableau HTML dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/insert-table-from-html/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إدراج جدول في مستند Word من HTML باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بنهاية هذا البرنامج التعليمي ، ستتمكن من إدراج جداول من HTML في مستندات Word برمجيًا.
+Dans ce tutoriel, nous allons apprendre à insérer un tableau dans un document Word à partir de HTML en utilisant Aspose.Words pour .NET. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous serez en mesure d'insérer des tableaux HTML dans vos documents Word par programmation.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Étape 1 : configuration du projet
+1. Lancez Visual Studio et créez un nouveau projet C#.
+2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+## Etape 2 : Création du document et initialisation du générateur de document
+Pour commencer à travailler avec le document et le générateur de documents, suivez ces étapes :
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة
+// création de documents
 Document doc = new Document();
 
-// قم بتهيئة منشئ المستندات
+// Initialiser le générateur de documents
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Assurez-vous de remplacer "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin d'accès réel à votre répertoire de documents.
 
-## الخطوة 3: إدراج الجدول من HTML
-بعد ذلك ، سنقوم بإدخال الجدول في المستند باستخدام كود HTML. استخدم الكود التالي:
+## Étape 3 : Insertion du tableau depuis HTML
+Ensuite, nous allons insérer le tableau dans le document à l'aide du code HTML. Utilisez le code suivant :
 
 ```csharp
 builder.InsertHtml("<table>" +
@@ -46,26 +46,26 @@ builder.InsertHtml("<table>" +
 "</table>");
 ```
 
- هنا نستخدم ملف`InsertHtml` طريقة منشئ المستند لإدراج HTML الذي يحتوي على الجدول. ينشئ HTML المحدد جدولًا من صفين وخليتين في كل صف. يمكنك تخصيص محتوى الجدول عن طريق تعديل كود HTML وفقًا لاحتياجاتك.
+ Ici on utilise le`InsertHtml` méthode du générateur de document pour insérer le code HTML contenant le tableau. Le code HTML spécifié crée un tableau avec deux lignes et deux cellules dans chaque ligne. Vous pouvez personnaliser le contenu du tableau en modifiant le code HTML selon vos besoins.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا ، نحتاج إلى حفظ المستند المعدل مع إدراج الجدول من HTML. استخدم الكود التالي:
+## Étape 4 : Enregistrer le document modifié
+Enfin, nous devons enregistrer le document modifié avec le tableau inséré depuis HTML. Utilisez le code suivant :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour le document de sortie.
 
-### نموذج التعليمات البرمجية المصدر لـ Insert Table From Html باستخدام Aspose.Words for .NET 
+### Exemple de code source pour Insert Table From Html en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// لاحظ أن AutoFitSettings لا ينطبق على الجداول المدرجة من HTML.
+	// Notez qu'AutoFitSettings ne s'applique pas aux tableaux insérés à partir de HTML.
 	builder.InsertHtml("<table>" +
 					   "<tr>" +
 					   "<td>Row 1, Cell 1</td>" +
@@ -79,5 +79,5 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 	doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إدراج جدول في مستند Word من HTML باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ كود C # المقدم ، يمكنك إدراج جداول من HTML في مستندات Word برمجيًا. تتيح لك هذه الميزة تحويل واستيراد البيانات الجدولية من مصادر HTML إلى مستندات Word الخاصة بك.
+## Conclusion
+Dans ce didacticiel, nous avons appris à insérer un tableau dans un document Word à partir de HTML à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez insérer des tableaux HTML dans vos documents Word par programmation. Cette fonctionnalité vous permet de convertir et d'importer des données tabulaires à partir de sources HTML dans vos documents Word.

@@ -1,61 +1,61 @@
 ---
-title: تعطيل تضمين خطوط Windows
-linktitle: تعطيل تضمين خطوط Windows
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل تضمين خطوط Windows عند تحويل المستندات إلى PDF باستخدام Aspose.Words for .NET.
+title: Gömülü Windows Yazı Tiplerini Devre Dışı Bırak
+linktitle: Gömülü Windows Yazı Tiplerini Devre Dışı Bırak
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET ile belgeleri PDF'ye dönüştürürken Windows yazı tipi gömmeyi nasıl devre dışı bırakacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر خطوات تعطيل تضمين خطوط Windows في مستند PDF باستخدام Aspose.Words for .NET. من خلال تعطيل دمج الخط ، يمكنك تقليل حجم ملف PDF الذي تم إنشاؤه. اتبع الخطوات التالية:
+Bu eğitimde, Aspose.Words for .NET ile bir PDF belgesine Windows yazı tipi gömmeyi devre dışı bırakma adımlarında size yol göstereceğiz. Yazı tipi yerleştirmeyi devre dışı bırakarak oluşturulan PDF dosyasının boyutunu azaltabilirsiniz. Aşağıdaki adımları takip et:
 
-## الخطوة 1: تحميل المستند
+## 1. Adım: Belgeyi yükleme
 
-ابدأ بتحميل المستند الذي تريد تحويله إلى PDF:
+PDF'ye dönüştürmek istediğiniz belgeyi yükleyerek başlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح للمستند الخاص بك.
+Belgenize giden doğru yolu belirttiğinizden emin olun.
 
-## الخطوة 2: تعيين خيارات حفظ PDF
+## 2. Adım: PDF kaydetme seçeneklerini ayarlayın
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وحدد كيفية تضمين الخطوط:
+PdfSaveOptions sınıfının bir örneğini oluşturun ve yazı tiplerinin nasıl gömüleceğini belirtin:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
 ```
 
-يتيح لك هذا الخيار إلغاء تنشيط تكامل خطوط Windows في ملف PDF الذي تم إنشاؤه.
+Bu seçenek, oluşturulan PDF dosyasında Windows yazı tiplerinin entegrasyonunu devre dışı bırakmanıza olanak tanır.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## 3. Adım: Belgeyi PDF'ye Dönüştürün
 
- استخدم ال`Save` طريقة تحويل المستند إلى PDF مع تحديد خيارات التحويل:
+ Kullan`Save` dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemi:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Dönüştürülen PDF'yi kaydetmek için doğru yolu belirttiğinizden emin olun.
 
-### مثال على شفرة المصدر لـ Disable Embed Windows Fonts باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanarak Windows Yazı Tiplerini Gömmeyi Devre Dışı Bırakmak için örnek kaynak kodu
 
-إليك كود المصدر الكامل لتعطيل تضمين خطوط Windows في مستند PDF باستخدام Aspose.Words for .NET:
+Aspose.Words for .NET ile Windows yazı tiplerini bir PDF belgesine gömmeyi devre dışı bırakmak için tam kaynak kodu burada:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Belgeler dizininin yolu.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
-	// سيتم حفظ ملف PDF الناتج بدون تضمين خطوط Windows القياسية.
+	// Çıktı PDF'si, standart Windows yazı tiplerini gömmeden kaydedilecektir.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 
 ```
-باتباع هذه الخطوات ، يمكنك بسهولة تعطيل دمج خطوط Windows في مستند PDF باستخدام Aspose.Words for .NET.
+Bu adımları izleyerek, Windows yazı tiplerinin Aspose.Words for .NET ile bir PDF belgesine gömülmesini kolayca devre dışı bırakabilirsiniz.
 

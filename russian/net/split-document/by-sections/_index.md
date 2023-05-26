@@ -1,33 +1,33 @@
 ---
-title: حسب الأقسام
-linktitle: حسب الأقسام
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تقسيم مستند Word إلى أقسام منفصلة باستخدام Aspose.Words for .NET مع مثال رمز كامل.
+title: По разделам
+linktitle: По разделам
+second_title: Справочник по API Aspose.Words для .NET
+description: Узнайте, как разделить документ Word на отдельные разделы с помощью Aspose.Words для .NET с полным примером кода.
 type: docs
 weight: 10
 url: /ru/net/split-document/by-sections/
 ---
 
-في هذا المثال ، سنوضح لك كيفية تقسيم مستند Word إلى أقسام منفصلة باستخدام ميزة حسب الأقسام في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم كود المصدر والحصول على مستندات منفصلة لكل قسم.
+В этом примере мы покажем вам, как разделить документ Word на отдельные разделы, используя функцию «По разделам» Aspose.Words для .NET. Выполните следующие шаги, чтобы понять исходный код и получить отдельные документы для каждого раздела.
 
-## الخطوة 1: تحميل المستند
+## Шаг 1: Загрузка документа
 
-للبدء ، نحتاج إلى تحديد دليل المستند الخاص بك وتحميل المستند في كائن المستند. إليك الطريقة:
+Для начала нам нужно указать каталог вашего документа и загрузить документ в объект Document. Вот как:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```
 
-## الخطوة 2: قسّم المستند إلى أقسام
+## Шаг 2: Разделите документ на разделы
 
-سنقوم الآن بالتكرار خلال كل قسم من المستند وتقسيم المستند إلى أجزاء أصغر ، قسمًا قسمًا. هيريس كيفية القيام بذلك:
+Теперь мы пройдемся по каждому разделу документа и разобьем документ на более мелкие части, раздел за разделом. Вот как это сделать:
 
 ```csharp
 for (int i = 0; i < doc. Sections. Count; i++)
 {
-// قسّم المستند إلى أجزاء أصغر ، في هذه الحالة ، افصله حسب القسم.
+// Разделите документ на более мелкие части, в данном случае разделив его по разделам.
 Section section = doc.Sections[i].Clone();
 
 Document newDoc = new Document();
@@ -36,24 +36,24 @@ newDoc.Sections.Clear();
 Section newSection = (Section) newDoc.ImportNode(section, true);
 newDoc.Sections.Add(newSection);
 
-// احفظ كل قسم كمستند منفصل.
+// Сохраните каждый раздел как отдельный документ.
 newDoc.Save(dataDir + $"SplitDocument.ParSections_{i}.docx");
 }
 ```
 
-### مثال على شفرة المصدر لـ By Sections باستخدام Aspose.Words for .NET
+### Пример исходного кода для разделов с использованием Aspose.Words для .NET
 
-فيما يلي كود المصدر الكامل لميزة By Sections في Aspose.Words for .NET:
+Вот полный исходный код функции «По разделам» Aspose.Words для .NET:
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Путь к каталогу документов.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(MyDir + "Big document.docx");
 
 	for (int i = 0; i < doc.Sections.Count; i++)
 	{
-		// قسّم المستند إلى أجزاء أصغر ، في هذه الحالة ، قسّم حسب القسم.
+		// Разделите документ на более мелкие части, в данном случае на разделы.
 		Section section = doc.Sections[i].Clone();
 
 		Document newDoc = new Document();
@@ -62,13 +62,13 @@ newDoc.Save(dataDir + $"SplitDocument.ParSections_{i}.docx");
 		Section newSection = (Section) newDoc.ImportNode(section, true);
 		newDoc.Sections.Add(newSection);
 
-		// احفظ كل قسم كمستند منفصل.
+		// Сохраните каждый раздел как отдельный документ.
 		newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 	}
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من تقسيم مستند Word إلى أقسام منفصلة باستخدام Aspose.Words for .NET.
+С помощью этого кода вы сможете разделить документ Word на отдельные разделы, используя Aspose.Words для .NET.
 
-الآن يمكنك العمل بسهولة مع أقسام محددة.
+Теперь вы можете легко работать с конкретными разделами.
 

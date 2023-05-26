@@ -1,28 +1,28 @@
 ---
-title: أنماط الوصول
-linktitle: أنماط الوصول
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية الوصول إلى أنماط المستندات باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل للتعامل مع أنماط المستندات الخاصة بك.
+title: Åtkomststilar
+linktitle: Åtkomststilar
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du kommer åt dokumentstilar med Aspose.Words för .NET. Komplett handledning för att manipulera stilarna i dina dokument.
 type: docs
 weight: 10
 url: /sv/net/programming-with-styles-and-themes/access-styles/
 ---
 
-في هذا البرنامج التعليمي ، سوف نستكشف الكود المصدري C # المقدم للوصول إلى أنماط المستندات باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة الحصول على المجموعة الكاملة من الأنماط الموجودة في المستند.
+I den här handledningen kommer vi att utforska den medföljande C#-källkoden för att komma åt dokumentstilar med Aspose.Words för .NET. Den här funktionen låter dig få hela samlingen av stilar som finns i dokumentet.
 
-## الخطوة الأولى: تهيئة البيئة
+## Steg 1: Sätta upp miljön
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Innan du börjar, se till att du har ställt in din utvecklingsmiljö med Aspose.Words för .NET. Se till att du har lagt till nödvändiga referenser och importerat lämpliga namnområden.
 
-## الخطوة 2: إنشاء المستند
+## Steg 2: Skapa dokumentet
 
 ```csharp
 Document doc = new Document();
 ```
 
- في هذه الخطوة نقوم بإنشاء ملف`Document` هدف.
+ I detta steg skapar vi en ny tom`Document` objekt.
 
-## الخطوة 3: الوصول إلى مجموعة الأنماط
+## Steg 3: Få tillgång till stilsamlingen
 
 ```csharp
 string styleName = "";
@@ -30,9 +30,9 @@ string styleName = "";
 StyleCollection styles = doc.Styles;
 ```
 
- في هذه الخطوة ، نصل إلى مجموعة أنماط المستند باستخدام امتداد`Styles` ملكية. تحتوي هذه المجموعة على جميع الأنماط الموجودة في المستند.
+ I det här steget kommer vi åt dokumentets stilsamling med hjälp av`Styles` fast egendom. Den här samlingen innehåller alla stilar som finns i dokumentet.
 
-## الخطوة 4: تصفح الأنماط
+## Steg 4: Bläddra bland stilar
 
 ```csharp
 foreach(Style style in styles)
@@ -50,18 +50,18 @@ foreach(Style style in styles)
 }
 ```
 
- في هذه الخطوة الأخيرة ، نقوم بالتكرار خلال كل نمط في المجموعة باستخدام ملف`foreach`حلقة. نعرض اسم كل نمط على وحدة التحكم ، وربطها بفواصل لتسهيل القراءة.
+ I det här sista steget går vi igenom varje stil i kollektionen med hjälp av en`foreach`slinga. Vi visar namnet på varje stil på konsolen och sammanfogar dem med kommatecken för bättre läsbarhet.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر للوصول إلى الأنماط في مستند وعرض أسمائها على وحدة التحكم. يمكن أن تكون هذه الميزة مفيدة لتحليل الأنماط في مستند ، أو إجراء عمليات محددة على أنماط معينة ، أو ببساطة الحصول على معلومات حول الأنماط المتاحة.
+Nu kan du köra källkoden för att komma åt stilar i ett dokument och visa deras namn på konsolen. Den här funktionen kan vara användbar för att analysera stilar i ett dokument, utföra specifika operationer på vissa stilar eller helt enkelt få information om tillgängliga stilar.
 
-### نموذج التعليمات البرمجية المصدر لأنماط الوصول باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Access Styles med Aspose.Words för .NET 
 ```csharp
 
 Document doc = new Document();
 
 string styleName = "";
 
-// احصل على مجموعة الأنماط من المستند.
+// Få stilsamling från dokumentet.
 StyleCollection styles = doc.Styles;
 foreach (Style style in styles)
 {
@@ -80,10 +80,10 @@ foreach (Style style in styles)
         
 ```
 
-## خاتمة
+## Slutsats
 
-في هذا البرنامج التعليمي ، استكشفنا وظيفة الوصول إلى أنماط المستندات باستخدام Aspose.Words for .NET. من خلال الوصول إلى مجموعة الأنماط ، تمكنا من الحصول على القائمة الكاملة للأنماط الموجودة في المستند.
+I den här handledningen utforskade vi funktionaliteten för att komma åt dokumentstilar med Aspose.Words för .NET. Genom att komma åt stilsamlingen kunde vi få hela listan över stilar som finns i dokumentet.
 
-يمكن أن يكون الوصول إلى أنماط المستندات مفيدًا في العديد من السيناريوهات ، مثل المعالجة المحددة لأنماط معينة ، أو تحليل أنماط الإحصائيات أو المعالجة الإضافية ، أو ببساطة للحصول على معلومات حول الأنماط المستخدمة.
+Att komma åt dokumentstilar kan vara användbart i många scenarier, såsom specifik manipulation av vissa stilar, analys av stilar för statistik eller vidare bearbetning, eller helt enkelt för att få information om de stilar som används.
 
-يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية للوصول إلى عناصر مختلفة من المستند ، بما في ذلك الأنماط. يمكنك دمج هذه الوظيفة في مشاريعك لإدارة أنماط المستندات الخاصة بك بكفاءة.
+Aspose.Words för .NET tillhandahåller ett kraftfullt API för åtkomst till olika delar av ett dokument, inklusive stilar. Du kan integrera den här funktionen i dina projekt för att effektivt hantera stilarna i dina dokument.

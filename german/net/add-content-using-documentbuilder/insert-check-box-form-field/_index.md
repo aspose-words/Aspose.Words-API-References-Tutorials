@@ -1,43 +1,43 @@
 ---
-title: أدخل حقل نموذج خانة اختيار
-linktitle: أدخل حقل نموذج خانة اختيار
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج حقول نموذج خانة الاختيار في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
+title: Kontrollkästchen-Formularfeld einfügen
+linktitle: Kontrollkästchen-Formularfeld einfügen
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Kontrollkästchen-Formularfelder in Word-Dokumente einfügen. Schritt für Schritt Anleitung.
 type: docs
 weight: 10
 url: /de/net/add-content-using-documentbuilder/insert-check-box-form-field/
 ---
 
-في هذا البرنامج التعليمي الشامل ، ستتعلم كيفية إدراج حقل نموذج خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. سنوجهك خلال العملية ونزودك بمقتطفات كود C # الضرورية. بنهاية هذا الدليل ، ستتمكن من إضافة حقول نموذج مربعات الاختيار بخصائص قابلة للتخصيص إلى مستنداتك.
+In diesem umfassenden Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET ein Kontrollkästchen-Formularfeld in ein Word-Dokument einfügen. Wir führen Sie durch den Prozess und stellen Ihnen die notwendigen C#-Code-Snippets zur Verfügung. Am Ende dieses Leitfadens werden Sie in der Lage sein, Ihren Dokumenten Kontrollkästchen-Formularfelder mit anpassbaren Eigenschaften hinzuzufügen.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Voraussetzungen
+Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+- Aspose.Words für .NET-Bibliothek auf Ihrem System installiert.
 
-## الخطوة 1: إنشاء مستند جديد و DocumentBuilder
-للبدء ، قم بإنشاء مستند جديد باستخدام فئة المستند وتهيئة كائن DocumentBuilder:
+## Schritt 1: Erstellen Sie ein neues Dokument und einen neuen DocumentBuilder
+Erstellen Sie zunächst ein neues Dokument mit der Document-Klasse und initialisieren Sie ein DocumentBuilder-Objekt:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل حقل نموذج خانة اختيار
-بعد ذلك ، استخدم طريقة InsertCheckBox لفئة DocumentBuilder لإدراج حقل نموذج خانة اختيار. أدخل الاسم والحالة المحددة والحالة الافتراضية ومعلمات الحجم كوسائط:
+## Schritt 2: Fügen Sie ein Kontrollkästchen-Formularfeld ein
+Als nächstes verwenden Sie die Methode „InsertCheckBox“ der Klasse „DocumentBuilder“, um ein Kontrollkästchen-Formularfeld einzufügen. Geben Sie die Parameter Name, Prüfstatus, Standardstatus und Größe als Argumente an:
 
 ```csharp
 builder.InsertCheckBox("CheckBox", true, true, 0);
 ```
 
-## الخطوة 3: احفظ المستند
-بعد إدراج حقل نموذج خانة الاختيار ، احفظ المستند في ملف باستخدام طريقة Save لفئة المستند:
+## Schritt 3: Speichern Sie das Dokument
+Nachdem Sie das Kontrollkästchen-Formularfeld eingefügt haben, speichern Sie das Dokument mit der Save-Methode der Document-Klasse in einer Datei:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx");
 ```
 
-### مثال كود المصدر لحقل نموذج خانة اختيار باستخدام Aspose.Words for .NET
-فيما يلي الكود المصدري الكامل لإدخال حقل نموذج مربع الاختيار باستخدام Aspose.Words for .NET:
+### Beispielquellcode für das Formularfeld „Kontrollkästchen einfügen“ mit Aspose.Words für .NET
+Hier ist der vollständige Quellcode zum Einfügen eines Kontrollkästchen-Formularfelds mit Aspose.Words für .NET:
 
 ```csharp
 
@@ -50,7 +50,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.
 	
 ```
 
-تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.
+Denken Sie daran, den Code an Ihre spezifischen Anforderungen anzupassen und ihn bei Bedarf um zusätzliche Funktionen zu erweitern.
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية إدراج حقل نموذج خانة اختيار في مستند Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن تحسين مستنداتك باستخدام حقول نموذج مربعات الاختيار التفاعلية.
+## Abschluss
+Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET ein Kontrollkästchen-Formularfeld in ein Word-Dokument einfügen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie Ihre Dokumente jetzt mit interaktiven Kontrollkästchen-Formularfeldern erweitern.

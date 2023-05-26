@@ -1,71 +1,71 @@
 ---
-title: إلحاق مستند فارغ
-linktitle: إلحاق مستند فارغ
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند إلى مستند وجهة فارغ في Aspose.Words for .NET.
+title: Belgeyi Boşluğa Ekle
+linktitle: Belgeyi Boşluğa Ekle
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'te bir belgeyi boş bir hedef belgeye nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/append-document-to-blank/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق محتويات مستند واحد بمستند وجهة فارغ. يوضح كود المصدر المقدم كيفية إنشاء مستند جديد وإزالة محتواه ثم إلحاق المستند المصدر به.
+Bu eğitim, bir belgenin içeriğini boş bir hedef belgeye eklemek için Aspose.Words for .NET'in nasıl kullanılacağını açıklar. Sağlanan kaynak kodu, yeni bir belgenin nasıl oluşturulacağını, içeriğinin nasıl kaldırılacağını ve ardından kaynak belgenin buna nasıl ekleneceğini gösterir.
 
-## الخطوة 1: قم بإعداد المشروع
+## 1. Adım: Projeyi kurun
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words for .NET kitaplığı yüklendi. Resmi Aspose web sitesinden indirebilir veya yüklemek için NuGet paket yöneticisini kullanabilirsiniz.
+- Kaynak ve hedef belgelerin bulunduğu bir belge dizini yolu.
 
-## الخطوة 2: قم بإنشاء مستند وجهة جديد
+## 2. Adım: Yeni bir hedef belge oluşturun
 
- إنشاء ملف`Document` كائن للمستند الوجهة.
+ Yeni bir tane oluştur`Document` hedef belge için nesne.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document();
 ```
 
-## الخطوة 3: إزالة المحتوى الموجود من المستند الوجهة
+## 3. Adım: Mevcut içeriği hedef belgeden kaldırın
 
-لضمان وجود مستند وجهة نظيف ، قم بإزالة كل المحتوى الموجود من المستند باستخدام امتداد`RemoveAllChildren` طريقة.
+Temiz bir hedef belge sağlamak için, mevcut tüm içeriği belgeden kaldırın.`RemoveAllChildren` yöntem.
 
 ```csharp
 dstDoc.RemoveAllChildren();
 ```
 
-## الخطوة 4: قم بإلحاق المستند المصدر بالمستند الوجهة
+## 4. Adım: Kaynak belgeyi hedef belgeye ekleyin
 
- قم بإلحاق محتويات المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة مع`ImportFormatMode.KeepSourceFormatting` خيار.
+ kullanarak kaynak belgenin içeriğini hedef belgeye ekleyin.`AppendDocument` ile yöntem`ImportFormatMode.KeepSourceFormatting` seçenek.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ المستند الوجهة
+## 5. Adım: Hedef belgeyi kaydedin
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Son olarak, değiştirilen hedef belgeyi kullanarak kaydedin.`Save` yöntemi`Document` nesne.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند إلى مستند وجهة فارغ باستخدام Aspose.Words for .NET.
+Bu, Aspose.Words for .NET kullanılarak boş bir hedef belgeye belge ekleme uygulamasını tamamlar.
 
-### مثال على الكود المصدري لإلحاق مستند فارغ باستخدام Aspose.Words for .NET 
+### Aspose.Words for .NET kullanarak Belgeyi Boşluğa Ekleme için örnek kaynak kodu 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	// المستند الوجهة ليس فارغًا ، وغالبًا ما يتسبب في ظهور صفحة فارغة قبل المستند الملحق.
-	// ويرجع ذلك إلى وجود قسم فارغ في المستند الأساسي وبدء تشغيل المستند الجديد في الصفحة التالية.
-	// قم بإزالة كل المحتوى من المستند الوجهة قبل الإلحاق.
+	// Hedef belge boş değil, genellikle eklenen belgeden önce boş bir sayfanın görünmesine neden oluyor.
+	// Bunun nedeni, temel belgede boş bir bölümün olması ve yeni belgenin bir sonraki sayfada başlatılmasıdır.
+	// Eklemeden önce hedef belgedeki tüm içeriği kaldırın.
 	dstDoc.RemoveAllChildren();
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");

@@ -1,53 +1,53 @@
 ---
-title: التحويل إلى PDF 17
-linktitle: التحويل إلى PDF 17
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحويل المستندات إلى PDF 1.7 باستخدام Aspose.Words for .NET.
+title: Conversion en PDF 17
+linktitle: Conversion en PDF 17
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à convertir des documents au format PDF 1.7 avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/conversion-to-pdf-17/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك عبر خطوات التحويل إلى PDF 1.7 باستخدام Aspose.Words for .NET. يتيح لك التحويل إلى PDF 1.7 إنشاء ملفات PDF تتوافق مع معيار PDF 1.7. اتبع الخطوات التالية:
+Dans ce didacticiel, nous vous guiderons à travers les étapes de conversion au format PDF 1.7 avec Aspose.Words pour .NET. La conversion au format PDF 1.7 vous permet de générer des fichiers PDF conformes à la norme PDF 1.7. Suivez les étapes ci-dessous :
 
-## الخطوة 1: تحميل المستند
+## Étape 1 : Chargement du document
 
-ابدأ بتحميل المستند الذي تريد تحويله إلى PDF:
+Commencez par télécharger le document que vous souhaitez convertir en PDF :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-تأكد من تحديد المسار الصحيح للمستند الخاص بك.
+Assurez-vous de spécifier le chemin d'accès correct à votre document.
 
-## الخطوة 2: تعيين خيارات تحويل PDF
+## Étape 2 : Définir les options de conversion PDF
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وحدد إصدار معيار PDF الذي تريد استخدامه:
+Créez une instance de la classe PdfSaveOptions et spécifiez la version de la norme PDF que vous souhaitez utiliser :
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { Compliance = PdfCompliance.Pdf17 };
 ```
 
-يضمن هذا الخيار أن ملف PDF الذي تم إنشاؤه يتوافق مع معيار PDF 1.7.
+Cette option garantit que le fichier PDF généré est conforme à la norme PDF 1.7.
 
-## الخطوة 3: تحويل المستند إلى PDF
+## Étape 3 : Convertir le document en PDF
 
- استخدم ال`Save` طريقة تحويل المستند إلى PDF مع تحديد خيارات التحويل:
+ Utilisez le`Save` méthode pour convertir le document en PDF en spécifiant les options de conversion :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ConversionToPdf17.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Assurez-vous de spécifier le chemin d'accès correct pour enregistrer le PDF converti.
 
-### مثال على شفرة المصدر للتحويل إلى Pdf 17 باستخدام Aspose.Words for .NET
+### Exemple de code source pour la conversion en PDF 17 en utilisant Aspose.Words pour .NET
 
-إليك التعليمات البرمجية المصدر الكاملة للتحويل إلى PDF 1.7 باستخدام Aspose.Words for .NET:
+Voici le code source complet pour convertir en PDF 1.7 avec Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document(dataDir + "Rendering.docx");
 
@@ -57,5 +57,5 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ConversionToPdf17.pdf", saveOption
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة التحويل إلى PDF 1.7 باستخدام Aspose.Words for .NET.
+En suivant ces étapes, vous pouvez facilement convertir en PDF 1.7 avec Aspose.Words pour .NET.
 

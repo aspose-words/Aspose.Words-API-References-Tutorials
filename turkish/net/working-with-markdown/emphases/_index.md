@@ -1,35 +1,35 @@
 ---
-title: تأكيدات
-linktitle: تأكيدات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام التأكيدات (بالخط العريض والمائل) باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
+title: Vurgular
+linktitle: Vurgular
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET Adım adım kılavuz ile vurguları (kalın ve italik) nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/emphases/
 ---
 
-في هذا المثال ، سنشرح كيفية استخدام التأكيدات مع Aspose.Words for .NET. يتم استخدام التأكيدات للتأكيد على أجزاء معينة من النص ، مثل الخط الغامق والمائل.
+Bu örnekte vurguların Aspose.Words for .NET ile nasıl kullanılacağını açıklayacağız. vurgular, metnin kalın ve italik gibi belirli kısımlarını vurgulamak için kullanılır.
 
-## الخطوة 1: تهيئة المستند
+## 1. Adım: Belge başlatma
 
- أولاً ، سنهيئ المستند عن طريق إنشاء مثيل لـ`Document` فصل.
+ İlk olarak, bir örneğini oluşturarak belgeyi başlatacağız.`Document` sınıf.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: استخدام منشئ المستندات
+## 2. Adım: Bir belge oluşturucu kullanma
 
-بعد ذلك ، سنستخدم منشئ المستندات لإضافة محتوى إلى وثيقتنا.
+Ardından, belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إضافة نص مع التوكيدات
+## 3. Adım: Vurgularla metin ekleyin
 
-يمكننا إضافة نص تأكيدات عن طريق تغيير خصائص خط منشئ المستند. في هذا المثال ، نستخدم الخط الغامق والمائل للتأكيد على أجزاء مختلفة من النص.
+Belge oluşturucunun yazı tipi özelliklerini değiştirerek vurgu metni ekleyebiliriz. Bu örnekte, metnin farklı kısımlarını vurgulamak için kalın ve italik yazılar kullanıyoruz.
 
 ```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as emphases indicators.");
@@ -59,17 +59,17 @@ builder. Write(".");
 
 ```
 
-## الخطوة 4: حفظ المستند
+## 4. Adım: Belgeyi kaydetme
 
- أخيرًا ، يمكننا حفظ المستند بالتنسيق المطلوب. في هذا المثال ، نستخدم الامتداد`.md` التمديد لتنسيق Markdown.
+ Son olarak belgeyi istediğimiz formatta kaydedebiliriz. Bu örnekte,`.md` Markdown formatı için uzantı.
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
-تهنئة ! لقد تعلمت الآن كيفية استخدام التأكيدات مع Aspose.Words for .NET.
+Tebrikler! Artık Aspose.Words for .NET ile vurguları nasıl kullanacağınızı öğrendiniz.
 
-### مثال على شفرة المصدر للتأكيد باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Emphases için örnek kaynak kodu
 
 
 ```csharp

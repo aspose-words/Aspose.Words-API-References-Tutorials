@@ -1,63 +1,63 @@
 ---
-title: إدراج مستند في دمج المراسلات
-linktitle: إدراج مستند في دمج المراسلات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words for .NET.
+title: Insérer le document lors du publipostage
+linktitle: Insérer le document lors du publipostage
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à insérer un document dans un autre pendant le publipostage à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية إدراج مستند في مستند آخر أثناء دمج البريد باستخدام ميزة "إدراج مستند أثناء دمج المراسلات" في Aspose.Words for .NET. اتبع الخطوات أدناه لفهم كود المصدر وإجراء عملية إدراج المستند.
+Dans ce didacticiel, nous allons vous expliquer comment insérer un document dans un autre document lors du publipostage à l'aide de la fonctionnalité Insérer un document lors du publipostage d'Aspose.Words pour .NET. Suivez les étapes ci-dessous pour comprendre le code source et effectuer l'insertion du document.
 
-## الخطوة 1: تحميل المستند الرئيسي
+## Étape 1 : Chargement du document principal
 
-للبدء ، حدد الدليل للمستندات الخاصة بك وقم بتحميل المستند الرئيسي في كائن المستند. إليك الطريقة:
+Pour commencer, spécifiez le répertoire de vos documents et chargez le document principal dans un objet Document. Voici comment:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 ```
 
-## الخطوة 2: تكوين دمج المراسلات
+## Étape 2 : Configurer le publipostage
 
-لنقم الآن بتكوين دمج المراسلات وتحديد رد نداء دمج الحقول لإدراج مستند في مستند آخر. إليك الطريقة:
+Configurons maintenant le publipostage et spécifions le rappel de fusion de champ pour insérer un document dans un autre document. Voici comment:
 
 ```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
 ```
 
-## الخطوة 3: تشغيل دمج المراسلات
+## Étape 3 : Exécution du publipostage
 
-سنقوم بتشغيل دمج البريد من خلال توفير أسماء حقول الدمج والبيانات المقابلة. إليك الطريقة:
+Nous exécuterons le publipostage en fournissant les noms des champs de fusion et les données correspondantes. Voici comment:
 
 ```csharp
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-### مثال على شفرة المصدر لـ Insert Document At Mail Merge باستخدام Aspose.Words for .NET
+### Exemple de code source pour Insérer un document lors du publipostage à l'aide de Aspose.Words pour .NET
 
-فيما يلي رمز المصدر الكامل لميزة "إدراج مستند في دمج المراسلات" في Aspose.Words for .NET:
+Voici le code source complet de la fonction Insérer un document dans le publipostage d'Aspose.Words pour .NET :
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Chemin d'accès au répertoire des documents.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
 	mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-	//يحتوي المستند الرئيسي على حقل دمج يسمى "Document_1".
-	// تحتوي البيانات المقابلة لهذا الحقل على مسار مؤهل بالكامل إلى المستند.
-	// يجب إدراج ذلك في هذا المجال.
+	//Le document principal contient un champ de fusion appelé "Document_1".
+	// Les données correspondantes pour ce champ contiennent un chemin complet vers le document.
+	// Cela devrait être inséré dans ce champ.
 	mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 
 	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 
 ```
 
-باستخدام هذا الرمز ، ستتمكن من إدراج مستند في مستند آخر أثناء دمج البريد باستخدام Aspose.Words for .NET. سيتم حفظ المستند الناتج تحت اسم جديد
+Avec ce code, vous pourrez insérer un document dans un autre document lors du publipostage en utilisant Aspose.Words pour .NET. Le document résultant sera enregistré sous un nouveau nom
 
 
 

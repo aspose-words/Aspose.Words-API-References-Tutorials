@@ -1,57 +1,57 @@
 ---
-title: قم بتمكين تعطيل استبدال الخط
-linktitle: قم بتمكين تعطيل استبدال الخط
-second_title: Aspose.Words لمراجع .NET API
-description: في هذا البرنامج التعليمي ، تعرف على كيفية تمكين أو تعطيل استبدال الخط في مستند Word باستخدام Aspose.Words for .NET.
+title: Activer Désactiver la substitution de police
+linktitle: Activer Désactiver la substitution de police
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Dans ce didacticiel, découvrez comment activer ou désactiver la substitution de polices dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/enable-disable-font-substitution/
 ---
-في هذا البرنامج التعليمي ، سنرشدك إلى كيفية تمكين أو تعطيل استبدال الخط في مستند Word عند عرضه باستخدام مكتبة Aspose.Words لـ .NET. يتيح لك تمكين أو تعطيل استبدال الخط التحكم في ما إذا كان سيتم استبدال الخطوط المفقودة تلقائيًا بخط افتراضي. سنأخذك خطوة بخطوة لمساعدتك على فهم وتنفيذ الكود في مشروع .NET الخاص بك.
+Dans ce didacticiel, nous vous expliquerons comment activer ou désactiver la substitution de polices dans un document Word lors de son rendu à l'aide de la bibliothèque Aspose.Words pour .NET. L'activation ou la désactivation de la substitution de polices vous permet de contrôler si les polices manquantes sont automatiquement remplacées par une police par défaut. Nous vous guiderons étape par étape pour vous aider à comprendre et à implémenter le code dans votre projet .NET.
 
-## المتطلبات الأساسية
-قبل أن تبدأ ، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C #
-- تم تثبيت مكتبة Aspose.Words لـ .NET في مشروعك
-- مستند Word الذي تريد عرضه باستبدال الخط أو بدونه
+## Conditions préalables
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+- Une connaissance pratique du langage de programmation C#
+- La bibliothèque Aspose.Words pour .NET installée dans votre projet
+- Un document Word que vous souhaitez afficher avec ou sans substitution de police
 
-## الخطوة 1: تحديد دليل المستند
- أولاً ، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب.
+## Étape 1 : Définir le répertoire des documents
+ Tout d'abord, vous devez définir le chemin du répertoire vers l'emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة 2: تحميل المستند وتكوين إعدادات الخط
- بعد ذلك ، سنقوم بتحميل مستند Word الذي تريد عرضه وإنشاء مثيل لملف`FontSettings` فئة للتعامل مع إعدادات الخط. سنقوم بتعيين تجاوز الخط الافتراضي عن طريق تحديد اسم الخط في`DefaultFontName` وتعطيل تجاوز معلومات الخط بـ`Enabled` ضبط ل`false`.
+## Étape 2 : téléchargez le document et configurez les paramètres de police
+ Ensuite, nous chargerons le document Word que vous souhaitez rendre et créerons une instance du`FontSettings` classe pour gérer les paramètres de police. Nous allons définir le remplacement de police par défaut en spécifiant le nom de la police dans`DefaultFontName` et désactiver le remplacement des informations de police avec`Enabled` mis à`false`.
 
 ```csharp
-//قم بتحميل المستند
+//Charger le document
 Document doc = new Document(dataDir + "Rendering.docx");
 
-// تكوين إعدادات الخط
+// Configurer les paramètres de police
 FontSettings fontSettings = new FontSettings();
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
 fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
 
-// قم بتطبيق إعدادات الخط على المستند
+// Appliquer les paramètres de police au document
 doc.FontSettings = fontSettings;
 ```
 
-## الخطوة 3: احفظ المستند المقدم
-أخيرًا ، سنحفظ المستند الذي تم تقديمه ، والذي سيحترم إعدادات تجاوز الخط المحددة.
+## Étape 3 : Enregistrer le document rendu
+Enfin, nous enregistrerons le document rendu, qui respectera les paramètres de remplacement de police définis.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 
-### نموذج التعليمات البرمجية المصدر لـ Enable Disable Font Substitution باستخدام Aspose.Words for .NET 
+### Exemple de code source pour activer la substitution de polices désactivée à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -63,5 +63,5 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، رأينا كيفية تمكين أو تعطيل استبدال الخط في مستند Word عند عرضه باستخدام Aspose.Words for .NET. من خلال التحكم في استبدال الخط ، يمكنك التأثير على كيفية معالجة الخطوط المفقودة في المستندات المقدمة. لا تتردد في استخدام هذه الميزة لتخصيص إدارة الخطوط في مستندات Word الخاصة بك.
+## Conclusion
+Dans ce didacticiel, nous avons vu comment activer ou désactiver la substitution de polices dans un document Word lors de son rendu avec Aspose.Words pour .NET. En contrôlant la substitution des polices, vous pouvez influencer la manière dont les polices manquantes sont gérées dans vos documents rendus. N'hésitez pas à utiliser cette fonctionnalité pour personnaliser la gestion des polices dans vos documents Word.

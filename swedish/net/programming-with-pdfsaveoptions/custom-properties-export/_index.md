@@ -1,61 +1,61 @@
 ---
-title: تصدير خصائص مخصصة
-linktitle: تصدير خصائص مخصصة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تصدير الخصائص المخصصة عند تحويل المستندات إلى PDF باستخدام Aspose.Words for .NET.
+title: Export av anpassade egenskaper
+linktitle: Export av anpassade egenskaper
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du exporterar anpassade egenskaper när du konverterar dokument till PDF med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
 
-في هذا البرنامج التعليمي ، سنرشدك خلال الخطوات لتصدير الخصائص المخصصة للمستند باستخدام Aspose.Words for .NET. يتيح لك تصدير الخصائص المخصصة تضمين معلومات إضافية في مستند PDF الذي تم إنشاؤه. اتبع الخطوات التالية:
+I den här handledningen går vi igenom stegen för att exportera ett dokuments anpassade egenskaper med Aspose.Words för .NET. Genom att exportera anpassade egenskaper kan du inkludera ytterligare information i det genererade PDF-dokumentet. Följ stegen nedan:
 
-## الخطوة 1: إنشاء مستند وإضافة خصائص مخصصة
+## Steg 1: Skapa ett dokument och lägga till anpassade egenskaper
 
-ابدأ بإنشاء مثيل لفئة المستند:
+Börja med att skapa en instans av klassen Document:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## الخطوة 2: إضافة خصائص مخصصة
-بعد ذلك ، أضف الخصائص المخصصة المطلوبة. على سبيل المثال ، لإضافة خاصية "شركة" بالقيمة "Aspose" ، استخدم`Add` طريقة مجموعة CustomDocumentProperties:
+## Steg 2: Lägg till anpassade egenskaper
+Lägg sedan till önskade anpassade egenskaper. Till exempel, för att lägga till en "Company"-egenskap med värdet "Aspose", använd`Add` metod för CustomDocumentProperties-samlingen:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-يمكنك إضافة العديد من الخصائص المخصصة حسب الحاجة.
+Du kan lägga till så många anpassade egenskaper som behövs.
 
-## الخطوة 3: قم بتعيين خيارات تصدير PDF
+## Steg 3: Ställ in alternativ för PDF-export
 
-قم بإنشاء مثيل لفئة PdfSaveOptions وحدد كيفية تصدير الخصائص المخصصة:
+Skapa en instans av klassen PdfSaveOptions och ange hur anpassade egenskaper exporteras:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
 ```
 
-يتحكم هذا الخيار في تصدير الخصائص المخصصة عند التحويل إلى PDF.
+Det här alternativet styr exporten av anpassade egenskaper vid konvertering till PDF.
 
-## الخطوة 4: تحويل المستند إلى PDF
+## Steg 4: Konvertera dokument till PDF
 
- استخدم ال`Save` طريقة تحويل المستند إلى PDF مع تحديد خيارات التحويل:
+ Använd`Save` metod för att konvertera dokumentet till PDF med angivande av konverteringsalternativ:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
 ```
 
-تأكد من تحديد المسار الصحيح لحفظ ملف PDF المحول.
+Se till att ange rätt sökväg för att spara den konverterade PDF-filen.
 
-### مثال على شفرة المصدر لتصدير الخصائص المخصصة باستخدام Aspose.Words for .NET
+### Exempel på källkod för export av anpassade egenskaper med Aspose.Words för .NET
 
-إليك التعليمات البرمجية المصدر الكاملة لتصدير الخصائص المخصصة من مستند باستخدام Aspose.Words for .NET:
+Här är den fullständiga källkoden för att exportera anpassade egenskaper från ett dokument med Aspose.Words för .NET:
 
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
+	// Sökvägen till dokumentkatalogen.
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 	Document doc = new Document();
 	doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -66,5 +66,5 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveO
 
 ```
 
-باتباع هذه الخطوات ، يمكنك بسهولة تصدير الخصائص المخصصة للمستند عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
+Genom att följa dessa steg kan du enkelt exportera anpassade egenskaper för ett dokument när du konverterar till PDF med Aspose.Words för .NET.
 

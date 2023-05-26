@@ -1,81 +1,81 @@
 ---
-title: لا تقم بحفظ صورة نقطية
-linktitle: لا تقم بحفظ صورة نقطية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تعطيل حفظ الرموز النقطية للصور في مستندات Word باستخدام Aspose.Words for .NET.
+title: Bildaufzählung nicht speichern
+linktitle: Bildaufzählung nicht speichern
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie das Speichern von Bildaufzählungszeichen in Word-Dokumenten mit Aspose.Words für .NET deaktivieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 
-تعد الرموز النقطية للصور ميزة شائعة الاستخدام في مستندات Word لإضافة رموز نقطية مخصصة. ومع ذلك ، في بعض الحالات قد يكون من الضروري تعطيل تسجيل الصور النقطية عند معالجة المستندات باستخدام Aspose.Words Library for .NET. في هذا الدليل المفصل خطوة بخطوة ، سنشرح كيفية استخدام كود مصدر Aspose.Words C # لـ .NET لتعطيل حفظ الصور النقطية باستخدام خيارات حفظ DocSaveOptions.
+Bildaufzählungszeichen sind eine häufig verwendete Funktion in Word-Dokumenten, um benutzerdefinierte Aufzählungszeichen hinzuzufügen. In einigen Fällen kann es jedoch erforderlich sein, die Bildaufzählungsregistrierung zu deaktivieren, wenn Dokumente mithilfe der Aspose.Words-Bibliothek für .NET bearbeitet werden. In dieser Schritt-für-Schritt-Anleitung erklären wir, wie Sie den C#-Quellcode von Aspose.Words für .NET verwenden, um das Speichern von Bildaufzählungszeichen mithilfe der Speicheroptionen von DocSaveOptions zu deaktivieren.
 
-## فهم مكتبة Aspose.Words
+## Grundlegendes zur Aspose.Words-Bibliothek
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها وحمايتها في أنظمة أساسية مختلفة بما في ذلك .NET. يوفر العديد من الميزات لمعالجة المستندات ، مثل إدخال نص وتغيير التنسيق وإضافة أقسام وغير ذلك الكثير.
+Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten, Konvertieren und Schützen von Word-Dokumenten auf verschiedenen Plattformen, einschließlich .NET. Es bietet viele Funktionen zum Bearbeiten von Dokumenten, wie zum Beispiel das Einfügen von Text, das Ändern von Formatierungen, das Hinzufügen von Abschnitten und vieles mehr.
 
-## الخطوة 1: إعداد دليل المستندات
+## Schritt 1: Festlegen des Dokumentenverzeichnisses
 
-الخطوة الأولى هي تحديد الدليل حيث توجد المستندات الخاصة بك. يجب عليك تحديد مسار الدليل الكامل. على سبيل المثال :
+Der erste Schritt besteht darin, das Verzeichnis zu definieren, in dem sich Ihre Dokumente befinden. Sie müssen den vollständigen Verzeichnispfad angeben. Zum Beispiel :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Stellen Sie sicher, dass Sie „IHR DOKUMENTENVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis ersetzen.
 
-## الخطوة 2: تحميل المستند مع صورة نقطية
+## Schritt 2: Laden des Dokuments mit Bildaufzählungszeichen
 
-بعد ذلك ، تحتاج إلى تحميل المستند باستخدام الرموز النقطية للصور. استخدم فئة المستند لتحميل المستند من ملف. على سبيل المثال :
+Als nächstes müssen Sie das Dokument mit Bildaufzählungszeichen laden. Verwenden Sie die Document-Klasse, um das Dokument aus einer Datei zu laden. Zum Beispiel :
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-في هذا المثال نقوم بتحميل المستند من ملف "Image bullet points.docx"
+In diesem Beispiel laden wir das Dokument aus der Datei „Image Bullet Points.docx“.
 
-  الموجود في دليل المستندات.
+  befindet sich im Dokumentenverzeichnis.
 
-## الخطوة 3: تكوين خيارات التسجيل
+## Schritt 3: Aufnahmeoptionen konfigurieren
 
-لنقم الآن بتهيئة خيارات الحفظ لمستندنا. استخدم فئة DocSaveOptions لتحديد إعدادات الحفظ. على سبيل المثال :
+Jetzt konfigurieren wir die Speicheroptionen für unser Dokument. Verwenden Sie die DocSaveOptions-Klasse, um Speichereinstellungen anzugeben. Zum Beispiel :
 
 ```csharp
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
-في هذا المثال ، قمنا بإنشاء كائن DocSaveOptions جديد وقمنا بتعيين الخاصية SavePictureBullet إلى false لتعطيل حفظ الرموز النقطية للصور.
+In diesem Beispiel erstellen wir ein neues DocSaveOptions-Objekt und setzen die SavePictureBullet-Eigenschaft auf „false“, um das Speichern von Bildaufzählungszeichen zu deaktivieren.
 
-## الخطوة 4: تمكين ميزة "عدم حفظ الصورة التعدادية"
+## Schritt 4: Aktivieren Sie die Funktion „Bildaufzählung nicht speichern“.
 
-لتمكين ميزة "Do Not Save Picture Bullet" ، قمنا بالفعل بتكوين خيارات الحفظ مع تعيين SavePictureBullet على false. هذا يضمن عدم حفظ الصور النقطية في المستند النهائي.
+Um die Funktion „Bildaufzählungszeichen nicht speichern“ zu aktivieren, haben wir die Speicheroptionen bereits so konfiguriert, dass „SavePictureBullet“ auf „false“ gesetzt ist. Dadurch wird sichergestellt, dass Bildaufzählungszeichen nicht im endgültigen Dokument gespeichert werden.
 
-## الخطوة 5: احفظ المستند
+## Schritt 5: Speichern Sie das Dokument
 
-أخيرًا ، يمكنك حفظ المستند باستخدام طريقة Save لفئة Document. حدد المسار الكامل للملف واسم الملف المطلوب. على سبيل المثال :
+Abschließend können Sie das Dokument mit der Save-Methode der Document-Klasse speichern. Geben Sie den vollständigen Pfad zur Datei und den gewünschten Dateinamen an. Zum Beispiel :
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
-تأكد من استبدال "dataDir" بمسار الدليل إلى مستنداتك.
+Ersetzen Sie „dataDir“ unbedingt durch den Verzeichnispfad zu Ihren Dokumenten.
 
-## مثال على كود المصدر لـ DocSaveOptions حفظ الخيارات مع وظيفة "عدم حفظ الصورة" باستخدام Aspose.Words for .NET
+## Beispielquellcode für DocSaveOptions-Speicheroptionen mit der Funktion „Bildaufzählungszeichen nicht speichern“ unter Verwendung von Aspose.Words für .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند باستخدام الصور النقطية
+// Laden Sie das Dokument mit Bildaufzählungszeichen
 Document doc = new Document(dataDir + "Image bullet points.docx");
 
-// تكوين خيارات الحفظ مع ميزة "عدم حفظ الصورة"
+// Konfigurieren Sie Speicheroptionen mit der Funktion „Bildaufzählung nicht speichern“.
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 
-// احفظ المستند بالخيارات المحددة
+// Speichern Sie das Dokument mit den angegebenen Optionen
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
-## خاتمة
+## Abschluss
 
-في هذا الدليل ، تناولنا كيفية تعطيل حفظ الصور النقطية في مستند باستخدام مكتبة Aspose.Words لـ .NET. باتباع الخطوات المقدمة واستخدام الكود المصدري C # المقدم ، يمكنك بسهولة تطبيق هذه الوظيفة في تطبيق C # الخاص بك. يمكن أن يكون تعطيل حفظ الصورة النقطية مفيدًا في بعض المواقف للحفاظ على بنية المستند وتنسيقه بدون حفظ الرموز النقطية للصورة.
+In dieser Anleitung haben wir erläutert, wie Sie das Speichern von Bildaufzählungszeichen in einem Dokument mithilfe der Aspose.Words-Bibliothek für .NET deaktivieren. Indem Sie die bereitgestellten Schritte befolgen und den bereitgestellten C#-Quellcode verwenden, können Sie diese Funktionalität problemlos in Ihrer C#-Anwendung anwenden. Das Deaktivieren der Bildaufzählungsspeicherung kann in manchen Situationen nützlich sein, um die Struktur und Formatierung des Dokuments beizubehalten, ohne Bildaufzählungszeichen zu speichern.

@@ -1,19 +1,19 @@
 ---
-title: البرمجة مع Webextension
-linktitle: البرمجة مع Webextension
-second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على أجزاء مهام ملحق الويب وتستخدمها
+title: Programmieren mit Webextension
+linktitle: Programmieren mit Webextension
+second_title: Aspose.Words für .NET API-Referenz
+description: Tutorials enthalten und verwenden Aufgabenbereiche für Weberweiterungen
 type: docs
 weight: 1530
 url: /de/net/programming-with-webextension/
 ---
-ترشدك البرامج التعليمية Aspose.Words for .NET حول البرمجة باستخدام WebExtensions إلى الميزات المتقدمة للعمل مع ملحقات الويب في مستندات Word الخاصة بك. توضح البرامج التعليمية بالتفصيل كيفية استخدام Aspose.Words APIs لإنشاء وتعديل وحذف امتدادات الويب ، بالإضافة إلى التفاعل مع كود JavaScript المضمن في مستندات Word.
+Die Aspose.Words für .NET-Tutorials zum Programmieren mit WebExtensions führen Sie durch die erweiterten Funktionen der Arbeit mit Web Extensions in Ihren Word-Dokumenten. In den Tutorials wird detailliert beschrieben, wie Sie mit den Aspose.Words-APIs Weberweiterungen erstellen, bearbeiten und löschen sowie mit in Word-Dokumenten eingebettetem JavaScript-Code interagieren.
 
-توفر هذه البرامج التعليمية إرشادات خطوة بخطوة لفهم واستخدام وظائف WebExtensions مع Aspose.Words for .NET. ستتعلم كيفية الوصول إلى كائنات امتداد الويب ، والتعامل مع الأحداث ، وتقييم كود JavaScript ، وإضافة وظائف مخصصة ، والمزيد. سواء كنت مبتدئًا أو مطورًا متمرسًا ، ستساعدك هذه البرامج التعليمية على إتقان تقنيات البرمجة باستخدام WebExtensions.
+Diese Tutorials bieten Schritt-für-Schritt-Anleitungen zum Verständnis und zur Verwendung der Funktionalität von WebExtensions mit Aspose.Words für .NET. Sie erfahren, wie Sie auf Weberweiterungsobjekte zugreifen, Ereignisse verarbeiten, JavaScript-Code auswerten, benutzerdefinierte Funktionen hinzufügen und vieles mehr. Egal, ob Sie Anfänger oder erfahrener Entwickler sind, diese Tutorials helfen Ihnen, Programmiertechniken mit WebExtensions zu erlernen.
 
-باتباع هذه البرامج التعليمية ، ستتمكن من الاستفادة الكاملة من إمكانات امتدادات الويب في مستندات Word الخاصة بك ، مما يمنحها ميزات تفاعلية وديناميكية. تقدم البرامج التعليمية أمثلة على التعليمات البرمجية خطوة بخطوة وشروحات واضحة لمساعدتك في تحقيق أقصى استفادة من هذه الميزات وإنشاء مستندات Word مبتكرة وتفاعلية.
+Wenn Sie diese Tutorials befolgen, können Sie die Möglichkeiten von Weberweiterungen in Ihren Word-Dokumenten voll ausschöpfen und ihnen interaktive und dynamische Funktionen verleihen. Die Tutorials bieten Schritt-für-Schritt-Codebeispiele und klare Erklärungen, damit Sie diese Funktionen optimal nutzen und innovative und interaktive Word-Dokumente erstellen können.
 
-## دروس
-| عنوان | وصف |
+## Tutorials
+| Titel | Beschreibung |
 | --- | --- |
-| [استخدام أجزاء مهام ملحق الويب](./using-web-extension-task-panes/) | دليل تفصيلي خطوة بخطوة لاستخدام أجزاء مهام ملحق الويب مع Aspose.Words for .NET. |
+| [Verwenden von Web Extension-Aufgabenbereichen](./using-web-extension-task-panes/) | Schritt-für-Schritt-Anleitung zur Verwendung von Web Extension-Aufgabenbereichen mit Aspose.Words für .NET. |

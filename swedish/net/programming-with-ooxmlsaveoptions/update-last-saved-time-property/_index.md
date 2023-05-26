@@ -1,52 +1,52 @@
 ---
-title: تحديث خاصية الوقت المحفوظ الأخير
-linktitle: تحديث خاصية الوقت المحفوظ الأخير
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديث خاصية Last Saved Time تلقائيًا عند حفظ مستند باستخدام Aspose.Words for .NET.
+title: Uppdatera egenskapen Senaste sparad tid
+linktitle: Uppdatera egenskapen Senaste sparad tid
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du automatiskt uppdaterar egenskapen Last Saved Time när du sparar ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 ---
-في هذا البرنامج التعليمي ، سوف نستكشف كود المصدر C # المقدم لتحديث خاصية وقت الحفظ الأخيرة عند حفظ مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تحديث خاصية وقت الحفظ الأخيرة للمستند الذي تم إنشاؤه تلقائيًا.
+den här handledningen kommer vi att utforska den medföljande C#-källkoden för att uppdatera den senaste spartid-egenskapen när du sparar ett dokument med Aspose.Words för .NET. Med den här funktionen kan du automatiskt uppdatera den senast sparade tidsegenskapen för det genererade dokumentet.
 
-## الخطوة الأولى: تهيئة البيئة
+## Steg 1: Sätta upp miljön
 
-قبل أن تبدأ ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من أنك أضفت المراجع الضرورية واستوردت مساحات الأسماء المناسبة.
+Innan du börjar, se till att du har ställt in din utvecklingsmiljö med Aspose.Words för .NET. Se till att du har lagt till nödvändiga referenser och importerat lämpliga namnområden.
 
-## الخطوة الثانية: تحميل المستند
+## Steg 2: Ladda dokumentet
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- في هذه الخطوة ، نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+ I det här steget laddar vi dokumentet med hjälp av`Document` metod och skickar sökvägen till DOCX-filen som ska laddas.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي لـ OOXML
+## Steg 3: Konfigurera OOXML-säkerhetskopieringsalternativ
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { UpdateLastSavedTimeProperty = true };
 ```
 
- في هذه الخطوة ، نقوم بتهيئة خيارات حفظ OOXML باستخدام امتداد`OoxmlSaveOptions` فصل. نقوم بتمكين التحديث التلقائي لآخر خاصية توفير الوقت من خلال الإعداد`UpdateLastSavedTimeProperty` ل`true`.
+ I det här steget konfigurerar vi OOXML-sparalternativ med hjälp av`OoxmlSaveOptions` klass. Vi aktiverar automatisk uppdatering av den senaste spartidsegenskapen genom att ställa in`UpdateLastSavedTimeProperty` till`true`.
 
-## الخطوة 4: احفظ المستند بخاصية محدثة
+## Steg 4: Spara dokument med uppdaterad egenskap
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة ، نحفظ المستند باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج بامتداد`.docx` بالإضافة إلى خيارات الحفظ المحددة.
+ I detta sista steg sparar vi dokumentet med hjälp av`Save` metod och skickar sökvägen till utdatafilen med`.docx` tillägg, tillsammans med de angivna sparalternativen.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لتحديث خاصية وقت الحفظ الأخيرة تلقائيًا عند حفظ مستند. سيتم حفظ الملف الناتج في الدليل المحدد بالاسم "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx".
+Nu kan du köra källkoden för att automatiskt uppdatera egenskapen för senaste spartid när du sparar ett dokument. Den resulterande filen kommer att sparas i den angivna katalogen med namnet "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx".
 
-### نموذج شفرة مصدر لتحديث خاصية آخر وقت تم توفيره باستخدام Aspose.Words for .NET 
+### Exempel på källkod för Update Last Saved Time Property med Aspose.Words för .NET 
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -58,10 +58,10 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx
         
 ```
 
-## خاتمة
+## Slutsats
 
-في هذا البرنامج التعليمي ، استكشفنا ميزة التحديث التلقائي لخاصية توفير الوقت الأخيرة عند حفظ مستند باستخدام Aspose.Words for .NET. من خلال تمكين هذه الميزة مع خيارات حفظ OOXML ، يمكنك التأكد من تحديث خاصية وقت الحفظ الأخيرة تلقائيًا في المستند الذي تم إنشاؤه.
+den här handledningen utforskade vi funktionen att automatiskt uppdatera den senaste spartid-egenskapen när du sparar ett dokument med Aspose.Words för .NET. Genom att aktivera den här funktionen med OOXML-sparalternativ kan du säkerställa att den senaste spartid-egenskapen uppdateras automatiskt i det genererade dokumentet.
 
-يمكن أن يكون تحديث خاصية وقت الحفظ الأخير مفيدًا لتعقب التغييرات وإصدارات المستند. كما أنه يتتبع آخر مرة تم فيها حفظ المستند ، مما قد يكون مفيدًا في سيناريوهات مختلفة.
+Att uppdatera egenskapen för senaste spartid kan vara användbart för att spåra ändringar och versioner av ett dokument. Den håller också reda på när dokumentet senast sparades, vilket kan vara användbart i olika scenarier.
 
-يجعل Aspose.Words for .NET من السهل تحديث خاصية Last Backup Time تلقائيًا من خلال توفير خيارات نسخ احتياطي مرنة وفعالة. يمكنك دمج هذه الميزة في مشاريعك لضمان احتواء المستندات التي تم إنشاؤها على معلومات نسخ احتياطي دقيقة.
+Aspose.Words för .NET gör det enkelt att automatiskt uppdatera egenskapen Last Backup Time genom att tillhandahålla flexibla och kraftfulla säkerhetskopieringsalternativ. Du kan integrera den här funktionen i dina projekt för att säkerställa att genererade dokument har korrekt säkerhetskopieringsinformation.

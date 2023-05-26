@@ -1,36 +1,36 @@
 ---
-title: كود الحقل
-linktitle: كود الحقل
-second_title: Aspose.Words لمراجع .NET API
-description: دليل خطوة بخطوة للحصول على رمز الحقل والنتيجة الميدانية في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+title: 字段代码
+linktitle: 字段代码
+second_title: Aspose.Words for .NET API 参考
+description: 使用 Aspose.Words for .NET 获取 Word 文档中的字段代码和字段结果的分步指南。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/field-code/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم ميزة "Get Field Code" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+这是一个分步指南，用于解释下面的 C# 源代码，它使用 Aspose.Words for .NET 的“获取字段代码”功能。确保仔细执行每个步骤以获得所需的结果。
 
-## الخطوة 1: إعداد دليل المستند
+## 第 1 步：文档目录设置
 
-في الكود المقدم ، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب إلى دليل المستندات.
+在提供的代码中，您必须指定文档的目录。将值“YOUR DOCUMENT DIRECTORY”替换为您的文档目录的适当路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## الخطوة الثانية: تحميل المستند
+## 第 2 步：装入文档
 
-تتمثل الخطوة الأولى في تحميل المستند حيث تريد الحصول على رموز الحقول.
+第一步是将文档上传到您想要获取域代码的位置。
 
 ```csharp
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
-تأكد من استبدال "Hyperlinks.docx" باسم الملف الخاص بك.
+请务必将“Hyperlinks.docx”替换为您自己的文件名。
 
-## الخطوة 3: تصفح حقول المستندات
+## 第 3 步：浏览文档字段
 
- نحن نستخدم`foreach` حلقة للتكرار خلال جميع الحقول الموجودة في المستند.
+我们使用一个`foreach`循环遍历文档中存在的所有字段。
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -40,27 +40,27 @@ foreach(Field field in doc.Range.Fields)
 }
 ```
 
- في كل تكرار للحلقة ، نحصل على رمز الحقل باستخدام`GetFieldCode()` طريقة. نقوم أيضًا بتخزين نتيجة الحقل في متغير.
+在循环的每次迭代中，我们使用`GetFieldCode()`方法。我们还将字段的结果存储在一个变量中。
 
-### مثال رمز المصدر للحصول على رمز الحقل مع Aspose.Words for .NET
+### 使用 Aspose.Words for .NET 获取字段代码的源代码示例
 
 ```csharp
-// المسار إلى دليل المستندات.
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بتحميل المستند.
+//装入文档。
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 
-// حلقة من خلال حقول الوثيقة.
+//遍历文档字段。
 foreach(Field field in doc.Range.Fields)
 {
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // افعل شيئًا مع رمز الحقل والنتيجة.
+     //对字段的代码和结果做一些事情。
 }
 ```
 
-في هذا المثال ، قمنا بتحميل مستند ثم تدويره عبر جميع الحقول الموجودة في المستند. في كل تكرار ، حصلنا على الكود ونتيجة الحقل. يمكنك إضافة منطقك الخاص لمعالجة الكود وحقول النتائج حسب الحاجة.
+在此示例中，我们加载了一个文档，然后循环遍历文档中存在的所有字段。在每次迭代中，我们都得到了字段的代码和结果。您可以根据需要添加自己的逻辑来处理代码和结果字段。
 
-بهذا ينتهي دليلنا حول استخدام ميزة "Get Field Code" مع Aspose.Words for .NET.
+我们关于使用 Aspose.Words for .NET 的“获取字段代码”功能的指南到此结束。

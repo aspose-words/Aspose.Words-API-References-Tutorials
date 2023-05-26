@@ -1,20 +1,20 @@
 ---
-title: حدد مستوى القائمة
-linktitle: حدد مستوى القائمة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديد مستوى القائمة في مستند Word باستخدام Aspose.Words for .NET.
+title: Geben Sie die Listenebene an
+linktitle: Geben Sie die Listenebene an
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Listenebene in einem Word-Dokument angeben.
 type: docs
 weight: 10
 url: /de/net/working-with-list/specify-list-level/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة ، سنوضح لك كيفية تحديد مستوى القائمة في مستند Word باستخدام Aspose.Words for .NET. سنشرح كود المصدر C # المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET die Listenebene in einem Word-Dokument festlegen. Wir erklären Ihnen den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
 
-للبدء ، تأكد من تثبيت Aspose.Words for .NET وتهيئته في بيئة التطوير الخاصة بك. إذا لم تكن قد قمت بذلك بالفعل ، فقم بتنزيل المكتبة وتثبيتها من الموقع الرسمي.
+Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und konfiguriert ist. Wenn Sie es noch nicht getan haben, laden Sie die Bibliothek von der offiziellen Website herunter und installieren Sie sie.
 
-## الخطوة 1: إنشاء مُنشئ المستند والمستند
+## Schritt 1: Erstellen des Dokuments und Dokumentengenerators
 
-أولاً ، قم بإنشاء مستند جديد ومولد المستندات المرتبط به:
+Erstellen Sie zunächst ein neues Dokument und einen zugehörigen Dokumentgenerator:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -22,17 +22,17 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: إنشاء وتطبيق قائمة رقمية
+## Schritt 2: Erstellen und Anwenden einer nummerierten Liste
 
-بعد ذلك ، أنشئ قائمة ذات تعداد رقمي استنادًا إلى أحد قوالب قوائم Microsoft Word وقم بتطبيقها على الفقرة الحالية في منشئ المستندات:
+Erstellen Sie als Nächstes eine nummerierte Liste basierend auf einer der Listenvorlagen von Microsoft Word und wenden Sie diese auf den aktuellen Absatz im Document Builder an:
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 ```
 
-## الخطوة 3: مواصفات مستوى القائمة
+## Schritt 3: Spezifikation der Listenebene
 
- استخدم وثيقة منشئ`ListLevelNumber`لتحديد مستوى القائمة وإضافة نص إلى الفقرة:
+ Verwenden Sie den Document Builder`ListLevelNumber`-Eigenschaft, um die Listenebene anzugeben und Text zum Absatz hinzuzufügen:
 
 ```csharp
 for (int i = 0; i < 9; i++)
@@ -42,19 +42,19 @@ for (int i = 0; i < 9; i++)
 }
 ```
 
-كرر هذه الخطوات لتحديد مستويات القائمة وإضافة نص في كل مستوى.
+Wiederholen Sie diese Schritte, um Listenebenen anzugeben und auf jeder Ebene Text hinzuzufügen.
 
-## الخطوة 4: إنشاء وتطبيق قائمة نقطية
+## Schritt 4: Erstellen und Anwenden einer Aufzählungsliste
 
-يمكنك أيضًا إنشاء قائمة نقطية وتطبيقها باستخدام أحد قوالب قوائم Microsoft Word:
+Sie können eine Liste mit Aufzählungszeichen auch mithilfe einer der Listenvorlagen von Microsoft Word erstellen und anwenden:
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 ```
 
-## الخطوة 5: إضافة نص إلى مستويات قائمة نقطية
+## Schritt 5: Text zu Listenebenen mit Aufzählungszeichen hinzufügen
 
- استخدم ال`ListLevelNumber` الخاصية مرة أخرى لتحديد مستوى القائمة النقطية وإضافة نص:
+ Benutzen Sie die`ListLevelNumber` Eigenschaft erneut, um die Ebene der Aufzählungsliste anzugeben und Text hinzuzufügen:
 
 ```csharp
 for (int i = 0; i < 9; i++)
@@ -64,44 +64,44 @@ for (int i = 0; i < 9; i++)
 }
 ```
 
-## الخطوة 6: إيقاف قائمة التنسيق
+## Schritt 6: Beenden Sie die Formatierung der Liste
 
- لإيقاف تنسيق القائمة ، اضبط`null` الى`List` خاصية منشئ المستندات:
+ Um die Listenformatierung zu stoppen, legen Sie fest`null` zum`List` Eigenschaft des Dokumentengenerators:
 
 ```csharp
 builder. ListFormat. List = null;
 ```
 
-## الخطوة 7: حفظ المستند المعدل
+## Schritt 7: Speichern des geänderten Dokuments
 
-احفظ المستند المعدل:
+Speichern Sie das geänderte Dokument:
 
 ```csharp
 builder.Document.Save(dataDir + "SpecifyListLevel.docx");
 ```
 
-لذا ! لقد نجحت في تحديد مستوى القائمة في مستند Word باستخدام Aspose.Words for .NET.
+So ! Sie haben die Listenebene in einem Word-Dokument mit Aspose.Words für .NET erfolgreich angegeben.
 
-### نموذج التعليمات البرمجية المصدر لتحديد مستوى القائمة
+### Beispielquellcode zur Angabe der Listenebene
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة ذات تعداد رقمي استنادًا إلى أحد قوالب قائمة Microsoft Word
-// وتطبيقه على الفقرة الحالية لمنشئ المستند.
+// Erstellen Sie eine nummerierte Liste basierend auf einer der Microsoft Word-Listenvorlagen
+// und wenden Sie es auf den aktuellen Absatz des Document Builders an.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
-// هناك تسعة مستويات في هذه القائمة ، دعونا نجربها جميعًا.
+// Es gibt neun Level in dieser Liste, probieren wir sie alle aus.
 for (int i = 0; i < 9; i++)
 {
 	builder.ListFormat.ListLevelNumber = i;
 	builder.Writeln("Level " + i);
 }
 
-//قم بإنشاء قائمة ذات تعداد نقطي استنادًا إلى أحد قوالب قوائم Microsoft Word
-// وتطبيقه على الفقرة الحالية لمنشئ المستند.
+//Erstellen Sie eine Liste mit Aufzählungszeichen basierend auf einer der Microsoft Word-Listenvorlagen
+// und wenden Sie es auf den aktuellen Absatz des Document Builders an.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
 for (int i = 0; i < 9; i++)
@@ -110,7 +110,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// هذه طريقة لإيقاف تنسيق القائمة.
+// Dies ist eine Möglichkeit, die Listenformatierung zu stoppen.
 builder.ListFormat.List = null;
 
 builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");

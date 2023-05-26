@@ -1,65 +1,65 @@
 ---
-title: هدف المقارنة
-linktitle: هدف المقارنة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على ميزة مقارنة الهدف في Aspose.Words for .NET التي تسمح لك بمقارنة المستندات وإنشاء مستند جديد يحتوي على التغييرات التي تم إجراؤها.
+title: Karşılaştırma Hedefi
+linktitle: Karşılaştırma Hedefi
+second_title: Aspose.Words for .NET API Referansı
+description: Aspose.Words for .NET'in belgeleri karşılaştırmanıza ve yapılan değişiklikleri içeren yeni bir belge oluşturmanıza olanak tanıyan hedef karşılaştırma özelliğini öğrenin.
 type: docs
 weight: 10
 url: /tr/net/compare-documents/comparison-target/
 ---
 
-فيما يلي دليل تفصيلي خطوة بخطوة لشرح الكود المصدري C # أدناه ، والذي يستخدم وظيفة هدف المقارنة في Aspose.Words for .NET.
+Aşağıda, Aspose.Words for .NET'in karşılaştırma hedefi işlevini kullanan C# kaynak kodunu adım adım açıklayan bir kılavuz bulunmaktadır.
 
-## الخطوة 1: مقدمة
+## 1. Adım: Giriş
 
-تسمح لك ميزة المقارنة المستهدفة في Aspose.Words for .NET بمقارنة مستندين وإنشاء مستند جديد يحتوي على التغييرات التي تم إجراؤها على المستند الهدف. يمكن أن يكون هذا مفيدًا لتعقب التغييرات التي تم إجراؤها بين الإصدارات المختلفة من المستند.
+Aspose.Words for .NET'in hedef karşılaştırma özelliği, iki belgeyi karşılaştırmanıza ve hedef belgede yapılan değişiklikleri içeren yeni bir belge oluşturmanıza olanak tanır. Bu, bir belgenin farklı sürümleri arasında yapılan değişiklikleri izlemek için yararlı olabilir.
 
-## الخطوة الثانية: تهيئة البيئة
+## 2. Adım: Ortamı ayarlama
 
-قبل أن تبدأ ، تحتاج إلى إعداد بيئة التطوير الخاصة بك للعمل مع Aspose.Words for .NET. تأكد من تثبيت مكتبة Aspose.Words وأن لديك مشروع C # مناسب لتضمين الكود.
+Başlamadan önce, geliştirme ortamınızı Aspose.Words for .NET ile çalışacak şekilde ayarlamanız gerekir. Aspose.Words kitaplığının kurulu olduğundan ve kodu yerleştirmek için uygun bir C# projesine sahip olduğunuzdan emin olun.
 
-## الخطوة 3: إضافة التجميعات المطلوبة
+## 3. Adım: Gerekli Montajları Ekleyin
 
-لاستخدام ميزة هدف المقارنة في Aspose.Words for .NET ، يجب عليك إضافة التجميعات الضرورية إلى مشروعك. تأكد من أن لديك المراجع المناسبة لـ Aspose. Words في مشروعك.
+Aspose.Words for .NET'in karşılaştırma hedefi özelliğini kullanmak için gerekli montajları projenize eklemelisiniz. Projenizde Aspose.Words'a uygun referansların bulunduğundan emin olun.
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 4: تهيئة المستند
+## Adım 4: Belge Başlatma
 
-في هذه الخطوة ، سنقوم بتهيئة وثيقتين للمقارنة. يجب عليك تحديد مسار الدليل حيث توجد المستندات الخاصة بك ، وكذلك اسم المستند المصدر.
+Bu adımda, karşılaştırma için iki belgeyi başlatacağız. Kaynak belgenin adının yanı sıra belgelerinizin bulunduğu dizin yolunu da belirtmelisiniz.
 
 ```csharp
-// المسار إلى دليل المستندات.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// تهيئة الوثيقة أ للمقارنة.
+// Karşılaştırılacak belge A'nın başlatılması.
 Document docA = new Document(dataDir + "DocumentA.docx");
 
-// قم بنسخ المستند A لإنشاء نسخة متطابقة من المستند B.
+// B belgesinin aynı kopyasını oluşturmak için A belgesini kopyalayın.
 Document docB = docA.Clone();
 ```
 
-## الخطوة 5: تكوين خيارات المقارنة
+## 5. Adım: Karşılaştırma Seçeneklerini Yapılandırma
 
-في هذه الخطوة ، سنقوم بتكوين خيارات المقارنة لتحديد سلوك المقارنة. تتضمن الخيارات القدرة على تجاهل التنسيق ، بالإضافة إلى هدف المقارنة ، وهو الخيار "إظهار التغييرات في" في مربع الحوار "مقارنة المستندات" في Microsoft Word.
+Bu adımda, karşılaştırma davranışını belirtmek için karşılaştırma seçeneklerini yapılandıracağız. Seçenekler, Microsoft Word'ün "Belgeleri Karşılaştır" iletişim kutusundaki "Değişiklikleri göster" seçeneği olan karşılaştırma hedefinin yanı sıra biçimlendirmeyi yok sayma özelliğini içerir.
 
 ```csharp
 CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
 ```
 
-## الخطوة 6: مقارنة المستندات
+## 6. Adım: Belge Karşılaştırması
 
-سنقوم الآن بمقارنة المستندات وإنشاء النتيجة في مستند جديد.
+Şimdi belgeleri karşılaştıracağız ve sonucu yeni bir belgede oluşturacağız.
 
 ```csharp
 docA.Compare(docB, "user", DateTime.Now, options);
 ```
 
- ال`Compare` يقارن الأسلوب المستند A بالمستند B ويحفظ التغييرات في المستند A. يمكنك تحديد اسم المستخدم وتاريخ المقارنة كمرجع.
+ bu`Compare` yöntem, belge A'yı belge B ile karşılaştırır ve değişiklikleri belge A'ya kaydeder. Referans için kullanıcı adını ve karşılaştırma tarihini belirtebilirsiniz.
 
-### نموذج لشفرة مصدر للمقارنة الهدف باستخدام Aspose.Words for .NET
+### Aspose.Words for .NET kullanan Karşılaştırma Hedefi için örnek kaynak kodu
 
 
 ```csharp
@@ -67,7 +67,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 Document docA = new Document(MyDir + "Document.docx");
 Document docB = docA.Clone();
 
-// يتعلق بخيار "إظهار التغييرات في" Microsoft Word في مربع الحوار "مقارنة المستندات".
+// Microsoft Word'ün "Belgeleri Karşılaştır" iletişim kutusundaki "Değişiklikleri göster" seçeneğiyle ilgilidir.
 CompareOptions options = new CompareOptions { IgnoreFormatting = true, Target = ComparisonTargetType.New };
 
 docA.Compare(docB, "user", DateTime.Now, options);
@@ -75,7 +75,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
         
 ```
 
-## خاتمة
+## Çözüm
 
-في هذه المقالة ، استكشفنا ميزة هدف الفرق في Aspose.Words for .NET. تتيح لك هذه الميزة مقارنة مستندين وإنشاء مستند جديد يحتوي على التغييرات التي تم إجراؤها. يمكنك استخدام هذه المعرفة لتعقب التغييرات بين الإصدارات المختلفة من مستنداتك.
+Bu yazıda, Aspose.Words for .NET'in diff hedef özelliğini inceledik. Bu özellik, iki belgeyi karşılaştırmanıza ve yapılan değişiklikleri içeren yeni bir belge oluşturmanıza olanak tanır. Belgelerinizin farklı sürümleri arasındaki değişiklikleri izlemek için bu bilgiyi kullanabilirsiniz.
 

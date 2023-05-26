@@ -1,18 +1,18 @@
 ---
-title: قسم غير مقيد
-linktitle: قسم غير مقيد
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تحديد الأقسام غير المقيدة في مستند Word باستخدام Aspose.Words for .NET.
+title: Sezione illimitata
+linktitle: Sezione illimitata
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come definire sezioni senza restrizioni in un documento di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/document-protection/unrestricted-section/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال الخطوات لاستخدام ميزة القسم غير المقيد في Aspose.Words for .NET. تتيح لك هذه الميزة تحديد أقسام معينة في مستند Word غير محمية ، حتى إذا كان باقي المستند محميًا. اتبع الخطوات التالية:
+In questo tutorial, ti guideremo attraverso i passaggi per utilizzare la funzionalità di sezione illimitata di Aspose.Words per .NET. Questa funzione consente di definire sezioni specifiche in un documento Word che non sono protette, anche se il resto del documento è protetto. Segui i passaggi seguenti:
 
-## الخطوة الأولى: إنشاء المستند والأقسام
+## Passaggio 1: creazione del documento e delle sezioni
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+Inizia creando un'istanza della classe Document e un oggetto DocumentBuilder:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -20,8 +20,8 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أضف محتوى إلى المستند
-استخدم كائن DocumentBuilder لإضافة محتوى إلى المستند وإدراج فواصل المقاطع:
+## Passaggio 2: aggiungere contenuto al documento
+Utilizzare l'oggetto DocumentBuilder per aggiungere contenuto al documento e inserire interruzioni di sezione:
 
 ```csharp
 builder.Writeln("Section 1. Unprotected.");
@@ -29,46 +29,46 @@ builder. InsertBreak(BreakType. SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-## الخطوة 3: حماية المستند والأقسام
+## Passaggio 3: proteggere il documento e le sezioni
 
-تعمل حماية القسم فقط عندما يتم تمكين حماية المستند ولا يُسمح إلا بالتحرير في حقول النموذج. يمكنك حماية المستند باستخدام طريقة Protect () الخاصة بكائن المستند:
+La protezione della sezione funziona solo quando la protezione del documento è abilitata ed è consentita solo la modifica nei campi del modulo. È possibile proteggere il documento utilizzando il metodo Protect() dell'oggetto Document:
 
 ```csharp
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 ```
 
-تأكد من تحديد نوع الحماية الصحيح وتعيين كلمة المرور المطلوبة.
+Assicurarsi di specificare il tipo corretto di protezione e impostare la password desiderata.
 
-## الخطوة 4: تعطيل الحماية لقسم معين
+## Passaggio 4: disabilitazione della protezione per una sezione specifica
 
-بشكل افتراضي ، تكون جميع الأقسام محمية ، ولكن يمكنك تعطيل الحماية بشكل انتقائي لقسم معين باستخدام خاصية ProtectedForForms الخاصة بكائن القسم:
+Per impostazione predefinita, tutte le sezioni sono protette, ma è possibile disabilitare in modo selettivo la protezione per una sezione specifica utilizzando la proprietà ProtectedForForms dell'oggetto Section:
 
 ```csharp
 doc.Sections[0].ProtectedForForms = false;
 ```
 
-في هذا المثال ، تم تعطيل الحماية للقسم الأول.
+In questo esempio, la protezione è disabilitata per la prima sezione.
 
-## الخطوة 5: احفظ المستند
+## Passaggio 5: salvare il documento
 
-أخيرًا ، احفظ المستند المعدل:
+Infine, salva il documento modificato:
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند بأقسام غير مقيدة.
+Assicurati di specificare il percorso e il nome file corretti per salvare il documento con sezioni senza restrizioni.
 
-### مثال على شفرة المصدر للقسم غير المقيد باستخدام Aspose.Words for .NET
+### Esempio di codice sorgente per sezione senza restrizioni utilizzando Aspose.Words per .NET
 
-فيما يلي رمز المصدر الكامل للقسم غير المقيد باستخدام Aspose.Words for .NET:
+Ecco il codice sorgente completo per la sezione senza restrizioni utilizzando Aspose.Words per .NET:
 
 
 ```csharp
 
-// المسار إلى دليل المستندات.
+// Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// أدخل قسمين مع بعض النص.
+// Inserisci due sezioni con del testo.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
@@ -76,10 +76,10 @@ builder.Writeln("Section 1. Unprotected.");
 builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 
-// تعمل حماية القسم فقط عندما يتم تشغيل حماية المستند ولا يُسمح إلا بالتحرير في حقول النموذج.
+// La protezione della sezione funziona solo quando la protezione del documento è attivata ed è consentita solo la modifica nei campi del modulo.
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
-// بشكل افتراضي ، تكون جميع الأقسام محمية ، ولكن يمكننا إيقاف الحماية بشكل انتقائي.
+// Per impostazione predefinita, tutte le sezioni sono protette, ma possiamo disattivare la protezione in modo selettivo.
 doc.Sections[0].ProtectedForForms = false;
 doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 
@@ -87,5 +87,5 @@ doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 
 ```
 
-باتباع هذه الخطوات ، ستتمكن بسهولة من تحديد الأقسام غير المقيدة في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+Seguendo questi passaggi, sarai in grado di definire facilmente sezioni senza restrizioni nel tuo documento Word con Aspose.Words per .NET.
 

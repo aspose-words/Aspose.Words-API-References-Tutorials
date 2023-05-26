@@ -1,108 +1,108 @@
 ---
-title: إنشاء جدول بسيط
-linktitle: إنشاء جدول بسيط
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إنشاء جدول بسيط في مستند Word باستخدام Aspose.Words for .NET.
+title: Crear tabla sencilla
+linktitle: Crear tabla sencilla
+second_title: Referencia de API de Aspose.Words para .NET
+description: Aprenda a crear una tabla simple en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/create-simple-table/
 ---
 
-في هذا البرنامج التعليمي ، سوف نتعلم كيفية إنشاء جدول بسيط في مستند Word باستخدام Aspose.Words for .NET. سوف نتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي ، ستتمكن من إنشاء جداول مخصصة في مستندات Word الخاصة بك برمجيًا.
+En este tutorial, vamos a aprender cómo crear una tabla simple en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá crear tablas personalizadas en sus documentos de Word mediante programación.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وإنشاء مشروع C # جديد.
-2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
+## Paso 1: Configuración del proyecto
+1. Inicie Visual Studio y cree un nuevo proyecto de C#.
+2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء بناء الجدول ، نحتاج إلى إنشاء مستند جديد وتهيئة منشئ المستندات. اتبع هذه الخطوات:
+## Paso 2: Creación del documento e inicialización del generador de documentos
+Para comenzar a construir la tabla, necesitamos crear un nuevo documento e inicializar el generador de documentos. Sigue estos pasos:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وتهيئة منشئ المستند
+// Crear el documento e inicializar el generador de documentos
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل المستندات" بالمسار الفعلي إلى دليل المستندات.
+Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
-## الخطوة 3: بناء المصفوفة
-بعد ذلك ، سنبني الجدول باستخدام الطرق التي يوفرها منشئ المستندات. استخدم الكود التالي:
+## Paso 3: Construyendo la matriz
+A continuación, crearemos la tabla utilizando los métodos proporcionados por el generador de documentos. Usa el siguiente código:
 
 ```csharp
-// ابدأ بناء المصفوفة
+// Comenzar la construcción de la matriz
 builder. StartTable();
 
-// بناء الخلية الأولى من الصف الأول
+// Construcción de la primera celda de la primera fila.
 builder. InsertCell();
 builder.Write("Contents of cell 1 of row 1.");
 
-// بناء الخلية الثانية من الصف الأول
+// Construcción de la segunda celda de la primera fila.
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//اتصل بالطريقة التالية لإنهاء السطر الأول وبدء سطر جديد
+//Llame al siguiente método para finalizar la primera línea y comenzar una nueva línea
 builder. EndRow();
 
-// بناء الخلية الأولى للصف الثاني
+// Construcción de la primera celda de la segunda fila.
 builder. InsertCell();
 builder.Write("Contents of cell 1 of row 2.");
 
-// بناء الخلية الثانية للصف الثاني
+// Construcción de la segunda celda de la segunda fila.
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 2.");
 
-// اتصل بالطريقة التالية لإنهاء السطر الثاني
+// Llame al siguiente método para finalizar la segunda línea.
 builder. EndRow();
 
-// الإشارة إلى أن بناء الجدول قد اكتمل
+// Indicación de que la construcción de la mesa está terminada
 builder. EndTable();
 ```
 
- هنا نستخدم منشئ المستندات لبناء الجدول خطوة بخطوة. نبدأ بالاتصال`StartTable()` لتهيئة الجدول ، ثم استخدم`InsertCell()` لإدراج الخلايا و`Write()` لإضافة محتوى إلى كل خلية. نحن نستخدم أيضا`EndRow()` لإنهاء صف وبدء صف جديد. أخيرا ، نحن ندعو`EndTable()` للإشارة إلى اكتمال بناء الجدول.
+ Aquí usamos el generador de documentos para construir la tabla paso a paso. Empezamos llamando`StartTable()` para inicializar la tabla, luego use`InsertCell()` para insertar celdas y`Write()` para agregar contenido a cada celda. También usamos`EndRow()` para terminar una fila y comenzar una nueva fila. Finalmente, llamamos`EndTable()` para indicar que la construcción de la tabla está completa.
 
-## الخطوة 4: احفظ المستند
-أخيرًا ، نحن بحاجة إلى الحفظ
+## Paso 4: Guarde el documento
+Finalmente, tenemos que guardar
 
-  المستند مع الجدول الذي تم إنشاؤه. استخدم الكود التالي:
+  el documento con la tabla creada. Usa el siguiente código:
 
 ```csharp
-// احفظ المستند
+// Guardar el documento
 doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
+Asegúrese de especificar la ruta y el nombre de archivo correctos para el documento de salida.
 
-### نموذج التعليمات البرمجية المصدر لـ Create Simple Table باستخدام Aspose.Words for .NET 
+### Ejemplo de código fuente para Create Simple Table usando Aspose.Words para .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// ابدأ في بناء الطاولة.
+	// Empieza a construir la mesa.
 	builder.StartTable();
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 1 Content.");
-	// قم ببناء الخلية الثانية.
+	// Construye la segunda celda.
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 2 Content.");
-	// اتصل بالطريقة التالية لإنهاء الصف وبدء صف جديد.
+	// Llame al siguiente método para finalizar la fila y comenzar una nueva fila.
 	builder.EndRow();
-	// قم ببناء الخلية الأولى من الصف الثاني.
+	// Construye la primera celda de la segunda fila.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 1 Content");
-	// قم ببناء الخلية الثانية.
+	// Construye la segunda celda.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//إشارة إلى أننا انتهينا من بناء الطاولة.
+	//Señal de que hemos terminado de construir la mesa.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```
 
-## خاتمة
-في هذا البرنامج التعليمي ، تعلمنا كيفية إنشاء جدول بسيط في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة وتنفيذ رمز C # المقدم ، يمكنك إنشاء جداول مخصصة في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة تنسيق بياناتك وتنظيمها بطريقة منظمة وواضحة.
+## Conclusión
+En este tutorial, aprendimos cómo crear una tabla simple en un documento de Word usando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# proporcionado, puede crear tablas personalizadas en sus documentos de Word mediante programación. Esta característica le permite formatear y organizar sus datos de una manera clara y estructurada.

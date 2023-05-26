@@ -1,40 +1,40 @@
 ---
-title: حذف الصف حسب الإشارة المرجعية
-linktitle: حذف الصف حسب الإشارة المرجعية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حذف صف جدول بناءً على إشارة مرجعية معينة في مستند باستخدام Aspose.Words for .NET.
+title: Supprimer la ligne par signet
+linktitle: Supprimer la ligne par signet
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Découvrez comment supprimer une ligne de tableau en fonction d'un signet spécifique dans un document à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 
-في هذه المقالة ، سوف نستكشف كود المصدر C # أعلاه لفهم كيفية استخدام وظيفة حذف الصف حسب الإشارة المرجعية في Aspose.Words لمكتبة .NET. تتيح لك هذه الميزة حذف صف جدول بناءً على إشارة مرجعية معينة في المستند.
+Dans cet article, nous allons explorer le code source C # ci-dessus pour comprendre comment utiliser la fonction Supprimer la ligne par signet dans la bibliothèque Aspose.Words pour .NET. Cette fonctionnalité vous permet de supprimer une ligne de tableau en fonction d'un signet spécifique dans un document.
 
-## المتطلبات الأساسية
+## Conditions préalables
 
-- المعرفة الأساسية للغة C #.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+- Connaissance de base du langage C#.
+- Environnement de développement .NET avec la bibliothèque Aspose.Words installée.
 
-## الخطوة 1: الحصول على الإشارة المرجعية
+## Étape 1 : Récupérer le marque-page
 
- نحن نستخدم ال`Bookmarks`خاصية نطاق المستند للحصول على الإشارة المرجعية المحددة التي نريد استخدامها لحذف صف الجدول:
+ Nous utilisons le`Bookmarks`propriété de la plage de documents pour obtenir le signet spécifique que nous voulons utiliser pour supprimer la ligne du tableau :
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
 ```
 
-## الخطوة 2: حذف صف الجدول
+## Étape 2 : Supprimer la ligne du tableau
 
- نحن نستخدم ال`GetAncestor` طريقة الحصول على`Row` اكتب العنصر الأصل للإشارة المرجعية. بعد ذلك ، نستخدم ملف`Remove` طريقة إزالة صف الجدول:
+ Nous utilisons le`GetAncestor` méthode pour obtenir le`Row` type élément parent du signet. Ensuite, nous utilisons le`Remove` méthode pour supprimer la ligne du tableau :
 
 ```csharp
 Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
 row?.Remove();
 ```
 
-### مثال على شفرة المصدر لـ Delete Row By Bookmark باستخدام Aspose.Words for .NET
+### Exemple de code source pour Supprimer la ligne par signet à l'aide de Aspose.Words pour .NET
 
-إليك نموذج التعليمات البرمجية المصدر الكامل لتوضيح حذف صف جدول بناءً على إشارة مرجعية معينة باستخدام Aspose.Words for .NET:
+Voici l'exemple de code source complet pour illustrer la suppression d'une ligne de tableau basée sur un signet spécifique à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
 
@@ -45,6 +45,6 @@ row?.Remove();
         
 ```
 
-## خاتمة
+## Conclusion
 
-في هذه المقالة ، استكشفنا شفرة المصدر C # لفهم كيفية استخدام وظيفة حذف الصف حسب الإشارة المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا خطوة بخطوة لحذف صف جدول بناءً على إشارة مرجعية محددة في المستند.
+Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonction Supprimer la ligne par signet d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour supprimer une ligne de tableau en fonction d'un signet spécifique dans un document.

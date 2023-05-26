@@ -1,21 +1,21 @@
 ---
-title: تغيير اللغة
-linktitle: تغيير اللغة
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تغيير الإعدادات المحلية لتنسيق التاريخ والأرقام في مستندات Word باستخدام Aspose.Words for .NET.
+title: Cambia locale
+linktitle: Cambia locale
+second_title: Riferimento all'API Aspose.Words per .NET
+description: Scopri come modificare le impostazioni locali per la formattazione di data e numero nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/change-locale/
 ---
 
-في هذا البرنامج التعليمي ، سنوجهك خلال عملية تغيير الإعدادات المحلية في مستندات Word باستخدام Aspose.Words for .NET. من خلال تعديل الإعدادات المحلية ، يمكنك التحكم في تنسيق التواريخ والأرقام أثناء عمليات دمج البريد. سنزودك بشفرة المصدر C # الضرورية والتعليمات خطوة بخطوة لتحقيق ذلك.
+In questo tutorial, ti guideremo attraverso il processo di modifica delle impostazioni locali nei documenti di Word utilizzando Aspose.Words per .NET. Modificando le impostazioni locali, è possibile controllare la formattazione di date e numeri durante le operazioni di stampa unione. Ti forniremo il codice sorgente C# necessario e le istruzioni dettagliate per raggiungere questo obiettivo.
 
-## المتطلبات الأساسية
-قبل أن نبدأ ، تأكد من توفر المتطلبات الأساسية التالية لديك:
-- تم تثبيت Aspose.Words for .NET library على نظامك.
+## Prerequisiti
+Prima di iniziare, assicurati di avere i seguenti prerequisiti:
+- Aspose.Words per la libreria .NET installata sul tuo sistema.
 
-## الخطوة 1: إنشاء مستند و DocumentBuilder
-للبدء ، قم بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+## Passaggio 1: creare un documento e DocumentBuilder
+Per iniziare, crea un'istanza della classe Document e un oggetto DocumentBuilder:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,52 +23,52 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: أدخل حقل
-بعد ذلك ، أدخل حقل دمج في المستند باستخدام طريقة InsertField:
+## Passaggio 2: inserire un campo
+Successivamente, inserisci un campo di unione nel documento utilizzando il metodo InsertField:
 
 ```csharp
 builder.InsertField("MERGEFIELD Date");
 ```
 
-في الكود أعلاه ، نقوم بإدراج حقل دمج يسمى "التاريخ" في المستند.
+Nel codice sopra, inseriamo un campo di unione denominato "Data" nel documento.
 
-## الخطوة 3: قم بتغيير اللغة
-لتغيير لغة تنسيق التاريخ والأرقام ، يمكنك تعديل الثقافة الحالية لمؤشر الترابط. في هذا المثال ، سنقوم بتعيين اللغة إلى الألمانية ("de-DE"):
+## Passaggio 3: modificare le impostazioni internazionali
+Per modificare le impostazioni locali per la formattazione di data e numeri, è possibile modificare le impostazioni cultura correnti del thread. In questo esempio, imposteremo la lingua tedesca ("de-DE"):
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-في الكود أعلاه ، نقوم بتخزين الثقافة الحالية ثم نقوم بتعيين ثقافة الخيط الحالي على اللغة الألمانية.
+Nel codice sopra, memorizziamo la cultura corrente e quindi impostiamo la cultura del thread corrente su tedesco.
 
-## الخطوة 4: قم بإجراء دمج المراسلات
-نفّذ عملية دمج المراسلات وقدم قيمة التاريخ لحقل "التاريخ":
+## Passaggio 4: eseguire la stampa unione
+Eseguire un'operazione di stampa unione e fornire il valore della data per il campo "Data":
 
 ```csharp
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-في مقتطف الشفرة هذا ، ننفذ عملية دمج المراسلات ونقدم التاريخ الحالي كقيمة لحقل "التاريخ".
+In questo frammento di codice, eseguiamo l'operazione di stampa unione e forniamo la data corrente come valore per il campo "Data".
 
-## الخطوة 5: استعادة الإعدادات المحلية الأصلية
-بعد اكتمال دمج المراسلات ، قم باستعادة البيانات الموروثة الأصلية لمؤشر الترابط:
+## Passaggio 5: ripristinare le impostazioni locali originali
+Al termine della stampa unione, ripristinare le impostazioni cultura originali per il thread:
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = currentCulture;
 ```
 
-في الكود أعلاه ، نقوم باستعادة الثقافة الأصلية للخيط.
+Nel codice precedente, ripristiniamo la cultura originale del thread.
 
-## الخطوة 6: احفظ المستند
-احفظ المستند المعدل في ملف باستخدام طريقة Save لفئة Document:
+## Passaggio 6: salvare il documento
+Salvare il documento modificato in un file utilizzando il metodo Save della classe Document:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-### مثال على كود المصدر لتغيير اللغة باستخدام Aspose.Words for .NET
-فيما يلي رمز المصدر الكامل لتغيير اللغة في مستندات Word باستخدام Aspose.Words for .NET:
+### Esempio di codice sorgente per la modifica delle impostazioni locali utilizzando Aspose.Words per .NET
+Ecco il codice sorgente completo per modificare le impostazioni locali nei documenti di Word utilizzando Aspose.Words per .NET:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -87,5 +87,5 @@ Thread.CurrentThread.CurrentCulture = currentCulture;
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-## خاتمة
-تهانينا! لقد تعلمت بنجاح كيفية تغيير اللغة في مستندات Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن التحكم في تنسيق التواريخ والأرقام أثناء عمليات دمج المراسلات. قم بتخصيص الإعدادات المحلية وفقًا لمتطلباتك لضمان التنسيق الدقيق والمتسق في مستنداتك.
+## Conclusione
+Congratulazioni! Hai imparato con successo come modificare le impostazioni locali nei documenti di Word utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata e utilizzando il codice sorgente fornito, ora puoi controllare la formattazione di date e numeri durante le operazioni di stampa unione. Personalizza le impostazioni locali in base alle tue esigenze per garantire una formattazione accurata e coerente nei tuoi documenti.

@@ -1,68 +1,68 @@
 ---
-title: حسب نطاق الصفحة
-linktitle: حسب نطاق الصفحة
-second_title: Aspose.Words لمراجع .NET API
-description: استخرج بسهولة حسب نطاق الصفحات من مستند Word باستخدام Aspose.Words for .NET دليل خطوة بخطوة.
+title: Por rango de página
+linktitle: Por rango de página
+second_title: Referencia de API de Aspose.Words para .NET
+description: Extraiga fácilmente por rango de páginas de un documento de Word utilizando Aspose.Words para la guía paso a paso de .NET.
 type: docs
 weight: 10
 url: /es/net/split-document/by-page-range/
 ---
 
-## مقدمة
-في هذا البرنامج التعليمي ، سنوجهك خطوة بخطوة لفهم واستخدام وظيفة "حسب نطاق الصفحات" في Aspose.Words for .NET. تتيح لك هذه الميزة استخراج جزء معين من مستند Word كبير باستخدام نطاق صفحات معين. سنزودك بكود مصدر كامل وتنسيقات إخراج Markdown لتسهيل فهمك واستخدامك لاحقًا.
+## Introducción
+En este tutorial, lo guiaremos paso a paso para comprender y utilizar la funcionalidad "Por rango de páginas" de Aspose.Words para .NET. Esta función le permite extraer una parte específica de un documento de Word grande utilizando un rango de páginas determinado. Le proporcionaremos el código fuente completo y los formatos de salida de Markdown para que sea más fácil de entender y usar más adelante.
 
-## متطلبات
-قبل أن تبدأ ، تأكد من أن لديك ما يلي:
+## Requisitos
+Antes de comenzar, asegúrese de tener lo siguiente en su lugar:
 
-1. Aspose.Words for .NET مثبتة على جهاز التطوير الخاص بك.
-2. ملف Word كبير تريد استخراج جزء معين منه.
+1. Aspose.Words para .NET instalado en su máquina de desarrollo.
+2. Un archivo de Word grande del que desea extraer una parte específica.
 
-الآن بعد أن غطينا المتطلبات ، يمكننا الانتقال إلى خطوات استخدام ميزة حسب نطاق الصفحات.
+Ahora que hemos cubierto los requisitos, podemos pasar a los pasos para usar la función Por rango de páginas.
 
-## الخطوة 1: تهيئة المستند وتحميله
-بمجرد قيامك بإعداد بيئة التطوير الخاصة بك ، فإنك تحتاج إلى تهيئة وتحميل مستند Word الذي تريد استخراج جزء معين منه. هذا هو الكود الذي يجب استخدامه:
+## Paso 1: inicialización y carga del documento
+Una vez que haya configurado su entorno de desarrollo, debe inicializar y cargar el documento de Word del que desea extraer una parte específica. Aquí está el código a utilizar:
 
 ```csharp
-// المسار إلى دليل المستندات.
+// La ruta al directorio de documentos.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Name_of_large_document.docx");
 ```
 
-تأكد من استبدال "YOUR_DOCUMENTS_DIRECTORY" بالمسار الفعلي إلى دليل المستندات و "Name_of_large_document.docx" باسم ملف Word الكبير.
+Asegúrese de reemplazar "YOUR_DOCUMENTS_DIRECTORY" con la ruta real a su directorio de documentos y "Name_of_large_document.docx" con el nombre de su gran archivo de Word.
 
-## الخطوة 2: استخراج جزء من المستند
- الآن بعد أن قمنا بتحميل المستند ، يمكننا استخراج الجزء المحدد باستخدام ملحق`ExtractPages` تعمل مع نطاق الصفحات المطلوب. هيريس كيفية القيام بذلك:
+## Paso 2: Extrayendo la parte del documento
+ Ahora que hemos cargado el documento, podemos extraer la parte específica usando el`ExtractPages` función con el intervalo de páginas deseado. Aquí está cómo hacerlo:
 
 ```csharp
 Document extractedPages = doc.ExtractPages(3, 6);
 ```
 
-في هذا المثال ، نستخرج الصفحات 3-6 من المستند الأصلي. يمكنك ضبط أرقام الصفحات وفقًا لاحتياجاتك.
+En este ejemplo, extraemos las páginas 3-6 del documento original. Puede ajustar los números de página según sus necesidades.
 
-## الخطوة 3: احفظ الجزء المستخرج
-بمجرد استخراج الصفحات المطلوبة ، يمكننا حفظها في مستند Word جديد. إليك الطريقة:
+## Paso 3: Guarde la parte extraída
+Una vez hemos extraído las páginas deseadas, podemos guardarlas en un nuevo documento de Word. Así es cómo:
 
 ```csharp
 extractedPages.Save(dataDir + "Document_Extraits.ParRangeDePages.docx");
 ```
 
-تأكد من استبدال "Document_Extraits.ParPlageDePages.docx" بالاسم المطلوب لملف الإخراج الخاص بك.
+Asegúrese de reemplazar "Document_Extraits.ParPlageDePages.docx" con el nombre deseado para su archivo de salida.
 
-### مثال على شفرة المصدر لـ By Page Range باستخدام Aspose.Words for .NET
+### Ejemplo de código fuente para Por rango de páginas usando Aspose.Words para .NET
 
 ```csharp
 
-            // المسار إلى دليل المستندات.
+            // La ruta al directorio de documentos.
 			string dataDir = "YOUR DOCUMENT DIRECTORY";
             Document doc = new Document(MyDir + "Big document.docx");
             
-            // احصل على جزء من الوثيقة.
+            // Obtener parte del documento.
             Document extractedPages = doc.ExtractPages(3, 6);
             extractedPages.Save(dataDir + "SplitDocument.ByPageRange.docx");
             
         
 ```
 
-## خاتمة
-تهنئة ! لقد تعلمت كيفية استخدام "حسب نطاق الصفحات" من Aspose.Words for .NET. يمكنك الآن بسهولة استخراج أجزاء معينة من مستند Word كبير باستخدام نطاق صفحات معين. لا تتردد في تجربة المزيد مع ميزات Aspose القوية الأخرى. كلمات لتلبية احتياجاتك الخاصة.
+## Conclusión
+¡Felicidades! Ha aprendido a utilizar "Por rango de páginas" de Aspose.Words para .NET. Ahora puede extraer fácilmente partes específicas de un documento de Word grande utilizando un rango de páginas determinado. Siéntase libre de experimentar más con las otras potentes funciones de Aspose. .Palabras para satisfacer sus necesidades específicas.
 

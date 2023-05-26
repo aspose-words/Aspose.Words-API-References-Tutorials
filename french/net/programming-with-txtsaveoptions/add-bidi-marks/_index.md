@@ -1,22 +1,22 @@
 ---
-title: أضف علامات ثنائية الاتجاه
-linktitle: أضف علامات ثنائية الاتجاه
-second_title: Aspose.Words لمراجع .NET API
-description: تعلم كيفية إضافة علامات ثنائية الاتجاه إلى مستند Word باستخدام Aspose.Words for .NET وإنشاء مستندات احترافية متعددة اللغات.
+title: Ajouter des marques bidis
+linktitle: Ajouter des marques bidis
+second_title: Référence de l'API Aspose.Words pour .NET
+description: Apprenez à ajouter des marques Bidi à un document Word à l'aide d'Aspose.Words pour .NET et créez des documents multilingues professionnels.
 type: docs
 weight: 10
 url: /fr/net/programming-with-txtsaveoptions/add-bidi-marks/
 ---
 
-Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها ومعالجتها في تطبيق C #. من بين الميزات التي تقدمها Aspose.Words القدرة على إضافة علامات ثنائية الاتجاه (ثنائية الاتجاه) إلى المستند. في هذا الدليل ، سنرشدك إلى كيفية استخدام الكود المصدري C # الخاص بـ Aspose.Words for .NET لإضافة علامات ثنائية الاتجاه إلى مستند.
+Aspose.Words pour .NET est une bibliothèque puissante pour créer, éditer et manipuler des documents Word dans une application C#. Parmi les fonctionnalités offertes par Aspose.Words figure la possibilité d'ajouter des marques Bidi (bidirectionnelles) à un document. Dans ce guide, nous vous expliquerons comment utiliser le code source C # de Aspose.Words pour .NET pour ajouter des marques Bidi à un document.
 
-## فهم مكتبة Aspose.Words
+## Comprendre la bibliothèque Aspose.Words
 
-قبل التعمق في الكود ، من المهم فهم مكتبة Aspose.Words لـ .NET. Aspose.Words مكتبة شائعة تجعل العمل مع مستندات Word أمرًا سهلاً وفعالاً. يوفر مجموعة واسعة من الميزات لإنشاء مستندات Word وتحريرها ومعالجتها ، بما في ذلك إضافة علامات ثنائية الاتجاه.
+Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque populaire qui rend le travail avec les documents Word simple et efficace. Il offre un large éventail de fonctionnalités pour créer, éditer et manipuler des documents Word, y compris l'ajout de marques Bidi.
 
-## إنشاء الوثيقة وإضافة المحتوى
+## Création du document et ajout de contenu
 
-تتمثل الخطوة الأولى في إنشاء مستند جديد وإضافة محتوى إليه. استخدم فئة المستند لإنشاء مثيل مستند جديد. ثم استخدم فئة DocumentBuilder لإضافة نص إلى المستند. هنا مثال :
+La première étape consiste à créer un nouveau document et à y ajouter du contenu. Utilisez la classe Document pour créer une nouvelle instance de document. Utilisez ensuite la classe DocumentBuilder pour ajouter du texte au document. Voici un exemple :
 
 ```csharp
 Document doc = new Document();
@@ -28,26 +28,26 @@ builder. Writen("שלום עולם!");
 builder. Writen("مرحبا بالعالم!");
 ```
 
-في هذا المثال ، نقوم بإنشاء مستند جديد واستخدام DocumentBuilder لإضافة نص. لقد أضفنا ثلاثة أسطر نصية: واحد بالإنجليزية والآخر بالعبرية والآخر بالعربية لإثبات إضافة محتوى بلغات مختلفة.
+Dans cet exemple, nous créons un nouveau document et utilisons le DocumentBuilder pour ajouter du texte. Nous avons ajouté trois lignes de texte : une en anglais, une en hébreu et une en arabe pour illustrer l'ajout de contenu dans différentes langues.
 
-## العلامات ثنائية الاتجاه المضافة
+## Marques Bidi ajoutées
 
-بمجرد إضافة المحتوى ، يمكننا الآن إضافة علامات ثنائية الاتجاه إلى المستند. لهذا ، نستخدم فئة TxtSaveOptions وقمنا بتعيين الخاصية AddBidiMarks على true. إليك الطريقة:
+Une fois le contenu ajouté, nous pouvons maintenant ajouter des marques Bidi au document. Pour cela, nous utilisons la classe TxtSaveOptions et nous définissons la propriété AddBidiMarks sur true. Voici comment:
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 ```
 
-في هذا المثال ، قمنا بإنشاء مثيل لـ TxtSaveOptions وقمنا بتعيين الخاصية AddBidiMarks على true. بعد ذلك ، نستخدم طريقة Save لفئة Document لحفظ المستند بعلامات ثنائية الاتجاه.
+Dans cet exemple, nous créons une instance de TxtSaveOptions et définissons la propriété AddBidiMarks sur true. Ensuite, nous utilisons la méthode Save de la classe Document pour enregistrer le document avec les marques Bidi.
 
-### مثال على شفرة المصدر لوظيفة "Add Bidi Marks" مع Aspose.Words for .NET
+### Exemple de code source pour la fonctionnalité "Ajouter des marques Bidi" avec Aspose.Words pour .NET
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+// Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وإضافة محتوى
+// Créer le document et ajouter du contenu
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
@@ -56,13 +56,13 @@ builder.ParagraphFormat.Bidi = true;
 builder. Writen("שלום עולם!");
 builder. Writen("مرحبا بالعالم!");
 
-// أضف علامات ثنائية الاتجاه
+// Ajouter des marques Bidi
 TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true
 
   };
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 ```
 
-## خاتمة
+## Conclusion
 
-في هذا الدليل ، أوضحنا كيفية استخدام Aspose.Words for .NET لإضافة علامات ثنائية الاتجاه إلى مستند Word باستخدام كود المصدر C # المقدم. باتباع الخطوات المقدمة ، يمكنك بسهولة إضافة علامات ثنائية الاتجاه إلى مستندات Word في تطبيق C # الخاص بك. يوفر Aspose.Words مرونة وقوة هائلة للعمل مع تنسيق النص وإدارة اللغة ، مما يسمح لك بإنشاء مستندات متعددة اللغات بشكل احترافي.
+Dans ce guide, nous avons expliqué comment utiliser Aspose.Words pour .NET pour ajouter des marques Bidi à un document Word à l'aide du code source C# fourni. En suivant les étapes fournies, vous pouvez facilement ajouter des marques Bidi à vos documents Word dans votre application C#. Aspose.Words offre une flexibilité et une puissance considérables pour travailler avec le formatage du texte et la gestion des langues, vous permettant de créer des documents multilingues de manière professionnelle.

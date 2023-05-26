@@ -1,45 +1,45 @@
 ---
-title: تجاهل مربعات النص
-linktitle: تجاهل مربعات النص
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إلحاق مستند أثناء تجاهل تنسيق مربع النص باستخدام Aspose.Words for .NET.
+title: Textfelder ignorieren
+linktitle: Textfelder ignorieren
+second_title: Aspose.Words für .NET API-Referenz
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument anhängen und dabei die Textfeldformatierung ignorieren.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/ignore-text-boxes/
 ---
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق مستند مع الحفاظ على تنسيق مربعات النص. يوضح كود المصدر المقدم كيفية إعداد خيارات تنسيق الاستيراد لتضمين مربعات النص أثناء عملية الإلحاق.
+In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET ein Dokument anhängen und dabei die Formatierung von Textfeldern beibehalten. Der bereitgestellte Quellcode zeigt, wie die Importformatoptionen so eingerichtet werden, dass Textfelder während des Anhängevorgangs einbezogen werden.
 
-## الخطوة 1: قم بإعداد المشروع
+## Schritt 1: Richten Sie das Projekt ein
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+Stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من موقع Aspose الرسمي أو استخدام مدير حزمة NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+- Aspose.Words für .NET-Bibliothek installiert. Sie können es von der offiziellen Aspose-Website herunterladen oder den NuGet-Paketmanager verwenden, um es zu installieren.
+- Ein Dokumentverzeichnispfad, in dem sich die Quell- und Zieldokumente befinden.
 
-## الخطوة 2: افتح مستندات المصدر والوجهة
+## Schritt 2: Öffnen Sie die Quell- und Zieldokumente
 
- افتح مستندات المصدر والوجهة باستخدام ملف`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى دليل المستند الخاص بك.
+ Öffnen Sie die Quell- und Zieldokumente mit`Document` Klassenkonstruktor. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+// Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إعداد خيارات تنسيق الاستيراد
+## Schritt 3: Importformatoptionen einrichten
 
- قم بإنشاء مثيل لـ`ImportFormatOptions` فئة وضبط`IgnoreTextBoxes` ملكية ل`false`. يضمن ذلك تضمين مربعات النص أثناء عملية الإلحاق مع الحفاظ على تنسيقها.
+ Erstellen Sie eine Instanz von`ImportFormatOptions` Klasse und legen Sie die fest`IgnoreTextBoxes` Eigentum zu`false`. Dadurch wird sichergestellt, dass die Textfelder während des Anhängevorgangs einbezogen werden und ihre Formatierung erhalten bleibt.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 ```
 
-## الخطوة 4: إلحاق محتوى مربع نص
+## Schritt 4: Textfeldinhalt anhängen
 
- إنشاء`NodeImporter` كائن واستخدمه لاستيراد عقد مربع نص من المستند المصدر إلى المستند الوجهة. كرر خلال كل فقرة في المستند المصدر واستوردها إلى المستند الوجهة.
+ Ein ... kreieren`NodeImporter` Objekt und verwenden Sie es, um Textfeldknoten aus dem Quelldokument in das Zieldokument zu importieren. Gehen Sie jeden Absatz im Quelldokument durch und importieren Sie ihn in das Zieldokument.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -51,25 +51,25 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## الخطوة 5: احفظ المستند الوجهة
+## Schritt 5: Speichern Sie das Zieldokument
 
- أخيرًا ، احفظ مستند الوجهة المعدل باستخدام امتداد`Save` طريقة`Document` هدف.
+ Speichern Sie abschließend das geänderte Zieldokument mit`Save` Methode der`Document` Objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 ```
 
-هذا يكمل تنفيذ إلحاق مستند مع الحفاظ على تنسيق مربع النص باستخدام Aspose.Words for .NET.
+Damit ist die Implementierung des Anhängens eines Dokuments unter Beibehaltung der Textfeldformatierung mithilfe von Aspose.Words für .NET abgeschlossen.
 
-### مثال على شفرة المصدر لـ Ignore Text Boxes باستخدام Aspose.Words for .NET 
+### Beispielquellcode für „Textfelder ignorieren“ mit Aspose.Words für .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	// Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//احتفظ بتنسيق مربعات النص المصدر عند الاستيراد.
+	//Behalten Sie beim Importieren die Formatierung der Quelltextfelder bei.
 	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
 		importFormatOptions);

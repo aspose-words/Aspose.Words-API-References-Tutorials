@@ -1,40 +1,40 @@
 ---
-title: الانتقال إلى تذييلات الرؤوس
-linktitle: الانتقال إلى تذييلات الرؤوس
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام Aspose.Words for .NET للتنقل وتعديل الرؤوس والتذييلات في مستندات Word باستخدام هذا الدليل التفصيلي.
+title: Flytta till sidhuvuden Sidfötter
+linktitle: Flytta till sidhuvuden Sidfötter
+second_title: Aspose.Words för .NET API Referens
+description: Lär dig hur du använder Aspose.Words för .NET för att navigera och ändra sidhuvuden och sidfötter i Word-dokument med denna steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
 
-في هذا المثال ، سوف نستكشف ميزة Move To Headers Footers في Aspose.Words for .NET. Aspose.Words مكتبة قوية لمعالجة المستندات تتيح للمطورين إنشاء مستندات Word وتعديلها وتحويلها برمجيًا. تتيح لنا ميزة Move To Headers / Footers التنقل إلى رؤوس وتذييلات مختلفة داخل المستند وإضافة محتوى إليها.
+det här exemplet kommer vi att utforska funktionen Move To Headers Footers i Aspose.Words för .NET. Aspose.Words är ett kraftfullt dokumentmanipuleringsbibliotek som låter utvecklare skapa, modifiera och konvertera Word-dokument programmatiskt. Funktionen Flytta till sidhuvuden/sidfötter gör att vi kan navigera till olika sidhuvuden och sidfötter i ett dokument och lägga till innehåll till dem.
 
-دعنا ننتقل إلى الكود المصدري خطوة بخطوة لفهم كيفية استخدام ميزة Move To Headers / Footers باستخدام Aspose.Words for .NET.
+Låt oss gå igenom källkoden steg för steg för att förstå hur man använder funktionen Flytta till sidhuvuden/sidfot med Aspose.Words för .NET.
 
 
 
-## الخطوة 1: تهيئة مستند إنشاء المستندات
+## Steg 1: Initiera dokument- och dokumentbyggaren
 
-أولاً ، قم بتهيئة كائنات Document و DocumentBuilder:
+Initiera först Document- och DocumentBuilder-objekten:
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: تكوين الرؤوس والتذييلات
+## Steg 2: Konfigurera sidhuvuden och sidfötter
 
-حدد إعدادات الرأس / التذييل للمستند. في هذا المثال ، قمنا بتعيين الرؤوس والتذييلات لتكون مختلفة للصفحة الأولى وللصفحات الفردية / الزوجية:
+Ange inställningar för sidhuvud/sidfot för dokumentet. I det här exemplet ställer vi in sidhuvuden och sidfötter så att de är olika för första sidan och för udda/jämna sidor:
 
 ```csharp
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 ```
 
-## الخطوة 3: إنشاء رؤوس الصفحات المختلفة
+## Steg 3: Skapa rubriker för olika sidor
 
-انتقل إلى كل نوع من أنواع العناوين وأضف محتوى إليها. في هذا المثال ، نقوم بإنشاء رؤوس للصفحة الأولى وحتى الصفحات وجميع الصفحات الأخرى:
+Flytta till varje rubriktyp och lägg till innehåll till dem. I det här exemplet skapar vi rubriker för första sidan, jämna sidor och alla andra sidor:
 
 ```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
@@ -47,38 +47,38 @@ builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 builder.Write("Header for all other pages");
 ```
 
-## الخطوة 4: إنشاء صفحات في المستند
-أضف محتوى إلى المستند لإنشاء صفحات متعددة. على سبيل المثال:
+## Steg 4: Skapa sidor i dokumentet
+Lägg till innehåll i dokumentet för att skapa flera sidor. Till exempel:
 
 ```csharp
-// قم بإنشاء صفحتين في المستند.
+// Skapa två sidor i dokumentet.
 builder.MoveToSection(0);
 builder.Writeln("Page1");
 builder.InsertBreak(BreakType.PageBreak);
 builder.Writeln("Page2");
 ```
-## الخطوة 5: حفظ المستند
+## Steg 5: Spara dokumentet
 
-احفظ المستند المعدل في المكان المطلوب:
+Spara det ändrade dokumentet på önskad plats:
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```
 
-تأكد من تحديد مسار الملف المناسب وتنسيقه (على سبيل المثال ، DOCX).
+Se till att ange lämplig sökväg och filformat (t.ex. DOCX).
 
-### مثال على شفرة المصدر لـ Move To Headers / Footers باستخدام Aspose.Words for .NET
+### Exempel på källkod för Flytta till sidhuvuden/sidfötter med Aspose.Words för .NET
 
 ```csharp
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// حدد أننا نريد اختلاف الرؤوس والتذييلات للصفحات الأولى والزوجية والفردية.
+	// Ange att vi vill ha olika sidhuvuden och sidfötter för första, jämna och udda sidor.
 	builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 	builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
-	// قم بإنشاء الرؤوس.
+	// Skapa rubrikerna.
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
 	builder.Write("Header for the first page");
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
@@ -86,7 +86,7 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.doc
 	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 	builder.Write("Header for all other pages");
 
-	// قم بإنشاء صفحتين في المستند.
+	// Skapa två sidor i dokumentet.
 	builder.MoveToSection(0);
 	builder.Writeln("Page1");
 	builder.InsertBreak(BreakType.PageBreak);
