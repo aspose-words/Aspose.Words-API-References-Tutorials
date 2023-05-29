@@ -48,14 +48,12 @@ The output can be formatted in markdown to improve readability. For example :
 Here is the complete source code to remove comments in a PDF file using Aspose.Words for .NET:
 
 ```csharp
+// The path to the documents directory.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Revisions.docx");
+// Hide comments in the PDF.
+doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 
-	// Hide comments in the PDF.
-	doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
-
-	doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
-
+doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 ```

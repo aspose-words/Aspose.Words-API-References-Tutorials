@@ -48,23 +48,21 @@ MergeDocuments();
 Here is the complete source code for the Page by Page feature of Aspose.Words for .NET:
 
 ```csharp
+// The path to the documents directory.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Big document.docx");
 
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Big document.docx");
+int pageCount = doc.PageCount;
 
-	int pageCount = doc.PageCount;
+for (int page = 0; page < pageCount; page++)
+{
+	// Save each page as a separate document.
+	Document extractedPage = doc.ExtractPages(page, 1);
+	extractedPage.Save(dataDir + $"SplitDocument.PageByPage_{page + 1}.docx");
+}
 
-	for (int page = 0; page < pageCount; page++)
-	{
-		// Save each page as a separate document.
-		Document extractedPage = doc.ExtractPages(page, 1);
-		extractedPage.Save(dataDir + $"SplitDocument.PageByPage_{page + 1}.docx");
-	}
-	
 
-	MergeDocuments();
-
+MergeDocuments();
 ```
 
 With this code you will be able to split a Word document into individual pages using Aspose.Words for .NET. You can also merge separate documents if needed.

@@ -35,17 +35,15 @@ doc.Save(dataDir + "SplitDocument.ParSectionsHtml.html", options);
 Here is the complete source code for the By HTML Sections feature of Aspose.Words for .NET:
 
 ```csharp
+// The path to the documents directory.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Rendering.docx");
 
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Rendering.docx");
 
-	
-	HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
-	
-	
-	doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
+HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
 
+
+doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
 ```
 
 With this code you will be able to split a Word document into separate sections in HTML format using Aspose.Words for .NET.
