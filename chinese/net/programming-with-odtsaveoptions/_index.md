@@ -2,7 +2,7 @@
 title: 使用 Odtsaveoptions 编程
 linktitle: 使用 Odtsaveoptions 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含度量单位
+description: 在 Aspose.Words for .NET 中使用 ODT 保存选项学习编程。带有示例代码的详细教程，用于将 Word 文档保存为 ODT 格式。
 type: docs
 weight: 1650
 url: /zh/net/programming-with-odtsaveoptions/

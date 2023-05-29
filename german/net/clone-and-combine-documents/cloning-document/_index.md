@@ -34,14 +34,12 @@ clone.Save(dataDir + "CloneAndCombineDocuments.ClonageDocument.docx");
 Hier ist der vollständige Quellcode für die Funktion zum Klonen von Aspose.Words-Dokumenten für .NET:
 
 ```csharp
+// Der Pfad zum Dokumentenverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";            
+Document doc = new Document(MyDir + "Document.docx");
 
-	// Der Pfad zum Dokumentenverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";            
-	Document doc = new Document(MyDir + "Document.docx");
-
-	Document clone = doc.Clone();
-	clone.Save(dataDir + "CloneAndCombineDocuments.CloningDocument.docx");
-	
+Document clone = doc.Clone();
+clone.Save(dataDir + "CloneAndCombineDocuments.CloningDocument.docx");
 ```
 
 Mit diesem Code können Sie Word-Dokumente mit Aspose.Words für .NET klonen. Die exakte Kopie des Dokuments wird unter einem neuen Dateinamen gespeichert.

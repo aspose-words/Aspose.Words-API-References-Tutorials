@@ -52,7 +52,7 @@ while (node != endNode)
 }
 ```
 
-## الخطوة الرابعة: التوقف عن تتبع التعليقات
+## الخطوة الرابعة: وقف تتبع المراجعات
 
 سنتوقف عن تتبع المراجعات في المستند.
 
@@ -76,40 +76,38 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
 
 ```csharp
+// المسار إلى دليل المستندات.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("Paragraph 1");
+builder.Writeln("Paragraph 2");
+builder.Writeln("Paragraph 3");
+builder.Writeln("Paragraph 4");
+builder.Writeln("Paragraph 5");
+builder.Writeln("Paragraph 6");
+Body body = doc.FirstSection.Body;
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.Writeln("Paragraph 1");
-	builder.Writeln("Paragraph 2");
-	builder.Writeln("Paragraph 3");
-	builder.Writeln("Paragraph 4");
-	builder.Writeln("Paragraph 5");
-	builder.Writeln("Paragraph 6");
-	Body body = doc.FirstSection.Body;
-	Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+// بدء تتبع المراجعات.
+doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
-	// بدء تتبع المراجعات.
-	doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+// إنشاء مراجعات عند نقل عقدة من موقع إلى آخر.
+Node node = body.Paragraphs[3];
+Node endNode = body.Paragraphs[5].NextSibling;
+Node referenceNode = body.Paragraphs[0];
+while (node != endNode)
+{
+	Node nextNode = node.NextSibling;
+	body.InsertBefore(node, referenceNode);
+	node = nextNode;
+}
 
-	// إنشاء مراجعات عند نقل عقدة من موقع إلى آخر.
-	Node node = body.Paragraphs[3];
-	Node endNode = body.Paragraphs[5].NextSibling;
-	Node referenceNode = body.Paragraphs[0];
-	while (node != endNode)
-	{
-		Node nextNode = node.NextSibling;
-		body.InsertBefore(node, referenceNode);
-		node = nextNode;
-	}
+// أوقف عملية تتبع المراجعات.
+doc.StopTrackRevisions();
 
-	// أوقف عملية تتبع المراجعات.
-	doc.StopTrackRevisions();
-
-	// هناك 3 فقرات إضافية في نطاق الانتقال من.
-	Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
-	doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
-            
+// هناك 3 فقرات إضافية في نطاق الانتقال من.
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```
 

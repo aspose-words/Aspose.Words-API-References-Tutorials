@@ -38,21 +38,18 @@ doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
 Aspose.Words for .NET'in HTML Başlığına Göre özelliğinin tam kaynak kodu burada:
 
 ```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Rendering.docx");
 
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Rendering.docx");
+HtmlSaveOptions options = new HtmlSaveOptions
+{
+	// Bir belgeyi daha küçük parçalara ayırın, bu örnekte başlığa göre bölün.
+	DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
+};
 
-	HtmlSaveOptions options = new HtmlSaveOptions
-	{
-		// Bir belgeyi daha küçük parçalara ayırın, bu örnekte başlığa göre bölün.
-		DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
-	};
-	
 
-	doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
-	
-
+doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
 Bu kodla, Aspose.Words for .NET kullanarak bir Word belgesini başlıklara göre daha küçük parçalara bölebileceksiniz. Daha sonra her bölüm için ayrı HTML belgeleri oluşturabilirsiniz.

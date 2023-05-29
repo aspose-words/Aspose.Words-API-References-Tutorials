@@ -35,17 +35,15 @@ doc.Save(dataDir + "SplitDocument.ParSectionsHtml.html", options);
 Hier ist der vollständige Quellcode für die Funktion „Nach HTML-Abschnitten“ von Aspose.Words für .NET:
 
 ```csharp
+// Der Pfad zum Dokumentenverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Rendering.docx");
 
-	// Der Pfad zum Dokumentenverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Rendering.docx");
 
-	
-	HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
-	
-	
-	doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
+HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
 
+
+doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
 ```
 
 Mit diesem Code können Sie ein Word-Dokument mit Aspose.Words für .NET in separate Abschnitte im HTML-Format aufteilen.

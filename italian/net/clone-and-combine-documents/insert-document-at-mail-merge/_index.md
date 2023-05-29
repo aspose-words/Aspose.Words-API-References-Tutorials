@@ -42,19 +42,17 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc")
 Ecco il codice sorgente completo per la funzione Inserisci documento nella stampa unione di Aspose.Words per .NET:
 
 ```csharp
+// Il percorso della directory dei documenti.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
-	// Il percorso della directory dei documenti.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
+//Il documento principale contiene un campo di unione denominato "Documento_1".
+// I dati corrispondenti per questo campo contengono un percorso completo del documento.
+// Questo dovrebbe essere inserito in questo campo.
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 
-	mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-	//Il documento principale contiene un campo di unione denominato "Documento_1".
-	// I dati corrispondenti per questo campo contengono un percorso completo del documento.
-	// Questo dovrebbe essere inserito in questo campo.
-	mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-
-	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-
+mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
 Con questo codice sarai in grado di inserire un documento in un altro documento durante la stampa unione utilizzando Aspose.Words per .NET. Il documento risultante verrà salvato con un nuovo nome

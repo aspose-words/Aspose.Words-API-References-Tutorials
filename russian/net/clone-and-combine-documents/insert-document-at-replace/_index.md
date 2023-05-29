@@ -47,20 +47,18 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 Вот полный исходный код для функции «Вставить документ» при замене Aspose.Words для .NET:
 
 ```csharp
+// Путь к каталогу документов.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
-	// Путь к каталогу документов.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+// Установите параметры поиска и замены.
+FindReplaceOptions options = new FindReplaceOptions
+{
+	Direction = FindReplaceDirection.Backward, 
+	ReplacingCallback = new InsertDocumentAtReplaceHandler()
+};
 
-	// Установите параметры поиска и замены.
-	FindReplaceOptions options = new FindReplaceOptions
-	{
-		Direction = FindReplaceDirection.Backward, 
-		ReplacingCallback = new InsertDocumentAtReplaceHandler()
-	};
-
-	// Вызовите метод замены.
-	mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
-	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
-
+// Вызовите метод замены.
+mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
+mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```

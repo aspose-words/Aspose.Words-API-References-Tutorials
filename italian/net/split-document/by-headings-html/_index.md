@@ -38,21 +38,18 @@ doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
 Ecco il codice sorgente completo per la funzione By HTML Heading di Aspose.Words per .NET:
 
 ```csharp
+// Il percorso della directory dei documenti.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Rendering.docx");
 
-	// Il percorso della directory dei documenti.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Rendering.docx");
+HtmlSaveOptions options = new HtmlSaveOptions
+{
+	// Dividere un documento in parti più piccole, in questo caso suddivise per intestazione.
+	DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
+};
 
-	HtmlSaveOptions options = new HtmlSaveOptions
-	{
-		// Dividere un documento in parti più piccole, in questo caso suddivise per intestazione.
-		DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
-	};
-	
 
-	doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
-	
-
+doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
 Con questo codice, sarai in grado di dividere un documento Word in parti più piccole usando Aspose.Words per .NET, basato su intestazioni. È quindi possibile generare documenti HTML separati per ciascuna parte.

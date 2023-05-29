@@ -2,7 +2,7 @@
 title: العمل مع OleObjects و ActiveX
 linktitle: العمل مع OleObjects و ActiveX
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية إدراج كائن Ole مع حزمة Ole وبدونها ، وكائن Ole كرمز ، وقراءة خصائص Active XControl باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية العمل مع كائنات OLE و ActiveX في مستندات Word باستخدام Aspose.Words for .NET. دروس مفصلة مع أمثلة التعليمات البرمجية.
 type: docs
 weight: 1080
 url: /ar/net/working-with-oleobjects-and-activex/

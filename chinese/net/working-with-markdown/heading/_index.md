@@ -40,17 +40,16 @@ builder.Writeln("This is an H1 tag");
 
 
 ```csharp
-	//使用文档生成器向文档添加内容。
-	DocumentBuilder builder = new DocumentBuilder();
+//使用文档生成器向文档添加内容。
+DocumentBuilder builder = new DocumentBuilder();
 
-	//默认情况下，Word 中的标题样式可能具有粗体和斜体格式。
-	//如果我们不想被强调，请将这些属性显式设置为 false。
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+//默认情况下，Word 中的标题样式可能具有粗体和斜体格式。
+//如果我们不想被强调，请将这些属性显式设置为 false。
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	builder.ParagraphFormat.StyleName = "Heading 1";
-	builder.Writeln("This is an H1 tag");
-            
+builder.ParagraphFormat.StyleName = "Heading 1";
+builder.Writeln("This is an H1 tag");
 ```
 
 恭喜！您现在已经了解了如何使用 Aspose.Words for .NET 的标题功能。

@@ -39,21 +39,20 @@ builder.Writeln("d");
 ### 使用 Aspose.Words for .NET 创建表格的示例源代码
 
 ```csharp
-	//使用文档生成器向文档添加内容。
-	DocumentBuilder builder = new DocumentBuilder();
+//使用文档生成器向文档添加内容。
+DocumentBuilder builder = new DocumentBuilder();
 
-	//添加第一行。
-	builder.InsertCell();
-	builder.Writeln("a");
-	builder.InsertCell();
-	builder.Writeln("b");
+//添加第一行。
+builder.InsertCell();
+builder.Writeln("a");
+builder.InsertCell();
+builder.Writeln("b");
 
-	//添加第二行。
-	builder.InsertCell();
-	builder.Writeln("c");
-	builder.InsertCell();
-	builder.Writeln("d");
-            
+//添加第二行。
+builder.InsertCell();
+builder.Writeln("c");
+builder.InsertCell();
+builder.Writeln("d");
 ```
 
 恭喜！您现在已经学习了如何使用 Aspose.Words for .NET 创建表格。

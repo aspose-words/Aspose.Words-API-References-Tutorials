@@ -1,6 +1,6 @@
 ---
-title: 合并文件
-linktitle: 合并文件
+title: 合并文档
+linktitle: 合并文档
 second_title: Aspose.Words for .NET API 参考
 description: 分步指南解释 Aspose.Words for .NET 的合并文档功能的 C# 源代码
 type: docs
@@ -55,33 +55,31 @@ mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 以下是 Aspose.Words for .NET 的合并文档功能的完整源代码：
 
 ```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+//查找用于合并的文档。
+FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
+	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
+string sourceDocumentPath =
+	Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
 
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	//查找用于合并的文档。
-	FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-		.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-	string sourceDocumentPath =
-		Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
+//打开生成的文档的第一部分。
+Document sourceDoc = new Document(sourceDocumentPath);
 
-	//打开生成的文档的第一部分。
-	Document sourceDoc = new Document(sourceDocumentPath);
+//创建一个新的结果文档。
+Document mergedDoc = new Document();
+DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-	//创建一个新的结果文档。
-	Document mergedDoc = new Document();
-	DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
+//一个接一个地合并文档部分。
+foreach (FileSystemInfo documentPath in documentPaths)
+{
+	if (documentPath.FullName == sourceDocumentPath)
+		continue;
 
-	//一个接一个地合并文档部分。
-	foreach (FileSystemInfo documentPath in documentPaths)
-	{
-		if (documentPath.FullName == sourceDocumentPath)
-			continue;
+	mergedDocBuilder.MoveToDocumentEnd();
+	mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
+	sourceDoc = new Document(documentPath.FullName);
+}
 
-		mergedDocBuilder.MoveToDocumentEnd();
-		mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-		sourceDoc = new Document(documentPath.FullName);
-	}
-
-	mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
-
+mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```

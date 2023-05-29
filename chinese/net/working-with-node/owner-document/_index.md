@@ -65,27 +65,26 @@ Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null
 ### 使用 Aspose.Words for .NET 的所有者文档示例源代码
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	//创建任何类型的新节点都需要将文档传递给构造函数。
-	Paragraph para = new Paragraph(doc);
+//创建任何类型的新节点都需要将文档传递给构造函数。
+Paragraph para = new Paragraph(doc);
 
-	//新的段落节点还没有父节点。
-	Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
+//新的段落节点还没有父节点。
+Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 
-	//但是段落节点知道它的文档。
-	Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
+//但是段落节点知道它的文档。
+Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-	//一个节点总是属于一个文档的事实允许我们访问和修改
-	//引用文档范围数据的属性，例如样式或列表。
-	para.ParagraphFormat.StyleName = "Heading 1";
+//一个节点总是属于一个文档的事实允许我们访问和修改
+//引用文档范围数据的属性，例如样式或列表。
+para.ParagraphFormat.StyleName = "Heading 1";
 
-	//现在将段落添加到第一部分的正文中。
-	doc.FirstSection.Body.AppendChild(para);
+//现在将段落添加到第一节的正文中。
+doc.FirstSection.Body.AppendChild(para);
 
-	//段落节点现在是 Body 节点的子节点。
-	Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
-            
+//段落节点现在是 Body 节点的子节点。
+Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
 

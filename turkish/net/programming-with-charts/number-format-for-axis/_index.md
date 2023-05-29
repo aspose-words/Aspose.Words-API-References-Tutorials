@@ -1,6 +1,6 @@
 ---
-title: Eksen İçin Sayı Biçimi
-linktitle: Eksen İçin Sayı Biçimi
+title: Eksen İçin Sayı Formatı
+linktitle: Eksen İçin Sayı Formatı
 second_title: Aspose.Words for .NET API Referansı
 description: Aspose.Words for .NET kullanarak bir grafikte bir eksen için sayı biçimini nasıl ayarlayacağınızı öğrenin.
 type: docs

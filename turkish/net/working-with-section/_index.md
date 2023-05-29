@@ -2,7 +2,7 @@
 title: Bölümle Çalışmak
 linktitle: Bölümle Çalışmak
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, bölüm ekle, bölüm sil, tüm bölümleri sil, bölüm içeriğini ekle, bölümü klonla, bölümü kopyala, başlık alt bilgi içeriğini sil, bölüm içeriğini sil, tüm bölümlerde sayfa düzenini değiştir ve Aspose.Words for .NET kullanarak bölümlere dizinle erişim içerir.
+description: Aspose.Words for .NET kullanarak Word belgelerindeki bölümlerle nasıl çalışacağınızı öğrenin. Bölümleri verimli bir şekilde oluşturmak, düzenlemek ve biçimlendirmek için örnek kod içeren adım adım öğreticiler.
 type: docs
 weight: 1220
 url: /tr/net/working-with-section/
@@ -13,7 +13,7 @@ Bölümlerle çalışmak, Word belgelerindeki bölümlerle çalışma konusunda 
 
 Öğreticiler ayrıca mevcut bölümleri silmeye ve değiştirmeye odaklanır. Belirli bölümleri nasıl sileceğinizi, bölümleri yeniden düzenlemeyi, düzen ayarlarını değiştirmeyi ve Word belgelerinizi özel ihtiyaçlarınıza göre uyarlamak için diğer gelişmiş işlemleri gerçekleştirmeyi öğreneceksiniz.
 
-Bu eğitimleri takip ederek, Aspose.Words for .NET'i kullanarak Word belgelerinizdeki bölümleri kolayca yönetebileceksiniz. İster yeni belgeler oluşturmak, ister var olan belgeleri değiştirmek veya bölümleri özelleştirmek isteyin, bu eğitimler size bu görevleri başarıyla gerçekleştirmeniz için gereken bilgi ve becerileri sağlayacaktır.
+Bu eğitimleri takip ederek, Aspose.Words for .NET'i kullanarak Word belgelerinizdeki bölümleri kolaylıkla yönetebileceksiniz. İster yeni belgeler oluşturmak, ister var olan belgeleri değiştirmek veya bölümleri özelleştirmek isteyin, bu eğitimler size bu görevleri başarıyla gerçekleştirmeniz için gereken bilgi ve becerileri sağlayacaktır.
 
  ## Öğreticiler
 | Başlık | Tanım |

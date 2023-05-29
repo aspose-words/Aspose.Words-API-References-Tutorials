@@ -2,7 +2,7 @@
 title: Programación Con Tablas
 linktitle: Programación Con Tablas
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen tabla de ajuste automático al contenido, tabla de ajuste automático a anchos de columna fijos, tabla de ajuste automático al ancho de página, creación de tabla a partir de tabla de datos, tabla de importación desde
+description: Aprenda a programar tablas en Aspose.Words para .NET. Aprenda a crear, manipular y formatear tablas en sus documentos de Word con tutoriales paso a paso y ejemplos de código C#.
 type: docs
 weight: 1590
 url: /es/net/programming-with-tables/
@@ -29,7 +29,7 @@ Al seguir estos tutoriales, podrá aprovechar al máximo las funciones de manipu
 | [Formato de fila Desactivar división entre páginas](./row-format-disable-break-across-pages/) | Aprenda a deshabilitar el salto de línea para una tabla en varias páginas en un documento de Word con Aspose.Words para .NET. |
 | [Mantener la mesa unida](./keep-table-together/) | Aprenda a mantener unida una tabla en un documento de Word con Aspose.Words para .NET. |
 | [Fusión vertical](./vertical-merge/) | Aprenda a combinar verticalmente celdas en una tabla en un documento de Word usando Aspose.Words para .NET. |
-| [Fusión horizontal](./horizontal-merge/) | Aprenda a fusionar celdas horizontalmente en una tabla de Word con Aspose.Words para .NET. |
+| [Fusión Horizontal](./horizontal-merge/) | Aprenda a fusionar celdas horizontalmente en una tabla de Word con Aspose.Words para .NET. |
 | [Convertir a celdas combinadas horizontalmente](./convert-to-horizontally-merged-cells/) | Aprenda a convertir celdas de tabla en celdas combinadas horizontalmente en un documento de Word con Aspose.Words para .NET. |
 | [Repetir filas en páginas posteriores](./repeat-rows-on-subsequent-pages/) | Aprenda a repetir las filas de la tabla en las páginas siguientes de un documento de Word con Aspose.Words para .NET. |
 | [Ajuste automático al ancho de la página](./auto-fit-to-page-width/) | Aprenda a ajustar automáticamente una tabla al ancho de página en un documento de Word con Aspose.Words para .NET. |

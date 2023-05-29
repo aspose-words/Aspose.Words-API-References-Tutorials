@@ -2,7 +2,7 @@
 title: Programmering med Officemath
 linktitle: Programmering med Officemath
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller matematiska ekvationer
+description: Utforska programmering med Office Math-formler i Aspose.Words för .NET. Steg-för-steg handledning och exempelkod för att skapa, redigera och formatera matematiska ekvationer i Word-dokument.
 type: docs
 weight: 1550
 url: /sv/net/programming-with-officemath/

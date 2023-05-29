@@ -2,7 +2,7 @@
 title: Trabajando con Separación de Palabras
 linktitle: Trabajando con Separación de Palabras
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen Words of Languages con guiones, cargar el diccionario de guiones para el idioma y la devolución de llamada de guiones usando Aspose.Words para .NET.
+description: Aprenda a administrar la partición de palabras en documentos de Word con Aspose.Words para .NET. Tutoriales completos y ejemplos prácticos incluidos.
 type: docs
 weight: 750
 url: /es/net/working-with-hyphenation/

@@ -39,13 +39,12 @@ builder.Writeln("This text will be StrikeThrough");
 ### Aspose.Words for .NET ile üstü çizili metin için örnek kaynak kodu
 
 ```csharp
-	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
-	DocumentBuilder builder = new DocumentBuilder();
+// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Metni üstü çizili yapın.
-	builder.Font.StrikeThrough = true;
-	builder.Writeln("This text will be StrikeThrough");
-            
+// Metni üstü çizili yapın.
+builder.Font.StrikeThrough = true;
+builder.Writeln("This text will be StrikeThrough");
 ```
 
 Tebrikler! Artık üstü çizili metin stilini Aspose.Words for .NET ile nasıl uygulayacağınızı öğrendiniz.

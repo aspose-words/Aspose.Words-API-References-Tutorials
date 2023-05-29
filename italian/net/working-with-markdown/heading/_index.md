@@ -40,17 +40,16 @@ builder.Writeln("This is an H1 tag");
 
 
 ```csharp
-	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
-	DocumentBuilder builder = new DocumentBuilder();
+// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Per impostazione predefinita, gli stili di intestazione in Word possono avere la formattazione grassetto e corsivo.
-	//Se non vogliamo essere enfatizzati, imposta queste proprietà esplicitamente su false.
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+// Per impostazione predefinita, gli stili di intestazione in Word possono avere la formattazione grassetto e corsivo.
+//Se non vogliamo essere enfatizzati, imposta queste proprietà esplicitamente su false.
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	builder.ParagraphFormat.StyleName = "Heading 1";
-	builder.Writeln("This is an H1 tag");
-            
+builder.ParagraphFormat.StyleName = "Heading 1";
+builder.Writeln("This is an H1 tag");
 ```
 
 Congratulazioni! Ora hai imparato come utilizzare la funzionalità delle intestazioni con Aspose.Words per .NET.

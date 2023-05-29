@@ -31,13 +31,12 @@ builder.Writeln("This text will be in italics");
 
 
 ```csharp
-	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
-	DocumentBuilder builder = new DocumentBuilder();
+// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Rendi il testo in corsivo.
-	builder.Font.Italic = true;
-	builder.Writeln("This text will be Italic");
-            
+// Rendi il testo in corsivo.
+builder.Font.Italic = true;
+builder.Writeln("This text will be Italic");
 ```
 
 Congratulazioni! Ora hai imparato come utilizzare la funzione di testo in corsivo con Aspose.Words per .NET.

@@ -2,7 +2,7 @@
 title: Trabajando con Sección
 linktitle: Trabajando con Sección
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen agregar sección, eliminar sección, eliminar todas las secciones, agregar contenido de sección, clonar sección, copiar sección, eliminar contenido de pie de página de encabezado, eliminar contenido de sección, modificar la configuración de la página en todas las secciones y acceder a las secciones por índice usando Aspose.Words para .NET.
+description: Aprenda a trabajar con secciones en documentos de Word usando Aspose.Words para .NET. Tutoriales paso a paso con código de muestra para crear, editar y formatear secciones de manera eficiente.
 type: docs
 weight: 1220
 url: /es/net/working-with-section/

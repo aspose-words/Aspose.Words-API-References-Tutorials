@@ -2,7 +2,7 @@
 title: 使用形状编程
 linktitle: 使用形状编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含添加组形状、插入形状、锁定纵横比、在单元格中布局、添加剪角、获取实际形状边界点、垂直锚点、检测
+description: 探索 Aspose.Words for .NET 中的形状编程。通过分步教程和 C# 示例代码，了解如何在 Word 文档中操作和自定义形状。
 type: docs
 weight: 1560
 url: /zh/net/programming-with-shapes/

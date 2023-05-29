@@ -43,18 +43,18 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ### Пример исходного кода для установки папки шрифтов True Type с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Путь к вашему каталогу документов
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Обратите внимание, что этот параметр переопределяет любые источники шрифтов по умолчанию, которые ищутся по умолчанию. Теперь будут искать только эти папки
-	// Шрифты при рендеринге или встраивании шрифтов. Чтобы добавить дополнительный источник шрифта при сохранении системных источников шрифта, используйте как FontSettings.GetFontSources, так и
-	// Вместо этого FontSettings.SetFontSources
-	fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-	// Установить настройки шрифта
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Обратите внимание, что этот параметр переопределяет любые источники шрифтов по умолчанию, которые ищутся по умолчанию. Теперь будут искать только эти папки
+// Шрифты при рендеринге или встраивании шрифтов. Чтобы добавить дополнительный источник шрифта при сохранении системных источников шрифта, используйте как FontSettings.GetFontSources, так и
+// Вместо этого FontSettings.SetFontSources
+fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
+// Установить настройки шрифта
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
 ## Заключение

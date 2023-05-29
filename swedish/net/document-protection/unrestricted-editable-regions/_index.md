@@ -50,7 +50,7 @@ builder.Writeln("This paragraph is outside of all editable areas and cannot be e
 
 ## Steg 4: Spara dokumentet
 
-Slutligen, spara det ändrade dokumentet:
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");

@@ -34,14 +34,12 @@ clone.Save(dataDir + "CloneAndCombineDocuments.ClonageDocument.docx");
 以下是 .NET 的 Aspose.Words 文档克隆功能的完整源代码：
 
 ```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";            
+Document doc = new Document(MyDir + "Document.docx");
 
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";            
-	Document doc = new Document(MyDir + "Document.docx");
-
-	Document clone = doc.Clone();
-	clone.Save(dataDir + "CloneAndCombineDocuments.CloningDocument.docx");
-	
+Document clone = doc.Clone();
+clone.Save(dataDir + "CloneAndCombineDocuments.CloningDocument.docx");
 ```
 
 使用此代码，您将能够使用 Aspose.Words for .NET 克隆 Word 文档。文档的精确副本将以新文件名保存。

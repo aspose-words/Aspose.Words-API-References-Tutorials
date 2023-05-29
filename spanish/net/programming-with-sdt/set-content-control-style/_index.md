@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.Structu
 ```
 
 ## Paso 3: recuperar el estilo y aplicarlo al control de contenido
- Recupere el estilo deseado de la colección de estilos del documento. En este ejemplo, recuperamos el estilo "Cita" usando`StyleIdentifier.Quote` . Luego, asigne el estilo recuperado al`Style` propiedad de la etiqueta de documento estructurado.
+ Recupere el estilo deseado de la colección de estilos del documento. En este ejemplo, recuperamos el estilo "Cita" usando`StyleIdentifier.Quote` . Luego, asigne el estilo recuperado al`Style` propiedad de la etiqueta del documento estructurado.
 
 ```csharp
 Style style = doc.Styles[StyleIdentifier.Quote];

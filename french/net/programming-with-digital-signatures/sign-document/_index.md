@@ -34,7 +34,7 @@ Assurez-vous de spécifier les chemins d'accès corrects pour le document source
 
 ### Exemple de code source pour signer un document à l'aide d'Aspose.Words pour .NET
 
-Voici le code source complet pour signer un document avec Aspose.Words pour .NET :
+Voici le code source complet pour signer un document avec Aspose.Words pour .NET :
 
 ```csharp
 

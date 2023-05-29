@@ -2,7 +2,7 @@
 title: Programming With Sdt
 linktitle: Programming With Sdt
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain check box type content control, current state of check box, modify content controls, combo box content control, rich text box content control, 
+description: Learn how to program with Structured Content Controls (SDT) in Aspose.Words for .NET. Follow step-by-step tutorials and sample code in C# to manipulate and customize structured content controls in your Word documents.
 type: docs
 weight: 1400
 url: /net/programming-with-sdt/

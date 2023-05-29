@@ -2,7 +2,7 @@
 title: Sposta al paragrafo
 linktitle: Sposta al paragrafo
 second_title: Riferimento all'API Aspose.Words per .NET
-description: Scopri come utilizzare Aspose.Words per la funzione Sposta in paragrafo di .NET per navigare e manipolare i paragrafi nei documenti di Word a livello di codice.
+description: Scopri come utilizzare Aspose.Words per la funzione Sposta in paragrafo di .NET per navigare e manipolare i paragrafi nei documenti di Word a livello di programmazione.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/move-to-paragraph/
@@ -51,13 +51,11 @@ builder.Writeln("This is the 3rd paragraph.");
 Di seguito è riportato il codice sorgente di esempio completo per l'implementazione della funzione Sposta in paragrafo utilizzando Aspose.Words per .NET:
 
 ```csharp
+Document doc = new Document(MyDir + "Paragraphs.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Paragraphs.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.MoveToParagraph(2, 0);
-	builder.Writeln("This is the 3rd paragraph.");
-	
+builder.MoveToParagraph(2, 0);
+builder.Writeln("This is the 3rd paragraph.");
 ```
 
 Seguendo questa guida e utilizzando la funzione Sposta in paragrafo, puoi manipolare a livello di codice i paragrafi all'interno dei documenti di Word utilizzando Aspose.Words per .NET.

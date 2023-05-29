@@ -60,20 +60,19 @@ foreach (Node child in children)
 
 
 ```csharp
-	Document doc = new Document();
-	Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+Document doc = new Document();
+Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 
-	NodeCollection children = paragraph.ChildNodes;
-	foreach (Node child in children)
+NodeCollection children = paragraph.ChildNodes;
+foreach (Node child in children)
+{
+	// Un párrafo puede contener elementos secundarios de varios tipos, como corridas, formas y otros.
+	if (child.NodeType == NodeType.Run)
 	{
-		// Un párrafo puede contener elementos secundarios de varios tipos, como corridas, formas y otros.
-		if (child.NodeType == NodeType.Run)
-		{
-			Run run = (Run) child;
-			Console.WriteLine(run.Text);
-		}
+		Run run = (Run) child;
+		Console.WriteLine(run.Text);
 	}
-            
+}
 ```
 
 Este es un ejemplo de código completo para enumerar los nodos secundarios de un párrafo con Aspose.Words para .NET. Asegúrate de importar las referencias.

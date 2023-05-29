@@ -2,7 +2,7 @@
 title: 使用 Htmlsaveoptions 编程
 linktitle: 使用 Htmlsaveoptions 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含导出往返信息、将字体导出为 base 64、导出资源、将图元文件转换为 emf 或 wmf、将图元文件转换为 svg、添加 css cla
+description: 了解如何使用 Aspose.Words for .NET 中的 HTML 保存选项进行编程。轻松将 Word 文档转换为 HTML，同时保留格式和内容。
 type: docs
 weight: 1620
 url: /zh/net/programming-with-htmlsaveoptions/

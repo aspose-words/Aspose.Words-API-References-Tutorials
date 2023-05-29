@@ -42,15 +42,13 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.doc
 Горизонтальные правила полезны для различных сценариев, таких как разделение разделов, создание визуальных разрывов или выделение важной информации.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("Insert a horizontal rule shape into the document.");
+builder.InsertHorizontalRule();
 
-	builder.Writeln("Insert a horizontal rule shape into the document.");
-	builder.InsertHorizontalRule();
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
 Не забудьте настроить код в соответствии с вашими конкретными требованиями и добавить в него дополнительные функции по мере необходимости.

@@ -2,7 +2,7 @@
 title: Programmazione con Imagesaveoptions
 linktitle: Programmazione con Imagesaveoptions
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono il controllo della soglia di esposizione per la binarizzazione tiff, ottieni l'intervallo di pagine tiff, il formato 1bpp indicizzato, ottieni l'intervallo di pagine jpeg e la richiamata per il salvataggio della pagina
+description: Scopri come programmare con le opzioni di salvataggio delle immagini in Aspose.Words per .NET. Tutorial passo passo con codice di esempio per il salvataggio e la manipolazione delle immagini nei documenti di Word.
 type: docs
 weight: 1630
 url: /it/net/programming-with-imagesaveoptions/

@@ -2,7 +2,7 @@
 title: Programming With Document Options And Settings
 linktitle: Programming With Document Options And Settings
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain optimize for ms word, show grammatical and spelling errors, cleanup unused styles and lists, cleanup duplicate style, view options, document pa
+description: Learn how to use document options and settings to customize and control the behavior of Word documents with Aspose.Words for .NET. The tutorials guide you through the different features such as document properties.
 type: docs
 weight: 1510
 url: /net/programming-with-document-options-and-settings/

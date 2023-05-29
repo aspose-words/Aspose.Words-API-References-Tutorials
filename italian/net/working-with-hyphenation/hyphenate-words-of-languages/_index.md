@@ -55,14 +55,14 @@ COSÌ ! Hai elaborato correttamente le parole sillabandole in diverse lingue in 
 
 ### Esempio di codice sorgente per la sillabazione delle parole utilizzando Aspose.Words per .NET
 
-	```csharp
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "German text.docx");
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "German text.docx");
 
-	Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
-	Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
+Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
+Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 
-	doc.Save(dataDir + "TreatmentByCesure.pdf");
-	```
+doc.Save(dataDir + "TreatmentByCesure.pdf");
+```
 
 Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.

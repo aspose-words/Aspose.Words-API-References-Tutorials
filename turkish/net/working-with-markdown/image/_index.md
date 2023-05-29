@@ -39,16 +39,15 @@ shape.ImageData.Title = "Title";
 ### Aspose.Words for .NET ile görseller için örnek kaynak kodu
 
 ```csharp
-	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
-	DocumentBuilder builder = new DocumentBuilder();
+// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Resim ekle.
-	Shape shape = new Shape(builder.Document, ShapeType.Image);
-	shape.WrapType = WrapType.Inline;
-	shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-	shape.ImageData.Title = "title";
-	builder.InsertNode(shape);
-            
+// Resim ekle.
+Shape shape = new Shape(builder.Document, ShapeType.Image);
+shape.WrapType = WrapType.Inline;
+shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
+shape.ImageData.Title = "title";
+builder.InsertNode(shape);
 ```
 
 Tebrikler! Artık resimler özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.

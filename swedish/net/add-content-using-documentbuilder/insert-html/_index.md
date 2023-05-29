@@ -45,18 +45,16 @@ Här är den fullständiga källkoden för att infoga HTML-innehåll i ett Word-
 Den här funktionen är särskilt användbar när du har befintligt HTML-innehåll som du vill inkludera i dina Word-dokument samtidigt som den ursprungliga formateringen och layouten bevaras.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertHtml(
-		"<P align='right'>Paragraph right</P>" +
-		"<b>Implicit paragraph left</b>" +
-		"<div align='center'>Div center</div>" +
-		"<h1 align='left'>Heading 1 left.</h1>");
+builder.InsertHtml(
+	"<P align='right'>Paragraph right</P>" +
+	"<b>Implicit paragraph left</b>" +
+	"<div align='center'>Div center</div>" +
+	"<h1 align='left'>Heading 1 left.</h1>");
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
 Kom ihåg att justera koden efter ditt specifika HTML-innehåll och dina krav. Se till att din HTML är välformaterad och kompatibel med Aspose.Words för .NET.

@@ -51,16 +51,13 @@ Ersetzen Sie unbedingt „Document_Extraits.ParPlageDePages.docx“ durch den ge
 ### Beispielquellcode für „By Page Range“ mit Aspose.Words für .NET
 
 ```csharp
+// Der Pfad zum Dokumentenverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Big document.docx");
 
-            // Der Pfad zum Dokumentenverzeichnis.
-			string dataDir = "YOUR DOCUMENT DIRECTORY";
-            Document doc = new Document(MyDir + "Big document.docx");
-            
-            // Holen Sie sich einen Teil des Dokuments.
-            Document extractedPages = doc.ExtractPages(3, 6);
-            extractedPages.Save(dataDir + "SplitDocument.ByPageRange.docx");
-            
-        
+// Holen Sie sich einen Teil des Dokuments.
+Document extractedPages = doc.ExtractPages(3, 6);
+extractedPages.Save(dataDir + "SplitDocument.ByPageRange.docx");
 ```
 
 ## Abschluss

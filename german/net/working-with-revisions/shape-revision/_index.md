@@ -76,54 +76,52 @@ Assert. False(shapes[1].IsMoveToRevision);
 Hier ist der vollständige Quellcode zum Überarbeiten von Formen in einem Dokument mit Aspose.Words für .NET:
 
 ```csharp
+Document doc = new Document();
 
-	Document doc = new Document();
+// Fügen Sie eine Inline-Form ein, ohne Revisionen zu verfolgen.
+Assert.False(doc.TrackRevisions);
+Shape shape = new Shape(doc, ShapeType.Cube);
+shape.WrapType = WrapType.Inline;
+shape.Width = 100.0;
+shape.Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-	// Fügen Sie eine Inline-Form ein, ohne Revisionen zu verfolgen.
-	Assert.False(doc.TrackRevisions);
-	Shape shape = new Shape(doc, ShapeType.Cube);
-	shape.WrapType = WrapType.Inline;
-	shape.Width = 100.0;
-	shape.Height = 100.0;
-	doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+// Beginnen Sie mit der Nachverfolgung von Revisionen und fügen Sie dann eine weitere Form ein.
+doc.StartTrackRevisions("John Doe");
+shape = new Shape(doc, ShapeType.Sun);
+shape.WrapType = WrapType.Inline;
+shape.Width = 100.0;
+shape.Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-	// Beginnen Sie mit der Nachverfolgung von Revisionen und fügen Sie dann eine weitere Form ein.
-	doc.StartTrackRevisions("John Doe");
-	shape = new Shape(doc, ShapeType.Sun);
-	shape.WrapType = WrapType.Inline;
-	shape.Width = 100.0;
-	shape.Height = 100.0;
-	doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+// Rufen Sie die Formensammlung des Dokuments ab, die nur die beiden von uns hinzugefügten Formen enthält.
+List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
 
-	// Rufen Sie die Formensammlung des Dokuments ab, die nur die beiden von uns hinzugefügten Formen enthält.
-	List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-	Assert.AreEqual(2, shapes.Count);
+// Entfernen Sie die erste Form.
+shapes[0].Remove();
 
-	// Entfernen Sie die erste Form.
-	shapes[0].Remove();
+// Da wir diese Form während der Nachverfolgung der Änderungen entfernt haben, gilt die Form als gelöschte Revision.
+Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
+Assert.True(shapes[0].IsDeleteRevision);
 
-	// Da wir diese Form während der Nachverfolgung der Änderungen entfernt haben, gilt die Form als gelöschte Revision.
-	Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-	Assert.True(shapes[0].IsDeleteRevision);
+// Und wir haben beim Verfolgen von Änderungen eine weitere Form eingefügt, sodass diese Form als Einfügungsrevision zählt.
+Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
+Assert.True(shapes[1].IsInsertRevision);
 
-	// Und wir haben beim Verfolgen von Änderungen eine weitere Form eingefügt, sodass diese Form als Einfügungsrevision zählt.
-	Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-	Assert.True(shapes[1].IsInsertRevision);
+//Das Dokument verfügt über eine Form, die verschoben wurde, aber Überarbeitungen der Formverschiebung enthalten zwei Instanzen dieser Form.
+// Eine davon ist die Form am Ankunftsziel und die andere die Form an ihrem ursprünglichen Standort.
+doc = new Document(MyDir + "Revision shape.docx");
 
-	//Das Dokument verfügt über eine Form, die verschoben wurde, aber Überarbeitungen der Formverschiebung enthalten zwei Instanzen dieser Form.
-	// Eine davon ist die Form am Ankunftsziel und die andere die Form an ihrem ursprünglichen Standort.
-	doc = new Document(MyDir + "Revision shape.docx");
-	
-	shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-	Assert.AreEqual(2, shapes.Count);
+shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
 
-	// Dies ist der Schritt zur Überarbeitung, auch die Form an ihrem Zielort.
-	Assert.False(shapes[0].IsMoveFromRevision);
-	Assert.True(shapes[0].IsMoveToRevision);
+// Dies ist der Schritt zur Überarbeitung, auch die Form an ihrem Zielort.
+Assert.False(shapes[0].IsMoveFromRevision);
+Assert.True(shapes[0].IsMoveToRevision);
 
-	// Dies ist die Verschiebung von der Revision, bei der es sich um die Form an ihrer ursprünglichen Position handelt.
-	Assert.True(shapes[1].IsMoveFromRevision);
-	Assert.False(shapes[1].IsMoveToRevision);
-            
+// Dies ist die Verschiebung von der Revision, bei der es sich um die Form an ihrer ursprünglichen Position handelt.
+Assert.True(shapes[1].IsMoveFromRevision);
+Assert.False(shapes[1].IsMoveToRevision);
 ```
 

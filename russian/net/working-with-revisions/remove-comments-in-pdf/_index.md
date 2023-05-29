@@ -48,14 +48,12 @@ doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 Вот полный исходный код для удаления комментариев в файле PDF с помощью Aspose.Words для .NET:
 
 ```csharp
+// Путь к каталогу документов.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	// Путь к каталогу документов.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Revisions.docx");
+// Скрыть комментарии в PDF.
+doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 
-	// Скрыть комментарии в PDF.
-	doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
-
-	doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
-
+doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 ```

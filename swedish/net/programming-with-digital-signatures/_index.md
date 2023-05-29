@@ -2,7 +2,7 @@
 title: Programmering med digitala signaturer
 linktitle: Programmering med digitala signaturer
 second_title: Aspose.Words för .NET API Referens
-description: Handledningarna innehåller signeringsdokument, signering av krypterade dokument, skapande och signering av ny signaturrad, signering av befintlig signaturrad, ange signaturleverantörs-id,
+description: Lär dig hur du lägger till och hanterar digitala signaturer i Word-dokument med Aspose.Words för .NET. Handledningarna guidar dig genom stegen för att generera digitala signaturer, lägga till dem i dina dokument.
 type: docs
 weight: 1440
 url: /sv/net/programming-with-digital-signatures/

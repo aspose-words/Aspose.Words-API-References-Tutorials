@@ -2,7 +2,7 @@
 title: Trabajar con fuentes
 linktitle: Trabajar con fuentes
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales muestran cómo aplicar el formato de fuente, el espaciado entre líneas de fuente, el efecto DMLText, habilitar/deshabilitar la sustitución de fuente, la configuración de respaldo de fuente, obtener una lista de fuentes disponibles en un documento de Word usando Aspose.Words para .NET
+description: Los tutoriales de trabajo con fuentes le enseñan cómo trabajar con fuentes en Word con Aspose.Words para .NET. Formateo, sustituciones, notificaciones y más.
 type: docs
 weight: 420
 url: /es/net/working-with-fonts/
@@ -31,9 +31,9 @@ Ya sea que desee dar formato al texto con diferentes fuentes, establecer reglas 
 | [Establecer sistema de carpetas de fuentes y carpeta personalizada](./set-fonts-folders-system-and-custom-folder/) | Guía paso a paso para configurar el sistema y las carpetas de fuentes personalizadas al representar un documento con Aspose.Words para .NET. |
 | [Establecer carpetas de fuentes con prioridad](./set-fonts-folders-with-priority/) | Guía paso a paso para configurar carpetas de fuentes con prioridad al renderizar un documento usando Aspose.Words para .NET. |
 | [Establecer carpeta de fuentes True Type](./set-true-type-fonts-folder/) | Guía paso a paso para configurar la carpeta de fuentes True Type al renderizar un documento usando Aspose.Words para .NET. |
-| [Especificar fuente predeterminada al renderizar](./specify-default-font-when-rendering/) | Guía paso a paso para especificar la fuente predeterminada al representar un documento con Aspose.Words para .NET. |
-| [Configuración de fuentes con opciones de carga](./font-settings-with-load-options/) | En este tutorial, aprenda a cargar un documento de Word con opciones de carga personalizadas y la configuración de fuente correspondiente.|
-| [Establecer carpeta de fuentes](./set-fonts-folder/) | Aprenda a configurar el directorio de fuentes en Aspose.Words para .NET y garantice la disponibilidad de las fuentes utilizadas en sus documentos. |
+| [Especificar fuente predeterminada al renderizar](./specify-default-font-when-rendering/) | Guía paso a paso para especificar la fuente predeterminada al renderizar un documento usando Aspose.Words para .NET. |
+| [Configuración de fuente con opciones de carga](./font-settings-with-load-options/) | En este tutorial, aprenda a cargar un documento de Word con opciones de carga personalizadas y la configuración de fuente correspondiente.|
+| [Establecer carpeta de fuentes](./set-fonts-folder/) | Aprenda a configurar el directorio de fuentes en Aspose.Words para .NET y asegure la disponibilidad de las fuentes utilizadas en sus documentos. |
 | [Configuración de fuentes Instancia predeterminada](./font-settings-default-instance/) | En este tutorial, aprenda a configurar los ajustes de fuente predeterminados en un documento de Word con Aspose.Words para .NET. |
 | [Obtener lista de fuentes disponibles](./get-list-of-available-fonts/) | En este tutorial, aprenda cómo obtener la lista de fuentes disponibles en Aspose.Words para .NET. |
 | [Recibir notificaciones de fuentes](./receive-notifications-of-fonts/) | Aprenda a recibir notificaciones de fuente faltante o sustituida al usar Aspose.Words para .NET. |

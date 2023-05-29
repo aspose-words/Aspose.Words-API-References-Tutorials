@@ -2,7 +2,7 @@
 title: Programming With Txtloadoptions
 linktitle: Programming With Txtloadoptions
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain detect numbering with whitespaces, handle spaces options and document text direction
+description: Learn how to program with text file loading options in Aspose.Words for .NET. Learn how to specify encoding, ignore unknown characters, handle line breaks, and more with step-by-step tutorials and sample code in C#.
 type: docs
 weight: 1640
 url: /net/programming-with-txtloadoptions/

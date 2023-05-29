@@ -2,7 +2,7 @@
 title: البرمجة مع Pclsaveoptions
 linktitle: البرمجة مع Pclsaveoptions
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على عناصر تم تحويلها إلى نقطية
+description: استكشف البرمجة باستخدام خيارات حفظ PCL في Aspose.Words for .NET. تعرف على كيفية معالجة وتخصيص حفظ مستندات Word بتنسيق PCL من خلال البرامج التعليمية خطوة بخطوة وأمثلة التعليمات البرمجية.
 type: docs
 weight: 1670
 url: /ar/net/programming-with-pclsaveoptions/

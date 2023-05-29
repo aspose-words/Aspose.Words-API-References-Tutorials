@@ -51,7 +51,7 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## 第五步：保存修改后的文档
+## 第五步：保存修改后的文件
 
 使用`Save`的方法`Document`目的。
 

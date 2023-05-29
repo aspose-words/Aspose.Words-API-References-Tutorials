@@ -2,7 +2,7 @@
 title: Программирование с оглавлением
 linktitle: Программирование с оглавлением
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат изменение стиля уровня оглавления и изменение табуляции оглавления.
+description: Изучите программирование TOC в Aspose.Words для .NET. Узнайте, как создавать оглавления в документах Word и управлять ими с помощью пошаговых руководств и примеров кода C#.
 type: docs
 weight: 1420
 url: /ru/net/programming-with-table-of-content/

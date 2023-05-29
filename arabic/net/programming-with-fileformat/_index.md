@@ -2,7 +2,7 @@
 title: البرمجة باستخدام تنسيق الملف
 linktitle: البرمجة باستخدام تنسيق الملف
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على اكتشاف تنسيق الملف واكتشاف توقيعات المستندات والتحقق من المستند المشفر
+description: تعرف على كيفية التعامل مع تنسيقات الملفات في Aspose.Words for .NET. توجهك البرامج التعليمية عبر الميزات المختلفة مثل اكتشاف تنسيق الملف والتحويل بين التنسيقات.
 type: docs
 weight: 1610
 url: /ar/net/programming-with-fileformat/

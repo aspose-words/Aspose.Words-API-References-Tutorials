@@ -2,7 +2,7 @@
 title: Programmieren mit Dokumenteigenschaften
 linktitle: Programmieren mit Dokumenteigenschaften
 second_title: Aspose.Words für .NET API-Referenz
-description: Tutorials enthalten das Abrufen von Variablen, das Aufzählen von Eigenschaften, das Hinzufügen benutzerdefinierter Dokumenteigenschaften, das Entfernen benutzerdefinierter Dokumenteigenschaften, das Entfernen persönlicher Informationen und das Konfigurieren
+description: Erfahren Sie, wie Sie Word-Dokumenteigenschaften mit Aspose.Words für .NET verwalten. Die Tutorials führen Sie durch die verschiedenen Funktionen wie das Lesen und Schreiben von Eigenschaften und das Anpassen von Standardeigenschaften.
 type: docs
 weight: 1520
 url: /de/net/programming-with-document-properties/

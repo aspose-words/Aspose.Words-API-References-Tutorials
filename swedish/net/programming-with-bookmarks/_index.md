@@ -2,7 +2,7 @@
 title: Programmering med bokmärken
 linktitle: Programmering med bokmärken
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller åtkomstbokmärken, uppdatera bokmärkesdata, bokmärke tabellkolumner, kopiera bokmärkt text, lägga till bokmärkt text, skapa bokmärke, visa dölj bokma
+description: Lär dig hur du manipulerar bokmärken i Word-dokument med Aspose.Words för .NET. Handledningar leder dig genom stegen för att skapa, komma åt och redigera bokmärken i ett Word-dokument.
 type: docs
 weight: 1380
 url: /sv/net/programming-with-bookmarks/

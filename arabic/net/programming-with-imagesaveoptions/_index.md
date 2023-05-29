@@ -2,7 +2,7 @@
 title: البرمجة مع خيارات حفظ الصور
 linktitle: البرمجة مع خيارات حفظ الصور
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على التحكم في عتبة العرض لترتيب tiff الثنائي ، والحصول على نطاق صفحات tiff ، وفهرسة تنسيق 1bpp ، والحصول على نطاق صفحات jpeg وإعادة استدعاء حفظ الصفحة
+description: تعرف على كيفية البرمجة باستخدام خيارات حفظ الصور في Aspose.Words for .NET. برامج تعليمية خطوة بخطوة مع نموذج التعليمات البرمجية لحفظ الصور ومعالجتها في مستندات Word الخاصة بك.
 type: docs
 weight: 1630
 url: /ar/net/programming-with-imagesaveoptions/
@@ -14,7 +14,7 @@ url: /ar/net/programming-with-imagesaveoptions/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [كشف التحكم في العتبة ل Tiff Binarization](./expose-threshold-control-for-tiff-binarization/) | تعرف على كيفية التحكم في حد تنسيق TIFF الثنائي باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل للحصول على صور ذات جودة أفضل. |
+| [كشف التحكم في العتبة ل Tiff Binarization](./expose-threshold-control-for-tiff-binarization/) | تعرف على كيفية التحكم في حد تنسيق TIFF الثنائي باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل لصور ذات جودة أفضل. |
 | [احصل على نطاق صفحات Tiff](./get-tiff-page-range/) | تعرف على كيفية استخراج مجموعة من صفحات TIFF باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل لملفات TIFF المخصصة. |
 | [تنسيق 1Bpp مفهرس](./format-1bpp-indexed/) | تعرف على كيفية تنسيق الصور في 1 bpp مفهرسة باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل للصور ذات عمق الألوان المنخفض. |
 | [احصل على نطاق صفحات Jpeg](./get-jpeg-page-range/) | تعرف على كيفية الحصول على مجموعة من صفحات JPEG باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل لاستخراج الصور المخصصة. |

@@ -1,6 +1,6 @@
 ---
-title: Erstellen Sie ein Vba-Projekt
-linktitle: Erstellen Sie ein Vba-Projekt
+title: Erstellen Sie ein VBA-Projekt
+linktitle: Erstellen Sie ein VBA-Projekt
 second_title: Aspose.Words für .NET API-Referenz
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET ein VBA-Projekt in einem Word-Dokument erstellen.
 type: docs

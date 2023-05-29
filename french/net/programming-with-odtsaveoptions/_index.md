@@ -2,7 +2,7 @@
 title: Programmation avec Odtsaveoptions
 linktitle: Programmation avec Odtsaveoptions
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent l'unité de mesure
+description: Apprenez la programmation avec les options de sauvegarde ODT dans Aspose.Words pour .NET. Tutoriels détaillés avec exemple de code pour enregistrer des documents Word au format ODT.
 type: docs
 weight: 1650
 url: /fr/net/programming-with-odtsaveoptions/

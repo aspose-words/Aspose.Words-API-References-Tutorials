@@ -42,16 +42,14 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBoo
 Hier ist der vollständige Quellcode zum Einfügen eines Lesezeichens mithilfe der DocumentBuilder-Klasse in Aspose.Words für .NET:
 
 ```csharp
-   
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.StartBookmark("FineBookmark");
-	builder.Writeln("This is just a fine bookmark.");
-	builder.EndBookmark("FineBookmark");
+builder.StartBookmark("FineBookmark");
+builder.Writeln("This is just a fine bookmark.");
+builder.EndBookmark("FineBookmark");
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
-	 
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
 ```
 
 ## Abschluss

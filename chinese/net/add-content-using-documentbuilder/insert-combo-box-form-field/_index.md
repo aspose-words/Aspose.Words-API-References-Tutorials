@@ -47,16 +47,14 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.
 下面是使用 Aspose.Words for .NET 插入组合框表单字段的完整源代码：
 
 ```csharp
+string[] items = { "One", "Two", "Three" };
 
-	string[] items = { "One", "Two", "Three" };
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertComboBox("DropDown", items, 0);
 
-	builder.InsertComboBox("DropDown", items, 0);
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
 ```
 
 请记住根据您的特定要求调整代码，并根据需要使用其他功能对其进行增强。

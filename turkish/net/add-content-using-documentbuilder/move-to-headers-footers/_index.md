@@ -70,28 +70,26 @@ Uygun dosya yolunu ve biçimini (ör. DOCX) belirttiğinizden emin olun.
 ### Aspose.Words for .NET kullanarak Üst Bilgilere/Alt Bilgilere Taşı için örnek kaynak kodu
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// İlk, çift ve tek sayfalar için farklı üstbilgiler ve altbilgiler istediğimizi belirtin.
+builder.PageSetup.DifferentFirstPageHeaderFooter = true;
+builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
-	// İlk, çift ve tek sayfalar için farklı üstbilgiler ve altbilgiler istediğimizi belirtin.
-	builder.PageSetup.DifferentFirstPageHeaderFooter = true;
-	builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
+// Başlıkları oluşturun.
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.Write("Header for the first page");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
+builder.Write("Header for even pages");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Header for all other pages");
 
-	// Başlıkları oluşturun.
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.Write("Header for the first page");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
-	builder.Write("Header for even pages");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
-	builder.Write("Header for all other pages");
+// Belgede iki sayfa oluşturun.
+builder.MoveToSection(0);
+builder.Writeln("Page1");
+builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("Page2");
 
-	// Belgede iki sayfa oluşturun.
-	builder.MoveToSection(0);
-	builder.Writeln("Page1");
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.Writeln("Page2");
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
-
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```

@@ -2,7 +2,7 @@
 title: Programmieren mit Sdt
 linktitle: Programmieren mit Sdt
 second_title: Aspose.Words für .NET API-Referenz
-description: Die Tutorials umfassen die Inhaltssteuerung für Kontrollkästchentypen, den aktuellen Status des Kontrollkästchens, Steuerelemente zum Ändern von Inhalten, die Inhaltssteuerung für Kombinationsfelder, die Inhaltssteuerung für Rich-Text-Felder,
+description: Erfahren Sie, wie Sie mit Structured Content Controls (SDT) in Aspose.Words für .NET programmieren. Befolgen Sie Schritt-für-Schritt-Anleitungen und Beispielcode in C#, um strukturierte Inhaltssteuerelemente in Ihren Word-Dokumenten zu bearbeiten und anzupassen.
 type: docs
 weight: 1400
 url: /de/net/programming-with-sdt/

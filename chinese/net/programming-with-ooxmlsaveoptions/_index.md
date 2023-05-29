@@ -2,7 +2,7 @@
 title: 使用 Ooxmlsaveoptions 编程
 linktitle: 使用 Ooxmlsaveoptions 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含使用密码加密 docx、ooxml 合规性 iso 29500_ 2008_ strict、更新上次保存的时间属性、保留旧控制字符和设置压缩包
+description: 学习使用 Aspose.Words for .NET 中的 OOXML 保存选项进行编程。用于操作和自定义以 OOXML 格式保存 Word 文档的综合教程和示例代码。
 type: docs
 weight: 1660
 url: /zh/net/programming-with-ooxmlsaveoptions/

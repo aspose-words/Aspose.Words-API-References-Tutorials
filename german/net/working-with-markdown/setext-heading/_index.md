@@ -59,39 +59,39 @@ builder.Document.Save(dataDir + "Test.md");
 ### Beispielquellcode für Setext-Titel mit Aspose.Words für .NET
 
 ```csharp
-	// Der Pfad zum Dokumentenverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
-	DocumentBuilder builder = new DocumentBuilder();
+// Der Pfad zum Dokumentenverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
+DocumentBuilder builder = new DocumentBuilder();
 
-	builder.ParagraphFormat.StyleName = "Heading 1";
-	builder.Writeln("This is an H1 tag");
+builder.ParagraphFormat.StyleName = "Heading 1";
+builder.Writeln("This is an H1 tag");
 
-	// Setzen Sie die Stile des vorherigen Absatzes zurück, um Stile zwischen Absätzen nicht zu kombinieren.
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+// Setzen Sie die Stile des vorherigen Absatzes zurück, um Stile zwischen Absätzen nicht zu kombinieren.
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	Style setexHeading1 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading1");
-	builder.ParagraphFormat.Style = setexHeading1;
-	builder.Document.Styles["SetextHeading1"].BaseStyleName = "Heading 1";
-	builder.Writeln("Setext Heading level 1");
+Style setexHeading1 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading1");
+builder.ParagraphFormat.Style = setexHeading1;
+builder.Document.Styles["SetextHeading1"].BaseStyleName = "Heading 1";
+builder.Writeln("Setext Heading level 1");
 
-	builder.ParagraphFormat.Style = builder.Document.Styles["Heading 3"];
-	builder.Writeln("This is an H3 tag");
+builder.ParagraphFormat.Style = builder.Document.Styles["Heading 3"];
+builder.Writeln("This is an H3 tag");
 
-	// Setzen Sie die Stile des vorherigen Absatzes zurück, um Stile zwischen Absätzen nicht zu kombinieren.
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+// Setzen Sie die Stile des vorherigen Absatzes zurück, um Stile zwischen Absätzen nicht zu kombinieren.
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	Style setexHeading2 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading2");
-	builder.ParagraphFormat.Style = setexHeading2;
-	builder.Document.Styles["SetextHeading2"].BaseStyleName = "Heading 3";
+Style setexHeading2 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading2");
+builder.ParagraphFormat.Style = setexHeading2;
+builder.Document.Styles["SetextHeading2"].BaseStyleName = "Heading 3";
 
-	// Die Setex-Überschriftenebene wird auf 2 zurückgesetzt, wenn der Basisabsatz eine Überschriftenebene größer als 2 hat.
-	builder.Writeln("Setext Heading level 2");
-	
+// Die Setex-Überschriftenebene wird auf 2 zurückgesetzt, wenn der Basisabsatz eine Überschriftenebene größer als 2 hat.
+builder.Writeln("Setext Heading level 2");
 
-	builder.Document.Save(dataDir + "Test.md");
+
+builder.Document.Save(dataDir + "Test.md");
 ```
 
 

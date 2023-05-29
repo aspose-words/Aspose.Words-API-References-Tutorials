@@ -2,7 +2,7 @@
 title: 使用 Markdownsaveoptions 编程
 linktitle: 使用 Markdownsaveoptions 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含导出到降价表内容对齐和设置图像文件夹
+description: 在 Aspose.Words for .NET 中使用 MarkdownSaveOptions 学习编程。带有示例代码的详细教程，用于将 Word 文档保存为 Markdown 格式。
 type: docs
 weight: 1640
 url: /zh/net/programming-with-markdownsaveoptions/

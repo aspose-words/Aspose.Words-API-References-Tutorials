@@ -45,18 +45,16 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 Эта функция особенно полезна, когда у вас есть существующий HTML-контент, который вы хотите включить в документы Word, сохранив при этом исходное форматирование и макет.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertHtml(
-		"<P align='right'>Paragraph right</P>" +
-		"<b>Implicit paragraph left</b>" +
-		"<div align='center'>Div center</div>" +
-		"<h1 align='left'>Heading 1 left.</h1>");
+builder.InsertHtml(
+	"<P align='right'>Paragraph right</P>" +
+	"<b>Implicit paragraph left</b>" +
+	"<div align='center'>Div center</div>" +
+	"<h1 align='left'>Heading 1 left.</h1>");
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
 Не забудьте настроить код в соответствии с вашим конкретным HTML-содержимым и требованиями. Убедитесь, что ваш HTML правильно сформирован и совместим с Aspose.Words для .NET.

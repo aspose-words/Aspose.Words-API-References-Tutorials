@@ -2,7 +2,7 @@
 title: Программирование с Htmlfixedsaveoptions
 linktitle: Программирование с Htmlfixedsaveoptions
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат использование шрифта с целевой машины и запись всех правил css в один файл.
+description: Узнайте, как программировать с фиксированными параметрами сохранения HTML в Aspose.Words для .NET. Учебники проведут вас через различные функции для создания HTML-документов с фиксированным макетом и встроенными изображениями.
 type: docs
 weight: 1610
 url: /ru/net/programming-with-htmlfixedsaveoptions/

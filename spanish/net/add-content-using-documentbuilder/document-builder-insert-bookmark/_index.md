@@ -42,16 +42,14 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBoo
 Aquí está el código fuente completo para insertar un marcador utilizando la clase DocumentBuilder en Aspose.Words para .NET:
 
 ```csharp
-   
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.StartBookmark("FineBookmark");
-	builder.Writeln("This is just a fine bookmark.");
-	builder.EndBookmark("FineBookmark");
+builder.StartBookmark("FineBookmark");
+builder.Writeln("This is just a fine bookmark.");
+builder.EndBookmark("FineBookmark");
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
-	 
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
 ```
 
 ## Conclusión

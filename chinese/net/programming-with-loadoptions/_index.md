@@ -2,7 +2,7 @@
 title: 使用 Loadoptions 编程
 linktitle: 使用 Loadoptions 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含更新脏字段、加载加密文档、将形状转换为办公室数学、设置 ms word 版本、使用临时文件夹、警告回调、使用 e 加载
+description: 学习使用 Aspose.Words for .NET 中的 LoadOptions 进行编程。带有示例代码的详细教程，用于加载和自定义加载 Word 文档。
 type: docs
 weight: 1610
 url: /zh/net/programming-with-loadoptions/

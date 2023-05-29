@@ -38,12 +38,12 @@ builder.Writeln("This text will be bold");
 
 
 ```csharp
-	// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
-	DocumentBuilder builder = new DocumentBuilder();
+// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Machen Sie den Text fett.
-	builder.Font.Bold = true;
-	builder.Writeln("This text will be Bold");  
+// Machen Sie den Text fett.
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");  
 ```
 
 Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie mit Aspose.Words für .NET Text fett formatieren.

@@ -31,13 +31,12 @@ builder.Writeln("This text will be in italics");
 
 
 ```csharp
-	// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
-	DocumentBuilder builder = new DocumentBuilder();
+// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Machen Sie den Text kursiv.
-	builder.Font.Italic = true;
-	builder.Writeln("This text will be Italic");
-            
+// Machen Sie den Text kursiv.
+builder.Font.Italic = true;
+builder.Writeln("This text will be Italic");
 ```
 
 Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Funktion für kursiven Text mit Aspose.Words für .NET verwenden.

@@ -2,7 +2,7 @@
 title: Arbeta med teckensnitt
 linktitle: Arbeta med teckensnitt
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar visar hur du tillämpar teckensnittsformatering, teckensnittsradavstånd, DMLText-effekt, aktivera/inaktivera teckensnittsersättning, alternativa teckensnittsinställningar, få lista över tillgängliga teckensnitt i Word-dokument med Aspose.Words för .NET
+description: Handledningar om hur du arbetar med teckensnitt lär dig hur du arbetar med teckensnitt i Word med Aspose.Words för .NET. Formatering, ersättningar, aviseringar och mer.
 type: docs
 weight: 420
 url: /sv/net/working-with-fonts/
@@ -29,12 +29,12 @@ Oavsett om du vill formatera text med olika teckensnitt, ställa in regler för 
 | [Ställ in typsnittsmappar som standardinstans](./set-fonts-folders-default-instance/) | Steg-för-steg-guide för att ställa in standardfontmappen när du renderar ett dokument med Aspose.Words för .NET. |
 | [Ställ in teckensnittsmappar Flera mappar](./set-fonts-folders-multiple-folders/) | Steg för steg guide för att ställa in flera teckensnittsmappar när du renderar ett dokument med Aspose.Words för .NET. |
 | [Ställ in teckensnittsmappsystem och anpassad mapp](./set-fonts-folders-system-and-custom-folder/) | Steg-för-steg-guide för att ställa in system- och anpassade teckensnittsmappar när du renderar ett dokument med Aspose.Words för .NET. |
-| [Ställ in teckensnittsmappar med prioritet](./set-fonts-folders-with-priority/) | Steg-för-steg-guide för att ställa in teckensnittsmappar med prioritet när du renderar ett dokument med Aspose.Words för .NET. |
+| [Ställ in typsnittsmappar med prioritet](./set-fonts-folders-with-priority/) | Steg-för-steg-guide för att ställa in teckensnittsmappar med prioritet när du renderar ett dokument med Aspose.Words för .NET. |
 | [Ställ in True Type Fonts-mappen](./set-true-type-fonts-folder/) | Steg-för-steg-guide för att ställa in mappen True Type fonts när du renderar ett dokument med Aspose.Words för .NET. |
 | [Ange standardteckensnitt vid rendering](./specify-default-font-when-rendering/) | Steg-för-steg-guide för att ange standardteckensnittet när du renderar ett dokument med Aspose.Words för .NET. |
 | [Teckensnittsinställningar med laddningsalternativ](./font-settings-with-load-options/) | I den här handledningen lär du dig hur du laddar ett Word-dokument med anpassade laddningsalternativ och motsvarande teckensnittsinställningar.|
 | [Ställ in typsnittsmapp](./set-fonts-folder/) | Lär dig hur du ställer in teckensnittskatalogen i Aspose.Words för .NET och se till att teckensnitt som används i dina dokument är tillgängliga. |
-| [Teckensnittsinställningar Standardinstans](./font-settings-default-instance/) | I den här handledningen lär du dig hur du konfigurerar standardteckensnittsinställningar i ett Word-dokument med Aspose.Words för .NET. |
+| [Teckensnittsinställningar Standardinstans](./font-settings-default-instance/) | den här handledningen lär du dig hur du konfigurerar standardteckensnittsinställningar i ett Word-dokument med Aspose.Words för .NET. |
 | [Få lista över tillgängliga teckensnitt](./get-list-of-available-fonts/) | I den här handledningen kan du lära dig hur du får en lista över teckensnitt som är tillgängliga i Aspose.Words för .NET. |
 | [Ta emot meddelanden om teckensnitt](./receive-notifications-of-fonts/) | Lär dig hur du får meddelanden om saknade eller ersatta teckensnitt när du använder Aspose.Words för .NET. |
 | [Ta emot varningsmeddelande](./receive-warning-notification/) | Lär dig hur du får ett varningsmeddelande när du använder Aspose.Words för .NET och hanterar eventuella problem eller varningar i dina dokument. |

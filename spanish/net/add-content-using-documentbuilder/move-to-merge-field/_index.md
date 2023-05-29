@@ -40,7 +40,7 @@ Assert.Null(builder.CurrentNode);
 ```
 ## Paso 4: mover el cursor del generador de documentos al campo de combinación
 
-Para mover el cursor del generador de documentos al campo de combinación, use el método MoveToField de la clase DocumentBuilder:
+Para mover el cursor del generador de documentos al campo de combinación, utilice el método MoveToField de la clase DocumentBuilder:
 
 ```csharp
 builder.MoveToField(field, true);
@@ -58,25 +58,23 @@ builder.Write(" Text immediately after the field.");
 ### Código fuente de ejemplo para Mover a campo de combinación usando Aspose.Words para .NET
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Inserte un campo usando DocumentBuilder y agregue una secuencia de texto después de él.
+Field field = builder.InsertField("MERGEFIELD field");
+builder.Write(" Text after the field.");
 
-	// Inserte un campo usando DocumentBuilder y agregue una secuencia de texto después de él.
-	Field field = builder.InsertField("MERGEFIELD field");
-	builder.Write(" Text after the field.");
+// El cursor del constructor se encuentra actualmente al final del documento.
+Assert.Null(builder.CurrentNode);
+// Podemos mover el constructor a un campo como este, colocando el cursor inmediatamente después del campo.
+builder.MoveToField(field, true);
 
-	// El cursor del constructor se encuentra actualmente al final del documento.
-	Assert.Null(builder.CurrentNode);
-	// Podemos mover el constructor a un campo como este, colocando el cursor inmediatamente después del campo.
-	builder.MoveToField(field, true);
-
-	// Tenga en cuenta que el cursor está en un lugar más allá del nodo FieldEnd del campo, lo que significa que en realidad no estamos dentro del campo.
-	// Si deseamos mover el DocumentBuilder dentro de un campo,
-	// necesitaremos moverlo al nodo FieldStart o FieldSeparator de un campo usando el método DocumentBuilder.MoveTo().
-	Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
-	builder.Write(" Text immediately after the field.");
-	
+// Tenga en cuenta que el cursor está en un lugar más allá del nodo FieldEnd del campo, lo que significa que en realidad no estamos dentro del campo.
+// Si deseamos mover el DocumentBuilder dentro de un campo,
+// necesitaremos moverlo al nodo FieldStart o FieldSeparator de un campo usando el método DocumentBuilder.MoveTo().
+Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
+builder.Write(" Text immediately after the field.");
 ```
 
 ## Conclusión

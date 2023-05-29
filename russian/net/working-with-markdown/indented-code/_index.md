@@ -38,13 +38,12 @@ builder.Writeln("This is an indented code block");
 ### Пример исходного кода для кода с отступом в Aspose.Words для .NET
 
 ```csharp
-	// Используйте конструктор документов, чтобы добавить содержимое в документ.
-	DocumentBuilder builder = new DocumentBuilder();
+// Используйте конструктор документов, чтобы добавить содержимое в документ.
+DocumentBuilder builder = new DocumentBuilder();
 
-	Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
-	builder.ParagraphFormat.Style = indentedCode;
-	builder.Writeln("This is an indented code");
-            
+Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
+builder.ParagraphFormat.Style = indentedCode;
+builder.Writeln("This is an indented code");
 ```
 
 Поздравляем! Теперь вы узнали, как использовать функцию кода с отступом в Aspose.Words для .NET.

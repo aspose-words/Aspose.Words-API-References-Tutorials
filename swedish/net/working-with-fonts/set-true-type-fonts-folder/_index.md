@@ -43,18 +43,18 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ### Exempel på källkod för Set True Type Fonts Folder med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Sökväg till din dokumentkatalog
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Observera att den här inställningen åsidosätter alla standardfontkällor som söks efter som standard. Nu kommer endast dessa mappar att sökas efter
-	// Teckensnitt vid rendering eller inbäddning av teckensnitt. För att lägga till en extra teckensnittskälla samtidigt som systemets teckensnittskällor behålls, använd sedan både FontSettings.GetFontSources och
-	// FontSettings.SetFontSources istället
-	fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-	// Ställ in teckensnittsinställningar
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Observera att den här inställningen åsidosätter alla standardfontkällor som söks efter som standard. Nu kommer endast dessa mappar att sökas efter
+// Teckensnitt vid rendering eller inbäddning av teckensnitt. För att lägga till en extra teckensnittskälla samtidigt som systemets teckensnittskällor behålls, använd sedan både FontSettings.GetFontSources och
+// FontSettings.SetFontSources istället
+fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
+// Ställ in teckensnittsinställningar
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
 ## Slutsats

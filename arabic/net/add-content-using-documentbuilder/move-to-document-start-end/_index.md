@@ -52,18 +52,16 @@ Console.WriteLine("\nThis is the end of the document.");
 ### مثال على شفرة المصدر لـ Move To Document Start / End باستخدام Aspose.Words for .NET
 
 ```csharp
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// انقل موضع المؤشر إلى بداية المستند.
-	builder.MoveToDocumentStart();
-	Console.WriteLine("\nThis is the beginning of the document.");
+// انقل موضع المؤشر إلى بداية المستند.
+builder.MoveToDocumentStart();
+Console.WriteLine("\nThis is the beginning of the document.");
 
-	// انقل موضع المؤشر إلى نهاية المستند.
-	builder.MoveToDocumentEnd();
-	Console.WriteLine("\nThis is the end of the document.");
-	
+// انقل موضع المؤشر إلى نهاية المستند.
+builder.MoveToDocumentEnd();
+Console.WriteLine("\nThis is the end of the document.");
 ```
 
 ## خاتمة

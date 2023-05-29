@@ -49,19 +49,19 @@ Ecco il codice sorgente completo per l'inserimento di un collegamento ipertestua
 I collegamenti ipertestuali sono un modo efficace per migliorare l'interattività e l'utilità dei documenti di Word. Possono essere utilizzati per fare riferimento a risorse esterne, fornire informazioni aggiuntive o creare elementi di navigazione all'interno del documento.
 
 ```csharp
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.Write("Please make sure to visit ");
-	builder.Font.Color = Color.Blue;
-	builder.Font.Underline = Underline.Single;
-	
-	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", falso);
-	
-	builder.Font.ClearFormatting();
-	builder.Write(" for more information.");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
+builder.Write("Please make sure to visit ");
+builder.Font.Color = Color.Blue;
+builder.Font.Underline = Underline.Single;
+
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", falso);
+
+builder.Font.ClearFormatting();
+builder.Write(" for more information.");
+
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
 Ricorda di modificare il codice in base ai tuoi requisiti specifici, inclusi il testo del collegamento ipertestuale e l'URL. Miglioralo con formattazione o funzionalità aggiuntive secondo necessità.

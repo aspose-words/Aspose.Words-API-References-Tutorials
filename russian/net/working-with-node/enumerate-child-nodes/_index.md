@@ -60,20 +60,19 @@ foreach (Node child in children)
 
 
 ```csharp
-	Document doc = new Document();
-	Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+Document doc = new Document();
+Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 
-	NodeCollection children = paragraph.ChildNodes;
-	foreach (Node child in children)
+NodeCollection children = paragraph.ChildNodes;
+foreach (Node child in children)
+{
+	// Абзац может содержать дочерние элементы различных типов, таких как прогоны, формы и другие.
+	if (child.NodeType == NodeType.Run)
 	{
-		// Абзац может содержать дочерние элементы различных типов, таких как прогоны, формы и другие.
-		if (child.NodeType == NodeType.Run)
-		{
-			Run run = (Run) child;
-			Console.WriteLine(run.Text);
-		}
+		Run run = (Run) child;
+		Console.WriteLine(run.Text);
 	}
-            
+}
 ```
 
 Это полный пример кода для перечисления дочерних узлов абзаца с помощью Aspose.Words для .NET. Обязательно импортируйте ссылки

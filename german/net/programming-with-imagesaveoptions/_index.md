@@ -2,7 +2,7 @@
 title: Programmieren mit Imagesaveoptions
 linktitle: Programmieren mit Imagesaveoptions
 second_title: Aspose.Words für .NET API-Referenz
-description: Die Tutorials enthalten die Steuerung des Schwellenwerts für die TIFF-Binarisierung, das Abrufen des TIFF-Seitenbereichs, das indizierte 1-Bit-Format, das Abrufen des JPEG-Seitenbereichs und den Rückruf zum Speichern von Seiten
+description: Erfahren Sie, wie Sie mit Bildspeicheroptionen in Aspose.Words für .NET programmieren. Schritt-für-Schritt-Anleitungen mit Beispielcode zum Speichern und Bearbeiten von Bildern in Ihren Word-Dokumenten.
 type: docs
 weight: 1630
 url: /de/net/programming-with-imagesaveoptions/

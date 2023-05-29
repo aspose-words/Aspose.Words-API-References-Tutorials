@@ -2,7 +2,7 @@
 title: Remove Content
 linktitle: Remove Content
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain remove page breaks, remove page breaks, remove section breaks, remove footers, remove toc and remove table of contents
+description: Learn how to effectively remove content from Word documents using Aspose.Words for .NET. Follow step-by-step tutorials and use C# code samples to learn different content removal techniques.
 type: docs
 weight: 1370
 url: /net/remove-content/

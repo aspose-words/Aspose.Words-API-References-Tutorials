@@ -43,14 +43,13 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// La section est le premier nœud enfant du document.
-	Node section = doc.FirstChild;
+// La section est le premier nœud enfant du document.
+Node section = doc.FirstChild;
 
-	// Le nœud parent de la section est le document.
-	Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
-            
+// Le nœud parent de la section est le document.
+Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
 Ceci est un exemple de code complet pour obtenir le nœud parent d'un nœud spécifique avec Aspose.Words pour .NET. Assurez-vous d'importer les références nécessaires et suivez les étapes décrites précédemment pour intégrer ce code dans votre projet.

@@ -33,7 +33,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Cell firstCell = table.FirstRow.FirstCell;
 ```
 
-## Paso 4: Mostrar formato de celda inicial
+## Paso 4: mostrar el formato de celda inicial
 Antes de expandir los estilos de la tabla, mostramos el color de fondo actual de la celda. Debe estar vacío porque el formato actual se almacena en el estilo de la tabla.
 
 ```csharp

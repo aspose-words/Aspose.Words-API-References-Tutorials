@@ -2,7 +2,7 @@
 title: Düğümle Çalışmak
 linktitle: Düğümle Çalışmak
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, Aspose.Words for .NET kullanarak Word Belgesinde düğüm tipini kullanmayı, üst düğümü almayı, sahip belgesini almayı, tüm düğümleri yinelemeyi, tüm düğümleri çaprazlamayı, alt düğümleri numaralandırmayı ve paragraf düğümleri oluşturmayı içerir.
+description: Aspose.Words for .NET kullanarak Word belgelerindeki düğümlerle nasıl çalışacağınızı öğrenin. Kod örnekleriyle ayrıntılı öğreticiler.
 type: docs
 weight: 1000
 url: /tr/net/working-with-node/

@@ -2,7 +2,7 @@
 title: Программирование с помощью Htmlloadoptions
 linktitle: Программирование с помощью Htmlloadoptions
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат предпочтительный тип управления
+description: Узнайте, как программировать с параметрами загрузки HTML в Aspose.Words для .NET. Учебники познакомят вас с различными функциями загрузки HTML-документов.
 type: docs
 weight: 1600
 url: /ru/net/programming-with-htmlloadoptions/

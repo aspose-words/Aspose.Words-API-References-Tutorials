@@ -86,48 +86,46 @@ doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 
 
 ```csharp
+// Путь к каталогу документов.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
+Body body = doc.FirstSection.Body;
+Paragraph para = body.FirstParagraph;
 
-	// Путь к каталогу документов.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	Body body = doc.FirstSection.Body;
-	Paragraph para = body.FirstParagraph;
+// Добавьте текст в первый абзац, затем добавьте еще два абзаца.
+para.AppendChild(new Run(doc, "Paragraph 1. "));
+body.AppendParagraph("Paragraph 2. ");
+body.AppendParagraph("Paragraph 3. ");
 
-	// Добавьте текст в первый абзац, затем добавьте еще два абзаца.
-	para.AppendChild(new Run(doc, "Paragraph 1. "));
-	body.AppendParagraph("Paragraph 2. ");
-	body.AppendParagraph("Paragraph 3. ");
+// У нас есть три абзаца, ни один из которых не зарегистрирован как редакция любого типа.
+//Если мы добавим/удалим какой-либо контент в документе во время отслеживания изменений,
+// они будут отображаться как таковые в документе и могут быть приняты/отклонены.
+doc.StartTrackRevisions("John Doe", DateTime.Now);
 
-	// У нас есть три абзаца, ни один из которых не зарегистрирован как редакция любого типа.
-	//Если мы добавим/удалим какой-либо контент в документе во время отслеживания изменений,
-	// они будут отображаться как таковые в документе и могут быть приняты/отклонены.
-	doc.StartTrackRevisions("John Doe", DateTime.Now);
+// Этот абзац является редакцией и будет иметь соответствующий установленный флаг «IsInsertRevision».
+para = body.AppendParagraph("Paragraph 4. ");
+Assert.True(para.IsInsertRevision);
 
-	// Этот абзац является редакцией и будет иметь соответствующий установленный флаг «IsInsertRevision».
-	para = body.AppendParagraph("Paragraph 4. ");
-	Assert.True(para.IsInsertRevision);
+// Получите коллекцию абзацев документа и удалите абзац.
+ParagraphCollection paragraphs = body.Paragraphs;
+Assert.AreEqual(4, paragraphs.Count);
+para = paragraphs[2];
+para.Remove();
 
-	// Получите коллекцию абзацев документа и удалите абзац.
-	ParagraphCollection paragraphs = body.Paragraphs;
-	Assert.AreEqual(4, paragraphs.Count);
-	para = paragraphs[2];
-	para.Remove();
+// Поскольку мы отслеживаем изменения, абзац все еще существует в документе, для него будет установлен параметр «IsDeleteRevision».
+// и будет отображаться как редакция в Microsoft Word, пока мы не примем или не отклоним все редакции.
+Assert.AreEqual(4, paragraphs.Count);
+Assert.True(para.IsDeleteRevision);
 
-	// Поскольку мы отслеживаем изменения, абзац все еще существует в документе, для него будет установлен параметр «IsDeleteRevision».
-	// и будет отображаться как редакция в Microsoft Word, пока мы не примем или не отклоним все редакции.
-	Assert.AreEqual(4, paragraphs.Count);
-	Assert.True(para.IsDeleteRevision);
+// Параграф удаления редакции удаляется, как только мы принимаем изменения.
+doc.AcceptAllRevisions();
+Assert.AreEqual(3, paragraphs.Count);
+Assert.That(para, Is.Empty);
 
-	// Параграф удаления редакции удаляется, как только мы принимаем изменения.
-	doc.AcceptAllRevisions();
-	Assert.AreEqual(3, paragraphs.Count);
-	Assert.That(para, Is.Empty);
+// Если остановить отслеживание изменений, этот текст будет отображаться как обычный текст.
+// Редакции не учитываются при изменении документа.
+doc.StopTrackRevisions();
 
-	// Если остановить отслеживание изменений, этот текст будет отображаться как обычный текст.
-	// Редакции не учитываются при изменении документа.
-	doc.StopTrackRevisions();
-
-	// Сохраните документ.
-	doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-            
+// Сохраните документ.
+doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```

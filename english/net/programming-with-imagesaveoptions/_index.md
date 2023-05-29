@@ -2,7 +2,7 @@
 title: Programming With Imagesaveoptions
 linktitle: Programming With Imagesaveoptions
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain expose threshold control for tiff binarization, get tiff page range, format 1bpp indexed, get jpeg page range and page saving callback
+description: Learn how to program with image saving options in Aspose.Words for .NET. Step-by-step tutorials with sample code for saving and manipulating images in your Word documents.
 type: docs
 weight: 1630
 url: /net/programming-with-imagesaveoptions/

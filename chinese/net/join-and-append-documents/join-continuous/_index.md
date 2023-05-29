@@ -45,7 +45,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## 第五步：保存修改后的文档
+## 第五步：保存修改后的文件
 
 最后，使用保存修改后的目标文档`Save`的方法`Document`目的。
 

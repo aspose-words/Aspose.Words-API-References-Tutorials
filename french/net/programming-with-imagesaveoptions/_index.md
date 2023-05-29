@@ -2,7 +2,7 @@
 title: Programmation avec des images
 linktitle: Programmation avec des images
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent le contrôle du seuil d'exposition pour la binarisation tiff, l'obtention de la plage de pages tiff, le format 1bpp indexé, l'obtention de la plage de pages jpeg et le rappel d'enregistrement de page
+description: Apprenez à programmer avec les options d'enregistrement d'images dans Aspose.Words pour .NET. Tutoriels étape par étape avec un exemple de code pour enregistrer et manipuler des images dans vos documents Word.
 type: docs
 weight: 1630
 url: /fr/net/programming-with-imagesaveoptions/

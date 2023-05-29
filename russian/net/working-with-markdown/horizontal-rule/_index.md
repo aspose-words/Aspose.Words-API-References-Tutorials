@@ -29,12 +29,11 @@ builder. InsertHorizontalRule();
 ## Пример исходного кода для горизонтального правила с Aspose.Words для .NET
 
 ```csharp
-	// Используйте конструктор документов, чтобы добавить содержимое в документ.
-	DocumentBuilder builder = new DocumentBuilder();
+// Используйте конструктор документов, чтобы добавить содержимое в документ.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Вставьте горизонтальную линейку.
-	builder.InsertHorizontalRule();
-            
+// Вставьте горизонтальную линейку.
+builder.InsertHorizontalRule();
 ```
 
 Поздравляем! Теперь вы узнали, как использовать функцию горизонтального правила с Aspose.Words для .NET.

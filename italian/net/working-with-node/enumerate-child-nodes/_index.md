@@ -60,20 +60,19 @@ foreach (Node child in children)
 
 
 ```csharp
-	Document doc = new Document();
-	Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+Document doc = new Document();
+Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 
-	NodeCollection children = paragraph.ChildNodes;
-	foreach (Node child in children)
+NodeCollection children = paragraph.ChildNodes;
+foreach (Node child in children)
+{
+	// Un paragrafo può contenere figli di vari tipi come sequenze, forme e altri.
+	if (child.NodeType == NodeType.Run)
 	{
-		// Un paragrafo può contenere figli di vari tipi come sequenze, forme e altri.
-		if (child.NodeType == NodeType.Run)
-		{
-			Run run = (Run) child;
-			Console.WriteLine(run.Text);
-		}
+		Run run = (Run) child;
+		Console.WriteLine(run.Text);
 	}
-            
+}
 ```
 
 Questo è un esempio di codice completo per enumerare i nodi figlio di un paragrafo con Aspose.Words per .NET. Assicurati di importare i riferimenti

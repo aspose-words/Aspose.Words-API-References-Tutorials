@@ -2,7 +2,7 @@
 title: Программирование с Rtfsaveoptions
 linktitle: Программирование с Rtfsaveoptions
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат сохранение изображений в формате wmf
+description: Изучите программирование с параметрами сохранения RTF в Aspose.Words для .NET. Узнайте, как сохранять и настраивать документы RTF с помощью пошаговых руководств и примеров кода C#.
 type: docs
 weight: 1690
 url: /ru/net/programming-with-rtfsaveoptions/

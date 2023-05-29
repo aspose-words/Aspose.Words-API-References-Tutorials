@@ -2,7 +2,7 @@
 title: Programmering Med Former
 linktitle: Programmering Med Former
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller lägg till gruppform, infoga form, bildförhållande låst, layout i cell, lägg till hörn avklippta, få faktiska formgränspunkter, vertikalt ankare, detektera
+description: Utforska formprogrammering i Aspose.Words för .NET. Lär dig hur du manipulerar och anpassar former i dina Word-dokument med steg-för-steg handledningar och exempelkod i C#.
 type: docs
 weight: 1560
 url: /sv/net/programming-with-shapes/

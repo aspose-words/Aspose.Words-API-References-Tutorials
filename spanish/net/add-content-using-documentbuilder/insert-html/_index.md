@@ -45,18 +45,16 @@ Aquí está el código fuente completo para insertar contenido HTML en un docume
 Esta característica es particularmente útil cuando tiene contenido HTML existente que desea incluir en sus documentos de Word mientras conserva el formato y el diseño originales.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertHtml(
-		"<P align='right'>Paragraph right</P>" +
-		"<b>Implicit paragraph left</b>" +
-		"<div align='center'>Div center</div>" +
-		"<h1 align='left'>Heading 1 left.</h1>");
+builder.InsertHtml(
+	"<P align='right'>Paragraph right</P>" +
+	"<b>Implicit paragraph left</b>" +
+	"<div align='center'>Div center</div>" +
+	"<h1 align='left'>Heading 1 left.</h1>");
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
 Recuerde ajustar el código de acuerdo con su contenido HTML y requisitos específicos. Asegúrese de que su HTML esté bien formado y sea compatible con Aspose.Words para .NET.

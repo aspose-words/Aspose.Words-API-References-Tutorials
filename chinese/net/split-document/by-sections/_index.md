@@ -46,26 +46,24 @@ newDoc.Save(dataDir + $"SplitDocument.ParSections_{i}.docx");
 以下是 Aspose.Words for .NET 的 By Sections 功能的完整源代码：
 
 ```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Big document.docx");
 
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Big document.docx");
+for (int i = 0; i < doc.Sections.Count; i++)
+{
+	//将文档拆分为更小的部分，在本例中，按部分拆分。
+	Section section = doc.Sections[i].Clone();
 
-	for (int i = 0; i < doc.Sections.Count; i++)
-	{
-		//将文档拆分为更小的部分，在本例中，按部分拆分。
-		Section section = doc.Sections[i].Clone();
+	Document newDoc = new Document();
+	newDoc.Sections.Clear();
 
-		Document newDoc = new Document();
-		newDoc.Sections.Clear();
+	Section newSection = (Section) newDoc.ImportNode(section, true);
+	newDoc.Sections.Add(newSection);
 
-		Section newSection = (Section) newDoc.ImportNode(section, true);
-		newDoc.Sections.Add(newSection);
-
-		//将每个部分另存为单独的文档。
-		newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
-	}
-
+	//将每个部分另存为单独的文档。
+	newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
+}
 ```
 
 使用此代码，您将能够使用 Aspose.Words for .NET 将 Word 文档拆分为单独的部分。

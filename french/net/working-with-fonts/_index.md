@@ -2,7 +2,7 @@
 title: Travailler avec des polices
 linktitle: Travailler avec des polices
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels montrent comment appliquer le formatage de la police, l'espacement des lignes de police, l'effet DMLText, activer/désactiver le remplacement de la police, les paramètres de remplacement des polices, obtenir la liste des polices disponibles dans le document Word à l'aide d'Aspose.Words pour .NET
+description: Les didacticiels sur l'utilisation des polices vous apprennent à utiliser les polices dans Word avec Aspose.Words pour .NET. Formatage, substitutions, notifications, et plus encore.
 type: docs
 weight: 420
 url: /fr/net/working-with-fonts/

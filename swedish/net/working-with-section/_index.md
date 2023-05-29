@@ -2,7 +2,7 @@
 title: Arbeta med sektion
 linktitle: Arbeta med sektion
 second_title: Aspose.Words för .NET API Referens
-description: Handledningarna innehåller lägg till sektion, ta bort sektion, ta bort alla sektioner, lägg till sektionsinnehåll, klona sektion, kopiera sektion, ta bort sidhuvudinnehåll, ta bort sektionsinnehåll, ändra sidinställningar i alla sektioner och sektionsåtkomst genom att indexera med Aspose.Words för .NET.
+description: Lär dig hur du arbetar med avsnitt i Word-dokument med Aspose.Words för .NET. Steg-för-steg handledning med exempelkod för att skapa, redigera och formatera avsnitt effektivt.
 type: docs
 weight: 1220
 url: /sv/net/working-with-section/

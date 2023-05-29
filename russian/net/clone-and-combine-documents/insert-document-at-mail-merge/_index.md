@@ -42,19 +42,17 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc")
 Вот полный исходный код для функции «Вставить документ в слияние» Aspose.Words для .NET:
 
 ```csharp
+// Путь к каталогу документов.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
-	// Путь к каталогу документов.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
+//В основном документе есть поле слияния под названием «Документ_1».
+// Соответствующие данные для этого поля содержат полный путь к документу.
+// Это должно быть вставлено в это поле.
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 
-	mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-	//В основном документе есть поле слияния под названием «Документ_1».
-	// Соответствующие данные для этого поля содержат полный путь к документу.
-	// Это должно быть вставлено в это поле.
-	mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-
-	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-
+mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
 С помощью этого кода вы сможете вставлять документ в другой документ во время слияния почты, используя Aspose.Words для .NET. Полученный документ будет сохранен под новым именем

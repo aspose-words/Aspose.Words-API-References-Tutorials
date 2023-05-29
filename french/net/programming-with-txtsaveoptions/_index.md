@@ -2,7 +2,7 @@
 title: Programmation avec Txtsaveoptions
 linktitle: Programmation avec Txtsaveoptions
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent des marques d'ajout de bidis, utilisent le caractère de tabulation par niveau pour l'indentation de la liste et utilisent le caractère d'espacement par niveau pour l'indentation de la liste
+description: Apprenez à programmer avec les options d'enregistrement de fichiers texte dans Aspose.Words pour .NET. Apprenez à spécifier l'encodage, à formater le texte, à gérer les sauts de ligne, etc., grâce à des didacticiels pas à pas et à des exemples de code en C#.
 type: docs
 weight: 1700
 url: /fr/net/programming-with-txtsaveoptions/

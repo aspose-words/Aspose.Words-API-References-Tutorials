@@ -29,7 +29,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- A continuación, utilice el`InsertChart` metodo de la`DocumentBuilder` para insertar un gráfico de áreas en el documento.
+ A continuación, utilice el`InsertChart` metodo de la`DocumentBuilder` para insertar un gráfico de área en el documento.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);

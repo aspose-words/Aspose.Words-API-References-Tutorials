@@ -86,48 +86,46 @@ doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 
 
 ```csharp
+// المسار إلى دليل المستندات.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
+Body body = doc.FirstSection.Body;
+Paragraph para = body.FirstParagraph;
 
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	Body body = doc.FirstSection.Body;
-	Paragraph para = body.FirstParagraph;
+// أضف نصًا إلى الفقرة الأولى ، ثم أضف فقرتين أخريين.
+para.AppendChild(new Run(doc, "Paragraph 1. "));
+body.AppendParagraph("Paragraph 2. ");
+body.AppendParagraph("Paragraph 3. ");
 
-	// أضف نصًا إلى الفقرة الأولى ، ثم أضف فقرتين أخريين.
-	para.AppendChild(new Run(doc, "Paragraph 1. "));
-	body.AppendParagraph("Paragraph 2. ");
-	body.AppendParagraph("Paragraph 3. ");
+// لدينا ثلاث فقرات ، لم يتم تسجيل أي منها كأي نوع من المراجعة
+//إذا أضفنا / أزلنا أي محتوى في المستند أثناء تتبع المراجعات ،
+// سيتم عرضها على هذا النحو في المستند ويمكن قبولها / رفضها.
+doc.StartTrackRevisions("John Doe", DateTime.Now);
 
-	// لدينا ثلاث فقرات ، لم يتم تسجيل أي منها كأي نوع من المراجعة
-	//إذا أضفنا / أزلنا أي محتوى في المستند أثناء تتبع المراجعات ،
-	// سيتم عرضها على هذا النحو في المستند ويمكن قبولها / رفضها.
-	doc.StartTrackRevisions("John Doe", DateTime.Now);
+// هذه الفقرة هي مراجعة وستحتوي على مجموعة الرايات "IsInsertRevision".
+para = body.AppendParagraph("Paragraph 4. ");
+Assert.True(para.IsInsertRevision);
 
-	// هذه الفقرة هي مراجعة وستحتوي على مجموعة الرايات "IsInsertRevision".
-	para = body.AppendParagraph("Paragraph 4. ");
-	Assert.True(para.IsInsertRevision);
+// احصل على مجموعة فقرات المستند وقم بإزالة فقرة.
+ParagraphCollection paragraphs = body.Paragraphs;
+Assert.AreEqual(4, paragraphs.Count);
+para = paragraphs[2];
+para.Remove();
 
-	// احصل على مجموعة فقرات المستند وقم بإزالة فقرة.
-	ParagraphCollection paragraphs = body.Paragraphs;
-	Assert.AreEqual(4, paragraphs.Count);
-	para = paragraphs[2];
-	para.Remove();
+// نظرًا لأننا نتتبع المراجعات ، فلا تزال الفقرة موجودة في المستند ، وستحتوي على مجموعة "IsDeleteRevision"
+// وسيتم عرضها كمراجعة في Microsoft Word ، حتى نقبل أو نرفض جميع المراجعات.
+Assert.AreEqual(4, paragraphs.Count);
+Assert.True(para.IsDeleteRevision);
 
-	// نظرًا لأننا نتتبع المراجعات ، فلا تزال الفقرة موجودة في المستند ، وستحتوي على مجموعة "IsDeleteRevision"
-	// وسيتم عرضها كمراجعة في Microsoft Word ، حتى نقبل أو نرفض جميع المراجعات.
-	Assert.AreEqual(4, paragraphs.Count);
-	Assert.True(para.IsDeleteRevision);
+// تتم إزالة فقرة مراجعة الحذف بمجرد قبول التغييرات.
+doc.AcceptAllRevisions();
+Assert.AreEqual(3, paragraphs.Count);
+Assert.That(para, Is.Empty);
 
-	// تتم إزالة فقرة مراجعة الحذف بمجرد قبول التغييرات.
-	doc.AcceptAllRevisions();
-	Assert.AreEqual(3, paragraphs.Count);
-	Assert.That(para, Is.Empty);
+// يؤدي إيقاف تتبع المراجعات إلى ظهور هذا النص كنص عادي.
+// لا يتم احتساب المراجعات عند تغيير المستند.
+doc.StopTrackRevisions();
 
-	// يؤدي إيقاف تتبع المراجعات إلى ظهور هذا النص كنص عادي.
-	// لا يتم احتساب المراجعات عند تغيير المستند.
-	doc.StopTrackRevisions();
-
-	// احفظ المستند.
-	doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-            
+// احفظ المستند.
+doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```

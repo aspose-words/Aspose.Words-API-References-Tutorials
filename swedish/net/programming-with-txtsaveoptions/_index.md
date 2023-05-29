@@ -2,7 +2,7 @@
 title: Programmering med Txtsaveoptions
 linktitle: Programmering med Txtsaveoptions
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller lägga till bidi-tecken, använd tabbtecken per nivå för listindrag och använd blankstegstecken per nivå för listindrag
+description: Lär dig hur du programmerar med alternativ för att spara textfiler i Aspose.Words för .NET. Lär dig hur du anger kodning, formaterar text, hanterar radbrytningar och mer med steg-för-steg handledningar och exempelkod i C#.
 type: docs
 weight: 1700
 url: /sv/net/programming-with-txtsaveoptions/

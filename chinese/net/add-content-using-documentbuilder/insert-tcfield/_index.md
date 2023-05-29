@@ -53,17 +53,15 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 下面是使用 Aspose.Words for .NET 插入 TCField 的完整示例源代码：
 
 ```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.InsertField("TC \"Entry Text\" \\f t");
+builder.InsertField("TC \"Entry Text\" \\f t");
 
-	doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
-			
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
 随意根据您的要求修改代码并探索 Aspose.Words for .NET 提供的其他功能。

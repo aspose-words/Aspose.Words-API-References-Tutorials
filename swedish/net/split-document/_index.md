@@ -2,7 +2,7 @@
 title: Dela dokument
 linktitle: Dela dokument
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller efter rubriker html, efter avsnitt html, efter avsnitt, sida för sida, sammanfoga dokument och efter sidintervall
+description: Lär dig hur du effektivt delar upp ett Word-dokument i separata delar med Aspose.Words för .NET. Följ steg-för-steg tutorials och använd C#-kodexempel för att lära dig olika tekniker för dokumentdelning.
 type: docs
 weight: 1450
 url: /sv/net/split-document/

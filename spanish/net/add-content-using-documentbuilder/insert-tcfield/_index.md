@@ -53,17 +53,15 @@ Tenga en cuenta que el documento de salida no está directamente en formato Mark
 Aquí está el código fuente de ejemplo completo para insertar un TCField usando Aspose.Words para .NET:
 
 ```csharp
+// La ruta al directorio de documentos.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	// La ruta al directorio de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.InsertField("TC \"Entry Text\" \\f t");
+builder.InsertField("TC \"Entry Text\" \\f t");
 
-	doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
-			
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
 Siéntase libre de modificar el código de acuerdo con sus requisitos y explorar otras funciones proporcionadas por Aspose.Words para .NET.

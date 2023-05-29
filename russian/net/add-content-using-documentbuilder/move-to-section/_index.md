@@ -71,33 +71,29 @@ Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 ### Пример исходного кода для Move To Move To Section с использованием Aspose.Words для .NET
 
 ```csharp
+Document doc = new Document();
+doc.AppendChild(new Section(doc));
 
-	
-	Document doc = new Document();
-	doc.AppendChild(new Section(doc));
+// Переместите DocumentBuilder во второй раздел и добавьте текст.
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.MoveToSection(1);
+builder.Writeln("Text added to the 2nd section.");
 
-	// Переместите DocumentBuilder во второй раздел и добавьте текст.
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToSection(1);
-	builder.Writeln("Text added to the 2nd section.");
+// Создайте документ с абзацами.
+doc = new Document(MyDir + "Paragraphs.docx");
+ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
+Assert.AreEqual(22, paragraphs.Count);
 
-	// Создайте документ с абзацами.
-	doc = new Document(MyDir + "Paragraphs.docx");
-	ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-	Assert.AreEqual(22, paragraphs.Count);
+//Когда мы создаем DocumentBuilder для документа, его курсор по умолчанию находится в самом начале документа,
+// и любой контент, добавленный DocumentBuilder, будет просто добавлен к документу.
+builder = new DocumentBuilder(doc);
+Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 
-	//Когда мы создаем DocumentBuilder для документа, его курсор по умолчанию находится в самом начале документа,
-	// и любой контент, добавленный DocumentBuilder, будет просто добавлен к документу.
-	builder = new DocumentBuilder(doc);
-	Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
-
-	// Вы можете переместить курсор в любую позицию в абзаце.
-	builder.MoveToParagraph(2, 10);
-	Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
-	builder.Writeln("This is a new third paragraph. ");
-	Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
-	
-        
+// Вы можете переместить курсор в любую позицию в абзаце.
+builder.MoveToParagraph(2, 10);
+Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
+builder.Writeln("This is a new third paragraph. ");
+Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
 Вот и все ! Теперь вы поняли, как использовать функцию перемещения в раздел Aspose.Words для .NET, используя предоставленный исходный код. Теперь вы можете интегрировать эту функцию в свое собственное приложение и динамически управлять разделами и абзацами документов Word.

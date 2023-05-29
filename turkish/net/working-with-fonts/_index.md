@@ -2,7 +2,7 @@
 title: Yazı Tipleriyle Çalışmak
 linktitle: Yazı Tipleriyle Çalışmak
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, Aspose.Words for .NET kullanarak yazı tipi biçimlendirmesinin, yazı tipi satırı aralığının, DMLText Efektinin, yazı tipi değiştirmenin etkinleştirilmesi/devre dışı bırakılmasının, yazı tipi geri dönüş ayarlarının nasıl uygulanacağını, Word Belgesinde kullanılabilir yazı tipi listesinin nasıl alınacağını gösterir.
+description: Yazı Tipleriyle Çalışma öğreticileri, Aspose.Words for .NET ile Word'de yazı tipleriyle nasıl çalışacağınızı öğretir. Biçimlendirme, değiştirmeler, bildirimler ve daha fazlası.
 type: docs
 weight: 420
 url: /tr/net/working-with-fonts/
@@ -10,7 +10,7 @@ url: /tr/net/working-with-fonts/
 
 Yazı Tipleriyle Çalışma eğitimleri, yazı tipleriyle çalışmanın çeşitli yönlerinde size rehberlik ederek yazı tipi formatını değiştirme, yazı tiplerini belirli dizinlerden yükleme, yazı tiplerini değiştirmeyi yönetme ve daha fazlası gibi işlemleri gerçekleştirmenize olanak tanır.
 
-Öğreticiler, kavramları göstermek için C# dil kaynak kodunun yanı sıra her özellik için ayrıntılı adım adım açıklamalar sağlar. Word belgelerinizde yazı tipiyle ilgili belirli görevleri gerçekleştirmek için Aspose.Words Library for .NET'ten sınıfları ve yöntemleri nasıl kullanacağınızı öğreneceksiniz.
+Öğreticiler, kavramları göstermek için C# dil kaynak kodunun yanı sıra her özellik için ayrıntılı adım adım açıklamalar sunar. Word belgelerinizde yazı tipiyle ilgili belirli görevleri gerçekleştirmek için Aspose.Words Library for .NET'ten sınıfları ve yöntemleri nasıl kullanacağınızı öğreneceksiniz.
 
 Metni farklı yazı tipleriyle biçimlendirmek, yazı tipi değiştirme kurallarını ayarlamak, belirli dizinlerden yazı tipleri yüklemek veya yazı tipi bildirimleri almak isteyip istemediğinize göre, "Yazı Tipleriyle Çalışma" eğitimleri size bu görevleri gerçekleştirmeniz için gereken bilgileri sağlayacaktır. kolaylıkla.
 

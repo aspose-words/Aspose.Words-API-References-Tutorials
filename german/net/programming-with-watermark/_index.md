@@ -2,7 +2,7 @@
 title: Programmieren mit Wasserzeichen
 linktitle: Programmieren mit Wasserzeichen
 second_title: Aspose.Words für .NET API-Referenz
-description: Tutorials enthalten das Hinzufügen von Textwasserzeichen mit spezifischen Optionen
+description: Erfahren Sie, wie Sie in Aspose.Words für .NET mit Wasserzeichen programmieren. Erfahren Sie mit Schritt-für-Schritt-Anleitungen und C#-Beispielcode, wie Sie Text- oder Bildwasserzeichen hinzufügen, ihr Erscheinungsbild anpassen, sie auf Seiten platzieren und vieles mehr.
 type: docs
 weight: 1570
 url: /de/net/programming-with-watermark/

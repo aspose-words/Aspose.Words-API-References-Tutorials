@@ -47,20 +47,18 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 Voici le code source complet de la fonction Insérer un document lors du remplacement d'Aspose.Words pour .NET :
 
 ```csharp
+// Chemin d'accès au répertoire des documents.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
-	// Chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+// Définissez les options de recherche et de remplacement.
+FindReplaceOptions options = new FindReplaceOptions
+{
+	Direction = FindReplaceDirection.Backward, 
+	ReplacingCallback = new InsertDocumentAtReplaceHandler()
+};
 
-	// Définissez les options de recherche et de remplacement.
-	FindReplaceOptions options = new FindReplaceOptions
-	{
-		Direction = FindReplaceDirection.Backward, 
-		ReplacingCallback = new InsertDocumentAtReplaceHandler()
-	};
-
-	// Appelez la méthode de remplacement.
-	mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
-	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
-
+// Appelez la méthode de remplacement.
+mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
+mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```

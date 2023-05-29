@@ -2,7 +2,7 @@
 title: Jämför dokument
 linktitle: Jämför dokument
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller jämför för lika, jämför alternativ, jämförelsemål och jämförelsegranularitet.
+description: Lär dig hur du jämför Word-dokument och identifierar skillnader med Aspose.Words för .NET. Guider och praktiska exempel ingår.
 type: docs
 weight: 1480
 url: /sv/net/compare-documents/

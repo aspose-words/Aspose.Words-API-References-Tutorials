@@ -78,55 +78,52 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 Ecco il codice sorgente completo per l'inserimento di un sommario utilizzando Aspose.Words per .NET:
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-            string dataDir = "YOUR DOCUMENT DIRECTORY";
-			
-            // Inizializza DocumentBuilder con l'oggetto Document
-            Document doc = new Document();
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            
-            // Inserisci la tabella dei contenutia
-			builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-            
-            // Avviare il contenuto effettivo del documento nella seconda pagina.
-            builder.InsertBreak(BreakType.PageBreak);
+// Inizializza DocumentBuilder con l'oggetto Document
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
+// Inserisci la tabella dei contenutia
+builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-            builder.Writeln("Heading 1");
+// Avviare il contenuto effettivo del documento nella seconda pagina.
+builder.InsertBreak(BreakType.PageBreak);
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 
-            builder.Writeln("Heading 1.1");
-            builder.Writeln("Heading 1.2");
+builder.Writeln("Heading 1");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            builder.Writeln("Heading 2");
-            builder.Writeln("Heading 3");
+builder.Writeln("Heading 1.1");
+builder.Writeln("Heading 1.2");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 
-            builder.Writeln("Heading 3.1");
+builder.Writeln("Heading 2");
+builder.Writeln("Heading 3");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            builder.Writeln("Heading 3.1.1");
-            builder.Writeln("Heading 3.1.2");
-            builder.Writeln("Heading 3.1.3");
+builder.Writeln("Heading 3.1");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
 
-            builder.Writeln("Heading 3.2");
-            builder.Writeln("Heading 3.3");
+builder.Writeln("Heading 3.1.1");
+builder.Writeln("Heading 3.1.2");
+builder.Writeln("Heading 3.1.3");
 
-            
-            // Il sommario appena inserito sarà inizialmente vuoto.
-            // Deve essere popolato aggiornando i campi nel documento.
-            doc.UpdateFields();
-            
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
-            
-        
+builder.Writeln("Heading 3.2");
+builder.Writeln("Heading 3.3");
+
+
+// Il sommario appena inserito sarà inizialmente vuoto.
+// Deve essere popolato aggiornando i campi nel documento.
+doc.UpdateFields();
+
+
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```

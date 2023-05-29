@@ -76,40 +76,38 @@ Ecco il codice sorgente completo per spostare un nodo in un documento tracciato 
 
 
 ```csharp
+// Il percorso della directory dei documenti.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("Paragraph 1");
+builder.Writeln("Paragraph 2");
+builder.Writeln("Paragraph 3");
+builder.Writeln("Paragraph 4");
+builder.Writeln("Paragraph 5");
+builder.Writeln("Paragraph 6");
+Body body = doc.FirstSection.Body;
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 
-	// Il percorso della directory dei documenti.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.Writeln("Paragraph 1");
-	builder.Writeln("Paragraph 2");
-	builder.Writeln("Paragraph 3");
-	builder.Writeln("Paragraph 4");
-	builder.Writeln("Paragraph 5");
-	builder.Writeln("Paragraph 6");
-	Body body = doc.FirstSection.Body;
-	Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+// Inizia a monitorare le revisioni.
+doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
-	// Inizia a monitorare le revisioni.
-	doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+// Generare revisioni quando si sposta un nodo da una posizione a un'altra.
+Node node = body.Paragraphs[3];
+Node endNode = body.Paragraphs[5].NextSibling;
+Node referenceNode = body.Paragraphs[0];
+while (node != endNode)
+{
+	Node nextNode = node.NextSibling;
+	body.InsertBefore(node, referenceNode);
+	node = nextNode;
+}
 
-	// Generare revisioni quando si sposta un nodo da una posizione a un'altra.
-	Node node = body.Paragraphs[3];
-	Node endNode = body.Paragraphs[5].NextSibling;
-	Node referenceNode = body.Paragraphs[0];
-	while (node != endNode)
-	{
-		Node nextNode = node.NextSibling;
-		body.InsertBefore(node, referenceNode);
-		node = nextNode;
-	}
+// Interrompi il processo di monitoraggio delle revisioni.
+doc.StopTrackRevisions();
 
-	// Interrompi il processo di monitoraggio delle revisioni.
-	doc.StopTrackRevisions();
-
-	// Ci sono 3 paragrafi aggiuntivi nell'intervallo di spostamento.
-	Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
-	doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
-            
+// Ci sono 3 paragrafi aggiuntivi nell'intervallo di spostamento.
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```
 

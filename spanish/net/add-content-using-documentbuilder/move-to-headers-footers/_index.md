@@ -70,28 +70,26 @@ Asegúrese de especificar la ruta y el formato de archivo adecuados (p. ej., DOC
 ### Ejemplo de código fuente para Mover a encabezados/pies de página usando Aspose.Words para .NET
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Especifique que queremos encabezados y pies de página diferentes para las páginas primeras, pares e impares.
+builder.PageSetup.DifferentFirstPageHeaderFooter = true;
+builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
-	// Especifique que queremos encabezados y pies de página diferentes para las páginas primeras, pares e impares.
-	builder.PageSetup.DifferentFirstPageHeaderFooter = true;
-	builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
+// Crea los encabezados.
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.Write("Header for the first page");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
+builder.Write("Header for even pages");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Header for all other pages");
 
-	// Crea los encabezados.
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.Write("Header for the first page");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
-	builder.Write("Header for even pages");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
-	builder.Write("Header for all other pages");
+// Cree dos páginas en el documento.
+builder.MoveToSection(0);
+builder.Writeln("Page1");
+builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("Page2");
 
-	// Cree dos páginas en el documento.
-	builder.MoveToSection(0);
-	builder.Writeln("Page1");
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.Writeln("Page2");
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
-
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```

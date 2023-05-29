@@ -2,7 +2,7 @@
 title: 使用 Imagesaveoptions 编程
 linktitle: 使用 Imagesaveoptions 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含用于 tiff 二值化的公开阈值控制、获取 tiff 页面范围、格式 1bpp 索引、获取 jpeg 页面范围和页面保存回调
+description: 了解如何使用 Aspose.Words for .NET 中的图像保存选项进行编程。包含用于在 Word 文档中保存和操作图像的示例代码的分步教程。
 type: docs
 weight: 1630
 url: /zh/net/programming-with-imagesaveoptions/

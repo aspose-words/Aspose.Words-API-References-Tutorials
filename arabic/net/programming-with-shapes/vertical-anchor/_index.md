@@ -31,7 +31,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إدراج وتكوين شكل
+## الخطوة 3: إدراج شكل وتكوينه
  أدخل شكلاً في المستند باستخدام ملف`InsertShape` طريقة`DocumentBuilder` هدف. اضبط الأبعاد المطلوبة للشكل.
 
 ```csharp

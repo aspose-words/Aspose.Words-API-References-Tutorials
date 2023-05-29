@@ -35,7 +35,7 @@ theme.Colors.Hyperlink = Color.Gold;
 
 Bu son adımda, değiştirilen belgeyi gerektiği gibi kaydedebilirsiniz.
 
-Bir belge için tema özelliklerini ayarlamak üzere kaynak kodu çalıştırabilirsiniz. Bu, belgelerinizde tutarlı bir görünüm elde etmek için temada kullanılan yazı tiplerini ve renkleri özelleştirmenizi sağlar.
+Bir belge için tema özelliklerini ayarlamak üzere kaynak kodunu çalıştırabilirsiniz. Bu, belgelerinizde tutarlı bir görünüm elde etmek için temada kullanılan yazı tiplerini ve renkleri özelleştirmenizi sağlar.
 
 ### Aspose.Words for .NET kullanarak Set Theme Properties için örnek kaynak kodu 
 ```csharp

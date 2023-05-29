@@ -42,13 +42,12 @@ Abschließend können wir das Dokument im gewünschten Format speichern.
 
 
 ```csharp
-	// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
-	DocumentBuilder builder = new DocumentBuilder();
+// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
+DocumentBuilder builder = new DocumentBuilder();
 
-	//Hyperlink einfügen.
-	builder.InsertHyperlink("https://www.aspose.com“, „https://www.aspose.com“, false);
-	builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
-            
+//Hyperlink einfügen.
+builder.InsertHyperlink("https://www.aspose.com“, „https://www.aspose.com“, false);
+builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
 
 

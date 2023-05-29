@@ -58,25 +58,23 @@ builder.Write(" Text immediately after the field.");
 ### Пример исходного кода для перемещения в поле слияния с использованием Aspose.Words для .NET
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Вставьте поле с помощью DocumentBuilder и добавьте текст после него.
+Field field = builder.InsertField("MERGEFIELD field");
+builder.Write(" Text after the field.");
 
-	// Вставьте поле с помощью DocumentBuilder и добавьте текст после него.
-	Field field = builder.InsertField("MERGEFIELD field");
-	builder.Write(" Text after the field.");
+// Курсор построителя в настоящее время находится в конце документа.
+Assert.Null(builder.CurrentNode);
+// Мы можем переместить конструктор в такое поле, поместив курсор сразу после поля.
+builder.MoveToField(field, true);
 
-	// Курсор построителя в настоящее время находится в конце документа.
-	Assert.Null(builder.CurrentNode);
-	// Мы можем переместить конструктор в такое поле, поместив курсор сразу после поля.
-	builder.MoveToField(field, true);
-
-	// Обратите внимание, что курсор находится за узлом FieldEnd поля, что означает, что мы фактически не находимся внутри поля.
-	// Если мы хотим переместить DocumentBuilder внутрь поля,
-	// нам нужно будет переместить его в узел FieldStart или FieldSeparator поля, используя метод DocumentBuilder.MoveTo().
-	Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
-	builder.Write(" Text immediately after the field.");
-	
+// Обратите внимание, что курсор находится за узлом FieldEnd поля, что означает, что мы фактически не находимся внутри поля.
+// Если мы хотим переместить DocumentBuilder внутрь поля,
+// нам нужно будет переместить его в узел FieldStart или FieldSeparator поля, используя метод DocumentBuilder.MoveTo().
+Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
+builder.Write(" Text immediately after the field.");
 ```
 
 ## Заключение

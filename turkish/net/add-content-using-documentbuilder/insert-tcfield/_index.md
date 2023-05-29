@@ -53,17 +53,15 @@ Kod başarıyla yürütüldüğünde, çıktı belgesi, belirtilen giriş metniy
 İşte Aspose.Words for .NET kullanarak bir TCField eklemek için eksiksiz örnek kaynak kodu:
 
 ```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.InsertField("TC \"Entry Text\" \\f t");
+builder.InsertField("TC \"Entry Text\" \\f t");
 
-	doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
-			
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
 Kodu gereksinimlerinize göre değiştirmekten ve Aspose.Words for .NET tarafından sağlanan diğer özellikleri keşfetmekten çekinmeyin.

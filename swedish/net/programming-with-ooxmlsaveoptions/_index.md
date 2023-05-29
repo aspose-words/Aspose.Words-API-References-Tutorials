@@ -2,14 +2,14 @@
 title: Programmering med Ooxmlsaveoptions
 linktitle: Programmering med Ooxmlsaveoptions
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller kryptera docx med lösenord, ooxml-kompatibilitet iso 29500_ 2008_ strict, uppdatera egenskapen senast sparad tid, behåll äldre kontrolltecken och ställ in compre
+description: Lär dig programmering med OOXML-sparalternativ i Aspose.Words för .NET. Omfattande tutorials och exempelkod för att manipulera och anpassa spara Word-dokument i OOXML-format.
 type: docs
 weight: 1660
 url: /sv/net/programming-with-ooxmlsaveoptions/
 ---
 Aspose.Words för .NET-handledningarna om programmering med OOXMLSaveOptions ger steg-för-steg-instruktioner för att manipulera OOXML-sparalternativ i dina dokument. Dessa handledningar leder dig genom stegen för att anpassa säkerhetskopieringsinställningar, såsom bakåtkompatibilitet, bildkomprimering och inbäddad teckensnittshantering. Du kommer att lära dig hur du använder dessa alternativ för att uppnå korrekta säkerhetskopieringsresultat optimerade för dina specifika behov.
 
- Handledningarna ger dig också praktiska kodexempel som illustrerar användningen av de olika funktionerna i OOXMLSaveOptions. Du får lära dig hur du anger sparalternativ när du skapar eller redigerar ett Word-dokument, med metoder som t.ex`CompatibilityOptions`, `ImageCompression` , och`ExportFontResources`Handledningarna hjälper dig att förstå hur dessa alternativ påverkar utdataformatet och välja lämpliga inställningar för dina projekt.
+ Handledningarna ger dig också praktiska kodexempel som illustrerar användningen av de olika funktionerna i OOXMLSaveOptions. Du får lära dig hur du anger sparalternativ när du skapar eller redigerar ett Word-dokument, med metoder som t.ex`CompatibilityOptions`, `ImageCompression` , och`ExportFontResources`. Handledningarna hjälper dig att förstå hur dessa alternativ påverkar utdataformatet och välja lämpliga inställningar för dina projekt.
 
 Oavsett om du vill skapa dokument som är kompatibla med äldre versioner av Word, minska filstorleken genom att komprimera bilder eller bädda in specifika teckensnitt, kommer Aspose.Words för .NET-tutorials om programmering med OOXMLSaveOptions att gå igenom allt. nödvändiga åtgärder. Du kommer att kunna dra full nytta av OOXML:s sparfunktioner och skapa professionella och optimerade Word-dokument.
 

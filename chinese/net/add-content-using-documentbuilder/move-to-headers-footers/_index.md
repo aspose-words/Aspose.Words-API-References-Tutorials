@@ -70,28 +70,26 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.doc
 ### 使用 Aspose.Words for .NET 移动到页眉/页脚的示例源代码
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+//指定我们希望首页、偶数页和奇数页的页眉和页脚不同。
+builder.PageSetup.DifferentFirstPageHeaderFooter = true;
+builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
-	//指定我们希望首页、偶数页和奇数页的页眉和页脚不同。
-	builder.PageSetup.DifferentFirstPageHeaderFooter = true;
-	builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
+//创建标题。
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.Write("Header for the first page");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
+builder.Write("Header for even pages");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Header for all other pages");
 
-	//创建标题。
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.Write("Header for the first page");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
-	builder.Write("Header for even pages");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
-	builder.Write("Header for all other pages");
+//在文档中创建两个页面。
+builder.MoveToSection(0);
+builder.Writeln("Page1");
+builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("Page2");
 
-	//在文档中创建两个页面。
-	builder.MoveToSection(0);
-	builder.Writeln("Page1");
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.Writeln("Page2");
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
-
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```

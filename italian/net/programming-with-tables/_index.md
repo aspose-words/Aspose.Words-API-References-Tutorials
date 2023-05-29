@@ -2,7 +2,7 @@
 title: Programmare con le tabelle
 linktitle: Programmare con le tabelle
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono l'adattamento automatico della tabella al contenuto, l'adattamento automatico della tabella alla larghezza fissa delle colonne, l'adattamento automatico della tabella alla larghezza della pagina, la costruzione della tabella dalla tabella dei dati, l'importazione della tabella da
+description: Scopri come programmare le tabelle in Aspose.Words per .NET. Scopri come creare, manipolare e formattare le tabelle nei tuoi documenti Word con esercitazioni dettagliate ed esempi di codice C#.
 type: docs
 weight: 1590
 url: /it/net/programming-with-tables/

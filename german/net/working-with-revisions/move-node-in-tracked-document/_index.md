@@ -76,40 +76,38 @@ Hier ist der vollständige Quellcode zum Verschieben eines Knotens in einem verf
 
 
 ```csharp
+// Der Pfad zum Dokumentenverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("Paragraph 1");
+builder.Writeln("Paragraph 2");
+builder.Writeln("Paragraph 3");
+builder.Writeln("Paragraph 4");
+builder.Writeln("Paragraph 5");
+builder.Writeln("Paragraph 6");
+Body body = doc.FirstSection.Body;
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 
-	// Der Pfad zum Dokumentenverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.Writeln("Paragraph 1");
-	builder.Writeln("Paragraph 2");
-	builder.Writeln("Paragraph 3");
-	builder.Writeln("Paragraph 4");
-	builder.Writeln("Paragraph 5");
-	builder.Writeln("Paragraph 6");
-	Body body = doc.FirstSection.Body;
-	Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+// Beginnen Sie mit der Nachverfolgung von Revisionen.
+doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
-	// Beginnen Sie mit der Nachverfolgung von Revisionen.
-	doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+// Generieren Sie Revisionen, wenn Sie einen Knoten von einem Ort an einen anderen verschieben.
+Node node = body.Paragraphs[3];
+Node endNode = body.Paragraphs[5].NextSibling;
+Node referenceNode = body.Paragraphs[0];
+while (node != endNode)
+{
+	Node nextNode = node.NextSibling;
+	body.InsertBefore(node, referenceNode);
+	node = nextNode;
+}
 
-	// Generieren Sie Revisionen, wenn Sie einen Knoten von einem Ort an einen anderen verschieben.
-	Node node = body.Paragraphs[3];
-	Node endNode = body.Paragraphs[5].NextSibling;
-	Node referenceNode = body.Paragraphs[0];
-	while (node != endNode)
-	{
-		Node nextNode = node.NextSibling;
-		body.InsertBefore(node, referenceNode);
-		node = nextNode;
-	}
+// Stoppen Sie den Prozess der Nachverfolgung von Revisionen.
+doc.StopTrackRevisions();
 
-	// Stoppen Sie den Prozess der Nachverfolgung von Revisionen.
-	doc.StopTrackRevisions();
-
-	// Es gibt 3 zusätzliche Absätze im Verschiebebereich.
-	Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
-	doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
-            
+// Es gibt 3 zusätzliche Absätze im Verschiebebereich.
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```
 

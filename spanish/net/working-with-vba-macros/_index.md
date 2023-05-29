@@ -2,7 +2,7 @@
 title: Trabajar con macros de VBA
 linktitle: Trabajar con macros de VBA
 second_title: Referencia de API de Aspose.Words para .NET
-description: Tutoriales que contienen crear proyecto vba, leer macros vba, modificar macros vba, clonar proyecto vba, clonar módulo vba y eliminar referencia rota usando Aspose.Words para .NET
+description: Aprenda a trabajar con macros de VBA en documentos de Word usando Aspose.Words para .NET. Tutoriales completos con ejemplos de código para crear, modificar y ejecutar macros VBA en sus documentos de Word.
 type: docs
 weight: 1350
 url: /es/net/working-with-vba-macros/

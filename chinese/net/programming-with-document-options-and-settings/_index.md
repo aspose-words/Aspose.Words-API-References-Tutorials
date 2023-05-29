@@ -2,7 +2,7 @@
 title: 使用文档选项和设置进行编程
 linktitle: 使用文档选项和设置进行编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含优化 ms word、显示语法和拼写错误、清理未使用的样式和列表、清理重复样式、查看选项、文档 pa
+description: 通过 Aspose.Words for .NET 了解如何使用文档选项和设置来自定义和控制 Word 文档的行为。这些教程将指导您完成不同的功能，例如文档属性。
 type: docs
 weight: 1510
 url: /zh/net/programming-with-document-options-and-settings/

@@ -2,7 +2,7 @@
 title: 水印编程
 linktitle: 水印编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含使用特定选项添加文本水印
+description: 了解如何在 Aspose.Words for .NET 中使用水印进行编程。通过分步教程和示例 C# 代码了解如何添加文本或图像水印、自定义其外观、将它们放置在页面上等。
 type: docs
 weight: 1570
 url: /zh/net/programming-with-watermark/

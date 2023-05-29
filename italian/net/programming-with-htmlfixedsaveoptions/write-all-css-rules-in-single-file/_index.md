@@ -2,7 +2,7 @@
 title: Scrivi tutte le regole CSS in un unico file
 linktitle: Scrivi tutte le regole CSS in un unico file
 second_title: Riferimento all'API Aspose.Words per .NET
-description: Scopri come convertire un documento Word in HTML fisso scrivendo tutte le regole CSS in un singolo file con Aspose.Words per .NET.
+description: Scopri come convertire un documento Word in HTML fisso scrivendo tutte le regole CSS in un unico file con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single-file/
@@ -26,13 +26,13 @@ In questo esempio, carichiamo il documento "Document.docx" che si trova nella di
 
 ## Configurazione delle opzioni di backup
 
-Il passaggio successivo consiste nel configurare le opzioni di salvataggio per la conversione in HTML fisso. Utilizza la classe HtmlFixedSaveOptions e imposta la proprietà SaveFontFaceCssSeparately su false per scrivere tutte le regole CSS in un unico file. Ecco come farlo:
+Il passaggio successivo consiste nel configurare le opzioni di salvataggio per la conversione in HTML fisso. Utilizza la classe HtmlFixedSaveOptions e imposta la proprietà SaveFontFaceCssSeparately su false per scrivere tutte le regole CSS in un singolo file. Ecco come farlo:
 
 ```csharp
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { SaveFontFaceCssSeparately = false };
 ```
 
-Creiamo un nuovo oggetto HtmlFixedSaveOptions e impostiamo la proprietà SaveFontFaceCssSeparately su false per scrivere tutte le regole CSS in un unico file.
+Creiamo un nuovo oggetto HtmlFixedSaveOptions e impostiamo la proprietà SaveFontFaceCssSeparately su false per scrivere tutte le regole CSS in un singolo file.
 
 ## Corretta la conversione del documento HTML
 

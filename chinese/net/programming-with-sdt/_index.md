@@ -2,7 +2,7 @@
 title: 使用 Sdt 编程
 linktitle: 使用 Sdt 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含复选框类型内容控件、复选框当前状态、修改内容控件、组合框内容控件、富文本框内容控件、
+description: 了解如何在 Aspose.Words for .NET 中使用结构化内容控件 (SDT) 进行编程。按照 C# 中的分步教程和示例代码操作和自定义 Word 文档中的结构化内容控件。
 type: docs
 weight: 1400
 url: /zh/net/programming-with-sdt/
@@ -24,7 +24,7 @@ Aspose.Words for .NET 教程让您深入探索库的功能，并学习如何使�
 | [设置内容控件颜色](./set-content-control-color/) | 了解如何使用 Aspose.Words for .NET 设置 Word 文档中内容控件的颜色，自定义其外观。 |
 | [清除内容控制](./clear-contents-control/) | 了解如何使用 Aspose.Words for .NET 清除 Word 文档中控件的内容。 |
 | [将 SDT 绑定到自定义 Xml 部件](./bind-sdt-to-custom-xml-part/) | 了解如何使用 Aspose.Words for .NET 将 SDT 绑定到自定义 Xml 部件。 |
-| [设置内容控件样式](./set-content-control-style/) | 了解如何使用 Aspose.Words for .NET 设置 Word 文档中内容控件的样式，并应用一致的格式。 |
+| [设置内容控件样式](./set-content-control-style/) | 了解如何使用 Aspose.Words for .NET 设置 Word 文档中内容控件的样式，应用一致的格式。 |
 | [创建映射到自定义 Xml 部分的表重复部分](./creating-table-repeating-section-mapped-to-custom-xml-part/) | 了解如何使用 Aspose.Words for .NET 创建一个表格，其中重复部分映射到 Word 文档中的 CustomXmlPart。 |
 | [多节](./multi-section/) | 了解如何使用 Aspose.Words for .NET 检索和处理 Word 文档中的多节结构化文档标签。 |
 | [结构化文档标记范围开始 Xml 映射](./structured-document-tag-range-start-xml-mapping/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中开始为结构化文档标记范围设置 XML 映射。 |

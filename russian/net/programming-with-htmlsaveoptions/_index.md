@@ -2,7 +2,7 @@
 title: Программирование с помощью Htmlsaveoptions
 linktitle: Программирование с помощью Htmlsaveoptions
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат информацию об экспорте данных туда и обратно, экспорт шрифтов в формате base 64, экспорт ресурсов, преобразование метафайлов в emf или wmf, преобразование метафайлов в svg, добавление css cla
+description: Узнайте, как программировать с параметрами сохранения HTML в Aspose.Words для .NET. Легко конвертируйте документы Word в HTML, сохраняя при этом форматирование и содержимое.
 type: docs
 weight: 1620
 url: /ru/net/programming-with-htmlsaveoptions/

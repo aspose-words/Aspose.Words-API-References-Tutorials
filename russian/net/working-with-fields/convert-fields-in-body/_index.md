@@ -57,3 +57,5 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
 // Передайте соответствующие параметры, чтобы преобразовать поля страницы в обычный текст в теле первого раздела.
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
+doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
+```

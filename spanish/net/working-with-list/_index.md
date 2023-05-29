@@ -2,7 +2,7 @@
 title: Trabajando con Lista
 linktitle: Trabajando con Lista
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen cómo reiniciar la lista en cada sección, especificar el nivel de la lista, reiniciar el número de la lista en el documento usando Aspose.Words para .NET.
+description: Aprenda a trabajar con listas en documentos de Word utilizando Aspose.Words para .NET. Tutoriales detallados con ejemplos de código.
 type: docs
 weight: 780
 url: /es/net/working-with-list/

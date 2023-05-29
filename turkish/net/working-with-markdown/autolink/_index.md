@@ -42,13 +42,12 @@ Son olarak belgeyi istediğimiz formatta kaydedebiliriz.
 
 
 ```csharp
-	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
-	DocumentBuilder builder = new DocumentBuilder();
+// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
+DocumentBuilder builder = new DocumentBuilder();
 
-	//Köprü ekle.
-	builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", yanlış);
-	builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
-            
+//Köprü ekle.
+builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", yanlış);
+builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
 
 

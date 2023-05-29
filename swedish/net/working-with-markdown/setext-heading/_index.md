@@ -59,39 +59,39 @@ builder.Document.Save(dataDir + "Test.md");
 ### Exempel på källkod för Setext-titlar med Aspose.Words för .NET
 
 ```csharp
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
-	DocumentBuilder builder = new DocumentBuilder();
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
+DocumentBuilder builder = new DocumentBuilder();
 
-	builder.ParagraphFormat.StyleName = "Heading 1";
-	builder.Writeln("This is an H1 tag");
+builder.ParagraphFormat.StyleName = "Heading 1";
+builder.Writeln("This is an H1 tag");
 
-	// Återställ stilar från föregående stycke för att inte kombinera stilar mellan stycken.
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+// Återställ stilar från föregående stycke för att inte kombinera stilar mellan stycken.
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	Style setexHeading1 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading1");
-	builder.ParagraphFormat.Style = setexHeading1;
-	builder.Document.Styles["SetextHeading1"].BaseStyleName = "Heading 1";
-	builder.Writeln("Setext Heading level 1");
+Style setexHeading1 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading1");
+builder.ParagraphFormat.Style = setexHeading1;
+builder.Document.Styles["SetextHeading1"].BaseStyleName = "Heading 1";
+builder.Writeln("Setext Heading level 1");
 
-	builder.ParagraphFormat.Style = builder.Document.Styles["Heading 3"];
-	builder.Writeln("This is an H3 tag");
+builder.ParagraphFormat.Style = builder.Document.Styles["Heading 3"];
+builder.Writeln("This is an H3 tag");
 
-	// Återställ stilar från föregående stycke för att inte kombinera stilar mellan stycken.
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+// Återställ stilar från föregående stycke för att inte kombinera stilar mellan stycken.
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	Style setexHeading2 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading2");
-	builder.ParagraphFormat.Style = setexHeading2;
-	builder.Document.Styles["SetextHeading2"].BaseStyleName = "Heading 3";
+Style setexHeading2 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading2");
+builder.ParagraphFormat.Style = setexHeading2;
+builder.Document.Styles["SetextHeading2"].BaseStyleName = "Heading 3";
 
-	// Setex-rubriknivån återställs till 2 om basstycket har en rubriknivå större än 2.
-	builder.Writeln("Setext Heading level 2");
-	
+// Setex-rubriknivån återställs till 2 om basstycket har en rubriknivå större än 2.
+builder.Writeln("Setext Heading level 2");
 
-	builder.Document.Save(dataDir + "Test.md");
+
+builder.Document.Save(dataDir + "Test.md");
 ```
 
 

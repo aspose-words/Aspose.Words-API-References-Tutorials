@@ -51,26 +51,24 @@ foreach (Revision revision in doc.Revisions)
 Aspose.Words for .NET kullanan bir belgenin gözden geçirilmiş versiyonuna erişmek için eksiksiz kaynak kodu burada:
 
 ```csharp
+Document doc = new Document(MyDir + "Revisions.docx");
+doc.UpdateListLabels();
 
-	Document doc = new Document(MyDir + "Revisions.docx");
-	doc.UpdateListLabels();
+// Belgenin gözden geçirilmiş sürümüne geçin.
+doc.RevisionsView = RevisionsView.Final;
 
-	// Belgenin gözden geçirilmiş sürümüne geçin.
-	doc.RevisionsView = RevisionsView.Final;
-
-	foreach (Revision revision in doc.Revisions)
-	{
-		 if (revision.ParentNode.NodeType == NodeType.Paragraph)
+foreach (Revision revision in doc.Revisions)
+{
+	 if (revision.ParentNode.NodeType == NodeType.Paragraph)
+	 {
+		 Paragraph paragraph = (Paragraph)revision.ParentNode;
+		 if (paragraph.IsListItem)
 		 {
-			 Paragraph paragraph = (Paragraph)revision.ParentNode;
-			 if (paragraph.IsListItem)
-			 {
-				 Console.WriteLine(paragraph.ListLabel.LabelString);
-				 Console.WriteLine(paragraph.ListFormat.ListLevel);
-			 }
+			 Console.WriteLine(paragraph.ListLabel.LabelString);
+			 Console.WriteLine(paragraph.ListFormat.ListLevel);
 		 }
-	}
-
+	 }
+}
 ```
 
 

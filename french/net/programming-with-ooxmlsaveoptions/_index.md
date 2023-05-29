@@ -2,14 +2,14 @@
 title: Programmation avec Ooxmlsaveoptions
 linktitle: Programmation avec Ooxmlsaveoptions
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent crypter docx avec mot de passe, conformité ooxml iso 29500_ 2008_ strict, mettre à jour la dernière propriété de temps enregistré, conserver les caractères de contrôle hérités et définir compre
+description: Apprenez la programmation avec les options de sauvegarde OOXML dans Aspose.Words pour .NET. Tutoriels complets et exemple de code pour manipuler et personnaliser l'enregistrement de documents Word au format OOXML.
 type: docs
 weight: 1660
 url: /fr/net/programming-with-ooxmlsaveoptions/
 ---
 Les didacticiels Aspose.Words pour .NET sur la programmation avec OOXMLSaveOptions fournissent des instructions pas à pas pour manipuler les options d'enregistrement OOXML dans vos documents. Ces didacticiels vous guident à travers les étapes de personnalisation des paramètres de sauvegarde, tels que la rétrocompatibilité, la compression d'image et la gestion des polices intégrées. Vous apprendrez à utiliser ces options pour obtenir des résultats de sauvegarde précis optimisés pour vos besoins spécifiques.
 
- Les didacticiels vous fournissent également des exemples de code pratiques qui illustrent l'utilisation des différentes fonctionnalités de OOXMLSaveOptions. Vous apprendrez à spécifier les options d'enregistrement lors de la création ou de la modification d'un document Word, à l'aide de méthodes telles que`CompatibilityOptions`, `ImageCompression` , et`ExportFontResources`Les didacticiels vous aideront à comprendre comment ces options affectent le format de sortie et à choisir les paramètres appropriés pour vos projets.
+ Les didacticiels vous fournissent également des exemples de code pratiques qui illustrent l'utilisation des différentes fonctionnalités de OOXMLSaveOptions. Vous apprendrez à spécifier les options d'enregistrement lors de la création ou de la modification d'un document Word, à l'aide de méthodes telles que`CompatibilityOptions`, `ImageCompression` , et`ExportFontResources`. Les didacticiels vous aideront à comprendre comment ces options affectent le format de sortie et à choisir les paramètres appropriés pour vos projets.
 
 Que vous souhaitiez créer des documents compatibles avec les anciennes versions de Word, réduire la taille des fichiers en compressant des images ou incorporer des polices spécifiques, les didacticiels Aspose.Words pour .NET sur la programmation avec OOXMLSaveOptions vous guideront tout au long. étapes nécessaires. Vous pourrez profiter pleinement des fonctionnalités d'enregistrement d'OOXML et créer des documents Word professionnels et optimisés.
 

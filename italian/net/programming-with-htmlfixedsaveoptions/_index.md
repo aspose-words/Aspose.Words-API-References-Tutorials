@@ -2,7 +2,7 @@
 title: Programmare con Htmlfixedsaveoptions
 linktitle: Programmare con Htmlfixedsaveoptions
 second_title: Riferimento all'API Aspose.Words per .NET
-description: tutorial contengono l'uso del carattere dalla macchina di destinazione e scrivono tutte le regole css in un unico file
+description: Scopri come programmare con opzioni di salvataggio HTML fisse in Aspose.Words per .NET. I tutorial ti guidano attraverso le diverse funzionalità per generare documenti HTML con layout fisso, immagini incorporate.
 type: docs
 weight: 1610
 url: /it/net/programming-with-htmlfixedsaveoptions/
@@ -13,4 +13,4 @@ Le esercitazioni Aspose.Words per .NET sono progettate per aiutarti a padroneggi
 | Titolo | Descrizione |
 | --- | --- |
 | [Usa carattere dalla macchina di destinazione](./use-font-from-target-machine/) | Scopri come convertire un documento Word in HTML fisso utilizzando i caratteri della macchina di destinazione con Aspose.Words per .NET. |
-| [Scrivi tutte le regole CSS in un unico file](./write-all-css-rules-in-single-file/) | Scopri come convertire un documento Word in HTML fisso scrivendo tutte le regole CSS in un singolo file con Aspose.Words per .NET. |
+| [Scrivi tutte le regole CSS in un unico file](./write-all-css-rules-in-single-file/) | Scopri come convertire un documento Word in HTML fisso scrivendo tutte le regole CSS in un unico file con Aspose.Words per .NET. |

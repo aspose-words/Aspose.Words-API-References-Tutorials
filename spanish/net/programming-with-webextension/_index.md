@@ -2,7 +2,7 @@
 title: Programación con Webextension
 linktitle: Programación con Webextension
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen y usan paneles de tareas de extensión web
+description: Aprenda a desarrollar extensiones web para documentos de Word con Aspose.Words para .NET. Aprenda a crear, modificar y personalizar extensiones web, intégrelas en sus documentos de Word.
 type: docs
 weight: 1530
 url: /es/net/programming-with-webextension/

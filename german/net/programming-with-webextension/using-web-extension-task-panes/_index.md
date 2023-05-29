@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Erstellen und konfigurieren Sie einen Aufgabenbereich
 
- Wir erstellen eine`TaskPane` Objekt und fügen Sie es dem Dokument hinzu`s `WebExtensionTaskPanes`-Sammlung. Als Nächstes konfigurieren wir die Eigenschaften des Aufgabenbereichs, z. B. seinen angedockten Zustand, seine Sichtbarkeit und seine Breite.
+ Wir erstellen ein`TaskPane` Objekt und fügen Sie es dem Dokument hinzu`s `WebExtensionTaskPanes`-Sammlung. Als Nächstes konfigurieren wir die Eigenschaften des Aufgabenbereichs, z. B. seinen angedockten Zustand, seine Sichtbarkeit und seine Breite.
 
 ```csharp
 Document doc = new Document();

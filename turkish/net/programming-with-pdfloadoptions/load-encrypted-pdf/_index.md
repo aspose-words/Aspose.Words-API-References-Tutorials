@@ -14,7 +14,7 @@ url: /tr/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 
 Aspose.Words for .NET'in Şifreli PDF'yi Yükle özelliği, parola korumalı PDF dosyalarını yüklemenizi sağlar. İçeriğine erişebilmek ve gerektiği gibi değiştirebilmek için belgeyi yüklerken parolayı belirtebilirsiniz.
 
-## 1. Adım: Şifreli PDF Belgesini Yükleme
+## 1. Adım: Şifrelenmiş PDF Belgesini Yükleme
 
 İlk adım, şifrelenmiş PDF belgesini uygulamanıza yüklemektir. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 

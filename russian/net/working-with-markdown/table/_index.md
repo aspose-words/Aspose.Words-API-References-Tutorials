@@ -39,21 +39,20 @@ builder.Writeln("d");
 ### Пример исходного кода для создания таблицы с помощью Aspose.Words для .NET
 
 ```csharp
-	// Используйте конструктор документов, чтобы добавить содержимое в документ.
-	DocumentBuilder builder = new DocumentBuilder();
+// Используйте конструктор документов, чтобы добавить содержимое в документ.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Добавьте первую строку.
-	builder.InsertCell();
-	builder.Writeln("a");
-	builder.InsertCell();
-	builder.Writeln("b");
+// Добавьте первую строку.
+builder.InsertCell();
+builder.Writeln("a");
+builder.InsertCell();
+builder.Writeln("b");
 
-	// Добавьте второй ряд.
-	builder.InsertCell();
-	builder.Writeln("c");
-	builder.InsertCell();
-	builder.Writeln("d");
-            
+// Добавьте второй ряд.
+builder.InsertCell();
+builder.Writeln("c");
+builder.InsertCell();
+builder.Writeln("d");
 ```
 
 Поздравляем! Теперь вы узнали, как создать таблицу с помощью Aspose.Words для .NET.

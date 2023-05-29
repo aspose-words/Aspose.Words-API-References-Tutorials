@@ -2,12 +2,12 @@
 title: 加入并附加文件
 linktitle: 加入并附加文件
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含简单的附加文档、附加文档、将文档附加到空白、附加导入格式选项、不同的页面设置、连接连续、jo
+description: 了解如何使用 Aspose.Words for .NET 加入和合并 Word 文档。这些教程将引导您完成将多个 Word 文件合并到一个文档中的步骤。
 type: docs
 weight: 1500
 url: /zh/net/join-and-append-documents/
 ---
- Aspose.Words for .NET 教程将带您了解在您的应用程序中使用 Word 文档的不同功能和技术。其中一个教程是“加入和合并文档”，它向您展示了如何将多个 Word 文档合并为一个文档。您将学习如何使用`Document`类打开和操作文件，以及`AppendDocument`将一个文档的内容附加到另一个文档的方法。本教程为您提供分步说明，让您轻松执行此操作。
+Aspose.Words for .NET 教程将带您了解在您的应用程序中使用 Word 文档的不同功能和技术。其中一个教程是“加入和合并文档”，它向您展示了如何将多个 Word 文档合并为一个文档。您将学习如何使用`Document`类打开和操作文件，以及`AppendDocument`将一个文档的内容附加到另一个文档的方法。本教程为您提供分步说明，让您轻松执行此操作。
 
 另一个很棒的教程是“替换文档中的文本”，它告诉您如何在 Word 文档中执行自动文本替换。您将学习如何使用`FindReplaceOptions`和`Document`查找和替换文本的类，指定灵活的搜索选项。本教程将引导您完成替换文档中文本的过程，让您自动完成这项繁琐的任务。
 

@@ -2,7 +2,7 @@
 title: SDT ile Programlama
 linktitle: SDT ile Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, onay kutusu türü içerik kontrolü, onay kutusunun mevcut durumu, içerik değiştirme kontrolleri, birleşik giriş kutusu içerik kontrolü, zengin metin kutusu içerik kontrolü,
+description: Aspose.Words for .NET'te Yapılandırılmış İçerik Kontrolleri (SDT) ile programlamayı öğrenin. Word belgelerinizdeki yapılandırılmış içerik denetimlerini işlemek ve özelleştirmek için C# dilinde adım adım öğreticileri ve örnek kodu izleyin.
 type: docs
 weight: 1400
 url: /tr/net/programming-with-sdt/

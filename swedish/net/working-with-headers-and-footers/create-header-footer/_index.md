@@ -139,100 +139,100 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ### Exempel på källkod för att skapa sidhuvuden och sidfötter med Aspose.Words för .NET
 
 ```csharp
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
-	Section currentSection = builder.CurrentSection;
-	PageSetup pageSetup = currentSection.PageSetup;
-	// Ange om vi vill att sidhuvuden/sidfötter på första sidan ska skilja sig från andra sidor.
-	// Du kan också använda egenskapen PageSetup.OddAndEvenPagesHeaderFooter för att ange
-	// olika sidhuvuden/sidfötter för udda och jämna sidor.
-	pageSetup.DifferentFirstPageHeaderFooter = true;
-	pageSetup.HeaderDistance = 20;
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
+Section currentSection = builder.CurrentSection;
+PageSetup pageSetup = currentSection.PageSetup;
+// Ange om vi vill att sidhuvuden/sidfötter på första sidan ska skilja sig från andra sidor.
+// Du kan också använda egenskapen PageSetup.OddAndEvenPagesHeaderFooter för att ange
+// olika sidhuvuden/sidfötter för udda och jämna sidor.
+pageSetup.DifferentFirstPageHeaderFooter = true;
+pageSetup.HeaderDistance = 20;
 
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.Font.Size = 14;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+builder.Font.Name = "Arial";
+builder.Font.Bold = true;
+builder.Font.Size = 14;
 
-	pageSetup.HeaderDistance = 20;
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 
-	// Infoga en positionerad bild i det övre/vänstra hörnet av rubriken.
-	// Avståndet från sidans övre/vänsterkant är satt till 10 punkter.
-	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+pageSetup.HeaderDistance = 20;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+// Infoga en positionerad bild i det övre/vänstra hörnet av rubriken.
+// Avståndet från sidans övre/vänsterkant är satt till 10 punkter.
+builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
+	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer.");
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
-	// Vi använder en tabell med två celler för att göra en del av texten på raden (med sidnumrering).
-	// Att justeras till vänster och den andra delen av texten (med upphovsrätt) ska justeras till höger.
-	builder.StartTable();
+builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	builder.CellFormat.ClearFormatting();
+// Vi använder en tabell med två celler för att göra en del av texten på raden (med sidnumrering).
+// Att justeras till vänster och den andra delen av texten (med upphovsrätt) ska justeras till höger.
+builder.StartTable();
 
-	builder.InsertCell();
+builder.CellFormat.ClearFormatting();
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+builder.InsertCell();
 
-	// Den använder PAGE- och NUMPAGES-fälten för att automatiskt beräkna det aktuella sidnumret och många sidor.
-	builder.Write("Page ");
-	builder.InsertField("PAGE", "");
-	builder.Write(" of ");
-	builder.InsertField("NUMPAGES", "");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
+// Den använder PAGE- och NUMPAGES-fälten för att automatiskt beräkna det aktuella sidnumret och många sidor.
+builder.Write("Page ");
+builder.InsertField("PAGE", "");
+builder.Write(" of ");
+builder.InsertField("NUMPAGES", "");
 
-	builder.InsertCell();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+builder.InsertCell();
 
-	builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
 
-	builder.EndRow();
-	builder.EndTable();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToDocumentEnd();
+builder.EndRow();
+builder.EndTable();
 
-	// Gör en sidbrytning för att skapa en andra sida där de primära sidhuvuden/sidfötterna kommer att synas.
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.InsertBreak(BreakType.SectionBreakNewPage);
+builder.MoveToDocumentEnd();
 
-	currentSection = builder.CurrentSection;
-	pageSetup = currentSection.PageSetup;
-	pageSetup.Orientation = Orientation.Landscape;
-	//Det här avsnittet behöver inte en annan sidhuvud/sidfot på första sidan vi behöver bara en titelsida i dokumentet,
-	// och sidhuvudet/sidfoten för den här sidan har redan definierats i föregående avsnitt.
-	pageSetup.DifferentFirstPageHeaderFooter = false;
+// Gör en sidbrytning för att skapa en andra sida där de primära sidhuvuden/sidfötterna kommer att synas.
+builder.InsertBreak(BreakType.PageBreak);
+builder.InsertBreak(BreakType.SectionBreakNewPage);
 
-	// Det här avsnittet visar sidhuvuden/sidfötter från föregående avsnitt
-	// anrop som standard currentSection.HeadersFooters.LinkToPrevious(false) för att avbryta denna sidbredd
-	// är annorlunda för det nya avsnittet, och därför måste vi ställa in olika cellbredder för en sidfotstabell.
-	currentSection.HeadersFooters.LinkToPrevious(false);
+currentSection = builder.CurrentSection;
+pageSetup = currentSection.PageSetup;
+pageSetup.Orientation = Orientation.Landscape;
+//Det här avsnittet behöver inte en annan sidhuvud/sidfot på första sidan vi behöver bara en titelsida i dokumentet,
+// och sidhuvudet/sidfoten för den här sidan har redan definierats i föregående avsnitt.
+pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// Om vi vill använda den redan befintliga sidhuvud/sidfotsuppsättningen för detta avsnitt.
-	// Men med några mindre ändringar kan det vara lämpligt att kopiera sidhuvuden/sidfötter
-	// från föregående avsnitt och tillämpa nödvändiga ändringar där vi vill ha dem.
-	CopyHeadersFootersFromPreviousSection(currentSection);
+// Det här avsnittet visar sidhuvuden/sidfötter från föregående avsnitt
+// anrop som standard currentSection.HeadersFooters.LinkToPrevious(false) för att avbryta denna sidbredd
+// är annorlunda för det nya avsnittet, och därför måste vi ställa in olika cellbredder för en sidfotstabell.
+currentSection.HeadersFooters.LinkToPrevious(false);
 
-	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
+// Om vi vill använda den redan befintliga sidhuvud/sidfotsuppsättningen för detta avsnitt.
+// Men med några mindre ändringar kan det vara lämpligt att kopiera sidhuvuden/sidfötter
+// från föregående avsnitt och tillämpa nödvändiga ändringar där vi vill ha dem.
+CopyHeadersFootersFromPreviousSection(currentSection);
 
-	Row row = primaryFooter.Tables[0].FirstRow;
-	row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-	row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
 
-	doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
+Row row = primaryFooter.Tables[0].FirstRow;
+row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+
+doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```

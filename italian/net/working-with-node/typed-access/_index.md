@@ -59,23 +59,22 @@ In questo esempio, eliminiamo la prima e l'ultima riga di ogni tabella utilizzan
 ### Esempio di codice sorgente per l'accesso tipizzato con Aspose.Words per .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	Section section = doc.FirstSection;
-	Body body = section.Body;
-	
-	// Accesso digitato rapido a tutti i nodi figlio della tabella contenuti nel corpo.
-	TableCollection tables = body.Tables;
+Section section = doc.FirstSection;
+Body body = section.Body;
 
-	foreach (Table table in tables)
-	{
-		// Accesso digitato rapido alla prima riga della tabella.
-		table.FirstRow?.Remove();
+// Accesso digitato rapido a tutti i nodi figlio della tabella contenuti nel corpo.
+TableCollection tables = body.Tables;
 
-		// Accesso digitato rapido all'ultima riga della tabella.
-		table.LastRow?.Remove();
-	}
-            
+foreach (Table table in tables)
+{
+	// Accesso digitato rapido alla prima riga della tabella.
+	table.FirstRow?.Remove();
+
+	// Accesso digitato rapido all'ultima riga della tabella.
+	table.LastRow?.Remove();
+}
 ```
 
 Questo è un codice di esempio completo per l'accesso digitato alle tabelle con Aspose.Words per .NET. Assicurati di importare i riferimenti necessari e segui i passaggi precedentemente descritti per integrare questo codice nel tuo progetto.

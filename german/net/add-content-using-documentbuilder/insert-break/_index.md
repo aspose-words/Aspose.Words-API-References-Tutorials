@@ -46,20 +46,18 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 Hier ist der vollständige Quellcode zum Einfügen von Seitenumbrüchen mit Aspose.Words für .NET:
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("This is page 1.");
+builder.InsertBreak(BreakType.PageBreak);
 
-	builder.Writeln("This is page 1.");
-	builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("This is page 2.");
+builder.InsertBreak(BreakType.PageBreak);
 
-	builder.Writeln("This is page 2.");
-	builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("This is page 3.");
 
-	builder.Writeln("This is page 3.");
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
-			
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
 Denken Sie daran, den Code an Ihre spezifischen Anforderungen anzupassen und ihn bei Bedarf um zusätzliche Funktionen zu erweitern.

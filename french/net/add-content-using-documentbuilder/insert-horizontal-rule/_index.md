@@ -31,7 +31,7 @@ builder.InsertHorizontalRule();
 ```
 
 ## Étape 3 : Enregistrer le document
-Après avoir inséré la règle horizontale, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
+Après avoir inséré la règle horizontale, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
@@ -42,15 +42,13 @@ Voici le code source complet pour insérer une règle horizontale en utilisant A
 Les règles horizontales sont utiles pour divers scénarios, tels que la division de sections, la création de pauses visuelles ou la mise en évidence d'informations importantes.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("Insert a horizontal rule shape into the document.");
+builder.InsertHorizontalRule();
 
-	builder.Writeln("Insert a horizontal rule shape into the document.");
-	builder.InsertHorizontalRule();
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
 N'oubliez pas d'ajuster le code en fonction de vos besoins spécifiques et de l'améliorer avec des fonctionnalités supplémentaires si nécessaire.

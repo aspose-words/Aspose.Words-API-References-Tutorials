@@ -46,7 +46,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 
 ### Exemple de code source pour convertir des champs dans le corps avec Aspose.Words pour .NET
 
-Voici l'exemple de code source complet pour convertir les champs dans le corps à l'aide de Aspose.Words pour .NET :
+Voici l'exemple de code source complet pour convertir des champs dans le corps à l'aide de Aspose.Words pour .NET :
 
 ```csharp
 // Le chemin d'accès à votre répertoire de documents.
@@ -57,3 +57,5 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
 // Passez les paramètres appropriés pour convertir les champs de la page en texte brut dans le corps de la première section.
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
+doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
+```

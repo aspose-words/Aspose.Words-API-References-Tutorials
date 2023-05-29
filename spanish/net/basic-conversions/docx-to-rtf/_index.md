@@ -23,7 +23,7 @@ Stream stream = File.OpenRead(MyDir + "Document.docx");
 
 ## Paso 2: Cargar el documento
 
-A continuación, cargue el documento desde la secuencia:
+A continuación, cargue el documento desde la transmisión:
 
 ```csharp
 Document doc = new Document(stream);
@@ -31,7 +31,7 @@ Document doc = new Document(stream);
 
 ## Paso 3: Cerrar la secuencia
 
-Dado que el documento se carga en la memoria, puede cerrar la transmisión:
+Dado que el documento se carga en la memoria, puede cerrar la secuencia:
 
 ```csharp
 stream.Close();

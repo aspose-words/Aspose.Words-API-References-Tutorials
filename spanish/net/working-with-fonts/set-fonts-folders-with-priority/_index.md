@@ -11,7 +11,7 @@ url: /es/net/working-with-fonts/set-fonts-folders-with-priority/
 En este tutorial, lo guiaremos a través del proceso paso a paso para establecer carpetas de fuentes con prioridad al procesar un documento usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo especificar varias carpetas de fuentes con prioridad de búsqueda personalizada al representar sus documentos con Aspose.Words para .NET.
 
 ## Paso 1: Definir el directorio de documentos
-Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -43,15 +43,15 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 
 ### Ejemplo de código fuente para Establecer carpetas de fuentes con prioridad usando Aspose.Words para .NET 
 ```csharp
-	// Ruta a su directorio de documentos
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Ruta a su directorio de documentos
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-	{
-		new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true,1)
-	});
-	Document doc = new Document(dataDir + "Rendering.docx");
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
+FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
+{
+	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true,1)
+});
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
 ## Conclusión

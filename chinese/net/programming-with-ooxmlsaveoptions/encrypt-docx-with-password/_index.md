@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh/net/programming-with-ooxmlsaveoptions/encrypt-docx-with-password/
 ---
-在本教程中，我们将探索提供的 C# 源代码，使用 Aspose.Words for .NET 使用密码加密 DOCX 文件。此功能允许您通过仅使用指定密码访问来保护您的文档。
+在本教程中，我们将探索提供的 C# 源代码，以使用 Aspose.Words for .NET 使用密码加密 DOCX 文件。此功能允许您通过仅使用指定密码访问来保护您的文档。
 
 ## 第 1 步：设置环境
 

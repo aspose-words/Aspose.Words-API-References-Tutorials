@@ -37,7 +37,7 @@ builder.InsertImage(ImagesDir + "Transparent background logo.png",
 ```
 
 ## Étape 3 : Enregistrer le document
-Après avoir inséré l'image flottante, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
+Après avoir inséré l'image flottante, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
@@ -48,21 +48,19 @@ Voici le code source complet pour insérer une image flottante en utilisant Aspo
 Les images flottantes sont utiles pour divers scénarios, tels que l'ajout de logos, d'illustrations ou d'éléments décoratifs pouvant être positionnés indépendamment du texte du document.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertImage(ImagesDir + "Transparent background logo.png",
+	RelativeHorizontalPosition.Margin,
+	100,
+	RelativeVerticalPosition.Margin,
+	100,
+	200,
+	100,
+	WrapType.Square);
 
-	builder.InsertImage(ImagesDir + "Transparent background logo.png",
-		RelativeHorizontalPosition.Margin,
-		100,
-		RelativeVerticalPosition.Margin,
-		100,
-		200,
-		100,
-		WrapType.Square);
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
 ```
 
 N'oubliez pas d'ajuster le code en fonction de vos besoins spécifiques, y compris le chemin du fichier image et les options de positionnement et d'habillage souhaitées.

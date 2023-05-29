@@ -1,6 +1,6 @@
 ---
-title: Afficher les révisions dans des ballons
-linktitle: Afficher les révisions dans des ballons
+title: Afficher les révisions dans des bulles
+linktitle: Afficher les révisions dans des bulles
 second_title: Référence de l'API Aspose.Words pour .NET
 description: Affichez les révisions dans des ballons avec Aspose.Words pour .NET.
 type: docs
@@ -50,19 +50,17 @@ La sortie peut être formatée en Markdown pour améliorer la lisibilité. Par e
 Voici le code source complet pour afficher les révisions dans les bulles d'un document utilisant Aspose.Words pour .NET :
 
 ```csharp
-    
-	// Chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";	
-	Document doc = new Document(MyDir + "Revisions.docx");
+// Chemin d'accès au répertoire des documents.
+string dataDir = "YOUR DOCUMENT DIRECTORY";	
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	// Les rendus insèrent des révisions en ligne, suppriment et formatent les révisions dans des bulles.
-	doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-	doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-	// Rend les barres de révision sur le côté droit d'une page.
-	doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
-	
-	doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
-	
+// Les rendus insèrent des révisions en ligne, suppriment et formatent les révisions dans des bulles.
+doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
+doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
+// Rend les barres de révision sur le côté droit d'une page.
+doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
+
+doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
 

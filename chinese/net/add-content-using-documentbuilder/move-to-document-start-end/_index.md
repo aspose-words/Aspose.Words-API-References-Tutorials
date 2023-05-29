@@ -52,20 +52,18 @@ Console.WriteLine("\nThis is the end of the document.");
 ### 使用 Aspose.Words for .NET 的 Move To Document Start/End 示例源代码
 
 ```csharp
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	//将光标位置移动到文档的开头。
-	builder.MoveToDocumentStart();
-	Console.WriteLine("\nThis is the beginning of the document.");
+//将光标位置移动到文档的开头。
+builder.MoveToDocumentStart();
+Console.WriteLine("\nThis is the beginning of the document.");
 
-	//将光标位置移动到文档的末尾。
-	builder.MoveToDocumentEnd();
-	Console.WriteLine("\nThis is the end of the document.");
-	
+//将光标位置移动到文档的末尾。
+builder.MoveToDocumentEnd();
+Console.WriteLine("\nThis is the end of the document.");
 ```
 
 ## 结论
 
-在这个例子中，我们探索了 Aspose.Words for .NET 的 Move To Document Start/End 功能。我们学习了如何使用 DocumentBuilder 类导航到文档的开头和结尾。当以编程方式处理 Word 文档并需要在文档中的特定位置操作或插入内容时，此功能非常有用。
+在这个例子中，我们探索了 Aspose.Words for .NET 的 Move To Document Start/End 特性。我们学习了如何使用 DocumentBuilder 类导航到文档的开头和结尾。当以编程方式处理 Word 文档并需要在文档中的特定位置操作或插入内容时，此功能非常有用。

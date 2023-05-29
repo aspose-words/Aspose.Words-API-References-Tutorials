@@ -2,7 +2,7 @@
 title: 使用表格样式和格式进行编程
 linktitle: 使用表格样式和格式进行编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含获取表格周围文本之间的距离、应用轮廓边框、构建带边框的表格、修改行格式、应用行格式、设置 c
+description: 了解如何在 Aspose.Words for .NET 中对表格样式和格式进行编程。通过 C# 中的分步教程和示例代码，了解如何应用预定义样式、自定义单元格格式、边框等。
 type: docs
 weight: 1580
 url: /zh/net/programming-with-table-styles-and-formatting/

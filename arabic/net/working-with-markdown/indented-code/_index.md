@@ -38,13 +38,12 @@ builder.Writeln("This is an indented code block");
 ### مثال على شفرة المصدر للتعليمات البرمجية ذات المسافات البادئة باستخدام Aspose.Words for .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
-	DocumentBuilder builder = new DocumentBuilder();
+// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+DocumentBuilder builder = new DocumentBuilder();
 
-	Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
-	builder.ParagraphFormat.Style = indentedCode;
-	builder.Writeln("This is an indented code");
-            
+Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
+builder.ParagraphFormat.Style = indentedCode;
+builder.Writeln("This is an indented code");
 ```
 
 تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الشفرة ذات المسافة البادئة مع Aspose.Words for .NET.

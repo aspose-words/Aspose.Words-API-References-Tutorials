@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/add-content-using-documentbuilder/move-to-paragraph/
 ---
 
-Dans cet exemple étape par étape, nous allons explorer la fonction Déplacer vers le paragraphe de Aspose.Words pour .NET. Cette fonctionnalité permet aux développeurs de naviguer et de manipuler les paragraphes dans un document Word par programmation. En suivant ce guide, vous apprendrez à mettre en œuvre et à utiliser efficacement la fonctionnalité Déplacer vers le paragraphe.
+Dans cet exemple étape par étape, nous allons explorer la fonction Déplacer vers le paragraphe de Aspose.Words pour .NET. Cette fonctionnalité permet aux développeurs de naviguer et de manipuler les paragraphes dans un document Word par programme. En suivant ce guide, vous apprendrez à mettre en œuvre et à utiliser efficacement la fonctionnalité Déplacer vers le paragraphe.
 
 Le code ci-dessus illustre l'utilisation de la fonctionnalité Déplacer vers le paragraphe. Comprenons chaque étape en détail:
 
@@ -51,13 +51,11 @@ builder.Writeln("This is the 3rd paragraph.");
 Vous trouverez ci-dessous l'exemple de code source complet pour implémenter la fonctionnalité Déplacer vers le paragraphe à l'aide de Aspose.Words pour .NET :
 
 ```csharp
+Document doc = new Document(MyDir + "Paragraphs.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Paragraphs.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.MoveToParagraph(2, 0);
-	builder.Writeln("This is the 3rd paragraph.");
-	
+builder.MoveToParagraph(2, 0);
+builder.Writeln("This is the 3rd paragraph.");
 ```
 
 En suivant ce guide et en utilisant la fonction Déplacer vers le paragraphe, vous pouvez manipuler par programmation des paragraphes dans des documents Word à l'aide d'Aspose.Words pour .NET.

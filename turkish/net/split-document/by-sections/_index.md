@@ -46,26 +46,24 @@ newDoc.Save(dataDir + $"SplitDocument.ParSections_{i}.docx");
 Aspose.Words for .NET'in Bölümlere Göre özelliğinin tam kaynak kodu burada:
 
 ```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Big document.docx");
 
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Big document.docx");
+for (int i = 0; i < doc.Sections.Count; i++)
+{
+	// Bir belgeyi daha küçük parçalara ayırın, bu örnekte bölüme göre bölün.
+	Section section = doc.Sections[i].Clone();
 
-	for (int i = 0; i < doc.Sections.Count; i++)
-	{
-		// Bir belgeyi daha küçük parçalara ayırın, bu örnekte bölüme göre bölün.
-		Section section = doc.Sections[i].Clone();
+	Document newDoc = new Document();
+	newDoc.Sections.Clear();
 
-		Document newDoc = new Document();
-		newDoc.Sections.Clear();
+	Section newSection = (Section) newDoc.ImportNode(section, true);
+	newDoc.Sections.Add(newSection);
 
-		Section newSection = (Section) newDoc.ImportNode(section, true);
-		newDoc.Sections.Add(newSection);
-
-		// Her bölümü ayrı bir belge olarak kaydedin.
-		newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
-	}
-
+	// Her bölümü ayrı bir belge olarak kaydedin.
+	newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
+}
 ```
 
 Bu kodla, Aspose.Words for .NET'i kullanarak bir Word belgesini ayrı bölümlere ayırabileceksiniz.

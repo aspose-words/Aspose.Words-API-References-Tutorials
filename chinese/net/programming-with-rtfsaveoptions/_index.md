@@ -2,7 +2,7 @@
 title: 使用 Rtfsaveoptions 编程
 linktitle: 使用 Rtfsaveoptions 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含将图像保存为 wmf
+description: 使用 Aspose.Words for .NET 中的 RTF 保存选项探索编程。通过分步教程和 C# 代码示例了解如何保存和自定义 RTF 文档。
 type: docs
 weight: 1690
 url: /zh/net/programming-with-rtfsaveoptions/

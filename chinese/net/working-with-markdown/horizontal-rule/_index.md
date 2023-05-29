@@ -29,12 +29,11 @@ builder. InsertHorizontalRule();
 ## 使用 Aspose.Words for .NET 的水平线示例源代码
 
 ```csharp
-	//使用文档生成器向文档添加内容。
-	DocumentBuilder builder = new DocumentBuilder();
+//使用文档生成器向文档添加内容。
+DocumentBuilder builder = new DocumentBuilder();
 
-	//插入水平线。
-	builder.InsertHorizontalRule();
-            
+//插入水平线。
+builder.InsertHorizontalRule();
 ```
 
 恭喜！您现在已经学习了如何使用 Aspose.Words for .NET 的水平线功能。

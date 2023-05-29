@@ -2,7 +2,7 @@
 title: Belge Özellikleri ile Programlama
 linktitle: Belge Özellikleri ile Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, değişken alma, özellikleri numaralandırma, özel belge özellikleri ekleme, özel belge özelliklerini kaldırma, kişisel bilgileri kaldırma, yapılandırma içerir.
+description: Aspose.Words for .NET ile Word belgesi özelliklerini nasıl yöneteceğinizi öğrenin. Öğreticiler, özellikleri okuma ve yazma, varsayılan özellikleri özelleştirme gibi çeşitli özelliklerde size yol gösterir.
 type: docs
 weight: 1520
 url: /tr/net/programming-with-document-properties/

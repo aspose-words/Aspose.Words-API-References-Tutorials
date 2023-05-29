@@ -2,7 +2,7 @@
 title: البرمجة باستخدام Pdfloadoptions
 linktitle: البرمجة باستخدام Pdfloadoptions
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تحميل ملف pdf مشفر وتحميل نطاق صفحات بتنسيق pdf
+description: تعلم البرمجة بخيارات تحميل PDF في Aspose.Words for .NET. تعرف على كيفية تحميل مستندات Word ومعالجتها بتنسيق PDF باستخدام البرامج التعليمية خطوة بخطوة ونموذج التعليمات البرمجية.
 type: docs
 weight: 1620
 url: /ar/net/programming-with-pdfloadoptions/

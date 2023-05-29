@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## الخطوة 2: نص عريض
 
- يمكننا جعل النص غامقًا عن طريق تعيين منشئ المستندات`Font.Bold` ملكية ل`true`.
+ يمكننا جعل النص غامقًا عن طريق تعيين منشئ المستندات`Font.Bold` الملكية ل`true`.
 
 ```csharp
 builder.Font.Bold = true;
@@ -38,12 +38,12 @@ builder.Writeln("This text will be bold");
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
-	DocumentBuilder builder = new DocumentBuilder();
+// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص غامقًا.
-	builder.Font.Bold = true;
-	builder.Writeln("This text will be Bold");  
+// اجعل النص غامقًا.
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");  
 ```
 
 تهنئة ! لقد تعلمت الآن كيفية كتابة نص غامق باستخدام Aspose.Words for .NET.

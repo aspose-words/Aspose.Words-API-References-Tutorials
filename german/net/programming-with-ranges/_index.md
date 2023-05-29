@@ -2,7 +2,7 @@
 title: Programmieren mit Bereichen
 linktitle: Programmieren mit Bereichen
 second_title: Aspose.Words für .NET API-Referenz
-description: Tutorials enthalten Bereiche zum Löschen von Text und Bereiche zum Abrufen von Text
+description: Erfahren Sie mehr über das Programmieren mit Bereichen in Aspose.Words für .NET. Erfahren Sie mithilfe von Schritt-für-Schritt-Anleitungen und Beispielcodes, wie Sie bestimmte Textbereiche in Word-Dokumenten bearbeiten und formatieren.
 type: docs
 weight: 1390
 url: /de/net/programming-with-ranges/

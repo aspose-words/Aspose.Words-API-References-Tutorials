@@ -26,7 +26,7 @@ En este ejemplo, estamos cargando el documento "Rendering.docx" ubicado en el di
 
 ## Configuración de opciones de copia de seguridad
 
-El siguiente paso es configurar las opciones de guardado para convertir a formato PCL. Utilice la clase PclSaveOptions y establezca la propiedad RasterizeTransformedElements en falso. Aquí está cómo hacerlo:
+El siguiente paso es configurar las opciones de guardado para convertir a formato PCL. Utilice la clase PclSaveOptions y establezca la propiedad RasterizeTransformedElements en false. Aquí está cómo hacerlo:
 
 ```csharp
 PclSaveOptions saveOptions = new PclSaveOptions

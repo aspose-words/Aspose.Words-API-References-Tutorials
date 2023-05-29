@@ -40,17 +40,16 @@ builder.Writeln("This is an H1 tag");
 
 
 ```csharp
-	// Utilisez un générateur de document pour ajouter du contenu au document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Utilisez un générateur de document pour ajouter du contenu au document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Par défaut, les styles de titre dans Word peuvent avoir une mise en forme Gras et Italique.
-	//Si nous ne voulons pas être soulignés, définissez explicitement ces propriétés sur false.
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+// Par défaut, les styles de titre dans Word peuvent avoir une mise en forme Gras et Italique.
+//Si nous ne voulons pas être soulignés, définissez explicitement ces propriétés sur false.
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	builder.ParagraphFormat.StyleName = "Heading 1";
-	builder.Writeln("This is an H1 tag");
-            
+builder.ParagraphFormat.StyleName = "Heading 1";
+builder.Writeln("This is an H1 tag");
 ```
 
 Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité des en-têtes avec Aspose.Words pour .NET.

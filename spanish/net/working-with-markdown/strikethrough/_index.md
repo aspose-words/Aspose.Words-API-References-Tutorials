@@ -39,13 +39,12 @@ builder.Writeln("This text will be StrikeThrough");
 ### Código fuente de ejemplo para texto tachado con Aspose.Words para .NET
 
 ```csharp
-	// Use un generador de documentos para agregar contenido al documento.
-	DocumentBuilder builder = new DocumentBuilder();
+// Use un generador de documentos para agregar contenido al documento.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Haz el texto tachado.
-	builder.Font.StrikeThrough = true;
-	builder.Writeln("This text will be StrikeThrough");
-            
+// Haz el texto tachado.
+builder.Font.StrikeThrough = true;
+builder.Writeln("This text will be StrikeThrough");
 ```
 
 ¡Felicidades! Ahora ha aprendido a aplicar el estilo de texto tachado con Aspose.Words para .NET.

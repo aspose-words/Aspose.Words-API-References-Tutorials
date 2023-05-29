@@ -51,20 +51,18 @@ builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalR
 Aquí está el código fuente completo para formatear una regla horizontal usando Aspose.Words para .NET:
 
 ```csharp
+DocumentBuilder builder = new DocumentBuilder();
 
-	DocumentBuilder builder = new DocumentBuilder();
+Shape shape = builder.InsertHorizontalRule();
 
-	Shape shape = builder.InsertHorizontalRule();
-	
-	HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
-	horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
-	horizontalRuleFormat.WidthPercent = 70;
-	horizontalRuleFormat.Height = 3;
-	horizontalRuleFormat.Color = Color.Blue;
-	horizontalRuleFormat.NoShade = true;
+HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
+horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
+horizontalRuleFormat.WidthPercent = 70;
+horizontalRuleFormat.Height = 3;
+horizontalRuleFormat.Color = Color.Blue;
+horizontalRuleFormat.NoShade = true;
 
-	builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
-			
+builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
 ```
 
 Recuerde ajustar el código de acuerdo con sus requisitos específicos y mejorarlo con funciones adicionales según sea necesario.

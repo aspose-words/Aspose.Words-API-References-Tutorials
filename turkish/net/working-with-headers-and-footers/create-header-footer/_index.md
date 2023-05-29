@@ -139,100 +139,100 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ### Aspose.Words for .NET ile üst bilgiler ve alt bilgiler oluşturmak için örnek kaynak kodu
 
 ```csharp
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Belgeler dizininin yolu.
+string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
-	Section currentSection = builder.CurrentSection;
-	PageSetup pageSetup = currentSection.PageSetup;
-	// İlk sayfanın üstbilgilerinin/altbilgilerinin diğer sayfalardan farklı olmasını isteyip istemediğimizi belirtin.
-	// Belirtmek için PageSetup.OddAndEvenPagesHeaderFooter özelliğini de kullanabilirsiniz.
-	// tek ve çift sayfalar için farklı üst bilgiler/alt bilgiler.
-	pageSetup.DifferentFirstPageHeaderFooter = true;
-	pageSetup.HeaderDistance = 20;
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
+Section currentSection = builder.CurrentSection;
+PageSetup pageSetup = currentSection.PageSetup;
+// İlk sayfanın üstbilgilerinin/altbilgilerinin diğer sayfalardan farklı olmasını isteyip istemediğimizi belirtin.
+// Belirtmek için PageSetup.OddAndEvenPagesHeaderFooter özelliğini de kullanabilirsiniz.
+// tek ve çift sayfalar için farklı üst bilgiler/alt bilgiler.
+pageSetup.DifferentFirstPageHeaderFooter = true;
+pageSetup.HeaderDistance = 20;
 
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.Font.Size = 14;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+builder.Font.Name = "Arial";
+builder.Font.Bold = true;
+builder.Font.Size = 14;
 
-	pageSetup.HeaderDistance = 20;
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 
-	// Başlığın üst/sol köşesine konumlandırılmış bir görüntü ekleyin.
-	// Sayfanın üst/sol kenarlarından uzaklık 10 punto olarak ayarlanmıştır.
-	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+pageSetup.HeaderDistance = 20;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+// Başlığın üst/sol köşesine konumlandırılmış bir görüntü ekleyin.
+// Sayfanın üst/sol kenarlarından uzaklık 10 punto olarak ayarlanmıştır.
+builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
+	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer.");
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
-	// Satırdaki metnin bir bölümünü (sayfa numaralandırmalı) yapmak için iki hücreli bir tablo kullanıyoruz.
-	// Sola hizalanacak ve metnin diğer kısmı (telif hakkı ile) sağa hizalanacak.
-	builder.StartTable();
+builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	builder.CellFormat.ClearFormatting();
+// Satırdaki metnin bir bölümünü (sayfa numaralandırmalı) yapmak için iki hücreli bir tablo kullanıyoruz.
+// Sola hizalanacak ve metnin diğer kısmı (telif hakkı ile) sağa hizalanacak.
+builder.StartTable();
 
-	builder.InsertCell();
+builder.CellFormat.ClearFormatting();
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+builder.InsertCell();
 
-	// Geçerli sayfa numarasını ve birçok sayfayı otomatik olarak hesaplamak için PAGE ve NUMPAGES alanlarını kullanır.
-	builder.Write("Page ");
-	builder.InsertField("PAGE", "");
-	builder.Write(" of ");
-	builder.InsertField("NUMPAGES", "");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
+// Geçerli sayfa numarasını ve birçok sayfayı otomatik olarak hesaplamak için PAGE ve NUMPAGES alanlarını kullanır.
+builder.Write("Page ");
+builder.InsertField("PAGE", "");
+builder.Write(" of ");
+builder.InsertField("NUMPAGES", "");
 
-	builder.InsertCell();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+builder.InsertCell();
 
-	builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
 
-	builder.EndRow();
-	builder.EndTable();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToDocumentEnd();
+builder.EndRow();
+builder.EndTable();
 
-	// Birincil üstbilgilerin/altbilgilerin görüleceği ikinci bir sayfa oluşturmak için bir sayfa sonu yapın.
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.InsertBreak(BreakType.SectionBreakNewPage);
+builder.MoveToDocumentEnd();
 
-	currentSection = builder.CurrentSection;
-	pageSetup = currentSection.PageSetup;
-	pageSetup.Orientation = Orientation.Landscape;
-	//Bu bölüm farklı bir ilk sayfa üstbilgisine/altbilgisine ihtiyaç duymaz, belgede yalnızca bir başlık sayfasına ihtiyacımız vardır,
-	// ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde tanımlanmıştır.
-	pageSetup.DifferentFirstPageHeaderFooter = false;
+// Birincil üstbilgilerin/altbilgilerin görüleceği ikinci bir sayfa oluşturmak için bir sayfa sonu yapın.
+builder.InsertBreak(BreakType.PageBreak);
+builder.InsertBreak(BreakType.SectionBreakNewPage);
 
-	// Bu bölüm, önceki bölümden üstbilgileri/altbilgileri görüntüler
-	// varsayılan olarak bu sayfa genişliğini iptal etmek için currentSection.HeadersFooters.LinkToPrevious(false) öğesini çağırın
-	// yeni bölüm için farklıdır ve bu nedenle altbilgi tablosu için farklı hücre genişlikleri ayarlamamız gerekir.
-	currentSection.HeadersFooters.LinkToPrevious(false);
+currentSection = builder.CurrentSection;
+pageSetup = currentSection.PageSetup;
+pageSetup.Orientation = Orientation.Landscape;
+//Bu bölüm farklı bir ilk sayfa üstbilgisine/altbilgisine ihtiyaç duymaz, belgede yalnızca bir başlık sayfasına ihtiyacımız vardır,
+// ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde tanımlanmıştır.
+pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// Bu bölüm için zaten var olan üst bilgi/alt bilgi setini kullanmak istiyorsak.
-	// Ancak bazı küçük değişikliklerle, üstbilgileri/altbilgileri kopyalamak uygun olabilir.
-	// önceki bölümden ve istediğimiz yerde gerekli değişiklikleri uygulayın.
-	CopyHeadersFootersFromPreviousSection(currentSection);
+// Bu bölüm, önceki bölümden üstbilgileri/altbilgileri görüntüler
+// varsayılan olarak bu sayfa genişliğini iptal etmek için currentSection.HeadersFooters.LinkToPrevious(false) öğesini çağırın
+// yeni bölüm için farklıdır ve bu nedenle altbilgi tablosu için farklı hücre genişlikleri ayarlamamız gerekir.
+currentSection.HeadersFooters.LinkToPrevious(false);
 
-	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
+// Bu bölüm için zaten var olan üst bilgi/alt bilgi setini kullanmak istiyorsak.
+// Ancak bazı küçük değişikliklerle, üstbilgileri/altbilgileri kopyalamak uygun olabilir.
+// önceki bölümden ve istediğimiz yerde gerekli değişiklikleri uygulayın.
+CopyHeadersFootersFromPreviousSection(currentSection);
 
-	Row row = primaryFooter.Tables[0].FirstRow;
-	row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-	row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
 
-	doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
+Row row = primaryFooter.Tables[0].FirstRow;
+row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+
+doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```

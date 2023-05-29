@@ -57,3 +57,5 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
 // Pase los parámetros adecuados para convertir los campos de la página en texto sin formato en el cuerpo de la primera sección.
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
+doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
+```

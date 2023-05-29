@@ -43,14 +43,13 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// Sektionen är den första underordnade noden i dokumentet.
-	Node section = doc.FirstChild;
+// Sektionen är den första underordnade noden i dokumentet.
+Node section = doc.FirstChild;
 
-	// Sektionens överordnade nod är dokumentet.
-	Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
-            
+// Sektionens överordnade nod är dokumentet.
+Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
 Detta är ett komplett kodexempel för att få föräldernoden för en specifik nod med Aspose.Words för .NET. Var noga med att importera nödvändiga referenser och följ stegen som beskrivits tidigare för att integrera denna kod i ditt projekt.

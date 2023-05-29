@@ -47,20 +47,18 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 فيما يلي رمز المصدر الكامل لميزة "إدراج مستند" عند استبدال Aspose.Words for .NET:
 
 ```csharp
+// المسار إلى دليل المستندات.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+// تعيين خيارات البحث والاستبدال.
+FindReplaceOptions options = new FindReplaceOptions
+{
+	Direction = FindReplaceDirection.Backward, 
+	ReplacingCallback = new InsertDocumentAtReplaceHandler()
+};
 
-	// تعيين خيارات البحث والاستبدال.
-	FindReplaceOptions options = new FindReplaceOptions
-	{
-		Direction = FindReplaceDirection.Backward, 
-		ReplacingCallback = new InsertDocumentAtReplaceHandler()
-	};
-
-	// اتصل بطريقة الاستبدال.
-	mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
-	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
-
+// اتصل بطريقة الاستبدال.
+mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
+mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```

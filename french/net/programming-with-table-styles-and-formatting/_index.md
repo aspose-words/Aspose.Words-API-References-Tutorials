@@ -2,7 +2,7 @@
 title: Programmation avec styles de tableau et mise en forme
 linktitle: Programmation avec styles de tableau et mise en forme
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent obtenir la distance entre le texte entourant le tableau, appliquer une bordure de contour, créer un tableau avec des bordures, modifier le formatage des lignes, appliquer le formatage des lignes, définir c
+description: Apprenez à programmer les styles de tableau et la mise en forme dans Aspose.Words pour .NET. Apprenez à appliquer des styles prédéfinis, à personnaliser la mise en forme des cellules, les bordures et bien plus encore avec des didacticiels pas à pas et des exemples de code en C#.
 type: docs
 weight: 1580
 url: /fr/net/programming-with-table-styles-and-formatting/

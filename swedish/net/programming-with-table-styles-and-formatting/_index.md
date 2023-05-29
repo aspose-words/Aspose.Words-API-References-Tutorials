@@ -2,7 +2,7 @@
 title: Programmering med tabellstilar och formatering
 linktitle: Programmering med tabellstilar och formatering
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller få avstånd mellan tabellomgivande text, tillämpa konturkant, bygga tabell med ramar, ändra radformatering, tillämpa radformatering, ställa in c
+description: Lär dig hur du programmerar tabellstilar och formatering i Aspose.Words för .NET. Lär dig hur du tillämpar fördefinierade stilar, anpassar cellformatering, ramar och mer med steg-för-steg handledningar och exempelkod i C#.
 type: docs
 weight: 1580
 url: /sv/net/programming-with-table-styles-and-formatting/

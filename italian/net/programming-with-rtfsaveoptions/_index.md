@@ -2,7 +2,7 @@
 title: Programmazione con Rtfsaveoptions
 linktitle: Programmazione con Rtfsaveoptions
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono il salvataggio delle immagini come wmf
+description: Esplora la programmazione con le opzioni di salvataggio RTF in Aspose.Words per .NET. Scopri come salvare e personalizzare i documenti RTF con esercitazioni dettagliate ed esempi di codice C#.
 type: docs
 weight: 1690
 url: /it/net/programming-with-rtfsaveoptions/

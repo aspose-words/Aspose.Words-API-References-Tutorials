@@ -56,20 +56,19 @@ builder.Writeln("Element 2b");
 
 
 ```csharp
-	// Utilisez un générateur de document pour ajouter du contenu au document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Utilisez un générateur de document pour ajouter du contenu au document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	builder.ListFormat.ApplyBulletDefault();
-	builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
+builder.ListFormat.ApplyBulletDefault();
+builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 
-	builder.Writeln("Item 1");
-	builder.Writeln("Item 2");
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
 
-	builder.ListFormat.ListIndent();
+builder.ListFormat.ListIndent();
 
-	builder.Writeln("Item 2a");
-	builder.Writeln("Item 2b");
-            
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
 ```
 
 Félicitation ! Vous avez maintenant appris à créer une liste à puces avec Aspose.Words pour .NET.

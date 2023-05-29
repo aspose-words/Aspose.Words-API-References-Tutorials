@@ -45,17 +45,15 @@ La sortie peut être formatée en Markdown pour améliorer la lisibilité. Par e
 
 ### Exemple de code source pour Supprimer les commentaires dans Pdf en utilisant Aspose.Words pour .NET
 
-Voici le code source complet pour supprimer les commentaires dans un fichier PDF en utilisant Aspose.Words pour .NET :
+Voici le code source complet pour supprimer les commentaires dans un fichier PDF en utilisant Aspose.Words pour .NET :
 
 ```csharp
+// Chemin d'accès au répertoire des documents.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	// Chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Revisions.docx");
+// Masquez les commentaires dans le PDF.
+doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 
-	// Masquez les commentaires dans le PDF.
-	doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
-
-	doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
-
+doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 ```

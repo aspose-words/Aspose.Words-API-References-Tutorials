@@ -2,7 +2,7 @@
 title: 使用字体
 linktitle: 使用字体
 second_title: Aspose.Words for .NET API 参考
-description: 教程展示了如何应用字体格式、字体行间距、DMLText 效果、启用/禁用字体替换、字体回退设置、使用 Aspose.Words for .NET 获取 Word 文档中的可用字体列表
+description: 使用字体教程教您如何使用 Aspose.Words for .NET 在 Word 中使用字体。格式化、替换、通知等。
 type: docs
 weight: 420
 url: /zh/net/working-with-fonts/

@@ -2,7 +2,7 @@
 title: Lavorare con la sezione
 linktitle: Lavorare con la sezione
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono sezione di aggiunta, sezione di eliminazione, eliminazione di tutte le sezioni, contenuto di sezione di aggiunta, sezione di clonazione, sezione di copia, eliminazione del contenuto del piè di pagina dell'intestazione, eliminazione del contenuto della sezione, modifica dell'impostazione della pagina in tutte le sezioni e accesso alle sezioni per indice utilizzando Aspose.Words per .NET.
+description: Scopri come lavorare con le sezioni nei documenti di Word utilizzando Aspose.Words per .NET. Esercitazioni dettagliate con codice di esempio per creare, modificare e formattare sezioni in modo efficiente.
 type: docs
 weight: 1220
 url: /it/net/working-with-section/

@@ -48,23 +48,21 @@ MergeDocuments();
 以下是 Aspose.Words for .NET 的逐页功能的完整源代码：
 
 ```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Big document.docx");
 
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Big document.docx");
+int pageCount = doc.PageCount;
 
-	int pageCount = doc.PageCount;
+for (int page = 0; page < pageCount; page++)
+{
+	//将每一页另存为单独的文档。
+	Document extractedPage = doc.ExtractPages(page, 1);
+	extractedPage.Save(dataDir + $"SplitDocument.PageByPage_{page + 1}.docx");
+}
 
-	for (int page = 0; page < pageCount; page++)
-	{
-		//将每一页另存为单独的文档。
-		Document extractedPage = doc.ExtractPages(page, 1);
-		extractedPage.Save(dataDir + $"SplitDocument.PageByPage_{page + 1}.docx");
-	}
-	
 
-	MergeDocuments();
-
+MergeDocuments();
 ```
 
 使用此代码，您将能够使用 Aspose.Words for .NET 将 Word 文档拆分为单独的页面。如果需要，您还可以合并单独的文档。

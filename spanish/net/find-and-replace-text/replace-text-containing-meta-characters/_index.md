@@ -41,7 +41,7 @@ builder.Writeln("1st paragraph");
 
 ## Paso 3: Configurar las opciones de Buscar y reemplazar
 
- Ahora configuraremos las opciones de buscar y reemplazar usando un`FindReplaceOptions` objeto. En nuestro ejemplo, configuramos la alineación de los párrafos reemplazados en "Centrado":
+ Ahora configuraremos las opciones de buscar y reemplazar usando un`FindReplaceOptions` objeto. En nuestro ejemplo, establecemos la alineación de los párrafos reemplazados en "Centrado":
 
 ```csharp
 FindReplaceOptions findReplaceOptions = new FindReplaceOptions();

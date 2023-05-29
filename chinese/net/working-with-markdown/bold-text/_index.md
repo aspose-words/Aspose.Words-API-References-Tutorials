@@ -38,12 +38,12 @@ builder.Writeln("This text will be bold");
 
 
 ```csharp
-	//使用文档生成器向文档添加内容。
-	DocumentBuilder builder = new DocumentBuilder();
+//使用文档生成器向文档添加内容。
+DocumentBuilder builder = new DocumentBuilder();
 
-	//将文本设为粗体。
-	builder.Font.Bold = true;
-	builder.Writeln("This text will be Bold");  
+//将文本设为粗体。
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");  
 ```
 
 恭喜！您现在已经学习了如何使用 Aspose.Words for .NET 将文本加粗。

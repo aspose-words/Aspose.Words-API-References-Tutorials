@@ -2,7 +2,7 @@
 title: Arbeta med VBA-makron
 linktitle: Arbeta med VBA-makron
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller skapa vba-projekt, läs vba-makron, modifiera vba-makron, klona vba-projekt, klona vba-modul och ta bort trasig ref med Aspose.Words för .NET
+description: Lär dig hur du arbetar med VBA-makron i Word-dokument med Aspose.Words för .NET. Komplettera självstudier med kodexempel för att skapa, ändra och köra VBA-makron i dina Word-dokument.
 type: docs
 weight: 1350
 url: /sv/net/working-with-vba-macros/

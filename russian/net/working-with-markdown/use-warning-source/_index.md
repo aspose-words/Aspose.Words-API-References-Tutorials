@@ -44,21 +44,20 @@ if (warningInfo.Source == WarningSource.Markdown)
 ### Пример исходного кода для использования источника предупреждений с Aspose.Words для .NET
 
 ```csharp
-	// Путь к каталогу документов.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Emphases markdown warning.docx");
+// Путь к каталогу документов.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Emphases markdown warning.docx");
 
-	WarningInfoCollection warnings = new WarningInfoCollection();
-	doc.WarningCallback = warnings;
+WarningInfoCollection warnings = new WarningInfoCollection();
+doc.WarningCallback = warnings;
 
-	doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
+doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
 
-	foreach (WarningInfo warningInfo in warnings)
-	{
-		if (warningInfo.Source == WarningSource.Markdown)
-			Console.WriteLine(warningInfo.Description);
-	}
-            
+foreach (WarningInfo warningInfo in warnings)
+{
+	if (warningInfo.Source == WarningSource.Markdown)
+		Console.WriteLine(warningInfo.Description);
+}
 ```
 
 Поздравляем! Теперь вы узнали, как использовать источник предупреждений с Aspose.Words для .NET.

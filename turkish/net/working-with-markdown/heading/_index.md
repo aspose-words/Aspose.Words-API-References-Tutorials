@@ -40,17 +40,16 @@ builder.Writeln("This is an H1 tag");
 
 
 ```csharp
-	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
-	DocumentBuilder builder = new DocumentBuilder();
+// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Word'deki Başlık stilleri varsayılan olarak Kalın ve İtalik biçimlendirmeye sahip olabilir.
-	//Vurgulanmak istemiyorsak, bu özellikleri açıkça false olarak ayarlayın.
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+// Word'deki Başlık stilleri varsayılan olarak Kalın ve İtalik biçimlendirmeye sahip olabilir.
+//Vurgulanmak istemiyorsak, bu özellikleri açıkça false olarak ayarlayın.
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	builder.ParagraphFormat.StyleName = "Heading 1";
-	builder.Writeln("This is an H1 tag");
-            
+builder.ParagraphFormat.StyleName = "Heading 1";
+builder.Writeln("This is an H1 tag");
 ```
 
 Tebrikler! Artık başlıklar özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.

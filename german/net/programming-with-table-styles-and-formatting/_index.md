@@ -2,7 +2,7 @@
 title: Programmieren mit Tabellenstilen und Formatierung
 linktitle: Programmieren mit Tabellenstilen und Formatierung
 second_title: Aspose.Words für .NET API-Referenz
-description: In den Tutorials geht es darum, den Abstand zwischen dem umgebenden Text der Tabelle zu ermitteln, einen Umrissrahmen anzuwenden, eine Tabelle mit Rahmen zu erstellen, die Zeilenformatierung zu ändern, die Zeilenformatierung anzuwenden und c festzulegen
+description: Erfahren Sie, wie Sie Tabellenstile und Formatierungen in Aspose.Words für .NET programmieren. Erfahren Sie mit Schritt-für-Schritt-Anleitungen und Beispielcode in C#, wie Sie vordefinierte Stile anwenden, Zellformatierungen, Rahmen und mehr anpassen.
 type: docs
 weight: 1580
 url: /de/net/programming-with-table-styles-and-formatting/

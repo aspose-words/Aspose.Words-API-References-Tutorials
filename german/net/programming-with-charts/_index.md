@@ -2,7 +2,7 @@
 title: Programmieren mit Diagrammen
 linktitle: Programmieren mit Diagrammen
 second_title: Aspose.Words für .NET API-Referenz
-description: Die Tutorials enthalten die Formatierung der Anzahl der Datenbeschriftungen, das Erstellen eines Diagramms mithilfe einer Form, das Einfügen eines einfachen Säulendiagramms, das Einfügen eines Säulendiagramms, das Einfügen eines Flächendiagramms und das Einfügen eines Blasendiagramms.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Grafiken in Word-Dokumenten erstellen, anpassen und bearbeiten. Die Tutorials bieten Schritt-für-Schritt-Erklärungen und C#-Quellcode, um Sie beim Hinzufügen von Diagrammen zu unterstützen.
 type: docs
 weight: 1540
 url: /de/net/programming-with-charts/

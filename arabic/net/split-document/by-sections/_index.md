@@ -46,26 +46,24 @@ newDoc.Save(dataDir + $"SplitDocument.ParSections_{i}.docx");
 فيما يلي كود المصدر الكامل لميزة By Sections في Aspose.Words for .NET:
 
 ```csharp
+// المسار إلى دليل المستندات.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Big document.docx");
 
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Big document.docx");
+for (int i = 0; i < doc.Sections.Count; i++)
+{
+	// قسّم المستند إلى أجزاء أصغر ، في هذه الحالة ، قسّم حسب القسم.
+	Section section = doc.Sections[i].Clone();
 
-	for (int i = 0; i < doc.Sections.Count; i++)
-	{
-		// قسّم المستند إلى أجزاء أصغر ، في هذه الحالة ، قسّم حسب القسم.
-		Section section = doc.Sections[i].Clone();
+	Document newDoc = new Document();
+	newDoc.Sections.Clear();
 
-		Document newDoc = new Document();
-		newDoc.Sections.Clear();
+	Section newSection = (Section) newDoc.ImportNode(section, true);
+	newDoc.Sections.Add(newSection);
 
-		Section newSection = (Section) newDoc.ImportNode(section, true);
-		newDoc.Sections.Add(newSection);
-
-		// احفظ كل قسم كمستند منفصل.
-		newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
-	}
-
+	// احفظ كل قسم كمستند منفصل.
+	newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
+}
 ```
 
 باستخدام هذا الرمز ، ستتمكن من تقسيم مستند Word إلى أقسام منفصلة باستخدام Aspose.Words for .NET.

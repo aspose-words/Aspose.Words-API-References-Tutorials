@@ -2,7 +2,7 @@
 title: Programmering med Txtloadoptions
 linktitle: Programmering med Txtloadoptions
 second_title: Aspose.Words för .NET API Referens
-description: Handledningarna innehåller detekteringsnumrering med blanksteg, alternativ för hantering av blanksteg och dokumenttextriktning
+description: Lär dig hur du programmerar med laddningsalternativ för textfiler i Aspose.Words för .NET. Lär dig hur du anger kodning, ignorerar okända tecken, hanterar radbrytningar och mer med steg-för-steg handledning och exempelkod i C#.
 type: docs
 weight: 1640
 url: /sv/net/programming-with-txtloadoptions/

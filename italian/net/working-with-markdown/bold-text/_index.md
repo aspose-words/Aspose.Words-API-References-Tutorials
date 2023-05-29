@@ -38,12 +38,12 @@ builder.Writeln("This text will be bold");
 
 
 ```csharp
-	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
-	DocumentBuilder builder = new DocumentBuilder();
+// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Rendi il testo in grassetto.
-	builder.Font.Bold = true;
-	builder.Writeln("This text will be Bold");  
+// Rendi il testo in grassetto.
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");  
 ```
 
 Congratulazioni! Ora hai imparato come mettere in grassetto il testo con Aspose.Words per .NET.

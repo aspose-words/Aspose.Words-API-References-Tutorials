@@ -23,7 +23,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Étape 2 : Accéder au nœud et au paragraphe actuels
-Ensuite, récupérez le nœud et le paragraphe actuels où le curseur est positionné. Ceci peut être réalisé en utilisant les propriétés CurrentNode et CurrentParagraph de la classe DocumentBuilder :
+Ensuite, récupérez le nœud et le paragraphe actuels où le curseur est positionné. Ceci peut être réalisé en utilisant les propriétés CurrentNode et CurrentParagraph de la classe DocumentBuilder :
 
 ```csharp
 Node curNode = builder.CurrentNode;

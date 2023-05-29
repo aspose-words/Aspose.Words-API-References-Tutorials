@@ -2,7 +2,7 @@
 title: Document Protection
 linktitle: Document Protection
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain password protection, allow only form fields protect, remove document protection, unrestricted editable regions, unrestricted section, get prote
+description: Learn how to protect Word documents with Aspose.Words for .NET. The tutorials will guide you through the various protection methods, such as locking changes, password protection, restricting access to document elements, and much more.
 type: docs
 weight: 1430
 url: /net/document-protection/

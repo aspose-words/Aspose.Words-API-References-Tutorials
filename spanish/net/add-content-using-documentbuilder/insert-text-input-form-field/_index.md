@@ -62,16 +62,13 @@ Este código guardará el documento con el campo de formulario de entrada de tex
 ### Ejemplo de código fuente para Insertar campo de formulario de entrada de texto usando Aspose.Words para .NET
 
 ```csharp
+// La ruta al directorio de documentos.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	// La ruta al directorio de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
-            
-        
+builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
+
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```

@@ -36,15 +36,13 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 Aspose.Words for .NET kullanarak bir belgedeki revizyon gruplarını almak için eksiksiz kaynak kodu burada:
 
 ```csharp
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	Document doc = new Document(MyDir + "Revisions.docx");
-
-	foreach(RevisionGroup group in doc.Revisions.Groups)
-	{
-		 Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
-		 Console.WriteLine(group.Text);
-	}
-	
+foreach(RevisionGroup group in doc.Revisions.Groups)
+{
+	 Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
+	 Console.WriteLine(group.Text);
+}
 ```
 
 

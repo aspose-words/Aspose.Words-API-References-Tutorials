@@ -45,7 +45,7 @@ builder.InsertHyphenation();
 
 ## Steg 4: Spara dokumentet
 
-Slutligen, spara det ändrade dokumentet:
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
@@ -55,14 +55,14 @@ Så ! Du har framgångsrikt bearbetat ord genom att avstava dem på olika språk
 
 ### Exempel på källkod för ordavstavning med Aspose.Words för .NET
 
-	```csharp
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "German text.docx");
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "German text.docx");
 
-	Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
-	Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
+Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
+Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 
-	doc.Save(dataDir + "TreatmentByCesure.pdf");
-	```
+doc.Save(dataDir + "TreatmentByCesure.pdf");
+```
 
 Använd gärna den här koden i dina egna projekt och modifiera den för att passa dina specifika behov.

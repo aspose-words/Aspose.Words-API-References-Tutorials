@@ -43,14 +43,13 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// Bölüm, belgenin ilk alt düğümüdür.
-	Node section = doc.FirstChild;
+// Bölüm, belgenin ilk alt düğümüdür.
+Node section = doc.FirstChild;
 
-	// Bölümün ana düğümü belgedir.
-	Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
-            
+// Bölümün ana düğümü belgedir.
+Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
 Bu, Aspose.Words for .NET ile belirli bir düğümün ana düğümünü almak için eksiksiz bir kod örneğidir. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları uyguladığınızdan emin olun.

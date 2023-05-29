@@ -2,7 +2,7 @@
 title: 使用脚注和尾注
 linktitle: 使用脚注和尾注
 second_title: Aspose.Words for .NET API 参考
-description: 教程解释了如何使用 Aspose.Words for .NET 在 Word 文档中设置脚注和尾注
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中处理脚注和尾注。详细的教程和实例。
 type: docs
 weight: 660
 url: /zh/net/working-with-footnote-and-endnote/

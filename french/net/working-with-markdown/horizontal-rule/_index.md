@@ -29,12 +29,11 @@ builder. InsertHorizontalRule();
 ## Exemple de code source pour la règle horizontale avec Aspose.Words pour .NET
 
 ```csharp
-	// Utilisez un générateur de document pour ajouter du contenu au document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Utilisez un générateur de document pour ajouter du contenu au document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Insérez une règle horizontale.
-	builder.InsertHorizontalRule();
-            
+// Insérez une règle horizontale.
+builder.InsertHorizontalRule();
 ```
 
 Félicitation ! Vous avez maintenant appris à utiliser la fonction de règle horizontale avec Aspose.Words pour .NET.

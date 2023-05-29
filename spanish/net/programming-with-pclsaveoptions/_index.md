@@ -2,7 +2,7 @@
 title: Programación con Pclsaveoptions
 linktitle: Programación con Pclsaveoptions
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen elementos transformados rasterizados
+description: Explore la programación con las opciones de guardado de PCL en Aspose.Words para .NET. Aprenda a manipular y personalizar documentos guardados de Word en formato PCL con tutoriales paso a paso y ejemplos de código.
 type: docs
 weight: 1670
 url: /es/net/programming-with-pclsaveoptions/

@@ -78,55 +78,52 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 Hier ist der vollständige Quellcode zum Einfügen eines Inhaltsverzeichnisses mit Aspose.Words für .NET:
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-            string dataDir = "YOUR DOCUMENT DIRECTORY";
-			
-            // Initialisieren Sie DocumentBuilder mit dem Document-Objekt
-            Document doc = new Document();
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            
-            // Inhaltsverzeichnis einfügen
-			builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-            
-            // Beginnen Sie mit dem eigentlichen Dokumentinhalt auf der zweiten Seite.
-            builder.InsertBreak(BreakType.PageBreak);
+// Initialisieren Sie DocumentBuilder mit dem Document-Objekt
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
+// Inhaltsverzeichnis einfügen
+builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-            builder.Writeln("Heading 1");
+// Beginnen Sie mit dem eigentlichen Dokumentinhalt auf der zweiten Seite.
+builder.InsertBreak(BreakType.PageBreak);
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 
-            builder.Writeln("Heading 1.1");
-            builder.Writeln("Heading 1.2");
+builder.Writeln("Heading 1");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            builder.Writeln("Heading 2");
-            builder.Writeln("Heading 3");
+builder.Writeln("Heading 1.1");
+builder.Writeln("Heading 1.2");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 
-            builder.Writeln("Heading 3.1");
+builder.Writeln("Heading 2");
+builder.Writeln("Heading 3");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            builder.Writeln("Heading 3.1.1");
-            builder.Writeln("Heading 3.1.2");
-            builder.Writeln("Heading 3.1.3");
+builder.Writeln("Heading 3.1");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
 
-            builder.Writeln("Heading 3.2");
-            builder.Writeln("Heading 3.3");
+builder.Writeln("Heading 3.1.1");
+builder.Writeln("Heading 3.1.2");
+builder.Writeln("Heading 3.1.3");
 
-            
-            // Das neu eingefügte Inhaltsverzeichnis ist zunächst leer.
-            // Es muss ausgefüllt werden, indem die Felder im Dokument aktualisiert werden.
-            doc.UpdateFields();
-            
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
-            
-        
+builder.Writeln("Heading 3.2");
+builder.Writeln("Heading 3.3");
+
+
+// Das neu eingefügte Inhaltsverzeichnis ist zunächst leer.
+// Es muss ausgefüllt werden, indem die Felder im Dokument aktualisiert werden.
+doc.UpdateFields();
+
+
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```

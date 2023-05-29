@@ -40,17 +40,16 @@ builder.Writeln("This is an H1 tag");
 
 
 ```csharp
-	// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
-	DocumentBuilder builder = new DocumentBuilder();
+// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Standardmäßig können Überschriftenstile in Word die Formatierung Fett und Kursiv haben.
-	//Wenn wir nicht hervorgehoben werden möchten, setzen Sie diese Eigenschaften explizit auf „false“.
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+// Standardmäßig können Überschriftenstile in Word die Formatierung Fett und Kursiv haben.
+//Wenn wir nicht hervorgehoben werden möchten, setzen Sie diese Eigenschaften explizit auf „false“.
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	builder.ParagraphFormat.StyleName = "Heading 1";
-	builder.Writeln("This is an H1 tag");
-            
+builder.ParagraphFormat.StyleName = "Heading 1";
+builder.Writeln("This is an H1 tag");
 ```
 
 Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Überschriftenfunktion mit Aspose.Words für .NET verwenden.

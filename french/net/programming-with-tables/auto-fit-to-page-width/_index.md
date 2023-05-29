@@ -21,7 +21,7 @@ Pour commencer à travailler avec le tableau, nous devons créer un document et 
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Créer le document et le générateur de document
+//Créer le document et le générateur de documents
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

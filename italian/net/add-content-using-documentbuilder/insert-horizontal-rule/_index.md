@@ -42,15 +42,13 @@ Ecco il codice sorgente completo per l'inserimento di una regola orizzontale uti
 Le regole orizzontali sono utili per vari scenari, come la divisione di sezioni, la creazione di interruzioni visive o l'evidenziazione di informazioni importanti.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("Insert a horizontal rule shape into the document.");
+builder.InsertHorizontalRule();
 
-	builder.Writeln("Insert a horizontal rule shape into the document.");
-	builder.InsertHorizontalRule();
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
 Ricorda di adattare il codice in base alle tue esigenze specifiche e di migliorarlo con funzionalità aggiuntive secondo necessità.

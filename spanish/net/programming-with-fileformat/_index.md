@@ -2,7 +2,7 @@
 title: Programación con formato de archivo
 linktitle: Programación con formato de archivo
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen detectar formato de archivo, detectar firmas de documentos y verificar documentos encriptados
+description: Aprenda a trabajar con formatos de archivo en Aspose.Words para .NET. Los tutoriales lo guían a través de las diversas funciones, como la detección del formato de archivo y la conversión entre formatos.
 type: docs
 weight: 1610
 url: /es/net/programming-with-fileformat/

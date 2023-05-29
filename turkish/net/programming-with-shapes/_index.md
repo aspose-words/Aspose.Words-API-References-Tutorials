@@ -2,7 +2,7 @@
 title: Şekillerle Programlama
 linktitle: Şekillerle Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, grup şekli ekleme, şekil ekleme, en boy oranı kilitli, hücrede düzen, kırpılmış köşeler ekleme, gerçek şekil sınır noktaları alma, dikey bağlantı, algılama içerir
+description: Aspose.Words for .NET'te şekil programlamayı keşfedin. C# dilinde adım adım öğreticiler ve örnek kod ile Word belgelerinizdeki şekilleri nasıl değiştireceğinizi ve özelleştireceğinizi öğrenin.
 type: docs
 weight: 1560
 url: /tr/net/programming-with-shapes/

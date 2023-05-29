@@ -2,7 +2,7 @@
 title: البرمجة باستخدام Htmlsaveoptions
 linktitle: البرمجة باستخدام Htmlsaveoptions
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على معلومات حول التصدير ذهابًا وإيابًا ، وتصدير الخطوط كقاعدة 64 ، وتصدير الموارد ، وتحويل ملفات التعريف إلى emf أو wmf ، وتحويل ملفات التعريف إلى svg ، وإضافة css cla
+description: تعرف على كيفية البرمجة باستخدام خيارات حفظ HTML في Aspose.Words for .NET. قم بتحويل مستندات Word بسهولة إلى HTML مع الاحتفاظ بالتنسيق والمحتوى.
 type: docs
 weight: 1620
 url: /ar/net/programming-with-htmlsaveoptions/

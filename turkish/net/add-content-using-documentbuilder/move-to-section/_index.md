@@ -71,33 +71,29 @@ Bu kod, DocumentBuilder'ın imlecini ikinci bölümün üçüncü paragrafına (
 ### Aspose.Words for .NET kullanarak Move To Move To Section için örnek kaynak kodu
 
 ```csharp
+Document doc = new Document();
+doc.AppendChild(new Section(doc));
 
-	
-	Document doc = new Document();
-	doc.AppendChild(new Section(doc));
+// Bir DocumentBuilder'ı ikinci bölüme taşıyın ve metin ekleyin.
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.MoveToSection(1);
+builder.Writeln("Text added to the 2nd section.");
 
-	// Bir DocumentBuilder'ı ikinci bölüme taşıyın ve metin ekleyin.
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToSection(1);
-	builder.Writeln("Text added to the 2nd section.");
+// Paragraflarla belge oluşturun.
+doc = new Document(MyDir + "Paragraphs.docx");
+ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
+Assert.AreEqual(22, paragraphs.Count);
 
-	// Paragraflarla belge oluşturun.
-	doc = new Document(MyDir + "Paragraphs.docx");
-	ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-	Assert.AreEqual(22, paragraphs.Count);
+//Bir belge için DocumentBuilder oluşturduğumuzda, imleci varsayılan olarak belgenin en başındadır,
+// ve DocumentBuilder tarafından eklenen herhangi bir içerik belgenin başına eklenecektir.
+builder = new DocumentBuilder(doc);
+Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 
-	//Bir belge için DocumentBuilder oluşturduğumuzda, imleci varsayılan olarak belgenin en başındadır,
-	// ve DocumentBuilder tarafından eklenen herhangi bir içerik belgenin başına eklenecektir.
-	builder = new DocumentBuilder(doc);
-	Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
-
-	// İmleci bir paragrafta herhangi bir konuma taşıyabilirsiniz.
-	builder.MoveToParagraph(2, 10);
-	Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
-	builder.Writeln("This is a new third paragraph. ");
-	Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
-	
-        
+// İmleci bir paragrafta herhangi bir konuma taşıyabilirsiniz.
+builder.MoveToParagraph(2, 10);
+Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
+builder.Writeln("This is a new third paragraph. ");
+Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
 Bu kadar ! Sağlanan kaynak kodunu kullanarak Aspose.Words for .NET'in bölüme taşıma işlevini artık nasıl kullanacağınızı anladınız. Artık bu işlevi kendi uygulamanıza entegre edebilir ve Word belgelerinizin bölümlerini ve paragraflarını dinamik olarak değiştirebilirsiniz.

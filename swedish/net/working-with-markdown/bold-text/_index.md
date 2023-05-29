@@ -38,12 +38,12 @@ builder.Writeln("This text will be bold");
 
 
 ```csharp
-	// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
-	DocumentBuilder builder = new DocumentBuilder();
+// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Gör texten fet.
-	builder.Font.Bold = true;
-	builder.Writeln("This text will be Bold");  
+// Gör texten fet.
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");  
 ```
 
 Grattis! Du har nu lärt dig hur man fet text med Aspose.Words för .NET.

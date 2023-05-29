@@ -2,7 +2,7 @@
 title: Ta bort innehåll
 linktitle: Ta bort innehåll
 second_title: Aspose.Words för .NET API Referens
-description: Självstudierna innehåller ta bort sidbrytningar, ta bort sidbrytningar, ta bort avsnittsbrytningar, ta bort sidfötter, ta bort toc och ta bort innehållsförteckning
+description: Lär dig hur du effektivt tar bort innehåll från Word-dokument med Aspose.Words för .NET. Följ steg-för-steg tutorials och använd C#-kodexempel för att lära dig olika tekniker för borttagning av innehåll.
 type: docs
 weight: 1370
 url: /sv/net/remove-content/

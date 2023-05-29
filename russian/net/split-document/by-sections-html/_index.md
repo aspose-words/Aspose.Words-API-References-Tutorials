@@ -35,17 +35,15 @@ doc.Save(dataDir + "SplitDocument.ParSectionsHtml.html", options);
 Вот полный исходный код функции By HTML Sections в Aspose.Words для .NET:
 
 ```csharp
+// Путь к каталогу документов.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Rendering.docx");
 
-	// Путь к каталогу документов.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Rendering.docx");
 
-	
-	HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
-	
-	
-	doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
+HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
 
+
+doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
 ```
 
 С помощью этого кода вы сможете разделить документ Word на отдельные разделы в формате HTML, используя Aspose.Words для .NET.

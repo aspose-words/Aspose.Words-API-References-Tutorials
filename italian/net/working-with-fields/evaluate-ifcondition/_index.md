@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/working-with-fields/evaluate-ifcondition/
 ---
 
-Ecco una guida dettagliata per spiegare il codice sorgente C# di seguito, che utilizza la funzione "Valuta condizione IF" di Aspose.Words per .NET. Assicurati di seguire attentamente ogni passaggio per ottenere i risultati desiderati.
+Ecco una guida dettagliata per spiegare il codice sorgente C# di seguito, che utilizza la funzionalità "Valuta condizione IF" di Aspose.Words per .NET. Assicurati di seguire attentamente ogni passaggio per ottenere i risultati desiderati.
 
 ## Passaggio 1: creazione del generatore di documenti
 

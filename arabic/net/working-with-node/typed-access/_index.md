@@ -59,23 +59,22 @@ foreach(Table table in tables)
 ### نموذج التعليمات البرمجية المصدر للوصول المكتوب باستخدام Aspose.Words for .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	Section section = doc.FirstSection;
-	Body body = section.Body;
-	
-	// وصول سريع مكتوب إلى جميع العقد الفرعية التابعة للجدول الموجودة في النص الأساسي.
-	TableCollection tables = body.Tables;
+Section section = doc.FirstSection;
+Body body = section.Body;
 
-	foreach (Table table in tables)
-	{
-		// وصول سريع مكتوب إلى الصف الأول من الجدول.
-		table.FirstRow?.Remove();
+// وصول سريع مكتوب إلى جميع العقد الفرعية التابعة للجدول الموجودة في النص الأساسي.
+TableCollection tables = body.Tables;
 
-		// وصول سريع مكتوب إلى الصف الأخير من الجدول.
-		table.LastRow?.Remove();
-	}
-            
+foreach (Table table in tables)
+{
+	// وصول سريع مكتوب إلى الصف الأول من الجدول.
+	table.FirstRow?.Remove();
+
+	// وصول سريع مكتوب إلى الصف الأخير من الجدول.
+	table.LastRow?.Remove();
+}
 ```
 
 هذا نموذج كامل من التعليمات البرمجية للوصول المكتوب إلى الجداول باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.

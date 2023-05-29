@@ -78,55 +78,52 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 Aquí está el código fuente completo para insertar una tabla de contenido usando Aspose.Words para .NET:
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-            string dataDir = "YOUR DOCUMENT DIRECTORY";
-			
-            // Inicialice DocumentBuilder con el objeto Document
-            Document doc = new Document();
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            
-            // Insertar tabla de contenidoa
-			builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-            
-            // Inicie el contenido real del documento en la segunda página.
-            builder.InsertBreak(BreakType.PageBreak);
+// Inicialice DocumentBuilder con el objeto Document
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
+// Insertar tabla de contenidoa
+builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-            builder.Writeln("Heading 1");
+// Inicie el contenido real del documento en la segunda página.
+builder.InsertBreak(BreakType.PageBreak);
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 
-            builder.Writeln("Heading 1.1");
-            builder.Writeln("Heading 1.2");
+builder.Writeln("Heading 1");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            builder.Writeln("Heading 2");
-            builder.Writeln("Heading 3");
+builder.Writeln("Heading 1.1");
+builder.Writeln("Heading 1.2");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 
-            builder.Writeln("Heading 3.1");
+builder.Writeln("Heading 2");
+builder.Writeln("Heading 3");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            builder.Writeln("Heading 3.1.1");
-            builder.Writeln("Heading 3.1.2");
-            builder.Writeln("Heading 3.1.3");
+builder.Writeln("Heading 3.1");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
 
-            builder.Writeln("Heading 3.2");
-            builder.Writeln("Heading 3.3");
+builder.Writeln("Heading 3.1.1");
+builder.Writeln("Heading 3.1.2");
+builder.Writeln("Heading 3.1.3");
 
-            
-            // La tabla de contenido recién insertada estará inicialmente vacía.
-            // Debe completarse actualizando los campos en el documento.
-            doc.UpdateFields();
-            
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
-            
-        
+builder.Writeln("Heading 3.2");
+builder.Writeln("Heading 3.3");
+
+
+// La tabla de contenido recién insertada estará inicialmente vacía.
+// Debe completarse actualizando los campos en el documento.
+doc.UpdateFields();
+
+
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```

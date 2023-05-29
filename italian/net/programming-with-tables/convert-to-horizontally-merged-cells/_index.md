@@ -53,4 +53,4 @@ table. ConvertToHorizontallyMergedCells();
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come convertire le celle della tabella in celle unite orizzontalmente in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi manipolare le celle della tabella nei documenti di Word a livello di codice. Questa funzionalità ti consente di gestire e organizzare i tuoi dati in modo flessibile e personalizzato in una tabella.
+In questo tutorial, abbiamo imparato come convertire le celle della tabella in celle unite orizzontalmente in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi manipolare le celle della tabella nei documenti di Word a livello di programmazione. Questa funzionalità ti consente di gestire e organizzare i tuoi dati in modo flessibile e personalizzato in una tabella.

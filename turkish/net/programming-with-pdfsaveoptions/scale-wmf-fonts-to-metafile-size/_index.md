@@ -49,7 +49,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = met
 
 ## 5. Adım: Belgeyi Meta Dosya Oluşturma Seçenekleriyle PDF Olarak Kaydedin
 
-Önceden yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedin.
+Önceden yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF biçiminde kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);

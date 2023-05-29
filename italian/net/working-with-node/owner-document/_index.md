@@ -65,27 +65,26 @@ Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null
 ### Esempio di codice sorgente per il documento del proprietario con Aspose.Words per .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// La creazione di un nuovo nodo di qualsiasi tipo richiede un documento passato al costruttore.
-	Paragraph para = new Paragraph(doc);
+// La creazione di un nuovo nodo di qualsiasi tipo richiede un documento passato al costruttore.
+Paragraph para = new Paragraph(doc);
 
-	// Il nuovo nodo di paragrafo non ha ancora un genitore.
-	Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
+// Il nuovo nodo di paragrafo non ha ancora un genitore.
+Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 
-	// Ma il nodo del paragrafo conosce il suo documento.
-	Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
+// Ma il nodo del paragrafo conosce il suo documento.
+Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-	// Il fatto che un nodo appartenga sempre a un documento ci permette di accedervi e modificarlo
-	// proprietà che fanno riferimento ai dati a livello di documento, come stili o elenchi.
-	para.ParagraphFormat.StyleName = "Heading 1";
+// Il fatto che un nodo appartenga sempre a un documento ci permette di accedervi e modificarlo
+// proprietà che fanno riferimento ai dati a livello di documento, come stili o elenchi.
+para.ParagraphFormat.StyleName = "Heading 1";
 
-	// Ora aggiungi il paragrafo al testo principale della prima sezione.
-	doc.FirstSection.Body.AppendChild(para);
+// Ora aggiungi il paragrafo al testo principale della prima sezione.
+doc.FirstSection.Body.AppendChild(para);
 
-	//Il nodo paragrafo è ora figlio del nodo Corpo.
-	Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
-            
+//Il nodo paragrafo è ora figlio del nodo Corpo.
+Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
 

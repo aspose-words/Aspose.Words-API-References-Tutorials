@@ -2,7 +2,7 @@
 title: Arbeiten mit FormFields
 linktitle: Arbeiten mit FormFields
 second_title: Aspose.Words für .NET API-Referenz
-description: Tutorials zum Einfügen von Formulardateien, zum Arbeiten mit den Eigenschaften von Formulardateien, zum Abrufen der Sammlung von Formularfeldern und zum Abrufen von Formularfeldern nach Namen in einem Word-Dokument mit Aspose.Words für .NET.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mit Formularfeldern in Word-Dokumenten arbeiten. Ausführliche Tutorials mit Codebeispielen.
 type: docs
 weight: 690
 url: /de/net/working-with-formfields/

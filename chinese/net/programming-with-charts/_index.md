@@ -2,7 +2,7 @@
 title: 使用图表编程
 linktitle: 使用图表编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含数据标签的格式编号、使用形状创建图表、插入简单柱形图、插入柱形图、插入面积图、插入气泡图、
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建、自定义和操作图形。这些教程提供了分步说明和 C# 源代码来帮助您添加图表。
 type: docs
 weight: 1540
 url: /zh/net/programming-with-charts/

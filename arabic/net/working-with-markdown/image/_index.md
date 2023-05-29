@@ -39,16 +39,15 @@ shape.ImageData.Title = "Title";
 ### مثال على شفرة المصدر للصور باستخدام Aspose.Words for .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
-	DocumentBuilder builder = new DocumentBuilder();
+// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// إدراج صورة.
-	Shape shape = new Shape(builder.Document, ShapeType.Image);
-	shape.WrapType = WrapType.Inline;
-	shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-	shape.ImageData.Title = "title";
-	builder.InsertNode(shape);
-            
+// إدراج صورة.
+Shape shape = new Shape(builder.Document, ShapeType.Image);
+shape.WrapType = WrapType.Inline;
+shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
+shape.ImageData.Title = "title";
+builder.InsertNode(shape);
 ```
 
 تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الصور مع Aspose.Words for .NET.

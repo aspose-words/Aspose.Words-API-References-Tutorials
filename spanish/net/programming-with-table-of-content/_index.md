@@ -2,7 +2,7 @@
 title: Programación con tabla de contenido
 linktitle: Programación con tabla de contenido
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen cambiar el estilo del nivel de toc y cambiar las paradas de tabulación de toc
+description: Explore la programación de TOC en Aspose.Words para .NET. Aprenda a crear y manipular tablas de contenido en sus documentos de Word con tutoriales paso a paso y ejemplos de código C#.
 type: docs
 weight: 1420
 url: /es/net/programming-with-table-of-content/

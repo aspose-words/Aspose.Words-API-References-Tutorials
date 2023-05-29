@@ -38,16 +38,14 @@ for (int i = 0; i < paragraphs.Count; i++)
 以下是使用 Aspose.Words for .NET 在文档中获取修订类型的完整源代码：
 
 ```csharp
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	Document doc = new Document(MyDir + "Revisions.docx");
-
-	ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-	for (int i = 0; i < paragraphs.Count; i++)
-	{
-		 if (paragraphs[i].IsMoveFromRevision)
-			 Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-		 if (paragraphs[i].IsMoveToRevision)
-			 Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
-	}
-
+ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
+for (int i = 0; i < paragraphs.Count; i++)
+{
+	 if (paragraphs[i].IsMoveFromRevision)
+		 Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
+	 if (paragraphs[i].IsMoveToRevision)
+		 Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
+}
 ```

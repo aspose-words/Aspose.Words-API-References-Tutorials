@@ -46,20 +46,18 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 Aspose.Words for .NET kullanarak sayfa sonları eklemek için eksiksiz kaynak kodu burada:
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("This is page 1.");
+builder.InsertBreak(BreakType.PageBreak);
 
-	builder.Writeln("This is page 1.");
-	builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("This is page 2.");
+builder.InsertBreak(BreakType.PageBreak);
 
-	builder.Writeln("This is page 2.");
-	builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("This is page 3.");
 
-	builder.Writeln("This is page 3.");
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
-			
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
 Kodu özel gereksinimlerinize göre ayarlamayı ve gerektiğinde ek işlevlerle geliştirmeyi unutmayın.

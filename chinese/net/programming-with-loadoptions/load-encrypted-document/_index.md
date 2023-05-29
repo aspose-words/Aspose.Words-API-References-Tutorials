@@ -24,7 +24,7 @@ Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("passwor
 
 在此示例中，我们使用密码“password”加载位于文档目录中的文档“Encrypted.docx”。
 
-## 保存加密文档
+## 保存加密文件
 
 上传加密文档后，您还可以通过为输出文件指定新密码来保存它。在我们的示例中，我们使用 OdtSaveOptions 类使用新密码以 ODT 格式保存文档。方法如下：
 

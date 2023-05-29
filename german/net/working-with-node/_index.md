@@ -2,7 +2,7 @@
 title: Arbeiten mit Node
 linktitle: Arbeiten mit Node
 second_title: Aspose.Words für .NET API-Referenz
-description: In den Tutorials erfahren Sie, wie Sie den Knotentyp verwenden, den übergeordneten Knoten und das Eigentümerdokument abrufen, alle Knoten rekursiv verwenden, alle Knoten durchlaufen, untergeordnete Knoten aufzählen und Absatzknoten in einem Word-Dokument mit Aspose.Words für .NET erstellen.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mit Knoten in Word-Dokumenten arbeiten. Ausführliche Tutorials mit Codebeispielen.
 type: docs
 weight: 1000
 url: /de/net/working-with-node/

@@ -48,23 +48,21 @@ MergeDocuments();
 فيما يلي شفرة المصدر الكاملة لميزة صفحة بصفحة في Aspose.Words for .NET:
 
 ```csharp
+// المسار إلى دليل المستندات.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Big document.docx");
 
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Big document.docx");
+int pageCount = doc.PageCount;
 
-	int pageCount = doc.PageCount;
+for (int page = 0; page < pageCount; page++)
+{
+	// احفظ كل صفحة كمستند منفصل.
+	Document extractedPage = doc.ExtractPages(page, 1);
+	extractedPage.Save(dataDir + $"SplitDocument.PageByPage_{page + 1}.docx");
+}
 
-	for (int page = 0; page < pageCount; page++)
-	{
-		// احفظ كل صفحة كمستند منفصل.
-		Document extractedPage = doc.ExtractPages(page, 1);
-		extractedPage.Save(dataDir + $"SplitDocument.PageByPage_{page + 1}.docx");
-	}
-	
 
-	MergeDocuments();
-
+MergeDocuments();
 ```
 
 باستخدام هذا الرمز ، ستتمكن من تقسيم مستند Word إلى صفحات فردية باستخدام Aspose.Words for .NET. يمكنك أيضًا دمج مستندات منفصلة إذا لزم الأمر.

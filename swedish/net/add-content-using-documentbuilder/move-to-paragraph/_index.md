@@ -51,13 +51,11 @@ builder.Writeln("This is the 3rd paragraph.");
 Nedan är det kompletta exemplet på källkoden för implementering av funktionen Flytta till stycke med Aspose.Words för .NET:
 
 ```csharp
+Document doc = new Document(MyDir + "Paragraphs.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Paragraphs.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.MoveToParagraph(2, 0);
-	builder.Writeln("This is the 3rd paragraph.");
-	
+builder.MoveToParagraph(2, 0);
+builder.Writeln("This is the 3rd paragraph.");
 ```
 
 Genom att följa den här guiden och använda funktionen Flytta till stycke kan du manipulera stycken i Word-dokument med hjälp av Aspose.Words för .NET.

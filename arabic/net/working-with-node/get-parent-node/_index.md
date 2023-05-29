@@ -43,14 +43,13 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// المقطع هو العقدة الفرعية الأولى من المستند.
-	Node section = doc.FirstChild;
+// المقطع هو العقدة الفرعية الأولى من المستند.
+Node section = doc.FirstChild;
 
-	// العقدة الرئيسية للقسم هي الوثيقة.
-	Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
-            
+// العقدة الرئيسية للقسم هي الوثيقة.
+Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
 هذا مثال رمز كامل للحصول على العقدة الأصلية لعقدة معينة باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.

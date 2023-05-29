@@ -11,7 +11,7 @@ url: /es/net/working-with-fonts/set-fonts-folders-default-instance/
 En este tutorial, lo guiaremos a través del proceso paso a paso para configurar la carpeta de fuentes predeterminada al procesar un documento con Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo configurar la carpeta de fuentes predeterminada para usar al renderizar sus documentos usando Aspose.Words para .NET.
 
 ## Paso 1: Definir el directorio de documentos
-Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -41,12 +41,12 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ### Ejemplo de código fuente para establecer la instancia predeterminada de las carpetas de fuentes usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Ruta a su directorio de documentos
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
-	Document doc = new Document(dataDir + "Rendering.docx");
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
+FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ```
 
 ## Conclusión

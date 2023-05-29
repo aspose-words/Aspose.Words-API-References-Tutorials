@@ -37,7 +37,7 @@ builder.InsertComboBox("DropDown", items, 0);
 ```
 
 ## Étape 4 : Enregistrer le document
-Après avoir inséré le champ de formulaire de la zone de liste déroulante, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
+Après avoir inséré le champ de formulaire de la zone de liste déroulante, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
@@ -47,16 +47,14 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.
 Voici le code source complet pour insérer un champ de formulaire de zone de liste déroulante à l'aide de Aspose.Words pour .NET :
 
 ```csharp
+string[] items = { "One", "Two", "Three" };
 
-	string[] items = { "One", "Two", "Three" };
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertComboBox("DropDown", items, 0);
 
-	builder.InsertComboBox("DropDown", items, 0);
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
 ```
 
 N'oubliez pas d'ajuster le code en fonction de vos besoins spécifiques et de l'améliorer avec des fonctionnalités supplémentaires si nécessaire.

@@ -2,7 +2,7 @@
 title: Belge Koruması
 linktitle: Belge Koruması
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler parola koruması içerir, yalnızca form alanlarının korunmasına izin verir, belge korumasını kaldırır, sınırsız düzenlenebilir bölgeler, sınırsız bölüm, koruma al
+description: Aspose.Words for .NET ile Word belgelerini nasıl koruyacağınızı öğrenin. Öğreticiler, değişiklikleri kilitleme, parola koruması, belge öğelerine erişimi kısıtlama ve çok daha fazlası gibi çeşitli koruma yöntemleri konusunda size rehberlik edecektir.
 type: docs
 weight: 1430
 url: /tr/net/document-protection/

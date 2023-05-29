@@ -49,19 +49,19 @@ Aspose.Words for .NET kullanarak köprü eklemek için eksiksiz kaynak kodu bura
 Köprüler, Word belgelerinizin etkileşimini ve kullanışlılığını geliştirmenin güçlü bir yoludur. Dış kaynaklara başvurmak, ek bilgi sağlamak veya belge içinde gezinme öğeleri oluşturmak için kullanılabilirler.
 
 ```csharp
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.Write("Please make sure to visit ");
-	builder.Font.Color = Color.Blue;
-	builder.Font.Underline = Underline.Single;
-	
-	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", yanlış);
-	
-	builder.Font.ClearFormatting();
-	builder.Write(" for more information.");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
+builder.Write("Please make sure to visit ");
+builder.Font.Color = Color.Blue;
+builder.Font.Underline = Underline.Single;
+
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", yanlış);
+
+builder.Font.ClearFormatting();
+builder.Write(" for more information.");
+
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
 Kodu, köprü metni ve URL dahil olmak üzere özel gereksinimlerinize göre ayarlamayı unutmayın. Gerektiğinde ek biçimlendirme veya işlevsellik ile geliştirin.

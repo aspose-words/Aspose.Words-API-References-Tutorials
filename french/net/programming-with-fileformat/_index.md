@@ -2,7 +2,7 @@
 title: Programmation avec le format de fichier
 linktitle: Programmation avec le format de fichier
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent la détection du format de fichier, la détection des signatures de document et la vérification du document crypté
+description: Apprenez à travailler avec les formats de fichiers dans Aspose.Words pour .NET. Les didacticiels vous guident à travers les différentes fonctionnalités telles que la détection du format de fichier, la conversion entre les formats.
 type: docs
 weight: 1610
 url: /fr/net/programming-with-fileformat/

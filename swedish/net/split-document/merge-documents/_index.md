@@ -55,33 +55,31 @@ mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 Här är den fullständiga källkoden för funktionen Merge Documents i Aspose.Words för .NET:
 
 ```csharp
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Hitta dokument med hjälp av för sammanfogning.
+FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
+	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
+string sourceDocumentPath =
+	Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
 
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// Hitta dokument med hjälp av för sammanfogning.
-	FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-		.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-	string sourceDocumentPath =
-		Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
+// Öppna den första delen av det resulterande dokumentet.
+Document sourceDoc = new Document(sourceDocumentPath);
 
-	// Öppna den första delen av det resulterande dokumentet.
-	Document sourceDoc = new Document(sourceDocumentPath);
+// Skapa ett nytt resulterande dokument.
+Document mergedDoc = new Document();
+DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-	// Skapa ett nytt resulterande dokument.
-	Document mergedDoc = new Document();
-	DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
+// Slå samman dokumentdelar en efter en.
+foreach (FileSystemInfo documentPath in documentPaths)
+{
+	if (documentPath.FullName == sourceDocumentPath)
+		continue;
 
-	// Slå samman dokumentdelar en efter en.
-	foreach (FileSystemInfo documentPath in documentPaths)
-	{
-		if (documentPath.FullName == sourceDocumentPath)
-			continue;
+	mergedDocBuilder.MoveToDocumentEnd();
+	mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
+	sourceDoc = new Document(documentPath.FullName);
+}
 
-		mergedDocBuilder.MoveToDocumentEnd();
-		mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-		sourceDoc = new Document(documentPath.FullName);
-	}
-
-	mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
-
+mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```

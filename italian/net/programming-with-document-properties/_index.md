@@ -2,12 +2,12 @@
 title: Programmazione con le proprietà del documento
 linktitle: Programmazione con le proprietà del documento
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono variabili get, enumera proprietà, aggiunge proprietà documento personalizzate, rimuove proprietà documento personalizzate, rimuove informazioni personali, configura
+description: Scopri come gestire le proprietà dei documenti di Word con Aspose.Words per .NET. I tutorial ti guidano attraverso le varie funzionalità come la lettura e la scrittura delle proprietà, la personalizzazione delle proprietà predefinite.
 type: docs
 weight: 1520
 url: /it/net/programming-with-document-properties/
 ---
-tutorial di Aspose.Words per .NET sulla programmazione con le proprietà del documento forniscono uno sguardo approfondito alla gestione delle proprietà del documento nei progetti. In questi tutorial imparerai come accedere, modificare ed eliminare proprietà come titolo, autore, parole chiave, ecc., per personalizzare i tuoi documenti Word. Imparerai anche come aggiungere proprietà personalizzate per soddisfare le tue esigenze specifiche.
+I tutorial di Aspose.Words per .NET sulla programmazione con le proprietà del documento forniscono uno sguardo approfondito alla gestione delle proprietà del documento nei progetti. In questi tutorial imparerai come accedere, modificare ed eliminare proprietà come titolo, autore, parole chiave, ecc., per personalizzare i tuoi documenti Word. Imparerai anche come aggiungere proprietà personalizzate per soddisfare le tue esigenze specifiche.
 
 Questi tutorial ti guideranno passo dopo passo nell'utilizzo della libreria Aspose.Words per .NET per interagire con le proprietà del documento. Imparerai come estrarre proprietà esistenti, impostare nuovi valori e rimuovere proprietà indesiderate. Comprendendo come manipolare le proprietà del documento, sarai in grado di creare documenti Word professionali e personalizzarli in base alle tue esigenze.
 

@@ -2,7 +2,7 @@
 title: Join And Append Documents
 linktitle: Join And Append Documents
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain simple append document, append document, append document to blank, append with import format options, different page setup, join continuous, jo
+description: Learn how to join and merge Word documents using Aspose.Words for .NET. The tutorials walk you through the steps to combine multiple Word files into a single document. 
 type: docs
 weight: 1500
 url: /net/join-and-append-documents/

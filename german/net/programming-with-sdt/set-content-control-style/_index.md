@@ -23,7 +23,7 @@ Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Schritt 2: Laden Sie das Dokument und rufen Sie die Inhaltssteuerung ab
+## Schritt 2: Laden Sie das Dokument und rufen Sie die Inhaltskontrolle ab
  Laden Sie das Word-Dokument mit`Document` Konstruktor, der den Pfad zum Dokument als Parameter übergibt. Rufen Sie das gewünschte Inhaltssteuerelement aus dem Dokument ab. In diesem Beispiel gehen wir davon aus, dass das Inhaltssteuerelement das erste strukturierte Dokument-Tag im Dokument ist.
 
 ```csharp

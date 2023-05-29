@@ -35,17 +35,15 @@ doc.Save(dataDir + "SplitDocument.ParSectionsHtml.html", options);
 فيما يلي شفرة المصدر الكاملة لميزة By HTML Sections في Aspose.Words for .NET:
 
 ```csharp
+// المسار إلى دليل المستندات.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Rendering.docx");
 
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Rendering.docx");
 
-	
-	HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
-	
-	
-	doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
+HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
 
+
+doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
 ```
 
 باستخدام هذا الرمز ، ستتمكن من تقسيم مستند Word إلى أقسام منفصلة بتنسيق HTML باستخدام Aspose.Words for .NET.

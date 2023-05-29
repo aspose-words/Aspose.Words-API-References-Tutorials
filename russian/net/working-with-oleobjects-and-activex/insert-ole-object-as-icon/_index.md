@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 3. Вставьте объект OLE в качестве значка
- Используйте конструктор документов`InsertOleObjectAsIcon` способ вставки объекта OLE в качестве значка в документ. Укажите путь к OLE-файлу, флаг отображения, путь к значку и имя встроенного объекта.
+ Используйте конструктор документов`InsertOleObjectAsIcon` способ вставки объекта OLE в качестве значка в документ. Укажите путь к OLE-файлу, флаг отображения, путь к значку и имя внедренного объекта.
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");

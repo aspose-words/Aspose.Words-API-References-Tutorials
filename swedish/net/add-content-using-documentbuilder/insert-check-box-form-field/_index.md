@@ -40,14 +40,12 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.
 Här är den fullständiga källkoden för att infoga ett kryssrutaformulär med Aspose.Words för .NET:
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertCheckBox("CheckBox", true, true, 0);
+builder.InsertCheckBox("CheckBox", true, true, 0);
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx");
 ```
 
 Kom ihåg att justera koden efter dina specifika krav och utöka den med ytterligare funktionalitet efter behov.

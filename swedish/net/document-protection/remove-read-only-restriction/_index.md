@@ -55,7 +55,7 @@ Här är den fullständiga källkoden för att ta bort den skrivskyddade begrän
 	// Ange ett lösenord som är upp till 15 tecken långt.
 	doc.WriteProtection.SetPassword("MyPassword");
 
-	// Ta bort alternativet skrivskyddat.
+	// Ta bort det skrivskyddade alternativet.
 	doc.WriteProtection.ReadOnlyRecommended = false;
 
 	// Använd skrivskydd utan något skydd.

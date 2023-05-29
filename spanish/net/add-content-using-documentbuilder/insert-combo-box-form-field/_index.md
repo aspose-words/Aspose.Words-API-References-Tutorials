@@ -47,16 +47,14 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.
 Aquí está el código fuente completo para insertar un campo de formulario de cuadro combinado usando Aspose.Words para .NET:
 
 ```csharp
+string[] items = { "One", "Two", "Three" };
 
-	string[] items = { "One", "Two", "Three" };
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertComboBox("DropDown", items, 0);
 
-	builder.InsertComboBox("DropDown", items, 0);
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
 ```
 
 Recuerde ajustar el código de acuerdo con sus requisitos específicos y mejorarlo con funciones adicionales según sea necesario.

@@ -48,21 +48,19 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx
 تعد الصور العائمة مفيدة لسيناريوهات مختلفة ، مثل إضافة الشعارات أو الرسوم التوضيحية أو العناصر الزخرفية التي يمكن وضعها بشكل مستقل عن نص المستند.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertImage(ImagesDir + "Transparent background logo.png",
+	RelativeHorizontalPosition.Margin,
+	100,
+	RelativeVerticalPosition.Margin,
+	100,
+	200,
+	100,
+	WrapType.Square);
 
-	builder.InsertImage(ImagesDir + "Transparent background logo.png",
-		RelativeHorizontalPosition.Margin,
-		100,
-		RelativeVerticalPosition.Margin,
-		100,
-		200,
-		100,
-		WrapType.Square);
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
 ```
 
 تذكر أن تقوم بضبط الكود وفقًا لمتطلباتك المحددة ، بما في ذلك مسار ملف الصورة وخيارات الموضع والالتفاف المطلوبة.

@@ -23,7 +23,7 @@ Document doc = new Document(MyDir + "Pdf Document.pdf");
 
 ## Adım 2: Belgeyi Docx Formatında Kaydetme
 
- Sonra, çağırarak belgeyi Docx formatında kaydedin.`Save` yöntemi`Document`nesne ve çıktı Docx belgesi için yol ve dosya adını sağlama:
+ Sonra, çağırarak belgeyi Docx biçiminde kaydedin.`Save` yöntemi`Document`nesne ve çıktı Docx belgesi için yol ve dosya adını sağlama:
 
 ```csharp
 doc.Save(dataDir + "BaseConversions.PdfToDocx.docx");

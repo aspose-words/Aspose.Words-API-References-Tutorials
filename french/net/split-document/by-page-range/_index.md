@@ -51,16 +51,13 @@ Veillez à remplacer "Document_Extraits.ParPlageDePages.docx" par le nom souhait
 ### Exemple de code source pour Par plage de pages en utilisant Aspose.Words pour .NET
 
 ```csharp
+// Chemin d'accès au répertoire des documents.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Big document.docx");
 
-            // Chemin d'accès au répertoire des documents.
-			string dataDir = "YOUR DOCUMENT DIRECTORY";
-            Document doc = new Document(MyDir + "Big document.docx");
-            
-            // Obtenir une partie du document.
-            Document extractedPages = doc.ExtractPages(3, 6);
-            extractedPages.Save(dataDir + "SplitDocument.ByPageRange.docx");
-            
-        
+// Obtenir une partie du document.
+Document extractedPages = doc.ExtractPages(3, 6);
+extractedPages.Save(dataDir + "SplitDocument.ByPageRange.docx");
 ```
 
 ## Conclusion

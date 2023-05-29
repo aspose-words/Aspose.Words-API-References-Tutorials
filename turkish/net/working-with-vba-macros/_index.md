@@ -2,7 +2,7 @@
 title: VBA Makroları ile Çalışmak
 linktitle: VBA Makroları ile Çalışmak
 second_title: Aspose.Words for .NET API Referansı
-description: Aspose.Words for .NET kullanarak vba projesi oluşturma, vba makrolarını okuma, vba makrolarını değiştirme, vba projesini klonlama, vba modülünü klonlama ve bozuk ref'i kaldırmayı içeren öğreticiler
+description: Aspose.Words for .NET kullanarak Word belgelerinde VBA makrolarıyla nasıl çalışacağınızı öğrenin. Word belgelerinizde VBA makroları oluşturmak, değiştirmek ve çalıştırmak için kod örnekleri içeren öğreticileri tamamlayın.
 type: docs
 weight: 1350
 url: /tr/net/working-with-vba-macros/

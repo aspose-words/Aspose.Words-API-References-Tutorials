@@ -2,7 +2,7 @@
 title: Programming With Htmlloadoptions
 linktitle: Programming With Htmlloadoptions
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain preferred control type
+description: Learn how to program with HTML loading options in Aspose.Words for .NET. The tutorials guide you through the different features for loading HTML documents.
 type: docs
 weight: 1600
 url: /net/programming-with-htmlloadoptions/

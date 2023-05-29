@@ -2,7 +2,7 @@
 title: 使用表编程
 linktitle: 使用表编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含自动调整表格到内容、自动调整表格到固定列宽、自动调整表格到页面宽度、从数据表构建表格、从导入表格
+description: 了解如何在 Aspose.Words for .NET 中对表格进行编程。通过分步教程和 C# 代码示例了解如何在 Word 文档中创建、操作和格式化表格。
 type: docs
 weight: 1590
 url: /zh/net/programming-with-tables/

@@ -2,7 +2,7 @@
 title: Travailler avec la césure
 linktitle: Travailler avec la césure
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent des mots de césure de langues, chargent un dictionnaire de césure pour la langue et un rappel de césure à l'aide d'Aspose.Words pour .NET.
+description: Apprenez à gérer la césure des mots dans les documents Word avec Aspose.Words pour .NET. Tutoriels complets et exemples pratiques inclus.
 type: docs
 weight: 750
 url: /fr/net/working-with-hyphenation/

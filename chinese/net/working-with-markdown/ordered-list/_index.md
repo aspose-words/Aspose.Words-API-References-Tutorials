@@ -55,21 +55,20 @@ builder.Writeln("Item 2b");
 ### 使用 Aspose.Words for .NET 的有序列表示例源代码
 
 ```csharp
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.ListFormat.ApplyBulletDefault();
-	builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-	builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
+builder.ListFormat.ApplyBulletDefault();
+builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
+builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
 
-	builder.Writeln("Item 1");
-	builder.Writeln("Item 2");
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
 
-	builder.ListFormat.ListIndent();
+builder.ListFormat.ListIndent();
 
-	builder.Writeln("Item 2a");
-	builder.Writeln("Item 2b");
-            
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
 ```
 
 恭喜！您现在已经了解了如何使用 Aspose.Words for .NET 的有序列表功能。

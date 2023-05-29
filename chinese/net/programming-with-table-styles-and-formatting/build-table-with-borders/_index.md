@@ -39,7 +39,7 @@ table. ClearBorders();
 table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 ```
 
-## 第五步：保存修改后的文档
+## 第五步：保存修改后的文件
 最后，我们将修改后的文档保存到一个文件中。您可以为输出文档选择合适的名称和位置。
 
 ```csharp

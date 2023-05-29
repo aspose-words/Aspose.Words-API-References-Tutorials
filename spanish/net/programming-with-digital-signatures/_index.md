@@ -2,7 +2,7 @@
 title: Programación con Firmas Digitales
 linktitle: Programación con Firmas Digitales
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen documentos de firma, firma de documentos encriptados, creación y firma de una nueva línea de firma, firma de una línea de firma existente, configuración de la identificación del proveedor de firma,
+description: Aprenda a agregar y administrar firmas digitales en documentos de Word usando Aspose.Words para .NET. Los tutoriales lo guían a través de los pasos para generar firmas digitales, agregarlas a sus documentos.
 type: docs
 weight: 1440
 url: /es/net/programming-with-digital-signatures/

@@ -39,21 +39,20 @@ builder.Writeln("d");
 ### مثال على شفرة المصدر لإنشاء جدول باستخدام Aspose.Words for .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
-	DocumentBuilder builder = new DocumentBuilder();
+// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// أضف الصف الأول.
-	builder.InsertCell();
-	builder.Writeln("a");
-	builder.InsertCell();
-	builder.Writeln("b");
+// أضف الصف الأول.
+builder.InsertCell();
+builder.Writeln("a");
+builder.InsertCell();
+builder.Writeln("b");
 
-	// أضف الصف الثاني.
-	builder.InsertCell();
-	builder.Writeln("c");
-	builder.InsertCell();
-	builder.Writeln("d");
-            
+// أضف الصف الثاني.
+builder.InsertCell();
+builder.Writeln("c");
+builder.InsertCell();
+builder.Writeln("d");
 ```
 
 تهنئة ! لقد تعلمت الآن كيفية إنشاء جدول باستخدام Aspose.Words for .NET.

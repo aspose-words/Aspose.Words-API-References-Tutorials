@@ -2,7 +2,7 @@
 title: العمل مع الرؤوس والتذييلات
 linktitle: العمل مع الرؤوس والتذييلات
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية إنشاء تذييل رأس ونسخ رأس تذييل من القسم السابق من مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية التعامل مع الرؤوس والتذييلات في مستندات Word باستخدام Aspose.Words for .NET. دروس كاملة وأمثلة عملية.
 type: docs
 weight: 730
 url: /ar/net/working-with-headers-and-footers/

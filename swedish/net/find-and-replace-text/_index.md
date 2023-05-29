@@ -2,7 +2,7 @@
 title: Hitta och ersätt text
 linktitle: Hitta och ersätt text
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller enkel sökning ersätt, metatecken i sökmönster, ersätt text som innehåller metatecken, ignorera text i fält, ignorera text inuti
+description: Lär dig hur du hittar och ersätter text i Word-dokument med Aspose.Words för .NET. Handledningarna visar hur du utför exakta textsökningar, inklusive avancerade sökalternativ.
 type: docs
 weight: 1360
 url: /sv/net/find-and-replace-text/

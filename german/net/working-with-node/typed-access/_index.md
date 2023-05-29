@@ -59,23 +59,22 @@ In diesem Beispiel löschen wir die erste und letzte Zeile jeder Tabelle mithilf
 ### Beispielquellcode für typisierten Zugriff mit Aspose.Words für .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	Section section = doc.FirstSection;
-	Body body = section.Body;
-	
-	// Schneller typisierter Zugriff auf alle im Hauptteil enthaltenen untergeordneten Tabellenknoten.
-	TableCollection tables = body.Tables;
+Section section = doc.FirstSection;
+Body body = section.Body;
 
-	foreach (Table table in tables)
-	{
-		// Schneller getippter Zugriff auf die erste Zeile der Tabelle.
-		table.FirstRow?.Remove();
+// Schneller typisierter Zugriff auf alle im Hauptteil enthaltenen untergeordneten Tabellenknoten.
+TableCollection tables = body.Tables;
 
-		// Schneller getippter Zugriff auf die letzte Zeile der Tabelle.
-		table.LastRow?.Remove();
-	}
-            
+foreach (Table table in tables)
+{
+	// Schneller getippter Zugriff auf die erste Zeile der Tabelle.
+	table.FirstRow?.Remove();
+
+	// Schneller getippter Zugriff auf die letzte Zeile der Tabelle.
+	table.LastRow?.Remove();
+}
 ```
 
 Dies ist ein vollständiger Beispielcode für den typisierten Zugriff auf Tabellen mit Aspose.Words für .NET. Stellen Sie sicher, dass Sie die erforderlichen Referenzen importieren und die zuvor beschriebenen Schritte befolgen, um diesen Code in Ihr Projekt zu integrieren.

@@ -2,7 +2,7 @@
 title: Programmieren mit Formen
 linktitle: Programmieren mit Formen
 second_title: Aspose.Words für .NET API-Referenz
-description: Zu den Tutorials gehören das Hinzufügen einer Gruppenform, das Einfügen einer Form, das Sperren des Seitenverhältnisses, das Layout in einer Zelle, das Hinzufügen abgeschnittener Ecken, das Abrufen tatsächlicher Formbegrenzungspunkte, der vertikale Anker und die Erkennung
+description: Entdecken Sie die Formprogrammierung in Aspose.Words für .NET. Erfahren Sie anhand von Schritt-für-Schritt-Anleitungen und Beispielcode in C#, wie Sie Formen in Ihren Word-Dokumenten bearbeiten und anpassen.
 type: docs
 weight: 1560
 url: /de/net/programming-with-shapes/

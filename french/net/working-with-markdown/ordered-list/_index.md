@@ -55,21 +55,20 @@ Enfin, nous pouvons enregistrer le document dans le format souhaité.
 ### Exemple de code source pour la liste ordonnée avec Aspose.Words pour .NET
 
 ```csharp
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.ListFormat.ApplyBulletDefault();
-	builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-	builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
+builder.ListFormat.ApplyBulletDefault();
+builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
+builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
 
-	builder.Writeln("Item 1");
-	builder.Writeln("Item 2");
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
 
-	builder.ListFormat.ListIndent();
+builder.ListFormat.ListIndent();
 
-	builder.Writeln("Item 2a");
-	builder.Writeln("Item 2b");
-            
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
 ```
 
 Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité de liste ordonnée avec Aspose.Words pour .NET.

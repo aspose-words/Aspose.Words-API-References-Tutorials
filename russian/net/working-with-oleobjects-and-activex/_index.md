@@ -2,7 +2,7 @@
 title: Работа с OleObjects и ActiveX
 linktitle: Работа с OleObjects и ActiveX
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат информацию о том, как вставить объект Ole с пакетом Ole и без него, объект Ole как значок и прочитать свойства Active XControl с помощью Aspose.Words для .NET.
+description: Узнайте, как работать с объектами OLE и ActiveX в документах Word с помощью Aspose.Words для .NET. Подробные руководства с примерами кода.
 type: docs
 weight: 1080
 url: /ru/net/working-with-oleobjects-and-activex/

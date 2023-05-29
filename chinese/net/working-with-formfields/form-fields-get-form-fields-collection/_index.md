@@ -38,7 +38,7 @@ FormFieldCollection formFields = doc.Range.FormFields;
 ```csharp
 foreach (FormField formField in formFields)
 {
-    //访问和操作每个表单域
+    //访问和操作每个表单字段
     //...
 }
 ```
@@ -61,7 +61,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 FormFieldCollection formFields = doc.Range.FormFields;
 
-//根据需要访问和操作表单字段
+//根据需要访问和操作表单域
 //...
 
 doc.Save(dataDir + "ModifiedFormFields.docx");

@@ -2,7 +2,7 @@
 title: 使用 OleObjects 和 ActiveX
 linktitle: 使用 OleObjects 和 ActiveX
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含如何使用和不使用 Ole 包插入 Ole 对象、Ole 对象作为图标，以及使用 Aspose.Words for .NET 读取 Active XControl 属性。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中处理 OLE 和 ActiveX 对象。带有代码示例的详细教程。
 type: docs
 weight: 1080
 url: /zh/net/working-with-oleobjects-and-activex/

@@ -48,23 +48,21 @@ MergeDocuments();
 Här är den fullständiga källkoden för funktionen Sida för sida i Aspose.Words för .NET:
 
 ```csharp
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Big document.docx");
 
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Big document.docx");
+int pageCount = doc.PageCount;
 
-	int pageCount = doc.PageCount;
+for (int page = 0; page < pageCount; page++)
+{
+	// Spara varje sida som ett separat dokument.
+	Document extractedPage = doc.ExtractPages(page, 1);
+	extractedPage.Save(dataDir + $"SplitDocument.PageByPage_{page + 1}.docx");
+}
 
-	for (int page = 0; page < pageCount; page++)
-	{
-		// Spara varje sida som ett separat dokument.
-		Document extractedPage = doc.ExtractPages(page, 1);
-		extractedPage.Save(dataDir + $"SplitDocument.PageByPage_{page + 1}.docx");
-	}
-	
 
-	MergeDocuments();
-
+MergeDocuments();
 ```
 
 Med denna kod kommer du att kunna dela upp ett Word-dokument i enskilda sidor med Aspose.Words för .NET. Du kan även slå samman separata dokument om det behövs.

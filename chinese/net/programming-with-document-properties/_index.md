@@ -2,7 +2,7 @@
 title: 使用文档属性编程
 linktitle: 使用文档属性编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含获取变量、枚举属性、添加自定义文档属性、移除自定义文档属性、移除个人信息、configurin
+description: 了解如何使用 Aspose.Words for .NET 管理 Word 文档属性。这些教程将带您了解各种功能，例如读取和写入属性、自定义默认属性。
 type: docs
 weight: 1520
 url: /zh/net/programming-with-document-properties/

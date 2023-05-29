@@ -2,7 +2,7 @@
 title: Docsaveoptions ile Programlama
 linktitle: Docsaveoptions ile Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, belgeyi parola ile şifrelemeyi içerir, küçük meta dosyaları sıkıştırmaz ve resim mermisini kaydetmez
+description: Aspose.Words for .NET kullanarak Word belgeleri için kaydetme seçeneklerini nasıl özelleştireceğinizi öğrenin. Öğreticiler, dosya biçimi, sıkıştırma, parola koruması gibi mevcut çeşitli seçeneklerde size yol gösterir.
 type: docs
 weight: 1600
 url: /tr/net/programming-with-docsaveoptions/

@@ -2,7 +2,7 @@
 title: Programmering med HTMLfixedsave-alternativ
 linktitle: Programmering med HTMLfixedsave-alternativ
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller användningstypsnitt från målmaskinen och skriv alla css-regler i en enda fil
+description: Lär dig hur du programmerar med fasta HTML-sparalternativ i Aspose.Words för .NET. Handledningarna guidar dig genom de olika funktionerna för att generera HTML-dokument med fast layout, inbäddade bilder.
 type: docs
 weight: 1610
 url: /sv/net/programming-with-htmlfixedsaveoptions/

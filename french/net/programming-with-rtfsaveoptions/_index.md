@@ -2,7 +2,7 @@
 title: Programmation avec Rtfsaveoptions
 linktitle: Programmation avec Rtfsaveoptions
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les tutoriels contiennent l'enregistrement d'images au format wmf
+description: Explorez la programmation avec les options d'enregistrement RTF dans Aspose.Words pour .NET. Découvrez comment enregistrer et personnaliser des documents RTF avec des didacticiels pas à pas et des exemples de code C#.
 type: docs
 weight: 1690
 url: /fr/net/programming-with-rtfsaveoptions/

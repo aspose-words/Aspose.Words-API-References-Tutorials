@@ -64,7 +64,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
 	// المستند الوجهة ليس فارغًا ، وغالبًا ما يتسبب في ظهور صفحة فارغة قبل المستند الملحق.
-	// ويرجع ذلك إلى وجود قسم فارغ في المستند الأساسي وبدء تشغيل المستند الجديد في الصفحة التالية.
+	// هذا بسبب وجود قسم فارغ في المستند الأساسي وبدء تشغيل المستند الجديد في الصفحة التالية.
 	// قم بإزالة كل المحتوى من المستند الوجهة قبل الإلحاق.
 	dstDoc.RemoveAllChildren();
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

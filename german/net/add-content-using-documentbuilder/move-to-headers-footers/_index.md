@@ -70,28 +70,26 @@ Stellen Sie sicher, dass Sie den richtigen Dateipfad und das entsprechende Forma
 ### Beispielquellcode für „In Kopf-/Fußzeilen verschieben“ mit Aspose.Words für .NET
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Geben Sie an, dass die Kopf- und Fußzeilen für die erste, gerade und ungerade Seite unterschiedlich sein sollen.
+builder.PageSetup.DifferentFirstPageHeaderFooter = true;
+builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
-	// Geben Sie an, dass die Kopf- und Fußzeilen für die erste, gerade und ungerade Seite unterschiedlich sein sollen.
-	builder.PageSetup.DifferentFirstPageHeaderFooter = true;
-	builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
+// Erstellen Sie die Header.
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.Write("Header for the first page");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
+builder.Write("Header for even pages");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Header for all other pages");
 
-	// Erstellen Sie die Header.
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.Write("Header for the first page");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
-	builder.Write("Header for even pages");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
-	builder.Write("Header for all other pages");
+// Erstellen Sie zwei Seiten im Dokument.
+builder.MoveToSection(0);
+builder.Writeln("Page1");
+builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("Page2");
 
-	// Erstellen Sie zwei Seiten im Dokument.
-	builder.MoveToSection(0);
-	builder.Writeln("Page1");
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.Writeln("Page2");
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
-
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```

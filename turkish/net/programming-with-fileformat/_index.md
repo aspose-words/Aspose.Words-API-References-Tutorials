@@ -2,7 +2,7 @@
 title: Fileformat ile Programlama
 linktitle: Fileformat ile Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, dosya formatını algılama, belge imzalarını algılama ve şifreli belgeyi doğrulamayı içerir
+description: Aspose.Words for .NET'te dosya formatlarıyla nasıl çalışılacağını öğrenin. Öğreticiler, dosya formatını algılama, formatlar arasında dönüştürme gibi çeşitli özelliklerde size yol gösterir.
 type: docs
 weight: 1610
 url: /tr/net/programming-with-fileformat/

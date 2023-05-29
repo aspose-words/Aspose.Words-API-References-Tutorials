@@ -2,7 +2,7 @@
 title: Arbeta med fotnot och slutnot
 linktitle: Arbeta med fotnot och slutnot
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar förklarar hur du ställer in fotnot och slutnot i Word-dokument med Aspose.Words för .NET
+description: Lär dig hur du arbetar med fotnoter och slutnoter i dina Word-dokument med Aspose.Words för .NET. Detaljerade handledningar och praktiska exempel.
 type: docs
 weight: 660
 url: /sv/net/working-with-footnote-and-endnote/

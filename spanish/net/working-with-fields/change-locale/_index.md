@@ -88,4 +88,4 @@ doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
 ## Conclusión
-¡Felicidades! Ha aprendido con éxito cómo cambiar la configuración regional en documentos de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente provisto, ahora puede controlar el formato de fechas y números durante las operaciones de combinación de correspondencia. Personalice la configuración regional de acuerdo con sus requisitos para garantizar un formato preciso y uniforme en sus documentos.
+¡Felicidades! Ha aprendido con éxito cómo cambiar la configuración regional en documentos de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, ahora puede controlar el formato de fechas y números durante las operaciones de combinación de correspondencia. Personalice la configuración regional de acuerdo con sus requisitos para garantizar un formato preciso y uniforme en sus documentos.

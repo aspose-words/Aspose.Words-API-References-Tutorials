@@ -2,7 +2,7 @@
 title: Programmierung mit Dokumentoptionen und -einstellungen
 linktitle: Programmierung mit Dokumentoptionen und -einstellungen
 second_title: Aspose.Words für .NET API-Referenz
-description: Die Tutorials umfassen die Optimierung für MS Word, zeigen Grammatik- und Rechtschreibfehler an, bereinigen nicht verwendete Stile und Listen, bereinigen doppelte Stile, Ansichtsoptionen und Dokumentpa
+description: Erfahren Sie, wie Sie Dokumentoptionen und -einstellungen verwenden, um das Verhalten von Word-Dokumenten mit Aspose.Words für .NET anzupassen und zu steuern. Die Tutorials führen Sie durch die verschiedenen Funktionen wie Dokumenteigenschaften.
 type: docs
 weight: 1510
 url: /de/net/programming-with-document-options-and-settings/

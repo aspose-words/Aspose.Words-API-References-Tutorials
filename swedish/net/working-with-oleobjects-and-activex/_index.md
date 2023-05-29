@@ -2,7 +2,7 @@
 title: Arbeta med OleObjects och ActiveX
 linktitle: Arbeta med OleObjects och ActiveX
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller hur du infogar Ole Object med och utan Ole Package, Ole Object som ikon och läser Active XControl Properties med Aspose.Words för .NET.
+description: Lär dig hur du arbetar med OLE- och ActiveX-objekt i Word-dokument med Aspose.Words för .NET. Detaljerade tutorials med kodexempel.
 type: docs
 weight: 1080
 url: /sv/net/working-with-oleobjects-and-activex/

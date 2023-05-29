@@ -44,15 +44,15 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ### Пример исходного кода для установки папок шрифтов с использованием Aspose.Words для .NET 
 ```csharp
-	// Путь к вашему каталогу документов
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Путь к вашему каталогу документов
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-	{
-		new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true)
-	});
-	Document doc = new Document(dataDir + "Rendering.docx");
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
+FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
+{
+	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true)
+});
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
 ## Заключение

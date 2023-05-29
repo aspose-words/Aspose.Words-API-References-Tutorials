@@ -42,19 +42,18 @@ builder.Writeln("1. Nested blockquote");
 
 
 ```csharp
-	// Используйте конструктор документов, чтобы добавить содержимое в документ.
-	DocumentBuilder builder = new DocumentBuilder();
+// Используйте конструктор документов, чтобы добавить содержимое в документ.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// По умолчанию документ сохраняет стиль цитаты для первого уровня.
-	builder.ParagraphFormat.StyleName = "Quote";
-	builder.Writeln("Blockquote");
+// По умолчанию документ сохраняет стиль цитаты для первого уровня.
+builder.ParagraphFormat.StyleName = "Quote";
+builder.Writeln("Blockquote");
 
-	// Создавайте стили для вложенных уровней посредством наследования стилей.
-	Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
-	builder.ParagraphFormat.Style = quoteLevel2;
-	builder.Document.Styles["Quote1"].BaseStyleName = "Quote";
-	builder.Writeln("1. Nested blockquote");
-            
+// Создавайте стили для вложенных уровней посредством наследования стилей.
+Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
+builder.ParagraphFormat.Style = quoteLevel2;
+builder.Document.Styles["Quote1"].BaseStyleName = "Quote";
+builder.Writeln("1. Nested blockquote");
 ```
 
 Поздравляем! Теперь вы узнали, как использовать функцию цитирования в Aspose.Words для .NET.

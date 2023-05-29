@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /de/net/programming-with-styles-and-themes/set-theme-properties/
 ---
-In diesem Tutorial untersuchen wir den bereitgestellten C#-Quellcode, um die Designeigenschaften eines Dokuments mithilfe von Aspose.Words für .NET festzulegen. Wir werden die sekundären Schriftarten und Designfarben ändern.
+In diesem Tutorial untersuchen wir den bereitgestellten C#-Quellcode, um die Designeigenschaften eines Dokuments mithilfe von Aspose.Words für .NET festzulegen. Wir werden die sekundären Schriftarten und Themenfarben ändern.
 
 ## Schritt 1: Einrichten der Umgebung
 

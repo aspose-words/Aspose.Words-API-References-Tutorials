@@ -31,13 +31,12 @@ builder.Writeln("This text will be in italics");
 
 
 ```csharp
-	//使用文档生成器向文档添加内容。
-	DocumentBuilder builder = new DocumentBuilder();
+//使用文档生成器向文档添加内容。
+DocumentBuilder builder = new DocumentBuilder();
 
-	//使文本斜体。
-	builder.Font.Italic = true;
-	builder.Writeln("This text will be Italic");
-            
+//使文本斜体。
+builder.Font.Italic = true;
+builder.Writeln("This text will be Italic");
 ```
 
 恭喜！您现在已经了解了如何使用 Aspose.Words for .NET 的斜体文本功能。

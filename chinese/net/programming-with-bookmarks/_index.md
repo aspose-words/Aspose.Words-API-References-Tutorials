@@ -2,7 +2,7 @@
 title: 使用书签编程
 linktitle: 使用书签编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含访问书签、更新书签数据、书签表列、复制书签文本、追加书签文本、创建书签、显示隐藏书签
+description: 了解如何使用 Aspose.Words for .NET 操作 Word 文档中的书签。教程将引导您完成在 Word 文档中创建、访问和编辑书签的步骤。
 type: docs
 weight: 1380
 url: /zh/net/programming-with-bookmarks/

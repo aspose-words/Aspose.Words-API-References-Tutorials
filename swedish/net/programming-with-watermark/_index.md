@@ -2,7 +2,7 @@
 title: Programmering med vattenstämpel
 linktitle: Programmering med vattenstämpel
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller lägga till text vattenstämpel med specifika alternativ
+description: Lär dig hur du programmerar med vattenstämplar i Aspose.Words för .NET. Lär dig hur du lägger till text- eller bildvattenstämplar, anpassar deras utseende, placerar dem på sidor och mer med steg-för-steg handledningar och exempel på C#-kod.
 type: docs
 weight: 1570
 url: /sv/net/programming-with-watermark/

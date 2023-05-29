@@ -2,7 +2,7 @@
 title: Programmation avec les options et paramètres de document
 linktitle: Programmation avec les options et paramètres de document
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent l'optimisation pour ms word, l'affichage des erreurs grammaticales et orthographiques, le nettoyage des styles et des listes inutilisés, le nettoyage du style en double, les options d'affichage, le pa
+description: Apprenez à utiliser les options et paramètres de document pour personnaliser et contrôler le comportement des documents Word avec Aspose.Words pour .NET. Les didacticiels vous guident à travers les différentes fonctionnalités telles que les propriétés du document.
 type: docs
 weight: 1510
 url: /fr/net/programming-with-document-options-and-settings/

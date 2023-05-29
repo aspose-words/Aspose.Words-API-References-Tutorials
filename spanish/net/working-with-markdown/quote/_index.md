@@ -42,19 +42,18 @@ builder.Writeln("1. Nested blockquote");
 
 
 ```csharp
-	// Use un generador de documentos para agregar contenido al documento.
-	DocumentBuilder builder = new DocumentBuilder();
+// Use un generador de documentos para agregar contenido al documento.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// De forma predeterminada, un documento almacena el estilo de comillas en bloque para el primer nivel.
-	builder.ParagraphFormat.StyleName = "Quote";
-	builder.Writeln("Blockquote");
+// De forma predeterminada, un documento almacena el estilo de comillas en bloque para el primer nivel.
+builder.ParagraphFormat.StyleName = "Quote";
+builder.Writeln("Blockquote");
 
-	// Cree estilos para niveles anidados a través de la herencia de estilos.
-	Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
-	builder.ParagraphFormat.Style = quoteLevel2;
-	builder.Document.Styles["Quote1"].BaseStyleName = "Quote";
-	builder.Writeln("1. Nested blockquote");
-            
+// Cree estilos para niveles anidados a través de la herencia de estilos.
+Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
+builder.ParagraphFormat.Style = quoteLevel2;
+builder.Document.Styles["Quote1"].BaseStyleName = "Quote";
+builder.Writeln("1. Nested blockquote");
 ```
 
 ¡Felicidades! Ahora ha aprendido a usar la función de citas con Aspose.Words para .NET.

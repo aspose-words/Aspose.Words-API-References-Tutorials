@@ -76,54 +76,52 @@ Assert. False(shapes[1].IsMoveToRevision);
 Här är den fullständiga källkoden för att göra ändringar av former i ett dokument med Aspose.Words för .NET:
 
 ```csharp
+Document doc = new Document();
 
-	Document doc = new Document();
+// Infoga en inline-form utan att spåra revisioner.
+Assert.False(doc.TrackRevisions);
+Shape shape = new Shape(doc, ShapeType.Cube);
+shape.WrapType = WrapType.Inline;
+shape.Width = 100.0;
+shape.Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-	// Infoga en inline-form utan att spåra revisioner.
-	Assert.False(doc.TrackRevisions);
-	Shape shape = new Shape(doc, ShapeType.Cube);
-	shape.WrapType = WrapType.Inline;
-	shape.Width = 100.0;
-	shape.Height = 100.0;
-	doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+// Börja spåra revisioner och infoga sedan en annan form.
+doc.StartTrackRevisions("John Doe");
+shape = new Shape(doc, ShapeType.Sun);
+shape.WrapType = WrapType.Inline;
+shape.Width = 100.0;
+shape.Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-	// Börja spåra revisioner och infoga sedan en annan form.
-	doc.StartTrackRevisions("John Doe");
-	shape = new Shape(doc, ShapeType.Sun);
-	shape.WrapType = WrapType.Inline;
-	shape.Width = 100.0;
-	shape.Height = 100.0;
-	doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+// Skaffa dokumentets formsamling som bara innehåller de två formerna vi har lagt till.
+List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
 
-	// Skaffa dokumentets formsamling som bara innehåller de två formerna vi har lagt till.
-	List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-	Assert.AreEqual(2, shapes.Count);
+// Ta bort den första formen.
+shapes[0].Remove();
 
-	// Ta bort den första formen.
-	shapes[0].Remove();
+// Eftersom vi tog bort den formen medan ändringar spårades, räknas formen som en raderingsrevision.
+Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
+Assert.True(shapes[0].IsDeleteRevision);
 
-	// Eftersom vi tog bort den formen medan ändringar spårades, räknas formen som en raderingsrevision.
-	Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-	Assert.True(shapes[0].IsDeleteRevision);
+// Och vi infogade en annan form när vi spårade ändringar, så den formen kommer att räknas som en insättningsrevision.
+Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
+Assert.True(shapes[1].IsInsertRevision);
 
-	// Och vi infogade en annan form när vi spårade ändringar, så den formen kommer att räknas som en insättningsrevision.
-	Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-	Assert.True(shapes[1].IsInsertRevision);
+//Dokumentet har en form som flyttades, men formflyttningsrevisioner kommer att ha två instanser av den formen.
+// En kommer att vara formen vid ankomstdestinationen och den andra kommer att vara formen på sin ursprungliga plats.
+doc = new Document(MyDir + "Revision shape.docx");
 
-	//Dokumentet har en form som flyttades, men formflyttningsrevisioner kommer att ha två instanser av den formen.
-	// En kommer att vara formen vid ankomstdestinationen och den andra kommer att vara formen på sin ursprungliga plats.
-	doc = new Document(MyDir + "Revision shape.docx");
-	
-	shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-	Assert.AreEqual(2, shapes.Count);
+shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
 
-	// Detta är övergången till revidering, även formen vid ankomstdestinationen.
-	Assert.False(shapes[0].IsMoveFromRevision);
-	Assert.True(shapes[0].IsMoveToRevision);
+// Detta är övergången till revidering, även formen vid ankomstdestinationen.
+Assert.False(shapes[0].IsMoveFromRevision);
+Assert.True(shapes[0].IsMoveToRevision);
 
-	// Detta är övergången från revision, som är formen på sin ursprungliga plats.
-	Assert.True(shapes[1].IsMoveFromRevision);
-	Assert.False(shapes[1].IsMoveToRevision);
-            
+// Detta är övergången från revision, som är formen på sin ursprungliga plats.
+Assert.True(shapes[1].IsMoveFromRevision);
+Assert.False(shapes[1].IsMoveToRevision);
 ```
 

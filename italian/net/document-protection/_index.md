@@ -2,7 +2,7 @@
 title: Protezione dei documenti
 linktitle: Protezione dei documenti
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono la protezione con password, consentono solo la protezione dei campi del modulo, rimuovono la protezione del documento, aree modificabili illimitate, sezione illimitata, ottieni protezione
+description: Scopri come proteggere i documenti di Word con Aspose.Words per .NET. I tutorial ti guideranno attraverso i vari metodi di protezione, come il blocco delle modifiche, la protezione con password, la limitazione dell'accesso agli elementi del documento e molto altro.
 type: docs
 weight: 1430
 url: /it/net/document-protection/

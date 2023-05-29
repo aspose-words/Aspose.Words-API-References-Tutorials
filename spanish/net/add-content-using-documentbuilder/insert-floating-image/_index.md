@@ -48,21 +48,19 @@ Aquí está el código fuente completo para insertar una imagen flotante usando 
 Las imágenes flotantes son útiles para varios escenarios, como agregar logotipos, ilustraciones o elementos decorativos que se pueden colocar independientemente del texto del documento.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertImage(ImagesDir + "Transparent background logo.png",
+	RelativeHorizontalPosition.Margin,
+	100,
+	RelativeVerticalPosition.Margin,
+	100,
+	200,
+	100,
+	WrapType.Square);
 
-	builder.InsertImage(ImagesDir + "Transparent background logo.png",
-		RelativeHorizontalPosition.Margin,
-		100,
-		RelativeVerticalPosition.Margin,
-		100,
-		200,
-		100,
-		WrapType.Square);
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
 ```
 
 Recuerde ajustar el código de acuerdo con sus requisitos específicos, incluida la ruta del archivo de imagen y las opciones de colocación y ajuste deseadas.

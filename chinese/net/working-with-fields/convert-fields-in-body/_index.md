@@ -57,3 +57,5 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
 //传递适当的参数以将页面字段转换为第一部分正文中的纯文本。
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
+doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
+```

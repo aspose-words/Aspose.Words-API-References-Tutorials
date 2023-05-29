@@ -38,12 +38,12 @@ builder.Writeln("This text will be bold");
 
 
 ```csharp
-	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
-	DocumentBuilder builder = new DocumentBuilder();
+// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Metni Kalın yapın.
-	builder.Font.Bold = true;
-	builder.Writeln("This text will be Bold");  
+// Metni Kalın yapın.
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");  
 ```
 
 Tebrikler! Artık Aspose.Words for .NET ile kalın yazı yazmayı öğrendiniz.

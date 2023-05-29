@@ -2,7 +2,7 @@
 title: FormFields ile Çalışmak
 linktitle: FormFields ile Çalışmak
 second_title: Aspose.Words for .NET API Referansı
-description: Aspose.Words for .NET kullanarak Word Belgesinde form alanlarını ekleme, form alanlarının özellikleriyle çalışma, form alanları koleksiyonu alma ve form alanlarını ada göre alma konularını içeren eğitimler.
+description: Aspose.Words for .NET kullanarak Word belgelerindeki form alanlarıyla nasıl çalışacağınızı öğrenin. Kod örnekleriyle ayrıntılı öğreticiler.
 type: docs
 weight: 690
 url: /tr/net/working-with-formfields/

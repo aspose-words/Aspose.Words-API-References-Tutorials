@@ -50,19 +50,17 @@ doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 以下是使用 Aspose.Words for .NET 在文档中的气球中显示修订的完整源代码：
 
 ```csharp
-    
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";	
-	Document doc = new Document(MyDir + "Revisions.docx");
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";	
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	//呈现内联插入修订、删除和格式化气球中的修订。
-	doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-	doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-	//在页面右侧呈现修订栏。
-	doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
-	
-	doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
-	
+//呈现内联插入修订、删除和格式化气球中的修订。
+doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
+doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
+//在页面右侧呈现修订栏。
+doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
+
+doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
 

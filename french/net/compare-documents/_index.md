@@ -2,7 +2,7 @@
 title: Comparer des documents
 linktitle: Comparer des documents
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent la comparaison pour l'égalité, les options de comparaison, la cible de comparaison et la granularité de la comparaison.
+description: Apprenez à comparer des documents Word et à identifier les différences à l'aide d'Aspose.Words pour .NET. Guides et exemples pratiques inclus.
 type: docs
 weight: 1480
 url: /fr/net/compare-documents/

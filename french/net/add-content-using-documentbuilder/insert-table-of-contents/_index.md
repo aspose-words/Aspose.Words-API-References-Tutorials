@@ -78,55 +78,52 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 Voici le code source complet pour insérer une table des matières en utilisant Aspose.Words pour .NET :
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-            string dataDir = "YOUR DOCUMENT DIRECTORY";
-			
-            // Initialiser DocumentBuilder avec l'objet Document
-            Document doc = new Document();
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            
-            // Insérer une table des matièresa
-			builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-            
-            // Commencez le contenu réel du document sur la deuxième page.
-            builder.InsertBreak(BreakType.PageBreak);
+// Initialiser DocumentBuilder avec l'objet Document
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
+// Insérer une table des matièresa
+builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-            builder.Writeln("Heading 1");
+// Commencez le contenu réel du document sur la deuxième page.
+builder.InsertBreak(BreakType.PageBreak);
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 
-            builder.Writeln("Heading 1.1");
-            builder.Writeln("Heading 1.2");
+builder.Writeln("Heading 1");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            builder.Writeln("Heading 2");
-            builder.Writeln("Heading 3");
+builder.Writeln("Heading 1.1");
+builder.Writeln("Heading 1.2");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 
-            builder.Writeln("Heading 3.1");
+builder.Writeln("Heading 2");
+builder.Writeln("Heading 3");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            builder.Writeln("Heading 3.1.1");
-            builder.Writeln("Heading 3.1.2");
-            builder.Writeln("Heading 3.1.3");
+builder.Writeln("Heading 3.1");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
 
-            builder.Writeln("Heading 3.2");
-            builder.Writeln("Heading 3.3");
+builder.Writeln("Heading 3.1.1");
+builder.Writeln("Heading 3.1.2");
+builder.Writeln("Heading 3.1.3");
 
-            
-            // La table des matières nouvellement insérée sera initialement vide.
-            // Il doit être rempli en mettant à jour les champs du document.
-            doc.UpdateFields();
-            
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
-            
-        
+builder.Writeln("Heading 3.2");
+builder.Writeln("Heading 3.3");
+
+
+// La table des matières nouvellement insérée sera initialement vide.
+// Il doit être rempli en mettant à jour les champs du document.
+doc.UpdateFields();
+
+
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```

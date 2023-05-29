@@ -42,7 +42,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 ```
 
-## 第 4 步：保存最终文档
+## 第 4 步：保存最终文件
 
 最后，使用启用的使用目标样式功能保存合并文档`Save`的方法`Document`班级。
 

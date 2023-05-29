@@ -2,7 +2,7 @@
 title: Programmazione con sommario
 linktitle: Programmazione con sommario
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono lo stile di modifica del livello di sommario e le tabulazioni di modifica del sommario
+description: Esplora la programmazione TOC in Aspose.Words per .NET. Scopri come creare e manipolare sommari nei tuoi documenti Word con esercitazioni dettagliate ed esempi di codice C#.
 type: docs
 weight: 1420
 url: /it/net/programming-with-table-of-content/

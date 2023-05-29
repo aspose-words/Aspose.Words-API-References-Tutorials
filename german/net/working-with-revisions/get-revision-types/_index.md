@@ -38,16 +38,14 @@ for (int i = 0; i < paragraphs.Count; i++)
 Hier ist der vollständige Quellcode zum Abrufen von Revisionstypen in einem Dokument mit Aspose.Words für .NET:
 
 ```csharp
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	Document doc = new Document(MyDir + "Revisions.docx");
-
-	ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-	for (int i = 0; i < paragraphs.Count; i++)
-	{
-		 if (paragraphs[i].IsMoveFromRevision)
-			 Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-		 if (paragraphs[i].IsMoveToRevision)
-			 Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
-	}
-
+ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
+for (int i = 0; i < paragraphs.Count; i++)
+{
+	 if (paragraphs[i].IsMoveFromRevision)
+		 Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
+	 if (paragraphs[i].IsMoveToRevision)
+		 Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
+}
 ```

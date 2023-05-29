@@ -2,7 +2,7 @@
 title: Programmieren mit Dateiformat
 linktitle: Programmieren mit Dateiformat
 second_title: Aspose.Words für .NET API-Referenz
-description: Die Tutorials umfassen die Erkennung des Dateiformats, die Erkennung von Dokumentsignaturen und die Überprüfung verschlüsselter Dokumente
+description: Erfahren Sie, wie Sie mit Dateiformaten in Aspose.Words für .NET arbeiten. Die Tutorials führen Sie durch die verschiedenen Funktionen wie das Erkennen des Dateiformats und das Konvertieren zwischen Formaten.
 type: docs
 weight: 1610
 url: /de/net/programming-with-fileformat/

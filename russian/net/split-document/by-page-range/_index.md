@@ -51,16 +51,13 @@ extractedPages.Save(dataDir + "Document_Extraits.ParRangeDePages.docx");
 ### Пример исходного кода для диапазона страниц с использованием Aspose.Words для .NET
 
 ```csharp
+// Путь к каталогу документов.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Big document.docx");
 
-            // Путь к каталогу документов.
-			string dataDir = "YOUR DOCUMENT DIRECTORY";
-            Document doc = new Document(MyDir + "Big document.docx");
-            
-            // Получить часть документа.
-            Document extractedPages = doc.ExtractPages(3, 6);
-            extractedPages.Save(dataDir + "SplitDocument.ByPageRange.docx");
-            
-        
+// Получить часть документа.
+Document extractedPages = doc.ExtractPages(3, 6);
+extractedPages.Save(dataDir + "SplitDocument.ByPageRange.docx");
 ```
 
 ## Заключение

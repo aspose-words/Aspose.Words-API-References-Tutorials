@@ -40,7 +40,7 @@ Document dstDoc = new Document();
 För att kopiera avsnittet från källdokumentet till måldokumentet använder vi`ImportNode` metod för att importera källsektionen och lägga till den i måldokumentet.
 
 ```csharp
-// Skaffa källsektionen
+// Hämta källsektionen
 Section sourceSection = srcDoc.Sections[0];
 
 // Kopiera avsnittet till måldokumentet

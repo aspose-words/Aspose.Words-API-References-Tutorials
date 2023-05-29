@@ -2,7 +2,7 @@
 title: 使用 Docsaveoptions 编程
 linktitle: 使用 Docsaveoptions 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含使用密码加密文件，不压缩小图元文件，不保存图片项目符号
+description: 了解如何使用 Aspose.Words for .NET 自定义 Word 文档的保存选项。这些教程将引导您完成各种可用选项，例如文件格式、压缩、密码保护。
 type: docs
 weight: 1600
 url: /zh/net/programming-with-docsaveoptions/

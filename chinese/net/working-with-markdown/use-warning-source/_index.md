@@ -44,21 +44,20 @@ if (warningInfo.Source == WarningSource.Markdown)
 ### 将 Warning Source 与 Aspose.Words for .NET 一起使用的示例源代码
 
 ```csharp
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Emphases markdown warning.docx");
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Emphases markdown warning.docx");
 
-	WarningInfoCollection warnings = new WarningInfoCollection();
-	doc.WarningCallback = warnings;
+WarningInfoCollection warnings = new WarningInfoCollection();
+doc.WarningCallback = warnings;
 
-	doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
+doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
 
-	foreach (WarningInfo warningInfo in warnings)
-	{
-		if (warningInfo.Source == WarningSource.Markdown)
-			Console.WriteLine(warningInfo.Description);
-	}
-            
+foreach (WarningInfo warningInfo in warnings)
+{
+	if (warningInfo.Source == WarningSource.Markdown)
+		Console.WriteLine(warningInfo.Description);
+}
 ```
 
 恭喜！您现在已经了解了如何将警告源与 Aspose.Words for .NET 一起使用。

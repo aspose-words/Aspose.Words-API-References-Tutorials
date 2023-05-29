@@ -57,3 +57,5 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
 // Passa i parametri appropriati per convertire i campi della pagina in testo normale nel corpo della prima sezione.
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
+doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
+```

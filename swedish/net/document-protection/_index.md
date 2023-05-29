@@ -2,7 +2,7 @@
 title: Dokumentskydd
 linktitle: Dokumentskydd
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller lösenordsskydd, tillåt endast formulärfält skydda, ta bort dokumentskydd, obegränsade redigerbara regioner, obegränsad sektion, få skydd
+description: Lär dig hur du skyddar Word-dokument med Aspose.Words för .NET. Handledningarna guidar dig genom de olika skyddsmetoderna, som att låsa ändringar, lösenordsskydd, begränsa åtkomst till dokumentelement och mycket mer.
 type: docs
 weight: 1430
 url: /sv/net/document-protection/

@@ -39,16 +39,15 @@ shape.ImageData.Title = "Title";
 ### Exempel på källkod för bilder med Aspose.Words för .NET
 
 ```csharp
-	// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
-	DocumentBuilder builder = new DocumentBuilder();
+// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Infoga bild.
-	Shape shape = new Shape(builder.Document, ShapeType.Image);
-	shape.WrapType = WrapType.Inline;
-	shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-	shape.ImageData.Title = "title";
-	builder.InsertNode(shape);
-            
+// Infoga bild.
+Shape shape = new Shape(builder.Document, ShapeType.Image);
+shape.WrapType = WrapType.Inline;
+shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
+shape.ImageData.Title = "title";
+builder.InsertNode(shape);
 ```
 
 Grattis! Du har nu lärt dig hur du använder bildfunktionen med Aspose.Words för .NET.

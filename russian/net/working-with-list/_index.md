@@ -2,7 +2,7 @@
 title: Работа со списком
 linktitle: Работа со списком
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат, как перезапустить список в каждом разделе, указать уровень списка, перезапустить номер списка в документе с помощью Aspose.Words для .NET.
+description: Узнайте, как работать со списками в документах Word, используя Aspose.Words для .NET. Подробные руководства с примерами кода.
 type: docs
 weight: 780
 url: /ru/net/working-with-list/

@@ -2,7 +2,7 @@
 title: Programación con marcadores
 linktitle: Programación con marcadores
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen marcadores de acceso, actualizar datos de marcadores, columnas de tablas de marcadores, copiar texto marcado, agregar texto marcado, crear marcador, mostrar ocultar marcador
+description: Aprenda a manipular marcadores en documentos de Word usando Aspose.Words para .NET. Los tutoriales lo guían a través de los pasos para crear, acceder y editar marcadores en un documento de Word.
 type: docs
 weight: 1380
 url: /es/net/programming-with-bookmarks/
@@ -20,7 +20,7 @@ Al seguir estos tutoriales, podrá manipular de manera efectiva los marcadores e
 | [Acceder a marcadores](./access-bookmarks/) | Aprenda a acceder a los marcadores en un documento de Word usando Aspose.Words para .NET. |
 | [Actualizar datos de marcadores](./update-bookmark-data/) | Guía paso a paso para explicar el código fuente C# de la función de actualización de datos de marcadores de Aspose.Words para .NET. |
 | [Columnas de la tabla de marcadores](./bookmark-table-columns/) | Aprenda a marcar una columna de tabla en un documento de Word usando Aspose.Words para .NET. |
-| [Copiar texto marcado](./copy-bookmarked-text/) | Aprenda a copiar texto de marcador de un documento de origen a otro documento utilizando Aspose.Words para .NET. |
+| [Copiar texto marcado](./copy-bookmarked-text/) | Aprenda a copiar texto de marcador de un documento de origen a otro documento usando Aspose.Words para .NET. |
 | [Agregar texto marcado](./append-bookmarked-text/) | Aprenda a agregar texto desde un marcador en un documento de Word usando Aspose.Words para .NET. |
 | [Crear marcador](./create-bookmark/) | Aprenda a crear marcadores en un documento y especifique niveles de vista previa de marcadores en un PDF usando Aspose.Words para .NET. |
 | [Mostrar Ocultar Marcadores](./show-hide-bookmarks/) | Aprenda a mostrar u ocultar un marcador específico en un documento usando Aspose.Words para .NET. |

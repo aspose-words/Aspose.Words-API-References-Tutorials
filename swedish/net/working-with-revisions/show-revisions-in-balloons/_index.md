@@ -50,19 +50,17 @@ Utdata kan formateras i markdown för att förbättra läsbarheten. Till exempel
 Här är den fullständiga källkoden för att visa revisioner i ballonger i ett dokument med Aspose.Words för .NET:
 
 ```csharp
-    
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";	
-	Document doc = new Document(MyDir + "Revisions.docx");
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";	
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	// Render infoga revisioner inline, ta bort och formatera revisioner i ballonger.
-	doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-	doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-	// Återger revisionsfält till höger på en sida.
-	doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
-	
-	doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
-	
+// Render infoga revisioner inline, ta bort och formatera revisioner i ballonger.
+doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
+doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
+// Återger revisionsfält till höger på en sida.
+doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
+
+doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
 

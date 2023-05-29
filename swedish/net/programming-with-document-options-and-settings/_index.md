@@ -2,7 +2,7 @@
 title: Programmering med dokumentalternativ och inställningar
 linktitle: Programmering med dokumentalternativ och inställningar
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller optimera för ms word, visar grammatiska och stavningsfel, rensar oanvända stilar och listor, städar dubblettstil, visningsalternativ, dokumentpa.
+description: Lär dig hur du använder dokumentalternativ och inställningar för att anpassa och kontrollera beteendet hos Word-dokument med Aspose.Words för .NET. Handledningarna guidar dig genom de olika funktionerna såsom dokumentegenskaper.
 type: docs
 weight: 1510
 url: /sv/net/programming-with-document-options-and-settings/

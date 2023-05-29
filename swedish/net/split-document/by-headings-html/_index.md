@@ -38,21 +38,18 @@ doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
 Här är den fullständiga källkoden för funktionen By HTML Heading i Aspose.Words för .NET:
 
 ```csharp
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Rendering.docx");
 
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Rendering.docx");
+HtmlSaveOptions options = new HtmlSaveOptions
+{
+	// Dela upp ett dokument i mindre delar, i det här fallet delat efter rubrik.
+	DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
+};
 
-	HtmlSaveOptions options = new HtmlSaveOptions
-	{
-		// Dela upp ett dokument i mindre delar, i det här fallet delat efter rubrik.
-		DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
-	};
-	
 
-	doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
-	
-
+doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
 Med denna kod kommer du att kunna dela upp ett Word-dokument i mindre delar med Aspose.Words för .NET, baserat på rubriker. Du kan sedan generera separata HTML-dokument för varje del.

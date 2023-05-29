@@ -2,7 +2,7 @@
 title: Arbeiten mit Fußnote und Endnote
 linktitle: Arbeiten mit Fußnote und Endnote
 second_title: Aspose.Words für .NET API-Referenz
-description: In den Tutorials wird erläutert, wie Sie mit Aspose.Words für .NET Fußnoten und Endnoten in Word-Dokumenten festlegen
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mit Fußnoten und Endnoten in Ihren Word-Dokumenten arbeiten. Ausführliche Tutorials und praktische Beispiele.
 type: docs
 weight: 660
 url: /de/net/working-with-footnote-and-endnote/

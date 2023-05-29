@@ -43,15 +43,15 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 
 ### Aspose.Words for .NET kullanarak Öncelikli Yazı Tipleri Klasörlerini Ayarlamak için örnek kaynak kodu 
 ```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-	{
-		new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true,1)
-	});
-	Document doc = new Document(dataDir + "Rendering.docx");
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
+FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
+{
+	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true,1)
+});
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
 ## Çözüm

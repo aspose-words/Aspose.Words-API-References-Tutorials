@@ -26,7 +26,7 @@ Document docB = docA.Clone();
 我们现在将使用`Compare()`比较两个文件的方法。此方法将标记原始文档中的更改。就是这样：
 
 ```csharp
-//比较文件
+//比较文档
 docA.Compare(docB, "user", DateTime.Now);
 
 //检查文件是否相等

@@ -50,19 +50,17 @@ La salida se puede formatear en Markdown para mejorar la legibilidad. Por ejempl
 Aquí está el código fuente completo para mostrar las revisiones en globos en un documento usando Aspose.Words para .NET:
 
 ```csharp
-    
-	// La ruta al directorio de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";	
-	Document doc = new Document(MyDir + "Revisions.docx");
+// La ruta al directorio de documentos.
+string dataDir = "YOUR DOCUMENT DIRECTORY";	
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	// Renderiza revisiones de inserción en línea, elimina y formatea revisiones en globos.
-	doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-	doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-	// Representa barras de revisión en el lado derecho de una página.
-	doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
-	
-	doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
-	
+// Renderiza revisiones de inserción en línea, elimina y formatea revisiones en globos.
+doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
+doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
+// Representa barras de revisión en el lado derecho de una página.
+doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
+
+doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
 

@@ -58,25 +58,23 @@ builder.Write(" Text immediately after the field.");
 ### Esempio di codice sorgente per Move To Merge Field utilizzando Aspose.Words per .NET
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Inserisci un campo utilizzando DocumentBuilder e aggiungi una sequenza di testo dopo di esso.
+Field field = builder.InsertField("MERGEFIELD field");
+builder.Write(" Text after the field.");
 
-	// Inserisci un campo utilizzando DocumentBuilder e aggiungi una sequenza di testo dopo di esso.
-	Field field = builder.InsertField("MERGEFIELD field");
-	builder.Write(" Text after the field.");
+// Il cursore del builder è attualmente alla fine del documento.
+Assert.Null(builder.CurrentNode);
+// Possiamo spostare il builder in un campo come questo, posizionando il cursore subito dopo il campo.
+builder.MoveToField(field, true);
 
-	// Il cursore del builder è attualmente alla fine del documento.
-	Assert.Null(builder.CurrentNode);
-	// Possiamo spostare il builder in un campo come questo, posizionando il cursore subito dopo il campo.
-	builder.MoveToField(field, true);
-
-	// Si noti che il cursore si trova in una posizione oltre il nodo FieldEnd del campo, il che significa che non siamo effettivamente all'interno del campo.
-	// Se desideriamo spostare il DocumentBuilder all'interno di un campo,
-	// dovremo spostarlo nel nodo FieldStart o FieldSeparator di un campo utilizzando il metodo DocumentBuilder.MoveTo().
-	Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
-	builder.Write(" Text immediately after the field.");
-	
+// Si noti che il cursore si trova in una posizione oltre il nodo FieldEnd del campo, il che significa che non siamo effettivamente all'interno del campo.
+// Se desideriamo spostare il DocumentBuilder all'interno di un campo,
+// dovremo spostarlo nel nodo FieldStart o FieldSeparator di un campo utilizzando il metodo DocumentBuilder.MoveTo().
+Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
+builder.Write(" Text immediately after the field.");
 ```
 
 ## Conclusione

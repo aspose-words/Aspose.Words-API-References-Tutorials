@@ -42,13 +42,12 @@ Slutligen kan vi spara dokumentet i önskat format.
 
 
 ```csharp
-	// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
-	DocumentBuilder builder = new DocumentBuilder();
+// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
+DocumentBuilder builder = new DocumentBuilder();
 
-	//Infoga hyperlänk.
-	builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
-	builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
-            
+//Infoga hyperlänk.
+builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
+builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
 
 

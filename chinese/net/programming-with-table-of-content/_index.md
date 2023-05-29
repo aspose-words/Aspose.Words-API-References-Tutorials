@@ -2,7 +2,7 @@
 title: 使用目录编程
 linktitle: 使用目录编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含 toc 级别的更改样式和更改 toc 制表位
+description: 探索 Aspose.Words for .NET 中的 TOC 编程。通过分步教程和 C# 代码示例了解如何在 Word 文档中创建和操作目录。
 type: docs
 weight: 1420
 url: /zh/net/programming-with-table-of-content/

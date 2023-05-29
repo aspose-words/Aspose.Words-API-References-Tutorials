@@ -2,7 +2,7 @@
 title: البرمجة مع جدول المحتويات
 linktitle: البرمجة مع جدول المحتويات
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تغيير نمط toc وتغيير توقف علامة التبويب toc
+description: استكشف برمجة TOC في Aspose.Words for .NET. تعرف على كيفية إنشاء جداول المحتويات ومعالجتها في مستندات Word الخاصة بك من خلال البرامج التعليمية خطوة بخطوة وأمثلة التعليمات البرمجية C #.
 type: docs
 weight: 1420
 url: /ar/net/programming-with-table-of-content/

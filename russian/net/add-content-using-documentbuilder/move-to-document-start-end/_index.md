@@ -52,18 +52,16 @@ Console.WriteLine("\nThis is the end of the document.");
 ### Пример исходного кода для перемещения в начало/конец документа с использованием Aspose.Words для .NET
 
 ```csharp
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// Переместите курсор в начало документа.
-	builder.MoveToDocumentStart();
-	Console.WriteLine("\nThis is the beginning of the document.");
+// Переместите курсор в начало документа.
+builder.MoveToDocumentStart();
+Console.WriteLine("\nThis is the beginning of the document.");
 
-	// Переместите курсор в конец документа.
-	builder.MoveToDocumentEnd();
-	Console.WriteLine("\nThis is the end of the document.");
-	
+// Переместите курсор в конец документа.
+builder.MoveToDocumentEnd();
+Console.WriteLine("\nThis is the end of the document.");
 ```
 
 ## Заключение

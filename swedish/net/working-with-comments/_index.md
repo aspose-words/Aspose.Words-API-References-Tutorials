@@ -2,7 +2,7 @@
 title: Arbeta med kommentarer
 linktitle: Arbeta med kommentarer
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar visar hur man lägger till kommentarer, förankrar kommentarer, lägger till/tar bort kommentarsvar, extraherar kommentarer och löser kommentarer och svar i Aspose.Words för .NET
+description: Utforska kommentarhanteringsfunktioner i Word-dokument med Aspose.Words för .NET. Lär dig hur du lägger till, tar bort, söker och formaterar kommentarer med hjälp av steg-för-steg-instruktioner.
 type: docs
 weight: 50
 url: /sv/net/working-with-comments/

@@ -2,7 +2,7 @@
 title: Programmation avec signets
 linktitle: Programmation avec signets
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent des signets d'accès, mettent à jour les données des signets, les colonnes de la table des signets, copient le texte marqué d'un signet, ajoutent du texte marqué d'un signet, créent un signet, masquent le signet
+description: Apprenez à manipuler les signets dans les documents Word à l'aide d'Aspose.Words pour .NET. Les didacticiels vous guident à travers les étapes de création, d'accès et de modification des signets dans un document Word.
 type: docs
 weight: 1380
 url: /fr/net/programming-with-bookmarks/

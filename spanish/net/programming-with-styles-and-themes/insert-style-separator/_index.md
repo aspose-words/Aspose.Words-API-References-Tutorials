@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /es/net/programming-with-styles-and-themes/insert-style-separator/
 ---
-En este tutorial, exploraremos el código fuente de C# proporcionado para insertar un separador de estilo en un documento usando Aspose.Words para .NET. Crearemos un nuevo documento, definiremos estilos personalizados e insertaremos un separador de estilos.
+En este tutorial, exploraremos el código fuente de C# proporcionado para insertar un separador de estilo en un documento usando Aspose.Words para .NET. Crearemos un nuevo documento, definiremos estilos personalizados e insertaremos un separador de estilo.
 
 ## Paso 1: Configuración del entorno
 

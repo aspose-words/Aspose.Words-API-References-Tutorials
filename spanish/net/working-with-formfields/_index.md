@@ -2,7 +2,7 @@
 title: Trabajar con campos de formulario
 linktitle: Trabajar con campos de formulario
 second_title: Referencia de API de Aspose.Words para .NET
-description: Tutoriales que contienen cómo insertar campos de formulario, trabajar con las propiedades de los campos de formulario, obtener una colección de campos de formulario y obtener campos de formulario por nombre en un documento de Word usando Aspose.Words para .NET.
+description: Aprenda a trabajar con campos de formulario en documentos de Word usando Aspose.Words para .NET. Tutoriales detallados con ejemplos de código.
 type: docs
 weight: 690
 url: /es/net/working-with-formfields/

@@ -49,7 +49,7 @@ doc.ExpandTableStylesToDirectFormatting();
 ```
 
 ## 第 6 步：显示样式扩展后的单元格格式
-现在我们在展开表格样式后显示单元格的背景色。应从表格样式中应用蓝色背景色。
+现在我们在展开表格样式后显示单元格的背景颜色。应从表格样式中应用蓝色背景色。
 
 ```csharp
 Color cellShadingAfter = firstCell.CellFormat.Shading.BackgroundPatternColor;

@@ -2,7 +2,7 @@
 title: Programming With Ooxmlsaveoptions
 linktitle: Programming With Ooxmlsaveoptions
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain encrypt docx with password, ooxml compliance iso 29500_ 2008_ strict, update last saved time property, keep legacy control chars and set compre
+description: Learn programming with OOXML save options in Aspose.Words for .NET. Comprehensive tutorials and sample code to manipulate and customize saving Word documents in OOXML format.
 type: docs
 weight: 1660
 url: /net/programming-with-ooxmlsaveoptions/

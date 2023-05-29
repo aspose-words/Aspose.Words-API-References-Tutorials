@@ -36,15 +36,13 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 إليك التعليمات البرمجية المصدر الكاملة للحصول على مجموعات المراجعة في مستند باستخدام Aspose.Words for .NET:
 
 ```csharp
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	Document doc = new Document(MyDir + "Revisions.docx");
-
-	foreach(RevisionGroup group in doc.Revisions.Groups)
-	{
-		 Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
-		 Console.WriteLine(group.Text);
-	}
-	
+foreach(RevisionGroup group in doc.Revisions.Groups)
+{
+	 Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
+	 Console.WriteLine(group.Text);
+}
 ```
 
 

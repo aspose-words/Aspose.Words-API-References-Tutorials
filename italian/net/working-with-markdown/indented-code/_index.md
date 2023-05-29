@@ -38,13 +38,12 @@ builder.Writeln("This is an indented code block");
 ### Esempio di codice sorgente per codice indentato con Aspose.Words per .NET
 
 ```csharp
-	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
-	DocumentBuilder builder = new DocumentBuilder();
+// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
+DocumentBuilder builder = new DocumentBuilder();
 
-	Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
-	builder.ParagraphFormat.Style = indentedCode;
-	builder.Writeln("This is an indented code");
-            
+Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
+builder.ParagraphFormat.Style = indentedCode;
+builder.Writeln("This is an indented code");
 ```
 
 Congratulazioni! Ora hai imparato come utilizzare la funzione di codice rientrato con Aspose.Words per .NET.

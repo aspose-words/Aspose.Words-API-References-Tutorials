@@ -60,20 +60,19 @@ foreach (Node child in children)
 
 
 ```csharp
-	Document doc = new Document();
-	Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+Document doc = new Document();
+Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 
-	NodeCollection children = paragraph.ChildNodes;
-	foreach (Node child in children)
+NodeCollection children = paragraph.ChildNodes;
+foreach (Node child in children)
+{
+	// Ein Absatz kann untergeordnete Elemente verschiedener Art enthalten, z. B. Läufe, Formen und andere.
+	if (child.NodeType == NodeType.Run)
 	{
-		// Ein Absatz kann untergeordnete Elemente verschiedener Art enthalten, z. B. Läufe, Formen und andere.
-		if (child.NodeType == NodeType.Run)
-		{
-			Run run = (Run) child;
-			Console.WriteLine(run.Text);
-		}
+		Run run = (Run) child;
+		Console.WriteLine(run.Text);
 	}
-            
+}
 ```
 
 Dies ist ein vollständiges Codebeispiel zum Aufzählen der untergeordneten Knoten eines Absatzes mit Aspose.Words für .NET. Stellen Sie sicher, dass Sie die Referenzen importieren

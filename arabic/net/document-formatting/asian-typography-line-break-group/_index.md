@@ -1,6 +1,6 @@
 ---
-title: مجموعة فواصل أسطر الطباعة الآسيوية
-linktitle: مجموعة فواصل أسطر الطباعة الآسيوية
+title: مجموعة فواصل خطوط الطباعة الآسيوية
+linktitle: مجموعة فواصل خطوط الطباعة الآسيوية
 second_title: Aspose.Words لمراجع .NET API
 description: تعرف على كيفية استخدام مجموعة فواصل أسطر الطباعة الآسيوية مع Aspose.Words for .NET.
 type: docs

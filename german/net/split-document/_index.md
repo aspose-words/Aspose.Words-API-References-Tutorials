@@ -2,7 +2,7 @@
 title: Dokument teilen
 linktitle: Dokument teilen
 second_title: Aspose.Words für .NET API-Referenz
-description: Tutorials enthalten HTML nach Überschriften, HTML nach Abschnitten, nach Abschnitten, Seite für Seite, Zusammenführungsdokumente und nach Seitenbereich
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Word-Dokument effektiv in separate Teile aufteilen. Befolgen Sie Schritt-für-Schritt-Anleitungen und verwenden Sie C#-Codebeispiele, um verschiedene Techniken zur Dokumentenaufteilung zu erlernen.
 type: docs
 weight: 1450
 url: /de/net/split-document/

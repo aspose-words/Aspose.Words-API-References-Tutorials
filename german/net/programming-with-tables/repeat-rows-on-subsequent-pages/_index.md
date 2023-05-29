@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Dokumentenerstellung
 Document doc = new Document();
 
-// Initialisieren Sie den Dokumentgenerator
+// Initialisieren Sie den Dokumentengenerator
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 

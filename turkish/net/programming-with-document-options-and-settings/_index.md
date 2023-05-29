@@ -2,7 +2,7 @@
 title: Belge Seçenekleri ve Ayarlarla Programlama
 linktitle: Belge Seçenekleri ve Ayarlarla Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, ms word için optimize etme, dilbilgisi ve yazım hatalarını gösterme, kullanılmayan stilleri ve listeleri temizleme, yinelenen stili temizleme, görünüm seçeneklerini, belge paketini içerir.
+description: Aspose.Words for .NET ile Word belgelerinin davranışını özelleştirmek ve kontrol etmek için belge seçeneklerini ve ayarlarını nasıl kullanacağınızı öğrenin. Öğreticiler, belge özellikleri gibi farklı özelliklerde size yol gösterir.
 type: docs
 weight: 1510
 url: /tr/net/programming-with-document-options-and-settings/

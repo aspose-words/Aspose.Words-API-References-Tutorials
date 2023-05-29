@@ -58,7 +58,7 @@ srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## 第 6 步：保存最终文档
+## 第 6 步：保存最终文件
 
 最后，使用链接的页眉和页脚保存合并的文档`Save`的方法`Document`班级。
 

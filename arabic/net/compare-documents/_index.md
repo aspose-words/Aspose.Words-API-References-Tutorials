@@ -2,7 +2,7 @@
 title: قارن المستندات
 linktitle: قارن المستندات
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على مقارنة للخيارات المتساوية والمقارنة وهدف المقارنة ودقة المقارنة.
+description: تعرف على كيفية مقارنة مستندات Word وتحديد الاختلافات باستخدام Aspose.Words for .NET. أدلة وأمثلة عملية متضمنة.
 type: docs
 weight: 1480
 url: /ar/net/compare-documents/

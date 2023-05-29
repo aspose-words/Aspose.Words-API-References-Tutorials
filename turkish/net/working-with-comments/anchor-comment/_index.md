@@ -63,41 +63,39 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 Aspose.Words for .NET kullanarak bir yorum yanıtını sabitlemek için eksiksiz kaynak kodu burada:
 
 ```csharp
+// Create an instance of the Document.
+string dataDir = "YOUR DOCUMENT DIRECTORY";        
+Document doc = new Document();
 
-    // Belgenin bir örneğini oluşturun.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";        
-	Document doc = new Document();
+// Create three Run objects.
+// The first two run some text, while the third runs a Comment
 
-    // Üç Çalıştır nesnesi oluşturun.
-    //İlk ikisi biraz metin çalıştırırken, üçüncüsü bir Yorum çalıştırır.
+Paragraph para1 = new Paragraph(doc);
+Run run1 = new Run(doc, "Some ");
+Run run2 = new Run(doc, "text ");
+para1.AppendChild(run1);
+para1.AppendChild(run2);
+doc.FirstSection.Body.AppendChild(para1);
 
-	Paragraph para1 = new Paragraph(doc);
-	Run run1 = new Run(doc, "Some ");
-	Run run2 = new Run(doc, "text ");
-	para1.AppendChild(run1);
-	para1.AppendChild(run2);
-	doc.FirstSection.Body.AppendChild(para1);
+Paragraph para2 = new Paragraph(doc);
+Run run3 = new Run(doc, "is ");
+Run run4 = new Run(doc, "added ");
+para2.AppendChild(run3);
+para2.AppendChild(run4);
+doc.FirstSection.Body.AppendChild(para2);
 
-	Paragraph para2 = new Paragraph(doc);
-	Run run3 = new Run(doc, "is ");
-	Run run4 = new Run(doc, "added ");
-	para2.AppendChild(run3);
-	para2.AppendChild(run4);
-	doc.FirstSection.Body.AppendChild(para2);
+Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
+comment.Paragraphs.Add(new Paragraph(doc));
+comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 
-	Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-	comment.Paragraphs.Add(new Paragraph(doc));
-	comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+// Each of the Run objects has an associated CommentRangeStart and CommentRangeEnd object.
 
-	// Run nesnelerinin her birinin ilişkili bir CommentRangeStart ve CommentRangeEnd nesnesi vardır.
+CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
+CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
 
-	CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
-	CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
+run1.ParentNode.InsertAfter(commentRangeStart, run1);
+run3.ParentNode.InsertAfter(commentRangeEnd, run3);
+commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 
-	run1.ParentNode.InsertAfter(commentRangeStart, run1);
-	run3.ParentNode.InsertAfter(commentRangeEnd, run3);
-	commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
-
-	doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
-            
+doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
 ```

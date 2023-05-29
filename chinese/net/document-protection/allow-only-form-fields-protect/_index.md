@@ -44,7 +44,7 @@ doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
 AllowOnlyFormFields` 并设置密码。
 
-## 第 4 步：仅允许表单域
+## 第 4 步：仅允许表单字段
 
 现在启用了文档保护，我们需要指定只允许编辑表单域。这确保用户只能编辑文档中属于表单域的部分。就是这样：
 

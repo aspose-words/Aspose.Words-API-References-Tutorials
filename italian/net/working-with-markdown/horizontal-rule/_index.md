@@ -29,12 +29,11 @@ builder. InsertHorizontalRule();
 ## Esempio di codice sorgente per la regola orizzontale con Aspose.Words per .NET
 
 ```csharp
-	// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
-	DocumentBuilder builder = new DocumentBuilder();
+// Utilizzare un generatore di documenti per aggiungere contenuto al documento.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Inserisci una riga orizzontale.
-	builder.InsertHorizontalRule();
-            
+// Inserisci una riga orizzontale.
+builder.InsertHorizontalRule();
 ```
 
 Congratulazioni! Ora hai imparato come utilizzare la funzione di regola orizzontale con Aspose.Words per .NET.

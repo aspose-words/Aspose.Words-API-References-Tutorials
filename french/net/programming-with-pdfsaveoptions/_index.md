@@ -2,7 +2,7 @@
 title: Programmation avec Pdfsaveoptions
 linktitle: Programmation avec Pdfsaveoptions
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent le titre du document d'affichage dans la barre de titre de la fenêtre, les avertissements de rendu pdf, le pdf signé numériquement à l'aide du titulaire du certificat, toutes les polices intégrées, le sous-ensemble intégré f
+description: Explorez la programmation avec les options d'enregistrement PDF dans Aspose.Words pour .NET. Apprenez à générer des documents Word au format PDF avec des fonctionnalités avancées grâce à des didacticiels pas à pas et à des exemples de code.
 type: docs
 weight: 1680
 url: /fr/net/programming-with-pdfsaveoptions/

@@ -49,19 +49,19 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 تعتبر الارتباطات التشعبية طريقة فعالة لتحسين تفاعل وفائدة مستندات Word الخاصة بك. يمكن استخدامها للإشارة إلى موارد خارجية أو توفير معلومات إضافية أو إنشاء عناصر تنقل داخل المستند.
 
 ```csharp
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.Write("Please make sure to visit ");
-	builder.Font.Color = Color.Blue;
-	builder.Font.Underline = Underline.Single;
-	
-	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com "، خطأ) ؛
-	
-	builder.Font.ClearFormatting();
-	builder.Write(" for more information.");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
+builder.Write("Please make sure to visit ");
+builder.Font.Color = Color.Blue;
+builder.Font.Underline = Underline.Single;
+
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com "، خطأ) ؛
+
+builder.Font.ClearFormatting();
+builder.Write(" for more information.");
+
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
 تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك المحددة ، بما في ذلك نص الارتباط التشعبي وعنوان URL. قم بتحسينه بالتنسيق أو الوظائف الإضافية حسب الحاجة.

@@ -42,16 +42,14 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBoo
 فيما يلي رمز المصدر الكامل لإدخال إشارة مرجعية باستخدام فئة DocumentBuilder في Aspose.Words for .NET:
 
 ```csharp
-   
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.StartBookmark("FineBookmark");
-	builder.Writeln("This is just a fine bookmark.");
-	builder.EndBookmark("FineBookmark");
+builder.StartBookmark("FineBookmark");
+builder.Writeln("This is just a fine bookmark.");
+builder.EndBookmark("FineBookmark");
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
-	 
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
 ```
 
 ## خاتمة

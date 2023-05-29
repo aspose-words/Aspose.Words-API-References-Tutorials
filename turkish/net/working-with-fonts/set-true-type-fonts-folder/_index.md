@@ -43,18 +43,18 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ### Aspose.Words for .NET kullanarak Set True Type Fonts Klasörü için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Bu ayarın, varsayılan olarak aranmakta olan tüm varsayılan yazı tipi kaynaklarını geçersiz kılacağını unutmayın. Şimdi sadece bu klasörler aranacak
-	// Yazı tiplerini oluştururken veya katıştırırken yazı tipleri. Sistem yazı tipi kaynaklarını korurken fazladan bir yazı tipi kaynağı eklemek için hem FontSettings.GetFontSources hem de
-	// Bunun yerine FontSettings.SetFontSources
-	fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-	// Yazı tipi ayarlarını ayarla
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Bu ayarın, varsayılan olarak aranmakta olan tüm varsayılan yazı tipi kaynaklarını geçersiz kılacağını unutmayın. Şimdi sadece bu klasörler aranacak
+// Yazı tiplerini oluştururken veya katıştırırken yazı tipleri. Sistem yazı tipi kaynaklarını korurken fazladan bir yazı tipi kaynağı eklemek için hem FontSettings.GetFontSources hem de
+// Bunun yerine FontSettings.SetFontSources
+fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
+// Yazı tipi ayarlarını ayarla
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
 ## Çözüm

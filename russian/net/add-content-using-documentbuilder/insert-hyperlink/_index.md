@@ -49,19 +49,19 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 Гиперссылки — это мощный способ повысить интерактивность и полезность ваших документов Word. Их можно использовать для ссылки на внешние ресурсы, предоставления дополнительной информации или создания элементов навигации в документе.
 
 ```csharp
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.Write("Please make sure to visit ");
-	builder.Font.Color = Color.Blue;
-	builder.Font.Underline = Underline.Single;
-	
-	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", ложь);
-	
-	builder.Font.ClearFormatting();
-	builder.Write(" for more information.");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
+builder.Write("Please make sure to visit ");
+builder.Font.Color = Color.Blue;
+builder.Font.Underline = Underline.Single;
+
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", ложь);
+
+builder.Font.ClearFormatting();
+builder.Write(" for more information.");
+
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
 Не забудьте настроить код в соответствии с вашими конкретными требованиями, включая текст гиперссылки и URL-адрес. Улучшите его с дополнительным форматированием или функциональностью по мере необходимости.

@@ -2,7 +2,7 @@
 title: Programmation avec des graphiques
 linktitle: Programmation avec des graphiques
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent le numéro de format de l'étiquette de données, créez un graphique à l'aide de la forme, insérez un graphique à colonnes simple, insérez un graphique à colonnes, insérez un graphique en aires, insérez un graphique à bulles,
+description: Apprenez à créer, personnaliser et manipuler des graphiques dans des documents Word à l'aide d'Aspose.Words pour .NET. Les didacticiels fournissent des explications détaillées et du code source C# pour vous aider à ajouter des graphiques.
 type: docs
 weight: 1540
 url: /fr/net/programming-with-charts/

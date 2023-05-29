@@ -61,13 +61,11 @@ builder.Writeln("This is a bookmark.");
 ### Codice sorgente di esempio per Move To Bookmark End utilizzando Aspose.Words per .NET
 
 ```csharp
+Document doc = new Document(MyDir + "Bookmarks.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Bookmarks.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.MoveToBookmark("MyBookmark1", false, true);
-	builder.Writeln("This is a bookmark.");
-	
+builder.MoveToBookmark("MyBookmark1", false, true);
+builder.Writeln("This is a bookmark.");
 ```
 
 ## Conclusione

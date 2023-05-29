@@ -44,15 +44,15 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ### Aspose.Words for .NET kullanan Set Fonts Klasörleri için örnek kaynak kodu 
 ```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-	{
-		new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true)
-	});
-	Document doc = new Document(dataDir + "Rendering.docx");
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
+FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
+{
+	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true)
+});
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
 ## Çözüm

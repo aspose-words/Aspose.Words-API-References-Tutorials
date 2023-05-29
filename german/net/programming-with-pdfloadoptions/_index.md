@@ -2,7 +2,7 @@
 title: Programmieren mit Pdfloadoptions
 linktitle: Programmieren mit Pdfloadoptions
 second_title: Aspose.Words für .NET API-Referenz
-description: Die Tutorials beinhalten das Laden verschlüsselter PDFs und das Laden des Seitenbereichs von PDFs
+description: Lernen Sie das Programmieren mit PDF-Ladeoptionen in Aspose.Words für .NET. Erfahren Sie anhand von Schritt-für-Schritt-Anleitungen und Beispielcode, wie Sie Word-Dokumente im PDF-Format laden und bearbeiten.
 type: docs
 weight: 1620
 url: /de/net/programming-with-pdfloadoptions/

@@ -45,18 +45,16 @@ Aspose.Words for .NET kullanarak bir Word belgesine HTML içeriği eklemek için
 Bu özellik, orijinal biçimlendirmeyi ve düzeni korurken Word belgelerinize dahil etmek istediğiniz mevcut HTML içeriğiniz olduğunda özellikle kullanışlıdır.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertHtml(
-		"<P align='right'>Paragraph right</P>" +
-		"<b>Implicit paragraph left</b>" +
-		"<div align='center'>Div center</div>" +
-		"<h1 align='left'>Heading 1 left.</h1>");
+builder.InsertHtml(
+	"<P align='right'>Paragraph right</P>" +
+	"<b>Implicit paragraph left</b>" +
+	"<div align='center'>Div center</div>" +
+	"<h1 align='left'>Heading 1 left.</h1>");
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
 Kodu, özel HTML içeriğinize ve gereksinimlerinize göre ayarlamayı unutmayın. HTML'nizin iyi biçimlendirildiğinden ve Aspose.Words for .NET ile uyumlu olduğundan emin olun.

@@ -70,28 +70,26 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.doc
 ### مثال على شفرة المصدر لـ Move To Headers / Footers باستخدام Aspose.Words for .NET
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// حدد أننا نريد اختلاف الرؤوس والتذييلات للصفحات الأولى والزوجية والفردية.
+builder.PageSetup.DifferentFirstPageHeaderFooter = true;
+builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
-	// حدد أننا نريد اختلاف الرؤوس والتذييلات للصفحات الأولى والزوجية والفردية.
-	builder.PageSetup.DifferentFirstPageHeaderFooter = true;
-	builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
+// قم بإنشاء الرؤوس.
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.Write("Header for the first page");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
+builder.Write("Header for even pages");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Header for all other pages");
 
-	// قم بإنشاء الرؤوس.
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.Write("Header for the first page");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
-	builder.Write("Header for even pages");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
-	builder.Write("Header for all other pages");
+// قم بإنشاء صفحتين في المستند.
+builder.MoveToSection(0);
+builder.Writeln("Page1");
+builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("Page2");
 
-	// قم بإنشاء صفحتين في المستند.
-	builder.MoveToSection(0);
-	builder.Writeln("Page1");
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.Writeln("Page2");
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
-
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```

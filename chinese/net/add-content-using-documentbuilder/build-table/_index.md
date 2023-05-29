@@ -22,7 +22,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 第 2 步：启动表格
+## 第 2 步：启动表
 接下来，使用 DocumentBuilder 类的 StartTable 方法开始建表：
 
 ```csharp

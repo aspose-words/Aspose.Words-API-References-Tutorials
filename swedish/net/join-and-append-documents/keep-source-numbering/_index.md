@@ -29,7 +29,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Steg 3: Behåll källnumreringen vid import
+## Steg 3: Behåll källnumreringen när du importerar
 
  För att bevara numreringsformateringen av numrerade stycken från källdokumentet, skapa en instans av`ImportFormatOptions` och ställ in`KeepSourceNumbering` till`true` Använda en`NodeImporter` att importera noder från källdokumentet till måldokumentet, ange`ImportFormatMode.KeepSourceFormatting` och den`importFormatOptions`.
 

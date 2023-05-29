@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/working-with-section/delete-section-content/
 ---
-Bu öğreticide, .NET için Aspose.Words kitaplığını kullanarak bir Word belgesinin belirli bir bölümündeki içeriği nasıl sileceğinizi göstereceğiz. Bir bölümden içeriği kaldırmak, o bölümden belirli bir içeriği sıfırlamak veya kaldırmak istediğinizde yararlı olabilir. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
+Bu öğreticide, .NET için Aspose.Words kitaplığını kullanarak bir Word belgesinin belirli bir bölümündeki içeriği nasıl sileceğinizi göstereceğiz. Bir bölümden içeriği kaldırmak, o bölümden belirli bir içeriği sıfırlamak veya kaldırmak istediğinizde faydalı olabilir. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
 
 ## Önkoşullar
 Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:

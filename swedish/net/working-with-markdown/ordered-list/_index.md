@@ -55,21 +55,20 @@ Slutligen kan vi spara dokumentet i önskat format.
 ### Exempel på källkod för beställd lista med Aspose.Words för .NET
 
 ```csharp
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.ListFormat.ApplyBulletDefault();
-	builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-	builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
+builder.ListFormat.ApplyBulletDefault();
+builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
+builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
 
-	builder.Writeln("Item 1");
-	builder.Writeln("Item 2");
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
 
-	builder.ListFormat.ListIndent();
+builder.ListFormat.ListIndent();
 
-	builder.Writeln("Item 2a");
-	builder.Writeln("Item 2b");
-            
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
 ```
 
 Grattis! Du har nu lärt dig hur du använder den beställda listfunktionen med Aspose.Words för .NET.

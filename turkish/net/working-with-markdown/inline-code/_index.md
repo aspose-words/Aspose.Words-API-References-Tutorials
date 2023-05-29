@@ -45,19 +45,18 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 ### Aspose.Words for .NET ile Satır İçi Kod için örnek kaynak kodu
 
 ```csharp
-	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
-	DocumentBuilder builder = new DocumentBuilder();
+// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
+DocumentBuilder builder = new DocumentBuilder();
 
-	//Geri tik sayısı kaçırıldı, varsayılan olarak bir geri tik kullanılacak.
-	Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
-	builder.Font.Style = inlineCode1BackTicks;
-	builder.Writeln("Text with InlineCode style with 1 backtick");
+//Geri tik sayısı kaçırıldı, varsayılan olarak bir geri tik kullanılacak.
+Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
+builder.Font.Style = inlineCode1BackTicks;
+builder.Writeln("Text with InlineCode style with 1 backtick");
 
-	// 3 backtick olacak.
-	Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
-	builder.Font.Style = inlineCode3BackTicks;
-	builder.Writeln("Text with InlineCode style with 3 backtick");
-            
+// 3 backtick olacak.
+Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
+builder.Font.Style = inlineCode3BackTicks;
+builder.Writeln("Text with InlineCode style with 3 backtick");
 ```
 
 Tebrikler! Artık Aspose.Words for .NET ile satır içi kod işlevselliğini nasıl kullanacağınızı öğrendiniz.

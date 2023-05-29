@@ -62,16 +62,13 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx
 ### 使用 Aspose.Words for .NET 插入文本输入表单字段的示例源代码
 
 ```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
-            
-        
+builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
+
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```

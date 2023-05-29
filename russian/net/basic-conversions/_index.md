@@ -2,7 +2,7 @@
 title: Основные преобразования
 linktitle: Основные преобразования
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат doc в docx, docx в rtf, docx в pdf, docx в byte, docx в epub, docx в mhtml и отправку электронной почты, docx в markdown, docx в txt, txt в docx,
+description: Изучите основные преобразования с помощью Aspose.Words для .NET. Легко конвертируйте документы Word в другие форматы, такие как PDF, HTML, RTF и другие.
 type: docs
 weight: 1600
 url: /ru/net/basic-conversions/

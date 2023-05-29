@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## 第 3 步：访问表格
+## 第 3 步：访问表
 为了允许单元格间距，我们需要访问文档中的表格。这`Table`class 表示 Aspose.Words 中的一个表。
 
 ```csharp

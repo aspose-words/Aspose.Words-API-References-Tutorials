@@ -39,21 +39,20 @@ builder.Writeln("d");
 ### Exempel på källkod för att skapa en tabell med Aspose.Words för .NET
 
 ```csharp
-	// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
-	DocumentBuilder builder = new DocumentBuilder();
+// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Lägg till den första raden.
-	builder.InsertCell();
-	builder.Writeln("a");
-	builder.InsertCell();
-	builder.Writeln("b");
+// Lägg till den första raden.
+builder.InsertCell();
+builder.Writeln("a");
+builder.InsertCell();
+builder.Writeln("b");
 
-	// Lägg till den andra raden.
-	builder.InsertCell();
-	builder.Writeln("c");
-	builder.InsertCell();
-	builder.Writeln("d");
-            
+// Lägg till den andra raden.
+builder.InsertCell();
+builder.Writeln("c");
+builder.InsertCell();
+builder.Writeln("d");
 ```
 
 Grattis! Du har nu lärt dig hur du skapar en tabell med Aspose.Words för .NET.

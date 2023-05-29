@@ -71,7 +71,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 
 	Document doc = new Document();
 	DocumentBuilder builder = new DocumentBuilder(doc);
-	// يمكنك تحديد أنواع وأحجام مختلفة من المخططات.
+	// يمكنك تحديد أنواع وأحجام مخططات مختلفة.
 	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 	Chart chart = shape.Chart;
 	ChartSeriesCollection seriesColl = chart.Series;

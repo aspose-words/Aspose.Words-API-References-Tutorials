@@ -36,15 +36,13 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 Hier ist der vollständige Quellcode zum Abrufen der Revisionsgruppen in einem Dokument mit Aspose.Words für .NET:
 
 ```csharp
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	Document doc = new Document(MyDir + "Revisions.docx");
-
-	foreach(RevisionGroup group in doc.Revisions.Groups)
-	{
-		 Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
-		 Console.WriteLine(group.Text);
-	}
-	
+foreach(RevisionGroup group in doc.Revisions.Groups)
+{
+	 Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
+	 Console.WriteLine(group.Text);
+}
 ```
 
 

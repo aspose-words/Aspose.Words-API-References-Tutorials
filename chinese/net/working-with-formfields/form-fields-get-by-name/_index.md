@@ -21,7 +21,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## 第 2 步：检索表单字段
+## 第 2 步：检索表单域
 
 接下来，访问`FormFields`的财产`Range`文档中的对象以检索所有表单字段：
 

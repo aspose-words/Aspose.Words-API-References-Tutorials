@@ -42,13 +42,12 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
-	DocumentBuilder builder = new DocumentBuilder();
+// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+DocumentBuilder builder = new DocumentBuilder();
 
-	//أدخل ارتباط تشعبي.
-	builder.InsertHyperlink("https://www.aspose.com "،" https://www.aspose.com "، خطأ) ؛
-	builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
-            
+//أدخل ارتباط تشعبي.
+builder.InsertHyperlink("https://www.aspose.com "،" https://www.aspose.com "، خطأ) ؛
+builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
 
 

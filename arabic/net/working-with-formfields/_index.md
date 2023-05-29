@@ -2,7 +2,7 @@
 title: العمل مع FormFields
 linktitle: العمل مع FormFields
 second_title: Aspose.Words لمراجع .NET API
-description: البرامج التعليمية التي تحتوي على كيفية إدراج حقول النموذج ، والعمل مع خصائص حقول النماذج ، والحصول على مجموعة حقول النموذج ، والحصول على حقول النموذج بالاسم في مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية التعامل مع حقول النماذج في مستندات Word باستخدام Aspose.Words for .NET. دروس مفصلة مع أمثلة التعليمات البرمجية.
 type: docs
 weight: 690
 url: /ar/net/working-with-formfields/

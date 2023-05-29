@@ -2,7 +2,7 @@
 title: Программирование с помощью Officemath
 linktitle: Программирование с помощью Officemath
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат математические уравнения
+description: Изучите программирование с формулами Office Math в Aspose.Words для .NET. Пошаговые руководства и примеры кода для создания, редактирования и форматирования математических уравнений в документах Word.
 type: docs
 weight: 1550
 url: /ru/net/programming-with-officemath/

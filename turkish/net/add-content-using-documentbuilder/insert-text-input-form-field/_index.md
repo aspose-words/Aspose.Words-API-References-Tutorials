@@ -62,16 +62,13 @@ Bu kod, belirtilen konuma eklenen metin giriş formu alanıyla birlikte belgeyi 
 ### Aspose.Words for .NET kullanarak Metin Giriş Formu Alanı Ekleme için örnek kaynak kodu
 
 ```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
-            
-        
+builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
+
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```

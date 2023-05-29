@@ -60,7 +60,7 @@ ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = tru
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## 第 6 步：保存最终文档
+## 第 6 步：保存最终文件
 
 最后，使用启用的智能样式行为功能保存合并的文档`Save`的方法`Document`班级。
 

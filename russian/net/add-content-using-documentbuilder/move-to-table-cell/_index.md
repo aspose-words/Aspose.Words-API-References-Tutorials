@@ -8,7 +8,7 @@ weight: 10
 url: /ru/net/add-content-using-documentbuilder/move-to-table-cell/
 ---
 
-В этом примере мы шаг за шагом покажем вам, как использовать функцию «Переместить в ячейку таблицы» Aspose.Words для .NET, используя предоставленный исходный код C#. Эта функция позволяет вам перемещаться и управлять определенными ячейками внутри таблицы в документе Word. Выполните следующие шаги, чтобы интегрировать эту функцию в ваше приложение.
+В этом примере мы пошагово покажем вам, как использовать функцию «Переместить в ячейку таблицы» Aspose.Words для .NET, используя предоставленный исходный код C#. Эта функция позволяет вам перемещаться и управлять определенными ячейками внутри таблицы в документе Word. Выполните следующие шаги, чтобы интегрировать эту функцию в ваше приложение.
 
 ## Шаг 1: Загрузите документ, содержащий таблицу
 
@@ -30,7 +30,7 @@ builder. MoveToCell(0, 2, 3, 0);
 builder.Write("\nCell content added by DocumentBuilder");
 ```
 
- Этот код создает DocumentBuilder из существующего документа, а затем перемещает курсор из DocumentBuilder в указанную ячейку таблицы. Наконец, он добавляет содержимое в эту ячейку с помощью DocumentBuilder'а.`Write()` метод.
+ Этот код создает DocumentBuilder из существующего документа, а затем перемещает курсор из DocumentBuilder в указанную ячейку таблицы. Наконец, он добавляет содержимое в эту ячейку, используя DocumentBuilder.`Write()` метод.
 
 ## Шаг 3: Проверьте результат
 
@@ -52,16 +52,14 @@ Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table
 
 
 ```csharp
+Document doc = new Document(MyDir + "Tables.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Tables.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Переместите построитель в строку 3, ячейку 4 первой таблицы.
+builder.MoveToCell(0, 2, 3, 0);
+builder.Write("\nCell contents added by DocumentBuilder");
+Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
-	// Переместите построитель в строку 3, ячейку 4 первой таблицы.
-	builder.MoveToCell(0, 2, 3, 0);
-	builder.Write("\nCell contents added by DocumentBuilder");
-	Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
-
-	Assert.AreEqual(table.Rows[2].Cells[3], builder.CurrentNode.ParentNode.ParentNode);
-	Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table.Rows[2].Cells[3].GetText().Trim());
-
+Assert.AreEqual(table.Rows[2].Cells[3], builder.CurrentNode.ParentNode.ParentNode);
+Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table.Rows[2].Cells[3].GetText().Trim());
 ```

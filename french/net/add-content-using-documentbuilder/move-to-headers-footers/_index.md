@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
 
-Dans cet exemple, nous allons explorer la fonctionnalité Move To Headers Footers de Aspose.Words pour .NET. Aspose.Words est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programmation. La fonction Déplacer vers les en-têtes/pieds de page nous permet de naviguer vers différents en-têtes et pieds de page dans un document et d'y ajouter du contenu.
+Dans cet exemple, nous allons explorer la fonctionnalité Move To Headers Footers de Aspose.Words pour .NET. Aspose.Words est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programme. La fonction Déplacer vers les en-têtes/pieds de page nous permet de naviguer vers différents en-têtes et pieds de page dans un document et d'y ajouter du contenu.
 
 Passons en revue le code source étape par étape pour comprendre comment utiliser la fonctionnalité Déplacer vers les en-têtes/pieds de page à l'aide de Aspose.Words pour .NET.
 
@@ -70,28 +70,26 @@ Assurez-vous de spécifier le chemin et le format de fichier appropriés (par ex
 ### Exemple de code source pour déplacer vers les en-têtes/pieds de page à l'aide de Aspose.Words pour .NET
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Spécifiez que nous voulons des en-têtes et des pieds de page différents pour les premières pages, paires et impaires.
+builder.PageSetup.DifferentFirstPageHeaderFooter = true;
+builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
-	// Spécifiez que nous voulons des en-têtes et des pieds de page différents pour les premières pages, paires et impaires.
-	builder.PageSetup.DifferentFirstPageHeaderFooter = true;
-	builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
+// Créez les en-têtes.
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.Write("Header for the first page");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
+builder.Write("Header for even pages");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Header for all other pages");
 
-	// Créez les en-têtes.
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.Write("Header for the first page");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
-	builder.Write("Header for even pages");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
-	builder.Write("Header for all other pages");
+// Créez deux pages dans le document.
+builder.MoveToSection(0);
+builder.Writeln("Page1");
+builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("Page2");
 
-	// Créez deux pages dans le document.
-	builder.MoveToSection(0);
-	builder.Writeln("Page1");
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.Writeln("Page2");
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
-
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```

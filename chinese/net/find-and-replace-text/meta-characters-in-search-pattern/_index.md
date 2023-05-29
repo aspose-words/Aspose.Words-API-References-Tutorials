@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/find-and-replace-text/meta-characters-in-search-pattern/
 ---
 
-在本文中，我们将探索上述 C# 源代码，以了解如何在 Aspose.Words for .NET 库中使用 Meta Characters In Search Pattern 功能。此功能允许您使用特殊元字符在 Word 文档中执行高级搜索和替换。
+在本文中，我们将探索上述 C# 源代码，以了解如何在 Aspose.Words for .NET 库中使用 Meta Characters In Search Pattern 函数。此功能允许您使用特殊元字符在 Word 文档中执行高级搜索和替换。
 
 ## 先决条件
 

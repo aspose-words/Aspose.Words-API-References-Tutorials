@@ -42,19 +42,17 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc")
 Aquí está el código fuente completo para la función Insertar documento en combinación de correspondencia de Aspose.Words para .NET:
 
 ```csharp
+// La ruta al directorio de documentos.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
-	// La ruta al directorio de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
+//El documento principal tiene un campo de combinación llamado "Documento_1".
+// Los datos correspondientes para este campo contienen una ruta completa al documento.
+// Eso debe ser insertado en este campo.
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 
-	mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-	//El documento principal tiene un campo de combinación llamado "Documento_1".
-	// Los datos correspondientes para este campo contienen una ruta completa al documento.
-	// Eso debe ser insertado en este campo.
-	mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-
-	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-
+mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
 Con este código podrá insertar un documento en otro documento durante la combinación de correspondencia utilizando Aspose.Words para .NET. El documento resultante se guardará con un nuevo nombre.

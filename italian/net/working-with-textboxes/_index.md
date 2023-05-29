@@ -2,7 +2,7 @@
 title: Lavorare con le caselle di testo
 linktitle: Lavorare con le caselle di testo
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono la creazione di un collegamento, la verifica della sequenza e l'interruzione di un collegamento utilizzando Aspose.Words per .NET.
+description: Scopri come lavorare con le caselle di testo nei documenti di Word utilizzando Aspose.Words per .NET. Esercitazioni dettagliate con codice di esempio per creare, manipolare e formattare in modo efficiente le caselle di testo.
 type: docs
 weight: 1320
 url: /it/net/working-with-textboxes/

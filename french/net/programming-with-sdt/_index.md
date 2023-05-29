@@ -2,7 +2,7 @@
 title: Programmation avec SDT
 linktitle: Programmation avec SDT
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent le contrôle du contenu de type case à cocher, l'état actuel de la case à cocher, la modification des contrôles de contenu, le contrôle du contenu de la zone de liste déroulante, le contrôle du contenu de la zone de texte enrichi,
+description: Apprenez à programmer avec les contrôles de contenu structuré (SDT) dans Aspose.Words pour .NET. Suivez des didacticiels pas à pas et des exemples de code en C# pour manipuler et personnaliser les contrôles de contenu structuré dans vos documents Word.
 type: docs
 weight: 1400
 url: /fr/net/programming-with-sdt/

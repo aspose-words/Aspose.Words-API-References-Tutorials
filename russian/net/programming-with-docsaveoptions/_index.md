@@ -2,7 +2,7 @@
 title: Программирование с помощью Docsaveoptions
 linktitle: Программирование с помощью Docsaveoptions
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат шифрование документа с помощью пароля, не сжимают небольшие метафайлы и не сохраняют маркер изображения.
+description: Узнайте, как настроить параметры сохранения документов Word с помощью Aspose.Words для .NET. Учебники познакомят вас с различными доступными параметрами, такими как формат файла, сжатие, защита паролем.
 type: docs
 weight: 1600
 url: /ru/net/programming-with-docsaveoptions/

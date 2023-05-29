@@ -38,12 +38,12 @@ builder.Writeln("This text will be bold");
 
 
 ```csharp
-	// Используйте конструктор документов, чтобы добавить содержимое в документ.
-	DocumentBuilder builder = new DocumentBuilder();
+// Используйте конструктор документов, чтобы добавить содержимое в документ.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Сделайте текст жирным.
-	builder.Font.Bold = true;
-	builder.Writeln("This text will be Bold");  
+// Сделайте текст жирным.
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");  
 ```
 
 Поздравляем! Теперь вы научились выделять текст жирным шрифтом с помощью Aspose.Words для .NET.

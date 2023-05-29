@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/find-and-replace-text/replace-text-containing-meta-characters/
 ---
 
-在本文中，我们将探索上述 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的替换包含元字符的文本功能。此功能允许您替换文档中包含特定元字符的部分文本。
+在本文中，我们将探索上述 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的替换包含元字符的文本功能。此功能允许您替换文档中包含特定元字符的文本部分。
 
 ## 先决条件
 

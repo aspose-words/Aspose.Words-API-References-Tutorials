@@ -8,7 +8,7 @@ weight: 10
 url: /ru/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
 
-В этом примере мы рассмотрим функцию «Переместить в нижние колонтитулы» в Aspose.Words для .NET. Aspose.Words — это мощная библиотека для работы с документами, которая позволяет разработчикам программно создавать, изменять и преобразовывать документы Word. Функция «Переместить в верхние/нижние колонтитулы» позволяет нам переходить к различным верхним и нижним колонтитулам в документе и добавлять к ним контент.
+В этом примере мы рассмотрим функцию «Переместить в нижние колонтитулы» в Aspose.Words для .NET. Aspose.Words — это мощная библиотека для работы с документами, которая позволяет разработчикам программно создавать, изменять и преобразовывать документы Word. Функция «Переместить в верхние/нижние колонтитулы» позволяет нам переходить к различным верхним и нижним колонтитулам в документе и добавлять к ним содержимое.
 
 Давайте шаг за шагом рассмотрим исходный код, чтобы понять, как использовать функцию «Переместить в верхние/нижние колонтитулы» с помощью Aspose.Words для .NET.
 
@@ -70,28 +70,26 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.doc
 ### Пример исходного кода для перемещения в верхние/нижние колонтитулы с использованием Aspose.Words для .NET
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Укажите, что мы хотим, чтобы верхние и нижние колонтитулы были разными для первой, четной и нечетной страниц.
+builder.PageSetup.DifferentFirstPageHeaderFooter = true;
+builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
-	// Укажите, что мы хотим, чтобы верхние и нижние колонтитулы были разными для первой, четной и нечетной страниц.
-	builder.PageSetup.DifferentFirstPageHeaderFooter = true;
-	builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
+// Создайте заголовки.
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.Write("Header for the first page");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
+builder.Write("Header for even pages");
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Header for all other pages");
 
-	// Создайте заголовки.
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.Write("Header for the first page");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderEven);
-	builder.Write("Header for even pages");
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
-	builder.Write("Header for all other pages");
+// Создайте две страницы в документе.
+builder.MoveToSection(0);
+builder.Writeln("Page1");
+builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("Page2");
 
-	// Создайте две страницы в документе.
-	builder.MoveToSection(0);
-	builder.Writeln("Page1");
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.Writeln("Page2");
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
-
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```

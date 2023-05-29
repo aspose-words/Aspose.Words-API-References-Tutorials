@@ -51,20 +51,18 @@ builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalR
 Ecco il codice sorgente completo per la formattazione di una regola orizzontale utilizzando Aspose.Words per .NET:
 
 ```csharp
+DocumentBuilder builder = new DocumentBuilder();
 
-	DocumentBuilder builder = new DocumentBuilder();
+Shape shape = builder.InsertHorizontalRule();
 
-	Shape shape = builder.InsertHorizontalRule();
-	
-	HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
-	horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
-	horizontalRuleFormat.WidthPercent = 70;
-	horizontalRuleFormat.Height = 3;
-	horizontalRuleFormat.Color = Color.Blue;
-	horizontalRuleFormat.NoShade = true;
+HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
+horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
+horizontalRuleFormat.WidthPercent = 70;
+horizontalRuleFormat.Height = 3;
+horizontalRuleFormat.Color = Color.Blue;
+horizontalRuleFormat.NoShade = true;
 
-	builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
-			
+builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
 ```
 
 Ricorda di adattare il codice in base alle tue esigenze specifiche e di migliorarlo con funzionalità aggiuntive secondo necessità.

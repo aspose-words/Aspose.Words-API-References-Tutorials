@@ -47,16 +47,14 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.
 Aspose.Words for .NET kullanarak açılan kutu form alanı eklemek için eksiksiz kaynak kodu burada:
 
 ```csharp
+string[] items = { "One", "Two", "Three" };
 
-	string[] items = { "One", "Two", "Three" };
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertComboBox("DropDown", items, 0);
 
-	builder.InsertComboBox("DropDown", items, 0);
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
 ```
 
 Kodu özel gereksinimlerinize göre ayarlamayı ve gerektiğinde ek işlevlerle geliştirmeyi unutmayın.

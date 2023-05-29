@@ -55,7 +55,7 @@ builder.ListFormat.RemoveNumbers();
 doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 ```
 
-### 使用 Aspose.Words for .NET 的多级列表格式示例源代码
+### 使用 Aspose.Words for .NET 的多级列表格式化示例源代码
 
 以下是 Aspose.Words for .NET 的多级列表格式化功能的完整源代码：
 

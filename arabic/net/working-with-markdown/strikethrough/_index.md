@@ -39,13 +39,12 @@ builder.Writeln("This text will be StrikeThrough");
 ### مثال على شفرة المصدر لنص يتوسطه خط مع Aspose.Words for .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
-	DocumentBuilder builder = new DocumentBuilder();
+// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص يتوسطه خط.
-	builder.Font.StrikeThrough = true;
-	builder.Writeln("This text will be StrikeThrough");
-            
+// اجعل النص يتوسطه خط.
+builder.Font.StrikeThrough = true;
+builder.Writeln("This text will be StrikeThrough");
 ```
 
 تهنئة ! لقد تعلمت الآن كيفية تطبيق نمط النص الذي يتوسطه خط باستخدام Aspose.Words for .NET.

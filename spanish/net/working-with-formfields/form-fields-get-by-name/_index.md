@@ -29,7 +29,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 FormFieldCollection documentFormFields = doc.Range.FormFields;
 ```
 
-Puede recuperar campos de formulario por índice o por nombre. En este ejemplo, recuperamos un campo de formulario utilizando ambos métodos:
+Puede recuperar campos de formulario por índice o por nombre. En este ejemplo, recuperamos un campo de formulario usando ambos métodos:
 
 ```csharp
 FormField formField1 = documentFormFields[3]; // Recuperando por índice

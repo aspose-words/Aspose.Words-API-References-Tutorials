@@ -2,7 +2,7 @@
 title: Arbeta med sidhuvuden och sidfötter
 linktitle: Arbeta med sidhuvuden och sidfötter
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller hur du skapar sidhuvud och sidfot från föregående avsnitt av Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du arbetar med sidhuvuden och sidfötter i Word-dokument med Aspose.Words för .NET. Kompletta handledningar och praktiska exempel.
 type: docs
 weight: 730
 url: /sv/net/working-with-headers-and-footers/

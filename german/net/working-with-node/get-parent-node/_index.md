@@ -43,14 +43,13 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// Der Abschnitt ist der erste untergeordnete Knoten des Dokuments.
-	Node section = doc.FirstChild;
+// Der Abschnitt ist der erste untergeordnete Knoten des Dokuments.
+Node section = doc.FirstChild;
 
-	// Der übergeordnete Knoten des Abschnitts ist das Dokument.
-	Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
-            
+// Der übergeordnete Knoten des Abschnitts ist das Dokument.
+Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
 Dies ist ein vollständiges Codebeispiel zum Abrufen des übergeordneten Knotens eines bestimmten Knotens mit Aspose.Words für .NET. Stellen Sie sicher, dass Sie die erforderlichen Referenzen importieren und die zuvor beschriebenen Schritte befolgen, um diesen Code in Ihr Projekt zu integrieren.

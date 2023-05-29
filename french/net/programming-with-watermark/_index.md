@@ -2,7 +2,7 @@
 title: Programmation avec filigrane
 linktitle: Programmation avec filigrane
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent ajouter un filigrane de texte avec des options spécifiques
+description: Apprenez à programmer avec des filigranes dans Aspose.Words pour .NET. Apprenez à ajouter des filigranes de texte ou d'image, à personnaliser leur apparence, à les placer sur des pages, etc., grâce à des didacticiels pas à pas et à des exemples de code C#.
 type: docs
 weight: 1570
 url: /fr/net/programming-with-watermark/

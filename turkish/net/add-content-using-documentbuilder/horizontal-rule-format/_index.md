@@ -1,6 +1,6 @@
 ---
-title: Yatay Kural Biçimi
-linktitle: Yatay Kural Biçimi
+title: Yatay Kural Formatı
+linktitle: Yatay Kural Formatı
 second_title: Aspose.Words for .NET API Referansı
 description: Aspose.Words for .NET kullanarak Word belgelerinde yatay kuralları nasıl biçimlendireceğinizi öğrenin. Adım adım rehber.
 type: docs
@@ -51,20 +51,18 @@ builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalR
 Aspose.Words for .NET kullanarak yatay bir kuralı biçimlendirmek için eksiksiz kaynak kodu burada:
 
 ```csharp
+DocumentBuilder builder = new DocumentBuilder();
 
-	DocumentBuilder builder = new DocumentBuilder();
+Shape shape = builder.InsertHorizontalRule();
 
-	Shape shape = builder.InsertHorizontalRule();
-	
-	HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
-	horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
-	horizontalRuleFormat.WidthPercent = 70;
-	horizontalRuleFormat.Height = 3;
-	horizontalRuleFormat.Color = Color.Blue;
-	horizontalRuleFormat.NoShade = true;
+HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
+horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
+horizontalRuleFormat.WidthPercent = 70;
+horizontalRuleFormat.Height = 3;
+horizontalRuleFormat.Color = Color.Blue;
+horizontalRuleFormat.NoShade = true;
 
-	builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
-			
+builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
 ```
 
 Kodu özel gereksinimlerinize göre ayarlamayı ve gerektiğinde ek işlevlerle geliştirmeyi unutmayın.

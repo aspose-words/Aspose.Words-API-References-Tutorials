@@ -2,7 +2,7 @@
 title: Programación con Txtsaveoptions
 linktitle: Programación con Txtsaveoptions
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen agregar marcas bidi, usar el carácter de tabulación por nivel para la sangría de la lista y usar el carácter de espacio por nivel para la sangría de la lista
+description: Aprenda a programar con opciones para guardar archivos de texto en Aspose.Words para .NET. Aprenda a especificar la codificación, dar formato al texto, administrar saltos de línea y más con tutoriales paso a paso y código de muestra en C#.
 type: docs
 weight: 1700
 url: /es/net/programming-with-txtsaveoptions/

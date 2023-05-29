@@ -2,7 +2,7 @@
 title: Trabajar con notas al pie y notas al final
 linktitle: Trabajar con notas al pie y notas al final
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales explican cómo configurar una nota al pie y una nota al final en un documento de Word usando Aspose.Words para .NET
+description: Aprenda a trabajar con notas al pie y notas al final en sus documentos de Word con Aspose.Words para .NET. Tutoriales detallados y ejemplos prácticos.
 type: docs
 weight: 660
 url: /es/net/working-with-footnote-and-endnote/

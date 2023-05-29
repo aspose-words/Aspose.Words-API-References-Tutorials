@@ -65,27 +65,26 @@ Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null
 ### Aspose.Words for .NET ile sahip belgesi için örnek kaynak kodu
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// Herhangi bir türde yeni bir düğüm oluşturmak, yapıcıya iletilen bir belge gerektirir.
-	Paragraph para = new Paragraph(doc);
+// Herhangi bir türde yeni bir düğüm oluşturmak, yapıcıya iletilen bir belge gerektirir.
+Paragraph para = new Paragraph(doc);
 
-	// Yeni paragraf düğümünün henüz bir üst öğesi yok.
-	Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
+// Yeni paragraf düğümünün henüz bir üst öğesi yok.
+Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 
-	// Ancak paragraf düğümü belgesini bilir.
-	Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
+// Ancak paragraf düğümü belgesini bilir.
+Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-	// Bir düğümün her zaman bir belgeye ait olması, erişmemize ve değiştirmemize izin verir.
-	// stiller veya listeler gibi belge genelindeki verilere başvuran özellikler.
-	para.ParagraphFormat.StyleName = "Heading 1";
+// Bir düğümün her zaman bir belgeye ait olması, erişmemize ve değiştirmemize izin verir.
+// stiller veya listeler gibi belge genelindeki verilere başvuran özellikler.
+para.ParagraphFormat.StyleName = "Heading 1";
 
-	// Şimdi paragrafı ilk bölümün ana metnine ekleyin.
-	doc.FirstSection.Body.AppendChild(para);
+// Şimdi paragrafı ilk bölümün ana metnine ekleyin.
+doc.FirstSection.Body.AppendChild(para);
 
-	//Paragraf düğümü artık Gövde düğümünün alt öğesidir.
-	Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
-            
+//Paragraf düğümü artık Gövde düğümünün alt öğesidir.
+Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
 

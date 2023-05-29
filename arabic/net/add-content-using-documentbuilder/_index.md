@@ -2,7 +2,7 @@
 title: أضف محتوى باستخدام Documentbuilder
 linktitle: أضف محتوى باستخدام Documentbuilder
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إنشاء مستند جديد ، وإدراج منشئ المستندات إشارة مرجعية ، وإنشاء جدول ، وإدراج قاعدة أفقية ، وتنسيق قاعدة أفقية ، وإدراج فاصل ، وإدراج نص i
+description: تعرف على كيفية إضافة محتوى إلى مستندات Word الخاصة بك باستخدام DocumentBuilder مع Aspose.Words for .NET. البرامج التعليمية العملية مع أمثلة التعليمات البرمجية التفصيلية.
 type: docs
 weight: 1460
 url: /ar/net/add-content-using-documentbuilder/

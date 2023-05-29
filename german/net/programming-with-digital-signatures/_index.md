@@ -2,7 +2,7 @@
 title: Programmieren mit digitalen Signaturen
 linktitle: Programmieren mit digitalen Signaturen
 second_title: Aspose.Words für .NET API-Referenz
-description: Die Tutorials umfassen das Signieren eines Dokuments, das Signieren eines verschlüsselten Dokuments, das Erstellen und Signieren einer neuen Signaturzeile, das Signieren einer vorhandenen Signaturzeile, das Festlegen der Signaturanbieter-ID,
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET digitale Signaturen in Word-Dokumenten hinzufügen und verwalten. Die Tutorials führen Sie durch die Schritte zum Generieren digitaler Signaturen und zum Hinzufügen dieser zu Ihren Dokumenten.
 type: docs
 weight: 1440
 url: /de/net/programming-with-digital-signatures/

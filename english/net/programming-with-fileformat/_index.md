@@ -2,7 +2,7 @@
 title: Programming With Fileformat
 linktitle: Programming With Fileformat
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain detect file format, detect document signatures and verify encrypted document
+description: Learn how to work with file formats in Aspose.Words for .NET. The tutorials walk you through the various features such as detecting file format, converting between formats.
 type: docs
 weight: 1610
 url: /net/programming-with-fileformat/

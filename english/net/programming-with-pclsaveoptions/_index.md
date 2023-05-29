@@ -2,7 +2,7 @@
 title: Programming With Pclsaveoptions
 linktitle: Programming With Pclsaveoptions
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain rasterize transformed elements
+description: Explore programming with PCL save options in Aspose.Words for .NET. Learn how to manipulate and customize saving Word documents in PCL format with step-by-step tutorials and code examples.
 type: docs
 weight: 1670
 url: /net/programming-with-pclsaveoptions/

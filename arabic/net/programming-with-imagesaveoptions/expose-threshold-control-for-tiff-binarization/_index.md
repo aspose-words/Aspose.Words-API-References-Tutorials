@@ -2,7 +2,7 @@
 title: كشف التحكم في العتبة ل Tiff Binarization
 linktitle: كشف التحكم في العتبة ل Tiff Binarization
 second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية التحكم في حد تنسيق TIFF الثنائي باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل للحصول على صور ذات جودة أفضل.
+description: تعرف على كيفية التحكم في حد تنسيق TIFF الثنائي باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل لصور ذات جودة أفضل.
 type: docs
 weight: 10
 url: /ar/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/

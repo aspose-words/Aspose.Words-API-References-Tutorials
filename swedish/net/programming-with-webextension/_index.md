@@ -2,7 +2,7 @@
 title: Programmering med Webextension
 linktitle: Programmering med Webextension
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller och använder webbtilläggsuppgiftsrutor
+description: Lär dig hur du utvecklar webbtillägg för Word-dokument med Aspose.Words för .NET. Lär dig hur du skapar, ändrar och anpassar webbtillägg, integrerar dem i dina Word-dokument.
 type: docs
 weight: 1530
 url: /sv/net/programming-with-webextension/

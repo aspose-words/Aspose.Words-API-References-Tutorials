@@ -2,7 +2,7 @@
 title: 使用 Pdfsaveoptions 编程
 linktitle: 使用 Pdfsaveoptions 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含在窗口标题栏中显示文档标题、pdf 呈现警告、使用证书持有者对 pdf 进行数字签名、嵌入所有字体、嵌入子集 f
+description: 使用 Aspose.Words for .NET 中的 PDF 保存选项探索编程。通过分步教程和示例代码了解如何使用高级功能将 Word 文档生成为 PDF。
 type: docs
 weight: 1680
 url: /zh/net/programming-with-pdfsaveoptions/

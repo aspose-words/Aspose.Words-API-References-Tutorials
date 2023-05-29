@@ -42,16 +42,14 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBoo
 Вот полный исходный код для вставки закладки с помощью класса DocumentBuilder в Aspose.Words для .NET:
 
 ```csharp
-   
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.StartBookmark("FineBookmark");
-	builder.Writeln("This is just a fine bookmark.");
-	builder.EndBookmark("FineBookmark");
+builder.StartBookmark("FineBookmark");
+builder.Writeln("This is just a fine bookmark.");
+builder.EndBookmark("FineBookmark");
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
-	 
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
 ```
 
 ## Заключение

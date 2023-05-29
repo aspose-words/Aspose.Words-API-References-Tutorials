@@ -2,7 +2,7 @@
 title: Protection des documents
 linktitle: Protection des documents
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent une protection par mot de passe, n'autorisent que la protection des champs de formulaire, suppriment la protection du document, les régions modifiables sans restriction, la section sans restriction, obtiennent la protection
+description: Apprenez à protéger des documents Word avec Aspose.Words pour .NET. Les didacticiels vous guideront à travers les différentes méthodes de protection, telles que le verrouillage des modifications, la protection par mot de passe, la restriction de l'accès aux éléments du document, et bien plus encore.
 type: docs
 weight: 1430
 url: /fr/net/document-protection/

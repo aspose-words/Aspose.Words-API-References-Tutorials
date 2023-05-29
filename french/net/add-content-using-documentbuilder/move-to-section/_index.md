@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/add-content-using-documentbuilder/move-to-section/
 ---
 
-Dans cet exemple, nous vous expliquerons comment utiliser la fonctionnalité Déplacer vers la section de Aspose.Words pour .NET étape par étape en utilisant le code source C# fourni. Cette fonctionnalité vous permet de naviguer et de manipuler différentes sections à l'intérieur d'un document Word. Suivez les étapes ci-dessous pour intégrer cette fonctionnalité dans votre application.
+Dans cet exemple, nous vous expliquerons comment utiliser la fonction Déplacer vers la section de Aspose.Words pour .NET étape par étape en utilisant le code source C# fourni. Cette fonctionnalité vous permet de naviguer et de manipuler différentes sections à l'intérieur d'un document Word. Suivez les étapes ci-dessous pour intégrer cette fonctionnalité dans votre application.
 
 ## Étape 1 : Créer un nouveau document et ajouter une section
 
@@ -71,33 +71,29 @@ Ce code déplace le curseur du DocumentBuilder au troisième paragraphe de la de
 ### Exemple de code source pour Move To Move To Section en utilisant Aspose.Words pour .NET
 
 ```csharp
+Document doc = new Document();
+doc.AppendChild(new Section(doc));
 
-	
-	Document doc = new Document();
-	doc.AppendChild(new Section(doc));
+// Déplacez un DocumentBuilder vers la deuxième section et ajoutez du texte.
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.MoveToSection(1);
+builder.Writeln("Text added to the 2nd section.");
 
-	// Déplacez un DocumentBuilder vers la deuxième section et ajoutez du texte.
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToSection(1);
-	builder.Writeln("Text added to the 2nd section.");
+// Créer un document avec des paragraphes.
+doc = new Document(MyDir + "Paragraphs.docx");
+ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
+Assert.AreEqual(22, paragraphs.Count);
 
-	// Créer un document avec des paragraphes.
-	doc = new Document(MyDir + "Paragraphs.docx");
-	ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-	Assert.AreEqual(22, paragraphs.Count);
+//Lorsque nous créons un DocumentBuilder pour un document, son curseur est au tout début du document par défaut,
+// et tout contenu ajouté par le DocumentBuilder sera simplement ajouté au document.
+builder = new DocumentBuilder(doc);
+Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 
-	//Lorsque nous créons un DocumentBuilder pour un document, son curseur est au tout début du document par défaut,
-	// et tout contenu ajouté par le DocumentBuilder sera simplement ajouté au document.
-	builder = new DocumentBuilder(doc);
-	Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
-
-	// Vous pouvez déplacer le curseur à n'importe quelle position dans un paragraphe.
-	builder.MoveToParagraph(2, 10);
-	Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
-	builder.Writeln("This is a new third paragraph. ");
-	Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
-	
-        
+// Vous pouvez déplacer le curseur à n'importe quelle position dans un paragraphe.
+builder.MoveToParagraph(2, 10);
+Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
+builder.Writeln("This is a new third paragraph. ");
+Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
 C'est tout ! Vous avez maintenant compris comment utiliser la fonctionnalité de déplacement vers la section d'Aspose.Words pour .NET à l'aide du code source fourni. Vous pouvez désormais intégrer cette fonctionnalité dans votre propre application et manipuler dynamiquement les sections et paragraphes de vos documents Word.

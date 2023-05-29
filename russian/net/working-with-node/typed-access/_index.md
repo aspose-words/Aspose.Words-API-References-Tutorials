@@ -59,23 +59,22 @@ foreach(Table table in tables)
 ### Пример исходного кода для типизированного доступа с Aspose.Words для .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	Section section = doc.FirstSection;
-	Body body = section.Body;
-	
-	// Быстрый типизированный доступ ко всем дочерним узлам таблицы, содержащимся в теле.
-	TableCollection tables = body.Tables;
+Section section = doc.FirstSection;
+Body body = section.Body;
 
-	foreach (Table table in tables)
-	{
-		// Быстрый типизированный доступ к первой строке таблицы.
-		table.FirstRow?.Remove();
+// Быстрый типизированный доступ ко всем дочерним узлам таблицы, содержащимся в теле.
+TableCollection tables = body.Tables;
 
-		// Быстрый типизированный доступ к последней строке таблицы.
-		table.LastRow?.Remove();
-	}
-            
+foreach (Table table in tables)
+{
+	// Быстрый типизированный доступ к первой строке таблицы.
+	table.FirstRow?.Remove();
+
+	// Быстрый типизированный доступ к последней строке таблицы.
+	table.LastRow?.Remove();
+}
 ```
 
 Это полный пример кода для типизированного доступа к таблицам с помощью Aspose.Words для .NET. Обязательно импортируйте необходимые ссылки и выполните шаги, описанные ранее, чтобы интегрировать этот код в свой проект.

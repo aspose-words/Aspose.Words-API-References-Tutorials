@@ -2,7 +2,7 @@
 title: البرمجة مع النطاقات
 linktitle: البرمجة مع النطاقات
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على نطاقات تحذف النص وتحصل النطاقات على نص
+description: تعرف على البرمجة ذات النطاقات في Aspose.Words for .NET. تعرف على كيفية معالجة وتنسيق نطاقات محددة من النص في مستندات Word باستخدام البرامج التعليمية خطوة بخطوة وعينات الرموز.
 type: docs
 weight: 1390
 url: /ar/net/programming-with-ranges/

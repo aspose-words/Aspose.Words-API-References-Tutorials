@@ -2,7 +2,7 @@
 title: Buscar y reemplazar texto
 linktitle: Buscar y reemplazar texto
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen reemplazo de búsqueda simple, metacaracteres en el patrón de búsqueda, reemplazo de texto que contiene metacaracteres, ignorar el texto dentro de los campos, ignorar el texto dentro
+description: Aprenda a buscar y reemplazar texto en documentos de Word usando Aspose.Words para .NET. Los tutoriales le muestran cómo realizar búsquedas de texto precisas, incluidas las opciones de búsqueda avanzada.
 type: docs
 weight: 1360
 url: /es/net/find-and-replace-text/
@@ -23,7 +23,7 @@ Ya sea que necesite reemplazar palabras específicas, actualizar plantillas de t
 | [Ignorar texto interior Eliminar revisiones](./ignore-text-inside-delete-revisions/) | Aprenda a usar la función "Ignorar texto interior Eliminar revisiones" de Aspose.Words para .NET. |
 | [Ignorar texto dentro de insertar revisiones](./ignore-text-inside-insert-revisions/) | Aprenda a usar la característica "Ignorar texto dentro de las revisiones de inserción" de Aspose.Words para .NET para manipular las revisiones de inserción en documentos de Word. |
 | [Reemplazar texto en pie de página](./replace-text-in-footer/) | Aprenda a reemplazar texto en el pie de página de documentos de Word usando Aspose.Words para .NET. |
-| [Reemplazar con expresión regular](./replace-with-regex/) | Aprenda a realizar el reemplazo de texto basado en expresiones regulares en un documento de Word con Aspose.Words para .NET. |
+| [Reemplazar con expresiones regulares](./replace-with-regex/) | Aprenda a realizar el reemplazo de texto basado en expresiones regulares en un documento de Word con Aspose.Words para .NET. |
 | [Reconocimiento y sustituciones dentro de patrones de reemplazo](./recognize-and-substitutions-within-replacement-patterns/) | Aprenda a usar patrones de reemplazo con reconocimientos y sustituciones en Aspose.Words para .NET para manipular documentos de Word. |
 | [Reemplazar con cadena](./replace-with-string/) | Aprenda a reemplazar texto con una cadena en un documento de Word con Aspose.Words para .NET. |
 | [Reemplazar texto en la tabla](./replace-text-in-table/) | Aprenda a reemplazar texto en una tabla en un documento de Word usando Aspose.Words para .NET. |

@@ -2,7 +2,7 @@
 title: Программирование с помощью Pclsaveoptions
 linktitle: Программирование с помощью Pclsaveoptions
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат растеризованные преобразованные элементы
+description: Изучите программирование с параметрами сохранения PCL в Aspose.Words для .NET. Узнайте, как управлять сохранением документов Word в формате PCL и настраивать их с помощью пошаговых руководств и примеров кода.
 type: docs
 weight: 1670
 url: /ru/net/programming-with-pclsaveoptions/
@@ -14,4 +14,4 @@ url: /ru/net/programming-with-pclsaveoptions/
  ## Учебники
 | Заголовок | Описание |
 | --- | --- |
-| [Растрировать преобразованные элементы](./rasterize-transformed-elements/) | Узнайте, как отключить растеризацию преобразованных элементов при преобразовании в формат PCL с помощью Aspose.Words для .NET. |
+| [Растеризация преобразованных элементов](./rasterize-transformed-elements/) | Узнайте, как отключить растеризацию преобразованных элементов при преобразовании в формат PCL с помощью Aspose.Words для .NET. |

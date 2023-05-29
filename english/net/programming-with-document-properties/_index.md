@@ -2,7 +2,7 @@
 title: Programming With Document Properties
 linktitle: Programming With Document Properties
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain get variables, enumerate properties, add custom document properties, remove custom document properties, remove personal information, configurin
+description: Learn how to manage Word document properties with Aspose.Words for .NET. The tutorials walk you through the various features such as reading and writing properties, customizing default properties.
 type: docs
 weight: 1520
 url: /net/programming-with-document-properties/

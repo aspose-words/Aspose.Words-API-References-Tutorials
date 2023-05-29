@@ -86,48 +86,46 @@ Hier ist der vollständige Quellcode zum Akzeptieren von Änderungen in einem Do
 
 
 ```csharp
+// Der Pfad zum Dokumentenverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
+Body body = doc.FirstSection.Body;
+Paragraph para = body.FirstParagraph;
 
-	// Der Pfad zum Dokumentenverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	Body body = doc.FirstSection.Body;
-	Paragraph para = body.FirstParagraph;
+// Fügen Sie dem ersten Absatz Text hinzu und fügen Sie dann zwei weitere Absätze hinzu.
+para.AppendChild(new Run(doc, "Paragraph 1. "));
+body.AppendParagraph("Paragraph 2. ");
+body.AppendParagraph("Paragraph 3. ");
 
-	// Fügen Sie dem ersten Absatz Text hinzu und fügen Sie dann zwei weitere Absätze hinzu.
-	para.AppendChild(new Run(doc, "Paragraph 1. "));
-	body.AppendParagraph("Paragraph 2. ");
-	body.AppendParagraph("Paragraph 3. ");
+// Wir haben drei Absätze, von denen keiner als irgendeine Art von Überarbeitung registriert ist
+//Wenn wir beim Verfolgen von Überarbeitungen Inhalte im Dokument hinzufügen/entfernen,
+// sie werden als solche im Dokument angezeigt und können angenommen/abgelehnt werden.
+doc.StartTrackRevisions("John Doe", DateTime.Now);
 
-	// Wir haben drei Absätze, von denen keiner als irgendeine Art von Überarbeitung registriert ist
-	//Wenn wir beim Verfolgen von Überarbeitungen Inhalte im Dokument hinzufügen/entfernen,
-	// sie werden als solche im Dokument angezeigt und können angenommen/abgelehnt werden.
-	doc.StartTrackRevisions("John Doe", DateTime.Now);
+// Bei diesem Absatz handelt es sich um eine Überarbeitung und das entsprechende Flag „IsInsertRevision“ ist gesetzt.
+para = body.AppendParagraph("Paragraph 4. ");
+Assert.True(para.IsInsertRevision);
 
-	// Bei diesem Absatz handelt es sich um eine Überarbeitung und das entsprechende Flag „IsInsertRevision“ ist gesetzt.
-	para = body.AppendParagraph("Paragraph 4. ");
-	Assert.True(para.IsInsertRevision);
+// Rufen Sie die Absatzsammlung des Dokuments ab und entfernen Sie einen Absatz.
+ParagraphCollection paragraphs = body.Paragraphs;
+Assert.AreEqual(4, paragraphs.Count);
+para = paragraphs[2];
+para.Remove();
 
-	// Rufen Sie die Absatzsammlung des Dokuments ab und entfernen Sie einen Absatz.
-	ParagraphCollection paragraphs = body.Paragraphs;
-	Assert.AreEqual(4, paragraphs.Count);
-	para = paragraphs[2];
-	para.Remove();
+// Da wir Revisionen verfolgen, ist der Absatz immer noch im Dokument vorhanden und es ist „IsDeleteRevision“ festgelegt
+// und wird als Revision in Microsoft Word angezeigt, bis wir alle Revisionen akzeptieren oder ablehnen.
+Assert.AreEqual(4, paragraphs.Count);
+Assert.True(para.IsDeleteRevision);
 
-	// Da wir Revisionen verfolgen, ist der Absatz immer noch im Dokument vorhanden und es ist „IsDeleteRevision“ festgelegt
-	// und wird als Revision in Microsoft Word angezeigt, bis wir alle Revisionen akzeptieren oder ablehnen.
-	Assert.AreEqual(4, paragraphs.Count);
-	Assert.True(para.IsDeleteRevision);
+// Der Absatz zum Löschen der Revision wird entfernt, sobald wir die Änderungen akzeptieren.
+doc.AcceptAllRevisions();
+Assert.AreEqual(3, paragraphs.Count);
+Assert.That(para, Is.Empty);
 
-	// Der Absatz zum Löschen der Revision wird entfernt, sobald wir die Änderungen akzeptieren.
-	doc.AcceptAllRevisions();
-	Assert.AreEqual(3, paragraphs.Count);
-	Assert.That(para, Is.Empty);
+// Wenn Sie die Verfolgung von Revisionen stoppen, wird dieser Text als normaler Text angezeigt.
+// Revisionen werden bei einer Änderung des Dokuments nicht gezählt.
+doc.StopTrackRevisions();
 
-	// Wenn Sie die Verfolgung von Revisionen stoppen, wird dieser Text als normaler Text angezeigt.
-	// Revisionen werden bei einer Änderung des Dokuments nicht gezählt.
-	doc.StopTrackRevisions();
-
-	// Speichern Sie das Dokument.
-	doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-            
+// Speichern Sie das Dokument.
+doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```

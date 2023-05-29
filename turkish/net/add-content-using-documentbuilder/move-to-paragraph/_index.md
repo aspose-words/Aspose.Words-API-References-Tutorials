@@ -51,13 +51,11 @@ builder.Writeln("This is the 3rd paragraph.");
 Aşağıda, Aspose.Words for .NET kullanarak Paragrafa Taşı özelliğini uygulamaya yönelik tam örnek kaynak kodu bulunmaktadır:
 
 ```csharp
+Document doc = new Document(MyDir + "Paragraphs.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Paragraphs.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.MoveToParagraph(2, 0);
-	builder.Writeln("This is the 3rd paragraph.");
-	
+builder.MoveToParagraph(2, 0);
+builder.Writeln("This is the 3rd paragraph.");
 ```
 
 Bu kılavuzu takip ederek ve Paragrafa Taşı özelliğini kullanarak, Aspose.Words for .NET kullanarak Word belgeleri içindeki paragrafları programlı bir şekilde değiştirebilirsiniz.

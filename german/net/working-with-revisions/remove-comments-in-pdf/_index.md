@@ -48,14 +48,12 @@ Die Ausgabe kann zur Verbesserung der Lesbarkeit im Markdown formatiert werden. 
 Hier ist der vollständige Quellcode zum Entfernen von Kommentaren in einer PDF-Datei mit Aspose.Words für .NET:
 
 ```csharp
+// Der Pfad zum Dokumentenverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	// Der Pfad zum Dokumentenverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Revisions.docx");
+// Kommentare im PDF ausblenden.
+doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 
-	// Kommentare im PDF ausblenden.
-	doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
-
-	doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
-
+doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 ```

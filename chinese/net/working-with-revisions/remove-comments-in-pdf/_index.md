@@ -21,7 +21,7 @@ Document doc = new Document(MyDir + "Revisions.docx");
 
 ## 第 2 步：隐藏 PDF 中的评论
 
-我们将配置布局选项以在生成 PDF 时隐藏评论。
+我们将配置布局选项以在生成 PDF 时隐藏注释。
 
 ```csharp
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
@@ -48,14 +48,12 @@ doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 以下是使用 Aspose.Words for .NET 删除 PDF 文件中注释的完整源代码：
 
 ```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Revisions.docx");
+//隐藏 PDF 中的注释。
+doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 
-	//隐藏 PDF 中的注释。
-	doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
-
-	doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
-
+doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 ```

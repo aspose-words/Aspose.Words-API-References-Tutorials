@@ -2,7 +2,7 @@
 title: Establecer formato de celda de tabla
 linktitle: Establecer formato de celda de tabla
 second_title: Referencia de API de Aspose.Words para .NET
-description: Guía paso a paso para configurar el formato de las celdas de la tabla con Aspose.Words para .NET.
+description: Guía paso a paso para configurar el formato de celdas de tablas usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-table-styles-and-formatting/set-table-cell-formatting/
@@ -11,7 +11,7 @@ url: /es/net/programming-with-table-styles-and-formatting/set-table-cell-formatt
 En este tutorial, lo guiaremos a través del proceso paso a paso para definir el formato de una celda de tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo ajustar el ancho y los márgenes (rellenos) de una celda en sus tablas de sus documentos de Word usando Aspose.Words para .NET.
 
 ## Paso 1: Definir el directorio de documentos
-Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento de Word editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento de Word editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

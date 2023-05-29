@@ -49,19 +49,19 @@ Här är den fullständiga källkoden för att infoga en hyperlänk med Aspose.W
 Hyperlänkar är ett kraftfullt sätt att förbättra interaktiviteten och användbarheten i dina Word-dokument. De kan användas för att referera till externa resurser, tillhandahålla ytterligare information eller skapa navigeringselement i dokumentet.
 
 ```csharp
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.Write("Please make sure to visit ");
-	builder.Font.Color = Color.Blue;
-	builder.Font.Underline = Underline.Single;
-	
-	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
-	
-	builder.Font.ClearFormatting();
-	builder.Write(" for more information.");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
+builder.Write("Please make sure to visit ");
+builder.Font.Color = Color.Blue;
+builder.Font.Underline = Underline.Single;
+
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
+
+builder.Font.ClearFormatting();
+builder.Write(" for more information.");
+
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
 Kom ihåg att justera koden enligt dina specifika krav, inklusive hyperlänktexten och URL. Förbättra den med ytterligare formatering eller funktionalitet efter behov.

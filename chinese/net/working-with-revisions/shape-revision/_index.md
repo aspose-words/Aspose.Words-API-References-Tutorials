@@ -76,54 +76,52 @@ Assert. False(shapes[1].IsMoveToRevision);
 以下是使用 Aspose.Words for .NET 对文档中的形状进行修改的完整源代码：
 
 ```csharp
+Document doc = new Document();
 
-	Document doc = new Document();
+//插入内联形状而不跟踪修订。
+Assert.False(doc.TrackRevisions);
+Shape shape = new Shape(doc, ShapeType.Cube);
+shape.WrapType = WrapType.Inline;
+shape.Width = 100.0;
+shape.Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-	//插入内联形状而不跟踪修订。
-	Assert.False(doc.TrackRevisions);
-	Shape shape = new Shape(doc, ShapeType.Cube);
-	shape.WrapType = WrapType.Inline;
-	shape.Width = 100.0;
-	shape.Height = 100.0;
-	doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+//开始跟踪修订，然后插入另一个形状。
+doc.StartTrackRevisions("John Doe");
+shape = new Shape(doc, ShapeType.Sun);
+shape.WrapType = WrapType.Inline;
+shape.Width = 100.0;
+shape.Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-	//开始跟踪修订，然后插入另一个形状。
-	doc.StartTrackRevisions("John Doe");
-	shape = new Shape(doc, ShapeType.Sun);
-	shape.WrapType = WrapType.Inline;
-	shape.Width = 100.0;
-	shape.Height = 100.0;
-	doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+//获取文档的形状集合，其中仅包含我们添加的两个形状。
+List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
 
-	//获取文档的形状集合，其中仅包含我们添加的两个形状。
-	List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-	Assert.AreEqual(2, shapes.Count);
+//删除第一个形状。
+shapes[0].Remove();
 
-	//删除第一个形状。
-	shapes[0].Remove();
+//因为我们在跟踪更改时删除了该形状，所以该形状算作删除修订。
+Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
+Assert.True(shapes[0].IsDeleteRevision);
 
-	//因为我们在跟踪更改时删除了该形状，所以该形状算作删除修订。
-	Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-	Assert.True(shapes[0].IsDeleteRevision);
+//我们在跟踪更改时插入了另一个形状，因此该形状将算作插入修订。
+Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
+Assert.True(shapes[1].IsInsertRevision);
 
-	//我们在跟踪更改时插入了另一个形状，因此该形状将算作插入修订。
-	Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-	Assert.True(shapes[1].IsInsertRevision);
+//该文档有一个形状被移动，但形状移动修订将有该形状的两个实例。
+//一个将是其到达目的地的形状，另一个将是其原始位置的形状。
+doc = new Document(MyDir + "Revision shape.docx");
 
-	//该文档有一个形状被移动，但形状移动修订将有该形状的两个实例。
-	//一个将是其到达目的地的形状，另一个将是其原始位置的形状。
-	doc = new Document(MyDir + "Revision shape.docx");
-	
-	shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-	Assert.AreEqual(2, shapes.Count);
+shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
 
-	//这是修改的动作，也是到达目的地的形状。
-	Assert.False(shapes[0].IsMoveFromRevision);
-	Assert.True(shapes[0].IsMoveToRevision);
+//这是修改的动作，也是到达目的地的形状。
+Assert.False(shapes[0].IsMoveFromRevision);
+Assert.True(shapes[0].IsMoveToRevision);
 
-	//这是修订版的移动，即原始位置的形状。
-	Assert.True(shapes[1].IsMoveFromRevision);
-	Assert.False(shapes[1].IsMoveToRevision);
-            
+//这是修订版的移动，即原始位置的形状。
+Assert.True(shapes[1].IsMoveFromRevision);
+Assert.False(shapes[1].IsMoveToRevision);
 ```
 

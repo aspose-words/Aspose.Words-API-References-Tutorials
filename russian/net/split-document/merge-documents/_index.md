@@ -55,33 +55,31 @@ mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 Вот полный исходный код функции слияния документов Aspose.Words для .NET:
 
 ```csharp
+// Путь к каталогу документов.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Найдите документы, используя для слияния.
+FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
+	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
+string sourceDocumentPath =
+	Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
 
-	// Путь к каталогу документов.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// Найдите документы, используя для слияния.
-	FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-		.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-	string sourceDocumentPath =
-		Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
+// Откройте первую часть получившегося документа.
+Document sourceDoc = new Document(sourceDocumentPath);
 
-	// Откройте первую часть получившегося документа.
-	Document sourceDoc = new Document(sourceDocumentPath);
+// Создайте новый результирующий документ.
+Document mergedDoc = new Document();
+DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-	// Создайте новый результирующий документ.
-	Document mergedDoc = new Document();
-	DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
+// Объединяйте части документа одну за другой.
+foreach (FileSystemInfo documentPath in documentPaths)
+{
+	if (documentPath.FullName == sourceDocumentPath)
+		continue;
 
-	// Объединяйте части документа одну за другой.
-	foreach (FileSystemInfo documentPath in documentPaths)
-	{
-		if (documentPath.FullName == sourceDocumentPath)
-			continue;
+	mergedDocBuilder.MoveToDocumentEnd();
+	mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
+	sourceDoc = new Document(documentPath.FullName);
+}
 
-		mergedDocBuilder.MoveToDocumentEnd();
-		mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-		sourceDoc = new Document(documentPath.FullName);
-	}
-
-	mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
-
+mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```

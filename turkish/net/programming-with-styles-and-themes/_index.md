@@ -2,7 +2,7 @@
 title: Stiller ve Temalarla Programlama
 linktitle: Stiller ve Temalarla Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, erişim stilleri, kopyalama stilleri, tema özelliklerini alma, tema özelliklerini ayarlama ve stil ayırıcı ekleme içerir
+description: Aspose.Words for .NET'te programlama stilleri ve temaları hakkında bilgi edinin. Adım adım öğreticiler ve C# kod örnekleri ile Word belgelerinizdeki stilleri ve temaları nasıl oluşturacağınızı, uygulayacağınızı ve özelleştireceğinizi öğrenin.
 type: docs
 weight: 1410
 url: /tr/net/programming-with-styles-and-themes/

@@ -43,21 +43,19 @@ foreach (Revision revision in doc.Revisions)
 以下是使用 Aspose.Words for .NET 获取文档中一组修订的详细信息的完整源代码：
 
 ```csharp
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	Document doc = new Document(MyDir + "Revisions.docx");
+foreach (Revision revision in doc.Revisions)
+{
+	 string groupText = revision.Group != null
+		 ? "Revision group text: " + revision.Group.Text
+		 : "The revision does not belong to any group";
 
-	foreach (Revision revision in doc.Revisions)
-	{
-		 string groupText = revision.Group != null
-			 ? "Revision group text: " + revision.Group.Text
-			 : "The revision does not belong to any group";
-
-		 Console.WriteLine("Type: " + revision.RevisionType);
-		 Console.WriteLine("Author: " + revision.Author);
-		 Console.WriteLine("Date: " + revision.DateTime);
-		 Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-		 Console.WriteLine(groupText);
-	}
-	
+	 Console.WriteLine("Type: " + revision.RevisionType);
+	 Console.WriteLine("Author: " + revision.Author);
+	 Console.WriteLine("Date: " + revision.DateTime);
+	 Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
+	 Console.WriteLine(groupText);
+}
 ```
 

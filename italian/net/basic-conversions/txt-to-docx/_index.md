@@ -14,7 +14,7 @@ Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato
 
 ## Passaggio 1: inizializzazione dell'oggetto documento
 
- Per prima cosa, inizializza il file`Document` oggetto fornendo il percorso del file di testo semplice:
+ Per prima cosa, inizializza il file`Document` oggetto fornendo il percorso del file di testo normale:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

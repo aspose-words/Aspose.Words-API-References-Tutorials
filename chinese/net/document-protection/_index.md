@@ -2,7 +2,7 @@
 title: 文档保护
 linktitle: 文档保护
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含密码保护，只允许表单字段保护，删除文档保护，不受限制的可编辑区域，不受限制的部分，得到保护
+description: 了解如何使用 Aspose.Words for .NET 保护 Word 文档。这些教程将指导您完成各种保护方法，例如锁定更改、密码保护、限制对文档元素的访问等等。
 type: docs
 weight: 1430
 url: /zh/net/document-protection/

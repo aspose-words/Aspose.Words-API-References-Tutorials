@@ -40,17 +40,16 @@ builder.Writeln("This is an H1 tag");
 
 
 ```csharp
-	// Используйте конструктор документов, чтобы добавить содержимое в документ.
-	DocumentBuilder builder = new DocumentBuilder();
+// Используйте конструктор документов, чтобы добавить содержимое в документ.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// По умолчанию стили заголовков в Word могут иметь форматирование жирным шрифтом и курсивом.
-	//Если мы не хотим, чтобы нас подчеркивали, явно установите для этих свойств значение false.
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+// По умолчанию стили заголовков в Word могут иметь форматирование жирным шрифтом и курсивом.
+//Если мы не хотим, чтобы нас подчеркивали, явно установите для этих свойств значение false.
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	builder.ParagraphFormat.StyleName = "Heading 1";
-	builder.Writeln("This is an H1 tag");
-            
+builder.ParagraphFormat.StyleName = "Heading 1";
+builder.Writeln("This is an H1 tag");
 ```
 
 Поздравляем! Теперь вы узнали, как использовать функцию заголовков с Aspose.Words для .NET.

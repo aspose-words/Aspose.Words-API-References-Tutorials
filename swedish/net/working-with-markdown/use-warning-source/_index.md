@@ -44,21 +44,20 @@ if (warningInfo.Source == WarningSource.Markdown)
 ### Exempel på källkod för användning av varningskälla med Aspose.Words för .NET
 
 ```csharp
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Emphases markdown warning.docx");
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Emphases markdown warning.docx");
 
-	WarningInfoCollection warnings = new WarningInfoCollection();
-	doc.WarningCallback = warnings;
+WarningInfoCollection warnings = new WarningInfoCollection();
+doc.WarningCallback = warnings;
 
-	doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
+doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
 
-	foreach (WarningInfo warningInfo in warnings)
-	{
-		if (warningInfo.Source == WarningSource.Markdown)
-			Console.WriteLine(warningInfo.Description);
-	}
-            
+foreach (WarningInfo warningInfo in warnings)
+{
+	if (warningInfo.Source == WarningSource.Markdown)
+		Console.WriteLine(warningInfo.Description);
+}
 ```
 
 Grattis! Du har nu lärt dig hur du använder varningskällan med Aspose.Words för .NET.

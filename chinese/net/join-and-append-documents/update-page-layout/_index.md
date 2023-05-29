@@ -58,7 +58,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 dstDoc.UpdatePageLayout();
 ```
 
-## 第 6 步：保存最终文档
+## 第 6 步：保存最终文件
 
 最后，使用启用的更新页面布局功能保存合并的文档`Save`的方法`Document`班级。
 

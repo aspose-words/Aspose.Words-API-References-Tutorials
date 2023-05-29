@@ -2,7 +2,7 @@
 title: Arbeta med avstavning
 linktitle: Arbeta med avstavning
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller avstavning av Words of Languages, ladda avstavningsordbok för språk och avstavningsuppringning med Aspose.Words för .NET.
+description: Lär dig hur du hanterar ordavstavning i Word-dokument med Aspose.Words för .NET. Kompletta handledningar och praktiska exempel ingår.
 type: docs
 weight: 750
 url: /sv/net/working-with-hyphenation/

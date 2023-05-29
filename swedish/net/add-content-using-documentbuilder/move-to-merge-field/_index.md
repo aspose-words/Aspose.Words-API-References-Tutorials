@@ -58,25 +58,23 @@ builder.Write(" Text immediately after the field.");
 ### Exempel på källkod för Move To Merge Field med Aspose.Words för .NET
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Infoga ett fält med DocumentBuilder och lägg till en serie text efter det.
+Field field = builder.InsertField("MERGEFIELD field");
+builder.Write(" Text after the field.");
 
-	// Infoga ett fält med DocumentBuilder och lägg till en serie text efter det.
-	Field field = builder.InsertField("MERGEFIELD field");
-	builder.Write(" Text after the field.");
+// Byggarens markör är för närvarande i slutet av dokumentet.
+Assert.Null(builder.CurrentNode);
+// Vi kan flytta byggaren till ett fält som detta, placera markören på omedelbart efter fältet.
+builder.MoveToField(field, true);
 
-	// Byggarens markör är för närvarande i slutet av dokumentet.
-	Assert.Null(builder.CurrentNode);
-	// Vi kan flytta byggaren till ett fält som detta, placera markören på omedelbart efter fältet.
-	builder.MoveToField(field, true);
-
-	// Observera att markören är på en plats förbi FieldEnd-noden i fältet, vilket betyder att vi faktiskt inte är inne i fältet.
-	// Om vi vill flytta DocumentBuilder till inuti ett fält,
-	// vi måste flytta den till ett fälts FieldStart- eller FieldSeparator-nod med metoden DocumentBuilder.MoveTo().
-	Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
-	builder.Write(" Text immediately after the field.");
-	
+// Observera att markören är på en plats förbi FieldEnd-noden i fältet, vilket betyder att vi faktiskt inte är inne i fältet.
+// Om vi vill flytta DocumentBuilder till inuti ett fält,
+// vi måste flytta den till ett fälts FieldStart- eller FieldSeparator-nod med metoden DocumentBuilder.MoveTo().
+Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
+builder.Write(" Text immediately after the field.");
 ```
 
 ## Slutsats

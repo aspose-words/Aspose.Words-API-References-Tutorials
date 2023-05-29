@@ -2,7 +2,7 @@
 title: البرمجة مع Officemath
 linktitle: البرمجة مع Officemath
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على معادلات رياضية
+description: استكشف البرمجة باستخدام صيغ Office Math في Aspose.Words for .NET. البرامج التعليمية خطوة بخطوة ونموذج التعليمات البرمجية لإنشاء المعادلات الرياضية وتحريرها وتنسيقها في مستندات Word.
 type: docs
 weight: 1550
 url: /ar/net/programming-with-officemath/

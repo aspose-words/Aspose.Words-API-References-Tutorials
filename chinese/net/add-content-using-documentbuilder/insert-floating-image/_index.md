@@ -48,21 +48,19 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx
 浮动图像适用于各种场景，例如添加徽标、插图或可以独立于文档文本定位的装饰元素。
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertImage(ImagesDir + "Transparent background logo.png",
+	RelativeHorizontalPosition.Margin,
+	100,
+	RelativeVerticalPosition.Margin,
+	100,
+	200,
+	100,
+	WrapType.Square);
 
-	builder.InsertImage(ImagesDir + "Transparent background logo.png",
-		RelativeHorizontalPosition.Margin,
-		100,
-		RelativeVerticalPosition.Margin,
-		100,
-		200,
-		100,
-		WrapType.Square);
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
 ```
 
 请记住根据您的具体要求调整代码，包括图像文件路径和所需的定位和环绕选项。

@@ -42,16 +42,14 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBoo
 以下是使用 Aspose.Words for .NET 中的 DocumentBuilder 类插入书签的完整源代码：
 
 ```csharp
-   
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.StartBookmark("FineBookmark");
-	builder.Writeln("This is just a fine bookmark.");
-	builder.EndBookmark("FineBookmark");
+builder.StartBookmark("FineBookmark");
+builder.Writeln("This is just a fine bookmark.");
+builder.EndBookmark("FineBookmark");
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
-	 
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
 ```
 
 ## 结论

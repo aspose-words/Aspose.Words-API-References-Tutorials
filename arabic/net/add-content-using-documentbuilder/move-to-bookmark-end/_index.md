@@ -61,13 +61,11 @@ builder.Writeln("This is a bookmark.");
 ### مثال على شفرة المصدر لـ Move To Bookmark End باستخدام Aspose.Words for .NET
 
 ```csharp
+Document doc = new Document(MyDir + "Bookmarks.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Bookmarks.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.MoveToBookmark("MyBookmark1", false, true);
-	builder.Writeln("This is a bookmark.");
-	
+builder.MoveToBookmark("MyBookmark1", false, true);
+builder.Writeln("This is a bookmark.");
 ```
 
 ## خاتمة

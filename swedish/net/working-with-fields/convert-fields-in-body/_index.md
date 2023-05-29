@@ -57,3 +57,5 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
 // Skicka lämpliga parametrar för att konvertera sidfälten till vanlig text i brödtexten i det första avsnittet.
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
+doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
+```

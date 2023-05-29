@@ -2,7 +2,7 @@
 title: Arbeta med FormFields
 linktitle: Arbeta med FormFields
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar som innehåller hur man infogar formulärfiler, arbetar med formulärfilers egenskaper, hämtar formulärfältsinsamling och får formulärfält efter namn i Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du arbetar med formulärfält i Word-dokument med Aspose.Words för .NET. Detaljerade tutorials med kodexempel.
 type: docs
 weight: 690
 url: /sv/net/working-with-formfields/

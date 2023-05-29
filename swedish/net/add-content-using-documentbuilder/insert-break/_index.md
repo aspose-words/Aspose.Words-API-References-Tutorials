@@ -46,20 +46,18 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 Här är den fullständiga källkoden för att infoga sidbrytningar med Aspose.Words för .NET:
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("This is page 1.");
+builder.InsertBreak(BreakType.PageBreak);
 
-	builder.Writeln("This is page 1.");
-	builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("This is page 2.");
+builder.InsertBreak(BreakType.PageBreak);
 
-	builder.Writeln("This is page 2.");
-	builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("This is page 3.");
 
-	builder.Writeln("This is page 3.");
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
-			
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
 Kom ihåg att justera koden efter dina specifika krav och utöka den med ytterligare funktionalitet efter behov.

@@ -36,7 +36,7 @@ Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Passaggio 3: aggiungere serie di dati al grafico
+## Passaggio 3: aggiungi serie di dati al grafico
 
 Ora, aggiungiamo una serie di dati al grafico. In questo esempio, aggiungeremo tre categorie e i valori corrispondenti.
 

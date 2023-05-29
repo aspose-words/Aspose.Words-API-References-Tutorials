@@ -60,20 +60,19 @@ foreach (Node child in children)
 
 
 ```csharp
-	Document doc = new Document();
-	Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+Document doc = new Document();
+Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 
-	NodeCollection children = paragraph.ChildNodes;
-	foreach (Node child in children)
+NodeCollection children = paragraph.ChildNodes;
+foreach (Node child in children)
+{
+	// قد تحتوي الفقرة على أطفال من أنواع مختلفة مثل الأشواط والأشكال وغيرها.
+	if (child.NodeType == NodeType.Run)
 	{
-		// قد تحتوي الفقرة على أطفال من أنواع مختلفة مثل الأشواط والأشكال وغيرها.
-		if (child.NodeType == NodeType.Run)
-		{
-			Run run = (Run) child;
-			Console.WriteLine(run.Text);
-		}
+		Run run = (Run) child;
+		Console.WriteLine(run.Text);
 	}
-            
+}
 ```
 
 هذا مثال رمز كامل لتعداد العقد الفرعية للفقرة باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع

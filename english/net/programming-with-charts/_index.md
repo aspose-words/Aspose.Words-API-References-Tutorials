@@ -2,7 +2,7 @@
 title: Programming With Charts
 linktitle: Programming With Charts
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain format number of data label, create chart using shape, insert simple column chart, insert column chart, insert area chart, insert bubble chart,
+description: Learn how to create, customize, and manipulate graphics in Word documents using Aspose.Words for .NET. The tutorials provide step-by-step explanations and C# source code to help you add charts.
 type: docs
 weight: 1540
 url: /net/programming-with-charts/

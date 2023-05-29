@@ -2,7 +2,7 @@
 title: Programmering med Odtsave-alternativ
 linktitle: Programmering med Odtsave-alternativ
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller måttenhet
+description: Lär dig programmering med ODT-sparalternativ i Aspose.Words för .NET. Detaljerade tutorials med exempelkod för att spara Word-dokument i ODT-format.
 type: docs
 weight: 1650
 url: /sv/net/programming-with-odtsaveoptions/

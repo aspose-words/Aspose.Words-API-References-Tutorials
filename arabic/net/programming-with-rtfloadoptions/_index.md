@@ -2,7 +2,7 @@
 title: البرمجة مع خيارات Rtfload
 linktitle: البرمجة مع خيارات Rtfload
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على التعرف على النص 8tf
+description: تعلم البرمجة باستخدام خيارات تحميل RTF في Aspose.Words for .NET. تعرف على كيفية تحميل مستندات RTF ومعالجتها باستخدام البرامج التعليمية خطوة بخطوة وعينة كود C #.
 type: docs
 weight: 1630
 url: /ar/net/programming-with-rtfloadoptions/

@@ -42,19 +42,17 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc")
 Voici le code source complet de la fonction Insérer un document dans le publipostage d'Aspose.Words pour .NET :
 
 ```csharp
+// Chemin d'accès au répertoire des documents.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
-	// Chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
+//Le document principal contient un champ de fusion appelé "Document_1".
+// Les données correspondantes pour ce champ contiennent un chemin complet vers le document.
+// Cela devrait être inséré dans ce champ.
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 
-	mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-	//Le document principal contient un champ de fusion appelé "Document_1".
-	// Les données correspondantes pour ce champ contiennent un chemin complet vers le document.
-	// Cela devrait être inséré dans ce champ.
-	mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-
-	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-
+mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
 Avec ce code, vous pourrez insérer un document dans un autre document lors du publipostage en utilisant Aspose.Words pour .NET. Le document résultant sera enregistré sous un nouveau nom

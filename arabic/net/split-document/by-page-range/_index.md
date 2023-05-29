@@ -51,16 +51,13 @@ extractedPages.Save(dataDir + "Document_Extraits.ParRangeDePages.docx");
 ### مثال على شفرة المصدر لـ By Page Range باستخدام Aspose.Words for .NET
 
 ```csharp
+// المسار إلى دليل المستندات.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Big document.docx");
 
-            // المسار إلى دليل المستندات.
-			string dataDir = "YOUR DOCUMENT DIRECTORY";
-            Document doc = new Document(MyDir + "Big document.docx");
-            
-            // احصل على جزء من الوثيقة.
-            Document extractedPages = doc.ExtractPages(3, 6);
-            extractedPages.Save(dataDir + "SplitDocument.ByPageRange.docx");
-            
-        
+// احصل على جزء من الوثيقة.
+Document extractedPages = doc.ExtractPages(3, 6);
+extractedPages.Save(dataDir + "SplitDocument.ByPageRange.docx");
 ```
 
 ## خاتمة

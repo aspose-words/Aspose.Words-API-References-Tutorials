@@ -61,16 +61,14 @@ builder.Writeln("This is a bookmark.");
 ### Código fuente de ejemplo para Move To Bookmark End usando Aspose.Words para .NET
 
 ```csharp
+Document doc = new Document(MyDir + "Bookmarks.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Bookmarks.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.MoveToBookmark("MyBookmark1", false, true);
-	builder.Writeln("This is a bookmark.");
-	
+builder.MoveToBookmark("MyBookmark1", false, true);
+builder.Writeln("This is a bookmark.");
 ```
 
 ## Conclusión
 
-exploramos la función Mover al final del marcador de Aspose.Words para .NET. Aprendimos cómo navegar hasta el final de un marcador y agregar contenido mediante programación usando el código fuente proporcionado. Esta característica brinda flexibilidad en la manipulación de documentos de Word utilizando Aspose.Words para .NET.
+exploramos la función Mover al final del marcador de Aspose.Words para .NET. Aprendimos cómo navegar hasta el final de un marcador y agregar contenido mediante programación usando el código fuente provisto. Esta característica brinda flexibilidad en la manipulación de documentos de Word usando Aspose.Words para .NET.
 

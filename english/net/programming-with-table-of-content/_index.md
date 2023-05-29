@@ -2,7 +2,7 @@
 title: Programming With Table Of Content
 linktitle: Programming With Table Of Content
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain change style of toc level and change toc tab stops
+description: Explore TOC programming in Aspose.Words for .NET. Learn how to create and manipulate tables of contents in your Word documents with step-by-step tutorials and C# code examples.
 type: docs
 weight: 1420
 url: /net/programming-with-table-of-content/

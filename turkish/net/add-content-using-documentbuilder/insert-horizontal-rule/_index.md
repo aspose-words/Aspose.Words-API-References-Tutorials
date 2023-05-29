@@ -42,15 +42,13 @@ Aspose.Words for .NET kullanarak yatay bir kural eklemek için eksiksiz kaynak k
 Yatay kurallar, bölümleri bölmek, görsel aralar oluşturmak veya önemli bilgileri vurgulamak gibi çeşitli senaryolar için kullanışlıdır.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("Insert a horizontal rule shape into the document.");
+builder.InsertHorizontalRule();
 
-	builder.Writeln("Insert a horizontal rule shape into the document.");
-	builder.InsertHorizontalRule();
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
 Kodu özel gereksinimlerinize göre ayarlamayı ve gerektiğinde ek işlevlerle geliştirmeyi unutmayın.

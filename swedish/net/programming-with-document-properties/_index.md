@@ -2,7 +2,7 @@
 title: Programmering med dokumentegenskaper
 linktitle: Programmering med dokumentegenskaper
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller hämta variabler, räkna upp egenskaper, lägg till anpassade dokumentegenskaper, ta bort anpassade dokumentegenskaper, ta bort personlig information, konfigurera
+description: Lär dig hur du hanterar Word-dokumentegenskaper med Aspose.Words för .NET. Handledningarna leder dig genom de olika funktionerna som läs- och skrivegenskaper, anpassning av standardegenskaper.
 type: docs
 weight: 1520
 url: /sv/net/programming-with-document-properties/

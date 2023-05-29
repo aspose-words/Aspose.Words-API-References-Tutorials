@@ -51,26 +51,24 @@ foreach (Revision revision in doc.Revisions)
 Här är den fullständiga källkoden för att komma åt den reviderade versionen av ett dokument med Aspose.Words för .NET:
 
 ```csharp
+Document doc = new Document(MyDir + "Revisions.docx");
+doc.UpdateListLabels();
 
-	Document doc = new Document(MyDir + "Revisions.docx");
-	doc.UpdateListLabels();
+// Byt till den reviderade versionen av dokumentet.
+doc.RevisionsView = RevisionsView.Final;
 
-	// Byt till den reviderade versionen av dokumentet.
-	doc.RevisionsView = RevisionsView.Final;
-
-	foreach (Revision revision in doc.Revisions)
-	{
-		 if (revision.ParentNode.NodeType == NodeType.Paragraph)
+foreach (Revision revision in doc.Revisions)
+{
+	 if (revision.ParentNode.NodeType == NodeType.Paragraph)
+	 {
+		 Paragraph paragraph = (Paragraph)revision.ParentNode;
+		 if (paragraph.IsListItem)
 		 {
-			 Paragraph paragraph = (Paragraph)revision.ParentNode;
-			 if (paragraph.IsListItem)
-			 {
-				 Console.WriteLine(paragraph.ListLabel.LabelString);
-				 Console.WriteLine(paragraph.ListFormat.ListLevel);
-			 }
+			 Console.WriteLine(paragraph.ListLabel.LabelString);
+			 Console.WriteLine(paragraph.ListFormat.ListLevel);
 		 }
-	}
-
+	 }
+}
 ```
 
 

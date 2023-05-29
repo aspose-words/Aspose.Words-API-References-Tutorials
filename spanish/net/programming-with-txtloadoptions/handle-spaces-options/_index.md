@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-txtloadoptions/handle-spaces-options/
 ---
 
-En este tutorial, vamos a explorar el código fuente de C# proporcionado para la funcionalidad de "Gestión de espacios con opciones de carga de TXT" con Aspose.Words para .NET. Esta característica le permite especificar el comportamiento de manejo de espacios en blanco al cargar un documento TXT.
+En este tutorial, vamos a explorar el código fuente de C# provisto para la funcionalidad de "Gestión de espacios con opciones de carga de TXT" con Aspose.Words para .NET. Esta característica le permite especificar el comportamiento de manejo de espacios en blanco al cargar un documento TXT.
 
 ## Paso 1: Configuración del entorno
 
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx")
 
 En este tutorial, exploramos la funcionalidad de administrar espacios con opciones de carga de TXT en Aspose.Words para .NET. Aprendimos cómo especificar el comportamiento de manejo de espacios en blanco al cargar un documento TXT.
 
-Esta función es muy útil para tratar con espacios innecesarios a la izquierda y derecha de las líneas de un documento. Al configurar las opciones de carga adecuadas, puede eliminar fácilmente estos espacios no deseados, lo que ayuda a que el contenido del documento sea más limpio y legible.
+Esta función es muy útil para tratar con espacios innecesarios a la izquierda y derecha de las líneas de un documento. Al configurar las opciones de carga adecuadas, puede eliminar fácilmente estos espacios no deseados, lo que ayuda a que el contenido del documento sea más limpio y más legible.
 
 Aspose.Words para .NET ofrece muchas características avanzadas para la manipulación y generación de documentos. La gestión de espacios a la hora de cargar un documento TXT es una de las muchas potentes herramientas que pone a tu disposición.
 

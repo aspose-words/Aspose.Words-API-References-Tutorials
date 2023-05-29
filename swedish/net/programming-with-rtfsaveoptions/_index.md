@@ -2,7 +2,7 @@
 title: Programmering med Rtfsaveoptions
 linktitle: Programmering med Rtfsaveoptions
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller att spara bilder som wmf
+description: Utforska programmering med RTF-sparalternativ i Aspose.Words för .NET. Lär dig hur du sparar och anpassar RTF-dokument med steg-för-steg handledningar och C#-kodexempel.
 type: docs
 weight: 1690
 url: /sv/net/programming-with-rtfsaveoptions/

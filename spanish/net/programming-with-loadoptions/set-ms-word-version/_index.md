@@ -52,4 +52,4 @@ doc.Save(dataDir + "WorkingWithLoadOptions.SetMsWordVersion.docx");
 
 ## Conclusión
 
-En esta guía, explicamos cómo cargar un documento que especifica una versión específica de MS Word utilizando la biblioteca Aspose.Words para .NET. Si sigue los pasos proporcionados y utiliza el código fuente de C# provisto, puede aplicar fácilmente esta funcionalidad en su aplicación de C#. Cargar un documento con una versión específica de MS Word le permite garantizar la compatibilidad y el procesamiento adecuados del documento en su aplicación.
+En esta guía, explicamos cómo cargar un documento que especifica una versión específica de MS Word utilizando la biblioteca Aspose.Words para .NET. Si sigue los pasos proporcionados y usa el código fuente de C# provisto, puede aplicar fácilmente esta funcionalidad en su aplicación de C#. Cargar un documento con una versión específica de MS Word le permite garantizar la compatibilidad y el procesamiento adecuados del documento en su aplicación.

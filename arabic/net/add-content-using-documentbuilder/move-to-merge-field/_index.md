@@ -58,25 +58,23 @@ builder.Write(" Text immediately after the field.");
 ### مثال على شفرة المصدر لـ Move To Merge Field باستخدام Aspose.Words for .NET
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// أدخل حقلاً باستخدام DocumentBuilder وأضف سلسلة نصية بعده.
+Field field = builder.InsertField("MERGEFIELD field");
+builder.Write(" Text after the field.");
 
-	// أدخل حقلاً باستخدام DocumentBuilder وأضف سلسلة نصية بعده.
-	Field field = builder.InsertField("MERGEFIELD field");
-	builder.Write(" Text after the field.");
+// يوجد مؤشر المنشئ حاليًا في نهاية المستند.
+Assert.Null(builder.CurrentNode);
+// يمكننا نقل المنشئ إلى حقل مثل هذا ، ووضع المؤشر على الفور بعد الحقل.
+builder.MoveToField(field, true);
 
-	// يوجد مؤشر المنشئ حاليًا في نهاية المستند.
-	Assert.Null(builder.CurrentNode);
-	// يمكننا نقل المنشئ إلى حقل مثل هذا ، ووضع المؤشر على الفور بعد الحقل.
-	builder.MoveToField(field, true);
-
-	// لاحظ أن المؤشر موجود في مكان ما بعد عقدة FieldEnd للحقل ، مما يعني أننا لسنا في الواقع داخل الحقل.
-	// إذا كنا نرغب في نقل DocumentBuilder إلى داخل حقل ،
-	// سنحتاج إلى نقله إلى عقدة FieldStart أو FieldSeparator باستخدام طريقة DocumentBuilder.MoveTo ().
-	Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
-	builder.Write(" Text immediately after the field.");
-	
+// لاحظ أن المؤشر موجود في مكان ما بعد عقدة FieldEnd للحقل ، مما يعني أننا لسنا في الواقع داخل الحقل.
+// إذا كنا نرغب في نقل DocumentBuilder إلى داخل حقل ،
+// سنحتاج إلى نقله إلى عقدة FieldStart أو FieldSeparator باستخدام طريقة DocumentBuilder.MoveTo ().
+Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
+builder.Write(" Text immediately after the field.");
 ```
 
 ## خاتمة

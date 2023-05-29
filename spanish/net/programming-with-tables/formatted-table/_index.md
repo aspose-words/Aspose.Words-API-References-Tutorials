@@ -169,4 +169,4 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ```
 
 ## Conclusión
-En este tutorial, aprendimos a crear una tabla con formato en un documento de Word utilizando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# provisto, puede crear tablas personalizadas con formato específico en sus documentos de Word mediante programación. Esta característica le permite presentar y estructurar sus datos de una manera organizada y visualmente atractiva.
+En este tutorial, aprendimos a crear una tabla con formato en un documento de Word utilizando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# proporcionado, puede crear tablas personalizadas con formato específico en sus documentos de Word mediante programación. Esta característica le permite presentar y estructurar sus datos de una manera organizada y visualmente atractiva.

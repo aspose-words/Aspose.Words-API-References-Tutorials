@@ -2,7 +2,7 @@
 title: Programmation avec plages
 linktitle: Programmation avec plages
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent des plages suppriment du texte et les plages obtiennent du texte
+description: En savoir plus sur la programmation avec des plages dans Aspose.Words pour .NET. Apprenez à manipuler et à mettre en forme des plages de texte spécifiques dans des documents Word à l'aide de didacticiels pas à pas et d'exemples de codes.
 type: docs
 weight: 1390
 url: /fr/net/programming-with-ranges/

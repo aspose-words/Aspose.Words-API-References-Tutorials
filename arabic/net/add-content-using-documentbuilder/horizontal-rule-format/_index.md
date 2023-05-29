@@ -51,20 +51,18 @@ builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalR
 فيما يلي الكود المصدري الكامل لتنسيق قاعدة أفقية باستخدام Aspose.Words for .NET:
 
 ```csharp
+DocumentBuilder builder = new DocumentBuilder();
 
-	DocumentBuilder builder = new DocumentBuilder();
+Shape shape = builder.InsertHorizontalRule();
 
-	Shape shape = builder.InsertHorizontalRule();
-	
-	HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
-	horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
-	horizontalRuleFormat.WidthPercent = 70;
-	horizontalRuleFormat.Height = 3;
-	horizontalRuleFormat.Color = Color.Blue;
-	horizontalRuleFormat.NoShade = true;
+HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;
+horizontalRuleFormat.Alignment = HorizontalRuleAlignment.Center;
+horizontalRuleFormat.WidthPercent = 70;
+horizontalRuleFormat.Height = 3;
+horizontalRuleFormat.Color = Color.Blue;
+horizontalRuleFormat.NoShade = true;
 
-	builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
-			
+builder.Document.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
 ```
 
 تذكر أن تقوم بتعديل الكود وفقًا لمتطلباتك الخاصة وتعزيزه بوظائف إضافية حسب الحاجة.

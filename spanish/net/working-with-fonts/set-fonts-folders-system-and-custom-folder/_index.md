@@ -11,7 +11,7 @@ url: /es/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 En este tutorial, lo guiaremos a través del proceso paso a paso para configurar las carpetas de fuentes del sistema y una carpeta personalizada al representar un documento con Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo especificar varias carpetas de fuentes, incluida la carpeta del sistema y una carpeta personalizada, para utilizarlas al representar sus documentos con Aspose.Words para .NET.
 
 ## Paso 1: Definir el directorio de documentos
-Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -55,23 +55,23 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ### Ejemplo de código fuente para establecer el sistema de carpetas de fuentes y la carpeta personalizada usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Ruta a su directorio de documentos
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Recupere la matriz de fuentes de fuentes dependientes del entorno que se buscan de forma predeterminada.
-	// Por ejemplo, esto contendrá una fuente "Windows\Fonts\" en una máquina con Windows.
-	// Agregamos esta matriz a una nueva Lista para que agregar o eliminar entradas de fuentes sea mucho más fácil.
-	List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-	// Agregue una nueva fuente de carpeta que indicará a Aspose.Words que busque fuentes en la siguiente carpeta.
-	FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-	// Agregue la carpeta personalizada que contiene nuestras fuentes a la lista de fuentes de fuentes existentes.
-	fontSources.Add(folderFontSource);
-	FontSourceBase[] updatedFontSources = fontSources.ToArray();
-	fontSettings.SetFontsSources(updatedFontSources);
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Recupere la matriz de fuentes de fuentes dependientes del entorno que se buscan de forma predeterminada.
+// Por ejemplo, esto contendrá una fuente "Windows\Fonts\" en una máquina con Windows.
+// Agregamos esta matriz a una nueva Lista para que agregar o eliminar entradas de fuentes sea mucho más fácil.
+List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
+// Agregue una nueva fuente de carpeta que indicará a Aspose.Words que busque fuentes en la siguiente carpeta.
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+// Agregue la carpeta personalizada que contiene nuestras fuentes a la lista de fuentes de fuentes existentes.
+fontSources.Add(folderFontSource);
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+fontSettings.SetFontsSources(updatedFontSources);
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Conclusión

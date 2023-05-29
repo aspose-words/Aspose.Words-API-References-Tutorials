@@ -72,7 +72,7 @@ Assert.That(para, Is.Empty);
 ```csharp
 doc.StopTrackRevisions();
 ```
-## 第 6 步：保存文档
+## 第 6 步：保存文件
 
 插入文本输入表单域后，使用`Save`方法。确保提供适当的文件路径：
 
@@ -86,48 +86,46 @@ doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 
 
 ```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
+Body body = doc.FirstSection.Body;
+Paragraph para = body.FirstParagraph;
 
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	Body body = doc.FirstSection.Body;
-	Paragraph para = body.FirstParagraph;
+//向第一段添加文本，然后再添加两段。
+para.AppendChild(new Run(doc, "Paragraph 1. "));
+body.AppendParagraph("Paragraph 2. ");
+body.AppendParagraph("Paragraph 3. ");
 
-	//向第一段添加文本，然后再添加两段。
-	para.AppendChild(new Run(doc, "Paragraph 1. "));
-	body.AppendParagraph("Paragraph 2. ");
-	body.AppendParagraph("Paragraph 3. ");
+//我们有三个段落，其中没有一个被注册为任何类型的修订
+//如果我们在跟踪修订时添加/删除文档中的任何内容，
+//它们将按原样显示在文档中，并且可以被接受/拒绝。
+doc.StartTrackRevisions("John Doe", DateTime.Now);
 
-	//我们有三个段落，其中没有一个被注册为任何类型的修订
-	//如果我们在跟踪修订时添加/删除文档中的任何内容，
-	//它们将按原样显示在文档中，并且可以被接受/拒绝。
-	doc.StartTrackRevisions("John Doe", DateTime.Now);
+//本段是修订版，将设置相应的“IsInsertRevision”标志。
+para = body.AppendParagraph("Paragraph 4. ");
+Assert.True(para.IsInsertRevision);
 
-	//本段是修订版，将设置相应的“IsInsertRevision”标志。
-	para = body.AppendParagraph("Paragraph 4. ");
-	Assert.True(para.IsInsertRevision);
+//获取文档的段落集合并删除一个段落。
+ParagraphCollection paragraphs = body.Paragraphs;
+Assert.AreEqual(4, paragraphs.Count);
+para = paragraphs[2];
+para.Remove();
 
-	//获取文档的段落集合并删除一个段落。
-	ParagraphCollection paragraphs = body.Paragraphs;
-	Assert.AreEqual(4, paragraphs.Count);
-	para = paragraphs[2];
-	para.Remove();
+//由于我们正在跟踪修订，该段落仍然存在于文档中，将设置“IsDeleteRevision”
+//并将在 Microsoft Word 中显示为修订版，直到我们接受或拒绝所有修订版。
+Assert.AreEqual(4, paragraphs.Count);
+Assert.True(para.IsDeleteRevision);
 
-	//由于我们正在跟踪修订，该段落仍然存在于文档中，将设置“IsDeleteRevision”
-	//并将在 Microsoft Word 中显示为修订版，直到我们接受或拒绝所有修订版。
-	Assert.AreEqual(4, paragraphs.Count);
-	Assert.True(para.IsDeleteRevision);
+//一旦我们接受更改，删除修订段落将被删除。
+doc.AcceptAllRevisions();
+Assert.AreEqual(3, paragraphs.Count);
+Assert.That(para, Is.Empty);
 
-	//一旦我们接受更改，删除修订段落将被删除。
-	doc.AcceptAllRevisions();
-	Assert.AreEqual(3, paragraphs.Count);
-	Assert.That(para, Is.Empty);
+//停止跟踪修订会使该文本显示为普通文本。
+//更改文档时不计算修订。
+doc.StopTrackRevisions();
 
-	//停止跟踪修订会使该文本显示为普通文本。
-	//更改文档时不计算修订。
-	doc.StopTrackRevisions();
-
-	//保存文档。
-	doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-            
+//保存文档。
+doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```

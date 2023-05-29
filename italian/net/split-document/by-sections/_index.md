@@ -46,26 +46,24 @@ newDoc.Save(dataDir + $"SplitDocument.ParSections_{i}.docx");
 Ecco il codice sorgente completo per la funzione By Sections di Aspose.Words per .NET:
 
 ```csharp
+// Il percorso della directory dei documenti.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Big document.docx");
 
-	// Il percorso della directory dei documenti.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Big document.docx");
+for (int i = 0; i < doc.Sections.Count; i++)
+{
+	// Dividi un documento in parti più piccole, in questo caso, diviso per sezione.
+	Section section = doc.Sections[i].Clone();
 
-	for (int i = 0; i < doc.Sections.Count; i++)
-	{
-		// Dividi un documento in parti più piccole, in questo caso, diviso per sezione.
-		Section section = doc.Sections[i].Clone();
+	Document newDoc = new Document();
+	newDoc.Sections.Clear();
 
-		Document newDoc = new Document();
-		newDoc.Sections.Clear();
+	Section newSection = (Section) newDoc.ImportNode(section, true);
+	newDoc.Sections.Add(newSection);
 
-		Section newSection = (Section) newDoc.ImportNode(section, true);
-		newDoc.Sections.Add(newSection);
-
-		// Salva ogni sezione come documento separato.
-		newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
-	}
-
+	// Salva ogni sezione come documento separato.
+	newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
+}
 ```
 
 Con questo codice sarai in grado di dividere un documento Word in sezioni separate usando Aspose.Words per .NET.

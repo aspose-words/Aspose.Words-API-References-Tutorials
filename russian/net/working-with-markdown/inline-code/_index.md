@@ -45,19 +45,18 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 ### Пример исходного кода для встроенного кода с Aspose.Words для .NET
 
 ```csharp
-	// Используйте конструктор документов, чтобы добавить содержимое в документ.
-	DocumentBuilder builder = new DocumentBuilder();
+// Используйте конструктор документов, чтобы добавить содержимое в документ.
+DocumentBuilder builder = new DocumentBuilder();
 
-	//Количество обратных кавычек пропущено, по умолчанию будет использоваться одна обратная кавычка.
-	Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
-	builder.Font.Style = inlineCode1BackTicks;
-	builder.Writeln("Text with InlineCode style with 1 backtick");
+//Количество обратных кавычек пропущено, по умолчанию будет использоваться одна обратная кавычка.
+Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
+builder.Font.Style = inlineCode1BackTicks;
+builder.Writeln("Text with InlineCode style with 1 backtick");
 
-	// Будет 3 обратных галочки.
-	Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
-	builder.Font.Style = inlineCode3BackTicks;
-	builder.Writeln("Text with InlineCode style with 3 backtick");
-            
+// Будет 3 обратных галочки.
+Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
+builder.Font.Style = inlineCode3BackTicks;
+builder.Writeln("Text with InlineCode style with 3 backtick");
 ```
 
 Поздравляем! Теперь вы узнали, как использовать функции встроенного кода с Aspose.Words для .NET.

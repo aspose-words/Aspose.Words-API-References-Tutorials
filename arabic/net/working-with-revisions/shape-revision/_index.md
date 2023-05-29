@@ -25,7 +25,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## الخطوة 2: تتبع المراجعات وإضافة شكل آخر
+## الخطوة 2: تتبع المراجعات وأضف شكلًا آخر
 
 سنقوم بتشغيل تتبع المراجعة وإضافة شكل آخر.
 
@@ -76,54 +76,52 @@ Assert. False(shapes[1].IsMoveToRevision);
 فيما يلي رمز المصدر الكامل لإجراء مراجعات على الأشكال في مستند باستخدام Aspose.Words for .NET:
 
 ```csharp
+Document doc = new Document();
 
-	Document doc = new Document();
+// قم بإدراج شكل مضمن بدون تعقب المراجعات.
+Assert.False(doc.TrackRevisions);
+Shape shape = new Shape(doc, ShapeType.Cube);
+shape.WrapType = WrapType.Inline;
+shape.Width = 100.0;
+shape.Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-	// قم بإدراج شكل مضمن بدون تعقب المراجعات.
-	Assert.False(doc.TrackRevisions);
-	Shape shape = new Shape(doc, ShapeType.Cube);
-	shape.WrapType = WrapType.Inline;
-	shape.Width = 100.0;
-	shape.Height = 100.0;
-	doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+// بدء تعقب المراجعات ثم قم بإدراج شكل آخر.
+doc.StartTrackRevisions("John Doe");
+shape = new Shape(doc, ShapeType.Sun);
+shape.WrapType = WrapType.Inline;
+shape.Width = 100.0;
+shape.Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-	// بدء تعقب المراجعات ثم قم بإدراج شكل آخر.
-	doc.StartTrackRevisions("John Doe");
-	shape = new Shape(doc, ShapeType.Sun);
-	shape.WrapType = WrapType.Inline;
-	shape.Width = 100.0;
-	shape.Height = 100.0;
-	doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+// احصل على مجموعة أشكال المستند التي تتضمن الشكلين اللذين أضفناهما فقط.
+List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
 
-	// احصل على مجموعة أشكال المستند التي تتضمن الشكلين اللذين أضفناهما فقط.
-	List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-	Assert.AreEqual(2, shapes.Count);
+// قم بإزالة الشكل الأول.
+shapes[0].Remove();
 
-	// قم بإزالة الشكل الأول.
-	shapes[0].Remove();
+// نظرًا لأننا أزلنا هذا الشكل أثناء تعقب التغييرات ، فإن الشكل يعد بمثابة مراجعة حذف.
+Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
+Assert.True(shapes[0].IsDeleteRevision);
 
-	// نظرًا لأننا أزلنا هذا الشكل أثناء تعقب التغييرات ، فإن الشكل يعد بمثابة مراجعة حذف.
-	Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-	Assert.True(shapes[0].IsDeleteRevision);
+// وقمنا بإدخال شكل آخر أثناء تتبع التغييرات ، بحيث يتم احتساب هذا الشكل كمراجعة إدراج.
+Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
+Assert.True(shapes[1].IsInsertRevision);
 
-	// وقمنا بإدخال شكل آخر أثناء تتبع التغييرات ، بحيث يتم احتساب هذا الشكل كمراجعة إدراج.
-	Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-	Assert.True(shapes[1].IsInsertRevision);
+//يحتوي المستند على شكل واحد تم نقله ، لكن مراجعات نقل الشكل سيكون لها مثيلين لهذا الشكل.
+// سيكون أحدهما الشكل في وجهة وصوله والآخر سيكون الشكل في موقعه الأصلي.
+doc = new Document(MyDir + "Revision shape.docx");
 
-	//يحتوي المستند على شكل واحد تم نقله ، لكن مراجعات نقل الشكل سيكون لها مثيلين لهذا الشكل.
-	// سيكون أحدهما الشكل في وجهة وصوله والآخر سيكون الشكل في موقعه الأصلي.
-	doc = new Document(MyDir + "Revision shape.docx");
-	
-	shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-	Assert.AreEqual(2, shapes.Count);
+shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
 
-	// هذه هي الخطوة إلى المراجعة ، وكذلك الشكل في وجهة وصولها.
-	Assert.False(shapes[0].IsMoveFromRevision);
-	Assert.True(shapes[0].IsMoveToRevision);
+// هذه هي الخطوة إلى المراجعة ، وكذلك الشكل في وجهة وصولها.
+Assert.False(shapes[0].IsMoveFromRevision);
+Assert.True(shapes[0].IsMoveToRevision);
 
-	// هذا هو الانتقال من المراجعة ، وهو الشكل الموجود في موقعه الأصلي.
-	Assert.True(shapes[1].IsMoveFromRevision);
-	Assert.False(shapes[1].IsMoveToRevision);
-            
+// هذا هو الانتقال من المراجعة ، وهو الشكل الموجود في موقعه الأصلي.
+Assert.True(shapes[1].IsMoveFromRevision);
+Assert.False(shapes[1].IsMoveToRevision);
 ```
 

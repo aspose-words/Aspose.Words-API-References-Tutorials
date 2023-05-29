@@ -2,7 +2,7 @@
 title: Programming With Ranges
 linktitle: Programming With Ranges
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain ranges delete text and ranges get text
+description: Learn about programming with ranges in Aspose.Words for .NET. Learn how to manipulate and format specific ranges of text in Word documents using step-by-step tutorials and sample codes.
 type: docs
 weight: 1390
 url: /net/programming-with-ranges/

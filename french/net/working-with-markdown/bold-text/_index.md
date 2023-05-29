@@ -38,12 +38,12 @@ builder.Writeln("This text will be bold");
 
 
 ```csharp
-	// Utilisez un générateur de document pour ajouter du contenu au document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Utilisez un générateur de document pour ajouter du contenu au document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Mettez le texte en gras.
-	builder.Font.Bold = true;
-	builder.Writeln("This text will be Bold");  
+// Mettez le texte en gras.
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");  
 ```
 
 Félicitation ! Vous avez maintenant appris à mettre du texte en gras avec Aspose.Words pour .NET.

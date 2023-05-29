@@ -2,7 +2,7 @@
 title: Программирование с Odtsaveoptions
 linktitle: Программирование с Odtsaveoptions
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат единицы измерения
+description: Изучите программирование с параметрами сохранения ODT в Aspose.Words для .NET. Подробные руководства с примерами кода для сохранения документов Word в формате ODT.
 type: docs
 weight: 1650
 url: /ru/net/programming-with-odtsaveoptions/

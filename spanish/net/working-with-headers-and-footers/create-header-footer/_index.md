@@ -139,100 +139,100 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ### Ejemplo de código fuente para crear encabezados y pies de página con Aspose.Words para .NET
 
 ```csharp
-	// La ruta al directorio de documentos.
-	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// La ruta al directorio de documentos.
+string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
-	Section currentSection = builder.CurrentSection;
-	PageSetup pageSetup = currentSection.PageSetup;
-	// Especificar si queremos que los encabezados/pies de página de la primera página sean diferentes de otras páginas.
-	// También puede usar la propiedad PageSetup.OddAndEvenPagesHeaderFooter para especificar
-	// diferentes encabezados/pies de página para páginas pares e impares.
-	pageSetup.DifferentFirstPageHeaderFooter = true;
-	pageSetup.HeaderDistance = 20;
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
+Section currentSection = builder.CurrentSection;
+PageSetup pageSetup = currentSection.PageSetup;
+// Especificar si queremos que los encabezados/pies de página de la primera página sean diferentes de otras páginas.
+// También puede usar la propiedad PageSetup.OddAndEvenPagesHeaderFooter para especificar
+// diferentes encabezados/pies de página para páginas pares e impares.
+pageSetup.DifferentFirstPageHeaderFooter = true;
+pageSetup.HeaderDistance = 20;
 
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.Font.Size = 14;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+builder.Font.Name = "Arial";
+builder.Font.Bold = true;
+builder.Font.Size = 14;
 
-	pageSetup.HeaderDistance = 20;
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 
-	// Inserte una imagen posicionada en la esquina superior izquierda del encabezado.
-	// La distancia desde los bordes superior/izquierdo de la página se establece en 10 puntos.
-	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+pageSetup.HeaderDistance = 20;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+// Inserte una imagen posicionada en la esquina superior izquierda del encabezado.
+// La distancia desde los bordes superior/izquierdo de la página se establece en 10 puntos.
+builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
+	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer.");
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
-	// Usamos una tabla con dos celdas para hacer una parte del texto en la línea (con numeración de páginas).
-	// Para alinear a la izquierda, y la otra parte del texto (con derechos de autor) para alinear a la derecha.
-	builder.StartTable();
+builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	builder.CellFormat.ClearFormatting();
+// Usamos una tabla con dos celdas para hacer una parte del texto en la línea (con numeración de páginas).
+// Para alinear a la izquierda, y la otra parte del texto (con derechos de autor) para alinear a la derecha.
+builder.StartTable();
 
-	builder.InsertCell();
+builder.CellFormat.ClearFormatting();
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+builder.InsertCell();
 
-	// Utiliza los campos PAGE y NUMPAGES para calcular automáticamente el número de página actual y muchas páginas.
-	builder.Write("Page ");
-	builder.InsertField("PAGE", "");
-	builder.Write(" of ");
-	builder.InsertField("NUMPAGES", "");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
+// Utiliza los campos PAGE y NUMPAGES para calcular automáticamente el número de página actual y muchas páginas.
+builder.Write("Page ");
+builder.InsertField("PAGE", "");
+builder.Write(" of ");
+builder.InsertField("NUMPAGES", "");
 
-	builder.InsertCell();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+builder.InsertCell();
 
-	builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
 
-	builder.EndRow();
-	builder.EndTable();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToDocumentEnd();
+builder.EndRow();
+builder.EndTable();
 
-	// Haga un salto de página para crear una segunda página en la que se verán los encabezados/pies de página principales.
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.InsertBreak(BreakType.SectionBreakNewPage);
+builder.MoveToDocumentEnd();
 
-	currentSection = builder.CurrentSection;
-	pageSetup = currentSection.PageSetup;
-	pageSetup.Orientation = Orientation.Landscape;
-	//Esta sección no necesita un encabezado/pie de página diferente en la primera página, solo necesitamos una página de título en el documento,
-	// y el encabezado/pie de página de esta página ya se definió en la sección anterior.
-	pageSetup.DifferentFirstPageHeaderFooter = false;
+// Haga un salto de página para crear una segunda página en la que se verán los encabezados/pies de página principales.
+builder.InsertBreak(BreakType.PageBreak);
+builder.InsertBreak(BreakType.SectionBreakNewPage);
 
-	// Esta sección muestra encabezados/pies de página de la sección anterior
-	// por defecto llama a currentSection.HeadersFooters.LinkToPrevious(false) para cancelar el ancho de esta página
-	// es diferente para la nueva sección y, por lo tanto, debemos establecer diferentes anchos de celda para una tabla de pie de página.
-	currentSection.HeadersFooters.LinkToPrevious(false);
+currentSection = builder.CurrentSection;
+pageSetup = currentSection.PageSetup;
+pageSetup.Orientation = Orientation.Landscape;
+//Esta sección no necesita un encabezado/pie de página diferente en la primera página, solo necesitamos una página de título en el documento,
+// y el encabezado/pie de página de esta página ya se definió en la sección anterior.
+pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// Si queremos usar el conjunto de encabezado/pie de página ya existente para esta sección.
-	// Pero con algunas modificaciones menores, puede ser conveniente copiar encabezados/pies de página
-	// del apartado anterior y aplicar las modificaciones necesarias donde queramos.
-	CopyHeadersFootersFromPreviousSection(currentSection);
+// Esta sección muestra encabezados/pies de página de la sección anterior
+// por defecto llama a currentSection.HeadersFooters.LinkToPrevious(false) para cancelar el ancho de esta página
+// es diferente para la nueva sección y, por lo tanto, debemos establecer diferentes anchos de celda para una tabla de pie de página.
+currentSection.HeadersFooters.LinkToPrevious(false);
 
-	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
+// Si queremos usar el conjunto de encabezado/pie de página ya existente para esta sección.
+// Pero con algunas modificaciones menores, puede ser conveniente copiar encabezados/pies de página
+// del apartado anterior y aplicar las modificaciones necesarias donde queramos.
+CopyHeadersFootersFromPreviousSection(currentSection);
 
-	Row row = primaryFooter.Tables[0].FirstRow;
-	row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-	row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
 
-	doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
+Row row = primaryFooter.Tables[0].FirstRow;
+row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+
+doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```

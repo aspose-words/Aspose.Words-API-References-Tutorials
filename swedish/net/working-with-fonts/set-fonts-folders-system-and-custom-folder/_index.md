@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Steg 3: Ställ in system- och anpassade teckensnittsmappar
- Nu kan du ställa in systemfontmappar och en anpassad mapp med hjälp av`FontSettings` klass och`SetFontsSources()` metod. Först måste du hämta listan över miljöberoende teckensnittskällor som använder`GetFontsSources()` och lagra den i en lista. Sedan kan du skapa en ny instans av`FolderFontSource`ange sökvägen till den anpassade mappen som innehåller dina teckensnitt. Lägg till den här instansen i listan över befintliga teckensnittskällor. Slutligen, använd`SetFontsSources()` för att uppdatera teckensnittskällorna med den nya listan.
+ Nu kan du ställa in systemfontmappar och en anpassad mapp med hjälp av`FontSettings` klass och`SetFontsSources()` metod. Först måste du hämta listan över miljöberoende teckensnittskällor som använder`GetFontsSources()` och lagra det i en lista. Sedan kan du skapa en ny instans av`FolderFontSource`ange sökvägen till den anpassade mappen som innehåller dina teckensnitt. Lägg till den här instansen i listan över befintliga teckensnittskällor. Slutligen, använd`SetFontsSources()` för att uppdatera teckensnittskällorna med den nya listan.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -55,23 +55,23 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ### Exempel på källkod för Set Fonts Folders System och Custom Folder med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Sökväg till din dokumentkatalog
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Hämta mängden miljöberoende teckensnittskällor som söks efter som standard.
-	// Till exempel kommer detta att innehålla en "Windows\Fonts\"-källa på en Windows-dator.
-	// Vi lägger till den här arrayen i en ny lista för att göra det mycket lättare att lägga till eller ta bort teckensnittsposter.
-	List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-	// Lägg till en ny mappkälla som instruerar Aspose.Words att söka efter typsnitt i följande mapp.
-	FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-	// Lägg till den anpassade mappen som innehåller våra typsnitt till listan över befintliga teckensnittskällor.
-	fontSources.Add(folderFontSource);
-	FontSourceBase[] updatedFontSources = fontSources.ToArray();
-	fontSettings.SetFontsSources(updatedFontSources);
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Hämta mängden miljöberoende teckensnittskällor som söks efter som standard.
+// Till exempel kommer detta att innehålla en "Windows\Fonts\"-källa på en Windows-dator.
+// Vi lägger till den här arrayen i en ny lista för att göra det mycket lättare att lägga till eller ta bort teckensnittsposter.
+List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
+// Lägg till en ny mappkälla som instruerar Aspose.Words att söka efter typsnitt i följande mapp.
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+// Lägg till den anpassade mappen som innehåller våra typsnitt till listan över befintliga teckensnittskällor.
+fontSources.Add(folderFontSource);
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+fontSettings.SetFontsSources(updatedFontSources);
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Slutsats

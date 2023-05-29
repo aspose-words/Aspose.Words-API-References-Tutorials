@@ -2,7 +2,7 @@
 title: Dipnot ve Sonnot ile Çalışma
 linktitle: Dipnot ve Sonnot ile Çalışma
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, Aspose.Words for .NET kullanarak Word Belgesinde Dipnot ve son notun nasıl ayarlanacağını açıklar.
+description: Aspose.Words for .NET ile Word belgelerinizdeki dipnotlar ve son notlarla nasıl çalışacağınızı öğrenin. Ayrıntılı öğreticiler ve pratik örnekler.
 type: docs
 weight: 660
 url: /tr/net/working-with-footnote-and-endnote/

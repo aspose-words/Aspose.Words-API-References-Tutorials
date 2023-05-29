@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/split-document/merge-documents/
 ---
 
-Dans ce didacticiel, nous vous expliquerons comment fusionner plusieurs documents Word à l'aide de la fonctionnalité de fusion de documents d'Aspose.Words pour .NET. Suivez les étapes ci-dessous pour comprendre le code source et obtenir un document fusionné contenant tous les documents source.
+Dans ce didacticiel, nous vous expliquerons comment fusionner plusieurs documents Word à l'aide de la fonctionnalité de fusion de documents d'Aspose.Words pour .NET. Suivez les étapes ci-dessous pour comprendre le code source et obtenir un document fusionné contenant tous les documents sources.
 
 ## Étape 1 : Rechercher des documents à fusionner
 
@@ -55,33 +55,31 @@ mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 Voici le code source complet de la fonctionnalité de fusion de documents d'Aspose.Words pour .NET :
 
 ```csharp
+// Chemin d'accès au répertoire des documents.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Rechercher des documents à l'aide de la fusion.
+FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
+	.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
+string sourceDocumentPath =
+	Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
 
-	// Chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// Rechercher des documents à l'aide de la fusion.
-	FileSystemInfo[] documentPaths = new DirectoryInfo(dataDir)
-		.GetFileSystemInfos("SplitDocument.PageByPage_*.docx").OrderBy(f => f.CreationTime).ToArray();
-	string sourceDocumentPath =
-		Directory.GetFiles(dataDir, "SplitDocument.PageByPage_1.docx", SearchOption.TopDirectoryOnly)[0];
+// Ouvrez la première partie du document résultant.
+Document sourceDoc = new Document(sourceDocumentPath);
 
-	// Ouvrez la première partie du document résultant.
-	Document sourceDoc = new Document(sourceDocumentPath);
+// Créez un nouveau document résultant.
+Document mergedDoc = new Document();
+DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-	// Créez un nouveau document résultant.
-	Document mergedDoc = new Document();
-	DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
+// Fusionnez les parties du document une par une.
+foreach (FileSystemInfo documentPath in documentPaths)
+{
+	if (documentPath.FullName == sourceDocumentPath)
+		continue;
 
-	// Fusionnez les parties du document une par une.
-	foreach (FileSystemInfo documentPath in documentPaths)
-	{
-		if (documentPath.FullName == sourceDocumentPath)
-			continue;
+	mergedDocBuilder.MoveToDocumentEnd();
+	mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
+	sourceDoc = new Document(documentPath.FullName);
+}
 
-		mergedDocBuilder.MoveToDocumentEnd();
-		mergedDocBuilder.InsertDocument(sourceDoc, ImportFormatMode.KeepSourceFormatting);
-		sourceDoc = new Document(documentPath.FullName);
-	}
-
-	mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
-
+mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```

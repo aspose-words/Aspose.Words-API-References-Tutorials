@@ -29,7 +29,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Adım 3: DocumentBuilder'ı Başlatın
+## 3. Adım: DocumentBuilder'ı Başlatın
 
  Yeni bir örneğini oluştur`DocumentBuilder` sınıflandırın ve hedef belgeyi bir parametre olarak iletin.
 

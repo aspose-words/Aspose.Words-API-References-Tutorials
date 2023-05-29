@@ -2,7 +2,7 @@
 title: Formattazione del documento
 linktitle: Formattazione del documento
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono spazio tra testo asiatico e latino, gruppo di interruzioni di riga di tipografia asiatica, formattazione di paragrafo, formattazione di elenchi multilivello e applicazione dello stile di paragrafo.
+description: Scopri come formattare e formattare i documenti di Word con Aspose.Words per .NET. I tutorial ti guideranno attraverso le varie tecniche di layout, stile, numerazione, paragrafi, caratteri e altro ancora.
 type: docs
 weight: 1490
 url: /it/net/document-formatting/

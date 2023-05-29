@@ -2,7 +2,7 @@
 title: Lavorare con nota a piè di pagina e nota di chiusura
 linktitle: Lavorare con nota a piè di pagina e nota di chiusura
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial spiegano come impostare la nota a piè di pagina e la nota di chiusura nel documento di Word utilizzando Aspose.Words per .NET
+description: Scopri come lavorare con note a piè di pagina e note di chiusura nei documenti di Word con Aspose.Words per .NET. Tutorial dettagliati ed esempi pratici.
 type: docs
 weight: 660
 url: /it/net/working-with-footnote-and-endnote/

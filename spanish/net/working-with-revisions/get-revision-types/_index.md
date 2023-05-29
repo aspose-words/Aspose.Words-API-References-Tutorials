@@ -38,16 +38,14 @@ for (int i = 0; i < paragraphs.Count; i++)
 Aquí está el código fuente completo para obtener tipos de revisión en un documento usando Aspose.Words para .NET:
 
 ```csharp
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	Document doc = new Document(MyDir + "Revisions.docx");
-
-	ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-	for (int i = 0; i < paragraphs.Count; i++)
-	{
-		 if (paragraphs[i].IsMoveFromRevision)
-			 Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-		 if (paragraphs[i].IsMoveToRevision)
-			 Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
-	}
-
+ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
+for (int i = 0; i < paragraphs.Count; i++)
+{
+	 if (paragraphs[i].IsMoveFromRevision)
+		 Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
+	 if (paragraphs[i].IsMoveToRevision)
+		 Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
+}
 ```

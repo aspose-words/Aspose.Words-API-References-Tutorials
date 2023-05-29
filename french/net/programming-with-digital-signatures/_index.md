@@ -2,7 +2,7 @@
 title: Programmation avec des signatures numériques
 linktitle: Programmation avec des signatures numériques
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent un document signé, la signature d'un document crypté, la création et la signature d'une nouvelle ligne de signature, la signature d'une ligne de signature existante, la définition de l'identifiant du fournisseur de signature,
+description: Découvrez comment ajouter et gérer des signatures numériques dans des documents Word à l'aide d'Aspose.Words pour .NET. Les tutoriels vous guident à travers les étapes pour générer des signatures numériques, ajoutez-les à vos documents.
 type: docs
 weight: 1440
 url: /fr/net/programming-with-digital-signatures/

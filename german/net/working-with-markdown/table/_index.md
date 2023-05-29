@@ -39,21 +39,20 @@ builder.Writeln("d");
 ### Beispielquellcode zum Erstellen einer Tabelle mit Aspose.Words für .NET
 
 ```csharp
-	// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
-	DocumentBuilder builder = new DocumentBuilder();
+// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Fügen Sie die erste Zeile hinzu.
-	builder.InsertCell();
-	builder.Writeln("a");
-	builder.InsertCell();
-	builder.Writeln("b");
+// Fügen Sie die erste Zeile hinzu.
+builder.InsertCell();
+builder.Writeln("a");
+builder.InsertCell();
+builder.Writeln("b");
 
-	// Fügen Sie die zweite Reihe hinzu.
-	builder.InsertCell();
-	builder.Writeln("c");
-	builder.InsertCell();
-	builder.Writeln("d");
-            
+// Fügen Sie die zweite Reihe hinzu.
+builder.InsertCell();
+builder.Writeln("c");
+builder.InsertCell();
+builder.Writeln("d");
 ```
 
 Herzlichen Glückwunsch! Sie haben nun gelernt, wie Sie mit Aspose.Words für .NET eine Tabelle erstellen.

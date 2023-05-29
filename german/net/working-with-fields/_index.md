@@ -2,7 +2,7 @@
 title: Arbeiten mit Feldern
 linktitle: Arbeiten mit Feldern
 second_title: Aspose.Words für .NET API-Referenz
-description: In den Tutorials wird gezeigt, wie Sie mithilfe von Aspose.Words für .NET ein Feld einfügen, die Dateikultur aktualisieren, einen Feld-Hyperlink ersetzen, ein Feld entfernen und verschachtelte Felder in ein Word-Dokument einfügen
+description: Eine umfassende Ressource für die Arbeit mit Feldern in Word-Dokumenten mithilfe von Aspose.Words für .NET. Tutorials, Beispiele und ausführliche Erklärungen.
 type: docs
 weight: 140
 url: /de/net/working-with-fields/

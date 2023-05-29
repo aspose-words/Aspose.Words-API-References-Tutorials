@@ -2,7 +2,7 @@
 title: البرمجة باستخدام Loadoptions
 linktitle: البرمجة باستخدام Loadoptions
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على تحديث الحقول المتسخة ، وتحميل المستند المشفر ، وتحويل الشكل إلى الرياضيات المكتبية ، وتعيين إصدار ms word ، واستخدام مجلد temp ، وتحذير رد الاتصال ، وتحميل باستخدام e
+description: تعلم البرمجة باستخدام LoadOptions في Aspose.Words for .NET. برامج تعليمية مفصلة مع نموذج التعليمات البرمجية لتحميل وتخصيص تحميل مستندات Word.
 type: docs
 weight: 1610
 url: /ar/net/programming-with-loadoptions/

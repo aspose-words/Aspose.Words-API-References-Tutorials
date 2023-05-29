@@ -2,7 +2,7 @@
 title: البرمجة باستخدام Txtloadoptions
 linktitle: البرمجة باستخدام Txtloadoptions
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على اكتشاف الترقيم بالمسافات البيضاء وخيارات مسافات المعالجة واتجاه نص المستند
+description: تعرف على كيفية البرمجة باستخدام خيارات تحميل الملفات النصية في Aspose.Words for .NET. تعرف على كيفية تحديد الترميز وتجاهل الأحرف غير المعروفة ومعالجة فواصل الأسطر والمزيد باستخدام البرامج التعليمية خطوة بخطوة ونموذج التعليمات البرمجية في C #.
 type: docs
 weight: 1640
 url: /ar/net/programming-with-txtloadoptions/

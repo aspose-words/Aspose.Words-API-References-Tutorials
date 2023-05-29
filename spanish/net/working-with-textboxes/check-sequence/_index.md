@@ -53,7 +53,7 @@ if (textBox. Next == null && textBox. Previous != null)
 }
 ```
 
-Si el cuadro de texto no tiene la siguiente forma (`Next`) pero tiene una forma anterior (`Previous`), eso significa que es el final de la secuencia. Se mostrará el mensaje "El final de la secuencia".
+Si el cuadro de texto no tiene la siguiente forma (`Next`) pero tiene una forma previa (`Previous`), eso significa que es el final de la secuencia. Se mostrará el mensaje "El final de la secuencia".
 
 ### Ejemplo de código fuente para verificar la secuencia con Aspose.Words para .NET
 

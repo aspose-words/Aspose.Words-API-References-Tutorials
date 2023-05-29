@@ -52,16 +52,14 @@ Das ist alles ! Sie haben nun verstanden, wie Sie die Funktion „In Tabellenzel
 
 
 ```csharp
+Document doc = new Document(MyDir + "Tables.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Tables.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Verschieben Sie den Builder in Zeile 3, Zelle 4 der ersten Tabelle.
+builder.MoveToCell(0, 2, 3, 0);
+builder.Write("\nCell contents added by DocumentBuilder");
+Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
-	// Verschieben Sie den Builder in Zeile 3, Zelle 4 der ersten Tabelle.
-	builder.MoveToCell(0, 2, 3, 0);
-	builder.Write("\nCell contents added by DocumentBuilder");
-	Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
-
-	Assert.AreEqual(table.Rows[2].Cells[3], builder.CurrentNode.ParentNode.ParentNode);
-	Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table.Rows[2].Cells[3].GetText().Trim());
-
+Assert.AreEqual(table.Rows[2].Cells[3], builder.CurrentNode.ParentNode.ParentNode);
+Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table.Rows[2].Cells[3].GetText().Trim());
 ```

@@ -2,7 +2,7 @@
 title: العمل مع مربعات النص
 linktitle: العمل مع مربعات النص
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إنشاء ارتباط ، والتحقق من التسلسل ، وكسر الارتباط باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية العمل مع مربعات النص في مستندات Word باستخدام Aspose.Words for .NET. البرامج التعليمية خطوة بخطوة مع نموذج التعليمات البرمجية لإنشاء مربعات النص ومعالجتها وتنسيقها بكفاءة.
 type: docs
 weight: 1320
 url: /ar/net/working-with-textboxes/

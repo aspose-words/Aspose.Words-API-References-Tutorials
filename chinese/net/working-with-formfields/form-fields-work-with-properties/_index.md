@@ -21,7 +21,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## 第 2 步：访问表单字段
+## 第 2 步：访问表单域
 
 接下来，从文档的表单字段集合中检索特定的表单字段。在此示例中，我们访问索引 3 处的表单字段：
 

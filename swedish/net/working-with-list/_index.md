@@ -2,7 +2,7 @@
 title: Arbeta med List
 linktitle: Arbeta med List
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller hur man startar om listan vid varje avsnitt, anger listnivå, startar om listnummer i dokument med Aspose.Words för .NET.
+description: Lär dig hur du arbetar med listor i Word-dokument med Aspose.Words för .NET. Detaljerade tutorials med kodexempel.
 type: docs
 weight: 780
 url: /sv/net/working-with-list/

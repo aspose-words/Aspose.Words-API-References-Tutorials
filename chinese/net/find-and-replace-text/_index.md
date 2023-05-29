@@ -2,7 +2,7 @@
 title: 查找和替换文本
 linktitle: 查找和替换文本
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含简单的查找替换、搜索模式中的元字符、替换包含元字符的文本、忽略字段内的文本、忽略字段内的文本
+description: 了解如何使用 Aspose.Words for .NET 查找和替换 Word 文档中的文本。这些教程向您展示了如何执行精确的文本搜索，包括高级搜索选项。
 type: docs
 weight: 1360
 url: /zh/net/find-and-replace-text/

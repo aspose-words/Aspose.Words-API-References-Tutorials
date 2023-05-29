@@ -51,13 +51,11 @@ builder.Writeln("This is the 3rd paragraph.");
 Nachfolgend finden Sie den vollständigen Beispielquellcode für die Implementierung der Funktion „In Absatz verschieben“ mit Aspose.Words für .NET:
 
 ```csharp
+Document doc = new Document(MyDir + "Paragraphs.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Paragraphs.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.MoveToParagraph(2, 0);
-	builder.Writeln("This is the 3rd paragraph.");
-	
+builder.MoveToParagraph(2, 0);
+builder.Writeln("This is the 3rd paragraph.");
 ```
 
 Wenn Sie dieser Anleitung folgen und die Funktion „In Absatz verschieben“ verwenden, können Sie Absätze in Word-Dokumenten mit Aspose.Words für .NET programmgesteuert bearbeiten.

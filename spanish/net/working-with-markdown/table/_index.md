@@ -39,21 +39,20 @@ builder.Writeln("d");
 ### Ejemplo de código fuente para crear una tabla con Aspose.Words para .NET
 
 ```csharp
-	// Use un generador de documentos para agregar contenido al documento.
-	DocumentBuilder builder = new DocumentBuilder();
+// Use un generador de documentos para agregar contenido al documento.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Agrega la primera fila.
-	builder.InsertCell();
-	builder.Writeln("a");
-	builder.InsertCell();
-	builder.Writeln("b");
+// Agrega la primera fila.
+builder.InsertCell();
+builder.Writeln("a");
+builder.InsertCell();
+builder.Writeln("b");
 
-	// Agrega la segunda fila.
-	builder.InsertCell();
-	builder.Writeln("c");
-	builder.InsertCell();
-	builder.Writeln("d");
-            
+// Agrega la segunda fila.
+builder.InsertCell();
+builder.Writeln("c");
+builder.InsertCell();
+builder.Writeln("d");
 ```
 
 ¡Felicidades! Ahora ha aprendido a crear una tabla con Aspose.Words para .NET.

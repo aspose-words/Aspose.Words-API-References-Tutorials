@@ -2,7 +2,7 @@
 title: Programmazione con intervalli
 linktitle: Programmazione con intervalli
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono intervalli che eliminano il testo e gli intervalli ottengono il testo
+description: Ulteriori informazioni sulla programmazione con intervalli in Aspose.Words per .NET. Scopri come manipolare e formattare intervalli di testo specifici nei documenti di Word utilizzando esercitazioni dettagliate e codici di esempio.
 type: docs
 weight: 1390
 url: /it/net/programming-with-ranges/

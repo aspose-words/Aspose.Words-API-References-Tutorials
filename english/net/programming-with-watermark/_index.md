@@ -2,7 +2,7 @@
 title: Programming With Watermark
 linktitle: Programming With Watermark
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain add text watermark with specific options
+description: Learn how to program with watermarks in Aspose.Words for .NET. Learn how to add text or image watermarks, customize their appearance, place them on pages, and more with step-by-step tutorials and sample C# code.
 type: docs
 weight: 1570
 url: /net/programming-with-watermark/

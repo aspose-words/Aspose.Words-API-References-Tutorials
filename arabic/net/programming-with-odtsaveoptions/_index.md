@@ -2,7 +2,7 @@
 title: البرمجة مع خيارات Odtsave
 linktitle: البرمجة مع خيارات Odtsave
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على وحدة القياس
+description: تعلم البرمجة باستخدام خيارات حفظ ODT في Aspose.Words for .NET. برامج تعليمية مفصلة مع نموذج التعليمات البرمجية لحفظ مستندات Word بتنسيق ODT.
 type: docs
 weight: 1650
 url: /ar/net/programming-with-odtsaveoptions/

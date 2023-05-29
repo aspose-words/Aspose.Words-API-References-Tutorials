@@ -60,7 +60,7 @@ Vi sparar dokumentet med aktivitetsrutorna konfigurerade i den angivna katalogen
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## Steg 4: Visa informationen i uppgiftsrutorna
+## Steg 4: Visa informationen i aktivitetsrutorna
 
 Därefter laddar vi dokumentet och visar källinformationen i aktivitetsfönstret.
 

@@ -2,7 +2,7 @@
 title: البرمجة باستخدام Htmlloadoptions
 linktitle: البرمجة باستخدام Htmlloadoptions
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على نوع التحكم المفضل
+description: تعرف على كيفية البرمجة باستخدام خيارات تحميل HTML في Aspose.Words for .NET. ترشدك البرامج التعليمية إلى الميزات المختلفة لتحميل مستندات HTML.
 type: docs
 weight: 1600
 url: /ar/net/programming-with-htmlloadoptions/

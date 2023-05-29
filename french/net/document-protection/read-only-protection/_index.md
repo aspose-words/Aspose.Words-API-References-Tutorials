@@ -46,7 +46,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 ## Étape 5 : Appliquez la protection en lecture seule et enregistrez le document
 
-Enfin, appliquez la protection en lecture seule à l'aide de la méthode Protect() de l'objet Document :
+Enfin, appliquez la protection en lecture seule à l'aide de la méthode Protect() de l'objet Document :
 
 ```csharp
 doc.Protect(ProtectionType.ReadOnly);

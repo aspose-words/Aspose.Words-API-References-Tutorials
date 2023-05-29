@@ -2,7 +2,7 @@
 title: Programmering med tabeller
 linktitle: Programmering med tabeller
 second_title: Aspose.Words för .NET API Referens
-description: Självstudierna innehåller automatisk anpassning av tabell till innehåll, automatisk anpassning av tabell till fasta kolumnbredder, automatisk anpassning av tabell till sidbredd, bygg tabell från datatabell, import tabell från
+description: Lär dig hur du programmerar tabeller i Aspose.Words för .NET. Lär dig hur du skapar, manipulerar och formaterar tabeller i dina Word-dokument med steg-för-steg handledningar och C#-kodexempel.
 type: docs
 weight: 1590
 url: /sv/net/programming-with-tables/

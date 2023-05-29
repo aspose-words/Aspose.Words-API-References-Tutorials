@@ -83,7 +83,7 @@ Document doc = new Document(dataDir + "Header and footer types.docx");
 
 foreach (Section section in doc)
 {
-	//一个部分中最多可以有三个不同的页脚（第一页、偶数页和奇数页）
+	//一个部分最多可以有三个不同的页脚（第一页、偶数页和奇数页）
 	//我们检查并删除所有这些。
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();

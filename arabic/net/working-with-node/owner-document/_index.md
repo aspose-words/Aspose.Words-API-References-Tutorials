@@ -65,27 +65,26 @@ Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null
 ### نموذج كود مصدر لمستند المالك مع Aspose.Words for .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// يتطلب إنشاء عقدة جديدة من أي نوع تمرير مستند إلى المنشئ.
-	Paragraph para = new Paragraph(doc);
+// يتطلب إنشاء عقدة جديدة من أي نوع تمرير مستند إلى المنشئ.
+Paragraph para = new Paragraph(doc);
 
-	// عقدة الفقرة الجديدة ليس لها أصل حتى الآن.
-	Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
+// عقدة الفقرة الجديدة ليس لها أصل حتى الآن.
+Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 
-	// لكن عقدة الفقرة تعرف وثيقتها.
-	Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
+// لكن عقدة الفقرة تعرف وثيقتها.
+Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-	// تسمح لنا حقيقة أن العقدة تنتمي دائمًا إلى المستند بالوصول والتعديل
-	// الخصائص التي تشير إلى البيانات على مستوى المستند ، مثل الأنماط أو القوائم.
-	para.ParagraphFormat.StyleName = "Heading 1";
+// تسمح لنا حقيقة أن العقدة تنتمي دائمًا إلى المستند بالوصول والتعديل
+// الخصائص التي تشير إلى البيانات على مستوى المستند ، مثل الأنماط أو القوائم.
+para.ParagraphFormat.StyleName = "Heading 1";
 
-	// أضف الآن الفقرة إلى النص الرئيسي للقسم الأول.
-	doc.FirstSection.Body.AppendChild(para);
+// أضف الآن الفقرة إلى النص الرئيسي للقسم الأول.
+doc.FirstSection.Body.AppendChild(para);
 
-	//أصبحت عقدة الفقرة الآن تابعة لعقدة النص الأساسي.
-	Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
-            
+//أصبحت عقدة الفقرة الآن تابعة لعقدة النص الأساسي.
+Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
 

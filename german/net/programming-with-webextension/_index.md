@@ -2,7 +2,7 @@
 title: Programmieren mit Webextension
 linktitle: Programmieren mit Webextension
 second_title: Aspose.Words für .NET API-Referenz
-description: Tutorials enthalten und verwenden Aufgabenbereiche für Weberweiterungen
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Weberweiterungen für Word-Dokumente entwickeln. Erfahren Sie, wie Sie Weberweiterungen erstellen, ändern und anpassen und diese in Ihre Word-Dokumente integrieren.
 type: docs
 weight: 1530
 url: /de/net/programming-with-webextension/

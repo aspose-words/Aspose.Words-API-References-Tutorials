@@ -2,7 +2,7 @@
 title: Split Document
 linktitle: Split Document
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain by headings html, by sections html, by sections, page by page, merge documents and by page range
+description: Learn how to effectively split a Word document into separate parts using Aspose.Words for .NET. Follow step-by-step tutorials and use C# code samples to learn different document splitting techniques.
 type: docs
 weight: 1450
 url: /net/split-document/

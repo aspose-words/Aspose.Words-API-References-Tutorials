@@ -42,7 +42,7 @@ for (int i = 0; i < 9; i++)
 }
 ```
 
-Ripetere questi passaggi per specificare i livelli di elenco e aggiungere testo a ogni livello.
+Ripetere questi passaggi per specificare i livelli di elenco e aggiungere testo a ciascun livello.
 
 ## Passaggio 4: creazione e applicazione di un elenco puntato
 

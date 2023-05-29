@@ -29,12 +29,11 @@ builder. InsertHorizontalRule();
 ## عينة من التعليمات البرمجية المصدر للقاعدة الأفقية باستخدام Aspose.Words for .NET
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
-	DocumentBuilder builder = new DocumentBuilder();
+// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// أدخل القاعدة الأفقية.
-	builder.InsertHorizontalRule();
-            
+// أدخل القاعدة الأفقية.
+builder.InsertHorizontalRule();
 ```
 
 تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة القاعدة الأفقية مع Aspose.Words for .NET.

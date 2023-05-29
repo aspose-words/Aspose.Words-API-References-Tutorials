@@ -2,7 +2,7 @@
 title: Find And Replace Text
 linktitle: Find And Replace Text
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain simple find replace, meta characters in search pattern, replace text containing meta characters, ignore text inside fields, ignore text inside 
+description: Learn how to find and replace text in Word documents using Aspose.Words for .NET. The tutorials show you how to perform precise text searches, including advanced search options.
 type: docs
 weight: 1360
 url: /net/find-and-replace-text/

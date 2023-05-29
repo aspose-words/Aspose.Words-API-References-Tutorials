@@ -39,13 +39,12 @@ builder.Writeln("This text will be StrikeThrough");
 ### Beispielquellcode für durchgestrichenen Text mit Aspose.Words für .NET
 
 ```csharp
-	// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
-	DocumentBuilder builder = new DocumentBuilder();
+// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Machen Sie den Text durchgestrichen.
-	builder.Font.StrikeThrough = true;
-	builder.Writeln("This text will be StrikeThrough");
-            
+// Machen Sie den Text durchgestrichen.
+builder.Font.StrikeThrough = true;
+builder.Writeln("This text will be StrikeThrough");
 ```
 
 Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie den durchgestrichenen Textstil mit Aspose.Words für .NET anwenden.

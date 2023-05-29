@@ -2,7 +2,7 @@
 title: Programmazione con i grafici
 linktitle: Programmazione con i grafici
 second_title: Riferimento all'API Aspose.Words per .NET
-description: Le esercitazioni contengono il numero di formato dell'etichetta dei dati, creare un grafico utilizzando la forma, inserire un istogramma semplice, inserire un istogramma, inserire un grafico ad area, inserire un grafico a bolle,
+description: Scopri come creare, personalizzare e manipolare la grafica nei documenti di Word utilizzando Aspose.Words per .NET. Le esercitazioni forniscono spiegazioni dettagliate e codice sorgente C# per aiutarti ad aggiungere grafici.
 type: docs
 weight: 1540
 url: /it/net/programming-with-charts/
@@ -28,7 +28,7 @@ Con questi tutorial, sarai in grado di migliorare i tuoi documenti Word aggiunge
 | [Formato numerico per asse](./number-format-for-axis/) | Scopri come impostare il formato numerico per un asse in un grafico utilizzando Aspose.Words per .NET. |
 | [Limiti dell'asse](./bounds-of-axis/) | Scopri come impostare i limiti di un asse in un grafico utilizzando Aspose.Words per .NET controllando l'intervallo di valori visualizzati sull'asse. |
 | [Unità di intervallo tra etichette sull'asse](./interval-unit-between-labels-on-axis/) | Scopri come impostare l'unità di intervallo tra le etichette sull'asse di un grafico utilizzando Aspose.Words per .NET. |
-| [Nascondi asse grafico](./hide-chart-axis/) | Scopri come nascondere l'asse del grafico in un documento utilizzando Aspose.Words per .NET. Nascondi l'asse per una visualizzazione del grafico più chiara e mirata. |
+| [Nascondi asse grafico](./hide-chart-axis/) | Scopri come nascondere l'asse del grafico in un documento utilizzando Aspose.Words per .NET. Nascondi l'asse per una visualizzazione del grafico più pulita e mirata. |
 | [Selezionare Allineamento etichetta multilinea](./tick-multi-line-label-alignment/) | Scopri come allineare le etichette multilinea del segno di spunta in un asse del grafico utilizzando Aspose.Words per .NET. |
 | [Etichetta dati grafico](./chart-data-label/) | Scopri come aggiungere e personalizzare le etichette dei dati in un grafico utilizzando Aspose.Words per .NET per fornire ulteriori informazioni sui punti dati. |
 | [Opzioni predefinite per le etichette dati](./default-options-for-data-labels/) | Scopri come impostare le opzioni predefinite per le etichette dei dati in un grafico utilizzando Aspose.Words per .NET. |

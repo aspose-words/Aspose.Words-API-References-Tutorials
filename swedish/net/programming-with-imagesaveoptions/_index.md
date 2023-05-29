@@ -2,7 +2,7 @@
 title: Programmering med bildsparalternativ
 linktitle: Programmering med bildsparalternativ
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller exponeringströskelkontroll för tiff-binarisering, få tiff-sidintervall, format 1bpp indexerat, få jpeg-sidintervall och sidsparande återuppringning
+description: Lär dig hur du programmerar med bildsparalternativ i Aspose.Words för .NET. Steg-för-steg handledning med exempelkod för att spara och manipulera bilder i dina Word-dokument.
 type: docs
 weight: 1630
 url: /sv/net/programming-with-imagesaveoptions/

@@ -52,18 +52,16 @@ Console.WriteLine("\nThis is the end of the document.");
 ### Ejemplo de código fuente para Mover al inicio/fin del documento usando Aspose.Words para .NET
 
 ```csharp
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// Mueva la posición del cursor al principio de su documento.
-	builder.MoveToDocumentStart();
-	Console.WriteLine("\nThis is the beginning of the document.");
+// Mueva la posición del cursor al principio de su documento.
+builder.MoveToDocumentStart();
+Console.WriteLine("\nThis is the beginning of the document.");
 
-	// Mueva la posición del cursor al final de su documento.
-	builder.MoveToDocumentEnd();
-	Console.WriteLine("\nThis is the end of the document.");
-	
+// Mueva la posición del cursor al final de su documento.
+builder.MoveToDocumentEnd();
+Console.WriteLine("\nThis is the end of the document.");
 ```
 
 ## Conclusión

@@ -43,7 +43,7 @@ Assert.AreEqual(table.Rows[2].Cells[3], builder.CurrentNode.ParentNode.ParentNod
 Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table.Rows[2].Cells[3].GetText().Trim());
 ```
 
-Questo codice verifica che la cella specificata sia effettivamente la cella corrente di DocumentBuilder. Verifica inoltre che il contenuto aggiunto da DocumentBuilder sia stato salvato correttamente nella cella della tabella.
+Questo codice verifica che la cella specificata sia effettivamente la cella corrente di DocumentBuilder. Verifica inoltre che il contenuto aggiunto da DocumentBuilder sia stato correttamente salvato nella cella della tabella.
 
 È tutto ! Ora hai capito come utilizzare la funzionalità di spostamento nella cella della tabella di Aspose.Words per .NET utilizzando il codice sorgente fornito. Ora puoi integrare questa funzionalità nella tua applicazione e manipolare specifiche celle di tabella nei documenti di Word.
 
@@ -52,16 +52,14 @@ Questo codice verifica che la cella specificata sia effettivamente la cella corr
 
 
 ```csharp
+Document doc = new Document(MyDir + "Tables.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Tables.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Sposta il builder alla riga 3, cella 4 della prima tabella.
+builder.MoveToCell(0, 2, 3, 0);
+builder.Write("\nCell contents added by DocumentBuilder");
+Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
-	// Sposta il builder alla riga 3, cella 4 della prima tabella.
-	builder.MoveToCell(0, 2, 3, 0);
-	builder.Write("\nCell contents added by DocumentBuilder");
-	Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
-
-	Assert.AreEqual(table.Rows[2].Cells[3], builder.CurrentNode.ParentNode.ParentNode);
-	Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table.Rows[2].Cells[3].GetText().Trim());
-
+Assert.AreEqual(table.Rows[2].Cells[3], builder.CurrentNode.ParentNode.ParentNode);
+Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table.Rows[2].Cells[3].GetText().Trim());
 ```

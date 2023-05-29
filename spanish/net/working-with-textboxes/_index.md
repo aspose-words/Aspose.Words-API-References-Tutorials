@@ -2,7 +2,7 @@
 title: Trabajar con cuadros de texto
 linktitle: Trabajar con cuadros de texto
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen crear un enlace, verificar la secuencia y romper un enlace usando Aspose.Words para .NET.
+description: Aprenda a trabajar con cuadros de texto en documentos de Word usando Aspose.Words para .NET. Tutoriales paso a paso con código de muestra para crear, manipular y formatear cuadros de texto de manera eficiente.
 type: docs
 weight: 1320
 url: /es/net/working-with-textboxes/

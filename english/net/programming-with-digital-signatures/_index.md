@@ -2,7 +2,7 @@
 title: Programming With Digital Signatures
 linktitle: Programming With Digital Signatures
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain sign document, signing encrypted document, creating and signing new signature line, signing existing signature line, set signature provider id,
+description: Learn how to add and manage digital signatures in Word documents using Aspose.Words for .NET. The tutorials guide you through the steps to generate digital signatures, add them to your documents.
 type: docs
 weight: 1440
 url: /net/programming-with-digital-signatures/

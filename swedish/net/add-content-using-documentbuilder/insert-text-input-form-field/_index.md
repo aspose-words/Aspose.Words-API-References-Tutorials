@@ -62,16 +62,13 @@ Denna kod kommer att spara dokumentet med det infogade textinmatningsformuläret
 ### Exempel på källkod för Insert Text Input Form Field med Aspose.Words för .NET
 
 ```csharp
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
-            
-        
+builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
+
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```

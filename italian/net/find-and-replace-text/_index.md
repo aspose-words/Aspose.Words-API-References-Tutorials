@@ -2,7 +2,7 @@
 title: Trova e sostituisci testo
 linktitle: Trova e sostituisci testo
 second_title: Riferimento all'API Aspose.Words per .NET
-description: tutorial contengono semplice ricerca sostituisci, meta caratteri nel modello di ricerca, sostituisci testo contenente meta caratteri, ignora il testo all'interno dei campi, ignora il testo all'interno
+description: Scopri come trovare e sostituire il testo nei documenti di Word utilizzando Aspose.Words per .NET. I tutorial mostrano come eseguire ricerche di testo precise, comprese le opzioni di ricerca avanzate.
 type: docs
 weight: 1360
 url: /it/net/find-and-replace-text/

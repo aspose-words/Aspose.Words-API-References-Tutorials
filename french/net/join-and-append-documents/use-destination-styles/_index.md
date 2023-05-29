@@ -1,6 +1,6 @@
 ---
-title: Utiliser les styles de destinations
-linktitle: Utiliser les styles de destinations
+title: Utiliser les styles de destination
+linktitle: Utiliser les styles de destination
 second_title: Référence de l'API Aspose.Words pour .NET
 description: Découvrez comment joindre et ajouter des documents Word tout en appliquant des styles de document de destination à l'aide d'Aspose.Words pour .NET.
 type: docs

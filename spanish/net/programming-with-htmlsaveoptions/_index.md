@@ -2,7 +2,7 @@
 title: Programación con Htmlsaveoptions
 linktitle: Programación con Htmlsaveoptions
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen información de exportación de ida y vuelta, fuentes de exportación como base 64, recursos de exportación, conversión de metarchivos a emf o wmf, conversión de metarchivos a svg, adición de css cla
+description: Aprenda a programar con opciones de guardado de HTML en Aspose.Words para .NET. Convierta fácilmente documentos de Word a HTML conservando el formato y el contenido.
 type: docs
 weight: 1620
 url: /es/net/programming-with-htmlsaveoptions/

@@ -40,17 +40,16 @@ builder.Writeln("This is an H1 tag");
 
 
 ```csharp
-	// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
-	DocumentBuilder builder = new DocumentBuilder();
+// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Som standard kan rubrikstilar i Word ha fet och kursiv formatering.
-	//Om vi inte vill framhävas, ställ dessa egenskaper uttryckligen till false.
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+// Som standard kan rubrikstilar i Word ha fet och kursiv formatering.
+//Om vi inte vill framhävas, ställ dessa egenskaper uttryckligen till false.
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	builder.ParagraphFormat.StyleName = "Heading 1";
-	builder.Writeln("This is an H1 tag");
-            
+builder.ParagraphFormat.StyleName = "Heading 1";
+builder.Writeln("This is an H1 tag");
 ```
 
 Grattis! Du har nu lärt dig hur du använder rubrikfunktionen med Aspose.Words för .NET.

@@ -12,7 +12,7 @@ Dans ce didacticiel étape par étape, nous vous expliquerons comment utiliser l
 
 Pour commencer, assurez-vous que Aspose.Words pour .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez la bibliothèque depuis le site officiel.
 
-## Étape 1 : Initialisation de l'objet document
+## Étape 1 : Initialisation de l'objet Document
 
  Tout d'abord, initialisez le`Document` objet en fournissant le chemin d'accès à votre document source contenant les champs de formulaire :
 

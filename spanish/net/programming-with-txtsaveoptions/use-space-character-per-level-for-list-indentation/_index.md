@@ -46,7 +46,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIn
 
 En este ejemplo, creamos una instancia de TxtSaveOptions y establecemos la propiedad ListIndentation.Count en 3 para indicar que hay tres niveles de sangría en la lista. También establecemos la propiedad ListIndentation.Character en el carácter de espacio (' ') que queremos usar para la sangría.
 
-### Ejemplo de código fuente para la función "Usar un carácter de espacio por nivel para sangría de lista" con Aspose.Words para .NET
+### Código fuente de ejemplo para la función "Usar un carácter de espacio por nivel para sangría de lista" con Aspose.Words para .NET
 
 Aquí está el código fuente de muestra completo para la función "Usar un carácter de espacio por nivel para sangría de lista" con Aspose.Words para .NET:
 

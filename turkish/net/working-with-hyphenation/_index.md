@@ -2,7 +2,7 @@
 title: Tireleme ile Çalışma
 linktitle: Tireleme ile Çalışma
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, Tireli Dil Sözcükleri, dil için tireleme sözlüğü ve Aspose.Words for .NET kullanılarak tireleme geri araması içerir.
+description: Aspose.Words for .NET ile Word belgelerinde sözcük hecelemesini nasıl yöneteceğinizi öğrenin. Eksiksiz öğreticiler ve pratik örnekler dahildir.
 type: docs
 weight: 750
 url: /tr/net/working-with-hyphenation/

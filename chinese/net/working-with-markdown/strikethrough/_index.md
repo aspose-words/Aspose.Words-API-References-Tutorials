@@ -39,13 +39,12 @@ builder.Writeln("This text will be StrikeThrough");
 ### 使用 Aspose.Words for .NET 的删除线文本示例源代码
 
 ```csharp
-	//使用文档生成器向文档添加内容。
-	DocumentBuilder builder = new DocumentBuilder();
+//使用文档生成器向文档添加内容。
+DocumentBuilder builder = new DocumentBuilder();
 
-	//使文本删除线。
-	builder.Font.StrikeThrough = true;
-	builder.Writeln("This text will be StrikeThrough");
-            
+//使文本删除线。
+builder.Font.StrikeThrough = true;
+builder.Writeln("This text will be StrikeThrough");
 ```
 
 恭喜！您现在已经了解了如何使用 Aspose.Words for .NET 应用删除线文本样式。

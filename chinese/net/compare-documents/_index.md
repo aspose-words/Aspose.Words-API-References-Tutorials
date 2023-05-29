@@ -2,7 +2,7 @@
 title: 比较文件
 linktitle: 比较文件
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含相等比较、比较选项、比较目标和比较粒度。
+description: 了解如何使用 Aspose.Words for .NET 比较 Word 文档并识别差异。包括指南和实际示例。
 type: docs
 weight: 1480
 url: /zh/net/compare-documents/

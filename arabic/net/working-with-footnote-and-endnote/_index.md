@@ -2,7 +2,7 @@
 title: العمل مع الحاشية السفلية والتعليق الختامي
 linktitle: العمل مع الحاشية السفلية والتعليق الختامي
 second_title: Aspose.Words لمراجع .NET API
-description: تشرح البرامج التعليمية كيفية تعيين الحاشية السفلية والتعليقات الختامية في مستند Word باستخدام Aspose.Words for .NET
+description: تعرف على كيفية التعامل مع الحواشي السفلية والتعليقات الختامية في مستندات Word باستخدام Aspose.Words for .NET. دروس مفصلة وأمثلة عملية.
 type: docs
 weight: 660
 url: /ar/net/working-with-footnote-and-endnote/

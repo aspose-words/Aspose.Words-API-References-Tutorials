@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 
-在这个例子中，我们将探索 Aspose.Words for .NET 的 Move To Bookmark End 功能。 Aspose.Words 是一个强大的文档操作库，使开发人员能够以编程方式创建、修改和转换 Word 文档。移动到书签末尾功能允许我们导航到文档中特定书签的末尾并在其后添加内容。
+在这个例子中，我们将探索 Aspose.Words for .NET 的 Move To Bookmark End 特性。 Aspose.Words 是一个强大的文档操作库，使开发人员能够以编程方式创建、修改和转换 Word 文档。移动到书签末尾功能允许我们导航到文档中特定书签的末尾并在其后添加内容。
 
 ## 设置环境
 
@@ -61,13 +61,11 @@ builder.Writeln("This is a bookmark.");
 ### 使用 Aspose.Words for .NET 移动到书签结尾的示例源代码
 
 ```csharp
+Document doc = new Document(MyDir + "Bookmarks.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Bookmarks.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.MoveToBookmark("MyBookmark1", false, true);
-	builder.Writeln("This is a bookmark.");
-	
+builder.MoveToBookmark("MyBookmark1", false, true);
+builder.Writeln("This is a bookmark.");
 ```
 
 ## 结论

@@ -76,54 +76,52 @@ Assert. False(shapes[1].IsMoveToRevision);
 Aspose.Words for .NET kullanarak bir belgedeki şekillerde revizyonlar yapmak için eksiksiz kaynak kodu burada:
 
 ```csharp
+Document doc = new Document();
 
-	Document doc = new Document();
+// Düzeltmeleri izlemeden satır içi bir şekil ekleyin.
+Assert.False(doc.TrackRevisions);
+Shape shape = new Shape(doc, ShapeType.Cube);
+shape.WrapType = WrapType.Inline;
+shape.Width = 100.0;
+shape.Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-	// Düzeltmeleri izlemeden satır içi bir şekil ekleyin.
-	Assert.False(doc.TrackRevisions);
-	Shape shape = new Shape(doc, ShapeType.Cube);
-	shape.WrapType = WrapType.Inline;
-	shape.Width = 100.0;
-	shape.Height = 100.0;
-	doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+// Düzeltmeleri izlemeye başlayın ve ardından başka bir şekil ekleyin.
+doc.StartTrackRevisions("John Doe");
+shape = new Shape(doc, ShapeType.Sun);
+shape.WrapType = WrapType.Inline;
+shape.Width = 100.0;
+shape.Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
-	// Düzeltmeleri izlemeye başlayın ve ardından başka bir şekil ekleyin.
-	doc.StartTrackRevisions("John Doe");
-	shape = new Shape(doc, ShapeType.Sun);
-	shape.WrapType = WrapType.Inline;
-	shape.Width = 100.0;
-	shape.Height = 100.0;
-	doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+// Yalnızca eklediğimiz iki şekli içeren belgenin şekil koleksiyonunu alın.
+List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
 
-	// Yalnızca eklediğimiz iki şekli içeren belgenin şekil koleksiyonunu alın.
-	List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-	Assert.AreEqual(2, shapes.Count);
+// İlk şekli çıkarın.
+shapes[0].Remove();
 
-	// İlk şekli çıkarın.
-	shapes[0].Remove();
+// Değişiklikler izlenirken bu şekli kaldırdığımız için, şekil bir silme revizyonu olarak sayılır.
+Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
+Assert.True(shapes[0].IsDeleteRevision);
 
-	// Değişiklikler izlenirken bu şekli kaldırdığımız için, şekil bir silme düzeltmesi olarak sayılır.
-	Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-	Assert.True(shapes[0].IsDeleteRevision);
+// Ve değişiklikleri izlerken başka bir şekil ekledik, böylece bu şekil bir ekleme revizyonu olarak sayılacak.
+Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
+Assert.True(shapes[1].IsInsertRevision);
 
-	// Ve değişiklikleri izlerken başka bir şekil ekledik, böylece bu şekil bir ekleme revizyonu olarak sayılacak.
-	Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-	Assert.True(shapes[1].IsInsertRevision);
+//Belgede taşınan bir şekil var, ancak şekil taşıma revizyonlarında bu şeklin iki örneği olacak.
+// Biri varış noktasındaki şekil, diğeri ise orijinal konumundaki şekil olacaktır.
+doc = new Document(MyDir + "Revision shape.docx");
 
-	//Belgede taşınan bir şekil var, ancak şekil taşıma revizyonlarında bu şeklin iki örneği olacak.
-	// Biri varış noktasındaki şekil, diğeri ise orijinal konumundaki şekil olacaktır.
-	doc = new Document(MyDir + "Revision shape.docx");
-	
-	shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-	Assert.AreEqual(2, shapes.Count);
+shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
 
-	// Bu, revizyona geçiş, aynı zamanda varış noktasındaki şekildir.
-	Assert.False(shapes[0].IsMoveFromRevision);
-	Assert.True(shapes[0].IsMoveToRevision);
+// Bu, revizyona geçiş, aynı zamanda varış noktasındaki şekildir.
+Assert.False(shapes[0].IsMoveFromRevision);
+Assert.True(shapes[0].IsMoveToRevision);
 
-	// Bu, şeklin orijinal konumunda olduğu revizyondan harekettir.
-	Assert.True(shapes[1].IsMoveFromRevision);
-	Assert.False(shapes[1].IsMoveToRevision);
-            
+// Bu, şeklin orijinal konumunda olduğu revizyondan harekettir.
+Assert.True(shapes[1].IsMoveFromRevision);
+Assert.False(shapes[1].IsMoveToRevision);
 ```
 

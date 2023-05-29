@@ -36,15 +36,13 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 以下是使用 Aspose.Words for .NET 获取文档中修订组的完整源代码：
 
 ```csharp
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	Document doc = new Document(MyDir + "Revisions.docx");
-
-	foreach(RevisionGroup group in doc.Revisions.Groups)
-	{
-		 Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
-		 Console.WriteLine(group.Text);
-	}
-	
+foreach(RevisionGroup group in doc.Revisions.Groups)
+{
+	 Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
+	 Console.WriteLine(group.Text);
+}
 ```
 
 

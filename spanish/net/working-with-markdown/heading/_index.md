@@ -40,17 +40,16 @@ builder.Writeln("This is an H1 tag");
 
 
 ```csharp
-	// Use un generador de documentos para agregar contenido al documento.
-	DocumentBuilder builder = new DocumentBuilder();
+// Use un generador de documentos para agregar contenido al documento.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// De forma predeterminada, los estilos de título en Word pueden tener formato de negrita y cursiva.
-	//Si no queremos que se nos enfatice, establezca estas propiedades explícitamente en falso.
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+// De forma predeterminada, los estilos de título en Word pueden tener formato de negrita y cursiva.
+//Si no queremos que se nos enfatice, establezca estas propiedades explícitamente en falso.
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	builder.ParagraphFormat.StyleName = "Heading 1";
-	builder.Writeln("This is an H1 tag");
-            
+builder.ParagraphFormat.StyleName = "Heading 1";
+builder.Writeln("This is an H1 tag");
 ```
 
 ¡Felicidades! Ahora ha aprendido a usar la función de encabezados con Aspose.Words para .NET.

@@ -2,7 +2,7 @@
 title: Programmieren mit Stilen und Themen
 linktitle: Programmieren mit Stilen und Themen
 second_title: Aspose.Words für .NET API-Referenz
-description: Tutorials enthalten Zugriffsstile, das Kopieren von Stilen, das Abrufen von Designeigenschaften, das Festlegen von Designeigenschaften und das Einfügen von Stiltrennzeichen
+description: Erfahren Sie mehr über Programmierstile und -themen in Aspose.Words für .NET. Erfahren Sie anhand von Schritt-für-Schritt-Anleitungen und C#-Codebeispielen, wie Sie Stile und Designs in Ihren Word-Dokumenten erstellen, anwenden und anpassen.
 type: docs
 weight: 1410
 url: /de/net/programming-with-styles-and-themes/

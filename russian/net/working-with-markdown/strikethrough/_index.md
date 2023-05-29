@@ -39,13 +39,12 @@ builder.Writeln("This text will be StrikeThrough");
 ### Пример исходного кода для перечеркнутого текста с помощью Aspose.Words для .NET
 
 ```csharp
-	// Используйте конструктор документов, чтобы добавить содержимое в документ.
-	DocumentBuilder builder = new DocumentBuilder();
+// Используйте конструктор документов, чтобы добавить содержимое в документ.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Сделайте текст зачеркнутым.
-	builder.Font.StrikeThrough = true;
-	builder.Writeln("This text will be StrikeThrough");
-            
+// Сделайте текст зачеркнутым.
+builder.Font.StrikeThrough = true;
+builder.Writeln("This text will be StrikeThrough");
 ```
 
 Поздравляем! Теперь вы узнали, как применить стиль перечеркнутого текста с помощью Aspose.Words для .NET.

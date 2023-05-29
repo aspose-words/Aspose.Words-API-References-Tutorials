@@ -20,7 +20,7 @@ I det här kodavsnittet börjar vi med att skapa ett nytt tomt dokument med föl
 Document doc = new Document();
 ```
 
-## Steg 2: Ta bort sammanfogningsfält
+## Steg 2: Ta bort sammanslagningsfält
 
  För att ta bort alla sammanslagningsfält som finns i dokumentet använder vi`DeleteFields()` fungera. 
 

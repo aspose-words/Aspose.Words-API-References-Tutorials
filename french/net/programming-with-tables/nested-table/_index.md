@@ -84,7 +84,7 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 	// Cet appel est important pour créer une table imbriquée dans la première table.
 	// Sans cet appel, les cellules insérées ci-dessous seront ajoutées au tableau externe.
 	builder.EndTable();
-	// Déplacez-vous vers la première cellule du tableau externe.
+	// Accéder à la première cellule du tableau externe.
 	builder.MoveTo(cell.FirstParagraph);
 	// Construisez la table intérieure.
 	builder.InsertCell();

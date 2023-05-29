@@ -2,7 +2,7 @@
 title: Htmlfixedsaveoptions İle Programlama
 linktitle: Htmlfixedsaveoptions İle Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, hedef makineden yazı tipini kullanmayı ve tüm css kurallarını tek bir dosyaya yazmayı içerir
+description: Aspose.Words for .NET'te sabit HTML kaydetme seçenekleriyle nasıl programlanacağını öğrenin. Öğreticiler, sabit mizanpajlı, gömülü resimlere sahip HTML belgeleri oluşturmak için farklı özellikler konusunda size yol gösterir.
 type: docs
 weight: 1610
 url: /tr/net/programming-with-htmlfixedsaveoptions/

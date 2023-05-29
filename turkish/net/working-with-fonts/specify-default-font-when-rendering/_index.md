@@ -43,16 +43,16 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Aspose.Words for .NET kullanarak Oluştururken Varsayılan Yazı Tipini Belirt için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Burada tanımlanan varsayılan yazı tipi oluşturma sırasında bulunamazsa
-	// bunun yerine makinedeki en yakın yazı tipi kullanılır.
-	fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Burada tanımlanan varsayılan yazı tipi oluşturma sırasında bulunamazsa
+// bunun yerine makinedeki en yakın yazı tipi kullanılır.
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Çözüm

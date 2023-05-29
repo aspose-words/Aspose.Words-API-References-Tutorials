@@ -2,7 +2,7 @@
 title: البرمجة باستخدام Htmlfixedsaveoptions
 linktitle: البرمجة باستخدام Htmlfixedsaveoptions
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على استخدام الخط من الجهاز الهدف وكتابة جميع قواعد css في ملف واحد
+description: تعرف على كيفية البرمجة باستخدام خيارات حفظ HTML الثابتة في Aspose.Words for .NET. ترشدك البرامج التعليمية عبر الميزات المختلفة لإنشاء مستندات HTML ذات التخطيط الثابت والصور المضمنة.
 type: docs
 weight: 1610
 url: /ar/net/programming-with-htmlfixedsaveoptions/

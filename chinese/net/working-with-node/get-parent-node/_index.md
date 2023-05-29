@@ -43,14 +43,13 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	//该部分是文档的第一个子节点。
-	Node section = doc.FirstChild;
+//该部分是文档的第一个子节点。
+Node section = doc.FirstChild;
 
-	//该部分的父节点是文档。
-	Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
-            
+//该部分的父节点是文档。
+Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
 这是一个完整的代码示例，用于使用 Aspose.Words for .NET 获取特定节点的父节点。请务必导入必要的引用并按照前面描述的步骤将此代码集成到您的项目中。

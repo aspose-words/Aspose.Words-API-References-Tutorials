@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Structured document tags.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
-## 3. Adım: Stili Alın ve İçerik Kontrolüne Uygulayın
+## 3. Adım: Stili Alın ve İçerik Denetimine Uygulayın
  Belgenin stiller koleksiyonundan istediğiniz stili alın. Bu örnekte, kullanarak "Alıntı" stilini alıyoruz.`StyleIdentifier.Quote` . Ardından, alınan stili şuna atayın:`Style` yapılandırılmış belge etiketinin özelliği.
 
 ```csharp

@@ -2,7 +2,7 @@
 title: Programmazione con Sdt
 linktitle: Programmazione con Sdt
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono il controllo del contenuto del tipo di casella di controllo, lo stato corrente della casella di controllo, i controlli di modifica del contenuto, il controllo del contenuto della casella combinata, il controllo del contenuto della casella di testo RTF,
+description: Scopri come programmare con Structured Content Controls (SDT) in Aspose.Words per .NET. Segui le esercitazioni dettagliate e il codice di esempio in C# per manipolare e personalizzare i controlli del contenuto strutturato nei tuoi documenti Word.
 type: docs
 weight: 1400
 url: /it/net/programming-with-sdt/

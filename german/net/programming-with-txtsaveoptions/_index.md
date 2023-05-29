@@ -2,7 +2,7 @@
 title: Programmieren mit Txtsaveoptions
 linktitle: Programmieren mit Txtsaveoptions
 second_title: Aspose.Words für .NET API-Referenz
-description: Die Tutorials beinhalten das Hinzufügen von Bidi-Markierungen, die Verwendung von Tabulatorzeichen pro Ebene für die Listeneinrückung und die Verwendung von Leerzeichen pro Ebene für die Listeneinrückung
+description: Erfahren Sie, wie Sie mit Optionen zum Speichern von Textdateien in Aspose.Words für .NET programmieren. Erfahren Sie mit Schritt-für-Schritt-Anleitungen und Beispielcode in C#, wie Sie Codierung festlegen, Text formatieren, Zeilenumbrüche verwalten und mehr.
 type: docs
 weight: 1700
 url: /de/net/programming-with-txtsaveoptions/

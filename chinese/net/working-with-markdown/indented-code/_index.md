@@ -38,14 +38,13 @@ builder.Writeln("This is an indented code block");
 ### 使用 Aspose.Words for .NET 的缩进代码示例源代码
 
 ```csharp
-	//使用文档生成器向文档添加内容。
-	DocumentBuilder builder = new DocumentBuilder();
+//使用文档生成器向文档添加内容。
+DocumentBuilder builder = new DocumentBuilder();
 
-	Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
-	builder.ParagraphFormat.Style = indentedCode;
-	builder.Writeln("This is an indented code");
-            
+Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
+builder.ParagraphFormat.Style = indentedCode;
+builder.Writeln("This is an indented code");
 ```
 
-恭喜！您现在已经学习了如何使用 Aspose.Words for .NET 的缩进代码功能。
+恭喜！您现在已经了解了如何使用 Aspose.Words for .NET 的缩进代码功能。
 

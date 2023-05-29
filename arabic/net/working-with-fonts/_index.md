@@ -2,7 +2,7 @@
 title: العمل مع الخطوط
 linktitle: العمل مع الخطوط
 second_title: Aspose.Words لمراجع .NET API
-description: توضح البرامج التعليمية كيفية تطبيق تنسيق الخط ، وتباعد أسطر الخطوط ، وتأثير DMLText ، وتمكين / تعطيل بديل الخط ، وإعدادات الخط الاحتياطي ، والحصول على قائمة بالخط المتاح في مستند Word باستخدام Aspose.Words for .NET
+description: تعلمك دروس العمل مع الخطوط التعليمية كيفية العمل مع الخطوط في Word باستخدام Aspose.Words for .NET. التنسيق والبدائل والإشعارات والمزيد.
 type: docs
 weight: 420
 url: /ar/net/working-with-fonts/

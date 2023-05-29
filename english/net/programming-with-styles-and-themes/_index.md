@@ -2,7 +2,7 @@
 title: Programming With Styles And Themes
 linktitle: Programming With Styles And Themes
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain access styles, copy styles, get theme properties, set theme properties and insert style separator
+description: Learn about programming styles and themes in Aspose.Words for .NET. Learn how to create, apply, and customize styles and themes in your Word documents with step-by-step tutorials and C# code samples.
 type: docs
 weight: 1410
 url: /net/programming-with-styles-and-themes/

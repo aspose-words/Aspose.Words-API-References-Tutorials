@@ -2,7 +2,7 @@
 title: Görüntü kaydetme seçenekleriyle Programlama
 linktitle: Görüntü kaydetme seçenekleriyle Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, tiff ikilileştirme, get tiff page range, format 1bpp indexed, get jpeg page range ve page save callback için ifşa eşiği kontrolünü içerir
+description: Aspose.Words for .NET'te görüntü kaydetme seçenekleriyle programlamayı öğrenin. Word belgelerinizdeki görüntüleri kaydetmek ve değiştirmek için örnek kod içeren adım adım öğreticiler.
 type: docs
 weight: 1630
 url: /tr/net/programming-with-imagesaveoptions/

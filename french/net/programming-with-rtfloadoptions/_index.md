@@ -2,7 +2,7 @@
 title: Programmation avec Rtfloadoptions
 linktitle: Programmation avec Rtfloadoptions
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les tutoriels contiennent reconnaître utf 8text
+description: Apprenez la programmation avec les options de chargement RTF dans Aspose.Words pour .NET. Apprenez à charger et à manipuler des documents RTF à l'aide de didacticiels pas à pas et d'exemples de code C#.
 type: docs
 weight: 1630
 url: /fr/net/programming-with-rtfloadoptions/

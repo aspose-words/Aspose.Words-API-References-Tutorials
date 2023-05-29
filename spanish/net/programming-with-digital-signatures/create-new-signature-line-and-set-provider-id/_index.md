@@ -22,7 +22,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: Configuración de las opciones de la línea de firma
 
-Cree una instancia de la clase SignatureLineOptions y configure las opciones deseadas:
+Cree una instancia de la clase SignatureLineOptions y establezca las opciones deseadas:
 
 ```csharp
 SignatureLineOptions signatureLineOptions = new SignatureLineOptions

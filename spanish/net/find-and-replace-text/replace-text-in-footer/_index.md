@@ -51,7 +51,7 @@ footer
 .Range.Replace("(C) 2006 Aspose Pty Ltd.", "Copyright (C) 2020 by Aspose Pty Ltd.", options);
 ```
 
-## Paso 5: Guarda el documento editado
+## Paso 5: Guarde el documento editado
 
  Finalmente, guardamos el documento modificado en un directorio específico usando el`Save` método:
 

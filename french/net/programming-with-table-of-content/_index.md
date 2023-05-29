@@ -2,7 +2,7 @@
 title: Programmation avec table des matières
 linktitle: Programmation avec table des matières
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent le style de changement du niveau de toc et changent les taquets de tabulation
+description: Explorez la programmation TOC dans Aspose.Words pour .NET. Apprenez à créer et à manipuler des tables des matières dans vos documents Word avec des didacticiels pas à pas et des exemples de code C#.
 type: docs
 weight: 1420
 url: /fr/net/programming-with-table-of-content/

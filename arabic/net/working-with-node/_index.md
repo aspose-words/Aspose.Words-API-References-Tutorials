@@ -2,7 +2,7 @@
 title: العمل مع Node
 linktitle: العمل مع Node
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية استخدام نوع العقدة ، والحصول على العقدة الأصلية ، ووثيقة المالك ، وتكرار جميع العقد ، واجتياز جميع العقد ، وتعداد العقد الفرعية ، وإنشاء عقد فقرة في مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية التعامل مع العقد في مستندات Word باستخدام Aspose.Words for .NET. دروس مفصلة مع أمثلة التعليمات البرمجية.
 type: docs
 weight: 1000
 url: /ar/net/working-with-node/

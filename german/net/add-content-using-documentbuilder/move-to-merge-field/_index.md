@@ -58,25 +58,23 @@ builder.Write(" Text immediately after the field.");
 ### Beispielquellcode für „In Merge-Feld verschieben“ mit Aspose.Words für .NET
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Fügen Sie mit dem DocumentBuilder ein Feld ein und fügen Sie danach eine Textzeile hinzu.
+Field field = builder.InsertField("MERGEFIELD field");
+builder.Write(" Text after the field.");
 
-	// Fügen Sie mit dem DocumentBuilder ein Feld ein und fügen Sie danach eine Textzeile hinzu.
-	Field field = builder.InsertField("MERGEFIELD field");
-	builder.Write(" Text after the field.");
+// Der Cursor des Builders befindet sich derzeit am Ende des Dokuments.
+Assert.Null(builder.CurrentNode);
+// Wir können den Builder auf ein Feld wie dieses verschieben, indem wir den Cursor direkt hinter dem Feld platzieren.
+builder.MoveToField(field, true);
 
-	// Der Cursor des Builders befindet sich derzeit am Ende des Dokuments.
-	Assert.Null(builder.CurrentNode);
-	// Wir können den Builder auf ein Feld wie dieses verschieben, indem wir den Cursor direkt hinter dem Feld platzieren.
-	builder.MoveToField(field, true);
-
-	// Beachten Sie, dass sich der Cursor an einer Stelle hinter dem FieldEnd-Knoten des Feldes befindet, was bedeutet, dass wir uns nicht tatsächlich innerhalb des Feldes befinden.
-	// Wenn wir den DocumentBuilder in ein Feld verschieben möchten,
-	// Wir müssen es mit der Methode DocumentBuilder.MoveTo() in den FieldStart- oder FieldSeparator-Knoten eines Feldes verschieben.
-	Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
-	builder.Write(" Text immediately after the field.");
-	
+// Beachten Sie, dass sich der Cursor an einer Stelle hinter dem FieldEnd-Knoten des Feldes befindet, was bedeutet, dass wir uns nicht tatsächlich innerhalb des Feldes befinden.
+// Wenn wir den DocumentBuilder in ein Feld verschieben möchten,
+// Wir müssen es mit der Methode DocumentBuilder.MoveTo() in den FieldStart- oder FieldSeparator-Knoten eines Feldes verschieben.
+Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
+builder.Write(" Text immediately after the field.");
 ```
 
 ## Abschluss

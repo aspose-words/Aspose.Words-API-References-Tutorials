@@ -48,21 +48,19 @@ Aspose.Words for .NET kullanarak kayan bir görüntü eklemek için eksiksiz kay
 Kayan resimler, belge metninden bağımsız olarak konumlandırılabilen logolar, resimler veya dekoratif öğeler eklemek gibi çeşitli senaryolar için kullanışlıdır.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertImage(ImagesDir + "Transparent background logo.png",
+	RelativeHorizontalPosition.Margin,
+	100,
+	RelativeVerticalPosition.Margin,
+	100,
+	200,
+	100,
+	WrapType.Square);
 
-	builder.InsertImage(ImagesDir + "Transparent background logo.png",
-		RelativeHorizontalPosition.Margin,
-		100,
-		RelativeVerticalPosition.Margin,
-		100,
-		200,
-		100,
-		WrapType.Square);
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
 ```
 
 Görüntü dosyası yolu ve istenen konumlandırma ve sarma seçenekleri dahil olmak üzere kodu, özel gereksinimlerinize göre ayarlamayı unutmayın.

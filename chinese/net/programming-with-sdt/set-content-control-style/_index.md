@@ -2,7 +2,7 @@
 title: 设置内容控件样式
 linktitle: 设置内容控件样式
 second_title: Aspose.Words for .NET API 参考
-description: 了解如何使用 Aspose.Words for .NET 设置 Word 文档中内容控件的样式，并应用一致的格式。
+description: 了解如何使用 Aspose.Words for .NET 设置 Word 文档中内容控件的样式，应用一致的格式。
 type: docs
 weight: 10
 url: /zh/net/programming-with-sdt/set-content-control-style/

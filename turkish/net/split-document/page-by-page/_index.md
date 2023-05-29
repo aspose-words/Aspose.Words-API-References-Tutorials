@@ -48,23 +48,21 @@ MergeDocuments();
 Aspose.Words for .NET'in Sayfa Sayfa özelliğinin tam kaynak kodu burada:
 
 ```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Big document.docx");
 
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Big document.docx");
+int pageCount = doc.PageCount;
 
-	int pageCount = doc.PageCount;
+for (int page = 0; page < pageCount; page++)
+{
+	// Her sayfayı ayrı bir belge olarak kaydedin.
+	Document extractedPage = doc.ExtractPages(page, 1);
+	extractedPage.Save(dataDir + $"SplitDocument.PageByPage_{page + 1}.docx");
+}
 
-	for (int page = 0; page < pageCount; page++)
-	{
-		// Her sayfayı ayrı bir belge olarak kaydedin.
-		Document extractedPage = doc.ExtractPages(page, 1);
-		extractedPage.Save(dataDir + $"SplitDocument.PageByPage_{page + 1}.docx");
-	}
-	
 
-	MergeDocuments();
-
+MergeDocuments();
 ```
 
 Bu kodla, Aspose.Words for .NET kullanarak bir Word belgesini ayrı sayfalara bölebileceksiniz. Gerekirse ayrı belgeleri de birleştirebilirsiniz.

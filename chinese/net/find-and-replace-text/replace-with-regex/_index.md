@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/find-and-replace-text/replace-with-regex/
 ---
 
-在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的 Replace With Regex 函数。此功能允许您根据正则表达式定义的特定模式执行文本替换。
+在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的 Replace With Regex 功能。此功能允许您根据正则表达式定义的特定模式执行文本替换。
 
 ## 先决条件
 
@@ -49,7 +49,7 @@ FindReplaceOptions options = new FindReplaceOptions();
 doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
 ```
 
-## 第五步：保存修改后的文件
+## 第五步：保存修改后的文档
 
 最后，我们将修改后的文档保存到指定目录，使用`Save`方法：
 

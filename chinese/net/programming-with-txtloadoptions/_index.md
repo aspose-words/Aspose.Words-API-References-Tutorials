@@ -2,7 +2,7 @@
 title: 使用 Txtloadoptions 编程
 linktitle: 使用 Txtloadoptions 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含检测带空格的编号、处理空格选项和文档文本方向
+description: 了解如何在 Aspose.Words for .NET 中使用文本文件加载选项进行编程。通过 C# 中的分步教程和示例代码了解如何指定编码、忽略未知字符、处理换行符等。
 type: docs
 weight: 1640
 url: /zh/net/programming-with-txtloadoptions/

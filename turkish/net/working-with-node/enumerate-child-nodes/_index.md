@@ -60,20 +60,19 @@ foreach (Node child in children)
 
 
 ```csharp
-	Document doc = new Document();
-	Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+Document doc = new Document();
+Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 
-	NodeCollection children = paragraph.ChildNodes;
-	foreach (Node child in children)
+NodeCollection children = paragraph.ChildNodes;
+foreach (Node child in children)
+{
+	// Bir paragraf, diziler, şekiller ve diğerleri gibi çeşitli türlerdeki çocukları içerebilir.
+	if (child.NodeType == NodeType.Run)
 	{
-		// Bir paragraf, diziler, şekiller ve diğerleri gibi çeşitli türlerdeki çocukları içerebilir.
-		if (child.NodeType == NodeType.Run)
-		{
-			Run run = (Run) child;
-			Console.WriteLine(run.Text);
-		}
+		Run run = (Run) child;
+		Console.WriteLine(run.Text);
 	}
-            
+}
 ```
 
 Bu, bir paragrafın alt düğümlerini Aspose.Words for .NET ile numaralandırmak için eksiksiz bir kod örneğidir. Referansları içe aktardığınızdan emin olun

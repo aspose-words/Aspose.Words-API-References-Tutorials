@@ -2,7 +2,7 @@
 title: Lavorare con i caratteri
 linktitle: Lavorare con i caratteri
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial mostrano come applicare la formattazione dei caratteri, l'interlinea dei caratteri, l'effetto DMLText, abilitare/disabilitare la sostituzione dei caratteri, le impostazioni di fallback dei caratteri, ottenere l'elenco dei caratteri disponibili nel documento di Word utilizzando Aspose.Words per .NET
+description: Lavorare con i tutorial sui caratteri ti insegna come lavorare con i caratteri in Word con Aspose.Words per .NET. Formattazione, sostituzioni, notifiche e altro.
 type: docs
 weight: 420
 url: /it/net/working-with-fonts/

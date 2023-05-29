@@ -43,16 +43,16 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Пример исходного кода для указания шрифта по умолчанию при рендеринге с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Путь к вашему каталогу документов
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Если заданный здесь шрифт по умолчанию не может быть найден во время рендеринга, тогда
-	// вместо этого используется ближайший шрифт на машине.
-	fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Если заданный здесь шрифт по умолчанию не может быть найден во время рендеринга, тогда
+// вместо этого используется ближайший шрифт на машине.
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Заключение

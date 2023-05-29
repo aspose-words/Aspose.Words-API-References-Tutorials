@@ -2,7 +2,7 @@
 title: Travailler avec le nœud
 linktitle: Travailler avec le nœud
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels expliquent comment utiliser le type de nœud, obtenir le nœud parent, le document propriétaire, récursif tous les nœuds, parcourir tous les nœuds, énumérer les nœuds enfants et créer des nœuds de paragraphe dans Word Document à l'aide de Aspose.Words pour .NET.
+description: Apprenez à travailler avec des nœuds dans des documents Word à l'aide d'Aspose.Words pour .NET. Tutoriels détaillés avec des exemples de code.
 type: docs
 weight: 1000
 url: /fr/net/working-with-node/

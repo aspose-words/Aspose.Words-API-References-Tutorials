@@ -8,10 +8,10 @@ weight: 10
 url: /es/net/programming-with-table-styles-and-formatting/set-cell-padding/
 ---
 
-En este tutorial, lo guiaremos a través del proceso paso a paso para configurar los márgenes de las celdas de la tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta característica en sus propios proyectos. Al final de este tutorial, sabrá cómo ajustar los márgenes (espacio) izquierdo, superior, derecho e inferior del contenido de las celdas en sus tablas en sus documentos de Word usando Aspose.Words para .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para configurar los márgenes de las celdas de la tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo ajustar los márgenes (espacio) izquierdo, superior, derecho e inferior del contenido de las celdas en sus tablas en sus documentos de Word usando Aspose.Words para .NET.
 
 ## Paso 1: Definir el directorio de documentos
-Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento de Word editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento de Word editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

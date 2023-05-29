@@ -2,7 +2,7 @@
 title: البرمجة مع Webextension
 linktitle: البرمجة مع Webextension
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على أجزاء مهام ملحق الويب وتستخدمها
+description: تعرف على كيفية تطوير ملحقات الويب لمستندات Word باستخدام Aspose.Words for .NET. تعرف على كيفية إنشاء ملحقات الويب وتعديلها وتخصيصها ، ودمجها في مستندات Word الخاصة بك.
 type: docs
 weight: 1530
 url: /ar/net/programming-with-webextension/

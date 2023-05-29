@@ -45,19 +45,18 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 ### Exemple de code source pour le code en ligne avec Aspose.Words pour .NET
 
 ```csharp
-	// Utilisez un générateur de document pour ajouter du contenu au document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Utilisez un générateur de document pour ajouter du contenu au document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	//Le nombre de backticks est manqué, un backtick sera utilisé par défaut.
-	Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
-	builder.Font.Style = inlineCode1BackTicks;
-	builder.Writeln("Text with InlineCode style with 1 backtick");
+//Le nombre de backticks est manqué, un backtick sera utilisé par défaut.
+Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
+builder.Font.Style = inlineCode1BackTicks;
+builder.Writeln("Text with InlineCode style with 1 backtick");
 
-	// Il y aura 3 backticks.
-	Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
-	builder.Font.Style = inlineCode3BackTicks;
-	builder.Writeln("Text with InlineCode style with 3 backtick");
-            
+// Il y aura 3 backticks.
+Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
+builder.Font.Style = inlineCode3BackTicks;
+builder.Writeln("Text with InlineCode style with 3 backtick");
 ```
 
 Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité de code en ligne avec Aspose.Words pour .NET.

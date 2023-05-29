@@ -86,48 +86,46 @@ Här är den fullständiga källkoden för att acceptera ändringar i ett dokume
 
 
 ```csharp
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
+Body body = doc.FirstSection.Body;
+Paragraph para = body.FirstParagraph;
 
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	Body body = doc.FirstSection.Body;
-	Paragraph para = body.FirstParagraph;
+// Lägg till text i det första stycket och lägg sedan till ytterligare två stycken.
+para.AppendChild(new Run(doc, "Paragraph 1. "));
+body.AppendParagraph("Paragraph 2. ");
+body.AppendParagraph("Paragraph 3. ");
 
-	// Lägg till text i det första stycket och lägg sedan till ytterligare två stycken.
-	para.AppendChild(new Run(doc, "Paragraph 1. "));
-	body.AppendParagraph("Paragraph 2. ");
-	body.AppendParagraph("Paragraph 3. ");
+// Vi har tre stycken, varav ingen är registrerad som någon typ av revision
+//Om vi lägger till/tar bort något innehåll i dokumentet medan vi spårar revisioner,
+// de kommer att visas som sådana i dokumentet och kan accepteras/avvisas.
+doc.StartTrackRevisions("John Doe", DateTime.Now);
 
-	// Vi har tre stycken, varav ingen är registrerad som någon typ av revision
-	//Om vi lägger till/tar bort något innehåll i dokumentet medan vi spårar revisioner,
-	// de kommer att visas som sådana i dokumentet och kan accepteras/avvisas.
-	doc.StartTrackRevisions("John Doe", DateTime.Now);
+// Detta stycke är en revidering och kommer att ha flaggan "IsInsertRevision" inställd.
+para = body.AppendParagraph("Paragraph 4. ");
+Assert.True(para.IsInsertRevision);
 
-	// Detta stycke är en revidering och kommer att ha flaggan "IsInsertRevision" inställd.
-	para = body.AppendParagraph("Paragraph 4. ");
-	Assert.True(para.IsInsertRevision);
+// Skaffa dokumentets styckesamling och ta bort ett stycke.
+ParagraphCollection paragraphs = body.Paragraphs;
+Assert.AreEqual(4, paragraphs.Count);
+para = paragraphs[2];
+para.Remove();
 
-	// Skaffa dokumentets styckesamling och ta bort ett stycke.
-	ParagraphCollection paragraphs = body.Paragraphs;
-	Assert.AreEqual(4, paragraphs.Count);
-	para = paragraphs[2];
-	para.Remove();
+// Eftersom vi spårar revisioner, finns stycket fortfarande i dokumentet, kommer att ha "IsDeleteRevision" inställt
+// och kommer att visas som en version i Microsoft Word tills vi accepterar eller avvisar alla versioner.
+Assert.AreEqual(4, paragraphs.Count);
+Assert.True(para.IsDeleteRevision);
 
-	// Eftersom vi spårar revisioner, finns stycket fortfarande i dokumentet, kommer att ha "IsDeleteRevision" inställt
-	// och kommer att visas som en version i Microsoft Word tills vi accepterar eller avvisar alla versioner.
-	Assert.AreEqual(4, paragraphs.Count);
-	Assert.True(para.IsDeleteRevision);
+// Raderingsrevisionsparagrafen tas bort när vi accepterar ändringar.
+doc.AcceptAllRevisions();
+Assert.AreEqual(3, paragraphs.Count);
+Assert.That(para, Is.Empty);
 
-	// Raderingsrevisionsparagrafen tas bort när vi accepterar ändringar.
-	doc.AcceptAllRevisions();
-	Assert.AreEqual(3, paragraphs.Count);
-	Assert.That(para, Is.Empty);
+// Att stoppa spårningen av revisioner gör att denna text visas som normal text.
+// Revisioner räknas inte när dokumentet ändras.
+doc.StopTrackRevisions();
 
-	// Att stoppa spårningen av revisioner gör att denna text visas som normal text.
-	// Revisioner räknas inte när dokumentet ändras.
-	doc.StopTrackRevisions();
-
-	// Spara dokumentet.
-	doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-            
+// Spara dokumentet.
+doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```

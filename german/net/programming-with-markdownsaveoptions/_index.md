@@ -2,7 +2,7 @@
 title: Programmieren mit Markdownsaveoptions
 linktitle: Programmieren mit Markdownsaveoptions
 second_title: Aspose.Words für .NET API-Referenz
-description: Die Tutorials umfassen den Export in Markdown mit Ausrichtung des Tabelleninhalts und das Festlegen des Bildordners
+description: Lernen Sie das Programmieren mit MarkdownSaveOptions in Aspose.Words für .NET. Detaillierte Tutorials mit Beispielcode zum Speichern von Word-Dokumenten im Markdown-Format.
 type: docs
 weight: 1640
 url: /de/net/programming-with-markdownsaveoptions/

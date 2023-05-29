@@ -77,6 +77,6 @@ fieldIncludeText.Update();
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-在此示例中，我们创建了一个新文档，初始化了一个段落，插入了一个指定书签名称和源文件名的 FieldIncludeTexten，并以指定的文件名保存了文档。
+在此示例中，我们创建了一个新文档，初始化了一个段落，插入了一个指定书签名称和源文件名的 FieldIncludeTexten，并使用指定的文件名保存了文档。
 
 我们关于使用 Aspose.Words for .NET 的“插入 FieldIncludeText”功能的指南到此结束。

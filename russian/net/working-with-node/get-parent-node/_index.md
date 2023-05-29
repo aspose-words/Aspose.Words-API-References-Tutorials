@@ -43,14 +43,13 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// Раздел является первым дочерним узлом документа.
-	Node section = doc.FirstChild;
+// Раздел является первым дочерним узлом документа.
+Node section = doc.FirstChild;
 
-	// Родительским узлом раздела является документ.
-	Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
-            
+// Родительским узлом раздела является документ.
+Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
 Это полный пример кода для получения родительского узла определенного узла с помощью Aspose.Words для .NET. Обязательно импортируйте необходимые ссылки и выполните шаги, описанные ранее, чтобы интегрировать этот код в свой проект.

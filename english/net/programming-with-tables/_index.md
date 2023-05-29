@@ -2,7 +2,7 @@
 title: Programming With Tables
 linktitle: Programming With Tables
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain auto fit table to contents, auto fit table to fixed column widths, auto fit table to page width, build table from data table, import table from
+description: Learn how to program tables in Aspose.Words for .NET. Learn how to create, manipulate, and format tables in your Word documents with step-by-step tutorials and C# code examples.
 type: docs
 weight: 1590
 url: /net/programming-with-tables/

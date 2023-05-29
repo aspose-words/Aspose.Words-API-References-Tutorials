@@ -2,7 +2,7 @@
 title: 删除内容
 linktitle: 删除内容
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含删除分页符、删除分页符、删除分节符、删除页脚、删除目录和删除目录
+description: 了解如何使用 Aspose.Words for .NET 有效地从 Word 文档中删除内容。按照分步教程并使用 C# 代码示例来学习不同的内容删除技术。
 type: docs
 weight: 1370
 url: /zh/net/remove-content/

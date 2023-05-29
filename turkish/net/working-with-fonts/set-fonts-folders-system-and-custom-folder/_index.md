@@ -55,23 +55,23 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ### Aspose.Words for .NET kullanan Set Fonts Folders System ve Custom Folder için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Varsayılan olarak aranan ortama bağlı yazı tipi kaynakları dizisini alın.
-	// Örneğin bu, Windows makinelerinde bir "Windows\Fonts\" kaynağı içerecektir.
-	// Yazı tipi girişlerini eklemeyi veya kaldırmayı çok daha kolay hale getirmek için bu diziyi yeni bir Listeye ekliyoruz.
-	List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-	// Aspose.Words'e yazı tiplerini aşağıdaki klasörde arama talimatı verecek yeni bir klasör kaynağı ekleyin.
-	FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-	// Yazı tiplerimizi içeren özel klasörü mevcut yazı tipi kaynakları listesine ekleyin.
-	fontSources.Add(folderFontSource);
-	FontSourceBase[] updatedFontSources = fontSources.ToArray();
-	fontSettings.SetFontsSources(updatedFontSources);
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Varsayılan olarak aranan ortama bağlı yazı tipi kaynakları dizisini alın.
+// Örneğin bu, Windows makinelerinde bir "Windows\Fonts\" kaynağı içerecektir.
+// Yazı tipi girişlerini eklemeyi veya kaldırmayı çok daha kolay hale getirmek için bu diziyi yeni bir Listeye ekliyoruz.
+List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
+// Aspose.Words'e yazı tiplerini aşağıdaki klasörde arama talimatı verecek yeni bir klasör kaynağı ekleyin.
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+// Yazı tiplerimizi içeren özel klasörü mevcut yazı tipi kaynakları listesine ekleyin.
+fontSources.Add(folderFontSource);
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+fontSettings.SetFontsSources(updatedFontSources);
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Çözüm

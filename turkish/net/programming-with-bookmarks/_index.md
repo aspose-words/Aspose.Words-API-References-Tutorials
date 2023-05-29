@@ -2,7 +2,7 @@
 title: Yer İşaretleriyle Programlama
 linktitle: Yer İşaretleriyle Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler erişim yer imlerini, yer imi verilerini güncellemeyi, yer imi tablosu sütunlarını, yer imi eklenmiş metni kopyalamayı, yer imi eklenmiş metni eklemeyi, yer imi oluşturmayı, yer imi gizlemeyi göstermeyi içerir
+description: Aspose.Words for .NET kullanarak Word belgelerindeki yer imlerini nasıl değiştireceğinizi öğrenin. Öğreticiler, bir Word belgesinde yer imleri oluşturma, bunlara erişme ve bunları düzenleme adımlarında size yol gösterir.
 type: docs
 weight: 1380
 url: /tr/net/programming-with-bookmarks/
@@ -10,7 +10,7 @@ url: /tr/net/programming-with-bookmarks/
 
 Aspose.Words for .NET eğitimleri, Word belgelerinizdeki yer imleriyle çalışmak için çeşitli özellikler ve programlama teknikleri konusunda size yol gösterir. Bu eğitimlerde yer imleri oluşturmayı, yeniden adlandırmayı, silmeyi ve yer imleri arasında gezinmeyi öğreneceksiniz. Ayrıca, yer imi içeriğini nasıl çıkaracağınızı ve değiştireceğinizi, ayrıca dinamik yer imlerini nasıl ekleyeceğinizi ve bunları özel raporlar oluşturmak için nasıl kullanacağınızı öğreneceksiniz.
 
-Öğreticiler, kavramları anlamanıza ve uygulamanıza yardımcı olacak ayrıntılı kod örnekleri ve adım adım açıklamalar sağlar. İster .NET programlama konusunda yeni olun ister deneyimli olun, bu eğitimler Aspose.Words'taki yer imleri özelliklerinden en iyi şekilde yararlanmanıza yardımcı olacaktır.
+Öğreticiler, kavramları anlamanıza ve uygulamanıza yardımcı olacak ayrıntılı kod örnekleri ve adım adım açıklamalar sunar. İster .NET programlama konusunda yeni olun ister deneyimli olun, bu eğitimler Aspose.Words'taki yer imleri özelliklerinden en iyi şekilde yararlanmanıza yardımcı olacaktır.
 
 Bu öğreticileri izleyerek, Word belgelerinizdeki yer imlerini etkili bir şekilde değiştirebilecek, böylece rapor oluşturma, dinamik içindekiler tablosu oluşturma ve çok daha fazlası gibi çeşitli görevleri otomatik hale getirebileceksiniz. Aspose.Words for .NET yer imi öğreticilerini keşfedin ve Word belgeleriyle çalışırken üretkenliğinizi artırın.
 

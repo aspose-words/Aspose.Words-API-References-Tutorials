@@ -42,13 +42,12 @@ Enfin, nous pouvons enregistrer le document dans le format souhaité.
 
 
 ```csharp
-	// Utilisez un générateur de document pour ajouter du contenu au document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Utilisez un générateur de document pour ajouter du contenu au document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	//Insérer un lien hypertexte.
-	builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", faux);
-	builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
-            
+//Insérer un lien hypertexte.
+builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", faux);
+builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
 
 

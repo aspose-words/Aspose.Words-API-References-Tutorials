@@ -2,7 +2,7 @@
 title: Programmation avec Htmlfixedsaveoptions
 linktitle: Programmation avec Htmlfixedsaveoptions
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent la police d'utilisation de la machine cible et écrivent toutes les règles CSS dans un seul fichier
+description: Apprenez à programmer avec des options d'enregistrement HTML fixes dans Aspose.Words pour .NET. Les didacticiels vous guident à travers les différentes fonctionnalités pour générer des documents HTML avec une mise en page fixe, des images intégrées.
 type: docs
 weight: 1610
 url: /fr/net/programming-with-htmlfixedsaveoptions/

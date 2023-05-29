@@ -52,18 +52,16 @@ Console.WriteLine("\nThis is the end of the document.");
 ### Aspose.Words for .NET kullanarak Document Start/End'e Taşı için örnek kaynak kodu
 
 ```csharp
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// İmleç konumunu belgenizin başına taşıyın.
-	builder.MoveToDocumentStart();
-	Console.WriteLine("\nThis is the beginning of the document.");
+// İmleç konumunu belgenizin başına taşıyın.
+builder.MoveToDocumentStart();
+Console.WriteLine("\nThis is the beginning of the document.");
 
-	// İmleç konumunu belgenizin sonuna taşıyın.
-	builder.MoveToDocumentEnd();
-	Console.WriteLine("\nThis is the end of the document.");
-	
+// İmleç konumunu belgenizin sonuna taşıyın.
+builder.MoveToDocumentEnd();
+Console.WriteLine("\nThis is the end of the document.");
 ```
 
 ## Çözüm

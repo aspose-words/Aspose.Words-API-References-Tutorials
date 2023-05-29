@@ -55,14 +55,14 @@ So ! Sie haben Wörter erfolgreich verarbeitet, indem Sie sie in verschiedenen S
 
 ### Beispielquellcode für die Worttrennung mit Aspose.Words für .NET
 
-	```csharp
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "German text.docx");
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "German text.docx");
 
-	Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
-	Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
+Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
+Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 
-	doc.Save(dataDir + "TreatmentByCesure.pdf");
-	```
+doc.Save(dataDir + "TreatmentByCesure.pdf");
+```
 
 Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und an Ihre spezifischen Bedürfnisse anpassen.

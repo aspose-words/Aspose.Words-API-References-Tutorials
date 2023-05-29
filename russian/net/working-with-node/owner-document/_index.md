@@ -65,27 +65,26 @@ Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null
 ### Пример исходного кода для документа владельца с Aspose.Words для .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// Для создания нового узла любого типа требуется документ, переданный в конструктор.
-	Paragraph para = new Paragraph(doc);
+// Для создания нового узла любого типа требуется документ, переданный в конструктор.
+Paragraph para = new Paragraph(doc);
 
-	// Новый узел абзаца еще не имеет родителя.
-	Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
+// Новый узел абзаца еще не имеет родителя.
+Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 
-	// Но узел абзаца знает свой документ.
-	Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
+// Но узел абзаца знает свой документ.
+Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-	// Тот факт, что узел всегда принадлежит документу, позволяет нам получать доступ и изменять
-	// свойства, которые ссылаются на данные всего документа, такие как стили или списки.
-	para.ParagraphFormat.StyleName = "Heading 1";
+// Тот факт, что узел всегда принадлежит документу, позволяет нам получать доступ и изменять
+// свойства, которые ссылаются на данные всего документа, такие как стили или списки.
+para.ParagraphFormat.StyleName = "Heading 1";
 
-	// Теперь добавьте абзац к основному тексту первого раздела.
-	doc.FirstSection.Body.AppendChild(para);
+// Теперь добавьте абзац к основному тексту первого раздела.
+doc.FirstSection.Body.AppendChild(para);
 
-	//Узел абзаца теперь является дочерним элементом узла Body.
-	Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
-            
+//Узел абзаца теперь является дочерним элементом узла Body.
+Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
 

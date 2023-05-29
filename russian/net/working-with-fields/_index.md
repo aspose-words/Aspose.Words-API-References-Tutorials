@@ -2,7 +2,7 @@
 title: Работа с полями
 linktitle: Работа с полями
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники показывают, как вставить поле, обновить культуру поля, заменить гиперссылку поля, удалить поле и вставить вложенные поля в документ Word, используя Aspose.Words для .NET.
+description: Комплексный ресурс для работы с полями в документах Word с использованием Aspose.Words для .NET. Учебники, примеры и подробные объяснения.
 type: docs
 weight: 140
 url: /ru/net/working-with-fields/

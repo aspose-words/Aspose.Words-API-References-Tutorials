@@ -1,8 +1,8 @@
 ---
-title: 使用注释
-linktitle: 使用注释
+title: 使用评论
+linktitle: 使用评论
 second_title: Aspose.Words for .NET API 参考
-description: 教程展示了如何在 Aspose.Words for .NET 中添加评论、锚定评论、添加/删除评论回复、提取评论以及解析评论和回复
+description: 使用 Aspose.Words for .NET 探索 Word 文档中的评论管理功能。使用分步教程了解如何添加、删除、搜索和格式化评论。
 type: docs
 weight: 50
 url: /zh/net/working-with-comments/

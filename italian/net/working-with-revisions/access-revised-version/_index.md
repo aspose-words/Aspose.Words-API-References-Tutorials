@@ -51,26 +51,24 @@ foreach (Revision revision in doc.Revisions)
 Ecco il codice sorgente completo per accedere alla versione rivista di un documento utilizzando Aspose.Words per .NET:
 
 ```csharp
+Document doc = new Document(MyDir + "Revisions.docx");
+doc.UpdateListLabels();
 
-	Document doc = new Document(MyDir + "Revisions.docx");
-	doc.UpdateListLabels();
+// Passa alla versione rivista del documento.
+doc.RevisionsView = RevisionsView.Final;
 
-	// Passa alla versione rivista del documento.
-	doc.RevisionsView = RevisionsView.Final;
-
-	foreach (Revision revision in doc.Revisions)
-	{
-		 if (revision.ParentNode.NodeType == NodeType.Paragraph)
+foreach (Revision revision in doc.Revisions)
+{
+	 if (revision.ParentNode.NodeType == NodeType.Paragraph)
+	 {
+		 Paragraph paragraph = (Paragraph)revision.ParentNode;
+		 if (paragraph.IsListItem)
 		 {
-			 Paragraph paragraph = (Paragraph)revision.ParentNode;
-			 if (paragraph.IsListItem)
-			 {
-				 Console.WriteLine(paragraph.ListLabel.LabelString);
-				 Console.WriteLine(paragraph.ListFormat.ListLevel);
-			 }
+			 Console.WriteLine(paragraph.ListLabel.LabelString);
+			 Console.WriteLine(paragraph.ListFormat.ListLevel);
 		 }
-	}
-
+	 }
+}
 ```
 
 

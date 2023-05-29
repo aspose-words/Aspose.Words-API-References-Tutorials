@@ -97,7 +97,7 @@ authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 row.AppendChild(authorSdt);
 ```
 
-## 第 8 步：保存文件
+## 第 8 步：保存文档
 使用 将修改后的文档保存到指定目录`Save`方法。提供具有适当文件扩展名的所需文件名。在此示例中，我们将文档保存为“WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx”。
 
 ```csharp

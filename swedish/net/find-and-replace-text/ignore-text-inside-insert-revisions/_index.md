@@ -59,7 +59,7 @@ Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## Steg 6: Visa den modifierade dokumentutmatningen
+## Steg 6: Visa den modifierade dokumentutgången
 
 Efter att ha tillämpat sökningen och ersätt, kan vi visa det ändrade innehållet i dokumentet med hjälp av`GetText` metod:
 

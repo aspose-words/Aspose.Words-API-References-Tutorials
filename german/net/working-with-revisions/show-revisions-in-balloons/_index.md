@@ -50,19 +50,17 @@ Die Ausgabe kann zur Verbesserung der Lesbarkeit im Markdown formatiert werden. 
 Hier ist der vollständige Quellcode zum Anzeigen von Revisionen in Sprechblasen in einem Dokument mit Aspose.Words für .NET:
 
 ```csharp
-    
-	// Der Pfad zum Dokumentenverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";	
-	Document doc = new Document(MyDir + "Revisions.docx");
+// Der Pfad zum Dokumentenverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";	
+Document doc = new Document(MyDir + "Revisions.docx");
 
-	// Rendert, fügt Revisionen inline ein, löscht und formatiert Revisionen in Sprechblasen.
-	doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-	doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-	// Rendert Revisionsbalken auf der rechten Seite einer Seite.
-	doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
-	
-	doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
-	
+// Rendert, fügt Revisionen inline ein, löscht und formatiert Revisionen in Sprechblasen.
+doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
+doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
+// Rendert Revisionsbalken auf der rechten Seite einer Seite.
+doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
+
+doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
 

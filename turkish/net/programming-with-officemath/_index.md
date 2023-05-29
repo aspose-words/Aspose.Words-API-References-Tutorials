@@ -2,7 +2,7 @@
 title: Officemath ile Programlama
 linktitle: Officemath ile Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler matematik denklemleri içerir
+description: Aspose.Words for .NET'te Office Math formülleriyle programlamayı keşfedin. Word belgelerinde matematik denklemleri oluşturmak, düzenlemek ve biçimlendirmek için adım adım öğreticiler ve örnek kod.
 type: docs
 weight: 1550
 url: /tr/net/programming-with-officemath/

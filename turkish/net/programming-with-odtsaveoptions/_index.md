@@ -2,7 +2,7 @@
 title: Odtsaveoptions ile Programlama
 linktitle: Odtsaveoptions ile Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler ölçü birimi içerir
+description: Aspose.Words for .NET'teki ODT kaydetme seçenekleriyle programlamayı öğrenin. Word belgelerini ODT biçiminde kaydetmek için örnek kod içeren ayrıntılı öğreticiler.
 type: docs
 weight: 1650
 url: /tr/net/programming-with-odtsaveoptions/

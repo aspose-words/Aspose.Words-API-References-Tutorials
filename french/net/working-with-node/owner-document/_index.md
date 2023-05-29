@@ -65,27 +65,26 @@ Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null
 ### Exemple de code source pour le document propriétaire avec Aspose.Words pour .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// La création d'un nouveau nœud de n'importe quel type nécessite un document transmis au constructeur.
-	Paragraph para = new Paragraph(doc);
+// La création d'un nouveau nœud de n'importe quel type nécessite un document transmis au constructeur.
+Paragraph para = new Paragraph(doc);
 
-	// Le nouveau nœud de paragraphe n'a pas encore de parent.
-	Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
+// Le nouveau nœud de paragraphe n'a pas encore de parent.
+Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 
-	// Mais le nœud de paragraphe connaît son document.
-	Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
+// Mais le nœud de paragraphe connaît son document.
+Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-	// Le fait qu'un nœud appartienne toujours à un document nous permet d'accéder et de modifier
-	// les propriétés qui référencent les données à l'échelle du document, telles que les styles ou les listes.
-	para.ParagraphFormat.StyleName = "Heading 1";
+// Le fait qu'un nœud appartienne toujours à un document nous permet d'accéder et de modifier
+// les propriétés qui référencent les données à l'échelle du document, telles que les styles ou les listes.
+para.ParagraphFormat.StyleName = "Heading 1";
 
-	// Ajoutez maintenant le paragraphe au texte principal de la première section.
-	doc.FirstSection.Body.AppendChild(para);
+// Ajoutez maintenant le paragraphe au texte principal de la première section.
+doc.FirstSection.Body.AppendChild(para);
 
-	//Le nœud Paragraphe est maintenant un enfant du nœud Corps.
-	Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
-            
+//Le nœud Paragraphe est maintenant un enfant du nœud Corps.
+Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
 

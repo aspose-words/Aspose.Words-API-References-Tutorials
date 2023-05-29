@@ -40,15 +40,14 @@ doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 
 
 ```csharp
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Quotes.md");
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Quotes.md");
 
-	// Давайте удалим форматирование Заголовка из Цитаты в самом последнем абзаце.
-	Paragraph paragraph = doc.FirstSection.Body.LastParagraph;
-	paragraph.ParagraphFormat.Style = doc.Styles["Quote"];
+// Давайте удалим форматирование Заголовка из Цитаты в самом последнем абзаце.
+Paragraph paragraph = doc.FirstSection.Body.LastParagraph;
+paragraph.ParagraphFormat.Style = doc.Styles["Quote"];
 
-	doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
-            
+doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 ```
 
 Поздравляем! Теперь вы узнали, как читать документ Markdown с помощью Aspose.Words для .NET.

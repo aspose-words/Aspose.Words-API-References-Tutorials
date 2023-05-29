@@ -2,7 +2,7 @@
 title: Arbeiten mit Silbentrennung
 linktitle: Arbeiten mit Silbentrennung
 second_title: Aspose.Words für .NET API-Referenz
-description: Die Tutorials enthalten die Silbentrennung von Wörtern in Sprachen, das Laden des Silbentrennungswörterbuchs für Sprachen und einen Silbentrennungsrückruf mit Aspose.Words für .NET.
+description: Erfahren Sie, wie Sie die Worttrennung in Word-Dokumenten mit Aspose.Words für .NET verwalten. Vollständige Tutorials und praktische Beispiele enthalten.
 type: docs
 weight: 750
 url: /de/net/working-with-hyphenation/

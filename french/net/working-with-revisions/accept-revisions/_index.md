@@ -86,48 +86,46 @@ Voici le code source complet pour accepter les modifications dans un document à
 
 
 ```csharp
+// Chemin d'accès au répertoire des documents.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
+Body body = doc.FirstSection.Body;
+Paragraph para = body.FirstParagraph;
 
-	// Chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	Body body = doc.FirstSection.Body;
-	Paragraph para = body.FirstParagraph;
+// Ajoutez du texte au premier paragraphe, puis ajoutez deux autres paragraphes.
+para.AppendChild(new Run(doc, "Paragraph 1. "));
+body.AppendParagraph("Paragraph 2. ");
+body.AppendParagraph("Paragraph 3. ");
 
-	// Ajoutez du texte au premier paragraphe, puis ajoutez deux autres paragraphes.
-	para.AppendChild(new Run(doc, "Paragraph 1. "));
-	body.AppendParagraph("Paragraph 2. ");
-	body.AppendParagraph("Paragraph 3. ");
+// Nous avons trois paragraphes, dont aucun n'est enregistré comme un type de révision
+//Si nous ajoutons/supprimons du contenu dans le document lors du suivi des révisions,
+// ils seront affichés tels quels dans le document et pourront être acceptés/rejetés.
+doc.StartTrackRevisions("John Doe", DateTime.Now);
 
-	// Nous avons trois paragraphes, dont aucun n'est enregistré comme un type de révision
-	//Si nous ajoutons/supprimons du contenu dans le document lors du suivi des révisions,
-	// ils seront affichés tels quels dans le document et pourront être acceptés/rejetés.
-	doc.StartTrackRevisions("John Doe", DateTime.Now);
+// Ce paragraphe est une révision et aura le drapeau "IsInsertRevision" correspondant défini.
+para = body.AppendParagraph("Paragraph 4. ");
+Assert.True(para.IsInsertRevision);
 
-	// Ce paragraphe est une révision et aura le drapeau "IsInsertRevision" correspondant défini.
-	para = body.AppendParagraph("Paragraph 4. ");
-	Assert.True(para.IsInsertRevision);
+// Obtenez la collection de paragraphes du document et supprimez un paragraphe.
+ParagraphCollection paragraphs = body.Paragraphs;
+Assert.AreEqual(4, paragraphs.Count);
+para = paragraphs[2];
+para.Remove();
 
-	// Obtenez la collection de paragraphes du document et supprimez un paragraphe.
-	ParagraphCollection paragraphs = body.Paragraphs;
-	Assert.AreEqual(4, paragraphs.Count);
-	para = paragraphs[2];
-	para.Remove();
+// Étant donné que nous suivons les révisions, le paragraphe existe toujours dans le document, aura l'ensemble "IsDeleteRevision"
+// et sera affiché en tant que révision dans Microsoft Word, jusqu'à ce que nous acceptions ou rejetions toutes les révisions.
+Assert.AreEqual(4, paragraphs.Count);
+Assert.True(para.IsDeleteRevision);
 
-	// Étant donné que nous suivons les révisions, le paragraphe existe toujours dans le document, aura l'ensemble "IsDeleteRevision"
-	// et sera affiché en tant que révision dans Microsoft Word, jusqu'à ce que nous acceptions ou rejetions toutes les révisions.
-	Assert.AreEqual(4, paragraphs.Count);
-	Assert.True(para.IsDeleteRevision);
+// Le paragraphe de suppression de révision est supprimé une fois que nous acceptons les modifications.
+doc.AcceptAllRevisions();
+Assert.AreEqual(3, paragraphs.Count);
+Assert.That(para, Is.Empty);
 
-	// Le paragraphe de suppression de révision est supprimé une fois que nous acceptons les modifications.
-	doc.AcceptAllRevisions();
-	Assert.AreEqual(3, paragraphs.Count);
-	Assert.That(para, Is.Empty);
+// L'arrêt du suivi des révisions fait apparaître ce texte comme du texte normal.
+// Les révisions ne sont pas comptées lorsque le document est modifié.
+doc.StopTrackRevisions();
 
-	// L'arrêt du suivi des révisions fait apparaître ce texte comme du texte normal.
-	// Les révisions ne sont pas comptées lorsque le document est modifié.
-	doc.StopTrackRevisions();
-
-	// Enregistrez le document.
-	doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-            
+// Enregistrez le document.
+doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```

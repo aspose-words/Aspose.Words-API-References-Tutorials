@@ -2,7 +2,7 @@
 title: Programming With Txtsaveoptions
 linktitle: Programming With Txtsaveoptions
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain add bidi marks, use tab character per level for list indentation and use space character per level for list indentation
+description: Learn how to program with text file saving options in Aspose.Words for .NET. Learn how to specify encoding, format text, manage line breaks, and more with step-by-step tutorials and sample code in C#.
 type: docs
 weight: 1700
 url: /net/programming-with-txtsaveoptions/

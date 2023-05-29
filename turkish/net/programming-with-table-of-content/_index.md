@@ -2,7 +2,7 @@
 title: İçindekiler ile Programlama
 linktitle: İçindekiler ile Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, toc seviyesinin değişiklik stilini ve toc sekme duraklarını değiştirmeyi içerir
+description: Aspose.Words for .NET'te TOC programlamayı keşfedin. Adım adım öğreticiler ve C# kod örnekleri ile Word belgelerinizde içindekiler tablosunu nasıl oluşturacağınızı ve değiştireceğinizi öğrenin.
 type: docs
 weight: 1420
 url: /tr/net/programming-with-table-of-content/

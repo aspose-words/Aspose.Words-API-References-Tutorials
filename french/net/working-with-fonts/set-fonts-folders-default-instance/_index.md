@@ -31,7 +31,7 @@ FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Étape 4 : Enregistrer le document rendu
+## Étape 4 : Enregistrer le document rendu
  Enfin, vous pouvez enregistrer le document rendu dans un fichier à l'aide de la`Save()` méthode de la`Document` classe. Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects.
 
 ```csharp

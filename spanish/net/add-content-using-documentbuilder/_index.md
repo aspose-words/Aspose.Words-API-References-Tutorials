@@ -2,7 +2,7 @@
 title: Agregar contenido usando Documentbuilder
 linktitle: Agregar contenido usando Documentbuilder
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen crear un nuevo documento, insertar un marcador en el generador de documentos, crear una tabla, insertar una regla horizontal, formato de regla horizontal, insertar una ruptura, insertar texto i
+description: Aprenda a agregar contenido a sus documentos de Word usando DocumentBuilder con Aspose.Words para .NET. Tutoriales prácticos con ejemplos de código detallados.
 type: docs
 weight: 1460
 url: /es/net/add-content-using-documentbuilder/

@@ -64,7 +64,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilde
 
 这样就完成了使用Aspose.Words for .NET 将一个文档插入另一个文档的实现。
 
-### 使用 Aspose.Words for .NET 的 Insert Document With Builder 示例源代码 
+### 使用 Aspose.Words for .NET 的 Insert Document With Builder 的示例源代码 
 
 ```csharp
 	//文档目录的路径

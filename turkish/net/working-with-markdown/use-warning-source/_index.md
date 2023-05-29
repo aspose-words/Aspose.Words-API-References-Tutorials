@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-markdown/use-warning-source/
 ---
 
-Bu örnekte, uyarı kaynağının Aspose.Words for .NET ile nasıl kullanılacağını göstereceğiz. Uyarı kaynağı, geri arama işlevini kullanırken uyarının kaynağını belirtir.
+Bu örnekte, uyarı kaynağının Aspose.Words for .NET ile nasıl kullanılacağını göstereceğiz. Uyarı kaynağı, geri arama işlevini kullanırken uyarının kaynağını gösterir.
 
 ## 1. Adım: Belgeyi yükleme
 
@@ -44,21 +44,20 @@ if (warningInfo.Source == WarningSource.Markdown)
 ### Uyarı Kaynağını Aspose.Words for .NET ile Kullanmak için Örnek Kaynak Kodu
 
 ```csharp
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(MyDir + "Emphases markdown warning.docx");
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(MyDir + "Emphases markdown warning.docx");
 
-	WarningInfoCollection warnings = new WarningInfoCollection();
-	doc.WarningCallback = warnings;
+WarningInfoCollection warnings = new WarningInfoCollection();
+doc.WarningCallback = warnings;
 
-	doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
+doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
 
-	foreach (WarningInfo warningInfo in warnings)
-	{
-		if (warningInfo.Source == WarningSource.Markdown)
-			Console.WriteLine(warningInfo.Description);
-	}
-            
+foreach (WarningInfo warningInfo in warnings)
+{
+	if (warningInfo.Source == WarningSource.Markdown)
+		Console.WriteLine(warningInfo.Description);
+}
 ```
 
 Tebrikler! Artık uyarı kaynağının Aspose.Words for .NET ile nasıl kullanılacağını öğrendiniz.

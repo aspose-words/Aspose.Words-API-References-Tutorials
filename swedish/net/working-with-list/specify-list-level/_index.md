@@ -66,7 +66,7 @@ for (int i = 0; i < 9; i++)
 
 ## Steg 6: Sluta formatera listan
 
- För att stoppa listformateringen, ställ in`null` till`List` egenskap hos dokumentgeneratorn:
+ För att stoppa listformateringen, ställ in`null` till`List` egenskapen för dokumentgeneratorn:
 
 ```csharp
 builder. ListFormat. List = null;

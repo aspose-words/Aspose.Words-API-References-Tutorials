@@ -2,7 +2,7 @@
 title: Lavorare con i campi
 linktitle: Lavorare con i campi
 second_title: Riferimento all'API Aspose.Words per .NET
-description: tutorial mostrano come inserire il campo, aggiornare la cultura archiviata, sostituire il collegamento ipertestuale del campo, rimuovere il campo e inserire campi nidificati nel documento di Word utilizzando in Aspose.Words per .NET
+description: Una risorsa completa per lavorare con i campi nei documenti di Word utilizzando Aspose.Words per .NET. Tutorial, esempi e spiegazioni dettagliate.
 type: docs
 weight: 140
 url: /it/net/working-with-fields/

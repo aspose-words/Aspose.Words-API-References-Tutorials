@@ -29,12 +29,11 @@ builder. InsertHorizontalRule();
 ## Aspose.Words for .NET ile yatay kural için örnek kaynak kodu
 
 ```csharp
-	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
-	DocumentBuilder builder = new DocumentBuilder();
+// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Yatay kural ekleyin.
-	builder.InsertHorizontalRule();
-            
+// Yatay kural ekleyin.
+builder.InsertHorizontalRule();
 ```
 
 Tebrikler! Artık yatay kural özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.

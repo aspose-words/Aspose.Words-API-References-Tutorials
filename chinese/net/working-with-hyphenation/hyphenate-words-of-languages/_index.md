@@ -55,14 +55,14 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 
 ### 使用 Aspose.Words for .NET 的单词断字示例源代码
 
-	```csharp
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "German text.docx");
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "German text.docx");
 
-	Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
-	Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
+Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
+Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 
-	doc.Save(dataDir + "TreatmentByCesure.pdf");
-	```
+doc.Save(dataDir + "TreatmentByCesure.pdf");
+```
 
 随意在您自己的项目中使用此代码并修改它以满足您的特定需求。

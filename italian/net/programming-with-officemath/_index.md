@@ -2,7 +2,7 @@
 title: Programmazione con OfficeMath
 linktitle: Programmazione con OfficeMath
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono equazioni matematiche
+description: Esplora la programmazione con le formule di Office Math in Aspose.Words per .NET. Esercitazioni dettagliate e codice di esempio per la creazione, la modifica e la formattazione di equazioni matematiche nei documenti di Word.
 type: docs
 weight: 1550
 url: /it/net/programming-with-officemath/

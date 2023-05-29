@@ -2,7 +2,7 @@
 title: 使用 Htmlfixedsaveoptions 编程
 linktitle: 使用 Htmlfixedsaveoptions 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含使用目标机器的字体并将所有 css 规则写入单个文件
+description: 了解如何在 Aspose.Words for .NET 中使用固定的 HTML 保存选项进行编程。这些教程将指导您使用不同的功能来生成具有固定布局、嵌入图像的 HTML 文档。
 type: docs
 weight: 1610
 url: /zh/net/programming-with-htmlfixedsaveoptions/

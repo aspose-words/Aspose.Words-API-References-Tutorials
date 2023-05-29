@@ -63,7 +63,7 @@ chart.AxisX.TickLabelSpacing = 2;
 doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 ```
 
-这样就完成了使用Aspose.Words for .NET设置轴上标签之间间隔单位的实现。
+这样就完成了使用Aspose.Words for .NET设置轴上标签间间隔单位的实现。
 
 ### Interval Unit Between Labels On Axis using Aspose.Words for .NET 示例源代码 
 

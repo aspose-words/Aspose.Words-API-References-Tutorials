@@ -2,7 +2,7 @@
 title: Pclsaveoptions ile Programlama
 linktitle: Pclsaveoptions ile Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler rasterleştirilmiş dönüştürülmüş öğeler içerir
+description: Aspose.Words for .NET'te PCL kaydetme seçenekleriyle programlamayı keşfedin. Adım adım öğreticiler ve kod örnekleri ile Word belgelerini PCL biçiminde kaydetmeyi nasıl değiştireceğinizi ve özelleştireceğinizi öğrenin.
 type: docs
 weight: 1670
 url: /tr/net/programming-with-pclsaveoptions/

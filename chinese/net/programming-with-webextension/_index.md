@@ -2,7 +2,7 @@
 title: 使用 Webextension 编程
 linktitle: 使用 Webextension 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含并使用 Web 扩展任务窗格
+description: 了解如何使用 Aspose.Words for .NET 为 Word 文档开发 Web 扩展。了解如何创建、修改和自定义 Web 扩展，并将它们集成到您的 Word 文档中。
 type: docs
 weight: 1530
 url: /zh/net/programming-with-webextension/

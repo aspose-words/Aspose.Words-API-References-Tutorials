@@ -2,7 +2,7 @@
 title: 使用文件格式编程
 linktitle: 使用文件格式编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含检测文件格式、检测文档签名和验证加密文档
+description: 了解如何在 Aspose.Words for .NET 中使用文件格式。这些教程将带您了解各种功能，例如检测文件格式、在格式之间进行转换。
 type: docs
 weight: 1610
 url: /zh/net/programming-with-fileformat/
@@ -18,4 +18,4 @@ Aspose.Words for .NET 关于使用文件格式进行编程的教程为希望在�
 | --- | --- |
 | [检测文件格式](./detect-file-format/) | 使用 Aspose.Words for .NET 检测文档文件格式的分步指南。 |
 | [检测文档签名](./detect-document-signatures/) | 使用 Aspose.Words for .NET 检测文档中数字签名的分步指南。 |
-| [验证加密文件](./verify-encrypted-document/) | 验证文档是否使用 Aspose.Words for .NET 加密的分步指南。 |
+| [验证加密文档](./verify-encrypted-document/) | 验证文档是否使用 Aspose.Words for .NET 加密的分步指南。 |

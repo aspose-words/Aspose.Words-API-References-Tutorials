@@ -2,7 +2,7 @@
 title: 使用 Officemath 编程
 linktitle: 使用 Officemath 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含数学方程式
+description: 在 Aspose.Words for .NET 中使用 Office Math 公式探索编程。在 Word 文档中创建、编辑和格式化数学方程式的分步教程和示例代码。
 type: docs
 weight: 1550
 url: /zh/net/programming-with-officemath/

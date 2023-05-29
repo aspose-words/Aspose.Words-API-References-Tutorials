@@ -30,12 +30,11 @@ builder.Insertlink("Aspose", "https://www.aspose.com "، خطأ) ؛
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
-	DocumentBuilder builder = new DocumentBuilder();
+// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// أدخل ارتباط.
-	builder.Insertlink("Aspose", "https://www.aspose.com "، خطأ) ؛
-            
+// أدخل ارتباط.
+builder.Insertlink("Aspose", "https://www.aspose.com "، خطأ) ؛
 ```
 تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة الروابط مع Aspose.Words for .NET.
 

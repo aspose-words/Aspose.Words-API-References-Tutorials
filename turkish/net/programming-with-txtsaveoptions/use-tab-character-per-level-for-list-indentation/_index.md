@@ -86,4 +86,4 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListInde
 
 ```
 
-Sekme karakterlerini kullanarak liste girintili belgenizi oluşturmayı bitirdiğinize göre, makale içeriğinizi biçimlendirmek için Markdown'u kullanabilirsiniz. Başlıkları, altyazıları ve dahil edilen kaynak kodunu vurgulamak için uygun biçimlendirme etiketlerini kullandığınızdan emin olun.
+Sekme karakterlerini kullanarak liste girintili belgenizi oluşturmayı bitirdiğinize göre, makale içeriğinizi biçimlendirmek için Markdown'ı kullanabilirsiniz. Başlıkları, altyazıları ve dahil edilen kaynak kodunu vurgulamak için uygun biçimlendirme etiketlerini kullandığınızdan emin olun.

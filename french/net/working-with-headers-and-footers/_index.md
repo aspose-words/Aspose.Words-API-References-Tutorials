@@ -2,7 +2,7 @@
 title: Utilisation des en-têtes et pieds de page
 linktitle: Utilisation des en-têtes et pieds de page
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels expliquent comment créer un pied de page d'en-tête et copier le pied de page d'en-tête de la section précédente du document Word à l'aide de Aspose.Words pour .NET.
+description: Apprenez à utiliser les en-têtes et les pieds de page dans les documents Word à l'aide d'Aspose.Words pour .NET. Tutoriels complets et exemples pratiques.
 type: docs
 weight: 730
 url: /fr/net/working-with-headers-and-footers/

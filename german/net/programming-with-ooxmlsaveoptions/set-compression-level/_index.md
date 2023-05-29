@@ -66,6 +66,6 @@ In diesem Tutorial haben wir die Funktionalität zum Festlegen der Komprimierung
 
 Die Verwendung der Komprimierung kann hilfreich sein, wenn Sie die Größe der generierten Dateien reduzieren müssen, insbesondere bei großen Dokumenten. Dies kann das Speichern, Teilen und Übertragen von Dokumenten erleichtern.
 
-Aspose.Words für .NET bietet eine Reihe leistungsstarker Optionen und Funktionen zur Dokumentenbearbeitung. Durch die Verwendung der entsprechenden Sicherungsoptionen können Sie den Dokumenterstellungsprozess anpassen und die Leistung Ihrer Anwendung optimieren.
+Aspose.Words für .NET bietet eine Reihe leistungsstarker Optionen und Funktionen zur Dokumentenbearbeitung. Durch die Verwendung der entsprechenden Sicherungsoptionen können Sie den Dokumentenerstellungsprozess anpassen und die Leistung Ihrer Anwendung optimieren.
 
 Entdecken Sie gerne weitere Funktionen von Aspose.Words für .NET, um Ihren Workflow bei der Dokumentenerstellung zu verbessern.

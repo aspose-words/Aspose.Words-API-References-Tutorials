@@ -49,19 +49,19 @@ Hier ist der vollständige Quellcode zum Einfügen eines Hyperlinks mit Aspose.W
 Hyperlinks sind eine leistungsstarke Möglichkeit, die Interaktivität und den Nutzen Ihrer Word-Dokumente zu verbessern. Sie können verwendet werden, um auf externe Ressourcen zu verweisen, zusätzliche Informationen bereitzustellen oder Navigationselemente innerhalb des Dokuments zu erstellen.
 
 ```csharp
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.Write("Please make sure to visit ");
-	builder.Font.Color = Color.Blue;
-	builder.Font.Underline = Underline.Single;
-	
-	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
-	
-	builder.Font.ClearFormatting();
-	builder.Write(" for more information.");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
+builder.Write("Please make sure to visit ");
+builder.Font.Color = Color.Blue;
+builder.Font.Underline = Underline.Single;
+
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
+
+builder.Font.ClearFormatting();
+builder.Write(" for more information.");
+
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
 Denken Sie daran, den Code entsprechend Ihren spezifischen Anforderungen anzupassen, einschließlich des Hyperlinktexts und der URL. Erweitern Sie es nach Bedarf mit zusätzlicher Formatierung oder Funktionalität.

@@ -2,7 +2,7 @@
 title: Arbeiten mit Kopf- und Fußzeilen
 linktitle: Arbeiten mit Kopf- und Fußzeilen
 second_title: Aspose.Words für .NET API-Referenz
-description: In den Tutorials erfahren Sie, wie Sie mit Aspose.Words für .NET eine Kopfzeile und eine Fußzeile aus dem vorherigen Abschnitt eines Word-Dokuments erstellen und kopieren.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mit Kopf- und Fußzeilen in Word-Dokumenten arbeiten. Komplette Tutorials und praktische Beispiele.
 type: docs
 weight: 730
 url: /de/net/working-with-headers-and-footers/

@@ -39,13 +39,12 @@ builder.Writeln("This text will be StrikeThrough");
 ### Exempel på källkod för genomstruken text med Aspose.Words för .NET
 
 ```csharp
-	// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
-	DocumentBuilder builder = new DocumentBuilder();
+// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Gör texten genomstruken.
-	builder.Font.StrikeThrough = true;
-	builder.Writeln("This text will be StrikeThrough");
-            
+// Gör texten genomstruken.
+builder.Font.StrikeThrough = true;
+builder.Writeln("This text will be StrikeThrough");
 ```
 
 Grattis! Du har nu lärt dig hur du använder den genomstrukna textstilen med Aspose.Words för .NET.

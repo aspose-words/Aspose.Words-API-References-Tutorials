@@ -26,7 +26,7 @@ Ensuite, importez les espaces de noms nécessaires en haut de votre fichier C# 
 using Aspose.Words;
 ```
 
-## Étape 3 : Initialisation de l'objet document
+## Étape 3 : Initialisation de l'objet Document
 
  Dans cette étape, vous allez initialiser le`Document` objet avec le chemin vers votre document source au format .doc. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel du répertoire où se trouve votre document, et`"Document.doc"` avec le nom de votre document source. Voici l'extrait de code :
 

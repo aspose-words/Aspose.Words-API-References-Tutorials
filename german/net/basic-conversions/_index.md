@@ -2,7 +2,7 @@
 title: Grundlegende Konvertierungen
 linktitle: Grundlegende Konvertierungen
 second_title: Aspose.Words für .NET API-Referenz
-description: Die Tutorials umfassen Doc zu DocX, DocX zu RTF, DocX zu PDF, DocX zu Byte, DocX zu Epub, DocX zu MHTML und E-Mail-Versand, DocX zu Markdown, DocX zu TXT, TXT zu DocX,
+description: Lernen Sie grundlegende Konvertierungen mit Aspose.Words für .NET. Konvertieren Sie Word-Dokumente ganz einfach in andere Formate wie PDF, HTML, RTF und mehr.
 type: docs
 weight: 1600
 url: /de/net/basic-conversions/

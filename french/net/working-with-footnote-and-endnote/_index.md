@@ -2,7 +2,7 @@
 title: Utilisation des notes de bas de page et des notes de fin
 linktitle: Utilisation des notes de bas de page et des notes de fin
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels expliquent comment définir une note de bas de page et une note de fin dans un document Word à l'aide d'Aspose.Words pour .NET
+description: Apprenez à utiliser les notes de bas de page et les notes de fin dans vos documents Word avec Aspose.Words pour .NET. Tutoriels détaillés et exemples pratiques.
 type: docs
 weight: 660
 url: /fr/net/working-with-footnote-and-endnote/

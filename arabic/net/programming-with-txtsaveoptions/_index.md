@@ -2,7 +2,7 @@
 title: البرمجة مع Txtsaveoptions
 linktitle: البرمجة مع Txtsaveoptions
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على إضافة علامات ثنائية الاتجاه ، واستخدام حرف جدولة لكل مستوى للمسافة البادئة للقائمة واستخدام حرف مسافة لكل مستوى للمسافة البادئة للقائمة
+description: تعرف على كيفية البرمجة باستخدام خيارات حفظ الملفات النصية في Aspose.Words for .NET. تعرف على كيفية تحديد الترميز وتنسيق النص وإدارة فواصل الأسطر والمزيد باستخدام البرامج التعليمية خطوة بخطوة وعينة التعليمات البرمجية في C #.
 type: docs
 weight: 1700
 url: /ar/net/programming-with-txtsaveoptions/

@@ -59,23 +59,22 @@ Dans cet exemple, nous supprimons la première et la dernière ligne de chaque t
 ### Exemple de code source pour l'accès typé avec Aspose.Words pour .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	Section section = doc.FirstSection;
-	Body body = section.Body;
-	
-	// Accès typé rapide à tous les nœuds enfants Table contenus dans le corps.
-	TableCollection tables = body.Tables;
+Section section = doc.FirstSection;
+Body body = section.Body;
 
-	foreach (Table table in tables)
-	{
-		// Accès tapé rapide à la première ligne du tableau.
-		table.FirstRow?.Remove();
+// Accès typé rapide à tous les nœuds enfants Table contenus dans le corps.
+TableCollection tables = body.Tables;
 
-		// Accès tapé rapide à la dernière ligne du tableau.
-		table.LastRow?.Remove();
-	}
-            
+foreach (Table table in tables)
+{
+	// Accès tapé rapide à la première ligne du tableau.
+	table.FirstRow?.Remove();
+
+	// Accès tapé rapide à la dernière ligne du tableau.
+	table.LastRow?.Remove();
+}
 ```
 
 Il s'agit d'un exemple de code complet pour l'accès typé aux tables avec Aspose.Words pour .NET. Assurez-vous d'importer les références nécessaires et suivez les étapes décrites précédemment pour intégrer ce code dans votre projet.

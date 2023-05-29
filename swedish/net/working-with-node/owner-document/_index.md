@@ -65,27 +65,26 @@ Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null
 ### Exempel på källkod för ägardokument med Aspose.Words för .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// Att skapa en ny nod av vilken typ som helst kräver att ett dokument skickas till konstruktorn.
-	Paragraph para = new Paragraph(doc);
+// Att skapa en ny nod av vilken typ som helst kräver att ett dokument skickas till konstruktorn.
+Paragraph para = new Paragraph(doc);
 
-	// Den nya styckenoden har ännu ingen förälder.
-	Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
+// Den nya styckenoden har ännu ingen förälder.
+Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 
-	// Men paragrafnoden känner till sitt dokument.
-	Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
+// Men paragrafnoden känner till sitt dokument.
+Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-	// Det faktum att en nod alltid tillhör ett dokument gör att vi kan komma åt och ändra
-	// egenskaper som refererar till dokumentomfattande data, som stilar eller listor.
-	para.ParagraphFormat.StyleName = "Heading 1";
+// Det faktum att en nod alltid tillhör ett dokument gör att vi kan komma åt och ändra
+// egenskaper som refererar till dokumentomfattande data, som stilar eller listor.
+para.ParagraphFormat.StyleName = "Heading 1";
 
-	// Lägg nu till stycket i huvudtexten i det första avsnittet.
-	doc.FirstSection.Body.AppendChild(para);
+// Lägg nu till stycket i huvudtexten i det första avsnittet.
+doc.FirstSection.Body.AppendChild(para);
 
-	//Paragrafnoden är nu ett underordnat till Body-noden.
-	Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
-            
+//Paragrafnoden är nu ett underordnat till Body-noden.
+Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
 

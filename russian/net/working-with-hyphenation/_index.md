@@ -2,7 +2,7 @@
 title: Работа с переносами
 linktitle: Работа с переносами
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат расстановку переносов Words of Languages, загрузку словаря расстановки переносов для языка и обратный вызов расстановки переносов с использованием Aspose.Words для .NET.
+description: Узнайте, как управлять переносом слов в документах Word с помощью Aspose.Words для .NET. Полные учебники и практические примеры включены.
 type: docs
 weight: 750
 url: /ru/net/working-with-hyphenation/

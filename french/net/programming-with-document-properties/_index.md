@@ -2,7 +2,7 @@
 title: Programmation avec les propriétés du document
 linktitle: Programmation avec les propriétés du document
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent des variables d'obtention, des propriétés d'énumération, l'ajout de propriétés de document personnalisées, la suppression de propriétés de document personnalisées, la suppression d'informations personnelles, la configuration
+description: Apprenez à gérer les propriétés des documents Word avec Aspose.Words pour .NET. Les didacticiels vous guident à travers les différentes fonctionnalités telles que la lecture et l'écriture des propriétés, la personnalisation des propriétés par défaut.
 type: docs
 weight: 1520
 url: /fr/net/programming-with-document-properties/

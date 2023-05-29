@@ -51,26 +51,24 @@ foreach (Revision revision in doc.Revisions)
 فيما يلي رمز المصدر الكامل للوصول إلى النسخة المعدلة من المستند باستخدام Aspose.Words for .NET:
 
 ```csharp
+Document doc = new Document(MyDir + "Revisions.docx");
+doc.UpdateListLabels();
 
-	Document doc = new Document(MyDir + "Revisions.docx");
-	doc.UpdateListLabels();
+// قم بالتبديل إلى النسخة المنقحة من المستند.
+doc.RevisionsView = RevisionsView.Final;
 
-	// قم بالتبديل إلى النسخة المنقحة من المستند.
-	doc.RevisionsView = RevisionsView.Final;
-
-	foreach (Revision revision in doc.Revisions)
-	{
-		 if (revision.ParentNode.NodeType == NodeType.Paragraph)
+foreach (Revision revision in doc.Revisions)
+{
+	 if (revision.ParentNode.NodeType == NodeType.Paragraph)
+	 {
+		 Paragraph paragraph = (Paragraph)revision.ParentNode;
+		 if (paragraph.IsListItem)
 		 {
-			 Paragraph paragraph = (Paragraph)revision.ParentNode;
-			 if (paragraph.IsListItem)
-			 {
-				 Console.WriteLine(paragraph.ListLabel.LabelString);
-				 Console.WriteLine(paragraph.ListFormat.ListLevel);
-			 }
+			 Console.WriteLine(paragraph.ListLabel.LabelString);
+			 Console.WriteLine(paragraph.ListFormat.ListLevel);
 		 }
-	}
-
+	 }
+}
 ```
 
 

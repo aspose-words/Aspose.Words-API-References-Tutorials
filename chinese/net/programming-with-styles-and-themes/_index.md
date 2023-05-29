@@ -2,7 +2,7 @@
 title: 使用样式和主题编程
 linktitle: 使用样式和主题编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含访问样式、复制样式、获取主题属性、设置主题属性和插入样式分隔符
+description: 了解 Aspose.Words for .NET 中的编程风格和主题。通过分步教程和 C# 代码示例，了解如何在 Word 文档中创建、应用和自定义样式和主题。
 type: docs
 weight: 1410
 url: /zh/net/programming-with-styles-and-themes/

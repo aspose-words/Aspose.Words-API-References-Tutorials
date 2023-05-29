@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## الخطوة 2: اجعل النص مائلًا
 
- يمكننا جعل النص مائلاً عن طريق تعيين الخط`Italic` ملكية ل`true`.
+ يمكننا جعل النص مائلاً عن طريق تعيين الخط`Italic` الملكية ل`true`.
 
 ```csharp
 builder.Font.Italic = true;
@@ -31,13 +31,12 @@ builder.Writeln("This text will be in italics");
 
 
 ```csharp
-	// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
-	DocumentBuilder builder = new DocumentBuilder();
+// استخدم منشئ المستندات لإضافة محتوى إلى المستند.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// اجعل النص مائلًا.
-	builder.Font.Italic = true;
-	builder.Writeln("This text will be Italic");
-            
+// اجعل النص مائلًا.
+builder.Font.Italic = true;
+builder.Writeln("This text will be Italic");
 ```
 
 تهنئة ! لقد تعلمت الآن كيفية استخدام ميزة النص المائل مع Aspose.Words for .NET.

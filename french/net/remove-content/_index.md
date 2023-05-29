@@ -2,7 +2,7 @@
 title: Supprimer le contenu
 linktitle: Supprimer le contenu
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent la suppression des sauts de page, la suppression des sauts de page, la suppression des sauts de section, la suppression des pieds de page, la suppression de la table des matières et la suppression de la table des matières
+description: Apprenez à supprimer efficacement le contenu de documents Word à l'aide d'Aspose.Words pour .NET. Suivez des didacticiels pas à pas et utilisez des exemples de code C# pour apprendre différentes techniques de suppression de contenu.
 type: docs
 weight: 1370
 url: /fr/net/remove-content/

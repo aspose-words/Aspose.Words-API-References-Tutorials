@@ -2,7 +2,7 @@
 title: 使用范围编程
 linktitle: 使用范围编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含范围删除文本和范围获取文本
+description: 了解有关在 Aspose.Words for .NET 中使用范围进行编程的信息。了解如何使用分步教程和示例代码来操作和格式化 Word 文档中特定范围的文本。
 type: docs
 weight: 1390
 url: /zh/net/programming-with-ranges/

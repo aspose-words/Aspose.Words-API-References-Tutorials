@@ -65,27 +65,26 @@ Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null
 ### Ejemplo de código fuente para el documento del propietario con Aspose.Words para .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// La creación de un nuevo nodo de cualquier tipo requiere que se pase un documento al constructor.
-	Paragraph para = new Paragraph(doc);
+// La creación de un nuevo nodo de cualquier tipo requiere que se pase un documento al constructor.
+Paragraph para = new Paragraph(doc);
 
-	// El nuevo nodo de párrafo aún no tiene un padre.
-	Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
+// El nuevo nodo de párrafo aún no tiene un padre.
+Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 
-	// Pero el nodo de párrafo conoce su documento.
-	Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
+// Pero el nodo de párrafo conoce su documento.
+Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-	// El hecho de que un nodo pertenezca siempre a un documento nos permite acceder y modificar
-	// propiedades que hacen referencia a los datos de todo el documento, como estilos o listas.
-	para.ParagraphFormat.StyleName = "Heading 1";
+// El hecho de que un nodo pertenezca siempre a un documento nos permite acceder y modificar
+// propiedades que hacen referencia a los datos de todo el documento, como estilos o listas.
+para.ParagraphFormat.StyleName = "Heading 1";
 
-	// Ahora agregue el párrafo al texto principal de la primera sección.
-	doc.FirstSection.Body.AppendChild(para);
+// Ahora agregue el párrafo al texto principal de la primera sección.
+doc.FirstSection.Body.AppendChild(para);
 
-	//El nodo de párrafo ahora es un elemento secundario del nodo Cuerpo.
-	Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
-            
+//El nodo de párrafo ahora es un elemento secundario del nodo Cuerpo.
+Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
 

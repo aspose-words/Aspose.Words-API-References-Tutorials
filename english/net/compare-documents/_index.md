@@ -2,7 +2,7 @@
 title: Compare Documents
 linktitle: Compare Documents
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain compare for equal, compare options, comparison target and comparison granularity.
+description: Learn how to compare Word documents and identify differences using Aspose.Words for .NET. Guides and practical examples included.
 type: docs
 weight: 1480
 url: /net/compare-documents/

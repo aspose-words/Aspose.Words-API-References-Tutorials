@@ -52,16 +52,14 @@ Bu kadar ! Sağlanan kaynak kodunu kullanarak Aspose.Words for .NET'in tablo hü
 
 
 ```csharp
+Document doc = new Document(MyDir + "Tables.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Tables.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Oluşturucuyu ilk tablonun 3. satırındaki 4. hücreye taşıyın.
+builder.MoveToCell(0, 2, 3, 0);
+builder.Write("\nCell contents added by DocumentBuilder");
+Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
-	// Oluşturucuyu ilk tablonun 3. satırındaki 4. hücreye taşıyın.
-	builder.MoveToCell(0, 2, 3, 0);
-	builder.Write("\nCell contents added by DocumentBuilder");
-	Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
-
-	Assert.AreEqual(table.Rows[2].Cells[3], builder.CurrentNode.ParentNode.ParentNode);
-	Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table.Rows[2].Cells[3].GetText().Trim());
-
+Assert.AreEqual(table.Rows[2].Cells[3], builder.CurrentNode.ParentNode.ParentNode);
+Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table.Rows[2].Cells[3].GetText().Trim());
 ```

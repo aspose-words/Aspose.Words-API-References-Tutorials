@@ -59,23 +59,22 @@ Bu örnekte, Aspose.Words tarafından sağlanan hızlı ve yazılı erişimi kul
 ### Aspose.Words for .NET ile Yazılı Erişim için Örnek Kaynak Kodu
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	Section section = doc.FirstSection;
-	Body body = section.Body;
-	
-	// Gövdede bulunan tüm Tablo alt düğümlerine hızlı erişim.
-	TableCollection tables = body.Tables;
+Section section = doc.FirstSection;
+Body body = section.Body;
 
-	foreach (Table table in tables)
-	{
-		// Tablonun ilk satırına hızlı erişim.
-		table.FirstRow?.Remove();
+// Gövdede bulunan tüm Tablo alt düğümlerine hızlı erişim.
+TableCollection tables = body.Tables;
 
-		// Tablonun son satırına hızlı erişim.
-		table.LastRow?.Remove();
-	}
-            
+foreach (Table table in tables)
+{
+	// Tablonun ilk satırına hızlı erişim.
+	table.FirstRow?.Remove();
+
+	// Tablonun son satırına hızlı erişim.
+	table.LastRow?.Remove();
+}
 ```
 
 Bu, Aspose.Words for .NET ile tablolara yazılı erişim için eksiksiz bir örnek koddur. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları uyguladığınızdan emin olun.

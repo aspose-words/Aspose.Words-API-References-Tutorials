@@ -1,6 +1,6 @@
 ---
-title: Rangos Borrar Texto
-linktitle: Rangos Borrar Texto
+title: Rangos Borrar texto
+linktitle: Rangos Borrar texto
 second_title: Referencia de API de Aspose.Words para .NET
 description: Aprenda a eliminar texto en rangos específicos en un documento de Word usando Aspose.Words para .NET.
 type: docs

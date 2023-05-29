@@ -61,7 +61,7 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## 第 6 步：保存最终文档
+## 第 6 步：保存最终文件
 
 最后，使用启用的“Keep Source Together”功能保存合并的文档`Save`的方法`Document`班级。
 

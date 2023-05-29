@@ -2,7 +2,7 @@
 title: Tablo Stilleri ve Biçimlendirme ile Programlama
 linktitle: Tablo Stilleri ve Biçimlendirme ile Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, metni çevreleyen tablo arasındaki mesafeyi alma, anahat kenarlığı uygulama, kenarlıklı tablo oluşturma, satır biçimlendirmesini değiştirme, satır biçimlendirmesini uygulama, c ayarlamayı içerir.
+description: Aspose.Words for .NET'te tablo stillerinin ve biçimlendirmenin nasıl programlanacağını öğrenin. Adım adım öğreticiler ve C#'daki örnek kodla önceden tanımlanmış stilleri uygulamayı, hücre biçimlendirmesini, kenarlıkları özelleştirmeyi ve daha fazlasını öğrenin.
 type: docs
 weight: 1580
 url: /tr/net/programming-with-table-styles-and-formatting/

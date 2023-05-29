@@ -71,33 +71,29 @@ Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 ### 使用 Aspose.Words for .NET 的 Move To Move To Section 示例源代码
 
 ```csharp
+Document doc = new Document();
+doc.AppendChild(new Section(doc));
 
-	
-	Document doc = new Document();
-	doc.AppendChild(new Section(doc));
+//将 DocumentBuilder 移动到第二部分并添加文本。
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.MoveToSection(1);
+builder.Writeln("Text added to the 2nd section.");
 
-	//将 DocumentBuilder 移动到第二部分并添加文本。
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToSection(1);
-	builder.Writeln("Text added to the 2nd section.");
+//创建带段落的文档。
+doc = new Document(MyDir + "Paragraphs.docx");
+ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
+Assert.AreEqual(22, paragraphs.Count);
 
-	//创建带段落的文档。
-	doc = new Document(MyDir + "Paragraphs.docx");
-	ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-	Assert.AreEqual(22, paragraphs.Count);
+//当我们为文档创建一个 DocumentBuilder 时，它的光标默认位于文档的最开头，
+// DocumentBuilder 添加的任何内容都将添加到文档中。
+builder = new DocumentBuilder(doc);
+Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 
-	//当我们为文档创建一个 DocumentBuilder 时，它的光标默认位于文档的最开头，
-	// DocumentBuilder 添加的任何内容都将添加到文档中。
-	builder = new DocumentBuilder(doc);
-	Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
-
-	//您可以将光标移动到段落中的任何位置。
-	builder.MoveToParagraph(2, 10);
-	Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
-	builder.Writeln("This is a new third paragraph. ");
-	Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
-	
-        
+//您可以将光标移动到段落中的任何位置。
+builder.MoveToParagraph(2, 10);
+Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
+builder.Writeln("This is a new third paragraph. ");
+Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
 就这样 ！您现在已经了解了如何使用提供的源代码使用 Aspose.Words for .NET 的移动到部分功能。您现在可以将此功能集成到您自己的应用程序中，并动态地操作 Word 文档的部分和段落。

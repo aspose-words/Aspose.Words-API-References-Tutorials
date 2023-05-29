@@ -2,7 +2,7 @@
 title: Webextension ile Programlama
 linktitle: Webextension ile Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, web uzantısı görev bölmelerini içerir ve kullanır
+description: Aspose.Words for .NET ile Word belgeleri için web uzantılarını nasıl geliştireceğinizi öğrenin. Web uzantılarını nasıl oluşturacağınızı, değiştireceğinizi ve özelleştireceğinizi öğrenin, bunları Word belgelerinize entegre edin.
 type: docs
 weight: 1530
 url: /tr/net/programming-with-webextension/

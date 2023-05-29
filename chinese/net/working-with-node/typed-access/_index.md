@@ -33,7 +33,7 @@ Section section = doc.FirstSection;
 Body body = section.Body;
 ```
 
-## 第 4 步：快速和类型化地访问表
+## 第 4 步：快速和类型化地访问表格
 现在我们有了文档的主体，我们可以使用快速和类型化访问来访问主体中包含的所有表格。
 
 ```csharp
@@ -59,23 +59,22 @@ foreach(Table table in tables)
 ### 使用 Aspose.Words for .NET 进行类型化访问的示例源代码
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	Section section = doc.FirstSection;
-	Body body = section.Body;
-	
-	//快速输入对 Body 中包含的所有 Table 子节点的访问。
-	TableCollection tables = body.Tables;
+Section section = doc.FirstSection;
+Body body = section.Body;
 
-	foreach (Table table in tables)
-	{
-		//快速键入访问表的第一行。
-		table.FirstRow?.Remove();
+//快速输入对 Body 中包含的所有 Table 子节点的访问。
+TableCollection tables = body.Tables;
 
-		//快速键入访问表的最后一行。
-		table.LastRow?.Remove();
-	}
-            
+foreach (Table table in tables)
+{
+	//快速键入访问表的第一行。
+	table.FirstRow?.Remove();
+
+	//快速键入访问表的最后一行。
+	table.LastRow?.Remove();
+}
 ```
 
 这是一个完整的示例代码，用于使用 Aspose.Words for .NET 对表进行类型化访问。请务必导入必要的引用并按照前面描述的步骤将此代码集成到您的项目中。

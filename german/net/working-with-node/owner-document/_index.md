@@ -65,27 +65,26 @@ Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null
 ### Beispielquellcode für Eigentümerdokument mit Aspose.Words für .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// Das Erstellen eines neuen Knotens jeglichen Typs erfordert die Übergabe eines Dokuments an den Konstruktor.
-	Paragraph para = new Paragraph(doc);
+// Das Erstellen eines neuen Knotens jeglichen Typs erfordert die Übergabe eines Dokuments an den Konstruktor.
+Paragraph para = new Paragraph(doc);
 
-	// Der neue Absatzknoten hat noch keinen übergeordneten Knoten.
-	Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
+// Der neue Absatzknoten hat noch keinen übergeordneten Knoten.
+Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
 
-	// Aber der Absatzknoten kennt sein Dokument.
-	Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
+// Aber der Absatzknoten kennt sein Dokument.
+Console.WriteLine("Both nodes' documents are the same: " + (para.Document == doc));
 
-	// Die Tatsache, dass ein Knoten immer zu einem Dokument gehört, ermöglicht uns den Zugriff und die Änderung
-	// Eigenschaften, die auf die dokumentweiten Daten verweisen, z. B. Stile oder Listen.
-	para.ParagraphFormat.StyleName = "Heading 1";
+// Die Tatsache, dass ein Knoten immer zu einem Dokument gehört, ermöglicht uns den Zugriff und die Änderung
+// Eigenschaften, die auf die dokumentweiten Daten verweisen, z. B. Stile oder Listen.
+para.ParagraphFormat.StyleName = "Heading 1";
 
-	// Fügen Sie nun den Absatz zum Haupttext des ersten Abschnitts hinzu.
-	doc.FirstSection.Body.AppendChild(para);
+// Fügen Sie nun den Absatz zum Haupttext des ersten Abschnitts hinzu.
+doc.FirstSection.Body.AppendChild(para);
 
-	//Der Absatzknoten ist jetzt ein untergeordnetes Element des Hauptknotens.
-	Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
-            
+//Der Absatzknoten ist jetzt ein untergeordnetes Element des Hauptknotens.
+Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
 

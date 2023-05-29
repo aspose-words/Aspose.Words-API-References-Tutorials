@@ -2,7 +2,7 @@
 title: 使用 FormFields
 linktitle: 使用 FormFields
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含如何使用 Aspose.Words for .NET 在 Word 文档中插入表单字段、使用表单字段的属性、获取表单字段集合以及按名称获取表单字段。
+description: 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的表单域。带有代码示例的详细教程。
 type: docs
 weight: 690
 url: /zh/net/working-with-formfields/

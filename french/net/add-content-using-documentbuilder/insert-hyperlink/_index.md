@@ -49,19 +49,19 @@ Voici le code source complet pour insérer un lien hypertexte en utilisant Aspos
 Les liens hypertexte sont un moyen puissant d'améliorer l'interactivité et l'utilité de vos documents Word. Ils peuvent être utilisés pour référencer des ressources externes, fournir des informations supplémentaires ou créer des éléments de navigation dans le document.
 
 ```csharp
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.Write("Please make sure to visit ");
-	builder.Font.Color = Color.Blue;
-	builder.Font.Underline = Underline.Single;
-	
-	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", faux);
-	
-	builder.Font.ClearFormatting();
-	builder.Write(" for more information.");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
+builder.Write("Please make sure to visit ");
+builder.Font.Color = Color.Blue;
+builder.Font.Underline = Underline.Single;
+
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", faux);
+
+builder.Font.ClearFormatting();
+builder.Write(" for more information.");
+
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
 N'oubliez pas d'ajuster le code en fonction de vos besoins spécifiques, y compris le texte du lien hypertexte et l'URL. Améliorez-le avec une mise en forme ou des fonctionnalités supplémentaires selon vos besoins.

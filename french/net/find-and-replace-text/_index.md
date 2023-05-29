@@ -2,7 +2,7 @@
 title: Rechercher et remplacer du texte
 linktitle: Rechercher et remplacer du texte
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent une simple recherche de remplacement, des méta-caractères dans le modèle de recherche, remplacent le texte contenant des méta-caractères, ignorent le texte à l'intérieur des champs, ignorent le texte à l'intérieur
+description: Découvrez comment rechercher et remplacer du texte dans des documents Word à l'aide d'Aspose.Words pour .NET. Les didacticiels vous montrent comment effectuer des recherches textuelles précises, y compris les options de recherche avancées.
 type: docs
 weight: 1360
 url: /fr/net/find-and-replace-text/

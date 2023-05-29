@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. Adım: Bir belge ve bir DocumentBuilder oluşturun
 
- Sonra, yeni bir tane oluşturmamız gerekiyor`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için nesne.
+ Ardından, yeni bir tane oluşturmamız gerekiyor`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için nesne.
 
 ```csharp
 Document doc = new Document();

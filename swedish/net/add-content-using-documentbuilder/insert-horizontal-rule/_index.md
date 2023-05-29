@@ -42,15 +42,13 @@ Här är den fullständiga källkoden för att infoga en horisontell regel med A
 Horisontella regler är användbara för olika scenarier, som att dela upp avsnitt, skapa visuella avbrott eller framhäva viktig information.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("Insert a horizontal rule shape into the document.");
+builder.InsertHorizontalRule();
 
-	builder.Writeln("Insert a horizontal rule shape into the document.");
-	builder.InsertHorizontalRule();
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
 Kom ihåg att justera koden efter dina specifika krav och utöka den med ytterligare funktionalitet efter behov.

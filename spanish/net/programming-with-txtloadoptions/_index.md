@@ -2,7 +2,7 @@
 title: Programación con Txtloadoptions
 linktitle: Programación con Txtloadoptions
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen detección de numeración con espacios en blanco, opciones de manejo de espacios y dirección del texto del documento
+description: Aprenda a programar con opciones de carga de archivos de texto en Aspose.Words para .NET. Aprenda a especificar la codificación, ignorar caracteres desconocidos, manejar saltos de línea y más con tutoriales paso a paso y código de muestra en C#.
 type: docs
 weight: 1640
 url: /es/net/programming-with-txtloadoptions/

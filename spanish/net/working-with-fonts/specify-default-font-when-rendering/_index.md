@@ -2,7 +2,7 @@
 title: Especificar fuente predeterminada al renderizar
 linktitle: Especificar fuente predeterminada al renderizar
 second_title: Referencia de API de Aspose.Words para .NET
-description: Guía paso a paso para especificar la fuente predeterminada al representar un documento con Aspose.Words para .NET.
+description: Guía paso a paso para especificar la fuente predeterminada al renderizar un documento usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/specify-default-font-when-rendering/
@@ -11,7 +11,7 @@ url: /es/net/working-with-fonts/specify-default-font-when-rendering/
 En este tutorial, lo guiaremos a través del proceso paso a paso para especificar la fuente predeterminada al representar un documento con Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo especificar una fuente predeterminada para usar al renderizar sus documentos usando Aspose.Words para .NET.
 
 ## Paso 1: Definir el directorio de documentos
-Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -43,16 +43,16 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Ejemplo de código fuente para Especificar fuente predeterminada al renderizar usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Ruta a su directorio de documentos
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Si la fuente predeterminada definida aquí no se puede encontrar durante el renderizado, entonces
-	// en su lugar, se usa la fuente más cercana en la máquina.
-	fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Si la fuente predeterminada definida aquí no se puede encontrar durante el renderizado, entonces
+// en su lugar, se usa la fuente más cercana en la máquina.
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Conclusión

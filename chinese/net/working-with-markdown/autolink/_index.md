@@ -42,13 +42,12 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 
 ```csharp
-	//使用文档生成器向文档添加内容。
-	DocumentBuilder builder = new DocumentBuilder();
+//使用文档生成器向文档添加内容。
+DocumentBuilder builder = new DocumentBuilder();
 
-	//插入超链接。
-	builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
-	builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
-            
+//插入超链接。
+builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
+builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
 
 

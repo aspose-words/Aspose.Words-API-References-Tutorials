@@ -2,7 +2,7 @@
 title: العمل مع وحدات ماكرو VBA
 linktitle: العمل مع وحدات ماكرو VBA
 second_title: Aspose.Words لمراجع .NET API
-description: تتضمن البرامج التعليمية إنشاء مشروع vba ، وقراءة وحدات ماكرو vba ، وتعديل وحدات ماكرو vba ، ومشروع clone vba ، ووحدة clone vba ، وإزالة المرجع المعطل باستخدام Aspose.Words for .NET
+description: تعرف على كيفية العمل مع وحدات ماكرو VBA في مستندات Word باستخدام Aspose.Words for .NET. أكمل البرامج التعليمية مع نماذج التعليمات البرمجية لإنشاء وحدات ماكرو VBA وتعديلها وتشغيلها في مستندات Word الخاصة بك.
 type: docs
 weight: 1350
 url: /ar/net/working-with-vba-macros/

@@ -2,7 +2,7 @@
 title: Acceso escrito
 linktitle: Acceso escrito
 second_title: Referencia de API de Aspose.Words para .NET
-description: Aprenda a usar el acceso escrito para manipular tablas en Aspose.Words para .NET.
+description: Aprenda a usar el acceso con tipo para manipular tablas en Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-node/typed-access/
@@ -59,23 +59,22 @@ En este ejemplo, eliminamos la primera y la última fila de cada tabla utilizand
 ### Ejemplo de código fuente para acceso escrito con Aspose.Words para .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	Section section = doc.FirstSection;
-	Body body = section.Body;
-	
-	// Acceso rápido escrito a todos los nodos secundarios de la tabla contenidos en el cuerpo.
-	TableCollection tables = body.Tables;
+Section section = doc.FirstSection;
+Body body = section.Body;
 
-	foreach (Table table in tables)
-	{
-		// Acceso rápido escrito a la primera fila de la tabla.
-		table.FirstRow?.Remove();
+// Acceso rápido escrito a todos los nodos secundarios de la tabla contenidos en el cuerpo.
+TableCollection tables = body.Tables;
 
-		// Acceso rápido escrito a la última fila de la tabla.
-		table.LastRow?.Remove();
-	}
-            
+foreach (Table table in tables)
+{
+	// Acceso rápido escrito a la primera fila de la tabla.
+	table.FirstRow?.Remove();
+
+	// Acceso rápido escrito a la última fila de la tabla.
+	table.LastRow?.Remove();
+}
 ```
 
 Este es un código de muestra completo para el acceso escrito a las tablas con Aspose.Words para .NET. Asegúrese de importar las referencias necesarias y siga los pasos descritos anteriormente para integrar este código en su proyecto.

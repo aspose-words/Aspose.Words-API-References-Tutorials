@@ -2,8 +2,7 @@
 title: Enable OpenType features
 linktitle: Enable OpenType features
 second_title: Aspose.Words for .NET API Reference
-description: Learn how to enable openType features to improve the typography and appearance of your Word documents.
-type: docs
+description: Learn how to enable OpenType features in Word documents with Aspose.Words for .NET. The tutorials will guide you through the steps to enable advanced features of OpenType fonts.
 weight: 40
 url: /net/enable-opentype-features/
 ---

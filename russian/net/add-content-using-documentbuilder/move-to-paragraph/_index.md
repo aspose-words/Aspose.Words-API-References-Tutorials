@@ -51,13 +51,11 @@ builder.Writeln("This is the 3rd paragraph.");
 Ниже приведен полный пример исходного кода для реализации функции «Переместить в абзац» с использованием Aspose.Words для .NET:
 
 ```csharp
+Document doc = new Document(MyDir + "Paragraphs.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Paragraphs.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.MoveToParagraph(2, 0);
-	builder.Writeln("This is the 3rd paragraph.");
-	
+builder.MoveToParagraph(2, 0);
+builder.Writeln("This is the 3rd paragraph.");
 ```
 
 Следуя этому руководству и используя функцию «Переместить в абзац», вы можете программно управлять абзацами в документах Word с помощью Aspose.Words для .NET.

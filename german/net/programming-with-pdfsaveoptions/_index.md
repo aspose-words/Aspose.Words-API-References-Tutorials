@@ -2,7 +2,7 @@
 title: Programmieren mit Pdfsaveoptions
 linktitle: Programmieren mit Pdfsaveoptions
 second_title: Aspose.Words für .NET API-Referenz
-description: Tutorials enthalten die Anzeige des Dokumenttitels in der Titelleiste des Fensters, PDF-Renderwarnungen, digital signiertes PDF mit Zertifikatsinhaber, eingebettete alle Schriftarten, eingebettete Teilmenge f
+description: Entdecken Sie die Programmierung mit PDF-Speicheroptionen in Aspose.Words für .NET. Erfahren Sie anhand von Schritt-für-Schritt-Anleitungen und Beispielcode, wie Sie Word-Dokumente mit erweiterten Funktionen in PDF umwandeln.
 type: docs
 weight: 1680
 url: /de/net/programming-with-pdfsaveoptions/

@@ -2,7 +2,7 @@
 title: Programación con Pdfsaveoptions
 linktitle: Programación con Pdfsaveoptions
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen el título del documento de visualización en la barra de título de la ventana, advertencias de procesamiento de pdf, pdf firmado digitalmente con el titular del certificado, todas las fuentes incrustadas, subconjunto incrustado f
+description: Explore la programación con las opciones de guardado de PDF en Aspose.Words para .NET. Aprenda a generar documentos de Word a PDF con funciones avanzadas a través de tutoriales paso a paso y código de muestra.
 type: docs
 weight: 1680
 url: /es/net/programming-with-pdfsaveoptions/

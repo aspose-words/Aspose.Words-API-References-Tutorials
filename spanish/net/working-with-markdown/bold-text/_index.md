@@ -38,12 +38,12 @@ builder.Writeln("This text will be bold");
 
 
 ```csharp
-	// Use un generador de documentos para agregar contenido al documento.
-	DocumentBuilder builder = new DocumentBuilder();
+// Use un generador de documentos para agregar contenido al documento.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Pon el texto en negrita.
-	builder.Font.Bold = true;
-	builder.Writeln("This text will be Bold");  
+// Pon el texto en negrita.
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");  
 ```
 
 ¡Felicidades! Ahora ha aprendido a poner texto en negrita con Aspose.Words para .NET.

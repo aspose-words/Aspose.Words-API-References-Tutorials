@@ -71,33 +71,29 @@ Den här koden flyttar markören för DocumentBuilder till det tredje stycket i 
 ### Exempel på källkod för Move To Move To Section med Aspose.Words för .NET
 
 ```csharp
+Document doc = new Document();
+doc.AppendChild(new Section(doc));
 
-	
-	Document doc = new Document();
-	doc.AppendChild(new Section(doc));
+// Flytta en DocumentBuilder till den andra sektionen och lägg till text.
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.MoveToSection(1);
+builder.Writeln("Text added to the 2nd section.");
 
-	// Flytta en DocumentBuilder till den andra sektionen och lägg till text.
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToSection(1);
-	builder.Writeln("Text added to the 2nd section.");
+// Skapa dokument med stycken.
+doc = new Document(MyDir + "Paragraphs.docx");
+ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
+Assert.AreEqual(22, paragraphs.Count);
 
-	// Skapa dokument med stycken.
-	doc = new Document(MyDir + "Paragraphs.docx");
-	ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-	Assert.AreEqual(22, paragraphs.Count);
+//När vi skapar en DocumentBuilder för ett dokument är dess markör som standard i början av dokumentet,
+// och allt innehåll som läggs till av DocumentBuilder kommer bara att läggas till dokumentet.
+builder = new DocumentBuilder(doc);
+Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 
-	//När vi skapar en DocumentBuilder för ett dokument är dess markör som standard i början av dokumentet,
-	// och allt innehåll som läggs till av DocumentBuilder kommer bara att läggas till dokumentet.
-	builder = new DocumentBuilder(doc);
-	Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
-
-	// Du kan flytta markören till valfri position i ett stycke.
-	builder.MoveToParagraph(2, 10);
-	Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
-	builder.Writeln("This is a new third paragraph. ");
-	Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
-	
-        
+// Du kan flytta markören till valfri position i ett stycke.
+builder.MoveToParagraph(2, 10);
+Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
+builder.Writeln("This is a new third paragraph. ");
+Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
 Det är allt ! Du har nu förstått hur du använder flytt till sektionsfunktionaliteten i Aspose.Words för .NET med den medföljande källkoden. Du kan nu integrera den här funktionen i ditt eget program och manipulera avsnitt och stycken i dina Word-dokument dynamiskt.

@@ -31,13 +31,12 @@ builder.Writeln("This text will be in italics");
 
 
 ```csharp
-	// Используйте конструктор документов, чтобы добавить содержимое в документ.
-	DocumentBuilder builder = new DocumentBuilder();
+// Используйте конструктор документов, чтобы добавить содержимое в документ.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Сделайте текст курсивом.
-	builder.Font.Italic = true;
-	builder.Writeln("This text will be Italic");
-            
+// Сделайте текст курсивом.
+builder.Font.Italic = true;
+builder.Writeln("This text will be Italic");
 ```
 
 Поздравляем! Теперь вы узнали, как использовать функцию курсивного текста с Aspose.Words для .NET.

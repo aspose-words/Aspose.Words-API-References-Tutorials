@@ -2,7 +2,7 @@
 title: Arbeiten mit OleObjects und ActiveX
 linktitle: Arbeiten mit OleObjects und ActiveX
 second_title: Aspose.Words für .NET API-Referenz
-description: In den Tutorials erfahren Sie, wie Sie ein Ole-Objekt mit und ohne Ole-Paket und ein Ole-Objekt als Symbol einfügen und wie Sie Active XControl-Eigenschaften mithilfe von Aspose.Words für .NET lesen.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mit OLE- und ActiveX-Objekten in Word-Dokumenten arbeiten. Ausführliche Tutorials mit Codebeispielen.
 type: docs
 weight: 1080
 url: /de/net/working-with-oleobjects-and-activex/

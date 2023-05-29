@@ -2,7 +2,7 @@
 title: 使用数字签名编程
 linktitle: 使用数字签名编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含签署文档、签署加密文档、创建和签署新签名行、签署现有签名行、设置签名提供者 ID、
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中添加和管理数字签名。这些教程将指导您完成生成数字签名的步骤，并将它们添加到您的文档中。
 type: docs
 weight: 1440
 url: /zh/net/programming-with-digital-signatures/

@@ -2,7 +2,7 @@
 title: Programmation avec Webextension
 linktitle: Programmation avec Webextension
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent et utilisent des volets de tâches d'extension Web
+description: Apprenez à développer des extensions Web pour les documents Word avec Aspose.Words pour .NET. Apprenez à créer, modifier et personnaliser des extensions Web, intégrez-les dans vos documents Word.
 type: docs
 weight: 1530
 url: /fr/net/programming-with-webextension/

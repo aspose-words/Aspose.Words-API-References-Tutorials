@@ -48,17 +48,16 @@ builder.Writeln("This is a fenced code with info string");
 ### Beispielquellcode für Fenced Code mit Aspose.Words für .NET
 
 ```csharp
-	// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
-	DocumentBuilder builder = new DocumentBuilder();
+// Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
+DocumentBuilder builder = new DocumentBuilder();
 
-	Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-	builder.ParagraphFormat.Style = fencedCode;
-	builder.Writeln("This is an fenced code");
+Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
+builder.ParagraphFormat.Style = fencedCode;
+builder.Writeln("This is an fenced code");
 
-	Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
-	builder.ParagraphFormat.Style = fencedCodeWithInfo;
-	builder.Writeln("This is a fenced code with info string");
-            
+Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
+builder.ParagraphFormat.Style = fencedCodeWithInfo;
+builder.Writeln("This is a fenced code with info string");
 ```
 
 

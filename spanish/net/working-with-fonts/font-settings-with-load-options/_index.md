@@ -1,6 +1,6 @@
 ---
-title: Configuración de fuentes con opciones de carga
-linktitle: Configuración de fuentes con opciones de carga
+title: Configuración de fuente con opciones de carga
+linktitle: Configuración de fuente con opciones de carga
 second_title: Referencia de API de Aspose.Words para .NET
 description: En este tutorial, aprenda a cargar un documento de Word con opciones de carga personalizadas y la configuración de fuente correspondiente.
 type: docs

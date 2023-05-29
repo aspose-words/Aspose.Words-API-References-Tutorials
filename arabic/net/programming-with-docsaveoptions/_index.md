@@ -2,7 +2,7 @@
 title: البرمجة باستخدام Docsaveoptions
 linktitle: البرمجة باستخدام Docsaveoptions
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على مستند مشفر بكلمة مرور ، ولا تقم بضغط ملفات تعريف صغيرة ولا تقم بحفظ تعداد نقطي للصورة
+description: تعرف على كيفية تخصيص خيارات الحفظ لمستندات Word باستخدام Aspose.Words for .NET. توجهك البرامج التعليمية عبر الخيارات المختلفة المتاحة ، مثل تنسيق الملف والضغط وحماية كلمة المرور.
 type: docs
 weight: 1600
 url: /ar/net/programming-with-docsaveoptions/

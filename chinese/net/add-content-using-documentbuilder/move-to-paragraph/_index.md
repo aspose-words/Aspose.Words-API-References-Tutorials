@@ -51,13 +51,11 @@ builder.Writeln("This is the 3rd paragraph.");
 下面是使用 Aspose.Words for .NET 实现移动到段落功能的完整示例源代码：
 
 ```csharp
+Document doc = new Document(MyDir + "Paragraphs.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Paragraphs.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.MoveToParagraph(2, 0);
-	builder.Writeln("This is the 3rd paragraph.");
-	
+builder.MoveToParagraph(2, 0);
+builder.Writeln("This is the 3rd paragraph.");
 ```
 
 通过遵循本指南并利用移动到段落功能，您可以使用 Aspose.Words for .NET 以编程方式操作 Word 文档中的段落。

@@ -2,7 +2,7 @@
 title: البرمجة مع خيارات Pdfsave
 linktitle: البرمجة مع خيارات Pdfsave
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على عنوان مستند العرض في شريط عنوان النافذة ، وتحذيرات تقديم pdf ، وموقع pdf رقميًا باستخدام حامل الشهادة ، وجميع الخطوط المضمنة ، ومجموعة فرعية مضمنة
+description: استكشف البرمجة باستخدام خيارات حفظ PDF في Aspose.Words for .NET. تعرف على كيفية إنشاء مستندات Word إلى PDF باستخدام ميزات متقدمة من خلال البرامج التعليمية خطوة بخطوة وعينة التعليمات البرمجية.
 type: docs
 weight: 1680
 url: /ar/net/programming-with-pdfsaveoptions/

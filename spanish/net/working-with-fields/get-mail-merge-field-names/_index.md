@@ -38,7 +38,7 @@ string[] fieldNames = doc.MailMerge.GetFieldNames();
 
  El`fieldNames` La variable ahora contiene los nombres de los campos de combinación.
 
-### Ejemplo de código fuente para obtener nombres de campo de combinación con Aspose.Words para .NET
+### Ejemplo de código fuente para obtener nombres de campos de combinación con Aspose.Words para .NET
 
 ```csharp
 // La ruta al directorio de documentos.

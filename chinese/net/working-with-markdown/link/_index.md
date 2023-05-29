@@ -30,12 +30,11 @@ builder.Insertlink("Aspose", "https://www.aspose.com", false);
 
 
 ```csharp
-	//使用文档生成器向文档添加内容。
-	DocumentBuilder builder = new DocumentBuilder();
+//使用文档生成器向文档添加内容。
+DocumentBuilder builder = new DocumentBuilder();
 
-	//插入链接。
-	builder.Insertlink("Aspose", "https://www.aspose.com", false);
-            
+//插入链接。
+builder.Insertlink("Aspose", "https://www.aspose.com", false);
 ```
 恭喜！您现在已经了解了如何使用 Aspose.Words for .NET 的链接功能。
 

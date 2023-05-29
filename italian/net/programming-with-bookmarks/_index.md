@@ -2,7 +2,7 @@
 title: Programmazione con segnalibri
 linktitle: Programmazione con segnalibri
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono l'accesso ai segnalibri, l'aggiornamento dei dati dei segnalibri, le colonne della tabella dei segnalibri, la copia del testo con segnalibro, l'aggiunta di testo con segnalibro, la creazione di segnalibri, la visualizzazione di nascondi segnalibri.
+description: Scopri come manipolare i segnalibri nei documenti di Word utilizzando Aspose.Words per .NET. I tutorial ti guidano attraverso i passaggi per creare, accedere e modificare i segnalibri in un documento di Word.
 type: docs
 weight: 1380
 url: /it/net/programming-with-bookmarks/

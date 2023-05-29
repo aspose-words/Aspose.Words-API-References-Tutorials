@@ -2,7 +2,7 @@
 title: Belgeyi Böl
 linktitle: Belgeyi Böl
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, html başlıklarına göre, html bölümlerine göre, bölümlere göre, sayfa sayfa, belgeleri birleştirme ve sayfa aralığına göre içerir
+description: Aspose.Words for .NET kullanarak bir Word belgesini etkili bir şekilde nasıl ayrı parçalara ayıracağınızı öğrenin. Adım adım öğreticileri izleyin ve farklı belge bölme tekniklerini öğrenmek için C# kod örneklerini kullanın.
 type: docs
 weight: 1450
 url: /tr/net/split-document/

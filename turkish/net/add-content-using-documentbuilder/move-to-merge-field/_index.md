@@ -58,25 +58,23 @@ builder.Write(" Text immediately after the field.");
 ### Aspose.Words for .NET kullanarak Birleştirme Alanına Taşı için örnek kaynak kodu
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// DocumentBuilder'ı kullanarak bir alan ekleyin ve ardından bir dizi metin ekleyin.
+Field field = builder.InsertField("MERGEFIELD field");
+builder.Write(" Text after the field.");
 
-	// DocumentBuilder'ı kullanarak bir alan ekleyin ve ardından bir dizi metin ekleyin.
-	Field field = builder.InsertField("MERGEFIELD field");
-	builder.Write(" Text after the field.");
+// Oluşturucunun imleci şu anda belgenin sonundadır.
+Assert.Null(builder.CurrentNode);
+// İmleci alanın hemen sonrasına getirerek oluşturucuyu böyle bir alana taşıyabiliriz.
+builder.MoveToField(field, true);
 
-	// Oluşturucunun imleci şu anda belgenin sonundadır.
-	Assert.Null(builder.CurrentNode);
-	// İmleci alanın hemen sonrasına getirerek oluşturucuyu böyle bir alana taşıyabiliriz.
-	builder.MoveToField(field, true);
-
-	// İmlecin, alanın FieldEnd düğümünü geçen bir yerde olduğuna, yani aslında alanın içinde olmadığımıza dikkat edin.
-	// DocumentBuilder'ı bir alanın içine taşımak istersek,
-	// onu DocumentBuilder.MoveTo() yöntemini kullanarak bir alanın FieldStart veya FieldSeparator düğümüne taşımamız gerekecek.
-	Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
-	builder.Write(" Text immediately after the field.");
-	
+// İmlecin, alanın FieldEnd düğümünü geçen bir yerde olduğuna, yani aslında alanın içinde olmadığımıza dikkat edin.
+// DocumentBuilder'ı bir alanın içine taşımak istersek,
+// onu DocumentBuilder.MoveTo() yöntemini kullanarak bir alanın FieldStart veya FieldSeparator düğümüne taşımamız gerekecek.
+Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
+builder.Write(" Text immediately after the field.");
 ```
 
 ## Çözüm

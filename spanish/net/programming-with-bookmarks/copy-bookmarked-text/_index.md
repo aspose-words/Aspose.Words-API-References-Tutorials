@@ -2,7 +2,7 @@
 title: Copiar texto marcado
 linktitle: Copiar texto marcado
 second_title: Referencia de API de Aspose.Words para .NET
-description: Aprenda a copiar texto de marcador de un documento de origen a otro documento utilizando Aspose.Words para .NET.
+description: Aprenda a copiar texto de marcador de un documento de origen a otro documento usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/copy-bookmarked-text/
@@ -32,7 +32,7 @@ Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
-## Paso 3: Crear el documento de destino
+## Paso 3: Creación del documento de destino
 
 Creamos un nuevo documento que servirá como documento de destino para copiar el contenido del marcador:
 

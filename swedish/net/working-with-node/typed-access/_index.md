@@ -59,23 +59,22 @@ det här exemplet tar vi bort den första och sista raden i varje tabell med den
 ### Exempel på källkod för maskinskriven åtkomst med Aspose.Words för .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	Section section = doc.FirstSection;
-	Body body = section.Body;
-	
-	// Snabbskriven åtkomst till alla underordnade tabellnoder som finns i kroppen.
-	TableCollection tables = body.Tables;
+Section section = doc.FirstSection;
+Body body = section.Body;
 
-	foreach (Table table in tables)
-	{
-		// Snabbskriven åtkomst till den första raden i tabellen.
-		table.FirstRow?.Remove();
+// Snabbskriven åtkomst till alla underordnade tabellnoder som finns i kroppen.
+TableCollection tables = body.Tables;
 
-		// Snabbskriven åtkomst till den sista raden i tabellen.
-		table.LastRow?.Remove();
-	}
-            
+foreach (Table table in tables)
+{
+	// Snabbskriven åtkomst till den första raden i tabellen.
+	table.FirstRow?.Remove();
+
+	// Snabbskriven åtkomst till den sista raden i tabellen.
+	table.LastRow?.Remove();
+}
 ```
 
 Detta är en komplett exempelkod för maskinskriven åtkomst till tabeller med Aspose.Words för .NET. Var noga med att importera nödvändiga referenser och följ stegen som beskrivits tidigare för att integrera denna kod i ditt projekt.

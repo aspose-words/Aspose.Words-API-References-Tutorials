@@ -55,23 +55,23 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ### Пример исходного кода для установки системы папок шрифтов и пользовательской папки с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Путь к вашему каталогу документов
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Получите массив источников шрифтов, зависящих от среды, которые ищутся по умолчанию.
-	// Например, это будет содержать источник "Windows\Fonts\" на компьютерах с Windows.
-	// Мы добавляем этот массив в новый список, чтобы упростить добавление или удаление элементов шрифта.
-	List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-	// Добавьте новый источник папки, который даст указание Aspose.Words искать шрифты в следующей папке.
-	FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-	// Добавьте пользовательскую папку, содержащую наши шрифты, в список существующих источников шрифтов.
-	fontSources.Add(folderFontSource);
-	FontSourceBase[] updatedFontSources = fontSources.ToArray();
-	fontSettings.SetFontsSources(updatedFontSources);
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Получите массив источников шрифтов, зависящих от среды, которые ищутся по умолчанию.
+// Например, это будет содержать источник "Windows\Fonts\" на компьютерах с Windows.
+// Мы добавляем этот массив в новый список, чтобы упростить добавление или удаление элементов шрифта.
+List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
+// Добавьте новый источник папки, который даст указание Aspose.Words искать шрифты в следующей папке.
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+// Добавьте пользовательскую папку, содержащую наши шрифты, в список существующих источников шрифтов.
+fontSources.Add(folderFontSource);
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+fontSettings.SetFontsSources(updatedFontSources);
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Заключение

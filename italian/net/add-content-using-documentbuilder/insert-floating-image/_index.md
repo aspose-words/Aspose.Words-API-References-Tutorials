@@ -48,21 +48,19 @@ Ecco il codice sorgente completo per l'inserimento di un'immagine mobile utilizz
 Le immagini mobili sono utili per vari scenari, come l'aggiunta di loghi, illustrazioni o elementi decorativi che possono essere posizionati indipendentemente dal testo del documento.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertImage(ImagesDir + "Transparent background logo.png",
+	RelativeHorizontalPosition.Margin,
+	100,
+	RelativeVerticalPosition.Margin,
+	100,
+	200,
+	100,
+	WrapType.Square);
 
-	builder.InsertImage(ImagesDir + "Transparent background logo.png",
-		RelativeHorizontalPosition.Margin,
-		100,
-		RelativeVerticalPosition.Margin,
-		100,
-		200,
-		100,
-		WrapType.Square);
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
 ```
 
 Ricorda di regolare il codice in base ai tuoi requisiti specifici, incluso il percorso del file immagine e le opzioni di posizionamento e wrapping desiderate.

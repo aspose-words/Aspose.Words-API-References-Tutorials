@@ -2,7 +2,7 @@
 title: Programando Con Pdfloadoptions
 linktitle: Programando Con Pdfloadoptions
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen cargar pdf encriptado y cargar el rango de páginas de pdf
+description: Aprenda a programar con las opciones de carga de PDF en Aspose.Words para .NET. Aprenda a cargar y manipular documentos de Word en formato PDF con tutoriales paso a paso y código de muestra.
 type: docs
 weight: 1620
 url: /es/net/programming-with-pdfloadoptions/

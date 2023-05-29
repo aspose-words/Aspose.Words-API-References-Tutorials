@@ -15,7 +15,7 @@ Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
 - Aspose.Words para la biblioteca .NET instalada en su sistema.
 
 ## Paso 1: Crear un nuevo documento
-Para comenzar, crea un nuevo documento usando la clase Document:
+Para comenzar, crea un nuevo documento usando la clase Documento:
 
 ```csharp
 Document doc = new Document();

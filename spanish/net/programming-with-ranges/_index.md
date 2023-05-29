@@ -2,7 +2,7 @@
 title: Programación con rangos
 linktitle: Programación con rangos
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen rangos, eliminan texto y los rangos obtienen texto.
+description: Aprenda a programar con rangos en Aspose.Words para .NET. Aprenda a manipular y formatear rangos específicos de texto en documentos de Word usando tutoriales paso a paso y códigos de muestra.
 type: docs
 weight: 1390
 url: /es/net/programming-with-ranges/
@@ -16,5 +16,5 @@ Ya sea que sea un desarrollador principiante o experimentado, estos tutoriales l
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Rangos Borrar Texto](./ranges-delete-text/) | Aprenda a eliminar texto en rangos específicos en un documento de Word usando Aspose.Words para .NET. |
+| [Rangos Borrar texto](./ranges-delete-text/) | Aprenda a eliminar texto en rangos específicos en un documento de Word usando Aspose.Words para .NET. |
 | [Rangos Obtener texto](./ranges-get-text/) | Aprenda cómo extraer fácilmente texto de un documento de Word usando Aspose.Words para .NET. |

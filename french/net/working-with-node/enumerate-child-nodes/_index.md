@@ -60,20 +60,19 @@ foreach (Node child in children)
 
 
 ```csharp
-	Document doc = new Document();
-	Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+Document doc = new Document();
+Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 
-	NodeCollection children = paragraph.ChildNodes;
-	foreach (Node child in children)
+NodeCollection children = paragraph.ChildNodes;
+foreach (Node child in children)
+{
+	// Un paragraphe peut contenir des enfants de différents types tels que des suites, des formes et autres.
+	if (child.NodeType == NodeType.Run)
 	{
-		// Un paragraphe peut contenir des enfants de différents types tels que des suites, des formes et autres.
-		if (child.NodeType == NodeType.Run)
-		{
-			Run run = (Run) child;
-			Console.WriteLine(run.Text);
-		}
+		Run run = (Run) child;
+		Console.WriteLine(run.Text);
 	}
-            
+}
 ```
 
 Ceci est un exemple de code complet pour énumérer les nœuds enfants d'un paragraphe avec Aspose.Words pour .NET. Assurez-vous d'importer les références

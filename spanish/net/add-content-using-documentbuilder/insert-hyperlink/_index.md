@@ -49,19 +49,19 @@ Aquí está el código fuente completo para insertar un hipervínculo usando Asp
 Los hipervínculos son una forma poderosa de mejorar la interactividad y la utilidad de sus documentos de Word. Se pueden usar para hacer referencia a recursos externos, proporcionar información adicional o crear elementos de navegación dentro del documento.
 
 ```csharp
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.Write("Please make sure to visit ");
-	builder.Font.Color = Color.Blue;
-	builder.Font.Underline = Underline.Single;
-	
-	builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", falso);
-	
-	builder.Font.ClearFormatting();
-	builder.Write(" for more information.");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
+builder.Write("Please make sure to visit ");
+builder.Font.Color = Color.Blue;
+builder.Font.Underline = Underline.Single;
+
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", falso);
+
+builder.Font.ClearFormatting();
+builder.Write(" for more information.");
+
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
 Recuerde ajustar el código de acuerdo con sus requisitos específicos, incluido el texto del hipervínculo y la URL. Mejórelo con formato o funcionalidad adicional según sea necesario.

@@ -2,7 +2,7 @@
 title: 使用 VBA 宏
 linktitle: 使用 VBA 宏
 second_title: Aspose.Words for .NET API 参考
-description: 包含创建 vba 项目、读取 vba 宏、修改 vba 宏、克隆 vba 项目、克隆 vba 模块以及使用 Aspose.Words for .NET 删除损坏的引用的教程
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中使用 VBA 宏。使用代码示例完成教程，以在 Word 文档中创建、修改和运行 VBA 宏。
 type: docs
 weight: 1350
 url: /zh/net/working-with-vba-macros/

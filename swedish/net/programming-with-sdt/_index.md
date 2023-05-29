@@ -2,7 +2,7 @@
 title: Programmering med Sdt
 linktitle: Programmering med Sdt
 second_title: Aspose.Words för .NET API Referens
-description: Självstudierna innehåller innehållskontroll av kryssrutatyp, aktuell status för kryssruta, modifiera innehållskontroller, kontroll av kombinationsrutainnehåll, kontroll av innehåll i rich textbox,
+description: Lär dig hur du programmerar med Structured Content Controls (SDT) i Aspose.Words för .NET. Följ steg-för-steg handledningar och exempelkod i C# för att manipulera och anpassa strukturerade innehållskontroller i dina Word-dokument.
 type: docs
 weight: 1400
 url: /sv/net/programming-with-sdt/

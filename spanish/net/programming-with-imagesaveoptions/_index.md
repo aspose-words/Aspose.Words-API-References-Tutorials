@@ -2,7 +2,7 @@
 title: Programación con Imagesaveoptions
 linktitle: Programación con Imagesaveoptions
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen control de umbral de exposición para binarización tiff, obtener rango de páginas tiff, formato 1bpp indexado, obtener rango de páginas jpeg y devolución de llamada para guardar páginas
+description: Aprenda a programar con opciones de guardado de imágenes en Aspose.Words para .NET. Tutoriales paso a paso con código de muestra para guardar y manipular imágenes en sus documentos de Word.
 type: docs
 weight: 1630
 url: /es/net/programming-with-imagesaveoptions/

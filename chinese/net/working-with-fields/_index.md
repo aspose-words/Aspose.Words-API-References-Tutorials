@@ -2,7 +2,7 @@
 title: 使用字段
 linktitle: 使用字段
 second_title: Aspose.Words for .NET API 参考
-description: 教程展示了如何使用 Aspose.Words for .NET 插入字段、更新字段文化、替换字段超链接、删除字段以及将嵌套字段插入到 Word 文档中
+description: 使用 Aspose.Words for .NET 处理 Word 文档中字段的综合资源。教程、示例和详细说明。
 type: docs
 weight: 140
 url: /zh/net/working-with-fields/

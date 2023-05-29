@@ -42,19 +42,17 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc")
 Aspose.Words for .NET'in Adres Mektup Birleştirmede Belge Ekle özelliğinin tam kaynak kodu burada:
 
 ```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
+//Ana belgenin içinde "Belge_1" adlı bir birleştirme alanı vardır.
+// Bu alan için karşılık gelen veriler, belgeye giden tam nitelikli bir yol içerir.
+// Bu alana girilmelidir.
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 
-	mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-	//Ana belgenin içinde "Belge_1" adlı bir birleştirme alanı vardır.
-	// Bu alan için karşılık gelen veriler, belgeye giden tam nitelikli bir yol içerir.
-	// Bu alana girilmelidir.
-	mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-
-	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-
+mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
 Bu kodla, Aspose.Words for .NET kullanarak adres mektup birleştirme sırasında başka bir belgeye belge ekleyebileceksiniz. Ortaya çıkan belge yeni bir adla kaydedilecek

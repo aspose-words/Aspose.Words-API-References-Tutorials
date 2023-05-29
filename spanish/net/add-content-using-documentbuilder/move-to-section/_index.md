@@ -71,33 +71,29 @@ Este código mueve el cursor del DocumentBuilder al tercer párrafo de la segund
 ### Ejemplo de código fuente para Mover a Mover a la sección usando Aspose.Words para .NET
 
 ```csharp
+Document doc = new Document();
+doc.AppendChild(new Section(doc));
 
-	
-	Document doc = new Document();
-	doc.AppendChild(new Section(doc));
+// Mueva un DocumentBuilder a la segunda sección y agregue texto.
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.MoveToSection(1);
+builder.Writeln("Text added to the 2nd section.");
 
-	// Mueva un DocumentBuilder a la segunda sección y agregue texto.
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.MoveToSection(1);
-	builder.Writeln("Text added to the 2nd section.");
+// Crear documento con párrafos.
+doc = new Document(MyDir + "Paragraphs.docx");
+ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
+Assert.AreEqual(22, paragraphs.Count);
 
-	// Crear documento con párrafos.
-	doc = new Document(MyDir + "Paragraphs.docx");
-	ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-	Assert.AreEqual(22, paragraphs.Count);
+//Cuando creamos un DocumentBuilder para un documento, su cursor está al principio del documento de forma predeterminada,
+// y cualquier contenido agregado por DocumentBuilder simplemente se agregará al documento.
+builder = new DocumentBuilder(doc);
+Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
 
-	//Cuando creamos un DocumentBuilder para un documento, su cursor está al principio del documento de forma predeterminada,
-	// y cualquier contenido agregado por DocumentBuilder simplemente se agregará al documento.
-	builder = new DocumentBuilder(doc);
-	Assert.AreEqual(0, paragraphs.IndexOf(builder.CurrentParagraph));
-
-	// Puede mover el cursor a cualquier posición en un párrafo.
-	builder.MoveToParagraph(2, 10);
-	Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
-	builder.Writeln("This is a new third paragraph. ");
-	Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
-	
-        
+// Puede mover el cursor a cualquier posición en un párrafo.
+builder.MoveToParagraph(2, 10);
+Assert.AreEqual(2, paragraphs.IndexOf(builder.CurrentParagraph));
+builder.Writeln("This is a new third paragraph. ");
+Assert.AreEqual(3, paragraphs.IndexOf(builder.CurrentParagraph));
 ```
 
 Eso es todo ! Ahora ha entendido cómo usar la funcionalidad de mover a la sección de Aspose.Words para .NET usando el código fuente proporcionado. Ahora puede integrar esta funcionalidad en su propia aplicación y manipular secciones y párrafos de sus documentos de Word de forma dinámica.

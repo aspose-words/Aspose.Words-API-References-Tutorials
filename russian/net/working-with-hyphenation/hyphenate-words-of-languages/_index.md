@@ -30,7 +30,7 @@ Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
 Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 ```
 
-Убедитесь, что в вашем каталоге данных есть соответствующие файлы словарей.
+Убедитесь, что в вашем каталоге данных есть соответствующие файлы словаря.
 
 ## Шаг 3: Обработка слов по переносу
 
@@ -55,14 +55,14 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 
 ### Пример исходного кода для расстановки переносов слов с использованием Aspose.Words для .NET
 
-	```csharp
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "German text.docx");
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "German text.docx");
 
-	Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
-	Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
+Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
+Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 
-	doc.Save(dataDir + "TreatmentByCesure.pdf");
-	```
+doc.Save(dataDir + "TreatmentByCesure.pdf");
+```
 
 Не стесняйтесь использовать этот код в своих проектах и модифицировать его в соответствии с вашими потребностями.

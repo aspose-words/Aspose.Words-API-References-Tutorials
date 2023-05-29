@@ -2,7 +2,7 @@
 title: Htmlsaveoptions ile Programlama
 linktitle: Htmlsaveoptions ile Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, dışa aktarma gidiş-dönüş bilgilerini, yazı tiplerini taban 64 olarak dışa aktarma, kaynakları dışa aktarma, meta dosyalarını emf veya wmf'ye dönüştürme, meta dosyalarını svg'ye dönüştürme, css cla ekleme içerir
+description: Aspose.Words for .NET'te HTML kaydetme seçenekleriyle nasıl programlanacağını öğrenin. Biçimlendirmeyi ve içeriği korurken Word belgelerini kolayca HTML'ye dönüştürün.
 type: docs
 weight: 1620
 url: /tr/net/programming-with-htmlsaveoptions/

@@ -2,7 +2,7 @@
 title: 使用 Txtsaveoptions 编程
 linktitle: 使用 Txtsaveoptions 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含添加双向标记、在每个级别使用制表符进行列表缩进以及在每个级别使用空格字符进行列表缩进
+description: 了解如何使用 Aspose.Words for .NET 中的文本文件保存选项进行编程。通过 C# 中的分步教程和示例代码，了解如何指定编码、设置文本格式、管理换行符等。
 type: docs
 weight: 1700
 url: /zh/net/programming-with-txtsaveoptions/

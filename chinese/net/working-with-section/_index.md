@@ -2,7 +2,7 @@
 title: 使用部分
 linktitle: 使用部分
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含添加部分、删除部分、删除所有部分、附加部分内容、克隆部分、复制部分、删除页眉页脚内容、删除部分内容、修改所有部分中的页面设置以及使用 Aspose.Words for .NET 按索引访问的部分。
+description: 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的部分。带有示例代码的分步教程，用于高效地创建、编辑和格式化部分。
 type: docs
 weight: 1220
 url: /zh/net/working-with-section/

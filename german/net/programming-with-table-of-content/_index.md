@@ -2,7 +2,7 @@
 title: Programmierung mit Inhaltsverzeichnis
 linktitle: Programmierung mit Inhaltsverzeichnis
 second_title: Aspose.Words für .NET API-Referenz
-description: Die Tutorials beinhalten das Ändern des Inhaltsverzeichnis-Levels und Tabstopps zum Ändern des Inhaltsverzeichnisses
+description: Entdecken Sie die TOC-Programmierung in Aspose.Words für .NET. Erfahren Sie anhand von Schritt-für-Schritt-Anleitungen und C#-Codebeispielen, wie Sie Inhaltsverzeichnisse in Ihren Word-Dokumenten erstellen und bearbeiten.
 type: docs
 weight: 1420
 url: /de/net/programming-with-table-of-content/

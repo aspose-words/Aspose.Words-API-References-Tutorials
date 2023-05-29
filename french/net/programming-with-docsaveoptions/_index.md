@@ -2,7 +2,7 @@
 title: Programmation avec Docsaveoptions
 linktitle: Programmation avec Docsaveoptions
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent un document crypté avec un mot de passe, ne compressent pas les petits métafichiers et n'enregistrent pas la puce de l'image
+description: Découvrez comment personnaliser les options d'enregistrement des documents Word à l'aide d'Aspose.Words pour .NET. Les didacticiels vous guident à travers les différentes options disponibles, telles que le format de fichier, la compression, la protection par mot de passe.
 type: docs
 weight: 1600
 url: /fr/net/programming-with-docsaveoptions/

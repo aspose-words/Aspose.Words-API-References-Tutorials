@@ -2,7 +2,7 @@
 title: Programmering med Docsave-alternativ
 linktitle: Programmering med Docsave-alternativ
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller kryptera dokument med lösenord, komprimera inte små metafiler och spara inte bildkula
+description: Lär dig hur du anpassar sparalternativ för Word-dokument med Aspose.Words för .NET. Handledningarna leder dig genom de olika tillgängliga alternativen, såsom filformat, komprimering, lösenordsskydd.
 type: docs
 weight: 1600
 url: /sv/net/programming-with-docsaveoptions/

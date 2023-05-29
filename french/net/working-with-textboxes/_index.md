@@ -2,7 +2,7 @@
 title: Travailler avec des zones de texte
 linktitle: Travailler avec des zones de texte
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent la création d'un lien, la vérification de la séquence et la rupture d'un lien à l'aide de Aspose.Words pour .NET.
+description: Apprenez à travailler avec des zones de texte dans des documents Word à l'aide d'Aspose.Words pour .NET. Tutoriels pas à pas avec des exemples de code pour créer, manipuler et formater efficacement des zones de texte.
 type: docs
 weight: 1320
 url: /fr/net/working-with-textboxes/

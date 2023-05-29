@@ -2,7 +2,7 @@
 title: Tablolarla Programlama
 linktitle: Tablolarla Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, tabloyu içeriğe otomatik sığdırma, tabloyu sabit sütun genişliklerine otomatik sığdırma, tabloyu sayfa genişliğine otomatik sığdırma, veri tablosundan tablo oluşturma, tablodan içe aktarma içerir
+description: Aspose.Words for .NET'te tabloların nasıl programlanacağını öğrenin. Adım adım öğreticiler ve C# kod örnekleri ile Word belgelerinizde tabloları nasıl oluşturacağınızı, değiştireceğinizi ve biçimlendireceğinizi öğrenin.
 type: docs
 weight: 1590
 url: /tr/net/programming-with-tables/

@@ -2,7 +2,7 @@
 title: العمل مع القائمة
 linktitle: العمل مع القائمة
 second_title: Aspose.Words لمراجع .NET API
-description: تحتوي البرامج التعليمية على كيفية إعادة تشغيل القائمة في كل قسم ، وتحديد مستوى القائمة ، وإعادة تشغيل رقم القائمة في المستند باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية التعامل مع القوائم في مستندات Word باستخدام Aspose.Words for .NET. دروس مفصلة مع أمثلة التعليمات البرمجية.
 type: docs
 weight: 780
 url: /ar/net/working-with-list/

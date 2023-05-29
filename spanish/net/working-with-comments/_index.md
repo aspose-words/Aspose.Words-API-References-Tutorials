@@ -2,7 +2,7 @@
 title: Trabajar con comentarios
 linktitle: Trabajar con comentarios
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales muestran cómo agregar comentarios, anclar comentarios, agregar/eliminar respuestas de comentarios, extraer comentarios y resolver comentarios y respuestas en Aspose.Words para .NET
+description: Explore las funciones de administración de comentarios en documentos de Word con Aspose.Words para .NET. Aprenda a agregar, eliminar, buscar y formatear comentarios mediante tutoriales paso a paso.
 type: docs
 weight: 50
 url: /es/net/working-with-comments/

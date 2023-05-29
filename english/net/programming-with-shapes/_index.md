@@ -2,7 +2,7 @@
 title: Programming With Shapes
 linktitle: Programming With Shapes
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain add group shape, insert shape, aspect ratio locked, layout in cell, add corners snipped, get actual shape bounds points, vertical anchor, detec
+description: Explore shape programming in Aspose.Words for .NET. Learn how to manipulate and customize shapes in your Word documents with step-by-step tutorials and sample code in C#.
 type: docs
 weight: 1560
 url: /net/programming-with-shapes/

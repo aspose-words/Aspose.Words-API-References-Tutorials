@@ -2,7 +2,7 @@
 title: Metni Bul ve Değiştir
 linktitle: Metni Bul ve Değiştir
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, basit bulma değiştirme, arama modelinde meta karakterler, meta karakterler içeren metni değiştirme, alanların içindeki metni yok sayma, içindeki metni yok sayma içerir.
+description: Aspose.Words for .NET kullanarak Word belgelerinde metin bulmayı ve değiştirmeyi öğrenin. Öğreticiler, gelişmiş arama seçenekleri de dahil olmak üzere hassas metin aramalarının nasıl gerçekleştirileceğini gösterir.
 type: docs
 weight: 1360
 url: /tr/net/find-and-replace-text/

@@ -2,7 +2,7 @@
 title: 使用 Pdfloadoptions 编程
 linktitle: 使用 Pdfloadoptions 编程
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含加载加密的 pdf 和加载 pdf 的页面范围
+description: 在 Aspose.Words for .NET 中使用 PDF 加载选项学习编程。通过分步教程和示例代码了解如何加载和操作 PDF 格式的 Word 文档。
 type: docs
 weight: 1620
 url: /zh/net/programming-with-pdfloadoptions/

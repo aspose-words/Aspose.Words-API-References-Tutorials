@@ -2,7 +2,7 @@
 title: Travailler avec la rubrique
 linktitle: Travailler avec la rubrique
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent ajouter une section, supprimer une section, supprimer toutes les sections, ajouter le contenu de la section, cloner la section, copier la section, supprimer le contenu de l'en-tête de pied de page, supprimer le contenu de la section, modifier la configuration de la page dans toutes les sections et accéder aux sections par index à l'aide d'Aspose.Words pour .NET.
+description: Apprenez à travailler avec des sections dans des documents Word à l'aide d'Aspose.Words pour .NET. Des didacticiels pas à pas avec des exemples de code pour créer, modifier et formater efficacement des sections.
 type: docs
 weight: 1220
 url: /fr/net/working-with-section/

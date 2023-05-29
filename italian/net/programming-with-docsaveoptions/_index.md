@@ -2,7 +2,7 @@
 title: Programmare con Docsaveoptions
 linktitle: Programmare con Docsaveoptions
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono documenti crittografati con password, non comprimono piccoli metafile e non salvano il punto elenco dell'immagine
+description: Scopri come personalizzare le opzioni di salvataggio per i documenti di Word utilizzando Aspose.Words per .NET. I tutorial ti guidano attraverso le varie opzioni disponibili, come il formato del file, la compressione, la protezione con password.
 type: docs
 weight: 1600
 url: /it/net/programming-with-docsaveoptions/

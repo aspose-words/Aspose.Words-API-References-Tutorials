@@ -35,18 +35,18 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 //开始阵列构建
 builder. StartTable();
 
-//第一行第一个单元格的构建
+//第一行第一个单元格的构造
 builder. InsertCell();
 builder.Write("Contents of cell 1 of row 1.");
 
-//第一行第二个单元格的构造
+//第一行第二个单元格的构建
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
 //调用以下方法结束第一行并开始新行
 builder. EndRow();
 
-//第二行第一个单元格的构建
+//第二行第一个单元格的构造
 builder. InsertCell();
 builder.Write("Contents of cell 1 of row 2.");
 

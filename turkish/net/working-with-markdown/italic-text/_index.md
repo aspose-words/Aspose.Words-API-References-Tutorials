@@ -31,13 +31,12 @@ builder.Writeln("This text will be in italics");
 
 
 ```csharp
-	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
-	DocumentBuilder builder = new DocumentBuilder();
+// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Metni italik yapın.
-	builder.Font.Italic = true;
-	builder.Writeln("This text will be Italic");
-            
+// Metni italik yapın.
+builder.Font.Italic = true;
+builder.Writeln("This text will be Italic");
 ```
 
 Tebrikler! Artık italik metin özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.

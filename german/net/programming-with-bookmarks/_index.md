@@ -2,7 +2,7 @@
 title: Programmieren mit Lesezeichen
 linktitle: Programmieren mit Lesezeichen
 second_title: Aspose.Words für .NET API-Referenz
-description: Tutorials umfassen den Zugriff auf Lesezeichen, das Aktualisieren von Lesezeichendaten, das Markieren von Tabellenspalten, das Kopieren von mit Lesezeichen versehenem Text, das Anhängen von mit Lesezeichen versehenem Text, das Erstellen von Lesezeichen und das Anzeigen und Ausblenden von Lesezeichen
+description: Erfahren Sie, wie Sie Lesezeichen in Word-Dokumenten mit Aspose.Words für .NET bearbeiten. Tutorials führen Sie durch die Schritte zum Erstellen, Zugreifen auf und Bearbeiten von Lesezeichen in einem Word-Dokument.
 type: docs
 weight: 1380
 url: /de/net/programming-with-bookmarks/

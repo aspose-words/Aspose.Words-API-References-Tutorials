@@ -30,12 +30,11 @@ builder.Insertlink("Aspose", "https://www.aspose.com", yanlış);
 
 
 ```csharp
-	// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
-	DocumentBuilder builder = new DocumentBuilder();
+// Belgeye içerik eklemek için bir belge oluşturucu kullanın.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Bağlantı ekle.
-	builder.Insertlink("Aspose", "https://www.aspose.com", yanlış);
-            
+// Bağlantı ekle.
+builder.Insertlink("Aspose", "https://www.aspose.com", yanlış);
 ```
 Tebrikler! Artık bağlantılar özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.
 

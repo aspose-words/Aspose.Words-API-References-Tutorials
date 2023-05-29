@@ -2,7 +2,7 @@
 title: Arbeta med Node
 linktitle: Arbeta med Node
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller hur du använder nodtyp, hämtar överordnad nod, ägardokument, rekursiv alla noder, korsar alla noder, räknar upp underordnade noder och skapar styckenoder i Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du arbetar med noder i Word-dokument med Aspose.Words för .NET. Detaljerade tutorials med kodexempel.
 type: docs
 weight: 1000
 url: /sv/net/working-with-node/

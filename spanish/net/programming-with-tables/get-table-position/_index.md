@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-tables/get-table-position/
 ---
 
-En este tutorial, vamos a aprender cómo obtener la posición de una tabla en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá obtener propiedades de posicionamiento de tablas en sus documentos de Word mediante programación.
+En este tutorial, vamos a aprender cómo obtener la posición de una tabla en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá obtener propiedades de posicionamiento de tablas en sus documentos de Word mediante programación.
 
 ## Paso 1: Configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.

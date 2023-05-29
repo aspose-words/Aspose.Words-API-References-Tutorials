@@ -2,7 +2,7 @@
 title: Lavorare con FormFields
 linktitle: Lavorare con FormFields
 second_title: Riferimento all'API Aspose.Words per .NET
-description: Esercitazioni contenenti come inserire i campi del modulo, lavorare con le proprietà dei campi del modulo, ottenere la raccolta dei campi del modulo e ottenere i campi del modulo per nome nel documento di Word utilizzando Aspose.Words per .NET.
+description: Scopri come lavorare con i campi modulo nei documenti di Word utilizzando Aspose.Words per .NET. Tutorial dettagliati con esempi di codice.
 type: docs
 weight: 690
 url: /it/net/working-with-formfields/

@@ -1,6 +1,6 @@
 ---
-title: 验证加密文件
-linktitle: 验证加密文件
+title: 验证加密文档
+linktitle: 验证加密文档
 second_title: Aspose.Words for .NET API 参考
 description: 验证文档是否使用 Aspose.Words for .NET 加密的分步指南。
 type: docs

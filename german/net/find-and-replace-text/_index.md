@@ -2,7 +2,7 @@
 title: Text suchen und ersetzen
 linktitle: Text suchen und ersetzen
 second_title: Aspose.Words für .NET API-Referenz
-description: Die Tutorials enthalten einfaches Suchen, Ersetzen, Metazeichen im Suchmuster, Ersetzen von Text mit Metazeichen, Ignorieren von Text in Feldern und Ignorieren von Text darin
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Text in Word-Dokumenten suchen und ersetzen. Die Tutorials zeigen Ihnen, wie Sie präzise Textsuchen durchführen, einschließlich erweiterter Suchoptionen.
 type: docs
 weight: 1360
 url: /de/net/find-and-replace-text/

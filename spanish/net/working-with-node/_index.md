@@ -2,7 +2,7 @@
 title: Trabajando con Nodo
 linktitle: Trabajando con Nodo
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen cómo usar el tipo de nodo, obtener el nodo principal, el documento propietario, todos los nodos recursivos, recorrer todos los nodos, enumerar los nodos secundarios y crear nodos de párrafo en un documento de Word usando Aspose.Words para .NET.
+description: Aprenda a trabajar con nodos en documentos de Word usando Aspose.Words para .NET. Tutoriales detallados con ejemplos de código.
 type: docs
 weight: 1000
 url: /es/net/working-with-node/
@@ -16,5 +16,5 @@ Trabajar con revisiones es un recurso integral que lo guía a través del trabaj
 | [Obtener nodo principal](./get-parent-node/) | Aprenda a obtener el nodo principal de un elemento específico con Aspose.Words para .NET. |
 | [Documento de propietario](./owner-document/) | Aprenda a usar el documento de propietario en Aspose.Words para .NET. |
 | [Enumerar nodos secundarios](./enumerate-child-nodes/) | Aprenda a enumerar nodos secundarios en un párrafo con Aspose.Words para .NET. |
-| [Acceso escrito](./typed-access/) | Aprenda a usar el acceso escrito para manipular tablas en Aspose.Words para .NET. |
+| [Acceso escrito](./typed-access/) | Aprenda a usar el acceso con tipo para manipular tablas en Aspose.Words para .NET. |
 | [Crear y agregar nodo de párrafo](./create-and-add-paragraph-node/) | Cree y agregue un nodo de párrafo a sus documentos de Word con Aspose.Words para .NET. |

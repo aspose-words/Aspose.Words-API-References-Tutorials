@@ -2,7 +2,7 @@
 title: Programmation avec des tableaux
 linktitle: Programmation avec des tableaux
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent un ajustement automatique du tableau au contenu, un ajustement automatique du tableau à des largeurs de colonne fixes, un ajustement automatique du tableau à la largeur de la page, la création d'un tableau à partir d'un tableau de données, l'importation d'un tableau à partir de
+description: Apprenez à programmer des tableaux dans Aspose.Words pour .NET. Apprenez à créer, manipuler et mettre en forme des tableaux dans vos documents Word avec des didacticiels pas à pas et des exemples de code C#.
 type: docs
 weight: 1590
 url: /fr/net/programming-with-tables/

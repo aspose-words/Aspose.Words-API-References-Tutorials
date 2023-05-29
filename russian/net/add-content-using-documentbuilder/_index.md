@@ -2,7 +2,7 @@
 title: Добавить контент с помощью Documentbuilder
 linktitle: Добавить контент с помощью Documentbuilder
 second_title: Справочник по API Aspose.Words для .NET
-description: Учебники содержат создание нового документа, построитель документов, вставку закладки, построение таблицы, вставку горизонтальной линейки, формат горизонтальной линейки, вставку разрыва, вставку текста i
+description: Узнайте, как добавлять содержимое в документы Word с помощью DocumentBuilder и Aspose.Words для .NET. Практические руководства с подробными примерами кода.
 type: docs
 weight: 1460
 url: /ru/net/add-content-using-documentbuilder/

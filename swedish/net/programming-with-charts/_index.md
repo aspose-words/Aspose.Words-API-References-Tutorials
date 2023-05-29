@@ -2,7 +2,7 @@
 title: Programmering med diagram
 linktitle: Programmering med diagram
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller formatnummer för dataetikett, skapa diagram med form, infoga enkelt kolumndiagram, infoga kolumndiagram, infoga ytdiagram, infoga bubbeldiagram,
+description: Lär dig hur du skapar, anpassar och manipulerar grafik i Word-dokument med Aspose.Words för .NET. Handledningarna ger steg-för-steg-förklaringar och C#-källkod för att hjälpa dig lägga till diagram.
 type: docs
 weight: 1540
 url: /sv/net/programming-with-charts/

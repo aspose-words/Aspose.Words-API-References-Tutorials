@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
 
-Dans cet exemple, nous allons explorer la fonctionnalité Move To Merge Field de Aspose.Words pour .NET. Aspose.Words est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programme. La fonction Déplacer vers le champ de fusion nous permet de naviguer pour fusionner des champs dans un document et d'effectuer diverses opérations dessus.
+Dans cet exemple, nous allons explorer la fonctionnalité Move To Merge Field de Aspose.Words pour .NET. Aspose.Words est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programmation. La fonction Déplacer vers le champ de fusion nous permet de naviguer pour fusionner des champs dans un document et d'effectuer diverses opérations dessus.
 
 
 ## Expliquer le code source étape par étape
@@ -48,7 +48,7 @@ builder.MoveToField(field, true);
 
 ## Ajouter du texte immédiatement après le champ de fusion
 
-Une fois que le curseur du générateur de document se trouve dans le champ de fusion, vous pouvez ajouter du texte immédiatement après en utilisant la méthode Write :
+Une fois que le curseur du générateur de document se trouve dans le champ de fusion, vous pouvez ajouter du texte immédiatement après en utilisant la méthode Write :
 
 ```csharp
 Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
@@ -58,25 +58,23 @@ builder.Write(" Text immediately after the field.");
 ### Exemple de code source pour Move To Merge Field en utilisant Aspose.Words pour .NET
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Insérez un champ à l'aide de DocumentBuilder et ajoutez une suite de texte après celui-ci.
+Field field = builder.InsertField("MERGEFIELD field");
+builder.Write(" Text after the field.");
 
-	// Insérez un champ à l'aide de DocumentBuilder et ajoutez une suite de texte après celui-ci.
-	Field field = builder.InsertField("MERGEFIELD field");
-	builder.Write(" Text after the field.");
+// Le curseur du constructeur est actuellement à la fin du document.
+Assert.Null(builder.CurrentNode);
+// Nous pouvons déplacer le générateur vers un champ comme celui-ci, en plaçant le curseur immédiatement après le champ.
+builder.MoveToField(field, true);
 
-	// Le curseur du constructeur est actuellement à la fin du document.
-	Assert.Null(builder.CurrentNode);
-	// Nous pouvons déplacer le générateur vers un champ comme celui-ci, en plaçant le curseur immédiatement après le champ.
-	builder.MoveToField(field, true);
-
-	// Notez que le curseur se trouve à un endroit après le nœud FieldEnd du champ, ce qui signifie que nous ne sommes pas réellement à l'intérieur du champ.
-	// Si nous souhaitons déplacer le DocumentBuilder à l'intérieur d'un champ,
-	// nous devrons le déplacer vers le nœud FieldStart ou FieldSeparator d'un champ à l'aide de la méthode DocumentBuilder.MoveTo().
-	Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
-	builder.Write(" Text immediately after the field.");
-	
+// Notez que le curseur se trouve à un endroit après le nœud FieldEnd du champ, ce qui signifie que nous ne sommes pas réellement à l'intérieur du champ.
+// Si nous souhaitons déplacer le DocumentBuilder à l'intérieur d'un champ,
+// nous devrons le déplacer vers le nœud FieldStart ou FieldSeparator d'un champ à l'aide de la méthode DocumentBuilder.MoveTo().
+Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
+builder.Write(" Text immediately after the field.");
 ```
 
 ## Conclusion

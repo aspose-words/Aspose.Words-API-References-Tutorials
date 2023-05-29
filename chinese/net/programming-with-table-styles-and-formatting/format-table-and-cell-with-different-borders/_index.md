@@ -41,7 +41,7 @@ builder. InsertCell();
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
 builder. EndRow();
-//清除之前操作的单元格格式。
+//清除以前操作的单元格格式。
 builder.CellFormat.ClearFormatting();
 builder. InsertCell();
 //为该行中的第一个单元格创建更粗的边框。会不一样

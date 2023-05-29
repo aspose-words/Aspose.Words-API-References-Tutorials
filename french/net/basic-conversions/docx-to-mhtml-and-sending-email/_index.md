@@ -12,7 +12,7 @@ Dans ce didacticiel étape par étape, nous vous expliquerons comment utiliser A
 
 Pour commencer, assurez-vous que les bibliothèques Aspose.Words pour .NET et Aspose.Email sont installées et configurées dans votre environnement de développement. Si vous ne l'avez pas encore fait, téléchargez et installez les bibliothèques à partir de leurs sites Web officiels.
 
-## Étape 1 : Initialisation de l'objet document
+## Étape 1 : Initialisation de l'objet Document
 
  Tout d'abord, initialisez le`Document` object avec le chemin vers votre document source au format Docx :
 

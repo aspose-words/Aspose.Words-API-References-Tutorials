@@ -2,7 +2,7 @@
 title: Programmering med stilar och teman
 linktitle: Programmering med stilar och teman
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller åtkomststilar, kopiera stilar, hämta temaegenskaper, ställ in temaegenskaper och infoga stilavgränsare
+description: Lär dig mer om programmeringsstilar och teman i Aspose.Words för .NET. Lär dig hur du skapar, tillämpar och anpassar stilar och teman i dina Word-dokument med steg-för-steg handledningar och C#-kodexempel.
 type: docs
 weight: 1410
 url: /sv/net/programming-with-styles-and-themes/

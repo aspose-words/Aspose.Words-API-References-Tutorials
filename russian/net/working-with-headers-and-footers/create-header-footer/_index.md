@@ -139,100 +139,100 @@ doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ### Пример исходного кода для создания верхних и нижних колонтитулов с помощью Aspose.Words для .NET
 
 ```csharp
-	// Путь к каталогу документов.
-	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Путь к каталогу документов.
+string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
-	Section currentSection = builder.CurrentSection;
-	PageSetup pageSetup = currentSection.PageSetup;
-	// Укажите, хотим ли мы, чтобы верхние/нижние колонтитулы первой страницы отличались от других страниц.
-	// Вы также можете использовать свойство PageSetup.OddAndEvenPagesHeaderFooter, чтобы указать
-	// разные верхние/нижние колонтитулы для нечетных и четных страниц.
-	pageSetup.DifferentFirstPageHeaderFooter = true;
-	pageSetup.HeaderDistance = 20;
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
+Section currentSection = builder.CurrentSection;
+PageSetup pageSetup = currentSection.PageSetup;
+// Укажите, хотим ли мы, чтобы верхние/нижние колонтитулы первой страницы отличались от других страниц.
+// Вы также можете использовать свойство PageSetup.OddAndEvenPagesHeaderFooter, чтобы указать
+// разные верхние/нижние колонтитулы для нечетных и четных страниц.
+pageSetup.DifferentFirstPageHeaderFooter = true;
+pageSetup.HeaderDistance = 20;
 
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.Font.Size = 14;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+builder.Font.Name = "Arial";
+builder.Font.Bold = true;
+builder.Font.Size = 14;
 
-	pageSetup.HeaderDistance = 20;
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 
-	// Вставьте позиционированное изображение в верхний/левый угол заголовка.
-	// Расстояние от верхнего/левого края страницы устанавливается равным 10 точкам.
-	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+pageSetup.HeaderDistance = 20;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+// Вставьте позиционированное изображение в верхний/левый угол заголовка.
+// Расстояние от верхнего/левого края страницы устанавливается равным 10 точкам.
+builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
+	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer.");
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
-	// Мы используем таблицу с двумя ячейками, чтобы сделать одну часть текста на строке (с нумерацией страниц).
-	// Выровнять по левому краю, а остальную часть текста (с копирайтом) по правому краю.
-	builder.StartTable();
+builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	builder.CellFormat.ClearFormatting();
+// Мы используем таблицу с двумя ячейками, чтобы сделать одну часть текста на строке (с нумерацией страниц).
+// Выровнять по левому краю, а остальную часть текста (с копирайтом) по правому краю.
+builder.StartTable();
 
-	builder.InsertCell();
+builder.CellFormat.ClearFormatting();
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+builder.InsertCell();
 
-	// Он использует поля PAGE и NUMPAGES для автоматического вычисления текущего номера страницы и количества страниц.
-	builder.Write("Page ");
-	builder.InsertField("PAGE", "");
-	builder.Write(" of ");
-	builder.InsertField("NUMPAGES", "");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
+// Он использует поля PAGE и NUMPAGES для автоматического вычисления текущего номера страницы и количества страниц.
+builder.Write("Page ");
+builder.InsertField("PAGE", "");
+builder.Write(" of ");
+builder.InsertField("NUMPAGES", "");
 
-	builder.InsertCell();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+builder.InsertCell();
 
-	builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
 
-	builder.EndRow();
-	builder.EndTable();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToDocumentEnd();
+builder.EndRow();
+builder.EndTable();
 
-	// Сделайте разрыв страницы, чтобы создать вторую страницу, на которой будут видны основные верхние/нижние колонтитулы.
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.InsertBreak(BreakType.SectionBreakNewPage);
+builder.MoveToDocumentEnd();
 
-	currentSection = builder.CurrentSection;
-	pageSetup = currentSection.PageSetup;
-	pageSetup.Orientation = Orientation.Landscape;
-	//Для этого раздела не нужен другой верхний/нижний колонтитул первой страницы, нам нужна только одна титульная страница в документе,
-	// и верхний/нижний колонтитул для этой страницы уже был определен в предыдущем разделе.
-	pageSetup.DifferentFirstPageHeaderFooter = false;
+// Сделайте разрыв страницы, чтобы создать вторую страницу, на которой будут видны основные верхние/нижние колонтитулы.
+builder.InsertBreak(BreakType.PageBreak);
+builder.InsertBreak(BreakType.SectionBreakNewPage);
 
-	// В этом разделе отображаются верхние/нижние колонтитулы из предыдущего раздела.
-	// по умолчанию вызовите currentSection.HeadersFooters.LinkToPrevious(false), чтобы отменить эту ширину страницы
-	// отличается для нового раздела, и поэтому нам нужно установить разные ширины ячеек для таблицы нижнего колонтитула.
-	currentSection.HeadersFooters.LinkToPrevious(false);
+currentSection = builder.CurrentSection;
+pageSetup = currentSection.PageSetup;
+pageSetup.Orientation = Orientation.Landscape;
+//Для этого раздела не нужен другой верхний/нижний колонтитул первой страницы, нам нужна только одна титульная страница в документе,
+// и верхний/нижний колонтитул для этой страницы уже был определен в предыдущем разделе.
+pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// Если мы хотим использовать уже существующий верхний/нижний колонтитул для этого раздела.
-	// Но с небольшими изменениями может быть целесообразно скопировать верхние/нижние колонтитулы
-	// из предыдущего раздела и примените необходимые изменения там, где мы этого хотим.
-	CopyHeadersFootersFromPreviousSection(currentSection);
+// В этом разделе отображаются верхние/нижние колонтитулы из предыдущего раздела.
+// по умолчанию вызовите currentSection.HeadersFooters.LinkToPrevious(false), чтобы отменить эту ширину страницы
+// отличается для нового раздела, и поэтому нам нужно установить разные ширины ячеек для таблицы нижнего колонтитула.
+currentSection.HeadersFooters.LinkToPrevious(false);
 
-	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
+// Если мы хотим использовать уже существующий верхний/нижний колонтитул для этого раздела.
+// Но с небольшими изменениями может быть целесообразно скопировать верхние/нижние колонтитулы
+// из предыдущего раздела и примените необходимые изменения там, где мы этого хотим.
+CopyHeadersFootersFromPreviousSection(currentSection);
 
-	Row row = primaryFooter.Tables[0].FirstRow;
-	row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-	row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
 
-	doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
+Row row = primaryFooter.Tables[0].FirstRow;
+row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+
+doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```

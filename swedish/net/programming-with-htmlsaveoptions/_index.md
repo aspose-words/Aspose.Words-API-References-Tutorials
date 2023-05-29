@@ -2,7 +2,7 @@
 title: Programmering med Htmlsave-alternativ
 linktitle: Programmering med Htmlsave-alternativ
 second_title: Aspose.Words för .NET API Referens
-description: Handledningar innehåller information om export tur och retur, exportera typsnitt som bas 64, exportera resurser, konvertera metafiler till emf eller wmf, konvertera metafiler till svg, lägg till css cla
+description: Lär dig hur du programmerar med HTML-sparalternativ i Aspose.Words för .NET. Konvertera enkelt Word-dokument till HTML med bibehållen formatering och innehåll.
 type: docs
 weight: 1620
 url: /sv/net/programming-with-htmlsaveoptions/

@@ -2,7 +2,7 @@
 title: Lavorare con le revisioni
 linktitle: Lavorare con le revisioni
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono come accettare le revisioni, ottenere i tipi di revisione, ottenere i gruppi di revisione, rimuovere i commenti in PDF, mostrare le revisioni nei fumetti, ottenere i dettagli del gruppo di revisione, accedere alla versione rivista, spostare il nodo nel documento tracciato e modellare la revisione utilizzando Aspose.Words per .NET .
+description: Scopri come lavorare con le revisioni nei documenti di Word utilizzando Aspose.Words per .NET. Tutorial passo passo con codice di esempio per la gestione e la visualizzazione delle revisioni.
 type: docs
 weight: 1130
 url: /it/net/working-with-revisions/

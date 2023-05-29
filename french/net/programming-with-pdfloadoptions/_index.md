@@ -2,7 +2,7 @@
 title: Programmation avec Pdfloadoptions
 linktitle: Programmation avec Pdfloadoptions
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels contiennent un fichier pdf crypté et une plage de pages de chargement de pdf
+description: Apprenez la programmation avec les options de chargement PDF dans Aspose.Words pour .NET. Apprenez à charger et à manipuler des documents Word au format PDF avec des didacticiels pas à pas et des exemples de code.
 type: docs
 weight: 1620
 url: /fr/net/programming-with-pdfloadoptions/

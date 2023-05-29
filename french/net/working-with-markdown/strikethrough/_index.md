@@ -39,13 +39,12 @@ builder.Writeln("This text will be StrikeThrough");
 ### Exemple de code source pour le texte barré avec Aspose.Words pour .NET
 
 ```csharp
-	// Utilisez un générateur de document pour ajouter du contenu au document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Utilisez un générateur de document pour ajouter du contenu au document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Faites le texte Barré.
-	builder.Font.StrikeThrough = true;
-	builder.Writeln("This text will be StrikeThrough");
-            
+// Faites le texte Barré.
+builder.Font.StrikeThrough = true;
+builder.Writeln("This text will be StrikeThrough");
 ```
 
 Félicitation ! Vous avez maintenant appris à appliquer le style de texte barré avec Aspose.Words pour .NET.

@@ -59,39 +59,39 @@ builder.Document.Save(dataDir + "Test.md");
 ### 使用 Aspose.Words for .NET 的 Setext 标题示例源代码
 
 ```csharp
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	//使用文档生成器向文档添加内容。
-	DocumentBuilder builder = new DocumentBuilder();
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+//使用文档生成器向文档添加内容。
+DocumentBuilder builder = new DocumentBuilder();
 
-	builder.ParagraphFormat.StyleName = "Heading 1";
-	builder.Writeln("This is an H1 tag");
+builder.ParagraphFormat.StyleName = "Heading 1";
+builder.Writeln("This is an H1 tag");
 
-	//重置上一段的样式以不合并段落之间的样式。
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+//重置上一段的样式以不合并段落之间的样式。
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	Style setexHeading1 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading1");
-	builder.ParagraphFormat.Style = setexHeading1;
-	builder.Document.Styles["SetextHeading1"].BaseStyleName = "Heading 1";
-	builder.Writeln("Setext Heading level 1");
+Style setexHeading1 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading1");
+builder.ParagraphFormat.Style = setexHeading1;
+builder.Document.Styles["SetextHeading1"].BaseStyleName = "Heading 1";
+builder.Writeln("Setext Heading level 1");
 
-	builder.ParagraphFormat.Style = builder.Document.Styles["Heading 3"];
-	builder.Writeln("This is an H3 tag");
+builder.ParagraphFormat.Style = builder.Document.Styles["Heading 3"];
+builder.Writeln("This is an H3 tag");
 
-	//重置上一段的样式以不合并段落之间的样式。
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+//重置上一段的样式以不合并段落之间的样式。
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	Style setexHeading2 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading2");
-	builder.ParagraphFormat.Style = setexHeading2;
-	builder.Document.Styles["SetextHeading2"].BaseStyleName = "Heading 3";
+Style setexHeading2 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading2");
+builder.ParagraphFormat.Style = setexHeading2;
+builder.Document.Styles["SetextHeading2"].BaseStyleName = "Heading 3";
 
-	//如果基本段落的标题级别大于 2，Setex 标题级别将重置为 2。
-	builder.Writeln("Setext Heading level 2");
-	
+//如果基本段落的标题级别大于 2，Setex 标题级别将重置为 2。
+builder.Writeln("Setext Heading level 2");
 
-	builder.Document.Save(dataDir + "Test.md");
+
+builder.Document.Save(dataDir + "Test.md");
 ```
 
 

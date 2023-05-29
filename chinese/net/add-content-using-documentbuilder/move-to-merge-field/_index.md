@@ -58,25 +58,23 @@ builder.Write(" Text immediately after the field.");
 ### 使用 Aspose.Words for .NET 的 Move To Merge Field 示例源代码
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+//使用 DocumentBuilder 插入一个字段并在其后添加一段文本。
+Field field = builder.InsertField("MERGEFIELD field");
+builder.Write(" Text after the field.");
 
-	//使用 DocumentBuilder 插入一个字段并在其后添加一段文本。
-	Field field = builder.InsertField("MERGEFIELD field");
-	builder.Write(" Text after the field.");
+//构建器的光标当前位于文档末尾。
+Assert.Null(builder.CurrentNode);
+//我们可以像这样将构建器移动到一个字段，将光标放在该字段之后。
+builder.MoveToField(field, true);
 
-	//构建器的光标当前位于文档末尾。
-	Assert.Null(builder.CurrentNode);
-	//我们可以像这样将构建器移动到一个字段，将光标放在该字段之后。
-	builder.MoveToField(field, true);
-
-	//请注意，光标位于字段的 FieldEnd 节点之后的位置，这意味着我们实际上并不在该字段内。
-	//如果我们希望将 DocumentBuilder 移动到字段内部，
-	//我们需要使用 DocumentBuilder.MoveTo() 方法将其移动到字段的 FieldStart 或 FieldSeparator 节点。
-	Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
-	builder.Write(" Text immediately after the field.");
-	
+//请注意，光标位于字段的 FieldEnd 节点之后的位置，这意味着我们实际上并不在该字段内。
+//如果我们希望将 DocumentBuilder 移动到字段内部，
+//我们需要使用 DocumentBuilder.MoveTo() 方法将其移动到字段的 FieldStart 或 FieldSeparator 节点。
+Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
+builder.Write(" Text immediately after the field.");
 ```
 
 ## 结论

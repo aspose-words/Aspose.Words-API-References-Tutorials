@@ -2,7 +2,7 @@
 title: Txtsaveoptions ile Programlama
 linktitle: Txtsaveoptions ile Programlama
 second_title: Aspose.Words for .NET API Referansı
-description: Öğreticiler, bidi işaretleri ekleme, liste girintisi için seviye başına sekme karakteri kullanma ve liste girintisi için seviye başına boşluk karakteri kullanma içerir
+description: Aspose.Words for .NET'te metin dosyası kaydetme seçenekleriyle programlama yapmayı öğrenin. C# dilinde adım adım öğreticiler ve örnek kod ile kodlamayı belirtmeyi, metni biçimlendirmeyi, satır sonlarını yönetmeyi ve daha fazlasını öğrenin.
 type: docs
 weight: 1700
 url: /tr/net/programming-with-txtsaveoptions/

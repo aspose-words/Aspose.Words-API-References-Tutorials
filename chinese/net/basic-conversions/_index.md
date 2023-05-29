@@ -2,7 +2,7 @@
 title: 基本转换
 linktitle: 基本转换
 second_title: Aspose.Words for .NET API 参考
-description: 教程包含 doc 到 docx、docx 到 rtf、docx 到 pdf、docx 到 byte、docx 到 epub、docx 到 mhtml 和发送电子邮件、docx 到 markdown、docx 到 txt、txt 到 docx、
+description: 学习 Aspose.Words for .NET 的基本转换。轻松将 Word 文档转换为其他格式，例如 PDF、HTML、RTF 等。
 type: docs
 weight: 1600
 url: /zh/net/basic-conversions/

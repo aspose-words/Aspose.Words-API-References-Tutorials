@@ -30,12 +30,11 @@ builder.Insertlink("Aspose", "https://www.aspose.com", ложь);
 
 
 ```csharp
-	// Используйте конструктор документов, чтобы добавить содержимое в документ.
-	DocumentBuilder builder = new DocumentBuilder();
+// Используйте конструктор документов, чтобы добавить содержимое в документ.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Вставьте ссылку.
-	builder.Insertlink("Aspose", "https://www.aspose.com", ложь);
-            
+// Вставьте ссылку.
+builder.Insertlink("Aspose", "https://www.aspose.com", ложь);
 ```
 Поздравляем! Теперь вы узнали, как использовать функцию ссылок с Aspose.Words для .NET.
 

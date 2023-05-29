@@ -2,7 +2,7 @@
 title: Programming With Bookmarks
 linktitle: Programming With Bookmarks
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain access bookmarks, update bookmark data, bookmark table columns, copy bookmarked text, append bookmarked text, create bookmark, show hide bookma
+description: Learn how to manipulate bookmarks in Word documents using Aspose.Words for .NET. Tutorials walk you through the steps to create, access, and edit bookmarks in a Word document.
 type: docs
 weight: 1380
 url: /net/programming-with-bookmarks/

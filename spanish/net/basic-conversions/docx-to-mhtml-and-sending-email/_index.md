@@ -76,7 +76,7 @@ Asegúrese de proporcionar la dirección de host del servidor SMTP correcta.
 	// Rebobine la secuencia hasta el principio para que Aspose.Email pueda leerla.
 	stream.Position = 0;
 
-	// Cree un mensaje de correo electrónico Aspose.Email MIME a partir de la transmisión.
+	// Cree un mensaje de correo electrónico Aspose.Email MIME a partir de la secuencia.
 	MailMessage message = MailMessage.Load(stream, new MhtmlLoadOptions());
 	message.From = "your_from@email.com";
 	message.To = "your_to@email.com";

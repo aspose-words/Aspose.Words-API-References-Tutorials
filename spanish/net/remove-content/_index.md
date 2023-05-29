@@ -2,7 +2,7 @@
 title: Eliminar contenido
 linktitle: Eliminar contenido
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen eliminar saltos de página, eliminar saltos de página, eliminar saltos de sección, eliminar pies de página, eliminar toc y eliminar tabla de contenido
+description: Aprenda a eliminar contenido de documentos de Word de manera eficaz con Aspose.Words para .NET. Siga tutoriales paso a paso y use ejemplos de código C# para aprender diferentes técnicas de eliminación de contenido.
 type: docs
 weight: 1370
 url: /es/net/remove-content/

@@ -2,7 +2,7 @@
 title: Trabajar con encabezados y pies de página
 linktitle: Trabajar con encabezados y pies de página
 second_title: Referencia de API de Aspose.Words para .NET
-description: Los tutoriales contienen cómo crear un pie de página de encabezado y copiar un pie de página de encabezado de la sección anterior de un documento de Word usando Aspose.Words para .NET.
+description: Aprenda a trabajar con encabezados y pies de página en documentos de Word usando Aspose.Words para .NET. Completos tutoriales y ejemplos prácticos.
 type: docs
 weight: 730
 url: /es/net/working-with-headers-and-footers/

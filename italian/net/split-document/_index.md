@@ -2,7 +2,7 @@
 title: Dividi documento
 linktitle: Dividi documento
 second_title: Riferimento all'API Aspose.Words per .NET
-description: I tutorial contengono per intestazioni html, per sezioni html, per sezioni, pagina per pagina, unisci documenti e per intervallo di pagine
+description: Scopri come dividere efficacemente un documento Word in parti separate utilizzando Aspose.Words per .NET. Segui le esercitazioni dettagliate e usa gli esempi di codice C# per apprendere diverse tecniche di suddivisione dei documenti.
 type: docs
 weight: 1450
 url: /it/net/split-document/

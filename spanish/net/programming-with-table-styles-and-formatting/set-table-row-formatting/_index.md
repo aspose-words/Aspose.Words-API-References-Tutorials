@@ -11,7 +11,7 @@ url: /es/net/programming-with-table-styles-and-formatting/set-table-row-formatti
 En este tutorial, lo guiaremos a través del proceso paso a paso para configurar el formato de fila de la tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo ajustar la altura y los rellenos de una fila de tabla en sus documentos de Word usando Aspose.Words para .NET.
 
 ## Paso 1: Definir el directorio de documentos
-Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento de Word editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
+Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento de Word editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -34,7 +34,7 @@ builder. InsertCell();
 ```
 
 ## Paso 4: Defina el formato de línea
- Ahora podemos establecer el formato de fila accediendo a la`RowFormat` objeto de la`DocumentBuilder` objeto. Podemos establecer la altura de la línea y los márgenes (rellenos) utilizando las propiedades correspondientes.
+ Ahora podemos establecer el formato de fila accediendo a la`RowFormat` objeto de la`DocumentBuilder` objeto. Podemos establecer la altura de la línea y los márgenes (rellenos) usando las propiedades correspondientes.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;

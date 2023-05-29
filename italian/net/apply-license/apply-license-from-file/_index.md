@@ -9,7 +9,7 @@ url: /it/net/apply-license/apply-license-from-file/
 ---
 
 ## introduzione
-In questo tutorial, ti guideremo attraverso il processo di applicazione di una licenza da un file utilizzando la libreria Aspose.Words per .NET. Aspose.Words è una potente libreria di elaborazione dei documenti che consente di creare, modificare e convertire i documenti di Word a livello di programmazione. Per sbloccare la piena funzionalità di Aspose.Words, è necessario applicare una licenza valida. Dimostreremo come applicare una licenza caricandola da un file in C#.
+In questo tutorial, ti guideremo attraverso il processo di applicazione di una licenza da un file utilizzando la libreria Aspose.Words per .NET. Aspose.Words è una potente libreria di elaborazione dei documenti che consente di creare, modificare e convertire i documenti di Word a livello di codice. Per sbloccare la piena funzionalità di Aspose.Words, è necessario applicare una licenza valida. Dimostreremo come applicare una licenza caricandola da un file in C#.
 
 ## Prerequisiti
 Prima di iniziare, assicurati di disporre dei seguenti prerequisiti:
