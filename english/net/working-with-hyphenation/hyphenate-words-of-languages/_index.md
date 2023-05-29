@@ -56,13 +56,13 @@ So ! You have successfully processed words by hyphenating them in different lang
 ### Sample source code for word hyphenation using Aspose.Words for .NET
 
 ```csharp
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "German text.docx");
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "German text.docx");
 
-	Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
-	Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
+Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
+Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 
-	doc.Save(dataDir + "TreatmentByCesure.pdf");
+doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
 Feel free to use this code in your own projects and modify it to suit your specific needs.
