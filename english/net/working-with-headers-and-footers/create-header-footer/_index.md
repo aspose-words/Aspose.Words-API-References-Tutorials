@@ -139,101 +139,101 @@ We add a page break and a section break to create a new page where the primary h
 ### Example source code to create headers and footers with Aspose.Words for .NET
 
 ```csharp
-	// The path to the documents directory.
-	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// The path to the documents directory.
+string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
-	Section currentSection = builder.CurrentSection;
-	PageSetup pageSetup = currentSection.PageSetup;
-	// Specify if we want headers/footers of the first page to be different from other pages.
-	// You can also use PageSetup.OddAndEvenPagesHeaderFooter property to specify
-	// different headers/footers for odd and even pages.
-	pageSetup.DifferentFirstPageHeaderFooter = true;
-	pageSetup.HeaderDistance = 20;
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
+Section currentSection = builder.CurrentSection;
+PageSetup pageSetup = currentSection.PageSetup;
+// Specify if we want headers/footers of the first page to be different from other pages.
+// You can also use PageSetup.OddAndEvenPagesHeaderFooter property to specify
+// different headers/footers for odd and even pages.
+pageSetup.DifferentFirstPageHeaderFooter = true;
+pageSetup.HeaderDistance = 20;
 
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.Font.Size = 14;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+builder.Font.Name = "Arial";
+builder.Font.Bold = true;
+builder.Font.Size = 14;
 
-	pageSetup.HeaderDistance = 20;
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 
-	// Insert a positioned image into the top/left corner of the header.
-	// Distance from the top/left edges of the page is set to 10 points.
-	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+pageSetup.HeaderDistance = 20;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+// Insert a positioned image into the top/left corner of the header.
+// Distance from the top/left edges of the page is set to 10 points.
+builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
+	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer.");
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
-	// We use a table with two cells to make one part of the text on the line (with page numbering).
-	// To be aligned left, and the other part of the text (with copyright) to be aligned right.
-	builder.StartTable();
+builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	builder.CellFormat.ClearFormatting();
+// We use a table with two cells to make one part of the text on the line (with page numbering).
+// To be aligned left, and the other part of the text (with copyright) to be aligned right.
+builder.StartTable();
 
-	builder.InsertCell();
+builder.CellFormat.ClearFormatting();
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+builder.InsertCell();
 
-	// It uses PAGE and NUMPAGES fields to auto calculate the current page number and many pages.
-	builder.Write("Page ");
-	builder.InsertField("PAGE", "");
-	builder.Write(" of ");
-	builder.InsertField("NUMPAGES", "");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
+// It uses PAGE and NUMPAGES fields to auto calculate the current page number and many pages.
+builder.Write("Page ");
+builder.InsertField("PAGE", "");
+builder.Write(" of ");
+builder.InsertField("NUMPAGES", "");
 
-	builder.InsertCell();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+builder.InsertCell();
 
-	builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
 
-	builder.EndRow();
-	builder.EndTable();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToDocumentEnd();
+builder.EndRow();
+builder.EndTable();
 
-	// Make a page break to create a second page on which the primary headers/footers will be seen.
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.InsertBreak(BreakType.SectionBreakNewPage);
+builder.MoveToDocumentEnd();
 
-	currentSection = builder.CurrentSection;
-	pageSetup = currentSection.PageSetup;
-	pageSetup.Orientation = Orientation.Landscape;
-	// This section does not need a different first-page header/footer we need only one title page in the document,
-	// and the header/footer for this page has already been defined in the previous section.
-	pageSetup.DifferentFirstPageHeaderFooter = false;
+// Make a page break to create a second page on which the primary headers/footers will be seen.
+builder.InsertBreak(BreakType.PageBreak);
+builder.InsertBreak(BreakType.SectionBreakNewPage);
 
-	// This section displays headers/footers from the previous section
-	// by default call currentSection.HeadersFooters.LinkToPrevious(false) to cancel this page width
-	// is different for the new section, and therefore we need to set different cell widths for a footer table.
-	currentSection.HeadersFooters.LinkToPrevious(false);
+currentSection = builder.CurrentSection;
+pageSetup = currentSection.PageSetup;
+pageSetup.Orientation = Orientation.Landscape;
+// This section does not need a different first-page header/footer we need only one title page in the document,
+// and the header/footer for this page has already been defined in the previous section.
+pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// If we want to use the already existing header/footer set for this section.
-	// But with some minor modifications, then it may be expedient to copy headers/footers
-	// from the previous section and apply the necessary modifications where we want them.
-	CopyHeadersFootersFromPreviousSection(currentSection);
+// This section displays headers/footers from the previous section
+// by default call currentSection.HeadersFooters.LinkToPrevious(false) to cancel this page width
+// is different for the new section, and therefore we need to set different cell widths for a footer table.
+currentSection.HeadersFooters.LinkToPrevious(false);
 
-	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
+// If we want to use the already existing header/footer set for this section.
+// But with some minor modifications, then it may be expedient to copy headers/footers
+// from the previous section and apply the necessary modifications where we want them.
+CopyHeadersFootersFromPreviousSection(currentSection);
 
-	Row row = primaryFooter.Tables[0].FirstRow;
-	row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-	row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
 
-	doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
+Row row = primaryFooter.Tables[0].FirstRow;
+row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+
+doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
