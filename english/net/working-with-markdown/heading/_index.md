@@ -40,17 +40,16 @@ builder.Writeln("This is an H1 tag");
 
 
 ```csharp
-	// Use a document builder to add content to the document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Use a document builder to add content to the document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// By default Heading styles in Word may have Bold and Italic formatting.
-	//If we do not want to be emphasized, set these properties explicitly to false.
-	builder.Font.Bold = false;
-	builder.Font.Italic = false;
+// By default Heading styles in Word may have Bold and Italic formatting.
+//If we do not want to be emphasized, set these properties explicitly to false.
+builder.Font.Bold = false;
+builder.Font.Italic = false;
 
-	builder.ParagraphFormat.StyleName = "Heading 1";
-	builder.Writeln("This is an H1 tag");
-            
+builder.ParagraphFormat.StyleName = "Heading 1";
+builder.Writeln("This is an H1 tag");
 ```
 
 Congratulation ! You have now learned how to use the headings feature with Aspose.Words for .NET.

@@ -30,12 +30,11 @@ builder.Insertlink("Aspose", "https://www.aspose.com", false);
 
 
 ```csharp
-	// Use a document builder to add content to the document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Use a document builder to add content to the document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Insert link.
-	builder.Insertlink("Aspose", "https://www.aspose.com", false);
-            
+// Insert link.
+builder.Insertlink("Aspose", "https://www.aspose.com", false);
 ```
 Congratulation ! You have now learned how to use the links feature with Aspose.Words for .NET.
 

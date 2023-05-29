@@ -39,21 +39,20 @@ builder.Writeln("d");
 ### Example source code for creating a table with Aspose.Words for .NET
 
 ```csharp
-	// Use a document builder to add content to the document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Use a document builder to add content to the document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Add the first row.
-	builder.InsertCell();
-	builder.Writeln("a");
-	builder.InsertCell();
-	builder.Writeln("b");
+// Add the first row.
+builder.InsertCell();
+builder.Writeln("a");
+builder.InsertCell();
+builder.Writeln("b");
 
-	// Add the second row.
-	builder.InsertCell();
-	builder.Writeln("c");
-	builder.InsertCell();
-	builder.Writeln("d");
-            
+// Add the second row.
+builder.InsertCell();
+builder.Writeln("c");
+builder.InsertCell();
+builder.Writeln("d");
 ```
 
 Congratulation ! You have now learned how to create a table with Aspose.Words for .NET.

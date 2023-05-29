@@ -39,16 +39,15 @@ shape.ImageData.Title = "Title";
 ### Example source code for images with Aspose.Words for .NET
 
 ```csharp
-	// Use a document builder to add content to the document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Use a document builder to add content to the document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Insert image.
-	Shape shape = new Shape(builder.Document, ShapeType.Image);
-	shape.WrapType = WrapType.Inline;
-	shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-	shape.ImageData.Title = "title";
-	builder.InsertNode(shape);
-            
+// Insert image.
+Shape shape = new Shape(builder.Document, ShapeType.Image);
+shape.WrapType = WrapType.Inline;
+shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
+shape.ImageData.Title = "title";
+builder.InsertNode(shape);
 ```
 
 Congratulation ! You have now learned how to use the images feature with Aspose.Words for .NET.

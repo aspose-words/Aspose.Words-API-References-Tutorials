@@ -39,13 +39,12 @@ builder.Writeln("This text will be StrikeThrough");
 ### Example source code for strikethrough text with Aspose.Words for .NET
 
 ```csharp
-	// Use a document builder to add content to the document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Use a document builder to add content to the document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Make the text Strikethrough.
-	builder.Font.StrikeThrough = true;
-	builder.Writeln("This text will be StrikeThrough");
-            
+// Make the text Strikethrough.
+builder.Font.StrikeThrough = true;
+builder.Writeln("This text will be StrikeThrough");
 ```
 
 Congratulation ! You have now learned how to apply the strikethrough text style with Aspose.Words for .NET.

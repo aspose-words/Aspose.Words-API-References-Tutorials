@@ -38,12 +38,12 @@ builder.Writeln("This text will be bold");
 
 
 ```csharp
-	// Use a document builder to add content to the document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Use a document builder to add content to the document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Make the text Bold.
-	builder.Font.Bold = true;
-	builder.Writeln("This text will be Bold");  
+// Make the text Bold.
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");  
 ```
 
 Congratulation ! You have now learned how to bold text with Aspose.Words for .NET.

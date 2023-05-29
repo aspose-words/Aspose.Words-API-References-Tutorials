@@ -31,13 +31,12 @@ builder.Writeln("This text will be in italics");
 
 
 ```csharp
-	// Use a document builder to add content to the document.
-	DocumentBuilder builder = new DocumentBuilder();
+// Use a document builder to add content to the document.
+DocumentBuilder builder = new DocumentBuilder();
 
-	// Make the text Italic.
-	builder.Font.Italic = true;
-	builder.Writeln("This text will be Italic");
-            
+// Make the text Italic.
+builder.Font.Italic = true;
+builder.Writeln("This text will be Italic");
 ```
 
 Congratulation ! You have now learned how to use the italic text feature with Aspose.Words for .NET.
