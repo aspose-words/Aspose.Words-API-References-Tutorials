@@ -57,4 +57,5 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
 // Pass the appropriate parameters to convert the page fields to plain text in the body of the first section.
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
-
+doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
+```
