@@ -40,14 +40,12 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.
 Here is the complete source code for inserting a check box form field using Aspose.Words for .NET:
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertCheckBox("CheckBox", true, true, 0);
+builder.InsertCheckBox("CheckBox", true, true, 0);
 
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx");
 ```
 
 Remember to adjust the code according to your specific requirements and enhance it with additional functionality as needed.

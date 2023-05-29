@@ -61,13 +61,11 @@ The `Writeln` method appends the specified text as a new paragraph at the curren
 ### Example source code for Move To Bookmark End using Aspose.Words for .NET
 
 ```csharp
+Document doc = new Document(MyDir + "Bookmarks.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Bookmarks.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.MoveToBookmark("MyBookmark1", false, true);
-	builder.Writeln("This is a bookmark.");
-	
+builder.MoveToBookmark("MyBookmark1", false, true);
+builder.Writeln("This is a bookmark.");
 ```
 
 ## Conclusion

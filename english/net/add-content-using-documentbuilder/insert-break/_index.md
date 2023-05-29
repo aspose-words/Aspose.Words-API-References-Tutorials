@@ -46,20 +46,18 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 Here is the complete source code for inserting page breaks using Aspose.Words for .NET:
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("This is page 1.");
+builder.InsertBreak(BreakType.PageBreak);
 
-	builder.Writeln("This is page 1.");
-	builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("This is page 2.");
+builder.InsertBreak(BreakType.PageBreak);
 
-	builder.Writeln("This is page 2.");
-	builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("This is page 3.");
 
-	builder.Writeln("This is page 3.");
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
-			
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
 Remember to adjust the code according to your specific requirements and enhance it with additional functionality as needed.

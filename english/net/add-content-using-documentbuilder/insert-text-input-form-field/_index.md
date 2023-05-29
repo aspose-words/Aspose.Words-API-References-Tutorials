@@ -62,17 +62,14 @@ This code will save the document with the inserted text input form field at the 
 ### Example source code for Insert Text Input Form Field using Aspose.Words for .NET
 
 ```csharp
+// The path to the documents directory.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
-            
-        
+builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
+
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");
 ```
 

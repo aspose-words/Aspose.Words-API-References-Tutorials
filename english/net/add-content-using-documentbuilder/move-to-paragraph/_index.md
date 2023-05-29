@@ -51,13 +51,11 @@ builder.Writeln("This is the 3rd paragraph.");
 Below is the complete example source code for implementing the Move To Paragraph feature using Aspose.Words for .NET:
 
 ```csharp
+Document doc = new Document(MyDir + "Paragraphs.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document(MyDir + "Paragraphs.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.MoveToParagraph(2, 0);
-	builder.Writeln("This is the 3rd paragraph.");
-	
+builder.MoveToParagraph(2, 0);
+builder.Writeln("This is the 3rd paragraph.");
 ```
 
 By following this guide and utilizing the Move To Paragraph feature, you can programmatically manipulate paragraphs within Word documents using Aspose.Words for .NET.

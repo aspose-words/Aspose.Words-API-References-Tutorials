@@ -42,15 +42,13 @@ Here is the complete source code for inserting a horizontal rule using Aspose.Wo
 Horizontal rules are useful for various scenarios, such as dividing sections, creating visual breaks, or highlighting important information.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("Insert a horizontal rule shape into the document.");
+builder.InsertHorizontalRule();
 
-	builder.Writeln("Insert a horizontal rule shape into the document.");
-	builder.InsertHorizontalRule();
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
 Remember to adjust the code according to your specific requirements and enhance it with additional functionality as needed.

@@ -78,56 +78,53 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 Here is the complete source code for inserting a table of contents using Aspose.Words for .NET:
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-            string dataDir = "YOUR DOCUMENT DIRECTORY";
-			
-            // Initialize DocumentBuilder with Document object
-            Document doc = new Document();
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            
-            // Insert table of contenta
-			builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-            
-            // Start the actual document content on the second page.
-            builder.InsertBreak(BreakType.PageBreak);
+// Initialize DocumentBuilder with Document object
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
+// Insert table of contenta
+builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-            builder.Writeln("Heading 1");
+// Start the actual document content on the second page.
+builder.InsertBreak(BreakType.PageBreak);
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 
-            builder.Writeln("Heading 1.1");
-            builder.Writeln("Heading 1.2");
+builder.Writeln("Heading 1");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            builder.Writeln("Heading 2");
-            builder.Writeln("Heading 3");
+builder.Writeln("Heading 1.1");
+builder.Writeln("Heading 1.2");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 
-            builder.Writeln("Heading 3.1");
+builder.Writeln("Heading 2");
+builder.Writeln("Heading 3");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            builder.Writeln("Heading 3.1.1");
-            builder.Writeln("Heading 3.1.2");
-            builder.Writeln("Heading 3.1.3");
+builder.Writeln("Heading 3.1");
 
-            builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading3;
 
-            builder.Writeln("Heading 3.2");
-            builder.Writeln("Heading 3.3");
+builder.Writeln("Heading 3.1.1");
+builder.Writeln("Heading 3.1.2");
+builder.Writeln("Heading 3.1.3");
 
-            
-            // The newly inserted table of contents will be initially empty.
-            // It needs to be populated by updating the fields in the document.
-            doc.UpdateFields();
-            
+builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading2;
 
-            doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
-            
-        
+builder.Writeln("Heading 3.2");
+builder.Writeln("Heading 3.3");
+
+
+// The newly inserted table of contents will be initially empty.
+// It needs to be populated by updating the fields in the document.
+doc.UpdateFields();
+
+
+doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
 

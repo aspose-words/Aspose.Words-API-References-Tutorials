@@ -48,21 +48,19 @@ Here is the complete source code for inserting a floating image using Aspose.Wor
 Floating images are useful for various scenarios, such as adding logos, illustrations, or decorative elements that can be positioned independently from the document's text.
 
 ```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertImage(ImagesDir + "Transparent background logo.png",
+	RelativeHorizontalPosition.Margin,
+	100,
+	RelativeVerticalPosition.Margin,
+	100,
+	200,
+	100,
+	WrapType.Square);
 
-	builder.InsertImage(ImagesDir + "Transparent background logo.png",
-		RelativeHorizontalPosition.Margin,
-		100,
-		RelativeVerticalPosition.Margin,
-		100,
-		200,
-		100,
-		WrapType.Square);
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx");
 ```
 
 Remember to adjust the code according to your specific requirements, including the image file path and desired positioning and wrapping options.

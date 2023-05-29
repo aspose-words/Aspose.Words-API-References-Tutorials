@@ -47,16 +47,14 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.
 Here is the complete source code for inserting a combo box form field using Aspose.Words for .NET:
 
 ```csharp
+string[] items = { "One", "Two", "Three" };
 
-	string[] items = { "One", "Two", "Three" };
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertComboBox("DropDown", items, 0);
 
-	builder.InsertComboBox("DropDown", items, 0);
-
-	doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
-	
+doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
 ```
 
 Remember to adjust the code according to your specific requirements and enhance it with additional functionality as needed.
