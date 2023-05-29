@@ -2,7 +2,7 @@
 title: Working with Headers and Footers
 linktitle: Working with Headers and Footers
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contains how to create header footer and copy header footer from previous section of Word Document using Aspose.Words for .NET.
+description: Learn how to work with headers and footers in Word documents using Aspose.Words for .NET. Complete tutorials and practical examples.
 type: docs
 weight: 730
 url: /net/working-with-headers-and-footers/

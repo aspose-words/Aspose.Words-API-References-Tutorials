@@ -2,7 +2,7 @@
 title: Working with FormFields
 linktitle: Working with FormFields
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials containing how insert form fileds, working with form fileds' properties, get form fields collection, and get form fields get by name in Word Document using Aspose.Words for .NET.
+description: Learn how to work with form fields in Word documents using Aspose.Words for .NET. Detailed tutorials with code examples.
 type: docs
 weight: 690
 url: /net/working-with-formfields/

@@ -2,7 +2,7 @@
 title: Working with Fields
 linktitle: Working with Fields
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials show how to insert Field, update filed culture, replace field hyperlink, remove field, and insert nested fields into Word Document using in Aspose.Words for .NET
+description: A comprehensive resource for working with fields in Word documents using Aspose.Words for .NET. Tutorials, examples and detailed explanations.
 type: docs
 weight: 140
 url: /net/working-with-fields/

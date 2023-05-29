@@ -2,7 +2,7 @@
 title: Working with Fonts
 linktitle: Working with Fonts
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials show how to apply font formatting, font line spacing, DMLText Effect, enable/disable font substitute, font fallback settings, get list of available font in Word Document using Aspose.Words for .NET
+description: Working with Fonts tutorials teach you how to work with fonts in Word with Aspose.Words for .NET. Formatting, substitutions, notifications, and more.
 type: docs
 weight: 420
 url: /net/working-with-fonts/

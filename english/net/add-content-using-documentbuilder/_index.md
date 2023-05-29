@@ -2,7 +2,7 @@
 title: Add Content Using Documentbuilder
 linktitle: Add Content Using Documentbuilder
 second_title: Aspose.Words for .NET API Reference
-description: Tutorials contain create new document, document builder insert bookmark, build table, insert horizontal rule, horizontal rule format, insert break, insert text.
+description: Tutorials contain create new document, document builder insert bookmark, build table, insert horizontal rule, horizontal rule format, insert break, insert text i
 type: docs
 weight: 1460
 url: /net/add-content-using-documentbuilder/
