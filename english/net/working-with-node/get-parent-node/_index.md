@@ -43,14 +43,13 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	// The section is the first child node of the document.
-	Node section = doc.FirstChild;
+// The section is the first child node of the document.
+Node section = doc.FirstChild;
 
-	// The section's parent node is the document.
-	Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
-            
+// The section's parent node is the document.
+Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
 This is a complete code example to get the parent node of a specific node with Aspose.Words for .NET. Be sure to import the necessary references and follow the steps previously described to integrate this code into your project.

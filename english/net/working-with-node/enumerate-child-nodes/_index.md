@@ -60,20 +60,19 @@ In this example, we are checking if the child node is of type `Run` (eg a text f
 
 
 ```csharp
-	Document doc = new Document();
-	Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+Document doc = new Document();
+Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 
-	NodeCollection children = paragraph.ChildNodes;
-	foreach (Node child in children)
+NodeCollection children = paragraph.ChildNodes;
+foreach (Node child in children)
+{
+	// A paragraph may contain children of various types such as runs, shapes, and others.
+	if (child.NodeType == NodeType.Run)
 	{
-		// A paragraph may contain children of various types such as runs, shapes, and others.
-		if (child.NodeType == NodeType.Run)
-		{
-			Run run = (Run) child;
-			Console.WriteLine(run.Text);
-		}
+		Run run = (Run) child;
+		Console.WriteLine(run.Text);
 	}
-            
+}
 ```
 
 This is a complete code example to enumerate the child nodes of a paragraph with Aspose.Words for .NET. Make sure to import the references

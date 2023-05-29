@@ -59,23 +59,22 @@ In this example, we delete the first and last row of each table using the quick 
 ### Sample Source Code for Typed Access with Aspose.Words for .NET
 
 ```csharp
-	Document doc = new Document();
+Document doc = new Document();
 
-	Section section = doc.FirstSection;
-	Body body = section.Body;
-	
-	// Quick typed access to all Table child nodes contained in the Body.
-	TableCollection tables = body.Tables;
+Section section = doc.FirstSection;
+Body body = section.Body;
 
-	foreach (Table table in tables)
-	{
-		// Quick typed access to the first row of the table.
-		table.FirstRow?.Remove();
+// Quick typed access to all Table child nodes contained in the Body.
+TableCollection tables = body.Tables;
 
-		// Quick typed access to the last row of the table.
-		table.LastRow?.Remove();
-	}
-            
+foreach (Table table in tables)
+{
+	// Quick typed access to the first row of the table.
+	table.FirstRow?.Remove();
+
+	// Quick typed access to the last row of the table.
+	table.LastRow?.Remove();
+}
 ```
 
 This is a complete sample code for typed access to tables with Aspose.Words for .NET. Be sure to import the necessary references and follow the steps previously described to integrate this code into your project.
