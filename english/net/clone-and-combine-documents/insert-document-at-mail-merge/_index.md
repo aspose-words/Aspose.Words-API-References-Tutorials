@@ -42,19 +42,17 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc")
 Here is the complete source code for the Insert Document in Mail Merge feature of Aspose.Words for .NET:
 
 ```csharp
+// The path to the documents directory.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
+mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
+// The main document has a merge field in it called "Document_1".
+// The corresponding data for this field contains a fully qualified path to the document.
+// That should be inserted to this field.
+mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
 
-	mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-	// The main document has a merge field in it called "Document_1".
-	// The corresponding data for this field contains a fully qualified path to the document.
-	// That should be inserted to this field.
-	mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });
-
-	mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
-
+mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
 With this code you will be able to insert a document into another document during mail merge using Aspose.Words for .NET. The resulting document will be saved under a new name
