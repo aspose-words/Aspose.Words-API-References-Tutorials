@@ -68,3 +68,25 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 Congratulations! You have successfully learned how to add and remove comment replies in a Word document using Aspose.Words for .NET. By following the step-by-step guide and utilizing the provided source code, you can now manage comment replies and customize them as per your requirements.
 
 Comment replies allow for collaborative discussions and feedback within a document. Experiment with different reply authors, initials, dates, and texts to enhance collaboration and communication within your documents.
+
+### FAQ's
+
+#### Q: How can I add a comment in Aspose.Words for .NET?
+
+A: To add a comment in Aspose.Words for .NET, you can use the `Comment.AddComment` method specifying the text of the comment and where you want to add it in the document.
+
+#### Q: How can I remove a comment in Aspose.Words for .NET?
+
+A: To remove a comment in Aspose.Words for .NET, you can use the `Comment.Remove` method specifying the `Comment` object you want to remove.
+
+#### Q: Can I reply to a comment in Aspose.Words for .NET?
+
+A: Yes, you can reply to a comment in Aspose.Words for .NET using the `Comment.AddReply` method specifying the reply text and where you want to add it in the document.
+
+#### Q: How can I access existing comments in Aspose.Words for .NET?
+
+A: You can access existing comments in Aspose.Words for .NET using the `CommentCollection` property of the `Document` object. This will allow you to browse all the comments present in the document.
+
+#### Q: Can I edit comment text in Aspose.Words for .NET?
+
+A: Yes, you can edit the text of a comment in Aspose.Words for .NET by accessing the `Comment.Text` property of the corresponding `Comment` object and modifying the text as needed.
