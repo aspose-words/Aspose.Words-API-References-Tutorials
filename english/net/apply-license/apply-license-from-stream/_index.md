@@ -72,3 +72,21 @@ catch (Exception e)
 In this tutorial, you have learned how to apply a license from a stream using Aspose.Words for .NET. By following the step-by-step guide and utilizing the provided source code, you can easily set the license and unlock the full potential of Aspose.Words for your document processing tasks.
 
 Now you can confidently apply a license from a stream and leverage the powerful features of Aspose.Words to create, modify, and convert Word documents programmatically.
+
+### FAQ's
+
+#### Q: Where can I find the licensing documentation for Aspose.Words for .NET?
+
+A: You can find the licensing documentation for Aspose. Words for .NET on the official Aspose documentation website. The documentation provides detailed instructions and examples for applying licenses, including applying licenses from files.
+
+#### Q: What file formats does Aspose.Words for .NET support for license files?
+
+A: Aspose.Words for .NET supports license files in XML format. Make sure your license file is in the appropriate XML format recognized by Aspose.Words for .NET.
+
+#### Q: Can I apply a license programmatically in Aspose.Words for .NET?
+
+A: Yes, you can apply a license programmatically in Aspose.Words for .NET. By using the `License` class and its `SetLicense` method, you can apply a license directly within your code.
+
+#### Q: What happens if I don't apply a license in Aspose.Words for .NET?
+
+A: If you don't apply a license in Aspose.Words for .NET, the library will work in evaluation mode. In evaluation mode, certain limitations and watermarks may be imposed on the generated documents. To remove these limitations, it is recommended to apply a valid license.
