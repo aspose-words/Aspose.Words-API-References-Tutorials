@@ -53,3 +53,24 @@ Congratulations! You have successfully learned how to enable and utilize Open Ty
 
 Open Type features offer enhanced typography and text shaping capabilities, allowing you to create visually appealing and professional-looking documents. Experiment with different text shaper factories and explore the possibilities of Open Type features in your projects.
 
+### FAQ's
+
+#### Q: How do I enable OpenType features in Aspose.Words for .NET?
+
+A: To enable OpenType features in Aspose.Words for .NET, you need to follow the steps mentioned in the tutorial.
+
+#### Q: What OpenType features are supported in Aspose.Words for .NET?
+
+A: Aspose.Words for .NET supports several OpenType features, such as ligatures, glyph variations, contextual substitutions, and more.
+
+#### Q: How can I check if an OpenType feature is supported in a specific font?
+
+A: You can check if an OpenType feature is supported in a specific font using the `Font.OpenTypeFeatures` method in Aspose.Words for .NET.
+
+#### Q: What other text formatting features does Aspose.Words for .NET support?
+
+A: Apart from OpenType features, Aspose.Words for .NET also supports other text formatting features like formatting paragraphs, creating tables, adding images, etc.
+
+#### Q: Can I use OpenType features in all versions of Aspose.Words for .NET?
+
+A: OpenType features are supported in newer versions of Aspose.Words for .NET. Make sure you are using a compatible version to benefit from these features.
