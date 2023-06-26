@@ -76,3 +76,24 @@ Congratulations! You have successfully learned how to resolve comments and their
 
 Comment resolution helps in tracking and managing feedback within a document. Experiment with different comment statuses and customize them to improve collaboration and review processes in your documents.
 
+### FAQ's
+
+#### Q: How do I resolve a comment in Aspose.Words for .NET?
+
+A: To resolve a comment in Aspose.Words for .NET, you can use the `Comment.Resolve` method specifying the `Comment` object you want to resolve. This will mark the comment as resolved and hide it in the final document.
+
+#### Q: How do I add a reply to a resolved comment in Aspose.Words for .NET?
+
+A: Although resolved comments are hidden by default in the final document, you can still add a reply to a resolved comment using the `Comment.AddReply` method specifying the reply text and where you want to add it .
+
+#### Q: How do I view resolved comments in Aspose.Words for .NET?
+
+A: By default, resolved comments are hidden in the final document. However, you can show them by using the `CommentOptions.ShowResolvedComments` property of the `Document` object and setting it to `true`.
+
+#### Q: How can I hide all comments, including replies, in Aspose.Words for .NET?
+
+A: To hide all comments, including replies, in Aspose.Words for .NET, you can use the `CommentOptions.CommentDisplayMode` property of the `Document` object and set it to `CommentDisplayMode.None`.
+
+#### Q: Can I edit the text of a resolved comment in Aspose.Words for .NET?
+
+A: Yes, you can edit the text of a resolved comment in Aspose.Words for .NET by accessing the `Comment.Text` property of the corresponding `Comment` object and modifying the text as needed.

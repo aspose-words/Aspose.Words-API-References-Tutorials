@@ -75,3 +75,21 @@ catch (Exception e)
 Congratulations! You have successfully learned how to apply a metered license using Aspose.Words for .NET. By following the step-by-step guide and utilizing the provided source code, you can now take advantage of the advanced features of Aspose.Words for your document processing tasks.
 
 Now you can confidently set the metered license, load and process documents, and harness the full potential of Aspose.Words to create, modify, and manipulate Word documents programmatically.
+
+### FAQ's
+
+#### Q: How do I apply a pay-per-use license in Aspose.Words for .NET?
+
+A: To apply a pay-as-you-go license in Aspose.Words for .NET, follow the steps mentioned in the tutorial.
+
+#### Q: What are the benefits of using a pay-per-use license in Aspose.Words for .NET?
+
+A: The benefits of using a pay-as-you-go license in Aspose.Words for .NET include more efficient cost management and increased flexibility.
+
+#### Q: How can I check my pay-as-you-go license usage in Aspose.Words for .NET?
+
+A: You can check your pay-as-you-go license usage in Aspose.Words for .NET using the appropriate method mentioned in the tutorial.
+
+#### Q: Can I use a regular license with Aspose.Words for .NET instead of a pay-as-you-go license?
+
+A: Yes, you can use a normal license with Aspose.Words for .NET if you wish.

@@ -100,3 +100,26 @@ commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
 ```
 
+### FAQ's
+
+#### Q: What is a comment anchor in Aspose.Words for .NET?
+
+A: In Aspose.Words for .NET, a comment anchor is a marker that connects a comment to a specific location in a document.
+
+#### Q: How can I add a comment anchor in an Aspose.Words for .NET document?
+
+A: To add a comment anchor in an Aspose.Words for .NET document, follow the steps mentioned in the tutorial.
+
+#### Q: How do I access an existing comment anchor in Aspose.Words for .NET?
+
+A: You can access an existing comment anchor in Aspose.Words for .NET using the `Comment.Anchor` property.
+
+#### Q: Can I supprime a comment anchor in Aspose.Words for .NET?
+
+A: Yes, you can remove a comment anchor in Aspose.Words for .NET using the `Comment.Remove` method.
+
+#### Q: How can I edit the text of a comment linked to a comment anchor in Aspose.Words for .NET?
+
+A: To modify the text of a comment bound to a comment anchor in Aspose.Words for .NET, you can access the `Comment.Text` property of the corresponding `Comment` object and modify the text as needed.
+
+
