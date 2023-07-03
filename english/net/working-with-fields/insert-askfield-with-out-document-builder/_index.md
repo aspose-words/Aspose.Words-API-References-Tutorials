@@ -76,3 +76,26 @@ doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 In this example, we created a new document, inserted an ASK field without using DocumentBuilder, configured the various properties of the field, and saved the document with a specified filename.
 
 This concludes our guide on using the "Insert ASK Field Without DocumentBuilder" feature with Aspose.Words for .NET.
+
+### FAQ's
+
+#### Q: What is an ASK field in Aspose.Words?
+
+A: An ASK field in Aspose.Words is used to ask the user a question when opening a document. It is often used to request specific information or feedback which may vary from user to user.
+
+#### Q: How to insert ASK field in Word document without using Document Builder in Aspose.Words?
+
+A: To insert an ASK field in a Word document without using Document Builder in Aspose.Words, you can follow these steps:
+
+1. Import Document and Field class from Aspose.Words.Fields namespace.
+2. Create an instance of Document by loading your existing document.
+3. Use the InsertField method to insert an ASK field by specifying the question name.
+4. Save the document.
+
+#### Q: How do I get the user response for an ASK field in a Word document?
+
+A: To get the user's response for an ASK field in a Word document, you can use the GetFieldNames method available in the Document class. This method returns a list of the names of the fields present in the document. You can then check if the ASK field name is present in the list and retrieve the associated response.
+
+#### Q: Can the ASK field be used to request more information from the user?
+
+A: Yes, the ASK field can be used to request multiple pieces of information from the user. You can insert multiple ASK fields into your document, each with a different question. When the document is opened, the user will be prompted for the corresponding answers.

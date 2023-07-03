@@ -90,3 +90,30 @@ doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
 In this example, we created a new document, moved the cursor to the desired paragraph, and then inserted a field merge field into the document.
+
+### FAQ's
+
+#### Q: How can I insert a merge field in a Word document using Aspose.Words for .NET with the DOM?
+
+A: To insert a merge field in a Word document using Aspose.Words for .NET with DOM, you can follow these steps:
+
+1. Navigate to the paragraph where you want to insert the merge field.
+2. Create a `FieldMergeField` object.
+3. Set the merge field properties, such as field name and formatting options.
+4. Add the merge field to the paragraph using the `Paragraph.AppendChild` method.
+
+#### Q: How can I specify source data for merge field in Aspose.Words for .NET?
+
+A: To specify the source data for the merge field in Aspose.Words for .NET, you can use the `FieldMergeField.FieldName` method to set the merge field name, which is the name of a field in a data source external such as a CSV file, database, etc. You can also use the `FieldMergeField.Text` method to set the merge field value directly.
+
+#### Q: Can I customize the appearance of the merge field in a Word document with Aspose.Words for .NET?
+
+A: Yes, you can customize the appearance of the merge field in a Word document with Aspose.Words for .NET. You can set the formatting options like case, font, color, etc. using the properties of the `FieldMergeField` object.
+
+#### Q: How can I check if a merge field was successfully inserted in a Word document with Aspose.Words for .NET?
+
+A: To check if a merge field was inserted successfully, you can browse the document content and search for merge field instances. You can use the methods and properties of the `Document` object to access paragraphs, fields, and other elements of the document.
+
+#### Q: Does inserting a merge field using DOM affect Word document structure with Aspose.Words for .NET?
+
+A: Inserting a merge field using the DOM does not directly affect the structure of the Word document. However, it adds a new field element to the document content. You can manipulate the document structure by adding, deleting or modifying the existing elements according to your needs.

@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
 Follow these steps to rename merge fields in your document using Aspose.Words for .NET.
+
+### FAQ's
+
+#### Q: How can I rename merged fields in a Word document using Aspose.Words for .NET?
+
+A: To rename merged fields in a Word document using Aspose.Words for .NET, you can loop through the fields in the document using the `FieldMergingArgs` class and use the `FieldMergingArgs.FieldName` method to rename field.
+
+#### Q: Is it possible to rename only certain merged fields in a Word document with Aspose.Words for .NET?
+
+A: Yes, it is possible to rename only certain merged fields in a Word document with Aspose.Words for .NET. You can filter which fields to rename using specific criteria, such as field name or other relevant properties. Then you can rename the corresponding fields using the `FieldMergingArgs.FieldName` method.
+
+#### Q: How can I check if a merged field was successfully renamed in a Word document with Aspose.Words for .NET?
+
+A: To check if a merged field was successfully renamed in a Word document with Aspose.Words for .NET, you can use the `FieldMergedArgs` class and access the `FieldMergedArgs.IsMerged` property to determine if the field was renamed with hit.
+
+#### Q: What are the consequences of renaming a merged field in a Word document with Aspose.Words for .NET?
+
+A: When you rename a merged field in a Word document with Aspose.Words for .NET, it changes the name of the field in the document, which may impact other functionality or processes that depend on the field name. Be sure to consider these potential consequences before renaming merged fields.
+
+#### Q: Is it possible to restore the original name of a merged field after renaming it with Aspose.Words for .NET?
+
+A: Yes, it is possible to restore the original name of a merged field after renaming it with Aspose.Words for .NET. You can store the field's original name in a variable or list, and then use that information to restore the original name if needed.

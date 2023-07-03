@@ -81,4 +81,25 @@ In this example, we created a new document, inserted an advanced field without u
 
 This concludes our guide on how to use the "Insert Advanced Field Without DocumentBuilder" feature with Aspose.Words for .NET.
 
+### FAQ's
 
+#### Q: What is an advanced field in Aspose.Words?
+
+A: An Advance Field in Aspose.Words is a special type of field that allows you to perform calculations, include conditions and perform complex operations in a Word document. It offers great flexibility to create dynamic and custom fields.
+
+#### Q: How to insert an advanced field in a Word document without using Document Builder in Aspose.Words?
+
+A: To insert an advanced field in a Word document without using Document Builder in Aspose.Words, you can follow these steps:
+
+1. Import Document and Field class from Aspose.Words.Fields namespace.
+2. Create an instance of Document by loading your existing document.
+3. Use the InsertField method to insert an advanced field by specifying the advanced field code.
+4. Save the document.
+
+#### Q: How to get the result of an advanced field in a Word document?
+
+A: To get the result of an advanced field in a Word document, you can use the Result property available in the Field class. This property returns the calculated result of the field.
+
+#### Q: Can I modify the formula of an advanced field after inserting it in a Word document?
+
+A: Yes, you can edit the formula of an advanced field after inserting it into a Word document. You can do this by accessing the FieldCode property of the Field class and updating the formula by modifying the formula text.

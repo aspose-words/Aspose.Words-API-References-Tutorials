@@ -57,3 +57,63 @@ Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.")
 In this example, we loaded a document, got the merge field names using the `GetFieldNames()` method, and displayed the number of merge fields present in the document.
 
 This concludes our guide on using the "Get Merge Field Names" feature with Aspose.Words for .NET.
+
+### FAQs
+
+#### Q1: What is mail merge in Aspose.Words?
+
+Mail merge in Aspose.Words is a process to merge data from an external source (e.g. Excel spreadsheet or database) with a template Word document to create documents personalized. This facilitates the automated generation of letters, reports and other similar documents.
+
+#### Q2: How do I get the list of mail merge fields available in a Word document?
+
+To get the list of mail merge fields available in a Word document, you can follow these steps:
+
+1. Import the Document and MailMergeFieldNames classes from the Aspose.Words namespace.
+2. Create a Document instance by loading your Word document.
+3. Use the Document object's GetMailMergeFieldNames method to get the list of available mail merge fields.
+
+Here is a sample code to illustrate the process:
+
+```csharp
+// Import the necessary namespaces
+using Aspose.Words;
+using Aspose.Words.MailMerging;
+
+// Load the existing document
+Document document = new Document("FilePath");
+
+// Get list of mail merge fields
+MailMergeFieldNames fieldNames = document.MailMerge.GetFieldNames();
+
+// Cycle through available mail merge fields
+foreach (string fieldName in fieldNames)
+{
+     // Do something with the field name
+     Console.WriteLine(fieldName);
+}
+```
+### FAQ's
+
+#### Q: What is mail merge in Aspose.Words?
+
+A: Mail merge in Aspose.Words is a process to merge data from an external source (e.g. Excel spreadsheet or database) with a template Word document to create documents personalized. This facilitates the automated generation of letters, reports and other similar documents.
+
+#### Q: How do I get the list of mail merge fields available in a Word document?
+
+A: To get the list of mail merge fields available in a Word document, you can follow these steps:
+
+1. Import the Document and MailMergeFieldNames classes from the Aspose.Words namespace.
+2. Create a Document instance by loading your Word document.
+3. Use the Document object's GetMailMergeFieldNames method to get the list of available mail merge fields.
+
+#### Q: Can I get mail merge fields from an external data source such as an Excel spreadsheet?
+
+A: Yes, you can get the mail merge fields from an external data source such as an Excel spreadsheet. For this, you can use the data binding features of Aspose.Words to establish a connection with the data source and get the names of the available fields.
+
+#### Q: Is it possible to filter mail merge fields based on certain criteria?
+
+A: Yes, it is possible to filter mail merge fields based on certain criteria. You can use regular expressions or specific conditions to filter mail merge fields and only get those that meet your specific criteria.
+
+#### Q: How can I manipulate mail merge fields in Aspose.Words?
+
+A: To manipulate mail merge fields in Aspose.Words, you can use the methods and properties provided by the Document and MailMergeField objects. You can add, remove, or update mail merge fields, as well as retrieve and edit values associated with fields.
