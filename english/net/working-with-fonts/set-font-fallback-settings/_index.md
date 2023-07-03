@@ -58,3 +58,24 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ## Conclusion
 In this tutorial, you learned how to set font substitution settings in a Word document using Aspose.Words for .NET. Experiment with different font substitution rules to ensure your document looks consistent, even when the specified fonts aren't available.
 
+### FAQ's
+
+#### Q: How can I set font substitution settings in a Word document with Aspose.Words?
+
+A: To set font substitution settings in a Word document with Aspose.Words, you can use API to specify fallback fonts to use when required fonts are not available. This ensures consistent text visualization, even without the original fonts.
+
+#### Q: Is it possible to handle fallback fonts when overriding in a Word document with Aspose.Words?
+
+A: Yes, with Aspose.Words you can manage fallback fonts when substituting in a Word document. The API allows you to detect missing fonts and specify appropriate fallback fonts to maintain consistent text appearance even when fonts are substituted.
+
+#### Q: Why is it important to correctly configure font substitution settings in a Word document?
+
+A: It is important to correctly configure font substitution settings in a Word document to maintain the visual integrity of the text. By setting the appropriate fallback fonts with Aspose.Words, you ensure that the text will be displayed consistently, even if the required fonts are not available.
+
+#### Q: How can I detect missing fonts when substituting in a Word document with Aspose.Words?
+
+A: Aspose.Words allows you to detect missing fonts during substitution in a Word document using the API. You can use methods provided by Aspose.Words to check the availability of required fonts and take appropriate action in case of missing fonts.
+
+#### Q: Does font substitution affect the layout of my Word document?
+
+A: Font substitution can affect the layout of your Word document if the fallback fonts have different dimensions than the original fonts. However, by choosing fallback fonts wisely and configuring font substitution settings with Aspose.Words, you can minimize layout impacts.

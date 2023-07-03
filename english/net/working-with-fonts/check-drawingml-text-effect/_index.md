@@ -64,3 +64,24 @@ Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
 ## Conclusion
 In this tutorial, we saw how to check DrawingML text effects in a Word document using Aspose.Words for .NET. Checking DrawingML text effects allows you to identify parts of text that have specific effects applied. Feel free to use this feature to manipulate and analyze text effects in your Word documents.
 
+### FAQ's
+
+#### Q: How can I access DrawingML text effects in a Word document using Aspose.Words?
+
+A: With Aspose.Words, you can access DrawingML text effects in a Word document using the provided API. You can browse text elements and check specific properties of text effects, such as color, size, etc.
+
+#### Q: What types of DrawingML text effects are commonly used in Word documents?
+
+A: Commonly used types of DrawingML text effects in Word documents include shadows, reflections, glows, gradients, etc. These effects can be applied to improve the appearance and formatting of text.
+
+#### Q: How can I check the color of a DrawingML text effect in a Word document?
+
+A: To check the color of a DrawingML text effect in a Word document, you can use the methods provided by Aspose.Words to access the color properties of the text effect. This way you can get the color used for the specific text effect.
+
+#### Q: Is it possible to check text effects in Word documents containing multiple sections?
+
+A: Yes, Aspose.Words allows checking text effects in Word documents containing multiple sections. You can navigate through each section of the document and access text effects for each section individually.
+
+#### Q: How can I check the opacity of a DrawingML text effect in a Word document?
+
+A: To check the opacity of a DrawingML text effect in a Word document, you can use the methods provided by Aspose.Words to access the opacity properties of the text effect. This will allow you to get the opacity value applied to the specific text effect.

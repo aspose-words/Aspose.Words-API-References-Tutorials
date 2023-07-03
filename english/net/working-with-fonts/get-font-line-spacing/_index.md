@@ -63,3 +63,24 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ## Conclusion
 In this tutorial, we saw how to get the font line spacing in a Word document with Aspose.Words for .NET. Font line spacing is important for controlling the vertical spacing between lines of text. Feel free to use this feature to customize the appearance of your text in your documents.
 
+### FAQ's
+
+#### Q: How can I change the line spacing of specific text in a Word document?
+
+A: With Aspose.Words, you can easily change the line spacing of specific text in a Word document. Use the API to select the desired text and adjust the spacing between lines by specifying the appropriate value.
+
+#### Q: Is it possible to apply exact spacing between lines in a Word document?
+
+A: Yes, Aspose.Words allows you to apply exact spacing between lines in a Word document. You can specify a precise value for line spacing using the API.
+
+#### Q: How can I adjust the line spacing for the whole Word document?
+
+A: With Aspose.Words, you can easily adjust line spacing for the entire Word document. Use the methods provided by the API to specify the desired line spacing for the entire document.
+
+#### Q: Does Aspose.Words support multiple line spacing?
+
+A: Yes, Aspose.Words supports multiple line spacing in Word documents. You can set multiple spacing, such as 1.5 times or 2 times normal spacing, for the lines of your text.
+
+#### Q: How can I avoid line overlapping issues when adjusting line spacing?
+
+A: To avoid line overlapping issues when adjusting the spacing between lines, be sure to choose appropriate spacing values. Also test the final rendering of your document to ensure that the text remains readable and well formatted.

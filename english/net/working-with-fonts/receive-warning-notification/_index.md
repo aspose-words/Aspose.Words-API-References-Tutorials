@@ -60,3 +60,30 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 ## Conclusion
 In this tutorial, you learned how to receive a warning notification while using Aspose.Words for .NET. Warnings can be issued when setting up or saving a document. Use this feature to be notified of any issues or warnings related to your documents.
 
+### FAQ's
+
+#### Q: How can I receive warning notifications in Aspose.Words?
+
+A: To receive warning notifications in Aspose.Words, you can use the `FontSettings` class and the `WarningCallback` event. You can define a callback method to be notified when font-related warnings are encountered while processing documents.
+
+#### Q: What are the common types of font-related warnings in Aspose.Words?
+
+A: Some common types of font-related warnings in Aspose.Words are:
+- Missing fonts
+- Substituted fonts
+- Font formatting issues
+
+#### Q: How can I troubleshoot font-related issues in my Word documents?
+
+A: To fix font-related issues in your Word documents, you can take the following steps:
+- Install missing fonts on the system where you are running your Aspose.Words application.
+- Use appropriate substitution fonts that are visually similar to the original fonts.
+- Check and adjust font formatting to ensure a consistent look.
+
+#### Q: Why is it important to receive font-related warning notifications in Aspose.Words?
+
+A: It's important to get font-related warning notifications in Aspose.Words because they help you identify potential issues in your documents. This allows you to take the necessary steps to resolve these issues and ensure the quality of your documents.
+
+#### Q: How can I enable or disable warning notifications in Aspose.Words?
+
+A: To enable or disable warning notifications in Aspose.Words, you can use the `FontSettings.ShowFontWarnings` property and set it to `true` or `false` depending on your needs. When enabled, you will receive font-related warning notifications.

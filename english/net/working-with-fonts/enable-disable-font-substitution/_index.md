@@ -65,3 +65,25 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ## Conclusion
 In this tutorial, we saw how to enable or disable font substitution in a Word document when rendering it with Aspose.Words for .NET. By controlling font substitution, you can influence how missing fonts are handled in your rendered documents. Do not hesitate to use this feature to customize the management of fonts in your Word documents.
+
+### FAQ's
+
+#### Q: How can I enable font substitution in a Word document with Aspose.Words?
+
+A: To enable font substitution in a Word document with Aspose.Words, you can use the API to specify substitution fonts to use when required fonts are not available. This will ensure consistent text visualization, even without the original fonts.
+
+#### Q: Is it possible to disable font substitution in a Word document with Aspose.Words?
+
+A: Yes, with Aspose.Words you can disable font substitution in a Word document. By using the API, you can prevent Word from substituting required fonts with other fonts, which maintains the original appearance of the text.
+
+#### Q: What happens when required fonts are missing during substitution in a Word document?
+
+A: When required fonts are missing during substitution in a Word document, Aspose.Words can detect this issue and provide you with options to fix it. You can choose to substitute missing fonts with alternate fonts or include missing fonts in the document, ensuring correct viewing.
+
+#### Q: How can I handle missing fonts when substituting in a Word document with Aspose.Words?
+
+A: To handle missing fonts when substituting in a Word document with Aspose.Words, you can use the API to detect missing fonts and provide resolution options. You can choose to substitute missing fonts with alternative fonts or include missing fonts in the document, depending on your needs.
+
+#### Q: Is it important to control font substitution in a Word document?
+
+A: Yes, it is important to control font substitution in a Word document to maintain the visual integrity of the text. By using Aspose.Words to enable or disable font substitution, you can ensure that the required fonts are used and avoid problems with missing or substituted fonts.

@@ -57,3 +57,20 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ## Conclusion
 Congratulation ! You now know how to set the fonts directory in Aspose.Words for .NET. You can use this feature to ensure the availability of fonts used in your document and to ensure consistency in the display of fonts.
 
+### FAQ's
+
+#### Q: How can I set a custom font folder in Aspose.Words?
+
+A: To set a custom fonts folder in Aspose.Words, you can use the `FontsFolder` class and the `SetFontsFolders` method specifying the path to the folder containing your fonts.
+
+#### Q: Can I set multiple font folders in Aspose.Words?
+
+A: Yes, you can set multiple font folders in Aspose.Words by calling the `SetFontsFolders` method multiple times with the paths of the different font folders you want to use.
+
+#### Q: What happens if a font used in the document is not present in the defined font folders?
+
+A: If a font used in the document is not present in the font folders defined in Aspose.Words, a substitute font will be used instead. This ensures that the text in the document will always be displayed correctly, even if the original font is not available.
+
+#### Q: Do font folders defined in Aspose.Words have priority over fonts installed on the system?
+
+A: Yes, font folders defined in Aspose.Words take precedence over fonts installed on the system. This means that if a font with the same name is present both in the defined font folders and in the system fonts, the version in the font folder will be used when processing Word documents.

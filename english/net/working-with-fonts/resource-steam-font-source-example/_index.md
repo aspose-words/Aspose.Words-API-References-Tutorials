@@ -56,3 +56,26 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ## Conclusion
 In this tutorial, you learned how to use Resource Flow Font Source with Aspose.Words for .NET. This feature allows you to load fonts from a resource feed, which is useful when you want to embed custom fonts into your documents. Experiment with different fonts and explore the possibilities offered by Aspose.Words for font management.
 
+### FAQ's
+
+#### Q: How can I load a font from a resource stream into Aspose.Words?
+
+A: To load a font from a resource stream in Aspose.Words, you can use the `FontSettings` class and the `SetFontsSources` method to specify the font source using a resource stream. This allows the font to be loaded directly from the resource stream rather than from a physical file.
+
+#### Q: What are the benefits of using resource streams to specify font sources in Aspose.Words?
+
+A: Using resource streams to specify font sources has several advantages:
+- Allows you to load fonts from resources built into your application, making it easy to deploy and distribute documents.
+- Provides increased flexibility in font management as you can load fonts from different resource streams depending on your needs.
+
+#### Q: How can I add fonts to a resource stream in my .NET application?
+
+A: To add fonts to a resource stream in your .NET application, you must embed the font files in your project resources. You can then access these font files using methods specific to your development platform (eg, `GetManifestResourceStream` using the `System.Reflection` namespace).
+
+#### Q: Is it possible to load multiple fonts from different resource streams into a single Aspose.Words document?
+
+A: Yes, it is totally possible to load multiple fonts from different resource streams into a single Aspose.Words document. You can specify multiple font sources using the `SetFontsSources` method of the `FontSettings` class, providing the appropriate resource streams for each font.
+
+#### Q: What types of resource streams can I use to load fonts into Aspose.Words?
+
+A: You can use different types of resource streams to load fonts into Aspose.Words, such as resource streams built into your .NET application, resource streams from an external file, resource streams from a database, etc. Be sure to provide the appropriate resource flows based on your setup and needs.

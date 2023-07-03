@@ -68,3 +68,20 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 ## Conclusion
 In this tutorial, we saw how to get the overrides without suffixes in a Word document with Aspose.Words for .NET. Substitutions without suffixes are useful for solving font substitution problems. Feel free to use this feature to improve the display and printing of your documents.
 
+### FAQ's
+
+#### Q: Why does Aspose.Words add suffixes to font substitutions?
+
+A: Aspose.Words adds suffixes to font substitutions to avoid conflicts between original fonts and substituted fonts. This helps ensure maximum compatibility when converting and manipulating documents.
+
+#### Q: How can I retrieve font substitutions without suffixes in Aspose.Words?
+
+A: To retrieve font substitutions without suffixes in Aspose.Words, you can use the `FontSubstitutionSettings` class and the `RemoveSuffixes` property. Setting this property to `true` will get the font substitutions without the added suffixes.
+
+#### Q: Is it possible to disable adding suffixes to font substitutions in Aspose.Words?
+
+A: No, it is not possible to disable adding suffixes to font substitutions in Aspose.Words. Suffixes are added by default to ensure document compatibility and consistency.
+
+#### Q: How can I filter out unwanted suffixes in font substitutions in Aspose.Words?
+
+A: To filter out unwanted suffixes in font substitutions in Aspose.Words, you can use string processing techniques, such as using the `Replace` or `Substring` methods to remove specific suffixes you don't want to include.

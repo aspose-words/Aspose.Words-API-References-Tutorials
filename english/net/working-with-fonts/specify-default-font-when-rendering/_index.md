@@ -57,3 +57,25 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 
 ## Conclusion
 In this tutorial, we learned how to specify the default font when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily set a default font to use when rendering your documents. Aspose.Words offers a powerful and flexible API for working with fonts in your documents. With this knowledge, you can control and customize the rendering of your documents to your specific needs.
+
+### FAQ's
+
+#### Q: How can I specify a default font when converting to PDF in Aspose.Words?
+
+A: To specify a default font when converting to PDF in Aspose.Words, you can use the `PdfOptions` class and set the `DefaultFontName` property to the name of the desired font.
+
+#### Q: What if the default font is not available when converting to PDF?
+
+A: If the specified default font is not available when converting to PDF, Aspose.Words will use a replacement font to display the text in the converted document. This may cause a slight difference in appearance from the original font.
+
+#### Q: Can I specify a default font for other output formats, such as DOCX or HTML?
+
+A: Yes, you can specify a default font for other output formats such as DOCX or HTML by using the appropriate conversion options and setting the corresponding property for each format.
+
+#### Q: How can I check the default font specified in Aspose.Words?
+
+A: To check the default font specified in Aspose.Words, you can use the `DefaultFontName` property of the `PdfOptions` class and retrieve the name of the configured font.
+
+#### Q: Is it possible to specify a different default font for each section of the document?
+
+A: Yes, it is possible to specify a different default font for each section of the document using formatting options specific to each section. However, this would require more advanced manipulation of the document using Aspose.Words features.

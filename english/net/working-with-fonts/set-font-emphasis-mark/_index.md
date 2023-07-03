@@ -61,3 +61,24 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ## Conclusion
 In this tutorial, you learned how to set the font emphasis style in a Word document using Aspose.Words for .NET. Experiment with different styles of emphasis and use this feature to highlight words or phrases in your documents.
 
+### FAQ's
+
+#### Q: How can I add accent marks to a specific font in a Word document using Aspose.Words?
+
+A: To add accent marks to a specific font in a Word document using Aspose.Words, you can use the API to navigate to the desired font and apply the appropriate accent marks. This will add accent marks to the text with the selected font.
+
+#### Q: Is it possible to change the style of accent marks in a Word document with Aspose.Words?
+
+A: Yes, with Aspose.Words you can change the style of accent marks in a Word document. The API allows you to adjust style properties such as color, size, linetype, etc., to customize the appearance of accent marks.
+
+#### Q: How can I remove all accent marks from a Word document using Aspose.Words?
+
+A: To remove all accent marks from a Word document using Aspose.Words, you can use the API to browse the document, detect existing accent marks and remove them using the appropriate methods. This will remove all emphasis marks from the document.
+
+#### Q: Can I add accent marks to a specific part of text in a Word document?
+
+A: Yes, you can add accent marks to a specific part of text in a Word document using Aspose.Words. You can select the desired range of text using the API and add appropriate emphasis marks to that part of the text.
+
+#### Q: Can the accent marks be customized to my needs?
+
+A: Yes, accent marks can be customized to your needs using Aspose.Words. You can adjust the style properties of accent marks, such as color, size, linetype, and more, to match your formatting preferences.
