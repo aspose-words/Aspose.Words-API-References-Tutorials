@@ -74,3 +74,24 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 
 Feel free to use this code in your own projects and modify it according to your specific requirements.
 
+### FAQ's
+
+#### Q: How can I get a form field by name in Aspose.Words?
+
+A: To get a form field by name in Aspose.Words, you can use the `Document.Range.FormFields[name]` method. This method returns the form field corresponding to the specified name.
+
+#### Q: What if the form field with the specified name does not exist in the document?
+
+A: If the form field with the specified name does not exist in the document, the `Document.Range.FormFields[name]` method will return `null`. You can check this result to handle cases where the form field is not found.
+
+#### Q: How can I modify the properties of a found form field?
+
+A: Once you get a form field by name, you can access its individual properties to edit them. For example, you can change the field's value, enable or disable its visibility, or modify other properties as needed.
+
+#### Q: Can I get multiple form fields with the same name in a document?
+
+A: Yes, it is possible to have multiple form fields with the same name in a document. In this case, the `Document.Range.FormFields[name]` method will return the first form field found with the specified name. If you have multiple form fields with the same name, you will need to take this into account when manipulating the fields.
+
+#### Q: How can I iterate over all form fields in a document?
+
+A: To iterate over all form fields in a document, you can use a `foreach` loop on the `Document.Range.FormFields` collection. This will allow you to access each form field individually and perform operations on each of them.

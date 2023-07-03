@@ -53,3 +53,25 @@ doc.Save("OutputDocument.docx");
 ```
 
 Feel free to use this code in your own projects and modify it according to your specific requirements.
+
+### FAQ's
+
+#### Q: How can I insert a text type form field in Aspose.Words?
+
+A: To insert a text type form field in Aspose.Words, you can use the `FormField` class and set its `Type` property to `FormFieldType.Text`. You can also customize other properties such as name, label, and options.
+
+#### Q: Is it possible to create a checkbox type form field in a document?
+
+A: Yes, it is possible to create a checkbox type form field in an Aspose.Words document. You can use the `FormField` class and set its `Type` property to `FormFieldType.CheckBox` to create a checkbox. You can then customize the properties of the checkbox as needed.
+
+#### Q: How can I add a drop-down type form field to a document?
+
+A: To add a drop-down type form field in an Aspose.Words document, use the `FormField` class and set its `Type` property to `FormFieldType.DropDown`. You can then set the dropdown options using the `DropDownItems` property.
+
+#### Q: Can I set a default value for a form field in Aspose.Words?
+
+A: Yes, you can set a default value for a form field in Aspose.Words. Use the `FormField.Result` property to specify the initial value of the form field.
+
+#### Q: How can I retrieve data entered in form fields in Aspose.Words?
+
+A: To retrieve data entered in form fields in Aspose.Words, you can use the `FormField.Result` property which contains the value entered by the user. You can access this property for each form field in your document.
