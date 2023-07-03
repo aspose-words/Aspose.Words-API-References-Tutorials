@@ -61,3 +61,17 @@ foreach (WarningInfo warningInfo in warnings)
 ```
 
 Congratulation ! You have now learned how to use the warning source with Aspose.Words for .NET.
+
+### FAQ's
+
+#### Q: Can we customize the appearance of the "Warning" tag?
+
+A: The formatting of the "Warning" tag depends on the Markdown renderer used. In most cases, you can customize the look by using CSS to target the `blockquote` tag in your document.
+
+#### Q: Is it possible to add icons to the "Warning" tag?
+
+A: Yes, it is possible to add icons to the "Warning" tag using HTML code in your Markdown document. You can insert a `span` tag with the appropriate class to display an icon next to the warning text.
+
+#### Q: Is the "Warning" tag compatible with all Markdown readers?
+
+A: The compatibility of the "Warning" tag depends on the Markdown rendering used. Most Markdown readers will support the `blockquote` tag to display highlighted text, but the exact appearance may vary.

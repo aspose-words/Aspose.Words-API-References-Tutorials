@@ -39,4 +39,20 @@ builder.InsertHorizontalRule();
 Congratulation ! You have now learned how to use the horizontal rule feature with Aspose.Words for .NET.
 
 
+### FAQ's
 
+#### Q: How do I create a horizontal ruler in Markdown?
+
+A: To create a horizontal ruler in Markdown, you can use one of the following symbols on an empty line: three asterisks (\***), three dashes (\---), or three underscores (\___).
+
+#### Q: Can I customize the appearance of a horizontal ruler in Markdown?
+
+A: In standard Markdown, there is no way to customize the appearance of horizontal rulers. However, some advanced Markdown editors and extensions offer additional customization features.
+
+#### Q: Are horizontal rulers supported by all Markdown editors?
+
+A: Yes, most popular Markdown editors support horizontal rulers. However, it's always best to check your specific vendor's documentation to make sure it's supported.
+
+#### Q: What other elements can I create in Markdown?
+
+A: In addition to horizontal rulers, you can create titles, paragraphs, lists, links, images, tables, and more in Markdown.

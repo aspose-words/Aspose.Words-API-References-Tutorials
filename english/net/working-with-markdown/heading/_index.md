@@ -54,5 +54,24 @@ builder.Writeln("This is an H1 tag");
 
 Congratulation ! You have now learned how to use the headings feature with Aspose.Words for .NET.
 
+### FAQ's
 
+#### Q: What is a Markdown header?
 
+A: A Markdown header is an element used to create headings and subheadings in a document. It uses the syntax of pound (#) symbols followed by a space and title text.
+
+#### Q: How do I use the different levels of Markdown headings?
+
+A: To use the different levels of Markdown headings, you can add a varying number of pound (#) symbols before the heading text.
+
+#### Q: Are there any limitations in using Markdown headers?
+
+A: There are no strict limitations, but it is recommended to maintain a clear and concise reporting structure.
+
+#### Q: Can I customize the appearance of Markdown headers?
+
+A: In standard Markdown, it is not possible to customize the appearance of Markdown headers, but some advanced Markdown extensions and editors offer additional functionality.
+
+#### Q: Are Markdown headings supported by all Markdown editors?
+
+A: Yes, most popular Markdown editors support Markdown headers, but check your editor's specific documentation to be sure.

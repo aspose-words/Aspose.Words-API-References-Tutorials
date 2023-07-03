@@ -49,3 +49,16 @@ builder.Writeln("This text will be StrikeThrough");
 
 Congratulation ! You have now learned how to apply the strikethrough text style with Aspose.Words for .NET.
 
+### FAQ's
+
+#### Q: How can I add the strikethrough text in Aspose.Words?
+
+A: To add the strikethrough text in Aspose.Words, you can use the `Font.StrikeThrough` property of the `Run` object. You can set this property to `true` to add strikethrough text to specific text. For example, you can use `run.Font.StrikeThrough=true` to add the strikethrough text into the `Run` object.
+
+#### Q: Is it possible to add the strikethrough text to several pieces of text in the same paragraph?
+
+A: Yes, you can add strikethrough text to multiple parts of text in a single paragraph by using multiple `Run` objects. You can create multiple `Run` objects and set the `Font.StrikeThrough` property to `true` for each object to add the strikethrough text to the desired text parts. Then you can add them to the paragraph using the `Paragraph.AppendChild(run)` method.
+
+#### Q: Can I add strikethrough text to text that is in a table or cell in Aspose.Words?
+
+A: Yes, you can add strikethrough text to text that is in a table or cell in Aspose.Words. You can jump to the cell or paragraph you want using the appropriate methods and then apply the strikethrough text formatting using the `Font.StrikeThrough` property of the `Run` or `Paragraph` object.

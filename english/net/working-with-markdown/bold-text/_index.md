@@ -49,4 +49,16 @@ builder.Writeln("This text will be Bold");
 Congratulation ! You have now learned how to bold text with Aspose.Words for .NET.
 
 
+### FAQ's
 
+#### Q: How can I make text bold in Aspose.Words?
+
+A: To make text bold in Aspose.Words, you can use the `Font.Bold` property of the `Run` object. You can set this property to `true` to bold specific text. For example, you can use `run.Font.Bold=true` to bold the text inside the `Run` object.
+
+#### Q: Is it possible to bold several pieces of text in the same paragraph?
+
+A: Yes, you can bold multiple pieces of text in a single paragraph using multiple `Run` objects. You can create multiple `Run` objects and set the `Font.Bold` property to `true` for each object to bold the desired parts of text. Then you can add them to the paragraph using the `Paragraph.AppendChild(run)` method.
+
+#### Q: Can I bold text that is in a table or cell in Aspose.Words?
+
+A: Yes, you can bold text that is in a table or cell in Aspose.Words. You can navigate to the cell or paragraph you want using the appropriate methods and then apply the bold formatting using the `Font.Bold` property of the `Run` or `Paragraph` object.

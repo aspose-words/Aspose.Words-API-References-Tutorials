@@ -94,6 +94,24 @@ builder.Writeln("Setext Heading level 2");
 builder.Document.Save(dataDir + "Test.md");
 ```
 
+### FAQ's
 
+#### Q: What is a Setext Markdown header?
 
+A: A Setext Markdown header is an alternative way to create headings in a Markdown document. It uses underscore characters (= or -) to indicate different levels of headings.
 
+#### Q: How to use Setext Markdown headers?
+
+A: To use Setext Markdown headings, place underscores below the title text. Use equal signs (=) for a level 1 header and hyphens (-) for a level 2 header.
+
+#### Q: Are there any limitations in using Setext Markdown headers?
+
+A: Setext Markdown headings have limitations in terms of heading hierarchy and are not as visually distinct as standard Markdown headings.
+
+#### Q: Can I customize the appearance of Setext Markdown headers?
+
+A: In standard Markdown, it is not possible to customize the appearance of Setext Markdown headers. They have a predefined appearance based on the underscore characters used.
+
+#### Q: Are Setext Markdown headers supported by all Markdown editors?
+
+A: Support for Setext Markdown headers may vary between Markdown editors. Check your publisher's specific documentation to be sure.

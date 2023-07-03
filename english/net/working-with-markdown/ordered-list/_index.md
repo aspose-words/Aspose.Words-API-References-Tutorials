@@ -74,3 +74,24 @@ builder.Writeln("Item 2b");
 Congratulation ! You have now learned how to use the ordered list feature with Aspose.Words for .NET.
 
 
+### FAQ's
+
+#### Q: How to create an ordered list in Markdown?
+
+A: To create an ordered list in Markdown, start each list item with a number followed by a period (`1.`, `2.`, `3.`), followed by a space.
+
+#### Q: Can we nest ordered lists in Markdown?
+
+A: Yes, it is possible to nest ordered lists in Markdown by adding four offset spaces in front of each nested list item.
+
+#### Q: How to customize numbering of ordered lists?
+
+A: In standard Markdown, ordered list numbering is generated automatically. However, some Markdown editors allow you to customize it using specific extensions.
+
+#### Q: Do ordered lists in Markdown support indentation?
+
+A: Yes, ordered lists in Markdown support indentation. You can add a left shift using spaces or tabs.
+
+#### Q: Can links or inline text be added to list items?
+
+A: Yes, you can add links or inline text to list items using the appropriate Markdown syntax.

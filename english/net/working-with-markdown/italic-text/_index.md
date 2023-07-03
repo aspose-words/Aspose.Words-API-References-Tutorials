@@ -42,3 +42,16 @@ builder.Writeln("This text will be Italic");
 Congratulation ! You have now learned how to use the italic text feature with Aspose.Words for .NET.
 
 
+### FAQ's
+
+#### Q: How can I italicize text in Aspose.Words?
+
+A: To italicize text in Aspose.Words, you can use the `Font.Italic` property of the `Run` object. You can set this property to `true` to italicize specific text. For example, you can use `run.Font.Italic=true` to italicize the text contained in the `Run` object.
+
+#### Q: Is it possible to italicize several pieces of text in the same paragraph?
+
+A: Yes, you can italicize multiple pieces of text in a single paragraph using multiple `Run` objects. You can create multiple `Run` objects and set the `Font.Italic` property to `true` for each object to italicize the desired parts of text. Then you can add them to the paragraph using the `Paragraph.AppendChild(run)` method.
+
+#### Q: Can I italicize text that is in a table or cell in Aspose.Words?
+
+A: Yes, you can italicize text that is in a table or cell in Aspose.Words. You can navigate to the cell or paragraph you want using the appropriate methods and then apply italic formatting using the `Font.Italic` property of the `Run` or `Paragraph` object.
