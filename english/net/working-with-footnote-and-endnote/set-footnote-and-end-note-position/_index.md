@@ -54,3 +54,24 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
 
 Feel free to use this code in your own projects and modify it according to your specific requirements.
 
+### FAQ's
+
+#### Q: How can I position footnotes and endnotes in Aspose.Words?
+
+A: To position footnotes and endnotes in Aspose.Words, you need to use the `FootnoteOptions` class and the `Position` property. You can set this property to any value you want, such as `BottomOfPage` (at the bottom of the page) or `EndOfSection` (at the end of the section).
+
+#### Q: Is it possible to customize the position of footnotes and endnotes for each page or section of the document?
+
+A: Yes, it is possible to customize the position of footnotes and endnotes for each page or section of the document. You can use Aspose.Words section and page manipulation methods to define specific positions for footnotes and endnotes.
+
+#### Q: How do I remove footnotes or endnotes from a document?
+
+A: To remove footnotes or endnotes from a document in Aspose.Words, you can use appropriate methods such as `RemoveAllFootnotes` to remove all footnotes or `RemoveAllEndnotes` to remove all endnotes. Be sure to save the document after performing these operations.
+
+#### Q: Can footnotes and endnotes be positioned outside the page margins?
+
+No, by default footnotes and endnotes cannot be positioned outside the page margins in Aspose.Words. However, you can adjust the document margins to allow more space for footnotes and endnotes if needed.
+
+#### Q: Can footnotes and endnotes be customized with specific font or formatting styles?
+
+A: Yes, you can customize footnotes and endnotes with specific font or formatting styles in Aspose.Words. You can use the available methods and properties to apply font styles, colors, font sizes, etc. footnotes and endnotes.
