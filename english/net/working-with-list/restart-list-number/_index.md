@@ -110,6 +110,23 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
             
 ```
 
+### FAQ's
+
+#### Q: How can I restart the numbering of a list in Aspose.Words?
+
+A: To restart the numbering of a list in Aspose.Words, you can use the `ListRestartAtNumber` method of the `List` class. This method allows you to set a new dial value from which the list should be restarted. For example, you can use `list.ListRestartAtNumber(1)` to restart numbering from 1.
+
+#### Q: Is it possible to customize prefix and suffix of restarted list numbering in Aspose.Words?
+
+A: Yes, you can customize prefix and suffix of restarted list numbering in Aspose.Words. The `ListLevel` class offers properties such as `ListLevel.NumberPrefix` and `ListLevel.NumberSuffix` which allow you to specify the prefix and suffix for each level in the list. You can use these properties to customize the prefix and suffix as needed.
+
+#### Q: How can I specify a specific numbering value from which the list should be restarted?
+
+A: To specify a specific number value from which the list should be restarted, you can use the `ListRestartAtNumber` method passing the desired value as an argument. For example, to restart numbering from 5, you can use `list.ListRestartAtNumber(5)`.
+
+#### Q: Is it possible to restart multi-level list numbering in Aspose.Words?
+
+A: Yes, Aspose.Words supports restart numbering of multiple list levels. You can apply the `ListRestartAtNumber` method at each list level to restart numbering individually. For example, you can use `list.Levels[0].ListRestartAtNumber(1)` to restart the first list level from 1, and `list.Levels[1].ListRestartAtNumber(1)` to restart the second level list starting from 1, and so on.
 
 
 

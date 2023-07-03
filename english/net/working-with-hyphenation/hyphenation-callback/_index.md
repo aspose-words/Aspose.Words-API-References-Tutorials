@@ -81,3 +81,28 @@ finally
 ```
 
 Feel free to use this code in your own projects and modify it to suit your specific needs.
+
+### FAQ's
+
+#### Q: What is a syllabization reminder in Aspose.Words?
+
+A: A Syllabization Reminder in Aspose.Words is a feature that allows you to customize how words are syllabized in your documents. By using a syllabization reminder, you can specify custom rules for syllabization of words, which can be useful for specific languages or particular scenarios where the default syllabization does not produce the desired results.
+
+#### Q: How to set a syllabization reminder in Aspose.Words?
+
+A: To define a hyphenation callback in Aspose.Words, you need to create a class that implements the `HyphenationCallback` interface and implement the `HandleWord()` method. This method will be called for each word encountered during syllabization. You can apply custom syllabization rules to it and return the syllabized word. Then you can bind your hyphenation callback using the `Document.HyphenationCallback` property of your document.
+
+#### Q: What is the advantage of using a syllabization reminder in Aspose.Words?
+
+A: The benefit of using a syllabization reminder in Aspose.Words is the ability to customize how words are syllabized in your documents. This gives you more control over syllabization, especially for specific languages or scenarios where the default syllabization does not give the desired results. You can apply specific rules to each word to obtain precise syllabization according to your needs.
+
+#### Q: What are some common scenarios where using a syllabization reminder can be helpful?
+
+A: Using a syllabization booster can be useful in several scenarios, such as:
+- Syllabization of words in specific languages that have particular syllabization rules.
+- The application of personalized syllabization rules for acronyms or technical words.
+- Adaptation of syllabization according to stylistic preferences or typographical standards.
+
+#### Q: How can I test custom syllabization with a syllabization reminder in Aspose.Words?
+
+A: To test custom syllabization with a syllabization reminder in Aspose.Words, you can create a test document containing words for which you want to apply custom syllabization rules. Then you can set your custom syllabization callback, call the `Document.Range.Replace()` method to replace the words in the document, and use the `Hyphenate()` method of the `Hyphenation` class to get the syllabization of the words . You can then format the syllabized words as needed, for example by adding hyphens between syllables.
