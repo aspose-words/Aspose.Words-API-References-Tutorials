@@ -78,3 +78,24 @@ foreach (Node child in children)
 This is a complete code example to enumerate the child nodes of a paragraph with Aspose.Words for .NET. Make sure to import the references
 
 
+### FAQ's
+
+#### Q: What is a child node in Node.js?
+
+A: A child node in Node.js refers to a node that is directly contained inside a specific node. These are the nodes that are immediately lower in the hierarchy than the parent node.
+
+#### Q: How to enumerate the child nodes of a specific node?
+
+A: To enumerate the child nodes of a specific node in Node.js, you can use the `childNodes` property of the node. This property returns a list of all child nodes of the specified node.
+
+#### Q: How to access the properties of a child node?
+
+A: To access the properties of a child node in Node.js, you can use the methods and properties provided by the XML API used in your Node.js environment. For example, you can use methods like `getAttribute` to get the value of a specific attribute of a child node.
+
+#### Q: Can we modify the child nodes of a node?
+
+A: Yes, it is possible to modify the child nodes of a node in Node.js using the methods and properties provided by the XML API used in your Node.js environment. For example, you can use methods like `appendChild` or `removeChild` to add or remove child nodes from a specific node.
+
+#### Q: How to browse all child nodes of a node?
+
+A: To loop through all child nodes of a specific node in Node.js, you can use a `for` loop to iterate through the list of child nodes returned by the `childNodes` property. You can then access the properties and values of each child node inside the loop.

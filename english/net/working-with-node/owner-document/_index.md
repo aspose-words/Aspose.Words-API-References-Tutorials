@@ -87,6 +87,24 @@ doc.FirstSection.Body.AppendChild(para);
 Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
+### FAQ's
 
+#### Q: What is a proprietary document in Node.js?
 
+A: An owner document in Node.js is the XML document to which a specific node belongs. It represents the instance of the XML document containing the node.
 
+#### Q: How to get the owner document of a node?
+
+A: To get the owner document of a node in Node.js, you can use the `ownerDocument` property of the node. This property returns the XML document that owns the node.
+
+#### Q: What is the proprietary document used for?
+
+A: The owner document is used to represent the global context of a node in an XML document. It provides access to other nodes in the document and allows operations to be performed on them.
+
+#### Q: Can we modify the owner document of a node?
+
+A: In most cases, the document owner of a node is determined when the node is created and cannot be changed directly. The owner document is a read-only property.
+
+#### Q: How to access the nodes of an owner document?
+
+A: To access nodes in a proprietary document, you can use the methods and properties provided by the XML API used in your Node.js environment. For example, you can use methods like `getElementsByTagName` or `querySelector` to select specific nodes in the document.
