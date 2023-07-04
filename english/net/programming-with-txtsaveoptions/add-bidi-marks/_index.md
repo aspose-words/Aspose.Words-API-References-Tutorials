@@ -66,3 +66,28 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 ## Conclusion
 
 In this guide, we have explained how to use Aspose.Words for .NET to add Bidi marks to a Word document using the provided C# source code. By following the provided steps, you can easily add Bidi marks to your Word documents in your C# application. Aspose.Words offers tremendous flexibility and power for working with text formatting and language management, allowing you to create multilingual documents professionally.
+
+### Frequently Asked Questions
+
+#### Q: What is Aspose.Words for .NET?
+Aspose.Words for .NET is a powerful library for creating, editing and manipulating Word documents in a C# application. It offers many features for working with Word documents, including adding Bidi (bidirectional) marks.
+
+#### Q: What features does Aspose.Words for .NET offer?
+Aspose.Words for .NET offers a wide range of features for creating, editing and manipulating Word documents. Some of these features include creating documents, adding content, formatting text, managing tables, merging and splitting documents, converting documents, and more.
+
+#### Q: How can I add Bidi marks to a Word document using Aspose.Words for .NET?
+You can add Bidi marks to a Word document by following these steps:
+
+Create a new document using the `Document` class.
+
+Use the `DocumentBuilder` class to add content to the document.
+
+Once you have added the content, use the `TxtSaveOptions` class and set the `AddBidiMarks` property to `true`.
+
+Save the document with Bidi marks using the `Save` method of the `Document` class.
+
+#### Q: Does Aspose.Words support multiple languages for adding Bidi marks?
+Yes, Aspose.Words supports multiple languages for adding Bidi marks. You can add Bidi marks to text in different languages, such as English, Hebrew, and Arabic, using Aspose.Words for .NET.
+
+#### Q: Are there any additional options for saving the document with Bidi marks?
+Yes, you can specify other options when saving the document with Bidi marks using the `TxtSaveOptions` class. For example, you can set the document save format, encoding options, etc.
