@@ -1,6 +1,6 @@
 ---
-title: Docx To Markdown
-linktitle: Docx To Markdown
+title: Convert Docx File To Markdown
+linktitle: Convert Docx File To Markdown
 second_title: Aspose.Words for .NET API Reference
 description: Learn how to convert Word documents from Docx to Markdown format using Aspose.Words for .NET. Step-by-step tutorial with example source code.
 type: docs
@@ -58,3 +58,21 @@ That's it! You have successfully converted a Word document in Docx format to Mar
 ```
 
 Feel free to use this code in your own projects and modify it according to your specific requirements.
+
+### FAQs
+
+#### How to convert a DOCX file to Markdown?
+
+To convert a DOCX file to Markdown, you can use different software tools or libraries that provide this functionality. Aspose.Words for .NET is a reliable option for this conversion. You can use the library API to load the DOCX file and save it in Markdown format.
+
+#### How do I preserve formatting when converting?
+
+Whether formatting is preserved during conversion depends on the tool or library you are using. Aspose.Words for .NET offers advanced features to preserve formatting, styles, and elements from the DOCX file in the converted Markdown document. It's important to choose a tool that can handle the complexity of your document and preserve the formatting you want.
+
+#### What are the limitations of the conversion process?
+
+The limitations of the conversion process depend on the specific tool or library you are using. Some tools may have restrictions related to complex formatting, tables, or images embedded in the DOCX file. It is important to fully understand the features and limitations of the chosen tool in order to make informed decisions when converting.
+
+#### Is Aspose a reliable tool for DOCX to Markdown conversion?
+
+Yes, Aspose.Words for .NET is a reliable tool for DOCX to Markdown conversion. It is widely used in industry for its quality, accuracy and advanced features. The tool offers comprehensive documentation, regular updates, and dedicated technical support, making it a recommended choice for document conversion tasks.
