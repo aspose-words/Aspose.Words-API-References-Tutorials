@@ -1,6 +1,6 @@
 ---
-title: Add Bidi Marks
-linktitle: Add Bidi Marks
+title: Add Bidi Marks in Word Document
+linktitle: Add Bidi Marks in Word Document
 second_title: Aspose.Words for .NET API Reference
 description: Learn to add Bidi marks to a Word document using Aspose.Words for .NET and create professional multilingual documents.
 type: docs
