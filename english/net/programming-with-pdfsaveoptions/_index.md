@@ -18,8 +18,8 @@ Whether you want to convert Word documents to PDF for online distribution, archi
 | --- | --- |
 | [Display Doc Title In Window Titlebar](./display-doc-title-in-window-titlebar/) | Learn how to display document title in window title bar when converting to PDF with Aspose.Words for .NET. |
 | [Pdf Render Warnings](./pdf-render-warnings/) | Step-by-step guide to dealing with PDF rendering warnings with Aspose.Words for .NET. |
-| [Digitally Signed Pdf Using Certificate Holder](./digitally-signed-pdf-using-certificate-holder/) | Learn how to digitally sign a PDF using a certificate holder with Aspose.Words for .NET. |
-| [Embedded All Fonts](./embedded-all-fonts/) | Step by step guide to embed all fonts in a PDF using Aspose.Words for .NET. |
+| [Add Digital Signature to PDF using Certificate Holder](./digitally-signed-pdf-using-certificate-holder/) | Learn how to digitally sign a PDF using a certificate holder with Aspose.Words for .NET. |
+| [Embed Fonts in PDF Document](./embedded-all-fonts/) | Step by step guide to embed all fonts in a PDF using Aspose.Words for .NET. |
 | [Embedded Subset Fonts](./embedded-subset-fonts/) | Step-by-step guide to embedding font subsets in a PDF using Aspose.Words for .NET. |
 | [Disable Embed Windows Fonts](./disable-embed-windows-fonts/) | Learn how to disable Windows font embedding when converting documents to PDF with Aspose.Words for .NET. |
 | [Skip Embedded Arial And Times Roman Fonts](./skip-embedded-arial-and-times-roman-fonts/) | Step-by-step guide to generate PDF without embedding Arial and Times Roman fonts with Aspose.Words for .NET. |
