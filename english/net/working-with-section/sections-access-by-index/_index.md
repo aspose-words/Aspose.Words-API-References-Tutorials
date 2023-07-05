@@ -70,3 +70,47 @@ section.PageSetup.TextColumns.Spacing = 35.4; // 1.25 cm
 ## Conclusion
 In this tutorial, we saw how to access sections of a Word document by index and change their settings using Aspose.Words for .NET. Accessing sections by index allows you to target and customize specific sections in your document. Feel free to use this feature to meet your specific needs.
 
+### FAQ's
+
+#### Q: How to set document directory in Aspose.Words for .NET?
+
+A: To set the path to the directory containing your documents, you must replace `"YOUR DOCUMENT DIRECTORY"` in the code with the appropriate path. Here's how to do it:
+
+```csharp
+// Path to your documents directory
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
+
+#### Q: How to load document and access section by index in Aspose.Words for .NET?
+
+A: To load the Word document into an instance of the `Document` class and access a specific section by index, you can use the following code:
+
+```csharp
+// Load the document
+Document doc = new Document(dataDir + "Document.docx");
+
+// Access a section by index
+Section section = doc.Sections[0];
+```
+
+#### Q: How do I change section settings in Aspose.Words for .NET?
+
+A: To modify the settings of a section, you can use the properties of the section's `PageSetup` object. In this example, we're changing the margins, header and footer distance, and text column spacing.
+
+```csharp
+section.PageSetup.LeftMargin = 90; // 3.17cm
+section.PageSetup.RightMargin = 90; // 3.17cm
+section.PageSetup.TopMargin = 72; // 2.54cm
+section.PageSetup.BottomMargin = 72; // 2.54cm
+section.PageSetup.HeaderDistance = 35.4; // 1.25cm
+section.PageSetup.FooterDistance = 35.4; // 1.25cm
+section.PageSetup.TextColumns.Spacing = 35.4; // 1.25cm
+```
+
+#### Q: How to save the modified document in Aspose.Words for .NET?
+
+A: Once you have modified the section settings, you can save the modified document to a file using the following code:
+
+```csharp
+doc.Save(dataDir + "Document_Modified.docx");
+```

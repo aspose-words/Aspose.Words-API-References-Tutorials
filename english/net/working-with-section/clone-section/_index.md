@@ -50,3 +50,26 @@ Section cloneSection = doc.Sections[0].Clone();
 
 ## Conclusion
 In this tutorial, we saw how to clone a section of a Word document using Aspose.Words for .NET. Section cloning allows you to create identical copies of existing sections in a document. Feel free to customize and use this clone feature in your projects to efficiently manipulate and edit sections of your documents.
+
+### FAQ's
+
+#### Q: How to set document directory in Aspose.Words for .NET?
+
+A: To set the path to the directory containing your Word document, you must replace `"YOUR DOCUMENT DIRECTORY"` in the code with the appropriate path. Here's how to do it:
+
+```csharp
+// Path to your documents directory
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
+
+#### Q: How to load document and clone section in Aspose.Words for .NET?
+
+A: To load the Word document into an instance of the `Document` class and clone the first section of the document, you can use the following code:
+
+```csharp
+// Load the document
+Document doc = new Document(dataDir + "Document.docx");
+
+// Clone the section
+Section cloneSection = doc.Sections[0].Clone();
+```
