@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /net/working-with-textboxes/check-sequence/
 ---
+This step-by-step guide explains how to check the sequence of TextBoxes in a Word document using the Aspose.Words library for .NET. You will learn how to configure the document, create a TextBox shape, access TextBoxes and check their position in the sequence.
 
 ## Step 1: Setting up the document and creating a TextBox shape
 
@@ -77,3 +78,30 @@ if (textBox. Next == null && textBox. Previous != null)
      Console.WriteLine("The end of the sequence.");
 }
 ```
+
+## Conclusion
+
+Congratulation ! You now know how to check the sequence of TextBoxes in a Word document using the Aspose.Words library for .NET. By following the steps in this guide, you were able to set up the document, create a TextBox shape, and check if it is at the head, middle, or end of the sequence.
+
+### FAQ's for checking sequence
+
+#### Q: What is the library used to check the sequence of TextBoxes using Aspose.Words for .NET?
+
+A: To check the sequence of TextBoxes using Aspose.Words for .NET, the library used is Aspose.Words for .NET.
+
+#### Q: How to determine if a TextBox is the head of the sequence?
+
+A: To determine if a TextBox is the head of the sequence, you can check if it has a next form (`Next`) but not a previous form (`Previous`). If so, that means he is the head of the streak.
+
+#### Q: How to know if a TextBox is in the middle of the sequence?
+
+A: To determine if a TextBox is in the middle of the sequence, you need to check if it has both a next shape (`Next`) and a previous shape (`Previous`). If so, this indicates that it is in the middle of the sequence.
+
+#### Q: How to check if a TextBox is the end of the sequence?
+
+A: To check if a TextBox is the end of the sequence, you can check if it has no next form (`Next`) but has a previous form (`Previous`). If so, that means it's the end of the sequence.
+
+#### Q: Can we check the sequence of elements other than TextBoxes?
+
+A: Yes, using the Aspose.Words library for .NET, it is possible to check the sequence of other elements such as paragraphs, tables, images, etc. The process will vary depending on the specific item you want to check.
+
