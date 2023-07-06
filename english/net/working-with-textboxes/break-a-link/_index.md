@@ -1,14 +1,14 @@
 ---
-title: Break A Link
-linktitle: Break A Link
+title: Break Forward Link In Word Document
+linktitle: Break Forward Link In Word Document
 second_title: Aspose.Words for .NET API Reference
-description: Learn how to break links in a Word document with Aspose.Words for .NET.
+description: Learn how to break forward links in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /net/working-with-textboxes/break-a-link/
 ---
 
-Aspose.Words for .NET is a powerful library that offers various features for working with Microsoft Word documents programmatically. One of its useful features is the ability to break links within a document. In this tutorial, we'll explore source code in C# that demonstrates how to break a link using Aspose.Words for .NET.
+Aspose.Words for .NET is a powerful library that offers various features for working with Microsoft Word documents programmatically. One of its useful features is the ability to break forward links in a word document. In this tutorial, we'll explore source code in C# that demonstrates how to break forward link in word document using Aspose.Words for .NET.
 
 ## Step 1: C# Source Code Preview
 
@@ -65,4 +65,28 @@ textBox. Next = null;
 textBox.Previous?.BreakForwardLink();
 ```
 
+## Conclusion
 
+Congratulation ! You have now learned how to break redirect links in a Word document using the Aspose.Words library for .NET. By following the steps in this guide, you were able to set up the document, create a TextBox shape, and break the redirect links using different methods.
+
+### FAQ's for break forward link in word document
+
+#### Q: What is the library used to break redirect links in a Word document using Aspose.Words for .NET?
+
+A: To break redirect links in a Word document using Aspose.Words for .NET, the library used is Aspose.Words for .NET.
+
+#### Q: How to break a redirect link in a TextBox?
+
+A: To break a forward link in a TextBox, you can use the `BreakForwardLink()` method. This method breaks the link to the next shape in the sequence.
+
+#### Q: How to break a redirect link by setting a null value?
+
+A: Alternatively, you can break a redirect link by setting the `Next` property of the TextBox to `null`. This effectively removes the connection to the next shape.
+
+#### Q: How to break a link that leads to the TextBox?
+
+A: In some cases you need to break a link that leads to the TextBox. You can achieve this by calling the `BreakForwardLink()` method on the `Previous` form, which breaks the link to the TextBox.
+
+#### Q: Can we break redirect links on elements other than TextBoxes?
+
+A: Yes, with Aspose.Words for .NET it is possible to break redirect links on different elements like paragraphs, tables, images, etc. The process may vary depending on the specific item you want to break the link on.
