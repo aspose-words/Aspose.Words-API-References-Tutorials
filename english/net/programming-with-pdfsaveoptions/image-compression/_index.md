@@ -1,14 +1,14 @@
 ---
-title: Image Compression
-linktitle: Image Compression
+title: Image Compression in a PDF Document
+linktitle: Image Compression in a PDF Document
 second_title: Aspose.Words for .NET API Reference
-description: Step by step guide to compression images with Aspose.Words for .NET.
+description: Step by step guide to compression images in a PDF Document with Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /net/programming-with-pdfsaveoptions/image-compression/
 ---
 
-This article provides a step by step guide on how to use the image compression feature with Aspose.Words for .NET. We will explain each part of the code in detail. At the end of this tutorial, you will be able to understand how to compress images in a document and generate a PDF with proper image compression.
+This article provides a step by step guide on how to use the Image Compression in a PDF Document feature with Aspose.Words for .NET. We will explain each part of the code in detail. At the end of this tutorial, you will be able to understand how to compress images in a document and generate a PDF with proper image compression.
 
 Before you start, make sure you have installed and configured the Aspose.Words for .NET library in your project. You can find the library and installation instructions on the Aspose website.
 
@@ -100,4 +100,29 @@ That's all ! You have successfully compressed the images in a document and gener
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", saveOptionsA2U);
 	
 ```
+
+## Conclusion
+
+In this tutorial, we explained how to compress images in a PDF document using Aspose.Words for .NET. By following the steps described, you can easily reduce the size of images in your PDF document and generate a PDF with proper image compression. Use the image compression features of Aspose.Words for .NET to optimize the size of your PDF documents while preserving image quality.
+
+### Frequently Asked Questions
+
+#### Q: What is image compression in a PDF document?
+A: Compressing images in a PDF document is to reduce the size of the images included in the PDF document to reduce the overall size of the PDF file. This reduces the storage space needed and improves performance when loading and viewing the PDF.
+
+#### Q: How can I compress images in a PDF document with Aspose.Words for .NET?
+A: To compress images in a PDF document with Aspose.Words for .NET, follow these steps:
+
+Create an instance of the `Document` class specifying the path to the Word document.
+
+Create an instance of the `PdfSaveOptions` class and set the `ImageCompression` property to `PdfImageCompression.Jpeg` to use JPEG compression.
+
+You can also set other image compression options, such as JPEG quality, according to your needs.
+
+Use the `Save` method of the `Document` class to save the document in PDF format by specifying save options.
+
+#### Q: What is the difference between standard image compression and PDF/A-2u image compression?
+A: Standard image compression reduces the size of images in a PDF document while preserving form fields. This reduces the overall size of the PDF file without compromising form field functionality.
+
+Image Compression with PDF/A-2u is an additional option that allows you to generate a PDF file that conforms to the PDF/A-2u standard while applying image compression. PDF/A-2u is an ISO standard for archival PDF documents and guarantees the long-term preservation of documents.
 

@@ -1,6 +1,6 @@
 ---
-title: Custom Properties Export
-linktitle: Custom Properties Export
+title: Export Custom Properties in a PDF Document
+linktitle: Export Custom Properties in a PDF Document
 second_title: Aspose.Words for .NET API Reference
 description: Learn how to export custom properties when converting documents to PDF with Aspose.Words for .NET.
 type: docs
@@ -8,7 +8,7 @@ weight: 10
 url: /net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
 
-In this tutorial, we'll walk you through the steps to export a document's custom properties using Aspose.Words for .NET. Exporting custom properties allows you to include additional information in the generated PDF document. Follow the steps below:
+In this tutorial, we'll walk you through the steps to export a document's custom properties in a PDF document using Aspose.Words for .NET. Exporting custom properties allows you to include additional information in the generated PDF document. Follow the steps below:
 
 ## Step 1: Creating a Document and Adding Custom Properties
 
@@ -69,3 +69,25 @@ Here is the complete source code to export custom properties from a document usi
 By following these steps, you can easily export custom properties of a document when converting to PDF with Aspose.Words for .NET.
 
 
+## Conclusion
+
+In this tutorial, we explained how to export custom properties from a document into a PDF document using Aspose.Words for .NET. By following the steps described, you can easily include additional information in the generated PDF document by exporting the document's custom properties. Take advantage of the features of Aspose.Words for .NET to personalize and enrich your PDF documents by exporting custom properties.
+
+### Frequently Asked Questions
+
+#### Q: What is exporting custom properties to a PDF document?
+A: Exporting custom properties to a PDF document allows additional information to be included in the generated PDF document. Custom properties are metadata specific to your document, such as tags, keywords, or credentials. By exporting these custom properties, you can make them available to users when viewing the PDF document.
+
+#### Q: How can I export a document's custom properties to a PDF document using Aspose.Words for .NET?
+A: To export a document's custom properties to a PDF document using Aspose.Words for .NET, follow these steps:
+
+Create an instance of the `Document` class.
+
+Add the desired custom properties using the `CustomDocumentProperties` collection. For example, use the `Add` method to add a "Company" property with the value "Aspose".
+
+Create an instance of the `PdfSaveOptions` class and specify how to export custom properties using the `CustomPropertiesExport` property. The `PdfCustomPropertiesExport.Standard` value exports custom properties according to default settings.
+
+Use the `Save` method of the `Document` class to convert the document to PDF specifying the conversion options.
+
+#### Q: How can I access custom properties of a PDF document?
+A: To access the custom properties of a PDF document, you can use a compatible PDF reader that supports viewing document properties. Most common PDF readers, such as Adobe Acrobat Reader, provide access to metadata and properties of a PDF document. You can usually find these options under the "File" menu or by right-clicking the document and selecting "Properties."
