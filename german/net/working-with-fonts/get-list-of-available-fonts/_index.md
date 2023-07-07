@@ -78,3 +78,17 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
 ## Abschluss
 In diesem Tutorial haben wir gesehen, wie man die Liste der in Aspose.Words für .NET verfügbaren Schriftarten erhält. Dadurch erfahren Sie, welche Schriftarten Sie in Ihren Dokumenten verwenden können. Nutzen Sie diese Funktion gerne, um geeignete Schriftarten für Ihre Bedürfnisse auszuwählen.
+
+### FAQs
+
+#### F: Wie kann ich die Liste der in Aspose.Words verfügbaren Schriftarten abrufen?
+
+ A: Um die Liste der in Aspose.Words verfügbaren Schriftarten abzurufen, können Sie die verwenden`FontsProvider` Klasse und die`GetAvailableFonts` Methode. Diese Methode gibt eine Liste aller auf Ihrem System installierten Schriftarten zurück.
+
+#### F: Kann ich die Liste der verfügbaren Schriftarten in Aspose.Words nach bestimmten Kriterien filtern?
+
+A: Ja, Sie können die Liste der in Aspose.Words verfügbaren Schriftarten nach bestimmten Kriterien filtern. Beispielsweise können Sie Schriftarten nach Familie, Stil oder Sprache filtern.
+
+#### F: Wie kann ich die Liste der verfügbaren Schriftarten in meinen Word-Dokumenten verwenden?
+
+ A: Um die Liste der in Ihren Word-Dokumenten verfügbaren Schriftarten zu verwenden, können Sie die Liste durchsuchen und mithilfe der Methoden und Eigenschaften von die entsprechenden Schriftarten auswählen`FontSettings` Klasse in Aspose.Words.

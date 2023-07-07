@@ -21,7 +21,7 @@ url: /ar/net/programming-with-tables/auto-fit-table-to-contents/
 // المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//قم بتحميل مستند Word
+// قم بتحميل مستند Word
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 

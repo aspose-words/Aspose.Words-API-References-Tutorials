@@ -86,3 +86,23 @@ doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 
 In this example, we created a new document, constructed an IF field with nested MERGEFIELD fields, and then inserted that field into the document at a specified location. The document is then saved with a specific file name.
 
+### FAQ's
+
+#### Q: What is a field constructor in Aspose.Words?
+
+A: A Field Builder in Aspose.Words is a powerful tool for creating and manipulating fields in a Word document. It offers advanced features for building and customizing fields, including inserting field codes and managing formatting options.
+
+#### Q: What types of fields can be inserted using the field builder?
+
+A: The field builder in Aspose.Words allows you to insert different types of fields into a Word document. Here are some examples of commonly used field types:
+
+- MERGEFIELD: used to merge data from external sources.
+- DATE: displays the current date.
+- PAGE: displays the current page number.
+- IF: allows to condition the display of a content according to a condition.
+- TOC: automatically generates a table of contents based on the document title styles.
+
+#### Q: How to customize the fields inserted with the field builder?
+
+A: The field builder offers customization options for inserted fields. You can use field constructor methods and properties to set options such as field formatting, arguments, switches, and default values. For example, you can set the date format, number format, thousands separator, etc.
+  

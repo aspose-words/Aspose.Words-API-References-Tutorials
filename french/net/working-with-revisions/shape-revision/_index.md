@@ -78,7 +78,7 @@ Voici le code source complet pour apporter des révisions aux formes dans un doc
 ```csharp
 Document doc = new Document();
 
-// Insérez une forme en ligne sans suivre les révisions.
+//Insérez une forme en ligne sans suivre les révisions.
 Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
@@ -109,7 +109,7 @@ Assert.True(shapes[0].IsDeleteRevision);
 Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
 Assert.True(shapes[1].IsInsertRevision);
 
-//Le document a une forme qui a été déplacée, mais les révisions de déplacement de forme auront deux instances de cette forme.
+// Le document a une forme qui a été déplacée, mais les révisions de déplacement de forme auront deux instances de cette forme.
 // L'un sera la forme à sa destination d'arrivée et l'autre sera la forme à son emplacement d'origine.
 doc = new Document(MyDir + "Revision shape.docx");
 
@@ -125,3 +125,63 @@ Assert.True(shapes[1].IsMoveFromRevision);
 Assert.False(shapes[1].IsMoveToRevision);
 ```
 
+## Conclusion
+
+Dans ce didacticiel, nous avons appris à apporter des modifications aux formes d'un document Word à l'aide de Aspose.Words pour .NET. En suivant les étapes de création du document, en activant le suivi des révisions, en vérifiant les révisions associées à chaque forme et en vérifiant les révisions pour déplacer les formes, nous avons pu gérer les révisions avec succès. Aspose.Words pour .NET offre une API puissante pour travailler avec des révisions et des formulaires dans des documents Word.
+
+### FAQ
+
+#### Q : Comment puis-je créer un nouveau document et ajouter des formes dans Aspose.Words pour .NET ?
+
+R : Pour créer un nouveau document et ajouter des formes dans Aspose.Words pour .NET, vous pouvez utiliser le code suivant. Ici, nous ajoutons deux formes, un cube et un soleil, à la première section du document :
+
+```csharp
+Document doc = new Document();
+Assert.False(doc.TrackRevisions);
+
+Shape shape = new Shape(doc, ShapeType.Cube);
+shape. WrapType = WrapType. Inline;
+shape. Width = 100.0;
+shape. Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
+
+#### Q : Comment activer le suivi des révisions dans Aspose.Words pour .NET ?
+
+ R : Pour activer le suivi des révisions dans Aspose.Words pour .NET, vous pouvez utiliser le`StartTrackRevisions` méthode de la`Document` objet. Cette méthode prend le nom de l'auteur des révisions en paramètre :
+
+```csharp
+doc.StartTrackRevisions("John Doe");
+```
+
+#### Q : Comment puis-je vérifier les révisions associées à chaque forme dans un document Aspose.Words pour .NET ?
+
+R : Pour vérifier les révisions associées à chaque forme dans un document Aspose.Words pour .NET, vous pouvez obtenir la collection de formes du document à l'aide de la commande`GetChildNodes` méthode avec la`NodeType.Shape` type de nœud. Ensuite, vous pouvez accéder à chaque forme`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , et`IsMoveToRevision` properties pour déterminer quel type de révision est associé à la forme :
+
+```csharp
+List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
+
+Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
+Assert.True(shapes[0].IsDeleteRevision);
+
+Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
+Assert.True(shapes[1].IsInsertRevision);
+```
+
+#### Q : Comment puis-je vérifier les révisions de déplacement des formes dans un document Aspose.Words pour .NET ?
+
+ R : Pour vérifier les révisions de déplacement de forme dans un document Aspose.Words pour .NET, vous pouvez charger un document existant qui contient des révisions de déplacement de forme. Ensuite, vous pouvez accéder à chaque forme`IsMoveFromRevision` et`IsMoveToRevision` properties pour déterminer s'il est déplacé et si oui, d'où et vers où :
+
+```csharp
+doc = new Document(MyDir + "Revision shape.docx");
+
+shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
+
+Assert. False(shapes[0].IsMoveFromRevision);
+Assert.True(shapes[0].IsMoveToRevision);
+
+Assert.True(shapes[1].IsMoveFromRevision);
+Assert. False(shapes[1].IsMoveToRevision);
+```

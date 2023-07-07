@@ -75,3 +75,21 @@ catch (Exception e)
 Toutes nos félicitations! Vous avez appris avec succès comment appliquer une licence limitée à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais profiter des fonctionnalités avancées d'Aspose.Words pour vos tâches de traitement de documents.
 
 Vous pouvez désormais définir en toute confiance la licence mesurée, charger et traiter des documents, et exploiter tout le potentiel d'Aspose.Words pour créer, modifier et manipuler des documents Word par programmation.
+
+### FAQ
+
+#### Q : Comment puis-je appliquer une licence de paiement à l'utilisation dans Aspose.Words pour .NET ?
+
+R : Pour appliquer une licence de paiement à l'utilisation dans Aspose.Words pour .NET, suivez les étapes mentionnées dans le didacticiel.
+
+#### Q : Quels sont les avantages de l'utilisation d'une licence payante dans Aspose.Words pour .NET ?
+
+R : Les avantages de l'utilisation d'une licence de paiement à l'utilisation dans Aspose.Words pour .NET incluent une gestion des coûts plus efficace et une flexibilité accrue.
+
+#### Q : Comment puis-je vérifier l'utilisation de ma licence avec paiement à l'utilisation dans Aspose.Words pour .NET ?
+
+R : Vous pouvez vérifier l'utilisation de votre licence par paiement à l'utilisation dans Aspose.Words pour .NET en utilisant la méthode appropriée mentionnée dans le didacticiel.
+
+#### Q : Puis-je utiliser une licence standard avec Aspose.Words pour .NET au lieu d'une licence payante ?
+
+R : Oui, vous pouvez utiliser une licence normale avec Aspose.Words pour .NET si vous le souhaitez.

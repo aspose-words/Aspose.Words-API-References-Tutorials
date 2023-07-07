@@ -94,3 +94,20 @@ field. Update();
 
 doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsingDOM.docx");
 ```
+### FAQs
+
+#### F: Wie kann ich das Format der Postanschrift in einem Word-Dokument mit Aspose.Words für .NET anpassen?
+
+ A: Sie können das Format der Postanschrift in einem Word-Dokument mit Aspose.Words für .NET mithilfe der Eigenschaften anpassen`FieldAddressBlock`Objekt. Sie können Formatierungsoptionen wie Adressstil, Trennzeichen, optionale Elemente usw. festlegen, um das gewünschte Format zu erhalten.
+
+#### F: Wie kann ich die Quelldaten für das Postanschriftsfeld in Aspose.Words für .NET angeben?
+
+ A: Um die Quelldaten für das Postanschriftsfeld in Aspose.Words für .NET anzugeben, können Sie die verwenden`FieldAddressBlock.StartAddress` Und`FieldAddressBlock.EndAddress` Eigenschaften. Diese Eigenschaften werden verwendet, um die Adressbereiche in der externen Datenquelle zu definieren, z. B. einer CSV-Datei, einer Datenbank usw.
+
+#### F: Kann ich mit Aspose.Words für .NET optionale Elemente in das Postanschriftsfeld einfügen?
+
+ A: Ja, Sie können mit Aspose.Words für .NET optionale Elemente in das Postanschriftsfeld einfügen. Sie können optionale Elemente definieren, indem Sie die verwenden`FieldAddressBlock.OmitOptional` -Methode, um anzugeben, ob optionale Elemente wie Empfängername, Firmenname usw. ein- oder ausgeschlossen werden sollen.
+
+#### F: Hat das Einfügen eines Postanschriftsfelds mithilfe des DOM Auswirkungen auf die Word-Dokumentstruktur mit Aspose.Words für .NET?
+
+A: Das Einfügen eines Postanschriftsfelds mithilfe des DOM hat keinen direkten Einfluss auf die Struktur des Word-Dokuments. Allerdings wird dem Dokumentinhalt ein neues Feldelement hinzugefügt. Sie können die Dokumentstruktur bearbeiten, indem Sie die vorhandenen Elemente entsprechend Ihren Anforderungen hinzufügen, löschen oder ändern.

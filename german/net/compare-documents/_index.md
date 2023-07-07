@@ -14,6 +14,6 @@ url: /de/net/compare-documents/
 | Titel | Beschreibung |
 | --- | --- |
 | [Vergleichen Sie für gleich](./compare-for-equal/) | Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Funktion „Compare for Equals“ mit Aspose.Words für .NET. |
-| [Vergleichen Sie Optionen](./compare-options/) | Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Funktion „Optionen vergleichen“ mit Aspose.Words für .NET. |
+| [Vergleichen Sie Optionen](./compare-options/) | Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Funktion „Vergleichsoptionen“ mit Aspose.Words für .NET. |
 | [Vergleichsziel](./comparison-target/) | Lernen Sie die Zielvergleichsfunktion von Aspose.Words für .NET kennen, mit der Sie Dokumente vergleichen und ein neues Dokument mit den vorgenommenen Änderungen erstellen können. |
 | [Vergleichsgranularität](./comparison-granularity/) | Lernen Sie die Vergleichsgranularitätsfunktion von Aspose.Words für .NET kennen, mit der Dokumente Zeichen für Zeichen verglichen und vorgenommene Änderungen gemeldet werden können. |

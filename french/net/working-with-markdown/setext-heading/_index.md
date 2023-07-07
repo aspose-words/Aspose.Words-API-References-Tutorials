@@ -94,5 +94,24 @@ builder.Writeln("Setext Heading level 2");
 builder.Document.Save(dataDir + "Test.md");
 ```
 
+### FAQ
 
+#### Q : Qu'est-ce qu'un en-tête Setext Markdown ?
 
+R : Un en-tête Setext Markdown est une autre façon de créer des en-têtes dans un document Markdown. Il utilise des caractères de soulignement (= ou -) pour indiquer différents niveaux de titres.
+
+#### Q : Comment utiliser les en-têtes Setext Markdown ?
+
+R : Pour utiliser les en-têtes Setext Markdown, placez des traits de soulignement sous le texte du titre. Utilisez des signes égal (=) pour un en-tête de niveau 1 et des traits d'union (-) pour un en-tête de niveau 2.
+
+#### Q : Y a-t-il des limites à l'utilisation des en-têtes Setext Markdown ?
+
+R : Les en-têtes Setext Markdown ont des limites en termes de hiérarchie des en-têtes et ne sont pas aussi distincts visuellement que les en-têtes Markdown standard.
+
+#### Q : Puis-je personnaliser l'apparence des en-têtes Setext Markdown ?
+
+R : Dans le Markdown standard, il n'est pas possible de personnaliser l'apparence des en-têtes Setext Markdown. Ils ont une apparence prédéfinie basée sur les caractères de soulignement utilisés.
+
+#### Q : Les en-têtes Setext Markdown sont-ils pris en charge par tous les éditeurs Markdown ?
+
+R : La prise en charge des en-têtes Setext Markdown peut varier d'un éditeur Markdown à l'autre. Vérifiez la documentation spécifique de votre éditeur pour vous en assurer.

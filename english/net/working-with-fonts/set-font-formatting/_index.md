@@ -69,3 +69,24 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ## Conclusion
 Congratulation ! You now know how to set font formatting in a Word document using Aspose.Words for .NET. You can explore more font formatting options and create personalized and attractive Word documents.
 
+### FAQ's
+
+#### Q: How can I apply the bold style to a font in a Word document using Aspose.Words?
+
+A: To apply the bold style to a font in a Word document using Aspose.Words, you can use the API to navigate to the desired font and set its style to "bold". This will apply the bold style to the specified font.
+
+#### Q: Is it possible to apply italic style to a specific part of text in a Word document with Aspose.Words?
+
+A: Yes, with Aspose.Words you can apply the italic style to a specific part of text in a Word document. You can use the API to select the desired text range and set its style to "italic".
+
+#### Q: How can I change the font color in a Word document using Aspose.Words?
+
+A: To change the font color in a Word document using Aspose.Words, you can access the desired font using the API and set its color to the desired color. This will change the font color in the document.
+
+#### Q: Is it possible to change the font size in a Word document using Aspose.Words?
+
+A: Yes, you can change the font size in a Word document using Aspose.Words. The API lets you access the font and set its size in points or scale points, depending on your needs.
+
+#### Q: Can I apply multiple font formats, such as bold and italic, to the same text in a Word document?
+
+A: Yes, with Aspose.Words you can apply multiple font formats, such as bold and italic, to the same text in a Word document. You can use the API to set the different font styles you want for different parts of the text.

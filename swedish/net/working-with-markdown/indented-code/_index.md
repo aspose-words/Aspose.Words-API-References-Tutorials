@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Steg 2: Lägg till stil för indragen kod
 
- Vi kommer att lägga till en anpassad stil för den indragna koden med hjälp av`Styles.Add` metod för`Document` objekt. I det här exemplet skapar vi en stil som heter "IndentedCode" för indragen kod.
+Vi kommer att lägga till en anpassad stil för den indragna koden med hjälp av`Styles.Add` metod för`Document` objekt. I det här exemplet skapar vi en stil som heter "IndentedCode" för indragen kod.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
@@ -48,3 +48,25 @@ builder.Writeln("This is an indented code");
 
 Grattis! Du har nu lärt dig hur du använder den indragna kodfunktionen med Aspose.Words för .NET.
 
+
+### FAQ's
+
+#### F: Vad är indragen kod i Markdown?
+
+S: Indragen kod i Markdown är en formateringsmetod som används för att visa kod i ett Markdown-dokument. Den består av att indraga varje kodrad med mellanslag eller tabbar.
+
+#### F: Hur använder man indragen kod i Markdown?
+
+S: För att använda indragen kod i Markdown, dra in varje kodrad med mellanslag eller tabb.
+
+#### F: Vilka är fördelarna med indragen kod i Markdown?
+
+S: Indragen kod i Markdown förbättrar kodens läsbarhet och gör det lättare för läsarna att förstå.
+
+#### F: Vad är skillnaden mellan indragen kod och kodblock i Markdown?
+
+S: Indragen kod används för små kodavsnitt som infogas i text, medan kodblock används för att visa större kodbitar i separat formatering.
+
+#### F: Stöds indragen kod i Markdown av alla Markdown-redigerare?
+
+S: Stöd för indragen kod i Markdown kan variera mellan Markdown-redigerare. Kontrollera din utgivares specifika dokumentation för att vara säker.

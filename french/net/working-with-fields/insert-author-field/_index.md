@@ -71,3 +71,21 @@ doc.Save(dataDir + "InsertionAuthorField.docx");
 Dans cet exemple, nous avons créé un nouveau document, inséré un champ AUTEUR, configuré le nom de l'auteur et enregistré le document avec un nom de fichier spécifié.
 
 Ceci conclut notre guide sur l'utilisation de la fonctionnalité "Insérer le champ AUTHOR" avec Aspose.Words pour .NET.
+
+### FAQ
+
+#### Q : Qu'est-ce qu'un champ d'auteur dans Aspose.Words ?
+
+R : Un champ d'auteur dans Aspose.Words est un champ spécial qui insère et met à jour automatiquement le nom de l'auteur dans un document Word. Il est souvent utilisé pour indiquer qui a créé ou modifié le document.
+
+#### Q : Comment mettre à jour le champ auteur dans un document Word avec Aspose.Words ?
+
+R : Le champ auteur d'un document Word peut être mis à jour pour refléter le nom de l'auteur actuel. Pour cela, vous pouvez utiliser la méthode UpdateFields disponible dans la classe Document. Cette méthode mettra à jour tous les champs du document, y compris le champ auteur.
+
+#### Q : Est-il possible de personnaliser le format du champ auteur dans un document Word ?
+
+: Oui, il est possible de personnaliser le format du champ auteur dans un document Word. Par défaut, le champ auteur affiche simplement le nom de l'auteur. Cependant, vous pouvez ajouter des informations supplémentaires telles que la date et l'heure de modification à l'aide des options de formatage disponibles dans Aspose.Words.
+
+#### Q : Le champ de l'auteur est-il sensible aux modifications ultérieures du nom de l'auteur ?
+
+R : Oui, le champ auteur est sensible aux modifications ultérieures du nom de l'auteur. Si vous modifiez le nom de l'auteur dans les propriétés du document, le champ de l'auteur sera automatiquement mis à jour avec le nouveau nom lors de la mise à jour des champs du document.

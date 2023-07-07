@@ -24,7 +24,7 @@ Avant de procéder à la mise en œuvre, assurez-vous que vous remplissez les co
 
 Assurez-vous que ces conditions préalables sont en place pour procéder en douceur.
 
-## Guide étape par étape pour implémenter Insérer un champ de formulaire de saisie de texte à l'aide du code source C#
+## Guide étape par étape pour implémenter Insérer un champ de formulaire de saisie de texte à l'aide du code source C #
 
 Suivez les étapes ci-dessous pour implémenter la fonctionnalité Insérer un champ de formulaire de saisie de texte à l'aide du code source C# fourni :
 

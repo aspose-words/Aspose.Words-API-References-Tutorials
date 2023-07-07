@@ -41,3 +41,17 @@ builder.Writeln("This text will be Italic");
 
 Congratulazioni! Ora hai imparato come utilizzare la funzione di testo in corsivo con Aspose.Words per .NET.
 
+
+### FAQ
+
+#### D: Come posso scrivere in corsivo il testo in Aspose.Words?
+
+A: Per scrivere in corsivo il testo in Aspose.Words, puoi usare il`Font.Italic` proprietà del`Run`oggetto. Puoi impostare questa proprietà su`true` per scrivere in corsivo un testo specifico. Ad esempio, puoi usare`run.Font.Italic=true` mettere in corsivo il testo contenuto nel`Run` oggetto.
+
+#### D: È possibile mettere in corsivo diverse parti di testo nello stesso paragrafo?
+
+ A: Sì, puoi scrivere in corsivo più parti di testo in un singolo paragrafo usando multiple`Run` oggetti. Puoi creare più file`Run` oggetti e impostare il`Font.Italic` proprietà a`true` per ogni oggetto per mettere in corsivo le parti di testo desiderate. Quindi puoi aggiungerli al paragrafo usando il`Paragraph.AppendChild(run)` metodo.
+
+#### D: Posso scrivere in corsivo il testo che si trova in una tabella o in una cella in Aspose.Words?
+
+ A: Sì, puoi scrivere in corsivo il testo che si trova in una tabella o in una cella in Aspose.Words. Puoi navigare fino alla cella o al paragrafo che desideri utilizzando i metodi appropriati e quindi applicare la formattazione in corsivo utilizzando il`Font.Italic` proprietà del`Run` O`Paragraph` oggetto.

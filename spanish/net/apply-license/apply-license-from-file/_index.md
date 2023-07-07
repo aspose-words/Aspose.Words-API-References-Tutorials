@@ -70,4 +70,24 @@ catch (Exception e)
 }
 ```
 
+## Conclusión
 
+Agregar preguntas frecuentes a los tutoriales mejora enormemente la experiencia de aprendizaje de los usuarios. Aborda preguntas comunes, mejora la participación del usuario y ayuda a aclarar dudas y conceptos erróneos. Al incluir preguntas frecuentes en los tutoriales, t
+
+### Preguntas frecuentes
+
+#### P: ¿Dónde puedo encontrar la documentación de licencia de Aspose.Words para .NET?
+
+R: Puede encontrar la documentación de licencia de Aspose. Words para .NET en el sitio web oficial de documentación de Aspose. La documentación proporciona instrucciones detalladas y ejemplos para aplicar licencias, incluida la aplicación de licencias desde archivos.
+
+#### P: ¿Qué formatos de archivo admite Aspose.Words para .NET para los archivos de licencia?
+
+R: Aspose.Words para .NET admite archivos de licencia en formato XML. Asegúrese de que su archivo de licencia esté en el formato XML apropiado reconocido por Aspose.Words para .NET.
+
+#### P: ¿Puedo aplicar una licencia mediante programación en Aspose.Words para .NET?
+
+ R: Sí, puede aplicar una licencia mediante programación en Aspose.Words para .NET. Al usar el`License` clase y su`SetLicense` método, puede aplicar una licencia directamente dentro de su código.
+
+#### P: ¿Qué sucede si no aplico una licencia en Aspose.Words para .NET?
+
+R: Si no aplica una licencia en Aspose.Words para .NET, la biblioteca funcionará en modo de evaluación. En el modo de evaluación, se pueden imponer ciertas limitaciones y marcas de agua en los documentos generados. Para eliminar estas limitaciones, se recomienda aplicar una licencia válida.

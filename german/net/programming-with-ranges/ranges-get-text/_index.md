@@ -50,7 +50,7 @@ In diesem Beispiel verwenden wir die WriteLine-Methode der Console-Klasse, um de
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Word-Dokument
+// Laden Sie das Word-Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
 // Extrahieren Sie den Text aus dem Dokument

@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
 This is sample source code to replace hyperlinks in a document using Aspose.Words for .NET.
+
+### FAQ's
+
+#### Q: How can I replace hyperlinks in a Word document using Aspose.Words for .NET?
+
+A: To replace hyperlinks in a Word document using Aspose.Words for .NET, you can use the `Document.Range.Replace` method specifying the text to search for and the replacement text. Be sure to use the appropriate options to set search and replace parameters.
+
+#### Q: Is it possible to replace only certain hyperlinks in a Word document with Aspose.Words for .NET?
+
+A: Yes, it is possible to replace only certain hyperlinks in a Word document with Aspose.Words for .NET. You can filter the hyperlinks to be replaced using specific criteria, such as link URL, link text, or any other relevant property. Then you can apply the replacement only to the matching hyperlinks.
+
+#### Q: How can I ignore hyperlinks in headers, footers or footnotes when replacing with Aspose.Words for .NET?
+
+A: To ignore hyperlinks in headers, footers, or footnotes when replacing with Aspose.Words for .NET, you can use the advanced search options and specify appropriate search limits. For example, you can limit the search to major sections of the document and exclude headers, footers, or footnotes.
+
+#### Q: Is it possible to replace hyperlinks with internal links to other parts of the document?
+
+A: Yes, it is possible to replace hyperlinks with internal links to other parts of the document with Aspose.Words for .NET. You can use anchors or text ids to create internal links and then replace them using the `Document.Range.Replace` method with the appropriate options.
+
+#### Q: Does replacing hyperlinks with Aspose.Words for .NET preserve link properties, such as colors or styles?
+
+A: Yes, when replacing hyperlinks with Aspose.Words for .NET, link properties such as colors or styles are retained. You can specify the same formatting properties in the replacement text to achieve a consistent result.

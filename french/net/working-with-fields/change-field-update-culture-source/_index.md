@@ -82,3 +82,21 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 ## Conclusion
 Toutes nos félicitations! Vous avez appris avec succès comment modifier la source de culture de mise à jour de champ dans les documents Word à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais contrôler la culture utilisée pour le formatage de la date lors des opérations de mise à jour des champs et de fusion et publipostage. Personnalisez la source de culture en fonction de vos besoins pour garantir une date précise et cohérente.
+
+### FAQ
+
+#### Q : Comment puis-je modifier la source de culture de mise à jour de champ dans Aspose.Words pour .NET ?
+
+ R : Pour modifier la source de culture de mise à jour de champ dans Aspose.Words pour .NET, vous pouvez utiliser le`Document.FieldOptions.CultureSource` propriété et définissez sa valeur sur`FieldCultureSource.FieldCode` ou`FieldCultureSource.CurrentThread` . Par exemple, vous pouvez utiliser`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` pour utiliser la culture définie dans le code de champ.
+
+#### Q : Comment puis-je spécifier une culture spécifique pour la mise à jour des champs dans Aspose.Words pour .NET ?
+
+ R : Pour spécifier une culture spécifique pour la mise à jour des champs dans Aspose.Words pour .NET, vous pouvez utiliser le`Document.FieldOptions.FieldUpdateCultureInfo` propriété et définissez la`CultureInfo` objet correspondant à la culture recherchée. Par exemple, vous pouvez utiliser`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` pour préciser la culture française (France).
+
+#### Q : Est-il possible de désactiver la mise à jour automatique des champs dans Aspose.Words pour .NET ?
+
+ R : Oui, il est possible de désactiver la mise à jour automatique des champs dans Aspose.Words pour .NET. Vous pouvez utiliser le`Document.FieldOptions.UpdateFields` propriété et définissez-la sur`false` pour empêcher la mise à jour automatique des champs. Cela vous permet de contrôler manuellement la mise à jour des champs selon vos besoins.
+
+#### Q : Comment puis-je mettre à jour manuellement les champs de document dans Aspose.Words pour .NET ?
+
+ R : Pour mettre à jour manuellement les champs d'un document dans Aspose.Words pour .NET, vous pouvez utiliser le`Field.Update` méthode pour chaque champ individuellement. Par exemple, vous pouvez utiliser`field.Update()` pour mettre à jour le champ spécifique.

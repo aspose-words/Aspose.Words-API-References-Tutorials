@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
 
-La compresión de metadatos en un documento es una característica común cuando se trabaja con archivos en una aplicación de C#. Sin embargo, puede ser necesario no comprimir los metadatos de los archivos pequeños para preservar su calidad. En esta guía paso a paso, le mostraremos cómo usar el código fuente de C# de Aspose.Words para .NET para habilitar la función "No comprimir metarchivos pequeños" en las opciones para guardar documentos.
+La compresión de metadatos en un documento es una característica común cuando se trabaja con archivos en una aplicación de C#. Sin embargo, puede ser necesario no comprimir los metadatos de los archivos pequeños para preservar su calidad. En esta guía paso a paso, le mostraremos cómo usar el código fuente de C# de Aspose.Words para .NET para habilitar la función "No comprimir metarchivos pequeños" en las opciones de guardado de documentos.
 
 ## Comprender la biblioteca Aspose.Words
 

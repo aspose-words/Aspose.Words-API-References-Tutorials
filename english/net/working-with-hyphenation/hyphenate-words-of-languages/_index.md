@@ -67,3 +67,16 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 
 Feel free to use this code in your own projects and modify it to suit your specific needs.
 
+### FAQ's
+
+#### Q: How can I syllabize a word in a specific language with Aspose.Words?
+
+A: To syllabize a word in a specific language with Aspose.Words, you can use the `Hyphenation` class and the `Hyphenate()` method. Create an instance of the `Hyphenation` class specifying the desired language, then call the `Hyphenate()` method passing the word to syllabize as an argument. This will give you the syllables of the word in the specified language.
+
+#### Q: What language codes should I use to specify the syllabization language in Aspose.Words?
+
+A: To specify the syllabization language in Aspose.Words, you must use the appropriate language codes. For example, you can use "en" for English, "fr" for French, "es" for Spanish, "de" for German, etc. See the Aspose.Words documentation for a full list of supported language codes.
+
+#### Q: Does syllabization work for all languages in Aspose.Words?
+
+A: Syllabization in Aspose.Words depends on language-specific syllabization rules. Although Aspose.Words supports a wide range of languages, some languages may not be supported or syllabization may not be available for them. Check the Aspose.Words documentation to find out which languages are supported for syllabicization.

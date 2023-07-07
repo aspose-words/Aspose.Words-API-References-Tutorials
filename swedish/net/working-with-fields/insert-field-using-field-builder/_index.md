@@ -12,7 +12,7 @@ Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som anv
 
 ## Steg 1: Installation av dokumentkatalog
 
-I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
+den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -84,4 +84,25 @@ field. Update();
 doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
-det här exemplet skapade vi ett nytt dokument, konstruerade ett IF-fält med kapslade MERGEFIELD-fält och infogade sedan det fältet i dokumentet på en angiven plats. Dokumentet sparas sedan med ett specifikt filnamn.
+I det här exemplet skapade vi ett nytt dokument, konstruerade ett IF-fält med kapslade MERGEFIELD-fält och infogade sedan det fältet i dokumentet på en angiven plats. Dokumentet sparas sedan med ett specifikt filnamn.
+
+### FAQ's
+
+#### F: Vad är en fältkonstruktör i Aspose.Words?
+
+S: En Field Builder i Aspose.Words är ett kraftfullt verktyg för att skapa och manipulera fält i ett Word-dokument. Den erbjuder avancerade funktioner för att bygga och anpassa fält, inklusive att infoga fältkoder och hantera formateringsalternativ.
+
+#### F: Vilka typer av fält kan infogas med hjälp av fältbyggaren?
+
+S: Fältbyggaren i Aspose.Words låter dig infoga olika typer av fält i ett Word-dokument. Här är några exempel på vanliga fälttyper:
+
+- MERGEFIELD: används för att slå samman data från externa källor.
+- DATUM: visar aktuellt datum.
+- PAGE: visar aktuellt sidnummer.
+- IF: tillåter att villkora visningen av ett innehåll enligt ett villkor.
+- TOC: genererar automatiskt en innehållsförteckning baserat på dokumentrubrikstilarna.
+
+#### F: Hur anpassar man fälten som infogas med fältbyggaren?
+
+S: Fältbyggaren erbjuder anpassningsalternativ för infogade fält. Du kan använda fältkonstruktormetoder och egenskaper för att ställa in alternativ som fältformatering, argument, växlar och standardvärden. Du kan till exempel ställa in datumformat, talformat, tusentalsavgränsare, etc.
+  

@@ -29,7 +29,7 @@ Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
 ## Schritt 3: Einfügen des erweiterten Feldes
 
- Wir benutzen das`AppendField()`Methode zum Einfügen eines erweiterten Felds in den Absatz.
+ Wir benutzen das`AppendField()` Methode zum Einfügen eines erweiterten Felds in den Absatz.
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
@@ -81,3 +81,25 @@ In diesem Beispiel haben wir ein neues Dokument erstellt, ein erweitertes Feld o
 
 Damit ist unsere Anleitung zur Verwendung der Funktion „Erweitertes Feld ohne DocumentBuilder einfügen“ mit Aspose.Words für .NET abgeschlossen.
 
+### FAQs
+
+#### F: Was ist ein erweitertes Feld in Aspose.Words?
+
+A: Ein erweitertes Feld in Aspose.Words ist ein spezieller Feldtyp, mit dem Sie Berechnungen durchführen, Bedingungen einschließen und komplexe Vorgänge in einem Word-Dokument ausführen können. Es bietet große Flexibilität beim Erstellen dynamischer und benutzerdefinierter Felder.
+
+#### F: Wie füge ich ein erweitertes Feld in ein Word-Dokument ein, ohne den Document Builder in Aspose.Words zu verwenden?
+
+A: Um ein erweitertes Feld in ein Word-Dokument einzufügen, ohne den Document Builder in Aspose.Words zu verwenden, können Sie die folgenden Schritte ausführen:
+
+1. Importieren Sie die Dokument- und Feldklasse aus dem Aspose.Words.Fields-Namespace.
+2. Erstellen Sie eine Instanz von Document, indem Sie Ihr vorhandenes Dokument laden.
+3. Verwenden Sie die InsertField-Methode, um ein erweitertes Feld einzufügen, indem Sie den erweiterten Feldcode angeben.
+4. Speichern Sie das Dokument.
+
+#### F: Wie erhalte ich das Ergebnis eines erweiterten Felds in einem Word-Dokument?
+
+A: Um das Ergebnis eines erweiterten Felds in einem Word-Dokument abzurufen, können Sie die in der Field-Klasse verfügbare Result-Eigenschaft verwenden. Diese Eigenschaft gibt das berechnete Ergebnis des Feldes zurück.
+
+#### F: Kann ich die Formel eines erweiterten Felds ändern, nachdem ich es in ein Word-Dokument eingefügt habe?
+
+A: Ja, Sie können die Formel eines erweiterten Felds bearbeiten, nachdem Sie es in ein Word-Dokument eingefügt haben. Sie können dies tun, indem Sie auf die FieldCode-Eigenschaft der Field-Klasse zugreifen und die Formel aktualisieren, indem Sie den Formeltext ändern.

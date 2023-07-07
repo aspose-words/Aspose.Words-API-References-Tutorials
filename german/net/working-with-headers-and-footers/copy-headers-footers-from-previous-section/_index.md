@@ -67,3 +67,21 @@ doc.Save("OutputDocument.docx");
 ```
 
 Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprechend Ihren spezifischen Anforderungen modifizieren.
+
+### FAQs
+
+#### F: Wie kann ich die Kopf- und Fußzeilen aus dem vorherigen Abschnitt in Aspose.Words kopieren?
+
+ A: Um Kopf- und Fußzeilen aus dem vorherigen Abschnitt in Aspose.Words zu kopieren, können Sie die verwenden`CopyHeadersFootersFromPreviousSection()` Methode auf die aktuelle`Section`Objekt. Dadurch werden die Kopf- und Fußzeilen aus dem vorherigen Abschnitt in den aktuellen Abschnitt kopiert.
+
+#### F: Ist es möglich, nur die Kopf- oder Fußzeile aus dem vorherigen Abschnitt in Aspose.Words zu kopieren?
+
+ A: Ja, es ist möglich, nur die Kopf- oder Fußzeile aus dem vorherigen Abschnitt in Aspose.Words zu kopieren. Hierfür können Sie die verwenden`CopyHeaderFromPreviousSection()` Und`CopyFooterFromPreviousSection()` Methoden auf dem aktuellen`Section` -Objekt, um gezielt die Kopf- oder Fußzeile vom vorherigen Abschnitt in den aktuellen Abschnitt zu kopieren.
+
+#### F: Ersetzt das Kopieren von Kopf- und Fußzeilen aus dem vorherigen Abschnitt vorhandene Kopf- und Fußzeilen im aktuellen Abschnitt?
+
+A: Ja, durch das Kopieren von Kopf- und Fußzeilen aus dem vorherigen Abschnitt werden vorhandene Kopf- und Fußzeilen im aktuellen Abschnitt ersetzt. Wenn Sie die vorhandenen Kopf- und Fußzeilen beibehalten und zu den kopierten Kopf- und Fußzeilen hinzufügen möchten, müssen Sie einen zusätzlichen Vorgang zum Zusammenführen der Inhalte ausführen.
+
+#### F: Wie kann ich in Aspose.Words überprüfen, ob ein Abschnitt eine Kopf- oder Fußzeile aus dem vorherigen Abschnitt enthält?
+
+A: Um zu überprüfen, ob ein Abschnitt eine Kopf- oder Fußzeile aus dem vorherigen Abschnitt in Aspose.Words enthält, können Sie die verwenden`HasHeader` Und`HasFooter` Eigenschaften auf der`Section` Objekt, um festzustellen, ob die Kopfzeile, Kopfzeile oder Fußzeile vorhanden ist. Wenn`HasHeader` oder`HasFooter` kehrt zurück`false`, bedeutet dies, dass in diesem Abschnitt keine Kopf- oder Fußzeile aus dem vorherigen Abschnitt vorhanden ist.

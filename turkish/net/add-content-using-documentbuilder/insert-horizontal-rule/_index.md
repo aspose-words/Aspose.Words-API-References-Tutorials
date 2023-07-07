@@ -54,5 +54,5 @@ doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.doc
 Kodu özel gereksinimlerinize göre ayarlamayı ve gerektiğinde ek işlevlerle geliştirmeyi unutmayın.
 
 ## Çözüm
-Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine yatay bir kuralın nasıl ekleneceğini başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, artık belgelerinizi yatay kurallar kullanarak görsel olarak ayırabilir ve düzenleyebilirsiniz.
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine yatay bir kuralın nasıl ekleneceğini başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak, artık belgelerinizi yatay kurallar kullanarak görsel olarak ayırabilir ve düzenleyebilirsiniz.
 

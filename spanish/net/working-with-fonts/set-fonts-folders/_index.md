@@ -57,3 +57,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ## Conclusión
 En este tutorial, aprendimos cómo configurar carpetas de fuentes al renderizar un documento usando Aspose.Words para .NET. Siguiendo esta guía paso a paso, puede especificar fácilmente las fuentes de fuentes que se utilizarán al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para trabajar con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar las fuentes de fuentes utilizadas al renderizar sus documentos según sus necesidades específicas.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo configurar carpetas de fuentes en un documento de Word usando Aspose.Words?
+
+R: Para configurar carpetas de fuentes en un documento de Word usando Aspose.Words, puede usar la API para especificar carpetas de fuentes personalizadas para usar al generar o editar el documento. Esto permitirá que Word encuentre las fuentes necesarias para representarlas correctamente.
+
+#### P: ¿Es posible agregar fuentes personalizadas a un documento de Word con Aspose.Words?
+
+R: Sí, con Aspose.Words puede agregar fuentes personalizadas a un documento de Word. La API le permite incrustar fuentes específicas en su documento, asegurándose de que se muestren correctamente, incluso si las fuentes no están instaladas en el sistema del usuario final.
+
+#### P: ¿Qué sucede si faltan las fuentes requeridas en un documento de Word?
+
+R: Si faltan las fuentes requeridas en un documento de Word, Aspose.Words puede detectar este problema y brindarle opciones para solucionarlo. Puede optar por sustituir las fuentes que faltan por fuentes alternativas o incluir las fuentes que faltan en el documento, lo que garantiza una visualización correcta.
+
+#### P: ¿Cómo puedo eliminar fuentes personalizadas de un documento de Word con Aspose.Words?
+
+R: Para eliminar las fuentes personalizadas de un documento de Word con Aspose.Words, puede usar la API para limpiar el documento y eliminar las fuentes personalizadas que ya no se necesitan. Esto reducirá el tamaño del archivo y facilitará la administración de fuentes.
+
+#### P: ¿Es importante configurar carpetas de fuentes en un documento de Word?
+
+R: Sí, es importante configurar las carpetas de fuentes en un documento de Word para garantizar que las fuentes utilizadas se muestren correctamente. Al especificar carpetas de fuentes personalizadas para usar con Aspose.Words, se asegura de que las fuentes requeridas estén disponibles para representar correctamente los documentos de Word.

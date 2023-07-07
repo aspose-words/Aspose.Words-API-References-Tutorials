@@ -7,10 +7,11 @@ type: docs
 weight: 10
 url: /de/net/working-with-textboxes/check-sequence/
 ---
+In dieser Schritt-für-Schritt-Anleitung wird erläutert, wie Sie die Reihenfolge von Textfeldern in einem Word-Dokument mithilfe der Aspose.Words-Bibliothek für .NET überprüfen. Sie erfahren, wie Sie das Dokument konfigurieren, eine TextBox-Form erstellen, auf TextBoxen zugreifen und deren Position in der Sequenz überprüfen.
 
 ## Schritt 1: Einrichten des Dokuments und Erstellen einer TextBox-Form
 
- Zunächst müssen wir das Dokument einrichten und eine TextBox-Form erstellen. Der folgende Code initialisiert eine neue Instanz von`Document` Klasse und erstellt eine Textfeldform:
+Zunächst müssen wir das Dokument einrichten und eine TextBox-Form erstellen. Der folgende Code initialisiert eine neue Instanz von`Document` Klasse und erstellt eine Textfeldform:
 
 ```csharp
 Document doc = new Document();
@@ -77,3 +78,29 @@ if (textBox. Next == null && textBox. Previous != null)
      Console.WriteLine("The end of the sequence.");
 }
 ```
+
+## Abschluss
+
+Herzlichen Glückwunsch! Sie wissen jetzt, wie Sie die Reihenfolge von TextBoxen in einem Word-Dokument mithilfe der Aspose.Words-Bibliothek für .NET überprüfen. Indem Sie die Schritte in dieser Anleitung befolgten, konnten Sie das Dokument einrichten, eine TextBox-Form erstellen und prüfen, ob sie sich am Anfang, in der Mitte oder am Ende der Sequenz befindet.
+
+### FAQs zur Prüfreihenfolge
+
+#### F: Welche Bibliothek wird verwendet, um die Reihenfolge von TextBoxen mithilfe von Aspose.Words für .NET zu überprüfen?
+
+A: Um die Reihenfolge von TextBoxen mit Aspose.Words für .NET zu überprüfen, wird die Bibliothek Aspose.Words für .NET verwendet.
+
+#### F: Wie kann festgestellt werden, ob eine TextBox der Kopf der Sequenz ist?
+
+A: Um festzustellen, ob eine TextBox der Kopf der Sequenz ist, können Sie prüfen, ob sie ein nächstes Formular hat (`Next`), aber keine vorherige Form (`Previous`). Wenn ja, bedeutet das, dass er der Anführer der Serie ist.
+
+#### F: Wie erkennt man, ob sich eine TextBox in der Mitte der Sequenz befindet?
+
+A: Um festzustellen, ob sich eine TextBox in der Mitte der Sequenz befindet, müssen Sie prüfen, ob sie sowohl eine nächste Form (`Next`) und eine vorherige Form (`Previous`). Wenn ja, bedeutet dies, dass es sich in der Mitte der Sequenz befindet.
+
+#### F: Wie kann ich überprüfen, ob eine TextBox das Ende der Sequenz ist?
+
+A: Um zu überprüfen, ob eine TextBox das Ende der Sequenz ist, können Sie prüfen, ob sie kein nächstes Formular hat (`Next`), hat aber eine frühere Form (`Previous`). Wenn ja, bedeutet das, dass die Sequenz zu Ende ist.
+
+#### F: Können wir die Reihenfolge anderer Elemente als TextBoxen überprüfen?
+
+A: Ja, mit der Aspose.Words-Bibliothek für .NET ist es möglich, die Reihenfolge anderer Elemente wie Absätze, Tabellen, Bilder usw. zu überprüfen. Der Vorgang variiert je nach dem spezifischen Element, das Sie überprüfen möchten.

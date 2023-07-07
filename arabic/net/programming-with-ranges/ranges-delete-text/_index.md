@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 // المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+// قم بتحميل مستند Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // احذف النص في القسم الأول من المستند

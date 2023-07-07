@@ -111,3 +111,35 @@ Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```
 
+## خاتمة
+
+في هذا البرنامج التعليمي ، تعلمنا كيفية نقل عقدة في مستند Word متعقب باستخدام Aspose.Words for .NET. باتباع خطوات إنشاء المستند ، وتمكين تتبع المراجعة ، وتحريك العقدة ، وإيقاف تتبع المراجعة ، تمكنا من إجراء هذه المعالجة بنجاح. Aspose.Words for .NET أداة قوية للعمل مع مستندات Word وتوفر ميزات متقدمة لإدارة المراجعات. يمكنك الآن استخدام هذه المعرفة لنقل العقد في مستندات Word الخاصة بك أثناء تتبع المراجعات باستخدام Aspose.Words for .NET.
+
+### التعليمات
+
+#### س: كيف يمكنني تمكين تتبع المراجعة في مستند Aspose.Words for .NET؟
+
+ج: لتمكين تتبع المراجعة في مستند Aspose.Words for .NET ، يمكنك استخدام`StartTrackRevisions` طريقة`Document` هدف. تأخذ هذه الطريقة كمعلمات اسم مؤلف المراجعات وتاريخ بدء متابعة المراجعات.
+
+```csharp
+doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+```
+
+#### س: كيف يمكنني نقل عقدة في مستند متعقب بدون إنشاء مراجعات؟
+
+ ج: إذا كنت تريد نقل عقدة في مستند متتبع دون إنشاء مراجعات ، فيمكنك استخدام ملف`Remove` و`InsertAfter` أو`InsertBefore` طرق`Node` هدف. على سبيل المثال ، لنقل فقرة بعد فقرة أخرى ، يمكنك استخدام الكود التالي:
+
+```csharp
+Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
+Node referenceNode = document.FirstSection.Body.Paragraphs[1];
+nodeToMove.Remove();
+document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
+```
+
+#### س: كيف يمكنني إيقاف تتبع المراجعة في مستند Aspose.Words for .NET؟
+
+ ج: لإيقاف تتبع المراجعات في مستند Aspose.Words for .NET ، يمكنك استخدام`StopTrackRevisions` طريقة`Document` هدف.
+
+```csharp
+doc.StopTrackRevisions();
+```

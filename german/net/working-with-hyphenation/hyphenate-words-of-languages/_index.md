@@ -34,7 +34,7 @@ Stellen Sie sicher, dass sich in Ihrem Datenverzeichnis die entsprechenden Wört
 
 ## Schritt 3: Wörter durch Silbentrennung verarbeiten
 
- Jetzt können Sie Silbentrennungsfunktionen verwenden, um Wörter in verschiedenen Sprachen zu verarbeiten. Sie können verschiedene Methoden verwenden`Document` oder`DocumentBuilder`abhängig von Ihren spezifischen Bedürfnissen.
+ Jetzt können Sie Silbentrennungsfunktionen verwenden, um Wörter in verschiedenen Sprachen zu verarbeiten. Sie können verschiedene Methoden verwenden`Document` oder`DocumentBuilder` abhängig von Ihren spezifischen Bedürfnissen.
 
 ```csharp
 // Beispiel: Verwendung der Hyphenate-Methode von DocumentBuilder
@@ -66,3 +66,17 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
 Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und an Ihre spezifischen Bedürfnisse anpassen.
+
+### FAQs
+
+#### F: Wie kann ich mit Aspose.Words ein Wort in einer bestimmten Sprache in Silben umwandeln?
+
+ A: Um ein Wort in einer bestimmten Sprache mit Aspose.Words in Silben umzuwandeln, können Sie das verwenden`Hyphenation` Klasse und die`Hyphenate()` Methode. Erstellen Sie eine Instanz von`Hyphenation` Klasse, die die gewünschte Sprache angibt, und rufen Sie dann die auf`Hyphenate()` Methode, die das zu syllabisierende Wort als Argument übergibt. Dadurch erhalten Sie die Silben des Wortes in der angegebenen Sprache.
+
+#### F: Welche Sprachcodes sollte ich verwenden, um die Silbensprache in Aspose.Words anzugeben?
+
+A: Um die Silbensprache in Aspose.Words anzugeben, müssen Sie die entsprechenden Sprachcodes verwenden. Sie können beispielsweise „en“ für Englisch, „fr“ für Französisch, „es“ für Spanisch, „de“ für Deutsch usw. verwenden. Eine vollständige Liste der unterstützten Sprachcodes finden Sie in der Aspose.Words-Dokumentation.
+
+#### F: Funktioniert die Silbentrennung für alle Sprachen in Aspose.Words?
+
+A: Die Silbenbildung in Aspose.Words hängt von sprachspezifischen Silbenbildungsregeln ab. Obwohl Aspose.Words eine Vielzahl von Sprachen unterstützt, werden einige Sprachen möglicherweise nicht unterstützt oder die Silbentrennung ist für sie möglicherweise nicht verfügbar. Sehen Sie sich die Aspose.Words-Dokumentation an, um herauszufinden, welche Sprachen für die Silbentrennung unterstützt werden.

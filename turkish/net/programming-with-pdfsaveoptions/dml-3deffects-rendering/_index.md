@@ -1,6 +1,6 @@
 ---
-title: Dml 3DEffects Oluşturma
-linktitle: Dml 3DEffects Oluşturma
+title: 3D DML 3DEffects'i bir PDF Belgesinde İşleyin
+linktitle: 3D DML 3DEffects'i bir PDF Belgesinde İşleyin
 second_title: Aspose.Words for .NET API Referansı
 description: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin işlenmesini nasıl etkinleştireceğinizi öğrenin.
 type: docs
@@ -56,6 +56,28 @@ Dönüştürülen PDF'yi kaydetmek için doğru yolu belirttiğinizden emin olun
 ```
 
 Bu adımları izleyerek, Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin işlenmesini kolayca etkinleştirebilirsiniz.
+
+## Çözüm
+
+Bu eğitimde, Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin nasıl oluşturulacağını açıkladık. Açıklanan adımları izleyerek, oluşturulan PDF belgesindeki 3B efektleri kolayca saklayabilirsiniz. Orijinal belgenizin önemli görsel efektlerini korumak için bu özelliği kullanın.
+
+
+### Sıkça Sorulan Sorular
+
+#### S: Bir PDF belgesinde 3B DML efektleri oluşturma nedir?
+Y: Bir PDF belgesinde 3B DML efektleri oluşturmak, bir belgeyi PDF biçimine dönüştürürken 3B efektleri koruma becerisini ifade eder. Bu, görsel efektleri korur ve oluşturulan PDF belgesinin orijinal belge gibi görünmesini sağlar.
+
+#### S: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin oluşturulmasını nasıl etkinleştirebilirim?
+C: Aspose.Words for .NET ile PDF'ye dönüştürürken 3D DML efektlerinin işlenmesini etkinleştirmek için şu adımları izleyin:
+
+ örneğini oluşturun`Document` Word belgesine giden yolu belirten sınıf.
+
+ örneğini oluşturun`PdfSaveOptions` sınıflandırın ve ayarlayın`Dml3DEffectsRenderingMode` mülkiyet`Dml3DEffectsRenderingMode.Advanced` 3B DML efektlerinin gelişmiş şekilde oluşturulmasını sağlamak için.
+
+ Kullan`Save` yöntemi`Document`kaydetme seçeneklerini belirterek belgeyi PDF biçiminde kaydetmek için sınıf.
+
+#### S: Oluşturulan PDF belgesinde 3B DML efektlerinin oluşturulup oluşturulmadığını nasıl kontrol edebilirim?
+A: Oluşturulan PDF belgesinde 3D DML efektlerinin oluşturulup oluşturulmadığını kontrol etmek için, PDF dosyasını Adobe Acrobat Reader gibi uyumlu bir PDF görüntüleyici ile açın ve belgeyi inceleyin. 3B efektleri orijinal belgede göründükleri gibi görmelisiniz.
 
 
 

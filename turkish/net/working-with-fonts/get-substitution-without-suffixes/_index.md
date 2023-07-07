@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Ardından, kullanarak belgeyi yükleyeceğiz`Document` kullanarak soneksiz ikameleri sınıflandırın ve yapılandırın.`DocumentSubstitutionWarnings` sınıf. Yazı tiplerini içeren bir klasör belirterek bir yazı tipi kaynağı da ekleyeceğiz.
 
 ```csharp
-//Belgeyi yükleyin ve sonekler olmadan değiştirmeleri yapılandırın
+// Belgeyi yükleyin ve sonekler olmadan değiştirmeleri yapılandırın
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
 DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
 doc.WarningCallback = substitutionWarningHandler;
@@ -67,3 +67,21 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Çözüm
 Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinde sonekler olmadan geçersiz kılmaların nasıl alınacağını gördük. Son eksiz ikameler, yazı tipi değiştirme problemlerini çözmek için kullanışlıdır. Belgelerinizin görüntülenmesini ve yazdırılmasını iyileştirmek için bu özelliği kullanmaktan çekinmeyin.
+
+### SSS
+
+#### S: Aspose.Words neden yazı tipi değişikliklerine sonekler ekliyor?
+
+C: Aspose.Words, orijinal yazı tipleri ile değiştirilen yazı tipleri arasındaki çakışmaları önlemek için yazı tipi değiştirmelerine son ekler ekler. Bu, belgeleri dönüştürürken ve değiştirirken maksimum uyumluluğun sağlanmasına yardımcı olur.
+
+#### S: Aspose.Words'te sonekler olmadan yazı tipi değiştirmelerini nasıl alabilirim?
+
+ C: Aspose.Words'te sonekler olmadan yazı tipi değiştirmelerini almak için`FontSubstitutionSettings` sınıf ve`RemoveSuffixes` mülk. Bu özellik şu şekilde ayarlanıyor:`true` eklenen son ekler olmadan yazı tipi değişikliklerini alacaktır.
+
+#### S: Aspose.Words'te yazı tipi değişikliklerine son ekler eklemeyi devre dışı bırakmak mümkün mü?
+
+C: Hayır, Aspose.Words'ta yazı tipi değişikliklerine son ekler eklemeyi devre dışı bırakmak mümkün değildir. Belge uyumluluğunu ve tutarlılığını sağlamak için son ekler varsayılan olarak eklenir.
+
+#### S: Aspose.Words'ta yazı tipi değiştirmelerinde istenmeyen son ekleri nasıl filtreleyebilirim?
+
+ C: Aspose.Words'teki yazı tipi değiştirmelerdeki istenmeyen son ekleri filtrelemek için, dize işleme tekniklerini kullanabilirsiniz, örneğin`Replace` veya`Substring` dahil etmek istemediğiniz belirli son ekleri kaldırma yöntemleri.

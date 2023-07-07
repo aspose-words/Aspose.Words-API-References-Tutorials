@@ -16,5 +16,5 @@ Trabajar con revisiones es un recurso integral que lo guía a través del trabaj
 | [Obtener nodo principal](./get-parent-node/) | Aprenda a obtener el nodo principal de un elemento específico con Aspose.Words para .NET. |
 | [Documento de propietario](./owner-document/) | Aprenda a usar el documento de propietario en Aspose.Words para .NET. |
 | [Enumerar nodos secundarios](./enumerate-child-nodes/) | Aprenda a enumerar nodos secundarios en un párrafo con Aspose.Words para .NET. |
-| [Acceso escrito](./typed-access/) | Aprenda a usar el acceso con tipo para manipular tablas en Aspose.Words para .NET. |
+| [Acceso escrito](./typed-access/) | Aprenda a usar el acceso escrito para manipular tablas en Aspose.Words para .NET. |
 | [Crear y agregar nodo de párrafo](./create-and-add-paragraph-node/) | Cree y agregue un nodo de párrafo a sus documentos de Word con Aspose.Words para .NET. |

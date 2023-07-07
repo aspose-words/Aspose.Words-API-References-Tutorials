@@ -16,6 +16,6 @@ Gracias a estos tutoriales, podrá explotar al máximo las funcionalidades de As
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Añadir Marcas Bidi](./add-bidi-marks/) | Aprenda a agregar marcas Bidi a un documento de Word usando Aspose.Words para .NET y cree documentos multilingües profesionales. |
+| [Agregar marcas Bidi en un documento de Word](./add-bidi-marks/) | Aprenda a agregar marcas Bidi a un documento de Word usando Aspose.Words para .NET y cree documentos multilingües profesionales. |
 | [Use el carácter de tabulación por nivel para la sangría de la lista](./use-tab-character-per-level-for-list-indentation/) | Aprenda a usar las listas de sangría con la función de caracteres de tabulación en Aspose.Words para .NET. Siga esta guía paso a paso para crear documentos legibles y bien estructurados. Ahorre tiempo y mejore su flujo de trabajo con esta potente función. Accede ahora al tutorial completo. |
 | [Use el carácter de espacio por nivel para la sangría de la lista](./use-space-character-per-level-for-list-indentation/) | Guía paso a paso para usar un carácter de espacio por nivel para la sangría de lista en Aspose.Words para .NET. Cree documentos de Word bien estructurados con facilidad. |

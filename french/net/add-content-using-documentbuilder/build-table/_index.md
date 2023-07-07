@@ -71,7 +71,7 @@ builder.EndTable();
 ```
 
 ### Exemple de code source pour la construction d'une table à l'aide de Aspose.Words pour .NET
-Voici le code source complet pour construire une table en utilisant Aspose.Words pour .NET :
+Voici le code source complet pour construire une table en utilisant Aspose.Words pour .NET :
 
 ```csharp
 Document doc = new Document();

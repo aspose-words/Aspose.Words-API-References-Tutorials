@@ -84,7 +84,7 @@ Document doc = new Document(dataDir + "Header and footer types.docx");
 foreach (Section section in doc)
 {
 	// В разделе возможно до трех разных колонтитулов (для первой, четной и нечетной страниц).
-	// мы проверяем и удаляем их все.
+	//мы проверяем и удаляем их все.
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 

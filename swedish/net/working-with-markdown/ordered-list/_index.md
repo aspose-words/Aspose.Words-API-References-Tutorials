@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Steg 2: Tillämpa det beställda listformatet
 
-Vi kommer att tillämpa det beställda listformatet med hjälp av dokumentbyggarens`ApplyBulletDefault` metod. Vi kan också anpassa numreringsformatet genom att gå till listnivåerna och ställa in det format vi vill ha.
+ Vi kommer att tillämpa det beställda listformatet med hjälp av dokumentbyggarens`ApplyBulletDefault`metod. Vi kan också anpassa numreringsformatet genom att gå till listnivåerna och ställa in det format vi vill ha.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
@@ -73,3 +73,25 @@ builder.Writeln("Item 2b");
 
 Grattis! Du har nu lärt dig hur du använder den beställda listfunktionen med Aspose.Words för .NET.
 
+
+### FAQ's
+
+#### F: Hur skapar man en beställd lista i Markdown?
+
+S: För att skapa en ordnad lista i Markdown, starta varje listobjekt med ett nummer följt av en punkt (`1.`, `2.`, `3.`), följt av ett mellanslag.
+
+#### F: Kan vi kapsla ordnade listor i Markdown?
+
+S: Ja, det är möjligt att kapsla ordnade listor i Markdown genom att lägga till fyra offset-mellanslag framför varje kapslad listobjekt.
+
+#### F: Hur anpassar man numreringen av beställda listor?
+
+S: I standard Markdown genereras ordnad listnumrering automatiskt. Vissa Markdown-redigerare låter dig dock anpassa den med specifika tillägg.
+
+#### F: Stöder ordnade listor i Markdown indrag?
+
+S: Ja, ordnade listor i Markdown stödjer indrag. Du kan lägga till en vänsterförskjutning med blanksteg eller tabb.
+
+#### F: Kan länkar eller inline-text läggas till i listobjekt?
+
+S: Ja, du kan lägga till länkar eller inline-text till listobjekt med lämplig Markdown-syntax.

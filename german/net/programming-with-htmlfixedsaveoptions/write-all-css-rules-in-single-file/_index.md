@@ -50,7 +50,7 @@ In diesem Beispiel speichern wir das konvertierte Dokument unter Verwendung der 
 // Zugriffspfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Word-Dokument
+// Laden Sie das Word-Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
 // Konfigurieren Sie Sicherungsoptionen mit der Funktion „Alle CSS-Regeln in eine Datei schreiben“.

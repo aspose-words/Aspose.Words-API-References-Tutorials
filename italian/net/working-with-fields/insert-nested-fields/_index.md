@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Passaggio 5: Inserimento del campo nidificato
 
- Usiamo il DocumentBuilder`InsertField()` metodo per inserire un campo nidificato nel piè di pagina.
+ Usiamo il DocumentBuilder`InsertField()`metodo per inserire un campo nidificato nel piè di pagina.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");
@@ -95,3 +95,29 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
 In questo esempio, abbiamo creato un nuovo documento, inserito interruzioni di pagina, spostato il cursore sul piè di pagina e quindi inserito un campo nidificato nel piè di pagina.
+
+### FAQ
+
+#### D: Come posso inserire campi nidificati in un documento Word utilizzando Aspose.Words per .NET?
+
+R: Per inserire campi nidificati in un documento Word utilizzando Aspose.Words per .NET, puoi seguire questi passaggi:
+
+1. Ottieni il paragrafo in cui desideri inserire i campi nidificati.
+2.  Creare un`FieldStart` oggetto per il campo padre.
+3.  Aggiungere i campi figlio utilizzando il`FieldStart.NextSibling` metodo passando il corrispondente`FieldStart` oggetti come parametri.
+
+#### D: Quali sono i vantaggi dell'utilizzo di campi nidificati in un documento Word con Aspose.Words per .NET?
+
+R: L'utilizzo di campi nidificati offre numerosi vantaggi in un documento Word con Aspose.Words per .NET. Ciò consente una maggiore flessibilità nella creazione di modelli di documenti dinamici, consentendo l'inserimento di valori variabili e calcoli in campi nidificati. I campi nidificati possono anche facilitare la generazione automatizzata di contenuti, come la generazione di tabelle di contenuti, numeri di pagina, ecc.
+
+#### D: Posso avere campi nidificati a più livelli in un documento Word con Aspose.Words per .NET?
+
+ R: Sì, è possibile avere campi nidificati a più livelli in un documento Word con Aspose.Words per .NET. È possibile creare gerarchie complesse di campi nidificati utilizzando il file`FieldStart.NextSibling` metodo per aggiungere campi figlio ai campi padre esistenti.
+
+#### D: Come posso personalizzare le proprietà dei campi nidificati in un documento Word con Aspose.Words per .NET?
+
+ R: Per personalizzare le proprietà dei campi nidificati in un documento Word con Aspose.Words per .NET, è possibile accedere al corrispondente`FieldStart`oggetti e modificarne le proprietà secondo necessità. È possibile impostare le opzioni di formattazione, i valori, i calcoli e così via dei campi nidificati per ottenere il risultato desiderato.
+
+#### D: L'inserimento di campi nidificati influisce sulle prestazioni dei documenti di Word con Aspose.Words per .NET?
+
+R: L'inserimento di campi nidificati può influire sulle prestazioni del documento di Word con Aspose.Words per .NET, soprattutto se il documento contiene un numero elevato di campi nidificati o gerarchie complesse. Si consiglia di ottimizzare il codice evitando operazioni non necessarie o ripetute sui campi nidificati per migliorare le prestazioni.

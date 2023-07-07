@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/programming-with-tables/nested-table/
 ---
 
-In questo tutorial impareremo come creare una tabella nidificata in un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di creare tabelle nidificate nei tuoi documenti Word a livello di programmazione.
+In questo tutorial impareremo come creare una tabella nidificata in un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di creare tabelle nidificate nei tuoi documenti Word a livello di codice.
 
 ## Passaggio 1: impostazione del progetto
 1. Avvia Visual Studio e crea un nuovo progetto C#.

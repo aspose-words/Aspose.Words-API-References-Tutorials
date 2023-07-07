@@ -57,3 +57,24 @@ builder.Writeln("d");
 
 Congratulation ! You have now learned how to create a table with Aspose.Words for .NET.
 
+### FAQ's
+
+#### Q: How do I create a table in Markdown?
+
+A: To create a table in Markdown, use the syntax of pipes (`|`) to delimit cells and dashes (`-`) to delimit table headers.
+
+#### Q: Can we customize the appearance of a table in Markdown?
+
+A: In standard Markdown, table customization options are limited. However, some Markdown editors allow you to add CSS styles to tables to customize their appearance.
+
+#### Q: How to merge cells in a table in Markdown?
+
+A: Merging cells in a table in Markdown depends on the Markdown editor used. Some Markdown editors support merging cells using a specific syntax.
+
+#### Q: Do tables in Markdown support CSS styling?
+
+A: In standard Markdown, tables don't offer direct support for CSS styles. However, some Markdown editors allow you to add CSS styles to tables to customize their appearance.
+
+#### Q: Can we add links or text in inline format in the cells of a table in Markdown?
+
+A: Yes, you can add links or inline text to table cells in Markdown using the appropriate Markdown syntax.

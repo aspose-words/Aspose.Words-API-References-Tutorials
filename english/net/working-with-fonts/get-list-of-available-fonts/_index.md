@@ -78,3 +78,17 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
 ## Conclusion
 In this tutorial, we saw how to get the list of fonts available in Aspose.Words for .NET. This lets you know which fonts you can use in your documents. Feel free to use this feature to choose appropriate fonts for your needs.
+
+### FAQ's
+
+#### Q: How can I retrieve the list of fonts available in Aspose.Words?
+
+A: To retrieve the list of fonts available in Aspose.Words, you can use the `FontsProvider` class and the `GetAvailableFonts` method. This method will return a list of all fonts installed on your system.
+
+#### Q: Can I filter the list of available fonts by certain criteria in Aspose.Words?
+
+A: Yes, you can filter the list of fonts available in Aspose.Words using specific criteria. For example, you can filter fonts by family, style, or language.
+
+#### Q: How can I use the list of available fonts in my Word documents?
+
+A: To use the list of fonts available in your Word documents, you can browse the list and select the appropriate fonts using the methods and properties of the `FontSettings` class in Aspose.Words.

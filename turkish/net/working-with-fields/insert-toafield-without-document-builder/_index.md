@@ -104,3 +104,21 @@ fieldToa.Update();
 
 doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
+
+### SSS
+
+#### S: Aspose.Words for .NET ile Word belgesine eklenen TOA alanının görünümü nasıl özelleştirilir?
+
+C: Eklenen TOA alanının görünümünü, özelliklerini kullanarak özelleştirebilirsiniz.`FieldTOA` biçimlendirme seçeneklerini belirtmek için nesne.
+
+#### S: Aspose.Words for .NET kullanarak tek bir Word belgesine birden fazla TOA alanı ekleyebilir miyim?
+
+C: Evet, Aspose.Words for .NET'i kullanarak tek bir Word belgesine birden fazla TOA alanı ekleyebilirsiniz. Her alan için ekleme adımlarını tekrarlamanız yeterlidir.
+
+#### S: Aspose.Words for .NET ile bir TOA alanının bir Word belgesine başarıyla eklenip eklenmediğini nasıl kontrol edebilirim?
+
+Y: Bir TOA alanının başarıyla eklenip eklenmediğini kontrol etmek için, belge içeriğine göz atabilir ve TOA alanı örneklerini arayabilirsiniz.
+
+#### S: DocumentBuilder kullanmadan bir TOA alanı eklemek, Aspose.Words for .NET ile Word belgesi biçimlendirmesini etkiler mi?
+
+A: DocumentBuilder kullanmadan bir TOA alanı eklemek, Word belgesinin biçimlendirmesini doğrudan etkilemez. Ancak TOA alanı biçimlendirme seçenekleri, belgenin genel biçimlendirmesini etkileyebilir.

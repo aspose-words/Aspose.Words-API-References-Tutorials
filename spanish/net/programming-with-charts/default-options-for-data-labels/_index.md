@@ -2,7 +2,7 @@
 title: Opciones predeterminadas para etiquetas de datos
 linktitle: Opciones predeterminadas para etiquetas de datos
 second_title: Referencia de API de Aspose.Words para .NET
-description: Aprenda a configurar las opciones predeterminadas para las etiquetas de datos en un gráfico usando Aspose.Words para .NET.
+description: Aprenda a configurar las opciones predeterminadas para las etiquetas de datos en un gráfico con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-charts/default-options-for-data-labels/

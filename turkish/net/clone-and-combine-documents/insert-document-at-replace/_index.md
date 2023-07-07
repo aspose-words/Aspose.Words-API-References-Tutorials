@@ -25,7 +25,7 @@ Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 Şimdi bir belgeyi başka bir belgeye eklemek için arama yönünü ve geri aramayı değiştir'i belirterek bul ve değiştir seçeneklerini yapılandıracağız. İşte nasıl:
 
 ```csharp
-//Arama ve değiştirme seçeneklerini yapılandırın.
+// Arama ve değiştirme seçeneklerini yapılandırın.
 FindReplaceOptions options = new FindReplaceOptions
 {
 Direction = FindReplaceDirection.Backward,

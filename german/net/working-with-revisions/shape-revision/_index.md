@@ -78,7 +78,7 @@ Hier ist der vollständige Quellcode zum Überarbeiten von Formen in einem Dokum
 ```csharp
 Document doc = new Document();
 
-// Fügen Sie eine Inline-Form ein, ohne Revisionen zu verfolgen.
+//Fügen Sie eine Inline-Form ein, ohne Revisionen zu verfolgen.
 Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
@@ -109,7 +109,7 @@ Assert.True(shapes[0].IsDeleteRevision);
 Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
 Assert.True(shapes[1].IsInsertRevision);
 
-//Das Dokument verfügt über eine Form, die verschoben wurde, aber Überarbeitungen der Formverschiebung enthalten zwei Instanzen dieser Form.
+// Das Dokument verfügt über eine Form, die verschoben wurde, aber Überarbeitungen der Formverschiebung enthalten zwei Instanzen dieser Form.
 // Eine davon ist die Form am Ankunftsziel und die andere die Form an ihrem ursprünglichen Standort.
 doc = new Document(MyDir + "Revision shape.docx");
 
@@ -125,3 +125,63 @@ Assert.True(shapes[1].IsMoveFromRevision);
 Assert.False(shapes[1].IsMoveToRevision);
 ```
 
+## Abschluss
+
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Überarbeitungen an Formen in einem Word-Dokument vornimmt. Durch Befolgen der Schritte zum Erstellen des Dokuments, Aktivieren der Revisionsverfolgung, Überprüfen der mit jeder Form verknüpften Revisionen und Überprüfen der Revisionen zum Verschieben der Formen konnten wir die Revisionen erfolgreich verwalten. Aspose.Words für .NET bietet eine leistungsstarke API für die Arbeit mit Rezensionen und Formularen in Word-Dokumenten.
+
+### FAQs
+
+#### F: Wie kann ich in Aspose.Words für .NET ein neues Dokument erstellen und Formen hinzufügen?
+
+A: Um ein neues Dokument zu erstellen und Formen in Aspose.Words für .NET hinzuzufügen, können Sie den folgenden Code verwenden. Hier fügen wir dem ersten Abschnitt des Dokuments zwei Formen hinzu, einen Würfel und eine Sonne:
+
+```csharp
+Document doc = new Document();
+Assert.False(doc.TrackRevisions);
+
+Shape shape = new Shape(doc, ShapeType.Cube);
+shape. WrapType = WrapType. Inline;
+shape. Width = 100.0;
+shape. Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
+
+#### F: Wie aktiviere ich die Revisionsverfolgung in Aspose.Words für .NET?
+
+ A: Um die Revisionsverfolgung in Aspose.Words für .NET zu aktivieren, können Sie die verwenden`StartTrackRevisions` Methode der`Document` Objekt. Diese Methode verwendet den Namen des Autors der Revisionen als Parameter:
+
+```csharp
+doc.StartTrackRevisions("John Doe");
+```
+
+#### F: Wie kann ich die Revisionen überprüfen, die jeder Form in einem Aspose.Words für .NET-Dokument zugeordnet sind?
+
+A: Um die Revisionen zu überprüfen, die jeder Form in einem Aspose.Words für .NET-Dokument zugeordnet sind, können Sie die Formensammlung des Dokuments mithilfe von abrufen`GetChildNodes` Methode mit der`NodeType.Shape` Knotentyp. Dann können Sie auf die einzelnen Formen zugreifen`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , Und`IsMoveToRevision` Eigenschaften, um zu bestimmen, welcher Revisionstyp mit der Form verknüpft ist:
+
+```csharp
+List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
+
+Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
+Assert.True(shapes[0].IsDeleteRevision);
+
+Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
+Assert.True(shapes[1].IsInsertRevision);
+```
+
+#### F: Wie kann ich in einem Aspose.Words für .NET-Dokument nach Verschiebungsrevisionen von Formen suchen?
+
+ A: Um nach Formverschiebungsrevisionen in einem Aspose.Words für .NET-Dokument zu suchen, können Sie ein vorhandenes Dokument laden, das Formverschiebungsrevisionen enthält. Dann können Sie auf die einzelnen Formen zugreifen`IsMoveFromRevision` Und`IsMoveToRevision` Eigenschaften, um festzustellen, ob es verschoben wird und wenn ja, von wo und wohin:
+
+```csharp
+doc = new Document(MyDir + "Revision shape.docx");
+
+shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
+
+Assert. False(shapes[0].IsMoveFromRevision);
+Assert.True(shapes[0].IsMoveToRevision);
+
+Assert.True(shapes[1].IsMoveFromRevision);
+Assert. False(shapes[1].IsMoveToRevision);
+```

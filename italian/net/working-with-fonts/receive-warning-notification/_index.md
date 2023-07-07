@@ -16,7 +16,7 @@ Prima di iniziare, assicurati di avere i seguenti elementi:
 - La libreria Aspose.Words per .NET installata nel tuo progetto
 
 ## Passaggio 1: definire la directory dei documenti
-Inizia impostando il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
+ Inizia impostando il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 // Quando chiami UpdatePageLayout, il documento viene visualizzato in memoria. Eventuali avvisi che si sono verificati durante il rendering
-// vengono memorizzati fino al salvataggio del documento e quindi inviati all'appropriato WarningCallback.
+//vengono memorizzati fino al salvataggio del documento e quindi inviati all'appropriato WarningCallback.
 doc.UpdatePageLayout();
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
@@ -59,3 +59,31 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 ## Conclusione
 In questo tutorial, hai imparato come ricevere una notifica di avviso durante l'utilizzo di Aspose.Words per .NET. Gli avvisi possono essere emessi durante l'impostazione o il salvataggio di un documento. Utilizza questa funzione per essere avvisato di eventuali problemi o avvisi relativi ai tuoi documenti.
+
+### FAQ
+
+#### D: Come posso ricevere notifiche di avviso in Aspose.Words?
+
+ R: Per ricevere notifiche di avviso in Aspose.Words, puoi utilizzare il file`FontSettings` classe e il`WarningCallback` evento. È possibile definire un metodo di richiamata per ricevere una notifica quando vengono rilevati avvisi relativi ai caratteri durante l'elaborazione dei documenti.
+
+#### D: Quali sono i tipi comuni di avvisi relativi ai caratteri in Aspose.Words?
+
+R: Alcuni tipi comuni di avvisi relativi ai caratteri in Aspose.Words sono:
+- Font mancanti
+- Font sostituiti
+- Problemi di formattazione dei caratteri
+
+#### D: Come posso risolvere i problemi relativi ai caratteri nei miei documenti di Word?
+
+R: Per risolvere i problemi relativi ai caratteri nei documenti di Word, puoi procedere come segue:
+- Installa i caratteri mancanti sul sistema in cui stai eseguendo l'applicazione Aspose.Words.
+- Utilizzare caratteri sostitutivi appropriati che siano visivamente simili ai caratteri originali.
+- Controlla e regola la formattazione dei caratteri per garantire un aspetto coerente.
+
+#### D: Perché è importante ricevere notifiche di avviso relative ai caratteri in Aspose.Words?
+
+A: È importante ricevere notifiche di avviso relative ai caratteri in Aspose.Words perché ti aiutano a identificare potenziali problemi nei tuoi documenti. Ciò consente di adottare le misure necessarie per risolvere questi problemi e garantire la qualità dei documenti.
+
+#### D: Come posso abilitare o disabilitare le notifiche di avviso in Aspose.Words?
+
+ R: Per abilitare o disabilitare le notifiche di avviso in Aspose.Words, puoi utilizzare il`FontSettings.ShowFontWarnings` proprietà e impostarlo su`true` O`false` seconda delle vostre esigenze. Se abilitato, riceverai notifiche di avviso relative ai caratteri.

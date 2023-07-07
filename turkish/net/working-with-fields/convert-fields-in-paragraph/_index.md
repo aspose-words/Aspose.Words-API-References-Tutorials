@@ -71,3 +71,26 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
 // Değiştirilen belgeyi kaydedin.
 doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ```
+
+### SSS
+
+#### S: Aspose.Words'te dönüştürme alanı nedir?
+
+C: Aspose.Words'teki bir dönüştürme alanı, bir değeri veya ifadeyi başka bir biçime veya veri türüne dönüştüren bir alan türüdür. Örneğin, bir tarihi belirli bir biçime, bir sayıyı metne dönüştürmek veya diğer dönüştürme türlerini gerçekleştirmek için bir dönüştürme alanı kullanabilirsiniz.
+
+#### S: Aspose.Words ile bir paragrafa dönüştürme alanı nasıl eklenir?
+
+C: Aspose.Words ile bir paragrafa dönüştürme alanı eklemek için şu adımları izleyebilirsiniz:
+
+1. Aspose.Words ad alanından Document sınıfını içe aktarın.
+2. Mevcut belgenizi yükleyerek bir Belge örneği oluşturun.
+3. Dönüştürme alanını eklemek istediğiniz paragrafı alın.
+4. Dönüştürme alanını doğru sözdizimiyle eklemek için InsertField yöntemini kullanın.
+
+#### S: Aspose.Words hangi dönüştürme formatlarını destekliyor?
+
+C: Aspose.Words, tarih formatları, sayı formatları, metin formatları, para birimi formatları, yüzde formatları ve daha fazlası dahil olmak üzere alanlarda çok çeşitli dönüştürme formatlarını destekler. Kullanılabilir dönüştürme biçimlerinin tam listesi için Aspose.Words belgelerine bakabilirsiniz.
+
+#### S: Bir Word belgesindeki dönüştürme alanı Aspose.Words ile nasıl güncellenir?
+
+C: Bir Word belgesindeki dönüştürme alanını Aspose.Words ile güncellemek için UpdateFields yöntemini kullanabilirsiniz. Bu yöntem belgede döngü halinde dolaşır ve dönüştürme alanları da dahil olmak üzere tüm alanları güncel verilere göre değerleri yeniden hesaplayarak günceller.

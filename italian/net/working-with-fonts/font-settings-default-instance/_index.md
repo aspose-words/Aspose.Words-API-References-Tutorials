@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: configurare le impostazioni dei caratteri predefiniti
- Successivamente, creeremo un'istanza di`FontSettings` utilizzando`FontSettings.DefaultInstance`quindi specificheremo le origini dei caratteri utilizzate durante il caricamento e il rendering dei documenti. In questo esempio, stiamo usando un'origine font di sistema e un'origine font cartella.
+ Successivamente, creeremo un'istanza di`FontSettings` utilizzando`FontSettings.DefaultInstance`, quindi specificheremo le origini dei caratteri utilizzate durante il caricamento e il rendering dei documenti. In questo esempio, stiamo usando un'origine font di sistema e un'origine font cartella.
 
 ```csharp
 // Configura le impostazioni dei caratteri predefiniti
@@ -67,3 +67,21 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ## Conclusione
 In questo tutorial, abbiamo visto come configurare le impostazioni predefinite dei caratteri in un documento Word con Aspose.Words per .NET. Specificando le origini dei caratteri utilizzate durante il caricamento e il rendering dei documenti, è possibile controllare l'aspetto dei caratteri nei documenti. Sentiti libero di utilizzare questa funzione per personalizzare le impostazioni dei caratteri nei tuoi progetti.
+
+### FAQ
+
+#### D: Come posso impostare il carattere predefinito in Aspose.Words?
+
+ A: Per impostare il carattere predefinito in Aspose.Words, puoi utilizzare il`FontSettings` classe e il`DefaultFontName` proprietà che specifica il nome del carattere desiderato.
+
+#### D: Posso specificare la dimensione del carattere predefinita in Aspose.Words?
+
+ A: Sì, è possibile specificare la dimensione del carattere predefinita in Aspose.Words utilizzando il file`DefaultFontSize` proprietà del`FontSettings` classe. È possibile impostare la dimensione in punti desiderata.
+
+#### D: È possibile impostare il colore del carattere predefinito in Aspose.Words?
+
+ A: Sì, puoi impostare il colore del carattere predefinito in Aspose.Words usando il`DefaultColor` proprietà del`FontSettings` classe. È possibile specificare il colore utilizzando valori RGB o nomi predefiniti.
+
+#### D: Le impostazioni predefinite dei caratteri si applicano a tutti i documenti?
+
+R: Sì, le impostazioni predefinite dei caratteri si applicano a tutti i documenti creati o modificati in Aspose.Words, a meno che non siano impostate impostazioni specifiche per un singolo documento.

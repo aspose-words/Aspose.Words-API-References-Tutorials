@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Paso 3: Configure el sistema y las carpetas de fuentes personalizadas
- Ahora puede establecer carpetas de fuentes del sistema y una carpeta personalizada usando el`FontSettings` clase y el`SetFontsSources()` método. Primero, debe recuperar la lista de fuentes de fuentes dependientes del entorno usando`GetFontsSources()` y almacenarlo en una lista. A continuación, puede crear una nueva instancia de`FolderFontSource`especificando la ruta a la carpeta personalizada que contiene sus fuentes. Agregue esta instancia a la lista de fuentes de fuentes existentes. Finalmente, usa`SetFontsSources()` para actualizar las fuentes de fuentes con la nueva lista.
+ Ahora puede establecer carpetas de fuentes del sistema y una carpeta personalizada usando el`FontSettings` clase y el`SetFontsSources()` método. Primero, debe recuperar la lista de fuentes de fuentes dependientes del entorno usando`GetFontsSources()` y almacenarlo en una lista. A continuación, puede crear una nueva instancia de`FolderFontSource` especificando la ruta a la carpeta personalizada que contiene sus fuentes. Agregue esta instancia a la lista de fuentes de fuentes existentes. Finalmente, usa`SetFontsSources()` para actualizar las fuentes de fuentes con la nueva lista.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -76,3 +76,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 
 ## Conclusión
 En este tutorial, aprendimos cómo configurar carpetas de fuentes del sistema y una carpeta personalizada al renderizar un documento usando Aspose.Words para .NET. Al seguir esta guía paso a paso, puede especificar fácilmente varias carpetas de fuentes, incluida la carpeta del sistema y una carpeta personalizada, para usar al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para trabajar con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar las fuentes de fuentes utilizadas al renderizar sus documentos según sus necesidades específicas.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo configurar las carpetas de fuentes del sistema en Aspose.Words?
+
+R: Para configurar las carpetas de fuentes del sistema en Aspose.Words, no tiene que hacer nada. Aspose.Words utiliza automáticamente las fuentes del sistema instaladas en su sistema operativo.
+
+#### P: ¿Cómo puedo configurar carpetas de fuentes personalizadas en Aspose.Words?
+
+ R: Para configurar las carpetas de fuentes personalizadas en Aspose.Words, puede usar el`SetFontsFolders` metodo de la`Fonts` clase especificando las ubicaciones de las carpetas de fuentes personalizadas.
+
+#### P: ¿Puedo especificar varias carpetas de fuentes personalizadas en Aspose.Words?
+
+ R: Sí, puede especificar varias carpetas de fuentes personalizadas en Aspose.Words usando el`SetFontsFolders` metodo de la`Fonts` clase con una lista de ubicaciones de carpetas.
+
+#### P: ¿Cómo puedo verificar las carpetas de fuentes definidas en Aspose.Words?
+
+ Para verificar las carpetas de fuentes definidas en Aspose.Words, puede usar el`GetFolders` metodo de la`Fonts` class para obtener la lista de carpetas de fuentes configuradas.
+
+#### P: ¿Las fuentes de las carpetas personalizadas tienen prioridad sobre las fuentes del sistema en Aspose.Words?
+
+R: Sí, las fuentes de las carpetas personalizadas tienen prioridad sobre las fuentes del sistema en Aspose.Words. Si una fuente está presente tanto en las carpetas personalizadas como en las fuentes del sistema, Aspose.Words utilizará la versión de la carpeta personalizada.

@@ -1,6 +1,6 @@
 ---
-title: Detect File Format
-linktitle: Detect File Format
+title: Detect Document File Format
+linktitle: Detect Document File Format
 second_title: Aspose.Words for .NET API Reference
 description: Step by step guide to detect document file format with Aspose.Words for .NET.
 type: docs
@@ -8,7 +8,7 @@ weight: 10
 url: /net/programming-with-fileformat/detect-file-format/
 ---
 
-This article provides a step by step guide on how to use the file format detection feature with Aspose.Words for .NET. We will explain each part of the code in detail. At the end of this tutorial, you will be able to understand how to detect the format of different document files.
+This article provides a step by step guide on how to use the document file format detection feature with Aspose.Words for .NET. We will explain each part of the code in detail. At the end of this tutorial, you will be able to understand how to detect the format of different document files.
 
 Before you start, make sure you have installed and configured the Aspose.Words for .NET library in your project. You can find the library and installation instructions on the Aspose website.
 
@@ -207,3 +207,24 @@ That's all ! You have successfully detected the format of different document fil
 
 ```
 
+### FAQ for Document file format detection
+
+#### How to detect the format of a document file using Aspose.Words for .NET?
+
+To detect the format of a document file using Aspose.Words for .NET, you can follow the steps provided in the tutorial. Using the `DetectFileFormat` method of the `FileFormatUtil` class will allow you to detect the format of the document file. This will allow you to determine whether it is a Microsoft Word 97-2003 document, a template, an Office Open XML WordprocessingML document, or other supported formats. The code provided in the tutorial will walk you through implementing this feature.
+
+#### What document formats does Aspose.Words for .NET support?
+
+Aspose.Words for .NET supports a variety of document formats including Microsoft Word 97-2003 documents (DOC), Templates (DOT), Office Open XML WordprocessingML documents (DOCX), Office Open XML WordprocessingML documents with macros (DOCM), Office Open XML WordprocessingML templates without macros (DOTX), Office Open XML WordprocessingML templates with macros (DOTM), Flat OPC documents, RTF documents, Microsoft Word 2003 WordprocessingML documents, HTML documents, MHTML (Web archive) documents, OpenDocument Text (ODT) documents, OpenDocument Text (OTT) templates, MS Word 6 or Word 95 documents, and unknown document formats.
+
+#### How to handle encrypted document files during format detection?
+
+When detecting the format of a document file, you can use the `IsEncrypted` property of the `FileFormatInfo` object to check if the file is encrypted. If the file is encrypted, you can take additional steps to handle this specific case, such as copying the file to a directory dedicated to encrypted documents. You can use the `File.Copy` method to do this.
+
+#### What actions should be taken when the format of a document is unknown?
+
+When the format of a document is unknown, you can decide to handle it in a way specific to your application. In the example provided in the tutorial, the document is copied into a specific directory dedicated to documents of unknown format. You can customize this action to suit your specific needs.
+
+#### Are there any other features of Aspose.Words for .NET that can be used in conjunction with document format detection?
+
+Yes, Aspose.Words for .NET offers many other features for processing and manipulating Word documents. For example, you can use the library to extract text, images, or metadata from documents, apply formatting changes, merge documents, convert documents to different formats, and more.

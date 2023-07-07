@@ -20,7 +20,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## Étape 2 : Création du document et insertion des champs de fusion
 
- Nous commençons par créer un nouveau document et en utilisant un`DocumentBuilder` pour insérer les champs de fusion.
+Nous commençons par créer un nouveau document et en utilisant un`DocumentBuilder` pour insérer les champs de fusion.
 
 ```csharp
 Document doc = new Document();
@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
 Suivez ces étapes pour renommer les champs de fusion dans votre document en utilisant Aspose.Words pour .NET.
+
+### FAQ
+
+#### Q : Comment puis-je renommer des champs fusionnés dans un document Word à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour renommer les champs fusionnés dans un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez parcourir les champs du document à l'aide de la`FieldMergingArgs` classe et utiliser le`FieldMergingArgs.FieldName` méthode pour renommer le champ.
+
+#### Q : Est-il possible de renommer uniquement certains champs fusionnés dans un document Word avec Aspose.Words pour .NET ?
+
+ : Oui, il est possible de renommer uniquement certains champs fusionnés dans un document Word avec Aspose.Words pour .NET. Vous pouvez filtrer les champs à renommer à l'aide de critères spécifiques, tels que le nom du champ ou d'autres propriétés pertinentes. Ensuite, vous pouvez renommer les champs correspondants à l'aide de la`FieldMergingArgs.FieldName` méthode.
+
+#### Q : Comment puis-je vérifier si un champ fusionné a été renommé avec succès dans un document Word avec Aspose.Words pour .NET ?
+
+ R : Pour vérifier si un champ fusionné a été renommé avec succès dans un document Word avec Aspose.Words pour .NET, vous pouvez utiliser le`FieldMergedArgs` classe et accéder à la`FieldMergedArgs.IsMerged` propriété pour déterminer si le champ a été renommé avec hit.
+
+#### Q : Quelles sont les conséquences de renommer un champ fusionné dans un document Word avec Aspose.Words pour .NET ?
+
+R : Lorsque vous renommez un champ fusionné dans un document Word avec Aspose.Words pour .NET, cela modifie le nom du champ dans le document, ce qui peut avoir un impact sur d'autres fonctionnalités ou processus qui dépendent du nom du champ. Assurez-vous de tenir compte de ces conséquences potentielles avant de renommer les champs fusionnés.
+
+#### Q : Est-il possible de restaurer le nom d'origine d'un champ fusionné après l'avoir renommé avec Aspose.Words pour .NET ?
+
+R : Oui, il est possible de restaurer le nom d'origine d'un champ fusionné après l'avoir renommé avec Aspose.Words pour .NET. Vous pouvez stocker le nom d'origine du champ dans une variable ou une liste, puis utiliser ces informations pour restaurer le nom d'origine si nécessaire.

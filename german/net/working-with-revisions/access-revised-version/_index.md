@@ -71,4 +71,50 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
+## Abschluss
 
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET auf die überarbeitete Version eines Word-Dokuments zugreift. Durch das Laden des Dokuments, das Navigieren zur überarbeiteten Version und das Durchsuchen der Revisionen konnten wir spezifische Informationen für Absätze abrufen, bei denen es sich um Listenelemente handelt. Aspose.Words für .NET bietet leistungsstarke Funktionen zum Bearbeiten von Word-Dokumenten, einschließlich Zugriff auf Rezensionen. Dieses Wissen können Sie nun nutzen, um mit Aspose.Words für .NET auf die überarbeitete Version Ihrer eigenen Word-Dokumente zuzugreifen.
+
+### FAQs
+
+#### F: Wie lade ich ein Dokument mit Revisionen in Aspose.Words für .NET?
+
+ A: Benutzen Sie die`Document`Klasse von Aspose.Words für .NET zum Laden eines Dokuments aus einer Datei, die Revisionen enthält. Sie können den vollständigen Dokumentpfad angeben.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### F: Wie greife ich in Aspose.Words für .NET auf die überarbeitete Version eines Dokuments zu?
+
+ A: Benutzen Sie die`RevisionsView` Eigentum der`Document` Objekt, um auf die überarbeitete Version des Dokuments zuzugreifen. Sie können den Wert festlegen`RevisionsView` Eigentum zu`RevisionsView.Final` um die endgültige Version ohne die Überarbeitungen anzuzeigen.
+
+```csharp
+doc.RevisionsView = RevisionsView.Final;
+```
+
+#### F: Wie durchsuche ich Dokumentrevisionen in Aspose.Words für .NET?
+
+ A: Verwenden Sie a`foreach` Schleife, um die im Dokument vorhandenen Revisionen zu durchlaufen. Du kannst den ... benutzen`Revisions` Eigentum der`Document` Objekt, um eine Sammlung aller Revisionen des Dokuments abzurufen.
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+     // Verarbeiten Sie hier jede Revision
+}
+```
+
+#### F: Wie überprüfe ich, ob ein Absatz ein Listenelement in Aspose.Words für .NET ist?
+
+ A: Benutzen Sie die`IsListItem` Eigentum der`Paragraph` Objekt, um zu prüfen, ob ein Absatz ein Listenelement ist. Der`IsListItem` Immobilienrenditen`true` wenn der Absatz ein Listenelement ist, andernfalls wird zurückgegeben`false`.
+
+```csharp
+if (paragraph.IsListItem)
+{
+     // Der Absatz ist ein Listenelement
+}
+else
+{
+     // Der Absatz ist kein Listenelement
+}
+```

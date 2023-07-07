@@ -63,6 +63,33 @@ doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Rig
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
+## Conclusion
+
+In this tutorial, we learned how to display revisions in balloons in a Word document using Aspose.Words for .NET. By using the appropriate display options, we were able to make the revisions visible in bubbles with revision bars on the right side. Aspose.Words for .NET offers many powerful features for manipulating Word documents, including revision management. Now you can use this knowledge to show revisions in balloons in your own Word documents using Aspose.Words for .NET.
 
 
+### FAQ's
 
+#### Q: How to upload a document in Aspose.Words for .NET?
+
+A: Use the `Document` class of Aspose.Words for .NET to load a document from a file. You can specify the full document path.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### Q: How to display revisions in balloons with Aspose.Words for .NET?
+
+A: Use the `ShowInBalloons` property of the `RevisionOptions` object to configure the display of revisions in balloons. You can set this property on `ShowInBalloons.FormatAndDelete` to show revisions in balloons with deletion and formatting revisions.
+
+```csharp
+doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
+```
+
+#### Q: How to save a document in PDF format with Aspose.Words for .NET?
+
+A: Use the `Save` method of the `Document` object to save the document in PDF format. You must specify the full destination path with the ".pdf" extension.
+
+```csharp
+doc.Save("path/to/destination/document.pdf");
+```

@@ -46,7 +46,7 @@ foreach(Field field in doc.Range.Fields)
 }
 ```
 
- Este bucle recorre todos los campos del documento en busca de campos de tipo`FieldType.FieldHyperlink` . Una vez que se encuentra un campo de este tipo, comprobamos si es un enlace local comprobando el`SubAddress` propiedad. Si no, reemplazamos la dirección del enlace con`"http://www.aspose.com"` el resultado con`"Aspose - The .NET & Java Component Editor"`.
+ Este bucle recorre todos los campos del documento en busca de campos de tipo`FieldType.FieldHyperlink` . Una vez que se encuentra un campo de este tipo, comprobamos si es un enlace local comprobando el`SubAddress` propiedad. Si no, reemplazamos la dirección del enlace con`"http://www.aspose.com"` y el resultado con`"Aspose - The .NET & Java Component Editor"`.
 
 ## Paso 4: Guarde el documento modificado
 
@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
 Este es un código fuente de muestra para reemplazar hipervínculos en un documento usando Aspose.Words para .NET.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo reemplazar hipervínculos en un documento de Word usando Aspose.Words para .NET?
+
+ R: Para reemplazar hipervínculos en un documento de Word usando Aspose.Words para .NET, puede usar el`Document.Range.Replace`método que especifica el texto a buscar y el texto de reemplazo. Asegúrese de utilizar las opciones adecuadas para establecer los parámetros de búsqueda y reemplazo.
+
+#### P: ¿Es posible reemplazar solo ciertos hipervínculos en un documento de Word con Aspose.Words para .NET?
+
+R: Sí, es posible reemplazar solo ciertos hipervínculos en un documento de Word con Aspose.Words para .NET. Puede filtrar los hipervínculos que se reemplazarán utilizando criterios específicos, como la URL del enlace, el texto del enlace o cualquier otra propiedad relevante. Luego puede aplicar el reemplazo solo a los hipervínculos coincidentes.
+
+#### P: ¿Cómo puedo ignorar los hipervínculos en encabezados, pies de página o notas al pie cuando los reemplazo con Aspose.Words para .NET?
+
+R: Para ignorar los hipervínculos en encabezados, pies de página o notas al pie de página al reemplazarlos con Aspose.Words para .NET, puede usar las opciones de búsqueda avanzada y especificar los límites de búsqueda apropiados. Por ejemplo, puede limitar la búsqueda a las secciones principales del documento y excluir encabezados, pies de página o notas al pie.
+
+#### P: ¿Es posible reemplazar hipervínculos con enlaces internos a otras partes del documento?
+
+ R: Sí, es posible reemplazar hipervínculos con enlaces internos a otras partes del documento con Aspose.Words para .NET. Puede usar anclas o identificadores de texto para crear enlaces internos y luego reemplazarlos usando el`Document.Range.Replace` método con las opciones apropiadas.
+
+#### P: ¿Reemplazar los hipervínculos con Aspose.Words para .NET conserva las propiedades de los vínculos, como colores o estilos?
+
+R: Sí, al reemplazar los hipervínculos con Aspose.Words para .NET, se conservan las propiedades de los enlaces, como colores o estilos. Puede especificar las mismas propiedades de formato en el texto de reemplazo para lograr un resultado consistente.

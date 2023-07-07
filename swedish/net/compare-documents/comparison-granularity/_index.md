@@ -42,7 +42,7 @@ builderB.Writeln("This is simple B words.");
 
 ## Steg 5: Konfigurera jämförelsealternativ
 
-det här steget kommer vi att konfigurera jämförelsealternativen för att specificera jämförelsegranulariteten. Här kommer vi att använda granularitet på teckennivå.
+I det här steget kommer vi att konfigurera jämförelsealternativen för att specificera jämförelsegranulariteten. Här kommer vi att använda granularitet på teckennivå.
 
 ```csharp
 CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.CharLevel };
@@ -56,7 +56,7 @@ Låt oss nu jämföra dokumenten med hjälp av metoden Compare för klassen Docu
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- De`Compare` metoden jämför dokument A med dokument B och sparar ändringarna i dokument A. Du kan ange författarens namn och datum för jämförelsen som referens.
+ De`Compare`metoden jämför dokument A med dokument B och sparar ändringarna i dokument A. Du kan ange författarens namn och datum för jämförelsen som referens.
 
 ## Slutsats
 

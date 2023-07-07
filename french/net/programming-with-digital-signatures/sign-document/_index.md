@@ -21,7 +21,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 
 Assurez-vous de spécifier le chemin correct vers votre certificat et le mot de passe associé.
 
-## Étape 2 : signature du document
+## Étape 2 : Signature du document
 
 Utilisez la classe DigitalSignatureUtil pour signer le document :
 

@@ -30,7 +30,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Crea un nuovo documento
 Document doc = new Document();
 
-// Crea un generatore di documenti
+//Crea un generatore di documenti
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ## Conclusione
 In questo tutorial, abbiamo visto come eseguire la formattazione dei caratteri in un documento Word utilizzando Aspose.Words per .NET. La formattazione dei caratteri consente di personalizzare l'aspetto del testo nei documenti. Sentiti libero di utilizzare questa funzione per creare documenti accattivanti e professionali.
+
+### FAQ
+
+#### D: È possibile modificare la dimensione del carattere di un testo specifico in un documento Word?
+
+R: Sì, con Aspose.Words puoi modificare facilmente la dimensione del carattere di un testo specifico in un documento Word. È possibile utilizzare l'API per selezionare il testo desiderato e applicare la dimensione del carattere appropriata.
+
+#### D: Posso applicare diversi stili di carattere a diversi paragrafi in un documento di Word?
+
+R: Assolutamente! Aspose.Words ti consente di applicare diversi stili di carattere a diversi paragrafi in un documento di Word. È possibile utilizzare i metodi forniti dall'API per formattare individualmente ogni paragrafo secondo necessità.
+
+#### D: Come posso evidenziare il testo in grassetto in un documento di Word?
+
+A: Con Aspose.Words, puoi facilmente evidenziare il testo in grassetto in un documento di Word. Basta applicare lo stile del carattere in grassetto al testo specifico utilizzando l'API.
+
+#### D: Aspose.Words supporta i caratteri personalizzati?
+
+R: Sì, Aspose.Words supporta caratteri personalizzati nei documenti di Word. Puoi utilizzare caratteri personalizzati nei tuoi documenti e formattarli in base alle tue preferenze.
+
+#### D: Come posso applicare un colore di carattere specifico al testo in un documento di Word?
+
+A: Con Aspose.Words, puoi facilmente applicare un colore di carattere specifico al testo in un documento di Word. Utilizzare l'API per selezionare il testo e applicare il colore del carattere desiderato specificando il codice colore appropriato.

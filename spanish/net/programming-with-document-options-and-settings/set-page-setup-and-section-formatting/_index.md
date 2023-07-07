@@ -60,4 +60,4 @@ Este código establecerá la orientación de la página en horizontal, el margen
 
 Asegúrese de especificar la ruta correcta al directorio donde desea guardar el documento en el`dataDir` variable.
 
-Ahora ha aprendido cómo configurar el diseño y el formato de sección de un documento utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede personalizar fácilmente el diseño y el formato de sus propios documentos.
+Ahora ha aprendido a configurar el diseño y el formato de sección de un documento utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso proporcionada en este tutorial, puede personalizar fácilmente el diseño y el formato de sus propios documentos.

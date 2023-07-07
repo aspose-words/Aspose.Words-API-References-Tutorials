@@ -50,7 +50,7 @@ Dans cet exemple, nous enregistrons le document modifié sous "WorkingWithRanges
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document Word
+// Charger le document Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // Supprimer le texte dans la première section du document

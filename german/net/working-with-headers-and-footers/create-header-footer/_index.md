@@ -111,7 +111,7 @@ builder.InsertBreak(BreakType.SectionBreakNewPage);
 currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-//Dieser Abschnitt benötigt keine andere Kopf-/Fußzeile für die erste Seite, wir benötigen nur eine Titelseite im Dokument.
+// Dieser Abschnitt benötigt keine andere Kopf-/Fußzeile für die erste Seite, wir benötigen nur eine Titelseite im Dokument.
 // und die Kopf-/Fußzeile für diese Seite wurde bereits im vorherigen Abschnitt definiert.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
@@ -119,7 +119,7 @@ pageSetup.DifferentFirstPageHeaderFooter = false;
 // Die Seitenbreite ist für den neuen Abschnitt unterschiedlich, daher müssen wir für eine Fußzeilentabelle andere Zellenbreiten festlegen.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-// Wenn wir für diesen Abschnitt die bereits vorhandenen Kopf-/Fußzeilen verwenden möchten,
+//Wenn wir für diesen Abschnitt die bereits vorhandenen Kopf-/Fußzeilen verwenden möchten,
 // aber mit ein paar kleinen Änderungen könnte es sinnvoll sein, die Kopf-/Fußzeilen zu kopieren
 // aus dem vorherigen Abschnitt und wenden Sie die erforderlichen Änderungen an der gewünschten Stelle an.
 CopyHeadersFootersFromPreviousSection(currentSection);
@@ -134,105 +134,127 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
- Wir fügen einen Seitenumbruch und einen Abschnittsumbruch hinzu, um eine neue Seite zu erstellen, auf der die primären Kopf-/Fußzeilen sichtbar sind. Wir legen die Parameter für den neuen Abschnitt fest und verwenden dann die`CopyHeadersFootersFromPreviousSection`Methode zum Kopieren der Kopf-/Fußzeilen aus dem vorherigen Abschnitt. Abschließend stellen wir die entsprechenden Zellenbreiten für die Hauptfußtabelle ein und speichern das Dokument.
+ Wir fügen einen Seitenumbruch und einen Abschnittsumbruch hinzu, um eine neue Seite zu erstellen, auf der die primären Kopf-/Fußzeilen sichtbar sind. Wir legen die Parameter für den neuen Abschnitt fest und verwenden dann die`CopyHeadersFootersFromPreviousSection` Methode zum Kopieren der Kopf-/Fußzeilen aus dem vorherigen Abschnitt. Abschließend stellen wir die entsprechenden Zellenbreiten für die Hauptfußtabelle ein und speichern das Dokument.
 
 ### Beispielquellcode zum Erstellen von Kopf- und Fußzeilen mit Aspose.Words für .NET
 
 ```csharp
-	// Der Pfad zum Dokumentenverzeichnis.
-	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Der Pfad zum Dokumentenverzeichnis.
+string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
-	Section currentSection = builder.CurrentSection;
-	PageSetup pageSetup = currentSection.PageSetup;
-	// Geben Sie an, ob sich die Kopf-/Fußzeilen der ersten Seite von denen anderer Seiten unterscheiden sollen.
-	// Sie können zur Angabe auch die Eigenschaft PageSetup.OddAndEvenPagesHeaderFooter verwenden
-	// unterschiedliche Kopf-/Fußzeilen für ungerade und gerade Seiten.
-	pageSetup.DifferentFirstPageHeaderFooter = true;
-	pageSetup.HeaderDistance = 20;
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
+Section currentSection = builder.CurrentSection;
+PageSetup pageSetup = currentSection.PageSetup;
+// Geben Sie an, ob sich die Kopf-/Fußzeilen der ersten Seite von denen anderer Seiten unterscheiden sollen.
+// Sie können zur Angabe auch die Eigenschaft PageSetup.OddAndEvenPagesHeaderFooter verwenden
+// unterschiedliche Kopf-/Fußzeilen für ungerade und gerade Seiten.
+pageSetup.DifferentFirstPageHeaderFooter = true;
+pageSetup.HeaderDistance = 20;
 
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.Font.Size = 14;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+builder.Font.Name = "Arial";
+builder.Font.Bold = true;
+builder.Font.Size = 14;
 
-	pageSetup.HeaderDistance = 20;
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 
-	// Fügen Sie ein positioniertes Bild in die obere/linke Ecke der Kopfzeile ein.
-	// Der Abstand vom oberen/linken Rand der Seite ist auf 10 Punkte eingestellt.
-	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+pageSetup.HeaderDistance = 20;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+// Fügen Sie ein positioniertes Bild in die obere/linke Ecke der Kopfzeile ein.
+// Der Abstand vom oberen/linken Rand der Seite ist auf 10 Punkte eingestellt.
+builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
+	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer.");
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
-	// Wir verwenden eine Tabelle mit zwei Zellen, um einen Teil des Textes in die Zeile einzufügen (mit Seitennummerierung).
-	// Linksbündig und der andere Teil des Textes (mit Copyright) rechtsbündig.
-	builder.StartTable();
+builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	builder.CellFormat.ClearFormatting();
+//Wir verwenden eine Tabelle mit zwei Zellen, um einen Teil des Textes in die Zeile einzufügen (mit Seitennummerierung).
+// Linksbündig und der andere Teil des Textes (mit Copyright) rechtsbündig.
+builder.StartTable();
 
-	builder.InsertCell();
+builder.CellFormat.ClearFormatting();
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+builder.InsertCell();
 
-	// Es verwendet die Felder PAGE und NUMPAGES, um die aktuelle Seitenzahl und viele Seiten automatisch zu berechnen.
-	builder.Write("Page ");
-	builder.InsertField("PAGE", "");
-	builder.Write(" of ");
-	builder.InsertField("NUMPAGES", "");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
+// Es verwendet die Felder PAGE und NUMPAGES, um die aktuelle Seitenzahl und viele Seiten automatisch zu berechnen.
+builder.Write("Page ");
+builder.InsertField("PAGE", "");
+builder.Write(" of ");
+builder.InsertField("NUMPAGES", "");
 
-	builder.InsertCell();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+builder.InsertCell();
 
-	builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
 
-	builder.EndRow();
-	builder.EndTable();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToDocumentEnd();
+builder.EndRow();
+builder.EndTable();
 
-	// Machen Sie einen Seitenumbruch, um eine zweite Seite zu erstellen, auf der die primären Kopf-/Fußzeilen angezeigt werden.
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.InsertBreak(BreakType.SectionBreakNewPage);
+builder.MoveToDocumentEnd();
 
-	currentSection = builder.CurrentSection;
-	pageSetup = currentSection.PageSetup;
-	pageSetup.Orientation = Orientation.Landscape;
-	//Dieser Abschnitt benötigt keine andere Kopf-/Fußzeile auf der ersten Seite. Wir benötigen nur eine Titelseite im Dokument.
-	// und die Kopf-/Fußzeile für diese Seite wurde bereits im vorherigen Abschnitt definiert.
-	pageSetup.DifferentFirstPageHeaderFooter = false;
+// Machen Sie einen Seitenumbruch, um eine zweite Seite zu erstellen, auf der die primären Kopf-/Fußzeilen angezeigt werden.
+builder.InsertBreak(BreakType.PageBreak);
+builder.InsertBreak(BreakType.SectionBreakNewPage);
 
-	// In diesem Abschnitt werden Kopf-/Fußzeilen aus dem vorherigen Abschnitt angezeigt
-	// Rufen Sie standardmäßig currentSection.HeadersFooters.LinkToPrevious(false) auf, um diese Seitenbreite abzubrechen
-	// ist für den neuen Abschnitt anders, und deshalb müssen wir für eine Fußzeilentabelle andere Zellenbreiten festlegen.
-	currentSection.HeadersFooters.LinkToPrevious(false);
+currentSection = builder.CurrentSection;
+pageSetup = currentSection.PageSetup;
+pageSetup.Orientation = Orientation.Landscape;
+// Dieser Abschnitt benötigt keine andere Kopf-/Fußzeile auf der ersten Seite. Wir benötigen nur eine Titelseite im Dokument.
+// und die Kopf-/Fußzeile für diese Seite wurde bereits im vorherigen Abschnitt definiert.
+pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// Wenn wir für diesen Abschnitt den bereits vorhandenen Kopf-/Fußzeilensatz verwenden möchten.
-	// Mit einigen geringfügigen Änderungen kann es jedoch sinnvoll sein, Kopf-/Fußzeilen zu kopieren
-	// aus dem vorherigen Abschnitt und wenden Sie die erforderlichen Änderungen an der gewünschten Stelle an.
-	CopyHeadersFootersFromPreviousSection(currentSection);
+// In diesem Abschnitt werden Kopf-/Fußzeilen aus dem vorherigen Abschnitt angezeigt
+// Rufen Sie standardmäßig currentSection.HeadersFooters.LinkToPrevious(false) auf, um diese Seitenbreite abzubrechen
+// ist für den neuen Abschnitt anders, und deshalb müssen wir für eine Fußzeilentabelle andere Zellenbreiten festlegen.
+currentSection.HeadersFooters.LinkToPrevious(false);
 
-	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
+// Wenn wir für diesen Abschnitt den bereits vorhandenen Kopf-/Fußzeilensatz verwenden möchten.
+// Mit einigen geringfügigen Änderungen kann es jedoch sinnvoll sein, Kopf-/Fußzeilen zu kopieren
+//aus dem vorherigen Abschnitt und wenden Sie die erforderlichen Änderungen an der gewünschten Stelle an.
+CopyHeadersFootersFromPreviousSection(currentSection);
 
-	Row row = primaryFooter.Tables[0].FirstRow;
-	row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-	row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
 
-	doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
+Row row = primaryFooter.Tables[0].FirstRow;
+row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+
+doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
+
+### FAQs
+
+#### F: Wie kann ich in Aspose.Words eine Kopfzeile zu meinem Dokument hinzufügen?
+
+ A: Um Ihrem Dokument in Aspose.Words eine Kopfzeile hinzuzufügen, können Sie die verwenden`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.HeaderPrimary)` Methode. Diese Methode fügt dem ersten Abschnitt Ihres Dokuments eine primäre Überschrift hinzu.
+
+#### F: Wie kann ich in Aspose.Words eine Fußzeile zu meinem Dokument hinzufügen?
+
+ A: Um Ihrem Dokument in Aspose.Words eine Fußzeile hinzuzufügen, können Sie die verwenden`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` Methode. Diese Methode fügt dem ersten Abschnitt Ihres Dokuments eine primäre Fußzeile hinzu.
+
+#### F: Wie kann ich meiner Kopf- oder Fußzeile in Aspose.Words Text hinzufügen?
+
+ A: Um Ihrer Kopf- oder Fußzeile in Aspose.Words Text hinzuzufügen, können Sie die verwenden`HeaderFooter.Paragraphs` -Eigenschaft, um die Absatzsammlung der Kopf- oder Fußzeile abzurufen, und fügen Sie dann mithilfe der einen Absatz mit Ihrem Text zu dieser Sammlung hinzu`ParagraphCollection.Add` Methode.
+
+#### F: Kann ich den Inhalt von Kopf- oder Fußzeilen mit Bildern und Seitenzahlen in Aspose.Words anpassen?
+
+A: Ja, Sie können den Inhalt von Kopf- und Fußzeilen mit Bildern und Seitenzahlen in Aspose.Words anpassen. Sie können Objekte wie verwenden`Shape` um Bilder und Objekte wie hinzuzufügen`Field` um Ihrer Kopf- oder Fußzeile Seitenzahlen hinzuzufügen.
+
+#### F: Kann ich die Schriftart, Größe und Farbe des Textes in meiner Kopf- oder Fußzeile in Aspose.Words ändern?
+
+ A: Ja, Sie können die Schriftart, Größe und Farbe des Textes in Ihrer Kopf- oder Fußzeile in Aspose.Words ändern. Sie können auf Textformatierungseigenschaften zugreifen, z`Font` um die Schriftart zu ändern,`Size` um die Größe anzupassen, und`Color` um die Textfarbe festzulegen.

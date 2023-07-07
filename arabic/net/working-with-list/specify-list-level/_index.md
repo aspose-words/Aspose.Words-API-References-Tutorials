@@ -32,7 +32,7 @@ builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
 ## الخطوة 3: مواصفات مستوى القائمة
 
- استخدم وثيقة منشئ`ListLevelNumber`لتحديد مستوى القائمة وإضافة نص إلى الفقرة:
+ استخدم وثيقة منشئ`ListLevelNumber` لتحديد مستوى القائمة وإضافة نص إلى الفقرة:
 
 ```csharp
 for (int i = 0; i < 9; i++)
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// قم بإنشاء قائمة ذات تعداد رقمي استنادًا إلى أحد قوالب قائمة Microsoft Word
+//قم بإنشاء قائمة ذات تعداد رقمي استنادًا إلى أحد قوالب قائمة Microsoft Word
 // وتطبيقه على الفقرة الحالية لمنشئ المستند.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-//قم بإنشاء قائمة ذات تعداد نقطي استنادًا إلى أحد قوالب قوائم Microsoft Word
+// قم بإنشاء قائمة ذات تعداد نقطي استنادًا إلى أحد قوالب قوائم Microsoft Word
 // وتطبيقه على الفقرة الحالية لمنشئ المستند.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -117,5 +117,18 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
             
 ```
 
+### التعليمات
+
+#### س: كيف يمكنني تحديد مستوى القائمة في Aspose.Words؟
+
+ ج: لتحديد مستوى القائمة في Aspose.Words ، تحتاج إلى إنشاء مثيل لـ`List` فئة وإعطائها قائمة مرقمة. ثم يمكنك استخدام ملف`Paragraph.ListFormat.ListLevelNumber` الخاصية لتحديد مستوى كل عنصر قائمة. يمكنك إقران هذه القائمة بجزء من المستند الخاص بك بحيث تحتوي عناصر القائمة على المستوى المطلوب.
+
+#### س: هل من الممكن تغيير تنسيق الترقيم لعناصر القائمة في Aspose.Words؟
+
+ ج: نعم ، يمكنك تغيير تنسيق الترقيم لعناصر القائمة في Aspose.Words. ال`ListLevel` تقدم فئة عدة خصائص لهذا ، مثل`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`، إلخ. يمكنك استخدام هذه الخصائص لتعيين تنسيق الترقيم لعناصر القائمة ، مثل الأرقام العربية ، والأرقام الرومانية ، والأحرف ، وما إلى ذلك.
+
+#### س: هل يمكنني إضافة مستويات إضافية إلى قائمة ذات تعداد رقمي في Aspose.Words؟
+
+ ج: نعم ، من الممكن إضافة مستويات إضافية إلى قائمة ذات تعداد رقمي في Aspose.Words. ال`ListLevel` تسمح لك class بتعيين خصائص التنسيق لكل مستوى من القائمة. يمكنك تعيين خيارات مثل البادئة ، واللاحقة ، والمحاذاة ، والمسافة البادئة ، وما إلى ذلك. وهذا يسمح لك بإنشاء قوائم بمستويات متعددة من التسلسل الهرمي.
 
 

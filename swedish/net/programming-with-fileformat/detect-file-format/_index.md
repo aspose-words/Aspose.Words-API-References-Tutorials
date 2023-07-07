@@ -1,6 +1,6 @@
 ---
-title: Upptäck filformat
-linktitle: Upptäck filformat
+title: Upptäck dokumentfilformat
+linktitle: Upptäck dokumentfilformat
 second_title: Aspose.Words för .NET API Referens
 description: Steg för steg guide för att upptäcka dokumentfilformat med Aspose.Words för .NET.
 type: docs
@@ -8,13 +8,13 @@ weight: 10
 url: /sv/net/programming-with-fileformat/detect-file-format/
 ---
 
-Den här artikeln ger en steg-för-steg-guide om hur du använder filformatsdetekteringsfunktionen med Aspose.Words för .NET. Vi kommer att förklara varje del av koden i detalj. I slutet av den här handledningen kommer du att kunna förstå hur du upptäcker formatet för olika dokumentfiler.
+Den här artikeln ger en steg-för-steg-guide om hur du använder funktionen för identifiering av dokumentfilformat med Aspose.Words för .NET. Vi kommer att förklara varje del av koden i detalj. I slutet av den här handledningen kommer du att kunna förstå hur du upptäcker formatet för olika dokumentfiler.
 
 Innan du börjar, se till att du har installerat och konfigurerat Aspose.Words for .NET-biblioteket i ditt projekt. Du hittar biblioteket och installationsinstruktioner på Asposes webbplats.
 
 ## Steg 1: Definiera kataloger
 
- För att börja måste du definiera katalogerna där du vill lagra filerna enligt deras format. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog. Vi skapar katalogerna "Supported", "Okänd", "Encrypted" och "Pre97" om de inte redan finns.
+ För att börja måste du definiera katalogerna där du vill lagra filerna enligt deras format. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till din dokumentkatalog. Vi skapar katalogerna "Supported", "Okänd", "Encrypted" och "Pre97" om de inte redan finns.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -206,3 +206,25 @@ Det är allt ! Du har framgångsrikt upptäckt formatet för olika dokumentfiler
 	
 
 ```
+
+### Vanliga frågor för identifiering av dokumentfilformat
+
+#### Hur upptäcker man formatet på en dokumentfil med Aspose.Words för .NET?
+
+ För att upptäcka formatet på en dokumentfil med Aspose.Words för .NET kan du följa stegen i handledningen. Använda`DetectFileFormat` metod för`FileFormatUtil` class låter dig upptäcka formatet på dokumentfilen. Detta gör att du kan avgöra om det är ett Microsoft Word 97-2003-dokument, en mall, ett Office Open XML WordprocessingML-dokument eller andra format som stöds. Koden som tillhandahålls i handledningen hjälper dig att implementera den här funktionen.
+
+#### Vilka dokumentformat stöder Aspose.Words för .NET?
+
+Aspose.Words för .NET stöder en mängd olika dokumentformat inklusive Microsoft Word 97-2003-dokument (DOC), Mallar (DOT), Office Open XML WordprocessingML-dokument (DOCX), Office Open XML WordprocessingML-dokument med makron (DOCM), Office Open XML WordprocessingML-mallar utan makron (DOTX), Office Open XML WordprocessingML-mallar med makron (DOTM), Flat OPC-dokument, RTF-dokument, Microsoft Word 2003 WordprocessingML-dokument, HTML-dokument, MHTML (webbarkiv)-dokument, OpenDocument Text (ODT)-dokument, OpenDocument Text-mallar (OTT), MS Word 6- eller Word 95-dokument och okända dokumentformat.
+
+#### Hur hanterar man krypterade dokumentfiler under formatdetektering?
+
+ När du upptäcker formatet för en dokumentfil kan du använda`IsEncrypted` egendom av`FileFormatInfo` objekt för att kontrollera om filen är krypterad. Om filen är krypterad kan du vidta ytterligare åtgärder för att hantera det här specifika fallet, som att kopiera filen till en katalog avsedd för krypterade dokument. Du kan använda`File.Copy` metod för att göra detta.
+
+#### Vilka åtgärder bör vidtas när formatet på ett dokument är okänt?
+
+När formatet på ett dokument är okänt kan du bestämma dig för att hantera det på ett sätt som är specifikt för din ansökan. I exemplet i handledningen kopieras dokumentet till en specifik katalog dedikerad till dokument av okänt format. Du kan anpassa denna åtgärd för att passa dina specifika behov.
+
+#### Finns det några andra funktioner i Aspose.Words för .NET som kan användas i samband med identifiering av dokumentformat?
+
+Ja, Aspose.Words för .NET erbjuder många andra funktioner för att bearbeta och manipulera Word-dokument. Du kan till exempel använda biblioteket för att extrahera text, bilder eller metadata från dokument, tillämpa formateringsändringar, slå samman dokument, konvertera dokument till olika format och mer.

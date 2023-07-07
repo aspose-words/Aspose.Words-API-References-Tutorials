@@ -40,7 +40,7 @@ Questo passaggio è importante perché garantisce che i risultati del campo veng
 
 ## Passaggio 4: visualizzazione dei risultati del campo
 
- Usiamo un`foreach` loop per scorrere tutti i campi nel documento e visualizzarne i risultati.
+ Usiamo un`foreach`loop per scorrere tutti i campi nel documento e visualizzarne i risultati.
 
 ```csharp
 foreach(Field field in document.Range.Fields)
@@ -69,3 +69,21 @@ foreach(Field field in document.Range.Fields)
 In questo esempio, abbiamo caricato un documento, aggiornato tutti i campi e quindi scorrendo i campi per visualizzare i risultati. Puoi personalizzare questo passaggio utilizzando la tua logica per elaborare i risultati del campo.
 
 Questo conclude la nostra guida all'utilizzo della funzione "Mostra risultati campo" con Aspose.Words per .NET.
+
+### FAQ
+
+#### D: Cos'è un campo di visualizzazione dei risultati in Aspose.Words?
+
+R: Un campo di visualizzazione dei risultati in Aspose.Words è un tipo di campo che visualizza il risultato di un'operazione o di un calcolo in un documento di Word. Ad esempio, un campo di visualizzazione dei risultati può essere utilizzato per visualizzare la somma di diversi valori o il risultato di una formula matematica.
+
+#### D: Come aggiornare un campo di visualizzazione dei risultati in un documento di Word con Aspose.Words?
+
+R: Per aggiornare un campo di visualizzazione dei risultati in un documento Word con Aspose.Words, puoi utilizzare il metodo UpdateFields. Questo metodo scorre il documento e aggiorna tutti i campi, inclusi i campi di visualizzazione dei risultati, ricalcolando i valori in base ai dati correnti.
+
+#### D: Posso formattare il risultato visualizzato da un campo di visualizzazione dei risultati?
+
+R: Sì, è possibile formattare il risultato visualizzato da un campo di visualizzazione dei risultati utilizzando la sintassi appropriata per specificare il formato. Ad esempio, puoi formattare i numeri con un numero specifico di posizioni decimali o utilizzare formati di data personalizzati.
+
+#### D: Come posso rimuovere un campo di visualizzazione dei risultati da un documento di Word con Aspose.Words?
+
+R: Per rimuovere un campo di visualizzazione dei risultati da un documento Word con Aspose.Words, puoi utilizzare il metodo Rimuovi. Questo metodo rimuove il campo e lo sostituisce con il relativo risultato statico.

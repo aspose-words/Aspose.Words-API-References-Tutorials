@@ -94,5 +94,24 @@ builder.Writeln("Setext Heading level 2");
 builder.Document.Save(dataDir + "Test.md");
 ```
 
+### Preguntas frecuentes
 
+#### P: ¿Qué es un encabezado Markdown de Setext?
 
+R: Un encabezado de Setext Markdown es una forma alternativa de crear encabezados en un documento de Markdown. Utiliza caracteres de subrayado (= o -) para indicar diferentes niveles de encabezados.
+
+#### P: ¿Cómo utilizar los encabezados de Setext Markdown?
+
+R: Para usar encabezados de Setext Markdown, coloque guiones bajos debajo del texto del título. Use signos de igual (=) para un encabezado de nivel 1 y guiones (-) para un encabezado de nivel 2.
+
+#### P: ¿Existe alguna limitación en el uso de encabezados de Setext Markdown?
+
+R: Los encabezados Markdown de Setext tienen limitaciones en términos de jerarquía de encabezados y no son tan distintos visualmente como los encabezados Markdown estándar.
+
+#### P: ¿Puedo personalizar la apariencia de los encabezados de Setext Markdown?
+
+R: En Markdown estándar, no es posible personalizar la apariencia de los encabezados de Setext Markdown. Tienen una apariencia predefinida basada en los caracteres de subrayado utilizados.
+
+#### P: ¿Los encabezados de Setext Markdown son compatibles con todos los editores de Markdown?
+
+R: La compatibilidad con los encabezados de Setext Markdown puede variar entre los editores de Markdown. Consulte la documentación específica de su editor para estar seguro.

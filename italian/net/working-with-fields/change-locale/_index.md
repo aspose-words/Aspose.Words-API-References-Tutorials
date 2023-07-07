@@ -89,3 +89,25 @@ doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 
 ## Conclusione
 Congratulazioni! Hai imparato con successo come modificare le impostazioni locali nei documenti di Word utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata e utilizzando il codice sorgente fornito, ora puoi controllare la formattazione di date e numeri durante le operazioni di stampa unione. Personalizza le impostazioni locali in base alle tue esigenze per garantire una formattazione accurata e coerente nei tuoi documenti.
+
+### FAQ
+
+#### D: Aspose.Words è compatibile con diverse versioni di Microsoft Word?
+
+R: Sì, Aspose.Words è compatibile con diverse versioni di Microsoft Word, tra cui Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 e Word 2019.
+
+#### D: Aspose.Words supporta strutture di campo complesse?
+
+R: Assolutamente! Aspose.Words offre un ampio supporto per strutture di campo complesse, inclusi campi nidificati, calcoli ed espressioni condizionali. Puoi utilizzare questa potente API per lavorare con qualsiasi tipo di struttura del campo.
+
+#### D: Aspose.Words supporta le operazioni di aggiornamento sul campo?
+
+R: Sì, Aspose.Words ti consente di aggiornare i campi in base a una pianificazione. Puoi facilmente aggiornare i valori dei campi, aggiornare i calcoli ed eseguire altre operazioni relative ai campi utilizzando l'API.
+
+#### D: È possibile convertire i campi in testo semplice utilizzando Aspose.Words?
+
+R: Certamente! Aspose.Words fornisce metodi per convertire i campi in testo normale. Ciò può essere utile quando è necessario estrarre il contenuto senza alcuna formattazione o funzionalità relativa al campo.
+
+#### D: È possibile generare documenti Word con campi dinamici utilizzando Aspose.Words?
+
+R: Assolutamente! Aspose.Words offre funzionalità robuste per la generazione di documenti Word con campi dinamici. È possibile creare modelli con campi predefiniti e popolarli dinamicamente con dati, fornendo una soluzione flessibile ed efficiente per la generazione di documenti.

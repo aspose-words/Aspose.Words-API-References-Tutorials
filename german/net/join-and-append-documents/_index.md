@@ -23,7 +23,7 @@ Diese Aspose.Words für .NET-Tutorials bieten Ihnen wertvolle Ressourcen, um die
 | [Dokument an Leerzeichen anhängen](./append-document-to-blank/) | Erfahren Sie, wie Sie in Aspose.Words für .NET ein Dokument an ein leeres Zieldokument anhängen. |
 | [Mit Importformatoptionen anhängen](./append-with-import-format-options/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument mit Importformatoptionen anhängen. |
 | [Andere Seiteneinrichtung](./different-page-setup/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument mit unterschiedlichen Seiteneinrichtungseinstellungen anhängen. |
-| [Treten Sie Continuous bei](./join-continuous/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET zwei Dokumente fortlaufend verbinden und dabei die Formatierung beibehalten. |
+| [Treten Sie Continuous bei](./join-continuous/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET zwei Dokumente kontinuierlich verbinden und dabei die Formatierung beibehalten. |
 | [Neuer Seite beitreten](./join-new-page/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET zwei Dokumente auf einer neuen Seite zusammenfügen und dabei die Formatierung beibehalten. |
 | [Behalten Sie die Quellformatierung bei](./keep-source-formatting/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Quelldokument an ein Zieldokument anhängen und dabei die ursprüngliche Formatierung beibehalten. |
 | [Halten Sie die Quelle zusammen](./keep-source-together/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Word-Dokumente zusammenfügen und anhängen und dabei den Quellinhalt mit dem Zieldokument zusammenhalten. |

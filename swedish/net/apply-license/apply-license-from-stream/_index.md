@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/apply-license/apply-license-from-stream/
 ---
 
-I denna steg-för-steg handledning kommer du att lära dig hur du ansöker om en licens från en stream med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med de nödvändiga kodavsnitten. I slutet av denna handledning kommer du att kunna ansöka om en licens för att låsa upp alla funktioner i Aspose.Words.
+denna steg-för-steg handledning kommer du att lära dig hur du ansöker om en licens från en stream med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med de nödvändiga kodavsnitten. I slutet av denna handledning kommer du att kunna ansöka om en licens för att låsa upp alla funktioner i Aspose.Words.
 
 ## Förutsättningar
 Innan vi börjar, se till att du har följande förutsättningar:
@@ -72,3 +72,21 @@ catch (Exception e)
 I den här handledningen har du lärt dig hur du ansöker om en licens från en stream med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden och använda den medföljande källkoden kan du enkelt ställa in licensen och låsa upp Aspose.Words fulla potential för dina dokumentbearbetningsuppgifter.
 
 Nu kan du med säkerhet ansöka om en licens från en ström och utnyttja de kraftfulla funktionerna i Aspose.Words för att skapa, ändra och konvertera Word-dokument programmatiskt.
+
+### FAQ's
+
+#### F: Var kan jag hitta licensdokumentationen för Aspose.Words för .NET?
+
+S: Du kan hitta licensdokumentationen för Aspose. Words for .NET på den officiella Aspose-dokumentationswebbplatsen. Dokumentationen innehåller detaljerade instruktioner och exempel för att ansöka om licenser, inklusive tillämpning av licenser från filer.
+
+#### F: Vilka filformat stöder Aspose.Words for .NET för licensfiler?
+
+S: Aspose.Words för .NET stöder licensfiler i XML-format. Se till att din licensfil är i rätt XML-format som känns igen av Aspose.Words för .NET.
+
+#### F: Kan jag ansöka om en licens programmatiskt i Aspose.Words för .NET?
+
+ S: Ja, du kan ansöka om en licens programmatiskt i Aspose.Words för .NET. Genom att använda`License` klass och dess`SetLicense` metod kan du ansöka om en licens direkt i din kod.
+
+#### F: Vad händer om jag inte använder en licens i Aspose.Words för .NET?
+
+S: Om du inte använder en licens i Aspose.Words för .NET, kommer biblioteket att fungera i utvärderingsläge. I utvärderingsläge kan vissa begränsningar och vattenstämplar läggas på de genererade dokumenten. För att ta bort dessa begränsningar rekommenderar vi att du använder en giltig licens.

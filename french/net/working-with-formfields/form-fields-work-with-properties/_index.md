@@ -64,3 +64,25 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
 N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.
+
+### FAQ
+
+#### Q : Comment puis-je modifier le nom d'un champ de formulaire dans Aspose.Words ?
+
+ R : Pour changer le nom d'un champ de formulaire dans Aspose.Words, vous pouvez utiliser le`FormField.Name` propriété et affectez-lui une nouvelle valeur.
+
+#### Q : Est-il possible de modifier la valeur par défaut d'un champ de formulaire ?
+
+ R : Oui, il est possible de modifier la valeur par défaut d'un champ de formulaire dans Aspose.Words. Utilisez le`FormField.Result` propriété pour spécifier la nouvelle valeur par défaut.
+
+#### Q : Comment puis-je modifier le format d'un champ de formulaire de date dans Aspose.Words ?
+
+ R : Pour modifier le format d'un champ de formulaire de date dans Aspose.Words, vous pouvez utiliser le`FormField.TextFormat` propriété et affectez-lui un nouveau format de date. Par exemple, vous pouvez utiliser "jj/MM/aaaa" pour afficher la date au format jour/mois/année.
+
+#### Q : Puis-je récupérer la liste des options à partir d'un champ de formulaire déroulant dans Aspose.Words ?
+
+ R : Oui, vous pouvez récupérer la liste des options pour un champ de formulaire déroulant dans Aspose.Words en utilisant le`FormField.DropDownItems` propriété. Vous pouvez accéder à cette propriété et obtenir la liste des options pour effectuer des opérations supplémentaires si nécessaire.
+
+#### Q : Comment puis-je supprimer toutes les propriétés d'un champ de formulaire dans Aspose.Words ?
+
+ R : Pour supprimer toutes les propriétés d'un champ de formulaire dans Aspose.Words, vous pouvez utiliser le`FormField.Clear` méthode pour effacer toutes les propriétés du champ de formulaire.

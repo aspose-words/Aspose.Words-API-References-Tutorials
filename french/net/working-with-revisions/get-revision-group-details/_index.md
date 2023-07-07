@@ -59,3 +59,47 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
+## Conclusion
+
+Dans ce didacticiel, nous avons appris à obtenir les détails d'un groupe de révisions dans un document Word à l'aide de Aspose.Words pour .NET. En utilisant une boucle et les propriétés appropriées, nous avons pu afficher des détails tels que le type de révision, l'auteur, la date et le texte révisé. Aspose.Words pour .NET offre de nombreuses fonctionnalités puissantes pour manipuler les documents Word, y compris la gestion des révisions. Vous pouvez maintenant utiliser ces connaissances pour obtenir les détails du groupe de révision dans vos propres documents Word à l'aide d'Aspose.Words pour .NET.
+
+### FAQ
+
+#### Q : Comment charger un document avec des révisions dans Aspose.Words pour .NET ?
+
+ R : Utilisez le`Document`classe de Aspose.Words pour .NET pour charger un document à partir d'un fichier contenant des révisions. Vous pouvez spécifier le chemin d'accès complet au document.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### Q : Comment puis-je obtenir les détails d'un groupe de révision dans Aspose.Words pour .NET ?
+
+ R : Parcourez les révisions du document à l'aide d'une boucle et accédez aux propriétés de chaque révision pour obtenir les détails souhaités. Vous pouvez utiliser le`RevisionType`, `Author`, `DateTime` et`ParentNode` properties pour obtenir respectivement le type de révision, l'auteur, la date et le texte révisé.
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+      Console.WriteLine("Type: " + revision.RevisionType
+
+);
+      Console.WriteLine("Author: " + revision.Author);
+      Console.WriteLine("Date: " + revision.DateTime);
+      Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
+}
+```
+
+#### Q : Comment vérifier si une révision appartient à un groupe dans Aspose.Words pour .NET ?
+
+ R : Utilisez le`Group` propriété de la`Revision` objet pour vérifier si une révision appartient à un groupe. Si la`Group` la propriété est`null`cela signifie que la révision n'appartient à aucun groupe.
+
+```csharp
+if (revision.Group != null)
+{
+      // La révision appartient à un groupe
+}
+else
+{
+      // La révision n'appartient à aucun groupe
+}
+```

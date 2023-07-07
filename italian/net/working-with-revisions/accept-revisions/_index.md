@@ -21,7 +21,7 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-// Aggiungi del testo al primo paragrafo, quindi aggiungi altri due paragrafi.
+//Aggiungi del testo al primo paragrafo, quindi aggiungi altri due paragrafi.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2.");
 body.AppendParagraph("Paragraph 3.");
@@ -34,7 +34,7 @@ Abilitiamo il monitoraggio delle revisioni e aggiungiamo una revisione al docume
 ```csharp
 doc.StartTrackRevisions("John Doe", DateTime.Now);
 
-//Questo paragrafo è una revisione e avrà il corrispondente flag "IsInsertRevision" impostato.
+// Questo paragrafo è una revisione e avrà il corrispondente flag "IsInsertRevision" impostato.
 para = body.AppendParagraph("Paragraph 4.");
 Assert.True(para.IsInsertRevision);
 ```
@@ -92,13 +92,13 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-// Aggiungi del testo al primo paragrafo, quindi aggiungi altri due paragrafi.
+//Aggiungi del testo al primo paragrafo, quindi aggiungi altri due paragrafi.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
 
 // Abbiamo tre paragrafi, nessuno dei quali registrato come alcun tipo di revisione
-//Se aggiungiamo/rimuoviamo qualsiasi contenuto nel documento durante il monitoraggio delle revisioni,
+// Se aggiungiamo/rimuoviamo qualsiasi contenuto nel documento durante il monitoraggio delle revisioni,
 // verranno visualizzati come tali nel documento e potranno essere accettati/rifiutati.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
 
@@ -123,9 +123,66 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // L'interruzione del monitoraggio delle revisioni fa apparire questo testo come testo normale.
-// Le revisioni non vengono conteggiate quando il documento viene modificato.
+//Le revisioni non vengono conteggiate quando il documento viene modificato.
 doc.StopTrackRevisions();
 
 // Salva il documento.
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
+```
+## Conclusione
+
+In questo tutorial, abbiamo imparato come accettare le revisioni in un documento di Word utilizzando la funzione Accetta revisioni di Aspose.Words per .NET. Abbiamo seguito i passaggi per aggiungere e modificare il contenuto del documento, tenere traccia delle revisioni, eliminare un paragrafo rivisto, accettare tutte le modifiche e interrompere il monitoraggio delle revisioni. Ora puoi applicare questa conoscenza per gestire efficacemente le revisioni nei tuoi documenti Word utilizzando Aspose.Words per .NET.
+
+### Domande frequenti
+
+#### D: Come abilito il monitoraggio delle revisioni in Aspose.Words per .NET?
+
+#### Soluzione 1:
+
+ R: Per abilitare il monitoraggio delle revisioni in Aspose.Words per .NET, utilizzare il`StartTrackRevisions` metodo del`Document` oggetto e specificare il nome dell'autore e la data di inizio per il monitoraggio delle revisioni.
+
+```csharp
+doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
+
+#### Soluzione 2:
+
+ R: Puoi anche abilitare il monitoraggio delle revisioni utilizzando il file`Document` costruttore che accetta`trackRevisions` E`author` parametri.
+
+```csharp
+Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
+```
+
+#### D: Come accettare tutte le modifiche in un documento con Aspose.Words per .NET?
+
+ R: Usa il`AcceptAllRevisions` metodo del`Document` opporsi ad accettare tutte le modifiche apportate al documento.
+
+```csharp
+doc.AcceptAllRevisions();
+```
+
+#### D: Come posso salvare un documento modificato con revisioni accettate?
+
+ Usa il`Save` metodo del`Document` rifiutare di salvare il documento modificato con le revisioni accettate. Assicurati di fornire il percorso file corretto.
+
+```csharp
+doc.Save("path/to/the/document.docx");
+```
+
+#### D: Come posso interrompere il monitoraggio delle revisioni in Aspose.Words per .NET?
+
+ R: Usa il`StopTrackRevisions` metodo del`Document` opporsi per interrompere il tracciamento delle revisioni.
+
+```csharp
+doc.StopTrackRevisions();
+```
+
+#### D: Come posso eliminare un paragrafo rivisto in un documento con Aspose.Words per .NET?
+
+ R: Per rimuovere un paragrafo rivisto in un documento, puoi utilizzare il file`Remove` metodo di raccolta dei paragrafi.
+
+```csharp
+ParagraphCollection paragraphs = body.Paragraphs;
+Paragraph para = paragraphs[2];
+para.Remove();
 ```

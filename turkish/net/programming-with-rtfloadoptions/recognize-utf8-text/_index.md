@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
- Bu adımda, RTF belgesini yükleme seçeneklerini yapılandırıyoruz. yeni bir tane yaratıyoruz`RtfLoadOptions` nesne ve ayarlayın`RecognizeUtf8Text` mülkiyet`true`Bu, Aspose.Words'ün belgeyi yüklerken UTF-8 kodlu metni doğru şekilde tanımasını ve işlemesini sağlar.
+ Bu adımda, RTF belgesini yükleme seçeneklerini yapılandırıyoruz. yeni bir tane yaratıyoruz`RtfLoadOptions` nesne ve ayarlayın`RecognizeUtf8Text` mülkiyet`true`. Bu, Aspose.Words'ün belgeyi yüklerken UTF-8 kodlu metni doğru şekilde tanımasını ve işlemesini sağlar.
 
 ## 3. Adım: Belgeyi yükleme
 

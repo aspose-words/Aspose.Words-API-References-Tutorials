@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-list/restart-list-at-each-section/
 ---
 
-denna steg för steg handledning kommer vi att visa dig hur du återställer en numrerad lista till varje avsnitt i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
+I denna steg för steg handledning kommer vi att visa dig hur du återställer en numrerad lista till varje avsnitt i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
 För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
@@ -43,7 +43,7 @@ for (int i = 1; i < 45; i++)
 }
 ```
 
-I det här exemplet infogar vi en avsnittsbrytning efter den 15:e listposten för att illustrera omnumrering.
+det här exemplet infogar vi en avsnittsbrytning efter den 15:e listposten för att illustrera omnumrering.
 
 ## Steg 3: Spara det ändrade dokumentet
 
@@ -86,3 +86,17 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
 Använd gärna den här koden i dina egna projekt och modifiera den för att passa dina specifika behov.
+
+### FAQ's
+
+#### F: Hur kan jag starta om en lista vid varje avsnitt i Aspose.Words?
+
+ S: För att starta om en lista vid varje avsnitt i Aspose.Words, måste du skapa en instans av`List` klass och tilldela en numrerad lista till den. Då kan du använda`List.IsRestartAtEachSection` egenskap för att ange att numrering ska startas om vid varje avsnitt. Du kan associera den här listan med ett eller flera avsnitt av ditt dokument så att numreringen startas om korrekt vid varje avsnitt.
+
+#### F: Kan jag anpassa numreringsformatet för listor i Aspose.Words?
+
+ S: Ja, du kan anpassa numreringsformatet för listor i Aspose.Words. De`List` klass erbjuder flera fastigheter för detta, som t.ex`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`etc. Du kan använda dessa egenskaper för att ställa in listtyp (numrerad, punktlista, etc.), numreringsformat (arabiska siffror, romerska siffror, bokstäver, etc.) och andra numreringsformateringsalternativ.
+
+#### F: Är det möjligt att lägga till ytterligare nivåer till en numrerad lista i Aspose.Words?
+
+ S: Ja, det är möjligt att lägga till ytterligare nivåer till en numrerad lista i Aspose.Words. De`ListLevel` class låter dig ställa in formateringsegenskaper för varje nivå i listan. Du kan ställa in alternativ som prefix, suffix, justering, indrag, etc. Detta låter dig skapa listor med flera nivåer av hierarki.

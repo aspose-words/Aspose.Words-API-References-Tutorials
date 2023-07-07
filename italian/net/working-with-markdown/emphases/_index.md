@@ -104,3 +104,25 @@ builder.Write("text.");
 
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
+
+### FAQ
+
+#### D: Come faccio a evidenziare il testo usando Markdown?
+
+R: Per evidenziare il testo utilizzando Markdown, racchiudi semplicemente il testo con i simboli appropriati. Utilizzo`*` O`_` per il corsivo,`**` O`__` per grassetto, e`~~` per barrato.
+
+#### D: Possiamo combinare punti salienti diversi nello stesso testo?
+
+ R: Sì, è possibile combinare diverse evidenziazioni nello stesso testo. Ad esempio, puoi mettere in grassetto e in corsivo una parola utilizzando entrambi`**` E`*` intorno alla parola.
+
+#### D: Quali opzioni di evidenziazione sono disponibili in Markdown?
+
+R: Le opzioni di evidenziazione disponibili in Markdown sono in corsivo (`*` O`_`), grassetto (`**` O`__`) e barrato (`~~`).
+
+#### D: Come gestisco i casi in cui il testo contiene caratteri speciali utilizzati da Markdown per l'evidenziazione?
+
+ R: Se il testo contiene caratteri speciali utilizzati da Markdown per l'evidenziazione, puoi eseguirne l'escape facendoli precedere da a`\` . Per esempio,`\*` visualizzerà un asterisco letterale.
+
+#### D: Possiamo personalizzare l'aspetto dell'evidenziazione usando i CSS?
+
+R: L'evidenziazione in Markdown viene solitamente resa utilizzando gli stili predefiniti del browser. Se converti il tuo Markdown in HTML, puoi personalizzare l'aspetto dell'evidenziazione utilizzando le regole CSS.

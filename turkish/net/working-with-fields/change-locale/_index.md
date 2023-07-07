@@ -89,3 +89,25 @@ doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 
 ## Çözüm
 Tebrikler! Aspose.Words for .NET kullanarak Word belgelerinde yerel ayarı nasıl değiştireceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, adres mektup birleştirme işlemleri sırasında tarihlerin ve sayıların biçimlendirmesini artık kontrol edebilirsiniz. Belgelerinizde doğru ve tutarlı biçimlendirme sağlamak için yerel ayarı gereksinimlerinize göre özelleştirin.
+
+### SSS
+
+#### S: Aspose.Words, Microsoft Word'ün farklı sürümleriyle uyumlu mu?
+
+C: Evet, Aspose.Words, Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 ve Word 2019 dahil olmak üzere Microsoft Word'ün farklı sürümleriyle uyumludur.
+
+#### S: Aspose.Words karmaşık alan yapılarını destekliyor mu?
+
+C: Kesinlikle! Aspose.Words, iç içe alanlar, hesaplamalar ve koşullu ifadeler dahil olmak üzere karmaşık alan yapıları için kapsamlı destek sunar. Bu güçlü API'yi her türlü alan yapısıyla çalışmak için kullanabilirsiniz.
+
+#### S: Aspose.Words alan güncelleme işlemlerini destekliyor mu?
+
+C: Evet, Aspose.Words alanları bir programa göre güncellemenizi sağlar. API'yi kullanarak alan değerlerini kolayca güncelleyebilir, hesaplamaları yenileyebilir ve alanla ilgili diğer işlemleri gerçekleştirebilirsiniz.
+
+#### S: Aspose.Words kullanarak alanları düz metne dönüştürmek mümkün mü?
+
+C: Kesinlikle! Aspose.Words, alanları düz metne dönüştürmek için yöntemler sağlar. Bu, herhangi bir biçimlendirme veya alanla ilgili işlevsellik olmadan içeriği çıkarmanız gerektiğinde yararlı olabilir.
+
+#### S: Aspose.Words kullanarak dinamik alanlarla Word belgeleri oluşturmak mümkün mü?
+
+C: Kesinlikle! Aspose.Words, dinamik alanlarla Word belgeleri oluşturmak için sağlam işlevsellik sunar. Belge üretimi için esnek ve verimli bir çözüm sağlayarak, önceden tanımlanmış alanlarla şablonlar oluşturabilir ve bunları dinamik olarak verilerle doldurabilirsiniz.

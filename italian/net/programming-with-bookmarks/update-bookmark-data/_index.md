@@ -86,4 +86,4 @@ Questo codice salverà il documento modificato con il nome "UpdatedDocument.docx
 
 ## Conclusione
 
-Congratulazioni! Hai imparato con successo come aggiornare i dati dei segnalibri utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata fornita in questo tutorial, ora dovresti essere in grado di incorporare questa funzionalità nelle tue applicazioni C# e manipolare i segnalibri all'interno dei documenti di Word a livello di programmazione.
+Congratulazioni! Hai imparato con successo come aggiornare i dati dei segnalibri utilizzando Aspose.Words per .NET. Seguendo la guida dettagliata fornita in questo tutorial, ora dovresti essere in grado di incorporare questa funzionalità nelle tue applicazioni C# e manipolare i segnalibri all'interno dei documenti di Word a livello di codice.

@@ -14,7 +14,7 @@ url: /zh/net/join-and-append-documents/update-page-layout/
 
 在开始之前，请确保您具备以下条件：
 
-1. 安装了 Aspose.Words for .NET。您可以从 Aspose 网站下载它或通过 NuGet 安装它。
+1. Aspose.Words for .NET 已安装。您可以从 Aspose 网站下载它或通过 NuGet 安装它。
 2. Visual Studio 或任何其他 C# 开发环境。
 
 ## 第 1 步：初始化文档目录
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 第 2 步：加载源文档和目标文档
 
-接下来，您需要使用 Aspose.Words 加载源文档和目标文档`Document`班级。更新文件名在`Document`根据您的文档名称构造函数。
+接下来，您需要使用 Aspose.Words 加载源文档和目标文档`Document`班级。更新文件名`Document`根据您的文档名称构造函数。
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -36,29 +36,29 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 步骤 3：更新目标文档的页面布局
 
-为确保在附加源文档之前正确更新页面布局，您可以调用`UpdatePageLayout`目标文档上的方法。
+为了确保在附加源文档之前正确更新页面布局，您可以调用`UpdatePageLayout`目标文档上的方法。
 
 ```csharp
 dstDoc.UpdatePageLayout();
 ```
 
-## 第 4 步：将源文档附加到目标文档
+## 步骤 4：将源文档附加到目标文档
 
-现在，您可以使用`AppendDocument`的方法`Document`班级。这`ImportFormatMode.KeepSourceFormatting`参数确保在追加操作期间保留源格式。
+现在，您可以使用以下命令将源文档附加到目标文档`AppendDocument`的方法`Document`班级。这`ImportFormatMode.KeepSourceFormatting`参数确保在追加操作期间保留源格式。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## 第 5 步：再次更新页面布局
+## 第5步：再次更新页面布局
 
-附加源文档后，您需要调用`UpdatePageLayout`再次对目标文档执行方法，以确保在附加操作之后所做的任何更改都反映在呈现的输出中。
+附加源文档后，您需要调用`UpdatePageLayout`再次在目标文档上调用方法，以确保追加操作后所做的任何更改都反映在渲染的输出中。
 
 ```csharp
 dstDoc.UpdatePageLayout();
 ```
 
-## 第 6 步：保存最终文件
+## 第 6 步：保存最终文档
 
 最后，使用启用的更新页面布局功能保存合并的文档`Save`的方法`Document`班级。
 
@@ -81,10 +81,10 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 	//那么之后所做的任何更改都不会反映在渲染输出中
 	dstDoc.UpdatePageLayout();
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	//对于要更新到渲染输出的更改，必须再次调用 UpdatePageLayout。
-	//如果不再次调用，附加文档将不会出现在下一次渲染的输出中。
+	//为了将更改更新到呈现的输出，必须再次调用 UpdatePageLayout。
+	//如果不再调用，附加文档将不会出现在下一次渲染的输出中。
 	dstDoc.UpdatePageLayout();
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 ```
 
-就是这样！您已经使用 Aspose.Words for .NET 成功实现了更新页面布局功能。最终文档将包含页面布局已正确更新的合并内容。
+就是这样！您已使用 Aspose.Words for .NET 成功实现了更新页面布局功能。最终文档将包含合并的内容以及正确更新的页面布局。

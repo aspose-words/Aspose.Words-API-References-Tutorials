@@ -48,7 +48,7 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 // Utilizzare un generatore di documenti per aggiungere contenuto al documento.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Manca il numero di apici inversi, per impostazione predefinita verrà utilizzato un apice inverso.
+// Manca il numero di apici inversi, per impostazione predefinita verrà utilizzato un apice inverso.
 Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 builder.Font.Style = inlineCode1BackTicks;
 builder.Writeln("Text with InlineCode style with 1 backtick");
@@ -61,3 +61,17 @@ builder.Writeln("Text with InlineCode style with 3 backtick");
 
 Congratulazioni! Ora hai imparato come utilizzare la funzionalità del codice inline con Aspose.Words per .NET.
 
+
+### FAQ
+
+#### D: Come posso utilizzare il codice inline in Aspose.Words?
+
+ A: Per utilizzare il codice in linea in Aspose.Words, è possibile utilizzare tag appropriati per racchiudere il testo da formattare come codice in linea. Ad esempio, puoi utilizzare il`<code>` O`<kbd>` tag per racchiudere il testo da formattare come codice inline.
+
+#### D: È possibile specificare il carattere o il colore del codice in linea in Aspose.Words?
+
+ A: Sì, puoi specificare il carattere o il colore del codice inline in Aspose.Words. Puoi usare il`Font.Name` E`Font.Color` proprietà del`Run` oggetto per impostare il carattere e il colore del codice inline. Ad esempio, puoi usare`run.Font.Name = "Courier New"` per specificare il carattere per il codice inline e`run.Font.Color = Color.Blue`per specificare il colore.
+
+#### D: Posso utilizzare il codice in linea in un paragrafo contenente altri elementi di testo?
+
+ R: Sì, puoi utilizzare il codice in linea in un paragrafo contenente altri elementi di testo. Puoi creare più file`Run` oggetti per rappresentare diverse parti del paragrafo, quindi utilizzare i tag di codice in linea per formattare solo le parti specifiche come codice in linea. Quindi puoi aggiungerli al paragrafo usando il`Paragraph.AppendChild(run)` metodo.

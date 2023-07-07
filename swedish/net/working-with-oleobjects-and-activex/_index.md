@@ -15,8 +15,8 @@ Dessa handledningar ger dig en praktisk, steg-för-steg-strategi för att arbeta
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Infoga Ole Object](./insert-ole-object/) | Lär dig hur du infogar ett OLE-objekt i ett dokument med Aspose.Words för .NET. |
-| [Infoga Ole-objekt med Ole-paket](./insert-ole-object-with-ole-package/) | Lär dig hur du infogar ett OLE-objekt med ett OLE-paket i ett dokument med Aspose.Words för .NET. |
-| [Infoga Ole-objekt som ikon](./insert-ole-object-as-icon/) | Lär dig hur du infogar ett OLE-objekt som en ikon med Aspose.Words för .NET. |
+| [Infoga Ole-objekt i Word-dokument](./insert-ole-object/) | Lär dig hur du infogar ett OLE-objekt i Word-dokument med Aspose.Words för .NET. |
+| [Infoga Ole-objekt i Word med Ole-paketet](./insert-ole-object-with-ole-package/) | Lär dig hur du infogar ett OLE-objekt i word med ett OLE-paket i ett dokument med Aspose.Words för .NET. |
+| [Infoga Ole-objekt i Word-dokument som ikon](./insert-ole-object-as-icon/) | Lär dig hur du infogar ett OLE-objekt i Word-dokument som ikon med Aspose.Words för .NET. |
 | [Infoga Ole-objekt som ikon med hjälp av Stream](./insert-ole-object-as-icon-using-stream/) | Lär dig hur du infogar ett OLE-objekt som en ikon med hjälp av en ström med Aspose.Words för .NET. |
-| [Läs Active XControl-egenskaper](./read-active-xcontrol-properties/) | Läs egenskaperna för ActiveX-kontroller i ett Word-dokument med Aspose.Words för .NET. |
+| [Läs Active XControl-egenskaper från Word-fil](./read-active-xcontrol-properties/) | Läs egenskaperna för ActiveX-kontroller i en Word-fil med Aspose.Words för .NET. |

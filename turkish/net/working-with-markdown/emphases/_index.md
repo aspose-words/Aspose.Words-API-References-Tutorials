@@ -104,3 +104,25 @@ builder.Write("text.");
 
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
+
+### SSS
+
+#### S: Markdown kullanarak metni nasıl vurgularım?
+
+C: Markdown'ı kullanarak metni vurgulamak için, metni uygun simgelerle çevreleyin. Kullanmak`*` veya`_` italikler için,`**` veya`__` kalın için ve`~~` üstü çizili için.
+
+#### S: Farklı vurguları aynı metinde birleştirebilir miyiz?
+
+ C: Evet, farklı vurguları aynı metinde birleştirmek mümkündür. Örneğin, her ikisini de kullanarak bir kelimeyi kalın ve italik yapabilirsiniz.`**` Ve`*` kelimenin etrafında.
+
+#### S: Markdown'da hangi vurgulama seçenekleri mevcuttur?
+
+C: Markdown'da bulunan vurgulama seçenekleri italiktir (`*` veya`_`), gözü pek (`**` veya`__`) ve üstü çizili (`~~`).
+
+#### S: Metnin Markdown tarafından vurgulamak için kullanılan özel karakterler içerdiği durumları nasıl ele alabilirim?
+
+ A: Metniniz, Markdown tarafından vurgulamak için kullanılan özel karakterler içeriyorsa, önlerine bir`\` . Örneğin,`\*` değişmez bir yıldız işareti gösterecektir.
+
+#### S: Vurgulamanın görünümünü CSS kullanarak özelleştirebilir miyiz?
+
+C: Markdown'da vurgulama genellikle tarayıcının varsayılan stilleri kullanılarak oluşturulur. Markdown'ınızı HTML'ye dönüştürürseniz, CSS kurallarını kullanarak vurgulamanın görünümünü özelleştirebilirsiniz.

@@ -68,3 +68,25 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
 Feel free to use this code in your own projects and modify it according to your specific requirements.
+
+### FAQ's
+
+#### Q: How can I access the form fields collection in Aspose.Words?
+
+A: To access the collection of form fields in Aspose.Words, you can use the `Document.FormFields` property. This property returns the complete collection of form fields present in the document.
+
+#### Q: How can I iterate through form fields and perform operations on each of them?
+
+A: You can iterate through form fields using a `foreach` loop on the `Document.FormFields` collection. At each iteration, you can access properties and perform specific operations on the form field.
+
+#### Q: Can I filter the form fields collection to only get certain types of fields?
+
+A: Yes, you can filter the form fields collection using appropriate conditions in your iteration loop. For example, you can check the field type of each item and only operate on fields that match your criteria.
+
+#### Q: How can I remove a specific form field from the collection?
+
+A: To remove a specific form field from the collection, you can use the `FormField.Remove` method specifying the field you want to remove. This method will remove the form field from the collection.
+
+#### Q: Is it possible to modify the properties of a form field in Aspose.Words?
+
+A: Yes, you can change the properties of a form field in Aspose.Words by accessing its individual properties. For example, you can change the name, value, or options of a form field using the appropriate properties.

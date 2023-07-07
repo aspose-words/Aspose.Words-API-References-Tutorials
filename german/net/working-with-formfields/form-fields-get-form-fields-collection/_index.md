@@ -68,3 +68,25 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
 Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprechend Ihren spezifischen Anforderungen modifizieren.
+
+### FAQs
+
+#### F: Wie kann ich auf die Formularfeldsammlung in Aspose.Words zugreifen?
+
+ A: Um auf die Sammlung von Formularfeldern in Aspose.Words zuzugreifen, können Sie die verwenden`Document.FormFields` Eigentum. Diese Eigenschaft gibt die vollständige Sammlung der im Dokument vorhandenen Formularfelder zurück.
+
+#### F: Wie kann ich Formularfelder durchlaufen und für jedes einzelne Operationen ausführen?
+
+ A: Sie können mit a durch Formularfelder iterieren`foreach` Schleife auf der`Document.FormFields` Sammlung. Bei jeder Iteration können Sie auf Eigenschaften zugreifen und bestimmte Vorgänge für das Formularfeld ausführen.
+
+#### F: Kann ich die Formularfeldsammlung filtern, um nur bestimmte Feldtypen abzurufen?
+
+A: Ja, Sie können die Formularfeldsammlung mithilfe geeigneter Bedingungen in Ihrer Iterationsschleife filtern. Sie können beispielsweise den Feldtyp jedes Elements überprüfen und nur Felder bearbeiten, die Ihren Kriterien entsprechen.
+
+#### F: Wie kann ich ein bestimmtes Formularfeld aus der Sammlung entfernen?
+
+ A: Um ein bestimmtes Formularfeld aus der Sammlung zu entfernen, können Sie das verwenden`FormField.Remove` Methode, die das Feld angibt, das Sie entfernen möchten. Diese Methode entfernt das Formularfeld aus der Sammlung.
+
+#### F: Ist es möglich, die Eigenschaften eines Formularfelds in Aspose.Words zu ändern?
+
+A: Ja, Sie können die Eigenschaften eines Formularfelds in Aspose.Words ändern, indem Sie auf seine einzelnen Eigenschaften zugreifen. Sie können beispielsweise den Namen, den Wert oder die Optionen eines Formularfelds mithilfe der entsprechenden Eigenschaften ändern.

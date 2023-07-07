@@ -65,3 +65,25 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ## Conclusion
 Dans ce didacticiel, nous avons vu comment activer ou désactiver la substitution de polices dans un document Word lors de son rendu avec Aspose.Words pour .NET. En contrôlant la substitution des polices, vous pouvez influencer la manière dont les polices manquantes sont gérées dans vos documents rendus. N'hésitez pas à utiliser cette fonctionnalité pour personnaliser la gestion des polices dans vos documents Word.
+
+### FAQ
+
+#### Q : Comment puis-je activer la substitution de polices dans un document Word avec Aspose.Words ?
+
+R : Pour activer la substitution de polices dans un document Word avec Aspose.Words, vous pouvez utiliser l'API pour spécifier les polices de substitution à utiliser lorsque les polices requises ne sont pas disponibles. Cela garantira une visualisation cohérente du texte, même sans les polices d'origine.
+
+#### Q : Est-il possible de désactiver la substitution de polices dans un document Word avec Aspose.Words ?
+
+R : Oui, avec Aspose.Words, vous pouvez désactiver la substitution de polices dans un document Word. En utilisant l'API, vous pouvez empêcher Word de remplacer les polices requises par d'autres polices, ce qui conserve l'apparence d'origine du texte.
+
+#### Q : Que se passe-t-il lorsque les polices requises sont manquantes lors de la substitution dans un document Word ?
+
+R : Lorsque les polices requises sont manquantes lors de la substitution dans un document Word, Aspose.Words peut détecter ce problème et vous proposer des options pour le résoudre. Vous pouvez choisir de remplacer les polices manquantes par d'autres polices ou d'inclure les polices manquantes dans le document, garantissant un affichage correct.
+
+#### Q : Comment puis-je gérer les polices manquantes lors de la substitution dans un document Word avec Aspose.Words ?
+
+R : Pour gérer les polices manquantes lors de la substitution dans un document Word avec Aspose.Words, vous pouvez utiliser l'API pour détecter les polices manquantes et fournir des options de résolution. Vous pouvez choisir de remplacer les polices manquantes par des polices alternatives ou d'inclure des polices manquantes dans le document, selon vos besoins.
+
+#### Q : Est-il important de contrôler la substitution des polices dans un document Word ?
+
+R : Oui, il est important de contrôler la substitution des polices dans un document Word pour maintenir l'intégrité visuelle du texte. En utilisant Aspose.Words pour activer ou désactiver la substitution de polices, vous pouvez vous assurer que les polices requises sont utilisées et éviter les problèmes de polices manquantes ou remplacées.

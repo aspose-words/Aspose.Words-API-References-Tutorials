@@ -58,3 +58,21 @@ builder.Writeln("1. Nested blockquote");
 
 ¡Felicidades! Ahora ha aprendido a usar la función de citas con Aspose.Words para .NET.
 
+
+### Preguntas frecuentes
+
+#### P: ¿Qué es una cita en Markdown?
+
+R: Una cita en Markdown es una forma de resaltar pasajes de texto de otras fuentes o hacer referencia a citas famosas.
+
+#### P: ¿Cómo usar comillas en Markdown?
+
+R: Para usar una cita en Markdown, encierre el texto de la cita entre paréntesis angulares (`>`). Cada línea de la cita debe comenzar con un cheurón.
+
+#### P: ¿Las cotizaciones de Markdown admiten atributos?
+
+R: Las citas de Markdown no admiten atributos específicos. Simplemente se destacan por el formato del texto citado.
+
+#### P: ¿Se pueden incrustar citas en Markdown?
+
+R: Sí, es posible anidar comillas en Markdown agregando un nivel adicional de paréntesis angulares (`>`).

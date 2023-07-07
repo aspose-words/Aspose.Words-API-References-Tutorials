@@ -78,7 +78,7 @@ Assert. False(shapes[1].IsMoveToRevision);
 ```csharp
 Document doc = new Document();
 
-// قم بإدراج شكل مضمن بدون تعقب المراجعات.
+//قم بإدراج شكل مضمن بدون تعقب المراجعات.
 Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
@@ -109,7 +109,7 @@ Assert.True(shapes[0].IsDeleteRevision);
 Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
 Assert.True(shapes[1].IsInsertRevision);
 
-//يحتوي المستند على شكل واحد تم نقله ، لكن مراجعات نقل الشكل سيكون لها مثيلين لهذا الشكل.
+// يحتوي المستند على شكل واحد تم نقله ، لكن مراجعات نقل الشكل سيكون لها مثيلين لهذا الشكل.
 // سيكون أحدهما الشكل في وجهة وصوله والآخر سيكون الشكل في موقعه الأصلي.
 doc = new Document(MyDir + "Revision shape.docx");
 
@@ -125,3 +125,63 @@ Assert.True(shapes[1].IsMoveFromRevision);
 Assert.False(shapes[1].IsMoveToRevision);
 ```
 
+## خاتمة
+
+في هذا البرنامج التعليمي ، تعلمنا كيفية إجراء مراجعات على الأشكال في مستند Word باستخدام Aspose.Words for .NET. باتباع خطوات إنشاء المستند ، وتمكين تتبع المراجعة ، والتحقق من المراجعات المرتبطة بكل شكل ، والتحقق من المراجعات لنقل الأشكال ، تمكنا من إدارة المراجعات بنجاح. يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية للعمل مع المراجعات والنماذج في مستندات Word.
+
+### التعليمات
+
+#### س: كيف يمكنني إنشاء مستند جديد وإضافة أشكال في Aspose.Words for .NET؟
+
+ج: لإنشاء مستند جديد وإضافة أشكال في Aspose.Words for .NET ، يمكنك استخدام الكود التالي. نضيف هنا شكلين ، مكعب وشمس ، إلى القسم الأول من المستند:
+
+```csharp
+Document doc = new Document();
+Assert.False(doc.TrackRevisions);
+
+Shape shape = new Shape(doc, ShapeType.Cube);
+shape. WrapType = WrapType. Inline;
+shape. Width = 100.0;
+shape. Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
+
+#### س: كيف يمكنني تمكين تتبع المراجعة في Aspose.Words for .NET؟
+
+ ج: لتمكين تتبع المراجعة في Aspose.Words for .NET ، يمكنك استخدام`StartTrackRevisions` طريقة`Document` هدف. تأخذ هذه الطريقة اسم مؤلف المراجعات كمعامل:
+
+```csharp
+doc.StartTrackRevisions("John Doe");
+```
+
+#### س: كيف يمكنني التحقق من المراجعات المرتبطة بكل شكل في مستند Aspose.Words for .NET؟
+
+ج: للتحقق من المراجعات المرتبطة بكل شكل في مستند Aspose.Words for .NET ، يمكنك الحصول على مجموعة أشكال المستند باستخدام`GetChildNodes` الطريقة مع`NodeType.Shape` نوع العقدة. ثم يمكنك الوصول إلى كل شكل`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` ، و`IsMoveToRevision` لتحديد نوع المراجعة المرتبطة بالشكل:
+
+```csharp
+List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
+
+Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
+Assert.True(shapes[0].IsDeleteRevision);
+
+Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
+Assert.True(shapes[1].IsInsertRevision);
+```
+
+#### س: كيف يمكنني التحقق من مراجعات الإزاحة للأشكال في مستند Aspose.Words لمستند .NET؟
+
+ ج: للتحقق من مراجعات إزاحة الشكل في مستند Aspose.Words for .NET ، يمكنك تحميل مستند موجود يحتوي على مراجعات إزاحة الشكل. ثم يمكنك الوصول إلى كل شكل`IsMoveFromRevision` و`IsMoveToRevision` لتحديد ما إذا كان يتم نقله ، وإذا كان الأمر كذلك ، فمن أين وإلى أين:
+
+```csharp
+doc = new Document(MyDir + "Revision shape.docx");
+
+shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
+
+Assert. False(shapes[0].IsMoveFromRevision);
+Assert.True(shapes[0].IsMoveToRevision);
+
+Assert.True(shapes[1].IsMoveFromRevision);
+Assert. False(shapes[1].IsMoveToRevision);
+```

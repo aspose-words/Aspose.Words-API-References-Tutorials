@@ -104,3 +104,25 @@ builder.Write("text.");
 
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo resalto texto usando Markdown?
+
+R: Para resaltar texto usando Markdown, simplemente rodee el texto con los símbolos apropiados. Usar`*` o`_` para cursiva,`**` o`__` por negrita, y`~~` para tachado.
+
+#### P: ¿Podemos combinar diferentes resaltados en un mismo texto?
+
+ R: Sí, es posible combinar diferentes resaltados en el mismo texto. Por ejemplo, puede poner una palabra en negrita y cursiva usando ambas`**` y`*` alrededor del mundo.
+
+#### P: ¿Qué opciones de resaltado están disponibles en Markdown?
+
+R: Las opciones de resaltado disponibles en Markdown están en cursiva (`*` o`_`), atrevido (`**` o`__`) y tachado (`~~`).
+
+#### P: ¿Cómo manejo los casos en los que el texto contiene caracteres especiales utilizados por Markdown para resaltar?
+
+ R: Si su texto contiene caracteres especiales utilizados por Markdown para resaltar, puede escaparlos precediéndolos con un`\` . Por ejemplo,`\*` mostrará un asterisco literal.
+
+#### P: ¿Podemos personalizar la apariencia del resaltado usando CSS?
+
+R: El resaltado en Markdown generalmente se representa usando los estilos predeterminados del navegador. Si convierte su Markdown a HTML, puede personalizar la apariencia del resaltado usando reglas CSS.

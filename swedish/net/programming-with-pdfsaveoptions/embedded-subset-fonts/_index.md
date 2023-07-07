@@ -1,8 +1,8 @@
 ---
-title: Inbäddade delmängdsteckensnitt
-linktitle: Inbäddade delmängdsteckensnitt
+title: Bädda in delmängdsteckensnitt i PDF-dokument
+linktitle: Bädda in delmängdsteckensnitt i PDF-dokument
 second_title: Aspose.Words för .NET API Referens
-description: Steg-för-steg-guide för att bädda in teckensnittsundergrupper i en PDF med Aspose.Words för .NET.
+description: Steg-för-steg-guide för att bädda in teckensnittsundergrupper i ett PDF-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
@@ -61,3 +61,35 @@ Det är allt ! Du har framgångsrikt bäddat in delmängder av teckensnitt i ett
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 
 ```
+
+## Slutsats
+
+I den här handledningen lärde vi oss hur man bäddar in teckensnittsundergrupper i ett PDF-dokument med Aspose.Words för .NET. Att bädda in delmängder av teckensnitt hjälper till att minska storleken på PDF-filen samtidigt som dokumentets utseende bevaras genom att endast använda de tecken som faktiskt används. Detta säkerställer bättre kompatibilitet och prestanda vid visning och utskrift av PDF-filen. Utforska gärna funktionerna i Aspose.Words för .NET ytterligare för att optimera genereringen av dina PDF-dokument med inbäddade teckensnittsundergrupper.
+
+### Vanliga frågor
+
+#### F: Vad är att bädda in teckensnittsundergrupper i ett PDF-dokument?
+S: Att bädda in teckensnittsunderuppsättningar i ett PDF-dokument är processen att bara inkludera de glyfer som används i dokumentet, snarare än att inkludera alla fullständiga teckensnitt. Detta minskar storleken på PDF-filen genom att endast inkludera de teckensnittsdata som behövs för att visa de tecken som faktiskt används i dokumentet.
+
+#### F: Vad är skillnaden mellan att bädda in fullständiga teckensnitt och bädda in delmängder av teckensnitt?
+S: Inbäddning av fullständigt teckensnitt innebär att alla teckensnitt som används i dokumentet inkluderas i PDF-filen, vilket säkerställer att dokumentet kommer att visas exakt som det designades, men kan öka storleken på PDF-filen. Däremot innehåller inbäddade teckensnittsunderuppsättningar endast de glyfer som används i dokumentet, vilket minskar storleken på PDF-filen, men begränsar möjligheten att exakt replikera dokumentets utseende om ytterligare tecken läggs till senare.
+
+#### F: Hur kan jag bädda in teckensnittsundergrupper i ett PDF-dokument med Aspose.Words för .NET?
+S: För att bädda in teckensnittsundergrupper i ett PDF-dokument med Aspose.Words för .NET, följ dessa steg:
+
+ Ställ in sökvägen till dokumentkatalogen genom att ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+
+ Ladda dokumentet du vill bearbeta med hjälp av`Document` klass och dokumentsökvägen.
+
+ Konfigurera PDF-sparalternativ genom att skapa en instans av`PdfSaveOptions` klass och ställa in`EmbedFullFonts` egendom till`false`Detta säkerställer att endast de teckensnittsunderuppsättningar som används i dokumentet kommer att inkluderas i PDF-filen.
+
+ Spara dokumentet i PDF-format med teckensnittsunderuppsättningarna inbäddade med hjälp av`Save` metod för`Document` objekt, ange namnet på utdatafilen och spara alternativen som konfigurerats tidigare.
+
+#### F: Vilka är fördelarna med att bädda in teckensnittsundergrupper i ett PDF-dokument?
+S: Fördelarna med att bädda in teckensnittsundergrupper i ett PDF-dokument är:
+
+Minskad PDF-filstorlek: Genom att endast inkludera de glyfer som används i dokumentet, reduceras PDF-filstorleken jämfört med att bädda in fullständiga teckensnitt.
+
+Bevarande av dokumentets utseende: Underuppsättningarna av teckensnitt som ingår i PDF-filen gör det möjligt att återskapa dokumentets utseende med endast de tecken som faktiskt används.
+
+Kompatibilitet med licensens begränsningar: Inbäddning av underuppsättningar av teckensnitt kan föredras i fall där fullständiga teckensnitt inte kan bäddas in lagligt på grund av licensbegränsningar.

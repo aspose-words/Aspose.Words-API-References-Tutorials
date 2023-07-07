@@ -1,6 +1,6 @@
 ---
-title: Rimuovi commenti in pdf
-linktitle: Rimuovi commenti in pdf
+title: Rimuovi commenti nel file Pdf
+linktitle: Rimuovi commenti nel file Pdf
 second_title: Riferimento all'API Aspose.Words per .NET
 description: Rimuovi i commenti in un file PDF con Aspose.Words per .NET.
 type: docs
@@ -56,4 +56,34 @@ Document doc = new Document(MyDir + "Revisions.docx");
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 
 doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
+```
+
+## Conclusione
+
+In questo tutorial, abbiamo imparato come rimuovere i commenti da un file PDF utilizzando Aspose.Words per .NET. Utilizzando le opzioni di layout appropriate, siamo stati in grado di nascondere i commenti durante la generazione del PDF. Aspose.Words per .NET offre una grande flessibilità per manipolare i file Word e convertirli in diversi formati, incluso PDF. Ora puoi applicare questa conoscenza per rimuovere i commenti nei tuoi file PDF utilizzando Aspose.Words per .NET.
+
+### Domande frequenti per rimuovere i commenti nel file pdf
+
+#### D: Come caricare un documento in Aspose.Words per .NET?
+
+ R: Usa il`Document` classe di Aspose.Words per .NET per caricare un documento da un file. È possibile specificare il percorso completo del documento.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### D: Come nascondere i commenti nei PDF generati con Aspose.Words per .NET?
+
+ R: Usa il`CommentDisplayMode` proprietà del`LayoutOptions` oggetto per configurare la modalità di visualizzazione dei commenti durante la generazione del PDF. Per nascondere i commenti, imposta questa proprietà su`CommentDisplayMode.Hide`.
+
+```csharp
+doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
+```
+
+#### D: Come salvare un documento in formato PDF con Aspose.Words per .NET?
+
+ R: Usa il`Save` metodo del`Document` oggetto per salvare il documento in formato PDF. Specificare il percorso completo del file PDF.
+
+```csharp
+doc.Save("path/to/the/file.pdf");
 ```

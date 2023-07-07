@@ -54,4 +54,24 @@ builder.Writeln("This is an H1 tag");
 
 Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité des en-têtes avec Aspose.Words pour .NET.
 
+### FAQ
 
+#### Q : Qu'est-ce qu'un en-tête Markdown ?
+
+R : Un en-tête Markdown est un élément utilisé pour créer des titres et des sous-titres dans un document. Il utilise la syntaxe des symboles dièse (#) suivis d'un espace et du texte du titre.
+
+#### Q : Comment utiliser les différents niveaux d'en-têtes Markdown ?
+
+R : Pour utiliser les différents niveaux d'en-têtes Markdown, vous pouvez ajouter un nombre variable de symboles dièse (#) avant le texte de l'en-tête.
+
+#### Q : Y a-t-il des limites à l'utilisation des en-têtes Markdown ?
+
+R : Il n'y a pas de limites strictes, mais il est recommandé de maintenir une structure de rapport claire et concise.
+
+#### Q : Puis-je personnaliser l'apparence des en-têtes Markdown ?
+
+R : Dans Markdown standard, il n'est pas possible de personnaliser l'apparence des en-têtes Markdown, mais certaines extensions et éditeurs Markdown avancés offrent des fonctionnalités supplémentaires.
+
+#### Q : Les en-têtes Markdown sont-ils pris en charge par tous les éditeurs Markdown ?
+
+R : Oui, les éditeurs Markdown les plus populaires prennent en charge les en-têtes Markdown, mais vérifiez la documentation spécifique de votre éditeur pour vous en assurer.

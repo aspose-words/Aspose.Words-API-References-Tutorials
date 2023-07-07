@@ -40,7 +40,7 @@ Cette étape est importante car elle garantit que les résultats des champs s'af
 
 ## Étape 4 : Affichage des résultats de champ
 
- Nous utilisons un`foreach` boucle pour parcourir tous les champs du document et afficher leurs résultats.
+ Nous utilisons un`foreach`boucle pour parcourir tous les champs du document et afficher leurs résultats.
 
 ```csharp
 foreach(Field field in document.Range.Fields)
@@ -69,3 +69,21 @@ foreach(Field field in document.Range.Fields)
 Dans cet exemple, nous avons téléchargé un document, mis à jour tous les champs, puis parcouru les champs pour afficher leurs résultats. Vous pouvez personnaliser cette étape en utilisant votre propre logique pour traiter les résultats de champ.
 
 Ceci conclut notre guide d'utilisation de la fonctionnalité "Afficher les résultats du champ" avec Aspose.Words pour .NET.
+
+### FAQ
+
+#### Q : Qu'est-ce qu'un champ d'affichage de résultat dans Aspose.Words ?
+
+R : Un champ d'affichage de résultat dans Aspose.Words est un type de champ qui affiche le résultat d'une opération ou d'un calcul dans un document Word. Par exemple, un champ d'affichage de résultat permet d'afficher la somme de plusieurs valeurs ou le résultat d'une formule mathématique.
+
+#### Q : Comment mettre à jour un champ d'affichage de résultat dans un document Word avec Aspose.Words ?
+
+R : Pour mettre à jour un champ d'affichage de résultat dans un document Word avec Aspose.Words, vous pouvez utiliser la méthode UpdateFields. Cette méthode parcourt le document et met à jour tous les champs, y compris les champs d'affichage des résultats, en recalculant les valeurs en fonction des données actuelles.
+
+#### Q : Puis-je formater le résultat affiché par un champ d'affichage de résultat ?
+
+R : Oui, vous pouvez formater le résultat affiché par un champ d'affichage de résultat en utilisant la syntaxe appropriée pour spécifier le format. Par exemple, vous pouvez formater des nombres avec un nombre spécifique de décimales ou utiliser des formats de date personnalisés.
+
+#### Q : Comment puis-je supprimer un champ d'affichage de résultat d'un document Word avec Aspose.Words ?
+
+R : Pour supprimer un champ d'affichage de résultat d'un document Word avec Aspose.Words, vous pouvez utiliser la méthode Remove. Cette méthode supprime le champ et le remplace par son résultat statique.

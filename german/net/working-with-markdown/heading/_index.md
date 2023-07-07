@@ -54,4 +54,24 @@ builder.Writeln("This is an H1 tag");
 
 Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Überschriftenfunktion mit Aspose.Words für .NET verwenden.
 
+### FAQs
 
+#### F: Was ist ein Markdown-Header?
+
+A: Ein Markdown-Header ist ein Element, das zum Erstellen von Überschriften und Unterüberschriften in einem Dokument verwendet wird. Es verwendet die Syntax von Pfund-Symbolen (#), gefolgt von einem Leerzeichen und einem Titeltext.
+
+#### F: Wie verwende ich die verschiedenen Ebenen von Markdown-Überschriften?
+
+A: Um die verschiedenen Ebenen von Markdown-Überschriften zu verwenden, können Sie vor dem Überschriftentext eine unterschiedliche Anzahl von Pfund-Symbolen (#) hinzufügen.
+
+#### F: Gibt es Einschränkungen bei der Verwendung von Markdown-Headern?
+
+A: Es gibt keine strengen Einschränkungen, es wird jedoch empfohlen, eine klare und prägnante Berichtsstruktur beizubehalten.
+
+#### F: Kann ich das Erscheinungsbild von Markdown-Headern anpassen?
+
+A: Im Standard-Markdown ist es nicht möglich, das Erscheinungsbild von Markdown-Headern anzupassen, aber einige erweiterte Markdown-Erweiterungen und -Editoren bieten zusätzliche Funktionen.
+
+#### F: Werden Markdown-Überschriften von allen Markdown-Editoren unterstützt?
+
+A: Ja, die meisten gängigen Markdown-Editoren unterstützen Markdown-Header, aber schauen Sie zur Sicherheit in der spezifischen Dokumentation Ihres Editors nach.

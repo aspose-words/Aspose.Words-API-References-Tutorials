@@ -1,6 +1,6 @@
 ---
-title: Establecer opciones de contorno
-linktitle: Establecer opciones de contorno
+title: Establecer opciones de esquema en un documento PDF
+linktitle: Establecer opciones de esquema en un documento PDF
 second_title: Referencia de API de Aspose.Words para .NET
 description: Guía paso a paso para establecer opciones de esquema en un documento PDF con Aspose.Words para .NET.
 type: docs
@@ -64,3 +64,26 @@ Eso es todo ! Configuró con éxito las opciones de esquema en un documento y ge
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
    
 ```
+
+## Conclusión
+
+En este tutorial, explicamos cómo configurar las opciones de esquema en un documento PDF usando Aspose.Words para .NET. Siguiendo los pasos descritos, puede especificar fácilmente los niveles de título y esquema en su documento y generar un archivo PDF con las opciones de esquema correspondientes. Disfrute de los beneficios de la opción de esquema para mejorar la estructura y la navegación en sus documentos PDF utilizando Aspose.Words para .NET.
+
+### Preguntas frecuentes
+
+#### P: ¿Qué es la opción de esquema en un documento PDF?
+R: La opción de esquema en un documento PDF se refiere a la estructura jerárquica del contenido del documento. Te permite crear una tabla de contenido interactiva y facilita la navegación en el documento. Las opciones de esquema determinan los niveles de título y subtítulo que se incluirán en el esquema y el nivel de detalle que se mostrará en el esquema generado.
+
+#### P: ¿Cómo puedo configurar las opciones de esquema en un documento PDF usando Aspose.Words para .NET?
+R: Para configurar las opciones de esquema en un documento PDF usando Aspose.Words para .NET, siga estos pasos:
+
+ Establezca la ruta del directorio donde se encuentran sus documentos reemplazando`"YOUR DOCUMENT DIRECTORY"` con la ruta real de su directorio de documentos.
+
+ Cargue el documento que desea convertir a PDF usando el`Document` class y especifique la ruta al documento en el directorio de documentos especificado.
+
+ Configure las opciones de guardar como PDF creando una instancia del`PdfSaveOptions` clase y usando el`OutlineOptions` propiedad para establecer las opciones de contorno. Puede especificar el número de niveles de título para incluir en el esquema utilizando el`HeadingsOutlineLevels` propiedad y el número de niveles de esquema expandido usando el`ExpandedOutlineLevels` propiedad.
+
+ Guarde el documento en formato PDF usando el`Save` metodo de la`Document`class especificando la ruta y las opciones de guardado.
+
+#### P: ¿Para qué sirve la opción del plan en un documento PDF?
+R: La opción de esquema en un documento PDF le permite crear una estructura jerárquica del contenido, lo que facilita la navegación por el documento y el acceso a las diferentes secciones. Esto permite a los usuarios saltar rápidamente a partes específicas del documento haciendo clic en las entradas de la tabla de contenido o el esquema. La opción de esquema también mejora la experiencia de lectura al proporcionar una descripción general de la estructura general del documento.

@@ -1,6 +1,6 @@
 ---
-title: docx a txt
-linktitle: docx a txt
+title: Convertir Docx a Txt
+linktitle: Convertir Docx a Txt
 second_title: Referencia de API de Aspose.Words para .NET
 description: Aprenda a convertir documentos de Word de Docx a texto sin formato (Txt) usando Aspose.Words para .NET. Tutorial paso a paso con código fuente de ejemplo.
 type: docs
@@ -44,3 +44,17 @@ doc.Save(dataDir + "BaseConversions.DocxToTxt.txt");
 ```
 
 Siéntase libre de usar este código en sus propios proyectos y modifíquelo de acuerdo con sus requisitos específicos.
+
+### preguntas frecuentes
+
+#### ¿Cómo convertir un archivo DOCX a TXT?
+
+Para convertir un archivo DOCX a TXT, puede usar diferentes herramientas de software o bibliotecas que brindan esta funcionalidad. Aspose.Words para .NET es una opción confiable para esta conversión. Puede usar la API de la biblioteca para cargar el archivo DOCX y guardarlo en formato TXT.
+
+#### ¿Cómo lidiar con los problemas de codificación durante la conversión?
+
+Pueden surgir problemas de codificación al convertir DOCX a TXT debido a las diferencias en la codificación de caracteres. Es importante especificar la codificación correcta al guardar el archivo TXT para evitar problemas de caracteres incorrectos o faltantes. Aspose.Words para .NET ofrece opciones para especificar la codificación durante la conversión para garantizar la compatibilidad y precisión de los caracteres.
+
+#### ¿Cuáles son las limitaciones del proceso de conversión?
+
+Las limitaciones del proceso de conversión dependen de la herramienta o biblioteca específica que esté utilizando. Algunas herramientas pueden tener restricciones relacionadas con funciones admitidas, formato complejo o elementos específicos del archivo DOCX. Es importante comprender las limitaciones de la herramienta elegida y evaluar si se ajustan a sus necesidades de conversión.

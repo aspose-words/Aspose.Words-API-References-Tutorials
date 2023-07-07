@@ -64,3 +64,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 
 ## Conclusion
 In this tutorial, we learned how to set multiple font folders when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily specify multiple font folders to use when rendering your documents. Aspose.Words offers a powerful and flexible API for working with fonts in your documents. With this knowledge, you can control and customize the font sources used when rendering your documents to your specific needs.
+
+### FAQ's
+
+#### Q: How can I set multiple font folders in Aspose.Words?
+
+A: To set multiple font folders in Aspose.Words, you can use the `SetFontsFolders` method of the `Fonts` class providing a list of custom font folder locations.
+
+#### Q: Does setting multiple font folders affect all documents processed with Aspose.Words?
+
+A: Yes, setting multiple font folders affects all documents processed with Aspose.Words. Once you have defined the font folders, Aspose.Words will use these locations to search for fonts in all documents.
+
+#### Q: How many font folders can I define in Aspose.Words?
+
+A: You can define as many font folders as needed in Aspose.Words. There is no specific limit to the number of font folders you can define.
+
+#### Q: How can I check the font folders defined in Aspose.Words?
+
+A: To check the font folders defined in Aspose.Words, you can use the `GetFolders` method of the `Fonts` class to get the locations of the configured font folders.
+
+#### Q: Do font folders need to contain specific fonts?
+
+A: Yes, font folders should contain the fonts you want to use in your Word documents. Aspose.Words will look for fonts in the specified folders when processing documents.

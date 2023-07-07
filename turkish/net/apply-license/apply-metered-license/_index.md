@@ -75,3 +75,21 @@ catch (Exception e)
 Tebrikler! Aspose.Words for .NET kullanarak tarifeli bir lisansın nasıl uygulanacağını başarıyla öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak, artık belge işleme görevleriniz için Aspose.Words'ün gelişmiş özelliklerinden yararlanabilirsiniz.
 
 Artık ölçülü lisansı güvenle ayarlayabilir, belgeleri yükleyebilir ve işleyebilir ve Word belgelerini programlı olarak oluşturmak, değiştirmek ve değiştirmek için Aspose.Words'ün tam potansiyelinden yararlanabilirsiniz.
+
+### SSS
+
+#### S: Kullandıkça öde lisansını Aspose.Words for .NET'te nasıl uygulayabilirim?
+
+Y: Aspose.Words for .NET'te kullandıkça öde lisansı uygulamak için eğitimde belirtilen adımları izleyin.
+
+#### S: Aspose.Words for .NET'te kullandıkça öde lisansı kullanmanın faydaları nelerdir?
+
+Y: Aspose.Words for .NET'te kullandıkça öde lisansı kullanmanın faydaları arasında daha verimli maliyet yönetimi ve artan esneklik yer alır.
+
+#### S: Kullandıkça öde lisans kullanımımı Aspose.Words for .NET'te nasıl kontrol edebilirim?
+
+Y: Öğreticide belirtilen uygun yöntemi kullanarak Aspose.Words for .NET'te kullandıkça öde lisans kullanımınızı kontrol edebilirsiniz.
+
+#### S: Kullandıkça öde lisansı yerine Aspose.Words for .NET ile normal bir lisans kullanabilir miyim?
+
+C: Evet, isterseniz Aspose.Words for .NET ile normal bir lisans kullanabilirsiniz.

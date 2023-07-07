@@ -16,6 +16,6 @@ url: /ar/net/programming-with-fileformat/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [كشف تنسيق الملف](./detect-file-format/) | دليل خطوة بخطوة لاكتشاف تنسيق ملف المستند باستخدام Aspose.Words for .NET. |
-| [كشف توقيعات الوثيقة](./detect-document-signatures/) | دليل تفصيلي خطوة بخطوة لاكتشاف التوقيعات الرقمية في مستند باستخدام Aspose.Words for .NET. |
-| [تحقق من المستند المشفر](./verify-encrypted-document/) | دليل تفصيلي خطوة بخطوة للتحقق من أن المستند مشفر باستخدام Aspose.Words for .NET. |
+| [كشف تنسيق ملف المستند](./detect-file-format/) | دليل خطوة بخطوة لاكتشاف تنسيق ملف المستند باستخدام Aspose.Words for .NET. |
+| [كشف التوقيع الرقمي في مستند Word](./detect-document-signatures/) | دليل تفصيلي خطوة بخطوة لاكتشاف التوقيعات الرقمية في مستند باستخدام Aspose.Words for .NET. |
+| [تحقق من مستند Word المشفر](./verify-encrypted-document/) | دليل تفصيلي خطوة بخطوة للتحقق من أن المستند مشفر باستخدام Aspose.Words for .NET. |

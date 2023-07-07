@@ -20,7 +20,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## 2. Adım: Belgeyi oluşturma ve birleştirme alanlarını ekleme
 
- Yeni bir belge oluşturarak başlıyoruz ve bir`DocumentBuilder` birleştirme alanlarını eklemek için.
+Yeni bir belge oluşturarak başlıyoruz ve bir`DocumentBuilder` birleştirme alanlarını eklemek için.
 
 ```csharp
 Document doc = new Document();
@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
 Aspose.Words for .NET kullanarak belgenizdeki birleştirme alanlarını yeniden adlandırmak için bu adımları izleyin.
+
+### SSS
+
+#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki birleştirilmiş alanları nasıl yeniden adlandırabilirim?
+
+ C: Aspose.Words for .NET kullanarak bir Word belgesindeki birleştirilmiş alanları yeniden adlandırmak için,`FieldMergingArgs` sınıflandırın ve kullanın`FieldMergingArgs.FieldName` alanı yeniden adlandırma yöntemi.
+
+#### S: Aspose.Words for .NET ile bir Word belgesindeki yalnızca belirli birleştirilmiş alanları yeniden adlandırmak mümkün mü?
+
+C: Evet, Aspose.Words for .NET ile bir Word belgesindeki yalnızca belirli birleştirilmiş alanları yeniden adlandırmak mümkündür. Alan adı veya diğer ilgili özellikler gibi belirli ölçütleri kullanarak hangi alanların yeniden adlandırılacağını filtreleyebilirsiniz. Ardından ilgili alanları kullanarak yeniden adlandırabilirsiniz.`FieldMergingArgs.FieldName` yöntem.
+
+#### S: Aspose.Words for .NET ile bir Word belgesinde birleştirilmiş bir alanın başarıyla yeniden adlandırılıp adlandırılmadığını nasıl kontrol edebilirim?
+
+ C: Aspose.Words for .NET ile bir Word belgesinde birleştirilmiş bir alanın başarıyla yeniden adlandırılıp adlandırılmadığını kontrol etmek için`FieldMergedArgs` sınıf ve erişim`FieldMergedArgs.IsMerged` alanın hit ile yeniden adlandırılıp adlandırılmadığını belirlemek için özellik.
+
+#### S: Bir Word belgesindeki birleştirilmiş bir alanı Aspose.Words for .NET ile yeniden adlandırmanın sonuçları nelerdir?
+
+C: Bir Word belgesindeki birleştirilmiş bir alanı Aspose.Words for .NET ile yeniden adlandırdığınızda, belgedeki alanın adını değiştirir, bu da alan adına bağlı diğer işlevleri veya süreçleri etkileyebilir. Birleştirilmiş alanları yeniden adlandırmadan önce bu olası sonuçları göz önünde bulundurduğunuzdan emin olun.
+
+#### S: Aspose.Words for .NET ile yeniden adlandırdıktan sonra birleştirilmiş bir alanın orijinal adını geri yüklemek mümkün müdür?
+
+C: Evet, Aspose.Words for .NET ile yeniden adlandırdıktan sonra birleştirilmiş bir alanın orijinal adını geri yüklemek mümkündür. Alanın orijinal adını bir değişkende veya listede saklayabilir ve ardından gerekirse orijinal adı geri yüklemek için bu bilgileri kullanabilirsiniz.

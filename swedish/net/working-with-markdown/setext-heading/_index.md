@@ -94,5 +94,24 @@ builder.Writeln("Setext Heading level 2");
 builder.Document.Save(dataDir + "Test.md");
 ```
 
+### FAQ's
 
+#### F: Vad är en Setext Markdown-rubrik?
 
+S: En Setext Markdown-rubrik är ett alternativt sätt att skapa rubriker i ett Markdown-dokument. Den använder understreck (= eller -) för att indikera olika nivåer av rubriker.
+
+#### F: Hur använder man Setext Markdown-rubriker?
+
+S: För att använda Setext Markdown-rubriker, placera understreck under titeltexten. Använd likhetstecken (=) för ett rubrik på nivå 1 och bindestreck (-) för ett rubrik på nivå 2.
+
+#### F: Finns det några begränsningar i att använda Setext Markdown-rubriker?
+
+S: Setext Markdown-rubriker har begränsningar när det gäller rubrikhierarki och är inte lika visuellt distinkta som vanliga Markdown-rubriker.
+
+#### F: Kan jag anpassa utseendet på Setext Markdown-rubriker?
+
+S: I standard Markdown är det inte möjligt att anpassa utseendet på Setext Markdown-rubriker. De har ett fördefinierat utseende baserat på de understreck som används.
+
+#### F: Stöds Setext Markdown-rubriker av alla Markdown-redigerare?
+
+S: Stödet för Setext Markdown-rubriker kan variera mellan Markdown-redigerare. Kontrollera din utgivares specifika dokumentation för att vara säker.

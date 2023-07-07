@@ -32,7 +32,7 @@ FormFieldCollection documentFormFields = doc.Range.FormFields;
 Du kan hämta formulärfält antingen med index eller namn. I det här exemplet hämtar vi ett formulärfält med båda metoderna:
 
 ```csharp
-FormField formField1 = documentFormFields[3]; // Hämtar efter index
+FormField formField1 = documentFormFields[3]; //Hämtar efter index
 FormField formField2 = documentFormFields["Text2"]; // Hämtar med namn
 ```
 
@@ -73,3 +73,25 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
 Använd gärna den här koden i dina egna projekt och modifiera den efter dina specifika krav.
+
+### FAQ's
+
+#### F: Hur kan jag få ett formulärfält med namn i Aspose.Words?
+
+ S: För att få ett formulärfält med namn i Aspose.Words kan du använda`Document.Range.FormFields[name]` metod. Denna metod returnerar formulärfältet som motsvarar det angivna namnet.
+
+#### F: Vad händer om formulärfältet med det angivna namnet inte finns i dokumentet?
+
+ S: Om formulärfältet med det angivna namnet inte finns i dokumentet,`Document.Range.FormFields[name]` metoden kommer tillbaka`null`Du kan kontrollera detta resultat för att hantera fall där formulärfältet inte hittas.
+
+#### F: Hur kan jag ändra egenskaperna för ett hittat formulärfält?
+
+S: När du får ett formulärfält med namn kan du komma åt dess individuella egenskaper för att redigera dem. Du kan till exempel ändra fältets värde, aktivera eller inaktivera dess synlighet eller ändra andra egenskaper efter behov.
+
+#### F: Kan jag få flera formulärfält med samma namn i ett dokument?
+
+ S: Ja, det är möjligt att ha flera formulärfält med samma namn i ett dokument. I det här fallet`Document.Range.FormFields[name]` metod returnerar det första formulärfältet som hittas med det angivna namnet. Om du har flera formulärfält med samma namn måste du ta hänsyn till detta när du manipulerar fälten.
+
+#### F: Hur kan jag iterera över alla formulärfält i ett dokument?
+
+ S: För att iterera över alla formulärfält i ett dokument kan du använda en`foreach` slinga på`Document.Range.FormFields` samling. Detta gör att du kan komma åt varje formulärfält individuellt och utföra operationer på vart och ett av dem.

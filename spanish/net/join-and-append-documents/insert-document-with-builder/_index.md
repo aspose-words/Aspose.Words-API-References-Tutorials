@@ -62,7 +62,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
 ```
 
-Esto completa la implementación de insertar un documento en otro documento usando Aspose.Words para .NET.
+Esto completa la implementación de insertar un documento en otro documento utilizando Aspose.Words para .NET.
 
 ### Ejemplo de código fuente para Insertar documento con Builder usando Aspose.Words para .NET 
 

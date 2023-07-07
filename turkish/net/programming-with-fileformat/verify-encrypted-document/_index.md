@@ -1,14 +1,14 @@
 ---
-title: Şifrelenmiş Belgeyi Doğrulayın
-linktitle: Şifrelenmiş Belgeyi Doğrulayın
+title: Şifrelenmiş Word Belgesini Doğrulayın
+linktitle: Şifrelenmiş Word Belgesini Doğrulayın
 second_title: Aspose.Words for .NET API Referansı
-description: Bir belgenin Aspose.Words for .NET ile şifrelenmiş olduğunu doğrulamak için adım adım kılavuz.
+description: Bir word belgesinin Aspose.Words for .NET ile şifrelenmiş olduğunu doğrulamak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-fileformat/verify-encrypted-document/
 ---
 
-Bu makale, Şifrelenmiş Belge Doğrulama özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgenin şifrelenip şifrelenmediğini nasıl kontrol edeceğinizi öğrenebileceksiniz.
+Bu makale, Encrypted Word Document Verification özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgenin şifrelenip şifrelenmediğini nasıl kontrol edeceğinizi öğrenebileceksiniz.
 
 Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
@@ -49,3 +49,39 @@ Bu kadar ! Aspose.Words for .NET kullanılarak bir belgenin şifrelenip şifrele
             
         
 ```
+
+## Sıkça Sorulan Sorular
+
+### S: Şifrelenmiş bir Word belgesini doğrulama adımları nelerdir?
+
+Şifrelenmiş bir Word belgesini doğrulama adımları aşağıdaki gibidir:
+
+Belge dizinini tanımlayın.
+
+Dosya biçimini algıla.
+
+Belgenin şifrelenip şifrelenmediğini kontrol edin.
+
+### S: Belge dizinini nasıl ayarlayabilirim?
+ Belgeler dizinini ayarlamak için değiştirmeniz gerekir`"YOUR DOCUMENT DIRECTORY"` aşağıdaki kodda belgeler dizininizin gerçek yolu ile:
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+### S: Dosya formatı nasıl tespit edilir?
+ kullanabilirsiniz`DetectFileFormat` yöntemi`FileFormatUtil` dosya biçimi bilgilerini algılamak için sınıf. Aşağıdaki örnekte, şifrelenmiş belgenin adının "Encrypted.docx" olduğunu ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz:
+
+```csharp
+FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
+```
+
+### S: Belgenin şifrelenip şifrelenmediği nasıl kontrol edilir?
+ kullanabilirsiniz`IsEncrypted` mülkiyeti`FileFormatInfo` belgenin şifrelenip şifrelenmediğini kontrol etmek için nesne. Bu özellik döndürür`true` belge şifreliyse, aksi takdirde geri döner`false`. Sonuç konsolda görüntülenir:
+
+```csharp
+Console.WriteLine(info.IsEncrypted);
+```
+
+### S: Aspose.Words for .NET kullanılarak bir belgenin şifrelenip şifrelenmediği nasıl kontrol edilir?
+Bu öğreticide belirtilen adımları izleyerek ve sağlanan kaynak kodunu çalıştırarak, bir belgenin Aspose.Words for .NET kullanılarak şifrelenip şifrelenmediğini kontrol edebilirsiniz.

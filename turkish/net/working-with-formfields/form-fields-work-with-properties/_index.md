@@ -64,3 +64,25 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
 Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimlerinize göre değiştirin.
+
+### SSS
+
+#### S: Aspose.Words'te bir form alanının adını nasıl değiştirebilirim?
+
+ C: Aspose.Words'te bir form alanının adını değiştirmek için`FormField.Name` özellik ve ona yeni bir değer atayın.
+
+#### S: Bir form alanının varsayılan değerini değiştirmek mümkün müdür?
+
+ C: Evet, Aspose.Words'te bir form alanının varsayılan değerini değiştirmek mümkündür. Kullan`FormField.Result` yeni varsayılanı belirtmek için özellik.
+
+#### S: Aspose.Words'te bir tarih formu alanının formatını nasıl değiştirebilirim?
+
+ C: Aspose.Words'te bir tarih formu alanının formatını değiştirmek için`FormField.TextFormat` özellik ve ona yeni bir tarih biçimi atayın. Örneğin, tarihi gün/ay/yıl biçiminde görüntülemek için "gg/MM/yyyy" kullanabilirsiniz.
+
+#### S: Aspose.Words'teki bir açılır form alanından seçenekler listesini alabilir miyim?
+
+ C: Evet, Aspose.Words'te bir açılır form alanı için seçenekler listesini şu şekilde alabilirsiniz:`FormField.DropDownItems` mülk. Bu özelliğe erişebilir ve gerekirse ek işlemler gerçekleştirmek için seçeneklerin listesini alabilirsiniz.
+
+#### S: Aspose.Words'ta bir form alanındaki tüm özellikleri nasıl kaldırabilirim?
+
+ C: Aspose.Words'te bir form alanından tüm özellikleri kaldırmak için`FormField.Clear` tüm form alanı özelliklerini temizleme yöntemi.

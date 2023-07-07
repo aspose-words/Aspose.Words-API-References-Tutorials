@@ -94,3 +94,20 @@ field. Update();
 
 doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsingDOM.docx");
 ```
+### SSS
+
+#### S: Aspose.Words for .NET ile bir Word belgesindeki posta adresinin biçimini nasıl özelleştirebilirim?
+
+ C: Aspose.Words for .NET ile bir Word belgesindeki posta adresinin biçimini aşağıdaki özellikleri kullanarak özelleştirebilirsiniz:`FieldAddressBlock`nesne. İstenilen formatı elde etmek için adres stili, ayırıcılar, isteğe bağlı öğeler vb. gibi formatlama seçeneklerini ayarlayabilirsiniz.
+
+#### S: Aspose.Words for .NET'te posta adresi alanı için kaynak verileri nasıl belirleyebilirim?
+
+ C: Aspose.Words for .NET'te posta adresi alanı için kaynak verileri belirtmek üzere`FieldAddressBlock.StartAddress` Ve`FieldAddressBlock.EndAddress` özellikler. Bu özellikler, CSV dosyası, veritabanı vb. gibi harici veri kaynağındaki adres aralıklarını tanımlamak için kullanılır.
+
+#### S: Aspose.Words for .NET ile posta adresi alanına isteğe bağlı öğeler ekleyebilir miyim?
+
+ C: Evet, Aspose.Words for .NET ile posta adresi alanına isteğe bağlı öğeler ekleyebilirsiniz. İsteğe bağlı öğeleri kullanarak tanımlayabilirsiniz.`FieldAddressBlock.OmitOptional` alıcı adı, şirket adı vb. gibi isteğe bağlı öğelerin dahil edilip edilmeyeceğini belirleme yöntemi.
+
+#### S: DOM kullanarak bir posta adresi alanı eklemek, Aspose.Words for .NET ile Word belge yapısını etkiler mi?
+
+Y: DOM kullanılarak bir posta adresi alanı eklemek, Word belgesinin yapısını doğrudan etkilemez. Ancak belge içeriğine yeni bir alan öğesi ekler. Mevcut öğeleri ihtiyaçlarınıza göre ekleyerek, silerek veya değiştirerek belge yapısını değiştirebilirsiniz.

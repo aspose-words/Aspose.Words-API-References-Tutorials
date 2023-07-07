@@ -37,7 +37,7 @@ doc.FirstSection.Body.AppendChild(para2);
 ```
 
 ## Paso 2: cree un comentario y agregue un rango de comentarios
-A continuación, cree un comentario y asócielo con un texto específico usando los objetos CommentRangeStart y CommentRangeEnd:
+A continuación, cree un comentario y asócielo con un texto específico utilizando los objetos CommentRangeStart y CommentRangeEnd:
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
@@ -63,12 +63,12 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 Aquí está el código fuente completo para anclar una respuesta de comentario usando Aspose.Words para .NET:
 
 ```csharp
-// Create an instance of the Document.
+// Cree una instancia del documento.
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 Document doc = new Document();
 
-// Create three Run objects.
-// The first two run some text, while the third runs a Comment
+// Cree tres objetos Ejecutar.
+//Los dos primeros ejecutan un texto, mientras que el tercero ejecuta un comentario
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -88,7 +88,7 @@ Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 
-// Each of the Run objects has an associated CommentRangeStart and CommentRangeEnd object.
+// Cada uno de los objetos Run tiene un objeto CommentRangeStart y CommentRangeEnd asociado.
 
 CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
 CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
@@ -99,3 +99,26 @@ commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
 ```
+
+### Preguntas frecuentes
+
+#### P: ¿Qué es un ancla de comentario en Aspose.Words para .NET?
+
+R: En Aspose.Words para .NET, un ancla de comentario es un marcador que conecta un comentario con una ubicación específica en un documento.
+
+#### P: ¿Cómo puedo agregar un ancla de comentario en un documento de Aspose.Words para .NET?
+
+R: Para agregar un ancla de comentario en un documento de Aspose.Words para .NET, siga los pasos mencionados en el tutorial.
+
+#### P: ¿Cómo accedo a un ancla de comentario existente en Aspose.Words para .NET?
+
+ R: Puede acceder a un ancla de comentario existente en Aspose.Words para .NET usando el`Comment.Anchor` propiedad.
+
+#### P: ¿Puedo suprimir un ancla de comentario en Aspose.Words para .NET?
+
+ R: Sí, puede eliminar un ancla de comentario en Aspose.Words para .NET usando el`Comment.Remove` método.
+
+#### P: ¿Cómo puedo editar el texto de un comentario vinculado a un ancla de comentario en Aspose.Words para .NET?
+
+R: Para modificar el texto de un comentario vinculado a un ancla de comentario en Aspose.Words para .NET, puede acceder a la`Comment.Text` propiedad de la correspondiente`Comment` objeto y modifique el texto según sea necesario.
+

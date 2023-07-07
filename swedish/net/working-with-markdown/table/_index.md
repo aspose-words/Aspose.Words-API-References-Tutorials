@@ -56,3 +56,25 @@ builder.Writeln("d");
 ```
 
 Grattis! Du har nu lärt dig hur du skapar en tabell med Aspose.Words för .NET.
+
+### FAQ's
+
+#### F: Hur skapar jag en tabell i Markdown?
+
+S: För att skapa en tabell i Markdown, använd syntaxen för pipes (`|`) för att avgränsa celler och bindestreck (`-`) för att avgränsa tabellrubriker.
+
+#### F: Kan vi anpassa utseendet på en tabell i Markdown?
+
+S: I standard Markdown är tabellanpassningsalternativen begränsade. Vissa Markdown-redigerare låter dig dock lägga till CSS-stilar till tabeller för att anpassa deras utseende.
+
+#### F: Hur slår man ihop celler i en tabell i Markdown?
+
+S: Att slå samman celler i en tabell i Markdown beror på vilken Markdown-redigerare som används. Vissa Markdown-redigerare stöder sammanslagning av celler med en specifik syntax.
+
+#### F: Stöder tabeller i Markdown CSS-styling?
+
+S: I standard Markdown erbjuder tabeller inte direkt stöd för CSS-stilar. Vissa Markdown-redigerare låter dig dock lägga till CSS-stilar till tabeller för att anpassa deras utseende.
+
+#### F: Kan vi lägga till länkar eller text i inline-format i cellerna i en tabell i Markdown?
+
+S: Ja, du kan lägga till länkar eller inline-text till tabellceller i Markdown med hjälp av lämplig Markdown-syntax.

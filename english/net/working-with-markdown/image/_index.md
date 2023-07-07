@@ -53,3 +53,24 @@ builder.InsertNode(shape);
 Congratulation ! You have now learned how to use the images feature with Aspose.Words for .NET.
 
 
+### FAQ's
+
+#### Q: How can I insert an image from a local file into Aspose.Words?
+
+A: To insert an image from a local file into Aspose.Words, you can use the `Shape` class and the `InsertImage` method.
+
+#### Q: Can I insert an image from a URL in Aspose.Words?
+
+A: Yes, you can insert an image from a URL in Aspose.Words. You can use the same `InsertImage` method and specify the image URL instead of the local file path.
+
+#### Q: How can I resize an image in Aspose.Words?
+
+A: To resize an image in Aspose.Words, you can use the `Width` and `Height` properties of the `Shape` object.
+
+#### Q: Can I apply filters to images in Aspose.Words?
+
+A: Yes, you can apply filters to images in Aspose.Words. For example, you can apply a blur filter to an image using the `ApplyGaussianBlur` method of the `Shape` object.
+
+#### Q: How can I replace one image with another in Aspose.Words?
+
+A: To replace one image with another in Aspose.Words, you can use the `Replace` method of the `Shape` class. This method takes as parameter the `Shape` object of the image to be replaced and the `Shape` object of the new image.

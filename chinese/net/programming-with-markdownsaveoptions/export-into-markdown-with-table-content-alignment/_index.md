@@ -1,15 +1,15 @@
 ---
-title: 使用表格内容对齐导出到 Markdown
-linktitle: 使用表格内容对齐导出到 Markdown
+title: 导出到 Markdown 并对齐表格内容
+linktitle: 导出到 Markdown 并对齐表格内容
 second_title: Aspose.Words for .NET API 参考
 description: 了解如何使用 Aspose.Words for .NET 将具有不同对齐方式的表格内容导出到 Markdown 文件。
 type: docs
 weight: 10
 url: /zh/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-这是一个分步指南，用于解释以下 C# 源代码，这些代码有助于使用适用于 .NET 的 Aspose.Words 库将内容导出到具有表内容对齐的 Markdown 文件。在使用此代码之前，请确保您已将 Aspose.Words 库包含在您的项目中。
+以下分步指南解释了以下 C# 源代码，该代码有助于使用适用于 .NET 的 Aspose.Words 库将内容导出到具有表格内容对齐的 Markdown 文件。在使用此代码之前，请确保您已在项目中包含 Aspose.Words 库。
 
-## 第一步：设置文档目录路径
+## 第1步：设置文档目录路径
 
 ```csharp
 //文档目录的路径。
@@ -25,9 +25,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-这里我们创建一个实例`Document`类和一个实例`DocumentBuilder`允许我们操作文档和添加元素的类。
+这里我们创建一个实例`Document`类和一个实例`DocumentBuilder`类，它允许我们操作文档并添加元素。
 
-## 第 3 步：在表格中插入具有不同段落对齐方式的单元格
+## 步骤 3：在表格中插入具有不同段落对齐方式的单元格
 
 ```csharp
 builder. InsertCell();
@@ -38,9 +38,9 @@ builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.Write("Cell2");
 ```
 
-我们使用文档生成器将单元格插入表格并为每个单元格设置不同的段落对齐方式。
+我们使用文档生成器将单元格插入表格中，并为每个单元格设置不同的段落对齐方式。
 
-## 第 4 步：设置 Markdown 导出选项并保存修改后的文档
+## 步骤 4：设置 Markdown 导出选项并保存修改后的文档
 
 ```csharp
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
@@ -59,9 +59,9 @@ saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 ```
 
-我们使用不同的表格内容对齐设置 Markdown 导出选项，然后使用每个对齐选项保存修改后的文档。
+我们使用不同的表格内容对齐方式设置 Markdown 导出选项，然后使用每个对齐选项保存修改后的文档。
 
-### 使用 Aspose.Words for .NET 使用表格内容对齐导出到 Markdown 的示例源代码
+### 使用 Aspose.Words for .NET 导出到 Markdown 并使用表格内容对齐的示例源代码
 
 ```csharp
 
@@ -92,10 +92,10 @@ doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 	saveOptions.TableContentAlignment = TableContentAlignment.Center;
 	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.CenterTableContentAlignment.md", saveOptions);
 
-	//这种情况下的对齐将从相应表格列中的第一段获取。
+	//在这种情况下，对齐方式将从相应表列的第一段中获取。
 	saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 	
-	//保存修改后的文件
+	//保存修改后的文档
 	doc.Save(dataDir + "WorkingWithMarkdownSaveOptions.AutoTableContentAlignment.md", saveOptions);
             
         

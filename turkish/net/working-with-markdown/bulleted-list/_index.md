@@ -73,3 +73,24 @@ builder.Writeln("Item 2b");
 
 Tebrikler! Artık Aspose.Words for .NET ile madde işaretli liste oluşturmayı öğrendiniz.
 
+### SSS
+
+#### S: Markdown'da madde işaretli bir liste nasıl oluşturulur?
+
+C: Markdown'da madde işaretli bir liste oluşturmak için her liste öğesini bir madde işareti simgesiyle (`-`, `*` , veya`+`), ardından bir boşluk gelir.
+
+#### S: Markdown'da madde işaretli listeleri iç içe yerleştirebilir misiniz?
+
+C: Evet, Markdown'da madde işaretli listeleri iç içe geçmiş her liste öğesinin önüne dört ofset boşluk ekleyerek iç içe yerleştirmek mümkündür.
+
+#### S: Madde işareti sembolleri nasıl özelleştirilir?
+
+A: Standart Markdown'da, madde işareti sembolleri önceden tanımlanmıştır. Ancak, bazı Markdown editörleri, belirli uzantıları kullanarak bunları özelleştirmenize izin verir.
+
+#### S: Markdown'daki madde işaretli listeler girintilemeyi destekliyor mu?
+
+C: Evet, Markdown destek girintisindeki madde işaretli listeler. Boşlukları veya sekmeleri kullanarak sola kaydırma ekleyebilirsiniz.
+
+#### S: Liste öğelerine bağlantılar veya satır içi metin eklenebilir mi?
+
+C: Evet, uygun Markdown sözdizimini kullanarak liste öğelerine bağlantılar veya satır içi metin ekleyebilirsiniz.

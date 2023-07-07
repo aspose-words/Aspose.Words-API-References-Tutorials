@@ -63,5 +63,33 @@ doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Rig
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
+## Заключение
+
+В этом уроке мы узнали, как отображать исправления во всплывающих подсказках в документе Word с помощью Aspose.Words для .NET. Используя соответствующие параметры отображения, мы смогли сделать исправления видимыми в пузырьках с полосами изменений с правой стороны. Aspose.Words для .NET предлагает множество мощных функций для работы с документами Word, включая управление версиями. Теперь вы можете использовать эти знания, чтобы отображать исправления во всплывающих подсказках в ваших собственных документах Word с помощью Aspose.Words для .NET.
 
 
+### Часто задаваемые вопросы
+
+#### В: Как загрузить документ в Aspose.Words для .NET?
+
+ О: Используйте`Document` класс Aspose.Words для .NET для загрузки документа из файла. Вы можете указать полный путь к документу.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### В: Как отображать версии во всплывающих подсказках с помощью Aspose.Words для .NET?
+
+ О: Используйте`ShowInBalloons` собственность`RevisionOptions` object для настройки отображения ревизий во всплывающих подсказках. Вы можете установить это свойство на`ShowInBalloons.FormatAndDelete` для отображения ревизий во всплывающих подсказках с исправлениями удаления и форматирования.
+
+```csharp
+doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
+```
+
+#### В: Как сохранить документ в формате PDF с помощью Aspose.Words для .NET?
+
+ О: Используйте`Save` метод`Document` объекта для сохранения документа в формате PDF. Необходимо указать полный путь назначения с расширением «.pdf».
+
+```csharp
+doc.Save("path/to/destination/document.pdf");
+```

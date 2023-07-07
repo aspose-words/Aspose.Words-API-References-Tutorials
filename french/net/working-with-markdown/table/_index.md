@@ -48,11 +48,33 @@ builder.Writeln("a");
 builder.InsertCell();
 builder.Writeln("b");
 
-// Ajoutez la deuxième ligne.
+// Ajoutez la deuxième rangée.
 builder.InsertCell();
 builder.Writeln("c");
 builder.InsertCell();
 builder.Writeln("d");
 ```
 
-Félicitation ! Vous avez maintenant appris à créer une table avec Aspose.Words pour .NET.
+Félicitation ! Vous avez maintenant appris à créer un tableau avec Aspose.Words pour .NET.
+
+### FAQ
+
+#### Q : Comment créer un tableau dans Markdown ?
+
+R : Pour créer une table dans Markdown, utilisez la syntaxe des tubes (`|`) pour délimiter les cellules et les tirets (`-`) pour délimiter les en-têtes de tableau.
+
+#### Q : Pouvons-nous personnaliser l'apparence d'un tableau dans Markdown ?
+
+R : Dans Markdown standard, les options de personnalisation des tableaux sont limitées. Cependant, certains éditeurs Markdown vous permettent d'ajouter des styles CSS aux tableaux pour personnaliser leur apparence.
+
+#### Q : Comment fusionner des cellules dans un tableau dans Markdown ?
+
+R : La fusion de cellules dans un tableau dans Markdown dépend de l'éditeur Markdown utilisé. Certains éditeurs Markdown prennent en charge la fusion de cellules à l'aide d'une syntaxe spécifique.
+
+#### Q : Les tableaux de Markdown prennent-ils en charge le style CSS ?
+
+R : Dans le Markdown standard, les tableaux n'offrent pas de prise en charge directe des styles CSS. Cependant, certains éditeurs Markdown vous permettent d'ajouter des styles CSS aux tableaux pour personnaliser leur apparence.
+
+#### Q : Pouvons-nous ajouter des liens ou du texte au format en ligne dans les cellules d'un tableau dans Markdown ?
+
+R : Oui, vous pouvez ajouter des liens ou du texte en ligne aux cellules du tableau dans Markdown en utilisant la syntaxe Markdown appropriée.

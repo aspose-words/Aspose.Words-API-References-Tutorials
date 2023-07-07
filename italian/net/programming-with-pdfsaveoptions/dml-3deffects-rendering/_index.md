@@ -1,6 +1,6 @@
 ---
-title: Dml 3DEffects Rendering
-linktitle: Dml 3DEffects Rendering
+title: Rendering di effetti 3D DML 3D in un documento PDF
+linktitle: Rendering di effetti 3D DML 3D in un documento PDF
 second_title: Riferimento all'API Aspose.Words per .NET
 description: Scopri come abilitare il rendering degli effetti DML 3D durante la conversione in PDF con Aspose.Words per .NET.
 type: docs
@@ -56,6 +56,28 @@ Assicurati di specificare il percorso corretto per salvare il PDF convertito.
 ```
 
 Seguendo questi passaggi, puoi abilitare facilmente il rendering degli effetti DML 3D durante la conversione in PDF con Aspose.Words per .NET.
+
+## Conclusione
+
+In questo tutorial, abbiamo spiegato come abilitare il rendering degli effetti 3D DML durante la conversione in PDF con Aspose.Words per .NET. Seguendo i passaggi descritti, puoi facilmente mantenere gli effetti 3D nel documento PDF generato. Utilizzare questa funzione per preservare gli importanti effetti visivi del documento originale.
+
+
+### Domande frequenti
+
+#### D: Cos'è il rendering degli effetti 3D DML in un documento PDF?
+R: Il rendering di effetti 3D DML in un documento PDF si riferisce alla capacità di mantenere gli effetti 3D durante la conversione di un documento in formato PDF. Ciò preserva gli effetti visivi e assicura che il documento PDF generato assomigli al documento originale.
+
+#### D: Come posso abilitare il rendering degli effetti DML 3D durante la conversione in PDF con Aspose.Words per .NET?
+R: Per abilitare il rendering degli effetti DML 3D durante la conversione in PDF con Aspose.Words per .NET, attenersi alla seguente procedura:
+
+ Crea un'istanza di`Document` class che specifica il percorso del documento Word.
+
+ Crea un'istanza di`PdfSaveOptions` classe e impostare il`Dml3DEffectsRenderingMode` proprietà a`Dml3DEffectsRenderingMode.Advanced` per abilitare il rendering avanzato degli effetti 3D DML.
+
+ Usa il`Save` metodo del`Document`class per salvare il documento in formato PDF specificando le opzioni di salvataggio.
+
+#### D: Come posso verificare se gli effetti 3D DML sono stati renderizzati nel documento PDF generato?
+R: Per verificare se gli effetti 3D DML sono stati renderizzati nel documento PDF generato, aprire il file PDF con un visualizzatore PDF compatibile, come Adobe Acrobat Reader, ed esaminare il documento. Dovresti vedere gli effetti 3D come appaiono nel documento originale.
 
 
 

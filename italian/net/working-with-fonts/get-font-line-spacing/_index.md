@@ -21,7 +21,7 @@ Prima di iniziare, assicurati di avere i seguenti elementi:
 // Crea un nuovo documento
 Document doc = new Document();
 
-// Crea un generatore di documenti
+//Crea un generatore di documenti
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
  Successivamente, configureremo il carattere impostando il file`Name` proprietà del generatore di documenti.
 
 ```csharp
-//Configura il carattere
+// Configura il carattere
 builder.Font.Name = "Calibri";
 ```
 
@@ -62,3 +62,25 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 
 ## Conclusione
 In questo tutorial, abbiamo visto come ottenere l'interlinea dei caratteri in un documento Word con Aspose.Words per .NET. L'interlinea dei caratteri è importante per controllare la spaziatura verticale tra le righe di testo. Sentiti libero di usare questa funzione per personalizzare l'aspetto del tuo testo nei tuoi documenti.
+
+### FAQ
+
+#### D: Come posso modificare l'interlinea di un testo specifico in un documento di Word?
+
+A: Con Aspose.Words, puoi facilmente modificare l'interlinea di un testo specifico in un documento Word. Utilizzare l'API per selezionare il testo desiderato e regolare la spaziatura tra le righe specificando il valore appropriato.
+
+#### D: È possibile applicare una spaziatura esatta tra le righe in un documento di Word?
+
+A: Sì, Aspose.Words ti consente di applicare una spaziatura esatta tra le righe in un documento di Word. È possibile specificare un valore preciso per l'interlinea utilizzando l'API.
+
+#### D: Come posso regolare l'interlinea per l'intero documento di Word?
+
+A: Con Aspose.Words, puoi facilmente regolare l'interlinea per l'intero documento di Word. Utilizzare i metodi forniti dall'API per specificare l'interlinea desiderata per l'intero documento.
+
+#### D: Aspose.Words supporta l'interlinea multipla?
+
+A: Sì, Aspose.Words supporta l'interlinea multipla nei documenti di Word. È possibile impostare più spaziature, ad esempio 1,5 volte o 2 volte la spaziatura normale, per le righe del testo.
+
+#### D: Come posso evitare problemi di sovrapposizione delle linee durante la regolazione dell'interlinea?
+
+R: Per evitare problemi di sovrapposizione delle linee durante la regolazione della spaziatura tra le linee, assicurati di scegliere i valori di spaziatura appropriati. Prova anche il rendering finale del tuo documento per assicurarti che il testo rimanga leggibile e ben formattato.

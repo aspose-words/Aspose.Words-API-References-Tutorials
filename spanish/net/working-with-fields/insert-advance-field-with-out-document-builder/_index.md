@@ -29,7 +29,7 @@ Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
 ## Paso 3: Insertar el campo avanzado
 
- usamos el`AppendField()`para insertar un campo avanzado en el párrafo.
+ usamos el`AppendField()` para insertar un campo avanzado en el párrafo.
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
@@ -81,3 +81,25 @@ En este ejemplo, creamos un nuevo documento, insertamos un campo avanzado sin us
 
 Esto concluye nuestra guía sobre cómo usar la función "Insertar campo avanzado sin DocumentBuilder" con Aspose.Words para .NET.
 
+### Preguntas frecuentes
+
+#### P: ¿Qué es un campo avanzado en Aspose.Words?
+
+R: Un campo avanzado en Aspose.Words es un tipo especial de campo que le permite realizar cálculos, incluir condiciones y realizar operaciones complejas en un documento de Word. Ofrece una gran flexibilidad para crear campos dinámicos y personalizados.
+
+#### P: ¿Cómo insertar un campo avanzado en un documento de Word sin usar el Generador de documentos en Aspose.Words?
+
+R: Para insertar un campo avanzado en un documento de Word sin usar el Generador de documentos en Aspose.Words, puede seguir estos pasos:
+
+1. Importe la clase Documento y Campo desde el espacio de nombres Aspose.Words.Fields.
+2. Cree una instancia de Documento cargando su documento existente.
+3. Utilice el método InsertField para insertar un campo avanzado especificando el código de campo avanzado.
+4. Guarde el documento.
+
+#### P: ¿Cómo obtener el resultado de un campo avanzado en un documento de Word?
+
+R: Para obtener el resultado de un campo avanzado en un documento de Word, puede usar la propiedad Result disponible en la clase Field. Esta propiedad devuelve el resultado calculado del campo.
+
+#### P: ¿Puedo modificar la fórmula de un campo avanzado después de insertarlo en un documento de Word?
+
+R: Sí, puede editar la fórmula de un campo avanzado después de insertarlo en un documento de Word. Puede hacerlo accediendo a la propiedad FieldCode de la clase Field y actualizando la fórmula modificando el texto de la fórmula.

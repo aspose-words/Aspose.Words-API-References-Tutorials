@@ -111,3 +111,35 @@ Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```
 
+## Slutsats
+
+I den här handledningen lärde vi oss hur man flyttar en nod i ett spårat Word-dokument med Aspose.Words för .NET. Genom att följa stegen för att skapa dokumentet, aktivera revisionsspårning, flytta noden och stoppa revisionsspårning, kunde vi utföra denna manipulation framgångsrikt. Aspose.Words för .NET är ett kraftfullt verktyg för att arbeta med Word-dokument och erbjuder avancerade funktioner för att hantera revisioner. Nu kan du använda denna kunskap för att flytta noder i dina egna Word-dokument samtidigt som du spårar revisioner med Aspose.Words för .NET.
+
+### FAQ's
+
+#### F: Hur kan jag aktivera revisionsspårning i ett Aspose.Words for .NET-dokument?
+
+S: För att aktivera revisionsspårning i ett Aspose.Words för .NET-dokument kan du använda`StartTrackRevisions` metod för`Document` objekt. Denna metod tar som parametrar namnet på författaren till revisionerna och startdatumet för uppföljningen av revisionerna.
+
+```csharp
+doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+```
+
+#### F: Hur kan jag flytta en nod i ett spårat dokument utan att generera revisioner?
+
+ S: Om du vill flytta en nod i ett spårat dokument utan att generera revisioner kan du använda`Remove` och`InsertAfter` eller`InsertBefore` metoder för`Node` objekt. Till exempel, för att flytta ett stycke efter ett annat stycke, kan du använda följande kod:
+
+```csharp
+Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
+Node referenceNode = document.FirstSection.Body.Paragraphs[1];
+nodeToMove.Remove();
+document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
+```
+
+#### F: Hur kan jag stoppa revisionsspårning i ett Aspose.Words för .NET-dokument?
+
+ S: För att sluta spåra revisioner i ett Aspose.Words för .NET-dokument kan du använda`StopTrackRevisions` metod för`Document` objekt.
+
+```csharp
+doc.StopTrackRevisions();
+```

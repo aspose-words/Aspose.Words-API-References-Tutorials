@@ -32,14 +32,14 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## Paso 3: agregue una etiqueta de documento estructurado (SDT) al documento
- Agrega un`StructuredDocumentTag`al documento para que sirva como control de contenido. Especifica el`SdtType` como`PlainText` y el`MarkupLevel` como`Block` para crear una SDT a nivel de bloque.
+ Agrega un`StructuredDocumentTag` al documento para que sirva como control de contenido. Especifica el`SdtType` como`PlainText` y el`MarkupLevel` como`Block` para crear una SDT a nivel de bloque.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);
 doc.FirstSection.Body.AppendChild(sdt);
 ```
 
-## Paso 4: Establecer la asignación XML para la SDT
+## Paso 4: establecer la asignación XML para la SDT
  Asigne el SDT al`CustomXmlPart` usando el`SetMapping` metodo de la`XmlMapping` propiedad. Especifica el`CustomXmlPart` , la expresión XPath para ubicar el nodo XML deseado y el prefijo del espacio de nombres si es necesario. En este ejemplo, asignamos el SDT a`/root[1]/text[1]`.
 
 ```csharp

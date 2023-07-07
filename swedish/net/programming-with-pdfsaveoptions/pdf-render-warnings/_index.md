@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with image.docx");
 
 ## Steg 3: Konfigurera spara som PDF-alternativ med renderingsvarningar
 
-För att hantera renderingsvarningar vid konvertering till PDF måste vi konfigurera`MetafileRenderingOptions` objekt för att specificera hur metafiler renderas. Vi använder också`HandleDocumentWarnings` möjlighet att hantera de varningar som genereras när dokumentet sparas.
+ För att hantera renderingsvarningar vid konvertering till PDF måste vi konfigurera`MetafileRenderingOptions` objekt för att specificera hur metafiler renderas. Vi använder också`HandleDocumentWarnings` möjlighet att hantera de varningar som genereras när dokumentet sparas.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -83,7 +83,7 @@ Det är allt ! Du har lyckats hantera rendering av varningar vid konvertering av
 
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 
-	// Om Aspose.Words inte kan rendera några av metafilposterna korrekt
+	//Om Aspose.Words inte kan rendera några av metafilposterna korrekt
 	// till vektorgrafik sedan renderar Aspose.Words denna metafil till en bitmapp.
 	HandleDocumentWarnings callback = new HandleDocumentWarnings();
 	doc.WarningCallback = callback;
@@ -97,3 +97,32 @@ Det är allt ! Du har lyckats hantera rendering av varningar vid konvertering av
 	}
         
 ```
+
+### Vanliga frågor
+
+#### F: Vad är funktionen för PDF-renderingsvarningar med Aspose.Words för .NET?
+Funktionen PDF Rendering Warnings med Aspose.Words för .NET hjälper till att hantera varningar som genereras när ett dokument konverteras till PDF. Det tillhandahåller ett sätt att upptäcka och hantera renderingsvarningar för att säkerställa kvaliteten och integriteten hos det konverterade dokumentet.
+
+#### F: Hur kan jag använda den här funktionen med Aspose.Words för .NET?
+För att använda den här funktionen med Aspose.Words för .NET, följ dessa steg:
+
+Ställ in dokumentkatalogen genom att ange katalogsökvägen där dina dokument finns.
+
+ Ladda dokumentet som ska bearbetas med hjälp av`Document` metod och ange filsökvägen.
+
+ Konfigurera spara till PDF-alternativ genom att skapa en instans av`PdfSaveOptions` klass. Använd`MetafileRenderingOptions` klass för att specificera hur metafiler renderas och ställs in`MetafileRenderingOptions.RenderingMode` till`MetafileRenderingMode.VectorWithFallback`.
+
+ Använd`HandleDocumentWarnings` klass för att hantera renderingsvarningar. Uppsättning`doc.WarningCallback` till en instans av den här klassen.
+
+ Använd`Save` metod för att spara dokumentet i PDF-format med angivande av sparalternativ.
+
+Du kan sedan hantera renderingsvarningar med hjälp av`HandleDocumentWarnings` klass. Du kan till exempel visa beskrivningen av varje varning med hjälp av en slinga.
+
+#### F: Hur vet jag om det fanns några återgivningsvarningar när jag konverterade dokumentet till PDF?
+ Du kan använda`HandleDocumentWarnings` klass för att hämta renderingsvarningar som genereras när dokumentet sparas. Denna klass innehåller en`mWarnings` lista som lagrar information om varningar. Du kan bläddra i den här listan och komma åt varje varnings egenskaper, till exempel beskrivning, för att vidta lämpliga åtgärder.
+
+#### F: Vilken typ av renderingsvarningar kan genereras vid konvertering till PDF?
+Att återge varningar vid konvertering till PDF kan inkludera varningar relaterade till layout, saknade teckensnitt, bilder som inte stöds, kompatibilitetsproblem, etc. De specifika varningarna beror på innehållet i källdokumentet och de konverteringsalternativ som används.
+
+#### F: Är det möjligt att hantera renderingsvarningar på ett anpassat sätt?
+ Ja, du kan anpassa hanteringen av återgivningsvarningar genom att anpassa`HandleDocumentWarnings`klass. Du kan lägga till ytterligare funktioner för att hantera varningar som är specifika för din applikation, som att logga varningar, generera rapporter, skicka varningar och mer.

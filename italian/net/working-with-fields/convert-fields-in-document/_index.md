@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 3: caricare il documento
- Usa il`Document` class di Aspose.Words per caricare il documento Word contenente i campi collegati che si desidera convertire.
+ Usa il`Document`class di Aspose.Words per caricare il documento Word contenente i campi collegati che si desidera convertire.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");
@@ -65,3 +65,29 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 
 ## Conclusione
 Aspose.Words per la funzione ConvertFieldsInDocument di .NET è un potente strumento per convertire i campi collegati in un documento Word in testo. 
+
+### FAQ
+
+#### D: Cos'è una conversione di campo in Aspose.Words?
+
+A: Una conversione di campo in Aspose.Words si riferisce alla capacità di trasformare i dati da un campo in un documento di Word utilizzando diversi formati o tipi di dati. Ciò consente di modificare la presentazione o la struttura dei dati nel documento finale.
+
+#### D: Come convertire i campi in un documento Word con Aspose.Words?
+
+A: Per convertire i campi in un documento Word con Aspose.Words, puoi seguire questi passaggi:
+
+1. Importa la classe Document dallo spazio dei nomi Aspose.Words.
+2. Crea un'istanza di Documento caricando il tuo documento esistente.
+3. Utilizzare il metodo UpdateFields per aggiornare tutti i campi nel documento ed eseguire le conversioni.
+
+#### D: Quali tipi di conversioni sono possibili in Aspose.Words?
+
+A: Aspose.Words supporta diversi tipi di conversioni nei campi, come la conversione di formati di data, la conversione di formati numerici, la conversione di formati di testo, la conversione di formati di valuta, la conversione di formati di percentuale e altro ancora. Puoi consultare la documentazione di Aspose.Words per un elenco completo dei tipi di conversione supportati.
+
+#### D: La conversione dei campi modifica i dati originali nel documento Word?
+
+R: No, la conversione dei campi in Aspose.Words non influisce sui dati originali nel documento di Word. La conversione viene applicata durante l'aggiornamento dei campi, ma i dati originali rimangono intatti. In questo modo è possibile tornare allo stato originale del documento in qualsiasi momento.
+
+#### D: È possibile personalizzare le conversioni di campo in Aspose.Words?
+
+R: Sì, è possibile personalizzare le conversioni di campo in Aspose.Words utilizzando codici di formattazione specifici o regolando le opzioni di conversione disponibili. Puoi definire formati personalizzati per date, numeri, testi, ecc., per soddisfare le tue esigenze specifiche.

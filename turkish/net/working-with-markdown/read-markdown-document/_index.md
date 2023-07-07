@@ -52,3 +52,25 @@ doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 
 Tebrikler! Artık bir Markdown belgesini Aspose.Words for .NET ile nasıl okuyacağınızı öğrendiniz.
 
+
+### SSS
+
+#### S: .NET kullanarak bir Markdown belgesi nasıl okunur?
+
+C: .NET kullanarak bir Markdown belgesini okumak için Markdown uyumlu bir kitaplık kullanabilirsiniz, örneğin`Markdig` veya`CommonMark.NET`. Bu kitaplıklar, bir Markdown belgesinden içeriği ayrıştırmak ve ayıklamak için işlevsellik sağlar.
+
+#### S: .NET kullanarak bir Markdown belgesini HTML'ye nasıl dönüştürebilirim?
+
+ Y: Bir Markdown belgesini .NET kullanarak HTML'ye dönüştürmek için aşağıdaki kitaplıkları kullanabilirsiniz:`Markdig` veya`CommonMark.NET`. Bu kitaplıklar, belge yapısını ve biçimlendirmeyi koruyarak Markdown işaretlemesini HTML işaretlemesine çevirir.
+
+#### S: Markdown'dan HTML'ye dönüştürmeyi özelleştirebilir miyiz?
+
+Y: Evet, .NET kitaplıklarındaki bazı Markdown, Markdown'ı HTML'ye dönüştürürken özelleştirme seçenekleri sunar. CSS stilleri, CSS sınıfları, ek etiketler vb. gibi parametreler belirleyebilirsiniz.
+
+#### S: Markdown belgelerini işlemek için önerilen .NET kitaplıkları nelerdir?
+
+ C: Markdown belgelerini işlemek için önerilen .NET kitaplıkları şunlardır:`Markdig` Ve`CommonMark.NET`. Markdown özellikleri için büyük esneklik ve tam destek sunarlar.
+
+#### S: Bir Markdown belgesini okurken hataları nasıl ele alabilirim?
+
+Y: .NET kullanarak bir Markdown belgesini okurken, uygun hata işleme uygulamanız önerilir. Markdown belgesini ayrıştırırken hataları algılamak ve işlemek için istisna işleme mekanizmalarını kullanabilirsiniz.

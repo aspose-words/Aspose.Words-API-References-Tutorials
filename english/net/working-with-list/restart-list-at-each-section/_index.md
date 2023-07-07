@@ -87,3 +87,16 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 
 Feel free to use this code in your own projects and modify it to suit your specific needs.
 
+### FAQ's
+
+#### Q: How can I restart a list at every section in Aspose.Words?
+
+A: To restart a list at every section in Aspose.Words, you need to create an instance of the `List` class and assign a numbered list to it. Then you can use the `List.IsRestartAtEachSection` property to specify that numbering should be restarted at each section. You can associate this list with one or more sections of your document so that the numbering is restarted correctly at each section.
+
+#### Q: Can I customize the numbering format of lists in Aspose.Words?
+
+A: Yes, you can customize the numbering format of lists in Aspose.Words. The `List` class offers several properties for this, such as `List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, etc. You can use these properties to set the list type (numbered, bulleted, etc.), numbering format (Arabic numerals, Roman numerals, letters, etc.), and other numbering formatting options.
+
+#### Q: Is it possible to add additional levels to a numbered list in Aspose.Words?
+
+A: Yes, it is possible to add additional levels to a numbered list in Aspose.Words. The `ListLevel` class allows you to set formatting properties for each level of the list. You can set options like prefix, suffix, alignment, indent, etc. This allows you to create lists with multiple levels of hierarchy.

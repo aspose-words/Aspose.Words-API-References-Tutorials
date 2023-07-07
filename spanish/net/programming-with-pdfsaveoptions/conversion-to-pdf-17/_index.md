@@ -1,14 +1,14 @@
 ---
-title: Conversión a PDF 17
-linktitle: Conversión a PDF 17
+title: Convertir documento de Word a PDF 1.7
+linktitle: Convertir documento de Word a PDF 1.7
 second_title: Referencia de API de Aspose.Words para .NET
-description: Aprenda a convertir documentos a PDF 1.7 con Aspose.Words para .NET.
+description: Aprenda a convertir documentos de Word a PDF 1.7 con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/conversion-to-pdf-17/
 ---
 
-En este tutorial, lo guiaremos a través de los pasos para convertir a PDF 1.7 con Aspose.Words para .NET. La conversión a PDF 1.7 le permite generar archivos PDF que cumplen con el estándar PDF 1.7. Siga los pasos a continuación:
+En este tutorial, lo guiaremos a través de los pasos para convertir un documento de Word a PDF 1.7 con Aspose.Words para .NET. La conversión a PDF 1.7 le permite generar archivos PDF que cumplen con el estándar PDF 1.7. Siga los pasos a continuación:
 
 ## Paso 1: Cargar el documento
 
@@ -59,3 +59,30 @@ Aquí está el código fuente completo para convertir a PDF 1.7 con Aspose.Words
 
 Siguiendo estos pasos, puede convertir fácilmente a PDF 1.7 con Aspose.Words para .NET.
 
+
+## Conclusión
+
+En este tutorial, explicamos cómo convertir un documento de Word a PDF 1.7 usando Aspose.Words para .NET. Siguiendo los pasos descritos, puede generar fácilmente archivos PDF que cumplan con el estándar PDF 1.7. Asegúrese de especificar la ruta correcta a su documento de Word y configure las opciones para convertir a PDF según sea necesario. La conversión a PDF 1.7 garantiza una compatibilidad y legibilidad óptimas en diferentes plataformas.
+
+### Preguntas frecuentes
+
+#### P: ¿Qué es la conversión de Word a PDF 1.7?
+R: Convertir documentos de Word a PDF 1.7 es generar archivos PDF que cumplan con el estándar PDF 1.7. Este estándar especifica características y requisitos para archivos PDF, lo que permite una compatibilidad y legibilidad óptimas en diferentes plataformas.
+
+#### P: ¿Cómo puedo convertir un documento de Word a PDF 1.7 usando Aspose.Words para .NET?
+R: Para convertir un documento de Word a PDF 1.7 usando Aspose.Words para .NET, siga estos pasos:
+
+ Establezca la ruta del directorio donde se encuentran sus documentos reemplazando`"YOUR DOCUMENTS DIRECTORY"` con la ruta real de su directorio de documentos.
+
+ Cargue el documento de Word que desea convertir a PDF usando el`Document` clase y especifique la ruta al documento de Word en el directorio de documentos especificado.
+
+ Configure la conversión como opciones de PDF creando una instancia del`PdfSaveOptions`clase y especificando la versión del estándar PDF que desea utilizar mediante el`Compliance` propiedad con el valor`PdfCompliance. Pdf17` para generar un archivo PDF que cumpla con el estándar PDF 1.7.
+
+ Guarde el documento en formato PDF usando el`Save` metodo de la`Document`class especificando la ruta y las opciones de guardado.
+
+#### P: ¿Cuáles son los beneficios de convertir a PDF 1.7 con Aspose.Words para .NET?
+R: Las ventajas de convertir a PDF 1.7 con Aspose.Words para .NET son:
+
+Compatible con PDF 1.7: la conversión a PDF 1.7 garantiza que el archivo PDF generado sea compatible con PDF 1.7, lo que garantiza la compatibilidad y legibilidad en diferentes plataformas.
+
+Preservación del formato de documentos: Aspose.Words para .NET garantiza la conversión precisa de documentos de Word al preservar el formato, las imágenes y los estilos, lo que da como resultado un archivo PDF fiel al original.

@@ -59,3 +59,25 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
+
+### FAQs
+
+#### F: Ist Aspose.Words mit verschiedenen Versionen von Microsoft Word kompatibel?
+
+A: Ja, Aspose.Words ist mit verschiedenen Versionen von Microsoft Word kompatibel, einschließlich Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 und Word 2019.
+
+#### F: Kann Aspose.Words mit komplexen Feldstrukturen umgehen?
+
+A: Auf jeden Fall! Aspose.Words bietet umfassende Unterstützung für komplexe Feldstrukturen, einschließlich verschachtelter Felder, Berechnungen und bedingter Ausdrücke. Sie können die leistungsstarke API nutzen, um mit jeder Art von Feldstruktur zu arbeiten.
+
+#### F: Unterstützt Aspose.Words Feldaktualisierungsvorgänge?
+
+A: Ja, mit Aspose.Words können Sie Felder programmgesteuert aktualisieren. Mit der API können Sie ganz einfach Feldwerte aktualisieren, Berechnungen aktualisieren und andere feldbezogene Vorgänge ausführen.
+
+#### F: Kann ich Felder mit Aspose.Words in einfachen Text konvertieren?
+
+A: Auf jeden Fall! Aspose.Words bietet Methoden zum Konvertieren von Feldern in einfachen Text. Dies kann nützlich sein, wenn Sie den Inhalt ohne feldbezogene Formatierung oder Funktionalität extrahieren müssen.
+
+#### F: Ist es möglich, mit Aspose.Words Word-Dokumente mit dynamischen Feldern zu generieren?
+
+A: Auf jeden Fall! Aspose.Words bietet robuste Funktionen zum Generieren von Word-Dokumenten mit dynamischen Feldern. Sie können Vorlagen mit vordefinierten Feldern erstellen und diese dynamisch mit Daten füllen und so eine flexible und effiziente Lösung zur Dokumentenerstellung bereitstellen.

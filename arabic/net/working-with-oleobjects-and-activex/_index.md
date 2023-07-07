@@ -15,8 +15,8 @@ url: /ar/net/working-with-oleobjects-and-activex/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [إدراج كائن Ole](./insert-ole-object/) | تعرف على كيفية إدراج كائن OLE في مستند باستخدام Aspose.Words for .NET. |
-| [قم بإدراج كائن Ole مع حزمة Ole](./insert-ole-object-with-ole-package/) | تعرف على كيفية إدراج كائن OLE مع حزمة OLE في مستند باستخدام Aspose.Words for .NET. |
-| [إدراج كائن Ole كرمز](./insert-ole-object-as-icon/) | تعرف على كيفية إدراج كائن OLE كرمز باستخدام Aspose.Words for .NET. |
+| [إدراج كائن Ole في مستند Word](./insert-ole-object/) | تعرف على كيفية إدراج كائن OLE في مستند Word باستخدام Aspose.Words for .NET. |
+| [قم بإدراج كائن Ole في Word باستخدام حزمة Ole](./insert-ole-object-with-ole-package/) | تعرف على كيفية إدراج كائن OLE في كلمة مع حزمة OLE في مستند باستخدام Aspose.Words for .NET. |
+| [إدراج كائن Ole في مستند Word كرمز](./insert-ole-object-as-icon/) | تعرف على كيفية إدراج كائن OLE في مستند Word كأيقونة باستخدام Aspose.Words for .NET. |
 | [قم بإدراج كائن Ole كرمز باستخدام الدفق](./insert-ole-object-as-icon-using-stream/) | تعرف على كيفية إدراج كائن OLE كرمز باستخدام دفق باستخدام Aspose.Words for .NET. |
-| [قراءة خصائص Active XControl](./read-active-xcontrol-properties/) | اقرأ خصائص عناصر تحكم ActiveX في مستند Word باستخدام Aspose.Words for .NET. |
+| [قراءة خصائص XControl النشطة من ملف Word](./read-active-xcontrol-properties/) | اقرأ خصائص عناصر تحكم ActiveX في ملف Word باستخدام Aspose.Words for .NET. |

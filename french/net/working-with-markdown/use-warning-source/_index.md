@@ -61,3 +61,17 @@ foreach (WarningInfo warningInfo in warnings)
 ```
 
 Félicitation ! Vous avez maintenant appris à utiliser la source d'avertissement avec Aspose.Words pour .NET.
+
+### FAQ
+
+#### Q : Pouvons-nous personnaliser l'apparence de la balise "Avertissement" ?
+
+R : La mise en forme de la balise "Avertissement" dépend du moteur de rendu Markdown utilisé. Dans la plupart des cas, vous pouvez personnaliser l'apparence en utilisant CSS pour cibler le`blockquote` balise dans votre document.
+
+#### Q : Est-il possible d'ajouter des icônes à la balise "Avertissement" ?
+
+ R : Oui, il est possible d'ajouter des icônes à la balise "Avertissement" en utilisant le code HTML dans votre document Markdown. Vous pouvez insérer un`span` balise avec la classe appropriée pour afficher une icône à côté du texte d'avertissement.
+
+#### Q : La balise "Warning" est-elle compatible avec tous les lecteurs Markdown ?
+
+ R : La compatibilité de la balise "Warning" dépend du rendu Markdown utilisé. La plupart des lecteurs Markdown prendront en charge le`blockquote` balise pour afficher le texte en surbrillance, mais l'apparence exacte peut varier.

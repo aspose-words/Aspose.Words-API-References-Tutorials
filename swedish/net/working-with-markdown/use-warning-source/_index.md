@@ -61,3 +61,17 @@ foreach (WarningInfo warningInfo in warnings)
 ```
 
 Grattis! Du har nu lärt dig hur du använder varningskällan med Aspose.Words för .NET.
+
+### FAQ's
+
+#### F: Kan vi anpassa utseendet på "Varning"-taggen?
+
+S: Formateringen av "Warning"-taggen beror på vilken Markdown-renderare som används. I de flesta fall kan du anpassa utseendet genom att använda CSS för att rikta in dig på`blockquote` taggen i ditt dokument.
+
+#### F: Är det möjligt att lägga till ikoner i "Varning"-taggen?
+
+ S: Ja, det är möjligt att lägga till ikoner till "Varning"-taggen med HTML-kod i ditt Markdown-dokument. Du kan infoga en`span` tagga med lämplig klass för att visa en ikon bredvid varningstexten.
+
+#### F: Är "Warning"-taggen kompatibel med alla Markdown-läsare?
+
+ S: Kompatibiliteten för "Warning"-taggen beror på vilken Markdown-rendering som används. De flesta Markdown-läsare kommer att stödja`blockquote` taggen för att visa markerad text, men det exakta utseendet kan variera.

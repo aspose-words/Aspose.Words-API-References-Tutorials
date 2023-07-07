@@ -12,7 +12,7 @@ Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som anv
 
 ## Steg 1: Installation av dokumentkatalog
 
-I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
+den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -76,3 +76,26 @@ doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 I det här exemplet skapade vi ett nytt dokument, infogade ett ASK-fält utan att använda DocumentBuilder, konfigurerade fältets olika egenskaper och sparade dokumentet med ett angivet filnamn.
 
 Detta avslutar vår guide om hur du använder funktionen "Infoga ASK-fält utan DocumentBuilder" med Aspose.Words för .NET.
+
+### FAQ's
+
+#### F: Vad är ett ASK-fält i Aspose.Words?
+
+S: Ett ASK-fält i Aspose.Words används för att ställa en fråga till användaren när ett dokument öppnas. Det används ofta för att begära specifik information eller feedback som kan variera från användare till användare.
+
+#### F: Hur infogar man ASK-fält i Word-dokument utan att använda Document Builder i Aspose.Words?
+
+S: För att infoga ett ASK-fält i ett Word-dokument utan att använda Document Builder i Aspose.Words kan du följa dessa steg:
+
+1. Importera dokument och fältklass från namnområdet Aspose.Words.Fields.
+2. Skapa en instans av dokument genom att ladda ditt befintliga dokument.
+3. Använd metoden InsertField för att infoga ett ASK-fält genom att ange frågenamnet.
+4. Spara dokumentet.
+
+#### F: Hur får jag användarsvaret för ett ASK-fält i ett Word-dokument?
+
+S: För att få användarens svar på ett ASK-fält i ett Word-dokument kan du använda metoden GetFieldNames som finns tillgänglig i klassen Document. Denna metod returnerar en lista över namnen på fälten som finns i dokumentet. Du kan sedan kontrollera om ASK-fältnamnet finns i listan och hämta det associerade svaret.
+
+#### F: Kan fältet ASK användas för att begära mer information från användaren?
+
+S: Ja, fältet FRÅGA kan användas för att begära flera delar av information från användaren. Du kan infoga flera ASK-fält i ditt dokument, vart och ett med olika frågor. När dokumentet öppnas kommer användaren att bli tillfrågad om motsvarande svar.

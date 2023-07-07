@@ -1,6 +1,6 @@
 ---
-title: Bidi İşaretleri Ekleyin
-linktitle: Bidi İşaretleri Ekleyin
+title: Word Belgesine Bidi İşaretleri Ekleme
+linktitle: Word Belgesine Bidi İşaretleri Ekleme
 second_title: Aspose.Words for .NET API Referansı
 description: Aspose.Words for .NET kullanarak bir Word belgesine Bidi işaretleri eklemeyi öğrenin ve profesyonel çok dilli belgeler oluşturun.
 type: docs
@@ -66,3 +66,28 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 ## Çözüm
 
 Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesine Bidi işaretleri eklemek için Aspose.Words for .NET'in nasıl kullanılacağını açıkladık. Verilen adımları izleyerek, Bidi işaretlerini C# uygulamanızda Word belgelerinize kolayca ekleyebilirsiniz. Aspose.Words, metin formatlama ve dil yönetimi ile çalışmak için muazzam bir esneklik ve güç sunarak, çok dilli belgeleri profesyonelce oluşturmanıza olanak tanır.
+
+### Sıkça Sorulan Sorular
+
+#### S: Aspose.Words for .NET nedir?
+Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, düzenlemek ve değiştirmek için güçlü bir kitaplıktır. Bidi (çift yönlü) işaretleri eklemek de dahil olmak üzere Word belgeleriyle çalışmak için birçok özellik sunar.
+
+#### S: Aspose.Words for .NET hangi özellikleri sunuyor?
+Aspose.Words for .NET, Word belgeleri oluşturmak, düzenlemek ve değiştirmek için çok çeşitli özellikler sunar. Bu özelliklerden bazıları, belge oluşturma, içerik ekleme, metni biçimlendirme, tabloları yönetme, belgeleri birleştirme ve bölme, belgeleri dönüştürme ve daha fazlasını içerir.
+
+#### S: Aspose.Words for .NET kullanarak Bidi işaretlerini bir Word belgesine nasıl ekleyebilirim?
+Aşağıdaki adımları izleyerek Bidi işaretlerini bir Word belgesine ekleyebilirsiniz:
+
+ kullanarak yeni bir belge oluşturun.`Document` sınıf.
+
+ Kullan`DocumentBuilder` belgeye içerik eklemek için sınıf.
+
+ İçeriği ekledikten sonra,`TxtSaveOptions` sınıflandırın ve ayarlayın`AddBidiMarks` mülkiyet`true`.
+
+ kullanarak belgeyi Bidi işaretleriyle kaydedin.`Save` yöntemi`Document` sınıf.
+
+#### S: Aspose.Words, Bidi işaretleri eklemek için birden çok dili destekliyor mu?
+Evet, Aspose.Words, Bidi işaretleri eklemek için birden çok dili destekler. Aspose.Words for .NET'i kullanarak İngilizce, İbranice ve Arapça gibi farklı dillerdeki metne Bidi işaretleri ekleyebilirsiniz.
+
+#### S: Belgeyi Bidi işaretleriyle kaydetmek için herhangi bir ek seçenek var mı?
+Evet, Bidi işaretleriyle belgeyi kaydederken diğer seçenekleri belirleyebilirsiniz.`TxtSaveOptions` sınıf. Örneğin, belge kaydetme biçimini, kodlama seçeneklerini vb. ayarlayabilirsiniz.

@@ -21,7 +21,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 // Créer un nouveau document
 Document doc = new Document();
 
-// Créer un générateur de documents
+//Créer un générateur de documents
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
  Ensuite, nous allons configurer la police en définissant le`Name` propriété du générateur de documents.
 
 ```csharp
-//Configurer la police
+// Configurer la police
 builder.Font.Name = "Calibri";
 ```
 
@@ -62,3 +62,25 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 
 ## Conclusion
 Dans ce didacticiel, nous avons vu comment obtenir l'espacement des lignes de police dans un document Word avec Aspose.Words pour .NET. L'espacement des lignes de police est important pour contrôler l'espacement vertical entre les lignes de texte. N'hésitez pas à utiliser cette fonctionnalité pour personnaliser l'apparence de votre texte dans vos documents.
+
+### FAQ
+
+#### Q : Comment puis-je modifier l'interligne d'un texte spécifique dans un document Word ?
+
+R : Avec Aspose.Words, vous pouvez facilement modifier l'interligne d'un texte spécifique dans un document Word. Utilisez l'API pour sélectionner le texte souhaité et ajuster l'espacement entre les lignes en spécifiant la valeur appropriée.
+
+#### Q : Est-il possible d'appliquer un espacement exact entre les lignes dans un document Word ?
+
+R : Oui, Aspose.Words vous permet d'appliquer un espacement exact entre les lignes dans un document Word. Vous pouvez spécifier une valeur précise pour l'interligne à l'aide de l'API.
+
+#### Q : Comment puis-je ajuster l'espacement des lignes pour l'ensemble du document Word ?
+
+R : Avec Aspose.Words, vous pouvez facilement ajuster l'espacement des lignes pour l'ensemble du document Word. Utilisez les méthodes fournies par l'API pour spécifier l'interligne souhaité pour l'ensemble du document.
+
+#### Q : Aspose.Words prend-il en charge plusieurs interlignes ?
+
+R : Oui, Aspose.Words prend en charge plusieurs interlignes dans les documents Word. Vous pouvez définir plusieurs espacements, tels que 1,5 fois ou 2 fois l'espacement normal, pour les lignes de votre texte.
+
+#### Q : Comment puis-je éviter les problèmes de chevauchement de lignes lors du réglage de l'interligne ?
+
+R : Pour éviter les problèmes de chevauchement de lignes lors du réglage de l'espacement entre les lignes, assurez-vous de choisir les valeurs d'espacement appropriées. Testez également le rendu final de votre document pour vous assurer que le texte reste lisible et bien formaté.

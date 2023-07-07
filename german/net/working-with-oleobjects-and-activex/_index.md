@@ -15,8 +15,8 @@ Diese Tutorials vermitteln Ihnen einen praktischen, schrittweisen Ansatz für di
  ## Tutorials
 | Titel | Beschreibung |
 | --- | --- |
-| [Ole-Objekt einfügen](./insert-ole-object/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein OLE-Objekt in ein Dokument einfügen. |
-| [Ole-Objekt mit Ole-Paket einfügen](./insert-ole-object-with-ole-package/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein OLE-Objekt mit einem OLE-Paket in ein Dokument einfügen. |
-| [Ole-Objekt als Symbol einfügen](./insert-ole-object-as-icon/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein OLE-Objekt als Symbol einfügen. |
+| [Ole-Objekt in Word-Dokument einfügen](./insert-ole-object/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein OLE-Objekt in ein Word-Dokument einfügen. |
+| [Ole-Objekt mit Ole-Paket in Word einfügen](./insert-ole-object-with-ole-package/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein OLE-Objekt in Word mit einem OLE-Paket in ein Dokument einfügen. |
+| [Ole-Objekt als Symbol in Word-Dokument einfügen](./insert-ole-object-as-icon/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein OLE-Objekt als Symbol in ein Word-Dokument einfügen. |
 | [Ole-Objekt mit Stream als Symbol einfügen](./insert-ole-object-as-icon-using-stream/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein OLE-Objekt als Symbol mithilfe eines Streams einfügen. |
-| [Lesen Sie die Eigenschaften von Active XControl](./read-active-xcontrol-properties/) | Lesen Sie Eigenschaften von ActiveX-Steuerelementen in einem Word-Dokument mit Aspose.Words für .NET. |
+| [Lesen Sie die ActiveXControl-Eigenschaften aus der Word-Datei](./read-active-xcontrol-properties/) | Lesen Sie Eigenschaften von ActiveX-Steuerelementen in einer Word-Datei mit Aspose.Words für .NET. |

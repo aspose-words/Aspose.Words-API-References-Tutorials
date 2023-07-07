@@ -15,7 +15,7 @@ Prima di iniziare, assicurati di avere i seguenti elementi:
 - La libreria Aspose.Words per .NET installata nel tuo progetto
 
 ## Passaggio 1: definire la directory dei documenti
-Inizia impostando il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
+ Inizia impostando il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -68,3 +68,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 
 ## Conclusione
 Congratulazioni! Ora sai come impostare la formattazione dei caratteri in un documento di Word utilizzando Aspose.Words per .NET. Puoi esplorare più opzioni di formattazione dei caratteri e creare documenti Word personalizzati e accattivanti.
+
+### FAQ
+
+#### D: Come posso applicare lo stile grassetto a un carattere in un documento di Word utilizzando Aspose.Words?
+
+R: Per applicare lo stile grassetto a un carattere in un documento Word utilizzando Aspose.Words, puoi utilizzare l'API per navigare fino al carattere desiderato e impostarne lo stile su "grassetto". Questo applicherà lo stile grassetto al carattere specificato.
+
+#### D: È possibile applicare lo stile corsivo a una parte specifica del testo in un documento Word con Aspose.Words?
+
+R: Sì, con Aspose.Words puoi applicare lo stile corsivo a una parte specifica del testo in un documento Word. Puoi utilizzare l'API per selezionare l'intervallo di testo desiderato e impostarne lo stile su "corsivo".
+
+#### Q: Come posso cambiare il colore del carattere in un documento di Word usando Aspose.Words?
+
+A: Per cambiare il colore del carattere in un documento Word usando Aspose.Words, puoi accedere al carattere desiderato usando l'API e impostarne il colore sul colore desiderato. Questo cambierà il colore del carattere nel documento.
+
+#### D: È possibile modificare la dimensione del carattere in un documento di Word utilizzando Aspose.Words?
+
+A: Sì, è possibile modificare la dimensione del carattere in un documento di Word utilizzando Aspose.Words. L'API ti consente di accedere al carattere e impostarne la dimensione in punti o punti di scala, a seconda delle tue esigenze.
+
+#### D: Posso applicare più formati di carattere, ad esempio grassetto e corsivo, allo stesso testo in un documento di Word?
+
+A: Sì, con Aspose.Words puoi applicare più formati di carattere, come grassetto e corsivo, allo stesso testo in un documento Word. Puoi utilizzare l'API per impostare i diversi stili di carattere desiderati per le diverse parti del testo.

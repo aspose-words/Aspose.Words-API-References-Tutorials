@@ -48,3 +48,17 @@ builder.Writeln("This text will be StrikeThrough");
 ```
 
 Grattis! Du har nu lärt dig hur du använder den genomstrukna textstilen med Aspose.Words för .NET.
+
+### FAQ's
+
+#### F: Hur kan jag lägga till den genomstrukna texten i Aspose.Words?
+
+ S: För att lägga till den genomstrukna texten i Aspose.Words kan du använda`Font.StrikeThrough` egendom av`Run`objekt. Du kan ställa in den här egenskapen till`true` för att lägga till genomstruken text till specifik text. Du kan till exempel använda`run.Font.StrikeThrough=true` för att lägga till den genomstrukna texten i`Run` objekt.
+
+#### F: Är det möjligt att lägga till den genomstrukna texten i flera textstycken i samma stycke?
+
+ S: Ja, du kan lägga till genomstruken text i flera delar av texten i ett enda stycke genom att använda flera`Run` föremål. Du kan skapa flera`Run` objekt och ställ in`Font.StrikeThrough` egendom till`true`för varje objekt för att lägga till den genomstrukna texten till de önskade textdelarna. Sedan kan du lägga till dem i stycket med hjälp av`Paragraph.AppendChild(run)` metod.
+
+#### F: Kan jag lägga till genomstruken text till text som finns i en tabell eller cell i Aspose.Words?
+
+ S: Ja, du kan lägga till genomstruken text till text som finns i en tabell eller cell i Aspose.Words. Du kan hoppa till cellen eller stycket du vill använda med lämpliga metoder och sedan tillämpa den genomstrukna textformateringen med hjälp av`Font.StrikeThrough` egendom av`Run` eller`Paragraph` objekt.

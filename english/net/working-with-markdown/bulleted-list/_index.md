@@ -73,4 +73,25 @@ builder.Writeln("Item 2b");
 
 Congratulation ! You have now learned how to create a bulleted list with Aspose.Words for .NET.
 
+### FAQ's
+
+#### Q: How to create a bulleted list in Markdown?
+
+A: To create a bulleted list in Markdown, start each list item with a bullet symbol (`-`, `*`, or `+`), followed by a space.
+
+#### Q: Can you nest bulleted lists in Markdown?
+
+A: Yes, it is possible to nest bulleted lists in Markdown by adding four offset spaces in front of each nested list item.
+
+#### Q: How to customize bullet symbols?
+
+A: In standard Markdown, bullet symbols are predefined. However, some Markdown editors allow you to customize them using specific extensions.
+
+#### Q: Do bulleted lists in Markdown support indentation?
+
+A: Yes, bulleted lists in Markdown support indentation. You can add a left shift using spaces or tabs.
+
+#### Q: Can links or inline text be added to list items?
+
+A: Yes, you can add links or inline text to list items using the appropriate Markdown syntax.
 

@@ -1,14 +1,14 @@
 ---
-title: Escalar fuentes Wmf al tamaño de metarchivo
-linktitle: Escalar fuentes Wmf al tamaño de metarchivo
+title: Reduzca el tamaño de PDF con escalar fuentes Wmf al tamaño de metarchivo
+linktitle: Reduzca el tamaño de PDF con escalar fuentes Wmf al tamaño de metarchivo
 second_title: Referencia de API de Aspose.Words para .NET
-description: Guía paso a paso para ajustar el tamaño de fuente WMF al convertir a PDF con Aspose.Words para .NET.
+description: Guía paso a paso para reducir el tamaño de un pdf escalando las fuentes wmf al tamaño del metarchivo al convertir a PDF con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
 
-Este artículo proporciona una guía paso a paso sobre cómo utilizar la función Escalado de fuentes WMF a tamaño de metarchivo con Aspose.Words para .NET. Explicaremos cada parte del código en detalle. Al final de este tutorial, podrá comprender cómo habilitar o deshabilitar el escalado de fuentes WMF al convertir a PDF.
+Este artículo proporciona una guía paso a paso sobre cómo reducir el tamaño de un pdf con la función de escalar fuentes wmf a tamaño de metarchivo con Aspose.Words para .NET. Explicaremos cada parte del código en detalle. Al final de este tutorial, podrá comprender cómo habilitar o deshabilitar el escalado de fuentes WMF al convertir a PDF.
 
 Antes de comenzar, asegúrese de haber instalado y configurado la biblioteca Aspose.Words para .NET en su proyecto. Puede encontrar la biblioteca y las instrucciones de instalación en el sitio web de Aspose.
 
@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with text.docx");
 
 ## Paso 3: Configure las opciones de representación de metarchivos
 
- Para habilitar o deshabilitar la escala de fuentes WMF al tamaño del metarchivo, debemos configurar el`MetafileRenderingOptions` objeto. En este ejemplo, deshabilitamos la escala de fuente configurando el`ScaleWmfFontsToMetafileSize` propiedad a`false`.
+ Para habilitar o deshabilitar la escala de fuentes WMF al tamaño del metarchivo, debemos configurar el`MetafileRenderingOptions`objeto. En este ejemplo, deshabilitamos la escala de fuente configurando el`ScaleWmfFontsToMetafileSize` propiedad a`false`.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -80,3 +80,32 @@ un documento PDF utilizando Aspose.Words para .NET.
 	
         
 ```
+
+## Conclusión
+
+En este tutorial, explicamos cómo habilitar o deshabilitar el cambio de tamaño de las fuentes WMF al tamaño de un metarchivo en un documento PDF usando Aspose.Words para .NET. Siguiendo los pasos descritos, puede controlar fácilmente si se debe cambiar el tamaño de las fuentes WMF para que coincidan con el tamaño del metarchivo al convertir a un documento PDF. Esto puede ayudarlo a reducir el tamaño del archivo PDF generado y mejorar el rendimiento de la representación. Asegúrese de especificar la ruta correcta a sus documentos y configure las opciones de representación del metarchivo según sea necesario.
+
+### Preguntas frecuentes
+
+#### P: ¿Qué significa cambiar el tamaño de las fuentes WMF al tamaño de un metarchivo en un documento PDF?
+R: Cambiar el tamaño de las fuentes WMF al tamaño del metarchivo en un documento PDF es una función que controla si las fuentes WMF deben escalarse para que coincidan con el tamaño del metarchivo al convertir a un documento PDF. Cuando esta función está habilitada, las fuentes WMF se escalan para que coincidan con el tamaño del metarchivo, lo que puede reducir el tamaño del documento PDF generado.
+
+#### P: ¿Cómo puedo usar Aspose.Words para .NET para habilitar o deshabilitar el cambio de tamaño de las fuentes WMF al tamaño de un metarchivo en un documento PDF?
+R: Para habilitar o deshabilitar el cambio de tamaño de las fuentes WMF al tamaño de un metarchivo en un documento PDF mediante Aspose.Words para .NET, siga estos pasos:
+
+ Establezca la ruta del directorio donde se encuentran sus documentos reemplazando`"YOUR DOCUMENT DIRECTORY"` con la ruta real de su directorio de documentos.
+
+ Cargue el documento que desea procesar utilizando el`Document` clase y especifique la ruta al documento de Word en el directorio de documentos especificado.
+
+ Configure las opciones de representación del metarchivo creando una instancia del`MetafileRenderingOptions` clase y establecer el`ScaleWmfFontsToMetafileSize` propiedad a`true` para habilitar la escala de fuentes WMF al tamaño de un metarchivo, o para`false` para deshabilitar esta función.
+
+ Configure las opciones de guardar como PDF creando una instancia del`PdfSaveOptions` class y utilizando las opciones de representación de metarchivos configuradas anteriormente.
+
+ Guarde el documento en formato PDF usando el`Save` metodo de la`Document`class especificando la ruta y las opciones de guardado.
+
+#### P: ¿Cuáles son los beneficios de cambiar el tamaño de las fuentes WMF al tamaño de un metarchivo en un documento PDF?
+R: Las ventajas de cambiar el tamaño de las fuentes WMF al tamaño de un metarchivo en un documento PDF son:
+
+Reducción del tamaño del archivo PDF: cambiar el tamaño de las fuentes WMF al tamaño del metarchivo puede reducir el tamaño del documento PDF generado al adaptar el tamaño de la fuente a las necesidades del metarchivo.
+
+Rendimiento mejorado: al ajustar el tamaño de las fuentes WMF a las dimensiones del metarchivo, la representación del documento PDF puede ser más rápida y eficiente.

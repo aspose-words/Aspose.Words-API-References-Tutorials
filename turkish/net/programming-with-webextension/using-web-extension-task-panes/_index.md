@@ -14,7 +14,7 @@ Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzd
 
 ## 1. Adım: Belge dizinini tanımlayın
 
- Başlamak için, oluşturulan belgeyi kaydetmek istediğiniz dizinin yolunu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla.
+Başlamak için, oluşturulan belgeyi kaydetmek istediğiniz dizinin yolunu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

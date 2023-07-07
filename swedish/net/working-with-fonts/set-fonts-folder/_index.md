@@ -15,7 +15,7 @@ Innan du börjar, se till att du har följande saker:
 - Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
 ## Steg 1: Definiera dokumentkatalogen
-Börja med att ange katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
+ Börja med att ange katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -56,3 +56,21 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ## Slutsats
 Grattis! Du vet nu hur du ställer in typsnittskatalogen i Aspose.Words för .NET. Du kan använda den här funktionen för att säkerställa tillgängligheten för teckensnitt som används i ditt dokument och för att säkerställa konsekvens i visningen av teckensnitt.
+
+### FAQ's
+
+#### F: Hur kan jag ställa in en anpassad typsnittsmapp i Aspose.Words?
+
+ S: För att ställa in en anpassad typsnittsmapp i Aspose.Words kan du använda`FontsFolder` klass och`SetFontsFolders` metod som anger sökvägen till mappen som innehåller dina teckensnitt.
+
+#### F: Kan jag ställa in flera teckensnittsmappar i Aspose.Words?
+
+ S: Ja, du kan ställa in flera teckensnittsmappar i Aspose.Words genom att anropa`SetFontsFolders` metod flera gånger med sökvägarna till de olika teckensnittsmapparna du vill använda.
+
+#### F: Vad händer om ett teckensnitt som används i dokumentet inte finns i de definierade teckensnittsmapparna?
+
+S: Om ett teckensnitt som används i dokumentet inte finns i teckensnittsmapparna som definieras i Aspose.Words, kommer ett ersättningsteckensnitt att användas istället. Detta säkerställer att texten i dokumentet alltid kommer att visas korrekt, även om det ursprungliga teckensnittet inte är tillgängligt.
+
+#### F: Har teckensnittsmappar som definieras i Aspose.Words företräde framför teckensnitt som är installerade på systemet?
+
+S: Ja, typsnittsmappar som definieras i Aspose.Words har företräde framför teckensnitt som är installerade på systemet. Det betyder att om ett typsnitt med samma namn finns både i de definierade typsnittsmapparna och i systemteckensnitten kommer versionen i typsnittsmappen att användas vid bearbetning av Word-dokument.

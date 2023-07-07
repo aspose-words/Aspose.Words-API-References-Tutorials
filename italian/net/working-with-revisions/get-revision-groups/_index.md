@@ -45,4 +45,43 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 }
 ```
 
+## Conclusione
 
+In questo tutorial, abbiamo imparato come ottenere i gruppi di revisione in un documento di Word utilizzando Aspose.Words per .NET. Abbiamo seguito i passaggi per caricare il documento e sfogliare i gruppi di revisione, visualizzando dettagli come autore e tipo di recensione. Ora puoi applicare questa conoscenza per analizzare le revisioni del tuo documento Word utilizzando Aspose.Words per .NET.
+
+### FAQ
+
+#### D: Come caricare un documento in Aspose.Words per .NET?
+
+ R: Usa il`Document` classe di Aspose.Words per .NET per caricare un documento da un file. È possibile specificare il percorso completo del documento.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### D: Come sfogliare i gruppi di revisione in un documento in Aspose.Words per .NET?
+
+ R: Usa il`Groups` proprietà del documento`Revisions` oggetto per ottenere la raccolta di gruppi di revisione. È quindi possibile utilizzare un ciclo per scorrere ogni gruppo di revisione.
+
+```csharp
+foreach(RevisionGroup group in doc.Revisions.Groups)
+{
+     // Elabora ogni gruppo di revisione qui
+}
+```
+
+#### D: Come ottenere l'autore di un gruppo di revisione in Aspose.Words per .NET?
+
+ R: Usa il`Author` proprietà del`RevisionGroup` oggetto per ottenere l'autore del gruppo di revisione.
+
+```csharp
+string author = group.Author;
+```
+
+#### D: Come ottenere il tipo di revisione di un gruppo di revisione in Aspose.Words per .NET?
+
+ R: Usa il`RevisionType` proprietà del`RevisionGroup`oggetto per ottenere il tipo di revisione del gruppo.
+
+```csharp
+string revisionType = group.RevisionType;
+```

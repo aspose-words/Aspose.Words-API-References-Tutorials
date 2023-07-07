@@ -12,6 +12,6 @@ Travailler avec des zones de texte est une ressource complète qui vous guide pa
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Créer un lien](./create-a-link/) | Apprenez à créer un lien entre les zones de texte dans un document Word avec Aspose.Words pour .NET. |
+| [Créer un lien dans Word](./create-a-link/) | Apprenez à créer un lien dans Word entre des zones de texte dans un document Word avec Aspose.Words pour .NET. |
 | [Vérifier la séquence](./check-sequence/) | Apprenez à vérifier la séquence des zones de texte dans un document Word avec Aspose.Words pour .NET. |
-| [Rompre un lien](./break-a-link/) | Apprenez à rompre les liens dans un document Word avec Aspose.Words pour .NET. |
+| [Casser le lien vers l'avant dans le document Word](./break-a-link/) | Apprenez à rompre les liens vers l'avant dans un document Word avec Aspose.Words pour .NET. |

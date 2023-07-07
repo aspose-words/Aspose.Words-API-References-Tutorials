@@ -17,9 +17,9 @@ Oavsett om du är nybörjare eller erfaren utvecklare, kommer dessa handledninga
 | Titel | Beskrivning |
 | --- | --- |
 | [Acceptera revisioner](./accept-revisions/) | Lär dig hur du accepterar ändringar av ett Word-dokument med Aspose.Words för .NET. |
-| [Skaffa revisionstyper](./get-revision-types/) | Få versionstyper i ett Word-dokument med Aspose.Words för .NET. |
+| [Få revisionstyper av ord](./get-revision-types/) | Få versionstyper av ord i ett Word-dokument med Aspose.Words för .NET. |
 | [Skaffa revisionsgrupper](./get-revision-groups/) | Få detaljer om revisionsgrupp i ett Word-dokument med Aspose.Words för .NET. |
-| [Ta bort kommentarer i pdf](./remove-comments-in-pdf/) | Ta bort kommentarer i en PDF-fil med Aspose.Words för .NET. |
+| [Ta bort kommentarer i pdf-fil](./remove-comments-in-pdf/) | Ta bort kommentarer i en PDF-fil med Aspose.Words för .NET. |
 | [Visa revisioner i ballonger](./show-revisions-in-balloons/) | Visa revisioner i ballonger med Aspose.Words för .NET. |
 | [Få information om revisionsgruppen](./get-revision-group-details/) | Få detaljer om revisionsgrupp i ett Word-dokument med Aspose.Words för .NET. |
 | [Få tillgång till reviderad version](./access-revised-version/) | Få tillgång till en reviderad version av ett Word-dokument med Aspose.Words för .NET. |

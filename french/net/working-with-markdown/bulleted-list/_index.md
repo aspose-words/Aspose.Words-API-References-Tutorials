@@ -73,3 +73,24 @@ builder.Writeln("Item 2b");
 
 Félicitation ! Vous avez maintenant appris à créer une liste à puces avec Aspose.Words pour .NET.
 
+### FAQ
+
+#### Q : Comment créer une liste à puces dans Markdown ?
+
+R : Pour créer une liste à puces dans Markdown, commencez chaque élément de la liste par un symbole de puce (`-`, `*` , ou`+`), suivi d'un espace.
+
+#### Q : Pouvez-vous imbriquer des listes à puces dans Markdown ?
+
+R : Oui, il est possible d'imbriquer des listes à puces dans Markdown en ajoutant quatre espaces décalés devant chaque élément de liste imbriqué.
+
+#### Q : Comment personnaliser les puces ?
+
+R : Dans le Markdown standard, les puces sont prédéfinies. Cependant, certains éditeurs Markdown vous permettent de les personnaliser à l'aide d'extensions spécifiques.
+
+#### Q : Les listes à puces de Markdown prennent-elles en charge l'indentation ?
+
+R : Oui, les listes à puces dans Markdown prennent en charge l'indentation. Vous pouvez ajouter un décalage vers la gauche en utilisant des espaces ou des tabulations.
+
+#### Q : Des liens ou du texte en ligne peuvent-ils être ajoutés aux éléments de la liste ?
+
+R : Oui, vous pouvez ajouter des liens ou du texte en ligne aux éléments de liste en utilisant la syntaxe Markdown appropriée.

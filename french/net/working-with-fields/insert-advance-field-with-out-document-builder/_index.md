@@ -29,7 +29,7 @@ Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
 ## Étape 3 : Insertion du champ avancé
 
- Nous utilisons le`AppendField()`méthode pour insérer un champ avancé dans le paragraphe.
+ Nous utilisons le`AppendField()` méthode pour insérer un champ avancé dans le paragraphe.
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
@@ -81,3 +81,25 @@ Dans cet exemple, nous avons créé un nouveau document, inséré un champ avanc
 
 Ceci conclut notre guide sur l'utilisation de la fonctionnalité "Insérer un champ avancé sans DocumentBuilder" avec Aspose.Words pour .NET.
 
+### FAQ
+
+#### Q : Qu'est-ce qu'un champ avancé dans Aspose.Words ?
+
+R : Un champ avancé dans Aspose.Words est un type spécial de champ qui vous permet d'effectuer des calculs, d'inclure des conditions et d'effectuer des opérations complexes dans un document Word. Il offre une grande flexibilité pour créer des champs dynamiques et personnalisés.
+
+#### Q : Comment insérer un champ avancé dans un document Word sans utiliser Document Builder dans Aspose.Words ?
+
+R : Pour insérer un champ avancé dans un document Word sans utiliser Document Builder dans Aspose.Words, vous pouvez suivre ces étapes :
+
+1. Importez les classes Document et Field à partir de l'espace de noms Aspose.Words.Fields.
+2. Créez une instance de Document en chargeant votre document existant.
+3. Utilisez la méthode InsertField pour insérer un champ avancé en spécifiant le code de champ avancé.
+4. Enregistrez le document.
+
+#### Q : Comment obtenir le résultat d'un champ avancé dans un document Word ?
+
+R : Pour obtenir le résultat d'un champ avancé dans un document Word, vous pouvez utiliser la propriété Result disponible dans la classe Field. Cette propriété renvoie le résultat calculé du champ.
+
+#### Q : Puis-je modifier la formule d'un champ avancé après l'avoir inséré dans un document Word ?
+
+R : Oui, vous pouvez modifier la formule d'un champ avancé après l'avoir inséré dans un document Word. Vous pouvez le faire en accédant à la propriété FieldCode de la classe Field et en mettant à jour la formule en modifiant le texte de la formule.

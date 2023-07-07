@@ -68,3 +68,25 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
 Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.
+
+### FAQ
+
+#### D: Come posso accedere alla raccolta dei campi del modulo in Aspose.Words?
+
+ R: Per accedere alla raccolta di campi modulo in Aspose.Words, puoi utilizzare il file`Document.FormFields` proprietà. Questa proprietà restituisce la raccolta completa dei campi del modulo presenti nel documento.
+
+#### D: Come posso scorrere i campi del modulo ed eseguire operazioni su ciascuno di essi?
+
+ A: Puoi scorrere i campi del modulo usando a`foreach` loop sul`Document.FormFields` collezione. Ad ogni iterazione è possibile accedere alle proprietà ed eseguire operazioni specifiche sul campo del modulo.
+
+#### D: Posso filtrare la raccolta dei campi del modulo per ottenere solo determinati tipi di campi?
+
+R: Sì, puoi filtrare la raccolta dei campi del modulo utilizzando le condizioni appropriate nel tuo ciclo di iterazione. Ad esempio, puoi controllare il tipo di campo di ogni articolo e operare solo sui campi che corrispondono ai tuoi criteri.
+
+#### D: Come posso rimuovere un campo modulo specifico dalla raccolta?
+
+ R: Per rimuovere un campo modulo specifico dalla raccolta, puoi utilizzare il file`FormField.Remove` metodo specificando il campo che si desidera rimuovere. Questo metodo rimuoverà il campo del modulo dalla raccolta.
+
+#### D: È possibile modificare le proprietà di un campo modulo in Aspose.Words?
+
+R: Sì, puoi modificare le proprietà di un campo modulo in Aspose.Words accedendo alle sue singole proprietà. Ad esempio, puoi modificare il nome, il valore o le opzioni di un campo modulo utilizzando le proprietà appropriate.

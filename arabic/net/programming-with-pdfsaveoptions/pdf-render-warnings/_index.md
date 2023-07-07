@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "WMF with image.docx");
 
 ## الخطوة 3: تكوين خيارات الحفظ كملف PDF مع تحذيرات التقديم
 
-للتعامل مع تحذيرات التجسيد عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`MetafileRenderingOptions` لتحديد كيفية عرض ملفات التعريف. نستخدم أيضًا ملف`HandleDocumentWarnings` خيار للتعامل مع التحذيرات التي تم إنشاؤها عند حفظ المستند.
+ للتعامل مع تحذيرات التجسيد عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`MetafileRenderingOptions` لتحديد كيفية عرض ملفات التعريف. نستخدم أيضًا ملف`HandleDocumentWarnings` خيار للتعامل مع التحذيرات التي تم إنشاؤها عند حفظ المستند.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -83,7 +83,7 @@ foreach(WarningInfo warningInfo in callback.mWarnings)
 
 	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
 
-	// إذا تعذر على Aspose.Words عرض بعض سجلات ملف التعريف بشكل صحيح
+	//إذا تعذر على Aspose.Words عرض بعض سجلات ملف التعريف بشكل صحيح
 	// إلى الرسومات المتجهة ، ثم يقوم Aspose.Words بجعل ملف التعريف هذا إلى صورة نقطية.
 	HandleDocumentWarnings callback = new HandleDocumentWarnings();
 	doc.WarningCallback = callback;
@@ -97,3 +97,32 @@ foreach(WarningInfo warningInfo in callback.mWarnings)
 	}
         
 ```
+
+### أسئلة مكررة
+
+#### س: ما هي وظيفة تحذيرات عرض PDF باستخدام Aspose.Words for .NET؟
+تساعد ميزة تحذيرات تقديم PDF مع Aspose.Words for .NET في إدارة التحذيرات التي تم إنشاؤها عند تحويل مستند إلى PDF. يوفر طريقة لاكتشاف ومعالجة تحذيرات العرض لضمان جودة وسلامة المستند المحول.
+
+#### س: كيف يمكنني استخدام هذه الميزة مع Aspose.Words for .NET؟
+لاستخدام هذه الميزة مع Aspose.Words for .NET ، اتبع الخطوات التالية:
+
+قم بتعيين دليل المستند عن طريق تحديد مسار الدليل حيث توجد المستندات الخاصة بك.
+
+ قم بتحميل المستند المراد معالجته باستخدام ملف`Document` طريقة وتحديد مسار الملف.
+
+ قم بتكوين حفظ إلى خيارات PDF عن طريق إنشاء مثيل لملف`PdfSaveOptions` فصل. استخدم ال`MetafileRenderingOptions` فئة لتحديد كيفية عرض ملفات التعريف وتعيينها`MetafileRenderingOptions.RenderingMode` ل`MetafileRenderingMode.VectorWithFallback`.
+
+ استخدم ال`HandleDocumentWarnings` فئة للتعامل مع تحذيرات العرض. تعيين`doc.WarningCallback` إلى مثيل من هذه الفئة.
+
+ استخدم ال`Save` طريقة لحفظ المستند بتنسيق PDF مع تحديد خيارات الحفظ.
+
+يمكنك بعد ذلك التعامل مع تحذيرات العرض باستخدام امتداد`HandleDocumentWarnings` فصل. على سبيل المثال ، يمكنك عرض وصف كل تحذير باستخدام حلقة.
+
+#### س: كيف يمكنني معرفة ما إذا كان هناك أي تحذيرات خاصة بالتسليم عند تحويل المستند إلى PDF؟
+ يمكنك استخدام ال`HandleDocumentWarnings` class لاسترداد تحذيرات التجسيد التي تم إنشاؤها عند حفظ المستند. هذا الفصل يحتوي على`mWarnings` القائمة التي تخزن معلومات حول التحذيرات. يمكنك تصفح هذه القائمة والوصول إلى خصائص كل تحذير ، مثل الوصف ، لاتخاذ الإجراء المناسب.
+
+#### س: ما نوع تحذيرات التجسيد التي يمكن إنشاؤها عند التحويل إلى PDF؟
+يمكن أن تتضمن تحذيرات التجسيد عند التحويل إلى PDF تحذيرات تتعلق بالتخطيط ، والخطوط المفقودة ، والصور غير المدعومة ، ومشكلات التوافق ، وما إلى ذلك. ستعتمد التحذيرات المحددة على محتوى المستند المصدر وخيارات التحويل المستخدمة.
+
+#### س: هل من الممكن التعامل مع تحذيرات العرض بطريقة مخصصة؟
+ نعم ، يمكنك تخصيص معالجة تحذير العرض من خلال تخصيص ملف`HandleDocumentWarnings`فصل. يمكنك إضافة وظائف إضافية لإدارة التحذيرات الخاصة بتطبيقك ، مثل تحذيرات التسجيل وإنشاء التقارير وإرسال التنبيهات والمزيد.

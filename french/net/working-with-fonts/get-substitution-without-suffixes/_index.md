@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Ensuite, nous allons charger le document en utilisant le`Document` classer et configurer des substitutions sans suffixe à l'aide de`DocumentSubstitutionWarnings` classe. Nous ajouterons également une source de polices en spécifiant un dossier contenant les polices.
 
 ```csharp
-//Charger le document et configurer les substitutions sans suffixes
+// Charger le document et configurer les substitutions sans suffixes
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
 DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
 doc.WarningCallback = substitutionWarningHandler;
@@ -67,3 +67,21 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Conclusion
 Dans ce didacticiel, nous avons vu comment obtenir les remplacements sans suffixes dans un document Word avec Aspose.Words pour .NET. Les substitutions sans suffixes sont utiles pour résoudre les problèmes de substitution de polices. N'hésitez pas à utiliser cette fonctionnalité pour améliorer l'affichage et l'impression de vos documents.
+
+### FAQ
+
+#### Q : Pourquoi Aspose.Words ajoute-t-il des suffixes aux substitutions de police ?
+
+R : Aspose.Words ajoute des suffixes aux substitutions de polices pour éviter les conflits entre les polices d'origine et les polices de substitution. Cela permet d'assurer une compatibilité maximale lors de la conversion et de la manipulation de documents.
+
+#### Q : Comment puis-je récupérer des substitutions de polices sans suffixes dans Aspose.Words ?
+
+ R : Pour récupérer des substitutions de polices sans suffixes dans Aspose.Words, vous pouvez utiliser le`FontSubstitutionSettings` classe et la`RemoveSuffixes` propriété. Définir cette propriété sur`true` obtiendra les substitutions de polices sans les suffixes ajoutés.
+
+#### Q : Est-il possible de désactiver l'ajout de suffixes aux substitutions de polices dans Aspose.Words ?
+
+: Non, il n'est pas possible de désactiver l'ajout de suffixes aux substitutions de polices dans Aspose.Words. Les suffixes sont ajoutés par défaut pour assurer la compatibilité et la cohérence du document.
+
+#### Q : Comment puis-je filtrer les suffixes indésirables dans les substitutions de polices dans Aspose.Words ?
+
+ R : Pour filtrer les suffixes indésirables dans les substitutions de polices dans Aspose.Words, vous pouvez utiliser des techniques de traitement de chaîne, telles que l'utilisation de`Replace` ou`Substring` méthodes pour supprimer les suffixes spécifiques que vous ne souhaitez pas inclure.

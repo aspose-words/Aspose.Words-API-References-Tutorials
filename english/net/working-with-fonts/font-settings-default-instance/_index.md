@@ -67,3 +67,21 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ## Conclusion
 In this tutorial, we saw how to configure default font settings in a Word document with Aspose.Words for .NET. By specifying the font sources used when loading and rendering documents, you can control the appearance of fonts in your documents. Feel free to use this feature to customize font settings in your projects.
+
+### FAQ's
+
+#### Q: How can I set the default font in Aspose.Words?
+
+A: To set the default font in Aspose.Words, you can use the `FontSettings` class and the `DefaultFontName` property specifying the name of the desired font.
+
+#### Q: Can I specify the default font size in Aspose.Words?
+
+A: Yes, you can specify the default font size in Aspose.Words using the `DefaultFontSize` property of the `FontSettings` class. You can set the desired point size.
+
+#### Q: Is it possible to set the default font color in Aspose.Words?
+
+A: Yes, you can set the default font color in Aspose.Words using the `DefaultColor` property of the `FontSettings` class. You can specify the color using RGB values or predefined names.
+
+#### Q: Do the default font settings apply to all documents?
+
+A: Yes, default font settings apply to all documents created or edited in Aspose.Words, unless specific settings are set for an individual document.

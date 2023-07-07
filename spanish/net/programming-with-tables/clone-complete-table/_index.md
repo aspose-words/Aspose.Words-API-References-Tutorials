@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-tables/clone-complete-table/
 ---
 
-En este tutorial, aprenderemos a usar Aspose.Words para .NET para clonar una tabla completa en un documento de Word. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá clonar tablas en sus documentos de Word mediante programación.
+En este tutorial, aprenderemos a usar Aspose.Words para .NET para clonar una tabla completa en un documento de Word. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá clonar tablas en sus documentos de Word mediante programación.
 
 ## Paso 1: Configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.

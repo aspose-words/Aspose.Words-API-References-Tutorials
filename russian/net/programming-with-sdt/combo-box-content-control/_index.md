@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Шаг 3: добавьте элементы в поле со списком
- Добавьте элементы в поле со списком, используя кнопку`ListItems` собственность`StructuredDocumentTag` . Каждый элемент представлен`SdtListItem` объект, который принимает отображаемый текст и значение. В этом примере мы добавляем три элемента в поле со списком.
+ Добавьте элементы в поле со списком, используя кнопку`ListItems` собственность`StructuredDocumentTag` Каждый элемент представлен`SdtListItem` объект, который принимает отображаемый текст и значение. В этом примере мы добавляем три элемента в поле со списком.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

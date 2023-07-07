@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // Accesso rapido e digitato alla prima riga della tabella.
+     //Accesso rapido e digitato alla prima riga della tabella.
      table.FirstRow?.Remove();
 
      // Accesso rapido e digitato all'ultima riga della tabella.
@@ -79,4 +79,24 @@ foreach (Table table in tables)
 
 Questo è un codice di esempio completo per l'accesso digitato alle tabelle con Aspose.Words per .NET. Assicurati di importare i riferimenti necessari e segui i passaggi precedentemente descritti per integrare questo codice nel tuo progetto.
 
----
+### FAQ
+
+#### D: Cos'è l'accesso digitato in Node.js?
+
+R: L'accesso digitato in Node.js si riferisce all'uso di tipi di nodo specifici per accedere alle proprietà e ai valori del nodo in un documento XML. Piuttosto che utilizzare proprietà generiche, l'accesso tipizzato utilizza metodi specifici per accedere a particolari tipi di nodi come nodi di testo, nodi di elementi, nodi di attributi, ecc.
+
+#### D: Come si accede ai nodi utilizzando l'accesso digitato?
+
+ R: Per accedere ai nodi utilizzando l'accesso digitato in Node.js, puoi utilizzare metodi specifici a seconda del tipo di nodo a cui vuoi accedere. Ad esempio, puoi utilizzare il`getElementsByTagName` metodo per accedere a tutti i nodi di un tipo specifico, the`getAttribute` metodo per accedere al valore di un attributo, ecc.
+
+#### D: Quali sono i vantaggi dell'accesso digitato rispetto all'accesso non digitato?
+
+R: L'accesso digitato presenta numerosi vantaggi rispetto all'accesso non digitato. Innanzitutto, consente una migliore specificità durante l'accesso ai nodi, semplificando la manipolazione e la gestione dei nodi in un documento XML. Inoltre, l'accesso tipizzato offre una maggiore sicurezza evitando errori di tipo durante l'accesso alle proprietà e ai valori del nodo.
+
+#### D: A quali tipi di nodi è possibile accedere con l'accesso digitato?
+
+R: Con l'accesso digitato in Node.js, puoi accedere a diversi tipi di nodi, come nodi di elementi, nodi di testo, nodi di attributi, ecc. Ogni tipo di nodo ha i propri metodi e proprietà specifici per accedere alle sue caratteristiche e ai suoi valori.
+
+#### D: Come gestire gli errori durante l'accesso digitato?
+
+ R: Per gestire gli errori durante l'accesso digitato in Node.js, puoi utilizzare meccanismi di gestione degli errori come`try...catch` blocchi. Se si verifica un errore durante l'accesso a un nodo specifico, è possibile acquisire l'errore e intraprendere l'azione appropriata per gestirlo, ad esempio visualizzare un messaggio di errore o eseguire un'azione di salvataggio.

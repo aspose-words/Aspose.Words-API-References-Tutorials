@@ -3,6 +3,7 @@ title: تمكين ميزات OpenType
 linktitle: تمكين ميزات OpenType
 second_title: Aspose.Words لمراجع .NET API
 description: تعرف على كيفية تمكين ميزات OpenType في مستندات Word باستخدام Aspose.Words for .NET. ستوجهك البرامج التعليمية خلال الخطوات لتمكين الميزات المتقدمة لخطوط OpenType.
+type: docs
 weight: 40
 url: /ar/net/enable-opentype-features/
 ---

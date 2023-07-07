@@ -23,7 +23,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: Configurar el estilo de párrafo
 
-Ahora configuraremos el estilo de párrafo utilizando el identificador de estilo incorporado. Así es cómo:
+Ahora configuraremos el estilo de párrafo utilizando el identificador de estilo integrado. Así es cómo:
 
 ```csharp
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;

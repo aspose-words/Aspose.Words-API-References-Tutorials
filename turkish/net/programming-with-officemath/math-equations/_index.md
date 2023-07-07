@@ -70,7 +70,7 @@ Bu örnekte değiştirilen belgeyi "WorkingWithOfficeMath.MathEquations.docx" ol
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Word belgesini yükleyin
+// Word belgesini yükleyin
 Document doc = new Document(dataDir + "Office math.docx");
 
 // OfficeMath öğesini edinin

@@ -97,7 +97,7 @@ builder.ListFormat.RemoveNumbers();
 // İlk listeyi yeniden kullanmak için orijinal liste biçimlendirmesinin bir kopyasını oluşturarak numaralandırmayı yeniden başlatmamız gerekiyor.
 List list2 = doc.Lists.AddCopy(list1);
 
-// Yeni bir başlangıç numarası belirlemek dahil, yeni listeyi herhangi bir şekilde değiştirebiliriz.
+//Yeni bir başlangıç numarası belirlemek dahil, yeni listeyi herhangi bir şekilde değiştirebiliriz.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");
@@ -110,6 +110,23 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
             
 ```
 
+### SSS
+
+#### S: Aspose.Words'te bir listenin numaralandırmasını nasıl yeniden başlatabilirim?
+
+ C: Aspose.Words'te bir listenin numaralandırmasını yeniden başlatmak için`ListRestartAtNumber` yöntemi`List` sınıf. Bu yöntem, listenin yeniden başlatılması gereken yeni bir arama değeri belirlemenizi sağlar. Örneğin, kullanabilirsiniz`list.ListRestartAtNumber(1)` 1'den numaralandırmayı yeniden başlatmak için.
+
+#### S: Aspose.Words'te yeniden başlatılan liste numaralandırmasının ön ekini ve son ekini özelleştirmek mümkün mü?
+
+ C: Evet, Aspose.Words'ta yeniden başlatılan liste numaralandırmasının ön ekini ve son ekini özelleştirebilirsiniz. bu`ListLevel` sınıf gibi özellikler sunar`ListLevel.NumberPrefix` Ve`ListLevel.NumberSuffix` listedeki her seviye için önek ve soneki belirtmenize izin verir. Ön eki ve son eki gerektiği gibi özelleştirmek için bu özellikleri kullanabilirsiniz.
+
+#### S: Listenin yeniden başlatılması gereken belirli bir numaralandırma değerini nasıl belirleyebilirim?
+
+ C: Listenin yeniden başlatılması gereken belirli bir sayı değeri belirtmek için`ListRestartAtNumber`İstenen değeri bağımsız değişken olarak ileten yöntem. Örneğin, numaralandırmayı 5'ten yeniden başlatmak için şunu kullanabilirsiniz:`list.ListRestartAtNumber(5)`.
+
+#### S: Aspose.Words'te çok seviyeli liste numaralandırmayı yeniden başlatmak mümkün mü?
+
+ C: Evet, Aspose.Words çoklu liste seviyelerinin yeniden numaralandırmasını destekler. uygulayabilirsiniz`ListRestartAtNumber` Numaralandırmayı ayrı ayrı yeniden başlatmak için her liste düzeyinde yöntem. Örneğin, kullanabilirsiniz`list.Levels[0].ListRestartAtNumber(1)` ilk liste düzeyini 1'den yeniden başlatmak için ve`list.Levels[1].ListRestartAtNumber(1)` 1'den başlayarak ikinci düzey listeyi yeniden başlatmak için vb.
 
 
 

@@ -32,7 +32,7 @@ builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
 ## Steg 3: Listnivåspecifikation
 
- Använd dokumentbyggarens`ListLevelNumber`egenskap för att ange listnivån och lägga till text till stycket:
+ Använd dokumentbyggarens`ListLevelNumber` egenskap för att ange listnivån och lägga till text till stycket:
 
 ```csharp
 for (int i = 0; i < 9; i++)
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Skapa en numrerad lista baserad på en av Microsoft Word-listmallarna
+//Skapa en numrerad lista baserad på en av Microsoft Word-listmallarna
 // och tillämpa den på dokumentbyggarens nuvarande stycke.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-//Skapa en punktlista baserad på en av Microsoft Word-listmallarna
+// Skapa en punktlista baserad på en av Microsoft Word-listmallarna
 // och tillämpa den på dokumentbyggarens nuvarande stycke.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -117,5 +117,18 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
             
 ```
 
+### FAQ's
+
+#### F: Hur kan jag ange listnivå i Aspose.Words?
+
+ S: För att ange listnivån i Aspose.Words måste du skapa en instans av`List` klass och ge den en numrerad lista. Då kan du använda`Paragraph.ListFormat.ListLevelNumber` egenskap för att ange nivån för varje listobjekt. Du kan associera denna lista med en del av ditt dokument så att listobjekten har önskad nivå.
+
+#### F: Är det möjligt att ändra numreringsformatet för listobjekt i Aspose.Words?
+
+ S: Ja, du kan ändra numreringsformatet för listobjekt i Aspose.Words. De`ListLevel` klass erbjuder flera fastigheter för detta, som t.ex`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`, etc. Du kan använda dessa egenskaper för att ställa in numreringsformatet för listobjekt, som arabiska siffror, romerska siffror, bokstäver osv.
+
+#### F: Kan jag lägga till ytterligare nivåer till en numrerad lista i Aspose.Words?
+
+ S: Ja, det är möjligt att lägga till ytterligare nivåer till en numrerad lista i Aspose.Words. De`ListLevel` class låter dig ställa in formateringsegenskaper för varje nivå i listan. Du kan ställa in alternativ som prefix, suffix, justering, indrag, etc. Detta låter dig skapa listor med flera nivåer av hierarki.
 
 

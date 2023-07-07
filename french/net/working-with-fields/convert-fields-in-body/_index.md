@@ -46,7 +46,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 
 ### Exemple de code source pour convertir des champs dans le corps avec Aspose.Words pour .NET
 
-Voici l'exemple de code source complet pour convertir des champs dans le corps à l'aide de Aspose.Words pour .NET :
+Voici l'exemple de code source complet pour convertir les champs dans le corps à l'aide de Aspose.Words pour .NET :
 
 ```csharp
 // Le chemin d'accès à votre répertoire de documents.
@@ -59,3 +59,25 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
+
+### FAQ
+
+#### Q : Aspose.Words est-il compatible avec différentes versions de Microsoft Word ?
+
+: Oui, Aspose.Words est compatible avec différentes versions de Microsoft Word, notamment Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 et Word 2019.
+
+#### Q : Aspose.Words peut-il gérer des structures de champs complexes ?
+
+R : Absolument ! Aspose.Words fournit une prise en charge étendue des structures de champs complexes, y compris les champs imbriqués, les calculs et les expressions conditionnelles. Vous pouvez tirer parti de la puissante API pour travailler avec n'importe quel type de structure de champ.
+
+#### Q : Aspose.Words prend-il en charge les opérations de mise à jour des champs ?
+
+R : Oui, Aspose.Words vous permet de mettre à jour les champs par programmation. Vous pouvez facilement mettre à jour les valeurs des champs, actualiser les calculs et effectuer d'autres opérations liées aux champs à l'aide de l'API.
+
+#### Q : Puis-je convertir des champs en texte brut à l'aide d'Aspose.Words ?
+
+R : Certainement ! Aspose.Words fournit des méthodes pour convertir les champs en texte brut. Cela peut être utile lorsque vous devez extraire le contenu sans aucune mise en forme ou fonctionnalité liée au champ.
+
+#### Q : Est-il possible de générer des documents Word avec des champs dynamiques à l'aide d'Aspose.Words ?
+
+: Absolument ! Aspose.Words offre des fonctionnalités robustes pour générer des documents Word avec des champs dynamiques. Vous pouvez créer des modèles avec des champs prédéfinis et les remplir avec des données de manière dynamique, offrant une solution de génération de documents flexible et efficace.

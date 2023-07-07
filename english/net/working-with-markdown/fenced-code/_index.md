@@ -60,5 +60,22 @@ builder.ParagraphFormat.Style = fencedCodeWithInfo;
 builder.Writeln("This is a fenced code with info string");
 ```
 
+### FAQ's
+
+#### Q: What is delimited code in Markdown?
+
+A: Delimited code in Markdown is a formatting method used to display code in a Markdown document. It consists of framing the code with specific delimiters.
+
+#### Q: What are the benefits of delimited code in Markdown?
+
+A: Delimited code in Markdown improves code readability and makes it easier for readers to understand. It also allows preserving syntax highlighting in some Markdown editors.
+
+#### Q: What is the difference between delimited and indented code in Markdown?
+
+A: Delimited code uses specific delimiters to enclose the code, while indented code involves indenting each line of code with spaces or tabs.
+
+#### Q: Is delimited code in Markdown supported by all Markdown editors?
+
+A: Support for delimited code in Markdown may vary between Markdown editors. Check your publisher's specific documentation to be sure.
 
 

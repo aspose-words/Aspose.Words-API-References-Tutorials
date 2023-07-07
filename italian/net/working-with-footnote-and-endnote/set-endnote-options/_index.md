@@ -76,3 +76,25 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
 Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.
+
+### FAQ
+
+#### D: Come posso modellare le note di chiusura in Aspose.Words?
+
+ A: Per modellare le note di chiusura in Aspose.Words, puoi usare il file`EndnoteOptions` classe e il`SeparatorNoteTextStyle` proprietà. Puoi specificare lo stile del carattere, la dimensione, il colore, ecc. per le note di chiusura usando questa proprietà.
+
+#### D: È possibile personalizzare la numerazione delle note di chiusura in un documento?
+
+ R: Sì, è possibile personalizzare la numerazione delle note di chiusura in un documento. Puoi usare il`RestartRule` E`NumberStyle` proprietà del`EndnoteOptions` class per definire regole di riavvio e stili di numerazione specifici.
+
+#### D: Come posso posizionare le note di chiusura in un documento?
+
+ R: Per posizionare le note di chiusura in un documento, puoi usare il`Position` proprietà del`EndnoteOptions` classe. È possibile specificare se le note di chiusura devono essere posizionate in fondo a ogni pagina, alla fine di ogni sezione o alla fine del documento.
+
+#### D: Posso personalizzare il formato di numerazione delle note di chiusura?
+
+ R: Sì, puoi personalizzare il formato della numerazione delle note di chiusura in Aspose.Words. Usa il`NumberFormat` proprietà del`EndnoteOptions` class per impostare il formato desiderato, come numeri arabi, numeri romani, lettere, ecc.
+
+#### D: È possibile continuare la numerazione delle note di chiusura tra le sezioni di un documento?
+
+ R: Sì, è possibile continuare la numerazione delle note di chiusura tra le sezioni di un documento. Usa il`RestartRule` proprietà del`EndnoteOptions` class e impostarlo su`RestartContinuous` per consentire la continuazione della numerazione tra le sezioni.

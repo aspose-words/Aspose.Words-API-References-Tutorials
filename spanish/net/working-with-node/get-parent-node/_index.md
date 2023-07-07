@@ -53,3 +53,25 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 ```
 
 Este es un ejemplo de código completo para obtener el nodo principal de un nodo específico con Aspose.Words para .NET. Asegúrese de importar las referencias necesarias y siga los pasos descritos anteriormente para integrar este código en su proyecto.
+
+### Preguntas frecuentes
+
+#### P: ¿Qué es el nodo principal en Node.js?
+
+R: El nodo principal en Node.js hace referencia al siguiente nodo superior en la jerarquía de un documento XML. Este es el nodo que contiene el nodo especificado.
+
+#### P: ¿Cómo obtener el nodo principal de un nodo específico?
+
+ R: Para obtener el nodo principal de un nodo específico, puede usar el`parentNode` propiedad del nodo. Esta propiedad devuelve el nodo principal del nodo actual.
+
+#### P: ¿Cómo verificar si un nodo tiene un nodo principal?
+
+ R: Para verificar si un nodo tiene un nodo principal, simplemente puede verificar si el`parentNode` se establece la propiedad del nodo. Si se establece, significa que el nodo tiene un nodo principal.
+
+#### P: ¿Podemos cambiar el nodo principal de un nodo?
+
+ R: En la mayoría de los casos, el nodo principal de un nodo está determinado por la estructura del documento XML y no se puede cambiar directamente. Sin embargo, puede mover un nodo a otro nodo utilizando métodos específicos, como`appendChild` o`insertBefore`.
+
+#### P: ¿Cómo explorar la jerarquía de los nodos principales?
+
+ R: Para atravesar la jerarquía de los nodos principales, puede iterar desde un nodo específico usando el`parentNode`propiedad hasta llegar al nodo raíz del documento.

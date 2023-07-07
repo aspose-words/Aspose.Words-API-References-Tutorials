@@ -86,7 +86,7 @@ foreach (Paragraph para in paragraphs)
 	if (para.ParagraphFormat.PageBreakBefore)
 		para.ParagraphFormat.PageBreakBefore = false;
 
-	//Vérifiez toutes les séquences du paragraphe pour les sauts de page et supprimez-les.
+	// Vérifiez toutes les séquences du paragraphe pour les sauts de page et supprimez-les.
 	foreach (Run run in para.Runs)
 	{
 		if (run.Text.Contains(ControlChar.PageBreak))

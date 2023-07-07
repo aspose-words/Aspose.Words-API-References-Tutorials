@@ -1,6 +1,6 @@
 ---
-title: Txt To Docx
-linktitle: Txt To Docx
+title: Convert Text File To Word Document
+linktitle: Convert Text File To Word Document
 second_title: Aspose.Words for .NET API Reference
 description: Learn how to convert plain text files (Txt) to Word documents (Docx) using Aspose.Words for .NET. Step-by-step tutorial with example code.
 type: docs
@@ -45,3 +45,21 @@ That's it! You have successfully converted a plain text file (Txt) to a Word doc
 ```
 
 Feel free to use this code in your own projects and modify it according to your specific requirements.
+
+### FAQs
+
+#### How to convert a text file to a Word document?
+
+To convert a text file to a Word document, you can use different software tools or libraries that provide this functionality. Aspose.Words for .NET is a reliable option for this conversion. You can use the library API to load the text file and save it in DOCX format.
+
+#### How do I preserve formatting when converting?
+
+Whether formatting is preserved during conversion depends on the tool or library you are using. Aspose.Words for .NET offers advanced features to preserve the formatting, styles and elements of the text file in the converted Word document. It's important to choose a tool that can handle the complexity of your text and preserve the formatting you want.
+
+#### What are the limitations of the conversion process?
+
+The limitations of the conversion process depend on the specific tool or library you are using. Some tools may have restrictions related to complex formatting, tables, or images embedded in the text file. It is important to fully understand the features and limitations of the chosen tool in order to make informed decisions when converting.
+
+#### Is Aspose a reliable tool for converting text file to Word document?
+
+Yes, Aspose.Words for .NET is a reliable tool for converting text file to Word document. It is widely used in industry for its quality, accuracy and advanced features. The tool offers comprehensive documentation, regular updates, and dedicated technical support, making it a recommended choice for document conversion tasks.

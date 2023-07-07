@@ -2,7 +2,7 @@
 title: Nascondi asse grafico
 linktitle: Nascondi asse grafico
 second_title: Riferimento all'API Aspose.Words per .NET
-description: Scopri come nascondere l'asse del grafico in un documento utilizzando Aspose.Words per .NET. Nascondi l'asse per una visualizzazione del grafico più pulita e mirata.
+description: Scopri come nascondere l'asse del grafico in un documento utilizzando Aspose.Words per .NET. Nascondi l'asse per una visualizzazione del grafico più chiara e mirata.
 type: docs
 weight: 10
 url: /it/net/programming-with-charts/hide-chart-axis/

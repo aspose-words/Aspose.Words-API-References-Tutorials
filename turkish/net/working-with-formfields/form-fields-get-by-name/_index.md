@@ -32,7 +32,7 @@ FormFieldCollection documentFormFields = doc.Range.FormFields;
 Form alanlarını dizine veya ada göre alabilirsiniz. Bu örnekte, her iki yöntemi de kullanarak bir form alanı alıyoruz:
 
 ```csharp
-FormField formField1 = documentFormFields[3]; // Dizine göre alma
+FormField formField1 = documentFormFields[3]; //Dizine göre alma
 FormField formField2 = documentFormFields["Text2"]; // İsme göre alma
 ```
 
@@ -73,3 +73,25 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
 Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimlerinize göre değiştirin.
+
+### SSS
+
+#### S: Aspose.Words'te ada göre bir form alanını nasıl edinebilirim?
+
+ C: Aspose.Words'te ada göre bir form alanı elde etmek için`Document.Range.FormFields[name]` yöntem. Bu yöntem, belirtilen ada karşılık gelen form alanını döndürür.
+
+#### S: Belirtilen ada sahip form alanı belgede yoksa ne olur?
+
+ A: Belirtilen ada sahip form alanı belgede yoksa,`Document.Range.FormFields[name]` yöntem geri dönecek`null`Form alanının bulunmadığı durumları işlemek için bu sonucu kontrol edebilirsiniz.
+
+#### S: Bulunan bir form alanının özelliklerini nasıl değiştirebilirim?
+
+C: Ada göre bir form alanı aldığınızda, bunları düzenlemek için bireysel özelliklerine erişebilirsiniz. Örneğin, alanın değerini değiştirebilir, görünürlüğünü etkinleştirebilir veya devre dışı bırakabilir ya da diğer özellikleri gerektiği gibi değiştirebilirsiniz.
+
+#### S: Bir belgede aynı ada sahip birden çok form alanı alabilir miyim?
+
+ C: Evet, bir belgede aynı ada sahip birden çok form alanı olabilir. bu durumda,`Document.Range.FormFields[name]` method, belirtilen adla bulunan ilk form alanını döndürür. Aynı ada sahip birden fazla form alanınız varsa, alanları değiştirirken bunu dikkate almanız gerekecektir.
+
+#### S: Bir belgedeki tüm form alanları üzerinde nasıl yineleme yapabilirim?
+
+ C: Bir belgedeki tüm form alanları üzerinde yineleme yapmak için bir`foreach` döngü üzerinde`Document.Range.FormFields` Toplamak. Bu, her bir form alanına ayrı ayrı erişmenizi ve her biri üzerinde işlem gerçekleştirmenizi sağlar.

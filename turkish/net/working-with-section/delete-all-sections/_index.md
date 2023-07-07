@@ -54,3 +54,39 @@ doc.Sections.Clear();
 
 ## Çözüm
 Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinden tüm bölümlerin nasıl kaldırılacağını gördük. Bölümleri kaldırmak, belgenizin yapısını yeniden düzenlemenizi veya basitleştirmenizi sağlar. Özel ihtiyaçlarınızı karşılamak için bu özelliği özelleştirmekten ve kullanmaktan çekinmeyin.
+
+### SSS
+
+#### S: Aspose.Words for .NET kullanarak bir Word belgesinden tüm bölümleri kaldırmak için ön koşullar nelerdir?
+
+C: Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan Aspose.Words for .NET kitaplığı
+
+#### S: Aspose.Words for .NET'te yeni bir belge ve oluşturucu nasıl oluşturulur?
+
+ C: Aspose.Words for .NET'te yeni bir belge ve oluşturucu oluşturmak için aşağıdaki kodu kullanabilirsiniz. Burada bir örneğini oluşturuyoruz`Document` sınıf ve ilgili`DocumentBuilder` belgeyi oluşturmak için yapıcı:
+
+```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+#### S: Aspose.Words for .NET'te belgeye içerik ve bölümler nasıl eklenir?
+
+ C: Aspose.Words for .NET'te belgeye içerik ve bölümler eklemek için`DocumentBuilder` yapıcı Bu örnekte, iki satır metin ve iki bölüm ekliyoruz:
+
+```csharp
+builder. Writen("Hello1");
+doc.AppendChild(new Section(doc));
+builder. Writen("Hello2");
+doc.AppendChild(new Section(doc));
+```
+
+#### S: Aspose.Words for .NET'teki tüm bölümler nasıl kaldırılır?
+
+ C: Aspose.Words for .NET'te belgedeki tüm bölümleri kaldırmak için`Clear` yöntemi`Sections` belgenin toplanması:
+
+```csharp
+doc.Sections.Clear();
+```

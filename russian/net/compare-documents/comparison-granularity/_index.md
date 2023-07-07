@@ -56,7 +56,7 @@ CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.C
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
-`Compare` метод сравнивает документ А с документом Б и сохраняет изменения в документе А. Вы можете указать имя автора и дату сравнения для справки.
+`Compare`метод сравнивает документ А с документом Б и сохраняет изменения в документе А. Вы можете указать имя автора и дату сравнения для справки.
 
 ## Заключение
 

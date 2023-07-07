@@ -35,7 +35,7 @@ builder.Writeln("sad mad bad");
 
 ## Paso 3: Reemplazar con una cadena
 
- usamos el`Range.Replace` método para reemplazar texto con una cadena. En nuestro ejemplo, reemplazamos todas las ocurrencias de la palabra "triste" con "malo" usando el`FindReplaceOptions` opción con el`FindReplaceDirection.Forward` dirección de búsqueda:
+ usamos el`Range.Replace` método para reemplazar texto con una cadena. En nuestro ejemplo, reemplazamos todas las ocurrencias de la palabra "triste" con "malo" usando el`FindReplaceOptions` opción con la`FindReplaceDirection.Forward` dirección de búsqueda:
 
 ```csharp
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));

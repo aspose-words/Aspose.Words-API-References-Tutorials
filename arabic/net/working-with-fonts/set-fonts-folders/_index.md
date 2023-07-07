@@ -44,16 +44,38 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ### نموذج التعليمات البرمجية المصدر لـ Set Fonts Folders باستخدام Aspose.Words for .NET 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// المسار إلى دليل المستند الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-	{
-		new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true)
-	});
-	Document doc = new Document(dataDir + "Rendering.docx");
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
+FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
+{
+	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true)
+});
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
 ## خاتمة
 في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلدات الخطوط عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مصادر الخطوط لاستخدامها عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+
+### التعليمات
+
+#### س: كيف يمكنني تكوين مجلدات الخطوط في مستند Word باستخدام Aspose.Words؟
+
+ج: لتكوين مجلدات الخطوط في مستند Word باستخدام Aspose.Words ، يمكنك استخدام واجهة برمجة التطبيقات لتحديد مجلدات خطوط مخصصة لاستخدامها عند إنشاء المستند أو تحريره. سيسمح هذا لبرنامج Word بالعثور على الخطوط المطلوبة لتقديمها بشكل صحيح.
+
+#### س: هل من الممكن إضافة خطوط مخصصة إلى مستند Word باستخدام Aspose.Words؟
+
+ج: نعم ، باستخدام Aspose.Words يمكنك إضافة خطوط مخصصة إلى مستند Word. تتيح لك واجهة برمجة التطبيقات (API) تضمين خطوط معينة في المستند الخاص بك ، مما يضمن عرضها بشكل صحيح ، حتى إذا لم يتم تثبيت الخطوط على نظام المستخدم النهائي.
+
+#### س: ماذا يحدث إذا كانت الخطوط المطلوبة مفقودة في مستند Word؟
+
+ج: إذا كانت الخطوط المطلوبة مفقودة من مستند Word ، فيمكن لـ Aspose.Words اكتشاف هذه المشكلة وتزويدك بخيارات لإصلاحها. يمكنك اختيار استبدال الخطوط المفقودة بخطوط بديلة أو تضمين الخطوط المفقودة في المستند ، مما يضمن العرض الصحيح.
+
+#### س: كيف يمكنني إزالة الخطوط المخصصة من مستند Word باستخدام Aspose.Words؟
+
+ج: لإزالة الخطوط المخصصة من مستند Word باستخدام Aspose.Words ، يمكنك استخدام واجهة برمجة التطبيقات لتنظيف المستند وإزالة الخطوط المخصصة التي لم تعد مطلوبة. سيؤدي ذلك إلى تقليل حجم الملف وتسهيل إدارة الخطوط.
+
+#### س: هل من المهم تكوين مجلدات الخطوط في مستند Word؟
+
+ج: نعم ، من المهم تكوين مجلدات الخطوط في مستند Word لضمان عرض الخطوط المستخدمة بشكل صحيح. من خلال تحديد مجلدات الخطوط المخصصة للاستخدام مع Aspose.Words ، فإنك تضمن أن الخطوط المطلوبة متاحة لتقديم مستندات Word بشكل صحيح.

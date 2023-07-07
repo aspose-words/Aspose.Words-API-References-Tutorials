@@ -59,3 +59,17 @@ builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.doc
 ```
 
 Detta var ett exempel på en källkod för att ange lokalisering på fältnivå i ett dokument som använder Aspose.Words för .NET. Du kan använda den här koden för att infoga datumfält med specifika platser i dina Word-dokument.
+
+### FAQ's
+
+#### F: Hur kan jag ange lokalen på fältnivå i Aspose.Words för .NET?
+
+ S: För att ange lokalen på fältnivå i Aspose.Words för .NET kan du använda`FieldOptions` klass och dess`FieldLocale` egenskap för att ställa in önskad plats. Du kan till exempel använda`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` för att ange det franska (Frankrike) språket.
+
+#### F: Är det möjligt att ange olika lokaler för varje fält i Aspose.Words för .NET?
+
+ S: Ja, det är möjligt att ange olika språkinställningar för varje fält i Aspose.Words för .NET. Du kan använda`FieldOptions.FieldLocale` egenskap innan du skapar eller uppdaterar ett specifikt fält för att tilldela det en annan plats.
+
+#### F: Hur kan jag få det aktuella språket för ett fält i Aspose.Words för .NET?
+
+ S: För att få det aktuella språket för ett fält i Aspose.Words för .NET, kan du använda fältets`Field.LocaleId` fast egendom. Detta gör att du kan få lokalidentifieraren som är kopplad till fältet.

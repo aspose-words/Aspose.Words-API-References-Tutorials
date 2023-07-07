@@ -16,6 +16,6 @@ Grâce à ces tutoriels, vous pourrez exploiter pleinement les fonctionnalités 
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Ajouter des marques bidis](./add-bidi-marks/) | Apprenez à ajouter des marques Bidi à un document Word à l'aide d'Aspose.Words pour .NET et créez des documents multilingues professionnels. |
+| [Ajouter des marques Bidi dans un document Word](./add-bidi-marks/) | Apprenez à ajouter des marques Bidi à un document Word à l'aide d'Aspose.Words pour .NET et créez des documents multilingues professionnels. |
 | [Utiliser le caractère de tabulation par niveau pour l'indentation de la liste](./use-tab-character-per-level-for-list-indentation/) | Apprenez à utiliser les listes de retrait avec la fonction de caractères de tabulation dans Aspose.Words pour .NET. Suivez ce guide étape par étape pour créer des documents bien structurés et lisibles. Gagnez du temps et améliorez votre flux de travail avec cette fonctionnalité puissante. Accédez maintenant au didacticiel complet. |
 | [Utiliser le caractère d'espace par niveau pour l'indentation de la liste](./use-space-character-per-level-for-list-indentation/) | Guide étape par étape pour l'utilisation d'un espace par niveau pour l'indentation de liste dans Aspose.Words pour .NET. Créez facilement des documents Word bien structurés. |

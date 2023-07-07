@@ -105,3 +105,24 @@ builder.Write("text.");
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
+### FAQ's
+
+#### Q: How do I highlight text using Markdown?
+
+A: To highlight text using Markdown, simply surround the text with the appropriate symbols. Use `*` or `_` for italics, `**` or `__` for bold, and `~~` for strikethrough.
+
+#### Q: Can we combine different highlights in the same text?
+
+A: Yes, it is possible to combine different highlights in the same text. For example, you can bold and italicize a word by using both `**` and `*` around the word.
+
+#### Q: What highlighting options are available in Markdown?
+
+A: Highlighting options available in Markdown are italic (`*` or `_`), bold (`**` or `__`), and strikethrough (`~~`).
+
+#### Q: How do I handle cases where the text contains special characters used by Markdown for highlighting?
+
+A: If your text contains special characters used by Markdown for highlighting, you can escape them by preceding them with a `\`. For example, `\*` will display a literal asterisk.
+
+#### Q: Can we customize the appearance of highlighting using CSS?
+
+A: Highlighting in Markdown is usually rendered using the browser's default styles. If you convert your Markdown to HTML, you can customize the appearance of highlighting using CSS rules.

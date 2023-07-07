@@ -2,7 +2,7 @@
 title: Copiar texto marcado
 linktitle: Copiar texto marcado
 second_title: Referencia de API de Aspose.Words para .NET
-description: Aprenda a copiar texto de marcador de un documento de origen a otro documento usando Aspose.Words para .NET.
+description: Aprenda a copiar texto de marcador de un documento de origen a otro documento utilizando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/copy-bookmarked-text/

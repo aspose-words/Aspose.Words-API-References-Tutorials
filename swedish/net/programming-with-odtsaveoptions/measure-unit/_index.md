@@ -52,7 +52,7 @@ I det här exemplet sparar vi det konverterade dokumentet som "WorkingWithOdtSav
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Ladda Word-dokumentet
+// Ladda Word-dokumentet
 Document doc = new Document(dataDir + "Document.docx");
 
 // Konfiguration av reservalternativ med funktionen "Mätenhet".

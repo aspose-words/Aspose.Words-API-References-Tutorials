@@ -34,7 +34,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
 ## Paso 3: Realice el reemplazo de texto
 
- Ahora usamos el`Range.Replace` método para realizar el reemplazo de texto en la matriz. En nuestro ejemplo, reemplazamos todas las ocurrencias de la palabra "Zanahorias" con "Huevos" usando el`FindReplaceOptions` opción con el`FindReplaceDirection.Forward` dirección de búsqueda. Adicionalmente, reemplazamos el valor "50" por "20" en la última celda de la última fila de la tabla:
+ Ahora usamos el`Range.Replace` método para realizar el reemplazo de texto en la matriz. En nuestro ejemplo, reemplazamos todas las ocurrencias de la palabra "Zanahorias" con "Huevos" usando el`FindReplaceOptions` opción con la`FindReplaceDirection.Forward` dirección de búsqueda. Adicionalmente, reemplazamos el valor "50" por "20" en la última celda de la última fila de la tabla:
 
 ```csharp
 table.Range.Replace("Carrots", "Eggs", new FindReplaceOptions(FindReplaceDirection.Forward));

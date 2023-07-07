@@ -67,3 +67,21 @@ doc.Save("OutputDocument.docx");
 ```
 
 N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.
+
+### FAQ
+
+#### Q : Comment puis-je copier les en-têtes et les pieds de page de la section précédente dans Aspose.Words ?
+
+ R : Pour copier les en-têtes et les pieds de page de la section précédente dans Aspose.Words, vous pouvez utiliser le`CopyHeadersFootersFromPreviousSection()` méthode sur le courant`Section`objet. Cela copiera les en-têtes et pieds de page de la section précédente vers la section actuelle.
+
+#### Q : Est-il possible de copier uniquement l'en-tête ou le pied de page de la section précédente dans Aspose.Words ?
+
+ R : Oui, il est possible de copier uniquement l'en-tête ou le pied de page de la section précédente dans Aspose.Words. Pour cela, vous pouvez utiliser le`CopyHeaderFromPreviousSection()` et`CopyFooterFromPreviousSection()` méthodes sur le courant`Section` objet pour copier spécifiquement l'en-tête ou le pied de page de la section précédente vers la section actuelle.
+
+#### Q : La copie des en-têtes et des pieds de page de la section précédente remplace-t-elle les en-têtes et les pieds de page existants dans la section actuelle ?
+
+R : Oui, la copie des en-têtes et pieds de page de la section précédente remplace les en-têtes et pieds de page existants dans la section actuelle. Si vous souhaitez conserver les en-têtes et pieds de page existants et les ajouter aux en-têtes et pieds de page copiés, vous devrez effectuer une opération supplémentaire pour fusionner le contenu.
+
+#### Q : Comment puis-je vérifier si une section a un en-tête ou un pied de page de la section précédente dans Aspose.Words ?
+
+A: Pour vérifier si une section a un en-tête ou un pied de page de la section précédente dans Aspose.Words, vous pouvez utiliser le`HasHeader` et`HasFooter` propriétés sur le`Section` objet pour déterminer si l'en-tête ou le pied de page est présent. Si`HasHeader` ou`HasFooter` Retour`false`, cela signifie qu'il n'y a pas d'en-tête ou de pied de page de la section précédente dans cette section.

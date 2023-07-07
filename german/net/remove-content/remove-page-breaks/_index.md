@@ -86,7 +86,7 @@ foreach (Paragraph para in paragraphs)
 	if (para.ParagraphFormat.PageBreakBefore)
 		para.ParagraphFormat.PageBreakBefore = false;
 
-	//Überprüfen Sie alle Läufe im Absatz auf Seitenumbrüche und entfernen Sie diese.
+	// Überprüfen Sie alle Läufe im Absatz auf Seitenumbrüche und entfernen Sie diese.
 	foreach (Run run in para.Runs)
 	{
 		if (run.Text.Contains(ControlChar.PageBreak))

@@ -45,5 +45,43 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 }
 ```
 
+## Conclusion
 
+In this tutorial, we learned how to get the revision groups in a Word document using Aspose.Words for .NET. We followed the steps to load the document and browse the review groups, displaying details such as author and review type. You can now apply this knowledge to analyze revisions of your own Word document using Aspose.Words for .NET.
 
+### FAQ's
+
+#### Q: How to upload a document in Aspose.Words for .NET?
+
+A: Use the `Document` class of Aspose.Words for .NET to load a document from a file. You can specify the full document path.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### Q: How to browse revision groups in a document in Aspose.Words for .NET?
+
+A: Use the `Groups` property of the document `Revisions` object to get the collection of revision groups. You can then use a loop to loop through each review group.
+
+```csharp
+foreach(RevisionGroup group in doc.Revisions.Groups)
+{
+     // Process each review group here
+}
+```
+
+#### Q: How to get the author of a review group in Aspose.Words for .NET?
+
+A: Use the `Author` property of the `RevisionGroup` object to get the author of the revision group.
+
+```csharp
+string author = group.Author;
+```
+
+#### Q: How to get the revision type of a revision group in Aspose.Words for .NET?
+
+A: Use the `RevisionType` property of the `RevisionGroup` object to get the revision type of the group.
+
+```csharp
+string revisionType = group.RevisionType;
+```

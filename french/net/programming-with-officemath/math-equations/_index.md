@@ -70,7 +70,7 @@ Dans cet exemple, nous enregistrons le document modifié sous "WorkingWithOffice
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document Word
+// Charger le document Word
 Document doc = new Document(dataDir + "Office math.docx");
 
 // Obtenir l'élément OfficeMath

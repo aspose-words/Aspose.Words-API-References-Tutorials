@@ -63,12 +63,12 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 Här är den fullständiga källkoden för att förankra ett kommentarsvar med Aspose.Words för .NET:
 
 ```csharp
-// Create an instance of the Document.
+// Skapa en instans av dokumentet.
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 Document doc = new Document();
 
-// Create three Run objects.
-// The first two run some text, while the third runs a Comment
+// Skapa tre Kör-objekt.
+//De två första kör lite text, medan den tredje kör en kommentar
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -88,7 +88,7 @@ Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 
-// Each of the Run objects has an associated CommentRangeStart and CommentRangeEnd object.
+// Vart och ett av Kör-objekten har ett associerat CommentRangeStart- och CommentRangeEnd-objekt.
 
 CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
 CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
@@ -99,3 +99,26 @@ commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
 ```
+
+### FAQ's
+
+#### F: Vad är ett kommentarsankare i Aspose.Words för .NET?
+
+S: I Aspose.Words för .NET är ett kommentarsankare en markör som kopplar en kommentar till en specifik plats i ett dokument.
+
+#### F: Hur kan jag lägga till ett kommentarsankare i ett Aspose.Words for .NET-dokument?
+
+S: För att lägga till ett kommentarsankare i ett Aspose.Words för .NET-dokument, följ stegen som nämns i handledningen.
+
+#### F: Hur kommer jag åt ett befintligt kommentarsankare i Aspose.Words för .NET?
+
+ S: Du kan komma åt ett befintligt kommentarsankare i Aspose.Words för .NET med hjälp av`Comment.Anchor` fast egendom.
+
+#### F: Kan jag supprimera ett kommentarsankare i Aspose.Words för .NET?
+
+ S: Ja, du kan ta bort ett kommentarsankare i Aspose.Words för .NET med hjälp av`Comment.Remove` metod.
+
+#### F: Hur kan jag redigera texten i en kommentar som är länkad till ett kommentarsankare i Aspose.Words för .NET?
+
+S: För att ändra texten i en kommentar som är bunden till ett kommentarsankare i Aspose.Words för .NET kan du komma åt`Comment.Text` motsvarande egendom`Comment` objekt och ändra texten efter behov.
+

@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Paso 2: configure los ajustes de fuente predeterminados
- A continuación, crearemos una instancia de`FontSettings` usando`FontSettings.DefaultInstance`y luego especificaremos las fuentes de fuentes utilizadas al cargar y renderizar documentos. En este ejemplo, estamos usando una fuente de fuente del sistema y una fuente de fuente de carpeta.
+ A continuación, crearemos una instancia de`FontSettings` usando`FontSettings.DefaultInstance`, y luego especificaremos las fuentes de fuentes utilizadas al cargar y renderizar documentos. En este ejemplo, estamos usando una fuente de fuente del sistema y una fuente de fuente de carpeta.
 
 ```csharp
 // Configurar los ajustes de fuente predeterminados
@@ -67,3 +67,21 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ## Conclusión
 En este tutorial, vimos cómo configurar los ajustes de fuente predeterminados en un documento de Word con Aspose.Words para .NET. Al especificar las fuentes de fuentes utilizadas al cargar y renderizar documentos, puede controlar la apariencia de las fuentes en sus documentos. Siéntase libre de usar esta función para personalizar la configuración de fuentes en sus proyectos.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo configurar la fuente predeterminada en Aspose.Words?
+
+ R: Para configurar la fuente predeterminada en Aspose.Words, puede usar el`FontSettings` clase y el`DefaultFontName` propiedad que especifica el nombre de la fuente deseada.
+
+#### P: ¿Puedo especificar el tamaño de fuente predeterminado en Aspose.Words?
+
+ R: Sí, puede especificar el tamaño de fuente predeterminado en Aspose.Words usando el`DefaultFontSize` propiedad de la`FontSettings` clase. Puede establecer el tamaño de punto deseado.
+
+#### P: ¿Es posible establecer el color de fuente predeterminado en Aspose.Words?
+
+ R: Sí, puede configurar el color de fuente predeterminado en Aspose.Words usando el`DefaultColor` propiedad de la`FontSettings` clase. Puede especificar el color utilizando valores RGB o nombres predefinidos.
+
+#### P: ¿La configuración de fuente predeterminada se aplica a todos los documentos?
+
+R: Sí, la configuración de fuente predeterminada se aplica a todos los documentos creados o editados en Aspose.Words, a menos que se establezca una configuración específica para un documento individual.

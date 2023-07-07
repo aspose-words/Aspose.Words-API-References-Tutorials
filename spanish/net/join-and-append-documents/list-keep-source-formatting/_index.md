@@ -1,6 +1,6 @@
 ---
-title: Lista Mantener formato de fuente
-linktitle: Lista Mantener formato de fuente
+title: Lista Mantener formato de origen
+linktitle: Lista Mantener formato de origen
 second_title: Referencia de API de Aspose.Words para .NET
 description: Aprenda a conservar el formato de la lista mientras une y agrega documentos de Word con Aspose.Words para .NET.
 type: docs

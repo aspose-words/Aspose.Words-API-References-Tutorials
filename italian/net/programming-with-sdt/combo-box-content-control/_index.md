@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Passaggio 3: aggiungi elementi alla casella combinata
- Aggiungere elementi alla casella combinata utilizzando il`ListItems` proprietà del`StructuredDocumentTag` . Ogni elemento è rappresentato da un`SdtListItem` oggetto, che accetta un testo visualizzato e un valore. In questo esempio, aggiungiamo tre elementi alla casella combinata.
+ Aggiungere elementi alla casella combinata utilizzando il`ListItems` proprietà del`StructuredDocumentTag` Ogni elemento è rappresentato da un`SdtListItem` oggetto, che accetta un testo visualizzato e un valore. In questo esempio, aggiungiamo tre elementi alla casella combinata.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

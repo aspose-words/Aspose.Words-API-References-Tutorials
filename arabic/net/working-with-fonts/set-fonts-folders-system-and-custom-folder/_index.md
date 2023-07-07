@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## الخطوة 3: تعيين مجلدات الخط المخصصة والنظام
- يمكنك الآن تعيين مجلدات خطوط النظام ومجلد مخصص باستخدام ملف`FontSettings` الطبقة و`SetFontsSources()` طريقة. أولاً ، تحتاج إلى استرداد قائمة مصادر الخطوط المعتمدة على البيئة التي تستخدم`GetFontsSources()` وتخزينه في قائمة. ثم يمكنك إنشاء مثيل جديد من`FolderFontSource`تحديد المسار إلى المجلد المخصص الذي يحتوي على الخطوط الخاصة بك. أضف هذا المثيل إلى قائمة مصادر الخطوط الموجودة. أخيرًا ، استخدم`SetFontsSources()` لتحديث مصادر الخطوط بالقائمة الجديدة.
+ يمكنك الآن تعيين مجلدات خطوط النظام ومجلد مخصص باستخدام ملف`FontSettings` الطبقة و`SetFontsSources()` طريقة. أولاً ، تحتاج إلى استرداد قائمة مصادر الخطوط المعتمدة على البيئة التي تستخدم`GetFontsSources()` وتخزينه في قائمة. ثم يمكنك إنشاء مثيل جديد من`FolderFontSource` تحديد المسار إلى المجلد المخصص الذي يحتوي على الخطوط الخاصة بك. أضف هذا المثيل إلى قائمة مصادر الخطوط الموجودة. أخيرًا ، استخدم`SetFontsSources()` لتحديث مصادر الخطوط بالقائمة الجديدة.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -55,24 +55,46 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders System والمجلد المخصص باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// المسار إلى دليل المستند الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// استرجع مصفوفة مصادر الخطوط المعتمدة على البيئة والتي يتم البحث عنها افتراضيًا.
-	// على سبيل المثال سيحتوي هذا على مصدر "Windows \ Fonts \" على أجهزة Windows.
-	// نضيف هذه المجموعة إلى قائمة جديدة لتسهيل إضافة أو إزالة مدخلات الخط.
-	List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-	// أضف مصدر مجلد جديد والذي سيوجه Aspose.Words للبحث في المجلد التالي عن الخطوط.
-	FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-	// أضف المجلد المخصص الذي يحتوي على خطوطنا إلى قائمة مصادر الخطوط الموجودة.
-	fontSources.Add(folderFontSource);
-	FontSourceBase[] updatedFontSources = fontSources.ToArray();
-	fontSettings.SetFontsSources(updatedFontSources);
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// استرجع مصفوفة مصادر الخطوط المعتمدة على البيئة والتي يتم البحث عنها افتراضيًا.
+// على سبيل المثال سيحتوي هذا على مصدر "Windows \ Fonts \" على أجهزة Windows.
+// نضيف هذه المجموعة إلى قائمة جديدة لتسهيل إضافة أو إزالة مدخلات الخط.
+List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
+// أضف مصدر مجلد جديد والذي سيوجه Aspose.Words للبحث في المجلد التالي عن الخطوط.
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+// أضف المجلد المخصص الذي يحتوي على خطوطنا إلى قائمة مصادر الخطوط الموجودة.
+fontSources.Add(folderFontSource);
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+fontSettings.SetFontsSources(updatedFontSources);
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## خاتمة
 في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلدات خطوط النظام ومجلد مخصص عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلدات خطوط متعددة ، بما في ذلك مجلد النظام والمجلد المخصص ، لاستخدامهما عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+
+### التعليمات
+
+#### س: كيف يمكنني تعيين مجلدات خطوط النظام في Aspose.Words؟
+
+ج: لتعيين مجلدات خطوط النظام في Aspose.Words ، ليس عليك فعل أي شيء. يستخدم Aspose.Words خطوط النظام المثبتة على نظام التشغيل الخاص بك تلقائيًا.
+
+#### س: كيف يمكنني تعيين مجلدات خطوط مخصصة في Aspose.Words؟
+
+ ج: لتعيين مجلدات الخطوط المخصصة في Aspose.Words ، يمكنك استخدام ملف`SetFontsFolders` طريقة`Fonts` فئة تحدد مواقع مجلدات الخطوط المخصصة.
+
+#### س: هل يمكنني تحديد عدة مجلدات خطوط مخصصة في Aspose.Words؟
+
+ ج: نعم ، يمكنك تحديد عدة مجلدات خطوط مخصصة في Aspose.Words باستخدام امتداد`SetFontsFolders` طريقة`Fonts` فئة مع قائمة بمواقع المجلدات.
+
+#### س: كيف يمكنني التحقق من مجلدات الخطوط المحددة في Aspose.Words؟
+
+ للتحقق من مجلدات الخطوط المحددة في Aspose.Words ، يمكنك استخدام ملحق`GetFolders` طريقة`Fonts` فئة للحصول على قائمة مجلدات الخط التي تم تكوينها.
+
+#### س: هل خطوط المجلدات المخصصة لها الأولوية على خطوط النظام في Aspose.Words؟
+
+ج: نعم ، خطوط المجلدات المخصصة لها الأولوية على خطوط النظام في Aspose.Words. إذا كان الخط موجودًا في كل من المجلدات المخصصة وخطوط النظام ، فسيستخدم Aspose.Words الإصدار من المجلد المخصص.

@@ -56,3 +56,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 
 ## Conclusion
 In this tutorial, we learned how to set font folders with priority when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily specify multiple font folders with custom search priority when rendering your documents. Aspose.Words offers a powerful and flexible API for working with fonts in your documents. With this knowledge, you can control and customize the font sources used when rendering your documents to your specific needs.
+
+### FAQ's
+
+#### Q: How can I set font folders with priority in Aspose.Words?
+
+A: To set font folders with priority in Aspose.Words, you can use the `SetFontsFoldersWithPriority` method of the `Fonts` class by specifying the font folder locations and their order of priority.
+
+#### Q: What happens if a font is present in several folders with different priority?
+
+A: If a font is present in multiple folders with different priority, Aspose.Words will use the version from the folder with the highest priority when processing documents.
+
+#### Q: Can I specify multiple font folders with the same priority in Aspose.Words?
+
+A: Yes, you can specify multiple font folders with the same priority in Aspose.Words. Aspose.Words will consider them all with equal priority when searching for fonts in your documents.
+
+#### Q: How can I check the font folders defined with priority in Aspose.Words?
+
+A: To check the font folders defined with priority in Aspose.Words, you can use the `GetFolders` method of the `Fonts` class to get the list of configured font folders including their priority order.
+
+#### Q: What is the use of setting font folders with priority in Aspose.Words?
+
+A: Setting font folders with priority in Aspose.Words allows you to control the search order of fonts in your Word documents. This helps you ensure that the fonts you want are used and avoid unwanted font substitution issues.

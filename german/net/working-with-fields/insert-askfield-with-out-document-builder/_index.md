@@ -76,3 +76,26 @@ doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 In diesem Beispiel haben wir ein neues Dokument erstellt, ein ASK-Feld ohne Verwendung von DocumentBuilder eingefügt, die verschiedenen Eigenschaften des Felds konfiguriert und das Dokument unter einem angegebenen Dateinamen gespeichert.
 
 Damit ist unser Leitfaden zur Verwendung der Funktion „ASK-Feld ohne DocumentBuilder einfügen“ mit Aspose.Words für .NET abgeschlossen.
+
+### FAQs
+
+#### F: Was ist ein ASK-Feld in Aspose.Words?
+
+A: Ein ASK-Feld in Aspose.Words wird verwendet, um dem Benutzer beim Öffnen eines Dokuments eine Frage zu stellen. Es wird häufig verwendet, um spezifische Informationen oder Feedback anzufordern, die von Benutzer zu Benutzer unterschiedlich sein können.
+
+#### F: Wie füge ich ein ASK-Feld in ein Word-Dokument ein, ohne den Document Builder in Aspose.Words zu verwenden?
+
+A: Um ein ASK-Feld in ein Word-Dokument einzufügen, ohne den Document Builder in Aspose.Words zu verwenden, können Sie die folgenden Schritte ausführen:
+
+1. Importieren Sie die Dokument- und Feldklasse aus dem Aspose.Words.Fields-Namespace.
+2. Erstellen Sie eine Instanz von Document, indem Sie Ihr vorhandenes Dokument laden.
+3. Verwenden Sie die Methode „InsertField“, um ein ASK-Feld einzufügen, indem Sie den Namen der Frage angeben.
+4. Speichern Sie das Dokument.
+
+#### F: Wie erhalte ich die Benutzerantwort für ein ASK-Feld in einem Word-Dokument?
+
+A: Um die Antwort des Benutzers für ein ASK-Feld in einem Word-Dokument zu erhalten, können Sie die in der Document-Klasse verfügbare GetFieldNames-Methode verwenden. Diese Methode gibt eine Liste der Namen der im Dokument vorhandenen Felder zurück. Anschließend können Sie prüfen, ob der ASK-Feldname in der Liste vorhanden ist, und die zugehörige Antwort abrufen.
+
+#### F: Kann das ASK-Feld verwendet werden, um weitere Informationen vom Benutzer anzufordern?
+
+A: Ja, das ASK-Feld kann verwendet werden, um mehrere Informationen vom Benutzer anzufordern. Sie können mehrere ASK-Felder mit jeweils einer anderen Frage in Ihr Dokument einfügen. Beim Öffnen des Dokuments wird der Benutzer zur Eingabe der entsprechenden Antworten aufgefordert.

@@ -11,7 +11,7 @@ WebExtensions ile programlama üzerine Aspose.Words for .NET öğreticileri, Wor
 
 Bu öğreticiler, WebExtensions'ın işlevselliğini Aspose.Words for .NET ile anlamak ve kullanmak için adım adım talimatlar sağlar. Web uzantısı nesnelerine erişmeyi, olayları işlemeyi, JavaScript kodunu değerlendirmeyi, özel işlevsellik eklemeyi ve daha fazlasını öğreneceksiniz. İster yeni başlayan ister deneyimli bir geliştirici olun, bu eğitimler WebExtensions ile programlama tekniklerinde uzmanlaşmanıza yardımcı olacaktır.
 
-Bu öğreticileri izleyerek, Word belgelerinizdeki web uzantılarının özelliklerinden tam olarak yararlanabilecek ve onlara etkileşimli ve dinamik özellikler kazandırabileceksiniz. Öğreticiler, bu özelliklerden en iyi şekilde yararlanmanıza ve yenilikçi ve etkileşimli Word belgeleri oluşturmanıza yardımcı olmak için adım adım kod örnekleri ve net açıklamalar sağlar.
+Bu öğreticileri izleyerek, Word belgelerinizdeki web uzantılarının özelliklerinden tam olarak yararlanabilecek ve onlara etkileşimli ve dinamik özellikler kazandırabileceksiniz. Öğreticiler, bu özelliklerden en iyi şekilde yararlanmanıza ve yenilikçi ve etkileşimli Word belgeleri oluşturmanıza yardımcı olacak adım adım kod örnekleri ve net açıklamalar sağlar.
 
 ## Öğreticiler
 | Başlık | Tanım |

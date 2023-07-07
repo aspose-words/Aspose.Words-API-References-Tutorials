@@ -34,7 +34,7 @@ table.Description = "Test Description";
 ```
 
 ## Шаг 4. Установите параметры резервного копирования
- Если вы хотите указать параметры сохранения, вы можете настроить их с помощью`OoxmlSaveOptions` сорт. В этом примере мы использовали`Compliance` параметр, чтобы указать соответствие формату ISO 29500:2008 Strict.
+ Если вы хотите указать параметры сохранения, вы можете настроить их с помощью`OoxmlSaveOptions` сорт. В этом примере мы использовали`Compliance` параметр для указания соответствия формату ISO 29500:2008 Strict.
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Strict };

@@ -15,8 +15,8 @@ url: /ru/net/working-with-oleobjects-and-activex/
  ## Учебники
 | Заголовок | Описание |
 | --- | --- |
-| [Вставить объект Ole](./insert-ole-object/) | Узнайте, как вставить объект OLE в документ с помощью Aspose.Words для .NET. |
-| [Вставить объект Ole с пакетом Ole](./insert-ole-object-with-ole-package/) | Узнайте, как вставить объект OLE с пакетом OLE в документ с помощью Aspose.Words для .NET. |
-| [Вставить объект Ole как значок](./insert-ole-object-as-icon/) | Узнайте, как вставить объект OLE в виде значка с помощью Aspose.Words для .NET. |
+| [Вставить объект Ole в документ Word](./insert-ole-object/) | Узнайте, как вставить объект OLE в документ Word с помощью Aspose.Words для .NET. |
+| [Вставьте объект Ole в Word с пакетом Ole](./insert-ole-object-with-ole-package/) | Узнайте, как вставить объект OLE в Word с пакетом OLE в документ с помощью Aspose.Words для .NET. |
+| [Вставить объект Ole в документ Word как значок](./insert-ole-object-as-icon/) | Узнайте, как вставить объект OLE в документ Word в виде значка с помощью Aspose.Words для .NET. |
 | [Вставьте объект Ole в виде значка с помощью потока](./insert-ole-object-as-icon-using-stream/) | Узнайте, как вставить объект OLE в качестве значка с помощью потока с Aspose.Words для .NET. |
-| [Чтение свойств Active XControl](./read-active-xcontrol-properties/) | Чтение свойств элементов управления ActiveX в документе Word с помощью Aspose.Words для .NET. |
+| [Чтение свойств Active XControl из файла Word](./read-active-xcontrol-properties/) | Чтение свойств элементов управления ActiveX в файле Word с помощью Aspose.Words для .NET. |

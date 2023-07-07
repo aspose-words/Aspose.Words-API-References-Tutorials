@@ -1,8 +1,8 @@
 ---
-title: Eingebettete Teilsatzschriftarten
-linktitle: Eingebettete Teilsatzschriftarten
+title: Teilmenge von Schriftarten in PDF-Dokument einbetten
+linktitle: Teilmenge von Schriftarten in PDF-Dokument einbetten
 second_title: Aspose.Words für .NET API-Referenz
-description: Schritt-für-Schritt-Anleitung zum Einbetten von Schriftartteilmengen in ein PDF mit Aspose.Words für .NET.
+description: Schritt-für-Schritt-Anleitung zum Einbetten von Schriftartteilmengen in ein PDF-Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
@@ -61,3 +61,35 @@ Das ist alles ! Sie haben Teilsätze von Schriftarten erfolgreich in ein Dokumen
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 
 ```
+
+## Abschluss
+
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Schriftartteilmengen in ein PDF-Dokument einbettet. Das Einbetten von Teilsätzen von Schriftarten trägt dazu bei, die Größe der PDF-Datei zu reduzieren und gleichzeitig das Erscheinungsbild des Dokuments beizubehalten, indem nur die tatsächlich verwendeten Zeichen verwendet werden. Dies sorgt für eine bessere Kompatibilität und Leistung beim Anzeigen und Drucken des PDFs. Erkunden Sie die Funktionen von Aspose.Words für .NET weiter, um die Generierung Ihrer PDF-Dokumente mit eingebetteten Schriftart-Teilsätzen zu optimieren.
+
+### Häufig gestellte Fragen
+
+#### F: Was bedeutet das Einbetten von Schriftartteilmengen in ein PDF-Dokument?
+A: Beim Einbetten von Schriftartteilsätzen in ein PDF-Dokument werden nur die im Dokument verwendeten Glyphen einbezogen, nicht alle vollständigen Schriftarten. Dadurch wird die Größe der PDF-Datei reduziert, da nur die Schriftartdaten einbezogen werden, die zur Anzeige der tatsächlich im Dokument verwendeten Zeichen erforderlich sind.
+
+#### F: Was ist der Unterschied zwischen dem Einbetten vollständiger Schriftarten und dem Einbetten von Teilsätzen von Schriftarten?
+A: Vollständige Schriftarteneinbettung bedeutet, dass alle im Dokument verwendeten Schriftarten in die PDF-Datei einbezogen werden. Dadurch wird sichergestellt, dass das Dokument genau so angezeigt wird, wie es entworfen wurde, die Größe der PDF-Datei kann jedoch zunehmen. Im Gegensatz dazu enthält das Einbetten von Schriftartteilsätzen nur die im Dokument verwendeten Glyphen, wodurch sich die Größe der PDF-Datei verringert, aber die Möglichkeit, das Aussehen des Dokuments genau zu reproduzieren, eingeschränkt wird, wenn später zusätzliche Zeichen hinzugefügt werden.
+
+#### F: Wie kann ich mit Aspose.Words für .NET Schriftartteilmengen in ein PDF-Dokument einbetten?
+A: Um Schriftartteilmengen mithilfe von Aspose.Words für .NET in ein PDF-Dokument einzubetten, führen Sie die folgenden Schritte aus:
+
+ Legen Sie den Dokumentverzeichnispfad durch Ersetzen fest`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad Ihres Dokumentenverzeichnisses.
+
+ Laden Sie das Dokument, das Sie bearbeiten möchten, mit`Document` Klasse und den Dokumentpfad.
+
+ Konfigurieren Sie PDF-Speicheroptionen, indem Sie eine Instanz davon erstellen`PdfSaveOptions` Klasse und Einstellung der`EmbedFullFonts` Eigentum zu`false`Dadurch wird sichergestellt, dass nur die im Dokument verwendeten Schriftarten-Untergruppen in die PDF-Datei aufgenommen werden.
+
+ Speichern Sie das Dokument im PDF-Format mit den mithilfe von eingebetteten Schriftartteilsätzen`Save` Methode der`Document` -Objekt unter Angabe des Namens der Ausgabedatei und der zuvor konfigurierten Speicheroptionen.
+
+#### F: Welche Vorteile bietet das Einbetten von Schriftartteilmengen in ein PDF-Dokument?
+A: Das Einbetten von Schriftartteilmengen in ein PDF-Dokument bietet folgende Vorteile:
+
+Reduzierte PDF-Dateigröße: Durch die Einbeziehung nur der im Dokument verwendeten Glyphen wird die PDF-Dateigröße im Vergleich zum Einbetten vollständiger Schriftarten reduziert.
+
+Beibehaltung des Erscheinungsbilds des Dokuments: Die in der PDF-Datei enthaltenen Teilsätze der Schriftarten ermöglichen es, das Erscheinungsbild des Dokuments nur mit den tatsächlich verwendeten Zeichen zu reproduzieren.
+
+Kompatibilität mit den Lizenzbeschränkungen: Das Einbetten von Teilsätzen von Schriftarten kann in Fällen bevorzugt werden, in denen vollständige Schriftarten aufgrund von Lizenzbeschränkungen nicht legal eingebettet werden können.

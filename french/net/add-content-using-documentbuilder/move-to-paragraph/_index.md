@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/add-content-using-documentbuilder/move-to-paragraph/
 ---
 
-Dans cet exemple étape par étape, nous allons explorer la fonction Déplacer vers le paragraphe de Aspose.Words pour .NET. Cette fonctionnalité permet aux développeurs de naviguer et de manipuler les paragraphes dans un document Word par programme. En suivant ce guide, vous apprendrez à mettre en œuvre et à utiliser efficacement la fonctionnalité Déplacer vers le paragraphe.
+Dans cet exemple étape par étape, nous allons explorer la fonction Déplacer vers le paragraphe de Aspose.Words pour .NET. Cette fonctionnalité permet aux développeurs de naviguer et de manipuler les paragraphes dans un document Word par programmation. En suivant ce guide, vous apprendrez à mettre en œuvre et à utiliser efficacement la fonctionnalité Déplacer vers le paragraphe.
 
 Le code ci-dessus illustre l'utilisation de la fonctionnalité Déplacer vers le paragraphe. Comprenons chaque étape en détail:
 

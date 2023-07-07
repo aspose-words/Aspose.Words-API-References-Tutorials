@@ -84,7 +84,7 @@ Document doc = new Document(dataDir + "Header and footer types.docx");
 foreach (Section section in doc)
 {
 	// In einem Abschnitt sind bis zu drei verschiedene Fußzeilen möglich (für erste, gerade und ungerade Seiten)
-	// Wir prüfen und löschen sie alle.
+	//Wir prüfen und löschen sie alle.
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 

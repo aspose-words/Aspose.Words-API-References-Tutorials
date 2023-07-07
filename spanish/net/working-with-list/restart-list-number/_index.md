@@ -97,7 +97,7 @@ builder.ListFormat.RemoveNumbers();
 // Para reutilizar la primera lista, debemos reiniciar la numeración creando una copia del formato de la lista original.
 List list2 = doc.Lists.AddCopy(list1);
 
-// Podemos modificar la nueva lista de cualquier manera, incluida la configuración de un nuevo número de inicio.
+//Podemos modificar la nueva lista de cualquier manera, incluida la configuración de un nuevo número de inicio.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");
@@ -110,6 +110,23 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
             
 ```
 
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo reiniciar la numeración de una lista en Aspose.Words?
+
+ R: Para reiniciar la numeración de una lista en Aspose.Words, puede usar el`ListRestartAtNumber` metodo de la`List` clase. Este método le permite establecer un nuevo valor de marcación a partir del cual se debe reiniciar la lista. Por ejemplo, puedes usar`list.ListRestartAtNumber(1)` para reiniciar la numeración desde 1.
+
+#### P: ¿Es posible personalizar el prefijo y el sufijo de la numeración de lista reiniciada en Aspose.Words?
+
+ R: Sí, puede personalizar el prefijo y el sufijo de la numeración de lista reiniciada en Aspose.Words. El`ListLevel` class ofrece propiedades tales como`ListLevel.NumberPrefix` y`ListLevel.NumberSuffix` que le permiten especificar el prefijo y el sufijo para cada nivel en la lista. Puede usar estas propiedades para personalizar el prefijo y el sufijo según sea necesario.
+
+#### P: ¿Cómo puedo especificar un valor de numeración específico a partir del cual se debe reiniciar la lista?
+
+ R: Para especificar un valor de número específico desde el cual se debe reiniciar la lista, puede usar el`ListRestartAtNumber`método que pasa el valor deseado como argumento. Por ejemplo, para reiniciar la numeración desde 5, puede usar`list.ListRestartAtNumber(5)`.
+
+#### P: ¿Es posible reiniciar la numeración de listas de varios niveles en Aspose.Words?
+
+ R: Sí, Aspose.Words admite la numeración de reinicio de varios niveles de lista. Puedes aplicar el`ListRestartAtNumber` en cada nivel de lista para reiniciar la numeración individualmente. Por ejemplo, puedes usar`list.Levels[0].ListRestartAtNumber(1)` para reiniciar el primer nivel de lista desde 1, y`list.Levels[1].ListRestartAtNumber(1)` para reiniciar la lista de segundo nivel a partir de 1, y así sucesivamente.
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Imposta le opzioni del contorno
-linktitle: Imposta le opzioni del contorno
+title: Imposta le opzioni di struttura in un documento PDF
+linktitle: Imposta le opzioni di struttura in un documento PDF
 second_title: Riferimento all'API Aspose.Words per .NET
 description: Guida dettagliata per impostare le opzioni di contorno in un documento PDF con Aspose.Words per .NET.
 type: docs
@@ -64,3 +64,26 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOption
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
    
 ```
+
+## Conclusione
+
+In questo tutorial, abbiamo spiegato come impostare le opzioni di struttura in un documento PDF utilizzando Aspose.Words per .NET. Utilizzando i passaggi descritti, puoi facilmente specificare i livelli di intestazione e struttura nel tuo documento e generare un file PDF con le opzioni di struttura corrispondenti. Goditi i vantaggi dell'opzione contorno per migliorare la struttura e la navigazione nei tuoi documenti PDF utilizzando Aspose.Words per .NET.
+
+### Domande frequenti
+
+#### D: Cos'è l'opzione contorno in un documento PDF?
+R: L'opzione contorno in un documento PDF si riferisce alla struttura gerarchica del contenuto del documento. Consente di creare un sommario interattivo e facilita la navigazione nel documento. Le opzioni di struttura determinano i livelli di titolo e sottotitolo da includere nella struttura e il livello di dettaglio da visualizzare nella struttura generata.
+
+#### D: Come posso impostare le opzioni di struttura in un documento PDF utilizzando Aspose.Words per .NET?
+R: Per impostare le opzioni di struttura in un documento PDF utilizzando Aspose.Words per .NET, attenersi alla seguente procedura:
+
+ Imposta il percorso della directory in cui si trovano i tuoi documenti sostituendo`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
+
+ Carica il documento che desideri convertire in PDF utilizzando il file`Document` class e specificare il percorso del documento nella directory dei documenti specificata.
+
+ Configura le opzioni di salvataggio come PDF creando un'istanza del file`PdfSaveOptions` classe e utilizzando il`OutlineOptions` proprietà per impostare le opzioni del contorno. È possibile specificare il numero di livelli di intestazione da includere nella struttura utilizzando il`HeadingsOutlineLevels` proprietà e il numero di livelli di struttura espansi utilizzando il`ExpandedOutlineLevels` proprietà.
+
+ Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document`class specificando il percorso e le opzioni di salvataggio.
+
+#### D: A cosa serve l'opzione del piano in un documento PDF?
+R: L'opzione contorno in un documento PDF consente di creare una struttura gerarchica del contenuto, che rende più facile navigare nel documento e accedere a diverse sezioni. Ciò consente agli utenti di passare rapidamente a parti specifiche del documento facendo clic sulle voci nel sommario o nella struttura. L'opzione struttura migliora anche l'esperienza di lettura fornendo una panoramica della struttura generale del documento.

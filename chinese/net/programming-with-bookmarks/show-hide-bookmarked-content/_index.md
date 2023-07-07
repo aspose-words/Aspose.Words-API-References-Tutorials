@@ -8,22 +8,22 @@ weight: 10
 url: /zh/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-在本文中，我们将探索上述 C# 源代码，以了解如何在 Aspose.Words for .NET 库中使用显示隐藏书签内容功能。此功能允许您在合并数据时根据特定条件显示或隐藏书签的内容。
+在本文中，我们将探索上述 C# 源代码，以了解如何在 Aspose.Words for .NET 库中使用“显示隐藏书签内容”功能。此功能允许您在合并数据时根据特定条件显示或隐藏书签的内容。
 
 ## 先决条件
 
 - C# 语言的基础知识。
 - 安装了 Aspose.Words 库的 .NET 开发环境。
 
-## 第 1 步：获取书签
+## 第一步：获取书签
 
-我们使用`Bookmarks`文档范围的属性以获取我们要显示或隐藏内容的特定书签：
+我们使用`Bookmarks`文档范围的属性来获取我们要显示或隐藏内容的特定书签：
 
 ```csharp
 Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 ```
 
-## 第 2 步：插入合并字段
+## 步骤 2：插入合并字段
 
 我们使用文档生成器`DocumentBuilder`插入必要的合并字段。这些合并字段将设置一个条件来显示或隐藏书签内容，具体取决于`showHide`多变的：
 
@@ -40,11 +40,11 @@ builder. Write("\"");
 builder. Write(" \"\"");
 ```
 
-## 第 3 步：移动书签内容
+## 步骤 3：移动书签内容
 
-我们遍历书签的内容并移动它以使其出现
+我们循环浏览书签的内容并移动它以使其出现
 
-书签前的 isse。这将根据指定条件控制显示或隐藏内容：
+isse 在书签之前。这将根据指定条件控制显示或隐藏内容：
 
 ```csharp
 Node currentNode = field. Start;
@@ -62,9 +62,9 @@ while (currentNode != null && flag)
 }
 ```
 
-## 第 4 步：移动剩余的书签内容
+## 步骤 4：移动书签的其余内容
 
-我们将剩余的书签内容移动到书签之后，使用书签的结束节点作为插入点：
+我们将书签的其余内容移动到书签之后，使用书签的结束节点作为插入点：
 
 ```csharp
 Node endNode = bm.BookmarkEnd;
@@ -84,7 +84,7 @@ while (currentNode != null && flag)
 
 ## 第 5 步：执行合并
 
-我们使用`Execute`文档的方法`s `邮件合并` object to execute the merge using the bookmark name and the value of the `showHide` 变量：
+我们使用`Execute`文档方法`s `邮件合并` object to execute the merge using the bookmark name and the value of the `显示隐藏`变量：
 
 ```csharp
 doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
@@ -92,7 +92,7 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 
 ### 使用 Aspose.Words for .NET 显示隐藏书签内容的示例源代码
 
-以下是演示使用 Aspose.Words for .NET 显示或隐藏书签内容的完整源代码示例：
+以下是源代码的完整示例，演示使用 Aspose.Words for .NET 显示或隐藏书签内容：
 
 ```csharp
 
@@ -144,4 +144,4 @@ doc. MailMerge. Execute(new[] { bookmarkName }, new object[] { showHide });
 
 ## 结论
 
-在本文中，我们探索了 C# 源代码以了解如何使用 Aspose.Words for .NET 的显示隐藏书签内容功能。我们已按照分步指南在合并数据时根据特定条件显示或隐藏书签的内容。
+在本文中，我们探索了 C# 源代码，以了解如何使用 Aspose.Words for .NET 的显示隐藏书签内容功能。我们按照分步指南在合并数据时根据特定条件显示或隐藏书签的内容。

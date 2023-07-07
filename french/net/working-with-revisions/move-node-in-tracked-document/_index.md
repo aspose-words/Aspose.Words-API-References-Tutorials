@@ -111,3 +111,35 @@ Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```
 
+## Conclusion
+
+Dans ce didacticiel, nous avons appris à déplacer un nœud dans un document Word suivi à l'aide de Aspose.Words pour .NET. En suivant les étapes de création du document, d'activation du suivi des révisions, de déplacement du nœud et d'arrêt du suivi des révisions, nous avons pu effectuer cette manipulation avec succès. Aspose.Words pour .NET est un outil puissant pour travailler avec des documents Word et offre des fonctionnalités avancées pour gérer les révisions. Vous pouvez désormais utiliser ces connaissances pour déplacer des nœuds dans vos propres documents Word tout en suivant les révisions à l'aide d'Aspose.Words pour .NET.
+
+### FAQ
+
+#### Q : Comment puis-je activer le suivi des révisions dans un document Aspose.Words pour .NET ?
+
+ : Pour activer le suivi des révisions dans un document Aspose.Words pour .NET, vous pouvez utiliser le`StartTrackRevisions` méthode de la`Document` objet. Cette méthode prend comme paramètres le nom de l'auteur des révisions et la date de début du suivi des révisions.
+
+```csharp
+doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+```
+
+#### Q : Comment puis-je déplacer un nœud dans un document suivi sans générer de révisions ?
+
+ R : Si vous souhaitez déplacer un nœud dans un document suivi sans générer de révisions, vous pouvez utiliser l'outil`Remove` et`InsertAfter` ou`InsertBefore` méthodes de la`Node` objet. Par exemple, pour déplacer un paragraphe après un autre paragraphe, vous pouvez utiliser le code suivant :
+
+```csharp
+Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
+Node referenceNode = document.FirstSection.Body.Paragraphs[1];
+nodeToMove.Remove();
+document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
+```
+
+#### Q : Comment puis-je arrêter le suivi des révisions dans un document Aspose.Words pour .NET ?
+
+ R : Pour arrêter le suivi des révisions dans un document Aspose.Words pour .NET, vous pouvez utiliser le`StopTrackRevisions` méthode de la`Document` objet.
+
+```csharp
+doc.StopTrackRevisions();
+```

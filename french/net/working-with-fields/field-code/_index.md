@@ -64,3 +64,21 @@ foreach(Field field in doc.Range.Fields)
 Dans cet exemple, nous avons chargé un document, puis parcouru tous les champs présents dans le document. A chaque itération, on récupère le code et le résultat du champ. Vous pouvez ajouter votre propre logique pour traiter le code et les champs de résultat selon vos besoins.
 
 Ceci conclut notre guide sur l'utilisation de la fonctionnalité "Obtenir le code de champ" avec Aspose.Words pour .NET.
+
+### FAQ
+
+#### Q : Comment puis-je insérer un champ dans un document Word à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour insérer un champ dans un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`DocumentBuilder.InsertField` méthode spécifiant le code de champ approprié. Par exemple, vous pouvez utiliser`builder.InsertField("MERGEFIELD CustomerName")` pour insérer un champ de fusion dans le document.
+
+#### Q : Comment puis-je mettre à jour les champs d'un document à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour mettre à jour les champs de document à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Document.UpdateFields` méthode. Cela mettra à jour tous les champs présents dans le document, tels que les champs de fusion, les champs de date, etc.
+
+#### Q : Comment puis-je récupérer la valeur d'un champ spécifique dans Aspose.Words pour .NET ?
+
+ R : Pour récupérer la valeur d'un champ spécifique dans Aspose.Words pour .NET, vous pouvez utiliser le`Field.GetResult` méthode en spécifiant l'index du champ dans la`Document.Range.Fields` collection. Par exemple, vous pouvez utiliser`string value = document.Range.Fields[0].GetResult()` pour récupérer la valeur du premier champ du document.
+
+#### Q : Comment puis-je supprimer un champ d'un document à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour supprimer un champ d'un document à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Field.Remove` méthode spécifiant la`Field` objet que vous souhaitez supprimer. Cela supprimera le champ du document.

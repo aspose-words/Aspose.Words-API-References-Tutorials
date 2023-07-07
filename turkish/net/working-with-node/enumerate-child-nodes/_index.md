@@ -33,7 +33,7 @@ Document doc = new Document();
 Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
-Ardından, paragrafın alt düğümlerinin koleksiyonunu kullanarak alırız.`ChildNodes` mülk.
+ Ardından, paragrafın alt düğümlerinin koleksiyonunu kullanarak alırız.`ChildNodes` mülk.
 
 ```csharp
 NodeCollection children = paragraph. ChildNodes;
@@ -66,7 +66,7 @@ Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 NodeCollection children = paragraph.ChildNodes;
 foreach (Node child in children)
 {
-	// Bir paragraf, diziler, şekiller ve diğerleri gibi çeşitli türlerdeki çocukları içerebilir.
+	//Bir paragraf, diziler, şekiller ve diğerleri gibi çeşitli türlerdeki çocukları içerebilir.
 	if (child.NodeType == NodeType.Run)
 	{
 		Run run = (Run) child;
@@ -77,3 +77,25 @@ foreach (Node child in children)
 
 Bu, bir paragrafın alt düğümlerini Aspose.Words for .NET ile numaralandırmak için eksiksiz bir kod örneğidir. Referansları içe aktardığınızdan emin olun
 
+
+### SSS
+
+#### S: Node.js'de alt düğüm nedir?
+
+C: Node.js'deki bir alt düğüm, doğrudan belirli bir düğümün içinde yer alan bir düğümü ifade eder. Bunlar, hiyerarşide hemen üst düğümden daha düşük olan düğümlerdir.
+
+#### S: Belirli bir düğümün alt düğümleri nasıl numaralandırılır?
+
+ C: Node.js'de belirli bir düğümün alt düğümlerini numaralandırmak için`childNodes` düğümün özelliği. Bu özellik, belirtilen düğümün tüm alt düğümlerinin bir listesini döndürür.
+
+#### S: Bir alt düğümün özelliklerine nasıl erişilir?
+
+ C: Node.js'deki bir alt düğümün özelliklerine erişmek için, Node.js ortamınızda kullanılan XML API'si tarafından sağlanan yöntemleri ve özellikleri kullanabilirsiniz. Örneğin, gibi yöntemleri kullanabilirsiniz.`getAttribute`bir alt düğümün belirli bir özniteliğinin değerini almak için.
+
+#### S: Bir düğümün alt düğümlerini değiştirebilir miyiz?
+
+ C: Evet, Node.js ortamınızda kullanılan XML API tarafından sağlanan yöntemleri ve özellikleri kullanarak Node.js'deki bir düğümün alt düğümlerini değiştirmek mümkündür. Örneğin, gibi yöntemleri kullanabilirsiniz.`appendChild` veya`removeChild` belirli bir düğümden alt düğümler eklemek veya çıkarmak için.
+
+#### S: Bir düğümün tüm alt düğümlerine nasıl göz atılır?
+
+ C: Node.js'de belirli bir düğümün tüm alt düğümleri arasında döngü oluşturmak için bir`for` tarafından döndürülen alt düğümlerin listesini yinelemek için döngü`childNodes` mülk. Daha sonra döngü içindeki her alt düğümün özelliklerine ve değerlerine erişebilirsiniz.

@@ -49,3 +49,16 @@ builder.Writeln("This text will be Bold");
 Congratulazioni! Ora hai imparato come mettere in grassetto il testo con Aspose.Words per .NET.
 
 
+### FAQ
+
+#### D: Come posso rendere il testo in grassetto in Aspose.Words?
+
+ A: Per rendere il testo in grassetto in Aspose.Words, puoi usare il`Font.Bold` proprietà del`Run`oggetto. Puoi impostare questa proprietà su`true` al testo specifico in grassetto. Ad esempio, puoi usare`run.Font.Bold=true` per mettere in grassetto il testo all'interno di`Run` oggetto.
+
+#### D: È possibile mettere in grassetto diverse parti di testo nello stesso paragrafo?
+
+ A: Sì, puoi mettere in grassetto più parti di testo in un singolo paragrafo usando multiple`Run` oggetti. Puoi creare più file`Run` oggetti e impostare il`Font.Bold` proprietà a`true` per ogni oggetto mettere in grassetto le parti di testo desiderate. Quindi puoi aggiungerli al paragrafo usando il`Paragraph.AppendChild(run)` metodo.
+
+#### D: Posso mettere in grassetto il testo che si trova in una tabella o in una cella in Aspose.Words?
+
+ A: Sì, puoi mettere in grassetto il testo che si trova in una tabella o in una cella in Aspose.Words. Puoi navigare fino alla cella o al paragrafo che desideri utilizzando i metodi appropriati e quindi applicare la formattazione in grassetto utilizzando il`Font.Bold` proprietà del`Run` O`Paragraph` oggetto.

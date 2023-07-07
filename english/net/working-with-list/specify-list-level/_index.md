@@ -117,6 +117,19 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
             
 ```
 
+### FAQ's
+
+#### Q: How can I specify list level in Aspose.Words?
+
+A: To specify the list level in Aspose.Words, you need to create an instance of the `List` class and give it a numbered list. Then you can use the `Paragraph.ListFormat.ListLevelNumber` property to specify the level of each list item. You can associate this list with a section of your document so that the list items have the desired level.
+
+#### Q: Is it possible to change the numbering format of list items in Aspose.Words?
+
+A: Yes, you can change the numbering format of list items in Aspose.Words. The `ListLevel` class offers several properties for this, such as `ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`, etc. You can use these properties to set the numbering format for list items, such as Arabic numerals, Roman numerals, letters, etc.
+
+#### Q: Can I add additional levels to a numbered list in Aspose.Words?
+
+A: Yes, it is possible to add additional levels to a numbered list in Aspose.Words. The `ListLevel` class allows you to set formatting properties for each level of the list. You can set options like prefix, suffix, alignment, indent, etc. This allows you to create lists with multiple levels of hierarchy.
 
 
 

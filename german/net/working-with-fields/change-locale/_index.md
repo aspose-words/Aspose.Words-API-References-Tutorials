@@ -89,3 +89,25 @@ doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 
 ## Abschluss
 Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET das Gebietsschema in Word-Dokumenten ändern. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie jetzt die Formatierung von Datums- und Zahlenangaben bei Seriendruckvorgängen steuern. Passen Sie das Gebietsschema entsprechend Ihren Anforderungen an, um eine genaue und konsistente Formatierung in Ihren Dokumenten sicherzustellen.
+
+### FAQs
+
+#### F: Ist Aspose.Words mit verschiedenen Versionen von Microsoft Word kompatibel?
+
+A: Ja, Aspose.Words ist mit verschiedenen Versionen von Microsoft Word kompatibel, einschließlich Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 und Word 2019.
+
+#### F: Unterstützt Aspose.Words komplexe Feldstrukturen?
+
+A: Auf jeden Fall! Aspose.Words bietet umfassende Unterstützung für komplexe Feldstrukturen, einschließlich verschachtelter Felder, Berechnungen und bedingter Ausdrücke. Mit dieser leistungsstarken API können Sie mit jeder Art von Feldstruktur arbeiten.
+
+#### F: Unterstützt Aspose.Words Feldaktualisierungsvorgänge?
+
+A: Ja, mit Aspose.Words können Sie Felder nach einem Zeitplan aktualisieren. Mit der API können Sie ganz einfach Feldwerte aktualisieren, Berechnungen aktualisieren und andere feldbezogene Vorgänge ausführen.
+
+#### F: Ist es möglich, Felder mit Aspose.Words in einfachen Text umzuwandeln?
+
+A: Auf jeden Fall! Aspose.Words bietet Methoden zum Konvertieren von Feldern in einfachen Text. Dies kann nützlich sein, wenn Sie den Inhalt ohne Formatierung oder feldbezogene Funktionalität extrahieren müssen.
+
+#### F: Ist es möglich, mit Aspose.Words Word-Dokumente mit dynamischen Feldern zu generieren?
+
+A: Auf jeden Fall! Aspose.Words bietet robuste Funktionalität zum Generieren von Word-Dokumenten mit dynamischen Feldern. Sie können Vorlagen mit vordefinierten Feldern erstellen und diese dynamisch mit Daten füllen und so eine flexible und effiziente Lösung für die Dokumentenerstellung bereitstellen.

@@ -45,7 +45,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 // Используйте конструктор документов, чтобы добавить содержимое в документ.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Вставить гиперссылку.
+// Вставить гиперссылку.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -53,3 +53,17 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 Поздравляем! Теперь вы узнали, как использовать функцию «Автоссылка» с Aspose.Words для .NET.
 
+
+### Часто задаваемые вопросы
+
+#### В: Как я могу создать автоматическую ссылку на URL-адрес в Aspose.Words?
+
+ О: Чтобы создать автоматическую ссылку на URL-адрес в Aspose.Words, вы можете использовать`<a>` тег с`href` атрибут, содержащий URL-адрес. Например, вы можете использовать`<a href="https://www.aspose.com">https://www.aspose.com</a>` для автоматической ссылки на "https://www.aspose.com".
+
+#### В: Можно ли настроить отображаемый текст автоматической ссылки в Aspose.Words?
+
+ О: Да, вы можете настроить отображаемый текст автоматической ссылки в Aspose.Words. Вместо использования URL-адреса в качестве отображаемого текста вы можете использовать любой другой текст, заменив содержимое между`<a>` теги. Например, вы можете использовать`<a href="https://www.aspose.com">Click here</a>` для отображения текста «Нажмите здесь» в качестве автоматической ссылки.
+
+#### Q: Как я могу добавить дополнительные атрибуты к автоссылке в Aspose.Words?
+
+О: Чтобы добавить дополнительные атрибуты к автоматической ссылке в Aspose.Words, вы можете использовать дополнительные атрибуты HTML внутри`<a>` ярлык. Например, вы можете использовать`<a href="https://www.aspose.com" target="_blank">Link</a>` чтобы открыть ссылку в новом окне или вкладке с помощью кнопки` attribute target="_blank"`.

@@ -32,7 +32,7 @@ builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
 ## Étape 3 : Spécification du niveau de liste
 
- Utilisez le générateur de documents`ListLevelNumber`propriété pour spécifier le niveau de la liste et ajouter du texte au paragraphe :
+ Utilisez le générateur de documents`ListLevelNumber` propriété pour spécifier le niveau de la liste et ajouter du texte au paragraphe :
 
 ```csharp
 for (int i = 0; i < 9; i++)
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Créer une liste numérotée basée sur l'un des modèles de liste Microsoft Word
+//Créer une liste numérotée basée sur l'un des modèles de liste Microsoft Word
 // et appliquez-le au paragraphe actuel du générateur de document.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-//Créer une liste à puces basée sur l'un des modèles de liste Microsoft Word
+// Créer une liste à puces basée sur l'un des modèles de liste Microsoft Word
 // et appliquez-le au paragraphe actuel du générateur de document.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -117,5 +117,18 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
             
 ```
 
+### FAQ
+
+#### Q : Comment puis-je spécifier le niveau de liste dans Aspose.Words ?
+
+ R : Pour spécifier le niveau de la liste dans Aspose.Words, vous devez créer une instance de la`List` classe et donnez-lui une liste numérotée. Ensuite, vous pouvez utiliser le`Paragraph.ListFormat.ListLevelNumber` propriété pour spécifier le niveau de chaque élément de la liste. Vous pouvez associer cette liste à une section de votre document afin que les éléments de la liste aient le niveau souhaité.
+
+#### Q : Est-il possible de modifier le format de numérotation des éléments de liste dans Aspose.Words ?
+
+ R : Oui, vous pouvez modifier le format de numérotation des éléments de liste dans Aspose.Words. Le`ListLevel` classe offre plusieurs propriétés pour cela, telles que`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`, etc. Vous pouvez utiliser ces propriétés pour définir le format de numérotation des éléments de liste, tels que les chiffres arabes, les chiffres romains, les lettres, etc.
+
+#### Q : Puis-je ajouter des niveaux supplémentaires à une liste numérotée dans Aspose.Words ?
+
+ R : Oui, il est possible d'ajouter des niveaux supplémentaires à une liste numérotée dans Aspose.Words. Le`ListLevel` La classe vous permet de définir des propriétés de formatage pour chaque niveau de la liste. Vous pouvez définir des options telles que le préfixe, le suffixe, l'alignement, le retrait, etc. Cela vous permet de créer des listes avec plusieurs niveaux de hiérarchie.
 
 

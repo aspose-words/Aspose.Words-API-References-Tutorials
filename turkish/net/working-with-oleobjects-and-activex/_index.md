@@ -15,8 +15,8 @@ Bu eğitimler, Aspose.Words for .NET'te OLE ve ActiveX nesneleri ile çalışmay
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Ole Nesnesi Ekle](./insert-ole-object/) | Aspose.Words for .NET kullanarak bir OLE nesnesini bir belgeye nasıl ekleyeceğinizi öğrenin. |
-| [Ole Paketi ile Ole Nesnesi Ekleme](./insert-ole-object-with-ole-package/) | Aspose.Words for .NET kullanarak bir OLE paketi ile bir OLE nesnesini bir belgeye nasıl ekleyeceğinizi öğrenin. |
-| [Ole Nesnesini Simge Olarak Ekle](./insert-ole-object-as-icon/) | Aspose.Words for .NET ile bir OLE nesnesini simge olarak nasıl ekleyeceğinizi öğrenin. |
+| [Word Belgesine Ole Nesnesi Ekleme](./insert-ole-object/) | Aspose.Words for .NET kullanarak bir OLE nesnesini word belgesine nasıl ekleyeceğinizi öğrenin. |
+| [Ole Paketi ile Word'de Ole Nesnesi Ekleme](./insert-ole-object-with-ole-package/) | Aspose.Words for .NET kullanarak bir OLE paketi ile Word'de bir OLE nesnesini bir belgeye nasıl ekleyeceğinizi öğrenin. |
+| [Ole Nesnesini Word Belgesine Simge Olarak Ekle](./insert-ole-object-as-icon/) | Aspose.Words for .NET ile bir OLE nesnesini word belgesine simge olarak nasıl ekleyeceğinizi öğrenin. |
 | [Akışı Kullanarak Ole Nesnesini Simge Olarak Ekleme](./insert-ole-object-as-icon-using-stream/) | Aspose.Words for .NET ile bir akışı kullanarak bir OLE nesnesini simge olarak nasıl ekleyeceğinizi öğrenin. |
-| [Active XControl Özelliklerini Oku](./read-active-xcontrol-properties/) | Aspose.Words for .NET ile bir Word belgesindeki ActiveX kontrollerinin özelliklerini okuyun. |
+| [Active XControl Özelliklerini Word Dosyasından Okuyun](./read-active-xcontrol-properties/) | Aspose.Words for .NET ile bir Word dosyasındaki ActiveX kontrollerinin özelliklerini okuyun. |

@@ -2,7 +2,7 @@
 title: هدف المقارنة
 linktitle: هدف المقارنة
 second_title: Aspose.Words لمراجع .NET API
-description: تعرف على ميزة مقارنة الهدف في Aspose.Words for .NET التي تسمح لك بمقارنة المستندات وإنشاء مستند جديد يحتوي على التغييرات التي تم إجراؤها.
+description: تعرف على ميزة مقارنة الهدف في Aspose.Words for .NET والتي تتيح لك مقارنة المستندات وإنشاء مستند جديد يحتوي على التغييرات التي تم إجراؤها.
 type: docs
 weight: 10
 url: /ar/net/compare-documents/comparison-target/

@@ -72,3 +72,25 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
 doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ```
 
+### FAQ's
+
+#### Q: What is a conversion field in Aspose.Words?
+
+A: A conversion field in Aspose.Words is a type of field that converts a value or an expression into another format or data type. For example, you can use a conversion field to convert a date to a specific format, a number to text, or perform other types of conversions.
+
+#### Q: How to insert a conversion field in a paragraph with Aspose.Words?
+
+A: To insert a conversion field in a paragraph with Aspose.Words, you can follow these steps:
+
+1. Import the Document class from the Aspose.Words namespace.
+2. Create an instance of Document by loading your existing document.
+3. Get the paragraph where you want to insert the conversion field.
+4. Use the InsertField method to insert the conversion field with the correct syntax.
+
+#### Q: What conversion formats does Aspose.Words support?
+
+A: Aspose.Words supports a wide range of conversion formats in fields, including date formats, number formats, text formats, currency formats, percentage formats, and more. You can check the Aspose.Words documentation for a full list of available conversion formats.
+
+#### Q: How to update a conversion field in a Word document with Aspose.Words?
+
+A: To update a conversion field in a Word document with Aspose.Words, you can use the UpdateFields method. This method loops through the document and updates all fields, including conversion fields, recalculating values based on the current data.

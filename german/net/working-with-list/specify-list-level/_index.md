@@ -32,7 +32,7 @@ builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
 ## Schritt 3: Spezifikation der Listenebene
 
- Verwenden Sie den Document Builder`ListLevelNumber`-Eigenschaft, um die Listenebene anzugeben und Text zum Absatz hinzuzufügen:
+ Verwenden Sie den Document Builder`ListLevelNumber` -Eigenschaft, um die Listenebene anzugeben und Text zum Absatz hinzuzufügen:
 
 ```csharp
 for (int i = 0; i < 9; i++)
@@ -89,7 +89,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Erstellen Sie eine nummerierte Liste basierend auf einer der Microsoft Word-Listenvorlagen
+//Erstellen Sie eine nummerierte Liste basierend auf einer der Microsoft Word-Listenvorlagen
 // und wenden Sie es auf den aktuellen Absatz des Document Builders an.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-//Erstellen Sie eine Liste mit Aufzählungszeichen basierend auf einer der Microsoft Word-Listenvorlagen
+// Erstellen Sie eine Liste mit Aufzählungszeichen basierend auf einer der Microsoft Word-Listenvorlagen
 // und wenden Sie es auf den aktuellen Absatz des Document Builders an.
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 
@@ -117,5 +117,18 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
             
 ```
 
+### FAQs
+
+#### F: Wie kann ich die Listenebene in Aspose.Words angeben?
+
+ A: Um die Listenebene in Aspose.Words anzugeben, müssen Sie eine Instanz von erstellen`List` Klasse und gib ihr eine nummerierte Liste. Dann können Sie das verwenden`Paragraph.ListFormat.ListLevelNumber` -Eigenschaft, um die Ebene jedes Listenelements anzugeben. Sie können diese Liste einem Abschnitt Ihres Dokuments zuordnen, sodass die Listenelemente die gewünschte Ebene haben.
+
+#### F: Ist es möglich, das Nummerierungsformat von Listenelementen in Aspose.Words zu ändern?
+
+ A: Ja, Sie können das Nummerierungsformat von Listenelementen in Aspose.Words ändern. Der`ListLevel` Die Klasse bietet hierfür mehrere Eigenschaften an, wie z`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`usw. Mit diesen Eigenschaften können Sie das Nummerierungsformat für Listenelemente festlegen, z. B. arabische Ziffern, römische Ziffern, Buchstaben usw.
+
+#### F: Kann ich einer nummerierten Liste in Aspose.Words zusätzliche Ebenen hinzufügen?
+
+ A: Ja, es ist möglich, einer nummerierten Liste in Aspose.Words zusätzliche Ebenen hinzuzufügen. Der`ListLevel` Mit der Klasse können Sie Formatierungseigenschaften für jede Ebene der Liste festlegen. Sie können Optionen wie Präfix, Suffix, Ausrichtung, Einzug usw. festlegen. Dadurch können Sie Listen mit mehreren Hierarchieebenen erstellen.
 
 

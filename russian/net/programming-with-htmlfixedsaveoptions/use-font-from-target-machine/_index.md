@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.htm
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Загрузите документ Word
+// Загрузите документ Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
 // Настройте параметры резервного копирования с помощью функции «Использовать шрифты с целевой машины».

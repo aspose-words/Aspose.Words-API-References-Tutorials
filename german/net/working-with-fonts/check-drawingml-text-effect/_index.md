@@ -63,3 +63,25 @@ Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
 
 ## Abschluss
 In diesem Tutorial haben wir gesehen, wie man DrawingML-Texteffekte in einem Word-Dokument mit Aspose.Words für .NET überprüft. Durch die Überprüfung von DrawingML-Texteffekten können Sie Textteile identifizieren, auf die bestimmte Effekte angewendet werden. Nutzen Sie diese Funktion gerne zum Bearbeiten und Analysieren von Texteffekten in Ihren Word-Dokumenten.
+
+### FAQs
+
+#### F: Wie kann ich mit Aspose.Words auf DrawingML-Texteffekte in einem Word-Dokument zugreifen?
+
+A: Mit Aspose.Words können Sie über die bereitgestellte API auf DrawingML-Texteffekte in einem Word-Dokument zugreifen. Sie können Textelemente durchsuchen und bestimmte Eigenschaften von Texteffekten überprüfen, z. B. Farbe, Größe usw.
+
+#### F: Welche Arten von DrawingML-Texteffekten werden häufig in Word-Dokumenten verwendet?
+
+A: Zu den häufig verwendeten Arten von DrawingML-Texteffekten in Word-Dokumenten gehören Schatten, Reflexionen, Leuchten, Farbverläufe usw. Diese Effekte können angewendet werden, um das Erscheinungsbild und die Formatierung von Text zu verbessern.
+
+#### F: Wie kann ich die Farbe eines DrawingML-Texteffekts in einem Word-Dokument überprüfen?
+
+A: Um die Farbe eines DrawingML-Texteffekts in einem Word-Dokument zu überprüfen, können Sie die von Aspose.Words bereitgestellten Methoden verwenden, um auf die Farbeigenschaften des Texteffekts zuzugreifen. Auf diese Weise können Sie die Farbe erhalten, die für den spezifischen Texteffekt verwendet wird.
+
+#### F: Ist es möglich, Texteffekte in Word-Dokumenten zu überprüfen, die mehrere Abschnitte enthalten?
+
+A: Ja, Aspose.Words ermöglicht die Überprüfung von Texteffekten in Word-Dokumenten, die mehrere Abschnitte enthalten. Sie können durch jeden Abschnitt des Dokuments navigieren und für jeden Abschnitt einzeln auf Texteffekte zugreifen.
+
+#### F: Wie kann ich die Deckkraft eines DrawingML-Texteffekts in einem Word-Dokument überprüfen?
+
+A: Um die Deckkraft eines DrawingML-Texteffekts in einem Word-Dokument zu überprüfen, können Sie die von Aspose.Words bereitgestellten Methoden verwenden, um auf die Deckkrafteigenschaften des Texteffekts zuzugreifen. Dadurch können Sie den Deckkraftwert ermitteln, der auf den jeweiligen Texteffekt angewendet wird.

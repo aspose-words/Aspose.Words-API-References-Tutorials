@@ -56,3 +56,25 @@ builder.Writeln("d");
 ```
 
 Congratulazioni! Ora hai imparato come creare una tabella con Aspose.Words per .NET.
+
+### FAQ
+
+#### D: Come posso creare una tabella in Markdown?
+
+R: Per creare una tabella in Markdown, usa la sintassi delle pipe (`|`) per delimitare celle e trattini (`-`) per delimitare le intestazioni di tabella.
+
+#### D: Possiamo personalizzare l'aspetto di un tavolo in Markdown?
+
+R: In Markdown standard, le opzioni di personalizzazione del tavolo sono limitate. Tuttavia, alcuni editor Markdown ti consentono di aggiungere stili CSS alle tabelle per personalizzarne l'aspetto.
+
+#### D: Come unire le celle in una tabella in Markdown?
+
+R: L'unione delle celle in una tabella in Markdown dipende dall'editor Markdown utilizzato. Alcuni editor Markdown supportano l'unione di celle utilizzando una sintassi specifica.
+
+#### D: Le tabelle in Markdown supportano lo stile CSS?
+
+R: In Markdown standard, le tabelle non offrono supporto diretto per gli stili CSS. Tuttavia, alcuni editor Markdown ti consentono di aggiungere stili CSS alle tabelle per personalizzarne l'aspetto.
+
+#### D: Possiamo aggiungere collegamenti o testo in formato in linea nelle celle di una tabella in Markdown?
+
+R: Sì, puoi aggiungere collegamenti o testo in linea alle celle della tabella in Markdown utilizzando la sintassi Markdown appropriata.

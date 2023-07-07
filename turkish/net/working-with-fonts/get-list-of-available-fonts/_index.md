@@ -78,3 +78,17 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
 ## Çözüm
 Bu öğreticide, Aspose.Words for .NET'te bulunan yazı tiplerinin listesini nasıl alacağımızı gördük. Bu, belgelerinizde hangi yazı tiplerini kullanabileceğinizi bilmenizi sağlar. İhtiyaçlarınıza uygun yazı tiplerini seçmek için bu özelliği kullanmaktan çekinmeyin.
+
+### SSS
+
+#### S: Aspose.Words'ta bulunan yazı tiplerinin listesini nasıl alabilirim?
+
+ C: Aspose.Words'te bulunan yazı tiplerinin listesini almak için`FontsProvider` sınıf ve`GetAvailableFonts` yöntem. Bu yöntem, sisteminizde yüklü olan tüm yazı tiplerinin bir listesini döndürür.
+
+#### S: Aspose.Words'te mevcut yazı tiplerinin listesini belirli kriterlere göre filtreleyebilir miyim?
+
+C: Evet, Aspose.Words'ta bulunan yazı tiplerinin listesini belirli kriterler kullanarak filtreleyebilirsiniz. Örneğin, yazı tiplerini aileye, stile veya dile göre filtreleyebilirsiniz.
+
+#### S: Word belgelerimde bulunan yazı tiplerinin listesini nasıl kullanabilirim?
+
+ A: Word belgelerinizde bulunan yazı tiplerinin listesini kullanmak için, listeye göz atabilir ve programın yöntemlerini ve özelliklerini kullanarak uygun yazı tiplerini seçebilirsiniz.`FontSettings` Aspose.Words'te sınıf.

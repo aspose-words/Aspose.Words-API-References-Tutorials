@@ -21,7 +21,7 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-// أضف نصًا إلى الفقرة الأولى ، ثم أضف فقرتين أخريين.
+//أضف نصًا إلى الفقرة الأولى ، ثم أضف فقرتين أخريين.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2.");
 body.AppendParagraph("Paragraph 3.");
@@ -34,7 +34,7 @@ body.AppendParagraph("Paragraph 3.");
 ```csharp
 doc.StartTrackRevisions("John Doe", DateTime.Now);
 
-//هذه الفقرة هي مراجعة وسيكون لها مجموعة إشارة "IsInsertRevision" المطابقة.
+// هذه الفقرة هي مراجعة وسيكون لها مجموعة إشارة "IsInsertRevision" المطابقة.
 para = body.AppendParagraph("Paragraph 4.");
 Assert.True(para.IsInsertRevision);
 ```
@@ -92,13 +92,13 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-// أضف نصًا إلى الفقرة الأولى ، ثم أضف فقرتين أخريين.
+//أضف نصًا إلى الفقرة الأولى ، ثم أضف فقرتين أخريين.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
 
 // لدينا ثلاث فقرات ، لم يتم تسجيل أي منها كأي نوع من المراجعة
-//إذا أضفنا / أزلنا أي محتوى في المستند أثناء تتبع المراجعات ،
+// إذا أضفنا / أزلنا أي محتوى في المستند أثناء تتبع المراجعات ،
 // سيتم عرضها على هذا النحو في المستند ويمكن قبولها / رفضها.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
 
@@ -123,9 +123,66 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // يؤدي إيقاف تتبع المراجعات إلى ظهور هذا النص كنص عادي.
-// لا يتم احتساب المراجعات عند تغيير المستند.
+//لا يتم احتساب المراجعات عند تغيير المستند.
 doc.StopTrackRevisions();
 
 // احفظ المستند.
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
+```
+## خاتمة
+
+في هذا البرنامج التعليمي ، تعلمنا كيفية قبول المراجعات في مستند Word باستخدام ميزة قبول التنقيحات في Aspose.Words for .NET. لقد اتبعنا الخطوات لإضافة محتوى المستند وتحريره ، وتتبع المراجعات ، وحذف فقرة تمت مراجعتها ، وقبول جميع التغييرات ، وإيقاف تتبع المراجعات. يمكنك الآن تطبيق هذه المعرفة لإدارة المراجعات بشكل فعال في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+
+### أسئلة وأجوبة
+
+#### س: كيف يمكنني تمكين تتبع المراجعة في Aspose.Words for .NET؟
+
+#### الحل 1:
+
+ ج: لتمكين تتبع المراجعة في Aspose.Words for .NET ، استخدم`StartTrackRevisions` طريقة`Document` الكائن وحدد اسم المؤلف وتاريخ البدء لتعقب المراجعة.
+
+```csharp
+doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
+
+#### الحل 2:
+
+ ج: يمكنك أيضًا تمكين تتبع المراجعة باستخدام ملف`Document` المُنشئ الذي يقبل`trackRevisions` و`author` حدود.
+
+```csharp
+Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
+```
+
+#### س: كيف يتم قبول جميع التغييرات في مستند باستخدام Aspose.Words for .NET؟
+
+ ج: استخدم ملف`AcceptAllRevisions` طريقة`Document` لقبول كافة التغييرات التي تم إجراؤها على المستند.
+
+```csharp
+doc.AcceptAllRevisions();
+```
+
+#### س: كيف يمكنني حفظ مستند معدل مع المراجعات المقبولة؟
+
+ استخدم ال`Save` طريقة`Document` كائن لحفظ المستند المعدل مع المراجعات المقبولة. تأكد من توفير مسار الملف الصحيح.
+
+```csharp
+doc.Save("path/to/the/document.docx");
+```
+
+#### س: كيف يمكنني التوقف عن تتبع المراجعات في Aspose.Words for .NET؟
+
+ ج: استخدم ملف`StopTrackRevisions` طريقة`Document` كائن لإيقاف تتبع المراجعات.
+
+```csharp
+doc.StopTrackRevisions();
+```
+
+#### س: كيف يمكنني حذف فقرة تمت مراجعتها في مستند باستخدام Aspose.Words for .NET؟
+
+ ج: لإزالة فقرة تمت مراجعتها في مستند ، يمكنك استخدام`Remove` طريقة جمع الفقرات.
+
+```csharp
+ParagraphCollection paragraphs = body.Paragraphs;
+Paragraph para = paragraphs[2];
+para.Remove();
 ```

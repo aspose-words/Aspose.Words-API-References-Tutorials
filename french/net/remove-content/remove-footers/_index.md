@@ -84,7 +84,7 @@ Document doc = new Document(dataDir + "Header and footer types.docx");
 foreach (Section section in doc)
 {
 	// Jusqu'à trois pieds de page différents sont possibles dans une section (pour les premières pages, paires et impaires)
-	// nous les vérifions et les supprimons tous.
+	//nous les vérifions et les supprimons tous.
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 

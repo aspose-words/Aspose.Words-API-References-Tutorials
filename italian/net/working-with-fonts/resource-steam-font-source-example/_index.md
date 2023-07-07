@@ -55,3 +55,27 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ## Conclusione
 In questo tutorial, hai imparato come utilizzare Resource Flow Font Source con Aspose.Words per .NET. Questa funzione ti consente di caricare i caratteri da un feed di risorse, utile quando desideri incorporare caratteri personalizzati nei tuoi documenti. Sperimenta con diversi font ed esplora le possibilità offerte da Aspose.Words per la gestione dei font.
+
+### FAQ
+
+#### D: Come posso caricare un font da un flusso di risorse in Aspose.Words?
+
+ R: Per caricare un font da un flusso di risorse in Aspose.Words, puoi usare il file`FontSettings` classe e il`SetFontsSources` metodo per specificare l'origine del carattere utilizzando un flusso di risorse. Ciò consente di caricare il carattere direttamente dal flusso di risorse anziché da un file fisico.
+
+#### D: Quali sono i vantaggi dell'utilizzo di flussi di risorse per specificare le origini dei caratteri in Aspose.Words?
+
+R: L'utilizzo di flussi di risorse per specificare le origini dei caratteri presenta numerosi vantaggi:
+- Ti consente di caricare i caratteri dalle risorse integrate nella tua applicazione, semplificando la distribuzione e la distribuzione dei documenti.
+- Fornisce una maggiore flessibilità nella gestione dei caratteri in quanto è possibile caricare i caratteri da diversi flussi di risorse a seconda delle esigenze.
+
+#### D: Come posso aggiungere caratteri a un flusso di risorse nella mia applicazione .NET?
+
+ R: Per aggiungere caratteri a un flusso di risorse nell'applicazione .NET, è necessario incorporare i file dei caratteri nelle risorse del progetto. Puoi quindi accedere a questi file di font utilizzando metodi specifici per la tua piattaforma di sviluppo (ad es.`GetManifestResourceStream` usando il`System.Reflection` spazio dei nomi).
+
+#### D: È possibile caricare più font da diversi flussi di risorse in un singolo documento Aspose.Words?
+
+ A: Sì, è assolutamente possibile caricare più font da diversi flussi di risorse in un singolo documento Aspose.Words. È possibile specificare più fonti di font utilizzando il file`SetFontsSources` metodo del`FontSettings` class, fornendo i flussi di risorse appropriati per ciascun font.
+
+#### D: Quali tipi di flussi di risorse posso utilizzare per caricare i caratteri in Aspose.Words?
+
+R: È possibile utilizzare diversi tipi di flussi di risorse per caricare i caratteri in Aspose.Words, come i flussi di risorse incorporati nell'applicazione .NET, i flussi di risorse da un file esterno, i flussi di risorse da un database, ecc. Assicurarsi di fornire l'appropriato flussi di risorse in base alla configurazione e alle esigenze.

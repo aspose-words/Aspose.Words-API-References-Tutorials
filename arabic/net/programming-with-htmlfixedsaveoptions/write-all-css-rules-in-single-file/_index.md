@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 // مسار الوصول إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+// قم بتحميل مستند Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // تكوين خيارات النسخ الاحتياطي باستخدام ميزة "كتابة جميع قواعد CSS في ملف واحد"

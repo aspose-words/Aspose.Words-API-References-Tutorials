@@ -111,4 +111,35 @@ Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```
 
+## Conclusion
 
+In this tutorial, we learned how to move a node in a tracked Word document using Aspose.Words for .NET. By following the steps of creating the document, enabling revision tracking, moving the node, and stopping revision tracking, we were able to perform this manipulation successfully. Aspose.Words for .NET is a powerful tool for working with Word documents and offers advanced features for managing revisions. Now you can use this knowledge to move nodes in your own Word documents while tracking revisions using Aspose.Words for .NET.
+
+### FAQ's
+
+#### Q: How can I enable revision tracking in an Aspose.Words for .NET document?
+
+A: To enable revision tracking in an Aspose.Words for .NET document, you can use the `StartTrackRevisions` method of the `Document` object. This method takes as parameters the name of the author of the revisions and the start date of the follow-up of the revisions.
+
+```csharp
+doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+```
+
+#### Q: How can I move a node in a tracked document without generating revisions?
+
+A: If you want to move a node in a tracked document without generating revisions, you can use the `Remove` and `InsertAfter` or `InsertBefore` methods of the `Node` object. For example, to move a paragraph after another paragraph, you can use the following code:
+
+```csharp
+Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
+Node referenceNode = document.FirstSection.Body.Paragraphs[1];
+nodeToMove.Remove();
+document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
+```
+
+#### Q: How can I stop revision tracking in an Aspose.Words for .NET document?
+
+A: To stop tracking revisions in an Aspose.Words for .NET document, you can use the `StopTrackRevisions` method of the `Document` object.
+
+```csharp
+doc.StopTrackRevisions();
+```

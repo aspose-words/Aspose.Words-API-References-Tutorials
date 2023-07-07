@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: imposta la cartella dei caratteri predefinita
- Quindi puoi impostare la cartella dei caratteri predefinita usando il file`FontSettings.DefaultInstance` classe e il`SetFontsFolder()` metodo. Specificare il percorso della cartella dei caratteri che si desidera utilizzare come cartella predefinita.
+Quindi puoi impostare la cartella dei caratteri predefinita usando il file`FontSettings.DefaultInstance` classe e il`SetFontsFolder()` metodo. Specificare il percorso della cartella dei caratteri che si desidera utilizzare come cartella predefinita.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
@@ -41,13 +41,35 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ### Esempio di codice sorgente per l'istanza predefinita delle cartelle dei caratteri impostati utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Percorso della directory dei documenti
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
-	Document doc = new Document(dataDir + "Rendering.docx");
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
+FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ```
 
 ## Conclusione
 In questo tutorial, abbiamo imparato come impostare la cartella dei caratteri predefinita durante il rendering di un documento utilizzando Aspose.Words per .NET. Seguendo questa guida passo-passo, puoi facilmente specificare quale cartella di caratteri utilizzare come cartella predefinita durante il rendering dei tuoi documenti. Aspose.Words offre un'API potente e flessibile per lavorare con i caratteri nei tuoi documenti. Con questa conoscenza, puoi controllare e personalizzare le origini dei caratteri utilizzate durante il rendering dei tuoi documenti in base alle tue esigenze specifiche.
+
+### FAQ
+
+#### D: Come posso impostare le cartelle dei font predefinite in Aspose.Words?
+
+ A: Per impostare le cartelle dei font predefinite in Aspose.Words, devi usare il file`Fonts` classe e il`SetFontsFolders` metodo per specificare i percorsi delle cartelle dei caratteri personalizzati.
+
+#### D: L'impostazione delle cartelle dei caratteri predefinite influisce su tutti i documenti di Word elaborati con Aspose.Words?
+
+A: Sì, l'impostazione delle cartelle dei caratteri predefinite influisce su tutti i documenti di Word elaborati con Aspose.Words. Dopo aver impostato le cartelle dei caratteri predefinite, Aspose.Words utilizzerà queste posizioni per cercare i caratteri in tutti i documenti.
+
+#### D: Posso impostare più cartelle di font predefinite in Aspose.Words?
+
+ A: Sì, puoi impostare più cartelle di font predefinite in Aspose.Words. Devi solo specificare le posizioni delle cartelle dei caratteri personalizzati utilizzando il file`SetFontsFolders` metodo del`Fonts` classe.
+
+#### D: Come posso controllare le cartelle dei font predefinite attualmente impostate in Aspose.Words?
+
+ R: Per controllare le cartelle dei font predefinite attualmente definite in Aspose.Words, puoi usare il file`GetFolders` metodo del`Fonts` class per ottenere le posizioni delle cartelle dei caratteri configurate.
+
+#### D: L'impostazione di cartelle di caratteri predefinite mi consente di utilizzare caratteri personalizzati nei miei documenti di Word?
+
+R: Sì, impostando le cartelle dei caratteri predefinite, puoi utilizzare caratteri personalizzati nei tuoi documenti Word. Devi solo posizionare i caratteri nelle cartelle specificate e Aspose.Words li utilizzerà durante la generazione o la manipolazione dei documenti.

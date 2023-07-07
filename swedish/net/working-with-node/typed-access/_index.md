@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // Snabb och maskinskriven åtkomst till den första raden i tabellen.
+     //Snabb och maskinskriven åtkomst till den första raden i tabellen.
      table.FirstRow?.Remove();
 
      // Snabb och maskinskriven åtkomst till den sista raden i tabellen.
@@ -54,7 +54,7 @@ foreach(Table table in tables)
 }
 ```
 
-det här exemplet tar vi bort den första och sista raden i varje tabell med den snabba och maskinskrivna åtkomsten som tillhandahålls av Aspose.Words.
+I det här exemplet tar vi bort den första och sista raden i varje tabell med den snabba och maskinskrivna åtkomsten som tillhandahålls av Aspose.Words.
 
 ### Exempel på källkod för maskinskriven åtkomst med Aspose.Words för .NET
 
@@ -79,4 +79,24 @@ foreach (Table table in tables)
 
 Detta är en komplett exempelkod för maskinskriven åtkomst till tabeller med Aspose.Words för .NET. Var noga med att importera nödvändiga referenser och följ stegen som beskrivits tidigare för att integrera denna kod i ditt projekt.
 
----
+### FAQ's
+
+#### F: Vad är typad access i Node.js?
+
+S: Skrivad åtkomst i Node.js hänvisar till användningen av specifika nodtyper för att komma åt nodegenskaper och värden i ett XML-dokument. Istället för att använda generiska egenskaper använder typad access specifika metoder för att komma åt särskilda nodtyper som textnoder, elementnoder, attributnoder, etc.
+
+#### F: Hur kommer jag åt noder med hjälp av typad access?
+
+ S: För att komma åt noder med hjälp av typad access i Node.js kan du använda specifika metoder beroende på vilken typ av nod du vill komma åt. Du kan till exempel använda`getElementsByTagName` metod för att komma åt alla noder av en specifik typ, den`getAttribute` metod för att komma åt värdet på ett attribut, etc.
+
+#### F: Vilka är fördelarna med maskinskriven åtkomst framför otypad åtkomst?
+
+S: Skrivad åtkomst har flera fördelar jämfört med oskriven åtkomst. För det första möjliggör det bättre specificitet vid åtkomst till noder, vilket gör det lättare att manipulera och hantera noder i ett XML-dokument. Dessutom ger typad åtkomst bättre säkerhet genom att undvika typfel vid åtkomst av nodegenskaper och värden.
+
+#### F: Vilka typer av noder kan nås med maskinskriven åtkomst?
+
+S: Med typad access i Node.js kan du komma åt olika typer av noder, såsom elementnoder, textnoder, attributnoder, etc. Varje typ av nod har sina egna specifika metoder och egenskaper för att komma åt dess egenskaper och värden.
+
+#### F: Hur hanterar man fel under maskinskriven åtkomst?
+
+ S: För att hantera fel under maskinskriven åtkomst i Node.js kan du använda felhanteringsmekanismer som t.ex`try...catch` block. Om ett fel uppstår vid åtkomst till en specifik nod kan du fånga felet och vidta lämpliga åtgärder för att hantera det, som att visa ett felmeddelande eller utföra en räddningsåtgärd.

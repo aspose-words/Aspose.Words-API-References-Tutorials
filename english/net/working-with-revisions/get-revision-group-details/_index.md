@@ -59,4 +59,47 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
+## Conclusion
 
+In this tutorial, we learned how to get the details of a group of revisions in a Word document using Aspose.Words for .NET. By using a loop and the appropriate properties, we were able to display details such as revision type, author, date, and revised text. Aspose.Words for .NET offers many powerful features for manipulating Word documents, including revision management. You can now use this knowledge to get revision group details into your own Word documents using Aspose.Words for .NET.
+
+### FAQ's
+
+#### Q: How do I load a document with revisions into Aspose.Words for .NET?
+
+A: Use the `Document` class of Aspose.Words for .NET to load a document from a file containing revisions. You can specify the full document path.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### Q: How do I get the details of a revision group in Aspose.Words for .NET?
+
+A: Go through the revisions of the document using a loop and access the properties of each revision to get the details you want. You can use the `RevisionType`, `Author`, `DateTime` and `ParentNode` properties to get the revision type, author, date and revised text respectively.
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+      Console.WriteLine("Type: " + revision.RevisionType
+
+);
+      Console.WriteLine("Author: " + revision.Author);
+      Console.WriteLine("Date: " + revision.DateTime);
+      Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
+}
+```
+
+#### Q: How to check if a revision belongs to a group in Aspose.Words for .NET?
+
+A: Use the `Group` property of the `Revision` object to check if a revision belongs to a group. If the `Group` property is `null`, it means that the revision does not belong to any group.
+
+```csharp
+if (revision.Group != null)
+{
+      // The revision belongs to a group
+}
+else
+{
+      // The revision does not belong to any group
+}
+```

@@ -62,3 +62,16 @@ builder.Writeln("Text with InlineCode style with 3 backtick");
 Congratulation ! You have now learned how to use inline code functionality with Aspose.Words for .NET.
 
 
+### FAQ's
+
+#### Q: How can I use the inline code in Aspose.Words?
+
+A: To use inline code in Aspose.Words, you can use appropriate tags to surround the text to be formatted as inline code. For example, you can use the `<code>` or `<kbd>` tag to surround text to be formatted as inline code.
+
+#### Q: Is it possible to specify inline code font or color in Aspose.Words?
+
+A: Yes, you can specify the font or color of the inline code in Aspose.Words. You can use the `Font.Name` and `Font.Color` properties of the `Run` object to set the font and color of inline code. For example, you can use `run.Font.Name = "Courier New"` to specify the font for inline code and `run.Font.Color = Color.Blue` to specify the color.
+
+#### Q: Can I use the inline code in a paragraph containing other text elements?
+
+A: Yes, you can use the inline code in a paragraph containing other text elements. You can create multiple `Run` objects to represent different parts of the paragraph, then use inline code tags to format only the specific parts as inline code. Then you can add them to the paragraph using the `Paragraph.AppendChild(run)` method.

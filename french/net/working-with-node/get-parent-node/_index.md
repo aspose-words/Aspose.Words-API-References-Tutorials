@@ -53,3 +53,25 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 ```
 
 Ceci est un exemple de code complet pour obtenir le nœud parent d'un nœud spécifique avec Aspose.Words pour .NET. Assurez-vous d'importer les références nécessaires et suivez les étapes décrites précédemment pour intégrer ce code dans votre projet.
+
+### FAQ
+
+#### Q : Qu'est-ce que le nœud parent dans Node.js ?
+
+R : Le nœud parent dans Node.js fait référence au nœud supérieur suivant dans la hiérarchie d'un document XML. Il s'agit du nœud qui contient le nœud spécifié.
+
+#### Q : Comment obtenir le nœud parent d'un nœud spécifique ?
+
+ R : Pour obtenir le nœud parent d'un nœud spécifique, vous pouvez utiliser le`parentNode` propriété du nœud. Cette propriété renvoie le nœud parent du nœud actuel.
+
+#### Q : Comment vérifier si un nœud a un nœud parent ?
+
+ R : Pour vérifier si un nœud a un nœud parent, vous pouvez simplement vérifier si le`parentNode` propriété du nœud est définie. S'il est défini, cela signifie que le nœud a un nœud parent.
+
+#### Q : Pouvons-nous modifier le nœud parent d'un nœud ?
+
+ R : Dans la plupart des cas, le nœud parent d'un nœud est déterminé par la structure du document XML et ne peut pas être modifié directement. Cependant, vous pouvez déplacer un nœud vers un autre nœud à l'aide de méthodes spécifiques, telles que`appendChild` ou`insertBefore`.
+
+#### Q : Comment parcourir la hiérarchie des nœuds parents ?
+
+ R : Pour parcourir la hiérarchie des nœuds parents, vous pouvez effectuer une itération à partir d'un nœud spécifique à l'aide de la`parentNode`propriété jusqu'à ce que vous atteigniez le nœud racine du document.

@@ -21,7 +21,7 @@ Um mit der Tabelle zu arbeiten, müssen wir das Word-Dokument laden, das die Tab
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//Laden Sie das Word-Dokument
+// Laden Sie das Word-Dokument
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 

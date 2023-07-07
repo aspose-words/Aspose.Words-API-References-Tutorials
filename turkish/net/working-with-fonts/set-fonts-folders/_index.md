@@ -57,3 +57,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ## Çözüm
 Bu öğreticide, Aspose.Words for .NET kullanarak bir belgeyi işlerken yazı tipi klasörlerini nasıl ayarlayacağımızı öğrendik. Bu adım adım kılavuzu izleyerek, belgelerinizi işlerken kullanılacak yazı tipi kaynaklarını kolayca belirleyebilirsiniz. Aspose.Words, belgelerinizdeki yazı tipleriyle çalışmak için güçlü ve esnek bir API sunar. Bu bilgiyle, belgelerinizi özel ihtiyaçlarınıza göre işlerken kullanılan yazı tipi kaynaklarını kontrol edebilir ve özelleştirebilirsiniz.
+
+### SSS
+
+#### S: Aspose.Words kullanarak bir Word belgesindeki yazı tipi klasörlerini nasıl yapılandırabilirim?
+
+C: Aspose.Words kullanarak bir Word belgesindeki yazı tipi klasörlerini yapılandırmak için, belgeyi oluştururken veya düzenlerken kullanılacak özel yazı tipi klasörlerini belirlemek için API'yi kullanabilirsiniz. Bu, Word'ün doğru şekilde oluşturmak için gereken yazı tiplerini bulmasını sağlar.
+
+#### S: Aspose.Words ile bir Word belgesine özel yazı tipleri eklemek mümkün mü?
+
+C: Evet, Aspose.Words ile bir Word belgesine özel yazı tipleri ekleyebilirsiniz. API, belirli yazı tiplerini belgenize katıştırmanıza izin vererek, yazı tipleri son kullanıcının sisteminde yüklü olmasa bile doğru görüntülenmelerini sağlar.
+
+#### S: Bir Word belgesinde gerekli yazı tipleri eksikse ne olur?
+
+C: Bir Word belgesinde gerekli yazı tipleri eksikse, Aspose.Words bu sorunu algılayabilir ve düzeltmeniz için size seçenekler sağlayabilir. Eksik yazı tiplerini alternatif yazı tipleriyle değiştirmeyi seçebilir veya eksik yazı tiplerini belgeye dahil ederek doğru görüntülemeyi sağlayabilirsiniz.
+
+#### S: Aspose.Words ile bir Word belgesinden özel yazı tiplerini nasıl kaldırabilirim?
+
+C: Aspose.Words kullanarak bir Word belgesinden özel yazı tiplerini kaldırmak için, belgeyi temizlemek ve artık gerekmeyen özel yazı tiplerini kaldırmak için API'yi kullanabilirsiniz. Bu, dosya boyutunu küçültür ve yazı tipi yönetimini kolaylaştırır.
+
+#### S: Bir Word belgesinde yazı tipi klasörlerini yapılandırmak önemli midir?
+
+C: Evet, kullanılan yazı tiplerinin doğru görüntülendiğinden emin olmak için bir Word belgesindeki yazı tipi klasörlerini yapılandırmak önemlidir. Aspose.Words ile kullanım için özel yazı tipi klasörleri belirleyerek, Word belgelerini doğru bir şekilde işlemek için gerekli yazı tiplerinin mevcut olduğundan emin olursunuz.

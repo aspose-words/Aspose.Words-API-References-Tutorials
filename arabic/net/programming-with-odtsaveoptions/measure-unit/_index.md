@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 // المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+// قم بتحميل مستند Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // تكوين خيارات النسخ الاحتياطي باستخدام ميزة "وحدة القياس"

@@ -33,7 +33,7 @@ Document doc = new Document();
 Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
-Därefter hämtar vi samlingen av styckets underordnade noder med hjälp av`ChildNodes` fast egendom.
+ Därefter hämtar vi samlingen av styckets underordnade noder med hjälp av`ChildNodes` fast egendom.
 
 ```csharp
 NodeCollection children = paragraph. ChildNodes;
@@ -66,7 +66,7 @@ Paragraph paragraph = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
 NodeCollection children = paragraph.ChildNodes;
 foreach (Node child in children)
 {
-	// Ett stycke kan innehålla underordnade typer av olika typer, till exempel löpningar, former och andra.
+	//Ett stycke kan innehålla underordnade typer av olika typer, till exempel löpningar, former och andra.
 	if (child.NodeType == NodeType.Run)
 	{
 		Run run = (Run) child;
@@ -77,3 +77,25 @@ foreach (Node child in children)
 
 Detta är ett komplett kodexempel för att räkna upp barnnoderna i ett stycke med Aspose.Words för .NET. Se till att importera referenserna
 
+
+### FAQ's
+
+#### F: Vad är en underordnad nod i Node.js?
+
+S: En underordnad nod i Node.js hänvisar till en nod som finns direkt inuti en specifik nod. Dessa är de noder som är omedelbart lägre i hierarkin än den överordnade noden.
+
+#### F: Hur räknar man upp barnnoderna för en specifik nod?
+
+ S: För att räkna upp undernoderna för en specifik nod i Node.js kan du använda`childNodes` nodens egenskap. Den här egenskapen returnerar en lista över alla underordnade noder för den angivna noden.
+
+#### F: Hur får man åtkomst till egenskaperna för en barnnod?
+
+ S: För att komma åt egenskaperna för en underordnad nod i Node.js kan du använda metoderna och egenskaperna som tillhandahålls av XML API som används i din Node.js-miljö. Till exempel kan du använda metoder som`getAttribute`för att få värdet av ett specifikt attribut för en underordnad nod.
+
+#### F: Kan vi modifiera undernoderna för en nod?
+
+ S: Ja, det är möjligt att modifiera de underordnade noderna för en nod i Node.js med de metoder och egenskaper som tillhandahålls av XML-API:et som används i din Node.js-miljö. Till exempel kan du använda metoder som`appendChild` eller`removeChild` för att lägga till eller ta bort underordnade noder från en specifik nod.
+
+#### F: Hur bläddrar man i alla underordnade noder i en nod?
+
+ S: För att gå igenom alla underordnade noder för en specifik nod i Node.js kan du använda en`for` loop för att iterera genom listan över underordnade noder som returneras av`childNodes` fast egendom. Du kan sedan komma åt egenskaperna och värdena för varje underordnad nod inuti slingan.

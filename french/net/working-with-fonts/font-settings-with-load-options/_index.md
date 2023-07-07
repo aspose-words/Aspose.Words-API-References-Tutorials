@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : Configurer les options de chargement avec les paramètres de police
- Ensuite, nous allons créer une instance de`LoadOptions` et spécifiez les paramètres de police en créant une nouvelle instance de`FontSettings` et l'assignant à`loadOptions.FontSettings`.
+ Ensuite, nous allons créer une instance de`LoadOptions`et spécifiez les paramètres de police en créant une nouvelle instance de`FontSettings` et l'assignant à`loadOptions.FontSettings`.
 
 ```csharp
 // Configurer les options de chargement avec les paramètres de police
@@ -52,3 +52,21 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ## Conclusion
 Dans ce didacticiel, nous avons vu comment utiliser les options de chargement avec les paramètres de police dans un document Word avec Aspose.Words pour .NET. Les options de chargement vous permettent de personnaliser le chargement du document en spécifiant des paramètres supplémentaires, y compris les paramètres de police. N'hésitez pas à utiliser cette fonctionnalité pour adapter le chargement des documents à vos besoins spécifiques.
+
+### FAQ
+
+#### Q : Comment puis-je spécifier une police par défaut lors du chargement d'un document dans Aspose.Words ?
+
+ R : Pour spécifier une police par défaut lors du chargement d'un document dans Aspose.Words, vous pouvez utiliser le`LoadOptions` classe et définissez la`DefaultFontName` propriété au nom de la police souhaitée.
+
+#### Q : Quels autres paramètres de police puis-je spécifier avec les options de chargement dans Aspose.Words ?
+
+ : Outre la spécification de la police par défaut, vous pouvez également spécifier d'autres paramètres de police tels que l'encodage par défaut à l'aide des propriétés appropriées du`LoadOptions` classe, comme`DefaultEncoding`.
+
+#### Q : Que se passe-t-il si la police par défaut spécifiée n'est pas disponible lors du chargement du document ?
+
+R : Si la police par défaut spécifiée n'est pas disponible lorsque le document est chargé dans Aspose.Words, une police de remplacement sera utilisée pour afficher le texte dans le document. Cela peut entraîner une légère différence d'apparence par rapport à la police d'origine.
+
+#### Q : Puis-je spécifier des paramètres de police différents pour chaque document téléchargé ?
+
+ R : Oui, vous pouvez spécifier différents paramètres de police pour chaque document chargé en utilisant des instances distinctes du`LoadOptions` classe et en définissant les paramètres de police souhaités pour chaque instance. Cela vous permet de personnaliser l'apparence de la police pour chaque document indépendamment.

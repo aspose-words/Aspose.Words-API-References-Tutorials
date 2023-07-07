@@ -75,3 +75,21 @@ catch (Exception e)
 ¡Felicidades! Ha aprendido con éxito cómo aplicar una licencia medida usando Aspose.Words para .NET. Al seguir la guía paso a paso y utilizar el código fuente provisto, ahora puede aprovechar las funciones avanzadas de Aspose.Words para sus tareas de procesamiento de documentos.
 
 Ahora puede configurar con confianza la licencia medida, cargar y procesar documentos y aprovechar todo el potencial de Aspose.Words para crear, modificar y manipular documentos de Word mediante programación.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo aplico una licencia de pago por uso en Aspose.Words para .NET?
+
+R: Para aplicar una licencia de pago por uso en Aspose.Words para .NET, siga los pasos mencionados en el tutorial.
+
+#### P: ¿Cuáles son los beneficios de usar una licencia de pago por uso en Aspose.Words para .NET?
+
+R: Los beneficios de usar una licencia de pago por uso en Aspose.Words para .NET incluyen una administración de costos más eficiente y una mayor flexibilidad.
+
+#### P: ¿Cómo puedo verificar el uso de mi licencia de pago por uso en Aspose.Words para .NET?
+
+R: Puede verificar el uso de su licencia de pago por uso en Aspose.Words para .NET usando el método apropiado mencionado en el tutorial.
+
+#### P: ¿Puedo usar una licencia regular con Aspose.Words para .NET en lugar de una licencia de pago por uso?
+
+R: Sí, puede usar una licencia normal con Aspose.Words para .NET si lo desea.

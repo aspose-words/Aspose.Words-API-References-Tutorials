@@ -94,5 +94,24 @@ builder.Writeln("Setext Heading level 2");
 builder.Document.Save(dataDir + "Test.md");
 ```
 
+### SSS
 
+#### S: Setext Markdown başlığı nedir?
 
+Y: Setex Markdown başlığı, Markdown belgesinde başlıklar oluşturmanın alternatif bir yoludur. Farklı başlık düzeylerini belirtmek için alt çizgi karakterleri (= veya -) kullanır.
+
+#### S: Setext Markdown başlıkları nasıl kullanılır?
+
+C: Setex Markdown başlıklarını kullanmak için, başlık metninin altına alt çizgi koyun. 1. düzey başlık için eşittir işaretleri (=) ve 2. düzey başlık için kısa çizgiler (-) kullanın.
+
+#### S: Setext Markdown başlıklarının kullanımında herhangi bir sınırlama var mı?
+
+Y: Setex Markdown başlıkları, başlık hiyerarşisi açısından sınırlamalara sahiptir ve standart Markdown başlıkları kadar görsel olarak farklı değildir.
+
+#### S: Setex Markdown başlıklarının görünümünü özelleştirebilir miyim?
+
+C: Standart Markdown'da Setex Markdown başlıklarının görünümünü özelleştirmek mümkün değildir. Kullanılan alt çizgi karakterlerine göre önceden tanımlanmış bir görünüme sahiptirler.
+
+#### S: Setex Markdown başlıkları tüm Markdown editörleri tarafından destekleniyor mu?
+
+Y: Setex Markdown başlıkları desteği, Markdown editörleri arasında farklılık gösterebilir. Emin olmak için yayıncınızın özel belgelerini kontrol edin.

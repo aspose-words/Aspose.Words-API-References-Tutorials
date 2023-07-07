@@ -53,3 +53,25 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 ```
 
 Dies ist ein vollständiges Codebeispiel zum Abrufen des übergeordneten Knotens eines bestimmten Knotens mit Aspose.Words für .NET. Stellen Sie sicher, dass Sie die erforderlichen Referenzen importieren und die zuvor beschriebenen Schritte befolgen, um diesen Code in Ihr Projekt zu integrieren.
+
+### FAQs
+
+#### F: Was ist der übergeordnete Knoten in Node.js?
+
+A: Der übergeordnete Knoten in Node.js bezieht sich auf den nächsthöheren Knoten in der Hierarchie eines XML-Dokuments. Dies ist der Knoten, der den angegebenen Knoten enthält.
+
+#### F: Wie erhalte ich den übergeordneten Knoten eines bestimmten Knotens?
+
+ A: Um den übergeordneten Knoten eines bestimmten Knotens abzurufen, können Sie verwenden`parentNode` Eigenschaft des Knotens. Diese Eigenschaft gibt den übergeordneten Knoten des aktuellen Knotens zurück.
+
+#### F: Wie kann ich überprüfen, ob ein Knoten einen übergeordneten Knoten hat?
+
+ A: Um zu überprüfen, ob ein Knoten einen übergeordneten Knoten hat, können Sie einfach prüfen, ob der`parentNode` Die Eigenschaft des Knotens ist festgelegt. Wenn festgelegt, bedeutet dies, dass der Knoten einen übergeordneten Knoten hat.
+
+#### F: Können wir den übergeordneten Knoten eines Knotens ändern?
+
+ A: In den meisten Fällen wird der übergeordnete Knoten eines Knotens durch die Struktur des XML-Dokuments bestimmt und kann nicht direkt geändert werden. Sie können einen Knoten jedoch mit bestimmten Methoden auf einen anderen Knoten verschieben, z`appendChild` oder`insertBefore`.
+
+#### F: Wie kann ich die Hierarchie der übergeordneten Knoten durchsuchen?
+
+ A: Um die Hierarchie der übergeordneten Knoten zu durchlaufen, können Sie mithilfe von von einem bestimmten Knoten aus iterieren`parentNode`-Eigenschaft, bis Sie den Stammknoten des Dokuments erreichen.

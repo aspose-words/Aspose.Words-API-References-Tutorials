@@ -64,3 +64,21 @@ foreach(Field field in doc.Range.Fields)
 En este ejemplo, cargamos un documento y luego recorrimos todos los campos presentes en el documento. En cada iteración, obtuvimos el código y el resultado del campo. Puede agregar su propia lógica para procesar el código y los campos de resultados según sea necesario.
 
 Esto concluye nuestra guía sobre el uso de la función "Obtener código de campo" con Aspose.Words para .NET.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo insertar un campo en un documento de Word usando Aspose.Words para .NET?
+
+ R: Para insertar un campo en un documento de Word usando Aspose.Words para .NET, puede usar el`DocumentBuilder.InsertField` especificando el código de campo apropiado. Por ejemplo, puedes usar`builder.InsertField("MERGEFIELD CustomerName")` para insertar un campo de combinación en el documento.
+
+#### P: ¿Cómo puedo actualizar campos en un documento usando Aspose.Words para .NET?
+
+ R: Para actualizar los campos del documento usando Aspose.Words para .NET, puede usar el`Document.UpdateFields` método. Esto actualizará todos los campos presentes en el documento, como campos de combinación, campos de fecha, etc.
+
+#### P: ¿Cómo puedo recuperar el valor de un campo específico en Aspose.Words para .NET?
+
+ R: Para recuperar el valor de un campo específico en Aspose.Words para .NET, puede usar el`Field.GetResult` especificando el índice del campo en el`Document.Range.Fields` recopilación. Por ejemplo, puedes usar`string value = document.Range.Fields[0].GetResult()` para recuperar el valor del primer campo del documento.
+
+#### P: ¿Cómo puedo eliminar un campo de un documento usando Aspose.Words para .NET?
+
+ R: Para eliminar un campo de un documento usando Aspose.Words para .NET, puede usar el`Field.Remove` método que especifica el`Field` objeto que desea eliminar. Esto eliminará el campo del documento.

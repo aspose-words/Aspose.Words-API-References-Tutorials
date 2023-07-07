@@ -86,3 +86,17 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
 N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.
+
+### FAQ
+
+#### Q : Comment puis-je redémarrer une liste à chaque section dans Aspose.Words ?
+
+ R : Pour redémarrer une liste à chaque section dans Aspose.Words, vous devez créer une instance de la`List` classe et attribuez-lui une liste numérotée. Ensuite, vous pouvez utiliser le`List.IsRestartAtEachSection` propriété pour spécifier que la numérotation doit être redémarrée à chaque section. Vous pouvez associer cette liste à une ou plusieurs sections de votre document afin que la numérotation soit relancée correctement à chaque section.
+
+#### Q : Puis-je personnaliser le format de numérotation des listes dans Aspose.Words ?
+
+ R : Oui, vous pouvez personnaliser le format de numérotation des listes dans Aspose.Words. Le`List` classe offre plusieurs propriétés pour cela, telles que`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`etc. Vous pouvez utiliser ces propriétés pour définir le type de liste (numérotée, à puces, etc.), le format de numérotation (chiffres arabes, chiffres romains, lettres, etc.) et d'autres options de formatage de numérotation.
+
+#### Q : Est-il possible d'ajouter des niveaux supplémentaires à une liste numérotée dans Aspose.Words ?
+
+ R : Oui, il est possible d'ajouter des niveaux supplémentaires à une liste numérotée dans Aspose.Words. Le`ListLevel` La classe vous permet de définir des propriétés de formatage pour chaque niveau de la liste. Vous pouvez définir des options telles que le préfixe, le suffixe, l'alignement, le retrait, etc. Cela vous permet de créer des listes avec plusieurs niveaux de hiérarchie.

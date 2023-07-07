@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-hyphenation/load-hyphenation-dictionary-for-language/
 ---
 
-denna steg-för-steg handledning visar vi dig hur du laddar en avstavningsordlista för ett specifikt språk till Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
+I denna steg-för-steg handledning visar vi dig hur du laddar en avstavningsordlista för ett specifikt språk till Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
 För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
@@ -55,3 +55,21 @@ doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 ```
 
 Använd gärna den här koden i dina egna projekt och modifiera den för att passa dina specifika behov.
+
+### FAQ's
+
+#### F: Hur laddar man en syllabiseringsordbok för ett specifikt språk i Aspose.Words?
+
+ S: För att ladda en stavningsordbok för ett specifikt språk i Aspose.Words kan du använda`Hyphenation` klass och`LoadDictionary()` metod. Skapa en instans av`Hyphenation` klass och ring`LoadDictionary()` metod som anger sökvägen till lexikonfilen för det önskade språket. Detta kommer att ladda syllabiseringsordboken i Aspose.Words.
+
+#### F: Var kan jag hitta ordbokfiler för olika språk?
+
+S: Du kan hitta ordbokfiler för olika språk på olika onlineresurser. Dessa filer är vanligtvis i XML- eller TEX-format. Du kan hitta lexikon för öppen källkod för olika språk på webbplatser dedikerade till lingvistiska projekt eller källkodsarkiv.
+
+#### F: Hur kan jag tillämpa den inlästa stavelseordboken på ett dokument i Aspose.Words?
+
+ S: För att tillämpa den laddade ordboken för stavning på ett dokument i Aspose.Words, måste du iterera över orden i dokumentet och använda`Hyphenate()` metod för`Hyphenation` klass för att få stavningen av orden. Du kan sedan formatera de stavelseordnade orden efter behov, till exempel genom att lägga till bindestreck mellan stavelserna.
+
+#### F: Vilka språk stöds för stavning i Aspose.Words?
+
+S: Aspose.Words stöder stavning för flera språk inklusive engelska, franska, spanska, tyska, italienska, holländska, ryska, portugisiska, svenska, norska, danska, finska, polska, tjeckiska och många fler. Se Aspose.Words-dokumentationen för den fullständiga listan över språk som stöds för stavning.

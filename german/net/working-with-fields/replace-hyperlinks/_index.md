@@ -46,7 +46,7 @@ foreach(Field field in doc.Range.Fields)
 }
 ```
 
- Diese Schleife durchläuft alle Felder im Dokument und sucht nach Feldern dieses Typs`FieldType.FieldHyperlink` . Sobald ein Feld dieses Typs gefunden wird, prüfen wir, ob es sich um einen lokalen Link handelt, indem wir das überprüfen`SubAddress` Eigentum. Wenn nicht, ersetzen wir die Linkadresse durch`"http://www.aspose.com"`und das Ergebnis mit`"Aspose - The .NET & Java Component Editor"`.
+ Diese Schleife durchläuft alle Felder im Dokument und sucht nach Feldern dieses Typs`FieldType.FieldHyperlink` . Sobald ein Feld dieses Typs gefunden wird, prüfen wir, ob es sich um einen lokalen Link handelt, indem wir das überprüfen`SubAddress` Eigentum. Wenn nicht, ersetzen wir die Linkadresse durch`"http://www.aspose.com"` und das Ergebnis mit`"Aspose - The .NET & Java Component Editor"`.
 
 ## Schritt 4: Speichern Sie das geänderte Dokument
 
@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
 Dies ist ein Beispielquellcode zum Ersetzen von Hyperlinks in einem Dokument mithilfe von Aspose.Words für .NET.
+
+### FAQs
+
+#### F: Wie kann ich Hyperlinks in einem Word-Dokument mit Aspose.Words für .NET ersetzen?
+
+ A: Um Hyperlinks in einem Word-Dokument mit Aspose.Words für .NET zu ersetzen, können Sie das verwenden`Document.Range.Replace`Methode, die den zu suchenden Text und den Ersatztext angibt. Stellen Sie sicher, dass Sie die entsprechenden Optionen zum Festlegen der Such- und Ersetzungsparameter verwenden.
+
+#### F: Ist es möglich, nur bestimmte Hyperlinks in einem Word-Dokument durch Aspose.Words für .NET zu ersetzen?
+
+A: Ja, es ist möglich, nur bestimmte Hyperlinks in einem Word-Dokument mit Aspose.Words für .NET zu ersetzen. Sie können die zu ersetzenden Hyperlinks nach bestimmten Kriterien filtern, z. B. nach Link-URL, Linktext oder anderen relevanten Eigenschaften. Dann können Sie die Ersetzung nur auf die passenden Hyperlinks anwenden.
+
+#### F: Wie kann ich Hyperlinks in Kopf-, Fuß- oder Fußnoten ignorieren, wenn ich sie durch Aspose.Words für .NET ersetze?
+
+A: Um Hyperlinks in Kopf-, Fuß- oder Fußnoten beim Ersetzen durch Aspose.Words für .NET zu ignorieren, können Sie die erweiterten Suchoptionen verwenden und entsprechende Suchgrenzen festlegen. Beispielsweise können Sie die Suche auf größere Abschnitte des Dokuments beschränken und Kopf- und Fußzeilen sowie Fußnoten ausschließen.
+
+#### F: Ist es möglich, Hyperlinks durch interne Links zu anderen Teilen des Dokuments zu ersetzen?
+
+ A: Ja, es ist möglich, mit Aspose.Words für .NET Hyperlinks durch interne Links zu anderen Teilen des Dokuments zu ersetzen. Sie können Anker oder Text-IDs verwenden, um interne Links zu erstellen und diese dann durch die zu ersetzen`Document.Range.Replace` Methode mit den entsprechenden Optionen.
+
+#### F: Behält das Ersetzen von Hyperlinks durch Aspose.Words für .NET Linkeigenschaften wie Farben oder Stile bei?
+
+A: Ja, beim Ersetzen von Hyperlinks durch Aspose.Words für .NET bleiben Linkeigenschaften wie Farben oder Stile erhalten. Sie können im Ersetzungstext dieselben Formatierungseigenschaften angeben, um ein konsistentes Ergebnis zu erzielen.

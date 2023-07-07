@@ -76,3 +76,20 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ## Conclusion
 In this tutorial, we saw how to receive font notifications while using Aspose.Words for .NET. Font notifications let you detect and manage missing or substituted fonts in your documents. Use this feature to ensure font consistency in your documents and take appropriate action in case of missing fonts.
 
+### FAQ's
+
+#### Q: How can I receive notifications of missing fonts in Aspose.Words?
+
+A: To receive notifications of missing fonts in Aspose.Words, you can use the `FontSettings` class and the `FontSubstitutionCallback` event. You can set a callback method to be notified when missing fonts are encountered while processing documents.
+
+#### Q: How can I deal with missing fonts in my Word documents?
+
+A: To deal with missing fonts in your Word documents, you can use different strategies. You can install the missing fonts on the system where you run your Aspose.Words application, or you can substitute the missing fonts with alternative fonts that are available.
+
+#### Q: Is it possible to receive substituted font notifications in Aspose.Words?
+
+A: Yes, it is possible to receive substituted font notifications in Aspose.Words. When fonts are substituted during document processing, you can be notified using the `FontSubstitutionCallback` event and take appropriate action to adjust the appearance of the text.
+
+#### Q: How can I keep text appearance consistent when fonts are substituted in Aspose.Words?
+
+A: To maintain consistency in the appearance of text when fonts are substituted, you can adjust text formatting properties, such as font size, style, and color. You might also consider using substitute fonts that are visually similar to the original fonts.

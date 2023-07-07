@@ -12,7 +12,7 @@ Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som anv
 
 ## Steg 1: Installation av dokumentkatalog
 
-I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
+den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Steg 5: Infoga det kapslade fältet
 
- Vi använder DocumentBuilder's`InsertField()` metod för att infoga ett kapslat fält i sidfoten.
+ Vi använder DocumentBuilder's`InsertField()`metod för att infoga ett kapslat fält i sidfoten.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");
@@ -95,3 +95,29 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
 I det här exemplet skapade vi ett nytt dokument, infogade sidbrytningar, flyttade markören till sidfoten och infogade sedan ett kapslat fält i sidfoten.
+
+### FAQ's
+
+#### F: Hur kan jag infoga kapslade fält i ett Word-dokument med Aspose.Words för .NET?
+
+S: För att infoga kapslade fält i ett Word-dokument med Aspose.Words för .NET, kan du följa dessa steg:
+
+1. Hämta stycket där du vill infoga de kapslade fälten.
+2.  Skapa en`FieldStart` objekt för det överordnade fältet.
+3.  Lägg till underordnade fält med hjälp av`FieldStart.NextSibling` metod som passerar motsvarande`FieldStart` objekt som parametrar.
+
+#### F: Vilka är fördelarna med att använda kapslade fält i ett Word-dokument med Aspose.Words för .NET?
+
+S: Att använda kapslade fält ger flera fördelar i ett Word-dokument med Aspose.Words för .NET. Detta ger större flexibilitet när det gäller att skapa dynamiska dokumentmallar genom att tillåta infogning av variabelvärden och beräkningar i kapslade fält. Kapslade fält kan också underlätta automatisk generering av innehåll, som att generera innehållsförteckningar, sidnummer, etc.
+
+#### F: Kan jag ha kapslade fält på flera nivåer i ett Word-dokument med Aspose.Words för .NET?
+
+ S: Ja, det är möjligt att ha kapslade fält på flera nivåer i ett Word-dokument med Aspose.Words för .NET. Du kan skapa komplexa hierarkier av kapslade fält genom att använda`FieldStart.NextSibling` metod för att lägga till underordnade fält till befintliga överordnade fält.
+
+#### F: Hur kan jag anpassa egenskaperna för kapslade fält i ett Word-dokument med Aspose.Words för .NET?
+
+ S: För att anpassa egenskaperna för kapslade fält i ett Word-dokument med Aspose.Words för .NET kan du komma åt motsvarande`FieldStart`objekt och ändra deras egenskaper efter behov. Du kan ställa in formateringsalternativ, värden, beräkningar etc. för kapslade fält för att uppnå önskat resultat.
+
+#### F: Påverkar det att infoga kapslade fält Word-dokumentets prestanda med Aspose.Words för .NET?
+
+S: Att infoga kapslade fält kan påverka Word-dokumentets prestanda med Aspose.Words för .NET, särskilt om dokumentet innehåller ett stort antal kapslade fält eller komplexa hierarkier. Det rekommenderas att optimera koden för att undvika onödiga eller upprepade operationer på kapslade fält för att förbättra prestandan.

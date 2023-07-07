@@ -1,14 +1,14 @@
 ---
-title: Insérer un objet Ole en tant qu'icône
-linktitle: Insérer un objet Ole en tant qu'icône
+title: Insérer un objet Ole dans un document Word sous forme d'icône
+linktitle: Insérer un objet Ole dans un document Word sous forme d'icône
 second_title: Référence de l'API Aspose.Words pour .NET
-description: Apprenez à insérer un objet OLE sous forme d'icône avec Aspose.Words pour .NET.
+description: Apprenez à insérer un objet OLE dans un document Word en tant qu'icône avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon/
 ---
 
-Voici un guide étape par étape pour expliquer le code source C # ci-dessous qui illustre comment insérer un objet OLE sous forme d'icône à l'aide de Aspose.Words pour .NET.
+Voici un guide étape par étape pour expliquer le code source C # ci-dessous qui illustre comment insérer un objet OLE dans un document Word sous forme d'icône à l'aide de Aspose.Words pour .NET.
 
 ## Étape 1 : Importez les références nécessaires
 Avant de commencer, assurez-vous d'avoir importé les références nécessaires pour utiliser Aspose.Words pour .NET dans votre projet. Cela inclut l'importation de la bibliothèque Aspose.Words et l'ajout des espaces de noms requis à votre fichier source.
@@ -52,3 +52,45 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 ```
 
 Il s'agit d'un exemple de code complet pour insérer un objet OLE en tant qu'icône avec Aspose.Words pour .NET. Assurez-vous d'importer les références nécessaires et suivez les étapes décrites précédemment pour intégrer ce code dans votre projet.
+
+## Conclusion
+
+En conclusion, nous avons exploré un guide étape par étape pour insérer un objet OLE en tant qu'icône dans un document Word à l'aide de Aspose.Words pour .NET.
+
+En suivant ces étapes, vous pourrez insérer avec succès un objet OLE en tant qu'icône dans vos documents Word à l'aide de Aspose.Words pour .NET. Assurez-vous d'importer les références nécessaires et suivez attentivement les instructions pour obtenir les résultats souhaités.
+
+### FAQ pour insérer un objet ole dans un document Word sous forme d'icône
+
+#### Q. Quelles références sont nécessaires pour insérer un objet OLE en tant qu'icône dans un document Word à l'aide d'Aspose.Words pour .NET ?
+
+R : Vous devez importer les références suivantes dans votre projet pour utiliser Aspose.Words pour .NET :
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+#### Q. Comment créer un nouveau document et générateur de document dans Aspose.Words pour .NET ?
+
+ R : Vous pouvez créer un nouveau document en utilisant le`Document` classe et un générateur de documents utilisant la`DocumentBuilder`classe. Voici un exemple :
+
+```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+#### Q. Comment insérer un objet OLE sous forme d'icône dans le document ?
+
+ R : Utilisez le générateur de documents`InsertOleObjectAsIcon` méthode pour insérer un objet OLE sous forme d'icône. Spécifiez le chemin du fichier OLE, l'indicateur d'affichage, le chemin de l'icône et le nom de l'objet incorporé. Voici un exemple :
+
+```csharp
+builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
+```
+
+#### Q. Comment enregistrer le document avec l'objet OLE inséré sous forme d'icône ?
+
+ R : Utilisez le document`Save`méthode pour enregistrer le document dans un fichier. Voici un exemple :
+
+```csharp
+doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
+```

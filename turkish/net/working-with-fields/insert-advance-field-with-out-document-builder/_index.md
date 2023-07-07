@@ -29,7 +29,7 @@ Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
 ## 3. Adım: Gelişmiş alanı ekleme
 
- biz kullanıyoruz`AppendField()`paragrafa gelişmiş bir alan ekleme yöntemi.
+ biz kullanıyoruz`AppendField()` paragrafa gelişmiş bir alan ekleme yöntemi.
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
@@ -81,3 +81,25 @@ Bu örnekte, yeni bir belge oluşturduk, DocumentBuilder kullanmadan gelişmiş 
 
 Aspose.Words for .NET ile "DocumentBuilder Olmadan Ekle Gelişmiş Alan" özelliğinin nasıl kullanılacağına ilişkin kılavuzumuz burada sona eriyor.
 
+### SSS
+
+#### S: Aspose.Words'te gelişmiş alan nedir?
+
+C: Aspose.Words'teki Gelişmiş Alan, bir Word belgesinde hesaplamalar yapmanıza, koşullar eklemenize ve karmaşık işlemler gerçekleştirmenize izin veren özel bir alan türüdür. Dinamik ve özel alanlar oluşturmak için büyük esneklik sunar.
+
+#### S: Aspose.Words'te Document Builder kullanmadan bir Word belgesine nasıl gelişmiş bir alan eklenir?
+
+C: Aspose.Words'te Document Builder'ı kullanmadan bir Word belgesine gelişmiş bir alan eklemek için şu adımları izleyebilirsiniz:
+
+1. Aspose.Words.Fields ad alanından Belge ve Alan sınıfını içe aktarın.
+2. Mevcut belgenizi yükleyerek bir Belge örneği oluşturun.
+3. Gelişmiş alan kodunu belirterek gelişmiş bir alan eklemek için InsertField yöntemini kullanın.
+4. Belgeyi kaydedin.
+
+#### S: Bir Word belgesinde gelişmiş bir alanın sonucu nasıl alınır?
+
+C: Bir Word belgesindeki gelişmiş bir alanın sonucunu almak için Field sınıfında bulunan Result özelliğini kullanabilirsiniz. Bu özellik, alanın hesaplanan sonucunu döndürür.
+
+#### S: Gelişmiş bir alanın formülünü bir Word belgesine ekledikten sonra değiştirebilir miyim?
+
+C: Evet, gelişmiş bir alanın formülünü bir Word belgesine ekledikten sonra düzenleyebilirsiniz. Bunu, Field sınıfının FieldCode özelliğine erişerek ve formül metnini değiştirerek formülü güncelleyerek yapabilirsiniz.

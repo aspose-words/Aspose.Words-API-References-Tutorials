@@ -21,7 +21,7 @@ Pour commencer à travailler avec le tableau, nous devons charger le document Wo
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//Charger le document Word
+// Charger le document Word
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 

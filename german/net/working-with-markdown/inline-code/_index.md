@@ -48,7 +48,7 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 // Verwenden Sie einen Dokumentersteller, um dem Dokument Inhalte hinzuzufügen.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Anzahl der Backticks fehlt, standardmäßig wird ein Backtick verwendet.
+// Anzahl der Backticks fehlt, standardmäßig wird ein Backtick verwendet.
 Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 builder.Font.Style = inlineCode1BackTicks;
 builder.Writeln("Text with InlineCode style with 1 backtick");
@@ -61,3 +61,17 @@ builder.Writeln("Text with InlineCode style with 3 backtick");
 
 Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Inline-Code-Funktionalität mit Aspose.Words für .NET nutzen.
 
+
+### FAQs
+
+#### F: Wie kann ich den Inline-Code in Aspose.Words verwenden?
+
+ A: Um Inline-Code in Aspose.Words zu verwenden, können Sie den Text, der als Inline-Code formatiert werden soll, mit entsprechenden Tags umgeben. Sie können zum Beispiel die verwenden`<code>` oder`<kbd>` Tag, um Text zu umgeben, der als Inline-Code formatiert werden soll.
+
+#### F: Ist es möglich, in Aspose.Words die Schriftart oder Farbe des Inline-Codes anzugeben?
+
+ A: Ja, Sie können die Schriftart oder Farbe des Inline-Codes in Aspose.Words angeben. Du kannst den ... benutzen`Font.Name` Und`Font.Color` Eigenschaften der`Run` Objekt zum Festlegen der Schriftart und Farbe des Inline-Codes. Sie können zum Beispiel verwenden`run.Font.Name = "Courier New"` um die Schriftart für Inline-Code anzugeben und`run.Font.Color = Color.Blue`um die Farbe festzulegen.
+
+#### F: Kann ich den Inline-Code in einem Absatz verwenden, der andere Textelemente enthält?
+
+ A: Ja, Sie können den Inline-Code in einem Absatz verwenden, der andere Textelemente enthält. Sie können mehrere erstellen`Run` Objekte, um verschiedene Teile des Absatzes darzustellen, und verwenden Sie dann Inline-Code-Tags, um nur die spezifischen Teile als Inline-Code zu formatieren. Anschließend können Sie sie mit dem zum Absatz hinzufügen`Paragraph.AppendChild(run)` Methode.

@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/apply-license/apply-metered-license/
 ---
 
-I den här omfattande handledningen kommer du att lära dig hur du tillämpar en mätlicens med Aspose.Words för .NET. Vi guidar dig genom processen med detaljerade steg-för-steg-instruktioner och tillhandahåller nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna tillämpa en uppmätt licens och utnyttja de avancerade funktionerna i Aspose.Words för dina dokumentbehandlingsbehov.
+den här omfattande handledningen kommer du att lära dig hur du tillämpar en mätlicens med Aspose.Words för .NET. Vi guidar dig genom processen med detaljerade steg-för-steg-instruktioner och tillhandahåller nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna tillämpa en uppmätt licens och utnyttja de avancerade funktionerna i Aspose.Words för dina dokumentbehandlingsbehov.
 
 ## Förutsättningar
 Innan vi börjar, se till att du har följande förutsättningar:
@@ -75,3 +75,21 @@ catch (Exception e)
 Grattis! Du har framgångsrikt lärt dig hur man tillämpar en mätlicens med Aspose.Words för .NET. Genom att följa steg-för-steg-guiden och använda den medföljande källkoden kan du nu dra nytta av de avancerade funktionerna i Aspose.Words för dina dokumentbearbetningsuppgifter.
 
 Nu kan du med säkerhet ställa in den uppmätta licensen, ladda och bearbeta dokument och utnyttja den fulla potentialen hos Aspose.Words för att skapa, ändra och manipulera Word-dokument programmatiskt.
+
+### FAQ's
+
+#### F: Hur ansöker jag om en betalning per användning-licens i Aspose.Words för .NET?
+
+S: För att tillämpa en pay-as-you-go-licens i Aspose.Words för .NET, följ stegen som nämns i handledningen.
+
+#### F: Vilka är fördelarna med att använda en pay-per-use-licens i Aspose.Words för .NET?
+
+S: Fördelarna med att använda en pay-as-you-go-licens i Aspose.Words för .NET inkluderar effektivare kostnadshantering och ökad flexibilitet.
+
+#### F: Hur kan jag kontrollera min användning av pay-as-you-go-licenser i Aspose.Words för .NET?
+
+S: Du kan kontrollera din pay-as-you-go licensanvändning i Aspose.Words för .NET med hjälp av lämplig metod som nämns i handledningen.
+
+#### F: Kan jag använda en vanlig licens med Aspose.Words för .NET istället för en pay-as-you-go-licens?
+
+S: Ja, du kan använda en normal licens med Aspose.Words för .NET om du vill.

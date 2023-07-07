@@ -41,7 +41,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
  Bu son adımda, belgeyi kullanarak kaydediyoruz.`Save` yöntemi ve yolu çıkış dosyasına iletmek`.docx` uzantı, belirtilen kaydetme seçenekleriyle birlikte.
 
-Artık bir belgeyi kaydederken eski kontrol karakterlerini korumak için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan dosya, "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx" adıyla belirtilen dizine kaydedilecektir.
+Artık bir belgeyi kaydederken eski kontrol karakterlerini korumak için kaynak kodu çalıştırabilirsiniz. Ortaya çıkan dosya, "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx" adıyla belirtilen dizine kaydedilecektir.
 
 ### Aspose.Words for .NET kullanan Keep Legacy Control Chars için örnek kaynak kodu 
 ```csharp

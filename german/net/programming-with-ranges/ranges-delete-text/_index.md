@@ -50,7 +50,7 @@ In diesem Beispiel speichern wir das geänderte Dokument als „WorkingWithRange
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Word-Dokument
+// Laden Sie das Word-Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
 // Löschen Sie den Text im ersten Abschnitt des Dokuments

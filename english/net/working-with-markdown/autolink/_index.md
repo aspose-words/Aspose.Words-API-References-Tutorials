@@ -54,3 +54,16 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 Congratulation ! You have now learned how to use the "Autolink" feature with Aspose.Words for .NET.
 
 
+### FAQ's
+
+#### Q: How can I create an automatic link to a URL address in Aspose.Words?
+
+A: To create an automatic link to a URL address in Aspose.Words, you can use the `<a>` tag with the `href` attribute containing the URL address. For example, you can use `<a href="https://www.aspose.com">https://www.aspose.com</a>` to automatically link to the "https: //www.aspose.com".
+
+#### Q: Is it possible to customize the display text of an automatic link in Aspose.Words?
+
+A: Yes, you can customize the display text of an automatic link in Aspose.Words. Instead of using the URL address as the display text, you can use any other text by replacing the content between the `<a>` tags. For example, you can use `<a href="https://www.aspose.com">Click here</a>` to display the text "Click here" as an automatic link.
+
+#### Q: How can I add additional attributes to an autolink in Aspose.Words?
+
+A: To add additional attributes to an automatic link in Aspose.Words, you can use additional HTML attributes inside the `<a>` tag. For example, you can use `<a href="https://www.aspose.com" target="_blank">Link</a>` to open the link in a new window or tab using the ` attribute target="_blank"`.

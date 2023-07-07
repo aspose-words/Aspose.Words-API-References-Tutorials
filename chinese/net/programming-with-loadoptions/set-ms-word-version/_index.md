@@ -1,6 +1,6 @@
 ---
-title: 设置 Ms Word 版本
-linktitle: 设置 Ms Word 版本
+title: 设置Ms Word版本
+linktitle: 设置Ms Word版本
 second_title: Aspose.Words for .NET API 参考
 description: 了解如何使用 Aspose.Words for .NET 使用指定版本的 MS Word 加载文档。
 type: docs
@@ -8,15 +8,15 @@ weight: 10
 url: /zh/net/programming-with-loadoptions/set-ms-word-version/
 ---
 
-在 C# 应用程序中处理 Word 文档时，可能需要指定加载文档时要使用的 Microsoft Word 版本。借助 .NET 的 Aspose.Words 库，您可以使用 LoadOptions 轻松设置要使用的 MS Word 版本。在这个循序渐进的指南中，我们将带您了解如何使用 Aspose.Words for .NET C# 源代码使用 LoadOptions 加载选项加载包含指定版本 MS Word 的文档。
+在 C# 应用程序中处理 Word 文档时，可能需要指定加载文档时要使用的 Microsoft Word 版本。借助适用于 .NET 的 Aspose.Words 库，您可以使用 LoadOptions 轻松设置要使用的 MS Word 版本。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码使用 LoadOptions 加载选项加载具有指定版本的 MS Word 的文档。
 
-## 理解 Aspose.Words 库
+## 了解 Aspose.Words 库
 
-在深入研究代码之前，了解 .NET 的 Aspose.Words 库很重要。 Aspose.Words 是一个强大的库，可以在包括.NET 在内的不同平台上创建、编辑、转换和保护 Word 文档。它提供了许多用于操作文档的功能，例如插入文本、更改格式、添加部分等等。
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。 Aspose.Words 是一个功能强大的库，可在包括.NET 在内的不同平台上创建、编辑、转换和保护 Word 文档。它提供了许多用于操作文档的功能，例如插入文本、更改格式、添加部分等等。
 
 ## 配置加载选项
 
-第一步是为我们的文档配置加载选项。使用 LoadOptions 类指定加载参数。在我们的例子中，我们需要将 MswVersion 属性设置为所需的 MS Word 版本。例如，我们使用的是 Microsoft Word 2010 版本。这是如何做到的：
+第一步是配置文档的加载选项。使用 LoadOptions 类指定加载参数。在我们的例子中，我们需要将 MswVersion 属性设置为所需的 MS Word 版本。例如，我们使用的是Microsoft Word 2010版本。操作方法如下：
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { MswVersion = MsWordVersion.Word2010 };
@@ -46,10 +46,10 @@ LoadOptions loadOptions = new LoadOptions { MswVersion = MsWordVersion.Word2010 
 //使用指定版本的 MS Word 加载文档
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
-//保存文件
+//保存文档
 doc.Save(dataDir + "WorkingWithLoadOptions.SetMsWordVersion.docx");
 ```
 
 ## 结论
 
-在本指南中，我们解释了如何使用 .NET 的 Aspose.Words 库上传指定特定版本 MS Word 的文档。按照提供的步骤并使用提供的代码 C# 源代码，您可以轻松地将此功能应用到您的 C# 应用程序中。使用指定版本的 MS Word 加载文档可以确保在应用程序中正确兼容和处理文档。
+在本指南中，我们解释了如何使用 .NET 的 Aspose.Words 库上传指定 MS Word 特定版本的文档。通过遵循提供的步骤并使用提供的代码 C# 源代码，您可以轻松地在 C# 应用程序中应用此功能。使用指定版本的 MS Word 加载文档可以确保应用程序中文档的正确兼容性和处理。

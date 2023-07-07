@@ -65,3 +65,25 @@ section.Body.AppendChild(para);
 ```
 
 Bu, Aspose.Words for .NET kullanarak bir paragraf düğümü oluşturmak ve eklemek için eksiksiz bir kod örneğidir. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları uyguladığınızdan emin olun.
+
+### SSS
+
+#### S: Bir XML belgesindeki paragraf düğümü nedir?
+
+C: Bir XML belgesindeki bir paragraf düğümü, bir metin paragrafını temsil etmek için kullanılır. Paragrafın metin içeriğini içerir ve XML belgesindeki metni yapılandırmak için kullanılabilir.
+
+#### S: Node.js'de bir paragraf düğümü nasıl oluşturulur?
+
+ C: Node.js'de bir paragraf düğümü oluşturmak için`createElement` yöntemi`Document` "paragraf" adıyla yeni bir öğe oluşturmak için nesne. Sonra kullanabilirsiniz`createTextNode` paragrafın içeriğini içeren bir metin düğümü oluşturma yöntemi.
+
+#### S: Mevcut bir XML belgesine nasıl paragraf düğümü eklenir?
+
+ Y: Mevcut bir XML belgesine bir paragraf düğümü eklemek için`appendChild` XML belgesindeki başka bir öğenin alt öğesi olarak paragraf düğümü ekleme yöntemi. Örneğin, belge kök öğesinin alt öğesi olarak ekleyebilirsiniz.
+
+#### S: Bir paragraf düğümünün içeriği nasıl tanımlanır?
+
+ C: Bir paragraf düğümünün içeriğini ayarlamak için`createTextNode` İstenen içeriği içeren bir metin düğümü oluşturmak için yöntemi kullanın, ardından`appendChild` bu metin düğümünü paragraf düğümünün alt öğesi olarak ekleme yöntemi.
+
+#### S: Bir paragraf düğümündeki metni nasıl formatlarım?
+
+C: Bir paragraf düğümündeki metnin biçimlendirmesi, Node.js ortamınızda kullandığınız XML API'sine bağlıdır. Yazı tipi, boyut, renk vb. biçimlendirme niteliklerini ayarlamak için genellikle belirli özellikleri ve yöntemleri kullanabilirsiniz.

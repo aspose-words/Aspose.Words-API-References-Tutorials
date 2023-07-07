@@ -76,3 +76,26 @@ doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 In questo esempio, abbiamo creato un nuovo documento, inserito un campo ASK senza utilizzare DocumentBuilder, configurato le varie proprietà del campo e salvato il documento con un nome file specificato.
 
 Questo conclude la nostra guida sull'utilizzo della funzione "Inserisci campo ASK senza DocumentBuilder" con Aspose.Words per .NET.
+
+### FAQ
+
+#### D: Cos'è un campo ASK in Aspose.Words?
+
+R: Un campo ASK in Aspose.Words viene utilizzato per porre all'utente una domanda all'apertura di un documento. Viene spesso utilizzato per richiedere informazioni o feedback specifici che possono variare da utente a utente.
+
+#### D: Come inserire il campo ASK nel documento Word senza utilizzare Document Builder in Aspose.Words?
+
+R: Per inserire un campo ASK in un documento Word senza utilizzare Document Builder in Aspose.Words, puoi seguire questi passaggi:
+
+1. Importa la classe Document e Field dallo spazio dei nomi Aspose.Words.Fields.
+2. Crea un'istanza di Documento caricando il tuo documento esistente.
+3. Utilizzare il metodo InsertField per inserire un campo ASK specificando il nome della domanda.
+4. Salva il documento.
+
+#### D: Come ottengo la risposta dell'utente per un campo ASK in un documento Word?
+
+R: Per ottenere la risposta dell'utente per un campo ASK in un documento Word, puoi utilizzare il metodo GetFieldNames disponibile nella classe Document. Questo metodo restituisce un elenco dei nomi dei campi presenti nel documento. È quindi possibile verificare se il nome del campo ASK è presente nell'elenco e recuperare la risposta associata.
+
+#### D: Il campo ASK può essere utilizzato per richiedere maggiori informazioni all'utente?
+
+R: Sì, il campo ASK può essere utilizzato per richiedere più informazioni all'utente. Puoi inserire più campi ASK nel tuo documento, ciascuno con una domanda diversa. Quando il documento viene aperto, all'utente verranno richieste le risposte corrispondenti.

@@ -1,6 +1,6 @@
 ---
-title: Rangos Obtener texto
-linktitle: Rangos Obtener texto
+title: Rangos Obtener Texto
+linktitle: Rangos Obtener Texto
 second_title: Referencia de API de Aspose.Words para .NET
 description: Aprenda cómo extraer fácilmente texto de un documento de Word usando Aspose.Words para .NET.
 type: docs
@@ -50,7 +50,7 @@ En este ejemplo, usamos el método WriteLine de la clase Console para mostrar el
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Cargue el documento de Word
+// Cargue el documento de Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // Extraer el texto del documento.

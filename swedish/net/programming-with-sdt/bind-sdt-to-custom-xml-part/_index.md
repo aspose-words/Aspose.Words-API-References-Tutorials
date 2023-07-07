@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## Steg 3: Lägg till en StructuredDocumentTag (SDT) till dokumentet
- Lägg till en`StructuredDocumentTag`till dokumentet för att fungera som innehållskontroll. Specificera`SdtType` som`PlainText` och den`MarkupLevel` som`Block` för att skapa en SDT på blocknivå.
+ Lägg till en`StructuredDocumentTag` till dokumentet för att fungera som innehållskontroll. Specificera`SdtType` som`PlainText` och den`MarkupLevel` som`Block` för att skapa en SDT på blocknivå.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

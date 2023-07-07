@@ -1,28 +1,28 @@
 ---
-title: 使用 Web 扩展任务面板
-linktitle: 使用 Web 扩展任务面板
+title: 使用 Web 扩展任务窗格
+linktitle: 使用 Web 扩展任务窗格
 second_title: Aspose.Words for .NET API 参考
-description: 使用 Web 扩展任务面板和 Aspose.Words for .NET 的分步指南。
+description: 将 Web 扩展任务窗格与 Aspose.Words for .NET 结合使用的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-webextension/using-web-extension-task-panes/
 ---
 
-本文提供了有关如何将 Web 扩展任务窗格与 Aspose.Words for .NET 一起使用的分步指南。我们将详细解释代码的每一部分。在本教程结束时，您将能够了解如何为 Web 扩展添加和配置任务窗格。
+本文提供了有关如何将 Web 扩展任务窗格与 Aspose.Words for .NET 结合使用的分步指南。我们将详细解释代码的每一部分。在本教程结束时，您将能够了解如何添加和配置 Web 扩展的任务窗格。
 
-在开始之前，请确保您已经在项目中安装并配置了 Aspose.Words for .NET 库。您可以在 Aspose 网站上找到库和安装说明。
+在开始之前，请确保您已在项目中安装并配置了 Aspose.Words for .NET 库。您可以在 Aspose 网站上找到库和安装说明。
 
-## 第一步：定义文档目录
+## 第1步：定义文档目录
 
-首先，您需要定义要保存生成的文档的目录路径。代替`"YOUR DOCUMENT DIRECTORY"`使用文档目录的实际路径。
+首先，您需要定义要保存生成文档的目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`与文档目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 步骤 2：创建和配置任务窗格
+## 步骤 2：创建并配置任务窗格
 
-我们创造一个`TaskPane`对象并将其添加到文档中`s `WebExtensionTaskPanes 集合。接下来，我们配置任务窗格的属性，例如停靠状态、可见性和宽度。
+我们创建一个`TaskPane`对象并将其添加到文档中`s `WebExtensionTaskPanes` 集合。接下来，我们配置任务窗格的属性，例如其停靠状态、可见性和宽度。
 
 ```csharp
 Document doc = new Document();
@@ -44,7 +44,7 @@ taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
 taskPane.WebExtension.Reference.Store = "th-TH";
 ```
 
-最后，我们将属性和绑定添加到 Web 扩展。
+最后，我们向 Web 扩展添加属性和绑定。
 
 ```csharp
 taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
@@ -52,9 +52,9 @@ taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_150
 	WebExtensionBindingType.Text, "194740422"));
 ```
 
-## 第 3 步：保存和加载文档
+## 步骤 3：保存并加载文档
 
-我们使用在指定目录中配置的任务窗格保存文档。
+我们将文档与在指定目录中配置的任务窗格一起保存。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
@@ -77,9 +77,9 @@ Console.WriteLine($"Vendor: \"{reference.Store}\", version: \"{reference.Version
 }
 ```
 
-就这样 ！您已经成功地将 Web 扩展任务窗格与 Aspose.Words for .NET 结合使用。
+就这样 ！您已成功将 Web 扩展任务窗格与 Aspose.Words for .NET 结合使用。
 
-### 将 Web 扩展任务窗格与 Aspose.Words for .NET 一起使用的示例源代码
+### 将 Web 扩展任务窗格与 Aspose.Words for .NET 结合使用的示例源代码
 
 
 ```csharp

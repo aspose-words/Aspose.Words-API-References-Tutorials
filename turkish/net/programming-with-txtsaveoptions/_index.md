@@ -16,6 +16,6 @@ Bu öğreticiler sayesinde, Aspose.Words for .NET'in işlevlerinden tam olarak y
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Bidi İşaretleri Ekleyin](./add-bidi-marks/) | Aspose.Words for .NET kullanarak bir Word belgesine Bidi işaretleri eklemeyi öğrenin ve profesyonel çok dilli belgeler oluşturun. |
+| [Word Belgesine Bidi İşaretleri Ekleme](./add-bidi-marks/) | Aspose.Words for .NET kullanarak bir Word belgesine Bidi işaretleri eklemeyi öğrenin ve profesyonel çok dilli belgeler oluşturun. |
 | [Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan](./use-tab-character-per-level-for-list-indentation/) | Aspose.Words for .NET'te sekme karakterleriyle girinti listelerini nasıl kullanacağınızı öğrenin. İyi yapılandırılmış ve okunabilir belgeler oluşturmak için bu adım adım kılavuzu izleyin. Bu güçlü özellikle zaman kazanın ve iş akışınızı iyileştirin. Eğitimin tamamına şimdi erişin. |
 | [Liste Girintisi İçin Düzey Başına Boşluk Karakteri Kullanın](./use-space-character-per-level-for-list-indentation/) | Aspose.Words for .NET'te liste girintisi için seviye başına bir boşluk karakteri kullanmaya yönelik adım adım kılavuz. İyi yapılandırılmış Word belgelerini kolaylıkla oluşturun. |

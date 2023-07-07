@@ -92,3 +92,28 @@ namespace Example
 ## Conclusion
 
 In this guide, we explained how to use Aspose.Words for .NET to apply the "Use one space character per level for list indentation" functionality. By following the steps provided and using the C# source code provided, you can easily configure the indentation of lists in your Word documents using one space character per level. Aspose.Words offers tremendous flexibility and power for working with text formatting and list management, allowing you to create well-structured documents in your C# application.
+
+### Frequently Asked Questions
+
+#### Q: What is Aspose.Words for .NET?
+Aspose.Words for .NET is a powerful library for creating, editing and manipulating Word documents in a C# application. It offers many features for working with Word documents, including the ability to use one space per level for indenting lists.
+
+#### Q: How can I use one space per level for list indentation with Aspose.Words for .NET?
+You can use one space per level for list indentation by following these steps:
+
+Create a new document using the `Document` class.
+
+Use the `DocumentBuilder` class to add content to the document and create a list with multiple levels of indentation.
+
+Once you have added the content and configured the list indentation, use the `TxtSaveOptions` class and set the `ListIndentation.Count` property to the number of indentation levels and the `ListIndentation.Character` property on the space (`' '`) to use.
+
+Save the document with the specified options using the `Save` method of the `Document` class.
+
+#### Q: Does Aspose.Words support other characters for list indentation?
+Yes, Aspose.Words supports other characters for indenting lists. You can use non-whitespace characters, such as tabs (`'\t'`) or other special characters, by setting the `ListIndentation.Character` property to the desired character.
+
+#### Q: Is it possible to customize the number of spaces per level for list indentation?
+Yes, you can customize the number of spaces per level for list indentation by changing the value of the `ListIndentation.Count` property in the `TxtSaveOptions` class. You can specify the number of spaces you want for each level of indentation.
+
+#### Q: What other features does Aspose.Words offer for list management?
+Aspose.Words offers many features for managing lists in Word documents. You can create numbered or bulleted lists, set indentation levels, customize the style of lists, add list items, and more.

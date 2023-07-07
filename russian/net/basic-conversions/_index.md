@@ -13,14 +13,14 @@ Basic Conversions проведет вас через основные преоб
  ## Учебники
 | Заголовок | Описание |
 | --- | --- |
-| [Документ в Docx](./doc-to-docx/) | Узнайте, как конвертировать документы Word из формата Doc в формат Docx с помощью Aspose.Words для .NET.  |
-| [Docx в RTF](./docx-to-rtf/) | Узнайте, как конвертировать документы Word из формата Docx в формат RTF с помощью Aspose.Words для .NET.  |  
-| [Docx в PDF](./docx-to-pdf/) | Узнайте, как конвертировать документы Word из Docx в PDF с помощью Aspose.Words для .NET. | 
-| [Docx в байт](./docx-to-byte/) | Узнайте, как преобразовать документы Word из Docx в массив байтов с помощью Aspose.Words для .NET. |  
-| [Docx в Epub](./docx-to-epub/) | Узнайте, как конвертировать документы Word из формата Docx в формат Epub с помощью Aspose.Words для .NET. |
-| [Docx в Mhtml и отправка электронной почты](./docx-to-mhtml-and-sending-email/) | Узнайте, как конвертировать документы Word из Docx в MHTML и отправлять их по электронной почте с помощью Aspose.Words и Aspose.Email. |
-| [Docx в уценку](./docx-to-markdown/) | Узнайте, как конвертировать документы Word из формата Docx в формат Markdown с помощью Aspose.Words для .NET. |
-| [Docx в текст](./docx-to-txt/) | Узнайте, как преобразовать документы Word из Docx в обычный текст (Txt) с помощью Aspose.Words для .NET. |
-| [Отправьте текст в документ](./txt-to-docx/) | Узнайте, как конвертировать текстовые файлы (Txt) в документы Word (Docx) с помощью Aspose.Words для .NET. | 
-| [PDF в Jpeg](./pdf-to-jpeg/) | Узнайте, как конвертировать документы PDF в изображения JPEG с помощью Aspose.Words для .NET. |
-| [PDF в документ](./pdf-to-docx/) | Узнайте, как конвертировать PDF-документы в формат Docx с помощью Aspose.Words для .NET.  |
+| [Преобразовать документ в документ](./doc-to-docx/) | Узнайте, как конвертировать документы Word из формата Doc в формат Docx с помощью Aspose.Words для .NET.  |
+| [Конвертировать Docx в RTF](./docx-to-rtf/) | Узнайте, как конвертировать документы Word из формата Docx в формат RTF с помощью Aspose.Words для .NET.  |  
+| [Преобразование файла Word в PDF](./docx-to-pdf/) | Узнайте, как конвертировать документы Word из Docx в PDF с помощью Aspose.Words для .NET. | 
+| [Преобразовать Docx в байт](./docx-to-byte/) | Узнайте, как преобразовать документы Word из Docx в массив байтов с помощью Aspose.Words для .NET. |  
+| [Конвертировать Docx в Epub](./docx-to-epub/) | Узнайте, как конвертировать документы Word из формата Docx в формат Epub с помощью Aspose.Words для .NET. |
+| [Преобразование Docx в Mhtml и отправка электронной почты](./docx-to-mhtml-and-sending-email/) | Узнайте, как конвертировать документы Word из Docx в MHTML и отправлять их по электронной почте с помощью Aspose.Words и Aspose.Email. |
+| [Преобразование файла Docx в Markdown](./docx-to-markdown/) | Узнайте, как конвертировать документы Word из формата Docx в формат Markdown с помощью Aspose.Words для .NET. |
+| [Конвертировать Docx в Txt](./docx-to-txt/) | Узнайте, как преобразовать документы Word из Docx в обычный текст (Txt) с помощью Aspose.Words для .NET. |
+| [Преобразование текстового файла в документ Word](./txt-to-docx/) | Узнайте, как конвертировать текстовые файлы (Txt) в документы Word (Docx) с помощью Aspose.Words для .NET. | 
+| [Сохранить PDF как Jpeg](./pdf-to-jpeg/) | Узнайте, как конвертировать документы PDF в изображения JPEG с помощью Aspose.Words для .NET. |
+| [Сохранить PDF в формате Word (Docx)](./pdf-to-docx/) | Узнайте, как конвертировать PDF-документы в формат Docx с помощью Aspose.Words для .NET.  |

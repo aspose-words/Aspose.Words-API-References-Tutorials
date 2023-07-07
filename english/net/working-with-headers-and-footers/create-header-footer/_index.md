@@ -237,3 +237,24 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
+### FAQ's
+
+#### Q: How can I add a header to my document in Aspose.Words?
+
+A: To add a header to your document in Aspose.Words, you can use the `Document.FirstSection.HeadersFooters.Add(HeaderFooterType.HeaderPrimary)` method. This method adds a primary heading to the first section of your document.
+
+#### Q: How can I add a footer to my document in Aspose.Words?
+
+A: To add a footer to your document in Aspose.Words, you can use the `Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` method. This method adds a primary footer to the first section of your document.
+
+#### Q: How can I add text to my header or footer in Aspose.Words?
+
+A: To add text to your header or footer in Aspose.Words, you can use the `HeaderFooter.Paragraphs` property to get the paragraph collection of the header or footer, then add a paragraph containing your text to this collection using the `ParagraphCollection.Add` method.
+
+#### Q: Can I customize header or footer content with images and page numbers in Aspose.Words?
+
+A: Yes, you can customize header or footer content with images and page numbers in Aspose.Words. You can use objects like `Shape` to add images and objects like `Field` to add page numbers to your header or footer.
+
+#### Q: Can I change the font, size and color of text in my header or footer in Aspose.Words?
+
+A: Yes, you can change the font, size and color of text in your header or footer in Aspose.Words. You can access text formatting properties such as `Font` to change the font, `Size` to adjust the size, and `Color` to set the text color.

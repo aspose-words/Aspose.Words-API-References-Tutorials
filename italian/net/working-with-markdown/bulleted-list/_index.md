@@ -73,3 +73,24 @@ builder.Writeln("Item 2b");
 
 Congratulazioni! Ora hai imparato come creare un elenco puntato con Aspose.Words per .NET.
 
+### FAQ
+
+#### D: Come creare un elenco puntato in Markdown?
+
+R: Per creare un elenco puntato in Markdown, iniziare ogni elemento dell'elenco con un simbolo di punto elenco (`-`, `*` , O`+`), seguito da uno spazio.
+
+#### D: Puoi nidificare gli elenchi puntati in Markdown?
+
+R: Sì, è possibile nidificare gli elenchi puntati in Markdown aggiungendo quattro spazi di offset davanti a ciascun elemento dell'elenco nidificato.
+
+#### D: Come personalizzare i simboli dei proiettili?
+
+R: In Markdown standard, i simboli dei punti elenco sono predefiniti. Tuttavia, alcuni editor Markdown ti consentono di personalizzarli utilizzando estensioni specifiche.
+
+#### D: Gli elenchi puntati in Markdown supportano il rientro?
+
+R: Sì, gli elenchi puntati in Markdown supportano il rientro. Puoi aggiungere uno spostamento a sinistra utilizzando spazi o tabulazioni.
+
+#### D: È possibile aggiungere collegamenti o testo in linea agli elementi dell'elenco?
+
+R: Sì, puoi aggiungere collegamenti o testo in linea agli elementi dell'elenco utilizzando la sintassi Markdown appropriata.

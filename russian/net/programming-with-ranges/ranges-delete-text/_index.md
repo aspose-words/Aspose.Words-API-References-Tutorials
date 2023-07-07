@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Загрузите документ Word
+// Загрузите документ Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // Удалить текст в первом разделе документа

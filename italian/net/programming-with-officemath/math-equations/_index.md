@@ -70,7 +70,7 @@ In questo esempio, salviamo il documento modificato come "WorkingWithOfficeMath.
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento di Word
+// Carica il documento di Word
 Document doc = new Document(dataDir + "Office math.docx");
 
 // Ottenere l'elemento OfficeMath

@@ -15,7 +15,7 @@ Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
 - Projenizde yüklü olan .NET için Aspose.Words kitaplığı
 
 ## 1. Adım: Belge dizinini tanımlayın
-Dizin yolunu Word belgenizin konumuna ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
+ Dizin yolunu Word belgenizin konumuna ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -68,3 +68,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 
 ## Çözüm
 Tebrikler! Artık Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi biçimlendirmesini nasıl ayarlayacağınızı biliyorsunuz. Daha fazla yazı tipi biçimlendirme seçeneği keşfedebilir ve kişiselleştirilmiş ve çekici Word belgeleri oluşturabilirsiniz.
+
+### SSS
+
+#### S: Aspose.Words kullanarak bir Word belgesindeki bir yazı tipine kalın stili nasıl uygulayabilirim?
+
+C: Aspose.Words kullanarak bir Word belgesindeki bir yazı tipine kalın stil uygulamak için, istenen yazı tipine gitmek ve stilini "kalın" olarak ayarlamak için API'yi kullanabilirsiniz. Bu, kalın stili belirtilen yazı tipine uygulayacaktır.
+
+#### S: Aspose.Words ile bir Word belgesindeki metnin belirli bir bölümüne italik stil uygulamak mümkün mü?
+
+C: Evet, Aspose.Words ile italik stili bir Word belgesindeki metnin belirli bir bölümüne uygulayabilirsiniz. İstenen metin aralığını seçmek ve stilini "italik" olarak ayarlamak için API'yi kullanabilirsiniz.
+
+#### S: Aspose.Words kullanarak bir Word belgesindeki yazı tipi rengini nasıl değiştirebilirim?
+
+C: Aspose.Words kullanarak bir Word belgesindeki yazı tipi rengini değiştirmek için API'yi kullanarak istediğiniz yazı tipine erişebilir ve rengini istediğiniz renge ayarlayabilirsiniz. Bu, belgedeki yazı tipi rengini değiştirir.
+
+#### S: Aspose.Words kullanarak bir Word belgesindeki yazı tipi boyutunu değiştirmek mümkün mü?
+
+C: Evet, Aspose.Words kullanarak bir Word belgesindeki yazı tipi boyutunu değiştirebilirsiniz. API, yazı tipine erişmenizi ve ihtiyaçlarınıza bağlı olarak punto veya ölçek noktası olarak boyutunu ayarlamanızı sağlar.
+
+#### S: Bir Word belgesinde aynı metne kalın ve italik gibi birden çok yazı tipi biçimi uygulayabilir miyim?
+
+C: Evet, Aspose.Words ile bir Word belgesindeki aynı metne kalın ve italik gibi birden fazla yazı tipi formatı uygulayabilirsiniz. Metnin farklı bölümleri için istediğiniz farklı yazı tipi stillerini ayarlamak için API'yi kullanabilirsiniz.

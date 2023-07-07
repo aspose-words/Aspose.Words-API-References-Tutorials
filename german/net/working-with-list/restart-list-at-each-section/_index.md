@@ -86,3 +86,17 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
 Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und an Ihre spezifischen Bedürfnisse anpassen.
+
+### FAQs
+
+#### F: Wie kann ich eine Liste in jedem Abschnitt in Aspose.Words neu starten?
+
+ A: Um eine Liste in jedem Abschnitt in Aspose.Words neu zu starten, müssen Sie eine Instanz davon erstellen`List` Klasse und weisen Sie ihr eine nummerierte Liste zu. Dann können Sie das verwenden`List.IsRestartAtEachSection` -Eigenschaft, um anzugeben, dass die Nummerierung in jedem Abschnitt neu gestartet werden soll. Sie können diese Liste mit einem oder mehreren Abschnitten Ihres Dokuments verknüpfen, sodass die Nummerierung in jedem Abschnitt wieder korrekt beginnt.
+
+#### F: Kann ich das Nummerierungsformat von Listen in Aspose.Words anpassen?
+
+ A: Ja, Sie können das Nummerierungsformat von Listen in Aspose.Words anpassen. Der`List` Die Klasse bietet hierfür mehrere Eigenschaften an, wie z`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`usw. Mit diesen Eigenschaften können Sie den Listentyp (nummeriert, mit Aufzählungszeichen usw.), das Nummerierungsformat (arabische Ziffern, römische Ziffern, Buchstaben usw.) und andere Nummerierungsformatierungsoptionen festlegen.
+
+#### F: Ist es möglich, einer nummerierten Liste in Aspose.Words zusätzliche Ebenen hinzuzufügen?
+
+ A: Ja, es ist möglich, einer nummerierten Liste in Aspose.Words zusätzliche Ebenen hinzuzufügen. Der`ListLevel` Mit der Klasse können Sie Formatierungseigenschaften für jede Ebene der Liste festlegen. Sie können Optionen wie Präfix, Suffix, Ausrichtung, Einzug usw. festlegen. Dadurch können Sie Listen mit mehreren Hierarchieebenen erstellen.

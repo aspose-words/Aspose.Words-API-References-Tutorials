@@ -25,7 +25,7 @@ Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 Jetzt konfigurieren wir die Such- und Ersetzungsoptionen, indem wir die Suchrichtung und den Ersetzungsrückruf angeben, um ein Dokument in ein anderes Dokument einzufügen. Hier ist wie:
 
 ```csharp
-//Konfigurieren Sie Such- und Ersetzungsoptionen.
+// Konfigurieren Sie Such- und Ersetzungsoptionen.
 FindReplaceOptions options = new FindReplaceOptions
 {
 Direction = FindReplaceDirection.Backward,

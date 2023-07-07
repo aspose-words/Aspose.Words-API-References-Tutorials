@@ -12,7 +12,7 @@ Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som anv
 
 ## Steg 1: Installation av dokumentkatalog
 
-I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
+den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -40,7 +40,7 @@ Detta steg är viktigt eftersom det säkerställer att fältresultaten visas kor
 
 ## Steg 4: Visa fältresultat
 
- Vi använder a`foreach` loop till loop genom alla fält i dokumentet och visa deras resultat.
+ Vi använder a`foreach`loop till loop genom alla fält i dokumentet och visa deras resultat.
 
 ```csharp
 foreach(Field field in document.Range.Fields)
@@ -69,3 +69,21 @@ foreach(Field field in document.Range.Fields)
 I det här exemplet laddade vi upp ett dokument, uppdaterade alla fält och cyklade sedan igenom fälten för att visa deras resultat. Du kan anpassa detta steg med din egen logik för att bearbeta fältresultat.
 
 Detta avslutar vår guide till att använda funktionen "Visa fältresultat" med Aspose.Words för .NET.
+
+### FAQ's
+
+#### F: Vad är ett resultatvisningsfält i Aspose.Words?
+
+S: Ett resultatvisningsfält i Aspose.Words är en typ av fält som visar resultatet av en operation eller beräkning i ett Word-dokument. Till exempel kan ett resultatvisningsfält användas för att visa summan av flera värden eller resultatet av en matematisk formel.
+
+#### F: Hur uppdaterar man ett resultatvisningsfält i ett Word-dokument med Aspose.Words?
+
+S: För att uppdatera ett resultatvisningsfält i ett Word-dokument med Aspose.Words kan du använda metoden UpdateFields. Denna metod går igenom dokumentet och uppdaterar alla fält, inklusive resultatvisningsfält, omräkning av värden baserat på aktuell data.
+
+#### F: Kan jag formatera resultatet som visas med ett resultatvisningsfält?
+
+S: Ja, du kan formatera resultatet som visas av ett resultatvisningsfält med hjälp av lämplig syntax för att ange formatet. Du kan till exempel formatera tal med ett visst antal decimaler eller använda anpassade datumformat.
+
+#### F: Hur kan jag ta bort ett resultatfält från ett Word-dokument med Aspose.Words?
+
+S: För att ta bort ett resultatvisningsfält från ett Word-dokument med Aspose.Words kan du använda metoden Ta bort. Denna metod tar bort fältet och ersätter det med dess statiska resultat.

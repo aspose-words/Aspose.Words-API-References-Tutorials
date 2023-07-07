@@ -2,17 +2,17 @@
 title: 多级列表格式
 linktitle: 多级列表格式
 second_title: Aspose.Words for .NET API 参考
-description: 了解如何使用 Aspose.Words for .NET 创建多级列表和应用自定义格式。
+description: 了解如何使用 Aspose.Words for .NET 创建多级列表并应用自定义格式。
 type: docs
 weight: 10
 url: /zh/net/document-formatting/multilevel-list-formatting/
 ---
 
-在本教程中，我们将向您展示如何使用 Aspose.Words for .NET 的多级列表格式化功能。按照以下步骤了解源代码并应用更改。
+在本教程中，我们将向您展示如何使用 Aspose.Words for .NET 的多级列表格式化功能。请按照以下步骤了解源代码并应用更改。
 
-## 第 1 步：创建和配置文档
+## 第 1 步：创建并配置文档
 
-首先，创建一个新文档和一个关联的 DocumentBuilder 对象。就是这样：
+首先，创建一个新文档和关联的 DocumentBuilder 对象。就是这样：
 
 ```csharp
 //文档目录的路径。
@@ -21,9 +21,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 第 2 步：格式化多级列表
+## 步骤 2：格式化多级列表
 
-我们现在将使用 DocumentBuilder 对象中可用的方法来应用多级列表格式。就是这样：
+现在，我们将使用 DocumentBuilder 对象中可用的方法应用多级列表格式。就是这样：
 
 ```csharp
 builder.ListFormat.ApplyNumberDefault();
@@ -47,15 +47,15 @@ builder.Writeln("Element 3");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## 第 3 步：保存文档
+## 步骤 3：保存文档
 
-插入文本输入表单域后，使用`Save`方法。确保提供适当的文件路径：
+插入文本输入表单字段后，使用以下命令将文档保存到所需位置`Save`方法。确保提供适当的文件路径：
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 ```
 
-### 使用 Aspose.Words for .NET 的多级列表格式化示例源代码
+### 使用 Aspose.Words for .NET 进行多级列表格式化的示例源代码
 
 以下是 Aspose.Words for .NET 的多级列表格式化功能的完整源代码：
 
@@ -91,4 +91,4 @@ doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 
 ```
 
-使用此代码，您将能够创建一个多级列表并使用 Aspose.Words for .NET 将适当的格式应用到每个级别。
+通过此代码，您将能够创建多级列表，并使用 Aspose.Words for .NET 对每个级别应用正确的格式。

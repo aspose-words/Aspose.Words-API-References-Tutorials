@@ -39,3 +39,20 @@ builder.InsertHorizontalRule();
 Grattis! Du har nu lärt dig hur du använder den horisontella regelfunktionen med Aspose.Words för .NET.
 
 
+### FAQ's
+
+#### F: Hur skapar jag en horisontell linjal i Markdown?
+
+S: För att skapa en horisontell linjal i Markdown kan du använda en av följande symboler på en tom rad: tre asterisker (\***), tre streck (\---), eller tre understreck (\___).
+
+#### F: Kan jag anpassa utseendet på en horisontell linjal i Markdown?
+
+S: I standard Markdown finns det inget sätt att anpassa utseendet på horisontella linjaler. Vissa avancerade Markdown-redigerare och tillägg erbjuder dock ytterligare anpassningsfunktioner.
+
+#### F: Stöds horisontella linjaler av alla Markdown-redigerare?
+
+S: Ja, de flesta populära Markdown-redigerare stöder horisontella linjaler. Det är dock alltid bäst att kontrollera din specifika leverantörs dokumentation för att se till att den stöds.
+
+#### F: Vilka andra element kan jag skapa i Markdown?
+
+S: Förutom horisontella linjaler kan du skapa titlar, stycken, listor, länkar, bilder, tabeller och mer i Markdown.

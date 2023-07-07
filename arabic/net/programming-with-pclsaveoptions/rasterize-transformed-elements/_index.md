@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl",
 // المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+// قم بتحميل مستند Word
 
 
 Document doc = new Document(dataDir + "Rendering.docx");

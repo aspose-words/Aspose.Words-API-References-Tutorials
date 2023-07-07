@@ -54,4 +54,24 @@ builder.Writeln("This is an H1 tag");
 
 Grattis! Du har nu lärt dig hur du använder rubrikfunktionen med Aspose.Words för .NET.
 
+### FAQ's
 
+#### F: Vad är en Markdown-rubrik?
+
+S: En Markdown-rubrik är ett element som används för att skapa rubriker och underrubriker i ett dokument. Den använder syntaxen för pundsymboler (#) följt av ett mellanslag och rubriktext.
+
+#### F: Hur använder jag de olika nivåerna av Markdown-rubriker?
+
+S: För att använda de olika nivåerna av Markdown-rubriker kan du lägga till ett varierande antal pundsymboler (#) före rubriktexten.
+
+#### F: Finns det några begränsningar i att använda Markdown-rubriker?
+
+S: Det finns inga strikta begränsningar, men det rekommenderas att upprätthålla en tydlig och koncis rapporteringsstruktur.
+
+#### F: Kan jag anpassa utseendet på Markdown-rubriker?
+
+S: I standard Markdown är det inte möjligt att anpassa utseendet på Markdown-rubriker, men vissa avancerade Markdown-tillägg och redigerare erbjuder ytterligare funktionalitet.
+
+#### F: Stöds Markdown-rubriker av alla Markdown-redigerare?
+
+S: Ja, de flesta populära Markdown-redigerare stöder Markdown-rubriker, men kontrollera din redaktörs specifika dokumentation för att vara säker.

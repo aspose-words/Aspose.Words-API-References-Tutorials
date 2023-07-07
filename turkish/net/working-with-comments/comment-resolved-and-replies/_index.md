@@ -75,3 +75,25 @@ Kodu, belge dosyası yolu ve ek özelleştirme dahil olmak üzere özel gereksin
 Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesindeki yorumları ve yanıtlarını nasıl çözümleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak, artık yorum çözümlemesini yönetebilir ve yorumların durumunu ve yanıtlarını ihtiyaçlarınıza göre güncelleyebilirsiniz.
 
 Yorum çözünürlüğü, bir belgedeki geri bildirimlerin izlenmesine ve yönetilmesine yardımcı olur. Belgelerinizdeki işbirliğini ve inceleme süreçlerini iyileştirmek için farklı yorum durumları ile denemeler yapın ve bunları özelleştirin.
+
+### SSS
+
+#### S: Aspose.Words for .NET'te bir yorumu nasıl çözerim?
+
+ C: Aspose.Words for .NET'te bir yorumu çözmek için`Comment.Resolve` yöntemi belirten`Comment` Çözmek istediğiniz nesne. Bu, yorumu çözülmüş olarak işaretler ve son belgede gizler.
+
+#### S: Aspose.Words for .NET'te çözümlenmiş bir yoruma nasıl yanıt eklerim?
+
+ Y: Son belgede çözümlenen yorumlar varsayılan olarak gizlenmiş olsa da, çözümlenen bir yoruma yanıt ekleyebilirsiniz.`Comment.AddReply`yanıt metnini ve onu nereye eklemek istediğinizi belirten yöntem.
+
+#### S: Çözümlenmiş yorumları Aspose.Words for .NET'te nasıl görüntülerim?
+
+ C: Varsayılan olarak, çözümlenen yorumlar son belgede gizlenir. Ancak, bunları kullanarak gösterebilirsiniz.`CommentOptions.ShowResolvedComments` mülkiyeti`Document` nesne ve bunu ayarlamak`true`.
+
+#### S: Aspose.Words for .NET'te yanıtlar dahil tüm yorumları nasıl gizleyebilirim?
+
+ C: Aspose.Words for .NET'te yanıtlar dahil tüm yorumları gizlemek için`CommentOptions.CommentDisplayMode` mülkiyeti`Document` nesne ve onu ayarla`CommentDisplayMode.None`.
+
+#### S: Çözümlenmiş bir yorumun metnini Aspose.Words for .NET'te düzenleyebilir miyim?
+
+ C: Evet, çözümlenmiş bir yorumun metnini Aspose.Words for .NET'te düzenleyebilirsiniz.`Comment.Text` karşılık gelen özellik`Comment` nesne ve metni gerektiği gibi değiştirme.

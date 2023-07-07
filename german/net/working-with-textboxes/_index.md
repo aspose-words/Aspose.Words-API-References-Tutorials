@@ -12,6 +12,6 @@ url: /de/net/working-with-textboxes/
  ## Tutorials
 | Titel | Beschreibung |
 | --- | --- |
-| [Erstellen Sie einen Link](./create-a-link/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Verknüpfung zwischen Textfeldern in einem Word-Dokument erstellen. |
+| [Link in Word erstellen](./create-a-link/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Word-Verknüpfung zwischen Textfeldern in einem Word-Dokument erstellen. |
 | [Reihenfolge prüfen](./check-sequence/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Reihenfolge von Textfeldern in einem Word-Dokument überprüfen. |
-| [Brechen Sie eine Verbindung](./break-a-link/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Links in einem Word-Dokument unterbrechen. |
+| [Weiterleitungslink im Word-Dokument unterbrechen](./break-a-link/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Links in einem Word-Dokument weiterleiten. |

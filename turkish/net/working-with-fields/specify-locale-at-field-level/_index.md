@@ -59,3 +59,17 @@ builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.doc
 ```
 
 Bu, Aspose.Words for .NET kullanan bir belgede alan düzeyinde yerelleştirmeyi belirtmek için örnek bir kaynak koduydu. Bu kodu, Word belgelerinize belirli konumlara sahip tarih alanları eklemek için kullanabilirsiniz.
+
+### SSS
+
+#### S: Aspose.Words for .NET'te alan düzeyinde yerel ayarı nasıl belirtebilirim?
+
+ C: Aspose.Words for .NET'te yerel ayarı alan seviyesinde belirtmek için`FieldOptions` sınıf ve onun`FieldLocale` İstenen yerel ayarı ayarlamak için özellik. Örneğin, kullanabilirsiniz`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` Fransızca (Fransa) yerel ayarını belirtmek için.
+
+#### S: Aspose.Words for .NET'te her alan için farklı bir yerel ayar belirlemek mümkün müdür?
+
+ C: Evet, Aspose.Words for .NET'te her alan için farklı bir yerel ayar belirtmek mümkündür. kullanabilirsiniz`FieldOptions.FieldLocale` Özelliği, farklı bir yerel ayar atamak için belirli bir alanı oluşturmadan veya güncellemeden önce.
+
+#### S: Aspose.Words for .NET'te bir alan için halihazırda kullanılan yerel ayarı nasıl edinebilirim?
+
+ C: Aspose.Words for .NET'te bir alan için halihazırda kullanılan yerel ayarı almak için, alanın`Field.LocaleId` mülk. Bu, alanla ilişkili yerel tanımlayıcıyı almanıza olanak tanır.

@@ -67,3 +67,21 @@ doc.Save("OutputDocument.docx");
 ```
 
 Feel free to use this code in your own projects and modify it according to your specific requirements.
+
+### FAQ's
+
+#### Q: How can I copy the headers and footers from the previous section into Aspose.Words?
+
+A: To copy headers and footers from the previous section into Aspose.Words, you can use the `CopyHeadersFootersFromPreviousSection()` method on the current `Section` object. This will copy the headers and footers from the previous section to the current section.
+
+#### Q: Is it possible to copy only header or footer from previous section in Aspose.Words?
+
+A: Yes, it is possible to copy only the header or footer from the previous section in Aspose.Words. For this, you can use the `CopyHeaderFromPreviousSection()` and `CopyFooterFromPreviousSection()` methods on the current `Section` object to specifically copy the header or footer from the previous section to the current section.
+
+#### Q: Does copying headers and footers from the previous section replace existing headers and footers in the current section?
+
+A: Yes, copying headers and footers from the previous section replaces existing headers and footers in the current section. If you want to keep the existing headers and footers and add them to the copied headers and footers, you will need to do an additional operation to merge the contents.
+
+#### Q: How can I check if a section has a header or footer from the previous section in Aspose.Words?
+
+A: To check if a section has a header or footer from the previous section in Aspose.Words, you can use the `HasHeader` and `HasFooter` properties on the `Section` object to determine if the header header or footer is present. If `HasHeader` or `HasFooter` returns `false`, it means there is no header or footer from the previous section in this section.

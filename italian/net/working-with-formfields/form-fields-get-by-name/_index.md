@@ -32,7 +32,7 @@ FormFieldCollection documentFormFields = doc.Range.FormFields;
 È possibile recuperare i campi del modulo per indice o per nome. In questo esempio, recuperiamo un campo modulo utilizzando entrambi i metodi:
 
 ```csharp
-FormField formField1 = documentFormFields[3]; // Recupero per indice
+FormField formField1 = documentFormFields[3]; //Recupero per indice
 FormField formField2 = documentFormFields["Text2"]; // Recupero per nome
 ```
 
@@ -73,3 +73,25 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
 Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.
+
+### FAQ
+
+#### D: Come posso ottenere un campo modulo per nome in Aspose.Words?
+
+ A: Per ottenere un campo modulo per nome in Aspose.Words, puoi usare il file`Document.Range.FormFields[name]` metodo. Questo metodo restituisce il campo del modulo corrispondente al nome specificato.
+
+#### D: Cosa succede se il campo modulo con il nome specificato non esiste nel documento?
+
+ R: Se il campo modulo con il nome specificato non esiste nel documento, il file`Document.Range.FormFields[name]` metodo tornerà`null`Puoi controllare questo risultato per gestire i casi in cui il campo del modulo non viene trovato.
+
+#### D: Come posso modificare le proprietà di un campo modulo trovato?
+
+R: Una volta ottenuto un campo modulo per nome, puoi accedere alle sue singole proprietà per modificarle. Ad esempio, puoi modificare il valore del campo, abilitare o disabilitare la sua visibilità o modificare altre proprietà secondo necessità.
+
+#### D: Posso ottenere più campi modulo con lo stesso nome in un documento?
+
+ R: Sì, è possibile avere più campi modulo con lo stesso nome in un documento. In questo caso, il`Document.Range.FormFields[name]` Il metodo restituirà il primo campo del modulo trovato con il nome specificato. Se hai più campi modulo con lo stesso nome, dovrai tenerne conto durante la manipolazione dei campi.
+
+#### D: Come posso iterare su tutti i campi del modulo in un documento?
+
+ R: Per eseguire l'iterazione su tutti i campi modulo in un documento, puoi utilizzare a`foreach` loop sul`Document.Range.FormFields` collezione. Ciò ti consentirà di accedere individualmente a ciascun campo del modulo ed eseguire operazioni su ciascuno di essi.

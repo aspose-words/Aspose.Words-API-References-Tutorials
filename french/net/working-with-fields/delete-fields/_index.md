@@ -32,7 +32,7 @@ Ceci est particulièrement utile si vous souhaitez conserver uniquement le conte
 // Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Charger le document existant.
+//Charger le document existant.
 Document doc = new Document(dataDir + "YourDocument.docx");
 
 // Supprimer les champs de fusion.
@@ -49,3 +49,29 @@ Afin de supprimer efficacement les champs de fusion d'un document à l'aide de l
 N'oubliez pas de remplacer "VOTRE RÉPERTOIRE DE DOCUMENTS" par votre chemin de répertoire spécifique. 
 
 Notre guide sur la mise en œuvre de la fonctionnalité "Supprimer les champs" via Aspose.Words pour .NET est ainsi terminé.
+
+### FAQ
+
+#### Q : Qu'est-ce qu'un champ dans Aspose.Words ?
+
+R : Un champ dans Aspose.Words est une structure de document qui représente un texte généré automatiquement ou une valeur calculée. Les champs sont utilisés pour afficher des informations dynamiques dans un document, telles que les numéros de page, les dates, les champs de publipostage, etc.
+
+#### Q : Comment supprimer un champ dans un document Word avec Aspose.Words ?
+
+R : Pour supprimer un champ dans un document Word avec Aspose.Words, vous pouvez suivre ces étapes :
+
+1. Importez la classe Document à partir de l'espace de noms Aspose.Words.
+2. Créez une instance de Document en chargeant votre document existant.
+3. Utilisez la méthode RemoveFields pour supprimer tous les champs du document.
+
+#### Q : Puis-je supprimer des champs spécifiques plutôt que de supprimer tous les champs d'un document ?
+
+R : Oui, vous pouvez supprimer des champs spécifiques plutôt que de supprimer tous les champs d'un document. Pour ce faire, vous devez accéder à chaque champ individuellement et utiliser la méthode Remove pour le supprimer.
+
+#### Q : Comment puis-je vérifier si un champ existe dans un document Word avant de le supprimer ?
+
+R : Pour vérifier si un champ existe dans un document Word avant de le supprimer, vous pouvez utiliser la méthode contains de la collection Fields pour rechercher le champ spécifié. Cette méthode renvoie une valeur booléenne indiquant si le champ existe ou non.
+
+#### Q : Quels sont les effets de la suppression d'un champ sur le reste du document ?
+
+: Lorsque vous supprimez un champ dans un document Word, le champ est supprimé du document et le texte généré ou la valeur calculée associée au champ est supprimé. Cela peut affecter la mise en page du document, car le contenu généré par le champ sera supprimé.

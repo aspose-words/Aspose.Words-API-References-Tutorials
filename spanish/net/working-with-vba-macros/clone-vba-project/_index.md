@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Paso 2: Cargue el documento de origen
-continuación, cargaremos el documento de origen de Word, que contiene el proyecto de VBA que queremos clonar.
+A continuación, cargaremos el documento de origen de Word, que contiene el proyecto de VBA que queremos clonar.
 
 ```csharp
 // Cargue el documento de origen

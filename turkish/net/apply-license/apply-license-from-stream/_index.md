@@ -72,3 +72,21 @@ catch (Exception e)
 Bu öğreticide, Aspose.Words for .NET kullanarak bir akıştan nasıl lisans uygulayacağınızı öğrendiniz. Adım adım kılavuzu takip ederek ve sağlanan kaynak kodunu kullanarak lisansı kolayca ayarlayabilir ve belge işleme görevleriniz için Aspose.Words'ün tam potansiyelini ortaya çıkarabilirsiniz.
 
 Artık bir akıştan güvenle lisans uygulayabilir ve Word belgelerini programlı olarak oluşturmak, değiştirmek ve dönüştürmek için Aspose.Words'ün güçlü özelliklerinden yararlanabilirsiniz.
+
+### SSS
+
+#### S: Aspose.Words for .NET lisans belgelerini nerede bulabilirim?
+
+A: Aspose için lisans belgelerini bulabilirsiniz. Resmi Aspose dokümantasyon web sitesinde .NET için kelimeler. Belgeler, dosyalardan lisans uygulamak da dahil olmak üzere, lisans uygulamak için ayrıntılı talimatlar ve örnekler sağlar.
+
+#### S: Aspose.Words for .NET lisans dosyaları için hangi dosya formatlarını destekliyor?
+
+Y: Aspose.Words for .NET, XML formatındaki lisans dosyalarını destekler. Lisans dosyanızın Aspose.Words for .NET tarafından tanınan uygun XML formatında olduğundan emin olun.
+
+#### S: Aspose.Words for .NET'te programlı olarak lisans uygulayabilir miyim?
+
+ C: Evet, Aspose.Words for .NET'te programlı olarak bir lisans uygulayabilirsiniz. kullanarak`License` sınıf ve onun`SetLicense` yöntemiyle, doğrudan kodunuz içinde bir lisans uygulayabilirsiniz.
+
+#### S: Aspose.Words for .NET'te lisans başvurusu yapmazsam ne olur?
+
+C: Aspose.Words for .NET'te bir lisans uygulamazsanız, kitaplık değerlendirme modunda çalışacaktır. Değerlendirme modunda, oluşturulan belgelere belirli sınırlamalar ve filigranlar getirilebilir. Bu sınırlamaları kaldırmak için geçerli bir lisans uygulanması önerilir.

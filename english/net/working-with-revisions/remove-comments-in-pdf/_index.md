@@ -1,6 +1,6 @@
 ---
-title: Remove Comments In Pdf
-linktitle: Remove Comments In Pdf
+title: Remove Comments In Pdf File
+linktitle: Remove Comments In Pdf File
 second_title: Aspose.Words for .NET API Reference
 description: Remove comments in a PDF file with Aspose.Words for .NET.
 type: docs
@@ -56,4 +56,34 @@ Document doc = new Document(MyDir + "Revisions.docx");
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 
 doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
+```
+
+## Conclusion
+
+In this tutorial, we learned how to remove comments from a PDF file using Aspose.Words for .NET. By using the appropriate layout options, we were able to hide the comments when generating the PDF. Aspose.Words for .NET offers great flexibility to manipulate Word files and convert them to different formats, including PDF. You can now apply this knowledge to remove comments in your own PDF files using Aspose.Words for .NET.
+
+### FAQ's for remove comments in pdf file
+
+#### Q: How to upload a document in Aspose.Words for .NET?
+
+A: Use the `Document` class of Aspose.Words for .NET to load a document from a file. You can specify the full document path.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### Q: How to hide comments in PDF generated with Aspose.Words for .NET?
+
+A: Use the `CommentDisplayMode` property of the `LayoutOptions` object to configure how comments are displayed when generating the PDF. To hide comments, set this property to `CommentDisplayMode.Hide`.
+
+```csharp
+doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
+```
+
+#### Q: How to save document as PDF with Aspose.Words for .NET?
+
+A: Use the `Save` method of the `Document` object to save the document in PDF format. Specify the full path of the PDF file.
+
+```csharp
+doc.Save("path/to/the/file.pdf");
 ```

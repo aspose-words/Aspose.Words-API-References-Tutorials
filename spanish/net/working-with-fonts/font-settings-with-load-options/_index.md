@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Paso 2: configure las opciones de carga con la configuración de fuentes
- A continuación, crearemos una instancia de`LoadOptions` y especifique la configuración de la fuente creando una nueva instancia de`FontSettings` y asignándolo a`loadOptions.FontSettings`.
+ A continuación, crearemos una instancia de`LoadOptions` especifique la configuración de la fuente creando una nueva instancia de`FontSettings` y asignándolo a`loadOptions.FontSettings`.
 
 ```csharp
 // Configurar opciones de carga con ajustes de fuente
@@ -52,3 +52,21 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ## Conclusión
 En este tutorial, vimos cómo usar las opciones de carga con la configuración de fuentes en un documento de Word con Aspose.Words para .NET. Las opciones de carga le permiten personalizar la carga de documentos especificando configuraciones adicionales, incluida la configuración de fuentes. No dude en utilizar esta función para adaptar la carga de documentos a sus necesidades específicas.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo especificar una fuente predeterminada al cargar un documento en Aspose.Words?
+
+ R: Para especificar una fuente predeterminada al cargar un documento en Aspose.Words, puede usar el`LoadOptions` clase y establecer el`DefaultFontName` propiedad al nombre de la fuente deseada.
+
+#### P: ¿Qué otras configuraciones de fuentes puedo especificar con las opciones de carga en Aspose.Words?
+
+R: Además de especificar la fuente predeterminada, también puede especificar otras configuraciones de fuente, como la codificación predeterminada, utilizando las propiedades apropiadas del`LoadOptions` clase, como`DefaultEncoding`.
+
+#### P: ¿Qué sucede si la fuente predeterminada especificada no está disponible al cargar el documento?
+
+R: Si la fuente predeterminada especificada no está disponible cuando el documento se carga en Aspose.Words, se usará una fuente de reemplazo para mostrar el texto en el documento. Esto puede causar una ligera diferencia en la apariencia de la fuente original.
+
+#### P: ¿Puedo especificar diferentes configuraciones de fuente para cada documento cargado?
+
+ R: Sí, puede especificar diferentes configuraciones de fuente para cada documento cargado usando instancias separadas del`LoadOptions` clase y establecer la configuración de fuente deseada para cada instancia. Esto le permite personalizar la apariencia de la fuente para cada documento de forma independiente.

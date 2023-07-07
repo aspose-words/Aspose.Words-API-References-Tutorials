@@ -111,3 +111,35 @@ Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 ```
 
+## Abschluss
+
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET einen Knoten in einem verfolgten Word-Dokument verschiebt. Durch Befolgen der Schritte zum Erstellen des Dokuments, Aktivieren der Revisionsverfolgung, Verschieben des Knotens und Stoppen der Revisionsverfolgung konnten wir diese Manipulation erfolgreich durchführen. Aspose.Words für .NET ist ein leistungsstarkes Tool zum Arbeiten mit Word-Dokumenten und bietet erweiterte Funktionen zum Verwalten von Revisionen. Jetzt können Sie dieses Wissen nutzen, um Knoten in Ihren eigenen Word-Dokumenten zu verschieben und gleichzeitig Revisionen mit Aspose.Words für .NET zu verfolgen.
+
+### FAQs
+
+#### F: Wie kann ich die Revisionsverfolgung in einem Aspose.Words für .NET-Dokument aktivieren?
+
+A: Um die Revisionsverfolgung in einem Aspose.Words für .NET-Dokument zu aktivieren, können Sie die verwenden`StartTrackRevisions` Methode der`Document` Objekt. Diese Methode verwendet als Parameter den Namen des Autors der Revisionen und das Startdatum der Nachverfolgung der Revisionen.
+
+```csharp
+doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+```
+
+#### F: Wie kann ich einen Knoten in einem nachverfolgten Dokument verschieben, ohne Revisionen zu generieren?
+
+ A: Wenn Sie einen Knoten in einem verfolgten Dokument verschieben möchten, ohne Revisionen zu generieren, können Sie das verwenden`Remove` Und`InsertAfter` oder`InsertBefore` Methoden der`Node` Objekt. Um beispielsweise einen Absatz nach dem anderen zu verschieben, können Sie den folgenden Code verwenden:
+
+```csharp
+Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
+Node referenceNode = document.FirstSection.Body.Paragraphs[1];
+nodeToMove.Remove();
+document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
+```
+
+#### F: Wie kann ich die Revisionsverfolgung in einem Aspose.Words für .NET-Dokument stoppen?
+
+ A: Um die Nachverfolgung von Revisionen in einem Aspose.Words für .NET-Dokument zu stoppen, können Sie Folgendes verwenden`StopTrackRevisions` Methode der`Document` Objekt.
+
+```csharp
+doc.StopTrackRevisions();
+```

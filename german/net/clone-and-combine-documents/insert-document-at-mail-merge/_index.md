@@ -20,7 +20,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 ```
 
-## Schritt 2: Konfigurieren Sie den Serienbrief
+## Schritt 2: Konfigurieren Sie den Seriendruck
 
 Nun konfigurieren wir den Serienbrief und geben den Feld-Merge-Callback an, um ein Dokument in ein anderes Dokument einzufügen. Hier ist wie:
 
@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-//Das Hauptdokument enthält ein Zusammenführungsfeld namens „Document_1“.
+// Das Hauptdokument enthält ein Zusammenführungsfeld namens „Document_1“.
 // Die entsprechenden Daten für dieses Feld enthalten einen vollständig qualifizierten Pfad zum Dokument.
 // Das sollte in dieses Feld eingefügt werden.
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });

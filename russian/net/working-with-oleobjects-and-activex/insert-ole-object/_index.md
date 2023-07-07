@@ -1,14 +1,14 @@
 ---
-title: Вставить объект Ole
-linktitle: Вставить объект Ole
+title: Вставить объект Ole в документ Word
+linktitle: Вставить объект Ole в документ Word
 second_title: Справочник по API Aspose.Words для .NET
-description: Узнайте, как вставить объект OLE в документ с помощью Aspose.Words для .NET.
+description: Узнайте, как вставить объект OLE в документ Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/working-with-oleobjects-and-activex/insert-ole-object/
 ---
 
-Ниже приведено пошаговое руководство по объяснению приведенного ниже исходного кода C#, в котором показано, как вставить объект OLE с помощью Aspose.Words для .NET.
+Ниже приведено пошаговое руководство по объяснению приведенного ниже исходного кода C#, которое иллюстрирует, как вставить объект OLE в документ Word с помощью Aspose.Words для .NET.
 
 ## Шаг 1. Импортируйте необходимые ссылки
 Прежде чем начать, убедитесь, что вы импортировали в свой проект необходимые ссылки для использования Aspose.Words for .NET. Сюда входит импорт библиотеки Aspose.Words и добавление необходимых пространств имен в исходный файл.
@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 3. Вставьте объект OLE
- Используйте конструктор документов`InsertOleObject` метод для вставки объекта OLE в документ. Укажите URL-адрес объекта OLE, тип объекта, параметры отображения и другие необходимые параметры.
+ Используйте конструктор документов`InsertOleObject`метод для вставки объекта OLE в документ. Укажите URL-адрес объекта OLE, тип объекта, параметры отображения и другие необходимые параметры.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
@@ -52,3 +52,58 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 ```
 
 Это полный пример кода для вставки объекта OLE с помощью Aspose.Words для .NET. Обязательно импортируйте необходимые ссылки и выполните шаги, описанные ранее, чтобы интегрировать этот код в свой проект.
+
+## Заключение
+
+В заключение, вставка объектов OLE в документ Word — мощная функция, предлагаемая Aspose.Words для .NET. Используя эту библиотеку, вы можете легко встраивать объекты OLE, такие как файлы HTML, электронные таблицы Excel, презентации PowerPoint и т. д., в свои документы Word.
+
+В этой статье мы рассмотрели пошаговое руководство для объяснения исходного кода на C#, иллюстрирующего, как вставить объект OLE в документ Word. Мы рассмотрели необходимые ссылки, создание нового документа и генератора документов, а также шаги по вставке объекта OLE и сохранению документа.
+
+### Часто задаваемые вопросы по вставке объекта OLE в документ Word
+
+#### В: Какие учетные данные мне нужно импортировать, чтобы использовать Aspose.Words для .NET?
+
+О: Чтобы использовать Aspose.Words для .NET, вам необходимо импортировать следующие ссылки:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+#### Q: Как создать новый документ и генератор документов?
+
+ A: Вы можете создать новый документ, используя`Document` класс и конструктор документов, использующий`DocumentBuilder` класс, как показано ниже:
+
+```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+#### Q: Как вставить объект OLE в документ?
+
+ О: Используйте`InsertOleObject` метод конструктора документов (`DocumentBuilder`), чтобы вставить объект OLE в документ. Укажите URL-адрес объекта OLE, тип объекта, параметры отображения и другие необходимые параметры. Вот пример:
+
+```csharp
+builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
+```
+
+#### Q: Как сохранить документ?
+
+ О: Используйте документ`Save`метод сохранения документа в файл. Вот пример:
+
+```csharp
+doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
+```
+
+#### Вопрос. Можете ли вы предоставить полный пример вставки объекта OLE с помощью Aspose.Words для .NET?
+
+О: Вот полный пример кода для вставки объекта OLE с помощью Aspose.Words для .NET. Обязательно импортируйте необходимые ссылки и выполните шаги, описанные ранее, чтобы интегрировать этот код в свой проект:
+
+```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+
+builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
+
+doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
+```

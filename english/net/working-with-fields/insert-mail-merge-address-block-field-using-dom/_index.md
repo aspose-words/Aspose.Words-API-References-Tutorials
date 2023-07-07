@@ -94,4 +94,20 @@ field. Update();
 
 doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsingDOM.docx");
 ```
+### FAQ's
 
+#### Q: How can I customize the format of the mailing address in a Word document with Aspose.Words for .NET?
+
+A: You can customize the format of the mailing address in a Word document with Aspose.Words for .NET using the properties of the `FieldAddressBlock` object. You can set the formatting options like address style, separators, optional items, etc. to get the desired format.
+
+#### Q: How can I specify the source data for the mailing address field in Aspose.Words for .NET?
+
+A: To specify the source data for the mailing address field in Aspose.Words for .NET, you can use the `FieldAddressBlock.StartAddress` and `FieldAddressBlock.EndAddress` properties. These properties are used to define the address ranges in the external data source, such as a CSV file, database, etc.
+
+#### Q: Can I include optional elements in the mailing address field with Aspose.Words for .NET?
+
+A: Yes, you can include optional elements in the mailing address field with Aspose.Words for .NET. You can define optional elements by using the `FieldAddressBlock.OmitOptional` method to specify whether to include or exclude optional elements such as recipient name, company name, etc.
+
+#### Q: Does inserting a mailing address field using the DOM affect the Word document structure with Aspose.Words for .NET?
+
+A: Inserting a mailing address field using the DOM does not directly affect the structure of the Word document. However, it adds a new field element to the document content. You can manipulate the document structure by adding, deleting or modifying the existing elements according to your needs.

@@ -16,5 +16,5 @@ Ya sea que sea un desarrollador principiante o experimentado, estos tutoriales l
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Rangos Borrar texto](./ranges-delete-text/) | Aprenda a eliminar texto en rangos específicos en un documento de Word usando Aspose.Words para .NET. |
-| [Rangos Obtener texto](./ranges-get-text/) | Aprenda cómo extraer fácilmente texto de un documento de Word usando Aspose.Words para .NET. |
+| [Rangos Borrar Texto](./ranges-delete-text/) | Aprenda a eliminar texto en rangos específicos en un documento de Word usando Aspose.Words para .NET. |
+| [Rangos Obtener Texto](./ranges-get-text/) | Aprenda cómo extraer fácilmente texto de un documento de Word usando Aspose.Words para .NET. |

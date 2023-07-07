@@ -12,7 +12,7 @@ Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som anv
 
 ## Steg 1: Installation av dokumentkatalog
 
-I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
+den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -61,6 +61,24 @@ foreach(Field field in doc.Range.Fields)
 }
 ```
 
-det här exemplet laddade vi ett dokument och bläddrade sedan igenom alla fält som fanns i dokumentet. Vid varje iteration fick vi koden och resultatet av fältet. Du kan lägga till din egen logik för att bearbeta koden och resultatfälten efter behov.
+I det här exemplet laddade vi ett dokument och bläddrade sedan igenom alla fält som fanns i dokumentet. Vid varje iteration fick vi koden och resultatet av fältet. Du kan lägga till din egen logik för att bearbeta koden och resultatfälten efter behov.
 
 Detta avslutar vår guide om hur du använder funktionen "Hämta fältkod" med Aspose.Words för .NET.
+
+### FAQ's
+
+#### F: Hur kan jag infoga ett fält i ett Word-dokument med Aspose.Words för .NET?
+
+ S: För att infoga ett fält i ett Word-dokument med Aspose.Words för .NET, kan du använda`DocumentBuilder.InsertField` metod som anger lämplig fältkod. Du kan till exempel använda`builder.InsertField("MERGEFIELD CustomerName")` för att infoga ett sammanfogningsfält i dokumentet.
+
+#### F: Hur kan jag uppdatera fält i ett dokument med Aspose.Words för .NET?
+
+ S: För att uppdatera dokumentfält med Aspose.Words för .NET kan du använda`Document.UpdateFields` metod. Detta kommer att uppdatera alla fält som finns i dokumentet, såsom sammanfogningsfält, datumfält, etc.
+
+#### F: Hur kan jag hämta värdet för ett specifikt fält i Aspose.Words för .NET?
+
+ S: För att hämta värdet för ett specifikt fält i Aspose.Words för .NET kan du använda`Field.GetResult` metod genom att ange indexet för fältet i`Document.Range.Fields` samling. Du kan till exempel använda`string value = document.Range.Fields[0].GetResult()` för att hämta värdet för det första fältet i dokumentet.
+
+#### F: Hur kan jag ta bort ett fält från ett dokument med Aspose.Words för .NET?
+
+ S: För att ta bort ett fält från ett dokument med Aspose.Words för .NET, kan du använda`Field.Remove` metod som specificerar`Field` objekt du vill ta bort. Detta tar bort fältet från dokumentet.

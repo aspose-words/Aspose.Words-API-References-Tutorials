@@ -11,7 +11,7 @@ I tutorial di Aspose.Words per .NET sulla programmazione con WebExtensions ti gu
 
 Questi tutorial forniscono istruzioni dettagliate per comprendere e utilizzare la funzionalità di WebExtensions con Aspose.Words per .NET. Imparerai come accedere agli oggetti delle estensioni web, gestire gli eventi, valutare il codice JavaScript, aggiungere funzionalità personalizzate e altro ancora. Che tu sia un principiante o uno sviluppatore esperto, questi tutorial ti aiuteranno a padroneggiare le tecniche di programmazione con WebExtensions.
 
-Seguendo questi tutorial, sarai in grado di sfruttare appieno le capacità delle estensioni web nei tuoi documenti Word, dando loro funzionalità interattive e dinamiche. I tutorial forniscono esempi di codice passo passo e spiegazioni chiare per aiutarti a ottenere il massimo da queste funzionalità e creare documenti Word innovativi e interattivi.
+Seguendo questi tutorial, sarai in grado di sfruttare appieno le capacità delle estensioni web nei tuoi documenti Word, dando loro funzionalità interattive e dinamiche. I tutorial forniscono esempi di codice passo-passo e spiegazioni chiare per aiutarti a ottenere il massimo da queste funzionalità e creare documenti Word innovativi e interattivi.
 
 ## Tutorial
 | Titolo | Descrizione |

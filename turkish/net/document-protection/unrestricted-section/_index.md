@@ -41,7 +41,7 @@ Doğru koruma türünü belirttiğinizden ve istenen parolayı ayarladığınız
 
 ## 4. Adım: Belirli bir bölüm için korumayı devre dışı bırakma
 
-Varsayılan olarak, tüm bölümler korumalıdır, ancak Section nesnesinin ProtectedForForms özelliğini kullanarak belirli bir bölüm için korumayı seçerek devre dışı bırakabilirsiniz:
+Varsayılan olarak tüm bölümler korumalıdır, ancak Section nesnesinin ProtectedForForms özelliğini kullanarak belirli bir bölüm için korumayı seçerek devre dışı bırakabilirsiniz:
 
 ```csharp
 doc.Sections[0].ProtectedForForms = false;

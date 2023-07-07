@@ -70,4 +70,24 @@ catch (Exception e)
 }
 ```
 
+## Conclusion
 
+L'ajout de FAQ aux didacticiels améliore considérablement l'expérience d'apprentissage des utilisateurs. Il répond aux questions courantes, améliore l'engagement des utilisateurs et aide à clarifier les doutes et les idées fausses. En incluant des FAQ dans les didacticiels, t
+
+### FAQ
+
+#### Q : Où puis-je trouver la documentation de licence pour Aspose.Words pour .NET ?
+
+R : Vous pouvez trouver la documentation de licence pour Aspose. Words for .NET sur le site officiel de documentation d'Aspose. La documentation fournit des instructions détaillées et des exemples d'application de licences, y compris l'application de licences à partir de fichiers.
+
+#### Q : Quels formats de fichiers Aspose.Words pour .NET prend-il en charge pour les fichiers de licence ?
+
+: Aspose.Words pour .NET prend en charge les fichiers de licence au format XML. Assurez-vous que votre fichier de licence est au format XML approprié reconnu par Aspose.Words pour .NET.
+
+#### Q : Puis-je appliquer une licence par programmation dans Aspose.Words pour .NET ?
+
+ R : Oui, vous pouvez appliquer une licence par programmation dans Aspose.Words pour .NET. En utilisant le`License` classe et ses`SetLicense` méthode, vous pouvez appliquer une licence directement dans votre code.
+
+#### Q : Que se passe-t-il si je n'applique pas de licence dans Aspose.Words pour .NET ?
+
+R : Si vous n'appliquez pas de licence dans Aspose.Words pour .NET, la bibliothèque fonctionnera en mode d'évaluation. En mode évaluation, certaines limitations et filigranes peuvent être imposés sur les documents générés. Pour supprimer ces limitations, il est recommandé d'appliquer une licence valide.

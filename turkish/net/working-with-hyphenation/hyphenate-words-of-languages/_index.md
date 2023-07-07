@@ -34,7 +34,7 @@ Veri dizininizde uygun sözlük dosyalarının bulunduğundan emin olun.
 
 ## 3. Adım: Kelimeleri tireleme yoluyla işleme
 
- Artık farklı dillerdeki sözcükleri işlemek için heceleme özelliklerini kullanabilirsiniz. farklı yöntemler kullanabilirsiniz`Document` veya`DocumentBuilder`özel ihtiyaçlarınıza bağlı olarak.
+ Artık farklı dillerdeki sözcükleri işlemek için heceleme özelliklerini kullanabilirsiniz. farklı yöntemler kullanabilirsiniz`Document` veya`DocumentBuilder` özel ihtiyaçlarınıza bağlı olarak.
 
 ```csharp
 // Örnek: DocumentBuilder'ın Tireleme yöntemini kullanma
@@ -66,3 +66,17 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
 Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şekilde değiştirmekten çekinmeyin.
+
+### SSS
+
+#### S: Belirli bir dilde bir kelimeyi Aspose.Words ile nasıl heceleyebilirim?
+
+ C: Belirli bir dilde bir kelimeyi Aspose.Words ile hecelemek için`Hyphenation` sınıf ve`Hyphenate()` yöntem. örneğini oluşturun`Hyphenation` istenen dili belirten sınıfı seçin, ardından`Hyphenate()` hecelemek için kelimeyi argüman olarak geçirme yöntemi. Bu size kelimenin hecelerini belirtilen dilde verecektir.
+
+#### S: Aspose.Words'te heceleme dilini belirtmek için hangi dil kodlarını kullanmalıyım?
+
+C: Aspose.Words'te heceleme dilini belirlemek için uygun dil kodlarını kullanmalısınız. Örneğin, İngilizce için "en", Fransızca için "fr", İspanyolca için "es", Almanca için "de" vb. kullanabilirsiniz. Desteklenen dil kodlarının tam listesi için Aspose.Words belgelerine bakın.
+
+#### S: Heceleme, Aspose.Words'taki tüm diller için çalışıyor mu?
+
+C: Aspose.Words'teki heceleme, dile özgü heceleme kurallarına bağlıdır. Aspose.Words çok çeşitli dilleri desteklese de bazı diller desteklenmeyebilir veya onlar için heceleme mevcut olmayabilir. Hangi dillerin heceleme için desteklendiğini öğrenmek için Aspose.Words belgelerine bakın.

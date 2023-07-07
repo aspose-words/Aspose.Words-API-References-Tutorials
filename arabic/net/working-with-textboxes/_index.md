@@ -12,6 +12,6 @@ url: /ar/net/working-with-textboxes/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [إنشاء ارتباط](./create-a-link/) | تعرف على كيفية إنشاء رابط بين TextBoxes في مستند Word باستخدام Aspose.Words for .NET. |
+| [إنشاء ارتباط في Word](./create-a-link/) | تعرف على كيفية إنشاء ارتباط في Word بين TextBoxes في مستند Word باستخدام Aspose.Words for .NET. |
 | [تحقق من التسلسل](./check-sequence/) | تعرف على كيفية التحقق من تسلسل TextBoxes في مستند Word باستخدام Aspose.Words for .NET. |
-| [قطع الارتباط](./break-a-link/) | تعرف على كيفية فصل الروابط في مستند Word باستخدام Aspose.Words for .NET. |
+| [قطع الارتباط إلى الأمام في مستند Word](./break-a-link/) | تعرف على كيفية فصل الروابط إلى الأمام في مستند Word باستخدام Aspose.Words for .NET. |

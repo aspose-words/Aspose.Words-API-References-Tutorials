@@ -63,41 +63,62 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 Hier ist der vollständige Quellcode zum Verankern einer Kommentarantwort mit Aspose.Words für .NET:
 
 ```csharp
+// Erstellen Sie eine Instanz des Dokuments.
+string dataDir = "YOUR DOCUMENT DIRECTORY";        
+Document doc = new Document();
 
-    // Erstellen Sie eine Instanz des Dokuments.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";        
-	Document doc = new Document();
+// Erstellen Sie drei Run-Objekte.
+//Die ersten beiden führen einen Text aus, während der dritte einen Kommentar ausgibt
 
-    // Erstellen Sie drei Run-Objekte.
-    //Die ersten beiden führen einen Text aus, während der dritte einen Kommentar ausführt
+Paragraph para1 = new Paragraph(doc);
+Run run1 = new Run(doc, "Some ");
+Run run2 = new Run(doc, "text ");
+para1.AppendChild(run1);
+para1.AppendChild(run2);
+doc.FirstSection.Body.AppendChild(para1);
 
-	Paragraph para1 = new Paragraph(doc);
-	Run run1 = new Run(doc, "Some ");
-	Run run2 = new Run(doc, "text ");
-	para1.AppendChild(run1);
-	para1.AppendChild(run2);
-	doc.FirstSection.Body.AppendChild(para1);
+Paragraph para2 = new Paragraph(doc);
+Run run3 = new Run(doc, "is ");
+Run run4 = new Run(doc, "added ");
+para2.AppendChild(run3);
+para2.AppendChild(run4);
+doc.FirstSection.Body.AppendChild(para2);
 
-	Paragraph para2 = new Paragraph(doc);
-	Run run3 = new Run(doc, "is ");
-	Run run4 = new Run(doc, "added ");
-	para2.AppendChild(run3);
-	para2.AppendChild(run4);
-	doc.FirstSection.Body.AppendChild(para2);
+Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
+comment.Paragraphs.Add(new Paragraph(doc));
+comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 
-	Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-	comment.Paragraphs.Add(new Paragraph(doc));
-	comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+// Jedes der Run-Objekte verfügt über ein zugehöriges CommentRangeStart- und CommentRangeEnd-Objekt.
 
-	// Jedes der Run-Objekte verfügt über ein zugehöriges CommentRangeStart- und CommentRangeEnd-Objekt.
+CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
+CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
 
-	CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
-	CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
+run1.ParentNode.InsertAfter(commentRangeStart, run1);
+run3.ParentNode.InsertAfter(commentRangeEnd, run3);
+commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 
-	run1.ParentNode.InsertAfter(commentRangeStart, run1);
-	run3.ParentNode.InsertAfter(commentRangeEnd, run3);
-	commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
-
-	doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
-            
+doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
 ```
+
+### FAQs
+
+#### F: Was ist ein Kommentaranker in Aspose.Words für .NET?
+
+A: In Aspose.Words für .NET ist ein Kommentaranker eine Markierung, die einen Kommentar mit einer bestimmten Stelle in einem Dokument verbindet.
+
+#### F: Wie kann ich einem Aspose.Words für .NET-Dokument einen Kommentaranker hinzufügen?
+
+A: Um einen Kommentaranker in einem Aspose.Words für .NET-Dokument hinzuzufügen, befolgen Sie die im Tutorial genannten Schritte.
+
+#### F: Wie greife ich auf einen vorhandenen Kommentaranker in Aspose.Words für .NET zu?
+
+ A: Sie können mit dem auf einen vorhandenen Kommentaranker in Aspose.Words für .NET zugreifen`Comment.Anchor` Eigentum.
+
+#### F: Kann ich einen Kommentaranker in Aspose.Words für .NET unterdrücken?
+
+ A: Ja, Sie können einen Kommentaranker in Aspose.Words für .NET mithilfe von entfernen`Comment.Remove` Methode.
+
+#### F: Wie kann ich den Text eines Kommentars bearbeiten, der mit einem Kommentaranker in Aspose.Words für .NET verknüpft ist?
+
+A: Um den Text eines Kommentars zu ändern, der an einen Kommentaranker in Aspose.Words für .NET gebunden ist, können Sie auf Folgendes zugreifen`Comment.Text` Eigentum des entsprechenden`Comment` Objekt und ändern Sie den Text nach Bedarf.
+

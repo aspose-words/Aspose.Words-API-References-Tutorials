@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/working-with-fields/convert-fields-in-body/
 ---
 
-En este tutorial paso a paso, lo guiaremos a través de cómo usar la función ConvertFieldsInBody de Aspose.Words para .NET usando el código fuente de C# provisto. Esta función le permite convertir campos específicos en el cuerpo de su documento a texto sin formato, lo que facilita el procesamiento de sus documentos. Siga los pasos a continuación para usar esta función de manera efectiva.
+En este tutorial paso a paso, lo guiaremos a través de cómo usar la función ConvertFieldsInBody de Aspose.Words para .NET usando el código fuente de C# proporcionado. Esta función le permite convertir campos específicos en el cuerpo de su documento a texto sin formato, lo que facilita el procesamiento de sus documentos. Siga los pasos a continuación para usar esta función de manera efectiva.
 
 ## Paso 1: Requisitos previos
 
@@ -59,3 +59,25 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
+
+### Preguntas frecuentes
+
+#### P: ¿Es Aspose.Words compatible con diferentes versiones de Microsoft Word?
+
+R: Sí, Aspose.Words es compatible con varias versiones de Microsoft Word, incluidas Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 y Word 2019.
+
+#### P: ¿Puede Aspose.Words manejar estructuras de campo complejas?
+
+R: ¡Absolutamente! Aspose.Words proporciona un amplio soporte para estructuras de campo complejas, incluidos campos anidados, cálculos y expresiones condicionales. Puede aprovechar la potente API para trabajar con cualquier tipo de estructura de campo.
+
+#### P: ¿Aspose.Words admite operaciones de actualización de campos?
+
+R: Sí, Aspose.Words le permite actualizar campos mediante programación. Puede actualizar fácilmente los valores de los campos, actualizar los cálculos y realizar otras operaciones relacionadas con los campos mediante la API.
+
+#### P: ¿Puedo convertir campos en texto sin formato con Aspose.Words?
+
+R: ¡Ciertamente! Aspose.Words proporciona métodos para convertir campos en texto sin formato. Esto puede ser útil cuando necesita extraer el contenido sin ningún formato o funcionalidad relacionada con el campo.
+
+#### P: ¿Es posible generar documentos de Word con campos dinámicos usando Aspose.Words?
+
+R: ¡Absolutamente! Aspose.Words ofrece funciones robustas para generar documentos de Word con campos dinámicos. Puede crear plantillas con campos predefinidos y completarlos con datos de forma dinámica, proporcionando una solución de generación de documentos flexible y eficiente.

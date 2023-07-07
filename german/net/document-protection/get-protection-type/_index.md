@@ -41,5 +41,5 @@ Hier ist der vollständige Quellcode für die Funktion „Get Protection Type“
 
 ## Abschluss
 
-In diesem Artikel haben wir erklärt, wie Sie die Funktion „Get Protection Type“ von Aspose.Words für .NET verwenden, um den Schutztyp eines Dokuments zu ermitteln. Wenn Sie die beschriebenen Schritte befolgen, können Sie diese Funktionalität problemlos in Ihre eigenen C#-Projekte integrieren und geschützte Dokumente effizient bearbeiten. Aspose.Words für .NET bietet große Flexibilität
+In diesem Artikel haben wir erklärt, wie Sie die Funktion „Get Protection Type“ von Aspose.Words für .NET verwenden, um den Schutztyp eines Dokuments zu bestimmen. Wenn Sie die beschriebenen Schritte befolgen, können Sie diese Funktionalität problemlos in Ihre eigenen C#-Projekte integrieren und geschützte Dokumente effizient bearbeiten. Aspose.Words für .NET bietet große Flexibilität
 

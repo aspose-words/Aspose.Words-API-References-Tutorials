@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Paso 3: Configurar la carpeta de fuentes True Type
- Ahora puede especificar la carpeta de fuentes de tipo verdadero para usar al renderizar creando una instancia de la`FontSettings` clase y usando el`SetFontsFolder()` método para establecer la carpeta de fuentes. Puede especificar una carpeta personalizada que contenga sus fuentes True Type. El segundo parámetro a`SetFontsFolder()` indica si también desea buscar subcarpetas de la carpeta especificada.
+Ahora puede especificar la carpeta de fuentes de tipo verdadero para usar al renderizar creando una instancia de la`FontSettings` clase y usando el`SetFontsFolder()` método para establecer la carpeta de fuentes. Puede especificar una carpeta personalizada que contenga sus fuentes True Type. El segundo parámetro a`SetFontsFolder()` indica si también desea buscar subcarpetas de la carpeta especificada.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -59,3 +59,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 
 ## Conclusión
 En este tutorial, aprendimos cómo configurar la carpeta de fuentes True Type al representar un documento con Aspose.Words para .NET. Al seguir esta guía paso a paso, puede especificar fácilmente una carpeta personalizada que contenga fuentes True Type para usar al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para trabajar con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar las fuentes utilizadas al renderizar sus documentos según sus necesidades específicas.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo configurar la carpeta de fuentes TrueType en Aspose.Words?
+
+ R: Para configurar la carpeta de fuentes TrueType en Aspose.Words, puede usar el`SetTrueTypeFontsFolder` metodo de la`Fonts` clase especificando la ubicación de la carpeta que contiene las fuentes TrueType.
+
+#### P: ¿Qué tipos de fuentes se consideran fuentes TrueType?
+
+R: Las fuentes TrueType son un formato de fuente popular. A menudo se usan en documentos de Word y tienen una extensión de archivo .ttf o .ttc.
+
+#### P: ¿Puedo especificar varias carpetas de fuentes TrueType en Aspose.Words?
+
+R: Sí, puede especificar varias carpetas de fuentes TrueType en Aspose.Words usando el`SetTrueTypeFontsFolder` metodo de la`Fonts` clase con una lista de ubicaciones de carpetas.
+
+#### P: ¿Cómo puedo verificar la carpeta de fuentes TrueType configurada en Aspose.Words?
+
+ R: Para verificar la carpeta de fuentes TrueType configurada en Aspose.Words, puede usar el`GetTrueTypeFontsFolder` metodo de la`Fonts` class para obtener la ubicación de la carpeta TrueType Fonts configurada.
+
+#### P: ¿Por qué es importante configurar la carpeta de fuentes TrueType en Aspose.Words?
+
+R: Configurar la carpeta de fuentes TrueType en Aspose.Words es importante porque ayuda a Aspose.Words a localizar las fuentes necesarias al procesar documentos de Word. Esto garantiza la coherencia en el formato y la apariencia de los documentos, incluso en diferentes sistemas.

@@ -59,3 +59,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 
 ## Conclusion
 In this tutorial, we learned how to set the true type fonts folder when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily specify a custom folder containing True Type fonts to use when rendering your documents. Aspose.Words offers a powerful and flexible API for working with fonts in your documents. With this knowledge, you can control and customize the fonts used when rendering your documents to your specific needs.
+
+### FAQ's
+
+#### Q: How can I configure the TrueType fonts folder in Aspose.Words?
+
+A: To configure the TrueType fonts folder in Aspose.Words, you can use the `SetTrueTypeFontsFolder` method of the `Fonts` class specifying the location of the folder containing the TrueType fonts.
+
+#### Q: What types of fonts are considered TrueType fonts?
+
+A: TrueType fonts are a popular font format. They are often used in Word documents and have a .ttf or .ttc file extension.
+
+#### Q: Can I specify multiple TrueType font folders in Aspose.Words?
+
+A: Yes, you can specify multiple TrueType font folders in Aspose.Words using the `SetTrueTypeFontsFolder` method of the `Fonts` class with a list of folder locations.
+
+#### Q: How can I check the TrueType fonts folder configured in Aspose.Words?
+
+A: To check the configured TrueType Fonts folder in Aspose.Words, you can use the `GetTrueTypeFontsFolder` method of the `Fonts` class to get the location of the configured TrueType Fonts folder.
+
+#### Q: Why is it important to configure the TrueType fonts folder in Aspose.Words?
+
+A: Setting up the TrueType fonts folder in Aspose.Words is important because it helps Aspose.Words locate the fonts needed when processing Word documents. This ensures consistency in document formatting and appearance, even across different systems.

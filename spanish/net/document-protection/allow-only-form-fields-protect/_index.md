@@ -34,7 +34,7 @@ En este ejemplo, creamos un nuevo documento en blanco y luego usamos DocumentBui
 
 ## Paso 3: habilitar la protección de documentos
 
- La protección de documentos solo funciona cuando la protección de documentos está habilitada. Puede habilitar la protección de documentos mediante el`Protect` método de la clase Documento. Así es cómo:
+ La protección de documentos solo funciona cuando la protección de documentos está habilitada. Puede habilitar la protección de documentos utilizando el`Protect` método de la clase Documento. Así es cómo:
 
 ```csharp
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");

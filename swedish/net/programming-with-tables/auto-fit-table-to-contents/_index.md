@@ -21,7 +21,7 @@ För att börja arbeta med tabellen måste vi ladda Word-dokumentet som innehål
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//Ladda Word-dokumentet
+// Ladda Word-dokumentet
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 

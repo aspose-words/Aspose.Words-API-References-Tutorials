@@ -58,3 +58,21 @@ builder.Writeln("1. Nested blockquote");
 
 Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité de citations avec Aspose.Words pour .NET.
 
+
+### FAQ
+
+#### Q : Qu'est-ce qu'une citation dans Markdown ?
+
+R : Une citation dans Markdown est un moyen de mettre en évidence des passages de texte provenant d'autres sources ou de faire référence à des citations célèbres.
+
+#### Q : Comment utiliser les guillemets dans Markdown ?
+
+R : Pour utiliser une citation dans Markdown, placez le texte de la citation entre crochets (`>`). Chaque ligne de la citation doit commencer par un chevron.
+
+#### Q : Les guillemets Markdown prennent-ils en charge les attributs ?
+
+R : Les citations Markdown ne prennent pas en charge des attributs spécifiques. Ils sont simplement mis en évidence par la mise en forme du texte cité.
+
+#### Q : Pouvez-vous intégrer des guillemets dans Markdown ?
+
+R : Oui, il est possible d'imbriquer les guillemets dans Markdown en ajoutant un niveau supplémentaire de crochets angulaires (`>`).

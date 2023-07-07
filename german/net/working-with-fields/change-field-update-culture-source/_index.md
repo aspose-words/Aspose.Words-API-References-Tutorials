@@ -82,3 +82,21 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 ## Abschluss
 Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET die Quelle der Feldaktualisierungskultur in Word-Dokumenten ändern. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie jetzt die Kultur steuern, die für die Datumsformatierung bei Feldaktualisierungen und Seriendruckvorgängen verwendet wird. Passen Sie die Kulturquelle entsprechend Ihren Anforderungen an, um ein genaues und konsistentes Datum sicherzustellen.
+
+### FAQs
+
+#### F: Wie kann ich die Quelle der Feldaktualisierungskultur in Aspose.Words für .NET ändern?
+
+ A: Um die Quelle der Feldaktualisierungskultur in Aspose.Words für .NET zu ändern, können Sie die verwenden`Document.FieldOptions.CultureSource` Eigenschaft und setzen Sie ihren Wert auf`FieldCultureSource.FieldCode` oder`FieldCultureSource.CurrentThread` . Sie können zum Beispiel verwenden`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` um die im Feldcode definierte Kultur zu verwenden.
+
+#### F: Wie kann ich eine bestimmte Kultur zum Aktualisieren von Feldern in Aspose.Words für .NET angeben?
+
+ A: Um eine bestimmte Kultur für die Aktualisierung von Feldern in Aspose.Words für .NET anzugeben, können Sie die verwenden`Document.FieldOptions.FieldUpdateCultureInfo` Eigenschaft und legen Sie die fest`CultureInfo` Objekt, das der gewünschten Kultur entspricht. Sie können zum Beispiel verwenden`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` um die französische (französische) Kultur zu spezifizieren.
+
+#### F: Ist es möglich, die automatische Feldaktualisierung in Aspose.Words für .NET zu deaktivieren?
+
+ A: Ja, es ist möglich, die automatische Feldaktualisierung in Aspose.Words für .NET zu deaktivieren. Du kannst den ... benutzen`Document.FieldOptions.UpdateFields` Eigenschaft und setzen Sie sie auf`false` um zu verhindern, dass Felder automatisch aktualisiert werden. Dadurch können Sie die Aktualisierung von Feldern nach Bedarf manuell steuern.
+
+#### F: Wie kann ich Dokumentfelder in Aspose.Words für .NET manuell aktualisieren?
+
+ A: Um Felder in einem Dokument in Aspose.Words für .NET manuell zu aktualisieren, können Sie die verwenden`Field.Update` Methode für jedes Feld einzeln festlegen. Sie können zum Beispiel verwenden`field.Update()` um das spezifische Feld zu aktualisieren.

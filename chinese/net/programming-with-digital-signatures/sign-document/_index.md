@@ -10,7 +10,7 @@ url: /zh/net/programming-with-digital-signatures/sign-document/
 
 在本教程中，我们将引导您完成使用 Aspose.Words for .NET 的文档签名功能的步骤。此功能允许您使用证书对 Word 文档进行数字签名。请按照以下步骤操作：
 
-## 第 1 步：加载证书
+## 第1步：加载证书
 
 首先使用 CertificateHolder 类加载签名证书：
 
@@ -30,7 +30,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document
 	certHolder);
 ```
 
-请务必为源文档和签名文档指定正确的路径。
+请务必指定源文档和签名文档的正确路径。
 
 ### 使用 Aspose.Words for .NET 签署文档的示例源代码
 
@@ -47,7 +47,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document
 
 ```
 
-按照这些步骤，您可以使用 Aspose.Words for .NET 轻松地为 Word 文档签名。
+通过执行以下步骤，您可以轻松使用 Aspose.Words for .NET 签署 Word 文档。
 
 
 

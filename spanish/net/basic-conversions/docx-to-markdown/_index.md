@@ -1,6 +1,6 @@
 ---
-title: Docx a descuento
-linktitle: Docx a descuento
+title: Convertir archivo Docx a Markdown
+linktitle: Convertir archivo Docx a Markdown
 second_title: Referencia de API de Aspose.Words para .NET
 description: Aprenda a convertir documentos de Word de formato Docx a Markdown usando Aspose.Words para .NET. Tutorial paso a paso con código fuente de ejemplo.
 type: docs
@@ -58,3 +58,21 @@ doc.Save(dataDir + "BaseConversions.DocxToMarkdown.md");
 ```
 
 Siéntase libre de usar este código en sus propios proyectos y modifíquelo de acuerdo con sus requisitos específicos.
+
+### preguntas frecuentes
+
+#### ¿Cómo convertir un archivo DOCX a Markdown?
+
+Para convertir un archivo DOCX a Markdown, puede usar diferentes herramientas de software o bibliotecas que brindan esta funcionalidad. Aspose.Words para .NET es una opción confiable para esta conversión. Puede usar la API de la biblioteca para cargar el archivo DOCX y guardarlo en formato Markdown.
+
+#### ¿Cómo conservo el formato al convertir?
+
+Si el formato se conserva durante la conversión depende de la herramienta o biblioteca que esté utilizando. Aspose.Words para .NET ofrece funciones avanzadas para conservar el formato, los estilos y los elementos del archivo DOCX en el documento Markdown convertido. Es importante elegir una herramienta que pueda manejar la complejidad de su documento y conservar el formato que desea.
+
+#### ¿Cuáles son las limitaciones del proceso de conversión?
+
+Las limitaciones del proceso de conversión dependen de la herramienta o biblioteca específica que esté utilizando. Algunas herramientas pueden tener restricciones relacionadas con formatos complejos, tablas o imágenes incrustadas en el archivo DOCX. Es importante comprender completamente las características y limitaciones de la herramienta elegida para tomar decisiones informadas al realizar la conversión.
+
+#### ¿Es Aspose una herramienta confiable para la conversión de DOCX a Markdown?
+
+Sí, Aspose.Words para .NET es una herramienta confiable para la conversión de DOCX a Markdown. Es ampliamente utilizado en la industria por su calidad, precisión y funciones avanzadas. La herramienta ofrece documentación completa, actualizaciones periódicas y soporte técnico dedicado, lo que la convierte en una opción recomendada para las tareas de conversión de documentos.

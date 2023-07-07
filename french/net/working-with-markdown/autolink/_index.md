@@ -45,7 +45,7 @@ Enfin, nous pouvons enregistrer le document dans le format souhaité.
 // Utilisez un générateur de document pour ajouter du contenu au document.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Insérer un lien hypertexte.
+// Insérer un lien hypertexte.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", faux);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -53,3 +53,17 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité "Autolink" avec Aspose.Words pour .NET.
 
+
+### FAQ
+
+#### Q : Comment puis-je créer un lien automatique vers une adresse URL dans Aspose.Words ?
+
+ R : Pour créer un lien automatique vers une adresse URL dans Aspose.Words, vous pouvez utiliser le`<a>` étiquette avec le`href` attribut contenant l'adresse URL. Par exemple, vous pouvez utiliser`<a href="https://www.aspose.com">https://www.aspose.com</a>` pour créer automatiquement un lien vers le "https: //www.aspose.com".
+
+#### Q : Est-il possible de personnaliser le texte d'affichage d'un lien automatique dans Aspose.Words ?
+
+ R : Oui, vous pouvez personnaliser le texte d'affichage d'un lien automatique dans Aspose.Words. Au lieu d'utiliser l'adresse URL comme texte d'affichage, vous pouvez utiliser n'importe quel autre texte en remplaçant le contenu entre`<a>` Mots clés. Par exemple, vous pouvez utiliser`<a href="https://www.aspose.com">Click here</a>` pour afficher le texte "Cliquez ici" comme lien automatique.
+
+#### Q : Comment puis-je ajouter des attributs supplémentaires à un lien automatique dans Aspose.Words ?
+
+ : Pour ajouter des attributs supplémentaires à un lien automatique dans Aspose.Words, vous pouvez utiliser des attributs HTML supplémentaires dans le`<a>` étiqueter. Par exemple, vous pouvez utiliser`<a href="https://www.aspose.com" target="_blank">Link</a>` pour ouvrir le lien dans une nouvelle fenêtre ou un nouvel onglet à l'aide de la` attribute target="_blank"`.

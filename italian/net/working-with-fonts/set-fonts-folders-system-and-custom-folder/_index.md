@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Passaggio 3: imposta le cartelle di sistema e dei caratteri personalizzati
- Ora puoi impostare le cartelle dei font di sistema e una cartella personalizzata utilizzando il file`FontSettings` classe e il`SetFontsSources()` metodo. Innanzitutto, è necessario recuperare l'elenco delle fonti di font dipendenti dall'ambiente utilizzando`GetFontsSources()` e memorizzarlo in un elenco. Quindi puoi creare una nuova istanza di`FolderFontSource`specificando il percorso della cartella personalizzata contenente i font. Aggiungi questa istanza all'elenco delle fonti di font esistenti. Infine, usa`SetFontsSources()` per aggiornare le fonti dei caratteri con il nuovo elenco.
+ Ora puoi impostare le cartelle dei font di sistema e una cartella personalizzata utilizzando il file`FontSettings` classe e il`SetFontsSources()` metodo. Innanzitutto, è necessario recuperare l'elenco delle fonti di font dipendenti dall'ambiente utilizzando`GetFontsSources()` e memorizzarlo in un elenco. Quindi puoi creare una nuova istanza di`FolderFontSource` specificando il percorso della cartella personalizzata contenente i font. Aggiungi questa istanza all'elenco delle fonti di font esistenti. Infine, usa`SetFontsSources()` per aggiornare le fonti dei caratteri con il nuovo elenco.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -55,24 +55,46 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ### Esempio di codice sorgente per il sistema di cartelle di caratteri impostati e la cartella personalizzata utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Percorso della directory dei documenti
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Recupera l'array di fonti di font dipendenti dall'ambiente che vengono cercate per impostazione predefinita.
-	// Ad esempio, questo conterrà un'origine "Windows\Fonts\" su un computer Windows.
-	// Aggiungiamo questo array a un nuovo elenco per rendere molto più semplice l'aggiunta o la rimozione di voci di font.
-	List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-	// Aggiungi una nuova cartella sorgente che istruirà Aspose.Words a cercare i caratteri nella seguente cartella.
-	FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-	// Aggiungi la cartella personalizzata che contiene i nostri font all'elenco delle fonti di font esistenti.
-	fontSources.Add(folderFontSource);
-	FontSourceBase[] updatedFontSources = fontSources.ToArray();
-	fontSettings.SetFontsSources(updatedFontSources);
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Recupera l'array di fonti di font dipendenti dall'ambiente che vengono cercate per impostazione predefinita.
+// Ad esempio, questo conterrà un'origine "Windows\Fonts\" su un computer Windows.
+// Aggiungiamo questo array a un nuovo elenco per rendere molto più semplice l'aggiunta o la rimozione di voci di font.
+List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
+// Aggiungi una nuova cartella sorgente che istruirà Aspose.Words a cercare i caratteri nella seguente cartella.
+FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
+// Aggiungi la cartella personalizzata che contiene i nostri font all'elenco delle fonti di font esistenti.
+fontSources.Add(folderFontSource);
+FontSourceBase[] updatedFontSources = fontSources.ToArray();
+fontSettings.SetFontsSources(updatedFontSources);
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Conclusione
 In questo tutorial, abbiamo imparato come impostare le cartelle dei font di sistema e una cartella personalizzata durante il rendering di un documento utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata, puoi facilmente specificare più cartelle di font, inclusa la cartella di sistema e una cartella personalizzata, da utilizzare durante il rendering dei tuoi documenti. Aspose.Words offre un'API potente e flessibile per lavorare con i caratteri nei tuoi documenti. Con questa conoscenza, puoi controllare e personalizzare le origini dei caratteri utilizzate durante il rendering dei tuoi documenti in base alle tue esigenze specifiche.
+
+### FAQ
+
+#### D: Come posso impostare le cartelle dei font di sistema in Aspose.Words?
+
+A: Per impostare le cartelle dei font di sistema in Aspose.Words, non devi fare nulla. Aspose.Words utilizza automaticamente i caratteri di sistema installati sul sistema operativo.
+
+#### D: Come posso impostare cartelle di font personalizzate in Aspose.Words?
+
+ A: Per impostare le cartelle dei caratteri personalizzati in Aspose.Words, puoi utilizzare il`SetFontsFolders` metodo del`Fonts` class che specifica le posizioni delle cartelle dei caratteri personalizzati.
+
+#### D: Posso specificare più cartelle di caratteri personalizzati in Aspose.Words?
+
+ A: Sì, puoi specificare più cartelle di font personalizzati in Aspose.Words utilizzando il file`SetFontsFolders` metodo del`Fonts` class con un elenco di posizioni delle cartelle.
+
+#### D: Come posso controllare le cartelle dei font definite in Aspose.Words?
+
+ Per controllare le cartelle dei font definite in Aspose.Words, puoi usare il file`GetFolders` metodo del`Fonts` class per ottenere l'elenco delle cartelle dei font configurate.
+
+#### D: I caratteri delle cartelle personalizzate hanno la priorità sui caratteri di sistema in Aspose.Words?
+
+R: Sì, i caratteri delle cartelle personalizzate hanno la priorità sui caratteri di sistema in Aspose.Words. Se un carattere è presente sia nelle cartelle personalizzate che nei caratteri di sistema, Aspose.Words utilizzerà la versione dalla cartella personalizzata.

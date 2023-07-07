@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // Tablonun ilk satırına hızlı ve yazılı erişim.
+     //Tablonun ilk satırına hızlı ve yazılı erişim.
      table.FirstRow?.Remove();
 
      // Tablonun son satırına hızlı ve yazılı erişim.
@@ -79,4 +79,24 @@ foreach (Table table in tables)
 
 Bu, Aspose.Words for .NET ile tablolara yazılı erişim için eksiksiz bir örnek koddur. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları uyguladığınızdan emin olun.
 
----
+### SSS
+
+#### S: Node.js'de yazılı erişim nedir?
+
+C: Node.js'de yazılan erişim, bir XML belgesindeki düğüm özelliklerine ve değerlerine erişmek için belirli düğüm türlerinin kullanılması anlamına gelir. Türlü erişim, genel özellikleri kullanmak yerine, metin düğümleri, öğe düğümleri, öznitelik düğümleri vb. gibi belirli düğüm türlerine erişmek için belirli yöntemler kullanır.
+
+#### S: Yazılı erişim kullanarak düğümlere nasıl erişirim?
+
+ Y: Node.js'de yazılı erişimi kullanarak düğümlere erişmek için, erişmek istediğiniz düğümün türüne bağlı olarak belirli yöntemler kullanabilirsiniz. Örneğin,`getElementsByTagName` belirli bir türdeki tüm düğümlere erişme yöntemi,`getAttribute` bir özniteliğin değerine erişme yöntemi vb.
+
+#### S: Yazılı erişimin türsüz erişime göre avantajları nelerdir?
+
+C: Yazılı erişimin, yazısız erişime göre çeşitli avantajları vardır. İlk olarak, düğümlere erişirken daha iyi özgüllük sağlar ve bir XML belgesindeki düğümlerin manipüle edilmesini ve yönetilmesini kolaylaştırır. Ek olarak, yazılan erişim, düğüm özelliklerine ve değerlerine erişirken yazım hatalarını önleyerek daha iyi güvenlik sağlar.
+
+#### S: Yazılı erişimle ne tür düğümlere erişilebilir?
+
+C: Node.js'deki yazılı erişimle, öğe düğümleri, metin düğümleri, öznitelik düğümleri vb. gibi farklı düğüm türlerine erişebilirsiniz. Her düğüm türünün, özelliklerine ve değerlerine erişmek için kendine özgü yöntemleri ve özellikleri vardır.
+
+#### S: Yazılı erişim sırasında hatalar nasıl işlenir?
+
+ Y: Node.js'de yazılı erişim sırasında hataları işlemek için aşağıdakiler gibi hata işleme mekanizmalarını kullanabilirsiniz:`try...catch` bloklar. Belirli bir düğüme erişirken bir hata oluşursa, hatayı yakalayabilir ve bir hata mesajı görüntülemek veya bir kurtarma eylemi gerçekleştirmek gibi uygun eylemi gerçekleştirebilirsiniz.

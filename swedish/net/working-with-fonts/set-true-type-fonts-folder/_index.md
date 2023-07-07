@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-fonts/set-true-type-fonts-folder/
 ---
 
-den här handledningen går vi igenom steg-för-steg-processen för att ställa in mappen True Type fonts när du renderar ett dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och förse dig med en omfattande guide som hjälper dig att förstå och implementera den här funktionen i dina egna projekt. I slutet av denna handledning kommer du att veta hur du anger en anpassad mapp som innehåller True Type-teckensnitt som ska användas när du renderar dina dokument med Aspose.Words för .NET.
+I den här handledningen går vi igenom steg-för-steg-processen för att ställa in mappen True Type fonts när du renderar ett dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och förse dig med en omfattande guide som hjälper dig att förstå och implementera den här funktionen i dina egna projekt. I slutet av denna handledning kommer du att veta hur du anger en anpassad mapp som innehåller True Type-teckensnitt som ska användas när du renderar dina dokument med Aspose.Words för .NET.
 
 ## Steg 1: Definiera dokumentkatalogen
 Först måste du ställa in sökvägen till din dokumentkatalog. Det här är platsen där du vill spara ditt redigerade renderade dokument. Ersätt "DIN DOKUMENTKATOLOG" med lämplig sökväg.
@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Steg 3: Ställ in True Type Fonts-mappen
- Nu kan du ange mappen med True Type-teckensnitt som ska användas vid rendering genom att skapa en instans av`FontSettings` klass och använda`SetFontsFolder()` metod för att ställa in teckensnittsmappen. Du kan ange en anpassad mapp som innehåller dina True Type-teckensnitt. Den andra parametern till`SetFontsFolder()` anger om du vill söka i undermappar till den angivna mappen också.
+Nu kan du ange mappen med True Type-teckensnitt som ska användas vid rendering genom att skapa en instans av`FontSettings` klass och använda`SetFontsFolder()` metod för att ställa in teckensnittsmappen. Du kan ange en anpassad mapp som innehåller dina True Type-teckensnitt. Den andra parametern till`SetFontsFolder()` anger om du vill söka i undermappar till den angivna mappen också.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -58,4 +58,26 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
 ## Slutsats
-I den här handledningen lärde vi oss hur man ställer in mappen true type fonts när man renderar ett dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden kan du enkelt ange en anpassad mapp som innehåller True Type-teckensnitt som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för att arbeta med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa typsnitten som används när du renderar dina dokument efter dina specifika behov.
+den här handledningen lärde vi oss hur man ställer in mappen true type fonts när man renderar ett dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden kan du enkelt ange en anpassad mapp som innehåller True Type-teckensnitt som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för att arbeta med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa typsnitten som används när du renderar dina dokument efter dina specifika behov.
+
+### FAQ's
+
+#### F: Hur kan jag konfigurera mappen TrueType-teckensnitt i Aspose.Words?
+
+ S: För att konfigurera mappen TrueType-teckensnitt i Aspose.Words kan du använda`SetTrueTypeFontsFolder` metod för`Fonts` klass som anger platsen för mappen som innehåller TrueType-teckensnitten.
+
+#### F: Vilka typer av teckensnitt anses vara TrueType-teckensnitt?
+
+S: TrueType-teckensnitt är ett populärt teckensnittsformat. De används ofta i Word-dokument och har filtillägget .ttf eller .ttc.
+
+#### F: Kan jag ange flera TrueType-fontmappar i Aspose.Words?
+
+S: Ja, du kan ange flera TrueType-fontmappar i Aspose.Words med hjälp av`SetTrueTypeFontsFolder` metod för`Fonts` klass med en lista över mappplatser.
+
+#### F: Hur kan jag kontrollera mappen TrueType-teckensnitt som är konfigurerad i Aspose.Words?
+
+ S: För att kontrollera den konfigurerade TrueType Fonts-mappen i Aspose.Words kan du använda`GetTrueTypeFontsFolder` metod för`Fonts` klass för att få platsen för den konfigurerade TrueType Fonts-mappen.
+
+#### F: Varför är det viktigt att konfigurera mappen TrueType-teckensnitt i Aspose.Words?
+
+S: Det är viktigt att konfigurera mappen TrueType-teckensnitt i Aspose.Words eftersom det hjälper Aspose.Words att hitta de teckensnitt som behövs vid bearbetning av Word-dokument. Detta säkerställer konsekvens i dokumentformatering och utseende, även över olika system.

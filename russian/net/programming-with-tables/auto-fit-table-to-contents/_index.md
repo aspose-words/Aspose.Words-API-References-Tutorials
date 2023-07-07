@@ -21,7 +21,7 @@ url: /ru/net/programming-with-tables/auto-fit-table-to-contents/
 // Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//Загрузите документ Word
+// Загрузите документ Word
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 

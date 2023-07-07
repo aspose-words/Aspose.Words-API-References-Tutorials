@@ -37,7 +37,7 @@ Yorum eklemek için, Document nesnesini, yazar adını, yazarın adının baş h
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-Ardından, yorumu geçerli paragrafa ekleyin:
+Ardından, yorumu mevcut paragrafa ekleyin:
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
@@ -80,3 +80,25 @@ doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine nasıl yorum ekleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak, artık belgelerinize yorum ekleyebilir ve içeriklerini özelleştirebilirsiniz.
 
 Yorumlar, işbirliği yapmak, ek bilgi sağlamak veya bir belge içinde notlar almak için kullanışlıdır. Özel gereksinimlerinizi karşılamak için farklı yazar adları, baş harfler ve yorum içerikleri ile denemeler yapın.
+
+### SSS
+
+#### S: Bir Aspose.Words for .NET belgesine nasıl yorum ekleyebilirim?
+
+C: Bir Aspose.Words for .NET belgesine yorum eklemek için eğitimde belirtilen adımları izlemeniz gerekir.
+
+#### S: Yorum metnini Aspose.Words for .NET'te biçimlendirebilir miyim?
+
+C: Evet, mevcut biçimlendirme özelliklerini kullanarak yorum metnini Aspose.Words for .NET'te biçimlendirebilirsiniz.
+
+#### S: Bir belgede bulunan tüm yorumları nasıl alabilirim?
+
+ C: Bir belgede bulunan tüm yorumları aşağıdakileri kullanarak alabilirsiniz.`Document.Comments` mülk.
+
+#### S: Aspose.Words for .NET'te belirli bir yorumu silebilir miyim?
+
+ C: Evet, Aspose.Words for .NET'te belirli bir yorumu kaldırabilirsiniz.`Comment.Remove` yöntem.
+
+#### S: Aspose.Words for .NET'te mevcut bir yorumun metnini nasıl değiştirebilirim?
+
+ C: Aspose.Words for .NET'te mevcut bir yorumun metnini değiştirmek için şuraya erişebilirsiniz:`Comment.Text` karşılık gelen özellik`Comment` nesne ve metni gerektiği gibi değiştirin.

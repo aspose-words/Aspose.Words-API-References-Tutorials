@@ -23,7 +23,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. Adım: Açılır Form Alanı Ekleme
 
- Ardından, açılır form alanı için seçenekleri belirtin ve bunu kullanarak belgeye ekleyin.`InsertComboBox` yöntemi`DocumentBuilder`nesne. Bu örnekte, "DropDown" adlı üç seçenekli bir açılır form alanı ekliyoruz: "Bir", "İki" ve "Üç":
+ Ardından, açılır form alanı için seçenekleri belirtin ve bunu kullanarak belgeye ekleyin.`InsertComboBox` yöntemi`DocumentBuilder` nesne. Bu örnekte, "DropDown" adlı üç seçenekli bir açılır form alanı ekliyoruz: "Bir", "İki" ve "Üç":
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
@@ -53,3 +53,25 @@ doc.Save("OutputDocument.docx");
 ```
 
 Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimlerinize göre değiştirin.
+
+### SSS
+
+#### S: Aspose.Words'te bir metin tipi form alanını nasıl ekleyebilirim?
+
+ A: Aspose.Words'te bir metin tipi form alanı eklemek için`FormField` sınıflandırın ve ayarlayın`Type` mülkiyet`FormFieldType.Text`. Ad, etiket ve seçenekler gibi diğer özellikleri de özelleştirebilirsiniz.
+
+#### S: Bir belgede onay kutusu tipi bir form alanı oluşturmak mümkün mü?
+
+ C: Evet, bir Aspose.Words belgesinde onay kutusu tipi bir form alanı oluşturmak mümkündür. kullanabilirsiniz`FormField` sınıflandırın ve ayarlayın`Type` mülkiyet`FormFieldType.CheckBox` bir onay kutusu oluşturmak için. Ardından, onay kutusunun özelliklerini gerektiği gibi özelleştirebilirsiniz.
+
+#### S: Bir belgeye açılır tipte bir form alanını nasıl ekleyebilirim?
+
+ C: Bir Aspose.Words belgesine açılır tipte bir form alanı eklemek için`FormField` sınıflandırın ve ayarlayın`Type` mülkiyet`FormFieldType.DropDown` . Daha sonra aşağı açılır seçenekleri kullanarak ayarlayabilirsiniz.`DropDownItems` mülk.
+
+#### S: Aspose.Words'te bir form alanı için varsayılan bir değer belirleyebilir miyim?
+
+C: Evet, Aspose.Words'te bir form alanı için varsayılan bir değer ayarlayabilirsiniz. Kullan`FormField.Result` form alanının başlangıç değerini belirtmek için özellik.
+
+#### S: Aspose.Words'te form alanlarına girilen verileri nasıl alabilirim?
+
+ C: Aspose.Words'te form alanlarına girilen verileri almak için`FormField.Result` kullanıcı tarafından girilen değeri içeren özellik. Belgenizdeki her form alanı için bu özelliğe erişebilirsiniz.

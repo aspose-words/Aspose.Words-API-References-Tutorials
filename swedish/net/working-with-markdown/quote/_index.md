@@ -58,3 +58,21 @@ builder.Writeln("1. Nested blockquote");
 
 Grattis! Du har nu lärt dig hur du använder citeringsfunktionen med Aspose.Words för .NET.
 
+
+### FAQ's
+
+#### F: Vad är ett citat i Markdown?
+
+S: Ett citat i Markdown är ett sätt att markera textstycken från andra källor eller referera till kända citat.
+
+#### F: Hur använder man citattecken i Markdown?
+
+S: För att använda ett citat i Markdown, omge texten i citatet inom vinkelparenteser (`>`). Varje rad i citatet måste börja med en chevron.
+
+#### F: Stöder Markdown-citat attribut?
+
+S: Markdown-citat stöder inte specifika attribut. De markeras helt enkelt av formateringen av den citerade texten.
+
+#### F: Kan du bädda in citat i Markdown?
+
+S: Ja, det är möjligt att kapsla citat i Markdown genom att lägga till en extra nivå av vinkelparenteser (`>`).

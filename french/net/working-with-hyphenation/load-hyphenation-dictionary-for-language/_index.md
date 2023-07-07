@@ -55,3 +55,21 @@ doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 ```
 
 N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.
+
+### FAQ
+
+#### Q : Comment charger un dictionnaire de syllabisation pour une langue spécifique dans Aspose.Words ?
+
+ R : Pour charger un dictionnaire de syllabisation pour une langue spécifique dans Aspose.Words, vous pouvez utiliser le`Hyphenation` classe et la`LoadDictionary()` méthode. Créer une instance de`Hyphenation` classe et appeler le`LoadDictionary()` méthode spécifiant le chemin d'accès au fichier de dictionnaire de syllabisation pour la langue souhaitée. Cela chargera le dictionnaire de syllabisation dans Aspose.Words.
+
+#### Q : Où puis-je trouver des fichiers de dictionnaire de syllabisation pour différentes langues ?
+
+R : Vous pouvez trouver des fichiers de dictionnaire de syllabisation pour différentes langues sur diverses ressources en ligne. Ces fichiers sont généralement au format XML ou TEX. Vous pouvez trouver des dictionnaires de syllabation open source pour différentes langues sur des sites Web dédiés à des projets linguistiques ou à des référentiels de code source.
+
+#### Q : Comment puis-je appliquer le dictionnaire syllabique chargé à un document dans Aspose.Words ?
+
+ R : Pour appliquer le dictionnaire de syllabisation chargé à un document dans Aspose.Words, vous devez parcourir les mots du document et utiliser la`Hyphenate()` méthode de la`Hyphenation` classe pour obtenir la syllabation des mots. Vous pouvez ensuite formater les mots syllabés selon vos besoins, par exemple en ajoutant des tirets entre les syllabes.
+
+#### Q : Quelles langues sont prises en charge pour la syllabation dans Aspose.Words ?
+
+R : Aspose.Words prend en charge la syllabation pour plusieurs langues, dont l'anglais, le français, l'espagnol, l'allemand, l'italien, le néerlandais, le russe, le portugais, le suédois, le norvégien, le danois, le finnois, le polonais, le tchèque et bien d'autres. Consultez la documentation Aspose.Words pour obtenir la liste complète des langues prises en charge pour la syllabation.

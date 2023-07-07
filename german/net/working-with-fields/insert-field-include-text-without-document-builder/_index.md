@@ -1,5 +1,5 @@
 ---
-title: Fügen Sie FieldIncludeText ohne Document Builder ein
+title: Feld einfügen, Text einschließen, ohne Document Builder
 linktitle: Fügen Sie FieldIncludeText ohne Document Builder ein
 second_title: Aspose.Words für .NET API-Referenz
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein FieldIncludeText-Feld in Ihre Word-Dokumente einfügen.
@@ -80,3 +80,21 @@ doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 In diesem Beispiel haben wir ein neues Dokument erstellt, einen Absatz initialisiert, ein FieldIncludeTexten eingefügt, das den Namen des Lesezeichens und den Namen der Quelldatei angibt, und das Dokument unter einem angegebenen Dateinamen gespeichert.
 
 Damit ist unser Leitfaden zur Verwendung der Funktion „Einen FieldIncludeText einfügen“ mit Aspose.Words für .NET abgeschlossen.
+
+### FAQs
+
+#### F: Wie kann ich die Quelldatei für das Texteinschlussfeld in Aspose.Words für .NET angeben?
+
+ A: Um die Quelldatei für das Texteinschlussfeld in Aspose.Words für .NET anzugeben, können Sie die verwenden`FieldIncludeText.SourceFullName` -Eigenschaft, um den vollständigen Pfad der Quelldatei festzulegen. Stellen Sie sicher, dass auf die Quelldatei zugegriffen werden kann und sie den Inhalt enthält, den Sie in das Texteinschlussfeld einfügen möchten.
+
+#### F: Kann ich mit Aspose.Words für .NET Text aus einem Makro in das Texteinschlussfeld einfügen?
+
+ A: Ja, Sie können mit Aspose.Words für .NET Text aus einem Makro in das Texteinschlussfeld einfügen. Du kannst den ... benutzen`FieldIncludeText.IncludeText` -Eigenschaft, um den Namen des Makros anzugeben, dessen Inhalt in das Feld aufgenommen werden soll.
+
+#### F: Hat das Einfügen eines Text-Include-Felds ohne den Document Builder Auswirkungen auf die Word-Dokumentstruktur mit Aspose.Words für .NET?
+
+A: Das Einfügen eines Text-Include-Felds ohne den Document Builder hat keinen direkten Einfluss auf die Struktur des Word-Dokuments. Allerdings wird dem Dokumentinhalt ein neues Feldelement hinzugefügt. Sie können die Dokumentstruktur bearbeiten, indem Sie die vorhandenen Elemente entsprechend Ihren Anforderungen hinzufügen, löschen oder ändern.
+
+#### F: Kann ich das Erscheinungsbild des Texteinschlussfelds in einem Word-Dokument mit Aspose.Words für .NET anpassen?
+
+A: Das Texteinschlussfeld passt sein Erscheinungsbild in einem Word-Dokument nicht direkt an. Sie können den enthaltenen Text jedoch mithilfe der Absatzeigenschaften, Schriftarteigenschaften und anderer Formatierungsobjekte formatieren, die in Aspose.Words für .NET verfügbar sind.

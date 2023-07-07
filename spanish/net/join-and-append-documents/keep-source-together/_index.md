@@ -90,4 +90,4 @@ Aquí está el código fuente completo para la función "Mantener la fuente unid
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-¡Eso es todo! Ha implementado con éxito la característica Mantener la fuente unida usando Aspose.Words para .NET. El documento final contendrá el contenido fusionado con los párrafos en el documento fuente mantenidos juntos.
+¡Eso es todo! Ha implementado con éxito la función Mantener la fuente unida utilizando Aspose.Words para .NET. El documento final contendrá el contenido fusionado con los párrafos en el documento fuente mantenidos juntos.

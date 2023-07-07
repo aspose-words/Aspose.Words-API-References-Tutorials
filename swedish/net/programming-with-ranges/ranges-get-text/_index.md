@@ -50,7 +50,7 @@ I det här exemplet använder vi metoden WriteLine i klassen Console för att vi
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Ladda Word-dokumentet
+// Ladda Word-dokumentet
 Document doc = new Document(dataDir + "Document.docx");
 
 // Extrahera texten från dokumentet
@@ -62,4 +62,4 @@ Console.WriteLine(text);
 
 ## Slutsats
 
-den här guiden har vi täckt hur man använder Aspose.Words för .NET för att extrahera text från ett Word-dokument med den medföljande C#-källkoden. Genom att följa de angivna stegen kan du enkelt extrahera text från specifika områden i dina Word-dokument i ditt C#-program. Aspose.Words erbjuder enorm flexibilitet och kraft för att arbeta med dokumentinnehåll, så att du kan bearbeta och använda text enligt dina specifika behov.
+I den här guiden har vi täckt hur man använder Aspose.Words för .NET för att extrahera text från ett Word-dokument med den medföljande C#-källkoden. Genom att följa de angivna stegen kan du enkelt extrahera text från specifika områden i dina Word-dokument i ditt C#-program. Aspose.Words erbjuder enorm flexibilitet och kraft för att arbeta med dokumentinnehåll, så att du kan bearbeta och använda text enligt dina specifika behov.

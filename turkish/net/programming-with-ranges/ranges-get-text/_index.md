@@ -50,7 +50,7 @@ Bu örnekte, çıkarılan metni konsolda görüntülemek için Console sınıfı
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Word belgesini yükleyin
+// Word belgesini yükleyin
 Document doc = new Document(dataDir + "Document.docx");
 
 // Metni belgeden ayıklayın

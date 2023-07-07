@@ -98,3 +98,31 @@ That's all ! You have successfully handled rendering warnings when converting a 
         
 ```
 
+### Frequently Asked Questions
+
+#### Q: What is the functionality of PDF rendering warnings with Aspose.Words for .NET?
+The PDF Rendering Warnings feature with Aspose.Words for .NET helps manage warnings generated when converting a document to PDF. It provides a way to detect and address rendering warnings to ensure the quality and integrity of the converted document.
+
+#### Q: How can I use this feature with Aspose.Words for .NET?
+To use this feature with Aspose.Words for .NET, follow these steps:
+
+Set the document directory by specifying the directory path where your documents are located.
+
+Load the document to be processed using the `Document` method and specifying the file path.
+
+Configure save to PDF options by creating an instance of the `PdfSaveOptions` class. Use the `MetafileRenderingOptions` class to specify how metafiles are rendered, and set `MetafileRenderingOptions.RenderingMode` to `MetafileRenderingMode.VectorWithFallback`.
+
+Use the `HandleDocumentWarnings` class to handle rendering warnings. Set `doc.WarningCallback` to an instance of this class.
+
+Use the `Save` method to save the document in PDF format specifying the save options.
+
+You can then handle render warnings using the `HandleDocumentWarnings` class. For example, you can display the description of each warning using a loop.
+
+#### Q: How do I know if there were any rendering warnings when converting the document to PDF?
+You can use the `HandleDocumentWarnings` class to retrieve rendering warnings generated when saving the document. This class contains a `mWarnings` list which stores information about warnings. You can browse this list and access each warning's properties, such as description, to take appropriate action.
+
+#### Q: What kind of rendering warnings can be generated when converting to PDF?
+Rendering warnings when converting to PDF can include warnings related to layout, missing fonts, unsupported images, compatibility issues, etc. The specific warnings will depend on the content of the source document and the conversion options used.
+
+#### Q: Is it possible to handle rendering warnings in a custom way?
+Yes, you can customize rendering warning handling by customizing the `HandleDocumentWarnings` class. You can add additional functionality to manage warnings specific to your application, such as logging warnings, generating reports, sending alerts, and more.

@@ -39,3 +39,20 @@ builder.InsertHorizontalRule();
 Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die horizontale Regelfunktion mit Aspose.Words für .NET verwenden.
 
 
+### FAQs
+
+#### F: Wie erstelle ich in Markdown ein horizontales Lineal?
+
+A: Um in Markdown ein horizontales Lineal zu erstellen, können Sie eines der folgenden Symbole in einer leeren Zeile verwenden: drei Sternchen (\***), drei Bindestriche (\---) oder drei Unterstriche (\___).
+
+#### F: Kann ich das Erscheinungsbild eines horizontalen Lineals in Markdown anpassen?
+
+A: Im Standard-Markdown gibt es keine Möglichkeit, das Erscheinungsbild horizontaler Lineale anzupassen. Einige erweiterte Markdown-Editoren und -Erweiterungen bieten jedoch zusätzliche Anpassungsfunktionen.
+
+#### F: Werden horizontale Lineale von allen Markdown-Editoren unterstützt?
+
+A: Ja, die meisten gängigen Markdown-Editoren unterstützen horizontale Lineale. Es ist jedoch immer am besten, die Dokumentation Ihres jeweiligen Anbieters zu überprüfen, um sicherzustellen, dass dieser unterstützt wird.
+
+#### F: Welche anderen Elemente kann ich in Markdown erstellen?
+
+A: Zusätzlich zu horizontalen Linealen können Sie in Markdown Titel, Absätze, Listen, Links, Bilder, Tabellen und mehr erstellen.

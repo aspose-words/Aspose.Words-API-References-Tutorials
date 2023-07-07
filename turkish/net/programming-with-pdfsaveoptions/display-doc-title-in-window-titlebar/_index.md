@@ -58,3 +58,25 @@ Aspose.Words for .NET ile bir PDF belgesinde belge başlığını pencere başl�
 ```
 Bu adımları izleyerek, Aspose.Words for .NET ile PDF'ye dönüştürürken belge başlığını pencere başlık çubuğunda kolayca görüntüleyebilirsiniz.
 
+### Sıkça Sorulan Sorular
+
+#### S: Aspose.Words for .NET ile "Belge başlığını pencere başlık çubuğunda göster" özelliği nedir?
+Aspose.Words for .NET ile "Belge başlığını pencere başlık çubuğunda göster" özelliği, oluşturulan PDF belgesini açtığınızda belge başlığını pencere başlık çubuğunda görüntülemenizi sağlar. Bu, okuma ortamınızda PDF belgelerini tanımlamayı ve ayırt etmeyi kolaylaştırır.
+
+#### S: Bu özelliği Aspose.Words for .NET ile nasıl kullanabilirim?
+Bu özelliği Aspose.Words for .NET ile kullanmak için şu adımları izleyin:
+
+ kullanarak belgeyi yükleyin.`Document` yöntemi ve PDF'ye dönüştürülecek dosyanın yolunu belirleme.
+
+ örneğini oluşturarak PDF kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve ayar`DisplayDocTitle` mülkiyet`true`. Bu, PDF'ye dönüştürürken belge başlığının pencere başlık çubuğunda görüntülenmesini sağlar.
+
+ Kullan`Save` dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemi.
+
+#### S: Bu özellik belgenin içeriğini değiştiriyor mu?
+Hayır, bu özellik belgenin içeriğini değiştirmez. Yalnızca PDF belgesi olarak açıldığında belge başlığının pencere başlık çubuğunda görüntülenmesini etkiler. Belgenin içeriği değişmeden kalır.
+
+#### S: Pencerenin başlık çubuğunda görüntülenen belgenin başlığını özelleştirmek mümkün müdür?
+ Evet, pencere başlık çubuğunda görüntülenen belge başlığını değiştirerek özelleştirebilirsiniz.`Document.Title` PDF'ye dönüştürmeden önce belgenin özelliği. Bir dize kullanarak istediğiniz başlığı ayarlayabilirsiniz. Aramadan önce başlığı ayarladığınızdan emin olun.`Save` PDF'ye dönüştürme yöntemi.
+
+#### S: Aspose.Words belge dönüştürme için başka hangi çıktı biçimlerini destekliyor?
+Aspose.Words for .NET, belge dönüştürme için PDF, XPS, HTML, EPUB, MOBI, görüntü (JPEG, PNG, BMP, TIFF, GIF) ve çok daha fazlası gibi birçok çıktı biçimini destekler. hala diğerleri. Özel ihtiyaçlarınıza göre uygun çıktı biçimini seçebilirsiniz.

@@ -49,18 +49,40 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ### Exemple de code source pour Set Fonts Folders Multiple Folders utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Chemin d'accès à votre répertoire de documents
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Notez que ce paramètre remplacera toutes les sources de polices par défaut qui sont recherchées par défaut. Désormais, seuls ces dossiers seront recherchés
-	// polices lors du rendu ou de l'incorporation de polices. Pour ajouter une source de police supplémentaire tout en conservant les sources de police système, utilisez à la fois FontSettings.GetFontSources et
-	// FontSettings.SetFontSources à la place.
-	fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Notez que ce paramètre remplacera toutes les sources de polices par défaut qui sont recherchées par défaut. Désormais, seuls ces dossiers seront recherchés
+// polices lors du rendu ou de l'incorporation de polices. Pour ajouter une source de police supplémentaire tout en conservant les sources de police système, utilisez à la fois FontSettings.GetFontSources et
+// FontSettings.SetFontSources à la place.
+fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ```
 
 ## Conclusion
 Dans ce didacticiel, nous avons appris à définir plusieurs dossiers de polices lors du rendu d'un document à l'aide de Aspose.Words pour .NET. En suivant ce guide étape par étape, vous pouvez facilement spécifier plusieurs dossiers de polices à utiliser lors du rendu de vos documents. Aspose.Words offre une API puissante et flexible pour travailler avec les polices dans vos documents. Grâce à ces connaissances, vous pouvez contrôler et personnaliser les sources de polices utilisées lors du rendu de vos documents selon vos besoins spécifiques.
+
+### FAQ
+
+#### Q : Comment puis-je définir plusieurs dossiers de polices dans Aspose.Words ?
+
+ R : Pour définir plusieurs dossiers de polices dans Aspose.Words, vous pouvez utiliser le`SetFontsFolders` méthode de la`Fonts` classe fournissant une liste d'emplacements de dossiers de polices personnalisés.
+
+#### Q : La définition de plusieurs dossiers de polices affecte-t-elle tous les documents traités avec Aspose.Words ?
+
+R : Oui, la définition de plusieurs dossiers de polices affecte tous les documents traités avec Aspose.Words. Une fois que vous avez défini les dossiers de polices, Aspose.Words utilisera ces emplacements pour rechercher des polices dans tous les documents.
+
+#### Q : Combien de dossiers de polices puis-je définir dans Aspose.Words ?
+
+R : Vous pouvez définir autant de dossiers de polices que nécessaire dans Aspose.Words. Il n'y a pas de limite spécifique au nombre de dossiers de polices que vous pouvez définir.
+
+#### Q : Comment puis-je vérifier les dossiers de polices définis dans Aspose.Words ?
+
+ R : Pour vérifier les dossiers de polices définis dans Aspose.Words, vous pouvez utiliser le`GetFolders` méthode de la`Fonts` class pour obtenir les emplacements des dossiers de polices configurés.
+
+#### Q : Les dossiers de polices doivent-ils contenir des polices spécifiques ?
+
+R : Oui, les dossiers de polices doivent contenir les polices que vous souhaitez utiliser dans vos documents Word. Aspose.Words recherchera les polices dans les dossiers spécifiés lors du traitement des documents.

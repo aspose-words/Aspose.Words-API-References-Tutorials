@@ -8,9 +8,9 @@ weight: 10
 url: /zh/net/document-formatting/get-paragraph-style-separator/
 ---
 
-在本教程中，我们将向您介绍如何在 Aspose.Words for .NET 中使用“获取段落样式分隔符”功能。按照以下步骤了解源代码并应用更改。
+在本教程中，我们将引导您了解如何通过 Aspose.Words for .NET 使用“获取段落样式分隔符”功能。请按照以下步骤了解源代码并应用更改。
 
-## 第 1 步：装入文档
+## 第 1 步：加载文档
 
 首先，指定文档的目录并将文档加载到 Document 对象中。就是这样：
 
@@ -22,7 +22,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## 第 2 步：查找段落样式分隔符
 
-我们现在将遍历文档中的所有段落并检查段落是否是样式分隔符。就是这样：
+我们现在将循环遍历文档中的所有段落并检查段落是否是样式分隔符。就是这样：
 
 ```csharp
 foreach(Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -52,5 +52,5 @@ foreach(Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
         
 ```
 
-使用此代码，您将能够使用 Aspose.Words for .NET 在文档中找到段落样式分隔符。
+通过此代码，您将能够使用 Aspose.Words for .NET 在文档中查找段落样式分隔符。
 

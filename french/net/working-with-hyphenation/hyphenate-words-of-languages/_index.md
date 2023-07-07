@@ -34,7 +34,7 @@ Assurez-vous d'avoir les fichiers de dictionnaire appropriés dans votre répert
 
 ## Étape 3 : Traitement des mots par césure
 
- Vous pouvez désormais utiliser les fonctions de césure pour traiter des mots dans différentes langues. Vous pouvez utiliser différentes méthodes de`Document` ou`DocumentBuilder`en fonction de vos besoins spécifiques.
+ Vous pouvez désormais utiliser les fonctions de césure pour traiter des mots dans différentes langues. Vous pouvez utiliser différentes méthodes de`Document` ou`DocumentBuilder` en fonction de vos besoins spécifiques.
 
 ```csharp
 // Exemple : Utilisation de la méthode Hyphenate de DocumentBuilder
@@ -66,3 +66,17 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
 N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.
+
+### FAQ
+
+#### Q : Comment puis-je syllabiser un mot dans une langue spécifique avec Aspose.Words ?
+
+ R : Pour syllabiser un mot dans une langue spécifique avec Aspose.Words, vous pouvez utiliser le`Hyphenation` classe et la`Hyphenate()` méthode. Créer une instance de`Hyphenation` classe en spécifiant la langue souhaitée, puis appelez la`Hyphenate()` méthode passant le mot à syllabiser en argument. Cela vous donnera les syllabes du mot dans la langue spécifiée.
+
+#### Q : Quels codes de langue dois-je utiliser pour spécifier la langue de syllabation dans Aspose.Words ?
+
+R : Pour spécifier la langue de syllabation dans Aspose.Words, vous devez utiliser les codes de langue appropriés. Par exemple, vous pouvez utiliser "en" pour l'anglais, "fr" pour le français, "es" pour l'espagnol, "de" pour l'allemand, etc. Consultez la documentation Aspose.Words pour une liste complète des codes de langue pris en charge.
+
+#### Q : La syllabisation fonctionne-t-elle pour toutes les langues dans Aspose.Words ?
+
+R : La syllabisation dans Aspose.Words dépend des règles de syllabisation spécifiques à la langue. Bien qu'Aspose.Words prenne en charge un large éventail de langues, certaines langues peuvent ne pas être prises en charge ou la syllabation peut ne pas être disponible pour elles. Consultez la documentation Aspose.Words pour savoir quelles langues sont prises en charge pour la syllabisation.

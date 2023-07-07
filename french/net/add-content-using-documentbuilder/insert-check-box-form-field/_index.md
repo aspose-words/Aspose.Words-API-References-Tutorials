@@ -30,7 +30,7 @@ builder.InsertCheckBox("CheckBox", true, true, 0);
 ```
 
 ## Étape 3 : Enregistrer le document
-Après avoir inséré le champ de formulaire de case à cocher, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
+Après avoir inséré le champ de formulaire de case à cocher, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx");

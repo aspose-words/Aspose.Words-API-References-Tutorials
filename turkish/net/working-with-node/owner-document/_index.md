@@ -83,9 +83,28 @@ para.ParagraphFormat.StyleName = "Heading 1";
 // Şimdi paragrafı ilk bölümün ana metnine ekleyin.
 doc.FirstSection.Body.AppendChild(para);
 
-//Paragraf düğümü artık Gövde düğümünün alt öğesidir.
+// Paragraf düğümü artık Gövde düğümünün alt öğesidir.
 Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
+### SSS
 
+#### S: Node.js'de tescilli belge nedir?
 
+Y: Node.js'deki bir sahip belgesi, belirli bir düğümün ait olduğu XML belgesidir. Düğümü içeren XML belgesi örneğini temsil eder.
+
+#### S: Bir düğümün sahiplik belgesi nasıl alınır?
+
+ C: Node.js'de bir düğümün sahiplik belgesini almak için`ownerDocument` düğümün özelliği. Bu özellik, düğümün sahibi olan XML belgesini döndürür.
+
+#### S: Özel belge ne için kullanılır?
+
+C: Sahip belgesi, bir XML belgesindeki bir düğümün genel bağlamını temsil etmek için kullanılır. Belgedeki diğer düğümlere erişim sağlar ve üzerlerinde işlem yapılmasına izin verir.
+
+#### S: Bir düğümün sahip belgesini değiştirebilir miyiz?
+
+C: Çoğu durumda, bir düğümün belge sahibi, düğüm oluşturulduğunda belirlenir ve doğrudan değiştirilemez. Sahip belgesi salt okunur bir özelliktir.
+
+#### S: Bir sahip belgesinin düğümlerine nasıl erişilir?
+
+Y: Özel bir belgedeki düğümlere erişmek için, Node.js ortamınızda kullanılan XML API tarafından sağlanan yöntemleri ve özellikleri kullanabilirsiniz. Örneğin, gibi yöntemleri kullanabilirsiniz.`getElementsByTagName` veya`querySelector` belgedeki belirli düğümleri seçmek için.

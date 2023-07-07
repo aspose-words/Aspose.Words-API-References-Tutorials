@@ -50,7 +50,7 @@ Bu örnekte, dönüştürülen belgeyi belirtilen kaydetme seçeneklerini kullan
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Word belgesini yükleyin
+// Word belgesini yükleyin
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
 // "Hedef makinedeki yazı tiplerini kullan" özelliğiyle yedekleme seçeneklerini yapılandırın

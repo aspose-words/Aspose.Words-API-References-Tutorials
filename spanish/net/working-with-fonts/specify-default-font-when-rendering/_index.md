@@ -2,7 +2,7 @@
 title: Especificar fuente predeterminada al renderizar
 linktitle: Especificar fuente predeterminada al renderizar
 second_title: Referencia de API de Aspose.Words para .NET
-description: Guía paso a paso para especificar la fuente predeterminada al renderizar un documento usando Aspose.Words para .NET.
+description: Guía paso a paso para especificar la fuente predeterminada al representar un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/specify-default-font-when-rendering/
@@ -57,3 +57,25 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 
 ## Conclusión
 En este tutorial, aprendimos a especificar la fuente predeterminada al representar un documento con Aspose.Words para .NET. Al seguir esta guía paso a paso, puede configurar fácilmente una fuente predeterminada para usar al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para trabajar con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar la representación de sus documentos según sus necesidades específicas.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo especificar una fuente predeterminada al convertir a PDF en Aspose.Words?
+
+ R: Para especificar una fuente predeterminada al convertir a PDF en Aspose.Words, puede usar el`PdfOptions` clase y establecer el`DefaultFontName` propiedad al nombre de la fuente deseada.
+
+#### P: ¿Qué sucede si la fuente predeterminada no está disponible al convertir a PDF?
+
+R: Si la fuente predeterminada especificada no está disponible al convertir a PDF, Aspose.Words utilizará una fuente de reemplazo para mostrar el texto en el documento convertido. Esto puede causar una ligera diferencia en la apariencia de la fuente original.
+
+#### P: ¿Puedo especificar una fuente predeterminada para otros formatos de salida, como DOCX o HTML?
+
+R: Sí, puede especificar una fuente predeterminada para otros formatos de salida, como DOCX o HTML, utilizando las opciones de conversión adecuadas y configurando la propiedad correspondiente para cada formato.
+
+#### P: ¿Cómo puedo verificar la fuente predeterminada especificada en Aspose.Words?
+
+ R: Para verificar la fuente predeterminada especificada en Aspose.Words, puede usar el`DefaultFontName` propiedad de la`PdfOptions` class y recuperar el nombre de la fuente configurada.
+
+#### P: ¿Es posible especificar una fuente predeterminada diferente para cada sección del documento?
+
+R: Sí, es posible especificar una fuente predeterminada diferente para cada sección del documento utilizando opciones de formato específicas para cada sección. Sin embargo, esto requeriría una manipulación más avanzada del documento utilizando las funciones de Aspose.Words.

@@ -1,6 +1,6 @@
 ---
-title: Uppdatera senast utskrivna egenskap
-linktitle: Uppdatera senast utskrivna egenskap
+title: Uppdatera senast utskrivna egenskap i PDF-dokument
+linktitle: Uppdatera senast utskrivna egenskap i PDF-dokument
 second_title: Aspose.Words för .NET API Referens
 description: Steg-för-steg-guide för att uppdatera egenskapen "Senast utskriven" vid konvertering till PDF med Aspose.Words för .NET.
 type: docs
@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
 
-Den här artikeln ger en steg-för-steg-guide om hur du använder egenskapsuppdateringsfunktionen "Sista utskrift" med Aspose.Words för .NET. Vi kommer att förklara varje del av koden i detalj. I slutet av den här handledningen kommer du att kunna förstå hur du konfigurerar alternativet att uppdatera egenskapen "Senast utskrivet" när du konverterar till PDF.
+Den här artikeln ger en steg-för-steg-guide om hur du använder egenskapen "Sista utskrift" i PDF-dokumentuppdateringsfunktionen med Aspose.Words för .NET. Vi kommer att förklara varje del av koden i detalj. I slutet av den här handledningen kommer du att kunna förstå hur du konfigurerar alternativet att uppdatera egenskapen "Senast utskrivet" när du konverterar till PDF.
 
 Innan du börjar, se till att du har installerat och konfigurerat Aspose.Words for .NET-biblioteket i ditt projekt. Du hittar biblioteket och installationsinstruktioner på Asposes webbplats.
 
@@ -60,3 +60,23 @@ Det är allt ! Du har framgångsrikt aktiverat uppdatering av egenskapen "Senast
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 
 ```
+## Slutsats
+
+I den här handledningen förklarade vi hur man uppdaterar egenskapen "Sista utskrivna" i ett PDF-dokument med Aspose.Words för .NET. Genom att följa de givna stegen kan du enkelt konfigurera alternativet att uppdatera egenskapen "Senast utskrivet" när du konverterar ett dokument till PDF. Använd den här funktionen för att hålla reda på dokumentanvändning och relaterad information.
+
+### Vanliga frågor
+
+#### F: Vad är egenskapen "Senast utskriven" i ett PDF-dokument?
+S: Egenskapen "Senast utskriven" i ett PDF-dokument hänvisar till datum och tid då dokumentet senast skrevs ut. Den här egenskapen kan vara användbar för att spåra information om dokumentanvändning och hantering.
+
+#### F: Hur kan jag uppdatera egenskapen "Last Printed" i ett PDF-dokument med Aspose.Words for .NET?
+S: För att uppdatera egenskapen "Last Printed" i ett PDF-dokument med Aspose.Words for .NET, följ dessa steg:
+
+ Skapa en instans av`Document` klass som anger sökvägen till Word-dokumentet.
+
+ Skapa en instans av`PdfSaveOptions` klass och ställ in`UpdateLastPrintedProperty` egendom till`true` för att möjliggöra uppdatering av egenskapen "Senast utskriven".
+
+ Använd`Save` metod för`Document`klass för att spara dokumentet i PDF-format genom att ange sparalternativ.
+
+#### F: Hur kan jag kontrollera om egenskapen "Senast utskriven" har uppdaterats i det genererade PDF-dokumentet?
+S: Du kan kontrollera om egenskapen "Senast utskriven" har uppdaterats i det genererade PDF-dokumentet genom att öppna PDF-filen med en kompatibel PDF-läsare, som Adobe Acrobat Reader, och visa dokumentinformationen. Datum och tid för den senaste utskriften ska motsvara datum och tid för genereringen av PDF-dokumentet.

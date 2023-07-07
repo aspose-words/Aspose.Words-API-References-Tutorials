@@ -1,14 +1,14 @@
 ---
-title: 在邮件合并时插入文档
-linktitle: 在邮件合并时插入文档
+title: 在邮件合并中插入文档
+linktitle: 在邮件合并中插入文档
 second_title: Aspose.Words for .NET API 参考
-description: 了解如何使用 Aspose.Words for .NET 在邮件合并期间将文档插入另一个文档。
+description: 了解如何在邮件合并期间使用 Aspose.Words for .NET 将文档插入到另一个文档中。
 type: docs
 weight: 10
 url: /zh/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
 
-在本教程中，我们将向您介绍如何在邮件合并期间使用 Aspose.Words for .NET 的 Insert Document During Mail Merge 功能将文档插入另一个文档。按照以下步骤了解源代码并执行文档插入。
+在本教程中，我们将引导您了解如何使用 Aspose.Words for .NET 的“邮件合并期间插入文档”功能在邮件合并期间将文档插入到另一个文档中。请按照以下步骤了解源代码并执行文档插入。
 
 ## 第 1 步：加载主文档
 
@@ -22,7 +22,7 @@ Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 
 ## 步骤 2：配置邮件合并
 
-现在让我们配置邮件合并并指定字段合并回调以将文档插入另一个文档。就是这样：
+现在让我们配置邮件合并并指定字段合并回调以将一个文档插入另一个文档。就是这样：
 
 ```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
@@ -37,7 +37,7 @@ mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Docume
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-### 使用 Aspose.Words for .NET 在邮件合并时插入文档的示例源代码
+### 使用 Aspose.Words for .NET 在邮件合并中插入文档的示例源代码
 
 以下是 Aspose.Words for .NET 的“在邮件合并中插入文档”功能的完整源代码：
 
@@ -55,7 +55,7 @@ mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Docume
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-使用此代码，您将能够使用 Aspose.Words for .NET 在邮件合并期间将一个文档插入另一个文档。生成的文档将以新名称保存
+通过此代码，您将能够在邮件合并期间使用 Aspose.Words for .NET 将一个文档插入到另一个文档中。生成的文档将以新名称保存
 
 
 

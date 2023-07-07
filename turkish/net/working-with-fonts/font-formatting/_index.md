@@ -30,7 +30,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Yeni bir belge oluştur
 Document doc = new Document();
 
-// Bir belge oluşturucu oluşturun
+//Bir belge oluşturucu oluşturun
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ## Çözüm
 Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi biçimlendirmesinin nasıl yapıldığını gördük. Yazı tipi biçimlendirme, belgelerinizdeki metnin görünümünü özelleştirmenize olanak tanır. Çekici ve profesyonel belgeler oluşturmak için bu özelliği kullanmaktan çekinmeyin.
+
+### SSS
+
+#### S: Bir Word belgesindeki belirli bir metnin yazı tipi boyutunu değiştirmek mümkün müdür?
+
+C: Evet, Aspose.Words ile bir Word belgesindeki belirli metnin yazı tipi boyutunu kolaylıkla değiştirebilirsiniz. İstediğiniz metni seçmek ve uygun yazı tipi boyutunu uygulamak için API'yi kullanabilirsiniz.
+
+#### S: Bir Word belgesindeki farklı paragraflara farklı yazı tipi stilleri uygulayabilir miyim?
+
+C: Kesinlikle! Aspose.Words, bir Word belgesindeki farklı paragraflara farklı yazı tipi stilleri uygulamanıza izin verir. Her paragrafı gerektiği gibi ayrı ayrı biçimlendirmek için API tarafından sağlanan yöntemleri kullanabilirsiniz.
+
+#### S: Bir Word belgesinde kalın metni nasıl vurgulayabilirim?
+
+C: Aspose.Words ile bir Word belgesindeki kalın metinleri kolayca vurgulayabilirsiniz. API'yi kullanarak kalın yazı tipi stilini belirli metne uygulamanız yeterlidir.
+
+#### S: Aspose.Words özel yazı tiplerini destekliyor mu?
+
+C: Evet, Aspose.Words, Word belgelerinde özel yazı tiplerini destekler. Belgelerinizde özel yazı tiplerini kullanabilir ve tercihlerinize göre biçimlendirebilirsiniz.
+
+#### S: Belirli bir yazı tipi rengini bir Word belgesindeki metne nasıl uygulayabilirim?
+
+Y: Aspose.Words ile bir Word belgesindeki metne belirli bir yazı tipi rengini kolayca uygulayabilirsiniz. Metni seçmek ve uygun renk kodunu belirterek istenen yazı tipi rengini uygulamak için API'yi kullanın.

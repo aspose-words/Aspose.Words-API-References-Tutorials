@@ -86,4 +86,4 @@ Este código guardará el documento modificado con el nombre "UpdatedDocument.do
 
 ## Conclusión
 
-¡Felicidades! Ha aprendido con éxito cómo actualizar los datos de marcadores usando Aspose.Words para .NET. Al seguir la guía paso a paso proporcionada en este tutorial, ahora debería poder incorporar esta función en sus aplicaciones de C# y manipular los marcadores dentro de los documentos de Word mediante programación.
+¡Felicidades! Ha aprendido con éxito cómo actualizar los datos de marcadores usando Aspose.Words para .NET. Al seguir la guía paso a paso proporcionada en este tutorial, ahora debería poder incorporar esta característica en sus aplicaciones de C# y manipular los marcadores dentro de los documentos de Word mediante programación.

@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 
-I den här handledningen går vi igenom hur du infogar ett dokument i ett annat dokument när du ersätter med hjälp av funktionen Infoga dokument vid ersättning i Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och utföra dokumentinfogningen.
+den här handledningen går vi igenom hur du infogar ett dokument i ett annat dokument när du ersätter med hjälp av funktionen Infoga dokument vid ersättning i Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och utföra dokumentinfogningen.
 
 ## Steg 1: Laddar huvuddokumentet
 
@@ -25,7 +25,7 @@ Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 Nu kommer vi att konfigurera sök- och ersätt-alternativen genom att ange sökriktningen och ersätt återuppringning för att infoga ett dokument i ett annat dokument. Här är hur:
 
 ```csharp
-//Konfigurera sök- och ersättalternativ.
+// Konfigurera sök- och ersättalternativ.
 FindReplaceOptions options = new FindReplaceOptions
 {
 Direction = FindReplaceDirection.Backward,

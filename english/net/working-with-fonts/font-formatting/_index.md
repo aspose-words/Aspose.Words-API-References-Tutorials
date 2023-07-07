@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ## Conclusion
 In this tutorial, we saw how to do font formatting in a Word document using Aspose.Words for .NET. Font formatting allows you to customize the appearance of text in your documents. Feel free to use this feature to create attractive and professional documents.
+
+### FAQ's
+
+#### Q: Is it possible to change the font size of specific text in a Word document?
+
+A: Yes, with Aspose.Words you can easily change the font size of specific text in a Word document. You can use the API to select the desired text and apply the appropriate font size.
+
+#### Q: Can I apply different font styles to different paragraphs in a Word document?
+
+A: Absolutely ! Aspose.Words lets you apply different font styles to different paragraphs in a Word document. You can use the methods provided by the API to individually format each paragraph as needed.
+
+#### Q: How can I highlight bold text in a Word document?
+
+A: With Aspose.Words, you can easily highlight bold text in a Word document. Just apply the bold font style to the specific text using the API.
+
+#### Q: Does Aspose.Words support custom fonts?
+
+A: Yes, Aspose.Words supports custom fonts in Word documents. You can use custom fonts in your documents and format them according to your preferences.
+
+#### Q: How can I apply a specific font color to text in a Word document?
+
+A: With Aspose.Words, you can easily apply a specific font color to text in a Word document. Use the API to select text and apply the desired font color by specifying the appropriate color code.

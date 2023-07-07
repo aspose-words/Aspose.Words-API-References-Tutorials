@@ -60,4 +60,21 @@ builder.ParagraphFormat.Style = fencedCodeWithInfo;
 builder.Writeln("This is a fenced code with info string");
 ```
 
+### FAQ
+
+#### D: Cos'è il codice delimitato in Markdown?
+
+R: Il codice delimitato in Markdown è un metodo di formattazione utilizzato per visualizzare il codice in un documento Markdown. Consiste nell'inquadrare il codice con delimitatori specifici.
+
+#### D: Quali sono i vantaggi del codice delimitato in Markdown?
+
+R: Il codice delimitato in Markdown migliora la leggibilità del codice e facilita la comprensione da parte dei lettori. Consente inoltre di preservare l'evidenziazione della sintassi in alcuni editor Markdown.
+
+#### D: Qual è la differenza tra codice delimitato e rientrato in Markdown?
+
+R: Il codice delimitato utilizza delimitatori specifici per racchiudere il codice, mentre il codice indentato comporta il rientro di ogni riga di codice con spazi o tabulazioni.
+
+#### D: Il codice delimitato in Markdown è supportato da tutti gli editor Markdown?
+
+R: Il supporto per il codice delimitato in Markdown può variare tra gli editor di Markdown. Controlla la documentazione specifica del tuo editore per esserne sicuro.
 

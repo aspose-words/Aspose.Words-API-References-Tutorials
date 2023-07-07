@@ -1,6 +1,6 @@
 ---
-title: Удалить комментарии в PDF
-linktitle: Удалить комментарии в PDF
+title: Удалить комментарии в файле PDF
+linktitle: Удалить комментарии в файле PDF
 second_title: Справочник по API Aspose.Words для .NET
 description: Удалите комментарии в файле PDF с помощью Aspose.Words для .NET.
 type: docs
@@ -56,4 +56,34 @@ Document doc = new Document(MyDir + "Revisions.docx");
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 
 doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
+```
+
+## Заключение
+
+В этом уроке мы узнали, как удалить комментарии из файла PDF с помощью Aspose.Words для .NET. Используя соответствующие параметры макета, мы смогли скрыть комментарии при создании PDF-файла. Aspose.Words для .NET предлагает большую гибкость для управления файлами Word и преобразования их в различные форматы, включая PDF. Теперь вы можете применить эти знания для удаления комментариев в ваших собственных PDF-файлах с помощью Aspose.Words для .NET.
+
+### Часто задаваемые вопросы по удалению комментариев в файле PDF
+
+#### В: Как загрузить документ в Aspose.Words для .NET?
+
+ О: Используйте`Document` класс Aspose.Words для .NET для загрузки документа из файла. Вы можете указать полный путь к документу.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### В: Как скрыть комментарии в PDF, сгенерированном с помощью Aspose.Words для .NET?
+
+ О: Используйте`CommentDisplayMode` собственность`LayoutOptions` объект для настройки отображения комментариев при создании PDF-файла. Чтобы скрыть комментарии, установите для этого свойства значение`CommentDisplayMode.Hide`.
+
+```csharp
+doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
+```
+
+#### В: Как сохранить документ в формате PDF с помощью Aspose.Words для .NET?
+
+ О: Используйте`Save` метод`Document` объекта для сохранения документа в формате PDF. Укажите полный путь к файлу PDF.
+
+```csharp
+doc.Save("path/to/the/file.pdf");
 ```

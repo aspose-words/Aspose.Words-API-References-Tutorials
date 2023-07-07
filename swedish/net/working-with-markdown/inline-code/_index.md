@@ -48,7 +48,7 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 // Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Antal backticks saknas, en backtick kommer att användas som standard.
+// Antal backticks saknas, en backtick kommer att användas som standard.
 Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 builder.Font.Style = inlineCode1BackTicks;
 builder.Writeln("Text with InlineCode style with 1 backtick");
@@ -61,3 +61,17 @@ builder.Writeln("Text with InlineCode style with 3 backtick");
 
 Grattis! Du har nu lärt dig hur du använder inline-kodfunktionalitet med Aspose.Words för .NET.
 
+
+### FAQ's
+
+#### F: Hur kan jag använda inline-koden i Aspose.Words?
+
+ S: För att använda inline-kod i Aspose.Words kan du använda lämpliga taggar för att omge texten som ska formateras som inline-kod. Du kan till exempel använda`<code>` eller`<kbd>` tagg till surroundtext som ska formateras som inline-kod.
+
+#### F: Är det möjligt att ange inline kodtypsnitt eller färg i Aspose.Words?
+
+ S: Ja, du kan ange teckensnittet eller färgen på inline-koden i Aspose.Words. Du kan använda`Font.Name` och`Font.Color` egenskaper hos`Run` objekt för att ställa in teckensnitt och färg för inline-koden. Du kan till exempel använda`run.Font.Name = "Courier New"` för att ange teckensnitt för inline-kod och`run.Font.Color = Color.Blue`för att ange färgen.
+
+#### F: Kan jag använda inline-koden i ett stycke som innehåller andra textelement?
+
+ S: Ja, du kan använda inline-koden i ett stycke som innehåller andra textelement. Du kan skapa flera`Run` objekt för att representera olika delar av stycket, använd sedan inline-kodtaggar för att formatera endast de specifika delarna som inline-kod. Sedan kan du lägga till dem i stycket med hjälp av`Paragraph.AppendChild(run)` metod.

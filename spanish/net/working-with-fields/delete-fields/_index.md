@@ -32,7 +32,7 @@ Esto es particularmente útil si desea mantener solo el contenido estático y el
 // La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Cargar documento existente.
+//Cargar documento existente.
 Document doc = new Document(dataDir + "YourDocument.docx");
 
 // Eliminar campos de combinación.
@@ -49,3 +49,29 @@ Para eliminar de forma eficaz los campos de combinación de un documento mediant
 Recuerde siempre reemplazar "SU DIRECTORIO DE DOCUMENTOS" con su ruta de directorio específica. 
 
 Nuestra guía sobre la implementación de la funcionalidad "Eliminar campos" a través de Aspose.Words para .NET ha concluido.
+
+### Preguntas frecuentes
+
+#### P: ¿Qué es un campo en Aspose.Words?
+
+R: Un campo en Aspose.Words es una estructura de documento que representa texto generado automáticamente o un valor calculado. Los campos se utilizan para mostrar información dinámica en un documento, como números de página, fechas, campos de combinación de correspondencia, etc.
+
+#### P: ¿Cómo eliminar un campo en un documento de Word con Aspose.Words?
+
+R: Para eliminar un campo en un documento de Word con Aspose.Words, puede seguir estos pasos:
+
+1. Importe la clase Document del espacio de nombres Aspose.Words.
+2. Cree una instancia de Documento cargando su documento existente.
+3. Utilice el método RemoveFields para eliminar todos los campos del documento.
+
+#### P: ¿Puedo eliminar campos específicos en lugar de eliminar todos los campos de un documento?
+
+R: Sí, puede eliminar campos específicos en lugar de eliminar todos los campos de un documento. Para hacer esto, debe acceder a cada campo individualmente y usar el método Eliminar para eliminarlo.
+
+#### P: ¿Cómo puedo verificar si existe un campo en un documento de Word antes de eliminarlo?
+
+R: Para verificar si existe un campo en un documento de Word antes de eliminarlo, puede usar el método Contiene de la colección Campos para encontrar el campo especificado. Este método devuelve un valor booleano que indica si el campo existe o no.
+
+#### P: ¿Cuáles son los efectos de eliminar un campo en el resto del documento?
+
+R: Cuando elimina un campo en un documento de Word, el campo se elimina del documento y el texto generado o el valor calculado asociado con el campo se elimina. Esto puede afectar el diseño del documento, ya que se eliminará el contenido generado por el campo.

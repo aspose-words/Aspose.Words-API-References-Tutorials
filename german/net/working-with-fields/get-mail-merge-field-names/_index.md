@@ -57,3 +57,63 @@ Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.")
  In diesem Beispiel haben wir ein Dokument geladen und die Namen der Zusammenführungsfelder mithilfe von abgerufen`GetFieldNames()` Methode und zeigte die Anzahl der im Dokument vorhandenen Zusammenführungsfelder an.
 
 Damit ist unser Leitfaden zur Verwendung der Funktion „Get Merge Field Names“ mit Aspose.Words für .NET abgeschlossen.
+
+### FAQs
+
+#### F1: Was ist Seriendruck in Aspose.Words?
+
+Beim Seriendruck in Aspose.Words handelt es sich um einen Prozess zum Zusammenführen von Daten aus einer externen Quelle (z. B. einer Excel-Tabelle oder einer Datenbank) mit einer Word-Dokumentvorlage, um personalisierte Dokumente zu erstellen. Dies erleichtert die automatisierte Erstellung von Briefen, Berichten und ähnlichen Dokumenten.
+
+#### F2: Wie erhalte ich die Liste der in einem Word-Dokument verfügbaren Seriendruckfelder?
+
+Um die Liste der in einem Word-Dokument verfügbaren Serienbrieffelder zu erhalten, können Sie die folgenden Schritte ausführen:
+
+1. Importieren Sie die Klassen Document und MailMergeFieldNames aus dem Aspose.Words-Namespace.
+2. Erstellen Sie eine Dokumentinstanz, indem Sie Ihr Word-Dokument laden.
+3. Verwenden Sie die GetMailMergeFieldNames-Methode des Document-Objekts, um die Liste der verfügbaren Serienbrieffelder abzurufen.
+
+Hier ist ein Beispielcode zur Veranschaulichung des Prozesses:
+
+```csharp
+// Importieren Sie die erforderlichen Namespaces
+using Aspose.Words;
+using Aspose.Words.MailMerging;
+
+// Laden Sie das vorhandene Dokument
+Document document = new Document("FilePath");
+
+// Liste der Serienbrieffelder abrufen
+MailMergeFieldNames fieldNames = document.MailMerge.GetFieldNames();
+
+// Durchlaufen Sie die verfügbaren Serienbrieffelder
+foreach (string fieldName in fieldNames)
+{
+     // Machen Sie etwas mit dem Feldnamen
+     Console.WriteLine(fieldName);
+}
+```
+### FAQs
+
+#### F: Was ist Serienbrief in Aspose.Words?
+
+A: Beim Serienbrief in Aspose.Words handelt es sich um einen Prozess zum Zusammenführen von Daten aus einer externen Quelle (z. B. Excel-Tabelle oder Datenbank) mit einer Word-Dokumentvorlage, um personalisierte Dokumente zu erstellen. Dies erleichtert die automatisierte Erstellung von Briefen, Berichten und ähnlichen Dokumenten.
+
+#### F: Wie erhalte ich die Liste der in einem Word-Dokument verfügbaren Seriendruckfelder?
+
+A: Um die Liste der in einem Word-Dokument verfügbaren Serienbrieffelder zu erhalten, können Sie die folgenden Schritte ausführen:
+
+1. Importieren Sie die Klassen Document und MailMergeFieldNames aus dem Aspose.Words-Namespace.
+2. Erstellen Sie eine Dokumentinstanz, indem Sie Ihr Word-Dokument laden.
+3. Verwenden Sie die GetMailMergeFieldNames-Methode des Document-Objekts, um die Liste der verfügbaren Serienbrieffelder abzurufen.
+
+#### F: Kann ich Serienbrieffelder aus einer externen Datenquelle wie einer Excel-Tabelle abrufen?
+
+A: Ja, Sie können die Serienbrieffelder aus einer externen Datenquelle wie einer Excel-Tabelle abrufen. Hierzu können Sie die Datenbindungsfunktionen von Aspose.Words nutzen, um eine Verbindung mit der Datenquelle herzustellen und die Namen der verfügbaren Felder abzurufen.
+
+#### F: Ist es möglich, Serienbrieffelder nach bestimmten Kriterien zu filtern?
+
+A: Ja, es ist möglich, Serienbrieffelder nach bestimmten Kriterien zu filtern. Sie können reguläre Ausdrücke oder bestimmte Bedingungen verwenden, um Serienbrieffelder zu filtern und nur diejenigen abzurufen, die Ihren spezifischen Kriterien entsprechen.
+
+#### F: Wie kann ich Seriendruckfelder in Aspose.Words bearbeiten?
+
+A: Um Serienbrieffelder in Aspose.Words zu bearbeiten, können Sie die Methoden und Eigenschaften verwenden, die von den Objekten Document und MailMergeField bereitgestellt werden. Sie können Serienbrieffelder hinzufügen, entfernen oder aktualisieren sowie mit Feldern verknüpfte Werte abrufen und bearbeiten.

@@ -83,9 +83,28 @@ para.ParagraphFormat.StyleName = "Heading 1";
 // Ahora agregue el párrafo al texto principal de la primera sección.
 doc.FirstSection.Body.AppendChild(para);
 
-//El nodo de párrafo ahora es un elemento secundario del nodo Cuerpo.
+// El nodo de párrafo ahora es un elemento secundario del nodo Cuerpo.
 Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
+### Preguntas frecuentes
 
+#### P: ¿Qué es un documento propietario en Node.js?
 
+R: Un documento propietario en Node.js es el documento XML al que pertenece un nodo específico. Representa la instancia del documento XML que contiene el nodo.
+
+#### P: ¿Cómo obtener el documento de propietario de un nodo?
+
+ R: Para obtener el documento de propietario de un nodo en Node.js, puede usar el`ownerDocument` propiedad del nodo. Esta propiedad devuelve el documento XML que posee el nodo.
+
+#### P: ¿Para qué se utiliza el documento propietario?
+
+R: El documento propietario se utiliza para representar el contexto global de un nodo en un documento XML. Proporciona acceso a otros nodos del documento y permite realizar operaciones en ellos.
+
+#### P: ¿Podemos modificar el documento propietario de un nodo?
+
+R: En la mayoría de los casos, el propietario del documento de un nodo se determina cuando se crea el nodo y no se puede cambiar directamente. El documento propietario es una propiedad de solo lectura.
+
+#### P: ¿Cómo acceder a los nodos de un documento propietario?
+
+R: Para acceder a los nodos en un documento propietario, puede usar los métodos y las propiedades proporcionados por la API XML utilizada en su entorno Node.js. Por ejemplo, puede utilizar métodos como`getElementsByTagName` o`querySelector` para seleccionar nodos específicos en el documento.

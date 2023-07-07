@@ -54,3 +54,35 @@ doc.Save(dataDir + "InsertionField.docx");
 In questo esempio, abbiamo creato un nuovo documento, inizializzato un DocumentBuilder, quindi inserito un campo di unione con il nome del campo "MyFieldName" e il formato di unione. Il documento viene quindi salvato con un nome file specificato.
 
 Questo conclude la nostra guida sull'utilizzo della funzione "Inserisci un campo" con Aspose.Words per .NET.
+
+### FAQ
+
+#### D: Cos'è un campo in Word?
+
+R: Un campo in Word è un elemento che permette di inserire e manipolare dati dinamici in un documento. Può essere utilizzato per visualizzare informazioni variabili come date, numeri di pagina, tabelle, formule matematiche, ecc.
+
+#### D: Come inserire un campo in un documento Word?
+
+R: Per inserire un campo in un documento Word, puoi seguire questi passaggi:
+
+1. Posiziona il cursore nel punto in cui desideri inserire il campo.
+2. Vai alla scheda "Inserisci" nella barra multifunzione.
+3. Fare clic sul pulsante "Campo" nel gruppo "Testo" per aprire la finestra di dialogo dei campi.
+4. Selezionare il tipo di campo che si desidera inserire dall'elenco a discesa.
+5. Configura le opzioni del campo secondo necessità.
+6. Fare clic sul pulsante "OK" per inserire il campo nel documento.
+
+#### D: Quali sono i tipi di campo comunemente usati in Word?
+
+R: Word offre un'ampia varietà di tipi di campo che puoi usare nei tuoi documenti. Di seguito sono riportati alcuni dei tipi di campo comunemente utilizzati:
+
+- Data e ora: visualizza la data e l'ora correnti.
+- Numero pagina: visualizza il numero della pagina corrente.
+- Sommario: genera automaticamente un sommario basato sugli stili dei tuoi titoli.
+- Calcolo: esegue calcoli matematici utilizzando formule.
+- Testo di riempimento: genera testo casuale per riempire il documento.
+
+#### D: Posso personalizzare l'aspetto dei campi in Word?
+
+R: Sì, puoi personalizzare l'aspetto dei campi in Word utilizzando le opzioni di formattazione disponibili. Ad esempio, puoi modificare il carattere, la dimensione, il colore e lo stile del testo in un campo. Puoi anche applicare effetti di formattazione come grassetto, corsivo e sottolineato.
+  

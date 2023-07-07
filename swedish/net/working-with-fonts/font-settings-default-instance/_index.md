@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Konfigurera standardteckensnittsinställningar
- Därefter skapar vi en instans av`FontSettings` använder sig av`FontSettings.DefaultInstance`och sedan specificerar vi de teckensnittskällor som används när du laddar och renderar dokument. I det här exemplet använder vi en systemfontkälla och en mappteckensnittskälla.
+ Därefter skapar vi en instans av`FontSettings` använder sig av`FontSettings.DefaultInstance`, och sedan specificerar vi de teckensnittskällor som används när du laddar och renderar dokument. I det här exemplet använder vi en systemfontkälla och en mappteckensnittskälla.
 
 ```csharp
 // Konfigurera standardteckensnittsinställningar
@@ -67,3 +67,21 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ## Slutsats
 I den här handledningen såg vi hur man konfigurerar standardteckensnittsinställningar i ett Word-dokument med Aspose.Words för .NET. Genom att ange de teckensnittskällor som används när du laddar och renderar dokument kan du styra hur teckensnitten ska se ut i dina dokument. Använd gärna den här funktionen för att anpassa teckensnittsinställningar i dina projekt.
+
+### FAQ's
+
+#### F: Hur kan jag ställa in standardteckensnittet i Aspose.Words?
+
+ S: För att ställa in standardteckensnittet i Aspose.Words kan du använda`FontSettings` klass och`DefaultFontName` egenskap som anger namnet på det önskade teckensnittet.
+
+#### F: Kan jag ange standard teckenstorlek i Aspose.Words?
+
+ S: Ja, du kan ange standard teckenstorlek i Aspose.Words med hjälp av`DefaultFontSize` egendom av`FontSettings` klass. Du kan ställa in önskad punktstorlek.
+
+#### F: Är det möjligt att ställa in standardtypsnittsfärgen i Aspose.Words?
+
+ S: Ja, du kan ställa in standardtypsnittsfärgen i Aspose.Words med hjälp av`DefaultColor` egendom av`FontSettings` klass. Du kan ange färgen med RGB-värden eller fördefinierade namn.
+
+#### F: Gäller standardteckensnittsinställningarna för alla dokument?
+
+S: Ja, standardteckensnittsinställningar gäller för alla dokument som skapats eller redigerats i Aspose.Words, såvida inte specifika inställningar är inställda för ett enskilt dokument.

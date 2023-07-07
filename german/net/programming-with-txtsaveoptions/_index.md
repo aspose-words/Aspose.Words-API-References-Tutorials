@@ -16,6 +16,6 @@ Dank dieser Tutorials können Sie die Funktionalitäten von Aspose.Words für .N
  ## Tutorials
 | Titel | Beschreibung |
 | --- | --- |
-| [Fügen Sie Bidi-Markierungen hinzu](./add-bidi-marks/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Bidi-Markierungen zu einem Word-Dokument hinzufügen und professionelle mehrsprachige Dokumente erstellen. |
+| [Fügen Sie Bidi-Marken in ein Word-Dokument ein](./add-bidi-marks/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Bidi-Markierungen zu einem Word-Dokument hinzufügen und professionelle mehrsprachige Dokumente erstellen. |
 | [Verwenden Sie Tabulatorzeichen pro Ebene für die Listeneinrückung](./use-tab-character-per-level-for-list-indentation/) | Erfahren Sie, wie Sie die Funktion „Einrückungslisten mit Tabulatorzeichen“ in Aspose.Words für .NET verwenden. Befolgen Sie diese Schritt-für-Schritt-Anleitung, um gut strukturierte und lesbare Dokumente zu erstellen. Sparen Sie Zeit und verbessern Sie Ihren Arbeitsablauf mit dieser leistungsstarken Funktion. Greifen Sie jetzt auf das vollständige Tutorial zu. |
 | [Verwenden Sie Leerzeichen pro Ebene für die Listeneinrückung](./use-space-character-per-level-for-list-indentation/) | Schritt-für-Schritt-Anleitung zur Verwendung eines Leerzeichens pro Ebene für die Listeneinrückung in Aspose.Words für .NET. Erstellen Sie mühelos gut strukturierte Word-Dokumente. |

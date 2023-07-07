@@ -49,3 +49,24 @@ builder.Writeln("This is an indented code");
 Congratulation ! You have now learned how to use the indented code feature with Aspose.Words for .NET.
 
 
+### FAQ's
+
+#### Q: What is indented code in Markdown?
+
+A: Indented code in Markdown is a formatting method used to display code in a Markdown document. It consists of indenting each line of code with spaces or tabs.
+
+#### Q: How to use indented code in Markdown?
+
+A: To use indented code in Markdown, indent each line of code with spaces or tabs.
+
+#### Q: What are the advantages of indented code in Markdown?
+
+A: Indented code in Markdown improves code readability and makes it easier for readers to understand.
+
+#### Q: What is the difference between indented code and code blocks in Markdown?
+
+A: Indented code is used for small code snippets inserted into text, while code blocks are used to display larger pieces of code in separate formatting.
+
+#### Q: Is indented code in Markdown supported by all Markdown editors?
+
+A: Support for indented code in Markdown may vary between Markdown editors. Check your publisher's specific documentation to be sure.

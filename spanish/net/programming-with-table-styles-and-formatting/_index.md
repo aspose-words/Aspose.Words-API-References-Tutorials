@@ -30,5 +30,5 @@ Estos tutoriales ayudarán a los desarrolladores a dominar las técnicas esencia
 | [Expandir formato en celdas y fila desde estilo](./expand-formatting-on-cells-and-row-from-style/) | Guía paso a paso para expandir el formato a celdas y filas desde un estilo de tabla usando Aspose.Words para .NET. |
 | [Crear estilo de tabla](./create-table-style/) | Guía paso a paso para crear un estilo de tabla personalizado con Aspose.Words para .NET. |
 | [Definir formato condicional](./define-conditional-formatting/) | Guía paso a paso para definir formato condicional en una tabla usando Aspose.Words para .NET. |
-| [Establecer formato de celda de tabla](./set-table-cell-formatting/) | Guía paso a paso para configurar el formato de celdas de tablas usando Aspose.Words para .NET. |
+| [Establecer formato de celda de tabla](./set-table-cell-formatting/) | Guía paso a paso para configurar el formato de las celdas de la tabla con Aspose.Words para .NET. |
 | [Establecer el formato de fila de la tabla](./set-table-row-formatting/) | Guía paso a paso para configurar el formato de fila de la tabla con Aspose.Words para .NET. |

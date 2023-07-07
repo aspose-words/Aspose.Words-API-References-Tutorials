@@ -1,5 +1,5 @@
 ---
-title: Inserisci FieldIncludeText senza Document Builder
+title: Inserisci campo Includi testo senza Document Builder
 linktitle: Inserisci FieldIncludeText senza Document Builder
 second_title: Riferimento all'API Aspose.Words per .NET
 description: Scopri come inserire un campo FieldIncludeText nei tuoi documenti Word con Aspose.Words per .NET.
@@ -80,3 +80,21 @@ doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 In questo esempio, abbiamo creato un nuovo documento, inizializzato un paragrafo, inserito un FieldIncludeTexten specificando il nome del segnalibro e il nome del file sorgente e salvato il documento con un nome file specificato.
 
 Questo conclude la nostra guida sull'utilizzo della funzione "Inserisci un FieldIncludeText" con Aspose.Words per .NET.
+
+### FAQ
+
+#### D: Come posso specificare il file sorgente per il campo di inclusione del testo in Aspose.Words per .NET?
+
+ R: Per specificare il file sorgente per il campo di inclusione del testo in Aspose.Words per .NET, puoi utilizzare il`FieldIncludeText.SourceFullName` property per impostare il percorso completo del file di origine. Assicurati che il file di origine sia accessibile e contenga il contenuto che desideri includere nel campo di inclusione del testo.
+
+#### D: Posso includere il testo di una macro nel campo di inclusione del testo con Aspose.Words per .NET?
+
+ R: Sì, puoi includere il testo di una macro nel campo di inclusione del testo con Aspose.Words per .NET. Puoi usare il`FieldIncludeText.IncludeText` property per specificare il nome della macro il cui contenuto deve essere incluso nel campo.
+
+#### D: L'inserimento di un campo include testo senza il generatore di documenti influisce sulla struttura del documento di Word con Aspose.Words per .NET?
+
+R: L'inserimento di un campo di inclusione testo senza il generatore di documenti non influisce direttamente sulla struttura del documento Word. Tuttavia, aggiunge un nuovo elemento di campo al contenuto del documento. È possibile manipolare la struttura del documento aggiungendo, eliminando o modificando gli elementi esistenti in base alle proprie esigenze.
+
+#### D: Posso personalizzare l'aspetto del campo di inclusione del testo in un documento Word con Aspose.Words per .NET?
+
+R: Il campo di inclusione del testo non personalizza direttamente il suo aspetto in un documento Word. Tuttavia, è possibile formattare il testo incluso utilizzando le proprietà del paragrafo, le proprietà del carattere e altri oggetti di formattazione disponibili in Aspose.Words per .NET.

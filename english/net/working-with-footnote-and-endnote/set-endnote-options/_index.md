@@ -77,3 +77,24 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 Feel free to use this code in your own projects and modify it according to your specific requirements.
 
+### FAQ's
+
+#### Q: How can I style endnotes in Aspose.Words?
+
+A: To style endnotes in Aspose.Words, you can use the `EndnoteOptions` class and the `SeparatorNoteTextStyle` property. You can specify font style, size, color, etc. for endnotes using this property.
+
+#### Q: Is it possible to customize the numbering of endnotes in a document?
+
+A: Yes, it is possible to customize the numbering of endnotes in a document. You can use the `RestartRule` and `NumberStyle` properties of the `EndnoteOptions` class to define specific restart rules and numbering styles.
+
+#### Q: How can I position endnotes in a document?
+
+A: To position endnotes in a document, you can use the `Position` property of the `EndnoteOptions` class. You can specify whether endnotes should be placed at the bottom of each page, at the end of each section, or at the end of the document.
+
+#### Q: Can I customize the endnote numbering format?
+
+A: Yes, you can customize the format of endnote numbering in Aspose.Words. Use the `NumberFormat` property of the `EndnoteOptions` class to set the desired format, such as Arabic numerals, Roman numerals, letters, etc.
+
+#### Q: Is it possible to continue endnote numbering between sections of a document?
+
+A: Yes, it is possible to continue endnote numbering between sections of a document. Use the `RestartRule` property of the `EndnoteOptions` class and set it to `RestartContinuous` to allow numbering to continue between sections.

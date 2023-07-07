@@ -1,18 +1,18 @@
 ---
-title: 对段落应用边框和底纹
-linktitle: 对段落应用边框和底纹
+title: 将边框和底纹应用于段落
+linktitle: 将边框和底纹应用于段落
 second_title: Aspose.Words for .NET API 参考
-description: 了解如何使用 Aspose.Words for .NET 将边框和底纹应用于段落。
+description: 了解如何使用 Aspose.Words for .NET 将边框和底纹应用到段落。
 type: docs
 weight: 10
 url: /zh/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 
-在本教程中，我们将向您展示如何使用 Aspose.Words for .NET 的功能将边框和底纹应用于段落。按照以下步骤了解源代码并应用格式更改。
+在本教程中，我们将向您展示如何使用 Aspose.Words for .NET 的功能将边框和底纹应用到段落。请按照以下步骤了解源代码并应用格式更改。
 
-## 第 1 步：创建和配置文档
+## 第 1 步：创建并配置文档
 
-首先，创建一个新文档和一个关联的 DocumentBuilder 对象。就是这样：
+首先，创建一个新文档和关联的 DocumentBuilder 对象。就是这样：
 
 ```csharp
 //文档目录的路径。
@@ -21,7 +21,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 第二步：边框配置
+## 第2步：边框配置
 
 现在让我们通过指定每一边的边框样式来配置段落边框。就是这样：
 
@@ -47,23 +47,23 @@ shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 
 ## 第 4 步：添加内容
 
-我们将在段落中添加一些格式化的内容。就是这样：
+我们将向该段落添加一些格式化内容。就是这样：
 
 ```csharp
 builder.Write("I'm a formatted paragraph with a double border and a nice shading.");
 ```
 
-## 第 3 步：保存文档
+## 步骤 3：保存文档
 
-插入文本输入表单域后，使用`Save`方法。确保提供适当的文件路径：
+插入文本输入表单字段后，使用以下命令将文档保存到所需位置`Save`方法。确保提供适当的文件路径：
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ```
 
-### 使用 Aspose.Words for .NET 将边框和底纹应用于段落的示例源代码
+### 使用 Aspose.Words for .NET 将边框和底纹应用到段落的示例源代码
 
-以下是使用 Aspose.Words for .NET 将边框和底纹应用到段落功能的完整源代码：
+以下是 Aspose.Words for .NET 的“将边框和阴影应用于段落”功能的完整源代码：
 
 ```csharp
 

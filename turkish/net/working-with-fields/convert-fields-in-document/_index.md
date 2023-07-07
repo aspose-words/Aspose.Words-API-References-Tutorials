@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 3. Adım: Belgeyi yükleyin
- Kullan`Document` dönüştürmek istediğiniz bağlantılı alanları içeren Word belgesini yüklemek için Aspose.Words sınıfı.
+ Kullan`Document`dönüştürmek istediğiniz bağlantılı alanları içeren Word belgesini yüklemek için Aspose.Words sınıfı.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");
@@ -65,3 +65,29 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 
 ## Çözüm
 Aspose.Words for .NET'in ConvertFieldsInDocument işlevi, bir Word belgesindeki bağlantılı alanları metne dönüştürmek için güçlü bir araçtır. 
+
+### SSS
+
+#### S: Aspose.Words'te alan dönüştürme nedir?
+
+C: Aspose.Words'te alan dönüştürme, farklı biçimler veya veri türleri kullanarak bir Word belgesindeki bir alandan veri dönüştürme becerisini ifade eder. Bu, son belgedeki verilerin sunumunu veya yapısını değiştirmenize olanak tanır.
+
+#### S: Bir Word belgesindeki alanlar Aspose.Words ile nasıl dönüştürülür?
+
+C: Bir Word belgesindeki alanları Aspose.Words ile dönüştürmek için şu adımları izleyebilirsiniz:
+
+1. Aspose.Words ad alanından Document sınıfını içe aktarın.
+2. Mevcut belgenizi yükleyerek bir Belge örneği oluşturun.
+3. Belgedeki tüm alanları güncellemek ve dönüştürmeleri gerçekleştirmek için UpdateFields yöntemini kullanın.
+
+#### S: Aspose.Words'te ne tür dönüşümler mümkündür?
+
+C: Aspose.Words, tarih formatlarını dönüştürmek, sayı formatlarını dönüştürmek, metin formatlarını dönüştürmek, para birimi formatlarını dönüştürmek, yüzde formatlarını dönüştürmek ve daha fazlası gibi alanlarda çeşitli dönüştürme türlerini destekler. Desteklenen dönüştürme türlerinin tam listesi için Aspose.Words belgelerine bakabilirsiniz.
+
+#### S: Alanları dönüştürmek, Word belgesindeki orijinal verileri değiştirir mi?
+
+C: Hayır, Aspose.Words'te alanların dönüştürülmesi Word belgesindeki orijinal verileri etkilemez. Dönüştürme, alanlar güncellenirken uygulanır, ancak orijinal veriler bozulmadan kalır. Bu, istediğiniz zaman belgenin orijinal durumuna dönebilmenizi sağlar.
+
+#### S: Aspose.Words'te alan dönüşümlerini özelleştirmek mümkün mü?
+
+C: Evet, Aspose.Words'te alan dönüştürmelerini özel biçimlendirme kodları kullanarak veya mevcut dönüştürme seçeneklerini ayarlayarak özelleştirmek mümkündür. Özel ihtiyaçlarınızı karşılamak için tarihler, sayılar, metinler vb. için özel biçimler tanımlayabilirsiniz.

@@ -51,3 +51,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 
 ## Conclusion
 In this tutorial, we learned how to set the default font folder when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily specify which folder of fonts to use as the default folder when rendering your documents. Aspose.Words offers a powerful and flexible API for working with fonts in your documents. With this knowledge, you can control and customize the font sources used when rendering your documents to your specific needs.
+
+### FAQ's
+
+#### Q: How can I set default font folders in Aspose.Words?
+
+A: To set default font folders in Aspose.Words, you must use the `Fonts` class and the `SetFontsFolders` method to specify custom font folder locations.
+
+#### Q: Does setting default font folders affect all Word documents processed with Aspose.Words?
+
+A: Yes, setting default font folders affects all Word documents processed with Aspose.Words. Once you have set the default font folders, Aspose.Words will use these locations to search for fonts in all documents.
+
+#### Q: Can I set multiple default font folders in Aspose.Words?
+
+A: Yes, you can set multiple default font folders in Aspose.Words. You just need to specify the locations of custom font folders using the `SetFontsFolders` method of the `Fonts` class.
+
+#### Q: How can I check the default font folders currently set in Aspose.Words?
+
+A: To check the default font folders currently defined in Aspose.Words, you can use the `GetFolders` method of the `Fonts` class to get the locations of the configured font folders.
+
+#### Q: Does setting default font folders allow me to use custom fonts in my Word documents?
+
+A: Yes, by setting default font folders, you can use custom fonts in your Word documents. You just need to place the fonts in the specified folders and Aspose.Words will use them when generating or manipulating the documents.

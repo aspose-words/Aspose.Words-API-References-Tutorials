@@ -59,3 +59,20 @@ builder.Writeln("1. Nested blockquote");
 Congratulation ! You have now learned how to use the citations feature with Aspose.Words for .NET.
 
 
+### FAQ's
+
+#### Q: What is a citation in Markdown?
+
+A: A quote in Markdown is a way to highlight passages of text from other sources or to reference famous quotes.
+
+#### Q: How to use quotes in Markdown?
+
+A: To use a quote in Markdown, enclose the text of the quote in angle brackets (`>`). Each line of the citation must begin with a chevron.
+
+#### Q: Does Markdown quotes support attributes?
+
+A: Markdown citations do not support specific attributes. They are simply highlighted by the formatting of the quoted text.
+
+#### Q: Can you embed quotes in Markdown?
+
+A: Yes, it is possible to nest quotes in Markdown by adding an extra level of angle brackets (`>`).

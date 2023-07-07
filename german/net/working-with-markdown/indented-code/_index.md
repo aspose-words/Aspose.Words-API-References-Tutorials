@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Schritt 2: Stil für eingerückten Code hinzufügen
 
- Wir werden mithilfe von einen benutzerdefinierten Stil für den eingerückten Code hinzufügen`Styles.Add` Methode der`Document` Objekt. In diesem Beispiel erstellen wir einen Stil namens „IndentedCode“ für eingerückten Code.
+Wir werden mithilfe von einen benutzerdefinierten Stil für den eingerückten Code hinzufügen`Styles.Add` Methode der`Document` Objekt. In diesem Beispiel erstellen wir einen Stil namens „IndentedCode“ für eingerückten Code.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
@@ -48,3 +48,25 @@ builder.Writeln("This is an indented code");
 
 Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Funktion für eingerückten Code mit Aspose.Words für .NET verwenden.
 
+
+### FAQs
+
+#### F: Was ist eingerückter Code in Markdown?
+
+A: Eingerückter Code in Markdown ist eine Formatierungsmethode, die zum Anzeigen von Code in einem Markdown-Dokument verwendet wird. Es besteht darin, jede Codezeile mit Leerzeichen oder Tabulatoren einzurücken.
+
+#### F: Wie verwende ich eingerückten Code in Markdown?
+
+A: Um eingerückten Code in Markdown zu verwenden, rücken Sie jede Codezeile mit Leerzeichen oder Tabulatoren ein.
+
+#### F: Was sind die Vorteile von eingerücktem Code in Markdown?
+
+A: Eingerückter Code in Markdown verbessert die Lesbarkeit des Codes und erleichtert den Lesern das Verständnis.
+
+#### F: Was ist der Unterschied zwischen eingerücktem Code und Codeblöcken in Markdown?
+
+A: Eingerückter Code wird für kleine Codeausschnitte verwendet, die in Text eingefügt werden, während Codeblöcke verwendet werden, um größere Codeteile in separater Formatierung anzuzeigen.
+
+#### F: Wird eingerückter Code in Markdown von allen Markdown-Editoren unterstützt?
+
+A: Die Unterstützung für eingerückten Code in Markdown kann je nach Markdown-Editor variieren. Überprüfen Sie zur Sicherheit die spezifische Dokumentation Ihres Herausgebers.

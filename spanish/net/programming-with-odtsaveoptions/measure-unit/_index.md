@@ -52,7 +52,7 @@ En este ejemplo, guardamos el documento convertido como "WorkingWithOdtSaveOptio
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Cargue el documento de Word
+// Cargue el documento de Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // Configuración de opciones de copia de seguridad con la función "Unidad de medida"

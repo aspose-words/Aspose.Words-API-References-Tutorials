@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Konfigurieren Sie die Standardschrifteinstellungen
- Als Nächstes erstellen wir eine Instanz von`FontSettings` verwenden`FontSettings.DefaultInstance`und dann geben wir die Schriftartquellen an, die beim Laden und Rendern von Dokumenten verwendet werden. In diesem Beispiel verwenden wir eine Systemschriftquelle und eine Ordnerschriftquelle.
+ Als Nächstes erstellen wir eine Instanz von`FontSettings` verwenden`FontSettings.DefaultInstance`, und dann geben wir die Schriftartquellen an, die beim Laden und Rendern von Dokumenten verwendet werden. In diesem Beispiel verwenden wir eine Systemschriftquelle und eine Ordnerschriftquelle.
 
 ```csharp
 // Konfigurieren Sie die Standardschriftarteinstellungen
@@ -67,3 +67,21 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ## Abschluss
 In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET Standardschriftarteinstellungen in einem Word-Dokument konfiguriert. Durch die Angabe der Schriftartquellen, die beim Laden und Rendern von Dokumenten verwendet werden, können Sie das Erscheinungsbild von Schriftarten in Ihren Dokumenten steuern. Nutzen Sie diese Funktion gerne, um die Schriftarteinstellungen in Ihren Projekten anzupassen.
+
+### FAQs
+
+#### F: Wie kann ich die Standardschriftart in Aspose.Words festlegen?
+
+ A: Um die Standardschriftart in Aspose.Words festzulegen, können Sie die verwenden`FontSettings` Klasse und die`DefaultFontName` Eigenschaft, die den Namen der gewünschten Schriftart angibt.
+
+#### F: Kann ich die Standardschriftgröße in Aspose.Words angeben?
+
+ A: Ja, Sie können die Standardschriftgröße in Aspose.Words mithilfe von festlegen`DefaultFontSize` Eigentum der`FontSettings` Klasse. Sie können die gewünschte Punktgröße einstellen.
+
+#### F: Ist es möglich, die Standardschriftfarbe in Aspose.Words festzulegen?
+
+ A: Ja, Sie können die Standardschriftfarbe in Aspose.Words mithilfe von festlegen`DefaultColor` Eigentum der`FontSettings` Klasse. Sie können die Farbe mithilfe von RGB-Werten oder vordefinierten Namen angeben.
+
+#### F: Gilt die Standardschriftart für alle Dokumente?
+
+A: Ja, die Standardschriftarteinstellungen gelten für alle in Aspose.Words erstellten oder bearbeiteten Dokumente, es sei denn, für ein einzelnes Dokument werden spezielle Einstellungen festgelegt.
