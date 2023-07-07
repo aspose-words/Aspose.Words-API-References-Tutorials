@@ -71,3 +71,26 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
 // Speichern Sie das geänderte Dokument.
 doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ```
+
+### FAQs
+
+#### F: Was ist ein Konvertierungsfeld in Aspose.Words?
+
+A: Ein Konvertierungsfeld in Aspose.Words ist ein Feldtyp, der einen Wert oder einen Ausdruck in ein anderes Format oder einen anderen Datentyp konvertiert. Sie können beispielsweise ein Konvertierungsfeld verwenden, um ein Datum in ein bestimmtes Format oder eine Zahl in Text umzuwandeln oder andere Arten von Konvertierungen durchzuführen.
+
+#### F: Wie füge ich mit Aspose.Words ein Konvertierungsfeld in einen Absatz ein?
+
+A: Um mit Aspose.Words ein Konvertierungsfeld in einen Absatz einzufügen, können Sie die folgenden Schritte ausführen:
+
+1. Importieren Sie die Document-Klasse aus dem Aspose.Words-Namespace.
+2. Erstellen Sie eine Instanz von Document, indem Sie Ihr vorhandenes Dokument laden.
+3. Rufen Sie den Absatz auf, in dem Sie das Konvertierungsfeld einfügen möchten.
+4. Verwenden Sie die Methode InsertField, um das Konvertierungsfeld mit der richtigen Syntax einzufügen.
+
+#### F: Welche Konvertierungsformate unterstützt Aspose.Words?
+
+A: Aspose.Words unterstützt eine Vielzahl von Konvertierungsformaten in Feldern, darunter Datumsformate, Zahlenformate, Textformate, Währungsformate, Prozentformate und mehr. Eine vollständige Liste der verfügbaren Konvertierungsformate finden Sie in der Aspose.Words-Dokumentation.
+
+#### F: Wie aktualisiere ich ein Konvertierungsfeld in einem Word-Dokument mit Aspose.Words?
+
+A: Um ein Konvertierungsfeld in einem Word-Dokument mit Aspose.Words zu aktualisieren, können Sie die UpdateFields-Methode verwenden. Diese Methode durchläuft das Dokument und aktualisiert alle Felder, einschließlich der Konvertierungsfelder, wobei die Werte basierend auf den aktuellen Daten neu berechnet werden.

@@ -14,7 +14,7 @@ Prima di iniziare, assicurati di aver installato e configurato la libreria Aspos
 
 ## Passaggio 1: definire la directory dei documenti
 
- Per iniziare, è necessario definire il percorso della directory in cui si desidera salvare il documento generato. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
+Per iniziare, è necessario definire il percorso della directory in cui si desidera salvare il documento generato. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

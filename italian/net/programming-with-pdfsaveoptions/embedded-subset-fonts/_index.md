@@ -1,8 +1,8 @@
 ---
-title: Caratteri di sottoinsieme incorporati
-linktitle: Caratteri di sottoinsieme incorporati
+title: Incorpora sottoinsiemi di caratteri nel documento PDF
+linktitle: Incorpora sottoinsiemi di caratteri nel documento PDF
 second_title: Riferimento all'API Aspose.Words per .NET
-description: Guida dettagliata per incorporare sottoinsiemi di caratteri in un PDF utilizzando Aspose.Words per .NET.
+description: Guida dettagliata per incorporare sottoinsiemi di caratteri in un documento PDF utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
@@ -61,3 +61,35 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOption
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 
 ```
+
+## Conclusione
+
+In questo tutorial, abbiamo imparato come incorporare sottoinsiemi di caratteri in un documento PDF utilizzando Aspose.Words per .NET. L'incorporamento di sottoinsiemi di font consente di ridurre le dimensioni del file PDF preservando l'aspetto del documento utilizzando solo i caratteri effettivamente utilizzati. Ciò garantisce una migliore compatibilità e prestazioni durante la visualizzazione e la stampa del PDF. Sentiti libero di esplorare ulteriormente le funzionalità di Aspose.Words per .NET per ottimizzare la generazione dei tuoi documenti PDF con sottoinsiemi di font incorporati.
+
+### Domande frequenti
+
+#### D: Cos'è l'incorporamento di sottoinsiemi di font in un documento PDF?
+R: L'incorporamento di sottoinsiemi di font in un documento PDF è il processo che consiste nell'includere solo i glifi utilizzati nel documento, piuttosto che includere tutti i font completi. Ciò riduce le dimensioni del file PDF includendo solo i dati dei font necessari per visualizzare i caratteri effettivamente utilizzati nel documento.
+
+#### D: Qual è la differenza tra l'incorporamento di caratteri completi e l'incorporamento di sottoinsiemi di caratteri?
+R: Incorporamento completo dei caratteri significa includere tutti i caratteri utilizzati nel documento nel file PDF, il che garantisce che il documento venga visualizzato esattamente come è stato progettato, ma può aumentare le dimensioni del file PDF. Al contrario, l'incorporamento di sottoinsiemi di caratteri contiene solo i glifi utilizzati nel documento, riducendo così le dimensioni del file PDF, ma limitando la possibilità di replicare esattamente l'aspetto del documento se in seguito vengono aggiunti altri caratteri.
+
+#### D: Come posso incorporare sottoinsiemi di caratteri in un documento PDF utilizzando Aspose.Words per .NET?
+R: Per incorporare sottoinsiemi di caratteri in un documento PDF utilizzando Aspose.Words per .NET, attenersi alla seguente procedura:
+
+ Imposta il percorso della directory del documento sostituendo`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
+
+ Caricare il documento che si desidera elaborare utilizzando il file`Document` class e il percorso del documento.
+
+ Configura le opzioni di salvataggio PDF creando un'istanza del file`PdfSaveOptions` classe e l'impostazione del`EmbedFullFonts` proprietà a`false`Ciò garantisce che nel file PDF vengano inclusi solo i sottoinsiemi di font utilizzati nel documento.
+
+ Salva il documento in formato PDF con i sottoinsiemi di caratteri incorporati utilizzando il file`Save` metodo del`Document` oggetto, specificando il nome del file di output e le opzioni di salvataggio configurate in precedenza.
+
+#### D: Quali sono i vantaggi dell'incorporamento di sottoinsiemi di font in un documento PDF?
+R: I vantaggi dell'incorporamento di sottoinsiemi di font in un documento PDF sono:
+
+Dimensioni ridotte del file PDF: includendo solo i glifi utilizzati nel documento, la dimensione del file PDF viene ridotta rispetto all'incorporamento di caratteri completi.
+
+Conservazione dell'aspetto del documento: i sottoinsiemi di caratteri inclusi nel file PDF consentono di riprodurre l'aspetto del documento utilizzando solo i caratteri effettivamente utilizzati.
+
+Compatibilità con le restrizioni della licenza: l'incorporamento di sottoinsiemi di caratteri può essere preferito nei casi in cui i caratteri completi non possono essere incorporati legalmente a causa di restrizioni di licenza.

@@ -50,7 +50,7 @@ In diesem Beispiel speichern wir das konvertierte Dokument unter Verwendung der 
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Word-Dokument
+// Laden Sie das Word-Dokument
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
 // Konfigurieren Sie Sicherungsoptionen mit der Funktion „Schriftarten vom Zielcomputer verwenden“.

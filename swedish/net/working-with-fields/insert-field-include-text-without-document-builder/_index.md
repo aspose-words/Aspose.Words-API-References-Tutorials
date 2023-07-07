@@ -1,5 +1,5 @@
 ---
-title: Infoga FieldIncludeText utan dokumentbyggare
+title: Infoga fält Inkludera text utan dokumentbyggare
 linktitle: Infoga FieldIncludeText utan dokumentbyggare
 second_title: Aspose.Words för .NET API Referens
 description: Lär dig hur du infogar ett FieldIncludeText-fält i dina Word-dokument med Aspose.Words för .NET.
@@ -12,7 +12,7 @@ Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som anv
 
 ## Steg 1: Installation av dokumentkatalog
 
-I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
+den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -80,3 +80,21 @@ doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 I det här exemplet skapade vi ett nytt dokument, initierade ett stycke, infogade en FieldIncludeTexten som anger bokmärkesnamnet och källfilens namn och sparade dokumentet med ett specificerat filnamn.
 
 Detta avslutar vår guide om hur du använder funktionen "Insert a FieldIncludeText" med Aspose.Words för .NET.
+
+### FAQ's
+
+#### F: Hur kan jag ange källfilen för textinkluderingsfältet i Aspose.Words för .NET?
+
+ S: För att ange källfilen för textinkluderingsfältet i Aspose.Words för .NET kan du använda`FieldIncludeText.SourceFullName` egenskap för att ställa in den fullständiga sökvägen till källfilen. Se till att källfilen är tillgänglig och innehåller det innehåll du vill inkludera i textinkluderingsfältet.
+
+#### F: Kan jag inkludera text från ett makro i textinkluderingsfältet med Aspose.Words för .NET?
+
+ S: Ja, du kan inkludera text från ett makro i textinkluderingsfältet med Aspose.Words för .NET. Du kan använda`FieldIncludeText.IncludeText` egenskap för att ange namnet på makrot vars innehåll ska inkluderas i fältet.
+
+#### F: Påverkar Word-dokumentstrukturen med Aspose.Words för .NET om du infogar ett textinkluderat fält utan dokumentbyggaren?
+
+S: Att infoga ett textinkluderingsfält utan dokumentbyggaren påverkar inte direkt strukturen i Word-dokumentet. Det lägger dock till ett nytt fältelement till dokumentinnehållet. Du kan manipulera dokumentstrukturen genom att lägga till, ta bort eller ändra befintliga element enligt dina behov.
+
+#### F: Kan jag anpassa utseendet på textinkluderingsfältet i ett Word-dokument med Aspose.Words för .NET?
+
+S: Textinkluderingsfältet anpassar inte direkt utseendet i ett Word-dokument. Du kan dock formatera den inkluderade texten med hjälp av styckeegenskaper, teckensnittsegenskaper och andra formateringsobjekt som finns tillgängliga i Aspose.Words för .NET.

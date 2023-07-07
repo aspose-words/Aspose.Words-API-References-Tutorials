@@ -25,7 +25,7 @@ Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 Теперь мы настроим параметры поиска и замены, указав направление поиска и обратный вызов замены, чтобы вставить документ в другой документ. Вот как:
 
 ```csharp
-//Настройте параметры поиска и замены.
+// Настройте параметры поиска и замены.
 FindReplaceOptions options = new FindReplaceOptions
 {
 Direction = FindReplaceDirection.Backward,

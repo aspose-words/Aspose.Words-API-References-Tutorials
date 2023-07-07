@@ -86,7 +86,7 @@ foreach (Paragraph para in paragraphs)
 	if (para.ParagraphFormat.PageBreakBefore)
 		para.ParagraphFormat.PageBreakBefore = false;
 
-	//Paragraftaki tüm çalıştırmaları sayfa sonları için kontrol edin ve bunları kaldırın.
+	// Paragraftaki tüm çalıştırmaları sayfa sonları için kontrol edin ve bunları kaldırın.
 	foreach (Run run in para.Runs)
 	{
 		if (run.Text.Contains(ControlChar.PageBreak))

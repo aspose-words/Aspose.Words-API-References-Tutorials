@@ -21,10 +21,10 @@ Genom att följa dessa tutorials kommer du att kunna hantera avsnitt i dina Word
 | [Lägg till avsnitt](./add-section/) | I den här självstudien lär du dig hur du lägger till ett avsnitt i ett Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide för att strukturera ditt dokument. |
 | [Ta bort avsnitt](./delete-section/) | I den här självstudien lär du dig hur du tar bort ett specifikt avsnitt från ett Word-dokument med Aspose.Words för .NET. |
 | [Ta bort alla avsnitt](./delete-all-sections/) | I den här handledningen lär du dig hur du tar bort alla avsnitt från ett Word-dokument med Aspose.Words för .NET. |
-| [Lägg till avsnittsinnehåll](./append-section-content/) | I den här handledningen lär du dig hur du lägger till innehåll i specifika delar av ett Word-dokument med Aspose.Words för .NET.  |
+| [Lägg till avsnittsordinnehåll](./append-section-content/) | I den här självstudien lär du dig hur du lägger till ordinnehåll i specifika delar av ett Word-dokument med Aspose.Words för .NET.  |
 | [Klonsektion](./clone-section/) | den här handledningen lär du dig hur du klona ett avsnitt i ett Word-dokument med Aspose.Words för .NET. Steg för steg guide. |
 | [Kopiera avsnitt](./copy-section/) | I den här handledningen lär du dig hur du kopierar ett avsnitt från ett Word-dokument till ett annat dokument med Aspose.Words för .NET. |
 | [Ta bort innehåll i sidhuvud](./delete-header-footer-content/) | I den här handledningen lär du dig hur du tar bort sidhuvud och sidfotsinnehåll från ett Word-dokument med Aspose.Words för .NET.  |
 | [Ta bort avsnittsinnehåll](./delete-section-content/) | I den här handledningen lär du dig hur du tar bort innehåll från en specifik del av ett Word-dokument med Aspose.Words för .NET. |
-| [Ändra sidinställningar i alla avsnitt](./modify-page-setup-in-all-sections/) | I den här handledningen lär du dig hur du ändrar sidinställningarna i alla delar av ett Word-dokument med Aspose.Words för .NET. |
+| [Ändra Word Page Setup i alla avsnitt](./modify-page-setup-in-all-sections/) | I den här självstudien kan du lära dig hur du ändrar sidinställningarna för Word i alla delar av ett Word-dokument med Aspose.Words för .NET. |
 | [Avsnitt Åtkomst via index](./sections-access-by-index/) | I den här handledningen lär du dig hur du kommer åt delar av ett Word-dokument genom att indexera och ändrar deras inställningar med Aspose.Words för .NET. |

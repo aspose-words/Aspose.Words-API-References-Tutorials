@@ -30,7 +30,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Créer un nouveau document
 Document doc = new Document();
 
-// Créer un générateur de documents
+//Créer un générateur de documents
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ## Conclusion
 Dans ce didacticiel, nous avons vu comment effectuer le formatage des polices dans un document Word à l'aide de Aspose.Words pour .NET. Le formatage des polices vous permet de personnaliser l'apparence du texte dans vos documents. N'hésitez pas à utiliser cette fonctionnalité pour créer des documents attrayants et professionnels.
+
+### FAQ
+
+#### Q : Est-il possible de modifier la taille de la police d'un texte spécifique dans un document Word ?
+
+R : Oui, avec Aspose.Words, vous pouvez facilement modifier la taille de la police d'un texte spécifique dans un document Word. Vous pouvez utiliser l'API pour sélectionner le texte souhaité et appliquer la taille de police appropriée.
+
+#### Q : Puis-je appliquer différents styles de police à différents paragraphes dans un document Word ?
+
+R : Absolument ! Aspose.Words vous permet d'appliquer différents styles de police à différents paragraphes d'un document Word. Vous pouvez utiliser les méthodes fournies par l'API pour formater individuellement chaque paragraphe selon vos besoins.
+
+#### Q : Comment puis-je mettre en surbrillance du texte en gras dans un document Word ?
+
+R : Avec Aspose.Words, vous pouvez facilement mettre en surbrillance du texte en gras dans un document Word. Appliquez simplement le style de police gras au texte spécifique à l'aide de l'API.
+
+#### Q : Aspose.Words prend-il en charge les polices personnalisées ?
+
+R : Oui, Aspose.Words prend en charge les polices personnalisées dans les documents Word. Vous pouvez utiliser des polices personnalisées dans vos documents et les formater selon vos préférences.
+
+#### Q : Comment puis-je appliquer une couleur de police spécifique au texte d'un document Word ?
+
+R : Avec Aspose.Words, vous pouvez facilement appliquer une couleur de police spécifique au texte d'un document Word. Utilisez l'API pour sélectionner du texte et appliquer la couleur de police souhaitée en spécifiant le code de couleur approprié.

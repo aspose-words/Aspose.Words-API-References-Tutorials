@@ -38,3 +38,21 @@ builder.Insertlink("Aspose", "https://www.aspose.com", yanlış);
 ```
 Tebrikler! Artık bağlantılar özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.
 
+
+### SSS
+
+#### S: Aspose.Words'te bir URL'ye nasıl bağlantı verebilirim?
+
+ C: Aspose.Words'te bir URL adresine bağlanmak için`<a>` ile etiketle`href` URL adresini içeren özellik. Örneğin, kullanabilirsiniz`<a href="https://www.aspose.com">Click Here</a>` "Buraya tıklayın" görünen metniyle "https://www.example.com " URL'sine köprü oluşturmak için.
+
+#### S: Aspose.Words'te dahili bir yer imine bağlantı oluşturmak mümkün mü?
+
+ C: Evet, Aspose.Words'te dahili bir yer imine bağlantı vermek mümkündür. kullanabilirsiniz`<a>` ile etiketle`href` önünde bir kare (#) bulunan yer iminin adını içeren öznitelik. Örneğin,`<a href="#bookmark1">Go to bookmark 1</a>` belgedeki "bookmark1" adlı yer imine bağlantı verecektir.
+
+#### S: Aspose.Words'te bir bağlantının görünen metnini nasıl özelleştirebilirim?
+
+C: Aspose.Words'te bir bağlantının görünen metnini özelleştirmek için,`<a>` etiketler. Örneğin,`<a href="https://www.aspose.com">Click here</a>` köprü olarak "Buraya tıklayın" metnini görüntüler.
+
+#### S: Aspose.Words'te bir bağlantı için hedef belirtebilir miyim?
+
+ C: Evet, Aspose.Words'te bir bağlantı için bir hedef belirleyebilirsiniz.`target` özniteliği`<a>` etiket. Örneğin,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` bağlantıyı yeni bir pencerede veya sekmede açacaktır.

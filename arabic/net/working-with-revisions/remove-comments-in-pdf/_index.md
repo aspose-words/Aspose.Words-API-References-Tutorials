@@ -1,6 +1,6 @@
 ---
-title: إزالة التعليقات في ملف PDF
-linktitle: إزالة التعليقات في ملف PDF
+title: إزالة التعليقات في ملف Pdf
+linktitle: إزالة التعليقات في ملف Pdf
 second_title: Aspose.Words لمراجع .NET API
 description: قم بإزالة التعليقات في ملف PDF باستخدام Aspose.Words for .NET.
 type: docs
@@ -56,4 +56,34 @@ Document doc = new Document(MyDir + "Revisions.docx");
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 
 doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
+```
+
+## خاتمة
+
+في هذا البرنامج التعليمي ، تعلمنا كيفية إزالة التعليقات من ملف PDF باستخدام Aspose.Words for .NET. باستخدام خيارات التخطيط المناسبة ، تمكنا من إخفاء التعليقات عند إنشاء ملف PDF. يوفر Aspose.Words for .NET مرونة كبيرة في معالجة ملفات Word وتحويلها إلى تنسيقات مختلفة ، بما في ذلك PDF. يمكنك الآن تطبيق هذه المعرفة لإزالة التعليقات من ملفات PDF الخاصة بك باستخدام Aspose.Words for .NET.
+
+### الأسئلة الشائعة لإزالة التعليقات في ملف pdf
+
+#### س: كيف يمكن تحميل مستند في Aspose.Words لـ .NET؟
+
+ ج: استخدم ملف`Document` فئة Aspose.Words لـ .NET لتحميل مستند من ملف. يمكنك تحديد مسار المستند بالكامل.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### س: كيف تخفي التعليقات في ملف PDF الذي تم إنشاؤه باستخدام Aspose.Words for .NET؟
+
+ ج: استخدم ملف`CommentDisplayMode` ممتلكات`LayoutOptions` لتكوين كيفية عرض التعليقات عند إنشاء ملف PDF. لإخفاء التعليقات ، اضبط هذه الخاصية على`CommentDisplayMode.Hide`.
+
+```csharp
+doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
+```
+
+#### س: كيف تحفظ المستند بصيغة PDF باستخدام Aspose.Words for .NET؟
+
+ ج: استخدم ملف`Save` طريقة`Document` كائن لحفظ المستند بتنسيق PDF. حدد المسار الكامل لملف PDF.
+
+```csharp
+doc.Save("path/to/the/file.pdf");
 ```

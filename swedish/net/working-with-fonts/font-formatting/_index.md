@@ -30,7 +30,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Skapa ett nytt dokument
 Document doc = new Document();
 
-// Skapa en dokumentgenerator
+//Skapa en dokumentgenerator
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
@@ -82,4 +82,26 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 ```
 
 ## Slutsats
-den här handledningen såg vi hur man gör teckensnittsformatering i ett Word-dokument med Aspose.Words för .NET. Teckensnittsformatering låter dig anpassa utseendet på text i dina dokument. Använd gärna denna funktion för att skapa attraktiva och professionella dokument.
+I den här handledningen såg vi hur man gör teckensnittsformatering i ett Word-dokument med Aspose.Words för .NET. Teckensnittsformatering låter dig anpassa utseendet på text i dina dokument. Använd gärna denna funktion för att skapa attraktiva och professionella dokument.
+
+### FAQ's
+
+#### F: Är det möjligt att ändra teckenstorleken på specifik text i ett Word-dokument?
+
+S: Ja, med Aspose.Words kan du enkelt ändra teckenstorleken på specifik text i ett Word-dokument. Du kan använda API:et för att välja önskad text och använda lämplig teckenstorlek.
+
+#### F: Kan jag använda olika teckensnittsstilar på olika stycken i ett Word-dokument?
+
+A: Absolut! Aspose.Words låter dig tillämpa olika teckensnittsstilar på olika stycken i ett Word-dokument. Du kan använda metoderna som tillhandahålls av API:et för att formatera varje stycke individuellt efter behov.
+
+#### F: Hur kan jag markera fet text i ett Word-dokument?
+
+S: Med Aspose.Words kan du enkelt markera fet text i ett Word-dokument. Använd bara den fetstilta stilen på den specifika texten med hjälp av API:et.
+
+#### F: Stöder Aspose.Words anpassade typsnitt?
+
+S: Ja, Aspose.Words stöder anpassade teckensnitt i Word-dokument. Du kan använda anpassade teckensnitt i dina dokument och formatera dem enligt dina önskemål.
+
+#### F: Hur kan jag använda en specifik teckenfärg på text i ett Word-dokument?
+
+S: Med Aspose.Words kan du enkelt tillämpa en specifik teckenfärg på text i ett Word-dokument. Använd API:et för att välja text och tillämpa önskad teckensnittsfärg genom att ange lämplig färgkod.

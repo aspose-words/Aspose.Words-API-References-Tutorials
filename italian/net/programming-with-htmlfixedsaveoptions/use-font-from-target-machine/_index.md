@@ -50,7 +50,7 @@ In questo esempio, salviamo il documento convertito come "WorkingWithHtmlFixedSa
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento di Word
+// Carica il documento di Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
 // Configura le opzioni di backup con la funzione "Usa i caratteri dalla macchina di destinazione".

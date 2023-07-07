@@ -111,7 +111,7 @@ builder.InsertBreak(BreakType.SectionBreakNewPage);
 currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-//Questa sezione non ha bisogno di un'intestazione/piè di pagina diversa per la prima pagina, abbiamo solo bisogno di un frontespizio nel documento,
+// Questa sezione non ha bisogno di un'intestazione/piè di pagina diversa per la prima pagina, abbiamo solo bisogno di un frontespizio nel documento,
 // e l'intestazione/piè di pagina per questa pagina è già stata definita nella sezione precedente.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
@@ -119,7 +119,7 @@ pageSetup.DifferentFirstPageHeaderFooter = false;
 // la larghezza della pagina è diversa per la nuova sezione, quindi dobbiamo impostare diverse larghezze di cella per una tabella a piè di pagina.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-// Se vogliamo utilizzare le intestazioni/piè di pagina già esistenti per questa sezione,
+//Se vogliamo utilizzare le intestazioni/piè di pagina già esistenti per questa sezione,
 // ma con alcune piccole modifiche, potrebbe avere senso copiare intestazioni/piè di pagina
 // dalla sezione precedente e applichiamo le modifiche necessarie dove vogliamo.
 CopyHeadersFootersFromPreviousSection(currentSection);
@@ -134,105 +134,127 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
- Aggiungiamo un'interruzione di pagina e un'interruzione di sezione per creare una nuova pagina in cui saranno visibili le intestazioni/piè di pagina principali. Impostiamo i parametri per la nuova sezione, quindi usiamo il file`CopyHeadersFootersFromPreviousSection`metodo per copiare le intestazioni/piè di pagina dalla sezione precedente. Infine, impostiamo le larghezze di cella appropriate per la tabella principale a piè di pagina e salviamo il documento.
+ Aggiungiamo un'interruzione di pagina e un'interruzione di sezione per creare una nuova pagina in cui saranno visibili le intestazioni/piè di pagina principali. Impostiamo i parametri per la nuova sezione, quindi usiamo il file`CopyHeadersFootersFromPreviousSection` metodo per copiare le intestazioni/piè di pagina dalla sezione precedente. Infine, impostiamo le larghezze di cella appropriate per la tabella principale a piè di pagina e salviamo il documento.
 
 ### Esempio di codice sorgente per creare intestazioni e piè di pagina con Aspose.Words per .NET
 
 ```csharp
-	// Il percorso della directory dei documenti.
-	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Il percorso della directory dei documenti.
+string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
-	Section currentSection = builder.CurrentSection;
-	PageSetup pageSetup = currentSection.PageSetup;
-	// Specificare se vogliamo che intestazioni/piè di pagina della prima pagina siano diversi dalle altre pagine.
-	// È inoltre possibile utilizzare la proprietà PageSetup.OddAndEvenPagesHeaderFooter per specificare
-	// intestazioni/piè di pagina diversi per le pagine pari e dispari.
-	pageSetup.DifferentFirstPageHeaderFooter = true;
-	pageSetup.HeaderDistance = 20;
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
+Section currentSection = builder.CurrentSection;
+PageSetup pageSetup = currentSection.PageSetup;
+// Specificare se vogliamo che intestazioni/piè di pagina della prima pagina siano diversi dalle altre pagine.
+// È inoltre possibile utilizzare la proprietà PageSetup.OddAndEvenPagesHeaderFooter per specificare
+// intestazioni/piè di pagina diversi per le pagine pari e dispari.
+pageSetup.DifferentFirstPageHeaderFooter = true;
+pageSetup.HeaderDistance = 20;
 
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.Font.Size = 14;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+builder.Font.Name = "Arial";
+builder.Font.Bold = true;
+builder.Font.Size = 14;
 
-	pageSetup.HeaderDistance = 20;
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 
-	// Inserisci un'immagine posizionata nell'angolo superiore/sinistro dell'intestazione.
-	// La distanza dai bordi superiore/sinistro della pagina è impostata su 10 punti.
-	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+pageSetup.HeaderDistance = 20;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+// Inserisci un'immagine posizionata nell'angolo superiore/sinistro dell'intestazione.
+// La distanza dai bordi superiore/sinistro della pagina è impostata su 10 punti.
+builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
+	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer.");
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
-	// Usiamo una tabella con due celle per creare una parte del testo sulla riga (con numerazione delle pagine).
-	// Da allineare a sinistra e l'altra parte del testo (con copyright) da allineare a destra.
-	builder.StartTable();
+builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	builder.CellFormat.ClearFormatting();
+//Usiamo una tabella con due celle per creare una parte del testo sulla riga (con numerazione delle pagine).
+// Da allineare a sinistra e l'altra parte del testo (con copyright) da allineare a destra.
+builder.StartTable();
 
-	builder.InsertCell();
+builder.CellFormat.ClearFormatting();
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+builder.InsertCell();
 
-	// Utilizza i campi PAGE e NUMPAGES per calcolare automaticamente il numero di pagina corrente e molte pagine.
-	builder.Write("Page ");
-	builder.InsertField("PAGE", "");
-	builder.Write(" of ");
-	builder.InsertField("NUMPAGES", "");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
+// Utilizza i campi PAGE e NUMPAGES per calcolare automaticamente il numero di pagina corrente e molte pagine.
+builder.Write("Page ");
+builder.InsertField("PAGE", "");
+builder.Write(" of ");
+builder.InsertField("NUMPAGES", "");
 
-	builder.InsertCell();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+builder.InsertCell();
 
-	builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
 
-	builder.EndRow();
-	builder.EndTable();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToDocumentEnd();
+builder.EndRow();
+builder.EndTable();
 
-	// Crea un'interruzione di pagina per creare una seconda pagina in cui verranno visualizzate le intestazioni/piè di pagina principali.
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.InsertBreak(BreakType.SectionBreakNewPage);
+builder.MoveToDocumentEnd();
 
-	currentSection = builder.CurrentSection;
-	pageSetup = currentSection.PageSetup;
-	pageSetup.Orientation = Orientation.Landscape;
-	//Questa sezione non ha bisogno di una diversa intestazione/piè di pagina della prima pagina, abbiamo bisogno di un solo frontespizio nel documento,
-	// e l'intestazione/piè di pagina per questa pagina è già stata definita nella sezione precedente.
-	pageSetup.DifferentFirstPageHeaderFooter = false;
+// Crea un'interruzione di pagina per creare una seconda pagina in cui verranno visualizzate le intestazioni/piè di pagina principali.
+builder.InsertBreak(BreakType.PageBreak);
+builder.InsertBreak(BreakType.SectionBreakNewPage);
 
-	// Questa sezione mostra intestazioni/piè di pagina della sezione precedente
-	// per impostazione predefinita chiama currentSection.HeadersFooters.LinkToPrevious(false) per annullare questa larghezza della pagina
-	// è diverso per la nuova sezione, e quindi dobbiamo impostare diverse larghezze di cella per una tabella a piè di pagina.
-	currentSection.HeadersFooters.LinkToPrevious(false);
+currentSection = builder.CurrentSection;
+pageSetup = currentSection.PageSetup;
+pageSetup.Orientation = Orientation.Landscape;
+// Questa sezione non ha bisogno di una diversa intestazione/piè di pagina della prima pagina, abbiamo bisogno di un solo frontespizio nel documento,
+// e l'intestazione/piè di pagina per questa pagina è già stata definita nella sezione precedente.
+pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// Se vogliamo utilizzare il set di intestazioni/piè di pagina già esistente per questa sezione.
-	// Ma con alcune modifiche minori, potrebbe essere opportuno copiare intestazioni/piè di pagina
-	// dalla sezione precedente e applichiamo le modifiche necessarie dove vogliamo.
-	CopyHeadersFootersFromPreviousSection(currentSection);
+// Questa sezione mostra intestazioni/piè di pagina della sezione precedente
+// per impostazione predefinita chiama currentSection.HeadersFooters.LinkToPrevious(false) per annullare questa larghezza della pagina
+// è diverso per la nuova sezione, e quindi dobbiamo impostare diverse larghezze di cella per una tabella a piè di pagina.
+currentSection.HeadersFooters.LinkToPrevious(false);
 
-	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
+// Se vogliamo utilizzare il set di intestazioni/piè di pagina già esistente per questa sezione.
+// Ma con alcune modifiche minori, potrebbe essere opportuno copiare intestazioni/piè di pagina
+//dalla sezione precedente e applichiamo le modifiche necessarie dove vogliamo.
+CopyHeadersFootersFromPreviousSection(currentSection);
 
-	Row row = primaryFooter.Tables[0].FirstRow;
-	row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-	row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
 
-	doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
+Row row = primaryFooter.Tables[0].FirstRow;
+row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+
+doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
+
+### FAQ
+
+#### D: Come posso aggiungere un'intestazione al mio documento in Aspose.Words?
+
+ A: Per aggiungere un'intestazione al tuo documento in Aspose.Words, puoi usare il`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.HeaderPrimary)` metodo. Questo metodo aggiunge un'intestazione principale alla prima sezione del documento.
+
+#### D: Come posso aggiungere un piè di pagina al mio documento in Aspose.Words?
+
+ A: Per aggiungere un piè di pagina al tuo documento in Aspose.Words, puoi usare il`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` metodo. Questo metodo aggiunge un piè di pagina principale alla prima sezione del documento.
+
+#### D: Come posso aggiungere testo alla mia intestazione o piè di pagina in Aspose.Words?
+
+ A: Per aggiungere testo alla tua intestazione o piè di pagina in Aspose.Words, puoi usare il`HeaderFooter.Paragraphs` proprietà per ottenere la raccolta di paragrafi dell'intestazione o del piè di pagina, quindi aggiungere un paragrafo contenente il testo a questa raccolta utilizzando il`ParagraphCollection.Add` metodo.
+
+#### D: Posso personalizzare il contenuto dell'intestazione o del piè di pagina con immagini e numeri di pagina in Aspose.Words?
+
+A: Sì, puoi personalizzare il contenuto dell'intestazione o del piè di pagina con immagini e numeri di pagina in Aspose.Words. Puoi usare oggetti come`Shape` per aggiungere immagini e oggetti come`Field` per aggiungere i numeri di pagina all'intestazione o al piè di pagina.
+
+#### D: Posso cambiare il carattere, la dimensione e il colore del testo nella mia intestazione o piè di pagina in Aspose.Words?
+
+ A: Sì, puoi cambiare il carattere, la dimensione e il colore del testo nell'intestazione o nel piè di pagina in Aspose.Words. È possibile accedere a proprietà di formattazione del testo come`Font` per cambiare il carattere,`Size` per regolare le dimensioni, e`Color` per impostare il colore del testo.

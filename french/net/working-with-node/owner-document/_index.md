@@ -83,9 +83,28 @@ para.ParagraphFormat.StyleName = "Heading 1";
 // Ajoutez maintenant le paragraphe au texte principal de la première section.
 doc.FirstSection.Body.AppendChild(para);
 
-//Le nœud Paragraphe est maintenant un enfant du nœud Corps.
+// Le nœud Paragraphe est maintenant un enfant du nœud Corps.
 Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
+### FAQ
 
+#### Q : Qu'est-ce qu'un document propriétaire dans Node.js ?
 
+: Un document propriétaire dans Node.js est le document XML auquel appartient un nœud spécifique. Il représente l'instance du document XML contenant le nœud.
+
+#### Q : Comment obtenir le document propriétaire d'un nœud ?
+
+ R : Pour obtenir le document propriétaire d'un nœud dans Node.js, vous pouvez utiliser le`ownerDocument` propriété du nœud. Cette propriété renvoie le document XML propriétaire du nœud.
+
+#### Q : À quoi sert le document propriétaire ?
+
+R : Le document propriétaire est utilisé pour représenter le contexte global d'un nœud dans un document XML. Il donne accès à d'autres nœuds du document et permet d'effectuer des opérations sur ceux-ci.
+
+#### Q : Peut-on modifier le document propriétaire d'un nœud ?
+
+R : Dans la plupart des cas, le propriétaire du document d'un nœud est déterminé lors de la création du nœud et ne peut pas être modifié directement. Le document propriétaire est une propriété en lecture seule.
+
+#### Q : Comment accéder aux nœuds d'un document propriétaire ?
+
+ : Pour accéder aux nœuds d'un document propriétaire, vous pouvez utiliser les méthodes et propriétés fournies par l'API XML utilisée dans votre environnement Node.js. Par exemple, vous pouvez utiliser des méthodes telles que`getElementsByTagName` ou`querySelector` pour sélectionner des nœuds spécifiques dans le document.

@@ -89,3 +89,25 @@ doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 
 ## Slutsats
 Grattis! Du har framgångsrikt lärt dig hur du ändrar språket i Word-dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide och använda den medföljande källkoden kan du nu styra formateringen av datum och siffror under kopplingsoperationer. Anpassa språket efter dina krav för att säkerställa korrekt och konsekvent formatering i dina dokument.
+
+### FAQ's
+
+#### F: Är Aspose.Words kompatibel med olika versioner av Microsoft Word?
+
+S: Ja, Aspose.Words är kompatibelt med olika versioner av Microsoft Word inklusive Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 och Word 2019.
+
+#### F: Stöder Aspose.Words komplexa fältstrukturer?
+
+A: Absolut! Aspose.Words erbjuder omfattande stöd för komplexa fältstrukturer, inklusive kapslade fält, beräkningar och villkorliga uttryck. Du kan använda detta kraftfulla API för att arbeta med vilken typ av fältstruktur som helst.
+
+#### F: Stöder Aspose.Words fältuppdateringar?
+
+S: Ja, Aspose.Words låter dig uppdatera fält enligt ett schema. Du kan enkelt uppdatera fältvärden, uppdatera beräkningar och utföra andra fältrelaterade operationer med hjälp av API:et.
+
+#### F: Är det möjligt att konvertera fält till vanlig text med Aspose.Words?
+
+A: Visst! Aspose.Words tillhandahåller metoder för att konvertera fält till vanlig text. Detta kan vara användbart när du behöver extrahera innehållet utan någon formatering eller fältrelaterad funktionalitet.
+
+#### F: Är det möjligt att generera Word-dokument med dynamiska fält med Aspose.Words?
+
+A: Absolut! Aspose.Words erbjuder robust funktionalitet för att generera Word-dokument med dynamiska fält. Du kan skapa mallar med fördefinierade fält och fylla dem med data dynamiskt, vilket ger en flexibel och effektiv lösning för dokumentgenerering.

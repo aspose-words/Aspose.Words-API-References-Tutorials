@@ -54,7 +54,7 @@ Dans cet exemple, nous enregistrons le document converti sous "WorkingWithPclSav
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document Word
+// Charger le document Word
 
 
 Document doc = new Document(dataDir + "Rendering.docx");

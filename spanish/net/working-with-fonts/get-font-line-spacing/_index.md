@@ -21,7 +21,7 @@ Antes de comenzar, asegúrese de tener los siguientes elementos:
 // Crear un nuevo documento
 Document doc = new Document();
 
-// Crear un generador de documentos
+//Crear un generador de documentos
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
  A continuación, configuraremos la fuente configurando el`Name` propiedad del generador de documentos.
 
 ```csharp
-//Configurar la fuente
+// Configurar la fuente
 builder.Font.Name = "Calibri";
 ```
 
@@ -62,3 +62,25 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 
 ## Conclusión
 En este tutorial, vimos cómo obtener el espacio entre líneas de fuente en un documento de Word con Aspose.Words para .NET. El espacio entre líneas de fuente es importante para controlar el espacio vertical entre líneas de texto. No dude en utilizar esta función para personalizar la apariencia de su texto en sus documentos.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo cambiar el espacio entre líneas de un texto específico en un documento de Word?
+
+R: Con Aspose.Words, puede cambiar fácilmente el espacio entre líneas de un texto específico en un documento de Word. Use la API para seleccionar el texto deseado y ajuste el espacio entre líneas especificando el valor apropiado.
+
+#### P: ¿Es posible aplicar el espaciado exacto entre líneas en un documento de Word?
+
+R: Sí, Aspose.Words le permite aplicar espacios exactos entre líneas en un documento de Word. Puede especificar un valor preciso para el espacio entre líneas mediante la API.
+
+#### P: ¿Cómo puedo ajustar el espacio entre líneas para todo el documento de Word?
+
+R: Con Aspose.Words, puede ajustar fácilmente el espacio entre líneas para todo el documento de Word. Utilice los métodos proporcionados por la API para especificar el espacio entre líneas deseado para todo el documento.
+
+#### P: ¿Admite Aspose.Words el interlineado múltiple?
+
+R: Sí, Aspose.Words admite espacios entre líneas múltiples en documentos de Word. Puede configurar espacios múltiples, como 1,5 veces o 2 veces el espacio normal, para las líneas de su texto.
+
+#### P: ¿Cómo puedo evitar problemas de superposición de líneas al ajustar el espacio entre líneas?
+
+R: Para evitar problemas de superposición de líneas al ajustar el espaciado entre líneas, asegúrese de elegir los valores de espaciado adecuados. Pruebe también la representación final de su documento para asegurarse de que el texto siga siendo legible y tenga un buen formato.

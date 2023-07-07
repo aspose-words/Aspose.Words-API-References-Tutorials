@@ -84,7 +84,7 @@ Document doc = new Document(dataDir + "Header and footer types.docx");
 foreach (Section section in doc)
 {
 	// Upp till tre olika sidfötter är möjliga i ett avsnitt (för första, jämna och udda sidor)
-	// vi kontrollerar och raderar dem alla.
+	//vi kontrollerar och raderar dem alla.
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 

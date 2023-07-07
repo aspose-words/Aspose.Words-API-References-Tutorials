@@ -97,7 +97,7 @@ builder.ListFormat.RemoveNumbers();
 // Um die erste Liste wiederzuverwenden, müssen wir die Nummerierung neu starten, indem wir eine Kopie der ursprünglichen Listenformatierung erstellen.
 List list2 = doc.Lists.AddCopy(list1);
 
-// Wir können die neue Liste beliebig ändern, einschließlich der Festlegung einer neuen Startnummer.
+//Wir können die neue Liste beliebig ändern, einschließlich der Festlegung einer neuen Startnummer.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");
@@ -110,6 +110,23 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
             
 ```
 
+### FAQs
+
+#### F: Wie kann ich die Nummerierung einer Liste in Aspose.Words neu starten?
+
+ A: Um die Nummerierung einer Liste in Aspose.Words neu zu starten, können Sie die verwenden`ListRestartAtNumber` Methode der`List` Klasse. Mit dieser Methode können Sie einen neuen Wählwert festlegen, ab dem die Liste neu gestartet werden soll. Sie können zum Beispiel verwenden`list.ListRestartAtNumber(1)` um die Nummerierung wieder bei 1 zu beginnen.
+
+#### F: Ist es möglich, Präfix und Suffix der neu gestarteten Listennummerierung in Aspose.Words anzupassen?
+
+ A: Ja, Sie können Präfix und Suffix der neu gestarteten Listennummerierung in Aspose.Words anpassen. Der`ListLevel` Klasse bietet Eigenschaften wie`ListLevel.NumberPrefix` Und`ListLevel.NumberSuffix` mit denen Sie das Präfix und Suffix für jede Ebene in der Liste angeben können. Mit diesen Eigenschaften können Sie das Präfix und Suffix nach Bedarf anpassen.
+
+#### F: Wie kann ich einen bestimmten Nummerierungswert angeben, ab dem die Liste neu gestartet werden soll?
+
+ A: Um einen bestimmten Zahlenwert anzugeben, ab dem die Liste neu gestartet werden soll, können Sie die verwenden`ListRestartAtNumber`Methode, die den gewünschten Wert als Argument übergibt. Um beispielsweise die Nummerierung ab 5 neu zu starten, können Sie verwenden`list.ListRestartAtNumber(5)`.
+
+#### F: Ist es möglich, die mehrstufige Listennummerierung in Aspose.Words neu zu starten?
+
+ A: Ja, Aspose.Words unterstützt die Neustartnummerierung mehrerer Listenebenen. Sie können das anwenden`ListRestartAtNumber` -Methode auf jeder Listenebene, um die Nummerierung einzeln neu zu starten. Sie können zum Beispiel verwenden`list.Levels[0].ListRestartAtNumber(1)` um die erste Listenebene von 1 an neu zu starten, und`list.Levels[1].ListRestartAtNumber(1)` um die Liste der zweiten Ebene neu zu starten, beginnend bei 1, und so weiter.
 
 
 

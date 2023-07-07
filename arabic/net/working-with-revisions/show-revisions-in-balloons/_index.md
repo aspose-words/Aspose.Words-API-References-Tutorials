@@ -63,5 +63,33 @@ doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Rig
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
+## خاتمة
+
+في هذا البرنامج التعليمي ، تعلمنا كيفية عرض المراجعات في بالونات في مستند Word باستخدام Aspose.Words for .NET. باستخدام خيارات العرض المناسبة ، تمكنا من جعل المراجعات مرئية في فقاعات مع وجود أشرطة المراجعة على الجانب الأيمن. يوفر Aspose.Words for .NET العديد من الميزات القوية لمعالجة مستندات Word ، بما في ذلك إدارة المراجعة. يمكنك الآن استخدام هذه المعرفة لإظهار المراجعات في البالونات في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
 
 
+### التعليمات
+
+#### س: كيف يمكن تحميل مستند في Aspose.Words لـ .NET؟
+
+ ج: استخدم ملف`Document` فئة Aspose.Words لـ .NET لتحميل مستند من ملف. يمكنك تحديد مسار المستند بالكامل.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### س: كيف يتم عرض المراجعات في البالونات باستخدام Aspose.Words for .NET؟
+
+ ج: استخدم ملف`ShowInBalloons` ممتلكات`RevisionOptions` كائن لتكوين عرض المراجعات في البالونات. يمكنك ضبط هذه الخاصية على`ShowInBalloons.FormatAndDelete` لإظهار المراجعات في البالونات مع تنقيحات الحذف والتنسيق.
+
+```csharp
+doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
+```
+
+#### س: كيف تحفظ مستندًا بتنسيق PDF باستخدام Aspose.Words for .NET؟
+
+ ج: استخدم ملف`Save` طريقة`Document` كائن لحفظ المستند بتنسيق PDF. يجب تحديد مسار الوجهة الكامل بامتداد ".pdf".
+
+```csharp
+doc.Save("path/to/destination/document.pdf");
+```

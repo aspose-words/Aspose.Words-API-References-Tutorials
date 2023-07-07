@@ -8,14 +8,14 @@ weight: 10
 url: /zh/net/add-content-using-documentbuilder/insert-paragraph/
 ---
 
-在这个综合教程中，您将学习如何使用 Aspose.Words for .NET 将段落插入到 Word 文档中。我们将指导您完成整个过程，并为您提供必要的 C# 代码片段。在本指南结束时，您将能够向文档中添加格式化段落。
+在这个综合教程中，您将学习如何使用 Aspose.Words for .NET 将段落插入到 Word 文档中。我们将指导您完成整个过程，并为您提供必要的 C# 代码片段。在本指南结束时，您将能够向文档中添加格式化的段落。
 
 ## 先决条件
-在我们开始之前，请确保您具备以下先决条件：
+在我们开始之前，请确保您满足以下先决条件：
 - Aspose.Words for .NET 库安装在您的系统上。
 
 ## 第 1 步：创建新文档和 DocumentBuilder
-首先，使用 Document 类创建一个新文档并初始化一个 DocumentBuilder 对象：
+首先，使用 Document 类创建一个新文档并初始化 DocumentBuilder 对象：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -41,13 +41,13 @@ paragraphFormat.KeepTogether = true;
 ```
 
 ## 第 3 步：插入段落
-设置字体和格式后，使用 DocumentBuilder 类的 Writeln 方法插入一整段：
+设置字体和格式后，使用 DocumentBuilder 类的 Writeln 方法插入整个段落：
 
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```
 
-## 第 4 步：保存文档
+## 步骤 4：保存文档
 插入段落后，使用 Document 类的 Save 方法将文档保存到文件中：
 
 ```csharp
@@ -55,7 +55,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
 ## 使用 Aspose.Words for .NET 插入段落的示例源代码
-下面是使用 Aspose.Words for .NET 插入段落的完整源代码：
+以下是使用 Aspose.Words for .NET 插入段落的完整源代码：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -80,4 +80,4 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
 ## 结论
-恭喜！您已经成功学习了如何使用 Aspose.Words for .NET 将格式化的段落插入到 Word 文档中。按照分步指南并利用提供的源代码，您现在可以将具有特定字体、格式和对齐方式的自定义段落添加到您的文档中。
+恭喜！您已成功学习如何使用 Aspose.Words for .NET 将格式化段落插入到 Word 文档中。通过遵循分步指南并利用提供的源代码，您现在可以向文档添加具有特定字体、格式和对齐方式的自定义段落。

@@ -1,14 +1,14 @@
 ---
-title: Belge Yapısını Dışa Aktar
-linktitle: Belge Yapısını Dışa Aktar
+title: Word Belge Yapısını PDF Belgesine Aktar
+linktitle: Word Belge Yapısını PDF Belgesine Aktar
 second_title: Aspose.Words for .NET API Referansı
-description: Aspose.Words for .NET ile belge yapısını dışa aktarmak için adım adım kılavuz.
+description: Aspose.Words for .NET ile Word Belge Yapısını PDF Belgesine Aktarmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/export-document-structure/
 ---
 
-Bu makale, Belge Yapısını Dışa Aktar özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgenin yapısını nasıl dışa aktaracağınızı ve belgenin yapısı görünür şekilde bir PDF oluşturmayı öğrenebileceksiniz.
+Bu makale, Word Belge Yapısını PDF Belgesine Aktar özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgenin yapısını nasıl dışa aktaracağınızı ve belgenin yapısı görünür şekilde bir PDF oluşturmayı öğrenebileceksiniz.
 
 Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
@@ -62,3 +62,31 @@ Bu kadar ! Bir belge yapısını başarıyla dışa aktardınız ve Aspose.Words
             doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
         
 ```
+
+
+## Çözüm
+
+Bu eğitimde, bir Word belgesinin yapısının Aspose.Words for .NET kullanılarak bir PDF belgesine nasıl aktarılacağını açıkladık. Ana hatlarıyla belirtilen adımları izleyerek, belge yapınızın görünür olduğu bir PDF'i kolayca oluşturabilir ve belgede gezinmeyi ve arama yapmayı kolaylaştırabilirsiniz. Word belgelerinizin yapısını dışa aktarmak ve iyi yapılandırılmış PDF'ler oluşturmak için Aspose.Words for .NET'in özelliklerini kullanın.
+
+### Sıkça Sorulan Sorular
+
+#### S: Bir Word belgesinin yapısını bir PDF belgesine dışa aktarmak nedir?
+Y: Bir Word belgesinin yapısını bir PDF belgesine dışa aktarmak, görünür bir belge yapısına sahip bir PDF oluşturur. Belge yapısı genellikle başlıklar, bölümler, paragraflar ve belgenin diğer yapılandırılmış öğelerini içerir. Bu yapı, PDF belgesinde gezinmek ve arama yapmak için yararlı olabilir.
+
+#### S: Aspose.Words for .NET kullanarak bir Word belgesinin yapısını bir PDF belgesine nasıl aktarabilirim?
+C: Aspose.Words for .NET kullanarak bir Word belgesinin yapısını bir PDF belgesine dışa aktarmak için şu adımları izleyin:
+
+ örneğini oluşturun`Document` Word belgesine giden yolu belirten sınıf.
+
+ örneğini oluşturun`PdfSaveOptions` sınıflandırın ve ayarlayın`ExportDocumentStructure` mülkiyet`true`. Bu, belge yapısını dışa aktaracak ve PDF dosyasını düzenlerken Adobe Acrobat Pro'nun "İçerik" gezinme bölmesinde görünmesini sağlayacaktır.
+
+ Kullan`Save` yöntemi`Document`kaydetme seçeneklerini belirterek belgeyi PDF biçiminde kaydetmek için sınıf.
+
+#### S: Adobe Acrobat Pro ile bir PDF belgesinin yapısını nasıl görüntüleyebilirim?
+C: Bir PDF belgesinin yapısını Adobe Acrobat Pro ile görüntülemek için şu adımları izleyin:
+
+PDF belgesini Adobe Acrobat Pro'da açın.
+
+Sol gezinme çubuğunda, "İçerik" gezinme bölmesini görüntülemek için "İçerik" simgesini tıklayın.
+
+"İçerik" gezinme bölmesinde, başlıklar, bölümler ve diğer yapılandırılmış öğelerle birlikte belge yapısını göreceksiniz.

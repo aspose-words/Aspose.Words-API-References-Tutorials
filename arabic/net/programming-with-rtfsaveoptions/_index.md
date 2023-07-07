@@ -1,6 +1,6 @@
 ---
-title: البرمجة مع خيارات Rtfsave
-linktitle: البرمجة مع خيارات Rtfsave
+title: البرمجة باستخدام خيارات Rtfsave
+linktitle: البرمجة باستخدام خيارات Rtfsave
 second_title: Aspose.Words لمراجع .NET API
 description: استكشف البرمجة باستخدام خيارات حفظ RTF في Aspose.Words for .NET. تعرف على كيفية حفظ مستندات RTF وتخصيصها باستخدام البرامج التعليمية خطوة بخطوة وعينات التعليمات البرمجية C #.
 type: docs

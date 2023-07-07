@@ -52,7 +52,7 @@ Bu örnekte, dönüştürülen belgeyi belirtilen kaydetme seçeneklerini kullan
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Word belgesini yükleyin
+// Word belgesini yükleyin
 Document doc = new Document(dataDir + "Document.docx");
 
 // "Ölçü birimi" özelliği ile yedekleme seçeneklerinin yapılandırılması

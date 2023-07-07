@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
 
-den här handledningen kommer vi att utforska C#-källkoden som tillhandahålls för funktionen "Använd ett tabbtecken per nivå för listindrag" med Aspose.Words för .NET. Den här funktionen låter dig använda tabbtecken för indragningslistor på varje nivå, vilket ger större flexibilitet och kontroll över utseendet på dina dokument.
+I den här handledningen kommer vi att utforska C#-källkoden som tillhandahålls för funktionen "Använd ett tabbtecken per nivå för listindrag" med Aspose.Words för .NET. Den här funktionen låter dig använda tabbtecken för indragningslistor på varje nivå, vilket ger större flexibilitet och kontroll över utseendet på dina dokument.
 
 ## Steg 1: Sätta upp miljön
 
@@ -47,7 +47,7 @@ saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- I det här steget konfigurerar vi alternativen för att spara dokumentet. Vi skapar en ny`TxtSaveOptions` objekt och ställ in`ListIndentation.Count`egenskapen till 1 för att ange antalet tabbtecken per indragsnivå. Vi ställer också in`ListIndentation.Character` egenskapen till '\t' för att ange att vi vill använda tabbtecken.
+ I det här steget konfigurerar vi alternativen för att spara dokumentet. Vi skapar en ny`TxtSaveOptions` objekt och ställ in`ListIndentation.Count` egenskapen till 1 för att ange antalet tabbtecken per indragsnivå. Vi ställer också in`ListIndentation.Character` egenskapen till '\t' för att ange att vi vill använda tabbtecken.
 
 ## Steg 5: Spara dokumentet
 
@@ -87,3 +87,30 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListInde
 ```
 
 Nu när du har skapat ditt dokument med listindrag med tabbtecken kan du använda Markdown för att formatera ditt artikelinnehåll. Se till att använda lämpliga formateringstaggar för att markera titlar, undertexter och medföljande källkod.
+
+### Vanliga frågor
+
+#### F: Vad är funktionen "Använd ett tabbtecken per nivå för listindrag" med Aspose.Words för .NET?
+Funktionen "Använd ett tabbtecken per nivå för listindrag" med Aspose.Words för .NET tillåter att tabbtecken används för listindrag på varje nivå. Detta ger större flexibilitet och kontroll över utseendet på dina dokument.
+
+#### F: Hur kan jag använda den här funktionen med Aspose.Words för .NET?
+För att använda den här funktionen med Aspose.Words för .NET kan du följa dessa steg:
+
+Ställ in din utvecklingsmiljö genom att lägga till nödvändiga referenser och importera lämpliga namnområden.
+
+ Skapa en ny`Document` objekt och en tillhörande`DocumentBuilder` objekt.
+
+ Använd`DocumentBuilder` för att skapa en lista med flera nivåer av indrag med hjälp av metoderna`ApplyNumberDefault()` för att använda standardformatet för listnummer,`Writeln()` och`Write()` för att lägga till objekt i listan, och`ListIndent()` för att öka indraget på varje nivå.
+
+ Konfigurera sparalternativ genom att skapa en`TxtSaveOptions` objekt och ställa in egenskaperna`ListIndentation.Count` till antalet tabtecken per nivå och`ListIndentation.Character` till`'\t'` för att använda tabbtecken.
+
+ Spara dokumentet med hjälp av`Save()` metod för dokumentet som anger den fullständiga sökvägen till utdatafilen och alternativen för att spara.
+
+#### F: Är det möjligt att anpassa antalet tabbtecken per nivå för listindrag?
+ Ja, du kan anpassa antalet tabbtecken per nivå för listindrag genom att ändra värdet på`ListIndentation.Count` egendom i`TxtSaveOptions` klass. Du kan ange hur många tabbtecken du vill ha för varje indragsnivå.
+
+#### F: Vilka andra tecken kan jag använda för listindrag med Aspose.Words för .NET?
+Förutom tabbtecken kan du även använda andra tecken för listindrag med Aspose.Words för .NET. Du kan ställa in`ListIndentation.Character` egenskap till valfritt tecken, till exempel mellanslag (`' '`), för indragningslistor.
+
+#### F: Erbjuder Aspose.Words för .NET några andra funktioner för att hantera listor?
+Ja, Aspose.Words för .NET erbjuder många funktioner för att hantera listor i Word-dokument. Du kan skapa numrerade eller punktlistor, ställa in indragsnivåer, anpassa stilen på listor, lägga till listobjekt och mer.

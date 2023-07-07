@@ -58,3 +58,21 @@ doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 
 ## Conclusion
 Dans ce didacticiel, nous avons vu comment charger les paramètres de substitution de police Noto dans un document Word avec Aspose.Words pour .NET. Les paramètres de substitution des polices de Noto vous permettent de gérer la substitution des polices pour améliorer l'affichage et l'impression de vos documents. N'hésitez pas à utiliser cette fonctionnalité pour personnaliser la substitution de polices selon vos besoins.
+
+### FAQ
+
+#### Q : Comment puis-je charger les paramètres de substitution de police Noto dans un document Word avec Aspose.Words ?
+
+R : Pour charger les paramètres de substitution des polices Noto dans un document Word avec Aspose.Words, vous devez d'abord télécharger les polices Noto à partir de la source officielle. Ensuite, vous pouvez utiliser l'API Aspose.Words pour charger ces polices dans le document et les configurer pour les remplacer si nécessaire.
+
+#### Q : L'utilisation des polices Noto pour la substitution dans les documents Word garantit-elle une visualisation cohérente du texte ?
+
+R : Oui, l'utilisation des polices Noto pour la substitution dans les documents Word garantit une visualisation cohérente du texte. Les polices Noto sont conçues pour prendre en charge de nombreuses langues et caractères, ce qui permet de conserver une apparence cohérente même lorsque les polices requises ne sont pas disponibles.
+
+#### Q : Les polices Noto sont-elles gratuites ?
+
+R : Oui, les polices Noto sont gratuites et open source. Ils peuvent être téléchargés et utilisés gratuitement dans vos projets. Cela en fait une excellente option pour améliorer l'affichage des polices dans vos documents Word sans avoir à investir dans des polices commerciales.
+
+#### Q : L'utilisation des polices Noto rend-elle mes documents Word plus accessibles ?
+
+: Oui, l'utilisation des polices Noto pour la substitution dans les documents Word contribue à rendre vos documents plus accessibles. Les polices Noto prennent en charge de nombreuses langues et caractères, garantissant une meilleure lisibilité et une meilleure compréhension pour les utilisateurs qui consultent vos documents dans différentes langues.

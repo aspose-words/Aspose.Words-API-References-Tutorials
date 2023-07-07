@@ -44,16 +44,38 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ### Beispielquellcode für „Fonts-Ordner festlegen“ mit Aspose.Words für .NET 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Pfad zu Ihrem Dokumentenverzeichnis
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-	{
-		new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true)
-	});
-	Document doc = new Document(dataDir + "Rendering.docx");
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
+FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
+{
+	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true)
+});
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
 ## Abschluss
 In diesem Tutorial haben wir gelernt, wie man Schriftartenordner beim Rendern eines Dokuments mit Aspose.Words für .NET festlegt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie ganz einfach die Schriftartquellen angeben, die Sie beim Rendern Ihrer Dokumente verwenden möchten. Aspose.Words bietet eine leistungsstarke und flexible API für die Arbeit mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die beim Rendern Ihrer Dokumente verwendeten Schriftartquellen steuern und an Ihre spezifischen Anforderungen anpassen.
+
+### FAQs
+
+#### F: Wie kann ich mit Aspose.Words Schriftartenordner in einem Word-Dokument konfigurieren?
+
+A: Um Schriftartenordner in einem Word-Dokument mit Aspose.Words zu konfigurieren, können Sie die API verwenden, um benutzerdefinierte Schriftartenordner anzugeben, die beim Generieren oder Bearbeiten des Dokuments verwendet werden sollen. Dadurch kann Word die für die korrekte Darstellung erforderlichen Schriftarten finden.
+
+#### F: Ist es möglich, mit Aspose.Words benutzerdefinierte Schriftarten zu einem Word-Dokument hinzuzufügen?
+
+A: Ja, mit Aspose.Words können Sie benutzerdefinierte Schriftarten zu einem Word-Dokument hinzufügen. Mit der API können Sie bestimmte Schriftarten in Ihr Dokument einbetten und so sicherstellen, dass diese korrekt angezeigt werden, auch wenn die Schriftarten nicht auf dem System des Endbenutzers installiert sind.
+
+#### F: Was passiert, wenn in einem Word-Dokument erforderliche Schriftarten fehlen?
+
+A: Wenn in einem Word-Dokument erforderliche Schriftarten fehlen, kann Aspose.Words dieses Problem erkennen und Ihnen Optionen zur Behebung anbieten. Sie können fehlende Schriftarten durch alternative Schriftarten ersetzen oder fehlende Schriftarten in das Dokument aufnehmen, um eine korrekte Anzeige sicherzustellen.
+
+#### F: Wie kann ich mit Aspose.Words benutzerdefinierte Schriftarten aus einem Word-Dokument entfernen?
+
+A: Um benutzerdefinierte Schriftarten aus einem Word-Dokument mit Aspose.Words zu entfernen, können Sie die API verwenden, um das Dokument zu bereinigen und benutzerdefinierte Schriftarten zu entfernen, die nicht mehr benötigt werden. Dadurch wird die Dateigröße reduziert und die Schriftartenverwaltung einfacher.
+
+#### F: Ist es wichtig, Schriftartenordner in einem Word-Dokument zu konfigurieren?
+
+A: Ja, es ist wichtig, Schriftartenordner in einem Word-Dokument zu konfigurieren, um sicherzustellen, dass die verwendeten Schriftarten korrekt angezeigt werden. Durch die Angabe benutzerdefinierter Schriftartenordner für die Verwendung mit Aspose.Words stellen Sie sicher, dass die erforderlichen Schriftarten für die korrekte Darstellung von Word-Dokumenten verfügbar sind.

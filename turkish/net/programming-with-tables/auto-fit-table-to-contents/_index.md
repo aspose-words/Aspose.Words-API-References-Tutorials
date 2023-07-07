@@ -21,7 +21,7 @@ Tablo ile çalışmaya başlamak için tabloyu içeren Word belgesini yüklememi
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//Word belgesini yükleyin
+// Word belgesini yükleyin
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 

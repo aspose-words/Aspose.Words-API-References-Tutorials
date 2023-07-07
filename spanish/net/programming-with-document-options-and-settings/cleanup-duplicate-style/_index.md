@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.
 
 Esta declaración muestra el número de estilos restantes después de la limpieza.
 
-### Ejemplo de código fuente para Limpiar estilo duplicado usando Aspose.Words para .NET
+### Código fuente de ejemplo para Limpiar estilo duplicado usando Aspose.Words para .NET
 
 ```csharp
 

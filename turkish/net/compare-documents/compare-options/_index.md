@@ -21,7 +21,7 @@ Document docB = docA.Clone();
 
 ## 2. Adım: Karşılaştırma seçeneklerini yapılandırma
 
-Şimdi bir oluşturarak karşılaştırma seçeneklerini yapılandıracağız.`CompareOptions` nesne ve çeşitli özellikleri gerektiği gibi ayarlama. İşte nasıl:
+ Şimdi bir oluşturarak karşılaştırma seçeneklerini yapılandıracağız.`CompareOptions` nesne ve çeşitli özellikleri gerektiği gibi ayarlama. İşte nasıl:
 
 ```csharp
 CompareOptions options = new CompareOptions

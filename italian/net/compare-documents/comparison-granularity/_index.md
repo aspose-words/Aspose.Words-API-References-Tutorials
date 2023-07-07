@@ -2,7 +2,7 @@
 title: Granularità di confronto
 linktitle: Granularità di confronto
 second_title: Riferimento all'API Aspose.Words per .NET
-description: Scopri la funzione Confronta granularità di Aspose.Words per .NET che consente di confrontare i documenti carattere per carattere, segnalando le modifiche apportate.
+description: Scopri la funzione Confronta granularità di Aspose.Words per .NET che consente di confrontare i documenti carattere per carattere, riportando le modifiche apportate.
 type: docs
 weight: 10
 url: /it/net/compare-documents/comparison-granularity/
@@ -56,7 +56,7 @@ Confrontiamo ora i documenti utilizzando il metodo Compare della classe Document
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- IL`Compare` Il metodo confronta il documento A con il documento B e salva le modifiche al documento A. È possibile specificare il nome dell'autore e la data del confronto come riferimento.
+ IL`Compare`Il metodo confronta il documento A con il documento B e salva le modifiche al documento A. È possibile specificare il nome dell'autore e la data del confronto come riferimento.
 
 ## Conclusione
 

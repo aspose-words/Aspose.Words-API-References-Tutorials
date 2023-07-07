@@ -78,3 +78,17 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
 ## Conclusion
 Dans ce tutoriel, nous avons vu comment obtenir la liste des polices disponibles dans Aspose.Words pour .NET. Cela vous permet de savoir quelles polices vous pouvez utiliser dans vos documents. N'hésitez pas à utiliser cette fonctionnalité pour choisir les polices appropriées à vos besoins.
+
+### FAQ
+
+#### Q : Comment puis-je récupérer la liste des polices disponibles dans Aspose.Words ?
+
+ R : Pour récupérer la liste des polices disponibles dans Aspose.Words, vous pouvez utiliser le`FontsProvider` classe et la`GetAvailableFonts` méthode. Cette méthode renverra une liste de toutes les polices installées sur votre système.
+
+#### Q : Puis-je filtrer la liste des polices disponibles selon certains critères dans Aspose.Words ?
+
+R : Oui, vous pouvez filtrer la liste des polices disponibles dans Aspose.Words en utilisant des critères spécifiques. Par exemple, vous pouvez filtrer les polices par famille, style ou langue.
+
+#### Q : Comment puis-je utiliser la liste des polices disponibles dans mes documents Word ?
+
+ R : Pour utiliser la liste des polices disponibles dans vos documents Word, vous pouvez parcourir la liste et sélectionner les polices appropriées à l'aide des méthodes et des propriétés du`FontSettings` classe dans Aspose.Words.

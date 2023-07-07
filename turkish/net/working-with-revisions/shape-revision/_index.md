@@ -78,7 +78,7 @@ Aspose.Words for .NET kullanarak bir belgedeki şekillerde revizyonlar yapmak i�
 ```csharp
 Document doc = new Document();
 
-// Düzeltmeleri izlemeden satır içi bir şekil ekleyin.
+//Düzeltmeleri izlemeden satır içi bir şekil ekleyin.
 Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
@@ -109,7 +109,7 @@ Assert.True(shapes[0].IsDeleteRevision);
 Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
 Assert.True(shapes[1].IsInsertRevision);
 
-//Belgede taşınan bir şekil var, ancak şekil taşıma revizyonlarında bu şeklin iki örneği olacak.
+// Belgede taşınan bir şekil var, ancak şekil taşıma revizyonlarında bu şeklin iki örneği olacak.
 // Biri varış noktasındaki şekil, diğeri ise orijinal konumundaki şekil olacaktır.
 doc = new Document(MyDir + "Revision shape.docx");
 
@@ -125,3 +125,63 @@ Assert.True(shapes[1].IsMoveFromRevision);
 Assert.False(shapes[1].IsMoveToRevision);
 ```
 
+## Çözüm
+
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki şekillerde revizyonlar yapmayı öğrendik. Belge oluşturma, revizyon takibini etkinleştirme, her şekle ilişkin revizyonları kontrol etme ve şekilleri taşımak için revizyonları kontrol etme adımlarını takip ederek revizyonları başarılı bir şekilde yönetebildik. Aspose.Words for .NET, Word belgelerindeki incelemeler ve formlarla çalışmak için güçlü bir API sunar.
+
+### SSS
+
+#### S: Aspose.Words for .NET'te nasıl yeni bir belge oluşturabilir ve şekiller ekleyebilirim?
+
+C: Aspose.Words for .NET'te yeni bir belge oluşturmak ve şekiller eklemek için aşağıdaki kodu kullanabilirsiniz. Burada belgenin ilk bölümüne küp ve güneş olmak üzere iki şekil ekliyoruz:
+
+```csharp
+Document doc = new Document();
+Assert.False(doc.TrackRevisions);
+
+Shape shape = new Shape(doc, ShapeType.Cube);
+shape. WrapType = WrapType. Inline;
+shape. Width = 100.0;
+shape. Height = 100.0;
+doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
+
+#### S: Aspose.Words for .NET'te revizyon izlemeyi nasıl etkinleştiririm?
+
+ C: Aspose.Words for .NET'te revizyon takibini etkinleştirmek için`StartTrackRevisions` yöntemi`Document` nesne. Bu metot revizyonların yazarının ismini parametre olarak alır:
+
+```csharp
+doc.StartTrackRevisions("John Doe");
+```
+
+#### S: Bir Aspose.Words for .NET belgesindeki her bir şekil ile ilgili revizyonları nasıl kontrol edebilirim?
+
+C: Bir Aspose.Words for .NET belgesindeki her şekille ilişkili revizyonları kontrol etmek için, belgenin şekiller koleksiyonunu`GetChildNodes` ile yöntem`NodeType.Shape` düğüm türü. Ardından her şekle erişebilirsiniz`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , Ve`IsMoveToRevision` şekille ilişkilendirilmiş revizyon türünü belirlemek için özellikler:
+
+```csharp
+List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
+
+Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
+Assert.True(shapes[0].IsDeleteRevision);
+
+Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
+Assert.True(shapes[1].IsInsertRevision);
+```
+
+#### S: Bir Aspose.Words for .NET belgesinde şekillerin yer değiştirme revizyonlarını nasıl kontrol edebilirim?
+
+ C: Bir Aspose.Words for .NET belgesinde şekil yer değiştirme revizyonlarını kontrol etmek için şekil yer değiştirme revizyonları içeren mevcut bir belgeyi yükleyebilirsiniz. Ardından her şekle erişebilirsiniz`IsMoveFromRevision` Ve`IsMoveToRevision` özellikleri, taşınıp taşınmadığını ve öyleyse nereden ve nereye taşındığını belirlemek için:
+
+```csharp
+doc = new Document(MyDir + "Revision shape.docx");
+
+shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
+Assert.AreEqual(2, shapes.Count);
+
+Assert. False(shapes[0].IsMoveFromRevision);
+Assert.True(shapes[0].IsMoveToRevision);
+
+Assert.True(shapes[1].IsMoveFromRevision);
+Assert. False(shapes[1].IsMoveToRevision);
+```

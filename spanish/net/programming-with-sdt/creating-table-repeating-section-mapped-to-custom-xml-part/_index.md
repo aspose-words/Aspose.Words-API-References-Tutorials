@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
 
-Este tutorial demuestra cómo crear una tabla con una sección repetitiva asignada a una parte Xml personalizada en un documento de Word usando Aspose.Words para .NET. La sección repetitiva le permite agregar filas dinámicamente en función de los datos XML almacenados en la parte Xml personalizada.
+Este tutorial demuestra cómo crear una tabla con una sección repetitiva asignada a una parte Xml personalizada en un documento de Word usando Aspose.Words para .NET. La sección de repetición le permite agregar filas dinámicamente en función de los datos XML almacenados en la parte Xml personalizada.
 
 ## requisitos previos
 Para seguir este tutorial, necesita tener lo siguiente:

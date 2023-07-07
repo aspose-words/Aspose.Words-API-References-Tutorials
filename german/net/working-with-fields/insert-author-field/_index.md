@@ -71,3 +71,21 @@ doc.Save(dataDir + "InsertionAuthorField.docx");
 In diesem Beispiel haben wir ein neues Dokument erstellt, ein AUTHOR-Feld eingefügt, den Autorennamen konfiguriert und das Dokument unter einem angegebenen Dateinamen gespeichert.
 
 Damit ist unser Leitfaden zur Verwendung der Funktion „Autorenfeld einfügen“ mit Aspose.Words für .NET abgeschlossen.
+
+### FAQs
+
+#### F: Was ist ein Autorenfeld in Aspose.Words?
+
+A: Ein Autorenfeld in Aspose.Words ist ein spezielles Feld, das den Namen des Autors automatisch in ein Word-Dokument einfügt und aktualisiert. Es wird häufig verwendet, um anzugeben, wer das Dokument erstellt oder geändert hat.
+
+#### F: Wie aktualisiere ich das Autorenfeld in einem Word-Dokument mit Aspose.Words?
+
+A: Das Feld „Autor“ in einem Word-Dokument kann aktualisiert werden, um den Namen des aktuellen Autors anzuzeigen. Hierzu können Sie die in der Document-Klasse verfügbare UpdateFields-Methode verwenden. Diese Methode aktualisiert alle Felder im Dokument, einschließlich des Feldes „Autor“.
+
+#### F: Ist es möglich, das Format des Autorenfelds in einem Word-Dokument anzupassen?
+
+A: Ja, es ist möglich, das Format des Autorenfelds in einem Word-Dokument anzupassen. Standardmäßig wird im Feld „Autor“ lediglich der Name des Autors angezeigt. Sie können jedoch mithilfe der in Aspose.Words verfügbaren Formatierungsoptionen zusätzliche Informationen wie Datum und Uhrzeit der Änderung hinzufügen.
+
+#### F: Reagiert das Feld „Autor“ auf spätere Änderungen des Autorennamens?
+
+A: Ja, das Feld „Autor“ reagiert empfindlich auf spätere Änderungen des Autorennamens. Wenn Sie den Namen des Autors in den Dokumenteigenschaften ändern, wird das Feld „Autor“ beim Aktualisieren der Dokumentfelder automatisch mit dem neuen Namen aktualisiert.

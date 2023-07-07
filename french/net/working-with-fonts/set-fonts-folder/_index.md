@@ -15,7 +15,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 - La bibliothèque Aspose.Words pour .NET installée dans votre projet
 
 ## Étape 1 : Définir le répertoire des documents
-Commencez par définir le chemin du répertoire vers l'emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
+ Commencez par définir le chemin du répertoire vers l'emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -56,3 +56,21 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ## Conclusion
 Félicitation ! Vous savez maintenant comment définir le répertoire des polices dans Aspose.Words pour .NET. Vous pouvez utiliser cette fonction pour garantir la disponibilité des polices utilisées dans votre document et pour assurer la cohérence de l'affichage des polices.
+
+### FAQ
+
+#### Q : Comment puis-je définir un dossier de polices personnalisées dans Aspose.Words ?
+
+ R : Pour définir un dossier de polices personnalisées dans Aspose.Words, vous pouvez utiliser le`FontsFolder` classe et la`SetFontsFolders` méthode spécifiant le chemin d'accès au dossier contenant vos polices.
+
+#### Q : Puis-je définir plusieurs dossiers de polices dans Aspose.Words ?
+
+ R : Oui, vous pouvez définir plusieurs dossiers de polices dans Aspose.Words en appelant le`SetFontsFolders` méthode plusieurs fois avec les chemins des différents dossiers de polices que vous souhaitez utiliser.
+
+#### Q : Que se passe-t-il si une police utilisée dans le document n'est pas présente dans les dossiers de polices définis ?
+
+R : Si une police utilisée dans le document n'est pas présente dans les dossiers de polices définis dans Aspose.Words, une police de substitution sera utilisée à la place. Cela garantit que le texte du document sera toujours affiché correctement, même si la police d'origine n'est pas disponible.
+
+#### Q : Les dossiers de polices définis dans Aspose.Words ont-ils priorité sur les polices installées sur le système ?
+
+R : Oui, les dossiers de polices définis dans Aspose.Words ont priorité sur les polices installées sur le système. Cela signifie que si une police portant le même nom est présente à la fois dans les dossiers de polices définis et dans les polices système, la version dans le dossier de polices sera utilisée lors du traitement des documents Word.

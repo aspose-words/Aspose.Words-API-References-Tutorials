@@ -65,3 +65,25 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ## Abschluss
 In diesem Tutorial haben wir gesehen, wie man die Schriftartersetzung in einem Word-Dokument beim Rendern mit Aspose.Words für .NET aktiviert oder deaktiviert. Durch die Steuerung der Schriftartersetzung können Sie beeinflussen, wie fehlende Schriftarten in Ihren gerenderten Dokumenten behandelt werden. Zögern Sie nicht, diese Funktion zu nutzen, um die Verwaltung von Schriftarten in Ihren Word-Dokumenten anzupassen.
+
+### FAQs
+
+#### F: Wie kann ich mit Aspose.Words die Schriftartersetzung in einem Word-Dokument aktivieren?
+
+A: Um die Schriftartersetzung in einem Word-Dokument mit Aspose.Words zu aktivieren, können Sie die API verwenden, um Ersatzschriftarten anzugeben, die verwendet werden sollen, wenn erforderliche Schriftarten nicht verfügbar sind. Dadurch wird eine konsistente Textvisualisierung gewährleistet, auch ohne die Originalschriftarten.
+
+#### F: Ist es möglich, die Schriftartersetzung in einem Word-Dokument mit Aspose.Words zu deaktivieren?
+
+A: Ja, mit Aspose.Words können Sie die Schriftartersetzung in einem Word-Dokument deaktivieren. Mithilfe der API können Sie verhindern, dass Word erforderliche Schriftarten durch andere Schriftarten ersetzt, wodurch das ursprüngliche Erscheinungsbild des Textes erhalten bleibt.
+
+#### F: Was passiert, wenn beim Ersetzen in einem Word-Dokument erforderliche Schriftarten fehlen?
+
+A: Wenn beim Ersetzen in einem Word-Dokument erforderliche Schriftarten fehlen, kann Aspose.Words dieses Problem erkennen und Ihnen Optionen zur Behebung anbieten. Sie können fehlende Schriftarten durch alternative Schriftarten ersetzen oder fehlende Schriftarten in das Dokument aufnehmen, um eine korrekte Anzeige sicherzustellen.
+
+#### F: Wie kann ich mit fehlenden Schriftarten umgehen, wenn ich sie in einem Word-Dokument mit Aspose.Words ersetze?
+
+A: Um fehlende Schriftarten beim Ersetzen in einem Word-Dokument mit Aspose.Words zu behandeln, können Sie die API verwenden, um fehlende Schriftarten zu erkennen und Auflösungsoptionen bereitzustellen. Je nach Bedarf können Sie fehlende Schriftarten durch alternative Schriftarten ersetzen oder fehlende Schriftarten in das Dokument aufnehmen.
+
+#### F: Ist es wichtig, die Schriftartersetzung in einem Word-Dokument zu steuern?
+
+A: Ja, es ist wichtig, die Schriftartersetzung in einem Word-Dokument zu kontrollieren, um die visuelle Integrität des Textes zu wahren. Durch die Verwendung von Aspose.Words zum Aktivieren oder Deaktivieren der Schriftartenersetzung können Sie sicherstellen, dass die erforderlichen Schriftarten verwendet werden, und Probleme mit fehlenden oder ersetzten Schriftarten vermeiden.

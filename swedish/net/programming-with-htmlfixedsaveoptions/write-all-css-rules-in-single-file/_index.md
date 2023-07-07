@@ -50,7 +50,7 @@ det här exemplet sparar vi det konverterade dokumentet som "WorkingWithHtmlFixe
 // Åtkomstsökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Ladda Word-dokumentet
+// Ladda Word-dokumentet
 Document doc = new Document(dataDir + "Document.docx");
 
 // Konfigurera alternativ för säkerhetskopiering med funktionen "Skriv alla CSS-regler i en fil".

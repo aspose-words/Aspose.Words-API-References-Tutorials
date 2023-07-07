@@ -44,7 +44,7 @@ Assurez-vous de spécifier les chemins d'accès corrects pour le document chiffr
 
 ### Exemple de code source pour la signature d'un document crypté à l'aide d'Aspose.Words pour .NET
 
-Voici le code source complet pour signer un document chiffré avec Aspose.Words pour .NET :
+Voici le code source complet pour signer un document chiffré avec Aspose.Words pour .NET :
 
 ```csharp
 

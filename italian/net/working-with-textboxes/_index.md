@@ -12,6 +12,6 @@ Lavorare con le caselle di testo è una risorsa completa che ti accompagna passo
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Crea un collegamento](./create-a-link/) | Scopri come creare un collegamento tra le caselle di testo in un documento di Word con Aspose.Words per .NET. |
+| [Crea collegamento in Word](./create-a-link/) | Scopri come creare un collegamento in Word tra le caselle di testo in un documento Word con Aspose.Words per .NET. |
 | [Controlla la sequenza](./check-sequence/) | Scopri come controllare la sequenza di TextBox in un documento Word con Aspose.Words per .NET. |
-| [Rompere un collegamento](./break-a-link/) | Scopri come interrompere i collegamenti in un documento di Word con Aspose.Words per .NET. |
+| [Rompere il collegamento in avanti nel documento di Word](./break-a-link/) | Scopri come interrompere i collegamenti in avanti in un documento di Word con Aspose.Words per .NET. |

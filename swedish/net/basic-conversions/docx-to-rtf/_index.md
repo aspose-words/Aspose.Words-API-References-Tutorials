@@ -1,6 +1,6 @@
 ---
-title: Docx till Rtf
-linktitle: Docx till Rtf
+title: Konvertera Docx till Rtf
+linktitle: Konvertera Docx till Rtf
 second_title: Aspose.Words för .NET API Referens
 description: Lär dig hur du konverterar Word-dokument från Docx till RTF-format med Aspose.Words för .NET. Steg-för-steg handledning med exempel på källkod.
 type: docs
@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/basic-conversions/docx-to-rtf/
 ---
 
-I denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att konvertera ett Word-dokument i Docx-format till RTF. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
+denna steg-för-steg handledning kommer vi att guida dig om hur du använder Aspose.Words för .NET för att konvertera ett Word-dokument i Docx-format till RTF. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
 För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
@@ -78,7 +78,7 @@ Det är allt! Du har framgångsrikt konverterat ett Word-dokument i Docx-format 
 	Stream stream = File.OpenRead(MyDir + "Document.docx");
 
 	Document doc = new Document(stream);
-	//Du kan stänga streamen nu, den behövs inte längre eftersom dokumentet finns i minnet.
+	// Du kan stänga streamen nu, den behövs inte längre eftersom dokumentet finns i minnet.
 	stream.Close();
 
 	// ... gör något med dokumentet.
@@ -95,3 +95,21 @@ Det är allt! Du har framgångsrikt konverterat ett Word-dokument i Docx-format 
 ```
 
 Använd gärna den här koden i dina egna projekt och modifiera den efter dina specifika krav.
+
+### Vanliga frågor
+
+#### Hur kan jag konvertera en DOCX-fil till RTF-format?
+
+För att konvertera en DOCX-fil till RTF-format kan du använda olika programvaruverktyg eller bibliotek som tillhandahåller denna funktionalitet. Ett sådant tillförlitligt verktyg är Aspose.Words för .NET. Det erbjuder ett enkelt och effektivt sätt att konvertera DOCX-filer till RTF-format programmatiskt. Du kan använda bibliotekets API för att ladda DOCX-filen och spara den i önskat RTF-format.
+
+#### Finns det några begränsningar för konverteringsprocessen?
+
+Begränsningarna för konverteringsprocessen beror på det specifika verktyget eller biblioteket du använder. Vissa verktyg kan ha begränsningar för storleken eller komplexiteten på inmatningsdokumentet. Det är viktigt att välja ett verktyg som kan hantera kraven för din konverteringsuppgift.
+
+#### Kan jag bevara formateringen och layouten för originaldokumentet?
+
+Ja, med Aspose.Words kan du bevara formateringen och layouten för originaldokumentet under konverteringsprocessen. Aspose.Words för .NET ger till exempel omfattande stöd för att underhålla formatering, stilar och andra delar av DOCX-filen i det konverterade RTF-dokumentet.
+
+#### Är Aspose ett pålitligt verktyg för konvertering av DOCX till RTF?
+
+Ja, Aspose.Words för .NET är ett mycket tillförlitligt verktyg för konvertering av DOCX till RTF. Det används flitigt av utvecklare och företag över hela världen för dess robusta funktioner och utmärkta prestanda. Biblioteket erbjuder omfattande dokumentation, regelbundna uppdateringar och dedikerad teknisk support, vilket gör det till ett pålitligt val för dokumentkonverteringsuppgifter.

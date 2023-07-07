@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Загрузите документ Word
+// Загрузите документ Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // Настройка параметров резервного копирования с функцией «Единица измерения»

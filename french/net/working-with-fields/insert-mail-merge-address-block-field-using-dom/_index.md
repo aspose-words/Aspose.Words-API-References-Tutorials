@@ -94,3 +94,20 @@ field. Update();
 
 doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsingDOM.docx");
 ```
+### FAQ
+
+#### Q : Comment puis-je personnaliser le format de l'adresse postale dans un document Word avec Aspose.Words pour .NET ?
+
+ R : Vous pouvez personnaliser le format de l'adresse postale dans un document Word avec Aspose.Words pour .NET en utilisant les propriétés du`FieldAddressBlock`objet. Vous pouvez définir les options de formatage telles que le style d'adresse, les séparateurs, les éléments facultatifs, etc. pour obtenir le format souhaité.
+
+#### Q : Comment puis-je spécifier les données source pour le champ d'adresse postale dans Aspose.Words pour .NET ?
+
+ R : Pour spécifier les données source du champ d'adresse postale dans Aspose.Words pour .NET, vous pouvez utiliser le`FieldAddressBlock.StartAddress` et`FieldAddressBlock.EndAddress` propriétés. Ces propriétés sont utilisées pour définir les plages d'adresses dans la source de données externe, comme un fichier CSV, une base de données, etc.
+
+#### Q : Puis-je inclure des éléments facultatifs dans le champ d'adresse postale avec Aspose.Words pour .NET ?
+
+ R : Oui, vous pouvez inclure des éléments facultatifs dans le champ d'adresse postale avec Aspose.Words pour .NET. Vous pouvez définir des éléments facultatifs à l'aide de la`FieldAddressBlock.OmitOptional` méthode pour spécifier s'il faut inclure ou exclure des éléments facultatifs tels que le nom du destinataire, le nom de l'entreprise, etc.
+
+#### Q : L'insertion d'un champ d'adresse postale à l'aide du DOM affecte-t-elle la structure du document Word avec Aspose.Words pour .NET ?
+
+: L'insertion d'un champ d'adresse postale à l'aide du DOM n'affecte pas directement la structure du document Word. Cependant, il ajoute un nouvel élément de champ au contenu du document. Vous pouvez manipuler la structure du document en ajoutant, supprimant ou modifiant les éléments existants selon vos besoins.

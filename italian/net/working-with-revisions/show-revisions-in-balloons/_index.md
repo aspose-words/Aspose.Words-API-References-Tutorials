@@ -63,5 +63,33 @@ doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Rig
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
+## Conclusione
+
+In questo tutorial, abbiamo imparato come visualizzare le revisioni nei fumetti in un documento di Word utilizzando Aspose.Words per .NET. Utilizzando le opzioni di visualizzazione appropriate, siamo stati in grado di rendere visibili le revisioni in bolle con barre di revisione sul lato destro. Aspose.Words per .NET offre molte potenti funzionalità per la manipolazione di documenti Word, inclusa la gestione delle revisioni. Ora puoi usare questa conoscenza per mostrare le revisioni nei fumetti nei tuoi documenti Word usando Aspose.Words per .NET.
 
 
+### FAQ
+
+#### D: Come caricare un documento in Aspose.Words per .NET?
+
+ R: Usa il`Document` classe di Aspose.Words per .NET per caricare un documento da un file. È possibile specificare il percorso completo del documento.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### D: Come visualizzare le revisioni nei fumetti con Aspose.Words per .NET?
+
+ R: Usa il`ShowInBalloons` proprietà del`RevisionOptions` oggetto per configurare la visualizzazione delle revisioni nei fumetti. Puoi impostare questa proprietà su`ShowInBalloons.FormatAndDelete` per mostrare le revisioni nei fumetti con l'eliminazione e le revisioni di formattazione.
+
+```csharp
+doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
+```
+
+#### D: Come salvare un documento in formato PDF con Aspose.Words per .NET?
+
+ R: Usa il`Save` metodo del`Document` oggetto per salvare il documento in formato PDF. È necessario specificare il percorso di destinazione completo con l'estensione ".pdf".
+
+```csharp
+doc.Save("path/to/destination/document.pdf");
+```

@@ -80,3 +80,25 @@ doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 ¡Felicidades! Ha aprendido con éxito cómo agregar comentarios a un documento de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente provisto, ahora puede insertar comentarios y personalizar su contenido en sus documentos.
 
 Los comentarios son útiles para colaborar, proporcionar información adicional o tomar notas dentro de un documento. Experimente con diferentes nombres de autores, iniciales y contenidos de comentarios para cumplir con sus requisitos específicos.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo agregar un comentario en un documento de Aspose.Words para .NET?
+
+R: Para agregar un comentario en un documento de Aspose.Words para .NET, debe seguir los pasos mencionados en el tutorial.
+
+#### P: ¿Puedo dar formato al texto de los comentarios en Aspose.Words para .NET?
+
+R: Sí, puede dar formato al texto de los comentarios en Aspose.Words para .NET utilizando las propiedades de formato disponibles.
+
+#### P: ¿Cómo puedo recuperar todos los comentarios presentes en un documento?
+
+ R: Puede recuperar todos los comentarios presentes en un documento usando el`Document.Comments` propiedad.
+
+#### P: ¿Puedo eliminar un comentario específico en Aspose.Words para .NET?
+
+ R: Sí, puede eliminar un comentario específico en Aspose.Words para .NET usando el`Comment.Remove` método.
+
+#### P: ¿Cómo puedo modificar el texto de un comentario existente en Aspose.Words para .NET?
+
+ R: Para modificar el texto de un comentario existente en Aspose.Words for .NET, puede acceder a la`Comment.Text` propiedad de la correspondiente`Comment` objeto y modifique el texto según sea necesario.

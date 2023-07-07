@@ -1,6 +1,6 @@
 ---
-title: docx a pdf
-linktitle: docx a pdf
+title: Convertir archivo de Word a PDF
+linktitle: Convertir archivo de Word a PDF
 second_title: Referencia de API de Aspose.Words para .NET
 description: Aprenda a convertir documentos de Word de Docx a PDF usando Aspose.Words para .NET. Tutorial paso a paso con código fuente de ejemplo.
 type: docs
@@ -41,3 +41,41 @@ doc.Save(MyDir + "BaseConversions.DocxToPdf.pdf");
 ```
 
 Siéntase libre de usar este código en sus propios proyectos y modifíquelo de acuerdo con sus requisitos específicos.
+
+### Preguntas frecuentes sobre la conversión de Word a PDF
+
+#### Q1. ¿Cuáles son los requisitos para realizar la conversión de DOCX a PDF con Aspose.Words para .NET?
+Para ejecutar la conversión de DOCX a PDF con Aspose.Words para .NET, necesita:
+Aspose.Words para .NET instalado en su máquina
+Un archivo DOCX válido para convertir
+Una licencia válida para usar Aspose.Words para .NET (o puede usar la versión de prueba gratuita)
+
+#### Q2. ¿Cómo puedo instalar Aspose.Words para .NET?
+Puede instalar Aspose.Words para .NET siguiendo estos pasos:
+
+Abra Visual Studio o su entorno de desarrollo preferido.
+
+Cree un nuevo proyecto o abra un proyecto existente.
+
+Haga clic con el botón derecho en el proyecto en el Explorador de soluciones.
+
+Seleccione "Administrar paquetes NuGet" en el menú contextual.
+
+Busque "Aspose.Words" en el cuadro de búsqueda.
+
+Seleccione la última versión de Aspose.Words para .NET.
+
+Haga clic en "Instalar" para agregar la referencia a su proyecto.
+
+#### Q3. ¿Qué otras opciones de conversión están disponibles con Aspose.Words para .NET?
+Además de convertir DOCX a PDF, Aspose.Words para .NET admite otras conversiones, como:
+
+DOCX a otros formatos de archivo, como DOC, RTF, HTML, XML, etc.
+
+Convierta archivos PDF a formatos como DOCX, DOC, HTML, etc.
+
+Conversión de archivos EPUB, ODT, OTT, TXT, etc. a otros formatos.
+
+
+#### Q4. ¿Dónde puedo encontrar más código de muestra y recursos para trabajar con Aspose.Words para .NET?
+ Puede encontrar más ejemplos de código y recursos en el[Referencia de API de Aspose.Words para .NET](https://reference.aspose.com/words/net/) y[Tutoriales de API de Aspose.Words para .NET](https://reference.aspose.com/tutorials/words/net/). Estos recursos proporcionan guías paso a paso, código de muestra y tutoriales.

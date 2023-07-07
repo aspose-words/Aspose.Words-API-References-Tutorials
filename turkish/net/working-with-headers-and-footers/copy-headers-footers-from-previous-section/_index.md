@@ -67,3 +67,21 @@ doc.Save("OutputDocument.docx");
 ```
 
 Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimlerinize göre değiştirin.
+
+### SSS
+
+#### S: Önceki bölümdeki üst bilgileri ve alt bilgileri Aspose.Words'e nasıl kopyalayabilirim?
+
+ C: Önceki bölümden üstbilgileri ve altbilgileri Aspose.Words'e kopyalamak için`CopyHeadersFootersFromPreviousSection()` geçerli yöntem`Section`nesne. Bu, önceki bölümdeki üstbilgileri ve altbilgileri geçerli bölüme kopyalar.
+
+#### S: Aspose.Words'te bir önceki bölümden sadece üst bilgiyi veya alt bilgiyi kopyalamak mümkün mü?
+
+ C: Evet, Aspose.Words'te önceki bölümden yalnızca üstbilgi veya altbilgi kopyalamak mümkündür. Bunun için kullanabilirsiniz`CopyHeaderFromPreviousSection()` Ve`CopyFooterFromPreviousSection()` geçerli yöntemler`Section` önceki bölümden geçerli bölüme özel olarak üstbilgi veya altbilgi kopyalamak için nesne.
+
+#### S: Önceki bölümden üst bilgileri ve alt bilgileri kopyalamak, geçerli bölümdeki mevcut üst bilgileri ve alt bilgileri değiştirir mi?
+
+C: Evet, önceki bölümdeki üst bilgileri ve alt bilgileri kopyalamak, geçerli bölümdeki mevcut üst bilgileri ve alt bilgileri değiştirir. Mevcut üstbilgi ve altbilgileri korumak ve bunları kopyalanan üstbilgi ve altbilgilere eklemek istiyorsanız, içerikleri birleştirmek için ek bir işlem yapmanız gerekecektir.
+
+#### S: Aspose.Words'te bir bölümün bir önceki bölümden üstbilgi veya altbilgiye sahip olup olmadığını nasıl kontrol edebilirim?
+
+C: Bir bölümün Aspose.Words'teki bir önceki bölümden üstbilgi veya altbilgiye sahip olup olmadığını kontrol etmek için`HasHeader` Ve`HasFooter` üzerindeki özellikler`Section` üst bilgi veya alt bilginin mevcut olup olmadığını belirlemek için nesne. Eğer`HasHeader` veya`HasFooter` İadeler`false`, bu bölümde önceki bölümden üstbilgi veya altbilgi olmadığı anlamına gelir.

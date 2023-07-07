@@ -1,6 +1,6 @@
 ---
-title: 复制书签文本
-linktitle: 复制书签文本
+title: 复制添加书签的文本
+linktitle: 复制添加书签的文本
 second_title: Aspose.Words for .NET API 参考
 description: 了解如何使用 Aspose.Words for .NET 将书签文本从源文档复制到另一个文档。
 type: docs
@@ -15,7 +15,7 @@ url: /zh/net/programming-with-bookmarks/copy-bookmarked-text/
 - C# 语言的基础知识。
 - 安装了 Aspose.Words 库的 .NET 开发环境。
 
-## 第 1 步：加载源文档
+## 第1步：加载源文档
 
 在复制书签文本之前，我们需要将源文档加载到`Document`使用文件路径的对象：
 
@@ -26,13 +26,13 @@ Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 
 ## 第二步：获取源书签
 
-我们使用`Bookmarks`源文档范围的属性以获取我们要复制的特定书签：
+我们使用`Bookmarks`源文档范围的属性来获取我们要复制的特定书签：
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
-## 第 3 步：创建目标文档
+## 步骤 3：创建目标文档
 
 我们创建一个新文档作为复制书签内容的目标文档：
 
@@ -48,9 +48,9 @@ Document dstDoc = new Document();
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## 第 5 步：导入和复制书签文本
+## 第 5 步：导入并复制书签文本
 
-我们使用一个`NodeImporter`对象将书签文本从源文档导入和复制到目标文档：
+我们使用一个`NodeImporter`对象将书签文本从源文档导入并复制到目标文档：
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -76,10 +76,10 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 	//我们将添加到此文档中。
 	Document dstDoc = new Document();
 
-	//假设我们将被附加到最后一节正文的末尾。
+	//假设我们将附加到最后一节正文的末尾。
 	CompositeNode dstNode = dstDoc.LastSection.Body;
 
-	//如果您在没有单个上下文的情况下多次导入，将导致创建许多样式。
+	//如果在没有单个上下文的情况下多次导入，将导致创建许多样式。
 	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
 
 	AppendBookmarkedText(importer, srcBookmark, dstNode);
@@ -90,4 +90,4 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## 结论
 
-在本文中，我们研究了 C# 源代码以了解如何使用 Aspose.Words for .NET 中的复制书签文本功能。我们按照分步指南将书签的内容从源文档复制到另一个文档。
+在本文中，我们探索了 C# 源代码，以了解如何使用从 Aspose.Words for .NET 复制书签文本的功能。我们按照分步指南将书签的内容从源文档复制到另一个文档。

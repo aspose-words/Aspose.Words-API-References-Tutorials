@@ -24,7 +24,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 2. Adım: Belgeye içerik ekleyin
- Sonra, kullanacağız`DocumentBuilder`belgeye içerik eklemek için yapıcı. Bu örnekte, iki satır metin ekliyoruz.
+ Sonra, kullanacağız`DocumentBuilder` belgeye içerik eklemek için yapıcı. Bu örnekte, iki satır metin ekliyoruz.
 
 ```csharp
 builder.Writeln("Hello1");
@@ -53,3 +53,38 @@ doc.Sections.Add(sectionToAdd);
 ```
 ## Çözüm
 Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesine nasıl yeni bölüm ekleneceğini gördük. Belirtilen adımları izleyerek, bölümler ekleyerek belgenizi kolayca düzenleyebilir ve yapılandırabilirsiniz. Bölüm içeriğini ve özelliklerini özel ihtiyaçlarınıza göre özelleştirmekten çekinmeyin.
+
+### SSS
+
+#### S: Aspose.Words for .NET kullanarak bir Word belgesine yeni bir bölüm eklemek için ön koşullar nelerdir?
+
+C: Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
+- C# programlama dili hakkında çalışma bilgisi
+- Projenizde yüklü olan Aspose.Words for .NET kitaplığı
+
+#### S: Aspose.Words for .NET'te yeni bir belge ve oluşturucu nasıl oluşturulur?
+
+ C: Aspose.Words for .NET'te yeni bir belge ve oluşturucu oluşturmak için aşağıdaki kodu kullanabilirsiniz. Burada bir örneğini oluşturuyoruz`Document` sınıf ve ilgili`DocumentBuilder` belgeyi oluşturmak için yapıcı:
+
+```csharp
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+#### S: Aspose.Words for .NET'te belgeye içerik nasıl eklenir?
+
+ C: Aspose.Words for .NET'te belgeye içerik eklemek için`DocumentBuilder` yapıcı Bu örnekte, iki satır metin ekliyoruz:
+
+```csharp
+builder. Writen("Hello1");
+builder. Writen("Hello2");
+```
+
+#### S: Aspose.Words for .NET'te belgeye yeni bölüm nasıl eklenir?
+
+ C: Aspose.Words for .NET'te belgeye yeni bir bölüm eklemek için,`Section` sınıfına ekleyin ve`Sections` belgenin toplanması:
+
+```csharp
+Section sectionToAdd = new Section(doc);
+doc.Sections.Add(sectionToAdd);
+```

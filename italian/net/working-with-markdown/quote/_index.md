@@ -58,3 +58,21 @@ builder.Writeln("1. Nested blockquote");
 
 Congratulazioni! Ora hai imparato come utilizzare la funzione di citazioni con Aspose.Words per .NET.
 
+
+### FAQ
+
+#### D: Cos'è una citazione in Markdown?
+
+R: Una citazione in Markdown è un modo per evidenziare passaggi di testo da altre fonti o per fare riferimento a citazioni famose.
+
+#### D: Come utilizzare le virgolette in Markdown?
+
+R: Per utilizzare una citazione in Markdown, racchiudi il testo della citazione tra parentesi angolari (`>`). Ogni riga della citazione deve iniziare con un gallone.
+
+#### D: Le citazioni di Markdown supportano gli attributi?
+
+R: Le citazioni Markdown non supportano attributi specifici. Sono semplicemente evidenziati dalla formattazione del testo citato.
+
+#### D: Puoi incorporare le virgolette in Markdown?
+
+R: Sì, è possibile nidificare le virgolette in Markdown aggiungendo un ulteriore livello di parentesi angolari (`>`).

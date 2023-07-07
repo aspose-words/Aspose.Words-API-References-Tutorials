@@ -21,10 +21,10 @@ Wenn Sie diese Tutorials befolgen, können Sie Abschnitte in Ihren Word-Dokument
 | [Abschnitt hinzufügen](./add-section/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET einen Abschnitt zu einem Word-Dokument hinzufügen. Schritt-für-Schritt-Anleitung zur Strukturierung Ihres Dokuments. |
 | [Abschnitt löschen](./delete-section/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET einen bestimmten Abschnitt aus einem Word-Dokument entfernen. |
 | [Alle Abschnitte löschen](./delete-all-sections/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET alle Abschnitte aus einem Word-Dokument entfernen. |
-| [Abschnittsinhalt anhängen](./append-section-content/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Inhalte zu bestimmten Abschnitten eines Word-Dokuments hinzufügen.  |
+| [Word-Inhalt des Abschnitts anhängen](./append-section-content/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Wortinhalte zu bestimmten Abschnitten eines Word-Dokuments hinzufügen.  |
 | [Abschnitt „Klonen“.](./clone-section/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET einen Abschnitt in einem Word-Dokument klonen. Schritt für Schritt Anleitung. |
 | [Abschnitt kopieren](./copy-section/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET einen Abschnitt aus einem Word-Dokument in ein anderes Dokument kopieren. |
 | [Löschen Sie den Inhalt der Kopf- und Fußzeile](./delete-header-footer-content/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Kopf- und Fußzeileninhalte aus einem Word-Dokument entfernen.  |
 | [Abschnittsinhalt löschen](./delete-section-content/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Inhalte aus einem bestimmten Abschnitt eines Word-Dokuments löschen. |
-| [Ändern Sie die Seiteneinrichtung in allen Abschnitten](./modify-page-setup-in-all-sections/) | In diesem Tutorial erfahren Sie, wie Sie die Seiteneinrichtung in allen Abschnitten eines Word-Dokuments mit Aspose.Words für .NET ändern. |
+| [Ändern Sie die Word-Seiteneinrichtung in allen Abschnitten](./modify-page-setup-in-all-sections/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET die Word-Seiteneinrichtung in allen Abschnitten eines Word-Dokuments ändern. |
 | [Abschnittszugriff nach Index](./sections-access-by-index/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET über den Index auf Abschnitte eines Word-Dokuments zugreifen und deren Einstellungen ändern. |

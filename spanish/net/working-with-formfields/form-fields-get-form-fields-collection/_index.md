@@ -68,3 +68,25 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
 Siéntase libre de usar este código en sus propios proyectos y modifíquelo de acuerdo con sus requisitos específicos.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo acceder a la colección de campos de formulario en Aspose.Words?
+
+ R: Para acceder a la colección de campos de formulario en Aspose.Words, puede usar el`Document.FormFields` propiedad. Esta propiedad devuelve la colección completa de campos de formulario presentes en el documento.
+
+#### P: ¿Cómo puedo iterar a través de los campos del formulario y realizar operaciones en cada uno de ellos?
+
+ R: Puede iterar a través de los campos de formulario usando un`foreach` bucle en el`Document.FormFields` recopilación. En cada iteración, puede acceder a las propiedades y realizar operaciones específicas en el campo de formulario.
+
+#### P: ¿Puedo filtrar la colección de campos de formulario para obtener solo ciertos tipos de campos?
+
+R: Sí, puede filtrar la colección de campos de formulario utilizando las condiciones apropiadas en su ciclo de iteración. Por ejemplo, puede verificar el tipo de campo de cada elemento y operar solo en campos que coincidan con sus criterios.
+
+#### P: ¿Cómo puedo eliminar un campo de formulario específico de la colección?
+
+ R: Para eliminar un campo de formulario específico de la colección, puede usar el`FormField.Remove` método especificando el campo que desea eliminar. Este método eliminará el campo de formulario de la colección.
+
+#### P: ¿Es posible modificar las propiedades de un campo de formulario en Aspose.Words?
+
+R: Sí, puede cambiar las propiedades de un campo de formulario en Aspose.Words accediendo a sus propiedades individuales. Por ejemplo, puede cambiar el nombre, el valor o las opciones de un campo de formulario utilizando las propiedades adecuadas.

@@ -1,38 +1,38 @@
 ---
-title: 轴的日期时间值
-linktitle: 轴的日期时间值
+title: 日期时间值转轴
+linktitle: 日期时间值转轴
 second_title: Aspose.Words for .NET API 参考
-description: 了解如何使用 Aspose.Words for .NET 将日期时间值添加到图表的轴上。
+description: 了解如何使用 Aspose.Words for .NET 将日期时间值添加到图表的轴。
 type: docs
 weight: 10
 url: /zh/net/programming-with-charts/date-time-values-to-axis/
 ---
 
-本教程解释了如何使用 Aspose.Words for .NET 将日期时间值添加到图表的轴上。
+本教程介绍如何使用 Aspose.Words for .NET 将日期时间值添加到图表的轴。
 
 ## 先决条件
 要学习本教程，您需要具备以下条件：
 
-- 安装了 Aspose.Words for .NET 库。
-- C# 的基本知识和使用 Word 文档。
+- 已安装 Aspose.Words for .NET 库。
+- C# 和使用 Word 文档的基本知识。
 
 ## 第 1 步：设置文档目录
-首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`使用要保存文档的目录的实际路径。
+首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`与要保存文档的目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 第 2 步：创建新文档和 DocumentBuilder
-创建一个新的实例`Document`类和一个`DocumentBuilder`对象来处理文档。
+创建一个新实例`Document`类和一个`DocumentBuilder`对象使用该文档。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 第 3 步：插入和配置图表形状
-使用`InsertChart`的方法`DocumentBuilder`目的。设置所需的图表类型和维度。
+## 步骤 3：插入并配置图表形状
+使用以下命令将图表形状插入到文档中`InsertChart`的方法`DocumentBuilder`目的。设置所需的图表类型和尺寸。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
@@ -40,7 +40,7 @@ Chart chart = shape.Chart;
 chart.Series.Clear();
 ```
 
-## 第 4 步：向图表添加数据
+## 第 4 步：将数据添加到图表中
 将数据添加到图表系列，包括日期时间值。
 
 ```csharp
@@ -67,13 +67,13 @@ xAxis.MinorTickMark = AxisTickMark.Outside;
 ```
 
 ## 第 6 步：保存文档
-使用 将文档保存到指定目录`Save`方法。提供具有适当文件扩展名的所需文件名。在此示例中，我们将文档保存为“WorkingWithCharts.DateTimeValuesToAxis.docx”。
+使用以下命令将文档保存到指定目录`Save`方法。提供所需的文件名和适当的文件扩展名。在此示例中，我们将文档另存为“WorkingWithCharts.DateTimeValuesToAxis.docx”。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-### 使用 Aspose.Words for .NET 的日期时间值到轴的示例源代码 
+### 使用 Aspose.Words for .NET 将日期时间值转至轴的示例源代码 
 
 ```csharp
 	//文档目录的路径
@@ -102,4 +102,4 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 	doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-此示例代码创建一个新的 Word 文档，在 X 轴上插入一个带有日期时间值的柱形图，并将文档保存到指定目录。
+此示例代码创建一个新的 Word 文档，插入 X 轴上带有日期时间值的柱形图，并将文档保存到指定目录。

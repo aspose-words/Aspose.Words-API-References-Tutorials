@@ -30,7 +30,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Erstellen Sie ein neues Dokument
 Document doc = new Document();
 
-// Erstellen Sie einen Dokumentengenerator
+//Erstellen Sie einen Dokumentengenerator
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ## Abschluss
 In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET die Schriftartformatierung in einem Word-Dokument vornimmt. Durch die Schriftartformatierung können Sie das Erscheinungsbild von Text in Ihren Dokumenten anpassen. Nutzen Sie diese Funktion gerne, um ansprechende und professionelle Dokumente zu erstellen.
+
+### FAQs
+
+#### F: Ist es möglich, die Schriftgröße eines bestimmten Texts in einem Word-Dokument zu ändern?
+
+A: Ja, mit Aspose.Words können Sie ganz einfach die Schriftgröße eines bestimmten Textes in einem Word-Dokument ändern. Über die API können Sie den gewünschten Text auswählen und die entsprechende Schriftgröße anwenden.
+
+#### F: Kann ich unterschiedliche Schriftstile auf verschiedene Absätze in einem Word-Dokument anwenden?
+
+A: Auf jeden Fall! Mit Aspose.Words können Sie verschiedene Schriftstile auf verschiedene Absätze in einem Word-Dokument anwenden. Sie können die von der API bereitgestellten Methoden verwenden, um jeden Absatz individuell nach Bedarf zu formatieren.
+
+#### F: Wie kann ich fetten Text in einem Word-Dokument hervorheben?
+
+A: Mit Aspose.Words können Sie ganz einfach fetten Text in einem Word-Dokument hervorheben. Wenden Sie mithilfe der API einfach den fetten Schriftstil auf den jeweiligen Text an.
+
+#### F: Unterstützt Aspose.Words benutzerdefinierte Schriftarten?
+
+A: Ja, Aspose.Words unterstützt benutzerdefinierte Schriftarten in Word-Dokumenten. Sie können in Ihren Dokumenten benutzerdefinierte Schriftarten verwenden und diese nach Ihren Wünschen formatieren.
+
+#### F: Wie kann ich Text in einem Word-Dokument mit einer bestimmten Schriftfarbe versehen?
+
+A: Mit Aspose.Words können Sie ganz einfach eine bestimmte Schriftfarbe auf Text in einem Word-Dokument anwenden. Verwenden Sie die API, um Text auszuwählen und die gewünschte Schriftfarbe anzuwenden, indem Sie den entsprechenden Farbcode angeben.

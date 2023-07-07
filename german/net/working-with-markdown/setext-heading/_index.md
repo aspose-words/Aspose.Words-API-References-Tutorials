@@ -94,5 +94,24 @@ builder.Writeln("Setext Heading level 2");
 builder.Document.Save(dataDir + "Test.md");
 ```
 
+### FAQs
 
+#### F: Was ist ein Setext-Markdown-Header?
 
+A: Ein Setext-Markdown-Header ist eine alternative Möglichkeit, Überschriften in einem Markdown-Dokument zu erstellen. Es verwendet Unterstriche (= oder -), um unterschiedliche Ebenen von Überschriften anzuzeigen.
+
+#### F: Wie verwende ich Setext Markdown-Header?
+
+A: Um Setext Markdown-Überschriften zu verwenden, platzieren Sie Unterstriche unter dem Titeltext. Verwenden Sie Gleichheitszeichen (=) für eine Überschrift der Ebene 1 und Bindestriche (-) für eine Überschrift der Ebene 2.
+
+#### F: Gibt es Einschränkungen bei der Verwendung von Setext Markdown-Headern?
+
+A: Markdown-Überschriften von Setext unterliegen Einschränkungen hinsichtlich der Überschriftenhierarchie und sind optisch nicht so deutlich erkennbar wie Standard-Markdown-Überschriften.
+
+#### F: Kann ich das Erscheinungsbild von Setext Markdown-Headern anpassen?
+
+A: Im Standard-Markdown ist es nicht möglich, das Erscheinungsbild der Setext-Markdown-Header anzupassen. Sie haben ein vordefiniertes Aussehen, das auf den verwendeten Unterstrichzeichen basiert.
+
+#### F: Werden Setext Markdown-Header von allen Markdown-Editoren unterstützt?
+
+A: Die Unterstützung für Setext-Markdown-Header kann je nach Markdown-Editor variieren. Überprüfen Sie zur Sicherheit die spezifische Dokumentation Ihres Herausgebers.

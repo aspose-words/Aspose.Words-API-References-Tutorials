@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-Bu eğitimde, Aspose.Words for .NET'in Yer İşareti Verilerini Güncelle özelliğini anlamak ve uygulamak için adım adım ilerleyen bir kılavuzdan geçeceğiz. Bu özellik, C# kaynak kodunu kullanarak bir Word belgesindeki yer imlerinin içeriğini ve özelliklerini güncellemenizi sağlar.
+Bu öğreticide, Aspose.Words for .NET'in Yer İşareti Verilerini Güncelle özelliğini anlamak ve uygulamak için adım adım ilerleyen bir kılavuzdan geçeceğiz. Bu özellik, C# kaynak kodunu kullanarak bir Word belgesindeki yer imlerinin içeriğini ve özelliklerini güncellemenizi sağlar.
 
 ## Gereksinimler
 

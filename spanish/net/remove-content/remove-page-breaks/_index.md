@@ -86,7 +86,7 @@ foreach (Paragraph para in paragraphs)
 	if (para.ParagraphFormat.PageBreakBefore)
 		para.ParagraphFormat.PageBreakBefore = false;
 
-	//Verifique todas las líneas en el párrafo en busca de saltos de página y elimínelos.
+	// Verifique todas las líneas en el párrafo en busca de saltos de página y elimínelos.
 	foreach (Run run in para.Runs)
 	{
 		if (run.Text.Contains(ControlChar.PageBreak))

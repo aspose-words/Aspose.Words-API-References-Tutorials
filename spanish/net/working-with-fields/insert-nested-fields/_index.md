@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Paso 5: Insertar el campo anidado
 
- Usamos el DocumentBuilder`InsertField()` para insertar un campo anidado en el pie de página.
+ Usamos el DocumentBuilder`InsertField()`para insertar un campo anidado en el pie de página.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");
@@ -95,3 +95,29 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
 En este ejemplo, creamos un nuevo documento, insertamos saltos de página, movimos el cursor al pie de página y luego insertamos un campo anidado en el pie de página.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo insertar campos anidados en un documento de Word usando Aspose.Words para .NET?
+
+R: Para insertar campos anidados en un documento de Word utilizando Aspose.Words para .NET, puede seguir estos pasos:
+
+1. Obtenga el párrafo donde desea insertar los campos anidados.
+2.  Crear un`FieldStart` objeto para el campo padre.
+3.  Agregue los campos secundarios usando el`FieldStart.NextSibling` método pasando el correspondiente`FieldStart` objetos como parámetros.
+
+#### P: ¿Cuáles son los beneficios de usar campos anidados en un documento de Word con Aspose.Words para .NET?
+
+R: El uso de campos anidados ofrece varias ventajas en un documento de Word con Aspose.Words para .NET. Esto permite una mayor flexibilidad en la creación de plantillas de documentos dinámicos, al permitir la inserción de valores variables y cálculos en campos anidados. Los campos anidados también pueden facilitar la generación de contenido automatizado, como generar tablas de contenido, números de página, etc.
+
+#### P: ¿Puedo tener campos anidados de varios niveles en un documento de Word con Aspose.Words para .NET?
+
+ R: Sí, es posible tener campos anidados de varios niveles en un documento de Word con Aspose.Words para .NET. Puede crear jerarquías complejas de campos anidados utilizando el`FieldStart.NextSibling` método para agregar campos secundarios a campos principales existentes.
+
+#### P: ¿Cómo puedo personalizar las propiedades de los campos anidados en un documento de Word con Aspose.Words para .NET?
+
+ R: Para personalizar las propiedades de los campos anidados en un documento de Word con Aspose.Words para .NET, puede acceder a la correspondiente`FieldStart`objetos y modificar sus propiedades según sea necesario. Puede establecer opciones de formato, valores, cálculos, etc., de campos anidados para lograr el resultado deseado.
+
+#### P: ¿La inserción de campos anidados afecta el rendimiento del documento de Word con Aspose.Words para .NET?
+
+R: La inserción de campos anidados puede afectar el rendimiento del documento de Word con Aspose.Words para .NET, especialmente si el documento contiene una gran cantidad de campos anidados o jerarquías complejas. Se recomienda optimizar el código evitando operaciones innecesarias o repetidas en campos anidados para mejorar el rendimiento.

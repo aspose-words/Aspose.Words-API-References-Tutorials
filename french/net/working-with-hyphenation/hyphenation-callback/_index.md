@@ -32,7 +32,7 @@ Document document = new Document(dataDir + "German text.docx");
 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
 ```
 
-## Étape 3 : Gérer les erreurs de dictionnaire manquantes
+## Étape 3 : Gestion des erreurs de dictionnaire manquantes
 
 S'il manque un dictionnaire de césure, nous intercepterons l'exception correspondante et afficherons un message d'erreur :
 
@@ -81,3 +81,28 @@ finally
 ```
 
 N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.
+
+### FAQ
+
+#### Q : Qu'est-ce qu'un rappel de syllabation dans Aspose.Words ?
+
+R : Un rappel de syllabation dans Aspose.Words est une fonctionnalité qui vous permet de personnaliser la manière dont les mots sont syllabisés dans vos documents. En utilisant un rappel de syllabation, vous pouvez spécifier des règles personnalisées pour la syllabation des mots, ce qui peut être utile pour des langues spécifiques ou des scénarios particuliers où la syllabation par défaut ne produit pas les résultats souhaités.
+
+#### Q : Comment définir un rappel de syllabation dans Aspose.Words ?
+
+ R : Pour définir un rappel de césure dans Aspose.Words, vous devez créer une classe qui implémente le`HyphenationCallback` interfacer et implémenter`HandleWord()` méthode. Cette méthode sera appelée pour chaque mot rencontré lors de la syllabation. Vous pouvez lui appliquer des règles de syllabisation personnalisées et renvoyer le mot syllabisé. Ensuite, vous pouvez lier votre rappel de césure en utilisant le`Document.HyphenationCallback` propriété de votre document.
+
+#### Q : Quel est l'avantage d'utiliser un rappel de syllabation dans Aspose.Words ?
+
+R : L'avantage d'utiliser un rappel de syllabation dans Aspose.Words est la possibilité de personnaliser la façon dont les mots sont syllabisés dans vos documents. Cela vous donne plus de contrôle sur la syllabation, en particulier pour des langues ou des scénarios spécifiques où la syllabation par défaut ne donne pas les résultats souhaités. Vous pouvez appliquer des règles spécifiques à chaque mot pour obtenir une syllabation précise selon vos besoins.
+
+#### Q : Quels sont les scénarios courants où l'utilisation d'un rappel de syllabation peut être utile ?
+
+R : L'utilisation d'un booster de syllabation peut être utile dans plusieurs scénarios, tels que :
+- Syllabisation de mots dans des langues spécifiques qui ont des règles de syllabation particulières.
+- L'application de règles de syllabation personnalisées pour les acronymes ou les mots techniques.
+- Adaptation de la syllabation selon les préférences stylistiques ou les normes typographiques.
+
+#### Q : Comment puis-je tester la syllabisation personnalisée avec un rappel de syllabation dans Aspose.Words ?
+
+R : Pour tester la syllabation personnalisée avec un rappel de syllabation dans Aspose.Words, vous pouvez créer un document de test contenant des mots pour lesquels vous souhaitez appliquer des règles de syllabation personnalisées. Ensuite, vous pouvez définir votre rappel de syllabisation personnalisé, appeler le`Document.Range.Replace()` méthode pour remplacer les mots dans le document, et utilisez la méthode`Hyphenate()` méthode de la`Hyphenation` class pour obtenir la syllabation des mots. Vous pouvez ensuite formater les mots syllabés selon vos besoins, par exemple en ajoutant des tirets entre les syllabes.

@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : Configurer les paramètres de police par défaut
- Ensuite, nous allons créer une instance de`FontSettings` en utilisant`FontSettings.DefaultInstance`puis nous spécifierons les sources de polices utilisées lors du chargement et du rendu des documents. Dans cet exemple, nous utilisons une source de police système et une source de police de dossier.
+ Ensuite, nous allons créer une instance de`FontSettings` en utilisant`FontSettings.DefaultInstance`, puis nous spécifierons les sources de polices utilisées lors du chargement et du rendu des documents. Dans cet exemple, nous utilisons une source de police système et une source de police de dossier.
 
 ```csharp
 // Configurer les paramètres de police par défaut
@@ -67,3 +67,21 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ## Conclusion
 Dans ce didacticiel, nous avons vu comment configurer les paramètres de police par défaut dans un document Word avec Aspose.Words pour .NET. En spécifiant les sources de polices utilisées lors du chargement et du rendu des documents, vous pouvez contrôler l'apparence des polices dans vos documents. N'hésitez pas à utiliser cette fonctionnalité pour personnaliser les paramètres de police dans vos projets.
+
+### FAQ
+
+#### Q : Comment puis-je définir la police par défaut dans Aspose.Words ?
+
+ R : Pour définir la police par défaut dans Aspose.Words, vous pouvez utiliser le`FontSettings` classe et la`DefaultFontName` propriété spécifiant le nom de la police souhaitée.
+
+#### Q : Puis-je spécifier la taille de police par défaut dans Aspose.Words ?
+
+ R : Oui, vous pouvez spécifier la taille de police par défaut dans Aspose.Words à l'aide du`DefaultFontSize` propriété de la`FontSettings` classe. Vous pouvez définir la taille de point souhaitée.
+
+#### Q : Est-il possible de définir la couleur de police par défaut dans Aspose.Words ?
+
+ R : Oui, vous pouvez définir la couleur de police par défaut dans Aspose.Words à l'aide du`DefaultColor` propriété de la`FontSettings` classe. Vous pouvez spécifier la couleur à l'aide de valeurs RVB ou de noms prédéfinis.
+
+#### Q : Les paramètres de police par défaut s'appliquent-ils à tous les documents ?
+
+R : Oui, les paramètres de police par défaut s'appliquent à tous les documents créés ou modifiés dans Aspose.Words, à moins que des paramètres spécifiques ne soient définis pour un document individuel.

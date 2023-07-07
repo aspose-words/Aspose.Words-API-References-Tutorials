@@ -61,3 +61,17 @@ foreach (WarningInfo warningInfo in warnings)
 ```
 
 Tebrikler! Artık uyarı kaynağının Aspose.Words for .NET ile nasıl kullanılacağını öğrendiniz.
+
+### SSS
+
+#### S: "Uyarı" etiketinin görünümünü özelleştirebilir miyiz?
+
+C: "Uyarı" etiketinin formatı, kullanılan Markdown oluşturucuya bağlıdır. Çoğu durumda, görünümü hedeflemek için CSS'yi kullanarak özelleştirebilirsiniz.`blockquote` belgenizde etiketleyin.
+
+#### S: "Uyarı" etiketine simgeler eklemek mümkün mü?
+
+ C: Evet, Markdown belgenizdeki HTML kodunu kullanarak "Uyarı" etiketine simgeler eklemek mümkündür. ekleyebilirsiniz`span` uyarı metninin yanında bir simge görüntülemek için uygun sınıfla etiketleyin.
+
+#### S: "Uyarı" etiketi tüm Markdown okuyucularıyla uyumlu mu?
+
+ C: "Uyarı" etiketinin uyumluluğu, kullanılan Markdown işlemeye bağlıdır. Çoğu Markdown okuyucusu aşağıdakileri destekleyecektir:`blockquote` vurgulanan metni görüntülemek için etiketleyin, ancak tam görünüm değişebilir.

@@ -34,7 +34,7 @@ Assicurati di avere i file di dizionario appropriati nella directory dei dati.
 
 ## Passaggio 3: elaborazione delle parole mediante sillabazione
 
- Ora puoi utilizzare le funzioni di sillabazione per elaborare parole in lingue diverse. Puoi usare diversi metodi di`Document` O`DocumentBuilder` seconda delle vostre specifiche esigenze.
+ Ora puoi utilizzare le funzioni di sillabazione per elaborare parole in lingue diverse. Puoi usare diversi metodi di`Document` O`DocumentBuilder` a seconda delle vostre specifiche esigenze.
 
 ```csharp
 // Esempio: utilizzo del metodo Hyphenate di DocumentBuilder
@@ -66,3 +66,17 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
 Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.
+
+### FAQ
+
+#### D: Come posso sillabare una parola in una lingua specifica con Aspose.Words?
+
+ A: Per sillabare una parola in una lingua specifica con Aspose.Words, puoi usare il`Hyphenation` classe e il`Hyphenate()` metodo. Crea un'istanza di`Hyphenation` class specificando la lingua desiderata, quindi chiamare la classe`Hyphenate()` metodo passando la parola da sillabare come argomento. Questo ti darà le sillabe della parola nella lingua specificata.
+
+#### D: Quali codici lingua devo utilizzare per specificare la lingua di sillabazione in Aspose.Words?
+
+R: Per specificare la lingua di sillabazione in Aspose.Words, è necessario utilizzare i codici lingua appropriati. Ad esempio, puoi usare "en" per l'inglese, "fr" per il francese, "es" per lo spagnolo, "de" per il tedesco, ecc. Consulta la documentazione di Aspose.Words per un elenco completo dei codici delle lingue supportate.
+
+#### D: La sillabazione funziona per tutte le lingue in Aspose.Words?
+
+R: La sillabazione in Aspose.Words dipende dalle regole di sillabazione specifiche della lingua. Sebbene Aspose.Words supporti un'ampia gamma di lingue, alcune lingue potrebbero non essere supportate o la sillabazione potrebbe non essere disponibile per esse. Controlla la documentazione di Aspose.Words per scoprire quali lingue sono supportate per la sillabicizzazione.

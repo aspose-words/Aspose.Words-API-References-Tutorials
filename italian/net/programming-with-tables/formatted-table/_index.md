@@ -169,4 +169,4 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come creare una tabella formattata in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi creare tabelle personalizzate con una formattazione specifica nei documenti di Word a livello di codice. Questa funzione ti consente di presentare e strutturare i tuoi dati in modo visivamente accattivante e organizzato.
+In questo tutorial, abbiamo imparato come creare una tabella formattata in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi creare tabelle personalizzate con una formattazione specifica nei documenti di Word a livello di programmazione. Questa funzione ti consente di presentare e strutturare i tuoi dati in modo visivamente accattivante e organizzato.

@@ -12,7 +12,7 @@ Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som anv
 
 ## Steg 1: Installation av dokumentkatalog
 
-I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
+den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -104,3 +104,21 @@ fieldToa.Update();
 
 doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
+
+### FAQ's
+
+#### F: Hur anpassar man utseendet på TOA-fältet som infogas i Word-dokumentet med Aspose.Words för .NET?
+
+S: Du kan anpassa utseendet på det infogade TOA-fältet genom att använda egenskaperna för`FieldTOA` objekt för att ange formateringsalternativ.
+
+#### F: Kan jag lägga till flera TOA-fält i ett enda Word-dokument med Aspose.Words för .NET?
+
+S: Ja, du kan lägga till flera TOA-fält i ett enda Word-dokument med Aspose.Words för .NET. Upprepa bara infogningsstegen för varje fält.
+
+#### F: Hur kan jag kontrollera om ett TOA-fält har infogats i ett Word-dokument med Aspose.Words för .NET?
+
+S: För att kontrollera om ett TOA-fält har infogats, kan du bläddra i dokumentinnehållet och söka efter TOA-fältinstanser.
+
+#### F: Påverkar formateringen av Word-dokument med Aspose.Words för .NET om du infogar ett TOA-fält utan att använda DocumentBuilder?
+
+S: Att infoga ett TOA-fält utan att använda DocumentBuilder påverkar inte formateringen av Word-dokumentet direkt. Däremot kan formateringsalternativen för TOA-fältet påverka den övergripande formateringen av dokumentet.

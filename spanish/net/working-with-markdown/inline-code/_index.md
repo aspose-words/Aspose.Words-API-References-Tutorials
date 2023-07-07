@@ -48,7 +48,7 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 // Use un generador de documentos para agregar contenido al documento.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Se pierde el número de backticks, se usará un backtick por defecto.
+// Se pierde el número de backticks, se usará un backtick por defecto.
 Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 builder.Font.Style = inlineCode1BackTicks;
 builder.Writeln("Text with InlineCode style with 1 backtick");
@@ -61,3 +61,17 @@ builder.Writeln("Text with InlineCode style with 3 backtick");
 
 ¡Felicidades! Ahora ha aprendido a usar la funcionalidad de código en línea con Aspose.Words para .NET.
 
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo usar el código en línea en Aspose.Words?
+
+ R: Para usar código en línea en Aspose.Words, puede usar las etiquetas apropiadas para rodear el texto y formatearlo como código en línea. Por ejemplo, puede utilizar el`<code>` o`<kbd>` etiqueta para rodear el texto que se va a formatear como código en línea.
+
+#### P: ¿Es posible especificar la fuente o el color del código en línea en Aspose.Words?
+
+ R: Sí, puede especificar la fuente o el color del código en línea en Aspose.Words. Puedes usar el`Font.Name` y`Font.Color` propiedades de la`Run` objeto para establecer la fuente y el color del código en línea. Por ejemplo, puedes usar`run.Font.Name = "Courier New"` para especificar la fuente para el código en línea y`run.Font.Color = Color.Blue`para especificar el color.
+
+#### P: ¿Puedo usar el código en línea en un párrafo que contenga otros elementos de texto?
+
+ R: Sí, puede usar el código en línea en un párrafo que contenga otros elementos de texto. Puedes crear múltiples`Run` objetos para representar diferentes partes del párrafo, luego use etiquetas de código en línea para formatear solo las partes específicas como código en línea. Luego puede agregarlos al párrafo usando el`Paragraph.AppendChild(run)` método.

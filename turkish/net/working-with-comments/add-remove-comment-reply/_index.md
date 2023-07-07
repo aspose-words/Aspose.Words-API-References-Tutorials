@@ -68,3 +68,25 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesine yorum yanıtlarını nasıl ekleyeceğinizi ve kaldıracağınızı başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodu kullanarak, artık yorum yanıtlarını yönetebilir ve gereksinimlerinize göre özelleştirebilirsiniz.
 
 Yorum yanıtları, bir belge içinde işbirlikçi tartışmalara ve geri bildirime izin verir. Belgelerinizde işbirliğini ve iletişimi geliştirmek için farklı yanıt yazarları, baş harfleri, tarihler ve metinlerle denemeler yapın.
+
+### SSS
+
+#### S: Aspose.Words for .NET'te nasıl yorum ekleyebilirim?
+
+ C: Aspose.Words for .NET'te yorum eklemek için`Comment.AddComment` yorum metnini ve onu belgede nereye eklemek istediğinizi belirten yöntem.
+
+#### S: Aspose.Words for .NET'te bir yorumu nasıl kaldırabilirim?
+
+C: Aspose.Words for .NET'te bir yorumu kaldırmak için`Comment.Remove` yöntemi belirten`Comment` Kaldırmak istediğiniz nesne.
+
+#### S: Aspose.Words for .NET'te bir yoruma cevap verebilir miyim?
+
+ C: Evet, Aspose.Words for .NET'te bir yoruma şunu kullanarak yanıt verebilirsiniz:`Comment.AddReply` yanıt metnini ve onu belgede nereye eklemek istediğinizi belirten bir yöntem.
+
+#### S: Aspose.Words for .NET'te mevcut yorumlara nasıl erişebilirim?
+
+ C: Aspose.Words for .NET'teki mevcut yorumlara şu şekilde erişebilirsiniz:`CommentCollection` mülkiyeti`Document` nesne. Bu, belgede bulunan tüm yorumlara göz atmanıza izin verecektir.
+
+#### S: Aspose.Words for .NET'te yorum metnini düzenleyebilir miyim?
+
+ C: Evet, Aspose.Words for .NET'te bir yorumun metnini düzenleyebilirsiniz.`Comment.Text` karşılık gelen özellik`Comment` nesne ve metni gerektiği gibi değiştirme.

@@ -68,3 +68,25 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET Kommentarantworten in einem Word-Dokument hinzufügen und entfernen. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie nun Kommentarantworten verwalten und sie entsprechend Ihren Anforderungen anpassen.
 
 Kommentarantworten ermöglichen gemeinsame Diskussionen und Feedback innerhalb eines Dokuments. Experimentieren Sie mit verschiedenen Antwortautoren, Initialen, Daten und Texten, um die Zusammenarbeit und Kommunikation in Ihren Dokumenten zu verbessern.
+
+### FAQs
+
+#### F: Wie kann ich in Aspose.Words für .NET einen Kommentar hinzufügen?
+
+ A: Um einen Kommentar in Aspose.Words für .NET hinzuzufügen, können Sie die verwenden`Comment.AddComment` -Methode, die den Text des Kommentars und die Stelle angibt, an der Sie ihn im Dokument hinzufügen möchten.
+
+#### F: Wie kann ich einen Kommentar in Aspose.Words für .NET entfernen?
+
+A: Um einen Kommentar in Aspose.Words für .NET zu entfernen, können Sie Folgendes verwenden`Comment.Remove` Methode, die die angibt`Comment` Objekt, das Sie entfernen möchten.
+
+#### F: Kann ich auf einen Kommentar in Aspose.Words für .NET antworten?
+
+ A: Ja, Sie können in Aspose.Words für .NET auf einen Kommentar antworten`Comment.AddReply` Methode, die den Antworttext angibt und angibt, wo Sie ihn im Dokument hinzufügen möchten.
+
+#### F: Wie kann ich auf vorhandene Kommentare in Aspose.Words für .NET zugreifen?
+
+ A: Sie können mit dem auf vorhandene Kommentare in Aspose.Words für .NET zugreifen`CommentCollection` Eigentum der`Document` Objekt. Auf diese Weise können Sie alle im Dokument vorhandenen Kommentare durchsuchen.
+
+#### F: Kann ich Kommentartext in Aspose.Words für .NET bearbeiten?
+
+ A: Ja, Sie können den Text eines Kommentars in Aspose.Words für .NET bearbeiten, indem Sie auf zugreifen`Comment.Text` Eigentum des entsprechenden`Comment` Objekt und ändern Sie den Text nach Bedarf.

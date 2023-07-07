@@ -75,3 +75,25 @@ N'oubliez pas d'ajuster le code en fonction de vos besoins spécifiques, y compr
 Toutes nos félicitations! Vous avez appris avec succès comment résoudre les commentaires et leurs réponses dans un document Word à l'aide de Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais gérer la résolution des commentaires et mettre à jour le statut des commentaires et leurs réponses en fonction de vos besoins.
 
 La résolution des commentaires aide à suivre et à gérer les commentaires dans un document. Testez différents statuts de commentaires et personnalisez-les pour améliorer la collaboration et les processus de révision de vos documents.
+
+### FAQ
+
+#### Q : Comment puis-je résoudre un commentaire dans Aspose.Words pour .NET ?
+
+ R : Pour résoudre un commentaire dans Aspose.Words pour .NET, vous pouvez utiliser le`Comment.Resolve` méthode spécifiant la`Comment` objet que vous souhaitez résoudre. Cela marquera le commentaire comme résolu et le masquera dans le document final.
+
+#### Q : Comment ajouter une réponse à un commentaire résolu dans Aspose.Words pour .NET ?
+
+ R : Bien que les commentaires résolus soient masqués par défaut dans le document final, vous pouvez toujours ajouter une réponse à un commentaire résolu à l'aide de la`Comment.AddReply`méthode spécifiant le texte de réponse et où vous voulez l'ajouter.
+
+#### Q : Comment afficher les commentaires résolus dans Aspose.Words pour .NET ?
+
+ R : Par défaut, les commentaires résolus sont masqués dans le document final. Cependant, vous pouvez les afficher en utilisant le`CommentOptions.ShowResolvedComments` propriété de la`Document` objet et en le réglant sur`true`.
+
+#### Q : Comment puis-je masquer tous les commentaires, y compris les réponses, dans Aspose.Words pour .NET ?
+
+ R : Pour masquer tous les commentaires, y compris les réponses, dans Aspose.Words pour .NET, vous pouvez utiliser le`CommentOptions.CommentDisplayMode` propriété de la`Document` objet et réglez-le sur`CommentDisplayMode.None`.
+
+#### Q : Puis-je modifier le texte d'un commentaire résolu dans Aspose.Words pour .NET ?
+
+ R : Oui, vous pouvez modifier le texte d'un commentaire résolu dans Aspose.Words pour .NET en accédant au`Comment.Text` propriété du correspondant`Comment` objet et en modifiant le texte si nécessaire.

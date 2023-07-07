@@ -54,3 +54,17 @@ doc.Save(dataDir + "InsertionFieldNone.docx");
 Dans cet exemple, nous avons créé un nouveau document, initialisé un DocumentBuilder, puis inséré un champ NONE. Le document est alors enregistré avec un nom de fichier spécifié.
 
 Ceci conclut notre guide sur l'utilisation de la fonctionnalité "Insert NONE Field" avec Aspose.Words pour .NET.
+
+### FAQ
+
+#### Q : Que couvre le didacticiel "Travailler avec des champs : Insérer un champ aucun" ?
+
+R : Ce didacticiel couvre la manipulation de champs dans Aspose Words pour .NET, avec un accent particulier sur l'insertion du champ "Aucun". Les champs sont des éléments dynamiques dans un document Word qui peuvent être utilisés pour afficher ou calculer des données. Le tutoriel explique comment insérer le champ "Aucun" et l'utiliser de manière appropriée.
+
+#### Q : Pourquoi utiliser le champ "Aucun" dans Aspose Words ?
+
+R : Le champ "Aucun" dans Aspose Words est utile lorsque vous souhaitez insérer un espace réservé ou un marqueur dans un document, mais sans effet ni calcul spécifique. Il peut être utilisé pour marquer des endroits dans le document où vous souhaitez insérer des données ultérieurement ou pour ajouter des notes spéciales sans perturber le reste du contenu.
+
+#### Q : Puis-je personnaliser le champ "Aucun" avec des paramètres supplémentaires ?
+
+R : Non, le champ "Aucun" n'accepte pas de paramètres supplémentaires. Il est principalement utilisé comme marqueur ou espace réservé et n'a aucune fonctionnalité spécifique. Cependant, vous pouvez utiliser d'autres types de champs dans Aspose Words pour effectuer des opérations plus avancées.

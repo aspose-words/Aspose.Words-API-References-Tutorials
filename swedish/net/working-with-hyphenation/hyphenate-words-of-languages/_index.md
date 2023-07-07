@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 
-denna steg-för-steg handledning kommer vi att guida dig om hur du avstavar ord på olika språk i Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
+I denna steg-för-steg handledning kommer vi att guida dig om hur du avstavar ord på olika språk i Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
 För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
@@ -34,7 +34,7 @@ Se till att du har rätt ordboksfiler i din datakatalog.
 
 ## Steg 3: Bearbeta ord genom avstavning
 
- Nu kan du använda avstavningsfunktioner för att bearbeta ord på olika språk. Du kan använda olika metoder`Document` eller`DocumentBuilder`beroende på dina specifika behov.
+ Nu kan du använda avstavningsfunktioner för att bearbeta ord på olika språk. Du kan använda olika metoder`Document` eller`DocumentBuilder` beroende på dina specifika behov.
 
 ```csharp
 // Exempel: Använda avstavningsmetoden i DocumentBuilder
@@ -66,3 +66,17 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
 Använd gärna den här koden i dina egna projekt och modifiera den för att passa dina specifika behov.
+
+### FAQ's
+
+#### F: Hur kan jag syllabisera ett ord på ett specifikt språk med Aspose.Words?
+
+ S: För att syllabisera ett ord på ett specifikt språk med Aspose.Words kan du använda`Hyphenation` klass och`Hyphenate()` metod. Skapa en instans av`Hyphenation` klass som anger det önskade språket, anropa sedan`Hyphenate()` metod som skickar ordet till stavning som ett argument. Detta ger dig stavelserna i ordet på det angivna språket.
+
+#### F: Vilka språkkoder ska jag använda för att specificera stavningsspråket i Aspose.Words?
+
+S: För att specificera språket i Aspose.Words måste du använda lämpliga språkkoder. Till exempel kan du använda "en" för engelska, "fr" för franska, "es" för spanska, "de" för tyska, etc. Se Aspose.Words-dokumentationen för en fullständig lista över språkkoder som stöds.
+
+#### F: Fungerar stavning för alla språk i Aspose.Words?
+
+S: Syllabisering i Aspose.Words beror på språkspecifika regler för syllabisering. Även om Aspose.Words stöder ett brett spektrum av språk, kanske vissa språk inte stöds eller så är stavning inte tillgänglig för dem. Kontrollera Aspose.Words-dokumentationen för att ta reda på vilka språk som stöds för syllabisering.

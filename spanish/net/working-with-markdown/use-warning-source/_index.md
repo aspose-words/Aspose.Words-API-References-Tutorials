@@ -61,3 +61,17 @@ foreach (WarningInfo warningInfo in warnings)
 ```
 
 ¡Felicidades! Ahora ha aprendido a usar la fuente de advertencia con Aspose.Words para .NET.
+
+### Preguntas frecuentes
+
+#### P: ¿Podemos personalizar la apariencia de la etiqueta de "Advertencia"?
+
+R: El formato de la etiqueta "Advertencia" depende del renderizador Markdown utilizado. En la mayoría de los casos, puede personalizar el aspecto utilizando CSS para orientar el`blockquote` etiqueta en su documento.
+
+#### P: ¿Es posible agregar íconos a la etiqueta "Advertencia"?
+
+ R: Sí, es posible agregar íconos a la etiqueta "Advertencia" usando código HTML en su documento Markdown. Puede insertar un`span` etiqueta con la clase adecuada para mostrar un icono junto al texto de advertencia.
+
+#### P: ¿La etiqueta de "Advertencia" es compatible con todos los lectores de Markdown?
+
+ R: La compatibilidad de la etiqueta "Advertencia" depende de la representación de Markdown utilizada. La mayoría de los lectores de Markdown admitirán el`blockquote` etiqueta para mostrar el texto resaltado, pero la apariencia exacta puede variar.

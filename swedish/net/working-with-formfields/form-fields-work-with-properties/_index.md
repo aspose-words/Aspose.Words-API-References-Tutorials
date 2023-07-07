@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-formfields/form-fields-work-with-properties/
 ---
 
-I denna steg-för-steg handledning kommer vi att guida dig om hur du arbetar med formulärfältsegenskaper i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
+denna steg-för-steg handledning kommer vi att guida dig om hur du arbetar med formulärfältsegenskaper i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
 
 För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte har gjort det, ladda ner och installera biblioteket från den officiella webbplatsen.
 
@@ -64,3 +64,25 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
 Använd gärna den här koden i dina egna projekt och modifiera den efter dina specifika krav.
+
+### FAQ's
+
+#### F: Hur kan jag ändra namnet på ett formulärfält i Aspose.Words?
+
+ S: För att ändra namnet på ett formulärfält i Aspose.Words kan du använda`FormField.Name` egendom och tilldela den ett nytt värde.
+
+#### F: Är det möjligt att ändra standardvärdet för ett formulärfält?
+
+ S: Ja, det är möjligt att ändra standardvärdet för ett formulärfält i Aspose.Words. Använd`FormField.Result` egenskap för att ange den nya standarden.
+
+#### F: Hur kan jag ändra formatet för ett datumformulärfält i Aspose.Words?
+
+ S: För att ändra formatet för ett datumformulärfält i Aspose.Words kan du använda`FormField.TextFormat` egenskapen och tilldela den ett nytt datumformat. Du kan till exempel använda "dd/MM/åååå" för att visa datumet i formatet dag/månad/år.
+
+#### F: Kan jag hämta listan med alternativ från ett rullgardinsfält i Aspose.Words?
+
+ S: Ja, du kan hämta listan med alternativ för ett rullgardinsfält i Aspose.Words med hjälp av`FormField.DropDownItems` fast egendom. Du kan komma åt den här egenskapen och få en lista över alternativ för att utföra ytterligare operationer om det behövs.
+
+#### F: Hur kan jag ta bort alla egenskaper från ett formulärfält i Aspose.Words?
+
+ S: För att ta bort alla egenskaper från ett formulärfält i Aspose.Words kan du använda`FormField.Clear` metod för att rensa alla formulärfältegenskaper.

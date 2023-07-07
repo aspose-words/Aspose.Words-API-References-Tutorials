@@ -63,41 +63,62 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 Voici le code source complet pour ancrer une réponse de commentaire en utilisant Aspose.Words pour .NET :
 
 ```csharp
+// Créez une instance du document.
+string dataDir = "YOUR DOCUMENT DIRECTORY";        
+Document doc = new Document();
 
-    // Créez une instance du document.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";        
-	Document doc = new Document();
+// Créez trois objets Run.
+//Les deux premiers exécutent du texte, tandis que le troisième exécute un commentaire
 
-    // Créez trois objets Run.
-    //Les deux premiers exécutent du texte, tandis que le troisième exécute un commentaire
+Paragraph para1 = new Paragraph(doc);
+Run run1 = new Run(doc, "Some ");
+Run run2 = new Run(doc, "text ");
+para1.AppendChild(run1);
+para1.AppendChild(run2);
+doc.FirstSection.Body.AppendChild(para1);
 
-	Paragraph para1 = new Paragraph(doc);
-	Run run1 = new Run(doc, "Some ");
-	Run run2 = new Run(doc, "text ");
-	para1.AppendChild(run1);
-	para1.AppendChild(run2);
-	doc.FirstSection.Body.AppendChild(para1);
+Paragraph para2 = new Paragraph(doc);
+Run run3 = new Run(doc, "is ");
+Run run4 = new Run(doc, "added ");
+para2.AppendChild(run3);
+para2.AppendChild(run4);
+doc.FirstSection.Body.AppendChild(para2);
 
-	Paragraph para2 = new Paragraph(doc);
-	Run run3 = new Run(doc, "is ");
-	Run run4 = new Run(doc, "added ");
-	para2.AppendChild(run3);
-	para2.AppendChild(run4);
-	doc.FirstSection.Body.AppendChild(para2);
+Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
+comment.Paragraphs.Add(new Paragraph(doc));
+comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 
-	Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-	comment.Paragraphs.Add(new Paragraph(doc));
-	comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+// Chacun des objets Run est associé à un objet CommentRangeStart et CommentRangeEnd.
 
-	// Chacun des objets Run est associé à un objet CommentRangeStart et CommentRangeEnd.
+CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
+CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
 
-	CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
-	CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
+run1.ParentNode.InsertAfter(commentRangeStart, run1);
+run3.ParentNode.InsertAfter(commentRangeEnd, run3);
+commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 
-	run1.ParentNode.InsertAfter(commentRangeStart, run1);
-	run3.ParentNode.InsertAfter(commentRangeEnd, run3);
-	commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
-
-	doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
-            
+doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
 ```
+
+### FAQ
+
+#### Q : Qu'est-ce qu'une ancre de commentaire dans Aspose.Words pour .NET ?
+
+R : Dans Aspose.Words pour .NET, une ancre de commentaire est un marqueur qui relie un commentaire à un emplacement spécifique dans un document.
+
+#### Q : Comment puis-je ajouter une ancre de commentaire dans un document Aspose.Words pour .NET ?
+
+R : Pour ajouter une ancre de commentaire dans un document Aspose.Words pour .NET, suivez les étapes mentionnées dans le didacticiel.
+
+#### Q : Comment accéder à une ancre de commentaire existante dans Aspose.Words pour .NET ?
+
+ R : Vous pouvez accéder à une ancre de commentaire existante dans Aspose.Words pour .NET en utilisant le`Comment.Anchor` propriété.
+
+#### Q : Puis-je supprimer une ancre de commentaire dans Aspose.Words pour .NET ?
+
+ R : Oui, vous pouvez supprimer une ancre de commentaire dans Aspose.Words pour .NET en utilisant le`Comment.Remove` méthode.
+
+#### Q : Comment puis-je modifier le texte d'un commentaire lié à une ancre de commentaire dans Aspose.Words pour .NET ?
+
+ : Pour modifier le texte d'un commentaire lié à une ancre de commentaire dans Aspose.Words pour .NET, vous pouvez accéder au`Comment.Text` propriété du correspondant`Comment` objet et modifiez le texte si nécessaire.
+

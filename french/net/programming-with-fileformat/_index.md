@@ -16,6 +16,6 @@ Que vous ayez besoin de générer des rapports, de créer des documents personna
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Détecter le format de fichier](./detect-file-format/) | Guide étape par étape pour détecter le format de fichier de document avec Aspose.Words pour .NET. |
-| [Détecter les signatures de documents](./detect-document-signatures/) | Guide étape par étape pour détecter les signatures numériques dans un document avec Aspose.Words pour .NET. |
-| [Vérifier le document crypté](./verify-encrypted-document/) | Guide étape par étape pour vérifier qu'un document est crypté avec Aspose.Words pour .NET. |
+| [Détecter le format de fichier du document](./detect-file-format/) | Guide étape par étape pour détecter le format de fichier de document avec Aspose.Words pour .NET. |
+| [Détecter la signature numérique sur un document Word](./detect-document-signatures/) | Guide étape par étape pour détecter les signatures numériques dans un document avec Aspose.Words pour .NET. |
+| [Vérifier le document Word crypté](./verify-encrypted-document/) | Guide étape par étape pour vérifier qu'un document est crypté avec Aspose.Words pour .NET. |

@@ -25,7 +25,7 @@ Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 سنقوم الآن بتكوين خيارات البحث والاستبدال عن طريق تحديد اتجاه البحث واستبدال رد الاتصال لإدراج مستند في مستند آخر. إليك الطريقة:
 
 ```csharp
-//تكوين خيارات البحث والاستبدال.
+// تكوين خيارات البحث والاستبدال.
 FindReplaceOptions options = new FindReplaceOptions
 {
 Direction = FindReplaceDirection.Backward,

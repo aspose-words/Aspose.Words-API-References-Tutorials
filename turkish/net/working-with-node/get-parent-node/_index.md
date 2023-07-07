@@ -53,3 +53,25 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 ```
 
 Bu, Aspose.Words for .NET ile belirli bir düğümün ana düğümünü almak için eksiksiz bir kod örneğidir. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları uyguladığınızdan emin olun.
+
+### SSS
+
+#### S: Node.js'deki ana düğüm nedir?
+
+C: Node.js'deki üst düğüm, bir XML belgesinin hiyerarşisindeki bir sonraki üst düğümü ifade eder. Bu, belirtilen düğümü içeren düğümdür.
+
+#### S: Belirli bir düğümün üst düğümü nasıl elde edilir?
+
+ C: Belirli bir düğümün ana düğümünü almak için,`parentNode` düğümün özelliği. Bu özellik, geçerli düğümün üst düğümünü döndürür.
+
+#### S: Bir düğümün üst düğüme sahip olup olmadığı nasıl kontrol edilir?
+
+ C: Bir düğümün üst düğüme sahip olup olmadığını kontrol etmek için,`parentNode` düğümün özelliği belirlenir. Ayarlanırsa, düğümün bir üst düğümü olduğu anlamına gelir.
+
+#### S: Bir düğümün ana düğümünü değiştirebilir miyiz?
+
+ C: Çoğu durumda, bir düğümün ana düğümü, XML belgesinin yapısı tarafından belirlenir ve doğrudan değiştirilemez. Ancak, belirli yöntemleri kullanarak bir düğümü başka bir düğüme taşıyabilirsiniz, örneğin:`appendChild` veya`insertBefore`.
+
+#### S: Ana düğümlerin hiyerarşisine nasıl göz atılır?
+
+ C: Üst düğümlerin hiyerarşisinde çapraz geçiş yapmak için, belirli bir düğümden yineleme yapabilirsiniz.`parentNode`özelliği, belgenin kök düğümüne ulaşana kadar.

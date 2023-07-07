@@ -78,3 +78,17 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
 ## Conclusione
 In questo tutorial, abbiamo visto come ottenere l'elenco dei font disponibili in Aspose.Words per .NET. Questo ti consente di sapere quali caratteri puoi utilizzare nei tuoi documenti. Sentiti libero di utilizzare questa funzione per scegliere i caratteri appropriati per le tue esigenze.
+
+### FAQ
+
+#### D: Come posso recuperare l'elenco dei caratteri disponibili in Aspose.Words?
+
+ R: Per recuperare l'elenco dei caratteri disponibili in Aspose.Words, puoi utilizzare il file`FontsProvider` classe e il`GetAvailableFonts` metodo. Questo metodo restituirà un elenco di tutti i font installati sul tuo sistema.
+
+#### D: Posso filtrare l'elenco dei caratteri disponibili in base a determinati criteri in Aspose.Words?
+
+R: Sì, puoi filtrare l'elenco dei caratteri disponibili in Aspose.Words utilizzando criteri specifici. Ad esempio, puoi filtrare i caratteri per famiglia, stile o lingua.
+
+#### D: Come posso utilizzare l'elenco dei caratteri disponibili nei miei documenti Word?
+
+ R: Per utilizzare l'elenco dei caratteri disponibili nei tuoi documenti Word, puoi sfogliare l'elenco e selezionare i caratteri appropriati utilizzando i metodi e le proprietà del`FontSettings` classe in Aspose.Words.

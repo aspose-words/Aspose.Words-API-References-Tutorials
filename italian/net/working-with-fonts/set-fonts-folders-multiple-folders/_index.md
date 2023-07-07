@@ -49,18 +49,40 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ### Esempio di codice sorgente per Set Fonts Folders Multiple Folders utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Percorso della directory dei documenti
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Tieni presente che questa impostazione sovrascriverà qualsiasi origine di font predefinita che viene cercata per impostazione predefinita. Ora verranno cercate solo queste cartelle
-	// font durante il rendering o l'incorporamento di font. Per aggiungere una fonte di carattere aggiuntiva mantenendo le fonti di carattere di sistema, utilizzare sia FontSettings.GetFontSources che
-	// FontSettings.SetFontSources invece.
-	fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Tieni presente che questa impostazione sovrascriverà qualsiasi origine di font predefinita che viene cercata per impostazione predefinita. Ora verranno cercate solo queste cartelle
+// font durante il rendering o l'incorporamento di font. Per aggiungere una fonte di carattere aggiuntiva mantenendo le fonti di carattere di sistema, utilizzare sia FontSettings.GetFontSources che
+// FontSettings.SetFontSources invece.
+fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ```
 
 ## Conclusione
 In questo tutorial, abbiamo imparato come impostare più cartelle di font durante il rendering di un documento utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata, puoi facilmente specificare più cartelle di font da utilizzare durante il rendering dei tuoi documenti. Aspose.Words offre un'API potente e flessibile per lavorare con i caratteri nei tuoi documenti. Con questa conoscenza, puoi controllare e personalizzare le origini dei caratteri utilizzate durante il rendering dei tuoi documenti in base alle tue esigenze specifiche.
+
+### FAQ
+
+#### Q: Come posso impostare più cartelle di font in Aspose.Words?
+
+ A: Per impostare più cartelle di font in Aspose.Words, puoi usare il`SetFontsFolders` metodo del`Fonts` class che fornisce un elenco di percorsi di cartelle di caratteri personalizzati.
+
+#### D: L'impostazione di più cartelle di font influisce su tutti i documenti elaborati con Aspose.Words?
+
+A: Sì, l'impostazione di più cartelle di font influisce su tutti i documenti elaborati con Aspose.Words. Dopo aver definito le cartelle dei caratteri, Aspose.Words utilizzerà queste posizioni per cercare i caratteri in tutti i documenti.
+
+#### D: Quante cartelle di font posso definire in Aspose.Words?
+
+R: Puoi definire tutte le cartelle di font necessarie in Aspose.Words. Non esiste un limite specifico al numero di cartelle di font che è possibile definire.
+
+#### D: Come posso controllare le cartelle dei font definite in Aspose.Words?
+
+ A: Per controllare le cartelle dei font definite in Aspose.Words, puoi usare il`GetFolders` metodo del`Fonts` class per ottenere le posizioni delle cartelle dei caratteri configurate.
+
+#### D: Le cartelle dei font devono contenere font specifici?
+
+R: Sì, le cartelle dei caratteri devono contenere i caratteri che desideri utilizzare nei documenti di Word. Aspose.Words cercherà i caratteri nelle cartelle specificate durante l'elaborazione dei documenti.

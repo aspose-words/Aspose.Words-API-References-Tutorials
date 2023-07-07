@@ -45,7 +45,7 @@ Finalmente, podemos guardar el documento en el formato deseado.
 // Use un generador de documentos para agregar contenido al documento.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Insertar hipervínculo.
+// Insertar hipervínculo.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", falso);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -53,3 +53,17 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 ¡Felicidades! Ahora ha aprendido a usar la función "Autolink" con Aspose.Words para .NET.
 
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo crear un enlace automático a una dirección URL en Aspose.Words?
+
+ R: Para crear un enlace automático a una dirección URL en Aspose.Words, puede usar el`<a>` etiqueta con el`href` atributo que contiene la dirección URL. Por ejemplo, puedes usar`<a href="https://www.aspose.com">https://www.aspose.com</a>` para vincular automáticamente a "https: //www.aspose.com".
+
+#### P: ¿Es posible personalizar el texto de visualización de un enlace automático en Aspose.Words?
+
+ R: Sí, puede personalizar el texto de visualización de un enlace automático en Aspose.Words. En lugar de usar la dirección URL como texto para mostrar, puede usar cualquier otro texto reemplazando el contenido entre el`<a>` etiquetas Por ejemplo, puedes usar`<a href="https://www.aspose.com">Click here</a>` para mostrar el texto "Haga clic aquí" como un enlace automático.
+
+#### P: ¿Cómo puedo agregar atributos adicionales a un enlace automático en Aspose.Words?
+
+R: Para agregar atributos adicionales a un enlace automático en Aspose.Words, puede usar atributos HTML adicionales dentro del`<a>` etiqueta. Por ejemplo, puedes usar`<a href="https://www.aspose.com" target="_blank">Link</a>` para abrir el enlace en una nueva ventana o pestaña usando el` attribute target="_blank"`.

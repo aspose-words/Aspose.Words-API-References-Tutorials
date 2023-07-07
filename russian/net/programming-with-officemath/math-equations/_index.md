@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Загрузите документ Word
+// Загрузите документ Word
 Document doc = new Document(dataDir + "Office math.docx");
 
 // Получите элемент OfficeMath

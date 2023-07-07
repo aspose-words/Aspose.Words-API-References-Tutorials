@@ -2,13 +2,13 @@
 title: 书签表列
 linktitle: 书签表列
 second_title: Aspose.Words for .NET API 参考
-description: 了解如何使用 Aspose.Words for .NET 为 Word 文档中的表格列添加书签。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中为表格列添加书签。
 type: docs
 weight: 10
 url: /zh/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 
-在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的书签表格列功能。此功能允许您为 Word 文档中表格的特定列添加书签并访问该列的内容。
+在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的书签表列功能。此功能允许您为 Word 文档中表格的特定列添加书签并访问该列的内容。
 
 ## 先决条件
 
@@ -17,7 +17,7 @@ url: /zh/net/programming-with-bookmarks/bookmark-table-columns/
 
 ## 第 1 步：创建表
 
-在表列上创建书签之前，我们必须首先使用`DocumentBuilder`目的。在我们的示例中，我们创建了一个包含两行和两列的表格：
+在表列上创建书签之前，我们必须首先使用`DocumentBuilder`目的。在我们的示例中，我们创建一个包含两行和两列的表：
 
 ```csharp
 builder. StartTable();
@@ -51,9 +51,9 @@ builder. EndTable();
 builder. StartBookmark("MyBookmark");
 ```
 
-## 第 3 步：访问列内容
+## 步骤 3：访问列内容
 
-我们遍历文档中的所有书签并显示它们的名称。如果书签是一列，我们使用列索引和`GetText`方法：
+我们浏览文档中的所有书签并显示它们的名称。如果书签是一列，我们使用列索引和`GetText`方法：
 
 ```csharp
 foreach (Bookmark
@@ -70,9 +70,9 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
 }
 ```
 
-### 使用 Aspose.Words for .NET 的书签表列示例源代码
+### 使用 Aspose.Words for .NET 的书签表列的示例源代码
 
-下面是完整的示例源代码，用于演示使用 Aspose.Words for .NET 在表格列上创建书签：
+以下是完整的示例源代码，演示使用 Aspose.Words for .NET 在表列上创建书签：
 
 ```csharp
 
@@ -122,4 +122,4 @@ Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.
 
 ## 结论
 
-在本文中，我们探索了 C# 源代码以了解如何使用 Aspose.Words for .NET 的 Bookmark Table Columns 功能。我们按照分步指南为 Word 文档中表格的特定列添加了书签，并跳转到该列的内容。
+在本文中，我们探索了 C# 源代码，以了解如何使用 Aspose.Words for .NET 的书签表列功能。我们按照分步指南为 Word 文档中表格的特定列添加书签，并跳转到该列的内容。

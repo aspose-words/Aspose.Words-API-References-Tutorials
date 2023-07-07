@@ -2,7 +2,7 @@
 title: Acceso escrito
 linktitle: Acceso escrito
 second_title: Referencia de API de Aspose.Words para .NET
-description: Aprenda a usar el acceso con tipo para manipular tablas en Aspose.Words para .NET.
+description: Aprenda a usar el acceso escrito para manipular tablas en Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-node/typed-access/
@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // Acceso rápido y mecanografiado a la primera fila de la tabla.
+     //Acceso rápido y mecanografiado a la primera fila de la tabla.
      table.FirstRow?.Remove();
 
      // Acceso rápido y escrito a la última fila de la tabla.
@@ -79,4 +79,24 @@ foreach (Table table in tables)
 
 Este es un código de muestra completo para el acceso escrito a las tablas con Aspose.Words para .NET. Asegúrese de importar las referencias necesarias y siga los pasos descritos anteriormente para integrar este código en su proyecto.
 
----
+### Preguntas frecuentes
+
+#### P: ¿Qué es el acceso escrito en Node.js?
+
+R: El acceso con tipo en Node.js se refiere al uso de tipos de nodos específicos para acceder a las propiedades y valores de los nodos en un documento XML. En lugar de utilizar propiedades genéricas, el acceso con tipo utiliza métodos específicos para acceder a tipos de nodos particulares, como nodos de texto, nodos de elementos, nodos de atributos, etc.
+
+#### P: ¿Cómo accedo a los nodos mediante el acceso con tipo?
+
+ R: Para acceder a los nodos mediante el acceso con tipo en Node.js, puede usar métodos específicos según el tipo de nodo al que desee acceder. Por ejemplo, puede utilizar el`getElementsByTagName` método para acceder a todos los nodos de un tipo específico, el`getAttribute` método para acceder al valor de un atributo, etc.
+
+#### P: ¿Cuáles son las ventajas del acceso con tipo sobre el acceso sin tipo?
+
+R: El acceso con tipo tiene varias ventajas sobre el acceso sin tipo. En primer lugar, permite una mayor especificidad al acceder a los nodos, lo que facilita la manipulación y administración de los nodos en un documento XML. Además, el acceso con tipo proporciona una mayor seguridad al evitar errores de tipo al acceder a las propiedades y valores de los nodos.
+
+#### P: ¿A qué tipos de nodos se puede acceder con acceso con tipo?
+
+R: Con el acceso escrito en Node.js, puede acceder a diferentes tipos de nodos, como nodos de elementos, nodos de texto, nodos de atributos, etc. Cada tipo de nodo tiene sus propios métodos y propiedades específicos para acceder a sus características y valores.
+
+#### P: ¿Cómo manejar los errores durante el acceso escrito?
+
+ R: Para manejar errores durante el acceso escrito en Node.js, puede usar mecanismos de manejo de errores como`try...catch` bloques Si se produce un error al acceder a un nodo específico, puede capturar el error y tomar las medidas adecuadas para solucionarlo, como mostrar un mensaje de error o realizar una acción de rescate.

@@ -34,7 +34,7 @@ Asegúrese de tener los archivos de diccionario apropiados en su directorio de d
 
 ## Paso 3: procesamiento de palabras por separación de sílabas
 
- Ahora puede usar las funciones de división de palabras para procesar palabras en diferentes idiomas. Puede utilizar diferentes métodos de`Document` o`DocumentBuilder`dependiendo de sus necesidades específicas.
+ Ahora puede usar las funciones de división de palabras para procesar palabras en diferentes idiomas. Puede utilizar diferentes métodos de`Document` o`DocumentBuilder` dependiendo de sus necesidades específicas.
 
 ```csharp
 // Ejemplo: uso del método de guiones de DocumentBuilder
@@ -66,3 +66,17 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
 Siéntase libre de usar este código en sus propios proyectos y modifíquelo para satisfacer sus necesidades específicas.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo silabear una palabra en un idioma específico con Aspose.Words?
+
+ R: Para silabear una palabra en un idioma específico con Aspose.Words, puede usar el`Hyphenation` clase y el`Hyphenate()` método. Crear una instancia de la`Hyphenation` clase especificando el idioma deseado, luego llame al`Hyphenate()` método que pasa la palabra a silabear como un argumento. Esto le dará las sílabas de la palabra en el idioma especificado.
+
+#### P: ¿Qué códigos de idioma debo usar para especificar el idioma de silabeo en Aspose.Words?
+
+R: Para especificar el idioma de silabeo en Aspose.Words, debe usar los códigos de idioma apropiados. Por ejemplo, puede usar "en" para inglés, "fr" para francés, "es" para español, "de" para alemán, etc. Consulte la documentación de Aspose.Words para obtener una lista completa de los códigos de idioma admitidos.
+
+#### P: ¿Funciona el silabeo para todos los idiomas en Aspose.Words?
+
+R: El silabeo en Aspose.Words depende de las reglas de silabeo específicas del idioma. Aunque Aspose.Words es compatible con una amplia gama de idiomas, es posible que algunos idiomas no sean compatibles o que el silabeo no esté disponible para ellos. Consulte la documentación de Aspose.Words para averiguar qué idiomas son compatibles con el silabismo.

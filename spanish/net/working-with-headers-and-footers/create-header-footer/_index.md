@@ -111,7 +111,7 @@ builder.InsertBreak(BreakType.SectionBreakNewPage);
 currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-//Esta sección no necesita un encabezado/pie de página diferente para la primera página, solo necesitamos una página de título en el documento,
+// Esta sección no necesita un encabezado/pie de página diferente para la primera página, solo necesitamos una página de título en el documento,
 // y el encabezado/pie de página de esta página ya se definió en la sección anterior.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
@@ -119,7 +119,7 @@ pageSetup.DifferentFirstPageHeaderFooter = false;
 // el ancho de página es diferente para la nueva sección, por lo que debemos establecer diferentes anchos de celda para una tabla de pie de página.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-// Si queremos utilizar los encabezados/pies de página ya existentes para esta sección,
+//Si queremos utilizar los encabezados/pies de página ya existentes para esta sección,
 // pero con algunos cambios menores, podría tener sentido copiar los encabezados/pies de página
 // del apartado anterior y aplicar los cambios necesarios donde queramos.
 CopyHeadersFootersFromPreviousSection(currentSection);
@@ -134,7 +134,7 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
- Agregamos un salto de página y un salto de sección para crear una nueva página donde los encabezados/pies de página principales serán visibles. Establecemos los parámetros para la nueva sección, luego usamos el`CopyHeadersFootersFromPreviousSection`para copiar los encabezados/pies de página de la sección anterior. Finalmente, establecemos los anchos de celda apropiados para la tabla de pie de página principal y guardamos el documento.
+ Agregamos un salto de página y un salto de sección para crear una nueva página donde los encabezados/pies de página principales serán visibles. Establecemos los parámetros para la nueva sección, luego usamos el`CopyHeadersFootersFromPreviousSection` para copiar los encabezados/pies de página de la sección anterior. Finalmente, establecemos los anchos de celda apropiados para la tabla de pie de página principal y guardamos el documento.
 
 ### Ejemplo de código fuente para crear encabezados y pies de página con Aspose.Words para .NET
 
@@ -176,7 +176,7 @@ builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-// Usamos una tabla con dos celdas para hacer una parte del texto en la línea (con numeración de páginas).
+//Usamos una tabla con dos celdas para hacer una parte del texto en la línea (con numeración de páginas).
 // Para alinear a la izquierda, y la otra parte del texto (con derechos de autor) para alinear a la derecha.
 builder.StartTable();
 
@@ -214,7 +214,7 @@ builder.InsertBreak(BreakType.SectionBreakNewPage);
 currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-//Esta sección no necesita un encabezado/pie de página diferente en la primera página, solo necesitamos una página de título en el documento,
+// Esta sección no necesita un encabezado/pie de página diferente en la primera página, solo necesitamos una página de título en el documento,
 // y el encabezado/pie de página de esta página ya se definió en la sección anterior.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
@@ -225,7 +225,7 @@ currentSection.HeadersFooters.LinkToPrevious(false);
 
 // Si queremos usar el conjunto de encabezado/pie de página ya existente para esta sección.
 // Pero con algunas modificaciones menores, puede ser conveniente copiar encabezados/pies de página
-// del apartado anterior y aplicar las modificaciones necesarias donde queramos.
+//del apartado anterior y aplicar las modificaciones necesarias donde queramos.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -236,3 +236,25 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo agregar un encabezado a mi documento en Aspose.Words?
+
+ R: Para agregar un encabezado a su documento en Aspose.Words, puede usar el`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.HeaderPrimary)` método. Este método agrega un encabezado principal a la primera sección de su documento.
+
+#### P: ¿Cómo puedo agregar un pie de página a mi documento en Aspose.Words?
+
+ R: Para agregar un pie de página a su documento en Aspose.Words, puede usar el`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` método. Este método agrega un pie de página principal a la primera sección de su documento.
+
+#### P: ¿Cómo puedo agregar texto a mi encabezado o pie de página en Aspose.Words?
+
+ R: Para agregar texto a su encabezado o pie de página en Aspose.Words, puede usar el`HeaderFooter.Paragraphs` propiedad para obtener la colección de párrafos del encabezado o pie de página, luego agregue un párrafo que contenga su texto a esta colección usando el`ParagraphCollection.Add` método.
+
+#### P: ¿Puedo personalizar el contenido del encabezado o pie de página con imágenes y números de página en Aspose.Words?
+
+R: Sí, puede personalizar el contenido del encabezado o pie de página con imágenes y números de página en Aspose.Words. Puedes usar objetos como`Shape` para agregar imágenes y objetos como`Field` para agregar números de página a su encabezado o pie de página.
+
+#### P: ¿Puedo cambiar la fuente, el tamaño y el color del texto en mi encabezado o pie de página en Aspose.Words?
+
+ R: Sí, puede cambiar la fuente, el tamaño y el color del texto en su encabezado o pie de página en Aspose.Words. Puede acceder a propiedades de formato de texto como`Font` para cambiar la fuente,`Size` para ajustar el tamaño y`Color` para establecer el color del texto.

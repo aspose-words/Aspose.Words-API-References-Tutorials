@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Successivamente, caricheremo il documento utilizzando il file`Document` class e configurare le sostituzioni senza suffisso utilizzando il file`DocumentSubstitutionWarnings` classe. Aggiungeremo anche una fonte di carattere specificando una cartella contenente i caratteri.
 
 ```csharp
-//Carica il documento e configura le sostituzioni senza suffissi
+// Carica il documento e configura le sostituzioni senza suffissi
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
 DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
 doc.WarningCallback = substitutionWarningHandler;
@@ -67,3 +67,21 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Conclusione
 In questo tutorial abbiamo visto come ottenere le sostituzioni senza suffissi in un documento Word con Aspose.Words per .NET. Le sostituzioni senza suffissi sono utili per risolvere i problemi di sostituzione dei caratteri. Sentiti libero di utilizzare questa funzione per migliorare la visualizzazione e la stampa dei tuoi documenti.
+
+### FAQ
+
+#### D: Perché Aspose.Words aggiunge suffissi alle sostituzioni dei caratteri?
+
+R: Aspose.Words aggiunge suffissi alle sostituzioni dei font per evitare conflitti tra font originali e font sostituiti. Questo aiuta a garantire la massima compatibilità durante la conversione e la manipolazione dei documenti.
+
+#### D: Come posso recuperare le sostituzioni dei caratteri senza suffissi in Aspose.Words?
+
+ A: Per recuperare le sostituzioni di font senza suffissi in Aspose.Words, puoi usare il file`FontSubstitutionSettings` classe e il`RemoveSuffixes` proprietà. Impostando questa proprietà su`true` otterrà le sostituzioni dei caratteri senza i suffissi aggiunti.
+
+#### D: È possibile disabilitare l'aggiunta di suffissi alle sostituzioni di caratteri in Aspose.Words?
+
+R: No, non è possibile disabilitare l'aggiunta di suffissi alle sostituzioni di caratteri in Aspose.Words. I suffissi vengono aggiunti per impostazione predefinita per garantire la compatibilità e la coerenza del documento.
+
+#### D: Come posso filtrare i suffissi indesiderati nelle sostituzioni dei caratteri in Aspose.Words?
+
+ R: Per filtrare i suffissi indesiderati nelle sostituzioni dei caratteri in Aspose.Words, puoi utilizzare tecniche di elaborazione delle stringhe, come l'utilizzo del`Replace` O`Substring` metodi per rimuovere suffissi specifici che non vuoi includere.

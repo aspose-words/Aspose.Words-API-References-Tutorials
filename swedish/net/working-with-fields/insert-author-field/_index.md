@@ -13,7 +13,7 @@ Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som anv
 
 ## Steg 1: Installation av dokumentkatalog
 
-I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
+den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -68,6 +68,24 @@ field. Update();
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-I det här exemplet skapade vi ett nytt dokument, infogade ett AUTHOR-fält, konfigurerade författarens namn och sparade dokumentet med ett specificerat filnamn.
+det här exemplet skapade vi ett nytt dokument, infogade ett AUTHOR-fält, konfigurerade författarens namn och sparade dokumentet med ett specificerat filnamn.
 
 Detta avslutar vår guide om hur du använder funktionen "Infoga AUTHOR Field" med Aspose.Words för .NET.
+
+### FAQ's
+
+#### F: Vad är ett författarfält i Aspose.Words?
+
+S: Ett författarefält i Aspose.Words är ett specialfält som automatiskt infogar och uppdaterar författarens namn i ett Word-dokument. Det används ofta för att ange vem som skapade eller modifierade dokumentet.
+
+#### F: Hur uppdaterar man författarefältet i ett Word-dokument med Aspose.Words?
+
+S: Författarfältet i ett Word-dokument kan uppdateras för att återspegla den aktuella författarens namn. För detta kan du använda metoden UpdateFields som är tillgänglig i klassen Document. Denna metod kommer att uppdatera alla fält i dokumentet, inklusive författarens fält.
+
+#### F: Är det möjligt att anpassa formatet för författarefältet i ett Word-dokument?
+
+S: Ja, det är möjligt att anpassa formatet för författarefältet i ett Word-dokument. Som standard visar författarens fält helt enkelt författarens namn. Du kan dock lägga till ytterligare information såsom datum och tid för ändring med hjälp av formateringsalternativen som finns i Aspose.Words.
+
+#### F: Är författarens fält känsligt för efterföljande ändringar av författarens namn?
+
+S: Ja, författarens fält är känsligt för efterföljande ändringar av författarens namn. Om du ändrar författarnamnet i dokumentegenskaperna kommer författarfältet automatiskt att uppdateras med det nya namnet vid uppdatering av dokumentfält.

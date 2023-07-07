@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## Passaggio 3: ottieni il tipo di nodo del documento
- Per ottenere il tipo di nodo di un documento, usiamo il`NodeType` proprietà.
+Per ottenere il tipo di nodo di un documento, usiamo il`NodeType` proprietà.
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -41,3 +41,25 @@ NodeType type = doc.NodeType;
 
 Questo è un esempio di codice completo per l'utilizzo del tipo di nodo con Aspose.Words per .NET. Assicurati di importare i riferimenti necessari e segui i passaggi precedentemente descritti per integrare questo codice nel tuo progetto.
 
+
+### FAQ
+
+#### D: Cos'è il tipo di nodo in Node.js?
+
+R: Il tipo di nodo in Node.js si riferisce al tipo di nodo in un documento XML. Questi possono essere tipi come 1 (elemento), 2 (attributo), 3 (testo), 4 (CDATA), 7 (istruzione di elaborazione), ecc.
+
+#### D: Come utilizzare il tipo di nodo per manipolare i nodi in un documento XML?
+
+R: Puoi utilizzare il tipo di nodo per identificare e manipolare diversi tipi di nodi in un documento XML. Ad esempio, puoi verificare se un nodo è un elemento, un testo, un attributo, ecc., e quindi eseguire operazioni specifiche di conseguenza.
+
+#### D: Quali sono i tipi di nodo comuni utilizzati con il tipo di nodo?
+
+R: I tipi di nodo comuni utilizzati con il tipo di nodo sono elementi (tipo 1), attributi (tipo 2), testi (tipo 3), CDATA (tipo 4), istruzioni di elaborazione (tipo 7), ecc.
+
+#### D: Come posso controllare il tipo di nodo in Node.js?
+
+ R: Per controllare il tipo di un nodo in Node.js, puoi accedere a`nodeType` proprietà del nodo. Questa proprietà restituisce un numero corrispondente al tipo di nodo.
+
+#### D: È possibile creare nuovi tipi di nodi personalizzati in Node.js?
+
+R: In Node.js non è possibile creare nuovi tipi di nodi personalizzati. I tipi di nodo sono definiti dalle specifiche XML e non possono essere estesi.

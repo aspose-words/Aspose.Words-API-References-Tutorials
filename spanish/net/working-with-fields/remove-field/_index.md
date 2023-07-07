@@ -60,3 +60,25 @@ doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 ```
 
 Siga estos pasos para eliminar un campo específico en su documento usando Aspose.Words para .NET.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo eliminar un campo en un documento de Word usando Aspose.Words para .NET?
+
+ R: Para eliminar un campo en un documento de Word usando Aspose.Words para .NET, puede recorrer los campos en el documento usando el`FieldStart` clase y usa el`FieldStart.Remove`método para eliminar el campo.
+
+#### P: ¿Es posible eliminar solo ciertos campos en un documento de Word con Aspose.Words para .NET?
+
+ R: Sí, es posible eliminar solo ciertos campos en un documento de Word con Aspose.Words para .NET. Puede filtrar qué campos eliminar utilizando criterios específicos, como el nombre del campo u otras propiedades relevantes. Luego puede eliminar los campos correspondientes usando el`FieldStart.Remove` método.
+
+#### P: ¿Cómo puedo verificar si un campo se eliminó correctamente en un documento de Word con Aspose.Words para .NET?
+
+ R: Para verificar si un campo se eliminó con éxito en un documento de Word con Aspose.Words para .NET, puede usar el`Document.Range.Fields.Contains` método para verificar si el campo aún está presente en el documento después de haberlo eliminado.
+
+#### P: ¿Cuáles son las consecuencias de eliminar un campo en un documento de Word con Aspose.Words para .NET?
+
+R: Cuando elimina un campo en un documento de Word con Aspose.Words para .NET, también se eliminan todos los datos asociados con el campo. Esto puede afectar el contenido y el formato del documento, especialmente si el campo se usó para mostrar información dinámica.
+
+#### P: ¿Es posible restaurar un campo eliminado en un documento de Word con Aspose.Words para .NET?
+
+R: Desafortunadamente, una vez que se eliminó un campo de un documento de Word con Aspose.Words para .NET, no es posible restaurarlo automáticamente. Se recomienda que guarde su documento antes de eliminar campos, en caso de que necesite recuperarlos más tarde.

@@ -1,14 +1,14 @@
 ---
-title: Interpolera bilder
-linktitle: Interpolera bilder
+title: Interpolera bilder i ett PDF-dokument
+linktitle: Interpolera bilder i ett PDF-dokument
 second_title: Aspose.Words för .NET API Referens
-description: Steg-för-steg-guide för att möjliggöra bildinterpolation med Aspose.Words för .NET.
+description: Steg-för-steg-guide för att möjliggöra bildinterpolation i ett PDF-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/interpolate-images/
 ---
 
-Den här artikeln ger en steg-för-steg-guide om hur du använder bildinterpolationsfunktionen med Aspose.Words för .NET. Vi kommer att förklara varje del av koden i detalj. I slutet av denna handledning kommer du att kunna förstå hur du aktiverar bildinterpolation när du konverterar till PDF.
+Den här artikeln ger en steg-för-steg-guide om hur du använder bildinterpolation i en PDF-dokumentfunktion med Aspose.Words för .NET. Vi kommer att förklara varje del av koden i detalj. I slutet av denna handledning kommer du att kunna förstå hur du aktiverar bildinterpolation när du konverterar till PDF.
 
 Innan du börjar, se till att du har installerat och konfigurerat Aspose.Words for .NET-biblioteket i ditt projekt. Du hittar biblioteket och installationsinstruktioner på Asposes webbplats.
 
@@ -60,3 +60,23 @@ Det är allt ! Du har framgångsrikt aktiverat bildinterpolering när du konvert
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);
 
 ```
+## Slutsats
+
+I den här handledningen förklarade vi hur man aktiverar bildinterpolation vid konvertering till PDF med Aspose.Words för .NET. Genom att följa de beskrivna stegen kan du enkelt förbättra den visuella kvaliteten på bilderna i det genererade PDF-dokumentet. Använd den här funktionen för att få jämnare och mer detaljerade bilder i dina konverterade PDF-dokument.
+
+### Vanliga frågor
+
+#### F: Vad är raminterpolation i ett PDF-dokument?
+S: Interpolering av bilder i ett PDF-dokument hänvisar till renderingstekniken som förbättrar den visuella kvaliteten på bilder när ett dokument konverteras till PDF-format. Bildinterpolation resulterar i jämnare och mer detaljerade bilder i det genererade PDF-dokumentet.
+
+#### F: Hur kan jag aktivera bildinterpolation när jag konverterar till PDF med Aspose.Words för .NET?
+S: För att aktivera bildinterpolation vid konvertering till PDF med Aspose.Words för .NET, följ dessa steg:
+
+ Skapa en instans av`Document` klass som anger sökvägen till Word-dokumentet.
+
+ Skapa en instans av`PdfSaveOptions` klass och ställ in`InterpolateImages` egendom till`true` för att möjliggöra bildinterpolation.
+
+ Använd`Save` metod för`Document`klass för att spara dokumentet i PDF-format genom att ange sparalternativ.
+
+#### F: Hur kan jag kontrollera om raminterpolation har aktiverats i det genererade PDF-dokumentet?
+S: För att kontrollera om raminterpolation har aktiverats i det genererade PDF-dokumentet, öppna PDF-filen med en kompatibel PDF-visare, som Adobe Acrobat Reader, och granska bilderna i dokumentet. Du bör märka att bilderna är jämnare och mer detaljerade tack vare raminterpolation.

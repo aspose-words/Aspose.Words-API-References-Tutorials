@@ -90,3 +90,30 @@ doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
 In questo esempio, abbiamo creato un nuovo documento, spostato il cursore sul paragrafo desiderato e quindi inserito un campo di unione di campi nel documento.
+
+### FAQ
+
+#### D: Come posso inserire un campo di unione in un documento di Word utilizzando Aspose.Words per .NET con il DOM?
+
+R: Per inserire un campo di unione in un documento Word utilizzando Aspose.Words per .NET con DOM, puoi seguire questi passaggi:
+
+1. Passare al paragrafo in cui si desidera inserire il campo di unione.
+2.  Creare un`FieldMergeField` oggetto.
+3. Imposta le proprietà del campo di unione, come il nome del campo e le opzioni di formattazione.
+4.  Aggiungi il campo di unione al paragrafo usando il`Paragraph.AppendChild` metodo.
+
+#### D: Come posso specificare i dati di origine per il campo di unione in Aspose.Words per .NET?
+
+R: Per specificare i dati di origine per il campo di unione in Aspose.Words per .NET, è possibile utilizzare il`FieldMergeField.FieldName` metodo per impostare il nome del campo di unione, che è il nome di un campo in un'origine dati esterna come un file CSV, un database, ecc. Puoi anche utilizzare il`FieldMergeField.Text` metodo per impostare direttamente il valore del campo di unione.
+
+#### D: Posso personalizzare l'aspetto del campo di unione in un documento Word con Aspose.Words per .NET?
+
+ R: Sì, puoi personalizzare l'aspetto del campo di unione in un documento Word con Aspose.Words per .NET. Puoi impostare le opzioni di formattazione come maiuscole/minuscole, carattere, colore, ecc. utilizzando le proprietà del file`FieldMergeField` oggetto.
+
+#### D: Come posso verificare se un campo di unione è stato inserito correttamente in un documento Word con Aspose.Words per .NET?
+
+ R: Per verificare se un campo di unione è stato inserito correttamente, puoi sfogliare il contenuto del documento e cercare le istanze del campo di unione. È possibile utilizzare i metodi e le proprietà di`Document` obiettare per accedere a paragrafi, campi e altri elementi del documento.
+
+#### D: L'inserimento di un campo di unione utilizzando DOM influisce sulla struttura del documento di Word con Aspose.Words per .NET?
+
+R: L'inserimento di un campo di unione utilizzando il DOM non influisce direttamente sulla struttura del documento Word. Tuttavia, aggiunge un nuovo elemento di campo al contenuto del documento. È possibile manipolare la struttura del documento aggiungendo, eliminando o modificando gli elementi esistenti in base alle proprie esigenze.

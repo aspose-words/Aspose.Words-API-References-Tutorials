@@ -63,12 +63,12 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 Вот полный исходный код для привязки ответа на комментарий с помощью Aspose.Words для .NET:
 
 ```csharp
-// Create an instance of the Document.
+// Создайте экземпляр документа.
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 Document doc = new Document();
 
-// Create three Run objects.
-// The first two run some text, while the third runs a Comment
+// Создайте три объекта Run.
+//Первые два запускают некоторый текст, а третий запускает комментарий.
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -88,7 +88,7 @@ Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 
-// Each of the Run objects has an associated CommentRangeStart and CommentRangeEnd object.
+// Каждый из объектов Run имеет связанный с ним объект CommentRangeStart и CommentRangeEnd.
 
 CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
 CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
@@ -99,3 +99,26 @@ commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
 ```
+
+### Часто задаваемые вопросы
+
+#### В: Что такое якорь комментария в Aspose.Words для .NET?
+
+О: В Aspose.Words для .NET якорь комментария — это маркер, который связывает комментарий с определенным местом в документе.
+
+#### Вопрос. Как добавить якорь комментария в документ Aspose.Words for .NET?
+
+О: Чтобы добавить якорь комментария в документ Aspose.Words для .NET, выполните шаги, описанные в руководстве.
+
+#### Вопрос. Как получить доступ к существующей привязке комментариев в Aspose.Words для .NET?
+
+ О: Вы можете получить доступ к существующей привязке комментария в Aspose.Words для .NET с помощью`Comment.Anchor` свойство.
+
+#### В: Могу ли я заменить привязку комментария в Aspose.Words для .NET?
+
+ О: Да, вы можете удалить якорь комментария в Aspose.Words для .NET с помощью`Comment.Remove` метод.
+
+#### В: Как я могу редактировать текст комментария, связанного с якорем комментария в Aspose.Words для .NET?
+
+О: Чтобы изменить текст комментария, привязанного к якорю комментария в Aspose.Words для .NET, вы можете получить доступ к`Comment.Text` имущество соответствующего`Comment` объекта и изменить текст по мере необходимости.
+

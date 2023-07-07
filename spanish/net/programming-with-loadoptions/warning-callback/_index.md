@@ -43,7 +43,7 @@ En esta clase, tenemos un método de advertencia que se llama cada vez que se em
 
 ## Cargando documento usando devolución de llamada para advertencias
 
-Ahora que hemos configurado las opciones de carga y creado la función de devolución de llamada para las advertencias, podemos cargar el documento usando la clase Documento y especificar las opciones de carga. Aquí hay un ejemplo :
+Ahora que hemos configurado las opciones de carga y creado la función de devolución de llamada para las advertencias, podemos cargar el documento usando la clase Document y especificar las opciones de carga. Aquí hay un ejemplo :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx", loadOptions);

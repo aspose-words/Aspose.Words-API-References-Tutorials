@@ -67,3 +67,21 @@ doc.Save("OutputDocument.docx");
 ```
 
 Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.
+
+### FAQ
+
+#### D: Come posso copiare le intestazioni ei piè di pagina della sezione precedente in Aspose.Words?
+
+ R: Per copiare intestazioni e piè di pagina dalla sezione precedente in Aspose.Words, puoi utilizzare il file`CopyHeadersFootersFromPreviousSection()` metodo sulla corrente`Section`oggetto. Questo copierà le intestazioni e i piè di pagina dalla sezione precedente alla sezione corrente.
+
+#### D: È possibile copiare solo l'intestazione o il piè di pagina dalla sezione precedente in Aspose.Words?
+
+ A: Sì, è possibile copiare solo l'intestazione o il piè di pagina dalla sezione precedente in Aspose.Words. Per questo, puoi usare il`CopyHeaderFromPreviousSection()` E`CopyFooterFromPreviousSection()` metodi sulla corrente`Section` oggetto per copiare in modo specifico l'intestazione o il piè di pagina dalla sezione precedente alla sezione corrente.
+
+#### D: La copia di intestazioni e piè di pagina dalla sezione precedente sostituisce le intestazioni e i piè di pagina esistenti nella sezione corrente?
+
+R: Sì, la copia di intestazioni e piè di pagina dalla sezione precedente sostituisce le intestazioni e i piè di pagina esistenti nella sezione corrente. Se desideri mantenere le intestazioni e i piè di pagina esistenti e aggiungerli alle intestazioni e ai piè di pagina copiati, dovrai eseguire un'operazione aggiuntiva per unire i contenuti.
+
+#### D: Come posso verificare se una sezione ha un'intestazione o un piè di pagina della sezione precedente in Aspose.Words?
+
+A: Per verificare se una sezione ha un'intestazione o un piè di pagina della sezione precedente in Aspose.Words, puoi utilizzare il`HasHeader` E`HasFooter` proprietà sul`Section` oggetto per determinare se l'intestazione o il piè di pagina è presente. Se`HasHeader` O`HasFooter` ritorna`false`, significa che non ci sono intestazioni o piè di pagina della sezione precedente in questa sezione.

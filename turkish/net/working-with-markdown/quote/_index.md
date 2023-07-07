@@ -58,3 +58,21 @@ builder.Writeln("1. Nested blockquote");
 
 Tebrikler! Artık alıntı özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.
 
+
+### SSS
+
+#### S: Markdown'da alıntı nedir?
+
+C: Markdown'da bir alıntı, diğer kaynaklardan metin pasajlarını vurgulamanın veya ünlü alıntılara atıfta bulunmanın bir yoludur.
+
+#### S: Markdown'da alıntılar nasıl kullanılır?
+
+C: Markdown'da bir alıntı kullanmak için, alıntı metnini köşeli parantez içine alın (`>`). Alıntının her satırı bir köşeli çift ayraçla başlamalıdır.
+
+#### S: Markdown alıntıları özellikleri destekliyor mu?
+
+A: Markdown alıntıları belirli nitelikleri desteklemez. Alıntılanan metnin biçimlendirmesiyle basitçe vurgulanırlar.
+
+#### S: Markdown'a alıntılar ekleyebilir misiniz?
+
+C: Evet, fazladan bir açılı ayraç düzeyi ekleyerek Markdown'da tırnak içine almak mümkündür (`>`).

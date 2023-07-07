@@ -90,3 +90,30 @@ doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
 Dans cet exemple, nous avons créé un nouveau document, déplacé le curseur vers le paragraphe souhaité, puis inséré un champ de fusion de champ dans le document.
+
+### FAQ
+
+#### Q : Comment puis-je insérer un champ de fusion dans un document Word en utilisant Aspose.Words pour .NET avec le DOM ?
+
+R : Pour insérer un champ de fusion dans un document Word à l'aide d'Aspose.Words pour .NET avec DOM, vous pouvez suivre ces étapes :
+
+1. Accédez au paragraphe dans lequel vous souhaitez insérer le champ de fusion.
+2.  Créer un`FieldMergeField` objet.
+3. Définissez les propriétés du champ de fusion, telles que le nom du champ et les options de formatage.
+4.  Ajoutez le champ de fusion au paragraphe à l'aide de la`Paragraph.AppendChild` méthode.
+
+#### Q : Comment puis-je spécifier des données source pour le champ de fusion dans Aspose.Words pour .NET ?
+
+ : Pour spécifier les données source du champ de fusion dans Aspose.Words pour .NET, vous pouvez utiliser le`FieldMergeField.FieldName` pour définir le nom du champ de fusion, qui est le nom d'un champ dans une source de données externe telle qu'un fichier CSV, une base de données, etc. Vous pouvez également utiliser la méthode`FieldMergeField.Text` méthode pour définir directement la valeur du champ de fusion.
+
+#### Q : Puis-je personnaliser l'apparence du champ de fusion dans un document Word avec Aspose.Words pour .NET ?
+
+ R : Oui, vous pouvez personnaliser l'apparence du champ de fusion dans un document Word avec Aspose.Words pour .NET. Vous pouvez définir les options de formatage comme la casse, la police, la couleur, etc. en utilisant les propriétés du`FieldMergeField` objet.
+
+#### Q : Comment puis-je vérifier si un champ de fusion a été correctement inséré dans un document Word avec Aspose.Words pour .NET ?
+
+ R : Pour vérifier si un champ de fusion a été inséré avec succès, vous pouvez parcourir le contenu du document et rechercher des instances de champ de fusion. Vous pouvez utiliser les méthodes et les propriétés de`Document` objet pour accéder aux paragraphes, champs et autres éléments du document.
+
+#### Q : L'insertion d'un champ de fusion à l'aide de DOM affecte-t-elle la structure du document Word avec Aspose.Words pour .NET ?
+
+R : L'insertion d'un champ de fusion à l'aide du DOM n'affecte pas directement la structure du document Word. Cependant, il ajoute un nouvel élément de champ au contenu du document. Vous pouvez manipuler la structure du document en ajoutant, supprimant ou modifiant les éléments existants selon vos besoins.

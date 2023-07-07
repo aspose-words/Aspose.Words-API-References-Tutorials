@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/programming-with-styles-and-themes/get-theme-properties/
 ---
 
-Dans ce didacticiel, nous allons explorer le code source C # fourni pour obtenir les propriétés de thème d'un document à l'aide de Aspose.Words pour .NET. Les propriétés du thème incluent les polices principales et secondaires utilisées, ainsi que les couleurs d'accentuation.
+Dans ce didacticiel, nous allons explorer le code source C # fourni pour obtenir les propriétés de thème d'un document à l'aide de Aspose.Words pour .NET. Les propriétés du thème incluent les polices primaires et secondaires utilisées, ainsi que les couleurs d'accentuation.
 
 ## Étape 1 : Configurer l'environnement
 

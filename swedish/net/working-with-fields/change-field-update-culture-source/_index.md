@@ -82,3 +82,21 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 ## Slutsats
 Grattis! Du har framgångsrikt lärt dig hur du ändrar fältuppdateringskulturkällan i Word-dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guiden och använda den medföljande källkoden kan du nu styra kulturen som används för datumformatering under fältuppdatering och kopplingsoperationer. Anpassa kulturkällan enligt dina krav för att säkerställa korrekt och konsekvent datum.
+
+### FAQ's
+
+#### F: Hur kan jag ändra fältuppdateringskulturkällan i Aspose.Words för .NET?
+
+ S: För att ändra fältuppdateringskulturkällan i Aspose.Words för .NET kan du använda`Document.FieldOptions.CultureSource` egendom och sätt dess värde till`FieldCultureSource.FieldCode` eller`FieldCultureSource.CurrentThread` . Du kan till exempel använda`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` för att använda den kultur som definieras i fältkoden.
+
+#### F: Hur kan jag specificera en specifik kultur för uppdatering av fält i Aspose.Words för .NET?
+
+ S: För att ange en specifik kultur för uppdatering av fält i Aspose.Words för .NET, kan du använda`Document.FieldOptions.FieldUpdateCultureInfo` egendom och ställ in`CultureInfo` objekt som motsvarar den önskade kulturen. Du kan till exempel använda`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` för att specificera den franska (Frankrike) kulturen.
+
+#### F: Är det möjligt att inaktivera automatisk fältuppdatering i Aspose.Words för .NET?
+
+ S: Ja, det är möjligt att inaktivera automatisk fältuppdatering i Aspose.Words för .NET. Du kan använda`Document.FieldOptions.UpdateFields` egenskap och ställ in den på`false` för att förhindra att fält uppdateras automatiskt. Detta låter dig manuellt styra uppdateringen av fält efter behov.
+
+#### F: Hur kan jag manuellt uppdatera dokumentfält i Aspose.Words för .NET?
+
+ S: För att manuellt uppdatera fält i ett dokument i Aspose.Words för .NET kan du använda`Field.Update` metod för varje område individuellt. Du kan till exempel använda`field.Update()` för att uppdatera det specifika fältet.

@@ -21,10 +21,10 @@ Al seguir estos tutoriales, podrá administrar secciones en sus documentos de Wo
 | [Agregar sección](./add-section/) | En este tutorial, aprenda a agregar una sección a un documento de Word usando Aspose.Words para .NET. Guía paso a paso para estructurar su documento. |
 | [Eliminar sección](./delete-section/) | En este tutorial, aprenda a eliminar una sección específica de un documento de Word con Aspose.Words para .NET. |
 | [Eliminar todas las secciones](./delete-all-sections/) | En este tutorial, aprenda a eliminar todas las secciones de un documento de Word usando Aspose.Words para .NET. |
-| [Agregar contenido de la sección](./append-section-content/) | En este tutorial, aprenda a agregar contenido a secciones específicas de un documento de Word usando Aspose.Words para .NET.  |
+| [Agregar contenido de palabra de sección](./append-section-content/) | En este tutorial, aprenda a agregar contenido de Word a secciones específicas de un documento de Word usando Aspose.Words para .NET.  |
 | [Sección de clonación](./clone-section/) | En este tutorial, aprenda a clonar una sección en un documento de Word usando Aspose.Words para .NET. Guía paso por paso. |
 | [Copiar sección](./copy-section/) | En este tutorial, aprenda a copiar una sección de un documento de Word a otro documento usando Aspose.Words para .NET. |
 | [Eliminar contenido de pie de página de encabezado](./delete-header-footer-content/) | En este tutorial, aprenda a eliminar contenido de encabezado y pie de página de un documento de Word con Aspose.Words para .NET.  |
 | [Eliminar contenido de la sección](./delete-section-content/) | En este tutorial, aprenda a eliminar contenido de una sección específica de un documento de Word con Aspose.Words para .NET. |
-| [Modificar configuración de página en todas las secciones](./modify-page-setup-in-all-sections/) | En este tutorial, aprenda a modificar la configuración de la página en todas las secciones de un documento de Word con Aspose.Words para .NET. |
+| [Modificar la configuración de la página de Word en todas las secciones](./modify-page-setup-in-all-sections/) | En este tutorial, aprenda a modificar la configuración de la página de Word en todas las secciones de un documento de Word con Aspose.Words para .NET. |
 | [Acceso a secciones por índice](./sections-access-by-index/) | En este tutorial, aprenda cómo acceder a las secciones de un documento de Word por índice y cambiar su configuración con Aspose.Words para .NET. |

@@ -85,7 +85,7 @@ Hier ist der vollständige Quellcode für die Funktion „Quellkopfzeilen und Fu
 	{
 		section.ClearHeadersFooters();
 	}
-	// Auch nachdem die Kopf- und Fußzeilen aus dem Quelldokument gelöscht wurden, bleibt die Einstellung „LinkToPrevious“ erhalten
+	// Auch nachdem die Kopf- und Fußzeilen aus dem Quelldokument gelöscht wurden, bleibt die Einstellung „LinkToPrevious“ bestehen
 	// für HeadersFooters kann weiterhin gesetzt werden. Dadurch werden die Kopf- und Fußzeilen vom Ziel aus fortgesetzt
 	// dokumentieren. Dies sollte auf „false“ gesetzt werden, um dieses Verhalten zu vermeiden.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);

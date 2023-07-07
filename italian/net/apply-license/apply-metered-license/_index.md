@@ -75,3 +75,21 @@ catch (Exception e)
 Congratulazioni! Hai imparato con successo come applicare una licenza a consumo utilizzando Aspose.Words per .NET. Seguendo la guida passo-passo e utilizzando il codice sorgente fornito, ora puoi sfruttare le funzionalità avanzate di Aspose.Words per le tue attività di elaborazione dei documenti.
 
 Ora puoi impostare con sicurezza la licenza misurata, caricare ed elaborare documenti e sfruttare tutto il potenziale di Aspose.Words per creare, modificare e manipolare documenti Word a livello di programmazione.
+
+### FAQ
+
+#### D: Come posso applicare una licenza pay-per-use in Aspose.Words per .NET?
+
+A: Per applicare una licenza pay-as-you-go in Aspose.Words per .NET, seguire i passaggi indicati nel tutorial.
+
+#### D: Quali sono i vantaggi dell'utilizzo di una licenza pay-per-use in Aspose.Words per .NET?
+
+R: I vantaggi dell'utilizzo di una licenza pay-as-you-go in Aspose.Words per .NET includono una gestione dei costi più efficiente e una maggiore flessibilità.
+
+#### D: Come posso controllare l'utilizzo della mia licenza con pagamento in base al consumo in Aspose.Words per .NET?
+
+A: Puoi controllare l'utilizzo della tua licenza pay-as-you-go in Aspose.Words per .NET utilizzando il metodo appropriato menzionato nel tutorial.
+
+#### D: Posso usare una licenza normale con Aspose.Words per .NET invece di una licenza con pagamento in base al consumo?
+
+A: Sì, puoi usare una normale licenza con Aspose.Words per .NET se lo desideri.

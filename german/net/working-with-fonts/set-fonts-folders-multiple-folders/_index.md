@@ -49,18 +49,40 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ### Beispielquellcode für Set Fonts Folders Multiple Folders mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Pfad zu Ihrem Dokumentenverzeichnis
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Beachten Sie, dass diese Einstellung alle Standardschriftquellen überschreibt, die standardmäßig durchsucht werden. Jetzt wird nur noch nach diesen Ordnern gesucht
-	// Schriftarten beim Rendern oder Einbetten von Schriftarten. Um eine zusätzliche Schriftartquelle hinzuzufügen und gleichzeitig die Schriftartquellen des Systems beizubehalten, verwenden Sie sowohl FontSettings.GetFontSources als auch
-	// Stattdessen FontSettings.SetFontSources.
-	fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Beachten Sie, dass diese Einstellung alle Standardschriftquellen überschreibt, die standardmäßig durchsucht werden. Jetzt wird nur noch nach diesen Ordnern gesucht
+// Schriftarten beim Rendern oder Einbetten von Schriftarten. Um eine zusätzliche Schriftartquelle hinzuzufügen und gleichzeitig die Schriftartquellen des Systems beizubehalten, verwenden Sie sowohl FontSettings.GetFontSources als auch
+// Stattdessen FontSettings.SetFontSources.
+fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ```
 
 ## Abschluss
 In diesem Tutorial haben wir gelernt, wie man beim Rendern eines Dokuments mit Aspose.Words für .NET mehrere Schriftartenordner festlegt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie ganz einfach mehrere Schriftartenordner angeben, die beim Rendern Ihrer Dokumente verwendet werden sollen. Aspose.Words bietet eine leistungsstarke und flexible API für die Arbeit mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die beim Rendern Ihrer Dokumente verwendeten Schriftartquellen steuern und an Ihre spezifischen Anforderungen anpassen.
+
+### FAQs
+
+#### F: Wie kann ich in Aspose.Words mehrere Schriftartenordner festlegen?
+
+ A: Um mehrere Schriftartenordner in Aspose.Words festzulegen, können Sie die verwenden`SetFontsFolders` Methode der`Fonts` Klasse, die eine Liste der Ordnerspeicherorte für benutzerdefinierte Schriftarten bereitstellt.
+
+#### F: Hat das Festlegen mehrerer Schriftartenordner Auswirkungen auf alle mit Aspose.Words verarbeiteten Dokumente?
+
+A: Ja, das Festlegen mehrerer Schriftartenordner wirkt sich auf alle mit Aspose.Words verarbeiteten Dokumente aus. Sobald Sie die Schriftartenordner definiert haben, verwendet Aspose.Words diese Speicherorte, um in allen Dokumenten nach Schriftarten zu suchen.
+
+#### F: Wie viele Schriftartenordner kann ich in Aspose.Words definieren?
+
+A: Sie können in Aspose.Words beliebig viele Schriftartenordner definieren. Es gibt keine bestimmte Begrenzung für die Anzahl der Schriftartenordner, die Sie definieren können.
+
+#### F: Wie kann ich die in Aspose.Words definierten Schriftartenordner überprüfen?
+
+ A: Um die in Aspose.Words definierten Schriftartenordner zu überprüfen, können Sie die verwenden`GetFolders` Methode der`Fonts` Klasse, um die Speicherorte der konfigurierten Schriftartenordner abzurufen.
+
+#### F: Müssen Schriftartenordner bestimmte Schriftarten enthalten?
+
+A: Ja, Schriftartenordner sollten die Schriftarten enthalten, die Sie in Ihren Word-Dokumenten verwenden möchten. Aspose.Words sucht bei der Verarbeitung von Dokumenten in den angegebenen Ordnern nach Schriftarten.

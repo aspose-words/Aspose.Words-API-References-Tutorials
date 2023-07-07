@@ -80,4 +80,4 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come inserire una tabella in un documento Word da HTML utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi inserire tabelle da HTML nei tuoi documenti Word a livello di codice. Questa funzione ti consente di convertire e importare dati tabulari da sorgenti HTML nei tuoi documenti Word.
+In questo tutorial, abbiamo imparato come inserire una tabella in un documento Word da HTML utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi inserire tabelle da HTML nei tuoi documenti Word a livello di programmazione. Questa funzione ti consente di convertire e importare dati tabulari da sorgenti HTML nei tuoi documenti Word.

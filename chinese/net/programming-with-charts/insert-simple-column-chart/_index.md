@@ -8,16 +8,16 @@ weight: 10
 url: /zh/net/programming-with-charts/insert-simple-column-chart/
 ---
 
-本教程解释了如何使用 Aspose.Words for .NET 将一个简单的柱形图插入到文档中。提供的源代码演示了如何创建图表、添加系列数据和保存文档。
+本教程介绍如何使用 Aspose.Words for .NET 将简单的柱形图插入文档中。提供的源代码演示了如何创建图表、添加系列数据以及保存文档。
 
 ## 第 1 步：设置项目
 
-确保您具有以下先决条件：
+确保您具备以下先决条件：
 
-- 安装了 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载或使用 NuGet 包管理器安装它。
+- 已安装 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载它或使用 NuGet 包管理器来安装它。
 - 将保存输出文档的文档目录路径。
 
-## 第 2 步：创建新文档并插入图表
+## 步骤 2：创建一个新文档并插入图表
 
 创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
@@ -29,16 +29,16 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-接下来，使用`InsertChart`的方法`DocumentBuilder`将柱形图插入到文档中。您可以根据需要指定不同的图表类型和大小。
+接下来，使用`InsertChart`的方法`DocumentBuilder`将柱形图插入文档中。您可以根据您的要求指定不同的图表类型和大小。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 第 3 步：将系列数据添加到图表
+## 步骤 3：将系列数据添加到图表中
 
-将系列数据添加到图表中。在这个例子中，我们将添加多个系列，每个系列有两个类别。
+将系列数据添加到图表中。在此示例中，我们将添加多个系列，每个系列有两个类别。
 
 ```csharp
 ChartSeriesCollection seriesColl = chart.Series;
@@ -53,15 +53,15 @@ seriesColl.Add("Aspose Series 4", categories, new double[] { 7, 8 });
 seriesColl.Add("Aspose Series 5", categories, new double[] { 9, 10 });
 ```
 
-## 第 4 步：保存文档
+## 步骤 4：保存文档
 
-最后，使用 将文件保存到指定目录`Save`的方法`Document`目的。
+最后，使用命令将文档保存到指定目录`Save`的方法`Document`目的。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 ```
 
-这样就完成了使用Aspose.Words for .NET 插入一个简单柱形图的实现。
+这样就完成了使用Aspose.Words for .NET插入简单柱形图的实现。
 
 ### 使用 Aspose.Words for .NET 插入简单柱形图的示例源代码 
 
@@ -80,7 +80,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 	seriesColl.Clear();
 	//创建类别名称数组，在本教程中我们有两个类别。
 	string[] categories = new string[] { "Category 1", "Category 2" };
-	//请注意，数据数组不能为空且数组大小必须相同。
+	//请注意，数据数组不能为空，并且数组的大小必须相同。
 	seriesColl.Add("Aspose Series 1", categories, new double[] { 1, 2 });
 	seriesColl.Add("Aspose Series 2", categories, new double[] { 3, 4 });
 	seriesColl.Add("Aspose Series 3", categories, new double[] { 5, 6 });

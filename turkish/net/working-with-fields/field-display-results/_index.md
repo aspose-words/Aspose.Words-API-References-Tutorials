@@ -40,7 +40,7 @@ Bu adım önemlidir, çünkü saha sonuçlarının doğru bir şekilde görünt�
 
 ## Adım 4: Alan Sonuçlarını Görüntüleme
 
- biz bir`foreach` belgedeki tüm alanlar arasında geçiş yapmak ve bunların sonuçlarını görüntülemek için döngü.
+ biz bir`foreach`belgedeki tüm alanlar arasında geçiş yapmak ve bunların sonuçlarını görüntülemek için döngü.
 
 ```csharp
 foreach(Field field in document.Range.Fields)
@@ -69,3 +69,21 @@ foreach(Field field in document.Range.Fields)
 Bu örnekte, bir belge yükledik, tüm alanları güncelledik ve ardından sonuçlarını görüntülemek için alanlar arasında geçiş yaptık. Saha sonuçlarını işlemek için kendi mantığınızı kullanarak bu adımı özelleştirebilirsiniz.
 
 Bu, "Alan Sonuçlarını Göster" özelliğini Aspose.Words for .NET ile kullanma kılavuzumuzu sonlandırıyor.
+
+### SSS
+
+#### S: Aspose.Words'te sonuç görüntüleme alanı nedir?
+
+C: Aspose.Words'teki bir sonuç görüntüleme alanı, bir Word belgesindeki bir işlemin veya hesaplamanın sonucunu görüntüleyen bir alan türüdür. Örneğin, birkaç değerin toplamını veya bir matematiksel formülün sonucunu görüntülemek için bir sonuç görüntüleme alanı kullanılabilir.
+
+#### S: Aspose.Words ile bir Word belgesindeki sonuç görüntüleme alanı nasıl güncellenir?
+
+C: Bir Word belgesindeki sonuç görüntüleme alanını Aspose.Words ile güncellemek için UpdateFields yöntemini kullanabilirsiniz. Bu yöntem, belgede döngü halinde dolaşır ve sonuç görüntüleme alanları da dahil olmak üzere tüm alanları güncelleyerek değerleri mevcut verilere göre yeniden hesaplar.
+
+#### S: Sonuç görüntüleme alanında görüntülenen sonucu biçimlendirebilir miyim?
+
+C: Evet, biçimi belirtmek için uygun sözdizimini kullanarak bir sonuç görüntüleme alanı tarafından görüntülenen sonucu biçimlendirebilirsiniz. Örneğin, sayıları belirli sayıda ondalık basamakla biçimlendirebilir veya özel tarih biçimleri kullanabilirsiniz.
+
+#### S: Bir sonuç görüntüleme alanını Aspose.Words ile bir Word belgesinden nasıl kaldırabilirim?
+
+C: Bir sonuç görüntüleme alanını Aspose.Words ile bir Word belgesinden kaldırmak için Remove yöntemini kullanabilirsiniz. Bu yöntem, alanı kaldırır ve statik sonucuyla değiştirir.

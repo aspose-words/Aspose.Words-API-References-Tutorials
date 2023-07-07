@@ -56,7 +56,7 @@ doc.FirstSection.Body.AppendChild(para);
 ```
 
 ## Passaggio 7: verifica il nodo padre dopo l'aggiunta
-Dopo aver aggiunto il paragrafo al documento, controlliamo di nuovo se ora ha un nodo padre.
+Dopo aver aggiunto il paragrafo al documento, controlliamo di nuovo se ora ha un nodo genitore.
 
 ```csharp
 Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null));
@@ -83,9 +83,28 @@ para.ParagraphFormat.StyleName = "Heading 1";
 // Ora aggiungi il paragrafo al testo principale della prima sezione.
 doc.FirstSection.Body.AppendChild(para);
 
-//Il nodo paragrafo è ora figlio del nodo Corpo.
+// Il nodo paragrafo è ora figlio del nodo Corpo.
 Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
+### FAQ
 
+#### D: Cos'è un documento proprietario in Node.js?
 
+R: Un documento proprietario in Node.js è il documento XML a cui appartiene un nodo specifico. Rappresenta l'istanza del documento XML contenente il nodo.
+
+#### D: Come ottenere il documento del proprietario di un nodo?
+
+ R: Per ottenere il documento del proprietario di un nodo in Node.js, puoi utilizzare il file`ownerDocument` proprietà del nodo. Questa proprietà restituisce il documento XML proprietario del nodo.
+
+#### D: A cosa serve il documento proprietario?
+
+R: Il documento proprietario viene utilizzato per rappresentare il contesto globale di un nodo in un documento XML. Fornisce l'accesso ad altri nodi nel documento e consente di eseguire operazioni su di essi.
+
+#### D: Possiamo modificare il documento proprietario di un nodo?
+
+R: Nella maggior parte dei casi, il proprietario del documento di un nodo viene determinato quando il nodo viene creato e non può essere modificato direttamente. Il documento proprietario è una proprietà di sola lettura.
+
+#### D: Come accedere ai nodi di un documento proprietario?
+
+R: Per accedere ai nodi in un documento proprietario, puoi utilizzare i metodi e le proprietà forniti dall'API XML utilizzata nel tuo ambiente Node.js. Ad esempio, puoi utilizzare metodi come`getElementsByTagName` O`querySelector` per selezionare nodi specifici nel documento.

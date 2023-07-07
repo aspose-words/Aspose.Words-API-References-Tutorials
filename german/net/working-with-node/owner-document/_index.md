@@ -83,9 +83,28 @@ para.ParagraphFormat.StyleName = "Heading 1";
 // Fügen Sie nun den Absatz zum Haupttext des ersten Abschnitts hinzu.
 doc.FirstSection.Body.AppendChild(para);
 
-//Der Absatzknoten ist jetzt ein untergeordnetes Element des Hauptknotens.
+// Der Absatzknoten ist jetzt ein untergeordnetes Element des Hauptknotens.
 Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
+### FAQs
 
+#### F: Was ist ein proprietäres Dokument in Node.js?
 
+A: Ein Besitzerdokument in Node.js ist das XML-Dokument, zu dem ein bestimmter Knoten gehört. Es stellt die Instanz des XML-Dokuments dar, das den Knoten enthält.
+
+#### F: Wie erhalte ich das Besitzerdokument eines Knotens?
+
+ A: Um das Besitzerdokument eines Knotens in Node.js abzurufen, können Sie das verwenden`ownerDocument` Eigenschaft des Knotens. Diese Eigenschaft gibt das XML-Dokument zurück, dem der Knoten gehört.
+
+#### F: Wofür wird das proprietäre Dokument verwendet?
+
+A: Das Eigentümerdokument wird verwendet, um den globalen Kontext eines Knotens in einem XML-Dokument darzustellen. Es bietet Zugriff auf andere Knoten im Dokument und ermöglicht die Ausführung von Vorgängen an ihnen.
+
+#### F: Können wir das Besitzerdokument eines Knotens ändern?
+
+A: In den meisten Fällen wird der Dokumenteigentümer eines Knotens beim Erstellen des Knotens bestimmt und kann nicht direkt geändert werden. Das Eigentümerdokument ist eine schreibgeschützte Eigenschaft.
+
+#### F: Wie greife ich auf die Knoten eines Eigentümerdokuments zu?
+
+A: Um auf Knoten in einem proprietären Dokument zuzugreifen, können Sie die Methoden und Eigenschaften verwenden, die von der XML-API bereitgestellt werden, die in Ihrer Node.js-Umgebung verwendet wird. Sie können beispielsweise Methoden wie verwenden`getElementsByTagName` oder`querySelector` um bestimmte Knoten im Dokument auszuwählen.

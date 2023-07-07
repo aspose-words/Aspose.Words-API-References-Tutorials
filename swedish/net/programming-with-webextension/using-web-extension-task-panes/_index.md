@@ -14,7 +14,7 @@ Innan du börjar, se till att du har installerat och konfigurerat Aspose.Words f
 
 ## Steg 1: Definiera dokumentkatalogen
 
- För att börja måste du definiera sökvägen till katalogen där du vill spara det genererade dokumentet. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+För att börja måste du definiera sökvägen till katalogen där du vill spara det genererade dokumentet. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

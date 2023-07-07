@@ -64,3 +64,21 @@ foreach(Field field in doc.Range.Fields)
 In diesem Beispiel haben wir ein Dokument geladen und dann alle im Dokument vorhandenen Felder durchlaufen. Bei jeder Iteration erhielten wir den Code und das Ergebnis des Feldes. Sie können Ihre eigene Logik hinzufügen, um die Code- und Ergebnisfelder nach Bedarf zu verarbeiten.
 
 Damit ist unser Leitfaden zur Verwendung der Funktion „Get Field Code“ mit Aspose.Words für .NET abgeschlossen.
+
+### FAQs
+
+#### F: Wie kann ich mit Aspose.Words für .NET ein Feld in ein Word-Dokument einfügen?
+
+ A: Um mit Aspose.Words für .NET ein Feld in ein Word-Dokument einzufügen, können Sie das verwenden`DocumentBuilder.InsertField` Methode, die den entsprechenden Feldcode angibt. Sie können zum Beispiel verwenden`builder.InsertField("MERGEFIELD CustomerName")` um ein Zusammenführungsfeld in das Dokument einzufügen.
+
+#### F: Wie kann ich Felder in einem Dokument mit Aspose.Words für .NET aktualisieren?
+
+ A: Um Dokumentfelder mit Aspose.Words für .NET zu aktualisieren, können Sie das verwenden`Document.UpdateFields` Methode. Dadurch werden alle im Dokument vorhandenen Felder aktualisiert, z. B. Zusammenführungsfelder, Datumsfelder usw.
+
+#### F: Wie kann ich den Wert eines bestimmten Felds in Aspose.Words für .NET abrufen?
+
+ A: Um den Wert eines bestimmten Felds in Aspose.Words für .NET abzurufen, können Sie Folgendes verwenden`Field.GetResult` Methode durch Angabe des Index des Feldes in der`Document.Range.Fields` Sammlung. Sie können zum Beispiel verwenden`string value = document.Range.Fields[0].GetResult()` um den Wert des ersten Felds im Dokument abzurufen.
+
+#### F: Wie kann ich mit Aspose.Words für .NET ein Feld aus einem Dokument entfernen?
+
+ A: Um ein Feld mit Aspose.Words für .NET aus einem Dokument zu entfernen, können Sie Folgendes verwenden`Field.Remove` Methode, die die angibt`Field` Objekt, das Sie entfernen möchten. Dadurch wird das Feld aus dem Dokument entfernt.

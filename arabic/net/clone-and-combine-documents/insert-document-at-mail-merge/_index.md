@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-//يحتوي المستند الرئيسي على حقل دمج يسمى "Document_1".
+// يحتوي المستند الرئيسي على حقل دمج يسمى "Document_1".
 // تحتوي البيانات المقابلة لهذا الحقل على مسار مؤهل بالكامل إلى المستند.
 // يجب إدراج ذلك في هذا المجال.
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });

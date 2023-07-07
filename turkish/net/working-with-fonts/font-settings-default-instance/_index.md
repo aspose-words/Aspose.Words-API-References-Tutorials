@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Varsayılan Yazı Tipi Ayarlarını Yapılandırın
- Ardından, bir örneğini oluşturacağız`FontSettings` kullanarak`FontSettings.DefaultInstance`ve ardından belgeleri yüklerken ve işlerken kullanılan yazı tipi kaynaklarını belirteceğiz. Bu örnekte, bir sistem yazı tipi kaynağı ve bir klasör yazı tipi kaynağı kullanıyoruz.
+ Ardından, bir örneğini oluşturacağız`FontSettings` kullanarak`FontSettings.DefaultInstance`, ve ardından belgeleri yüklerken ve işlerken kullanılan yazı tipi kaynaklarını belirteceğiz. Bu örnekte, bir sistem yazı tipi kaynağı ve bir klasör yazı tipi kaynağı kullanıyoruz.
 
 ```csharp
 // Varsayılan yazı tipi ayarlarını yapılandırın
@@ -67,3 +67,21 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ## Çözüm
 Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde varsayılan yazı tipi ayarlarının nasıl yapılandırılacağını gördük. Belgeleri yüklerken ve görüntülerken kullanılan yazı tipi kaynaklarını belirterek, belgelerinizdeki yazı tiplerinin görünümünü kontrol edebilirsiniz. Projelerinizde yazı tipi ayarlarını özelleştirmek için bu özelliği kullanmaktan çekinmeyin.
+
+### SSS
+
+#### S: Aspose.Words'ta varsayılan yazı tipini nasıl ayarlayabilirim?
+
+ C: Aspose.Words'te varsayılan yazı tipini ayarlamak için`FontSettings` sınıf ve`DefaultFontName` istenen yazı tipinin adını belirten özellik.
+
+#### S: Aspose.Words'te varsayılan yazı tipi boyutunu belirtebilir miyim?
+
+ C: Evet, Aspose.Words'te varsayılan yazı tipi boyutunu şu şekilde belirleyebilirsiniz:`DefaultFontSize` mülkiyeti`FontSettings` sınıf. İstediğiniz nokta boyutunu ayarlayabilirsiniz.
+
+#### S: Aspose.Words'te varsayılan yazı tipi rengini ayarlamak mümkün mü?
+
+ C: Evet, Aspose.Words'te varsayılan yazı tipi rengini`DefaultColor` mülkiyeti`FontSettings` sınıf. Rengi, RGB değerlerini veya önceden tanımlanmış adları kullanarak belirleyebilirsiniz.
+
+#### S: Varsayılan yazı tipi ayarları tüm belgeler için geçerli mi?
+
+C: Evet, tek bir belge için özel ayarlar yapılmadığı sürece, varsayılan yazı tipi ayarları Aspose.Words'te oluşturulan veya düzenlenen tüm belgeler için geçerlidir.

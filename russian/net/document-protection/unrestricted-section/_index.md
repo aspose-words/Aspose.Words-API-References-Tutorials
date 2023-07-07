@@ -47,7 +47,7 @@ doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 doc.Sections[0].ProtectedForForms = false;
 ```
 
-В этом примере защита отключена для первого раздела.
+В данном примере защита отключена для первого раздела.
 
 ## Шаг 5: Сохраните документ
 

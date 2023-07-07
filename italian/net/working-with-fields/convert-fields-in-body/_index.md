@@ -59,3 +59,25 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToList().ForEach(f => f.A
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
+
+### FAQ
+
+#### D: Aspose.Words è compatibile con diverse versioni di Microsoft Word?
+
+R: Sì, Aspose.Words è compatibile con varie versioni di Microsoft Word, tra cui Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 e Word 2019.
+
+#### D: Aspose.Words può gestire strutture di campo complesse?
+
+R: Assolutamente! Aspose.Words fornisce un ampio supporto per strutture di campo complesse, inclusi campi nidificati, calcoli ed espressioni condizionali. Puoi sfruttare la potente API per lavorare con qualsiasi tipo di struttura del campo.
+
+#### D: Aspose.Words supporta le operazioni di aggiornamento sul campo?
+
+R: Sì, Aspose.Words ti consente di aggiornare i campi in modo programmatico. Puoi facilmente aggiornare i valori dei campi, aggiornare i calcoli ed eseguire altre operazioni relative ai campi utilizzando l'API.
+
+#### D: Posso convertire i campi in testo semplice utilizzando Aspose.Words?
+
+R: Certamente! Aspose.Words fornisce metodi per convertire i campi in testo normale. Questo può essere utile quando è necessario estrarre il contenuto senza alcuna formattazione o funzionalità relativa al campo.
+
+#### D: È possibile generare documenti Word con campi dinamici utilizzando Aspose.Words?
+
+R: Assolutamente! Aspose.Words offre funzionalità robuste per generare documenti Word con campi dinamici. È possibile creare modelli con campi predefiniti e popolarli dinamicamente con i dati, fornendo una soluzione di generazione di documenti flessibile ed efficiente.

@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## Steg 4: Spara dokumentet
-Spara det ändrade dokumentet med hjälp av`Save` metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.ClearContentsControl.doc".
+Spara det ändrade dokumentet med hjälp av`Save`metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.ClearContentsControl.doc".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

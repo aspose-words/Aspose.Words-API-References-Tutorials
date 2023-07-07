@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-markdown/emphases/
 ---
 
-I det här exemplet kommer vi att förklara hur man använder emphases med Aspose.Words för .NET. betoningar används för att framhäva vissa delar av texten, som fetstil och kursiv stil.
+det här exemplet kommer vi att förklara hur man använder emphases med Aspose.Words för .NET. betoningar används för att framhäva vissa delar av texten, som fetstil och kursiv stil.
 
 ## Steg 1: Dokumentinitiering
 
@@ -104,3 +104,25 @@ builder.Write("text.");
 
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
+
+### FAQ's
+
+#### F: Hur markerar jag text med Markdown?
+
+S: För att markera text med Markdown, omge bara texten med lämpliga symboler. Använda sig av`*` eller`_` för kursiv stil,`**` eller`__` för fetstil, och`~~` för genomstrykning.
+
+#### F: Kan vi kombinera olika höjdpunkter i samma text?
+
+ S: Ja, det är möjligt att kombinera olika höjdpunkter i samma text. Du kan till exempel göra ett ord i fetstil och kursiv stil genom att använda båda`**` och`*` runt ordet.
+
+#### F: Vilka framhävningsalternativ finns i Markdown?
+
+A: Markeringsalternativ som är tillgängliga i Markdown är kursiv (`*` eller`_`), fet (`**` eller`__`), och genomstruken (`~~`).
+
+#### F: Hur hanterar jag fall där texten innehåller specialtecken som används av Markdown för att markera?
+
+ S: Om din text innehåller specialtecken som används av Markdown för att markera, kan du undvika dem genom att föregå dem med en`\` . Till exempel,`\*` kommer att visa en bokstavlig asterisk.
+
+#### F: Kan vi anpassa utseendet på markering med CSS?
+
+S: Markering i Markdown renderas vanligtvis med webbläsarens standardstilar. Om du konverterar din Markdown till HTML kan du anpassa utseendet på markeringen med hjälp av CSS-regler.

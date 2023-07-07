@@ -2,20 +2,20 @@
 title: 使用文档选项和设置进行编程
 linktitle: 使用文档选项和设置进行编程
 second_title: Aspose.Words for .NET API 参考
-description: 通过 Aspose.Words for .NET 了解如何使用文档选项和设置来自定义和控制 Word 文档的行为。这些教程将指导您完成不同的功能，例如文档属性。
+description: 了解如何使用文档选项和设置通过 Aspose.Words for .NET 自定义和控制 Word 文档的行为。这些教程将指导您了解不同的功能，例如文档属性。
 type: docs
 weight: 1510
 url: /zh/net/programming-with-document-options-and-settings/
 ---
-Aspose.Words for .NET“使用文档选项和设置进行编程”教程将带您了解在 Aspose.Words for .NET 中操作文档选项和设置的各种功能和技术。这些教程可帮助您了解如何自定义上传设置、管理字体、文档格式、模板等。
+Aspose.Words for .NET“使用文档选项和设置进行编程”教程将引导您了解在 Aspose.Words for .NET 中操作文档选项和设置的各种功能和技术。这些教程可帮助您了解如何自定义上传设置、管理字体、文档格式、模板等。
 
-这些教程解释了如何自定义文档加载选项。您将学习如何指定加载参数，如字体管理、链接解析、性能优化等。这些选项允许您精确控制文档加载行为并优化应用程序的性能。
+这些教程解释了如何自定义文档加载选项。您将学习如何指定加载参数，例如字体管理、链接分辨率、性能优化等。这些选项允许您精确控制文档加载行为并优化应用程序的性能。
 
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [优化 Ms Word](./optimize-for-ms-word/) | 使用 Aspose.Words for .NET 优化 MS Word 文档的分步指南。 |
-| [显示语法和拼写错误](./show-grammatical-and-spelling-errors/) | 使用 Aspose.Words for .NET 启用文档中语法和拼写错误显示的分步指南。 |
+| [针对 Ms Word 进行优化](./optimize-for-ms-word/) | 使用 Aspose.Words for .NET 优化 MS Word 文档的分步指南。 |
+| [显示语法和拼写错误](./show-grammatical-and-spelling-errors/) | 使用 Aspose.Words for .NET 在文档中显示语法和拼写错误的分步指南。 |
 | [清理未使用的样式和列表](./cleanup-unused-styles-and-lists/) | 使用 Aspose.Words for .NET 清理文档中未使用的样式和列表的分步指南。 |
 | [清理重复样式](./cleanup-duplicate-style/) | 使用 Aspose.Words for .NET 清理文档中重复样式的分步指南。包括完整的源代码。 |
 | [查看选项](./view-options/) | 使用 Aspose.Words for .NET 配置文档显示选项的分步指南。 |

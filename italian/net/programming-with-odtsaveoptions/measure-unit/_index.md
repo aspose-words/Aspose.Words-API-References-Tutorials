@@ -52,7 +52,7 @@ In questo esempio, salviamo il documento convertito come "WorkingWithOdtSaveOpti
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento di Word
+// Carica il documento di Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // Configurazione delle opzioni di backup con la funzione "Unità di misura".

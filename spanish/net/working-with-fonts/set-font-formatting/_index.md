@@ -15,7 +15,7 @@ Antes de comenzar, asegúrese de tener los siguientes elementos:
 - La biblioteca Aspose.Words para .NET instalada en su proyecto
 
 ## Paso 1: Definir el directorio de documentos
-Comience configurando la ruta del directorio a la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta adecuada.
+ Comience configurando la ruta del directorio a la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta adecuada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -68,3 +68,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 
 ## Conclusión
 ¡Felicidades! Ahora sabe cómo configurar el formato de fuente en un documento de Word usando Aspose.Words para .NET. Puede explorar más opciones de formato de fuente y crear documentos de Word personalizados y atractivos.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo aplicar el estilo de negrita a una fuente en un documento de Word usando Aspose.Words?
+
+R: Para aplicar el estilo de negrita a una fuente en un documento de Word usando Aspose.Words, puede usar la API para navegar a la fuente deseada y establecer su estilo en "negrita". Esto aplicará el estilo en negrita a la fuente especificada.
+
+#### P: ¿Es posible aplicar estilo cursiva a una parte específica del texto en un documento de Word con Aspose.Words?
+
+R: Sí, con Aspose.Words puede aplicar el estilo de cursiva a una parte específica del texto en un documento de Word. Puede usar la API para seleccionar el rango de texto deseado y establecer su estilo en "cursiva".
+
+#### P: ¿Cómo puedo cambiar el color de fuente en un documento de Word usando Aspose.Words?
+
+R: Para cambiar el color de la fuente en un documento de Word usando Aspose.Words, puede acceder a la fuente deseada usando la API y establecer su color en el color deseado. Esto cambiará el color de la fuente en el documento.
+
+#### P: ¿Es posible cambiar el tamaño de fuente en un documento de Word usando Aspose.Words?
+
+R: Sí, puede cambiar el tamaño de fuente en un documento de Word usando Aspose.Words. La API le permite acceder a la fuente y establecer su tamaño en puntos o puntos de escala, según sus necesidades.
+
+#### P: ¿Puedo aplicar varios formatos de fuente, como negrita y cursiva, al mismo texto en un documento de Word?
+
+R: Sí, con Aspose.Words puede aplicar varios formatos de fuente, como negrita y cursiva, al mismo texto en un documento de Word. Puede usar la API para configurar los diferentes estilos de fuente que desea para diferentes partes del texto.

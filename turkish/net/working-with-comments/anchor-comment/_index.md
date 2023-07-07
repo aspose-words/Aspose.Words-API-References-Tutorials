@@ -63,12 +63,12 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 Aspose.Words for .NET kullanarak bir yorum yanıtını sabitlemek için eksiksiz kaynak kodu burada:
 
 ```csharp
-// Create an instance of the Document.
+// Belgenin bir örneğini oluşturun.
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 Document doc = new Document();
 
-// Create three Run objects.
-// The first two run some text, while the third runs a Comment
+// Üç Çalıştır nesnesi oluşturun.
+//İlk ikisi biraz metin çalıştırırken, üçüncüsü bir Yorum çalıştırır.
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -88,7 +88,7 @@ Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 
-// Each of the Run objects has an associated CommentRangeStart and CommentRangeEnd object.
+// Run nesnelerinin her birinin ilişkili bir CommentRangeStart ve CommentRangeEnd nesnesi vardır.
 
 CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
 CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
@@ -99,3 +99,26 @@ commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
 ```
+
+### SSS
+
+#### S: Aspose.Words for .NET'te yorum çapası nedir?
+
+Y: Aspose.Words for .NET'te, bir yorum bağlantısı, bir yorumu bir belgedeki belirli bir konuma bağlayan bir işaretleyicidir.
+
+#### S: Bir Aspose.Words for .NET belgesine nasıl yorum çapası ekleyebilirim?
+
+C: Bir Aspose.Words for .NET belgesine yorum bağlantısı eklemek için eğitimde bahsedilen adımları izleyin.
+
+#### S: Aspose.Words for .NET'te mevcut bir yorum bağlantısına nasıl erişebilirim?
+
+ C: Aspose.Words for .NET'te varolan bir yorum bağlantısına şu şekilde erişebilirsiniz:`Comment.Anchor` mülk.
+
+#### S: Aspose.Words for .NET'te bir yorum çapası ekleyebilir miyim?
+
+ C: Evet, Aspose.Words for .NET'te bir yorum bağlantısını kaldırabilirsiniz.`Comment.Remove` yöntem.
+
+#### S: Aspose.Words for .NET'te bir yorum bağlantısına bağlı bir yorumun metnini nasıl düzenleyebilirim?
+
+C: Aspose.Words for .NET'te bir yorum bağlantısına bağlı bir yorumun metnini değiştirmek için şuraya erişebilirsiniz:`Comment.Text` karşılık gelen özellik`Comment` nesne ve metni gerektiği gibi değiştirin.
+

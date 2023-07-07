@@ -48,7 +48,7 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 // Belgeye içerik eklemek için bir belge oluşturucu kullanın.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Geri tik sayısı kaçırıldı, varsayılan olarak bir geri tik kullanılacak.
+// Geri tik sayısı kaçırıldı, varsayılan olarak bir geri tik kullanılacak.
 Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 builder.Font.Style = inlineCode1BackTicks;
 builder.Writeln("Text with InlineCode style with 1 backtick");
@@ -61,3 +61,17 @@ builder.Writeln("Text with InlineCode style with 3 backtick");
 
 Tebrikler! Artık Aspose.Words for .NET ile satır içi kod işlevselliğini nasıl kullanacağınızı öğrendiniz.
 
+
+### SSS
+
+#### S: Satır içi kodu Aspose.Words'te nasıl kullanabilirim?
+
+ C: Aspose.Words'te satır içi kodu kullanmak için, satır içi kod olarak biçimlendirilecek metni çevreleyen uygun etiketleri kullanabilirsiniz. Örneğin,`<code>` veya`<kbd>` satır içi kod olarak biçimlendirilecek metni çevreleyen etiket.
+
+#### S: Aspose.Words'te satır içi kod yazı tipini veya rengini belirtmek mümkün mü?
+
+ C: Evet, Aspose.Words'te satır içi kodun yazı tipini veya rengini belirtebilirsiniz. kullanabilirsiniz`Font.Name` Ve`Font.Color` özellikleri`Run` Satır içi kodun yazı tipini ve rengini ayarlamak için nesne. Örneğin, kullanabilirsiniz`run.Font.Name = "Courier New"` satır içi kod için yazı tipini belirtmek ve`run.Font.Color = Color.Blue`rengi belirtmek için
+
+#### S: Satır içi kodu diğer metin öğelerini içeren bir paragrafta kullanabilir miyim?
+
+ C: Evet, diğer metin öğelerini içeren bir paragrafta satır içi kodu kullanabilirsiniz. birden fazla oluşturabilirsiniz`Run` Paragrafın farklı bölümlerini temsil edecek nesneleri seçin, ardından yalnızca belirli bölümleri satır içi kod olarak biçimlendirmek için satır içi kod etiketlerini kullanın. Ardından bunları kullanarak paragrafa ekleyebilirsiniz.`Paragraph.AppendChild(run)` yöntem.

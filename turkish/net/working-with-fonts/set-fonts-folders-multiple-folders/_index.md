@@ -64,3 +64,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 
 ## Çözüm
 Bu öğreticide, Aspose.Words for .NET kullanarak bir belgeyi işlerken birden fazla yazı tipi klasörünün nasıl ayarlanacağını öğrendik. Bu adım adım kılavuzu izleyerek, belgelerinizi işlerken kullanmak üzere birden çok yazı tipi klasörünü kolayca belirleyebilirsiniz. Aspose.Words, belgelerinizdeki yazı tipleriyle çalışmak için güçlü ve esnek bir API sunar. Bu bilgiyle, belgelerinizi özel ihtiyaçlarınıza göre işlerken kullanılan yazı tipi kaynaklarını kontrol edebilir ve özelleştirebilirsiniz.
+
+### SSS
+
+#### S: Aspose.Words'ta birden çok yazı tipi klasörünü nasıl ayarlayabilirim?
+
+ C: Aspose.Words'te birden çok yazı tipi klasörü ayarlamak için`SetFontsFolders` yöntemi`Fonts` özel yazı tipi klasörü konumlarının bir listesini sağlayan sınıf.
+
+#### S: Birden fazla yazı tipi klasörü ayarlamak Aspose.Words ile işlenen tüm belgeleri etkiler mi?
+
+C: Evet, birden fazla yazı tipi klasörü ayarlamak Aspose.Words ile işlenen tüm belgeleri etkiler. Yazı tipi klasörlerini tanımladıktan sonra, Aspose.Words tüm belgelerde yazı tiplerini aramak için bu konumları kullanacaktır.
+
+#### S: Aspose.Words'te kaç tane yazı tipi klasörü tanımlayabilirim?
+
+C: Aspose.Words'te gerektiği kadar çok sayıda yazı tipi klasörü tanımlayabilirsiniz. Tanımlayabileceğiniz yazı tipi klasörlerinin sayısında belirli bir sınır yoktur.
+
+#### S: Aspose.Words'te tanımlanan yazı tipi klasörlerini nasıl kontrol edebilirim?
+
+ C: Aspose.Words'te tanımlanan yazı tipi klasörlerini kontrol etmek için`GetFolders` yöntemi`Fonts` Yapılandırılan yazı tipi klasörlerinin konumlarını almak için sınıf.
+
+#### S: Yazı tipi klasörlerinin belirli yazı tiplerini içermesi gerekiyor mu?
+
+C: Evet, yazı tipi klasörleri, Word belgelerinizde kullanmak istediğiniz yazı tiplerini içermelidir. Aspose.Words, belgeleri işlerken belirtilen klasörlerdeki yazı tiplerini arayacaktır.

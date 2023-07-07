@@ -15,7 +15,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel ver
 - Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
 ## Schritt 1: Definieren Sie das Dokumentenverzeichnis
-Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
+ Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -56,3 +56,21 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ## Abschluss
 Herzlichen Glückwunsch! Sie wissen jetzt, wie Sie das Schriftartenverzeichnis in Aspose.Words für .NET festlegen. Mit dieser Funktion können Sie die Verfügbarkeit der in Ihrem Dokument verwendeten Schriftarten und die Konsistenz bei der Anzeige von Schriftarten sicherstellen.
+
+### FAQs
+
+#### F: Wie kann ich in Aspose.Words einen benutzerdefinierten Schriftartenordner festlegen?
+
+ A: Um einen benutzerdefinierten Schriftartenordner in Aspose.Words festzulegen, können Sie den verwenden`FontsFolder` Klasse und die`SetFontsFolders` Methode, die den Pfad zu dem Ordner angibt, der Ihre Schriftarten enthält.
+
+#### F: Kann ich in Aspose.Words mehrere Schriftartenordner festlegen?
+
+ A: Ja, Sie können in Aspose.Words mehrere Schriftartenordner festlegen, indem Sie die aufrufen`SetFontsFolders` Methode mehrmals mit den Pfaden der verschiedenen Schriftartenordner, die Sie verwenden möchten.
+
+#### F: Was passiert, wenn eine im Dokument verwendete Schriftart nicht in den definierten Schriftartenordnern vorhanden ist?
+
+A: Wenn eine im Dokument verwendete Schriftart nicht in den in Aspose.Words definierten Schriftartenordnern vorhanden ist, wird stattdessen eine Ersatzschriftart verwendet. Dadurch wird sichergestellt, dass der Text im Dokument immer korrekt angezeigt wird, auch wenn die Originalschriftart nicht verfügbar ist.
+
+#### F: Haben in Aspose.Words definierte Schriftartenordner Vorrang vor auf dem System installierten Schriftarten?
+
+A: Ja, in Aspose.Words definierte Schriftartenordner haben Vorrang vor auf dem System installierten Schriftarten. Das heißt, wenn eine gleichnamige Schriftart sowohl in den definierten Schriftartenordnern als auch in den Systemschriftarten vorhanden ist, wird bei der Verarbeitung von Word-Dokumenten die Version im Schriftartenordner verwendet.

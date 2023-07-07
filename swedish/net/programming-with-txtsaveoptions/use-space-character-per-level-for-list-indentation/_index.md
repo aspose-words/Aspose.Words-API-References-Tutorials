@@ -92,3 +92,28 @@ namespace Example
 ## Slutsats
 
 den här guiden förklarade vi hur man använder Aspose.Words för .NET för att tillämpa funktionen "Använd ett blanksteg per nivå för listindrag". Genom att följa de angivna stegen och använda den medföljande C#-källkoden kan du enkelt konfigurera indragningen av listor i dina Word-dokument med ett blanksteg per nivå. Aspose.Words erbjuder en enorm flexibilitet och kraft för att arbeta med textformatering och listhantering, vilket gör att du kan skapa välstrukturerade dokument i din C#-applikation.
+
+### Vanliga frågor
+
+#### F: Vad är Aspose.Words för .NET?
+Aspose.Words för .NET är ett kraftfullt bibliotek för att skapa, redigera och manipulera Word-dokument i en C#-applikation. Den erbjuder många funktioner för att arbeta med Word-dokument, inklusive möjligheten att använda ett blanksteg per nivå för indrag av listor.
+
+#### F: Hur kan jag använda ett blanksteg per nivå för listindrag med Aspose.Words för .NET?
+Du kan använda ett blanksteg per nivå för listindrag genom att följa dessa steg:
+
+ Skapa ett nytt dokument med hjälp av`Document` klass.
+
+ Använd`DocumentBuilder`klass för att lägga till innehåll i dokumentet och skapa en lista med flera nivåer av indrag.
+
+ När du har lagt till innehållet och konfigurerat listindragningen använder du`TxtSaveOptions` klass och ställ in`ListIndentation.Count` egenskapen till antalet indragsnivåer och`ListIndentation.Character` egendom på utrymmet (`' '`) att använda.
+
+ Spara dokumentet med de angivna alternativen med hjälp av`Save` metod för`Document` klass.
+
+#### F: Stöder Aspose.Words andra tecken för listindrag?
+Ja, Aspose.Words stöder andra tecken för indrag av listor. Du kan använda tecken som inte är blanksteg, som tabbar (`'\t'` ) eller andra specialtecken, genom att ställa in`ListIndentation.Character` egenskap till önskad karaktär.
+
+#### F: Är det möjligt att anpassa antalet blanksteg per nivå för listindrag?
+ Ja, du kan anpassa antalet blanksteg per nivå för listindrag genom att ändra värdet på`ListIndentation.Count` egendom i`TxtSaveOptions` klass. Du kan ange hur många blanksteg du vill ha för varje indragsnivå.
+
+#### F: Vilka andra funktioner erbjuder Aspose.Words för listhantering?
+Aspose.Words erbjuder många funktioner för att hantera listor i Word-dokument. Du kan skapa numrerade eller punktlistor, ställa in indragsnivåer, anpassa stilen på listor, lägga till listobjekt och mer.

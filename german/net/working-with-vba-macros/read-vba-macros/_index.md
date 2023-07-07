@@ -1,6 +1,6 @@
 ---
-title: Lesen Sie Vba-Makros
-linktitle: Lesen Sie Vba-Makros
+title: Lesen Sie VBA-Makros
+linktitle: Lesen Sie VBA-Makros
 second_title: Aspose.Words für .NET API-Referenz
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET VBA-Makros aus einem Word-Dokument lesen.
 type: docs

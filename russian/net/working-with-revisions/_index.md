@@ -17,9 +17,9 @@ url: /ru/net/working-with-revisions/
 | Заголовок | Описание |
 | --- | --- |
 | [Принять изменения](./accept-revisions/) | Узнайте, как принимать изменения в документе Word с помощью Aspose.Words для .NET. |
-| [Получить типы изменений](./get-revision-types/) | Получите типы изменений в документе Word с помощью Aspose.Words для .NET. |
+| [Получить типы ревизий слов](./get-revision-types/) | Получите типы редакций слов в документе Word с помощью Aspose.Words для .NET. |
 | [Получить группы изменений](./get-revision-groups/) | Получите сведения о группе ревизий в документе Word с помощью Aspose.Words для .NET. |
-| [Удалить комментарии в PDF](./remove-comments-in-pdf/) | Удалите комментарии в файле PDF с помощью Aspose.Words для .NET. |
+| [Удалить комментарии в файле PDF](./remove-comments-in-pdf/) | Удалите комментарии в файле PDF с помощью Aspose.Words для .NET. |
 | [Показать изменения в выносках](./show-revisions-in-balloons/) | Отображайте исправления во всплывающих подсказках с помощью Aspose.Words для .NET. |
 | [Получить сведения о группе изменений](./get-revision-group-details/) | Получите сведения о группе ревизий в документе Word с помощью Aspose.Words для .NET. |
 | [Доступ к исправленной версии](./access-revised-version/) | Получите доступ к исправленной версии документа Word с помощью Aspose.Words для .NET. |

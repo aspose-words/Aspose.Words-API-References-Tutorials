@@ -64,3 +64,25 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
 Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und entsprechend Ihren spezifischen Anforderungen modifizieren.
+
+### FAQs
+
+#### F: Wie kann ich den Namen eines Formularfelds in Aspose.Words ändern?
+
+ A: Um den Namen eines Formularfelds in Aspose.Words zu ändern, können Sie das verwenden`FormField.Name` Eigenschaft und weisen Sie ihr einen neuen Wert zu.
+
+#### F: Ist es möglich, den Standardwert eines Formularfelds zu ändern?
+
+ A: Ja, es ist möglich, den Standardwert eines Formularfelds in Aspose.Words zu ändern. Benutzen Sie die`FormField.Result` -Eigenschaft, um den neuen Standardwert anzugeben.
+
+#### F: Wie kann ich das Format eines Datumsformularfelds in Aspose.Words ändern?
+
+ A: Um das Format eines Datumsformularfelds in Aspose.Words zu ändern, können Sie das verwenden`FormField.TextFormat` Eigenschaft und weisen Sie ihr ein neues Datumsformat zu. Beispielsweise können Sie „TT/MM/JJJJ“ verwenden, um das Datum im Format Tag/Monat/Jahr anzuzeigen.
+
+#### F: Kann ich die Liste der Optionen aus einem Dropdown-Formularfeld in Aspose.Words abrufen?
+
+ A: Ja, Sie können die Liste der Optionen für ein Dropdown-Formularfeld in Aspose.Words mithilfe von abrufen`FormField.DropDownItems` Eigentum. Sie können auf diese Eigenschaft zugreifen und die Liste der Optionen abrufen, um bei Bedarf zusätzliche Vorgänge auszuführen.
+
+#### F: Wie kann ich alle Eigenschaften aus einem Formularfeld in Aspose.Words entfernen?
+
+ A: Um alle Eigenschaften aus einem Formularfeld in Aspose.Words zu entfernen, können Sie die verwenden`FormField.Clear` Methode zum Löschen aller Formularfeldeigenschaften.

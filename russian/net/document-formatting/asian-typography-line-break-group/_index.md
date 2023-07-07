@@ -57,5 +57,5 @@ doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 	doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 	
 ```
-С помощью этого кода вы сможете применить группу разрывов строк в азиатской типографии, используя Aspose.Words для .NET.
+С помощью этого кода вы сможете применять группу разрывов строк азиатской типографики, используя Aspose.Words для .NET.
 

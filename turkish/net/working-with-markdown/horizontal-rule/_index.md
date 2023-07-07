@@ -39,3 +39,20 @@ builder.InsertHorizontalRule();
 Tebrikler! Artık yatay kural özelliğini Aspose.Words for .NET ile nasıl kullanacağınızı öğrendiniz.
 
 
+### SSS
+
+#### S: Markdown'da nasıl yatay bir cetvel oluşturabilirim?
+
+A: Markdown'da yatay bir cetvel oluşturmak için boş bir satırda aşağıdaki sembollerden birini kullanabilirsiniz: üç yıldız (\***), üç çizgi (\---) veya üç alt çizgi (\___).
+
+#### S: Markdown'da yatay bir cetvelin görünümünü özelleştirebilir miyim?
+
+C: Standart Markdown'da yatay cetvellerin görünümünü özelleştirmenin bir yolu yoktur. Ancak, bazı gelişmiş Markdown editörleri ve uzantıları ek özelleştirme özellikleri sunar.
+
+#### S: Yatay cetveller tüm Markdown editörleri tarafından destekleniyor mu?
+
+C: Evet, en popüler Markdown editörleri yatay cetvelleri destekler. Ancak, desteklendiğinden emin olmak için satıcınızın belgelerini kontrol etmek her zaman en iyisidir.
+
+#### S: Markdown'da başka hangi öğeleri oluşturabilirim?
+
+Y: Yatay cetvellere ek olarak, Markdown'da başlıklar, paragraflar, listeler, bağlantılar, resimler, tablolar ve daha fazlasını oluşturabilirsiniz.

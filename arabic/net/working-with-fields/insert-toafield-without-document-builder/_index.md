@@ -104,3 +104,21 @@ fieldToa.Update();
 
 doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
+
+### التعليمات
+
+#### س: كيف يمكن تخصيص مظهر حقل TOA المدرج في مستند Word باستخدام Aspose.Words for .NET؟
+
+ج: يمكنك تخصيص مظهر حقل TOA المدرج باستخدام خصائص ملف`FieldTOA` لتحديد خيارات التنسيق.
+
+#### س: هل يمكنني إضافة عدة حقول TOA في مستند Word واحد باستخدام Aspose.Words for .NET؟
+
+ج: نعم ، يمكنك إضافة عدة حقول TOA في مستند Word واحد باستخدام Aspose.Words for .NET. فقط كرر خطوات الإدراج لكل حقل.
+
+#### س: كيف يمكنني التحقق مما إذا كان حقل TOA قد تم إدراجه بنجاح في مستند Word باستخدام Aspose.Words for .NET؟
+
+ج: للتحقق مما إذا كان حقل TOA قد تم إدراجه بنجاح ، يمكنك تصفح محتوى المستند والبحث عن مثيلات حقل TOA.
+
+#### س: هل إدراج حقل TOA بدون استخدام DocumentBuilder يؤثر على تنسيق مستند Word باستخدام Aspose.Words for .NET؟
+
+ج: لا يؤثر إدخال حقل TOA بدون استخدام DocumentBuilder بشكل مباشر في تنسيق مستند Word. ومع ذلك ، يمكن أن تؤثر خيارات تنسيق الحقل TOA على التنسيق العام للمستند.

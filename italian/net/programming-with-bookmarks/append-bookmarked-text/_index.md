@@ -38,7 +38,7 @@ hey, this situation can't be handled yet.");
 
 ## Passaggio 3: controlla i genitori dei paragrafi
 
-Controlliamo se i paragrafi iniziali e finali hanno lo stesso genitore. In caso contrario, significa che i paragrafi non sono contenuti nella stessa sezione o documento e stiamo generando un'eccezione:
+Controlliamo se i paragrafi iniziali e finali hanno lo stesso genitore. In caso contrario, significa che i paragrafi non sono contenuti nella stessa sezione o documento e stiamo lanciando un'eccezione:
 
 ```csharp
 if (startPara.ParentNode != endPara.ParentNode)

@@ -46,7 +46,7 @@ foreach(Field field in doc.Range.Fields)
 }
 ```
 
- Questo ciclo passa attraverso tutti i campi nel documento alla ricerca di campi di tipo`FieldType.FieldHyperlink` . Una volta trovato un campo di questo tipo, verifichiamo se si tratta di un link locale controllando il`SubAddress` proprietà. In caso contrario, sostituiamo l'indirizzo del link con`"http://www.aspose.com"` il risultato con`"Aspose - The .NET & Java Component Editor"`.
+ Questo ciclo passa attraverso tutti i campi nel documento alla ricerca di campi di tipo`FieldType.FieldHyperlink` . Una volta trovato un campo di questo tipo, verifichiamo se si tratta di un link locale controllando il`SubAddress` proprietà. In caso contrario, sostituiamo l'indirizzo del link con`"http://www.aspose.com"` e il risultato con`"Aspose - The .NET & Java Component Editor"`.
 
 ## Passaggio 4: salvare il documento modificato
 
@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
 Questo è un codice sorgente di esempio per sostituire i collegamenti ipertestuali in un documento utilizzando Aspose.Words per .NET.
+
+### FAQ
+
+#### D: Come posso sostituire i collegamenti ipertestuali in un documento di Word utilizzando Aspose.Words per .NET?
+
+ A: Per sostituire i collegamenti ipertestuali in un documento di Word utilizzando Aspose.Words per .NET, è possibile utilizzare il`Document.Range.Replace`metodo che specifica il testo da cercare e il testo sostitutivo. Assicurati di utilizzare le opzioni appropriate per impostare i parametri di ricerca e sostituzione.
+
+#### D: È possibile sostituire solo alcuni collegamenti ipertestuali in un documento di Word con Aspose.Words per .NET?
+
+R: Sì, è possibile sostituire solo alcuni collegamenti ipertestuali in un documento di Word con Aspose.Words per .NET. È possibile filtrare i collegamenti ipertestuali da sostituire utilizzando criteri specifici, come l'URL del collegamento, il testo del collegamento o qualsiasi altra proprietà pertinente. Quindi puoi applicare la sostituzione solo ai collegamenti ipertestuali corrispondenti.
+
+#### D: Come posso ignorare i collegamenti ipertestuali in intestazioni, piè di pagina o note a piè di pagina durante la sostituzione con Aspose.Words per .NET?
+
+R: Per ignorare i collegamenti ipertestuali in intestazioni, piè di pagina o note a piè di pagina durante la sostituzione con Aspose.Words per .NET, è possibile utilizzare le opzioni di ricerca avanzate e specificare i limiti di ricerca appropriati. Ad esempio, puoi limitare la ricerca alle sezioni principali del documento ed escludere intestazioni, piè di pagina o note a piè di pagina.
+
+#### D: È possibile sostituire i collegamenti ipertestuali con collegamenti interni ad altre parti del documento?
+
+ R: Sì, è possibile sostituire i collegamenti ipertestuali con collegamenti interni ad altre parti del documento con Aspose.Words per .NET. Puoi utilizzare ancore o ID di testo per creare collegamenti interni e quindi sostituirli utilizzando il file`Document.Range.Replace` metodo con le opzioni appropriate.
+
+#### D: La sostituzione dei collegamenti ipertestuali con Aspose.Words per .NET preserva le proprietà dei collegamenti, come colori o stili?
+
+R: Sì, quando si sostituiscono i collegamenti ipertestuali con Aspose.Words per .NET, le proprietà dei collegamenti come i colori o gli stili vengono mantenute. È possibile specificare le stesse proprietà di formattazione nel testo sostitutivo per ottenere un risultato coerente.

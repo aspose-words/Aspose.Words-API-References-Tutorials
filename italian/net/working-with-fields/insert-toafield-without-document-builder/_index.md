@@ -104,3 +104,21 @@ fieldToa.Update();
 
 doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
+
+### FAQ
+
+#### D: Come personalizzare l'aspetto del campo TOA inserito nel documento Word con Aspose.Words per .NET?
+
+R: È possibile personalizzare l'aspetto del campo TOA inserito utilizzando le proprietà del file`FieldTOA` oggetto per specificare le opzioni di formattazione.
+
+#### D: Posso aggiungere più campi TOA in un singolo documento Word utilizzando Aspose.Words per .NET?
+
+R: Sì, puoi aggiungere più campi TOA in un singolo documento Word utilizzando Aspose.Words per .NET. Basta ripetere i passaggi di inserimento per ogni campo.
+
+#### D: Come posso verificare se un campo TOA è stato inserito correttamente in un documento Word con Aspose.Words per .NET?
+
+R: Per verificare se un campo TOA è stato inserito correttamente, puoi sfogliare il contenuto del documento e cercare le istanze del campo TOA.
+
+#### D: L'inserimento di un campo TOA senza utilizzare DocumentBuilder influisce sulla formattazione del documento Word con Aspose.Words per .NET?
+
+R: L'inserimento di un campo TOA senza utilizzare DocumentBuilder non influisce direttamente sulla formattazione del documento Word. Tuttavia, le opzioni di formattazione del campo TOA possono influire sulla formattazione complessiva del documento.

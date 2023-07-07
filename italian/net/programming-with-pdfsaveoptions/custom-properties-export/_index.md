@@ -1,6 +1,6 @@
 ---
-title: Esportazione di proprietà personalizzate
-linktitle: Esportazione di proprietà personalizzate
+title: Esporta proprietà personalizzate in un documento PDF
+linktitle: Esporta proprietà personalizzate in un documento PDF
 second_title: Riferimento all'API Aspose.Words per .NET
 description: Scopri come esportare proprietà personalizzate durante la conversione di documenti in PDF con Aspose.Words per .NET.
 type: docs
@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
 
-In questo tutorial, ti guideremo attraverso i passaggi per esportare le proprietà personalizzate di un documento utilizzando Aspose.Words per .NET. L'esportazione delle proprietà personalizzate consente di includere informazioni aggiuntive nel documento PDF generato. Segui i passaggi seguenti:
+In questo tutorial, ti guideremo attraverso i passaggi per esportare le proprietà personalizzate di un documento in un documento PDF utilizzando Aspose.Words per .NET. L'esportazione delle proprietà personalizzate consente di includere informazioni aggiuntive nel documento PDF generato. Segui i passaggi seguenti:
 
 ## Passaggio 1: creazione di un documento e aggiunta di proprietà personalizzate
 
@@ -20,7 +20,7 @@ Document doc = new Document();
 ```
 
 ## Passaggio 2: aggiungi proprietà personalizzate
-Successivamente, aggiungi le proprietà personalizzate desiderate. Ad esempio, per aggiungere una proprietà "Company" con il valore "Aspose", utilizzare the`Add` metodo della raccolta CustomDocumentProperties:
+ Successivamente, aggiungi le proprietà personalizzate desiderate. Ad esempio, per aggiungere una proprietà "Company" con il valore "Aspose", utilizzare the`Add` metodo della raccolta CustomDocumentProperties:
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
@@ -68,3 +68,26 @@ Ecco il codice sorgente completo per esportare proprietà personalizzate da un d
 
 Seguendo questi passaggi, puoi esportare facilmente le proprietà personalizzate di un documento durante la conversione in PDF con Aspose.Words per .NET.
 
+
+## Conclusione
+
+In questo tutorial, abbiamo spiegato come esportare proprietà personalizzate da un documento in un documento PDF utilizzando Aspose.Words per .NET. Seguendo i passaggi descritti, è possibile includere facilmente informazioni aggiuntive nel documento PDF generato esportando le proprietà personalizzate del documento. Approfitta delle funzionalità di Aspose.Words per .NET per personalizzare e arricchire i tuoi documenti PDF esportando proprietà personalizzate.
+
+### Domande frequenti
+
+#### D: Cos'è l'esportazione di proprietà personalizzate in un documento PDF?
+R: L'esportazione di proprietà personalizzate in un documento PDF consente di includere informazioni aggiuntive nel documento PDF generato. Le proprietà personalizzate sono metadati specifici del documento, ad esempio tag, parole chiave o credenziali. Esportando queste proprietà personalizzate, puoi renderle disponibili agli utenti durante la visualizzazione del documento PDF.
+
+#### D: Come posso esportare le proprietà personalizzate di un documento in un documento PDF utilizzando Aspose.Words per .NET?
+R: Per esportare le proprietà personalizzate di un documento in un documento PDF utilizzando Aspose.Words per .NET, attenersi alla seguente procedura:
+
+ Crea un'istanza di`Document` classe.
+
+ Aggiungere le proprietà personalizzate desiderate utilizzando il file`CustomDocumentProperties` collezione. Ad esempio, usa il`Add` metodo per aggiungere una proprietà "Company" con il valore "Aspose".
+
+ Crea un'istanza di`PdfSaveOptions` class e specificare come esportare le proprietà personalizzate utilizzando il file`CustomPropertiesExport` proprietà. IL`PdfCustomPropertiesExport.Standard` value esporta le proprietà personalizzate in base alle impostazioni predefinite.
+
+ Usa il`Save` metodo del`Document` class per convertire il documento in PDF specificando le opzioni di conversione.
+
+#### D: Come posso accedere alle proprietà personalizzate di un documento PDF?
+R: Per accedere alle proprietà personalizzate di un documento PDF, è possibile utilizzare un lettore PDF compatibile che supporti la visualizzazione delle proprietà del documento. I lettori PDF più comuni, come Adobe Acrobat Reader, forniscono l'accesso ai metadati e alle proprietà di un documento PDF. Di solito puoi trovare queste opzioni nel menu "File" o facendo clic con il pulsante destro del mouse sul documento e selezionando "Proprietà".

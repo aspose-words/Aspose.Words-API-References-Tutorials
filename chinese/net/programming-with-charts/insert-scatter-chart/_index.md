@@ -2,22 +2,22 @@
 title: 插入散点图
 linktitle: 插入散点图
 second_title: Aspose.Words for .NET API 参考
-description: 了解如何使用 Aspose.Words for .NET 将散点图插入到文档中。添加具有 X 和 Y 坐标的系列数据。
+description: 了解如何使用 Aspose.Words for .NET 将散点图插入文档中。添加带有 X 和 Y 坐标的系列数据。
 type: docs
 weight: 10
 url: /zh/net/programming-with-charts/insert-scatter-chart/
 ---
 
-本教程解释了如何使用 Aspose.Words for .NET 将散点图插入到文档中。提供的源代码演示了如何创建图表、添加系列数据和保存文档。
+本教程介绍如何使用 Aspose.Words for .NET 将散点图插入文档中。提供的源代码演示了如何创建图表、添加系列数据以及保存文档。
 
 ## 第 1 步：设置项目
 
-确保您具有以下先决条件：
+确保您具备以下先决条件：
 
-- 安装了 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载或使用 NuGet 包管理器安装它。
+- 已安装 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载它或使用 NuGet 包管理器来安装它。
 - 将保存输出文档的文档目录路径。
 
-## 第 2 步：创建新文档并插入图表
+## 步骤 2：创建一个新文档并插入图表
 
 创建一个新的`Document`对象和一个`DocumentBuilder`构建文档。
 
@@ -29,14 +29,14 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-接下来，使用`InsertChart`的方法`DocumentBuilder`将散点图插入到文档中。
+接下来，使用`InsertChart`的方法`DocumentBuilder`将散点图插入文档中。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 第 3 步：将系列数据添加到图表
+## 步骤 3：将系列数据添加到图表中
 
 将系列数据添加到图表中。在此示例中，我们将添加两组 X 和 Y 坐标。
 
@@ -44,9 +44,9 @@ Chart chart = shape.Chart;
 chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
 ```
 
-## 第 4 步：保存文档
+## 步骤 4：保存文档
 
-最后，使用 将文件保存到指定目录`Save`的方法`Document`目的。
+最后，使用命令将文档保存到指定目录`Save`的方法`Document`目的。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");

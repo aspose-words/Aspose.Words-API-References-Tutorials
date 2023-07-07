@@ -85,3 +85,24 @@ doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
 Bu örnekte, yeni bir belge oluşturduk, iç içe geçmiş MERGFIELD alanlarıyla bir IF alanı oluşturduk ve ardından bu alanı belgenin belirli bir konumuna ekledik. Belge daha sonra belirli bir dosya adıyla kaydedilir.
+
+### SSS
+
+#### S: Aspose.Words'te alan oluşturucu nedir?
+
+C: Aspose.Words'ta bir Alan Oluşturucu, bir Word belgesinde alanlar oluşturmak ve değiştirmek için güçlü bir araçtır. Alan kodları ekleme ve biçimlendirme seçeneklerini yönetme dahil olmak üzere alanları oluşturmak ve özelleştirmek için gelişmiş özellikler sunar.
+
+#### S: Alan oluşturucu kullanılarak ne tür alanlar eklenebilir?
+
+C: Aspose.Words'deki alan oluşturucu, bir Word belgesine farklı türde alanlar eklemenize izin verir. Yaygın olarak kullanılan alan türlerine ilişkin bazı örnekler aşağıda verilmiştir:
+
+- MERGFIELD: Dış kaynaklardan gelen verileri birleştirmek için kullanılır.
+- TARİH: geçerli tarihi görüntüler.
+- SAYFA: geçerli sayfa numarasını görüntüler.
+- IF: bir içeriğin görüntülenmesini bir koşula göre koşullandırmaya izin verir.
+- TOC: belge başlık stillerine göre otomatik olarak bir içindekiler tablosu oluşturur.
+
+#### S: Alan oluşturucu ile eklenen alanlar nasıl özelleştirilir?
+
+A: Alan oluşturucu, eklenen alanlar için özelleştirme seçenekleri sunar. Alan biçimlendirmesi, bağımsız değişkenler, anahtarlar ve varsayılan değerler gibi seçenekleri ayarlamak için alan oluşturucu yöntemlerini ve özelliklerini kullanabilirsiniz. Örneğin, tarih biçimini, sayı biçimini, binler ayırıcısını vb. ayarlayabilirsiniz.
+  

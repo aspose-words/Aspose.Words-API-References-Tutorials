@@ -42,7 +42,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 
 Yukarıdaki kod, belgeyi TCField ile belirtilen dizine kaydedecektir.
 
-## Çıktı İşaretleme Formatları
+## Çıktı İşaretleme Biçimleri
 
 Kod başarıyla yürütüldüğünde, çıktı belgesi, belirtilen giriş metniyle bir içindekiler tablosu girişi içerecektir. TCField, Word belgesinde bir alan olarak temsil edilir ve ortaya çıkan işaretleme biçimi, belgenin nasıl işlendiğine bağlı olacaktır.
 

@@ -43,17 +43,39 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Beispielquellcode für „Standardschriftart beim Rendern angeben“ mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Pfad zu Ihrem Dokumentenverzeichnis
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// Wenn die hier definierte Standardschriftart beim Rendern nicht gefunden werden kann, dann
-	// Stattdessen wird die nächstgelegene Schriftart auf dem Gerät verwendet.
-	fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// Wenn die hier definierte Standardschriftart beim Rendern nicht gefunden werden kann, dann
+// Stattdessen wird die nächstgelegene Schriftart auf dem Gerät verwendet.
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Abschluss
 In diesem Tutorial haben wir gelernt, wie man beim Rendern eines Dokuments mit Aspose.Words für .NET die Standardschriftart angibt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie ganz einfach eine Standardschriftart festlegen, die beim Rendern Ihrer Dokumente verwendet werden soll. Aspose.Words bietet eine leistungsstarke und flexible API für die Arbeit mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die Darstellung Ihrer Dokumente steuern und an Ihre spezifischen Anforderungen anpassen.
+
+### FAQs
+
+#### F: Wie kann ich beim Konvertieren in PDF in Aspose.Words eine Standardschriftart angeben?
+
+ A: Um beim Konvertieren in PDF in Aspose.Words eine Standardschriftart festzulegen, können Sie die verwenden`PdfOptions` Klasse und legen Sie die fest`DefaultFontName` -Eigenschaft auf den Namen der gewünschten Schriftart.
+
+#### F: Was passiert, wenn die Standardschriftart beim Konvertieren in PDF nicht verfügbar ist?
+
+A: Wenn die angegebene Standardschriftart beim Konvertieren in PDF nicht verfügbar ist, verwendet Aspose.Words eine Ersatzschriftart, um den Text im konvertierten Dokument anzuzeigen. Dies kann dazu führen, dass sich das Erscheinungsbild geringfügig von der Originalschrift unterscheidet.
+
+#### F: Kann ich eine Standardschriftart für andere Ausgabeformate wie DOCX oder HTML angeben?
+
+A: Ja, Sie können eine Standardschriftart für andere Ausgabeformate wie DOCX oder HTML angeben, indem Sie die entsprechenden Konvertierungsoptionen verwenden und die entsprechende Eigenschaft für jedes Format festlegen.
+
+#### F: Wie kann ich die in Aspose.Words angegebene Standardschriftart überprüfen?
+
+ A: Um die in Aspose.Words angegebene Standardschriftart zu überprüfen, können Sie die verwenden`DefaultFontName` Eigentum der`PdfOptions` Klasse und rufen Sie den Namen der konfigurierten Schriftart ab.
+
+#### F: Ist es möglich, für jeden Abschnitt des Dokuments eine andere Standardschriftart festzulegen?
+
+A: Ja, es ist möglich, für jeden Abschnitt des Dokuments eine andere Standardschriftart festzulegen, indem Sie die für jeden Abschnitt spezifischen Formatierungsoptionen verwenden. Dies würde jedoch eine fortgeschrittenere Bearbeitung des Dokuments mithilfe der Aspose.Words-Funktionen erfordern.

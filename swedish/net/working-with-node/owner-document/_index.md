@@ -83,9 +83,28 @@ para.ParagraphFormat.StyleName = "Heading 1";
 // Lägg nu till stycket i huvudtexten i det första avsnittet.
 doc.FirstSection.Body.AppendChild(para);
 
-//Paragrafnoden är nu ett underordnat till Body-noden.
+// Paragrafnoden är nu ett underordnat till Body-noden.
 Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 ```
 
+### FAQ's
 
+#### F: Vad är ett patentskyddat dokument i Node.js?
 
+S: Ett ägardokument i Node.js är det XML-dokument som en specifik nod tillhör. Det representerar instansen av XML-dokumentet som innehåller noden.
+
+#### F: Hur får man tag i ägardokumentet för en nod?
+
+ S: För att få ägardokumentet för en nod i Node.js kan du använda`ownerDocument` nodens egenskap. Den här egenskapen returnerar XML-dokumentet som äger noden.
+
+#### F: Vad används det patentskyddade dokumentet till?
+
+S: Ägardokumentet används för att representera det globala sammanhanget för en nod i ett XML-dokument. Det ger åtkomst till andra noder i dokumentet och tillåter operationer att utföras på dem.
+
+#### F: Kan vi ändra ägardokumentet för en nod?
+
+S: I de flesta fall bestäms dokumentägaren för en nod när noden skapas och kan inte ändras direkt. Ägardokumentet är en skrivskyddad egenskap.
+
+#### F: Hur kommer man åt noderna i ett ägardokument?
+
+S: För att komma åt noder i ett patentskyddat dokument kan du använda metoderna och egenskaperna som tillhandahålls av XML API som används i din Node.js-miljö. Till exempel kan du använda metoder som`getElementsByTagName` eller`querySelector` för att välja specifika noder i dokumentet.

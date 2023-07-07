@@ -103,4 +103,4 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
 ## Çözüm
-Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki tablo hücreleri için tercih edilen genişlik ayarlarının nasıl ayarlanacağını öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, tablo hücre genişliklerinizi Word belgelerinizdeki özel ihtiyaçlarınıza göre özelleştirebilirsiniz.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki tablo hücreleri için tercih edilen genişlik ayarlarının nasıl ayarlanacağını öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, tablo hücre genişliklerinizi Word belgelerinizdeki özel ihtiyaçlarınıza göre özelleştirebilirsiniz.

@@ -50,7 +50,7 @@ En este ejemplo, guardamos el documento convertido como "WorkingWithHtmlFixedSav
 // Ruta de acceso a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Cargue el documento de Word
+// Cargue el documento de Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // Configure las opciones de copia de seguridad con la función "Escribir todas las reglas CSS en un archivo"

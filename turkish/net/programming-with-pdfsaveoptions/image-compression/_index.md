@@ -1,14 +1,14 @@
 ---
-title: Görüntü Sıkıştırma
-linktitle: Görüntü Sıkıştırma
+title: PDF Belgesinde Görüntü Sıkıştırma
+linktitle: PDF Belgesinde Görüntü Sıkıştırma
 second_title: Aspose.Words for .NET API Referansı
-description: Aspose.Words for .NET ile görüntüleri sıkıştırmak için adım adım kılavuz.
+description: Aspose.Words for .NET ile bir PDF Belgesinde görüntüleri sıkıştırmak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/image-compression/
 ---
 
-Bu makale, görüntü sıkıştırma özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgedeki görüntüleri nasıl sıkıştıracağınızı ve uygun görüntü sıkıştırma ile bir PDF oluşturmayı öğrenebileceksiniz.
+Bu makale, Aspose.Words for .NET ile bir PDF Belgesinde Görüntü Sıkıştırma özelliğinin nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgedeki görüntüleri nasıl sıkıştıracağınızı ve uygun görüntü sıkıştırma ile bir PDF oluşturmayı öğrenebileceksiniz.
 
 Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
@@ -100,3 +100,28 @@ Bu kadar ! Aspose.Words for .NET'i kullanarak bir belgedeki görüntüleri başa
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", saveOptionsA2U);
 	
 ```
+
+## Çözüm
+
+Bu eğitimde, Aspose.Words for .NET kullanarak bir PDF belgesindeki görüntülerin nasıl sıkıştırılacağını açıkladık. Açıklanan adımları izleyerek, PDF belgenizdeki görüntülerin boyutunu kolayca küçültebilir ve uygun görüntü sıkıştırmasıyla bir PDF oluşturabilirsiniz. Görüntü kalitesini korurken PDF belgelerinizin boyutunu optimize etmek için Aspose.Words for .NET'in görüntü sıkıştırma özelliklerini kullanın.
+
+### Sıkça Sorulan Sorular
+
+#### S: Bir PDF belgesinde görüntü sıkıştırma nedir?
+Y: Bir PDF belgesindeki görüntüleri sıkıştırmak, PDF dosyasının genel boyutunu azaltmak için PDF belgesinde bulunan görüntülerin boyutunu küçültmek içindir. Bu, gereken depolama alanını azaltır ve PDF'yi yüklerken ve görüntülerken performansı artırır.
+
+#### S: Bir PDF belgesindeki görüntüleri Aspose.Words for .NET ile nasıl sıkıştırabilirim?
+C: Bir PDF belgesindeki görüntüleri Aspose.Words for .NET ile sıkıştırmak için şu adımları izleyin:
+
+ örneğini oluşturun`Document` Word belgesine giden yolu belirten sınıf.
+
+ örneğini oluşturun`PdfSaveOptions` sınıflandırın ve ayarlayın`ImageCompression` mülkiyet`PdfImageCompression.Jpeg` JPEG sıkıştırmasını kullanmak için.
+
+JPEG kalitesi gibi diğer görüntü sıkıştırma seçeneklerini de ihtiyaçlarınıza göre ayarlayabilirsiniz.
+
+ Kullan`Save` yöntemi`Document`kaydetme seçeneklerini belirterek belgeyi PDF biçiminde kaydetmek için sınıf.
+
+#### S: Standart görüntü sıkıştırma ile PDF/A-2u görüntü sıkıştırma arasındaki fark nedir?
+A: Standart görüntü sıkıştırma, form alanlarını korurken bir PDF belgesindeki görüntülerin boyutunu azaltır. Bu, form alanı işlevselliğinden ödün vermeden PDF dosyasının genel boyutunu azaltır.
+
+PDF/A-2u ile Görüntü Sıkıştırma, görüntü sıkıştırma uygularken PDF/A-2u standardına uyan bir PDF dosyası oluşturmanıza olanak sağlayan ek bir seçenektir. PDF/A-2u, arşiv PDF belgeleri için bir ISO standardıdır ve belgelerin uzun süreli korunmasını garanti eder.

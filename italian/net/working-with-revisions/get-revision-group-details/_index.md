@@ -59,3 +59,47 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
+## Conclusione
+
+In questo tutorial, abbiamo imparato come ottenere i dettagli di un gruppo di revisioni in un documento di Word utilizzando Aspose.Words per .NET. Utilizzando un ciclo e le proprietà appropriate, siamo stati in grado di visualizzare dettagli come il tipo di revisione, l'autore, la data e il testo rivisto. Aspose.Words per .NET offre molte potenti funzionalità per la manipolazione di documenti Word, inclusa la gestione delle revisioni. Ora puoi utilizzare questa conoscenza per ottenere i dettagli del gruppo di revisione nei tuoi documenti Word utilizzando Aspose.Words per .NET.
+
+### FAQ
+
+#### D: Come faccio a caricare un documento con le revisioni in Aspose.Words per .NET?
+
+ R: Usa il`Document`class di Aspose.Words per .NET per caricare un documento da un file contenente revisioni. È possibile specificare il percorso completo del documento.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### D: Come ottengo i dettagli di un gruppo di revisione in Aspose.Words per .NET?
+
+ R: Esamina le revisioni del documento utilizzando un ciclo e accedi alle proprietà di ogni revisione per ottenere i dettagli desiderati. Puoi usare il`RevisionType`, `Author`, `DateTime` E`ParentNode` properties per ottenere rispettivamente il tipo di revisione, l'autore, la data e il testo rivisto.
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+      Console.WriteLine("Type: " + revision.RevisionType
+
+);
+      Console.WriteLine("Author: " + revision.Author);
+      Console.WriteLine("Date: " + revision.DateTime);
+      Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
+}
+```
+
+#### D: Come verificare se una revisione appartiene a un gruppo in Aspose.Words per .NET?
+
+ R: Usa il`Group` proprietà del`Revision` oggetto per verificare se una revisione appartiene a un gruppo. Se la`Group` la proprietà è`null`significa che la revisione non appartiene a nessun gruppo.
+
+```csharp
+if (revision.Group != null)
+{
+      // La revisione appartiene a un gruppo
+}
+else
+{
+      // La revisione non appartiene a nessun gruppo
+}
+```

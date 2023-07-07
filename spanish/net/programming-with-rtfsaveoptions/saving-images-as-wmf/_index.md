@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Document.docx");
 RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
 ```
 
-En este paso, configuramos las opciones de copia de seguridad RTF. Creamos un nuevo`RtfSaveOptions` objeto y establecer el`SaveImagesAsWmf` propiedad a`true`. Esto le dice a Aspose.Words que guarde las imágenes del documento como WMF al convertirlas a RTF.
+ En este paso, configuramos las opciones de copia de seguridad RTF. Creamos un nuevo`RtfSaveOptions` objeto y establecer el`SaveImagesAsWmf` propiedad a`true`. Esto le dice a Aspose.Words que guarde las imágenes del documento como WMF al convertirlas a RTF.
 
 ## Paso 4: Guardar el documento
 
@@ -65,3 +65,29 @@ En este tutorial, exploramos la funcionalidad de guardar imágenes como WMF con 
 Esta característica es útil cuando desea mantener la calidad y resolución de las imágenes en sus documentos RTF. Al guardar imágenes en formato WMF, puede asegurarse de que su apariencia y nitidez permanezcan intactas.
 
 Aspose.Words para .NET ofrece muchas características avanzadas para la manipulación y generación de documentos. Guardar imágenes en formato WMF mientras se convierte a formato RTF es una de las muchas herramientas poderosas que le brinda.
+
+### Preguntas frecuentes
+
+#### P: ¿Qué es la función "Guardar imágenes como WMF con opciones de guardado RTF" con Aspose.Words para .NET?
+R: La función "Guardar imágenes como WMF con opciones de guardado RTF" con Aspose.Words para .NET permite guardar imágenes de documentos en formato Windows Metfile (WMF) al convertirlos a RTF. Esto brinda la capacidad de conservar la calidad y la resolución de la imagen en los documentos RTF.
+
+#### P: ¿Cómo puedo usar esta función con Aspose.Words para .NET?
+R: Para usar esta función con Aspose.Words para .NET, puede seguir estos pasos:
+
+Configure su entorno de desarrollo agregando las referencias necesarias e importando los espacios de nombres apropiados.
+
+ Cargue el documento utilizando el`Document` y especificando la ruta del archivo DOCX a cargar.
+
+ Configure las opciones de guardado RTF creando un`RtfSaveOptions` objeto y establecer el`SaveImagesAsWmf` propiedad a`true`. Esto le dice a Aspose.Words que guarde las imágenes del documento como 
+WMF al convertir a RTF.
+
+ Guarde el documento resultante en formato RTF usando el`Save` y especificando la ruta completa al archivo de salida, junto con las opciones de guardado especificadas.
+
+#### P: ¿Es posible elegir un formato de imagen diferente para guardar con las opciones de guardado RTF?
+R: No, esta función específica guarda imágenes en formato WMF al convertirlas a RTF. Esta función no admite directamente otros formatos de imagen. Sin embargo, Aspose.Words ofrece otras funciones para la manipulación y conversión de imágenes, lo que le permite convertir imágenes a otros formatos antes o después de convertirlas a RTF.
+
+#### P: ¿Las opciones de guardado RTF con Aspose.Words para .NET proporcionan otra funcionalidad?
+R: Sí, Aspose.Words para .NET ofrece muchas más funciones con opciones de guardado RTF. Puede personalizar varios aspectos de la conversión RTF, como la administración de fuentes, el diseño, las imágenes, las tablas, los hipervínculos, etc. Estas opciones le brindan un control preciso sobre el resultado final de la conversión RTF.
+
+#### P: ¿Cómo puedo manipular imágenes en un documento con Aspose.Words para .NET?
+R: Aspose.Words para .NET ofrece una gama completa de funciones para manipular imágenes en un documento. Puede extraer, insertar, cambiar el tamaño, recortar, aplicar filtros y efectos, ajustar la calidad, convertir entre diferentes formatos de imagen y mucho más. Consulte la documentación de Aspose.Words para obtener más detalles sobre la manipulación de imágenes.

@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Konfigurieren Sie die Ladeoptionen mit den Schriftarteinstellungen
- Als Nächstes erstellen wir eine Instanz von`LoadOptions` und geben Sie Schriftarteinstellungen an, indem Sie eine neue Instanz von erstellen`FontSettings` und es zuordnen`loadOptions.FontSettings`.
+ Als Nächstes erstellen wir eine Instanz von`LoadOptions`und geben Sie Schriftarteinstellungen an, indem Sie eine neue Instanz von erstellen`FontSettings` und es zuordnen`loadOptions.FontSettings`.
 
 ```csharp
 // Konfigurieren Sie Ladeoptionen mit Schriftarteinstellungen
@@ -52,3 +52,21 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ## Abschluss
 In diesem Tutorial haben wir gesehen, wie man Ladeoptionen mit Schriftarteinstellungen in einem Word-Dokument mit Aspose.Words für .NET verwendet. Mit den Ladeoptionen können Sie das Laden von Dokumenten anpassen, indem Sie zusätzliche Einstellungen festlegen, einschließlich Schriftarteinstellungen. Nutzen Sie diese Funktion gerne, um das Laden von Dokumenten an Ihre spezifischen Bedürfnisse anzupassen.
+
+### FAQs
+
+#### F: Wie kann ich beim Laden eines Dokuments in Aspose.Words eine Standardschriftart angeben?
+
+ A: Um beim Laden eines Dokuments in Aspose.Words eine Standardschriftart festzulegen, können Sie die verwenden`LoadOptions` Klasse und legen Sie die fest`DefaultFontName` -Eigenschaft auf den Namen der gewünschten Schriftart.
+
+#### F: Welche anderen Schriftarteinstellungen kann ich mit den Ladeoptionen in Aspose.Words angeben?
+
+A: Neben der Angabe der Standardschriftart können Sie mithilfe der entsprechenden Eigenschaften auch andere Schriftarteinstellungen festlegen, z. B. die Standardkodierung`LoadOptions` Klasse, wie z`DefaultEncoding`.
+
+#### F: Was passiert, wenn die angegebene Standardschriftart beim Laden des Dokuments nicht verfügbar ist?
+
+A: Wenn die angegebene Standardschriftart beim Laden des Dokuments in Aspose.Words nicht verfügbar ist, wird eine Ersatzschriftart verwendet, um den Text im Dokument anzuzeigen. Dies kann dazu führen, dass sich das Erscheinungsbild geringfügig von der Originalschrift unterscheidet.
+
+#### F: Kann ich für jedes hochgeladene Dokument unterschiedliche Schriftarteinstellungen festlegen?
+
+ A: Ja, Sie können für jedes geladene Dokument unterschiedliche Schriftarteinstellungen festlegen, indem Sie separate Instanzen von verwenden`LoadOptions` Klasse und Festlegen der gewünschten Schriftarteinstellungen für jede Instanz. Auf diese Weise können Sie das Erscheinungsbild der Schriftart für jedes Dokument unabhängig anpassen.

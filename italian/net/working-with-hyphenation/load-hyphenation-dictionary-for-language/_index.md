@@ -55,3 +55,21 @@ doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 ```
 
 Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.
+
+### FAQ
+
+#### D: Come caricare un dizionario di sillabazione per una lingua specifica in Aspose.Words?
+
+ A: Per caricare un dizionario di sillabazione per una lingua specifica in Aspose.Words, puoi usare il`Hyphenation` classe e il`LoadDictionary()` metodo. Crea un'istanza di`Hyphenation` classe e chiama il`LoadDictionary()` metodo che specifica il percorso del file del dizionario di sillabazione per la lingua desiderata. Questo caricherà il dizionario di sillabazione in Aspose.Words.
+
+#### D: Dove posso trovare i file del dizionario di sillabazione per lingue diverse?
+
+A: Puoi trovare i file del dizionario di sillabazione per diverse lingue su varie risorse online. Questi file sono generalmente in formato XML o TEX. Puoi trovare dizionari di sillabazione open source per diverse lingue su siti web dedicati a progetti linguistici o repository di codice sorgente.
+
+#### D: Come posso applicare il dizionario sillabico caricato a un documento in Aspose.Words?
+
+ R: Per applicare il dizionario di sillabicizzazione caricato a un documento in Aspose.Words, è necessario iterare sulle parole nel documento e utilizzare il`Hyphenate()` metodo del`Hyphenation` class per ottenere la sillabazione delle parole. È quindi possibile formattare le parole sillabizzate secondo necessità, ad esempio aggiungendo trattini tra le sillabe.
+
+#### D: Quali lingue sono supportate per la sillabazione in Aspose.Words?
+
+R: Aspose.Words supporta la sillabazione per più lingue tra cui inglese, francese, spagnolo, tedesco, italiano, olandese, russo, portoghese, svedese, norvegese, danese, finlandese, polacco, ceco e molte altre. Controlla la documentazione di Aspose.Words per l'elenco completo delle lingue supportate per la sillabazione.

@@ -11,11 +11,11 @@ url: /zh/net/add-content-using-documentbuilder/insert-hyperlink/
 在这个综合教程中，您将学习如何使用 Aspose.Words for .NET 将超链接插入到 Word 文档中。我们将指导您完成整个过程，并为您提供必要的 C# 代码片段。在本指南结束时，您将能够向文档添加可点击的超链接。
 
 ## 先决条件
-在我们开始之前，请确保您具备以下先决条件：
+在我们开始之前，请确保您满足以下先决条件：
 - Aspose.Words for .NET 库安装在您的系统上。
 
 ## 第 1 步：创建新文档和 DocumentBuilder
-首先，使用 Document 类创建一个新文档并初始化一个 DocumentBuilder 对象：
+首先，使用 Document 类创建一个新文档并初始化 DocumentBuilder 对象：
 
 ```csharp
 Document doc = new Document();
@@ -30,23 +30,23 @@ builder.Write("Please make sure to visit ");
 builder.Font.Color = Color.Blue;
 builder.Font.Underline = Underline.Single;
 
-builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com”，错误）；
 
 builder.Font.ClearFormatting();
 builder.Write(" for more information.");
 ```
 
 ## 第 3 步：保存文档
-插入超链接后，使用 Document 类的 Save 方法将文档保存到文件：
+插入超链接后，使用 Document 类的 Save 方法将文档保存到文件中：
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
 ## 使用 Aspose.Words for .NET 插入超链接的示例源代码
-下面是使用 Aspose.Words for .NET 插入超链接的完整源代码：
+以下是使用 Aspose.Words for .NET 插入超链接的完整源代码：
 
-超链接是增强 Word 文档的交互性和实用性的一种有效方式。它们可用于引用外部资源、提供附加信息或在文档中创建导航元素。
+超链接是增强 Word 文档的交互性和实用性的有效方法。它们可用于引用外部资源、提供附加信息或在文档中创建导航元素。
 
 ```csharp
 Document doc = new Document();
@@ -56,7 +56,7 @@ builder.Write("Please make sure to visit ");
 builder.Font.Color = Color.Blue;
 builder.Font.Underline = Underline.Single;
 
-builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com”，错误）；
 
 builder.Font.ClearFormatting();
 builder.Write(" for more information.");
@@ -64,8 +64,8 @@ builder.Write(" for more information.");
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");
 ```
 
-请记住根据您的具体要求调整代码，包括超链接文本和 URL。根据需要使用其他格式或功能对其进行增强。
+请记住根据您的具体要求调整代码，包括超链接文本和 URL。根据需要通过附加格式或功能来增强它。
 
 ## 结论
-恭喜！您已经成功学习了如何使用 Aspose.Words for .NET 将超链接插入到 Word 文档中。按照分步指南并利用提供的源代码，您现在可以向文档添加可点击的超链接，将读者引导至外部网站或特定 URL。
+恭喜！您已成功学习如何使用 Aspose.Words for .NET 将超链接插入到 Word 文档中。通过遵循分步指南并利用提供的源代码，您现在可以向文档添加可点击的超链接，将读者引导至外部网站或特定 URL。
 

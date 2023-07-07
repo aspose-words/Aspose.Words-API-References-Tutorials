@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Als nächstes laden wir das Dokument mit`Document` Klasse und konfigurieren Sie suffixlose Ersetzungen mithilfe der`DocumentSubstitutionWarnings` Klasse. Wir werden auch eine Schriftartenquelle hinzufügen, indem wir einen Ordner angeben, der die Schriftarten enthält.
 
 ```csharp
-//Laden Sie das Dokument und konfigurieren Sie Ersetzungen ohne Suffixe
+// Laden Sie das Dokument und konfigurieren Sie Ersetzungen ohne Suffixe
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");
 DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
 doc.WarningCallback = substitutionWarningHandler;
@@ -67,3 +67,21 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Abschluss
 In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET die Überschreibungen ohne Suffixe in ein Word-Dokument erhält. Ersetzungen ohne Suffixe sind nützlich, um Probleme mit der Schriftartersetzung zu lösen. Nutzen Sie diese Funktion gerne, um die Anzeige und den Ausdruck Ihrer Dokumente zu verbessern.
+
+### FAQs
+
+#### F: Warum fügt Aspose.Words Suffixe zu Schriftartersetzungen hinzu?
+
+A: Aspose.Words fügt Schriftartersetzungen Suffixe hinzu, um Konflikte zwischen Originalschriftarten und ersetzten Schriftarten zu vermeiden. Dies trägt dazu bei, maximale Kompatibilität beim Konvertieren und Bearbeiten von Dokumenten sicherzustellen.
+
+#### F: Wie kann ich Schriftartersetzungen ohne Suffixe in Aspose.Words abrufen?
+
+ A: Um Schriftartersetzungen ohne Suffixe in Aspose.Words abzurufen, können Sie die verwenden`FontSubstitutionSettings` Klasse und die`RemoveSuffixes` Eigentum. Diese Eigenschaft festlegen auf`true` erhält die Schriftartersetzungen ohne die hinzugefügten Suffixe.
+
+#### F: Ist es möglich, das Hinzufügen von Suffixen zu Schriftartersetzungen in Aspose.Words zu deaktivieren?
+
+A: Nein, es ist nicht möglich, das Hinzufügen von Suffixen zu Schriftartersetzungen in Aspose.Words zu deaktivieren. Suffixe werden standardmäßig hinzugefügt, um die Kompatibilität und Konsistenz des Dokuments sicherzustellen.
+
+#### F: Wie kann ich unerwünschte Suffixe bei Schriftartersetzungen in Aspose.Words herausfiltern?
+
+ A: Um unerwünschte Suffixe bei Schriftartersetzungen in Aspose.Words herauszufiltern, können Sie Zeichenfolgenverarbeitungstechniken verwenden, z. B. die`Replace` oder`Substring` Methoden zum Entfernen bestimmter Suffixe, die Sie nicht einschließen möchten.

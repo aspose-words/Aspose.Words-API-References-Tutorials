@@ -73,3 +73,24 @@ builder.Writeln("Item 2b");
 
 Herzlichen Glückwunsch! Sie haben nun gelernt, wie Sie mit Aspose.Words für .NET eine Aufzählungsliste erstellen.
 
+### FAQs
+
+#### F: Wie erstelle ich eine Liste mit Aufzählungszeichen in Markdown?
+
+A: Um in Markdown eine Liste mit Aufzählungszeichen zu erstellen, beginnen Sie jedes Listenelement mit einem Aufzählungszeichen (`-`, `*` , oder`+`), gefolgt von einem Leerzeichen.
+
+#### F: Können Sie Aufzählungslisten in Markdown verschachteln?
+
+A: Ja, es ist möglich, Aufzählungslisten in Markdown zu verschachteln, indem vor jedem verschachtelten Listenelement vier versetzte Leerzeichen hinzugefügt werden.
+
+#### F: Wie kann ich Aufzählungssymbole anpassen?
+
+A: Im Standard-Markdown sind Aufzählungszeichen vordefiniert. Bei einigen Markdown-Editoren können Sie sie jedoch mithilfe bestimmter Erweiterungen anpassen.
+
+#### F: Unterstützen Aufzählungslisten in Markdown die Einrückung?
+
+A: Ja, Aufzählungslisten in Markdown unterstützen die Einrückung. Sie können eine Linksverschiebung mithilfe von Leerzeichen oder Tabulatoren hinzufügen.
+
+#### F: Können Links oder Inline-Text zu Listenelementen hinzugefügt werden?
+
+A: Ja, Sie können mithilfe der entsprechenden Markdown-Syntax Links oder Inline-Text zu Listenelementen hinzufügen.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/remove-content/remove-page-breaks/
 ---
-den här handledningen kommer vi att utforska hur man tar bort sidbrytningar från ett dokument med hjälp av Aspose.Words for .NET-biblioteket. Sidbrytningar kan ibland störa formateringen och layouten av ett dokument, och det kan vara nödvändigt att ta bort dem programmatiskt. Vi kommer att tillhandahålla en steg-för-steg-guide som hjälper dig att förstå processen och implementera den i dina egna C#-projekt.
+I den här handledningen kommer vi att utforska hur man tar bort sidbrytningar från ett dokument med hjälp av Aspose.Words for .NET-biblioteket. Sidbrytningar kan ibland störa formateringen och layouten av ett dokument, och det kan vara nödvändigt att ta bort dem programmatiskt. Vi kommer att tillhandahålla en steg-för-steg-guide som hjälper dig att förstå processen och implementera den i dina egna C#-projekt.
 
 ## Krav
 
@@ -86,7 +86,7 @@ foreach (Paragraph para in paragraphs)
 	if (para.ParagraphFormat.PageBreakBefore)
 		para.ParagraphFormat.PageBreakBefore = false;
 
-	//Kontrollera alla körningar i stycket för sidbrytningar och ta bort dem.
+	// Kontrollera alla körningar i stycket för sidbrytningar och ta bort dem.
 	foreach (Run run in para.Runs)
 	{
 		if (run.Text.Contains(ControlChar.PageBreak))
@@ -100,4 +100,4 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Slutsats
 
-I den här handledningen har vi lärt oss hur man tar bort sidbrytningar från ett dokument med Aspose.Words för .NET-biblioteket. Genom att följa steg-för-steg-guiden bör du nu kunna implementera denna funktionalitet i dina egna C#-projekt. Att ta bort sidbrytningar kan hjälpa dig att behålla en konsekvent layout och formatering i dina dokument.
+den här handledningen har vi lärt oss hur man tar bort sidbrytningar från ett dokument med Aspose.Words för .NET-biblioteket. Genom att följa steg-för-steg-guiden bör du nu kunna implementera denna funktionalitet i dina egna C#-projekt. Att ta bort sidbrytningar kan hjälpa dig att behålla en konsekvent layout och formatering i dina dokument.

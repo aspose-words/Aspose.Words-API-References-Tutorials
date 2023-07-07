@@ -50,7 +50,7 @@ In questo esempio, utilizziamo il metodo WriteLine della classe Console per visu
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento di Word
+// Carica il documento di Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // Estrarre il testo dal documento

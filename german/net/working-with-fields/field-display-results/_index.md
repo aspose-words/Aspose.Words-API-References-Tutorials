@@ -40,7 +40,7 @@ Dieser Schritt ist wichtig, da er sicherstellt, dass Feldergebnisse korrekt ange
 
 ## Schritt 4: Feldergebnisse anzeigen
 
- Wir benutzen ein`foreach` Schleife, um alle Felder im Dokument zu durchlaufen und ihre Ergebnisse anzuzeigen.
+ Wir benutzen ein`foreach`Schleife, um alle Felder im Dokument zu durchlaufen und ihre Ergebnisse anzuzeigen.
 
 ```csharp
 foreach(Field field in document.Range.Fields)
@@ -69,3 +69,21 @@ foreach(Field field in document.Range.Fields)
 In diesem Beispiel haben wir ein Dokument hochgeladen, alle Felder aktualisiert und sind dann durch die Felder gegangen, um ihre Ergebnisse anzuzeigen. Sie können diesen Schritt mithilfe Ihrer eigenen Logik anpassen, um Feldergebnisse zu verarbeiten.
 
 Damit ist unser Leitfaden zur Verwendung der Funktion „Feldergebnisse anzeigen“ mit Aspose.Words für .NET abgeschlossen.
+
+### FAQs
+
+#### F: Was ist ein Ergebnisanzeigefeld in Aspose.Words?
+
+A: Ein Ergebnisanzeigefeld in Aspose.Words ist ein Feldtyp, der das Ergebnis einer Operation oder Berechnung in einem Word-Dokument anzeigt. Über ein Ergebnisanzeigefeld kann beispielsweise die Summe mehrerer Werte oder das Ergebnis einer mathematischen Formel angezeigt werden.
+
+#### F: Wie aktualisiere ich ein Ergebnisanzeigefeld in einem Word-Dokument mit Aspose.Words?
+
+A: Um ein Ergebnisanzeigefeld in einem Word-Dokument mit Aspose.Words zu aktualisieren, können Sie die UpdateFields-Methode verwenden. Diese Methode durchläuft das Dokument und aktualisiert alle Felder, einschließlich der Ergebnisanzeigefelder, wobei die Werte basierend auf den aktuellen Daten neu berechnet werden.
+
+#### F: Kann ich das von einem Ergebnisanzeigefeld angezeigte Ergebnis formatieren?
+
+A: Ja, Sie können das von einem Ergebnisanzeigefeld angezeigte Ergebnis formatieren, indem Sie die entsprechende Syntax zur Angabe des Formats verwenden. Beispielsweise können Sie Zahlen mit einer bestimmten Anzahl an Dezimalstellen formatieren oder benutzerdefinierte Datumsformate verwenden.
+
+#### F: Wie kann ich mit Aspose.Words ein Ergebnisanzeigefeld aus einem Word-Dokument entfernen?
+
+A: Um ein Ergebnisanzeigefeld aus einem Word-Dokument mit Aspose.Words zu entfernen, können Sie die Remove-Methode verwenden. Diese Methode entfernt das Feld und ersetzt es durch sein statisches Ergebnis.

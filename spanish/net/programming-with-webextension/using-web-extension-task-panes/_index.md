@@ -14,7 +14,7 @@ Antes de comenzar, asegúrese de haber instalado y configurado la biblioteca Asp
 
 ## Paso 1: Definir el directorio de documentos
 
- Para comenzar, debe definir la ruta al directorio donde desea guardar el documento generado. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
+Para comenzar, debe definir la ruta al directorio donde desea guardar el documento generado. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

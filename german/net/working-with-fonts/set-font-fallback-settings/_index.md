@@ -15,14 +15,14 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel ver
 - Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
 ## Schritt 1: Definieren Sie das Dokumentenverzeichnis
-Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
+ Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Laden Sie die Einstellungen für die Schriftartersetzung
- Erstellen Sie eine Instanz von`FontSettings` Klasse und nutzen Sie die`Load`Methode zum Laden von Einstellungen zum Überschreiben von Schriftarten aus einer XML-Datei. Die angegebene XML-Datei muss die zu verwendenden Schriftartersetzungsregeln enthalten.
+ Erstellen Sie eine Instanz von`FontSettings` Klasse und nutzen Sie die`Load` Methode zum Laden von Einstellungen zum Überschreiben von Schriftarten aus einer XML-Datei. Die angegebene XML-Datei muss die zu verwendenden Schriftartersetzungsregeln enthalten.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -57,3 +57,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 ## Abschluss
 In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET Schriftartersetzungseinstellungen in einem Word-Dokument festlegen. Experimentieren Sie mit verschiedenen Schriftartersetzungsregeln, um sicherzustellen, dass Ihr Dokument konsistent aussieht, auch wenn die angegebenen Schriftarten nicht verfügbar sind.
+
+### FAQs
+
+#### F: Wie kann ich mit Aspose.Words Einstellungen für die Schriftartersetzung in einem Word-Dokument festlegen?
+
+A: Um Einstellungen für die Schriftartersetzung in einem Word-Dokument mit Aspose.Words festzulegen, können Sie mithilfe der API Ersatzschriftarten angeben, die verwendet werden sollen, wenn erforderliche Schriftarten nicht verfügbar sind. Dies gewährleistet eine konsistente Textvisualisierung, auch ohne die Originalschriftarten.
+
+#### F: Ist es möglich, beim Überschreiben in einem Word-Dokument mit Aspose.Words Ersatzschriftarten zu verarbeiten?
+
+A: Ja, mit Aspose.Words können Sie beim Ersetzen in einem Word-Dokument Ersatzschriftarten verwalten. Mit der API können Sie fehlende Schriftarten erkennen und geeignete Ersatzschriftarten angeben, um ein konsistentes Texterscheinungsbild auch dann beizubehalten, wenn Schriftarten ersetzt werden.
+
+#### F: Warum ist es wichtig, die Schriftartersetzungseinstellungen in einem Word-Dokument korrekt zu konfigurieren?
+
+A: Es ist wichtig, die Schriftartersetzungseinstellungen in einem Word-Dokument korrekt zu konfigurieren, um die visuelle Integrität des Textes zu wahren. Durch die Einstellung der entsprechenden Fallback-Schriftarten mit Aspose.Words stellen Sie sicher, dass der Text konsistent angezeigt wird, auch wenn die erforderlichen Schriftarten nicht verfügbar sind.
+
+#### F: Wie kann ich fehlende Schriftarten erkennen, wenn ich sie in einem Word-Dokument mit Aspose.Words ersetze?
+
+A: Mit Aspose.Words können Sie mithilfe der API fehlende Schriftarten während der Ersetzung in einem Word-Dokument erkennen. Sie können die von Aspose.Words bereitgestellten Methoden verwenden, um die Verfügbarkeit erforderlicher Schriftarten zu überprüfen und bei fehlenden Schriftarten entsprechende Maßnahmen zu ergreifen.
+
+#### F: Beeinflusst die Schriftartersetzung das Layout meines Word-Dokuments?
+
+A: Das Ersetzen von Schriftarten kann sich auf das Layout Ihres Word-Dokuments auswirken, wenn die Ersatzschriftarten andere Abmessungen als die Originalschriftarten haben. Allerdings können Sie die Auswirkungen auf das Layout minimieren, indem Sie Fallback-Schriftarten mit Bedacht auswählen und die Einstellungen für die Schriftartersetzung mit Aspose.Words konfigurieren.

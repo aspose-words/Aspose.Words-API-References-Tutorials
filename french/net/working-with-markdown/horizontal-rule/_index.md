@@ -39,3 +39,20 @@ builder.InsertHorizontalRule();
 Félicitation ! Vous avez maintenant appris à utiliser la fonction de règle horizontale avec Aspose.Words pour .NET.
 
 
+### FAQ
+
+#### Q : Comment créer une règle horizontale dans Markdown ?
+
+R : Pour créer une règle horizontale dans Markdown, vous pouvez utiliser l'un des symboles suivants sur une ligne vide : trois astérisques (\***), trois tirets (\---), ou trois traits de soulignement (\___).
+
+#### Q : Puis-je personnaliser l'apparence d'une règle horizontale dans Markdown ?
+
+R : Dans Markdown standard, il n'y a aucun moyen de personnaliser l'apparence des règles horizontales. Cependant, certains éditeurs et extensions Markdown avancés offrent des fonctionnalités de personnalisation supplémentaires.
+
+#### Q : Les règles horizontales sont-elles prises en charge par tous les éditeurs Markdown ?
+
+R : Oui, les éditeurs Markdown les plus populaires prennent en charge les règles horizontales. Cependant, il est toujours préférable de vérifier la documentation de votre fournisseur spécifique pour vous assurer qu'il est pris en charge.
+
+#### Q : Quels autres éléments puis-je créer dans Markdown ?
+
+R : En plus des règles horizontales, vous pouvez créer des titres, des paragraphes, des listes, des liens, des images, des tableaux, etc. dans Markdown.

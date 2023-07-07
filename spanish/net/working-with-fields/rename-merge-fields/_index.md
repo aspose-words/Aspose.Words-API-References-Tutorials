@@ -20,7 +20,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## Paso 2: crear el documento e insertar los campos de combinación
 
- Comenzamos creando un nuevo documento y usando un`DocumentBuilder` para insertar los campos de combinación.
+Comenzamos creando un nuevo documento y usando un`DocumentBuilder` para insertar los campos de combinación.
 
 ```csharp
 Document doc = new Document();
@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
 Siga estos pasos para cambiar el nombre de los campos de combinación en su documento usando Aspose.Words para .NET.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo cambiar el nombre de los campos combinados en un documento de Word usando Aspose.Words para .NET?
+
+ R: Para cambiar el nombre de los campos combinados en un documento de Word usando Aspose.Words para .NET, puede recorrer los campos en el documento usando el`FieldMergingArgs` clase y usa el`FieldMergingArgs.FieldName` método para cambiar el nombre del campo.
+
+#### P: ¿Es posible cambiar el nombre solo de ciertos campos combinados en un documento de Word con Aspose.Words para .NET?
+
+R: Sí, es posible cambiar el nombre solo de ciertos campos combinados en un documento de Word con Aspose.Words para .NET. Puede filtrar qué campos cambiar de nombre utilizando criterios específicos, como el nombre del campo u otras propiedades relevantes. Luego puede cambiar el nombre de los campos correspondientes usando el`FieldMergingArgs.FieldName` método.
+
+#### P: ¿Cómo puedo verificar si un campo combinado se renombró correctamente en un documento de Word con Aspose.Words para .NET?
+
+ R: Para verificar si un campo combinado se renombró con éxito en un documento de Word con Aspose.Words para .NET, puede usar el`FieldMergedArgs` clase y acceder a la`FieldMergedArgs.IsMerged` propiedad para determinar si el campo fue renombrado con hit.
+
+#### P: ¿Cuáles son las consecuencias de cambiar el nombre de un campo combinado en un documento de Word con Aspose.Words para .NET?
+
+R: Cuando cambia el nombre de un campo combinado en un documento de Word con Aspose.Words para .NET, cambia el nombre del campo en el documento, lo que puede afectar otras funciones o procesos que dependen del nombre del campo. Asegúrese de considerar estas posibles consecuencias antes de cambiar el nombre de los campos fusionados.
+
+#### P: ¿Es posible restaurar el nombre original de un campo combinado después de cambiarle el nombre con Aspose.Words para .NET?
+
+R: Sí, es posible restaurar el nombre original de un campo combinado después de cambiarle el nombre con Aspose.Words para .NET. Puede almacenar el nombre original del campo en una variable o lista y luego usar esa información para restaurar el nombre original si es necesario.

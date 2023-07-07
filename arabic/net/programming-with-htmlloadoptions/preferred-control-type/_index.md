@@ -27,7 +27,7 @@ const string html=@"
 ";
 ```
 
-## الخطوة 2: تعيين خيارات تحميل HTML
+## الخطوة الثانية: تعيين خيارات تحميل HTML
 
  بعد ذلك ، نقوم بإنشاء ملف`HtmlLoadOptions` كائن وتعيين`PreferredControlType` الملكية ل`HtmlControlType.StructuredDocumentTag`. هذا يخبر Aspose.Words باستخدام StructuredDocumentTags لتمثيل HTML عند التحميل.
 
@@ -44,7 +44,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), load
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### مثال على شفرة المصدر لنوع التحكم المفضل مع Aspose.Words for .NET
+### مثال على كود المصدر لنوع التحكم المفضل مع Aspose.Words for .NET
 
 ```csharp
 	

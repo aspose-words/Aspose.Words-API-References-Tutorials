@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 
  En este tutorial, exploramos la característica de estilos de copia con Aspose.Words para .NET. Al usar el`CopyStylesFromTemplate` método, pudimos copiar estilos de un documento de origen a un documento de destino, lo que facilita mantener la coherencia de los estilos en varios documentos.
 
-La copia de estilos es particularmente útil cuando desea aplicar estilos preconfigurados a varios documentos, lo que garantiza una apariencia y un formato uniformes. Esto le ahorra tiempo y esfuerzo al no tener que volver a crear los mismos estilos para cada documento.
+La copia de estilos es particularmente útil cuando desea aplicar estilos preconfigurados a varios documentos, lo que garantiza una apariencia y un formato coherentes. Esto le ahorra tiempo y esfuerzo al no tener que volver a crear los mismos estilos para cada documento.
 
 Aspose.Words para .NET proporciona una potente API para manipular estilos en sus documentos. Puede usar esta función para personalizar estilos, aplicar temas o simplemente transferir estilos entre diferentes documentos.
 

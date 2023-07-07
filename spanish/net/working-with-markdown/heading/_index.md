@@ -54,4 +54,24 @@ builder.Writeln("This is an H1 tag");
 
 ¡Felicidades! Ahora ha aprendido a usar la función de encabezados con Aspose.Words para .NET.
 
+### Preguntas frecuentes
 
+#### P: ¿Qué es un encabezado Markdown?
+
+R: Un encabezado Markdown es un elemento que se utiliza para crear encabezados y subtítulos en un documento. Utiliza la sintaxis de los símbolos de almohadilla (#) seguidos de un espacio y un texto de título.
+
+#### P: ¿Cómo uso los diferentes niveles de encabezados Markdown?
+
+R: Para usar los diferentes niveles de encabezados de Markdown, puede agregar una cantidad variable de símbolos de almohadilla (#) antes del texto del encabezado.
+
+#### P: ¿Existe alguna limitación en el uso de encabezados Markdown?
+
+R: No existen limitaciones estrictas, pero se recomienda mantener una estructura de informes clara y concisa.
+
+#### P: ¿Puedo personalizar la apariencia de los encabezados de Markdown?
+
+R: En Markdown estándar, no es posible personalizar la apariencia de los encabezados de Markdown, pero algunas extensiones y editores de Markdown avanzados ofrecen funciones adicionales.
+
+#### P: ¿Los encabezados de Markdown son compatibles con todos los editores de Markdown?
+
+R: Sí, los editores de Markdown más populares admiten encabezados de Markdown, pero consulte la documentación específica de su editor para estar seguro.

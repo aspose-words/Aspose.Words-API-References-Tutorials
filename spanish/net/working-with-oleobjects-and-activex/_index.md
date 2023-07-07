@@ -15,8 +15,8 @@ Estos tutoriales le brindan un enfoque práctico paso a paso para trabajar con o
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Insertar objeto viejo](./insert-ole-object/) | Aprenda a insertar un objeto OLE en un documento usando Aspose.Words para .NET. |
-| [Insertar objeto Ole con paquete Ole](./insert-ole-object-with-ole-package/) | Aprenda a insertar un objeto OLE con un paquete OLE en un documento usando Aspose.Words para .NET. |
-| [Insertar objeto antiguo como icono](./insert-ole-object-as-icon/) | Aprenda a insertar un objeto OLE como un icono con Aspose.Words para .NET. |
+| [Insertar objeto antiguo en documento de Word](./insert-ole-object/) | Aprenda a insertar un objeto OLE en un documento de Word usando Aspose.Words para .NET. |
+| [Insertar objeto Ole en Word con paquete Ole](./insert-ole-object-with-ole-package/) | Aprenda a insertar un objeto OLE en Word con un paquete OLE en un documento usando Aspose.Words para .NET. |
+| [Insertar objeto antiguo en documento de Word como icono](./insert-ole-object-as-icon/) | Aprenda a insertar un objeto OLE en un documento de Word como icono con Aspose.Words para .NET. |
 | [Insertar objeto ole como icono usando Stream](./insert-ole-object-as-icon-using-stream/) | Aprenda a insertar un objeto OLE como un icono usando una secuencia con Aspose.Words para .NET. |
-| [Leer propiedades de Active XControl](./read-active-xcontrol-properties/) | Lea las propiedades de los controles ActiveX en un documento de Word con Aspose.Words para .NET. |
+| [Lea las propiedades de Active XControl desde un archivo de Word](./read-active-xcontrol-properties/) | Lea las propiedades de los controles ActiveX en un archivo de Word con Aspose.Words para .NET. |

@@ -31,6 +31,6 @@ Con estos tutoriales, podrá mejorar sus documentos de Word agregando gráficos 
 | [Ocultar eje de gráfico](./hide-chart-axis/) | Aprenda a ocultar el eje del gráfico en un documento con Aspose.Words para .NET. Oculte el eje para una visualización del gráfico más limpia y enfocada. |
 | [Marque la alineación de etiquetas de varias líneas](./tick-multi-line-label-alignment/) | Aprenda a alinear etiquetas de varias líneas en un eje de gráfico con Aspose.Words para .NET. |
 | [Etiqueta de datos del gráfico](./chart-data-label/) | Aprenda a agregar y personalizar etiquetas de datos en un gráfico usando Aspose.Words para .NET para proporcionar información adicional sobre puntos de datos. |
-| [Opciones predeterminadas para etiquetas de datos](./default-options-for-data-labels/) | Aprenda a configurar las opciones predeterminadas para las etiquetas de datos en un gráfico usando Aspose.Words para .NET. |
+| [Opciones predeterminadas para etiquetas de datos](./default-options-for-data-labels/) | Aprenda a configurar las opciones predeterminadas para las etiquetas de datos en un gráfico con Aspose.Words para .NET. |
 | [Punto de datos de gráfico único](./single-chart-data-point/) | Aprenda a personalizar un solo punto de datos en un gráfico usando Aspose.Words para .NET. |
 | [Serie de un solo gráfico](./single-chart-series/) | Aprenda a personalizar series de gráficos individuales en un gráfico con Aspose.Words para .NET. |

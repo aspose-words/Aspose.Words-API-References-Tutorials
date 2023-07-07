@@ -45,4 +45,43 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 }
 ```
 
+## Çözüm
 
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki revizyon gruplarını nasıl alacağımızı öğrendik. Yazar ve inceleme türü gibi ayrıntıları görüntüleyerek belgeyi yükleme ve inceleme gruplarına göz atma adımlarını izledik. Artık bu bilgiyi Aspose.Words for .NET kullanarak kendi Word belgenizin revizyonlarını analiz etmek için uygulayabilirsiniz.
+
+### SSS
+
+#### S: Aspose.Words for .NET'te bir belge nasıl yüklenir?
+
+ C: Şunu kullanın:`Document` bir dosyadan belge yüklemek için Aspose.Words for .NET sınıfı. Tam belge yolunu belirleyebilirsiniz.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### S: Aspose.Words for .NET'te bir belgedeki revizyon gruplarına nasıl göz atılır?
+
+ C: Şunu kullanın:`Groups` belgenin özelliği`Revisions` revizyon gruplarının koleksiyonunu almak için nesne. Daha sonra, her inceleme grubu arasında geçiş yapmak için bir döngü kullanabilirsiniz.
+
+```csharp
+foreach(RevisionGroup group in doc.Revisions.Groups)
+{
+     // Her inceleme grubunu burada işleyin
+}
+```
+
+#### S: Aspose.Words for .NET'te bir inceleme grubunun yazarını nasıl edinebilirim?
+
+ C: Şunu kullanın:`Author` mülkiyeti`RevisionGroup` revizyon grubunun yazarını almak için nesne.
+
+```csharp
+string author = group.Author;
+```
+
+#### S: Aspose.Words for .NET'te bir revizyon grubunun revizyon türü nasıl elde edilir?
+
+ C: Şunu kullanın:`RevisionType` mülkiyeti`RevisionGroup`grubun revizyon türünü almak için nesne.
+
+```csharp
+string revisionType = group.RevisionType;
+```

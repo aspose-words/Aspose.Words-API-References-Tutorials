@@ -61,7 +61,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Inserte el campo de tiempo.
 builder. InsertField(FieldType.FieldTime, true);
 
-// Configure la referencia cultural de actualización de campo.
+//Configure la referencia cultural de actualización de campo.
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 
@@ -72,3 +72,29 @@ doc.Save(dataDir + "UpdateCultureChamps.pdf");
 En este ejemplo, creamos un nuevo documento, insertamos un campo de tiempo y configuramos la referencia cultural de actualización de campo. Luego guardamos el documento con un nombre de archivo específico.
 
 Esto concluye nuestra guía sobre el uso de la función "Actualizar cultura de campo" con Aspose.Words para .NET.
+
+### Preguntas frecuentes
+
+#### P: ¿Cuál es la cultura de actualización de campo en Aspose.Words?
+
+R: La cultura de actualización de campo en Aspose.Words se refiere a la cultura utilizada para formatear y actualizar valores de campo en un documento de Word. La referencia cultural determina cómo se presentan los números, las fechas y otros datos en los campos cuando se actualizan.
+
+#### P: ¿Cómo configurar la cultura de actualización para campos en un documento de Word con Aspose.Words?
+
+R: Para configurar la cultura de actualización para los campos en un documento de Word con Aspose.Words, puede seguir estos pasos:
+
+1. Importe la clase Document del espacio de nombres Aspose.Words.
+2. Cree una instancia de Documento cargando su documento existente.
+3. Use la propiedad Document.UpdateFieldsCultureInfo para establecer la cultura de actualización para los campos.
+
+#### P: ¿Cuáles son las culturas admitidas para actualizar campos en Aspose.Words?
+
+R: Aspose.Words admite diferentes culturas para actualizar campos. Puede especificar cualquier referencia cultural admitida por el sistema operativo. Por ejemplo, "en-US" para inglés americano, "fr-FR" para francés, "de-DE" para alemán, etc.
+
+#### P: ¿Es posible establecer una referencia cultural específica para un campo individual en lugar de para todo el documento?
+
+R: Sí, es posible establecer una referencia cultural específica para un campo individual en lugar de para todo el documento. En Aspose.Words, cada campo tiene una propiedad Formato que se puede usar para establecer la cultura de formato específica para ese campo. Esto le permite controlar cómo se muestra y actualiza este campo independientemente de otros campos en el documento.
+
+#### P: ¿Cómo puedo verificar la referencia cultural de actualización de campo definida actualmente en un documento de Word?
+
+R: Para verificar la referencia cultural de actualización de campo definida actualmente en un documento de Word, puede usar la propiedad Document.UpdateFieldsCultureInfo. Esta propiedad devuelve el objeto CultureInfo que representa la referencia cultural utilizada actualmente para establecer actualizaciones de campo.

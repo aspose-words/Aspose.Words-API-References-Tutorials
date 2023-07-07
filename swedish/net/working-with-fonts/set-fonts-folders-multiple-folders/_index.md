@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-fonts/set-fonts-folders-multiple-folders/
 ---
 
-den här handledningen går vi igenom steg-för-steg-processen för att ställa in flera teckensnittsmappar när du renderar ett dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och förse dig med en omfattande guide som hjälper dig att förstå och implementera den här funktionen i dina egna projekt. I slutet av denna handledning kommer du att veta hur du anger flera teckensnittsmappar som ska användas när du renderar dina dokument med Aspose.Words för .NET.
+I den här handledningen går vi igenom steg-för-steg-processen för att ställa in flera teckensnittsmappar när du renderar ett dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och förse dig med en omfattande guide som hjälper dig att förstå och implementera den här funktionen i dina egna projekt. I slutet av denna handledning kommer du att veta hur du anger flera teckensnittsmappar som ska användas när du renderar dina dokument med Aspose.Words för .NET.
 
 ## Steg 1: Definiera dokumentkatalogen
 Först måste du ställa in sökvägen till din dokumentkatalog. Det här är platsen där du vill spara ditt redigerade renderade dokument. Ersätt "DIN DOKUMENTKATOLOG" med lämplig sökväg.
@@ -63,4 +63,26 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ```
 
 ## Slutsats
-I den här handledningen lärde vi oss hur du ställer in flera teckensnittsmappar när du renderar ett dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide kan du enkelt ange flera teckensnittsmappar som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för att arbeta med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa teckensnittskällorna som används när du renderar dina dokument efter dina specifika behov.
+den här handledningen lärde vi oss hur du ställer in flera teckensnittsmappar när du renderar ett dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide kan du enkelt ange flera teckensnittsmappar som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för att arbeta med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa teckensnittskällorna som används när du renderar dina dokument efter dina specifika behov.
+
+### FAQ's
+
+#### F: Hur kan jag ställa in flera teckensnittsmappar i Aspose.Words?
+
+ S: För att ställa in flera teckensnittsmappar i Aspose.Words kan du använda`SetFontsFolders` metod för`Fonts` klass som tillhandahåller en lista över anpassade teckensnittsmappplatser.
+
+#### F: Påverkar inställning av flera teckensnittsmappar alla dokument som bearbetas med Aspose.Words?
+
+S: Ja, inställning av flera teckensnittsmappar påverkar alla dokument som bearbetas med Aspose.Words. När du har definierat typsnittsmapparna kommer Aspose.Words att använda dessa platser för att söka efter typsnitt i alla dokument.
+
+#### F: Hur många teckensnittsmappar kan jag definiera i Aspose.Words?
+
+S: Du kan definiera så många teckensnittsmappar som behövs i Aspose.Words. Det finns ingen specifik gräns för antalet teckensnittsmappar du kan definiera.
+
+#### F: Hur kan jag kontrollera teckensnittsmapparna som definieras i Aspose.Words?
+
+ S: För att kontrollera teckensnittsmapparna som definieras i Aspose.Words, kan du använda`GetFolders` metod för`Fonts` klass för att få plats för de konfigurerade teckensnittsmapparna.
+
+#### F: Måste typsnittsmappar innehålla specifika typsnitt?
+
+S: Ja, teckensnittsmappar bör innehålla de teckensnitt du vill använda i dina Word-dokument. Aspose.Words kommer att leta efter typsnitt i de angivna mapparna vid bearbetning av dokument.

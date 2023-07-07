@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
 
-Bu makalede, Aspose.Words for .NET kitaplığındaki Revizyonların İçinde Metni Yoksay işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, belgeleri işlerken ekleme revizyonlarının içindeki metni yok saymak istediğimizde kullanışlıdır.
+Bu makalede, Aspose.Words for .NET kitaplığındaki Revizyonların İçindeki Metni Yoksay işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, belgeleri işlerken ekleme revizyonlarının içindeki metni yok saymak istediğimizde kullanışlıdır.
 
 ## Önkoşullar
 
@@ -119,4 +119,4 @@ Aspose.Words for .NET ile Revizyonlar İçerisindeki Metni Yoksay işlevinin kul
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'te Revizyonların İçinde Metni Yoksay işlevinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belge oluşturmak, revizyonları ve düzeltilmemiş metni izleyerek metin eklemek, Revizyonların İçindeki Metni Yoksay işlevini kullanmak, düzenli ifadelerle arama ve değiştirme işlemlerini gerçekleştirmek ve değiştirilen belgeyi görüntülemek için adım adım bir kılavuz izledik.
+Bu makalede, Aspose.Words for .NET'te Revizyonların İçinde Metni Yoksay işlevinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belge oluşturmak, revizyonları ve düzeltilmemiş metni izleyerek metin eklemek, Revizyonların İçindeki Metni Yoksay işlevini kullanmak, normal ifadelerle arama ve değiştirme işlemlerini gerçekleştirmek ve değiştirilen belgeyi görüntülemek için adım adım bir kılavuz izledik.

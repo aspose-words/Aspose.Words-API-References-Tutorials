@@ -50,7 +50,7 @@ Bu örnekte değiştirilen belgeyi "WorkingWithRangesDeleteText.ModifiedDocument
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Word belgesini yükleyin
+// Word belgesini yükleyin
 Document doc = new Document(dataDir + "Document.docx");
 
 // Belgenin ilk bölümündeki metni silin

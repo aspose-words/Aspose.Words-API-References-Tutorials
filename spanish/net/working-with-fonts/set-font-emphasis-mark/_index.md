@@ -16,14 +16,14 @@ Antes de comenzar, asegúrese de tener los siguientes elementos:
 - La biblioteca Aspose.Words para .NET instalada en su proyecto
 
 ## Paso 1: Definir el directorio de documentos
-Comience configurando la ruta del directorio a la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta adecuada.
+ Comience configurando la ruta del directorio a la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta adecuada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Paso 2: Crea y personaliza el documento
- Crear una instancia de la`Document` clase y un asociado`DocumentBuilder` para construir el contenido del documento. Utilizar el`Font.EmphasisMark`propiedad para establecer el estilo de énfasis de fuente en`EmphasisMark.UnderSolidCircle` . Luego usa el`Write` y`Writeln` métodos de la`DocumentBuilder` para agregar texto con el énfasis de fuente especificado.
+ Crear una instancia de la`Document` clase y un asociado`DocumentBuilder` para construir el contenido del documento. Utilizar el`Font.EmphasisMark` propiedad para establecer el estilo de énfasis de fuente en`EmphasisMark.UnderSolidCircle` . Luego usa el`Write` y`Writeln` métodos de la`DocumentBuilder` para agregar texto con el énfasis de fuente especificado.
 
 ```csharp
 Document document = new Document();
@@ -60,3 +60,25 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 
 ## Conclusión
 En este tutorial, aprendió cómo configurar el estilo de énfasis de fuente en un documento de Word usando Aspose.Words para .NET. Experimente con diferentes estilos de énfasis y use esta función para resaltar palabras o frases en sus documentos.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo agregar acentos a una fuente específica en un documento de Word usando Aspose.Words?
+
+R: Para agregar acentos a una fuente específica en un documento de Word usando Aspose.Words, puede usar la API para navegar a la fuente deseada y aplicar los acentos apropiados. Esto agregará acentos al texto con la fuente seleccionada.
+
+#### P: ¿Es posible cambiar el estilo de los acentos en un documento de Word con Aspose.Words?
+
+R: Sí, con Aspose.Words puede cambiar el estilo de los acentos en un documento de Word. La API le permite ajustar las propiedades del estilo, como el color, el tamaño, el tipo de línea, etc., para personalizar la apariencia de los acentos.
+
+#### P: ¿Cómo puedo eliminar todos los acentos de un documento de Word usando Aspose.Words?
+
+R: Para eliminar todos los acentos de un documento de Word con Aspose.Words, puede usar la API para explorar el documento, detectar los acentos existentes y eliminarlos con los métodos apropiados. Esto eliminará todas las marcas de énfasis del documento.
+
+#### P: ¿Puedo agregar acentos a una parte específica del texto en un documento de Word?
+
+R: Sí, puede agregar acentos a una parte específica del texto en un documento de Word usando Aspose.Words. Puede seleccionar el rango de texto deseado usando la API y agregar marcas de énfasis apropiadas a esa parte del texto.
+
+#### P: ¿Se pueden personalizar los acentos según mis necesidades?
+
+R: Sí, los acentos se pueden personalizar según sus necesidades mediante Aspose.Words. Puede ajustar las propiedades de estilo de los acentos, como el color, el tamaño, el tipo de línea y más, para que coincidan con sus preferencias de formato.

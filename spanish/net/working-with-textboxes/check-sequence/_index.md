@@ -7,10 +7,11 @@ type: docs
 weight: 10
 url: /es/net/working-with-textboxes/check-sequence/
 ---
+Esta guía paso a paso explica cómo verificar la secuencia de TextBoxes en un documento de Word utilizando la biblioteca Aspose.Words para .NET. Aprenderá a configurar el documento, crear una forma de cuadro de texto, acceder a los cuadros de texto y comprobar su posición en la secuencia.
 
 ## Paso 1: configurar el documento y crear una forma de cuadro de texto
 
- Para comenzar, debemos configurar el documento y crear una forma de cuadro de texto. El siguiente código inicializa una nueva instancia del`Document` clase y crea una forma de cuadro de texto:
+Para comenzar, debemos configurar el documento y crear una forma de cuadro de texto. El siguiente código inicializa una nueva instancia del`Document` clase y crea una forma de cuadro de texto:
 
 ```csharp
 Document doc = new Document();
@@ -53,7 +54,7 @@ if (textBox. Next == null && textBox. Previous != null)
 }
 ```
 
-Si el cuadro de texto no tiene la siguiente forma (`Next`) pero tiene una forma previa (`Previous`), eso significa que es el final de la secuencia. Se mostrará el mensaje "El final de la secuencia".
+Si el cuadro de texto no tiene la siguiente forma (`Next`) pero tiene una forma anterior (`Previous`), eso significa que es el final de la secuencia. Se mostrará el mensaje "El final de la secuencia".
 
 ### Ejemplo de código fuente para verificar la secuencia con Aspose.Words para .NET
 
@@ -77,3 +78,29 @@ if (textBox. Next == null && textBox. Previous != null)
      Console.WriteLine("The end of the sequence.");
 }
 ```
+
+## Conclusión
+
+¡Felicidades! Ahora sabe cómo verificar la secuencia de cuadros de texto en un documento de Word utilizando la biblioteca Aspose.Words para .NET. Al seguir los pasos de esta guía, pudo configurar el documento, crear una forma de cuadro de texto y verificar si está al principio, en el medio o al final de la secuencia.
+
+### Preguntas frecuentes para verificar la secuencia
+
+#### P: ¿Cuál es la biblioteca que se usa para verificar la secuencia de TextBoxes usando Aspose.Words para .NET?
+
+R: Para verificar la secuencia de cuadros de texto usando Aspose.Words para .NET, la biblioteca utilizada es Aspose.Words para .NET.
+
+#### P: ¿Cómo determinar si un TextBox es el encabezado de la secuencia?
+
+R: Para determinar si un cuadro de texto es el encabezado de la secuencia, puede verificar si tiene un formulario siguiente (`Next`) pero no una forma anterior (`Previous`). Si es así, eso significa que él es la cabeza de la racha.
+
+#### P: ¿Cómo saber si un cuadro de texto está en medio de la secuencia?
+
+R: Para determinar si un cuadro de texto está en el medio de la secuencia, debe verificar si tiene una forma siguiente (`Next`) y una forma anterior (`Previous`). Si es así, esto indica que está en medio de la secuencia.
+
+#### P: ¿Cómo verificar si un cuadro de texto es el final de la secuencia?
+
+R: Para verificar si un cuadro de texto es el final de la secuencia, puede verificar si no tiene un formulario siguiente (`Next`) pero tiene una forma previa (`Previous`). Si es así, eso significa que es el final de la secuencia.
+
+#### P: ¿Podemos verificar la secuencia de elementos que no sean TextBoxes?
+
+R: Sí, utilizando la biblioteca Aspose.Words para .NET, es posible verificar la secuencia de otros elementos como párrafos, tablas, imágenes, etc. El proceso variará según el elemento específico que desee verificar.

@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-//В основном документе есть поле слияния под названием «Документ_1».
+// В основном документе есть поле слияния под названием «Документ_1».
 // Соответствующие данные для этого поля содержат полный путь к документу.
 // Это должно быть вставлено в это поле.
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });

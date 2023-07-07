@@ -84,7 +84,7 @@ Document doc = new Document(dataDir + "Header and footer types.docx");
 foreach (Section section in doc)
 {
 	// Bir bölümde en fazla üç farklı alt bilgi mümkündür (ilk, çift ve tek sayfalar için)
-	// hepsini kontrol edip siliyoruz.
+	//hepsini kontrol edip siliyoruz.
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 

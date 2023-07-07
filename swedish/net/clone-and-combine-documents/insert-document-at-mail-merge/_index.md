@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
 
-den här självstudien kommer vi att gå igenom hur du infogar ett dokument i ett annat dokument under kopplingen med hjälp av funktionen Infoga dokument under koppling av brev i Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och utföra dokumentinfogningen.
+I den här självstudien kommer vi att gå igenom hur du infogar ett dokument i ett annat dokument under kopplingen med hjälp av funktionen Infoga dokument under koppling av brev i Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och utföra dokumentinfogningen.
 
 ## Steg 1: Laddar huvuddokumentet
 
@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-//Huvuddokumentet har ett sammanslagningsfält i sig som heter "Dokument_1".
+// Huvuddokumentet har ett sammanslagningsfält i sig som heter "Dokument_1".
 // Motsvarande data för detta fält innehåller en fullständigt kvalificerad sökväg till dokumentet.
 // Det ska infogas i det här fältet.
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });

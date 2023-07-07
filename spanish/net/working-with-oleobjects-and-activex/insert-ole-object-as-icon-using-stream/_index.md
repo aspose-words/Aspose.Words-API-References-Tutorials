@@ -59,3 +59,68 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 ```
 
 Este es un ejemplo de código completo para insertar un objeto OLE como un icono utilizando una secuencia con Aspose.Words para .NET. Asegúrese de importar las referencias necesarias y siga los pasos descritos anteriormente para integrar este código en su proyecto.
+
+## Conclusión
+
+La guía paso a paso anterior explica cómo insertar un objeto OLE como icono en un documento de Word utilizando un flujo con Aspose.Words para .NET. Siguiendo los pasos descritos, podrá integrar esta funcionalidad en su proyecto. Asegúrese de importar las referencias necesarias, cree un nuevo documento y un generador de documentos, inserte el objeto OLE como un icono de la secuencia y luego guarde el documento. Utilice el código de muestra proporcionado como punto de partida y personalícelo según sus necesidades.
+
+### Preguntas frecuentes
+
+#### P. ¿Cómo importar las referencias necesarias para usar Aspose.Words para .NET?
+
+A. Para importar las referencias necesarias, debe seguir estos pasos:
+
+ Agrega lo siguiente`using` declaraciones en la parte superior de su archivo fuente:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using System.IO;
+```
+Asegúrese de haber agregado la biblioteca Aspose.Words a su proyecto.
+
+#### P. ¿Cómo crear un nuevo documento y un generador de documentos usando Aspose.Words para .NET?
+
+A. Para crear un nuevo documento y generador de documentos, puede seguir estos pasos:
+
+ Utilizar el`Document` clase para crear un nuevo documento:
+
+```csharp
+Document doc = new Document();
+```
+ Utilizar el`DocumentBuilder` class para crear un generador de documentos asociado con el documento creado anteriormente:
+
+```csharp
+DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+#### P. ¿Cómo insertar un objeto OLE como un ícono de una secuencia usando Aspose.Words para .NET?
+
+A. Para insertar un objeto OLE como un icono de una secuencia, puede seguir estos pasos:
+
+ Utilizar el`InsertOleObjectAsIcon` método del generador de documentos para insertar el objeto OLE:
+
+```csharp
+using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
+{
+  builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
+}
+```
+
+#### P. ¿Cómo guardar el documento en un archivo?
+
+A.  Para guardar el documento en un archivo, puede utilizar el`Save` método del documento que especifica la ruta de destino:
+
+```csharp
+doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
+```
+
+#### P. ¿Cómo incrusto el código para insertar un objeto OLE como un icono de una secuencia en mi proyecto?
+
+A. Para incrustar el código para insertar un objeto OLE como un icono de una secuencia en su proyecto, siga estos pasos:
+- Importe las referencias necesarias agregando las correspondientes`using` declaraciones.
+-  Cree un nuevo documento y un generador de documentos usando el`Document` y`DocumentBuilder` clases
+- Utilice el código para insertar el objeto OLE como un icono de una secuencia.
+-  Guarde el documento usando el`Save` método con la ruta de destino adecuada.
+
+Al seguir estos pasos, podrá insertar con éxito un objeto OLE como un ícono de una secuencia usando Aspose.Words para .NET. Asegúrese de seguir las instrucciones e importar las referencias necesarias para obtener los resultados deseados.

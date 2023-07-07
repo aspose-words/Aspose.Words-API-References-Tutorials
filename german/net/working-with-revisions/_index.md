@@ -17,9 +17,9 @@ Unabhängig davon, ob Sie Anfänger oder erfahrener Entwickler sind, helfen Ihne
 | Titel | Beschreibung |
 | --- | --- |
 | [Überarbeitungen akzeptieren](./accept-revisions/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Überarbeitungen an einem Word-Dokument akzeptieren. |
-| [Revisionstypen abrufen](./get-revision-types/) | Erhalten Sie Revisionstypen in einem Word-Dokument mit Aspose.Words für .NET. |
+| [Holen Sie sich Revisionstypen von Wörtern](./get-revision-types/) | Erhalten Sie Revisionstypen von Wörtern in einem Word-Dokument mit Aspose.Words für .NET. |
 | [Revisionsgruppen abrufen](./get-revision-groups/) | Erhalten Sie Revisionsgruppendetails in einem Word-Dokument mit Aspose.Words für .NET. |
-| [Kommentare im PDF entfernen](./remove-comments-in-pdf/) | Entfernen Sie Kommentare in einer PDF-Datei mit Aspose.Words für .NET. |
+| [Entfernen Sie Kommentare in einer PDF-Datei](./remove-comments-in-pdf/) | Entfernen Sie Kommentare in einer PDF-Datei mit Aspose.Words für .NET. |
 | [Revisionen in Sprechblasen anzeigen](./show-revisions-in-balloons/) | Zeigen Sie Revisionen in Sprechblasen mit Aspose.Words für .NET an. |
 | [Details zur Revisionsgruppe abrufen](./get-revision-group-details/) | Erhalten Sie Revisionsgruppendetails in einem Word-Dokument mit Aspose.Words für .NET. |
 | [Greifen Sie auf die überarbeitete Version zu](./access-revised-version/) | Greifen Sie mit Aspose.Words für .NET auf eine überarbeitete Version eines Word-Dokuments zu. |

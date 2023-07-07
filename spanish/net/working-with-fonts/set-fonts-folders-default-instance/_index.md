@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Paso 2: establecer la carpeta de fuentes predeterminada
- Luego puede configurar la carpeta de fuentes predeterminada usando el`FontSettings.DefaultInstance` clase y el`SetFontsFolder()` método. Especifique la ruta a la carpeta de fuentes que desea usar como carpeta predeterminada.
+Luego puede configurar la carpeta de fuentes predeterminada usando el`FontSettings.DefaultInstance` clase y el`SetFontsFolder()` método. Especifique la ruta a la carpeta de fuentes que desea usar como carpeta predeterminada.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
@@ -51,3 +51,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 
 ## Conclusión
 En este tutorial, aprendimos cómo establecer la carpeta de fuentes predeterminada al representar un documento con Aspose.Words para .NET. Siguiendo esta guía paso a paso, puede especificar fácilmente qué carpeta de fuentes usar como carpeta predeterminada al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para trabajar con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar las fuentes de fuentes utilizadas al renderizar sus documentos según sus necesidades específicas.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo establecer carpetas de fuentes predeterminadas en Aspose.Words?
+
+ R: Para establecer carpetas de fuentes predeterminadas en Aspose.Words, debe usar el`Fonts` clase y el`SetFontsFolders` para especificar ubicaciones de carpetas de fuentes personalizadas.
+
+#### P: ¿La configuración de carpetas de fuentes predeterminadas afecta a todos los documentos de Word procesados con Aspose.Words?
+
+R: Sí, la configuración de carpetas de fuentes predeterminadas afecta a todos los documentos de Word procesados con Aspose.Words. Una vez que haya configurado las carpetas de fuentes predeterminadas, Aspose.Words usará estas ubicaciones para buscar fuentes en todos los documentos.
+
+#### P: ¿Puedo configurar varias carpetas de fuentes predeterminadas en Aspose.Words?
+
+ R: Sí, puede configurar varias carpetas de fuentes predeterminadas en Aspose.Words. Solo necesita especificar las ubicaciones de las carpetas de fuentes personalizadas usando el`SetFontsFolders` metodo de la`Fonts` clase.
+
+#### P: ¿Cómo puedo verificar las carpetas de fuentes predeterminadas configuradas actualmente en Aspose.Words?
+
+ R: Para verificar las carpetas de fuentes predeterminadas actualmente definidas en Aspose.Words, puede usar el`GetFolders` metodo de la`Fonts` class para obtener las ubicaciones de las carpetas de fuentes configuradas.
+
+#### P: ¿La configuración de carpetas de fuentes predeterminadas me permite usar fuentes personalizadas en mis documentos de Word?
+
+R: Sí, al establecer carpetas de fuentes predeterminadas, puede usar fuentes personalizadas en sus documentos de Word. Solo necesita colocar las fuentes en las carpetas especificadas y Aspose.Words las usará al generar o manipular los documentos.

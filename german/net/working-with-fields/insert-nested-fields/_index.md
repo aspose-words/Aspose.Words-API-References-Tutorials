@@ -46,7 +46,7 @@ builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
 ## Schritt 5: Einfügen des verschachtelten Feldes
 
- Wir verwenden den DocumentBuilder`InsertField()` Methode zum Einfügen eines verschachtelten Felds in die Fußzeile.
+ Wir verwenden den DocumentBuilder`InsertField()`Methode zum Einfügen eines verschachtelten Felds in die Fußzeile.
 
 ```csharp
 Field field = builder. InsertField(@"IF ");
@@ -95,3 +95,29 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
 In diesem Beispiel haben wir ein neues Dokument erstellt, Seitenumbrüche eingefügt, den Cursor in die Fußzeile bewegt und dann ein verschachteltes Feld in die Fußzeile eingefügt.
+
+### FAQs
+
+#### F: Wie kann ich mit Aspose.Words für .NET verschachtelte Felder in ein Word-Dokument einfügen?
+
+A: Um verschachtelte Felder mit Aspose.Words für .NET in ein Word-Dokument einzufügen, können Sie die folgenden Schritte ausführen:
+
+1. Rufen Sie den Absatz auf, in den Sie die verschachtelten Felder einfügen möchten.
+2.  Ein ... kreieren`FieldStart` Objekt für das übergeordnete Feld.
+3.  Fügen Sie die untergeordneten Felder mit hinzu`FieldStart.NextSibling` Methode, die das entsprechende übergibt`FieldStart` Objekte als Parameter.
+
+#### F: Welche Vorteile bietet die Verwendung verschachtelter Felder in einem Word-Dokument mit Aspose.Words für .NET?
+
+A: Die Verwendung verschachtelter Felder bietet in einem Word-Dokument mit Aspose.Words für .NET mehrere Vorteile. Dies ermöglicht eine größere Flexibilität bei der Erstellung dynamischer Dokumentvorlagen, indem variable Werte und Berechnungen in verschachtelte Felder eingefügt werden können. Verschachtelte Felder können auch die automatisierte Inhaltsgenerierung erleichtern, z. B. die Generierung von Inhaltsverzeichnissen, Seitenzahlen usw.
+
+#### F: Kann ich mit Aspose.Words für .NET mehrstufige verschachtelte Felder in einem Word-Dokument haben?
+
+ A: Ja, es ist möglich, mit Aspose.Words für .NET mehrstufige verschachtelte Felder in einem Word-Dokument zu haben. Mithilfe von können Sie komplexe Hierarchien verschachtelter Felder erstellen`FieldStart.NextSibling` Methode zum Hinzufügen untergeordneter Felder zu vorhandenen übergeordneten Feldern.
+
+#### F: Wie kann ich die Eigenschaften verschachtelter Felder in einem Word-Dokument mit Aspose.Words für .NET anpassen?
+
+ A: Um die Eigenschaften verschachtelter Felder in einem Word-Dokument mit Aspose.Words für .NET anzupassen, können Sie auf das entsprechende zugreifen`FieldStart`Objekte und ändern Sie deren Eigenschaften nach Bedarf. Sie können Formatierungsoptionen, Werte, Berechnungen usw. für verschachtelte Felder festlegen, um das gewünschte Ergebnis zu erzielen.
+
+#### F: Beeinträchtigt das Einfügen verschachtelter Felder die Leistung von Word-Dokumenten mit Aspose.Words für .NET?
+
+A: Das Einfügen verschachtelter Felder kann sich auf die Leistung von Word-Dokumenten mit Aspose.Words für .NET auswirken, insbesondere wenn das Dokument eine große Anzahl verschachtelter Felder oder komplexe Hierarchien enthält. Es wird empfohlen, den Code zu optimieren und unnötige oder wiederholte Vorgänge an verschachtelten Feldern zu vermeiden, um die Leistung zu verbessern.

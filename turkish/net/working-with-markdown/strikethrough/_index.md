@@ -48,3 +48,17 @@ builder.Writeln("This text will be StrikeThrough");
 ```
 
 Tebrikler! Artık üstü çizili metin stilini Aspose.Words for .NET ile nasıl uygulayacağınızı öğrendiniz.
+
+### SSS
+
+#### S: Üstü çizili metni Aspose.Words'a nasıl ekleyebilirim?
+
+ C: Üstü çizili metni Aspose.Words'e eklemek için`Font.StrikeThrough` mülkiyeti`Run`nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` Belirli bir metne üstü çizili metin eklemek için. Örneğin, kullanabilirsiniz`run.Font.StrikeThrough=true` üstü çizili metni eklemek için`Run` nesne.
+
+#### S: Üstü çizili metni aynı paragraftaki birkaç metin parçasına eklemek mümkün müdür?
+
+ C: Evet, birden çok paragraf kullanarak metnin birden çok bölümüne üstü çizili metin ekleyebilirsiniz.`Run` nesneler. birden fazla oluşturabilirsiniz`Run` nesneleri ayarlayın ve`Font.StrikeThrough` mülkiyet`true`Üstü çizili metni istenen metin bölümlerine eklemek için her nesne için. Ardından bunları kullanarak paragrafa ekleyebilirsiniz.`Paragraph.AppendChild(run)` yöntem.
+
+#### S: Aspose.Words'te bir tablo veya hücredeki metne üstü çizili metin ekleyebilir miyim?
+
+ C: Evet, Aspose.Words'te bir tablo veya hücredeki metne üstü çizili metin ekleyebilirsiniz. Uygun yöntemleri kullanarak istediğiniz hücreye veya paragrafa atlayabilir ve ardından üstü çizili metin biçimlendirmesini kullanarak uygulayabilirsiniz.`Font.StrikeThrough` mülkiyeti`Run` veya`Paragraph` nesne.

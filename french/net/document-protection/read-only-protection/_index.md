@@ -68,7 +68,7 @@ Voici le code source complet pour la protection en lecture seule à l'aide d'Asp
 
 	builder.Write("Open document as read-only");
 
-	// Saisissez un mot de passe comportant jusqu'à 15 caractères.
+	// Entrez un mot de passe de 15 caractères maximum.
 	doc.WriteProtection.SetPassword("MyPassword");
 
 	// Rendez le document en lecture seule.

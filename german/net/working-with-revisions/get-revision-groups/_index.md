@@ -45,4 +45,43 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 }
 ```
 
+## Abschluss
 
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET die Revisionsgruppen in einem Word-Dokument abruft. Wir haben die Schritte zum Laden des Dokuments und zum Durchsuchen der Überprüfungsgruppen befolgt und dabei Details wie Autor und Überprüfungstyp angezeigt. Sie können dieses Wissen nun anwenden, um Revisionen Ihres eigenen Word-Dokuments mit Aspose.Words für .NET zu analysieren.
+
+### FAQs
+
+#### F: Wie lade ich ein Dokument in Aspose.Words für .NET hoch?
+
+ A: Benutzen Sie die`Document` Klasse von Aspose.Words für .NET zum Laden eines Dokuments aus einer Datei. Sie können den vollständigen Dokumentpfad angeben.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### F: Wie durchsuche ich Revisionsgruppen in einem Dokument in Aspose.Words für .NET?
+
+ A: Benutzen Sie die`Groups` Eigentum des Dokuments`Revisions` Objekt, um die Sammlung von Revisionsgruppen abzurufen. Sie können dann eine Schleife verwenden, um jede Überprüfungsgruppe zu durchlaufen.
+
+```csharp
+foreach(RevisionGroup group in doc.Revisions.Groups)
+{
+     // Bearbeiten Sie hier jede Bewertungsgruppe
+}
+```
+
+#### F: Wie erhalte ich den Autor einer Überprüfungsgruppe in Aspose.Words für .NET?
+
+ A: Benutzen Sie die`Author` Eigentum der`RevisionGroup` Objekt, um den Autor der Revisionsgruppe abzurufen.
+
+```csharp
+string author = group.Author;
+```
+
+#### F: Wie erhalte ich den Revisionstyp einer Revisionsgruppe in Aspose.Words für .NET?
+
+ A: Benutzen Sie die`RevisionType` Eigentum der`RevisionGroup`Objekt, um den Revisionstyp der Gruppe abzurufen.
+
+```csharp
+string revisionType = group.RevisionType;
+```

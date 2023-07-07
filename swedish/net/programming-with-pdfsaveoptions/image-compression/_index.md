@@ -1,14 +1,14 @@
 ---
-title: Bildkomprimering
-linktitle: Bildkomprimering
+title: Bildkomprimering i ett PDF-dokument
+linktitle: Bildkomprimering i ett PDF-dokument
 second_title: Aspose.Words för .NET API Referens
-description: Steg för steg guide till komprimering av bilder med Aspose.Words för .NET.
+description: Steg för steg guide till komprimering av bilder i ett PDF-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/image-compression/
 ---
 
-Den här artikeln ger en steg-för-steg-guide om hur du använder bildkomprimeringsfunktionen med Aspose.Words för .NET. Vi kommer att förklara varje del av koden i detalj. I slutet av denna handledning kommer du att kunna förstå hur du komprimerar bilder i ett dokument och genererar en PDF med korrekt bildkomprimering.
+Den här artikeln ger en steg-för-steg-guide om hur du använder funktionen Bildkomprimering i ett PDF-dokument med Aspose.Words för .NET. Vi kommer att förklara varje del av koden i detalj. I slutet av denna handledning kommer du att kunna förstå hur du komprimerar bilder i ett dokument och genererar en PDF med korrekt bildkomprimering.
 
 Innan du börjar, se till att du har installerat och konfigurerat Aspose.Words for .NET-biblioteket i ditt projekt. Du hittar biblioteket och installationsinstruktioner på Asposes webbplats.
 
@@ -100,3 +100,28 @@ Det är allt ! Du har framgångsrikt komprimerat bilderna i ett dokument och ska
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", saveOptionsA2U);
 	
 ```
+
+## Slutsats
+
+I den här handledningen förklarade vi hur man komprimerar bilder i ett PDF-dokument med Aspose.Words för .NET. Genom att följa stegen som beskrivs kan du enkelt minska storleken på bilder i ditt PDF-dokument och generera en PDF med korrekt bildkomprimering. Använd bildkomprimeringsfunktionerna i Aspose.Words för .NET för att optimera storleken på dina PDF-dokument samtidigt som bildkvaliteten bevaras.
+
+### Vanliga frågor
+
+#### F: Vad är bildkomprimering i ett PDF-dokument?
+S: Att komprimera bilder i ett PDF-dokument är att minska storleken på bilderna som ingår i PDF-dokumentet för att minska den totala storleken på PDF-filen. Detta minskar det lagringsutrymme som behövs och förbättrar prestandan när du laddar och visar PDF-filen.
+
+#### F: Hur kan jag komprimera bilder i ett PDF-dokument med Aspose.Words för .NET?
+S: För att komprimera bilder i ett PDF-dokument med Aspose.Words för .NET, följ dessa steg:
+
+ Skapa en instans av`Document` klass som anger sökvägen till Word-dokumentet.
+
+ Skapa en instans av`PdfSaveOptions` klass och ställ in`ImageCompression` egendom till`PdfImageCompression.Jpeg` för att använda JPEG-komprimering.
+
+Du kan också ställa in andra bildkomprimeringsalternativ, såsom JPEG-kvalitet, efter dina behov.
+
+ Använd`Save` metod för`Document`klass för att spara dokumentet i PDF-format genom att ange sparalternativ.
+
+#### F: Vad är skillnaden mellan standardbildkomprimering och PDF/A-2u-bildkomprimering?
+S: Standardbildkomprimering minskar storleken på bilder i ett PDF-dokument samtidigt som formulärfälten bevaras. Detta minskar den totala storleken på PDF-filen utan att kompromissa med formulärfältets funktionalitet.
+
+Bildkomprimering med PDF/A-2u är ett extra alternativ som låter dig skapa en PDF-fil som överensstämmer med PDF/A-2u-standarden samtidigt som du använder bildkomprimering. PDF/A-2u är en ISO-standard för arkivering av PDF-dokument och garanterar långtidsbevarande av dokument.

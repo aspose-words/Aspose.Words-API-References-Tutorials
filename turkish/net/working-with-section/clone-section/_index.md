@@ -24,7 +24,7 @@ Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## 2. Adım: Belgeyi yükleyin ve bölümü klonlayın
+## 2. Adım: Belgeyi yükleyin ve bölümü kopyalayın
  Ardından, Word belgesini bir örneğine yükleyeceğiz.`Document` sınıf. daha sonra kullanacağız`Clone` belgenin ilk bölümünü klonlama yöntemi.
 
 ```csharp
@@ -50,3 +50,26 @@ Section cloneSection = doc.Sections[0].Clone();
 
 ## Çözüm
 Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinin bir bölümünün nasıl kopyalanacağını gördük. Bölüm klonlama, bir belgedeki mevcut bölümlerin aynı kopyalarını oluşturmanıza olanak tanır. Belgelerinizin bölümlerini verimli bir şekilde işlemek ve düzenlemek için projelerinizde bu klon özelliğini özelleştirmekten ve kullanmaktan çekinmeyin.
+
+### SSS
+
+#### S: Aspose.Words for .NET'te belge dizini nasıl ayarlanır?
+
+ A: Word belgenizi içeren dizine giden yolu ayarlamak için, değiştirmelisiniz.`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
+
+```csharp
+// Belgeler dizininizin yolu
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
+
+#### S: Aspose.Words for .NET'te belge ve klon bölümü nasıl yüklenir?
+
+ A: Word belgesini bir örneğine yüklemek için`Document` belgenin ilk bölümünü sınıflandırıp klonlayın, aşağıdaki kodu kullanabilirsiniz:
+
+```csharp
+//belgeyi yükle
+Document doc = new Document(dataDir + "Document.docx");
+
+// Bölümü klonla
+Section cloneSection = doc.Sections[0].Clone();
+```

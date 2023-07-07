@@ -8,14 +8,14 @@ weight: 10
 url: /zh/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 
-在这个综合教程中，您将学习如何使用 Aspose.Words for .NET 将目录插入到 Word 文档中。我们将指导您完成整个过程，并为您提供必要的 C# 代码片段。到本指南结束时，您将能够生成具有适当标题和页码的目录。
+在这个综合教程中，您将学习如何使用 Aspose.Words for .NET 将目录插入到 Word 文档中。我们将指导您完成整个过程，并为您提供必要的 C# 代码片段。在本指南结束时，您将能够生成具有适当标题和页码的目录。
 
 ## 先决条件
-在我们开始之前，请确保您具备以下先决条件：
+在我们开始之前，请确保您满足以下先决条件：
 - Aspose.Words for .NET 库安装在您的系统上。
 
 ## 第 1 步：创建新文档和 DocumentBuilder
-首先，使用 Document 类创建一个新文档并初始化一个 DocumentBuilder 对象：
+首先，使用 Document 类创建一个新文档并初始化 DocumentBuilder 对象：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -24,13 +24,13 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 第 2 步：插入目录
-接下来，使用 DocumentBuilder 类的 InsertTableOfContents 方法插入目录。在方法中指定所需的格式设置选项：
+接下来，使用 DocumentBuilder 类的 InsertTableOfContents 方法插入目录。在方法中指定所需的格式选项：
 
 ```csharp
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## 第 3 步：添加文档内容
+## 第三步：添加文档内容
 插入目录后，添加实际的文档内容。使用 StyleIdentifier 设置适当的标题样式：
 
 ```csharp
@@ -75,7 +75,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTableOfContents.docx");
 ```
 
 ### 使用 Aspose.Words for .NET 插入目录的示例源代码
-下面是使用 Aspose.Words for .NET 插入目录的完整源代码：
+以下是使用 Aspose.Words for .NET 插入目录的完整源代码：
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -87,7 +87,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 //插入目录a
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-//在第二页开始实际的文档内容。
+//从第二页开始实际文档内容。
 builder.InsertBreak(BreakType.PageBreak);
 
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
@@ -121,7 +121,7 @@ builder.Writeln("Heading 3.3");
 
 
 //新插入的目录最初是空的。
-//它需要通过更新文档中的字段来填充。
+//需要通过更新文档中的字段来填充它。
 doc.UpdateFields();
 
 

@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Paso 2: Establecer carpetas de fuentes con prioridad
- Luego puede configurar las carpetas de fuentes con prioridad usando el`FontSettings` clase y el`SetFontsSources()` método. Puede especificar varias fuentes de fuentes utilizando instancias de`SystemFontSource` y`FolderFontSource`. En este ejemplo, hemos definido dos orígenes de fuentes: el origen de fuentes del sistema predeterminado y una carpeta de fuentes personalizada con una prioridad de 1.
+ Luego puede configurar las carpetas de fuentes con prioridad usando el`FontSettings` clase y el`SetFontsSources()`método. Puede especificar varias fuentes de fuentes utilizando instancias de`SystemFontSource` y`FolderFontSource`. En este ejemplo, hemos definido dos orígenes de fuentes: el origen de fuentes del sistema predeterminado y una carpeta de fuentes personalizada con una prioridad de 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
@@ -56,3 +56,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 
 ## Conclusión
 En este tutorial, aprendimos cómo establecer carpetas de fuentes con prioridad al renderizar un documento usando Aspose.Words para .NET. Siguiendo esta guía paso a paso, puede especificar fácilmente varias carpetas de fuentes con prioridad de búsqueda personalizada al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para trabajar con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar las fuentes de fuentes utilizadas al renderizar sus documentos según sus necesidades específicas.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo establecer carpetas de fuentes con prioridad en Aspose.Words?
+
+ R: Para establecer carpetas de fuentes con prioridad en Aspose.Words, puede usar el`SetFontsFoldersWithPriority` metodo de la`Fonts` class especificando las ubicaciones de las carpetas de fuentes y su orden de prioridad.
+
+#### P: ¿Qué sucede si una fuente está presente en varias carpetas con diferente prioridad?
+
+R: Si una fuente está presente en varias carpetas con diferente prioridad, Aspose.Words utilizará la versión de la carpeta con la prioridad más alta al procesar documentos.
+
+#### P: ¿Puedo especificar varias carpetas de fuentes con la misma prioridad en Aspose.Words?
+
+R: Sí, puede especificar varias carpetas de fuentes con la misma prioridad en Aspose.Words. Aspose.Words los considerará a todos con igual prioridad al buscar fuentes en sus documentos.
+
+#### P: ¿Cómo puedo verificar las carpetas de fuentes definidas con prioridad en Aspose.Words?
+
+ R: Para verificar las carpetas de fuentes definidas con prioridad en Aspose.Words, puede usar el`GetFolders` metodo de la`Fonts` class para obtener la lista de carpetas de fuentes configuradas, incluido su orden de prioridad.
+
+#### P: ¿De qué sirve configurar carpetas de fuentes con prioridad en Aspose.Words?
+
+R: Establecer carpetas de fuentes con prioridad en Aspose.Words le permite controlar el orden de búsqueda de las fuentes en sus documentos de Word. Esto le ayuda a asegurarse de que se utilizan las fuentes que desea y a evitar problemas de sustitución de fuentes no deseadas.

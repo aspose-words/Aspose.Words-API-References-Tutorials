@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/working-with-fonts/get-font-line-spacing/
 ---
-I den här handledningen kommer vi att berätta hur du får typsnittets radavstånd i ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Teckensnittets radavstånd definierar det vertikala avståndet mellan textraderna. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
+den här handledningen kommer vi att berätta hur du får typsnittets radavstånd i ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Teckensnittets radavstånd definierar det vertikala avståndet mellan textraderna. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
 ## Förutsättningar
 Innan du börjar, se till att du har följande saker:
@@ -21,7 +21,7 @@ Innan du börjar, se till att du har följande saker:
 // Skapa ett nytt dokument
 Document doc = new Document();
 
-// Skapa en dokumentgenerator
+//Skapa en dokumentgenerator
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
  Därefter kommer vi att konfigurera teckensnittet genom att ställa in`Name` dokumentgeneratorns egendom.
 
 ```csharp
-//Konfigurera typsnittet
+// Konfigurera typsnittet
 builder.Font.Name = "Calibri";
 ```
 
@@ -61,4 +61,26 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## Slutsats
-I den här handledningen såg vi hur man får typsnittets radavstånd i ett Word-dokument med Aspose.Words för .NET. Teckensnittets radavstånd är viktigt för att kontrollera det vertikala avståndet mellan textrader. Använd gärna den här funktionen för att anpassa utseendet på din text i dina dokument.
+den här handledningen såg vi hur man får typsnittets radavstånd i ett Word-dokument med Aspose.Words för .NET. Teckensnittets radavstånd är viktigt för att kontrollera det vertikala avståndet mellan textrader. Använd gärna den här funktionen för att anpassa utseendet på din text i dina dokument.
+
+### FAQ's
+
+#### F: Hur kan jag ändra radavståndet för specifik text i ett Word-dokument?
+
+S: Med Aspose.Words kan du enkelt ändra radavståndet för specifik text i ett Word-dokument. Använd API:et för att välja önskad text och justera avståndet mellan raderna genom att ange lämpligt värde.
+
+#### F: Är det möjligt att använda exakt avstånd mellan rader i ett Word-dokument?
+
+S: Ja, Aspose.Words låter dig tillämpa exakt avstånd mellan raderna i ett Word-dokument. Du kan ange ett exakt värde för radavstånd med hjälp av API:et.
+
+#### F: Hur kan jag justera radavståndet för hela Word-dokumentet?
+
+S: Med Aspose.Words kan du enkelt justera radavståndet för hela Word-dokumentet. Använd metoderna som tillhandahålls av API:et för att ange önskat radavstånd för hela dokumentet.
+
+#### F: Stöder Aspose.Words flera radavstånd?
+
+S: Ja, Aspose.Words stöder flera radavstånd i Word-dokument. Du kan ställa in flera avstånd, till exempel 1,5 gånger eller 2 gånger normalt avstånd, för raderna i din text.
+
+#### F: Hur kan jag undvika problem med radöverlappning när jag justerar radavstånd?
+
+S: För att undvika problem med linjeöverlappning när du justerar avståndet mellan raderna, var noga med att välja lämpliga avståndsvärden. Testa även den slutliga renderingen av ditt dokument för att säkerställa att texten förblir läsbar och välformaterad.

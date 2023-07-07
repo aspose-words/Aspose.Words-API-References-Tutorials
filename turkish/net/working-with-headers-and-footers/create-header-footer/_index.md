@@ -111,7 +111,7 @@ builder.InsertBreak(BreakType.SectionBreakNewPage);
 currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-//Bu bölüm, ilk sayfa için farklı bir üstbilgi/altbilgiye ihtiyaç duymaz, belgede yalnızca bir başlık sayfasına ihtiyacımız vardır,
+// Bu bölüm, ilk sayfa için farklı bir üstbilgi/altbilgiye ihtiyaç duymaz, belgede yalnızca bir başlık sayfasına ihtiyacımız vardır,
 // ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde tanımlanmıştır.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
@@ -119,7 +119,7 @@ pageSetup.DifferentFirstPageHeaderFooter = false;
 // yeni bölüm için sayfa genişliği farklıdır, bu nedenle alt bilgi tablosu için farklı hücre genişlikleri ayarlamamız gerekir.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-// Bu bölüm için zaten var olan üst bilgileri/alt bilgileri kullanmak istiyorsak,
+//Bu bölüm için zaten var olan üst bilgileri/alt bilgileri kullanmak istiyorsak,
 // ancak birkaç küçük değişiklikle üstbilgileri/altbilgileri kopyalamak mantıklı olabilir
 // önceki bölümden ve gerekli değişiklikleri istediğimiz yere uygulayın.
 CopyHeadersFootersFromPreviousSection(currentSection);
@@ -134,7 +134,7 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
- Birincil üstbilgilerin/altbilgilerin görüneceği yeni bir sayfa oluşturmak için bir sayfa sonu ve bir bölüm sonu ekliyoruz. Yeni bölüm için parametreleri ayarlıyoruz, ardından`CopyHeadersFootersFromPreviousSection`Önceki bölümden üstbilgileri/altbilgileri kopyalama yöntemi. Son olarak ana altbilgi tablosu için uygun hücre genişliklerini ayarlayıp belgeyi kaydediyoruz.
+ Birincil üstbilgilerin/altbilgilerin görüneceği yeni bir sayfa oluşturmak için bir sayfa sonu ve bir bölüm sonu ekliyoruz. Yeni bölüm için parametreleri ayarlıyoruz, ardından`CopyHeadersFootersFromPreviousSection` Önceki bölümden üstbilgileri/altbilgileri kopyalama yöntemi. Son olarak ana altbilgi tablosu için uygun hücre genişliklerini ayarlayıp belgeyi kaydediyoruz.
 
 ### Aspose.Words for .NET ile üst bilgiler ve alt bilgiler oluşturmak için örnek kaynak kodu
 
@@ -176,7 +176,7 @@ builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-// Satırdaki metnin bir bölümünü (sayfa numaralandırmalı) yapmak için iki hücreli bir tablo kullanıyoruz.
+//Satırdaki metnin bir bölümünü (sayfa numaralandırmalı) yapmak için iki hücreli bir tablo kullanıyoruz.
 // Sola hizalanacak ve metnin diğer kısmı (telif hakkı ile) sağa hizalanacak.
 builder.StartTable();
 
@@ -214,7 +214,7 @@ builder.InsertBreak(BreakType.SectionBreakNewPage);
 currentSection = builder.CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-//Bu bölüm farklı bir ilk sayfa üstbilgisine/altbilgisine ihtiyaç duymaz, belgede yalnızca bir başlık sayfasına ihtiyacımız vardır,
+// Bu bölüm farklı bir ilk sayfa üstbilgisine/altbilgisine ihtiyaç duymaz, belgede yalnızca bir başlık sayfasına ihtiyacımız vardır,
 // ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde tanımlanmıştır.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
@@ -225,7 +225,7 @@ currentSection.HeadersFooters.LinkToPrevious(false);
 
 // Bu bölüm için zaten var olan üst bilgi/alt bilgi setini kullanmak istiyorsak.
 // Ancak bazı küçük değişikliklerle, üstbilgileri/altbilgileri kopyalamak uygun olabilir.
-// önceki bölümden ve istediğimiz yerde gerekli değişiklikleri uygulayın.
+//önceki bölümden ve istediğimiz yerde gerekli değişiklikleri uygulayın.
 CopyHeadersFootersFromPreviousSection(currentSection);
 
 HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
@@ -236,3 +236,25 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
+
+### SSS
+
+#### S: Aspose.Words'te belgeme nasıl başlık ekleyebilirim?
+
+ A: Aspose.Words'te belgenize bir başlık eklemek için`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.HeaderPrimary)` yöntem. Bu yöntem, belgenizin ilk bölümüne bir birincil başlık ekler.
+
+#### S: Aspose.Words'te belgeme nasıl alt bilgi ekleyebilirim?
+
+ A: Aspose.Words'te belgenize bir alt bilgi eklemek için`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` yöntem. Bu yöntem, belgenizin ilk bölümüne bir birincil altbilgi ekler.
+
+#### S: Aspose.Words'te üstbilgime veya altbilgime nasıl metin ekleyebilirim?
+
+ C: Aspose.Words'te üstbilginize veya altbilginize metin eklemek için`HeaderFooter.Paragraphs` üstbilgi veya altbilginin paragraf koleksiyonunu almak için özelliğini kullanın, ardından metninizi içeren bir paragrafı bu koleksiyona ekleyin.`ParagraphCollection.Add` yöntem.
+
+#### S: Aspose.Words'te üstbilgi veya altbilgi içeriğini resimler ve sayfa numaralarıyla özelleştirebilir miyim?
+
+C: Evet, Aspose.Words'te üstbilgi veya altbilgi içeriğini resimler ve sayfa numaralarıyla özelleştirebilirsiniz. gibi nesneleri kullanabilirsiniz.`Shape` gibi resimler ve nesneler eklemek için`Field` üstbilginize veya altbilginize sayfa numaraları eklemek için.
+
+#### S: Üst bilgimdeki veya alt bilgimdeki metnin yazı tipini, boyutunu ve rengini Aspose.Words'ta değiştirebilir miyim?
+
+ C: Evet, Aspose.Words'te üst bilgi veya alt bilginizdeki metnin yazı tipini, boyutunu ve rengini değiştirebilirsiniz. gibi metin biçimlendirme özelliklerine erişebilirsiniz.`Font` yazı tipini değiştirmek için,`Size` boyutunu ayarlamak için ve`Color` Metin rengini ayarlamak için.

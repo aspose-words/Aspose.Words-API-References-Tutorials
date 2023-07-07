@@ -63,41 +63,62 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 Ecco il codice sorgente completo per l'ancoraggio di una risposta al commento utilizzando Aspose.Words per .NET:
 
 ```csharp
+// Creare un'istanza del documento.
+string dataDir = "YOUR DOCUMENT DIRECTORY";        
+Document doc = new Document();
 
-    // Creare un'istanza del documento.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";        
-	Document doc = new Document();
+// Crea tre oggetti Run.
+// primi due eseguono del testo, mentre il terzo esegue un commento
 
-    // Crea tre oggetti Run.
-    // primi due eseguono del testo, mentre il terzo esegue un commento
+Paragraph para1 = new Paragraph(doc);
+Run run1 = new Run(doc, "Some ");
+Run run2 = new Run(doc, "text ");
+para1.AppendChild(run1);
+para1.AppendChild(run2);
+doc.FirstSection.Body.AppendChild(para1);
 
-	Paragraph para1 = new Paragraph(doc);
-	Run run1 = new Run(doc, "Some ");
-	Run run2 = new Run(doc, "text ");
-	para1.AppendChild(run1);
-	para1.AppendChild(run2);
-	doc.FirstSection.Body.AppendChild(para1);
+Paragraph para2 = new Paragraph(doc);
+Run run3 = new Run(doc, "is ");
+Run run4 = new Run(doc, "added ");
+para2.AppendChild(run3);
+para2.AppendChild(run4);
+doc.FirstSection.Body.AppendChild(para2);
 
-	Paragraph para2 = new Paragraph(doc);
-	Run run3 = new Run(doc, "is ");
-	Run run4 = new Run(doc, "added ");
-	para2.AppendChild(run3);
-	para2.AppendChild(run4);
-	doc.FirstSection.Body.AppendChild(para2);
+Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
+comment.Paragraphs.Add(new Paragraph(doc));
+comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 
-	Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-	comment.Paragraphs.Add(new Paragraph(doc));
-	comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+// A ciascuno degli oggetti Run è associato un oggetto CommentRangeStart e CommentRangeEnd.
 
-	// A ciascuno degli oggetti Run è associato un oggetto CommentRangeStart e CommentRangeEnd.
+CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
+CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
 
-	CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
-	CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
+run1.ParentNode.InsertAfter(commentRangeStart, run1);
+run3.ParentNode.InsertAfter(commentRangeEnd, run3);
+commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 
-	run1.ParentNode.InsertAfter(commentRangeStart, run1);
-	run3.ParentNode.InsertAfter(commentRangeEnd, run3);
-	commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
-
-	doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
-            
+doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
 ```
+
+### FAQ
+
+#### D: Cos'è un'ancora di commento in Aspose.Words per .NET?
+
+R: In Aspose.Words per .NET, un'ancora di commento è un indicatore che collega un commento a una posizione specifica in un documento.
+
+#### D: Come posso aggiungere un'ancora di commento in un documento Aspose.Words per .NET?
+
+R: Per aggiungere un'ancora di commento in un documento Aspose.Words per .NET, seguire i passaggi indicati nel tutorial.
+
+#### D: Come posso accedere a un'ancora di commento esistente in Aspose.Words per .NET?
+
+ R: È possibile accedere a un'ancora di commento esistente in Aspose.Words per .NET utilizzando il file`Comment.Anchor` proprietà.
+
+#### D: Posso sopprimere un ancoraggio di commento in Aspose.Words per .NET?
+
+ R: Sì, puoi rimuovere un ancoraggio di commento in Aspose.Words per .NET utilizzando il file`Comment.Remove` metodo.
+
+#### D: Come posso modificare il testo di un commento collegato a un'ancora di commento in Aspose.Words per .NET?
+
+R: Per modificare il testo di un commento associato a un commento di ancoraggio in Aspose.Words per .NET, è possibile accedere al`Comment.Text` proprietà del corrispondente`Comment` oggetto e modificare il testo secondo necessità.
+

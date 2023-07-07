@@ -32,7 +32,7 @@ Successivamente, caricheremo il documento Word di origine, che contiene il proge
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-## Passaggio 3: creare un nuovo documento con il progetto VBA clonato
+## Passaggio 3: crea un nuovo documento con il progetto VBA clonato
 Creeremo un nuovo documento con un progetto VBA vuoto e cloneremo il progetto VBA dal documento di origine.
 
 ```csharp

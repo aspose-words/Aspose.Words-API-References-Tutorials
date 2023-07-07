@@ -27,7 +27,7 @@ Document doc = new Document(dataDir + "Table wrapped by text.docx");
 
 Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos. Además, asegúrese de que el documento contenga tablas flotantes.
 
-## Paso 3: obtener las propiedades de posicionamiento de la tabla flotante
+## Paso 3: Obtención de las propiedades de posicionamiento de la tabla flotante
 A continuación, recorreremos todas las tablas del documento y obtendremos las propiedades de posicionamiento de la tabla flotante. Usa el siguiente código:
 
 ```csharp

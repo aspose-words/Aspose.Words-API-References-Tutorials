@@ -61,3 +61,17 @@ foreach (WarningInfo warningInfo in warnings)
 ```
 
 Congratulazioni! Ora hai imparato come utilizzare la fonte di avviso con Aspose.Words per .NET.
+
+### FAQ
+
+#### D: È possibile personalizzare l'aspetto del tag "Avviso"?
+
+R: La formattazione del tag "Warning" dipende dal renderer Markdown utilizzato. Nella maggior parte dei casi, puoi personalizzare l'aspetto utilizzando i CSS per indirizzare il file`blockquote` tag nel tuo documento.
+
+#### D: È possibile aggiungere icone al tag "Avviso"?
+
+ R: Sì, è possibile aggiungere icone al tag "Avviso" utilizzando il codice HTML nel documento Markdown. Puoi inserire un`span` tag con la classe appropriata per visualizzare un'icona accanto al testo di avviso.
+
+#### D: Il tag "Avviso" è compatibile con tutti i lettori Markdown?
+
+ R: La compatibilità del tag "Warning" dipende dal rendering Markdown utilizzato. La maggior parte dei lettori di Markdown supporterà il formato`blockquote` tag per visualizzare il testo evidenziato, ma l'aspetto esatto può variare.

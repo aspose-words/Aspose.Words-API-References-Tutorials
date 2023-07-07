@@ -65,3 +65,25 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ## Çözüm
 Bu öğreticide, bir Word belgesini Aspose.Words for .NET ile işlerken yazı tipi değiştirmeyi nasıl etkinleştireceğimizi veya devre dışı bırakacağımızı gördük. Yazı tipi değiştirmeyi kontrol ederek, işlenmiş belgelerinizde eksik yazı tiplerinin nasıl işleneceğini etkileyebilirsiniz. Word belgelerinizdeki yazı tiplerinin yönetimini özelleştirmek için bu özelliği kullanmaktan çekinmeyin.
+
+### SSS
+
+#### S: Aspose.Words ile bir Word belgesinde yazı tipi değiştirmeyi nasıl etkinleştirebilirim?
+
+C: Aspose.Words ile bir Word belgesinde yazı tipi değiştirmeyi etkinleştirmek için, gerekli yazı tipleri mevcut olmadığında kullanılacak değiştirme yazı tiplerini belirtmek için API'yi kullanabilirsiniz. Bu, orijinal yazı tipleri olmadan bile tutarlı metin görselleştirmesi sağlayacaktır.
+
+#### S: Aspose.Words ile bir Word belgesinde yazı tipi değiştirmeyi devre dışı bırakmak mümkün mü?
+
+C: Evet, Aspose.Words ile bir Word belgesinde yazı tipi değiştirmeyi devre dışı bırakabilirsiniz. API'yi kullanarak, Word'ün gerekli yazı tiplerini metnin orijinal görünümünü koruyan diğer yazı tipleriyle değiştirmesini engelleyebilirsiniz.
+
+#### S: Bir Word belgesinde değiştirme sırasında gerekli yazı tipleri eksik olursa ne olur?
+
+Y: Bir Word belgesinde değiştirme sırasında gerekli yazı tipleri eksik olduğunda, Aspose.Words bu sorunu algılayabilir ve düzeltmeniz için size seçenekler sağlayabilir. Eksik yazı tiplerini alternatif yazı tipleriyle değiştirmeyi seçebilir veya eksik yazı tiplerini belgeye dahil ederek doğru görüntülemeyi sağlayabilirsiniz.
+
+#### S: Bir Word belgesinde Aspose.Words ile değiştirirken eksik yazı tiplerini nasıl halledebilirim?
+
+C: Bir Word belgesinde Aspose.Words ile değiştirirken eksik yazı tiplerini işlemek için, API'yi kullanarak eksik yazı tiplerini tespit edebilir ve çözünürlük seçenekleri sunabilirsiniz. İhtiyaçlarınıza bağlı olarak, eksik yazı tiplerini alternatif yazı tipleriyle değiştirmeyi veya eksik yazı tiplerini belgeye dahil etmeyi seçebilirsiniz.
+
+#### S: Bir Word belgesinde yazı tipi değiştirmeyi kontrol etmek önemli midir?
+
+C: Evet, metnin görsel bütünlüğünü korumak için bir Word belgesinde yazı tipi değişimini kontrol etmek önemlidir. Yazı tipi değiştirmeyi etkinleştirmek veya devre dışı bırakmak için Aspose.Words'ü kullanarak, gerekli yazı tiplerinin kullanıldığından emin olabilir ve eksik veya değiştirilmiş yazı tipleriyle ilgili sorunlardan kaçınabilirsiniz.

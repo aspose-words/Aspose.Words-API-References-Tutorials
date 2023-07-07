@@ -88,4 +88,26 @@ doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
 ## Conclusión
-¡Felicidades! Ha aprendido con éxito cómo cambiar la configuración regional en documentos de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, ahora puede controlar el formato de fechas y números durante las operaciones de combinación de correspondencia. Personalice la configuración regional de acuerdo con sus requisitos para garantizar un formato preciso y uniforme en sus documentos.
+¡Felicidades! Ha aprendido con éxito cómo cambiar la configuración regional en documentos de Word utilizando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente provisto, ahora puede controlar el formato de fechas y números durante las operaciones de combinación de correspondencia. Personalice la configuración regional de acuerdo con sus requisitos para garantizar un formato preciso y uniforme en sus documentos.
+
+### Preguntas frecuentes
+
+#### P: ¿Es Aspose.Words compatible con diferentes versiones de Microsoft Word?
+
+R: Sí, Aspose.Words es compatible con diferentes versiones de Microsoft Word, incluidas Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 y Word 2019.
+
+#### P: ¿Aspose.Words admite estructuras de campo complejas?
+
+R: ¡Absolutamente! Aspose.Words ofrece un amplio soporte para estructuras de campo complejas, incluidos campos anidados, cálculos y expresiones condicionales. Puede usar esta poderosa API para trabajar con cualquier tipo de estructura de campo.
+
+#### P: ¿Aspose.Words admite operaciones de actualización de campos?
+
+R: Sí, Aspose.Words le permite actualizar campos de forma programada. Puede actualizar fácilmente los valores de los campos, actualizar los cálculos y realizar otras operaciones relacionadas con los campos mediante la API.
+
+#### P: ¿Es posible convertir campos en texto sin formato con Aspose.Words?
+
+R: ¡Ciertamente! Aspose.Words proporciona métodos para convertir campos en texto sin formato. Esto puede ser útil cuando necesita extraer el contenido sin ningún formato o funcionalidad relacionada con el campo.
+
+#### P: ¿Es posible generar documentos de Word con campos dinámicos usando Aspose.Words?
+
+R: ¡Absolutamente! Aspose.Words ofrece una funcionalidad sólida para generar documentos de Word con campos dinámicos. Puede crear plantillas con campos predefinidos y completarlos con datos de forma dinámica, proporcionando una solución flexible y eficiente para la generación de documentos.

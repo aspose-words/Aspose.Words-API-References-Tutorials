@@ -52,7 +52,7 @@ findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment
 
 ## Étape 4 : Remplacer le texte contenant des métacaractères
 
- Nous utilisons le`Range.Replace` méthode pour effectuer le remplacement du texte contenant des métacaractères. Dans notre exemple, nous remplaçons chaque occurrence du mot "section" suivi d'un saut de paragraphe par le même mot suivi de plusieurs tirets et d'un nouveau saut de paragraphe :
+ Nous utilisons le`Range.Replace` méthode pour effectuer le remplacement du texte contenant des métacaractères. Dans notre exemple, nous remplaçons chaque occurrence du mot "section" suivi d'un saut de paragraphe par le même mot suivi de plusieurs tirets et d'un nouveau saut de paragraphe :
 
 ```csharp
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);

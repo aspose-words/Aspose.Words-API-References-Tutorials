@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## الخطوة 3: تعيين مجلد خطوط True Type
- يمكنك الآن تحديد مجلد خطوط الكتابة الحقيقية لاستخدامها عند التقديم عن طريق إنشاء مثيل لملف`FontSettings` الطبقة واستخدام`SetFontsFolder()` طريقة لتعيين مجلد الخطوط. يمكنك تحديد مجلد مخصص يحتوي على خطوط True Type الخاصة بك. المعلمة الثانية ل`SetFontsFolder()` يشير إلى ما إذا كنت تريد البحث في المجلدات الفرعية للمجلد المحدد أيضًا.
+يمكنك الآن تحديد مجلد خطوط الكتابة الحقيقية لاستخدامها عند التقديم عن طريق إنشاء مثيل لملف`FontSettings` الطبقة واستخدام`SetFontsFolder()` طريقة لتعيين مجلد الخطوط. يمكنك تحديد مجلد مخصص يحتوي على خطوط True Type الخاصة بك. المعلمة الثانية ل`SetFontsFolder()` يشير إلى ما إذا كنت تريد البحث في المجلدات الفرعية للمجلد المحدد أيضًا.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -43,19 +43,41 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ### نموذج التعليمات البرمجية المصدر لـ Set True Type Fonts Folder باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// المسار إلى دليل المستند الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// لاحظ أن هذا الإعداد سيتجاوز أي مصادر افتراضية للخطوط يتم البحث عنها افتراضيًا. الآن سيتم البحث عن هذه المجلدات فقط
-	// الخطوط عند تقديم الخطوط أو دمجها. لإضافة مصدر خط إضافي مع الاحتفاظ بمصادر خطوط النظام ، استخدم كلاً من FontSettings.GetFontSources و
-	// FontSettings.SetFontSources بدلاً من ذلك
-	fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-	// ضبط إعدادات الخط
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// لاحظ أن هذا الإعداد سيتجاوز أي مصادر افتراضية للخطوط يتم البحث عنها افتراضيًا. الآن سيتم البحث عن هذه المجلدات فقط
+// الخطوط عند تقديم الخطوط أو دمجها. لإضافة مصدر خط إضافي مع الاحتفاظ بمصادر خطوط النظام ، استخدم كلاً من FontSettings.GetFontSources و
+// FontSettings.SetFontSources بدلاً من ذلك
+fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
+// ضبط إعدادات الخط
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 ```
 
 ## خاتمة
 في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلد خطوط الكتابة الحقيقية عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلد مخصص يحتوي على خطوط True Type لاستخدامها عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في الخطوط المستخدمة وتخصيصها عند تقديم مستنداتك وفقًا لاحتياجاتك الخاصة.
+
+### التعليمات
+
+#### س: كيف يمكنني تكوين مجلد خطوط TrueType في Aspose.Words؟
+
+ ج: لتهيئة مجلد خطوط TrueType في Aspose.Words ، يمكنك استخدام ملف`SetTrueTypeFontsFolder` طريقة`Fonts` فئة تحدد موقع المجلد الذي يحتوي على خطوط تروتايب.
+
+#### س: ما أنواع الخطوط التي تعتبر خطوط TrueType؟
+
+ج: خطوط TrueType هي تنسيق خط شائع. غالبًا ما يتم استخدامها في مستندات Word ولها امتداد ملف ttf. أو ttc.
+
+#### س: هل يمكنني تحديد عدة مجلدات خطوط TrueType في Aspose.Words؟
+
+ج: نعم ، يمكنك تحديد عدة مجلدات لخط TrueType في Aspose`SetTrueTypeFontsFolder` طريقة`Fonts` فئة مع قائمة بمواقع المجلدات.
+
+#### س: كيف يمكنني التحقق من مجلد خطوط TrueType الذي تم تكوينه في Aspose.Words؟
+
+ ج: للتحقق من مجلد خطوط TrueType الذي تم تكوينه في Aspose.Words ، يمكنك استخدام ملف`GetTrueTypeFontsFolder` طريقة`Fonts` للحصول على موقع مجلد خطوط TrueType الذي تم تكوينه.
+
+#### س: ما سبب أهمية تكوين مجلد خطوط TrueType في Aspose.Words؟
+
+ج: يعد إعداد مجلد خطوط TrueType في Aspose.Words أمرًا مهمًا لأنه يساعد Aspose.Words بتحديد موقع الخطوط المطلوبة عند معالجة مستندات Word. يضمن ذلك التناسق في تنسيق المستند ومظهره ، حتى عبر الأنظمة المختلفة.

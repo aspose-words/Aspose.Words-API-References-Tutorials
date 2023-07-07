@@ -82,3 +82,21 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 ## خاتمة
 تهانينا! لقد تعلمت بنجاح كيفية تغيير مصدر ثقافة التحديث الميداني في مستندات Word باستخدام Aspose.Words for .NET. باتباع الدليل المفصل خطوة بخطوة واستخدام كود المصدر المقدم ، يمكنك الآن التحكم في الثقافة المستخدمة لتنسيق التاريخ أثناء عمليات تحديث الحقل ودمج البريد. قم بتخصيص مصدر الثقافة وفقًا لمتطلباتك لضمان تاريخ دقيق ومتسق.
+
+### التعليمات
+
+#### س: كيف يمكنني تغيير مصدر ثقافة التحديث الميداني في Aspose.Words for .NET؟
+
+ ج: لتغيير مصدر ثقافة التحديث الميداني في Aspose.Words for .NET ، يمكنك استخدام`Document.FieldOptions.CultureSource` الممتلكات وقيمتها على`FieldCultureSource.FieldCode` أو`FieldCultureSource.CurrentThread` . على سبيل المثال ، يمكنك استخدام ملفات`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` لاستخدام الثقافة المحددة في رمز الحقل.
+
+#### س: كيف يمكنني تحديد ثقافة معينة لتحديث الحقول في Aspose.Words for .NET؟
+
+ ج: لتحديد ثقافة معينة لتحديث الحقول في Aspose.Words for .NET ، يمكنك استخدام`Document.FieldOptions.FieldUpdateCultureInfo` الممتلكات وتعيين`CultureInfo` الكائن المطابق للثقافة المرغوبة. على سبيل المثال ، يمكنك استخدام ملفات`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` لتحديد الثقافة الفرنسية (الفرنسية).
+
+#### س: هل من الممكن تعطيل التحديث التلقائي للمجال في Aspose.Words for .NET؟
+
+ ج: نعم ، من الممكن تعطيل التحديث التلقائي للحقل في Aspose.Words for .NET. يمكنك استخدام ال`Document.FieldOptions.UpdateFields` الملكية وضبطها على`false` لمنع الحقول من التحديث التلقائي. يتيح لك هذا التحكم يدويًا في تحديث الحقول حسب الحاجة.
+
+#### س: كيف يمكنني تحديث حقول المستند يدويًا في Aspose.Words for .NET؟
+
+ ج: لتحديث الحقول في مستند يدويًا في Aspose.Words for .NET ، يمكنك استخدام`Field.Update` طريقة لكل مجال على حدة. على سبيل المثال ، يمكنك استخدام ملفات`field.Update()` لتحديث المجال المحدد.

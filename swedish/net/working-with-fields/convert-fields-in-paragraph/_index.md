@@ -71,3 +71,26 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
 // Spara det ändrade dokumentet.
 doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ```
+
+### FAQ's
+
+#### F: Vad är ett konverteringsfält i Aspose.Words?
+
+S: Ett konverteringsfält i Aspose.Words är en typ av fält som konverterar ett värde eller ett uttryck till ett annat format eller datatyp. Du kan till exempel använda ett konverteringsfält för att konvertera ett datum till ett specifikt format, ett tal till text eller utföra andra typer av konverteringar.
+
+#### F: Hur infogar man ett konverteringsfält i ett stycke med Aspose.Words?
+
+S: För att infoga ett konverteringsfält i ett stycke med Aspose.Words kan du följa dessa steg:
+
+1. Importera klassen Document från namnområdet Aspose.Words.
+2. Skapa en instans av dokument genom att ladda ditt befintliga dokument.
+3. Hämta stycket där du vill infoga konverteringsfältet.
+4. Använd metoden InsertField för att infoga konverteringsfältet med rätt syntax.
+
+#### F: Vilka konverteringsformat stöder Aspose.Words?
+
+S: Aspose.Words stöder ett brett utbud av konverteringsformat i fält, inklusive datumformat, talformat, textformat, valutaformat, procentformat med mera. Du kan kontrollera Aspose.Words-dokumentationen för en fullständig lista över tillgängliga konverteringsformat.
+
+#### F: Hur uppdaterar man ett konverteringsfält i ett Word-dokument med Aspose.Words?
+
+S: För att uppdatera ett konverteringsfält i ett Word-dokument med Aspose.Words kan du använda metoden UpdateFields. Den här metoden går igenom dokumentet och uppdaterar alla fält, inklusive konverteringsfält, och räknar om värden baserat på aktuell data.

@@ -76,3 +76,26 @@ doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 Dans cet exemple, nous avons créé un nouveau document, inséré un champ ASK sans utiliser DocumentBuilder, configuré les différentes propriétés du champ et enregistré le document avec un nom de fichier spécifié.
 
 Ceci conclut notre guide sur l'utilisation de la fonctionnalité "Insérer un champ ASK sans DocumentBuilder" avec Aspose.Words pour .NET.
+
+### FAQ
+
+#### Q : Qu'est-ce qu'un champ ASK dans Aspose.Words ?
+
+R : Un champ ASK dans Aspose.Words est utilisé pour poser une question à l'utilisateur lors de l'ouverture d'un document. Il est souvent utilisé pour demander des informations spécifiques ou des commentaires qui peuvent varier d'un utilisateur à l'autre.
+
+#### Q : Comment insérer un champ ASK dans un document Word sans utiliser Document Builder dans Aspose.Words ?
+
+R : Pour insérer un champ ASK dans un document Word sans utiliser Document Builder dans Aspose.Words, vous pouvez suivre ces étapes :
+
+1. Importez les classes Document et Field à partir de l'espace de noms Aspose.Words.Fields.
+2. Créez une instance de Document en chargeant votre document existant.
+3. Utilisez la méthode InsertField pour insérer un champ ASK en spécifiant le nom de la question.
+4. Enregistrez le document.
+
+#### Q : Comment obtenir la réponse de l'utilisateur pour un champ ASK dans un document Word ?
+
+R : Pour obtenir la réponse de l'utilisateur pour un champ ASK dans un document Word, vous pouvez utiliser la méthode GetFieldNames disponible dans la classe Document. Cette méthode renvoie une liste des noms des champs présents dans le document. Vous pouvez ensuite vérifier si le nom du champ ASK est présent dans la liste et récupérer la réponse associée.
+
+#### Q : Le champ ASK peut-il être utilisé pour demander plus d'informations à l'utilisateur ?
+
+: Oui, le champ ASK peut être utilisé pour demander plusieurs informations à l'utilisateur. Vous pouvez insérer plusieurs champs ASK dans votre document, chacun avec une question différente. Lorsque le document est ouvert, l'utilisateur sera invité à fournir les réponses correspondantes.

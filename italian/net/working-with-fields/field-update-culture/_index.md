@@ -61,7 +61,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Inserisci il campo dell'ora.
 builder. InsertField(FieldType.FieldTime, true);
 
-// Configurare la cultura dell'aggiornamento del campo.
+//Configurare la cultura dell'aggiornamento del campo.
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 
@@ -72,3 +72,29 @@ doc.Save(dataDir + "UpdateCultureChamps.pdf");
 In questo esempio, abbiamo creato un nuovo documento, inserito un campo ora e configurato la cultura di aggiornamento del campo. Quindi abbiamo salvato il documento con un nome file specificato.
 
 Questo conclude la nostra guida sull'utilizzo della funzione "Aggiorna cultura del campo" con Aspose.Words per .NET.
+
+### FAQ
+
+#### D: Qual è la cultura dell'aggiornamento del campo in Aspose.Words?
+
+R: La cultura dell'aggiornamento del campo in Aspose.Words si riferisce alla cultura utilizzata per formattare e aggiornare i valori dei campi in un documento Word. La cultura determina il modo in cui numeri, date e altri dati vengono presentati nei campi quando vengono aggiornati.
+
+#### D: Come impostare la cultura di aggiornamento per i campi in un documento di Word con Aspose.Words?
+
+R: Per impostare la cultura di aggiornamento per i campi in un documento Word con Aspose.Words, puoi seguire questi passaggi:
+
+1. Importa la classe Document dallo spazio dei nomi Aspose.Words.
+2. Crea un'istanza di Documento caricando il tuo documento esistente.
+3. Utilizzare la proprietà Document.UpdateFieldsCultureInfo per impostare le impostazioni cultura di aggiornamento per i campi.
+
+#### D: Quali sono le culture supportate per l'aggiornamento dei campi in Aspose.Words?
+
+R: Aspose.Words supporta diverse culture per l'aggiornamento dei campi. È possibile specificare qualsiasi lingua supportata dal sistema operativo. Ad esempio, "en-US" per l'inglese americano, "fr-FR" per il francese, "de-DE" per il tedesco, ecc.
+
+#### D: È possibile impostare una cultura specifica per un singolo campo piuttosto che per l'intero documento?
+
+R: Sì, è possibile impostare una cultura specifica per un singolo campo piuttosto che per l'intero documento. In Aspose.Words, ogni campo ha una proprietà Format che può essere utilizzata per impostare le impostazioni cultura di formattazione specifiche per quel campo. Ciò consente di controllare come questo campo viene visualizzato e aggiornato indipendentemente dagli altri campi nel documento.
+
+#### D: Come posso verificare la cultura di aggiornamento del campo attualmente definita in un documento di Word?
+
+R: Per verificare la cultura di aggiornamento del campo attualmente definito in un documento di Word, è possibile utilizzare la proprietà Document.UpdateFieldsCultureInfo. Questa proprietà restituisce l'oggetto CultureInfo che rappresenta le impostazioni cultura attualmente utilizzate per impostare gli aggiornamenti dei campi.

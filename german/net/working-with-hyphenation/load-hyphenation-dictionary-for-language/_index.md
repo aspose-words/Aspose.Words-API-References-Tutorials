@@ -55,3 +55,21 @@ doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 ```
 
 Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und an Ihre spezifischen Bedürfnisse anpassen.
+
+### FAQs
+
+#### F: Wie lade ich ein Silbenwörterbuch für eine bestimmte Sprache in Aspose.Words?
+
+ A: Um ein Silbenwörterbuch für eine bestimmte Sprache in Aspose.Words zu laden, können Sie das verwenden`Hyphenation` Klasse und die`LoadDictionary()` Methode. Erstellen Sie eine Instanz von`Hyphenation` Klasse und rufe die an`LoadDictionary()` Methode, die den Pfad zur Silbenwörterbuchdatei für die gewünschte Sprache angibt. Dadurch wird das Silbenwörterbuch in Aspose.Words geladen.
+
+#### F: Wo finde ich Silbenwörterbuchdateien für verschiedene Sprachen?
+
+A: Sie können Silbenwörterbuchdateien für verschiedene Sprachen in verschiedenen Online-Ressourcen finden. Diese Dateien liegen normalerweise im XML- oder TEX-Format vor. Sie finden Open-Source-Silbenwörterbücher für verschiedene Sprachen auf Websites, die sich mit Linguistikprojekten oder Quellcode-Repositories befassen.
+
+#### F: Wie kann ich das geladene Silbenwörterbuch auf ein Dokument in Aspose.Words anwenden?
+
+ A: Um das geladene Silbenwörterbuch auf ein Dokument in Aspose.Words anzuwenden, müssen Sie die Wörter im Dokument durchlaufen und verwenden`Hyphenate()` Methode der`Hyphenation` Klasse, um die Silbenbildung der Wörter zu erhalten. Anschließend können Sie die Silbenwörter nach Bedarf formatieren, indem Sie beispielsweise Bindestriche zwischen den Silben einfügen.
+
+#### F: Welche Sprachen werden für die Silbenbildung in Aspose.Words unterstützt?
+
+A: Aspose.Words unterstützt die Silbenbildung für mehrere Sprachen, darunter Englisch, Französisch, Spanisch, Deutsch, Italienisch, Niederländisch, Russisch, Portugiesisch, Schwedisch, Norwegisch, Dänisch, Finnisch, Polnisch, Tschechisch und viele mehr. Die vollständige Liste der unterstützten Sprachen für die Silbentrennung finden Sie in der Aspose.Words-Dokumentation.

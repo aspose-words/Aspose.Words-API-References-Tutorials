@@ -67,3 +67,21 @@ doc.Save("OutputDocument.docx");
 ```
 
 Använd gärna den här koden i dina egna projekt och modifiera den efter dina specifika krav.
+
+### FAQ's
+
+#### F: Hur kan jag kopiera sidhuvuden och sidfötter från föregående avsnitt till Aspose.Words?
+
+ S: För att kopiera sidhuvuden och sidfötter från föregående avsnitt till Aspose.Words kan du använda`CopyHeadersFootersFromPreviousSection()` metod på strömmen`Section`objekt. Detta kommer att kopiera sidhuvuden och sidfötter från föregående avsnitt till nuvarande avsnitt.
+
+#### F: Är det möjligt att kopiera endast sidhuvud eller sidfot från föregående avsnitt i Aspose.Words?
+
+ S: Ja, det är möjligt att kopiera endast sidhuvudet eller sidfoten från föregående avsnitt i Aspose.Words. För detta kan du använda`CopyHeaderFromPreviousSection()` och`CopyFooterFromPreviousSection()` metoder på strömmen`Section` objekt för att specifikt kopiera sidhuvudet eller sidfoten från föregående avsnitt till det aktuella avsnittet.
+
+#### F: Ersätter kopiering av sidhuvuden och sidfötter från föregående avsnitt befintliga sidhuvuden och sidfötter i det aktuella avsnittet?
+
+S: Ja, kopiering av sidhuvuden och sidfötter från föregående avsnitt ersätter befintliga sidhuvuden och sidfötter i det aktuella avsnittet. Om du vill behålla befintliga sidhuvuden och sidfötter och lägga till dem i de kopierade sidhuvuden och sidfötter, måste du göra ytterligare en operation för att slå samman innehållet.
+
+#### F: Hur kan jag kontrollera om ett avsnitt har ett sidhuvud eller en sidfot från föregående avsnitt i Aspose.Words?
+
+S: För att kontrollera om ett avsnitt har en sidhuvud eller sidfot från föregående avsnitt i Aspose.Words kan du använda`HasHeader` och`HasFooter` fastigheter på`Section` objekt för att avgöra om sidhuvudet eller sidfoten finns. Om`HasHeader` eller`HasFooter` returnerar`false`, betyder det att det inte finns någon sidhuvud eller sidfot från föregående avsnitt i det här avsnittet.

@@ -55,3 +55,27 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ## Abschluss
 In diesem Tutorial haben Sie gelernt, wie Sie Resource Flow Font Source mit Aspose.Words für .NET verwenden. Mit dieser Funktion können Sie Schriftarten aus einem Ressourcen-Feed laden, was nützlich ist, wenn Sie benutzerdefinierte Schriftarten in Ihre Dokumente einbetten möchten. Experimentieren Sie mit verschiedenen Schriftarten und erkunden Sie die Möglichkeiten, die Aspose.Words für die Schriftartenverwaltung bietet.
+
+### FAQs
+
+#### F: Wie kann ich eine Schriftart aus einem Ressourcenstream in Aspose.Words laden?
+
+ A: Um eine Schriftart aus einem Ressourcenstream in Aspose.Words zu laden, können Sie die verwenden`FontSettings` Klasse und die`SetFontsSources` Methode zum Angeben der Schriftartquelle mithilfe eines Ressourcenstreams. Dadurch kann die Schriftart direkt aus dem Ressourcenstream geladen werden und nicht aus einer physischen Datei.
+
+#### F: Welche Vorteile bietet die Verwendung von Ressourcenströmen zur Angabe von Schriftartquellen in Aspose.Words?
+
+A: Die Verwendung von Ressourcenströmen zur Angabe von Schriftartquellen hat mehrere Vorteile:
+- Ermöglicht das Laden von Schriftarten aus in Ihre Anwendung integrierten Ressourcen und erleichtert so die Bereitstellung und Verteilung von Dokumenten.
+- Bietet mehr Flexibilität bei der Schriftartenverwaltung, da Sie Schriftarten je nach Bedarf aus verschiedenen Ressourcenströmen laden können.
+
+#### F: Wie kann ich Schriftarten zu einem Ressourcenstream in meiner .NET-Anwendung hinzufügen?
+
+ A: Um Schriftarten zu einem Ressourcenstrom in Ihrer .NET-Anwendung hinzuzufügen, müssen Sie die Schriftartdateien in Ihre Projektressourcen einbetten. Sie können dann mit für Ihre Entwicklungsplattform spezifischen Methoden auf diese Schriftartdateien zugreifen (z. B.`GetManifestResourceStream` Verwendung der`System.Reflection` Namensraum).
+
+#### F: Ist es möglich, mehrere Schriftarten aus verschiedenen Ressourcenströmen in ein einziges Aspose.Words-Dokument zu laden?
+
+ A: Ja, es ist durchaus möglich, mehrere Schriftarten aus verschiedenen Ressourcenströmen in ein einziges Aspose.Words-Dokument zu laden. Sie können mit dem mehrere Schriftartquellen angeben`SetFontsSources` Methode der`FontSettings` Klasse, die die entsprechenden Ressourcenströme für jede Schriftart bereitstellt.
+
+#### F: Welche Arten von Ressourcenströmen kann ich zum Laden von Schriftarten in Aspose.Words verwenden?
+
+A: Sie können verschiedene Arten von Ressourcenströmen verwenden, um Schriftarten in Aspose.Words zu laden, z. B. in Ihre .NET-Anwendung integrierte Ressourcenströme, Ressourcenströme aus einer externen Datei, Ressourcenströme aus einer Datenbank usw. Stellen Sie sicher, dass Sie die entsprechenden Daten bereitstellen Ressourcenflüsse basierend auf Ihrer Einrichtung und Ihren Anforderungen.

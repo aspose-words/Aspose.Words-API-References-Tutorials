@@ -73,3 +73,24 @@ builder.Writeln("Item 2b");
 
 ¡Felicidades! Ahora ha aprendido a crear una lista con viñetas con Aspose.Words para .NET.
 
+### Preguntas frecuentes
+
+#### P: ¿Cómo crear una lista con viñetas en Markdown?
+
+R: Para crear una lista con viñetas en Markdown, comience cada elemento de la lista con un símbolo de viñeta (`-`, `*` , o`+`), seguido de un espacio.
+
+#### P: ¿Se pueden anidar listas con viñetas en Markdown?
+
+R: Sí, es posible anidar listas con viñetas en Markdown agregando cuatro espacios de compensación delante de cada elemento de la lista anidada.
+
+#### P: ¿Cómo personalizar los símbolos de viñetas?
+
+R: En Markdown estándar, los símbolos de viñetas están predefinidos. Sin embargo, algunos editores de Markdown te permiten personalizarlos usando extensiones específicas.
+
+#### P: ¿Las listas con viñetas en Markdown admiten la sangría?
+
+R: Sí, las listas con viñetas en Markdown admiten la sangría. Puede agregar un desplazamiento a la izquierda usando espacios o tabulaciones.
+
+#### P: ¿Se pueden agregar enlaces o texto en línea a los elementos de la lista?
+
+R: Sí, puede agregar enlaces o texto en línea para enumerar elementos utilizando la sintaxis de Markdown adecuada.

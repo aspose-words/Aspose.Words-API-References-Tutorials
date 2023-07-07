@@ -68,7 +68,7 @@ builder.Writeln("I'm a beautifully formatted line.");
 ```
 
 ## Steg 8: Avsluta raden och tabellen
- När vi har lagt till innehållet i raden kan vi avsluta raden med hjälp av`EndRow()` metoden och avsluta sedan tabellen med hjälp av`EndTable()` metod.
+ När vi har lagt till innehållet i raden kan vi avsluta raden med hjälp av`EndRow()` metod och avsluta sedan tabellen med hjälp av`EndTable()` metod.
 
 ```csharp
 builder. EndRow();

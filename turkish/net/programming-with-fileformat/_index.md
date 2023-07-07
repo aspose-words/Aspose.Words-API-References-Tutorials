@@ -16,6 +16,6 @@ Bu eğitimlerde, Aspose.Words for .NET'in güçlü özelliklerini Word belgeleri
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Dosya Biçimini Algıla](./detect-file-format/) | Aspose.Words for .NET ile belge dosyası biçimini algılamak için adım adım kılavuz. |
-| [Belge İmzalarını Algıla](./detect-document-signatures/) | Aspose.Words for .NET ile bir belgedeki dijital imzaları algılamak için adım adım kılavuz. |
-| [Şifrelenmiş Belgeyi Doğrulayın](./verify-encrypted-document/) | Bir belgenin Aspose.Words for .NET ile şifrelenmiş olduğunu doğrulamak için adım adım kılavuz. |
+| [Belge Dosya Biçimini Algıla](./detect-file-format/) | Aspose.Words for .NET ile belge dosyası biçimini algılamak için adım adım kılavuz. |
+| [Word Belgesinde Dijital İmza Algılama](./detect-document-signatures/) | Aspose.Words for .NET ile bir belgedeki dijital imzaları algılamak için adım adım kılavuz. |
+| [Şifrelenmiş Word Belgesini Doğrulayın](./verify-encrypted-document/) | Bir belgenin Aspose.Words for .NET ile şifrelenmiş olduğunu doğrulamak için adım adım kılavuz. |

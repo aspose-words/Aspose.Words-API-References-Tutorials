@@ -59,3 +59,17 @@ builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.doc
 ```
 
 Il s'agissait d'un exemple de code source pour spécifier la localisation au niveau du champ dans un document utilisant Aspose.Words pour .NET. Vous pouvez utiliser ce code pour insérer des champs de date avec des emplacements spécifiques dans vos documents Word.
+
+### FAQ
+
+#### Q : Comment puis-je spécifier les paramètres régionaux au niveau du champ dans Aspose.Words pour .NET ?
+
+ R : Pour spécifier les paramètres régionaux au niveau du champ dans Aspose.Words pour .NET, vous pouvez utiliser le`FieldOptions` classe et ses`FieldLocale` propriété pour définir les paramètres régionaux souhaités. Par exemple, vous pouvez utiliser`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` pour spécifier les paramètres régionaux français (France).
+
+#### Q : Est-il possible de spécifier des paramètres régionaux différents pour chaque champ dans Aspose.Words pour .NET ?
+
+ R : Oui, il est possible de spécifier des paramètres régionaux différents pour chaque champ dans Aspose.Words pour .NET. Vous pouvez utiliser le`FieldOptions.FieldLocale` propriété avant de créer ou de mettre à jour un champ spécifique pour lui attribuer un paramètre régional différent.
+
+#### Q : Comment puis-je obtenir les paramètres régionaux actuellement utilisés pour un champ dans Aspose.Words pour .NET ?
+
+ R : Pour obtenir les paramètres régionaux actuellement utilisés pour un champ dans Aspose.Words pour .NET, vous pouvez utiliser les`Field.LocaleId` propriété. Cela vous permettra d'obtenir l'identifiant de locale associé au champ.

@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## Schritt 4: Speichern Sie das Dokument
-Speichern Sie das geänderte Dokument mit`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithSdt.ClearContentsControl.doc“.
+Speichern Sie das geänderte Dokument mit`Save`Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithSdt.ClearContentsControl.doc“.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

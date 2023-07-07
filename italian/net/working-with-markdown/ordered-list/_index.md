@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Passaggio 2: applicazione del formato dell'elenco ordinato
 
-Applicheremo il formato dell'elenco ordinato utilizzando il generatore di documenti`ApplyBulletDefault` metodo. Possiamo anche personalizzare il formato della numerazione andando ai livelli dell'elenco e impostando il formato desiderato.
+ Applicheremo il formato dell'elenco ordinato utilizzando il generatore di documenti`ApplyBulletDefault`metodo. Possiamo anche personalizzare il formato della numerazione andando ai livelli dell'elenco e impostando il formato desiderato.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
@@ -73,3 +73,25 @@ builder.Writeln("Item 2b");
 
 Congratulazioni! Ora hai imparato come utilizzare la funzione di elenco ordinato con Aspose.Words per .NET.
 
+
+### FAQ
+
+#### D: Come creare un elenco ordinato in Markdown?
+
+R: Per creare un elenco ordinato in Markdown, iniziare ogni elemento dell'elenco con un numero seguito da un punto (`1.`, `2.`, `3.`), seguito da uno spazio.
+
+#### D: Possiamo nidificare elenchi ordinati in Markdown?
+
+R: Sì, è possibile nidificare gli elenchi ordinati in Markdown aggiungendo quattro spazi di offset davanti a ciascun elemento dell'elenco nidificato.
+
+#### D: Come personalizzare la numerazione degli elenchi ordinati?
+
+R: In Markdown standard, la numerazione degli elenchi ordinati viene generata automaticamente. Tuttavia, alcuni editor Markdown ti consentono di personalizzarlo utilizzando estensioni specifiche.
+
+#### D: Gli elenchi ordinati in Markdown supportano il rientro?
+
+R: Sì, gli elenchi ordinati in Markdown supportano il rientro. Puoi aggiungere uno spostamento a sinistra utilizzando spazi o tabulazioni.
+
+#### D: È possibile aggiungere collegamenti o testo in linea agli elementi dell'elenco?
+
+R: Sì, puoi aggiungere collegamenti o testo in linea agli elementi dell'elenco utilizzando la sintassi Markdown appropriata.

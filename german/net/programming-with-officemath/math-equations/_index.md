@@ -70,7 +70,7 @@ In diesem Beispiel speichern wir das geänderte Dokument als „WorkingWithOffic
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Word-Dokument
+// Laden Sie das Word-Dokument
 Document doc = new Document(dataDir + "Office math.docx");
 
 // Rufen Sie das OfficeMath-Element ab

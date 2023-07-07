@@ -1,6 +1,6 @@
 ---
-title: Dosya Biçimini Algıla
-linktitle: Dosya Biçimini Algıla
+title: Belge Dosya Biçimini Algıla
+linktitle: Belge Dosya Biçimini Algıla
 second_title: Aspose.Words for .NET API Referansı
 description: Aspose.Words for .NET ile belge dosyası biçimini algılamak için adım adım kılavuz.
 type: docs
@@ -8,13 +8,13 @@ weight: 10
 url: /tr/net/programming-with-fileformat/detect-file-format/
 ---
 
-Bu makale, dosya biçimi algılama özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, farklı belge dosyalarının biçimini nasıl tespit edeceğinizi anlayabileceksiniz.
+Bu makale, belge dosyası biçimi algılama özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına dair adım adım bir kılavuz sunmaktadır. Kodun her bir bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, farklı belge dosyalarının biçimini nasıl tespit edeceğinizi anlayabileceksiniz.
 
 Başlamadan önce, projenizde Aspose.Words for .NET kitaplığını kurduğunuzdan ve yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
 
 ## 1. Adım: Dizinleri tanımlayın
 
- Başlamak için, dosyaları formatlarına göre depolamak istediğiniz dizinleri tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeler dizininize giden gerçek yolla. "Supported", "Unknown", "Encrypted" ve "Pre97" dizinleri mevcut değilse oluşturuyoruz.
+ Başlamak için, dosyaları formatlarına göre depolamak istediğiniz dizinleri tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeler dizininize giden gerçek yolla. "Supported", "Unknown", "Encrypted" ve "Pre97" dizinleri mevcut değilse oluşturuyoruz.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -206,3 +206,25 @@ Bu kadar ! Aspose.Words for .NET'i kullanarak farklı belge dosyalarının forma
 	
 
 ```
+
+### Belge dosyası formatı tespiti için SSS
+
+#### Aspose.Words for .NET kullanılarak bir belge dosyasının formatı nasıl belirlenir?
+
+ Aspose.Words for .NET kullanarak bir belge dosyasının formatını algılamak için eğitimde verilen adımları takip edebilirsiniz. Kullanmak`DetectFileFormat` yöntemi`FileFormatUtil` class, belge dosyasının biçimini algılamanıza izin verecektir. Bu, Microsoft Word 97-2003 belgesi mi, şablon mu, Office Açık XML WordprocessingML belgesi mi yoksa desteklenen diğer biçimler mi olduğunu belirlemenize olanak tanır. Öğreticide sağlanan kod, bu özelliği uygularken size yol gösterecektir.
+
+#### Aspose.Words for .NET hangi belge formatlarını destekliyor?
+
+Aspose.Words for .NET, Microsoft Word 97-2003 belgeleri (DOC), Şablonlar (DOT), Office Open XML WordprocessingML belgeleri (DOCX), Office Open XML WordprocessingML belgeleri (DOCM), Office Open gibi çeşitli belge biçimlerini destekler. Makrosuz XML WordprocessingML şablonları (DOTX), Makrolu Office Open XML WordprocessingML şablonları (DOTM), Flat OPC belgeleri, RTF belgeleri, Microsoft Word 2003 WordprocessingML belgeleri, HTML belgeleri, MHTML (Web arşivi) belgeleri, OpenDocument Text (ODT) belgeleri, OpenDocument Metin (OTT) şablonları, MS Word 6 veya Word 95 belgeleri ve bilinmeyen belge biçimleri.
+
+#### Biçim tespiti sırasında şifrelenmiş belge dosyaları nasıl işlenir?
+
+ Bir belge dosyasının biçimini algılarken,`IsEncrypted` mülkiyeti`FileFormatInfo` dosyanın şifrelenip şifrelenmediğini kontrol etmek için nesne. Dosya şifrelenmişse, bu özel durumla başa çıkmak için dosyayı şifrelenmiş belgelere ayrılmış bir dizine kopyalamak gibi ek adımlar atabilirsiniz. kullanabilirsiniz`File.Copy` bunu yapmak için yöntem.
+
+#### Bir belgenin formatı bilinmediğinde hangi işlemler yapılmalıdır?
+
+Bir belgenin biçimi bilinmediğinde, onu uygulamanıza özel bir şekilde işlemeye karar verebilirsiniz. Öğreticide verilen örnekte, belge, biçimi bilinmeyen belgelere ayrılmış belirli bir dizine kopyalanmıştır. Bu eylemi özel ihtiyaçlarınıza uyacak şekilde özelleştirebilirsiniz.
+
+#### Aspose.Words for .NET'in belge formatı tespiti ile birlikte kullanılabilecek başka özellikleri var mı?
+
+Evet, Aspose.Words for .NET, Word belgelerini işlemek ve değiştirmek için birçok başka özellik sunar. Örneğin, belgelerden metin, resim veya meta veri ayıklamak, biçimlendirme değişiklikleri uygulamak, belgeleri birleştirmek, belgeleri farklı biçimlere dönüştürmek ve daha fazlası için kitaplığı kullanabilirsiniz.

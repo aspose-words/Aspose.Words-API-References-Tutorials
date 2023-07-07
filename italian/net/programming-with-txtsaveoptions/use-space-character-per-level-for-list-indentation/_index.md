@@ -92,3 +92,28 @@ namespace Example
 ## Conclusione
 
 In questa guida, abbiamo spiegato come utilizzare Aspose.Words per .NET per applicare la funzionalità "Usa un carattere spazio per livello per il rientro dell'elenco". Seguendo i passaggi forniti e utilizzando il codice sorgente C# fornito, è possibile configurare facilmente il rientro degli elenchi nei documenti di Word utilizzando un carattere spazio per livello. Aspose.Words offre un'enorme flessibilità e potenza per lavorare con la formattazione del testo e la gestione degli elenchi, consentendoti di creare documenti ben strutturati nella tua applicazione C#.
+
+### Domande frequenti
+
+#### D: Cos'è Aspose.Words per .NET?
+Aspose.Words per .NET è una potente libreria per creare, modificare e manipolare documenti Word in un'applicazione C#. Offre molte funzionalità per lavorare con i documenti di Word, inclusa la possibilità di utilizzare uno spazio per livello per gli elenchi di rientro.
+
+#### D: Come posso utilizzare uno spazio per livello per il rientro dell'elenco con Aspose.Words per .NET?
+Puoi utilizzare uno spazio per livello per il rientro dell'elenco seguendo questi passaggi:
+
+ Creare un nuovo documento utilizzando il file`Document` classe.
+
+ Usa il`DocumentBuilder`class per aggiungere contenuto al documento e creare un elenco con più livelli di indentazione.
+
+ Dopo aver aggiunto il contenuto e configurato il rientro dell'elenco, utilizzare il file`TxtSaveOptions` classe e impostare il`ListIndentation.Count` proprietà al numero di livelli di indentazione e al`ListIndentation.Character` proprietà sullo spazio (`' '`) usare.
+
+ Salvare il documento con le opzioni specificate utilizzando il file`Save` metodo del`Document` classe.
+
+#### D: Aspose.Words supporta altri caratteri per il rientro dell'elenco?
+Sì, Aspose.Words supporta altri caratteri per gli elenchi di indentazione. Puoi utilizzare caratteri diversi dagli spazi bianchi, come le tabulazioni (`'\t'` ) o altri caratteri speciali, impostando il`ListIndentation.Character` proprietà al carattere desiderato.
+
+#### D: È possibile personalizzare il numero di spazi per livello per il rientro dell'elenco?
+ Sì, puoi personalizzare il numero di spazi per livello per il rientro dell'elenco modificando il valore di`ListIndentation.Count` proprietà nel`TxtSaveOptions` classe. È possibile specificare il numero di spazi desiderati per ogni livello di indentazione.
+
+#### D: Quali altre funzionalità offre Aspose.Words per la gestione delle liste?
+Aspose.Words offre molte funzionalità per la gestione degli elenchi nei documenti di Word. Puoi creare elenchi numerati o puntati, impostare i livelli di rientro, personalizzare lo stile degli elenchi, aggiungere voci di elenco e altro ancora.

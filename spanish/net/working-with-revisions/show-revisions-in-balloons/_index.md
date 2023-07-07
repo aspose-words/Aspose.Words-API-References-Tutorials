@@ -63,5 +63,33 @@ doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Rig
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
+## Conclusión
+
+En este tutorial, aprendimos a mostrar revisiones en globos en un documento de Word usando Aspose.Words para .NET. Al usar las opciones de visualización adecuadas, pudimos hacer que las revisiones fueran visibles en burbujas con barras de revisión en el lado derecho. Aspose.Words para .NET ofrece muchas funciones potentes para manipular documentos de Word, incluida la gestión de revisiones. Ahora puede usar este conocimiento para mostrar revisiones en globos en sus propios documentos de Word usando Aspose.Words para .NET.
 
 
+### Preguntas frecuentes
+
+#### P: ¿Cómo cargar un documento en Aspose.Words para .NET?
+
+ R: Usa el`Document` clase de Aspose.Words para .NET para cargar un documento desde un archivo. Puede especificar la ruta completa del documento.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### P: ¿Cómo mostrar revisiones en globos con Aspose.Words para .NET?
+
+ R: Usa el`ShowInBalloons` propiedad de la`RevisionOptions` objeto para configurar la visualización de revisiones en globos. Puede establecer esta propiedad en`ShowInBalloons.FormatAndDelete` para mostrar revisiones en globos con borrado y revisiones de formato.
+
+```csharp
+doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
+```
+
+#### P: ¿Cómo guardar un documento en formato PDF con Aspose.Words para .NET?
+
+ R: Usa el`Save` metodo de la`Document` objeto para guardar el documento en formato PDF. Debe especificar la ruta de destino completa con la extensión ".pdf".
+
+```csharp
+doc.Save("path/to/destination/document.pdf");
+```

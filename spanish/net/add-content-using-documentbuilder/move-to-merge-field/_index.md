@@ -40,7 +40,7 @@ Assert.Null(builder.CurrentNode);
 ```
 ## Paso 4: mover el cursor del generador de documentos al campo de combinación
 
-Para mover el cursor del generador de documentos al campo de combinación, utilice el método MoveToField de la clase DocumentBuilder:
+Para mover el cursor del generador de documentos al campo de combinación, use el método MoveToField de la clase DocumentBuilder:
 
 ```csharp
 builder.MoveToField(field, true);

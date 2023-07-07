@@ -26,7 +26,7 @@ Creamos un nuevo objeto LoadOptions y establecemos la propiedad Encoding en la c
 
 ## Cargando archivo CHM
 
-Ahora que hemos configurado las opciones de carga, podemos cargar el archivo CHM utilizando la clase Documento y especificar las opciones de carga. Aquí hay un ejemplo :
+Ahora que hemos configurado las opciones de carga, podemos cargar el archivo CHM utilizando la clase Document y especificar las opciones de carga. Aquí hay un ejemplo :
 
 ```csharp
 Document doc = new Document(dataDir + "HTML help.chm", loadOptions);

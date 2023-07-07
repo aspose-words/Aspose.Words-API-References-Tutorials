@@ -25,7 +25,7 @@ Document mainDoc = new Document(MyDir + "Document insert 1.docx");
 Nous allons maintenant configurer les options de recherche et de remplacement en spécifiant le sens de recherche et le rappel de remplacement pour insérer un document dans un autre document. Voici comment:
 
 ```csharp
-//Configurez les options de recherche et de remplacement.
+// Configurez les options de recherche et de remplacement.
 FindReplaceOptions options = new FindReplaceOptions
 {
 Direction = FindReplaceDirection.Backward,

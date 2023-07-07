@@ -16,6 +16,6 @@ Tack vare dessa handledningar kommer du att fullt ut kunna utnyttja funktionerna
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Lägg till Bidi Marks](./add-bidi-marks/) | Lär dig att lägga till Bidi-märken i ett Word-dokument med Aspose.Words för .NET och skapa professionella flerspråkiga dokument. |
+| [Lägg till Bidi-märken i Word-dokument](./add-bidi-marks/) | Lär dig att lägga till Bidi-märken i ett Word-dokument med Aspose.Words för .NET och skapa professionella flerspråkiga dokument. |
 | [Använd fliktecken per nivå för listindrag](./use-tab-character-per-level-for-list-indentation/) | Lär dig hur du använder funktionen för indragslistor med tabbtecken i Aspose.Words för .NET. Följ denna steg-för-steg-guide för att skapa välstrukturerade och läsbara dokument. Spara tid och förbättra ditt arbetsflöde med denna kraftfulla funktion. Få tillgång till hela handledningen nu. |
 | [Använd mellanslagstecken per nivå för listindrag](./use-space-character-per-level-for-list-indentation/) | Steg-för-steg-guide för att använda ett mellanslagstecken per nivå för listindrag i Aspose.Words för .NET. Skapa välstrukturerade Word-dokument med lätthet. |

@@ -60,4 +60,21 @@ builder.ParagraphFormat.Style = fencedCodeWithInfo;
 builder.Writeln("This is a fenced code with info string");
 ```
 
+### SSS
+
+#### S: Markdown'da sınırlandırılmış kod nedir?
+
+Y: Markdown'da sınırlandırılmış kod, bir Markdown belgesinde kodu görüntülemek için kullanılan bir biçimlendirme yöntemidir. Kodu belirli sınırlayıcılarla çerçevelemekten oluşur.
+
+#### S: Markdown'da sınırlandırılmış kodun faydaları nelerdir?
+
+C: Markdown'daki sınırlandırılmış kod, kodun okunabilirliğini artırır ve okuyucuların anlamasını kolaylaştırır. Ayrıca, bazı Markdown editörlerinde sözdizimi vurgulamanın korunmasına da izin verir.
+
+#### S: Markdown'da sınırlandırılmış ve girintili kod arasındaki fark nedir?
+
+C: Sınırlandırılmış kod, kodu çevrelemek için belirli sınırlayıcılar kullanırken girintili kod, her kod satırının boşluk veya sekmelerle girintilenmesini içerir.
+
+#### S: Markdown'daki sınırlandırılmış kod, tüm Markdown editörleri tarafından destekleniyor mu?
+
+Y: Markdown'da sınırlandırılmış kod desteği, Markdown editörleri arasında değişiklik gösterebilir. Emin olmak için yayıncınızın özel belgelerini kontrol edin.
 

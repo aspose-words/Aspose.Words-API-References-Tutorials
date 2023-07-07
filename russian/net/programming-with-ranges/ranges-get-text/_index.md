@@ -50,7 +50,7 @@ Console.WriteLine(text);
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Загрузите документ Word
+// Загрузите документ Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // Извлечь текст из документа

@@ -46,7 +46,7 @@ foreach(Field field in doc.Range.Fields)
 }
 ```
 
- Cette boucle parcourt tous les champs du document à la recherche de champs de type`FieldType.FieldHyperlink` . Une fois qu'un champ de ce type est trouvé, nous vérifions s'il s'agit d'un lien local en cochant la`SubAddress` propriété. Sinon, nous remplaçons l'adresse du lien par`"http://www.aspose.com"`et le résultat avec`"Aspose - The .NET & Java Component Editor"`.
+ Cette boucle parcourt tous les champs du document à la recherche de champs de type`FieldType.FieldHyperlink` . Une fois qu'un champ de ce type est trouvé, nous vérifions s'il s'agit d'un lien local en cochant la`SubAddress` propriété. Sinon, nous remplaçons l'adresse du lien par`"http://www.aspose.com"` et le résultat avec`"Aspose - The .NET & Java Component Editor"`.
 
 ## Étape 4 : Enregistrer le document modifié
 
@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
 Ceci est un exemple de code source pour remplacer les liens hypertexte dans un document à l'aide d'Aspose.Words pour .NET.
+
+### FAQ
+
+#### Q : Comment puis-je remplacer des liens hypertexte dans un document Word à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour remplacer des liens hypertexte dans un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Document.Range.Replace`méthode spécifiant le texte à rechercher et le texte de remplacement. Veillez à utiliser les options appropriées pour définir les paramètres de recherche et de remplacement.
+
+#### Q : Est-il possible de remplacer uniquement certains hyperliens dans un document Word par Aspose.Words pour .NET ?
+
+R : Oui, il est possible de remplacer uniquement certains hyperliens dans un document Word avec Aspose.Words pour .NET. Vous pouvez filtrer les hyperliens à remplacer à l'aide de critères spécifiques, tels que l'URL du lien, le texte du lien ou toute autre propriété pertinente. Ensuite, vous pouvez appliquer le remplacement uniquement aux hyperliens correspondants.
+
+#### Q : Comment puis-je ignorer les liens hypertexte dans les en-têtes, les pieds de page ou les notes de bas de page lors du remplacement par Aspose.Words pour .NET ?
+
+R : Pour ignorer les liens hypertexte dans les en-têtes, les pieds de page ou les notes de bas de page lors du remplacement par Aspose.Words pour .NET, vous pouvez utiliser les options de recherche avancées et spécifier les limites de recherche appropriées. Par exemple, vous pouvez limiter la recherche aux principales sections du document et exclure les en-têtes, les pieds de page ou les notes de bas de page.
+
+#### Q : Est-il possible de remplacer les hyperliens par des liens internes vers d'autres parties du document ?
+
+ R : Oui, il est possible de remplacer les hyperliens par des liens internes vers d'autres parties du document avec Aspose.Words pour .NET. Vous pouvez utiliser des ancres ou des identifiants de texte pour créer des liens internes, puis les remplacer à l'aide de la`Document.Range.Replace` méthode avec les options appropriées.
+
+#### Q : Le remplacement des liens hypertexte par Aspose.Words pour .NET préserve-t-il les propriétés des liens, telles que les couleurs ou les styles ?
+
+R : Oui, lors du remplacement des liens hypertexte par Aspose.Words pour .NET, les propriétés des liens telles que les couleurs ou les styles sont conservées. Vous pouvez spécifier les mêmes propriétés de formatage dans le texte de remplacement pour obtenir un résultat cohérent.

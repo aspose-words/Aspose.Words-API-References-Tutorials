@@ -86,7 +86,7 @@ foreach (Paragraph para in paragraphs)
 	if (para.ParagraphFormat.PageBreakBefore)
 		para.ParagraphFormat.PageBreakBefore = false;
 
-	//Проверьте все прогоны в абзаце на наличие разрывов страниц и удалите их.
+	// Проверьте все прогоны в абзаце на наличие разрывов страниц и удалите их.
 	foreach (Run run in para.Runs)
 	{
 		if (run.Text.Contains(ControlChar.PageBreak))

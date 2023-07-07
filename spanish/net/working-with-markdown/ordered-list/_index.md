@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: Aplicar el formato de lista ordenada
 
-Aplicaremos el formato de lista ordenada usando el generador de documentos`ApplyBulletDefault` método. También podemos personalizar el formato de numeración yendo a los niveles de la lista y configurando el formato que queramos.
+ Aplicaremos el formato de lista ordenada usando el generador de documentos`ApplyBulletDefault`método. También podemos personalizar el formato de numeración yendo a los niveles de la lista y configurando el formato que queramos.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
@@ -73,3 +73,25 @@ builder.Writeln("Item 2b");
 
 ¡Felicidades! Ahora ha aprendido a usar la función de lista ordenada con Aspose.Words para .NET.
 
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo crear una lista ordenada en Markdown?
+
+R: Para crear una lista ordenada en Markdown, comience cada elemento de la lista con un número seguido de un punto (`1.`, `2.`, `3.`), seguido de un espacio.
+
+#### P: ¿Podemos anidar listas ordenadas en Markdown?
+
+R: Sí, es posible anidar listas ordenadas en Markdown agregando cuatro espacios de compensación delante de cada elemento de la lista anidada.
+
+#### P: ¿Cómo personalizar la numeración de listas ordenadas?
+
+R: En Markdown estándar, la numeración de lista ordenada se genera automáticamente. Sin embargo, algunos editores de Markdown te permiten personalizarlo usando extensiones específicas.
+
+#### P: ¿Las listas ordenadas en Markdown admiten sangría?
+
+R: Sí, las listas ordenadas en Markdown admiten la sangría. Puede agregar un desplazamiento a la izquierda usando espacios o tabulaciones.
+
+#### P: ¿Se pueden agregar enlaces o texto en línea a los elementos de la lista?
+
+R: Sí, puede agregar enlaces o texto en línea para enumerar elementos utilizando la sintaxis de Markdown adecuada.

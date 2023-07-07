@@ -64,3 +64,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 
 ## Conclusión
 En este tutorial, aprendimos a configurar varias carpetas de fuentes al representar un documento con Aspose.Words para .NET. Al seguir esta guía paso a paso, puede especificar fácilmente varias carpetas de fuentes para usar al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para trabajar con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar las fuentes de fuentes utilizadas al renderizar sus documentos según sus necesidades específicas.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo configurar varias carpetas de fuentes en Aspose.Words?
+
+ R: Para configurar varias carpetas de fuentes en Aspose.Words, puede usar el`SetFontsFolders` metodo de la`Fonts` class que proporciona una lista de ubicaciones de carpetas de fuentes personalizadas.
+
+#### P: ¿La configuración de varias carpetas de fuentes afecta a todos los documentos procesados con Aspose.Words?
+
+R: Sí, la configuración de varias carpetas de fuentes afecta a todos los documentos procesados con Aspose.Words. Una vez que haya definido las carpetas de fuentes, Aspose.Words usará estas ubicaciones para buscar fuentes en todos los documentos.
+
+#### P: ¿Cuántas carpetas de fuentes puedo definir en Aspose.Words?
+
+R: Puede definir tantas carpetas de fuentes como necesite en Aspose.Words. No existe un límite específico para la cantidad de carpetas de fuentes que puede definir.
+
+#### P: ¿Cómo puedo verificar las carpetas de fuentes definidas en Aspose.Words?
+
+ R: Para verificar las carpetas de fuentes definidas en Aspose.Words, puede usar el`GetFolders` metodo de la`Fonts` class para obtener las ubicaciones de las carpetas de fuentes configuradas.
+
+#### P: ¿Las carpetas de fuentes deben contener fuentes específicas?
+
+R: Sí, las carpetas de fuentes deben contener las fuentes que desea usar en sus documentos de Word. Aspose.Words buscará fuentes en las carpetas especificadas al procesar documentos.

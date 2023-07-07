@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
- In questo passaggio, configuriamo le opzioni per il caricamento del documento RTF. Creiamo un nuovo`RtfLoadOptions` oggetto e impostare il`RecognizeUtf8Text` proprietà a`true`Ciò consente ad Aspose.Words di riconoscere ed elaborare correttamente il testo con codifica UTF-8 durante il caricamento del documento.
+ In questo passaggio, configuriamo le opzioni per il caricamento del documento RTF. Creiamo un nuovo`RtfLoadOptions` oggetto e impostare il`RecognizeUtf8Text` proprietà a`true`. Ciò consente ad Aspose.Words di riconoscere ed elaborare correttamente il testo con codifica UTF-8 durante il caricamento del documento.
 
 ## Passaggio 3: caricamento del documento
 

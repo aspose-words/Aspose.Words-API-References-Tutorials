@@ -37,7 +37,7 @@ builder.Write(" for more information.");
 ```
 
 ## Étape 3 : Enregistrer le document
-Après avoir inséré le lien hypertexte, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
+Après avoir inséré le lien hypertexte, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHyperlink.docx");

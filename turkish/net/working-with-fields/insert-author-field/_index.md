@@ -71,3 +71,21 @@ doc.Save(dataDir + "InsertionAuthorField.docx");
 Bu örnekte yeni bir belge oluşturduk, YAZAR alanı ekledik, yazar adını yapılandırdık ve belgeyi belirtilen dosya adıyla kaydettik.
 
 Bu, Aspose.Words for .NET ile "YAZAR Alanı Girin" özelliğinin kullanımına ilişkin kılavuzumuzu sonlandırıyor.
+
+### SSS
+
+#### S: Aspose.Words'te yazar alanı nedir?
+
+A: Aspose.Words'teki Yazar Alanı, yazarın adını bir Word belgesine otomatik olarak ekleyen ve güncelleyen özel bir alandır. Genellikle belgeyi kimin oluşturduğunu veya değiştirdiğini belirtmek için kullanılır.
+
+#### S: Bir Word belgesindeki yazar alanı Aspose.Words ile nasıl güncellenir?
+
+C: Bir Word belgesindeki yazar alanı, geçerli yazarın adını yansıtacak şekilde güncellenebilir. Bunun için Document sınıfında bulunan UpdateFields yöntemini kullanabilirsiniz. Bu yöntem, yazar alanı da dahil olmak üzere belgedeki tüm alanları güncelleyecektir.
+
+#### S: Bir Word belgesinde yazar alanının biçimini özelleştirmek mümkün müdür?
+
+C: Evet, bir Word belgesinde yazar alanının biçimini özelleştirmek mümkündür. Varsayılan olarak, yazar alanı yalnızca yazarın adını görüntüler. Ancak, Aspose.Words'te bulunan biçimlendirme seçeneklerini kullanarak değişiklik tarihi ve saati gibi ek bilgiler ekleyebilirsiniz.
+
+#### S: Yazar alanı, yazarın adında sonradan yapılan değişikliklere duyarlı mı?
+
+C: Evet, yazar alanı, yazar adında sonradan yapılacak değişikliklere karşı hassastır. Belge özelliklerinde yazar adını değiştirirseniz, belge alanları güncellenirken yazar alanı otomatik olarak yeni adla güncellenir.

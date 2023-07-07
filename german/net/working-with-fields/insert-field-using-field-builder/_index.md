@@ -85,3 +85,24 @@ doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
 In diesem Beispiel haben wir ein neues Dokument erstellt, ein IF-Feld mit verschachtelten MERGEFIELD-Feldern erstellt und dieses Feld dann an einer angegebenen Stelle in das Dokument eingefügt. Das Dokument wird dann unter einem bestimmten Dateinamen gespeichert.
+
+### FAQs
+
+#### F: Was ist ein Feldkonstruktor in Aspose.Words?
+
+A: Ein Field Builder in Aspose.Words ist ein leistungsstarkes Tool zum Erstellen und Bearbeiten von Feldern in einem Word-Dokument. Es bietet erweiterte Funktionen zum Erstellen und Anpassen von Feldern, einschließlich des Einfügens von Feldcodes und der Verwaltung von Formatierungsoptionen.
+
+#### F: Welche Arten von Feldern können mit dem Feld-Builder eingefügt werden?
+
+A: Mit dem Feld-Builder in Aspose.Words können Sie verschiedene Feldtypen in ein Word-Dokument einfügen. Hier sind einige Beispiele für häufig verwendete Feldtypen:
+
+- MERGEFIELD: Wird zum Zusammenführen von Daten aus externen Quellen verwendet.
+- DATUM: Zeigt das aktuelle Datum an.
+- SEITE: Zeigt die aktuelle Seitenzahl an.
+- IF: ermöglicht es, die Anzeige eines Inhalts entsprechend einer Bedingung zu konditionieren.
+- Inhaltsverzeichnis: generiert automatisch ein Inhaltsverzeichnis basierend auf den Dokumenttitelstilen.
+
+#### F: Wie kann ich die mit dem Feld-Builder eingefügten Felder anpassen?
+
+A: Der Feld-Builder bietet Anpassungsoptionen für eingefügte Felder. Sie können Feldkonstruktormethoden und -eigenschaften verwenden, um Optionen wie Feldformatierung, Argumente, Schalter und Standardwerte festzulegen. Sie können beispielsweise das Datumsformat, das Zahlenformat, das Tausendertrennzeichen usw. festlegen.
+  

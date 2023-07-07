@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // Schneller und getippter Zugriff auf die erste Zeile der Tabelle.
+     //Schneller und getippter Zugriff auf die erste Zeile der Tabelle.
      table.FirstRow?.Remove();
 
      // Schneller und getippter Zugriff auf die letzte Zeile der Tabelle.
@@ -79,4 +79,24 @@ foreach (Table table in tables)
 
 Dies ist ein vollständiger Beispielcode für den typisierten Zugriff auf Tabellen mit Aspose.Words für .NET. Stellen Sie sicher, dass Sie die erforderlichen Referenzen importieren und die zuvor beschriebenen Schritte befolgen, um diesen Code in Ihr Projekt zu integrieren.
 
----
+### FAQs
+
+#### F: Was ist typisierter Zugriff in Node.js?
+
+A: Typisierter Zugriff in Node.js bezieht sich auf die Verwendung bestimmter Knotentypen für den Zugriff auf Knoteneigenschaften und -werte in einem XML-Dokument. Anstatt generische Eigenschaften zu verwenden, verwendet der typisierte Zugriff spezifische Methoden, um auf bestimmte Knotentypen wie Textknoten, Elementknoten, Attributknoten usw. zuzugreifen.
+
+#### F: Wie greife ich mit typisiertem Zugriff auf Knoten zu?
+
+ A: Um über den typisierten Zugriff in Node.js auf Knoten zuzugreifen, können Sie je nach Knotentyp, auf den Sie zugreifen möchten, bestimmte Methoden verwenden. Sie können zum Beispiel die verwenden`getElementsByTagName` Methode zum Zugriff auf alle Knoten eines bestimmten Typs, die`getAttribute` Methode zum Zugriff auf den Wert eines Attributs usw.
+
+#### F: Welche Vorteile bietet der typisierte Zugriff gegenüber dem untypisierten Zugriff?
+
+A: Der typisierte Zugriff hat gegenüber dem untypisierten Zugriff mehrere Vorteile. Erstens ermöglicht es eine bessere Spezifität beim Zugriff auf Knoten und erleichtert so die Bearbeitung und Verwaltung von Knoten in einem XML-Dokument. Darüber hinaus bietet der typisierte Zugriff eine bessere Sicherheit, da Typfehler beim Zugriff auf Knoteneigenschaften und -werte vermieden werden.
+
+#### F: Auf welche Arten von Knoten kann mit typisiertem Zugriff zugegriffen werden?
+
+A: Mit dem typisierten Zugriff in Node.js können Sie auf verschiedene Knotentypen zugreifen, z. B. Elementknoten, Textknoten, Attributknoten usw. Jeder Knotentyp verfügt über seine eigenen spezifischen Methoden und Eigenschaften, um auf seine Eigenschaften und Werte zuzugreifen.
+
+#### F: Wie gehe ich mit Fehlern beim getippten Zugriff um?
+
+ A: Um Fehler beim typisierten Zugriff in Node.js zu behandeln, können Sie Fehlerbehandlungsmechanismen wie verwenden`try...catch` Blöcke. Wenn beim Zugriff auf einen bestimmten Knoten ein Fehler auftritt, können Sie den Fehler erfassen und entsprechende Maßnahmen zur Behebung ergreifen, z. B. das Anzeigen einer Fehlermeldung oder das Durchführen einer Rettungsaktion.

@@ -76,3 +76,25 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
 N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en fonction de vos besoins spécifiques.
+
+### FAQ
+
+#### Q : Comment puis-je styliser les notes de fin dans Aspose.Words ?
+
+ A: Pour styliser les notes de fin dans Aspose.Words, vous pouvez utiliser le`EndnoteOptions` classe et la`SeparatorNoteTextStyle` propriété. Vous pouvez spécifier le style de police, la taille, la couleur, etc. pour les notes de fin à l'aide de cette propriété.
+
+#### Q : Est-il possible de personnaliser la numérotation des notes de fin dans un document ?
+
+ R : Oui, il est possible de personnaliser la numérotation des notes de fin dans un document. Vous pouvez utiliser le`RestartRule` et`NumberStyle` propriétés de la`EndnoteOptions` class pour définir des règles de redémarrage et des styles de numérotation spécifiques.
+
+#### Q : Comment positionner les notes de fin dans un document ?
+
+ R : Pour positionner les notes de fin dans un document, vous pouvez utiliser le`Position` propriété de la`EndnoteOptions` classe. Vous pouvez spécifier si les notes de fin doivent être placées au bas de chaque page, à la fin de chaque section ou à la fin du document.
+
+#### Q : Puis-je personnaliser le format de numérotation des notes de fin ?
+
+ R : Oui, vous pouvez personnaliser le format de numérotation des notes de fin dans Aspose.Words. Utilisez le`NumberFormat` propriété de la`EndnoteOptions` class pour définir le format souhaité, tel que les chiffres arabes, les chiffres romains, les lettres, etc.
+
+#### Q : Est-il possible de continuer la numérotation des notes de fin entre les sections d'un document ?
+
+ R : Oui, il est possible de continuer la numérotation des notes de fin entre les sections d'un document. Utilisez le`RestartRule` propriété de la`EndnoteOptions` classe et réglez-le sur`RestartContinuous` pour permettre à la numérotation de continuer entre les sections.

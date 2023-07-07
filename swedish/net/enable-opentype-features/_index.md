@@ -3,6 +3,7 @@ title: Aktivera OpenType-funktioner
 linktitle: Aktivera OpenType-funktioner
 second_title: Aspose.Words för .NET API Referens
 description: Lär dig hur du aktiverar OpenType-funktioner i Word-dokument med Aspose.Words för .NET. Handledningarna guidar dig genom stegen för att aktivera avancerade funktioner i OpenType-teckensnitt.
+type: docs
 weight: 40
 url: /sv/net/enable-opentype-features/
 ---

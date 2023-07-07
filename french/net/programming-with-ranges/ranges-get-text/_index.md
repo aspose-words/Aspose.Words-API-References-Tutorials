@@ -50,7 +50,7 @@ Dans cet exemple, nous utilisons la méthode WriteLine de la classe Console pour
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document Word
+// Charger le document Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // Extraire le texte du document

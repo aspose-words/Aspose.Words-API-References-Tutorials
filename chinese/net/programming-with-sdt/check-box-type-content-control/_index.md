@@ -13,34 +13,34 @@ url: /zh/net/programming-with-sdt/check-box-type-content-control/
 ## 先决条件
 要学习本教程，您需要具备以下条件：
 
-- 安装了 Aspose.Words for .NET 库。
-- C# 的基本知识和使用 Word 文档。
+- 已安装 Aspose.Words for .NET 库。
+- C# 和使用 Word 文档的基本知识。
 
 ## 第 1 步：设置文档目录
-首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`使用要保存文档的目录的实际路径。
+首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`与要保存文档的目录的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 第 2 步：创建文档和 DocumentBuilder
-创建一个新的实例`Document`类和一个`DocumentBuilder`构建文档的内容。
+创建一个新实例`Document`类和一个`DocumentBuilder`构建文档的内容。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 第 3 步：添加复选框类型内容控件
-创建一个`StructuredDocumentTag`和`SdtType.Checkbox`表示复选框内容控件。指定`MarkupLevel.Inline`将其放在文本中。
+## 步骤 3：添加复选框类型内容控件
+创建一个`StructuredDocumentTag`和`SdtType.Checkbox`代表复选框内容控件。指定`MarkupLevel.Inline`将其放置在文本中。
 
 ```csharp
 StructuredDocumentTag sdtCheckBox = new StructuredDocumentTag(doc, SdtType.Checkbox, MarkupLevel.Inline);
 builder.InsertNode(sdtCheckBox);
 ```
 
-## 第 4 步：保存文档
-使用 将文档保存到指定目录`Save`方法。提供具有适当文件扩展名的所需文件名。在此示例中，我们将文档保存为“WorkingWithSdt.CheckBoxTypeContentControl.docx”。
+## 步骤 4：保存文档
+使用以下命令将文档保存到指定目录`Save`方法。提供所需的文件名和适当的文件扩展名。在此示例中，我们将文档另存为“WorkingWithSdt.CheckBoxTypeContentControl.docx”。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.Docx);
@@ -59,4 +59,4 @@ doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.
 	doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.Docx);
 ```
 
-就是这样！您已经使用 Aspose.Words for .NET 在您的 Word 文档中成功创建了一个复选框类型内容控件。
+就是这样！您已使用 Aspose.Words for .NET 在 Word 文档中成功创建了复选框类型内容控件。

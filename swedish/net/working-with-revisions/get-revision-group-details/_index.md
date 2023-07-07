@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-revisions/get-revision-group-details/
 ---
 
-den här steg-för-steg-guiden kommer vi att visa dig hur du får information om en grupp revisioner i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förse dig med den fullständiga källkoden och visa dig hur du formaterar markdown-utdata.
+I den här steg-för-steg-guiden kommer vi att visa dig hur du får information om en grupp revisioner i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förse dig med den fullständiga källkoden och visa dig hur du formaterar markdown-utdata.
 
 ## Steg 1: Ladda dokumentet
 
@@ -59,3 +59,47 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
+## Slutsats
+
+den här självstudien lärde vi oss hur man får information om en grupp revisioner i ett Word-dokument med Aspose.Words för .NET. Genom att använda en loop och lämpliga egenskaper kunde vi visa detaljer som revisionstyp, författare, datum och reviderad text. Aspose.Words för .NET erbjuder många kraftfulla funktioner för att manipulera Word-dokument, inklusive revisionshantering. Du kan nu använda den här kunskapen för att få detaljer om revisionsgrupp till dina egna Word-dokument med Aspose.Words för .NET.
+
+### FAQ's
+
+#### F: Hur laddar jag ett dokument med ändringar i Aspose.Words för .NET?
+
+ A: Använd`Document`klass av Aspose.Words för .NET för att ladda ett dokument från en fil som innehåller revisioner. Du kan ange hela dokumentsökvägen.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### F: Hur får jag information om en revisionsgrupp i Aspose.Words för .NET?
+
+ S: Gå igenom versionerna av dokumentet med hjälp av en loop och få tillgång till egenskaperna för varje version för att få de detaljer du vill ha. Du kan använda`RevisionType`, `Author`, `DateTime` och`ParentNode` egenskaper för att få revisionstyp, författare, datum respektive reviderad text.
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+      Console.WriteLine("Type: " + revision.RevisionType
+
+);
+      Console.WriteLine("Author: " + revision.Author);
+      Console.WriteLine("Date: " + revision.DateTime);
+      Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
+}
+```
+
+#### F: Hur kontrollerar man om en revision tillhör en grupp i Aspose.Words för .NET?
+
+ A: Använd`Group` egendom av`Revision` objekt för att kontrollera om en revision tillhör en grupp. Om`Group` egendom är`null`betyder det att revisionen inte tillhör någon grupp.
+
+```csharp
+if (revision.Group != null)
+{
+      // Revisionen tillhör en grupp
+}
+else
+{
+      // Revisionen tillhör inte någon grupp
+}
+```

@@ -21,7 +21,7 @@ Lägga till innehåll med DocumentBuilder är en omfattande resurs som leder dig
 | [Insert Break](./insert-break/) | Lär dig hur du infogar sidbrytningar i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide. |
 | [Infoga textinmatningsformulärfält](./insert-text-input-form-field/) | Lär dig hur du använder Aspose.Words för .NET för att infoga formulärfält för textinmatning i Word-dokument med denna steg-för-steg-guide. |
 | [Infoga kryssruta formulärfält](./insert-check-box-form-field/) | Lär dig hur du infogar kryssrutaformulär i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide. |
-| [Infoga formulärfält för kombinationsruta](./insert-combo-box-form-field/) | Lär dig hur du infogar kombinationsrutaformulär i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide. |
+| [Infoga kombinationsruta formulärfält](./insert-combo-box-form-field/) | Lär dig hur du infogar kombinationsrutaformulär i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide. |
 | [Infoga HTML](./insert-html/) | Lär dig hur du infogar HTML-innehåll i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide. |
 | [Infoga hyperlänk](./insert-hyperlink/) | Lär dig hur du infogar hyperlänkar i Word-dokument med hjälp av Aspose.Words för .NET Steg-för-steg-guide. |
 | [Infoga innehållsförteckning](./insert-table-of-contents/) | lär dig hur du infogar en innehållsförteckning i ett Word-dokument med Aspose.Words för .NET |

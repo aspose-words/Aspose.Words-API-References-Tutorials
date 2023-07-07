@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## الخطوة 2: تعيين مجلد الخط الافتراضي
- ثم يمكنك تعيين مجلد الخط الافتراضي باستخدام ملف`FontSettings.DefaultInstance` الطبقة و`SetFontsFolder()` طريقة. حدد المسار إلى مجلد الخطوط الذي تريد استخدامه كمجلد افتراضي.
+ثم يمكنك تعيين مجلد الخط الافتراضي باستخدام ملف`FontSettings.DefaultInstance` الطبقة و`SetFontsFolder()` طريقة. حدد المسار إلى مجلد الخطوط الذي تريد استخدامه كمجلد افتراضي.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
@@ -41,13 +41,35 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders Default Instance باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// المسار إلى دليل المستند الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
-	Document doc = new Document(dataDir + "Rendering.docx");
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
+FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
+Document doc = new Document(dataDir + "Rendering.docx");
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ```
 
 ## خاتمة
 في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلد الخط الافتراضي عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلد الخطوط الذي تريد استخدامه كمجلد افتراضي عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+
+### التعليمات
+
+#### س: كيف يمكنني تعيين مجلدات الخطوط الافتراضية في Aspose.Words؟
+
+ ج: لتعيين مجلدات الخطوط الافتراضية في Aspose.Words ، يجب عليك استخدام امتداد`Fonts` الطبقة و`SetFontsFolders` طريقة لتحديد مواقع مجلد الخط المخصص.
+
+#### س: هل يؤثر تعيين مجلدات الخطوط الافتراضية على جميع مستندات Word التي تتم معالجتها باستخدام Aspose.Words؟
+
+ج: نعم ، يؤثر تعيين مجلدات الخطوط الافتراضية على جميع مستندات Word التي تتم معالجتها باستخدام Aspose.Words. بمجرد تعيين مجلدات الخطوط الافتراضية ، ستستخدم Aspose.Words هذه المواقع للبحث عن الخطوط في جميع المستندات.
+
+#### س: هل يمكنني تعيين عدة مجلدات خطوط افتراضية في Aspose.Words؟
+
+ ج: نعم ، يمكنك تعيين عدة مجلدات خطوط افتراضية في Aspose.Words. تحتاج فقط إلى تحديد مواقع مجلدات الخطوط المخصصة باستخدام امتداد`SetFontsFolders` طريقة`Fonts` فصل.
+
+#### س: كيف يمكنني التحقق من مجلدات الخطوط الافتراضية المعينة حاليًا في Aspose.Words؟
+
+ ج: للتحقق من مجلدات الخطوط الافتراضية المحددة حاليًا في Aspose.Words ، يمكنك استخدام`GetFolders` طريقة`Fonts` فئة للحصول على مواقع مجلدات الخطوط المكونة.
+
+#### س: هل يسمح لي تعيين مجلدات الخطوط الافتراضية باستخدام خطوط مخصصة في مستندات Word الخاصة بي؟
+
+ج: نعم ، من خلال تعيين مجلدات الخطوط الافتراضية ، يمكنك استخدام الخطوط المخصصة في مستندات Word الخاصة بك. كل ما تحتاجه هو وضع الخطوط في المجلدات المحددة وستستخدمها شركة Aspose. ستستخدمها الكلمات عند إنشاء المستندات أو معالجتها.

@@ -42,9 +42,23 @@ builder.Writeln("This text will be StrikeThrough");
 // Utilizzare un generatore di documenti per aggiungere contenuto al documento.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Rendi il testo Barrato.
+// Rendi il testo barrato.
 builder.Font.StrikeThrough = true;
 builder.Writeln("This text will be StrikeThrough");
 ```
 
 Congratulazioni! Ora hai imparato come applicare lo stile di testo barrato con Aspose.Words per .NET.
+
+### FAQ
+
+#### D: Come posso aggiungere il testo barrato in Aspose.Words?
+
+ A: Per aggiungere il testo barrato in Aspose.Words, puoi usare il`Font.StrikeThrough` proprietà del`Run`oggetto. Puoi impostare questa proprietà su`true` per aggiungere testo barrato a un testo specifico. Ad esempio, puoi usare`run.Font.StrikeThrough=true` per aggiungere il testo barrato nel file`Run` oggetto.
+
+#### D: È possibile aggiungere il testo barrato a più parti di testo nello stesso paragrafo?
+
+ R: Sì, puoi aggiungere testo barrato a più parti di testo in un singolo paragrafo utilizzando multiple`Run` oggetti. Puoi creare più file`Run` oggetti e impostare il`Font.StrikeThrough` proprietà a`true`per ogni oggetto per aggiungere il testo barrato alle parti di testo desiderate. Quindi puoi aggiungerli al paragrafo usando il`Paragraph.AppendChild(run)` metodo.
+
+#### D: Posso aggiungere testo barrato al testo che si trova in una tabella o in una cella in Aspose.Words?
+
+ A: Sì, puoi aggiungere testo barrato al testo che si trova in una tabella o in una cella in Aspose.Words. Puoi saltare alla cella o al paragrafo che desideri utilizzando i metodi appropriati e quindi applicare la formattazione del testo barrato utilizzando il`Font.StrikeThrough` proprietà del`Run` O`Paragraph` oggetto.

@@ -21,7 +21,7 @@ Document docB = docA.Clone();
 
 ## Paso 2: Configuración de las opciones de comparación
 
-Ahora configuraremos las opciones de comparación creando un`CompareOptions` objeto y establecer las diversas propiedades según sea necesario. Así es cómo:
+ Ahora configuraremos las opciones de comparación creando un`CompareOptions` objeto y establecer las diversas propiedades según sea necesario. Así es cómo:
 
 ```csharp
 CompareOptions options = new CompareOptions

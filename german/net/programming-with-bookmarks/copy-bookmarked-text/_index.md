@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 
-In diesem Artikel untersuchen wir den obigen C#-Quellcode, um zu verstehen, wie die Funktion „Text mit Lesezeichen kopieren“ in der Bibliothek „Aspose.Words für .NET“ verwendet wird. Mit dieser Funktion können Sie den Inhalt eines bestimmten Lesezeichens von einem Quelldokument in ein anderes Dokument kopieren.
+In diesem Artikel werden wir den obigen C#-Quellcode untersuchen, um zu verstehen, wie die Funktion „Text mit Lesezeichen kopieren“ in der Bibliothek „Aspose.Words für .NET“ verwendet wird. Mit dieser Funktion können Sie den Inhalt eines bestimmten Lesezeichens von einem Quelldokument in ein anderes Dokument kopieren.
 
 ## Voraussetzungen
 

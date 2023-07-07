@@ -71,3 +71,26 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
 // Enregistrez le document modifié.
 doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ```
+
+### FAQ
+
+#### Q : Qu'est-ce qu'un champ de conversion dans Aspose.Words ?
+
+R : Un champ de conversion dans Aspose.Words est un type de champ qui convertit une valeur ou une expression dans un autre format ou type de données. Par exemple, vous pouvez utiliser un champ de conversion pour convertir une date dans un format spécifique, un nombre en texte ou effectuer d'autres types de conversions.
+
+#### Q : Comment insérer un champ de conversion dans un paragraphe avec Aspose.Words ?
+
+R : Pour insérer un champ de conversion dans un paragraphe avec Aspose.Words, vous pouvez suivre ces étapes :
+
+1. Importez la classe Document à partir de l'espace de noms Aspose.Words.
+2. Créez une instance de Document en chargeant votre document existant.
+3. Obtenez le paragraphe où vous souhaitez insérer le champ de conversion.
+4. Utilisez la méthode InsertField pour insérer le champ de conversion avec la syntaxe correcte.
+
+#### Q : Quels formats de conversion Aspose.Words prend-il en charge ?
+
+R : Aspose.Words prend en charge une large gamme de formats de conversion dans les champs, notamment les formats de date, les formats de nombre, les formats de texte, les formats de devise, les formats de pourcentage, etc. Vous pouvez consulter la documentation Aspose.Words pour une liste complète des formats de conversion disponibles.
+
+#### Q : Comment mettre à jour un champ de conversion dans un document Word avec Aspose.Words ?
+
+: Pour mettre à jour un champ de conversion dans un document Word avec Aspose.Words, vous pouvez utiliser la méthode UpdateFields. Cette méthode parcourt le document et met à jour tous les champs, y compris les champs de conversion, en recalculant les valeurs en fonction des données actuelles.

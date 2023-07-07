@@ -2,13 +2,13 @@
 title: Klon Vba-modul
 linktitle: Klon Vba-modul
 second_title: Aspose.Words för .NET API Referens
-description: den här handledningen lär du dig hur du klona en VBA-modul från ett Word-dokument med Aspose.Words för .NET.
+description: I den här handledningen lär du dig hur du klona en VBA-modul från ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-vba-macros/clone-vba-module/
 ---
 
-I den här handledningen kommer vi att berätta för dig hur du klona en VBA-modul från ett Word-dokument med makron med hjälp av Aspose.Words-biblioteket för .NET. Genom att klona en VBA-modul kan du återanvända eller kopiera VBA-kod från ett källdokument till ett annat dokument. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
+den här handledningen kommer vi att berätta för dig hur du klona en VBA-modul från ett Word-dokument med makron med hjälp av Aspose.Words-biblioteket för .NET. Genom att klona en VBA-modul kan du återanvända eller kopiera VBA-kod från ett källdokument till ett annat dokument. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
 ## Förutsättningar
 Innan du börjar, se till att du har följande saker:
@@ -67,4 +67,4 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 ```
 
 ## Slutsats
-I den här handledningen såg vi hur man klona en VBA-modul från ett Word-dokument med makron med Aspose.Words för .NET. Genom att klona VBA-moduler kan du enkelt återanvända VBA-kod från ett källdokument i ett annat dokument. Använd gärna den här funktionen för att organisera och hantera dina makron i olika dokument.
+den här handledningen såg vi hur man klona en VBA-modul från ett Word-dokument med makron med Aspose.Words för .NET. Genom att klona VBA-moduler kan du enkelt återanvända VBA-kod från ett källdokument i ett annat dokument. Använd gärna den här funktionen för att organisera och hantera dina makron i olika dokument.

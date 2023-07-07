@@ -90,3 +90,30 @@ doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
 In diesem Beispiel haben wir ein neues Dokument erstellt, den Cursor auf den gewünschten Absatz bewegt und dann ein Feldzusammenführungsfeld in das Dokument eingefügt.
+
+### FAQs
+
+#### F: Wie kann ich mit Aspose.Words für .NET mit dem DOM ein Briefvorlagenfeld in ein Word-Dokument einfügen?
+
+A: Um mit Aspose.Words für .NET mit DOM ein Zusammenführungsfeld in ein Word-Dokument einzufügen, können Sie die folgenden Schritte ausführen:
+
+1. Navigieren Sie zu dem Absatz, in den Sie das Serienbrieffeld einfügen möchten.
+2.  Ein ... kreieren`FieldMergeField` Objekt.
+3. Legen Sie die Eigenschaften des Zusammenführungsfelds fest, z. B. Feldnamen und Formatierungsoptionen.
+4.  Fügen Sie das Zusammenführungsfeld mithilfe von zum Absatz hinzu`Paragraph.AppendChild` Methode.
+
+#### F: Wie kann ich Quelldaten für das Zusammenführungsfeld in Aspose.Words für .NET angeben?
+
+A: Um die Quelldaten für das Zusammenführungsfeld in Aspose.Words für .NET anzugeben, können Sie die verwenden`FieldMergeField.FieldName` Methode zum Festlegen des Namens des Zusammenführungsfelds, bei dem es sich um den Namen eines Felds in einer externen Datenquelle wie einer CSV-Datei, einer Datenbank usw. handelt. Sie können auch die verwenden`FieldMergeField.Text` Methode zum direkten Festlegen des Zusammenführungsfeldwerts.
+
+#### F: Kann ich das Erscheinungsbild des Serienbrieffelds in einem Word-Dokument mit Aspose.Words für .NET anpassen?
+
+ A: Ja, Sie können das Erscheinungsbild des Zusammenführungsfelds in einem Word-Dokument mit Aspose.Words für .NET anpassen. Sie können die Formatierungsoptionen wie Groß-/Kleinschreibung, Schriftart, Farbe usw. mithilfe der Eigenschaften festlegen`FieldMergeField` Objekt.
+
+#### F: Wie kann ich mit Aspose.Words für .NET überprüfen, ob ein Zusammenführungsfeld erfolgreich in ein Word-Dokument eingefügt wurde?
+
+ A: Um zu überprüfen, ob ein Zusammenführungsfeld erfolgreich eingefügt wurde, können Sie den Dokumentinhalt durchsuchen und nach Zusammenführungsfeldinstanzen suchen. Sie können die Methoden und Eigenschaften von verwenden`Document` Objekt, um auf Absätze, Felder und andere Elemente des Dokuments zuzugreifen.
+
+#### F: Beeinflusst das Einfügen eines Briefvorlagenfelds mithilfe von DOM die Word-Dokumentstruktur mit Aspose.Words für .NET?
+
+A: Das Einfügen eines Serienbrieffelds mithilfe des DOM hat keinen direkten Einfluss auf die Struktur des Word-Dokuments. Allerdings wird dem Dokumentinhalt ein neues Feldelement hinzugefügt. Sie können die Dokumentstruktur bearbeiten, indem Sie die vorhandenen Elemente entsprechend Ihren Anforderungen hinzufügen, löschen oder ändern.

@@ -21,7 +21,7 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-// Добавьте текст в первый абзац, затем добавьте еще два абзаца.
+//Добавьте текст в первый абзац, затем добавьте еще два абзаца.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2.");
 body.AppendParagraph("Paragraph 3.");
@@ -34,7 +34,7 @@ body.AppendParagraph("Paragraph 3.");
 ```csharp
 doc.StartTrackRevisions("John Doe", DateTime.Now);
 
-//Этот абзац является редакцией и будет иметь соответствующий установленный флаг «IsInsertRevision».
+// Этот абзац является редакцией и будет иметь соответствующий установленный флаг «IsInsertRevision».
 para = body.AppendParagraph("Paragraph 4.");
 Assert.True(para.IsInsertRevision);
 ```
@@ -92,13 +92,13 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-// Добавьте текст в первый абзац, затем добавьте еще два абзаца.
+//Добавьте текст в первый абзац, затем добавьте еще два абзаца.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
 
 // У нас есть три абзаца, ни один из которых не зарегистрирован как редакция любого типа.
-//Если мы добавим/удалим какой-либо контент в документе во время отслеживания изменений,
+// Если мы добавим/удалим какой-либо контент в документе во время отслеживания изменений,
 // они будут отображаться как таковые в документе и могут быть приняты/отклонены.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
 
@@ -123,9 +123,66 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // Если остановить отслеживание изменений, этот текст будет отображаться как обычный текст.
-// Редакции не учитываются при изменении документа.
+//Редакции не учитываются при изменении документа.
 doc.StopTrackRevisions();
 
 // Сохраните документ.
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
+```
+## Заключение
+
+В этом руководстве мы узнали, как принимать исправления в документе Word, используя функцию «Принять исправления» Aspose.Words для .NET. Мы выполнили шаги по добавлению и редактированию содержимого документа, отслеживанию изменений, удалению исправленного абзаца, принятию всех изменений и прекращению отслеживания изменений. Теперь вы можете применять эти знания для эффективного управления версиями ваших собственных документов Word с помощью Aspose.Words для .NET.
+
+### Часто задаваемые вопросы
+
+#### Вопрос. Как включить отслеживание версий в Aspose.Words для .NET?
+
+#### Решение 1:
+
+ О: Чтобы включить отслеживание версий в Aspose.Words для .NET, используйте`StartTrackRevisions` метод`Document` объект и укажите имя автора и дату начала отслеживания изменений.
+
+```csharp
+doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
+
+#### Решение 2:
+
+ A: Вы также можете включить отслеживание версий с помощью`Document` конструктор, который принимает`trackRevisions` и`author` параметры.
+
+```csharp
+Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
+```
+
+#### В: Как принять все изменения в документе с помощью Aspose.Words для .NET?
+
+ О: Используйте`AcceptAllRevisions` метод`Document` объект, чтобы принять все изменения, внесенные в документ.
+
+```csharp
+doc.AcceptAllRevisions();
+```
+
+#### В: Как сохранить измененный документ с принятыми редакциями?
+
+ Использовать`Save` метод`Document` object для сохранения измененного документа с принятыми редакциями. Обязательно укажите правильный путь к файлу.
+
+```csharp
+doc.Save("path/to/the/document.docx");
+```
+
+#### Вопрос. Как прекратить отслеживание версий в Aspose.Words для .NET?
+
+ О: Используйте`StopTrackRevisions` метод`Document` объект, чтобы остановить отслеживание изменений.
+
+```csharp
+doc.StopTrackRevisions();
+```
+
+#### В: Как удалить измененный абзац в документе с помощью Aspose.Words для .NET?
+
+ A: Чтобы удалить исправленный абзац в документе, вы можете использовать`Remove` метод сбора абзацев.
+
+```csharp
+ParagraphCollection paragraphs = body.Paragraphs;
+Paragraph para = paragraphs[2];
+para.Remove();
 ```

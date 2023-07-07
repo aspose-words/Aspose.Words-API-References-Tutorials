@@ -14,7 +14,7 @@ Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèqu
 
 ## Étape 1 : Définir le répertoire des documents
 
- Pour commencer, vous devez définir le chemin vers le répertoire où vous souhaitez enregistrer le document généré. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel à votre répertoire de documents.
+Pour commencer, vous devez définir le chemin vers le répertoire où vous souhaitez enregistrer le document généré. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel à votre répertoire de documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

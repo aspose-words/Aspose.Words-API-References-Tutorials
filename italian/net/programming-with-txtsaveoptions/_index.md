@@ -16,6 +16,6 @@ Grazie a questi tutorial potrai sfruttare appieno le funzionalità di Aspose.Wor
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Aggiungi segni Bidi](./add-bidi-marks/) | Impara ad aggiungere segni Bidi a un documento Word utilizzando Aspose.Words per .NET e crea documenti multilingue professionali. |
+| [Aggiungi segni Bidi nel documento di Word](./add-bidi-marks/) | Impara ad aggiungere segni Bidi a un documento Word utilizzando Aspose.Words per .NET e crea documenti multilingue professionali. |
 | [Usa il carattere di tabulazione per livello per il rientro dell'elenco](./use-tab-character-per-level-for-list-indentation/) | Scopri come utilizzare gli elenchi di rientro con la funzionalità dei caratteri di tabulazione in Aspose.Words per .NET. Segui questa guida passo passo per creare documenti ben strutturati e leggibili. Risparmia tempo e migliora il tuo flusso di lavoro con questa potente funzionalità. Accedi ora al tutorial completo. |
 | [Usa carattere spazio per livello per il rientro dell'elenco](./use-space-character-per-level-for-list-indentation/) | Guida dettagliata all'utilizzo di un carattere spazio per livello per il rientro dell'elenco in Aspose.Words per .NET. Crea facilmente documenti Word ben strutturati. |

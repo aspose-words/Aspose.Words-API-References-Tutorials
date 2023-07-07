@@ -52,3 +52,25 @@ doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 Congratulazioni! Hai imparato con successo come abilitare e utilizzare le funzionalità Open Type in Aspose.Words per .NET. Seguendo la guida passo passo e utilizzando il codice sorgente fornito, ora puoi lavorare con le funzionalità Open Type nei tuoi documenti Word.
 
 Le funzionalità Open Type offrono capacità tipografiche e di modellazione del testo migliorate, consentendo di creare documenti visivamente accattivanti e dall'aspetto professionale. Sperimenta con diversi text shaper factory ed esplora le possibilità delle funzionalità Open Type nei tuoi progetti.
+
+### FAQ
+
+#### D: Come abilito le funzionalità OpenType in Aspose.Words per .NET?
+
+R: Per abilitare le funzionalità OpenType in Aspose.Words per .NET, è necessario seguire i passaggi indicati nel tutorial.
+
+#### D: Quali funzionalità OpenType sono supportate in Aspose.Words per .NET?
+
+R: Aspose.Words per .NET supporta diverse funzionalità OpenType, come legature, variazioni di glifi, sostituzioni contestuali e altro.
+
+#### D: Come posso verificare se una funzione OpenType è supportata in un font specifico?
+
+ R: Puoi verificare se una funzione OpenType è supportata in un font specifico utilizzando il file`Font.OpenTypeFeatures` metodo in Aspose.Words per .NET.
+
+#### D: Quali altre funzionalità di formattazione del testo supporta Aspose.Words per .NET?
+
+R: Oltre alle funzionalità OpenType, Aspose.Words per .NET supporta anche altre funzionalità di formattazione del testo come la formattazione di paragrafi, la creazione di tabelle, l'aggiunta di immagini, ecc.
+
+#### D: Posso utilizzare le funzionalità OpenType in tutte le versioni di Aspose.Words per .NET?
+
+R: Le funzionalità OpenType sono supportate nelle versioni più recenti di Aspose.Words per .NET. Assicurati di utilizzare una versione compatibile per beneficiare di queste funzionalità.

@@ -38,3 +38,21 @@ builder.Insertlink("Aspose", "https://www.aspose.com", falso);
 ```
 Congratulazioni! Ora hai imparato come utilizzare la funzionalità dei collegamenti con Aspose.Words per .NET.
 
+
+### FAQ
+
+#### D: Come posso collegarmi a un URL in Aspose.Words?
+
+ A: Per collegarsi a un indirizzo URL in Aspose.Words, è possibile utilizzare il file`<a>` etichetta con il`href` attributo contenente l'indirizzo URL. Ad esempio, puoi usare`<a href="https://www.aspose.com">Click Here</a>` per creare un collegamento ipertestuale all'URL "https://www.example.com " con il testo visualizzato "Fai clic qui".
+
+#### D: È possibile collegarsi a un segnalibro interno in Aspose.Words?
+
+ A: Sì, è possibile collegarsi a un segnalibro interno in Aspose.Words. Puoi usare il`<a>` etichetta con il`href` attributo contenente il nome del segnalibro preceduto da un cancelletto (#). Per esempio,`<a href="#bookmark1">Go to bookmark 1</a>` collegherà al segnalibro denominato "bookmark1" nel documento.
+
+#### D: Come posso personalizzare il testo visualizzato di un collegamento in Aspose.Words?
+
+A: Per personalizzare il testo visualizzato di un collegamento in Aspose.Words, è possibile modificare il contenuto tra il file`<a>` tag. Per esempio,`<a href="https://www.aspose.com">Click here</a>` visualizzerà il testo "Clicca qui" come collegamento ipertestuale.
+
+#### D: Posso specificare una destinazione per un collegamento in Aspose.Words?
+
+ A: Sì, è possibile specificare una destinazione per un collegamento in Aspose.Words utilizzando il file`target` attributo del`<a>` etichetta. Per esempio,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` aprirà il collegamento in una nuova finestra o scheda.

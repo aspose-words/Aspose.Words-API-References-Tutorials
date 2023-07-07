@@ -12,6 +12,6 @@ Trabajar con cuadros de texto es un recurso integral que lo lleva paso a paso a 
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Crear un enlace](./create-a-link/) | Aprenda a crear un vínculo entre cuadros de texto en un documento de Word con Aspose.Words para .NET. |
+| [Crear enlace en Word](./create-a-link/) | Aprenda a crear un vínculo en Word entre cuadros de texto en un documento de Word con Aspose.Words para .NET. |
 | [Comprobar secuencia](./check-sequence/) | Aprenda a verificar la secuencia de cuadros de texto en un documento de Word con Aspose.Words para .NET. |
-| [romper un enlace](./break-a-link/) | Aprenda a romper vínculos en un documento de Word con Aspose.Words para .NET. |
+| [Romper enlace hacia adelante en documento de Word](./break-a-link/) | Aprenda a romper vínculos hacia adelante en un documento de Word con Aspose.Words para .NET. |

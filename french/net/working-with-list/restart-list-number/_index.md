@@ -97,7 +97,7 @@ builder.ListFormat.RemoveNumbers();
 // Pour réutiliser la première liste, nous devons redémarrer la numérotation en créant une copie de la mise en forme de la liste d'origine.
 List list2 = doc.Lists.AddCopy(list1);
 
-// Nous pouvons modifier la nouvelle liste de quelque manière que ce soit, y compris en définissant un nouveau numéro de départ.
+//Nous pouvons modifier la nouvelle liste de quelque manière que ce soit, y compris en définissant un nouveau numéro de départ.
 list2.ListLevels[0].StartAt = 10;
 
 builder.Writeln("List 2 starts below:");
@@ -110,6 +110,23 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
             
 ```
 
+### FAQ
+
+#### Q : Comment puis-je redémarrer la numérotation d'une liste dans Aspose.Words ?
+
+ R : Pour redémarrer la numérotation d'une liste dans Aspose.Words, vous pouvez utiliser le`ListRestartAtNumber` méthode de la`List` classe. Cette méthode vous permet de définir une nouvelle valeur de numérotation à partir de laquelle la liste doit être redémarrée. Par exemple, vous pouvez utiliser`list.ListRestartAtNumber(1)` pour recommencer la numérotation à partir de 1.
+
+#### Q : Est-il possible de personnaliser le préfixe et le suffixe de la numérotation de la liste redémarrée dans Aspose.Words ?
+
+ R : Oui, vous pouvez personnaliser le préfixe et le suffixe de la numérotation de la liste redémarrée dans Aspose.Words. Le`ListLevel` classe offre des propriétés telles que`ListLevel.NumberPrefix` et`ListLevel.NumberSuffix` qui vous permettent de spécifier le préfixe et le suffixe pour chaque niveau de la liste. Vous pouvez utiliser ces propriétés pour personnaliser le préfixe et le suffixe selon vos besoins.
+
+#### Q : Comment puis-je spécifier une valeur de numérotation spécifique à partir de laquelle la liste doit être relancée ?
+
+ R : Pour spécifier une valeur numérique spécifique à partir de laquelle la liste doit être redémarrée, vous pouvez utiliser le`ListRestartAtNumber`méthode passant la valeur souhaitée en argument. Par exemple, pour recommencer la numérotation à partir de 5, vous pouvez utiliser`list.ListRestartAtNumber(5)`.
+
+#### Q : Est-il possible de redémarrer la numérotation des listes à plusieurs niveaux dans Aspose.Words ?
+
+ R : Oui, Aspose.Words prend en charge la numérotation de redémarrage de plusieurs niveaux de liste. Vous pouvez appliquer le`ListRestartAtNumber` méthode à chaque niveau de liste pour redémarrer la numérotation individuellement. Par exemple, vous pouvez utiliser`list.Levels[0].ListRestartAtNumber(1)` pour redémarrer le premier niveau de liste à partir de 1, et`list.Levels[1].ListRestartAtNumber(1)` pour relancer la liste de second niveau à partir de 1, et ainsi de suite.
 
 
 

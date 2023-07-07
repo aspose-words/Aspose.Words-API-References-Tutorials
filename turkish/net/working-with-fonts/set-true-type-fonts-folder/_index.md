@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## 3. Adım: True Type Fonts Klasörünü Ayarlayın
- Artık, gerçek tip yazı tiplerinin bir örneğini oluşturarak oluşturma sırasında kullanılacak klasörü belirtebilirsiniz.`FontSettings` sınıf ve kullanarak`SetFontsFolder()` yazı tipi klasörünü ayarlama yöntemi. True Type yazı tiplerinizi içeren özel bir klasör belirtebilirsiniz. için ikinci parametre`SetFontsFolder()` belirtilen klasörün alt klasörlerini de aramak isteyip istemediğinizi belirtir.
+Artık, gerçek tip yazı tiplerinin bir örneğini oluşturarak oluşturma sırasında kullanılacak klasörü belirtebilirsiniz.`FontSettings` sınıf ve kullanarak`SetFontsFolder()` yazı tipi klasörünü ayarlama yöntemi. True Type yazı tiplerinizi içeren özel bir klasör belirtebilirsiniz. için ikinci parametre`SetFontsFolder()` belirtilen klasörün alt klasörlerini de aramak isteyip istemediğinizi belirtir.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -59,3 +59,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 
 ## Çözüm
 Bu öğreticide, Aspose.Words for .NET kullanarak bir belgeyi işlerken gerçek tip yazı tiplerini nasıl ayarlayacağımızı öğrendik. Bu adım adım kılavuzu izleyerek, belgelerinizi işlerken kullanmak üzere True Type yazı tiplerini içeren özel bir klasörü kolayca belirleyebilirsiniz. Aspose.Words, belgelerinizdeki yazı tipleriyle çalışmak için güçlü ve esnek bir API sunar. Bu bilgiyle, belgelerinizi özel ihtiyaçlarınıza göre işlerken kullanılan yazı tiplerini kontrol edebilir ve özelleştirebilirsiniz.
+
+### SSS
+
+#### S: Aspose.Words'ta TrueType yazı tipleri klasörünü nasıl yapılandırabilirim?
+
+ C: Aspose.Words'ta TrueType yazı tipleri klasörünü yapılandırmak için`SetTrueTypeFontsFolder` yöntemi`Fonts` TrueType yazı tiplerini içeren klasörün konumunu belirten sınıf.
+
+#### S: Ne tür yazı tipleri TrueType yazı tipleri olarak kabul edilir?
+
+Y: TrueType yazı tipleri popüler bir yazı tipi biçimidir. Genellikle Word belgelerinde kullanılırlar ve .ttf veya .ttc dosya uzantılarına sahiptirler.
+
+#### S: Aspose.Words'ta birden fazla TrueType yazı tipi klasörü belirtebilir miyim?
+
+C: Evet, Aspose.Words'ta birden fazla TrueType yazı tipi klasörü belirtebilirsiniz.`SetTrueTypeFontsFolder` yöntemi`Fonts` klasör konumlarının bir listesini içeren sınıf.
+
+#### S: Aspose.Words'ta yapılandırılan TrueType yazı tipleri klasörünü nasıl kontrol edebilirim?
+
+ C: Aspose.Words'ta yapılandırılan TrueType Fonts klasörünü kontrol etmek için`GetTrueTypeFontsFolder` yöntemi`Fonts` Yapılandırılan TrueType Fonts klasörünün konumunu almak için sınıf.
+
+#### S: Aspose.Words'ta TrueType yazı tipleri klasörünü yapılandırmak neden önemlidir?
+
+C: Aspose.Words'ta TrueType yazı tipleri klasörünün ayarlanması önemlidir çünkü Aspose.Words'ün Word belgelerini işlerken ihtiyaç duyduğu yazı tiplerini bulmasına yardımcı olur. Bu, farklı sistemlerde bile belge biçimlendirmesinde ve görünümünde tutarlılık sağlar.

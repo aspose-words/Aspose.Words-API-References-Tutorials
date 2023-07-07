@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## 4. Adım: Belgeyi Kaydedin
-Değiştirilen belgeyi şunu kullanarak kaydedin:`Save` yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.ClearContentsControl.doc" olarak kaydediyoruz.
+Değiştirilen belgeyi şunu kullanarak kaydedin:`Save`yöntem. İstenen dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.ClearContentsControl.doc" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

@@ -50,7 +50,7 @@ Dans cet exemple, nous enregistrons le document converti sous "WorkingWithHtmlFi
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document Word
+// Charger le document Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // Configurez les options de sauvegarde avec la fonction "Écrire toutes les règles CSS dans un seul fichier"

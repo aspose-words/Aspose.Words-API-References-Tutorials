@@ -30,7 +30,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Crear un nuevo documento
 Document doc = new Document();
 
-// Crear un generador de documentos
+//Crear un generador de documentos
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
@@ -83,3 +83,25 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ## Conclusión
 En este tutorial, vimos cómo formatear fuentes en un documento de Word usando Aspose.Words para .NET. El formato de fuente le permite personalizar la apariencia del texto en sus documentos. No dude en utilizar esta función para crear documentos atractivos y profesionales.
+
+### Preguntas frecuentes
+
+#### P: ¿Es posible cambiar el tamaño de fuente de un texto específico en un documento de Word?
+
+R: Sí, con Aspose.Words puede cambiar fácilmente el tamaño de fuente de un texto específico en un documento de Word. Puede usar la API para seleccionar el texto deseado y aplicar el tamaño de fuente apropiado.
+
+#### P: ¿Puedo aplicar diferentes estilos de fuente a diferentes párrafos en un documento de Word?
+
+R: ¡Absolutamente! Aspose.Words le permite aplicar diferentes estilos de fuente a diferentes párrafos en un documento de Word. Puede utilizar los métodos proporcionados por la API para formatear individualmente cada párrafo según sea necesario.
+
+#### P: ¿Cómo puedo resaltar texto en negrita en un documento de Word?
+
+R: Con Aspose.Words, puede resaltar fácilmente texto en negrita en un documento de Word. Simplemente aplique el estilo de fuente en negrita al texto específico usando la API.
+
+#### P: ¿Aspose.Words admite fuentes personalizadas?
+
+R: Sí, Aspose.Words admite fuentes personalizadas en documentos de Word. Puede utilizar fuentes personalizadas en sus documentos y formatearlas según sus preferencias.
+
+#### P: ¿Cómo puedo aplicar un color de fuente específico al texto de un documento de Word?
+
+R: Con Aspose.Words, puede aplicar fácilmente un color de fuente específico al texto de un documento de Word. Use la API para seleccionar texto y aplicar el color de fuente deseado especificando el código de color apropiado.

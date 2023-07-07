@@ -52,7 +52,7 @@ shape.AspectRatioLocked = false; // En boy oranının kilidini aç
 doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ```
 
-### Aspose.Words for .NET kullanılarak Kilitli En Boy Oranı için örnek kaynak kodu 
+### Aspose.Words for .NET kullanılarak En Boy Oranı Kilitli için örnek kaynak kodu 
 
 ```csharp
 	// Belge dizininizin yolu

@@ -1,20 +1,20 @@
 ---
-title: 移动到页眉页脚
-linktitle: 移动到页眉页脚
+title: 移至页眉页脚
+linktitle: 移至页眉页脚
 second_title: Aspose.Words for .NET API 参考
-description: 通过此分步指南，了解如何使用 Aspose.Words for .NET 在 Word 文档中导航和修改页眉和页脚。
+description: 通过此分步指南，了解如何使用 Aspose.Words for .NET 导航和修改 Word 文档中的页眉和页脚。
 type: docs
 weight: 10
 url: /zh/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
 
-在这个例子中，我们将探索 Aspose.Words for .NET 的 Move To Headers Footers 特性。 Aspose.Words 是一个强大的文档操作库，允许开发人员以编程方式创建、修改和转换 Word 文档。移动到页眉/页脚功能使我们能够导航到文档中的不同页眉和页脚并向它们添加内容。
+在此示例中，我们将探索 Aspose.Words for .NET 的“移至页眉页脚”功能。 Aspose.Words 是一个功能强大的文档操作库，允许开发人员以编程方式创建、修改和转换 Word 文档。移动到页眉/页脚功能使我们能够导航到文档中的不同页眉和页脚并向其中添加内容。
 
-让我们逐步浏览源代码，了解如何使用 Aspose.Words for .NET 的移动到页眉/页脚功能。
+让我们逐步浏览源代码，了解如何使用 Aspose.Words for .NET 使用“移至页眉/页脚”功能。
 
 
 
-## 第 1 步：初始化文档和文档生成器
+## 步骤 1：初始化文档和文档生成器
 
 首先，初始化 Document 和 DocumentBuilder 对象：
 
@@ -32,9 +32,9 @@ builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 ```
 
-## 第 3 步：为不同的页面创建标题
+## 步骤 3：为不同页面创建标题
 
-移动到每个标题类型并向它们添加内容。在此示例中，我们为第一页、偶数页和所有其他页面创建标题：
+移动到每个标题类型并向其添加内容。在此示例中，我们为第一页、偶数页和所有其他页面创建标题：
 
 ```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
@@ -47,7 +47,7 @@ builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 builder.Write("Header for all other pages");
 ```
 
-## 第 4 步：在文档中创建页面
+## 步骤 4：在文档中创建页面
 将内容添加到文档以创建多个页面。例如：
 
 ```csharp
@@ -65,7 +65,7 @@ builder.Writeln("Page2");
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 ```
 
-确保指定适当的文件路径和格式（例如，DOCX）。
+确保指定适当的文件路径和格式（例如 DOCX）。
 
 ### 使用 Aspose.Words for .NET 移动到页眉/页脚的示例源代码
 

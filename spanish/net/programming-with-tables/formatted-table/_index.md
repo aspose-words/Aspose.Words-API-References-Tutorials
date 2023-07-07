@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-tables/formatted-table/
 ---
 
-En este tutorial, aprenderemos cómo crear una tabla formateada en un documento de Word utilizando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá crear tablas con formato personalizado en sus documentos de Word mediante programación.
+En este tutorial, aprenderemos cómo crear una tabla formateada en un documento de Word utilizando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá crear tablas con formato personalizado en sus documentos de Word mediante programación.
 
 ## Paso 1: Configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.
@@ -169,4 +169,4 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ```
 
 ## Conclusión
-En este tutorial, aprendimos a crear una tabla con formato en un documento de Word utilizando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# proporcionado, puede crear tablas personalizadas con formato específico en sus documentos de Word mediante programación. Esta característica le permite presentar y estructurar sus datos de una manera organizada y visualmente atractiva.
+En este tutorial, aprendimos a crear una tabla con formato en un documento de Word utilizando Aspose.Words para .NET. Al seguir esta guía paso a paso e implementar el código C# provisto, puede crear tablas personalizadas con formato específico en sus documentos de Word mediante programación. Esta característica le permite presentar y estructurar sus datos de una manera organizada y visualmente atractiva.

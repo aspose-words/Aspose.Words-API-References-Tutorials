@@ -1,6 +1,6 @@
 ---
-title: Legen Sie die Umrissoptionen fest
-linktitle: Legen Sie die Umrissoptionen fest
+title: Legen Sie Gliederungsoptionen in einem PDF-Dokument fest
+linktitle: Legen Sie Gliederungsoptionen in einem PDF-Dokument fest
 second_title: Aspose.Words für .NET API-Referenz
 description: Schritt-für-Schritt-Anleitung zum Festlegen von Gliederungsoptionen in einem PDF-Dokument mit Aspose.Words für .NET.
 type: docs
@@ -64,3 +64,26 @@ Das ist alles ! Sie haben erfolgreich Gliederungsoptionen in einem Dokument fest
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
    
 ```
+
+## Abschluss
+
+In diesem Tutorial haben wir erklärt, wie Sie mithilfe von Aspose.Words für .NET Gliederungsoptionen in einem PDF-Dokument festlegen. Mit den beschriebenen Schritten können Sie ganz einfach Überschriften- und Gliederungsebenen in Ihrem Dokument festlegen und eine PDF-Datei mit entsprechenden Gliederungsoptionen generieren. Genießen Sie die Vorteile der Gliederungsoption zur Verbesserung der Struktur und Navigation in Ihren PDF-Dokumenten mit Aspose.Words für .NET.
+
+### Häufig gestellte Fragen
+
+#### F: Was ist die Gliederungsoption in einem PDF-Dokument?
+A: Die Gliederungsoption in einem PDF-Dokument bezieht sich auf die hierarchische Struktur des Dokumentinhalts. Es ermöglicht die Erstellung eines interaktiven Inhaltsverzeichnisses und erleichtert die Navigation im Dokument. Die Gliederungsoptionen legen die Titel- und Untertitelebenen fest, die in die Gliederung einbezogen werden sollen, sowie den Detaillierungsgrad, der in der generierten Gliederung angezeigt werden soll.
+
+#### F: Wie kann ich mit Aspose.Words für .NET Gliederungsoptionen in einem PDF-Dokument festlegen?
+A: Um Gliederungsoptionen in einem PDF-Dokument mit Aspose.Words für .NET festzulegen, führen Sie die folgenden Schritte aus:
+
+ Legen Sie den Verzeichnispfad fest, in dem sich Ihre Dokumente befinden, indem Sie ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad Ihres Dokumentenverzeichnisses.
+
+ Laden Sie das Dokument, das Sie in PDF konvertieren möchten, mit`Document` Klasse und geben Sie den Pfad zum Dokument im angegebenen Dokumentenverzeichnis an.
+
+ Konfigurieren Sie die Optionen zum Speichern als PDF, indem Sie eine Instanz davon erstellen`PdfSaveOptions` Klasse und Verwendung der`OutlineOptions` -Eigenschaft, um die Umrissoptionen festzulegen. Mit können Sie die Anzahl der Überschriftenebenen angeben, die in die Gliederung einbezogen werden sollen`HeadingsOutlineLevels` Eigenschaft und die Anzahl der erweiterten Gliederungsebenen mithilfe der`ExpandedOutlineLevels` Eigentum.
+
+ Speichern Sie das Dokument im PDF-Format mit`Save` Methode der`Document`Klasse, die den Pfad und die Speicheroptionen angibt.
+
+#### F: Wozu dient die Planoption in einem PDF-Dokument?
+A: Mit der Gliederungsoption in einem PDF-Dokument können Sie eine hierarchische Struktur des Inhalts erstellen, die die Navigation im Dokument und den Zugriff auf verschiedene Abschnitte erleichtert. Dadurch können Benutzer schnell zu bestimmten Teilen des Dokuments springen, indem sie auf Einträge im Inhaltsverzeichnis oder in der Gliederung klicken. Die Gliederungsoption verbessert auch das Leseerlebnis, indem sie einen Überblick über die gesamte Dokumentstruktur bietet.

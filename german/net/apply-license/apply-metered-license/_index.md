@@ -75,3 +75,21 @@ catch (Exception e)
 Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET eine gemessene Lizenz anwenden. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie jetzt die erweiterten Funktionen von Aspose.Words für Ihre Dokumentverarbeitungsaufgaben nutzen.
 
 Jetzt können Sie sicher die gemessene Lizenz festlegen, Dokumente laden und verarbeiten und das volle Potenzial von Aspose.Words nutzen, um Word-Dokumente programmgesteuert zu erstellen, zu ändern und zu bearbeiten.
+
+### FAQs
+
+#### F: Wie wende ich eine Pay-per-Use-Lizenz in Aspose.Words für .NET an?
+
+A: Um eine Pay-as-you-go-Lizenz in Aspose.Words für .NET anzuwenden, befolgen Sie die im Tutorial genannten Schritte.
+
+#### F: Welche Vorteile bietet die Verwendung einer Pay-per-Use-Lizenz in Aspose.Words für .NET?
+
+A: Zu den Vorteilen der Verwendung einer Pay-as-you-go-Lizenz in Aspose.Words für .NET gehören ein effizienteres Kostenmanagement und eine erhöhte Flexibilität.
+
+#### F: Wie kann ich die Nutzung meiner Pay-as-you-go-Lizenz in Aspose.Words für .NET überprüfen?
+
+A: Sie können die Nutzung Ihrer Pay-as-you-go-Lizenz in Aspose.Words für .NET mithilfe der entsprechenden im Tutorial erwähnten Methode überprüfen.
+
+#### F: Kann ich mit Aspose.Words für .NET eine reguläre Lizenz anstelle einer nutzungsbasierten Lizenz verwenden?
+
+A: Ja, Sie können bei Bedarf eine normale Lizenz mit Aspose.Words für .NET verwenden.

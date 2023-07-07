@@ -86,3 +86,17 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
 Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şekilde değiştirmekten çekinmeyin.
+
+### SSS
+
+#### S: Aspose.Words'te her bölümde bir listeyi nasıl yeniden başlatabilirim?
+
+ C: Aspose.Words'teki her bölümde bir listeyi yeniden başlatmak için,`List` sınıf ve ona numaralı bir liste atayın. Sonra kullanabilirsiniz`List.IsRestartAtEachSection` numaralandırmanın her bölümde yeniden başlatılması gerektiğini belirtmek için özellik. Numaralandırmanın her bölümde doğru şekilde yeniden başlaması için bu listeyi belgenizin bir veya daha fazla bölümüyle ilişkilendirebilirsiniz.
+
+#### S: Aspose.Words'te listelerin numaralandırma formatını özelleştirebilir miyim?
+
+ C: Evet, listelerin numaralandırma formatını Aspose.Words'te özelleştirebilirsiniz. bu`List` class bunun için çeşitli özellikler sunar, örneğin`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`vb. Liste türünü (numaralı, madde işaretli vb.), numaralandırma biçimini (Arap rakamları, Romen rakamları, harfler vb.) ve diğer numaralandırma biçimlendirme seçeneklerini ayarlamak için bu özellikleri kullanabilirsiniz.
+
+#### S: Aspose.Words'te numaralı bir listeye ek seviyeler eklemek mümkün mü?
+
+ C: Evet, Aspose.Words'te numaralı bir listeye ek seviyeler eklemek mümkündür. bu`ListLevel` class, listenin her düzeyi için biçimlendirme özelliklerini ayarlamanıza olanak tanır. Önek, sonek, hizalama, girinti vb. seçenekleri ayarlayabilirsiniz. Bu, birden çok hiyerarşi düzeyine sahip listeler oluşturmanıza olanak tanır.

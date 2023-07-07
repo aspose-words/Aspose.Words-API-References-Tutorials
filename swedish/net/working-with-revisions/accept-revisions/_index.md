@@ -21,7 +21,7 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-// Lägg till text i det första stycket och lägg sedan till ytterligare två stycken.
+//Lägg till text i det första stycket och lägg sedan till ytterligare två stycken.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2.");
 body.AppendParagraph("Paragraph 3.");
@@ -34,7 +34,7 @@ Vi aktiverar revisionsspårning och lägger till en revision i dokumentet. Här 
 ```csharp
 doc.StartTrackRevisions("John Doe", DateTime.Now);
 
-//Detta stycke är en revidering och kommer att ha motsvarande flagga "IsInsertRevision".
+// Detta stycke är en revidering och kommer att ha motsvarande flagga "IsInsertRevision".
 para = body.AppendParagraph("Paragraph 4.");
 Assert.True(para.IsInsertRevision);
 ```
@@ -92,13 +92,13 @@ Document doc = new Document();
 Body body = doc.FirstSection.Body;
 Paragraph para = body.FirstParagraph;
 
-// Lägg till text i det första stycket och lägg sedan till ytterligare två stycken.
+//Lägg till text i det första stycket och lägg sedan till ytterligare två stycken.
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
 
 // Vi har tre stycken, varav ingen är registrerad som någon typ av revision
-//Om vi lägger till/tar bort något innehåll i dokumentet medan vi spårar revisioner,
+// Om vi lägger till/tar bort något innehåll i dokumentet medan vi spårar revisioner,
 // de kommer att visas som sådana i dokumentet och kan accepteras/avvisas.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
 
@@ -123,9 +123,66 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // Att stoppa spårningen av revisioner gör att denna text visas som normal text.
-// Revisioner räknas inte när dokumentet ändras.
+//Revisioner räknas inte när dokumentet ändras.
 doc.StopTrackRevisions();
 
 // Spara dokumentet.
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
+```
+## Slutsats
+
+I den här handledningen lärde vi oss hur man accepterar revisioner i ett Word-dokument med hjälp av funktionen Acceptera revisioner i Aspose.Words för .NET. Vi har följt stegen för att lägga till och redigera dokumentinnehåll, spåra revisioner, ta bort ett reviderat stycke, acceptera alla ändringar och sluta spåra revisioner. Nu kan du tillämpa denna kunskap för att effektivt hantera revisioner i dina egna Word-dokument med Aspose.Words för .NET.
+
+### Vanliga frågor
+
+#### F: Hur aktiverar jag revisionsspårning i Aspose.Words för .NET?
+
+#### Lösning 1:
+
+ S: För att aktivera revisionsspårning i Aspose.Words för .NET, använd`StartTrackRevisions` metod för`Document` objekt och ange författarens namn och startdatum för revisionsspårning.
+
+```csharp
+doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
+
+#### Lösning 2:
+
+ S: Du kan också aktivera revisionsspårning med hjälp av`Document` konstruktör som accepterar`trackRevisions` och`author` parametrar.
+
+```csharp
+Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
+```
+
+#### F: Hur accepterar jag alla ändringar i ett dokument med Aspose.Words för .NET?
+
+ A: Använd`AcceptAllRevisions` metod för`Document` invända för att acceptera alla ändringar som görs i dokumentet.
+
+```csharp
+doc.AcceptAllRevisions();
+```
+
+#### F: Hur sparar jag ett ändrat dokument med godkända versioner?
+
+ Använd`Save` metod för`Document` objekt för att spara det ändrade dokumentet med accepterade revisioner. Var noga med att ange rätt sökväg.
+
+```csharp
+doc.Save("path/to/the/document.docx");
+```
+
+#### F: Hur slutar jag spåra revisioner i Aspose.Words för .NET?
+
+ A: Använd`StopTrackRevisions` metod för`Document` invända mot att stoppa spårningsrevisionerna.
+
+```csharp
+doc.StopTrackRevisions();
+```
+
+#### F: Hur tar jag bort ett reviderat stycke i ett dokument med Aspose.Words för .NET?
+
+ S: För att ta bort ett reviderat stycke i ett dokument kan du använda`Remove` metod för styckeinsamlingen.
+
+```csharp
+ParagraphCollection paragraphs = body.Paragraphs;
+Paragraph para = paragraphs[2];
+para.Remove();
 ```

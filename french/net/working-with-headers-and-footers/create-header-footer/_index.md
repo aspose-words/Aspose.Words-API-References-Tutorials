@@ -111,7 +111,7 @@ builder.InsertBreak(BreakType.SectionBreakNewPage);
 currentSection = builder. CurrentSection;
 pageSetup = currentSection.PageSetup;
 pageSetup.Orientation = Orientation.Landscape;
-//Cette section n'a pas besoin d'un en-tête/pied de page différent pour la première page, nous n'avons besoin que d'une seule page de titre dans le document,
+// Cette section n'a pas besoin d'un en-tête/pied de page différent pour la première page, nous n'avons besoin que d'une seule page de titre dans le document,
 // et l'en-tête/pied de page de cette page a déjà été défini dans la section précédente.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
@@ -119,7 +119,7 @@ pageSetup.DifferentFirstPageHeaderFooter = false;
 // la largeur de la page est différente pour la nouvelle section, nous devons donc définir différentes largeurs de cellule pour un tableau de pied de page.
 currentSection.HeadersFooters.LinkToPrevious(false);
 
-// Si nous voulons utiliser les en-têtes/pieds de page déjà existants pour cette section,
+//Si nous voulons utiliser les en-têtes/pieds de page déjà existants pour cette section,
 // mais avec quelques modifications mineures, il peut être judicieux de copier les en-têtes/pieds de page
 // de la section précédente et appliquez les modifications nécessaires là où vous le souhaitez.
 CopyHeadersFootersFromPreviousSection(currentSection);
@@ -134,105 +134,127 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
- Nous ajoutons un saut de page et un saut de section pour créer une nouvelle page où les principaux en-têtes/pieds de page seront visibles. Nous définissons les paramètres de la nouvelle section, puis nous utilisons le`CopyHeadersFootersFromPreviousSection`méthode pour copier les en-têtes/pieds de page de la section précédente. Enfin, nous définissons les largeurs de cellule appropriées pour le tableau de pied de page principal et enregistrons le document.
+ Nous ajoutons un saut de page et un saut de section pour créer une nouvelle page où les principaux en-têtes/pieds de page seront visibles. Nous définissons les paramètres de la nouvelle section, puis nous utilisons le`CopyHeadersFootersFromPreviousSection` méthode pour copier les en-têtes/pieds de page de la section précédente. Enfin, nous définissons les largeurs de cellule appropriées pour le tableau de pied de page principal et enregistrons le document.
 
 ### Exemple de code source pour créer des en-têtes et des pieds de page avec Aspose.Words pour .NET
 
 ```csharp
-	// Chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Chemin d'accès au répertoire des documents.
+string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
-	Section currentSection = builder.CurrentSection;
-	PageSetup pageSetup = currentSection.PageSetup;
-	// Spécifiez si nous voulons que les en-têtes/pieds de page de la première page soient différents des autres pages.
-	// Vous pouvez également utiliser la propriété PageSetup.OddAndEvenPagesHeaderFooter pour spécifier
-	// différents en-têtes/pieds de page pour les pages paires et impaires.
-	pageSetup.DifferentFirstPageHeaderFooter = true;
-	pageSetup.HeaderDistance = 20;
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
+Section currentSection = builder.CurrentSection;
+PageSetup pageSetup = currentSection.PageSetup;
+// Spécifiez si nous voulons que les en-têtes/pieds de page de la première page soient différents des autres pages.
+// Vous pouvez également utiliser la propriété PageSetup.OddAndEvenPagesHeaderFooter pour spécifier
+// différents en-têtes/pieds de page pour les pages paires et impaires.
+pageSetup.DifferentFirstPageHeaderFooter = true;
+pageSetup.HeaderDistance = 20;
 
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.Font.Size = 14;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
+builder.Font.Name = "Arial";
+builder.Font.Bold = true;
+builder.Font.Size = 14;
 
-	pageSetup.HeaderDistance = 20;
-	builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 
-	// Insérez une image positionnée dans le coin supérieur/gauche de l'en-tête.
-	// La distance des bords supérieur/gauche de la page est définie sur 10 points.
-	builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
-		RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
+pageSetup.HeaderDistance = 20;
+builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+// Insérez une image positionnée dans le coin supérieur/gauche de l'en-tête.
+// La distance des bords supérieur/gauche de la page est définie sur 10 points.
+builder.InsertImage(ImagesDir + "Graphics Interchange Format.gif", RelativeHorizontalPosition.Page, 10,
+	RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
-	builder.Write("Aspose.Words Header/Footer Creation Primer.");
+builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+builder.Write("Aspose.Words Header/Footer Creation Primer.");
 
-	// Nous utilisons un tableau à deux cellules pour faire une partie du texte sur la ligne (avec numérotation des pages).
-	// A aligner à gauche, et l'autre partie du texte (avec copyright) à aligner à droite.
-	builder.StartTable();
+builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 
-	builder.CellFormat.ClearFormatting();
+//Nous utilisons un tableau à deux cellules pour faire une partie du texte sur la ligne (avec numérotation des pages).
+// A aligner à gauche, et l'autre partie du texte (avec copyright) à aligner à droite.
+builder.StartTable();
 
-	builder.InsertCell();
+builder.CellFormat.ClearFormatting();
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+builder.InsertCell();
 
-	// Il utilise les champs PAGE et NUMPAGES pour calculer automatiquement le numéro de page actuel et de nombreuses pages.
-	builder.Write("Page ");
-	builder.InsertField("PAGE", "");
-	builder.Write(" of ");
-	builder.InsertField("NUMPAGES", "");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
+// Il utilise les champs PAGE et NUMPAGES pour calculer automatiquement le numéro de page actuel et de nombreuses pages.
+builder.Write("Page ");
+builder.InsertField("PAGE", "");
+builder.Write(" of ");
+builder.InsertField("NUMPAGES", "");
 
-	builder.InsertCell();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Left;
 
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+builder.InsertCell();
 
-	builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-	builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
+builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
 
-	builder.EndRow();
-	builder.EndTable();
+builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 
-	builder.MoveToDocumentEnd();
+builder.EndRow();
+builder.EndTable();
 
-	// Faites un saut de page pour créer une deuxième page sur laquelle les principaux en-têtes/pieds de page seront visibles.
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.InsertBreak(BreakType.SectionBreakNewPage);
+builder.MoveToDocumentEnd();
 
-	currentSection = builder.CurrentSection;
-	pageSetup = currentSection.PageSetup;
-	pageSetup.Orientation = Orientation.Landscape;
-	//Cette section n'a pas besoin d'un en-tête/pied de page de première page différent, nous n'avons besoin que d'une seule page de titre dans le document,
-	// et l'en-tête/pied de page de cette page a déjà été défini dans la section précédente.
-	pageSetup.DifferentFirstPageHeaderFooter = false;
+// Faites un saut de page pour créer une deuxième page sur laquelle les principaux en-têtes/pieds de page seront visibles.
+builder.InsertBreak(BreakType.PageBreak);
+builder.InsertBreak(BreakType.SectionBreakNewPage);
 
-	// Cette section affiche les en-têtes/pieds de page de la section précédente
-	// par défaut appelez currentSection.HeadersFooters.LinkToPrevious(false) pour annuler cette largeur de page
-	// est différent pour la nouvelle section, et nous devons donc définir différentes largeurs de cellule pour un tableau de pied de page.
-	currentSection.HeadersFooters.LinkToPrevious(false);
+currentSection = builder.CurrentSection;
+pageSetup = currentSection.PageSetup;
+pageSetup.Orientation = Orientation.Landscape;
+// Cette section n'a pas besoin d'un en-tête/pied de page de première page différent, nous n'avons besoin que d'une seule page de titre dans le document,
+// et l'en-tête/pied de page de cette page a déjà été défini dans la section précédente.
+pageSetup.DifferentFirstPageHeaderFooter = false;
 
-	// Si nous voulons utiliser l'ensemble d'en-tête/pied de page déjà existant pour cette section.
-	// Mais avec quelques modifications mineures, il peut être opportun de copier les en-têtes/pieds de page
-	// de la section précédente et appliquez les modifications nécessaires là où vous le souhaitez.
-	CopyHeadersFootersFromPreviousSection(currentSection);
+// Cette section affiche les en-têtes/pieds de page de la section précédente
+// par défaut appelez currentSection.HeadersFooters.LinkToPrevious(false) pour annuler cette largeur de page
+// est différent pour la nouvelle section, et nous devons donc définir différentes largeurs de cellule pour un tableau de pied de page.
+currentSection.HeadersFooters.LinkToPrevious(false);
 
-	HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
+// Si nous voulons utiliser l'ensemble d'en-tête/pied de page déjà existant pour cette section.
+// Mais avec quelques modifications mineures, il peut être opportun de copier les en-têtes/pieds de page
+//de la section précédente et appliquez les modifications nécessaires là où vous le souhaitez.
+CopyHeadersFootersFromPreviousSection(currentSection);
 
-	Row row = primaryFooter.Tables[0].FirstRow;
-	row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
-	row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+HeaderFooter primaryFooter = currentSection.HeadersFooters[HeaderFooterType.FooterPrimary];
 
-	doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
+Row row = primaryFooter.Tables[0].FirstRow;
+row.FirstCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
+row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
+
+doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
+
+### FAQ
+
+#### Q : Comment puis-je ajouter un en-tête à mon document dans Aspose.Words ?
+
+ R : Pour ajouter un en-tête à votre document dans Aspose.Words, vous pouvez utiliser le`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.HeaderPrimary)` méthode. Cette méthode ajoute un titre principal à la première section de votre document.
+
+#### Q : Comment puis-je ajouter un pied de page à mon document dans Aspose.Words ?
+
+ R : Pour ajouter un pied de page à votre document dans Aspose.Words, vous pouvez utiliser le`Document.FirstSection.HeadersFooters.Add(HeaderFooterType.FooterPrimary)` méthode. Cette méthode ajoute un pied de page principal à la première section de votre document.
+
+#### Q : Comment puis-je ajouter du texte à mon en-tête ou mon pied de page dans Aspose.Words ?
+
+ R : Pour ajouter du texte à votre en-tête ou pied de page dans Aspose.Words, vous pouvez utiliser le`HeaderFooter.Paragraphs` pour obtenir la collection de paragraphes de l'en-tête ou du pied de page, puis ajoutez un paragraphe contenant votre texte à cette collection à l'aide de la propriété`ParagraphCollection.Add` méthode.
+
+#### Q : Puis-je personnaliser le contenu de l'en-tête ou du pied de page avec des images et des numéros de page dans Aspose.Words ?
+
+R : Oui, vous pouvez personnaliser le contenu de l'en-tête ou du pied de page avec des images et des numéros de page dans Aspose.Words. Vous pouvez utiliser des objets comme`Shape` pour ajouter des images et des objets comme`Field` pour ajouter des numéros de page à votre en-tête ou pied de page.
+
+#### Q : Puis-je modifier la police, la taille et la couleur du texte dans mon en-tête ou mon pied de page dans Aspose.Words ?
+
+ R : Oui, vous pouvez modifier la police, la taille et la couleur du texte dans votre en-tête ou votre pied de page dans Aspose.Words. Vous pouvez accéder aux propriétés de formatage du texte telles que`Font` pour changer la police,`Size` pour ajuster la taille, et`Color` pour définir la couleur du texte.

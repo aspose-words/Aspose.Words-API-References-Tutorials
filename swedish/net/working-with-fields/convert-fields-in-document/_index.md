@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 3: Ladda dokumentet
- Använd`Document` klass av Aspose.Words för att ladda Word-dokumentet som innehåller de länkade fälten du vill konvertera.
+ Använd`Document`klass av Aspose.Words för att ladda Word-dokumentet som innehåller de länkade fälten du vill konvertera.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");
@@ -65,3 +65,29 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 
 ## Slutsats
 Aspose.Words för .NET:s ConvertFieldsInDocument-funktion är ett kraftfullt verktyg för att konvertera länkade fält i ett Word-dokument till text. 
+
+### FAQ's
+
+#### F: Vad är en fältkonvertering i Aspose.Words?
+
+S: En fältkonvertering i Aspose.Words hänvisar till förmågan att transformera data från ett fält i ett Word-dokument med olika format eller datatyper. Detta gör att du kan ändra presentationen eller strukturen för data i slutdokumentet.
+
+#### F: Hur konverterar man fält i ett Word-dokument med Aspose.Words?
+
+S: För att konvertera fält i ett Word-dokument med Aspose.Words kan du följa dessa steg:
+
+1. Importera klassen Document från namnområdet Aspose.Words.
+2. Skapa en instans av dokument genom att ladda ditt befintliga dokument.
+3. Använd metoden UpdateFields för att uppdatera alla fält i dokumentet och utföra konverteringarna.
+
+#### F: Vilka typer av konverteringar är möjliga i Aspose.Words?
+
+S: Aspose.Words stöder flera typer av konverteringar i fält, som att konvertera datumformat, konvertera talformat, konvertera textformat, konvertera valutaformat, konvertera procentformat och ännu mer. Du kan kontrollera Aspose.Words-dokumentationen för en fullständig lista över konverteringstyper som stöds.
+
+#### F: Ändrar konverterande fält originaldata i Word-dokumentet?
+
+S: Nej, konvertering av fält i Aspose.Words påverkar inte originaldata i Word-dokumentet. Konverteringen tillämpas vid uppdatering av fält, men originaldata förblir intakta. Detta säkerställer att du kan återgå till dokumentets ursprungliga tillstånd när som helst.
+
+#### F: Är det möjligt att anpassa fältkonverteringar i Aspose.Words?
+
+S: Ja, det är möjligt att anpassa fältkonverteringar i Aspose.Words genom att använda specifika formateringskoder eller genom att justera de tillgängliga konverteringsalternativen. Du kan definiera anpassade format för datum, siffror, texter etc. för att möta dina specifika behov.

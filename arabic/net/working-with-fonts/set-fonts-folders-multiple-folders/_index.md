@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## الخطوة 3: تعيين مجلدات الخطوط
- الآن يمكنك تعيين مجلدات خطوط متعددة باستخدام ملف`FontSettings` الطبقة و`SetFontsFolders()` طريقة. يمكنك تحديد مسارات مجلدات الخطوط التي تريد استخدامها في مصفوفة. في هذا المثال ، حددنا مجلدين للخط: "C: \ MyFonts\"و" D: \ Misc \ Fonts\".
+ يمكنك الآن تعيين مجلدات خطوط متعددة باستخدام امتداد`FontSettings` الطبقة و`SetFontsFolders()` طريقة. يمكنك تحديد مسارات مجلدات الخطوط التي تريد استخدامها في مصفوفة. في هذا المثال ، حددنا مجلدين للخط: "C: \ MyFonts\"و" D: \ Misc \ Fonts\".
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -49,18 +49,40 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ### عينة من التعليمات البرمجية المصدر لـ Set Fonts Folders Multiple Folders باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// المسار إلى دليل المستند الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Rendering.docx");
-	FontSettings fontSettings = new FontSettings();
-	// لاحظ أن هذا الإعداد سيتجاوز أي مصادر افتراضية للخطوط يتم البحث عنها افتراضيًا. الآن سيتم البحث عن هذه المجلدات فقط
-	// الخطوط عند تقديم أو دمج الخطوط. لإضافة مصدر خط إضافي مع الاحتفاظ بمصادر خطوط النظام ، استخدم كلاً من FontSettings.GetFontSources و
-	// FontSettings.SetFontSources بدلاً من ذلك.
-	fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
-	doc.FontSettings = fontSettings;
-	doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
+Document doc = new Document(dataDir + "Rendering.docx");
+FontSettings fontSettings = new FontSettings();
+// لاحظ أن هذا الإعداد سيتجاوز أي مصادر افتراضية للخطوط يتم البحث عنها افتراضيًا. الآن سيتم البحث عن هذه المجلدات فقط
+// الخطوط عند تقديم أو دمج الخطوط. لإضافة مصدر خط إضافي مع الاحتفاظ بمصادر خطوط النظام ، استخدم كلاً من FontSettings.GetFontSources و
+// FontSettings.SetFontSources بدلاً من ذلك.
+fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
+doc.FontSettings = fontSettings;
+doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ```
 
 ## خاتمة
 في هذا البرنامج التعليمي ، تعلمنا كيفية تعيين مجلدات خطوط متعددة عند عرض مستند باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي خطوة بخطوة ، يمكنك بسهولة تحديد مجلدات خطوط متعددة لاستخدامها عند عرض مستنداتك. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة للعمل مع الخطوط في مستنداتك. باستخدام هذه المعرفة ، يمكنك التحكم في مصادر الخطوط المستخدمة عند تقديم مستنداتك لاحتياجاتك الخاصة وتخصيصها.
+
+### التعليمات
+
+#### س: كيف يمكنني تعيين مجلدات خطوط متعددة في Aspose.Words؟
+
+ ج: لتعيين مجلدات خطوط متعددة في Aspose.Words ، يمكنك استخدام ملف`SetFontsFolders` طريقة`Fonts` فئة توفر قائمة بمواقع مجلدات الخطوط المخصصة.
+
+#### س: هل يؤثر تعيين مجلدات خطوط متعددة على جميع المستندات التي تتم معالجتها باستخدام Aspose.Words؟
+
+ج: نعم ، يؤثر تعيين مجلدات خطوط متعددة على جميع المستندات التي تتم معالجتها باستخدام Aspose.Words. بمجرد تحديد مجلدات الخطوط ، ستستخدم Aspose.Words هذه المواقع للبحث عن الخطوط في جميع المستندات.
+
+#### س: كم عدد مجلدات الخطوط التي يمكنني تحديدها في Aspose.Words؟
+
+ج: يمكنك تحديد العديد من مجلدات الخطوط حسب الحاجة في Aspose.Words. لا يوجد حد معين لعدد مجلدات الخطوط التي يمكنك تحديدها.
+
+#### س: كيف يمكنني التحقق من مجلدات الخطوط المحددة في Aspose.Words؟
+
+ ج: للتحقق من مجلدات الخطوط المحددة في Aspose.Words ، يمكنك استخدام`GetFolders` طريقة`Fonts` فئة للحصول على مواقع مجلدات الخطوط المكونة.
+
+#### س: هل يجب أن تحتوي مجلدات الخطوط على خطوط معينة؟
+
+ج: نعم ، يجب أن تحتوي مجلدات الخطوط على الخطوط التي تريد استخدامها في مستندات Word الخاصة بك. سيبحث Aspose.Words عن الخطوط في المجلدات المحددة عند معالجة المستندات.

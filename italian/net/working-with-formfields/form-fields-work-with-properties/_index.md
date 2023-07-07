@@ -64,3 +64,25 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
 Sentiti libero di utilizzare questo codice nei tuoi progetti e di modificarlo in base alle tue esigenze specifiche.
+
+### FAQ
+
+#### D: Come posso cambiare il nome di un campo del modulo in Aspose.Words?
+
+ A: Per cambiare il nome di un campo del modulo in Aspose.Words, puoi usare il file`FormField.Name` proprietà e assegnarle un nuovo valore.
+
+#### D: È possibile modificare il valore predefinito di un campo modulo?
+
+ A: Sì, è possibile modificare il valore predefinito di un campo del modulo in Aspose.Words. Usa il`FormField.Result` property per specificare il nuovo valore predefinito.
+
+#### D: Come posso modificare il formato di un campo del modulo data in Aspose.Words?
+
+ A: Per modificare il formato di un campo del modulo data in Aspose.Words, puoi utilizzare il file`FormField.TextFormat` proprietà e assegnarle un nuovo formato di data. Ad esempio, è possibile utilizzare "gg/MM/aaaa" per visualizzare la data nel formato giorno/mese/anno.
+
+#### D: Posso recuperare l'elenco delle opzioni da un campo del modulo a discesa in Aspose.Words?
+
+ A: Sì, è possibile recuperare l'elenco delle opzioni per un campo modulo a discesa in Aspose.Words utilizzando il`FormField.DropDownItems` proprietà. È possibile accedere a questa proprietà e ottenere l'elenco delle opzioni per eseguire operazioni aggiuntive, se necessario.
+
+#### D: Come posso rimuovere tutte le proprietà da un campo modulo in Aspose.Words?
+
+ R: Per rimuovere tutte le proprietà da un campo modulo in Aspose.Words, puoi utilizzare il`FormField.Clear` metodo per cancellare tutte le proprietà del campo modulo.

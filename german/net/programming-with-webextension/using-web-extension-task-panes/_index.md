@@ -14,7 +14,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibl
 
 ## Schritt 1: Definieren Sie das Dokumentenverzeichnis
 
- Zunächst müssen Sie den Pfad zu dem Verzeichnis definieren, in dem Sie das generierte Dokument speichern möchten. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis.
+Zunächst müssen Sie den Pfad zu dem Verzeichnis definieren, in dem Sie das generierte Dokument speichern möchten. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Erstellen und konfigurieren Sie einen Aufgabenbereich
 
- Wir erstellen ein`TaskPane` Objekt und fügen Sie es dem Dokument hinzu`s `WebExtensionTaskPanes`-Sammlung. Als Nächstes konfigurieren wir die Eigenschaften des Aufgabenbereichs, z. B. seinen angedockten Zustand, seine Sichtbarkeit und seine Breite.
+ Wir erstellen eine`TaskPane` Objekt und fügen Sie es dem Dokument hinzu`s `WebExtensionTaskPanes`-Sammlung. Als Nächstes konfigurieren wir die Eigenschaften des Aufgabenbereichs, z. B. seinen angedockten Zustand, seine Sichtbarkeit und seine Breite.
 
 ```csharp
 Document doc = new Document();

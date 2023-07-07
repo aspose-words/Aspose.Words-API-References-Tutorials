@@ -58,3 +58,25 @@ Aquí está el código fuente completo para mostrar el título del documento en 
 ```
 Siguiendo estos pasos, puede mostrar fácilmente el título del documento en la barra de título de la ventana al convertir a PDF con Aspose.Words para .NET.
 
+### Preguntas frecuentes
+
+#### P: ¿Qué es la función "Mostrar el título del documento en la barra de título de la ventana" con Aspose.Words para .NET?
+La característica "Mostrar el título del documento en la barra de título de la ventana" con Aspose.Words para .NET le permite mostrar el título del documento en la barra de título de la ventana cuando abre el documento PDF generado. Esto facilita la identificación y distinción de documentos PDF en su entorno de lectura.
+
+#### P: ¿Cómo puedo usar esta función con Aspose.Words para .NET?
+Para usar esta función con Aspose.Words para .NET, siga estos pasos:
+
+ Cargue el documento utilizando el`Document` método y especificando la ruta del archivo para convertir a PDF.
+
+ Configure las opciones de guardado de PDF creando una instancia del`PdfSaveOptions` clase y establecer el`DisplayDocTitle` propiedad a`true`. Esto habilita la visualización del título del documento en la barra de título de la ventana al convertir a PDF.
+
+ Utilizar el`Save` para convertir el documento a PDF especificando las opciones de conversión.
+
+#### P: ¿Esta función cambia el contenido del documento en sí?
+No, esta función no modifica el contenido del documento en sí. Solo afecta la visualización del título del documento en la barra de título de la ventana cuando se abre como un documento PDF. El contenido del documento permanece sin cambios.
+
+#### P: ¿Es posible personalizar el título del documento que se muestra en la barra de título de la ventana?
+ Sí, puede personalizar el título del documento que se muestra en la barra de título de la ventana cambiando el`Document.Title` propiedad del documento antes de convertirlo a PDF. Puede establecer el título deseado usando una cadena. Asegúrese de establecer el título antes de llamar al`Save` método para convertir a PDF.
+
+#### P: ¿Qué otros formatos de salida admite Aspose.Words para la conversión de documentos?
+Aspose.Words para .NET admite muchos formatos de salida para la conversión de documentos, como PDF, XPS, HTML, EPUB, MOBI, imagen (JPEG, PNG, BMP, TIFF, GIF) y muchos más. aún otros. Puede elegir el formato de salida adecuado según sus necesidades específicas.

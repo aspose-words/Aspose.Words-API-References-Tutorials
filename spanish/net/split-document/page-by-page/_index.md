@@ -65,5 +65,5 @@ for (int page = 0; page < pageCount; page++)
 MergeDocuments();
 ```
 
-Con este código podrá dividir un documento de Word en páginas individuales usando Aspose.Words para .NET. También puede fusionar documentos separados si es necesario.
+Con este código podrá dividir un documento de Word en páginas individuales utilizando Aspose.Words para .NET. También puede fusionar documentos separados si es necesario.
 

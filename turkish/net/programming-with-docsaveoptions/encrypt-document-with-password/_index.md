@@ -83,4 +83,4 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 
 ## Çözüm
 
-Bu kılavuzda, DocSaveOptions kaydetme seçeneklerini kullanarak bir belgeyi parolayla şifrelemek için Aspose.Words kitaplığının .NET için nasıl kullanılacağını açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. Belgeyi bir parolayla şifrelemek, belgeyi işlerken gizliliğini ve güvenliğini garanti eder.
+Bu kılavuzda, DocSaveOptions kaydetme seçeneklerini kullanarak bir belgeyi şifre ile şifrelemek için Aspose.Words library for .NET'in nasıl kullanılacağını açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. Belgeyi bir parolayla şifrelemek, belgeyi işlerken gizliliğini ve güvenliğini garanti eder.

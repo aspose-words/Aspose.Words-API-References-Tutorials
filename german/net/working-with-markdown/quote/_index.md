@@ -58,3 +58,21 @@ builder.Writeln("1. Nested blockquote");
 
 Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Zitierfunktion mit Aspose.Words für .NET verwenden.
 
+
+### FAQs
+
+#### F: Was ist ein Zitat in Markdown?
+
+A: Ein Zitat in Markdown ist eine Möglichkeit, Textpassagen aus anderen Quellen hervorzuheben oder auf berühmte Zitate zu verweisen.
+
+#### F: Wie verwende ich Anführungszeichen in Markdown?
+
+A: Um ein Zitat in Markdown zu verwenden, schließen Sie den Text des Zitats in spitze Klammern ein (`>`). Jede Zeile des Zitats muss mit einem Chevron beginnen.
+
+#### F: Unterstützen Markdown-Anführungszeichen Attribute?
+
+A: Markdown-Zitate unterstützen keine bestimmten Attribute. Sie werden lediglich durch die Formatierung des zitierten Textes hervorgehoben.
+
+#### F: Können Sie Zitate in Markdown einbetten?
+
+A: Ja, es ist möglich, Anführungszeichen in Markdown zu verschachteln, indem eine zusätzliche Ebene spitzer Klammern hinzugefügt wird (`>`).

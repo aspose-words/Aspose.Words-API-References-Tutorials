@@ -2,7 +2,7 @@
 title: Vergleichen Sie Optionen
 linktitle: Vergleichen Sie Optionen
 second_title: Aspose.Words für .NET API-Referenz
-description: Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Funktion „Optionen vergleichen“ mit Aspose.Words für .NET.
+description: Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Funktion „Vergleichsoptionen“ mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/compare-documents/compare-options/
@@ -21,7 +21,7 @@ Document docB = docA.Clone();
 
 ## Schritt 2: Vergleichsoptionen konfigurieren
 
-Wir werden nun die Vergleichsoptionen konfigurieren, indem wir eine erstellen`CompareOptions` Objekt und legen Sie die verschiedenen Eigenschaften nach Bedarf fest. Hier ist wie:
+ Wir werden nun die Vergleichsoptionen konfigurieren, indem wir eine erstellen`CompareOptions` Objekt und legen Sie die verschiedenen Eigenschaften nach Bedarf fest. Hier ist wie:
 
 ```csharp
 CompareOptions options = new CompareOptions

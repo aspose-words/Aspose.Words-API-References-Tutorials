@@ -85,3 +85,24 @@ doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
 En este ejemplo, creamos un nuevo documento, construimos un campo IF con campos MERGEFIELD anidados y luego insertamos ese campo en el documento en una ubicación específica. A continuación, el documento se guarda con un nombre de archivo específico.
+
+### Preguntas frecuentes
+
+#### P: ¿Qué es un constructor de campo en Aspose.Words?
+
+R: Un Generador de campos en Aspose.Words es una poderosa herramienta para crear y manipular campos en un documento de Word. Ofrece funciones avanzadas para crear y personalizar campos, incluida la inserción de códigos de campo y la gestión de opciones de formato.
+
+#### P: ¿Qué tipos de campos se pueden insertar con el generador de campos?
+
+R: El generador de campos en Aspose.Words le permite insertar diferentes tipos de campos en un documento de Word. Estos son algunos ejemplos de tipos de campo de uso común:
+
+- MERGEFIELD: se utiliza para fusionar datos de fuentes externas.
+- FECHA: muestra la fecha actual.
+- PÁGINA: muestra el número de página actual.
+- SI: permite condicionar la visualización de un contenido según una condición.
+- TOC: genera automáticamente una tabla de contenido basada en los estilos de título del documento.
+
+#### P: ¿Cómo personalizar los campos insertados con el generador de campos?
+
+R: El generador de campos ofrece opciones de personalización para los campos insertados. Puede usar métodos y propiedades del constructor de campos para establecer opciones como formato de campo, argumentos, modificadores y valores predeterminados. Por ejemplo, puede configurar el formato de fecha, el formato de número, el separador de miles, etc.
+  

@@ -31,7 +31,7 @@ Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## Steg 4: Öppna dokumentsektionen
+## Steg 4: Gå till dokumentsektionen
  För att lägga till stycket i dokumentet måste vi komma åt den sista delen av dokumentet med hjälp av`LastSection` fast egendom.
 
 ```csharp
@@ -65,3 +65,25 @@ section.Body.AppendChild(para);
 ```
 
 Detta är ett komplett kodexempel för att skapa och lägga till en styckenod med Aspose.Words för .NET. Var noga med att importera nödvändiga referenser och följ stegen som beskrivits tidigare för att integrera denna kod i ditt projekt.
+
+### FAQ's
+
+#### F: Vad är en styckenod i ett XML-dokument?
+
+S: En styckenod i ett XML-dokument används för att representera ett stycke text. Den innehåller textinnehållet i stycket och kan användas för att strukturera texten i XML-dokumentet.
+
+#### F: Hur skapar man en styckenod i Node.js?
+
+ S: För att skapa en styckenod i Node.js kan du använda`createElement` metod för`Document` objekt för att skapa ett nytt element med namnet "stycke". Då kan du använda`createTextNode` metod för att skapa en textnod som innehåller innehållet i stycket.
+
+#### F: Hur lägger man till en styckenod i ett befintligt XML-dokument?
+
+ S: För att lägga till en styckenod till ett befintligt XML-dokument kan du använda`appendChild` metod för att lägga till styckenoden som ett underordnat element till ett annat element i XML-dokumentet. Du kan till exempel lägga till det som ett underordnat element till dokumentrotelementet.
+
+#### F: Hur definierar man innehållet i en styckenod?
+
+ S: För att ställa in innehållet i en styckenod kan du använda`createTextNode` metod för att skapa en textnod som innehåller det önskade innehållet, använd sedan`appendChild` metod för att lägga till den textnoden som ett underordnat till noden i stycket.
+
+#### F: Hur formaterar jag text i en styckenod?
+
+S: Formateringen av text i en styckenod beror på XML-API:et du använder i din Node.js-miljö. Du kan vanligtvis använda specifika egenskaper och metoder för att ställa in formateringsattribut som typsnitt, storlek, färg etc.

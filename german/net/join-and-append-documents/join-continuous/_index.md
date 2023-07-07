@@ -2,7 +2,7 @@
 title: Treten Sie Continuous bei
 linktitle: Treten Sie Continuous bei
 second_title: Aspose.Words für .NET API-Referenz
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET zwei Dokumente fortlaufend verbinden und dabei die Formatierung beibehalten.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET zwei Dokumente kontinuierlich verbinden und dabei die Formatierung beibehalten.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/join-continuous/

@@ -81,3 +81,28 @@ finally
 ```
 
 Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und an Ihre spezifischen Bedürfnisse anpassen.
+
+### FAQs
+
+#### F: Was ist eine Silbentrennungserinnerung in Aspose.Words?
+
+A: Eine Silbenerinnerung in Aspose.Words ist eine Funktion, mit der Sie anpassen können, wie Wörter in Ihren Dokumenten mit Silben versehen werden. Durch die Verwendung einer Silbentrennungserinnerung können Sie benutzerdefinierte Regeln für die Silbentrennung von Wörtern festlegen, was für bestimmte Sprachen oder bestimmte Szenarien nützlich sein kann, in denen die Standardsilbentrennung nicht die gewünschten Ergebnisse liefert.
+
+#### F: Wie stelle ich in Aspose.Words eine Silbentrennungserinnerung ein?
+
+ A: Um einen Silbentrennungsrückruf in Aspose.Words zu definieren, müssen Sie eine Klasse erstellen, die den implementiert`HyphenationCallback` Schnittstelle und implementieren die`HandleWord()` Methode. Diese Methode wird für jedes Wort aufgerufen, das während der Silbenbildung auftritt. Sie können benutzerdefinierte Silbenregeln darauf anwenden und das syllabierte Wort zurückgeben. Dann können Sie Ihren Silbentrennungsrückruf mit dem binden`Document.HyphenationCallback` Eigentum Ihres Dokuments.
+
+#### F: Welchen Vorteil bietet die Verwendung einer Silbentrennungserinnerung in Aspose.Words?
+
+A: Der Vorteil der Verwendung einer Silbenerinnerung in Aspose.Words besteht in der Möglichkeit, die Silbenbildung von Wörtern in Ihren Dokumenten anzupassen. Dies gibt Ihnen mehr Kontrolle über die Silbenbildung, insbesondere für bestimmte Sprachen oder Szenarien, in denen die Standardsilbenbildung nicht die gewünschten Ergebnisse liefert. Sie können auf jedes Wort spezifische Regeln anwenden, um eine präzise Silbenbildung entsprechend Ihren Anforderungen zu erhalten.
+
+#### F: In welchen häufigen Situationen kann die Verwendung einer Silbentrennungserinnerung hilfreich sein?
+
+A: Die Verwendung eines Silbenbildungs-Boosters kann in mehreren Szenarien nützlich sein, wie zum Beispiel:
+- Silbenbildung von Wörtern in bestimmten Sprachen, für die bestimmte Regeln für die Silbenbildung gelten.
+- Die Anwendung personalisierter Silbenregeln für Akronyme oder Fachwörter.
+- Anpassung der Silbentrennung an stilistische Vorlieben oder typografische Standards.
+
+#### F: Wie kann ich die benutzerdefinierte Silbentrennung mit einer Silbentrennungserinnerung in Aspose.Words testen?
+
+A: Um die benutzerdefinierte Silbenbildung mit einer Silbenerinnerung in Aspose.Words zu testen, können Sie ein Testdokument erstellen, das Wörter enthält, für die Sie benutzerdefinierte Silbenbildungsregeln anwenden möchten. Dann können Sie Ihren benutzerdefinierten Rückruf für die Silbentrennung festlegen`Document.Range.Replace()` Methode, um die Wörter im Dokument zu ersetzen, und verwenden Sie die`Hyphenate()` Methode der`Hyphenation` Klasse, um die Silbenbildung der Wörter zu erhalten. Anschließend können Sie die Silbenwörter nach Bedarf formatieren, indem Sie beispielsweise Bindestriche zwischen den Silben einfügen.

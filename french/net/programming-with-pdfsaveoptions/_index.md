@@ -18,22 +18,22 @@ Que vous souhaitiez convertir des documents Word en PDF pour la distribution, l'
 | --- | --- |
 | [Afficher le titre du document dans la barre de titre de la fenêtre](./display-doc-title-in-window-titlebar/) | Apprenez à afficher le titre du document dans la barre de titre de la fenêtre lors de la conversion au format PDF avec Aspose.Words pour .NET. |
 | [Avertissements de rendu PDF](./pdf-render-warnings/) | Guide étape par étape pour traiter les avertissements de rendu PDF avec Aspose.Words pour .NET. |
-| [Pdf signé numériquement à l'aide du titulaire du certificat](./digitally-signed-pdf-using-certificate-holder/) | Apprenez à signer numériquement un PDF à l'aide d'un détenteur de certificat avec Aspose.Words pour .NET. |
-| [Toutes les polices intégrées](./embedded-all-fonts/) | Guide étape par étape pour incorporer toutes les polices dans un PDF en utilisant Aspose.Words pour .NET. |
-| [Polices de sous-ensemble intégrées](./embedded-subset-fonts/) | Guide étape par étape pour incorporer des sous-ensembles de polices dans un PDF à l'aide d'Aspose.Words pour .NET. |
-| [Désactiver les polices Windows intégrées](./disable-embed-windows-fonts/) | Découvrez comment désactiver l'incorporation de polices Windows lors de la conversion de documents au format PDF avec Aspose.Words pour .NET. |
-| [Ignorer les polices Arial et Times Roman intégrées](./skip-embedded-arial-and-times-roman-fonts/) | Guide étape par étape pour générer un PDF sans incorporer les polices Arial et Times Roman avec Aspose.Words pour .NET. |
-| [Évitez d'incorporer des polices de base](./avoid-embedding-core-fonts/) | Découvrez comment éviter l'incorporation de polices de base lors de la conversion de documents Word en PDF avec Aspose.Words pour .NET. |
-| [Échapper à Uri](./escape-uri/) | Guide étape par étape pour échapper à Uri avec Aspose.Words pour .NET. |
-| [Exporter les signets d'en-tête de pied de page](./export-header-footer-bookmarks/) | Guide étape par étape pour exporter des signets d'en-tête et de pied de page avec Aspose.Words pour .NET. |
-| [Mettre à l'échelle les polices WMF à la taille du métafichier](./scale-wmf-fonts-to-metafile-size/) | Guide étape par étape pour ajuster la taille de la police WMF lors de la conversion en PDF avec Aspose.Words pour .NET. |
-| [Positionnement supplémentaire du texte](./additional-text-positioning/) | Apprenez à contrôler le placement de texte supplémentaire lors de la conversion de documents Word en PDF avec Aspose.Words pour .NET. |
-| [Conversion en PDF 17](./conversion-to-pdf-17/) | Apprenez à convertir des documents au format PDF 1.7 avec Aspose.Words pour .NET. |
-| [Images de sous-échantillonnage](./downsampling-images/) | Apprenez à réduire la résolution de l'image lors de la conversion au format PDF avec Aspose.Words pour .NET. |
-| [Définir les options de contour](./set-outline-options/) | Guide étape par étape pour définir les options de plan dans un document PDF avec Aspose.Words pour .NET. |
-| [Exportation des propriétés personnalisées](./custom-properties-export/) | Apprenez à exporter des propriétés personnalisées lors de la conversion de documents au format PDF avec Aspose.Words pour .NET. |
-| [Exporter la structure du document](./export-document-structure/) | Guide étape par étape pour exporter la structure d'un document avec Aspose.Words pour .NET. |
-| [Compression d'images](./image-compression/) | Guide étape par étape pour la compression d'images avec Aspose.Words pour .NET. |
-| [Mettre à jour la dernière propriété imprimée](./update-last-printed-property/) | Guide étape par étape pour mettre à jour la propriété "Dernière impression" lors de la conversion au format PDF avec Aspose.Words pour .NET. |
-| [Rendu Dml 3DEffects](./dml-3deffects-rendering/) | Découvrez comment activer le rendu des effets DML 3D lors de la conversion au format PDF avec Aspose.Words pour .NET. |
-| [Interpoler des images](./interpolate-images/) | Guide étape par étape pour activer l'interpolation d'image avec Aspose.Words pour .NET. |
+| [Ajouter une signature numérique au PDF à l'aide du titulaire du certificat](./digitally-signed-pdf-using-certificate-holder/) | Apprenez à signer numériquement un PDF à l'aide d'un détenteur de certificat avec Aspose.Words pour .NET. |
+| [Incorporer des polices dans un document PDF](./embedded-all-fonts/) | Guide étape par étape pour incorporer toutes les polices dans un PDF en utilisant Aspose.Words pour .NET. |
+| [Incorporer des polices de sous-ensemble dans un document PDF](./embedded-subset-fonts/) | Guide étape par étape pour incorporer des sous-ensembles de polices dans un PDF à l'aide d'Aspose.Words pour .NET. |
+| [Réduire la taille du PDF en désactivant les polices intégrées](./disable-embed-windows-fonts/) | Découvrez comment désactiver l'incorporation de polices Windows lors de la conversion de documents au format PDF avec Aspose.Words pour .NET. |
+| [Optimisez la taille du PDF avec Ignorer les polices Arial et Times Roman intégrées](./skip-embedded-arial-and-times-roman-fonts/) | Guide étape par étape pour générer un PDF sans incorporer les polices Arial et Times Roman avec Aspose.Words pour .NET. |
+| [Réduire la taille du fichier PDF en n'incorporant pas les polices de base](./avoid-embedding-core-fonts/) | Découvrez comment éviter l'incorporation de polices de base lors de la conversion de documents Word en PDF avec Aspose.Words pour .NET. |
+| [URI d'échappement dans le document PDF](./escape-uri/) | Guide étape par étape pour échapper à Uri avec Aspose.Words pour .NET. |
+| [Exporter les signets d'en-tête de pied de page de document Word vers un document PDF](./export-header-footer-bookmarks/) | Guide étape par étape pour exporter des signets d'en-tête et de pied de page avec Aspose.Words pour .NET. |
+| [Réduire la taille du PDF avec l'échelle des polices Wmf à la taille du métafichier](./scale-wmf-fonts-to-metafile-size/) | Guide étape par étape pour ajuster la taille de la police WMF lors de la conversion en PDF avec Aspose.Words pour .NET. |
+| [Améliorer le positionnement du texte PDF avec un positionnement de texte supplémentaire](./additional-text-positioning/) | Apprenez à contrôler le placement de texte supplémentaire lors de la conversion de documents Word en PDF avec Aspose.Words pour .NET. |
+| [Convertir un document Word en PDF 1.7](./conversion-to-pdf-17/) | Apprenez à convertir des documents au format PDF 1.7 avec Aspose.Words pour .NET. |
+| [Réduire la taille du document PDF avec le sous-échantillonnage des images](./downsampling-images/) | Apprenez à réduire la résolution de l'image lors de la conversion au format PDF avec Aspose.Words pour .NET. |
+| [Définir les options de contour dans un document PDF](./set-outline-options/) | Guide étape par étape pour définir les options de plan dans un document PDF avec Aspose.Words pour .NET. |
+| [Exporter les propriétés personnalisées dans un document PDF](./custom-properties-export/) | Apprenez à exporter des propriétés personnalisées lors de la conversion de documents au format PDF avec Aspose.Words pour .NET. |
+| [Exporter la structure du document Word vers un document PDF](./export-document-structure/) | Guide étape par étape pour exporter la structure d'un document avec Aspose.Words pour .NET. |
+| [Compression d'image dans un document PDF](./image-compression/) | Guide étape par étape pour la compression d'images avec Aspose.Words pour .NET. |
+| [Mettre à jour la dernière propriété imprimée dans le document PDF](./update-last-printed-property/) | Guide étape par étape pour mettre à jour la propriété "Dernière impression" lors de la conversion au format PDF avec Aspose.Words pour .NET. |
+| [Rendu 3D DML 3DEffects dans un document PDF](./dml-3deffects-rendering/) | Découvrez comment activer le rendu des effets DML 3D lors de la conversion au format PDF avec Aspose.Words pour .NET. |
+| [Interpoler des images dans un document PDF](./interpolate-images/) | Guide étape par étape pour activer l'interpolation d'image avec Aspose.Words pour .NET. |

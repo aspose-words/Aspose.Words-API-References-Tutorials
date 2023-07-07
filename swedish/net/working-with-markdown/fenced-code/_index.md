@@ -60,4 +60,21 @@ builder.ParagraphFormat.Style = fencedCodeWithInfo;
 builder.Writeln("This is a fenced code with info string");
 ```
 
+### FAQ's
+
+#### F: Vad är avgränsad kod i Markdown?
+
+S: Avgränsad kod i Markdown är en formateringsmetod som används för att visa kod i ett Markdown-dokument. Den består av att rama in koden med specifika avgränsare.
+
+#### F: Vilka är fördelarna med avgränsad kod i Markdown?
+
+S: Avgränsad kod i Markdown förbättrar kodläsbarheten och gör det lättare för läsarna att förstå. Det gör det också möjligt att bevara syntaxmarkering i vissa Markdown-redigerare.
+
+#### F: Vad är skillnaden mellan avgränsad och indragen kod i Markdown?
+
+S: Avgränsad kod använder specifika avgränsare för att omsluta koden, medan indragen kod innebär indragning av varje kodrad med mellanslag eller tabb.
+
+#### F: Stöds avgränsad kod i Markdown av alla Markdown-redigerare?
+
+S: Stödet för avgränsad kod i Markdown kan variera mellan Markdown-redigerare. Kontrollera din utgivares specifika dokumentation för att vara säker.
 

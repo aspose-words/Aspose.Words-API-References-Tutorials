@@ -57,3 +57,30 @@ Console.WriteLine(actualResult);
 Dans cet exemple, nous avons créé un générateur de document, inséré un champ IF avec une condition spécifiée, puis évalué la condition. Le résultat de l'évaluation est alors affiché dans la console.
 
 Ceci conclut notre guide sur l'utilisation de la fonctionnalité "Évaluer la condition IF" avec Aspose.Words pour .NET.
+
+### FAQ
+
+#### Q : Qu'est-ce qu'une condition IF dans Aspose.Words ?
+
+R : Une condition IF dans Aspose.Words est une fonctionnalité qui vous permet d'évaluer une condition logique et d'afficher différents contenus en fonction du résultat de la condition. Par exemple, vous pouvez utiliser une condition IF pour afficher un texte différent dans un document en fonction de certaines conditions prédéfinies.
+
+#### Q : Comment insérer une condition IF dans un document Word avec Aspose.Words ?
+
+R : Pour insérer une condition IF dans un document Word avec Aspose.Words, vous pouvez suivre ces étapes :
+
+1. Importez la classe Document à partir de l'espace de noms Aspose.Words.
+2. Créez une instance de Document en chargeant votre document existant.
+3. Utilisez la méthode InsertField pour insérer une condition IF avec la syntaxe appropriée.
+
+
+#### Q : Comment mettre à jour une condition IF dans un document Word avec Aspose.Words ?
+
+R : Pour mettre à jour une condition IF dans un document Word avec Aspose.Words, vous pouvez utiliser la méthode UpdateFields. Cette méthode parcourt le document et met à jour tous les champs, y compris les conditions IF, avec les données actuelles.
+
+#### Q : Quel type de conditions peut être évalué dans une condition IF avec Aspose.Words ?
+
+R : Avec Aspose.Words, vous pouvez évaluer une variété de conditions dans une condition IF, y compris des comparaisons numériques (par exemple, si un nombre est supérieur à un autre), des comparaisons de texte (par exemple, si une chaîne est égale à une autre), et bien plus encore. Vous pouvez également combiner plusieurs conditions à l'aide d'opérateurs logiques tels que AND et OR.
+
+#### Q : Est-il possible d'utiliser des conditions IF imbriquées dans un document Word avec Aspose.Words ?
+
+R : Oui, il est possible d'utiliser des conditions IF imbriquées dans un document Word avec Aspose.Words. Cela signifie que vous pouvez évaluer une condition IF dans une autre condition IF pour créer une logique plus complexe.

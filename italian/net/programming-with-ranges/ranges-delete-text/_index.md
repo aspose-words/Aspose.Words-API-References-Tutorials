@@ -50,7 +50,7 @@ In questo esempio, salviamo il documento modificato come "WorkingWithRangesDelet
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento di Word
+// Carica il documento di Word
 Document doc = new Document(dataDir + "Document.docx");
 
 // Elimina il testo nella prima sezione del documento

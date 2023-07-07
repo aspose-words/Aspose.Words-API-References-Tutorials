@@ -21,7 +21,7 @@ Para comenzar a trabajar con la tabla, necesitamos cargar el documento de Word q
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//Cargue el documento de Word
+// Cargue el documento de Word
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 

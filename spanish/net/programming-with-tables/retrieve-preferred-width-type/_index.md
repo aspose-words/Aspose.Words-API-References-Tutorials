@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-tables/retrieve-preferred-width-type/
 ---
 
-En este tutorial, aprenderemos cómo recuperar el tipo de ancho preferido y su valor de una celda de tabla en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá recuperar el tipo de ancho preferido (absoluto, relativo o automático) y su valor para una celda específica en las tablas de su documento de Word.
+En este tutorial, aprenderemos cómo recuperar el tipo de ancho preferido y su valor de una celda de tabla en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá recuperar el tipo de ancho preferido (absoluto, relativo o automático) y su valor para una celda específica en las tablas de su documento de Word.
 
 ## Paso 1: Configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.

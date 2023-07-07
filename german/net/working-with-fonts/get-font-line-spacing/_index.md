@@ -21,7 +21,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Artikel ver
 // Erstellen Sie ein neues Dokument
 Document doc = new Document();
 
-// Erstellen Sie einen Dokumentengenerator
+//Erstellen Sie einen Dokumentengenerator
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
  Als nächstes konfigurieren wir die Schriftart, indem wir die festlegen`Name` Eigenschaft des Dokumentgenerators.
 
 ```csharp
-//Konfigurieren Sie die Schriftart
+// Konfigurieren Sie die Schriftart
 builder.Font.Name = "Calibri";
 ```
 
@@ -62,3 +62,25 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 
 ## Abschluss
 In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET den Schriftzeilenabstand in einem Word-Dokument ermittelt. Der Zeilenabstand der Schriftart ist wichtig, um den vertikalen Abstand zwischen Textzeilen zu steuern. Nutzen Sie diese Funktion gerne, um das Erscheinungsbild Ihres Textes in Ihren Dokumenten anzupassen.
+
+### FAQs
+
+#### F: Wie kann ich den Zeilenabstand eines bestimmten Texts in einem Word-Dokument ändern?
+
+A: Mit Aspose.Words können Sie den Zeilenabstand von bestimmtem Text in einem Word-Dokument ganz einfach ändern. Verwenden Sie die API, um den gewünschten Text auszuwählen und den Abstand zwischen den Zeilen anzupassen, indem Sie den entsprechenden Wert angeben.
+
+#### F: Ist es möglich, in einem Word-Dokument einen genauen Zeilenabstand festzulegen?
+
+A: Ja, mit Aspose.Words können Sie in einem Word-Dokument genaue Abstände zwischen Zeilen festlegen. Mithilfe der API können Sie einen genauen Wert für den Zeilenabstand angeben.
+
+#### F: Wie kann ich den Zeilenabstand für das gesamte Word-Dokument anpassen?
+
+A: Mit Aspose.Words können Sie den Zeilenabstand für das gesamte Word-Dokument ganz einfach anpassen. Verwenden Sie die von der API bereitgestellten Methoden, um den gewünschten Zeilenabstand für das gesamte Dokument festzulegen.
+
+#### F: Unterstützt Aspose.Words mehrere Zeilenabstände?
+
+A: Ja, Aspose.Words unterstützt mehrere Zeilenabstände in Word-Dokumenten. Sie können für die Zeilen Ihres Textes mehrere Abstände festlegen, z. B. das 1,5-fache oder das 2-fache des normalen Abstands.
+
+#### F: Wie kann ich Probleme mit Zeilenüberlappungen beim Anpassen des Zeilenabstands vermeiden?
+
+A: Um Probleme mit Zeilenüberlappungen beim Anpassen des Zeilenabstands zu vermeiden, achten Sie darauf, geeignete Abstandswerte zu wählen. Testen Sie außerdem die endgültige Darstellung Ihres Dokuments, um sicherzustellen, dass der Text lesbar und gut formatiert bleibt.

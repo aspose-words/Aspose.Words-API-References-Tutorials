@@ -1,6 +1,6 @@
 ---
-title: Anahat Seçeneklerini Ayarla
-linktitle: Anahat Seçeneklerini Ayarla
+title: Bir PDF Belgesinde Anahat Seçeneklerini Ayarlama
+linktitle: Bir PDF Belgesinde Anahat Seçeneklerini Ayarlama
 second_title: Aspose.Words for .NET API Referansı
 description: Aspose.Words for .NET ile bir PDF belgesinde anahat seçeneklerini ayarlamak için adım adım kılavuz.
 type: docs
@@ -64,3 +64,26 @@ Bu kadar ! Aspose.Words for .NET'i kullanarak bir belgede anahat seçeneklerini 
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
    
 ```
+
+## Çözüm
+
+Bu eğitimde, Aspose.Words for .NET kullanarak bir PDF belgesinde anahat seçeneklerinin nasıl ayarlanacağını açıkladık. Açıklanan adımları kullanarak, belgenizdeki başlık ve anahat düzeylerini kolayca belirleyebilir ve karşılık gelen anahat seçenekleriyle bir PDF dosyası oluşturabilirsiniz. Aspose.Words for .NET kullanarak PDF belgelerinizdeki yapıyı ve gezinmeyi iyileştirmek için anahat seçeneğinin avantajlarından yararlanın.
+
+### Sıkça Sorulan Sorular
+
+#### S: Bir PDF belgesindeki anahat seçeneği nedir?
+Y: Bir PDF belgesindeki anahat seçeneği, belge içeriğinin hiyerarşik yapısını ifade eder. Etkileşimli bir içindekiler tablosu oluşturmanıza olanak tanır ve belgede gezinmeyi kolaylaştırır. Anahat seçenekleri, ana hatta dahil edilecek başlık ve alt başlık düzeylerini ve oluşturulan anahatta görüntülenecek ayrıntı düzeyini belirler.
+
+#### S: Aspose.Words for .NET kullanarak bir PDF belgesinde anahat seçeneklerini nasıl ayarlayabilirim?
+C: Aspose.Words for .NET kullanarak bir PDF belgesinde ana hat seçeneklerini ayarlamak için şu adımları izleyin:
+
+ Değiştirerek belgelerinizin bulunduğu dizin yolunu ayarlayın.`"YOUR DOCUMENT DIRECTORY"` belgeler dizininizin gerçek yolu ile.
+
+ kullanarak PDF'ye dönüştürmek istediğiniz belgeyi yükleyin.`Document` class ve belirtilen belgeler dizinindeki belgenin yolunu belirtin.
+
+ örneğini oluşturarak PDF olarak kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve kullanarak`OutlineOptions` anahat seçeneklerini ayarlamak için özelliği. Anahatta dahil edilecek başlık düzeylerinin sayısını belirtebilirsiniz.`HeadingsOutlineLevels` özelliği ve genişletilmiş anahat düzeylerinin sayısı`ExpandedOutlineLevels` mülk.
+
+ kullanarak belgeyi PDF formatında kaydedin.`Save` yöntemi`Document`yolu ve kaydetme seçeneklerini belirten sınıf.
+
+#### S: Bir PDF belgesinde plan seçeneği nedir?
+C: Bir PDF belgesindeki anahat seçeneği, belgede gezinmeyi ve farklı bölümlere erişmeyi kolaylaştıran, içeriğin hiyerarşik bir yapısını oluşturmanıza olanak tanır. Bu, kullanıcıların içindekiler tablosundaki veya ana hatlardaki girişleri tıklatarak belgenin belirli bölümlerine hızlı bir şekilde atlamalarına olanak tanır. Anahat seçeneği, genel belge yapısına genel bir bakış sunarak okuma deneyimini de geliştirir.

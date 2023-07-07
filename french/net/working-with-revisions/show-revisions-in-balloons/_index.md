@@ -63,5 +63,33 @@ doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Rig
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
+## Conclusion
+
+Dans ce didacticiel, nous avons appris à afficher les révisions dans des bulles dans un document Word à l'aide de Aspose.Words pour .NET. En utilisant les options d'affichage appropriées, nous avons pu rendre les révisions visibles dans des bulles avec des barres de révision sur le côté droit. Aspose.Words pour .NET offre de nombreuses fonctionnalités puissantes pour manipuler les documents Word, y compris la gestion des révisions. Vous pouvez maintenant utiliser ces connaissances pour afficher les révisions dans des bulles dans vos propres documents Word à l'aide d'Aspose.Words pour .NET.
 
 
+### FAQ
+
+#### Q : Comment télécharger un document dans Aspose.Words pour .NET ?
+
+ R : Utilisez le`Document` classe de Aspose.Words pour .NET pour charger un document à partir d'un fichier. Vous pouvez spécifier le chemin d'accès complet au document.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### Q : Comment afficher les révisions dans des bulles avec Aspose.Words pour .NET ?
+
+ R : Utilisez le`ShowInBalloons` propriété de la`RevisionOptions` objet pour configurer l'affichage des révisions dans les bulles. Vous pouvez définir cette propriété sur`ShowInBalloons.FormatAndDelete` pour afficher les révisions dans des bulles avec les révisions de suppression et de mise en forme.
+
+```csharp
+doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
+```
+
+#### Q : Comment enregistrer un document au format PDF avec Aspose.Words pour .NET ?
+
+ R : Utilisez le`Save` méthode de la`Document` objet pour enregistrer le document au format PDF. Vous devez spécifier le chemin de destination complet avec l'extension ".pdf".
+
+```csharp
+doc.Save("path/to/destination/document.pdf");
+```

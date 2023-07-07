@@ -71,4 +71,50 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
+## Çözüm
 
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinin revize edilmiş versiyonuna nasıl erişeceğimizi öğrendik. Belgeyi yükleyerek, gözden geçirilmiş sürüme giderek ve düzeltmelere göz atarak, liste öğeleri olan paragraflar için belirli bilgiler elde edebildik. Aspose.Words for .NET, incelemelere erişim de dahil olmak üzere Word belgelerini işlemek için güçlü özellikler sunar. Artık bu bilgiyi Aspose.Words for .NET kullanarak kendi Word belgelerinizin revize edilmiş versiyonuna erişmek için kullanabilirsiniz.
+
+### SSS
+
+#### S: Revizyonlu bir belgeyi Aspose.Words for .NET'e nasıl yüklerim?
+
+ C: Şunu kullanın:`Document`revizyonlar içeren bir dosyadan belge yüklemek için Aspose.Words for .NET sınıfı. Tam belge yolunu belirleyebilirsiniz.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### S: Aspose.Words for .NET'te bir belgenin revize edilmiş versiyonuna nasıl erişebilirim?
+
+ C: Şunu kullanın:`RevisionsView` mülkiyeti`Document` Belgenin revize edilmiş versiyonuna erişmek için itiraz edin. değerini ayarlayabilirsiniz.`RevisionsView` mülkiyet`RevisionsView.Final` revizyonlar olmadan son versiyonu göstermek için.
+
+```csharp
+doc.RevisionsView = RevisionsView.Final;
+```
+
+#### S: Aspose.Words for .NET'te belge revizyonlarına nasıl göz atabilirim?
+
+ C: Bir kullanın`foreach` belgede bulunan revizyonları yinelemek için döngü. kullanabilirsiniz`Revisions` mülkiyeti`Document` belgenin tüm revizyonlarının bir koleksiyonunu almak için nesne.
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+     // Her revizyonu burada işleyin
+}
+```
+
+#### S: Aspose.Words for .NET'te bir paragrafın bir liste öğesi olup olmadığı nasıl kontrol edilir?
+
+ C: Şunu kullanın:`IsListItem` mülkiyeti`Paragraph` paragrafın bir liste öğesi olup olmadığını kontrol etmek için nesne. bu`IsListItem` mülkiyet iadeleri`true` paragraf bir liste öğesiyse, aksi halde döndürür`false`.
+
+```csharp
+if (paragraph.IsListItem)
+{
+     // Paragraf bir liste öğesidir
+}
+else
+{
+     // Paragraf bir liste öğesi değil
+}
+```

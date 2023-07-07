@@ -48,7 +48,7 @@ builder.Writeln("A whole paragraph.");
 ```
 
 ## Étape 4 : Enregistrer le document
-Après avoir inséré le paragraphe, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
+Après avoir inséré le paragraphe, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");

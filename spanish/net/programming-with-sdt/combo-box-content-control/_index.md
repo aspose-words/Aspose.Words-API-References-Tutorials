@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Paso 3: agregue elementos al cuadro combinado
- Agregue elementos al cuadro combinado utilizando el`ListItems` propiedad de la`StructuredDocumentTag` . Cada elemento está representado por un`SdtListItem` objeto, que toma un texto de visualización y un valor. En este ejemplo, agregamos tres elementos al cuadro combinado.
+ Agregue elementos al cuadro combinado utilizando el`ListItems` propiedad de la`StructuredDocumentTag` Cada elemento está representado por un`SdtListItem` objeto, que toma un texto de visualización y un valor. En este ejemplo, agregamos tres elementos al cuadro combinado.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

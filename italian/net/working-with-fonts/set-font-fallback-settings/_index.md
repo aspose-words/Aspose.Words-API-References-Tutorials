@@ -15,14 +15,14 @@ Prima di iniziare, assicurati di avere i seguenti elementi:
 - La libreria Aspose.Words per .NET installata nel tuo progetto
 
 ## Passaggio 1: definire la directory dei documenti
-Inizia impostando il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
+ Inizia impostando il percorso della directory nella posizione del documento di Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: carica le impostazioni di sostituzione dei caratteri
- Crea un'istanza di`FontSettings` classe e utilizzare il`Load`metodo per caricare le impostazioni di sostituzione dei caratteri da un file XML. Il file XML specificato deve contenere le regole di sostituzione dei caratteri da utilizzare.
+ Crea un'istanza di`FontSettings` classe e utilizzare il`Load` metodo per caricare le impostazioni di sostituzione dei caratteri da un file XML. Il file XML specificato deve contenere le regole di sostituzione dei caratteri da utilizzare.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -57,3 +57,25 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 ## Conclusione
 In questo tutorial, hai imparato come impostare le impostazioni di sostituzione dei caratteri in un documento di Word utilizzando Aspose.Words per .NET. Sperimenta con diverse regole di sostituzione dei caratteri per assicurarti che il tuo documento appaia coerente, anche quando i caratteri specificati non sono disponibili.
+
+### FAQ
+
+#### D: Come posso impostare le impostazioni di sostituzione dei caratteri in un documento di Word con Aspose.Words?
+
+R: Per configurare le impostazioni di sostituzione dei caratteri in un documento Word con Aspose.Words, puoi utilizzare l'API per specificare i caratteri di fallback da utilizzare quando i caratteri richiesti non sono disponibili. Ciò garantisce una visualizzazione coerente del testo, anche senza i caratteri originali.
+
+#### D: È possibile gestire i caratteri di fallback durante l'override in un documento di Word con Aspose.Words?
+
+R: Sì, con Aspose.Words puoi gestire i font di riserva durante la sostituzione in un documento Word. L'API consente di rilevare i caratteri mancanti e specificare i caratteri di fallback appropriati per mantenere un aspetto del testo coerente anche quando i caratteri vengono sostituiti.
+
+#### D: Perché è importante configurare correttamente le impostazioni di sostituzione dei caratteri in un documento Word?
+
+R: È importante configurare correttamente le impostazioni di sostituzione dei caratteri in un documento Word per mantenere l'integrità visiva del testo. Impostando i caratteri di fallback appropriati con Aspose.Words, ti assicuri che il testo venga visualizzato in modo coerente, anche se i caratteri richiesti non sono disponibili.
+
+#### D: Come posso rilevare i caratteri mancanti durante la sostituzione in un documento di Word con Aspose.Words?
+
+R: Aspose.Words ti consente di rilevare i caratteri mancanti durante la sostituzione in un documento Word utilizzando l'API. È possibile utilizzare i metodi forniti da Aspose.Words per verificare la disponibilità dei caratteri richiesti e intraprendere azioni appropriate in caso di caratteri mancanti.
+
+#### D: La sostituzione dei caratteri influisce sul layout del mio documento Word?
+
+R: La sostituzione dei caratteri può influire sul layout del documento Word se i caratteri di fallback hanno dimensioni diverse rispetto ai caratteri originali. Tuttavia, scegliendo saggiamente i caratteri di fallback e configurando le impostazioni di sostituzione dei caratteri con Aspose.Words, è possibile ridurre al minimo gli impatti sul layout.

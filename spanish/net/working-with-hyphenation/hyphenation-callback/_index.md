@@ -81,3 +81,28 @@ finally
 ```
 
 Siéntase libre de usar este código en sus propios proyectos y modifíquelo para satisfacer sus necesidades específicas.
+
+### Preguntas frecuentes
+
+#### P: ¿Qué es un recordatorio de silabeo en Aspose.Words?
+
+R: Un recordatorio de silabeo en Aspose.Words es una característica que le permite personalizar cómo se silabean las palabras en sus documentos. Mediante el uso de un recordatorio de silabeo, puede especificar reglas personalizadas para el silabeo de palabras, lo que puede ser útil para idiomas específicos o escenarios particulares donde el silabeo predeterminado no produce los resultados deseados.
+
+#### P: ¿Cómo configurar un recordatorio de silabeo en Aspose.Words?
+
+ R: Para definir una devolución de llamada de partición en Aspose.Words, debe crear una clase que implemente el`HyphenationCallback` interfaz e implementar el`HandleWord()` método. Este método se llamará para cada palabra encontrada durante el silabeo. Puede aplicarle reglas de silabeo personalizadas y devolver la palabra silabizada. Luego puede vincular su devolución de llamada de separación de palabras usando el`Document.HyphenationCallback` propiedad de su documento.
+
+#### P: ¿Cuál es la ventaja de usar un recordatorio de silabeo en Aspose.Words?
+
+R: El beneficio de usar un recordatorio de silabeo en Aspose.Words es la capacidad de personalizar cómo se silabean las palabras en sus documentos. Esto le da más control sobre el silabeo, especialmente para idiomas o escenarios específicos donde el silabeo predeterminado no da los resultados deseados. Puedes aplicar reglas específicas a cada palabra para obtener un silabeo preciso de acuerdo a tus necesidades.
+
+#### P: ¿Cuáles son algunos escenarios comunes en los que puede ser útil usar un recordatorio de silabeo?
+
+R: El uso de un refuerzo de sílabas puede ser útil en varios escenarios, como:
+- Silabeo de palabras en idiomas específicos que tienen reglas particulares de silabeo.
+- La aplicación de reglas de silabeo personalizadas para siglas o palabras técnicas.
+- Adaptación del silabeo según preferencias estilísticas o normas tipográficas.
+
+#### P: ¿Cómo puedo probar el silabeo personalizado con un recordatorio de silabeo en Aspose.Words?
+
+R: Para probar el silabeo personalizado con un recordatorio de silabeo en Aspose.Words, puede crear un documento de prueba que contenga palabras para las que desea aplicar reglas de silabeo personalizado. Luego puede configurar su devolución de llamada de silabización personalizada, llame al`Document.Range.Replace()` método para reemplazar las palabras en el documento, y use el`Hyphenate()` metodo de la`Hyphenation` clase para obtener el silabeo de las palabras. A continuación, puede dar formato a las palabras divididas en sílabas según sea necesario, por ejemplo, añadiendo guiones entre sílabas.

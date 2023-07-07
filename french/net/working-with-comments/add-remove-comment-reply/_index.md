@@ -68,3 +68,25 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 Toutes nos félicitations! Vous avez appris avec succès comment ajouter et supprimer des réponses aux commentaires dans un document Word à l'aide de Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais gérer les réponses aux commentaires et les personnaliser selon vos besoins.
 
 Les réponses aux commentaires permettent des discussions collaboratives et des commentaires dans un document. Expérimentez avec différents auteurs de réponse, initiales, dates et textes pour améliorer la collaboration et la communication au sein de vos documents.
+
+### FAQ
+
+#### Q : Comment puis-je ajouter un commentaire dans Aspose.Words pour .NET ?
+
+ R : Pour ajouter un commentaire dans Aspose.Words pour .NET, vous pouvez utiliser le`Comment.AddComment` méthode spécifiant le texte du commentaire et où vous voulez l'ajouter dans le document.
+
+#### Q : Comment puis-je supprimer un commentaire dans Aspose.Words pour .NET ?
+
+ : Pour supprimer un commentaire dans Aspose.Words pour .NET, vous pouvez utiliser le`Comment.Remove` méthode spécifiant la`Comment` objet que vous souhaitez supprimer.
+
+#### Q : Puis-je répondre à un commentaire dans Aspose.Words pour .NET ?
+
+ R : Oui, vous pouvez répondre à un commentaire dans Aspose.Words pour .NET en utilisant le`Comment.AddReply` méthode spécifiant le texte de réponse et où vous voulez l'ajouter dans le document.
+
+#### Q : Comment puis-je accéder aux commentaires existants dans Aspose.Words pour .NET ?
+
+ R : Vous pouvez accéder aux commentaires existants dans Aspose.Words pour .NET en utilisant le`CommentCollection` propriété de la`Document` objet. Cela vous permettra de parcourir tous les commentaires présents dans le document.
+
+#### Q : Puis-je modifier le texte des commentaires dans Aspose.Words pour .NET ?
+
+ R : Oui, vous pouvez modifier le texte d'un commentaire dans Aspose.Words pour .NET en accédant au`Comment.Text` propriété du correspondant`Comment` objet et en modifiant le texte si nécessaire.

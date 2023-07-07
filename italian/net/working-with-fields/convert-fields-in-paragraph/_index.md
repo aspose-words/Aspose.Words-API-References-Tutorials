@@ -71,3 +71,26 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
 // Salva il documento modificato.
 doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ```
+
+### FAQ
+
+#### D: Cos'è un campo di conversione in Aspose.Words?
+
+R: Un campo di conversione in Aspose.Words è un tipo di campo che converte un valore o un'espressione in un altro formato o tipo di dati. Ad esempio, puoi utilizzare un campo di conversione per convertire una data in un formato specifico, un numero in testo o eseguire altri tipi di conversioni.
+
+#### D: Come inserire un campo di conversione in un paragrafo con Aspose.Words?
+
+R: Per inserire un campo di conversione in un paragrafo con Aspose.Words, puoi seguire questi passaggi:
+
+1. Importa la classe Document dallo spazio dei nomi Aspose.Words.
+2. Crea un'istanza di Documento caricando il tuo documento esistente.
+3. Ottieni il paragrafo in cui vuoi inserire il campo di conversione.
+4. Utilizzare il metodo InsertField per inserire il campo di conversione con la sintassi corretta.
+
+#### D: Quali formati di conversione supporta Aspose.Words?
+
+R: Aspose.Words supporta un'ampia gamma di formati di conversione nei campi, inclusi formati di data, formati numerici, formati di testo, formati di valuta, formati di percentuale e altro. Puoi controllare la documentazione di Aspose.Words per un elenco completo dei formati di conversione disponibili.
+
+#### D: Come aggiornare un campo di conversione in un documento Word con Aspose.Words?
+
+R: Per aggiornare un campo di conversione in un documento Word con Aspose.Words, puoi utilizzare il metodo UpdateFields. Questo metodo scorre il documento e aggiorna tutti i campi, inclusi i campi di conversione, ricalcolando i valori in base ai dati correnti.

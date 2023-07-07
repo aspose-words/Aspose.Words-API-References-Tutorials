@@ -55,3 +55,27 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ## Conclusion
 Dans ce didacticiel, vous avez appris à utiliser Resource Flow Font Source avec Aspose.Words pour .NET. Cette fonctionnalité vous permet de charger des polices à partir d'un flux de ressources, ce qui est utile lorsque vous souhaitez incorporer des polices personnalisées dans vos documents. Expérimentez avec différentes polices et explorez les possibilités offertes par Aspose.Words pour la gestion des polices.
+
+### FAQ
+
+#### Q : Comment puis-je charger une police à partir d'un flux de ressources dans Aspose.Words ?
+
+ R : Pour charger une police à partir d'un flux de ressources dans Aspose.Words, vous pouvez utiliser le`FontSettings` classe et la`SetFontsSources` méthode pour spécifier la source de la police à l'aide d'un flux de ressources. Cela permet à la police d'être chargée directement à partir du flux de ressources plutôt qu'à partir d'un fichier physique.
+
+#### Q : Quels sont les avantages de l'utilisation de flux de ressources pour spécifier les sources de polices dans Aspose.Words ?
+
+R : L'utilisation de flux de ressources pour spécifier les sources de polices présente plusieurs avantages :
+- Vous permet de charger des polices à partir de ressources intégrées à votre application, ce qui facilite le déploiement et la distribution de documents.
+- Fournit une flexibilité accrue dans la gestion des polices car vous pouvez charger des polices à partir de différents flux de ressources en fonction de vos besoins.
+
+#### Q : Comment puis-je ajouter des polices à un flux de ressources dans mon application .NET ?
+
+ R : Pour ajouter des polices à un flux de ressources dans votre application .NET, vous devez incorporer les fichiers de polices dans les ressources de votre projet. Vous pouvez ensuite accéder à ces fichiers de polices en utilisant des méthodes spécifiques à votre plate-forme de développement (par exemple,`GetManifestResourceStream` en utilisant le`System.Reflection` espace de noms).
+
+#### Q : Est-il possible de charger plusieurs polices à partir de différents flux de ressources dans un seul document Aspose.Words ?
+
+ R : Oui, il est tout à fait possible de charger plusieurs polices à partir de différents flux de ressources dans un seul document Aspose.Words. Vous pouvez spécifier plusieurs sources de polices à l'aide de la`SetFontsSources` méthode de la`FontSettings` classe, fournissant les flux de ressources appropriés pour chaque police.
+
+#### Q : Quels types de flux de ressources puis-je utiliser pour charger des polices dans Aspose.Words ?
+
+R : Vous pouvez utiliser différents types de flux de ressources pour charger des polices dans Aspose.Words, tels que des flux de ressources intégrés à votre application .NET, des flux de ressources à partir d'un fichier externe, des flux de ressources à partir d'une base de données, etc. flux de ressources en fonction de votre configuration et de vos besoins.

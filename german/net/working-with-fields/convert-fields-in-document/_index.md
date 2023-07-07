@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 3: Laden Sie das Dokument
- Benutzen Sie die`Document` Klasse von Aspose.Words, um das Word-Dokument zu laden, das die verknüpften Felder enthält, die Sie konvertieren möchten.
+ Benutzen Sie die`Document`Klasse von Aspose.Words, um das Word-Dokument zu laden, das die verknüpften Felder enthält, die Sie konvertieren möchten.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");
@@ -65,3 +65,29 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 
 ## Abschluss
 Die ConvertFieldsInDocument-Funktion von Aspose.Words für .NET ist ein leistungsstarkes Tool zum Konvertieren verknüpfter Felder in einem Word-Dokument in Text. 
+
+### FAQs
+
+#### F: Was ist eine Feldkonvertierung in Aspose.Words?
+
+A: Eine Feldkonvertierung in Aspose.Words bezieht sich auf die Möglichkeit, Daten aus einem Feld in einem Word-Dokument mithilfe verschiedener Formate oder Datentypen umzuwandeln. Dadurch können Sie die Darstellung oder Struktur der Daten im endgültigen Dokument ändern.
+
+#### F: Wie konvertiere ich Felder in einem Word-Dokument mit Aspose.Words?
+
+A: Um Felder in einem Word-Dokument mit Aspose.Words zu konvertieren, können Sie die folgenden Schritte ausführen:
+
+1. Importieren Sie die Document-Klasse aus dem Aspose.Words-Namespace.
+2. Erstellen Sie eine Instanz von Document, indem Sie Ihr vorhandenes Dokument laden.
+3. Verwenden Sie die UpdateFields-Methode, um alle Felder im Dokument zu aktualisieren und die Konvertierungen durchzuführen.
+
+#### F: Welche Arten von Konvertierungen sind in Aspose.Words möglich?
+
+A: Aspose.Words unterstützt verschiedene Arten der Konvertierung in Feldern, z. B. das Konvertieren von Datumsformaten, das Konvertieren von Zahlenformaten, das Konvertieren von Textformaten, das Konvertieren von Währungsformaten, das Konvertieren von Prozentformaten und noch mehr. Eine vollständige Liste der unterstützten Konvertierungstypen finden Sie in der Aspose.Words-Dokumentation.
+
+#### F: Verändert das Konvertieren von Feldern die Originaldaten im Word-Dokument?
+
+A: Nein, das Konvertieren von Feldern in Aspose.Words hat keinen Einfluss auf die Originaldaten im Word-Dokument. Die Konvertierung wird beim Aktualisieren von Feldern angewendet, die Originaldaten bleiben jedoch erhalten. Dadurch ist sichergestellt, dass Sie jederzeit zum Originalzustand des Dokuments zurückkehren können.
+
+#### F: Ist es möglich, Feldkonvertierungen in Aspose.Words anzupassen?
+
+A: Ja, es ist möglich, Feldkonvertierungen in Aspose.Words anzupassen, indem bestimmte Formatierungscodes verwendet oder die verfügbaren Konvertierungsoptionen angepasst werden. Sie können benutzerdefinierte Formate für Datumsangaben, Zahlen, Texte usw. definieren, um Ihren spezifischen Anforderungen gerecht zu werden.

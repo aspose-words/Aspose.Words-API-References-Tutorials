@@ -25,7 +25,7 @@ using Aspose.Words.Nodes;
 Document doc = new Document();
 ```
 
-## Steg 3: Gå till föräldranoden
+## Steg 3: Gå till föräldernoden
 För att få föräldernoden för en specifik nod måste vi först komma åt den noden. I det här exemplet kommer vi åt dokumentets första underordnade nod, som vanligtvis är ett avsnitt.
 
 ```csharp
@@ -53,3 +53,25 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 ```
 
 Detta är ett komplett kodexempel för att få föräldernoden för en specifik nod med Aspose.Words för .NET. Var noga med att importera nödvändiga referenser och följ stegen som beskrivits tidigare för att integrera denna kod i ditt projekt.
+
+### FAQ's
+
+#### F: Vad är överordnad nod i Node.js?
+
+S: Den överordnade noden i Node.js hänvisar till nästa högre nod i hierarkin för ett XML-dokument. Detta är noden som innehåller den angivna noden.
+
+#### F: Hur får man föräldernoden för en specifik nod?
+
+ S: För att få föräldernoden för en specifik nod kan du använda`parentNode` nodens egenskap. Den här egenskapen returnerar föräldernoden för den aktuella noden.
+
+#### F: Hur kontrollerar man om en nod har en föräldernod?
+
+ S: För att kontrollera om en nod har en föräldernod kan du helt enkelt kontrollera om`parentNode` egenskapen för noden är inställd. Om inställt betyder det att noden har en föräldernod.
+
+#### F: Kan vi ändra modernoden för en nod?
+
+ S: I de flesta fall bestäms den överordnade noden för en nod av strukturen i XML-dokumentet och kan inte ändras direkt. Du kan dock flytta en nod till en annan nod med hjälp av specifika metoder, som t.ex`appendChild` eller`insertBefore`.
+
+#### F: Hur bläddrar man i hierarkin av överordnade noder?
+
+ S: För att gå igenom hierarkin av överordnade noder kan du iterera från en specifik nod med hjälp av`parentNode`egenskapen tills du når dokumentets rotnod.

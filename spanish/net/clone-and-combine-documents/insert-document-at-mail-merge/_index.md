@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document mainDoc = new Document(MyDir + "Document insertion 1.docx");
 
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
-//El documento principal tiene un campo de combinación llamado "Documento_1".
+// El documento principal tiene un campo de combinación llamado "Documento_1".
 // Los datos correspondientes para este campo contienen una ruta completa al documento.
 // Eso debe ser insertado en este campo.
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { MyDir + "Document insertion 2.docx" });

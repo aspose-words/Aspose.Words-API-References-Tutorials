@@ -59,3 +59,47 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
+## Çözüm
+
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir grup revizyonun ayrıntılarını nasıl alacağımızı öğrendik. Bir döngü ve uygun özellikleri kullanarak revizyon tipi, yazar, tarih ve revize edilmiş metin gibi detayları görüntüleyebildik. Aspose.Words for .NET, revizyon yönetimi de dahil olmak üzere Word belgelerini işlemek için birçok güçlü özellik sunar. Aspose.Words for .NET'i kullanarak artık bu bilgiyi revizyon grubu ayrıntılarını kendi Word belgelerinize almak için kullanabilirsiniz.
+
+### SSS
+
+#### S: Revizyonlu bir belgeyi Aspose.Words for .NET'e nasıl yüklerim?
+
+ C: Şunu kullanın:`Document`revizyonlar içeren bir dosyadan belge yüklemek için Aspose.Words for .NET sınıfı. Tam belge yolunu belirleyebilirsiniz.
+
+```csharp
+Document doc = new Document("path/to/the/document.docx");
+```
+
+#### S: Aspose.Words for .NET'te bir revizyon grubunun ayrıntılarını nasıl edinebilirim?
+
+ A: Bir döngü kullanarak belgenin revizyonlarını gözden geçirin ve istediğiniz ayrıntıları elde etmek için her revizyonun özelliklerine erişin. kullanabilirsiniz`RevisionType`, `Author`, `DateTime` Ve`ParentNode` sırasıyla revizyon türü, yazar, tarih ve revize edilmiş metni almak için özellikler.
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+      Console.WriteLine("Type: " + revision.RevisionType
+
+);
+      Console.WriteLine("Author: " + revision.Author);
+      Console.WriteLine("Date: " + revision.DateTime);
+      Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
+}
+```
+
+#### S: Aspose.Words for .NET'te bir revizyonun bir gruba ait olup olmadığı nasıl kontrol edilir?
+
+ C: Şunu kullanın:`Group` mülkiyeti`Revision` Bir revizyonun bir gruba ait olup olmadığını kontrol etmek için nesne. Eğer`Group` özellik`null`revizyonun herhangi bir gruba ait olmadığı anlamına gelir.
+
+```csharp
+if (revision.Group != null)
+{
+      // Revizyon bir gruba ait
+}
+else
+{
+      // Revizyon herhangi bir gruba ait değil
+}
+```

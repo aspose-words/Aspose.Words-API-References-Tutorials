@@ -8,11 +8,11 @@ weight: 10
 url: /zh/net/split-document/merge-documents/
 ---
 
-在本教程中，我们将向您介绍如何使用 Aspose.Words for .NET 的合并文档功能合并多个 Word 文档。按照以下步骤了解源代码并获得包含所有源文档的合并文档。
+在本教程中，我们将引导您了解如何使用 Aspose.Words for .NET 的合并文档功能合并多个 Word 文档。按照以下步骤了解源代码并获得包含所有源文档的合并文档。
 
 ## 第 1 步：搜索要合并的文档
 
-在合并文档之前，我们需要定位到要合并的源文档。就是这样：
+在合并文档之前，我们需要找到要合并的源文档。就是这样：
 
 ```csharp
 //文档目录的路径。
@@ -26,7 +26,7 @@ Directory.GetFiles(dataDir, "SplitDocument.PageParPage_1.docx", SearchOption.Top
 
 ## 第 2 步：合并文档
 
-现在我们将一个一个地合并文档以创建最终的合并文档。就是这样：
+现在我们将逐个合并文档以创建最终的合并文档。就是这样：
 
 ```csharp
 //打开生成的文档的第一部分。
@@ -36,7 +36,7 @@ Document sourceDoc = new Document(sourceDocumentPath);
 Document mergedDoc = new Document();
 DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-//一张一张合并文件。
+//将文档一一合并。
 foreach(FileSystemInfo documentPath in documentPaths)
 {
 if (documentPath.FullName == sourceDocumentPath)
@@ -52,7 +52,7 @@ mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 
 ### 使用 Aspose.Words for .NET 合并文档的示例源代码
 
-以下是 Aspose.Words for .NET 的合并文档功能的完整源代码：
+以下是 Aspose.Words for .NET 合并文档功能的完整源代码：
 
 ```csharp
 //文档目录的路径。
@@ -70,7 +70,7 @@ Document sourceDoc = new Document(sourceDocumentPath);
 Document mergedDoc = new Document();
 DocumentBuilder mergedDocBuilder = new DocumentBuilder(mergedDoc);
 
-//一个接一个地合并文档部分。
+//将文档部分逐一合并。
 foreach (FileSystemInfo documentPath in documentPaths)
 {
 	if (documentPath.FullName == sourceDocumentPath)

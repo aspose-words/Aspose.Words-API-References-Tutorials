@@ -21,7 +21,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Шаг 2: Настройка границ
+## Шаг 2: Настройка границы
 
 Теперь давайте настроим границы абзаца, указав стиль границы для каждой стороны. Вот как:
 

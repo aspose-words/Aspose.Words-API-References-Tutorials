@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/programming-with-loadoptions/load-encrypted-document/
 ---
 
-Bir C# uygulamasında şifrelenmiş belgelerle çalışırken, doğru parolayı sağlayarak belgeleri doğru şekilde yükleyebilmek önemlidir. .NET için Aspose.Words kitaplığıyla, uygun yükleme seçeneklerini kullanarak şifrelenmiş belgeleri kolayca yükleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak şifreli bir belgeyi yüklemek için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
+Bir C# uygulamasında şifrelenmiş belgelerle çalışırken, doğru parolayı sağlayarak belgeleri doğru şekilde yükleyebilmek önemlidir. .NET için Aspose.Words kitaplığıyla, uygun yükleme seçeneklerini kullanarak şifrelenmiş belgeleri kolayca yükleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak şifrelenmiş bir belgeyi yüklemek için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
 
 ## Aspose.Words kitaplığını anlama
 

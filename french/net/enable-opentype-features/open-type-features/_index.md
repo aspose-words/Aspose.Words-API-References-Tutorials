@@ -52,3 +52,25 @@ doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 Toutes nos félicitations! Vous avez appris avec succès comment activer et utiliser les fonctionnalités Open Type dans Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais utiliser les fonctionnalités Open Type dans vos documents Word.
 
 Les fonctionnalités Open Type offrent des capacités de typographie et de mise en forme de texte améliorées, vous permettant de créer des documents visuellement attrayants et d'aspect professionnel. Expérimentez avec différentes usines de mise en forme de texte et explorez les possibilités des fonctionnalités Open Type dans vos projets.
+
+### FAQ
+
+#### Q : Comment activer les fonctionnalités OpenType dans Aspose.Words pour .NET ?
+
+R : Pour activer les fonctionnalités OpenType dans Aspose.Words pour .NET, vous devez suivre les étapes mentionnées dans le didacticiel.
+
+#### Q : Quelles fonctionnalités OpenType sont prises en charge dans Aspose.Words pour .NET ?
+
+R : Aspose.Words pour .NET prend en charge plusieurs fonctionnalités OpenType, telles que les ligatures, les variations de glyphes, les substitutions contextuelles, etc.
+
+#### Q : Comment puis-je vérifier si une fonctionnalité OpenType est prise en charge dans une police spécifique ?
+
+ R : Vous pouvez vérifier si une fonctionnalité OpenType est prise en charge dans une police spécifique à l'aide de la`Font.OpenTypeFeatures` méthode dans Aspose.Words pour .NET.
+
+#### Q : Quelles autres fonctionnalités de formatage de texte sont prises en charge par Aspose.Words pour .NET ?
+
+R : Outre les fonctionnalités OpenType, Aspose.Words pour .NET prend également en charge d'autres fonctionnalités de formatage de texte telles que le formatage de paragraphes, la création de tableaux, l'ajout d'images, etc.
+
+#### Q : Puis-je utiliser les fonctionnalités OpenType dans toutes les versions d'Aspose.Words pour .NET ?
+
+: Les fonctionnalités OpenType sont prises en charge dans les nouvelles versions d'Aspose.Words pour .NET. Assurez-vous d'utiliser une version compatible pour bénéficier de ces fonctionnalités.

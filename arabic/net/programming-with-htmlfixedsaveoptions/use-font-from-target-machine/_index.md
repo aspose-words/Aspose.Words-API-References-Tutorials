@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.htm
 // المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل مستند Word
+// قم بتحميل مستند Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
 // تكوين خيارات النسخ الاحتياطي باستخدام ميزة "استخدام الخطوط من الجهاز الهدف"

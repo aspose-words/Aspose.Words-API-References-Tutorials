@@ -71,3 +71,21 @@ doc.Save(dataDir + "InsertionAuthorField.docx");
 In questo esempio, abbiamo creato un nuovo documento, inserito un campo AUTHOR, configurato il nome dell'autore e salvato il documento con un nome file specificato.
 
 Questo conclude la nostra guida sull'utilizzo della funzione "Inserisci campo AUTORE" con Aspose.Words per .NET.
+
+### FAQ
+
+#### D: Cos'è un campo autore in Aspose.Words?
+
+R: Un campo autore in Aspose.Words è un campo speciale che inserisce e aggiorna automaticamente il nome dell'autore in un documento Word. Viene spesso utilizzato per indicare chi ha creato o modificato il documento.
+
+#### D: Come aggiornare il campo autore in un documento Word con Aspose.Words?
+
+R: Il campo dell'autore in un documento Word può essere aggiornato per riflettere il nome dell'autore corrente. Per questo, puoi utilizzare il metodo UpdateFields disponibile nella classe Document. Questo metodo aggiornerà tutti i campi nel documento, incluso il campo dell'autore.
+
+#### D: È possibile personalizzare il formato del campo dell'autore in un documento Word?
+
+R: Sì, è possibile personalizzare il formato del campo dell'autore in un documento Word. Per impostazione predefinita, il campo dell'autore mostra semplicemente il nome dell'autore. Tuttavia, è possibile aggiungere ulteriori informazioni come la data e l'ora della modifica utilizzando le opzioni di formattazione disponibili in Aspose.Words.
+
+#### D: Il campo dell'autore è sensibile alle successive modifiche al nome dell'autore?
+
+R: Sì, il campo dell'autore è sensibile alle successive modifiche al nome dell'autore. Se modifichi il nome dell'autore nelle proprietà del documento, il campo dell'autore si aggiornerà automaticamente con il nuovo nome durante l'aggiornamento dei campi del documento.

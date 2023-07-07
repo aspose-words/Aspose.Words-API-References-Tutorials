@@ -68,3 +68,25 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 ¡Felicidades! Ha aprendido con éxito cómo agregar y eliminar respuestas de comentarios en un documento de Word usando Aspose.Words para .NET. Al seguir la guía paso a paso y utilizar el código fuente provisto, ahora puede administrar las respuestas a los comentarios y personalizarlas según sus requisitos.
 
 Las respuestas a comentarios permiten debates colaborativos y comentarios dentro de un documento. Experimente con diferentes autores de respuestas, iniciales, fechas y textos para mejorar la colaboración y la comunicación dentro de sus documentos.
+
+### Preguntas frecuentes
+
+#### P: ¿Cómo puedo agregar un comentario en Aspose.Words para .NET?
+
+ R: Para agregar un comentario en Aspose.Words para .NET, puede usar el`Comment.AddComment` método que especifica el texto del comentario y dónde desea agregarlo en el documento.
+
+#### P: ¿Cómo puedo eliminar un comentario en Aspose.Words para .NET?
+
+R: Para eliminar un comentario en Aspose.Words para .NET, puede usar el`Comment.Remove` método que especifica el`Comment` objeto que desea eliminar.
+
+#### P: ¿Puedo responder a un comentario en Aspose.Words para .NET?
+
+ R: Sí, puede responder a un comentario en Aspose.Words para .NET usando el`Comment.AddReply` método especificando el texto de respuesta y dónde desea agregarlo en el documento.
+
+#### P: ¿Cómo puedo acceder a los comentarios existentes en Aspose.Words para .NET?
+
+ R: Puede acceder a los comentarios existentes en Aspose.Words para .NET usando el`CommentCollection` propiedad de la`Document` objeto. Esto le permitirá navegar por todos los comentarios presentes en el documento.
+
+#### P: ¿Puedo editar el texto de un comentario en Aspose.Words para .NET?
+
+ R: Sí, puede editar el texto de un comentario en Aspose.Words for .NET accediendo a la`Comment.Text` propiedad de la correspondiente`Comment` objeto y modificando el texto según sea necesario.

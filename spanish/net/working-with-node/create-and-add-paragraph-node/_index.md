@@ -65,3 +65,25 @@ section.Body.AppendChild(para);
 ```
 
 Este es un ejemplo de código completo para crear y agregar un nodo de párrafo usando Aspose.Words para .NET. Asegúrese de importar las referencias necesarias y siga los pasos descritos anteriormente para integrar este código en su proyecto.
+
+### Preguntas frecuentes
+
+#### P: ¿Qué es un nodo de párrafo en un documento XML?
+
+R: Un nodo de párrafo en un documento XML se usa para representar un párrafo de texto. Contiene el contenido de texto del párrafo y se puede utilizar para estructurar el texto en el documento XML.
+
+#### P: ¿Cómo crear un nodo de párrafo en Node.js?
+
+ R: Para crear un nodo de párrafo en Node.js, puede usar el`createElement` metodo de la`Document` objeto para crear un nuevo elemento con el nombre "párrafo". Entonces puedes usar el`createTextNode` para crear un nodo de texto que contenga el contenido del párrafo.
+
+#### P: ¿Cómo agregar un nodo de párrafo a un documento XML existente?
+
+ R: Para agregar un nodo de párrafo a un documento XML existente, puede usar el`appendChild` para agregar el nodo de párrafo como elemento secundario de otro elemento en el documento XML. Por ejemplo, puede agregarlo como elemento secundario del elemento raíz del documento.
+
+#### P: ¿Cómo definir el contenido de un nodo de párrafo?
+
+ R: Para establecer el contenido de un nodo de párrafo, puede utilizar el`createTextNode` para crear un nodo de texto que contenga el contenido deseado, luego use el`appendChild` método para agregar ese nodo de texto como un elemento secundario del nodo de párrafo.
+
+#### P: ¿Cómo doy formato al texto en un nodo de párrafo?
+
+R: El formato del texto en un nodo de párrafo depende de la API XML que esté utilizando en su entorno Node.js. Por lo general, puede usar propiedades y métodos específicos para establecer atributos de formato como fuente, tamaño, color, etc.

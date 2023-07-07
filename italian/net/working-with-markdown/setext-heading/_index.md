@@ -94,5 +94,24 @@ builder.Writeln("Setext Heading level 2");
 builder.Document.Save(dataDir + "Test.md");
 ```
 
+### FAQ
 
+#### D: Cos'è un'intestazione Setext Markdown?
 
+R: Un'intestazione Setext Markdown è un modo alternativo per creare intestazioni in un documento Markdown. Utilizza caratteri di sottolineatura (= o -) per indicare diversi livelli di intestazioni.
+
+#### D: Come utilizzare le intestazioni Setext Markdown?
+
+R: Per utilizzare i titoli Setext Markdown, posiziona i caratteri di sottolineatura sotto il testo del titolo. Utilizza i segni di uguale (=) per un'intestazione di livello 1 e i trattini (-) per un'intestazione di livello 2.
+
+#### D: Ci sono limitazioni nell'uso delle intestazioni Setext Markdown?
+
+R: Le intestazioni Setext Markdown hanno limitazioni in termini di gerarchia delle intestazioni e non sono visivamente distinte come le intestazioni Markdown standard.
+
+#### D: Posso personalizzare l'aspetto delle intestazioni di Setext Markdown?
+
+R: In Markdown standard, non è possibile personalizzare l'aspetto delle intestazioni Setext Markdown. Hanno un aspetto predefinito basato sui caratteri di sottolineatura utilizzati.
+
+#### D: Le intestazioni Setext Markdown sono supportate da tutti gli editor Markdown?
+
+R: Il supporto per le intestazioni Setext Markdown può variare tra gli editor Markdown. Controlla la documentazione specifica del tuo editore per esserne sicuro.

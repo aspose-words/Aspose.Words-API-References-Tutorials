@@ -16,6 +16,6 @@ Unabhängig davon, ob Sie Berichte generieren, benutzerdefinierte Dokumente erst
  ## Tutorials
 | Titel | Beschreibung |
 | --- | --- |
-| [Dateiformat erkennen](./detect-file-format/) | Schritt-für-Schritt-Anleitung zum Erkennen des Dokumentdateiformats mit Aspose.Words für .NET. |
-| [Dokumentsignaturen erkennen](./detect-document-signatures/) | Schritt-für-Schritt-Anleitung zum Erkennen digitaler Signaturen in einem Dokument mit Aspose.Words für .NET. |
-| [Verschlüsseltes Dokument überprüfen](./verify-encrypted-document/) | Schritt-für-Schritt-Anleitung zur Überprüfung, ob ein Dokument mit Aspose.Words für .NET verschlüsselt ist. |
+| [Dokumentdateiformat erkennen](./detect-file-format/) | Schritt-für-Schritt-Anleitung zum Erkennen des Dokumentdateiformats mit Aspose.Words für .NET. |
+| [Erkennen Sie digitale Signaturen in Word-Dokumenten](./detect-document-signatures/) | Schritt-für-Schritt-Anleitung zum Erkennen digitaler Signaturen in einem Dokument mit Aspose.Words für .NET. |
+| [Überprüfen Sie das verschlüsselte Word-Dokument](./verify-encrypted-document/) | Schritt-für-Schritt-Anleitung zur Überprüfung, ob ein Dokument mit Aspose.Words für .NET verschlüsselt ist. |

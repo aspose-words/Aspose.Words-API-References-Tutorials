@@ -59,3 +59,17 @@ builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.doc
 ```
 
 Questo era un esempio di codice sorgente per specificare la localizzazione a livello di campo in un documento utilizzando Aspose.Words per .NET. È possibile utilizzare questo codice per inserire campi data con posizioni specifiche nei documenti di Word.
+
+### FAQ
+
+#### D: Come posso specificare la locale a livello di campo in Aspose.Words per .NET?
+
+ R: Per specificare la locale a livello di campo in Aspose.Words per .NET, puoi utilizzare il file`FieldOptions` classe e la sua`FieldLocale` property per impostare la locale desiderata. Ad esempio, puoi usare`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` per specificare la locale francese (Francia).
+
+#### D: È possibile specificare un locale diverso per ogni campo in Aspose.Words per .NET?
+
+ R: Sì, è possibile specificare un locale diverso per ogni campo in Aspose.Words per .NET. Puoi usare il`FieldOptions.FieldLocale` proprietà prima di creare o aggiornare un campo specifico per assegnargli una diversa locale.
+
+#### D: Come posso ottenere le impostazioni locali attualmente utilizzate per un campo in Aspose.Words per .NET?
+
+ R: Per ottenere le impostazioni locali attualmente utilizzate per un campo in Aspose.Words per .NET, puoi utilizzare le impostazioni del campo`Field.LocaleId` proprietà. Ciò consentirà di ottenere l'identificatore locale associato al campo.

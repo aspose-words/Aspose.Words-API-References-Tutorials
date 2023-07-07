@@ -70,7 +70,7 @@ I det här exemplet sparar vi det ändrade dokumentet som "WorkingWithOfficeMath
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Ladda Word-dokumentet
+// Ladda Word-dokumentet
 Document doc = new Document(dataDir + "Office math.docx");
 
 // Skaffa OfficeMath-elementet

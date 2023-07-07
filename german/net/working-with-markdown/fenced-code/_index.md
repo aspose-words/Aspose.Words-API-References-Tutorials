@@ -60,4 +60,21 @@ builder.ParagraphFormat.Style = fencedCodeWithInfo;
 builder.Writeln("This is a fenced code with info string");
 ```
 
+### FAQs
+
+#### F: Was ist Trenncode in Markdown?
+
+A: Durch Trennzeichen getrennter Code in Markdown ist eine Formatierungsmethode, die zum Anzeigen von Code in einem Markdown-Dokument verwendet wird. Es besteht darin, den Code mit bestimmten Trennzeichen zu umrahmen.
+
+#### F: Was sind die Vorteile von durch Trennzeichen getrenntem Code in Markdown?
+
+A: Durch Trennzeichen getrennter Code in Markdown verbessert die Lesbarkeit des Codes und erleichtert den Lesern das Verständnis. Es ermöglicht auch die Beibehaltung der Syntaxhervorhebung in einigen Markdown-Editoren.
+
+#### F: Was ist der Unterschied zwischen durch Trennzeichen getrenntem und eingerücktem Code in Markdown?
+
+A: Durch Trennzeichen getrennter Code verwendet bestimmte Trennzeichen, um den Code einzuschließen, während bei eingerücktem Code jede Codezeile mit Leerzeichen oder Tabulatoren eingerückt wird.
+
+#### F: Wird durch Trennzeichen getrennter Code in Markdown von allen Markdown-Editoren unterstützt?
+
+A: Die Unterstützung für durch Trennzeichen getrennten Code in Markdown kann je nach Markdown-Editor variieren. Überprüfen Sie zur Sicherheit die spezifische Dokumentation Ihres Herausgebers.
 
