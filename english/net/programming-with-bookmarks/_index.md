@@ -17,14 +17,14 @@ By following these tutorials, you will be able to effectively manipulate bookmar
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Access Bookmarks](./access-bookmarks/) | Learn how to access bookmarks in a Word document using Aspose.Words for .NET. |
-| [Update Bookmark Data](./update-bookmark-data/) | Step by step guide to explain the C# source code of Aspose.Words bookmark data update feature for .NET. |
-| [Bookmark Table Columns](./bookmark-table-columns/) | Learn how to bookmark a table column in a Word document using Aspose.Words for .NET. |
-| [Copy Bookmarked Text](./copy-bookmarked-text/) | Learn how to copy bookmark text from a source document to another document using Aspose.Words for .NET. |
-| [Append Bookmarked Text](./append-bookmarked-text/) | Learn how to add text from a bookmark in a Word document using Aspose.Words for .NET. |
-| [Create Bookmark](./create-bookmark/) | Learn how to create bookmarks in a document and specify bookmark preview levels in a PDF using Aspose.Words for .NET. |
-| [Show Hide Bookmarks](./show-hide-bookmarks/) | Learn how to show or hide a specific bookmark in a document using Aspose.Words for .NET. |
-| [Show Hide Bookmarked Content](./show-hide-bookmarked-content/) | Learn how to show or hide bookmark content using Aspose.Words for .NET. |
-| [Untangle Row Bookmarks](./untangle-row-bookmarks/) | Learn how to untangle nested row bookmarks to remove specific rows without affecting other bookmarks. |
-| [Untangle](./untangle/) | Learn how to untangle nested bookmarks in adjacent table rows using Aspose.Words for .NET. |
-| [Delete Row By Bookmark](./delete-row-by-bookmark/) | Learn how to delete a table row based on a specific bookmark in a document using Aspose.Words for .NET. |
+| [Access Bookmarks In Word Document](./access-bookmarks/) | Learn how to access bookmarks in a Word document using Aspose.Words for .NET. |
+| [Update Bookmark Data In Word Document](./update-bookmark-data/) | Step by step guide to explain the C# source code of Aspose.Words bookmark data update in word document feature for .NET. |
+| [Bookmark Table Columns In Word Document](./bookmark-table-columns/) | Learn how to bookmark a table column in a Word document using Aspose.Words for .NET. |
+| [Copy Bookmarked Text In Word Document](./copy-bookmarked-text/) | Learn how to copy bookmark text in word document to another document using Aspose.Words for .NET. |
+| [Append Bookmarked Text In Word Document](./append-bookmarked-text/) | Learn how to add text from a bookmark in a Word document using Aspose.Words for .NET. |
+| [Create Bookmark In Word Document](./create-bookmark/) | Learn how to create bookmarks in word document and specify bookmark preview levels in a PDF using Aspose.Words for .NET. |
+| [Show Hide Bookmarks In Word Document](./show-hide-bookmarks/) | Learn how to show or hide a specific bookmark in word document using Aspose.Words for .NET. |
+| [Show Hide Bookmarked Content In Word Document](./show-hide-bookmarked-content/) | Learn how to show or hide bookmark content in word document using Aspose.Words for .NET. |
+| [Untangle Row Bookmarks In Word Document](./untangle-row-bookmarks/) | Learn how to untangle nested row bookmarks in word document to remove specific rows without affecting other bookmarks. |
+| [Untangle In Word Document](./untangle/) | Learn how to untangle in word document nested bookmarks in adjacent table rows using Aspose.Words for .NET. |
+| [Delete Row By Bookmark In Word Document](./delete-row-by-bookmark/) | Learn how to delete a table row based on a specific bookmark in word document using Aspose.Words for .NET. |

@@ -1,6 +1,6 @@
 ---
-title: Bookmark Table Columns
-linktitle: Bookmark Table Columns
+title: Bookmark Table Columns In Word Document
+linktitle: Bookmark Table Columns In Word Document
 second_title: Aspose.Words for .NET API Reference
 description: Learn how to bookmark a table column in a Word document using Aspose.Words for .NET.
 type: docs
@@ -123,3 +123,65 @@ Here is the full sample source code to demonstrate creating a bookmark on a tabl
 ## Conclusion
 
 In this article, we explored the C# source code to understand how to use the Bookmark Table Columns function of Aspose.Words for .NET. We followed a step-by-step guide to bookmark a specific column of a table in a Word document and jump to the contents of that column.
+
+### FAQ's for bookmark table columns in word document
+
+#### Q: What are the prerequisites to use the "Bookmarks for table columns" feature in Aspose.Words for .NET?
+
+A: To use the "Bookmarks for table columns" feature in Aspose.Words for .NET, you need to have basic knowledge of C# language. You also need a .NET development environment with the Aspose.Words library installed.
+
+#### Q: How to create a table with columns in a Word document using Aspose.Words for .NET?
+
+A: To create a table with columns in a Word document using Aspose.Words for .NET, you can use a `DocumentBuilder` object to insert cells and content into the table. Here is a sample code:
+
+```csharp
+builder. StartTable();
+
+builder. InsertCell();
+builder.Write("Contents of cell 1 of column 1");
+
+builder. InsertCell();
+builder.Write("Contents of cell 2 of column 2");
+
+builder. EndRow();
+
+builder. InsertCell();
+builder.Write("Contents of cell 1 of column 2");
+
+builder. InsertCell();
+builder.Write("Contents of cell 2 of column 2");
+
+builder. EndRow();
+
+builder. EndTable();
+```
+
+#### Q: How to bookmark a table column using Aspose.Words for .NET?
+
+A: To create a bookmark on a table column using Aspose.Words for .NET, you can use the `StartBookmark` method of the `DocumentBuilder` object to start the bookmark on a specific table column. Here is a sample code:
+
+```csharp
+builder.StartBookmark("MyBookmark");
+```
+
+#### Q: How to access table column content from bookmark using Aspose.Words for .NET?
+
+A: To access the contents of a table column from a bookmark using Aspose.Words for .NET, you can loop through all bookmarks in the document, check if a bookmark is a column, and use the index of column to access the contents of that column. Here is a sample code:
+
+```csharp
+foreach(Bookmark bookmark in doc.Range.Bookmarks)
+{
+     if (bookmark.IsColumn)
+     {
+         if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
+         {
+             string content = row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar);
+             // Do something with the contents of the column...
+         }
+     }
+}
+```
+
+#### Q: Is there a limit to the number of columns I can create in a table with column bookmarks?
+
+A: There is no specific limit to the number of columns you can create in a table with column bookmarks using Aspose.Words for .NET. The limit mainly depends on the resources available on your system and the specifications of the Word file format you are using. However, it is recommended not to create an excessively large number of columns, as this can affect the performance and readability of the final document.
