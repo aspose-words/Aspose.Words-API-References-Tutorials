@@ -1,6 +1,6 @@
 ---
-title: Modify Vba Macros
-linktitle: Modify Vba Macros
+title: Modify Vba Macros Of A Word Document
+linktitle: Modify Vba Macros Of A Word Document
 second_title: Aspose.Words for .NET API Reference
 description: In this tutorial, learn how to edit VBA macros of a Word document with Aspose.Words for .NET.
 type: docs

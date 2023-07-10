@@ -1,6 +1,6 @@
 ---
-title: Clone Vba Module
-linktitle: Clone Vba Module
+title: Clone Vba Module from a Word Document
+linktitle: Clone Vba Module from a Word Document
 second_title: Aspose.Words for .NET API Reference
 description: In this tutorial, learn how to clone a VBA module from a Word document with Aspose.Words for .NET.
 type: docs

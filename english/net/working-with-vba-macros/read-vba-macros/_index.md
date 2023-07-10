@@ -1,6 +1,6 @@
 ---
-title: Read Vba Macros
-linktitle: Read Vba Macros
+title: Read Vba Macros from A Word Document
+linktitle: Read Vba Macros from A Word Document
 second_title: Aspose.Words for .NET API Reference
 description: In this tutorial, learn how to read VBA macros from a Word document with Aspose.Words for .NET.
 type: docs
