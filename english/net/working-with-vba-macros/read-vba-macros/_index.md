@@ -59,5 +59,26 @@ if (doc.VbaProject != null)
 ## Conclusion
 In this tutorial, we saw how to read VBA macros from a Word document using Aspose.Words for .NET. Reading VBA macros allows you to access existing VBA code in your document and perform operations according to your needs. Feel free to use this feature to review and analyze VBA macros in your Word documents.
 
+### FAQ's
+
+#### Q: What is a VBA macro in a Word document?
+
+A: A VBA macro in a Word document is a set of instructions or code that can be run to automate tasks or perform specific actions in the document. VBA macros let you add custom functionality and automate repetitive operations.
+
+#### Q: What are the prerequisites for reading VBA macros from a Word document?
+
+A: Before you can read VBA macros from a Word document, you must have a working knowledge of the C# programming language. You also need to install the Aspose.Words for .NET library in your project. Additionally, you need a Word document that contains VBA macros.
+
+#### Q: How to set the document directory in the code?
+
+A: In the code provided, you must replace `"YOUR DOCUMENTS DIRECTORY"` with the appropriate path to the directory where your Word document containing the VBA macros is located.
+
+#### Q: How to access the source code of VBA macros in the Word document?
+
+A: To access the source code of VBA macros in the Word document, you can use the `SourceCode` property of the corresponding `VbaModule` object. You can iterate over all modules in the VBA project and view the source code for each module.
+
+#### Q: Can I run the VBA macros from the Word document?
+
+A: Yes, you can run the VBA macros from the Word document using specific features of the Aspose.Words library for .NET. However, be sure to take appropriate security measures to prevent the execution of potentially malicious code.
 
 

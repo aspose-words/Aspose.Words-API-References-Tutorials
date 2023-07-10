@@ -69,3 +69,20 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 ## Conclusion
 In this tutorial, we saw how to clone a VBA module from a Word document with macros using Aspose.Words for .NET. Cloning VBA modules allows you to easily reuse VBA code from one source document in another document. Feel free to use this feature to organize and manage your macros in different documents.
 
+### FAQ's
+
+#### Q: What is duplicating a VBA module?
+
+A: Duplicating a VBA module consists of copying a module containing VBA code from a source Word document to another document. This allows you to reuse VBA code in different contexts or share it with other documents.
+
+#### Q: What are the prerequisites for cloning a VBA module from a Word document?
+
+A: Before you can clone a VBA module from a Word document, you must have a working knowledge of the C# programming language. You also need to install the Aspose.Words for .NET library in your project. Also, you need a Word document containing a VBA project with the module you want to clone.
+
+#### Q: How to set the document directory in the code?
+
+A: In the provided code, you need to replace `"YOUR DOCUMENTS DIRECTORY"` with the appropriate path to the directory where your Word document containing the VBA project is located.
+
+#### Q: How to save destination document with cloned VBA module?
+
+A: To save the destination document with the cloned VBA module, you can use the `Save` method of the `Document` class by specifying the desired destination path and filename.

@@ -63,3 +63,23 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaProject.docm");
 ## Conclusion
 In this tutorial, we saw how to clone a VBA project from a Word document with macros using Aspose.Words for .NET. Cloning VBA projects allows you to copy all VBA code from one source document to another document. Feel free to use this feature to organize and manage your macros in different documents.
 
+### FAQ's
+
+#### Q: What is duplicating a VBA project?
+
+A: Duplicating a VBA project consists of copying all the VBA code from a source Word document to another document. This allows you to reuse VBA code in different contexts or share it with other documents.
+
+#### Q: What are the prerequisites for cloning a VBA project from a Word document?
+
+A: Before you can clone a VBA project from a Word document, you must have a working knowledge of the C# programming language. You also need to install the Aspose.Words for .NET library in your project. Also, you need a Word document containing a VBA project that you want to clone.
+
+#### Q: How to set the document directory in the code?
+A: In the provided code, you need to replace `"YOUR DOCUMENTS DIRECTORY"` with the appropriate path to the directory where your Word document containing the VBA project is located.
+
+#### Q: How to save destination document with cloned VBA project?
+
+A: To save the destination document with the cloned VBA project, you can use the `Save` method of the `Document` class by specifying the desired destination path and filename.
+
+#### Q: Can I use Aspose.Words for .NET to manipulate other aspects of Word documents?
+
+A: Yes, Aspose.Words for .NET is a powerful library that allows you to manipulate various aspects of Word documents. You can create, edit, convert, and extract data from Word documents, including content, formatting, images, tables, charts, and more.
