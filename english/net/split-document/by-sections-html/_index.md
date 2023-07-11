@@ -1,7 +1,7 @@
 ---
 title: By Sections Html
 linktitle: By Sections Html
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to split a Word document into by sections Html using Aspose.Words for .NET with complete code example.
 type: docs
 weight: 10

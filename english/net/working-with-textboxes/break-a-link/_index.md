@@ -1,7 +1,7 @@
 ---
 title: Break Forward Link In Word Document
 linktitle: Break Forward Link In Word Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to break forward links in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

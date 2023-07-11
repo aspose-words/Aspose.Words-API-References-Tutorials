@@ -1,7 +1,7 @@
 ---
 title: Format Table And Cell With Different Borders
 linktitle: Format Table And Cell With Different Borders
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step by step guide to format table and cell with different borders using Aspose.Words for .NET.
 type: docs
 weight: 10

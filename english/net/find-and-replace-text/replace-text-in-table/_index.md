@@ -1,7 +1,7 @@
 ---
 title: Replace Text In Table
 linktitle: Replace Text In Table
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to replace text in a table in a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

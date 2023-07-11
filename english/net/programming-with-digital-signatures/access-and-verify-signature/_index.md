@@ -1,7 +1,7 @@
 ---
 title: Access And Verify Signature
 linktitle: Access And Verify Signature
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to access and verify digital signatures in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Word Document - How to Remove Content
 linktitle: Remove Content
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to effectively remove content from Word documents using Aspose.Words for .NET. Follow step-by-step tutorials and use C# code samples to learn different content removal techniques.
 type: docs
 weight: 1370

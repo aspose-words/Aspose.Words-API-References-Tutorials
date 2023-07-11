@@ -1,7 +1,7 @@
 ---
 title: Append Document To Blank
 linktitle: Append Document To Blank
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to append a document to a blank destination document in Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Update Smart Art Drawing
 linktitle: Update Smart Art Drawing
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to update the Smart Art drawing in a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

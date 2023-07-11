@@ -1,7 +1,7 @@
 ---
 title: Recognize Utf8 Text
 linktitle: Recognize Utf8 Text
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to recognize Utf-8 characters in RTF documents with Aspose.Words for .NET. Ensure data integrity.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Encrypt Document With Password
 linktitle: Encrypt Document With Password
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to encrypt documents with a password using Aspose.Words for .NET. 
 type: docs
 weight: 10

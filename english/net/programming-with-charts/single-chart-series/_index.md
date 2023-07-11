@@ -1,7 +1,7 @@
 ---
 title: Single Chart Series
 linktitle: Single Chart Series
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to customize single chart series in a chart using Aspose.Words for .NET.
 type: docs
 weight: 10

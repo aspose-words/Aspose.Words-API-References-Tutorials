@@ -1,7 +1,7 @@
 ---
 title: Password Protection
 linktitle: Password Protection
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to password protection your Word documents using Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Row Format Disable Break Across Pages
 linktitle: Row Format Disable Break Across Pages
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to disable line break for a table across multiple pages in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

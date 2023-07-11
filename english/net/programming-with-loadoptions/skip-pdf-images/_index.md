@@ -1,7 +1,7 @@
 ---
 title: Skip Pdf Images
 linktitle: Skip Pdf Images
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to load a PDF document skipping loading PDF images with Aspose.Words for .NET.
 type: docs
 weight: 10

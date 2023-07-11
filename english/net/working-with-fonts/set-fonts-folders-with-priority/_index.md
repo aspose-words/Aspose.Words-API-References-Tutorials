@@ -1,7 +1,7 @@
 ---
 title: Set Fonts Folders With Priority
 linktitle: Set Fonts Folders With Priority
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to setting font folders with priority when rendering a document using Aspose.Words for .NET.
 type: docs
 weight: 10

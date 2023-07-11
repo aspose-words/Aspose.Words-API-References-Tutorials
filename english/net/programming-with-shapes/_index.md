@@ -1,7 +1,7 @@
 ---
 title: Programming With Shapes
 linktitle: Programming With Shapes
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Explore shape programming in Aspose.Words for .NET. Learn how to manipulate and customize shapes in your Word documents with step-by-step tutorials and sample code in C#.
 type: docs
 weight: 1560

@@ -1,7 +1,7 @@
 ---
 title: Rich Text Box Content Control
 linktitle: Rich Text Box Content Control
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to create a rich text box content control in a Word document using Aspose.Words for .NET enabling text formatting and styling.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Use Control Characters
 linktitle: Use Control Characters
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to using control characters with Aspose.Words for .NET.
 type: docs
 weight: 10

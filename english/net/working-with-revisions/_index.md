@@ -1,7 +1,7 @@
 ---
 title: Working with Revisions
 linktitle: Working with Revisions
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to work with revisions in Word documents using Aspose.Words for .NET. Step-by-step tutorials with sample code for managing and viewing revisions.
 type: docs
 weight: 1130

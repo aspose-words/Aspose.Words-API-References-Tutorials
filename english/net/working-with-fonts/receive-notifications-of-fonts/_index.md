@@ -1,7 +1,7 @@
 ---
 title: Receive Notifications Of Fonts
 linktitle: Receive Notifications Of Fonts
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to receive missing or substituted font notifications when using Aspose.Words for .NET.
 type: docs
 weight: 10

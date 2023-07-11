@@ -1,7 +1,7 @@
 ---
 title: Insert Ole Object In Word With Ole Package
 linktitle: Insert Ole Object In Word With Ole Package
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to insert an OLE object with an OLE package into a document using Aspose.Words for .NET.
 type: docs
 weight: 10

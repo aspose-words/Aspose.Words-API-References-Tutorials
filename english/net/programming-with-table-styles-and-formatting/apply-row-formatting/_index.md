@@ -1,7 +1,7 @@
 ---
 title: Apply Row Formatting
 linktitle: Apply Row Formatting
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step by step guide to apply row formatting to a table using Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Get Distance Between Table Surrounding Text
 linktitle: Get Distance Between Table Surrounding Text
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to get the distance between text and a table in a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

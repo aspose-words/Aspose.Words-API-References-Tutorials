@@ -1,7 +1,7 @@
 ---
 title: Configuring Link To Content
 linktitle: Configuring Link To Content
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to setting up linking to content in a document with Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Hyphenation Callback
 linktitle: Hyphenation Callback
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use hyphenation callback in Aspose.Words for .NET to handle word hyphenation.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Add Group Shape
 linktitle: Add Group Shape
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to add a group shape with multiple shapes to a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

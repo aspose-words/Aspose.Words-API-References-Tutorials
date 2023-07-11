@@ -1,7 +1,7 @@
 ---
 title: Programming With Table Styles And Formatting
 linktitle: Programming With Table Styles And Formatting
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to program table styles and formatting in Aspose.Words for .NET. Learn how to apply predefined styles, customize cell formatting, borders, and more with step-by-step tutorials and sample code in C#.
 type: docs
 weight: 1580

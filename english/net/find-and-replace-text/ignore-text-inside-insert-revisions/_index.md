@@ -1,7 +1,7 @@
 ---
 title: Ignore Text Inside Insert Revisions
 linktitle: Ignore Text Inside Insert Revisions
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use the "Ignore Text Inside Insert Revisions" feature of Aspose.Words for .NET to manipulate insert revisions in Word documents.
 type: docs
 weight: 10

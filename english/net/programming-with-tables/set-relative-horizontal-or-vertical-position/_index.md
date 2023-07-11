@@ -1,7 +1,7 @@
 ---
 title: Set Relative Horizontal Or Vertical Position
 linktitle: Set Relative Horizontal Or Vertical Position
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to set the relative horizontal or vertical position of a table in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

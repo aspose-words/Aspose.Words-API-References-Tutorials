@@ -1,7 +1,7 @@
 ---
 title: Append With Import Format Options
 linktitle: Append With Import Format Options
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to append a document with import format options using Aspose.Words for .NET.
 type: docs
 weight: 10

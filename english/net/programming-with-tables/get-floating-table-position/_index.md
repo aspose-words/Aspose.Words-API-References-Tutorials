@@ -1,7 +1,7 @@
 ---
 title: Get Floating Table Position
 linktitle: Get Floating Table Position
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to get the position of floating tables in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

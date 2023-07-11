@@ -1,7 +1,7 @@
 ---
 title: Show Revisions In Balloons
 linktitle: Show Revisions In Balloons
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Show revisions in balloons with Aspose.Words for .NET.
 type: docs
 weight: 10

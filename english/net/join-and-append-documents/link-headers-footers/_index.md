@@ -1,7 +1,7 @@
 ---
 title: Link Headers Footers
 linktitle: Link Headers Footers
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to link headers and footers while joining and appending Word documents using Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Change Asian Paragraph Spacing And Indents
 linktitle: Change Asian Paragraph Spacing And Indents
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to change Asian paragraph spacing and indents with Aspose.Words for .NET.
 type: docs
 weight: 10

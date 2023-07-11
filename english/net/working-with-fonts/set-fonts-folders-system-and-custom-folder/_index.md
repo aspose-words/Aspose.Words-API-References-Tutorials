@@ -1,7 +1,7 @@
 ---
 title: Set Fonts Folders System And Custom Folder
 linktitle: Set Fonts Folders System And Custom Folder
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to setting system and custom font folders when rendering a document using Aspose.Words for .NET.
 type: docs
 weight: 10

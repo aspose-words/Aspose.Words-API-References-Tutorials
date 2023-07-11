@@ -1,7 +1,7 @@
 ---
 title: Current State Of Check Box
 linktitle: Current State Of Check Box
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to retrieve and set the current state of a check box content control in a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

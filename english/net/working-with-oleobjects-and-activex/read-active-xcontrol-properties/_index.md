@@ -1,7 +1,7 @@
 ---
 title: Read Active XControl Properties From Word File
 linktitle: Read Active XControl Properties From Word File
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Read properties of ActiveX controls in a Word file with Aspose.Words for .NET.
 type: docs
 weight: 10

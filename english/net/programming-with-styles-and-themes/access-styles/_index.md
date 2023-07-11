@@ -1,7 +1,7 @@
 ---
 title: Access Styles
 linktitle: Access Styles
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to access document styles with Aspose.Words for .NET. Complete tutorial to manipulate the styles of your documents.
 type: docs
 weight: 10

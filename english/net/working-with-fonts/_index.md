@@ -1,7 +1,7 @@
 ---
 title: Working with Fonts
 linktitle: Working with Fonts
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Working with Fonts tutorials teach you how to work with fonts in Word with Aspose.Words for .NET. Formatting, substitutions, notifications, and more.
 type: docs
 weight: 420

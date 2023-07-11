@@ -1,7 +1,7 @@
 ---
 title: Insert Scatter Chart
 linktitle: Insert Scatter Chart
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to insert a scatter chart into a document using Aspose.Words for .NET. Add series data with X and Y coordinates.
 type: docs
 weight: 10

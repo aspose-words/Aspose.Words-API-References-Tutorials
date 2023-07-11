@@ -1,7 +1,7 @@
 ---
 title: Vertical Anchor
 linktitle: Vertical Anchor
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to position a shape vertically within a document using the vertical anchor feature in Aspose.Words for .NET.
 type: docs
 weight: 10

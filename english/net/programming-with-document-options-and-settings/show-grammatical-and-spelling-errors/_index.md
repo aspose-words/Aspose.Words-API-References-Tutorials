@@ -1,7 +1,7 @@
 ---
 title: Show Grammatical And Spelling Errors
 linktitle: Show Grammatical And Spelling Errors
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to enable display of grammatical and spelling errors in a document with Aspose.Words for .NET.
 type: docs
 weight: 10

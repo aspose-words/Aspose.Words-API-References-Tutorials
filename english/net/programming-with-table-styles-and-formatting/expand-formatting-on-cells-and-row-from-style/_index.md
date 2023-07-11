@@ -1,7 +1,7 @@
 ---
 title: Expand Formatting On Cells And Row From Style
 linktitle: Expand Formatting On Cells And Row From Style
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to expand formatting to cells and rows from a table style using Aspose.Words for .NET.
 type: docs
 weight: 10

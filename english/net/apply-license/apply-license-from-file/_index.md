@@ -1,7 +1,7 @@
 ---
 title: Apply License From File
 linktitle: Apply License From File
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to apply a license from a file using Aspose.Words for .NET. 
 type: docs
 weight: 10

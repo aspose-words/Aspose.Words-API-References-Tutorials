@@ -1,7 +1,7 @@
 ---
 title: Detect Numbering With Whitespaces
 linktitle: Detect Numbering With Whitespaces
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to detect list numbers with white spaces in Aspose.Words for .NET. Improve the structure of your documents with ease.
 type: docs
 weight: 10

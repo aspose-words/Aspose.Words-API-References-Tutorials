@@ -1,7 +1,7 @@
 ---
 title: Delete Row By Bookmark In Word Document
 linktitle: Delete Row By Bookmark In Word Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to delete a table row based on a specific bookmark in word document using Aspose.Words for .NET.
 type: docs
 weight: 10

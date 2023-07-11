@@ -1,7 +1,7 @@
 ---
 title: Keep Legacy Control Chars
 linktitle: Keep Legacy Control Chars
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to preserve legacy control characters when saving a document with Aspose.Words for .NET.
 type: docs
 weight: 10

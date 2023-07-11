@@ -1,7 +1,7 @@
 ---
 title: Structured Document Tag Range Start Xml Mapping
 linktitle: Structured Document Tag Range Start Xml Mapping
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to set up XML mapping for a structured document tag range start in a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Receive Warning Notification
 linktitle: Receive Warning Notification
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to receive a warning notification when using Aspose.Words for .NET and manage any issues or warnings in your documents.
 type: docs
 weight: 10

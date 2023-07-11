@@ -1,7 +1,7 @@
 ---
 title: Keep Source Together
 linktitle: Keep Source Together
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use Aspose.Words for .NET to join and append Word documents while keeping the source content together with the destination document.
 type: docs
 weight: 10

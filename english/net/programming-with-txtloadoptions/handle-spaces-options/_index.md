@@ -1,7 +1,7 @@
 ---
 title: Handle Spaces Options
 linktitle: Handle Spaces Options
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to manage spaces in your TXT documents with Aspose.Words for .NET. Remove unnecessary spaces and improve readability.
 type: docs
 weight: 10

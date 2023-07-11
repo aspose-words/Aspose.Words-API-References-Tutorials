@@ -1,7 +1,7 @@
 ---
 title: Simple Append Document
 linktitle: Simple Append Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to join and append Word documents with preserved formatting using Aspose.Words for .NET.
 type: docs
 weight: 10

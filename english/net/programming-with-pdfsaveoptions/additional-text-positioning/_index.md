@@ -1,7 +1,7 @@
 ---
 title: Imporove PDF Text Postioning with Additional Text Positioning
 linktitle: Imporove PDF Text Postioning with Additional Text Positioning
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to imporove PDF text postioning with additional text positioning when converting Word documents to PDF with Aspose.Words for .NET.
 type: docs
 weight: 10

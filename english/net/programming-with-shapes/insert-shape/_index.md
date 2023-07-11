@@ -1,7 +1,7 @@
 ---
 title: Insert Shape
 linktitle: Insert Shape
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to insert shapes into a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

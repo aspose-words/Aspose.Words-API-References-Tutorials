@@ -1,7 +1,7 @@
 ---
 title: Insert Document With Builder
 linktitle: Insert Document With Builder
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to insert a document at the end of another document using Aspose.Words for .NET.
 type: docs
 weight: 10

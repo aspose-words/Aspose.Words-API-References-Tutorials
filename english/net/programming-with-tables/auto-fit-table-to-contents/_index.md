@@ -1,7 +1,7 @@
 ---
 title: Auto Fit Table To Contents
 linktitle: Auto Fit Table To Contents
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to auto fit a table to its contents in a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

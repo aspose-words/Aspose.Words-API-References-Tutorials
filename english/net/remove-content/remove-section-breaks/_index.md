@@ -1,7 +1,7 @@
 ---
 title: Remove Section Breaks
 linktitle: Remove Section Breaks
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to remove section breaks in a Word document using Aspose.Words library for .NET. Effectively eliminate section breaks that can disrupt your document formatting. 
 type: docs
 weight: 10

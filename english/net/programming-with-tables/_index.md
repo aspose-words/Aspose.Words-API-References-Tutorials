@@ -1,7 +1,7 @@
 ---
 title: Programming With Tables
 linktitle: Programming With Tables
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to program tables in Aspose.Words for .NET. Learn how to create, manipulate, and format tables in your Word documents with step-by-step tutorials and C# code examples.
 type: docs
 weight: 1590

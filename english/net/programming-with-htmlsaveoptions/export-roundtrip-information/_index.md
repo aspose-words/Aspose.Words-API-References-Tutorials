@@ -1,7 +1,7 @@
 ---
 title: Export Roundtrip Information
 linktitle: Export Roundtrip Information
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to export roundtrip information when saving a document as HTML with Aspose.Words for .NET.
 type: docs
 weight: 10

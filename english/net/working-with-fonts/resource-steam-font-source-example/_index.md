@@ -1,7 +1,7 @@
 ---
 title: Resource Steam Font Source Example
 linktitle: Resource Steam Font Source Example
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use the Resource Stream Font Source to load custom fonts into Aspose.Words for .NET.
 type: docs
 weight: 10

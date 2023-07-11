@@ -1,7 +1,7 @@
 ---
 title: Embed Subset Fonts in PDF Document
 linktitle: Embed Subset Fonts in PDF Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to embedding font subsets in a PDF document using Aspose.Words for .NET.
 type: docs
 weight: 10

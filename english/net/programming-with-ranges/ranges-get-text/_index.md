@@ -1,7 +1,7 @@
 ---
 title: Ranges Get Text
 linktitle: Ranges Get Text
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to easily extract text from a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

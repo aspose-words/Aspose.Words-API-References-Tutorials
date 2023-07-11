@@ -1,7 +1,7 @@
 ---
 title: Set Outline Options in a PDF Document
 linktitle: Set Outline Options in a PDF Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to set outline options in a PDF document with Aspose.Words for .NET.
 type: docs
 weight: 10

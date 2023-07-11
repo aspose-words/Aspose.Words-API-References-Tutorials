@@ -1,7 +1,7 @@
 ---
 title: Get Tiff Page Range
 linktitle: Get Tiff Page Range
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to extract a range of TIFF pages with Aspose.Words for .NET. Complete tutorial for custom TIFF files.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Creating Table Repeating Section Mapped To Custom Xml Part
 linktitle: Creating Table Repeating Section Mapped To Custom Xml Part
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to create a table with a repeating section mapped to a CustomXmlPart in a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

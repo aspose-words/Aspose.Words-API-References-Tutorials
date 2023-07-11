@@ -1,7 +1,7 @@
 ---
 title: Remove Document Protection
 linktitle: Remove Document Protection
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to remove protection from a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

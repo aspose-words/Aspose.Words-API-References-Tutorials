@@ -1,7 +1,7 @@
 ---
 title: Enable Disable Font Substitution
 linktitle: Enable Disable Font Substitution
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to enable or disable font substitution in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

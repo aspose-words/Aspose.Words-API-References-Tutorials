@@ -1,7 +1,7 @@
 ---
 title: Replace Text In Footer
 linktitle: Replace Text In Footer
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to replace text in the footer of Word documents using Aspose.Words for .NET.
 type: docs
 weight: 10

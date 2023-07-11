@@ -1,7 +1,7 @@
 ---
 title: Render 3D DML 3DEffects in a PDF Document
 linktitle: Render 3D DML 3DEffects in a PDF Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to enable rendering of 3D DML effects when converting to PDF with Aspose.Words for .NET.
 type: docs
 weight: 10

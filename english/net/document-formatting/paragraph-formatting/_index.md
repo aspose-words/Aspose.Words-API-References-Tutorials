@@ -1,7 +1,7 @@
 ---
 title: Paragraph Formatting
 linktitle: Paragraph Formatting
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to apply custom formatting to your paragraphs with Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Use Font From Target Machine
 linktitle: Use Font From Target Machine
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to convert a Word document to fixed HTML using the target machine's fonts with Aspose.Words for .NET.
 type: docs
 weight: 10

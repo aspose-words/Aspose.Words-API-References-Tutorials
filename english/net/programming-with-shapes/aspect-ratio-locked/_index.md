@@ -1,7 +1,7 @@
 ---
 title: Aspect Ratio Locked
 linktitle: Aspect Ratio Locked
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to lock or unlock the aspect ratio of a shape in a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

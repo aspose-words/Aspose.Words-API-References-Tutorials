@@ -1,7 +1,7 @@
 ---
 title: Verify Encrypted Word Document
 linktitle: Verify Encrypted Word Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to verify a word document is encrypted with Aspose.Words for .NET.
 type: docs
 weight: 10

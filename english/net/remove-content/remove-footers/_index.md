@@ -1,7 +1,7 @@
 ---
 title: Remove Footers
 linktitle: Remove Footers
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to easily remove footers from Word documents with Aspose.Words for .NET. Follow our step-by-step guide for efficient handling of DOCX files.
 type: docs
 weight: 10

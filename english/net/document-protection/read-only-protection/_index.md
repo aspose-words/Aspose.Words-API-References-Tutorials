@@ -1,7 +1,7 @@
 ---
 title: Read Only Protection
 linktitle: Read Only Protection
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to protect your read-only Word documents with Aspose.Words for .NET.
 type: docs
 weight: 10

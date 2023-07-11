@@ -1,7 +1,7 @@
 ---
 title: Copy Bookmarked Text In Word Document
 linktitle: Copy Bookmarked Text In Word Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to copy bookmark text in word document to another document using Aspose.Words for .NET.
 type: docs
 weight: 10

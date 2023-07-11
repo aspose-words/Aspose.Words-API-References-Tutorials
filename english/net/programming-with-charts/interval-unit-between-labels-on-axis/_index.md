@@ -1,7 +1,7 @@
 ---
 title: Interval Unit Between Labels On Axis
 linktitle: Interval Unit Between Labels On Axis
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to set the interval unit between labels on the axis of a chart using Aspose.Words for .NET.
 type: docs
 weight: 10

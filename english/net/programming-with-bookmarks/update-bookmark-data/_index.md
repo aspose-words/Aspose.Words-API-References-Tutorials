@@ -1,7 +1,7 @@
 ---
 title: Update Bookmark Data In Word Document
 linktitle: Update Bookmark Data
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step by step guide to explain the C# source code of Aspose.Words bookmark data update in word document feature for .NET.
 type: docs
 weight: 10

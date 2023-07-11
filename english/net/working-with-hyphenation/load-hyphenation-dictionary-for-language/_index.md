@@ -1,7 +1,7 @@
 ---
 title: Load Hyphenation Dictionary For Language
 linktitle: Load Hyphenation Dictionary For Language
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to load a hyphenation dictionary for a specific language in Aspose.Words for .NET.
 type: docs
 weight: 10

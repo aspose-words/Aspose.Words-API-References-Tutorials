@@ -1,7 +1,7 @@
 ---
 title: Programming With Htmlfixedsaveoptions
 linktitle: Programming With Htmlfixedsaveoptions
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to program with fixed HTML save options in Aspose.Words for .NET. The tutorials guide you through the different features to generate HTML documents with fixed layout, embedded images.
 type: docs
 weight: 1610

@@ -1,7 +1,7 @@
 ---
 title: Load Encrypted Pdf
 linktitle: Load Encrypted Pdf
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to load an encrypted PDF using Aspose.Words for .NET.
 type: docs
 weight: 10

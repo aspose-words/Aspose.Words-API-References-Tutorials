@@ -1,7 +1,7 @@
 ---
 title: Insert Style Separator
 linktitle: Insert Style Separator
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn to create documents with custom styles and insert style separators for precise, professional formatting.
 type: docs
 weight: 10

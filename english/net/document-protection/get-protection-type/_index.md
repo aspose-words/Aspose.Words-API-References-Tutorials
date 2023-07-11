@@ -1,7 +1,7 @@
 ---
 title: Get Protection Type
 linktitle: Get Protection Type
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use the Get Protection Type function of Aspose.Words for .NET to determine the protection type of a document.
 type: docs
 weight: 10

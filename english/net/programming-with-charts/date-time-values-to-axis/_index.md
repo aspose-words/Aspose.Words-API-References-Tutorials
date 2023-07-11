@@ -1,7 +1,7 @@
 ---
 title: Date Time Values To Axis
 linktitle: Date Time Values To Axis
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to add date time values to the axis of a chart using Aspose.Words for .NET.
 type: docs
 weight: 10

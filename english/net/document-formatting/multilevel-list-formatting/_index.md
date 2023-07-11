@@ -1,7 +1,7 @@
 ---
 title: Multilevel List Formatting
 linktitle: Multilevel List Formatting
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to create a multilevel list and apply custom formatting with Aspose.Words for .NET.
 type: docs
 weight: 10

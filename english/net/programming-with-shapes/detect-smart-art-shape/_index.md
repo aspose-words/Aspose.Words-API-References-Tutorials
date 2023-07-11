@@ -1,7 +1,7 @@
 ---
 title: Detect Smart Art Shape
 linktitle: Detect Smart Art Shape
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to detect Smart Art shapes in a Word document using Aspose.Words for .NET, identifying graphical representations.
 type: docs
 weight: 10

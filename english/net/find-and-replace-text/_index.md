@@ -1,7 +1,7 @@
 ---
 title: Word Document - Find And Replace Text
 linktitle: Find And Replace Text
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to find and replace text in Word documents using Aspose.Words for .NET. The tutorials show you how to perform precise text searches, including advanced search options.
 type: docs
 weight: 1360

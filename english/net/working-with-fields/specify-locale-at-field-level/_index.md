@@ -1,7 +1,7 @@
 ---
 title: Specify Locale At Field Level
 linktitle: Specify Locale At Field Level
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to specify field-level localization in Word documents with Aspose.Words for .NET.
 type: docs
 weight: 10

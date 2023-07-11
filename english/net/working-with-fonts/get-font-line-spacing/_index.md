@@ -1,7 +1,7 @@
 ---
 title: Get Font Line Spacing
 linktitle: Get Font Line Spacing
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to get font line spacing in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

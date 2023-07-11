@@ -1,7 +1,7 @@
 ---
 title: Access Revised Version
 linktitle: Access Revised Version
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Access a revised version of a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

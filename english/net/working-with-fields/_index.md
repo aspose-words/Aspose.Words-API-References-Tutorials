@@ -1,7 +1,7 @@
 ---
 title: Working with Fields
 linktitle: Working with Fields
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: A comprehensive resource for working with fields in Word documents using Aspose.Words for .NET. Tutorials, examples and detailed explanations.
 type: docs
 weight: 140

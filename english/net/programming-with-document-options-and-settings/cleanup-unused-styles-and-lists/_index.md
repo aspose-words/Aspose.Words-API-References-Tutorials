@@ -1,7 +1,7 @@
 ---
 title: Cleanup Unused Styles And Lists
 linktitle: Cleanup Unused Styles And Lists
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to cleaning up unused styles and lists in a document with Aspose.Words for .NET.
 type: docs
 weight: 10

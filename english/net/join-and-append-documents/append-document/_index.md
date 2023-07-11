@@ -1,7 +1,7 @@
 ---
 title: Append Document
 linktitle: Append Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to append the contents of one document to another using Aspose.Words for .NET.
 type: docs
 weight: 10

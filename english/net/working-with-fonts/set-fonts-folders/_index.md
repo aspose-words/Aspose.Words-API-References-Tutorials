@@ -1,7 +1,7 @@
 ---
 title: Set Fonts Folders
 linktitle: Set Fonts Folders
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to setting font folders when rendering a document using Aspose.Words for .NET.
 type: docs
 weight: 10

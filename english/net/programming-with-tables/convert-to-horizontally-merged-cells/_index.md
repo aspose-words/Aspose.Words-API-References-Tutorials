@@ -1,7 +1,7 @@
 ---
 title: Convert To Horizontally Merged Cells
 linktitle: Convert To Horizontally Merged Cells
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to convert table cells to horizontally merged cells in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Insert Table Of Contents
 linktitle: Insert Table Of Contents
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to insert a table of contents in Word documents using Aspose.Words for .NET.
 type: docs
 weight: 10

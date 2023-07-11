@@ -1,7 +1,7 @@
 ---
 title: Build Table With Style
 linktitle: Build Table With Style
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to building a table with a custom style using Aspose.Words for .NET.
 type: docs
 weight: 10

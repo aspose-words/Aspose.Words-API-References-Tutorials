@@ -1,7 +1,7 @@
 ---
 title: Define Conditional Formatting
 linktitle: Define Conditional Formatting
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step by step guide to define conditional formatting in a table using Aspose.Words for .NET.
 type: docs
 weight: 10

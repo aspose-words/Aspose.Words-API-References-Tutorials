@@ -1,7 +1,7 @@
 ---
 title: Chart Data Label
 linktitle: Chart Data Label
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to add and customize data labels in a chart using Aspose.Words for .NET to provide additional information about data points.
 type: docs
 weight: 10

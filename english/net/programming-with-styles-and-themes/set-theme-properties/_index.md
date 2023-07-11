@@ -1,7 +1,7 @@
 ---
 title: Set Theme Properties
 linktitle: Set Theme Properties
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn to customize the look of your documents by changing theme properties with Aspose.Words for .NET. Get professional and attractive results.
 type: docs
 weight: 10

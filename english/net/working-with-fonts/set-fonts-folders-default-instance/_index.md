@@ -1,7 +1,7 @@
 ---
 title: Set Fonts Folders Default Instance
 linktitle: Set Fonts Folders Default Instance
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to setting the default font folder when rendering a document using Aspose.Words for .NET.
 type: docs
 weight: 10

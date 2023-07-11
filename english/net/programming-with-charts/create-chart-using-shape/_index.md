@@ -1,7 +1,7 @@
 ---
 title: Create Chart Using Shape
 linktitle: Create Chart Using Shape
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to create and customize a chart using a shape in a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

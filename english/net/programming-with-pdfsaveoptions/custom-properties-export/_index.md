@@ -1,7 +1,7 @@
 ---
 title: Export Custom Properties in a PDF Document
 linktitle: Export Custom Properties in a PDF Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to export custom properties when converting documents to PDF with Aspose.Words for .NET.
 type: docs
 weight: 10

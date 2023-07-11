@@ -1,7 +1,7 @@
 ---
 title: Programming With Webextension
 linktitle: Programming With Webextension
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to develop web extensions for Word documents with Aspose.Words for .NET. Learn how to create, modify and customize web extensions, integrate them into your Word documents.
 type: docs
 weight: 1530

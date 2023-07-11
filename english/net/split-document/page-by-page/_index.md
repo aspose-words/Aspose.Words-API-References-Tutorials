@@ -1,7 +1,7 @@
 ---
 title: Page By Page
 linktitle: Page By Page
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to explain the C# source code of Aspose.Words Page by Page feature for .NET
 type: docs
 weight: 10

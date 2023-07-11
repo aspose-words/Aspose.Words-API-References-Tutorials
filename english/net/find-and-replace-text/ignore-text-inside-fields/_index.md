@@ -1,7 +1,7 @@
 ---
 title: Ignore Text Inside Fields
 linktitle: Ignore Text Inside Fields
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use the "Ignore Text Inside Fields" feature of Aspose.Words for .NET.
 type: docs
 weight: 10

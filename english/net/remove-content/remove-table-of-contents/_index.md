@@ -1,7 +1,7 @@
 ---
 title: Remove Table Of Contents
 linktitle: Remove Table Of Contents
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to remove the table of contents from a Word document using Aspose.Words for .NET. 
 type: docs
 weight: 10

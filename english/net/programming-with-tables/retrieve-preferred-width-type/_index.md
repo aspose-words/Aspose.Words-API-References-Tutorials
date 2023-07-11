@@ -1,7 +1,7 @@
 ---
 title: Retrieve Preferred Width Type
 linktitle: Retrieve Preferred Width Type
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to retrieve the type and preferred width value of a cell in a Word table with Aspose.Words for .NET.
 type: docs
 weight: 10

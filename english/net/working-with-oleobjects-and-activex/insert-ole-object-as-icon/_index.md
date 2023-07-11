@@ -1,7 +1,7 @@
 ---
 title: Insert Ole Object In Word Document As Icon
 linktitle: Insert Ole Object In Word Document As Icon
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to insert an OLE object in word document as icon with Aspose.Words for .NET.
 type: docs
 weight: 10

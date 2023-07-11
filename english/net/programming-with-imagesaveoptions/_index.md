@@ -1,7 +1,7 @@
 ---
 title: Programming With Imagesaveoptions
 linktitle: Programming With Imagesaveoptions
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to program with image saving options in Aspose.Words for .NET. Step-by-step tutorials with sample code for saving and manipulating images in your Word documents.
 type: docs
 weight: 1630

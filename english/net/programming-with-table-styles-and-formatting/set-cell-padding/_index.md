@@ -1,7 +1,7 @@
 ---
 title: Set Cell Padding
 linktitle: Set Cell Padding
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to setting table cell margins using Aspose.Words for .NET.
 type: docs
 weight: 10

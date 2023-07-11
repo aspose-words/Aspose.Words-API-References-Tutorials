@@ -1,7 +1,7 @@
 ---
 title: Use Space Character Per Level For List Indentation
 linktitle: Use Space Character Per Level For List Indentation
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to using a space character per level for list indentation in Aspose.Words for .NET. Create well-structured Word documents with ease.
 type: docs
 weight: 10

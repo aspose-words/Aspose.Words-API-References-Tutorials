@@ -1,7 +1,7 @@
 ---
 title: Bounds Of Axis
 linktitle: Bounds Of Axis
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to set the bounds of an axis in a chart using Aspose.Words for .NET controlling the range of values displayed on the axis.
 type: docs
 weight: 10

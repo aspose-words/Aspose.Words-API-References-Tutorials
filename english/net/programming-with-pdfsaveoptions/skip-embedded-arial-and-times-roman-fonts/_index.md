@@ -1,7 +1,7 @@
 ---
 title: Optimize PDF Size with Skip Embedded Arial & Times Roman Fonts
 linktitle: Optimize PDF Size with Skip Embedded Arial & Times Roman Fonts
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to generate optimized PDF without embedding Arial and Times Roman fonts with Aspose.Words for .NET.
 type: docs
 weight: 10

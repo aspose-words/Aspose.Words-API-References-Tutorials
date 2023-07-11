@@ -1,7 +1,7 @@
 ---
 title: Unrestricted Editable Regions
 linktitle: Unrestricted Editable Regions
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to create unrestricted editable areas in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

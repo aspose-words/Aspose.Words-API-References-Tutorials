@@ -1,7 +1,7 @@
 ---
 title: Create And Add Paragraph Node
 linktitle: Create And Add Paragraph Node
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Create and add a paragraph node to your Word documents with Aspose.Words for .NET.
 type: docs
 weight: 10

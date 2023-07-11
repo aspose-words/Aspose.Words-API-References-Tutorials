@@ -1,7 +1,7 @@
 ---
 title: Multi Section
 linktitle: Multi Section
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to retrieve and process multi-section structured document tags in a Word document using Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Format Number Of Data Label
 linktitle: Format Number Of Data Label
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to format the number of data labels in a chart using Aspose.Words for .NET. Customize number formats for data labels easily.
 type: docs
 weight: 10

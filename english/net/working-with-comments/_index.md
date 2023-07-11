@@ -1,7 +1,7 @@
 ---
 title: Working with Comments
 linktitle: Working with Comments
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Explore comment management features in Word documents with Aspose.Words for .NET. Learn how to add, delete, search, and format comments using step-by-step tutorials.
 type: docs
 weight: 50

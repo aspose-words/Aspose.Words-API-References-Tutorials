@@ -1,7 +1,7 @@
 ---
 title: Load Noto Fallback Settings
 linktitle: Load Noto Fallback Settings
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to load Noto override parameters into a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Set Font Formatting
 linktitle: Set Font Formatting
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to set font formatting in Word document using Aspose.Words for .NET and create attractive documents.
 type: docs
 weight: 10

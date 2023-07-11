@@ -1,7 +1,7 @@
 ---
 title: Clone Complete Table
 linktitle: Clone Complete Table
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to clone an entire table into a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

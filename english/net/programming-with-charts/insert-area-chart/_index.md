@@ -1,7 +1,7 @@
 ---
 title: Insert Area Chart
 linktitle: Insert Area Chart
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to insert an area chart into a document using Aspose.Words for .NET. Add series data and save the document with the chart.
 type: docs
 weight: 10

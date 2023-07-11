@@ -1,7 +1,7 @@
 ---
 title: Default Options For Data Labels
 linktitle: Default Options For Data Labels
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to set default options for data labels in a chart using Aspose.Words for .NET.
 type: docs
 weight: 10

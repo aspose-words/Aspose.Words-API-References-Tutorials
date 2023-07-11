@@ -1,7 +1,7 @@
 ---
 title: Preferred Width Settings
 linktitle: Preferred Width Settings
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to set preferred table cell widths in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

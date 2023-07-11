@@ -1,7 +1,7 @@
 ---
 title: Working with OleObjects and ActiveX
 linktitle: Working with OleObjects and ActiveX
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to work with OLE and ActiveX objects in Word documents with Aspose.Words for .NET. Detailed tutorials with code examples.
 type: docs
 weight: 1080

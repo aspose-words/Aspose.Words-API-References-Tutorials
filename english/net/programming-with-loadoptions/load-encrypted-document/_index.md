@@ -1,7 +1,7 @@
 ---
 title: Load Encrypted Document
 linktitle: Load Encrypted Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to load and save encrypted documents with Aspose.Words for .NET.
 type: docs
 weight: 10

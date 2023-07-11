@@ -1,7 +1,7 @@
 ---
 title: Remove Read Only Restriction
 linktitle: Remove Read Only Restriction
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to remove the read-only restriction from a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

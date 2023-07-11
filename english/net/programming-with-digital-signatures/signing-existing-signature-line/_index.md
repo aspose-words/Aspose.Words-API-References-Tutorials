@@ -1,7 +1,7 @@
 ---
 title: Signing Existing Signature Line
 linktitle: Signing Existing Signature Line
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to sign an existing signature line in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

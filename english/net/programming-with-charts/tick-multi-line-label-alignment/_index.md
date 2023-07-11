@@ -1,7 +1,7 @@
 ---
 title: Tick Multi Line Label Alignment
 linktitle: Tick Multi Line Label Alignment
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to align tick multi-line labels in a chart axis using Aspose.Words for .NET.
 type: docs
 weight: 10

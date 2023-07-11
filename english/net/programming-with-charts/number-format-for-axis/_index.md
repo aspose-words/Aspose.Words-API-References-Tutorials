@@ -1,7 +1,7 @@
 ---
 title: Number Format For Axis
 linktitle: Number Format For Axis
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to set the number format for an axis in a chart using Aspose.Words for .NET.
 type: docs
 weight: 10

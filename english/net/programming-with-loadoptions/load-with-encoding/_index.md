@@ -1,7 +1,7 @@
 ---
 title: Load With Encoding
 linktitle: Load With Encoding
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to load a document with a specified encoding using Aspose.Words for .NET.
 type: docs
 weight: 10

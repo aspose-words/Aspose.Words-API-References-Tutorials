@@ -1,7 +1,7 @@
 ---
 title: Programming With Document Options And Settings
 linktitle: Programming With Document Options And Settings
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use document options and settings to customize and control the behavior of Word documents with Aspose.Words for .NET. The tutorials guide you through the different features such as document properties.
 type: docs
 weight: 1510

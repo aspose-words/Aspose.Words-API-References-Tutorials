@@ -1,7 +1,7 @@
 ---
 title: Working with Section
 linktitle: Working with Section
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to work with sections in Word documents using Aspose.Words for .NET. Step-by-step tutorials with sample code for creating, editing, and formatting sections efficiently.
 type: docs
 weight: 1220

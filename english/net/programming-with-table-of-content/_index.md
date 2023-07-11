@@ -1,7 +1,7 @@
 ---
 title: Programming With Table Of Content
 linktitle: Programming With Table Of Content
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Explore TOC programming in Aspose.Words for .NET. Learn how to create and manipulate tables of contents in your Word documents with step-by-step tutorials and C# code examples.
 type: docs
 weight: 1420

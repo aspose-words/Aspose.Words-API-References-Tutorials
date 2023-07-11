@@ -1,7 +1,7 @@
 ---
 title: Untangle Row Bookmarks In Word Document
 linktitle: Untangle Row Bookmarks In Word Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to untangle nested row bookmarks in word document to remove specific rows without affecting other bookmarks.
 type: docs
 weight: 10

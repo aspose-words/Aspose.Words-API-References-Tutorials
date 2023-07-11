@@ -1,7 +1,7 @@
 ---
 title: Recognize And Substitutions Within Replacement Patterns
 linktitle: Recognize And Substitutions Within Replacement Patterns
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use replacement patterns with recognitions and substitutions in Aspose.Words for .NET to manipulate Word documents.
 type: docs
 weight: 10

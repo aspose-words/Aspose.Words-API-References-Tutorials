@@ -1,7 +1,7 @@
 ---
 title: Remove Page Breaks
 linktitle: Remove Page Breaks
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to remove page breaks in a document using the Aspose.Words Library for .NET. Follow our step-by-step guide for a seamless layout. 
 type: docs
 weight: 10

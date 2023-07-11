@@ -1,7 +1,7 @@
 ---
 title: Set Content Control Color
 linktitle: Set Content Control Color
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to set the color of a content control in a Word document using Aspose.Words for .NET, customizing its appearance.
 type: docs
 weight: 10

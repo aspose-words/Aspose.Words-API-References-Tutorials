@@ -1,7 +1,7 @@
 ---
 title: Working with Hyphenation
 linktitle: Working with Hyphenation
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to manage word hyphenation in Word documents with Aspose.Words for .NET. Complete tutorials and practical examples included.
 type: docs
 weight: 750

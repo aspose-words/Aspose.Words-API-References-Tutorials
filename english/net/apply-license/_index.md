@@ -1,7 +1,7 @@
 ---
 title: Apply License
 linktitle: Apply License
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Get step-by-step instructions for applying an Aspose.Words license in your .NET projects. Follow the steps to enable full functionality of the Aspose.Words library.
 type: docs
 weight: 10

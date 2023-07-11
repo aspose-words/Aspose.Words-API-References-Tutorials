@@ -1,7 +1,7 @@
 ---
 title: Load Chm
 linktitle: Load Chm
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to load CHM files with Aspose.Words for .NET.
 type: docs
 weight: 10

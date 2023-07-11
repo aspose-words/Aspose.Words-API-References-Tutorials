@@ -1,7 +1,7 @@
 ---
 title: Repeat Rows On Subsequent Pages
 linktitle: Repeat Rows On Subsequent Pages
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to repeat table rows on subsequent pages in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

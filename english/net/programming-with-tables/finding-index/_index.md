@@ -1,7 +1,7 @@
 ---
 title: Finding Index
 linktitle: Finding Index
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to find table, row and cell indexes in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

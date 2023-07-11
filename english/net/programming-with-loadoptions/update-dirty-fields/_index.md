@@ -1,7 +1,7 @@
 ---
 title: Update Dirty Fields
 linktitle: Update Dirty Fields
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to load a Word document by updating dirty fields with Aspose.Words for .NET.
 type: docs
 weight: 10

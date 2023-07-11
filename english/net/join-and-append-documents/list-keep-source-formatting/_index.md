@@ -1,7 +1,7 @@
 ---
 title: List Keep Source Formatting
 linktitle: List Keep Source Formatting
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to preserve list formatting while joining and appending Word documents using Aspose.Words for .NET.
 type: docs
 weight: 10

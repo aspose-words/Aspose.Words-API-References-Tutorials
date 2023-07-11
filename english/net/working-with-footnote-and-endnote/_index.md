@@ -1,7 +1,7 @@
 ---
 title: Working with Footnote and Endnote
 linktitle: Working with Footnote and Endnote
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to work with footnotes and endnotes in your Word documents with Aspose.Words for .NET. Detailed tutorials and practical examples.
 type: docs
 weight: 660

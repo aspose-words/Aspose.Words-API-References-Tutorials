@@ -1,7 +1,7 @@
 ---
 title: Programming With Bookmarks
 linktitle: Programming With Bookmarks
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to manipulate bookmarks in Word documents using Aspose.Words for .NET. Tutorials walk you through the steps to create, access, and edit bookmarks in a Word document.
 type: docs
 weight: 1380

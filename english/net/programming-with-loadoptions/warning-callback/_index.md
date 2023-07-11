@@ -1,7 +1,7 @@
 ---
 title: Warning Callback
 linktitle: Warning Callback
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to handle warnings when loading a Word document using callback functionality with Aspose.Words for .NET.
 type: docs
 weight: 10

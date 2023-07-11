@@ -1,7 +1,7 @@
 ---
 title: Allow Only Form Fields Protect
 linktitle: Allow Only Form Fields Protect
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use Aspose.Words for .NET to protect documents and only allow form fields to be edited.
 type: docs
 weight: 10

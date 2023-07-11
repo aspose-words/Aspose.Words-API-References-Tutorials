@@ -1,7 +1,7 @@
 ---
 title: Hide Chart Axis
 linktitle: Hide Chart Axis
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to hide the chart axis in a document using Aspose.Words for .NET. Hide the axis for a cleaner and more focused chart display.
 type: docs
 weight: 10

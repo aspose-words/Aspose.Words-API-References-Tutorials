@@ -1,7 +1,7 @@
 ---
 title: Check DrawingML Text Effect
 linktitle: Check DrawingML Text Effect
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to check DrawingML text effects in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

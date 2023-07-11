@@ -1,7 +1,7 @@
 ---
 title: Untangle In Word Document
 linktitle: Untangle In Word Document
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to untangle in word document nested bookmarks in adjacent table rows using Aspose.Words for .NET.
 type: docs
 weight: 10

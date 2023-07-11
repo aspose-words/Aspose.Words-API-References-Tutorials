@@ -1,7 +1,7 @@
 ---
 title: Do Not Compress Small Metafiles
 linktitle: Do Not Compress Small Metafiles
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to use Aspose.Words for .NET to enable the Do Not Compress Small Metafiles feature when saving documents.
 type: docs
 weight: 10

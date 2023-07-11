@@ -1,7 +1,7 @@
 ---
 title: Creating And Signing New Signature Line
 linktitle: Creating And Signing New Signature Line
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to create and sign a new signature line in a Word document with Aspose.Words for .NET.
 type: docs
 weight: 10

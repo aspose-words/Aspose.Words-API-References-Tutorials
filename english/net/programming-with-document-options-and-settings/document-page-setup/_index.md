@@ -1,7 +1,7 @@
 ---
 title: Document Page Setup
 linktitle: Document Page Setup
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to setting up a document layout with Aspose.Words for .NET.
 type: docs
 weight: 10

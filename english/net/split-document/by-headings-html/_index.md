@@ -1,7 +1,7 @@
 ---
 title: By Headings Html
 linktitle: By Headings Html
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Step-by-step guide to explain the C# source code of the By Heading HTML feature of Aspose.Words for .NET
 type: docs
 weight: 10

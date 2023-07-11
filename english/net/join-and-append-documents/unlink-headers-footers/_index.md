@@ -1,7 +1,7 @@
 ---
 title: Unlink Headers Footers
 linktitle: Unlink Headers Footers
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to join and append Word documents while unlinking headers and footers using Aspose.Words for .NET.
 type: docs
 weight: 10

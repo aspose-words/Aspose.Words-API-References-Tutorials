@@ -1,7 +1,7 @@
 ---
 title: Working with Word VBA Macros
 linktitle: Working with Word VBA Macros
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to work with VBA macros in Word documents using Aspose.Words for .NET. Complete tutorials with code samples to create, modify and run VBA macros in your Word documents.
 type: docs
 weight: 1350

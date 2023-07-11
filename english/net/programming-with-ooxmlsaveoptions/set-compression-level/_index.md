@@ -1,7 +1,7 @@
 ---
 title: Set Compression Level
 linktitle: Set Compression Level
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to set the compression level when saving a document with Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Delete Header Footer Content
 linktitle: Delete Header Footer Content
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: In this tutorial, learn how to remove header and footer content from a Word document with Aspose.Words for .NET. 
 type: docs
 weight: 10

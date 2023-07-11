@@ -1,7 +1,7 @@
 ---
 title: Link
 linktitle: Link
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to insert links with Aspose.Words for .NET. Step-by-step guide.
 type: docs
 weight: 10

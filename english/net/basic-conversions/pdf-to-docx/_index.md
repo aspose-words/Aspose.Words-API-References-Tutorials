@@ -1,7 +1,7 @@
 ---
 title: Save PDF To Word Format (Docx)
 linktitle: Save PDF To Word Format (Docx)
-second_title: Aspose.Words for .NET API Reference
+second_title: Aspose.Words Document Processing API
 description: Learn how to convert or save PDF documents to Word fromat (Docx) format using Aspose.Words for .NET. Step-by-step tutorial with example source code.
 type: docs
 weight: 10
