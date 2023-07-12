@@ -16,5 +16,5 @@ Whether you're a beginner or an experienced developer, these tutorials will help
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Change Style Of Toc Level](./change-style-of-toc-level/) | Learn how to easily change the style of a table of contents level in a Word document using Aspose.Words for .NET. |
-| [Change Toc Tab Stops](./change-toc-tab-stops/) | Learn how to change table of contents tabs in a Word document using Aspose.Words for .NET. |
+| [Change Toc Style In Word Document](./change-style-of-toc-level/) | Learn how to easily change the style of a table of contents level in a Word document using Aspose.Words for .NET. |
+| [Change Toc Tab Stops In Word Document](./change-toc-tab-stops/) | Learn how to change table of contents tabs in a Word document using Aspose.Words for .NET. |
