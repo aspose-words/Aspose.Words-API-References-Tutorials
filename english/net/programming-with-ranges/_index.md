@@ -16,5 +16,5 @@ Whether you are a beginner or an experienced developer, these tutorials will hel
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Ranges Delete Text](./ranges-delete-text/) | Learn how to delete text in specific ranges in a Word document using Aspose.Words for .NET. |
-| [Ranges Get Text](./ranges-get-text/) | Learn how to easily extract text from a Word document using Aspose.Words for .NET. |
+| [Ranges Delete Text In Word Document](./ranges-delete-text/) | Learn how to delete text in specific ranges in a Word document using Aspose.Words for .NET. |
+| [Ranges Get Text In Word Document](./ranges-get-text/) | Learn how to easily extract text in a Word document using Aspose.Words for .NET. |
