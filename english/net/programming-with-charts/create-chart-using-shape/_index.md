@@ -1,6 +1,6 @@
 ---
-title: Create Chart Using Shape
-linktitle: Create Chart Using Shape
+title: Create & Customize Chart Using Shape
+linktitle: Create & Customize Chart Using Shape
 second_title: Aspose.Words Document Processing API
 description: Learn how to create and customize a chart using a shape in a Word document using Aspose.Words for .NET.
 type: docs
@@ -77,3 +77,18 @@ doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 ```
 
 That's it! You have successfully created a chart using a shape in a Word document using Aspose.Words for .NET.
+
+## Conclusion
+In this tutorial, you have learned how to create a chart using a shape in a Word document using Aspose.Words for .NET. By following the step-by-step guide, you can insert and configure a chart shape, customize its appearance, and save the document. Aspose.Words for .NET provides a comprehensive set of features for working with Word documents and charts, enabling you to create professional-looking and visually appealing charts directly in your .NET applications.
+
+### FAQs
+
+#### Q1. Can I create charts in a Word document using Aspose.Words for .NET?
+Yes, with Aspose.Words for .NET, you can create charts in a Word document programmatically. Aspose.Words provides APIs and functionalities to insert various types of charts, customize their appearance, and manipulate chart data.
+
+#### Q2. What chart types are supported by Aspose.Words for .NET?
+Aspose.Words for .NET supports a wide range of chart types, including line charts, bar charts, pie charts, area charts, scatter charts, and more. You can choose the appropriate chart type based on your data and visualization requirements.
+
+#### Q3. Can I customize the appearance of the created chart?
+Yes, you can customize the appearance of the created chart using Aspose.Words for .NET. You can modify properties such as chart title, legend position, data labels, axis labels, colors, and other visual elements to meet your specific design and formatting needs.
+
