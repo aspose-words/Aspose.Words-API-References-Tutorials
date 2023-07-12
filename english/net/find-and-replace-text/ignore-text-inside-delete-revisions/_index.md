@@ -124,4 +124,83 @@ Here is the full sample source code to demonstrate the use of the "Ignore Text I
 
 In this article, we explored the C# source code to understand how to use the "Ignore Text Inside Delete Revisions" feature in Aspose.Words for .NET. This feature is useful for ignoring text inside deletion revisions when manipulating documents. We followed a step-by-step guide to create a document, insert text, delete a paragraph with revision tracking, apply the "Ignore Text Inside Delete Revisions" feature, and perform find and replace operations.
 
+### FAQ's
+
+#### Q: What is the "Ignore Text Inside Delete Revisions" function in Aspose.Words for .NET?
+
+A: The "Ignore Text Inside Delete Revisions" function in Aspose.Words for .NET allows you to specify whether text inside delete revisions should be ignored during certain operations, such as finding and replacing text. When this feature is enabled, deleted text inside revisions is not considered during operations.
+
+#### Q: What is Aspose.Words for .NET?
+
+A: Aspose.Words for .NET is a powerful library for creating, editing and converting Word documents into .NET applications. It offers many advanced features for working with documents, including revision management.
+
+#### Q: How to create a new document in Aspose.Words for .NET?
+
+A: Before you start manipulating text in a document, you need to create a new document using Aspose.Words for .NET. This can be done by instantiating a `Document` object. Here is a sample code to create a new document:
+
+```csharp
+Document doc = new Document();
+```
+
+#### Q: How to insert unedited text into a document using Aspose.Words for .NET?
+
+A: Once you have a document, you can insert unreviewed text using a `DocumentBuilder` object. For example, to insert the text "Deleted Text", you can use the `Writeln` and `Write` methods:
+
+```csharp
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writen("Deleted");
+builder.Write("Text");
+```
+
+#### Q: How do I delete a paragraph with revision tracking in Aspose.Words for .NET?
+
+A: To illustrate the use of the "Ignore Text Inside Delete Revisions" function, we will delete a paragraph from the document using revision tracking. This will allow us to see how this function affects subsequent operations.
+
+```csharp
+doc.StartTrackRevisions("author", DateTime.Now);
+doc.FirstSection.Body.FirstParagraph.Remove();
+doc.StopTrackRevisions();
+```
+
+#### Q: How to enable "Ignore Text Inside Delete Revisions" feature in Aspose.Words for .NET?
+
+A: Now that we have prepared our document by deleting a paragraph, we can enable the "Ignore Text Inside Delete Revisions" feature using a `FindReplaceOptions` object. We will set the `IgnoreDeleted` property to `true`:
+
+```csharp
+FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
+```
+
+#### Q: How to search and replace using regular expressions in Aspose.Words for .NET?
+
+A: To perform search and replace operations on the text of the document, we will use regular expressions. In our example, we will search for all occurrences of the letter "e" and replace them with an asterisk "*". We will use the .NET `Regex` class for this:
+
+```csharp
+Regex regex = new Regex("e");
+doc.Range.Replace(regex, "*", options);
+```
+
+#### Q: How to view changed document content in Aspose.Words for .NET?
+
+A: After applying the search and replace, we can display the changed content of the document using the `GetText` method:
+
+```csharp
+Console.WriteLine(doc.GetText());
+```
+
+#### Q: How to include deleted text in output result in Aspose.Words for .NET?
+
+A: If we want to include deleted text in the output result, we can change the options to not ignore deleted text. For this, we will set the `IgnoreDeleted` property to `false`:
+
+```csharp
+options. IgnoreDeleted = false;
+```
+
+#### Q: How to show edited document with deleted text in Aspose.Words for .NET?
+
+A: After changing the options, we can do a new search and replace to get the result with the deleted text included:
+
+```csharp
+doc.Range.Replace(regex, "*", options);
+Console.WriteLine(doc.GetText());
+```
 

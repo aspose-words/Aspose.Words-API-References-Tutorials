@@ -120,3 +120,78 @@ Here is the full sample source code to demonstrate the use of the Ignore Text In
 ## Conclusion
 
 In this article, we explored the C# source code to understand how to use the Ignore Text Inside Insert Revisions function in Aspose.Words for .NET. We followed a step-by-step guide to creating a document, inserting text with tracking revisions and unrevised text, using the Ignore Text Inside Insert Revisions function, performing search and replace operations with regular expressions, and display the modified document.
+
+### FAQ's
+
+#### Q: What is the "Ignore Text Inside Insert Revisions" feature in Aspose.Words for .NET?
+
+A: The "Ignore Text Inside Insert Revisions" feature in Aspose.Words for .NET allows you to specify whether the text inside insert revisions should be ignored during certain operations, such as finding and replacing text. When this feature is enabled, the text inside the insert revisions is not considered during operations.
+
+#### Q: How can I create a new document using Aspose.Words for .NET?
+
+A: To create a new document using Aspose.Words for .NET, you can instantiate a `Document` object. Here's an example of C# code to create a new document:
+
+```csharp
+Document doc = new Document();
+```
+
+#### Q: How can I insert text with revision tracking in Aspose.Words for .NET?
+
+A: Once you have a document, you can insert text with revision tracking using a `DocumentBuilder` object. For example, to insert the "Inserted" text with revision tracking, you can use the `StartTrackRevisions`, `Writeln`, and `StopTrackRevisions` methods:
+
+```csharp
+DocumentBuilder builder = new DocumentBuilder(doc);
+doc.StartTrackRevisions("author", DateTime.Now);
+builder.Writeln("Inserted");
+doc.StopTrackRevisions();
+```
+
+#### Q: How can I insert unrevised text in Aspose.Words for .NET?
+
+A: In addition to text with revision tracking, you can also insert unrevised text using the `DocumentBuilder` object. For example, to insert the text "Text" without revision, you can use the `Write` method:
+
+```csharp
+builder.Write("Text");
+```
+
+#### Q: How can I ignore text inside insert revisions in Aspose.Words for .NET?
+
+A: To ignore text inside insert revisions during subsequent operations, you can use a `FindReplaceOptions` object and set the `IgnoreInserted` property to `true`:
+
+```csharp
+FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
+```
+
+#### Q: How can I perform search and replace using regular expressions in Aspose.Words for .NET?
+
+A: To perform search and replace operations on the text of the document using regular expressions, you can use the .NET `Regex` class. For example, to search for all occurrences of the letter "e" and replace them with an asterisk "*", you can create a `Regex` object and use it with the `Replace` method:
+
+```csharp
+Regex regex = new Regex("e");
+doc.Range.Replace(regex, "*", options);
+```
+
+#### Q: How can I view the modified output of the document in Aspose.Words for .NET?
+
+A: After applying search and replace operations, you can view the changed content of the document using the `GetText` method:
+
+```csharp
+Console.WriteLine(doc.GetText());
+```
+
+#### Q: How can I include the insert revisions in the output result in Aspose.Words for .NET?
+
+A: To include the text inside the insert revisions in the output result, you can change the options to not ignore the insert revisions. For this, you can set the `IgnoreInserted` property of the `FindReplaceOptions` object to `false`:
+
+```csharp
+options.IgnoreInserted = false;
+```
+
+#### Q: How can I display the modified document with the insert revisions in Aspose.Words for .NET?
+
+A: After changing the options to include insert revisions, you can perform the search and replace again to get the result with the text inside the insert revisions included:
+
+```csharp
+doc.Range.Replace(regex, "*", options);
+Console.WriteLine(doc.GetText());
+```

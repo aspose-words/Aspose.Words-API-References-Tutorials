@@ -16,9 +16,9 @@ Whether you need to replace specific words, update text templates, or customize 
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Simple Find Replace](./simple-find-replace/) | Learn how to perform a simple find replace in a Word document using Aspose.Words for .NET. |
+| [Simple Text Find And Replace In Word](./simple-find-replace/) | Learn how to perform a simple text find and replace in a Word document using Aspose.Words for .NET. |
 | [Meta Characters In Search Pattern](./meta-characters-in-search-pattern/) | Learn how to use metacharacters in the search pattern with Aspose.Words for .NET to manipulate Word documents. |
-| [Replace Text Containing Meta Characters](./replace-text-containing-meta-characters/) | Learn how to replace text containing metacharacters in Word documents using Aspose.Words for .NET. |
+| [Word Replace Text Containing Meta Characters](./replace-text-containing-meta-characters/) | Learn how to word replace text containing metacharacters in Word documents using Aspose.Words for .NET. |
 | [Ignore Text Inside Fields](./ignore-text-inside-fields/) | Learn how to use the "Ignore Text Inside Fields" feature of Aspose.Words for .NET. |
 | [Ignore Text Inside Delete Revisions](./ignore-text-inside-delete-revisions/) | Learn how to use the "Ignore Text Inside Delete Revisions" feature of Aspose.Words for .NET. |
 | [Ignore Text Inside Insert Revisions](./ignore-text-inside-insert-revisions/) | Learn how to use the "Ignore Text Inside Insert Revisions" feature of Aspose.Words for .NET to manipulate insert revisions in Word documents. |

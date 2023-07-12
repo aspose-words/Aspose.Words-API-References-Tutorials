@@ -103,3 +103,67 @@ Here is the full sample source code to demonstrate the use of the Ignore Text In
 
 In this article, we explored the C# source code to understand how to use the Ignore Text Inside Fields function in Aspose.Words for .NET. We followed a step-by-step guide to create a document, insert a field with text inside, use the Ignore Text Inside Fields function, perform search and replace operations with regular expressions, and display the modified document .
 
+### FAQ's
+
+#### Q: What is the "Ignore Text Inside Fields" feature in Aspose.Words for .NET?
+
+A: The "Ignore Text Inside Fields" feature in Aspose.Words for .NET allows you to specify whether the text inside fields should be ignored during certain operations, such as finding and replacing text. When this feature is enabled, the text inside the fields is not considered during operations.
+
+#### Q: How can I create a new document using Aspose.Words for .NET?
+
+A: To create a new document using Aspose.Words for .NET, you can instantiate a `Document` object. Here's an example of C# code to create a new document:
+
+```csharp
+Document doc = new Document();
+```
+
+#### Q: How can I insert a field with text inside a document using Aspose.Words for .NET?
+
+A: Once you have a document, you can insert a field with text inside it using a `DocumentBuilder` object. For example, to insert an "INCLUDETEXT" field with the text "Text in field", you can use the `InsertField` method:
+
+```csharp
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertField("INCLUDETEXT", "Text in field");
+```
+
+#### Q: How can I ignore text inside fields in Aspose.Words for .NET?
+
+A: To ignore text inside fields during subsequent operations, you can use a `FindReplaceOptions` object and set the `IgnoreFields` property to `true`:
+
+```csharp
+FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
+```
+
+#### Q: How can I perform search and replace using regular expressions in Aspose.Words for .NET?
+
+A: To perform search and replace operations on the text of the document using regular expressions, you can use the .NET `Regex` class. For example, to search for all occurrences of the letter "e" and replace them with an asterisk "*", you can create a `Regex` object and use it with the `Replace` method:
+
+```csharp
+Regex regex = new Regex("e");
+doc.Range.Replace(regex, "*", options);
+```
+
+#### Q: How can I view the modified output of the document in Aspose.Words for .NET?
+
+A: After applying search and replace operations, you can view the changed content of the document using the `GetText` method:
+
+```csharp
+Console.WriteLine(doc.GetText());
+```
+
+#### Q: How can I include the fields in the output result in Aspose.Words for .NET?
+
+A: To include the text inside the fields in the output result, you can change the options to not ignore the fields. For this, you can set the `IgnoreFields` property of the `FindReplaceOptions` object to `false`:
+
+```csharp
+options.IgnoreFields = false;
+```
+
+#### Q: How can I display the modified document with the fields in Aspose.Words for .NET?
+
+A: After changing the options to include fields, you can perform the search and replace again to get the result with the text inside the fields included:
+
+```csharp
+doc.Range.Replace(regex, "*", options);
+Console.WriteLine(doc.GetText());
+```
