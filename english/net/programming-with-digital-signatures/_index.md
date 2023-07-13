@@ -14,10 +14,10 @@ With these tutorials, you will be able to master the digital signature features 
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Sign Document](./sign-document/) | Learn how to digitally sign a Word document with Aspose.Words for .NET. |
-| [Signing Encrypted Document](./signing-encrypted-document/) | Learn how to digitally sign an encrypted document with Aspose.Words for .NET. |
+| [Sign Word Document](./sign-document/) | Learn how to digitally sign a Word document with Aspose.Words for .NET. |
+| [Signing Encrypted Word Document](./signing-encrypted-document/) | Learn how to digitally sign an encrypted word document with Aspose.Words for .NET. |
 | [Creating And Signing New Signature Line](./creating-and-signing-new-signature-line/) | Learn how to create and sign a new signature line in a Word document with Aspose.Words for .NET. |
-| [Signing Existing Signature Line](./signing-existing-signature-line/) | Learn how to sign an existing signature line in a Word document with Aspose.Words for .NET. |
-| [Set Signature Provider Id](./set-signature-provider-id/) | Learn how to set the signature provider ID in a Word document with Aspose.Words for .NET. |
+| [Signing Existing Signature Line In Word Document](./signing-existing-signature-line/) | Learn how to sign an existing signature line in a Word document with Aspose.Words for .NET. |
+| [Set Signature Provider Id In Word Document](./set-signature-provider-id/) | Learn how to set the signature provider ID in a Word document with Aspose.Words for .NET. |
 | [Create New Signature Line And Set Provider Id](./create-new-signature-line-and-set-provider-id/) | Learn how to create a new signature line and set provider ID in a Word document with Aspose.Words for .NET. |
-| [Access And Verify Signature](./access-and-verify-signature/) | Learn how to access and verify digital signatures in a Word document with Aspose.Words for .NET. |
+| [Access And Verify Signature In Word Document](./access-and-verify-signature/) | Learn how to access and verify digital signatures in a Word document with Aspose.Words for .NET. |
