@@ -55,19 +55,19 @@ Here is the complete source code for unprotecting the document using Aspose.Word
 
 ```csharp
 
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// The path to the documents directory.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.Writeln("Text added to a document.");
+builder.Writeln("Text added to a document.");
 
-	// Documents can have protection removed either with no password, or with the correct password.
-	doc.Unprotect();
-	doc.Protect(ProtectionType.ReadOnly, "newPassword");
-	doc.Unprotect("newPassword");
+// Documents can have protection removed either with no password, or with the correct password.
+doc.Unprotect();
+doc.Protect(ProtectionType.ReadOnly, "newPassword");
+doc.Unprotect("newPassword");
 
-	doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
+doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
 
 ```
 

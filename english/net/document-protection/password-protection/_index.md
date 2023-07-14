@@ -43,16 +43,14 @@ Be sure to specify the correct path and filename to save the protected document.
 Here is the complete source code for password protection using Aspose.Words for .NET:
 
 ```csharp
+// The path to the documents directory.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
 
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
+// Apply document protection.
+doc.Protect(ProtectionType.NoProtection, "password");
 
-	// Apply document protection.
-	doc.Protect(ProtectionType.NoProtection, "password");
-
-	doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
-
+doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 ```
 
 Remember to replace "YOUR DOCUMENTS DIRECTORY" with the directory of your documents and "password" with the actual password you want to use.

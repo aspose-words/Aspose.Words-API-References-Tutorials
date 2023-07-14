@@ -47,21 +47,19 @@ Be sure to specify the correct path and filename to save the document without th
 Here is the complete source code for removing the read-only restriction using Aspose.Words for .NET:
 
 ```csharp
+// The path to the documents directory.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
 
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	
-	// Enter a password that's up to 15 characters long.
-	doc.WriteProtection.SetPassword("MyPassword");
+// Enter a password that's up to 15 characters long.
+doc.WriteProtection.SetPassword("MyPassword");
 
-	// Remove the read-only option.
-	doc.WriteProtection.ReadOnlyRecommended = false;
+// Remove the read-only option.
+doc.WriteProtection.ReadOnlyRecommended = false;
 
-	// Apply write protection without any protection.
-	doc.Protect(ProtectionType.NoProtection);
-	doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
-
+// Apply write protection without any protection.
+doc.Protect(ProtectionType.NoProtection);
+doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 ```
 
 By following these steps, you can easily remove the read-only restriction from a Word document with Aspose.Words for .NET.
