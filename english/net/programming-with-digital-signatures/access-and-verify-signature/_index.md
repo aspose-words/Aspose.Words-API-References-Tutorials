@@ -67,7 +67,7 @@ By following these steps, you will be able to easily access and verify the digit
 
 ## Conclusion
 
-In this tutorial, we explored the feature of accessing and verifying digital signatures in a Word document using Aspose.Words for .NET. By following the steps provided, you can easily load a document, access its digital signatures, and verify their validity. The ability to access and verify digital signatures provides a way to ensure the integrity and authenticity of your Word documents. Aspose.Words for .NET offers a powerful API for working with digital signatures, allowing you to automate the verification process and enhance the security of your documents.
+In this tutorial, we explored the feature of accessing and verifying digital signatures in a Word document using Aspose.Words for .NET. By following the steps provided, you can easily load a document, access its digital signatures, and verify their validity. The ability to access and verify digital signatures provides a way to ensure the integrity and authenticity of your Word documents. Aspose.Words for .NET offers a powerful API for Words Processing with digital signatures, allowing you to automate the verification process and enhance the security of your documents.
 
 ### FAQ's
 

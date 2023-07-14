@@ -8,7 +8,7 @@ weight: 10
 url: /net/programming-with-loadoptions/update-dirty-fields/
 ---
 
-When working with Word documents in a C# application, it may be necessary to update dirty fields to show the most recent values. With the Aspose.Words library for .NET, you can easily update dirty fields on document load using LoadOptions. In this step-by-step guide, we'll walk you through how to use Aspose.Words for .NET C# source code to load a document by updating dirty fields using LoadOptions.
+When Words Processing with Word documents in a C# application, it may be necessary to update dirty fields to show the most recent values. With the Aspose.Words library for .NET, you can easily update dirty fields on document load using LoadOptions. In this step-by-step guide, we'll walk you through how to use Aspose.Words for .NET C# source code to load a document by updating dirty fields using LoadOptions.
 
 ## Understanding the Aspose.Words library
 

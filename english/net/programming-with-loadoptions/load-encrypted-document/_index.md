@@ -8,7 +8,7 @@ weight: 10
 url: /net/programming-with-loadoptions/load-encrypted-document/
 ---
 
-When working with encrypted documents in a C# application, it is important to be able to load them correctly by providing the correct password. With the Aspose.Words library for .NET, you can easily load encrypted documents using the appropriate loading options. In this step-by-step guide, we'll show you how to use the C# source code of Aspose.Words for .NET to load an encrypted document using the LoadOptions load options.
+When Words Processing with encrypted documents in a C# application, it is important to be able to load them correctly by providing the correct password. With the Aspose.Words library for .NET, you can easily load encrypted documents using the appropriate loading options. In this step-by-step guide, we'll show you how to use the C# source code of Aspose.Words for .NET to load an encrypted document using the LoadOptions load options.
 
 ## Understanding the Aspose.Words library
 

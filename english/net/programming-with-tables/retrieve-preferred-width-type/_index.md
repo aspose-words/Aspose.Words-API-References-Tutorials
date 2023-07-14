@@ -15,7 +15,7 @@ In this tutorial, we will learn how to retrieve the preferred width type and its
 2. Add a reference to the Aspose.Words for .NET library.
 
 ## Step 2: Loading the document
-To start working with the document, follow these steps:
+To start Words Processing with the document, follow these steps:
 
 ```csharp
 // Path to your documents directory

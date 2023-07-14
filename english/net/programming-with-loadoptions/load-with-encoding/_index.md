@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /net/programming-with-loadoptions/load-with-encoding/
 ---
-When working with text documents in a C# application, it is important to be able to load them correctly by specifying the correct encoding. With the Aspose.Words library for .NET, you can easily load text documents with the desired encoding using the LoadOptions load options. In this step-by-step guide, we will walk you through how to use Aspose.Words for .NET C# source code to load a text document with the specified encoding using the LoadOptions load options.
+When Words Processing with text documents in a C# application, it is important to be able to load them correctly by specifying the correct encoding. With the Aspose.Words library for .NET, you can easily load text documents with the desired encoding using the LoadOptions load options. In this step-by-step guide, we will walk you through how to use Aspose.Words for .NET C# source code to load a text document with the specified encoding using the LoadOptions load options.
 
 ## Understanding the Aspose.Words library
 

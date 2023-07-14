@@ -1,6 +1,6 @@
 ---
-title: Working with List
-linktitle: Working with List
+title: Words Processing with List
+linktitle: Words Processing with List
 second_title: Aspose.Words Document Processing API
 description: Learn how to work with lists in Word documents using Aspose.Words for .NET. Detailed tutorials with code examples.
 type: docs
@@ -8,7 +8,7 @@ weight: 780
 url: /net/working-with-list/
 ---
 
-Working with Lists is a comprehensive resource that guides you through working with lists in Word documents using the Aspose.Words for .NET library. The tutorials provide step-by-step explanations, complete source code, and practical examples for creating, customizing, and managing different types of lists, including bulleted lists, numbered lists, and multilevel lists. You will also learn how to add items, format lists, change appearance and indentation, and other advanced operations. This resource is essential for developers who want to automate the creation and management of lists in their Word documents using Aspose.Words for .NET.
+Words Processing with Lists is a comprehensive resource that guides you through Words Processing with lists in Word documents using the Aspose.Words for .NET library. The tutorials provide step-by-step explanations, complete source code, and practical examples for creating, customizing, and managing different types of lists, including bulleted lists, numbered lists, and multilevel lists. You will also learn how to add items, format lists, change appearance and indentation, and other advanced operations. This resource is essential for developers who want to automate the creation and management of lists in their Word documents using Aspose.Words for .NET.
 
  ## Tutorials
 | Title | Description |

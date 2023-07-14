@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /net/document-protection/allow-only-form-fields-protect/
 ---
-Document protection is an essential feature when working with files within your C# application. With the Aspose.Words library for .NET, you can easily protect your documents and only allow form fields to be edited. In this step-by-step guide, we will walk you through how to use C# source code to only allow form fields to be edited using the Allow Only Form Fields Protect feature of Aspose.Words for .NET.
+Document protection is an essential feature when Words Processing with files within your C# application. With the Aspose.Words library for .NET, you can easily protect your documents and only allow form fields to be edited. In this step-by-step guide, we will walk you through how to use C# source code to only allow form fields to be edited using the Allow Only Form Fields Protect feature of Aspose.Words for .NET.
 
 ## Step 1: Setting the Document Directory
 

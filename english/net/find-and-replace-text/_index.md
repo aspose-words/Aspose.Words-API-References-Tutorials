@@ -9,9 +9,9 @@ url: /net/find-and-replace-text/
 ---
 Find and Replace Text tutorial explains how to use the Find and Replace text features to make quick and efficient edits in your Word documents. You'll learn how to search for specific words, phrases, or patterns and replace them with new content. With these techniques, you can automate text editing tasks, save time and improve the efficiency of your document processing workflow.
 
-Aspose.Words for .NET is a powerful library that offers a wide range of functionality for working with Word documents in .NET applications. The tutorial provides detailed code examples and explains the steps required to perform text search and replace operations. You will learn how to use Aspose.Words API methods and properties to find and replace text, taking into account different options such as case, accent sensitivity and more.
+Aspose.Words for .NET is a powerful library that offers a wide range of functionality for Words Processing with Word documents in .NET applications. The tutorial provides detailed code examples and explains the steps required to perform text search and replace operations. You will learn how to use Aspose.Words API methods and properties to find and replace text, taking into account different options such as case, accent sensitivity and more.
 
-Whether you need to replace specific words, update text templates, or customize the content of Word documents, the "Find and Replace Text" tutorial will guide you through the essential steps to perform these tasks with Aspose. Words for .NET. With comprehensive documentation and clear code samples, these tutorials are a valuable resource for developers who want to get the most out of this library and improve their skills in working with Word documents.
+Whether you need to replace specific words, update text templates, or customize the content of Word documents, the "Find and Replace Text" tutorial will guide you through the essential steps to perform these tasks with Aspose. Words for .NET. With comprehensive documentation and clear code samples, these tutorials are a valuable resource for developers who want to get the most out of this library and improve their skills in Words Processing with Word documents.
 
  ## Tutorials
 | Title | Description |

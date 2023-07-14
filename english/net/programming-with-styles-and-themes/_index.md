@@ -1,6 +1,6 @@
 ---
 title: Using Themes and Styles in Word Document
-linktitle: Programming With Styles And Themes
+linktitle: Words Processing with Styles And Themes
 second_title: Aspose.Words Document Processing API
 description: Learn about using Themes and Styles in Word Document with Aspose.Words for .NET. Learn how to create, apply, and customize styles and themes in your Word documents with step-by-step tutorials and C# code samples.
 type: docs
@@ -11,7 +11,7 @@ The Aspose.Words for .NET Tutorials on Using Themes and Styles in Word Document 
 
 With these tutorials, you can understand how to effectively use styles to format text, paragraphs, and sections in your document. You'll also learn how to apply themes to give your document a cohesive and professional look. Additionally, these tutorials cover advanced topics such as managing inherited styles, using condition-based styles, and modifying styles programmatically.
 
-Whether you're a beginner or an experienced developer, Aspose.Words for .NET tutorials on programming with styles and themes provide you with the knowledge and skills to create attractive, well-formatted Word documents. Use these valuable resources to master the art of manipulating styles and themes, and give your documents a professional touch.
+Whether you're a beginner or an experienced developer, Aspose.Words for .NET tutorials on Words Processing with styles and themes provide you with the knowledge and skills to create attractive, well-formatted Word documents. Use these valuable resources to master the art of manipulating styles and themes, and give your documents a professional touch.
 
  ## Tutorials
 | Title | Description |

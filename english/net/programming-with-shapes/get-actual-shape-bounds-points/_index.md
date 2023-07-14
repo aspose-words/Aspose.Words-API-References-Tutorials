@@ -14,7 +14,7 @@ This tutorial explains how to retrieve the actual bounds of a shape in points (m
 To follow this tutorial, you need to have the following:
 
 - Aspose.Words for .NET library installed.
-- Basic knowledge of C# and working with Word documents.
+- Basic knowledge of C# and Words Processing with Word documents.
 
 ## Step 1: Create a New Document and DocumentBuilder
 Create a new instance of the `Document` class and a `DocumentBuilder` object to work with the document.

@@ -131,7 +131,7 @@ By following these steps, you can easily create a new signature line and set the
 
 ## Conclusion
 
-In this tutorial, we explored the feature of creating a new signature line and setting the provider ID in a Word document using Aspose.Words for .NET. By following the steps provided, you can easily insert a signature line with custom options and associate it with a specific provider using the provider ID. Adding signature lines and customizing the provider information enhances the authenticity and trustworthiness of your documents. Aspose.Words for .NET provides a powerful API for working with signature lines and digital certificates in Word documents, enabling you to automate the signing process and ensure the validity of your documents.
+In this tutorial, we explored the feature of creating a new signature line and setting the provider ID in a Word document using Aspose.Words for .NET. By following the steps provided, you can easily insert a signature line with custom options and associate it with a specific provider using the provider ID. Adding signature lines and customizing the provider information enhances the authenticity and trustworthiness of your documents. Aspose.Words for .NET provides a powerful API for Words Processing with signature lines and digital certificates in Word documents, enabling you to automate the signing process and ensure the validity of your documents.
 
 ### FAQ's
 

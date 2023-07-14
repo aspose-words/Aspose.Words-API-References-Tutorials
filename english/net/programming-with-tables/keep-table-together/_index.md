@@ -15,7 +15,7 @@ In this tutorial, we are going to learn how to hold a table together in a Word d
 2. Add a reference to the Aspose.Words for .NET library.
 
 ## Step 2: Loading the document and retrieving the table
-To start working with the table, we need to load the document and fetch the table we want to keep together. Follow these steps:
+To start Words Processing with the table, we need to load the document and fetch the table we want to keep together. Follow these steps:
 
 ```csharp
 // Path to your documents directory

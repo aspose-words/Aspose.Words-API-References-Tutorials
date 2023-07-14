@@ -1,13 +1,13 @@
 ---
-title: Programming With Imagesaveoptions
-linktitle: Programming With Imagesaveoptions
+title: Words Processing with Imagesaveoptions
+linktitle: Words Processing with Imagesaveoptions
 second_title: Aspose.Words Document Processing API
 description: Learn how to program with image saving options in Aspose.Words for .NET. Step-by-step tutorials with sample code for saving and manipulating images in your Word documents.
 type: docs
 weight: 1630
 url: /net/programming-with-imagesaveoptions/
 ---
-Aspose.Words for .NET tutorials on programming with ImageSaveOptions will help you master advanced image manipulation features in your Word documents. These step-by-step tutorials will guide you through using image saving options, including compressing, choosing image format, setting image quality, and more. You'll learn how to customize image processing when generating or converting documents, giving you precise control over the appearance and size of images in your Word files.
+Aspose.Words for .NET tutorials on Words Processing with ImageSaveOptions will help you master advanced image manipulation features in your Word documents. These step-by-step tutorials will guide you through using image saving options, including compressing, choosing image format, setting image quality, and more. You'll learn how to customize image processing when generating or converting documents, giving you precise control over the appearance and size of images in your Word files.
 
 The tutorials also cover the basic concepts of image manipulation, including inserting, deleting, resizing and cropping images in a Word document using Aspose.Words for .NET. You will learn how to extract images from Word documents, replace them with other images and adjust their position, alignment and wrapping. These tutorials will allow you to create automated and efficient workflows for managing images in your Word documents, giving you the skills to easily and efficiently manipulate the visual elements of your Word files.
 

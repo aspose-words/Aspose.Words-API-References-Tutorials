@@ -87,7 +87,7 @@ By following these steps, you can easily sign an existing signature line in a Wo
 
 ## Conclusion
 
-In this tutorial, we learned how to sign an existing signature line in a Word document using Aspose.Words for .NET. By following the provided steps, you can easily load the document, access the existing signature line, set the signing options, and sign the document. The ability to sign an existing signature line provides a convenient way to add digital signatures to predefined areas in your Word documents, ensuring document integrity and authentication. Aspose.Words for .NET offers a powerful API for working with digital signatures, allowing you to customize the signing process and enhance the security of your Word documents.
+In this tutorial, we learned how to sign an existing signature line in a Word document using Aspose.Words for .NET. By following the provided steps, you can easily load the document, access the existing signature line, set the signing options, and sign the document. The ability to sign an existing signature line provides a convenient way to add digital signatures to predefined areas in your Word documents, ensuring document integrity and authentication. Aspose.Words for .NET offers a powerful API for Words Processing with digital signatures, allowing you to customize the signing process and enhance the security of your Word documents.
 
 ### FAQ's
 

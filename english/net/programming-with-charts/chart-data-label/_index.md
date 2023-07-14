@@ -14,7 +14,7 @@ This tutorial explains how to add and customize data labels in a chart using Asp
 To follow this tutorial, you need to have the following:
 
 - Aspose.Words for .NET library installed.
-- Basic knowledge of C# and working with Word documents.
+- Basic knowledge of C# and Words Processing with Word documents.
 
 ## Step 1: Set up the Document Directory
 Start by setting up the path to your document directory. Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to the directory where you want to save the document.
@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 That's it! You have successfully added and customized data labels in a chart using Aspose.Words for .NET.
 
 ## Conclusion
-In this tutorial, you have learned how to add and customize data labels in a chart using Aspose.Words for .NET. By following the step-by-step guide, you can insert a chart, access the data labels collection, and modify the properties to customize the appearance of the data labels. Aspose.Words for .NET provides a powerful API for working with Word documents and charts, enabling you to create visually appealing and informative charts with customized data labels.
+In this tutorial, you have learned how to add and customize data labels in a chart using Aspose.Words for .NET. By following the step-by-step guide, you can insert a chart, access the data labels collection, and modify the properties to customize the appearance of the data labels. Aspose.Words for .NET provides a powerful API for Words Processing with Word documents and charts, enabling you to create visually appealing and informative charts with customized data labels.
 
 ### FAQs
 

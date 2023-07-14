@@ -1,13 +1,13 @@
 ---
-title: Programming With Tables
-linktitle: Programming With Tables
+title: Words Processing with Tables
+linktitle: Words Processing with Tables
 second_title: Aspose.Words Document Processing API
 description: Learn how to program tables in Aspose.Words for .NET. Learn how to create, manipulate, and format tables in your Word documents with step-by-step tutorials and C# code examples.
 type: docs
 weight: 1590
 url: /net/programming-with-tables/
 ---
-Aspose.Words for .NET tutorials on programming with tables will guide you through the various features and techniques for manipulating tables in your Word documents. You will learn how to create, modify and format tables, as well as how to add cells, rows and columns dynamically. These tutorials will provide you with detailed step-by-step instructions, clear code examples, and explanations to help you master table manipulation in Aspose.Words for .NET.
+Aspose.Words for .NET tutorials on Words Processing with tables will guide you through the various features and techniques for manipulating tables in your Word documents. You will learn how to create, modify and format tables, as well as how to add cells, rows and columns dynamically. These tutorials will provide you with detailed step-by-step instructions, clear code examples, and explanations to help you master table manipulation in Aspose.Words for .NET.
 
 Whether you want to adjust table layout, merge cells, add column headings, or sort table data, the tutorials will show you how to accomplish these tasks efficiently with Aspose.Words for .NET. You will also learn how to extract and update table data, add borders, and apply custom styles to cells. The tutorials will give you an in-depth understanding of table manipulation, allowing you to create professional and well-structured Word documents.
 

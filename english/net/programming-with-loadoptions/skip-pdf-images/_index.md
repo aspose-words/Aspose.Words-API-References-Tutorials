@@ -8,7 +8,7 @@ weight: 10
 url: /net/programming-with-loadoptions/skip-pdf-images/
 ---
 
-When working with PDF documents in a C# application, it may be necessary to skip loading PDF images for performance or storage space management reasons. With the Aspose.Words library for .NET, you can easily skip loading PDF images using the PdfLoadOptions load options. In this step-by-step guide, we will walk you through how to use Aspose.Words for .NET C# source code to load a PDF document by skipping the loading of PDF images using the PdfLoadOptions load options.
+When Words Processing with PDF documents in a C# application, it may be necessary to skip loading PDF images for performance or storage space management reasons. With the Aspose.Words library for .NET, you can easily skip loading PDF images using the PdfLoadOptions load options. In this step-by-step guide, we will walk you through how to use Aspose.Words for .NET C# source code to load a PDF document by skipping the loading of PDF images using the PdfLoadOptions load options.
 
 ## Understanding the Aspose.Words library
 

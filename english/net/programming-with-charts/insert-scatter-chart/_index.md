@@ -72,7 +72,7 @@ This completes the implementation of inserting a scatter chart using Aspose.Word
 
 In this tutorial, you have learned how to insert a scatter chart into a Word document using Aspose.Words for .NET. By following the step-by-step guide and using the provided source code, you can create a new document, insert a scatter chart, add series data with X and Y coordinates, and save the document with the chart.
 
-Aspose.Words for .NET provides a comprehensive API for working with charts in Word documents. Scatter charts are useful for visualizing and analyzing data with two numerical variables. With Aspose.Words for .NET, you can easily create scatter charts that represent the relationship between X and Y values and identify patterns or trends in the data.
+Aspose.Words for .NET provides a comprehensive API for Words Processing with charts in Word documents. Scatter charts are useful for visualizing and analyzing data with two numerical variables. With Aspose.Words for .NET, you can easily create scatter charts that represent the relationship between X and Y values and identify patterns or trends in the data.
 
 By using Aspose.Words for .NET, you can automate the process of generating documents with scatter charts, saving time and effort in manual document creation. The library offers a wide range of chart types, including scatter charts, and provides various customization options to tailor the appearance of the chart according to your needs.
 

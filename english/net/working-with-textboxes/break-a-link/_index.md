@@ -8,7 +8,7 @@ weight: 10
 url: /net/working-with-textboxes/break-a-link/
 ---
 
-Aspose.Words for .NET is a powerful library that offers various features for working with Microsoft Word documents programmatically. One of its useful features is the ability to break forward links in a word document. In this tutorial, we'll explore source code in C# that demonstrates how to break forward link in word document using Aspose.Words for .NET.
+Aspose.Words for .NET is a powerful library that offers various features for Words Processing with Microsoft Word documents programmatically. One of its useful features is the ability to break forward links in a word document. In this tutorial, we'll explore source code in C# that demonstrates how to break forward link in word document using Aspose.Words for .NET.
 
 ## Step 1: C# Source Code Preview
 

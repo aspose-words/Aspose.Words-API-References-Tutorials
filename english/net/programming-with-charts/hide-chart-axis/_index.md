@@ -89,7 +89,7 @@ This completes the implementation of hiding the chart axis using Aspose.Words fo
 
 In this tutorial, you have learned how to hide the chart axis in a Word document using Aspose.Words for .NET. By following the step-by-step guide and using the provided source code, you can create a chart, add series data, and hide the chart axis to achieve the desired visual effect.
 
-Aspose.Words for .NET provides a comprehensive API for working with charts in Word documents, allowing you to manipulate various aspects of the chart, including axis properties. By accessing the `AxisY` property of the chart, you can hide the Y-axis to remove it from the chart visualization.
+Aspose.Words for .NET provides a comprehensive API for Words Processing with charts in Word documents, allowing you to manipulate various aspects of the chart, including axis properties. By accessing the `AxisY` property of the chart, you can hide the Y-axis to remove it from the chart visualization.
 
 Hiding the chart axis can be useful when you want to focus on the chart data without the distraction of the axis lines and labels. It provides a cleaner and more minimalist appearance to the chart.
 
@@ -98,7 +98,7 @@ By using Aspose.Words for .NET, you can easily incorporate charting capabilities
 ### FAQs
 
 #### Q1. What is Aspose.Words for .NET?
-Aspose.Words for .NET is a powerful document processing library that enables developers to create, manipulate, and save Word documents programmatically in .NET applications. It provides a wide range of features for working with document elements, including charts and chart axes.
+Aspose.Words for .NET is a powerful document processing library that enables developers to create, manipulate, and save Word documents programmatically in .NET applications. It provides a wide range of features for Words Processing with document elements, including charts and chart axes.
 
 #### Q2. How can I install Aspose.Words for .NET?
 You can install Aspose.Words for .NET by downloading it by using the NuGet package manager in Visual Studio. Simply search for "Aspose.Words" in the NuGet package manager and install it into your project.

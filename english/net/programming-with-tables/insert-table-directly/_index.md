@@ -15,7 +15,7 @@ In this tutorial, we will learn how to directly insert a table into a Word docum
 2. Add a reference to the Aspose.Words for .NET library.
 
 ## Step 2: Creating the Document and Table
-To start working with the array, we need to create a new document and initialize the array. Follow these steps:
+To start Words Processing with the array, we need to create a new document and initialize the array. Follow these steps:
 
 ```csharp
 // Path to your documents directory

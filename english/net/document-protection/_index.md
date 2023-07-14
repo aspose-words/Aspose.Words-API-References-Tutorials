@@ -1,6 +1,6 @@
 ---
-title: Document Protection
-linktitle: Document Protection
+title: Word Document Protection
+linktitle: Word Document Protection
 second_title: Aspose.Words Document Processing API
 description: Learn how to protect Word documents with Aspose.Words for .NET. The tutorials will guide you through the various protection methods, such as locking changes, password protection, restricting access to document elements, and much more.
 type: docs

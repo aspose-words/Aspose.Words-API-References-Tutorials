@@ -1,15 +1,15 @@
 ---
-title: Working with Section
-linktitle: Working with Section
+title: Words Processing with Section
+linktitle: Words Processing with Section
 second_title: Aspose.Words Document Processing API
 description: Learn how to work with sections in Word documents using Aspose.Words for .NET. Step-by-step tutorials with sample code for creating, editing, and formatting sections efficiently.
 type: docs
 weight: 1220
 url: /net/working-with-section/
 ---
-Working with sections offer a valuable resource for developers wanting to master working with sections in Word documents. These tutorials provide step-by-step instructions, sample code, and step-by-step explanations to help you understand and effectively use section-related features in Aspose.Words.
+Words Processing with sections offer a valuable resource for developers wanting to master Words Processing with sections in Word documents. These tutorials provide step-by-step instructions, sample code, and step-by-step explanations to help you understand and effectively use section-related features in Aspose.Words.
 
-The tutorials cover the basics of working with sections, including creating new sections, adding content, changing layout settings, and more. You will learn how to manipulate sections to customize your document structure and create professional layouts.
+The tutorials cover the basics of Words Processing with sections, including creating new sections, adding content, changing layout settings, and more. You will learn how to manipulate sections to customize your document structure and create professional layouts.
 
 The tutorials also focuse on deleting and modifying existing sections. You'll learn how to delete specific sections, rearrange sections, change layout settings, and perform other advanced operations to tailor your Word documents to your specific needs.
 

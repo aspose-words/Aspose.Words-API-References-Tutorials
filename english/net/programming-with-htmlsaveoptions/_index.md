@@ -1,6 +1,6 @@
 ---
-title: Programming With Htmlsaveoptions
-linktitle: Programming With Htmlsaveoptions
+title: Words Processing with Htmlsaveoptions
+linktitle: Words Processing with Htmlsaveoptions
 second_title: Aspose.Words Document Processing API
 description: Learn how to program with HTML save options in Aspose.Words for .NET. Easily convert Word documents to HTML while retaining formatting and content.
 type: docs
@@ -9,7 +9,7 @@ url: /net/programming-with-htmlsaveoptions/
 ---
 Aspose.Words for .NET is a powerful library for manipulating and generating Word documents in .NET applications. The tutorials on the Aspose.Words for .NET reference site provide a valuable resource for developers looking to master this library and fully exploit its functionality.
 
-The "Programming with HtmlSaveOptions" tutorial focuses on using HTML save options in Aspose.Words for .NET. This tutorial guides developers through the various options available to customize the conversion of Word documents to HTML. Detailed code examples are provided to demonstrate the use of these options and achieve desired conversion results.
+The "Words Processing with HtmlSaveOptions" tutorial focuses on using HTML save options in Aspose.Words for .NET. This tutorial guides developers through the various options available to customize the conversion of Word documents to HTML. Detailed code examples are provided to demonstrate the use of these options and achieve desired conversion results.
 
 Whether you want to convert Word documents to HTML for display on the web, embed HTML content into your Word documents, or customize HTML rendering, this tutorial gives you the knowledge and skills to do so. Thanks to detailed explanations and practical examples, you will be able to fully exploit the HTML conversion functionalities of Aspose.Words for .NET in your development projects.
 

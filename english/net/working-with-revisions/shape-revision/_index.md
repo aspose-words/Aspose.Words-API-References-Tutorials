@@ -127,7 +127,7 @@ Assert.False(shapes[1].IsMoveToRevision);
 
 ## Conclusion
 
-In this tutorial, we learned how to make revisions to shapes in a Word document using Aspose.Words for .NET. By following the steps of creating the document, enabling revision tracking, checking the revisions associated with each shape, and checking the revisions for moving the shapes, we were able to manage the revisions successfully. Aspose.Words for .NET offers a powerful API for working with reviews and forms in Word documents.
+In this tutorial, we learned how to make revisions to shapes in a Word document using Aspose.Words for .NET. By following the steps of creating the document, enabling revision tracking, checking the revisions associated with each shape, and checking the revisions for moving the shapes, we were able to manage the revisions successfully. Aspose.Words for .NET offers a powerful API for Words Processing with reviews and forms in Word documents.
 
 ### FAQ's
 

@@ -103,7 +103,7 @@ This completes the implementation of formatting the number of data labels in a c
 
 In this tutorial, you have learned how to format the number of data labels in a chart using Aspose.Words for .NET. By following the step-by-step guide and using the provided source code, you can create a chart, add series data, and customize the number format of data labels according to your requirements.
 
-Aspose.Words for .NET provides a comprehensive API for working with charts in Word documents, allowing you to manipulate various aspects of the chart, including data labels. By accessing the `DataLabels` collection associated with a series, you can customize the number format of individual data labels.
+Aspose.Words for .NET provides a comprehensive API for Words Processing with charts in Word documents, allowing you to manipulate various aspects of the chart, including data labels. By accessing the `DataLabels` collection associated with a series, you can customize the number format of individual data labels.
 
 The API allows you to control the display of values, set different number formats for each data label, and link the number format to a source cell. This flexibility enables you to present numeric data in charts with the desired formatting, such as currency symbols, date formats, and percentage values.
 
@@ -112,7 +112,7 @@ By using Aspose.Words for .NET, you can incorporate powerful charting capabiliti
 ### FAQs
 
 #### Q1. What is Aspose.Words for .NET?
-Aspose.Words for .NET is a feature-rich document processing library that enables developers to create, manipulate, and save Word documents programmatically in .NET applications. It provides a wide range of features for working with document elements, including charts and data labels.
+Aspose.Words for .NET is a feature-rich document processing library that enables developers to create, manipulate, and save Word documents programmatically in .NET applications. It provides a wide range of features for Words Processing with document elements, including charts and data labels.
 
 #### Q2. How can I install Aspose.Words for .NET?
 You can install Aspose.Words for .NET by downloading it by using the NuGet package manager in Visual Studio. Simply search for "Aspose.Words" in the NuGet package manager and install it into your project.

@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 
 In this tutorial, you have learned how to insert a bubble chart into a Word document using Aspose.Words for .NET. By following the step-by-step guide and using the provided source code, you can create a new document, insert a bubble chart, add series data, and save the document with the chart.
 
-Aspose.Words for .NET provides a powerful API for working with charts in Word documents. Bubble charts are ideal for visualizing three-dimensional data, where each data point is represented by a bubble with X and Y coordinates and a size value. With Aspose.Words for .NET, you can create dynamic and informative bubble charts that enhance the visual representation of your data.
+Aspose.Words for .NET provides a powerful API for Words Processing with charts in Word documents. Bubble charts are ideal for visualizing three-dimensional data, where each data point is represented by a bubble with X and Y coordinates and a size value. With Aspose.Words for .NET, you can create dynamic and informative bubble charts that enhance the visual representation of your data.
 
 By using Aspose.Words for .NET, you can automate the process of generating documents with bubble charts, saving time and effort in manual document creation. The library offers a wide range of chart types and customization options, allowing you to create visually appealing and data-rich charts in your Word documents.
 

@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ```
 
 ## Conclusion
-In this tutorial, we learned how to set multiple font folders when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily specify multiple font folders to use when rendering your documents. Aspose.Words offers a powerful and flexible API for working with fonts in your documents. With this knowledge, you can control and customize the font sources used when rendering your documents to your specific needs.
+In this tutorial, we learned how to set multiple font folders when rendering a document using Aspose.Words for .NET. By following this step-by-step guide, you can easily specify multiple font folders to use when rendering your documents. Aspose.Words offers a powerful and flexible API for Words Processing with fonts in your documents. With this knowledge, you can control and customize the font sources used when rendering your documents to your specific needs.
 
 ### FAQ's
 

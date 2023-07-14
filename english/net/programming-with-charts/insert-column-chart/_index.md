@@ -72,7 +72,7 @@ This completes the implementation of inserting a column chart using Aspose.Words
 
 In this tutorial, you have learned how to insert a column chart into a Word document using Aspose.Words for .NET. By following the step-by-step guide and using the provided source code, you can create a new document, insert a column chart, add series data, and save the document with the chart.
 
-Aspose.Words for .NET provides a powerful API for working with charts in Word documents. Column charts are commonly used to display and compare data across different categories or groups. With Aspose.Words for .NET, you can easily create column charts that effectively visualize your data and provide valuable insights.
+Aspose.Words for .NET provides a powerful API for Words Processing with charts in Word documents. Column charts are commonly used to display and compare data across different categories or groups. With Aspose.Words for .NET, you can easily create column charts that effectively visualize your data and provide valuable insights.
 
 By using Aspose.Words for .NET, you can automate the process of generating documents with column charts, saving time and effort in manual document creation. The library offers a wide range of chart types and customization options, allowing you to create visually appealing and data-rich charts in your Word documents.
 

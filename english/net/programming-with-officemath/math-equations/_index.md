@@ -12,7 +12,7 @@ Aspose.Words for .NET is a powerful library for creating, editing, and manipulat
 
 ## Understanding the Aspose.Words library
 
-Before diving into the code, it's important to understand the Aspose.Words library for .NET. Aspose.Words is a popular library that makes working with Word documents easy and efficient. It offers a wide range of features for creating, editing and manipulating Word documents, including support for mathematical equations.
+Before diving into the code, it's important to understand the Aspose.Words library for .NET. Aspose.Words is a popular library that makes Words Processing with Word documents easy and efficient. It offers a wide range of features for creating, editing and manipulating Word documents, including support for mathematical equations.
 
 ## Loading the Word document
 
@@ -86,5 +86,5 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 
 ## Conclusion
 
-In this guide, we've covered how to use Aspose.Words for .NET to add math equations to a Word document using the provided C# source code. By following the steps provided, you can easily add math equations to your Word documents in your C# application. Aspose.Words offers tremendous flexibility and power for working with mathematical equations, allowing you to create professional, well-formatted documents.
+In this guide, we've covered how to use Aspose.Words for .NET to add math equations to a Word document using the provided C# source code. By following the steps provided, you can easily add math equations to your Word documents in your C# application. Aspose.Words offers tremendous flexibility and power for Words Processing with mathematical equations, allowing you to create professional, well-formatted documents.
 

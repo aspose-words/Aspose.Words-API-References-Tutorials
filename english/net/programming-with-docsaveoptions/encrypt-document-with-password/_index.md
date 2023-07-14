@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
-Document security is essential when working with files in a C# application. With the Aspose.Words library for .NET, you can easily protect your documents by encrypting them with a password. In this step-by-step guide, we will walk you through how to use Aspose.Words for .NET C# source code to encrypt a document using the DocSaveOptions save options.
+Document security is essential when Words Processing with files in a C# application. With the Aspose.Words library for .NET, you can easily protect your documents by encrypting them with a password. In this step-by-step guide, we will walk you through how to use Aspose.Words for .NET C# source code to encrypt a document using the DocSaveOptions save options.
 
 ## Understanding the Aspose.Words library
 

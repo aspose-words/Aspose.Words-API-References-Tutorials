@@ -79,6 +79,6 @@ builder.Write(" Text immediately after the field.");
 
 ## Conclusion
 
-we have explored the Move To Merge Field feature of Aspose.Words for .NET. We learned how to navigate to merge fields within a document using the DocumentBuilder class and perform operations on them. This feature is useful when programmatically working with merge
+we have explored the Move To Merge Field feature of Aspose.Words for .NET. We learned how to navigate to merge fields within a document using the DocumentBuilder class and perform operations on them. This feature is useful when programmatically Words Processing with merge
 
 

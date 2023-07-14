@@ -17,7 +17,7 @@ Before we begin, make sure you have the following prerequisites in place:
 - A valid license file for Aspose.Words. 
 
 ## Step 1: Import the Aspose.Words Namespace
-To get started, you need to import the Aspose.Words namespace in your C# code. This namespace provides all the classes and methods required for working with Word documents.
+To get started, you need to import the Aspose.Words namespace in your C# code. This namespace provides all the classes and methods required for Words Processing with Word documents.
 
 ```csharp
 using Aspose.Words;

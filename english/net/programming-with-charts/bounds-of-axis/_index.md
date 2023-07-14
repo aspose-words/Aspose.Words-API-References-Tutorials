@@ -14,7 +14,7 @@ This tutorial explains how to set the bounds of an axis in a chart using Aspose.
 To follow this tutorial, you need to have the following:
 
 - Aspose.Words for .NET library installed.
-- Basic knowledge of C# and working with Word documents.
+- Basic knowledge of C# and Words Processing with Word documents.
 
 ## Step 1: Set up the Document Directory
 Start by setting up the path to your document directory. Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to the directory where you want to save the document.
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 That's it! You have successfully set the bounds of an axis in a chart using Aspose.Words for .NET.
 
 ## Conclusion
-In this tutorial, you have learned how to set the bounds of an axis in a chart using Aspose.Words for .NET. By following the step-by-step guide, you can insert and configure a chart, add series data, and define the minimum and maximum values for the axis scaling. Aspose.Words for .NET provides a powerful and flexible API for working with Word documents, allowing you to create dynamic and visually appealing charts with ease.
+In this tutorial, you have learned how to set the bounds of an axis in a chart using Aspose.Words for .NET. By following the step-by-step guide, you can insert and configure a chart, add series data, and define the minimum and maximum values for the axis scaling. Aspose.Words for .NET provides a powerful and flexible API for Words Processing with Word documents, allowing you to create dynamic and visually appealing charts with ease.
 
 
 ### FAQs
@@ -101,5 +101,5 @@ To install Aspose.Words for .NET, you can use NuGet package manager in Visual St
 No, Aspose.Words for .NET is specifically designed for .NET applications. It works with programming languages such as C# and VB.NET.
 
 #### Q4. Are there any other prerequisites for using Aspose.Words for .NET?
-Besides installing the Aspose.Words for .NET library, you should have a basic knowledge of C# programming and working with Word documents. Familiarity with the .NET framework will also be helpful.
+Besides installing the Aspose.Words for .NET library, you should have a basic knowledge of C# programming and Words Processing with Word documents. Familiarity with the .NET framework will also be helpful.
 

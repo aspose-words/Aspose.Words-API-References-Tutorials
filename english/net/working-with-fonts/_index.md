@@ -1,18 +1,18 @@
 ---
-title: Working with Fonts
-linktitle: Working with Fonts
+title: Words Processing with Fonts
+linktitle: Words Processing with Fonts
 second_title: Aspose.Words Document Processing API
-description: Working with Fonts tutorials teach you how to work with fonts in Word with Aspose.Words for .NET. Formatting, substitutions, notifications, and more.
+description: Words Processing with Fonts tutorials teach you how to work with fonts in Word with Aspose.Words for .NET. Formatting, substitutions, notifications, and more.
 type: docs
 weight: 420
 url: /net/working-with-fonts/
 ---
 
-Working with Fonts tutorials guide you through various aspects of working with fonts, allowing you to perform operations such as changing font formatting, loading fonts from specific directories, managing substitutions fonts and more.
+Words Processing with Fonts tutorials guide you through various aspects of Words Processing with fonts, allowing you to perform operations such as changing font formatting, loading fonts from specific directories, managing substitutions fonts and more.
 
 The tutorials provide you with detailed step-by-step explanations for each feature, along with C# language source code to illustrate the concepts. You will learn how to use classes and methods from the Aspose.Words Library for .NET to perform specific font-related tasks in your Word documents.
 
-Whether you want to format text with different fonts, set font substitution rules, load fonts from specific directories, or receive font notifications, the "Working with Fonts" tutorials will provide you with the knowledge to accomplish these tasks. with ease.
+Whether you want to format text with different fonts, set font substitution rules, load fonts from specific directories, or receive font notifications, the "Words Processing with Fonts" tutorials will provide you with the knowledge to accomplish these tasks. with ease.
 
  ## Tutorials
 | Title | Description |

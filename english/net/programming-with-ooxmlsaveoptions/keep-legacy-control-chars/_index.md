@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 In this tutorial, we explored the functionality of preserving legacy control characters when saving a document using Aspose.Words for .NET. We have learned how to preserve those special characters that may be important for proper document formatting or display.
 
-Preserving legacy control characters is especially useful when working with documents that use older or specific features, such as special control characters. By enabling the `KeepLegacyControlChars` option when saving the document, you ensure that these characters are preserved.
+Preserving legacy control characters is especially useful when Words Processing with documents that use older or specific features, such as special control characters. By enabling the `KeepLegacyControlChars` option when saving the document, you ensure that these characters are preserved.
 
 Aspose.Words for .NET offers a range of flexible and powerful backup options to meet your document manipulation needs. By using the appropriate options, you can customize the backup process to preserve the specific characteristics of your documents.
 

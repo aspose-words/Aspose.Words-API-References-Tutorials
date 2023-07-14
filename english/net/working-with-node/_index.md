@@ -1,6 +1,6 @@
 ---
-title: Working with Node
-linktitle: Working with Node
+title: Words Processing with Node
+linktitle: Words Processing with Node
 second_title: Aspose.Words Document Processing API
 description: Learn how to work with nodes in Word documents using Aspose.Words for .NET. Detailed tutorials with code examples.
 type: docs

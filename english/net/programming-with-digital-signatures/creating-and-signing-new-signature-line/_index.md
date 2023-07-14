@@ -88,7 +88,7 @@ By following these steps, you will be able to easily create and sign a new signa
 
 ## Conclusion
 
-In this tutorial, we learned how to create and sign a new signature line in a Word document using Aspose.Words for .NET. By following the steps provided, you can easily insert a signature line into your document, customize its options, and sign the document using a digital certificate. Adding signature lines and digital signatures to your documents enhances their authenticity and integrity, making them more secure and trustworthy. Aspose.Words for .NET provides a powerful API for working with signatures and digital certificates in Word documents, allowing you to automate the signing process and ensure the validity of your documents.
+In this tutorial, we learned how to create and sign a new signature line in a Word document using Aspose.Words for .NET. By following the steps provided, you can easily insert a signature line into your document, customize its options, and sign the document using a digital certificate. Adding signature lines and digital signatures to your documents enhances their authenticity and integrity, making them more secure and trustworthy. Aspose.Words for .NET provides a powerful API for Words Processing with signatures and digital certificates in Word documents, allowing you to automate the signing process and ensure the validity of your documents.
 
 ### FAQ's
 

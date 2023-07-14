@@ -8,7 +8,7 @@ weight: 10
 url: /net/programming-with-loadoptions/set-ms-word-version/
 ---
 
-When working with Word documents in a C# application, it may be necessary to specify the version of Microsoft Word to use when loading the document. With the Aspose.Words library for .NET, you can easily set which version of MS Word to use using LoadOptions. In this step-by-step guide, we will walk you through how to use Aspose.Words for .NET C# source code to load a document with a specified version of MS Word using LoadOptions load options.
+When Words Processing with Word documents in a C# application, it may be necessary to specify the version of Microsoft Word to use when loading the document. With the Aspose.Words library for .NET, you can easily set which version of MS Word to use using LoadOptions. In this step-by-step guide, we will walk you through how to use Aspose.Words for .NET C# source code to load a document with a specified version of MS Word using LoadOptions load options.
 
 ## Understanding the Aspose.Words library
 

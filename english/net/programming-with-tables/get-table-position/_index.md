@@ -15,7 +15,7 @@ In this tutorial, we are going to learn how to get the position of a table in a 
 2. Add a reference to the Aspose.Words for .NET library.
 
 ## Step 2: Loading the document and accessing the table
-To start working with the table, we need to load the document that contains it and access it. Follow these steps:
+To start Words Processing with the table, we need to load the document that contains it and access it. Follow these steps:
 
 ```csharp
 // Path to your documents directory

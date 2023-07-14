@@ -14,7 +14,7 @@ This tutorial explains how to add date time values to the axis of a chart using 
 To follow this tutorial, you need to have the following:
 
 - Aspose.Words for .NET library installed.
-- Basic knowledge of C# and working with Word documents.
+- Basic knowledge of C# and Words Processing with Word documents.
 
 ## Step 1: Set up the Document Directory
 Start by setting up the path to your document directory. Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to the directory where you want to save the document.
@@ -105,7 +105,7 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 This example code creates a new Word document, inserts a column chart with date time values on the X-axis, and saves the document to the specified directory.
 
 ## Conclusion
-In this tutorial, you have learned how to add date time values to the axis of a chart using Aspose.Words for .NET. By following the step-by-step guide, you can create a chart, add date time values to the series, and configure the axis to display the date time values accurately. Aspose.Words for .NET provides a powerful set of features for working with charts in Word documents, allowing you to represent and visualize data with date time values effectively.
+In this tutorial, you have learned how to add date time values to the axis of a chart using Aspose.Words for .NET. By following the step-by-step guide, you can create a chart, add date time values to the series, and configure the axis to display the date time values accurately. Aspose.Words for .NET provides a powerful set of features for Words Processing with charts in Word documents, allowing you to represent and visualize data with date time values effectively.
 
 ### FAQs
 

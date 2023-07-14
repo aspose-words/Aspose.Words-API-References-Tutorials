@@ -14,7 +14,7 @@ This tutorial explains how to detect Smart Art shapes in a Word document using A
 To follow this tutorial, you need to have the following:
 
 - Aspose.Words for .NET library installed.
-- Basic knowledge of C# and working with Word documents.
+- Basic knowledge of C# and Words Processing with Word documents.
 
 ## Step 1: Set up the Document Directory
 Start by setting up the path to your document directory. Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to the directory where your document is located.

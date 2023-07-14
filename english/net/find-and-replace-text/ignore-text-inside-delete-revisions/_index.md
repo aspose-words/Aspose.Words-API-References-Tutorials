@@ -8,11 +8,11 @@ weight: 10
 url: /net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 
-In this article, we will explore the C# source code above to understand how to use the "Ignore Text Inside Delete Revisions" feature in the Aspose.Words for .NET library. This feature is useful when we want to ignore text inside deletion revisions when working with documents.
+In this article, we will explore the C# source code above to understand how to use the "Ignore Text Inside Delete Revisions" feature in the Aspose.Words for .NET library. This feature is useful when we want to ignore text inside deletion revisions when Words Processing with documents.
 
 ## Overview of the Aspose.Words for .NET library
 
-Before diving into the code details, let me briefly introduce the Aspose.Words for .NET library. It is a powerful library that allows creating, modifying and converting Word documents in .NET applications. It offers many advanced features for working with documents, including revision management.
+Before diving into the code details, let me briefly introduce the Aspose.Words for .NET library. It is a powerful library that allows creating, modifying and converting Word documents in .NET applications. It offers many advanced features for Words Processing with documents, including revision management.
 
 ## Understanding the "Ignore Text Inside Delete Revisions" feature
 
@@ -132,7 +132,7 @@ A: The "Ignore Text Inside Delete Revisions" function in Aspose.Words for .NET a
 
 #### Q: What is Aspose.Words for .NET?
 
-A: Aspose.Words for .NET is a powerful library for creating, editing and converting Word documents into .NET applications. It offers many advanced features for working with documents, including revision management.
+A: Aspose.Words for .NET is a powerful library for creating, editing and converting Word documents into .NET applications. It offers many advanced features for Words Processing with documents, including revision management.
 
 #### Q: How to create a new document in Aspose.Words for .NET?
 

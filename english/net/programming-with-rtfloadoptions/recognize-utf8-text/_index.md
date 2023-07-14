@@ -67,4 +67,4 @@ In this tutorial, we explored the Utf-8 text recognition feature with RTF loadin
 
 This feature is essential to ensure the correct display of Utf-8 characters in your RTF documents. By configuring the appropriate loading options, Aspose.Words is able to correctly recognize and process these characters, helping to preserve the integrity and quality of the text.
 
-Utf-8 text recognition is especially important when working with specific languages and character sets that require Utf-8 encoding support. Thanks to Aspose.Words for .NET, you can easily manipulate RTF documents containing Utf-8 characters without risk of loss or corruption.
+Utf-8 text recognition is especially important when Words Processing with specific languages and character sets that require Utf-8 encoding support. Thanks to Aspose.Words for .NET, you can easily manipulate RTF documents containing Utf-8 characters without risk of loss or corruption.
