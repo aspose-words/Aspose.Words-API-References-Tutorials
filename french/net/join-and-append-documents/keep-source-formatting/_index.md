@@ -1,7 +1,7 @@
 ---
 title: Conserver la mise en forme source
 linktitle: Conserver la mise en forme source
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à ajouter un document source à un document de destination tout en préservant la mise en forme d'origine à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## Étape 3 : Ajouter le document source au document de destination
 
- Utilisez le`AppendDocument` méthode du document de destination pour ajouter le document source. Passer`ImportFormatMode.KeepSourceFormatting` comme mode de format d'importation pour conserver le format d'origine du document source.
+ Utilisez le`AppendDocument`méthode du document de destination pour ajouter le document source. Passer`ImportFormatMode.KeepSourceFormatting` comme mode de format d'importation pour conserver le format d'origine du document source.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -42,7 +42,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Étape 4 : Enregistrer le document modifié
 
-Enregistrez le document modifié à l'aide de la`Save` méthode de la`Document` objet.
+ Enregistrez le document modifié à l'aide de la`Save` méthode de la`Document` objet.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
@@ -53,7 +53,7 @@ Ceci termine la mise en œuvre de l'ajout d'un document source à un document de
 ### Exemple de code source pour Keep Source Formatting en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document dstDoc = new Document();

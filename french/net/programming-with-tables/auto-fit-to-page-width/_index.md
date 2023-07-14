@@ -1,7 +1,7 @@
 ---
 title: Ajustement automatique à la largeur de la page
 linktitle: Ajustement automatique à la largeur de la page
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à ajuster automatiquement un tableau à la largeur de la page dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Dans ce didacticiel, nous apprendrons à utiliser Aspose.Words pour .NET pour aj
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
 ## Étape 2 : Création et configuration du document
-Pour commencer à travailler avec le tableau, nous devons créer un document et configurer le générateur de documents. Suivez ces étapes:
+Pour démarrer le traitement de texte avec le tableau, nous devons créer un document et configurer le générateur de documents. Suivez ces étapes:
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Créer le document et le générateur de documents
+// Créer le document et le générateur de documents
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -58,7 +58,7 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ### Exemple de code source pour l'ajustement automatique à la largeur de la page à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

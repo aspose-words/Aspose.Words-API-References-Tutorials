@@ -1,7 +1,7 @@
 ---
 title: Ajouter le contenu du mot de la section
 linktitle: Ajouter le contenu du mot de la section
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Dans ce didacticiel, découvrez comment ajouter du contenu textuel à des sections spécifiques d'un document Word à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10

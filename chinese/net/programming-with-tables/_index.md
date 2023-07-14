@@ -1,13 +1,13 @@
 ---
-title: 使用表格编程
-linktitle: 使用表格编程
-second_title: Aspose.Words for .NET API 参考
+title: 使用表格进行文字处理
+linktitle: 使用表格进行文字处理
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在 Aspose.Words for .NET 中对表格进行编程。通过分步教程和 C# 代码示例，了解如何在 Word 文档中创建、操作表格并设置表格格式。
 type: docs
 weight: 1590
 url: /zh/net/programming-with-tables/
 ---
-有关表格编程的 Aspose.Words for .NET 教程将指导您了解在 Word 文档中操作表格的各种功能和技术。您将学习如何创建、修改和格式化表格，以及如何动态添加单元格、行和列。这些教程将为您提供详细的分步说明、清晰的代码示例和说明，帮助您掌握 Aspose.Words for .NET 中的表格操作。
+有关表格文字处理的 Aspose.Words for .NET 教程将指导您了解在 Word 文档中操作表格的各种功能和技术。您将学习如何创建、修改和格式化表格，以及如何动态添加单元格、行和列。这些教程将为您提供详细的分步说明、清晰的代码示例和说明，帮助您掌握 Aspose.Words for .NET 中的表格操作。
 
 无论您想要调整表格布局、合并单元格、添加列标题还是对表格数据进行排序，教程都将向您展示如何使用 Aspose.Words for .NET 高效地完成这些任务。您还将学习如何提取和更新表格数据、添加边框以及将自定义样式应用于单元格。这些教程将使您深入了解表格操作，使您能够创建专业且结构良好的 Word 文档。
 

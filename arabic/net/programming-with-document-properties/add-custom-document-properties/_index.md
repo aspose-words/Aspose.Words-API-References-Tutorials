@@ -1,7 +1,7 @@
 ---
 title: أضف خصائص المستند المخصصة
 linktitle: أضف خصائص المستند المخصصة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لإضافة خصائص مخصصة إلى مستند باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

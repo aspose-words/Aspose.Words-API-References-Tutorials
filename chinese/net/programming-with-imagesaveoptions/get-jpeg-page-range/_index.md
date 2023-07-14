@@ -1,7 +1,7 @@
 ---
 title: 获取 Jpeg 页面范围
 linktitle: 获取 Jpeg 页面范围
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 获取一系列 JPEG 页面。提取自定义图像的完整教程。
 type: docs
 weight: 10

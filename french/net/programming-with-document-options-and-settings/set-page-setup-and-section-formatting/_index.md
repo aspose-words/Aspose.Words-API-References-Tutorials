@@ -1,7 +1,7 @@
 ---
 title: Définir la mise en page et le formatage des sections
 linktitle: Définir la mise en page et le formatage des sections
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour configurer la mise en page et la mise en forme des sections d'un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10

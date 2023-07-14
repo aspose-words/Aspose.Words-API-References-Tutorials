@@ -1,7 +1,7 @@
 ---
 title: تجسيد تأثيرات 3D DML 3D في مستند PDF
 linktitle: تجسيد تأثيرات 3D DML 3D في مستند PDF
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تمكين عرض تأثيرات DML ثلاثية الأبعاد عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOp
 
  قم بإنشاء مثيل لـ`Document` فئة تحدد المسار إلى مستند Word.
 
- قم بإنشاء مثيل لـ`PdfSaveOptions` فئة وضبط`Dml3DEffectsRenderingMode` الملكية ل`Dml3DEffectsRenderingMode.Advanced` لتمكين العرض المتقدم لتأثيرات 3D DML.
+ قم بإنشاء مثيل لـ`PdfSaveOptions`فئة وضبط`Dml3DEffectsRenderingMode` ملكية ل`Dml3DEffectsRenderingMode.Advanced` لتمكين العرض المتقدم لتأثيرات 3D DML.
 
  استخدم ال`Save` طريقة`Document`class لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ.
 

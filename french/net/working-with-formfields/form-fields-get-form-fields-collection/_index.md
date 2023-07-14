@@ -1,7 +1,7 @@
 ---
 title: Champs de formulaire Obtenir la collection de champs de formulaire
 linktitle: Champs de formulaire Obtenir la collection de champs de formulaire
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à récupérer et à manipuler la collection de champs de formulaire dans des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Étape 2 : Récupération de la collection de champs de formulaire
 
- Ensuite, accédez au`FormFields` propriété de la`Range` objet dans le document pour récupérer la collection de champs de formulaire :
+ Ensuite, accédez au`FormFields`propriété de la`Range` objet dans le document pour récupérer la collection de champs de formulaire :
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;

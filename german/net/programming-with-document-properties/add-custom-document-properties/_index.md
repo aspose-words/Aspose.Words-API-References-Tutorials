@@ -1,7 +1,7 @@
 ---
 title: Fügen Sie benutzerdefinierte Dokumenteigenschaften hinzu
 linktitle: Fügen Sie benutzerdefinierte Dokumenteigenschaften hinzu
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Hinzufügen benutzerdefinierter Eigenschaften zu einem Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10

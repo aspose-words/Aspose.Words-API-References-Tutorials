@@ -1,7 +1,7 @@
 ---
 title: 转换正文中的字段
 linktitle: 转换正文中的字段
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将页面字段转换为 Word 文档正文中的文本。
 type: docs
 weight: 10

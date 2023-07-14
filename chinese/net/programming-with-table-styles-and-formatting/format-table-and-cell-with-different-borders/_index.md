@@ -1,7 +1,7 @@
 ---
 title: 设置具有不同边框的表格和单元格格式
 linktitle: 设置具有不同边框的表格和单元格格式
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 设置具有不同边框的表格和单元格格式的分步指南。
 type: docs
 weight: 10

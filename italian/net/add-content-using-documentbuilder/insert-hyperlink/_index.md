@@ -1,7 +1,7 @@
 ---
 title: Inserisci collegamento ipertestuale
 linktitle: Inserisci collegamento ipertestuale
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire collegamenti ipertestuali nei documenti di Word utilizzando Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10

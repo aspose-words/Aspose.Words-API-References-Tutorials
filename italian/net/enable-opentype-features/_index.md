@@ -1,7 +1,7 @@
 ---
 title: Abilita le funzionalità OpenType
 linktitle: Abilita le funzionalità OpenType
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come abilitare le funzionalità OpenType nei documenti di Word con Aspose.Words per .NET. I tutorial ti guideranno attraverso i passaggi per abilitare le funzionalità avanzate dei font OpenType.
 type: docs
 weight: 40

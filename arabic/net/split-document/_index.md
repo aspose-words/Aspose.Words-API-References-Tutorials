@@ -1,8 +1,8 @@
 ---
-title: انقسام المستند
-linktitle: انقسام المستند
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية تقسيم مستند Word بشكل فعال إلى أجزاء منفصلة باستخدام Aspose.Words for .NET. اتبع البرامج التعليمية خطوة بخطوة واستخدم عينات كود C # لتعلم تقنيات مختلفة لتقسيم المستندات.
+title: تقسيم مستند Word
+linktitle: تقسيم مستند Word
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
+description: تعرف على كيفية تقسيم مستند Word إلى أجزاء منفصلة باستخدام Aspose.Words for .NET. يوفر هذا المورد الشامل دروسًا تفصيلية وأمثلة على التعليمات البرمجية المصدر ونصائح عملية لتقسيم المستندات وفقًا للظروف المختلفة.
 type: docs
 weight: 1450
 url: /ar/net/split-document/

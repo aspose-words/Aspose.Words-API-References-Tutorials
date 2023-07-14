@@ -1,14 +1,14 @@
 ---
-title: 显示隐藏书签
-linktitle: 显示隐藏书签
-second_title: Aspose.Words for .NET API 参考
-description: 了解如何使用 Aspose.Words for .NET 在文档中显示或隐藏特定书签。
+title: 在 Word 文档中显示隐藏书签
+linktitle: 在 Word 文档中显示隐藏书签
+second_title: Aspose.Words 文档处理 API
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中显示或隐藏特定书签。
 type: docs
 weight: 10
 url: /zh/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
 
-在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的显示隐藏书签功能。此功能允许您显示或隐藏文档中的特定书签。
+在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的显示隐藏书签功能。此功能允许您显示或隐藏 Word 文档中的特定书签。
 
 ## 先决条件
 
@@ -59,3 +59,29 @@ doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ## 结论
 
 在本文中，我们探索了 C# 源代码，以了解如何使用 Aspose.Words for .NET 的显示隐藏书签功能。我们按照分步指南来显示或隐藏文档中的特定书签。
+
+### 在 Word 文档中显示隐藏书签的常见问题解答
+
+#### 问：我可以在同一文档中显示或隐藏多个书签吗？
+
+答：是的，您可以通过对要处理的每个书签重复步骤 2 和 3，在同一文档中显示或隐藏多个书签。
+
+#### 问：提供的代码是否适用于其他 Word 文档格式，例如 .doc 或 .docm？
+
+答：是的，所提供的代码适用于 Aspose.Words 支持的各种 Word 文档格式，例如 .doc 和 .docm。加载和保存文档时请确保使用正确的文件名和路径。
+
+#### 问：如何再次显示隐藏的书签？
+
+ A：要再次显示隐藏的书签，您需要使用相同的`ShowHideBookmarkedContent`函数传递值`true`布尔参数，指示是否显示或隐藏书签。
+
+#### 问：我可以使用条件根据文档中的合并字段值显示或隐藏书签吗？
+
+答：是的，您可以使用条件和合并字段值来确定是否应显示或隐藏书签。您可以自定义以下代码`ShowHideBookmarkedContent`函数考虑适当的条件和值。
+
+#### 问：如何使用 Aspose.Words for .NET 删除 Word 文档中的书签？
+
+答：要使用 Aspose.Words for .NET 删除 Word 文档中的书签，您可以使用`RemoveBookmarks`的方法`Document`班级。这是示例代码：
+
+```csharp
+doc.RemoveBookmarks("BookmarkName");
+```

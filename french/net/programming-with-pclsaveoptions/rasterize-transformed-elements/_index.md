@@ -1,7 +1,7 @@
 ---
 title: Pixelliser les éléments transformés
 linktitle: Pixelliser les éléments transformés
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment désactiver la rastérisation des éléments transformés lors de la conversion au format PCL avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Aspose.Words pour .NET est une bibliothèque puissante pour créer, manipuler et
 
 ## Comprendre la bibliothèque Aspose.Words
 
-Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque populaire qui rend le travail avec les documents Word simple et efficace. Il offre un large éventail de fonctionnalités pour la création, l'édition et la conversion de documents Word, y compris la prise en charge de la pixellisation des éléments transformés lors de la conversion.
+Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque populaire qui rend le traitement de mots avec des documents Word simple et efficace. Il offre un large éventail de fonctionnalités pour la création, l'édition et la conversion de documents Word, y compris la prise en charge de la pixellisation des éléments transformés lors de la conversion.
 
 ## Chargement du document Word
 

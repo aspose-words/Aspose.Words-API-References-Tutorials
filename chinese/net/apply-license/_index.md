@@ -1,7 +1,7 @@
 ---
 title: 申请许可证
 linktitle: 申请许可证
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 获取在 .NET 项目中应用 Aspose.Words 许可证的分步说明。按照以下步骤启用 Aspose.Words 库的全部功能。
 type: docs
 weight: 10

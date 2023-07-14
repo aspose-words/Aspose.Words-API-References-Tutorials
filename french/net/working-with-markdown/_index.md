@@ -1,14 +1,14 @@
 ---
-title: Travailler avec Markdown
-linktitle: Travailler avec Markdown
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Traitement de texte avec Markdown
+linktitle: Traitement de texte avec Markdown
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser la syntaxe Markdown dans les documents Word à l'aide de Aspose.Words pour .NET grâce à ces didacticiels pas à pas et à ces exemples pratiques.
 type: docs
 weight: 810
 url: /fr/net/working-with-markdown/
 ---
 
-Travailler avec Markdown fournit une ressource complète pour apprendre à travailler avec le format Markdown à l'aide de la bibliothèque Aspose.Words pour .NET. Les didacticiels fournissent des explications détaillées, un code source complet et des exemples pratiques pour manipuler et générer des documents Markdown, y compris l'importation de fichiers Markdown, la conversion de documents Word en Markdown, la personnalisation du style Markdown, l'exportation au format PDF, etc. d'autres formats et bien plus encore. Cette ressource est essentielle pour les développeurs qui souhaitent maîtriser l'utilisation de Markdown avec Aspose.Words pour .NET et tirer pleinement parti de ses fonctionnalités avancées pour la génération de contenu textuel.
+Le traitement de mots avec Markdown fournit une ressource complète pour apprendre à travailler avec le format Markdown à l'aide de la bibliothèque Aspose.Words pour .NET. Les didacticiels fournissent des explications détaillées, un code source complet et des exemples pratiques pour manipuler et générer des documents Markdown, y compris l'importation de fichiers Markdown, la conversion de documents Word en Markdown, la personnalisation du style Markdown, l'exportation au format PDF, etc. d'autres formats et bien plus encore. Cette ressource est essentielle pour les développeurs qui souhaitent maîtriser l'utilisation de Markdown avec Aspose.Words pour .NET et tirer pleinement parti de ses fonctionnalités avancées pour la génération de contenu textuel.
 
  ## Tutoriels
 | Titre | Description |

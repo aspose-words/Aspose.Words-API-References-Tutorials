@@ -1,7 +1,7 @@
 ---
 title: Définir les options de contour dans un document PDF
 linktitle: Définir les options de contour dans un document PDF
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour définir les options de plan dans un document PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10

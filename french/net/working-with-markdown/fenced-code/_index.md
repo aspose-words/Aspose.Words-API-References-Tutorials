@@ -1,7 +1,7 @@
 ---
 title: Code clôturé
 linktitle: Code clôturé
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser la fonctionnalité de code clôturé avec Aspose.Words for .NET Guide étape par étape.
 type: docs
 weight: 10

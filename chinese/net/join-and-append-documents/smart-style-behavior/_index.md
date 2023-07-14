@@ -1,7 +1,7 @@
 ---
 title: 聪明的风格行为
 linktitle: 聪明的风格行为
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在使用 Aspose.Words for .NET 加入和附加 Word 文档时保持智能样式行为。
 type: docs
 weight: 10

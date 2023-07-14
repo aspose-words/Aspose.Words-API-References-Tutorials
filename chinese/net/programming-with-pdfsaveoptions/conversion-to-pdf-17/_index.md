@@ -1,7 +1,7 @@
 ---
 title: 将Word文档转换为PDF 1.7
 linktitle: 将Word文档转换为PDF 1.7
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将 Word 文档转换为 PDF 1.7。
 type: docs
 weight: 10

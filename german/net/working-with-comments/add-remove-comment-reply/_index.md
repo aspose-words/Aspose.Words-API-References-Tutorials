@@ -1,7 +1,7 @@
 ---
 title: Kommentarantwort hinzufügen und entfernen
 linktitle: Kommentarantwort hinzufügen und entfernen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Kommentarantworten in Word-Dokumenten hinzufügen und entfernen.
 type: docs
 weight: 10
@@ -77,7 +77,7 @@ Kommentarantworten ermöglichen gemeinsame Diskussionen und Feedback innerhalb e
 
 #### F: Wie kann ich einen Kommentar in Aspose.Words für .NET entfernen?
 
-A: Um einen Kommentar in Aspose.Words für .NET zu entfernen, können Sie Folgendes verwenden`Comment.Remove` Methode, die die angibt`Comment` Objekt, das Sie entfernen möchten.
+ A: Um einen Kommentar in Aspose.Words für .NET zu entfernen, können Sie Folgendes verwenden`Comment.Remove` Methode, die die angibt`Comment` Objekt, das Sie entfernen möchten.
 
 #### F: Kann ich auf einen Kommentar in Aspose.Words für .NET antworten?
 
@@ -85,7 +85,7 @@ A: Um einen Kommentar in Aspose.Words für .NET zu entfernen, können Sie Folgen
 
 #### F: Wie kann ich auf vorhandene Kommentare in Aspose.Words für .NET zugreifen?
 
- A: Sie können mit dem auf vorhandene Kommentare in Aspose.Words für .NET zugreifen`CommentCollection` Eigentum der`Document` Objekt. Auf diese Weise können Sie alle im Dokument vorhandenen Kommentare durchsuchen.
+ A: Sie können mit dem auf vorhandene Kommentare in Aspose.Words für .NET zugreifen`CommentCollection`Eigentum der`Document`Objekt. Auf diese Weise können Sie alle im Dokument vorhandenen Kommentare durchsuchen.
 
 #### F: Kann ich Kommentartext in Aspose.Words für .NET bearbeiten?
 

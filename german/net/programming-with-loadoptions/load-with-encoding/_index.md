@@ -1,13 +1,13 @@
 ---
 title: Mit Codierung laden
 linktitle: Mit Codierung laden
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument mit einer bestimmten Kodierung laden.
 type: docs
 weight: 10
 url: /de/net/programming-with-loadoptions/load-with-encoding/
 ---
-Beim Arbeiten mit Textdokumenten in einer C#-Anwendung ist es wichtig, diese durch Angabe der richtigen Kodierung korrekt laden zu können. Mit der Aspose.Words-Bibliothek für .NET können Sie mithilfe der LoadOptions-Ladeoptionen ganz einfach Textdokumente mit der gewünschten Kodierung laden. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung des Aspose.Words für .NET C#-Quellcodes zum Laden eines Textdokuments mit der angegebenen Codierung mithilfe der LoadOptions-Ladeoptionen.
+Bei der Textverarbeitung mit Textdokumenten in einer C#-Anwendung ist es wichtig, diese durch Angabe der richtigen Kodierung korrekt laden zu können. Mit der Aspose.Words-Bibliothek für .NET können Sie mithilfe der LoadOptions-Ladeoptionen ganz einfach Textdokumente mit der gewünschten Kodierung laden. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung des Aspose.Words für .NET C#-Quellcodes zum Laden eines Textdokuments mit der angegebenen Codierung mithilfe der LoadOptions-Ladeoptionen.
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 

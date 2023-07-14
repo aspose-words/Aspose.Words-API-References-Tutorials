@@ -1,7 +1,7 @@
 ---
 title: تطبيق الترخيص من الدفق
 linktitle: تطبيق الترخيص من الدفق
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تطبيق ترخيص من تدفق باستخدام Aspose.Words for .NET. دليل خطوة بخطوة
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ url: /ar/net/apply-license/apply-license-from-stream/
 - ملف ترخيص صالح لـ Aspose.Words.
 
 ## الخطوة 1: استيراد مساحات الأسماء المطلوبة
-للبدء ، قم باستيراد مساحات الأسماء الضرورية في كود C # الخاص بك. تحتوي مساحات الأسماء هذه على الفئات والطرق اللازمة للعمل مع Aspose.Words.
+للبدء ، قم باستيراد مساحات الأسماء الضرورية في كود C # الخاص بك. تحتوي مساحات الأسماء هذه على الفئات والطرق اللازمة لمعالجة الكلمات باستخدام Aspose.Words.
 
 ```csharp
 using Aspose.Words;

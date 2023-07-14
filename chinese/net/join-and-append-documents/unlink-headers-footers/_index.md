@@ -1,7 +1,7 @@
 ---
 title: 取消链接页眉页脚
 linktitle: 取消链接页眉页脚
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 合并和追加 Word 文档，同时取消页眉和页脚的链接。
 type: docs
 weight: 10

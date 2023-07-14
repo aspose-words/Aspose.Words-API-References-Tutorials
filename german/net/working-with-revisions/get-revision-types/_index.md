@@ -1,7 +1,7 @@
 ---
 title: Holen Sie sich Revisionstypen von Wörtern
 linktitle: Holen Sie sich Revisionstypen von Wörtern
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erhalten Sie Revisionstypen von Wörtern in einem Word-Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10

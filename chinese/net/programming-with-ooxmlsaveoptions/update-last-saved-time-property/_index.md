@@ -1,7 +1,7 @@
 ---
 title: 更新上次保存时间属性
 linktitle: 更新上次保存时间属性
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在使用 Aspose.Words for .NET 保存文档时自动更新“上次保存时间”属性。
 type: docs
 weight: 10

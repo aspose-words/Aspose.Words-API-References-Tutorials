@@ -1,7 +1,7 @@
 ---
-title: حماية المستندات
-linktitle: حماية المستندات
-second_title: Aspose.Words لمراجع .NET API
+title: حماية مستندات Word
+linktitle: حماية مستندات Word
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية حماية مستندات Word باستخدام Aspose.Words for .NET. ستوجهك البرامج التعليمية عبر طرق الحماية المختلفة ، مثل قفل التغييرات ، وحماية كلمة المرور ، وتقييد الوصول إلى عناصر المستند ، وغير ذلك الكثير.
 type: docs
 weight: 1430
@@ -16,11 +16,11 @@ url: /ar/net/document-protection/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [حماية كلمة المرور](./password-protection/) | تعرف على كيفية حماية مستندات Word الخاصة بك بكلمة مرور باستخدام Aspose.Words for .NET. |
-| [السماح فقط لحقول النموذج بالحماية](./allow-only-form-fields-protect/) | تعرف على كيفية استخدام Aspose.Words for .NET لحماية المستندات والسماح فقط بتحرير حقول النموذج. |
-| [إزالة حماية المستند](./remove-document-protection/) | تعرف على كيفية إزالة الحماية من مستند Word باستخدام Aspose.Words for .NET. |
-| [مناطق قابلة للتحرير غير مقيدة](./unrestricted-editable-regions/) | تعرف على كيفية إنشاء مناطق قابلة للتحرير غير مقيدة في مستند Word باستخدام Aspose.Words for .NET. |
-| [قسم غير مقيد](./unrestricted-section/) | تعرف على كيفية تحديد الأقسام غير المقيدة في مستند Word باستخدام Aspose.Words for .NET. |
-| [احصل على نوع الحماية](./get-protection-type/) | تعرف على كيفية استخدام وظيفة احصل على نوع الحماية في Aspose.Words for .NET لتحديد نوع الحماية للمستند. |
-| [قراءة الحماية فقط](./read-only-protection/) | تعرف على كيفية حماية مستندات Word للقراءة فقط باستخدام Aspose.Words for .NET. |
+| [حماية كلمة المرور في مستند Word](./password-protection/) | تعرف على كيفية الحماية بكلمة مرور في مستندات Word باستخدام Aspose.Words for .NET. |
+| [السماح فقط لحقول النموذج بالحماية في مستند Word](./allow-only-form-fields-protect/) | تعرف على كيفية استخدام Aspose.Words for .NET للحماية في مستند Word والسماح فقط بتحرير حقول النموذج. |
+| [إزالة حماية المستند في مستند Word](./remove-document-protection/) | تعرف على كيفية إزالة الحماية في مستند Word باستخدام Aspose.Words for .NET. |
+| [مناطق قابلة للتحرير غير مقيدة في مستند Word](./unrestricted-editable-regions/) | تعرف على كيفية إنشاء مناطق قابلة للتحرير غير مقيدة في مستند Word باستخدام Aspose.Words for .NET. |
+| [قسم غير مقيد في مستند Word](./unrestricted-section/) | تعرف على كيفية تحديد الأقسام غير المقيدة في مستند Word باستخدام Aspose.Words for .NET. |
+| [احصل على نوع الحماية في مستند Word](./get-protection-type/) | تعرف على كيفية استخدام وظيفة Get Protection Type في مستند Word في Aspose.Words for .NET لتحديد نوع الحماية للمستند. |
+| [قراءة الحماية فقط في مستند Word](./read-only-protection/) | تعرف على كيفية حماية مستندات Word للقراءة فقط باستخدام Aspose.Words for .NET. |
 | [إزالة قيود القراءة فقط](./remove-read-only-restriction/) | تعرف على كيفية إزالة قيود القراءة فقط من مستند Word باستخدام Aspose.Words for .NET. |

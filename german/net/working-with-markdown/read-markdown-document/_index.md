@@ -1,7 +1,7 @@
 ---
 title: Markdown-Dokument lesen
 linktitle: Markdown-Dokument lesen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Markdown-Dokumente mit Aspose.Words für .NET lesen.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Zeilenformat Deaktivieren Sie den Seitenumbruch
 linktitle: Zeilenformat Deaktivieren Sie den Seitenumbruch
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET den Zeilenumbruch für eine Tabelle über mehrere Seiten in einem Word-Dokument deaktivieren.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In diesem Tutorial erfahren Sie, wie Sie den Zeilenumbruch einer mehrseitigen Ta
 2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
 ## Schritt 2: Laden des Dokuments
-Führen Sie die folgenden Schritte aus, um mit der Arbeit mit dem Dokument zu beginnen:
+Gehen Sie folgendermaßen vor, um die Textverarbeitung mit dem Dokument zu starten:
 
 ```csharp
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
@@ -53,7 +53,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 ### Beispielquellcode für das Zeilenformat „Deaktivieren Sie den Seitenumbruch mit Aspose.Words für .NET“. 
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");

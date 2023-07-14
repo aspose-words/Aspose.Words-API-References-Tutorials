@@ -1,7 +1,7 @@
 ---
 title: Verwenden Sie Tabulatorzeichen pro Ebene für die Listeneinrückung
 linktitle: Verwenden Sie Tabulatorzeichen pro Ebene für die Listeneinrückung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die Funktion „Einrückungslisten mit Tabulatorzeichen“ in Aspose.Words für .NET verwenden. Sparen Sie Zeit und verbessern Sie Ihren Arbeitsablauf mit dieser leistungsstarken Funktion.
 type: docs
 weight: 10
@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
- In diesem Schritt wenden wir das Standardformat für Listennummern an`ApplyNumberDefault()` Methode des Listenformatierers. Als Nächstes fügen wir mit dem Document Builder drei Elemente zu unserer Liste hinzu`Writeln()` Und`Write()` Methoden. Wir benutzen das`ListIndent()` Methode zum Erhöhen der Einrückung auf jeder Ebene.
+In diesem Schritt wenden wir das Standardformat für Listennummern an`ApplyNumberDefault()` Methode des Listenformatierers. Als Nächstes fügen wir mit dem Document Builder drei Elemente zu unserer Liste hinzu`Writeln()` Und`Write()` Methoden. Wir benutzen das`ListIndent()` Methode zum Erhöhen der Einrückung auf jeder Ebene.
 
 ## Schritt 4: Aufnahmeoptionen konfigurieren
 
@@ -100,7 +100,7 @@ Richten Sie Ihre Entwicklungsumgebung ein, indem Sie die erforderlichen Referenz
 
  Erstelle eine neue`Document` Objekt und ein zugehöriges Objekt`DocumentBuilder` Objekt.
 
- Benutzen Sie die`DocumentBuilder` um mithilfe der Methoden eine Liste mit mehreren Einrückungsebenen zu erstellen`ApplyNumberDefault()` um das Standardlistennummernformat anzuwenden,`Writeln()` Und`Write()` um Elemente zur Liste hinzuzufügen und`ListIndent()` um die Einrückung auf jeder Ebene zu erhöhen.
+ Benutzen Sie die`DocumentBuilder` um mithilfe der Methoden eine Liste mit mehreren Einrückungsebenen zu erstellen`ApplyNumberDefault()` um das Standardlistennummernformat anzuwenden,`Writeln()` Und`Write()` um Elemente zur Liste hinzuzufügen und`ListIndent()`um die Einrückung auf jeder Ebene zu erhöhen.
 
  Konfigurieren Sie Speicheroptionen, indem Sie eine erstellen`TxtSaveOptions` Objekt und Festlegen der Eigenschaften`ListIndentation.Count` auf die Anzahl der Tabulatorzeichen pro Ebene und`ListIndentation.Character` Zu`'\t'` um die Tabulatorzeichen zu verwenden.
 
@@ -110,7 +110,7 @@ Richten Sie Ihre Entwicklungsumgebung ein, indem Sie die erforderlichen Referenz
  Ja, Sie können die Anzahl der Tabulatorzeichen pro Ebene für die Listeneinrückung anpassen, indem Sie den Wert von ändern`ListIndentation.Count` Eigentum in der`TxtSaveOptions` Klasse. Sie können die Anzahl der gewünschten Tabulatorzeichen für jede Einrückungsebene angeben.
 
 #### F: Welche anderen Zeichen kann ich für die Listeneinrückung mit Aspose.Words für .NET verwenden?
-Neben Tabulatorzeichen können Sie mit Aspose.Words für .NET auch andere Zeichen zum Einrücken von Listen verwenden. Sie können das einstellen`ListIndentation.Character` -Eigenschaft auf ein beliebiges Zeichen, z. B. ein Leerzeichen (`' '`), zum Einrücken von Listen.
+ Neben Tabulatorzeichen können Sie mit Aspose.Words für .NET auch andere Zeichen zum Einrücken von Listen verwenden. Sie können das einstellen`ListIndentation.Character` -Eigenschaft auf ein beliebiges Zeichen, z. B. ein Leerzeichen (`' '`), zum Einrücken von Listen.
 
 #### F: Bietet Aspose.Words für .NET weitere Funktionen zum Verwalten von Listen?
 Ja, Aspose.Words für .NET bietet viele Funktionen zum Verwalten von Listen in Word-Dokumenten. Sie können nummerierte Listen oder Listen mit Aufzählungszeichen erstellen, Einrückungsstufen festlegen, den Stil von Listen anpassen, Listenelemente hinzufügen und vieles mehr.

@@ -1,7 +1,7 @@
 ---
 title: Obtenir la plage de pages JPEG
 linktitle: Obtenir la plage de pages JPEG
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à obtenir une gamme de pages JPEG avec Aspose.Words pour .NET. Tutoriel complet pour extraire des images personnalisées.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ Vous pouvez maintenant exécuter le code source pour convertir une plage spécif
 ### Exemple de code source pour obtenir la plage de pages Jpeg à l'aide de Aspose.Words pour .NET
 
 ```csharp 
- // Chemin d'accès à votre répertoire de documents
+ //Chemin d'accès à votre répertoire de documents
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

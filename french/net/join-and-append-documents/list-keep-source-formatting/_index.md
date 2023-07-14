@@ -1,7 +1,7 @@
 ---
 title: Liste Conserver la mise en forme de la source
 linktitle: Liste Conserver la mise en forme de la source
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment conserver la mise en forme de la liste lors de la jointure et de l'ajout de documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
 ## Étape 1 : Initialiser les répertoires de documents
 
- Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir` variable au chemin où se trouvent vos documents.
+ Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir`variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Étape 4 : Ajouter le document source au document de destination
 
- Maintenant, vous pouvez ajouter le document source au document de destination en utilisant le`AppendDocument` méthode de la`Document` classe. Le`ImportFormatMode.KeepSourceFormatting`Le paramètre garantit que la mise en forme source, y compris la mise en forme des listes, est préservée pendant l'opération d'ajout.
+ Maintenant, vous pouvez ajouter le document source au document de destination en utilisant le`AppendDocument` méthode de la`Document` classe. Le`ImportFormatMode.KeepSourceFormatting` Le paramètre garantit que la mise en forme source, y compris la mise en forme des listes, est préservée pendant l'opération d'ajout.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 Voici le code source complet de la fonctionnalité List Keep Source Formatting en C# à l'aide de Aspose.Words pour .NET :
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

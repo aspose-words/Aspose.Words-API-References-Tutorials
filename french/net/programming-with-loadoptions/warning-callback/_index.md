@@ -1,14 +1,14 @@
 ---
 title: Rappel d'avertissement
 linktitle: Rappel d'avertissement
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à gérer les avertissements lors du chargement d'un document Word à l'aide de la fonctionnalité de rappel avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-loadoptions/warning-callback/
 ---
 
-Lorsque vous travaillez avec des documents Word dans une application C#, il peut être utile de connaître les avertissements émis lors du chargement du document. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement spécifier une fonction de rappel pour gérer les avertissements lors du chargement du document à l'aide des options de chargement LoadOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour charger un document à l'aide d'une fonction de rappel pour les avertissements à l'aide des options de chargement LoadOptions.
+Lors du traitement de texte avec des documents Word dans une application C#, il peut être utile de connaître les avertissements émis lors du chargement du document. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement spécifier une fonction de rappel pour gérer les avertissements lors du chargement du document à l'aide des options de chargement LoadOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour charger un document à l'aide d'une fonction de rappel pour les avertissements à l'aide des options de chargement LoadOptions.
 
 ## Comprendre la bibliothèque Aspose.Words
 

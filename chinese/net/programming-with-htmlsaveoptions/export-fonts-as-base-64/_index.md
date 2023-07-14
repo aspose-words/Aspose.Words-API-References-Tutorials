@@ -1,7 +1,7 @@
 ---
 title: 将字体导出为 Base 64
 linktitle: 将字体导出为 Base 64
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 保存文档时导出 Base 64 字体的分步指南。
 type: docs
 weight: 10

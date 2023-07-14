@@ -1,7 +1,7 @@
 ---
 title: Ajouter une signature numérique au PDF à l'aide du titulaire du certificat
 linktitle: Ajouter une signature numérique au PDF à l'aide du titulaire du certificat
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à ajouter une signature numérique au PDF à l'aide du titulaire du certificat avec Aspose.Words pour .NET.
 type: docs
 weight: 10

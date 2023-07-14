@@ -1,7 +1,7 @@
 ---
 title: 每级使用空格字符进行列表缩进
 linktitle: 每级使用空格字符进行列表缩进
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 在 Aspose.Words for .NET 中使用每级空格字符进行列表缩进的分步指南。轻松创建结构良好的 Word 文档。
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ Aspose.Words for .NET 是一个功能强大的库，用于在 C# 应用程序中
 
 ## 了解 Aspose.Words 库
 
-在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。 Aspose.Words 是一个流行的库，它使 Word 文档的处理变得简单而高效。它提供了广泛的创建、修改和操作 Word 文档的功能，包括列表和缩进的管理。
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。 Aspose.Words 是一个流行的库，它使 Word 文档的文字处理变得简单高效。它提供了广泛的创建、修改和操作 Word 文档的功能，包括列表和缩进的管理。
 
 ## 创建文档并添加内容
 
@@ -91,12 +91,12 @@ namespace Example
 
 ## 结论
 
-在本指南中，我们解释了如何使用 Aspose.Words for .NET 来应用“每级使用一个空格字符进行列表缩进”功能。通过按照提供的步骤并使用提供的 C# 源代码，您可以轻松配置 Word 文档中列表的缩进，每级使用一个空格字符。 Aspose.Words 为文本格式设置和列表管理提供了巨大的灵活性和强大功能，允许您在 C# 应用程序中创建结构良好的文档。
+在本指南中，我们解释了如何使用 Aspose.Words for .NET 来应用“每级使用一个空格字符进行列表缩进”功能。通过按照提供的步骤并使用提供的 C# 源代码，您可以轻松配置 Word 文档中列表的缩进，每级使用一个空格字符。 Aspose.Words 通过文本格式设置和列表管理为文字处理提供了巨大的灵活性和强大功能，允许您在 C# 应用程序中创建结构良好的文档。
 
 ### 经常问的问题
 
 #### 问：什么是 Aspose.Words for .NET？
-Aspose.Words for .NET 是一个功能强大的库，用于在 C# 应用程序中创建、编辑和操作 Word 文档。它提供了许多用于处理 Word 文档的功能，包括能够在每一级使用一个空格来缩进列表。
+Aspose.Words for .NET 是一个功能强大的库，用于在 C# 应用程序中创建、编辑和操作 Word 文档。它为 Word 文档的文字处理提供了许多功能，包括每级使用一个空格进行缩进列表的功能。
 
 #### 问：如何使用 Aspose.Words for .NET 在每一级使用一个空格来进行列表缩进？
 您可以按照以下步骤在每一级使用一个空格来缩进列表：

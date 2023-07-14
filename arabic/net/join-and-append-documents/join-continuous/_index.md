@@ -1,7 +1,7 @@
 ---
 title: الانضمام المستمر
 linktitle: الانضمام المستمر
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية ربط وثيقتين بشكل مستمر مع الحفاظ على التنسيق باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## الخطوة 4: قم بإلحاق المستند المصدر
 
- قم بإلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. اضبط وضع تنسيق الاستيراد على`ImportFormatMode.KeepSourceFormatting`للاحتفاظ بالأنماط الأصلية من المستند المصدر.
+ قم بإلحاق المستند المصدر بالمستند الوجهة باستخدام ملف`AppendDocument` طريقة`Document` فصل. اضبط وضع تنسيق الاستيراد على`ImportFormatMode.KeepSourceFormatting` للاحتفاظ بالأنماط الأصلية من المستند المصدر.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -58,7 +58,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ### مثال على شفرة المصدر لـ Join Continuous using Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

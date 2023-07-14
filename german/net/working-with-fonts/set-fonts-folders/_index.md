@@ -1,7 +1,7 @@
 ---
 title: Legen Sie Schriftartenordner fest
 linktitle: Legen Sie Schriftartenordner fest
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Festlegen von Schriftartenordnern beim Rendern eines Dokuments mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ### Beispielquellcode für „Fonts-Ordner festlegen“ mit Aspose.Words für .NET 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man Schriftartenordner beim Rendern eines Dokuments mit Aspose.Words für .NET festlegt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie ganz einfach die Schriftartquellen angeben, die Sie beim Rendern Ihrer Dokumente verwenden möchten. Aspose.Words bietet eine leistungsstarke und flexible API für die Arbeit mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die beim Rendern Ihrer Dokumente verwendeten Schriftartquellen steuern und an Ihre spezifischen Anforderungen anpassen.
+In diesem Tutorial haben wir gelernt, wie man Schriftartenordner beim Rendern eines Dokuments mit Aspose.Words für .NET festlegt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie ganz einfach die Schriftartquellen angeben, die Sie beim Rendern Ihrer Dokumente verwenden möchten. Aspose.Words bietet eine leistungsstarke und flexible API für die Textverarbeitung mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die beim Rendern Ihrer Dokumente verwendeten Schriftartquellen steuern und an Ihre spezifischen Anforderungen anpassen.
 
 ### FAQs
 

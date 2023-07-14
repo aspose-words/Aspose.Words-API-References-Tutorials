@@ -1,7 +1,7 @@
 ---
 title: Appliquer la licence à partir du fichier
 linktitle: Appliquer la licence à partir du fichier
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à appliquer une licence à partir d'un fichier à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -17,7 +17,7 @@ Avant de commencer, assurez-vous que les conditions préalables suivantes sont e
 - Un fichier de licence valide pour Aspose.Words. 
 
 ## Étape 1 : Importer l'espace de noms Aspose.Words
-Pour commencer, vous devez importer l'espace de noms Aspose.Words dans votre code C#. Cet espace de noms fournit toutes les classes et méthodes requises pour travailler avec des documents Word.
+Pour commencer, vous devez importer l'espace de noms Aspose.Words dans votre code C#. Cet espace de noms fournit toutes les classes et méthodes requises pour le traitement de texte avec des documents Word.
 
 ```csharp
 using Aspose.Words;

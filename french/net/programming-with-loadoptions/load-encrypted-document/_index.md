@@ -1,14 +1,14 @@
 ---
 title: Charger le document chiffré
 linktitle: Charger le document chiffré
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à charger et enregistrer des documents chiffrés avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-loadoptions/load-encrypted-document/
 ---
 
-Lorsque vous travaillez avec des documents chiffrés dans une application C#, il est important de pouvoir les charger correctement en fournissant le mot de passe correct. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement charger des documents chiffrés à l'aide des options de chargement appropriées. Dans ce guide étape par étape, nous allons vous montrer comment utiliser le code source C# de Aspose.Words pour .NET pour charger un document chiffré à l'aide des options de chargement LoadOptions.
+Lors d'un traitement de texte avec des documents chiffrés dans une application C#, il est important de pouvoir les charger correctement en fournissant le bon mot de passe. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement charger des documents chiffrés à l'aide des options de chargement appropriées. Dans ce guide étape par étape, nous allons vous montrer comment utiliser le code source C# de Aspose.Words pour .NET pour charger un document chiffré à l'aide des options de chargement LoadOptions.
 
 ## Comprendre la bibliothèque Aspose.Words
 

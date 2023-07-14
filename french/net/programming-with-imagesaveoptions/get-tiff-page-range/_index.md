@@ -1,7 +1,7 @@
 ---
 title: Obtenir la plage de pages Tiff
 linktitle: Obtenir la plage de pages Tiff
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à extraire une gamme de pages TIFF avec Aspose.Words pour .NET. Tutoriel complet pour les fichiers TIFF personnalisés.
 type: docs
 weight: 10
@@ -60,7 +60,7 @@ Vous pouvez maintenant exécuter le code source pour obtenir une plage spécifiq
 
 ```csharp 
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

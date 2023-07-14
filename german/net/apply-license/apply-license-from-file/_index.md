@@ -1,7 +1,7 @@
 ---
 title: Lizenz aus Datei anwenden
 linktitle: Lizenz aus Datei anwenden
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Lizenz aus einer Datei anwenden.
 type: docs
 weight: 10
@@ -17,7 +17,7 @@ Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfü
 - Eine gültige Lizenzdatei für Aspose.Words. 
 
 ## Schritt 1: Importieren Sie den Aspose.Words-Namespace
-Um zu beginnen, müssen Sie den Aspose.Words-Namespace in Ihren C#-Code importieren. Dieser Namespace stellt alle Klassen und Methoden bereit, die für die Arbeit mit Word-Dokumenten erforderlich sind.
+Um zu beginnen, müssen Sie den Aspose.Words-Namespace in Ihren C#-Code importieren. Dieser Namespace stellt alle Klassen und Methoden bereit, die für die Textverarbeitung mit Word-Dokumenten erforderlich sind.
 
 ```csharp
 using Aspose.Words;

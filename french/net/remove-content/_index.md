@@ -1,7 +1,7 @@
 ---
-title: Supprimer le contenu
+title: Document Word - Comment supprimer du contenu
 linktitle: Supprimer le contenu
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à supprimer efficacement le contenu de documents Word à l'aide d'Aspose.Words pour .NET. Suivez des didacticiels pas à pas et utilisez des exemples de code C# pour apprendre différentes techniques de suppression de contenu.
 type: docs
 weight: 1370
@@ -16,7 +16,7 @@ Que vous ayez besoin de manipuler, créer, convertir ou générer des documents 
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Supprimer les sauts de page](./remove-page-breaks/) | Apprenez à supprimer les sauts de page dans un document à l'aide de la bibliothèque Aspose.Words pour .NET. Suivez notre guide étape par étape pour une mise en page transparente. |
-| [Supprimer les sauts de section](./remove-section-breaks/) | Découvrez comment supprimer des sauts de section dans un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. Éliminez efficacement les sauts de section qui peuvent perturber la mise en forme de votre document.|
-| [Supprimer les pieds de page](./remove-footers/) | Apprenez à supprimer facilement les pieds de page des documents Word avec Aspose.Words pour .NET. Suivez notre guide étape par étape pour une gestion efficace des fichiers DOCX. |
-| [Supprimer la table des matières](./remove-table-of-contents/) | Découvrez comment supprimer la table des matières d'un document Word à l'aide d'Aspose.Words pour .NET. |
+| [Supprimer les sauts de page dans un document Word](./remove-page-breaks/) | Apprenez à supprimer les sauts de page dans un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. Suivez notre guide étape par étape pour une mise en page transparente. |
+| [Supprimer les sauts de section dans un document Word](./remove-section-breaks/) | Découvrez comment supprimer des sauts de section dans un document Word à l'aide de la bibliothèque Aspose.Words pour .NET. Éliminez efficacement les sauts de section qui peuvent perturber la mise en forme de votre document.|
+| [Supprimer les pieds de page dans un document Word](./remove-footers/) | Apprenez à supprimer facilement les pieds de page dans les documents Word avec Aspose.Words pour .NET. Suivez notre guide étape par étape pour une gestion efficace des fichiers DOCX. |
+| [Supprimer la table des matières dans le document Word](./remove-table-of-contents/) | Découvrez comment supprimer la table des matières d'un document Word à l'aide d'Aspose.Words pour .NET. |

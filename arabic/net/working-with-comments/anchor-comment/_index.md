@@ -1,7 +1,7 @@
 ---
 title: تعليق المرساة
 linktitle: تعليق المرساة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إرساء ردود التعليقات على نص معين في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // إنشاء ثلاثة كائنات تشغيل.
-//يقوم أول اثنان بتشغيل بعض النصوص ، بينما يقوم الثالث بتشغيل تعليق
+// يقوم أول اثنان بتشغيل بعض النصوص ، بينما يقوم الثالث بتشغيل تعليق
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 
 #### س: كيف يمكنني تعديل نص تعليق مرتبط بأحد ارتساء التعليقات في Aspose.Words for .NET؟
 
-ج: لتعديل نص تعليق مرتبط بإرساء تعليق في Aspose.Words for .NET ، يمكنك الوصول إلى`Comment.Text` الممتلكات المقابلة`Comment` الكائن وتعديل النص حسب الحاجة.
+ ج: لتعديل نص تعليق مرتبط بإرساء تعليق في Aspose.Words for .NET ، يمكنك الوصول إلى`Comment.Text` الممتلكات المقابلة`Comment` الكائن وتعديل النص حسب الحاجة.
 

@@ -1,7 +1,7 @@
 ---
 title: استدعاء حفظ الصفحة
 linktitle: استدعاء حفظ الصفحة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تخصيص حفظ صفحات المستند للصور باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
 }
 ```
 
- في هذه الخطوة ، نقوم بتنفيذ`HandlePageSavingCallback` الطبقة التي تنفذ`IPageSavingCallback` واجهه المستخدم. يمكنك تخصيص هذه الفئة عن طريق إضافة إجراءات معينة في ملف`PageSaving` طريقة. يمكنك الوصول إلى معلومات الصفحة من خلال`args.PageIndex` ممتلكات`PageSavingArgs` تم تمرير الكائن كوسيطة.
+ في هذه الخطوة ، نقوم بتنفيذ`HandlePageSavingCallback` الطبقة التي تنفذ`IPageSavingCallback` واجهه المستخدم. يمكنك تخصيص هذه الفئة عن طريق إضافة إجراءات معينة في ملف`PageSaving` طريقة. يمكنك الوصول إلى معلومات الصفحة من خلال`args.PageIndex`ممتلكات`PageSavingArgs` تم تمرير الكائن كوسيطة.
 
 ## الخطوة 5: حفظ الصفحات كصور
 
@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 
 ```csharp 
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 

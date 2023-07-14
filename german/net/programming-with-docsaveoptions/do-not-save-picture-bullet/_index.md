@@ -1,7 +1,7 @@
 ---
 title: Bildaufzählung nicht speichern
 linktitle: Bildaufzählung nicht speichern
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie das Speichern von Bildaufzählungszeichen in Word-Dokumenten mit Aspose.Words für .NET deaktivieren.
 type: docs
 weight: 10

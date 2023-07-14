@@ -1,7 +1,7 @@
 ---
 title: 保持源格式
 linktitle: 保持源格式
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将源文档附加到目标文档，同时保留原始格式。
 type: docs
 weight: 10

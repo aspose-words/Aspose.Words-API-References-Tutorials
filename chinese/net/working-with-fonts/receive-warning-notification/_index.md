@@ -1,7 +1,7 @@
 ---
 title: 收到警告通知
 linktitle: 收到警告通知
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在使用 Aspose.Words for .NET 时接收警告通知并管理文档中的任何问题或警告。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: التحويلات الأساسية
 linktitle: التحويلات الأساسية
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعلم التحويلات الأساسية مع Aspose.Words for .NET. قم بتحويل مستندات Word بسهولة إلى تنسيقات أخرى مثل PDF و HTML و RTF والمزيد.
 type: docs
 weight: 1600

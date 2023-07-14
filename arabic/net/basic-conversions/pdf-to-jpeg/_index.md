@@ -1,7 +1,7 @@
 ---
 title: احفظ ملف PDF بتنسيق Jpeg
 linktitle: احفظ ملف PDF بتنسيق Jpeg
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تحويل مستندات PDF إلى صور JPEG باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
 type: docs
 weight: 10

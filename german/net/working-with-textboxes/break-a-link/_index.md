@@ -1,14 +1,14 @@
 ---
 title: Weiterleitungslink im Word-Dokument unterbrechen
 linktitle: Weiterleitungslink im Word-Dokument unterbrechen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Links in einem Word-Dokument weiterleiten.
 type: docs
 weight: 10
 url: /de/net/working-with-textboxes/break-a-link/
 ---
 
-Aspose.Words für .NET ist eine leistungsstarke Bibliothek, die verschiedene Funktionen für die programmgesteuerte Arbeit mit Microsoft Word-Dokumenten bietet. Eine seiner nützlichen Funktionen ist die Möglichkeit, Links in einem Word-Dokument weiterzuleiten. In diesem Tutorial untersuchen wir den Quellcode in C#, der zeigt, wie man mit Aspose.Words für .NET einen Link in einem Word-Dokument aufbricht.
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek, die verschiedene Funktionen für die programmgesteuerte Textverarbeitung mit Microsoft Word-Dokumenten bietet. Eine seiner nützlichen Funktionen ist die Möglichkeit, Links in einem Word-Dokument weiterzuleiten. In diesem Tutorial untersuchen wir den Quellcode in C#, der zeigt, wie man mit Aspose.Words für .NET einen Link in einem Word-Dokument aufbricht.
 
 ## Schritt 1: Vorschau des C#-Quellcodes
 
@@ -16,7 +16,7 @@ Der bereitgestellte C#-Quellcode konzentriert sich auf die Funktion „Break A L
 
 ## Schritt 2: Einrichten des Dokuments und Erstellen einer TextBox-Form
 
-Zunächst müssen wir das Dokument einrichten und eine TextBox-Form erstellen. Der folgende Code initialisiert eine neue Instanz von`Document` Klasse und erstellt eine Textfeldform:
+ Zunächst müssen wir das Dokument einrichten und eine TextBox-Form erstellen. Der folgende Code initialisiert eine neue Instanz von`Document` Klasse und erstellt eine Textfeldform:
 
 ```csharp
 Document doc = new Document();
@@ -58,7 +58,7 @@ TextBox textBox = shape.TextBox;
 // Weiterleitungslink unterbrechen.
 textBox.BreakForwardLink();
 
-//Unterbrechen Sie einen Weiterleitungslink, indem Sie einen Nullwert festlegen.
+// Unterbrechen Sie einen Weiterleitungslink, indem Sie einen Nullwert festlegen.
 textBox. Next = null;
 
 // Unterbrechen Sie einen Link, der zu diesem Textfeld führt.
@@ -73,7 +73,7 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie Umleitungslinks in ein
 
 #### F: Welche Bibliothek wird verwendet, um Umleitungslinks in einem Word-Dokument mithilfe von Aspose.Words für .NET zu unterbrechen?
 
-A: Um Umleitungslinks in einem Word-Dokument mithilfe von Aspose.Words für .NET zu unterbrechen, wird die Bibliothek Aspose.Words für .NET verwendet.
+A: Um Umleitungslinks in einem Word-Dokument mit Aspose.Words für .NET zu unterbrechen, wird die Bibliothek Aspose.Words für .NET verwendet.
 
 #### F: Wie unterbreche ich einen Weiterleitungslink in einer TextBox?
 
@@ -81,7 +81,7 @@ A: Um Umleitungslinks in einem Word-Dokument mithilfe von Aspose.Words für .NET
 
 #### F: Wie unterbreche ich einen Weiterleitungslink, indem ich einen Nullwert festlege?
 
- A: Alternativ können Sie einen Weiterleitungslink unterbrechen, indem Sie Folgendes festlegen`Next`Eigenschaft der TextBox an`null`. Dadurch wird die Verbindung zur nächsten Form effektiv entfernt.
+A: Alternativ können Sie einen Weiterleitungslink unterbrechen, indem Sie Folgendes festlegen`Next` Eigenschaft der TextBox an`null`. Dadurch wird die Verbindung zur nächsten Form effektiv entfernt.
 
 #### F: Wie kann ich einen Link unterbrechen, der zur TextBox führt?
 

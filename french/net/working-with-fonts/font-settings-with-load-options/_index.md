@@ -1,7 +1,7 @@
 ---
 title: Paramètres de police avec options de chargement
 linktitle: Paramètres de police avec options de chargement
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Dans ce didacticiel, découvrez comment charger un document Word avec des options de chargement personnalisées et les paramètres de police correspondants.
 type: docs
 weight: 10
@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Exemple de code source pour les paramètres de police avec options de chargement à l'aide de Aspose.Words pour .NET 
 ```csharp
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 LoadOptions loadOptions = new LoadOptions();
@@ -57,7 +57,7 @@ Dans ce didacticiel, nous avons vu comment utiliser les options de chargement av
 
 #### Q : Comment puis-je spécifier une police par défaut lors du chargement d'un document dans Aspose.Words ?
 
- R : Pour spécifier une police par défaut lors du chargement d'un document dans Aspose.Words, vous pouvez utiliser le`LoadOptions` classe et définissez la`DefaultFontName` propriété au nom de la police souhaitée.
+ R : Pour spécifier une police par défaut lors du chargement d'un document dans Aspose.Words, vous pouvez utiliser le`LoadOptions`classe et définissez la`DefaultFontName` propriété au nom de la police souhaitée.
 
 #### Q : Quels autres paramètres de police puis-je spécifier avec les options de chargement dans Aspose.Words ?
 

@@ -1,7 +1,7 @@
 ---
 title: Ergebnisse der Feldanzeige
 linktitle: Ergebnisse der Feldanzeige
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Anzeigen von Feldergebnissen in Ihren Word-Dokumenten mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -40,7 +40,7 @@ Dieser Schritt ist wichtig, da er sicherstellt, dass Feldergebnisse korrekt ange
 
 ## Schritt 4: Feldergebnisse anzeigen
 
- Wir benutzen ein`foreach`Schleife, um alle Felder im Dokument zu durchlaufen und ihre Ergebnisse anzuzeigen.
+ Wir benutzen ein`foreach` Schleife, um alle Felder im Dokument zu durchlaufen und ihre Ergebnisse anzuzeigen.
 
 ```csharp
 foreach(Field field in document.Range.Fields)

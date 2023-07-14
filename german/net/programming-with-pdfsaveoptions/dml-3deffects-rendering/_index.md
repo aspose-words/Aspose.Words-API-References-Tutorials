@@ -1,7 +1,7 @@
 ---
 title: Rendern Sie 3D-DML-3DEffects in einem PDF-Dokument
 linktitle: Rendern Sie 3D-DML-3DEffects in einem PDF-Dokument
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie das Rendern von 3D-DML-Effekten bei der Konvertierung in PDF mit Aspose.Words für .NET aktivieren.
 type: docs
 weight: 10
@@ -72,7 +72,7 @@ A: Um das Rendern von 3D-DML-Effekten beim Konvertieren in PDF mit Aspose.Words 
 
  Erstellen Sie eine Instanz von`Document` Klasse, die den Pfad zum Word-Dokument angibt.
 
- Erstellen Sie eine Instanz von`PdfSaveOptions` Klasse und legen Sie die fest`Dml3DEffectsRenderingMode` Eigentum zu`Dml3DEffectsRenderingMode.Advanced` um ein erweitertes Rendering von 3D-DML-Effekten zu ermöglichen.
+ Erstellen Sie eine Instanz von`PdfSaveOptions`Klasse und legen Sie die fest`Dml3DEffectsRenderingMode` Eigentum zu`Dml3DEffectsRenderingMode.Advanced` um ein erweitertes Rendering von 3D-DML-Effekten zu ermöglichen.
 
  Benutzen Sie die`Save` Methode der`Document`Klasse zum Speichern des Dokuments im PDF-Format durch Angabe von Speicheroptionen.
 

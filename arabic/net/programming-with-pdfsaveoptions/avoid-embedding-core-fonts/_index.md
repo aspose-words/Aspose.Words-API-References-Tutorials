@@ -1,7 +1,7 @@
 ---
 title: تقليل حجم ملف PDF من خلال عدم تضمين الخطوط الأساسية
 linktitle: تقليل حجم ملف PDF من خلال عدم تضمين الخطوط الأساسية
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تقليل حجم ملف PDF من خلال عدم تضمين الخطوط الأساسية عند تحويل مستندات Word إلى PDF باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", save
 
  قم بتحميل مستند Word الذي تريد تحويله إلى PDF باستخدام ملف`Document` فئة ومسار المستند المحدد.
 
- قم بإنشاء مثيل لـ`PdfSaveOptions` فئة وضبط`UseCoreFonts` الملكية ل`true`. سيؤدي ذلك إلى تجنب دمج الخطوط الأساسية في ملف PDF الذي تم إنشاؤه.
+ قم بإنشاء مثيل لـ`PdfSaveOptions`فئة وضبط`UseCoreFonts` ملكية ل`true`. سيؤدي ذلك إلى تجنب دمج الخطوط الأساسية في ملف PDF الذي تم إنشاؤه.
 
  استخدم ال`Save` طريقة`Document` لحفظ المستند بتنسيق PDF مع تحديد خيارات التحويل التي تم تكوينها مسبقًا.
 

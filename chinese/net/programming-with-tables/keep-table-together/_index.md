@@ -1,7 +1,7 @@
 ---
 title: 将桌子放在一起
 linktitle: 将桌子放在一起
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将 Word 文档中的表格组合在一起。
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /zh/net/programming-with-tables/keep-table-together/
 2. 添加对 Aspose.Words for .NET 库的引用。
 
 ## 步骤 2：加载文档并检索表格
-要开始使用表格，我们需要加载文档并获取我们想要保留在一起的表格。按着这些次序：
+要开始对表格进行文字处理，我们需要加载文档并获取我们想要保留在一起的表格。按着这些次序：
 
 ```csharp
 //文档目录的路径

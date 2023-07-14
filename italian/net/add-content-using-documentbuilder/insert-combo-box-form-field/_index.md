@@ -1,7 +1,7 @@
 ---
 title: Inserisci campo modulo casella combinata
 linktitle: Inserisci campo modulo casella combinata
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire campi modulo casella combinata nei documenti di Word utilizzando Aspose.Words per .NET. Guida passo dopo passo.
 type: docs
 weight: 10

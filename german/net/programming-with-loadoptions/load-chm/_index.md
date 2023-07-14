@@ -1,14 +1,14 @@
 ---
 title: Lade Chm
 linktitle: Lade Chm
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie CHM-Dateien mit Aspose.Words für .NET laden.
 type: docs
 weight: 10
 url: /de/net/programming-with-loadoptions/load-chm/
 ---
 
-Beim Arbeiten mit HTML-Hilfedateien (CHM) in einer C#-Anwendung ist es wichtig, diese korrekt laden zu können. Mit der Aspose.Words-Bibliothek für .NET können Sie CHM-Dateien mithilfe der entsprechenden Ladeoptionen problemlos laden. In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie Aspose.Words für .NET C#-Quellcode verwenden, um eine CHM-Datei mithilfe der LoadOptions-Ladeoptionen zu laden.
+Bei Textverarbeitung mit HTML-Hilfedateien (CHM) in einer C#-Anwendung ist es wichtig, sie korrekt laden zu können. Mit der Aspose.Words-Bibliothek für .NET können Sie CHM-Dateien mithilfe der entsprechenden Ladeoptionen problemlos laden. In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie Aspose.Words für .NET C#-Quellcode verwenden, um eine CHM-Datei mithilfe der LoadOptions-Ladeoptionen zu laden.
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 

@@ -1,7 +1,7 @@
 ---
 title: 自动调整表格以适应内容
 linktitle: 自动调整表格以适应内容
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将表格自动调整到 Word 文档中的内容。
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /zh/net/programming-with-tables/auto-fit-table-to-contents/
 2. 添加对 Aspose.Words for .NET 库的引用。
 
 ## 第 2 步：加载 Word 文档
-要开始使用表格，我们需要加载包含该表格的 Word 文档。按着这些次序：
+要开始对表格进行文字处理，我们需要加载包含该表格的 Word 文档。按着这些次序：
 
 ```csharp
 //文档目录的路径

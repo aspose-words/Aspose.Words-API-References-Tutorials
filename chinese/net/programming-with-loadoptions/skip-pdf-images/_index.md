@@ -1,14 +1,14 @@
 ---
 title: 跳过 Pdf 图像
 linktitle: 跳过 Pdf 图像
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 加载 PDF 文档，跳过加载 PDF 图像的过程。
 type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/skip-pdf-images/
 ---
 
-在 C# 应用程序中处理 PDF 文档时，出于性能或存储空间管理原因，可能需要跳过加载 PDF 图像。借助适用于 .NET 的 Aspose.Words 库，您可以使用 PdfLoadOptions 加载选项轻松跳过加载 PDF 图像。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码通过使用 PdfLoadOptions 加载选项跳过 PDF 图像的加载来加载 PDF 文档。
+在 C# 应用程序中对 PDF 文档进行文字处理时，出于性能或存储空间管理原因，可能需要跳过加载 PDF 图像。借助适用于 .NET 的 Aspose.Words 库，您可以使用 PdfLoadOptions 加载选项轻松跳过加载 PDF 图像。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码通过使用 PdfLoadOptions 加载选项跳过 PDF 图像的加载来加载 PDF 文档。
 
 ## 了解 Aspose.Words 库
 

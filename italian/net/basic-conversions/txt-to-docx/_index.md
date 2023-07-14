@@ -1,7 +1,7 @@
 ---
 title: Converti file di testo in documento Word
 linktitle: Converti file di testo in documento Word
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come convertire file di testo semplice (Txt) in documenti Word (Docx) utilizzando Aspose.Words per .NET. Tutorial passo passo con codice di esempio.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato
 
 ## Passaggio 1: inizializzazione dell'oggetto documento
 
- Per prima cosa, inizializza il file`Document` oggetto fornendo il percorso del file di testo normale:
+ Per prima cosa, inizializza il file`Document` oggetto fornendo il percorso del file di testo semplice:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

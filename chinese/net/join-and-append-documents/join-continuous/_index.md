@@ -1,7 +1,7 @@
 ---
 title: 加入持续
 linktitle: 加入持续
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 连续连接两个文档，同时保留格式。
 type: docs
 weight: 10

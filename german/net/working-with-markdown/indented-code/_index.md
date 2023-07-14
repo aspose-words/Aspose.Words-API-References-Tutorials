@@ -1,7 +1,7 @@
 ---
 title: Eingerückter Code
 linktitle: Eingerückter Code
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie eingerückten Code mit Aspose.Words für .NET verwenden.
 type: docs
 weight: 10

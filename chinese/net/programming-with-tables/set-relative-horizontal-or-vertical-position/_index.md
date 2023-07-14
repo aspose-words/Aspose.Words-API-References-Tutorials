@@ -1,7 +1,7 @@
 ---
 title: 设置相对水平或垂直位置
 linktitle: 设置相对水平或垂直位置
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 设置 Word 文档中表格的相对水平或垂直位置。
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /zh/net/programming-with-tables/set-relative-horizontal-or-vertical-positio
 2. 添加对 Aspose.Words for .NET 库的引用。
 
 ## 第 2 步：加载文档
-要开始使用该文档，请按照下列步骤操作：
+要启动文档的文字处理，请按照下列步骤操作：
 
 ```csharp
 //文档目录的路径

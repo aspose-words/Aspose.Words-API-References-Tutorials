@@ -1,7 +1,7 @@
 ---
 title: 设置字体文件夹系统和自定义文件夹
 linktitle: 设置字体文件夹系统和自定义文件夹
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 渲染文档时设置系统和自定义字体文件夹的分步指南。
 type: docs
 weight: 10
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## 结论
-在本教程中，我们学习了如何在使用 Aspose.Words for .NET 渲染文档时设置系统字体文件夹和自定义文件夹。通过遵循此分步指南，您可以轻松指定在渲染文档时使用的多个字体文件夹，包括系统文件夹和自定义文件夹。 Aspose.Words 提供了强大且灵活的 API，用于处理文档中的字体。有了这些知识，您就可以控制和自定义在根据您的特定需求渲染文档时使用的字体源。
+在本教程中，我们学习了如何在使用 Aspose.Words for .NET 渲染文档时设置系统字体文件夹和自定义文件夹。通过遵循此分步指南，您可以轻松指定在渲染文档时使用的多个字体文件夹，包括系统文件夹和自定义文件夹。 Aspose.Words 提供了强大而灵活的 API，用于文档中字体的文字处理。有了这些知识，您就可以控制和自定义在根据您的特定需求渲染文档时使用的字体源。
 
 ### 常见问题解答
 

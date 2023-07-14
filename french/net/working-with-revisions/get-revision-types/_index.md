@@ -1,7 +1,7 @@
 ---
 title: Obtenir les types de mots de révision
 linktitle: Obtenir les types de mots de révision
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Obtenez des types de révision de mots dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10

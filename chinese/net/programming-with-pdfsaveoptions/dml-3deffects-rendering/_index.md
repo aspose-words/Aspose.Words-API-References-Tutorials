@@ -1,7 +1,7 @@
 ---
 title: 在 PDF 文档中渲染 3D DML 3DEffects
 linktitle: 在 PDF 文档中渲染 3D DML 3DEffects
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在使用 Aspose.Words for .NET 转换为 PDF 时启用 3D DML 效果渲染。
 type: docs
 weight: 10

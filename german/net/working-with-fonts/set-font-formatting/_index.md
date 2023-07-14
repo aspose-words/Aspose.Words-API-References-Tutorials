@@ -1,7 +1,7 @@
 ---
 title: Legen Sie die Schriftartformatierung fest
 linktitle: Legen Sie die Schriftartformatierung fest
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Schriftartformatierung in Word-Dokumenten festlegen und attraktive Dokumente erstellen.
 type: docs
 weight: 10
@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Erstellen und formatieren Sie das Dokument
- Erstellen Sie eine Instanz von`Document` Klasse und die`DocumentBuilder` Klasse zum Erstellen des Dokuments. Benutzen Sie die`Font` Eigentum der`DocumentBuilder` , um auf die Eigenschaften der Schriftartformatierung zuzugreifen.
+ Erstellen Sie eine Instanz von`Document` Klasse und die`DocumentBuilder` Klasse zum Erstellen des Dokuments. Benutzen Sie die`Font`Eigentum der`DocumentBuilder` , um auf die Eigenschaften der Schriftartformatierung zuzugreifen.
 
 ```csharp
 Document doc = new Document();
@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ### Beispielquellcode zum Festlegen der Schriftartformatierung mit Aspose.Words für .NET 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

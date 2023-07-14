@@ -1,7 +1,7 @@
 ---
 title: Insérer ASKField sans Document Builder
 linktitle: Insérer ASKField sans Document Builder
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer un champ ASK dans vos documents Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -60,7 +60,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-// Insérez le champ ASK.
+//Insérez le champ ASK.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
 
 field.BookmarkName = "Test 1";
@@ -94,8 +94,8 @@ R : Pour insérer un champ ASK dans un document Word sans utiliser Document Bui
 
 #### Q : Comment obtenir la réponse de l'utilisateur pour un champ ASK dans un document Word ?
 
-R : Pour obtenir la réponse de l'utilisateur pour un champ ASK dans un document Word, vous pouvez utiliser la méthode GetFieldNames disponible dans la classe Document. Cette méthode renvoie une liste des noms des champs présents dans le document. Vous pouvez ensuite vérifier si le nom du champ ASK est présent dans la liste et récupérer la réponse associée.
+: Pour obtenir la réponse de l'utilisateur pour un champ ASK dans un document Word, vous pouvez utiliser la méthode GetFieldNames disponible dans la classe Document. Cette méthode renvoie une liste des noms des champs présents dans le document. Vous pouvez ensuite vérifier si le nom du champ ASK est présent dans la liste et récupérer la réponse associée.
 
 #### Q : Le champ ASK peut-il être utilisé pour demander plus d'informations à l'utilisateur ?
 
-: Oui, le champ ASK peut être utilisé pour demander plusieurs informations à l'utilisateur. Vous pouvez insérer plusieurs champs ASK dans votre document, chacun avec une question différente. Lorsque le document est ouvert, l'utilisateur sera invité à fournir les réponses correspondantes.
+R : Oui, le champ ASK peut être utilisé pour demander plusieurs informations à l'utilisateur. Vous pouvez insérer plusieurs champs ASK dans votre document, chacun avec une question différente. Lorsque le document est ouvert, l'utilisateur sera invité à fournir les réponses correspondantes.

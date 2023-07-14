@@ -1,7 +1,7 @@
 ---
 title: Klare Inhaltskontrolle
 linktitle: Klare Inhaltskontrolle
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET den Inhalt eines Steuerelements in einem Word-Dokument löschen.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Dieses Tutorial zeigt, wie Sie den Inhalt eines SDT in einem Word-Dokument mit A
 Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
 - Aspose.Words für .NET-Bibliothek installiert.
-- Grundkenntnisse in C# und der Arbeit mit Word-Dokumenten.
+- Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
 ## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
  Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem sich Ihr Dokument befindet.
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## Schritt 4: Speichern Sie das Dokument
-Speichern Sie das geänderte Dokument mit`Save`Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithSdt.ClearContentsControl.doc“.
+ Speichern Sie das geänderte Dokument mit`Save`Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithSdt.ClearContentsControl.doc“.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 ### Beispielquellcode für Clear Contents Control mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

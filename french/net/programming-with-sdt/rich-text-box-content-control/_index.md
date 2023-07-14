@@ -1,7 +1,7 @@
 ---
 title: Contrôle du contenu de la zone de texte enrichi
 linktitle: Contrôle du contenu de la zone de texte enrichi
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à créer un contrôle de contenu de zone de texte enrichi dans un document Word à l'aide d'Aspose.Words pour .NET permettant la mise en forme et le style du texte.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Ce didacticiel montre comment créer un contrôle de contenu de zone de texte en
 Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
 - Bibliothèque Aspose.Words pour .NET installée.
-- Connaissance de base de C# et travail avec des documents Word.
+- Connaissance de base de C# et du traitement de texte avec des documents Word.
 
 ## Étape 1 : Configurer le répertoire de documents
- Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
+ Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ### Exemple de code source pour le contrôle du contenu de la zone de texte enrichi à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

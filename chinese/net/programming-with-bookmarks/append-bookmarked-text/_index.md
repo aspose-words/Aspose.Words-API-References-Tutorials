@@ -1,7 +1,7 @@
 ---
-title: 添加书签文本
-linktitle: 添加书签文本
-second_title: Aspose.Words for .NET API 参考
+title: 在 Word 文档中附加添加书签的文本
+linktitle: 在 Word 文档中附加添加书签的文本
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 从 Word 文档中的书签添加文本。
 type: docs
 weight: 10
@@ -100,3 +100,22 @@ dstNode.AppendChild(newNode);
 ## 结论
 
 在本文中，我们探索了 C# 源代码，以了解如何使用 Aspose.Words for .NET 的追加书签文本功能。我们按照分步指南从书签中获取段落、验证父项以及将段落复制到另一个文档。
+
+### 在 Word 文档中附加书签文本的常见问题解答
+
+#### Q1：使用 Aspose.Words for .NET 中的“添加带有书签的文本”功能有哪些先决条件？
+
+答：要使用Aspose.Words for .NET中的“添加带有书签的文本”功能，您需要具备C#语言的基础知识。您还需要一个安装了 Aspose.Words 库的 .NET 开发环境。
+
+#### Q2：如何获取Word文档中包含书签开头和结尾的段落？
+
+答：要获取Word文档中包含书签开头和结尾的段落，您可以访问`BookmarkStart`和`BookmarkEnd`书签的属性。这是示例代码：
+
+```csharp
+Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+```
+
+#### Q3：如果开始段落和结束段落没有有效的父段落会怎样？
+
+答：如果开始和结束段落没有有效的父段落，即它们不是真正的段落，则会抛出异常。这种情况目前无法处理。

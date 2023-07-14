@@ -1,7 +1,7 @@
 ---
 title: Ole-Objekt mit Stream als Symbol einfügen
 linktitle: Ole-Objekt mit Stream als Symbol einfügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein OLE-Objekt als Symbol mithilfe eines Streams einfügen.
 type: docs
 weight: 10

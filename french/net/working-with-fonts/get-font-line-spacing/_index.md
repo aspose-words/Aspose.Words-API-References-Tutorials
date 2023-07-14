@@ -1,7 +1,7 @@
 ---
 title: Obtenir l'espacement des lignes de police
 linktitle: Obtenir l'espacement des lignes de police
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Dans ce didacticiel, découvrez comment obtenir l'espacement des lignes de police dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10

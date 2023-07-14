@@ -1,7 +1,7 @@
 ---
 title: Bild
 linktitle: Bild
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Bilder mit Aspose.Words für .NET einfügen und anpassen.
 type: docs
 weight: 10

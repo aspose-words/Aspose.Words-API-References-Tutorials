@@ -1,7 +1,7 @@
 ---
 title: Insérer la table des matières
 linktitle: Insérer la table des matières
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer une table des matières dans des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10

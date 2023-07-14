@@ -1,8 +1,8 @@
 ---
-title: Créer un signet
-linktitle: Créer un signet
-second_title: Référence de l'API Aspose.Words pour .NET
-description: Apprenez à créer des signets dans un document et à spécifier les niveaux d'aperçu des signets dans un PDF à l'aide d'Aspose.Words pour .NET.
+title: Créer un signet dans un document Word
+linktitle: Créer un signet dans un document Word
+second_title: API de traitement de documents Aspose.Words
+description: Apprenez à créer des signets dans un document Word et à spécifier les niveaux d'aperçu des signets dans un PDF à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-bookmarks/create-bookmark/
@@ -93,3 +93,105 @@ Voici l'exemple de code source complet pour illustrer la création de signets à
 ## Conclusion
 
 Dans cet article, nous avons exploré le code source C# pour comprendre comment utiliser la fonction Créer un signet d'Aspose.Words pour .NET. Nous avons suivi un guide étape par étape pour créer des signets dans un document et spécifier les niveaux d'aperçu des signets dans un fichier PDF de sortie.
+
+### FAQ
+
+#### Q : Quels sont les prérequis pour utiliser la fonction "Créer des signets" dans Aspose.Words pour .NET ?
+
+R : Pour utiliser la fonction "Créer des signets" dans Aspose.Words pour .NET, vous devez avoir une connaissance de base du langage C#. Vous avez également besoin d'un environnement de développement .NET avec la bibliothèque Aspose.Words installée.
+
+#### Q : Comment créer un document dans Aspose.Words pour .NET ?
+
+ R : Pour créer un document dans Aspose.Words pour .NET, vous pouvez utiliser le`Document`classe. Voici un exemple de code :
+
+```csharp
+Document doc = new Document();
+```
+
+#### Q : Comment créer un signet principal dans un document à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour créer un signet principal dans un document à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`StartBookmark` méthode pour démarrer le signet, ajouter du texte ou d'autres signets à l'intérieur, puis utilisez la` EndBookmark` pour en finir. Voici un exemple de code :
+
+```csharp
+builder.StartBookmark("My Bookmark");
+builder.Writeln("Text inside bookmark.");
+builder.EndBookmark("My Bookmark");
+```
+
+#### Q : Comment créer un signet imbriqué dans un signet principal à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour créer un signet imbriqué dans un signet principal à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le même`StartBookmark` et`EndBookmark` méthodes pour démarrer et terminer le signet imbriqué. Voici un exemple de code :
+
+```csharp
+builder.StartBookmark("Embedded bookmark");
+builder.Writeln("Text inside nested bookmark.");
+builder.EndBookmark("Embedded bookmark");
+```
+
+#### Q : Comment spécifier les niveaux d'aperçu des signets dans un PDF de sortie à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour spécifier les niveaux d'aperçu des signets dans un PDF de sortie à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`PdfSaveOptions` classe et la`BookmarksOutlineLevels` propriété. Vous pouvez ajouter des signets principaux et des signets imbriqués avec leurs niveaux respectifs. Voici un exemple de code :
+
+```csharp
+PdfSaveOptions options = new PdfSaveOptions();
+options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
+options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
+```
+
+#### Q : Comment enregistrer un document après avoir créé des signets à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour enregistrer un document après avoir créé des signets à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Save` méthode de la`Document` objet spécifiant le chemin du fichier de destination. Voici un exemple de code :
+
+```csharp
+doc.Save("path/to/your/output-document.docx");
+```
+
+#### Q : Comment spécifier les niveaux d'aperçu des signets dans un PDF de sortie à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour spécifier les niveaux d'aperçu des signets dans un PDF de sortie à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`PdfSaveOptions` classe et la`BookmarksOutlineLevels` propriété. Vous pouvez ajouter des signets principaux et des signets imbriqués avec leurs niveaux respectifs. Voici un exemple de code :
+
+```csharp
+PdfSaveOptions options = new PdfSaveOptions();
+options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
+options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
+doc.Save("path/to/your/output-pdf-file.pdf", options);
+```
+
+#### Q : Comment créer des signets imbriqués dans un signet principal à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour créer des signets imbriqués dans un signet principal à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le même`StartBookmark` et`EndBookmark` méthodes pour démarrer et terminer les signets imbriqués. Assurez-vous de spécifier le signet parent en tant que paramètre lors de l'appel du`StartBookmark` méthode. Voici un exemple de code :
+
+```csharp
+builder.StartBookmark("Main bookmark");
+builder.Writeln("Text inside main bookmark.");
+
+builder.StartBookmark("Nested bookmark 1");
+builder.Writeln("Text inside first nested bookmark.");
+builder.EndBookmark("Nested bookmark 1");
+
+builder.StartBookmark("Nested bookmark 2");
+builder.Writeln("Text inside second nested bookmark.");
+builder.EndBookmark("Nested bookmark 2");
+
+builder.EndBookmark("Main bookmark");
+```
+
+#### Q : Comment ajouter du texte dans un signet à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour ajouter du texte à l'intérieur d'un signet à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`Write` méthode de la`DocumentBuilder` objet spécifiant le texte à ajouter. Voici un exemple de code :
+
+```csharp
+builder.StartBookmark("My Bookmark");
+builder.Write("Text inside bookmark.");
+builder.EndBookmark("My Bookmark");
+```
+
+#### Q : Comment créer un signet principal dans un document à l'aide d'Aspose.Words pour .NET ?
+
+ R : Pour créer un signet principal dans un document à l'aide d'Aspose.Words pour .NET, vous pouvez utiliser le`StartBookmark` méthode pour démarrer le signet et la`EndBookmark` méthode pour y mettre fin. Voici un exemple de code :
+
+```csharp
+builder.StartBookmark("My Bookmark");
+builder.Writeln("Text inside bookmark.");
+builder.EndBookmark("My Bookmark");
+```

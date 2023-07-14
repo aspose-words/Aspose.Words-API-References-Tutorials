@@ -1,7 +1,7 @@
 ---
 title: Vérifier le document Word crypté
 linktitle: Vérifier le document Word crypté
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour vérifier qu'un document Word est crypté avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Étape 3 : Vérifiez si le document est crypté
 
- Nous utilisons le`IsEncrypted` propriété de la`FileFormatInfo` objet pour vérifier si le document est crypté. Cette propriété renvoie`true` si le document est crypté, sinon il renvoie`false`. Nous affichons le résultat dans la console.
+ Nous utilisons le`IsEncrypted`propriété de la`FileFormatInfo` objet pour vérifier si le document est crypté. Cette propriété renvoie`true` si le document est crypté, sinon il renvoie`false`. Nous affichons le résultat dans la console.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -63,7 +63,7 @@ Détecter le format de fichier.
 Vérifiez si le document est crypté.
 
 ### Q : Comment puis-je définir le répertoire de documents ?
- Pour définir le répertoire des documents, vous devez remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel de votre répertoire de documents dans le code suivant :
+ Pour définir le répertoire des documents, vous devez remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel de votre répertoire de documents dans le code suivant :
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -77,7 +77,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 ```
 
 ### Q : Comment vérifier si le document est crypté ?
- Vous pouvez utiliser le`IsEncrypted` propriété de la`FileFormatInfo` objet pour vérifier si le document est crypté. Cette propriété renvoie`true` si le document est crypté, sinon il renvoie`false`. Le résultat s'affiche dans la console :
+ Vous pouvez utiliser le`IsEncrypted`propriété de la`FileFormatInfo` objet pour vérifier si le document est crypté. Cette propriété renvoie`true` si le document est crypté, sinon il renvoie`false`. Le résultat s'affiche dans la console :
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

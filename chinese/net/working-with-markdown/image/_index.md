@@ -1,7 +1,7 @@
 ---
 title: 图像
 linktitle: 图像
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 分步指南插入和自定义图像。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: 使用目标样式
 linktitle: 使用目标样式
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 应用目标文档样式时加入和追加 Word 文档。
 type: docs
 weight: 10

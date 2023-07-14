@@ -1,7 +1,7 @@
 ---
 title: Supprimer les champs
 linktitle: Supprimer les champs
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour supprimer des champs de fusion dans vos documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Ceci est particulièrement utile si vous souhaitez conserver uniquement le conte
 // Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document existant.
+// Charger le document existant.
 Document doc = new Document(dataDir + "YourDocument.docx");
 
 // Supprimer les champs de fusion.
@@ -74,4 +74,4 @@ R : Pour vérifier si un champ existe dans un document Word avant de le supprime
 
 #### Q : Quels sont les effets de la suppression d'un champ sur le reste du document ?
 
-: Lorsque vous supprimez un champ dans un document Word, le champ est supprimé du document et le texte généré ou la valeur calculée associée au champ est supprimé. Cela peut affecter la mise en page du document, car le contenu généré par le champ sera supprimé.
+R : Lorsque vous supprimez un champ dans un document Word, le champ est supprimé du document et le texte généré ou la valeur calculée associée au champ est supprimé. Cela peut affecter la mise en page du document, car le contenu généré par le champ sera supprimé.

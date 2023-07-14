@@ -1,7 +1,7 @@
 ---
 title: Ole-Objekt als Symbol in Word-Dokument einfügen
 linktitle: Ole-Objekt als Symbol in Word-Dokument einfügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein OLE-Objekt als Symbol in ein Word-Dokument einfügen.
 type: docs
 weight: 10

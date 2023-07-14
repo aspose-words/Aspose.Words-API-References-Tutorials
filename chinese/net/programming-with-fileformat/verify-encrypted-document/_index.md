@@ -1,7 +1,7 @@
 ---
 title: 验证加密的Word文档
 linktitle: 验证加密的Word文档
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 验证 Word 文档是否已使用 Aspose.Words for .NET 加密的分步指南。
 type: docs
 weight: 10

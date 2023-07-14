@@ -1,7 +1,7 @@
 ---
 title: تصدير حقل نموذج إدخال النص كنص
 linktitle: تصدير حقل نموذج إدخال النص كنص
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لتصدير حقول نموذج إدخال النص كنص عادي باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

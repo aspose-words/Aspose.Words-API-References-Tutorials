@@ -1,7 +1,7 @@
 ---
 title: حدد مستوى القائمة
 linktitle: حدد مستوى القائمة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تحديد مستوى القائمة في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

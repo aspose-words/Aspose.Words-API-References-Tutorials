@@ -1,7 +1,7 @@
 ---
 title: Sposta al paragrafo
 linktitle: Sposta al paragrafo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare Aspose.Words per la funzione Sposta in paragrafo di .NET per navigare e manipolare i paragrafi nei documenti di Word a livello di programmazione.
 type: docs
 weight: 10

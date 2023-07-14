@@ -1,7 +1,7 @@
 ---
 title: Geteilter Tisch
 linktitle: Geteilter Tisch
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument teilen.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In diesem Tutorial lernen wir, wie man mit Aspose.Words für .NET eine Tabelle i
 2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
 ## Schritt 2: Laden des Dokuments
-Führen Sie die folgenden Schritte aus, um mit der Arbeit mit dem Dokument zu beginnen:
+Gehen Sie folgendermaßen vor, um die Textverarbeitung mit dem Dokument zu starten:
 
 ```csharp
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
@@ -71,7 +71,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 ### Beispielquellcode für Split Table mit Aspose.Words für .NET 
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

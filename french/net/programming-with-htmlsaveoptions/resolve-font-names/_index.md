@@ -1,7 +1,7 @@
 ---
 title: Résoudre les noms de police
 linktitle: Résoudre les noms de police
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour résoudre les noms de police manquants lors de la conversion en HTML avec Aspose.Words pour .NET.
 type: docs
 weight: 10

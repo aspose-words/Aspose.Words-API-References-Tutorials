@@ -1,7 +1,7 @@
 ---
 title: 检测 Word 文档上的数字签名
 linktitle: 检测 Word 文档上的数字签名
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 检测 Word 文档上的数字签名的分步指南。
 type: docs
 weight: 10

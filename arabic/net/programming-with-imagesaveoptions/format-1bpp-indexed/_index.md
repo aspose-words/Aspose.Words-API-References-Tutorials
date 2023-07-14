@@ -1,7 +1,7 @@
 ---
 title: تنسيق 1Bpp مفهرس
 linktitle: تنسيق 1Bpp مفهرس
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تنسيق الصور في 1 bpp مفهرسة باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل للصور ذات عمق الألوان المنخفض.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 
 ```csharp 
  
-			 // المسار إلى دليل المستند الخاص بك
+			 //المسار إلى دليل المستند الخاص بك
 			 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
             
             Document doc = new Document(dataDir + "Rendering.docx");

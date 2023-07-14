@@ -1,7 +1,7 @@
 ---
 title: Modifier l'espacement et les retraits des paragraphes asiatiques
 linktitle: Modifier l'espacement et les retraits des paragraphes asiatiques
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à modifier l'espacement et les retraits des paragraphes asiatiques avec Aspose.Words pour .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Ignorer l'en-tête de pied de page
 linktitle: Ignorer l'en-tête de pied de page
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à ajouter un document tout en ignorant le contenu de l'en-tête et du pied de page à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Étape 3 : Configurer les options de format d'importation
 
- Créer une instance de`ImportFormatOptions` classe et définissez la`IgnoreHeaderFooter` propriété à`false`. Cela garantit que le contenu de l'en-tête et du pied de page est inclus lors du processus d'ajout.
+ Créer une instance de`ImportFormatOptions`classe et définissez la`IgnoreHeaderFooter` propriété à`false`. Cela garantit que le contenu de l'en-tête et du pied de page est inclus lors du processus d'ajout.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Étape 4 : Ajouter le document source au document de destination
 
- Utilisez le`AppendDocument` méthode du document de destination pour ajouter le document source. Passer`ImportFormatMode.KeepSourceFormatting` comme deuxième paramètre et les options de format d'importation comme troisième paramètre.
+ Utilisez le`AppendDocument`méthode du document de destination pour ajouter le document source. Passer`ImportFormatMode.KeepSourceFormatting` comme deuxième paramètre et les options de format d'importation comme troisième paramètre.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -58,7 +58,7 @@ Ceci termine l'implémentation de l'ajout d'un document tout en ignorant le cont
 ### Exemple de code source pour Ignorer l'en-tête de pied de page à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

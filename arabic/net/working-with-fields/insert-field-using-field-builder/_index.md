@@ -1,7 +1,7 @@
 ---
 title: أدخل الحقل باستخدام Field Builder
 linktitle: أدخل الحقل باستخدام Field Builder
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إدراج الحقول المخصصة في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

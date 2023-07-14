@@ -1,7 +1,7 @@
 ---
 title: 设置优先级字体文件夹
 linktitle: 设置优先级字体文件夹
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 渲染文档时优先设置字体文件夹的分步指南。
 type: docs
 weight: 10
@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
 ## 结论
-在本教程中，我们学习了如何在使用 Aspose.Words for .NET 渲染文档时优先设置字体文件夹。通过遵循此分步指南，您可以在渲染文档时轻松指定具有自定义搜索优先级的多个字体文件夹。 Aspose.Words 提供了强大且灵活的 API，用于处理文档中的字体。有了这些知识，您就可以控制和自定义在根据您的特定需求渲染文档时使用的字体源。
+在本教程中，我们学习了如何在使用 Aspose.Words for .NET 渲染文档时优先设置字体文件夹。通过遵循此分步指南，您可以在渲染文档时轻松指定具有自定义搜索优先级的多个字体文件夹。 Aspose.Words 提供了强大而灵活的 API，用于文档中字体的文字处理。有了这些知识，您就可以控制和自定义在根据您的特定需求渲染文档时使用的字体源。
 
 ### 常见问题解答
 
@@ -77,4 +77,4 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 
 #### 问：在Aspose.Words中设置优先字体文件夹有什么用？
 
-答：在Aspose.Words中设置优先字体文件夹可以让您控制Word文档中字体的搜索顺序。这有助于您确保使用所需的字体并避免不必要的字体替换问题。
+答：在Aspose.Words中设置优先字体文件夹可以让您控制Word文档中字体的搜索顺序。这有助于您确保使用所需的字体并避免出现不需要的字体替换问题。

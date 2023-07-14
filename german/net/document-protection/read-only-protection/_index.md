@@ -1,7 +1,7 @@
 ---
-title: Nur-Lese-Schutz
-linktitle: Nur-Lese-Schutz
-second_title: Aspose.Words für .NET API-Referenz
+title: Nur-Lese-Schutz in Word-Dokumenten
+linktitle: Nur-Lese-Schutz in Word-Dokumenten
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Ihre schreibgeschützten Word-Dokumente mit Aspose.Words für .NET schützen.
 type: docs
 weight: 10
@@ -61,24 +61,55 @@ Hier ist der vollständige Quellcode für den schreibgeschützten Schutz mit Asp
 
 ```csharp
 
-	// Der Pfad zum Dokumentenverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// Der Pfad zum Dokumentenverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.Write("Open document as read-only");
+builder.Write("Open document as read-only");
 
-	// Geben Sie ein bis zu 15 Zeichen langes Passwort ein.
-	doc.WriteProtection.SetPassword("MyPassword");
+// Geben Sie ein bis zu 15 Zeichen langes Passwort ein.
+doc.WriteProtection.SetPassword("MyPassword");
 
-	// Machen Sie das Dokument schreibgeschützt.
-	doc.WriteProtection.ReadOnlyRecommended = true;
+// Machen Sie das Dokument schreibgeschützt.
+doc.WriteProtection.ReadOnlyRecommended = true;
 
-	// Wenden Sie den Schreibschutz als schreibgeschützt an.
-	doc.Protect(ProtectionType.ReadOnly);
-	doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
+// Wenden Sie den Schreibschutz als schreibgeschützt an.
+doc.Protect(ProtectionType.ReadOnly);
+doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 ```
 
 Wenn Sie diese Schritte befolgen, können Sie Ihre Dokumente ganz einfach schützen
 
+## Abschluss
+
+In diesem Tutorial haben wir die Leseschutzfunktion von Aspose.Words für .NET untersucht, mit der Sie Word-Dokumente schreibgeschützt machen können, um unbefugte Änderungen zu verhindern. Indem Sie die bereitgestellten Schritte befolgen, können Sie ganz einfach einen Leseschutz auf Ihre Dokumente anwenden und deren Sicherheit erhöhen. Der Leseschutz trägt dazu bei, die Integrität und Genauigkeit des Inhalts Ihres Dokuments sicherzustellen, indem er die Bearbeitungsmöglichkeiten einschränkt. Aspose.Words für .NET bietet eine leistungsstarke und flexible API für den Dokumentenschutz und unterstützt verschiedene andere Funktionen zum Anpassen und Sichern Ihrer Word-Dokumente.
+
+### FAQs zum schreibgeschützten Schutz in Word-Dokumenten
+
+#### F: Was ist der schreibgeschützte Schutz in Aspose.Words für .NET?
+
+A: Der schreibgeschützte Schutz in Aspose.Words für .NET ist eine Funktion, die es Ihnen ermöglicht, ein Word-Dokument schreibgeschützt zu machen und so unbefugte Änderungen zu verhindern. Wenn ein Dokument schreibgeschützt ist, können Benutzer das Dokument öffnen und anzeigen, aber keine Änderungen an seinem Inhalt vornehmen.
+
+#### F: Wie kann ich mit Aspose.Words für .NET einen schreibgeschützten Schutz auf ein Word-Dokument anwenden?
+
+A: Um mithilfe von Aspose.Words für .NET den Leseschutz auf ein Word-Dokument anzuwenden, können Sie die folgenden Schritte ausführen:
+1.  Erstellen Sie eine Instanz von`Document` Klasse und a`DocumentBuilder` Objekt.
+2.  Benutzen Sie die`DocumentBuilder` um Inhalte in das Dokument zu schreiben.
+3.  Legen Sie mithilfe von ein Passwort für das Dokument fest`SetPassword` Methode der`WriteProtection` Objekt.
+4.  Stellen Sie die ein`ReadOnlyRecommended`Eigentum der`WriteProtection` widersprechen`true` Ich empfehle, das Dokument schreibgeschützt zu öffnen.
+5.  Wenden Sie einen schreibgeschützten Schutz mit an`Protect` Methode der`Document` Objekt, Angabe der`ProtectionType` als`ReadOnly`.
+6.  Speichern Sie das geschützte Dokument mit`Save` Methode der`Document` Objekt.
+
+#### F: Kann ich mit Aspose.Words für .NET den Leseschutz aus einem Word-Dokument entfernen?
+
+A: Ja, Sie können den Leseschutz von einem Word-Dokument mit Aspose.Words für .NET entfernen. Dazu können Sie die verwenden`Unprotect` Methode der`Document` Klasse, die jeglichen vorhandenen Schutz aus dem Dokument entfernt.
+
+#### F: Kann ich für den Leseschutz in einem Word-Dokument ein anderes Passwort festlegen?
+
+ A: Nein, der Leseschutz in Aspose.Words für .NET erlaubt es Ihnen nicht, ein separates Passwort speziell für den Leseschutz festzulegen. Das mit dem festgelegte Passwort`SetPassword` Methode der`WriteProtection` Das Objekt gilt für den gesamten Dokumentschutz, einschließlich Lese- und Lese-/Schreibschutz.
+
+#### F: Können Benutzer den Leseschutz in einem Word-Dokument umgehen?
+
+A: Der Schreibschutz in einem Word-Dokument soll versehentliche oder unbefugte Änderungen verhindern und verhindern. Obwohl es ein gewisses Maß an Schutz bietet, kann es von Benutzern mit ausreichenden technischen Kenntnissen oder Bearbeitungsberechtigungen umgangen werden. Allerdings dient der Leseschutz als Abschreckung und trägt dazu bei, die Integrität des Dokuments zu wahren.

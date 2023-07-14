@@ -1,7 +1,7 @@
 ---
 title: Strukturierter Dokument-Tag-Bereich, Start-XML-Zuordnung
 linktitle: Strukturierter Dokument-Tag-Bereich, Start-XML-Zuordnung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mithilfe von Aspose.Words für .NET eine XML-Zuordnung für den Tag-Bereichsanfang eines strukturierten Dokuments in einem Word-Dokument einrichten.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ In diesem Tutorial wird erläutert, wie Sie mithilfe von Aspose.Words für .NET 
 Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
 - Aspose.Words für .NET-Bibliothek installiert.
-- Grundkenntnisse in C# und der Arbeit mit Word-Dokumenten.
+- Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
 ## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
  Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem sich Ihr Dokument befindet.
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 ### Beispielquellcode für Structured Document Tag Range Start XML Mapping mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

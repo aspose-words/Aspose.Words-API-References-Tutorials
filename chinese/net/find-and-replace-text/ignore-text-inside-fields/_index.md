@@ -1,7 +1,7 @@
 ---
 title: 忽略字段内的文本
 linktitle: 忽略字段内的文本
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 的“忽略字段内的文本”功能。
 type: docs
 weight: 10
@@ -102,3 +102,68 @@ Console.WriteLine(doc.GetText());
 ## 结论
 
 在本文中，我们探索了 C# 源代码，以了解如何在 Aspose.Words for .NET 中使用“忽略字段内的文本”功能。我们按照分步指南创建一个文档，插入一个内部有文本的字段，使用“忽略字段内的文本”功能，使用正则表达式执行搜索和替换操作，并显示修改后的文档。
+
+### 常见问题解答
+
+#### 问：Aspose.Words for .NET 中的“忽略字段内的文本”功能是什么？
+
+答：Aspose.Words for .NET 中的“忽略字段内的文本”功能允许您指定在某些操作（例如查找和替换文本）期间是否应忽略字段内的文本。启用此功能后，操作期间不会考虑字段内的文本。
+
+#### 问：如何使用 Aspose.Words for .NET 创建新文档？
+
+答：要使用 Aspose.Words for .NET 创建新文档，您可以实例化一个`Document`目的。以下是创建新文档的 C# 代码示例：
+
+```csharp
+Document doc = new Document();
+```
+
+#### 问：如何使用 Aspose.Words for .NET 在文档中插入带有文本的字段？
+
+答：一旦有了文档，您就可以使用`DocumentBuilder`目的。例如，要插入包含文本“字段中的文本”的“INCLUDETEXT”字段，您可以使用`InsertField`方法：
+
+```csharp
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertField("INCLUDETEXT", "Text in field");
+```
+
+#### 问：如何忽略 Aspose.Words for .NET 中字段内的文本？
+
+答：要在后续操作中忽略字段内的文本，您可以使用`FindReplaceOptions`对象并设置`IgnoreFields`财产给`true`:
+
+```csharp
+FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
+```
+
+#### 问：如何在 Aspose.Words for .NET 中使用正则表达式执行搜索和替换？
+
+答：要使用正则表达式对文档文本执行搜索和替换操作，可以使用.NET`Regex`班级。例如，要搜索所有出现的字母“e”并将其替换为星号“* “，您可以创建一个`Regex`对象并将其与`Replace`方法：
+
+```csharp
+Regex regex = new Regex("e");
+doc.Range.Replace(regex, "*", options);
+```
+
+#### 问：如何在 Aspose.Words for .NET 中查看文档的修改输出？
+
+ A：应用搜索和替换操作后，您可以使用以下命令查看文档的更改内容：`GetText`方法：
+
+```csharp
+Console.WriteLine(doc.GetText());
+```
+
+#### 问：如何在 Aspose.Words for .NET 的输出结果中包含字段？
+
+答：要在输出结果中包含字段内的文本，您可以更改选项以不忽略字段。为此，您可以设置`IgnoreFields`的财产`FindReplaceOptions`反对`false`:
+
+```csharp
+options.IgnoreFields = false;
+```
+
+#### 问：如何在 Aspose.Words for .NET 中显示修改后的文档及其字段？
+
+答：将选项更改为包含字段后，您可以再次执行搜索并替换以获得包含字段内文本的结果：
+
+```csharp
+doc.Range.Replace(regex, "*", options);
+Console.WriteLine(doc.GetText());
+```

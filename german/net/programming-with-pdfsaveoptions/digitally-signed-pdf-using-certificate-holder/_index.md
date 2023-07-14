@@ -1,7 +1,7 @@
 ---
 title: Fügen Sie mithilfe des Zertifikatsinhabers eine digitale Signatur zu PDF hinzu
 linktitle: Fügen Sie mithilfe des Zertifikatsinhabers eine digitale Signatur zu PDF hinzu
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mithilfe von Certificate Holder mit Aspose.Words für .NET eine digitale Signatur zu PDF hinzufügen.
 type: docs
 weight: 10

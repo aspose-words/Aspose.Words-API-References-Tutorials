@@ -1,7 +1,7 @@
 ---
 title: 创建并添加段落节点
 linktitle: 创建并添加段落节点
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 创建段落节点并将其添加到您的 Word 文档中。
 type: docs
 weight: 10

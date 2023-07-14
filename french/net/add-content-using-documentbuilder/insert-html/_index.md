@@ -1,7 +1,7 @@
 ---
 title: Insérer HTML
 linktitle: Insérer HTML
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer du contenu HTML dans des documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape.
 type: docs
 weight: 10
@@ -34,7 +34,7 @@ builder.InsertHtml(
 ```
 
 ## Étape 3 : Enregistrer le document
-Après avoir inséré le contenu HTML, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
+Après avoir inséré le contenu HTML, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");

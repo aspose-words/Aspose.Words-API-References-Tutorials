@@ -1,7 +1,7 @@
 ---
 title: Insérer un champ à l'aide du générateur de champs
 linktitle: Insérer un champ à l'aide du générateur de champs
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer des champs personnalisés dans vos documents Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10

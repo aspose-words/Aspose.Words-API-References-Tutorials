@@ -1,7 +1,7 @@
 ---
 title: Inserisci immagine in linea
 linktitle: Inserisci immagine in linea
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire immagini in linea nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

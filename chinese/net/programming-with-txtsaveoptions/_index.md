@@ -1,13 +1,13 @@
 ---
-title: 使用 Txtsaveoptions 进行编程
-linktitle: 使用 Txtsaveoptions 进行编程
-second_title: Aspose.Words for .NET API 参考
+title: 使用 Txtsaveoptions 进行文字处理
+linktitle: 使用 Txtsaveoptions 进行文字处理
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 中的文本文件保存选项进行编程。通过 C# 中的分步教程和示例代码，了解如何指定编码、格式化文本、管理换行符等。
 type: docs
 weight: 1700
 url: /zh/net/programming-with-txtsaveoptions/
 ---
-Aspose.Words for .NET 教程将引导您了解该库在操作 Word 文档的背景下的各种功能和用法。其中一篇教程重点介绍使用 TXT 保存选项进行编程，向您展示如何从 Word 文档生成文本文件，同时保持内容格式和结构。您将了解如何使用各种可用选项来自定义文档到文本文件的转换，例如指定列分隔符和管理空格。
+Aspose.Words for .NET 教程将引导您了解该库在操作 Word 文档的背景下的各种功能和用法。其中一篇教程重点介绍使用 TXT 保存选项的文字处理，向您展示如何从 Word 文档生成文本文件，同时保持内容格式和结构。您将了解如何使用各种可用选项来自定义文档到文本文件的转换，例如指定列分隔符和管理空格。
 
 这些教程提供分步说明以及示例 C# 代码，以帮助您理解和练习所涵盖的概念。无论您是初学者还是经验丰富的开发人员，您都将找到有关如何使用 Aspose.Words for .NET 以及如何充分利用这个强大的文档操作库的详细信息。
 

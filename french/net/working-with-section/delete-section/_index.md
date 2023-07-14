@@ -1,7 +1,7 @@
 ---
 title: Supprimer la rubrique
 linktitle: Supprimer la rubrique
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Dans ce didacticiel, découvrez comment supprimer une section spécifique d'un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10

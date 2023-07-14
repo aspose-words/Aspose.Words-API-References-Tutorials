@@ -1,7 +1,7 @@
 ---
 title: 将边框和底纹应用于段落
 linktitle: 将边框和底纹应用于段落
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将边框和底纹应用到段落。
 type: docs
 weight: 10

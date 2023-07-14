@@ -1,13 +1,12 @@
 ---
-title: حماية كلمة المرور
-linktitle: حماية كلمة المرور
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية حماية مستندات Word الخاصة بك بكلمة مرور باستخدام Aspose.Words for .NET.
+title: حماية كلمة المرور في مستند Word
+linktitle: حماية كلمة المرور في مستند Word
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
+description: تعرف على كيفية الحماية بكلمة مرور في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/document-protection/password-protection/
 ---
-
 في هذا البرنامج التعليمي ، سنوجهك عبر خطوات استخدام ميزة الحماية بكلمة مرور في Aspose.Words for .NET. تتيح لك هذه الميزة حماية مستند Word بكلمة مرور لضمان سريته. اتبع الخطوات التالية:
 
 ## الخطوة 1: إنشاء المستند وتطبيق الحماية
@@ -44,17 +43,44 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 فيما يلي رمز المصدر الكامل لحماية كلمة المرور باستخدام Aspose.Words for .NET:
 
 ```csharp
+// المسار إلى دليل المستندات.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
 
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
+//تطبيق حماية المستندات.
+doc.Protect(ProtectionType.NoProtection, "password");
 
-	//تطبيق حماية المستندات.
-	doc.Protect(ProtectionType.NoProtection, "password");
-
-	doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
-
+doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 ```
 
 تذكر استبدال "دليل المستندات" بدليل المستندات و "كلمة المرور" بكلمة المرور الفعلية التي تريد استخدامها.
 
+
+## خاتمة
+
+في هذا البرنامج التعليمي ، استكشفنا ميزة حماية كلمة المرور الخاصة بـ Aspose.Words for .NET ، والتي تتيح لك حماية مستندات Word بكلمة مرور. باتباع الخطوات المقدمة ، يمكنك بسهولة تطبيق الحماية بكلمة مرور على مستنداتك والتأكد من سريتها. تعد الحماية بكلمة مرور طريقة فعالة لتقييد الوصول غير المصرح به إلى المعلومات الحساسة. يوفر Aspose.Words for .NET واجهة برمجة تطبيقات موثوقة ومباشرة للتعامل مع حماية المستندات وتدعم العديد من الميزات الأخرى لتعزيز أمان المستند وسلامته.
+
+### الأسئلة الشائعة لحماية كلمة المرور في مستند Word
+
+#### س: كيف تعمل الحماية بكلمة المرور في Aspose.Words for .NET؟
+
+ج: حماية كلمة المرور في Aspose.Words for .NET هي ميزة تسمح لك بتعيين كلمة مرور لمستند Word لتقييد الوصول غير المصرح به. عندما يكون المستند محميًا بكلمة مرور ، يُطلب من المستخدمين إدخال كلمة المرور الصحيحة قبل أن يتمكنوا من فتح المستند أو تعديله.
+
+#### س: كيف يمكنني تطبيق الحماية بكلمة مرور على مستند Word باستخدام Aspose.Words for .NET؟
+
+ج: لتطبيق الحماية بكلمة مرور على مستند Word باستخدام Aspose.Words for .NET ، يمكنك اتباع الخطوات التالية:
+1.  قم بإنشاء مثيل لـ`Document` فصل.
+2.  استخدم ال`Protect` طريقة`Document` كائن ، مع تحديد كلمة المرور والمطلوب`ProtectionType` . لحماية كلمة المرور ، اضبط`ProtectionType` ل`NoProtection`.
+3.  احفظ المستند المحمي باستخدام امتداد`Save` طريقة`Document` هدف.
+
+#### س: ما هو الغرض من معلمة ProtectionType في طريقة Protect؟
+
+ ج: إن`ProtectionType` المعلمة في`Protect` تسمح لك طريقة Aspose.Words for .NET بتحديد نوع الحماية التي سيتم تطبيقها على المستند. في حالة الحماية بكلمة مرور ، يمكنك تعيين ملف`ProtectionType` ل`NoProtection` للإشارة إلى أن المستند محمي بكلمة مرور.
+
+#### س: هل يمكنني إزالة الحماية بكلمة مرور من مستند Word باستخدام Aspose.Words for .NET؟
+
+ ج: نعم ، يمكنك إزالة الحماية بكلمة مرور من مستند Word باستخدام Aspose.Words for .NET. للقيام بذلك ، يمكنك استخدام ملف`Unprotect` طريقة`Document` class ، والتي تزيل أي حماية موجودة من المستند.
+
+#### س: هل من الممكن تعيين كلمات مرور مختلفة لأنواع حماية مختلفة في مستند Word؟
+
+ ج: لا ، ليس من الممكن تعيين كلمات مرور مختلفة لأنواع حماية مختلفة في مستند Word باستخدام Aspose.Words for .NET. كلمة المرور المحددة في`Protect` تنطبق الطريقة على حماية المستند الشاملة ، بغض النظر عن نوع الحماية. إذا كنت تريد تطبيق كلمات مرور مختلفة لأنواع حماية مختلفة ، فستحتاج إلى إدارة هذا المنطق يدويًا.

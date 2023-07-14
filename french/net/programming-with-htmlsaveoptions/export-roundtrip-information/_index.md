@@ -1,7 +1,7 @@
 ---
 title: Exporter les informations aller-retour
 linktitle: Exporter les informations aller-retour
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour exporter des informations aller-retour lors de l'enregistrement d'un document au format HTML avec Aspose.Words pour .NET.
 type: docs
 weight: 10

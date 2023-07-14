@@ -1,7 +1,7 @@
 ---
 title: Améliorer le positionnement du texte PDF avec un positionnement de texte supplémentaire
 linktitle: Améliorer le positionnement du texte PDF avec un positionnement de texte supplémentaire
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à améliorer le positionnement du texte PDF avec un positionnement de texte supplémentaire lors de la conversion de documents Word en PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10

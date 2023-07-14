@@ -1,7 +1,7 @@
 ---
 title: 导出到 Markdown 并对齐表格内容
 linktitle: 导出到 Markdown 并对齐表格内容
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将具有不同对齐方式的表格内容导出到 Markdown 文件。
 type: docs
 weight: 10

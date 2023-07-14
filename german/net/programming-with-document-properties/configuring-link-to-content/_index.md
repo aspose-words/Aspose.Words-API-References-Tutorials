@@ -1,7 +1,7 @@
 ---
 title: Link zum Inhalt konfigurieren
 linktitle: Link zum Inhalt konfigurieren
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Einrichten der Verknüpfung mit Inhalten in einem Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10

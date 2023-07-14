@@ -1,7 +1,7 @@
 ---
 title: Aggiungi contenuto utilizzando Documentbuilder
 linktitle: Aggiungi contenuto utilizzando Documentbuilder
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come aggiungere contenuto ai tuoi documenti Word utilizzando DocumentBuilder con Aspose.Words per .NET. Tutorial pratici con esempi di codice dettagliati.
 type: docs
 weight: 1460
@@ -33,7 +33,7 @@ Aggiunta di contenuto tramite DocumentBuilder è una risorsa completa che ti gui
 | [Sposta nel documento Inizio Fine](./move-to-document-start-end/) | Scopri come utilizzare Aspose.Words per .NET per passare all'inizio e alla fine del documento nei documenti di Word con questa guida dettagliata.|
 | [Sposta in sezione](./move-to-section/) | Guida dettagliata all'utilizzo di Sposta in sezione in Aspose.Words per .NET manipolare sezioni e paragrafi nei documenti di Word. |
 | [Sposta in intestazioni piè di pagina](./move-to-headers-footers/) | Scopri come utilizzare Aspose.Words per .NET per navigare e modificare intestazioni e piè di pagina nei documenti di Word con questa guida dettagliata. |
-| [Sposta al paragrafo](./move-to-paragraph/) | Scopri come utilizzare Aspose.Words per la funzione Sposta in paragrafo di .NET per navigare e manipolare i paragrafi nei documenti di Word a livello di codice. |
+| [Sposta al paragrafo](./move-to-paragraph/) | Scopri come utilizzare Aspose.Words per la funzione Sposta in paragrafo di .NET per navigare e manipolare i paragrafi nei documenti di Word a livello di programmazione. |
 | [Sposta nella cella della tabella](./move-to-table-cell/) | Guida dettagliata all'utilizzo di Sposta nella cella della tabella in Aspose.Words per .NET |
 | [Sposta alla fine del segnalibro](./move-to-bookmark-end/) | Scopri come utilizzare Aspose.Words per .NET per spostarti alla fine di un segnalibro nei documenti di Word con questa guida dettagliata. |
 | [Sposta nel campo di unione](./move-to-merge-field/) | Scopri come implementare la funzione Sposta per unire il campo in Aspose.Words per .NET utilizzando la guida dettagliata. |

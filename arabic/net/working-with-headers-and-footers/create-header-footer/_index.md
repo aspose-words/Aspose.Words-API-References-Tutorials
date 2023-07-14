@@ -1,7 +1,7 @@
 ---
 title: إنشاء تذييل الرأس
 linktitle: إنشاء تذييل الرأس
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إنشاء رؤوس الصفحات وتذييلاتها في مستندات Word باستخدام Aspose.Words for .NET. تخصيص الرؤوس والتذييلات لكل صفحة.
 type: docs
 weight: 10
@@ -115,7 +115,7 @@ pageSetup.Orientation = Orientation.Landscape;
 // وقد تم بالفعل تحديد رأس / تذييل الصفحة في القسم السابق.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// يعرض هذا القسم رؤوس / تذييلات القسم السابق افتراضيًا ، استدعاء currentSection.HeadersFooters.LinkToPrevious (خطأ) لكسر هذا الرابط ،
+// يعرض هذا القسم رؤوس / تذييلات القسم السابق افتراضيًا ، استدعاء currentSection.HeadersFooters.LinkToPrevious (خطأ) لكسر هذا الارتباط ،
 // يختلف عرض الصفحة بالنسبة للقسم الجديد ، لذلك نحتاج إلى تعيين عروض خلايا مختلفة لجدول تذييل الصفحة.
 currentSection.HeadersFooters.LinkToPrevious(false);
 

@@ -1,7 +1,7 @@
 ---
 title: 在 Word 文档中插入 Ole 对象
 linktitle: 在 Word 文档中插入 Ole 对象
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入 OLE 对象。
 type: docs
 weight: 10

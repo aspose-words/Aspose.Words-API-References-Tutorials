@@ -1,7 +1,7 @@
 ---
 title: Schriftartnamen auflösen
 linktitle: Schriftartnamen auflösen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Beheben fehlender Schriftartnamen bei der Konvertierung in HTML mit Aspose.Words für .NET.
 type: docs
 weight: 10

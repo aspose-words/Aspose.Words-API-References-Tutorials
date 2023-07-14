@@ -1,7 +1,7 @@
 ---
 title: قم بإدراج كائن Ole كرمز باستخدام الدفق
 linktitle: قم بإدراج كائن Ole كرمز باستخدام الدفق
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إدراج كائن OLE كرمز باستخدام دفق باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

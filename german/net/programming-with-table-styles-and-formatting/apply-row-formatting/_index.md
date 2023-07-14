@@ -1,7 +1,7 @@
 ---
 title: Zeilenformatierung anwenden
 linktitle: Zeilenformatierung anwenden
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Anwenden der Zeilenformatierung auf eine Tabelle mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -87,7 +87,7 @@ Herzlichen Glückwunsch! Sie haben nun mit Aspose.Words für .NET die Zeilenform
 ### Beispielquellcode für „Zeilenformatierung anwenden“ mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

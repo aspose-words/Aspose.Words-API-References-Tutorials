@@ -1,7 +1,7 @@
 ---
 title: Legen Sie die Seiteneinrichtung und die Abschnittsformatierung fest
 linktitle: Legen Sie die Seiteneinrichtung und die Abschnittsformatierung fest
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Einrichten des Layouts und der Abschnittsformatierung eines Dokuments mit Aspose.Words für .NET.
 type: docs
 weight: 10

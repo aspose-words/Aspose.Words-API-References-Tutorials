@@ -1,7 +1,7 @@
 ---
 title: تحويل الحقول في الجسم
 linktitle: تحويل الحقول في الجسم
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية استخدام Aspose.Words for .NET لتحويل حقول الصفحة إلى نص في نص مستند Word.
 type: docs
 weight: 10
@@ -22,13 +22,13 @@ url: /ar/net/working-with-fields/convert-fields-in-body/
 // المسار إلى دليل المستندات الخاص بك.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+// قم بتحميل المستند
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
 ## الخطوة 3: تحويل حقول الصفحة إلى نص عادي
 
-الآن بعد أن تم تحميل المستند ، يمكننا الانتقال إلى خطوات التحويل. لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول ، يمكنك استخدام ملحق`Range.Fields` طريقة للحصول على جميع الحقول في النطاق المحدد ، ثم تصفية الحقول من النوع`FieldType.FieldPage` . ثم يمكنك استخدام ملف`ForEach` طريقة للتكرار عبر كل حقل واستدعاء`Unlink()` طريقة لتحويله إلى نص عادي.
+ الآن بعد أن تم تحميل المستند ، يمكننا الانتقال إلى خطوات التحويل. لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول ، يمكنك استخدام ملحق`Range.Fields` طريقة للحصول على جميع الحقول في النطاق المحدد ، ثم تصفية الحقول من النوع`FieldType.FieldPage` . ثم يمكنك استخدام ملف`ForEach` طريقة للتكرار عبر كل حقل واستدعاء`Unlink()` طريقة لتحويله إلى نص عادي.
 
 ```csharp
 // قم بتمرير المعلمات المناسبة لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول.
@@ -37,7 +37,7 @@ doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToL
 
 ## الخطوة 4: احفظ المستند المعدل
 
- بمجرد تحويل حقول الصفحة إلى نص عادي ، يمكنك حفظ المستند المعدل باستخدام امتداد`Save()` طريقة وتحديد مسار واسم ملف الإخراج. في مثالنا ، نحفظها كـ "WorkingWithFields.ConvertFieldsInBody.docx".
+بمجرد تحويل حقول الصفحة إلى نص عادي ، يمكنك حفظ المستند المعدل باستخدام امتداد`Save()` طريقة وتحديد مسار واسم ملف الإخراج. في مثالنا ، نحفظها كـ "WorkingWithFields.ConvertFieldsInBody.docx".
 
 ```csharp
 // احفظ المستند المعدل
@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 // المسار إلى دليل المستندات الخاص بك.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+// قم بتحميل المستند
 Document doc = new Document(dataDir + "Linked fields.docx");
 
 // قم بتمرير المعلمات المناسبة لتحويل حقول الصفحة إلى نص عادي في نص القسم الأول.

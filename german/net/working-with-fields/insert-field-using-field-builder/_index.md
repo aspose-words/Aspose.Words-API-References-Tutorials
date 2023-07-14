@@ -1,7 +1,7 @@
 ---
 title: Feld mit Field Builder einfügen
 linktitle: Feld mit Field Builder einfügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET benutzerdefinierte Felder in Ihre Word-Dokumente einfügen.
 type: docs
 weight: 10

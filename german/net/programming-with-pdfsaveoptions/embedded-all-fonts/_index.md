@@ -1,7 +1,7 @@
 ---
 title: Betten Sie Schriftarten in ein PDF-Dokument ein
 linktitle: Betten Sie Schriftarten in ein PDF-Dokument ein
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Einbetten von Schriftarten in ein PDF mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -97,4 +97,4 @@ Verbesserte Lesbarkeit: Das Einbetten von Schriftarten sorgt für eine bessere L
 A: Ja, das Einbetten aller Schriftarten in ein PDF-Dokument kann die Größe der generierten PDF-Datei erhöhen, da die Schriftartdaten in der Datei enthalten sein müssen. Allerdings ist dieser Größenzuwachs bei den meisten Dokumenten in der Regel vernachlässigbar und die Vorteile der Einbettung von Schriftarten überwiegen häufig diesen geringfügigen Größenzuwachs.
 
 #### F: Kann ich bestimmte Schriftarten zum Einbetten in ein PDF-Dokument auswählen?
- A: Ja, mit Aspose.Words für .NET können Sie mithilfe erweiterter Konfigurationsoptionen bestimmte Schriftarten zum Einbetten in ein PDF-Dokument auswählen. Sie können zum Beispiel die verwenden`SubsetFonts` Eigentum der`PdfSaveOptions` -Objekt, um anzugeben, welche Schriftarten einbezogen werden sollen, oder verwenden Sie zusätzliche Optionen, um benutzerdefinierte Filter für die Schriftartenauswahl festzulegen.
+ A: Ja, mit Aspose.Words für .NET können Sie mithilfe erweiterter Konfigurationsoptionen bestimmte Schriftarten zum Einbetten in ein PDF-Dokument auswählen. Sie können zum Beispiel die verwenden`SubsetFonts`Eigentum der`PdfSaveOptions` -Objekt, um anzugeben, welche Schriftarten einbezogen werden sollen, oder verwenden Sie zusätzliche Optionen, um benutzerdefinierte Filter für die Schriftartenauswahl festzulegen.

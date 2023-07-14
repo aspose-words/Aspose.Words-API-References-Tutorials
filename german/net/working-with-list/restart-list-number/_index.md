@@ -1,7 +1,7 @@
 ---
 title: Listennummer neu starten
 linktitle: Listennummer neu starten
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Nummer einer Liste in einem Word-Dokument zurücksetzen.
 type: docs
 weight: 10

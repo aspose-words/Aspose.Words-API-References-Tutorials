@@ -1,7 +1,7 @@
 ---
 title: Convertir les métafichiers en Emf ou Wmf
 linktitle: Convertir les métafichiers en Emf ou Wmf
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour convertir des métafichiers aux formats EMF ou WMF lors de la conversion d'un document au format HTML avec Aspose.Words pour .NET.
 type: docs
 weight: 10

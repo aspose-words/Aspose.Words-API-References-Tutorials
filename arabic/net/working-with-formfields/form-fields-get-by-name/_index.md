@@ -1,7 +1,7 @@
 ---
 title: الحصول على حقول النموذج بالاسم
 linktitle: الحصول على حقول النموذج بالاسم
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية استرداد وتعديل حقول النموذج بالاسم في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## الخطوة 2: استرجاع حقول النموذج
 
- بعد ذلك ، قم بالوصول إلى`FormFields` ممتلكات`Range` كائن في المستند لاسترداد جميع حقول النموذج:
+ بعد ذلك ، قم بالوصول إلى`FormFields`ممتلكات`Range` كائن في المستند لاسترداد جميع حقول النموذج:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;

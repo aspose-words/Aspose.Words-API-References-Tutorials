@@ -1,7 +1,7 @@
 ---
 title: Inhaltskontrolle für Kombinationsfelder
 linktitle: Inhaltskontrolle für Kombinationsfelder
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Kombinationsfeld-Inhaltssteuerelement in einem Word-Dokument erstellen.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ In diesem Tutorial wird erläutert, wie Sie mit Aspose.Words für .NET ein Kombi
 Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
 - Aspose.Words für .NET-Bibliothek installiert.
-- Grundkenntnisse in C# und der Arbeit mit Word-Dokumenten.
+- Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
 ## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
- Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"`mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem Sie das Dokument speichern möchten.
+ Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Schritt 3: Elemente zum Kombinationsfeld hinzufügen
- Fügen Sie Elemente zum Kombinationsfeld hinzu, indem Sie verwenden`ListItems` Eigentum der`StructuredDocumentTag` Jedes Element wird durch ein dargestellt`SdtListItem` Objekt, das einen Anzeigetext und einen Wert annimmt. In diesem Beispiel fügen wir drei Elemente zum Kombinationsfeld hinzu.
+ Fügen Sie Elemente zum Kombinationsfeld hinzu, indem Sie verwenden`ListItems`Eigentum der`StructuredDocumentTag` Jedes Element wird durch ein dargestellt`SdtListItem` Objekt, das einen Anzeigetext und einen Wert annimmt. In diesem Beispiel fügen wir drei Elemente zum Kombinationsfeld hinzu.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ### Beispielquellcode für die Inhaltssteuerung von Kombinationsfeldern mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

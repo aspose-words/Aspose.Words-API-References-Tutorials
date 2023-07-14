@@ -1,7 +1,7 @@
 ---
 title: Optionen anzeigen
 linktitle: Optionen anzeigen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Konfigurieren von Dokumentanzeigeoptionen mit Aspose.Words für .NET.
 type: docs
 weight: 10

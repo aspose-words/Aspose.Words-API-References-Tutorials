@@ -1,14 +1,14 @@
 ---
-title: Lavorare con List
-linktitle: Lavorare con List
-second_title: Riferimento all'API Aspose.Words per .NET
+title: Elaborazione di parole con la lista
+linktitle: Elaborazione di parole con la lista
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come lavorare con gli elenchi nei documenti di Word utilizzando Aspose.Words per .NET. Tutorial dettagliati con esempi di codice.
 type: docs
 weight: 780
 url: /it/net/working-with-list/
 ---
 
-Lavorare con gli elenchi è una risorsa completa che ti guida attraverso l'utilizzo degli elenchi nei documenti di Word utilizzando la libreria Aspose.Words per .NET. I tutorial forniscono spiegazioni dettagliate, codice sorgente completo ed esempi pratici per creare, personalizzare e gestire diversi tipi di elenchi, inclusi elenchi puntati, elenchi numerati ed elenchi multilivello. Imparerai anche come aggiungere elementi, formattare elenchi, modificare l'aspetto e il rientro e altre operazioni avanzate. Questa risorsa è essenziale per gli sviluppatori che desiderano automatizzare la creazione e la gestione degli elenchi nei propri documenti Word utilizzando Aspose.Words per .NET.
+Elaborazione di parole con elenchi è una risorsa completa che ti guida attraverso l'elaborazione di parole con elenchi nei documenti di Word utilizzando la libreria Aspose.Words per .NET. I tutorial forniscono spiegazioni dettagliate, codice sorgente completo ed esempi pratici per creare, personalizzare e gestire diversi tipi di elenchi, inclusi elenchi puntati, elenchi numerati ed elenchi multilivello. Imparerai anche come aggiungere elementi, formattare elenchi, modificare l'aspetto e il rientro e altre operazioni avanzate. Questa risorsa è essenziale per gli sviluppatori che desiderano automatizzare la creazione e la gestione degli elenchi nei propri documenti Word utilizzando Aspose.Words per .NET.
 
  ## Tutorial
 | Titolo | Descrizione |

@@ -1,7 +1,7 @@
 ---
 title: Tabelle automatisch an Inhalt anpassen
 linktitle: Tabelle automatisch an Inhalt anpassen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle automatisch an ihren Inhalt in einem Word-Dokument anpassen.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In diesem Tutorial erfahren Sie, wie Sie Aspose.Words für .NET verwenden, um mi
 2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
 ## Schritt 2: Laden Sie das Word-Dokument
-Um mit der Tabelle zu arbeiten, müssen wir das Word-Dokument laden, das die Tabelle enthält. Folge diesen Schritten:
+Um die Textverarbeitung mit der Tabelle zu starten, müssen wir das Word-Dokument laden, das die Tabelle enthält. Folge diesen Schritten:
 
 ```csharp
 // Pfad zu Ihrem Dokumentenverzeichnis
@@ -53,7 +53,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 ### Beispielquellcode für die automatische Anpassung von Tabellen an Inhalte mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

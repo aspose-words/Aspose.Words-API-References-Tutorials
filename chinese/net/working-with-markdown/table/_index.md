@@ -1,7 +1,7 @@
 ---
 title: 桌子
 linktitle: 桌子
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 分步指南创建表格。
 type: docs
 weight: 10

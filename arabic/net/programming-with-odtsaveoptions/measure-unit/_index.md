@@ -1,7 +1,7 @@
 ---
 title: وحدة قياس
 linktitle: وحدة قياس
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تحديد وحدة القياس عند تحويل مستند Word إلى ODT باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

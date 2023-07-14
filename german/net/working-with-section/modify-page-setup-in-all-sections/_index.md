@@ -1,7 +1,7 @@
 ---
 title: Ändern Sie die Word-Seiteneinrichtung in allen Abschnitten
 linktitle: Ändern Sie die Word-Seiteneinrichtung in allen Abschnitten
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET die Word-Seiteneinrichtung in allen Abschnitten eines Word-Dokuments ändern.
 type: docs
 weight: 10
@@ -42,7 +42,7 @@ builder.Writeln("Hello45");
 ```
 
 ## Schritt 3: Bearbeiten Sie die Seiteneinrichtung in allen Abschnitten
- Um die Seiteneinrichtung in allen Abschnitten des Dokuments zu ändern, verwenden wir a`foreach` Schleife, um jeden Abschnitt zu durchlaufen und darauf zuzugreifen`PageSetup` Eigentum. In diesem Beispiel ändern wir die Papiergröße aller Abschnitte, indem wir den Wert auf festlegen`PaperSize.Letter`.
+ Um die Seiteneinrichtung in allen Abschnitten des Dokuments zu ändern, verwenden wir a`foreach` Schleife, um jeden Abschnitt zu durchlaufen und darauf zuzugreifen`PageSetup` Eigentum. In diesem Beispiel ändern wir die Papiergröße aller Abschnitte, indem wir den Wert auf setzen`PaperSize.Letter`.
 
 ```csharp
 foreach(Section section in doc.Sections)
@@ -53,7 +53,7 @@ foreach(Section section in doc.Sections)
 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -109,7 +109,7 @@ builder.Writeln("Hello45");
 
 #### F: Wie ändere ich die Seiteneinrichtung in allen Abschnitten in Aspose.Words für .NET?
 
- A: Um die Seiteneinrichtung in allen Abschnitten des Dokuments zu ändern, können Sie a verwenden`foreach` Schleife, um jeden Abschnitt zu durchlaufen und darauf zuzugreifen`PageSetup` Eigentum. In diesem Beispiel ändern wir die Papiergröße aller Abschnitte, indem wir den Wert auf festlegen`PaperSize.Letter`.
+ A: Um die Seiteneinrichtung in allen Abschnitten des Dokuments zu ändern, können Sie a verwenden`foreach` Schleife, um jeden Abschnitt zu durchlaufen und darauf zuzugreifen`PageSetup` Eigentum. In diesem Beispiel ändern wir die Papiergröße aller Abschnitte, indem wir den Wert auf setzen`PaperSize.Letter`.
 
 ```csharp
 foreach(Section section in doc.Sections)

@@ -1,7 +1,7 @@
 ---
 title: تحويل Docx إلى Mhtml وإرسال بريد إلكتروني
 linktitle: تحويل Docx إلى Mhtml وإرسال بريد إلكتروني
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تحويل مستندات Word من Docx إلى MHTML وإرسالها كرسائل بريد إلكتروني باستخدام Aspose.Words و Aspose.Email. البرنامج التعليمي خطوة بخطوة.
 type: docs
 weight: 10

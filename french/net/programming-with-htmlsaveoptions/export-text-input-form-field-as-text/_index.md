@@ -1,7 +1,7 @@
 ---
 title: Exporter le champ du formulaire de saisie de texte sous forme de texte
 linktitle: Exporter le champ du formulaire de saisie de texte sous forme de texte
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour exporter les champs de formulaire de saisie de texte en texte brut avec Aspose.Words pour .NET.
 type: docs
 weight: 10

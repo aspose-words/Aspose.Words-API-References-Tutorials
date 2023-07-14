@@ -1,7 +1,7 @@
 ---
 title: Ajouter Supprimer le commentaire Répondre
 linktitle: Ajouter Supprimer le commentaire Répondre
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment ajouter et supprimer des réponses aux commentaires dans des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -77,7 +77,7 @@ Les réponses aux commentaires permettent des discussions collaboratives et des 
 
 #### Q : Comment puis-je supprimer un commentaire dans Aspose.Words pour .NET ?
 
- : Pour supprimer un commentaire dans Aspose.Words pour .NET, vous pouvez utiliser le`Comment.Remove` méthode spécifiant la`Comment` objet que vous souhaitez supprimer.
+ R : Pour supprimer un commentaire dans Aspose.Words pour .NET, vous pouvez utiliser le`Comment.Remove` méthode spécifiant la`Comment` objet que vous souhaitez supprimer.
 
 #### Q : Puis-je répondre à un commentaire dans Aspose.Words pour .NET ?
 
@@ -85,7 +85,7 @@ Les réponses aux commentaires permettent des discussions collaboratives et des 
 
 #### Q : Comment puis-je accéder aux commentaires existants dans Aspose.Words pour .NET ?
 
- R : Vous pouvez accéder aux commentaires existants dans Aspose.Words pour .NET en utilisant le`CommentCollection` propriété de la`Document` objet. Cela vous permettra de parcourir tous les commentaires présents dans le document.
+ R : Vous pouvez accéder aux commentaires existants dans Aspose.Words pour .NET en utilisant le`CommentCollection`propriété de la`Document`objet. Cela vous permettra de parcourir tous les commentaires présents dans le document.
 
 #### Q : Puis-je modifier le texte des commentaires dans Aspose.Words pour .NET ?
 

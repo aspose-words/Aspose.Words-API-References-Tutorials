@@ -1,8 +1,8 @@
 ---
-title: Arbeiten mit Feldern
-linktitle: Arbeiten mit Feldern
-second_title: Aspose.Words für .NET API-Referenz
-description: Eine umfassende Ressource für die Arbeit mit Feldern in Word-Dokumenten mithilfe von Aspose.Words für .NET. Tutorials, Beispiele und ausführliche Erklärungen.
+title: Wortverarbeitung mit Feldern
+linktitle: Wortverarbeitung mit Feldern
+second_title: Aspose.Words-Dokumentverarbeitungs-API
+description: Eine umfassende Ressource für die Textverarbeitung mit Feldern in Word-Dokumenten unter Verwendung von Aspose.Words für .NET. Tutorials, Beispiele und ausführliche Erklärungen.
 type: docs
 weight: 140
 url: /de/net/working-with-fields/

@@ -1,7 +1,7 @@
 ---
 title: Liens En-têtes Pieds de page
 linktitle: Liens En-têtes Pieds de page
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à lier des en-têtes et des pieds de page tout en joignant et en ajoutant des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
 ## Étape 1 : Initialiser les répertoires de documents
 
- Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir` variable au chemin où se trouvent vos documents.
+ Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir`variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Étape 3 : Définir le document ajouté pour qu'il apparaisse sur une nouvelle page
 
-Pour vous assurer que le contenu du document source apparaît sur une nouvelle page du document de destination, vous devez définir le`SectionStart` propriété de la première section du document source pour`SectionStart.NewPage`.
+ Pour vous assurer que le contenu du document source apparaît sur une nouvelle page du document de destination, vous devez définir le`SectionStart` propriété de la première section du document source pour`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -72,7 +72,7 @@ Voici le code source complet de la fonctionnalité "Link Headers Footers" en C# 
 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

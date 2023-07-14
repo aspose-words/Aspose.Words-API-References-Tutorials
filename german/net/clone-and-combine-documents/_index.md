@@ -1,7 +1,7 @@
 ---
 title: Dokumente klonen und kombinieren
 linktitle: Dokumente klonen und kombinieren
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für .NET klonen und kombinieren. Erfahren Sie, wie Sie Kopien von Dokumenten erstellen, mehrere Dokumente zu einem zusammenführen und Abschnitte, Kopf- und Fußzeilen verwalten.
 type: docs
 weight: 1470

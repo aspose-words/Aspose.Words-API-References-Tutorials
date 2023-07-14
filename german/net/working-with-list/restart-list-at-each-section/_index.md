@@ -1,7 +1,7 @@
 ---
 title: Starten Sie die Liste in jedem Abschnitt neu
 linktitle: Starten Sie die Liste in jedem Abschnitt neu
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine nummerierte Liste für jeden Abschnitt in einem Word-Dokument zurücksetzen.
 type: docs
 weight: 10

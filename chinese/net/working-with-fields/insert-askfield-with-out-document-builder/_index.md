@@ -1,7 +1,7 @@
 ---
 title: 在没有文档生成器的情况下插入 ASKField
 linktitle: 在没有文档生成器的情况下插入 ASKField
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将 ASK 字段插入到 Word 文档中。
 type: docs
 weight: 10
@@ -73,7 +73,7 @@ field. Update();
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-在此示例中，我们创建了一个新文档，在不使用 DocumentBuilder 的情况下插入了 ASK 字段，配置了该字段的各种属性，并使用指定的文件名保存了文档。
+在此示例中，我们创建了一个新文档，在不使用 DocumentBuilder 的情况下插入了 ASK 字段，配置了该字段的各种属性，并使用指定的文件名保存了该文档。
 
 关于使用 Aspose.Words for .NET 的“插入 ASK 字段而不使用 DocumentBuilder”功能的指南到此结束。
 

@@ -1,7 +1,7 @@
 ---
 title: Ole-Objekt in Word-Dokument einfügen
 linktitle: Ole-Objekt in Word-Dokument einfügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein OLE-Objekt in ein Word-Dokument einfügen.
 type: docs
 weight: 10

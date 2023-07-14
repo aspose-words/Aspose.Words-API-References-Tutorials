@@ -1,7 +1,7 @@
 ---
 title: Posizione del cursore
 linktitle: Posizione del cursore
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come recuperare la posizione del cursore in un documento di Word utilizzando Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ Console.WriteLine("\nCursor move to paragraph: " + curParagraph.GetText());
 ```
 
 ## Conclusione
-Congratulazioni! Hai imparato con successo come lavorare con la posizione del cursore in un documento Word usando Aspose.Words per .NET. Seguendo la guida passo-passo e utilizzando il codice sorgente fornito, è ora possibile recuperare il nodo e il paragrafo corrente in cui è posizionato il cursore nel documento.
+Congratulazioni! Hai imparato con successo come lavorare con la posizione del cursore in un documento Word utilizzando Aspose.Words per .NET. Seguendo la guida passo-passo e utilizzando il codice sorgente fornito, è ora possibile recuperare il nodo e il paragrafo corrente in cui è posizionato il cursore nel documento.
 
 Comprendere la posizione del cursore è utile per vari scenari, come la manipolazione del contenuto del documento in base alla posizione del cursore o l'implementazione di funzioni di modifica personalizzate.
 

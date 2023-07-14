@@ -1,7 +1,7 @@
 ---
 title: Formatage des documents
 linktitle: Formatage des documents
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à formater et formater des documents Word avec Aspose.Words pour .NET. Les didacticiels vous guideront à travers les différentes techniques de mise en page, le style, la numérotation, les paragraphes, les polices et plus encore.
 type: docs
 weight: 1490

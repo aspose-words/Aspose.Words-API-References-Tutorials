@@ -1,14 +1,14 @@
 ---
 title: 使用临时文件夹
 linktitle: 使用临时文件夹
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解使用 Aspose.Words for .NET 上传文档时如何使用临时文件夹。
 type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/use-temp-folder/
 ---
 
-在 C# 应用程序中处理 Word 文档时，可能需要使用临时文件夹来存储文档处理过程中生成的临时文件。借助适用于 .NET 的 Aspose.Words 库，您可以使用 LoadOptions 加载选项轻松指定临时文件夹。在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET C# 源代码通过 LoadOptions 加载选项指定的临时文件夹来加载文档。
+在C#应用程序中对Word文档进行文字处理时，可能需要使用临时文件夹来存储文档处理过程中生成的临时文件。借助适用于 .NET 的 Aspose.Words 库，您可以使用 LoadOptions 加载选项轻松指定临时文件夹。在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET C# 源代码通过 LoadOptions 加载选项指定的临时文件夹来加载文档。
 
 ## 了解 Aspose.Words 库
 

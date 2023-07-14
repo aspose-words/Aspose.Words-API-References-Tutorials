@@ -1,7 +1,7 @@
 ---
 title: Intelligentes Stilverhalten
 linktitle: Intelligentes Stilverhalten
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie beim Zusammenfügen und Anhängen von Word-Dokumenten mit Aspose.Words für .NET ein intelligentes Stilverhalten beibehalten.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 ## Schritt 1: Initialisieren Sie die Dokumentverzeichnisse
 
- Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir` Variable für den Pfad, in dem sich Ihre Dokumente befinden.
+ Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir`Variable für den Pfad, in dem sich Ihre Dokumente befinden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -46,7 +46,7 @@ builder.InsertBreak(BreakType.PageBreak);
 
 ## Schritt 4: Legen Sie die Verhaltensoptionen für intelligente Stile fest
 
-Um das Smart-Style-Verhalten während des Anhängevorgangs zu aktivieren, müssen Sie eine Instanz von erstellen`ImportFormatOptions` und stellen Sie die ein`SmartStyleBehavior` Eigentum zu`true`.
+ Um das Smart-Style-Verhalten während des Anhängevorgangs zu aktivieren, müssen Sie eine Instanz von erstellen`ImportFormatOptions` und stellen Sie die ein`SmartStyleBehavior` Eigentum zu`true`.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
@@ -73,7 +73,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 Hier ist der vollständige Quellcode für die Funktion „Smart Style Behavior“ in C# mit Aspose.Words für .NET:
  
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

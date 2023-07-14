@@ -1,7 +1,7 @@
 ---
 title: Reduzieren Sie die Größe von PDF-Dokumenten durch Downsampling von Bildern
 linktitle: Reduzieren Sie die Größe von PDF-Dokumenten durch Downsampling von Bildern
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die Größe von PDF-Dokumenten durch Downsampling von Bildern bei der Konvertierung in PDF mit Aspose.Words für .NET reduzieren können.
 type: docs
 weight: 10

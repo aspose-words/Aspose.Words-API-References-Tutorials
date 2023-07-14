@@ -1,7 +1,7 @@
 ---
 title: 启用禁用字体替换
 linktitle: 启用禁用字体替换
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 在本教程中，了解如何使用 Aspose.Words for .NET 在 Word 文档中启用或禁用字体替换。
 type: docs
 weight: 10

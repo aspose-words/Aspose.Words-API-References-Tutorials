@@ -1,7 +1,7 @@
 ---
 title: قائمة مرتبة
 linktitle: قائمة مرتبة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إنشاء قائمة مرتبة باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
 type: docs
 weight: 10

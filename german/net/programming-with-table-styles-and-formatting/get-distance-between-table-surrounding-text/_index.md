@@ -1,7 +1,7 @@
 ---
 title: Ermitteln Sie den Abstand zwischen dem von der Tabelle umgebenden Text
 linktitle: Ermitteln Sie den Abstand zwischen dem von der Tabelle umgebenden Text
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Ermitteln des Abstands zwischen Text und einer Tabelle in einem Word-Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -38,7 +38,7 @@ Console.WriteLine("Distance between the table and the text on the left: " + tabl
 ### Beispielquellcode für „Abstand zwischen tabellenumgebendem Text ermitteln“ mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

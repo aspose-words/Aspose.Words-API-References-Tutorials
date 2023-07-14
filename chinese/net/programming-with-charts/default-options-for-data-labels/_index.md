@@ -1,7 +1,7 @@
 ---
-title: 数据标签的默认选项
-linktitle: 数据标签的默认选项
-second_title: Aspose.Words for .NET API 参考
+title: 设置图表中数据标签的默认选项
+linktitle: 设置图表中数据标签的默认选项
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 设置图表中数据标签的默认选项。
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /zh/net/programming-with-charts/default-options-for-data-labels/
 
 在我们开始之前，请确保您满足以下要求：
 
-- 已安装 Aspose.Words for .NET 库。您可以从 Aspose 官方网站下载它或使用 NuGet 包管理器来安装它。
+- 已安装 Aspose.Words for .NET 库。您可以使用 NuGet 包管理器下载并安装它。
 - 将保存输出文档的文档目录路径。
 
 ## 步骤 2：创建一个新文档并插入图表
@@ -95,3 +95,26 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 	labels.Separator = " - ";
 	doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ```
+
+## 结论
+
+在本教程中，您学习了如何使用 Aspose.Words for .NET 设置图表中数据标签的默认选项。通过遵循分步指南，您可以创建图表、添加数据系列并自定义数据标签以满足您的特定要求。 Aspose.Words for .NET 为 Word 文档中的图表进行文字处理提供了强大的 API，允许您操作各种图表元素并实现所需的外观和功能。
+
+通过设置属性`ChartDataLabelCollection`与图表系列关联的对象，您可以控制数据标签的显示，包括显示百分比、值、引导线和自定义分隔符等选项。这种灵活性使您能够有效地呈现数据并增强图表的可视化表示。
+
+### 常见问题解答
+
+#### Q1.什么是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一个库，使开发人员能够使用 .NET 应用程序以编程方式创建、操作和保存 Word 文档。它为文档元素（包括图表）的文字处理提供了广泛的功能。
+
+#### Q2。如何安装 Aspose.Words for .NET？
+您可以通过使用 Visual Studio 中的 NuGet 包管理器下载来安装 Aspose.Words for .NET。只需在 NuGet 包管理器中搜索“Aspose.Words”并将其安装到您的项目中即可。
+
+#### Q3。我可以使用 Aspose.Words for .NET 自定义图表的其他方面吗？
+是的，Aspose.Words for .NET 允许您自定义图表的各个方面，例如图表类型、轴标签、图例、绘图区域等。您可以访问和修改图表对象的不同属性以实现所需的外观和行为。
+
+#### Q4。我可以以不同的格式保存图表吗？
+是的，Aspose.Words for .NET 支持以各种格式保存包含图表的文档，包括 DOCX、PDF、HTML 等。您可以根据您的要求选择合适的格式并使用`Save`的方法`Document`对象来保存文档。
+
+#### Q5.我可以将这些技术应用于其他图表类型吗？
+是的，本教程中描述的技术可以应用于 Aspose.Words for .NET 支持的其他图表类型。关键是访问特定于您进行文字处理的图表类型的相关对象和属性。

@@ -1,7 +1,7 @@
 ---
 title: PDF-Renderwarnungen
 linktitle: PDF-Renderwarnungen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Umgang mit PDF-Rendering-Warnungen mit Aspose.Words für .NET.
 type: docs
 weight: 10

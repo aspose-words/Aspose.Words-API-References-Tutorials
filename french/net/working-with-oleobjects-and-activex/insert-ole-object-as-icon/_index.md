@@ -1,7 +1,7 @@
 ---
 title: Insérer un objet Ole dans un document Word sous forme d'icône
 linktitle: Insérer un objet Ole dans un document Word sous forme d'icône
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer un objet OLE dans un document Word en tant qu'icône avec Aspose.Words pour .NET.
 type: docs
 weight: 10

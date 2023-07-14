@@ -1,7 +1,7 @@
 ---
 title: إدراج جدول من Html
 linktitle: إدراج جدول من Html
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إدراج جدول من HTML في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /ar/net/programming-with-tables/insert-table-from-html/
 2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
 
 ## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+لبدء معالجة الكلمات باستخدام منشئ المستندات والمستندات ، اتبع الخطوات التالية:
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ### نموذج التعليمات البرمجية المصدر لـ Insert Table From Html باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

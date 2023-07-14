@@ -1,7 +1,7 @@
 ---
 title: كود الحقل
 linktitle: كود الحقل
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة للحصول على رمز الحقل والنتيجة الميدانية في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -73,7 +73,7 @@ foreach(Field field in doc.Range.Fields)
 
 #### س: كيف يمكنني تحديث الحقول في مستند باستخدام Aspose.Words for .NET؟
 
- ج: لتحديث حقول المستند باستخدام Aspose.Words for .NET ، يمكنك استخدام`Document.UpdateFields` طريقة. سيؤدي هذا إلى تحديث جميع الحقول الموجودة في المستند ، مثل دمج الحقول وحقول التاريخ وما إلى ذلك.
+ ج: لتحديث حقول المستند باستخدام Aspose.Words for .NET ، يمكنك استخدام`Document.UpdateFields`طريقة. سيؤدي هذا إلى تحديث جميع الحقول الموجودة في المستند ، مثل دمج الحقول وحقول التاريخ وما إلى ذلك.
 
 #### س: كيف يمكنني استرداد قيمة حقل معين في Aspose.Words for .NET؟
 

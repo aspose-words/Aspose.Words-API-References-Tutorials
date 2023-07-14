@@ -1,7 +1,7 @@
 ---
 title: إعدادات العرض المفضلة
 linktitle: إعدادات العرض المفضلة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تعيين عروض خلية الجدول المفضلة في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /ar/net/programming-with-tables/preferred-width-settings/
 2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
 
 ## الخطوة 2: إنشاء المستند وتهيئة منشئ المستند
-لبدء العمل مع منشئ المستندات والمستندات ، اتبع الخطوات التالية:
+لبدء معالجة الكلمات باستخدام منشئ المستندات والمستندات ، اتبع الخطوات التالية:
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ### نموذج رمز مصدر لإعدادات العرض المفضلة باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

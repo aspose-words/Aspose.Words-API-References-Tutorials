@@ -1,13 +1,13 @@
 ---
 title: Konvertieren Sie Metadateien in PNG
 linktitle: Konvertieren Sie Metadateien in PNG
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie beim Hochladen von Dokumenten mit Aspose.Words für .NET Metadateien in PNG-Bilder konvertieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-loadoptions/convert-metafiles-to-png/
 ---
-Beim Arbeiten mit Dokumenten in einer C#-Anwendung kann es für eine bessere Kompatibilität und genaue Wiedergabe erforderlich sein, Metadateien in PNG-Bilder zu konvertieren. Mit der Aspose.Words-Bibliothek für .NET können Sie Metadateien beim Laden eines Dokuments problemlos in PNG konvertieren. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung von Aspose.Words für .NET C#-Quellcode zum Laden eines Dokuments mit Konvertierung von Metadateien in PNG mithilfe der LoadOptions-Ladeoptionen.
+Bei der Textverarbeitung mit Dokumenten in einer C#-Anwendung kann es für eine bessere Kompatibilität und genaue Wiedergabe erforderlich sein, Metadateien in PNG-Bilder zu konvertieren. Mit der Aspose.Words-Bibliothek für .NET können Sie Metadateien beim Laden eines Dokuments problemlos in PNG konvertieren. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung von Aspose.Words für .NET C#-Quellcode zum Laden eines Dokuments mit Konvertierung von Metadateien in PNG mithilfe der LoadOptions-Ladeoptionen.
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 

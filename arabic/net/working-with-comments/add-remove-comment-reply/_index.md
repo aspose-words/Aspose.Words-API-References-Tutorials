@@ -1,7 +1,7 @@
 ---
 title: إضافة إزالة التعليق الرد
 linktitle: إضافة إزالة التعليق الرد
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إضافة وإزالة الردود على التعليقات في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 #### س: كيف يمكنني إزالة تعليق في Aspose.Words for .NET؟
 
-ج: لإزالة تعليق في Aspose.Words for .NET ، يمكنك استخدام`Comment.Remove` طريقة تحديد`Comment` الكائن الذي تريد إزالته.
+ ج: لإزالة تعليق في Aspose.Words for .NET ، يمكنك استخدام`Comment.Remove` طريقة تحديد`Comment` الكائن الذي تريد إزالته.
 
 #### س: هل يمكنني الرد على تعليق في Aspose.Words for .NET؟
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 #### س: كيف يمكنني الوصول إلى التعليقات الموجودة في Aspose.Words for .NET؟
 
- ج: يمكنك الوصول إلى التعليقات الموجودة في Aspose.Words for .NET باستخدام`CommentCollection` ممتلكات`Document` هدف. سيسمح لك ذلك بتصفح جميع التعليقات الموجودة في المستند.
+ ج: يمكنك الوصول إلى التعليقات الموجودة في Aspose.Words for .NET باستخدام`CommentCollection`ممتلكات`Document`هدف. سيسمح لك ذلك بتصفح جميع التعليقات الموجودة في المستند.
 
 #### س: هل يمكنني تعديل نص التعليق في Aspose.Words for .NET؟
 

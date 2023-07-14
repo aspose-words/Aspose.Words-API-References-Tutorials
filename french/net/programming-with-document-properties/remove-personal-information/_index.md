@@ -1,7 +1,7 @@
 ---
 title: Supprimer les informations personnelles
 linktitle: Supprimer les informations personnelles
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour supprimer des informations personnelles d'un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10

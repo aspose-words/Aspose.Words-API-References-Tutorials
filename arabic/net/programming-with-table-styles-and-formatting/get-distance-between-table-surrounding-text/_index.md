@@ -1,7 +1,7 @@
 ---
 title: الحصول على مسافة بين النص المحيط بالجدول
 linktitle: الحصول على مسافة بين النص المحيط بالجدول
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لمعرفة المسافة بين النص والجدول في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -38,7 +38,7 @@ Console.WriteLine("Distance between the table and the text on the left: " + tabl
 ### عينة من التعليمات البرمجية المصدر للحصول على المسافة بين النص المحيط بالجدول باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

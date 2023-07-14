@@ -1,7 +1,7 @@
 ---
 title: Funzionalità di tipo aperto
 linktitle: Funzionalità di tipo aperto
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come abilitare e utilizzare le funzionalità Open Type in Aspose.Words per .NET
 type: docs
 weight: 10
@@ -65,7 +65,7 @@ R: Aspose.Words per .NET supporta diverse funzionalità OpenType, come legature,
 
 #### D: Come posso verificare se una funzione OpenType è supportata in un font specifico?
 
- R: Puoi verificare se una funzione OpenType è supportata in un font specifico utilizzando il file`Font.OpenTypeFeatures` metodo in Aspose.Words per .NET.
+R: Puoi verificare se una funzione OpenType è supportata in un font specifico utilizzando il file`Font.OpenTypeFeatures` metodo in Aspose.Words per .NET.
 
 #### D: Quali altre funzionalità di formattazione del testo supporta Aspose.Words per .NET?
 

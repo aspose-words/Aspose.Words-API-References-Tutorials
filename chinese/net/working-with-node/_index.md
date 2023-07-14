@@ -1,13 +1,15 @@
 ---
-title: 使用节点
-linktitle: 使用节点
-second_title: Aspose.Words for .NET API 参考
+title: 使用 Node 进行文字处理
+linktitle: 使用 Node 进行文字处理
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的节点。带有代码示例的详细教程。
 type: docs
 weight: 1000
 url: /zh/net/working-with-node/
 ---
-使用修订版是一个综合资源，可指导您使用 Aspose.Words for .NET 库处理 Word 文档中的修订版。这些教程逐步向您展示如何添加、删除、接受和拒绝修订，如何在文档中显示修订，如何比较不同版本等等。您将学习如何在 Word 文档中有效地进行协作审阅和变更管理。对于想要在基于 .NET 的应用程序的 Aspose.Words 中实现修订管理自动化的开发人员来说，此资源至关重要。
+Aspose.Words for .NET 中的节点表示 Word 文档的各种元素，例如段落、表格、图像等。通过操作这些节点，开发人员可以以编程方式修改 Word 文档的内容和格式。节点为文档提供了层次结构，允许轻松导航和操作特定元素。
+
+要使用 Aspose.Words for .NET 中的节点，开发人员可以利用该库提供的文档对象模型 (DOM)。 DOM 将整个 Word 文档表示为节点树，文档本身是根节点。每个节点都有特定的节点类型，并且可能包含子节点，从而允许进行深层次的定制。
 
  ## 教程
 | 标题 | 描述 |

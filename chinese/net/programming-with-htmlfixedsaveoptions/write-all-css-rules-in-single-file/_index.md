@@ -1,7 +1,7 @@
 ---
 title: 将所有 CSS 规则写入单个文件
 linktitle: 将所有 CSS 规则写入单个文件
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将所有 CSS 规则写入单个文件中，从而将 Word 文档转换为固定 HTML。
 type: docs
 weight: 10

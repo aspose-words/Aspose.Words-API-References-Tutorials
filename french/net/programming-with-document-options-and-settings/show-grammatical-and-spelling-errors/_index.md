@@ -1,7 +1,7 @@
 ---
 title: Afficher les erreurs de grammaire et d'orthographe
 linktitle: Afficher les erreurs de grammaire et d'orthographe
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour activer l'affichage des fautes de grammaire et d'orthographe dans un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Nettoyer les styles et les listes inutilisés
 linktitle: Nettoyer les styles et les listes inutilisés
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour nettoyer les styles et les listes inutilisés dans un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10

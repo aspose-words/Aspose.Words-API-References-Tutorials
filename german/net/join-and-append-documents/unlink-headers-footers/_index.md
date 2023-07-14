@@ -1,7 +1,7 @@
 ---
 title: Verknüpfung von Kopf- und Fußzeilen aufheben
 linktitle: Verknüpfung von Kopf- und Fußzeilen aufheben
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Word-Dokumente verbinden und anhängen und gleichzeitig die Verknüpfung von Kopf- und Fußzeilen aufheben.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 ## Schritt 1: Initialisieren Sie die Dokumentverzeichnisse
 
- Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir` Variable für den Pfad, in dem sich Ihre Dokumente befinden.
+ Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir`Variable für den Pfad, in dem sich Ihre Dokumente befinden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 3: Heben Sie die Verknüpfung von Kopf- und Fußzeilen im Quelldokument auf
 
- Um die Verknüpfung der Kopf- und Fußzeilen im Quelldokument mit der Fortsetzung der Kopf- und Fußzeilen des Zieldokuments aufzuheben, müssen Sie Folgendes festlegen`LinkToPrevious` Eigentum der`HeadersFooters` Sammlung im ersten Abschnitt des Quelldokuments an`false`.
+ Um die Verknüpfung der Kopf- und Fußzeilen im Quelldokument mit der Fortsetzung der Kopf- und Fußzeilen des Zieldokuments aufzuheben, müssen Sie Folgendes festlegen`LinkToPrevious`Eigentum der`HeadersFooters` Sammlung im ersten Abschnitt des Quelldokuments an`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Schritt 5: Speichern Sie das endgültige Dokument
 
- Speichern Sie abschließend das zusammengeführte Dokument mit aktivierter Funktion „Verknüpfung von Kopf- und Fußzeilen aufheben“ mithilfe von`Save` Methode der`Document` Klasse.
+Speichern Sie abschließend das zusammengeführte Dokument mit aktivierter Funktion „Verknüpfung von Kopf- und Fußzeilen aufheben“ mithilfe von`Save` Methode der`Document` Klasse.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 Hier ist der vollständige Quellcode für die Funktion „Unlink Headers Footers“ in C# mit Aspose.Words für .NET:
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

@@ -1,7 +1,7 @@
 ---
 title: Abschnitt „Klonen“.
 linktitle: Abschnitt „Klonen“.
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET einen Abschnitt in einem Word-Dokument klonen.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Als nächstes laden wir das Word-Dokument in eine Instanz von`Document` Klasse. Wir werden dann die verwenden`Clone` Methode zum Klonen des ersten Abschnitts des Dokuments.
 
 ```csharp
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
 // Klonen Sie den Abschnitt
@@ -40,7 +40,7 @@ Section cloneSection = doc.Sections[0].Clone();
 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -67,7 +67,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A: Um das Word-Dokument in eine Instanz von zu laden`Document` Klasse erstellen und den ersten Abschnitt des Dokuments klonen, können Sie den folgenden Code verwenden:
 
 ```csharp
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
 // Klonen Sie den Abschnitt

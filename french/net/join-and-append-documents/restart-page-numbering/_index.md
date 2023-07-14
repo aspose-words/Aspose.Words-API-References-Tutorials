@@ -1,7 +1,7 @@
 ---
 title: Redémarrer la numérotation des pages
 linktitle: Redémarrer la numérotation des pages
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à redémarrer la numérotation des pages tout en joignant et en ajoutant des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
 ## Étape 1 : Initialiser les répertoires de documents
 
- Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir` variable au chemin où se trouvent vos documents.
+ Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir`variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,7 +65,7 @@ Voici le code source complet de la fonctionnalité "Redémarrer la numérotation
  
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

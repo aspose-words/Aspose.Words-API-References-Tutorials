@@ -1,7 +1,7 @@
 ---
 title: 通过缩减图像采样来减小 PDF 文档大小
 linktitle: 通过缩减图像采样来减小 PDF 文档大小
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解在使用 Aspose.Words for .NET 转换为 PDF 时如何通过缩减图像采样来减小 pdf 文档大小。
 type: docs
 weight: 10

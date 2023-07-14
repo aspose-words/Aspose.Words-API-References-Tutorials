@@ -1,7 +1,7 @@
 ---
 title: 获取邮件合并字段名称
 linktitle: 获取邮件合并字段名称
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中获取邮件合并字段名称。
 type: docs
 weight: 10
@@ -96,7 +96,7 @@ foreach (string fieldName in fieldNames)
 
 #### 问：Aspose.Words 中的邮件合并是什么？
 
-答：Aspose.Words 中的邮件合并是将来自外部源（例如 Excel 电子表格或数据库）的数据与模板 Word 文档合并以创建个性化文档的过程。这有助于自动生成信件、报告和其他类似文档。
+答：Aspose.Words 中的邮件合并是将外部源（例如 Excel 电子表格或数据库）的数据与模板 Word 文档合并以创建个性化文档的过程。这有助于自动生成信件、报告和其他类似文档。
 
 #### 问：如何获取 Word 文档中可用的邮件合并字段列表？
 

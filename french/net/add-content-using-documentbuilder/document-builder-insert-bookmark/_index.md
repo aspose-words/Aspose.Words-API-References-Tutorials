@@ -1,7 +1,7 @@
 ---
 title: Générateur de documents Insérer un signet
 linktitle: Générateur de documents Insérer un signet
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment insérer des signets dans des documents Word à l'aide de DocumentBuilder dans Aspose.Words pour .NET. Guide étape par étape.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ builder.EndBookmark("FineBookmark");
 ```
 
 ## Étape 3 : Enregistrer le document
-Après avoir inséré le signet, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
+Après avoir inséré le signet, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");

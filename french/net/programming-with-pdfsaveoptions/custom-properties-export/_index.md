@@ -1,7 +1,7 @@
 ---
 title: Exporter les propriétés personnalisées dans un document PDF
 linktitle: Exporter les propriétés personnalisées dans un document PDF
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à exporter des propriétés personnalisées lors de la conversion de documents au format PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10

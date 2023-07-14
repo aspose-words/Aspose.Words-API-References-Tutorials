@@ -1,7 +1,7 @@
 ---
 title: التحكم في محتوى صندوق التحرير والسرد
 linktitle: التحكم في محتوى صندوق التحرير والسرد
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إنشاء عنصر تحكم محتوى Combo Box في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ url: /ar/net/programming-with-sdt/combo-box-content-control/
 لمتابعة هذا البرنامج التعليمي ، يجب أن يكون لديك ما يلي:
 
 - تثبيت Aspose.Words لمكتبة .NET.
-- معرفة أساسية بـ C # والعمل مع مستندات Word.
+- معرفة أساسية بـ C # ومعالجة الكلمات باستخدام مستندات Word.
 
 ## الخطوة 1: قم بإعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستند الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي للدليل حيث تريد حفظ المستند.
+ ابدأ بإعداد المسار إلى دليل المستند الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي للدليل حيث تريد حفظ المستند.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## الخطوة 3: أضف عناصر إلى صندوق التحرير والسرد
- أضف عناصر إلى مربع التحرير والسرد باستخدام ملف`ListItems` ممتلكات`StructuredDocumentTag` يتم تمثيل كل عنصر بامتداد`SdtListItem` كائن ، والذي يأخذ نص عرض وقيمة. في هذا المثال ، نضيف ثلاثة عناصر إلى مربع التحرير والسرد.
+ أضف عناصر إلى مربع التحرير والسرد باستخدام ملف`ListItems`ممتلكات`StructuredDocumentTag` يتم تمثيل كل عنصر بامتداد`SdtListItem` كائن ، والذي يأخذ نص عرض وقيمة. في هذا المثال ، نضيف ثلاثة عناصر إلى مربع التحرير والسرد.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ### مثال على شفرة المصدر للتحكم في محتوى صندوق التحرير والسرد باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

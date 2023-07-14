@@ -1,7 +1,7 @@
 ---
 title: Créer un lien dans Word
 linktitle: Créer un lien dans Word
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à créer un lien dans Word entre des zones de texte dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -24,7 +24,7 @@ TextBox textBox2 = shape2.TextBox;
 
 ## Étape 2 : Création d'un lien entre les zones de texte
 
- Nous allons maintenant créer un lien entre les deux TextBoxes en utilisant le`IsValidLinkTarget()` méthode et la`Next` propriété du premier TextBox.
+Nous allons maintenant créer un lien entre les deux TextBoxes en utilisant le`IsValidLinkTarget()` méthode et la`Next` propriété du premier TextBox.
 
 ```csharp
 if (textBox1.IsValidLinkTarget(textBox2))
@@ -62,7 +62,7 @@ R : Pour lier des zones de texte dans Word à l'aide d'Aspose.Words pour .NET, 
 
 #### Q : Comment créer un lien entre deux zones de texte ?
 
- R : Pour créer un lien entre deux zones de texte, vous devez définir le`Next`propriété de la première zone de texte à la deuxième zone de texte. Assurez-vous d'avoir préalablement vérifié la validité de la cible du lien à l'aide du`IsValidLinkTarget()` méthode.
+ R : Pour créer un lien entre deux zones de texte, vous devez définir le`Next` propriété de la première zone de texte à la deuxième zone de texte. Assurez-vous d'avoir préalablement vérifié la validité de la cible du lien à l'aide du`IsValidLinkTarget()` méthode.
 
 #### Q : Est-il possible de créer des liens entre des éléments autres que des zones de texte ?
 

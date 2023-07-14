@@ -1,7 +1,7 @@
 ---
 title: Automatisch an Seitenbreite anpassen
 linktitle: Automatisch an Seitenbreite anpassen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle automatisch an die Seitenbreite in einem Word-Dokument anpassen.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle
 2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
 ## Schritt 2: Dokument erstellen und konfigurieren
-Um mit der Tabelle zu arbeiten, müssen wir ein Dokument erstellen und den Dokumentengenerator konfigurieren. Folge diesen Schritten:
+Um die Textverarbeitung mit der Tabelle zu starten, müssen wir ein Dokument erstellen und den Dokumentgenerator konfigurieren. Folge diesen Schritten:
 
 ```csharp
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Erstellen Sie das Dokument und den Dokumentengenerator
+// Erstellen Sie das Dokument und den Dokumentengenerator
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -58,7 +58,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 ### Beispielquellcode für die automatische Anpassung an die Seitenbreite mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

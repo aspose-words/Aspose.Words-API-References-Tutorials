@@ -1,7 +1,7 @@
 ---
 title: Andere Seiteneinrichtung
 linktitle: Andere Seiteneinrichtung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument mit unterschiedlichen Seiteneinrichtungseinstellungen anhängen.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 3: Seiteneinstellungen für das Quelldokument einrichten
 
- Passen Sie die Seiteneinrichtungseinstellungen des Quelldokuments an, um eine ordnungsgemäße Fortsetzung und Nummerierung sicherzustellen. In diesem Beispiel setzen wir den Abschnittsanfang auf`SectionStart.Continuous` und starten Sie die Seitennummerierung neu. Wir stellen außerdem sicher, dass die Seitenbreite, -höhe und -ausrichtung mit dem letzten Abschnitt des Zieldokuments übereinstimmen.
+Passen Sie die Seiteneinrichtungseinstellungen des Quelldokuments an, um eine ordnungsgemäße Fortsetzung und Nummerierung sicherzustellen. In diesem Beispiel setzen wir den Abschnittsanfang auf`SectionStart.Continuous` und starten Sie die Seitennummerierung neu. Wir stellen außerdem sicher, dass die Seitenbreite, -höhe und -ausrichtung mit dem letzten Abschnitt des Zieldokuments übereinstimmen.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Schritt 4: Absatzformatierung ändern
 
-Um die richtige Formatierung beizubehalten, durchlaufen Sie alle Absätze im Quelldokument und legen Sie fest`KeepWithNext` Eigentum zu`true`. Dadurch wird sichergestellt, dass die Absätze während des Anhängevorgangs zusammenbleiben.
+ Um die richtige Formatierung beizubehalten, durchlaufen Sie alle Absätze im Quelldokument und legen Sie fest`KeepWithNext` Eigentum zu`true`. Dadurch wird sichergestellt, dass die Absätze während des Anhängevorgangs zusammenbleiben.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -74,19 +74,19 @@ Damit ist die Implementierung des Anhängens eines Dokuments mit unterschiedlich
 ### Beispielquellcode für Different Page Setup mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Legen Sie fest, dass das Quelldokument direkt nach dem Ende des Zieldokuments fortgesetzt wird.
+	//Legen Sie fest, dass das Quelldokument direkt nach dem Ende des Zieldokuments fortgesetzt wird.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Beginnen Sie mit der Seitennummerierung am Anfang des Quelldokuments neu.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Um sicherzustellen, dass dies nicht passiert, wenn das Quelldokument unterschiedliche Seiteneinrichtungseinstellungen hat, stellen Sie sicher, dass
 	// Die Einstellungen sind im letzten Abschnitt des Zieldokuments identisch.
-	//Wenn im Quelldokument weitere fortlaufende Abschnitte folgen,
+	// Wenn im Quelldokument weitere fortlaufende Abschnitte folgen,
 	// Dies muss für diese Abschnitte wiederholt werden.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;

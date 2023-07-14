@@ -1,7 +1,7 @@
 ---
 title: Layout in Zelle
 linktitle: Layout in Zelle
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Form innerhalb einer Tabellenzelle in einem Word-Dokument anordnen.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ In diesem Tutorial wird erklärt, wie Sie mit Aspose.Words für .NET eine Form i
 Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
 - Aspose.Words für .NET-Bibliothek installiert.
-- Grundkenntnisse in C# und der Arbeit mit Word-Dokumenten.
+- Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
 ## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
- Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"`mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem Sie das Dokument speichern möchten.
+ Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,7 +65,7 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 ```
 
 ## Schritt 5: Passen Sie die Form an
- Passen Sie das Erscheinungsbild und den Text der Wasserzeichenform an, indem Sie Eigenschaften wie festlegen`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`usw.
+ Passen Sie das Erscheinungsbild und den Text der Wasserzeichenform an, indem Sie Eigenschaften wie festlegen`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`, usw.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Schritt 6: Fügen Sie die Form in das Dokument ein
- Fügen Sie die Wasserzeichenform mit in das Dokument ein`InsertNode` Methode der`DocumentBuilder` Objekt. Positionieren Sie die Form mit dem`MoveTo` Methode, um es nach der letzten Ausführung im Dokument zu platzieren.
+Fügen Sie die Wasserzeichenform mit in das Dokument ein`InsertNode` Methode der`DocumentBuilder` Objekt. Positionieren Sie die Form mit dem`MoveTo` Methode, um es nach der letzten Ausführung im Dokument zu platzieren.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -98,7 +98,7 @@ doc
 ### Beispielquellcode für Layout In Cell mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

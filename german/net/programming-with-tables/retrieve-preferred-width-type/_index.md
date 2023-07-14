@@ -1,7 +1,7 @@
 ---
 title: Rufen Sie den bevorzugten Breitentyp ab
 linktitle: Rufen Sie den bevorzugten Breitentyp ab
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET den Typ und den bevorzugten Breitenwert einer Zelle in einer Word-Tabelle abrufen.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET den bevorzug
 2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
 ## Schritt 2: Laden des Dokuments
-Führen Sie die folgenden Schritte aus, um mit der Arbeit mit dem Dokument zu beginnen:
+Gehen Sie folgendermaßen vor, um die Textverarbeitung mit dem Dokument zu starten:
 
 ```csharp
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
@@ -50,7 +50,7 @@ Hier verwenden wir das Dokument, um die erste Tabelle abzurufen, und aktivieren 
 ### Beispielquellcode für „Bevorzugten Breitentyp abrufen“ mit Aspose.Words für .NET 
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

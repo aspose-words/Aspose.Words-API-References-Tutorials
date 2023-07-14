@@ -1,7 +1,7 @@
 ---
 title: دمج خطوط المجموعة الفرعية في مستند PDF
 linktitle: دمج خطوط المجموعة الفرعية في مستند PDF
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة لتضمين مجموعات الخطوط الفرعية في مستند PDF باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -36,7 +36,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## الخطوة 4: احفظ المستند بتنسيق PDF مع مجموعات الخطوط الفرعية
+## الخطوة 4: احفظ المستند بصيغة PDF مع مجموعات الخطوط الفرعية
 
  أخيرًا ، يمكننا حفظ المستند بتنسيق PDF باستخدام مجموعات الخطوط الفرعية. حدد اسم ملف الإخراج و`saveOptions` كائن قمنا بتكوينه في الخطوة السابقة.
 
@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOption
 
  قم بتحميل المستند الذي تريد معالجته باستخدام ملف`Document` فئة ومسار المستند.
 
- قم بتكوين خيارات حفظ PDF عن طريق إنشاء مثيل لملف`PdfSaveOptions` الطبقة ووضع`EmbedFullFonts` الملكية ل`false`يضمن ذلك تضمين مجموعات الخطوط الفرعية المستخدمة في المستند فقط في ملف PDF.
+ قم بتكوين خيارات حفظ PDF عن طريق إنشاء مثيل لملف`PdfSaveOptions` الطبقة ووضع`EmbedFullFonts` ملكية ل`false`يضمن ذلك تضمين مجموعات الخطوط الفرعية المستخدمة في المستند فقط في ملف PDF.
 
  احفظ المستند بتنسيق PDF مع تضمين مجموعات الخطوط الفرعية باستخدام امتداد`Save` طريقة`Document` كائن ، مع تحديد اسم ملف الإخراج وخيارات الحفظ التي تم تكوينها مسبقًا.
 

@@ -1,14 +1,14 @@
 ---
 title: Casser le lien vers l'avant dans le document Word
 linktitle: Casser le lien vers l'avant dans le document Word
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à rompre les liens vers l'avant dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-textboxes/break-a-link/
 ---
 
-Aspose.Words pour .NET est une bibliothèque puissante qui offre diverses fonctionnalités pour travailler avec des documents Microsoft Word par programmation. L'une de ses fonctionnalités utiles est la possibilité de rompre les liens vers l'avant dans un document Word. Dans ce didacticiel, nous allons explorer le code source en C # qui montre comment casser un lien vers l'avant dans un document Word à l'aide de Aspose.Words pour .NET.
+Aspose.Words pour .NET est une bibliothèque puissante qui offre diverses fonctionnalités pour le traitement de mots avec des documents Microsoft Word par programmation. L'une de ses fonctionnalités utiles est la possibilité de rompre les liens vers l'avant dans un document Word. Dans ce didacticiel, nous allons explorer le code source en C # qui montre comment casser un lien vers l'avant dans un document Word à l'aide de Aspose.Words pour .NET.
 
 ## Étape 1 : Aperçu du code source C#
 
@@ -16,7 +16,7 @@ Le code source C# fourni se concentre sur la fonctionnalité "Break A Link" d'As
 
 ## Étape 2 : Configuration du document et création d'une forme TextBox
 
-Pour commencer, nous devons configurer le document et créer une forme TextBox. Le code suivant initialise une nouvelle instance de`Document` classe et crée une forme de zone de texte :
+ Pour commencer, nous devons configurer le document et créer une forme TextBox. Le code suivant initialise une nouvelle instance de`Document` classe et crée une forme de zone de texte :
 
 ```csharp
 Document doc = new Document();
@@ -58,7 +58,7 @@ TextBox textBox = shape.TextBox;
 // Casser le lien vers l'avant.
 textBox.BreakForwardLink();
 
-//Rompre un lien direct en définissant une valeur nulle.
+// Rompre un lien direct en définissant une valeur nulle.
 textBox. Next = null;
 
 // Rompre un lien qui mène à cette zone de texte.
@@ -81,7 +81,7 @@ R : Pour rompre les liens de redirection dans un document Word à l'aide d'Aspo
 
 #### Q : Comment rompre un lien de redirection en définissant une valeur nulle ?
 
- R : Vous pouvez également rompre un lien de redirection en définissant le`Next`propriété du TextBox à`null`. Cela supprime efficacement la connexion à la forme suivante.
+R : Vous pouvez également rompre un lien de redirection en définissant le`Next` propriété du TextBox à`null`. Cela supprime efficacement la connexion à la forme suivante.
 
 #### Q : Comment rompre un lien qui mène à la TextBox ?
 

@@ -1,7 +1,7 @@
 ---
 title: استخدم أنماط الوجهة
 linktitle: استخدم أنماط الوجهة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية الانضمام إلى مستندات Word وإلحاقها أثناء تطبيق أنماط المستندات الوجهة باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ url: /ar/net/join-and-append-documents/use-destination-styles/
 
 ## الخطوة 1: تهيئة دلائل المستندات
 
- أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+ أولاً ، تحتاج إلى تعيين المسار إلى دليل المستند الخاص بك. قم بتعديل قيمة ملف`dataDir`متغير إلى المسار حيث توجد المستندات الخاصة بك.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
 
- بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في ملف`Document` المُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ بعد ذلك ، تحتاج إلى تحميل مستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في`Document` منشئ وفقًا لأسماء المستندات الخاصة بك.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -55,7 +55,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");
 إليك شفرة المصدر الكاملة لميزة "استخدام أنماط الوجهة" في C # باستخدام Aspose.Words for .NET:
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

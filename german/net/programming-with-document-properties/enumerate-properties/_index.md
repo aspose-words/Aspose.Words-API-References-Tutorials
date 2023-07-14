@@ -1,7 +1,7 @@
 ---
 title: Eigenschaften auflisten
 linktitle: Eigenschaften auflisten
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Aufzählen von Dokumenteigenschaften mit Aspose.Words für .NET.
 type: docs
 weight: 10

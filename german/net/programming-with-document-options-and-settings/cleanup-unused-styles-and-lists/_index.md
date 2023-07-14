@@ -1,7 +1,7 @@
 ---
 title: Bereinigen Sie nicht verwendete Stile und Listen
 linktitle: Bereinigen Sie nicht verwendete Stile und Listen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Bereinigen nicht verwendeter Stile und Listen in einem Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10

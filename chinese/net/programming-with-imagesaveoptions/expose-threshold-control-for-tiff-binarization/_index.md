@@ -1,7 +1,7 @@
 ---
 title: 公开 Tiff 二值化的阈值控制
 linktitle: 公开 Tiff 二值化的阈值控制
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 控制 TIFF 二值化阈值。获得更高质量图像的完整教程。
 type: docs
 weight: 10

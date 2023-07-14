@@ -1,7 +1,7 @@
 ---
 title: Dokument an Leerzeichen anhängen
 linktitle: Dokument an Leerzeichen anhängen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie in Aspose.Words für .NET ein Dokument an ein leeres Zieldokument anhängen.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document();
 
 ## Schritt 3: Entfernen Sie vorhandenen Inhalt aus dem Zieldokument
 
-Um ein sauberes Zieldokument zu gewährleisten, entfernen Sie mithilfe von alle vorhandenen Inhalte aus dem Dokument`RemoveAllChildren` Methode.
+ Um ein sauberes Zieldokument zu gewährleisten, entfernen Sie mithilfe von alle vorhandenen Inhalte aus dem Dokument`RemoveAllChildren` Methode.
 
 ```csharp
 dstDoc.RemoveAllChildren();
@@ -58,12 +58,12 @@ Damit ist die Implementierung des Anhängens eines Dokuments an ein leeres Zield
 ### Beispielquellcode für Append Document To Blank mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	// Das Zieldokument ist nicht leer, was häufig dazu führt, dass vor dem angehängten Dokument eine leere Seite angezeigt wird.
+	//Das Zieldokument ist nicht leer, was häufig dazu führt, dass vor dem angehängten Dokument eine leere Seite angezeigt wird.
 	// Dies liegt daran, dass das Basisdokument einen leeren Abschnitt hat und das neue Dokument auf der nächsten Seite begonnen wird.
 	// Entfernen Sie vor dem Anhängen sämtliche Inhalte aus dem Zieldokument.
 	dstDoc.RemoveAllChildren();

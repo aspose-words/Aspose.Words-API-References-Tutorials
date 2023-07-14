@@ -1,7 +1,7 @@
 ---
 title: Salva Pdf come Jpeg
 linktitle: Salva Pdf come Jpeg
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come convertire documenti PDF in immagini JPEG utilizzando Aspose.Words per .NET. Tutorial passo passo con codice sorgente di esempio.
 type: docs
 weight: 10

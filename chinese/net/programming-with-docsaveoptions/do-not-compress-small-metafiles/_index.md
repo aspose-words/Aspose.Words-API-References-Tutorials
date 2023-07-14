@@ -1,14 +1,14 @@
 ---
 title: 不要压缩小图元文件
 linktitle: 不要压缩小图元文件
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在保存文档时启用“不压缩小图元文件”功能。
 type: docs
 weight: 10
 url: /zh/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
 
-在 C# 应用程序中处理文件时，压缩文档中的元数据是一项常见功能。但是，可能有必要不压缩小文件的元数据以保持其质量。在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 的 C# 源代码在文档保存选项中启用“不压缩小图元文件”功能。
+在 C# 应用程序中对文件进行文字处理时，压缩文档中的元数据是一个常见功能。但是，可能有必要不压缩小文件的元数据以保持其质量。在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 的 C# 源代码在文档保存选项中启用“不压缩小图元文件”功能。
 
 ## 了解 Aspose.Words 库
 

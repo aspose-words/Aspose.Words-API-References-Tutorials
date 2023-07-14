@@ -1,7 +1,7 @@
 ---
 title: Geben Sie beim Rendern die Standardschriftart an
 linktitle: Geben Sie beim Rendern die Standardschriftart an
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Festlegen der Standardschriftart beim Rendern eines Dokuments mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Schritt 3: Standardschriftart festlegen
- Jetzt können Sie die beim Rendern zu verwendende Standardschriftart angeben, indem Sie eine Instanz davon erstellen`FontSettings` Klasse und Einstellung der`DefaultFontName` Eigentum der`DefaultFontSubstitution` Einspruch gegen die`DefaultFontSubstitution` Objekt`SubstitutionSettings` von`FontSettings`.
+ Jetzt können Sie die beim Rendern zu verwendende Standardschriftart angeben, indem Sie eine Instanz davon erstellen`FontSettings` Klasse und Einstellung der`DefaultFontName`Eigentum der`DefaultFontSubstitution` Einspruch gegen die`DefaultFontSubstitution` Objekt`SubstitutionSettings` von`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Beispielquellcode für „Standardschriftart beim Rendern angeben“ mit Aspose.Words für .NET 
 
 ```csharp
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -56,13 +56,13 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man beim Rendern eines Dokuments mit Aspose.Words für .NET die Standardschriftart angibt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie ganz einfach eine Standardschriftart festlegen, die beim Rendern Ihrer Dokumente verwendet werden soll. Aspose.Words bietet eine leistungsstarke und flexible API für die Arbeit mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die Darstellung Ihrer Dokumente steuern und an Ihre spezifischen Anforderungen anpassen.
+In diesem Tutorial haben wir gelernt, wie man beim Rendern eines Dokuments mit Aspose.Words für .NET die Standardschriftart angibt. Wenn Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie ganz einfach eine Standardschriftart festlegen, die beim Rendern Ihrer Dokumente verwendet werden soll. Aspose.Words bietet eine leistungsstarke und flexible API für die Textverarbeitung mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die Darstellung Ihrer Dokumente steuern und an Ihre spezifischen Anforderungen anpassen.
 
 ### FAQs
 
 #### F: Wie kann ich beim Konvertieren in PDF in Aspose.Words eine Standardschriftart angeben?
 
- A: Um beim Konvertieren in PDF in Aspose.Words eine Standardschriftart festzulegen, können Sie die verwenden`PdfOptions` Klasse und legen Sie die fest`DefaultFontName` -Eigenschaft auf den Namen der gewünschten Schriftart.
+ A: Um beim Konvertieren in PDF in Aspose.Words eine Standardschriftart festzulegen, können Sie die verwenden`PdfOptions`Klasse und legen Sie die fest`DefaultFontName` -Eigenschaft auf den Namen der gewünschten Schriftart.
 
 #### F: Was passiert, wenn die Standardschriftart beim Konvertieren in PDF nicht verfügbar ist?
 
@@ -74,7 +74,7 @@ A: Ja, Sie können eine Standardschriftart für andere Ausgabeformate wie DOCX o
 
 #### F: Wie kann ich die in Aspose.Words angegebene Standardschriftart überprüfen?
 
- A: Um die in Aspose.Words angegebene Standardschriftart zu überprüfen, können Sie die verwenden`DefaultFontName` Eigentum der`PdfOptions` Klasse und rufen Sie den Namen der konfigurierten Schriftart ab.
+ A: Um die in Aspose.Words angegebene Standardschriftart zu überprüfen, können Sie die verwenden`DefaultFontName`Eigentum der`PdfOptions` Klasse und rufen Sie den Namen der konfigurierten Schriftart ab.
 
 #### F: Ist es möglich, für jeden Abschnitt des Dokuments eine andere Standardschriftart festzulegen?
 

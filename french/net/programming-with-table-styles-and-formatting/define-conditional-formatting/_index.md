@@ -1,7 +1,7 @@
 ---
 title: Définir la mise en forme conditionnelle
 linktitle: Définir la mise en forme conditionnelle
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour définir la mise en forme conditionnelle dans un tableau à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -70,7 +70,7 @@ Félicitation ! Vous avez maintenant défini la mise en forme conditionnelle de 
 ### Exemple de code source pour définir la mise en forme conditionnelle à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

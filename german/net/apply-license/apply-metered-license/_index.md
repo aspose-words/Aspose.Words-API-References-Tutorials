@@ -1,7 +1,7 @@
 ---
 title: Wenden Sie eine Metered-Lizenz an
 linktitle: Wenden Sie eine Metered-Lizenz an
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine getaktete Lizenz anwenden.
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen e
 - Gültige Anmeldeinformationen für die getaktete Lizenzierung. 
 
 ## Schritt 1: Importieren Sie die erforderlichen Namespaces
-Importieren Sie zunächst die erforderlichen Namespaces in Ihren C#-Code. Diese Namespaces enthalten die Klassen und Methoden, die für die Arbeit mit Aspose.Words erforderlich sind.
+Importieren Sie zunächst die erforderlichen Namespaces in Ihren C#-Code. Diese Namespaces enthalten die Klassen und Methoden, die für die Wortverarbeitung mit Aspose.Words erforderlich sind.
 
 ```csharp
 using Aspose.Words;

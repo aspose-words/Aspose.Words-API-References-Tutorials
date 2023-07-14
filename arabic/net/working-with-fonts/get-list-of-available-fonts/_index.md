@@ -1,7 +1,7 @@
 ---
 title: الحصول على قائمة الخطوط المتاحة
 linktitle: الحصول على قائمة الخطوط المتاحة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: في هذا البرنامج التعليمي ، تعرف على كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -56,7 +56,7 @@ Console.WriteLine("Path: " + fontInfo.FilePath);
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

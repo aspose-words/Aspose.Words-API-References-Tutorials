@@ -1,7 +1,7 @@
 ---
 title: Énumérer les nœuds enfants
 linktitle: Énumérer les nœuds enfants
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à énumérer les nœuds enfants dans un paragraphe avec Aspose.Words pour .NET.
 type: docs
 weight: 10

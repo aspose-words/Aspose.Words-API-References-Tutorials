@@ -1,7 +1,7 @@
 ---
 title: 使用控制字符
 linktitle: 使用控制字符
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 在 Aspose.Words for .NET 中使用控制字符的分步指南。
 type: docs
 weight: 10

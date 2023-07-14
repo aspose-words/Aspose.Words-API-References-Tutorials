@@ -1,7 +1,7 @@
 ---
 title: Zeilen kombinieren
 linktitle: Zeilen kombinieren
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Tabellenzeilen in einem Word-Dokument mit Aspose.Words für .NET kombinieren.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Tabellenzeil
 2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
 ## Schritt 2: Laden des Dokuments und Zugriff auf die Tabellen
-Um mit der Arbeit mit Tabellen zu beginnen, müssen wir das Dokument laden, das sie enthält, und auf sie zugreifen. Folge diesen Schritten:
+Um die Textverarbeitung mit Tabellen zu starten, müssen wir das Dokument, das sie enthält, laden und darauf zugreifen. Folge diesen Schritten:
 
 ```csharp
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Zugriff auf Tabellen
@@ -56,7 +56,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 ### Beispielquellcode für Combine Rows mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

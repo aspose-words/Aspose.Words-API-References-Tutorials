@@ -1,7 +1,7 @@
 ---
 title: 获取修订组详细信息
 linktitle: 获取修订组详细信息
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 获取 Word 文档中的修订组详细信息。
 type: docs
 weight: 10

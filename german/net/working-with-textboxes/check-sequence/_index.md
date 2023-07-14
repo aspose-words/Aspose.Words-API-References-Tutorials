@@ -1,7 +1,7 @@
 ---
 title: Reihenfolge prüfen
 linktitle: Reihenfolge prüfen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Reihenfolge von Textfeldern in einem Word-Dokument überprüfen.
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ In dieser Schritt-für-Schritt-Anleitung wird erläutert, wie Sie die Reihenfolg
 
 ## Schritt 1: Einrichten des Dokuments und Erstellen einer TextBox-Form
 
-Zunächst müssen wir das Dokument einrichten und eine TextBox-Form erstellen. Der folgende Code initialisiert eine neue Instanz von`Document` Klasse und erstellt eine Textfeldform:
+ Zunächst müssen wir das Dokument einrichten und eine TextBox-Form erstellen. Der folgende Code initialisiert eine neue Instanz von`Document` Klasse und erstellt eine Textfeldform:
 
 ```csharp
 Document doc = new Document();

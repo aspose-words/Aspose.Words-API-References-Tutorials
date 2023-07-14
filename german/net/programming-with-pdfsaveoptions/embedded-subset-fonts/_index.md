@@ -1,7 +1,7 @@
 ---
 title: Teilmenge von Schriftarten in PDF-Dokument einbetten
 linktitle: Teilmenge von Schriftarten in PDF-Dokument einbetten
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Einbetten von Schriftartteilmengen in ein PDF-Dokument mit Aspose.Words für .NET.
 type: docs
 weight: 10

@@ -1,14 +1,14 @@
 ---
-title: 使用 Markdown
-linktitle: 使用 Markdown
-second_title: Aspose.Words for .NET API 参考
+title: 使用 Markdown 进行文字处理
+linktitle: 使用 Markdown 进行文字处理
+second_title: Aspose.Words 文档处理 API
 description: 通过这些分步教程和实践示例，了解如何使用 Aspose.Words for .NET 在 Word 文档中使用 Markdown 语法。
 type: docs
 weight: 810
 url: /zh/net/working-with-markdown/
 ---
 
-使用 Markdown 提供了全面的资源，用于学习如何使用 Aspose.Words for .NET 库使用 Markdown 格式。教程提供了操作和生成 Markdown 文档的详细解释、完整源代码和实际示例，包括导入 Markdown 文件、将 Word 文档转换为 Markdown、自定义 Markdown 样式、导出为 PDF 等其他格式等等。对于想要掌握将 Markdown 与 Aspose.Words for .NET 结合使用并充分利用其高级功能来生成基于文本的内容的开发人员来说，此资源至关重要。
+使用 Markdown 进行文字处理提供了全面的资源，用于学习如何使用 Aspose.Words for .NET 库处理 Markdown 格式。教程提供了操作和生成 Markdown 文档的详细解释、完整源代码和实际示例，包括导入 Markdown 文件、将 Word 文档转换为 Markdown、自定义 Markdown 样式、导出为 PDF 等其他格式等等。对于想要掌握将 Markdown 与 Aspose.Words for .NET 结合使用并充分利用其高级功能来生成基于文本的内容的开发人员来说，此资源至关重要。
 
  ## 教程
 | 标题 | 描述 |

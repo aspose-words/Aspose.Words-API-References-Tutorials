@@ -1,7 +1,7 @@
 ---
 title: Optionen für Leerzeichen behandeln
 linktitle: Optionen für Leerzeichen behandeln
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Leerzeichen in Ihren TXT-Dokumenten mit Aspose.Words für .NET verwalten. Entfernen Sie unnötige Leerzeichen und verbessern Sie die Lesbarkeit.
 type: docs
 weight: 10

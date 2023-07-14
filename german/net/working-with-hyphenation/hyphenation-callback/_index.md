@@ -1,7 +1,7 @@
 ---
 title: Rückruf zur Silbentrennung
 linktitle: Rückruf zur Silbentrennung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie den Silbentrennungsrückruf in Aspose.Words für .NET verwenden, um die Silbentrennung von Wörtern zu verarbeiten.
 type: docs
 weight: 10

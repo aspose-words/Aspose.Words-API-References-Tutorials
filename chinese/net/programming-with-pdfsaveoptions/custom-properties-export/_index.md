@@ -1,7 +1,7 @@
 ---
 title: 导出 PDF 文档中的自定义属性
 linktitle: 导出 PDF 文档中的自定义属性
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在使用 Aspose.Words for .NET 将文档转换为 PDF 时导出自定义属性。
 type: docs
 weight: 10

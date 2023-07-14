@@ -1,7 +1,7 @@
 ---
 title: Erhalten Sie Substitution ohne Suffixe
 linktitle: Erhalten Sie Substitution ohne Suffixe
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET suffixlose Überschreibungen in einem Word-Dokument erhalten.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 ### Beispielquellcode für Get Substitution Without Suffixes mit Aspose.Words für .NET 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");

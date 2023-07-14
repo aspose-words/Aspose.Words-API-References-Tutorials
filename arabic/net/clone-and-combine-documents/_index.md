@@ -1,7 +1,7 @@
 ---
 title: استنساخ ودمج المستندات
 linktitle: استنساخ ودمج المستندات
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية استنساخ ودمج مستندات Word مع Aspose.Words for .NET. تعرف على كيفية إنشاء نسخ من المستندات ودمج مستندات متعددة في مستند واحد وإدارة الأقسام والرؤوس والتذييلات.
 type: docs
 weight: 1470

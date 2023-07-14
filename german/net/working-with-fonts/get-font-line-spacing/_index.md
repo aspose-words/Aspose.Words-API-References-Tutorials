@@ -1,7 +1,7 @@
 ---
 title: Holen Sie sich den Schriftzeilenabstand
 linktitle: Holen Sie sich den Schriftzeilenabstand
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET den Schriftzeilenabstand in einem Word-Dokument ermitteln.
 type: docs
 weight: 10

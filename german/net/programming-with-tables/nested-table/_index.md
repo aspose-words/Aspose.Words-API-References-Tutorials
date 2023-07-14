@@ -1,7 +1,7 @@
 ---
 title: Verschachtelter Tisch
 linktitle: Verschachtelter Tisch
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine verschachtelte Tabelle in einem Word-Dokument erstellen.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET eine verscha
 2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
 ## Schritt 2: Erstellen des Dokuments und Initialisieren des Dokumentengenerators
-Um mit dem Dokument und dem Dokumentengenerator zu arbeiten, gehen Sie folgendermaßen vor:
+Um die Textverarbeitung mit dem Dokument und dem Dokumentengenerator zu starten, gehen Sie folgendermaßen vor:
 
 ```csharp
 // Pfad zu Ihrem Dokumentenverzeichnis
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Dokumentenerstellung
 Document doc = new Document();
 
-// Initialisieren Sie den Dokumentengenerator
+// Initialisieren Sie den Dokumentgenerator
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
@@ -72,7 +72,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und die richtige Namensdatei fü
 ### Beispielquellcode für Nested Table mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

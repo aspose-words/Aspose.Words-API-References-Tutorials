@@ -1,7 +1,7 @@
 ---
 title: تنسيق الصف تعطيل الفاصل عبر الصفحات
 linktitle: تنسيق الصف تعطيل الفاصل عبر الصفحات
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تعطيل فاصل الأسطر لجدول عبر صفحات متعددة في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ url: /ar/net/programming-with-tables/row-format-disable-break-across-pages/
 2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
 
 ## الخطوة الثانية: تحميل المستند
-لبدء العمل مع المستند ، اتبع الخطوات التالية:
+لبدء معالجة الكلمات بالمستند ، اتبع الخطوات التالية:
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+// قم بتحميل المستند
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
@@ -39,7 +39,7 @@ foreach(Row row in table.Rows)
 row.RowFormat.AllowBreakAcrossPages = false;
 ```
 
- هنا نستخدم المستند لجلب الجدول الأول ثم نكرره عبر جميع الصفوف في الجدول باستخدام حلقة foreach. داخل الحلقة ، نقوم بتعطيل فصل الصفوف لكل صف عن طريق ضبط`RowFormat.AllowBreakAcrossPages` الملكية ل`false`.
+ هنا نستخدم المستند لجلب الجدول الأول ثم نكرره عبر جميع الصفوف في الجدول باستخدام حلقة foreach. داخل الحلقة ، نقوم بتعطيل فصل الصفوف لكل صف عن طريق ضبط`RowFormat.AllowBreakAcrossPages` ملكية ل`false`.
 
 ## الخطوة 4: حفظ المستند المعدل
 أخيرًا ، نحتاج إلى حفظ المستند المعدل مع تعطيل فاصل أسطر الجدول. استخدم الكود التالي:
@@ -53,7 +53,7 @@ doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ### نموذج التعليمات البرمجية المصدر لتنسيق الصف تعطيل الفاصل عبر الصفحات باستخدام Aspose.Words for .NET 
 
 ```csharp
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");

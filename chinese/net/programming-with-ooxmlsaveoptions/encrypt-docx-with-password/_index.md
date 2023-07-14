@@ -1,7 +1,7 @@
 ---
 title: 使用密码加密 Docx
 linktitle: 使用密码加密 Docx
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 使用密码加密 DOCX 文件。文档安全完整教程。
 type: docs
 weight: 10

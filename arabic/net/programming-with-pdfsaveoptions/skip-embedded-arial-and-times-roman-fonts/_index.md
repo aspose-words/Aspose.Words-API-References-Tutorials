@@ -1,7 +1,7 @@
 ---
 title: قم بتحسين حجم PDF باستخدام تخطي الخطوط Arial & Times الرومانية المضمنة
 linktitle: قم بتحسين حجم PDF باستخدام تخطي الخطوط Arial & Times الرومانية المضمنة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لإنشاء ملف PDF محسن بدون تضمين خطوط Arial و Times Roman باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## الخطوة 3: تكوين خيارات الحفظ كملف PDF مع دمج الخط
 
- لتخطي تضمين خطوط Arial و Times Roman في ملف PDF الذي تم إنشاؤه ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن وتعيين`FontEmbeddingMode` الملكية ل`PdfFontEmbeddingMode.EmbedAll`.
+ لتخطي تضمين خطوط Arial و Times Roman في ملف PDF الذي تم إنشاؤه ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن وتعيين`FontEmbeddingMode` ملكية ل`PdfFontEmbeddingMode.EmbedAll`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 
  قم بتحميل المستند الذي تريد معالجته باستخدام ملف`Document` فئة ومسار المستند المحدد.
 
- قم بإنشاء مثيل لـ`PdfSaveOptions` فئة وضبط`FontEmbeddingMode` الملكية ل`PdfFontEmbeddingMode.EmbedAll`. سيؤدي ذلك إلى تضمين كل الخطوط باستثناء Arial و Times Roman في ملف PDF الذي تم إنشاؤه.
+ قم بإنشاء مثيل لـ`PdfSaveOptions`فئة وضبط`FontEmbeddingMode` ملكية ل`PdfFontEmbeddingMode.EmbedAll`. سيؤدي ذلك إلى تضمين كل الخطوط باستثناء Arial و Times Roman في ملف PDF الذي تم إنشاؤه.
 
  استخدم ال`Save` طريقة`Document` كائن لحفظ المستند بتنسيق PDF مع تحديد خيارات الحفظ التي تم تكوينها مسبقًا.
 

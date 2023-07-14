@@ -1,7 +1,7 @@
 ---
 title: 光标位置
 linktitle: 光标位置
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 分步指南检索 Word 文档中的光标位置。
 type: docs
 weight: 10

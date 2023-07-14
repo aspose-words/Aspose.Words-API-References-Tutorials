@@ -1,7 +1,7 @@
 ---
 title: 应用行格式
 linktitle: 应用行格式
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 将行格式应用于表格的分步指南。
 type: docs
 weight: 10

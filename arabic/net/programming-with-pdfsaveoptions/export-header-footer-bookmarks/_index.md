@@ -1,7 +1,7 @@
 ---
 title: تصدير الإشارات المرجعية لتذييل رأس المستند Word إلى مستند PDF
 linktitle: تصدير الإشارات المرجعية لتذييل رأس المستند Word إلى مستند PDF
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لتصدير إشارات مرجعية في ترويسة مستند Word إلى إشارات مرجعية لمستند pdf باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

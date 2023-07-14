@@ -1,7 +1,7 @@
 ---
 title: 设置脚注栏
 linktitle: 设置脚注栏
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 设置 Word 文档中脚注的列数。
 type: docs
 weight: 10

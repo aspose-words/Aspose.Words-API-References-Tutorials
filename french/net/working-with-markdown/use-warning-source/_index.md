@@ -1,7 +1,7 @@
 ---
 title: Utiliser la source d'avertissement
 linktitle: Utiliser la source d'avertissement
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser la source d'avertissement avec le guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10

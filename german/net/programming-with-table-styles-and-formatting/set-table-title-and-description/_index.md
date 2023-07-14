@@ -1,7 +1,7 @@
 ---
 title: Legen Sie den Tabellentitel und die Beschreibung fest
 linktitle: Legen Sie den Tabellentitel und die Beschreibung fest
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Festlegen von Titel und Beschreibung einer Tabelle mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -59,7 +59,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 ### Beispielquellcode für „Tabellentitel und -beschreibung festlegen“ mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

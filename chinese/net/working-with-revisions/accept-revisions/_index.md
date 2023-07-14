@@ -1,7 +1,7 @@
 ---
 title: 接受修改
 linktitle: 接受修改
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 接受对 Word 文档的修订
 type: docs
 weight: 10

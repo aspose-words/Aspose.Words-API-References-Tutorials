@@ -1,7 +1,7 @@
 ---
 title: التحويل بين وحدات القياس
 linktitle: التحويل بين وحدات القياس
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة للتحويل بين وحدات القياس في مستند باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

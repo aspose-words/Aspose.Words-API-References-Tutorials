@@ -1,7 +1,7 @@
 ---
 title: PDF als JPEG speichern
 linktitle: PDF als JPEG speichern
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET PDF-Dokumente in JPEG-Bilder konvertieren. Schritt-für-Schritt-Anleitung mit Beispielquellcode.
 type: docs
 weight: 10

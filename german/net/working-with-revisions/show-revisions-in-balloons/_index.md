@@ -1,7 +1,7 @@
 ---
 title: Revisionen in Sprechblasen anzeigen
 linktitle: Revisionen in Sprechblasen anzeigen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Zeigen Sie Revisionen in Sprechblasen mit Aspose.Words für .NET an.
 type: docs
 weight: 10
@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### F: Wie werden Revisionen in Sprechblasen mit Aspose.Words für .NET angezeigt?
 
- A: Benutzen Sie die`ShowInBalloons` Eigentum der`RevisionOptions` Objekt zum Konfigurieren der Anzeige von Revisionen in Sprechblasen. Sie können diese Eigenschaft aktivieren`ShowInBalloons.FormatAndDelete` um Revisionen in Sprechblasen mit Lösch- und Formatierungsrevisionen anzuzeigen.
+ A: Benutzen Sie die`ShowInBalloons`Eigentum der`RevisionOptions` Objekt zum Konfigurieren der Anzeige von Revisionen in Sprechblasen. Sie können diese Eigenschaft aktivieren`ShowInBalloons.FormatAndDelete` um Revisionen in Sprechblasen mit Lösch- und Formatierungsrevisionen anzuzeigen.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

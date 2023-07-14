@@ -1,7 +1,7 @@
 ---
 title: Aktivieren Sie „Schriftartersetzung deaktivieren“.
 linktitle: Aktivieren Sie „Schriftartersetzung deaktivieren“.
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie die Schriftartersetzung in einem Word-Dokument mit Aspose.Words für .NET aktivieren oder deaktivieren.
 type: docs
 weight: 10
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Als Nächstes laden wir das Word-Dokument, das Sie rendern möchten, und erstellen eine Instanz davon`FontSettings` Klasse, um die Schriftarteinstellungen zu verwalten. Wir legen die Standardschriftartüberschreibung fest, indem wir den Schriftartnamen in angeben`DefaultFontName` und deaktivieren Sie das Überschreiben von Schriftartinformationen mit`Enabled` einstellen`false`.
 
 ```csharp
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Rendering.docx");
 
 // Konfigurieren Sie die Schriftarteinstellungen
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -82,7 +82,7 @@ A: Wenn beim Ersetzen in einem Word-Dokument erforderliche Schriftarten fehlen, 
 
 #### F: Wie kann ich mit fehlenden Schriftarten umgehen, wenn ich sie in einem Word-Dokument mit Aspose.Words ersetze?
 
-A: Um fehlende Schriftarten beim Ersetzen in einem Word-Dokument mit Aspose.Words zu behandeln, können Sie die API verwenden, um fehlende Schriftarten zu erkennen und Auflösungsoptionen bereitzustellen. Je nach Bedarf können Sie fehlende Schriftarten durch alternative Schriftarten ersetzen oder fehlende Schriftarten in das Dokument aufnehmen.
+A: Um fehlende Schriftarten beim Ersetzen in einem Word-Dokument mit Aspose.Words zu behandeln, können Sie die API verwenden, um fehlende Schriftarten zu erkennen und Auflösungsoptionen bereitzustellen. Je nach Bedarf können Sie fehlende Schriftarten durch alternative Schriftarten ersetzen oder fehlende Schriftarten in das Dokument einfügen.
 
 #### F: Ist es wichtig, die Schriftartersetzung in einem Word-Dokument zu steuern?
 

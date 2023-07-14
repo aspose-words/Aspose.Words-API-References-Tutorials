@@ -1,14 +1,14 @@
 ---
 title: 警告回调
 linktitle: 警告回调
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 的回调功能加载 Word 文档时处理警告。
 type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/warning-callback/
 ---
 
-在 C# 应用程序中处理 Word 文档时，了解加载文档时发出的警告会很有用。借助适用于.NET 的 Aspose.Words 库，您可以在使用 LoadOptions 加载选项加载文档时轻松指定回调函数来处理警告。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码来加载文档，并使用 LoadOptions 加载选项使用回调函数来发出警告。
+在 C# 应用程序中对 Word 文档进行文字处理时，了解加载文档时发出的警告会很有用。借助适用于.NET 的 Aspose.Words 库，您可以在使用 LoadOptions 加载选项加载文档时轻松指定回调函数来处理警告。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码来加载文档，并使用 LoadOptions 加载选项使用回调函数来发出警告。
 
 ## 了解 Aspose.Words 库
 

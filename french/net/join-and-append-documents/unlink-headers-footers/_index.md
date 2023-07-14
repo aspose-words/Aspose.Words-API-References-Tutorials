@@ -1,7 +1,7 @@
 ---
 title: Dissocier les en-têtes et les pieds de page
 linktitle: Dissocier les en-têtes et les pieds de page
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à joindre et à ajouter des documents Word tout en dissociant les en-têtes et les pieds de page à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
 ## Étape 1 : Initialiser les répertoires de documents
 
- Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir` variable au chemin où se trouvent vos documents.
+ Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir`variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Étape 3 : dissocier les en-têtes et les pieds de page du document source
 
- Pour dissocier les en-têtes et pieds de page du document source de la continuation des en-têtes et pieds de page du document de destination, vous devez définir le`LinkToPrevious` propriété de la`HeadersFooters` collection dans la première section du document source pour`false`.
+ Pour dissocier les en-têtes et pieds de page du document source de la continuation des en-têtes et pieds de page du document de destination, vous devez définir le`LinkToPrevious`propriété de la`HeadersFooters` collection dans la première section du document source pour`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Étape 5 : Enregistrez le document final
 
- Enfin, enregistrez le document fusionné avec la fonctionnalité Dissocier les en-têtes et les pieds de page activée à l'aide de la`Save` méthode de la`Document` classe.
+Enfin, enregistrez le document fusionné avec la fonctionnalité Dissocier les en-têtes et les pieds de page activée à l'aide de la`Save` méthode de la`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 Voici le code source complet de la fonctionnalité "Unlink Headers Footers" en C# à l'aide d'Aspose.Words pour .NET :
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

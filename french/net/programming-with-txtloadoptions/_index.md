@@ -1,13 +1,13 @@
 ---
-title: Programmation avec Txtloadoptions
-linktitle: Programmation avec Txtloadoptions
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Traitement de texte avec Txtloadoptions
+linktitle: Traitement de texte avec Txtloadoptions
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à programmer avec les options de chargement de fichiers texte dans Aspose.Words pour .NET. Apprenez à spécifier l'encodage, à ignorer les caractères inconnus, à gérer les sauts de ligne, etc., grâce à des didacticiels pas à pas et à des exemples de code en C#.
 type: docs
 weight: 1640
 url: /fr/net/programming-with-txtloadoptions/
 ---
-Les didacticiels Aspose.Words pour .NET vous guident à travers différentes fonctionnalités et aspects de la programmation avec Aspose.Words, une bibliothèque puissante pour le traitement de documents Word. Le tutoriel "Programmer avec TxtLoadOptions" vous montre comment charger et manipuler des fichiers texte dans Aspose.Words. Vous apprendrez à spécifier les options de chargement, à extraire du texte d'un fichier texte et à l'insérer dans un document Word, ainsi qu'à effectuer d'autres opérations de traitement de texte.
+Les didacticiels Aspose.Words pour .NET vous guident à travers différentes fonctionnalités et aspects du traitement de mots avec Aspose.Words, une bibliothèque puissante pour le traitement de documents Word. Le tutoriel "Traitement de mots avec TxtLoadOptions" vous montre comment charger et manipuler des fichiers texte dans Aspose.Words. Vous apprendrez à spécifier les options de chargement, à extraire du texte d'un fichier texte et à l'insérer dans un document Word, ainsi qu'à effectuer d'autres opérations de traitement de texte.
 
 Ces didacticiels proposent des instructions détaillées, des exemples de code et des explications détaillées pour vous aider à comprendre et à utiliser les fonctionnalités Aspose.Words dans vos projets .NET. Que vous ayez besoin de créer, modifier, convertir ou manipuler des documents Word, ces didacticiels vous fournissent les connaissances dont vous avez besoin pour mener à bien vos tâches. Explorez les différentes fonctionnalités et apprenez à tirer le meilleur parti d'Aspose.Words pour vos besoins de traitement de documents Word dans vos applications .NET.
 

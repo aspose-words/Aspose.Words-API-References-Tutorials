@@ -1,7 +1,7 @@
 ---
 title: 设置单元格内边距
 linktitle: 设置单元格内边距
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 设置表格单元格边距的分步指南。
 type: docs
 weight: 10

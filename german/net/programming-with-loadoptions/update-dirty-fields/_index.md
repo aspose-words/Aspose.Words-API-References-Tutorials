@@ -1,14 +1,14 @@
 ---
 title: Aktualisieren Sie schmutzige Felder
 linktitle: Aktualisieren Sie schmutzige Felder
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie ein Word-Dokument laden, indem Sie fehlerhafte Felder mit Aspose.Words für .NET aktualisieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-loadoptions/update-dirty-fields/
 ---
 
-Beim Arbeiten mit Word-Dokumenten in einer C#-Anwendung kann es erforderlich sein, fehlerhafte Felder zu aktualisieren, um die neuesten Werte anzuzeigen. Mit der Aspose.Words-Bibliothek für .NET können Sie fehlerhafte Felder beim Laden des Dokuments mithilfe von LoadOptions problemlos aktualisieren. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung von Aspose.Words für .NET C#-Quellcode zum Laden eines Dokuments durch Aktualisieren fehlerhafter Felder mithilfe von LoadOptions.
+Bei der Textverarbeitung mit Word-Dokumenten in einer C#-Anwendung kann es erforderlich sein, fehlerhafte Felder zu aktualisieren, um die neuesten Werte anzuzeigen. Mit der Aspose.Words-Bibliothek für .NET können Sie fehlerhafte Felder beim Laden des Dokuments mithilfe von LoadOptions problemlos aktualisieren. In dieser Schritt-für-Schritt-Anleitung führen wir Sie durch die Verwendung von Aspose.Words für .NET C#-Quellcode zum Laden eines Dokuments durch Aktualisieren fehlerhafter Felder mithilfe von LoadOptions.
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 

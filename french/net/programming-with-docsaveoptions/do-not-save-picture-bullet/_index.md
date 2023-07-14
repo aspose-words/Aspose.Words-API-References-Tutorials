@@ -1,7 +1,7 @@
 ---
 title: Ne pas enregistrer la puce de l'image
 linktitle: Ne pas enregistrer la puce de l'image
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment désactiver l'enregistrement des puces d'image dans les documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10

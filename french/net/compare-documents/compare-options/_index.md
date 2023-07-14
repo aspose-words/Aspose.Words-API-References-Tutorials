@@ -1,7 +1,7 @@
 ---
 title: Comparer les options
 linktitle: Comparer les options
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour expliquer le code source C# de la fonctionnalité Options de comparaison avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -49,7 +49,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal": "Documents are not equal");
 ```
 
-### Exemple de code source pour les options de comparaison à l'aide d'Aspose.Words pour .NET
+### Exemple de code source pour les options de comparaison à l'aide de Aspose.Words pour .NET
 
 Voici le code source complet de la fonctionnalité Comparer les options avec Aspose.Words pour .NET :
 

@@ -1,7 +1,7 @@
 ---
 title: Exportieren Sie benutzerdefinierte Eigenschaften in ein PDF-Dokument
 linktitle: Exportieren Sie benutzerdefinierte Eigenschaften in ein PDF-Dokument
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie benutzerdefinierte Eigenschaften exportieren, wenn Sie Dokumente mit Aspose.Words für .NET in PDF konvertieren.
 type: docs
 weight: 10

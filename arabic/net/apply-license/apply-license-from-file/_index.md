@@ -1,7 +1,7 @@
 ---
 title: تطبيق الترخيص من ملف
 linktitle: تطبيق الترخيص من ملف
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تطبيق ترخيص من ملف باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -17,7 +17,7 @@ url: /ar/net/apply-license/apply-license-from-file/
 - ملف ترخيص صالح لـ Aspose.Words. 
 
 ## الخطوة 1: استيراد Aspose.Words Namespace
-للبدء ، تحتاج إلى استيراد مساحة الاسم Aspose.Words في كود C # الخاص بك. توفر مساحة الاسم هذه جميع الفئات والطرق المطلوبة للعمل مع مستندات Word.
+للبدء ، تحتاج إلى استيراد مساحة الاسم Aspose.Words في كود C # الخاص بك. توفر مساحة الاسم هذه جميع الفئات والطرق المطلوبة لمعالجة الكلمات باستخدام مستندات Word.
 
 ```csharp
 using Aspose.Words;

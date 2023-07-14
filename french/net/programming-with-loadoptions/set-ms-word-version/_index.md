@@ -1,14 +1,14 @@
 ---
 title: Définir la version de Mme Word
 linktitle: Définir la version de Mme Word
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à charger un document avec une version spécifiée de MS Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-loadoptions/set-ms-word-version/
 ---
 
-Lorsque vous travaillez avec des documents Word dans une application C#, il peut être nécessaire de spécifier la version de Microsoft Word à utiliser lors du chargement du document. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement définir la version de MS Word à utiliser à l'aide de LoadOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour charger un document avec une version spécifiée de MS Word à l'aide des options de chargement LoadOptions.
+Lors du traitement de texte avec des documents Word dans une application C#, il peut être nécessaire de spécifier la version de Microsoft Word à utiliser lors du chargement du document. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement définir la version de MS Word à utiliser à l'aide de LoadOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour charger un document avec une version spécifiée de MS Word à l'aide des options de chargement LoadOptions.
 
 ## Comprendre la bibliothèque Aspose.Words
 

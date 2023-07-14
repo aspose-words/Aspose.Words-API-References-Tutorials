@@ -1,7 +1,7 @@
 ---
 title: 更改区域设置
 linktitle: 更改区域设置
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 更改 Word 文档中日期和数字格式的区域设置。
 type: docs
 weight: 10

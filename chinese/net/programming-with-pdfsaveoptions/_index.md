@@ -1,13 +1,13 @@
 ---
-title: 使用 Pdfsaveoptions 进行编程
-linktitle: 使用 Pdfsaveoptions 进行编程
-second_title: Aspose.Words for .NET API 参考
-description: 探索在 Aspose.Words for .NET 中使用 PDF 保存选项进行编程。通过分步教程和示例代码，了解如何使用高级功能将 Word 文档生成为 PDF。
+title: 使用 Pdfsaveoptions 进行文字处理
+linktitle: 使用 Pdfsaveoptions 进行文字处理
+second_title: Aspose.Words 文档处理 API
+description: 使用 Aspose.Words for .NET 中的 PDF 保存选项探索文字处理。通过分步教程和示例代码，了解如何使用高级功能将 Word 文档生成为 PDF。
 type: docs
 weight: 1680
 url: /zh/net/programming-with-pdfsaveoptions/
 ---
-有关使用 PdfSaveOptions 进行编程的 Aspose.Words for .NET 教程将引导您了解使用 PDF 保存选项的各种功能和技术。这些教程可帮助您了解如何通过更改布局设置、字体、图像、元数据等来自定义 Word 到 PDF 转换。
+有关使用 PdfSaveOptions 进行文字处理的 Aspose.Words for .NET 教程将引导您了解使用 PDF 保存选项进行文字处理的各种功能和技术。这些教程可帮助您了解如何通过更改布局设置、字体、图像、元数据等来自定义 Word 到 PDF 转换。
 
 您将了解如何调整图像质量选项、选择图像的压缩级别、设置 PDF 安全设置（例如加密和权限），甚至将水印插入生成的 PDF 文件中。这些教程还包括详细的代码示例，可帮助您在项目中练习这些功能。
 

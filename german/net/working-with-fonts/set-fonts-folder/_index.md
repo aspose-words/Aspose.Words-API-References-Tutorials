@@ -1,7 +1,7 @@
 ---
 title: Legen Sie den Schriftartenordner fest
 linktitle: Legen Sie den Schriftartenordner fest
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie das Schriftartenverzeichnis in Aspose.Words für .NET festlegen und die Verfügbarkeit der in Ihren Dokumenten verwendeten Schriftarten sicherstellen.
 type: docs
 weight: 10
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

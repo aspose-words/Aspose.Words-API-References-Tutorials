@@ -1,7 +1,7 @@
 ---
 title: احصل على مجموعات المراجعة
 linktitle: احصل على مجموعات المراجعة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: احصل على مجموعات المراجعة في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -72,7 +72,7 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 
 #### س: كيف تحصل على مؤلف مجموعة المراجعة في Aspose.Words for .NET؟
 
- ج: استخدم ملف`Author` ممتلكات`RevisionGroup` كائن للحصول على مؤلف مجموعة المراجعة.
+ ج: استخدم ملف`Author`ممتلكات`RevisionGroup` كائن للحصول على مؤلف مجموعة المراجعة.
 
 ```csharp
 string author = group.Author;
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### س: كيف تحصل على نوع المراجعة لمجموعة المراجعة في Aspose.Words for .NET؟
 
- ج: استخدم ملف`RevisionType` ممتلكات`RevisionGroup`كائن للحصول على نوع المراجعة للمجموعة.
+ ج: استخدم ملف`RevisionType`ممتلكات`RevisionGroup`كائن للحصول على نوع المراجعة للمجموعة.
 
 ```csharp
 string revisionType = group.RevisionType;

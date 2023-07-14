@@ -1,7 +1,7 @@
 ---
 title: Liste der verfügbaren Schriftarten abrufen
 linktitle: Liste der verfügbaren Schriftarten abrufen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie die Liste der in Aspose.Words für .NET verfügbaren Schriftarten abrufen.
 type: docs
 weight: 10
@@ -56,7 +56,7 @@ Console.WriteLine("Path: " + fontInfo.FilePath);
 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

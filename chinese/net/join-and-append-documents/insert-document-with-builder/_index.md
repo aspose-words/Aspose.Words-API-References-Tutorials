@@ -1,7 +1,7 @@
 ---
 title: 使用生成器插入文档
 linktitle: 使用生成器插入文档
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在另一个文档的末尾插入一个文档。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: 在跟踪文档中移动节点
 linktitle: 在跟踪文档中移动节点
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 移动跟踪文档中的节点。
 type: docs
 weight: 10
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
 ## 结论
 
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 移动跟踪的 Word 文档中的节点。通过遵循创建文档、启用修订跟踪、移动节点和停止修订跟踪的步骤，我们能够成功执行此操作。 Aspose.Words for .NET 是一个用于处理 Word 文档的强大工具，并提供用于管理修订的高级功能。现在，您可以利用这些知识在您自己的 Word 文档中移动节点，同时使用 Aspose.Words for .NET 跟踪修订。
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 移动跟踪的 Word 文档中的节点。通过遵循创建文档、启用修订跟踪、移动节点和停止修订跟踪的步骤，我们能够成功执行此操作。 Aspose.Words for .NET 是一款功能强大的 Word 文档文字处理工具，并提供管理修订的高级功能。现在，您可以利用这些知识在您自己的 Word 文档中移动节点，同时使用 Aspose.Words for .NET 跟踪修订。
 
 ### 常见问题解答
 

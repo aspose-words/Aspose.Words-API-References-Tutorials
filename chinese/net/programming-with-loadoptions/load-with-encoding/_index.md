@@ -1,13 +1,13 @@
 ---
 title: 加载编码
 linktitle: 加载编码
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 加载具有指定编码的文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/load-with-encoding/
 ---
-在 C# 应用程序中处理文本文档时，能够通过指定正确的编码来正确加载它们非常重要。借助适用于 .NET 的 Aspose.Words 库，您可以使用 LoadOptions 加载选项轻松加载具有所需编码的文本文档。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码通过 LoadOptions 加载选项加载具有指定编码的文本文档。
+在 C# 应用程序中对文本文档进行文字处理时，能够通过指定正确的编码来正确加载它们非常重要。借助适用于 .NET 的 Aspose.Words 库，您可以使用 LoadOptions 加载选项轻松加载具有所需编码的文本文档。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码通过 LoadOptions 加载选项加载具有指定编码的文本文档。
 
 ## 了解 Aspose.Words 库
 

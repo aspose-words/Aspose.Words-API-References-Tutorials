@@ -1,13 +1,15 @@
 ---
-title: Lavorare con Node
-linktitle: Lavorare con Node
-second_title: Riferimento all'API Aspose.Words per .NET
+title: Elaborazione di testi con Node
+linktitle: Elaborazione di testi con Node
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come lavorare con i nodi nei documenti di Word utilizzando Aspose.Words per .NET. Tutorial dettagliati con esempi di codice.
 type: docs
 weight: 1000
 url: /it/net/working-with-node/
 ---
-Lavorare con le revisioni è una risorsa completa che ti guida attraverso il lavoro con le revisioni nei documenti di Word utilizzando la libreria Aspose.Words per .NET. I tutorial ti mostrano passo dopo passo come aggiungere, eliminare, accettare e rifiutare le revisioni, come visualizzare le revisioni nel documento, come confrontare versioni diverse e molto altro. Imparerai come lavorare in modo efficace con le revisioni per la collaborazione e la gestione delle modifiche nei tuoi documenti Word. Questa risorsa è essenziale per gli sviluppatori che desiderano automatizzare la gestione delle revisioni nei propri Aspose.Words per le applicazioni basate su .NET.
+I nodi in Aspose.Words per .NET rappresentano i vari elementi di un documento Word, come paragrafi, tabelle, immagini e altro. Manipolando questi nodi, gli sviluppatori possono modificare a livello di codice il contenuto e la formattazione di un documento di Word. I nodi forniscono una struttura gerarchica al documento, consentendo una facile navigazione e manipolazione di elementi specifici.
+
+Per lavorare con i nodi in Aspose.Words per .NET, gli sviluppatori possono utilizzare il Document Object Model (DOM) fornito dalla libreria. Il DOM rappresenta l'intero documento di Word come un albero di nodi, con il documento stesso come nodo radice. Ogni nodo ha un tipo di nodo specifico e può contenere nodi figlio, consentendo un elevato livello di personalizzazione.
 
  ## Tutorial
 | Titolo | Descrizione |

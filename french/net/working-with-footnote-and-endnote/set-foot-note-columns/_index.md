@@ -1,7 +1,7 @@
 ---
 title: Définir des colonnes de notes de bas de page
 linktitle: Définir des colonnes de notes de bas de page
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment définir le nombre de colonnes pour les notes de bas de page dans les documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10

@@ -1,13 +1,13 @@
 ---
-title: Programmieren mit Htmlfixedsaveoptions
-linktitle: Programmieren mit Htmlfixedsaveoptions
-second_title: Aspose.Words für .NET API-Referenz
+title: Textverarbeitung mit Htmlfixedsaveoptions
+linktitle: Textverarbeitung mit Htmlfixedsaveoptions
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit festen HTML-Speicheroptionen in Aspose.Words für .NET programmieren. Die Tutorials führen Sie durch die verschiedenen Funktionen zum Generieren von HTML-Dokumenten mit festem Layout und eingebetteten Bildern.
 type: docs
 weight: 1610
 url: /de/net/programming-with-htmlfixedsaveoptions/
 ---
-Die Aspose.Words für .NET-Tutorials sollen Ihnen dabei helfen, die Verwendung der Aspose.Words-Bibliothek in Ihren .NET-Projekten zu meistern. Eines dieser Tutorials mit dem Titel „Programmieren mit HtmlFixedSaveOptions“ führt Sie durch die Schritte, die zum Konvertieren eines Word-Dokuments in festes HTML mithilfe der Speicheroptionen von HtmlFixedSaveOptions erforderlich sind. In diesem Tutorial wird erläutert, wie Sie Speicheroptionen konfigurieren, Layouteinstellungen festlegen und Bilder und Schriftarten während der Konvertierung verwalten. Außerdem erfahren Sie, wie Sie die Backup-Optionen an Ihre spezifischen Anforderungen anpassen können.
+Die Aspose.Words für .NET-Tutorials sollen Ihnen dabei helfen, die Verwendung der Aspose.Words-Bibliothek in Ihren .NET-Projekten zu meistern. Eines dieser Tutorials mit dem Titel „Textverarbeitung mit HtmlFixedSaveOptions“ führt Sie durch die Schritte, die zum Konvertieren eines Word-Dokuments in festes HTML mithilfe der Speicheroptionen von HtmlFixedSaveOptions erforderlich sind. In diesem Tutorial wird erläutert, wie Sie Speicheroptionen konfigurieren, Layouteinstellungen festlegen und Bilder und Schriftarten während der Konvertierung verwalten. Außerdem erfahren Sie, wie Sie die Backup-Optionen an Ihre spezifischen Anforderungen anpassen können.
 
  ## Tutorials
 | Titel | Beschreibung |

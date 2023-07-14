@@ -1,7 +1,7 @@
 ---
 title: Insérer un champ de formulaire de case à cocher
 linktitle: Insérer un champ de formulaire de case à cocher
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer des champs de formulaire de case à cocher dans des documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape.
 type: docs
 weight: 10

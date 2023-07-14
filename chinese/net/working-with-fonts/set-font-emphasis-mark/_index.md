@@ -1,7 +1,7 @@
 ---
 title: 设置字体强调标记
 linktitle: 设置字体强调标记
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中设置字体强调样式。
 type: docs
 weight: 10

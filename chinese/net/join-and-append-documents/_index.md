@@ -1,19 +1,19 @@
 ---
 title: 加入并附加文档
 linktitle: 加入并附加文档
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 连接和合并 Word 文档。这些教程将引导您完成将多个 Word 文件合并为一个文档的步骤。
 type: docs
 weight: 1500
 url: /zh/net/join-and-append-documents/
 ---
-Aspose.Words for .NET 教程将引导您了解在应用程序中处理 Word 文档的不同功能和技术。 “加入和合并文档”就是此类教程之一，它向您展示如何将多个 Word 文档合并为一个。您将学习如何使用`Document`打开和操作文档的类，以及`AppendDocument`将一个文档的内容附加到另一个文档的方法。本教程为您提供了轻松执行此操作的分步说明。
+ Aspose.Words for .NET 教程将引导您了解应用程序中 Word 文档的文字处理的不同功能和技术。 “加入和合并文档”就是此类教程之一，它向您展示如何将多个 Word 文档合并为一个。您将学习如何使用`Document`打开和操作文档的类，以及`AppendDocument`将一个文档的内容附加到另一个文档的方法。本教程为您提供了轻松执行此操作的分步说明。
 
 另一个很棒的教程是“替换文档中的文本”，它告诉您如何在 Word 文档中执行自动文本替换。您将学习如何使用`FindReplaceOptions`和`Document`用于查找和替换文本的类，指定灵活的搜索选项。本教程将引导您完成替换文档中文本的过程，使您能够自动执行这项繁琐的任务。
 
 最后，“使用合并数据生成报告”教程向您展示如何通过将数据合并到 Word 文档模板中来创建动态报告。您将学习如何使用`MailMerge`类来执行来自不同源（例如表、自定义对象或数据库）的数据合并。本教程为您提供了从各种数据生成自定义报告的具体示例和实用技巧。
 
-这些 Aspose.Words for .NET 教程为您提供了宝贵的资源，帮助您掌握在应用程序中使用 Word 文档，指导您完成实践示例和分步说明。无论您需要合并文档、替换文本还是生成报告，这些教程都将帮助您充分利用 Aspose.Words for .NET 的强大功能。
+这些 Aspose.Words for .NET 教程为您提供了宝贵的资源，帮助您掌握应用程序中 Word 文档的文字处理，指导您完成实践示例和分步说明。无论您需要合并文档、替换文本还是生成报告，这些教程都将帮助您充分利用 Aspose.Words for .NET 的强大功能。
 
  ## 教程
 | 标题 | 描述 |

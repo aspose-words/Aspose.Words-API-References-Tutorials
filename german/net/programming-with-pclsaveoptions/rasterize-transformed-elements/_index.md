@@ -1,7 +1,7 @@
 ---
 title: Transformierte Elemente rastern
 linktitle: Transformierte Elemente rastern
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die Rasterung transformierter Elemente bei der Konvertierung in das PCL-Format mit Aspose.Words für .NET deaktivieren.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbe
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 
-Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Arbeit mit Word-Dokumenten einfach und effizient macht. Es bietet zahlreiche Funktionen zum Erstellen, Bearbeiten und Konvertieren von Word-Dokumenten, einschließlich der Unterstützung für die Rasterung transformierter Elemente während der Konvertierung.
+Bevor Sie in den Code eintauchen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Textverarbeitung mit Word-Dokumenten einfach und effizient macht. Es bietet zahlreiche Funktionen zum Erstellen, Bearbeiten und Konvertieren von Word-Dokumenten, einschließlich der Unterstützung für die Rasterung transformierter Elemente während der Konvertierung.
 
 ## Laden des Word-Dokuments
 

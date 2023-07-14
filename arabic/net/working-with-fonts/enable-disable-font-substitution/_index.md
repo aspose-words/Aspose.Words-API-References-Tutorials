@@ -1,7 +1,7 @@
 ---
 title: قم بتمكين تعطيل استبدال الخط
 linktitle: قم بتمكين تعطيل استبدال الخط
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: في هذا البرنامج التعليمي ، تعرف على كيفية تمكين أو تعطيل استبدال الخط في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  بعد ذلك ، سنقوم بتحميل مستند Word الذي تريد عرضه وإنشاء مثيل لملف`FontSettings` فئة للتعامل مع إعدادات الخط. سنقوم بتعيين تجاوز الخط الافتراضي عن طريق تحديد اسم الخط في`DefaultFontName` وتعطيل تجاوز معلومات الخط بـ`Enabled` ضبط ل`false`.
 
 ```csharp
-//قم بتحميل المستند
+// قم بتحميل المستند
 Document doc = new Document(dataDir + "Rendering.docx");
 
 // تكوين إعدادات الخط
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

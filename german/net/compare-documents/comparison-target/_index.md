@@ -1,7 +1,7 @@
 ---
 title: Vergleichsziel
 linktitle: Vergleichsziel
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Lernen Sie die Zielvergleichsfunktion von Aspose.Words für .NET kennen, mit der Sie Dokumente vergleichen und ein neues Dokument mit den vorgenommenen Änderungen erstellen können.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: اقرأ مستند Markdown
 linktitle: اقرأ مستند Markdown
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية قراءة مستند تخفيض السعر باستخدام دليل Aspose.Words for .NET خطوة بخطوة.
 type: docs
 weight: 10

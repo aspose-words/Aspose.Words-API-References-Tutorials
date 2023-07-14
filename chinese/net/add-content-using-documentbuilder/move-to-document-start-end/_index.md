@@ -1,7 +1,7 @@
 ---
 title: 移至文档开始结束
 linktitle: 移至文档开始结束
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 通过此分步指南，了解如何使用 Aspose.Words for .NET 在 Word 文档中移动到文档开头和结尾。
 type: docs
 weight: 10
@@ -66,4 +66,4 @@ Console.WriteLine("\nThis is the end of the document.");
 
 ## 结论
 
-在此示例中，我们探索了 Aspose.Words for .NET 的“移至文档开始/结束”功能。我们学习了如何使用 DocumentBuilder 类导航到文档的开头和结尾。当以编程方式处理 Word 文档并需要在文档中的特定位置操作或插入内容时，此功能非常有用。
+在此示例中，我们探索了 Aspose.Words for .NET 的“移至文档开始/结束”功能。我们学习了如何使用 DocumentBuilder 类导航到文档的开头和结尾。当以编程方式对 Word 文档进行文字处理并需要在文档中的特定位置操作或插入内容时，此功能非常有用。

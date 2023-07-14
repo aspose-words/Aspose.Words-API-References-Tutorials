@@ -1,7 +1,7 @@
 ---
 title: Seitenbereich von PDF laden
 linktitle: Seitenbereich von PDF laden
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Laden eines bestimmten PDF-Seitenbereichs mit Aspose.Words für .NET.
 type: docs
 weight: 10

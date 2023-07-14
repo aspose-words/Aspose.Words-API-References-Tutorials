@@ -1,7 +1,7 @@
 ---
 title: 亚洲文本和拉丁文本之间的空格
 linktitle: 亚洲文本和拉丁文本之间的空格
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 自动调整文档中亚洲文本和拉丁文本之间的间距。
 type: docs
 weight: 10

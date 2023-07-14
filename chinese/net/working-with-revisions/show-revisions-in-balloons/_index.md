@@ -1,7 +1,7 @@
 ---
 title: 在气球中显示修订
 linktitle: 在气球中显示修订
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 在气球中显示修订。
 type: docs
 weight: 10

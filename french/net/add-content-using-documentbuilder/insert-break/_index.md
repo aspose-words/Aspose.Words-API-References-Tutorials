@@ -1,7 +1,7 @@
 ---
 title: Insérer un saut
 linktitle: Insérer un saut
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer des sauts de page dans des documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape.
 type: docs
 weight: 10

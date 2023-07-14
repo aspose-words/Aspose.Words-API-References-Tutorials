@@ -1,7 +1,7 @@
 ---
 title: 设置尾注选项
 linktitle: 设置尾注选项
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中设置尾注选项。带有示例源代码的分步教程。
 type: docs
 weight: 10
@@ -97,4 +97,4 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 #### 问：是否可以在文档各部分之间继续进行尾注编号？
 
-答：是的，可以在文档各部分之间继续进行尾注编号。使用`RestartRule`的财产`EndnoteOptions`类并将其设置为`RestartContinuous`允许在各部分之间继续编号。
+答：是的，可以在文档各部分之间继续进行尾注编号。使用`RestartRule`的财产`EndnoteOptions`类并将其设置为`RestartContinuous`允许在各节之间继续编号。

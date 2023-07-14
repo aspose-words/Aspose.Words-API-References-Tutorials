@@ -1,7 +1,7 @@
 ---
 title: Obiettivo di confronto
 linktitle: Obiettivo di confronto
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri la funzionalità di confronto target di Aspose.Words per .NET che ti consente di confrontare documenti e generare un nuovo documento contenente le modifiche apportate.
 type: docs
 weight: 10

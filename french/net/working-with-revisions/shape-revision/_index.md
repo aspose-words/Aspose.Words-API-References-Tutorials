@@ -1,7 +1,7 @@
 ---
 title: Révision de la forme
 linktitle: Révision de la forme
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Révisez les formes dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -127,7 +127,7 @@ Assert.False(shapes[1].IsMoveToRevision);
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons appris à apporter des modifications aux formes d'un document Word à l'aide de Aspose.Words pour .NET. En suivant les étapes de création du document, en activant le suivi des révisions, en vérifiant les révisions associées à chaque forme et en vérifiant les révisions pour déplacer les formes, nous avons pu gérer les révisions avec succès. Aspose.Words pour .NET offre une API puissante pour travailler avec des révisions et des formulaires dans des documents Word.
+Dans ce didacticiel, nous avons appris à apporter des modifications aux formes d'un document Word à l'aide de Aspose.Words pour .NET. En suivant les étapes de création du document, en activant le suivi des révisions, en vérifiant les révisions associées à chaque forme et en vérifiant les révisions pour déplacer les formes, nous avons pu gérer les révisions avec succès. Aspose.Words pour .NET offre une API puissante pour le traitement de mots avec des révisions et des formulaires dans les documents Word.
 
 ### FAQ
 
@@ -156,7 +156,7 @@ doc.StartTrackRevisions("John Doe");
 
 #### Q : Comment puis-je vérifier les révisions associées à chaque forme dans un document Aspose.Words pour .NET ?
 
-R : Pour vérifier les révisions associées à chaque forme dans un document Aspose.Words pour .NET, vous pouvez obtenir la collection de formes du document à l'aide de la commande`GetChildNodes` méthode avec la`NodeType.Shape` type de nœud. Ensuite, vous pouvez accéder à chaque forme`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , et`IsMoveToRevision` properties pour déterminer quel type de révision est associé à la forme :
+R : Pour vérifier les révisions associées à chaque forme dans un document Aspose.Words pour .NET, vous pouvez obtenir la collection de formes du document à l'aide de la commande`GetChildNodes` méthode avec la`NodeType.Shape` type de nœud. Ensuite, vous pouvez accéder à chaque forme`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , et`IsMoveToRevision` properties pour déterminer quel type de révision est associé à la forme :
 
 ```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();

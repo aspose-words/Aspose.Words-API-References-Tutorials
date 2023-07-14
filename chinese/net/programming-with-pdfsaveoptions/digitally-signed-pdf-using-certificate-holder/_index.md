@@ -1,7 +1,7 @@
 ---
 title: 使用证书持有者将数字签名添加到 PDF
 linktitle: 使用证书持有者将数字签名添加到 PDF
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 的证书持有者将数字签名添加到 PDF。
 type: docs
 weight: 10

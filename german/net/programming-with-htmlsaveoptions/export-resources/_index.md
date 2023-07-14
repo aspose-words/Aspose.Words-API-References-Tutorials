@@ -1,7 +1,7 @@
 ---
 title: Ressourcen exportieren
 linktitle: Ressourcen exportieren
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Exportieren von Dokumentressourcen beim Speichern als HTML mit Aspose.Words für .NET.
 type: docs
 weight: 10

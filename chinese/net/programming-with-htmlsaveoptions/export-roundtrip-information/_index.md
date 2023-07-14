@@ -1,7 +1,7 @@
 ---
 title: 导出往返信息
 linktitle: 导出往返信息
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 将文档另存为 HTML 时导出往返信息的分步指南。
 type: docs
 weight: 10

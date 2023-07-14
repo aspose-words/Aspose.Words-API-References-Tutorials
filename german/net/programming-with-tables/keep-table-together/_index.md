@@ -1,7 +1,7 @@
 ---
 title: Halten Sie den Tisch zusammen
 linktitle: Halten Sie den Tisch zusammen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument zusammenhalten.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In diesem Tutorial lernen wir, wie man mit Aspose.Words für .NET eine Tabelle i
 2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
 ## Schritt 2: Laden des Dokuments und Abrufen der Tabelle
-Um mit der Tabelle zu arbeiten, müssen wir das Dokument laden und die Tabelle abrufen, die wir zusammenhalten möchten. Folge diesen Schritten:
+Um die Textverarbeitung mit der Tabelle zu starten, müssen wir das Dokument laden und die Tabelle abrufen, die wir zusammenhalten möchten. Folge diesen Schritten:
 
 ```csharp
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 
 // Rufen Sie die Tabelle ab
@@ -57,7 +57,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 ### Beispielquellcode für Keep Table Together mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");

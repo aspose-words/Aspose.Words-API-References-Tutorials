@@ -1,7 +1,7 @@
 ---
 title: Liste Utiliser les styles de destination
 linktitle: Liste Utiliser les styles de destination
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à joindre et à ajouter des documents Word tout en préservant les styles de liste du document de destination à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
 ## Étape 1 : Initialiser les répertoires de documents
 
- Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir` variable au chemin où se trouvent vos documents.
+ Tout d'abord, vous devez définir le chemin d'accès à votre répertoire de documents. Modifier la valeur de la`dataDir`variable au chemin où se trouvent vos documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -82,7 +82,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 
 ## Étape 6 : Enregistrez le document final
 
-Enfin, enregistrez le document fusionné avec la fonctionnalité List Use Destination Styles activée à l'aide de la`Save` méthode de la`Document` classe.
+ Enfin, enregistrez le document fusionné avec la fonctionnalité List Use Destination Styles activée à l'aide de la`Save` méthode de la`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
@@ -94,12 +94,12 @@ Voici le code source complet de la fonctionnalité "List Use Destination Styles"
 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Définissez le document source pour continuer juste après la fin du document de destination.
+	//Définissez le document source pour continuer juste après la fin du document de destination.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Gardez une trace des listes qui sont créées.
 	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
@@ -109,7 +109,7 @@ Voici le code source complet de la fonctionnalité "List Use Destination Styles"
 		{
 			int listId = para.ListFormat.List.ListId;
 			// Vérifiez si le document de destination contient déjà une liste avec cet ID. Si c'est le cas, cela peut
-			// faire fonctionner les deux listes ensemble. Créez plutôt une copie de la liste dans le document source.
+			//faire fonctionner les deux listes ensemble. Créez plutôt une copie de la liste dans le document source.
 			if (dstDoc.Lists.GetListByListId(listId) != null)
 			{
 				Aspose.Words.Lists.List currentList;

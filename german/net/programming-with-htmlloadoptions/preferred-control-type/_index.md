@@ -1,7 +1,7 @@
 ---
 title: Bevorzugter Steuerungstyp
 linktitle: Bevorzugter Steuerungstyp
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Festlegen des bevorzugten Steuerelementtyps beim Laden eines HTML-Dokuments mit Aspose.Words für .NET.
 type: docs
 weight: 10

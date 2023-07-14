@@ -1,7 +1,7 @@
 ---
 title: الوصول إلى الأقسام حسب الفهرس
 linktitle: الوصول إلى الأقسام حسب الفهرس
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: في هذا البرنامج التعليمي ، تعرف على كيفية الوصول إلى أقسام مستند Word عن طريق الفهرس وتغيير إعداداتها باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  بعد ذلك ، سنقوم بتحميل مستند Word في مثيل`Document` فصل. للوصول إلى قسم معين ، نستخدم فهرس القسم. في هذا المثال ، نصل إلى القسم الأول باستخدام الفهرس 0.
 
 ```csharp
-//قم بتحميل المستند
+// قم بتحميل المستند
 Document doc = new Document(dataDir + "Document.docx");
 
 // الوصول إلى قسم بالفهرس
@@ -52,7 +52,7 @@ section.PageSetup.TextColumns.Spacing = 35.4; // 1.25 سم
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -86,7 +86,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  ج: لتحميل مستند Word في مثيل`Document` class والوصول إلى قسم معين عن طريق الفهرس ، يمكنك استخدام الكود التالي:
 
 ```csharp
-//قم بتحميل المستند
+// قم بتحميل المستند
 Document doc = new Document(dataDir + "Document.docx");
 
 // الوصول إلى قسم بالفهرس

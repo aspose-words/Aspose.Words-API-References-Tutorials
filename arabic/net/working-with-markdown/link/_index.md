@@ -1,7 +1,7 @@
 ---
 title: وصلة
 linktitle: وصلة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إدراج الروابط مع Aspose.Words for .NET. دليل خطوة بخطوة.
 type: docs
 weight: 10

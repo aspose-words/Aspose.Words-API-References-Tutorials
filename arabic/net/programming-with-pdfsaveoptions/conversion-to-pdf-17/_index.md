@@ -1,7 +1,7 @@
 ---
 title: تحويل مستند Word إلى PDF 1.7.0 تحديث
 linktitle: تحويل مستند Word إلى PDF 1.7.0 تحديث
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تحويل مستند Word إلى PDF 1.7 باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

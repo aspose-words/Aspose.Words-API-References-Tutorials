@@ -1,7 +1,7 @@
 ---
 title: Schwebendes Bild einfügen
 linktitle: Schwebendes Bild einfügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET schwebende Bilder in Word-Dokumente einfügen. Schritt für Schritt Anleitung.
 type: docs
 weight: 10

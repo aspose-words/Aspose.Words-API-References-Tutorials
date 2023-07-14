@@ -1,7 +1,7 @@
 ---
 title: 克隆和合并文档
 linktitle: 克隆和合并文档
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 克隆和合并 Word 文档。了解如何创建文档副本、将多个文档合并为一个文档、管理部分、页眉和页脚。
 type: docs
 weight: 1470

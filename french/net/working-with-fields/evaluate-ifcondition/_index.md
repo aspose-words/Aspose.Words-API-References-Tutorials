@@ -1,7 +1,7 @@
 ---
 title: Évaluer la condition SI
 linktitle: Évaluer la condition SI
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour évaluer la condition IF dans vos documents Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ Ici, nous avons utilisé la condition "1=1" comme exemple, mais vous pouvez pers
 
 ## Étape 3 : Évaluer la condition IF
 
- Le`EvaluateCondition()`La méthode est utilisée pour évaluer la condition du champ IF.
+ Le`EvaluateCondition()` La méthode est utilisée pour évaluer la condition du champ IF.
 
 ```csharp
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
@@ -75,7 +75,7 @@ R : Pour insérer une condition IF dans un document Word avec Aspose.Words, vou
 
 #### Q : Comment mettre à jour une condition IF dans un document Word avec Aspose.Words ?
 
-R : Pour mettre à jour une condition IF dans un document Word avec Aspose.Words, vous pouvez utiliser la méthode UpdateFields. Cette méthode parcourt le document et met à jour tous les champs, y compris les conditions IF, avec les données actuelles.
+: Pour mettre à jour une condition IF dans un document Word avec Aspose.Words, vous pouvez utiliser la méthode UpdateFields. Cette méthode parcourt le document et met à jour tous les champs, y compris les conditions IF, avec les données actuelles.
 
 #### Q : Quel type de conditions peut être évalué dans une condition IF avec Aspose.Words ?
 

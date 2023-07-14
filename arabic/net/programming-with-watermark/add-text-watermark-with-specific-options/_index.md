@@ -1,7 +1,7 @@
 ---
 title: أضف علامة مائية نصية مع خيارات محددة
 linktitle: أضف علامة مائية نصية مع خيارات محددة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إضافة علامة مائية نصية مع خيارات محددة باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## الخطوة 3: أضف علامة مائية نصية بخيارات محددة
 
- سنقوم بإنشاء مثيل لـ`TextWatermarkOptions` فئة وتعيين الخيارات المطلوبة للعلامة المائية النصية.
+ سنقوم بإنشاء مثيل لـ`TextWatermarkOptions`فئة وتعيين الخيارات المطلوبة للعلامة المائية النصية.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

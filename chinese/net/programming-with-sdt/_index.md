@@ -1,7 +1,7 @@
 ---
-title: 使用 SDT 进行编程
-linktitle: 使用 SDT 进行编程
-second_title: Aspose.Words for .NET API 参考
+title: 使用 Sdt 进行文字处理
+linktitle: 使用 Sdt 进行文字处理
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在 Aspose.Words for .NET 中使用结构化内容控件 (SDT) 进行编程。按照 C# 中的分步教程和示例代码操作和自定义 Word 文档中的结构化内容控件。
 type: docs
 weight: 1400

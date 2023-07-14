@@ -1,7 +1,7 @@
 ---
 title: أقحم الصور في وثيقة PDF
 linktitle: أقحم الصور في وثيقة PDF
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل مفصّل خطوة بخطوة لتمكين استيفاء الصور في مستند PDF باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## الخطوة 3: قم بتكوين خيارات الحفظ بتنسيق PDF باستخدام إطار الإقحام
 
- لتمكين استيفاء الصور عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن عن طريق تعيين`InterpolateImages` الملكية ل`true`.
+ لتمكين استيفاء الصور عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن عن طريق تعيين`InterpolateImages` ملكية ل`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOption
 
  قم بإنشاء مثيل لـ`Document` فئة تحدد المسار إلى مستند Word.
 
- قم بإنشاء مثيل لـ`PdfSaveOptions` فئة وضبط`InterpolateImages` الملكية ل`true` لتمكين استيفاء الصور.
+ قم بإنشاء مثيل لـ`PdfSaveOptions`فئة وضبط`InterpolateImages` ملكية ل`true` لتمكين استيفاء الصور.
 
  استخدم ال`Save` طريقة`Document`class لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ.
 

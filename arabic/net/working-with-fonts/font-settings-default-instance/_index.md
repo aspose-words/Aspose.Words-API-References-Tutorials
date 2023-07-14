@@ -1,7 +1,7 @@
 ---
 title: المثيل الافتراضي لإعدادات الخط
 linktitle: المثيل الافتراضي لإعدادات الخط
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: في هذا البرنامج التعليمي ، تعرف على كيفية تكوين إعدادات الخط الافتراضية في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### نموذج كود مصدر لإعدادات الخط الافتراضي باستخدام Aspose.Words for .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;
@@ -76,11 +76,11 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 #### س: هل يمكنني تحديد حجم الخط الافتراضي في Aspose.Words؟
 
- ج: نعم ، يمكنك تحديد حجم الخط الافتراضي في Aspose.Words باستخدام`DefaultFontSize` ممتلكات`FontSettings` فصل. يمكنك ضبط حجم النقطة المطلوب.
+ ج: نعم ، يمكنك تحديد حجم الخط الافتراضي في Aspose.Words باستخدام`DefaultFontSize`ممتلكات`FontSettings` فصل. يمكنك ضبط حجم النقطة المطلوب.
 
 #### س: هل من الممكن تعيين لون الخط الافتراضي في Aspose.Words؟
 
- ج: نعم ، يمكنك تعيين لون الخط الافتراضي في Aspose.Words باستخدام`DefaultColor` ممتلكات`FontSettings` فصل. يمكنك تحديد اللون باستخدام قيم RGB أو الأسماء المعرفة مسبقًا.
+ ج: نعم ، يمكنك تعيين لون الخط الافتراضي في Aspose.Words باستخدام`DefaultColor`ممتلكات`FontSettings` فصل. يمكنك تحديد اللون باستخدام قيم RGB أو الأسماء المعرفة مسبقًا.
 
 #### س: هل تنطبق إعدادات الخط الافتراضية على جميع المستندات؟
 

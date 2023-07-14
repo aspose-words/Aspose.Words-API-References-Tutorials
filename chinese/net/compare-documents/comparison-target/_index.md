@@ -1,7 +1,7 @@
 ---
 title: 比较目标
 linktitle: 比较目标
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解 Aspose.Words for .NET 的比较目标功能，该功能允许您比较文档并生成包含所做更改的新文档。
 type: docs
 weight: 10

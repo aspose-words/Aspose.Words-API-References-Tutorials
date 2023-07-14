@@ -1,7 +1,7 @@
 ---
 title: 测量单位
 linktitle: 测量单位
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在使用 Aspose.Words for .NET 将 Word 文档转换为 ODT 时指定度量单位。
 type: docs
 weight: 10

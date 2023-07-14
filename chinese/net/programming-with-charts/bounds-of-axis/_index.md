@@ -1,7 +1,7 @@
 ---
-title: 轴的界限
-linktitle: 轴的界限
-second_title: Aspose.Words for .NET API 参考
+title: 图表中轴的界限
+linktitle: 图表中轴的界限
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 设置图表中轴的边界，控制轴上显示的值的范围。
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /zh/net/programming-with-charts/bounds-of-axis/
 要学习本教程，您需要具备以下条件：
 
 - 已安装 Aspose.Words for .NET 库。
-- C# 和使用 Word 文档的基本知识。
+- C# 和 Word 文档文字处理的基础知识。
 
 ## 第 1 步：设置文档目录
 首先设置文档目录的路径。代替`"YOUR DOCUMENT DIRECTORY"`与要保存文档的目录的实际路径。
@@ -84,3 +84,21 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
 就是这样！您已使用 Aspose.Words for .NET 成功设置图表中轴的边界。
+
+## 结论
+在本教程中，您学习了如何使用 Aspose.Words for .NET 设置图表中轴的边界。通过遵循分步指南，您可以插入和配置图表、添加系列数据以及定义轴缩放的最小值和最大值。 Aspose.Words for .NET 提供了强大而灵活的 API，用于 Word 文档的文字处理，使您可以轻松创建动态且具有视觉吸引力的图表。
+
+
+### 常见问题解答
+
+#### Q1.什么是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一个库，允许开发人员以编程方式处理 Word 文档。它提供了广泛的用于创建、操作和保存 Word 文档的特性和功能。
+
+#### Q2。如何安装 Aspose.Words for .NET？
+要安装 Aspose.Words for .NET，您可以使用 Visual Studio 中的 NuGet 包管理器。只需在 NuGet 包管理器中搜索“Aspose.Words”并将其安装到您的项目中即可。
+
+#### Q3。我可以将 Aspose.Words for .NET 与其他编程语言一起使用吗？
+不，Aspose.Words for .NET 是专门为 .NET 应用程序设计的。它适用于 C# 和 VB.NET 等编程语言。
+
+#### Q4。使用 Aspose.Words for .NET 是否还有其他先决条件？
+除了安装 Aspose.Words for .NET 库之外，您还应该具备 C# 编程和 Word 文档文字处理的基本知识。熟悉 .NET 框架也会有所帮助。

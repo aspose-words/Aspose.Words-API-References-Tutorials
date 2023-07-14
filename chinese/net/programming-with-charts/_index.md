@@ -1,7 +1,7 @@
 ---
-title: 使用图表编程
-linktitle: 使用图表编程
-second_title: Aspose.Words for .NET API 参考
+title: 使用Word Chart API
+linktitle: 使用图表
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建、自定义和操作图形。这些教程提供分步说明和 C# 源代码来帮助您添加图表。
 type: docs
 weight: 1540

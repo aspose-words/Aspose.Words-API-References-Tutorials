@@ -1,13 +1,13 @@
 ---
-title: Programmation avec des tableaux
-linktitle: Programmation avec des tableaux
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Traitement de texte avec tableaux
+linktitle: Traitement de texte avec tableaux
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à programmer des tableaux dans Aspose.Words pour .NET. Apprenez à créer, manipuler et mettre en forme des tableaux dans vos documents Word avec des didacticiels pas à pas et des exemples de code C#.
 type: docs
 weight: 1590
 url: /fr/net/programming-with-tables/
 ---
-Les didacticiels Aspose.Words pour .NET sur la programmation avec des tableaux vous guideront à travers les différentes fonctionnalités et techniques de manipulation des tableaux dans vos documents Word. Vous apprendrez à créer, modifier et mettre en forme des tableaux, ainsi qu'à ajouter dynamiquement des cellules, des lignes et des colonnes. Ces didacticiels vous fourniront des instructions détaillées étape par étape, des exemples de code clairs et des explications pour vous aider à maîtriser la manipulation des tables dans Aspose.Words pour .NET.
+Les didacticiels Aspose.Words pour .NET sur le traitement de mots avec des tableaux vous guideront à travers les différentes fonctionnalités et techniques de manipulation des tableaux dans vos documents Word. Vous apprendrez à créer, modifier et mettre en forme des tableaux, ainsi qu'à ajouter dynamiquement des cellules, des lignes et des colonnes. Ces didacticiels vous fourniront des instructions détaillées étape par étape, des exemples de code clairs et des explications pour vous aider à maîtriser la manipulation des tables dans Aspose.Words pour .NET.
 
 Que vous souhaitiez ajuster la disposition du tableau, fusionner des cellules, ajouter des en-têtes de colonne ou trier des données de tableau, les didacticiels vous montreront comment accomplir ces tâches efficacement avec Aspose.Words pour .NET. Vous apprendrez également à extraire et à mettre à jour les données d'un tableau, à ajouter des bordures et à appliquer des styles personnalisés aux cellules. Les didacticiels vous donneront une compréhension approfondie de la manipulation des tableaux, vous permettant de créer des documents Word professionnels et bien structurés.
 

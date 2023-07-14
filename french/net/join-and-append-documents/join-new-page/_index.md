@@ -1,7 +1,7 @@
 ---
 title: Rejoindre une nouvelle page
 linktitle: Rejoindre une nouvelle page
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à joindre deux documents sur une nouvelle page tout en préservant la mise en forme à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Étape 4 : Ajouter le document source
 
- Ajoutez le document source au document de destination à l'aide de la`AppendDocument` méthode de la`Document` classe. Définissez le mode de format d'importation sur`ImportFormatMode.KeepSourceFormatting`pour conserver les styles d'origine du document source.
+ Ajoutez le document source au document de destination à l'aide de la`AppendDocument` méthode de la`Document` classe. Définissez le mode de format d'importation sur`ImportFormatMode.KeepSourceFormatting` pour conserver les styles d'origine du document source.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -58,7 +58,7 @@ Ceci termine l'implémentation de la jointure de deux documents sur une nouvelle
 ### Exemple de code source pour Join New Page en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

@@ -1,7 +1,7 @@
 ---
 title: قسم النسخ
 linktitle: قسم النسخ
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: في هذا البرنامج التعليمي ، تعرف على كيفية نسخ قسم من مستند Word إلى مستند آخر باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -59,7 +59,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document.docx");

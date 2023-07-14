@@ -1,7 +1,7 @@
 ---
 title: Abschnitt hinzufügen
 linktitle: Abschnitt hinzufügen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET einen Abschnitt zu einem Word-Dokument hinzufügen. Schritt-für-Schritt-Anleitung zur Strukturierung Ihres Dokuments.
 type: docs
 weight: 10

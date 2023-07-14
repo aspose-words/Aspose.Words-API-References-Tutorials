@@ -1,7 +1,7 @@
 ---
 title: تعديل إعداد صفحة Word في كافة الأقسام
 linktitle: تعديل إعداد صفحة Word في كافة الأقسام
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: في هذا البرنامج التعليمي ، تعرف على كيفية تعديل إعداد صفحة الكلمات في جميع أقسام مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -53,7 +53,7 @@ foreach(Section section in doc.Sections)
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

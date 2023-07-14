@@ -1,7 +1,7 @@
 ---
 title: 比较文档
 linktitle: 比较文档
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 比较 Word 文档并识别差异。包括指南和实际示例。
 type: docs
 weight: 1480

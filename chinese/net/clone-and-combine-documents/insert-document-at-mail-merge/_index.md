@@ -1,7 +1,7 @@
 ---
 title: 在邮件合并中插入文档
 linktitle: 在邮件合并中插入文档
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在邮件合并期间使用 Aspose.Words for .NET 将文档插入到另一个文档中。
 type: docs
 weight: 10

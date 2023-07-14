@@ -1,7 +1,7 @@
 ---
 title: Formatieren Sie Tabelle und Zelle mit unterschiedlichen Rändern
 linktitle: Formatieren Sie Tabelle und Zelle mit unterschiedlichen Rändern
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Formatieren von Tabellen und Zellen mit unterschiedlichen Rändern mithilfe von Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -70,7 +70,7 @@ Herzlichen Glückwunsch! Sie haben jetzt mit Aspose.Words für .NET eine Tabelle
 ### Beispielquellcode für das Formatieren von Tabellen und Zellen mit unterschiedlichen Rändern mithilfe von Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

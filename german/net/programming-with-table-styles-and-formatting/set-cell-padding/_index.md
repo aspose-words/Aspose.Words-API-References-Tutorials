@@ -1,7 +1,7 @@
 ---
 title: Zellauffüllung festlegen
 linktitle: Zellauffüllung festlegen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Festlegen von Tabellenzellenrändern mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -59,7 +59,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 ### Beispielquellcode für „Set Cell Padding“ mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

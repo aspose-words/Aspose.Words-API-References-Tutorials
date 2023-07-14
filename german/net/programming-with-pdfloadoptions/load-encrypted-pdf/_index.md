@@ -1,14 +1,14 @@
 ---
 title: Verschlüsseltes PDF laden
 linktitle: Verschlüsseltes PDF laden
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Laden einer verschlüsselten PDF-Datei mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ---
 
-Wenn Sie in Ihrer .NET-Anwendung mit PDF-Dokumenten arbeiten, kann es erforderlich sein, passwortgeschützte PDF-Dateien zu laden. Aspose.Words für .NET ist eine leistungsstarke Bibliothek, die Funktionen zum Laden verschlüsselter PDF-Dokumente bietet. In diesem Artikel führen wir Sie Schritt für Schritt durch das Verständnis und die Verwendung dieser Funktion.
+Bei der Textverarbeitung mit PDF-Dokumenten in Ihrer .NET-Anwendung kann es erforderlich sein, passwortgeschützte PDF-Dateien zu laden. Aspose.Words für .NET ist eine leistungsstarke Bibliothek, die Funktionen zum Laden verschlüsselter PDF-Dokumente bietet. In diesem Artikel führen wir Sie Schritt für Schritt durch das Verständnis und die Verwendung dieser Funktion.
 
 ## Grundlegendes zur Funktion zum Laden verschlüsselter PDFs
 
@@ -85,6 +85,6 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 ## Abschluss
 
-In diesem Artikel haben wir untersucht, wie Sie die Funktion „Verschlüsselte PDF laden“ von Aspose.Words für .NET verwenden. Sie haben gelernt, wie Sie verschlüsselte PDF-Dateien hochladen, wie Sie ein PDF-Dokument verschlüsseln, wie Sie ein verschlüsseltes PDF mit einem Passwort hochladen und wie Sie eine Ausgabe im Markdown-Format generieren. Diese Funktion ist äußerst nützlich, wenn Sie mit sicheren PDF-Dokumenten arbeiten.
+In diesem Artikel haben wir untersucht, wie Sie die Funktion „Verschlüsselte PDF laden“ von Aspose.Words für .NET verwenden. Sie haben gelernt, wie Sie verschlüsselte PDF-Dateien hochladen, wie Sie ein PDF-Dokument verschlüsseln, wie Sie ein verschlüsseltes PDF mit einem Passwort hochladen und wie Sie eine Ausgabe im Markdown-Format generieren. Diese Funktion ist äußerst nützlich bei der Textverarbeitung mit sicheren PDF-Dokumenten.
 
 

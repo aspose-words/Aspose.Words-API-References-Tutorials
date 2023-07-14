@@ -1,7 +1,7 @@
 ---
 title: تجاهل النص داخل الحقول
 linktitle: تجاهل النص داخل الحقول
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية استخدام ميزة "تجاهل النص داخل الحقول" في Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -33,7 +33,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 ## الخطوة 3: استخدام وظيفة Ignore Text Inside Fields
 
- لتجاهل النص داخل الحقول في العمليات اللاحقة ، يمكننا استخدام`FindReplaceOptions` كائن وتعيين`IgnoreFields` الملكية ل`true`:
+ لتجاهل النص داخل الحقول في العمليات اللاحقة ، يمكننا استخدام`FindReplaceOptions` كائن وتعيين`IgnoreFields` ملكية ل`true`:
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
@@ -58,7 +58,7 @@ Console.WriteLine(doc.GetText());
 
 ## الخطوة 6: تغيير الخيارات لتضمين الحقول
 
- نقوم بتضمين النص داخل الحقول في نتيجة الإخراج ، يمكننا تغيير الخيارات لعدم تجاهل الحقول. لهذا سنقوم بتعيين`IgnoreFields` الملكية ل`false`:
+نقوم بتضمين النص داخل الحقول في نتيجة الإخراج ، يمكننا تغيير الخيارات لعدم تجاهل الحقول. لهذا سنقوم بتعيين`IgnoreFields` ملكية ل`false`:
 
 ```csharp
 options.IgnoreFields = false;
@@ -102,3 +102,68 @@ Console.WriteLine(doc.GetText());
 ## خاتمة
 
 في هذه المقالة ، استكشفنا الكود المصدري C # لفهم كيفية استخدام وظيفة Ignore Text Inside Fields في Aspose.Words for .NET. لقد اتبعنا دليلًا تفصيليًا لإنشاء مستند ، وإدخال حقل به نص بداخله ، واستخدام وظيفة Ignore Text Inside Fields ، وإجراء البحث واستبدال العمليات بالتعبيرات العادية ، وعرض المستند المعدل.
+
+### التعليمات
+
+#### س: ما هي ميزة "تجاهل النص داخل الحقول" في Aspose.Words for .NET؟
+
+ج: ميزة "تجاهل النص داخل الحقول" في Aspose.Words for .NET تسمح لك بتحديد ما إذا كان يجب تجاهل النص الموجود داخل الحقول أثناء عمليات معينة ، مثل البحث عن النص واستبداله. عند تمكين هذه الميزة ، لا يتم أخذ النص الموجود داخل الحقول في الاعتبار أثناء العمليات.
+
+#### س: كيف يمكنني إنشاء مستند جديد باستخدام Aspose.Words for .NET؟
+
+ ج: لإنشاء مستند جديد باستخدام Aspose.Words for .NET ، يمكنك إنشاء نسخة من ملف`Document` هدف. فيما يلي مثال على كود C # لإنشاء مستند جديد:
+
+```csharp
+Document doc = new Document();
+```
+
+#### س: كيف يمكنني إدراج حقل به نص داخل مستند باستخدام Aspose.Words for .NET؟
+
+ ج: بمجرد أن يكون لديك مستند ، يمكنك إدراج حقل به نص بداخله باستخدام ملف`DocumentBuilder` هدف. على سبيل المثال ، لإدراج حقل "INCLUDETEXT" مع النص "Text in field" ، يمكنك استخدام`InsertField` طريقة:
+
+```csharp
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertField("INCLUDETEXT", "Text in field");
+```
+
+#### س: كيف يمكنني تجاهل النص الموجود داخل الحقول في Aspose.Words for .NET؟
+
+ج: لتجاهل النص داخل الحقول أثناء العمليات اللاحقة ، يمكنك استخدام ملف`FindReplaceOptions` كائن وتعيين`IgnoreFields` ملكية ل`true`:
+
+```csharp
+FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
+```
+
+#### س: كيف يمكنني إجراء البحث والاستبدال باستخدام التعبيرات العادية في Aspose.Words for .NET؟
+
+ ج: لإجراء عمليات البحث والاستبدال على نص المستند باستخدام التعبيرات العادية ، يمكنك استخدام .NET`Regex` فصل. على سبيل المثال ، للبحث عن جميع تكرارات الحرف "e" واستبدالها بعلامة النجمة "* "، يمكنك إنشاء ملف`Regex` الكائن واستخدامه مع`Replace` طريقة:
+
+```csharp
+Regex regex = new Regex("e");
+doc.Range.Replace(regex, "*", options);
+```
+
+#### س: كيف يمكنني عرض المخرجات المعدلة للوثيقة في Aspose.Words for .NET؟
+
+ ج: بعد تطبيق عمليات البحث والاستبدال ، يمكنك عرض المحتوى الذي تم تغييره في المستند باستخدام ملف`GetText` طريقة:
+
+```csharp
+Console.WriteLine(doc.GetText());
+```
+
+#### س: كيف يمكنني تضمين الحقول في نتيجة الإخراج في Aspose.Words for .NET؟
+
+ ج: لتضمين النص داخل الحقول في نتيجة الإخراج ، يمكنك تغيير الخيارات لعدم تجاهل الحقول. لهذا ، يمكنك ضبط ملف`IgnoreFields`ممتلكات`FindReplaceOptions` يعترض على`false`:
+
+```csharp
+options.IgnoreFields = false;
+```
+
+#### س: كيف يمكنني عرض المستند المعدل مع الحقول الموجودة في Aspose.Words for .NET؟
+
+ج: بعد تغيير الخيارات لتضمين الحقول ، يمكنك إجراء البحث والاستبدال مرة أخرى للحصول على النتيجة بالنص الموجود داخل الحقول المضمنة:
+
+```csharp
+doc.Range.Replace(regex, "*", options);
+Console.WriteLine(doc.GetText());
+```

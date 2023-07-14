@@ -1,7 +1,7 @@
 ---
 title: إلحاق مستند فارغ
 linktitle: إلحاق مستند فارغ
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إلحاق مستند إلى مستند وجهة فارغ في Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document();
 
 ## الخطوة 3: إزالة المحتوى الموجود من المستند الوجهة
 
-لضمان وجود مستند وجهة نظيف ، قم بإزالة كل المحتوى الموجود من المستند باستخدام امتداد`RemoveAllChildren` طريقة.
+ لضمان وجود مستند وجهة نظيف ، قم بإزالة كل المحتوى الموجود من المستند باستخدام امتداد`RemoveAllChildren` طريقة.
 
 ```csharp
 dstDoc.RemoveAllChildren();
@@ -58,12 +58,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
 ### مثال على الكود المصدري لإلحاق مستند فارغ باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	// المستند الوجهة ليس فارغًا ، وغالبًا ما يتسبب في ظهور صفحة فارغة قبل المستند الملحق.
+	//المستند الوجهة ليس فارغًا ، وغالبًا ما يتسبب في ظهور صفحة فارغة قبل المستند الملحق.
 	// هذا بسبب وجود قسم فارغ في المستند الأساسي وبدء تشغيل المستند الجديد في الصفحة التالية.
 	// قم بإزالة كل المحتوى من المستند الوجهة قبل الإلحاق.
 	dstDoc.RemoveAllChildren();

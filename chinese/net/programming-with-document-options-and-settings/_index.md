@@ -1,13 +1,13 @@
 ---
-title: 使用文档选项和设置进行编程
-linktitle: 使用文档选项和设置进行编程
-second_title: Aspose.Words for .NET API 参考
+title: 使用文档选项和设置进行文字处理
+linktitle: 使用文档选项和设置进行文字处理
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用文档选项和设置通过 Aspose.Words for .NET 自定义和控制 Word 文档的行为。这些教程将指导您了解不同的功能，例如文档属性。
 type: docs
 weight: 1510
 url: /zh/net/programming-with-document-options-and-settings/
 ---
-Aspose.Words for .NET“使用文档选项和设置进行编程”教程将引导您了解在 Aspose.Words for .NET 中操作文档选项和设置的各种功能和技术。这些教程可帮助您了解如何自定义上传设置、管理字体、文档格式、模板等。
+Aspose.Words for .NET“使用文档选项和设置进行文字处理”教程将引导您了解在 Aspose.Words for .NET 中操作文档选项和设置的各种功能和技术。这些教程可帮助您了解如何自定义上传设置、管理字体、文档格式、模板等。
 
 这些教程解释了如何自定义文档加载选项。您将学习如何指定加载参数，例如字体管理、链接分辨率、性能优化等。这些选项允许您精确控制文档加载行为并优化应用程序的性能。
 

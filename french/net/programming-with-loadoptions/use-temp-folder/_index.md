@@ -1,14 +1,14 @@
 ---
 title: Utiliser le dossier temporaire
 linktitle: Utiliser le dossier temporaire
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser un dossier temporaire lors du téléchargement de documents avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-loadoptions/use-temp-folder/
 ---
 
-Lorsque vous travaillez avec des documents Word dans une application C#, il peut être nécessaire d'utiliser un dossier temporaire pour stocker les fichiers temporaires générés lors du traitement du document. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement spécifier un dossier temporaire à l'aide des options de chargement LoadOptions. Dans ce guide étape par étape, nous allons vous montrer comment utiliser le code source Aspose.Words pour .NET C# pour charger un document à l'aide d'un dossier temporaire spécifié à l'aide des options de chargement LoadOptions.
+Lors du traitement de texte avec des documents Word dans une application C#, il peut être nécessaire d'utiliser un dossier temporaire pour stocker les fichiers temporaires générés lors du traitement du document. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement spécifier un dossier temporaire à l'aide des options de chargement LoadOptions. Dans ce guide étape par étape, nous allons vous montrer comment utiliser le code source Aspose.Words pour .NET C# pour charger un document à l'aide d'un dossier temporaire spécifié à l'aide des options de chargement LoadOptions.
 
 ## Comprendre la bibliothèque Aspose.Words
 
@@ -40,7 +40,7 @@ Dans cet exemple, nous chargeons le document "Document.docx" situé dans le rép
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Configurez les options de chargement avec la fonction "Utiliser le dossier temporaire"
+//Configurez les options de chargement avec la fonction "Utiliser le dossier temporaire"
 LoadOptions loadOptions = new LoadOptions { TempFolder = ArtifactsDir };
 
 // Charger le document à l'aide d'un dossier temporaire spécifié

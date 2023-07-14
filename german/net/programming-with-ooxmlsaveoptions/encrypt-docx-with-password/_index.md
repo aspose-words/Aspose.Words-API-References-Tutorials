@@ -1,7 +1,7 @@
 ---
 title: Docx mit Passwort verschlüsseln
 linktitle: Docx mit Passwort verschlüsseln
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine DOCX-Datei mit einem Passwort verschlüsseln. Vollständiges Tutorial zur Dokumentensicherheit.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Jetzt können Sie den Quellcode ausführen, um Ihr DOCX-Dokument mit einem Passw
 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";  
 
 Document doc = new Document(dataDir + "Document.docx");

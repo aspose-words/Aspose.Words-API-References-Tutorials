@@ -1,7 +1,7 @@
 ---
 title: Seitenverhältnis gesperrt
 linktitle: Seitenverhältnis gesperrt
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET das Seitenverhältnis einer Form in einem Word-Dokument sperren oder entsperren.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ In diesem Tutorial wird erklärt, wie Sie das Seitenverhältnis einer Form in ei
 Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
 - Aspose.Words für .NET-Bibliothek installiert.
-- Grundkenntnisse in C# und der Arbeit mit Word-Dokumenten.
+- Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
 ## Schritt 1: Richten Sie das Dokumentenverzeichnis ein
- Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"`mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem Sie das Dokument speichern möchten.
+ Beginnen Sie mit der Einrichtung des Pfads zu Ihrem Dokumentenverzeichnis. Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu dem Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,10 +39,10 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
 ```
 
 ## Schritt 4: Sperren oder entsperren Sie das Seitenverhältnis
- Stellen Sie die ein`AspectRatioLocked` Eigenschaft der Form zu`true` oder`false`um das Seitenverhältnis zu sperren bzw. zu entsperren.
+ Stellen Sie die ein`AspectRatioLocked` Eigenschaft der Form zu`true` oder`false` um das Seitenverhältnis zu sperren bzw. zu entsperren.
 
 ```csharp
-shape.AspectRatioLocked = false; // Entsperren Sie das Seitenverhältnis
+shape.AspectRatioLocked = false; //Entsperren Sie das Seitenverhältnis
 ```
 
 ## Schritt 5: Speichern Sie das Dokument
@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ### Beispielquellcode für Aspect Ratio Locked mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

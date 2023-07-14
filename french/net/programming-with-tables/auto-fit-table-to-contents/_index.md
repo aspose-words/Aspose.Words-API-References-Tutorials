@@ -1,7 +1,7 @@
 ---
 title: Ajuster automatiquement le tableau au contenu
 linktitle: Ajuster automatiquement le tableau au contenu
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment ajuster automatiquement un tableau à son contenu dans un document Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ Dans ce didacticiel, nous apprendrons à utiliser Aspose.Words pour .NET pour ad
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
 ## Étape 2 : Chargez le document Word
-Pour commencer à travailler avec le tableau, nous devons charger le document Word qui contient le tableau. Suivez ces étapes:
+Pour démarrer le traitement de texte avec le tableau, nous devons charger le document Word qui contient le tableau. Suivez ces étapes:
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
@@ -53,7 +53,7 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ### Exemple de code source pour l'ajustement automatique du tableau au contenu à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

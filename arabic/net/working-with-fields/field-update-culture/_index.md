@@ -1,7 +1,7 @@
 ---
 title: ثقافة التحديث الميداني
 linktitle: ثقافة التحديث الميداني
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تحديث الثقافة الميدانية في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -61,7 +61,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // أدخل حقل الوقت.
 builder. InsertField(FieldType.FieldTime, true);
 
-//تكوين ثقافة التحديث الميداني.
+// تكوين ثقافة التحديث الميداني.
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 

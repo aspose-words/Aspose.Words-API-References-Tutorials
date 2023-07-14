@@ -1,7 +1,7 @@
 ---
 title: احصل على أنواع المراجعة للكلمات
 linktitle: احصل على أنواع المراجعة للكلمات
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: احصل على مراجعة أنواع الكلمات في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

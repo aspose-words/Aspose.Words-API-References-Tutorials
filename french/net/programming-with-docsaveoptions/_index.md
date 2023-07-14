@@ -1,13 +1,13 @@
 ---
-title: Programmation avec Docsaveoptions
-linktitle: Programmation avec Docsaveoptions
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Traitement de texte avec Docsaveoptions
+linktitle: Traitement de texte avec Docsaveoptions
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment personnaliser les options d'enregistrement des documents Word à l'aide d'Aspose.Words pour .NET. Les didacticiels vous guident à travers les différentes options disponibles, telles que le format de fichier, la compression, la protection par mot de passe.
 type: docs
 weight: 1600
 url: /fr/net/programming-with-docsaveoptions/
 ---
-Les didacticiels Aspose.Words pour .NET sur la programmation avec DocSaveOptions fournissent un guide complet sur l'utilisation des options d'enregistrement de documents dans Aspose.Words. Ces didacticiels vous guident à travers différentes fonctionnalités, notamment l'enregistrement de documents au format PDF, XPS, HTML, etc. Vous apprendrez également à gérer les options de compression, la sécurité des documents, les métadonnées, les polices intégrées, etc.
+Les didacticiels Aspose.Words pour .NET sur le traitement de mots avec DocSaveOptions fournissent un guide complet sur le traitement de mots avec des options d'enregistrement de documents dans Aspose.Words. Ces didacticiels vous guident à travers différentes fonctionnalités, notamment l'enregistrement de documents au format PDF, XPS, HTML, etc. Vous apprendrez également à gérer les options de compression, la sécurité des documents, les métadonnées, les polices intégrées, etc.
 
 Chaque tutoriel est accompagné d'un code source détaillé et d'exemples pratiques qui vous permettront de comprendre et d'appliquer facilement les concepts présentés. Que vous soyez un développeur débutant ou expérimenté, ces didacticiels vous aideront à maîtriser les options d'enregistrement de documents dans Aspose.Words pour .NET et à créer des documents de haute qualité qui répondent à vos besoins spécifiques.
 

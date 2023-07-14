@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour la propriété de l'heure du dernier enregistrement
 linktitle: Mettre à jour la propriété de l'heure du dernier enregistrement
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment mettre à jour automatiquement la propriété Last Saved Time lors de l'enregistrement d'un document avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Vous pouvez maintenant exécuter le code source pour mettre à jour automatiquem
 
 ```csharp
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");

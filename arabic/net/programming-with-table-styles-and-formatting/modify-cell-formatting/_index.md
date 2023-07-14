@@ -1,7 +1,7 @@
 ---
 title: تعديل تنسيق الخلية
 linktitle: تعديل تنسيق الخلية
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لتغيير تنسيق خلية في جدول باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 ### نموذج التعليمات البرمجية المصدر لتعديل تنسيق الخلية باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

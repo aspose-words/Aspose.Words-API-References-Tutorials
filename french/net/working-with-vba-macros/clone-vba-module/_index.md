@@ -1,7 +1,7 @@
 ---
-title: Cloner le module Vba
-linktitle: Cloner le module Vba
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Cloner le module Vba à partir d'un document Word
+linktitle: Cloner le module Vba à partir d'un document Word
+second_title: API de traitement de documents Aspose.Words
 description: Dans ce didacticiel, découvrez comment cloner un module VBA à partir d'un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 ### Exemple de code source pour le module Clone Vba utilisant Aspose.Words pour .NET 
 ```csharp
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "VBA project.docm");
@@ -68,3 +68,21 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 
 ## Conclusion
 Dans ce tutoriel, nous avons vu comment cloner un module VBA à partir d'un document Word avec des macros en utilisant Aspose.Words pour .NET. Le clonage de modules VBA vous permet de réutiliser facilement le code VBA d'un document source dans un autre document. N'hésitez pas à utiliser cette fonctionnalité pour organiser et gérer vos macros dans différents documents.
+
+### FAQ
+
+#### Q : Qu'est-ce que la duplication d'un module VBA ?
+
+R : La duplication d'un module VBA consiste à copier un module contenant du code VBA d'un document Word source vers un autre document. Cela vous permet de réutiliser le code VBA dans différents contextes ou de le partager avec d'autres documents.
+
+#### Q : Quels sont les prérequis pour cloner un module VBA à partir d'un document Word ?
+
+R : Avant de pouvoir cloner un module VBA à partir d'un document Word, vous devez avoir une connaissance pratique du langage de programmation C#. Vous devez également installer la bibliothèque Aspose.Words pour .NET dans votre projet. De plus, vous avez besoin d'un document Word contenant un projet VBA avec le module que vous souhaitez cloner.
+
+#### Q : Comment définir le répertoire des documents dans le code ?
+
+ A : Dans le code fourni, vous devez remplacer`"YOUR DOCUMENTS DIRECTORY"` avec le chemin d'accès approprié au répertoire où se trouve votre document Word contenant le projet VBA.
+
+#### Q : Comment enregistrer le document de destination avec le module VBA cloné ?
+
+ R : Pour enregistrer le document de destination avec le module VBA cloné, vous pouvez utiliser le`Save` méthode de la`Document` classe en spécifiant le chemin de destination et le nom de fichier souhaités.

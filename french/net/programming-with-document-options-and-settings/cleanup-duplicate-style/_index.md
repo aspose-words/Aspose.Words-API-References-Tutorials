@@ -1,7 +1,7 @@
 ---
 title: Nettoyer le style dupliqué
 linktitle: Nettoyer le style dupliqué
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour nettoyer les styles en double dans un document à l'aide d'Aspose.Words pour .NET. Code source complet inclus.
 type: docs
 weight: 10

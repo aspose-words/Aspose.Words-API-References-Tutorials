@@ -1,7 +1,7 @@
 ---
 title: التعامل مع خيارات المسافات
 linktitle: التعامل مع خيارات المسافات
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إدارة المساحات في مستندات TXT الخاصة بك باستخدام Aspose.Words for .NET. قم بإزالة المسافات غير الضرورية وتحسين إمكانية القراءة.
 type: docs
 weight: 10

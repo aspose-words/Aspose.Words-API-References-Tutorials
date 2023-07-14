@@ -1,7 +1,7 @@
 ---
 title: Convertir les métafichiers en Svg
 linktitle: Convertir les métafichiers en Svg
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour convertir les métafichiers au format SVG lors de la conversion d'un document au format HTML avec Aspose.Words pour .NET.
 type: docs
 weight: 10

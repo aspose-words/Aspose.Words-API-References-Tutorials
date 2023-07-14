@@ -1,7 +1,7 @@
 ---
 title: Définir le formatage des lignes du tableau
 linktitle: Définir le formatage des lignes du tableau
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour définir la mise en forme des lignes de tableau à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 ### Exemple de code source pour définir la mise en forme des lignes de table à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: تطبيق تنسيق الصفوف
 linktitle: تطبيق تنسيق الصفوف
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لتطبيق تنسيق الصفوف على جدول باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx"
 ### نموذج التعليمات البرمجية المصدر لتطبيق تنسيق الصف باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

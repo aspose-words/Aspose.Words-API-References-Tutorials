@@ -1,7 +1,7 @@
 ---
 title: تحويل ملف نصي إلى مستند Word
 linktitle: تحويل ملف نصي إلى مستند Word
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تحويل ملفات النص العادي (Txt) إلى مستندات Word (Docx) باستخدام Aspose.Words for .NET. البرنامج التعليمي خطوة بخطوة مع رمز المثال.
 type: docs
 weight: 10

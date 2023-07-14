@@ -1,7 +1,7 @@
 ---
 title: Modifier la source de la culture de mise à jour du champ
 linktitle: Modifier la source de la culture de mise à jour du champ
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Modifier la source de culture de mise à jour du champ, guide étape par étape pour modifier la source de culture dans Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -91,7 +91,7 @@ Toutes nos félicitations! Vous avez appris avec succès comment modifier la sou
 
 #### Q : Comment puis-je spécifier une culture spécifique pour la mise à jour des champs dans Aspose.Words pour .NET ?
 
- R : Pour spécifier une culture spécifique pour la mise à jour des champs dans Aspose.Words pour .NET, vous pouvez utiliser le`Document.FieldOptions.FieldUpdateCultureInfo` propriété et définissez la`CultureInfo` objet correspondant à la culture recherchée. Par exemple, vous pouvez utiliser`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` pour préciser la culture française (France).
+ : Pour spécifier une culture spécifique pour la mise à jour des champs dans Aspose.Words pour .NET, vous pouvez utiliser le`Document.FieldOptions.FieldUpdateCultureInfo` propriété et définissez la`CultureInfo` objet correspondant à la culture recherchée. Par exemple, vous pouvez utiliser`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` pour préciser la culture française (France).
 
 #### Q : Est-il possible de désactiver la mise à jour automatique des champs dans Aspose.Words pour .NET ?
 

@@ -1,7 +1,7 @@
 ---
 title: Définir la mise en forme de la police
 linktitle: Définir la mise en forme de la police
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à définir la mise en forme des polices dans un document Word à l'aide d'Aspose.Words pour .NET et créez des documents attrayants.
 type: docs
 weight: 10
@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : Créer et formater le document
- Créer une instance de`Document` classe et la`DocumentBuilder` classe pour construire le document. Utilisez le`Font` propriété de la`DocumentBuilder` pour accéder aux propriétés de formatage des polices.
+ Créer une instance de`Document` classe et la`DocumentBuilder` classe pour construire le document. Utilisez le`Font`propriété de la`DocumentBuilder` pour accéder aux propriétés de formatage des polices.
 
 ```csharp
 Document doc = new Document();
@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ### Exemple de code source pour Set Font Formatting à l'aide de Aspose.Words pour .NET 
 ```csharp
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

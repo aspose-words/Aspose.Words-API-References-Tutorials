@@ -1,7 +1,7 @@
 ---
 title: Convertir les champs dans le document
 linktitle: Convertir les champs dans le document
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour convertir les champs de document en texte à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 3 : Chargez le document
- Utilisez le`Document`classe de Aspose.Words pour charger le document Word contenant les champs liés que vous souhaitez convertir.
+ Utilisez le`Document` classe de Aspose.Words pour charger le document Word contenant les champs liés que vous souhaitez convertir.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");
@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## Étape 5 : Enregistrez le document transformé
- Utilisez le`Save()` méthode pour enregistrer le document avec les champs convertis en texte dans le répertoire de documents spécifié.
+ Utilisez le`Save()`méthode pour enregistrer le document avec les champs convertis en texte dans le répertoire de documents spécifié.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
@@ -84,7 +84,7 @@ R : Pour convertir des champs dans un document Word avec Aspose.Words, vous pou
 
 R : Aspose.Words prend en charge plusieurs types de conversions dans les champs, telles que la conversion des formats de date, la conversion des formats numériques, la conversion des formats de texte, la conversion des formats monétaires, la conversion des formats de pourcentage, et bien plus encore. Vous pouvez consulter la documentation Aspose.Words pour une liste complète des types de conversion pris en charge.
 
-#### : La conversion des champs modifie-t-elle les données d'origine dans le document Word ?
+#### Q : La conversion des champs modifie-t-elle les données d'origine dans le document Word ?
 
 R : Non, la conversion des champs dans Aspose.Words n'affecte pas les données d'origine du document Word. La conversion est appliquée lors de la mise à jour des champs, mais les données d'origine restent intactes. Cela garantit que vous pouvez revenir à l'état d'origine du document à tout moment.
 

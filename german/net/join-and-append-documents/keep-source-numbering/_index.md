@@ -1,7 +1,7 @@
 ---
 title: Behalten Sie die Quellennummerierung bei
 linktitle: Behalten Sie die Quellennummerierung bei
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie ein Dokument anhängen und dabei die Nummerierungsformatierung der Quelle in Aspose.Words für .NET beibehalten.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 3: Behalten Sie beim Import die Quellennummerierung bei
 
- Um die Nummerierungsformatierung nummerierter Absätze aus dem Quelldokument beizubehalten, erstellen Sie eine Instanz von`ImportFormatOptions` und eingestellt`KeepSourceNumbering` Zu`true` Benutze einen`NodeImporter` um Knoten aus dem Quelldokument in das Zieldokument zu importieren, unter Angabe`ImportFormatMode.KeepSourceFormatting` und das`importFormatOptions`.
+ Um die Nummerierungsformatierung nummerierter Absätze aus dem Quelldokument beizubehalten, erstellen Sie eine Instanz von`ImportFormatOptions` und eingestellt`KeepSourceNumbering` Zu`true` . Benutze einen`NodeImporter` um Knoten aus dem Quelldokument in das Zieldokument zu importieren, unter Angabe`ImportFormatMode.KeepSourceFormatting` und das`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Schritt 5: Speichern Sie das geänderte Dokument
 
-Speichern Sie das geänderte Dokument mit`Save` Methode der`Document` Objekt.
+ Speichern Sie das geänderte Dokument mit`Save` Methode der`Document` Objekt.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
@@ -64,7 +64,7 @@ Damit ist die Implementierung des Anhängens eines Quelldokuments an ein Zieldok
 ### Beispielquellcode für Keep Source Numbering mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

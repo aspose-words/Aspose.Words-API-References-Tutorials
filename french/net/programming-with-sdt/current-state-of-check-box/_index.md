@@ -1,7 +1,7 @@
 ---
 title: Case à cocher État actuel de
 linktitle: Case à cocher État actuel de
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment récupérer et définir l'état actuel d'un contrôle de contenu de case à cocher dans un document Word à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Ce didacticiel explique comment récupérer et définir l'état actuel d'un cont
 Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
 - Bibliothèque Aspose.Words pour .NET installée.
-- Connaissance de base de C# et travail avec des documents Word.
+- Connaissance de base de C# et du traitement de texte avec des documents Word.
 
 ## Étape 1 : Configurer le répertoire de documents
  Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel au répertoire où se trouve votre document.
@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 ### Exemple de code source pour l'état actuel de la case à cocher en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

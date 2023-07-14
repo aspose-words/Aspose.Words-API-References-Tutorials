@@ -1,7 +1,7 @@
 ---
 title: Erweitern Sie die Formatierung von Zellen und Zeilen im Stil
 linktitle: Erweitern Sie die Formatierung von Zellen und Zeilen im Stil
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Erweitern der Formatierung auf Zellen und Zeilen aus einem Tabellenstil mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -61,7 +61,7 @@ Shading the cell after style expansion: " + cellShadingAfter);
 ### Beispielquellcode für den Stil „Formatierung von Zellen und Zeilen erweitern“ mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

@@ -1,7 +1,7 @@
 ---
 title: Options d'espaces de poignée
 linktitle: Options d'espaces de poignée
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à gérer les espaces dans vos documents TXT avec Aspose.Words pour .NET. Supprimez les espaces inutiles et améliorez la lisibilité.
 type: docs
 weight: 10

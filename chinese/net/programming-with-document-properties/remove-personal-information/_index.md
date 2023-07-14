@@ -1,7 +1,7 @@
 ---
 title: 删除个人信息
 linktitle: 删除个人信息
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 从文档中删除个人信息的分步指南。
 type: docs
 weight: 10

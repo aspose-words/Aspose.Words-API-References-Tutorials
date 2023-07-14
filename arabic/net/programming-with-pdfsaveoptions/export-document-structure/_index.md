@@ -1,7 +1,7 @@
 ---
 title: تصدير بنية مستند Word إلى مستند PDF
 linktitle: تصدير بنية مستند Word إلى مستند PDF
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لتصدير بنية مستند Word إلى مستند PDF باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", save
             Document doc = new Document(dataDir + "Paragraphs.docx");
 
             // سيتم زيادة حجم الملف وستظهر البنية في جزء التنقل "المحتوى"
-            // من Adobe Acrobat Pro ، أثناء تحرير ملف .pdf.
+            // Adobe Acrobat Pro ، أثناء تحرير ملف .pdf.
             PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
 
             doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", save
 
  قم بإنشاء مثيل لـ`Document` فئة تحدد المسار إلى مستند Word.
 
- قم بإنشاء مثيل لـ`PdfSaveOptions` فئة وضبط`ExportDocumentStructure` الملكية ل`true`. سيؤدي هذا إلى تصدير هيكل المستند وجعله مرئيًا في جزء التنقل "المحتوى" في Adobe Acrobat Pro عند تحرير ملف PDF.
+ قم بإنشاء مثيل لـ`PdfSaveOptions`فئة وضبط`ExportDocumentStructure` ملكية ل`true`. سيؤدي هذا إلى تصدير هيكل المستند وجعله مرئيًا في جزء التنقل "المحتوى" في Adobe Acrobat Pro عند تحرير ملف PDF.
 
  استخدم ال`Save` طريقة`Document`class لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ.
 

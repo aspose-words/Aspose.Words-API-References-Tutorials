@@ -1,7 +1,7 @@
 ---
 title: Fügen Sie Japanisch als Bearbeitungssprachen hinzu
 linktitle: Fügen Sie Japanisch als Bearbeitungssprachen hinzu
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Hinzufügen von Japanisch als Bearbeitungssprache mit Aspose.Words für .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: 添加导入格式选项
 linktitle: 添加导入格式选项
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 附加具有导入格式选项的文档。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: 将文档附加到空白
 linktitle: 将文档附加到空白
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何将文档附加到 Aspose.Words for .NET 中的空白目标文档。
 type: docs
 weight: 10

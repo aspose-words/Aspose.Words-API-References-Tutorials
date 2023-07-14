@@ -1,7 +1,7 @@
 ---
 title: Créer un en-tête de pied de page
 linktitle: Créer un en-tête de pied de page
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à créer des en-têtes et des pieds de page dans vos documents Word avec Aspose.Words pour .NET. Personnalisez les en-têtes et pieds de page pour chaque page.
 type: docs
 weight: 10

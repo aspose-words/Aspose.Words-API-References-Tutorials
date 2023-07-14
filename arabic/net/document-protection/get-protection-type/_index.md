@@ -1,13 +1,12 @@
 ---
-title: احصل على نوع الحماية
-linktitle: احصل على نوع الحماية
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية استخدام وظيفة Get Protection Type في Aspose.Words for .NET لتحديد نوع الحماية للمستند.
+title: احصل على نوع الحماية في مستند Word
+linktitle: احصل على نوع الحماية في مستند Word
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
+description: تعرف على كيفية استخدام وظيفة Get Protection Type في مستند Word في Aspose.Words for .NET لتحديد نوع الحماية للمستند.
 type: docs
 weight: 10
 url: /ar/net/document-protection/get-protection-type/
 ---
-
 مرحبًا بكم في هذا الدليل التفصيلي الذي يشرح كود المصدر C # لميزة Get Protection Type في Aspose.Words for .NET. في هذه المقالة ، سنوضح لك كيفية استخدام هذه الميزة القوية لتحديد نوع حماية المستند. تعد حماية المستندات أمرًا ضروريًا لضمان سرية ملفاتك وسلامتها. سنرشدك خلال الخطوات اللازمة لدمج Aspose.Words مع .NET واستخدام ميزة Get Protection Type.
 
 ## الخطوة 1: تحميل المستند
@@ -33,13 +32,44 @@ ProtectionType protectionType = doc.ProtectionType;
 فيما يلي رمز المصدر الكامل لوظيفة Get Protection Type باستخدام Aspose.Words for .NET:
 
 ```csharp
-
-	Document doc = new Document(MyDir + "Document.docx");
-	ProtectionType protectionType = doc.ProtectionType;
-
+Document doc = new Document(MyDir + "Document.docx");
+ProtectionType protectionType = doc.ProtectionType;
 ```
 
 ## خاتمة
 
 في هذه المقالة ، أوضحنا كيفية استخدام وظيفة Get Protection Type في Aspose.Words for .NET لتحديد نوع الحماية للمستند. باتباع الخطوات الموضحة ، ستتمكن من دمج هذه الوظيفة بسهولة في مشاريع C # الخاصة بك ومعالجة المستندات المحمية بكفاءة. يوفر Aspose.Words for .NET مرونة كبيرة
+
+### التعليمات
+
+#### س: ما هي خاصية ProtectionType في Aspose.Words لـ .NET؟
+
+ ج: إن`ProtectionType` الخاصية في Aspose.Words for .NET هي ميزة تسمح لك بتحديد نوع الحماية المطبقة على مستند Word. يوفر معلومات حول مستوى حماية المستند ، مثل ما إذا كان المستند محميًا للتعليقات أو المراجعات أو النماذج أو أنواع القيود الأخرى.
+
+#### س: كيف يمكنني استرداد نوع الحماية لمستند باستخدام Aspose.Words for .NET؟
+
+ج: لاسترداد نوع الحماية لمستند باستخدام Aspose.Words for .NET ، يمكنك اتباع الخطوات التالية:
+1.  قم بتحميل المستند باستخدام ملف`Document` فصل.
+2.  الوصول إلى`ProtectionType`ممتلكات`Document` كائن لاسترداد نوع الحماية.
+
+#### س: هل يمكنني تحديد ما إذا كان المستند محميًا للنماذج أو حقول النموذج باستخدام خاصية ProtectionType؟
+
+ ج: نعم ، يمكنك تحديد ما إذا كان المستند محميًا للنماذج أو حقول النماذج باستخدام امتداد`ProtectionType` الممتلكات في Aspose.Words لـ .NET. إذا تم ضبط نوع الحماية على`AllowOnlyFormFields`، يشير إلى أن المستند محمي ، ويمكن تحرير حقول النموذج فقط.
+
+#### س: ما أنواع الحماية الأخرى التي يمكن لخاصية ProtectionType إرجاعها؟
+
+ ج: إن`ProtectionType` يمكن أن ترجع الخاصية في Aspose.Words for .NET أنواع حماية مختلفة ، بما في ذلك:
+- `NoProtection`: المستند غير محمي.
+- `AllowOnlyRevisions`: المستند محمي ، ويمكن إجراء المراجعات فقط.
+- `AllowOnlyComments`: المستند محمي ، ويمكن إضافة التعليقات فقط.
+- `AllowOnlyFormFields`: المستند محمي ، ويمكن تحرير حقول النموذج فقط.
+- `ReadOnly`: المستند محمي ومُعين للقراءة فقط.
+
+#### س: هل يمكنني تعديل نوع الحماية لمستند باستخدام خاصية ProtectionType؟
+
+ ج: لا`ProtectionType`الخاصية في Aspose.Words for .NET هي خاصية للقراءة فقط. يسمح لك باسترداد نوع الحماية الحالي للمستند ولكنه لا يوفر وسائل مباشرة لتعديل نوع الحماية. لتعديل نوع الحماية ، تحتاج إلى استخدام طرق وخصائص أخرى متوفرة في`Document` فئة ، مثل`Protect` أو`Unprotect`.
+
+#### س: هل من الممكن حماية مستند مع أنواع حماية متعددة في وقت واحد؟
+
+ج: لا ، يسمح Aspose.Words for .NET بتطبيق نوع حماية واحد فقط على مستند في كل مرة. ومع ذلك ، يمكنك الجمع بين أنواع الحماية المختلفة من خلال تمكين الحماية ، وتعيين نوع واحد ، وتعطيل الحماية ، ثم تمكينها مرة أخرى بنوع آخر.
 

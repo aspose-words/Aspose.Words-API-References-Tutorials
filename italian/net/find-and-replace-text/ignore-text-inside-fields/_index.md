@@ -1,7 +1,7 @@
 ---
 title: Ignora il testo all'interno dei campi
 linktitle: Ignora il testo all'interno dei campi
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare la funzione "Ignora testo all'interno dei campi" di Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -58,7 +58,7 @@ Console.WriteLine(doc.GetText());
 
 ## Passaggio 6: modifica delle opzioni per includere i campi
 
- includiamo il testo all'interno dei campi nel risultato di output, possiamo modificare le opzioni per non ignorare i campi. Per questo imposteremo il`IgnoreFields` proprietà a`false`:
+includiamo il testo all'interno dei campi nel risultato di output, possiamo modificare le opzioni per non ignorare i campi. Per questo imposteremo il`IgnoreFields` proprietà a`false`:
 
 ```csharp
 options.IgnoreFields = false;
@@ -102,3 +102,68 @@ Ecco il codice sorgente di esempio completo per dimostrare l'uso della funzione 
 ## Conclusione
 
 In questo articolo, abbiamo esplorato il codice sorgente C# per capire come usare la funzione Ignore Text Inside Fields in Aspose.Words per .NET. Abbiamo seguito una guida passo passo per creare un documento, inserire un campo con del testo all'interno, utilizzare la funzione Ignora testo all'interno dei campi, eseguire operazioni di ricerca e sostituzione con espressioni regolari e visualizzare il documento modificato.
+
+### FAQ
+
+#### D: Cos'è la funzione "Ignora testo all'interno dei campi" in Aspose.Words per .NET?
+
+R: La funzione "Ignora testo all'interno dei campi" in Aspose.Words per .NET consente di specificare se il testo all'interno dei campi deve essere ignorato durante determinate operazioni, come la ricerca e la sostituzione del testo. Quando questa funzionalità è abilitata, il testo all'interno dei campi non viene considerato durante le operazioni.
+
+#### D: Come posso creare un nuovo documento utilizzando Aspose.Words per .NET?
+
+ A: Per creare un nuovo documento utilizzando Aspose.Words per .NET, è possibile creare un'istanza di a`Document` oggetto. Ecco un esempio di codice C# per creare un nuovo documento:
+
+```csharp
+Document doc = new Document();
+```
+
+#### D: Come posso inserire un campo con testo all'interno di un documento utilizzando Aspose.Words per .NET?
+
+ R: Una volta che hai un documento, puoi inserire un campo con del testo al suo interno usando a`DocumentBuilder` oggetto. Ad esempio, per inserire un campo "INCLUDETEXT" con il testo "Testo nel campo", puoi utilizzare il file`InsertField` metodo:
+
+```csharp
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.InsertField("INCLUDETEXT", "Text in field");
+```
+
+#### D: Come posso ignorare il testo all'interno dei campi in Aspose.Words per .NET?
+
+R: Per ignorare il testo all'interno dei campi durante le operazioni successive, puoi utilizzare a`FindReplaceOptions` oggetto e impostare il`IgnoreFields` proprietà a`true`:
+
+```csharp
+FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
+```
+
+#### D: Come posso eseguire la ricerca e la sostituzione utilizzando le espressioni regolari in Aspose.Words per .NET?
+
+ R: Per eseguire operazioni di ricerca e sostituzione sul testo del documento utilizzando le espressioni regolari, puoi utilizzare il .NET`Regex` classe. Ad esempio, per cercare tutte le occorrenze della lettera "e" e sostituirle con un asterisco "* ", puoi creare un file`Regex` oggetto e usalo con il`Replace` metodo:
+
+```csharp
+Regex regex = new Regex("e");
+doc.Range.Replace(regex, "*", options);
+```
+
+#### D: Come posso visualizzare l'output modificato del documento in Aspose.Words per .NET?
+
+ R: Dopo aver applicato le operazioni di ricerca e sostituzione, è possibile visualizzare il contenuto modificato del documento utilizzando il`GetText` metodo:
+
+```csharp
+Console.WriteLine(doc.GetText());
+```
+
+#### D: Come posso includere i campi nel risultato dell'output in Aspose.Words per .NET?
+
+ R: Per includere il testo all'interno dei campi nel risultato di output, puoi modificare le opzioni per non ignorare i campi. Per questo, puoi impostare il`IgnoreFields`proprietà del`FindReplaceOptions` opporsi a`false`:
+
+```csharp
+options.IgnoreFields = false;
+```
+
+#### D: Come posso visualizzare il documento modificato con i campi in Aspose.Words per .NET?
+
+R: Dopo aver modificato le opzioni per includere i campi, puoi eseguire nuovamente la ricerca e la sostituzione per ottenere il risultato con il testo all'interno dei campi inclusi:
+
+```csharp
+doc.Range.Replace(regex, "*", options);
+Console.WriteLine(doc.GetText());
+```

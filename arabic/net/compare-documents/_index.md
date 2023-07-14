@@ -1,7 +1,7 @@
 ---
 title: قارن المستندات
 linktitle: قارن المستندات
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية مقارنة مستندات Word وتحديد الاختلافات باستخدام Aspose.Words for .NET. أدلة وأمثلة عملية متضمنة.
 type: docs
 weight: 1480

@@ -1,7 +1,7 @@
 ---
 title: 克隆完整表
 linktitle: 克隆完整表
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将整个表格克隆到 Word 文档中。
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /zh/net/programming-with-tables/clone-complete-table/
 2. 添加对 Aspose.Words for .NET 库的引用。
 
 ## 第 2 步：加载文档并访问表
-要开始使用该表，我们需要加载包含该表的文档并访问它。按着这些次序：
+要对表启动文字处理，我们需要加载包含该表的文档并访问它。按着这些次序：
 
 ```csharp
 //文档目录的路径

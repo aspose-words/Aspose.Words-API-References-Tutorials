@@ -1,7 +1,7 @@
 ---
 title: موقف الجدول العائم
 linktitle: موقف الجدول العائم
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية وضع جدول في موضع متحرك في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ url: /ar/net/programming-with-tables/floating-table-position/
 2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
 
 ## الخطوة 2: تحميل المستند والوصول إلى الجدول
-لبدء العمل مع الجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
+لبدء معالجة الكلمات بالجدول ، نحتاج إلى تحميل المستند الذي يحتوي عليه والوصول إليه. اتبع هذه الخطوات:
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//قم بتحميل المستند
+// قم بتحميل المستند
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 
 // الوصول إلى المصفوفة
@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 ### نموذج التعليمات البرمجية المصدر لـ Floating Table Position باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");

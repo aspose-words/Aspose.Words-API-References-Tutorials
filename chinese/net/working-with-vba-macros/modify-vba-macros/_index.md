@@ -1,7 +1,7 @@
 ---
-title: 修改Vba宏
-linktitle: 修改Vba宏
-second_title: Aspose.Words for .NET API 参考
+title: 修改Word文档的Vba宏
+linktitle: 修改Word文档的Vba宏
+second_title: Aspose.Words 文档处理 API
 description: 在本教程中，了解如何使用 Aspose.Words for .NET 编辑 Word 文档的 VBA 宏。
 type: docs
 weight: 10
@@ -64,3 +64,25 @@ doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
 
 ## 结论
 在本教程中，我们了解了如何使用 Aspose.Words for .NET 在 Word 文档中编辑 VBA 宏。编辑 VBA 宏允许您更新文档中的现有 VBA 代码以进行更改或改进。请随意使用此功能来进一步自定义和自动化您的 Word 文档。
+
+### 常见问题解答
+
+#### 问：Word 文档中的 VBA 宏是什么？
+
+答：Word 文档中的 VBA 宏是一段可以运行以执行文档中特定操作的代码。 VBA 宏允许您自动执行任务、添加自定义功能以及与文档内容交互。
+
+#### 问：在Word文档中编辑VBA宏的先决条件是什么？
+
+答：在 Word 文档中编辑 VBA 宏之前，您必须具备 C# 编程语言的应用知识。您还需要在项目中安装 Aspose.Words for .NET 库。此外，您还需要一个包含要修改的 VBA 宏的 Word 文档。
+
+#### Q：代码中如何设置文档目录？
+
+ A：在提供的代码中，您必须替换`"YOUR DOCUMENTS DIRECTORY"`包含包含 VBA 宏的 Word 文档所在目录的适当路径。
+
+#### Q：如何指定要修改的新宏源代码？
+
+ A: 要指定要修改的宏的新源代码，可以使用`SourceCode`对应的属性`VbaModule`对象，方法是为其分配一个包含新 VBA 代码的字符串。
+
+#### 问：我可以在一个 Word 文档中同时编辑多个 VBA 宏吗？
+
+答：是的，您可以通过使用循环或直接访问相应的宏来修改Word文档中的多个VBA宏`VbaModule`中的物体`Modules`的集合`VbaProject`目的。这允许您在单个操作中同时更新多个 VBA 宏。

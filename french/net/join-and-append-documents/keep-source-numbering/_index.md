@@ -1,7 +1,7 @@
 ---
 title: Conserver la numérotation des sources
 linktitle: Conserver la numérotation des sources
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à ajouter un document tout en préservant la mise en forme de la numérotation source dans Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Étape 3 : conserver la numérotation des sources lors de l'importation
 
- Pour conserver la mise en forme de la numérotation des paragraphes numérotés du document source, créez une instance de`ImportFormatOptions` Et mettre`KeepSourceNumbering` pour`true` Utiliser un`NodeImporter` pour importer des nœuds du document source vers le document de destination, en spécifiant`ImportFormatMode.KeepSourceFormatting` et le`importFormatOptions`.
+ Pour conserver la mise en forme de la numérotation des paragraphes numérotés du document source, créez une instance de`ImportFormatOptions` Et mettre`KeepSourceNumbering` pour`true` . Utiliser un`NodeImporter` pour importer des nœuds du document source vers le document de destination, en spécifiant`ImportFormatMode.KeepSourceFormatting` et le`importFormatOptions`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -53,7 +53,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Étape 5 : Enregistrez le document modifié
 
-Enregistrez le document modifié à l'aide de la`Save` méthode de la`Document` objet.
+ Enregistrez le document modifié à l'aide de la`Save` méthode de la`Document` objet.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
@@ -64,7 +64,7 @@ Ceci termine la mise en œuvre de l'ajout d'un document source à un document de
 ### Exemple de code source pour Keep Source Numbering en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

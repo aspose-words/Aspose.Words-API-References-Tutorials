@@ -1,7 +1,7 @@
 ---
 title: الاحتفاظ بتنسيق المصدر
 linktitle: الاحتفاظ بتنسيق المصدر
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إلحاق مستند مصدر بمستند وجهة مع الحفاظ على التنسيق الأصلي باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## الخطوة 3: قم بإلحاق المستند المصدر بالمستند الوجهة
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.KeepSourceFormatting` كوضع تنسيق الاستيراد للاحتفاظ بالتنسيق الأصلي للمستند المصدر.
+ استخدم ال`AppendDocument`طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.KeepSourceFormatting` كوضع تنسيق الاستيراد للاحتفاظ بالتنسيق الأصلي للمستند المصدر.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -42,7 +42,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## الخطوة 4: احفظ المستند المعدل
 
-احفظ المستند المعدل باستخدام ملف`Save` طريقة`Document` هدف.
+ احفظ المستند المعدل باستخدام ملف`Save` طريقة`Document` هدف.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
@@ -53,7 +53,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
 ### مثال على شفرة المصدر لـ Keep Source Formatting باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document dstDoc = new Document();

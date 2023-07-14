@@ -1,7 +1,7 @@
 ---
 title: 修改所有部分中的Word页面设置
 linktitle: 修改所有部分中的Word页面设置
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 在本教程中，了解如何使用 Aspose.Words for .NET 修改 Word 文档所有部分中的 Word 页面设置。
 type: docs
 weight: 10

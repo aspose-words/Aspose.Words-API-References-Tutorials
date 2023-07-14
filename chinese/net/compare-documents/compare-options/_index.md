@@ -1,7 +1,7 @@
 ---
 title: 比较选项
 linktitle: 比较选项
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 分步指南解释 Aspose.Words for .NET 的比较选项功能的 C# 源代码。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Convertir les champs en paragraphe
 linktitle: Convertir les champs en paragraphe
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Convertissez les champs IF en texte brut dans un paragraphe avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
 Remplacez "VOTRE RÉPERTOIRE DE DOCUMENTS" par le chemin d'accès réel à votre répertoire de documents.
 
-## Étape 3 : Conversion des champs en texte
+## Étape 3 : Conversion des champs en texte
 
 Maintenant que le document est chargé, nous pouvons procéder à la conversion des champs de type en texte brut. Dans cet exemple, nous ciblons uniquement les champs présents dans le dernier paragraphe du document. Voici le code qui effectue cette conversion :
 
@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
- Ce code utilise une combinaison de méthodes LINQ pour filtrer les champs dans le dernier paragraphe du document, puis les convertit en texte brut en appelant le`Unlink()` méthode.
+Ce code utilise une combinaison de méthodes LINQ pour filtrer les champs dans le dernier paragraphe du document, puis les convertit en texte brut en appelant le`Unlink()` méthode.
 
 ## Étape 4 : Enregistrer le document modifié
 
@@ -93,4 +93,4 @@ R : Aspose.Words prend en charge une large gamme de formats de conversion dans 
 
 #### Q : Comment mettre à jour un champ de conversion dans un document Word avec Aspose.Words ?
 
-: Pour mettre à jour un champ de conversion dans un document Word avec Aspose.Words, vous pouvez utiliser la méthode UpdateFields. Cette méthode parcourt le document et met à jour tous les champs, y compris les champs de conversion, en recalculant les valeurs en fonction des données actuelles.
+R : Pour mettre à jour un champ de conversion dans un document Word avec Aspose.Words, vous pouvez utiliser la méthode UpdateFields. Cette méthode parcourt le document et met à jour tous les champs, y compris les champs de conversion, en recalculant les valeurs en fonction des données actuelles.

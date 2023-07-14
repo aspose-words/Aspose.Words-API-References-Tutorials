@@ -1,7 +1,7 @@
 ---
 title: Enregistrer le PDF au format Word (Docx)
 linktitle: Enregistrer le PDF au format Word (Docx)
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à convertir ou à enregistrer des documents PDF au format Word fromat (Docx) à l'aide d'Aspose.Words pour .NET. Tutoriel étape par étape avec un exemple de code source.
 type: docs
 weight: 10

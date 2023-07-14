@@ -1,7 +1,7 @@
 ---
 title: Verwenden Sie Steuerzeichen
 linktitle: Verwenden Sie Steuerzeichen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zur Verwendung von Steuerzeichen mit Aspose.Words für .NET.
 type: docs
 weight: 10

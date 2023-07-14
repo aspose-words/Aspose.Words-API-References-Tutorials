@@ -1,14 +1,14 @@
 ---
 title: 加载Chm
 linktitle: 加载Chm
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 加载 CHM 文件。
 type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/load-chm/
 ---
 
-在 C# 应用程序中使用 HTML 帮助 (CHM) 文件时，能够正确加载它们非常重要。借助适用于.NET 的 Aspose.Words 库，您可以使用适当的加载选项轻松加载 CHM 文件。在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET C# 源代码通过 LoadOptions 加载选项加载 CHM 文件。
+在 C# 应用程序中使用 HTML 帮助进行文字处理 (CHM) 文件时，能够正确加载它们非常重要。借助适用于.NET 的 Aspose.Words 库，您可以使用适当的加载选项轻松加载 CHM 文件。在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET C# 源代码通过 LoadOptions 加载选项加载 CHM 文件。
 
 ## 了解 Aspose.Words 库
 

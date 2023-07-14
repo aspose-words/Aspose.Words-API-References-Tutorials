@@ -1,7 +1,7 @@
 ---
 title: 在字段级别指定区域设置
 linktitle: 在字段级别指定区域设置
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中指定字段级本地化。
 type: docs
 weight: 10

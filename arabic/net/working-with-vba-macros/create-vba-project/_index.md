@@ -1,7 +1,7 @@
 ---
-title: قم بإنشاء مشروع Vba
-linktitle: قم بإنشاء مشروع Vba
-second_title: Aspose.Words لمراجع .NET API
+title: قم بإنشاء مشروع Vba في مستند Word
+linktitle: قم بإنشاء مشروع Vba في مستند Word
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: في هذا البرنامج التعليمي ، تعرف على كيفية إنشاء مشروع VBA في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // قم بإنشاء مستند جديد
 Document doc = new Document();
 
-// قم بإنشاء مشروع VBA جديد
+//قم بإنشاء مشروع VBA جديد
 VbaProject project = new VbaProject();
 project.Name = "AsposeProject";
 doc.VbaProject = project;
@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -81,3 +81,25 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 ## خاتمة
 في هذا البرنامج التعليمي ، رأينا كيفية إنشاء مشروع VBA في مستند Word باستخدام Aspose.Words for .NET. يتيح لك إنشاء مشروع VBA إضافة رمز VBA وتخصيصه في مستند Word الخاص بك. لا تتردد في استخدام هذه الميزة لأتمتة المهام أو إضافة وظائف مخصصة إلى مستندات Word الخاصة بك.
+
+### التعليمات
+
+#### س: ما هو مشروع VBA في مستند Word؟
+
+ج: مشروع VBA في مستند Word عبارة عن مجموعة من وحدات VBA النمطية التي تحتوي على تعليمات برمجية يمكن استخدامها لأتمتة المهام أو إضافة وظائف مخصصة أو تنفيذ عمليات محددة في مستند Word.
+
+#### س: ما هي المتطلبات الأساسية لإنشاء مشروع VBA في مستند Word؟
+
+ج: قبل أن تتمكن من إنشاء مشروع VBA في مستند Word ، يجب أن يكون لديك معرفة عملية بلغة البرمجة C #. تحتاج أيضًا إلى تثبيت مكتبة Aspose.Words for .NET في مشروعك.
+
+#### س: كيف يمكن ضبط دليل الوثيقة في الكود؟
+
+ ج: في الكود المقدم ، تحتاج إلى استبدال`"YOUR DOCUMENTS DIRECTORY"` بالمسار المناسب للدليل حيث تريد حفظ مستند Word الخاص بك مع مشروع VBA.
+
+#### س: كيف تحدد شفرة مصدر الماكرو في وحدة VBA؟
+
+ ج: لتحديد التعليمات البرمجية المصدر للماكرو في الوحدة النمطية لـ VBA ، يمكنك استخدام ملف`SourceCode`ممتلكات`VbaModule` class عن طريق تعيين سلسلة أحرف تحتوي على كود VBA.
+
+#### س: هل يمكنني إضافة وحدات نمطية متعددة لـ VBA إلى مشروع VBA في مستند Word؟
+
+ج: نعم ، يمكنك إضافة وحدات نمطية متعددة لـ VBA إلى مشروع VBA في مستند Word عن طريق إنشاء مثيل متعدد`VbaModule` الكائنات وإضافتها إلى`Modules` جمع`VbaProject` هدف. يتيح لك ذلك تنظيم تعليمات VBA البرمجية في وحدات مختلفة لتحسين الإدارة وإعادة الاستخدام.

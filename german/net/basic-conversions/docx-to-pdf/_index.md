@@ -1,7 +1,7 @@
 ---
 title: Konvertieren Sie eine Word-Datei in eine PDF-Datei
 linktitle: Konvertieren Sie eine Word-Datei in eine PDF-Datei
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für .NET von Docx in PDF konvertieren. Schritt-für-Schritt-Anleitung mit Beispielquellcode.
 type: docs
 weight: 10
@@ -77,5 +77,5 @@ Konvertieren Sie PDF-Dateien in Formate wie DOCX, DOC, HTML usw.
 Konvertierung von EPUB-, ODT-, OTT-, TXT- usw. Dateien. zu anderen Formaten.
 
 
-#### Q4. Wo finde ich weiteren Beispielcode und Ressourcen für die Arbeit mit Aspose.Words für .NET?
+#### Q4. Wo finde ich weiteren Beispielcode und Ressourcen für die Textverarbeitung mit Aspose.Words für .NET?
  Weitere Codebeispiele und Ressourcen finden Sie im[Aspose.Words für .NET API-Referenz](https://reference.aspose.com/words/net/) Und[Aspose.Words für .NET API-Tutorials](https://reference.aspose.com/tutorials/words/net/). Diese Ressourcen bieten Schritt-für-Schritt-Anleitungen, Beispielcode und Tutorials.

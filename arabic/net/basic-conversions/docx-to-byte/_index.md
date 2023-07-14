@@ -1,7 +1,7 @@
 ---
 title: تحويل Docx إلى بايت
 linktitle: تحويل Docx إلى بايت
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تحويل مستندات Word من Docx إلى مصفوفة بايت باستخدام Aspose.Words for .NET. برنامج تعليمي خطوة بخطوة مع مثال على الكود المصدري.
 type: docs
 weight: 10

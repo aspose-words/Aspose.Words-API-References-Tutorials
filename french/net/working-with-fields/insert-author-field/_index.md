@@ -1,7 +1,7 @@
 ---
 title: Insérer le champ Auteur
 linktitle: Insérer le champ Auteur
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer un champ AUTEUR dans vos documents Word avec Aspose.Words pour .NET. Indiquez le nom de l'auteur pour personnaliser vos documents.
 type: docs
 weight: 10
@@ -84,8 +84,8 @@ R : Le champ auteur d'un document Word peut être mis à jour pour refléter le 
 
 #### Q : Est-il possible de personnaliser le format du champ auteur dans un document Word ?
 
-: Oui, il est possible de personnaliser le format du champ auteur dans un document Word. Par défaut, le champ auteur affiche simplement le nom de l'auteur. Cependant, vous pouvez ajouter des informations supplémentaires telles que la date et l'heure de modification à l'aide des options de formatage disponibles dans Aspose.Words.
+R : Oui, il est possible de personnaliser le format du champ auteur dans un document Word. Par défaut, le champ auteur affiche simplement le nom de l'auteur. Cependant, vous pouvez ajouter des informations supplémentaires telles que la date et l'heure de modification à l'aide des options de formatage disponibles dans Aspose.Words.
 
 #### Q : Le champ de l'auteur est-il sensible aux modifications ultérieures du nom de l'auteur ?
 
-R : Oui, le champ auteur est sensible aux modifications ultérieures du nom de l'auteur. Si vous modifiez le nom de l'auteur dans les propriétés du document, le champ de l'auteur sera automatiquement mis à jour avec le nouveau nom lors de la mise à jour des champs du document.
+: Oui, le champ auteur est sensible aux modifications ultérieures du nom de l'auteur. Si vous modifiez le nom de l'auteur dans les propriétés du document, le champ de l'auteur sera automatiquement mis à jour avec le nouveau nom lors de la mise à jour des champs du document.

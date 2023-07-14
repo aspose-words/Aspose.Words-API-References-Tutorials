@@ -1,7 +1,7 @@
 ---
 title: تحويل الحقول في الفقرة
 linktitle: تحويل الحقول في الفقرة
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تحويل حقول IF إلى نص عادي في فقرة باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
- يستخدم هذا الرمز مجموعة من أساليب LINQ لتصفية الحقول في الفقرة الأخيرة من المستند ثم تحويلها إلى نص عادي عن طريق استدعاء`Unlink()` طريقة.
+يستخدم هذا الرمز مجموعة من أساليب LINQ لتصفية الحقول في الفقرة الأخيرة من المستند ثم تحويلها إلى نص عادي عن طريق استدعاء`Unlink()` طريقة.
 
 ## الخطوة 4: حفظ المستند المعدل
 

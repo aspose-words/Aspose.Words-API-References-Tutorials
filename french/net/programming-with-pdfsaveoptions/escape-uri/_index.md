@@ -1,7 +1,7 @@
 ---
 title: URI d'échappement dans le document PDF
 linktitle: URI d'échappement dans le document PDF
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape Comment échapper l'URI dans un document PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10

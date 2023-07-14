@@ -1,7 +1,7 @@
 ---
 title: Ajouter des coins coupés
 linktitle: Ajouter des coins coupés
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à ajouter une forme avec des coins coupés à un document Word à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ url: /fr/net/programming-with-shapes/add-corners-snipped/
 Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
 - Bibliothèque Aspose.Words pour .NET installée.
-- Connaissance de base de C# et travail avec des documents Word.
+- Connaissance de base de C# et du traitement de texte avec des documents Word.
 
 ## Étape 1 : Configurer le répertoire de documents
- Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
+ Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 ### Exemple de code source pour Add Corners Snipped en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

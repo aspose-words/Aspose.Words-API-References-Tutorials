@@ -1,7 +1,7 @@
 ---
 title: Eigenschaft „Letzte gespeicherte Zeit“ aktualisieren
 linktitle: Eigenschaft „Letzte gespeicherte Zeit“ aktualisieren
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die Eigenschaft „Letzte gespeicherte Zeit“ automatisch aktualisieren, wenn Sie ein Dokument mit Aspose.Words für .NET speichern.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Jetzt können Sie den Quellcode ausführen, um die Eigenschaft „Letzte Speiche
 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");

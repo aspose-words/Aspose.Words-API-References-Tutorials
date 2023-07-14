@@ -1,7 +1,7 @@
 ---
 title: إلحاق مستند
 linktitle: إلحاق مستند
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إلحاق محتويات مستند بآخر باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
 ### مثال على الكود المصدري لإلحاق المستند باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
 	// عُقد الأقسام هي عناصر فرعية مباشرة لعقدة المستند حتى نتمكن من تعداد المستند.
 	foreach (Section srcSection in srcDoc)
 	{
-		//لأننا نقوم بنسخ قسم من مستند إلى آخر ،
+		// لأننا نقوم بنسخ قسم من مستند إلى آخر ،
 		// مطلوب لاستيراد عقدة القسم في المستند الوجهة.
 		// يعمل هذا على ضبط أي مراجع خاصة بالمستند للأنماط والقوائم وما إلى ذلك.
 		//

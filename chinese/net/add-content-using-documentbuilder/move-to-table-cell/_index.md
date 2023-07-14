@@ -1,7 +1,7 @@
 ---
 title: 移至表格单元格
 linktitle: 移至表格单元格
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 在 Aspose.Words for .NET 中使用“移动到表格单元格”的分步指南
 type: docs
 weight: 10

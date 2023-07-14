@@ -1,7 +1,7 @@
 ---
 title: Erstellen Sie eine Tabelle mit Rändern
 linktitle: Erstellen Sie eine Tabelle mit Rändern
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Erstellen einer Tabelle mit Rahmen mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ Herzlichen Glückwunsch! Sie haben jetzt mit Aspose.Words für .NET eine Tabelle
 ### Beispielquellcode für „Tabelle mit Rändern erstellen“ mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

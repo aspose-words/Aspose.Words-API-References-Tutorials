@@ -1,7 +1,7 @@
 ---
 title: Ändern Sie asiatische Absatzabstände und Einzüge
 linktitle: Ändern Sie asiatische Absatzabstände und Einzüge
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie asiatische Absatzabstände und Einzüge mit Aspose.Words für .NET ändern.
 type: docs
 weight: 10

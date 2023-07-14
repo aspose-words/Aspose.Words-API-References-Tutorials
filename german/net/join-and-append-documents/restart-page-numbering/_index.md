@@ -1,7 +1,7 @@
 ---
 title: Starten Sie die Seitennummerierung neu
 linktitle: Starten Sie die Seitennummerierung neu
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die Seitennummerierung neu starten, während Sie Word-Dokumente mit Aspose.Words für .NET verbinden und anhängen.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 ## Schritt 1: Initialisieren Sie die Dokumentverzeichnisse
 
- Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir` Variable für den Pfad, in dem sich Ihre Dokumente befinden.
+ Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir`Variable für den Pfad, in dem sich Ihre Dokumente befinden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,7 +65,7 @@ Hier ist der vollständige Quellcode für die Funktion „Seitennummerierung neu
  
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

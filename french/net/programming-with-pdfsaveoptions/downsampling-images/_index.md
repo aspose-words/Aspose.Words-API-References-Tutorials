@@ -1,7 +1,7 @@
 ---
 title: Réduire la taille du document PDF avec le sous-échantillonnage des images
 linktitle: Réduire la taille du document PDF avec le sous-échantillonnage des images
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à réduire la taille d'un document pdf en sous-échantillonnant les images lors de la conversion au format PDF avec Aspose.Words pour .NET.
 type: docs
 weight: 10

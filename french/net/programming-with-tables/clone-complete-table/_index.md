@@ -1,7 +1,7 @@
 ---
 title: Cloner la table complète
 linktitle: Cloner la table complète
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à cloner un tableau entier dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Dans ce didacticiel, nous apprendrons à utiliser Aspose.Words pour .NET pour cl
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
 ## Etape 2 : Chargement du document et accès au tableau
-Pour commencer à travailler avec le tableau, nous devons charger le document qui le contient et y accéder. Suivez ces étapes:
+Pour démarrer le traitement de texte avec le tableau, nous devons charger le document qui le contient et y accéder. Suivez ces étapes:
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Accéder au tableau
@@ -60,16 +60,16 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ### Exemple de code source pour Clone Complete Table en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// Clonez le tableau et insérez-le dans le document après l'original.
+	//Clonez le tableau et insérez-le dans le document après l'original.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
 	// Insérer un paragraphe vide entre les deux tableaux,
-	//ou bien ils seront combinés en un seul lors de l'enregistrement, cela a à voir avec la validation du document.
+	// ou bien ils seront combinés en un seul lors de l'enregistrement, cela a à voir avec la validation du document.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 ```

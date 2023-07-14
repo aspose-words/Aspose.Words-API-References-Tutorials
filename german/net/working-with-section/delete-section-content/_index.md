@@ -1,7 +1,7 @@
 ---
 title: Abschnittsinhalt löschen
 linktitle: Abschnittsinhalt löschen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Inhalte aus einem bestimmten Abschnitt eines Word-Dokuments löschen.
 type: docs
 weight: 10
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Als nächstes laden wir das Word-Dokument in eine Instanz von`Document` Klasse. Wir greifen über den Index 0 auf den ersten Abschnitt des Dokuments zu.
 
 ```csharp
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
 // Greifen Sie auf den Abschnitt zu
@@ -45,7 +45,7 @@ section.ClearContent();
 
 ```csharp
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -73,7 +73,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A: Um das Word-Dokument in eine Instanz von zu laden`Document` Klasse aufgerufen`doc` und über den Index 0 auf den ersten Abschnitt des Dokuments zugreifen, können Sie den folgenden Code verwenden:
 
 ```csharp
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Document.docx");
 
 // Greifen Sie auf den Abschnitt zu

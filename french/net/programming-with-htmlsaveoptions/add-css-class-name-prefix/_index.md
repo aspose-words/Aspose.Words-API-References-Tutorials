@@ -1,7 +1,7 @@
 ---
 title: Ajouter un préfixe de nom de classe CSS
 linktitle: Ajouter un préfixe de nom de classe CSS
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour ajouter un préfixe de nom de classe CSS lors de la conversion d'un document en HTML avec Aspose.Words pour .NET.
 type: docs
 weight: 10

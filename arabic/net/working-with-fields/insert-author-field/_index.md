@@ -1,7 +1,7 @@
 ---
 title: أدخل حقل المؤلف
 linktitle: أدخل حقل المؤلف
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إدراج حقل AUTHOR في مستندات Word باستخدام Aspose.Words for .NET. حدد اسم المؤلف لتخصيص مستنداتك.
 type: docs
 weight: 10

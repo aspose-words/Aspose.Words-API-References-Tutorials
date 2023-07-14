@@ -1,7 +1,7 @@
 ---
 title: Charger le dictionnaire de césure pour la langue
 linktitle: Charger le dictionnaire de césure pour la langue
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à charger un dictionnaire de césure pour une langue spécifique dans Aspose.Words pour .NET.
 type: docs
 weight: 10

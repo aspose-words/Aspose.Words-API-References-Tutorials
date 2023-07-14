@@ -1,7 +1,7 @@
 ---
 title: إدراج كائن Ole في مستند Word
 linktitle: إدراج كائن Ole في مستند Word
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إدراج كائن OLE في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### س: كيف يتم إنشاء مستند جديد ومولد مستندات؟
 
- ج: يمكنك إنشاء مستند جديد باستخدام امتداد`Document` class ومُنشئ المستندات باستخدام امتداد`DocumentBuilder` الصف ، كما هو موضح أدناه:
+ ج: يمكنك إنشاء مستند جديد باستخدام ملف`Document` class ومُنشئ المستندات باستخدام امتداد`DocumentBuilder` الصف ، كما هو موضح أدناه:
 
 ```csharp
 Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Absatzformatierung
 linktitle: Absatzformatierung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET benutzerdefinierte Formatierungen auf Ihre Absätze anwenden.
 type: docs
 weight: 10

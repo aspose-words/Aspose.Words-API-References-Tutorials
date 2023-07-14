@@ -1,18 +1,18 @@
 ---
-title: Travailler avec des polices
-linktitle: Travailler avec des polices
-second_title: Référence de l'API Aspose.Words pour .NET
-description: Les didacticiels sur l'utilisation des polices vous apprennent à utiliser les polices dans Word avec Aspose.Words pour .NET. Formatage, substitutions, notifications, et plus encore.
+title: Traitement de texte avec des polices
+linktitle: Traitement de texte avec des polices
+second_title: API de traitement de documents Aspose.Words
+description: Les didacticiels sur le traitement de texte avec les polices vous apprennent à utiliser les polices dans Word avec Aspose.Words pour .NET. Formatage, substitutions, notifications, et plus encore.
 type: docs
 weight: 420
 url: /fr/net/working-with-fonts/
 ---
 
-Les didacticiels sur l'utilisation des polices vous guident à travers divers aspects de l'utilisation des polices, vous permettant d'effectuer des opérations telles que la modification du formatage des polices, le chargement des polices à partir de répertoires spécifiques, la gestion des polices de substitution, etc.
+Les didacticiels sur le traitement de texte avec les polices vous guident à travers divers aspects du traitement de texte avec les polices, vous permettant d'effectuer des opérations telles que la modification du formatage des polices, le chargement des polices à partir de répertoires spécifiques, la gestion des polices de substitution, etc.
 
 Les didacticiels vous fournissent des explications détaillées étape par étape pour chaque fonctionnalité, ainsi que le code source du langage C # pour illustrer les concepts. Vous apprendrez à utiliser les classes et les méthodes de la bibliothèque Aspose.Words pour .NET pour effectuer des tâches spécifiques liées aux polices dans vos documents Word.
 
-Que vous souhaitiez formater du texte avec différentes polices, définir des règles de substitution de polices, charger des polices à partir de répertoires spécifiques ou recevoir des notifications de polices, les didacticiels "Travailler avec les polices" vous fourniront les connaissances nécessaires pour accomplir ces tâches. avec facilité.
+Que vous souhaitiez formater du texte avec différentes polices, définir des règles de substitution de polices, charger des polices à partir de répertoires spécifiques ou recevoir des notifications de polices, les didacticiels "Traitement de mots avec des polices" vous fourniront les connaissances nécessaires pour accomplir ces tâches. avec facilité.
 
  ## Tutoriels
 | Titre | Description |

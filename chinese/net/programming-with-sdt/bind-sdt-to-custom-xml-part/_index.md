@@ -1,7 +1,7 @@
 ---
 title: 将 SDT 绑定到自定义 Xml 部件
 linktitle: 将 SDT 绑定到自定义 Xml 部件
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将 SDT 绑定到自定义 Xml 部件。
 type: docs
 weight: 10

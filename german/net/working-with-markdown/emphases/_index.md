@@ -1,7 +1,7 @@
 ---
 title: Schwerpunkte
 linktitle: Schwerpunkte
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie Schritt-für-Schritt-Anleitung, wie Sie Hervorhebungen (fett und kursiv) mit Aspose.Words für .NET verwenden.
 type: docs
 weight: 10

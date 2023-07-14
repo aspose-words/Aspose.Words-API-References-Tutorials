@@ -1,7 +1,7 @@
 ---
 title: Utilisation des volets des tâches de l'extension Web
 linktitle: Utilisation des volets des tâches de l'extension Web
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour l'utilisation des volets de tâches d'extension Web avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèqu
 
 ## Étape 1 : Définir le répertoire des documents
 
-Pour commencer, vous devez définir le chemin vers le répertoire où vous souhaitez enregistrer le document généré. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel à votre répertoire de documents.
+ Pour commencer, vous devez définir le chemin vers le répertoire où vous souhaitez enregistrer le document généré. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel à votre répertoire de documents.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

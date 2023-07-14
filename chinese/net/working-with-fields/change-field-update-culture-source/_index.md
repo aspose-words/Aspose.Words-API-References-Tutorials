@@ -1,7 +1,7 @@
 ---
 title: 更改字段更新文化源
 linktitle: 更改字段更新文化源
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 更改字段更新文化源，在 Aspose.Words for .NET 中修改文化源的分步指南。
 type: docs
 weight: 10

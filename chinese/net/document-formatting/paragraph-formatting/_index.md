@@ -1,7 +1,7 @@
 ---
 title: 段落格式
 linktitle: 段落格式
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将自定义格式应用于段落。
 type: docs
 weight: 10

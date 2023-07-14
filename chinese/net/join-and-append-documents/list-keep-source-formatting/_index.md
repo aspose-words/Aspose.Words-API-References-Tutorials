@@ -1,7 +1,7 @@
 ---
 title: 列表保留源格式
 linktitle: 列表保留源格式
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在使用 Aspose.Words for .NET 加入和附加 Word 文档时保留列表格式。
 type: docs
 weight: 10

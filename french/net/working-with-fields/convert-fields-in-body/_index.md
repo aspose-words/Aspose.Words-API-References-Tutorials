@@ -1,7 +1,7 @@
 ---
 title: Convertir les champs dans le corps
 linktitle: Convertir les champs dans le corps
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser Aspose.Words pour .NET pour convertir les champs Page en texte dans le corps d'un document Word.
 type: docs
 weight: 10
@@ -22,13 +22,13 @@ Commencez par déclarer une variable pour le chemin d'accès à votre répertoir
 // Le chemin d'accès à votre répertoire de documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
 ## Étape 3 : convertir les champs de page en texte brut
 
-Maintenant que le document est chargé, nous pouvons passer aux étapes de conversion. Pour convertir les champs de la page en texte brut dans le corps de la première section, vous pouvez utiliser la`Range.Fields` méthode pour obtenir tous les champs dans la plage spécifiée, puis filtrer les champs de type`FieldType.FieldPage` . Ensuite, vous pouvez utiliser le`ForEach` méthode pour parcourir chaque champ et appeler la`Unlink()` méthode pour le convertir en texte brut.
+ Maintenant que le document est chargé, nous pouvons passer aux étapes de conversion. Pour convertir les champs de la page en texte brut dans le corps de la première section, vous pouvez utiliser la`Range.Fields` méthode pour obtenir tous les champs dans la plage spécifiée, puis filtrer les champs de type`FieldType.FieldPage` . Ensuite, vous pouvez utiliser le`ForEach` méthode pour parcourir chaque champ et appeler la`Unlink()` méthode pour le convertir en texte brut.
 
 ```csharp
 // Passez les paramètres appropriés pour convertir les champs de la page en texte brut dans le corps de la première section.
@@ -37,7 +37,7 @@ doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToL
 
 ## Étape 4 : Enregistrer le document modifié
 
- Une fois que vous avez converti les champs de la page en texte brut, vous pouvez enregistrer le document modifié à l'aide de la`Save()` méthode et en spécifiant le chemin et le nom du fichier de sortie. Dans notre exemple, nous l'enregistrons sous "WorkingWithFields.ConvertFieldsInBody.docx".
+Une fois que vous avez converti les champs de la page en texte brut, vous pouvez enregistrer le document modifié à l'aide de la`Save()` méthode et en spécifiant le chemin et le nom du fichier de sortie. Dans notre exemple, nous l'enregistrons sous "WorkingWithFields.ConvertFieldsInBody.docx".
 
 ```csharp
 // Enregistrer le document modifié
@@ -52,7 +52,7 @@ Voici l'exemple de code source complet pour convertir les champs dans le corps �
 // Le chemin d'accès à votre répertoire de documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Linked fields.docx");
 
 // Passez les paramètres appropriés pour convertir les champs de la page en texte brut dans le corps de la première section.
@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 
 #### Q : Aspose.Words est-il compatible avec différentes versions de Microsoft Word ?
 
-: Oui, Aspose.Words est compatible avec différentes versions de Microsoft Word, notamment Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 et Word 2019.
+R : Oui, Aspose.Words est compatible avec différentes versions de Microsoft Word, notamment Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 et Word 2019.
 
 #### Q : Aspose.Words peut-il gérer des structures de champs complexes ?
 
@@ -80,4 +80,4 @@ R : Certainement ! Aspose.Words fournit des méthodes pour convertir les champs 
 
 #### Q : Est-il possible de générer des documents Word avec des champs dynamiques à l'aide d'Aspose.Words ?
 
-: Absolument ! Aspose.Words offre des fonctionnalités robustes pour générer des documents Word avec des champs dynamiques. Vous pouvez créer des modèles avec des champs prédéfinis et les remplir avec des données de manière dynamique, offrant une solution de génération de documents flexible et efficace.
+R : Absolument ! Aspose.Words offre des fonctionnalités robustes pour générer des documents Word avec des champs dynamiques. Vous pouvez créer des modèles avec des champs prédéfinis et les remplir avec des données de manière dynamique, offrant une solution de génération de documents flexible et efficace.

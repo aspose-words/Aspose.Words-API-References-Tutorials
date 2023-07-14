@@ -1,7 +1,7 @@
 ---
 title: Insérer une règle horizontale
 linktitle: Insérer une règle horizontale
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer des règles horizontales dans des documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ builder.InsertHorizontalRule();
 ```
 
 ## Étape 3 : Enregistrer le document
-Après avoir inséré la règle horizontale, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
+Après avoir inséré la règle horizontale, enregistrez le document dans un fichier à l'aide de la méthode Save de la classe Document :
 
 ```csharp
 doc.Save(ArtifactsDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");

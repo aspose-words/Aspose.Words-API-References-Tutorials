@@ -1,7 +1,7 @@
 ---
 title: Format d'image verrouillé
 linktitle: Format d'image verrouillé
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment verrouiller ou déverrouiller les proportions d'une forme dans un document Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Ce didacticiel explique comment verrouiller ou déverrouiller les proportions d'
 Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
 - Bibliothèque Aspose.Words pour .NET installée.
-- Connaissance de base de C# et travail avec des documents Word.
+- Connaissance de base de C# et du traitement de texte avec des documents Word.
 
 ## Étape 1 : Configurer le répertoire de documents
- Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
+ Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,10 +39,10 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
 ```
 
 ## Étape 4 : Verrouiller ou déverrouiller le format d'image
- Met le`AspectRatioLocked` propriété de la forme à`true` ou`false`pour verrouiller ou déverrouiller le format d'image, respectivement.
+ Met le`AspectRatioLocked` propriété de la forme à`true` ou`false` pour verrouiller ou déverrouiller le format d'image, respectivement.
 
 ```csharp
-shape.AspectRatioLocked = false; // Déverrouiller le rapport hauteur/largeur
+shape.AspectRatioLocked = false; //Déverrouiller le rapport hauteur/largeur
 ```
 
 ## Étape 5 : Enregistrer le document
@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ### Exemple de code source pour Aspect Ratio Locked en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

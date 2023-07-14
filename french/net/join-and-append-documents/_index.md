@@ -1,19 +1,19 @@
 ---
 title: Joindre et ajouter des documents
 linktitle: Joindre et ajouter des documents
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à joindre et à fusionner des documents Word à l'aide d'Aspose.Words pour .NET. Les didacticiels vous guident à travers les étapes pour combiner plusieurs fichiers Word en un seul document.
 type: docs
 weight: 1500
 url: /fr/net/join-and-append-documents/
 ---
-Les didacticiels Aspose.Words pour .NET vous guident à travers différentes fonctionnalités et techniques pour travailler avec des documents Word dans vos applications. L'un de ces didacticiels est "Rejoindre et fusionner des documents", qui vous montre comment combiner plusieurs documents Word en un seul. Vous apprendrez à utiliser le`Document` classe pour ouvrir et manipuler des documents, ainsi que la`AppendDocument` méthode pour ajouter le contenu d'un document à un autre. Ce didacticiel vous donne des instructions étape par étape pour effectuer cette opération en toute simplicité.
+ Les didacticiels Aspose.Words pour .NET vous guident à travers différentes fonctionnalités et techniques de traitement de texte avec des documents Word dans vos applications. L'un de ces didacticiels est "Rejoindre et fusionner des documents", qui vous montre comment combiner plusieurs documents Word en un seul. Vous apprendrez à utiliser le`Document` classe pour ouvrir et manipuler des documents, ainsi que la`AppendDocument` méthode pour ajouter le contenu d'un document à un autre. Ce didacticiel vous donne des instructions étape par étape pour effectuer cette opération en toute simplicité.
 
- Un autre excellent didacticiel est "Remplacer du texte dans un document", qui vous explique comment effectuer des remplacements de texte automatiques dans un document Word. Vous apprendrez à utiliser le`FindReplaceOptions` et`Document` classes pour rechercher et remplacer du texte, en spécifiant des options de recherche flexibles. Ce didacticiel vous guide tout au long du processus de remplacement de texte dans un document, vous permettant d'automatiser cette tâche fastidieuse.
+Un autre excellent didacticiel est "Remplacer du texte dans un document", qui vous explique comment effectuer des remplacements de texte automatiques dans un document Word. Vous apprendrez à utiliser le`FindReplaceOptions` et`Document` classes pour rechercher et remplacer du texte, en spécifiant des options de recherche flexibles. Ce didacticiel vous guide tout au long du processus de remplacement de texte dans un document, vous permettant d'automatiser cette tâche fastidieuse.
 
-Enfin, le didacticiel "Génération d'un rapport avec fusion de données" vous montre comment créer des rapports dynamiques en fusionnant des données dans un modèle de document Word. Vous apprendrez à utiliser le`MailMerge` class pour effectuer la fusion de données à partir de différentes sources, telles que des tables, des objets personnalisés ou des bases de données. Ce didacticiel vous fournit des exemples concrets et des conseils pratiques pour générer des rapports personnalisés à partir de diverses données.
+ Enfin, le didacticiel "Génération d'un rapport avec fusion de données" vous montre comment créer des rapports dynamiques en fusionnant des données dans un modèle de document Word. Vous apprendrez à utiliser le`MailMerge` class pour effectuer la fusion de données à partir de différentes sources, telles que des tables, des objets personnalisés ou des bases de données. Ce didacticiel vous fournit des exemples concrets et des conseils pratiques pour générer des rapports personnalisés à partir de diverses données.
 
-Ces didacticiels Aspose.Words pour .NET vous fournissent des ressources précieuses pour maîtriser l'utilisation de documents Word dans vos applications, en vous guidant à travers des exemples pratiques et des instructions étape par étape. Que vous ayez besoin de combiner des documents, de remplacer du texte ou de générer des rapports, ces didacticiels vous aideront à tirer pleinement parti des puissantes fonctionnalités d'Aspose.Words pour .NET.
+Ces didacticiels Aspose.Words pour .NET vous fournissent des ressources précieuses pour maîtriser le traitement de mots avec des documents Word dans vos applications, en vous guidant à travers des exemples pratiques et des instructions étape par étape. Que vous ayez besoin de combiner des documents, de remplacer du texte ou de générer des rapports, ces didacticiels vous aideront à tirer pleinement parti des puissantes fonctionnalités d'Aspose.Words pour .NET.
 
  ## Tutoriels
 | Titre | Description |
@@ -31,7 +31,7 @@ Ces didacticiels Aspose.Words pour .NET vous fournissent des ressources précieu
 | [Liste Utiliser les styles de destination](./list-use-destination-styles/) | Apprenez à joindre et à ajouter des documents Word tout en préservant les styles de liste du document de destination à l'aide d'Aspose.Words pour .NET. |
 | [Redémarrer la numérotation des pages](./restart-page-numbering/) | Apprenez à redémarrer la numérotation des pages tout en joignant et en ajoutant des documents Word à l'aide d'Aspose.Words pour .NET. |
 | [Mettre à jour la mise en page](./update-page-layout/) | Découvrez comment mettre à jour la mise en page lors de la jointure et de l'ajout de documents Word à l'aide d'Aspose.Words pour .NET. |
-| [Utiliser les styles de destination](./use-destination-styles/) | Découvrez comment joindre et ajouter des documents Word tout en appliquant des styles de document de destination à l'aide d'Aspose.Words pour .NET. |
+| [Utiliser les styles de destinations](./use-destination-styles/) | Découvrez comment joindre et ajouter des documents Word tout en appliquant des styles de document de destination à l'aide d'Aspose.Words pour .NET. |
 | [Comportement de style intelligent](./smart-style-behavior/) | Apprenez à conserver un comportement de style intelligent lors de la jointure et de l'ajout de documents Word à l'aide d'Aspose.Words pour .NET. |
 | [Insérer un document avec le constructeur](./insert-document-with-builder/) | Apprenez à insérer un document à la fin d'un autre document en utilisant Aspose.Words pour .NET. |
 | [Conserver la numérotation des sources](./keep-source-numbering/) | Apprenez à ajouter un document tout en préservant la mise en forme de la numérotation source dans Aspose.Words pour .NET. |

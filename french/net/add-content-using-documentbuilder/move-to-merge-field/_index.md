@@ -1,7 +1,7 @@
 ---
 title: Déplacer vers le champ de fusion
 linktitle: Déplacer vers le champ de fusion
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à implémenter la fonctionnalité Déplacer vers le champ de fusion dans Aspose.Words pour .NET à l'aide d'un guide étape par étape.
 type: docs
 weight: 10
@@ -48,7 +48,7 @@ builder.MoveToField(field, true);
 
 ## Ajouter du texte immédiatement après le champ de fusion
 
-Une fois que le curseur du générateur de document se trouve dans le champ de fusion, vous pouvez ajouter du texte immédiatement après en utilisant la méthode Write :
+Une fois que le curseur du générateur de document se trouve dans le champ de fusion, vous pouvez ajouter du texte immédiatement après en utilisant la méthode Write :
 
 ```csharp
 Assert.AreEqual(field.End, builder.CurrentNode.PreviousSibling);
@@ -79,5 +79,5 @@ builder.Write(" Text immediately after the field.");
 
 ## Conclusion
 
-nous avons exploré la fonctionnalité Move To Merge Field de Aspose.Words pour .NET. Nous avons appris à naviguer pour fusionner des champs dans un document à l'aide de la classe DocumentBuilder et à effectuer des opérations dessus. Cette fonctionnalité est utile lorsque vous travaillez par programmation avec la fusion
+nous avons exploré la fonctionnalité Move To Merge Field de Aspose.Words pour .NET. Nous avons appris à naviguer pour fusionner des champs dans un document à l'aide de la classe DocumentBuilder et à effectuer des opérations dessus. Cette fonctionnalité est utile lors du traitement de mots par programmation avec fusion
 

@@ -1,7 +1,7 @@
 ---
 title: Commentaire d'ancrage
 linktitle: Commentaire d'ancrage
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à ancrer les réponses aux commentaires à un texte spécifique dans des documents Word à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Créez trois objets Run.
-//Les deux premiers exécutent du texte, tandis que le troisième exécute un commentaire
+// Les deux premiers exécutent du texte, tandis que le troisième exécute un commentaire
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ R : Pour ajouter une ancre de commentaire dans un document Aspose.Words pour .N
 
 #### Q : Comment puis-je modifier le texte d'un commentaire lié à une ancre de commentaire dans Aspose.Words pour .NET ?
 
- : Pour modifier le texte d'un commentaire lié à une ancre de commentaire dans Aspose.Words pour .NET, vous pouvez accéder au`Comment.Text` propriété du correspondant`Comment` objet et modifiez le texte si nécessaire.
+ R : Pour modifier le texte d'un commentaire lié à une ancre de commentaire dans Aspose.Words pour .NET, vous pouvez accéder au`Comment.Text` propriété du correspondant`Comment` objet et modifiez le texte si nécessaire.
 

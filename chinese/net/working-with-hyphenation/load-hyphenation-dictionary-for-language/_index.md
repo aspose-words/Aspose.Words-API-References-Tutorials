@@ -1,7 +1,7 @@
 ---
 title: 加载语言的连字词典
 linktitle: 加载语言的连字词典
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何在 Aspose.Words for .NET 中加载特定语言的连字词典。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: 将 Docx 转换为 Epub
 linktitle: 音乐会 Docx 到 Epub
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 将 Word 文档从 Docx 转换为 Epub 格式。带有示例源代码的分步教程。
 type: docs
 weight: 10

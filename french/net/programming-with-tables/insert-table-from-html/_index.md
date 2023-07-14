@@ -1,7 +1,7 @@
 ---
 title: Insérer un tableau à partir de HTML
 linktitle: Insérer un tableau à partir de HTML
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer un tableau HTML dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ Dans ce tutoriel, nous allons apprendre à insérer un tableau dans un document 
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
 ## Etape 2 : Création du document et initialisation du générateur de document
-Pour commencer à travailler avec le document et le générateur de documents, suivez ces étapes :
+Pour démarrer le traitement de texte avec le document et le générateur de documents, procédez comme suit :
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
@@ -60,7 +60,7 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ### Exemple de code source pour Insert Table From Html en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

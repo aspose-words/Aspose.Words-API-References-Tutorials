@@ -1,7 +1,7 @@
 ---
 title: Mise en page dans la cellule
 linktitle: Mise en page dans la cellule
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à mettre en page une forme dans une cellule de tableau dans un document Word à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Ce didacticiel explique comment mettre en page une forme dans une cellule de tab
 Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 
 - Bibliothèque Aspose.Words pour .NET installée.
-- Connaissance de base de C# et travail avec des documents Word.
+- Connaissance de base de C# et du traitement de texte avec des documents Word.
 
 ## Étape 1 : Configurer le répertoire de documents
- Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
+ Commencez par configurer le chemin d'accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès réel au répertoire où vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,7 +65,7 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 ```
 
 ## Étape 5 : Personnalisez la forme
- Personnalisez l'apparence et le texte de la forme du filigrane en définissant des propriétés telles que`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`etc.
+ Personnalisez l'apparence et le texte de la forme du filigrane en définissant des propriétés telles que`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`, etc.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -77,7 +77,7 @@ watermark.WrapType = WrapType.None;
 ```
 
 ## Étape 6 : Insérez la forme dans le document
- Insérez la forme du filigrane dans le document à l'aide du`InsertNode` méthode de la`DocumentBuilder` objet. Positionnez la forme à l'aide de la`MoveTo` méthode pour le placer après la dernière exécution dans le document.
+Insérez la forme du filigrane dans le document à l'aide du`InsertNode` méthode de la`DocumentBuilder` objet. Positionnez la forme à l'aide de la`MoveTo` méthode pour le placer après la dernière exécution dans le document.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -98,7 +98,7 @@ doc
 ### Exemple de code source pour Layout In Cell en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

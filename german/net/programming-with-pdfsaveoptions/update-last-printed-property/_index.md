@@ -1,7 +1,7 @@
 ---
 title: Zuletzt gedruckte Eigenschaft im PDF-Dokument aktualisieren
 linktitle: Zuletzt gedruckte Eigenschaft im PDF-Dokument aktualisieren
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Aktualisieren der Eigenschaft „Zuletzt gedruckt“ bei der Konvertierung in PDF mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ A: Um die Eigenschaft „Zuletzt gedruckt“ in einem PDF-Dokument mit Aspose.Wo
 
  Erstellen Sie eine Instanz von`Document` Klasse, die den Pfad zum Word-Dokument angibt.
 
- Erstellen Sie eine Instanz von`PdfSaveOptions` Klasse und legen Sie die fest`UpdateLastPrintedProperty` Eigentum zu`true` um die Aktualisierung der Eigenschaft „Zuletzt gedruckt“ zu ermöglichen.
+ Erstellen Sie eine Instanz von`PdfSaveOptions`Klasse und legen Sie die fest`UpdateLastPrintedProperty` Eigentum zu`true` um die Aktualisierung der Eigenschaft „Zuletzt gedruckt“ zu ermöglichen.
 
  Benutzen Sie die`Save` Methode der`Document`Klasse zum Speichern des Dokuments im PDF-Format durch Angabe von Speicheroptionen.
 

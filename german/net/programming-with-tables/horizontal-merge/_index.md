@@ -1,7 +1,7 @@
 ---
 title: Horizontale Zusammenführung
 linktitle: Horizontale Zusammenführung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Zellen in einer Word-Tabelle horizontal zusammenführen.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Zellen in ei
 2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
 ## Schritt 2: Erstellen des Dokuments und Initialisieren des Dokumentengenerators
-Um mit der Tabelle und den Zellen arbeiten zu können, müssen wir ein neues Dokument erstellen und den Dokumentgenerator initialisieren. Folge diesen Schritten:
+Um die Textverarbeitung mit der Tabelle und den Zellen zu starten, müssen wir ein neues Dokument erstellen und den Dokumentgenerator initialisieren. Folge diesen Schritten:
 
 ```csharp
 // Pfad zu Ihrem Dokumentenverzeichnis
@@ -49,7 +49,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Hier verwenden wir den Document Builder, um die Tabelle zu erstellen und die Eigenschaften für die horizontale Zusammenführung der Zellen festzulegen. Wir benutzen das`HorizontalMerge` Eigentum der`CellFormat` -Objekt, um den Typ der horizontalen Zusammenführung anzugeben, der auf jede Zelle angewendet werden soll. Benutzen`CellMerge.First` Wir verschmelzen die erste Zelle mit der nächsten, während wir sie verwenden`CellMerge.Previous` Wir verschmelzen die aktuelle Zelle mit der vorherigen Zelle.`CellMerge.None` gibt an, dass die Zelle nicht zusammengeführt werden soll.
+ Hier verwenden wir den Document Builder, um die Tabelle zu erstellen und die Eigenschaften für die horizontale Zusammenführung der Zellen festzulegen. Wir benutzen das`HorizontalMerge`Eigentum der`CellFormat` -Objekt, um den Typ der horizontalen Zusammenführung anzugeben, der auf jede Zelle angewendet werden soll. Benutzen`CellMerge.First` Wir verschmelzen die erste Zelle mit der nächsten, während wir sie verwenden`CellMerge.Previous` Wir verschmelzen die aktuelle Zelle mit der vorherigen Zelle.`CellMerge.None` gibt an, dass die Zelle nicht zusammengeführt werden soll.
 
 ## Schritt 4: Speichern des geänderten Dokuments
 Schließlich müssen wir das geänderte Dokument mit horizontal zusammengeführten Zellen speichern. Verwenden Sie den folgenden Code:
@@ -65,7 +65,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 ### Beispielquellcode für Horizontal Merge mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

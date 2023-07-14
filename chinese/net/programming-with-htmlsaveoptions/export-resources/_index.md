@@ -1,7 +1,7 @@
 ---
 title: 出口资源
 linktitle: 出口资源
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 将文档资源另存为 HTML 时导出文档资源的分步指南。
 type: docs
 weight: 10

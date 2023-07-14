@@ -1,7 +1,7 @@
 ---
 title: Insérer un document avec le constructeur
 linktitle: Insérer un document avec le constructeur
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer un document à la fin d'un autre document en utilisant Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -67,7 +67,7 @@ Ceci termine l'implémentation de l'insertion d'un document dans un autre docume
 ### Exemple de code source pour Insérer un document avec Builder en utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

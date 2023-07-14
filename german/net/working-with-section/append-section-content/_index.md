@@ -1,7 +1,7 @@
 ---
 title: Word-Inhalt des Abschnitts anhängen
 linktitle: Word-Inhalt des Abschnitts anhängen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Wortinhalte zu bestimmten Abschnitten eines Word-Dokuments hinzufügen.
 type: docs
 weight: 10

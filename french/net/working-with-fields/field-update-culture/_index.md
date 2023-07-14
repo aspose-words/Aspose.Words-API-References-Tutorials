@@ -1,7 +1,7 @@
 ---
 title: Culture de mise à jour sur le terrain
 linktitle: Culture de mise à jour sur le terrain
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à mettre à jour la culture de champ dans vos documents Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -61,7 +61,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Insérez le champ de l'heure.
 builder. InsertField(FieldType.FieldTime, true);
 
-//Configurez la culture de mise à jour des champs.
+// Configurez la culture de mise à jour des champs.
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 
@@ -93,8 +93,8 @@ R : Aspose.Words prend en charge différentes cultures pour la mise à jour des
 
 #### Q : Est-il possible de définir une culture spécifique pour un champ individuel plutôt que pour l'ensemble du document ?
 
-R : Oui, il est possible de définir une culture spécifique pour un champ individuel plutôt que pour l'ensemble du document. Dans Aspose.Words, chaque champ a une propriété Format qui peut être utilisée pour définir la culture de mise en forme spécifique à ce champ. Cela vous permet de contrôler la façon dont ce champ est affiché et mis à jour indépendamment des autres champs du document.
+: Oui, il est possible de définir une culture spécifique pour un champ individuel plutôt que pour l'ensemble du document. Dans Aspose.Words, chaque champ a une propriété Format qui peut être utilisée pour définir la culture de mise en forme spécifique à ce champ. Cela vous permet de contrôler la façon dont ce champ est affiché et mis à jour indépendamment des autres champs du document.
 
 #### Q : Comment puis-je vérifier la culture de mise à jour de champ actuellement définie dans un document Word ?
 
-: Pour vérifier la culture de mise à jour de champ actuellement définie dans un document Word, vous pouvez utiliser la propriété Document.UpdateFieldsCultureInfo. Cette propriété renvoie l'objet CultureInfo représentant la culture actuellement utilisée pour définir les mises à jour des champs.
+R : Pour vérifier la culture de mise à jour de champ actuellement définie dans un document Word, vous pouvez utiliser la propriété Document.UpdateFieldsCultureInfo. Cette propriété renvoie l'objet CultureInfo représentant la culture actuellement utilisée pour définir les mises à jour des champs.

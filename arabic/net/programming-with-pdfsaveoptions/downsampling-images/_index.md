@@ -1,7 +1,7 @@
 ---
 title: تقليل حجم مستند PDF مع اختزال الصور
 linktitle: تقليل حجم مستند PDF مع اختزال الصور
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية تقليل حجم مستند pdf باستخدام اختزال الصور عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: 显示语法和拼写错误
 linktitle: 显示语法和拼写错误
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 在文档中显示语法和拼写错误的分步指南。
 type: docs
 weight: 10

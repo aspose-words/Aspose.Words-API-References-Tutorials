@@ -1,7 +1,7 @@
 ---
 title: Zellabstand zulassen
 linktitle: Zellabstand zulassen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Zulassen von Zellabständen mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
 ## Schritt 4: Zellenabstand aktivieren
- Jetzt können wir den Zellenabstand aktivieren, indem wir festlegen`AllowCellSpacing`Eigenschaft der Tabelle zu`true`. Diese Eigenschaft bestimmt, ob die Tabelle einen Zellabstand haben kann.
+ Jetzt können wir den Zellenabstand aktivieren, indem wir festlegen`AllowCellSpacing` Eigenschaft der Tabelle zu`true`. Diese Eigenschaft bestimmt, ob die Tabelle einen Zellabstand haben kann.
 
 ```csharp
 table.AllowCellSpacing = true;
@@ -57,7 +57,7 @@ Glückwunsch! Sie haben mit Aspose.Words für .NET erfolgreich Zellabstände in 
 ### Beispielquellcode für „Zellenabstand zulassen“ mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

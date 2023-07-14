@@ -1,13 +1,13 @@
 ---
-title: 使用修订版
-linktitle: 使用修订版
-second_title: Aspose.Words for .NET API 参考
+title: 带修订的文字处理
+linktitle: 带修订的文字处理
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的修订。包含用于管理和查看修订的示例代码的分步教程。
 type: docs
 weight: 1130
 url: /zh/net/working-with-revisions/
 ---
-使用修订版教程将引导您了解在 Aspose.Words for .NET 中使用修订版的功能。这些教程向您展示如何在 Word 文档中添加、接受、拒绝和查看修订。您还将了解如何浏览修订版本、检索有关每个修订版本的详细信息以及执行高级操作（例如合并修订版本）。
+带修订版的文字处理教程将引导您了解 Aspose.Words for .NET 中带修订版的文字处理的功能。这些教程向您展示如何在 Word 文档中添加、接受、拒绝和查看修订。您还将了解如何浏览修订版本、检索有关每个修订版本的详细信息以及执行高级操作（例如合并修订版本）。
 
 通过学习这些教程，您将了解如何使用 Aspose.Words for .NET 有效管理 Word 文档中的修订。您将学习如何控制文档内容的更改、与其他用户协作以及维护所做更改的历史记录。这些教程提供了详细的代码示例和清晰的解释，以帮助您掌握这些功能。
 

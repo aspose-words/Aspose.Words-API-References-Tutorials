@@ -1,7 +1,7 @@
 ---
 title: 评论已解决并回复
 linktitle: 评论已解决并回复
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 解析 Word 文档中的注释及其回复。
 type: docs
 weight: 10

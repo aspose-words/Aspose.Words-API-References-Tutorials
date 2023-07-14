@@ -1,7 +1,7 @@
 ---
 title: Détecter la signature numérique sur un document Word
 linktitle: Détecter la signature numérique sur un document Word
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour détecter la signature numérique sur un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signe
 
 ## Étape 3 : Vérifiez les signatures numériques
 
- Nous vérifions si le document contient des signatures numériques en utilisant le`HasDigitalSignature` propriété de la`FileFormatInfo` objet. Si des signatures numériques sont détectées, nous affichons un message indiquant que les signatures seront perdues si le document est ouvert/enregistré avec Aspose.Words.
+ Nous vérifions si le document contient des signatures numériques en utilisant le`HasDigitalSignature`propriété de la`FileFormatInfo` objet. Si des signatures numériques sont détectées, nous affichons un message indiquant que les signatures seront perdues si le document est ouvert/enregistré avec Aspose.Words.
 
 ```csharp
 if (info.HasDigitalSignature)
@@ -68,7 +68,7 @@ Ce tutoriel vous a fourni un guide étape par étape sur la façon de détecter 
 
 #### Comment détecter la présence d'une signature numérique sur un document Word en utilisant Aspose.Words pour .NET ?
 
- Pour détecter la présence d'une signature numérique sur un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez suivre les étapes fournies dans le didacticiel. En utilisant le`DetectFileFormat` méthode de la`FileFormatUtil` class vous permettra de détecter les informations de format de fichier. Ensuite, vous pouvez vérifier le`HasDigitalSignature` propriété de la`FileFormatInfo`objet pour déterminer si le document contient une signature numérique. Si une signature numérique est détectée, vous pouvez afficher un message indiquant que les signatures seront perdues si le document est ouvert/enregistré avec Aspose.Words.
+ Pour détecter la présence d'une signature numérique sur un document Word à l'aide d'Aspose.Words pour .NET, vous pouvez suivre les étapes fournies dans le didacticiel. En utilisant le`DetectFileFormat` méthode de la`FileFormatUtil` class vous permettra de détecter les informations de format de fichier. Ensuite, vous pouvez vérifier le`HasDigitalSignature`propriété de la`FileFormatInfo`objet pour déterminer si le document contient une signature numérique. Si une signature numérique est détectée, vous pouvez afficher un message indiquant que les signatures seront perdues si le document est ouvert/enregistré avec Aspose.Words.
 
 #### Comment spécifier le répertoire contenant les documents dans lesquels rechercher la signature numérique ?
 

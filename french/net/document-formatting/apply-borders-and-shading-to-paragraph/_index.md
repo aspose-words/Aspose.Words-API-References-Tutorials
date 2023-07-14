@@ -1,7 +1,7 @@
 ---
 title: Appliquer les bordures et l'ombrage au paragraphe
 linktitle: Appliquer les bordures et l'ombrage au paragraphe
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à appliquer des bordures et des ombres à un paragraphe avec Aspose.Words pour .NET.
 type: docs
 weight: 10

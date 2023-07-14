@@ -1,14 +1,14 @@
 ---
-title: Lesezeichendaten aktualisieren
+title: Lesezeichendaten im Word-Dokument aktualisieren
 linktitle: Lesezeichendaten aktualisieren
-second_title: Aspose.Words für .NET API-Referenz
-description: Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Lesezeichendatenaktualisierungsfunktion von Aspose.Words für .NET.
+second_title: Aspose.Words-Dokumentverarbeitungs-API
+description: Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Aspose.Words-Lesezeichendatenaktualisierung in der Word-Dokumentfunktion für .NET.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-In diesem Tutorial führen wir Sie Schritt für Schritt durch, um die Funktion „Lesezeichendaten aktualisieren“ von Aspose.Words für .NET zu verstehen und zu implementieren. Mit dieser Funktion können Sie den Inhalt und die Eigenschaften von Lesezeichen in einem Word-Dokument mithilfe von C#-Quellcode aktualisieren.
+In diesem Tutorial gehen wir eine Schritt-für-Schritt-Anleitung durch, um die Funktion „Lesezeichendaten in Word-Dokument aktualisieren“ von Aspose.Words für .NET zu verstehen und zu implementieren. Mit dieser Funktion können Sie den Inhalt und die Eigenschaften von Lesezeichen in einem Word-Dokument mithilfe von C#-Quellcode aktualisieren.
 
 ## Anforderungen
 
@@ -87,3 +87,21 @@ Dieser Code speichert das geänderte Dokument unter dem Namen „UpdatedDocument
 ## Abschluss
 
 Glückwunsch! Sie haben erfolgreich gelernt, wie Sie Lesezeichendaten mit Aspose.Words für .NET aktualisieren. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, sollten Sie nun in der Lage sein, diese Funktion in Ihre C#-Anwendungen zu integrieren und Lesezeichen in Word-Dokumenten programmgesteuert zu bearbeiten.
+
+### FAQs zum Aktualisieren von Lesezeichendaten in Word-Dokumenten
+
+#### F: Funktioniert die Funktion zum Aktualisieren von Lesezeichendaten nur mit Lesezeichen in Word-Dokumenten?
+
+A: Ja, die Funktion „Lesezeichendaten aktualisieren“ wurde speziell für Lesezeichen in Word-Dokumenten entwickelt. Damit können Sie den Inhalt und die Eigenschaften von Lesezeichen in einem Word-Dokument aktualisieren.
+
+#### F: Kann ich außer Text auch andere Lesezeicheneigenschaften aktualisieren?
+
+A: Ja, zusätzlich zum Text können Sie auch andere Lesezeicheneigenschaften aktualisieren, z. B. den Lesezeichennamen, den Lesezeichenbereich usw. Verwenden Sie die entsprechenden Eigenschaften des`Bookmark` Objekt, um die gewünschten Eigenschaften zu aktualisieren.
+
+#### F: Kann ich mehrere Lesezeichen im selben Dokument aktualisieren?
+
+A: Ja, Sie können mehrere Lesezeichen im selben Dokument aktualisieren, indem Sie die Zugriffs- und Aktualisierungsschritte für jedes Lesezeichen wiederholen. Stellen Sie sicher, dass Sie für jedes Lesezeichen, das Sie aktualisieren möchten, eindeutige Lesezeichennamen verwenden.
+
+#### F: Verändert die Funktion „Lesezeichendaten aktualisieren“ das Originaldokument?
+
+A: Ja, die Funktion zur Aktualisierung der Lesezeichendaten ändert das Originaldokument, indem sie die Eigenschaften und den Inhalt der Lesezeichen aktualisiert. Speichern Sie unbedingt eine Kopie des Originaldokuments, bevor Sie diese Funktion anwenden.

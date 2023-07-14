@@ -1,13 +1,13 @@
 ---
-title: 使用 Txtloadoptions 进行编程
-linktitle: 使用 Txtloadoptions 进行编程
-second_title: Aspose.Words for .NET API 参考
+title: 使用 Txtloadoptions 进行文字处理
+linktitle: 使用 Txtloadoptions 进行文字处理
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 中的文本文件加载选项进行编程。通过 C# 中的分步教程和示例代码，了解如何指定编码、忽略未知字符、处理换行符等。
 type: docs
 weight: 1640
 url: /zh/net/programming-with-txtloadoptions/
 ---
-Aspose.Words for .NET 教程将引导您了解使用 Aspose.Words（一个用于处理 Word 文档的强大库）进行编程的不同功能和方面。 “使用 TxtLoadOptions 进行编程”教程向您展示了如何在 Aspose.Words 中加载和操作文本文件。您将学习如何指定加载选项、从文本文件中提取文本并将其插入到 Word 文档中以及其他文字处理操作。
+Aspose.Words for .NET 教程将引导您了解使用 Aspose.Words（一个用于处理 Word 文档的强大库）进行文字处理的不同功能和方面。 “使用 TxtLoadOptions 进行文字处理”教程向您展示了如何在 Aspose.Words 中加载和操作文本文件。您将学习如何指定加载选项、从文本文件中提取文本并将其插入到 Word 文档中以及其他文字处理操作。
 
 这些教程提供分步说明、示例代码和详细说明，帮助您了解和在 .NET 项目中使用 Aspose.Words 功能。无论您需要创建、编辑、转换还是操作 Word 文档，这些教程都为您提供成功完成任务所需的知识。探索不同的功能并了解如何充分利用 Aspose.Words 来满足 .NET 应用程序中的 Word 文档处理需求。
 

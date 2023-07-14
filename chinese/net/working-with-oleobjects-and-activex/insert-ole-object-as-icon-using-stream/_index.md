@@ -1,7 +1,7 @@
 ---
 title: 使用流将 Ole 对象插入为图标
 linktitle: 使用流将 Ole 对象插入为图标
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 的流将 OLE 对象作为图标插入。
 type: docs
 weight: 10

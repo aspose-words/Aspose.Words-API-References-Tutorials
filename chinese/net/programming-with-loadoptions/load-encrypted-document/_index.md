@@ -1,14 +1,14 @@
 ---
 title: 加载加密文档
 linktitle: 加载加密文档
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 加载和保存加密文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-loadoptions/load-encrypted-document/
 ---
 
-在 C# 应用程序中处理加密文档时，能够通过提供正确的密码正确加载它们非常重要。借助适用于 .NET 的 Aspose.Words 库，您可以使用适当的加载选项轻松加载加密文档。在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 的 C# 源代码通过 LoadOptions 加载选项加载加密文档。
+在 C# 应用程序中对加密文档进行文字处理时，能够通过提供正确的密码正确加载它们非常重要。借助适用于 .NET 的 Aspose.Words 库，您可以使用适当的加载选项轻松加载加密文档。在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 的 C# 源代码通过 LoadOptions 加载选项加载加密文档。
 
 ## 了解 Aspose.Words 库
 

@@ -1,7 +1,7 @@
 ---
 title: أدخل ASKField بدون Document Builder
 linktitle: أدخل ASKField بدون Document Builder
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إدراج حقل ASK في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -35,7 +35,7 @@ Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
 ```
 
-ثم نقوم بتكوين الخصائص المختلفة لحقل ASK من خلال تحديد القيم المطلوبة.
+ثم نقوم بتكوين الخصائص المختلفة لحقل ASK عن طريق تحديد القيم المطلوبة.
 
 ```csharp
 field.BookmarkName = "Test 1";
@@ -60,7 +60,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
-// أدخل حقل ASK.
+//أدخل حقل ASK.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
 
 field.BookmarkName = "Test 1";

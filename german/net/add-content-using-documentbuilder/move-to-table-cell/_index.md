@@ -1,7 +1,7 @@
 ---
 title: In Tabellenzelle verschieben
 linktitle: In Tabellenzelle verschieben
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zur Verwendung von „In Tabellenzelle verschieben“ in Aspose.Words für .NET
 type: docs
 weight: 10

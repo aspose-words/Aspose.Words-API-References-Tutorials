@@ -1,7 +1,7 @@
 ---
 title: Entfernen Sie die Kopf- und Fußzeilen der Quelle
 linktitle: Entfernen Sie die Kopf- und Fußzeilen der Quelle
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Kopf- und Fußzeilen entfernen, während Sie Word-Dokumente mit Aspose.Words für .NET verbinden und anhängen.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 ## Schritt 1: Initialisieren Sie die Dokumentverzeichnisse
 
- Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir` Variable für den Pfad, in dem sich Ihre Dokumente befinden.
+ Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert von`dataDir`Variable für den Pfad, in dem sich Ihre Dokumente befinden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -47,7 +47,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## Schritt 4: Deaktivieren Sie die Einstellung „LinkToPrevious“ für HeadersFooters
 
-Auch nach dem Löschen der Kopf- und Fußzeilen aus dem Quelldokument besteht die Möglichkeit, dass die Einstellung „LinkToPrevious“ für`HeadersFooters` kann noch eingestellt werden. Um dieses Verhalten zu vermeiden, müssen Sie es explizit auf festlegen`false` für den ersten Abschnitt`HeadersFooters` Eigentum.
+ Auch nach dem Löschen der Kopf- und Fußzeilen aus dem Quelldokument besteht die Möglichkeit, dass die Einstellung „LinkToPrevious“ für`HeadersFooters` kann noch eingestellt werden. Um dieses Verhalten zu vermeiden, müssen Sie es explizit auf festlegen`false` für den ersten Abschnitt`HeadersFooters` Eigentum.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -75,7 +75,7 @@ Hier ist der vollständige Quellcode für die Funktion „Quellkopfzeilen und Fu
 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

@@ -1,7 +1,7 @@
 ---
 title: كود مسيّج
 linktitle: كود مسيّج
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية استخدام ميزة الشفرة المسيجة مع دليل Aspose.Words for .NET خطوة بخطوة.
 type: docs
 weight: 10

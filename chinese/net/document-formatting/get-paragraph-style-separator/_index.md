@@ -1,7 +1,7 @@
 ---
 title: 获取段落样式分隔符
 linktitle: 获取段落样式分隔符
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 获取段落样式分隔符。
 type: docs
 weight: 10

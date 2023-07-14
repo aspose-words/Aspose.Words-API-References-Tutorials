@@ -1,7 +1,7 @@
 ---
 title: Gruppo di interruzioni di riga di tipografia asiatica
 linktitle: Gruppo di interruzioni di riga di tipografia asiatica
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare il gruppo di interruzioni di riga di tipografia asiatica con Aspose.Words per .NET.
 type: docs
 weight: 10

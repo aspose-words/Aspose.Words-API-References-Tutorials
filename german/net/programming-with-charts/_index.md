@@ -1,7 +1,7 @@
 ---
-title: Programmieren mit Diagrammen
-linktitle: Programmieren mit Diagrammen
-second_title: Aspose.Words für .NET API-Referenz
+title: Verwenden der Word-Chart-API
+linktitle: Verwenden von Diagrammen
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Grafiken in Word-Dokumenten erstellen, anpassen und bearbeiten. Die Tutorials bieten Schritt-für-Schritt-Erklärungen und C#-Quellcode, um Sie beim Hinzufügen von Diagrammen zu unterstützen.
 type: docs
 weight: 1540

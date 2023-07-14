@@ -1,7 +1,7 @@
 ---
 title: Joindre le document
 linktitle: Joindre le document
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à ajouter le contenu d'un document à un autre en utilisant Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ Ceci termine l'implémentation de l'ajout d'un document à l'aide de Aspose.Word
 ### Exemple de code source pour Append Document utilisant Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -63,7 +63,7 @@ Ceci termine l'implémentation de l'ajout d'un document à l'aide de Aspose.Word
 	// Les nœuds de section sont des enfants immédiats du nœud Document, nous pouvons donc simplement énumérer le document.
 	foreach (Section srcSection in srcDoc)
 	{
-		//Parce que nous copions une section d'un document à un autre,
+		// Parce que nous copions une section d'un document à un autre,
 		// il est nécessaire d'importer le nœud Section dans le document de destination.
 		// Cela ajuste toutes les références spécifiques au document aux styles, listes, etc.
 		//

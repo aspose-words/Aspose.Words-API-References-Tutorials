@@ -1,7 +1,7 @@
 ---
 title: Résultats d'affichage des champs
 linktitle: Résultats d'affichage des champs
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour afficher les résultats de champ dans vos documents Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -40,7 +40,7 @@ Cette étape est importante car elle garantit que les résultats des champs s'af
 
 ## Étape 4 : Affichage des résultats de champ
 
- Nous utilisons un`foreach`boucle pour parcourir tous les champs du document et afficher leurs résultats.
+ Nous utilisons un`foreach` boucle pour parcourir tous les champs du document et afficher leurs résultats.
 
 ```csharp
 foreach(Field field in document.Range.Fields)

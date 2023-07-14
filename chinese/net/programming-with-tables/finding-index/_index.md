@@ -1,7 +1,7 @@
 ---
 title: 查找索引
 linktitle: 查找索引
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中查找表、行和单元格索引。
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /zh/net/programming-with-tables/finding-index/
 2. 添加对 Aspose.Words for .NET 库的引用。
 
 ## 第 2 步：加载文档并访问表
-要开始使用该表，我们需要加载包含该表的文档并访问它。按着这些次序：
+要对表启动文字处理，我们需要加载包含该表的文档并访问它。按着这些次序：
 
 ```csharp
 //文档目录的路径

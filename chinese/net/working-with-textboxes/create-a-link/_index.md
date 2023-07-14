@@ -1,7 +1,7 @@
 ---
 title: 在 Word 中创建链接
 linktitle: 在 Word 中创建链接
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中的文本框之间创建 Word 链接。
 type: docs
 weight: 10

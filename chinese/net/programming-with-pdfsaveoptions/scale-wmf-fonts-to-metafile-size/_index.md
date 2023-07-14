@@ -1,7 +1,7 @@
 ---
 title: 通过将 Wmf 字体缩放到图元文件大小来减小 PDF 大小
 linktitle: 通过将 Wmf 字体缩放到图元文件大小来减小 PDF 大小
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 转换为 PDF 时，通过将 wmf 字体缩放为图元文件大小来减小 pdf 大小的分步指南。
 type: docs
 weight: 10

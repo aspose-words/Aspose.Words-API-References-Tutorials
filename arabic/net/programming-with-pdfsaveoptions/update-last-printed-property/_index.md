@@ -1,7 +1,7 @@
 ---
 title: تحديث خاصية آخر مطبوعة في مستند PDF
 linktitle: تحديث خاصية آخر مطبوعة في مستند PDF
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة لتحديث خاصية "آخر طباعة" عند التحويل إلى PDF باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## الخطوة 3: تكوين خيارات حفظ كملف PDF مع خاصية "آخر طباعة" محدثة
 
- لتمكين تحديث خاصية "Last Printed" عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن وتعيين`UpdateLastPrintedProperty` الملكية ل`true`.
+ لتمكين تحديث خاصية "Last Printed" عند التحويل إلى PDF ، نحتاج إلى تكوين ملف`PdfSaveOptions` كائن وتعيين`UpdateLastPrintedProperty` ملكية ل`true`.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOpti
 
  قم بإنشاء مثيل لـ`Document` فئة تحدد المسار إلى مستند Word.
 
- قم بإنشاء مثيل لـ`PdfSaveOptions` فئة وضبط`UpdateLastPrintedProperty` الملكية ل`true` لتمكين تحديث خاصية "آخر طباعة".
+ قم بإنشاء مثيل لـ`PdfSaveOptions`فئة وضبط`UpdateLastPrintedProperty` ملكية ل`true` لتمكين تحديث خاصية "آخر مطبوعة".
 
  استخدم ال`Save` طريقة`Document`class لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ.
 

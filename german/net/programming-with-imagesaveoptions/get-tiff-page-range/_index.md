@@ -1,7 +1,7 @@
 ---
 title: Holen Sie sich den TIFF-Seitenbereich
 linktitle: Holen Sie sich den TIFF-Seitenbereich
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Reihe von TIFF-Seiten extrahieren. Vollständiges Tutorial für benutzerdefinierte TIFF-Dateien.
 type: docs
 weight: 10
@@ -60,7 +60,7 @@ Jetzt können Sie den Quellcode ausführen, um einen bestimmten Seitenbereich au
 
 ```csharp 
 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

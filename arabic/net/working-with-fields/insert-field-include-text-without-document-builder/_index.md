@@ -1,7 +1,7 @@
 ---
 title: إدراج حقل تضمين نص بدون منشئ المستند
 linktitle: قم بإدراج FieldIncludeText بدون Document Builder
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية إدراج حقل FieldIncludeText في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -85,7 +85,7 @@ doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 
 #### س: كيف يمكنني تحديد الملف المصدر لحقل تضمين النص في Aspose.Words for .NET؟
 
- ج: لتحديد الملف المصدر لحقل تضمين النص في Aspose.Words for .NET ، يمكنك استخدام`FieldIncludeText.SourceFullName` لتعيين المسار الكامل للملف المصدر. تأكد من إمكانية الوصول إلى الملف المصدر وأنه يحتوي على المحتوى الذي تريد تضمينه في حقل تضمين النص.
+ ج: لتحديد الملف المصدر لحقل تضمين النص في Aspose.Words for .NET ، يمكنك استخدام`FieldIncludeText.SourceFullName`لتعيين المسار الكامل للملف المصدر. تأكد من إمكانية الوصول إلى الملف المصدر وأنه يحتوي على المحتوى الذي تريد تضمينه في حقل تضمين النص.
 
 #### س: هل يمكنني تضمين نص من وحدة ماكرو في حقل تضمين النص باستخدام Aspose.Words for .NET؟
 

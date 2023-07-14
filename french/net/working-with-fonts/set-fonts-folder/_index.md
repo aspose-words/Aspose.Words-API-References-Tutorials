@@ -1,7 +1,7 @@
 ---
 title: Définir le dossier des polices
 linktitle: Définir le dossier des polices
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à définir le répertoire des polices dans Aspose.Words pour .NET et assurez-vous de la disponibilité des polices utilisées dans vos documents.
 type: docs
 weight: 10
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```csharp
 
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

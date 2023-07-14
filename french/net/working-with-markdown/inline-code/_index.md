@@ -1,7 +1,7 @@
 ---
 title: Code en ligne
 linktitle: Code en ligne
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à coder en ligne avec le guide étape par étape Aspose.Words pour .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: 枚举子节点
 linktitle: 枚举子节点
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 枚举段落中的子节点。
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Schwebende Tischposition
 linktitle: Schwebende Tischposition
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle schwebend in einem Word-Dokument positionieren.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle
 2. Fügen Sie einen Verweis auf die Aspose.Words für .NET-Bibliothek hinzu.
 
 ## Schritt 2: Laden des Dokuments und Zugriff auf die Tabelle
-Um mit der Tabelle zu arbeiten, müssen wir das Dokument laden, das sie enthält, und darauf zugreifen. Folge diesen Schritten:
+Um die Textverarbeitung mit der Tabelle zu starten, müssen wir das Dokument, das sie enthält, laden und darauf zugreifen. Folge diesen Schritten:
 
 ```csharp
 // Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Laden Sie das Dokument
+// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 
 // Zugriff auf das Array
@@ -54,7 +54,7 @@ Stellen Sie sicher, dass Sie den richtigen Pfad und Dateinamen für das Ausgabed
 ### Beispielquellcode für Floating Table Position mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");

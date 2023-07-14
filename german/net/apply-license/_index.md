@@ -1,7 +1,7 @@
 ---
 title: Lizenz anwenden
 linktitle: Lizenz anwenden
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erhalten Sie Schritt-für-Schritt-Anleitungen zum Anwenden einer Aspose.Words-Lizenz in Ihren .NET-Projekten. Befolgen Sie die Schritte, um die volle Funktionalität der Aspose.Words-Bibliothek zu aktivieren.
 type: docs
 weight: 10

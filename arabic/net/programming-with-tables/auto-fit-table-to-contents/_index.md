@@ -1,7 +1,7 @@
 ---
 title: احتواء تلقائي للجدول مع المحتويات
 linktitle: احتواء تلقائي للجدول مع المحتويات
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية ملاءمة الجدول تلقائيًا لمحتوياته في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /ar/net/programming-with-tables/auto-fit-table-to-contents/
 2. أضف مرجعًا إلى مكتبة Aspose.Words for .NET.
 
 ## الخطوة 2: قم بتحميل مستند Word
-لبدء العمل مع الجدول ، نحتاج إلى تحميل مستند Word الذي يحتوي على الجدول. اتبع هذه الخطوات:
+لبدء معالجة الكلمات بالجدول ، نحتاج إلى تحميل مستند Word الذي يحتوي على الجدول. اتبع هذه الخطوات:
 
 ```csharp
 // المسار إلى دليل المستند الخاص بك
@@ -53,7 +53,7 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitTableToContents.docx");
 ### عينة من التعليمات البرمجية المصدر لـ Auto Fit Table To Contents باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

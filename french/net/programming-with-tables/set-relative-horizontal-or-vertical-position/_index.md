@@ -1,7 +1,7 @@
 ---
 title: Définir la position horizontale ou verticale relative
 linktitle: Définir la position horizontale ou verticale relative
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à définir la position horizontale ou verticale relative d'un tableau dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Dans ce didacticiel, nous allons apprendre à définir la position horizontale o
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
 ## Étape 2 : Chargement du document
-Pour commencer à travailler avec le document, procédez comme suit :
+Pour démarrer le traitement de texte avec le document, procédez comme suit :
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
@@ -55,7 +55,7 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ### Exemple de code source pour définir la position horizontale ou verticale relative à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");

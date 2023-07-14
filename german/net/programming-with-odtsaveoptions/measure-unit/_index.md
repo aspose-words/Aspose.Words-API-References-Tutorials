@@ -1,7 +1,7 @@
 ---
 title: Maßeinheit
 linktitle: Maßeinheit
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die Maßeinheit angeben, wenn Sie ein Word-Dokument mit Aspose.Words für .NET in ODT konvertieren.
 type: docs
 weight: 10

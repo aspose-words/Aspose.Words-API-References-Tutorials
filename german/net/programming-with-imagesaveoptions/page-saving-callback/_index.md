@@ -1,7 +1,7 @@
 ---
 title: Rückruf zum Speichern der Seite
 linktitle: Rückruf zum Speichern der Seite
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie das Speichern von Dokumentseiten in Bildern mit Aspose.Words für .NET anpassen.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
 }
 ```
 
- In diesem Schritt implementieren wir die`HandlePageSavingCallback` Klasse, die die implementiert`IPageSavingCallback` Schnittstelle. Sie können diese Klasse anpassen, indem Sie Ihre spezifischen Aktionen hinzufügen`PageSaving` Methode. Sie können über das auf Seiteninformationen zugreifen`args.PageIndex` Eigentum der`PageSavingArgs` Objekt, das als Argument übergeben wird.
+ In diesem Schritt implementieren wir die`HandlePageSavingCallback` Klasse, die die implementiert`IPageSavingCallback` Schnittstelle. Sie können diese Klasse anpassen, indem Sie Ihre spezifischen Aktionen hinzufügen`PageSaving` Methode. Sie können über das auf Seiteninformationen zugreifen`args.PageIndex`Eigentum der`PageSavingArgs` Objekt, das als Argument übergeben wird.
 
 ## Schritt 5: Seiten als Bilder speichern
 
@@ -67,7 +67,7 @@ Jetzt können Sie den Quellcode ausführen, um beim Speichern jeder Seite des Do
 
 
 ```csharp 
-// Pfad zu Ihrem Dokumentenverzeichnis
+//Pfad zu Ihrem Dokumentenverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 

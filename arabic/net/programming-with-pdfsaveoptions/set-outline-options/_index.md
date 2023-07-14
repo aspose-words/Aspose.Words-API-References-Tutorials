@@ -1,7 +1,7 @@
 ---
 title: قم بتعيين خيارات المخطط التفصيلي في مستند PDF
 linktitle: قم بتعيين خيارات المخطط التفصيلي في مستند PDF
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل تفصيلي خطوة بخطوة لتعيين خيارات المخطط التفصيلي في مستند PDF باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10

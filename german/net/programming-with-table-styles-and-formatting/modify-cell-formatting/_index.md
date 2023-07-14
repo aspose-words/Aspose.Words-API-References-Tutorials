@@ -1,7 +1,7 @@
 ---
 title: Ändern Sie die Zellformatierung
 linktitle: Ändern Sie die Zellformatierung
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Schritt-für-Schritt-Anleitung zum Ändern der Formatierung einer Zelle in einer Tabelle mit Aspose.Words für .NET.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 ### Beispielquellcode zum Ändern der Zellformatierung mit Aspose.Words für .NET 
 
 ```csharp
-	// Pfad zu Ihrem Dokumentenverzeichnis
+	//Pfad zu Ihrem Dokumentenverzeichnis
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

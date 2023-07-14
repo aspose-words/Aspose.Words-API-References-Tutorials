@@ -1,17 +1,17 @@
 ---
-title: Programmation avec styles de tableau et mise en forme
-linktitle: Programmation avec styles de tableau et mise en forme
-second_title: Référence de l'API Aspose.Words pour .NET
+title: Traitement de texte avec styles de tableau et mise en forme
+linktitle: Traitement de texte avec styles de tableau et mise en forme
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à programmer les styles de tableau et la mise en forme dans Aspose.Words pour .NET. Apprenez à appliquer des styles prédéfinis, à personnaliser la mise en forme des cellules, les bordures et bien plus encore avec des didacticiels pas à pas et des exemples de code en C#.
 type: docs
 weight: 1580
 url: /fr/net/programming-with-table-styles-and-formatting/
 ---
-Les didacticiels Aspose.Words pour .NET sur la programmation avec les styles et le formatage des tableaux constituent une ressource précieuse pour les développeurs qui souhaitent manipuler et formater efficacement les tableaux dans leurs documents Word. Les didacticiels couvrent les concepts fondamentaux des styles de tableau, tels que la création, la modification et la suppression de styles de tableau. Ils expliquent également comment appliquer des styles prédéfinis et personnalisés aux tableaux, ainsi que comment formater les cellules, les bordures et d'autres éléments de tableau.
+Les didacticiels Aspose.Words pour .NET sur le traitement des mots avec les styles et le formatage des tableaux constituent une ressource précieuse pour les développeurs qui souhaitent manipuler et formater efficacement les tableaux dans leurs documents Word. Les didacticiels couvrent les concepts fondamentaux des styles de tableau, tels que la création, la modification et la suppression de styles de tableau. Ils expliquent également comment appliquer des styles prédéfinis et personnalisés aux tableaux, ainsi que comment formater les cellules, les bordures et d'autres éléments de tableau.
 
 Ces didacticiels étape par étape fournissent des exemples de code clairs et concis, ainsi que des explications détaillées, qui guident les développeurs à chaque étape du processus de manipulation et de formatage des tables. Les didacticiels couvrent également des sujets avancés, tels que l'ajout et la suppression de lignes et de colonnes, la fusion et le fractionnement de cellules et l'ajout de styles conditionnels aux tableaux.
 
-Ces didacticiels aideront les développeurs à maîtriser les techniques essentielles pour travailler avec des tableaux dans Aspose.Words pour .NET. Que vous soyez un développeur débutant ou expérimenté, ces ressources vous aideront à améliorer vos compétences en matière de manipulation et de mise en forme de tableaux, vous permettant de créer des documents Word professionnels et esthétiques.
+Ces didacticiels aideront les développeurs à maîtriser les techniques essentielles du traitement de mots avec des tableaux dans Aspose.Words pour .NET. Que vous soyez un développeur débutant ou expérimenté, ces ressources vous aideront à améliorer vos compétences en matière de manipulation et de mise en forme de tableaux, vous permettant de créer des documents Word professionnels et esthétiques.
 
  ## Tutoriels
 | Titre | Description |

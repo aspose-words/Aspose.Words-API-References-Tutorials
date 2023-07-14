@@ -1,8 +1,8 @@
 ---
-title: Dokumente zusammenführen
+title: Word-Dokumente zusammenführen
 linktitle: Dokumente zusammenführen
-second_title: Aspose.Words für .NET API-Referenz
-description: Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Funktion „Dokumente zusammenführen“ von Aspose.Words für .NET
+second_title: Aspose.Words-Dokumentverarbeitungs-API
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mehrere Word-Dokumente zusammenführen. Diese leistungsstarke API vereinfacht das Zusammenführen von Dokumenten und macht es effizient und unkompliziert.
 type: docs
 weight: 10
 url: /de/net/split-document/merge-documents/
@@ -83,3 +83,29 @@ foreach (FileSystemInfo documentPath in documentPaths)
 
 mergedDoc.Save(dataDir + "SplitDocument.MergeDocuments.docx");
 ```
+
+## Abschluss
+
+Glückwunsch! Sie haben gelernt, wie Sie mehrere Word-Dokumente mit der Funktion „Dokumente zusammenführen“ von Aspose.Words für .NET zusammenführen. Indem Sie dem bereitgestellten Quellcode folgen, können Sie separate Dokumente zu einem einzigen zusammengeführten Dokument kombinieren und dabei die Formatierung jedes Quelldokuments beibehalten.
+
+Das Zusammenführen von Dokumenten kann nützlich sein, wenn Sie Informationen aus mehreren Quellen konsolidieren oder aus einzelnen Teilen ein einheitliches Dokument erstellen möchten. Aspose.Words für .NET bietet eine leistungsstarke API, die den Prozess des Zusammenführens von Dokumenten vereinfacht und ihn effizient und unkompliziert macht.
+
+Entdecken Sie gerne weitere Funktionen von Aspose.Words für .NET, um Ihre Dokumentverarbeitungsmöglichkeiten zu verbessern und Ihren Arbeitsablauf zu optimieren.
+
+### FAQs
+
+#### Wie kann ich Dokumente mit unterschiedlicher Formatierung zusammenführen?
+
+ Beim Zusammenführen von Dokumenten bietet Aspose.Words für .NET die Option, die Formatierung jedes Quelldokuments beizubehalten. Durch die Verwendung der`ImportFormatMode.KeepSourceFormatting` Option behält das zusammengeführte Dokument die Formatierung der Originaldokumente bei. Wenn Sie im gesamten zusammengeführten Dokument eine einheitliche Formatierung anwenden möchten, können Sie die Formatierung nach dem Zusammenführen der Dokumente mithilfe der Aspose.Words-API ändern.
+
+#### Kann ich Dokumente in verschiedenen Formaten zusammenführen?
+
+Ja, Aspose.Words für .NET unterstützt das Zusammenführen von Dokumenten in verschiedenen Formaten, einschließlich DOCX, DOC, RTF und mehr. Sie können Dokumente unterschiedlicher Formate in die Aspose.Words-API laden und sie unabhängig von ihren Originalformaten zu einem einzigen Dokument zusammenführen.
+
+#### Kann ich Dokumente mit komplexen Strukturen wie Tabellen und Bildern zusammenführen?
+
+Absolut! Aspose.Words für .NET ist in der Lage, Dokumente mit komplexen Strukturen, einschließlich Tabellen, Bildern, Kopf- und Fußzeilen und mehr, zusammenzuführen. Die API übernimmt den Zusammenführungsprozess und bewahrt gleichzeitig die Integrität und das Layout des Inhalts in jedem Dokument.
+
+#### Ist es möglich, Dokumente mit unterschiedlichen Seitenausrichtungen oder -größen zusammenzuführen?
+
+Ja, Aspose.Words für .NET verarbeitet während des Zusammenführungsprozesses Dokumente mit unterschiedlichen Seitenausrichtungen oder -größen. Das resultierende zusammengeführte Dokument berücksichtigt die unterschiedlichen Seitenausrichtungen und -größen der Quelldokumente.

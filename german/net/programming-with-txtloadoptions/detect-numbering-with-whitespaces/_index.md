@@ -1,7 +1,7 @@
 ---
 title: Nummerierung mit Leerzeichen erkennen
 linktitle: Nummerierung mit Leerzeichen erkennen
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Listennummern mit Leerzeichen in Aspose.Words für .NET erkennen. Verbessern Sie mühelos die Struktur Ihrer Dokumente.
 type: docs
 weight: 10

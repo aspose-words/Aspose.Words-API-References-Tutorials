@@ -1,7 +1,7 @@
 ---
 title: إنشاء نمط الجدول
 linktitle: إنشاء نمط الجدول
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لإنشاء نمط جدول مخصص باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.CreateTableStyle.docx");
 ### نموذج التعليمات البرمجية المصدر لـ Create Table Style باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

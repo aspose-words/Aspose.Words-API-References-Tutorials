@@ -1,14 +1,14 @@
 ---
 title: Déplacer vers le document Début Fin
 linktitle: Déplacer vers le document Début Fin
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à utiliser Aspose.Words pour .NET pour passer au début et à la fin du document dans les documents Word avec ce guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 
-Dans cet exemple, nous allons explorer la fonctionnalité Déplacer vers le début/la fin du document d'Aspose.Words pour .NET. Aspose.Words est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programme. La fonctionnalité Déplacer vers le début/la fin du document nous permet de naviguer vers le début ou la fin d'un document à l'aide de la classe DocumentBuilder.
+Dans cet exemple, nous allons explorer la fonctionnalité Déplacer vers le début/la fin du document d'Aspose.Words pour .NET. Aspose.Words est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier et convertir des documents Word par programmation. La fonctionnalité Déplacer vers le début/la fin du document nous permet de naviguer vers le début ou la fin d'un document à l'aide de la classe DocumentBuilder.
 
 ## Expliquer le code source étape par étape
 
@@ -66,4 +66,4 @@ Console.WriteLine("\nThis is the end of the document.");
 
 ## Conclusion
 
-Dans cet exemple, nous avons exploré la fonctionnalité Déplacer vers le début/la fin du document d'Aspose.Words pour .NET. Nous avons appris à naviguer jusqu'au début et à la fin d'un document à l'aide de la classe DocumentBuilder. Cette fonctionnalité est utile lorsque vous travaillez par programmation avec des documents Word et que vous devez manipuler ou insérer du contenu à des positions spécifiques dans le document.
+Dans cet exemple, nous avons exploré la fonctionnalité Déplacer vers le début/la fin du document d'Aspose.Words pour .NET. Nous avons appris à naviguer jusqu'au début et à la fin d'un document à l'aide de la classe DocumentBuilder. Cette fonctionnalité est utile lors du traitement de texte par programme avec des documents Word et que vous devez manipuler ou insérer du contenu à des positions spécifiques dans le document.

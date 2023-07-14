@@ -1,7 +1,7 @@
 ---
 title: Déplacer le nœud dans le document suivi
 linktitle: Déplacer le nœud dans le document suivi
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Déplacez les nœuds dans un document suivi avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons appris à déplacer un nœud dans un document Word suivi à l'aide de Aspose.Words pour .NET. En suivant les étapes de création du document, d'activation du suivi des révisions, de déplacement du nœud et d'arrêt du suivi des révisions, nous avons pu effectuer cette manipulation avec succès. Aspose.Words pour .NET est un outil puissant pour travailler avec des documents Word et offre des fonctionnalités avancées pour gérer les révisions. Vous pouvez désormais utiliser ces connaissances pour déplacer des nœuds dans vos propres documents Word tout en suivant les révisions à l'aide d'Aspose.Words pour .NET.
+Dans ce didacticiel, nous avons appris à déplacer un nœud dans un document Word suivi à l'aide de Aspose.Words pour .NET. En suivant les étapes de création du document, d'activation du suivi des révisions, de déplacement du nœud et d'arrêt du suivi des révisions, nous avons pu effectuer cette manipulation avec succès. Aspose.Words pour .NET est un outil puissant pour le traitement de mots avec des documents Word et offre des fonctionnalités avancées pour la gestion des révisions. Vous pouvez désormais utiliser ces connaissances pour déplacer des nœuds dans vos propres documents Word tout en suivant les révisions à l'aide d'Aspose.Words pour .NET.
 
 ### FAQ
 

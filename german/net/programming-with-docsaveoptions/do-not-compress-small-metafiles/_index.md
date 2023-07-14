@@ -1,14 +1,14 @@
 ---
 title: Komprimieren Sie keine kleinen Metadateien
 linktitle: Komprimieren Sie keine kleinen Metadateien
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Funktion „Kleine Metadateien nicht komprimieren“ beim Speichern von Dokumenten aktivieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
 
-Das Komprimieren von Metadaten in einem Dokument ist eine häufige Funktion beim Arbeiten mit Dateien in einer C#-Anwendung. Es kann jedoch erforderlich sein, die Metadaten kleiner Dateien nicht zu komprimieren, um deren Qualität zu erhalten. In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie den C#-Quellcode von Aspose.Words für .NET verwenden, um die Funktion „Kleine Metadateien nicht komprimieren“ in den Dokumentspeicheroptionen zu aktivieren.
+Das Komprimieren von Metadaten in einem Dokument ist eine häufige Funktion bei der Textverarbeitung mit Dateien in einer C#-Anwendung. Es kann jedoch erforderlich sein, die Metadaten kleiner Dateien nicht zu komprimieren, um deren Qualität zu erhalten. In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie den C#-Quellcode von Aspose.Words für .NET verwenden, um die Funktion „Kleine Metadateien nicht komprimieren“ in den Dokumentspeicheroptionen zu aktivieren.
 
 ## Grundlegendes zur Aspose.Words-Bibliothek
 
@@ -60,7 +60,7 @@ Diese Konfiguration stellt sicher, dass Metadaten kleiner Dateien beim Speichern
 
 ## Schritt 5: Speichern Sie das Dokument
 
- Abschließend können Sie das Dokument mit speichern`Save` Methode der Document-Klasse. Geben Sie den vollständigen Pfad zur Datei und den gewünschten Dateinamen an. Zum Beispiel :
+Abschließend können Sie das Dokument mit speichern`Save` Methode der Document-Klasse. Geben Sie den vollständigen Pfad zur Datei und den gewünschten Dateinamen an. Zum Beispiel :
 
 ```csharp
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);

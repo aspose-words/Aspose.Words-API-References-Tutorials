@@ -1,15 +1,15 @@
 ---
-title: إزالة التذييلات
-linktitle: إزالة التذييلات
-second_title: Aspose.Words لمراجع .NET API
-description: تعرف على كيفية إزالة التذييلات بسهولة من مستندات Word باستخدام Aspose.Words for .NET. اتبع دليلنا المفصل خطوة بخطوة للتعامل الفعال مع ملفات DOCX.
+title: إزالة التذييلات في مستند Word
+linktitle: إزالة التذييلات في مستند Word
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
+description: تعرف على كيفية إزالة التذييلات في مستندات Word بسهولة باستخدام Aspose.Words for .NET. اتبع دليلنا المفصل خطوة بخطوة للتعامل الفعال مع ملفات DOCX.
 type: docs
 weight: 10
 url: /ar/net/remove-content/remove-footers/
 ---
-عندما يتعلق الأمر بالعمل مع مستندات Word في تطبيق .NET الخاص بك ، فإن Aspose.Words أداة قوية ومتعددة الاستخدامات يمكنها مساعدتك في معالجة ملفات DOCX بسهولة. في هذه المقالة ، سوف نستكشف ميزة معينة في Aspose.Words: إزالة التذييلات.
+عندما يتعلق الأمر بمعالجة الكلمات باستخدام مستندات Word في تطبيق .NET الخاص بك ، فإن Aspose.Words أداة قوية ومتعددة الاستخدامات يمكنها مساعدتك في معالجة ملفات DOCX بسهولة. في هذه المقالة ، سوف نستكشف ميزة معينة في Aspose.Words: إزالة التذييلات.
 
-## فهم Aspose.Words for .NET
+## فهم Aspose.Words لـ .NET
 
 Aspose.Words for .NET مكتبة فصول قوية لإنشاء وتعديل وتحويل ومعالجة مستندات Word في تطبيقات .NET. يقدم مجموعة واسعة من الميزات بما في ذلك إدارة الرؤوس والتذييلات والصور وتنسيق النص والمزيد.
 
@@ -76,7 +76,7 @@ doc.Save(dataDir + "Name_of_modified_document.docx");
 ### نموذج التعليمات البرمجية المصدر لإزالة التذييلات باستخدام Aspose.Words for .NET 
 ```csharp
 
-// المسار إلى دليل المستند الخاص بك
+//المسار إلى دليل المستند الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document(dataDir + "Header and footer types.docx");
@@ -84,7 +84,7 @@ Document doc = new Document(dataDir + "Header and footer types.docx");
 foreach (Section section in doc)
 {
 	// ما يصل إلى ثلاثة تذييلات مختلفة ممكنة في قسم (للصفحات الأولى ، الزوجية والفردية)
-	//نتحقق منها ونحذفها جميعًا.
+	// نتحقق منها ونحذفها جميعًا.
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
@@ -103,5 +103,49 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
 
 ## خاتمة
 
-في هذه المقالة ، اكتشفنا كيفية إزالة التذييلات من مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات المقدمة ، يمكنك بسهولة معالجة مستنداتك وإزالة التذييلات غير المرغوب فيها. يقدم Aspose.Words حلاً فعالاً وملائماً للعمل مع مستندات Word في تطبيق .NET الخاص بك.
+في هذه المقالة ، اكتشفنا كيفية إزالة التذييلات من مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات المقدمة ، يمكنك بسهولة معالجة مستنداتك وإزالة التذييلات غير المرغوب فيها. تقدم Aspose.Words حلاً فعالاً وملائماً لمعالجة الكلمات باستخدام مستندات Word في تطبيق .NET الخاص بك.
 
+## التعليمات
+
+#### س: لماذا يجب علي استخدام Aspose.Words لإزالة التذييلات في مستند Word؟
+
+ج: Aspose.Words مكتبة فصول قوية ومتعددة الاستخدامات لمعالجة مستندات Word في تطبيقات .NET. باستخدام Aspose.Words ، يمكنك بسهولة إزالة التذييلات من مستندات Word الخاصة بك. يمكن أن يكون هذا مفيدًا لعدة أسباب ، مثل حذف المعلومات الحساسة أو تكييف المستند لاستخدام آخر أو ببساطة التخلص من العناصر غير المرغوب فيها. يجعل Aspose.Words هذه المهمة أسهل من خلال تزويدك بطريقة سهلة وفعالة لإزالة التذييلات من مستنداتك.
+
+#### س: كيف يمكنني تحميل مستند في Aspose.Words لـ .NET؟
+
+ج: لإزالة التذييلات من مستند Word ، يجب أولاً تحميل المستند في الذاكرة باستخدام طريقة Load () الخاصة بـ Aspose.Words. إليك نموذج التعليمات البرمجية لتحميل مستند من دليل محدد:
+
+```csharp
+// المسار إلى دليل المستندات الخاص بك
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+
+// قم بتحميل المستند
+Document doc = new Document(dataDir + "Name_of_document.docx");
+```
+
+تأكد من استبدال "Name_of_document.docx" بالاسم الفعلي للمستند الخاص بك.
+
+#### س: كيفية إزالة التذييلات في مستند باستخدام Aspose.Words؟
+
+ج: لإزالة التذييلات ، تحتاج إلى استعراض أقسام المستند والتحقق من كل نوع تذييل محتمل. هناك أنواع مختلفة من التذييلات في Aspose.Words ، مثل "FooterFirst" (للصفحة الأولى) و "FooterPrimary" (للصفحات الفردية) و "FooterEven" (للصفحات الزوجية). تحتاج إلى التحقق من كل هذه الأنواع من التذييلات وإزالتها. إليك نموذج التعليمات البرمجية:
+
+```csharp
+HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
+footer?.Remove();
+
+footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
+footer?.Remove();
+
+footer = section.HeadersFooters[HeaderFooterType.FooterEven];
+footer?.Remove();
+```
+
+#### س: كيف تحفظ المستند المحرر في Aspose.Words for .NET؟
+
+ج: بمجرد الانتهاء من إزالة التذييلات ، يمكنك حفظ المستند المعدل في ملف منفصل باستخدام طريقة Save (). حدد اسم وموقع الملف المعدل. إليك نموذج التعليمات البرمجية:
+
+```csharp
+doc.Save(dataDir + "Name_of_modified_document.docx");
+```
+
+تذكر تحديد الاسم والموقع الفعلي للملف المعدل.

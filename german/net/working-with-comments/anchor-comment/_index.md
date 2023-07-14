@@ -1,7 +1,7 @@
 ---
 title: Ankerkommentar
 linktitle: Ankerkommentar
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Kommentarantworten zu bestimmtem Text in Word-Dokumenten verankern.
 type: docs
 weight: 10
@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Erstellen Sie drei Run-Objekte.
-//Die ersten beiden führen einen Text aus, während der dritte einen Kommentar ausgibt
+// Die ersten beiden führen einen Text aus, während der dritte einen Kommentar ausgibt
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ A: Um einen Kommentaranker in einem Aspose.Words für .NET-Dokument hinzuzufüge
 
 #### F: Wie kann ich den Text eines Kommentars bearbeiten, der mit einem Kommentaranker in Aspose.Words für .NET verknüpft ist?
 
-A: Um den Text eines Kommentars zu ändern, der an einen Kommentaranker in Aspose.Words für .NET gebunden ist, können Sie auf Folgendes zugreifen`Comment.Text` Eigentum des entsprechenden`Comment` Objekt und ändern Sie den Text nach Bedarf.
+ A: Um den Text eines Kommentars zu ändern, der an einen Kommentaranker in Aspose.Words für .NET gebunden ist, können Sie auf Folgendes zugreifen`Comment.Text` Eigentum des entsprechenden`Comment` Objekt und ändern Sie den Text nach Bedarf.
 

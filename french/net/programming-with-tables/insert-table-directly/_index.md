@@ -1,7 +1,7 @@
 ---
 title: Insérer le tableau directement
 linktitle: Insérer le tableau directement
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à insérer un tableau directement dans un document Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ Dans ce didacticiel, nous allons apprendre à insérer directement un tableau da
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
 ## Étape 2 : création du document et du tableau
-Pour commencer à travailler avec le tableau, nous devons créer un nouveau document et initialiser le tableau. Suivez ces étapes:
+Pour démarrer le traitement de texte avec le tableau, nous devons créer un nouveau document et initialiser le tableau. Suivez ces étapes:
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // création de documents
 Document doc = new Document();
 
-// Créer le tableau
+//Créer le tableau
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);
 ```
@@ -79,7 +79,7 @@ Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects pour
 ### Exemple de code source pour Insérer un tableau directement à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

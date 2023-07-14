@@ -1,8 +1,8 @@
 ---
-title: 使用字段
-linktitle: 使用字段
-second_title: Aspose.Words for .NET API 参考
-description: 使用 Aspose.Words for .NET 处理 Word 文档中的字段的综合资源。教程、示例和详细解释。
+title: 带字段的文字处理
+linktitle: 带字段的文字处理
+second_title: Aspose.Words 文档处理 API
+description: 使用 Aspose.Words for .NET 对 Word 文档中的字段进行文字处理的综合资源。教程、示例和详细解释。
 type: docs
 weight: 140
 url: /zh/net/working-with-fields/

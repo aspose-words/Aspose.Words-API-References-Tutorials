@@ -1,7 +1,7 @@
 ---
 title: Modifier les paramètres régionaux
 linktitle: Modifier les paramètres régionaux
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment modifier les paramètres régionaux pour la mise en forme des dates et des nombres dans les documents Word à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -94,7 +94,7 @@ Toutes nos félicitations! Vous avez appris avec succès comment modifier les pa
 
 #### Q : Aspose.Words est-il compatible avec différentes versions de Microsoft Word ?
 
-R : Oui, Aspose.Words est compatible avec différentes versions de Microsoft Word, notamment Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 et Word 2019.
+: Oui, Aspose.Words est compatible avec différentes versions de Microsoft Word, notamment Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 et Word 2019.
 
 #### Q : Aspose.Words prend-il en charge les structures de champs complexes ?
 

@@ -1,7 +1,7 @@
 ---
 title: Incorporer des polices de sous-ensemble dans un document PDF
 linktitle: Incorporer des polices de sous-ensemble dans un document PDF
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour incorporer des sous-ensembles de polices dans un document PDF à l'aide d'Aspose.Words pour .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Enregistrement d'images au format WMF
 linktitle: Enregistrement d'images au format WMF
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à enregistrer des images au format WMF lors de la conversion au format RTF avec Aspose.Words pour .NET.
 type: docs
 weight: 10

@@ -1,27 +1,27 @@
 ---
 title: Récupérer le type de largeur préféré
 linktitle: Récupérer le type de largeur préféré
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Apprenez à récupérer le type et la valeur de largeur préférée d'une cellule dans un tableau Word avec Aspose.Words pour .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/retrieve-preferred-width-type/
 ---
 
-Dans ce didacticiel, nous allons apprendre à récupérer le type de largeur préféré et sa valeur à partir d'une cellule de tableau dans un document Word à l'aide de Aspose.Words pour .NET. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous pourrez récupérer le type de largeur préféré (absolu, relatif ou automatique) et sa valeur pour une cellule spécifique dans vos tableaux de document Word.
+Dans ce didacticiel, nous allons apprendre à récupérer le type de largeur préféré et sa valeur à partir d'une cellule de tableau dans un document Word à l'aide de Aspose.Words pour .NET. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous pourrez récupérer le type de largeur préféré (absolu, relatif ou automatique) et sa valeur pour une cellule spécifique dans vos tableaux de documents Word.
 
 ## Étape 1 : configuration du projet
 1. Lancez Visual Studio et créez un nouveau projet C#.
 2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
 
 ## Étape 2 : Chargement du document
-Pour commencer à travailler avec le document, procédez comme suit :
+Pour démarrer le traitement de texte avec le document, procédez comme suit :
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Charger le document
+// Charger le document
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
@@ -50,7 +50,7 @@ Ici, nous utilisons le document pour récupérer la première table, puis nous a
 ### Exemple de code source pour récupérer le type de largeur préféré à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
+//Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

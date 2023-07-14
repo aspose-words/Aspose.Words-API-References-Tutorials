@@ -1,7 +1,7 @@
 ---
 title: Ooxml 合规性 ISO 29500_2008_Strict
 linktitle: Ooxml 合规性 ISO 29500_2008_Strict
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解使用 Aspose.Words for .NET 保存文档时如何确保 Ooxml Iso 29500_2008_Strict 合规性。
 type: docs
 weight: 10

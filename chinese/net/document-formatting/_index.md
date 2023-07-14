@@ -1,7 +1,7 @@
 ---
 title: 文档格式
 linktitle: 文档格式
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 格式化和格式化 Word 文档。这些教程将指导您了解各种布局技术、样式、编号、段落、字体等。
 type: docs
 weight: 1490

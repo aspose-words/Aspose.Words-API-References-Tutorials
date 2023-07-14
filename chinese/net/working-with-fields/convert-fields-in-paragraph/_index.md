@@ -1,7 +1,7 @@
 ---
 title: 转换段落中的字段
 linktitle: 转换段落中的字段
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 将 IF 字段转换为段落中的纯文本。
 type: docs
 weight: 10

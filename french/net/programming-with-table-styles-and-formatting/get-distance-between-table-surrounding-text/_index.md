@@ -1,7 +1,7 @@
 ---
 title: Obtenir la distance entre le tableau entourant le texte
 linktitle: Obtenir la distance entre le tableau entourant le texte
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour obtenir la distance entre le texte et un tableau dans un document Word à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -38,7 +38,7 @@ Console.WriteLine("Distance between the table and the text on the left: " + tabl
 ### Exemple de code source pour obtenir la distance entre le texte entourant la table à l'aide de Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

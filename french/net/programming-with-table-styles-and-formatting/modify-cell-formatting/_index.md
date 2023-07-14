@@ -1,7 +1,7 @@
 ---
 title: Modifier la mise en forme des cellules
 linktitle: Modifier la mise en forme des cellules
-second_title: Référence de l'API Aspose.Words pour .NET
+second_title: API de traitement de documents Aspose.Words
 description: Guide étape par étape pour modifier la mise en forme d'une cellule dans un tableau à l'aide de Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 ### Exemple de code source pour modifier la mise en forme des cellules à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
+	//Chemin d'accès à votre répertoire de documents
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

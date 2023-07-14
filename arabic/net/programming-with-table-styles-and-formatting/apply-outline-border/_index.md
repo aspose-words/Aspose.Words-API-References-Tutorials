@@ -1,7 +1,7 @@
 ---
 title: تطبيق حدود المخطط التفصيلي
 linktitle: تطبيق حدود المخطط التفصيلي
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: دليل خطوة بخطوة لتطبيق حدود المخطط على جدول باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx"
 ### نموذج التعليمات البرمجية المصدر لـ Apply Outline Border باستخدام Aspose.Words for .NET 
 
 ```csharp
-	// المسار إلى دليل المستند الخاص بك
+	//المسار إلى دليل المستند الخاص بك
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

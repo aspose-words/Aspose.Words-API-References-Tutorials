@@ -1,7 +1,7 @@
 ---
 title: Holen Sie sich den JPEG-Seitenbereich
 linktitle: Holen Sie sich den JPEG-Seitenbereich
-second_title: Aspose.Words für .NET API-Referenz
+second_title: Aspose.Words-Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Reihe von JPEG-Seiten erhalten. Vollständiges Tutorial zum Extrahieren benutzerdefinierter Bilder.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ Jetzt können Sie den Quellcode ausführen, um einen bestimmten Seitenbereich in
 ### Beispielquellcode für „Jpeg-Seitenbereich abrufen“ mit Aspose.Words für .NET
 
 ```csharp 
- // Pfad zu Ihrem Dokumentenverzeichnis
+ //Pfad zu Ihrem Dokumentenverzeichnis
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

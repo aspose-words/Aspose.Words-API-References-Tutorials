@@ -1,7 +1,7 @@
 ---
 title: PDF 渲染警告
 linktitle: PDF 渲染警告
-second_title: Aspose.Words for .NET API 参考
+second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 处理 PDF 渲染警告的分步指南。
 type: docs
 weight: 10

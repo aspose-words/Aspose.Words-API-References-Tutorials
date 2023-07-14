@@ -1,7 +1,7 @@
 ---
 title: حقول النموذج تحصل على مجموعة حقول النموذج
 linktitle: حقول النموذج تحصل على مجموعة حقول النموذج
-second_title: Aspose.Words لمراجع .NET API
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
 description: تعرف على كيفية استرداد مجموعة حقول النموذج ومعالجتها في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## الخطوة 2: استرداد مجموعة حقول النموذج
 
- بعد ذلك ، قم بالوصول إلى`FormFields` ممتلكات`Range` كائن في المستند لاسترداد مجموعة حقول النموذج:
+ بعد ذلك ، قم بالوصول إلى`FormFields`ممتلكات`Range` كائن في المستند لاسترداد مجموعة حقول النموذج:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;
@@ -61,7 +61,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 FormFieldCollection formFields = doc.Range.FormFields;
 
-// الوصول إلى حقول النموذج ومعالجتها حسب الحاجة
+// قم بالوصول إلى حقول النموذج ومعالجتها حسب الحاجة
 // ...
 
 doc.Save(dataDir + "ModifiedFormFields.docx");
