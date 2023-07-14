@@ -1,7 +1,7 @@
 ---
 title: Удалить поля
 linktitle: Удалить поля
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по удалению полей слияния в документах Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Document doc = new Document();
 // Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Загрузите существующий документ.
+// Загрузите существующий документ.
 Document doc = new Document(dataDir + "YourDocument.docx");
 
 // Удалить поля слияния.

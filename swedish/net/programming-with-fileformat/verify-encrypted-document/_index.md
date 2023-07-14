@@ -1,7 +1,7 @@
 ---
 title: Verifiera krypterade Word-dokument
 linktitle: Verifiera krypterade Word-dokument
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att verifiera att ett word-dokument är krypterat med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Steg 3: Kontrollera om dokumentet är krypterat
 
- Vi använder`IsEncrypted` egendom av`FileFormatInfo` objekt för att kontrollera om dokumentet är krypterat. Den här egenskapen återkommer`true` om dokumentet är krypterat, annars returneras det`false`. Vi visar resultatet i konsolen.
+ Vi använder`IsEncrypted`egendom av`FileFormatInfo` objekt för att kontrollera om dokumentet är krypterat. Den här egenskapen återkommer`true` om dokumentet är krypterat, annars returneras det`false`. Vi visar resultatet i konsolen.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -76,8 +76,8 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
-### F: Hur kontrollerar jag om dokumentet är krypterat?
- Du kan använda`IsEncrypted` egendom av`FileFormatInfo` objekt för att kontrollera om dokumentet är krypterat. Den här egenskapen återkommer`true` om dokumentet är krypterat, annars returneras det`false`. Resultatet visas i konsolen:
+### F: Hur kontrollerar man om dokumentet är krypterat?
+ Du kan använda`IsEncrypted`egendom av`FileFormatInfo` objekt för att kontrollera om dokumentet är krypterat. Den här egenskapen återkommer`true` om dokumentet är krypterat, annars returneras det`false`. Resultatet visas i konsolen:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

@@ -1,7 +1,7 @@
 ---
 title: Вставьте объект Ole в Word с пакетом Ole
 linktitle: Вставьте объект Ole в Word с пакетом Ole
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как вставить объект OLE с пакетом OLE в документ с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

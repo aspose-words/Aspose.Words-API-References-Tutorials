@@ -1,7 +1,7 @@
 ---
 title: Yazı Tiplerinin Bildirimlerini Alın
 linktitle: Yazı Tiplerinin Bildirimlerini Alın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanırken eksik veya değiştirilmiş yazı tipi bildirimlerini nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ### Aspose.Words for .NET kullanarak Yazı Tipi Bildirimlerini Almak için örnek kaynak kodu 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -90,6 +90,6 @@ C: Word belgelerinizdeki eksik yazı tipleriyle başa çıkmak için farklı str
 
  C: Evet, Aspose.Words'te değiştirilen yazı tipi bildirimlerini almak mümkündür. Belge işleme sırasında yazı tipleri değiştirildiğinde,`FontSubstitutionCallback` olay ve metnin görünümünü ayarlamak için uygun eylemi gerçekleştirin.
 
-#### S: Aspose.Words'te yazı tipleri değiştirildiğinde metin görünümünü nasıl tutarlı tutabilirim?
+#### S: Aspose.Words'ta yazı tipleri değiştirildiğinde metin görünümünü nasıl tutarlı tutabilirim?
 
 Y: Yazı tipleri değiştirildiğinde metnin görünümünde tutarlılığı korumak için yazı tipi boyutu, stili ve rengi gibi metin biçimlendirme özelliklerini ayarlayabilirsiniz. Orijinal yazı tiplerine görsel olarak benzeyen yedek yazı tiplerini kullanmayı da düşünebilirsiniz.

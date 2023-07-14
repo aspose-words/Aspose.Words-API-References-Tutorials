@@ -1,7 +1,7 @@
 ---
 title: Japoncayı Düzenleme Dilleri Olarak Ekleyin
 linktitle: Japoncayı Düzenleme Dilleri Olarak Ekleyin
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Japonca'yı düzenleme dili olarak eklemek için adım adım kılavuz.
 type: docs
 weight: 10

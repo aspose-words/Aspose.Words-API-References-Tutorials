@@ -1,7 +1,7 @@
 ---
 title: Cleanup Duplicate Style
 linktitle: Cleanup Duplicate Style
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg för steg guide för att rensa upp dubbletter av stilar i ett dokument med Aspose.Words för .NET. Fullständig källkod ingår.
 type: docs
 weight: 10

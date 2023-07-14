@@ -1,8 +1,8 @@
 ---
-title: Belgeyi Böl
-linktitle: Belgeyi Böl
-second_title: Aspose.Words for .NET API Referansı
-description: Aspose.Words for .NET kullanarak bir Word belgesini etkili bir şekilde nasıl ayrı parçalara ayıracağınızı öğrenin. Adım adım öğreticileri izleyin ve farklı belge bölme tekniklerini öğrenmek için C# kod örneklerini kullanın.
+title: Word Belgesi Bölme
+linktitle: Word Belgesi Bölme
+second_title: Aspose.Words Belge İşleme API'sı
+description: Aspose.Words for .NET kullanarak bir Word belgesini nasıl ayrı parçalara ayıracağınızı öğrenin. Bu kapsamlı kaynak, belgeleri farklı koşullara göre bölmek için ayrıntılı öğreticiler, kaynak kodu örnekleri ve pratik ipuçları sağlar.
 type: docs
 weight: 1450
 url: /tr/net/split-document/
@@ -14,7 +14,7 @@ Bölünmüş Belge, Aspose.Words for .NET kitaplığı kullanılarak bir belgeni
 | --- | --- |
 | [Başlıklara göre Html](./by-headings-html/) | Aspose.Words for .NET'in Başlığa Göre HTML özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz |
 | [Bölümlere Göre Html](./by-sections-html/) | Eksiksiz bir kod örneği ile Aspose.Words for .NET kullanarak bir Word belgesini Html'de bölümlere ayırmayı öğrenin. |
-| [Bölümlere Göre](./by-sections/) | Eksiksiz bir kod örneği ile Aspose.Words for .NET kullanarak bir Word belgesini nasıl ayrı bölümlere ayıracağınızı öğrenin. |
+| [Bölümlere göre](./by-sections/) | Eksiksiz bir kod örneği ile Aspose.Words for .NET kullanarak bir Word belgesini nasıl ayrı bölümlere ayıracağınızı öğrenin. |
 | [sayfa sayfa](./page-by-page/) | .NET için Aspose.Words Sayfa Sayfa özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz |
 | [Belgeleri Birleştir](./merge-documents/) | Aspose.Words for .NET'in Belgeleri Birleştir özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz |
 | [Sayfa Aralığına Göre](./by-page-range/) | Aspose.Words for .NET Adım adım kılavuzunu kullanarak bir Word belgesinden sayfa aralığına göre kolayca ayıklayın. |

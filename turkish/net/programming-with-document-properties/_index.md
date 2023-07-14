@@ -1,17 +1,17 @@
 ---
-title: Belge Özellikleri ile Programlama
-linktitle: Belge Özellikleri ile Programlama
-second_title: Aspose.Words for .NET API Referansı
+title: Belge Özellikleri ile Kelime İşleme
+linktitle: Belge Özellikleri ile Kelime İşleme
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgesi özelliklerini nasıl yöneteceğinizi öğrenin. Öğreticiler, özellikleri okuma ve yazma, varsayılan özellikleri özelleştirme gibi çeşitli özelliklerde size yol gösterir.
 type: docs
 weight: 1520
 url: /tr/net/programming-with-document-properties/
 ---
-Belge özellikleriyle programlama üzerine Aspose.Words for .NET öğreticileri, projelerinizdeki belge özelliklerini yönetmeye derinlemesine bir bakış sağlar. Bu eğitimlerde, Word belgelerinizi kişiselleştirmek için başlık, yazar, anahtar sözcükler vb. özelliklere nasıl erişeceğinizi, bunları değiştireceğinizi ve sileceğinizi öğreneceksiniz. Özel ihtiyaçlarınızı karşılamak için özel özellikleri nasıl ekleyeceğinizi de öğreneceksiniz.
+Belge özellikleriyle Kelime İşleme üzerine Aspose.Words for .NET öğreticileri, projelerinizdeki belge özelliklerini yönetmeye derinlemesine bir bakış sağlar. Bu eğitimlerde, Word belgelerinizi kişiselleştirmek için başlık, yazar, anahtar sözcükler vb. özelliklere nasıl erişeceğinizi, bunları değiştireceğinizi ve sileceğinizi öğreneceksiniz. Özel ihtiyaçlarınızı karşılamak için özel özellikleri nasıl ekleyeceğinizi de öğreneceksiniz.
 
 Bu öğreticiler, belge özellikleriyle etkileşim kurmak için Aspose.Words for .NET kitaplığını kullanmak için adım adım size rehberlik edecek. Mevcut özellikleri nasıl çıkaracağınızı, yeni değerler ayarlayacağınızı ve istenmeyen özellikleri nasıl kaldıracağınızı öğreneceksiniz. Belge özelliklerini nasıl değiştireceğinizi anlayarak, profesyonel Word belgeleri oluşturabilecek ve bunları ihtiyaçlarınıza göre özelleştirebileceksiniz.
 
-İster yeni başlayan ister deneyimli bir geliştirici olun, belge özellikleriyle programlama üzerine Aspose.Words for .NET eğitimleri, Word belge özelliklerinizi etkili bir şekilde yönetmeniz ve geliştirme iş akışınızı optimize etmeniz için gereken bilgi ve becerileri size sağlayacaktır.
+İster yeni başlayan ister deneyimli bir geliştirici olun, belge özellikleriyle Kelime İşleme üzerine Aspose.Words for .NET öğreticileri, Word belge özelliklerinizi etkili bir şekilde yönetmeniz ve geliştirme iş akışınızı optimize etmeniz için size bilgi ve beceriler sağlayacaktır.
 
  ## Öğreticiler
 | Başlık | Tanım |

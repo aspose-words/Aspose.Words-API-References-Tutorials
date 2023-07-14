@@ -1,7 +1,7 @@
 ---
 title: Предпочтительный тип управления
 linktitle: Предпочтительный тип управления
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по указанию предпочтительного типа элемента управления при загрузке HTML-документа с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

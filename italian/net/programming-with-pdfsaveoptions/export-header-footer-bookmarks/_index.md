@@ -1,7 +1,7 @@
 ---
 title: Esporta i segnalibri del piè di pagina dell'intestazione del documento Word in un documento PDF
 linktitle: Esporta i segnalibri del piè di pagina dell'intestazione del documento Word in un documento PDF
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per esportare i segnalibri del piè di pagina dell'intestazione del documento word nei segnalibri del documento pdf con Aspose.Words per .NET.
 type: docs
 weight: 10

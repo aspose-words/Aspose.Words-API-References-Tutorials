@@ -1,7 +1,7 @@
 ---
 title: Risolvi i nomi dei caratteri
 linktitle: Risolvi i nomi dei caratteri
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per risolvere i nomi dei caratteri mancanti durante la conversione in HTML con Aspose.Words per .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Configuración de fuentes Instancia predeterminada
 linktitle: Configuración de fuentes Instancia predeterminada
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenda a configurar los ajustes de fuente predeterminados en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Ejemplo de código fuente para la instancia predeterminada de configuración de fuente usando Aspose.Words para .NET 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;
@@ -76,11 +76,11 @@ En este tutorial, vimos cómo configurar los ajustes de fuente predeterminados e
 
 #### P: ¿Puedo especificar el tamaño de fuente predeterminado en Aspose.Words?
 
- R: Sí, puede especificar el tamaño de fuente predeterminado en Aspose.Words usando el`DefaultFontSize` propiedad de la`FontSettings` clase. Puede establecer el tamaño de punto deseado.
+ R: Sí, puede especificar el tamaño de fuente predeterminado en Aspose.Words usando el`DefaultFontSize`propiedad de la`FontSettings` clase. Puede establecer el tamaño de punto deseado.
 
 #### P: ¿Es posible establecer el color de fuente predeterminado en Aspose.Words?
 
- R: Sí, puede configurar el color de fuente predeterminado en Aspose.Words usando el`DefaultColor` propiedad de la`FontSettings` clase. Puede especificar el color utilizando valores RGB o nombres predefinidos.
+ R: Sí, puede configurar el color de fuente predeterminado en Aspose.Words usando el`DefaultColor`propiedad de la`FontSettings` clase. Puede especificar el color utilizando valores RGB o nombres predefinidos.
 
 #### P: ¿La configuración de fuente predeterminada se aplica a todos los documentos?
 

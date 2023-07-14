@@ -1,7 +1,7 @@
 ---
 title: Richiamata salvata pagina
 linktitle: Richiamata salvata pagina
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come personalizzare il salvataggio delle pagine del documento in immagini con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
 }
 ```
 
- In questo passaggio, implementiamo il`HandlePageSavingCallback` classe che implementa il`IPageSavingCallback` interfaccia. Puoi personalizzare questa classe aggiungendo le tue azioni specifiche nel file`PageSaving` metodo. È possibile accedere alle informazioni sulla pagina tramite il`args.PageIndex` proprietà del`PageSavingArgs` oggetto passato come argomento.
+ In questo passaggio, implementiamo il`HandlePageSavingCallback` classe che implementa il`IPageSavingCallback` interfaccia. Puoi personalizzare questa classe aggiungendo le tue azioni specifiche nel file`PageSaving` metodo. È possibile accedere alle informazioni sulla pagina tramite il`args.PageIndex`proprietà del`PageSavingArgs` oggetto passato come argomento.
 
 ## Passaggio 5: salvare le pagine come immagini
 
@@ -67,7 +67,7 @@ Ora puoi eseguire il codice sorgente per eseguire azioni personalizzate durante 
 
 
 ```csharp 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Unirse a la nueva página
 linktitle: Unirse a la nueva página
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a unir dos documentos en una página nueva conservando el formato con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -39,7 +39,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Paso 4: Adjunte el documento de origen
 
- Añada el documento de origen al documento de destino utilizando el`AppendDocument` metodo de la`Document` clase. Establezca el modo de formato de importación en`ImportFormatMode.KeepSourceFormatting`para conservar los estilos originales del documento de origen.
+ Añada el documento de origen al documento de destino utilizando el`AppendDocument` metodo de la`Document` clase. Establezca el modo de formato de importación en`ImportFormatMode.KeepSourceFormatting` para conservar los estilos originales del documento de origen.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -58,7 +58,7 @@ Esto completa la implementación de unir dos documentos en una nueva página usa
 ### Ejemplo de código fuente para unirse a una nueva página usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

@@ -1,7 +1,7 @@
 ---
 title: Obtener posición de mesa flotante
 linktitle: Obtener posición de mesa flotante
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a obtener la posición de las tablas flotantes en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -15,19 +15,19 @@ En este tutorial, aprenderemos cómo obtener la posición de una tabla flotante 
 2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
 ## Paso 2: Cargar el documento y acceder a las tablas
-Para empezar a trabajar con tablas, necesitamos cargar el documento que las contiene y acceder a ellas. Sigue estos pasos:
+Para iniciar el procesamiento de textos con tablas, necesitamos cargar el documento que las contiene y acceder a ellas. Sigue estos pasos:
 
 ```csharp
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
 Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos. Además, asegúrese de que el documento contenga tablas flotantes.
 
-## Paso 3: Obtención de las propiedades de posicionamiento de la tabla flotante
+## Paso 3: obtener las propiedades de posicionamiento de la tabla flotante
 A continuación, recorreremos todas las tablas del documento y obtendremos las propiedades de posicionamiento de la tabla flotante. Usa el siguiente código:
 
 ```csharp
@@ -53,7 +53,7 @@ Console.WriteLine("...............................");
 ### Ejemplo de código fuente para obtener la posición de la tabla flotante mediante Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");

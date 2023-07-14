@@ -1,7 +1,7 @@
 ---
 title: Uso de los paneles de tareas de Web Extension
 linktitle: Uso de los paneles de tareas de Web Extension
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para usar los paneles de tareas de Web Extension con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Antes de comenzar, asegúrese de haber instalado y configurado la biblioteca Asp
 
 ## Paso 1: Definir el directorio de documentos
 
-Para comenzar, debe definir la ruta al directorio donde desea guardar el documento generado. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
+ Para comenzar, debe definir la ruta al directorio donde desea guardar el documento generado. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -1,7 +1,7 @@
 ---
 title: Recibir notificación de advertencia
 linktitle: Recibir notificación de advertencia
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a recibir una notificación de advertencia al usar Aspose.Words para .NET y administre cualquier problema o advertencia en sus documentos.
 type: docs
 weight: 10
@@ -43,12 +43,12 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 // Cuando llama a UpdatePageLayout, el documento se procesa en la memoria. Cualquier advertencia que haya ocurrido durante el renderizado
-//se almacenan hasta que se guarda el documento y luego se envían al WarningCallback correspondiente.
+//se almacenan hasta que se guarda el documento y luego se envían al WarningCallback apropiado.
 doc.UpdatePageLayout();
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;

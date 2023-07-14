@@ -1,7 +1,7 @@
 ---
 title: Обновить последнее напечатанное свойство в документе PDF
 linktitle: Обновить последнее напечатанное свойство в документе PDF
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по обновлению свойства «Последняя печать» при преобразовании в PDF с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOpti
 
  Создайте экземпляр`Document` класс, указывающий путь к документу Word.
 
- Создайте экземпляр`PdfSaveOptions` класс и установить`UpdateLastPrintedProperty` собственность на`true` чтобы включить обновление свойства «Последняя печать».
+ Создайте экземпляр`PdfSaveOptions`класс и установить`UpdateLastPrintedProperty` собственность на`true` чтобы включить обновление свойства «Последняя печать».
 
  Использовать`Save` метод`Document`class, чтобы сохранить документ в формате PDF, указав параметры сохранения.
 

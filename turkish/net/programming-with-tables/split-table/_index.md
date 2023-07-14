@@ -1,7 +1,7 @@
 ---
 title: Bölünmüş Tablo
 linktitle: Bölünmüş Tablo
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir Word belgesindeki tabloyu nasıl böleceğinizi öğrenin.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonu
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## 2. Adım: Belgeyi yükleme
-Belgeyle çalışmaya başlamak için şu adımları izleyin:
+Sözcük İşlemeyi belgeyle başlatmak için şu adımları izleyin:
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
@@ -71,7 +71,7 @@ doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ### Aspose.Words for .NET kullanan Bölünmüş Tablo için örnek kaynak kodu 
 
 ```csharp
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

@@ -1,7 +1,7 @@
 ---
 title: Opciones de espacios de manija
 linktitle: Opciones de espacios de manija
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a administrar espacios en sus documentos TXT con Aspose.Words para .NET. Elimine espacios innecesarios y mejore la legibilidad.
 type: docs
 weight: 10

@@ -1,14 +1,14 @@
 ---
 title: Kommentar löst och svar
 linktitle: Kommentar löst och svar
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du löser kommentarer och deras svar i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-comments/comment-resolved-and-replies/
 ---
 
-I den här omfattande självstudien kommer du att lära dig hur du löser kommentarer och deras svar i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna hantera kommentarslösning och uppdatera statusen för kommentarer och deras svar.
+den här omfattande självstudien kommer du att lära dig hur du löser kommentarer och deras svar i ett Word-dokument med Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna hantera kommentarslösning och uppdatera statusen för kommentarer och deras svar.
 
 ## Förutsättningar
 Innan vi börjar, se till att du har följande förutsättningar:
@@ -39,7 +39,7 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-ovanstående kod får vi åtkomst till föräldrakommentaren och itererar genom dess svar. Vi kan hämta förälderns kommentar-ID och dess upplösningsstatus. Sedan uppdaterar vi "Klar"-märket för varje kommentarsvar för att indikera lösning.
+I ovanstående kod får vi åtkomst till föräldrakommentaren och itererar genom dess svar. Vi kan hämta förälderns kommentar-ID och dess upplösningsstatus. Sedan uppdaterar vi "Klar"-märket för varje kommentarsvar för att indikera lösning.
 
 ## Steg 3: Spara dokumentet
 Efter att ha löst kommentarerna och uppdaterat deras status, spara det ändrade dokumentet i en fil med hjälp av Spara-metoden för klassen Document:
@@ -84,15 +84,15 @@ Kommentarsupplösning hjälper till att spåra och hantera feedback i ett dokume
 
 #### F: Hur lägger jag till ett svar på en löst kommentar i Aspose.Words för .NET?
 
- S: Även om lösta kommentarer döljs som standard i det slutliga dokumentet, kan du fortfarande lägga till ett svar på en löst kommentar med`Comment.AddReply`metod som anger svarstexten och var du vill lägga till den.
+ S: Även om lösta kommentarer döljs som standard i det slutliga dokumentet, kan du fortfarande lägga till ett svar på en löst kommentar med`Comment.AddReply` metod som anger svarstexten och var du vill lägga till den.
 
 #### F: Hur ser jag lösta kommentarer i Aspose.Words för .NET?
 
- S: Som standard döljs lösta kommentarer i det slutliga dokumentet. Du kan dock visa dem genom att använda`CommentOptions.ShowResolvedComments` egendom av`Document` objekt och ställ in det på`true`.
+ S: Som standard döljs lösta kommentarer i det slutliga dokumentet. Du kan dock visa dem genom att använda`CommentOptions.ShowResolvedComments`egendom av`Document` objekt och ställ in det på`true`.
 
 #### F: Hur kan jag dölja alla kommentarer, inklusive svar, i Aspose.Words för .NET?
 
- S: För att dölja alla kommentarer, inklusive svar, i Aspose.Words för .NET kan du använda`CommentOptions.CommentDisplayMode` egendom av`Document` objekt och ställ in det på`CommentDisplayMode.None`.
+ S: För att dölja alla kommentarer, inklusive svar, i Aspose.Words för .NET kan du använda`CommentOptions.CommentDisplayMode`egendom av`Document` objekt och ställ in det på`CommentDisplayMode.None`.
 
 #### F: Kan jag redigera texten i en löst kommentar i Aspose.Words för .NET?
 

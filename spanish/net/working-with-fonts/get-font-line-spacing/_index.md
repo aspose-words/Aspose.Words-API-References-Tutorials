@@ -1,7 +1,7 @@
 ---
 title: Obtener espaciado de línea de fuente
 linktitle: Obtener espaciado de línea de fuente
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenda cómo obtener el espacio entre líneas de fuente en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Şifrelenmiş Word Belgesini Doğrulayın
 linktitle: Şifrelenmiş Word Belgesini Doğrulayın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bir word belgesinin Aspose.Words for .NET ile şifrelenmiş olduğunu doğrulamak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## 3. Adım: Belgenin şifrelenip şifrelenmediğini kontrol edin
 
- biz kullanıyoruz`IsEncrypted` mülkiyeti`FileFormatInfo` belgenin şifrelenip şifrelenmediğini kontrol etmek için nesne. Bu özellik döndürür`true` belge şifreliyse, aksi takdirde geri döner`false`. Sonucu konsolda gösteriyoruz.
+ biz kullanıyoruz`IsEncrypted`mülkiyeti`FileFormatInfo` belgenin şifrelenip şifrelenmediğini kontrol etmek için nesne. Bu özellik döndürür`true` belge şifreliyse, aksi takdirde geri döner`false`. Sonucu konsolda gösteriyoruz.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -77,7 +77,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 ```
 
 ### S: Belgenin şifrelenip şifrelenmediği nasıl kontrol edilir?
- kullanabilirsiniz`IsEncrypted` mülkiyeti`FileFormatInfo` belgenin şifrelenip şifrelenmediğini kontrol etmek için nesne. Bu özellik döndürür`true` belge şifreliyse, aksi takdirde geri döner`false`. Sonuç konsolda görüntülenir:
+ kullanabilirsiniz`IsEncrypted`mülkiyeti`FileFormatInfo` belgenin şifrelenip şifrelenmediğini kontrol etmek için nesne. Bu özellik döndürür`true` belge şifreliyse, aksi takdirde geri döner`false`. Sonuç konsolda görüntülenir:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

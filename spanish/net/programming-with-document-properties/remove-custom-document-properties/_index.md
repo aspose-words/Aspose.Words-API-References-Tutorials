@@ -1,7 +1,7 @@
 ---
 title: Eliminar propiedades de documentos personalizados
 linktitle: Eliminar propiedades de documentos personalizados
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para eliminar propiedades personalizadas de un documento con Aspose.Words para .NET.
 type: docs
 weight: 10

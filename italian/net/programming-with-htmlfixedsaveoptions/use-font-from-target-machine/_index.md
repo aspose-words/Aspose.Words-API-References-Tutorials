@@ -1,7 +1,7 @@
 ---
 title: Usa carattere dalla macchina di destinazione
 linktitle: Usa carattere dalla macchina di destinazione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come convertire un documento Word in HTML fisso utilizzando i caratteri della macchina di destinazione con Aspose.Words per .NET.
 type: docs
 weight: 10

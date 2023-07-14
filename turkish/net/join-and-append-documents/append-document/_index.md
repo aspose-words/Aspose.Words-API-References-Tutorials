@@ -1,7 +1,7 @@
 ---
 title: Belge Ekle
 linktitle: Belge Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir belgenin içeriğini diğerine nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ Bu, Aspose.Words for .NET kullanarak belge ekleme uygulamasını tamamlar.
 ### Aspose.Words for .NET kullanan Append Document için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -63,7 +63,7 @@ Bu, Aspose.Words for .NET kullanarak belge ekleme uygulamasını tamamlar.
 	// Bölüm düğümleri, Belge düğümünün doğrudan çocuklarıdır, bu nedenle Belgeyi numaralandırabiliriz.
 	foreach (Section srcSection in srcDoc)
 	{
-		//Bir bölümü bir belgeden diğerine kopyaladığımız için,
+		// Bir bölümü bir belgeden diğerine kopyaladığımız için,
 		// Bölüm düğümünü hedef belgeye aktarmak gerekir.
 		// Bu, stillere, listelere vb. belgeye özgü referansları ayarlar.
 		//

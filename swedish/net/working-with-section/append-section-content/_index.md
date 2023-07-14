@@ -1,7 +1,7 @@
 ---
 title: Lägg till avsnittsordinnehåll
 linktitle: Lägg till avsnittsordinnehåll
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: I den här självstudien lär du dig hur du lägger till ordinnehåll i specifika delar av ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

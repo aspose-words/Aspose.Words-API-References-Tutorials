@@ -1,7 +1,7 @@
 ---
 title: Establecer opciones de notas al final
 linktitle: Establecer opciones de notas al final
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a configurar las opciones de notas al final en documentos de Word usando Aspose.Words para .NET. Tutorial paso a paso con código fuente de ejemplo.
 type: docs
 weight: 10
@@ -89,12 +89,12 @@ Siéntase libre de usar este código en sus propios proyectos y modifíquelo de 
 
 #### P: ¿Cómo puedo colocar las notas finales en un documento?
 
- R: Para colocar las notas finales en un documento, puede usar el`Position` propiedad de la`EndnoteOptions` clase. Puede especificar si las notas al final deben colocarse al final de cada página, al final de cada sección o al final del documento.
+ R: Para colocar las notas finales en un documento, puede usar el`Position`propiedad de la`EndnoteOptions` clase. Puede especificar si las notas al final deben colocarse al final de cada página, al final de cada sección o al final del documento.
 
 #### P: ¿Puedo personalizar el formato de numeración de las notas finales?
 
- R: Sí, puede personalizar el formato de la numeración de las notas finales en Aspose.Words. Utilizar el`NumberFormat` propiedad de la`EndnoteOptions` class para establecer el formato deseado, como números arábigos, números romanos, letras, etc.
+ R: Sí, puede personalizar el formato de la numeración de las notas finales en Aspose.Words. Utilizar el`NumberFormat`propiedad de la`EndnoteOptions` class para establecer el formato deseado, como números arábigos, números romanos, letras, etc.
 
 #### P: ¿Es posible continuar con la numeración de notas finales entre secciones de un documento?
 
- R: Sí, es posible continuar con la numeración de notas al final entre las secciones de un documento. Utilizar el`RestartRule` propiedad de la`EndnoteOptions` clase y configúrelo en`RestartContinuous` para permitir que la numeración continúe entre las secciones.
+ R: Sí, es posible continuar con la numeración de notas al final entre las secciones de un documento. Utilizar el`RestartRule`propiedad de la`EndnoteOptions` clase y configúrelo en`RestartContinuous` para permitir que la numeración continúe entre las secciones.

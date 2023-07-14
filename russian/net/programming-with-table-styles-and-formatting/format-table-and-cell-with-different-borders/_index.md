@@ -1,7 +1,7 @@
 ---
 title: Форматировать таблицу и ячейку с разными границами
 linktitle: Форматировать таблицу и ячейку с разными границами
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по форматированию таблицы и ячейки с разными границами с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 ### Пример исходного кода для форматирования таблицы и ячейки с разными границами с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

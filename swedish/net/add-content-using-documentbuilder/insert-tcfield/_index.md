@@ -1,7 +1,7 @@
 ---
 title: Infoga TCField
 linktitle: Infoga TCField
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar och manipulerar TCFields i Word-dokument med C# och Aspose.Words för .NET i den här steg-för-steg-guiden.
 type: docs
 weight: 10

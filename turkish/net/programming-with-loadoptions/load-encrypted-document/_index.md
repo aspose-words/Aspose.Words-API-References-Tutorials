@@ -1,14 +1,14 @@
 ---
 title: Şifrelenmiş Belgeyi Yükle
 linktitle: Şifrelenmiş Belgeyi Yükle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile şifrelenmiş belgeleri nasıl yükleyeceğinizi ve kaydedeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/load-encrypted-document/
 ---
 
-Bir C# uygulamasında şifrelenmiş belgelerle çalışırken, doğru parolayı sağlayarak belgeleri doğru şekilde yükleyebilmek önemlidir. .NET için Aspose.Words kitaplığıyla, uygun yükleme seçeneklerini kullanarak şifrelenmiş belgeleri kolayca yükleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak şifrelenmiş bir belgeyi yüklemek için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
+Bir C# uygulamasında şifreli belgelerle Kelime İşleme yaparken, doğru parolayı sağlayarak belgeleri doğru şekilde yükleyebilmek önemlidir. .NET için Aspose.Words kitaplığıyla, uygun yükleme seçeneklerini kullanarak şifrelenmiş belgeleri kolayca yükleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak şifreli bir belgeyi yüklemek için Aspose.Words for .NET'in C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
 
 ## Aspose.Words kitaplığını anlama
 

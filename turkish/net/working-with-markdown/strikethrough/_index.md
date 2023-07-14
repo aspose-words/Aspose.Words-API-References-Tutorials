@@ -1,7 +1,7 @@
 ---
 title: Üstü çizili
 linktitle: Üstü çizili
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET Adım adım kılavuz ile üzeri çizili metin stilini nasıl uygulayacağınızı öğrenin.
 type: docs
 weight: 10
@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. Adım: Üstü çizili metin stilini uygulayın
 
- Ayarlayarak üstü çizili metin stilini etkinleştireceğiz.`StrikeThrough` mülkiyeti`Font` itiraz etmek`true`.
+ Ayarlayarak üstü çizili metin stilini etkinleştireceğiz.`StrikeThrough`mülkiyeti`Font` itiraz etmek`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;
@@ -53,7 +53,7 @@ Tebrikler! Artık üstü çizili metin stilini Aspose.Words for .NET ile nasıl 
 
 #### S: Üstü çizili metni Aspose.Words'a nasıl ekleyebilirim?
 
- C: Üstü çizili metni Aspose.Words'e eklemek için`Font.StrikeThrough` mülkiyeti`Run`nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` Belirli bir metne üstü çizili metin eklemek için. Örneğin, kullanabilirsiniz`run.Font.StrikeThrough=true` üstü çizili metni eklemek için`Run` nesne.
+ C: Üstü çizili metni Aspose.Words'e eklemek için`Font.StrikeThrough`mülkiyeti`Run`nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` Belirli bir metne üstü çizili metin eklemek için. Örneğin, kullanabilirsiniz`run.Font.StrikeThrough=true` üstü çizili metni eklemek için`Run` nesne.
 
 #### S: Üstü çizili metni aynı paragraftaki birkaç metin parçasına eklemek mümkün müdür?
 
@@ -61,4 +61,4 @@ Tebrikler! Artık üstü çizili metin stilini Aspose.Words for .NET ile nasıl 
 
 #### S: Aspose.Words'te bir tablo veya hücredeki metne üstü çizili metin ekleyebilir miyim?
 
- C: Evet, Aspose.Words'te bir tablo veya hücredeki metne üstü çizili metin ekleyebilirsiniz. Uygun yöntemleri kullanarak istediğiniz hücreye veya paragrafa atlayabilir ve ardından üstü çizili metin biçimlendirmesini kullanarak uygulayabilirsiniz.`Font.StrikeThrough` mülkiyeti`Run` veya`Paragraph` nesne.
+ C: Evet, Aspose.Words'te bir tablo veya hücredeki metne üstü çizili metin ekleyebilirsiniz. Uygun yöntemleri kullanarak istediğiniz hücreye veya paragrafa atlayabilir ve ardından üstü çizili metin biçimlendirmesini kullanarak uygulayabilirsiniz.`Font.StrikeThrough`mülkiyeti`Run` veya`Paragraph` nesne.

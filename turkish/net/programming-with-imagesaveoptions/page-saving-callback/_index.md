@@ -1,7 +1,7 @@
 ---
 title: Sayfa Tasarruflu Geri Arama
 linktitle: Sayfa Tasarruflu Geri Arama
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile belge sayfalarını görüntülere kaydetmeyi nasıl özelleştireceğinizi öğrenin.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
 }
 ```
 
- Bu adımda, uyguladığımız`HandlePageSavingCallback` uygulayan sınıf`IPageSavingCallback` arayüz. Özel eylemlerinizi ekleyerek bu sınıfı özelleştirebilirsiniz.`PageSaving` yöntem. Sayfa bilgilerine şu adresten ulaşabilirsiniz:`args.PageIndex` mülkiyeti`PageSavingArgs` argüman olarak iletilen nesne.
+ Bu adımda, uyguladığımız`HandlePageSavingCallback` uygulayan sınıf`IPageSavingCallback` arayüz. Özel eylemlerinizi ekleyerek bu sınıfı özelleştirebilirsiniz.`PageSaving` yöntem. Sayfa bilgilerine şu adresten ulaşabilirsiniz:`args.PageIndex`mülkiyeti`PageSavingArgs` argüman olarak iletilen nesne.
 
 ## 5. Adım: Sayfaları resim olarak kaydetme
 
@@ -67,7 +67,7 @@ Artık belgenin her sayfasını bir görüntü olarak kaydederken özel eylemler
 
 
 ```csharp 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 

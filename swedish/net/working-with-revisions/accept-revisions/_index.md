@@ -1,7 +1,7 @@
 ---
 title: Acceptera revisioner
 linktitle: Acceptera revisioner
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du accepterar ändringar av ett Word-dokument med Aspose.Words för .NET
 type: docs
 weight: 10

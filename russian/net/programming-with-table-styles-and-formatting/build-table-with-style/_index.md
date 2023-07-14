@@ -1,7 +1,7 @@
 ---
 title: Создайте таблицу со стилем
 linktitle: Создайте таблицу со стилем
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по созданию таблицы с пользовательским стилем с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 ### Пример исходного кода для создания таблицы со стилем с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

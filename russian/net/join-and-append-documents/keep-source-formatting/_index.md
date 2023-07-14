@@ -1,7 +1,7 @@
 ---
 title: Сохранить исходное форматирование
 linktitle: Сохранить исходное форматирование
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как добавить исходный документ к целевому документу, сохранив исходное форматирование с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## Шаг 3. Добавьте исходный документ к целевому документу.
 
- Использовать`AppendDocument` метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.KeepSourceFormatting` в качестве режима формата импорта, чтобы сохранить исходное форматирование исходного документа.
+ Использовать`AppendDocument`метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.KeepSourceFormatting` в качестве режима формата импорта, чтобы сохранить исходное форматирование исходного документа.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -42,7 +42,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Шаг 4: Сохраните измененный документ
 
-Сохраните измененный документ с помощью`Save` метод`Document` объект.
+ Сохраните измененный документ с помощью`Save` метод`Document` объект.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
@@ -53,7 +53,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
 ### Пример исходного кода для сохранения исходного форматирования с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document dstDoc = new Document();

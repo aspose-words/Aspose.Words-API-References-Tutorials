@@ -1,13 +1,15 @@
 ---
-title: Düğümle Çalışmak
-linktitle: Düğümle Çalışmak
-second_title: Aspose.Words for .NET API Referansı
+title: Düğüm ile Kelime İşleme
+linktitle: Düğüm ile Kelime İşleme
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerindeki düğümlerle nasıl çalışacağınızı öğrenin. Kod örnekleriyle ayrıntılı öğreticiler.
 type: docs
 weight: 1000
 url: /tr/net/working-with-node/
 ---
-Revizyonlarla Çalışmak, Aspose.Words for .NET kütüphanesini kullanarak Word belgelerindeki revizyonlarla çalışmanızda size rehberlik eden kapsamlı bir kaynaktır. Öğreticiler, revizyonların nasıl ekleneceğini, silineceğini, kabul edileceğini ve reddedileceğini, dokümanda revizyonların nasıl görüntüleneceğini, farklı sürümlerin nasıl karşılaştırılacağını ve çok daha fazlasını adım adım gösterir. Word belgelerinizdeki işbirliği ve değişiklik yönetimi incelemeleriyle etkili bir şekilde nasıl çalışacağınızı öğreneceksiniz. Bu kaynak, Aspose.Words for .NET tabanlı uygulamalarında revizyon yönetimini otomatikleştirmek isteyen geliştiriciler için çok önemlidir.
+Aspose.Words for .NET'teki düğümler, bir Word belgesinin paragraflar, tablolar, resimler ve daha fazlası gibi çeşitli öğelerini temsil eder. Geliştiriciler, bu düğümleri manipüle ederek bir Word belgesinin içeriğini ve biçimlendirmesini programlı olarak değiştirebilir. Düğümler, belgeye hiyerarşik bir yapı sağlayarak, belirli öğelerin kolay gezinmesine ve değiştirilmesine olanak tanır.
+
+Geliştiriciler, Aspose.Words for .NET'te düğümlerle çalışmak için kitaplık tarafından sağlanan Document Object Model'i (DOM) kullanabilir. DOM, tüm Word belgesini bir düğüm ağacı olarak temsil eder ve belgenin kendisi kök düğümdür. Her düğümün belirli bir düğüm türü vardır ve alt düğümler içerebilir, bu da derin bir özelleştirme düzeyi sağlar.
 
  ## Öğreticiler
 | Başlık | Tanım |

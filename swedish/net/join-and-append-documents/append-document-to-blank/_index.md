@@ -1,7 +1,7 @@
 ---
 title: Bifoga dokument till tomt
 linktitle: Bifoga dokument till tomt
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till ett dokument till ett tomt måldokument i Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document();
 
 ## Steg 3: Ta bort befintligt innehåll från måldokumentet
 
-För att säkerställa ett rent måldokument, ta bort allt befintligt innehåll från dokumentet med hjälp av`RemoveAllChildren` metod.
+ För att säkerställa ett rent måldokument, ta bort allt befintligt innehåll från dokumentet med hjälp av`RemoveAllChildren` metod.
 
 ```csharp
 dstDoc.RemoveAllChildren();
@@ -58,12 +58,12 @@ Detta slutför implementeringen av att lägga till ett dokument till ett tomt m�
 ### Exempel på källkod för Lägg till dokument till tomt med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	// Måldokumentet är inte tomt, vilket ofta gör att en tom sida visas före det bifogade dokumentet.
+	//Måldokumentet är inte tomt, vilket ofta gör att en tom sida visas före det bifogade dokumentet.
 	// Detta beror på att basdokumentet har en tom sektion och att det nya dokumentet startas på nästa sida.
 	// Ta bort allt innehåll från måldokumentet innan du lägger till.
 	dstDoc.RemoveAllChildren();

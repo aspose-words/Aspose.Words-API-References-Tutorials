@@ -1,7 +1,7 @@
 ---
 title: Convertir campos en el cuerpo
 linktitle: Convertir campos en el cuerpo
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a usar Aspose.Words para .NET para convertir campos de página en texto en el cuerpo de un documento de Word.
 type: docs
 weight: 10
@@ -22,13 +22,13 @@ Comience declarando una variable para la ruta a su directorio de documentos, lue
 // La ruta a su directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
 ## Paso 3: Convierta los campos de página en texto sin formato
 
-Ahora que el documento está cargado, podemos pasar a los pasos de conversión. Para convertir los campos de la página en texto sin formato en el cuerpo de la primera sección, puede utilizar el`Range.Fields` método para obtener todos los campos en el rango especificado y luego filtrar los campos de tipo`FieldType.FieldPage` . Entonces puedes usar el`ForEach` método para recorrer cada campo y llamar al`Unlink()` método para convertirlo a texto sin formato.
+ Ahora que el documento está cargado, podemos pasar a los pasos de conversión. Para convertir los campos de la página en texto sin formato en el cuerpo de la primera sección, puede utilizar el`Range.Fields` método para obtener todos los campos en el rango especificado y luego filtrar los campos de tipo`FieldType.FieldPage` . Entonces puedes usar el`ForEach` método para recorrer cada campo y llamar al`Unlink()` método para convertirlo a texto sin formato.
 
 ```csharp
 // Pase los parámetros adecuados para convertir los campos de la página en texto sin formato en el cuerpo de la primera sección.
@@ -37,7 +37,7 @@ doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToL
 
 ## Paso 4: Guarde el documento modificado
 
- Una vez que haya convertido los campos de la página a texto sin formato, puede guardar el documento modificado usando el`Save()` y especificando la ruta y el nombre del archivo de salida. En nuestro ejemplo, lo guardamos como "WorkingWithFields.ConvertFieldsInBody.docx".
+Una vez que haya convertido los campos de la página a texto sin formato, puede guardar el documento modificado usando el`Save()` y especificando la ruta y el nombre del archivo de salida. En nuestro ejemplo, lo guardamos como "WorkingWithFields.ConvertFieldsInBody.docx".
 
 ```csharp
 // Guardar el documento modificado
@@ -52,7 +52,7 @@ Aquí está el ejemplo de código fuente completo para convertir campos en el cu
 // La ruta a su directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Linked fields.docx");
 
 // Pase los parámetros adecuados para convertir los campos de la página en texto sin formato en el cuerpo de la primera sección.

@@ -1,7 +1,7 @@
 ---
-title: Datum Tidsvärden till axel
-linktitle: Datum Tidsvärden till axel
-second_title: Aspose.Words för .NET API Referens
+title: Lägg till datum och tid till axeln i ett diagram
+linktitle: Lägg till datum och tid till axeln i ett diagram
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till datum och tid värden till axeln i ett diagram med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Denna handledning förklarar hur du lägger till datum och tid värden till axel
 För att följa denna handledning måste du ha följande:
 
 - Aspose.Words för .NET-biblioteket installerat.
-- Grundläggande kunskaper i C# och att arbeta med Word-dokument.
+- Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Konfigurera dokumentkatalogen
- Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -67,7 +67,7 @@ xAxis.MinorTickMark = AxisTickMark.Outside;
 ```
 
 ## Steg 6: Spara dokumentet
- Spara dokumentet i den angivna katalogen med hjälp av`Save`metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithCharts.DateTimeValuesToAxis.docx".
+ Spara dokumentet i den angivna katalogen med hjälp av`Save` metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithCharts.DateTimeValuesToAxis.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ### Exempel på källkod för Date Time Values To Axis med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -103,3 +103,17 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
 Den här exempelkoden skapar ett nytt Word-dokument, infogar ett kolumndiagram med datum- och tidsvärden på X-axeln och sparar dokumentet i den angivna katalogen.
+
+## Slutsats
+den här handledningen har du lärt dig hur du lägger till datum och tid värden till axeln i ett diagram med Aspose.Words för .NET. Genom att följa den steg-för-steg-guiden kan du skapa ett diagram, lägga till datum och tidsvärden till serien och konfigurera axeln för att visa datum och tidsvärden korrekt. Aspose.Words för .NET tillhandahåller en kraftfull uppsättning funktioner för ordbehandling med diagram i Word-dokument, så att du effektivt kan representera och visualisera data med datum och tidsvärden.
+
+### Vanliga frågor
+
+#### Q1. Kan jag lägga till datum och tid värden till axeln i ett diagram med Aspose.Words för .NET?
+Ja, med Aspose.Words för .NET kan du lägga till och visa datum och tid värden på axeln i ett diagram i ett Word-dokument. Aspose.Words tillhandahåller API:er och funktioner för att arbeta med olika diagramtyper och anpassa deras utseende, inklusive hantering av datum och tidsvärden på axeln.
+
+#### Q2. Hur lägger jag till datum- och tidsvärden i diagramserien?
+ För att lägga till datum och tid värden till diagramserien kan du använda`Add`metoden för diagrammets serie. Ange en matris med datum- och tidsvärden som kategoridata (X-axel) tillsammans med motsvarande serievärden. Detta gör att du kan plotta datapunkter med datum och tidsvärden i diagrammet.
+
+#### Q3. Hur kan jag konfigurera axeln för att visa datum och tid?
+ Du kan konfigurera diagrammets axel för att visa datum och tid genom att ställa in lämpliga egenskaper. Till exempel kan du ange minimi- och maxvärden för axeln med hjälp av`Scaling.Minimum` och`Scaling.Maximum` respektive fastigheter. Dessutom kan du ställa in de stora och små enheterna för att definiera intervall och bockmarkeringar för axeln.

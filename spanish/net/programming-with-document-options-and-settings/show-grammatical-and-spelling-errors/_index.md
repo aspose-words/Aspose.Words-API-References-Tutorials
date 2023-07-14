@@ -1,7 +1,7 @@
 ---
 title: Mostrar errores gramaticales y ortográficos
 linktitle: Mostrar errores gramaticales y ortográficos
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para habilitar la visualización de errores gramaticales y ortográficos en un documento con Aspose.Words para .NET.
 type: docs
 weight: 10

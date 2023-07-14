@@ -1,7 +1,7 @@
 ---
 title: Docx'i Txt'ye Dönüştür
 linktitle: Docx'i Txt'ye Dönüştür
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerini Docx'ten düz metne (Txt) dönüştürmeyi öğrenin. Örnek kaynak koduyla adım adım öğretici.
 type: docs
 weight: 10

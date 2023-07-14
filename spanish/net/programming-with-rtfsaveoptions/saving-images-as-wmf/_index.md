@@ -1,7 +1,7 @@
 ---
 title: Guardar imágenes como Wmf
 linktitle: Guardar imágenes como Wmf
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a guardar imágenes como WMF al convertirlas a RTF con Aspose.Words para .NET.
 type: docs
 weight: 10

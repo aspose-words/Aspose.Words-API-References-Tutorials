@@ -1,7 +1,7 @@
 ---
 title: Añadir con opciones de formato de importación
 linktitle: Añadir con opciones de formato de importación
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a agregar un documento con opciones de formato de importación usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -39,7 +39,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Paso 4: agregue el documento de origen al documento de destino
 
- Utilizar el`AppendDocument` del documento de destino para anexar el documento de origen. Aprobar`ImportFormatMode.UseDestinationStyles` como segundo parámetro para usar los estilos y el formato del documento de destino.
+ Utilizar el`AppendDocument`del documento de destino para anexar el documento de origen. Aprobar`ImportFormatMode.UseDestinationStyles` como segundo parámetro para usar los estilos y el formato del documento de destino.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -58,12 +58,12 @@ Esto completa la implementación de agregar un documento con opciones de formato
 ### Ejemplo de código fuente para agregar con opciones de formato de importación usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//Especifique que si la numeración discrepa en los documentos de origen y destino,
+	// Especifique que si la numeración discrepa en los documentos de origen y destino,
 	// entonces se utilizará la numeración del documento fuente.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

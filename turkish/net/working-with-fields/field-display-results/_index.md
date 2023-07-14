@@ -1,7 +1,7 @@
 ---
 title: Alan Görüntüleme Sonuçları
 linktitle: Alan Görüntüleme Sonuçları
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerinizde alan sonuçlarını görüntülemek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -38,9 +38,9 @@ document. UpdateFields();
 
 Bu adım önemlidir, çünkü saha sonuçlarının doğru bir şekilde görüntülenmesini sağlar.
 
-## Adım 4: Alan Sonuçlarını Görüntüleme
+## 4. Adım: Alan Sonuçlarını Görüntüleme
 
- biz bir`foreach`belgedeki tüm alanlar arasında geçiş yapmak ve bunların sonuçlarını görüntülemek için döngü.
+ biz bir`foreach` belgedeki tüm alanlar arasında geçiş yapmak ve bunların sonuçlarını görüntülemek için döngü.
 
 ```csharp
 foreach(Field field in document.Range.Fields)

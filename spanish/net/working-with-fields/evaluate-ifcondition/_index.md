@@ -1,7 +1,7 @@
 ---
 title: Evaluar condición IF
 linktitle: Evaluar condición IF
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para evaluar la condición SI en sus documentos de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ Aquí usamos la condición "1=1" como ejemplo, pero puede personalizar la condic
 
 ## Paso 3: Evaluar la condición IF
 
- El`EvaluateCondition()`El método se utiliza para evaluar la condición del campo IF.
+ El`EvaluateCondition()` El método se utiliza para evaluar la condición del campo IF.
 
 ```csharp
 FieldIfComparisonResult actualResult = field.EvaluateCondition();

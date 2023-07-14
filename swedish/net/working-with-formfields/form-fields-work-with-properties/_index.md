@@ -1,7 +1,7 @@
 ---
 title: Formulärfält fungerar med egenskaper
 linktitle: Formulärfält fungerar med egenskaper
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du arbetar med formulärfältsegenskaper i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -29,7 +29,7 @@ Hämta sedan ett specifikt formulärfält från dokumentets formulärfältsamlin
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## Steg 3: Arbeta med formulärfältegenskaper
+## Steg 3: Ordbehandling med formulärfältegenskaper
 
  Du kan manipulera olika egenskaper för formulärfältet baserat på dess typ. I det här exemplet kontrollerar vi om formulärfältet är av typen`FieldType.FieldFormTextInput` och ställ in dess`Result` egendom i enlighet därmed:
 

@@ -1,14 +1,14 @@
 ---
 title: Alanı Değiştir Kültür Kaynağını Güncelle
 linktitle: Alanı Değiştir Kültür Kaynağını Güncelle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Alanı Değiştir Kültür Kaynağını Güncelle, Aspose.Words for .NET'te kültür kaynağını değiştirmek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/change-field-update-culture-source/
 ---
 
-Bu eğitimde, Aspose.Words for .NET kullanarak Word belgelerindeki alan güncelleme kültürü kaynağını değiştirme sürecinde size rehberlik edeceğiz. Kültür kaynağını değiştirerek, alan güncelleme ve adres mektup birleştirme işlemleri sırasında tarih biçimlendirmesini kontrol edebilirsiniz. Bunu başarmak için size gerekli C# kaynak kodunu ve adım adım yönergeleri sağlayacağız.
+Bu öğreticide, Aspose.Words for .NET kullanarak Word belgelerindeki alan güncelleme kültürü kaynağını değiştirme sürecinde size rehberlik edeceğiz. Kültür kaynağını değiştirerek, alan güncelleme ve adres mektup birleştirme işlemleri sırasında tarih biçimlendirmesini kontrol edebilirsiniz. Bunu başarmak için size gerekli C# kaynak kodunu ve adım adım yönergeleri sağlayacağız.
 
 ## Önkoşullar
 Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
@@ -91,7 +91,7 @@ Tebrikler! Aspose.Words for .NET kullanarak Word belgelerinde alan güncelleme k
 
 #### S: Aspose.Words for .NET'te alanları güncellemek için belirli bir kültürü nasıl belirleyebilirim?
 
- C: Aspose.Words for .NET'te alanları güncellemek için belirli bir kültür belirtmek üzere`Document.FieldOptions.FieldUpdateCultureInfo` özelliğini ayarlayın ve`CultureInfo` istenen kültüre karşılık gelen nesne. Örneğin, kullanabilirsiniz`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` Fransız (Fransa) kültürünü belirtmek için.
+C: Aspose.Words for .NET'te alanları güncellemek için belirli bir kültür belirtmek üzere`Document.FieldOptions.FieldUpdateCultureInfo` özelliğini ayarlayın ve`CultureInfo` istenen kültüre karşılık gelen nesne. Örneğin, kullanabilirsiniz`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` Fransız (Fransa) kültürünü belirtmek için.
 
 #### S: Aspose.Words for .NET'te otomatik alan güncellemesini devre dışı bırakmak mümkün mü?
 

@@ -1,13 +1,13 @@
 ---
-title: Programmering med Pdfsaveoptions
-linktitle: Programmering med Pdfsaveoptions
-second_title: Aspose.Words för .NET API Referens
-description: Utforska programmering med PDF-sparalternativ i Aspose.Words för .NET. Lär dig hur du genererar Word-dokument till PDF med avancerade funktioner genom steg-för-steg tutorials och exempelkod.
+title: Ordbehandling med Pdfsaveoptions
+linktitle: Ordbehandling med Pdfsaveoptions
+second_title: Aspose.Words Document Processing API
+description: Utforska ordbehandling med PDF-sparalternativ i Aspose.Words för .NET. Lär dig hur du genererar Word-dokument till PDF med avancerade funktioner genom steg-för-steg tutorials och exempelkod.
 type: docs
 weight: 1680
 url: /sv/net/programming-with-pdfsaveoptions/
 ---
-Aspose.Words för .NET-handledningarna om programmering med PdfSaveOptions leder dig genom de olika funktionerna och teknikerna för att arbeta med PDF-sparalternativ. Dessa handledningar hjälper dig att förstå hur du anpassar Word till PDF-konvertering genom att ändra layoutinställningar, teckensnitt, bilder, metadata och mer.
+Aspose.Words för .NET-handledningarna om ordbehandling med PdfSaveOptions leder dig genom de olika funktionerna och teknikerna för ordbehandling med PDF-sparalternativ. Dessa handledningar hjälper dig att förstå hur du anpassar Word till PDF-konvertering genom att ändra layoutinställningar, teckensnitt, bilder, metadata och mer.
 
 Du lär dig hur du justerar bildkvalitetsalternativ, väljer komprimeringsnivå för bilder, ställer in PDF-säkerhetsinställningar som kryptering och behörigheter och till och med infogar vattenstämplar i genererade PDF-filer. Handledningarna innehåller också detaljerade kodexempel som hjälper dig att öva på dessa funktioner i dina projekt.
 
@@ -16,7 +16,7 @@ Oavsett om du vill konvertera Word-dokument till PDF för onlinedistribution, ar
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Visa dokumenttitel i fönstrets titelrad](./display-doc-title-in-window-titlebar/) | Lär dig hur du visar dokumenttitel i fönstrets namnlist när du konverterar till PDF med Aspose.Words för .NET. |
+| [Visa dokumentets titel i fönstrets titelrad](./display-doc-title-in-window-titlebar/) | Lär dig hur du visar dokumenttitel i fönstrets namnlist när du konverterar till PDF med Aspose.Words för .NET. |
 | [Pdf-rendering varningar](./pdf-render-warnings/) | Steg-för-steg-guide för att hantera PDF-renderingsvarningar med Aspose.Words för .NET. |
 | [Lägg till digital signatur till PDF med certifikathållare](./digitally-signed-pdf-using-certificate-holder/) | Lär dig hur du signerar en PDF digitalt med en certifikatinnehavare med Aspose.Words för .NET. |
 | [Bädda in teckensnitt i PDF-dokument](./embedded-all-fonts/) | Steg för steg guide för att bädda in alla typsnitt i en PDF med Aspose.Words för .NET. |

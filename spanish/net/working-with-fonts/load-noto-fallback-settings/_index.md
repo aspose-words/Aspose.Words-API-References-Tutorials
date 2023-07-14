@@ -1,7 +1,7 @@
 ---
 title: Cargar la configuración de respaldo de Noto
 linktitle: Cargar la configuración de respaldo de Noto
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenda a cargar parámetros de anulación de Noto en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 ### Ejemplo de código fuente para la configuración de respaldo de Noto usando Aspose.Words para .NET 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -65,7 +65,7 @@ En este tutorial, vimos cómo cargar la configuración de sustitución de fuente
 
 R: Para cargar la configuración de sustitución de fuentes Noto en un documento de Word con Aspose.Words, primero debe descargar las fuentes Noto de la fuente oficial. Luego puede usar la API de Aspose.Words para cargar esas fuentes en el documento y configurarlas para sustituirlas cuando sea necesario.
 
-#### P: ¿El uso de fuentes Noto para sustitución en documentos de Word garantiza una visualización de texto uniforme?
+#### P: ¿El uso de fuentes Noto para sustitución en documentos de Word garantiza una visualización de texto consistente?
 
 R: Sí, el uso de fuentes Noto para sustitución en documentos de Word garantiza una visualización de texto coherente. Las fuentes de Noto están diseñadas para admitir muchos idiomas y caracteres, lo que ayuda a mantener una apariencia uniforme incluso cuando las fuentes requeridas no están disponibles.
 

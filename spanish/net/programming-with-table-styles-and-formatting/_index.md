@@ -1,17 +1,17 @@
 ---
-title: Programación con estilos de tabla y formato
-linktitle: Programación con estilos de tabla y formato
-second_title: Referencia de API de Aspose.Words para .NET
+title: Procesamiento de textos con estilos de tabla y formato
+linktitle: Procesamiento de textos con estilos de tabla y formato
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a programar estilos y formatos de tablas en Aspose.Words para .NET. Aprenda a aplicar estilos predefinidos, personalizar el formato de las celdas, los bordes y más con tutoriales paso a paso y código de muestra en C#.
 type: docs
 weight: 1580
 url: /es/net/programming-with-table-styles-and-formatting/
 ---
-Los tutoriales de Aspose.Words para .NET sobre programación con estilos de tabla y formato proporcionan un recurso valioso para los desarrolladores que desean manipular y formatear tablas en sus documentos de Word de manera eficaz. Los tutoriales cubren los conceptos fundamentales de los estilos de tabla, como la creación, modificación y eliminación de estilos de tabla. También explican cómo aplicar estilos predefinidos y personalizados a las tablas, además de cómo formatear celdas, bordes y otros elementos de la tabla.
+Los tutoriales de Aspose.Words para .NET sobre el procesamiento de textos con estilos de tabla y formato proporcionan un recurso valioso para los desarrolladores que desean manipular y formatear tablas en sus documentos de Word de manera eficaz. Los tutoriales cubren los conceptos fundamentales de los estilos de tabla, como la creación, modificación y eliminación de estilos de tabla. También explican cómo aplicar estilos predefinidos y personalizados a las tablas, además de cómo formatear celdas, bordes y otros elementos de la tabla.
 
 Estos tutoriales paso a paso proporcionan ejemplos de código claros y concisos, junto con explicaciones detalladas, que guían a los desarrolladores a través de cada paso del proceso de formateo y manipulación de tablas. Los tutoriales también cubren temas avanzados, como agregar y eliminar filas y columnas, fusionar y dividir celdas y agregar estilos condicionales a las tablas.
 
-Estos tutoriales ayudarán a los desarrolladores a dominar las técnicas esenciales para trabajar con tablas en Aspose.Words para .NET. Ya sea que sea un desarrollador principiante o experimentado, estos recursos lo ayudarán a mejorar sus habilidades de formateo y manipulación de tablas, lo que le permitirá crear documentos de Word profesionales y estéticamente agradables.
+Estos tutoriales ayudarán a los desarrolladores a dominar las técnicas esenciales para el procesamiento de textos con tablas en Aspose.Words para .NET. Ya sea que sea un desarrollador principiante o experimentado, estos recursos lo ayudarán a mejorar sus habilidades de formateo y manipulación de tablas, lo que le permitirá crear documentos de Word profesionales y estéticamente agradables.
 
  ## Tutoriales
 | Título | Descripción |
@@ -30,5 +30,5 @@ Estos tutoriales ayudarán a los desarrolladores a dominar las técnicas esencia
 | [Expandir formato en celdas y fila desde estilo](./expand-formatting-on-cells-and-row-from-style/) | Guía paso a paso para expandir el formato a celdas y filas desde un estilo de tabla usando Aspose.Words para .NET. |
 | [Crear estilo de tabla](./create-table-style/) | Guía paso a paso para crear un estilo de tabla personalizado con Aspose.Words para .NET. |
 | [Definir formato condicional](./define-conditional-formatting/) | Guía paso a paso para definir formato condicional en una tabla usando Aspose.Words para .NET. |
-| [Establecer formato de celda de tabla](./set-table-cell-formatting/) | Guía paso a paso para configurar el formato de las celdas de la tabla con Aspose.Words para .NET. |
-| [Establecer el formato de fila de la tabla](./set-table-row-formatting/) | Guía paso a paso para configurar el formato de fila de la tabla con Aspose.Words para .NET. |
+| [Establecer formato de celda de tabla](./set-table-cell-formatting/) | Guía paso a paso para configurar el formato de celdas de tablas usando Aspose.Words para .NET. |
+| [Establecer el formato de fila de la tabla](./set-table-row-formatting/) | Guía paso a paso para configurar el formato de fila de la tabla usando Aspose.Words para .NET. |

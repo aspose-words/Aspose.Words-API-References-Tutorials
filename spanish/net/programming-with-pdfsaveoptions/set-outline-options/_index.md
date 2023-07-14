@@ -1,7 +1,7 @@
 ---
 title: Establecer opciones de esquema en un documento PDF
 linktitle: Establecer opciones de esquema en un documento PDF
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para establecer opciones de esquema en un documento PDF con Aspose.Words para .NET.
 type: docs
 weight: 10

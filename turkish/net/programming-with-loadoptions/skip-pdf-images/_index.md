@@ -1,14 +1,14 @@
 ---
 title: Pdf Resimleri Atla
 linktitle: Pdf Resimleri Atla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile PDF görüntülerini yüklemeyi atlayarak bir PDF belgesini nasıl yükleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/skip-pdf-images/
 ---
 
-Bir C# uygulamasında PDF belgeleriyle çalışırken, performans veya depolama alanı yönetimi nedenleriyle PDF görüntülerini yüklemeyi atlamak gerekebilir. .NET için Aspose.Words kitaplığıyla, PdfLoadOptions yükleme seçeneklerini kullanarak PDF görüntülerini yüklemeyi kolayca atlayabilirsiniz. Bu adım adım kılavuzda, PdfLoadOptions yükleme seçeneklerini kullanarak PDF görüntülerinin yüklenmesini atlayarak bir PDF belgesi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
+Bir C# uygulamasında PDF belgeleriyle Sözcük İşleme yaparken, performans veya depolama alanı yönetimi nedenleriyle PDF görüntülerini yüklemeyi atlamak gerekebilir. .NET için Aspose.Words kitaplığıyla, PdfLoadOptions yükleme seçeneklerini kullanarak PDF görüntülerini yüklemeyi kolayca atlayabilirsiniz. Bu adım adım kılavuzda, PdfLoadOptions yükleme seçeneklerini kullanarak PDF görüntülerinin yüklenmesini atlayarak bir PDF belgesi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
 ## Aspose.Words kitaplığını anlama
 

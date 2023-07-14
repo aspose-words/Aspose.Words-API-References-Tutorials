@@ -1,7 +1,7 @@
 ---
 title: Очистить повторяющийся стиль
 linktitle: Очистить повторяющийся стиль
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по удалению повторяющихся стилей в документе с помощью Aspose.Words для .NET. Полный исходный код включен.
 type: docs
 weight: 10

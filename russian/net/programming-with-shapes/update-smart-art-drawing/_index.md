@@ -1,7 +1,7 @@
 ---
 title: Обновить интеллектуальный художественный рисунок
 linktitle: Обновить интеллектуальный художественный рисунок
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как обновить рисунок Smart Art в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /ru/net/programming-with-shapes/update-smart-art-drawing/
 Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
 - Установлена библиотека Aspose.Words for .NET.
-- Базовые знания C# и работы с документами Word.
+- Базовые знания C# и Word Processing с документами Word.
 
 ## Шаг 1. Настройте каталог документов
  Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором находится ваш документ.
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ### Пример исходного кода для обновления рисунка Smart Art с помощью Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "SmartArt.docx");

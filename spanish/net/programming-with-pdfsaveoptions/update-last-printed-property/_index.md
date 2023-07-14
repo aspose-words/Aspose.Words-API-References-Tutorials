@@ -1,7 +1,7 @@
 ---
 title: Actualizar última propiedad impresa en documento PDF
 linktitle: Actualizar última propiedad impresa en documento PDF
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para actualizar la propiedad "Última impresión" al convertir a PDF con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ R: Para actualizar la propiedad "Última impresión" en un documento PDF con Asp
 
  Crear una instancia de la`Document` class especificando la ruta al documento de Word.
 
- Crear una instancia de la`PdfSaveOptions` clase y establecer el`UpdateLastPrintedProperty` propiedad a`true` para habilitar la actualización de la propiedad "Última impresión".
+ Crear una instancia de la`PdfSaveOptions`clase y establecer el`UpdateLastPrintedProperty` propiedad a`true` para habilitar la actualización de la propiedad "Última impresión".
 
  Utilizar el`Save` metodo de la`Document`class para guardar el documento en formato PDF especificando las opciones de guardado.
 

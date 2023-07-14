@@ -1,7 +1,7 @@
 ---
 title: Kontrollera Sekvens
 linktitle: Kontrollera Sekvens
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du kontrollerar sekvensen av textrutor i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ Den här steg-för-steg-guiden förklarar hur du kontrollerar sekvensen av textr
 
 ## Steg 1: Konfigurera dokumentet och skapa en TextBox-form
 
-För att börja måste vi ställa in dokumentet och skapa en TextBox-form. Följande kod initierar en ny instans av`Document` klass och skapar en textrutaform:
+ För att börja måste vi ställa in dokumentet och skapa en TextBox-form. Följande kod initierar en ny instans av`Document` klass och skapar en textrutaform:
 
 ```csharp
 Document doc = new Document();

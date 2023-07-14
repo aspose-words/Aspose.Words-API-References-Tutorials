@@ -1,7 +1,7 @@
 ---
 title: Gerçek Şekil Sınır Noktalarını Alın
 linktitle: Gerçek Şekil Sınır Noktalarını Alın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir Word belgesindeki noktalar (ölçüm birimi) olarak bir şeklin gerçek sınırlarını nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesindeki noktala
 Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
 - Aspose.Words for .NET kitaplığı yüklendi.
-- Temel C# bilgisi ve Word belgeleriyle çalışma.
+- Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
  Yeni bir örneğini oluştur`Document` sınıf ve bir`DocumentBuilder` belgeyle çalışmak için nesne.
@@ -33,7 +33,7 @@ shape.AspectRatioLocked = false;
 ```
 
 ## 3. Adım: Gerçek Şekil Sınır Noktalarını Alın
- Şekle erişin`ShapeRenderer` kullanmak`GetShapeRenderer`yöntem. Ardından, şeklin gerçek sınırlarını nokta olarak alın.`BoundsInPoints` mülk.
+ Şekle erişin`ShapeRenderer` kullanmak`GetShapeRenderer` yöntem. Ardından, şeklin gerçek sınırlarını nokta olarak alın.`BoundsInPoints` mülk.
 
 ```csharp
 Console.Write("\nGets the actual bounds of the shape in points: ");

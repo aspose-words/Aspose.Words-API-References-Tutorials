@@ -1,7 +1,7 @@
 ---
 title: Sposta nodo nel documento tracciato
 linktitle: Sposta nodo nel documento tracciato
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Sposta i nodi in un documento tracciato con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
 ## Conclusione
 
-In questo tutorial, abbiamo imparato come spostare un nodo in un documento Word tracciato utilizzando Aspose.Words per .NET. Seguendo i passaggi di creazione del documento, abilitando il tracciamento delle revisioni, spostando il nodo e interrompendo il tracciamento delle revisioni, siamo stati in grado di eseguire correttamente questa manipolazione. Aspose.Words per .NET è un potente strumento per lavorare con documenti Word e offre funzionalità avanzate per la gestione delle revisioni. Ora puoi usare questa conoscenza per spostare i nodi nei tuoi documenti Word mentre tieni traccia delle revisioni usando Aspose.Words per .NET.
+In questo tutorial, abbiamo imparato come spostare un nodo in un documento Word tracciato utilizzando Aspose.Words per .NET. Seguendo i passaggi di creazione del documento, abilitando il tracciamento delle revisioni, spostando il nodo e interrompendo il tracciamento delle revisioni, siamo stati in grado di eseguire correttamente questa manipolazione. Aspose.Words per .NET è un potente strumento per l'elaborazione di testi con documenti Word e offre funzionalità avanzate per la gestione delle revisioni. Ora puoi usare questa conoscenza per spostare i nodi nei tuoi documenti Word mentre tieni traccia delle revisioni usando Aspose.Words per .NET.
 
 ### FAQ
 

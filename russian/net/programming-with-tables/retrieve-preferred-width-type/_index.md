@@ -1,7 +1,7 @@
 ---
 title: Получить предпочтительный тип ширины
 linktitle: Получить предпочтительный тип ширины
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как получить тип и предпочтительное значение ширины ячейки в таблице Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ url: /ru/net/programming-with-tables/retrieve-preferred-width-type/
 2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
 
 ## Шаг 2: Загрузка документа
-Чтобы начать работу с документом, выполните следующие действия:
+Чтобы запустить Word Processing с документом, выполните следующие действия:
 
 ```csharp
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
@@ -50,7 +50,7 @@ double value = firstCell.CellFormat.PreferredWidth.Value;
 ### Пример исходного кода для извлечения предпочтительного типа ширины с использованием Aspose.Words для .NET 
 
 ```csharp
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

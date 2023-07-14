@@ -1,7 +1,7 @@
 ---
 title: Documento de clonación
 linktitle: Documento de clonación
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a clonar un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10

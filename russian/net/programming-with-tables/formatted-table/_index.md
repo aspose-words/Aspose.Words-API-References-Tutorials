@@ -1,7 +1,7 @@
 ---
 title: Форматированная таблица
 linktitle: Форматированная таблица
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как создать форматированную таблицу в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -112,7 +112,7 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ### Пример исходного кода для форматированной таблицы с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

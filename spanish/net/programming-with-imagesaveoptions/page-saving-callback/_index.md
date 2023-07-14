@@ -1,7 +1,7 @@
 ---
 title: Devolución de llamada para guardar página
 linktitle: Devolución de llamada para guardar página
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a personalizar el guardado de páginas de documentos en imágenes con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ public class HandlePageSavingCallback : IPageSavingCallback
 }
 ```
 
- En este paso, implementamos el`HandlePageSavingCallback` clase que implementa el`IPageSavingCallback` interfaz. Puede personalizar esta clase agregando sus acciones específicas en el`PageSaving` método. Puede acceder a la información de la página a través del`args.PageIndex` propiedad de la`PageSavingArgs` objeto pasado como argumento.
+ En este paso, implementamos el`HandlePageSavingCallback` clase que implementa el`IPageSavingCallback` interfaz. Puede personalizar esta clase agregando sus acciones específicas en el`PageSaving` método. Puede acceder a la información de la página a través del`args.PageIndex`propiedad de la`PageSavingArgs` objeto pasado como argumento.
 
 ## Paso 5: Guardar páginas como imágenes
 
@@ -67,7 +67,7 @@ Ahora puede ejecutar el código fuente para realizar acciones personalizadas al 
 
 
 ```csharp 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 

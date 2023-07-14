@@ -1,7 +1,7 @@
 ---
 title: Aggiungi il giapponese come lingue di modifica
 linktitle: Aggiungi il giapponese come lingue di modifica
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per aggiungere il giapponese come lingua di modifica con Aspose.Words per .NET.
 type: docs
 weight: 10

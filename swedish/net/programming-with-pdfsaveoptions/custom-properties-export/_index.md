@@ -1,7 +1,7 @@
 ---
 title: Exportera anpassade egenskaper i ett PDF-dokument
 linktitle: Exportera anpassade egenskaper i ett PDF-dokument
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du exporterar anpassade egenskaper när du konverterar dokument till PDF med Aspose.Words för .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Добавить документ
 linktitle: Добавить документ
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как добавить содержимое одного документа в другой с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
 ### Пример исходного кода для добавления документа с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocument.docx");
 	// Узлы раздела являются непосредственными дочерними элементами узла документа, поэтому мы можем просто перечислить документ.
 	foreach (Section srcSection in srcDoc)
 	{
-		//Поскольку мы копируем раздел из одного документа в другой,
+		// Поскольку мы копируем раздел из одного документа в другой,
 		// необходимо импортировать узел Section в целевой документ.
 		// Это настраивает любые специфические для документа ссылки на стили, списки и т. д.
 		//

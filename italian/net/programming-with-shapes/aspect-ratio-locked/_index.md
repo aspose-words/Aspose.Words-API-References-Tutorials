@@ -1,7 +1,7 @@
 ---
 title: Proporzioni bloccate
 linktitle: Proporzioni bloccate
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come bloccare o sbloccare le proporzioni di una forma in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Questo tutorial spiega come bloccare o sbloccare le proporzioni di una forma in 
 Per seguire questo tutorial, è necessario disporre di quanto segue:
 
 - Aspose.Words per la libreria .NET installata.
-- Conoscenza di base di C# e lavoro con documenti Word.
+- Conoscenza di base di C# e Word Processing con documenti Word.
 
 ## Passaggio 1: impostare la directory dei documenti
- Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo della directory in cui si desidera salvare il documento.
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui si desidera salvare il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,10 +39,10 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
 ```
 
 ## Passaggio 4: bloccare o sbloccare le proporzioni
- Impostare il`AspectRatioLocked` proprietà della forma a`true` O`false`rispettivamente per bloccare o sbloccare le proporzioni.
+ Impostare il`AspectRatioLocked` proprietà della forma a`true` O`false` rispettivamente per bloccare o sbloccare le proporzioni.
 
 ```csharp
-shape.AspectRatioLocked = false; // Sblocca le proporzioni
+shape.AspectRatioLocked = false; //Sblocca le proporzioni
 ```
 
 ## Passaggio 5: salvare il documento
@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ### Esempio di codice sorgente per Aspect Ratio Locked utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

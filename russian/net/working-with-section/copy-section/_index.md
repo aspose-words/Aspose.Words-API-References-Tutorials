@@ -1,7 +1,7 @@
 ---
 title: Копировать раздел
 linktitle: Копировать раздел
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: В этом руководстве вы узнаете, как скопировать раздел из документа Word в другой документ с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -59,7 +59,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document.docx");

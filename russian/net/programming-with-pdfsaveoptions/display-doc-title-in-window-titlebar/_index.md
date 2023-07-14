@@ -1,7 +1,7 @@
 ---
 title: Отображать заголовок документа в заголовке окна
 linktitle: Отображать заголовок документа в заголовке окна
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как отобразить заголовок документа в строке заголовка окна при преобразовании в PDF с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Acceder a la versión revisada
 linktitle: Acceder a la versión revisada
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Acceda a una versión revisada de un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -87,7 +87,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### P: ¿Cómo accedo a la versión revisada de un documento en Aspose.Words para .NET?
 
- R: Usa el`RevisionsView` propiedad de la`Document` oponerse a acceder a la versión revisada del documento. Puede establecer el valor de la`RevisionsView` propiedad a`RevisionsView.Final` para mostrar la versión final sin las revisiones.
+ R: Usa el`RevisionsView`propiedad de la`Document` oponerse a acceder a la versión revisada del documento. Puede establecer el valor de la`RevisionsView` propiedad a`RevisionsView.Final` para mostrar la versión final sin las revisiones.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### P: ¿Cómo busco revisiones de documentos en Aspose.Words para .NET?
 
- R: Usa un`foreach` loop para iterar a través de las revisiones presentes en el documento. Puedes usar el`Revisions` propiedad de la`Document` object para obtener una colección de todas las revisiones del documento.
+ R: Usa un`foreach` loop para iterar a través de las revisiones presentes en el documento. Puedes usar el`Revisions`propiedad de la`Document` object para obtener una colección de todas las revisiones del documento.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -106,7 +106,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### P: ¿Cómo verificar si un párrafo es un elemento de lista en Aspose.Words para .NET?
 
- R: Usa el`IsListItem` propiedad de la`Paragraph` objeto para comprobar si un párrafo es un elemento de lista. El`IsListItem` devoluciones de propiedad`true` si el párrafo es un elemento de lista, de lo contrario, devuelve`false`.
+ R: Usa el`IsListItem`propiedad de la`Paragraph` objeto para comprobar si un párrafo es un elemento de lista. El`IsListItem` devoluciones de propiedad`true` si el párrafo es un elemento de lista, de lo contrario, devuelve`false`.
 
 ```csharp
 if (paragraph.IsListItem)

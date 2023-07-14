@@ -1,7 +1,7 @@
 ---
 title: Rasterizar elementos transformados
 linktitle: Rasterizar elementos transformados
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a deshabilitar la rasterización de elementos transformados al convertir a formato PCL con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Aspose.Words para .NET es una poderosa biblioteca para crear, manipular y conver
 
 ## Comprender la biblioteca Aspose.Words
 
-Antes de sumergirse en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una biblioteca popular que hace que trabajar con documentos de Word sea fácil y eficiente. Ofrece una amplia gama de funciones para crear, editar y convertir documentos de Word, incluido el soporte para rasterizar elementos transformados durante la conversión.
+Antes de sumergirse en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una biblioteca popular que hace que el procesamiento de textos con documentos de Word sea fácil y eficiente. Ofrece una amplia gama de funciones para crear, editar y convertir documentos de Word, incluido el soporte para rasterizar elementos transformados durante la conversión.
 
 ## Cargando el documento de Word
 

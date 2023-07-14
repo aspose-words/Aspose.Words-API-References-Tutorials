@@ -1,7 +1,7 @@
 ---
 title: Usar fuente de la máquina de destino
 linktitle: Usar fuente de la máquina de destino
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a convertir un documento de Word a HTML fijo usando las fuentes de la máquina de destino con Aspose.Words para .NET.
 type: docs
 weight: 10

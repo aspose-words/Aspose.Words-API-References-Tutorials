@@ -1,7 +1,7 @@
 ---
 title: Hantera utrymmesalternativ
 linktitle: Hantera utrymmesalternativ
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du hanterar utrymmen i dina TXT-dokument med Aspose.Words för .NET. Ta bort onödiga utrymmen och förbättra läsbarheten.
 type: docs
 weight: 10

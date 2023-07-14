@@ -1,7 +1,7 @@
 ---
 title: İçe Aktarma Biçimi Seçenekleriyle Ekle
 linktitle: İçe Aktarma Biçimi Seçenekleriyle Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak içe aktarma formatı seçenekleriyle bir belgeyi nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -39,7 +39,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## 4. Adım: Kaynak belgeyi hedef belgeye ekleyin
 
- Kullan`AppendDocument` kaynak belgeyi eklemek için hedef belgenin yöntemi. Geçmek`ImportFormatMode.UseDestinationStyles` hedef belgenin stillerini ve biçimlendirmesini kullanmak için ikinci parametre olarak.
+ Kullan`AppendDocument`kaynak belgeyi eklemek için hedef belgenin yöntemi. Geçmek`ImportFormatMode.UseDestinationStyles` hedef belgenin stillerini ve biçimlendirmesini kullanmak için ikinci parametre olarak.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -58,12 +58,12 @@ Bu, Aspose.Words for .NET kullanılarak içe aktarma biçimi seçenekleriyle bir
 ### Aspose.Words for .NET kullanan Append With Import Format Options için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//Kaynak ve hedef belgelerde numaralandırma çakışırsa,
+	// Kaynak ve hedef belgelerde numaralandırma çakışırsa,
 	// daha sonra kaynak belgeden numaralandırma kullanılacaktır.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

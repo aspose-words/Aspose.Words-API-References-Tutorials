@@ -1,7 +1,7 @@
 ---
 title: Hämta teckensnittsradavstånd
 linktitle: Hämta teckensnittsradavstånd
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: I den här handledningen lär du dig hur du får teckensnittsradavstånd i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

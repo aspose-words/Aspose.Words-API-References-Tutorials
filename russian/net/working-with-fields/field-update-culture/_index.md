@@ -1,7 +1,7 @@
 ---
 title: Культура обновления поля
 linktitle: Культура обновления поля
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как обновить культуру полей в документах Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -61,7 +61,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Вставьте поле времени.
 builder. InsertField(FieldType.FieldTime, true);
 
-//Настройте культуру обновления полей.
+// Настройте культуру обновления поля.
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 

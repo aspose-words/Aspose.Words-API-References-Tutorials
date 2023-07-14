@@ -1,7 +1,7 @@
 ---
 title: Sahip Belgesi
 linktitle: Sahip Belgesi
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET'te sahip belgesini nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10

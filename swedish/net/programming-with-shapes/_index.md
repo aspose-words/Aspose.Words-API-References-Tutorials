@@ -1,13 +1,13 @@
 ---
-title: Programmering Med Former
-linktitle: Programmering Med Former
-second_title: Aspose.Words för .NET API Referens
+title: Ordbehandling med former
+linktitle: Ordbehandling med former
+second_title: Aspose.Words Document Processing API
 description: Utforska formprogrammering i Aspose.Words för .NET. Lär dig hur du manipulerar och anpassar former i dina Word-dokument med steg-för-steg handledningar och exempelkod i C#.
 type: docs
 weight: 1560
 url: /sv/net/programming-with-shapes/
 ---
-Aspose.Words för .NET-handledningarna om programmering med former erbjuder en omfattande guide för att manipulera och hantera former i Word-dokument. Dessa tutorials förklarar steg för steg hur man skapar, modifierar och tar bort former, samt hur man anpassar dem när det gäller färg, storlek, position och andra attribut. Handledningarna inkluderar tydliga kodexempel och steg-för-steg-förklaringar för enkel förståelse och implementering.
+Aspose.Words för .NET-handledningarna om ordbehandling med former erbjuder en omfattande guide för att manipulera och hantera former i Word-dokument. Dessa tutorials förklarar steg för steg hur man skapar, modifierar och tar bort former, samt hur man anpassar dem när det gäller färg, storlek, position och andra attribut. Handledningarna inkluderar tydliga kodexempel och steg-för-steg-förklaringar för enkel förståelse och implementering.
 
 Genom dessa handledningar kommer du att lära dig hur du lägger till former i dina dokument, såsom rektanglar, cirklar, linjer och pilar, för att förbättra layout och informationsvisualisering. Du kommer också att lära dig hur du manipulerar formegenskaper, såsom rotation, transparens och fyllning, för att passa dina specifika behov.
 

@@ -1,7 +1,7 @@
 ---
 title: Formattazione dei caratteri
 linktitle: Formattazione dei caratteri
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: In questo tutorial, scopri come formattare il carattere in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ### Esempio di codice sorgente per la formattazione dei caratteri utilizzando Aspose.Words per .NET 
 ```csharp
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

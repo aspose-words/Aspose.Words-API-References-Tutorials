@@ -1,7 +1,7 @@
 ---
 title: Bädda in teckensnitt i PDF-dokument
 linktitle: Bädda in teckensnitt i PDF-dokument
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg för steg guide för att bädda in teckensnitt i en PDF med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -97,4 +97,4 @@ Förbättrad läsbarhet: Inbäddning av typsnitt säkerställer bättre läsbarh
 S: Ja, inbäddning av alla teckensnitt i ett PDF-dokument kan öka storleken på den genererade PDF-filen, eftersom teckensnittsdata måste inkluderas i filen. Denna storleksökning är dock vanligtvis försumbar för de flesta dokument, och fördelarna med att bädda in typsnitt uppväger ofta denna lilla storleksökning.
 
 #### F: Kan jag välja specifika typsnitt att bädda in i ett PDF-dokument?
- S: Ja, med Aspose.Words för .NET kan du välja specifika typsnitt att bädda in i ett PDF-dokument med hjälp av avancerade konfigurationsalternativ. Du kan till exempel använda`SubsetFonts` egendom av`PdfSaveOptions` objekt för att ange vilka typsnitt som ska inkluderas, eller använd ytterligare alternativ för att ställa in anpassade typsnittsvalsfilter.
+ S: Ja, med Aspose.Words för .NET kan du välja specifika typsnitt att bädda in i ett PDF-dokument med hjälp av avancerade konfigurationsalternativ. Du kan till exempel använda`SubsetFonts`egendom av`PdfSaveOptions` objekt för att ange vilka typsnitt som ska inkluderas, eller använd ytterligare alternativ för att ställa in anpassade typsnittsvalsfilter.

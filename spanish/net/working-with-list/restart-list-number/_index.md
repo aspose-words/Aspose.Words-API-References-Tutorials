@@ -1,7 +1,7 @@
 ---
 title: Número de lista de reinicio
 linktitle: Número de lista de reinicio
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a restablecer el número de una lista en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -126,7 +126,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### P: ¿Es posible reiniciar la numeración de listas de varios niveles en Aspose.Words?
 
- R: Sí, Aspose.Words admite la numeración de reinicio de varios niveles de lista. Puedes aplicar el`ListRestartAtNumber` en cada nivel de lista para reiniciar la numeración individualmente. Por ejemplo, puedes usar`list.Levels[0].ListRestartAtNumber(1)` para reiniciar el primer nivel de lista desde 1, y`list.Levels[1].ListRestartAtNumber(1)` para reiniciar la lista de segundo nivel a partir de 1, y así sucesivamente.
+ R: Sí, Aspose.Words admite la numeración de reinicio de múltiples niveles de lista. Puedes aplicar el`ListRestartAtNumber` en cada nivel de lista para reiniciar la numeración individualmente. Por ejemplo, puedes usar`list.Levels[0].ListRestartAtNumber(1)` para reiniciar el primer nivel de lista desde 1, y`list.Levels[1].ListRestartAtNumber(1)` para reiniciar la lista de segundo nivel a partir de 1, y así sucesivamente.
 
 
 

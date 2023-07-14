@@ -1,7 +1,7 @@
 ---
 title: Rensa innehållskontroll
 linktitle: Rensa innehållskontroll
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du rensar innehållet i en kontroll i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Denna handledning visar hur man rensar innehållet i en SDT i ett Word-dokument 
 För att följa denna handledning måste du ha följande:
 
 - Aspose.Words för .NET-biblioteket installerat.
-- Grundläggande kunskaper i C# och att arbeta med Word-dokument.
+- Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Konfigurera dokumentkatalogen
  Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till katalogen där ditt dokument finns.
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## Steg 4: Spara dokumentet
-Spara det ändrade dokumentet med hjälp av`Save`metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.ClearContentsControl.doc".
+ Spara det ändrade dokumentet med hjälp av`Save`metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.ClearContentsControl.doc".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 ### Exempel på källkod för Clear Contents Control med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

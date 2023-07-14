@@ -1,7 +1,7 @@
 ---
 title: Carica il dizionario di sillabazione per la lingua
 linktitle: Carica il dizionario di sillabazione per la lingua
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come caricare un dizionario di sillabazione per una lingua specifica in Aspose.Words per .NET.
 type: docs
 weight: 10

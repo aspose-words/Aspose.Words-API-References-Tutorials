@@ -1,7 +1,7 @@
 ---
 title: Ölçü birimi
 linktitle: Ölçü birimi
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesini ODT'ye dönüştürürken ölçü birimini nasıl belirteceğinizi öğrenin.
 type: docs
 weight: 10
@@ -64,4 +64,4 @@ doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 
 ## Çözüm
 
-Bu kılavuzda, Aspose.Words for .NET kitaplığı ile OdtSaveOptions kaydetme seçeneklerini kullanarak ölçü birimini belirterek bir Word belgesini ODT'ye nasıl dönüştüreceğinizi açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. ODT'ye dönüştürürken ölçü birimini belirtmek, ortaya çıkan belgenin biçimlendirmesini ve boyutlarını özel ihtiyaçlarınıza göre kontrol etmenizi sağlar.
+Bu kılavuzda, Aspose.Words for .NET kitaplığı ile OdtSaveOptions kaydetme seçeneklerini kullanarak bir Word belgesini ölçü birimini belirterek ODT'ye nasıl dönüştüreceğinizi açıkladık. Sağlanan adımları izleyerek ve sağlanan C# kaynak kodunu kullanarak bu işlevi C# uygulamanıza kolayca uygulayabilirsiniz. ODT'ye dönüştürürken ölçü birimini belirtmek, ortaya çıkan belgenin biçimlendirmesini ve boyutlarını özel ihtiyaçlarınıza göre kontrol etmenizi sağlar.

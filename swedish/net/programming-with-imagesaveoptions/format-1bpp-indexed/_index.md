@@ -1,7 +1,7 @@
 ---
 title: Format 1Bpp Indexerad
 linktitle: Format 1Bpp Indexerad
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du formaterar bilder i 1 bpp indexerade med Aspose.Words för .NET. Komplett handledning för bilder med lågt färgdjup.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ Nu kan du köra källkoden för att formatera dokumentbilderna i PNG-format med 
 
 ```csharp 
  
-			 // Sökväg till din dokumentkatalog
+			 //Sökväg till din dokumentkatalog
 			 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
             
             Document doc = new Document(dataDir + "Rendering.docx");

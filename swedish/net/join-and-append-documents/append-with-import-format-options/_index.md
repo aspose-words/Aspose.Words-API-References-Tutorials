@@ -1,7 +1,7 @@
 ---
 title: Lägg till med importformatalternativ
 linktitle: Lägg till med importformatalternativ
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till ett dokument med importformatalternativ med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -39,7 +39,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Steg 4: Lägg till källdokumentet till måldokumentet
 
- Använd`AppendDocument` metod för måldokumentet för att lägga till källdokumentet. Passera`ImportFormatMode.UseDestinationStyles` som den andra parametern för att använda måldokumentets stilar och formatering.
+ Använd`AppendDocument`metod för måldokumentet för att lägga till källdokumentet. Passera`ImportFormatMode.UseDestinationStyles` som den andra parametern för att använda måldokumentets stilar och formatering.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -58,12 +58,12 @@ Detta slutför implementeringen av att lägga till ett dokument med importformat
 ### Exempel på källkod för Lägg till med importformatalternativ med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//Ange att om numrering krockar i käll- och måldokument,
+	// Ange att om numrering krockar i käll- och måldokument,
 	// då kommer numrering från källdokumentet att användas.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

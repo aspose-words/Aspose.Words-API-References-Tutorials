@@ -1,7 +1,7 @@
 ---
 title: Konvertera fält i stycke
 linktitle: Konvertera fält i stycke
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Konvertera IF-fält till vanlig text i ett stycke med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -41,7 +41,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
- Den här koden använder en kombination av LINQ-metoder för att filtrera bort fält i dokumentets sista stycke och konverterar dem sedan till vanlig text genom att anropa`Unlink()` metod.
+Den här koden använder en kombination av LINQ-metoder för att filtrera bort fält i dokumentets sista stycke och konverterar dem sedan till vanlig text genom att anropa`Unlink()` metod.
 
 ## Steg 4: Spara det ändrade dokumentet
 

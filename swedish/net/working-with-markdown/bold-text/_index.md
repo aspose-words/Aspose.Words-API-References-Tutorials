@@ -1,7 +1,7 @@
 ---
 title: Fettext
 linktitle: Fettext
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du gör fet text med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10
@@ -53,7 +53,7 @@ Grattis! Du har nu lärt dig hur man fet text med Aspose.Words för .NET.
 
 #### F: Hur kan jag göra text fet i Aspose.Words?
 
- S: För att göra text fet i Aspose.Words kan du använda`Font.Bold` egendom av`Run`objekt. Du kan ställa in den här egenskapen till`true` till fet specifik text. Du kan till exempel använda`run.Font.Bold=true` för att feta texten inuti`Run` objekt.
+ S: För att göra text fet i Aspose.Words kan du använda`Font.Bold`egendom av`Run`objekt. Du kan ställa in den här egenskapen till`true` till fet specifik text. Du kan till exempel använda`run.Font.Bold=true` för att feta texten inuti`Run` objekt.
 
 #### F: Är det möjligt att feta flera stycken text i samma stycke?
 
@@ -61,4 +61,4 @@ Grattis! Du har nu lärt dig hur man fet text med Aspose.Words för .NET.
 
 #### F: Kan jag fet text som finns i en tabell eller cell i Aspose.Words?
 
- S: Ja, du kan fet text som finns i en tabell eller cell i Aspose.Words. Du kan navigera till cellen eller stycket du vill använda med lämpliga metoder och sedan tillämpa den fetstilta formateringen med hjälp av`Font.Bold` egendom av`Run` eller`Paragraph` objekt.
+ S: Ja, du kan fet text som finns i en tabell eller cell i Aspose.Words. Du kan navigera till cellen eller stycket du vill använda med lämpliga metoder och sedan tillämpa den fetstilta formateringen med hjälp av`Font.Bold`egendom av`Run` eller`Paragraph` objekt.

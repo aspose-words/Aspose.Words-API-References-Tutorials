@@ -1,7 +1,7 @@
 ---
 title: Modifica la formattazione della riga
 linktitle: Modifica la formattazione della riga
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per modificare la formattazione delle righe della tabella utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ firstRow.RowFormat.AllowBreakAcrossPages = true;
 ### Esempio di codice sorgente per modificare la formattazione delle righe utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

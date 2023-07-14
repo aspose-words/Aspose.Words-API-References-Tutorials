@@ -1,13 +1,13 @@
 ---
-title: Revizyonlarla Çalışmak
-linktitle: Revizyonlarla Çalışmak
-second_title: Aspose.Words for .NET API Referansı
+title: Revizyonlarla Kelime İşleme
+linktitle: Revizyonlarla Kelime İşleme
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerindeki revizyonlarla nasıl çalışacağınızı öğrenin. Revizyonları yönetmek ve görüntülemek için örnek kod içeren adım adım öğreticiler.
 type: docs
 weight: 1130
 url: /tr/net/working-with-revisions/
 ---
-Revizyonlarla Çalışma öğreticileri, Aspose.Words for .NET'te revizyonlarla çalışmanın özellikleri konusunda size yol gösterir. Bu öğreticiler, bir Word belgesinde düzeltmeleri nasıl ekleyeceğinizi, kabul edeceğinizi, reddedeceğinizi ve görüntüleyeceğinizi gösterir. Ayrıca revizyonlara göz atmayı, her revizyon hakkında ayrıntılı bilgi almayı ve revizyonları birleştirme gibi ileri düzey işlemleri gerçekleştirmeyi öğreneceksiniz.
+Revizyonlarla Kelime İşleme eğitimleri, Aspose.Words for .NET'teki revizyonlarla Kelime İşlemenin özellikleri konusunda size yol gösterir. Bu öğreticiler, bir Word belgesinde düzeltmeleri nasıl ekleyeceğinizi, kabul edeceğinizi, reddedeceğinizi ve görüntüleyeceğinizi gösterir. Ayrıca revizyonlara göz atmayı, her revizyon hakkında ayrıntılı bilgi almayı ve revizyonları birleştirme gibi ileri düzey işlemleri gerçekleştirmeyi öğreneceksiniz.
 
 Bu öğreticileri takip ederek, Aspose.Words for .NET kullanarak Word belgelerinizdeki revizyonları nasıl etkili bir şekilde yöneteceğinizi öğreneceksiniz. Belge içeriğindeki değişiklikleri nasıl kontrol edeceğinizi, diğer kullanıcılarla nasıl işbirliği yapacağınızı ve yapılan değişikliklerin geçmişini nasıl tutacağınızı öğreneceksiniz. Öğreticiler, bu özelliklerde uzmanlaşmanıza yardımcı olacak ayrıntılı kod örnekleri ve anlaşılır açıklamalar sağlar.
 

@@ -1,7 +1,7 @@
 ---
-title: Yer İmlerine Erişim
-linktitle: Yer İmlerine Erişim
-second_title: Aspose.Words for .NET API Referansı
+title: Word Belgesinde Yer İşaretlerine Erişin
+linktitle: Word Belgesinde Yer İşaretlerine Erişin
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir Word belgesindeki yer imlerine nasıl erişeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -60,3 +60,48 @@ Aspose.Words for .NET kullanarak yer imlerine erişimi gösteren tam örnek kayn
 ## Çözüm
 
 Bu makalede, Aspose.Words for .NET'in Access Bookmarks özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Dizin ve ad kullanarak bir belge yüklemek ve yer imlerine erişmek için adım adım bir kılavuz izledik.
+
+### Word belgesindeki yer imlerine erişim için SSS
+
+#### S: Aspose.Words for .NET kullanarak bir Word belgesini nasıl yükleyebilirim?
+
+ C: Aspose.Words for .NET kullanarak bir Word belgesi yüklemek için`Document` belgenin dosya yolunu belirterek nesne. İşte örnek bir kod:
+
+```csharp
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Document doc = new Document(dataDir + "Bookmarks.docx");
+```
+
+#### S: Bir Word belgesindeki yer imlerine nasıl erişebilirim?
+
+ C: Bir Word belgesindeki yer imlerine,`Bookmarks`mülkiyeti`Range` nesne. Yer imlerine dizine veya ada göre erişebilirsiniz. İşte örnek bir kod:
+
+- Dizine göre erişim:
+
+```csharp
+Bookmark bookmark1 = doc.Range.Bookmarks[0];
+```
+
+- Ada göre erişim:
+
+```csharp
+Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
+```
+
+#### S: Aspose.Words for .NET'te yer imi erişim özelliğini kullanmak için hangi kütüphane gereklidir?
+
+C: Aspose.Words for .NET'teki yer imi erişim özelliğini kullanmak için Aspose.Words kitaplığına ihtiyacınız var. .NET geliştirme ortamınızda bu kitaplığın kurulu olduğundan emin olun.
+
+#### S: Bir Word belgesindeki yer imlerine erişmenin başka yolları var mı?
+
+ Y: Evet, yer imlerine dizine veya ada göre erişmenin yanı sıra, bir döngü kullanarak belgedeki tüm yer imleri arasında geçiş yapabilirsiniz. Belgedeki toplam yer imlerinin sayısını,`Count`mülkiyeti`Bookmarks` Toplamak. Ardından dizini kullanarak her yer imine erişebilirsiniz. İşte örnek bir kod:
+
+```csharp
+int bookmarkCount = doc.Range.Bookmarks.Count;
+
+for (int i = 0; i < bookmarkCount; i++)
+{
+     Bookmark bookmark = doc.Range.Bookmarks[i];
+     // Yer imiyle bir şeyler yapın...
+}
+```

@@ -1,7 +1,7 @@
 ---
 title: Kılavuza Yapış
 linktitle: Kılavuza Yapış
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Grid'e Yapış özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz.
 type: docs
 weight: 10

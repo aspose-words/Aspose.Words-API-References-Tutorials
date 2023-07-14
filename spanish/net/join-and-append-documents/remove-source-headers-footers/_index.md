@@ -1,7 +1,7 @@
 ---
 title: Eliminar encabezados de fuente Pies de página
 linktitle: Eliminar encabezados de fuente Pies de página
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a eliminar encabezados y pies de página mientras une y agrega documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 
 ## Paso 1: inicialice los directorios de documentos
 
- Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir` variable a la ruta donde se encuentran sus documentos.
+ Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir`variable a la ruta donde se encuentran sus documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -47,7 +47,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## Paso 4: deshabilite la configuración "LinkToPrevious" para encabezados y pies de página
 
-Incluso después de borrar los encabezados y pies de página del documento de origen, existe la posibilidad de que la configuración "Enlace a anterior" para`HeadersFooters` todavía se puede configurar. Para evitar este comportamiento, debe establecerlo explícitamente en`false` para la primera sección`HeadersFooters` propiedad.
+ Incluso después de borrar los encabezados y pies de página del documento de origen, existe la posibilidad de que la configuración "Enlace a anterior" para`HeadersFooters` todavía se puede configurar. Para evitar este comportamiento, debe establecerlo explícitamente en`false` para la primera sección`HeadersFooters` propiedad.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -75,7 +75,7 @@ Aquí está el código fuente completo para la función "Eliminar encabezados y 
 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -86,7 +86,7 @@ Aquí está el código fuente completo para la función "Eliminar encabezados y 
 		section.ClearHeadersFooters();
 	}
 	// Incluso después de borrar los encabezados y pies de página del documento de origen, la configuración "Enlace a anterior"
-	// para encabezados y pies de página todavía se pueden establecer. Esto hará que los encabezados y pies de página continúen desde el destino.
+	// para encabezados y pies de página todavía se pueden configurar. Esto hará que los encabezados y pies de página continúen desde el destino.
 	// documento. Esto debe establecerse en falso para evitar este comportamiento.
 	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

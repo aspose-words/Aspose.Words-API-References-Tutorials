@@ -1,7 +1,7 @@
 ---
 title: Riduci le dimensioni del PDF con la scala dei caratteri Wmf alla dimensione del metafile
 linktitle: Riduci le dimensioni del PDF con la scala dei caratteri Wmf alla dimensione del metafile
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo-passo per ridurre le dimensioni del pdf con la scala dei caratteri wmf alla dimensione del metafile durante la conversione in PDF con Aspose.Words per .NET.
 type: docs
 weight: 10

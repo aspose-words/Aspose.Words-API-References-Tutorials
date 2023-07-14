@@ -1,7 +1,7 @@
 ---
 title: Lisansı Uygula
 linktitle: Lisansı Uygula
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: .NET projelerinizde bir Aspose.Words lisansı uygulamak için adım adım talimatlar alın. Aspose.Words kitaplığının tam işlevselliğini etkinleştirmek için adımları izleyin.
 type: docs
 weight: 10

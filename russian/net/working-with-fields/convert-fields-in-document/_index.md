@@ -1,7 +1,7 @@
 ---
 title: Преобразование полей в документе
 linktitle: Преобразование полей в документе
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по преобразованию полей документа в текст с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Шаг 3: Загрузите документ
- Использовать`Document`класс Aspose.Words, чтобы загрузить документ Word, содержащий связанные поля, которые вы хотите преобразовать.
+ Использовать`Document` класс Aspose.Words, чтобы загрузить документ Word, содержащий связанные поля, которые вы хотите преобразовать.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");
@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## Шаг 5: Сохраните преобразованный документ
- Использовать`Save()` метод сохранения документа с полями, преобразованными в текст, в указанном каталоге документа.
+ Использовать`Save()`метод сохранения документа с полями, преобразованными в текст, в указанном каталоге документа.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

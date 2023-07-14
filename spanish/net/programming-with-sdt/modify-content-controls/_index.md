@@ -1,7 +1,7 @@
 ---
 title: Modificar controles de contenido
 linktitle: Modificar controles de contenido
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a modificar texto, listas desplegables e imágenes dentro de los controles de contenido en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Este tutorial explica cómo modificar diferentes tipos de controles de contenido
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y trabajo con documentos de Word.
+- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
  Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde se encuentra su documento.
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 ### Ejemplo de código fuente para modificar controles de contenido usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

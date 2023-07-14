@@ -1,7 +1,7 @@
 ---
 title: Fontları Base Olarak Dışa Aktar 64
 linktitle: Fontları Base Olarak Dışa Aktar 64
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgeyi kaydederken 64 tabanlı yazı tiplerini dışa aktarmak için adım adım kılavuz.
 type: docs
 weight: 10

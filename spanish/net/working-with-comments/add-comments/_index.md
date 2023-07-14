@@ -1,7 +1,7 @@
 ---
 title: Añadir comentarios
 linktitle: Añadir comentarios
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a agregar comentarios a documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -93,7 +93,7 @@ R: Sí, puede dar formato al texto de los comentarios en Aspose.Words para .NET 
 
 #### P: ¿Cómo puedo recuperar todos los comentarios presentes en un documento?
 
- R: Puede recuperar todos los comentarios presentes en un documento usando el`Document.Comments` propiedad.
+R: Puede recuperar todos los comentarios presentes en un documento usando el`Document.Comments` propiedad.
 
 #### P: ¿Puedo eliminar un comentario específico en Aspose.Words para .NET?
 

@@ -1,7 +1,7 @@
 ---
 title: Tillämpa licens från fil
 linktitle: Tillämpa licens från fil
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ansöker om en licens från en fil med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -17,7 +17,7 @@ Innan vi börjar, se till att du har följande förutsättningar på plats:
 - En giltig licensfil för Aspose.Words. 
 
 ## Steg 1: Importera Aspose.Words-namnområdet
-För att komma igång måste du importera Aspose.Words-namnrymden i din C#-kod. Detta namnutrymme tillhandahåller alla klasser och metoder som krävs för att arbeta med Word-dokument.
+För att komma igång måste du importera Aspose.Words-namnrymden i din C#-kod. Detta namnutrymme tillhandahåller alla klasser och metoder som krävs för ordbehandling med Word-dokument.
 
 ```csharp
 using Aspose.Words;

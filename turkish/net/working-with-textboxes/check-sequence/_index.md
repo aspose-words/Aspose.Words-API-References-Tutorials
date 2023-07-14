@@ -1,7 +1,7 @@
 ---
 title: Kontrol Sırası
 linktitle: Kontrol Sırası
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesindeki Metin Kutularının sırasını nasıl kontrol edeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ Bu adım adım kılavuz, .NET için Aspose.Words kitaplığı kullanılarak bir 
 
 ## 1. Adım: Belgeyi ayarlama ve bir Metin Kutusu şekli oluşturma
 
-Başlamak için, belgeyi kurmamız ve bir TextBox şekli oluşturmamız gerekiyor. Aşağıdaki kod, yeni bir örneğini başlatır.`Document` class ve bir metin kutusu şekli oluşturur:
+ Başlamak için, belgeyi kurmamız ve bir TextBox şekli oluşturmamız gerekiyor. Aşağıdaki kod, yeni bir örneğini başlatır.`Document` class ve bir metin kutusu şekli oluşturur:
 
 ```csharp
 Document doc = new Document();

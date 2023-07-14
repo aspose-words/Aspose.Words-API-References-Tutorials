@@ -1,27 +1,27 @@
 ---
 title: Clonar tabla completa
 linktitle: Clonar tabla completa
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a clonar una tabla completa en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/clone-complete-table/
 ---
 
-En este tutorial, aprenderemos a usar Aspose.Words para .NET para clonar una tabla completa en un documento de Word. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá clonar tablas en sus documentos de Word mediante programación.
+En este tutorial, aprenderemos a usar Aspose.Words para .NET para clonar una tabla completa en un documento de Word. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá clonar tablas en sus documentos de Word mediante programación.
 
 ## Paso 1: Configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.
 2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
 ## Paso 2: Cargar el documento y acceder a la tabla
-Para empezar a trabajar con la tabla, necesitamos cargar el documento que la contiene y acceder a ella. Sigue estos pasos:
+Para iniciar el procesamiento de textos con la tabla, necesitamos cargar el documento que la contiene y acceder a ella. Sigue estos pasos:
 
 ```csharp
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Acceso a la matriz
@@ -60,16 +60,16 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ### Ejemplo de código fuente para Clone Complete Table usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// Clone la tabla e insértela en el documento después del original.
+	//Clone la tabla e insértela en el documento después del original.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
 	// Inserta un párrafo vacío entre las dos tablas,
-	// de lo contrario se combinarán en uno al guardar esto tiene que ver con la validación del documento.
+	// o de lo contrario se combinarán en uno al guardar esto tiene que ver con la validación del documento.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 ```

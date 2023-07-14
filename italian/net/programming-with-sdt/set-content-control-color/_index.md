@@ -1,7 +1,7 @@
 ---
 title: Imposta il colore di controllo del contenuto
 linktitle: Imposta il colore di controllo del contenuto
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come impostare il colore di un controllo contenuto in un documento Word utilizzando Aspose.Words per .NET, personalizzandone l'aspetto.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Questo tutorial spiega come impostare il colore di un controllo del contenuto in
 Per seguire questo tutorial, è necessario disporre di quanto segue:
 
 - Aspose.Words per la libreria .NET installata.
-- Conoscenza di base di C# e lavoro con documenti Word.
+- Conoscenza di base di C# e Word Processing con documenti Word.
 
 ## Passaggio 1: impostare la directory dei documenti
  Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui si trova il documento.
@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlColor.docx");
 ### Esempio di codice sorgente per Imposta colore controllo contenuto utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

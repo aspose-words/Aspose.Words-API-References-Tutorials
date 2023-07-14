@@ -1,7 +1,7 @@
 ---
 title: Sezione clone
 linktitle: Sezione clone
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come clonare una sezione in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Successivamente, caricheremo il documento di Word in un'istanza di`Document` classe. Useremo quindi il`Clone` metodo per clonare la prima sezione del documento.
 
 ```csharp
-//Carica il documento
+// Carica il documento
 Document doc = new Document(dataDir + "Document.docx");
 
 // Clonare la sezione
@@ -40,7 +40,7 @@ Section cloneSection = doc.Sections[0].Clone();
 
 ```csharp
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -67,7 +67,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  R: Per caricare il documento Word in un'istanza di`Document` class e clonare la prima sezione del documento, è possibile utilizzare il seguente codice:
 
 ```csharp
-//Carica il documento
+// Carica il documento
 Document doc = new Document(dataDir + "Document.docx");
 
 // Clonare la sezione

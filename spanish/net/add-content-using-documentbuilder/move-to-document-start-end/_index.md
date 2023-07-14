@@ -1,7 +1,7 @@
 ---
 title: Mover a Documento Inicio Fin
 linktitle: Mover a Documento Inicio Fin
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a usar Aspose.Words para .NET para pasar al principio y al final del documento en documentos de Word con esta guía paso a paso.
 type: docs
 weight: 10
@@ -66,4 +66,4 @@ Console.WriteLine("\nThis is the end of the document.");
 
 ## Conclusión
 
-En este ejemplo, hemos explorado la función Mover al inicio/fin del documento de Aspose.Words para .NET. Aprendimos a navegar hasta el principio y el final de un documento usando la clase DocumentBuilder. Esta característica es útil cuando se trabaja mediante programación con documentos de Word y se necesita manipular o insertar contenido en posiciones específicas dentro del documento.
+En este ejemplo, hemos explorado la función Mover al inicio/fin del documento de Aspose.Words para .NET. Aprendimos a navegar hasta el principio y el final de un documento usando la clase DocumentBuilder. Esta función es útil cuando se procesan textos mediante programación con documentos de Word y es necesario manipular o insertar contenido en posiciones específicas dentro del documento.

@@ -1,7 +1,7 @@
 ---
 title: Actualizar última propiedad de hora guardada
 linktitle: Actualizar última propiedad de hora guardada
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a actualizar automáticamente la propiedad Última hora guardada al guardar un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Ahora puede ejecutar el código fuente para actualizar automáticamente la últi
 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");

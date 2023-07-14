@@ -1,7 +1,7 @@
 ---
 title: Konvertera Docx till Mhtml och skicka e-post
 linktitle: Konvertera Docx till Mhtml och skicka e-post
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du konverterar Word-dokument från Docx till MHTML och skickar dem som e-post med Aspose.Words och Aspose.Email. Steg-för-steg handledning.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Anahat Kenarlığını Uygula
 linktitle: Anahat Kenarlığını Uygula
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir tabloya dış hat kenarlığı uygulamak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -76,7 +76,7 @@ Tebrikler! Artık Aspose.Words for .NET'i kullanarak bir tabloya ana hat kenarl�
 ### Aspose.Words for .NET kullanarak Apply Outline Border için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

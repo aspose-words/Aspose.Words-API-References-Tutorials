@@ -1,7 +1,7 @@
 ---
 title: Ottieni l'intervallo di pagine Jpeg
 linktitle: Ottieni l'intervallo di pagine Jpeg
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come ottenere una gamma di pagine JPEG con Aspose.Words per .NET. Tutorial completo per l'estrazione di immagini personalizzate.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ Ora puoi eseguire il codice sorgente per convertire un intervallo specifico di p
 ### Esempio di codice sorgente per Get Jpeg Page Range using Aspose.Words For .NET
 
 ```csharp 
- // Percorso della directory dei documenti
+ //Percorso della directory dei documenti
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

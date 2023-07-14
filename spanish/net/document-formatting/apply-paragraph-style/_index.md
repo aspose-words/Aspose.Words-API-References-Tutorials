@@ -1,7 +1,7 @@
 ---
 title: Aplicar estilo de párrafo
 linktitle: Aplicar estilo de párrafo
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a aplicar un estilo de párrafo con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: Configurar el estilo de párrafo
 
-Ahora configuraremos el estilo de párrafo utilizando el identificador de estilo integrado. Así es cómo:
+Ahora configuraremos el estilo de párrafo utilizando el identificador de estilo incorporado. Así es cómo:
 
 ```csharp
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;

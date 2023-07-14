@@ -1,14 +1,14 @@
 ---
 title: Cargar Chm
 linktitle: Cargar Chm
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a cargar archivos CHM con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-loadoptions/load-chm/
 ---
 
-Cuando se trabaja con archivos de ayuda HTML (CHM) en una aplicación de C#, es importante poder cargarlos correctamente. Con la biblioteca Aspose.Words para .NET, puede cargar fácilmente archivos CHM utilizando las opciones de carga adecuadas. En esta guía paso a paso, le mostraremos cómo usar Aspose.Words para el código fuente de .NET C# para cargar un archivo CHM usando las opciones de carga de LoadOptions.
+Cuando el procesamiento de textos con archivos de ayuda HTML (CHM) en una aplicación C#, es importante poder cargarlos correctamente. Con la biblioteca Aspose.Words para .NET, puede cargar fácilmente archivos CHM utilizando las opciones de carga adecuadas. En esta guía paso a paso, le mostraremos cómo usar Aspose.Words para el código fuente de .NET C# para cargar un archivo CHM usando las opciones de carga de LoadOptions.
 
 ## Comprender la biblioteca Aspose.Words
 

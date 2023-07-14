@@ -1,7 +1,7 @@
 ---
 title: Läs Markdown Document
 linktitle: Läs Markdown Document
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du läser markdown-dokument med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10

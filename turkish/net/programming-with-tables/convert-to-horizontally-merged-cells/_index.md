@@ -1,7 +1,7 @@
 ---
 title: Yatay Birleştirilmiş Hücrelere Dönüştür
 linktitle: Yatay Birleştirilmiş Hücrelere Dönüştür
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesinde tablo hücrelerini yatay olarak birleştirilmiş hücrelere dönüştürmeyi öğrenin.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Bu öğreticide, bir Word belgesinde tablo hücrelerini yatay olarak birleştiri
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## 2. Adım: Belgeyi yükleme ve tabloya erişme
-Tabloyla çalışmaya başlamak için onu içeren belgeyi yüklememiz ve tabloya erişmemiz gerekiyor. Bu adımları takip et:
+Tablo ile Sözcük İşleme başlatmak için tabloyu içeren belgeyi yüklememiz ve tabloya erişmemiz gerekir. Bu adımları takip et:
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Table with merged cells.docx");
 
 // Diziye erişim
@@ -43,7 +43,7 @@ table. ConvertToHorizontallyMergedCells();
 ### Aspose.Words for .NET kullanarak Yatay Olarak Birleştirilmiş Hücrelere Dönüştürmek için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table with merged cells.docx");

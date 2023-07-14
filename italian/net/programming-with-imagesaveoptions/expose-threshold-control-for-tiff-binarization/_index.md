@@ -1,7 +1,7 @@
 ---
 title: Esponi il controllo della soglia per la binarizzazione di Tiff
 linktitle: Esponi il controllo della soglia per la binarizzazione di Tiff
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come controllare la soglia di binarizzazione TIFF con Aspose.Words per .NET. Tutorial completo per immagini di migliore qualità.
 type: docs
 weight: 10
@@ -52,7 +52,7 @@ Ora puoi eseguire il codice sorgente per convertire il tuo documento in formato 
 
 ```csharp 
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

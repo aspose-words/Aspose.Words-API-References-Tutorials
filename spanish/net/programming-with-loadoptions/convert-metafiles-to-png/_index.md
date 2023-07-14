@@ -1,13 +1,13 @@
 ---
 title: Convertir metarchivos a png
 linktitle: Convertir metarchivos a png
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a convertir metarchivos a imágenes PNG al cargar documentos con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-loadoptions/convert-metafiles-to-png/
 ---
-Cuando se trabaja con documentos en una aplicación C#, puede ser necesario convertir los metarchivos en imágenes PNG para una mejor compatibilidad y una representación precisa. Con la biblioteca Aspose.Words para .NET, puede convertir fácilmente metarchivos a PNG mientras carga un documento. En esta guía paso a paso, lo guiaremos a través de cómo usar Aspose.Words para el código fuente de .NET C# para cargar un documento con la conversión de metarchivos a PNG usando las opciones de carga de LoadOptions.
+Cuando se utiliza el procesamiento de textos con documentos en una aplicación C#, es posible que sea necesario convertir los metarchivos en imágenes PNG para lograr una mejor compatibilidad y una representación precisa. Con la biblioteca Aspose.Words para .NET, puede convertir fácilmente metarchivos a PNG mientras carga un documento. En esta guía paso a paso, lo guiaremos a través de cómo usar Aspose.Words para el código fuente de .NET C# para cargar un documento con la conversión de metarchivos a PNG usando las opciones de carga de LoadOptions.
 
 ## Comprender la biblioteca Aspose.Words
 

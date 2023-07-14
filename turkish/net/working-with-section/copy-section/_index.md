@@ -1,7 +1,7 @@
 ---
 title: Bölümü Kopyala
 linktitle: Bölümü Kopyala
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir bölümün başka bir belgeye nasıl kopyalanacağını öğrenin.
 type: docs
 weight: 10
@@ -59,7 +59,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document.docx");

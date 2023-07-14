@@ -1,27 +1,27 @@
 ---
 title: Adatta automaticamente alla larghezza della pagina
 linktitle: Adatta automaticamente alla larghezza della pagina
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come adattare automaticamente una tabella alla larghezza della pagina in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/auto-fit-to-page-width/
 ---
 
-In questo tutorial impareremo come utilizzare Aspose.Words per .NET per adattare automaticamente una tabella alla larghezza della pagina in un documento di Word. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di manipolare le tabelle nei documenti di Word a livello di codice.
+In questo tutorial impareremo come utilizzare Aspose.Words per .NET per adattare automaticamente una tabella alla larghezza della pagina in un documento di Word. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzione. Alla fine di questo tutorial, sarai in grado di manipolare le tabelle nei documenti di Word a livello di programmazione.
 
 ## Passaggio 1: impostazione del progetto
 1. Avvia Visual Studio e crea un nuovo progetto C#.
 2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: creazione e configurazione del documento
-Per iniziare a lavorare con la tabella, dobbiamo creare un documento e configurare il generatore di documenti. Segui questi passi:
+Per avviare l'elaborazione di testi con la tabella, dobbiamo creare un documento e configurare il generatore di documenti. Segui questi passi:
 
 ```csharp
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Creare il documento e il generatore di documenti
+// Creare il documento e il generatore di documenti
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -58,7 +58,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ### Esempio di codice sorgente per Adattamento automatico alla larghezza della pagina utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

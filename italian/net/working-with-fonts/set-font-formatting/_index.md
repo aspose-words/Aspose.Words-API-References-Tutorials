@@ -1,7 +1,7 @@
 ---
 title: Imposta la formattazione dei caratteri
 linktitle: Imposta la formattazione dei caratteri
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come impostare la formattazione dei caratteri nel documento di Word utilizzando Aspose.Words per .NET e creare documenti accattivanti.
 type: docs
 weight: 10
@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: creare e formattare il documento
- Crea un'istanza di`Document` classe e il`DocumentBuilder` class per costruire il documento. Usa il`Font` proprietà del`DocumentBuilder` per accedere alle proprietà di formattazione dei caratteri.
+ Crea un'istanza di`Document` classe e il`DocumentBuilder` class per costruire il documento. Usa il`Font`proprietà del`DocumentBuilder` per accedere alle proprietà di formattazione dei caratteri.
 
 ```csharp
 Document doc = new Document();
@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ### Codice sorgente di esempio per impostare la formattazione dei caratteri utilizzando Aspose.Words per .NET 
 ```csharp
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Разрешить интервал между ячейками
 linktitle: Разрешить интервал между ячейками
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по разрешению интервалов между ячейками с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
 ## Шаг 4. Включите интервал между ячейками
- Теперь мы можем включить интервал между ячейками, установив`AllowCellSpacing`свойство таблицы`true`. Это свойство определяет, может ли таблица иметь интервал между ячейками.
+ Теперь мы можем включить интервал между ячейками, установив`AllowCellSpacing` свойство таблицы`true`. Это свойство определяет, может ли таблица иметь интервал между ячейками.
 
 ```csharp
 table.AllowCellSpacing = true;
@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 ### Пример исходного кода для разрешения интервалов между ячейками с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

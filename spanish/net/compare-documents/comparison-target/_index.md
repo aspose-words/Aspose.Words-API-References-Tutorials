@@ -1,7 +1,7 @@
 ---
 title: Objetivo de comparación
 linktitle: Objetivo de comparación
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda la función de destino de comparación de Aspose.Words para .NET que le permite comparar documentos y generar un nuevo documento que contenga los cambios realizados.
 type: docs
 weight: 10

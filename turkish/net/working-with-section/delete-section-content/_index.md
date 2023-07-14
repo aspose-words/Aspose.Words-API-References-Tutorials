@@ -1,7 +1,7 @@
 ---
 title: Bölüm İçeriğini Sil
 linktitle: Bölüm İçeriğini Sil
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinin belirli bir bölümündeki içeriğin nasıl silineceğini öğrenin.
 type: docs
 weight: 10
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Ardından, Word belgesini bir örneğine yükleyeceğiz.`Document` sınıf. 0 indeksini kullanarak belgenin ilk bölümüne erişeceğiz.
 
 ```csharp
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Document.docx");
 
 // Bölüme erişin
@@ -45,7 +45,7 @@ section.ClearContent();
 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -73,7 +73,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A: Word belgesini bir örneğine yüklemek için`Document` sınıf denir`doc` ve 0 indeksini kullanarak belgenin ilk bölümüne erişmek için aşağıdaki kodu kullanabilirsiniz:
 
 ```csharp
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Document.docx");
 
 // Bölüme erişin

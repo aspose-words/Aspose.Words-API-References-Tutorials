@@ -1,7 +1,7 @@
 ---
 title: Kenarlıklı Tablo Oluştur
 linktitle: Kenarlıklı Tablo Oluştur
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak kenarlıklı bir tablo oluşturmak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ Tebrikler! Artık Aspose.Words for .NET'i kullanarak özel çerçeveli bir tablo
 ### Aspose.Words for .NET kullanarak Build Table With Borders için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

@@ -1,7 +1,7 @@
 ---
 title: Cifrar Docx con contraseña
 linktitle: Cifrar Docx con contraseña
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a cifrar un archivo DOCX con una contraseña usando Aspose.Words para .NET. Tutorial completo para la seguridad de los documentos.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Ahora puede ejecutar el código fuente para cifrar su documento DOCX con una con
 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";  
 
 Document doc = new Document(dataDir + "Document.docx");

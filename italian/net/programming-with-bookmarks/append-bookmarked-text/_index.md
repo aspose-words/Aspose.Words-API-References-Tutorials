@@ -1,7 +1,7 @@
 ---
-title: Aggiungi testo con segnalibro
-linktitle: Aggiungi testo con segnalibro
-second_title: Riferimento all'API Aspose.Words per .NET
+title: Aggiungi testo con segnalibro nel documento di Word
+linktitle: Aggiungi testo con segnalibro nel documento di Word
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come aggiungere testo da un segnalibro in un documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -100,3 +100,22 @@ Ecco il codice sorgente di esempio completo per dimostrare l'aggiunta di testo d
 ## Conclusione
 
 In questo articolo, abbiamo esplorato il codice sorgente C# per comprendere come utilizzare la funzione Aggiungi testo con segnalibro di Aspose.Words per .NET. Abbiamo seguito una guida dettagliata per ottenere paragrafi da un segnalibro, verificare i genitori e copiare paragrafi in un altro documento.
+
+### Domande frequenti per aggiungere testo con segnalibro nel documento di Word
+
+#### D1: Quali sono i prerequisiti per utilizzare la funzione "Aggiungi testo con segnalibri" in Aspose.Words per .NET?
+
+R: Per utilizzare la funzione "Aggiungi testo con segnalibri" in Aspose.Words per .NET, devi avere una conoscenza di base del linguaggio C#. È inoltre necessario un ambiente di sviluppo .NET con la libreria Aspose.Words installata.
+
+#### D2: Come ottenere i paragrafi che contengono l'inizio e la fine di un segnalibro in un documento di Word?
+
+ R: Per ottenere i paragrafi che contengono l'inizio e la fine di un segnalibro in un documento Word, puoi accedere al file`BookmarkStart` E`BookmarkEnd` proprietà del segnalibro. Ecco un codice di esempio:
+
+```csharp
+Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
+Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+```
+
+#### D3: Cosa succede se i paragrafi di inizio e fine non hanno genitori validi?
+
+R: Se i paragrafi di inizio e fine non hanno genitori validi, cioè non sono veramente paragrafi, verrà generata un'eccezione. Questa situazione non può essere gestita in questo momento.

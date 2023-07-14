@@ -1,7 +1,7 @@
 ---
 title: Cambiar el espaciado y las sangrías de los párrafos asiáticos
 linktitle: Cambiar el espaciado y las sangrías de los párrafos asiáticos
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a cambiar el espacio entre párrafos asiáticos y las sangrías con Aspose.Words para .NET.
 type: docs
 weight: 10

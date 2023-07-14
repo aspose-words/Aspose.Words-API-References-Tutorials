@@ -1,7 +1,7 @@
 ---
 title: Spara pdf som Jpeg
 linktitle: Spara pdf som Jpeg
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du konverterar PDF-dokument till JPEG-bilder med Aspose.Words för .NET. Steg-för-steg handledning med exempel på källkod.
 type: docs
 weight: 10

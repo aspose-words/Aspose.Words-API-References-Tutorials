@@ -1,7 +1,7 @@
 ---
 title: Radformat Inaktivera Break Across Pages
 linktitle: Radformat Inaktivera Break Across Pages
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du inaktiverar radbrytning för en tabell över flera sidor i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ den här handledningen ska vi lära oss hur man inaktiverar radbrytning för en 
 2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
 ## Steg 2: Ladda dokumentet
-För att börja arbeta med dokumentet, följ dessa steg:
+Följ dessa steg för att starta ordbehandling med dokumentet:
 
 ```csharp
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
@@ -53,7 +53,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 ### Exempel på källkod för radformat Inaktivera Break Across Pages med Aspose.Words för .NET 
 
 ```csharp
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");

@@ -1,7 +1,7 @@
 ---
 title: Настройки шрифта Экземпляр по умолчанию
 linktitle: Настройки шрифта Экземпляр по умолчанию
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: В этом руководстве вы узнаете, как настроить параметры шрифта по умолчанию в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Пример исходного кода для экземпляра настроек шрифта по умолчанию с использованием Aspose.Words для .NET 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;
@@ -76,11 +76,11 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 #### В: Могу ли я указать размер шрифта по умолчанию в Aspose.Words?
 
- О: Да, вы можете указать размер шрифта по умолчанию в Aspose.Words с помощью`DefaultFontSize` собственность`FontSettings` сорт. Вы можете установить желаемый размер точки.
+ О: Да, вы можете указать размер шрифта по умолчанию в Aspose.Words с помощью`DefaultFontSize`собственность`FontSettings` сорт. Вы можете установить желаемый размер точки.
 
 #### В: Можно ли установить цвет шрифта по умолчанию в Aspose.Words?
 
- О: Да, вы можете установить цвет шрифта по умолчанию в Aspose.Words с помощью`DefaultColor` собственность`FontSettings` сорт. Вы можете указать цвет, используя значения RGB или предопределенные имена.
+ О: Да, вы можете установить цвет шрифта по умолчанию в Aspose.Words с помощью`DefaultColor`собственность`FontSettings` сорт. Вы можете указать цвет, используя значения RGB или предопределенные имена.
 
 #### Вопрос. Применяются ли настройки шрифта по умолчанию ко всем документам?
 

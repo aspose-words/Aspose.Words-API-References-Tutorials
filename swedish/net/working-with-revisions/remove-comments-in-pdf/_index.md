@@ -1,7 +1,7 @@
 ---
 title: Ta bort kommentarer i pdf-fil
 linktitle: Ta bort kommentarer i pdf-fil
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Ta bort kommentarer i en PDF-fil med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -27,7 +27,7 @@ Vi kommer att konfigurera layoutalternativet för att dölja kommentarer när PD
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 ```
 
-## Steg 3: Spara dokumentet som en PDF
+## Steg 3: Spara dokumentet som PDF
 
 Slutligen kommer vi att spara dokumentet i PDF-format genom att ta bort kommentarerna.
 
@@ -74,7 +74,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### F: Hur döljer man kommentarer i PDF genererade med Aspose.Words för .NET?
 
- A: Använd`CommentDisplayMode` egendom av`LayoutOptions` objekt för att konfigurera hur kommentarer visas när PDF-filen genereras. För att dölja kommentarer, ställ in den här egenskapen till`CommentDisplayMode.Hide`.
+ A: Använd`CommentDisplayMode`egendom av`LayoutOptions` objekt för att konfigurera hur kommentarer visas när PDF-filen genereras. För att dölja kommentarer, ställ in den här egenskapen till`CommentDisplayMode.Hide`.
 
 ```csharp
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;

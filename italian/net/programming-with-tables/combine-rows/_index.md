@@ -1,7 +1,7 @@
 ---
 title: Combina righe
 linktitle: Combina righe
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come combinare le righe della tabella in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In questo tutorial impareremo come utilizzare Aspose.Words per .NET per combinar
 2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: caricamento del documento e accesso alle tabelle
-Per iniziare a lavorare con le tabelle, dobbiamo caricare il documento che le contiene e accedervi. Segui questi passi:
+Per avviare l'elaborazione di testi con le tabelle, dobbiamo caricare il documento che le contiene e accedervi. Segui questi passi:
 
 ```csharp
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento
+// Carica il documento
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Accesso ai tavoli
@@ -56,7 +56,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ### Esempio di codice sorgente per Combina righe utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

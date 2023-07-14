@@ -1,7 +1,7 @@
 ---
 title: Özel Belge Özellikleri Ekle
 linktitle: Özel Belge Özellikleri Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgeye özel özellikler eklemek için adım adım kılavuz.
 type: docs
 weight: 10

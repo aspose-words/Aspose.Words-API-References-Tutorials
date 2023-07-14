@@ -1,7 +1,7 @@
 ---
 title: Sayfa Yapısını ve Bölüm Biçimlendirmesini Ayarlayın
 linktitle: Sayfa Yapısını ve Bölüm Biçimlendirmesini Ayarlayın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgenin düzenini ve bölüm biçimlendirmesini ayarlamak için adım adım kılavuz.
 type: docs
 weight: 10

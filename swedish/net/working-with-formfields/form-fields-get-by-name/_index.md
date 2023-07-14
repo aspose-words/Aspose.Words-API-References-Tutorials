@@ -1,7 +1,7 @@
 ---
 title: Formulärfält får efter namn
 linktitle: Formulärfält får efter namn
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du hämtar och ändrar formulärfält efter namn i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Steg 2: Hämta formulärfält
 
- Gå sedan till`FormFields` egendom av`Range` objekt i dokumentet för att hämta alla formulärfält:
+ Gå sedan till`FormFields`egendom av`Range` objekt i dokumentet för att hämta alla formulärfält:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;

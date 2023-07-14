@@ -1,7 +1,7 @@
 ---
 title: Автоподгонка по ширине страницы
 linktitle: Автоподгонка по ширине страницы
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как автоматически подогнать таблицу под ширину страницы в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ url: /ru/net/programming-with-tables/auto-fit-to-page-width/
 2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
 
 ## Шаг 2: Создание и настройка документа
-Для начала работы с таблицей нам необходимо создать документ и настроить генератор документов. Следуй этим шагам:
+Чтобы запустить Word Processing с таблицей, нам нужно создать документ и настроить генератор документов. Следуй этим шагам:
 
 ```csharp
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Создайте документ и генератор документов
+// Создайте документ и генератор документов
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
 ### Пример исходного кода для автоматической подгонки под ширину страницы с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Görüntüleri Wmf Olarak Kaydetme
 linktitle: Görüntüleri Wmf Olarak Kaydetme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile RTF'ye dönüştürürken görüntüleri WMF olarak nasıl kaydedeceğinizi öğrenin.
 type: docs
 weight: 10

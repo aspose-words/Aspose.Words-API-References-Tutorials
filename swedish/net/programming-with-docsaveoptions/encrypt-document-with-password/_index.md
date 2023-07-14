@@ -1,13 +1,13 @@
 ---
 title: Kryptera dokument med lösenord
 linktitle: Kryptera dokument med lösenord
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du krypterar dokument med ett lösenord med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
-Dokumentsäkerhet är viktigt när du arbetar med filer i en C#-applikation. Med Aspose.Words-biblioteket för .NET kan du enkelt skydda dina dokument genom att kryptera dem med ett lösenord. I den här steg-för-steg-guiden går vi igenom hur du använder Aspose.Words för .NET C#-källkod för att kryptera ett dokument med hjälp av DocSaveOptions-sparalternativen.
+Dokumentsäkerhet är viktigt vid ordbehandling med filer i en C#-applikation. Med Aspose.Words-biblioteket för .NET kan du enkelt skydda dina dokument genom att kryptera dem med ett lösenord. I den här steg-för-steg-guiden går vi igenom hur du använder Aspose.Words för .NET C#-källkod för att kryptera ett dokument med hjälp av DocSaveOptions-sparalternativen.
 
 ## Förstå Aspose.Words-biblioteket
 

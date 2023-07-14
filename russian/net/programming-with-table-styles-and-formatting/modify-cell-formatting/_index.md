@@ -1,7 +1,7 @@
 ---
 title: Изменить форматирование ячейки
 linktitle: Изменить форматирование ячейки
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по изменению форматирования ячейки в таблице с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 ### Пример исходного кода для изменения форматирования ячеек с помощью Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

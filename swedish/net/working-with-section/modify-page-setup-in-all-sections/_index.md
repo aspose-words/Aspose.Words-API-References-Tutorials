@@ -1,7 +1,7 @@
 ---
 title: Ändra Word Page Setup i alla avsnitt
 linktitle: Ändra Word Page Setup i alla avsnitt
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: I den här självstudien kan du lära dig hur du ändrar sidinställningarna för Word i alla delar av ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -42,7 +42,7 @@ builder.Writeln("Hello45");
 ```
 
 ## Steg 3: Redigera sidinställningar i alla avsnitt
- För att ändra sidinställningarna i alla delar av dokumentet använder vi en`foreach` loop till loop genom varje sektion och få tillgång till dess`PageSetup` fast egendom. I det här exemplet ändrar vi pappersstorleken för alla sektioner genom att ställa in värdet till`PaperSize.Letter`.
+ För att ändra sidinställningarna i alla delar av dokumentet använder vi en`foreach` slinga till slinga genom varje sektion och komma åt dess`PageSetup` fast egendom. I det här exemplet ändrar vi pappersstorleken för alla sektioner genom att ställa in värdet till`PaperSize.Letter`.
 
 ```csharp
 foreach(Section section in doc.Sections)
@@ -53,7 +53,7 @@ foreach(Section section in doc.Sections)
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -109,7 +109,7 @@ builder.Writeln("Hello45");
 
 #### F: Hur ändrar man sidinställningarna i alla avsnitt i Aspose.Words för .NET?
 
- S: För att ändra sidinställningarna i alla delar av dokumentet kan du använda en`foreach` loop till loop genom varje sektion och få tillgång till dess`PageSetup` fast egendom. I det här exemplet ändrar vi pappersstorleken för alla sektioner genom att ställa in värdet till`PaperSize.Letter`.
+ S: För att ändra sidinställningarna i alla delar av dokumentet kan du använda en`foreach` slinga till slinga genom varje sektion och komma åt dess`PageSetup` fast egendom. I det här exemplet ändrar vi pappersstorleken för alla sektioner genom att ställa in värdet till`PaperSize.Letter`.
 
 ```csharp
 foreach(Section section in doc.Sections)

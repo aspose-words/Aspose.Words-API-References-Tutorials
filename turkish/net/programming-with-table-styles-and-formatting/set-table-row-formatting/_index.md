@@ -1,7 +1,7 @@
 ---
 title: Tablo Satırı Biçimlendirmesini Ayarla
 linktitle: Tablo Satırı Biçimlendirmesini Ayarla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak tablo satırı biçimlendirmesini ayarlamak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 ### Aspose.Words for .NET kullanarak Tablo Satır Biçimlendirmesini Ayarlamak için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

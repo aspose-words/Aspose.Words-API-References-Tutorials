@@ -1,7 +1,7 @@
 ---
 title: Mostrar revisiones en globos
 linktitle: Mostrar revisiones en globos
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Muestre revisiones en globos con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### P: ¿Cómo mostrar revisiones en globos con Aspose.Words para .NET?
 
- R: Usa el`ShowInBalloons` propiedad de la`RevisionOptions` objeto para configurar la visualización de revisiones en globos. Puede establecer esta propiedad en`ShowInBalloons.FormatAndDelete` para mostrar revisiones en globos con borrado y revisiones de formato.
+ R: Usa el`ShowInBalloons`propiedad de la`RevisionOptions` objeto para configurar la visualización de revisiones en globos. Puede establecer esta propiedad en`ShowInBalloons.FormatAndDelete` para mostrar revisiones en globos con borrado y revisiones de formato.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

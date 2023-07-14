@@ -1,7 +1,7 @@
 ---
 title: Aggiungi con le opzioni del formato di importazione
 linktitle: Aggiungi con le opzioni del formato di importazione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come aggiungere un documento con opzioni di formato di importazione utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -39,7 +39,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Passaggio 4: aggiungere il documento di origine al documento di destinazione
 
- Usa il`AppendDocument` metodo del documento di destinazione per aggiungere il documento di origine. Passaggio`ImportFormatMode.UseDestinationStyles` come secondo parametro per utilizzare gli stili e la formattazione del documento di destinazione.
+ Usa il`AppendDocument`metodo del documento di destinazione per aggiungere il documento di origine. Passaggio`ImportFormatMode.UseDestinationStyles` come secondo parametro per utilizzare gli stili e la formattazione del documento di destinazione.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -58,12 +58,12 @@ Questo completa l'implementazione dell'aggiunta di un documento con opzioni di f
 ### Esempio di codice sorgente per Aggiungi con opzioni di formato di importazione utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//Specificare che se la numerazione è in conflitto nei documenti di origine e di destinazione,
+	// Specificare che se la numerazione è in conflitto nei documenti di origine e di destinazione,
 	// quindi verrà utilizzata la numerazione dal documento di origine.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

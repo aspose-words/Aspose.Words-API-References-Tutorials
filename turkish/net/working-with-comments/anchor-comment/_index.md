@@ -1,7 +1,7 @@
 ---
 title: Çapa Yorumu
 linktitle: Çapa Yorumu
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerindeki belirli metinlere yorum yanıtlarını nasıl tutturacağınızı öğrenin.
 type: docs
 weight: 10
@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 
 // Üç Çalıştır nesnesi oluşturun.
-//İlk ikisi biraz metin çalıştırırken, üçüncüsü bir Yorum çalıştırır.
+// İlk ikisi biraz metin çalıştırırken, üçüncüsü bir Yorum çalıştırır.
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -108,7 +108,7 @@ Y: Aspose.Words for .NET'te, bir yorum bağlantısı, bir yorumu bir belgedeki b
 
 #### S: Bir Aspose.Words for .NET belgesine nasıl yorum çapası ekleyebilirim?
 
-C: Bir Aspose.Words for .NET belgesine yorum bağlantısı eklemek için eğitimde bahsedilen adımları izleyin.
+C: Bir Aspose.Words for .NET belgesine yorum bağlantısı eklemek için eğitimde belirtilen adımları izleyin.
 
 #### S: Aspose.Words for .NET'te mevcut bir yorum bağlantısına nasıl erişebilirim?
 
@@ -120,5 +120,5 @@ C: Bir Aspose.Words for .NET belgesine yorum bağlantısı eklemek için eğitim
 
 #### S: Aspose.Words for .NET'te bir yorum bağlantısına bağlı bir yorumun metnini nasıl düzenleyebilirim?
 
-C: Aspose.Words for .NET'te bir yorum bağlantısına bağlı bir yorumun metnini değiştirmek için şuraya erişebilirsiniz:`Comment.Text` karşılık gelen özellik`Comment` nesne ve metni gerektiği gibi değiştirin.
+ C: Aspose.Words for .NET'te bir yorum bağlantısına bağlı bir yorumun metnini değiştirmek için şuraya erişebilirsiniz:`Comment.Text` karşılık gelen özellik`Comment` nesne ve metni gerektiği gibi değiştirin.
 

@@ -1,14 +1,14 @@
 ---
 title: Ms Word Sürümünü Ayarla
 linktitle: Ms Word Sürümünü Ayarla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir belgeyi belirli bir MS Word sürümüyle nasıl yükleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/set-ms-word-version/
 ---
 
-Bir C# uygulamasında Word belgeleriyle çalışırken, belge yüklenirken kullanılacak Microsoft Word sürümünün belirtilmesi gerekebilir. .NET için Aspose.Words kitaplığıyla, LoadOptions'ı kullanarak hangi MS Word sürümünün kullanılacağını kolayca ayarlayabilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak MS Word'ün belirli bir sürümünü içeren bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
+Bir C# uygulamasında Word ile Kelime İşleme belgeleri hazırlanırken, belge yüklenirken kullanılacak Microsoft Word sürümünün belirtilmesi gerekebilir. .NET için Aspose.Words kitaplığıyla, LoadOptions'ı kullanarak hangi MS Word sürümünün kullanılacağını kolayca ayarlayabilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçeneklerini kullanarak MS Word'ün belirli bir sürümünü içeren bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
 ## Aspose.Words kitaplığını anlama
 

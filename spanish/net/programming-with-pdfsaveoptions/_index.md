@@ -1,13 +1,13 @@
 ---
-title: Programación con Pdfsaveoptions
-linktitle: Programación con Pdfsaveoptions
-second_title: Referencia de API de Aspose.Words para .NET
-description: Explore la programación con las opciones de guardado de PDF en Aspose.Words para .NET. Aprenda a generar documentos de Word a PDF con funciones avanzadas a través de tutoriales paso a paso y código de muestra.
+title: Procesamiento de textos con Pdfsaveoptions
+linktitle: Procesamiento de textos con Pdfsaveoptions
+second_title: API de procesamiento de documentos de Aspose.Words
+description: Explore el procesamiento de textos con opciones de guardado de PDF en Aspose.Words para .NET. Aprenda a generar documentos de Word a PDF con funciones avanzadas a través de tutoriales paso a paso y código de muestra.
 type: docs
 weight: 1680
 url: /es/net/programming-with-pdfsaveoptions/
 ---
-Los tutoriales de Aspose.Words para .NET sobre programación con PdfSaveOptions lo guiarán a través de las diversas funciones y técnicas para trabajar con las opciones de guardado de PDF. Estos tutoriales lo ayudan a comprender cómo personalizar la conversión de Word a PDF cambiando la configuración de diseño, las fuentes, las imágenes, los metadatos y más.
+Los tutoriales de Aspose.Words para .NET sobre el procesamiento de textos con PdfSaveOptions lo guiarán a través de las diversas funciones y técnicas para el procesamiento de textos con opciones de guardado de PDF. Estos tutoriales lo ayudan a comprender cómo personalizar la conversión de Word a PDF cambiando la configuración de diseño, las fuentes, las imágenes, los metadatos y más.
 
 Aprenderá a ajustar las opciones de calidad de la imagen, elegir el nivel de compresión de las imágenes, establecer la configuración de seguridad de PDF, como el cifrado y los permisos, e incluso insertar marcas de agua en los archivos PDF generados. Los tutoriales también incluyen ejemplos de código detallados para ayudarlo a practicar estas funciones en sus proyectos.
 
@@ -17,7 +17,7 @@ Ya sea que desee convertir documentos de Word a PDF para distribuirlos en línea
 | Título | Descripción |
 | --- | --- |
 | [Mostrar el título del documento en la barra de título de la ventana](./display-doc-title-in-window-titlebar/) | Aprenda a mostrar el título del documento en la barra de título de la ventana al convertir a PDF con Aspose.Words para .NET. |
-| [Advertencias de procesamiento de PDF](./pdf-render-warnings/) | Guía paso a paso para lidiar con las advertencias de procesamiento de PDF con Aspose.Words para .NET. |
+| [Advertencias de procesamiento de PDF](./pdf-render-warnings/) | Guía paso a paso para manejar las advertencias de procesamiento de PDF con Aspose.Words para .NET. |
 | [Agregar firma digital a PDF utilizando el titular del certificado](./digitally-signed-pdf-using-certificate-holder/) | Aprenda a firmar digitalmente un PDF con un titular de certificado con Aspose.Words para .NET. |
 | [Incrustar fuentes en documento PDF](./embedded-all-fonts/) | Guía paso a paso para incrustar todas las fuentes en un PDF usando Aspose.Words para .NET. |
 | [Incrustar fuentes de subconjunto en documento PDF](./embedded-subset-fonts/) | Guía paso a paso para incrustar subconjuntos de fuentes en un PDF usando Aspose.Words para .NET. |

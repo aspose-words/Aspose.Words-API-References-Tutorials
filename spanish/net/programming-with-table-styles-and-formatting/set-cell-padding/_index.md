@@ -1,14 +1,14 @@
 ---
 title: Establecer relleno de celda
 linktitle: Establecer relleno de celda
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para configurar los márgenes de las celdas de las tablas con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-table-styles-and-formatting/set-cell-padding/
 ---
 
-En este tutorial, lo guiaremos a través del proceso paso a paso para configurar los márgenes de las celdas de la tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo ajustar los márgenes (espacio) izquierdo, superior, derecho e inferior del contenido de las celdas en sus tablas en sus documentos de Word usando Aspose.Words para .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para configurar los márgenes de las celdas de la tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta característica en sus propios proyectos. Al final de este tutorial, sabrá cómo ajustar los márgenes (espacio) izquierdo, superior, derecho e inferior del contenido de las celdas en sus tablas en sus documentos de Word usando Aspose.Words para .NET.
 
 ## Paso 1: Definir el directorio de documentos
 Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento de Word editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
@@ -59,7 +59,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 ### Ejemplo de código fuente para Establecer relleno de celda usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

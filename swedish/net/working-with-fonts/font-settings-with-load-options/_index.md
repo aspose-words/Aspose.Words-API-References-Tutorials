@@ -1,7 +1,7 @@
 ---
 title: Teckensnittsinställningar med laddningsalternativ
 linktitle: Teckensnittsinställningar med laddningsalternativ
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: I den här handledningen lär du dig hur du laddar ett Word-dokument med anpassade laddningsalternativ och motsvarande teckensnittsinställningar.
 type: docs
 weight: 10
@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Exempel på källkod för teckensnittsinställningar med laddningsalternativ med Aspose.Words för .NET 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 LoadOptions loadOptions = new LoadOptions();
@@ -57,7 +57,7 @@ I den här handledningen såg vi hur man använder laddningsalternativ med tecke
 
 #### F: Hur kan jag ange ett standardteckensnitt när jag laddar ett dokument i Aspose.Words?
 
- S: För att ange ett standardteckensnitt när du laddar ett dokument i Aspose.Words kan du använda`LoadOptions` klass och ställ in`DefaultFontName` egenskap till namnet på det önskade teckensnittet.
+ S: För att ange ett standardteckensnitt när du laddar ett dokument i Aspose.Words kan du använda`LoadOptions`klass och ställ in`DefaultFontName` egenskap till namnet på det önskade teckensnittet.
 
 #### F: Vilka andra teckensnittsinställningar kan jag ange med laddningsalternativ i Aspose.Words?
 

@@ -1,7 +1,7 @@
 ---
 title: tachado
 linktitle: tachado
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a aplicar el estilo de texto tachado con la guía paso a paso de Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Paso 2: aplica el estilo de texto tachado
 
- Habilitaremos el estilo de texto tachado configurando el`StrikeThrough` propiedad de la`Font` oponerse a`true`.
+ Habilitaremos el estilo de texto tachado configurando el`StrikeThrough`propiedad de la`Font` oponerse a`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;
@@ -53,7 +53,7 @@ builder.Writeln("This text will be StrikeThrough");
 
 #### P: ¿Cómo puedo agregar el texto tachado en Aspose.Words?
 
- R: Para agregar el texto tachado en Aspose.Words, puede usar el`Font.StrikeThrough` propiedad de la`Run`objeto. Puede establecer esta propiedad en`true` para agregar texto tachado a un texto específico. Por ejemplo, puedes usar`run.Font.StrikeThrough=true` para agregar el texto tachado en el`Run` objeto.
+ R: Para agregar el texto tachado en Aspose.Words, puede usar el`Font.StrikeThrough`propiedad de la`Run`objeto. Puede establecer esta propiedad en`true` para agregar texto tachado a un texto específico. Por ejemplo, puedes usar`run.Font.StrikeThrough=true` para agregar el texto tachado en el`Run` objeto.
 
 #### P: ¿Es posible agregar el texto tachado a varios fragmentos de texto en el mismo párrafo?
 
@@ -61,4 +61,4 @@ builder.Writeln("This text will be StrikeThrough");
 
 #### P: ¿Puedo agregar texto tachado al texto que está en una tabla o celda en Aspose.Words?
 
- R: Sí, puede agregar texto tachado al texto que está en una tabla o celda en Aspose.Words. Puede saltar a la celda o párrafo que desee usando los métodos apropiados y luego aplicar el formato de texto tachado usando el`Font.StrikeThrough` propiedad de la`Run` o`Paragraph` objeto.
+ R: Sí, puede agregar texto tachado al texto que está en una tabla o celda en Aspose.Words. Puede saltar a la celda o párrafo que desee usando los métodos apropiados y luego aplicar el formato de texto tachado usando el`Font.StrikeThrough`propiedad de la`Run` o`Paragraph` objeto.

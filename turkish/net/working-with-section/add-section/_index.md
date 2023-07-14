@@ -1,7 +1,7 @@
 ---
 title: Bölüm Ekle
 linktitle: Bölüm Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesine nasıl bölüm ekleyeceğinizi öğrenin. Belgenizi yapılandırmak için adım adım kılavuz.
 type: docs
 weight: 10

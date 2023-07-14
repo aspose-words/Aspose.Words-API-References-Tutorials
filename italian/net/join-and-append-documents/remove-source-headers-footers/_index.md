@@ -1,7 +1,7 @@
 ---
 title: Rimuovi i piè di pagina delle intestazioni di origine
 linktitle: Rimuovi i piè di pagina delle intestazioni di origine
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come rimuovere intestazioni e piè di pagina durante l'unione e l'aggiunta di documenti Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Prima di iniziare, assicurati di avere quanto segue:
 
 ## Passaggio 1: inizializzare le directory dei documenti
 
- Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir` variabile al percorso in cui si trovano i documenti.
+ Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir`variabile al percorso in cui si trovano i documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -47,7 +47,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## Passaggio 4: disabilitare l'impostazione "LinkToPrevious" per HeadersFooters
 
-Anche dopo aver cancellato le intestazioni e i piè di pagina dal documento di origine, è possibile che l'impostazione "LinkToPrevious" per`HeadersFooters` può ancora essere impostato. Per evitare questo comportamento, è necessario impostarlo esplicitamente su`false` per la prima sezione`HeadersFooters` proprietà.
+ Anche dopo aver cancellato le intestazioni e i piè di pagina dal documento di origine, è possibile che l'impostazione "LinkToPrevious" per`HeadersFooters` può ancora essere impostato. Per evitare questo comportamento, è necessario impostarlo esplicitamente su`false` per la prima sezione`HeadersFooters` proprietà.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -75,7 +75,7 @@ Ecco il codice sorgente completo per la funzione "Rimuovi i piè di pagina delle
 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

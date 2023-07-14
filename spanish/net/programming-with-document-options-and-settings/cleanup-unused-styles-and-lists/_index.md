@@ -1,7 +1,7 @@
 ---
 title: Limpiar estilos y listas no utilizados
 linktitle: Limpiar estilos y listas no utilizados
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para limpiar estilos y listas no utilizados en un documento con Aspose.Words para .NET.
 type: docs
 weight: 10

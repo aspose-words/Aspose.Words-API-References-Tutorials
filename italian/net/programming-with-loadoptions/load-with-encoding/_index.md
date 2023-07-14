@@ -1,13 +1,13 @@
 ---
 title: Carica con codifica
 linktitle: Carica con codifica
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come caricare un documento con una codifica specifica utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/load-with-encoding/
 ---
-Quando si lavora con documenti di testo in un'applicazione C#, è importante poterli caricare correttamente specificando la codifica corretta. Con la libreria Aspose.Words per .NET, puoi caricare facilmente documenti di testo con la codifica desiderata utilizzando le opzioni di caricamento LoadOptions. In questa guida dettagliata, ti illustreremo come utilizzare Aspose.Words per il codice sorgente .NET C# per caricare un documento di testo con la codifica specificata utilizzando le opzioni di caricamento LoadOptions.
+Durante l'elaborazione di testi con documenti di testo in un'applicazione C#, è importante poterli caricare correttamente specificando la codifica corretta. Con la libreria Aspose.Words per .NET, puoi caricare facilmente documenti di testo con la codifica desiderata utilizzando le opzioni di caricamento LoadOptions. In questa guida dettagliata, ti illustreremo come utilizzare Aspose.Words per il codice sorgente .NET C# per caricare un documento di testo con la codifica specificata utilizzando le opzioni di caricamento LoadOptions.
 
 ## Comprensione della libreria Aspose.Words
 

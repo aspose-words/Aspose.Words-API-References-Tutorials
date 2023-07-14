@@ -1,7 +1,7 @@
 ---
 title: Expandera formatering på celler och rad från stil
 linktitle: Expandera formatering på celler och rad från stil
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att utöka formateringen till celler och rader från en tabellstil med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -61,7 +61,7 @@ Shading the cell after style expansion: " + cellShadingAfter);
 ### Exempel på källkod för expandera formatering på celler och rad från stil med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

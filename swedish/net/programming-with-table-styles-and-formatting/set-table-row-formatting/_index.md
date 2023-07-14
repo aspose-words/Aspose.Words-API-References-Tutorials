@@ -1,7 +1,7 @@
 ---
 title: Ställ in formatering av tabellrader
 linktitle: Ställ in formatering av tabellrader
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att ställa in tabellradsformatering med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 ### Exempel på källkod för Set Table Row-formatering med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

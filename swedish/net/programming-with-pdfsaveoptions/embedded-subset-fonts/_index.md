@@ -1,7 +1,7 @@
 ---
 title: Bädda in delmängdsteckensnitt i PDF-dokument
 linktitle: Bädda in delmängdsteckensnitt i PDF-dokument
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att bädda in teckensnittsundergrupper i ett PDF-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

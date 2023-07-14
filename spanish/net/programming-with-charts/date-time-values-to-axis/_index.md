@@ -1,7 +1,7 @@
 ---
-title: Valores de fecha y hora al eje
-linktitle: Valores de fecha y hora al eje
-second_title: Referencia de API de Aspose.Words para .NET
+title: Agregar valores de fecha y hora al eje de un gráfico
+linktitle: Agregar valores de fecha y hora al eje de un gráfico
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a agregar valores de fecha y hora al eje de un gráfico usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Este tutorial explica cómo agregar valores de fecha y hora al eje de un gráfic
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y trabajo con documentos de Word.
+- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -67,7 +67,7 @@ xAxis.MinorTickMark = AxisTickMark.Outside;
 ```
 
 ## Paso 6: Guarde el documento
- Guarde el documento en el directorio especificado usando el`Save`método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithCharts.DateTimeValuesToAxis.docx".
+ Guarde el documento en el directorio especificado usando el`Save` método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithCharts.DateTimeValuesToAxis.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ### Ejemplo de código fuente para valores de fecha y hora en el eje usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -103,3 +103,17 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
 Este código de ejemplo crea un nuevo documento de Word, inserta un gráfico de columnas con valores de fecha y hora en el eje X y guarda el documento en el directorio especificado.
+
+## Conclusión
+En este tutorial, aprendió a agregar valores de fecha y hora al eje de un gráfico usando Aspose.Words para .NET. Siguiendo la guía paso a paso, puede crear un gráfico, agregar valores de fecha y hora a la serie y configurar el eje para mostrar los valores de fecha y hora con precisión. Aspose.Words para .NET proporciona un poderoso conjunto de funciones para el procesamiento de textos con gráficos en documentos de Word, lo que le permite representar y visualizar datos con valores de fecha y hora de manera efectiva.
+
+### preguntas frecuentes
+
+#### Q1. ¿Puedo agregar valores de fecha y hora al eje de un gráfico usando Aspose.Words para .NET?
+Sí, con Aspose.Words para .NET, puede agregar y mostrar valores de fecha y hora en el eje de un gráfico en un documento de Word. Aspose.Words proporciona API y funcionalidades para trabajar con varios tipos de gráficos y personalizar su apariencia, incluido el manejo de valores de fecha y hora en el eje.
+
+#### Q2. ¿Cómo agrego valores de fecha y hora a la serie de gráficos?
+ Para agregar valores de fecha y hora a la serie de gráficos, puede usar el`Add`método de la serie del gráfico. Proporcione una matriz de valores de fecha y hora como datos de categoría (eje X), junto con los valores de serie correspondientes. Esto le permite trazar puntos de datos con valores de fecha y hora en el gráfico.
+
+#### Q3. ¿Cómo puedo configurar el eje para mostrar los valores de fecha y hora?
+ Puede configurar el eje del gráfico para mostrar valores de fecha y hora estableciendo las propiedades apropiadas. Por ejemplo, puede especificar los valores mínimo y máximo para el eje usando el`Scaling.Minimum` y`Scaling.Maximum` propiedades, respectivamente. Además, puede configurar las unidades mayores y menores para definir el intervalo y las marcas de verificación para el eje.

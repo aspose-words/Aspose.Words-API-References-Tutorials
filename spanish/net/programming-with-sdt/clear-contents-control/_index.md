@@ -1,7 +1,7 @@
 ---
 title: Control de contenido claro
 linktitle: Control de contenido claro
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a borrar el contenido de un control en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Este tutorial demuestra cómo borrar el contenido de un SDT en un documento de W
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y trabajo con documentos de Word.
+- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
  Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde se encuentra su documento.
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## Paso 4: Guarde el documento
-Guarde el documento modificado usando el`Save`método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithSdt.ClearContentsControl.doc".
+ Guarde el documento modificado usando el`Save`método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithSdt.ClearContentsControl.doc".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
@@ -48,7 +48,7 @@ doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 ### Ejemplo de código fuente para Clear Contents Control usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

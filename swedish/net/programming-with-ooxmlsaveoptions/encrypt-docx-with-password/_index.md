@@ -1,7 +1,7 @@
 ---
 title: Kryptera Docx med lösenord
 linktitle: Kryptera Docx med lösenord
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du krypterar en DOCX-fil med ett lösenord med Aspose.Words för .NET. Komplett handledning för dokumentsäkerhet.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Nu kan du köra källkoden för att kryptera ditt DOCX-dokument med ett lösenor
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";  
 
 Document doc = new Document(dataDir + "Document.docx");

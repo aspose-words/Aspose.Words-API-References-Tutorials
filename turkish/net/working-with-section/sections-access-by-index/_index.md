@@ -1,7 +1,7 @@
 ---
 title: Dizine Göre Bölümlere Erişim
 linktitle: Dizine Göre Bölümlere Erişim
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu öğreticide, bir Word belgesinin bölümlerine dizine göre nasıl erişileceğini ve Aspose.Words for .NET ile bunların ayarlarını nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Ardından, Word belgesini bir örneğine yükleyeceğiz.`Document` sınıf. Belirli bir bölüme erişmek için bölüm dizinini kullanırız. Bu örnekte, 0 indeksini kullanarak ilk bölüme erişiyoruz.
 
 ```csharp
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Document.docx");
 
 // Dizine göre bir bölüme erişme
@@ -52,7 +52,7 @@ section.PageSetup.TextColumns.Spacing = 35.4; // 1.25cm
 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -86,7 +86,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A: Word belgesini bir örneğine yüklemek için`Document` class ve dizine göre belirli bir bölüme erişmek için aşağıdaki kodu kullanabilirsiniz:
 
 ```csharp
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Document.docx");
 
 // Dizine göre bir bölüme erişme

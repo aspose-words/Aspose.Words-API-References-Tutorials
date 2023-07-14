@@ -1,7 +1,7 @@
 ---
 title: Masa Konumunu Alın
 linktitle: Masa Konumunu Alın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesindeki bir tablonun konumunu nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tabl
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## 2. Adım: Belgeyi yükleme ve tabloya erişme
-Tabloyla çalışmaya başlamak için onu içeren belgeyi yüklememiz ve tabloya erişmemiz gerekiyor. Bu adımları takip et:
+Tablo ile Sözcük İşleme başlatmak için tabloyu içeren belgeyi yüklememiz ve tabloya erişmemiz gerekir. Bu adımları takip et:
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Diziye erişim
@@ -50,7 +50,7 @@ Console.WriteLine(table.Alignment);
 ### Aspose.Words for .NET kullanarak Get Table Position için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
@@ -67,4 +67,4 @@ Console.WriteLine(table.Alignment);
 ```
 
 ## Çözüm
-Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun konumunu nasıl alacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak Word belgelerinizde programlı olarak tablo konumlandırma özellikleri elde edebilirsiniz. Bu özellik, dizileri belirli konumlarına göre analiz etmenize ve değiştirmenize olanak tanır.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun konumunu nasıl alacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak Word belgelerinizde programlı olarak tablo konumlandırma özellikleri elde edebilirsiniz. Bu özellik, dizileri belirli konumlarına göre analiz etmenize ve değiştirmenize olanak tanır.

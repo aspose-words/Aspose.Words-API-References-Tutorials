@@ -1,7 +1,7 @@
 ---
 title: Dokument sidinställningar
 linktitle: Dokument sidinställningar
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att sätta upp en dokumentlayout med Aspose.Words för .NET.
 type: docs
 weight: 10

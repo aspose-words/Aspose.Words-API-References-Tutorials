@@ -1,7 +1,7 @@
 ---
 title: Immagine
 linktitle: Immagine
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire e personalizzare l'immagine con Aspose.Words per .NET Guida dettagliata.
 type: docs
 weight: 10

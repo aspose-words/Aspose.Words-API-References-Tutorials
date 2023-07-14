@@ -1,7 +1,7 @@
 ---
 title: Css Sınıf Adı Öneki Ekle
 linktitle: Css Sınıf Adı Öneki Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgeyi HTML'ye dönüştürürken bir CSS sınıf adı öneki eklemek için adım adım kılavuz.
 type: docs
 weight: 10

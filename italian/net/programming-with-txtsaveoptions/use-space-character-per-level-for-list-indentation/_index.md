@@ -1,7 +1,7 @@
 ---
 title: Usa carattere spazio per livello per il rientro dell'elenco
 linktitle: Usa carattere spazio per livello per il rientro dell'elenco
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata all'utilizzo di un carattere spazio per livello per il rientro dell'elenco in Aspose.Words per .NET. Crea facilmente documenti Word ben strutturati.
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ Aspose.Words per .NET è una potente libreria per creare, modificare e manipolar
 
 ## Comprensione della libreria Aspose.Words
 
-Prima di immergersi nel codice, è importante comprendere la libreria Aspose.Words per .NET. Aspose.Words è una libreria popolare che rende il lavoro con i documenti di Word facile ed efficiente. Offre un'ampia gamma di funzionalità per la creazione, la modifica e la manipolazione di documenti Word, inclusa la gestione di elenchi e rientri.
+Prima di immergersi nel codice, è importante comprendere la libreria Aspose.Words per .NET. Aspose.Words è una libreria popolare che rende l'elaborazione di testi con documenti Word semplice ed efficiente. Offre un'ampia gamma di funzionalità per la creazione, la modifica e la manipolazione di documenti Word, inclusa la gestione di elenchi e rientri.
 
 ## Creazione del documento e aggiunta di contenuto
 
@@ -91,12 +91,12 @@ namespace Example
 
 ## Conclusione
 
-In questa guida, abbiamo spiegato come utilizzare Aspose.Words per .NET per applicare la funzionalità "Usa un carattere spazio per livello per il rientro dell'elenco". Seguendo i passaggi forniti e utilizzando il codice sorgente C# fornito, è possibile configurare facilmente il rientro degli elenchi nei documenti di Word utilizzando un carattere spazio per livello. Aspose.Words offre un'enorme flessibilità e potenza per lavorare con la formattazione del testo e la gestione degli elenchi, consentendoti di creare documenti ben strutturati nella tua applicazione C#.
+In questa guida, abbiamo spiegato come utilizzare Aspose.Words per .NET per applicare la funzionalità "Usa un carattere spazio per livello per il rientro dell'elenco". Seguendo i passaggi forniti e utilizzando il codice sorgente C# fornito, è possibile configurare facilmente il rientro degli elenchi nei documenti di Word utilizzando un carattere spazio per livello. Aspose.Words offre un'enorme flessibilità e potenza per l'elaborazione di testi con la formattazione del testo e la gestione degli elenchi, consentendoti di creare documenti ben strutturati nella tua applicazione C#.
 
 ### Domande frequenti
 
 #### D: Cos'è Aspose.Words per .NET?
-Aspose.Words per .NET è una potente libreria per creare, modificare e manipolare documenti Word in un'applicazione C#. Offre molte funzionalità per lavorare con i documenti di Word, inclusa la possibilità di utilizzare uno spazio per livello per gli elenchi di rientro.
+Aspose.Words per .NET è una potente libreria per creare, modificare e manipolare documenti Word in un'applicazione C#. Offre molte funzionalità per l'elaborazione di testi con documenti Word, inclusa la possibilità di utilizzare uno spazio per livello per gli elenchi di rientro.
 
 #### D: Come posso utilizzare uno spazio per livello per il rientro dell'elenco con Aspose.Words per .NET?
 Puoi utilizzare uno spazio per livello per il rientro dell'elenco seguendo questi passaggi:
@@ -105,7 +105,7 @@ Puoi utilizzare uno spazio per livello per il rientro dell'elenco seguendo quest
 
  Usa il`DocumentBuilder`class per aggiungere contenuto al documento e creare un elenco con più livelli di indentazione.
 
- Dopo aver aggiunto il contenuto e configurato il rientro dell'elenco, utilizzare il file`TxtSaveOptions` classe e impostare il`ListIndentation.Count` proprietà al numero di livelli di indentazione e al`ListIndentation.Character` proprietà sullo spazio (`' '`) usare.
+ Dopo aver aggiunto il contenuto e configurato il rientro dell'elenco, utilizzare il file`TxtSaveOptions`classe e impostare il`ListIndentation.Count` proprietà al numero di livelli di indentazione e al`ListIndentation.Character` proprietà sullo spazio (`' '`) usare.
 
  Salvare il documento con le opzioni specificate utilizzando il file`Save` metodo del`Document` classe.
 

@@ -1,7 +1,7 @@
 ---
 title: Рендеринг 3D DML 3DEffects в PDF-документе
 linktitle: Рендеринг 3D DML 3DEffects в PDF-документе
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как включить рендеринг эффектов 3D DML при преобразовании в PDF с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOp
 
  Создайте экземпляр`Document` класс, указывающий путь к документу Word.
 
- Создайте экземпляр`PdfSaveOptions` класс и установить`Dml3DEffectsRenderingMode` собственность на`Dml3DEffectsRenderingMode.Advanced` для включения расширенного рендеринга эффектов 3D DML.
+ Создайте экземпляр`PdfSaveOptions`класс и установить`Dml3DEffectsRenderingMode` собственность на`Dml3DEffectsRenderingMode.Advanced` для включения расширенного рендеринга эффектов 3D DML.
 
  Использовать`Save` метод`Document`class, чтобы сохранить документ в формате PDF, указав параметры сохранения.
 

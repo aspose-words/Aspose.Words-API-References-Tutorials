@@ -1,7 +1,7 @@
 ---
 title: I campi modulo funzionano con le proprietà
 linktitle: I campi modulo funzionano con le proprietà
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come lavorare con le proprietà dei campi modulo nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -29,7 +29,7 @@ Successivamente, recupera un campo modulo specifico dalla raccolta di campi modu
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## Passaggio 3: lavorare con le proprietà del campo modulo
+## Passaggio 3: elaborazione di testi con le proprietà del campo del modulo
 
  Puoi manipolare varie proprietà del campo modulo in base al suo tipo. In questo esempio, controlliamo se il campo del modulo è di tipo`FieldType.FieldFormTextInput` e impostare il suo`Result` proprietà di conseguenza:
 

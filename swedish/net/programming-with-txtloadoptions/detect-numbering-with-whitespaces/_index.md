@@ -1,7 +1,7 @@
 ---
 title: Upptäck numrering med blanksteg
 linktitle: Upptäck numrering med blanksteg
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du upptäcker listnummer med blanksteg i Aspose.Words för .NET. Förbättra strukturen på dina dokument med lätthet.
 type: docs
 weight: 10

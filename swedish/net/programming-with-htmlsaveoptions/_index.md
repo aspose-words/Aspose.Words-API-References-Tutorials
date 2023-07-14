@@ -1,7 +1,7 @@
 ---
-title: Programmering med Htmlsave-alternativ
-linktitle: Programmering med Htmlsave-alternativ
-second_title: Aspose.Words för .NET API Referens
+title: Ordbehandling med Htmlsave-alternativ
+linktitle: Ordbehandling med Htmlsave-alternativ
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du programmerar med HTML-sparalternativ i Aspose.Words för .NET. Konvertera enkelt Word-dokument till HTML med bibehållen formatering och innehåll.
 type: docs
 weight: 1620
@@ -9,7 +9,7 @@ url: /sv/net/programming-with-htmlsaveoptions/
 ---
 Aspose.Words för .NET är ett kraftfullt bibliotek för att manipulera och generera Word-dokument i .NET-applikationer. Handledningarna på Aspose.Words för .NET-referenswebbplatsen är en värdefull resurs för utvecklare som vill bemästra detta bibliotek och fullt ut utnyttja dess funktionalitet.
 
-Handledningen "Programmering med HtmlSaveOptions" fokuserar på att använda HTML-sparalternativ i Aspose.Words för .NET. Denna handledning guidar utvecklare genom de olika tillgängliga alternativen för att anpassa konverteringen av Word-dokument till HTML. Detaljerade kodexempel tillhandahålls för att demonstrera användningen av dessa alternativ och uppnå önskade konverteringsresultat.
+Handledningen "Ordbehandling med HtmlSaveOptions" fokuserar på att använda HTML-sparalternativ i Aspose.Words för .NET. Denna handledning guidar utvecklare genom de olika tillgängliga alternativen för att anpassa konverteringen av Word-dokument till HTML. Detaljerade kodexempel tillhandahålls för att demonstrera användningen av dessa alternativ och uppnå önskade konverteringsresultat.
 
 Oavsett om du vill konvertera Word-dokument till HTML för visning på webben, bädda in HTML-innehåll i dina Word-dokument eller anpassa HTML-rendering, ger denna handledning dig kunskap och färdigheter för att göra det. Tack vare detaljerade förklaringar och praktiska exempel kommer du att fullt ut kunna utnyttja HTML-konverteringsfunktionerna i Aspose.Words för .NET i dina utvecklingsprojekt.
 

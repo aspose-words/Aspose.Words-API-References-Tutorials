@@ -1,7 +1,7 @@
 ---
 title: Bifoga dokument
 linktitle: Bifoga dokument
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till innehållet i ett dokument till ett annat med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -54,7 +54,7 @@ Detta slutför implementeringen av att lägga till ett dokument med Aspose.Words
 ### Exempel på källkod för Bifoga dokument med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -63,7 +63,7 @@ Detta slutför implementeringen av att lägga till ett dokument med Aspose.Words
 	// Sektionsnoder är omedelbara underordnade av dokumentnoden så vi kan bara räkna upp dokumentet.
 	foreach (Section srcSection in srcDoc)
 	{
-		//Eftersom vi kopierar ett avsnitt från ett dokument till ett annat,
+		// Eftersom vi kopierar ett avsnitt från ett dokument till ett annat,
 		// det krävs för att importera sektionsnoden till måldokumentet.
 		// Detta justerar eventuella dokumentspecifika referenser till stilar, listor etc.
 		//

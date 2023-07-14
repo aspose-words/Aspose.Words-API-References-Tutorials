@@ -1,8 +1,8 @@
 ---
-title: Trabajar con campos
-linktitle: Trabajar con campos
-second_title: Referencia de API de Aspose.Words para .NET
-description: Un recurso integral para trabajar con campos en documentos de Word utilizando Aspose.Words para .NET. Tutoriales, ejemplos y explicaciones detalladas.
+title: Procesamiento de textos con campos
+linktitle: Procesamiento de textos con campos
+second_title: API de procesamiento de documentos de Aspose.Words
+description: Un recurso completo para el procesamiento de textos con campos en documentos de Word utilizando Aspose.Words para .NET. Tutoriales, ejemplos y explicaciones detalladas.
 type: docs
 weight: 140
 url: /es/net/working-with-fields/

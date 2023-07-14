@@ -1,7 +1,7 @@
 ---
 title: Riconosci il testo Utf8
 linktitle: Riconosci il testo Utf8
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come riconoscere i caratteri Utf-8 nei documenti RTF con Aspose.Words per .NET. Garantire l'integrità dei dati.
 type: docs
 weight: 10
@@ -67,4 +67,4 @@ In questo tutorial, abbiamo esplorato la funzionalità di riconoscimento del tes
 
 Questa funzione è essenziale per garantire la corretta visualizzazione dei caratteri Utf-8 nei documenti RTF. Configurando le opportune opzioni di caricamento, Aspose.Words è in grado di riconoscere ed elaborare correttamente questi caratteri, contribuendo a preservare l'integrità e la qualità del testo.
 
-Il riconoscimento del testo Utf-8 è particolarmente importante quando si lavora con lingue e set di caratteri specifici che richiedono il supporto della codifica Utf-8. Grazie ad Aspose.Words per .NET, puoi facilmente manipolare documenti RTF contenenti caratteri Utf-8 senza rischio di perdita o danneggiamento.
+Il riconoscimento del testo Utf-8 è particolarmente importante durante l'elaborazione di testi con lingue e set di caratteri specifici che richiedono il supporto della codifica Utf-8. Grazie ad Aspose.Words per .NET, puoi facilmente manipolare documenti RTF contenenti caratteri Utf-8 senza rischio di perdita o danneggiamento.

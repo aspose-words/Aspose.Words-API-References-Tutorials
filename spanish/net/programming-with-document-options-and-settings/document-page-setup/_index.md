@@ -1,7 +1,7 @@
 ---
 title: Configuración de la página del documento
 linktitle: Configuración de la página del documento
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para configurar un diseño de documento con Aspose.Words para .NET.
 type: docs
 weight: 10

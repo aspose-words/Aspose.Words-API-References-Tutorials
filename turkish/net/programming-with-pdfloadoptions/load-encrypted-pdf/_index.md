@@ -1,20 +1,20 @@
 ---
 title: Şifreli Pdf Yükle
 linktitle: Şifreli Pdf Yükle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak şifreli bir PDF yüklemek için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ---
 
-.NET uygulamanızda PDF belgeleriyle çalışırken, parola korumalı PDF dosyalarını yüklemeniz gerekebilir. Aspose.Words for .NET, şifreli PDF belgelerini yüklemek için işlevsellik sağlayan güçlü bir kitaplıktır. Bu yazıda, bu özelliği anlamanız ve kullanmanız için size adım adım rehberlik edeceğiz.
+.NET uygulamanızda PDF belgeleriyle Kelime İşleme yaparken, parola korumalı PDF dosyalarını yüklemeniz gerekebilir. Aspose.Words for .NET, şifreli PDF belgelerini yüklemek için işlevsellik sağlayan güçlü bir kitaplıktır. Bu yazıda, bu özelliği anlamanız ve kullanmanız için size adım adım rehberlik edeceğiz.
 
 ## Şifreli PDF Özelliğini Yüklemeyi Anlama
 
 Aspose.Words for .NET'in Şifreli PDF'yi Yükle özelliği, parola korumalı PDF dosyalarını yüklemenizi sağlar. İçeriğine erişebilmek ve gerektiği gibi değiştirebilmek için belgeyi yüklerken parolayı belirtebilirsiniz.
 
-## 1. Adım: Şifrelenmiş PDF Belgesini Yükleme
+## 1. Adım: Şifreli PDF Belgesini Yükleme
 
 İlk adım, şifrelenmiş PDF belgesini uygulamanıza yüklemektir. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
@@ -85,6 +85,6 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'in Şifreli PDF Yükle özelliğinin nasıl kullanılacağını inceledik. Şifreli PDF dosyalarının nasıl yükleneceğini, bir PDF belgesinin nasıl şifreleneceğini, şifreli bir PDF'nin nasıl yükleneceği ve Markdown formatında nasıl çıktı alınacağını öğrendiniz. Bu özellik, güvenli PDF belgeleriyle çalışırken son derece kullanışlıdır.
+Bu makalede, Aspose.Words for .NET'in Şifreli PDF Yükle özelliğinin nasıl kullanılacağını inceledik. Şifreli PDF dosyalarının nasıl yükleneceğini, bir PDF belgesinin nasıl şifreleneceğini, şifreli bir PDF'nin nasıl yükleneceği ve Markdown formatında nasıl çıktı alınacağını öğrendiniz. Bu özellik, güvenli PDF belgeleriyle Sözcük İşleme yaparken son derece kullanışlıdır.
 
 

@@ -1,7 +1,7 @@
 ---
 title: Cultura de actualización de campo
 linktitle: Cultura de actualización de campo
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a actualizar la cultura de campo en sus documentos de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -61,7 +61,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Inserte el campo de tiempo.
 builder. InsertField(FieldType.FieldTime, true);
 
-//Configure la referencia cultural de actualización de campo.
+// Configure la referencia cultural de actualización de campo.
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 

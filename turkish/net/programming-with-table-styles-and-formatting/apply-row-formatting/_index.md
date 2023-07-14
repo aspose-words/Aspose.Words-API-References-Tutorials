@@ -1,7 +1,7 @@
 ---
 title: Satır Biçimlendirmesini Uygula
 linktitle: Satır Biçimlendirmesini Uygula
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir tabloya satır biçimlendirmesi uygulamak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -87,7 +87,7 @@ Tebrikler! Artık Aspose.Words for .NET kullanarak bir tabloya satır biçimlend
 ### Aspose.Words for .NET kullanarak Satır Biçimlendirmesini Uygula için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

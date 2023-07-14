@@ -1,7 +1,7 @@
 ---
 title: Создать и добавить узел абзаца
 linktitle: Создать и добавить узел абзаца
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Создайте и добавьте узел абзаца в документы Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## Шаг 4. Доступ к разделу документов
+## Шаг 4. Получите доступ к разделу документов
  Чтобы добавить абзац в документ, нам нужно получить доступ к последнему разделу документа с помощью`LastSection` свойство.
 
 ```csharp

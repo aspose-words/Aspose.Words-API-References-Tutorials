@@ -1,7 +1,7 @@
 ---
 title: Вставить таблицу напрямую
 linktitle: Вставить таблицу напрямую
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как вставить таблицу непосредственно в документ Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /ru/net/programming-with-tables/insert-table-directly/
 2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
 
 ## Шаг 2: Создание документа и таблицы
-Чтобы начать работу с массивом, нам нужно создать новый документ и инициализировать массив. Следуй этим шагам:
+Чтобы запустить Word Processing с массивом, нам нужно создать новый документ и инициализировать массив. Следуй этим шагам:
 
 ```csharp
 // Путь к каталогу ваших документов
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Создание документа
 Document doc = new Document();
 
-// Создайте массив
+//Создайте массив
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);
 ```
@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 ### Пример исходного кода для прямой вставки таблицы с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

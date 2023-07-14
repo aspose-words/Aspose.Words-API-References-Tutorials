@@ -1,7 +1,7 @@
 ---
 title: Specifica la lingua a livello di campo
 linktitle: Specifica la lingua a livello di campo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come specificare la localizzazione a livello di campo nei documenti di Word con Aspose.Words per .NET.
 type: docs
 weight: 10

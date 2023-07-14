@@ -1,7 +1,7 @@
 ---
 title: Yorum Çözüldü ve Yanıtlar
 linktitle: Yorum Çözüldü ve Yanıtlar
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerindeki yorumları ve yanıtlarını nasıl çözeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -84,15 +84,15 @@ Yorum çözünürlüğü, bir belgedeki geri bildirimlerin izlenmesine ve yönet
 
 #### S: Aspose.Words for .NET'te çözümlenmiş bir yoruma nasıl yanıt eklerim?
 
- Y: Son belgede çözümlenen yorumlar varsayılan olarak gizlenmiş olsa da, çözümlenen bir yoruma yanıt ekleyebilirsiniz.`Comment.AddReply`yanıt metnini ve onu nereye eklemek istediğinizi belirten yöntem.
+ Y: Son belgede çözümlenen yorumlar varsayılan olarak gizlenmiş olsa da, çözümlenen bir yoruma yanıt ekleyebilirsiniz.`Comment.AddReply` yanıt metnini ve onu nereye eklemek istediğinizi belirten yöntem.
 
 #### S: Çözümlenmiş yorumları Aspose.Words for .NET'te nasıl görüntülerim?
 
- C: Varsayılan olarak, çözümlenen yorumlar son belgede gizlenir. Ancak, bunları kullanarak gösterebilirsiniz.`CommentOptions.ShowResolvedComments` mülkiyeti`Document` nesne ve bunu ayarlamak`true`.
+ C: Varsayılan olarak, çözümlenen yorumlar son belgede gizlenir. Ancak, bunları kullanarak gösterebilirsiniz.`CommentOptions.ShowResolvedComments`mülkiyeti`Document` nesne ve bunu ayarlamak`true`.
 
 #### S: Aspose.Words for .NET'te yanıtlar dahil tüm yorumları nasıl gizleyebilirim?
 
- C: Aspose.Words for .NET'te yanıtlar dahil tüm yorumları gizlemek için`CommentOptions.CommentDisplayMode` mülkiyeti`Document` nesne ve onu ayarla`CommentDisplayMode.None`.
+ C: Aspose.Words for .NET'te yanıtlar dahil tüm yorumları gizlemek için`CommentOptions.CommentDisplayMode`mülkiyeti`Document` nesne ve onu ayarla`CommentDisplayMode.None`.
 
 #### S: Çözümlenmiş bir yorumun metnini Aspose.Words for .NET'te düzenleyebilir miyim?
 

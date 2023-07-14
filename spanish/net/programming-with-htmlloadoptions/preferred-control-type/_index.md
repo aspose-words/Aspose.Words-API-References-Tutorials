@@ -1,7 +1,7 @@
 ---
 title: Tipo de control preferido
 linktitle: Tipo de control preferido
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para especificar el tipo de control preferido al cargar un documento HTML con Aspose.Words para .NET.
 type: docs
 weight: 10

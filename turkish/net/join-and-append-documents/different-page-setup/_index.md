@@ -1,7 +1,7 @@
 ---
 title: Farklı Sayfa Düzeni
 linktitle: Farklı Sayfa Düzeni
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak farklı sayfa düzeni ayarlarına sahip bir belgeyi nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: Kaynak belge için sayfa ayarlarını yapın
 
- Düzgün devam ve numaralandırmayı sağlamak için kaynak belgenin sayfa düzeni ayarlarını düzenleyin. Bu örnekte, bölümün başlangıcını şu şekilde ayarladık:`SectionStart.Continuous` ve sayfa numaralandırmayı yeniden başlatın. Ayrıca sayfa genişliğinin, yüksekliğinin ve yönünün hedef belgenin son bölümüyle eşleştiğinden emin oluruz.
+Düzgün devam ve numaralandırmayı sağlamak için kaynak belgenin sayfa düzeni ayarlarını düzenleyin. Bu örnekte, bölümün başlangıcını şu şekilde ayarladık:`SectionStart.Continuous` ve sayfa numaralandırmayı yeniden başlatın. Ayrıca sayfa genişliğinin, yüksekliğinin ve yönünün hedef belgenin son bölümüyle eşleştiğinden emin oluruz.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## 4. Adım: Paragraf biçimlendirmesini değiştirin
 
-Doğru biçimlendirmeyi sürdürmek için, kaynak belgedeki tüm paragrafları yineleyin ve`KeepWithNext` mülkiyet`true`. Bu, ekleme işlemi sırasında paragrafların bir arada kalmasını sağlar.
+ Doğru biçimlendirmeyi sürdürmek için, kaynak belgedeki tüm paragrafları yineleyin ve`KeepWithNext` mülkiyet`true`. Bu, ekleme işlemi sırasında paragrafların bir arada kalmasını sağlar.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -74,19 +74,19 @@ Bu, Aspose.Words for .NET kullanılarak farklı sayfa düzeni ayarlarına sahip 
 ### Aspose.Words for .NET kullanan Farklı Sayfa Düzeni için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Kaynak belgeyi, hedef belgenin bitiminden hemen sonra devam edecek şekilde ayarlayın.
+	//Kaynak belgeyi, hedef belgenin bitiminden hemen sonra devam edecek şekilde ayarlayın.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Kaynak belgenin başlangıcında sayfa numaralandırmayı yeniden başlatın.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Kaynak belgede farklı sayfa düzeni ayarları olduğunda bunun olmamasını sağlamak için,
 	// ayarlar, hedef belgenin son bölümü arasında aynıdır.
-	//Kaynak belgede devam eden başka sürekli bölümler varsa,
+	// Kaynak belgede devam eden başka sürekli bölümler varsa,
 	// bunun o bölümler için tekrarlanması gerekecektir.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;

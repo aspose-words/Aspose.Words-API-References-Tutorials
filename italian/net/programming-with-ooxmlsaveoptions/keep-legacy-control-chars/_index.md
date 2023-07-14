@@ -1,7 +1,7 @@
 ---
 title: Mantieni caratteri di controllo legacy
 linktitle: Mantieni caratteri di controllo legacy
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come preservare i caratteri di controllo legacy durante il salvataggio di un documento con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Ora puoi eseguire il codice sorgente per conservare i caratteri di controllo leg
 ### Esempio di codice sorgente per Keep Legacy Control Chars utilizzando Aspose.Words per .NET 
 ```csharp
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Legacy control character.doc");
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 In questo tutorial, abbiamo esplorato la funzionalità di conservazione dei caratteri di controllo legacy durante il salvataggio di un documento utilizzando Aspose.Words per .NET. Abbiamo imparato come preservare quei caratteri speciali che possono essere importanti per la corretta formattazione o visualizzazione del documento.
 
- La conservazione dei caratteri di controllo legacy è particolarmente utile quando si lavora con documenti che utilizzano funzionalità precedenti o specifiche, come caratteri di controllo speciali. Abilitando il`KeepLegacyControlChars`opzione quando si salva il documento, ci si assicura che questi caratteri vengano preservati.
+ La conservazione dei caratteri di controllo legacy è particolarmente utile durante l'elaborazione di testi con documenti che utilizzano funzionalità precedenti o specifiche, come i caratteri di controllo speciali. Abilitando il`KeepLegacyControlChars`opzione quando si salva il documento, ci si assicura che questi caratteri vengano preservati.
 
 Aspose.Words per .NET offre una gamma di opzioni di backup flessibili e potenti per soddisfare le esigenze di manipolazione dei documenti. Utilizzando le apposite opzioni, puoi personalizzare il processo di backup per preservare le caratteristiche specifiche dei tuoi documenti.
 

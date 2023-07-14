@@ -1,7 +1,7 @@
 ---
 title: Ställ in relativ horisontell eller vertikal position
 linktitle: Ställ in relativ horisontell eller vertikal position
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ställer in den relativa horisontella eller vertikala positionen för en tabell i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ I den här handledningen ska vi lära oss hur man ställer in den relativa horis
 2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
 ## Steg 2: Ladda dokumentet
-För att börja arbeta med dokumentet, följ dessa steg:
+Följ dessa steg för att starta ordbehandling med dokumentet:
 
 ```csharp
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
@@ -55,7 +55,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 ### Exempel på källkod för Ange relativ horisontell eller vertikal position med Aspose.Words för .NET 
 
 ```csharp
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");

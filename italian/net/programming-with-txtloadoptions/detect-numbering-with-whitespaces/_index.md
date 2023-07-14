@@ -1,7 +1,7 @@
 ---
 title: Rileva numerazione con spazi bianchi
 linktitle: Rileva numerazione con spazi bianchi
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come rilevare i numeri di elenco con spazi bianchi in Aspose.Words per .NET. Migliora la struttura dei tuoi documenti con facilità.
 type: docs
 weight: 10

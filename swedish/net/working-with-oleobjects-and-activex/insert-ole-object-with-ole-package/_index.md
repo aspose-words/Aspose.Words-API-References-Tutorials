@@ -1,7 +1,7 @@
 ---
 title: Infoga Ole-objekt i Word med Ole-paketet
 linktitle: Infoga Ole-objekt i Word med Ole-paketet
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar ett OLE-objekt med ett OLE-paket i ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Insertar campo Ninguno
 linktitle: Insertar campo Ninguno
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a Insérez un champ AUCUN dans vos documentos Word con Aspose.Words pour .NET.
 type: docs
 weight: 10
@@ -57,7 +57,7 @@ Esto concluye nuestra guía sobre el uso de la función "Insertar NINGUNO de los
 
 ### Preguntas frecuentes
 
-#### P: ¿Qué cubre el tutorial "Trabajar con campos: Insertar campo ninguno"?
+#### P: ¿Qué cubre el tutorial "Procesamiento de textos con campos: Insertar campo ninguno"?
 
 R: Este tutorial cubre la manipulación de campos en Aspose Words para .NET, con un enfoque particular en la inserción del campo "Ninguno". Los campos son elementos dinámicos en un documento de Word que se pueden usar para mostrar o calcular datos. El tutorial explica cómo insertar el campo "Ninguno" y usarlo apropiadamente.
 

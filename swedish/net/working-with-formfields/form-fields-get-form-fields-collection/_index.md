@@ -1,7 +1,7 @@
 ---
 title: Formulärfält Få formulärfältsamling
 linktitle: Formulärfält Få formulärfältsamling
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du hämtar och manipulerar insamling av formulärfält i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Steg 2: Hämta formulärfältsamlingen
 
- Gå sedan till`FormFields` egendom av`Range` objekt i dokumentet för att hämta samlingen av formulärfält:
+ Gå sedan till`FormFields`egendom av`Range` objekt i dokumentet för att hämta samlingen av formulärfält:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;

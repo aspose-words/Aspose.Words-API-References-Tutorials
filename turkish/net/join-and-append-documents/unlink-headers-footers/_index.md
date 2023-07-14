@@ -1,7 +1,7 @@
 ---
 title: Üstbilgilerin Altbilgilerin Bağlantısını Kaldırma
 linktitle: Üstbilgilerin Altbilgilerin Bağlantısını Kaldırma
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak üstbilgi ve altbilgi bağlantısını kaldırırken Word belgelerini nasıl birleştireceğinizi ve ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
 ## 1. Adım: Belge Dizinlerini Başlatın
 
- Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir` belgelerinizin bulunduğu yola değişken.
+ Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir`belgelerinizin bulunduğu yola değişken.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. Adım: Kaynak Belgedeki Üstbilgiler ve Altbilgilerin Bağlantısını Kaldırın
 
- Kaynak belgedeki üstbilgiler ve altbilgiler ile devam eden hedef belgenin üstbilgiler ve altbilgiler arasındaki bağlantıyı kaldırmak için,`LinkToPrevious` mülkiyeti`HeadersFooters` kaynak belgenin ilk bölümünde toplama`false`.
+ Kaynak belgedeki üstbilgiler ve altbilgiler ile devam eden hedef belgenin üstbilgiler ve altbilgiler arasındaki bağlantıyı kaldırmak için,`LinkToPrevious`mülkiyeti`HeadersFooters` kaynak belgenin ilk bölümünde toplama`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 5. Adım: Nihai Belgeyi Kaydedin
 
- Son olarak, birleştirilmiş belgeyi Üstbilgilerin Altbilgilerin Bağlantısını Kaldır özelliği etkinleştirilerek kaydedin.`Save` yöntemi`Document` sınıf.
+Son olarak, birleştirilmiş belgeyi Üstbilgilerin Altbilgilerin Bağlantısını Kaldır özelliği etkinleştirilerek kaydedin.`Save` yöntemi`Document` sınıf.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 Aspose.Words for .NET kullanan C# dilindeki "Üstbilgilerin Altbilgilerin Bağlantısını Kaldır" özelliğinin tam kaynak kodu burada:
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

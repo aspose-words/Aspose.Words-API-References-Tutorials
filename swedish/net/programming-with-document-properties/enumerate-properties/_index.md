@@ -1,7 +1,7 @@
 ---
 title: Räkna upp egenskaper
 linktitle: Räkna upp egenskaper
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att räkna upp dokumentegenskaper med Aspose.Words för .NET.
 type: docs
 weight: 10

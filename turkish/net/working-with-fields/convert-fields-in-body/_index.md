@@ -1,7 +1,7 @@
 ---
 title: Gövdedeki Alanları Dönüştür
 linktitle: Gövdedeki Alanları Dönüştür
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Sayfa alanlarını bir Word belgesinin gövdesindeki metne dönüştürmek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
@@ -22,13 +22,13 @@ Belgeler dizininizin yolu için bir değişken bildirerek başlayın, ardından 
 // Belgeler dizininizin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
 ## 3. Adım: Sayfa Alanlarını Düz Metne Dönüştürün
 
-Belge yüklendiğine göre artık dönüştürme adımlarına geçebiliriz. İlk bölümün gövdesindeki sayfa alanlarını düz metne dönüştürmek için`Range.Fields` belirtilen aralıktaki tüm alanları alma ve ardından tür alanlarını filtreleme yöntemi`FieldType.FieldPage` . Sonra kullanabilirsiniz`ForEach` her alanda döngü yapmak ve çağırmak için yöntem`Unlink()` düz metne dönüştürme yöntemi.
+ Belge yüklendiğine göre artık dönüştürme adımlarına geçebiliriz. İlk bölümün gövdesindeki sayfa alanlarını düz metne dönüştürmek için`Range.Fields` belirtilen aralıktaki tüm alanları alma ve ardından tür alanlarını filtreleme yöntemi`FieldType.FieldPage` . Sonra kullanabilirsiniz`ForEach` her alanda döngü yapmak ve çağırmak için yöntem`Unlink()` düz metne dönüştürme yöntemi.
 
 ```csharp
 // Sayfa alanlarını ilk bölümün gövdesinde düz metne dönüştürmek için uygun parametreleri iletin.
@@ -37,7 +37,7 @@ doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToL
 
 ## 4. Adım: Değiştirilen belgeyi kaydedin
 
- Sayfa alanlarını düz metne dönüştürdükten sonra, değiştirilmiş belgeyi kullanarak kaydedebilirsiniz.`Save()` yöntemi ve çıktı dosyasının yolunu ve adını belirtme. Örneğimizde "WorkingWithFields.ConvertFieldsInBody.docx" olarak kaydediyoruz.
+Sayfa alanlarını düz metne dönüştürdükten sonra, değiştirilmiş belgeyi kullanarak kaydedebilirsiniz.`Save()` yöntemi ve çıktı dosyasının yolunu ve adını belirtme. Örneğimizde "WorkingWithFields.ConvertFieldsInBody.docx" olarak kaydediyoruz.
 
 ```csharp
 // Değiştirilen belgeyi kaydet
@@ -52,7 +52,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 // Belgeler dizininizin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Linked fields.docx");
 
 // Sayfa alanlarını ilk bölümün gövdesinde düz metne dönüştürmek için uygun parametreleri iletin.

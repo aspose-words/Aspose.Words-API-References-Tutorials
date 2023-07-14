@@ -1,7 +1,7 @@
 ---
 title: Rimuovi commenti nel file Pdf
 linktitle: Rimuovi commenti nel file Pdf
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Rimuovi i commenti in un file PDF con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### D: Come nascondere i commenti nei PDF generati con Aspose.Words per .NET?
 
- R: Usa il`CommentDisplayMode` proprietà del`LayoutOptions` oggetto per configurare la modalità di visualizzazione dei commenti durante la generazione del PDF. Per nascondere i commenti, imposta questa proprietà su`CommentDisplayMode.Hide`.
+ R: Usa il`CommentDisplayMode`proprietà del`LayoutOptions` oggetto per configurare la modalità di visualizzazione dei commenti durante la generazione del PDF. Per nascondere i commenti, imposta questa proprietà su`CommentDisplayMode.Hide`.
 
 ```csharp
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;

@@ -1,7 +1,7 @@
 ---
 title: Изменить параметры страницы Word во всех разделах
 linktitle: Изменить параметры страницы Word во всех разделах
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Из этого руководства вы узнаете, как изменить настройки страницы Word во всех разделах документа Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -53,7 +53,7 @@ foreach(Section section in doc.Sections)
 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

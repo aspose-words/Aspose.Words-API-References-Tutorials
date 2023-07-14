@@ -1,7 +1,7 @@
 ---
 title: Få avstånd mellan tabellens omgivande text
 linktitle: Få avstånd mellan tabellens omgivande text
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg guide för att få avståndet mellan text och en tabell i ett Word-dokument med hjälp av Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -38,7 +38,7 @@ Console.WriteLine("Distance between the table and the text on the left: " + tabl
 ### Exempel på källkod för Get Distance Between Table Surrounding Text med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

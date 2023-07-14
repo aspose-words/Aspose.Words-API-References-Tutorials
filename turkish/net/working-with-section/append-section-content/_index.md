@@ -1,7 +1,7 @@
 ---
 title: Bölüm Kelime İçeriğini Ekleyin
 linktitle: Bölüm Kelime İçeriğini Ekleyin
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinin belirli bölümlerine nasıl kelime içeriği ekleyeceğinizi öğrenin.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Docx'i Şifreyle Şifrele
 linktitle: Docx'i Şifreyle Şifrele
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir DOCX dosyasını bir parola ile nasıl şifreleyeceğinizi öğrenin. Belge güvenliği için eksiksiz eğitim.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Artık DOCX belgenizi bir parola ile şifrelemek için kaynak kodunu çalıştı
 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";  
 
 Document doc = new Document(dataDir + "Document.docx");

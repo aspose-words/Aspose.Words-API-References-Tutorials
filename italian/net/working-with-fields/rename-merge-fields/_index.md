@@ -1,7 +1,7 @@
 ---
 title: Rinomina campi di unione
 linktitle: Rinomina campi di unione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: In questo tutorial imparerai come rinominare i campi di unione in un documento utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10

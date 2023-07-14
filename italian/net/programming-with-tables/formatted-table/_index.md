@@ -1,7 +1,7 @@
 ---
 title: Tabella formattata
 linktitle: Tabella formattata
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come creare una tabella formattata in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -112,7 +112,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ### Esempio di codice sorgente per la tabella formattata utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

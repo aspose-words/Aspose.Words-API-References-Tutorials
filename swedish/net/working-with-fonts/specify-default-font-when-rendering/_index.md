@@ -1,7 +1,7 @@
 ---
 title: Ange standardteckensnitt vid rendering
 linktitle: Ange standardteckensnitt vid rendering
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att ange standardteckensnittet när du renderar ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Steg 3: Ställ in standardteckensnitt
- Nu kan du ange vilket standardteckensnitt som ska användas vid rendering genom att skapa en instans av`FontSettings` klass och ställa in`DefaultFontName` egendom av`DefaultFontSubstitution` invända mot`DefaultFontSubstitution` objekt`SubstitutionSettings` av`FontSettings`.
+ Nu kan du ange vilket standardteckensnitt som ska användas vid rendering genom att skapa en instans av`FontSettings` klass och ställa in`DefaultFontName`egendom av`DefaultFontSubstitution` invända mot`DefaultFontSubstitution` objekt`SubstitutionSettings` av`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ### Exempel på källkod för Specificera standardteckensnitt vid rendering med Aspose.Words för .NET 
 
 ```csharp
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -56,13 +56,13 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Slutsats
-den här handledningen lärde vi oss hur man anger standardteckensnittet när man renderar ett dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide kan du enkelt ställa in ett standardteckensnitt som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för att arbeta med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa renderingen av dina dokument efter dina specifika behov.
+den här handledningen lärde vi oss hur man anger standardteckensnittet när man renderar ett dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide kan du enkelt ställa in ett standardteckensnitt som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för ordbehandling med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa renderingen av dina dokument efter dina specifika behov.
 
 ### FAQ's
 
 #### F: Hur kan jag ange ett standardteckensnitt när jag konverterar till PDF i Aspose.Words?
 
- S: För att ange ett standardteckensnitt när du konverterar till PDF i Aspose.Words kan du använda`PdfOptions` klass och ställ in`DefaultFontName` egenskap till namnet på det önskade teckensnittet.
+ S: För att ange ett standardteckensnitt när du konverterar till PDF i Aspose.Words kan du använda`PdfOptions`klass och ställ in`DefaultFontName` egenskap till namnet på det önskade teckensnittet.
 
 #### F: Vad händer om standardteckensnittet inte är tillgängligt vid konvertering till PDF?
 
@@ -74,7 +74,7 @@ S: Ja, du kan ange ett standardteckensnitt för andra utdataformat som DOCX elle
 
 #### F: Hur kan jag kontrollera standardteckensnittet som anges i Aspose.Words?
 
- S: För att kontrollera standardteckensnittet som anges i Aspose.Words, kan du använda`DefaultFontName` egendom av`PdfOptions` klass och hämta namnet på det konfigurerade teckensnittet.
+ S: För att kontrollera standardteckensnittet som anges i Aspose.Words, kan du använda`DefaultFontName`egendom av`PdfOptions` klass och hämta namnet på det konfigurerade teckensnittet.
 
 #### F: Är det möjligt att ange olika standardteckensnitt för varje del av dokumentet?
 

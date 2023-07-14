@@ -1,7 +1,7 @@
 ---
 title: Optimera PDF-storlek med Skip Embedded Arial och Times Roman-teckensnitt
 linktitle: Optimera PDF-storlek med Skip Embedded Arial och Times Roman-teckensnitt
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att generera optimerad PDF utan att bädda in Arial- och Times Roman-teckensnitt med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -76,7 +76,7 @@ S: För att konfigurera Aspose.Words för .NET att inte bädda in Arial- och Tim
 
  Ladda dokumentet du vill bearbeta med hjälp av`Document` klass och den angivna dokumentsökvägen.
 
- Skapa en instans av`PdfSaveOptions` klass och ställ in`FontEmbeddingMode` egendom till`PdfFontEmbeddingMode.EmbedAll`. Detta kommer att bädda in alla typsnitt utom Arial och Times Roman i den genererade PDF-filen.
+ Skapa en instans av`PdfSaveOptions`klass och ställ in`FontEmbeddingMode` egendom till`PdfFontEmbeddingMode.EmbedAll`. Detta kommer att bädda in alla typsnitt utom Arial och Times Roman i den genererade PDF-filen.
 
  Använd`Save` metod för`Document` objekt för att spara dokumentet i PDF-format med angivande av sparade alternativ som konfigurerats tidigare.
 

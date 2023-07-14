@@ -1,8 +1,8 @@
 ---
-title: Работа с полями
-linktitle: Работа с полями
-second_title: Справочник по API Aspose.Words для .NET
-description: Комплексный ресурс для работы с полями в документах Word с использованием Aspose.Words для .NET. Учебники, примеры и подробные объяснения.
+title: Обработка слов с полями
+linktitle: Обработка слов с полями
+second_title: API обработки документов Aspose.Words
+description: Комплексный ресурс для обработки слов с полями в документах Word с использованием Aspose.Words для .NET. Учебники, примеры и подробные объяснения.
 type: docs
 weight: 140
 url: /ru/net/working-with-fields/

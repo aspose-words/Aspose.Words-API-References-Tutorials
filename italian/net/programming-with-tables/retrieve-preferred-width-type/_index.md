@@ -1,7 +1,7 @@
 ---
 title: Recupera il tipo di larghezza preferito
 linktitle: Recupera il tipo di larghezza preferito
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come recuperare il tipo e il valore di larghezza preferito di una cella in una tabella di Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In questo tutorial impareremo come recuperare il tipo di larghezza preferito e i
 2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: caricamento del documento
-Per iniziare a lavorare con il documento, attenersi alla seguente procedura:
+Per avviare l'elaborazione di parole con il documento, attenersi alla seguente procedura:
 
 ```csharp
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento
+// Carica il documento
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
@@ -50,7 +50,7 @@ Qui usiamo il documento per recuperare la prima tabella, quindi abilitiamo l'ada
 ### Esempio di codice sorgente per il recupero del tipo di larghezza preferito utilizzando Aspose.Words per .NET 
 
 ```csharp
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

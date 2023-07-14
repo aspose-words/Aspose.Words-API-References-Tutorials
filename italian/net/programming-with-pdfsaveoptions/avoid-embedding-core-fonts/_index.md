@@ -1,7 +1,7 @@
 ---
 title: Riduci le dimensioni del file PDF non incorporando i caratteri principali
 linktitle: Riduci le dimensioni del file PDF non incorporando i caratteri principali
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come ridurre le dimensioni del file PDF non incorporando i caratteri principali durante la conversione di documenti Word in PDF con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ In questo tutorial, ti guideremo attraverso i passaggi su come ridurre le dimens
 
 ## Passaggio 1: caricamento del documento
 
-Inizia caricando il documento Word che desideri convertire in PDF:
+Inizia caricando il documento Word che vuoi convertire in PDF:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -77,7 +77,7 @@ R: Per configurare Aspose.Words per .NET in modo che non incorpori i font princi
 
  Carica il documento Word che desideri convertire in PDF utilizzando il file`Document` class e il percorso del documento specificato.
 
- Crea un'istanza di`PdfSaveOptions` classe e impostare il`UseCoreFonts` proprietà a`true`. Ciò eviterà l'incorporamento di caratteri di base nel file PDF generato.
+ Crea un'istanza di`PdfSaveOptions`classe e impostare il`UseCoreFonts` proprietà a`true`. Ciò eviterà l'incorporamento di caratteri di base nel file PDF generato.
 
  Usa il`Save` metodo del`Document` oggetto di salvare il documento in formato PDF specificando le opzioni di conversione configurate in precedenza.
 

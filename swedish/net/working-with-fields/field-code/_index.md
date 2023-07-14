@@ -1,7 +1,7 @@
 ---
 title: Fältkod
 linktitle: Fältkod
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg för steg guide för att få fältkod och fältresultat i dina Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Här är en steg-för-steg-guide för att förklara C#-källkoden nedan, som anv
 
 ## Steg 1: Installation av dokumentkatalog
 
-den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
+I den angivna koden måste du ange katalogen för dina dokument. Ersätt värdet "DIN DOKUMENTKATOLOG" med lämplig sökväg till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -73,7 +73,7 @@ Detta avslutar vår guide om hur du använder funktionen "Hämta fältkod" med A
 
 #### F: Hur kan jag uppdatera fält i ett dokument med Aspose.Words för .NET?
 
- S: För att uppdatera dokumentfält med Aspose.Words för .NET kan du använda`Document.UpdateFields` metod. Detta kommer att uppdatera alla fält som finns i dokumentet, såsom sammanfogningsfält, datumfält, etc.
+ S: För att uppdatera dokumentfält med Aspose.Words för .NET kan du använda`Document.UpdateFields`metod. Detta kommer att uppdatera alla fält som finns i dokumentet, såsom sammanfogningsfält, datumfält, etc.
 
 #### F: Hur kan jag hämta värdet för ett specifikt fält i Aspose.Words för .NET?
 

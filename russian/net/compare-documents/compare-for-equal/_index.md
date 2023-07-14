@@ -1,7 +1,7 @@
 ---
 title: Сравнить на равных
 linktitle: Сравнить на равных
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по объяснению исходного кода C# функции Compare for Equals с Aspose.Words для .NET.
 type: docs
 weight: 10

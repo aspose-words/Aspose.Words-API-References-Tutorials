@@ -1,7 +1,7 @@
 ---
 title: Aplicar licencia medida
 linktitle: Aplicar licencia medida
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a aplicar una licencia medida usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
 - Credenciales válidas para licencias medidas. 
 
 ## Paso 1: Importe los espacios de nombres requeridos
-Para comenzar, importe los espacios de nombres necesarios en su código C#. Estos espacios de nombres contienen las clases y los métodos necesarios para trabajar con Aspose.Words.
+Para comenzar, importe los espacios de nombres necesarios en su código C#. Estos espacios de nombres contienen las clases y los métodos necesarios para el procesamiento de textos con Aspose.Words.
 
 ```csharp
 using Aspose.Words;

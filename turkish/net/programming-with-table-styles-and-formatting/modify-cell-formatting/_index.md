@@ -1,7 +1,7 @@
 ---
 title: Hücre Formatını Değiştir
 linktitle: Hücre Formatını Değiştir
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak tablodaki bir hücrenin biçimlendirmesini değiştirmek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 ### Aspose.Words for .NET kullanarak Hücre Biçimlendirmesini Değiştirmek için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

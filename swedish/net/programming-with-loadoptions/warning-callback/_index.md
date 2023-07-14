@@ -1,14 +1,14 @@
 ---
 title: Varning Återuppringning
 linktitle: Varning Återuppringning
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du hanterar varningar när du laddar ett Word-dokument med hjälp av callback-funktioner med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-loadoptions/warning-callback/
 ---
 
-När du arbetar med Word-dokument i en C#-applikation kan det vara användbart att vara uppmärksam på varningar som utfärdas när dokumentet laddas. Med Aspose.Words-biblioteket för .NET kan du enkelt ange en återuppringningsfunktion för att hantera varningar när du laddar dokumentet med hjälp av laddningsalternativen LoadOptions. I den här steg-för-steg-guiden går vi igenom hur du använder Aspose.Words för .NET C#-källkod för att ladda ett dokument med hjälp av en återuppringningsfunktion för varningar med laddningsalternativen LoadOptions.
+Vid ordbehandling med Word-dokument i en C#-applikation kan det vara användbart att vara uppmärksam på varningar som utfärdas när dokumentet laddas. Med Aspose.Words-biblioteket för .NET kan du enkelt ange en återuppringningsfunktion för att hantera varningar när du laddar dokumentet med hjälp av laddningsalternativen LoadOptions. I den här steg-för-steg-guiden går vi igenom hur du använder Aspose.Words för .NET C#-källkod för att ladda ett dokument med hjälp av en återuppringningsfunktion för varningar med laddningsalternativen LoadOptions.
 
 ## Förstå Aspose.Words-biblioteket
 

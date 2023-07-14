@@ -1,14 +1,14 @@
 ---
-title: Actualizar datos de marcadores
+title: Actualizar datos de marcadores en un documento de Word
 linktitle: Actualizar datos de marcadores
-second_title: Referencia de API de Aspose.Words para .NET
-description: Guía paso a paso para explicar el código fuente C# de la función de actualización de datos de marcadores de Aspose.Words para .NET.
+second_title: API de procesamiento de documentos de Aspose.Words
+description: Guía paso a paso para explicar el código fuente C# de la actualización de datos de marcadores de Aspose.Words en la función de documento de Word para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/update-bookmark-data/
 ---
 
-En este tutorial, veremos una guía paso a paso para comprender e implementar la función Actualizar datos de marcadores de Aspose.Words para .NET. Esta característica le permite actualizar el contenido y las propiedades de los marcadores dentro de un documento de Word utilizando el código fuente de C#.
+En este tutorial, veremos una guía paso a paso para comprender e implementar la función Actualizar datos de marcadores en documentos de Word de Aspose.Words para .NET. Esta característica le permite actualizar el contenido y las propiedades de los marcadores dentro de un documento de Word utilizando el código fuente de C#.
 
 ## Requisitos
 
@@ -86,4 +86,22 @@ Este código guardará el documento modificado con el nombre "UpdatedDocument.do
 
 ## Conclusión
 
-¡Felicidades! Ha aprendido con éxito cómo actualizar los datos de marcadores usando Aspose.Words para .NET. Al seguir la guía paso a paso proporcionada en este tutorial, ahora debería poder incorporar esta característica en sus aplicaciones de C# y manipular los marcadores dentro de los documentos de Word mediante programación.
+¡Felicidades! Ha aprendido con éxito cómo actualizar los datos de marcadores usando Aspose.Words para .NET. Al seguir la guía paso a paso proporcionada en este tutorial, ahora debería poder incorporar esta función en sus aplicaciones de C# y manipular los marcadores dentro de los documentos de Word mediante programación.
+
+### Preguntas frecuentes sobre la actualización de datos de marcadores en un documento de Word
+
+#### P: ¿La función de actualización de datos de marcadores solo funciona con marcadores en documentos de Word?
+
+R: Sí, la función Actualizar datos de marcadores está diseñada específicamente para marcadores en documentos de Word. Le permite actualizar el contenido y las propiedades de los marcadores en un documento de Word.
+
+#### P: ¿Puedo actualizar otras propiedades de marcadores además del texto?
+
+R: Sí, además del texto, también puede actualizar otras propiedades del marcador, como el nombre del marcador, el alcance del marcador, etc. Utilice las propiedades apropiadas del`Bookmark` objeto para actualizar las propiedades deseadas.
+
+#### P: ¿Puedo actualizar varios marcadores en el mismo documento?
+
+R: Sí, puede actualizar varios marcadores en el mismo documento repitiendo los pasos de acceso y actualización para cada marcador. Asegúrese de usar nombres de marcadores únicos para cada marcador que desee actualizar.
+
+#### P: ¿La función de actualización de datos de marcadores modifica el documento original?
+
+R: Sí, la función de actualización de datos de marcadores modifica el documento original al actualizar las propiedades y el contenido de los marcadores. Asegúrese de guardar una copia del documento original antes de aplicar esta función.

@@ -1,7 +1,7 @@
 ---
 title: Alanları Sil
 linktitle: Alanları Sil
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerinizdeki birleştirme alanlarını silmek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Bu, özellikle yalnızca statik içeriği tutmak ve herhangi bir birleştirme bi
 // Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Mevcut belgeyi yükleyin.
+// Mevcut belgeyi yükleyin.
 Document doc = new Document(dataDir + "YourDocument.docx");
 
 // Birleştirme alanlarını kaldırın.

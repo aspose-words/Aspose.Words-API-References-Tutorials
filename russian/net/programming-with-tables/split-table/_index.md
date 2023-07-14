@@ -1,7 +1,7 @@
 ---
 title: Разделить таблицу
 linktitle: Разделить таблицу
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как разделить таблицу в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ url: /ru/net/programming-with-tables/split-table/
 2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
 
 ## Шаг 2: Загрузка документа
-Чтобы начать работу с документом, выполните следующие действия:
+Чтобы запустить Word Processing с документом, выполните следующие действия:
 
 ```csharp
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
@@ -71,7 +71,7 @@ doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ### Пример исходного кода для разделения таблицы с использованием Aspose.Words для .NET 
 
 ```csharp
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");

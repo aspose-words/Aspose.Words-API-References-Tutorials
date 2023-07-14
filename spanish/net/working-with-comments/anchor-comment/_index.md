@@ -1,7 +1,7 @@
 ---
 title: Comentario ancla
 linktitle: Comentario ancla
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a anclar respuestas de comentarios a texto específico en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -37,7 +37,7 @@ doc.FirstSection.Body.AppendChild(para2);
 ```
 
 ## Paso 2: cree un comentario y agregue un rango de comentarios
-A continuación, cree un comentario y asócielo con un texto específico utilizando los objetos CommentRangeStart y CommentRangeEnd:
+continuación, cree un comentario y asócielo con un texto específico usando los objetos CommentRangeStart y CommentRangeEnd:
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
@@ -63,12 +63,12 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 Aquí está el código fuente completo para anclar una respuesta de comentario usando Aspose.Words para .NET:
 
 ```csharp
-// Cree una instancia del documento.
+// Cree una instancia del Documento.
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 Document doc = new Document();
 
 // Cree tres objetos Ejecutar.
-//Los dos primeros ejecutan un texto, mientras que el tercero ejecuta un comentario
+// Los dos primeros ejecutan un texto, mientras que el tercero ejecuta un comentario
 
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
@@ -120,5 +120,5 @@ R: Para agregar un ancla de comentario en un documento de Aspose.Words para .NET
 
 #### P: ¿Cómo puedo editar el texto de un comentario vinculado a un ancla de comentario en Aspose.Words para .NET?
 
-R: Para modificar el texto de un comentario vinculado a un ancla de comentario en Aspose.Words para .NET, puede acceder a la`Comment.Text` propiedad de la correspondiente`Comment` objeto y modifique el texto según sea necesario.
+ R: Para modificar el texto de un comentario vinculado a un ancla de comentario en Aspose.Words para .NET, puede acceder a la`Comment.Text` propiedad de la correspondiente`Comment` objeto y modifique el texto según sea necesario.
 

@@ -1,7 +1,7 @@
 ---
 title: Biçim 1Bpp Dizine Alınmış
 linktitle: Biçim 1Bpp Dizine Alınmış
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile indekslenen 1 bpp'lik görüntülerin nasıl formatlanacağını öğrenin. Düşük renk derinliğine sahip görüntüler için eksiksiz öğretici.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ Artık belge görüntülerini PNG biçiminde, 1 bpp'lik bir renk derinliğiyle d
 
 ```csharp 
  
-			 // Belge dizininizin yolu
+			 //Belge dizininizin yolu
 			 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
             
             Document doc = new Document(dataDir + "Rendering.docx");

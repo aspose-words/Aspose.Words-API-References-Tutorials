@@ -1,7 +1,7 @@
 ---
 title: Compresión de imagen en un documento PDF
 linktitle: Compresión de imagen en un documento PDF
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para comprimir imágenes en un documento PDF con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -115,7 +115,7 @@ R: Para comprimir imágenes en un documento PDF con Aspose.Words para .NET, siga
 
  Crear una instancia de la`Document` class especificando la ruta al documento de Word.
 
- Crear una instancia de la`PdfSaveOptions` clase y establecer el`ImageCompression` propiedad a`PdfImageCompression.Jpeg` para utilizar la compresión JPEG.
+ Crear una instancia de la`PdfSaveOptions`clase y establecer el`ImageCompression` propiedad a`PdfImageCompression.Jpeg` para utilizar la compresión JPEG.
 
 También puede configurar otras opciones de compresión de imágenes, como la calidad JPEG, según sus necesidades.
 

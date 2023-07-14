@@ -1,7 +1,7 @@
 ---
 title: Anexar documento a espacio en blanco
 linktitle: Anexar documento a espacio en blanco
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a agregar un documento a un documento de destino en blanco en Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document();
 
 ## Paso 3: Elimina el contenido existente del documento de destino
 
-Para garantizar un documento de destino limpio, elimine todo el contenido existente del documento con el`RemoveAllChildren` método.
+ Para garantizar un documento de destino limpio, elimine todo el contenido existente del documento con el`RemoveAllChildren` método.
 
 ```csharp
 dstDoc.RemoveAllChildren();
@@ -58,12 +58,12 @@ Esto completa la implementación de agregar un documento a un documento de desti
 ### Ejemplo de código fuente para agregar documento a espacio en blanco usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document();
-	// El documento de destino no está vacío, lo que a menudo hace que aparezca una página en blanco antes del documento adjunto.
+	//El documento de destino no está vacío, lo que a menudo hace que aparezca una página en blanco antes del documento adjunto.
 	// Esto se debe a que el documento base tiene una sección vacía y el nuevo documento se inicia en la página siguiente.
 	// Elimine todo el contenido del documento de destino antes de agregarlo.
 	dstDoc.RemoveAllChildren();

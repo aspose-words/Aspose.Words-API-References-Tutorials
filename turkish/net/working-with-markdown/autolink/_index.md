@@ -1,7 +1,7 @@
 ---
 title: otomatik bağlantı
 linktitle: otomatik bağlantı
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile otomatik bağlantı eklemeyi öğrenin Adım adım kılavuz.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Formaterad tabell
 linktitle: Formaterad tabell
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du skapar en formaterad tabell i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -112,7 +112,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 ### Exempel på källkod för formaterad tabell med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

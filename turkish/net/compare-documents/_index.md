@@ -1,7 +1,7 @@
 ---
 title: Belgeleri Karşılaştır
 linktitle: Belgeleri Karşılaştır
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerini nasıl karşılaştıracağınızı ve farklılıkları nasıl belirleyeceğinizi öğrenin. Kılavuzlar ve pratik örnekler dahildir.
 type: docs
 weight: 1480

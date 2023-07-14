@@ -1,7 +1,7 @@
 ---
 title: Jpeg Sayfa Aralığını Alın
 linktitle: Jpeg Sayfa Aralığını Alın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile çeşitli JPEG sayfalarını nasıl elde edeceğinizi öğrenin. Özel görüntüleri ayıklamak için eksiksiz eğitim.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ Artık belgenizdeki belirli bir sayfa aralığını JPEG görüntülere dönüş
 ### Aspose.Words For .NET kullanarak Get Jpeg Page Range için örnek kaynak kodu
 
 ```csharp 
- // Belge dizininizin yolu
+ //Belge dizininizin yolu
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

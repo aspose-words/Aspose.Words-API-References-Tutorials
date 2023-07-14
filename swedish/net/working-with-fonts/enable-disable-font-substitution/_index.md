@@ -1,7 +1,7 @@
 ---
 title: Aktivera Inaktivera teckensnittsersättning
 linktitle: Aktivera Inaktivera teckensnittsersättning
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: den här handledningen lär du dig hur du aktiverar eller inaktiverar teckensnittsersättning i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Därefter laddar vi Word-dokumentet du vill rendera och skapar en instans av`FontSettings` klass för att hantera teckensnittsinställningarna. Vi ställer in standardtypsnittets åsidosättande genom att ange teckensnittsnamnet i`DefaultFontName` och inaktivera åsidosättande av teckensnittsinformation med`Enabled` satt till`false`.
 
 ```csharp
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Rendering.docx");
 
 // Konfigurera teckensnittsinställningar
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

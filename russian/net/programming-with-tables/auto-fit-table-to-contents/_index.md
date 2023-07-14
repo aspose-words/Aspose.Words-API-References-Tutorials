@@ -1,7 +1,7 @@
 ---
 title: Автоматически подогнать таблицу к содержимому
 linktitle: Автоматически подогнать таблицу к содержимому
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как автоматически подогнать таблицу под ее содержимое в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /ru/net/programming-with-tables/auto-fit-table-to-contents/
 2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
 
 ## Шаг 2: Загрузите документ Word
-Чтобы начать работу с таблицей, нам нужно загрузить документ Word, содержащий таблицу. Следуй этим шагам:
+Чтобы начать обработку Words с таблицей, нам нужно загрузить документ Word, содержащий таблицу. Следуй этим шагам:
 
 ```csharp
 // Путь к вашему каталогу документов
@@ -53,7 +53,7 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitTableToContents.docx");
 ### Пример исходного кода для автоматического подбора таблицы по содержимому с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

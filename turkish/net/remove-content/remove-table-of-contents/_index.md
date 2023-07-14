@@ -1,14 +1,13 @@
 ---
-title: İçindekiler Tablosunu Kaldır
-linktitle: İçindekiler Tablosunu Kaldır
-second_title: Aspose.Words for .NET API Referansı
-description: Aspose.Words for .NET kullanarak bir Word belgesinden içindekileri nasıl kaldıracağınızı öğrenin.
+title: Word Belgesindeki İçindekiler Tablosunu Kaldır
+linktitle: Word Belgesindeki İçindekiler Tablosunu Kaldır
+second_title: Aspose.Words Belge İşleme API'sı
+description: Aspose.Words for .NET kullanarak bir Word belgesindeki içindekileri nasıl kaldıracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/remove-content/remove-table-of-contents/
 ---
-
-Bu öğreticide, .NET için Aspose.Words kitaplığını kullanarak bir Word belgesinden içindekiler tablosunu nasıl kaldıracağınızı anlatacağız. İçindekiler tablosu bazen gereksiz veya gereksiz olabilir ve bu kod, onu etkili bir şekilde kaldırmanıza yardımcı olacaktır. Kodu anlamanıza ve kendi .NET projenizde uygulamanıza yardımcı olacak adım adım bir kılavuz sağlayacağız.
+Bu öğreticide, .NET için Aspose.Words kitaplığını kullanarak bir Word belgesindeki içindekiler tablosunu nasıl kaldıracağınızı anlatacağız. İçindekiler tablosu bazen gereksiz veya gereksiz olabilir ve bu kod, onu etkili bir şekilde kaldırmanıza yardımcı olacaktır. Kodu anlamanıza ve kendi .NET projenizde uygulamanıza yardımcı olacak adım adım bir kılavuz sağlayacağız.
 
 ## Önkoşullar
 Başlamadan önce, aşağıdaki öğelere sahip olduğunuzdan emin olun:
@@ -28,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Ardından, Word belgesini bir örneğine yükleyeceğiz.`Document` kullanarak sınıf`Load` yöntem.
 
 ```csharp
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
@@ -63,7 +62,7 @@ while (isRemoving)
      currentNode = currentNode.NextPreOrder(doc);
 
      // FieldTOC türünde bir FieldEnd düğümüyle karşılaştığımızda,
-     // mevcut TOK'un sonunda olduğumuzu biliyoruz ve burada duruyoruz.
+     //mevcut TOK'un sonunda olduğumuzu biliyoruz ve burada duruyoruz.
      if (currentNode.NodeType == NodeType.FieldEnd)
      {
          FieldEnd fieldEnd = (FieldEnd)currentNode;
@@ -86,10 +85,10 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ### Aspose.Words for .NET kullanarak İçindekiler Tablosunu Kaldırmak için örnek kaynak kodu 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "your-document.docx");
 
 // Hızlı erişim için içindekiler alanlarının FieldStart düğümlerini belgede saklayın.
@@ -139,3 +138,80 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Çözüm
 Bu öğreticide, .NET için Aspose.Words kitaplığını kullanarak bir Word belgesinden içindekiler tablosunu kaldırmak için adım adım bir kılavuz sunduk. Sağlanan kodu ve yönergeleri izleyerek içindekiler tablosunu kolayca ortadan kaldırabilir ve belgenizin düzenini iyileştirebilirsiniz. Dizin yolunu ve dosya adlarını özel ihtiyaçlarınıza göre uyarlamayı unutmayın.
+
+### SSS
+
+#### S: Bir Word belgesindeki içindekileri kaldırmak için neden Aspose.Words kullanmalıyım?
+
+C: Aspose.Words, .NET uygulamalarında Word belgelerini işlemek için güçlü ve çok yönlü bir sınıf kitaplığıdır. Aspose.Words'ü kullanarak içindekiler tablosunu etkili bir şekilde belgelerinizden kaldırabilirsiniz; bu, içindekiler gereksiz veya gereksiz olduğunda faydalı olabilir. Bu, belgenizin içeriğini özelleştirmenize ve genel sunumunu geliştirmenize olanak tanır.
+
+#### S: Aspose.Words for .NET'te bir belgeyi nasıl yükleyebilirim?
+
+C: Bir Word belgesindeki içindekiler tablosunu kaldırmak için önce Aspose.Words'ün Load() yöntemini kullanarak belgeyi belleğe yüklemeniz gerekir. Belirli bir dizinden belge yüklemek için örnek kod aşağıda verilmiştir:
+
+```csharp
+// Belgeler dizininizin yolu
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+
+// belgeyi yükle
+Document doc = new Document(dataDir + "your-document.docx");
+```
+
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` belgenizin gerçek yolu ile.
+
+#### S: Aspose.Words kullanarak bir belgedeki içindekileri nasıl kaldırırım?
+
+ C: İçindekiler'i kaldırmak için,`FieldStart` belgedeki TOC'nin düğümlerini yazın. Hızlı erişim için bu düğümleri saklayabilir ve silinecek düğümlerin bir listesini oluşturabilirsiniz. İşte örnek bir kod:
+
+```csharp
+// Hızlı erişim için içindekiler alanlarının FieldStart düğümlerini belgede saklayın.
+List<FieldStart> fieldStarts = new List<FieldStart>();
+//Bu, belirtilen TOC içinde bulunan düğümleri depolamak için bir listedir. Bu yöntemin sonunda silinecekler.
+List<Node> nodeList = new List<Node>();
+
+foreach(FieldStart start in doc.GetChildNodes(NodeType.FieldStart, true))
+{
+if (start.FieldType == FieldType.FieldTOC)
+{
+fieldStarts.Add(start);
+}
+}
+
+// Belirtilen içindekiler dizini olup olmadığını kontrol edin.
+if (index > fieldStarts.Count - 1)
+throw new ArgumentOutOfRangeException("Table of contents index is out of range");
+
+bool isRemoving = true;
+
+Node currentNode = fieldStarts[index];
+while (isRemoving)
+{
+// Bu düğümleri depolamak ve sonunda hepsini silmek daha güvenlidir.
+nodeList.Add(currentNode);
+currentNode = currentNode.NextPreOrder(doc);
+
+// FieldTOC türünde bir FieldEnd düğümüyle karşılaştığımızda,
+//mevcut TOK'un sonunda olduğumuzu biliyoruz ve burada duruyoruz.
+if (currentNode.NodeType == NodeType.FieldEnd)
+{
+FieldEnd fieldEnd = (FieldEnd)currentNode;
+if (fieldEnd.FieldType == FieldType.FieldTOC)
+isRemoving = false;
+}
+}
+
+foreach(Node node in nodeList)
+{
+node. Remove();
+}
+
+doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
+```
+
+#### S: Düzenlenen belge Aspose.Words for .NET'te nasıl kaydedilir?
+
+C: İçindekiler tablosunu sildikten sonra, değiştirilen belgeyi Save() yöntemini kullanarak kaydetmeniz gerekir. Düzenlenen belge için istenen çıktı dosyası yolunu ve biçimini (örn. DOCX) belirtin. İşte örnek bir kod:
+
+```csharp
+doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
+```

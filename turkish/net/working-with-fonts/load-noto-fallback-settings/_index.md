@@ -1,7 +1,7 @@
 ---
 title: Noto Yedek Ayarlarını Yükle
 linktitle: Noto Yedek Ayarlarını Yükle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu eğitimde, Noto geçersiz kılma parametrelerini Aspose.Words for .NET ile bir Word belgesine nasıl yükleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 ### Aspose.Words for .NET kullanan Noto Fallback Settings için örnek kaynak kodu 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

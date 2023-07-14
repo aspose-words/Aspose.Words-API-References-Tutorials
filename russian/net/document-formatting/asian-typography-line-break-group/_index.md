@@ -1,7 +1,7 @@
 ---
 title: Группа разрывов строк азиатской типографии
 linktitle: Группа разрывов строк азиатской типографии
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как использовать группу разрывов строк азиатской типографики с Aspose.Words для .NET.
 type: docs
 weight: 10

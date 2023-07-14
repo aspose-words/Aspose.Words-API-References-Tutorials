@@ -1,14 +1,14 @@
 ---
 title: Convertir forma en matemáticas de Office
 linktitle: Convertir forma en matemáticas de Office
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a convertir formas en fórmulas matemáticas de Office al cargar documentos con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-loadoptions/convert-shape-to-office-math/
 ---
 
-Cuando trabaje con documentos que contienen formas matemáticas en una aplicación de C#, es posible que deba convertirlos a fórmulas matemáticas de Office para mejorar la compatibilidad y la presentación. Con la biblioteca Aspose.Words para .NET, puede convertir fácilmente formas en fórmulas matemáticas de Office mientras carga un documento. En esta guía paso a paso, lo guiaremos a través de cómo usar Aspose.Words para el código fuente de .NET C# para cargar un documento con la conversión de formas en fórmulas matemáticas de Office usando LoadOptions.
+Cuando utilice el procesamiento de textos con documentos que contengan formas matemáticas en una aplicación de C#, es posible que deba convertirlos a fórmulas matemáticas de Office para mejorar la compatibilidad y la presentación. Con la biblioteca Aspose.Words para .NET, puede convertir fácilmente formas en fórmulas matemáticas de Office mientras carga un documento. En esta guía paso a paso, lo guiaremos a través de cómo usar Aspose.Words para el código fuente de .NET C# para cargar un documento con la conversión de formas en fórmulas matemáticas de Office usando LoadOptions.
 
 ## Comprender la biblioteca Aspose.Words
 

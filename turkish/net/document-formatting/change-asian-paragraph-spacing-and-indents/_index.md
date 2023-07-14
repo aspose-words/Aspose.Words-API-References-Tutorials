@@ -1,7 +1,7 @@
 ---
 title: Asya Paragraf Aralığını ve Girintilerini Değiştirin
 linktitle: Asya Paragraf Aralığını ve Girintilerini Değiştirin
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Asya paragraf aralığını ve girintileri nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Использовать тип узла
 linktitle: Использовать тип узла
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как использовать тип узла для доступа к конкретной информации документа с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

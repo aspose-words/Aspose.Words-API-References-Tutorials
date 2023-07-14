@@ -1,7 +1,7 @@
 ---
 title: Encabezados de enlaces Pies de página
 linktitle: Encabezados de enlaces Pies de página
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a vincular encabezados y pies de página mientras une y agrega documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 
 ## Paso 1: inicialice los directorios de documentos
 
- Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir` variable a la ruta donde se encuentran sus documentos.
+ Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir`variable a la ruta donde se encuentran sus documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: configure el documento adjunto para que aparezca en una página nueva
 
-Para asegurarse de que el contenido del documento de origen aparezca en una nueva página en el documento de destino, debe configurar el`SectionStart` propiedad de la primera sección en el documento fuente para`SectionStart.NewPage`.
+ Para asegurarse de que el contenido del documento de origen aparezca en una nueva página en el documento de destino, debe configurar el`SectionStart` propiedad de la primera sección en el documento fuente para`SectionStart.NewPage`.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -72,7 +72,7 @@ Aquí está el código fuente completo para la función "Encabezados y pies de p
 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

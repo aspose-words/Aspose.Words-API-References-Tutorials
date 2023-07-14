@@ -1,7 +1,7 @@
 ---
 title: Преобразование файла Word в PDF
 linktitle: Преобразование файла Word в PDF
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как конвертировать документы Word из Docx в PDF с помощью Aspose.Words для .NET. Пошаговое руководство с примером исходного кода.
 type: docs
 weight: 10
@@ -77,5 +77,5 @@ DOCX в другие форматы файлов, такие как DOC, RTF, HT
 Преобразование файлов EPUB, ODT, OTT, TXT и т. д. в другие форматы.
 
 
-#### Q4. Где я могу найти больше примеров кода и ресурсов для работы с Aspose.Words для .NET?
+#### Q4. Где я могу найти больше примеров кода и ресурсов для обработки текстов с помощью Aspose.Words для .NET?
  Вы можете найти больше примеров кода и ресурсов в[Справочник по API Aspose.Words для .NET](https://reference.aspose.com/words/net/) и[Руководства по Aspose.Words для .NET API](https://reference.aspose.com/tutorials/words/net/). Эти ресурсы содержат пошаговые руководства, примеры кода и учебные пособия.

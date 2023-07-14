@@ -1,7 +1,7 @@
 ---
 title: Control de contenido del cuadro combinado
 linktitle: Control de contenido del cuadro combinado
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a crear un control de contenido de cuadro combinado en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Este tutorial explica cómo crear un control de contenido de cuadro combinado en
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y trabajo con documentos de Word.
+- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Paso 3: agregue elementos al cuadro combinado
- Agregue elementos al cuadro combinado utilizando el`ListItems` propiedad de la`StructuredDocumentTag` Cada elemento está representado por un`SdtListItem` objeto, que toma un texto de visualización y un valor. En este ejemplo, agregamos tres elementos al cuadro combinado.
+ Agregue elementos al cuadro combinado utilizando el`ListItems`propiedad de la`StructuredDocumentTag` Cada elemento está representado por un`SdtListItem` objeto, que toma un texto de visualización y un valor. En este ejemplo, agregamos tres elementos al cuadro combinado.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ### Ejemplo de código fuente para Combo Box Content Control usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

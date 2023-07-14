@@ -1,7 +1,7 @@
 ---
 title: Yinelenen Stili Temizleme
 linktitle: Yinelenen Stili Temizleme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir belgedeki yinelenen stilleri temizlemek için adım adım kılavuz. Tam kaynak kodu dahildir.
 type: docs
 weight: 10

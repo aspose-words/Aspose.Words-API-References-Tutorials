@@ -1,7 +1,7 @@
 ---
 title: Impostare l'impostazione della pagina e la formattazione della sezione
 linktitle: Impostare l'impostazione della pagina e la formattazione della sezione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per impostare il layout di un documento e la formattazione della sezione con Aspose.Words per .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Добавить текстовый водяной знак с определенными параметрами
 linktitle: Добавить текстовый водяной знак с определенными параметрами
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как добавить текстовый водяной знак с определенными параметрами, используя Aspose.Words для .NET. Пошаговое руководство.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Шаг 3. Добавьте текстовый водяной знак с определенными параметрами.
 
- Мы создадим экземпляр`TextWatermarkOptions` class и установите желаемые параметры для текстового водяного знака.
+ Мы создадим экземпляр`TextWatermarkOptions`class и установите желаемые параметры для текстового водяного знака.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

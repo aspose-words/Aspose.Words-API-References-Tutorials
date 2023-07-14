@@ -1,7 +1,7 @@
 ---
 title: Använd licens från Stream
 linktitle: Använd licens från Stream
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ansöker om en licens från en stream med Aspose.Words för .NET. Steg-för-steg guide
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ Innan vi börjar, se till att du har följande förutsättningar:
 - En giltig licensfil för Aspose.Words.
 
 ## Steg 1: Importera de nödvändiga namnområdena
-För att börja, importera de nödvändiga namnrymden i din C#-kod. Dessa namnrymder innehåller de klasser och metoder som behövs för att arbeta med Aspose.Words.
+För att börja, importera de nödvändiga namnrymden i din C#-kod. Dessa namnrymder innehåller de klasser och metoder som behövs för ordbehandling med Aspose.Words.
 
 ```csharp
 using Aspose.Words;

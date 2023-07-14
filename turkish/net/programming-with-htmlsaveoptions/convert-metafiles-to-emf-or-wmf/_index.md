@@ -1,7 +1,7 @@
 ---
 title: Meta Dosyalarını Emf veya Wmf'ye Dönüştür
 linktitle: Meta Dosyalarını Emf veya Wmf'ye Dönüştür
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgeyi HTML'ye dönüştürürken meta dosyalarını EMF veya WMF formatlarına dönüştürmek için adım adım kılavuz.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Få Tiff Page Range
 linktitle: Få Tiff Page Range
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du extraherar en rad TIFF-sidor med Aspose.Words för .NET. Komplett handledning för anpassade TIFF-filer.
 type: docs
 weight: 10
@@ -60,7 +60,7 @@ Nu kan du köra källkoden för att hämta ett visst antal sidor från ditt doku
 
 ```csharp 
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

@@ -1,7 +1,7 @@
 ---
 title: Upptäck dokumentfilformat
 linktitle: Upptäck dokumentfilformat
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg för steg guide för att upptäcka dokumentfilformat med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -219,7 +219,7 @@ Aspose.Words för .NET stöder en mängd olika dokumentformat inklusive Microsof
 
 #### Hur hanterar man krypterade dokumentfiler under formatdetektering?
 
- När du upptäcker formatet för en dokumentfil kan du använda`IsEncrypted` egendom av`FileFormatInfo` objekt för att kontrollera om filen är krypterad. Om filen är krypterad kan du vidta ytterligare åtgärder för att hantera det här specifika fallet, som att kopiera filen till en katalog avsedd för krypterade dokument. Du kan använda`File.Copy` metod för att göra detta.
+ När du upptäcker formatet för en dokumentfil kan du använda`IsEncrypted`egendom av`FileFormatInfo` objekt för att kontrollera om filen är krypterad. Om filen är krypterad kan du vidta ytterligare åtgärder för att hantera det här specifika fallet, som att kopiera filen till en katalog avsedd för krypterade dokument. Du kan använda`File.Copy` metod för att göra detta.
 
 #### Vilka åtgärder bör vidtas när formatet på ett dokument är okänt?
 

@@ -1,7 +1,7 @@
 ---
 title: Autopassa till sidbredd
 linktitle: Autopassa till sidbredd
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du automatiskt anpassar en tabell till sidbredd i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ I den här handledningen kommer vi att lära oss hur man använder Aspose.Words 
 2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
 ## Steg 2: Skapa och konfigurera dokumentet
-För att börja arbeta med tabellen måste vi skapa ett dokument och konfigurera dokumentgeneratorn. Följ dessa steg:
+För att starta ordbehandling med tabellen måste vi skapa ett dokument och konfigurera dokumentgeneratorn. Följ dessa steg:
 
 ```csharp
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Skapa dokumentet och dokumentgeneratorn
+// Skapa dokumentet och dokumentgeneratorn
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -58,7 +58,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 ### Exempel på källkod för Autopassa till sidabredd med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

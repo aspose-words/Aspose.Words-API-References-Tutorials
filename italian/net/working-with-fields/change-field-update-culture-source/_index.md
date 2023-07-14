@@ -1,7 +1,7 @@
 ---
 title: Cambia campo Aggiorna origine cultura
 linktitle: Cambia campo Aggiorna origine cultura
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Modifica sorgente cultura aggiornamento campo, guida passo passo per modificare la sorgente cultura in Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -91,7 +91,7 @@ Congratulazioni! Hai imparato con successo come modificare l'origine della cultu
 
 #### D: Come posso specificare una cultura specifica per l'aggiornamento dei campi in Aspose.Words per .NET?
 
- R: Per specificare una cultura specifica per l'aggiornamento dei campi in Aspose.Words per .NET, puoi utilizzare il`Document.FieldOptions.FieldUpdateCultureInfo` proprietà e impostare il`CultureInfo` oggetto corrispondente alla cultura desiderata. Ad esempio, puoi usare`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` per specificare le impostazioni cultura francesi (Francia).
+R: Per specificare una cultura specifica per l'aggiornamento dei campi in Aspose.Words per .NET, puoi utilizzare il`Document.FieldOptions.FieldUpdateCultureInfo` proprietà e impostare il`CultureInfo` oggetto corrispondente alla cultura desiderata. Ad esempio, puoi usare`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` per specificare le impostazioni cultura francesi (Francia).
 
 #### D: È possibile disabilitare l'aggiornamento automatico dei campi in Aspose.Words per .NET?
 

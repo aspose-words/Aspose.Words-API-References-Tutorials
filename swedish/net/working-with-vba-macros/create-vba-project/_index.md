@@ -1,14 +1,14 @@
 ---
-title: Skapa Vba-projekt
-linktitle: Skapa Vba-projekt
-second_title: Aspose.Words för .NET API Referens
+title: Skapa Vba-projekt i Word-dokument
+linktitle: Skapa Vba-projekt i Word-dokument
+second_title: Aspose.Words Document Processing API
 description: I den här handledningen lär du dig hur du skapar ett VBA-projekt i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-vba-macros/create-vba-project/
 ---
 
-den här handledningen kommer vi att berätta för dig hur du skapar ett VBA-projekt i ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Genom att skapa ett VBA-projekt kan du lägga till anpassad VBA-kod till ditt Word-dokument. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
+I den här handledningen kommer vi att berätta för dig hur du skapar ett VBA-projekt i ett Word-dokument med hjälp av Aspose.Words-biblioteket för .NET. Genom att skapa ett VBA-projekt kan du lägga till anpassad VBA-kod till ditt Word-dokument. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
 ## Förutsättningar
 Innan du börjar, se till att du har följande saker:
@@ -30,7 +30,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Skapa ett nytt dokument
 Document doc = new Document();
 
-// Skapa ett nytt VBA-projekt
+//Skapa ett nytt VBA-projekt
 VbaProject project = new VbaProject();
 project.Name = "AsposeProject";
 doc.VbaProject = project;
@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -80,4 +80,26 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 ```
 
 ## Slutsats
-den här handledningen såg vi hur man skapar ett VBA-projekt i ett Word-dokument med Aspose.Words för .NET. Genom att skapa ett VBA-projekt kan du lägga till och anpassa VBA-kod i ditt Word-dokument. Använd gärna den här funktionen för att automatisera uppgifter eller lägga till anpassade funktioner i dina Word-dokument.
+I den här handledningen såg vi hur man skapar ett VBA-projekt i ett Word-dokument med Aspose.Words för .NET. Genom att skapa ett VBA-projekt kan du lägga till och anpassa VBA-kod i ditt Word-dokument. Använd gärna den här funktionen för att automatisera uppgifter eller lägga till anpassade funktioner i dina Word-dokument.
+
+### FAQ's
+
+#### F: Vad är ett VBA-projekt i ett Word-dokument?
+
+S: Ett VBA-projekt i ett Word-dokument är en samling VBA-moduler som innehåller kod som kan användas för att automatisera uppgifter, lägga till anpassad funktionalitet eller utföra specifika operationer i ett Word-dokument.
+
+#### F: Vilka är förutsättningarna för att skapa ett VBA-projekt i ett Word-dokument?
+
+S: Innan du kan skapa ett VBA-projekt i ett Word-dokument måste du ha praktiska kunskaper i programmeringsspråket C#. Du måste också installera Aspose.Words for .NET-biblioteket i ditt projekt.
+
+#### F: Hur ställer jag in dokumentkatalogen i koden?
+
+ S: I den angivna koden måste du byta ut`"YOUR DOCUMENTS DIRECTORY"` med lämplig sökväg till katalogen där du vill spara ditt Word-dokument med VBA-projektet.
+
+#### F: Hur anger man makrokällkod i VBA-modulen?
+
+ S: För att ange källkoden för makrot i VBA-modulen kan du använda`SourceCode`egendom av`VbaModule` klass genom att tilldela den en teckensträng som innehåller VBA-koden.
+
+#### F: Kan jag lägga till flera VBA-moduler till ett VBA-projekt i ett Word-dokument?
+
+S: Ja, du kan lägga till flera VBA-moduler till ett VBA-projekt i ett Word-dokument genom att instansiera flera`VbaModule` objekt och lägga till dem i`Modules` samling av`VbaProject` objekt. Detta gör att du kan organisera din VBA-kod i olika moduler för bättre hantering och återanvändning.

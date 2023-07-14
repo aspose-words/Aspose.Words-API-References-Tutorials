@@ -1,7 +1,7 @@
 ---
 title: Уменьшите размер PDF, отключив встроенные шрифты
 linktitle: Уменьшите размер PDF, отключив встроенные шрифты
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как уменьшить размер PDF, отключив встраивание шрифтов Windows при преобразовании документов в PDF с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", sav
 
  Загрузите документ, который вы хотите преобразовать в PDF, используя`Document` класс и путь к документу.
 
- Создайте экземпляр`PdfSaveOptions` класс и установить`FontEmbeddingMode` собственность на`PdfFontEmbeddingMode.EmbedNone`. Это отключает встраивание шрифтов Windows в сгенерированный файл PDF.
+ Создайте экземпляр`PdfSaveOptions`класс и установить`FontEmbeddingMode` собственность на`PdfFontEmbeddingMode.EmbedNone`. Это отключает встраивание шрифтов Windows в сгенерированный файл PDF.
 
  Использовать`Save` метод`Document` объект для преобразования документа в PDF, указав параметры преобразования, настроенные ранее.
 

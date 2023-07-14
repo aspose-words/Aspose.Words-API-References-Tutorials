@@ -1,7 +1,7 @@
 ---
 title: Formato tabella e cella con bordi diversi
 linktitle: Formato tabella e cella con bordi diversi
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per formattare tabelle e celle con bordi diversi utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -70,7 +70,7 @@ Congratulazioni! Ora hai formattato una tabella e una cella con bordi diversi ut
 ### Esempio di codice sorgente per Formatta tabella e cella con bordi diversi utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

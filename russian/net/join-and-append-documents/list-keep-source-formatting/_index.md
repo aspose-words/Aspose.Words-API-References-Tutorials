@@ -1,7 +1,7 @@
 ---
 title: Список Сохранить исходное форматирование
 linktitle: Список Сохранить исходное форматирование
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как сохранить форматирование списка при объединении и добавлении документов Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/list-keep-source-formatting/
 
 ## Шаг 1: Инициализируйте каталоги документов
 
- Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir` переменная на путь, где находятся ваши документы.
+ Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir`переменная на путь, где находятся ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## Шаг 4: добавьте исходный документ к целевому документу
 
- Теперь вы можете добавить исходный документ к целевому документу, используя`AppendDocument` метод`Document` сорт.`ImportFormatMode.KeepSourceFormatting`Параметр обеспечивает сохранение исходного форматирования, включая форматирование списков, во время операции добавления.
+ Теперь вы можете добавить исходный документ к целевому документу, используя`AppendDocument` метод`Document` сорт.`ImportFormatMode.KeepSourceFormatting` Параметр обеспечивает сохранение исходного форматирования, включая форматирование списков, во время операции добавления.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 Вот полный исходный код функции форматирования списка и сохранения исходного кода на C# с использованием Aspose.Words для .NET:
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

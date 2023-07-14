@@ -1,7 +1,7 @@
 ---
 title: Ottieni la posizione del tavolo mobile
 linktitle: Ottieni la posizione del tavolo mobile
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come ottenere la posizione delle tabelle mobili in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In questo tutorial impareremo come ottenere la posizione di una tabella mobile i
 2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: caricamento del documento e accesso alle tabelle
-Per iniziare a lavorare con le tabelle, dobbiamo caricare il documento che le contiene e accedervi. Segui questi passi:
+Per avviare l'elaborazione di testi con le tabelle, dobbiamo caricare il documento che le contiene e accedervi. Segui questi passi:
 
 ```csharp
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento
+// Carica il documento
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
@@ -53,7 +53,7 @@ Console.WriteLine("...............................");
 ### Codice sorgente di esempio per ottenere la posizione della tabella mobile utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table wrapped by text.docx");

@@ -1,7 +1,7 @@
 ---
 title: Предпочтительные настройки ширины
 linktitle: Предпочтительные настройки ширины
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как установить предпочтительную ширину ячеек таблицы в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ url: /ru/net/programming-with-tables/preferred-width-settings/
 2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
 
 ## Шаг 2: Создание документа и инициализация генератора документов
-Чтобы начать работу с документом и генератором документов, выполните следующие действия:
+Чтобы запустить Word Processing с документом и генератором документов, выполните следующие действия:
 
 ```csharp
 // Путь к каталогу ваших документов
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ### Пример исходного кода для настроек предпочтительной ширины с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

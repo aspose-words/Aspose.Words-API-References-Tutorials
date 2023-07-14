@@ -1,7 +1,7 @@
 ---
 title: Kullanılabilir Yazı Tiplerinin Listesini Alın
 linktitle: Kullanılabilir Yazı Tiplerinin Listesini Alın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu öğreticide, Aspose.Words for .NET'te bulunan yazı tiplerinin listesini nasıl alacağınızı öğrenin.
 type: docs
 weight: 10
@@ -56,7 +56,7 @@ Console.WriteLine("Path: " + fontInfo.FilePath);
 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

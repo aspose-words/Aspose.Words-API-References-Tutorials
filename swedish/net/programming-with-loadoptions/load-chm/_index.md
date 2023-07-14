@@ -1,14 +1,14 @@
 ---
 title: Ladda Chm
 linktitle: Ladda Chm
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du laddar CHM-filer med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-loadoptions/load-chm/
 ---
 
-När du arbetar med HTML-hjälpfiler (CHM) i en C#-applikation är det viktigt att kunna ladda dem korrekt. Med Aspose.Words-biblioteket för .NET kan du enkelt ladda CHM-filer med lämpliga laddningsalternativ. I denna steg-för-steg-guide kommer vi att visa dig hur du använder Aspose.Words för .NET C#-källkod för att ladda en CHM-fil med hjälp av LoadOptions laddningsalternativ.
+Vid ordbehandling med HTML-hjälp (CHM)-filer i en C#-applikation är det viktigt att kunna ladda dem korrekt. Med Aspose.Words-biblioteket för .NET kan du enkelt ladda CHM-filer med lämpliga laddningsalternativ. I denna steg-för-steg-guide kommer vi att visa dig hur du använder Aspose.Words för .NET C#-källkod för att ladda en CHM-fil med hjälp av LoadOptions laddningsalternativ.
 
 ## Förstå Aspose.Words-biblioteket
 

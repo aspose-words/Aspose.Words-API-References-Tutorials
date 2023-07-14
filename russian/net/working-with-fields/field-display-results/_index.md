@@ -1,7 +1,7 @@
 ---
 title: Результаты отображения поля
 linktitle: Результаты отображения поля
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по отображению результатов полей в документах Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -40,7 +40,7 @@ document. UpdateFields();
 
 ## Шаг 4: Отображение результатов поля
 
- Мы используем`foreach`loop для перебора всех полей в документе и отображения их результатов.
+ Мы используем`foreach` loop для перебора всех полей в документе и отображения их результатов.
 
 ```csharp
 foreach(Field field in document.Range.Fields)

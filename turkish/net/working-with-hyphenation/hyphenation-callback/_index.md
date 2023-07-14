@@ -1,7 +1,7 @@
 ---
 title: Tireleme Geri Çağırma
 linktitle: Tireleme Geri Çağırma
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET'te sözcük hecelemesini işlemek için heceleme geri aramasını nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
@@ -86,7 +86,7 @@ Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şe
 
 #### S: Aspose.Words'ta heceleme hatırlatıcısı nedir?
 
-C: Aspose.Words'taki Heceleme Hatırlatıcısı, sözcüklerin belgelerinizde nasıl hecelendiğini özelleştirmenizi sağlayan bir özelliktir. Bir heceleme hatırlatıcısı kullanarak, sözcüklerin hecelenmesi için özel kurallar belirleyebilirsiniz; bu, belirli diller veya varsayılan hecelemenin istenen sonuçları vermediği belirli senaryolar için yararlı olabilir.
+C: Aspose.Words'taki Heceleme Hatırlatıcısı, sözcüklerin belgelerinizde nasıl hecelendiğini özelleştirmenizi sağlayan bir özelliktir. Bir heceleme hatırlatıcısı kullanarak, sözcüklerin hecelenmesi için özel kurallar belirleyebilirsiniz; bu, belirli diller için veya varsayılan hecelemenin istenen sonuçları vermediği belirli senaryolar için yararlı olabilir.
 
 #### S: Aspose.Words'ta bir heceleme hatırlatıcısı nasıl ayarlanır?
 

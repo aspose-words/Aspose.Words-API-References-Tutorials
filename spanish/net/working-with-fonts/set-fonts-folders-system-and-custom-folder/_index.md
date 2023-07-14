@@ -1,14 +1,14 @@
 ---
 title: Establecer sistema de carpetas de fuentes y carpeta personalizada
 linktitle: Establecer sistema de carpetas de fuentes y carpeta personalizada
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para configurar el sistema y las carpetas de fuentes personalizadas al representar un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
 
-En este tutorial, lo guiaremos a través del proceso paso a paso para configurar las carpetas de fuentes del sistema y una carpeta personalizada al representar un documento con Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo especificar varias carpetas de fuentes, incluida la carpeta del sistema y una carpeta personalizada, para utilizarlas al representar sus documentos con Aspose.Words para .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para configurar las carpetas de fuentes del sistema y una carpeta personalizada al representar un documento con Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta característica en sus propios proyectos. Al final de este tutorial, sabrá cómo especificar varias carpetas de fuentes, incluida la carpeta del sistema y una carpeta personalizada, para utilizarlas al representar sus documentos con Aspose.Words para .NET.
 
 ## Paso 1: Definir el directorio de documentos
 Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento renderizado editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
@@ -37,7 +37,7 @@ fontSettings.SetFontsSources(updatedFontSources);
 ```
 
 ## Paso 4: aplicar la configuración de fuente
- A continuación, debe aplicar la configuración de fuente a su documento utilizando el`FontSettings` propiedad de la`Document` clase.
+ A continuación, debe aplicar la configuración de fuente a su documento utilizando el`FontSettings`propiedad de la`Document` clase.
 
 ```csharp
 doc.FontSettings = fontSettings;
@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ### Ejemplo de código fuente para establecer el sistema de carpetas de fuentes y la carpeta personalizada usando Aspose.Words para .NET 
 
 ```csharp
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Conclusión
-En este tutorial, aprendimos cómo configurar carpetas de fuentes del sistema y una carpeta personalizada al renderizar un documento usando Aspose.Words para .NET. Al seguir esta guía paso a paso, puede especificar fácilmente varias carpetas de fuentes, incluida la carpeta del sistema y una carpeta personalizada, para usar al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para trabajar con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar las fuentes de fuentes utilizadas al renderizar sus documentos según sus necesidades específicas.
+En este tutorial, aprendimos cómo configurar carpetas de fuentes del sistema y una carpeta personalizada al renderizar un documento usando Aspose.Words para .NET. Al seguir esta guía paso a paso, puede especificar fácilmente varias carpetas de fuentes, incluida la carpeta del sistema y una carpeta personalizada, para usar al renderizar sus documentos. Aspose.Words ofrece una API potente y flexible para el procesamiento de textos con fuentes en sus documentos. Con este conocimiento, puede controlar y personalizar las fuentes de fuentes utilizadas al renderizar sus documentos según sus necesidades específicas.
 
 ### Preguntas frecuentes
 

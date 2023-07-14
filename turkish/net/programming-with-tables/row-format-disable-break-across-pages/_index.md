@@ -1,7 +1,7 @@
 ---
 title: Satır Biçimi Sayfalar Arasında Arayı Devre Dışı Bırak
 linktitle: Satır Biçimi Sayfalar Arasında Arayı Devre Dışı Bırak
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesinde birden çok sayfada bir tablo için satır sonunu nasıl devre dışı bırakacağınızı öğrenin.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesinde çok sayfa
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## 2. Adım: Belgeyi yükleme
-Belgeyle çalışmaya başlamak için şu adımları izleyin:
+Sözcük İşlemeyi belgeyle başlatmak için şu adımları izleyin:
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
@@ -53,7 +53,7 @@ doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ### Aspose.Words for .NET kullanarak Sayfalar Arasında Arayı Devre Dışı Bırakmak için Satır Biçimi için örnek kaynak kodu 
 
 ```csharp
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");

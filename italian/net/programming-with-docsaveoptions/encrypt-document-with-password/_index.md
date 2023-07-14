@@ -1,13 +1,13 @@
 ---
 title: Crittografa documento con password
 linktitle: Crittografa documento con password
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come crittografare i documenti con una password utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
-La sicurezza dei documenti è essenziale quando si lavora con i file in un'applicazione C#. Con la libreria Aspose.Words per .NET, puoi proteggere facilmente i tuoi documenti crittografandoli con una password. In questa guida dettagliata, ti illustreremo come utilizzare Aspose.Words per il codice sorgente .NET C# per crittografare un documento utilizzando le opzioni di salvataggio di DocSaveOptions.
+La sicurezza dei documenti è essenziale durante l'elaborazione di testi con i file in un'applicazione C#. Con la libreria Aspose.Words per .NET, puoi proteggere facilmente i tuoi documenti crittografandoli con una password. In questa guida dettagliata, ti illustreremo come utilizzare Aspose.Words per il codice sorgente .NET C# per crittografare un documento utilizzando le opzioni di salvataggio di DocSaveOptions.
 
 ## Comprensione della libreria Aspose.Words
 

@@ -1,7 +1,7 @@
 ---
 title: Bir PDF Belgesinde Anahat Seçeneklerini Ayarlama
 linktitle: Bir PDF Belgesinde Anahat Seçeneklerini Ayarlama
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir PDF belgesinde anahat seçeneklerini ayarlamak için adım adım kılavuz.
 type: docs
 weight: 10

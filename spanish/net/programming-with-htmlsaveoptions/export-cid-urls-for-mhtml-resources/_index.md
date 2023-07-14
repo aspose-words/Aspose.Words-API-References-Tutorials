@@ -1,7 +1,7 @@
 ---
 title: Exportar direcciones URL de Cid para recursos Mhtml
 linktitle: Exportar direcciones URL de Cid para recursos Mhtml
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para exportar URL CID de recursos MHTML al guardar un documento con Aspose.Words para .NET.
 type: docs
 weight: 10

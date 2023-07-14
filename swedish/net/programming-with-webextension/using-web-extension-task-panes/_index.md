@@ -1,7 +1,7 @@
 ---
 title: Använda aktivitetsrutor för webbtillägg
 linktitle: Använda aktivitetsrutor för webbtillägg
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för hur du använder webbtilläggsuppgiftsrutor med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Innan du börjar, se till att du har installerat och konfigurerat Aspose.Words f
 
 ## Steg 1: Definiera dokumentkatalogen
 
-För att börja måste du definiera sökvägen till katalogen där du vill spara det genererade dokumentet. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+ För att börja måste du definiera sökvägen till katalogen där du vill spara det genererade dokumentet. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -60,7 +60,7 @@ Vi sparar dokumentet med aktivitetsrutorna konfigurerade i den angivna katalogen
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## Steg 4: Visa informationen i aktivitetsrutorna
+## Steg 4: Visa informationen i uppgiftsrutorna
 
 Därefter laddar vi dokumentet och visar källinformationen i aktivitetsfönstret.
 

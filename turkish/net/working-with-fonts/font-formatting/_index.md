@@ -1,7 +1,7 @@
 ---
 title: Yazı Tipi Biçimlendirme
 linktitle: Yazı Tipi Biçimlendirme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu öğreticide, bir Word belgesindeki yazı tipini Aspose.Words for .NET ile nasıl biçimlendireceğinizi öğrenin.
 type: docs
 weight: 10
@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ### Aspose.Words for .NET kullanarak Font Biçimlendirme için örnek kaynak kodu 
 ```csharp
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
@@ -88,7 +88,7 @@ Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi bi
 
 #### S: Bir Word belgesindeki belirli bir metnin yazı tipi boyutunu değiştirmek mümkün müdür?
 
-C: Evet, Aspose.Words ile bir Word belgesindeki belirli metnin yazı tipi boyutunu kolaylıkla değiştirebilirsiniz. İstediğiniz metni seçmek ve uygun yazı tipi boyutunu uygulamak için API'yi kullanabilirsiniz.
+C: Evet, Aspose.Words ile bir Word belgesindeki belirli metnin yazı tipi boyutunu kolayca değiştirebilirsiniz. İstediğiniz metni seçmek ve uygun yazı tipi boyutunu uygulamak için API'yi kullanabilirsiniz.
 
 #### S: Bir Word belgesindeki farklı paragraflara farklı yazı tipi stilleri uygulayabilir miyim?
 

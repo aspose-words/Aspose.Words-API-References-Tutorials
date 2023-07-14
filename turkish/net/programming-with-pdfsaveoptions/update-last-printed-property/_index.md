@@ -1,7 +1,7 @@
 ---
 title: PDF Belgesinde Son Basılan Özelliği Güncelle
 linktitle: PDF Belgesinde Son Basılan Özelliği Güncelle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile PDF'ye dönüştürürken "Son Basılan" özelliğini güncellemek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ C: Bir PDF belgesindeki "Son Basılan" özelliğini Aspose.Words for .NET ile g�
 
  örneğini oluşturun`Document` Word belgesine giden yolu belirten sınıf.
 
- örneğini oluşturun`PdfSaveOptions` sınıflandırın ve ayarlayın`UpdateLastPrintedProperty` mülkiyet`true` "Son Basılan" özelliğinin güncellenmesini sağlamak için.
+ örneğini oluşturun`PdfSaveOptions`sınıflandırın ve ayarlayın`UpdateLastPrintedProperty` mülkiyet`true` "Son Basılan" özelliğinin güncellenmesini sağlamak için.
 
  Kullan`Save` yöntemi`Document`kaydetme seçeneklerini belirterek belgeyi PDF biçiminde kaydetmek için sınıf.
 

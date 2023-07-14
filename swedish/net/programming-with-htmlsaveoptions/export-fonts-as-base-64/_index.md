@@ -1,7 +1,7 @@
 ---
 title: Exportera teckensnitt som bas 64
 linktitle: Exportera teckensnitt som bas 64
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg för steg guide för att exportera bas 64 teckensnitt när du sparar ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

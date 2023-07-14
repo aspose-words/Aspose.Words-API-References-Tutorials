@@ -1,7 +1,7 @@
 ---
 title: Единица измерения
 linktitle: Единица измерения
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как указать единицу измерения при преобразовании документа Word в ODT с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

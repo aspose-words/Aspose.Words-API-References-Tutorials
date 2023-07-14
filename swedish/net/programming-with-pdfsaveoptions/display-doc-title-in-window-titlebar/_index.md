@@ -1,7 +1,7 @@
 ---
 title: Visa dokumentrubrik i fönstrets titelrad
 linktitle: Visa dokumentrubrik i fönstrets titelrad
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du visar dokumenttitel i fönstrets namnlist när du konverterar till PDF med Aspose.Words för .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Aplicar formato de fila
 linktitle: Aplicar formato de fila
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para aplicar formato de fila a una tabla usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx"
 ### Ejemplo de código fuente para aplicar formato de fila con Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

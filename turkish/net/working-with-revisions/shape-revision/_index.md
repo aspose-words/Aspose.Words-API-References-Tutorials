@@ -1,7 +1,7 @@
 ---
 title: Şekil Revizyonu
 linktitle: Şekil Revizyonu
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesindeki şekilleri gözden geçirin.
 type: docs
 weight: 10
@@ -127,7 +127,7 @@ Assert.False(shapes[1].IsMoveToRevision);
 
 ## Çözüm
 
-Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki şekillerde revizyonlar yapmayı öğrendik. Belge oluşturma, revizyon takibini etkinleştirme, her şekle ilişkin revizyonları kontrol etme ve şekilleri taşımak için revizyonları kontrol etme adımlarını takip ederek revizyonları başarılı bir şekilde yönetebildik. Aspose.Words for .NET, Word belgelerindeki incelemeler ve formlarla çalışmak için güçlü bir API sunar.
+Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki şekillerde revizyonlar yapmayı öğrendik. Belge oluşturma, revizyon takibini etkinleştirme, her şekle ilişkin revizyonları kontrol etme ve şekilleri taşımak için revizyonları kontrol etme adımlarını takip ederek revizyonları başarılı bir şekilde yönetebildik. Aspose.Words for .NET, Word belgelerindeki incelemeler ve formlarla Word Processing için güçlü bir API sunar.
 
 ### SSS
 

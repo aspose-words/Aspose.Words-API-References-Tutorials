@@ -1,7 +1,7 @@
 ---
 title: Экспорт поля формы ввода текста в виде текста
 linktitle: Экспорт поля формы ввода текста в виде текста
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по экспорту полей формы ввода текста в виде обычного текста с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

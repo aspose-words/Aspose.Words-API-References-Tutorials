@@ -1,7 +1,7 @@
 ---
 title: Documento proprietario
 linktitle: Documento proprietario
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare il documento del proprietario in Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -56,7 +56,7 @@ doc.FirstSection.Body.AppendChild(para);
 ```
 
 ## Passaggio 7: verifica il nodo padre dopo l'aggiunta
-Dopo aver aggiunto il paragrafo al documento, controlliamo di nuovo se ora ha un nodo genitore.
+Dopo aver aggiunto il paragrafo al documento, controlliamo di nuovo se ora ha un nodo padre.
 
 ```csharp
 Console.WriteLine("The paragraph has a parent node: " + (para.ParentNode != null));

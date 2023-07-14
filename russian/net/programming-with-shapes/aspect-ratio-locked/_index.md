@@ -1,7 +1,7 @@
 ---
 title: Соотношение сторон заблокировано
 linktitle: Соотношение сторон заблокировано
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как заблокировать или разблокировать соотношение сторон фигуры в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ url: /ru/net/programming-with-shapes/aspect-ratio-locked/
 Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
 - Установлена библиотека Aspose.Words for .NET.
-- Базовые знания C# и работы с документами Word.
+- Базовые знания C# и Word Processing с документами Word.
 
 ## Шаг 1. Настройте каталог документов
- Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
+ Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,10 +39,10 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
 ```
 
 ## Шаг 4: заблокируйте или разблокируйте соотношение сторон
- Установить`AspectRatioLocked` свойство формы к`true` или`false`чтобы заблокировать или разблокировать соотношение сторон соответственно.
+ Установить`AspectRatioLocked` свойство формы к`true` или`false` чтобы заблокировать или разблокировать соотношение сторон соответственно.
 
 ```csharp
-shape.AspectRatioLocked = false; // Разблокировать соотношение сторон
+shape.AspectRatioLocked = false; //Разблокировать соотношение сторон
 ```
 
 ## Шаг 5: Сохраните документ
@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ### Пример исходного кода для блокировки соотношения сторон с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

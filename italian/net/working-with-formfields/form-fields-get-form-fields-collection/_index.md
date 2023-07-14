@@ -1,7 +1,7 @@
 ---
 title: Campi modulo Ottieni la raccolta Campi modulo
 linktitle: Campi modulo Ottieni la raccolta Campi modulo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come recuperare e manipolare la raccolta di campi modulo nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Passaggio 2: recupero della raccolta dei campi del modulo
 
- Successivamente, accedi al file`FormFields` proprietà del`Range` oggetto nel documento per recuperare la raccolta di campi del modulo:
+ Successivamente, accedi al file`FormFields`proprietà del`Range` oggetto nel documento per recuperare la raccolta di campi del modulo:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;

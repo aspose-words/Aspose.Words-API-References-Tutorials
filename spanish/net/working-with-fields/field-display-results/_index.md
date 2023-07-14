@@ -1,7 +1,7 @@
 ---
 title: Resultados de visualización de campo
 linktitle: Resultados de visualización de campo
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para mostrar resultados de campo en sus documentos de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -40,7 +40,7 @@ Este paso es importante porque garantiza que los resultados de los campos se mue
 
 ## Paso 4: Visualización de resultados de campo
 
- usamos un`foreach`bucle para recorrer todos los campos del documento y mostrar sus resultados.
+ usamos un`foreach` bucle para recorrer todos los campos del documento y mostrar sus resultados.
 
 ```csharp
 foreach(Field field in document.Range.Fields)

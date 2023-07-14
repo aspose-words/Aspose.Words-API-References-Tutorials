@@ -1,7 +1,7 @@
 ---
 title: Coserva el formato original
 linktitle: Coserva el formato original
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a adjuntar un documento de origen a un documento de destino conservando el formato original con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -34,7 +34,7 @@ srcDoc.FirstSection.Body.AppendParagraph("Source document text.");
 
 ## Paso 3: anexar el documento de origen al documento de destino
 
- Utilizar el`AppendDocument` del documento de destino para anexar el documento de origen. Aprobar`ImportFormatMode.KeepSourceFormatting` como modo de formato de importación para conservar el formato original del documento de origen.
+ Utilizar el`AppendDocument`del documento de destino para anexar el documento de origen. Aprobar`ImportFormatMode.KeepSourceFormatting` como modo de formato de importación para conservar el formato original del documento de origen.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -42,7 +42,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Paso 4: Guarde el documento modificado
 
-Guarde el documento modificado usando el`Save` metodo de la`Document` objeto.
+ Guarde el documento modificado usando el`Save` metodo de la`Document` objeto.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceFormatting.docx");
@@ -53,7 +53,7 @@ Esto completa la implementación de agregar un documento de origen a un document
 ### Ejemplo de código fuente para mantener el formato de origen usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document dstDoc = new Document();

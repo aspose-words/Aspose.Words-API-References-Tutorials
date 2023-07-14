@@ -1,7 +1,7 @@
 ---
 title: Ställ in teckensnittsbetoning
 linktitle: Ställ in teckensnittsbetoning
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ställer in teckensnittets betoningstil i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ### Exempel på källkod för Set Font Emhasis Mark med Aspose.Words för .NET 
 
 ```csharp
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document document = new Document();

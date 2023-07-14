@@ -1,7 +1,7 @@
 ---
 title: Comentario resuelto y respuestas
 linktitle: Comentario resuelto y respuestas
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a resolver comentarios y sus respuestas en documentos de Word utilizando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -84,15 +84,15 @@ La resolución de comentarios ayuda a rastrear y administrar los comentarios den
 
 #### P: ¿Cómo agrego una respuesta a un comentario resuelto en Aspose.Words para .NET?
 
- R: Aunque los comentarios resueltos están ocultos de forma predeterminada en el documento final, aún puede agregar una respuesta a un comentario resuelto usando el`Comment.AddReply`método que especifica el texto de respuesta y dónde desea agregarlo.
+ R: Aunque los comentarios resueltos están ocultos de forma predeterminada en el documento final, aún puede agregar una respuesta a un comentario resuelto usando el`Comment.AddReply` método que especifica el texto de respuesta y dónde desea agregarlo.
 
 #### P: ¿Cómo veo los comentarios resueltos en Aspose.Words para .NET?
 
- R: De forma predeterminada, los comentarios resueltos están ocultos en el documento final. Sin embargo, puede mostrarlos usando el`CommentOptions.ShowResolvedComments` propiedad de la`Document` objeto y configurarlo en`true`.
+ R: De forma predeterminada, los comentarios resueltos están ocultos en el documento final. Sin embargo, puede mostrarlos usando el`CommentOptions.ShowResolvedComments`propiedad de la`Document` objeto y configurarlo en`true`.
 
 #### P: ¿Cómo puedo ocultar todos los comentarios, incluidas las respuestas, en Aspose.Words para .NET?
 
- R: Para ocultar todos los comentarios, incluidas las respuestas, en Aspose.Words para .NET, puede usar el`CommentOptions.CommentDisplayMode` propiedad de la`Document` objeto y establecerlo en`CommentDisplayMode.None`.
+ R: Para ocultar todos los comentarios, incluidas las respuestas, en Aspose.Words para .NET, puede usar el`CommentOptions.CommentDisplayMode`propiedad de la`Document` objeto y establecerlo en`CommentDisplayMode.None`.
 
 #### P: ¿Puedo editar el texto de un comentario resuelto en Aspose.Words para .NET?
 

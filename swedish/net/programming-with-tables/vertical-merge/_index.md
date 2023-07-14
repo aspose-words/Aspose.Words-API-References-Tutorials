@@ -1,7 +1,7 @@
 ---
 title: Vertikal sammanfogning
 linktitle: Vertikal sammanfogning
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du sammanfogar celler vertikalt i en tabell i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ I den här handledningen kommer vi att lära oss hur man vertikalt sammanfogar c
 2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
 ## Steg 2: Ladda dokumentet
-För att börja arbeta med dokumentet, följ dessa steg:
+Följ dessa steg för att starta ordbehandling med dokumentet:
 
 ```csharp
 // Sökväg till din dokumentkatalog
@@ -78,7 +78,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 
 ### Exempel på källkod för Vertical Merge med Aspose.Words för .NET 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

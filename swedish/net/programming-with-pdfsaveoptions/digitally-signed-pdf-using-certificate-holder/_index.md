@@ -1,7 +1,7 @@
 ---
 title: Lägg till digital signatur till PDF med certifikathållare
 linktitle: Lägg till digital signatur till PDF med certifikathållare
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till digital signatur till PDF med Certificate Holder med Aspose.Words för .NET.
 type: docs
 weight: 10

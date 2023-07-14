@@ -1,7 +1,7 @@
 ---
 title: Exponera tröskelkontroll för Tiff-binarisering
 linktitle: Exponera tröskelkontroll för Tiff-binarisering
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du kontrollerar TIFF-binariseringströskeln med Aspose.Words för .NET. Komplett handledning för bättre bilder.
 type: docs
 weight: 10
@@ -52,7 +52,7 @@ Nu kan du köra källkoden för att konvertera ditt dokument till TIFF-format sa
 
 ```csharp 
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
  string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

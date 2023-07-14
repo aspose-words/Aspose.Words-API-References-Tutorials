@@ -1,7 +1,7 @@
 ---
 title: Spara inte Picture Bullet
 linktitle: Spara inte Picture Bullet
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du inaktiverar att spara bildpunkter i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Оценить условие ЕСЛИ
 linktitle: Оценить условие ЕСЛИ
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по оценке условия ЕСЛИ в ваших документах Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
 ## Шаг 3: Оцените условие ЕСЛИ
 
-`EvaluateCondition()`Метод используется для оценки состояния поля IF.
+`EvaluateCondition()` Метод используется для оценки состояния поля IF.
 
 ```csharp
 FieldIfComparisonResult actualResult = field.EvaluateCondition();

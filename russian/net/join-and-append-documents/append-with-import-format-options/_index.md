@@ -1,7 +1,7 @@
 ---
 title: Добавить с параметрами формата импорта
 linktitle: Добавить с параметрами формата импорта
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как добавить в документ параметры формата импорта с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -39,7 +39,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Шаг 4. Добавьте исходный документ к целевому документу.
 
- Использовать`AppendDocument` метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.UseDestinationStyles` в качестве второго параметра для использования стилей и форматирования целевого документа.
+ Использовать`AppendDocument`метод целевого документа для добавления исходного документа. Проходить`ImportFormatMode.UseDestinationStyles` в качестве второго параметра для использования стилей и форматирования целевого документа.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -58,12 +58,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx
 ### Пример исходного кода для добавления с параметрами формата импорта с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source with list.docx");
 	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//Укажите, что если нумерация в исходном и целевом документах конфликтует,
+	// Укажите, что если нумерация в исходном и целевом документах конфликтует,
 	// тогда будет использоваться нумерация из исходного документа.
 	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

@@ -1,7 +1,7 @@
 ---
 title: Параметры обработки пробелов
 linktitle: Параметры обработки пробелов
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как управлять пробелами в документах TXT с помощью Aspose.Words для .NET. Удалите ненужные пробелы и улучшите читаемость.
 type: docs
 weight: 10

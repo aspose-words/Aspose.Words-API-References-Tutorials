@@ -1,7 +1,7 @@
 ---
 title: Belge Dosya Biçimini Algıla
 linktitle: Belge Dosya Biçimini Algıla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile belge dosyası biçimini algılamak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -219,7 +219,7 @@ Aspose.Words for .NET, Microsoft Word 97-2003 belgeleri (DOC), Şablonlar (DOT),
 
 #### Biçim tespiti sırasında şifrelenmiş belge dosyaları nasıl işlenir?
 
- Bir belge dosyasının biçimini algılarken,`IsEncrypted` mülkiyeti`FileFormatInfo` dosyanın şifrelenip şifrelenmediğini kontrol etmek için nesne. Dosya şifrelenmişse, bu özel durumla başa çıkmak için dosyayı şifrelenmiş belgelere ayrılmış bir dizine kopyalamak gibi ek adımlar atabilirsiniz. kullanabilirsiniz`File.Copy` bunu yapmak için yöntem.
+ Bir belge dosyasının biçimini algılarken,`IsEncrypted`mülkiyeti`FileFormatInfo` dosyanın şifrelenip şifrelenmediğini kontrol etmek için nesne. Dosya şifrelenmişse, bu özel durumla başa çıkmak için dosyayı şifrelenmiş belgelere ayrılmış bir dizine kopyalamak gibi ek adımlar atabilirsiniz. kullanabilirsiniz`File.Copy` bunu yapmak için yöntem.
 
 #### Bir belgenin formatı bilinmediğinde hangi işlemler yapılmalıdır?
 

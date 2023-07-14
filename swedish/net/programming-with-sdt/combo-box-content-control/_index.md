@@ -1,7 +1,7 @@
 ---
-title: Combo Box innehållskontroll
-linktitle: Combo Box innehållskontroll
-second_title: Aspose.Words för .NET API Referens
+title: Combo Box Innehållskontroll
+linktitle: Combo Box Innehållskontroll
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du skapar en Combo Box Content Control i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Denna handledning förklarar hur man skapar en Combo Box Content Control i ett W
 För att följa denna handledning måste du ha följande:
 
 - Aspose.Words för .NET-biblioteket installerat.
-- Grundläggande kunskaper i C# och att arbeta med Word-dokument.
+- Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Konfigurera dokumentkatalogen
- Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Steg 3: Lägg till objekt i kombinationsrutan
- Lägg till objekt i kombinationsrutan med hjälp av`ListItems` egendom av`StructuredDocumentTag` Varje objekt representeras av en`SdtListItem` objekt, som tar en visningstext och ett värde. I det här exemplet lägger vi till tre objekt i kombinationsrutan.
+ Lägg till objekt i kombinationsrutan med hjälp av`ListItems`egendom av`StructuredDocumentTag` Varje objekt representeras av en`SdtListItem` objekt, som tar en visningstext och ett värde. I det här exemplet lägger vi till tre objekt i kombinationsrutan.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ### Exempel på källkod för Combo Box Content Control med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

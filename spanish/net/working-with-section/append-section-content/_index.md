@@ -1,7 +1,7 @@
 ---
 title: Agregar contenido de palabra de sección
 linktitle: Agregar contenido de palabra de sección
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenda a agregar contenido de Word a secciones específicas de un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10

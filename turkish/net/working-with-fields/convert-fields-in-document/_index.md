@@ -1,7 +1,7 @@
 ---
 title: Belgedeki Alanları Dönüştür
 linktitle: Belgedeki Alanları Dönüştür
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak belge alanlarını metne dönüştürmek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 3. Adım: Belgeyi yükleyin
- Kullan`Document`dönüştürmek istediğiniz bağlantılı alanları içeren Word belgesini yüklemek için Aspose.Words sınıfı.
+ Kullan`Document` dönüştürmek istediğiniz bağlantılı alanları içeren Word belgesini yüklemek için Aspose.Words sınıfı.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");
@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## 5. Adım: Dönüştürülen belgeyi kaydedin
- Kullan`Save()` Belgeyi, belirtilen belge dizininde metne dönüştürülmüş alanlarla kaydetme yöntemi.
+ Kullan`Save()`Belgeyi, belirtilen belge dizininde metne dönüştürülmüş alanlarla kaydetme yöntemi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
@@ -70,7 +70,7 @@ Aspose.Words for .NET'in ConvertFieldsInDocument işlevi, bir Word belgesindeki 
 
 #### S: Aspose.Words'te alan dönüştürme nedir?
 
-C: Aspose.Words'te alan dönüştürme, farklı biçimler veya veri türleri kullanarak bir Word belgesindeki bir alandan veri dönüştürme becerisini ifade eder. Bu, son belgedeki verilerin sunumunu veya yapısını değiştirmenize olanak tanır.
+C: Aspose.Words'teki bir alan dönüştürme, farklı biçimler veya veri türleri kullanarak bir Word belgesindeki bir alandan veri dönüştürme yeteneğini ifade eder. Bu, son belgedeki verilerin sunumunu veya yapısını değiştirmenize olanak tanır.
 
 #### S: Bir Word belgesindeki alanlar Aspose.Words ile nasıl dönüştürülür?
 
@@ -82,7 +82,7 @@ C: Bir Word belgesindeki alanları Aspose.Words ile dönüştürmek için şu ad
 
 #### S: Aspose.Words'te ne tür dönüşümler mümkündür?
 
-C: Aspose.Words, tarih formatlarını dönüştürmek, sayı formatlarını dönüştürmek, metin formatlarını dönüştürmek, para birimi formatlarını dönüştürmek, yüzde formatlarını dönüştürmek ve daha fazlası gibi alanlarda çeşitli dönüştürme türlerini destekler. Desteklenen dönüştürme türlerinin tam listesi için Aspose.Words belgelerine bakabilirsiniz.
+Y: Aspose.Words, tarih formatlarını dönüştürmek, sayı formatlarını dönüştürmek, metin formatlarını dönüştürmek, para birimi formatlarını dönüştürmek, yüzde formatlarını dönüştürmek ve daha fazlası gibi alanlarda çeşitli dönüştürme türlerini destekler. Desteklenen dönüştürme türlerinin tam listesi için Aspose.Words belgelerine bakabilirsiniz.
 
 #### S: Alanları dönüştürmek, Word belgesindeki orijinal verileri değiştirir mi?
 
@@ -90,4 +90,4 @@ C: Hayır, Aspose.Words'te alanların dönüştürülmesi Word belgesindeki orij
 
 #### S: Aspose.Words'te alan dönüşümlerini özelleştirmek mümkün mü?
 
-C: Evet, Aspose.Words'te alan dönüştürmelerini özel biçimlendirme kodları kullanarak veya mevcut dönüştürme seçeneklerini ayarlayarak özelleştirmek mümkündür. Özel ihtiyaçlarınızı karşılamak için tarihler, sayılar, metinler vb. için özel biçimler tanımlayabilirsiniz.
+C: Evet, Aspose.Words'te alan dönüştürmelerini belirli biçimlendirme kodlarını kullanarak veya mevcut dönüştürme seçeneklerini ayarlayarak özelleştirmek mümkündür. Özel ihtiyaçlarınızı karşılamak için tarihler, sayılar, metinler vb. için özel biçimler tanımlayabilirsiniz.

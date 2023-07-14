@@ -1,7 +1,7 @@
 ---
 title: Horisontell regel
 linktitle: Horisontell regel
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar en horisontell regel med Aspose.Words för .NET Steg-för-steg-guide.
 type: docs
 weight: 10

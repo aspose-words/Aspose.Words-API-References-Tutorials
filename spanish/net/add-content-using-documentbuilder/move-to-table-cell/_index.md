@@ -1,7 +1,7 @@
 ---
 title: Mover a la celda de la tabla
 linktitle: Mover a la celda de la tabla
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para usar Move To Table Cell en Aspose.Words para .NET
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ Assert.AreEqual("Cell contents added by DocumentBuilderCell 3 contents\a", table
 
 Este código verifica que la celda especificada sea de hecho la celda actual de DocumentBuilder. También verifica que el contenido agregado por DocumentBuilder se haya guardado correctamente en la celda de la tabla.
 
-Eso es todo ! Ahora ha entendido cómo usar la funcionalidad de mover a la celda de la tabla de Aspose.Words para .NET usando el código fuente proporcionado. Ahora puede integrar esta funcionalidad en su propia aplicación y manipular celdas de tabla específicas en documentos de Word.
+Eso es todo ! Ahora ha entendido cómo usar la funcionalidad de mover a la celda de la tabla de Aspose.Words para .NET usando el código fuente provisto. Ahora puede integrar esta funcionalidad en su propia aplicación y manipular celdas de tabla específicas en documentos de Word.
 
 
 ### Ejemplo de código fuente para moverse a una celda de tabla usando Aspose.Words para .NET

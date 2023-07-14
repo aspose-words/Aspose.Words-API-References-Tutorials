@@ -1,7 +1,7 @@
 ---
 title: Ta bort avsnittsinnehåll
 linktitle: Ta bort avsnittsinnehåll
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: I den här handledningen lär du dig hur du tar bort innehåll från en specifik del av ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Därefter laddar vi Word-dokumentet i en instans av`Document` klass. Vi kommer åt den första delen av dokumentet med index 0.
 
 ```csharp
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Document.docx");
 
 // Gå till avsnittet
@@ -45,7 +45,7 @@ section.ClearContent();
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -73,7 +73,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  S: För att ladda Word-dokumentet i en instans av`Document` klass kallas`doc` och komma åt den första delen av dokumentet med index 0, kan du använda följande kod:
 
 ```csharp
-//Ladda dokumentet
+// Ladda dokumentet
 Document doc = new Document(dataDir + "Document.docx");
 
 // Gå till avsnittet

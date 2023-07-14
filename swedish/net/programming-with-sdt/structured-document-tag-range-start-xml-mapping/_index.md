@@ -1,7 +1,7 @@
 ---
 title: Structured Document Tag Range Starta XML-mappning
 linktitle: Structured Document Tag Range Starta XML-mappning
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ställer in XML-mappning för ett strukturerat dokumenttaggintervall med start i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Den här handledningen förklarar hur du ställer in XML-mappning för ett struk
 För att följa denna handledning måste du ha följande:
 
 - Aspose.Words för .NET-biblioteket installerat.
-- Grundläggande kunskaper i C# och att arbeta med Word-dokument.
+- Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Konfigurera dokumentkatalogen
  Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till katalogen där ditt dokument finns.
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 ### Exempel på källkod för Structured Document Tag Range Starta Xml-mappning med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

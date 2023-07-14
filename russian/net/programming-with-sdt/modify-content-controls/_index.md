@@ -1,7 +1,7 @@
 ---
 title: Изменить элементы управления содержимым
 linktitle: Изменить элементы управления содержимым
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как изменить текст, раскрывающиеся списки и изображения в элементах управления содержимым в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ url: /ru/net/programming-with-sdt/modify-content-controls/
 Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
 - Установлена библиотека Aspose.Words for .NET.
-- Базовые знания C# и работы с документами Word.
+- Базовые знания C# и Word Processing с документами Word.
 
 ## Шаг 1. Настройте каталог документов
  Начните с настройки пути к каталогу документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором находится ваш документ.
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 ### Пример исходного кода для изменения элементов управления содержимым с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

@@ -1,7 +1,7 @@
 ---
 title: Asignación Xml de inicio de intervalo de etiquetas de documento estructurado
 linktitle: Asignación Xml de inicio de intervalo de etiquetas de documento estructurado
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a configurar el mapeo XML para un inicio de rango de etiqueta de documento estructurado en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Este tutorial explica cómo configurar el mapeo XML para un inicio de rango de e
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y trabajo con documentos de Word.
+- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
  Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde se encuentra su documento.
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 ### Ejemplo de código fuente para el rango de etiquetas de documento estructurado Iniciar asignación Xml usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

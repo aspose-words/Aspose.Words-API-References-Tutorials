@@ -1,7 +1,7 @@
 ---
 title: Accetta revisioni
 linktitle: Accetta revisioni
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come accettare le revisioni di un documento Word utilizzando Aspose.Words per .NET
 type: docs
 weight: 10
@@ -179,7 +179,7 @@ doc.StopTrackRevisions();
 
 #### D: Come posso eliminare un paragrafo rivisto in un documento con Aspose.Words per .NET?
 
- R: Per rimuovere un paragrafo rivisto in un documento, puoi utilizzare il file`Remove` metodo di raccolta dei paragrafi.
+ R: Per rimuovere un paragrafo rivisto in un documento, puoi usare il file`Remove` metodo di raccolta dei paragrafi.
 
 ```csharp
 ParagraphCollection paragraphs = body.Paragraphs;

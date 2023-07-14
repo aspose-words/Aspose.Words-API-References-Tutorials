@@ -1,7 +1,7 @@
 ---
 title: Kaynak Başlıklarını Alt Bilgilerini Kaldır
 linktitle: Kaynak Başlıklarını Alt Bilgilerini Kaldır
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerini birleştirirken ve eklerken üst bilgileri ve alt bilgileri nasıl kaldıracağınızı öğrenin.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
 ## 1. Adım: Belge Dizinlerini Başlatın
 
- Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir` belgelerinizin bulunduğu yola değişken.
+ Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir`belgelerinizin bulunduğu yola değişken.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -47,7 +47,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## 4. Adım: HeadersFooters için "LinkToPrevious" Ayarını Devre Dışı Bırakın
 
-Kaynak belgeden üst bilgileri ve alt bilgileri temizledikten sonra bile, "LinkToPrevious" ayarının`HeadersFooters` hala ayarlanabilir. Bu davranıştan kaçınmak için, açıkça olarak ayarlamanız gerekir.`false` ilk bölüm için`HeadersFooters` mülk.
+ Kaynak belgeden üst bilgileri ve alt bilgileri temizledikten sonra bile, "LinkToPrevious" ayarının`HeadersFooters` hala ayarlanabilir. Bu davranıştan kaçınmak için, açıkça olarak ayarlamanız gerekir.`false` ilk bölüm için`HeadersFooters` mülk.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -75,7 +75,7 @@ Aspose.Words for .NET kullanan C# dilindeki "Kaynak Başlıklarını Alt Bilgile
 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

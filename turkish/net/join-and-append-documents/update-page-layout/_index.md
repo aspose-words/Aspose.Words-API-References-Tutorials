@@ -1,7 +1,7 @@
 ---
 title: Sayfa Düzenini Güncelle
 linktitle: Sayfa Düzenini Güncelle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerini birleştirirken ve eklerken sayfa düzenini nasıl güncelleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
 ## 1. Adım: Belge Dizinlerini Başlatın
 
- Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir` belgelerinizin bulunduğu yola değişken.
+ Öncelikle, belge dizininize giden yolu ayarlamanız gerekir. değerini değiştir`dataDir`belgelerinizin bulunduğu yola değişken.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 5. Adım: Sayfa Düzenini Tekrar Güncelleyin
 
- Kaynak belgeyi ekledikten sonra aramanız gerekir.`UpdatePageLayout`ekleme işleminden sonra yapılan herhangi bir değişikliğin işlenen çıktıya yansıtıldığından emin olmak için yöntemi hedef belgede tekrar kullanın.
+ Kaynak belgeyi ekledikten sonra aramanız gerekir.`UpdatePageLayout` ekleme işleminden sonra yapılan herhangi bir değişikliğin işlenen çıktıya yansıtıldığından emin olmak için yöntemi hedef belgede tekrar kullanın.
 
 ```csharp
 dstDoc.UpdatePageLayout();
@@ -71,12 +71,12 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
 Aspose.Words for .NET kullanarak C# dilinde "Sayfa Düzenini Güncelle" özelliğinin tam kaynak kodu burada:
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Hedef belge PDF'ye dönüştürülürse, görüntü vb.
+	//Hedef belge PDF'ye dönüştürülürse, görüntü vb.
 	// veya UpdatePageLayout, kaynak belgeden önce çağrılır. ekli,
 	// daha sonra yapılan herhangi bir değişiklik, işlenen çıktıya yansıtılmayacaktır.
 	dstDoc.UpdatePageLayout();

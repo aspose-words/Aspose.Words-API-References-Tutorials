@@ -1,7 +1,7 @@
 ---
 title: Satırları Birleştir
 linktitle: Satırları Birleştir
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesindeki tablo satırlarını nasıl birleştireceğinizi öğrenin.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Bu öğreticide, bir Word belgesindeki tablo satırlarını birleştirmek için 
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## Adım 2: Belgeyi yükleme ve tablolara erişme
-Tablolarla çalışmaya başlamak için onları içeren belgeyi yüklememiz ve onlara erişmemiz gerekiyor. Bu adımları takip et:
+Sözcük İşleme'yi tablolarla başlatmak için, onları içeren belgeyi yüklememiz ve bunlara erişmemiz gerekiyor. Bu adımları takip et:
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Tablolara erişim
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ### Aspose.Words for .NET kullanan Combine Rows için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

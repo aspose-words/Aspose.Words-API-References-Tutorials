@@ -1,7 +1,7 @@
 ---
 title: Aplicar licencia desde flujo
 linktitle: Aplicar licencia desde flujo
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a aplicar una licencia desde una transmisión usando Aspose.Words para .NET. Guía paso por paso
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
 - Un archivo de licencia válido para Aspose.Words.
 
 ## Paso 1: Importe los espacios de nombres requeridos
-Para comenzar, importe los espacios de nombres necesarios en su código C#. Estos espacios de nombres contienen las clases y los métodos necesarios para trabajar con Aspose.Words.
+Para comenzar, importe los espacios de nombres necesarios en su código C#. Estos espacios de nombres contienen las clases y los métodos necesarios para el procesamiento de textos con Aspose.Words.
 
 ```csharp
 using Aspose.Words;
@@ -69,7 +69,7 @@ catch (Exception e)
 ```
 
 ## Conclusión
-En este tutorial, aprendió a aplicar una licencia desde un flujo usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, puede configurar fácilmente la licencia y desbloquear todo el potencial de Aspose.Words para sus tareas de procesamiento de documentos.
+En este tutorial, aprendió a aplicar una licencia desde un flujo usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente provisto, puede configurar fácilmente la licencia y desbloquear todo el potencial de Aspose.Words para sus tareas de procesamiento de documentos.
 
 Ahora puede aplicar con confianza una licencia de una secuencia y aprovechar las potentes funciones de Aspose.Words para crear, modificar y convertir documentos de Word mediante programación.
 

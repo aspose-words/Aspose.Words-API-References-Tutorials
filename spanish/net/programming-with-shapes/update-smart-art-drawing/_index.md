@@ -1,7 +1,7 @@
 ---
 title: Actualizar dibujo artístico inteligente
 linktitle: Actualizar dibujo artístico inteligente
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a actualizar el dibujo de Smart Art en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Este tutorial explica cómo actualizar el dibujo Smart Art en un documento de Wo
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y trabajo con documentos de Word.
+- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
  Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde se encuentra su documento.
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ### Ejemplo de código fuente para Actualizar Smart Art Drawing usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "SmartArt.docx");

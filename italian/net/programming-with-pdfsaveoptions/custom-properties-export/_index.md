@@ -1,7 +1,7 @@
 ---
 title: Esporta proprietà personalizzate in un documento PDF
 linktitle: Esporta proprietà personalizzate in un documento PDF
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come esportare proprietà personalizzate durante la conversione di documenti in PDF con Aspose.Words per .NET.
 type: docs
 weight: 10

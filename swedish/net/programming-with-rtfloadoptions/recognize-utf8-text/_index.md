@@ -1,7 +1,7 @@
 ---
 title: Känn igen Utf8-text
 linktitle: Känn igen Utf8-text
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du känner igen Utf-8-tecken i RTF-dokument med Aspose.Words för .NET. Säkerställ dataintegritet.
 type: docs
 weight: 10
@@ -67,4 +67,4 @@ I den här handledningen utforskade vi Utf-8-textigenkänningsfunktionen med RTF
 
 Denna funktion är viktig för att säkerställa korrekt visning av Utf-8-tecken i dina RTF-dokument. Genom att konfigurera lämpliga laddningsalternativ kan Aspose.Words korrekt känna igen och bearbeta dessa tecken, vilket hjälper till att bevara textens integritet och kvalitet.
 
-Utf-8-textigenkänning är särskilt viktigt när man arbetar med specifika språk och teckenuppsättningar som kräver stöd för Utf-8-kodning. Tack vare Aspose.Words för .NET kan du enkelt manipulera RTF-dokument som innehåller Utf-8-tecken utan risk för förlust eller korruption.
+Utf-8-textigenkänning är särskilt viktigt vid ordbehandling med specifika språk och teckenuppsättningar som kräver stöd för Utf-8-kodning. Tack vare Aspose.Words för .NET kan du enkelt manipulera RTF-dokument som innehåller Utf-8-tecken utan risk för förlust eller korruption.

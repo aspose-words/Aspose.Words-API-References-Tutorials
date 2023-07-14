@@ -1,14 +1,13 @@
 ---
-title: Meta Karakterler İçeren Metni Değiştir
-linktitle: Meta Karakterler İçeren Metni Değiştir
-second_title: Aspose.Words for .NET API Referansı
-description: Aspose.Words for .NET kullanarak Word belgelerinde meta karakter içeren metinleri nasıl değiştireceğinizi öğrenin.
+title: Meta Karakterler İçeren Metin Değiştirme Kelimesi
+linktitle: Meta Karakterler İçeren Metin Değiştirme Kelimesi
+second_title: Aspose.Words Belge İşleme API'sı
+description: Aspose.Words for .NET kullanarak Word belgelerinde metakarakterler içeren metinleri nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/replace-text-containing-meta-characters/
 ---
-
-Bu makalede, Aspose.Words for .NET kitaplığında Meta Karakterler İçeren Metni Değiştir işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, belirli meta karakterleri içeren bir belgedeki metin bölümlerini değiştirmenize olanak tanır.
+Bu makalede, Aspose.Words for .NET kitaplığında Word Change Text Containing Meta Characters işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, belirli meta karakterleri içeren bir belgedeki metin bölümlerini değiştirmenize olanak tanır.
 
 ## Önkoşullar
 
@@ -26,7 +25,7 @@ Document doc = new Document();
 
 ## 2. Adım: Belgeye metin ekleyin
 
- Bir belgemiz olduğunda, bir metin kullanarak metin ekleyebiliriz.`DocumentBuilder` nesne. Örneğimizde,`Writeln`farklı bölümlere birden çok metin paragrafı ekleme yöntemi:
+ Bir belgemiz olduğunda, bir metin kullanarak metin ekleyebiliriz.`DocumentBuilder` nesne. Örneğimizde,`Writeln` farklı bölümlere birden çok metin paragrafı ekleme yöntemi:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -45,14 +44,12 @@ builder.Writeln("1st paragraph");
 
 ```csharp
 FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
-findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment
-
-.Center;
+findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
 ## 4. Adım: Meta Karakter İçeren Metni Değiştirme
 
- biz kullanıyoruz`Range.Replace` Meta karakterleri içeren metnin değiştirilmesini gerçekleştirme yöntemi. Örneğimizde, "bölüm" kelimesinin geçtiği her bir paragraf sonunu aynı kelimeyle, ardından birkaç tire ve yeni bir paragraf sonu ile değiştiriyoruz:
+ biz kullanıyoruz`Range.Replace`Meta karakterleri içeren metnin değiştirilmesini gerçekleştirme yöntemi. Örneğimizde, "bölüm" kelimesinin geçtiği her bir paragraf sonunu aynı kelimeyle, ardından birkaç tire ve yeni bir paragraf sonu ile değiştiriyoruz:
 
 ```csharp
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
@@ -110,3 +107,65 @@ Aspose.Words for .NET ile metakarakterler içeren metin değişiminin kullanım�
 
 Bu makalede, Aspose.Words for .NET'in Meta Karakterler İçeren Metni Değiştir özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belge oluşturmak, metin eklemek, meta karakterleri içeren metni değiştirmek ve değiştirilen belgeyi kaydetmek için adım adım bir kılavuz izledik.
 
+### SSS
+
+#### S: Aspose.Words for .NET'te Meta Karakterler İçeren Metni Değiştir işlevi nedir?
+
+C: Aspose.Words for .NET'teki Meta Karakterleri İçeren Metni Değiştir özelliği, belirli meta karakterleri içeren bir belgedeki metin bölümlerini değiştirmenize olanak tanır. Bu özelliği, belgenizde meta karakterleri dikkate alarak gelişmiş değiştirmeler yapmak için kullanabilirsiniz.
+
+#### S: Aspose.Words for .NET'te yeni bir belge nasıl oluşturulur?
+
+ Y: Meta Karakterler İçeren Metni Değiştir işlevini kullanmadan önce Aspose.Words for .NET'i kullanarak yeni bir belge oluşturmalısınız. Bu, bir örneği başlatarak yapılabilir.`Document` nesne. İşte yeni bir belge oluşturmak için örnek bir kod:
+
+```csharp
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Document doc = new Document();
+```
+
+#### S: Aspose.Words for .NET kullanarak bir belgeye nasıl metin eklenir?
+
+ C: Bir belgeniz olduğunda, bir metin kullanarak metin ekleyebilirsiniz.`DocumentBuilder` nesne. Örneğimizde,`Writeln` farklı bölümlere birden çok metin paragrafı ekleme yöntemi:
+
+```csharp
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Font.Name = "Arial";
+builder.Writeln("First section");
+builder.Writeln("1st paragraph");
+builder.Writeln("2nd paragraph");
+builder.Writen("{insert-section}");
+builder.Writeln("Second section");
+builder.Writeln("1st paragraph");
+```
+
+#### S: Aspose.Words for .NET'te arama ve değiştirme seçenekleri nasıl yapılandırılır?
+
+ A: Şimdi bul ve değiştir seçeneklerini bir a kullanarak yapılandıracağız.`FindReplaceOptions` nesne. Örneğimizde, değiştirilen paragrafların hizalamasını "Ortalanmış" olarak ayarladık:
+
+```csharp
+FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
+findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
+```
+
+#### S: Aspose.Words for .NET kullanan bir belgede meta karakter içeren metin nasıl değiştirilir?
+
+ C: Kullanıyoruz`Range.Replace` Meta karakterleri içeren metnin değiştirilmesini gerçekleştirme yöntemi. Örneğimizde, "bölüm" kelimesinin geçtiği her bir paragraf sonunu aynı kelimeyle, ardından birkaç tire ve yeni bir paragraf sonu ile değiştiriyoruz:
+
+```csharp
+int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
+```
+
+#### S: Aspose.Words for .NET kullanan bir belgede meta karakterler içeren özel bir metin etiketi nasıl değiştirilir?
+
+ A: Biz de kullanıyoruz`Range.Replace` özel değiştirme yöntemi "{insert-section}" bölüm sonu içeren metin etiketi. Örneğimizde değiştiriyoruz "{insert-section}bir bölüm sonu eklemek için "&b" ile:
+
+```csharp
+count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
+```
+
+#### S: Düzenlenen belge Aspose.Words for .NET'te nasıl kaydedilir?
+
+ C: Belgede değişiklik yaptıktan sonra, belgeyi aşağıdakileri kullanarak belirli bir dizine kaydedebilirsiniz:`Save` yöntem:
+
+```csharp
+doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
+```

@@ -1,7 +1,7 @@
 ---
 title: Detectar firma digital en documento de Word
 linktitle: Detectar firma digital en documento de Word
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para detectar firma digital en documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signe
 
 ## Paso 3: Buscar firmas digitales
 
- Verificamos si el documento contiene firmas digitales usando el`HasDigitalSignature` propiedad de la`FileFormatInfo` objeto. Si se detectan firmas digitales, mostramos un mensaje que indica que las firmas se perderán si el documento se abre/guarda con Aspose.Words.
+ Verificamos si el documento contiene firmas digitales usando el`HasDigitalSignature`propiedad de la`FileFormatInfo` objeto. Si se detectan firmas digitales, mostramos un mensaje que indica que las firmas se perderán si el documento se abre/guarda con Aspose.Words.
 
 ```csharp
 if (info.HasDigitalSignature)
@@ -68,7 +68,7 @@ Este tutorial le ha proporcionado una guía paso a paso sobre cómo detectar una
 
 #### ¿Cómo detectar la presencia de una firma digital en un documento de Word utilizando Aspose.Words para .NET?
 
- Para detectar la presencia de una firma digital en un documento de Word utilizando Aspose.Words para .NET, puede seguir los pasos que se proporcionan en el tutorial. Utilizando el`DetectFileFormat` metodo de la`FileFormatUtil` class le permitirá detectar información de formato de archivo. Entonces puedes comprobar el`HasDigitalSignature` propiedad de la`FileFormatInfo`objeto para determinar si el documento contiene una firma digital. Si se detecta una firma digital, puede mostrar un mensaje que indica que las firmas se perderán si el documento se abre/guarda con Aspose.Words.
+ Para detectar la presencia de una firma digital en un documento de Word utilizando Aspose.Words para .NET, puede seguir los pasos que se proporcionan en el tutorial. Utilizando el`DetectFileFormat` metodo de la`FileFormatUtil` class le permitirá detectar información de formato de archivo. Entonces puedes comprobar el`HasDigitalSignature`propiedad de la`FileFormatInfo`objeto para determinar si el documento contiene una firma digital. Si se detecta una firma digital, puede mostrar un mensaje que indica que las firmas se perderán si el documento se abre/guarda con Aspose.Words.
 
 #### ¿Cómo especificar el directorio que contiene los documentos en los que buscar la firma digital?
 

@@ -1,7 +1,7 @@
 ---
 title: Yazı Tipi Ayarları Varsayılan Örneği
 linktitle: Yazı Tipi Ayarları Varsayılan Örneği
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde varsayılan yazı tipi ayarlarının nasıl yapılandırılacağını öğrenin.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Aspose.Words for .NET kullanan Yazı Tipi Ayarları Varsayılan Örneği için örnek kaynak kodu 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = FontSettings.DefaultInstance;
@@ -76,11 +76,11 @@ Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde varsayılan yazı ti
 
 #### S: Aspose.Words'te varsayılan yazı tipi boyutunu belirtebilir miyim?
 
- C: Evet, Aspose.Words'te varsayılan yazı tipi boyutunu şu şekilde belirleyebilirsiniz:`DefaultFontSize` mülkiyeti`FontSettings` sınıf. İstediğiniz nokta boyutunu ayarlayabilirsiniz.
+ C: Evet, Aspose.Words'te varsayılan yazı tipi boyutunu şu şekilde belirleyebilirsiniz:`DefaultFontSize`mülkiyeti`FontSettings` sınıf. İstediğiniz nokta boyutunu ayarlayabilirsiniz.
 
 #### S: Aspose.Words'te varsayılan yazı tipi rengini ayarlamak mümkün mü?
 
- C: Evet, Aspose.Words'te varsayılan yazı tipi rengini`DefaultColor` mülkiyeti`FontSettings` sınıf. Rengi, RGB değerlerini veya önceden tanımlanmış adları kullanarak belirleyebilirsiniz.
+ C: Evet, Aspose.Words'te varsayılan yazı tipi rengini`DefaultColor`mülkiyeti`FontSettings` sınıf. Rengi, RGB değerlerini veya önceden tanımlanmış adları kullanarak belirleyebilirsiniz.
 
 #### S: Varsayılan yazı tipi ayarları tüm belgeler için geçerli mi?
 

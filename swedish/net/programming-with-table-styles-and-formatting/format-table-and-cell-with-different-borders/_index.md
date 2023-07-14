@@ -1,7 +1,7 @@
 ---
 title: Formatera Tabell Och Cell Med Olika Kanter
 linktitle: Formatera Tabell Och Cell Med Olika Kanter
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg för steg guide för att formatera tabell och cell med olika gränser med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -70,7 +70,7 @@ Grattis! Du har nu formaterat en tabell och en cell med olika ramar med Aspose.W
 ### Exempel på källkod för formatera tabell och cell med olika gränser med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

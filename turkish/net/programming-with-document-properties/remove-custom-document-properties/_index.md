@@ -1,7 +1,7 @@
 ---
 title: Özel Belge Özelliklerini Kaldırma
 linktitle: Özel Belge Özelliklerini Kaldırma
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgeden özel özellikleri kaldırmak için adım adım kılavuz.
 type: docs
 weight: 10

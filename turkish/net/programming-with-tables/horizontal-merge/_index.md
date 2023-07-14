@@ -1,7 +1,7 @@
 ---
 title: Yatay Birleştirme
 linktitle: Yatay Birleştirme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word tablosundaki hücreleri yatay olarak nasıl birleştireceğinizi öğrenin.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tabl
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## Adım 2: Belgeyi oluşturma ve belge oluşturucuyu başlatma
-Tablo ve hücrelerle çalışmaya başlamak için yeni bir belge oluşturmamız ve belge oluşturucuyu başlatmamız gerekiyor. Bu adımları takip et:
+Tablo ve hücrelerle Sözcük İşleme'yi başlatmak için yeni bir belge oluşturmamız ve belge oluşturucuyu başlatmamız gerekir. Bu adımları takip et:
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -49,7 +49,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Burada tabloyu oluşturmak ve hücre yatay birleştirme özelliklerini ayarlamak için belge oluşturucuyu kullanıyoruz. biz kullanıyoruz`HorizontalMerge` mülkiyeti`CellFormat` Her hücreye uygulanacak yatay birleştirme türünü belirtmek için nesne. kullanma`CellMerge.First` kullanırken ilk hücreyi sonrakiyle birleştiriyoruz`CellMerge.Previous` mevcut hücreyi önceki hücreyle birleştiriyoruz.`CellMerge.None` hücrenin birleştirilmemesi gerektiğini belirtir.
+ Burada tabloyu oluşturmak ve hücre yatay birleştirme özelliklerini ayarlamak için belge oluşturucuyu kullanıyoruz. biz kullanıyoruz`HorizontalMerge`mülkiyeti`CellFormat` Her hücreye uygulanacak yatay birleştirme türünü belirtmek için nesne. kullanma`CellMerge.First` kullanırken ilk hücreyi sonrakiyle birleştiriyoruz`CellMerge.Previous` mevcut hücreyi önceki hücreyle birleştiriyoruz.`CellMerge.None` hücrenin birleştirilmemesi gerektiğini belirtir.
 
 ## 4. Adım: Değiştirilen belgeyi kaydetme
 Son olarak, değiştirilen belgeyi hücreler yatay olarak birleştirilmiş olarak kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
@@ -65,7 +65,7 @@ Dir + "WorkingWithTables.HorizontalMerge.docx");
 ### Aspose.Words for .NET kullanan Yatay Birleştirme için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

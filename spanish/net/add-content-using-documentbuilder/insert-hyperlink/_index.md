@@ -1,7 +1,7 @@
 ---
 title: Insertar hipervínculo
 linktitle: Insertar hipervínculo
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a insertar hipervínculos en documentos de Word usando Aspose.Words para la guía paso a paso de .NET.
 type: docs
 weight: 10

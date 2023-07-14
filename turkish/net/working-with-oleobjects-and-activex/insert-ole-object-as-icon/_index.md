@@ -1,7 +1,7 @@
 ---
 title: Ole Nesnesini Word Belgesine Simge Olarak Ekle
 linktitle: Ole Nesnesini Word Belgesine Simge Olarak Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir OLE nesnesini word belgesine simge olarak nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10

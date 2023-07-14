@@ -1,7 +1,7 @@
 ---
 title: Hücre Aralığına İzin Ver
 linktitle: Hücre Aralığına İzin Ver
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak hücre aralığına izin vermek için adım adım kılavuz.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
 ## 4. Adım: Hücre Aralığını Etkinleştirin
- Şimdi, ayarlayarak hücre aralığını etkinleştirebiliriz.`AllowCellSpacing`tablonun özelliği`true`. Bu özellik, tablonun hücre aralığına sahip olup olmayacağını belirler.
+ Şimdi, ayarlayarak hücre aralığını etkinleştirebiliriz.`AllowCellSpacing` tablonun özelliği`true`. Bu özellik, tablonun hücre aralığına sahip olup olmayacağını belirler.
 
 ```csharp
 table.AllowCellSpacing = true;
@@ -57,7 +57,7 @@ Tebrikler! Aspose.Words for .NET kullanarak tablolarda hücre aralığına başa
 ### Aspose.Words for .NET kullanarak Hücre Boşluğuna İzin Ver için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

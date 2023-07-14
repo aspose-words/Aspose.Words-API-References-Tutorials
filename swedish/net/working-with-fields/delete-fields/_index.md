@@ -1,7 +1,7 @@
 ---
 title: Ta bort fält
 linktitle: Ta bort fält
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg för steg guide för att ta bort sammanslagningsfält i dina Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Detta är särskilt användbart om du bara vill behålla det statiska innehålle
 // Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Ladda befintligt dokument.
+// Ladda befintligt dokument.
 Document doc = new Document(dataDir + "YourDocument.docx");
 
 // Ta bort sammanslagningsfält.

@@ -1,7 +1,7 @@
 ---
 title: Vurgular
 linktitle: Vurgular
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET Adım adım kılavuz ile vurguları (kalın ve italik) nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10

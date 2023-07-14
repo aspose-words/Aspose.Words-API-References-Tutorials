@@ -1,7 +1,7 @@
 ---
 title: Usa i caratteri di controllo
 linktitle: Usa i caratteri di controllo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata all'utilizzo dei caratteri di controllo con Aspose.Words per .NET.
 type: docs
 weight: 10

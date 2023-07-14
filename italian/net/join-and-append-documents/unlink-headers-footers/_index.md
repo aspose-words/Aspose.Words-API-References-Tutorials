@@ -1,7 +1,7 @@
 ---
 title: Scollega intestazioni piè di pagina
 linktitle: Scollega intestazioni piè di pagina
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come unire e aggiungere documenti Word mentre scolleghi intestazioni e piè di pagina utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Prima di iniziare, assicurati di avere quanto segue:
 
 ## Passaggio 1: inizializzare le directory dei documenti
 
- Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir` variabile al percorso in cui si trovano i documenti.
+ Innanzitutto, devi impostare il percorso della directory dei documenti. Modificare il valore di`dataDir`variabile al percorso in cui si trovano i documenti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 3: scollegare intestazioni e piè di pagina nel documento di origine
 
- Per scollegare le intestazioni e i piè di pagina nel documento di origine dalla continuazione delle intestazioni e dei piè di pagina del documento di destinazione, è necessario impostare il`LinkToPrevious` proprietà del`HeadersFooters` raccolta nella prima sezione del documento di origine a`false`.
+ Per scollegare le intestazioni e i piè di pagina nel documento di origine dalla continuazione delle intestazioni e dei piè di pagina del documento di destinazione, è necessario impostare il`LinkToPrevious`proprietà del`HeadersFooters` raccolta nella prima sezione del documento di origine a`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Passaggio 5: salvare il documento finale
 
- Infine, salva il documento unito con la funzione Scollega intestazioni piè di pagina abilitata utilizzando il file`Save` metodo del`Document` classe.
+Infine, salva il documento unito con la funzione Scollega intestazioni piè di pagina abilitata utilizzando il file`Save` metodo del`Document` classe.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 Ecco il codice sorgente completo per la funzionalità "Unlink Headers Footers" in C# utilizzando Aspose.Words per .NET:
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

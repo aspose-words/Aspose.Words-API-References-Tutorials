@@ -1,7 +1,7 @@
 ---
 title: Minska PDF-storleken med skala Wmf-teckensnitt till metafilstorlek
 linktitle: Minska PDF-storleken med skala Wmf-teckensnitt till metafilstorlek
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg guide för att minska pdf-storlek med skala wmf-teckensnitt till metafilstorlek vid konvertering till PDF med Aspose.Words för .NET.
 type: docs
 weight: 10

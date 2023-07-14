@@ -1,7 +1,7 @@
 ---
 title: Вставить объект Ole в документ Word как значок
 linktitle: Вставить объект Ole в документ Word как значок
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как вставить объект OLE в документ Word в виде значка с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

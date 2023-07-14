@@ -1,14 +1,14 @@
 ---
 title: Ladda krypterade dokument
 linktitle: Ladda krypterade dokument
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du laddar och sparar krypterade dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-loadoptions/load-encrypted-document/
 ---
 
-När man arbetar med krypterade dokument i en C#-applikation är det viktigt att kunna ladda dem korrekt genom att ange rätt lösenord. Med Aspose.Words-biblioteket för .NET kan du enkelt ladda krypterade dokument med lämpliga laddningsalternativ. I den här steg-för-steg-guiden visar vi dig hur du använder C#-källkoden för Aspose.Words för .NET för att ladda ett krypterat dokument med LoadOptions laddningsalternativ.
+Vid ordbehandling med krypterade dokument i en C#-applikation är det viktigt att kunna ladda dem korrekt genom att ange rätt lösenord. Med Aspose.Words-biblioteket för .NET kan du enkelt ladda krypterade dokument med lämpliga laddningsalternativ. I den här steg-för-steg-guiden visar vi dig hur du använder C#-källkoden för Aspose.Words för .NET för att ladda ett krypterat dokument med LoadOptions laddningsalternativ.
 
 ## Förstå Aspose.Words-biblioteket
 

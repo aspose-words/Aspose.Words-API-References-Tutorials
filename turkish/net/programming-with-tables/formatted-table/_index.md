@@ -1,7 +1,7 @@
 ---
 title: Biçimlendirilmiş Tablo
 linktitle: Biçimlendirilmiş Tablo
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesinde biçimlendirilmiş tablo oluşturmayı öğrenin.
 type: docs
 weight: 10
@@ -112,7 +112,7 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ### Aspose.Words for .NET kullanan Biçimlendirilmiş Tablo için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

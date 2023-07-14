@@ -1,7 +1,7 @@
 ---
 title: Переместить в конец закладки
 linktitle: Переместить в конец закладки
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Из этого пошагового руководства вы узнаете, как использовать Aspose.Words для .NET для перемещения в конец закладки в документах Word.
 type: docs
 weight: 10

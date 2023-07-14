@@ -1,7 +1,7 @@
 ---
 title: Infoga Ole-objekt som ikon med hjälp av Stream
 linktitle: Infoga Ole-objekt som ikon med hjälp av Stream
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar ett OLE-objekt som en ikon med hjälp av en ström med Aspose.Words för .NET.
 type: docs
 weight: 10

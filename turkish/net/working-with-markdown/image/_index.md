@@ -1,7 +1,7 @@
 ---
 title: resim
 linktitle: resim
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET Adım adım kılavuz ile görüntü eklemeyi ve özelleştirmeyi öğrenin.
 type: docs
 weight: 10

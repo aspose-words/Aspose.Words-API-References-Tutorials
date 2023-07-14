@@ -1,7 +1,7 @@
 ---
 title: Crea una tabella semplice
 linktitle: Crea una tabella semplice
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come creare una semplice tabella in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -78,7 +78,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ### Esempio di codice sorgente per Crea tabella semplice utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -105,4 +105,4 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come creare una semplice tabella in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi creare tabelle personalizzate nei tuoi documenti Word a livello di programmazione. Questa funzione ti consente di formattare e organizzare i tuoi dati in modo strutturato e chiaro.
+In questo tutorial, abbiamo imparato come creare una semplice tabella in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, puoi creare tabelle personalizzate nei tuoi documenti Word a livello di codice. Questa funzione ti consente di formattare e organizzare i tuoi dati in modo strutturato e chiaro.

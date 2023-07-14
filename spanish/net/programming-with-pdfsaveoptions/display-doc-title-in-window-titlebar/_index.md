@@ -1,7 +1,7 @@
 ---
 title: Mostrar el título del documento en la barra de título de la ventana
 linktitle: Mostrar el título del documento en la barra de título de la ventana
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a mostrar el título del documento en la barra de título de la ventana al convertir a PDF con Aspose.Words para .NET.
 type: docs
 weight: 10

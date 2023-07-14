@@ -1,14 +1,14 @@
 ---
 title: Temp Klasörünü Kullan
 linktitle: Temp Klasörünü Kullan
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile belgeleri yüklerken geçici bir klasörü nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/use-temp-folder/
 ---
 
-Bir C# uygulamasında Word belgeleriyle çalışırken, belge işleme sırasında oluşturulan geçici dosyaları depolamak için geçici bir klasör kullanmak gerekebilir. .NET için Aspose.Words kitaplığıyla, LoadOptions yükleme seçeneklerini kullanarak kolayca geçici bir klasör belirleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçenekleri kullanılarak belirtilen geçici bir klasörü kullanarak bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
+Bir C# uygulamasında Word Belgeleriyle Sözcük İşleme yapılırken, belge işleme sırasında oluşturulan geçici dosyaları depolamak için geçici bir klasör kullanmak gerekebilir. .NET için Aspose.Words kitaplığıyla, LoadOptions yükleme seçeneklerini kullanarak kolayca geçici bir klasör belirleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions yükleme seçenekleri kullanılarak belirtilen geçici bir klasörü kullanarak bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınızı göstereceğiz.
 
 ## Aspose.Words kitaplığını anlama
 
@@ -40,7 +40,7 @@ Bu örnekte, belirtilen yükleme seçeneklerini kullanarak belgeler dizininde bu
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// "Geçici Klasörü Kullan" özelliği ile yükleme seçeneklerini yapılandırın
+//"Geçici Klasörü Kullan" özelliği ile yükleme seçeneklerini yapılandırın
 LoadOptions loadOptions = new LoadOptions { TempFolder = ArtifactsDir };
 
 // Belirli bir geçici klasörü kullanarak belgeyi yükleyin

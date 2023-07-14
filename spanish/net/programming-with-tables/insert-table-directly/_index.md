@@ -1,21 +1,21 @@
 ---
 title: Insertar tabla directamente
 linktitle: Insertar tabla directamente
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a insertar una tabla directamente en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/insert-table-directly/
 ---
 
-En este tutorial, aprenderemos cómo insertar directamente una tabla en un documento de Word utilizando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta característica. Al final de este tutorial, podrá insertar tablas directamente en sus documentos de Word mediante programación.
+En este tutorial, aprenderemos cómo insertar directamente una tabla en un documento de Word utilizando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá insertar tablas directamente en sus documentos de Word mediante programación.
 
 ## Paso 1: Configuración del proyecto
 1. Inicie Visual Studio y cree un nuevo proyecto de C#.
 2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
 ## Paso 2: Creación del documento y la tabla
-Para comenzar a trabajar con la matriz, debemos crear un nuevo documento e inicializar la matriz. Sigue estos pasos:
+Para iniciar el procesamiento de textos con la matriz, debemos crear un nuevo documento e inicializar la matriz. Sigue estos pasos:
 
 ```csharp
 // Ruta a su directorio de documentos
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Creación de documentos
 Document doc = new Document();
 
-// Crear la matriz
+//Crear la matriz
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);
 ```
@@ -32,7 +32,7 @@ doc.FirstSection.Body.AppendChild(table);
 Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
 ## Paso 3: Construyendo la matriz
-continuación, construiremos la tabla agregando filas y celdas. Use el siguiente código como ejemplo:
+A continuación, construiremos la tabla agregando filas y celdas. Use el siguiente código como ejemplo:
 
 ```csharp
 // Crea la primera fila
@@ -79,7 +79,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ### Ejemplo de código fuente para Insertar tabla directamente usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

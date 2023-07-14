@@ -1,7 +1,7 @@
 ---
 title: Imposta le opzioni di struttura in un documento PDF
 linktitle: Imposta le opzioni di struttura in un documento PDF
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per impostare le opzioni di contorno in un documento PDF con Aspose.Words per .NET.
 type: docs
 weight: 10

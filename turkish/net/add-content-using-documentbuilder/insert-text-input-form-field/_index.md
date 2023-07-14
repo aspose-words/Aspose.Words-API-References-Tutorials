@@ -1,7 +1,7 @@
 ---
 title: Metin Giriş Formu Alanı Ekle
 linktitle: Metin Giriş Formu Alanı Ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu adım adım kılavuz ile Word belgelerine metin giriş formu alanı eklemek için Aspose.Words for .NET'i nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10

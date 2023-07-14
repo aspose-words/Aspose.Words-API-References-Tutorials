@@ -1,7 +1,7 @@
 ---
 title: Предупреждения об отображении PDF
 linktitle: Предупреждения об отображении PDF
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по работе с предупреждениями об отображении PDF с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

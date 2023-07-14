@@ -1,7 +1,7 @@
 ---
 title: Получить типы ревизий слов
 linktitle: Получить типы ревизий слов
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Получите типы редакций слов в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

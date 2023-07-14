@@ -1,13 +1,13 @@
 ---
 title: Ladda med kodning
 linktitle: Ladda med kodning
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du laddar ett dokument med en specificerad kodning med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/programming-with-loadoptions/load-with-encoding/
 ---
-När man arbetar med textdokument i en C#-applikation är det viktigt att kunna ladda dem korrekt genom att ange rätt kodning. Med Aspose.Words-biblioteket för .NET kan du enkelt ladda textdokument med önskad kodning med hjälp av laddningsalternativen LoadOptions. I den här steg-för-steg-guiden går vi igenom hur du använder Aspose.Words för .NET C#-källkod för att ladda ett textdokument med den angivna kodningen med hjälp av LoadOptions laddningsalternativ.
+Vid ordbehandling med textdokument i en C#-applikation är det viktigt att kunna ladda dem korrekt genom att ange rätt kodning. Med Aspose.Words-biblioteket för .NET kan du enkelt ladda textdokument med önskad kodning med hjälp av laddningsalternativen LoadOptions. I den här steg-för-steg-guiden går vi igenom hur du använder Aspose.Words för .NET C#-källkod för att ladda ett textdokument med den angivna kodningen med hjälp av LoadOptions laddningsalternativ.
 
 ## Förstå Aspose.Words-biblioteket
 

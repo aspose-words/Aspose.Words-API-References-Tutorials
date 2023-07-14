@@ -1,7 +1,7 @@
 ---
 title: Usa il tipo di nodo
 linktitle: Usa il tipo di nodo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare il tipo di nodo per accedere a informazioni specifiche del documento con Aspose.Words per .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Applica la formattazione delle righe
 linktitle: Applica la formattazione delle righe
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per applicare la formattazione delle righe a una tabella utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -87,7 +87,7 @@ Congratulazioni! Ora hai applicato la formattazione delle righe a una tabella ut
 ### Esempio di codice sorgente per Applicare la formattazione delle righe utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

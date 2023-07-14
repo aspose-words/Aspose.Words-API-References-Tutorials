@@ -1,7 +1,7 @@
 ---
 title: Förbättra PDF-textpositionering med ytterligare textpositionering
 linktitle: Förbättra PDF-textpositionering med ytterligare textpositionering
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du förbättrar PDF-textpositionering med ytterligare textpositionering när du konverterar Word-dokument till PDF med Aspose.Words för .NET.
 type: docs
 weight: 10

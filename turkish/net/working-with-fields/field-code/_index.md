@@ -1,7 +1,7 @@
 ---
 title: Alan Kodu
 linktitle: Alan Kodu
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerinizde alan kodunu ve alan sonucunu almak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -73,7 +73,7 @@ Bu, Aspose.Words for .NET ile "Get Field Code" özelliğini kullanma konusundaki
 
 #### S: Aspose.Words for .NET kullanarak bir belgedeki alanları nasıl güncelleyebilirim?
 
- C: Aspose.Words for .NET kullanarak belge alanlarını güncellemek için`Document.UpdateFields` yöntem. Bu, birleştirme alanları, tarih alanları vb. gibi belgede bulunan tüm alanları güncelleyecektir.
+ C: Aspose.Words for .NET kullanarak belge alanlarını güncellemek için`Document.UpdateFields`yöntem. Bu, birleştirme alanları, tarih alanları vb. gibi belgede bulunan tüm alanları güncelleyecektir.
 
 #### S: Aspose.Words for .NET'te belirli bir alanın değerini nasıl alabilirim?
 

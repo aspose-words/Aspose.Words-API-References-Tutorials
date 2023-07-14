@@ -1,7 +1,7 @@
 ---
 title: Akıştan Lisansı Uygula
 linktitle: Akıştan Lisansı Uygula
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir akıştan nasıl lisans uygulayacağınızı öğrenin. Adım adım rehber
 type: docs
 weight: 10
@@ -16,7 +16,7 @@ Başlamadan önce, aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 - Aspose.Words için geçerli bir lisans dosyası.
 
 ## 1. Adım: Gerekli Ad Alanlarını İçe Aktarın
-Başlamak için gerekli ad alanlarını C# kodunuza alın. Bu ad alanları, Aspose.Words ile çalışmak için gereken sınıfları ve yöntemleri içerir.
+Başlamak için gerekli ad alanlarını C# kodunuza alın. Bu ad alanları, Aspose.Words ile Kelime İşleme için gerekli olan sınıfları ve yöntemleri içerir.
 
 ```csharp
 using Aspose.Words;

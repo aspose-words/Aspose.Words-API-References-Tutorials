@@ -1,7 +1,7 @@
 ---
 title: Сжатие изображений в документе PDF
 linktitle: Сжатие изображений в документе PDF
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по сжатию изображений в PDF-документе с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", save
 
  Создайте экземпляр`Document` класс, указывающий путь к документу Word.
 
- Создайте экземпляр`PdfSaveOptions` класс и установить`ImageCompression` собственность на`PdfImageCompression.Jpeg` использовать сжатие JPEG.
+ Создайте экземпляр`PdfSaveOptions`класс и установить`ImageCompression` собственность на`PdfImageCompression.Jpeg` использовать сжатие JPEG.
 
 Вы также можете установить другие параметры сжатия изображения, такие как качество JPEG, в соответствии с вашими потребностями.
 

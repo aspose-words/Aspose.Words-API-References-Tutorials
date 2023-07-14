@@ -1,7 +1,7 @@
 ---
 title: Convertir campos en documento
 linktitle: Convertir campos en documento
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para convertir campos de documentos a texto usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Paso 3: Cargue el documento
- Utilizar el`Document`clase de Aspose.Words para cargar el documento de Word que contiene los campos vinculados que desea convertir.
+ Utilizar el`Document` clase de Aspose.Words para cargar el documento de Word que contiene los campos vinculados que desea convertir.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");
@@ -40,7 +40,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f
 ```
 
 ## Paso 5: Guarde el documento transformado
- Utilizar el`Save()` para guardar el documento con los campos convertidos a texto en el directorio de documentos especificado.
+ Utilizar el`Save()`para guardar el documento con los campos convertidos a texto en el directorio de documentos especificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");

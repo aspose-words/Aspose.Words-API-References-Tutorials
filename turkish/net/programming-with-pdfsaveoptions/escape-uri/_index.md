@@ -1,7 +1,7 @@
 ---
 title: PDF Belgesinde Escape URI
 linktitle: PDF Belgesinde Escape URI
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Adım adım kılavuz Aspose.Words for .NET ile PDF Belgesinde URI'den Nasıl Çıkılır.
 type: docs
 weight: 10
@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. Adım: Bir belge ve bir DocumentBuilder oluşturun
 
- Ardından, yeni bir tane oluşturmamız gerekiyor`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için nesne.
+ Sonra, yeni bir tane oluşturmamız gerekiyor`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için nesne.
 
 ```csharp
 Document doc = new Document();

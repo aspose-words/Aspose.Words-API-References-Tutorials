@@ -1,7 +1,7 @@
 ---
 title: Riduci le dimensioni del PDF disabilitando i caratteri incorporati
 linktitle: Riduci le dimensioni del PDF disabilitando i caratteri incorporati
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come ridurre le dimensioni del PDF disabilitando l'incorporamento dei caratteri di Windows durante la conversione di documenti in PDF con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Assicurati di specificare il percorso corretto del documento.
 
 ## Passaggio 2: imposta le opzioni di salvataggio del PDF
 
-Crea un'istanza della classe PdfSaveOptions e specifica come incorporare i caratteri:
+Crea un'istanza della classe PdfSaveOptions e specifica come incorporare i font:
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
@@ -74,11 +74,11 @@ R: Per disabilitare l'incorporamento dei caratteri Windows in un documento PDF u
 
  Carica il documento che desideri convertire in PDF utilizzando il file`Document` classe e percorso del documento.
 
- Crea un'istanza di`PdfSaveOptions` classe e impostare il`FontEmbeddingMode` proprietà a`PdfFontEmbeddingMode.EmbedNone`. Ciò disabilita l'incorporamento dei caratteri Windows nel file PDF generato.
+ Crea un'istanza di`PdfSaveOptions`classe e impostare il`FontEmbeddingMode` proprietà a`PdfFontEmbeddingMode.EmbedNone`. Ciò disabilita l'incorporamento dei caratteri Windows nel file PDF generato.
 
  Usa il`Save` metodo del`Document` oggetto per convertire il documento in PDF specificando le opzioni di conversione configurate in precedenza.
 
-#### D: Quali sono i vantaggi della disabilitazione dell'incorporamento dei font di Windows in un documento PDF?
+#### D: Quali sono i vantaggi della disabilitazione dell'incorporamento dei caratteri di Windows in un documento PDF?
 R: I vantaggi della disabilitazione dell'incorporamento dei caratteri di Windows in un documento PDF sono:
 
 Dimensioni file PDF ridotte: disabilitando l'incorporamento dei caratteri Windows, i dati dei caratteri Windows incorporati vengono rimossi, riducendo le dimensioni del file PDF generato.

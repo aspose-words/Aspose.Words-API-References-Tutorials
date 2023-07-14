@@ -1,7 +1,7 @@
 ---
 title: Eliminar sección
 linktitle: Eliminar sección
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenda a eliminar una sección específica de un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Insertar campo de formulario de entrada de texto
 linktitle: Insertar campo de formulario de entrada de texto
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a usar Aspose.Words para .NET para insertar un campo de formulario de entrada de texto en documentos de Word con esta guía paso a paso.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Göreceli Yatay veya Dikey Konumu Ayarla
 linktitle: Göreceli Yatay veya Dikey Konumu Ayarla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesindeki bir tablonun göreli yatay veya dikey konumunu nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tabl
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## 2. Adım: Belgeyi yükleme
-Belgeyle çalışmaya başlamak için şu adımları izleyin:
+Sözcük İşlemeyi belgeyle başlatmak için şu adımları izleyin:
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//belgeyi yükle
+// belgeyi yükle
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
@@ -55,7 +55,7 @@ doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ### Aspose.Words for .NET kullanarak Göreceli Yatay Veya Dikey Konum Belirlemek için örnek kaynak kodu 
 
 ```csharp
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");

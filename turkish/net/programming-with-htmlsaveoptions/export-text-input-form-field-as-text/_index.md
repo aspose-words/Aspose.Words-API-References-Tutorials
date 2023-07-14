@@ -1,7 +1,7 @@
 ---
 title: Metin Giriş Formu Alanını Metin Olarak Dışa Aktar
 linktitle: Metin Giriş Formu Alanını Metin Olarak Dışa Aktar
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Metin giriş formu alanlarını Aspose.Words for .NET ile düz metin olarak dışa aktarmak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ Bu kod, metin giriş formu alanlarını düz metin olarak dışa aktararak belge
 
 	Directory.CreateDirectory(imagesDir);
 
-	// Form alanlarını HTML giriş öğeleri olarak değil, düz metin olarak dışa aktarma seçeneğini belirleyin.
+	// Form alanlarını HTML giriş öğeleri olarak değil, düz metin olarak dışa aktarma seçeneğini ayarlayın.
 	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 	{
 		ExportTextInputFormFieldAsText = true, ImagesFolder = imagesDir

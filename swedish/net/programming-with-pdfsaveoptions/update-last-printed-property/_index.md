@@ -1,7 +1,7 @@
 ---
 title: Uppdatera senast utskrivna egenskap i PDF-dokument
 linktitle: Uppdatera senast utskrivna egenskap i PDF-dokument
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att uppdatera egenskapen "Senast utskriven" vid konvertering till PDF med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ S: För att uppdatera egenskapen "Last Printed" i ett PDF-dokument med Aspose.Wo
 
  Skapa en instans av`Document` klass som anger sökvägen till Word-dokumentet.
 
- Skapa en instans av`PdfSaveOptions` klass och ställ in`UpdateLastPrintedProperty` egendom till`true` för att möjliggöra uppdatering av egenskapen "Senast utskriven".
+ Skapa en instans av`PdfSaveOptions`klass och ställ in`UpdateLastPrintedProperty` egendom till`true` för att möjliggöra uppdatering av egenskapen "Senast utskriven".
 
  Använd`Save` metod för`Document`klass för att spara dokumentet i PDF-format genom att ange sparalternativ.
 

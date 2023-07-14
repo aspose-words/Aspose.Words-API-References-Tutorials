@@ -1,7 +1,7 @@
 ---
 title: Tüm Bölümleri Sil
 linktitle: Tüm Bölümleri Sil
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki tüm bölümleri nasıl kaldıracağınızı öğrenin.
 type: docs
 weight: 10

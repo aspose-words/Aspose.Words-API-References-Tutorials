@@ -1,7 +1,7 @@
 ---
 title: Olika sidinställningar
 linktitle: Olika sidinställningar
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till ett dokument med olika sidinställningar med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Ställ in sidinställningar för källdokumentet
 
- Justera sidinställningarna för källdokumentet för att säkerställa korrekt fortsättning och numrering. I det här exemplet ställer vi in avsnittets början till`SectionStart.Continuous` och starta om sidnumreringen. Vi ser också till att sidbredden, höjden och orienteringen matchar den sista delen av måldokumentet.
+Justera sidinställningarna för källdokumentet för att säkerställa korrekt fortsättning och numrering. I det här exemplet ställer vi in avsnittets början till`SectionStart.Continuous` och starta om sidnumreringen. Vi ser också till att sidbredden, höjden och orienteringen matchar den sista delen av måldokumentet.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Steg 4: Ändra styckeformatering
 
-För att bibehålla korrekt formatering, iterera igenom alla stycken i källdokumentet och ställ in`KeepWithNext` egendom till`true`. Detta säkerställer att stycken håller ihop under bifogningsprocessen.
+ För att bibehålla korrekt formatering, iterera igenom alla stycken i källdokumentet och ställ in`KeepWithNext` egendom till`true`. Detta säkerställer att stycken håller ihop under bifogningsprocessen.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -74,19 +74,19 @@ Detta slutför implementeringen av att lägga till ett dokument med olika sidins
 ### Exempel på källkod för Different Page Setup med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Ställ in källdokumentet att fortsätta direkt efter slutet av måldokumentet.
+	//Ställ in källdokumentet att fortsätta direkt efter slutet av måldokumentet.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Starta om sidnumreringen i början av källdokumentet.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// För att säkerställa att detta inte händer när källdokumentet har andra sidinställningar, se till att
 	// inställningarna är identiska mellan den sista delen av måldokumentet.
-	//Om det finns ytterligare fortlöpande avsnitt som följer i källdokumentet,
+	// Om det finns ytterligare fortlöpande avsnitt som följer i källdokumentet,
 	// detta måste upprepas för dessa avsnitt.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;

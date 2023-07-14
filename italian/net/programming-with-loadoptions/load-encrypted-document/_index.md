@@ -1,14 +1,14 @@
 ---
 title: Carica documento crittografato
 linktitle: Carica documento crittografato
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come caricare e salvare documenti crittografati con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/load-encrypted-document/
 ---
 
-Quando si lavora con documenti crittografati in un'applicazione C#, è importante poterli caricare correttamente fornendo la password corretta. Con la libreria Aspose.Words per .NET, puoi caricare facilmente documenti crittografati utilizzando le opzioni di caricamento appropriate. In questa guida dettagliata, ti mostreremo come utilizzare il codice sorgente C# di Aspose.Words per .NET per caricare un documento crittografato utilizzando le opzioni di caricamento LoadOptions.
+Durante l'elaborazione di testi con documenti crittografati in un'applicazione C#, è importante essere in grado di caricarli correttamente fornendo la password corretta. Con la libreria Aspose.Words per .NET, puoi caricare facilmente documenti crittografati utilizzando le opzioni di caricamento appropriate. In questa guida dettagliata, ti mostreremo come utilizzare il codice sorgente C# di Aspose.Words per .NET per caricare un documento crittografato utilizzando le opzioni di caricamento LoadOptions.
 
 ## Comprensione della libreria Aspose.Words
 

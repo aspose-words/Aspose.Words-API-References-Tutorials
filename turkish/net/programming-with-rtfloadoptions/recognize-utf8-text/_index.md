@@ -1,7 +1,7 @@
 ---
 title: Utf8 Metnini Tanıyın
 linktitle: Utf8 Metnini Tanıyın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile RTF belgelerindeki Utf-8 karakterlerini nasıl tanıyacağınızı öğrenin. Veri bütünlüğünü sağlayın.
 type: docs
 weight: 10
@@ -67,4 +67,4 @@ Bu öğreticide, Aspose.Words for .NET'te RTF yükleme seçenekleriyle Utf-8 met
 
 Bu özellik, RTF belgelerinizde Utf-8 karakterlerinin doğru görüntülenmesini sağlamak için gereklidir. Aspose.Words, uygun yükleme seçeneklerini yapılandırarak bu karakterleri doğru bir şekilde tanıyıp işleyebilir ve metnin bütünlüğünün ve kalitesinin korunmasına yardımcı olur.
 
-Utf-8 metin tanıma, Utf-8 kodlama desteği gerektiren belirli diller ve karakter kümeleriyle çalışırken özellikle önemlidir. Aspose.Words for .NET sayesinde Utf-8 karakterlerini içeren RTF belgelerini kayıp veya bozulma riski olmadan kolayca işleyebilirsiniz.
+Utf-8 metin tanıma, Utf-8 kodlama desteği gerektiren belirli diller ve karakter kümeleriyle Sözcük İşleme yaparken özellikle önemlidir. Aspose.Words for .NET sayesinde Utf-8 karakterlerini içeren RTF belgelerini kayıp veya bozulma riski olmadan kolayca işleyebilirsiniz.

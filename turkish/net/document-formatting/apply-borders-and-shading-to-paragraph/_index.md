@@ -1,7 +1,7 @@
 ---
 title: Paragrafa Kenarlıklar ve Gölgelendirme Uygula
 linktitle: Paragrafa Kenarlıklar ve Gölgelendirme Uygula
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir paragrafa kenarlık ve gölgeleme uygulamayı öğrenin.
 type: docs
 weight: 10

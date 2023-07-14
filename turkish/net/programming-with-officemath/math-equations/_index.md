@@ -1,7 +1,7 @@
 ---
 title: Matematik Denklemleri
 linktitle: Matematik Denklemleri
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerinize nasıl matematik denklemleri ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ Aspose.Words for .NET, bir C# uygulamasında Word belgeleri oluşturmak, düzenl
 
 ## Aspose.Words kitaplığını anlama
 
-Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle çalışmayı kolay ve verimli hale getiren popüler bir kitaplıktır. Matematiksel denklemler için destek de dahil olmak üzere Word belgeleri oluşturmak, düzenlemek ve değiştirmek için çok çeşitli özellikler sunar.
+Koda dalmadan önce, .NET için Aspose.Words kitaplığını anlamak önemlidir. Aspose.Words, Word belgeleriyle Kelime İşlemeyi kolay ve verimli hale getiren popüler bir kütüphanedir. Matematiksel denklemler için destek de dahil olmak üzere Word belgeleri oluşturmak, düzenlemek ve değiştirmek için çok çeşitli özellikler sunar.
 
 ## Word belgesini yükleme
 
@@ -86,4 +86,4 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 
 ## Çözüm
 
-Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesine matematik denklemleri eklemek için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Sağlanan adımları izleyerek, C# uygulamanızda Word belgelerinize kolayca matematik denklemleri ekleyebilirsiniz. Aspose.Words, matematiksel denklemlerle çalışmak için muazzam bir esneklik ve güç sunarak profesyonel, iyi biçimlendirilmiş belgeler oluşturmanıza olanak tanır.
+Bu kılavuzda, sağlanan C# kaynak kodunu kullanarak bir Word belgesine matematik denklemleri eklemek için Aspose.Words for .NET'in nasıl kullanılacağını ele aldık. Sağlanan adımları izleyerek, C# uygulamanızda Word belgelerinize kolayca matematik denklemleri ekleyebilirsiniz. Aspose.Words, profesyonel, iyi biçimlendirilmiş belgeler oluşturmanıza izin vererek matematiksel denklemlerle Kelime İşleme için muazzam esneklik ve güç sunar.

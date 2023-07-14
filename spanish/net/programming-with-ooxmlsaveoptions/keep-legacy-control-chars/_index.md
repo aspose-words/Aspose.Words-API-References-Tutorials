@@ -1,7 +1,7 @@
 ---
 title: Conservar caracteres de control heredados
 linktitle: Conservar caracteres de control heredados
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a conservar los caracteres de control heredados al guardar un documento con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Ahora puede ejecutar el código fuente para conservar los caracteres de control 
 ### Ejemplo de código fuente para Keep Legacy Control Chars usando Aspose.Words para .NET 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Legacy control character.doc");
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 En este tutorial, exploramos la funcionalidad de conservar los caracteres de control heredados al guardar un documento con Aspose.Words para .NET. Hemos aprendido a conservar esos caracteres especiales que pueden ser importantes para el formato o la visualización adecuados del documento.
 
- Conservar los caracteres de control heredados es especialmente útil cuando se trabaja con documentos que utilizan funciones más antiguas o específicas, como los caracteres de control especiales. Al habilitar el`KeepLegacyControlChars`opción al guardar el documento, se asegura de que se conserven estos caracteres.
+ Conservar los caracteres de control heredados es especialmente útil cuando se utiliza el procesamiento de textos con documentos que utilizan funciones más antiguas o específicas, como los caracteres de control especiales. Al habilitar el`KeepLegacyControlChars`opción al guardar el documento, se asegura de que se conserven estos caracteres.
 
 Aspose.Words para .NET ofrece una gama de opciones de respaldo flexibles y potentes para satisfacer sus necesidades de manipulación de documentos. Mediante el uso de las opciones adecuadas, puede personalizar el proceso de copia de seguridad para conservar las características específicas de sus documentos.
 

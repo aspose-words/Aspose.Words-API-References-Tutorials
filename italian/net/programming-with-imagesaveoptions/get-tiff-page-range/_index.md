@@ -1,7 +1,7 @@
 ---
 title: Ottieni l'intervallo di pagine Tiff
 linktitle: Ottieni l'intervallo di pagine Tiff
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come estrarre una serie di pagine TIFF con Aspose.Words per .NET. Tutorial completo per file TIFF personalizzati.
 type: docs
 weight: 10
@@ -60,7 +60,7 @@ Ora puoi eseguire il codice sorgente per ottenere un intervallo specifico di pag
 
 ```csharp 
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

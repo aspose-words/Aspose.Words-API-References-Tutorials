@@ -1,7 +1,7 @@
 ---
 title: Açılan Kutu İçeriği Kontrolü
 linktitle: Açılan Kutu İçeriği Kontrolü
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir Word belgesinde Birleşik Giriş Kutusu İçerik Kontrolü oluşturmayı öğrenin.
 type: docs
 weight: 10
@@ -14,10 +14,10 @@ Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesinde Birleşik
 Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
 - Aspose.Words for .NET kitaplığı yüklendi.
-- Temel C# bilgisi ve Word belgeleriyle çalışma.
+- Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini kurun
- Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile.
+ Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## 3. Adım: Açılan Kutuya Öğeler Ekleyin
- kullanarak birleşik giriş kutusuna öğe ekleyin.`ListItems` mülkiyeti`StructuredDocumentTag` Her öğe bir ile temsil edilir`SdtListItem` bir görüntüleme metni ve bir değer alan nesne. Bu örnekte, açılan kutuya üç öğe ekliyoruz.
+ kullanarak birleşik giriş kutusuna öğe ekleyin.`ListItems`mülkiyeti`StructuredDocumentTag` Her öğe bir ile temsil edilir`SdtListItem` bir görüntüleme metni ve bir değer alan nesne. Bu örnekte, açılan kutuya üç öğe ekliyoruz.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ### Aspose.Words for .NET kullanan Combo Box Content Control için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Maddeli liste
 linktitle: Maddeli liste
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile madde işaretli liste oluşturmayı öğrenin Adım adım kılavuz.
 type: docs
 weight: 10

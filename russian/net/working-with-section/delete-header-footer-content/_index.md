@@ -1,7 +1,7 @@
 ---
 title: Удалить содержимое нижнего колонтитула
 linktitle: Удалить содержимое нижнего колонтитула
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: В этом руководстве вы узнаете, как удалить содержимое верхнего и нижнего колонтитула из документа Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Далее мы загрузим документ Word в экземпляр`Document` сорт. Мы получим доступ к первому разделу документа, используя индекс 0.
 
 ```csharp
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Document.docx");
 
 // Доступ к разделу
@@ -46,7 +46,7 @@ section.ClearHeadersFooters();
 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -74,7 +74,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A: Чтобы загрузить документ Word в экземпляр`Document` класс называется`doc` и получить доступ к первому разделу документа, используя индекс 0, вы можете использовать следующий код:
 
 ```csharp
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Document.docx");
 
 // Доступ к разделу

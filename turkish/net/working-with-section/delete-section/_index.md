@@ -1,7 +1,7 @@
 ---
 title: Bölümü Sil
 linktitle: Bölümü Sil
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinden belirli bir bölümün nasıl kaldırılacağını öğrenin.
 type: docs
 weight: 10

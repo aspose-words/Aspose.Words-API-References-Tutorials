@@ -1,7 +1,7 @@
 ---
 title: Вставить документ с помощью Builder
 linktitle: Вставить документ с помощью Builder
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как вставить документ в конец другого документа с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -67,7 +67,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilde
 ### Пример исходного кода для вставки документа с помощью Builder с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

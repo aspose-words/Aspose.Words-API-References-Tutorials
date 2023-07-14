@@ -1,7 +1,7 @@
 ---
 title: Få information om revisionsgruppen
 linktitle: Få information om revisionsgruppen
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Få detaljer om revisionsgrupp i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### F: Hur kontrollerar man om en revision tillhör en grupp i Aspose.Words för .NET?
 
- A: Använd`Group` egendom av`Revision` objekt för att kontrollera om en revision tillhör en grupp. Om`Group` egendom är`null`betyder det att revisionen inte tillhör någon grupp.
+ A: Använd`Group`egendom av`Revision` objekt för att kontrollera om en revision tillhör en grupp. Om`Group` egendom är`null`betyder det att revisionen inte tillhör någon grupp.
 
 ```csharp
 if (revision.Group != null)

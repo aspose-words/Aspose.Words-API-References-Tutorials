@@ -1,7 +1,7 @@
 ---
 title: Перезапустить нумерацию страниц
 linktitle: Перезапустить нумерацию страниц
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как перезапустить нумерацию страниц при объединении и добавлении документов Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/restart-page-numbering/
 
 ## Шаг 1: Инициализируйте каталоги документов
 
- Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir` переменная на путь, где находятся ваши документы.
+ Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir`переменная на путь, где находятся ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,7 +65,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.RestartPageNumbering.docx");
  
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

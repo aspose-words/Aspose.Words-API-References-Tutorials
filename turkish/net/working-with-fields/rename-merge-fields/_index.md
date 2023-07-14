@@ -1,7 +1,7 @@
 ---
 title: Birleştirme Alanlarını Yeniden Adlandırın
 linktitle: Birleştirme Alanlarını Yeniden Adlandırın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu öğreticide, Aspose.Words for .NET kullanarak bir belgedeki birleştirme alanlarını nasıl yeniden adlandıracağınızı öğreneceksiniz.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Inserisci campi nidificati
 linktitle: Inserisci campi nidificati
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire facilmente campi nidificati nei tuoi documenti Word con Aspose.Words per .NET.
 type: docs
 weight: 10

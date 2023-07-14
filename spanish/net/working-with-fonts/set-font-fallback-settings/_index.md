@@ -1,7 +1,7 @@
 ---
 title: Establecer la configuración de reserva de fuentes
 linktitle: Establecer la configuración de reserva de fuentes
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a establecer la configuración de sustitución de fuentes en Aspose.Words para .NET y personalizar la sustitución de fuentes en sus documentos de Word.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 ### Ejemplo de código fuente para establecer la configuración de reserva de fuentes mediante Aspose.Words para .NET 
 ```csharp
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

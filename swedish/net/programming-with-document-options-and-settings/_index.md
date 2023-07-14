@@ -1,13 +1,13 @@
 ---
-title: Programmering med dokumentalternativ och inställningar
-linktitle: Programmering med dokumentalternativ och inställningar
-second_title: Aspose.Words för .NET API Referens
+title: Ordbehandling med dokumentalternativ och inställningar
+linktitle: Ordbehandling med dokumentalternativ och inställningar
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du använder dokumentalternativ och inställningar för att anpassa och kontrollera beteendet hos Word-dokument med Aspose.Words för .NET. Handledningarna guidar dig genom de olika funktionerna såsom dokumentegenskaper.
 type: docs
 weight: 1510
 url: /sv/net/programming-with-document-options-and-settings/
 ---
-Handledningarna för Aspose.Words för .NET "Programmering med dokumentalternativ och inställningar" leder dig genom de olika funktionerna och teknikerna för att manipulera dokumentalternativ och inställningar i Aspose.Words för .NET. Dessa handledningar hjälper dig att förstå hur du anpassar uppladdningsinställningar, hanterar teckensnitt, dokumentformat, mallar och mer.
+Handledningarna i Aspose.Words för .NET "Ordbehandling med dokumentalternativ och inställningar" leder dig genom de olika funktionerna och teknikerna för att manipulera dokumentalternativ och inställningar i Aspose.Words för .NET. Dessa handledningar hjälper dig att förstå hur du anpassar uppladdningsinställningar, hanterar teckensnitt, dokumentformat, mallar och mer.
 
 Handledningarna förklarar hur du anpassar alternativen för dokumentladdning. Du kommer att lära dig hur du anger laddningsparametrar som teckensnittshantering, länkupplösning, prestandaoptimering, etc. Dessa alternativ låter dig kontrollera dokumentladdningsbeteendet exakt och optimera prestandan för din applikation.
 

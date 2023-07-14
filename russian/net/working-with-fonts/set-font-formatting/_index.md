@@ -1,7 +1,7 @@
 ---
 title: Установить форматирование шрифта
 linktitle: Установить форматирование шрифта
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как настроить форматирование шрифта в документе Word с помощью Aspose.Words для .NET и создавать привлекательные документы.
 type: docs
 weight: 10
@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Шаг 2: Создайте и отформатируйте документ
- Создайте экземпляр`Document` класс и`DocumentBuilder` класс для создания документа. Использовать`Font` собственность`DocumentBuilder` для доступа к свойствам форматирования шрифта.
+ Создайте экземпляр`Document` класс и`DocumentBuilder` класс для создания документа. Использовать`Font`собственность`DocumentBuilder` для доступа к свойствам форматирования шрифта.
 
 ```csharp
 Document doc = new Document();
@@ -45,10 +45,10 @@ builder.Writeln("I'm a very nicely formatted string.");
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
 ```
 
-### Пример исходного кода для настройки форматирования шрифта с использованием Aspose.Words для .NET 
+### Пример исходного кода для установки форматирования шрифта с использованием Aspose.Words для .NET 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

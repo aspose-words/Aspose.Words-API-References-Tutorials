@@ -1,7 +1,7 @@
 ---
 title: Ställ in ryska som standardredigeringsspråk
 linktitle: Ställ in ryska som standardredigeringsspråk
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att ställa in ryska som standardredigeringsspråk för ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Основные преобразования
 linktitle: Основные преобразования
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Изучите основные преобразования с помощью Aspose.Words для .NET. Легко конвертируйте документы Word в другие форматы, такие как PDF, HTML, RTF и другие.
 type: docs
 weight: 1600

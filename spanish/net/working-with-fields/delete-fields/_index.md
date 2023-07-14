@@ -1,7 +1,7 @@
 ---
 title: Eliminar campos
 linktitle: Eliminar campos
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para eliminar campos de combinación en sus documentos de Word utilizando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ Esto es particularmente útil si desea mantener solo el contenido estático y el
 // La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Cargar documento existente.
+// Cargar documento existente.
 Document doc = new Document(dataDir + "YourDocument.docx");
 
 // Eliminar campos de combinación.

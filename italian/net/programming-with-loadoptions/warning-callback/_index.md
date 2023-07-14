@@ -1,14 +1,14 @@
 ---
 title: Avviso richiamata
 linktitle: Avviso richiamata
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come gestire gli avvisi durante il caricamento di un documento Word utilizzando la funzionalità di richiamata con Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/warning-callback/
 ---
 
-Quando si lavora con documenti Word in un'applicazione C#, può essere utile essere a conoscenza degli avvisi emessi durante il caricamento del documento. Con la libreria Aspose.Words per .NET, puoi facilmente specificare una funzione di callback per gestire gli avvisi durante il caricamento del documento utilizzando le opzioni di caricamento LoadOptions. In questa guida dettagliata, ti illustreremo come utilizzare Aspose.Words per il codice sorgente .NET C# per caricare un documento utilizzando una funzione di callback per gli avvisi utilizzando le opzioni di caricamento LoadOptions.
+Durante l'elaborazione di testi con documenti Word in un'applicazione C#, può essere utile essere a conoscenza degli avvisi emessi durante il caricamento del documento. Con la libreria Aspose.Words per .NET, puoi facilmente specificare una funzione di callback per gestire gli avvisi durante il caricamento del documento utilizzando le opzioni di caricamento LoadOptions. In questa guida dettagliata, ti illustreremo come utilizzare Aspose.Words per il codice sorgente .NET C# per caricare un documento utilizzando una funzione di callback per gli avvisi utilizzando le opzioni di caricamento LoadOptions.
 
 ## Comprensione della libreria Aspose.Words
 

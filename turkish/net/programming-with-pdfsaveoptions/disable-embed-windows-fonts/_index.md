@@ -1,7 +1,7 @@
 ---
 title: Katıştırılmış Yazı Tiplerini Devre Dışı Bırakarak PDF Boyutunu Küçültün
 linktitle: Katıştırılmış Yazı Tiplerini Devre Dışı Bırakarak PDF Boyutunu Küçültün
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Belgeleri Aspose.Words for .NET ile PDF'ye dönüştürürken Windows font gömmeyi devre dışı bırakarak PDF boyutunu nasıl küçülteceğinizi öğrenin.
 type: docs
 weight: 10
@@ -74,7 +74,7 @@ A: Aspose.Words for .NET kullanarak Windows yazı tiplerini bir PDF belgesine g�
 
  kullanarak PDF'ye dönüştürmek istediğiniz belgeyi yükleyin.`Document` sınıf ve belge yolu.
 
- örneğini oluşturun`PdfSaveOptions` sınıflandırın ve ayarlayın`FontEmbeddingMode` mülkiyet`PdfFontEmbeddingMode.EmbedNone`. Bu, Windows yazı tiplerinin oluşturulan PDF dosyasına gömülmesini devre dışı bırakır.
+ örneğini oluşturun`PdfSaveOptions`sınıflandırın ve ayarlayın`FontEmbeddingMode` mülkiyet`PdfFontEmbeddingMode.EmbedNone`. Bu, Windows yazı tiplerinin oluşturulan PDF dosyasına gömülmesini devre dışı bırakır.
 
  Kullan`Save` yöntemi`Document` Daha önce yapılandırılan dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürmek için nesne.
 

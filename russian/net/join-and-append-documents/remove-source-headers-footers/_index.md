@@ -1,7 +1,7 @@
 ---
 title: Удалить нижние колонтитулы исходных заголовков
 linktitle: Удалить нижние колонтитулы исходных заголовков
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как удалять верхние и нижние колонтитулы при присоединении и добавлении документов Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/remove-source-headers-footers/
 
 ## Шаг 1: Инициализируйте каталоги документов
 
- Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir` переменная на путь, где находятся ваши документы.
+ Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir`переменная на путь, где находятся ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -47,7 +47,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## Шаг 4. Отключите настройку «LinkToPrevious» для HeadersFooters.
 
-Даже после очистки верхних и нижних колонтитулов исходного документа существует вероятность того, что параметр «LinkToPrevious» для`HeadersFooters` еще можно поставить. Чтобы избежать такого поведения, вам нужно явно установить его в`false` для первой секции`HeadersFooters` свойство.
+ Даже после очистки верхних и нижних колонтитулов исходного документа существует вероятность того, что параметр «LinkToPrevious» для`HeadersFooters` еще можно поставить. Чтобы избежать такого поведения, вам нужно явно установить его в`false` для первой секции`HeadersFooters` свойство.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -75,7 +75,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

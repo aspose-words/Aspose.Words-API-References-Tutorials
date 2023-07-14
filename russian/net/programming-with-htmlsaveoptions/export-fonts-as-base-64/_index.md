@@ -1,7 +1,7 @@
 ---
 title: Экспорт шрифтов в формате Base 64
 linktitle: Экспорт шрифтов в формате Base 64
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по экспорту шрифтов base 64 при сохранении документа с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

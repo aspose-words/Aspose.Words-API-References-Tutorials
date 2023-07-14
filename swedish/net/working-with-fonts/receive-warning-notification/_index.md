@@ -1,7 +1,7 @@
 ---
 title: Ta emot varningsmeddelande
 linktitle: Ta emot varningsmeddelande
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du får ett varningsmeddelande när du använder Aspose.Words för .NET och hanterar eventuella problem eller varningar i dina dokument.
 type: docs
 weight: 10
@@ -32,7 +32,7 @@ doc. WarningCallback = callback;
 ```
 
 ## Steg 3: Uppdatera layouten och spara dokumentet
- Uppdatera dokumentlayouten genom att anropa`UpdatePageLayout()` metod. Detta kommer att utlösa varningarna, om några. Spara sedan dokumentet.
+ Uppdatera dokumentlayouten genom att anropa`UpdatePageLayout()` metod. Detta utlöser eventuella varningar. Spara sedan dokumentet.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -43,7 +43,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

@@ -1,7 +1,7 @@
 ---
 title: Crear tabla sencilla
 linktitle: Crear tabla sencilla
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a crear una tabla simple en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -78,7 +78,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ### Ejemplo de código fuente para Create Simple Table usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Imposta la formattazione delle celle della tabella
 linktitle: Imposta la formattazione delle celle della tabella
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata all'impostazione della formattazione delle celle della tabella utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableC
 ### Codice sorgente di esempio per impostare la formattazione delle celle della tabella utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

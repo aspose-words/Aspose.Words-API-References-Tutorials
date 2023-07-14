@@ -1,7 +1,7 @@
 ---
 title: Expandir formato en celdas y fila desde estilo
 linktitle: Expandir formato en celdas y fila desde estilo
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para expandir el formato a celdas y filas desde un estilo de tabla usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -12,7 +12,7 @@ En este tutorial, lo guiaremos a través del proceso paso a paso para expandir e
 
 
 ## Paso 1: Definir el directorio de documentos
-Primero, debe establecer la ruta a su directorio de documentos. Aquí es donde se encuentra su documento de Word. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
+Primero, debe establecer la ruta a su directorio de documentos. Aquí es donde se encuentra su documento de Word. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta apropiada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -33,7 +33,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Cell firstCell = table.FirstRow.FirstCell;
 ```
 
-## Paso 4: Mostrar formato de celda inicial
+## Paso 4: mostrar el formato de celda inicial
 Antes de expandir los estilos de la tabla, mostramos el color de fondo actual de la celda. Debe estar vacío porque el formato actual se almacena en el estilo de la tabla.
 
 ```csharp
@@ -61,7 +61,7 @@ Shading the cell after style expansion: " + cellShadingAfter);
 ### Ejemplo de código fuente para expandir formato en celdas y filas desde estilo usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

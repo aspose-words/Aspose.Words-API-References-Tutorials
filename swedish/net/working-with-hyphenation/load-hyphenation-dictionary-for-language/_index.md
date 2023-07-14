@@ -1,7 +1,7 @@
 ---
 title: Ladda avstavningsordbok för språk
 linktitle: Ladda avstavningsordbok för språk
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du laddar en avstavningsordbok för ett specifikt språk i Aspose.Words för .NET.
 type: docs
 weight: 10

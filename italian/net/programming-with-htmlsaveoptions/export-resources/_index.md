@@ -1,7 +1,7 @@
 ---
 title: Esporta risorse
 linktitle: Esporta risorse
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per esportare le risorse del documento durante il salvataggio come HTML con Aspose.Words per .NET.
 type: docs
 weight: 10

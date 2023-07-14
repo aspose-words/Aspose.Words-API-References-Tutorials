@@ -1,7 +1,7 @@
 ---
 title: Active XControl Özelliklerini Word Dosyasından Okuyun
 linktitle: Active XControl Özelliklerini Word Dosyasından Okuyun
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word dosyasındaki ActiveX kontrollerinin özelliklerini okuyun.
 type: docs
 weight: 10
@@ -86,7 +86,7 @@ Aspose.Words for .NET kullanarak ActiveX kontrollerinin özelliklerini okumak i�
 
 Bu kılavuz, Aspose.Words for .NET kullanarak bir Word dosyasındaki ActiveX kontrollerinin özelliklerini nasıl okuyacağınızı gösterdi. Açıklanan adımları izleyerek belgeyi başlatabilir, ActiveX denetimlerini alabilir ve özelliklerini okuyabilirsiniz. Sağlanan örnek kodu başlangıç noktası olarak kullanın ve kendi özel ihtiyaçlarınıza göre özelleştirin.
 
-ActiveX denetimlerinin özelliklerini okumak, bu denetimleri içeren Word dosyalarınızdan önemli bilgileri ayıklamanıza olanak tanır. Aspose.Words for .NET, ActiveX kontrolleriyle çalışmak ve belge işlemenizi otomatikleştirmek için güçlü özellikler sunar.
+ActiveX denetimlerinin özelliklerini okumak, bu denetimleri içeren Word dosyalarınızdan önemli bilgileri ayıklamanıza olanak tanır. Aspose.Words for .NET, ActiveX kontrolleriyle Kelime İşleme ve belge işlemenizi otomatikleştirme için güçlü özellikler sunar.
 
 ### SSS
 

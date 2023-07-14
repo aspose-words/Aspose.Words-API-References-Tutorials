@@ -1,7 +1,7 @@
 ---
 title: Mostra le revisioni nei fumetti
 linktitle: Mostra le revisioni nei fumetti
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Mostra le revisioni nei fumetti con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### D: Come visualizzare le revisioni nei fumetti con Aspose.Words per .NET?
 
- R: Usa il`ShowInBalloons` proprietà del`RevisionOptions` oggetto per configurare la visualizzazione delle revisioni nei fumetti. Puoi impostare questa proprietà su`ShowInBalloons.FormatAndDelete` per mostrare le revisioni nei fumetti con l'eliminazione e le revisioni di formattazione.
+ R: Usa il`ShowInBalloons`proprietà del`RevisionOptions` oggetto per configurare la visualizzazione delle revisioni nei fumetti. Puoi impostare questa proprietà su`ShowInBalloons.FormatAndDelete` per mostrare le revisioni nei fumetti con l'eliminazione e le revisioni di formattazione.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

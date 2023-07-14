@@ -1,7 +1,7 @@
 ---
 title: Resurs Steam Font Källa Exempel
 linktitle: Resurs Steam Font Källa Exempel
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du använder Resource Stream Font Source för att ladda anpassade typsnitt till Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ### Exempel på källkod för Resource Steam Font Source Exempel med Aspose.Words för .NET 
 
 ```csharp
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

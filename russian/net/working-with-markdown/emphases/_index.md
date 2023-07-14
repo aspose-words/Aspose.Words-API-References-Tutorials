@@ -1,7 +1,7 @@
 ---
 title: Акценты
 linktitle: Акценты
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как использовать выделение (жирный шрифт и курсив) в Aspose.Words для .NET. Пошаговое руководство.
 type: docs
 weight: 10

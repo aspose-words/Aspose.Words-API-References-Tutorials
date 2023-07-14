@@ -1,7 +1,7 @@
 ---
 title: Insertar objeto antiguo en documento de Word
 linktitle: Insertar objeto antiguo en documento de Word
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a insertar un objeto OLE en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10

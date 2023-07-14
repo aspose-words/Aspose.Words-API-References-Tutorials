@@ -1,7 +1,7 @@
 ---
 title: Индекс поиска
 linktitle: Индекс поиска
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как найти индексы таблиц, строк и ячеек в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ url: /ru/net/programming-with-tables/finding-index/
 2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
 
 ## Шаг 2: Загрузка документа и доступ к таблице
-Чтобы начать работу с таблицей, нам нужно загрузить содержащий ее документ и получить к нему доступ. Следуй этим шагам:
+Чтобы запустить Word Processing с таблицей, нам нужно загрузить содержащий ее документ и получить к нему доступ. Следуй этим шагам:
 
 ```csharp
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Доступ к массиву
@@ -54,7 +54,7 @@ Console.WriteLine("\nCell index is " + cellIndex);
 ### Пример исходного кода для поиска индекса с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

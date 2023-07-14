@@ -1,7 +1,7 @@
 ---
 title: Ripeti le righe nelle pagine successive
 linktitle: Ripeti le righe nelle pagine successive
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come ripetere le righe della tabella nelle pagine successive in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In questo tutorial impareremo come ripetere le righe di una tabella nelle pagine
 2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: creazione del documento e inizializzazione del generatore di documenti
-Per iniziare a lavorare con il documento e il generatore di documenti, attenersi alla seguente procedura:
+Per avviare l'elaborazione di testi con il documento e il generatore di documenti, attenersi alla seguente procedura:
 
 ```csharp
 // Percorso della directory dei documenti
@@ -87,7 +87,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ### Esempio di codice sorgente per Ripeti righe nelle pagine successive utilizzando Aspose.Words per .NET 
 
 ```csharp
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

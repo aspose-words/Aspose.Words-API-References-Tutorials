@@ -1,7 +1,7 @@
 ---
 title: Metin Başlığı
 linktitle: Metin Başlığı
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET Adım adım kılavuz ile belgelerinizi biçimlendirmek için Setext başlıklarını nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
@@ -114,4 +114,4 @@ C: Standart Markdown'da Setex Markdown başlıklarının görünümünü özelle
 
 #### S: Setex Markdown başlıkları tüm Markdown editörleri tarafından destekleniyor mu?
 
-Y: Setex Markdown başlıkları desteği, Markdown editörleri arasında farklılık gösterebilir. Emin olmak için yayıncınızın özel belgelerini kontrol edin.
+Y: Setex Markdown başlıkları desteği, Markdown editörleri arasında değişiklik gösterebilir. Emin olmak için yayıncınızın özel belgelerini kontrol edin.

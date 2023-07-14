@@ -1,14 +1,14 @@
 ---
 title: Öppna Typfunktioner
 linktitle: Öppna Typfunktioner
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du aktiverar och använder Open Type-funktioner i Aspose.Words för .NET
 type: docs
 weight: 10
 url: /sv/net/enable-opentype-features/open-type-features/
 ---
 
-I den här omfattande handledningen kommer du att lära dig hur du aktiverar och använder Open Type-funktioner i Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna arbeta med Open Type-funktioner i dina Word-dokument.
+den här omfattande handledningen kommer du att lära dig hur du aktiverar och använder Open Type-funktioner i Aspose.Words för .NET. Vi guidar dig genom processen och förser dig med nödvändiga C#-kodavsnitt. I slutet av den här guiden kommer du att kunna arbeta med Open Type-funktioner i dina Word-dokument.
 
 ## Förutsättningar
 Innan vi börjar, se till att du har följande förutsättningar:
@@ -65,7 +65,7 @@ S: Aspose.Words för .NET stöder flera OpenType-funktioner, såsom ligaturer, g
 
 #### F: Hur kan jag kontrollera om en OpenType-funktion stöds i ett specifikt teckensnitt?
 
- S: Du kan kontrollera om en OpenType-funktion stöds i ett specifikt teckensnitt med hjälp av`Font.OpenTypeFeatures` metod i Aspose.Words för .NET.
+S: Du kan kontrollera om en OpenType-funktion stöds i ett specifikt teckensnitt med hjälp av`Font.OpenTypeFeatures` metod i Aspose.Words för .NET.
 
 #### F: Vilka andra textformateringsfunktioner stöder Aspose.Words för .NET?
 

@@ -1,7 +1,7 @@
 ---
 title: DOM Kullanarak Birleştirme Alanı Ekleme
 linktitle: DOM Kullanarak Birleştirme Alanı Ekleme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile özel alan birleştirme alanlarını Word belgelerinize nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10

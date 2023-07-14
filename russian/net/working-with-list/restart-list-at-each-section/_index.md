@@ -1,7 +1,7 @@
 ---
 title: Список перезапусков в каждом разделе
 linktitle: Список перезапусков в каждом разделе
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как сбросить нумерованный список для каждого раздела в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

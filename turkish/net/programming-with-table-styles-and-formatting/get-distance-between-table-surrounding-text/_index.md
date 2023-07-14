@@ -1,7 +1,7 @@
 ---
 title: Metni Çevreleyen Tablo Arasındaki Mesafeyi Alın
 linktitle: Metni Çevreleyen Tablo Arasındaki Mesafeyi Alın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir Word belgesindeki metin ve tablo arasındaki mesafeyi bulmak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -38,7 +38,7 @@ Console.WriteLine("Distance between the table and the text on the left: " + tabl
 ### Aspose.Words for .NET kullanarak Tablo Çevreleyen Metin Arasındaki Mesafeyi Al için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

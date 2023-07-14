@@ -1,7 +1,7 @@
 ---
 title: Formato 1Bpp indicizzato
 linktitle: Formato 1Bpp indicizzato
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come formattare le immagini in 1 bpp indicizzate con Aspose.Words per .NET. Tutorial completo per immagini a bassa profondità di colore.
 type: docs
 weight: 10
@@ -51,7 +51,7 @@ Ora puoi eseguire il codice sorgente per formattare le immagini del documento ne
 
 ```csharp 
  
-			 // Percorso della directory dei documenti
+			 //Percorso della directory dei documenti
 			 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
             
             Document doc = new Document(dataDir + "Rendering.docx");

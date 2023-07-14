@@ -1,14 +1,14 @@
 ---
-title: Mostra Nascondi contenuto aggiunto ai segnalibri
-linktitle: Mostra Nascondi contenuto aggiunto ai segnalibri
-second_title: Riferimento all'API Aspose.Words per .NET
-description: Scopri come mostrare o nascondere il contenuto dei segnalibri utilizzando Aspose.Words per .NET.
+title: Mostra Nascondi contenuto con segnalibro nel documento di Word
+linktitle: Mostra Nascondi contenuto con segnalibro nel documento di Word
+second_title: Aspose.Words API di elaborazione dei documenti
+description: Scopri come mostrare o nascondere il contenuto dei segnalibri nel documento di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 
-In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Mostra Nascondi contenuto con segnalibro nella libreria Aspose.Words per .NET. Questa funzione consente di mostrare o nascondere il contenuto di un segnalibro in base a una condizione specifica durante l'unione dei dati.
+In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Mostra Nascondi contenuto con segnalibro nella libreria Aspose.Words per .NET. Questa funzione consente di mostrare o nascondere il contenuto di un segnalibro nel documento di Word in base a una condizione specifica durante l'unione dei dati.
 
 ## Prerequisiti
 
@@ -25,7 +25,7 @@ Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
 ## Passaggio 2: Inserimento dei campi di unione
 
- Usiamo un generatore di documenti`DocumentBuilder` per inserire i campi di unione necessari. Questi campi di unione imposteranno una condizione per mostrare o nascondere il contenuto del segnalibro a seconda del valore di`showHide` variabile:
+ Usiamo un generatore di documenti`DocumentBuilder`per inserire i campi di unione necessari. Questi campi di unione imposteranno una condizione per mostrare o nascondere il contenuto del segnalibro a seconda del valore di`showHide` variabile:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -145,3 +145,33 @@ Ecco l'esempio completo del codice sorgente per mostrare o nascondere il contenu
 ## Conclusione
 
 In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzionalità Mostra Nascondi contenuto con segnalibro di Aspose.Words per .NET. Abbiamo seguito una guida dettagliata per mostrare o nascondere il contenuto di un segnalibro in base a una condizione specifica durante l'unione dei dati.
+
+### Le domande frequenti per mostrare nascondono il contenuto con segnalibro nel documento di Word
+
+#### D: Posso utilizzare la stessa condizione per più segnalibri nello stesso documento?
+
+ R: Sì, puoi utilizzare la stessa condizione per più segnalibri nello stesso documento. Basta ripetere i passaggi 2-5 per ogni segnalibro, regolando il nome del segnalibro e facoltativamente il valore del file`showhide` variabile secondo necessità.
+
+#### D: Come posso aggiungere ulteriori condizioni per mostrare o nascondere il contenuto dei segnalibri?
+
+ R: Per aggiungere più condizioni, puoi utilizzare operatori logici come`AND` E`OR` nel codice per l'inserimento dei campi di unione nel passaggio 2. Modificare la condizione nel codice seguente per aggiungere ulteriori condizioni:
+
+```csharp
+builder. Write("\" = \"true\" ");
+```
+
+#### D: Come posso eliminare un segnalibro in un documento di Word utilizzando Aspose.Words per .NET?
+
+A: Per rimuovere un segnalibro in un documento di Word utilizzando Aspose.Words per .NET, è possibile utilizzare il`Remove` metodo dal`Bookmarks` raccolta della gamma di documenti. Ecco un codice di esempio per l'eliminazione di un segnalibro specifico:
+
+```csharp
+doc.Range.Bookmarks.Remove(bookmarkName);
+```
+
+#### D: La libreria Aspose.Words è gratuita?
+
+R: La libreria Aspose.Words è una libreria commerciale e richiede una licenza valida per essere utilizzata nei tuoi progetti. Puoi controllare il sito Web ufficiale di Aspose per saperne di più sulle opzioni di licenza e sui prezzi.
+
+#### D: Sono disponibili altre librerie per l'elaborazione di testi con documenti Word in .NET?
+
+R: Sì, sono disponibili altre librerie per l'elaborazione di testi con documenti Word in .NET, come Open XML SDK e GemBox.Document. Puoi esplorare queste librerie come alternative ad Aspose.Words in base alle tue esigenze e preferenze specifiche.

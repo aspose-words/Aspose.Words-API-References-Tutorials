@@ -1,7 +1,7 @@
 ---
 title: Word'de Bağlantı Oluştur
 linktitle: Word'de Bağlantı Oluştur
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir Word belgesindeki TextBox'lar arasında word'de bağlantı oluşturmayı öğrenin.
 type: docs
 weight: 10
@@ -24,7 +24,7 @@ TextBox textBox2 = shape2.TextBox;
 
 ## Adım 2: Metin Kutuları arasında bir bağlantı oluşturma
 
- Şimdi kullanarak iki TextBox arasında bir bağlantı oluşturacağız.`IsValidLinkTarget()` yöntem ve`Next` ilk TextBox'ın özelliği.
+Şimdi kullanarak iki TextBox arasında bir bağlantı oluşturacağız.`IsValidLinkTarget()` yöntem ve`Next` ilk TextBox'ın özelliği.
 
 ```csharp
 if (textBox1.IsValidLinkTarget(textBox2))
@@ -62,11 +62,11 @@ C: Aspose.Words for .NET kullanarak Word'deki metin kutularını bağlamak için
 
 #### S: İki metin kutusu arasında nasıl bağlantı oluşturulur?
 
- A: İki metin kutusu arasında bir bağlantı oluşturmak için,`Next`birinci metin kutusunun özelliği ikinci metin kutusuna. kullanarak bağlantı hedefinin geçerliliğini önceden kontrol ettiğinizden emin olun.`IsValidLinkTarget()` yöntem.
+ A: İki metin kutusu arasında bir bağlantı oluşturmak için,`Next` birinci metin kutusunun özelliği ikinci metin kutusuna. kullanarak bağlantı hedefinin geçerliliğini önceden kontrol ettiğinizden emin olun.`IsValidLinkTarget()` yöntem.
 
-#### S: Metin kutuları dışındaki öğeler arasında bağlantılar oluşturmak mümkün müdür?
+#### S: Metin kutuları dışındaki öğeler arasında bağlantılar oluşturmak mümkün mü?
 
-C: Evet, .NET için Aspose.Words kütüphanesini kullanarak paragraflar, tablolar, resimler vb. gibi farklı öğeler arasında bağlantılar oluşturmak mümkündür. İşlem, bağlamak istediğiniz belirli öğeye göre değişir.
+C: Evet, .NET için Aspose.Words kütüphanesini kullanarak paragraflar, tablolar, resimler vb. gibi farklı öğeler arasında bağlantılar oluşturmak mümkündür. İşlem, bağlamak istediğiniz öğeye göre değişiklik gösterecektir.
 
 #### S: Aspose.Words for .NET kullanılarak Word'deki metin kutularına başka hangi işlevler eklenebilir?
 

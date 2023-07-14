@@ -1,7 +1,7 @@
 ---
 title: Inserisci tabella direttamente
 linktitle: Inserisci tabella direttamente
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come inserire una tabella direttamente in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ In questo tutorial impareremo come inserire direttamente una tabella in un docum
 2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: creazione del documento e della tabella
-Per iniziare a lavorare con l'array, dobbiamo creare un nuovo documento e inizializzare l'array. Segui questi passi:
+Per avviare l'elaborazione di parole con l'array, dobbiamo creare un nuovo documento e inizializzare l'array. Segui questi passi:
 
 ```csharp
 // Percorso della directory dei documenti
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Creazione di documenti
 Document doc = new Document();
 
-// Crea la matrice
+//Crea la matrice
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);
 ```
@@ -79,7 +79,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ### Esempio di codice sorgente per Inserisci tabella direttamente utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();
@@ -112,4 +112,4 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come inserire direttamente una tabella in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, è possibile inserire tabelle direttamente nei documenti di Word a livello di codice. Questa funzionalità consente di creare e personalizzare le tabelle in base alle proprie esigenze specifiche.
+In questo tutorial, abbiamo imparato come inserire direttamente una tabella in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, è possibile inserire tabelle direttamente nei documenti di Word a livello di programmazione. Questa funzionalità consente di creare e personalizzare le tabelle in base alle proprie esigenze specifiche.

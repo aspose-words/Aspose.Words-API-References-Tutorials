@@ -1,7 +1,7 @@
 ---
 title: Exportera Word-dokument sidfotsbokmärken till PDF-dokument
 linktitle: Exportera Word-dokument sidfotsbokmärken till PDF-dokument
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att exportera sidfotsbokmärken för Word-dokument till pdf-dokumentbokmärken med Aspose.Words för .NET.
 type: docs
 weight: 10

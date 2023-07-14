@@ -1,7 +1,7 @@
 ---
 title: Son Kaydedilen Zaman Özelliğini Güncelle
 linktitle: Son Kaydedilen Zaman Özelliğini Güncelle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgeyi kaydederken Last Saved Time özelliğini otomatik olarak nasıl güncelleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Artık bir belgeyi kaydederken son kaydetme süresi özelliğini otomatik olarak
 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");

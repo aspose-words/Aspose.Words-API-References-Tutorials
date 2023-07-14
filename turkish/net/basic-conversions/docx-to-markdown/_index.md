@@ -1,7 +1,7 @@
 ---
 title: Docx Dosyasını Markdown'a Dönüştür
 linktitle: Docx Dosyasını Markdown'a Dönüştür
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerini Docx'ten Markdown formatına nasıl dönüştüreceğinizi öğrenin. Örnek kaynak koduyla adım adım öğretici.
 type: docs
 weight: 10

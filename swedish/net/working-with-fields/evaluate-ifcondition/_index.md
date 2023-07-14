@@ -1,7 +1,7 @@
 ---
 title: Utvärdera IF tillstånd
 linktitle: Utvärdera IF tillstånd
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg för steg guide för att utvärdera IF-villkoret i dina Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ Här använde vi villkoret "1=1" som ett exempel, men du kan anpassa villkoret e
 
 ## Steg 3: Utvärdera IF-villkoret
 
- De`EvaluateCondition()`metod används för att utvärdera tillståndet för IF-fältet.
+ De`EvaluateCondition()` metod används för att utvärdera tillståndet för IF-fältet.
 
 ```csharp
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
@@ -54,7 +54,7 @@ FieldIfComparisonResult actualResult = field.EvaluateCondition();
 Console.WriteLine(actualResult);
 ```
 
-I det här exemplet har vi skapat en dokumentbyggare, infogat ett IF-fält med ett angett villkor och sedan utvärderat villkoret. Resultatet av utvärderingen visas sedan i konsolen.
+det här exemplet har vi skapat en dokumentbyggare, infogat ett IF-fält med ett angett villkor och sedan utvärderat villkoret. Resultatet av utvärderingen visas sedan i konsolen.
 
 Detta avslutar vår guide om hur du använder funktionen "Evaluate IF Condition" med Aspose.Words för .NET.
 

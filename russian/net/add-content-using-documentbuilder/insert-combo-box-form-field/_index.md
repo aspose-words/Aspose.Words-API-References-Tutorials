@@ -1,7 +1,7 @@
 ---
 title: Вставить поле формы со списком
 linktitle: Вставить поле формы со списком
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как вставлять поля формы со списком в документы Word с помощью Aspose.Words для .NET. Пошаговое руководство.
 type: docs
 weight: 10

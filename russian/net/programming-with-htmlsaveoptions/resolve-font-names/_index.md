@@ -1,7 +1,7 @@
 ---
 title: Разрешить имена шрифтов
 linktitle: Разрешить имена шрифтов
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по устранению отсутствующих имен шрифтов при преобразовании в HTML с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

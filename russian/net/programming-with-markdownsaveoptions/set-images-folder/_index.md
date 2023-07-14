@@ -1,7 +1,7 @@
 ---
 title: Установить папку с изображениями
 linktitle: Установить папку с изображениями
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как установить папку с изображениями при экспорте в Markdown с помощью Aspose.Words для .NET. Настройте размещение изображений для лучшей организации и интеграции.
 type: docs
 weight: 10

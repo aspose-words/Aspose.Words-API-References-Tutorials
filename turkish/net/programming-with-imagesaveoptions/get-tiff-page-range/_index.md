@@ -1,7 +1,7 @@
 ---
 title: Tiff Sayfa Aralığı Alın
 linktitle: Tiff Sayfa Aralığı Alın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir dizi TIFF sayfasını nasıl çıkaracağınızı öğrenin. Özel TIFF dosyaları için eksiksiz öğretici.
 type: docs
 weight: 10
@@ -60,7 +60,7 @@ Artık belgenizden belirli bir sayfa aralığı almak için kaynak kodunu çalı
 
 ```csharp 
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

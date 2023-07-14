@@ -1,7 +1,7 @@
 ---
 title: Ignorera sidhuvud
 linktitle: Ignorera sidhuvud
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till ett dokument samtidigt som du ignorerar sidhuvud och sidfotsinnehåll med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Ställ in alternativ för importformat
 
- Skapa en instans av`ImportFormatOptions` klass och ställ in`IgnoreHeaderFooter` egendom till`false`. Detta säkerställer att sidhuvudet och sidfotens innehåll ingår under tilläggsprocessen.
+ Skapa en instans av`ImportFormatOptions`klass och ställ in`IgnoreHeaderFooter` egendom till`false`. Detta säkerställer att sidhuvudet och sidfotens innehåll ingår under tilläggsprocessen.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
@@ -39,7 +39,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 ## Steg 4: Lägg till källdokumentet till måldokumentet
 
- Använd`AppendDocument` metod för måldokumentet för att lägga till källdokumentet. Passera`ImportFormatMode.KeepSourceFormatting` som den andra parametern och importformatalternativen som den tredje parametern.
+ Använd`AppendDocument`metod för måldokumentet för att lägga till källdokumentet. Passera`ImportFormatMode.KeepSourceFormatting` som den andra parametern och importformatalternativen som den tredje parametern.
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -58,7 +58,7 @@ Detta slutför implementeringen av att lägga till ett dokument samtidigt som in
 ### Exempel på källkod för Ignorera sidfot med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDocument = new Document(dataDir + "Document source.docx");

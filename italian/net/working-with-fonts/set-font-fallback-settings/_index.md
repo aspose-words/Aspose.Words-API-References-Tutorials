@@ -1,7 +1,7 @@
 ---
 title: Imposta le impostazioni di fallback dei caratteri
 linktitle: Imposta le impostazioni di fallback dei caratteri
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come configurare le impostazioni di sostituzione dei caratteri in Aspose.Words per .NET e personalizzare la sostituzione dei caratteri nei documenti di Word.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 ### Esempio di codice sorgente per Set Font Fallback Settings utilizzando Aspose.Words per .NET 
 ```csharp
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

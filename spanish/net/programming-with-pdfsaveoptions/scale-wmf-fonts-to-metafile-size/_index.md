@@ -1,7 +1,7 @@
 ---
 title: Reduzca el tamaño de PDF con escalar fuentes Wmf al tamaño de metarchivo
 linktitle: Reduzca el tamaño de PDF con escalar fuentes Wmf al tamaño de metarchivo
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para reducir el tamaño de un pdf escalando las fuentes wmf al tamaño del metarchivo al convertir a PDF con Aspose.Words para .NET.
 type: docs
 weight: 10

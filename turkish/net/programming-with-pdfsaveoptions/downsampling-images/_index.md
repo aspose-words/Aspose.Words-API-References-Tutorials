@@ -1,14 +1,14 @@
 ---
 title: Görüntüleri Alt Örnekleme ile PDF Doküman Boyutunu Küçültün
 linktitle: Görüntüleri Alt Örnekleme ile PDF Doküman Boyutunu Küçültün
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile PDF'ye dönüştürürken görüntüleri alt örnekleme ile pdf belge boyutunu nasıl küçülteceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/downsampling-images/
 ---
 
-Bu öğreticide, Aspose.Words for .NET ile PDF'ye dönüştürürken görüntüleri altörnekleyerek pdf belge boyutunu küçültme adımlarında size yol göstereceğiz. Bu, oluşturulan PDF dosyasının boyutunu azaltır. Aşağıdaki adımları takip et:
+Bu eğitimde, Aspose.Words for .NET ile PDF'ye dönüştürürken görüntüleri altörnekleyerek pdf belge boyutunu küçültme adımlarında size yol göstereceğiz. Bu, oluşturulan PDF dosyasının boyutunu azaltır. Aşağıdaki adımları takip et:
 
 ## 1. Adım: Belgeyi yükleme
 

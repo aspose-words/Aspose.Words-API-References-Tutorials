@@ -1,7 +1,7 @@
 ---
 title: İçerik Kontrol Stilini Ayarla
 linktitle: İçerik Kontrol Stilini Ayarla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Tutarlı biçimlendirme uygulayarak Aspose.Words for .NET kullanarak bir Word belgesinde içerik kontrolünün stilini nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
@@ -14,7 +14,7 @@ Bu öğretici, Aspose.Words for .NET kullanılarak bir Word belgesinde içerik d
 Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
 - Aspose.Words for .NET kitaplığı yüklendi.
-- Temel C# bilgisi ve Word belgeleriyle çalışma.
+- Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini kurun
  Belge dizininize giden yolu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Structured document tags.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
-## 3. Adım: Stili Alın ve İçerik Kontrolüne Uygulayın
+## 3. Adım: Stili Alın ve İçerik Denetimine Uygulayın
  Belgenin stiller koleksiyonundan istediğiniz stili alın. Bu örnekte, kullanarak "Alıntı" stilini alıyoruz.`StyleIdentifier.Quote` . Ardından, alınan stili şuna atayın:`Style` yapılandırılmış belge etiketinin özelliği.
 
 ```csharp
@@ -49,7 +49,7 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 ### Aspose.Words for .NET kullanarak İçerik Kontrol Stilini Ayarlamak için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Structured document tags.docx");

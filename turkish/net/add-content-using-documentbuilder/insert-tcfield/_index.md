@@ -1,7 +1,7 @@
 ---
 title: TCField'i ekle
 linktitle: TCField'i ekle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu adım adım kılavuzda C# ve Aspose.Words for .NET kullanarak Word belgelerine TCFields eklemeyi ve değiştirmeyi öğrenin.
 type: docs
 weight: 10
@@ -42,7 +42,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 
 Yukarıdaki kod, belgeyi TCField ile belirtilen dizine kaydedecektir.
 
-## Çıktı İşaretleme Biçimleri
+## Çıktı İşaretleme Formatları
 
 Kod başarıyla yürütüldüğünde, çıktı belgesi, belirtilen giriş metniyle bir içindekiler tablosu girişi içerecektir. TCField, Word belgesinde bir alan olarak temsil edilir ve ortaya çıkan işaretleme biçimi, belgenin nasıl işlendiğine bağlı olacaktır.
 

@@ -1,7 +1,7 @@
 ---
 title: Dokumenttextriktning
 linktitle: Dokumenttextriktning
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du anger textriktning i dina dokument med Aspose.Words för .NET. Förbättra displayen för höger-till-vänster-språk.
 type: docs
 weight: 10
@@ -81,7 +81,7 @@ Denna funktion är viktig för att säkerställa att texten visas korrekt i fler
 
 Med Aspose.Words kan du enkelt manipulera textens riktning i dina dokument, vilket ger en smidig och intuitiv läsupplevelse för användarna.
 
-Det är viktigt att notera att den här funktionen är särskilt användbar när du arbetar med språk som kräver specifik textriktning. Aspose.Words gör den här uppgiften enkel genom att tillhandahålla kraftfulla verktyg för att hantera textens riktning i dina dokument.
+Det är viktigt att notera att den här funktionen är särskilt användbar vid ordbehandling med språk som kräver specifik textriktning. Aspose.Words gör den här uppgiften enkel genom att tillhandahålla kraftfulla verktyg för att hantera textens riktning i dina dokument.
 
 Kom ihåg att använda lämpliga laddningsalternativ, som att ställa in automatisk textriktning, för att få de resultat du vill ha i dina dokument.
 

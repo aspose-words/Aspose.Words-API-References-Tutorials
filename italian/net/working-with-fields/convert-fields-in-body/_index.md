@@ -1,7 +1,7 @@
 ---
 title: Converti campi nel corpo
 linktitle: Converti campi nel corpo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come utilizzare Aspose.Words per .NET per convertire i campi della pagina in testo nel corpo di un documento di Word.
 type: docs
 weight: 10
@@ -22,13 +22,13 @@ Inizia dichiarando una variabile per il percorso della tua directory dei documen
 // Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento
+// Carica il documento
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
 ## Passaggio 3: convertire i campi della pagina in testo normale
 
-Ora che il documento è caricato, possiamo passare ai passaggi di conversione. Per convertire i campi della pagina in testo normale nel corpo della prima sezione, puoi utilizzare il file`Range.Fields` metodo per ottenere tutti i campi nell'intervallo specificato, quindi filtrare i campi di tipo`FieldType.FieldPage` . Quindi puoi usare il`ForEach` metodo per scorrere ogni campo e chiamare il metodo`Unlink()` metodo per convertirlo in testo normale.
+ Ora che il documento è caricato, possiamo passare ai passaggi di conversione. Per convertire i campi della pagina in testo normale nel corpo della prima sezione, puoi utilizzare il file`Range.Fields` metodo per ottenere tutti i campi nell'intervallo specificato, quindi filtrare i campi di tipo`FieldType.FieldPage` . Quindi puoi usare il`ForEach` metodo per scorrere ogni campo e chiamare il metodo`Unlink()` metodo per convertirlo in testo normale.
 
 ```csharp
 // Passa i parametri appropriati per convertire i campi della pagina in testo normale nel corpo della prima sezione.
@@ -37,7 +37,7 @@ doc.FirstSection.Body.Range.Fields.Where(f => f.Type == FieldType.FieldPage).ToL
 
 ## Passaggio 4: salvare il documento modificato
 
- Una volta convertiti i campi della pagina in testo semplice, è possibile salvare il documento modificato utilizzando il file`Save()` metodo e specificando il percorso e il nome del file di output. Nel nostro esempio, lo salviamo come "WorkingWithFields.ConvertFieldsInBody.docx".
+Una volta convertiti i campi della pagina in testo semplice, è possibile salvare il documento modificato utilizzando il file`Save()` metodo e specificando il percorso e il nome del file di output. Nel nostro esempio, lo salviamo come "WorkingWithFields.ConvertFieldsInBody.docx".
 
 ```csharp
 // Salva il documento modificato
@@ -52,7 +52,7 @@ Ecco l'esempio di codice sorgente completo per convertire i campi nel corpo usan
 // Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento
+// Carica il documento
 Document doc = new Document(dataDir + "Linked fields.docx");
 
 // Passa i parametri appropriati per convertire i campi della pagina in testo normale nel corpo della prima sezione.

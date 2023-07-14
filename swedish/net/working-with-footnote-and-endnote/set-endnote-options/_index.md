@@ -1,7 +1,7 @@
 ---
 title: Ställ in slutnotsalternativ
 linktitle: Ställ in slutnotsalternativ
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ställer in slutnotalternativ i Word-dokument med Aspose.Words för .NET. Steg-för-steg handledning med exempel på källkod.
 type: docs
 weight: 10
@@ -89,12 +89,12 @@ Använd gärna den här koden i dina egna projekt och modifiera den efter dina s
 
 #### F: Hur kan jag placera slutnoter i ett dokument?
 
- S: För att placera slutnoter i ett dokument kan du använda`Position` egendom av`EndnoteOptions` klass. Du kan ange om slutanteckningar ska placeras längst ner på varje sida, i slutet av varje avsnitt eller i slutet av dokumentet.
+ S: För att placera slutnoter i ett dokument kan du använda`Position`egendom av`EndnoteOptions` klass. Du kan ange om slutanteckningar ska placeras längst ner på varje sida, i slutet av varje avsnitt eller i slutet av dokumentet.
 
 #### F: Kan jag anpassa slutnotens numreringsformat?
 
- S: Ja, du kan anpassa formatet för slutnotsnumrering i Aspose.Words. Använd`NumberFormat` egendom av`EndnoteOptions` klass för att ställa in önskat format, såsom arabiska siffror, romerska siffror, bokstäver, etc.
+ S: Ja, du kan anpassa formatet för slutnotsnumrering i Aspose.Words. Använd`NumberFormat`egendom av`EndnoteOptions` klass för att ställa in önskat format, såsom arabiska siffror, romerska siffror, bokstäver, etc.
 
 #### F: Är det möjligt att fortsätta slutnotsnumreringen mellan avsnitten i ett dokument?
 
- S: Ja, det är möjligt att fortsätta slutnotsnumreringen mellan avsnitten i ett dokument. Använd`RestartRule` egendom av`EndnoteOptions` klass och ställ in den på`RestartContinuous` för att låta numreringen fortsätta mellan avsnitten.
+ S: Ja, det är möjligt att fortsätta slutnotsnumreringen mellan avsnitten i ett dokument. Använd`RestartRule`egendom av`EndnoteOptions` klass och ställ in den på`RestartContinuous` för att låta numreringen fortsätta mellan avsnitten.

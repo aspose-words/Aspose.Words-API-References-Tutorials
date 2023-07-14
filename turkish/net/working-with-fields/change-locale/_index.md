@@ -1,7 +1,7 @@
 ---
 title: Yerel Ayarı Değiştir
 linktitle: Yerel Ayarı Değiştir
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerinde tarih ve sayı biçimlendirmesi için yerel ayarı nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
@@ -94,7 +94,7 @@ Tebrikler! Aspose.Words for .NET kullanarak Word belgelerinde yerel ayarı nası
 
 #### S: Aspose.Words, Microsoft Word'ün farklı sürümleriyle uyumlu mu?
 
-C: Evet, Aspose.Words, Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 ve Word 2019 dahil olmak üzere Microsoft Word'ün farklı sürümleriyle uyumludur.
+Y: Evet, Aspose.Words, Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 ve Word 2019 dahil olmak üzere Microsoft Word'ün farklı sürümleriyle uyumludur.
 
 #### S: Aspose.Words karmaşık alan yapılarını destekliyor mu?
 

@@ -1,7 +1,7 @@
 ---
 title: Держите стол вместе
 linktitle: Держите стол вместе
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как объединить таблицу в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ url: /ru/net/programming-with-tables/keep-table-together/
 2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
 
 ## Шаг 2. Загрузка документа и получение таблицы
-Чтобы начать работу с таблицей, нам нужно загрузить документ и получить таблицу, которую мы хотим сохранить вместе. Следуй этим шагам:
+Чтобы запустить Word Processing с таблицей, нам нужно загрузить документ и получить таблицу, которую мы хотим сохранить вместе. Следуй этим шагам:
 
 ```csharp
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 
 // Получить таблицу
@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ### Пример исходного кода для Keep Table Together с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");

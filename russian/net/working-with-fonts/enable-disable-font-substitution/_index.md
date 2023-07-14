@@ -1,7 +1,7 @@
 ---
 title: Включить Отключить замену шрифта
 linktitle: Включить Отключить замену шрифта
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Из этого руководства вы узнаете, как включить или отключить подстановку шрифтов в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Затем мы загрузим документ Word, который вы хотите отобразить, и создадим экземпляр`FontSettings` класс для обработки настроек шрифта. Мы установим переопределение шрифта по умолчанию, указав имя шрифта в`DefaultFontName` и отключить переопределение информации о шрифте с помощью`Enabled` установлен в`false`.
 
 ```csharp
-//Загрузите документ
+// Загрузите документ
 Document doc = new Document(dataDir + "Rendering.docx");
 
 // Настройте параметры шрифта
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

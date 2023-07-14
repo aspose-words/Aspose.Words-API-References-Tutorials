@@ -1,7 +1,7 @@
 ---
 title: Добавить Удалить Комментарий Ответить
 linktitle: Добавить Удалить Комментарий Ответить
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как добавлять и удалять ответы на комментарии в документах Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 #### В: Как удалить комментарий в Aspose.Words для .NET?
 
-О: Чтобы удалить комментарий в Aspose.Words для .NET, вы можете использовать`Comment.Remove` метод, определяющий`Comment` объект, который вы хотите удалить.
+ О: Чтобы удалить комментарий в Aspose.Words для .NET, вы можете использовать`Comment.Remove` метод, определяющий`Comment` объект, который вы хотите удалить.
 
 #### В: Могу ли я ответить на комментарий в Aspose.Words для .NET?
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 #### В: Как получить доступ к существующим комментариям в Aspose.Words для .NET?
 
- О: Вы можете получить доступ к существующим комментариям в Aspose.Words для .NET с помощью`CommentCollection` собственность`Document` объект. Это позволит вам просматривать все комментарии, присутствующие в документе.
+ О: Вы можете получить доступ к существующим комментариям в Aspose.Words для .NET с помощью`CommentCollection`собственность`Document`объект. Это позволит вам просматривать все комментарии, присутствующие в документе.
 
 #### В: Могу ли я редактировать текст комментария в Aspose.Words для .NET?
 

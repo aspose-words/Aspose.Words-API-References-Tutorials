@@ -1,7 +1,7 @@
 ---
 title: Cambiar configuración regional
 linktitle: Cambiar configuración regional
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a cambiar la configuración regional para el formato de fecha y número en documentos de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -104,7 +104,7 @@ R: ¡Absolutamente! Aspose.Words ofrece un amplio soporte para estructuras de ca
 
 R: Sí, Aspose.Words le permite actualizar campos de forma programada. Puede actualizar fácilmente los valores de los campos, actualizar los cálculos y realizar otras operaciones relacionadas con los campos mediante la API.
 
-#### P: ¿Es posible convertir campos en texto sin formato con Aspose.Words?
+#### P: ¿Es posible convertir campos en texto sin formato usando Aspose.Words?
 
 R: ¡Ciertamente! Aspose.Words proporciona métodos para convertir campos en texto sin formato. Esto puede ser útil cuando necesita extraer el contenido sin ningún formato o funcionalidad relacionada con el campo.
 

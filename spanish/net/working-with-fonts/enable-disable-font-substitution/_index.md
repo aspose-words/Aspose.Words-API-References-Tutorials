@@ -1,7 +1,7 @@
 ---
 title: Habilitar Deshabilitar sustitución de fuentes
 linktitle: Habilitar Deshabilitar sustitución de fuentes
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: En este tutorial, aprenda cómo habilitar o deshabilitar la sustitución de fuentes en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -27,7 +27,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  A continuación, cargaremos el documento de Word que desea representar y crearemos una instancia del`FontSettings` clase para manejar la configuración de la fuente. Estableceremos la anulación de la fuente predeterminada especificando el nombre de la fuente en`DefaultFontName` y deshabilite la anulación de información de fuente con`Enabled` ajustado a`false`.
 
 ```csharp
-//Cargue el documento
+// Cargue el documento
 Document doc = new Document(dataDir + "Rendering.docx");
 
 // Configurar ajustes de fuente
@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ```csharp
 
-// Ruta a su directorio de documentos
+//Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

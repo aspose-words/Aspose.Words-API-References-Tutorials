@@ -1,7 +1,7 @@
 ---
 title: Dikey Birleştirme
 linktitle: Dikey Birleştirme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablodaki hücreleri dikey olarak birleştirmeyi öğrenin.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ Bu öğreticide, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tabl
 2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
 ## 2. Adım: Belgeyi yükleme
-Belgeyle çalışmaya başlamak için şu adımları izleyin:
+Sözcük İşlemeyi belgeyle başlatmak için şu adımları izleyin:
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 
 ### Aspose.Words for .NET kullanan Vertical Merge için örnek kaynak kodu 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

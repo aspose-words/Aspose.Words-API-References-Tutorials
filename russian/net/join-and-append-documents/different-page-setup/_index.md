@@ -1,7 +1,7 @@
 ---
 title: Различные настройки страницы
 linktitle: Различные настройки страницы
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как добавить документ с различными настройками страницы с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Настройте параметры страницы для исходного документа
 
- Настройте параметры страницы исходного документа, чтобы обеспечить правильное продолжение и нумерацию. В этом примере мы устанавливаем начало раздела на`SectionStart.Continuous` и перезапустите нумерацию страниц. Мы также следим за тем, чтобы ширина, высота и ориентация страницы соответствовали последнему разделу целевого документа.
+Настройте параметры страницы исходного документа, чтобы обеспечить правильное продолжение и нумерацию. В этом примере мы устанавливаем начало раздела на`SectionStart.Continuous` и перезапустите нумерацию страниц. Мы также следим за тем, чтобы ширина, высота и ориентация страницы соответствовали последнему разделу целевого документа.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -44,7 +44,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Шаг 4. Измените форматирование абзаца
 
-Чтобы сохранить правильное форматирование, просмотрите все абзацы в исходном документе и установите`KeepWithNext` собственность на`true`. Это гарантирует, что абзацы останутся вместе во время процесса добавления.
+ Чтобы сохранить правильное форматирование, просмотрите все абзацы в исходном документе и установите`KeepWithNext` собственность на`true`. Это гарантирует, что абзацы останутся вместе во время процесса добавления.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -74,19 +74,19 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 ### Пример исходного кода для настройки другой страницы с использованием Aspose.Words для .NET 
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
 	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Установите исходный документ, чтобы он продолжался сразу после окончания целевого документа.
+	//Установите исходный документ, чтобы он продолжался сразу после окончания целевого документа.
 	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 	// Перезапустите нумерацию страниц в начале исходного документа.
 	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 	srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 	// Чтобы этого не произошло, если исходный документ имеет другие параметры настройки страницы, убедитесь, что
 	// настройки идентичны между последним разделом целевого документа.
-	//Если в исходном документе есть дополнительные непрерывные разделы,
+	// Если в исходном документе есть дополнительные непрерывные разделы,
 	// это нужно будет повторить для этих разделов.
 	srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
 	srcDoc.FirstSection.PageSetup.PageHeight = dstDoc.LastSection.PageSetup.PageHeight;

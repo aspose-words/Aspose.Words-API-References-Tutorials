@@ -1,7 +1,7 @@
 ---
 title: Convertir Docx a Mhtml y enviar correo electrónico
 linktitle: Convertir Docx a Mhtml y enviar correo electrónico
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda cómo convertir documentos de Word de Docx a MHTML y enviarlos como correos electrónicos usando Aspose.Words y Aspose.Email. Tutorial paso a paso.
 type: docs
 weight: 10
@@ -76,7 +76,7 @@ Asegúrese de proporcionar la dirección de host del servidor SMTP correcta.
 	// Rebobine la secuencia hasta el principio para que Aspose.Email pueda leerla.
 	stream.Position = 0;
 
-	// Cree un mensaje de correo electrónico Aspose.Email MIME a partir de la secuencia.
+	// Cree un mensaje de correo electrónico Aspose.Email MIME a partir de la transmisión.
 	MailMessage message = MailMessage.Load(stream, new MhtmlLoadOptions());
 	message.From = "your_from@email.com";
 	message.To = "your_to@email.com";

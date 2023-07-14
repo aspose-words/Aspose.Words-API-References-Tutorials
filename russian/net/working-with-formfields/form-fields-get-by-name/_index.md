@@ -1,7 +1,7 @@
 ---
 title: Поля формы получают по имени
 linktitle: Поля формы получают по имени
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как извлекать и изменять поля формы по имени в документах Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Шаг 2: Получение полей формы
 
- Далее войдите в`FormFields` собственность`Range` объект в документе, чтобы получить все поля формы:
+ Далее войдите в`FormFields`собственность`Range` объект в документе, чтобы получить все поля формы:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;

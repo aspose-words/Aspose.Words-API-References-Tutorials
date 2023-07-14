@@ -1,7 +1,7 @@
 ---
 title: Carica l'intervallo di pagine del Pdf
 linktitle: Carica l'intervallo di pagine del Pdf
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per caricare un intervallo di pagine PDF specifico con Aspose.Words per .NET.
 type: docs
 weight: 10

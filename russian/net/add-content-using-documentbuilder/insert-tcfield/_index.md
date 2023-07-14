@@ -1,7 +1,7 @@
 ---
 title: Вставить TCField
 linktitle: Вставить TCField
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Из этого пошагового руководства вы узнаете, как вставлять TCFields и управлять ими в документах Word с помощью C# и Aspose.Words для .NET.
 type: docs
 weight: 10

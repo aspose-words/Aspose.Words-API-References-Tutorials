@@ -1,7 +1,7 @@
 ---
 title: Form Alanları Özelliklerle Çalışır
 linktitle: Form Alanları Özelliklerle Çalışır
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerinde form alanı özellikleriyle nasıl çalışacağınızı öğrenin.
 type: docs
 weight: 10
@@ -29,7 +29,7 @@ Ardından, belgenin form alanı koleksiyonundan belirli bir form alanını alın
 FormField formField = doc.Range.FormFields[3];
 ```
 
-## 3. Adım: Form Alanı Özellikleriyle Çalışma
+## 3. Adım: Form Alanı Özellikleriyle Sözcük İşleme
 
  Türüne göre form alanının çeşitli özelliklerini değiştirebilirsiniz. Bu örnekte, form alanının türünde olup olmadığını kontrol ediyoruz.`FieldType.FieldFormTextInput` ve ayarla`Result` buna göre mülk:
 
@@ -71,7 +71,7 @@ Bu kodu kendi projelerinizde kullanmaktan çekinmeyin ve özel gereksinimleriniz
 
  C: Aspose.Words'te bir form alanının adını değiştirmek için`FormField.Name` özellik ve ona yeni bir değer atayın.
 
-#### S: Bir form alanının varsayılan değerini değiştirmek mümkün müdür?
+#### S: Bir form alanının varsayılan değerini değiştirmek mümkün mü?
 
  C: Evet, Aspose.Words'te bir form alanının varsayılan değerini değiştirmek mümkündür. Kullan`FormField.Result` yeni varsayılanı belirtmek için özellik.
 

@@ -1,7 +1,7 @@
 ---
 title: Установить папку со шрифтами
 linktitle: Установить папку со шрифтами
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как установить каталог шрифтов в Aspose.Words для .NET и обеспечить доступность шрифтов, используемых в ваших документах.
 type: docs
 weight: 10
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 ```csharp
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings fontSettings = new FontSettings();

@@ -1,7 +1,7 @@
 ---
 title: Clona tabella completa
 linktitle: Clona tabella completa
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come clonare un'intera tabella in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -15,13 +15,13 @@ In questo tutorial impareremo come utilizzare Aspose.Words per .NET per clonare 
 2. Aggiungere un riferimento alla libreria Aspose.Words per .NET.
 
 ## Passaggio 2: caricamento del documento e accesso alla tabella
-Per iniziare a lavorare con la tabella, dobbiamo caricare il documento che la contiene e accedervi. Segui questi passi:
+Per avviare Words Processing con la tabella, dobbiamo caricare il documento che la contiene e accedervi. Segui questi passi:
 
 ```csharp
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-//Carica il documento
+// Carica il documento
 Document doc = new Document(dataDir + "Tables.docx");
 
 // Accesso all'array
@@ -60,19 +60,19 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 ### Esempio di codice sorgente per Clone Complete Table utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// Clona la tabella e inseriscila nel documento dopo l'originale.
+	//Clona la tabella e inseriscila nel documento dopo l'originale.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
 	// Inserisci un paragrafo vuoto tra le due tabelle,
-	//oppure saranno combinati in uno al momento del salvataggio, questo ha a che fare con la convalida del documento.
+	// oppure saranno combinati in uno al momento del salvataggio, questo ha a che fare con la convalida del documento.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come clonare un'intera tabella in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, è possibile clonare le tabelle nei documenti di Word a livello di programmazione. Questa funzione consente di eseguire manipolazioni avanzate sugli array per soddisfare le proprie esigenze specifiche.
+In questo tutorial, abbiamo imparato come clonare un'intera tabella in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida dettagliata e implementando il codice C# fornito, è possibile clonare le tabelle nei documenti di Word a livello di codice. Questa funzione consente di eseguire manipolazioni avanzate sugli array per soddisfare le proprie esigenze specifiche.

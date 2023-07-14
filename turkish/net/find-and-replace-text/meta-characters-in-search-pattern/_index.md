@@ -1,13 +1,12 @@
 ---
 title: Arama Modelindeki Meta Karakterler
 linktitle: Arama Modelindeki Meta Karakterler
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Word belgelerini işlemek için Aspose.Words for .NET ile arama modelinde meta karakterleri nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/meta-characters-in-search-pattern/
 ---
-
 Bu makalede, Aspose.Words for .NET kitaplığında Meta Karakterler Arama Modeli işlevinin nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, Word belgelerinde gelişmiş aramalar ve değiştirmeler yapmak için özel metakarakterler kullanmanıza olanak tanır.
 
 ## Önkoşullar
@@ -106,3 +105,63 @@ Aspose.Words for .NET ile arama modelinde meta karakterlerin kullanımını gös
 ## Çözüm
 
 Bu makalede, Aspose.Words for .NET arama modelinde meta karakterlerin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belge oluşturmak, metin eklemek, özel meta karakterleri kullanarak arama yapmak ve değiştirmek, sayfa sonları eklemek ve düzenlenen belgeyi kaydetmek için adım adım bir kılavuz izledik.
+
+### SSS
+
+#### S: Aspose.Words for .NET'teki Arama Modelindeki Meta Karakterler özelliği nedir?
+
+C: Aspose.Words for .NET'teki Arama Modelindeki Meta Karakterler özelliği, Word belgelerinde gelişmiş aramalar ve değiştirmeler yapmak için özel meta karakterler kullanmanıza olanak tanır. Bu meta karakterler, arama modelinizde paragraf sonlarını, bölüm sonlarını, sayfa sonlarını ve diğer özel öğeleri temsil etmenize olanak tanır.
+
+#### S: Aspose.Words for .NET'te yeni bir belge nasıl oluşturulur?
+
+ C: Arama şablonunda meta karakterleri kullanmadan önce Aspose.Words for .NET'i kullanarak yeni bir belge oluşturmalısınız. Bu, bir örneği başlatarak yapılabilir.`Document` nesne. İşte yeni bir belge oluşturmak için örnek bir kod:
+
+```csharp
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Document doc = new Document();
+```
+
+#### S: Aspose.Words for .NET kullanarak bir belgeye nasıl metin eklenir?
+
+ C: Bir belgeniz olduğunda, bir metin kullanarak metin ekleyebilirsiniz.`DocumentBuilder` nesne. Örneğimizde,`Writeln` Ve`Write` iki satır metin ekleme yöntemleri:
+
+```csharp
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.Writeln("This is line 1");
+builder.Writeln("This is line 2");
+```
+
+#### S: Aspose.Words for .NET kullanarak bir belgede meta karakterli metin nasıl aranır ve değiştirilir?
+
+ A: Metni aramak ve meta karakterlerle değiştirmek için`Range.Replace` yöntem. Örneğimizde, "Bu satır 1&pBu satır 2" ifadesini "Bu satır değiştirildi" ile değiştiriyoruz.`&p` paragraf sonunu temsil eden meta karakter:
+
+```csharp
+doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
+```
+
+#### S: Aspose.Words for .NET kullanarak bir belgeye sayfa sonu nasıl eklenir?
+
+A: Başka bir meta karakterin kullanımını göstermek için, belgeye bir sayfa sonu ekleyeceğiz.`InsertBreak` ile yöntem`BreakType.PageBreak` parametre. Önce imleci hareket ettiriyoruz`DocumentBuilder` belgenin sonuna, ardından sayfa sonunu ve yeni bir metin satırı ekliyoruz:
+
+```csharp
+builder. MoveToDocumentEnd();
+builder.Write("This is line 1");
+builder. InsertBreak(BreakType.PageBreak);
+builder.Writeln("This is line 2");
+```
+
+#### S: Aspose.Words for .NET kullanarak bir belgede başka bir meta karakter nasıl aranır ve değiştirilir?
+
+ C: Şimdi başka bir arama gerçekleştireceğiz ve`&m` sayfa sonunu temsil eden meta karakter. "Bu satır 1&mBu satır 2" ifadesini "Sayfa sonu yeni metinle değiştirildi" ile değiştiriyoruz. :
+
+```csharp
+doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");
+```
+
+#### S: Düzenlenen belge Aspose.Words for .NET'te nasıl kaydedilir?
+
+ C: Belgede değişiklik yaptıktan sonra, belgeyi aşağıdakileri kullanarak belirli bir dizine kaydedebilirsiniz:`Save` yöntem:
+
+```csharp
+doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");
+```

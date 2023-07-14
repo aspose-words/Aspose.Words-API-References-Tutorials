@@ -1,7 +1,7 @@
 ---
 title: Üst Bilgi Alt Bilgi Oluştur
 linktitle: Üst Bilgi Alt Bilgi Oluştur
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile Word belgelerinizde üst bilgileri ve alt bilgileri nasıl oluşturacağınızı öğrenin. Her sayfa için üst bilgileri ve alt bilgileri özelleştirin.
 type: docs
 weight: 10
@@ -115,7 +115,7 @@ pageSetup.Orientation = Orientation.Landscape;
 // ve bu sayfanın üstbilgisi/altbilgisi önceki bölümde tanımlanmıştır.
 pageSetup.DifferentFirstPageHeaderFooter = false;
 
-// Bu bölüm, önceki bölümün üstbilgilerini/altbilgilerini varsayılan olarak görüntüler, bu bağlantıyı kesmek için currentSection.HeadersFooters.LinkToPrevious(false) öğesini çağırın,
+// Bu bölüm varsayılan olarak önceki bölümün üstbilgilerini/altbilgilerini görüntüler, bu bağlantıyı kesmek için currentSection.HeadersFooters.LinkToPrevious(false) öğesini çağırın,
 // yeni bölüm için sayfa genişliği farklıdır, bu nedenle alt bilgi tablosu için farklı hücre genişlikleri ayarlamamız gerekir.
 currentSection.HeadersFooters.LinkToPrevious(false);
 

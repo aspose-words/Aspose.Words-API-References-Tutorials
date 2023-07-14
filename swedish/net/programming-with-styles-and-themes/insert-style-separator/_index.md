@@ -1,7 +1,7 @@
 ---
-title: Sätt in stilavskiljare
-linktitle: Sätt in stilavskiljare
-second_title: Aspose.Words för .NET API Referens
+title: Infoga dokumentformatavskiljare i Word
+linktitle: Infoga dokumentformatavskiljare i Word
+second_title: Aspose.Words Document Processing API
 description: Lär dig att skapa dokument med anpassade stilar och infoga stilavgränsare för exakt, professionell formatering.
 type: docs
 weight: 10
@@ -31,7 +31,7 @@ paraStyle.Font.Size = 8;
 paraStyle.Font.Name = "Arial";
 ```
 
-I det här steget skapar vi en anpassad styckestil med namnet "MyParaStyle" och ställer in dess teckensnittsegenskaper.
+det här steget skapar vi en anpassad styckestil med namnet "MyParaStyle" och ställer in dess teckensnittsegenskaper.
 
 ## Steg 4: Infoga stilavgränsaren
 
@@ -55,7 +55,7 @@ Du kan köra källkod för att infoga en stilavgränsare i ett dokument. Detta l
 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
  
 Document doc = new Document();
@@ -89,3 +89,25 @@ Att använda stilavgränsare ger ytterligare flexibilitet när du formaterar din
 Aspose.Words för .NET tillhandahåller ett kraftfullt API för att hantera stilar i dina dokument. Du kan utforska det här biblioteket ytterligare för att anpassa utseendet på dina dokument och skapa professionella resultat.
 
 Kom ihåg att spara ditt dokument efter att du har infogat stilavgränsaren.
+
+### Vanliga frågor
+
+#### Hur ställer jag in miljön för att infoga en stilavgränsare i ett dokument med Aspose.Words för .NET?
+
+För att ställa in miljön måste du se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Detta inkluderar att lägga till nödvändiga referenser och importera lämpliga namnområden för att komma åt Aspose.Words API.
+
+#### Hur skapar och konfigurerar jag en anpassad stil?
+
+ För att skapa en anpassad stil kan du använda`Styles.Add` metod för`Document` objekt. Ange stiltyp (t.ex.`StyleType.Paragraph`) och ange ett namn för stilen. När du har skapat det kan du ändra teckensnittsegenskaperna för stilobjektet för att konfigurera dess utseende.
+
+#### Hur infogar jag en stilavgränsare?
+
+ För att infoga en stilavgränsare kan du använda`InsertStyleSeparator` metod för`DocumentBuilder` objekt. Den här metoden infogar en avgränsare som markerar slutet på föregående styckes stil och början på nästa styckes stil.
+
+#### Hur kan jag tillämpa olika stilar på olika textavsnitt?
+
+ Du kan använda olika stilar på olika textavsnitt genom att ställa in`ParagraphFormat.StyleName`egendom av`DocumentBuilder`objekt. Innan du skriver texten kan du ställa in stilnamnet till önskad stil, och den efterföljande texten kommer att formateras därefter.
+
+#### Kan jag spara dokumentet i olika format?
+
+ Ja, du kan spara dokumentet i olika format som stöds av Aspose.Words för .NET. De`Save` metod för`Document` objekt låter dig ange utdatafilformatet, såsom DOCX, PDF, HTML och mer. Välj lämpligt format baserat på dina krav.

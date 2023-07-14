@@ -1,7 +1,7 @@
 ---
 title: Вставить поле
 linktitle: Вставить поле
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как вставить поле в документы Word с помощью Aspose.Words для .NET. Персонализируйте свои документы с помощью динамических полей.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Alanı Birleştirmek İçin Taşı
 linktitle: Alanı Birleştirmek İçin Taşı
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Adım adım kılavuz kullanarak Aspose.Words for .NET'te Birleştirme Alanına Taşı özelliğini nasıl uygulayacağınızı öğrenin.
 type: docs
 weight: 10
@@ -79,5 +79,5 @@ builder.Write(" Text immediately after the field.");
 
 ## Çözüm
 
-Aspose.Words for .NET'in Birleştirme Alanına Taşı özelliğini inceledik. DocumentBuilder sınıfını kullanarak bir belgedeki alanları birleştirmek için nasıl gezineceğimizi ve bunlar üzerinde işlemler yapmayı öğrendik. Bu özellik, birleştirme ile programlı olarak çalışırken kullanışlıdır.
+Aspose.Words for .NET'in Birleştirme Alanına Taşı özelliğini inceledik. DocumentBuilder sınıfını kullanarak bir belgedeki alanları birleştirmek için nasıl gezineceğimizi ve bunlar üzerinde işlemler yapmayı öğrendik. Bu özellik, birleştirme ile programlı olarak Sözcük İşleme yapıldığında kullanışlıdır.
 

@@ -1,7 +1,7 @@
 ---
 title: Skapa och lägg till styckenod
 linktitle: Skapa och lägg till styckenod
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Skapa och lägg till en styckenod i dina Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

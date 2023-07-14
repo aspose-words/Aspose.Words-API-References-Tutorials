@@ -1,7 +1,7 @@
 ---
-title: Yatay Kural Biçimi
-linktitle: Yatay Kural Biçimi
-second_title: Aspose.Words for .NET API Referansı
+title: Yatay Kural Formatı
+linktitle: Yatay Kural Formatı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerinde yatay kuralları nasıl biçimlendireceğinizi öğrenin. Adım adım rehber.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Eski Kontrol Karakterlerini Koru
 linktitle: Eski Kontrol Karakterlerini Koru
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir belgeyi kaydederken eski kontrol karakterlerini nasıl koruyacağınızı öğrenin.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Artık bir belgeyi kaydederken eski kontrol karakterlerini korumak için kaynak 
 ### Aspose.Words for .NET kullanan Keep Legacy Control Chars için örnek kaynak kodu 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Legacy control character.doc");
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 Bu öğreticide, Aspose.Words for .NET kullanarak bir belgeyi kaydederken eski kontrol karakterlerini korumanın işlevselliğini inceledik. Uygun belge formatlaması veya gösterimi için önemli olabilecek özel karakterleri nasıl koruyacağımızı öğrendik.
 
- Eski kontrol karakterlerini korumak, özellikle özel kontrol karakterleri gibi daha eski veya belirli özellikleri kullanan belgelerle çalışırken kullanışlıdır. etkinleştirerek`KeepLegacyControlChars`seçeneği, belgeyi kaydederken bu karakterlerin korunmasını sağlarsınız.
+ Eski kontrol karakterlerini korumak, özellikle özel kontrol karakterleri gibi daha eski veya belirli özellikleri kullanan belgelerle Sözcük İşleme yaparken kullanışlıdır. etkinleştirerek`KeepLegacyControlChars`seçeneği, belgeyi kaydederken bu karakterlerin korunmasını sağlarsınız.
 
 Aspose.Words for .NET, belge düzenleme ihtiyaçlarınızı karşılamak için bir dizi esnek ve güçlü yedekleme seçeneği sunar. Uygun seçenekleri kullanarak, belgelerinizin belirli özelliklerini korumak için yedekleme işlemini özelleştirebilirsiniz.
 

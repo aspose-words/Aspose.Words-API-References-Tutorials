@@ -1,14 +1,14 @@
 ---
-title: Liste ile Çalışmak
-linktitle: Liste ile Çalışmak
-second_title: Aspose.Words for .NET API Referansı
+title: Liste ile Kelime İşleme
+linktitle: Liste ile Kelime İşleme
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerindeki listelerle nasıl çalışacağınızı öğrenin. Kod örnekleriyle ayrıntılı öğreticiler.
 type: docs
 weight: 780
 url: /tr/net/working-with-list/
 ---
 
-Listelerle Çalışmak, Aspose.Words for .NET kitaplığını kullanarak Word belgelerindeki listelerle çalışırken size rehberlik eden kapsamlı bir kaynaktır. Öğreticiler, madde işaretli listeler, numaralı listeler ve çok düzeyli listeler dahil olmak üzere farklı türde listeler oluşturmak, özelleştirmek ve yönetmek için adım adım açıklamalar, eksiksiz kaynak kodu ve pratik örnekler sağlar. Ayrıca öğe eklemeyi, listeleri biçimlendirmeyi, görünümü ve girintiyi değiştirmeyi ve diğer gelişmiş işlemleri öğreneceksiniz. Bu kaynak, Aspose.Words for .NET kullanarak Word belgelerinde liste oluşturmayı ve yönetmeyi otomatikleştirmek isteyen geliştiriciler için çok önemlidir.
+Words Processing with Lists, Aspose.Words for .NET kütüphanesini kullanarak Word belgelerindeki listelerle Kelime İşleme konusunda size rehberlik eden kapsamlı bir kaynaktır. Öğreticiler, madde işaretli listeler, numaralı listeler ve çok düzeyli listeler dahil olmak üzere farklı türde listeler oluşturmak, özelleştirmek ve yönetmek için adım adım açıklamalar, eksiksiz kaynak kodu ve pratik örnekler sağlar. Ayrıca öğe eklemeyi, listeleri biçimlendirmeyi, görünümü ve girintiyi değiştirmeyi ve diğer gelişmiş işlemleri öğreneceksiniz. Bu kaynak, Aspose.Words for .NET kullanarak Word belgelerinde liste oluşturmayı ve yönetmeyi otomatikleştirmek isteyen geliştiriciler için çok önemlidir.
 
  ## Öğreticiler
 | Başlık | Tanım |

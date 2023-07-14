@@ -1,7 +1,7 @@
 ---
 title: Applica bordo contorno
 linktitle: Applica bordo contorno
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata all'applicazione di un bordo di contorno a una tabella utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -76,7 +76,7 @@ Congratulazioni! Ora hai applicato un bordo di contorno a una tabella utilizzand
 ### Esempio di codice sorgente per Applica bordo contorno utilizzando Aspose.Words per .NET 
 
 ```csharp
-	// Percorso della directory dei documenti
+	//Percorso della directory dei documenti
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

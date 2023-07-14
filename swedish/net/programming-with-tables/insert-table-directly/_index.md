@@ -1,7 +1,7 @@
 ---
 title: Sätt in tabell direkt
 linktitle: Sätt in tabell direkt
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar en tabell direkt i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ I den här handledningen kommer vi att lära oss hur du direkt infogar en tabell
 2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
 ## Steg 2: Skapa dokumentet och tabellen
-För att börja arbeta med arrayen måste vi skapa ett nytt dokument och initiera arrayen. Följ dessa steg:
+För att starta ordbehandling med arrayen måste vi skapa ett nytt dokument och initiera arrayen. Följ dessa steg:
 
 ```csharp
 // Sökväg till din dokumentkatalog
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Skapande av dokument
 Document doc = new Document();
 
-// Skapa arrayen
+//Skapa arrayen
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);
 ```
@@ -79,7 +79,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 ### Exempel på källkod för Infoga tabell direkt med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

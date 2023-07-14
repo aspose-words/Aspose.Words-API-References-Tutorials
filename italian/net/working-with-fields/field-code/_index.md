@@ -1,7 +1,7 @@
 ---
 title: Codice campo
 linktitle: Codice campo
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per ottenere il codice di campo e il risultato del campo nei tuoi documenti Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -73,7 +73,7 @@ Questo conclude la nostra guida sull'utilizzo della funzione "Ottieni codice cam
 
 #### D: Come posso aggiornare i campi in un documento utilizzando Aspose.Words per .NET?
 
- R: Per aggiornare i campi del documento utilizzando Aspose.Words per .NET, puoi utilizzare il file`Document.UpdateFields` metodo. Questo aggiornerà tutti i campi presenti nel documento, come campi di unione, campi data, ecc.
+ R: Per aggiornare i campi del documento utilizzando Aspose.Words per .NET, puoi utilizzare il file`Document.UpdateFields`metodo. Questo aggiornerà tutti i campi presenti nel documento, come campi di unione, campi data, ecc.
 
 #### D: Come posso recuperare il valore di un campo specifico in Aspose.Words per .NET?
 

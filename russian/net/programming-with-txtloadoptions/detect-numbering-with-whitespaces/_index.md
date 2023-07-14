@@ -1,7 +1,7 @@
 ---
 title: Обнаружение нумерации с пробелами
 linktitle: Обнаружение нумерации с пробелами
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как определить номера списка с пробелами в Aspose.Words для .NET. С легкостью улучшайте структуру ваших документов.
 type: docs
 weight: 10

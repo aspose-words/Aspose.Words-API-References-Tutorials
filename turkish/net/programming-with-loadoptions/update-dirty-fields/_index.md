@@ -1,14 +1,14 @@
 ---
 title: Kirli Alanları Güncelle
 linktitle: Kirli Alanları Güncelle
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Kirli alanları Aspose.Words for .NET ile güncelleyerek bir Word belgesini nasıl yükleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/update-dirty-fields/
 ---
 
-Bir C# uygulamasında Word belgeleriyle çalışırken, kirli alanların en son değerleri gösterecek şekilde güncellenmesi gerekebilir. .NET için Aspose.Words kitaplığıyla, kirli alanları LoadOptions kullanarak belge yükünde kolayca güncelleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions kullanarak kirli alanları güncelleyerek bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
+Bir C# uygulamasında Word ile Sözcük İşleme belgeleri belgelendiğinde, kirli alanların en son değerleri gösterecek şekilde güncellenmesi gerekebilir. .NET için Aspose.Words kitaplığıyla, kirli alanları LoadOptions kullanarak belge yükünde kolayca güncelleyebilirsiniz. Bu adım adım kılavuzda, LoadOptions kullanarak kirli alanları güncelleyerek bir belgeyi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
 
 ## Aspose.Words kitaplığını anlama
 

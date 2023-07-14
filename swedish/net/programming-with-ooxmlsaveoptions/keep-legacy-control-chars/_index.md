@@ -1,7 +1,7 @@
 ---
 title: Behåll äldre kontrolltecken
 linktitle: Behåll äldre kontrolltecken
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du bevarar äldre kontrolltecken när du sparar ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Nu kan du köra källkod för att bevara äldre kontrolltecken när du sparar et
 ### Exempel på källkod för Keep Legacy Control Chars med Aspose.Words för .NET 
 ```csharp
 
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Legacy control character.doc");
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 I den här handledningen utforskade vi funktionaliteten för att bevara äldre kontrolltecken när du sparar ett dokument med Aspose.Words för .NET. Vi har lärt oss hur man bevarar de specialtecken som kan vara viktiga för korrekt formatering eller visning av dokument.
 
- Att bevara äldre kontrolltecken är särskilt användbart när du arbetar med dokument som använder äldre eller specifika funktioner, som speciella kontrolltecken. Genom att aktivera`KeepLegacyControlChars`när du sparar dokumentet ser du till att dessa tecken bevaras.
+ Att bevara äldre kontrolltecken är särskilt användbart vid ordbehandling med dokument som använder äldre eller specifika funktioner, som speciella kontrolltecken. Genom att aktivera`KeepLegacyControlChars`när du sparar dokumentet ser du till att dessa tecken bevaras.
 
 Aspose.Words för .NET erbjuder en rad flexibla och kraftfulla säkerhetskopieringsalternativ för att möta dina dokumenthanteringsbehov. Genom att använda lämpliga alternativ kan du anpassa säkerhetskopieringsprocessen för att bevara de specifika egenskaperna hos dina dokument.
 

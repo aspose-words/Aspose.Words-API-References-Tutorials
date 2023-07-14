@@ -1,7 +1,7 @@
 ---
 title: Documento de propietario
 linktitle: Documento de propietario
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a usar el documento de propietario en Aspose.Words para .NET.
 type: docs
 weight: 10

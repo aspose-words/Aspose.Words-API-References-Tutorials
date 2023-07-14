@@ -1,7 +1,7 @@
 ---
 title: Desvincular encabezados y pies de página
 linktitle: Desvincular encabezados y pies de página
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a unir y adjuntar documentos de Word mientras desvincula encabezados y pies de página con Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 
 ## Paso 1: inicialice los directorios de documentos
 
- Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir` variable a la ruta donde se encuentran sus documentos.
+ Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir`variable a la ruta donde se encuentran sus documentos.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Paso 3: Desvincular encabezados y pies de página en el documento de origen
 
- Para desvincular los encabezados y pies de página en el documento de origen de continuar con los encabezados y pies de página del documento de destino, debe configurar el`LinkToPrevious` propiedad de la`HeadersFooters` colección en la primera sección del documento fuente para`false`.
+ Para desvincular los encabezados y pies de página en el documento de origen de continuar con los encabezados y pies de página del documento de destino, debe configurar el`LinkToPrevious`propiedad de la`HeadersFooters` colección en la primera sección del documento fuente para`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Paso 5: Guarde el documento final
 
- Finalmente, guarde el documento combinado con la función Desvincular encabezados y pies de página habilitada usando el`Save` metodo de la`Document` clase.
+Finalmente, guarde el documento combinado con la función Desvincular encabezados y pies de página habilitada usando el`Save` metodo de la`Document` clase.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 Aquí está el código fuente completo para la función "Desvincular encabezados y pies de página" en C# usando Aspose.Words para .NET:
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

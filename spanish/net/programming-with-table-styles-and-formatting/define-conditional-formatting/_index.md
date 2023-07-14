@@ -1,14 +1,14 @@
 ---
 title: Definir formato condicional
 linktitle: Definir formato condicional
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para definir formato condicional en una tabla usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-table-styles-and-formatting/define-conditional-formatting/
 ---
 
-En este tutorial, lo guiaremos a través del proceso paso a paso para definir el formato condicional usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta característica en sus propios proyectos. Al final de este tutorial, sabrá cómo aplicar formato condicional a una tabla en sus documentos de Word utilizando Aspose.Words para .NET.
+En este tutorial, lo guiaremos a través del proceso paso a paso para definir el formato condicional usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarlo a comprender e implementar esta función en sus propios proyectos. Al final de este tutorial, sabrá cómo aplicar formato condicional a una tabla en sus documentos de Word utilizando Aspose.Words para .NET.
 
 ## Paso 1: Definir el directorio de documentos
 Primero, debe establecer la ruta a su directorio de documentos. Esta es la ubicación donde desea guardar su documento de Word editado. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatt
 ### Ejemplo de código fuente para Definir formato condicional usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Valutare la condizione SE
 linktitle: Valutare la condizione SE
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida passo passo per valutare la condizione IF nei tuoi documenti Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ Qui abbiamo usato la condizione "1=1" come esempio, ma puoi personalizzare la co
 
 ## Passaggio 3: valutare la condizione IF
 
- IL`EvaluateCondition()`metodo viene utilizzato per valutare la condizione del campo IF.
+ IL`EvaluateCondition()` metodo viene utilizzato per valutare la condizione del campo IF.
 
 ```csharp
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
@@ -79,7 +79,7 @@ R: Per aggiornare una condizione IF in un documento Word con Aspose.Words, puoi 
 
 #### D: Che tipo di condizioni possono essere valutate in una condizione IF con Aspose.Words?
 
-R: Con Aspose.Words puoi valutare una varietà di condizioni in una condizione IF, inclusi confronti numerici (ad esempio se un numero è maggiore di un altro), confronti testuali (ad esempio se una stringa è uguale a un'altra) e molto altro. È inoltre possibile combinare più condizioni utilizzando operatori logici come AND e OR.
+R: Con Aspose.Words puoi valutare una varietà di condizioni in una condizione IF, inclusi confronti numerici (ad esempio se un numero è maggiore di un altro), confronti testuali (ad esempio se una stringa è uguale a un'altra) e molto altro. È inoltre possibile combinare più condizioni utilizzando operatori logici quali AND e OR.
 
 #### D: È possibile utilizzare condizioni IF nidificate in un documento Word con Aspose.Words?
 

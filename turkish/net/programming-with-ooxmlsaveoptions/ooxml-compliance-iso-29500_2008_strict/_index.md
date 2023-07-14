@@ -1,7 +1,7 @@
 ---
 title: Ooxml Uyumluluk Iso 29500_2008_Strict
 linktitle: Ooxml Uyumluluk Iso 29500_2008_Strict
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Belgeleri Aspose.Words for .NET ile kaydederken Ooxml Iso 29500_2008_Strict uyumluluğunu nasıl sağlayacağınızı öğrenin.
 type: docs
 weight: 10
@@ -48,7 +48,7 @@ Artık bir belgeyi kaydederken Ooxml Iso 29500_2008_Strict uyumluluğunu sağlam
 ### Ooxml Uyumluluğu Iso 29500 için örnek kaynak kodu_ 2008_ Strict using Aspose.Words for .NET 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Document.docx");

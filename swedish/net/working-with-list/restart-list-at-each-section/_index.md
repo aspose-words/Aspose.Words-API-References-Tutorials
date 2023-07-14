@@ -1,7 +1,7 @@
 ---
 title: Starta om lista vid varje avsnitt
 linktitle: Starta om lista vid varje avsnitt
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du återställer en numrerad lista till varje avsnitt i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

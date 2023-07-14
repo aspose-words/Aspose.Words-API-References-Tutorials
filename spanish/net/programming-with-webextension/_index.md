@@ -1,13 +1,13 @@
 ---
-title: Programación con Webextension
-linktitle: Programación con Webextension
-second_title: Referencia de API de Aspose.Words para .NET
+title: Procesamiento de textos con Webextension
+linktitle: Procesamiento de textos con Webextension
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a desarrollar extensiones web para documentos de Word con Aspose.Words para .NET. Aprenda a crear, modificar y personalizar extensiones web, intégrelas en sus documentos de Word.
 type: docs
 weight: 1530
 url: /es/net/programming-with-webextension/
 ---
-Los tutoriales de Aspose.Words para .NET sobre programación con WebExtensions lo guían a través de las características avanzadas de trabajar con Web Extensions en sus documentos de Word. Los tutoriales detallan cómo usar las API de Aspose.Words para crear, editar y eliminar extensiones web, así como interactuar con código JavaScript incrustado en documentos de Word.
+Los tutoriales de Aspose.Words para .NET sobre Procesamiento de textos con WebExtensions lo guiarán a través de las características avanzadas del Procesamiento de textos con Web Extensions en sus documentos de Word. Los tutoriales detallan cómo usar las API de Aspose.Words para crear, editar y eliminar extensiones web, así como interactuar con código JavaScript incrustado en documentos de Word.
 
 Estos tutoriales brindan instrucciones paso a paso para comprender y usar la funcionalidad de WebExtensions con Aspose.Words para .NET. Aprenderá a acceder a objetos de extensión web, manejar eventos, evaluar código JavaScript, agregar funciones personalizadas y más. Ya sea que sea un desarrollador principiante o experimentado, estos tutoriales lo ayudarán a dominar las técnicas de programación con WebExtensions.
 

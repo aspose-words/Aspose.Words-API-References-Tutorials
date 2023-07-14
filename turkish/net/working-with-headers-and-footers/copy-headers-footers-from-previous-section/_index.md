@@ -1,7 +1,7 @@
 ---
 title: Önceki Bölümden Üstbilgileri Altbilgileri Kopyala
 linktitle: Önceki Bölümden Üstbilgileri Altbilgileri Kopyala
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerinin önceki bölümlerinden üst bilgileri ve alt bilgileri nasıl kopyalayacağınızı öğrenin.
 type: docs
 weight: 10

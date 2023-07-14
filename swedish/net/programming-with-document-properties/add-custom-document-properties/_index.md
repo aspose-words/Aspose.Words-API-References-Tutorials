@@ -1,7 +1,7 @@
 ---
 title: Lägg till anpassade dokumentegenskaper
 linktitle: Lägg till anpassade dokumentegenskaper
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg för steg guide för att lägga till anpassade egenskaper till ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

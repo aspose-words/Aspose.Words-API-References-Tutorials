@@ -1,7 +1,7 @@
 ---
 title: Цель сравнения
 linktitle: Цель сравнения
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Изучите целевую функцию сравнения Aspose.Words для .NET, которая позволяет сравнивать документы и создавать новый документ, содержащий внесенные изменения.
 type: docs
 weight: 10

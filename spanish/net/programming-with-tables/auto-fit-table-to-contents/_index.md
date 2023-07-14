@@ -1,7 +1,7 @@
 ---
 title: Ajustar automáticamente la tabla al contenido
 linktitle: Ajustar automáticamente la tabla al contenido
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a ajustar automáticamente una tabla a su contenido en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ En este tutorial, aprenderemos a usar Aspose.Words para .NET para ajustar autom�
 2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
 
 ## Paso 2: Cargue el documento de Word
-Para comenzar a trabajar con la tabla, necesitamos cargar el documento de Word que contiene la tabla. Sigue estos pasos:
+Para iniciar el procesamiento de textos con la tabla, necesitamos cargar el documento de Word que contiene la tabla. Sigue estos pasos:
 
 ```csharp
 // Ruta a su directorio de documentos
@@ -53,7 +53,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ### Ejemplo de código fuente para ajustar automáticamente la tabla al contenido usando Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

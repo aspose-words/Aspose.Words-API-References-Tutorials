@@ -1,7 +1,7 @@
 ---
 title: Escape URI i PDF-dokument
 linktitle: Escape URI i PDF-dokument
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide Hur man undslipper URI i PDF-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

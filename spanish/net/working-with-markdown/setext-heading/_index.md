@@ -1,7 +1,7 @@
 ---
 title: Encabezado de texto
 linktitle: Encabezado de texto
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a usar los encabezados de Setext para dar formato a sus documentos con la guía paso a paso de Aspose.Words para .NET.
 type: docs
 weight: 10

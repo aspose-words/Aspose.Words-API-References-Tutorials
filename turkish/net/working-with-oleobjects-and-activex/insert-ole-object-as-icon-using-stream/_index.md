@@ -1,7 +1,7 @@
 ---
 title: Akışı Kullanarak Ole Nesnesini Simge Olarak Ekleme
 linktitle: Akışı Kullanarak Ole Nesnesini Simge Olarak Ekleme
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET ile bir akışı kullanarak bir OLE nesnesini simge olarak nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -62,7 +62,7 @@ Bu, Aspose.Words for .NET ile bir akış kullanarak bir OLE nesnesini simge olar
 
 ## Çözüm
 
-Yukarıdaki adım adım kılavuz, Aspose.Words for .NET ile bir akış kullanılarak bir OLE nesnesinin bir Word belgesine simge olarak nasıl ekleneceğini açıklar. Açıklanan adımları izleyerek, bu işlevi projenize entegre edebileceksiniz. Gerekli referansları içe aktardığınızdan, yeni bir belge ve belge oluşturucu oluşturduğunuzdan, OLE nesnesini akıştan bir simge olarak eklediğinizden ve ardından belgeyi kaydettiğinizden emin olun. Sağlanan örnek kodu başlangıç noktası olarak kullanın ve gereksinimlerinize göre özelleştirin.
+Yukarıdaki adım adım kılavuz, Aspose.Words for .NET ile bir akış kullanılarak bir OLE nesnesinin bir Word belgesine simge olarak nasıl ekleneceğini açıklar. Açıklanan adımları izleyerek, bu işlevi projenize entegre edebileceksiniz. Gerekli referansları içe aktardığınızdan emin olun, yeni bir belge ve belge oluşturucu oluşturun, OLE nesnesini akıştan bir simge olarak ekleyin ve ardından belgeyi kaydedin. Sağlanan örnek kodu başlangıç noktası olarak kullanın ve gereksinimlerinize göre özelleştirin.
 
 ### SSS
 

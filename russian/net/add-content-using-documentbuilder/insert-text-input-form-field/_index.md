@@ -1,7 +1,7 @@
 ---
 title: Вставить поле формы ввода текста
 linktitle: Вставить поле формы ввода текста
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Из этого пошагового руководства вы узнаете, как использовать Aspose.Words для .NET для вставки поля формы ввода текста в документы Word.
 type: docs
 weight: 10

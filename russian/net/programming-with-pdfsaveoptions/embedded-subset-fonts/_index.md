@@ -1,7 +1,7 @@
 ---
 title: Внедрение подмножества шрифтов в документ PDF
 linktitle: Внедрение подмножества шрифтов в документ PDF
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по внедрению подмножеств шрифтов в документ PDF с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

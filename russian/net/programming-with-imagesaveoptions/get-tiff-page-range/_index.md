@@ -1,7 +1,7 @@
 ---
 title: Получить диапазон страниц Tiff
 linktitle: Получить диапазон страниц Tiff
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как извлечь диапазон страниц TIFF с помощью Aspose.Words для .NET. Полное руководство для пользовательских файлов TIFF.
 type: docs
 weight: 10
@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOpti
 
 ```csharp 
 
-// Путь к вашему каталогу документов
+//Путь к вашему каталогу документов
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 
 Document doc = new Document(dataDir + "Rendering.docx");

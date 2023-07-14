@@ -1,7 +1,7 @@
 ---
 title: Укажите уровень списка
 linktitle: Укажите уровень списка
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как указать уровень списка в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: Elimina il contenuto del piè di pagina dell'intestazione
 linktitle: Elimina il contenuto del piè di pagina dell'intestazione
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: In questo tutorial, scopri come rimuovere il contenuto di intestazione e piè di pagina da un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  Successivamente, caricheremo il documento di Word in un'istanza di`Document` classe. Accederemo alla prima sezione del documento utilizzando l'indice 0.
 
 ```csharp
-//Carica il documento
+// Carica il documento
 Document doc = new Document(dataDir + "Document.docx");
 
 // Accedi alla sezione
@@ -46,7 +46,7 @@ section.ClearHeadersFooters();
 
 ```csharp
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Document.docx");
@@ -74,7 +74,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
  R: Per caricare il documento Word in un'istanza di`Document` classe chiamata`doc` e accedi alla prima sezione del documento utilizzando l'indice 0, puoi utilizzare il seguente codice:
 
 ```csharp
-//Carica il documento
+// Carica il documento
 Document doc = new Document(dataDir + "Document.docx");
 
 // Accedi alla sezione

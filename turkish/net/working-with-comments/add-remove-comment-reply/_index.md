@@ -1,7 +1,7 @@
 ---
 title: Ekle Yorum Kaldır Yanıtla
 linktitle: Ekle Yorum Kaldır Yanıtla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak Word belgelerine yorum yanıtlarını nasıl ekleyeceğinizi ve kaldıracağınızı öğrenin.
 type: docs
 weight: 10
@@ -77,7 +77,7 @@ Yorum yanıtları, bir belge içinde işbirlikçi tartışmalara ve geri bildiri
 
 #### S: Aspose.Words for .NET'te bir yorumu nasıl kaldırabilirim?
 
-C: Aspose.Words for .NET'te bir yorumu kaldırmak için`Comment.Remove` yöntemi belirten`Comment` Kaldırmak istediğiniz nesne.
+ C: Aspose.Words for .NET'te bir yorumu kaldırmak için`Comment.Remove` yöntemi belirten`Comment` Kaldırmak istediğiniz nesne.
 
 #### S: Aspose.Words for .NET'te bir yoruma cevap verebilir miyim?
 
@@ -85,7 +85,7 @@ C: Aspose.Words for .NET'te bir yorumu kaldırmak için`Comment.Remove` yöntemi
 
 #### S: Aspose.Words for .NET'te mevcut yorumlara nasıl erişebilirim?
 
- C: Aspose.Words for .NET'teki mevcut yorumlara şu şekilde erişebilirsiniz:`CommentCollection` mülkiyeti`Document` nesne. Bu, belgede bulunan tüm yorumlara göz atmanıza izin verecektir.
+ C: Aspose.Words for .NET'teki mevcut yorumlara şu şekilde erişebilirsiniz:`CommentCollection`mülkiyeti`Document`nesne. Bu, belgede bulunan tüm yorumlara göz atmanıza izin verecektir.
 
 #### S: Aspose.Words for .NET'te yorum metnini düzenleyebilir miyim?
 

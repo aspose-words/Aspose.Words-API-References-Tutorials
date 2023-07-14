@@ -1,7 +1,7 @@
 ---
 title: Проверить зашифрованный документ Word
 linktitle: Проверить зашифрованный документ Word
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Пошаговое руководство по проверке того, что документ Word зашифрован с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Шаг 3. Проверьте, зашифрован ли документ
 
- Мы используем`IsEncrypted` собственность`FileFormatInfo` объект, чтобы проверить, зашифрован ли документ. Это свойство возвращает`true` если документ зашифрован, иначе возвращает`false`. Выводим результат в консоль.
+ Мы используем`IsEncrypted`собственность`FileFormatInfo` объект, чтобы проверить, зашифрован ли документ. Это свойство возвращает`true` если документ зашифрован, иначе возвращает`false`. Выводим результат в консоль.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -77,7 +77,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 ```
 
 ### В: Как проверить, зашифрован ли документ?
- Вы можете использовать`IsEncrypted` собственность`FileFormatInfo` объект, чтобы проверить, зашифрован ли документ. Это свойство возвращает`true` если документ зашифрован, иначе возвращает`false`. Результат отображается в консоли:
+ Вы можете использовать`IsEncrypted`собственность`FileFormatInfo` объект, чтобы проверить, зашифрован ли документ. Это свойство возвращает`true` если документ зашифрован, иначе возвращает`false`. Результат отображается в консоли:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

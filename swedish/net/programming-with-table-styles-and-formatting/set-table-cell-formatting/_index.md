@@ -1,7 +1,7 @@
 ---
 title: Ställ in tabellcellformatering
 linktitle: Ställ in tabellcellformatering
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att ställa in tabellcellformatering med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableC
 ### Exempel på källkod för formatering av tabellceller med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

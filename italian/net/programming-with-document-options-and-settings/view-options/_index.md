@@ -1,7 +1,7 @@
 ---
 title: Visualizza opzioni
 linktitle: Visualizza opzioni
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Guida dettagliata per configurare le opzioni di visualizzazione dei documenti con Aspose.Words per .NET.
 type: docs
 weight: 10

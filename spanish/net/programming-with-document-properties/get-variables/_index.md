@@ -1,7 +1,7 @@
 ---
 title: obtener variables
 linktitle: obtener variables
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Guía paso a paso para recuperar variables de documentos con Aspose.Words para .NET.
 type: docs
 weight: 10

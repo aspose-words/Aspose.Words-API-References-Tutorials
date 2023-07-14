@@ -1,7 +1,7 @@
 ---
 title: Infoga inbyggd bild
 linktitle: Infoga inbyggd bild
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar inline-bilder i Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10

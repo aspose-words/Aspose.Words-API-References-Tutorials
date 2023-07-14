@@ -1,7 +1,7 @@
 ---
 title: Carica le impostazioni di fallback Noto
 linktitle: Carica le impostazioni di fallback Noto
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: In questo tutorial, scopri come caricare i parametri di override Noto in un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 ### Esempio di codice sorgente per Noto Fallback Settings utilizzando Aspose.Words per .NET 
 ```csharp
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");

@@ -1,7 +1,7 @@
 ---
 title: Grundläggande omvandlingar
 linktitle: Grundläggande omvandlingar
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig grundläggande konverteringar med Aspose.Words för .NET. Konvertera enkelt Word-dokument till andra format som PDF, HTML, RTF och mer.
 type: docs
 weight: 1600

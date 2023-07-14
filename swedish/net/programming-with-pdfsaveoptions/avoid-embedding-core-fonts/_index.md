@@ -1,7 +1,7 @@
 ---
 title: Minska PDF-filstorleken genom att inte bädda in kärnteckensnitt
 linktitle: Minska PDF-filstorleken genom att inte bädda in kärnteckensnitt
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du minskar PDF-filstorleken genom att inte bädda in kärnteckensnitt när du konverterar Word-dokument till PDF med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -77,7 +77,7 @@ S: För att konfigurera Aspose.Words för .NET att inte bädda in kärnteckensni
 
  Ladda Word-dokumentet du vill konvertera till PDF med hjälp av`Document` klass och den angivna dokumentsökvägen.
 
- Skapa en instans av`PdfSaveOptions` klass och ställ in`UseCoreFonts` egendom till`true`. Detta kommer att undvika inbäddning av bastypsnitt i den genererade PDF-filen.
+ Skapa en instans av`PdfSaveOptions`klass och ställ in`UseCoreFonts` egendom till`true`. Detta kommer att undvika inbäddning av bastypsnitt i den genererade PDF-filen.
 
  Använd`Save` metod för`Document` objekt för att spara dokumentet i PDF-format med angivande av konverteringsalternativen som konfigurerats tidigare.
 

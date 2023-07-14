@@ -1,7 +1,7 @@
 ---
 title: Sonekler Olmadan Değiştirme Alın
 linktitle: Sonekler Olmadan Değiştirme Alın
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu öğreticide, Aspose.Words for .NET ile bir Word belgesinde soneksiz geçersiz kılmaların nasıl elde edileceğini öğrenin.
 type: docs
 weight: 10
@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 ### Aspose.Words for .NET kullanarak Get Substitution Without Suffixes için örnek kaynak kodu 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Get substitution without suffixes.docx");

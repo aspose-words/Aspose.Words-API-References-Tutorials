@@ -1,7 +1,7 @@
 ---
 title: Ändra radformatering
 linktitle: Ändra radformatering
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg-för-steg-guide för att ändra tabellradsformatering med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -44,7 +44,7 @@ firstRow.RowFormat.AllowBreakAcrossPages = true;
 ### Exempel på källkod för Ändra radformatering med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

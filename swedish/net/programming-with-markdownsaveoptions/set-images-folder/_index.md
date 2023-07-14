@@ -1,7 +1,7 @@
 ---
 title: Ställ in bildmapp
 linktitle: Ställ in bildmapp
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ställer in bildmappen när du exporterar till Markdown med Aspose.Words för .NET. Anpassa placeringen av bilder för bättre organisation och integration.
 type: docs
 weight: 10

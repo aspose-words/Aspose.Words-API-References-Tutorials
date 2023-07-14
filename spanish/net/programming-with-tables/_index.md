@@ -1,13 +1,13 @@
 ---
-title: Programación Con Tablas
-linktitle: Programación Con Tablas
-second_title: Referencia de API de Aspose.Words para .NET
+title: Procesamiento de textos con tablas
+linktitle: Procesamiento de textos con tablas
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a programar tablas en Aspose.Words para .NET. Aprenda a crear, manipular y formatear tablas en sus documentos de Word con tutoriales paso a paso y ejemplos de código C#.
 type: docs
 weight: 1590
 url: /es/net/programming-with-tables/
 ---
-Los tutoriales de Aspose.Words para .NET sobre programación con tablas lo guiarán a través de las diversas funciones y técnicas para manipular tablas en sus documentos de Word. Aprenderá a crear, modificar y formatear tablas, así como a agregar celdas, filas y columnas de forma dinámica. Estos tutoriales le proporcionarán instrucciones detalladas paso a paso, ejemplos de código claros y explicaciones para ayudarlo a dominar la manipulación de tablas en Aspose.Words para .NET.
+Los tutoriales de Aspose.Words para .NET sobre procesamiento de textos con tablas lo guiarán a través de las diversas características y técnicas para manipular tablas en sus documentos de Word. Aprenderá a crear, modificar y formatear tablas, así como a agregar celdas, filas y columnas de forma dinámica. Estos tutoriales le proporcionarán instrucciones detalladas paso a paso, ejemplos de código claros y explicaciones para ayudarlo a dominar la manipulación de tablas en Aspose.Words para .NET.
 
 Ya sea que desee ajustar el diseño de la tabla, fusionar celdas, agregar encabezados de columna u ordenar los datos de la tabla, los tutoriales le mostrarán cómo realizar estas tareas de manera eficiente con Aspose.Words para .NET. También aprenderá cómo extraer y actualizar datos de tablas, agregar bordes y aplicar estilos personalizados a las celdas. Los tutoriales le brindarán una comprensión profunda de la manipulación de tablas, lo que le permitirá crear documentos de Word profesionales y bien estructurados.
 
@@ -29,7 +29,7 @@ Al seguir estos tutoriales, podrá aprovechar al máximo las funciones de manipu
 | [Formato de fila Desactivar división entre páginas](./row-format-disable-break-across-pages/) | Aprenda a deshabilitar el salto de línea para una tabla en varias páginas en un documento de Word con Aspose.Words para .NET. |
 | [Mantener la mesa unida](./keep-table-together/) | Aprenda a mantener unida una tabla en un documento de Word con Aspose.Words para .NET. |
 | [Fusión vertical](./vertical-merge/) | Aprenda a combinar verticalmente celdas en una tabla en un documento de Word usando Aspose.Words para .NET. |
-| [Fusión horizontal](./horizontal-merge/) | Aprenda a fusionar celdas horizontalmente en una tabla de Word con Aspose.Words para .NET. |
+| [Fusión Horizontal](./horizontal-merge/) | Aprenda a fusionar celdas horizontalmente en una tabla de Word con Aspose.Words para .NET. |
 | [Convertir a celdas combinadas horizontalmente](./convert-to-horizontally-merged-cells/) | Aprenda a convertir celdas de tabla en celdas combinadas horizontalmente en un documento de Word con Aspose.Words para .NET. |
 | [Repetir filas en páginas posteriores](./repeat-rows-on-subsequent-pages/) | Aprenda a repetir las filas de la tabla en las páginas siguientes de un documento de Word con Aspose.Words para .NET. |
 | [Ajuste automático al ancho de la página](./auto-fit-to-page-width/) | Aprenda a ajustar automáticamente una tabla al ancho de página en un documento de Word con Aspose.Words para .NET. |

@@ -1,13 +1,13 @@
 ---
-title: Trabajar con notas al pie y notas al final
-linktitle: Trabajar con notas al pie y notas al final
-second_title: Referencia de API de Aspose.Words para .NET
+title: Procesamiento de textos con notas al pie y notas al final
+linktitle: Procesamiento de textos con notas al pie y notas al final
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a trabajar con notas al pie y notas al final en sus documentos de Word con Aspose.Words para .NET. Tutoriales detallados y ejemplos prácticos.
 type: docs
 weight: 660
 url: /es/net/working-with-footnote-and-endnote/
 ---
-Trabajar con notas al pie y notas al final es un recurso integral que lo guía a través del trabajo con notas al pie y notas al final en sus documentos de Word utilizando la biblioteca Aspose.Words para .NET. Los tutoriales brindan explicaciones detalladas paso a paso, código fuente completo y ejemplos prácticos para agregar, modificar y eliminar notas al pie y notas al final. También aprenderá a personalizar el formato y el estilo de las notas, navegar entre notas y convertirlas a diferentes formatos, como PDF o HTML. Este recurso es esencial para los desarrolladores que deseen administrar referencias y anotaciones en sus documentos de Word utilizando Aspose.Words para .NET.
+Procesamiento de textos con notas al pie y notas al final es un recurso integral que lo guía a través del procesamiento de textos con notas al pie y notas al final en sus documentos de Word utilizando la biblioteca Aspose.Words para .NET. Los tutoriales brindan explicaciones detalladas paso a paso, código fuente completo y ejemplos prácticos para agregar, modificar y eliminar notas al pie y notas al final. También aprenderá a personalizar el formato y el estilo de las notas, navegar entre notas y convertirlas a diferentes formatos, como PDF o HTML. Este recurso es esencial para los desarrolladores que deseen administrar referencias y anotaciones en sus documentos de Word utilizando Aspose.Words para .NET.
 
  ## Tutoriales
 | Título | Descripción |

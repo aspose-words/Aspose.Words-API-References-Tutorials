@@ -1,23 +1,23 @@
 ---
 title: Creación de una sección de repetición de tabla asignada a una pieza Xml personalizada
 linktitle: Creación de una sección de repetición de tabla asignada a una pieza Xml personalizada
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a crear una tabla con una sección repetitiva asignada a una CustomXmlPart en un documento de Word usando Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
 
-Este tutorial demuestra cómo crear una tabla con una sección repetitiva asignada a una parte Xml personalizada en un documento de Word usando Aspose.Words para .NET. La sección de repetición le permite agregar filas dinámicamente en función de los datos XML almacenados en la parte Xml personalizada.
+Este tutorial demuestra cómo crear una tabla con una sección repetitiva asignada a una parte Xml personalizada en un documento de Word usando Aspose.Words para .NET. La sección repetitiva le permite agregar filas dinámicamente en función de los datos XML almacenados en la parte Xml personalizada.
 
 ## requisitos previos
 Para seguir este tutorial, necesita tener lo siguiente:
 
 - Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y trabajo con documentos de Word.
+- Conocimientos básicos de C# y Procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -107,7 +107,7 @@ doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXm
 ### Código fuente de ejemplo para la creación de una sección de repetición de tabla asignada a una pieza Xml personalizada mediante Aspose.Words para .NET 
 
 ```csharp
-	// Ruta a su directorio de documentos
+	//Ruta a su directorio de documentos
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document();

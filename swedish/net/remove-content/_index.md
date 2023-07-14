@@ -1,7 +1,7 @@
 ---
-title: Ta bort innehåll
+title: Word-dokument - Hur man tar bort innehåll
 linktitle: Ta bort innehåll
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du effektivt tar bort innehåll från Word-dokument med Aspose.Words för .NET. Följ steg-för-steg tutorials och använd C#-kodexempel för att lära dig olika tekniker för borttagning av innehåll.
 type: docs
 weight: 1370
@@ -16,7 +16,7 @@ Oavsett om du behöver manipulera, skapa, konvertera eller generera Word-dokumen
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Ta bort sidbrytningar](./remove-page-breaks/) | Lär dig hur du tar bort sidbrytningar i ett dokument med Aspose.Words Library för .NET. Följ vår steg-för-steg-guide för en sömlös layout. |
-| [Ta bort avsnittsavbrott](./remove-section-breaks/) | Lär dig hur du tar bort avsnittsbrytningar i ett Word-dokument med Aspose.Words-biblioteket för .NET. Eliminera effektivt avsnittsavbrott som kan störa din dokumentformatering.|
-| [Ta bort sidfötter](./remove-footers/) | Lär dig hur du enkelt tar bort sidfötter från Word-dokument med Aspose.Words för .NET. Följ vår steg-för-steg-guide för effektiv hantering av DOCX-filer. |
-| [Ta bort innehållsförteckning](./remove-table-of-contents/) | Lär dig hur du tar bort innehållsförteckningen från ett Word-dokument med Aspose.Words för .NET. |
+| [Ta bort sidbrytningar i Word-dokument](./remove-page-breaks/) | Lär dig hur du tar bort sidbrytningar i Word-dokument med hjälp av Aspose.Words Library för .NET. Följ vår steg-för-steg-guide för en sömlös layout. |
+| [Ta bort avsnittsbrytningar i Word-dokument](./remove-section-breaks/) | Lär dig hur du tar bort avsnittsbrytningar i ett Word-dokument med Aspose.Words-biblioteket för .NET. Eliminera effektivt avsnittsavbrott som kan störa din dokumentformatering.|
+| [Ta bort sidfötter i Word-dokument](./remove-footers/) | Lär dig hur du enkelt tar bort sidfötter i Word-dokument med Aspose.Words för .NET. Följ vår steg-för-steg-guide för effektiv hantering av DOCX-filer. |
+| [Ta bort innehållsförteckning i Word-dokument](./remove-table-of-contents/) | Lär dig hur du tar bort innehållsförteckningen i ett Word-dokument med Aspose.Words för .NET. |

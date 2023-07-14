@@ -1,7 +1,7 @@
 ---
 title: Upprepa rader på efterföljande sidor
 linktitle: Upprepa rader på efterföljande sidor
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Lär dig hur du upprepar tabellrader på efterföljande sidor i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -15,7 +15,7 @@ I den här handledningen kommer vi att lära oss hur man upprepar raderna i en t
 2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
 
 ## Steg 2: Skapa dokumentet och initialisera dokumentgeneratorn
-För att börja arbeta med dokument- och dokumentgeneratorn, följ dessa steg:
+För att starta ordbehandling med dokument- och dokumentgeneratorn, följ dessa steg:
 
 ```csharp
 // Sökväg till din dokumentkatalog
@@ -87,7 +87,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 ### Exempel på källkod för upprepade rader på efterföljande sidor med Aspose.Words för .NET 
 
 ```csharp
-// Sökväg till din dokumentkatalog
+//Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

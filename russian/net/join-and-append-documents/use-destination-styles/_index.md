@@ -1,7 +1,7 @@
 ---
 title: Использовать целевые стили
 linktitle: Использовать целевые стили
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как объединять и добавлять документы Word, применяя стили целевого документа с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/use-destination-styles/
 
 ## Шаг 1: Инициализируйте каталоги документов
 
- Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir` переменная на путь, где находятся ваши документы.
+ Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir`переменная на путь, где находятся ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -55,7 +55,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");
 Вот полный исходный код функции «Использовать стили назначения» в C# с использованием Aspose.Words для .NET:
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -65,4 +65,4 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");
 	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");
 ```
 
-Вот и все! Вы успешно реализовали функцию «Использовать целевые стили» с помощью Aspose.Words для .NET. Конечный документ будет содержать объединенное содержимое с примененными стилями целевого документа.
+Вот и все! Вы успешно реализовали функцию «Использовать стили назначения» с помощью Aspose.Words для .NET. Конечный документ будет содержать объединенное содержимое с примененными стилями целевого документа.

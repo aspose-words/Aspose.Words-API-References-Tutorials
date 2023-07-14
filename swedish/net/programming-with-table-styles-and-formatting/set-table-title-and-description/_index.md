@@ -1,7 +1,7 @@
 ---
 title: Ställ tabelltitel och beskrivning
 linktitle: Ställ tabelltitel och beskrivning
-second_title: Aspose.Words för .NET API Referens
+second_title: Aspose.Words Document Processing API
 description: Steg för steg guide för att ställa in titel och beskrivning av en tabell med Aspose.Words för .NET.
 type: docs
 weight: 10
@@ -59,7 +59,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 ### Exempel på källkod för Set Table Titel och beskrivning med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
+	//Sökväg till din dokumentkatalog
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

@@ -1,7 +1,7 @@
 ---
 title: Отключить заголовки и нижние колонтитулы
 linktitle: Отключить заголовки и нижние колонтитулы
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как объединять и добавлять документы Word, одновременно удаляя верхние и нижние колонтитулы, используя Aspose.Words для .NET.
 type: docs
 weight: 10
@@ -19,7 +19,7 @@ url: /ru/net/join-and-append-documents/unlink-headers-footers/
 
 ## Шаг 1: Инициализируйте каталоги документов
 
- Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir` переменная на путь, где находятся ваши документы.
+ Во-первых, вам нужно указать путь к папке с документами. Измените значение параметра`dataDir`переменная на путь, где находятся ваши документы.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Шаг 3. Отсоедините верхние и нижние колонтитулы в исходном документе
 
- Чтобы отделить верхние и нижние колонтитулы исходного документа от продолжения верхних и нижних колонтитулов целевого документа, необходимо установить`LinkToPrevious` собственность`HeadersFooters` коллекция в первом разделе исходного документа для`false`.
+ Чтобы отделить верхние и нижние колонтитулы исходного документа от продолжения верхних и нижних колонтитулов целевого документа, необходимо установить`LinkToPrevious`собственность`HeadersFooters` коллекция в первом разделе исходного документа для`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -52,7 +52,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Шаг 5: Сохраните окончательный документ
 
- Наконец, сохраните объединенный документ с включенной функцией Unlink Headers Footers с помощью`Save` метод`Document` сорт.
+Наконец, сохраните объединенный документ с включенной функцией Unlink Headers Footers с помощью`Save` метод`Document` сорт.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -63,7 +63,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 Вот полный исходный код функции «Отключить заголовки и нижние колонтитулы» на C# с использованием Aspose.Words для .NET:
 
 ```csharp
-	// Путь к вашему каталогу документов
+	//Путь к вашему каталогу документов
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document srcDoc = new Document(dataDir + "Document source.docx");

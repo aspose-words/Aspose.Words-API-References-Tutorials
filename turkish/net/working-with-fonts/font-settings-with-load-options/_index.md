@@ -1,7 +1,7 @@
 ---
 title: Yükleme Seçenekleriyle Yazı Tipi Ayarları
 linktitle: Yükleme Seçenekleriyle Yazı Tipi Ayarları
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Bu öğreticide, özel yükleme seçenekleri ve karşılık gelen yazı tipi ayarlarıyla bir Word belgesini nasıl yükleyeceğinizi öğrenin.
 type: docs
 weight: 10
@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ### Aspose.Words for .NET kullanan Font Settings With Load Options için örnek kaynak kodu 
 ```csharp
 
-// Belge dizininizin yolu
+//Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 LoadOptions loadOptions = new LoadOptions();
@@ -57,7 +57,7 @@ Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinde yazı tipi ayarları
 
 #### S: Aspose.Words'e bir belge yüklerken varsayılan bir yazı tipini nasıl belirleyebilirim?
 
- C: Aspose.Words'e bir belge yüklerken varsayılan bir yazı tipi belirtmek için`LoadOptions` sınıflandırın ve ayarlayın`DefaultFontName` özelliğini istediğiniz yazı tipinin adına ekleyin.
+ C: Aspose.Words'e bir belge yüklerken varsayılan bir yazı tipi belirtmek için`LoadOptions`sınıflandırın ve ayarlayın`DefaultFontName` özelliğini istediğiniz yazı tipinin adına ekleyin.
 
 #### S: Aspose.Words'teki yükleme seçenekleriyle başka hangi yazı tipi ayarlarını belirtebilirim?
 

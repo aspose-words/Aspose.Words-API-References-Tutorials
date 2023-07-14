@@ -1,7 +1,7 @@
 ---
 title: Tablo Başlığını ve Açıklamasını Ayarla
 linktitle: Tablo Başlığını ve Açıklamasını Ayarla
-second_title: Aspose.Words for .NET API Referansı
+second_title: Aspose.Words Belge İşleme API'sı
 description: Aspose.Words for .NET kullanarak bir tablonun başlığını ve açıklamasını ayarlamak için adım adım kılavuz.
 type: docs
 weight: 10
@@ -59,7 +59,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 ### Aspose.Words for .NET kullanarak Set Table Title And Description için örnek kaynak kodu 
 
 ```csharp
-	// Belge dizininizin yolu
+	//Belge dizininizin yolu
 	string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 	Document doc = new Document(dataDir + "Tables.docx");

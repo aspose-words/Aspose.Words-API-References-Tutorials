@@ -1,7 +1,7 @@
 ---
 title: Crittografare Docx con password
 linktitle: Crittografare Docx con password
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come crittografare un file DOCX con una password utilizzando Aspose.Words per .NET. Tutorial completo per la sicurezza dei documenti.
 type: docs
 weight: 10
@@ -46,7 +46,7 @@ Ora puoi eseguire il codice sorgente per crittografare il tuo documento DOCX con
 
 ```csharp
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";  
 
 Document doc = new Document(dataDir + "Document.docx");

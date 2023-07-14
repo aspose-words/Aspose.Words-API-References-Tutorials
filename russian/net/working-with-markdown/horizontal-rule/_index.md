@@ -1,7 +1,7 @@
 ---
 title: Горизонтальное правило
 linktitle: Горизонтальное правило
-second_title: Справочник по API Aspose.Words для .NET
+second_title: API обработки документов Aspose.Words
 description: Узнайте, как вставить горизонтальную линейку с помощью Aspose.Words для .NET. Пошаговое руководство.
 type: docs
 weight: 10

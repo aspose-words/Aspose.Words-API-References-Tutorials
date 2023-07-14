@@ -1,7 +1,7 @@
 ---
 title: Modifica l'impostazione della pagina di Word in tutte le sezioni
 linktitle: Modifica l'impostazione della pagina di Word in tutte le sezioni
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: In questo tutorial, scopri come modificare l'impostazione della pagina di Word in tutte le sezioni di un documento Word con Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -53,7 +53,7 @@ foreach(Section section in doc.Sections)
 
 ```csharp
 
-// Percorso della directory dei documenti
+//Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();

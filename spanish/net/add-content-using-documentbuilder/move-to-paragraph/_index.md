@@ -1,7 +1,7 @@
 ---
 title: Mover al párrafo
 linktitle: Mover al párrafo
-second_title: Referencia de API de Aspose.Words para .NET
+second_title: API de procesamiento de documentos de Aspose.Words
 description: Aprenda a usar Aspose.Words para la función Mover a párrafo de .NET para navegar y manipular párrafos en documentos de Word mediante programación.
 type: docs
 weight: 10

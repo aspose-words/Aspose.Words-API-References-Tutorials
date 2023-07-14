@@ -1,7 +1,7 @@
 ---
 title: Campi modulo Ottieni per nome
 linktitle: Campi modulo Ottieni per nome
-second_title: Riferimento all'API Aspose.Words per .NET
+second_title: Aspose.Words API di elaborazione dei documenti
 description: Scopri come recuperare e modificare i campi del modulo per nome nei documenti di Word utilizzando Aspose.Words per .NET.
 type: docs
 weight: 10
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Passaggio 2: recupero dei campi del modulo
 
- Successivamente, accedi al file`FormFields` proprietà del`Range` oggetto nel documento per recuperare tutti i campi del modulo:
+ Successivamente, accedi al file`FormFields`proprietà del`Range` oggetto nel documento per recuperare tutti i campi del modulo:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;
