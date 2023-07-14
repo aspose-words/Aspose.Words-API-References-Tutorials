@@ -62,31 +62,30 @@ Be sure to specify the correct path and filename to save the document with edita
 Here is the complete source code for unrestricted editable areas using Aspose.Words for .NET:
 
 ```csharp
+// The path to the documents directory.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Upload a document and make it as read-only.
+Document doc = new Document(MyDir + "Document.docx");
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	// Upload a document and make it as read-only.
-	Document doc = new Document(MyDir + "Document.docx");
-	DocumentBuilder builder = new DocumentBuilder(doc);
+doc.Protect(ProtectionType.ReadOnly, "MyPassword");
 
-	doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
 
-	builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
+// Start an editable range.
+EditableRangeStart edRangeStart = builder.StartEditableRange();
+// An EditableRange object is created for the EditableRangeStart that we just made.
+EditableRange editableRange = edRangeStart.EditableRange;
 
-	// Start an editable range.
-	EditableRangeStart edRangeStart = builder.StartEditableRange();
-	// An EditableRange object is created for the EditableRangeStart that we just made.
-	EditableRange editableRange = edRangeStart.EditableRange;
+// Put something inside the editable range.
+builder.Writeln("Paragraph inside first editable range");
 
-	// Put something inside the editable range.
-	builder.Writeln("Paragraph inside first editable range");
+// An editable range is well-formed if it has a start and an end.
+EditableRangeEnd edRangeEnd = builder.EndEditableRange();
 
-	// An editable range is well-formed if it has a start and an end.
-	EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
 
-	builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
-
-	doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
 
 ```
 By following these steps, you can easily create unrestricted editable areas in your Word document with Aspose.Words for .NET.

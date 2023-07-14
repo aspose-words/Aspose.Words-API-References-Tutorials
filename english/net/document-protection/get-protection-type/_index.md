@@ -32,10 +32,8 @@ ProtectionType protectionType = doc.ProtectionType;
 Here is the complete source code for the Get Protection Type function using Aspose.Words for .NET:
 
 ```csharp
-
-	Document doc = new Document(MyDir + "Document.docx");
-	ProtectionType protectionType = doc.ProtectionType;
-
+Document doc = new Document(MyDir + "Document.docx");
+ProtectionType protectionType = doc.ProtectionType;
 ```
 
 ## Conclusion

@@ -61,22 +61,22 @@ Here is the complete source code for read-only protection using Aspose.Words for
 
 ```csharp
 
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
+// The path to the documents directory.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-	builder.Write("Open document as read-only");
+builder.Write("Open document as read-only");
 
-	// Enter a password that's up to 15 characters long.
-	doc.WriteProtection.SetPassword("MyPassword");
+// Enter a password that's up to 15 characters long.
+doc.WriteProtection.SetPassword("MyPassword");
 
-	// Make the document as read-only.
-	doc.WriteProtection.ReadOnlyRecommended = true;
+// Make the document as read-only.
+doc.WriteProtection.ReadOnlyRecommended = true;
 
-	// Apply write protection as read-only.
-	doc.Protect(ProtectionType.ReadOnly);
-	doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
+// Apply write protection as read-only.
+doc.Protect(ProtectionType.ReadOnly);
+doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 ```
 
