@@ -1,8 +1,8 @@
 ---
-title: Split Document
-linktitle: Split Document
+title: Word Document Splitting
+linktitle: Word Document Splitting
 second_title: Aspose.Words Document Processing API
-description: Learn how to effectively split a Word document into separate parts using Aspose.Words for .NET. Follow step-by-step tutorials and use C# code samples to learn different document splitting techniques.
+description: Learn how to split a Word document into separate parts using Aspose.Words for .NET. This comprehensive resource provides detailed tutorials, source code examples, and practical tips for splitting documents according to different conditions.
 type: docs
 weight: 1450
 url: /net/split-document/
